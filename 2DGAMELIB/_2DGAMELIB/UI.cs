@@ -9,8 +9,6 @@ namespace _2DGAMELIB
     {
     	private Med Med;
 
-    	private IContainer components;
-
     	private GlImage wpfImage1;
 
     	//private System.Windows.Controls.Image hostedComponent1;

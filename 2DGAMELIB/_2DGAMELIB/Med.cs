@@ -330,6 +330,8 @@ namespace _2DGAMELIB
     			{
     				Modes[mode].Draw(FPSF);
     			}
+
+                GD.DrawImage(BH, new Point(0, 0));
     			baseControl.SetBitmap(BD);
     		};
 

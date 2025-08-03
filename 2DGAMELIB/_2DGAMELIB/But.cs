@@ -153,15 +153,5 @@ namespace _2DGAMELIB
     	{
     		pars.Dispose();
     	}
-
-    	public bool IsBut1()
-    	{
-    		return this is But1;
-    	}
-
-    	public But1 ToBut1()
-    	{
-    		return (But1)this;
-    	}
     }
 }

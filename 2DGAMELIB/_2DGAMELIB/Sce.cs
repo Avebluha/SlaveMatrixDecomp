@@ -19,8 +19,6 @@ namespace _2DGAMELIB
 
     	private int h;
 
-    	private int o;
-
     	private Rectangle r;
 
     	private ColorMatrix cm = new ColorMatrix();

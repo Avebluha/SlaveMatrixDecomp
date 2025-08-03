@@ -2113,10 +2113,6 @@ namespace SlaveMatrix
     		PlayerStamina.Leave();
     	}
 
-    	public TrainingUI()
-    	{
-    	}
-
     	public TrainingUI(Med Med, Are Are, InfoPanel ip)
     	{
     		TrainingUI 調教UI2 = this;

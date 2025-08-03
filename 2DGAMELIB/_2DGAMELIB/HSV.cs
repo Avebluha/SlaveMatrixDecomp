@@ -83,16 +83,6 @@ namespace _2DGAMELIB
     		}
     	}
 
-    	public static void ToHSV(this Color col, out int h, out int s, out int v)
-    	{
-    		ToHSV(col.R, col.G, col.B, out h, out s, out v);
-    	}
-
-    	public static void ToHSV(ref Color col, out int h, out int s, out int v)
-    	{
-    		ToHSV(col.R, col.G, col.B, out h, out s, out v);
-    	}
-
     	public static void ToRGB(int h, int s, int v, out Color ret)
     	{
     		ToRGB(h, s, v, out var r, out var g, out var b);
@@ -105,47 +95,11 @@ namespace _2DGAMELIB
     		ret = Color.FromArgb(a, r, g, b);
     	}
 
-    	public static void ToRGB(this Hsv hsv, out int r, out int g, out int b)
-    	{
-    		ToRGB(hsv.H, hsv.S, hsv.V, out r, out g, out b);
-    	}
-
-    	public static void ToRGB(ref Hsv hsv, out int r, out int g, out int b)
-    	{
-    		ToRGB(hsv.H, hsv.S, hsv.V, out r, out g, out b);
-    	}
-
-    	public static Hsv ToHSV(int r, int g, int b)
-    	{
-    		Hsv result = default(Hsv);
-    		ToHSV(r, g, b, out result.H, out result.S, out result.V);
-    		return result;
-    	}
-
-    	public static Hsv ToHSV(this Color col)
-    	{
-    		Hsv result = default(Hsv);
-    		ToHSV(col.R, col.G, col.B, out result.H, out result.S, out result.V);
-    		return result;
-    	}
-
     	public static Hsv ToHSV(ref Color col)
     	{
     		Hsv result = default(Hsv);
     		ToHSV(col.R, col.G, col.B, out result.H, out result.S, out result.V);
     		return result;
-    	}
-
-    	public static Color ToRGB(this Hsv hsv)
-    	{
-    		ToRGB(hsv.H, hsv.S, hsv.V, out var r, out var g, out var b);
-    		return Color.FromArgb(r, g, b);
-    	}
-
-    	public static Color ToRGB(ref Hsv hsv)
-    	{
-    		ToRGB(hsv.H, hsv.S, hsv.V, out var r, out var g, out var b);
-    		return Color.FromArgb(r, g, b);
     	}
 
     	private static int GetMax(int x, int y, int z)
@@ -229,21 +183,9 @@ namespace _2DGAMELIB
     		}
     	}
 
-    	public Hsv(Color Color)
-    	{
-    		HSV.ToHSV(Color.R, Color.G, Color.B, out H, out S, out V);
-    	}
-
     	public Hsv(ref Color Color)
     	{
     		HSV.ToHSV(Color.R, Color.G, Color.B, out H, out S, out V);
-    	}
-
-    	public Hsv(int Hue, int Sat, int Val)
-    	{
-    		H = Hue;
-    		S = Sat;
-    		V = Val;
     	}
 
     	private void HueLimit()

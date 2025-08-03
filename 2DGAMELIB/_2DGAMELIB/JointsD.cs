@@ -8,14 +8,6 @@ namespace _2DGAMELIB
     {
     	public List<JointD> Joins = new List<JointD>();
 
-    	public void JoinP()
-    	{
-    		foreach (JointD join in Joins)
-    		{
-    			join.JoinP();
-    		}
-    	}
-
     	public void JoinPA()
     	{
     		foreach (JointD join in Joins)
@@ -24,20 +16,5 @@ namespace _2DGAMELIB
     		}
     	}
 
-    	public void JoinPall()
-    	{
-    		foreach (JointD join in Joins)
-    		{
-    			join.JoinPall();
-    		}
-    	}
-
-    	public void JoinPAall()
-    	{
-    		foreach (JointD join in Joins)
-    		{
-    			join.JoinPAall();
-    		}
-    	}
     }
 }

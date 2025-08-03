@@ -34,48 +34,6 @@ namespace _2DGAMELIB
     		Initialize(s);
     	}
 
-    	public MyRandom()
-    		: this(4357u)
-    	{
-    	}
-
-    	public void Initialize(uint[] key)
-    	{
-    		uint num = (uint)key.Length;
-    		uint[] array = new uint[4];
-    		Initialize(1u);
-    		array[0] = x;
-    		array[1] = y;
-    		array[2] = z;
-    		array[3] = w;
-    		uint s = w;
-    		uint num2;
-    		for (num2 = 0u; num2 < num; num2++)
-    		{
-    			array[num2 & 3] ^= (s = InitMtSub(s, key[num2] + num2));
-    		}
-    		uint num3 = 0u;
-    		while (num3 < 3)
-    		{
-    			array[num2 & 3] ^= (s = InitMtSub(s, num3));
-    			num3++;
-    			num2++;
-    		}
-    		x = array[0];
-    		y = array[1];
-    		z = array[2];
-    		w = array[3];
-    		if (x == 0 && y == 0 && z == 0 && w == 0)
-    		{
-    			x = 1u;
-    		}
-    	}
-
-    	public MyRandom(uint[] key)
-    	{
-    		Initialize(key);
-    	}
-
     	public override int Next()
     	{
     		uint num = x ^ (x << 11);

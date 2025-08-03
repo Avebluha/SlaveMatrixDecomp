@@ -127,45 +127,6 @@ namespace _2DGAMELIB
 
     	public bool IsPlaying => !f1;
 
-    	public Tex(string Name, ref Vector2D Position, double Size, double Width, double Height, Font Font, double TextSize, int Space, string Text, ref Color TextColor, ref Color ShadColor, ref Color BackColor, double Speed, ref Color FeedColor, Action<Tex> Action)
-    	{
-    		try
-    		{
-    			if (!File.Exists(ConfigPath))
-    			{
-    				this.Speed = Speed;
-    				speed = Speed;
-    			}
-    			else
-    			{
-    				string[] source = ConfigPath.ReadLines();
-    				FastText = source.First((string s) => s.StartsWith("FastText:")).Last() == '1';
-    			}
-    		}
-    		catch
-    		{
-    			this.Speed = Speed;
-    			speed = Speed;
-    		}
-    		if (FastText)
-    		{
-    			this.Speed = 50.0;
-    			speed = 50.0;
-    		}
-    		else
-    		{
-    			this.Speed = Speed;
-    			speed = Speed;
-    		}
-    		this.Space = Space;
-    		this.Text = Text;
-    		this.Action = Action;
-    		SetParT(Name, ref Position, Size, Width, Height, Font, TextSize, Text, ref TextColor, ref ShadColor, ref BackColor);
-    		SetFeed(Name, Size, ref FeedColor);
-    		mv = new MotV(0.0, 255.0);
-    		mv.BaseSpeed = 2.0;
-    	}
-
     	public Tex(string Name, Vector2D Position, double Size, double Width, double Height, Font Font, double TextSize, int Space, string Text, Color TextColor, Color ShadColor, Color BackColor, double Speed, Color FeedColor, Action<Tex> Action)
     	{
     		try
@@ -203,41 +164,6 @@ namespace _2DGAMELIB
     		SetFeed(Name, Size, ref FeedColor);
     		mv = new MotV(0.0, 255.0);
     		mv.BaseSpeed = 2.0;
-    	}
-
-    	public Tex(string Name, ref Vector2D Position, double Size, double Width, double Height, Font Font, double TextSize, int Space, string Text, ref Color TextColor, ref Color ShadColor, ref Color BackColor, double Speed)
-    	{
-    		try
-    		{
-    			if (!File.Exists(ConfigPath))
-    			{
-    				this.Speed = Speed;
-    				speed = Speed;
-    			}
-    			else
-    			{
-    				string[] source = ConfigPath.ReadLines();
-    				FastText = source.First((string s) => s.StartsWith("FastText:")).Last() == '1';
-    			}
-    		}
-    		catch
-    		{
-    			this.Speed = Speed;
-    			speed = Speed;
-    		}
-    		if (FastText)
-    		{
-    			this.Speed = 50.0;
-    			speed = 50.0;
-    		}
-    		else
-    		{
-    			this.Speed = Speed;
-    			speed = Speed;
-    		}
-    		this.Space = Space;
-    		this.Text = Text;
-    		SetParT(Name, ref Position, Size, Width, Height, Font, TextSize, Text, ref TextColor, ref ShadColor, ref BackColor);
     	}
 
     	public Tex(string Name, Vector2D Position, double Size, double Width, double Height, Font Font, double TextSize, int Space, string Text, Color TextColor, Color ShadColor, Color BackColor, double Speed)

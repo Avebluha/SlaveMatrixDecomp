@@ -265,24 +265,9 @@ namespace _2DGAMELIB
     		parent = Parent;
     	}
 
-    	public int IndexOf(string Name)
-    	{
-    		return pars.IndexOf(Name);
-    	}
-
     	public int IndexOf(object obj)
     	{
     		return pars.IndexOf(obj);
-    	}
-
-    	public int LastIndexOf(string Name)
-    	{
-    		return pars.LastIndexOf(Name);
-    	}
-
-    	public int LastIndexOf(object obj)
-    	{
-    		return pars.LastIndexOf(obj);
     	}
 
     	public void Add(string Name, Par Par)
@@ -303,90 +288,10 @@ namespace _2DGAMELIB
     		pars.Add(Name, Pars);
     	}
 
-    	public void Add(string Name, object obj)
-    	{
-    		if (obj is Pars)
-    		{
-    			((Pars)obj).SetParent(this);
-    		}
-    		else if (obj is ParT)
-    		{
-    			((ParT)obj).SetParent(this);
-    		}
-    		else if (obj is Par)
-    		{
-    			((Par)obj).SetParent(this);
-    		}
-    		pars.Add(Name, obj);
-    	}
-
-    	public void Add(Par Par)
-    	{
-    		Par.SetParent(this);
-    		pars.Add(Par.Tag, Par);
-    	}
-
-    	public void Add(ParT ParT)
-    	{
-    		ParT.SetParent(this);
-    		pars.Add(ParT.Tag, ParT);
-    	}
-
     	public void Add(Pars Pars)
     	{
     		Pars.SetParent(this);
     		pars.Add(Pars.Tag, Pars);
-    	}
-
-    	public void Add(object obj)
-    	{
-    		if (obj is Pars)
-    		{
-    			Add((Pars)obj);
-    		}
-    		else if (obj is ParT)
-    		{
-    			Add((ParT)obj);
-    		}
-    		else if (obj is Par)
-    		{
-    			Add((Par)obj);
-    		}
-    	}
-
-    	public void Insert(int Index, string Name, Par Par)
-    	{
-    		Par.SetParent(this);
-    		pars.Insert(Index, Name, Par);
-    	}
-
-    	public void Insert(int Index, string Name, ParT ParT)
-    	{
-    		ParT.SetParent(this);
-    		pars.Insert(Index, Name, ParT);
-    	}
-
-    	public void Insert(int Index, string Name, Pars Pars)
-    	{
-    		Pars.SetParent(this);
-    		pars.Insert(Index, Name, Pars);
-    	}
-
-    	public void Insert(int Index, string Name, object obj)
-    	{
-    		if (obj is Pars)
-    		{
-    			((Pars)obj).SetParent(this);
-    		}
-    		else if (obj is ParT)
-    		{
-    			((ParT)obj).SetParent(this);
-    		}
-    		else if (obj is Par)
-    		{
-    			((Par)obj).SetParent(this);
-    		}
-    		pars.Insert(Index, Name, obj);
     	}
 
     	public void Remove(string Name)
@@ -610,16 +515,6 @@ namespace _2DGAMELIB
     		return (Par)obj;
     	}
 
-    	public Pars GetRoot()
-    	{
-    		Pars pars2 = parent;
-    		while (pars2.Parent != null)
-    		{
-    			pars2 = pars2.Parent;
-    		}
-    		return pars2;
-    	}
-
     	public void ReverseX()
     	{
     		foreach (object value in pars.Values)
@@ -650,93 +545,6 @@ namespace _2DGAMELIB
     		}
     	}
 
-    	public bool IsParentTag(string Tag)
-    	{
-    		if (Parent != null)
-    		{
-    			return Parent.Tag == Tag;
-    		}
-    		return false;
-    	}
-
-    	public bool IsRootTag(string Tag)
-    	{
-    		Pars root = GetRoot();
-    		if (root != null)
-    		{
-    			return root.Tag == Tag;
-    		}
-    		return false;
-    	}
-
-    	public bool ContainsParentTag(string Tag)
-    	{
-    		if (Parent != null)
-    		{
-    			return Parent.Tag.Contains(Tag);
-    		}
-    		return false;
-    	}
-
-    	public bool ContainsRootTag(string Tag)
-    	{
-    		return GetRoot()?.Tag.Contains(Tag) ?? false;
-    	}
-
-    	public void ScalingXY(double Scale)
-    	{
-    		foreach (Par item in EnumAllPar())
-    		{
-    			item.ScalingXY(Scale);
-    			item.ScalingXY(Scale);
-    		}
-    	}
-
-    	public void ScalingX(double Scale)
-    	{
-    		foreach (Par item in EnumAllPar())
-    		{
-    			item.ScalingX(Scale);
-    			item.ScalingX(Scale);
-    		}
-    	}
-
-    	public void ScalingY(double Scale)
-    	{
-    		foreach (Par item in EnumAllPar())
-    		{
-    			item.ScalingY(Scale);
-    			item.ScalingY(Scale);
-    		}
-    	}
-
-    	public void ExpansionXY(double Rate)
-    	{
-    		foreach (Par item in EnumAllPar())
-    		{
-    			item.ExpansionXY(Rate);
-    			item.ExpansionXY(Rate);
-    		}
-    	}
-
-    	public void ExpansionX(double Rate)
-    	{
-    		foreach (Par item in EnumAllPar())
-    		{
-    			item.ExpansionX(Rate);
-    			item.ExpansionX(Rate);
-    		}
-    	}
-
-    	public void ExpansionY(double Rate)
-    	{
-    		foreach (Par item in EnumAllPar())
-    		{
-    			item.ExpansionY(Rate);
-    			item.ExpansionY(Rate);
-    		}
-    	}
-
     	public void Dispose()
     	{
     		foreach (object value in pars.Values)
@@ -758,21 +566,6 @@ namespace _2DGAMELIB
     }
     public static class pars
     {
-    	public static bool IsPars(this object obj)
-    	{
-    		return obj is Pars;
-    	}
-
-    	public static bool IsParT(this object obj)
-    	{
-    		return obj is ParT;
-    	}
-
-    	public static bool IsPar(this object obj)
-    	{
-    		return obj is Par;
-    	}
-
     	public static Pars ToPars(this object obj)
     	{
     		return (Pars)obj;

@@ -88,13 +88,6 @@ namespace _2DGAMELIB
     		SetText(Text);
     	}
 
-    	private void Lab_Resize(object sender, EventArgs e)
-    	{
-            //TODO fix?
-            //Med.BaseControl.Controls.Remove(tb);
-    		//SetText(tb.Text);
-    	}
-
     	public void SetHitColor(Med Med)
     	{
     		if (parT.HitColor != Color.Transparent)
@@ -122,24 +115,6 @@ namespace _2DGAMELIB
     		parT.OP[0].ps[1] = new Vector2D(parT.RectSize.X, 0.0);
     		parT.OP[0].ps[2] = new Vector2D(parT.RectSize.X, parT.RectSize.Y);
     		parT.OP[0].ps[3] = new Vector2D(0.0, parT.RectSize.Y);
-    	}
-
-    	private void SetRectT()
-    	{
-    		/*
-    		double resMag = Med.ResMag;
-    		Vector2D vector2D = (parT.Position + Are.GetPosition()) * Med.Unit / resMag + Med.ResVector;
-
-    		tb.Location = new Point((int)vector2D.X - 1, (int)vector2D.Y - 1);
-    		double num = parT.Size * Med.Unit;
-
-    		if (tb.Font != null)
-    		{
-    			tb.Font.Dispose();
-    		}
-    		tb.Font = new Font(parT.Font.FontFamily, (float)(parT.FontSize * num / resMag));
-    		Vector2D vector2D2 = parT.RectSize * num / resMag;
-    		tb.Size = new Size((int)(vector2D2.X + 2.0), (int)(vector2D2.Y + 10.0));*/
     	}
 
     	public bool Double(ref Color HitColor)

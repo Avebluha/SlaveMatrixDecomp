@@ -37,31 +37,7 @@ namespace _2DGAMELIB
     		}
     	}
 
-    	public Vector2D(int value)
-    	{
-    		X = value;
-    		Y = value;
-    	}
-
-    	public Vector2D(float value)
-    	{
-    		X = value;
-    		Y = value;
-    	}
-
-    	public Vector2D(double value)
-    	{
-    		X = value;
-    		Y = value;
-    	}
-
     	public Vector2D(int x, int y)
-    	{
-    		X = x;
-    		Y = y;
-    	}
-
-    	public Vector2D(float x, float y)
     	{
     		X = x;
     		Y = y;

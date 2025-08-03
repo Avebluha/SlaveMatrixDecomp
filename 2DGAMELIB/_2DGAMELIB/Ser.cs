@@ -1,6 +1,8 @@
 using System;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
+using System.Security.Cryptography;
+using System.Text;
 using Newtonsoft.Json;
 
 namespace _2DGAMELIB
@@ -70,13 +72,71 @@ namespace _2DGAMELIB
     	*/
     	static Ser(){}
 
-    	public static void ToJson<T>(this T Object, string Path)
+        public static T JsonDeepCopy<T>(this T Object)
+        {
+            using MemoryStream memoryStream = new MemoryStream();
+
+
+            JsonSerializer jsonSerializer = new JsonSerializer
+            {
+                PreserveReferencesHandling = PreserveReferencesHandling.All,
+                TypeNameHandling = TypeNameHandling.All,
+                Formatting = Newtonsoft.Json.Formatting.Indented,
+                NullValueHandling = NullValueHandling.Ignore
+            };
+
+            jsonSerializer.Serialize(new StreamWriter(memoryStream, Encoding.UTF8), Object);
+
+
+            return (T)new JsonSerializer
+            {
+                PreserveReferencesHandling = PreserveReferencesHandling.All,
+                TypeNameHandling = TypeNameHandling.All,
+                Formatting = Newtonsoft.Json.Formatting.Indented,
+                NullValueHandling = NullValueHandling.Ignore
+            }.Deserialize(new StreamReader(memoryStream), typeof(T));
+        }
+
+        public static byte[] ToJsonBytes<T>(this T Object)
+        {
+            MemoryStream textWriter = new MemoryStream();
+
+            JsonSerializer jsonSerializer = new JsonSerializer
+            {
+                PreserveReferencesHandling = PreserveReferencesHandling.Objects,
+                TypeNameHandling = TypeNameHandling.All,
+                Formatting = Newtonsoft.Json.Formatting.Indented,
+                NullValueHandling = NullValueHandling.Ignore
+            };
+
+            jsonSerializer.Serialize(new StreamWriter(textWriter, Encoding.UTF8), Object);
+
+            return textWriter.ToArray();
+        }
+
+        public static T ToUnJsonObject<T>(this byte[] Bytes)
+        {
+            using StreamReader reader = new StreamReader(new MemoryStream(Bytes), Encoding.UTF8);
+            return (T)new JsonSerializer
+            {
+                PreserveReferencesHandling = PreserveReferencesHandling.All,
+                TypeNameHandling = TypeNameHandling.All,
+                Formatting = Newtonsoft.Json.Formatting.Indented,
+                NullValueHandling = NullValueHandling.Ignore
+            }.Deserialize(reader, typeof(T));
+        }
+
+
+        public static void ToJson<T>(this T Object, string Path)
     	{
     		using StreamWriter textWriter = File.CreateText(Path);
-    		JsonSerializer jsonSerializer = new JsonSerializer();
-    		jsonSerializer.PreserveReferencesHandling = PreserveReferencesHandling.Objects;
-    		jsonSerializer.TypeNameHandling = TypeNameHandling.All;
-    		jsonSerializer.Formatting = Newtonsoft.Json.Formatting.Indented;
+    		JsonSerializer jsonSerializer = new JsonSerializer
+            {
+                PreserveReferencesHandling = PreserveReferencesHandling.All,
+                TypeNameHandling = TypeNameHandling.All,
+                Formatting = Newtonsoft.Json.Formatting.Indented,
+                NullValueHandling = NullValueHandling.Ignore
+            };
     		jsonSerializer.Serialize(textWriter, Object);
     	}
 
@@ -85,9 +145,11 @@ namespace _2DGAMELIB
     		using StreamReader reader = File.OpenText(Path);
     		return (T)new JsonSerializer
     		{
-    			NullValueHandling = NullValueHandling.Ignore,
-    			TypeNameHandling = TypeNameHandling.All
-    		}.Deserialize(reader, typeof(T));
+                PreserveReferencesHandling = PreserveReferencesHandling.All,
+                TypeNameHandling = TypeNameHandling.All,
+                Formatting = Newtonsoft.Json.Formatting.Indented,
+                NullValueHandling = NullValueHandling.Ignore
+            }.Deserialize(reader, typeof(T));
     	}
     }
 }

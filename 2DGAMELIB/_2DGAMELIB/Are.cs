@@ -101,7 +101,7 @@ namespace _2DGAMELIB
     		gh.SmoothingMode = SmoothingMode.None;
     		gh.PixelOffsetMode = PixelOffsetMode.HighSpeed;
             gh.InterpolationMode = InterpolationMode.NearestNeighbor;
-            gh.CompositingMode = CompositingMode.SourceCopy;
+            gh.CompositingMode = CompositingMode.SourceOver;
         }
 
     	public Vector2D GetPosition()

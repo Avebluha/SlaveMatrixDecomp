@@ -201,21 +201,6 @@ namespace _2DGAMELIB
     		parss.Add(Pars);
     	}
 
-    	public void Insert(int Index, Pars Pars)
-    	{
-    		parss.Insert(Index, Pars);
-    	}
-
-    	public void Remove(Pars Pars)
-    	{
-    		parss.Remove(Pars);
-    	}
-
-    	public void RemoveAt(int Index)
-    	{
-    		parss.RemoveAt(Index);
-    	}
-
     	public void Draws(Are Are)
     	{
     		foreach (Pars item in parss)

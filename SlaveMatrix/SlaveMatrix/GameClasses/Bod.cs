@@ -2915,22 +2915,6 @@ namespace SlaveMatrix
     		ぶっかけ大.Clear();
     	}
 
-    	public void スタンプ脚Clear()
-    	{
-    		スタンプK[] array = キスマーク;
-    		for (int i = 0; i < array.Length; i++)
-    		{
-    			array[i].脚Clear();
-    		}
-    		スタンプW[] array2 = 鞭痕;
-    		for (int i = 0; i < array2.Length; i++)
-    		{
-    			array2[i].脚Clear();
-    		}
-    		ぶっかけ小.Clear();
-    		ぶっかけ大.Clear();
-    	}
-
     	public void Sort(IEnumerable<Ele> ar, List<Ele> li)
     	{
     		foreach (Ele item in ar)
@@ -9217,233 +9201,9 @@ namespace SlaveMatrix
     		腰肌_人.陰毛_ハートCD.不透明度 = Cha.ChaD.現陰毛.Inverse() * Cha.ChaD.最陰毛濃度;
     	}
 
-    	public void SetEle<T>(Action<T> a) where T : Ele
-    	{
-    		T ele = Elements.GetEle<T>();
-    		if (ele == null)
-    		{
-    			return;
-    		}
-    		a(ele);
-    		foreach (EleI ei in eis)
-    		{
-    			if (ei.ElesH.Contains(ele))
-    			{
-    				ei.Updatef = true;
-    				break;
-    			}
-    		}
-    	}
-
-    	public void SetEle<T>(bool 右, Action<T> a) where T : Ele
-    	{
-    		T ele = Elements.GetEle<T>(右);
-    		if (ele == null)
-    		{
-    			return;
-    		}
-    		a(ele);
-    		foreach (EleI ei in eis)
-    		{
-    			if (ei.ElesH.Contains(ele))
-    			{
-    				ei.Updatef = true;
-    				break;
-    			}
-    		}
-    	}
-
-    	public void SetEle<T>(Func<T, bool> con, Action<T> a) where T : Ele
-    	{
-    		T ele = Elements.GetEle(con);
-    		if (ele == null)
-    		{
-    			return;
-    		}
-    		a(ele);
-    		foreach (EleI ei in eis)
-    		{
-    			if (ei.ElesH.Contains(ele))
-    			{
-    				ei.Updatef = true;
-    				break;
-    			}
-    		}
-    	}
-
-    	public void SetEleL<T>(Action<T> a) where T : Ele
-    	{
-    		T eleL = Elements.GetEleL<T>();
-    		if (eleL == null)
-    		{
-    			return;
-    		}
-    		a(eleL);
-    		foreach (EleI ei in eis)
-    		{
-    			if (ei.ElesH.Contains(eleL))
-    			{
-    				ei.Updatef = true;
-    				break;
-    			}
-    		}
-    	}
-
-    	public void SetEleL<T>(bool 右, Action<T> a) where T : Ele
-    	{
-    		T eleL = Elements.GetEleL<T>(右);
-    		if (eleL == null)
-    		{
-    			return;
-    		}
-    		a(eleL);
-    		foreach (EleI ei in eis)
-    		{
-    			if (ei.ElesH.Contains(eleL))
-    			{
-    				ei.Updatef = true;
-    				break;
-    			}
-    		}
-    	}
-
-    	public void SetEleL<T>(Func<T, bool> con, Action<T> a) where T : Ele
-    	{
-    		T eleL = Elements.GetEleL(con);
-    		if (eleL == null)
-    		{
-    			return;
-    		}
-    		a(eleL);
-    		foreach (EleI ei in eis)
-    		{
-    			if (ei.ElesH.Contains(eleL))
-    			{
-    				ei.Updatef = true;
-    				break;
-    			}
-    		}
-    	}
-
-    	public void SetEles<T>(Action<T> a) where T : Ele
-    	{
-    		IEnumerable<T> eles;
-    		foreach (T item in eles = Elements.GetEles<T>())
-    		{
-    			a(item);
-    		}
-    		foreach (EleI ei in eis)
-    		{
-    			if (eles.Any((T e) => ei.ElesH.Contains(e)))
-    			{
-    				ei.Updatef = true;
-    			}
-    		}
-    	}
-
-    	public void SetEles<T>(bool 右, Action<T> a) where T : Ele
-    	{
-    		IEnumerable<T> eles;
-    		foreach (T item in eles = Elements.GetEles<T>(右))
-    		{
-    			a(item);
-    		}
-    		foreach (EleI ei in eis)
-    		{
-    			if (eles.Any((T e) => ei.ElesH.Contains(e)))
-    			{
-    				ei.Updatef = true;
-    			}
-    		}
-    	}
-
-    	public void SetEles<T>(Func<T, bool> con, Action<T> a) where T : Ele
-    	{
-    		IEnumerable<T> eles;
-    		foreach (T item in eles = Elements.GetEles(con))
-    		{
-    			a(item);
-    		}
-    		foreach (EleI ei in eis)
-    		{
-    			if (eles.Any((T e) => ei.ElesH.Contains(e)))
-    			{
-    				ei.Updatef = true;
-    			}
-    		}
-    	}
-
-    	public void SetElesL<T>(Action<T> a) where T : Ele
-    	{
-    		IEnumerable<T> elesL;
-    		foreach (T item in elesL = Elements.GetElesL<T>())
-    		{
-    			a(item);
-    		}
-    		foreach (EleI ei in eis)
-    		{
-    			if (elesL.Any((T e) => ei.ElesH.Contains(e)))
-    			{
-    				ei.Updatef = true;
-    			}
-    		}
-    	}
-
-    	public void SetElesL<T>(bool 右, Action<T> a) where T : Ele
-    	{
-    		IEnumerable<T> elesL;
-    		foreach (T item in elesL = Elements.GetElesL<T>(右))
-    		{
-    			a(item);
-    		}
-    		foreach (EleI ei in eis)
-    		{
-    			if (elesL.Any((T e) => ei.ElesH.Contains(e)))
-    			{
-    				ei.Updatef = true;
-    			}
-    		}
-    	}
-
-    	public void SetElesL<T>(Func<T, bool> con, Action<T> a) where T : Ele
-    	{
-    		IEnumerable<T> elesL;
-    		foreach (T item in elesL = Elements.GetElesL(con))
-    		{
-    			a(item);
-    		}
-    		foreach (EleI ei in eis)
-    		{
-    			if (elesL.Any((T e) => ei.ElesH.Contains(e)))
-    			{
-    				ei.Updatef = true;
-    			}
-    		}
-    	}
-
-    	public List<string> GetHitTags(Color hc)
-    	{
-    		return (from e in EnumAllEle()
-    			select e.本体.GetHitTags(ref hc)).Aggregate(delegate(List<string> e0, List<string> e1)
-    		{
-    			e0.AddRange(e1);
-    			return e0;
-    		});
-    	}
-
     	public Ele GetHitEle(Color hc)
     	{
     		return EnumAllEle().FirstOrDefault((Ele e) => e.本体.IsHit(ref hc));
-    	}
-
-    	public List<Par> GetHitPars(Color hc)
-    	{
-    		return (from e in EnumAllEle()
-    			select e.本体.GetHitPars(ref hc)).Aggregate(delegate(List<Par> e0, List<Par> e1)
-    		{
-    			e0.AddRange(e1);
-    			return e0;
-    		});
     	}
 
     	public bool IsHit(Color hc)
@@ -9457,10 +9217,6 @@ namespace SlaveMatrix
     			select e.飛膜).Concat(from e in Elements.GetEles<手_蝙>()
     			select e.飛膜).Concat(from e in Elements.GetEles<大顎基>()
     			select e.大顎上);
-    	}
-
-    	public void Set染み位置()
-    	{
     	}
 
     	public void Join()
@@ -9920,11 +9676,6 @@ namespace SlaveMatrix
     		return 膣口位置.DistanceSquared(Cha.CP) < r10;
     	}
 
-    	public bool Is口部()
-    	{
-    		return 口腔位置.DistanceSquared(Cha.CP) < r35;
-    	}
-
     	public bool Is胸部()
     	{
     		return 胸部位置.DistanceSquared(Cha.CP) < r17;
@@ -9946,51 +9697,6 @@ namespace SlaveMatrix
     			return 蠍.くぱぁ >= 0.5;
     		}
     		return true;
-    	}
-
-    	public void 口腔接続()
-    	{
-    		腰.接続PA();
-    		胴.接続PA();
-    		胸.接続PA();
-    		首.接続PA();
-    		頭.接続PA();
-    	}
-
-    	public void 性器接続()
-    	{
-    		腰.接続PA();
-    		if (Is獣)
-    		{
-    			胸_獣.接続PA();
-    			胴_獣.接続PA();
-    			腰_獣.接続PA();
-    		}
-    		性器.接続PA();
-    	}
-
-    	public void 肛門接続()
-    	{
-    		腰.接続PA();
-    		if (Is獣)
-    		{
-    			胸_獣.接続PA();
-    			胴_獣.接続PA();
-    			腰_獣.接続PA();
-    		}
-    		肛門.接続PA();
-    	}
-
-    	public void 出糸接続()
-    	{
-    		foreach (Ele item in 腰.EnumEle())
-    		{
-    			item.接続PA();
-    			if (item is 尾_蜘)
-    			{
-    				break;
-    			}
-    		}
     	}
 
     	public void 腕前後(bool 右, int n, bool value)

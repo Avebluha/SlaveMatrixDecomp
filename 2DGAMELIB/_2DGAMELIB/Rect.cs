@@ -14,9 +14,7 @@ namespace _2DGAMELIB
 
     	public Vector2D LocalCenter => new Vector2D(LocalWidth * 0.5, LocalHeight * 0.5);
 
-    	public Rect()
-    	{
-    	}
+    	public Rect(){}
 
     	public Rect(double XRatio, double YRatio, double Size)
     	{

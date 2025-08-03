@@ -15,20 +15,8 @@ namespace _2DGAMELIB
 
     	public List<Color> TextColors = new List<Color>();
 
-    	public But1(Par Par, Action<But> Action)
-    		: base(Par, Action)
-    	{
-    		Setting();
-    	}
-
     	public But1(ParT ParT, Action<But> Action)
     		: base(ParT, Action)
-    	{
-    		Setting();
-    	}
-
-    	public But1(Pars Pars, Action<But> Action)
-    		: base(Pars, Action)
     	{
     		Setting();
     	}

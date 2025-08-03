@@ -13,10 +13,6 @@ namespace _2DGAMELIB
 
     	private static double s0;
 
-    	public static double GetDiagonalLength(this double Width, double Height)
-    	{
-    		return System.Math.Sqrt(Width * Width + Height * Height);
-    	}
 
     	public static Color Reverse(this Color c)
     	{
@@ -339,11 +335,6 @@ namespace _2DGAMELIB
     	public static string Join(this IEnumerable<string> strs, string Separator)
     	{
     		return string.Join(Separator, strs);
-    	}
-
-    	public static string[] Split(this string str, string Separator)
-    	{
-    		return str.Split(new string[1] { Separator }, StringSplitOptions.None);
     	}
 
     	static Oth()

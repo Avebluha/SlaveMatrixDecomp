@@ -691,28 +691,9 @@ namespace SlaveMatrix
     		return (T)src.FirstOrDefault((Ele e) => e is T && e.右 == 右);
     	}
 
-    	public static T GetEle<T>(this IEnumerable<Ele> src, Func<T, bool> con) where T : Ele
-    	{
-    		if (src == null)
-    		{
-    			return null;
-    		}
-    		return (T)src.FirstOrDefault((Ele e) => e is T && con((T)e));
-    	}
-
     	public static IEnumerable<T> GetEles<T>(this IEnumerable<Ele> src) where T : Ele
     	{
     		return src?.Where((Ele e) => e is T).Cast<T>();
-    	}
-
-    	public static IEnumerable<T> GetEles<T>(this IEnumerable<Ele> src, bool 右) where T : Ele
-    	{
-    		return src?.Where((Ele e) => e is T && e.右 == 右).Cast<T>();
-    	}
-
-    	public static IEnumerable<T> GetEles<T>(this IEnumerable<Ele> src, Func<T, bool> con) where T : Ele
-    	{
-    		return src?.Where((Ele e) => e is T && con((T)e)).Cast<T>();
     	}
 
     	public static void SetEle<T>(this IEnumerable<Ele> src, Action<T> a) where T : Ele
@@ -778,48 +759,6 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public static T GetEleL<T>(this IEnumerable<Ele> src) where T : Ele
-    	{
-    		if (src == null)
-    		{
-    			return null;
-    		}
-    		return (T)src.LastOrDefault((Ele e) => e is T);
-    	}
-
-    	public static T GetEleL<T>(this IEnumerable<Ele> src, bool 右) where T : Ele
-    	{
-    		if (src == null)
-    		{
-    			return null;
-    		}
-    		return (T)src.LastOrDefault((Ele e) => e is T && e.右 == 右);
-    	}
-
-    	public static T GetEleL<T>(this IEnumerable<Ele> src, Func<T, bool> con) where T : Ele
-    	{
-    		if (src == null)
-    		{
-    			return null;
-    		}
-    		return (T)src.LastOrDefault((Ele e) => e is T && con((T)e));
-    	}
-
-    	public static IEnumerable<T> GetElesL<T>(this IEnumerable<Ele> src) where T : Ele
-    	{
-    		return src?.Where((Ele e) => e is T).Cast<T>();
-    	}
-
-    	public static IEnumerable<T> GetElesL<T>(this IEnumerable<Ele> src, bool 右) where T : Ele
-    	{
-    		return src?.Where((Ele e) => e is T && e.右 == 右).Cast<T>();
-    	}
-
-    	public static IEnumerable<T> GetElesL<T>(this IEnumerable<Ele> src, Func<T, bool> con) where T : Ele
-    	{
-    		return src?.Where((Ele e) => e is T && con((T)e)).Cast<T>();
-    	}
-
     	public static void 描画0(this IEnumerable<Ele> es, Are Are)
     	{
     		foreach (Ele e in es)
@@ -876,16 +815,6 @@ namespace SlaveMatrix
     	public static ConnectionInfo To接続情報(this string s)
     	{
     		return (ConnectionInfo)Enum.Parse(接続情報t, s);
-    	}
-
-    	public static object GetField(this Type Type, object Object, string Name)
-    	{
-    		return Type.GetField(Name, bf).GetValue(Object);
-    	}
-
-    	public static object GetProperty(this Type Type, object Object, string Name)
-    	{
-    		return Type.GetProperty(Name, bf).GetValue(Object, null);
     	}
 
     	public static Color BlendP1(this Color Cd, Color Cs)

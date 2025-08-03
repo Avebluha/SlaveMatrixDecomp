@@ -4218,82 +4218,6 @@ namespace SlaveMatrix
     		Cha.Bod.触覚右.角度C = (0.0 - a) * RNG.XS.NextDouble();
     	}
 
-    	public static void 触覚甲左(this Cha Cha, double u1, double u2, double 根本角度, double 節角度)
-    	{
-    		Cha.Bod.触覚甲左.SetAngle0();
-    		Cha.Bod.触覚甲左.X0Y0_節0.AngleBase += 根本角度 + u1;
-    		Cha.Bod.触覚甲左.X0Y0_節1.AngleBase += 節角度 + u2;
-    	}
-
-    	public static void 触覚甲右(this Cha Cha, double u1, double u2, double 根本角度, double 節角度)
-    	{
-    		Cha.Bod.触覚甲右.SetAngle0();
-    		Cha.Bod.触覚甲右.X0Y0_節0.AngleBase += 0.0 - 根本角度 + (0.0 - u1);
-    		Cha.Bod.触覚甲右.X0Y0_節1.AngleBase += 0.0 - 節角度 + (0.0 - u2);
-    	}
-
-    	public static void 触覚甲_基本左(this Cha Cha, double u1, double u2)
-    	{
-    		Cha.触覚甲左(u1, u2, 0.0, 0.0);
-    	}
-
-    	public static void 触覚甲_基本右(this Cha Cha, double u1, double u2)
-    	{
-    		Cha.触覚甲右(u1, u2, 0.0, 0.0);
-    	}
-
-    	public static void 触覚甲_ピーン左(this Cha Cha, double u1, double u2)
-    	{
-    		Cha.触覚甲左(u1, u2, 20.0, -25.0);
-    	}
-
-    	public static void 触覚甲_ピーン右(this Cha Cha, double u1, double u2)
-    	{
-    		Cha.触覚甲右(u1, u2, 20.0, -25.0);
-    	}
-
-    	public static void 触覚甲_萎縮左(this Cha Cha, double u1, double u2)
-    	{
-    		Cha.触覚甲左(u1, u2, -80.0, 100.0);
-    	}
-
-    	public static void 触覚甲_萎縮右(this Cha Cha, double u1, double u2)
-    	{
-    		Cha.触覚甲右(u1, u2, -80.0, 100.0);
-    	}
-
-    	public static void 触覚甲左_0(this Cha c, int i, double u1, double u2)
-    	{
-    		switch (i)
-    		{
-    		case 0:
-    			c.触覚甲_基本左(u1, u2);
-    			break;
-    		case 1:
-    			c.触覚甲_ピーン左(u1, u2);
-    			break;
-    		case 2:
-    			c.触覚甲_萎縮左(u1, u2);
-    			break;
-    		}
-    	}
-
-    	public static void 触覚甲右_0(this Cha c, int i, double u1, double u2)
-    	{
-    		switch (i)
-    		{
-    		case 0:
-    			c.触覚甲_基本右(u1, u2);
-    			break;
-    		case 1:
-    			c.触覚甲_ピーン右(u1, u2);
-    			break;
-    		case 2:
-    			c.触覚甲_萎縮右(u1, u2);
-    			break;
-    		}
-    	}
-
     	public static void 触覚甲絶頂(this Cha Cha, double a)
     	{
     		Cha.Bod.触覚甲左.角度C = a * RNG.XS.NextDouble();
@@ -4901,27 +4825,6 @@ namespace SlaveMatrix
     		{
     			Cha.腕_人_パイズリ左(n, u, u2, u3, u4);
     			Cha.腕_人_パイズリ右(n, u, u2, u3, u4);
-    		}
-    	}
-
-    	public static void 両腕_人_腕上げ(this Cha Cha, int n, bool 左右, bool 前後)
-    	{
-    		double u = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    		double u2 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    		double u3 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    		double u4 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    		Cha.Bod.腕左右前後 = 前後;
-    		Cha.腕_人_腕上げ右(n, u, u2, u3, u4);
-    		Cha.腕_人_腕上げ左(n, u, u2, u3, u4);
-    		if (左右)
-    		{
-    			Cha.腕_人_腕上げ右(n, u, u2, u3, u4);
-    			Cha.腕_人_腕上げ左(n, u, u2, u3, u4);
-    		}
-    		else
-    		{
-    			Cha.腕_人_腕上げ左(n, u, u2, u3, u4);
-    			Cha.腕_人_腕上げ右(n, u, u2, u3, u4);
     		}
     	}
 
@@ -8627,11 +8530,6 @@ namespace SlaveMatrix
     		触手2.重複角度処理();
     	}
 
-    	public static void 触手_基本左(this Cha Cha, int n, int s, double u1, double u2, double u3)
-    	{
-    		Cha.触手左(n, s, u1, u2, u3, 20.0.GetRanAngle(), 0.0);
-    	}
-
     	public static void 触手_基本右(this Cha Cha, int n, int s, double u1, double u2, double u3)
     	{
     		Cha.触手右(n, s, u1, u2, u3, 20.0.GetRanAngle(), 0.0);
@@ -8647,19 +8545,9 @@ namespace SlaveMatrix
     		Cha.触手右(n, s, u1, u2, u3, 20.0.GetRanAngle(), 0.25, (int i) => 35.0, (int i) => -35.0);
     	}
 
-    	public static void 触手_波左(this Cha Cha, int n, int s, double u1, double u2, double u3)
-    	{
-    		Cha.触手左(n, s, u1, u2, u3, 20.0.GetRanAngle(), 0.25, (int i) => System.Math.Sin(i) * 80.0);
-    	}
-
     	public static void 触手_波右(this Cha Cha, int n, int s, double u1, double u2, double u3)
     	{
     		Cha.触手右(n, s, u1, u2, u3, 20.0.GetRanAngle(), 0.25, (int i) => System.Math.Sin(i) * 80.0);
-    	}
-
-    	public static void 触手_ピーン左(this Cha Cha, int n, int s, double u1, double u2, double u3)
-    	{
-    		Cha.触手左(n, s, u1, u2, u3, 20.0.GetRanAngle(), 0.0, (int i) => 0.0, (int i) => 25.0.GetRanAngle());
     	}
 
     	public static void 触手_ピーン右(this Cha Cha, int n, int s, double u1, double u2, double u3)
@@ -8680,25 +8568,6 @@ namespace SlaveMatrix
     	public static void 両触手_0(this Cha Cha, int n, int i2)
     	{
     		Cha.触手右_0(i2, n, RNG.XS.NextSign(), Cha.角度ムラ(RNG.XS.NextSign(), 1.5, RNG.XS.NextSign(), 0.25), Cha.角度ムラ(RNG.XS.NextSign(), 1.5, RNG.XS.NextSign(), 0.25), Cha.角度ムラ(RNG.XS.NextSign(), 1.5, RNG.XS.NextSign(), 0.25));
-    	}
-
-    	public static void 触手左_0(this Cha c, int i, int n, int s, double u1, double u2, double u3)
-    	{
-    		switch (i)
-    		{
-    		case 0:
-    			c.触手_基本左(n, s, u1, u2, u3);
-    			break;
-    		case 1:
-    			c.触手_S字左(n, s, u1, u2, u3);
-    			break;
-    		case 2:
-    			c.触手_波左(n, s, u1, u2, u3);
-    			break;
-    		case 3:
-    			c.触手_ピーン左(n, s, u1, u2, u3);
-    			break;
-    		}
     	}
 
     	public static void 触手右_0(this Cha c, int i, int n, int s, double u1, double u2, double u3)

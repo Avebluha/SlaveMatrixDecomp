@@ -357,41 +357,6 @@ namespace _2DGAMELIB
     		}
     	}
 
-    	public void SetHitColor(Med Med)
-    	{
-    		if (base_.HitColor != Color.Transparent)
-    		{
-    			Med.RemUniqueColor(base_.HitColor);
-    		}
-    		base_.HitColor = Med.GetUniqueColor();
-    		if (frame1.HitColor != Color.Transparent)
-    		{
-    			Med.RemUniqueColor(frame1.HitColor);
-    		}
-    		frame1.HitColor = Med.GetUniqueColor();
-    		if (Range == Range.MinusPlus)
-    		{
-    			if (frame2.HitColor != Color.Transparent)
-    			{
-    				Med.RemUniqueColor(frame2.HitColor);
-    			}
-    			frame2.HitColor = Med.GetUniqueColor();
-    		}
-    		if (gauge.HitColor != Color.Transparent)
-    		{
-    			Med.RemUniqueColor(gauge.HitColor);
-    		}
-    		gauge.HitColor = Med.GetUniqueColor();
-    		if (knob != null)
-    		{
-    			if (knob.HitColor != Color.Transparent)
-    			{
-    				Med.RemUniqueColor(knob.HitColor);
-    			}
-    			knob.HitColor = Med.GetUniqueColor();
-    		}
-    	}
-
     	private void SetBrush(double Unit, ref Color PlusColor1, ref Color PlusColor2, ref Color MinusColor1, ref Color MinusColor2)
     	{
     		this.Unit = Unit;
@@ -530,38 +495,6 @@ namespace _2DGAMELIB
     			return CursorPosition.X - op.X;
     		}
     		return 0.0;
-    	}
-
-    	public Gau(string Name, ref Vector2D Position, double Size, double Width, double Height, double Margin, Open Open, Range Range, ref Color PlusColor, ref Color MinusColor, ref Color BackColor, bool Knob)
-    	{
-    		this.Open = Open;
-    		this.Range = Range;
-    		PlusBrush = new SolidBrush(PlusColor);
-    		MinusBrush = new SolidBrush(MinusColor);
-    		ParSetting(Name, ref Position, Size, Width, Height, Margin, ref BackColor, Knob);
-    		Max = GetMax();
-    		Value = 0.0;
-    	}
-
-    	public Gau(string Name, Vector2D Position, double Size, double Width, double Height, double Margin, Open Open, Range Range, Color PlusColor, Color MinusColor, Color BackColor, bool Knob)
-    	{
-    		this.Open = Open;
-    		this.Range = Range;
-    		PlusBrush = new SolidBrush(PlusColor);
-    		MinusBrush = new SolidBrush(MinusColor);
-    		ParSetting(Name, ref Position, Size, Width, Height, Margin, ref BackColor, Knob);
-    		Max = GetMax();
-    		Value = 0.0;
-    	}
-
-    	public Gau(string Name, ref Vector2D Position, double Size, double Width, double Height, double Margin, Open Open, Range Range, double DisUnit, ref Color PlusColor1, ref Color PlusColor2, ref Color MinusColor1, ref Color MinusColor2, ref Color BackColor, bool Knob)
-    	{
-    		this.Open = Open;
-    		this.Range = Range;
-    		ParSetting(Name, ref Position, Size, Width, Height, Margin, ref BackColor, Knob);
-    		SetBrush(DisUnit, ref PlusColor1, ref PlusColor2, ref MinusColor1, ref MinusColor2);
-    		Max = GetMax();
-    		Value = 0.0;
     	}
 
     	public Gau(string Name, Vector2D Position, double Size, double Width, double Height, double Margin, Open Open, Range Range, double DisUnit, Color PlusColor1, Color PlusColor2, Color MinusColor1, Color MinusColor2, Color BackColor, bool Knob)

@@ -286,46 +286,16 @@ namespace _2DGAMELIB
     		difs.Add(Dif);
     	}
 
-    	public void Insert(int Index, Dif Dif)
-    	{
-    		difs.Insert(Index, Dif);
-    	}
-
-    	public void Remove(Dif Dif)
-    	{
-    		difs.Remove(Dif);
-    	}
-
-    	public void RemoveAt(int Index)
-    	{
-    		difs.RemoveAt(Index);
-    	}
 
     	public void Draw(Are Are)
     	{
     		Are.Draw(Current);
     	}
-
-    	public void Draws(Are Are)
-    	{
-    		foreach (Dif dif in difs)
-    		{
-    			dif.Draws(Are);
-    		}
-    	}
-
     	public void Draw(AreM AreM)
     	{
     		AreM.Draw(Current);
     	}
 
-    	public void Draws(AreM AreM)
-    	{
-    		foreach (Dif dif in difs)
-    		{
-    			dif.Draws(AreM);
-    		}
-    	}
     	private Par GetJoinRoot(Pars ps)
     	{
     		Par[] array = ps.EnumAllPar().ToArray();
@@ -375,27 +345,11 @@ namespace _2DGAMELIB
     		pj[Current].JoinPA();
     	}
 
-    	public void JoinPall()
-    	{
-    		foreach (Joints value in pj.Values)
-    		{
-    			value.JoinP();
-    		}
-    	}
-
     	public void JoinPAall()
     	{
     		foreach (Joints value in pj.Values)
     		{
     			value.JoinPA();
-    		}
-    	}
-
-    	public void JoinP(Pars ps)
-    	{
-    		if (pj.ContainsKey(ps))
-    		{
-    			pj[ps].JoinP();
     		}
     	}
 

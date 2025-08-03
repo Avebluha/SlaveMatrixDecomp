@@ -33,10 +33,6 @@ namespace _2DGAMELIB
 
     	public int Index;
 
-    	public JointS()
-    	{
-    	}
-
     	public JointS(Difs Difs, Par Par, int Index)
     	{
     		this.Difs = Difs;

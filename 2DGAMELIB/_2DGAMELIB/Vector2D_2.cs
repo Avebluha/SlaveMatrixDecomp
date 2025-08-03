@@ -14,11 +14,5 @@ namespace _2DGAMELIB
     		this.v1 = v1;
     		this.v2 = v2;
     	}
-
-    	public Vector2D_2(ref Vector2D v1, ref Vector2D v2)
-    	{
-    		this.v1 = v1;
-    		this.v2 = v2;
-    	}
     }
 }

@@ -56,18 +56,7 @@ namespace _2DGAMELIB
     		values = new Dictionary<T1, T2>();
     	}
 
-    	public OrderedDictionary(int capacity)
-    	{
-    		keys = new List<T1>(capacity);
-    		values = new Dictionary<T1, T2>(capacity);
-    	}
-
     	public int IndexOf(T1 Key)
-    	{
-    		return keys.IndexOf(Key);
-    	}
-
-    	public int IndexOf(ref T1 Key)
     	{
     		return keys.IndexOf(Key);
     	}
@@ -86,45 +75,12 @@ namespace _2DGAMELIB
     		return -1;
     	}
 
-    	public int IndexOf(ref T2 Value)
-    	{
-    		int num = 0;
-    		foreach (T2 value in Values)
-    		{
-    			if (value.Equals(Value))
-    			{
-    				return num;
-    			}
-    			num++;
-    		}
-    		return -1;
-    	}
-
     	public int LastIndexOf(T1 Key)
     	{
     		return keys.LastIndexOf(Key);
     	}
 
-    	public int LastIndexOf(ref T1 Key)
-    	{
-    		return keys.LastIndexOf(Key);
-    	}
-
     	public int LastIndexOf(T2 Value)
-    	{
-    		int num = keys.Count - 1;
-    		foreach (T2 item in Values.Reverse())
-    		{
-    			if (item.Equals(Value))
-    			{
-    				return num;
-    			}
-    			num--;
-    		}
-    		return -1;
-    	}
-
-    	public int LastIndexOf(ref T2 Value)
     	{
     		int num = keys.Count - 1;
     		foreach (T2 item in Values.Reverse())
@@ -144,19 +100,7 @@ namespace _2DGAMELIB
     		values.Add(Key, Value);
     	}
 
-    	public void Add(ref T1 Key, ref T2 Value)
-    	{
-    		keys.Add(Key);
-    		values.Add(Key, Value);
-    	}
-
     	public void Insert(int Index, T1 Key, T2 Value)
-    	{
-    		keys.Insert(Index, Key);
-    		values.Add(Key, Value);
-    	}
-
-    	public void Insert(int Index, ref T1 Key, ref T2 Value)
     	{
     		keys.Insert(Index, Key);
     		values.Add(Key, Value);
@@ -166,42 +110,6 @@ namespace _2DGAMELIB
     	{
     		keys.Remove(Key);
     		values.Remove(Key);
-    	}
-
-    	public void Remove(ref T1 Key)
-    	{
-    		keys.Remove(Key);
-    		values.Remove(Key);
-    	}
-
-    	public void Reverse()
-    	{
-    		keys.Reverse();
-    	}
-
-    	public void Reverse(int Index, int Count)
-    	{
-    		keys.Reverse(Index, Count);
-    	}
-
-    	public bool ContainsKey(T1 Key)
-    	{
-    		return values.ContainsKey(Key);
-    	}
-
-    	public bool ContainsKey(ref T1 Key)
-    	{
-    		return values.ContainsKey(Key);
-    	}
-
-    	public bool ContainsValue(T2 Value)
-    	{
-    		return values.ContainsValue(Value);
-    	}
-
-    	public bool ContainsValue(ref T2 Value)
-    	{
-    		return values.ContainsValue(Value);
     	}
     }
 }

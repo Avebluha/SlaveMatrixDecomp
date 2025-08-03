@@ -537,26 +537,10 @@ namespace _2DGAMELIB
     		parent = Parent;
     	}
 
-    	public void SetPen(Pen Pen)
-    	{
-    		pen = Pen;
-    		if (pen != null)
-    		{
-    			pen.StartCap = LineCap.Round;
-    			pen.EndCap = LineCap.Round;
-    		}
-    		EditP = true;
-    	}
 
     	public void SetBrush(Brush Brush)
     	{
     		brush = Brush;
-    	}
-
-    	public void EditTrue()
-    	{
-    		Edit = true;
-    		EditH = true;
     	}
 
     	public void SetDefault()
@@ -956,16 +940,6 @@ namespace _2DGAMELIB
     		return list;
     	}
 
-    	public Pars GetRoot()
-    	{
-    		Pars pars2 = parent;
-    		while (pars2.Parent != null)
-    		{
-    			pars2 = pars2.Parent;
-    		}
-    		return pars2;
-    	}
-
     	public override string ToString()
     	{
     		return Tag;
@@ -985,39 +959,6 @@ namespace _2DGAMELIB
     		jp.ReverseY(ref basePointBase);
     		angleBase = 360.0 - angleBase;
     		angleCont = 360.0 - angleCont;
-    	}
-
-    	public bool IsParentTag(string Tag)
-    	{
-    		if (Parent != null)
-    		{
-    			return Parent.Tag == Tag;
-    		}
-    		return false;
-    	}
-
-    	public bool IsRootTag(string Tag)
-    	{
-    		Pars root = GetRoot();
-    		if (root != null)
-    		{
-    			return root.Tag == Tag;
-    		}
-    		return false;
-    	}
-
-    	public bool ContainsParentTag(string Tag)
-    	{
-    		if (Parent != null)
-    		{
-    			return Parent.Tag.Contains(Tag);
-    		}
-    		return false;
-    	}
-
-    	public bool ContainsRootTag(string Tag)
-    	{
-    		return GetRoot()?.Tag.Contains(Tag) ?? false;
     	}
 
     	public double GetArea()

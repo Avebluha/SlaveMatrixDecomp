@@ -18,11 +18,6 @@ namespace _2DGAMELIB
     		this.OnColor = OnColor;
     	}
 
-    	public Swi(ref Color OnColor)
-    	{
-    		this.OnColor = OnColor;
-    	}
-
     	public void OnOff(But But)
     	{
     		But1 but = (But1)But;

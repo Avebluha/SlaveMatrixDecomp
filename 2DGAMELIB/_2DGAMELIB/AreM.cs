@@ -57,29 +57,6 @@ namespace _2DGAMELIB
     			Pars.DrawH(hitUnit, gh);
     		}
     	}
-    	public new void Draw(Graphics GD)
-    	{
-    		im = GD.InterpolationMode;
-    		GD.InterpolationMode = InterpolationMode.NearestNeighbor;
-    		p = GetPosition();
-    		GD.DrawImage(Dis, (int)(p.X * unit), (int)(p.Y * unit), WH.Width, WH.Height);
-    		GD.InterpolationMode = im;
-    	}
-
-    	public new void Draw(Graphics GD, double Opacity)
-    	{
-    		im = GD.InterpolationMode;
-    		GD.InterpolationMode = InterpolationMode.NearestNeighbor;
-    		cm.Matrix33 = (float)Opacity;
-    		ia.SetColorMatrix(cm);
-    		p = GetPosition();
-    		r.X = (int)(p.X * unit);
-    		r.Y = (int)(p.Y * unit);
-    		r.Width = WH.Width;
-    		r.Height = WH.Height;
-    		GD.DrawImage(Dis, r, 0, 0, Dis.Width, Dis.Height, GraphicsUnit.Pixel, ia);
-    		GD.InterpolationMode = im;
-    	}
 
     }
 }

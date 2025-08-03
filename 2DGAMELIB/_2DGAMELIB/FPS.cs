@@ -10,8 +10,6 @@ namespace _2DGAMELIB
     	private long last_frame;
     	public double Value;
 
-    	private int count;
-
     	private double ticks_per_frame;
     	public FPS(double FPS)
     	{

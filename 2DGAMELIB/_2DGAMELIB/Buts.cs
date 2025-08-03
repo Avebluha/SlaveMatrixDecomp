@@ -65,25 +65,12 @@ namespace _2DGAMELIB
     		}
     	}
 
-    	public void Draw(AreM AreM)
-    	{
-    		foreach (But value in buts.Values)
-    		{
-    			value.Draw(AreM);
-    		}
-    	}
-
     	public void Dispose()
     	{
     		foreach (But value in buts.Values)
     		{
     			value.Dispose();
     		}
-    	}
-
-    	public bool IsHit(Color hc)
-    	{
-    		return EnumBut.Any((But e) => e.Pars.Values.First().ToPar().HitColor == hc);
     	}
     }
 }

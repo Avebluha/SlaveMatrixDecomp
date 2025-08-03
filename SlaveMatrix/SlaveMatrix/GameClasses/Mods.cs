@@ -483,14 +483,6 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public static void SwitchMode(this Med Med, string Mode, Are Are)
-    	{
-    		Med.Mode = Mode;
-    		Med.DrawStart(Are);
-    		Med.DrawEnd(BlackBackground);
-    		sta = true;
-    	}
-
     	public static void SwitchMode(this Med Med, string Mode, Are Are, Action<Are, FPS> 描画)
     	{
     		Med.Mode = Mode;
