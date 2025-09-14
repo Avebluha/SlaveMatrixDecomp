@@ -77,12 +77,12 @@ namespace _2DGAMELIB
 
     	private static Vector2D GetTP2()
     	{
-    		return Matrix.TransformCoordinateBP(ref TP1, ref 中央中央, ref m120);
+    		return Math.TransformCoordinateBP(ref TP1, ref 中央中央, ref m120);
     	}
 
     	private static Vector2D GetTP3()
     	{
-    		return Matrix.TransformCoordinateBP(ref TP1, ref 中央中央, ref m240);
+    		return Math.TransformCoordinateBP(ref TP1, ref 中央中央, ref m240);
     	}
 
     	public static Vector2D MulX(this Vector2D Vector, double X)

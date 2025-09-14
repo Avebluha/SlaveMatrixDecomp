@@ -117,33 +117,6 @@ namespace _2DGAMELIB
     		parT.OP[0].ps[3] = new Vector2D(0.0, parT.RectSize.Y);
     	}
 
-    	public bool Double(ref Color HitColor)
-    	{
-            //TODO fix?
-            //if (Input && parT.HitColor == HitColor && !Med.BaseControl.Controls.Contains(tb))
-            /*{
-                tb.Text = parT.Text;
-    			parT.Text = "";
-    			SetRectT();
-    			//Med.BaseControl.Controls.Add(tb);
-    			tb.SelectAll();
-    			tb.Focus();
-    			tb.BringToFront();
-    			return true;
-    		}*/
-    		return false;
-    	}
-
-    	public void Click(ref Color HitColor)
-    	{
-            //TODO fix?
-            /*if (Input && parT.HitColor != HitColor && Med.BaseControl.Controls.Contains(tb))
-    		{
-    			//Med.BaseControl.Controls.Remove(tb);
-    			SetText(tb.Text);
-    		}*/
-    	}
-
     	public void Dispose()
     	{
     		parT.Dispose();

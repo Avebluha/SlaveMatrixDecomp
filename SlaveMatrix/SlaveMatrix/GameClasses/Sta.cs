@@ -1430,10 +1430,10 @@ namespace SlaveMatrix
     			Translate(path, 0);
     		}
     	}
-
+        
     	public static string[] JSDPaths()
     	{
-    		JsonSavePath = Path.Combine(CurrentDirectory, "save", "json");
+    		JsonSavePath = Path.Combine(CurrentDirectory, "save");
     		IEnumerable<string> source = Directory.EnumerateFiles(JsonSavePath);
     		return new string[10]
     		{

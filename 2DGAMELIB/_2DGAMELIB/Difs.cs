@@ -21,8 +21,6 @@ namespace _2DGAMELIB
 
     	public Dictionary<Pars, Par> pr;
 
-    	public List<Dif> Difss => difs;
-
     	public int CountX => difs.Count;
 
     	public int CountY
@@ -364,26 +362,6 @@ namespace _2DGAMELIB
     	public Par GetHitPar_(Color HitColor)
     	{
     		return difs.FirstOrDefault((Dif d) => d.IsHit(ref HitColor)).Parss.FirstOrDefault((Pars ps) => ps.IsHit(ref HitColor)).EnumAllPar().FirstOrDefault((Par e) => e.HitColor == HitColor);
-    	}
-
-    	public List<string> GetHitTags(ref Color HitColor)
-    	{
-    		List<string> list = new List<string>();
-    		foreach (Dif dif in difs)
-    		{
-    			list.AddRange(dif.GetHitTags(ref HitColor));
-    		}
-    		return list;
-    	}
-
-    	public List<Par> GetHitPars(ref Color HitColor)
-    	{
-    		List<Par> list = new List<Par>();
-    		foreach (Dif dif in difs)
-    		{
-    			list.AddRange(dif.GetHitPars(ref HitColor));
-    		}
-    		return list;
     	}
 
     	public bool IsHit(ref Color HitColor)

@@ -10,33 +10,6 @@ namespace _2DGAMELIB
 
     	public double Y;
 
-    	public double this[int index]
-    	{
-    		get
-    		{
-    			return index switch
-    			{
-    				0 => X, 
-    				1 => Y, 
-    				_ => throw new ArgumentOutOfRangeException("index", "Indices for Vector2D run from 0 to 1, inclusive."), 
-    			};
-    		}
-    		set
-    		{
-    			switch (index)
-    			{
-    			case 0:
-    				X = value;
-    				break;
-    			case 1:
-    				Y = value;
-    				break;
-    			default:
-    				throw new ArgumentOutOfRangeException("index", "Indices for Vector2D run from 0 to 1, inclusive.");
-    			}
-    		}
-    	}
-
     	public Vector2D(int x, int y)
     	{
     		X = x;

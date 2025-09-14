@@ -39,30 +39,6 @@ namespace _2DGAMELIB
     		Difs1.JoinPA();
     	}
 
-    	public void JoinPall()
-    	{
-    		foreach (Par item in Difs1.EnumJoinRoot)
-    		{
-    			Difs0.Current.GetPar(Path0).SetJointP(Index, item);
-    		}
-    		foreach (Pars item2 in Difs1.EnumAllPars())
-    		{
-    			Difs1.JoinPA(item2);
-    		}
-    	}
-
-    	public void JoinPAall()
-    	{
-    		foreach (Par item in Difs1.EnumJoinRoot)
-    		{
-    			Difs0.Current.GetPar(Path0).SetJointPA(Index, item);
-    		}
-    		foreach (Pars item2 in Difs1.EnumAllPars())
-    		{
-    			Difs1.JoinPA(item2);
-    		}
-    	}
-
     	public void Set(JointS 接続元)
     	{
     		Difs0 = 接続元.Difs;

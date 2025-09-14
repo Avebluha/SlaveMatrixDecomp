@@ -73,7 +73,7 @@ namespace SlaveMatrix
 
     	public double 濃度 = 1.0;
 
-    	//TODO figure out what this broke...
+    	//TODO this broke loading saves
         [NonSerialized]
         public Type ThisType;
 

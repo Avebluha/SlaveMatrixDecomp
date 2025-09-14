@@ -50,21 +50,9 @@ namespace _2DGAMELIB
 
     	public Pars Pars => pars;
 
-    	public But(Par Par, Action<But> Action)
-    	{
-    		pars = new Pars(Par);
-    		this.Action = Action;
-    	}
-
     	public But(ParT ParT, Action<But> Action)
     	{
     		pars = new Pars(ParT);
-    		this.Action = Action;
-    	}
-
-    	public But(Pars Pars, Action<But> Action)
-    	{
-    		pars = Pars;
     		this.Action = Action;
     	}
 
@@ -126,14 +114,6 @@ namespace _2DGAMELIB
     		if (dra)
     		{
     			Are.Draw(pars);
-    		}
-    	}
-
-    	public void Draw(AreM AreM)
-    	{
-    		if (dra)
-    		{
-    			AreM.Draw(pars);
     		}
     	}
 

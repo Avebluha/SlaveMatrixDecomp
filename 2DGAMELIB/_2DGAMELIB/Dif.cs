@@ -201,22 +201,6 @@ namespace _2DGAMELIB
     		parss.Add(Pars);
     	}
 
-    	public void Draws(Are Are)
-    	{
-    		foreach (Pars item in parss)
-    		{
-    			Are.Draw(item);
-    		}
-    	}
-
-    	public void Draws(AreM AreM)
-    	{
-    		foreach (Pars item in parss)
-    		{
-    			AreM.Draw(item);
-    		}
-    	}
-
     	public List<string> GetHitTags(ref Color HitColor)
     	{
     		List<string> list = new List<string>();

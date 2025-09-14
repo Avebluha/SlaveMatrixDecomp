@@ -240,10 +240,5 @@ namespace _2DGAMELIB
     		HSV.ToRGB(H, S, V, out var r, out var g, out var b);
     		ret = Color.FromArgb(a, r, g, b);
     	}
-
-    	public override string ToString()
-    	{
-    		return "H : " + H + " S : " + S + " V : " + V;
-    	}
     }
 }

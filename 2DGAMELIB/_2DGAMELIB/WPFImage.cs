@@ -32,25 +32,13 @@ namespace _2DGAMELIB
             return __refvalue(destRef, GLFW.Window);
         }
 
-        public static unsafe IntPtr WindowToPtr(Window source)
-        {
-            var sourceRef = __makeref(source);
-            var dest = default(IntPtr);
-            var destRef = __makeref(dest);
-            *(IntPtr*)&destRef = *(IntPtr*)&sourceRef;
-            return __refvalue(destRef, IntPtr);
-        }
-
         public GLFW.Window window;
     	private uint shader_program;
     	private uint texture;
     	private uint vertex_buf;
     	private uint vao;
 
-
         public GlImage() { }
-
-        public void ImageSetting() { }
 
     	public System.Drawing.Point GetCursorPoint() {
     		double x, y;
