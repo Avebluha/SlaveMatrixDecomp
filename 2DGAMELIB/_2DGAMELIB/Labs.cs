@@ -21,7 +21,7 @@ namespace _2DGAMELIB
 
     	public void Add(string Name, Vector2D Position, double Size, double Width, Font Font, double TextSize, string Text, Color TextColor, Color ShadColor, Color BackColor, Color FramColor, bool Input)
     	{
-    		labs.Add(Name, new Lab(Med, Are, Name, ref Position, Size, Width, Font, TextSize, Text, ref TextColor, ref ShadColor, ref BackColor, ref FramColor, Input));
+    		labs.Add(Name, new Lab(Are, Name, ref Position, Size, Width, Font, TextSize, Text, ref TextColor, ref ShadColor, ref BackColor, ref FramColor));
     	}
 
     	public void Draw(Are Are)

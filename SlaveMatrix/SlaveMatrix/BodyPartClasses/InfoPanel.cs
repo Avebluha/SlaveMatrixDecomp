@@ -155,7 +155,7 @@ namespace SlaveMatrix
     		MaiB.BasePointBase = Dat.Vec2DZero;
     		MaiB.PositionBase = vector2D;
     		MaiB.SizeBase = num2;
-    		MaiB.OP.AddRange(new Out[1] { Shas.Get正方形() });
+    		MaiB.OP.AddRange(new Out[1] { Shas.GetSquare() });
     		MaiB.OP.ScalingX(MaiB.BasePointBase, num3);
     		MaiB.OP.ScalingY(MaiB.BasePointBase, num4);
     		MaiB.Closed = true;
@@ -174,7 +174,7 @@ namespace SlaveMatrix
     		Mai2B.BasePointBase = Dat.Vec2DZero;
     		Mai2B.PositionBase = new Vector2D(vector2D.X, 0.01);
     		Mai2B.SizeBase = num2;
-    		Mai2B.OP.AddRange(new Out[1] { Shas.Get正方形() });
+    		Mai2B.OP.AddRange(new Out[1] { Shas.GetSquare() });
     		Mai2B.OP.ScalingX(Mai2B.BasePointBase, num3);
     		Mai2B.OP.ScalingY(Mai2B.BasePointBase, num5);
     		Mai2B.Closed = true;
@@ -194,7 +194,7 @@ namespace SlaveMatrix
     		SubB.BasePointBase = Dat.Vec2DZero;
     		SubB.PositionBase = vector2D;
     		SubB.SizeBase = num2;
-    		SubB.OP.AddRange(new Out[1] { Shas.Get正方形() });
+    		SubB.OP.AddRange(new Out[1] { Shas.GetSquare() });
     		SubB.OP.ScalingX(SubB.BasePointBase, num3);
     		SubB.OP.ScalingY(SubB.BasePointBase, num4);
     		SubB.Closed = true;
@@ -204,13 +204,13 @@ namespace SlaveMatrix
     		Sub = new Tex("Tex4", vector2D, num2 * 1.01, num3 * 0.98, num4 * 0.91, new Font("MS Gothic", 1f), 0.07, 0, " ", Col.White, Col.Black, Color.Transparent, 15.0);
     		Sub.ParT.BasePointBase = Sub.ParT.OP.GetCenter().MulY(y);
     		Sub.Position = SubB.ToGlobal(SubB.JP[0].Joint);
-    		SubInnfo_l = new Lab(Med, Are, "SubInfo", vector2D, num2, 1.0, new Font("MS Gothic", 1f), 0.07, "Sub Info.", Col.White, Col.Black, Color.FromArgb(160, Col.Black), Col.Empty, Input: false);
+    		SubInnfo_l = new Lab(Are, "SubInfo", vector2D, num2, 1.0, new Font("MS Gothic", 1f), 0.07, "Sub Info.", Col.White, Col.Black, Color.FromArgb(160, Col.Black), Col.Empty);
     		SubInnfo_l.ParT.PositionBase = SubInnfo_l.ParT.PositionBase.AddY((0.0 - SubInnfo_l.ParT.OP[0].ps[3].Y) * SubInnfo_l.ParT.SizeBase);
     		Sub2B = new Par();
     		Sub2B.BasePointBase = Dat.Vec2DZero;
     		Sub2B.PositionBase = new Vector2D(0.0025, vector2D.Y);
     		Sub2B.SizeBase = num2;
-    		Sub2B.OP.AddRange(new Out[1] { Shas.Get正方形() });
+    		Sub2B.OP.AddRange(new Out[1] { Shas.GetSquare() });
     		Sub2B.OP.ScalingX(Sub2B.BasePointBase, num3);
     		Sub2B.OP.ScalingY(Sub2B.BasePointBase, num4);
     		Sub2B.Closed = true;

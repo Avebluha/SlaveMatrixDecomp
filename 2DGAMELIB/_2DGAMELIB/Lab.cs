@@ -7,13 +7,9 @@ namespace _2DGAMELIB
     {
     	private ParT parT;
 
-    	private Med Med;
-
     	private Are Are;
 
     	private double Width;
-
-    	private bool Input;
 
     	private double Min;
 
@@ -27,11 +23,7 @@ namespace _2DGAMELIB
     		}
     		set
     		{
-                //TODO fix?
-                //if (!Med.BaseControl.Contains(tb))
-    			{
-    				SetText(value);
-    			}
+    			SetText(value);
     		}
     	}
 
@@ -41,48 +33,52 @@ namespace _2DGAMELIB
     		SetRect();
     	}
 
-    	public Lab(Med Med, Are Are, string Name, ref Vector2D Position, double Size, double Width, Font Font, double TextSize, string Text, ref Color TextColor, ref Color ShadColor, ref Color BackColor, ref Color FramColor, bool Input)
+    	public Lab(Are Are, string Name, ref Vector2D Position, double Size, double Width, Font Font, double TextSize, string Text, ref Color TextColor, ref Color ShadColor, ref Color BackColor, ref Color FramColor)
     	{
-    		//Note: Input is always false
-    		Setting(Med, Are, Name, ref Position, Size, Width, Font, TextSize, Text, ref TextColor, ref ShadColor, ref BackColor, ref FramColor, Input);
+    		Setting(Are, Name, ref Position, Size, Width, Font, TextSize, Text, ref TextColor, ref ShadColor, ref BackColor, ref FramColor);
     	}
 
-    	public Lab(Med Med, Are Are, string Name, Vector2D Position, double Size, double Width, Font Font, double TextSize, string Text, Color TextColor, Color ShadColor, Color BackColor, Color FramColor, bool Input)
+    	public Lab(Are Are, string Name, Vector2D Position, double Size, double Width, Font Font, double TextSize, string Text, Color TextColor, Color ShadColor, Color BackColor, Color FramColor)
     	{
-    		Setting(Med, Are, Name, ref Position, Size, Width, Font, TextSize, Text, ref TextColor, ref ShadColor, ref BackColor, ref FramColor, Input);
+    		Setting(Are, Name, ref Position, Size, Width, Font, TextSize, Text, ref TextColor, ref ShadColor, ref BackColor, ref FramColor);
     	}
 
-    	private void Setting(Med Med, Are Are, string Name, ref Vector2D Position, double Size, double Width, Font Font, double TextSize, string Text, ref Color TextColor, ref Color ShadColor, ref Color BackColor, ref Color FramColor, bool Input)
+    	private void Setting(Are Are, string Name, ref Vector2D Position, double Size, double Width, Font Font, double TextSize, string Text, ref Color TextColor, ref Color ShadColor, ref Color BackColor, ref Color FramColor)
     	{
-    		this.Med = Med;
     		this.Are = Are;
     		this.Width = Width;
-    		this.Input = Input;
 
-    		Out[] array = new Out[1] { Shas.Get正方形() };
+    		Out[] array = new Out[1] { Shas.GetSquare() };
     		if (FramColor == Color.Empty || FramColor == Color.Transparent)
     		{
     			array.OutlineFalse();
     		}
+
+
     		parT = new ParT
     		{
-    			Tag = Name,
     			InitializeOP = array,
     			BasePointBase = array[0].ps[0],
     			PositionBase = Position,
     			SizeBase = Size,
     			Closed = true,
-    			BrushColor = BackColor,
+
+
+                Tag = Name,
+                BrushColor = BackColor,
     			PenColor = FramColor,
     			Font = Font,
     			FontSize = TextSize,
     			TextColor = TextColor,
     			Text = "A"
     		};
+
     		if (ShadColor != Color.Empty)
     		{
     			parT.ShadBrush = new SolidBrush(ShadColor);
     		}
+
+
     		SetRect();
     		Min = parT.RectSize.Y;
     		SetText(Text);
@@ -111,6 +107,8 @@ namespace _2DGAMELIB
     			double x2 = Min + 0.07;
     			parT.RectSize = new Vector2D(x2, Min);
     		}
+
+
     		parT.OP[0].ps[0] = new Vector2D(0.0, 0.0);
     		parT.OP[0].ps[1] = new Vector2D(parT.RectSize.X, 0.0);
     		parT.OP[0].ps[2] = new Vector2D(parT.RectSize.X, parT.RectSize.Y);
@@ -120,11 +118,6 @@ namespace _2DGAMELIB
     	public void Dispose()
     	{
     		parT.Dispose();
-    		if (Input)
-    		{
-                //TODO fix?
-                //((Control)Med.BaseControl).Resize -= Lab_Resize;
-    		}
     	}
     }
 }

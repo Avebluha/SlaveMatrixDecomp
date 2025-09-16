@@ -19,6 +19,8 @@ namespace _2DGAMELIB
     	[NonSerialized, JsonIgnore]
     	private Brush brusht = new SolidBrush(Color.Black);
 
+
+        //unused
     	private const double Shift = 1.0;
 
     	[NonSerialized, JsonIgnore]
@@ -67,6 +69,7 @@ namespace _2DGAMELIB
 
     	private CharacterRange[] crr = new CharacterRange[1];
 
+        //unused
     	private CharacterRange[] cre = new CharacterRange[1];
 
     	public Font Font
@@ -171,19 +174,6 @@ namespace _2DGAMELIB
     		}
     	}
 
-    	public Vector2D PositionT
-    	{
-    		get
-    		{
-    			return positionT;
-    		}
-    		set
-    		{
-    			positionT = value;
-    			EditT = true;
-    		}
-    	}
-
     	public Vector2D RectSize
     	{
     		get
@@ -209,7 +199,6 @@ namespace _2DGAMELIB
     	public ParT()
     	{
     	}
-
 
     	public ParT(ParT ParT)
     	{

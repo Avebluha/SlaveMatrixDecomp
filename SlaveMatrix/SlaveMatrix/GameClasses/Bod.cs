@@ -5450,7 +5450,7 @@ namespace SlaveMatrix
     		nsb1 = 乳房左.X0Y0_乳首.SizeBase;
     		nsb2 = 乳房左.X0Y0_乳輪.SizeBase;
     		変動ステート更新();
-    		腰.位置B = Med.Base.GetPosition(ref Shas.中央中央);
+    		腰.位置B = Med.Base.GetPosition(new Vector2D(0.5, 0.5));
     		Join();
     		Set腰();
     		if (背中接続.Count + 頭頂左後接続.Count + 頭頂右後接続.Count + 胸上左接続.Count + 胸上右接続.Count + 胸下左接続.Count + 胸下右接続.Count + 胴後左接続.Count + 胴後右接続.Count + 後腕左s.Length + 後腕右s.Length > 0)

@@ -2,13 +2,13 @@ using _2DGAMELIB;
 
 namespace SlaveMatrix
 {
-    public class キャラ台詞
+    public class SlaveText
     {
     	private Med Med;
 
     	private 吹き出し hd;
 
-    	public キャラ台詞(Med Med, 吹き出し hd)
+    	public SlaveText(Med Med, 吹き出し hd)
     	{
     		this.Med = Med;
     		this.hd = hd;

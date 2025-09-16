@@ -46,6 +46,33 @@ namespace _2DGAMELIB
 
     public static class Math
     {
+        public static ulong overflow_add(this ulong u0, ulong u1)
+        {
+            checked
+            {
+                try
+                {
+                    if (u0 + u1 > 9999999999999L)
+                    {
+                        return 9999999999999uL;
+                    }
+                    return u0 + u1;
+                }
+                catch
+                {
+                    return 9999999999999uL;
+                }
+            }
+        }
+        public static ulong underflow_subtract(this ulong u0, ulong u1)
+        {
+            if (u0 < u1)
+            {
+                return 0uL;
+            }
+            return u0 - u1;
+        }
+
         public static double RoundDown(this double Value, int Digits)
         {
             double num = System.Math.Pow(10.0, Digits);

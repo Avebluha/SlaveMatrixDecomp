@@ -34,14 +34,6 @@ namespace _2DGAMELIB
 
     	protected Vector2D p;
 
-    	protected Rectangle r;
-
-    	protected ColorMatrix cm = new ColorMatrix();
-
-    	protected ImageAttributes ia = new ImageAttributes();
-
-    	protected InterpolationMode im;
-
     	public Graphics GD => gd;
 
     	public Graphics GH => gh;

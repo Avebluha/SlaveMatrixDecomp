@@ -8,12 +8,6 @@ namespace SlaveMatrix
     //race weighting/value information
     public static class Def
     {
-    	public const double vd = 0.6;
-
-    	public const double bd = 0.3;
-
-    	public const double nd = 0.5;
-
     	public static Dictionary<string, RaceInformation> race_information = new Dictionary<string, RaceInformation>
     	{
     		{

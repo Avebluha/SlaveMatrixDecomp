@@ -1235,7 +1235,7 @@ namespace SlaveMatrix
     		X3Y5_膣口CP = new ColorP(X3Y5_膣口, 膣口CD, DisUnit, abj: true);
     		AreM = new AreM(Med.Unit, 1.0, 1.0, 0.024, Med.DisQuality, Med.HitAccuracy, 0.1);
     		AreM.Setting();
-    		AreM.BasePoint = Shas.中央中央;
+    		AreM.BasePoint = new Vector2D(0.5, 0.5);
     		AreMPos = AreM.GetPosition(ref AreM.BasePoint);
     		濃度 = e.濃度;
     		Xi = 1;

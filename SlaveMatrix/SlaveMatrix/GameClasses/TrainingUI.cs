@@ -14,229 +14,148 @@ namespace SlaveMatrix
 
     	private ConstProp CP = new ConstProp();
 
-    	public const double 演出発生率 = 0.5;
-
-    	public const double 専用演出率 = 0.7;
 
     	public Med Med;
 
-    	public Are Are;
+    	public Are Are; 
+        private Are Film;
 
-    	public Unit Uni;
-
-    	public Cha Cha;
+        public Cha Cha;
 
     	public Bod Bod;
 
     	public InfoPanel ip;
 
+
+        //tools
     	public ペニス ペニス;
-
     	public マウス マウス;
-
     	public ハンド ハンド右;
-
     	public ハンド ハンド左;
-
     	public ロータ ロータ;
-
     	public バイブ_コモン コモン;
-
     	public バイブ_ディル ディル;
-
     	public バイブ_アナル アナル;
-
     	public バイブ_デンマ デンマ;
-
     	public バイブ_ドリル ドリル;
-
     	public パール パール;
-
     	public 羽根箒 羽根箒;
-
     	public 調教鞭 調教鞭;
-
     	public T剃刀 T剃刀;
-
     	public キャップ1 キャップ1;
-
     	public キャップ1 キャップ2;
-
     	public キャップ1 キャップ3;
 
     	public CM ペニスCM;
-
     	public CM マウスCM;
-
     	public CM ハンド右CM;
-
     	public CM ハンド左CM;
-
     	public CM ロータCM;
-
     	public CM コモンCM;
-
     	public CM ディルCM;
-
     	public CM アナルCM;
-
     	public CM デンマCM;
-
     	public CM ドリルCM;
-
     	public CM パールCM;
-
     	public CM 羽根箒CM;
-
     	public CM 調教鞭CM;
-
     	public CM T剃刀CM;
-
     	public CM キャップ1CM;
-
     	public CM キャップ2CM;
+        public CM キャップ3CM;
+        private CM focus;
+        private CM hcm;
 
-    	public CM キャップ3CM;
-
-    	public 挿入処理 ペニス挿入;
-
+        //tool animations?
+        public 挿入処理 ペニス挿入;
     	public 挿入処理 マウス挿入;
-
     	public 挿入処理 ハンド挿入;
-
     	public 挿入処理 ロータ挿入;
-
     	public 挿入処理 コモン挿入;
-
     	public 挿入処理 ディル挿入;
-
     	public 挿入処理 アナル挿入;
-
     	public 挿入処理 デンマ挿入;
-
     	public 挿入処理 ドリル挿入;
-
     	public 挿入処理 パール挿入;
-
     	public 羽箒処理 羽箒処理;
-
     	public 剃刀処理 剃刀処理;
-
     	public 調鞭処理 調鞭処理;
-
     	public ハンド処理 ハンド処理;
-
     	public マウス処理 マウス処理;
-
     	public ペニス処理 ペニス処理;
-
     	public キャップ処理 キャップ処理;
+        private 挿入処理 挿入処理f;
+        public 挿入処理 挿入処理s; 
+        private 挿入処理 ef;
 
-    	public But 調教終了;
 
+
+        //ui elements
+        public But 調教終了;
     	public But 拘束具;
-
     	public But 目隠帯;
-
     	public But 玉口枷;
-
     	public But 断面;
-
     	public But 媚薬;
-
     	public But 撮影;
+        public But SlaveStamina;
+        public But PlayerStamina;
 
-    	private Swi 拘束具sw = new Swi(Color.OrangeRed);
-
+        private Swi 拘束具sw = new Swi(Color.OrangeRed);
     	private Swi 目隠帯sw = new Swi(Color.OrangeRed);
-
     	private Swi 玉口枷sw = new Swi(Color.OrangeRed);
-
     	private Swi 断面sw = new Swi(Color.OrangeRed);
 
     	public Gau 体力sゲージ;
-
     	public Gau 絶頂sゲージ;
-
     	public Gau 興奮sゲージ;
-
     	public Gau 精力mゲージ;
-
     	public Gau 射精mゲージ;
-
     	public Gau 興奮mゲージ;
 
     	public Tex ステート;
+        public Tex InfoBox;
+        public Tex SensitivityBox;
 
-    	public bool ステート描画;
 
-    	public 射精 射精;
+
+        //misc flags
+        public bool ステート描画;
+        public bool ハンド左表示;
+        public bool コキ_; 
+        private bool 持ち手_;
+        public bool 膣i肛f;
+        public bool 肛f;
+        public bool 肛oh;
+        public bool IsTB;
+        public bool 押し状態;
+        private bool IsTool;
+        private bool sf = true;
+        public bool 強制拘束;
+        public bool 拘束bu;
+        public bool 発情bu;
+
+
+
+        public 射精 射精;
 
     	public Mot 絶頂ゲージ点滅;
-
     	public Mot 射精ゲージ点滅;
-
     	public Mots Mots = new Mots();
 
-    	public Onomatopoeia 擬音;
 
+        //moan queue :skull:
+    	public Onomatopoeia 擬音;
     	public Queue<Action<Are>> 擬音キュー = new Queue<Action<Are>>();
 
-    	private Are Film;
+        //animation queue?
+        public List<挿入処理> SubFocus = new List<挿入処理>();
 
-    	public bool コキ_;
-
-    	public bool ハンド左表示;
-
-    	private CM focus;
-
-    	private bool 持ち手_;
-
-    	public List<挿入処理> SubFocus = new List<挿入処理>();
-
-    	public bool 膣i肛f;
-
-    	public bool 肛f;
-
-    	public bool 肛oh;
-
-    	public bool IsTB;
-
-    	private 挿入処理 挿入処理f;
-
-    	public 挿入処理 挿入処理s;
-
-    	public const double cs = 1.09;
-
-    	public bool 押し状態;
-
-    	private MouseButtons d;
-
-    	private bool IsTool;
-
-    	private CM hcm;
-
-    	private 挿入処理 ef;
-
-    	private bool sf = true;
-
-    	public bool 強制拘束;
-
-    	public bool 拘束bu;
-
-    	public bool 発情bu;
+        private MouseButtons HeldButton;
 
     	public double X;
-
     	public double Y;
 
-    	public Tex InfoBox;
-
-    	public Tex SensitivityBox;
-
-    	public But SlaveStamina;
-
-    	public But PlayerStamina;
 
     	public Color 羽根箒先端hc
     	{
@@ -467,6 +386,8 @@ namespace SlaveMatrix
     			return true;
     		}
     	}
+
+
 
     	public void 発音(Vector2D p, string s, Color c, double d, bool b)
     	{
@@ -1697,7 +1618,7 @@ namespace SlaveMatrix
 
     	public void Move(ref MouseButtons mb, ref Vector2D cp, ref Vector2D op, ref Color hc, ref ContactD cd)
     	{
-    		if (d != mb)
+    		if (HeldButton != mb)
     		{
     			return;
     		}
@@ -1976,7 +1897,7 @@ namespace SlaveMatrix
 
     	public void Down(ref MouseButtons mb, ref Vector2D cp, ref Vector2D op, ref Color hc, ref ContactD cd)
     	{
-    		if (d != 0)
+    		if (HeldButton != 0)
     		{
     			return;
     		}
@@ -2050,12 +1971,12 @@ namespace SlaveMatrix
     		剃刀処理.Down(ref mb, ref cp, ref hc, ref cd);
     		調鞭処理.Down(ref mb, ref cp, ref hc, ref cd);
     		SetIs膣i肛f();
-    		d = mb;
+    		HeldButton = mb;
     	}
 
     	public void Up(ref MouseButtons mb, ref Vector2D cp, ref Color hc, ref ContactD cd)
     	{
-    		if (d == mb)
+    		if (HeldButton == mb)
     		{
     			調教終了.Up(ref hc);
     			拘束具.Up(ref hc);
@@ -2079,7 +2000,7 @@ namespace SlaveMatrix
     			キャップ処理.Up(ref mb, ref cp, ref hc);
     			羽箒処理.Up(ref mb, ref cp, ref hc, ref cd);
     			剃刀処理.Up(ref mb, ref cp, ref hc, ref cd);
-    			d = MouseButtons.None;
+    			HeldButton = MouseButtons.None;
     		}
     	}
 
@@ -2493,7 +2414,7 @@ namespace SlaveMatrix
     			撮影 = new But1(parT7, delegate
     			{
     				//Sounds.撮影.Play();
-    				Med.フラッシュ();
+    				Med.flash();
     				if (!Directory.Exists(Path))
     				{
     					Directory.CreateDirectory(Path);
@@ -2503,7 +2424,7 @@ namespace SlaveMatrix
     				Font font = new Font("MS Gothic", (float)(10.0 * Med.DpiY));
     				float x = 350f;
     				float y = 365f;
-    				if (Program.biggerWindow)
+    				if (Sta.BigWindow)
     				{
     					x = 525f;
     					y = 500f;
@@ -2679,7 +2600,6 @@ namespace SlaveMatrix
     			this.Cha.潮吹擬音 = null;
     			this.Cha.放尿擬音 = null;
     		}
-    		Uni = Unit;
     		this.Cha = Cha;
     		Bod = Cha.Bod;
     		Bod.カーソル = this;
@@ -2792,7 +2712,7 @@ namespace SlaveMatrix
     		肛oh = false;
     		IsTB = false;
     		放し();
-    		d = MouseButtons.None;
+    		HeldButton = MouseButtons.None;
     		IsTool = false;
     		hcm = null;
     		ef = null;
@@ -3122,7 +3042,7 @@ namespace SlaveMatrix
     	{
     		double num = 0.31;
     		double width = 0.7;
-    		if (Program.biggerWindow)
+    		if (Sta.BigWindow)
     		{
     			num += 0.14;
     		}
@@ -3139,7 +3059,7 @@ namespace SlaveMatrix
     	{
     		double x = 0.08;
     		double y = 0.1;
-    		if (Program.biggerWindow)
+    		if (Sta.BigWindow)
     		{
     			x = 0.08;
     			y = 0.1;

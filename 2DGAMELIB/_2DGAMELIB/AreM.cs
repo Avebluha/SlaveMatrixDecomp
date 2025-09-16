@@ -47,6 +47,5 @@ namespace _2DGAMELIB
     			Pars.DrawH(hitUnit, gh);
     		}
     	}
-
     }
 }

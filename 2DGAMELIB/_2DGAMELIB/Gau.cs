@@ -62,8 +62,6 @@ namespace _2DGAMELIB
 
     	public Par Frame1 => frame1;
 
-    	public Par Frame2 => frame2;
-
     	public Par Gauge => gauge;
 
     	public Par Knob => knob;
@@ -288,7 +286,7 @@ namespace _2DGAMELIB
     		base_ = new Par
     		{
     			Tag = Name + "_ベース",
-    			InitializeOP = new Out[1] { Shas.Get正方形() },
+    			InitializeOP = new Out[1] { Shas.GetSquare() },
     			PositionBase = Position,
     			SizeBase = Size,
     			SizeXBase = Width,
@@ -302,7 +300,7 @@ namespace _2DGAMELIB
     		frame1 = new Par
     		{
     			Tag = Name + "_フレーム1",
-    			InitializeOP = new Out[1] { Shas.Get正方形() },
+    			InitializeOP = new Out[1] { Shas.GetSquare() },
     			PositionBase = Position,
     			SizeBase = Size,
     			SizeXBase = Width * GetWidthMag(),
@@ -317,7 +315,7 @@ namespace _2DGAMELIB
     			frame2 = new Par
     			{
     				Tag = Name + "_フレーム2",
-    				InitializeOP = new Out[1] { Shas.Get正方形() },
+    				InitializeOP = new Out[1] { Shas.GetSquare() },
     				PositionBase = Position,
     				SizeBase = Size,
     				SizeXBase = Width * GetWidthMag(),
@@ -331,7 +329,7 @@ namespace _2DGAMELIB
     		gauge = new Par
     		{
     			Tag = Name + "_ゲージ",
-    			InitializeOP = new Out[1] { Shas.Get正方形() },
+    			InitializeOP = new Out[1] { Shas.GetSquare() },
     			PositionBase = GetGaugePosition(),
     			SizeBase = Size,
     			SizeXBase = Width * GetWidthMag() * GetGaugeWidthMag(Margin),
@@ -345,7 +343,7 @@ namespace _2DGAMELIB
     			this.knob = new Par
     			{
     				Tag = Name + "_ノブ",
-    				InitializeOP = new Out[1] { Shas.Get正方形() },
+    				InitializeOP = new Out[1] { Shas.GetSquare() },
     				SizeBase = Size,
     				SizeXBase = GetKnobWidthMag(Width),
     				SizeYBase = GetKnobHeightMag(Height),

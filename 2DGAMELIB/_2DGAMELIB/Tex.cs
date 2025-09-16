@@ -204,7 +204,7 @@ namespace _2DGAMELIB
     	private void SetParT(string Name, ref Vector2D Position, double Size, double Width, double Height, Font Font, double TextSize, string Text, ref Color TextColor, ref Color ShadColor, ref Color BackColor)
     	{
     		pars = new Pars();
-    		Out[] array = new Out[1] { Shas.Get正方形() };
+    		Out[] array = new Out[1] { Shas.GetSquare() };
     		array.OutlineFalse();
     		parT = new ParT
     		{
@@ -231,7 +231,7 @@ namespace _2DGAMELIB
 
     	private void SetFeed(string Name, double Size, ref Color FeedColor)
     	{
-    		Out[] array = new Out[1] { Shas.Get三角形() };
+    		Out[] array = new Out[1] { Shas.GetTriangle() };
     		feed = new Par
     		{
     			Tag = Name + "_Feed",

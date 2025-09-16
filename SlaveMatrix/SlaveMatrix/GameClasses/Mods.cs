@@ -1,9 +1,12 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Globalization;
 using System.IO;
 using System.Linq;
+using System.Net;
+using System.Reflection.Emit;
 using System.Threading;
 using System.Threading.Tasks;
 using _2DGAMELIB;
@@ -11,135 +14,195 @@ using SlaveMatrix.Properties;
 
 namespace SlaveMatrix
 {
+    public static class MyUI
+    {
+        //normal rectangular buttons
+        public static But1 Button(Med med, Are buffer, string text, Vector2D pos, Action<But> on_click) {
+
+            ParT parT = new ParT();
+            parT.Font = new Font("MS Gothic", 0.1f);
+            parT.PositionBase = buffer.GetPosition(pos);
+            parT.Text = text;
+            parT.FontSize = 0.14;
+            parT.SizeBase = 0.05;
+            parT.OP.AddRange(new Out[1] { Shas.GetSquare() });
+            parT.OP.ScalingXY(parT.OP.GetCenter(), 0.87, 0.23);
+            parT.Closed = true;
+            parT.TextColor = Col.White;
+            parT.BrushColor = Color.FromArgb(160, Col.Black);
+            parT.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
+            parT.HitColor = med.GetUniqueColor();
+            parT.StringFormat.Alignment = StringAlignment.Center;
+            parT.StringFormat.LineAlignment = StringAlignment.Center;
+
+            /*
+            ParT parT = new ParT();
+            parT.Font = new Font("MS Gothic", 0.1f);
+            parT.PositionBase = DrawBuffer.GetPosition(new Vector2D(num2 + 0.19, num3 + 0.72));
+            parT.Text = GameText.完了;
+            parT.FontSize = 0.15;
+            parT.SizeBase = 0.05;
+            parT.OP.AddRange(new Out[1] { Shas.Get正方形() });
+            parT.OP.ScalingY(parT.OP.GetCenter(), 0.47);
+            parT.Closed = true;
+            parT.TextColor = Col.White;
+            parT.BrushColor = Color.FromArgb(160, Col.Black);
+            parT.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
+            parT.HitColor = Med.GetUniqueColor(); //still not sure what this is for...
+            parT.StringFormat.Alignment = StringAlignment.Center;
+            parT.StringFormat.LineAlignment = StringAlignment.Center;
+            */
+
+            /*
+            ParT parT4 = new ParT();
+            parT4.Font = new Font("MS Gothic", 0.1f);
+            parT4.PositionBase = DrawBuffer.GetPosition(x, y);
+            parT4.Text = "Load";
+            parT4.FontSize = 0.14;
+            parT4.SizeBase = 0.05;
+            parT4.OP.AddRange(new Out[1] { Shas.Get正方形() });
+            parT4.OP.ScalingXY(parT4.OP.GetCenter(), 0.87, 0.23);
+            parT4.Closed = true;
+            parT4.TextColor = Col.White; 
+            parT4.BrushColor = Color.FromArgb(160, Col.Black);
+            parT4.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
+            parT4.HitColor = Med.GetUniqueColor(); // what are you for?
+            parT4.StringFormat.Alignment = StringAlignment.Center;
+            parT4.StringFormat.LineAlignment = StringAlignment.Center;
+            */
+
+            return new But1(parT, on_click);
+        }
+
+        //rhombus shaped buttons
+        public static But1 Button2(Med med, Are buffer, string text, Vector2D pos, Action<But> on_click) {
+            ParT parT = new ParT();
+            parT.Font = new Font("MS Gothic", 0.1f);
+            parT.PositionBase = buffer.GetPosition(pos);
+            parT.Text = text;
+            parT.FontSize = 0.15;
+            parT.SizeBase = 0.05;
+            parT.OP.AddRange(new Out[1] { Shas.GetSquare() });
+            parT.OP.ScalingY(parT.OP.GetCenter(), 0.47);
+            parT.OP.Rotation(parT.OP.GetCenter(), -26.0);
+            parT.Closed = true;
+            parT.TextColor = Col.White;
+            parT.BrushColor = Color.FromArgb(160, Col.Black);
+            parT.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
+            parT.HitColor = med.GetUniqueColor();
+            parT.StringFormat.Alignment = StringAlignment.Center;
+            parT.StringFormat.LineAlignment = StringAlignment.Center;
+
+            return new But1(parT, on_click);
+        }
+
+        public static ListView Select(Are buffer, Vector2D pos, params TA[] acts) {
+            return new ListView(
+                buffer,
+                buffer.GetPosition(pos),
+                0.25,
+                new Font("MS Gothic", 1f),
+                0.09,
+                Col.White,
+                Col.Empty,
+                Col.Empty,
+                Col.Empty,
+                acts
+            );
+        }
+
+        public static Lab Label(Med med, Are buffer, string text, Vector2D pos) {
+            return new Lab(
+                    buffer,
+                    "",
+                    buffer.GetPosition(pos),
+                    0.2,
+                    1.0,
+                    new Font("", 1f),
+                    0.07,
+                    text,
+                    Col.White,
+                    Col.Empty,
+                    Col.Empty,
+                    Col.Empty
+            );
+        }
+    }
+
     public static class Mods
     {
+
+
+        //misc elements
     	private static SubInfo si;
-
-    	public static ヴィオラ台詞 ヴィオラ台詞;
-
-    	public static キャラ台詞 キャラ台詞;
-
     	private static ListView SaveData;
-
     	private static InfoPanel ip;
-
     	private static Buts dbs;
+        private static Lab npl;
 
-    	private static Cha TrainingTarget;
 
-    	public static 吹き出し キャラ吹出し;
 
-    	private static Cha Viola;
+        //misc character stuff
+        private static Cha TrainingTarget;
+    	private static Cha Viola; 
+        public static ViolaText ViolaText;
+        public static SlaveText SlaveText;
+        public static 吹き出し キャラ吹出し;
+        public static 吹き出し ヴィオラ吹出し;
 
-    	public static 吹き出し ヴィオラ吹出し;
 
-    	private static Lab npl;
 
+        //buffers
     	public static Are DrawBuffer;
-
     	public static Are BlackBackground;
-
     	public static Are BasementBackground;
-
     	public static Are OfficeBackground;
-
     	public static Are drawArea;
 
-    	private static MotV mv;
-
-    	private static bool sta;
-
-    	private static double v;
 
     	private static Action<Are, FPS> メインフォーム描画;
-
     	private static Action<Are, FPS> 調教描画;
-
     	public static Action<Are, FPS> 撮影描画;
-
     	private static Action<Are, FPS> 対象描画;
-
     	private static Action<Are, FPS> DrawBlessing;
-
     	private static Action<Are, FPS> DrawOffice;
-
     	private static Action<Are, FPS> DrawDebt;
-
     	private static Action<Are, FPS> DrawSlaveShop;
-
     	private static Action<Are, FPS> DrawToolShop;
-
     	private static Action<Are, FPS> 中継描画;
-
     	private static Action<Are, FPS> DrawOP0;
-
     	private static Action<Are, FPS> DrawOP1;
-
     	private static Action<Are, FPS> 説明描画;
-
     	private static Action<Are, FPS> 初事務所描画;
-
     	private static Action<Are, FPS> 返済イベント描画;
-
     	private static Action<Are, FPS> 日数進行描画;
-
     	private static Action<Are, FPS> PlayerInformationSliders;
+        private static Action 対象UI初期化;
+        private static Action 奴隷UI初期化;
 
-    	public const double 初期利子 = 0.002;
 
-    	public const ulong 開始借金額 = 5000000000uL;
 
-    	public const ulong 日借金上限 = 50000000uL;
-
+        //misc game state
     	public static ulong 単位返済段階額;
+        public static double DemandMax;
 
-    	public const ulong MaxMoney = 9999999999999uL;
-
-    	public const ulong MinMoney = 0uL;
-
-    	public static double DemandMax;
-
-    	public static bool SDShow;
-
-    	public static bool save;
-
-    	public static bool title;
-
-    	public static bool processing;
-
-    	private static Action 対象UI初期化;
-
-    	private static Action 奴隷UI初期化;
-
-    	private static string[] 日終了ログa;
-
+    	private static string[] DayEndLog;
     	public static ulong 労働利益;
-
     	public static ulong 日利益額;
-
     	public static ulong 日利子額;
 
-    	private const int ml = 19;
 
-    	private static bool dayp;
+        //misc flags
+        //TODO remove
+        private static bool start;
+    	private static bool TrainingTargetTrained;
+        public static bool SDShow;
+        public static bool save;
+        public static bool title;
+        private static bool fade_in;
 
-    	private static CancellationTokenSource cts;
 
-    	public static Task t1;
-
-    	private static bool start;
-
-    	private const ulong 遺伝情報変更価格 = 10000000uL;
-
-    	public const int 最大フロア数 = 9;
-
-    	private static bool 調教前調教済みフラグ;
-
-    	public const bool v3 = false;
-
-    	public const bool 体験版 = false;
-
-    	public static int MaxRoomNumber => 135;
+        public static int MaxRoomNumber => 135;
 
     	public static Dictionary<string, Module> GetMods(Med Med)
     	{
@@ -148,51 +211,58 @@ namespace SlaveMatrix
     		Sta.Set擬音();
     		Sta.Set喘ぎ();
 
+            //setup buffers
     		drawArea = new Are(Med, Hit: false);
     		drawArea.Setting();
 
     		DrawBuffer = new Are(Med, Hit: true);
     		DrawBuffer.Setting();
+
     		BlackBackground = new Are(Med, Hit: true);
     		BlackBackground.Setting();
     		BlackBackground.Clear(Col.Black);
+
     		BasementBackground = new Are(Med, Hit: true);
     		BasementBackground.Setting();
-    		using (Bitmap image = new Bitmap(new MemoryStream(Resources.dangeon01_ex2)))
-    		{
-    			BasementBackground.GD.DrawImage(image, BasementBackground.Dis.GetRect());
-    		}
+    		BasementBackground.GD.DrawImage(new Bitmap(new MemoryStream(Resources.dangeon01_ex2)), BasementBackground.Dis.GetRect());
+    		
     		OfficeBackground = new Are(Med, Hit: true);
     		OfficeBackground.Setting();
-    		using (Bitmap image2 = new Bitmap(new MemoryStream(Resources.li_room10a_c_ex2)))
-    		{
-    			OfficeBackground.GD.DrawImage(image2, OfficeBackground.Dis.GetRect());
-    		}
-    		SaveData = new ListView(DrawBuffer, Dat.Vec2DZero.AddY(0.0025), 0.25, new Font("MS Gothic", 1f), 0.11, Col.White, Col.Empty, Col.Black, Col.Empty, Enumerable.Repeat(new TA(new string('A', 15), delegate
-    		{
-    		}), 10).ToArray());
+            OfficeBackground.GD.DrawImage(new Bitmap(new MemoryStream(Resources.li_room10a_c_ex2)), OfficeBackground.Dis.GetRect());
+    		
+            SaveData = new ListView(
+                DrawBuffer, 
+                Dat.Vec2DZero.AddY(0.0025), 
+                0.25, 
+                new Font("MS Gothic", 1f), 
+                0.11, 
+                Col.White,
+                Col.Empty, 
+                Col.Black,
+                Col.Empty,
+                Enumerable.Repeat(new TA(new string('A', 15), delegate{}), 10).ToArray()
+            );
     		SaveData.SetHitColor(Med);
+
+
     		dbs = new Buts();
-    		ParT parT = new ParT();
+
+
+
     		double y = 0.9075;
-    		if (Program.biggerWindow)
+    		if (Sta.BigWindow)
     		{
     			y = 0.932;
     		}
-    		parT.Font = new Font("MS Gothic", 0.1f);
-    		parT.PositionBase = DrawBuffer.GetPosition(-0.001, y);
-    		parT.Text = "Player";
-    		parT.FontSize = 0.14;
-    		parT.SizeBase = 0.05;
-    		parT.OP.AddRange(new Out[1] { Shas.Get正方形() });
-    		parT.OP.ScalingXY(parT.OP.GetCenter(), 0.87, 0.23);
-    		parT.Closed = true;
-    		parT.TextColor = Col.White;
-    		parT.BrushColor = Color.FromArgb(160, Col.Black);
-    		parT.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    		parT.StringFormat.Alignment = StringAlignment.Center;
-    		parT.StringFormat.LineAlignment = StringAlignment.Center;
-    		dbs.Add("プレイヤー", new But1(parT, delegate
+            
+            double x = 0.699;
+            if (Sta.BigWindow)
+            {
+                x = 0.77;
+            }
+
+
+            dbs.Add("プレイヤー", MyUI.Button(Med, DrawBuffer, "Player", new Vector2D(-0.001, y), delegate
     		{
     			if (Sta.GameData.所持金 < 10000000)
     			{
@@ -212,26 +282,7 @@ namespace SlaveMatrix
     				});
     			}
     		}));
-    		ParT parT2 = new ParT();
-    		parT2.Font = new Font("MS Gothic", 0.1f);
-    		double x = 0.699;
-    		if (Program.biggerWindow)
-    		{
-    			x = 0.77;
-    		}
-    		parT2.PositionBase = DrawBuffer.GetPosition(x, y);
-    		parT2.Text = "Title";
-    		parT2.FontSize = 0.14;
-    		parT2.SizeBase = 0.05;
-    		parT2.OP.AddRange(new Out[1] { Shas.Get正方形() });
-    		parT2.OP.ScalingXY(parT2.OP.GetCenter(), 0.87, 0.23);
-    		parT2.Closed = true;
-    		parT2.TextColor = Col.White;
-    		parT2.BrushColor = Color.FromArgb(160, Col.Black);
-    		parT2.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    		parT2.StringFormat.Alignment = StringAlignment.Center;
-    		parT2.StringFormat.LineAlignment = StringAlignment.Center;
-    		dbs.Add("タイトル", new But1(parT2, delegate
+    		dbs.Add("タイトル", MyUI.Button(Med, DrawBuffer, "Title", new Vector2D(x, y), delegate
     		{
                 //TODO fix?
                 //Sounds.操作.Play();
@@ -260,26 +311,15 @@ namespace SlaveMatrix
     			};
     			ip.選択肢表示 = true;
     		}));
-    		ParT parT3 = new ParT();
-    		parT3.Font = new Font("MS Gothic", 0.1f);
-    		x = 0.895;
-    		if (Program.biggerWindow)
-    		{
-    			x = 0.92;
-    		}
-    		parT3.PositionBase = DrawBuffer.GetPosition(x, y);
-    		parT3.Text = "Save";
-    		parT3.FontSize = 0.14;
-    		parT3.SizeBase = 0.05;
-    		parT3.OP.AddRange(new Out[1] { Shas.Get正方形() });
-    		parT3.OP.ScalingXY(parT3.OP.GetCenter(), 0.87, 0.23);
-    		parT3.Closed = true;
-    		parT3.TextColor = Col.White;
-    		parT3.BrushColor = Color.FromArgb(160, Col.Black);
-    		parT3.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    		parT3.StringFormat.Alignment = StringAlignment.Center;
-    		parT3.StringFormat.LineAlignment = StringAlignment.Center;
-    		dbs.Add("セーブ", new But1(parT3, delegate
+
+
+            x = 0.895;
+            if (Sta.BigWindow)
+            {
+                x = 0.92;
+            }
+
+    		dbs.Add("セーブ", MyUI.Button(Med, DrawBuffer, "Save", new Vector2D(x, y), delegate
     		{
                 //TODO fix?
                 //Sounds.操作.Play();
@@ -291,27 +331,15 @@ namespace SlaveMatrix
     			SDShow = true;
     			ip.SubInfoIm = "RCl:" + GameText.戻る;
     		}));
-    		ParT parT4 = new ParT();
-    		parT4.Font = new Font("MS Gothic", 0.1f);
-    		x = 0.797;
-    		if (Program.biggerWindow)
-    		{
-    			x = 0.845;
-    		}
-    		parT4.PositionBase = DrawBuffer.GetPosition(x, y);
-    		parT4.Text = "Load";
-    		parT4.FontSize = 0.14;
-    		parT4.SizeBase = 0.05;
-    		parT4.OP.AddRange(new Out[1] { Shas.Get正方形() });
-    		parT4.OP.ScalingXY(parT4.OP.GetCenter(), 0.87, 0.23);
-    		parT4.Closed = true;
-    		parT4.TextColor = Col.White;
-    		parT4.BrushColor = Color.FromArgb(160, Col.Black);
-    		parT4.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    		parT4.HitColor = Med.GetUniqueColor();
-    		parT4.StringFormat.Alignment = StringAlignment.Center;
-    		parT4.StringFormat.LineAlignment = StringAlignment.Center;
-    		dbs.Add("ロード", new But1(parT4, delegate
+
+
+            x = 0.797;
+            if (Sta.BigWindow)
+            {
+                x = 0.845;
+            }
+
+    		dbs.Add("ロード", MyUI.Button(Med, DrawBuffer, "Load", new Vector2D(x, y), delegate
     		{
     			//Sounds.操作.Play();
     			SaveData.bs["0"].Dra = true;
@@ -325,19 +353,61 @@ namespace SlaveMatrix
     		}));
     		NewButtons(Med);
     		dbs.SetHitColor(Med);
+
     		ip = new InfoPanel(Med, DrawBuffer);
     		ip.SetHitColor(Med);
-    		ヴィオラ吹出し = new 吹き出し(DrawBuffer, 右: false, new Font("MS Gothic", 1f), 0.08, " ", Col.White, Col.Black, Color.FromArgb(160, Col.Black), 19.0, Dis: false, Col.White, delegate
-    		{
-    		});
+
+
+    		ヴィオラ吹出し = new 吹き出し(
+                DrawBuffer, 
+                右: false, 
+                new Font("MS Gothic", 1f), 
+                0.08, 
+                " ", 
+                Col.White, 
+                Col.Black, 
+                Color.FromArgb(160, Col.Black), 
+                19.0, 
+                Dis: false, 
+                Col.White, 
+                delegate{}
+            );
     		ヴィオラ吹出し.SetHitColor(Med);
-    		キャラ吹出し = new 吹き出し(DrawBuffer, 右: false, new Font("MS Gothic", 1f), 0.08, " ", Col.White, Col.Black, Color.FromArgb(160, Col.Black), 19.0, Dis: true);
+
+
+    		キャラ吹出し = new 吹き出し(
+                DrawBuffer, 
+                右: false, 
+                new Font("MS Gothic", 1f), 
+                0.08, 
+                " ", 
+                Col.White, 
+                Col.Black, 
+                Color.FromArgb(160, Col.Black), 
+                19.0, 
+                Dis: true
+            );
     		キャラ吹出し.SetHitColor(Med);
+
     		si = new SubInfo(Med, ip);
-    		ヴィオラ台詞 = new ヴィオラ台詞(Med, ヴィオラ吹出し);
-    		キャラ台詞 = new キャラ台詞(Med, キャラ吹出し);
-    		npl = new Lab(Med, DrawBuffer, "ラベル1", new Vector2D(ip.MaiB.Position.X, 0.026), 0.1, 1.5, new Font("MS Gothic", 1f), 0.085, "No Slave", Col.White, Col.Black, ip.MaiB.BrushColor, Col.Black, Input: false);
-    		return new Dictionary<string, Module>
+    		ViolaText = new ViolaText(Med, ヴィオラ吹出し);
+    		SlaveText = new SlaveText(Med, キャラ吹出し);
+    		npl = new Lab(
+                DrawBuffer, 
+                "ラベル1", 
+                new Vector2D(ip.MaiB.Position.X, 0.026), 
+                0.1, 
+                1.5, 
+                new Font("MS Gothic", 1f), 
+                0.085, 
+                "No Slave", 
+                Col.White, 
+                Col.Black, 
+                ip.MaiB.BrushColor, 
+                Col.Black
+            );
+
+            return new Dictionary<string, Module>
     		{
     			{
     				"Start",
@@ -457,22 +527,32 @@ namespace SlaveMatrix
     		npl.Dispose();
     	}
 
-    	private static void SwitchMode(Med Med, Are Are, FPS FPS, Action<Are, FPS> 描画)
+
+
+
+        //would really prefer not to have these here...
+        static MotV mv = new MotV(0.0, 1.0)
+        {
+            BaseSpeed = 2.0
+        };
+        static double v = 0.0;
+
+        private static void SwitchMode(Med Med, Are Are, FPS FPS, Action<Are, FPS> 描画)
     	{
-    		if (sta)
+            if (fade_in)
     		{
     			if (v < mv.Max)
     			{
     				mv.GetValue(FPS);
     				v = mv.Value;
-    				if (sta)
+    				if (fade_in)
     				{
     					Med.FadeIn(v);
     				}
     			}
     			else
     			{
-    				sta = false;
+    				fade_in = false;
     				v = 0.0;
     				mv.ResetValue();
     			}
@@ -489,10 +569,19 @@ namespace SlaveMatrix
     		描画(drawArea, Med.FPSF);
     		Med.DrawStart(Are);
     		Med.DrawEnd(drawArea);
-    		sta = true;
+    		fade_in = true;
     	}
+        public static void flash(this Med Med)
+        {
+            調教描画(drawArea, Med.FPSF);
+            Med.ClearSta(Color.FromArgb(128, Color.White));
+            Med.DrawEnd(drawArea);
+            fade_in = true;
+        }
 
-    	public static void SetDemandMaximum()
+
+
+        public static void SetDemandMaximum()
     	{
     		if (Sta.GameData.RepaymentStage == 0)
     		{
@@ -512,34 +601,10 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public static ulong 加算(this ulong u0, ulong u1)
-    	{
-    		checked
-    		{
-    			try
-    			{
-    				if (u0 + u1 > 9999999999999L)
-    				{
-    					return 9999999999999uL;
-    				}
-    				return u0 + u1;
-    			}
-    			catch
-    			{
-    				return 9999999999999uL;
-    			}
-    		}
-    	}
 
-    	public static ulong 減算(this ulong u0, ulong u1)
-    	{
-    		if (u0 < u1)
-    		{
-    			return 0uL;
-    		}
-    		return u0 - u1;
-    	}
 
+        //  save/load handling
+        //TODO: fix
     	public static void SetSLlv(Med Med)
     	{
     		SaveData.Acts = sllv(Med);
@@ -556,19 +621,14 @@ namespace SlaveMatrix
     			bool f = path == null;
     			yield return new TA(f ? (i + ": No data") : Path.GetFileNameWithoutExtension(path).Replace("：", ":").Replace("_", "/"), delegate
     			{
-    				if (!processing)
+    				//////Sounds.操作.Play();
+    				if (save)
     				{
-    					//////Sounds.操作.Play();
-    					if (save)
-    					{
-    						processing = true;
-    						Save(path, i, Med);
-    					}
-    					else if (!f)
-    					{
-    						processing = true;
-    						Load(path, i, Med);
-    					}
+    					Save(path, i, Med);
+    				}
+    				else if (!f)
+    				{
+    					Load(path, i, Med);
     				}
     			});
     			j++;
@@ -599,13 +659,11 @@ namespace SlaveMatrix
     		SetSLlv(Med);
     		SDShow = false;
     		ip.SubInfoIm = i + ": " + Sta.GameData.GetSaveDateString() + "\r\n" + GameText.セーブしました;
-    		processing = false;
     		//Med.InvokeL(Sounds.完了.Play);
     	}
 
     	private static void Load(string Path, int i, Med Med)
     	{
-    		cts.Cancel();
     		ip.SubInfoIm = GameText.ロード中です + "\r\n" + GameText.しばらくお待ちください;
 		
     		Sta.GameData = Path.LoadExMod<GameState>();
@@ -635,7 +693,6 @@ namespace SlaveMatrix
     				Med.Mode = "メインフォーム";
     				ip.SubInfoIm = i + ": " + Sta.GameData.GetSaveDateString() + "\r\n" + GameText.ロードしました;
     			}
-    			processing = false;
     			SetDemandMaximum();
     			if (Sta.GameData.Slaves.Length < MaxRoomNumber)
     			{
@@ -647,28 +704,140 @@ namespace SlaveMatrix
     		});
     	}
 
-    	private static void Initialize()
+        public static void SetJSLlv(Med med)
+        {
+            SaveData.Acts = jsllv(med);
+        }
+
+        private static IEnumerable<TA> jsllv(Med med)
+        {
+            int k = 0;
+            string[] array = Sta.JSDPaths();
+            foreach (string text in array)
+            {
+                string path = text;
+                int i = k;
+                bool f = path == null;
+                yield return new TA(f ? (i + ": No data") : Path.GetFileNameWithoutExtension(path).Replace("：", ":").Replace("_", "/"), delegate
+                {
+                    //Sounds.操作.Play();
+                    if (save)
+                    {
+                        JsonSave(path, i, med);
+                    }
+                    else if (!f)
+                    {
+                        JsonLoad(path, i, med);
+                    }
+                });
+                k++;
+            }
+        }
+
+        private static void JsonSave(string Path, int i, Med med)
+        {
+            ip.SubInfoIm = GameText.セーブ中です + "\r\n" + GameText.しばらくお待ちください;
+
+            if (Path != null)
+            {
+                System.IO.File.Delete(Path);
+            }
+            Sta.GDSaveJson(i);
+            SetJSLlv(med);
+            SDShow = false;
+            ip.SubInfoIm = i + ": " + Sta.GameData.GetSaveDateString() + "\r\n" + GameText.セーブしました;
+            //Sounds.完了.Play();
+        }
+        private static void JsonLoad(string Path, int i, Med med)
+        {
+            ip.SubInfoIm = GameText.ロード中です + "\r\n" + GameText.しばらくお待ちください;
+
+            Sta.DontScar = true;
+            if (Sta.TranslateJson)
+            {
+                string text = Sta.CurrentDirectory + "temp.json";
+                string contents = Sta.Translate(Path, 1);
+                File.WriteAllText(text, contents);
+                Sta.GameData = Ser.UnJson<GameState>(text);
+                System.IO.File.Delete(text);
+            }
+            else
+            {
+                Sta.GameData = Ser.UnJson<GameState>(Path);
+            }
+            Sta.DontScar = false;
+            Cha d = Viola;
+            Viola = new Cha(med, DrawBuffer, Sta.GameData.ヴィオラ.ChaD);
+            Viola.Set衣装(Sta.GameData.ヴィオラ.着衣);
+            ヴィオラ吹出し.接続(Viola.Bod.頭.口_接続点);
+            med.InvokeL(delegate
+            {
+                Initialize();
+                if (d != null)
+                {
+                    d.Dispose();
+                }
+                if (TrainingTarget != null)
+                {
+                    TrainingTarget.Dispose();
+                    TrainingTarget = null;
+                }
+                SDShow = false;
+                if (title)
+                {
+                    med.SwitchMode("メインフォーム", DrawBuffer, メインフォーム描画);
+                }
+                else
+                {
+                    med.Mode = "メインフォーム";
+                    ip.SubInfoIm = i + ": " + Sta.GameData.GetSaveDateString() + "\r\n" + GameText.ロードしました;
+                }
+                SetDemandMaximum();
+                if (Sta.GameData.Slaves.Length < MaxRoomNumber)
+                {
+                    Unit[] array = new Unit[MaxRoomNumber];
+                    Array.Copy(Sta.GameData.Slaves, array, Sta.GameData.Slaves.Length);
+                    Sta.GameData.Slaves = array;
+                }
+                Sta.GameData.Gen = new Generator[9];
+                Sta.GameData.GenInstance();
+                //Sounds.完了.Play();
+            });
+        }
+
+
+
+
+
+
+
+        private static void Initialize()
     	{
-    		ロード時初期化();
-    		対象UI初期化();
+            Sta.GameData.Refresh = false;
+            対象UI初期化();
     		奴隷UI初期化();
     	}
 
-    	private static void al(string s, int i)
+    	private static void DayLog(string s, int i)
     	{
-    		ref string reference = ref 日終了ログa[i];
+    		ref string reference = ref DayEndLog[i];
     		reference = reference + s + "\r\n";
     	}
+        public static void Setnpl(Unit u)
+        {
+            npl.Text = GameText.収容番号 + u.Number + "\r\n" + (Sta.AlwaysUseName ? u.Name : (u.Trained ? u.Name : u.Race));
+        }
 
-    	public static void 日終了()
+
+
+        public static void EndDay()
     	{
-    		Player.RecoverPlayerStamina();
     		Player.RecoverPlayerStamina();
     		Sta.GameData.日借金額 = 0uL;
     		労働利益 = 0uL;
     		日利益額 = 0uL;
     		日利子額 = Sta.GameData.利子額;
-    		日終了ログa = new string[MaxRoomNumber];
+    		DayEndLog = new string[MaxRoomNumber];
     		int num = 0;
     		Unit[] Slaves = Sta.GameData.Slaves;
     		foreach (Unit unit in Slaves)
@@ -694,7 +863,7 @@ namespace SlaveMatrix
     					{
     						if (unit.非妊娠)
     						{
-    							al(GameText.収容番号 + unit.Number + "/" + unit.Name + GameText.が妊娠しました + ((unit.Laboror || unit.Prostitute) ? ("\r\n" + GameText.労働が解除されます) : ""), num);
+    							DayLog(GameText.収容番号 + unit.Number + "/" + unit.Name + GameText.が妊娠しました + ((unit.Laboror || unit.Prostitute) ? ("\r\n" + GameText.労働が解除されます) : ""), num);
     							unit.非妊娠 = false;
     						}
     						if (unchecked(Sta.GameData.日数 % (ulong)num2) == 0L)
@@ -704,11 +873,11 @@ namespace SlaveMatrix
     								unit.体力消費();
     								unit.体力消費();
     								unit.体力消費();
-    								al(GameText.収容番号 + unit.Number + "/" + unit.Name + GameText.が出産しました, num);
+    								DayLog(GameText.収容番号 + unit.Number + "/" + unit.Name + GameText.が出産しました, num);
     								if (Sta.GameData.Is地下室一杯())
     								{
     									ulong price = unit.Child.GetPrice();
-    									al(GameText.収容できないので子は売却されます + "+" + price.ToString("#,0"), num);
+    									DayLog(GameText.収容できないので子は売却されます + "+" + price.ToString("#,0"), num);
     									try
     									{
     										日利益額 += price;
@@ -720,7 +889,7 @@ namespace SlaveMatrix
     								}
     								else
     								{
-    									al(GameText.子を奴隷として収容します, num);
+    									DayLog(GameText.子を奴隷として収容します, num);
     									Sta.GameData.Add地下室(unit.Child);
     								}
     								unit.Child = null;
@@ -744,11 +913,11 @@ namespace SlaveMatrix
     						unit.体力消費();
     						unit.体力消費();
     						unit.体力消費();
-    						al(GameText.収容番号 + unit.Number + "/" + unit.Name + GameText.が増殖しました, num);
+    						DayLog(GameText.収容番号 + unit.Number + "/" + unit.Name + GameText.が増殖しました, num);
     						if (Sta.GameData.Is地下室一杯())
     						{
     							ulong price2 = unit.GetPrice();
-    							al(GameText.収容できないので子は売却されます + "+" + price2.ToString("#,0"), num);
+    							DayLog(GameText.収容できないので子は売却されます + "+" + price2.ToString("#,0"), num);
     							try
     							{
     								日利益額 += price2;
@@ -760,7 +929,7 @@ namespace SlaveMatrix
     						}
     						else
     						{
-    							al(GameText.子を奴隷として収容します, num);
+    							DayLog(GameText.子を奴隷として収容します, num);
     							Sta.GameData.Add地下室(unit.DeepCopy().増殖時Reset());
     						}
     					}
@@ -798,92 +967,65 @@ namespace SlaveMatrix
     			{
     				日利益額 = 9999999999999uL;
     			}
-    			dayp = false;
     			Sta.GameData.新日 = true;
     		}
     	}
-
-    	public static void 時進行()
-    	{
-    		Player.RecoverPlayerStamina();
-    		//Parallel.ForEach(Sta.GameData.Slaves, Sta.po3, delegate(Unit u)
-
-    		foreach(Unit u in Sta.GameData.Slaves)
-    		{
-    			if (u != null)
-    			{
-    				if (u.非妊娠 && u.Laboror && u.ChaD.Stamina > 0.333)
-    				{
-    					u.LaborCount++;
-    					u.体力消費();
-    					u.種族情報.一般成長(u.一般最大加算値);
-    				}
-    				else if (u.非妊娠 && u.Prostitute && u.ChaD.Stamina > 0.333)
-    				{
-    					u.ProstituteCount++;
-    					u.体力消費();
-    					u.種族情報.娼婦成長(u.娼婦最大加算値);
-    					u.ChaD.娼婦調教(u.MaxSkillL);
-    					if (!u.Pregnant && (0.002 * (u.発情フラグ ? 1.5 : 1.0) * ((u.Race == GameText.エキドナ) ? 2.0 : 1.0)).Lot())
-    					{
-    						u.Virgin = false;
-    						u.娼婦妊娠();
-    					}
-    				}
-    				else
-    				{
-    					u.RecoverStamina();
-    				}
-    			}
-    		}
-    	}
-
-    	private static void 並列処理()
-    	{
-    		日終了();
-    		AutoSave();
-    	}
-
-    	public static bool 時間進行(Med Med)
+    	public static bool PassTime(Med Med)
     	{
     		bool flag = Sta.GameData.時間帯 == GameText.夜;
-    		時進行();
-    		if (flag)
+            Player.RecoverPlayerStamina();
+
+            foreach (Unit u in Sta.GameData.Slaves)
+            {
+                if (u != null)
+                {
+                    if (u.非妊娠 && u.Laboror && u.ChaD.Stamina > 0.333)
+                    {
+                        u.LaborCount++;
+                        u.体力消費();
+                        u.種族情報.一般成長(u.一般最大加算値);
+                    }
+                    else if (u.非妊娠 && u.Prostitute && u.ChaD.Stamina > 0.333)
+                    {
+                        u.ProstituteCount++;
+                        u.体力消費();
+                        u.種族情報.娼婦成長(u.娼婦最大加算値);
+                        u.ChaD.娼婦調教(u.MaxSkillL);
+                        if (!u.Pregnant && (0.002 * (u.発情フラグ ? 1.5 : 1.0) * ((u.Race == GameText.エキドナ) ? 2.0 : 1.0)).Lot())
+                        {
+                            u.Virgin = false;
+                            u.娼婦妊娠();
+                        }
+                    }
+                    else
+                    {
+                        u.RecoverStamina();
+                    }
+                }
+            }
+            if (flag)
     		{
-    			while (dayp)
-    			{
-    			}
-    			dayp = true;
-    			cts.Cancel();
     			Sta.GameData.Refresh = false;
-    			cts = new CancellationTokenSource();
 
-    			t1 = Task.Factory.StartNew(並列処理, cts.Token);
+                EndDay();
+                AutoSave();
 
-    			Med.SwitchMode("StartOfDay", DrawBuffer, 日数進行描画);
+                Med.SwitchMode("StartOfDay", DrawBuffer, 日数進行描画);
     		}
     		else
     		{
     			Sta.GameData.時間進行();
     		}
     		return flag;
-    	}
-
-    	public static void 日付進行(Med Med)
+    	}        
+        public static void PassDay(Med Med)
     	{
-    		while (!時間進行(Med))
+    		while (!PassTime(Med))
     		{
     		}
     	}
 
-    	public static void ロード時初期化()
-    	{
-    		while (dayp)
-    		{
-    		}
-    		cts.Cancel();
-    		Sta.GameData.Refresh = false;
-    	}
+
 
     	public static void 妊娠状態反映()
     	{
@@ -903,11 +1045,6 @@ namespace SlaveMatrix
     		}
     		TrainingTarget.Bod.断面_表示 = TrainingTarget.Bod.断面_表示;
     		TrainingTarget.Bod.変動ステート更新();
-    	}
-
-    	public static void Setnpl(Unit u)
-    	{
-    		npl.Text = GameText.収容番号 + u.Number + "\r\n" + (Sta.AlwaysUseName ? u.Name : (u.Trained ? u.Name : u.Race));
     	}
 
     	public static void ResetTrainingTarget()
@@ -953,7 +1090,7 @@ namespace SlaveMatrix
     		TrainingTarget.Bod.Update();
     	}
 
-    	public static void Set調教対象(Med Med, Unit u)
+    	public static void SetTrainingTarget(Med Med, Unit u)
     	{
     		Sta.GameData.TrainingTarget = u;
     		if (TrainingTarget != null)
@@ -983,7 +1120,7 @@ namespace SlaveMatrix
     		ResetTrainingTarget();
     	}
 
-    	public static void 対象状態初期化()
+    	public static void InitializeTrainingTarget()
     	{
     		Player.SetState();
     		TrainingTarget.Crying = false;
@@ -1017,6 +1154,7 @@ namespace SlaveMatrix
     		Player.SensBox();
     	}
 
+
     	public static void Player説明(ref Color hc, Action Reset)
     	{
     		if (dbs["プレイヤー"].Pars.Values.First().ToPar().HitColor == hc)
@@ -1029,14 +1167,10 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public static void フラッシュ(this Med Med)
-    	{
-    		調教描画(drawArea, Med.FPSF);
-    		Med.ClearSta(Color.FromArgb(128, Color.White));
-    		Med.DrawEnd(drawArea);
-    		sta = true;
-    	}
 
+
+
+        //modules
     	public static Module Start(Med Med)
     	{
     		return new Module
@@ -1049,18 +1183,15 @@ namespace SlaveMatrix
     	}
 
     	public static Module Credit(Med Med) {
-
     		MotV mv = new MotV(0.0, 1.0){BaseSpeed = 0.5};
 
     		double v = 0.0;
     		bool fadeIn = true;
     		bool fadeOut = false;
-    		double num = 0.15;
 
-    		Lab label = new Lab(Med, DrawBuffer, "クレジット", DrawBuffer.GetPosition(ref Shas.中央中央), num, 1.0, new Font("", 1f), 0.06, "Auto Eden Presents.", Col.White, Col.Empty, Col.Empty, Col.Empty, Input: false);
-    		label.ParT.PositionBase -= new Vector2D(label.ParT.RectSize.X - 0.07, label.ParT.RectSize.Y * 3.0) * 0.5 * num;
+            Lab label = MyUI.Label(Med, DrawBuffer, "Auto Eden Presents.", new Vector2D(0.4, 0.4));
 
-    		return new Module()
+            return new Module()
     		{
     			Setting = delegate
     			{
@@ -1141,12 +1272,11 @@ namespace SlaveMatrix
             bool ll = false;
             double v = 0.0;
     		bool b1 = true;
-    		double num = 0.2;
 
-    		Lab label = new Lab(Med, DrawBuffer, "タイトル", DrawBuffer.GetPosition(ref Shas.中央中央), num, 1.0, new Font("", 1f), 0.07, "Slave Matrix", Col.White, Col.Empty, Col.Empty, Col.Empty, Input: false);
-    		label.ParT.PositionBase -= new Vector2D(label.ParT.RectSize.X - 0.07, label.ParT.RectSize.Y * 3.0) * 0.5 * num;
-
-    		ListView listView = new ListView(DrawBuffer, label.ParT.PositionBase.MulXY(1.015, 1.2), 0.25, new Font("MS Gothic", 1f), 0.09, Col.White, Col.Empty, Col.Empty, Col.Empty,
+            Lab label = MyUI.Label(Med, DrawBuffer, "Slave Matrix", new Vector2D(0.4, 0.4));
+            ListView listView = MyUI.Select(
+                DrawBuffer,
+                new Vector2D(0.45, 0.5),
     			new TA("Start", delegate
     			{
     				////Sounds.操作.Play();
@@ -1173,6 +1303,7 @@ namespace SlaveMatrix
     			})
     		);
 
+
     		listView.SetHitColor(Med);
 
     		return new Module
@@ -1196,59 +1327,47 @@ namespace SlaveMatrix
                 },
                 Down = delegate (MouseButtons mb, Vector2D cp, Color hc)
     			{
-    				if (!processing)
+    				if (mb == MouseButtons.Left)
     				{
-    					if (mb == MouseButtons.Left)
+    					if (ll)
     					{
-    						if (ll)
-    						{
-    							SaveData.Down(ref hc);
-    						}
-    						else
-    						{
-    							listView.Down(ref hc);
-    						}
+    						SaveData.Down(ref hc);
     					}
-    					else if (ll && mb == MouseButtons.Right)
+    					else
     					{
-    						ll = false;
+    						listView.Down(ref hc);
     					}
+    				}
+    				else if (ll && mb == MouseButtons.Right)
+    				{
+    					ll = false;
     				}
     			},
     			Up = delegate (MouseButtons mb, Vector2D cp, Color hc)
     			{
-    				if (!processing && mb == MouseButtons.Left)
+    				if (ll)
     				{
-    					if (ll)
-    					{
-    						SaveData.Up(ref hc);
-    					}
-    					else
-    					{
-    						listView.Up(ref hc);
-    					}
+    					SaveData.Up(ref hc);
+    				}
+    				else
+    				{
+    					listView.Up(ref hc);
     				}
     			},
     			Move = delegate (MouseButtons mb, Vector2D cp, Color hc)
     			{
-    				if (!processing)
-    				{
-    					SaveData.Move(ref hc);
-    					listView.Move(ref hc);
-    				}
+    				SaveData.Move(ref hc);
+    				listView.Move(ref hc);
     			},
     			Leave = delegate
     			{
-    				if (!processing)
+    				if (ll)
     				{
-    					if (ll)
-    					{
-    						SaveData.Leave();
-    					}
-    					else
-    					{
-    						listView.Leave();
-    					}
+    					SaveData.Leave();
+    				}
+    				else
+    				{
+    					listView.Leave();
     				}
     			},
     			Draw = delegate (FPS FPS)
@@ -1299,146 +1418,41 @@ namespace SlaveMatrix
 
     	public static Module メインフォーム(Med Med)
     	{
-    		Module mod = new Module();
     		Buts bs = new Buts();
-    		ParT parT = new ParT();
-    		parT.Font = new Font("MS Gothic", 0.1f);
-    		parT.PositionBase = DrawBuffer.GetPosition(0.85, 0.02);
-    		parT.Text = GameText.事務所;
-    		parT.FontSize = 0.15;
-    		parT.SizeBase = 0.05;
-    		parT.OP.AddRange(new Out[1] { Shas.Get正方形() });
-    		parT.OP.ScalingY(parT.OP.GetCenter(), 0.47);
-    		parT.OP.Rotation(parT.OP.GetCenter(), -26.0);
-    		parT.Closed = true;
-    		parT.TextColor = Col.White;
-    		parT.BrushColor = Color.FromArgb(160, Col.Black);
-    		parT.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    		parT.StringFormat.Alignment = StringAlignment.Center;
-    		parT.StringFormat.LineAlignment = StringAlignment.Center;
-    		bs.Add("ボタン1", new But1(parT, delegate
+
+    		bs.Add("ボタン1", MyUI.Button2(Med, DrawBuffer, GameText.事務所, new Vector2D(0.85, 0.02), delegate
     		{
     			////Sounds.操作.Play();
     			Med.SwitchMode("Office", DrawBuffer, DrawOffice);
     		}));
-    		ParT parT2 = new ParT();
-    		parT2.Font = new Font("MS Gothic", 0.1f);
-    		parT2.PositionBase = DrawBuffer.GetPosition(0.85, 0.1);
-    		parT2.Text = GameText.調教;
-    		parT2.FontSize = 0.15;
-    		parT2.SizeBase = 0.05;
-    		parT2.OP.AddRange(new Out[1] { Shas.Get正方形() });
-    		parT2.OP.ScalingY(parT2.OP.GetCenter(), 0.47);
-    		parT2.OP.Rotation(parT2.OP.GetCenter(), -26.0);
-    		parT2.Closed = true;
-    		parT2.TextColor = Col.White;
-    		parT2.BrushColor = Color.FromArgb(160, Col.Black);
-    		parT2.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    		parT2.StringFormat.Alignment = StringAlignment.Center;
-    		parT2.StringFormat.LineAlignment = StringAlignment.Center;
-    		bs.Add("ボタン2", new But1(parT2, delegate
+    		bs.Add("ボタン2", MyUI.Button2(Med, DrawBuffer, GameText.調教, new Vector2D(0.85, 0.1), delegate
     		{
     			////Sounds.操作.Play();
     			Med.SwitchMode("調教中継行", DrawBuffer, 中継描画);
     		}));
-    		ParT parT3 = new ParT();
-    		parT3.Font = new Font("MS Gothic", 0.1f);
-    		parT3.PositionBase = DrawBuffer.GetPosition(0.85, 0.18);
-    		parT3.Text = GameText.対象;
-    		parT3.FontSize = 0.15;
-    		parT3.SizeBase = 0.05;
-    		parT3.OP.AddRange(new Out[1] { Shas.Get正方形() });
-    		parT3.OP.ScalingY(parT3.OP.GetCenter(), 0.47);
-    		parT3.OP.Rotation(parT3.OP.GetCenter(), -26.0);
-    		parT3.Closed = true;
-    		parT3.TextColor = Col.White;
-    		parT3.BrushColor = Color.FromArgb(160, Col.Black);
-    		parT3.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    		parT3.StringFormat.Alignment = StringAlignment.Center;
-    		parT3.StringFormat.LineAlignment = StringAlignment.Center;
-    		bs.Add("ボタン3", new But1(parT3, delegate
+    		bs.Add("ボタン3", MyUI.Button2(Med, DrawBuffer, GameText.対象, new Vector2D(0.85, 0.18), delegate
     		{
     			////Sounds.操作.Play();
     			Med.Mode = "対象";
     		}));
-    		ParT parT4 = new ParT();
-    		parT4.Font = new Font("MS Gothic", 0.1f);
-    		parT4.PositionBase = DrawBuffer.GetPosition(0.85, 0.26);
-    		parT4.Text = GameText.休む;
-    		parT4.FontSize = 0.15;
-    		parT4.SizeBase = 0.05;
-    		parT4.OP.AddRange(new Out[1] { Shas.Get正方形() });
-    		parT4.OP.ScalingY(parT4.OP.GetCenter(), 0.47);
-    		parT4.OP.Rotation(parT4.OP.GetCenter(), -26.0);
-    		parT4.Closed = true;
-    		parT4.TextColor = Col.White;
-    		parT4.BrushColor = Color.FromArgb(160, Col.Black);
-    		parT4.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    		parT4.StringFormat.Alignment = StringAlignment.Center;
-    		parT4.StringFormat.LineAlignment = StringAlignment.Center;
-    		bs.Add("ボタン4", new But1(parT4, delegate
+    		bs.Add("ボタン4", MyUI.Button2(Med, DrawBuffer, GameText.休む, new Vector2D(0.85, 0.26), delegate
     		{
     			////Sounds.操作.Play();
     			si.Set(bre: true);
-    			時間進行(Med);
+    			PassTime(Med);
     			ip.UpdateSub2();
     		}));
-    		ParT parT5 = new ParT();
-    		parT5.Font = new Font("MS Gothic", 0.1f);
-    		parT5.PositionBase = DrawBuffer.GetPosition(0.85, 0.34);
-    		parT5.Text = GameText.眠る;
-    		parT5.FontSize = 0.15;
-    		parT5.SizeBase = 0.05;
-    		parT5.OP.AddRange(new Out[1] { Shas.Get正方形() });
-    		parT5.OP.ScalingY(parT5.OP.GetCenter(), 0.47);
-    		parT5.OP.Rotation(parT5.OP.GetCenter(), -26.0);
-    		parT5.Closed = true;
-    		parT5.TextColor = Col.White;
-    		parT5.BrushColor = Color.FromArgb(160, Col.Black);
-    		parT5.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    		parT5.StringFormat.Alignment = StringAlignment.Center;
-    		parT5.StringFormat.LineAlignment = StringAlignment.Center;
-    		bs.Add("ボタン5", new But1(parT5, delegate
+    		bs.Add("ボタン5", MyUI.Button2(Med, DrawBuffer, GameText.眠る, new Vector2D(0.85, 0.34), delegate
     		{
     			////Sounds.操作.Play();
-    			日付進行(Med);
+    			PassDay(Med);
     		}));
-    		ParT parT6 = new ParT();
-    		parT6.Font = new Font("MS Gothic", 0.1f);
-    		parT6.PositionBase = DrawBuffer.GetPosition(0.85, 0.42);
-    		parT6.Text = GameText.祝福;
-    		parT6.FontSize = 0.15;
-    		parT6.SizeBase = 0.05;
-    		parT6.OP.AddRange(new Out[1] { Shas.Get正方形() });
-    		parT6.OP.ScalingY(parT6.OP.GetCenter(), 0.47);
-    		parT6.OP.Rotation(parT6.OP.GetCenter(), -26.0);
-    		parT6.Closed = true;
-    		parT6.TextColor = Col.White;
-    		parT6.BrushColor = Color.FromArgb(160, Col.Black);
-    		parT6.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    		parT6.StringFormat.Alignment = StringAlignment.Center;
-    		parT6.StringFormat.LineAlignment = StringAlignment.Center;
-    		bs.Add("ボタン6", new But1(parT6, delegate
+    		bs.Add("ボタン6", MyUI.Button2(Med, DrawBuffer, GameText.祝福, new Vector2D(0.85, 0.42), delegate
     		{
     			////Sounds.操作.Play();
     			Med.Mode = "Blessing";
     		}));
-    		ParT parT7 = new ParT();
-    		parT7.Font = new Font("MS Gothic", 0.1f);
-    		parT7.PositionBase = DrawBuffer.GetPosition(0.85, 0.58);
-    		parT7.Text = GameText.チェンジ;
-    		parT7.FontSize = 0.15;
-    		parT7.SizeBase = 0.05;
-    		parT7.OP.AddRange(new Out[1] { Shas.Get正方形() });
-    		parT7.OP.ScalingY(parT7.OP.GetCenter(), 0.47);
-    		parT7.OP.Rotation(parT7.OP.GetCenter(), -26.0);
-    		parT7.Closed = true;
-    		parT7.TextColor = Col.White;
-    		parT7.BrushColor = Color.FromArgb(160, Col.Black);
-    		parT7.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    		parT7.StringFormat.Alignment = StringAlignment.Center;
-    		parT7.StringFormat.LineAlignment = StringAlignment.Center;
-    		bs.Add("ボタン7", new But1(parT7, delegate
+    		bs.Add("ボタン7", MyUI.Button2(Med, DrawBuffer, GameText.チェンジ, new Vector2D(0.85, 0.58), delegate
     		{
     			Unit unit = null;
     			unit = ((Sta.GameData.TrainingTarget == null) ? (from e in Sta.GameData.Slaves
@@ -1458,7 +1472,7 @@ namespace SlaveMatrix
     				{
     					Sounds.変更Play();
     				}
-    				Set調教対象(Med, unit);
+    				SetTrainingTarget(Med, unit);
     				bs["ボタン2"].Dra = true;
     			}
     			else
@@ -1467,182 +1481,172 @@ namespace SlaveMatrix
     				ip.SubInfoIm = GameText.他の奴隷がいません;
     			}
     		}));
-    		bs.SetHitColor(Med);
-    		mod.Down = delegate(MouseButtons mb, Vector2D cp, Color hc)
-    		{
-    			if (!processing)
-    			{
-    				if (SDShow)
-    				{
-    					SaveData.Down(ref hc);
-    					if (mb == MouseButtons.Right)
-    					{
-    						////Sounds.操作.Play();
-    						SDShow = false;
-    						ip.Up(ref hc);
-    						dbs.Move(ref hc);
-    					}
-    				}
-    				else
-    				{
-    					switch (mb)
-    					{
-    					case MouseButtons.Left:
-    						if (!ip.選択肢表示)
-    						{
-    							dbs.Down(ref hc);
-    							bs.Down(ref hc);
-    						}
-    						ip.Down(ref hc);
-    						break;
-    					case MouseButtons.Right:
-    						if (ip.TextIm == GameText.タイトル画面に戻りますか)
-    						{
-    							ip.nb.Action(ip.nb);
-    						}
-    						break;
-    					}
-    				}
-    			}
-    		};
-    		mod.Up = delegate(MouseButtons mb, Vector2D cp, Color hc)
-    		{
-    			if (!processing)
-    			{
-    				if (SDShow)
-    				{
-    					SaveData.Up(ref hc);
-    				}
-    				else if (mb == MouseButtons.Left)
-    				{
-    					if (!ip.選択肢表示)
-    					{
-    						dbs.Up(ref hc);
-    						bs.Up(ref hc);
-    					}
-    					ip.Up(ref hc);
-    				}
-    			}
-    		};
-    		mod.Move = delegate(MouseButtons mb, Vector2D cp, Color hc)
-    		{
-    			if (!processing)
-    			{
-    				if (SDShow)
-    				{
-    					SaveData.Move(ref hc);
-    				}
-    				else
-    				{
-    					if (!ip.選択肢表示)
-    					{
-    						if (TrainingTarget != null)
-    						{
-    							TrainingTarget.CP = cp;
-    						}
-    						dbs.Move(ref hc);
-    						bs.Move(ref hc);
-    						if (bs["ボタン7"].Pars.Values.First().ToPar().HitColor == hc)
-    						{
-    							ip.SubInfoIm = GameText.奴隷をランダムに選択します;
-    						}
-    						else if (ip.SubInfoIm == GameText.奴隷をランダムに選択します)
-    						{
-    							si.Set(bre: false);
-    						}
-    						Player説明(ref hc, delegate
-    						{
-    							si.Set(bre: false);
-    						});
-    					}
-    					ip.Move(ref hc);
-    				}
-    			}
-    		};
-    		mod.Leave = delegate
-    		{
-    			if (!processing)
-    			{
-    				if (SDShow)
-    				{
-    					SaveData.Leave();
-    				}
-    				else if (!ip.選択肢表示)
-    				{
-    					dbs.Leave();
-    					bs.Leave();
-    				}
-    			}
-    		};
-    		mod.Wheel = delegate
-    		{
-    		};
-    		mod.Setting = delegate
-    		{
-    			if (Med.Modeb != "PlayerInformation")
-    			{
-    				ip.UpdateSub2();
-    				ip.MaiShow = false;
-    				ip.Mai.Feed.Dra = false;
-    				ip.Mai2Show = false;
-    				ip.SubShow = true;
-    				ip.Sub2Show = true;
-    				Player.UI.ステート描画 = Sta.GameData.心眼;
-    				if (TrainingTarget == null && Sta.GameData.TrainingTarget != null)
-    				{
-    					Set調教対象(Med, Sta.GameData.TrainingTarget);
-    				}
-    				bs["ボタン2"].Dra = Sta.GameData.TrainingTarget != null;
-    				bs["ボタン3"].Dra = !Sta.GameData.初事務所フラグ && Sta.GameData.Slaves.Count((Unit e) => e != null) > 0;
-    				bs["ボタン4"].Dra = !Sta.GameData.初事務所フラグ;
-    				bs["ボタン5"].Dra = !Sta.GameData.初事務所フラグ;
-    				bs["ボタン6"].Dra = !Sta.GameData.初事務所フラグ;
-    				bs["ボタン7"].Dra = !Sta.GameData.初事務所フラグ && Sta.GameData.Slaves.Count((Unit e) => e != null) > 0;
-    				si.Set(bre: false);
-    				Color HitColor = Col.Empty;
-    				ip.Up(ref HitColor);
-    				//Sounds.OPBGM.Stop();
-    				//Sounds.日常BGM.Play();
-    				npl.ParT.PositionBase = new Vector2D(Player.UI.ステート.Position.X, 0.026);
-    			}
-    		};
-    		メインフォーム描画 = delegate(Are a, FPS FPS)
-    		{
-    			Med.GH.Clear(Col.Transparent);
-    			if (a.GH != null)
-    			{
-    				a.GH.Clear(Col.Transparent);
-    			}
-    			a.Draw(BasementBackground);
-    			if (TrainingTarget != null)
-    			{
-    				TrainingTarget.Draw(a, FPS);
-    				Player.UI.DrawState(a);
-    				a.Draw(npl.ParT);
-    			}
-    			bs.Draw(a);
-    			dbs.Draw(a);
-    			ip.Draw(a, FPS);
-    			if (SDShow)
-    			{
-    				SaveData.Draw(a);
-    			}
-    			Med.Draw(a);
-    		};
-    		mod.Draw = delegate(FPS FPS)
-    		{
-    			SwitchMode(Med, DrawBuffer, FPS, メインフォーム描画);
-    		};
-    		mod.Dispose = delegate
-    		{
-    			bs.Dispose();
-    		};
-    		return mod;
+
+            メインフォーム描画 = delegate (Are a, FPS FPS)
+            {
+                Med.GH.Clear(Col.Transparent);
+                if (a.GH != null)
+                {
+                    a.GH.Clear(Col.Transparent);
+                }
+                a.Draw(BasementBackground);
+                if (TrainingTarget != null)
+                {
+                    TrainingTarget.Draw(a, FPS);
+                    Player.UI.DrawState(a);
+                    a.Draw(npl.ParT);
+                }
+                bs.Draw(a);
+                dbs.Draw(a);
+                ip.Draw(a, FPS);
+                if (SDShow)
+                {
+                    SaveData.Draw(a);
+                }
+                Med.Draw(a);
+            };
+
+            bs.SetHitColor(Med);
+            return new Module {
+                Down = delegate (MouseButtons mb, Vector2D cp, Color hc)
+                {
+                    if (SDShow)
+                    {
+                        SaveData.Down(ref hc);
+                        if (mb == MouseButtons.Right)
+                        {
+                            ////Sounds.操作.Play();
+                            SDShow = false;
+                            ip.Up(ref hc);
+                            dbs.Move(ref hc);
+                        }
+                    }
+                    else
+                    {
+                        switch (mb)
+                        {
+                            case MouseButtons.Left:
+                                if (!ip.選択肢表示)
+                                {
+                                    dbs.Down(ref hc);
+                                    bs.Down(ref hc);
+                                }
+                                ip.Down(ref hc);
+                                break;
+                            case MouseButtons.Right:
+                                if (ip.TextIm == GameText.タイトル画面に戻りますか)
+                                {
+                                    ip.nb.Action(ip.nb);
+                                }
+                                break;
+                        }
+                    }
+                },
+
+                Up = delegate (MouseButtons mb, Vector2D cp, Color hc)
+                {
+                    if (SDShow)
+                    {
+                        SaveData.Up(ref hc);
+                    }
+                    else if (mb == MouseButtons.Left)
+                    {
+                        if (!ip.選択肢表示)
+                        {
+                            dbs.Up(ref hc);
+                            bs.Up(ref hc);
+                        }
+                        ip.Up(ref hc);
+                    }
+                },
+                
+                Move = delegate (MouseButtons mb, Vector2D cp, Color hc)
+                {
+                    if (SDShow)
+                    {
+                        SaveData.Move(ref hc);
+                    }
+                    else
+                    {
+                        if (!ip.選択肢表示)
+                        {
+                            if (TrainingTarget != null)
+                            {
+                                TrainingTarget.CP = cp;
+                            }
+                            dbs.Move(ref hc);
+                            bs.Move(ref hc);
+                            if (bs["ボタン7"].Pars.Values.First().ToPar().HitColor == hc)
+                            {
+                                ip.SubInfoIm = GameText.奴隷をランダムに選択します;
+                            }
+                            else if (ip.SubInfoIm == GameText.奴隷をランダムに選択します)
+                            {
+                                si.Set(bre: false);
+                            }
+                            Player説明(ref hc, delegate
+                            {
+                                si.Set(bre: false);
+                            });
+                        }
+                        ip.Move(ref hc);
+                    }
+                },
+                
+                Leave = delegate
+                {
+                    if (SDShow)
+                    {
+                        SaveData.Leave();
+                    }
+                    else if (!ip.選択肢表示)
+                    {
+                        dbs.Leave();
+                        bs.Leave();
+                    }
+                },
+                Setting = delegate
+                {
+                    if (Med.Modeb != "PlayerInformation")
+                    {
+                        ip.UpdateSub2();
+                        ip.MaiShow = false;
+                        ip.Mai.Feed.Dra = false;
+                        ip.Mai2Show = false;
+                        ip.SubShow = true;
+                        ip.Sub2Show = true;
+                        Player.UI.ステート描画 = Sta.GameData.心眼;
+                        if (TrainingTarget == null && Sta.GameData.TrainingTarget != null)
+                        {
+                            SetTrainingTarget(Med, Sta.GameData.TrainingTarget);
+                        }
+                        bs["ボタン2"].Dra = Sta.GameData.TrainingTarget != null;
+                        bs["ボタン3"].Dra = !Sta.GameData.初事務所フラグ && Sta.GameData.Slaves.Count((Unit e) => e != null) > 0;
+                        bs["ボタン4"].Dra = !Sta.GameData.初事務所フラグ;
+                        bs["ボタン5"].Dra = !Sta.GameData.初事務所フラグ;
+                        bs["ボタン6"].Dra = !Sta.GameData.初事務所フラグ;
+                        bs["ボタン7"].Dra = !Sta.GameData.初事務所フラグ && Sta.GameData.Slaves.Count((Unit e) => e != null) > 0;
+                        si.Set(bre: false);
+                        Color HitColor = Col.Empty;
+                        ip.Up(ref HitColor);
+                        //Sounds.OPBGM.Stop();
+                        //Sounds.日常BGM.Play();
+                        npl.ParT.PositionBase = new Vector2D(Player.UI.ステート.Position.X, 0.026);
+                    }
+                },
+                Draw = delegate (FPS FPS)
+                {
+                    SwitchMode(Med, DrawBuffer, FPS, メインフォーム描画);
+                },
+                Dispose = delegate
+                {
+                    bs.Dispose();
+                }
+            };
     	}
 
     	public static Module Training(Med Med)
     	{
-    		Module mod = new Module();
     		調教背景 BackgroundDrawing = new 調教背景();
     		Are TrainingBackground = new Are(Med, Hit: false);
     		TrainingBackground.Setting();
@@ -1695,177 +1699,141 @@ namespace SlaveMatrix
     				TrainingTarget.口_閉笑();
     			}
     		};
-    		mod.Setting = delegate
-    		{
-    			TrainingBackground.GD.Clear(Color.Gray);
-    			BackgroundDrawing.Reset();
-    			BackgroundDrawing.描画(TrainingBackground);
-    			ip.MaiShow = false;
-    			ip.Mai.Feed.Dra = true;
-    			ip.Mai2Show = false;
-    			ip.SubShow = true;
-    			ip.Sub2Show = false;
-    			Med.CursorHide();
-    			Player.UI.ディルCM.Show = Sta.GameData.PurchasedTools[0];
-    			Player.UI.コモンCM.Show = Sta.GameData.PurchasedTools[1];
-    			Player.UI.ドリルCM.Show = Sta.GameData.PurchasedTools[2];
-    			Player.UI.デンマCM.Show = Sta.GameData.PurchasedTools[3];
-    			Player.UI.アナルCM.Show = Sta.GameData.PurchasedTools[4];
-    			Player.UI.調教鞭CM.Show = Sta.GameData.PurchasedTools[5];
-    			Player.UI.羽根箒CM.Show = Sta.GameData.PurchasedTools[6];
-    			Player.UI.T剃刀CM.Show = Sta.GameData.PurchasedTools[7];
-    			Player.UI.キャップ1CM.Show = Sta.GameData.PurchasedTools[8];
-    			Player.UI.キャップ2CM.Show = Sta.GameData.PurchasedTools[8];
-    			Player.UI.キャップ3CM.Show = Sta.GameData.PurchasedTools[8];
-    			Player.UI.ロータCM.Show = Sta.GameData.PurchasedTools[9];
-    			Player.UI.パールCM.Show = Sta.GameData.PurchasedTools[10];
-    			Player.UI.目隠帯.Dra = Sta.GameData.PurchasedTools[11];
-    			Player.UI.玉口枷.Dra = Sta.GameData.PurchasedTools[12];
-    			Player.UI.撮影.Dra = Sta.GameData.PurchasedTools[13];
-    			Player.表示ステート更新();
-    			Player.ModBox();
-    			Player.SensBox();
-    			if (TrainingTarget.Bod.Is獣)
-    			{
-    				TrainingTarget.Bod.腰.位置B = Med.Base.GetPosition(ref Shas.中央中央).AddY(-0.03);
-    			}
-    			else if (TrainingTarget.Bod.Is半身)
-    			{
-    				TrainingTarget.Bod.腰.位置B = Med.Base.GetPosition(ref Shas.中央中央).AddY(-0.02);
-    			}
-    			TrainingTarget.Bod.Join();
-    			TrainingTarget.Bod.Update();
-    			キャラ吹出し.接続();
-    			TrainingTarget.Bod.汗染み濃度 = 1.0;
-    			調教済みチェック = true;
-    			調教前調教済みフラグ = Sta.GameData.TrainingTarget.Trained;
-    			if (調教完了 = Sta.GameData.TrainingTarget.IsTrained())
-    			{
-    				調教完了表情();
-    			}
-    		};
-    		ContactD cd = default(ContactD);
-    		Vector2D op = Dat.Vec2DZero;
-    		mod.Down = delegate(MouseButtons mb, Vector2D cp, Color hc)
-    		{
-    			Player.UI.Down(ref mb, ref cp, ref op, ref hc, ref cd);
-    			ip.Down(ref hc);
-    		};
-    		mod.Up = delegate(MouseButtons mb, Vector2D cp, Color hc)
-    		{
-    			Player.UI.Up(ref mb, ref cp, ref hc, ref cd);
-    			ip.Up(ref hc);
-    		};
-    		mod.Move = delegate(MouseButtons mb, Vector2D cp, Color hc)
-    		{
-    			TrainingTarget.CP = cp;
-    			cd = TrainingTarget.GetContact(ref hc);
-    			Player.UI.Move(ref mb, ref cp, ref op, ref hc, ref cd);
-    			ip.Move(ref hc);
-    			op = cp;
-    		};
-    		mod.Leave = delegate(MouseButtons mb, Vector2D cp, Color hc)
-    		{
-    			Player.UI.Leave(ref mb, ref cp, ref hc);
-    		};
-    		mod.Wheel = delegate(MouseButtons mb, Vector2D cp, int dt, Color hc)
-    		{
-    			Player.UI.Wheel(ref mb, ref cp, ref dt, ref hc, ref cd);
-    		};
-    		調教描画 = delegate(Are a, FPS FPS)
-    		{
-    			Player.UI.Mots.Drive(FPS);
-    			Med.GH.Clear(Col.Transparent);
-    			if (a.GH != null)
-    			{
-    				a.GH.Clear(Col.Transparent);
-    			}
-    			a.Draw(TrainingBackground);
-    			TrainingTarget.Draw(a, FPS);
-    			キャラ吹出し.Draw(a, FPS);
-    			Player.UI.StaDraw(a, FPS);
-    			ip.Draw(a, FPS);
-    			Med.Draw(a);
-    			if (調教済みチェック)
-    			{
-    				if (調教完了)
-    				{
-    					調教完了表情();
-    					キャラ台詞.Set状態();
-    					if (TrainingTarget.Bod.Is顔面)
-    					{
-    						Action<Tex> o_done = キャラ吹出し.Tex.Done;
+
+            ContactD cd = default(ContactD);
+            Vector2D op = Dat.Vec2DZero;
+
+            調教描画 = delegate (Are a, FPS FPS)
+            {
+                Player.UI.Mots.Drive(FPS);
+                Med.GH.Clear(Col.Transparent);
+                if (a.GH != null)
+                {
+                    a.GH.Clear(Col.Transparent);
+                }
+                a.Draw(TrainingBackground);
+                TrainingTarget.Draw(a, FPS);
+                キャラ吹出し.Draw(a, FPS);
+                Player.UI.StaDraw(a, FPS);
+                ip.Draw(a, FPS);
+                Med.Draw(a);
+                if (調教済みチェック)
+                {
+                    if (調教完了)
+                    {
+                        調教完了表情();
+                        SlaveText.Set状態();
+                        if (TrainingTarget.Bod.Is顔面)
+                        {
+                            Action<Tex> o_done = キャラ吹出し.Tex.Done;
                             キャラ吹出し.Tex.Done = delegate (Tex tex)
-    						{
-    							o_done(tex);
+                            {
+                                o_done(tex);
                                 TrainingTarget.顔面展開.Start();
                             };
-    					}
-    				}
-    				調教済みチェック = false;
-    			}
-    		};
-    		撮影描画 = delegate(Are a, FPS FPS)
-    		{
-    			a.Draw(TrainingBackground);
-    			TrainingTarget.Draw(a, FPS);
-    		};
-    		mod.Draw = delegate(FPS FPS)
-    		{
-    			SwitchMode(Med, DrawBuffer, FPS, 調教描画);
-    		};
-    		mod.Dispose = delegate
-    		{
-    			TrainingBackground.Dispose();
-    			Player.UI.Dispose();
-    		};
-    		return mod;
+                        }
+                    }
+                    調教済みチェック = false;
+                }
+            };
+            撮影描画 = delegate (Are a, FPS FPS)
+            {
+                a.Draw(TrainingBackground);
+                TrainingTarget.Draw(a, FPS);
+            };
+
+
+            return new Module {
+                Setting = delegate
+                {
+                    TrainingBackground.GD.Clear(Color.Gray);
+                    BackgroundDrawing.Reset();
+                    BackgroundDrawing.描画(TrainingBackground);
+                    ip.MaiShow = false;
+                    ip.Mai.Feed.Dra = true;
+                    ip.Mai2Show = false;
+                    ip.SubShow = true;
+                    ip.Sub2Show = false;
+                    Med.CursorHide();
+                    Player.UI.ディルCM.Show = Sta.GameData.PurchasedTools[0];
+                    Player.UI.コモンCM.Show = Sta.GameData.PurchasedTools[1];
+                    Player.UI.ドリルCM.Show = Sta.GameData.PurchasedTools[2];
+                    Player.UI.デンマCM.Show = Sta.GameData.PurchasedTools[3];
+                    Player.UI.アナルCM.Show = Sta.GameData.PurchasedTools[4];
+                    Player.UI.調教鞭CM.Show = Sta.GameData.PurchasedTools[5];
+                    Player.UI.羽根箒CM.Show = Sta.GameData.PurchasedTools[6];
+                    Player.UI.T剃刀CM.Show = Sta.GameData.PurchasedTools[7];
+                    Player.UI.キャップ1CM.Show = Sta.GameData.PurchasedTools[8];
+                    Player.UI.キャップ2CM.Show = Sta.GameData.PurchasedTools[8];
+                    Player.UI.キャップ3CM.Show = Sta.GameData.PurchasedTools[8];
+                    Player.UI.ロータCM.Show = Sta.GameData.PurchasedTools[9];
+                    Player.UI.パールCM.Show = Sta.GameData.PurchasedTools[10];
+                    Player.UI.目隠帯.Dra = Sta.GameData.PurchasedTools[11];
+                    Player.UI.玉口枷.Dra = Sta.GameData.PurchasedTools[12];
+                    Player.UI.撮影.Dra = Sta.GameData.PurchasedTools[13];
+                    Player.表示ステート更新();
+                    Player.ModBox();
+                    Player.SensBox();
+                    if (TrainingTarget.Bod.Is獣)
+                    {
+                        TrainingTarget.Bod.腰.位置B = Med.Base.GetPosition(new Vector2D(0.5, 0.5)).AddY(-0.03);
+                    }
+                    else if (TrainingTarget.Bod.Is半身)
+                    {
+                        TrainingTarget.Bod.腰.位置B = Med.Base.GetPosition(new Vector2D(0.5, 0.5)).AddY(-0.02);
+                    }
+                    TrainingTarget.Bod.Join();
+                    TrainingTarget.Bod.Update();
+                    キャラ吹出し.接続();
+                    TrainingTarget.Bod.汗染み濃度 = 1.0;
+                    調教済みチェック = true;
+                    TrainingTargetTrained = Sta.GameData.TrainingTarget.Trained;
+                    if (調教完了 = Sta.GameData.TrainingTarget.IsTrained())
+                    {
+                        調教完了表情();
+                    }
+                },
+
+                Down = delegate (MouseButtons mb, Vector2D cp, Color hc)
+                {
+                    Player.UI.Down(ref mb, ref cp, ref op, ref hc, ref cd);
+                    ip.Down(ref hc);
+                },
+                Up = delegate (MouseButtons mb, Vector2D cp, Color hc)
+                {
+                    Player.UI.Up(ref mb, ref cp, ref hc, ref cd);
+                    ip.Up(ref hc);
+                },
+                Move = delegate (MouseButtons mb, Vector2D cp, Color hc)
+                {
+                    TrainingTarget.CP = cp;
+                    cd = TrainingTarget.GetContact(ref hc);
+                    Player.UI.Move(ref mb, ref cp, ref op, ref hc, ref cd);
+                    ip.Move(ref hc);
+                    op = cp;
+                },
+                Leave = delegate (MouseButtons mb, Vector2D cp, Color hc)
+                {
+                    Player.UI.Leave(ref mb, ref cp, ref hc);
+                },
+                Wheel = delegate (MouseButtons mb, Vector2D cp, int dt, Color hc)
+                {
+                    Player.UI.Wheel(ref mb, ref cp, ref dt, ref hc, ref cd);
+                },
+                Draw = delegate (FPS FPS)
+                {
+                    SwitchMode(Med, DrawBuffer, FPS, 調教描画);
+                },
+                Dispose = delegate
+                {
+                    TrainingBackground.Dispose();
+                    Player.UI.Dispose();
+                }
+            };
     	}
 
     	public static Module 調教中継行(Med Med)
     	{
-    		Module obj = new Module
-    		{
-    			Down = delegate
-    			{
-    				Med.SwitchMode("Training", DrawBuffer, 調教描画);
-    			},
-    			Up = delegate
-    			{
-    			},
-    			Move = delegate
-    			{
-    			},
-    			Leave = delegate
-    			{
-    			},
-    			Wheel = delegate
-    			{
-    			},
-    			Setting = delegate
-    			{
-    				ip.MaiShow = true;
-    				ip.Mai.Feed.Dra = true;
-    				ip.Mai2Show = false;
-    				ip.SubShow = true;
-    				ip.Sub2Show = false;
-    				ip.Text = GameText.点6;
-    				if (!TrainingTarget.Bod.Setピアス.ピアス_表示)
-    				{
-    					TrainingTarget.Bod.脱衣();
-    				}
-    				Player.UI.SetTarget(Sta.GameData.TrainingTarget, TrainingTarget);
-    				Player.SetStateTraining();
-    				Player.表示ステート更新();
-    				Player.ModBox();
-    				Player.SensBox();
-    				TrainingTarget.Bod.首輪_表示 = true;
-    				si.Set(bre: false);
-    				Player.UI.Reset();
-    				Player.UI.擬音キュー.Clear();
-    				Player.UI.擬音.Clear();
-    			}
-    		};
     		中継描画 = delegate(Are a, FPS FPS)
     		{
     			Med.GH.Clear(Col.Transparent);
@@ -1877,162 +1845,175 @@ namespace SlaveMatrix
     			ip.Draw(a, FPS);
     			Med.Draw(a);
     		};
-    		obj.Draw = delegate(FPS FPS)
-    		{
-    			SwitchMode(Med, DrawBuffer, FPS, 中継描画);
-    		};
-    		obj.Dispose = delegate
-    		{
-    		};
-    		return obj;
+
+            return new Module
+            {
+                Down = delegate
+                {
+                    Med.SwitchMode("Training", DrawBuffer, 調教描画);
+                },
+                Setting = delegate
+                {
+                    ip.MaiShow = true;
+                    ip.Mai.Feed.Dra = true;
+                    ip.Mai2Show = false;
+                    ip.SubShow = true;
+                    ip.Sub2Show = false;
+                    ip.Text = GameText.点6;
+                    if (!TrainingTarget.Bod.Setピアス.ピアス_表示)
+                    {
+                        TrainingTarget.Bod.脱衣();
+                    }
+                    Player.UI.SetTarget(Sta.GameData.TrainingTarget, TrainingTarget);
+                    Player.SetStateTraining();
+                    Player.表示ステート更新();
+                    Player.ModBox();
+                    Player.SensBox();
+                    TrainingTarget.Bod.首輪_表示 = true;
+                    si.Set(bre: false);
+                    Player.UI.Reset();
+                    Player.UI.擬音キュー.Clear();
+                    Player.UI.擬音.Clear();
+                },
+                Draw = delegate (FPS FPS)
+                {
+                    SwitchMode(Med, DrawBuffer, FPS, 中継描画);
+                }
+            };
     	}
 
     	public static Module 調教中継帰(Med Med)
     	{
-    		Module mod = new Module();
     		bool Result2 = false;
     		bool Result3 = false;
     		bool b1 = false;
     		bool b2 = false;
     		bool b3 = false;
-    		mod.Down = delegate
-    		{
-    			if (!Result2)
-    			{
-    				Player.Result2();
-    				Result2 = true;
-    				b1 = Sta.GameData.TrainingTarget.Pregnant && Sta.GameData.TrainingTarget.非妊娠;
-    				b2 = !調教前調教済みフラグ && Sta.GameData.TrainingTarget.Trained;
-    				b3 = Sta.GameData.TrainingTarget.Trained && Sta.GameData.祝福 == null;
-    				Result3 = !(b1 || b2 || b3);
-    			}
-    			else if (!Result3)
-    			{
-    				ip.TextIm = "";
-    				if (b1)
-    				{
-    					InfoPanel 情報パネル2 = ip;
-    					情報パネル2.TextIm = 情報パネル2.TextIm + GameText.収容番号 + Sta.GameData.TrainingTarget.Number + "/" + Sta.GameData.TrainingTarget.Name + GameText.が妊娠しました + ((Sta.GameData.TrainingTarget.Laboror || Sta.GameData.TrainingTarget.Prostitute) ? ("\r\n" + GameText.労働が解除されます) : "") + "\r\n";
-    					Sta.GameData.TrainingTarget.非妊娠 = false;
-    				}
-    				if (b2)
-    				{
-    					InfoPanel 情報パネル2 = ip;
-    					情報パネル2.TextIm = 情報パネル2.TextIm + GameText.収容番号 + Sta.GameData.TrainingTarget.Number + "/" + Sta.GameData.TrainingTarget.Name + GameText.の調教が完了しました + "\r\n";
-    				}
-    				if (b3)
-    				{
-    					Sta.GameData.祝福 = Sta.GameData.TrainingTarget;
-    					InfoPanel 情報パネル2 = ip;
-    					情報パネル2.TextIm = 情報パネル2.TextIm + GameText.収容番号 + Sta.GameData.TrainingTarget.Number + "/" + Sta.GameData.TrainingTarget.Name + GameText.から祝福を受けました;
-    					//Sounds.祝福.Play();
-    				}
-    				Result3 = true;
-    			}
-    			else if (!時間進行(Med))
-    			{
-    				Player.UI.Reset();
-    				Med.SwitchMode("メインフォーム", DrawBuffer, メインフォーム描画);
-    			}
-    		};
-    		mod.Up = delegate
-    		{
-    		};
-    		mod.Move = delegate
-    		{
-    		};
-    		mod.Leave = delegate
-    		{
-    		};
-    		mod.Wheel = delegate
-    		{
-    		};
-    		mod.Setting = delegate
-    		{
-    			ip.MaiShow = true;
-    			ip.Mai.Feed.Dra = true;
-    			ip.Mai2Show = false;
-    			ip.SubShow = true;
-    			ip.Sub2Show = false;
-    			Med.CursorShow();
-    			Color HitColor = Col.Empty;
-    			Player.UI.調教終了.Up(ref HitColor);
-    			Player.Result1();
-    			if (Player.UI.強制拘束)
-    			{
-    				Sta.GameData.拘束具 = Player.UI.拘束bu;
-    			}
-    			Sta.GameData.TrainingTarget.発情フラグ = Player.UI.発情bu;
-    			Player.調教終了時();
-    			TrainingTarget.絶頂.End();
-    			TrainingTarget.体揺れ.End();
+
+            return new Module {
+                Down = delegate
+                {
+                    if (!Result2)
+                    {
+                        Player.Result2();
+                        Result2 = true;
+                        b1 = Sta.GameData.TrainingTarget.Pregnant && Sta.GameData.TrainingTarget.非妊娠;
+                        b2 = !TrainingTargetTrained && Sta.GameData.TrainingTarget.Trained;
+                        b3 = Sta.GameData.TrainingTarget.Trained && Sta.GameData.祝福 == null;
+                        Result3 = !(b1 || b2 || b3);
+                    }
+                    else if (!Result3)
+                    {
+                        ip.TextIm = "";
+                        if (b1)
+                        {
+                            InfoPanel 情報パネル2 = ip;
+                            情報パネル2.TextIm = 情報パネル2.TextIm + GameText.収容番号 + Sta.GameData.TrainingTarget.Number + "/" + Sta.GameData.TrainingTarget.Name + GameText.が妊娠しました + ((Sta.GameData.TrainingTarget.Laboror || Sta.GameData.TrainingTarget.Prostitute) ? ("\r\n" + GameText.労働が解除されます) : "") + "\r\n";
+                            Sta.GameData.TrainingTarget.非妊娠 = false;
+                        }
+                        if (b2)
+                        {
+                            InfoPanel 情報パネル2 = ip;
+                            情報パネル2.TextIm = 情報パネル2.TextIm + GameText.収容番号 + Sta.GameData.TrainingTarget.Number + "/" + Sta.GameData.TrainingTarget.Name + GameText.の調教が完了しました + "\r\n";
+                        }
+                        if (b3)
+                        {
+                            Sta.GameData.祝福 = Sta.GameData.TrainingTarget;
+                            InfoPanel 情報パネル2 = ip;
+                            情報パネル2.TextIm = 情報パネル2.TextIm + GameText.収容番号 + Sta.GameData.TrainingTarget.Number + "/" + Sta.GameData.TrainingTarget.Name + GameText.から祝福を受けました;
+                            //Sounds.祝福.Play();
+                        }
+                        Result3 = true;
+                    }
+                    else if (!PassTime(Med))
+                    {
+                        Player.UI.Reset();
+                        Med.SwitchMode("メインフォーム", DrawBuffer, メインフォーム描画);
+                    }
+                },
+                Setting = delegate
+                {
+                    ip.MaiShow = true;
+                    ip.Mai.Feed.Dra = true;
+                    ip.Mai2Show = false;
+                    ip.SubShow = true;
+                    ip.Sub2Show = false;
+                    Med.CursorShow();
+                    Color HitColor = Col.Empty;
+                    Player.UI.調教終了.Up(ref HitColor);
+                    Player.Result1();
+                    if (Player.UI.強制拘束)
+                    {
+                        Sta.GameData.拘束具 = Player.UI.拘束bu;
+                    }
+                    Sta.GameData.TrainingTarget.発情フラグ = Player.UI.発情bu;
+                    Player.調教終了時();
+                    TrainingTarget.絶頂.End();
+                    TrainingTarget.体揺れ.End();
 
 
-    			TrainingTarget.放尿強制終了();
+                    TrainingTarget.放尿強制終了();
 
 
 
-    			Player.絶頂終了処理_();
-    			Player.射精終了処理_();
-    			TrainingTarget.Bod.膣内精液.精液濃度 = 0.0;
-    			TrainingTarget.Bod.断面.精液濃度 = 0.0;
-    			TrainingTarget.Bod.スタンプClear();
-    			TrainingTarget.Bod.腰.位置B = Med.Base.GetPosition(ref Shas.中央中央);
-    			TrainingTarget.Bod.汗染み濃度 = 0.0;
-    			TrainingTarget.Bod.飛沫濃度 = 0.0;
-    			TrainingTarget.Bod.潮染み濃度 = 0.0;
-    			TrainingTarget.Bod.尿染み濃度 = 0.0;
-    			if (!TrainingTarget.Bod.Is粘)
-    			{
-    				TrainingTarget.Bod.断面_表示 = false;
-    			}
-    			TrainingTarget.EyeTracking.End();
-    			TrainingTarget.口腔精液垂れ.End();
-    			TrainingTarget.性器精液垂れ.End();
-    			TrainingTarget.肛門精液垂れ.End();
-    			TrainingTarget.出糸精液垂れ.End();
-    			TrainingTarget.Bod.Set腰();
-    			if (Sta.GameData.TrainingTarget.Trained)
-    			{
-    				TrainingTarget.Bod.拘束具_表示 = false;
-    				TrainingTarget.Bod.首輪_表示 = true;
-    				TrainingTarget.Set基本姿勢();
-    			}
-    			else
-    			{
-    				TrainingTarget.Bod.拘束具_表示 = true;
-    				TrainingTarget.Set拘束姿勢();
-    			}
-    			TrainingTarget.Emotion();
-    			TrainingTarget.SetInitialExpression();
-    			TrainingTarget.口修正();
-    			TrainingTarget.舌_無し();
-    			TrainingTarget.Set衣装(Sta.GameData.TrainingTarget.着衣);
-    			Player.SetState();
-    			Player.表示ステート更新();
-    			Player.ModBox();
-    			Player.SensBox();
-    			TrainingTarget.Bod.カーソル = null;
-    			TrainingTarget.Bod.Join();
-    			TrainingTarget.Bod.Update();
-    			キャラ吹出し.接続();
-    			キャラ吹出し.消失.End();
-    			Result2 = false;
-    			Result3 = false;
-    			si.Set(bre: false);
-    			Sta.GameData.目隠帯 = false;
-    			Sta.GameData.玉口枷 = false;
-    			Sta.GameData.拘束具 = false;
-    			Sta.GameData.断面 = false;
-    		};
-    		mod.Draw = delegate(FPS FPS)
-    		{
-    			SwitchMode(Med, DrawBuffer, FPS, 中継描画);
-    		};
-    		mod.Dispose = delegate
-    		{
-    		};
-    		return mod;
+                    Player.絶頂終了処理_();
+                    Player.射精終了処理_();
+                    TrainingTarget.Bod.膣内精液.精液濃度 = 0.0;
+                    TrainingTarget.Bod.断面.精液濃度 = 0.0;
+                    TrainingTarget.Bod.スタンプClear();
+                    TrainingTarget.Bod.腰.位置B = Med.Base.GetPosition(new Vector2D(0.5, 0.5));
+                    TrainingTarget.Bod.汗染み濃度 = 0.0;
+                    TrainingTarget.Bod.飛沫濃度 = 0.0;
+                    TrainingTarget.Bod.潮染み濃度 = 0.0;
+                    TrainingTarget.Bod.尿染み濃度 = 0.0;
+                    if (!TrainingTarget.Bod.Is粘)
+                    {
+                        TrainingTarget.Bod.断面_表示 = false;
+                    }
+                    TrainingTarget.EyeTracking.End();
+                    TrainingTarget.口腔精液垂れ.End();
+                    TrainingTarget.性器精液垂れ.End();
+                    TrainingTarget.肛門精液垂れ.End();
+                    TrainingTarget.出糸精液垂れ.End();
+                    TrainingTarget.Bod.Set腰();
+                    if (Sta.GameData.TrainingTarget.Trained)
+                    {
+                        TrainingTarget.Bod.拘束具_表示 = false;
+                        TrainingTarget.Bod.首輪_表示 = true;
+                        TrainingTarget.Set基本姿勢();
+                    }
+                    else
+                    {
+                        TrainingTarget.Bod.拘束具_表示 = true;
+                        TrainingTarget.Set拘束姿勢();
+                    }
+                    TrainingTarget.Emotion();
+                    TrainingTarget.SetInitialExpression();
+                    TrainingTarget.口修正();
+                    TrainingTarget.舌_無し();
+                    TrainingTarget.Set衣装(Sta.GameData.TrainingTarget.着衣);
+                    Player.SetState();
+                    Player.表示ステート更新();
+                    Player.ModBox();
+                    Player.SensBox();
+                    TrainingTarget.Bod.カーソル = null;
+                    TrainingTarget.Bod.Join();
+                    TrainingTarget.Bod.Update();
+                    キャラ吹出し.接続();
+                    キャラ吹出し.消失.End();
+                    Result2 = false;
+                    Result3 = false;
+                    si.Set(bre: false);
+                    Sta.GameData.目隠帯 = false;
+                    Sta.GameData.玉口枷 = false;
+                    Sta.GameData.拘束具 = false;
+                    Sta.GameData.断面 = false;
+                },
+                Draw = delegate (FPS FPS)
+                {
+                    SwitchMode(Med, DrawBuffer, FPS, 中継描画);
+                }
+            };
     	}
 
     	public static Module 対象(Med Med)
@@ -2044,16 +2025,17 @@ namespace SlaveMatrix
     			uint 淫紋価格 = 10000000u;
     			uint 衣装変更価格 = 10000000u;
     			bool d = false;
-    			Module mod = new Module();
     			Buts bs = new Buts();
     			Swi 保守sw = new Swi(Color.DarkRed);
     			Swi 一般sw = new Swi(Color.DarkRed);
     			Swi 娼婦sw = new Swi(Color.DarkRed);
     			int i = 0;
     			int f = 0;
-    			ListView lv = new ListView(DrawBuffer, DrawBuffer.GetPosition(0.01, 0.08), 0.4, new Font("MS Gothic", 1f), 0.08, Col.White, Col.Empty, Color.FromArgb(160, Col.Black), Col.Black, Enumerable.Repeat(new TA("No Slave".PadLeft(15, ' '), delegate
-    			{
-    			}), 15).ToArray());
+
+                ListView lv = MyUI.Select(DrawBuffer, new Vector2D(0.01, 0.08),
+                    Enumerable.Repeat(new TA("No Slave".PadLeft(15, ' '), delegate { }), 15).ToArray()
+                );
+
     			Color lv初期縁色 = Col.Black;
     			Action lv縁色初期化 = delegate
     			{
@@ -2162,56 +2144,364 @@ namespace SlaveMatrix
     				});
     			};
     			lv.SetHitColor(Med);
-    			ParT parT = new ParT();
-    			parT.Font = new Font("MS Gothic", 0.1f);
-    			parT.PositionBase = DrawBuffer.GetPosition(0.85, 0.02);
-    			parT.Text = GameText.戻る;
-    			parT.FontSize = 0.15;
-    			parT.SizeBase = 0.05;
-    			parT.OP.AddRange(new Out[1] { Shas.Get正方形() });
-    			parT.OP.ScalingY(parT.OP.GetCenter(), 0.47);
-    			parT.OP.Rotation(parT.OP.GetCenter(), -26.0);
-    			parT.Closed = true;
-    			parT.TextColor = Col.White;
-    			parT.BrushColor = Color.FromArgb(160, Col.Black);
-    			parT.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    			parT.StringFormat.Alignment = StringAlignment.Center;
-    			parT.StringFormat.LineAlignment = StringAlignment.Center;
-    			bs.Add("ボタン0", new But1(parT, delegate
-    			{
-    				////Sounds.操作.Play();
-    				if (Sta.GameData.TrainingTarget != null && bs["子"].Pars.Values.First().ToParT().PenColor != Color.Red)
-    				{
-    					Set調教対象(Med, Sta.GameData.TrainingTarget);
-    					SetUI(Sta.GameData.TrainingTarget);
-    				}
-    				Med.Mode = "メインフォーム";
-    			}));
-    			Color bs初期縁色 = Col.Black;
-    			Action bs縁色初期化 = delegate
-    			{
-    				foreach (But item2 in bs.EnumBut.Skip(1).Take(3))
-    				{
-    					item2.Pars.Values.First().ToParT().PenColor = bs初期縁色;
-    				}
-    			};
-    			ParT parT2 = new ParT();
-    			parT2.Font = new Font("MS Gothic", 0.1f);
-    			parT2.PositionBase = DrawBuffer.GetPosition(0.85, 0.1);
-    			parT2.Text = GameText.子;
-    			parT2.FontSize = 0.15;
-    			parT2.SizeBase = 0.05;
-    			parT2.OP.AddRange(new Out[1] { Shas.Get正方形() });
-    			parT2.OP.ScalingY(parT2.OP.GetCenter(), 0.47);
-    			parT2.OP.Rotation(parT2.OP.GetCenter(), -26.0);
-    			parT2.Closed = true;
-    			parT2.TextColor = Col.White;
-    			parT2.BrushColor = Color.FromArgb(160, Col.Black);
-    			parT2.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    			parT2.StringFormat.Alignment = StringAlignment.Center;
-    			parT2.StringFormat.LineAlignment = StringAlignment.Center;
-    			parT2.PenColor = Color.Red;
-    			bs.Add("子", new But1(parT2, delegate(But b)
+
+                Color bs初期縁色 = Col.Black;
+                Action bs縁色初期化 = delegate
+                {
+                    foreach (But item2 in bs.EnumBut.Skip(1).Take(3))
+                    {
+                        item2.Pars.Values.First().ToParT().PenColor = bs初期縁色;
+                    }
+                };
+                Color f初期縁色 = Col.Black;
+                Action f縁色初期化 = delegate
+                {
+                    foreach (But item3 in bs.EnumBut.Skip(10))
+                    {
+                        item3.Pars.Values.First().ToParT().PenColor = f初期縁色;
+                    }
+                };
+                Action<But, int> 階層選択 = delegate (But b, int o)
+                {
+                    f縁色初期化();
+                    b.Pars.Values.First().ToParT().PenColor = Color.Red;
+                    set(o);
+                };
+                Action 部屋選択 = delegate
+                {
+                    lv縁色初期化();
+                    if (Sta.GameData.TrainingTarget != null && f == Sta.GameData.TrainingTarget.階層位置 * 15)
+                    {
+                        lv.bs[Sta.GameData.TrainingTarget.RoomNumber.ToString()].Pars.Values.First().ToParT().PenColor = Color.Red;
+                    }
+                };
+
+                Module mod = new Module
+                {
+                    Down = delegate (MouseButtons mb, Vector2D cp, Color hc)
+                    {
+                        if (SDShow)
+                        {
+                            SaveData.Down(ref hc);
+                            if (mb == MouseButtons.Right)
+                            {
+                                //TODO fix?
+                                //Sounds.操作.Play();
+                                SDShow = false;
+                                ip.Up(ref hc);
+                                dbs.Move(ref hc);
+                            }
+                        }
+                        else
+                        {
+                            switch (mb)
+                            {
+                                case MouseButtons.Left:
+                                    if (!ip.Mai2Show)
+                                    {
+                                        dbs.Down(ref hc);
+                                        bs.Down(ref hc);
+                                    }
+                                    lv.Down(ref hc);
+                                    ip.Down(ref hc);
+                                    break;
+                                case MouseButtons.Right:
+                                    if (!ip.Mai2Show)
+                                    {
+                                        bs["ボタン0"].Action(bs["ボタン0"]);
+                                    }
+                                    else
+                                    {
+                                        ip.nb.Action(ip.nb);
+                                    }
+                                    break;
+                            }
+                        }
+                    },
+                    Up = delegate (MouseButtons mb, Vector2D cp, Color hc)
+                    {
+                        if (SDShow)
+                        {
+                            SaveData.Up(ref hc);
+                        }
+                        else if (mb == MouseButtons.Left)
+                        {
+                            if (!ip.Mai2Show)
+                            {
+                                dbs.Up(ref hc);
+                                bs.Up(ref hc);
+                            }
+                            lv.Up(ref hc);
+                            ip.Up(ref hc);
+                        }
+                    },
+                    Move = delegate (MouseButtons mb, Vector2D cp, Color hc)
+                    {
+                        if (SDShow)
+                        {
+                            SaveData.Move(ref hc);
+                        }
+                        else
+                        {
+                            if (!ip.Mai2Show)
+                            {
+                                dbs.Move(ref hc);
+                                bs.Move(ref hc);
+                                if (bs["胸施術"].Pars.Values.First().ToPar().HitColor == hc && !(ip.SubInfoIm == GameText.胸の甲殻を切除しました) && !(ip.SubInfoIm == GameText.所持金が足りません))
+                                {
+                                    ip.SubInfoIm = GameText.胸の甲殻を切除します + "(-" + 胸施術価格.ToString("#,0") + ")";
+                                }
+                                else if (ip.SubInfoIm == GameText.胸の甲殻を切除します + "(-" + 胸施術価格.ToString("#,0") + ")")
+                                {
+                                    si.Set(bre: false);
+                                }
+                                if (TrainingTarget != null)
+                                {
+                                    if (bs["股施術"].Pars.Values.First().ToPar().HitColor == hc && !(ip.SubInfoIm == GameText.股の + (TrainingTarget.Bod.Is蛇 ? GameText.鱗 : GameText.甲殻) + GameText.を切除しました) && !(ip.SubInfoIm == GameText.所持金が足りません))
+                                    {
+                                        ip.SubInfoIm = GameText.股の + (TrainingTarget.Bod.Is蛇 ? GameText.鱗 : GameText.甲殻) + GameText.を切除します + "(-" + 股施術価格.ToString("#,0") + ")";
+                                    }
+                                    else if (ip.SubInfoIm == GameText.股の + (TrainingTarget.Bod.Is蛇 ? GameText.鱗 : GameText.甲殻) + GameText.を切除します + "(-" + 股施術価格.ToString("#,0") + ")")
+                                    {
+                                        si.Set(bre: false);
+                                    }
+                                }
+                                if (bs["淫紋"].Pars.Values.First().ToPar().HitColor == hc && !(ip.SubInfoIm == GameText.淫紋を刻みました) && !(ip.SubInfoIm == GameText.所持金が足りません))
+                                {
+                                    ip.SubInfoIm = GameText.淫紋を刻みます + "(-" + 淫紋価格.ToString("#,0") + ")";
+                                }
+                                else if (ip.SubInfoIm == GameText.淫紋を刻みます + "(-" + 淫紋価格.ToString("#,0") + ")")
+                                {
+                                    si.Set(bre: false);
+                                }
+                                if (bs["衣装"].Pars.Values.First().ToPar().HitColor == hc && !(ip.SubInfoIm == GameText.衣装を変更しました) && !(ip.SubInfoIm == GameText.所持金が足りません))
+                                {
+                                    ip.SubInfoIm = GameText.衣装を変更します + "(-" + 衣装変更価格.ToString("#,0") + ")";
+                                }
+                                else if (ip.SubInfoIm == GameText.衣装を変更します + "(-" + 衣装変更価格.ToString("#,0") + ")")
+                                {
+                                    si.Set(bre: false);
+                                }
+                                if (bs["保守"].Pars.Values.First().ToPar().HitColor == hc && !(ip.SubInfoIm == GameText.奴隷を保守対象に設定しました) && !(ip.SubInfoIm == GameText.奴隷の保守設定を解除しました))
+                                {
+                                    ip.SubInfoIm = GameText.奴隷の保守設定を切り替えます;
+                                }
+                                else if (ip.SubInfoIm == GameText.奴隷の保守設定を切り替えます)
+                                {
+                                    si.Set(bre: false);
+                                }
+                                if (bs["一般労働"].Pars.Values.First().ToPar().HitColor == hc && !(ip.SubInfoIm == GameText.奴隷を一般労働に設定しました) && !(ip.SubInfoIm == GameText.奴隷の一般労働を解除しました))
+                                {
+                                    ip.SubInfoIm = GameText.奴隷の一般労働設定を切り替えます;
+                                }
+                                else if (ip.SubInfoIm == GameText.奴隷の一般労働設定を切り替えます)
+                                {
+                                    si.Set(bre: false);
+                                }
+                                if (bs["娼婦労働"].Pars.Values.First().ToPar().HitColor == hc && !(ip.SubInfoIm == GameText.奴隷を娼婦労働に設定しました) && !(ip.SubInfoIm == GameText.奴隷の娼婦労働を解除しました))
+                                {
+                                    ip.SubInfoIm = GameText.奴隷の娼婦労働設定を切り替えます;
+                                }
+                                else if (ip.SubInfoIm == GameText.奴隷の娼婦労働設定を切り替えます)
+                                {
+                                    si.Set(bre: false);
+                                }
+                                if (bs["売却"].Pars.Values.First().ToPar().HitColor == hc)
+                                {
+                                    ip.SubInfoIm = GameText.奴隷を売却します;
+                                }
+                                else if (ip.SubInfoIm == GameText.奴隷を売却します)
+                                {
+                                    si.Set(bre: false);
+                                }
+                                if (bs["全一般"].Pars.Values.First().ToPar().HitColor == hc && !(ip.SubInfoIm == GameText.労働可能な全ての奴隷に一般労働を設定しました))
+                                {
+                                    ip.SubInfoIm = GameText.労働可能な全ての奴隷を働かせます;
+                                }
+                                else if (ip.SubInfoIm == GameText.労働可能な全ての奴隷を働かせます)
+                                {
+                                    si.Set(bre: false);
+                                }
+                                if (bs["全娼婦"].Pars.Values.First().ToPar().HitColor == hc && !(ip.SubInfoIm == GameText.労働可能な全ての奴隷に娼婦労働を設定しました))
+                                {
+                                    ip.SubInfoIm = GameText.労働可能な全ての奴隷を娼婦として働かせます;
+                                }
+                                else if (ip.SubInfoIm == GameText.労働可能な全ての奴隷を娼婦として働かせます)
+                                {
+                                    si.Set(bre: false);
+                                }
+                                if (bs["全解除"].Pars.Values.First().ToPar().HitColor == hc && !(ip.SubInfoIm == GameText.労働中の全ての奴隷の労働を解除しました))
+                                {
+                                    ip.SubInfoIm = GameText.全ての奴隷の労働を解除します;
+                                }
+                                else if (ip.SubInfoIm == GameText.全ての奴隷の労働を解除します)
+                                {
+                                    si.Set(bre: false);
+                                }
+                                if (bs["全売却"].Pars.Values.First().ToPar().HitColor == hc && !ip.SubInfoIm.StartsWith(GameText.保守以外の全ての奴隷を売却しました) && !(ip.SubInfoIm == GameText.全売却をキャンセルしました))
+                                {
+                                    ip.SubInfoIm = GameText.保守以外の全ての奴隷を売却します;
+                                }
+                                else if (ip.SubInfoIm == GameText.保守以外の全ての奴隷を売却します)
+                                {
+                                    si.Set(bre: false);
+                                }
+                                Player説明(ref hc, delegate
+                                {
+                                    si.Set(bre: false);
+                                });
+                            }
+                            lv.Move(ref hc);
+                            ip.Move(ref hc);
+                        }
+                    },
+                    Leave = delegate
+                    {
+                        if (SDShow)
+                        {
+                            SaveData.Leave();
+                        }
+                        else
+                        {
+                            if (!ip.Mai2Show)
+                            {
+                                dbs.Leave();
+                                bs.Leave();
+                            }
+                            lv.Leave();
+                        }
+                    },
+                    Wheel = delegate (MouseButtons mb, Vector2D cp, int dt, Color hc)
+                    {
+                        int num2 = 0;
+                        using (IEnumerator<But> enumerator2 = bs.EnumBut.Skip(12).GetEnumerator())
+                        {
+                            while (enumerator2.MoveNext() && !(enumerator2.Current.Pars.Values.First().ToParT().PenColor == Color.Red))
+                            {
+                                num2++;
+                            }
+                        }
+                        int num3 = 0;
+                        using (IEnumerator<But> enumerator2 = lv.bs.EnumBut.GetEnumerator())
+                        {
+                            while (enumerator2.MoveNext() && !(enumerator2.Current.Pars.Values.First().ToParT().PenColor == Color.Red))
+                            {
+                                num3++;
+                            }
+                        }
+                        int num4 = num3 - dt.Sign();
+                        d = false;
+                        if (num4 < 0 && num2 > 0)
+                        {
+                            But but3 = bs["ボタン" + num2];
+                            but3.Action(but3);
+                            num4 = 14;
+                        }
+                        else if (num4 > 14 && num2 < Sta.GameData.フロア数 - 1)
+                        {
+                            But but4 = bs["ボタン" + (num2 + 2)];
+                            but4.Action(but4);
+                            num4 = 0;
+                        }
+                        d = true;
+                        But but5 = lv.bs[num4.Limit(0, 15).ToString()];
+                        but5.Action(but5);
+                        if (ip.Mai2Show)
+                        {
+                            if (Sta.GameData.TrainingTarget == null)
+                            {
+                                ip.Mai2Im = " ";
+                                ip.選択肢表示 = false;
+                            }
+                            else
+                            {
+                                d = false;
+                                bs["売却"].Action(bs["売却"]);
+                                d = true;
+                            }
+                        }
+                    },
+                    Setting = delegate
+                    {
+                        if (Med.Modeb != "PlayerInformation")
+                        {
+                            for (int j = 1; j <= 9; j++)
+                            {
+                                bs["ボタン" + j].Dra = false;
+                            }
+                            for (int k = 1; k <= Sta.GameData.フロア数; k++)
+                            {
+                                bs["ボタン" + k].Dra = true;
+                            }
+                            ip.UpdateSub2();
+                            ip.MaiShow = true;
+                            ip.Mai.Feed.Dra = false;
+                            ip.Mai2Show = false;
+                            ip.SubShow = true;
+                            ip.Sub2Show = true;
+                            d = false;
+                            Player.UI.ステート描画 = false;
+                            if (Sta.GameData.TrainingTarget != null)
+                            {
+                                But but = bs["ボタン" + (Sta.GameData.TrainingTarget.階層位置 + 1)];
+                                but.Action(but);
+                                lv縁色初期化();
+                                lv.bs[Sta.GameData.TrainingTarget.RoomNumber.ToString()].Pars.Values.First().ToParT().PenColor = Color.Red;
+                                bs["子"].Action(bs["子"]);
+                            }
+                            else
+                            {
+                                ip.TextIm = GameText.対象が設定されていません;
+                                階層選択(bs["ボタン" + (f / 15 + 1)], f);
+                                SetUI(null);
+                                int num = 0;
+                                using (IEnumerator<But> enumerator = lv.bs.EnumBut.GetEnumerator())
+                                {
+                                    while (enumerator.MoveNext() && !(enumerator.Current.Pars.Values.First().ToParT().PenColor == Color.Red))
+                                    {
+                                        num++;
+                                    }
+                                }
+                                But but2 = lv.bs[num.Limit(0, 15).ToString()];
+                                but2.Action(but2);
+                            }
+                            d = true;
+                            si.Set(bre: false);
+                            if (Sta.BigWindow)
+                            {
+                                npl.ParT.PositionBase = new Vector2D(0.095, 0.035);
+                            }
+                            else
+                            {
+                                npl.ParT.PositionBase = new Vector2D(ip.MaiB.Position.X, 0.026);
+                            }
+                        }
+                    },
+                    Draw = delegate (FPS FPS)
+                    {
+                        SwitchMode(Med, DrawBuffer, FPS, 対象描画);
+                    },
+                    Dispose = delegate
+                    {
+                        lv.Dispose();
+                        bs.Dispose();
+                    }
+                };
+
+                bs.Add("ボタン0", MyUI.Button2(Med, DrawBuffer, GameText.戻る, new Vector2D(0.85, 0.02), delegate
+                {
+                    ////Sounds.操作.Play();
+                    if (Sta.GameData.TrainingTarget != null && bs["子"].Pars.Values.First().ToParT().PenColor != Color.Red)
+                    {
+                        SetTrainingTarget(Med, Sta.GameData.TrainingTarget);
+                        SetUI(Sta.GameData.TrainingTarget);
+                    }
+                    Med.Mode = "メインフォーム";
+                }));
+
+                //TODO colors?
+                //parT2.PenColor = Color.Red;
+                bs.Add("子", MyUI.Button2(Med, DrawBuffer, GameText.子, new Vector2D(0.85, 0.1), delegate (But b)
     			{
     				if (d)
     				{
@@ -2223,7 +2513,7 @@ namespace SlaveMatrix
     				{
     					if (TrainingTarget == null || TrainingTarget.ChaD != Sta.GameData.TrainingTarget.ChaD)
     					{
-    						Set調教対象(Med, Sta.GameData.TrainingTarget);
+    						SetTrainingTarget(Med, Sta.GameData.TrainingTarget);
     					}
     					SetUI(Sta.GameData.TrainingTarget);
     					bs["胸施術"].Dra = Sta.GameData.施術 && !Sta.GameData.TrainingTarget.ChaD.胸施術 && Sta.GameData.TrainingTarget.ChaD.Is胸甲殻();
@@ -2232,22 +2522,8 @@ namespace SlaveMatrix
     					bs["衣装"].Dra = Sta.GameData.衣装 && Sta.GameData.TrainingTarget.Trained;
     				}
     			}));
-    			ParT parT3 = new ParT();
-    			parT3.Font = new Font("MS Gothic", 0.1f);
-    			parT3.PositionBase = DrawBuffer.GetPosition(0.85, 0.18);
-    			parT3.Text = GameText.親形質1;
-    			parT3.FontSize = 0.15;
-    			parT3.SizeBase = 0.05;
-    			parT3.OP.AddRange(new Out[1] { Shas.Get正方形() });
-    			parT3.OP.ScalingY(parT3.OP.GetCenter(), 0.47);
-    			parT3.OP.Rotation(parT3.OP.GetCenter(), -26.0);
-    			parT3.Closed = true;
-    			parT3.TextColor = Col.White;
-    			parT3.BrushColor = Color.FromArgb(160, Col.Black);
-    			parT3.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    			parT3.StringFormat.Alignment = StringAlignment.Center;
-    			parT3.StringFormat.LineAlignment = StringAlignment.Center;
-    			bs.Add("親形質1", new But1(parT3, delegate(But b)
+
+    			bs.Add("親形質1", MyUI.Button2(Med, DrawBuffer, GameText.親形質1, new Vector2D(0.85, 0.18), delegate(But b)
     			{
     				////Sounds.操作.Play();
     				bs縁色初期化();
@@ -2290,22 +2566,8 @@ namespace SlaveMatrix
     					bs["衣装"].Dra = false;
     				}
     			}));
-    			ParT parT4 = new ParT();
-    			parT4.Font = new Font("MS Gothic", 0.1f);
-    			parT4.PositionBase = DrawBuffer.GetPosition(0.85, 0.26);
-    			parT4.Text = GameText.親形質2;
-    			parT4.FontSize = 0.15;
-    			parT4.SizeBase = 0.05;
-    			parT4.OP.AddRange(new Out[1] { Shas.Get正方形() });
-    			parT4.OP.ScalingY(parT4.OP.GetCenter(), 0.47);
-    			parT4.OP.Rotation(parT4.OP.GetCenter(), -26.0);
-    			parT4.Closed = true;
-    			parT4.TextColor = Col.White;
-    			parT4.BrushColor = Color.FromArgb(160, Col.Black);
-    			parT4.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    			parT4.StringFormat.Alignment = StringAlignment.Center;
-    			parT4.StringFormat.LineAlignment = StringAlignment.Center;
-    			bs.Add("親形質2", new But1(parT4, delegate(But b)
+
+    			bs.Add("親形質2", MyUI.Button2(Med, DrawBuffer, GameText.親形質2, new Vector2D(0.85, 0.26), delegate(But b)
     			{
     				////Sounds.操作.Play();
     				bs縁色初期化();
@@ -2348,22 +2610,8 @@ namespace SlaveMatrix
     					bs["衣装"].Dra = false;
     				}
     			}));
-    			ParT parT5 = new ParT();
-    			parT5.Font = new Font("MS Gothic", 0.1f);
-    			parT5.PositionBase = DrawBuffer.GetPosition(0.85, 0.34);
-    			parT5.Text = GameText.保守;
-    			parT5.FontSize = 0.15;
-    			parT5.SizeBase = 0.05;
-    			parT5.OP.AddRange(new Out[1] { Shas.Get正方形() });
-    			parT5.OP.ScalingY(parT5.OP.GetCenter(), 0.47);
-    			parT5.OP.Rotation(parT5.OP.GetCenter(), -26.0);
-    			parT5.Closed = true;
-    			parT5.TextColor = Col.White;
-    			parT5.BrushColor = Color.FromArgb(160, Col.Black);
-    			parT5.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    			parT5.StringFormat.Alignment = StringAlignment.Center;
-    			parT5.StringFormat.LineAlignment = StringAlignment.Center;
-    			bs.Add("保守", new But1(parT5, delegate(But b)
+
+    			bs.Add("保守", MyUI.Button2(Med, DrawBuffer, GameText.保守, new Vector2D(0.85, 0.34), delegate(But b)
     			{
     				////Sounds.操作.Play();
     				if (Sta.GameData.TrainingTarget != null)
@@ -2374,22 +2622,8 @@ namespace SlaveMatrix
     					ip.SubInfoIm = (Sta.GameData.TrainingTarget.保守 ? GameText.奴隷を保守対象に設定しました : GameText.奴隷の保守設定を解除しました);
     				}
     			}));
-    			ParT parT6 = new ParT();
-    			parT6.Font = new Font("MS Gothic", 0.1f);
-    			parT6.PositionBase = DrawBuffer.GetPosition(0.85, 0.42);
-    			parT6.Text = GameText.一般労働;
-    			parT6.FontSize = 0.15;
-    			parT6.SizeBase = 0.05;
-    			parT6.OP.AddRange(new Out[1] { Shas.Get正方形() });
-    			parT6.OP.ScalingY(parT6.OP.GetCenter(), 0.47);
-    			parT6.OP.Rotation(parT6.OP.GetCenter(), -26.0);
-    			parT6.Closed = true;
-    			parT6.TextColor = Col.White;
-    			parT6.BrushColor = Color.FromArgb(160, Col.Black);
-    			parT6.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    			parT6.StringFormat.Alignment = StringAlignment.Center;
-    			parT6.StringFormat.LineAlignment = StringAlignment.Center;
-    			bs.Add("一般労働", new But1(parT6, delegate(But b)
+
+    			bs.Add("一般労働", MyUI.Button2(Med, DrawBuffer, GameText.一般労働, new Vector2D(0.85, 0.42), delegate(But b)
     			{
     				////Sounds.操作.Play();
     				if (Sta.GameData.TrainingTarget != null)
@@ -2404,22 +2638,8 @@ namespace SlaveMatrix
     					ip.SubInfoIm = (Sta.GameData.TrainingTarget.Laboror ? GameText.奴隷を一般労働に設定しました : GameText.奴隷の一般労働を解除しました);
     				}
     			}));
-    			ParT parT7 = new ParT();
-    			parT7.Font = new Font("MS Gothic", 0.1f);
-    			parT7.PositionBase = DrawBuffer.GetPosition(0.85, 0.5);
-    			parT7.Text = GameText.娼婦労働;
-    			parT7.FontSize = 0.15;
-    			parT7.SizeBase = 0.05;
-    			parT7.OP.AddRange(new Out[1] { Shas.Get正方形() });
-    			parT7.OP.ScalingY(parT7.OP.GetCenter(), 0.47);
-    			parT7.OP.Rotation(parT7.OP.GetCenter(), -26.0);
-    			parT7.Closed = true;
-    			parT7.TextColor = Col.White;
-    			parT7.BrushColor = Color.FromArgb(160, Col.Black);
-    			parT7.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    			parT7.StringFormat.Alignment = StringAlignment.Center;
-    			parT7.StringFormat.LineAlignment = StringAlignment.Center;
-    			bs.Add("娼婦労働", new But1(parT7, delegate(But b)
+
+    			bs.Add("娼婦労働", MyUI.Button2(Med, DrawBuffer, GameText.娼婦労働, new Vector2D(0.85, 0.5), delegate (But b)
     			{
     				////Sounds.操作.Play();
     				if (Sta.GameData.TrainingTarget != null)
@@ -2434,22 +2654,8 @@ namespace SlaveMatrix
     					ip.SubInfoIm = (Sta.GameData.TrainingTarget.Prostitute ? GameText.奴隷を娼婦労働に設定しました : GameText.奴隷の娼婦労働を解除しました);
     				}
     			}));
-    			ParT parT8 = new ParT();
-    			parT8.Font = new Font("MS Gothic", 0.1f);
-    			parT8.PositionBase = DrawBuffer.GetPosition(0.75, 0.405);
-    			parT8.Text = GameText.全一般;
-    			parT8.FontSize = 0.15;
-    			parT8.SizeBase = 0.05;
-    			parT8.OP.AddRange(new Out[1] { Shas.Get正方形() });
-    			parT8.OP.ScalingY(parT8.OP.GetCenter(), 0.47);
-    			parT8.OP.Rotation(parT8.OP.GetCenter(), -26.0);
-    			parT8.Closed = true;
-    			parT8.TextColor = Col.White;
-    			parT8.BrushColor = Color.FromArgb(160, Col.Black);
-    			parT8.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    			parT8.StringFormat.Alignment = StringAlignment.Center;
-    			parT8.StringFormat.LineAlignment = StringAlignment.Center;
-    			bs.Add("全一般", new But1(parT8, delegate
+    			
+                bs.Add("全一般", MyUI.Button2(Med, DrawBuffer, GameText.全一般, new Vector2D(0.75, 0.405), delegate
     			{
     				////Sounds.操作.Play();
     				if (Sta.GameData.TrainingTarget != null)
@@ -2468,22 +2674,8 @@ namespace SlaveMatrix
     				}
     				ip.SubInfoIm = GameText.労働可能な全ての奴隷に一般労働を設定しました;
     			}));
-    			ParT parT9 = new ParT();
-    			parT9.Font = new Font("MS Gothic", 0.1f);
-    			parT9.PositionBase = DrawBuffer.GetPosition(0.75, 0.485);
-    			parT9.Text = GameText.全娼婦;
-    			parT9.FontSize = 0.15;
-    			parT9.SizeBase = 0.05;
-    			parT9.OP.AddRange(new Out[1] { Shas.Get正方形() });
-    			parT9.OP.ScalingY(parT9.OP.GetCenter(), 0.47);
-    			parT9.OP.Rotation(parT9.OP.GetCenter(), -26.0);
-    			parT9.Closed = true;
-    			parT9.TextColor = Col.White;
-    			parT9.BrushColor = Color.FromArgb(160, Col.Black);
-    			parT9.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    			parT9.StringFormat.Alignment = StringAlignment.Center;
-    			parT9.StringFormat.LineAlignment = StringAlignment.Center;
-    			bs.Add("全娼婦", new But1(parT9, delegate
+
+    			bs.Add("全娼婦", MyUI.Button2(Med, DrawBuffer, GameText.全娼婦, new Vector2D(0.75, 0.485), delegate
     			{
     				////Sounds.操作.Play();
     				if (Sta.GameData.TrainingTarget != null)
@@ -2502,22 +2694,8 @@ namespace SlaveMatrix
     				}
     				ip.SubInfoIm = GameText.労働可能な全ての奴隷に娼婦労働を設定しました;
     			}));
-    			ParT parT10 = new ParT();
-    			parT10.Font = new Font("MS Gothic", 0.1f);
-    			parT10.PositionBase = DrawBuffer.GetPosition(0.75, 0.565);
-    			parT10.Text = GameText.全解除;
-    			parT10.FontSize = 0.15;
-    			parT10.SizeBase = 0.05;
-    			parT10.OP.AddRange(new Out[1] { Shas.Get正方形() });
-    			parT10.OP.ScalingY(parT10.OP.GetCenter(), 0.47);
-    			parT10.OP.Rotation(parT10.OP.GetCenter(), -26.0);
-    			parT10.Closed = true;
-    			parT10.TextColor = Col.White;
-    			parT10.BrushColor = Color.FromArgb(160, Col.Black);
-    			parT10.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    			parT10.StringFormat.Alignment = StringAlignment.Center;
-    			parT10.StringFormat.LineAlignment = StringAlignment.Center;
-    			bs.Add("全解除", new But1(parT10, delegate
+
+    			bs.Add("全解除", MyUI.Button2(Med, DrawBuffer, GameText.全解除, new Vector2D(0.75, 0.565), delegate
     			{
     				////Sounds.操作.Play();
     				if (Sta.GameData.TrainingTarget != null)
@@ -2536,22 +2714,8 @@ namespace SlaveMatrix
     				}
     				ip.SubInfoIm = GameText.労働中の全ての奴隷の労働を解除しました;
     			}));
-    			ParT parT11 = new ParT();
-    			parT11.Font = new Font("MS Gothic", 0.1f);
-    			parT11.PositionBase = DrawBuffer.GetPosition(0.85, 0.58);
-    			parT11.Text = GameText.売却;
-    			parT11.FontSize = 0.15;
-    			parT11.SizeBase = 0.05;
-    			parT11.OP.AddRange(new Out[1] { Shas.Get正方形() });
-    			parT11.OP.ScalingY(parT11.OP.GetCenter(), 0.47);
-    			parT11.OP.Rotation(parT11.OP.GetCenter(), -26.0);
-    			parT11.Closed = true;
-    			parT11.TextColor = Col.White;
-    			parT11.BrushColor = Color.FromArgb(160, Col.Black);
-    			parT11.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    			parT11.StringFormat.Alignment = StringAlignment.Center;
-    			parT11.StringFormat.LineAlignment = StringAlignment.Center;
-    			bs.Add("売却", new But1(parT11, delegate
+
+    			bs.Add("売却", MyUI.Button2(Med, DrawBuffer, GameText.売却, new Vector2D(0.85, 0.58), delegate
     			{
     				if (d)
     				{
@@ -2569,7 +2733,7 @@ namespace SlaveMatrix
     					Color HitColor4 = Col.Empty;
     					bs.Move(ref HitColor4);
     					ulong price = Sta.GameData.TrainingTarget.GetPrice();
-    					Sta.GameData.所持金 = Sta.GameData.所持金.加算(price);
+    					Sta.GameData.所持金 = Sta.GameData.所持金.overflow_add(price);
     					//Sounds.精算.Play();
     					ip.UpdateSub2();
     					for (int m = 0; m < Sta.GameData.Slaves.Length; m++)
@@ -2619,22 +2783,8 @@ namespace SlaveMatrix
     				};
     				ip.選択肢表示 = !Sta.GameData.TrainingTarget.保守;
     			}));
-    			ParT parT12 = new ParT();
-    			parT12.Font = new Font("MS Gothic", 0.1f);
-    			parT12.PositionBase = DrawBuffer.GetPosition(0.75, 0.645);
-    			parT12.Text = GameText.全売却;
-    			parT12.FontSize = 0.15;
-    			parT12.SizeBase = 0.05;
-    			parT12.OP.AddRange(new Out[1] { Shas.Get正方形() });
-    			parT12.OP.ScalingY(parT12.OP.GetCenter(), 0.47);
-    			parT12.OP.Rotation(parT12.OP.GetCenter(), -26.0);
-    			parT12.Closed = true;
-    			parT12.TextColor = Col.White;
-    			parT12.BrushColor = Color.FromArgb(160, Col.Black);
-    			parT12.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    			parT12.StringFormat.Alignment = StringAlignment.Center;
-    			parT12.StringFormat.LineAlignment = StringAlignment.Center;
-    			bs.Add("全売却", new But1(parT12, delegate
+
+    			bs.Add("全売却", MyUI.Button2(Med, DrawBuffer, GameText.全売却, new Vector2D(0.75, 0.645), delegate
     			{
     				//Sounds.操作.Play();
     				string tb = ip.TextIm;
@@ -2646,7 +2796,7 @@ namespace SlaveMatrix
     					Color HitColor2 = Col.Empty;
     					bs.Move(ref HitColor2);
     					ip.Mai2Show = false;
-    					Sta.GameData.所持金 = Sta.GameData.所持金.加算(p);
+    					Sta.GameData.所持金 = Sta.GameData.所持金.overflow_add(p);
                         //TODO fix?
                         ////Sounds.精算.Play();
     					ip.UpdateSub2();
@@ -2671,8 +2821,8 @@ namespace SlaveMatrix
     						}
     						else if (Sta.AlwaysUseName)
     						{
-    							setName();
-    						}
+                                npl.Text = GameText.収容番号 + Sta.GameData.TrainingTarget.Number + "\r\n" + Sta.GameData.TrainingTarget.Name;
+                            }
     						else
     						{
     							npl.Text = GameText.収容番号 + Sta.GameData.TrainingTarget.Number + (Sta.GameData.TrainingTarget.Trained ? ("\r\n" + Sta.GameData.TrainingTarget.Name) : Sta.GameData.TrainingTarget.Race);
@@ -2695,35 +2845,15 @@ namespace SlaveMatrix
     				};
     				ip.選択肢表示 = true;
     			}));
-    			Color f初期縁色 = Col.Black;
-    			Action f縁色初期化 = delegate
-    			{
-    				foreach (But item3 in bs.EnumBut.Skip(10))
-    				{
-    					item3.Pars.Values.First().ToParT().PenColor = f初期縁色;
-    				}
-    			};
-    			Action<But, int> 階層選択 = delegate(But b, int o)
-    			{
-    				f縁色初期化();
-    				b.Pars.Values.First().ToParT().PenColor = Color.Red;
-    				set(o);
-    			};
-    			Action 部屋選択 = delegate
-    			{
-    				lv縁色初期化();
-    				if (Sta.GameData.TrainingTarget != null && f == Sta.GameData.TrainingTarget.階層位置 * 15)
-    				{
-    					lv.bs[Sta.GameData.TrainingTarget.RoomNumber.ToString()].Pars.Values.First().ToParT().PenColor = Color.Red;
-    				}
-    			};
+
+
     			ParT parT13 = new ParT();
     			parT13.Font = new Font("MS Gothic", 0.1f);
     			parT13.PositionBase = DrawBuffer.GetPosition(0.03, 0.03);
     			parT13.Text = "1F";
     			parT13.FontSize = 0.15;
     			parT13.SizeBase = 0.05;
-    			parT13.OP.AddRange(new Out[1] { Shas.Get正方形() });
+    			parT13.OP.AddRange(new Out[1] { Shas.GetSquare() });
     			parT13.BasePointBase = parT13.OP.GetCenter();
     			parT13.OP.ScalingXY(parT13.BasePointBase, 0.3);
     			parT13.Closed = true;
@@ -2742,13 +2872,15 @@ namespace SlaveMatrix
     				階層選択(b, f = 0);
     				部屋選択();
     			}));
+
+
     			ParT parT14 = new ParT();
     			parT14.Font = new Font("MS Gothic", 0.1f);
     			parT14.PositionBase = DrawBuffer.GetPosition(0.07, 0.03);
     			parT14.Text = "2F";
     			parT14.FontSize = 0.15;
     			parT14.SizeBase = 0.05;
-    			parT14.OP.AddRange(new Out[1] { Shas.Get正方形() });
+    			parT14.OP.AddRange(new Out[1] { Shas.GetSquare() });
     			parT14.BasePointBase = parT14.OP.GetCenter();
     			parT14.OP.ScalingXY(parT14.BasePointBase, 0.3);
     			parT14.Closed = true;
@@ -2772,7 +2904,7 @@ namespace SlaveMatrix
     			parT15.Text = "3F";
     			parT15.FontSize = 0.15;
     			parT15.SizeBase = 0.05;
-    			parT15.OP.AddRange(new Out[1] { Shas.Get正方形() });
+    			parT15.OP.AddRange(new Out[1] { Shas.GetSquare() });
     			parT15.BasePointBase = parT15.OP.GetCenter();
     			parT15.OP.ScalingXY(parT15.BasePointBase, 0.3);
     			parT15.Closed = true;
@@ -2796,7 +2928,7 @@ namespace SlaveMatrix
     			parT16.Text = "4F";
     			parT16.FontSize = 0.15;
     			parT16.SizeBase = 0.05;
-    			parT16.OP.AddRange(new Out[1] { Shas.Get正方形() });
+    			parT16.OP.AddRange(new Out[1] { Shas.GetSquare() });
     			parT16.BasePointBase = parT16.OP.GetCenter();
     			parT16.OP.ScalingXY(parT16.BasePointBase, 0.3);
     			parT16.Closed = true;
@@ -2820,7 +2952,7 @@ namespace SlaveMatrix
     			parT17.Text = "5F";
     			parT17.FontSize = 0.15;
     			parT17.SizeBase = 0.05;
-    			parT17.OP.AddRange(new Out[1] { Shas.Get正方形() });
+    			parT17.OP.AddRange(new Out[1] { Shas.GetSquare() });
     			parT17.BasePointBase = parT17.OP.GetCenter();
     			parT17.OP.ScalingXY(parT17.BasePointBase, 0.3);
     			parT17.Closed = true;
@@ -2844,7 +2976,7 @@ namespace SlaveMatrix
     			parT18.Text = "6F";
     			parT18.FontSize = 0.15;
     			parT18.SizeBase = 0.05;
-    			parT18.OP.AddRange(new Out[1] { Shas.Get正方形() });
+    			parT18.OP.AddRange(new Out[1] { Shas.GetSquare() });
     			parT18.BasePointBase = parT18.OP.GetCenter();
     			parT18.OP.ScalingXY(parT18.BasePointBase, 0.3);
     			parT18.Closed = true;
@@ -2868,7 +3000,7 @@ namespace SlaveMatrix
     			parT19.Text = "7F";
     			parT19.FontSize = 0.15;
     			parT19.SizeBase = 0.05;
-    			parT19.OP.AddRange(new Out[1] { Shas.Get正方形() });
+    			parT19.OP.AddRange(new Out[1] { Shas.GetSquare() });
     			parT19.BasePointBase = parT19.OP.GetCenter();
     			parT19.OP.ScalingXY(parT19.BasePointBase, 0.3);
     			parT19.Closed = true;
@@ -2892,7 +3024,7 @@ namespace SlaveMatrix
     			parT20.Text = "8F";
     			parT20.FontSize = 0.15;
     			parT20.SizeBase = 0.05;
-    			parT20.OP.AddRange(new Out[1] { Shas.Get正方形() });
+    			parT20.OP.AddRange(new Out[1] { Shas.GetSquare() });
     			parT20.BasePointBase = parT20.OP.GetCenter();
     			parT20.OP.ScalingXY(parT20.BasePointBase, 0.3);
     			parT20.Closed = true;
@@ -2916,7 +3048,7 @@ namespace SlaveMatrix
     			parT21.Text = "9F";
     			parT21.FontSize = 0.15;
     			parT21.SizeBase = 0.05;
-    			parT21.OP.AddRange(new Out[1] { Shas.Get正方形() });
+    			parT21.OP.AddRange(new Out[1] { Shas.GetSquare() });
     			parT21.BasePointBase = parT21.OP.GetCenter();
     			parT21.OP.ScalingXY(parT21.BasePointBase, 0.3);
     			parT21.Closed = true;
@@ -2934,22 +3066,12 @@ namespace SlaveMatrix
     				階層選択(b, f = 120);
     				部屋選択();
     			}));
-    			ParT parT22 = new ParT();
-    			parT22.Font = new Font("MS Gothic", 0.1f);
-    			parT22.PositionBase = DrawBuffer.GetPosition(0.75, 0.085);
-    			parT22.Text = GameText.胸施術;
-    			parT22.FontSize = 0.15;
-    			parT22.SizeBase = 0.05;
-    			parT22.OP.AddRange(new Out[1] { Shas.Get正方形() });
-    			parT22.OP.ScalingY(parT8.OP.GetCenter(), 0.47);
-    			parT22.OP.Rotation(parT8.OP.GetCenter(), -26.0);
-    			parT22.Closed = true;
-    			parT22.TextColor = Col.White;
-    			parT22.BrushColor = Color.FromArgb(160, Col.Black);
-    			parT22.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    			parT22.StringFormat.Alignment = StringAlignment.Center;
-    			parT22.StringFormat.LineAlignment = StringAlignment.Center;
-    			bs.Add("胸施術", new But1(parT22, delegate
+
+
+                //TODO figure out what this did
+    			//parT22.OP.ScalingY(parT8.OP.GetCenter(), 0.47);
+    			//parT22.OP.Rotation(parT8.OP.GetCenter(), -26.0);
+    			bs.Add("胸施術", MyUI.Button2(Med, DrawBuffer, GameText.胸施術, new Vector2D(0.75, 0.085), delegate
     			{
     				if (Sta.GameData.所持金 < 胸施術価格)
     				{
@@ -2987,22 +3109,11 @@ namespace SlaveMatrix
     					}
     				}
     			}));
-    			ParT parT23 = new ParT();
-    			parT23.Font = new Font("MS Gothic", 0.1f);
-    			parT23.PositionBase = DrawBuffer.GetPosition(0.75, 0.165);
-    			parT23.Text = GameText.股施術;
-    			parT23.FontSize = 0.15;
-    			parT23.SizeBase = 0.05;
-    			parT23.OP.AddRange(new Out[1] { Shas.Get正方形() });
-    			parT23.OP.ScalingY(parT8.OP.GetCenter(), 0.47);
-    			parT23.OP.Rotation(parT8.OP.GetCenter(), -26.0);
-    			parT23.Closed = true;
-    			parT23.TextColor = Col.White;
-    			parT23.BrushColor = Color.FromArgb(160, Col.Black);
-    			parT23.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    			parT23.StringFormat.Alignment = StringAlignment.Center;
-    			parT23.StringFormat.LineAlignment = StringAlignment.Center;
-    			bs.Add("股施術", new But1(parT23, delegate
+
+
+    			//parT23.OP.ScalingY(parT8.OP.GetCenter(), 0.47);
+    			//parT23.OP.Rotation(parT8.OP.GetCenter(), -26.0);
+    			bs.Add("股施術", MyUI.Button2(Med, DrawBuffer, GameText.股施術, new Vector2D(0.75, 0.165), delegate
     			{
     				if (Sta.GameData.所持金 < 股施術価格)
     				{
@@ -3039,22 +3150,10 @@ namespace SlaveMatrix
     					}
     				}
     			}));
-    			ParT parT24 = new ParT();
-    			parT24.Font = new Font("MS Gothic", 0.1f);
-    			parT24.PositionBase = DrawBuffer.GetPosition(0.75, 0.245);
-    			parT24.Text = GameText.淫紋;
-    			parT24.FontSize = 0.15;
-    			parT24.SizeBase = 0.05;
-    			parT24.OP.AddRange(new Out[1] { Shas.Get正方形() });
-    			parT24.OP.ScalingY(parT8.OP.GetCenter(), 0.47);
-    			parT24.OP.Rotation(parT8.OP.GetCenter(), -26.0);
-    			parT24.Closed = true;
-    			parT24.TextColor = Col.White;
-    			parT24.BrushColor = Color.FromArgb(160, Col.Black);
-    			parT24.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    			parT24.StringFormat.Alignment = StringAlignment.Center;
-    			parT24.StringFormat.LineAlignment = StringAlignment.Center;
-    			bs.Add("淫紋", new But1(parT24, delegate
+
+    			//parT24.OP.ScalingY(parT8.OP.GetCenter(), 0.47);
+    			//parT24.OP.Rotation(parT8.OP.GetCenter(), -26.0);
+    			bs.Add("淫紋", MyUI.Button2(Med, DrawBuffer, GameText.淫紋, new Vector2D(0.75, 0.245), delegate
     			{
     				if (Sta.GameData.所持金 < 淫紋価格)
     				{
@@ -3092,22 +3191,10 @@ namespace SlaveMatrix
     					}
     				}
     			}));
-    			ParT parT25 = new ParT();
-    			parT25.Font = new Font("MS Gothic", 0.1f);
-    			parT25.PositionBase = DrawBuffer.GetPosition(0.75, 0.325);
-    			parT25.Text = GameText.衣装;
-    			parT25.FontSize = 0.15;
-    			parT25.SizeBase = 0.05;
-    			parT25.OP.AddRange(new Out[1] { Shas.Get正方形() });
-    			parT25.OP.ScalingY(parT9.OP.GetCenter(), 0.47);
-    			parT25.OP.Rotation(parT9.OP.GetCenter(), -26.0);
-    			parT25.Closed = true;
-    			parT25.TextColor = Col.White;
-    			parT25.BrushColor = Color.FromArgb(160, Col.Black);
-    			parT25.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    			parT25.StringFormat.Alignment = StringAlignment.Center;
-    			parT25.StringFormat.LineAlignment = StringAlignment.Center;
-    			bs.Add("衣装", new But1(parT25, delegate
+
+    			//parT25.OP.ScalingY(parT9.OP.GetCenter(), 0.47);
+    			//parT25.OP.Rotation(parT9.OP.GetCenter(), -26.0);
+    			bs.Add("衣装", MyUI.Button2(Med, DrawBuffer, GameText.衣装, new Vector2D(0.75, 0.325), delegate
     			{
     				if (Sta.GameData.所持金 < 衣装変更価格)
     				{
@@ -3140,362 +3227,101 @@ namespace SlaveMatrix
     					}
     				}
     			}));
-    			bs.Add("MoveRoomDown", MoveRoomDownButton(mod));
-    			bs.Add("MoveRoomUp", MoveRoomUpButton(mod));
-    			bs.Add("MoveFloorDown", MoveFloorDownButton(mod));
-    			bs.Add("MoveFloorUp", MoveFloorUpButton(mod));
+
+                bs.Add("MoveRoomDown", MyUI.Button(Med, DrawBuffer, "Room ▼", Sta.BigWindow ? new Vector2D(0.146, 0.14) : new Vector2D(0.195, 0.1625), delegate
+                    {
+                        //Sounds.操作.Play();
+                        MoveRoomDown();
+                        mod.Setting();
+                        if (Sta.AlwaysUseName)
+                        {
+                            npl.Text = GameText.収容番号 + Sta.GameData.TrainingTarget.Number + "\r\n" + Sta.GameData.TrainingTarget.Name;
+                        }
+                        else
+                        {
+                            npl.Text = GameText.収容番号 + Sta.GameData.TrainingTarget.Number + (Sta.GameData.TrainingTarget.Trained ? ("\r\n" + Sta.GameData.TrainingTarget.Name) : ("\r\n" + Sta.GameData.TrainingTarget.Race));
+                        }
+                    }));
+
+                bs.Add("MoveRoomUp", MyUI.Button(Med, DrawBuffer, "Room ▲", Sta.BigWindow ? new Vector2D(0.146, 0.11) : new Vector2D(0.195, 0.12), delegate
+                    {
+                        //Sounds.操作.Play();
+                        MoveRoomUp();
+                        mod.Setting();
+                        if (Sta.AlwaysUseName)
+                        {
+                            npl.Text = GameText.収容番号 + Sta.GameData.TrainingTarget.Number + "\r\n" + Sta.GameData.TrainingTarget.Name;
+                        }
+                        else
+                        {
+                            npl.Text = GameText.収容番号 + Sta.GameData.TrainingTarget.Number + (Sta.GameData.TrainingTarget.Trained ? ("\r\n" + Sta.GameData.TrainingTarget.Name) : ("\r\n" + Sta.GameData.TrainingTarget.Race));
+                        }
+                    }));
+                
+                bs.Add("MoveFloorDown", MyUI.Button(Med, DrawBuffer, "Floor ▼", Sta.BigWindow ? new Vector2D(0.146, 0.2) : new Vector2D(0.195, 0.2475), delegate
+                    {
+                        //Sounds.操作.Play();
+                        MoveFloorDown();
+                        mod.Setting();
+                        if (Sta.AlwaysUseName)
+                        {
+                            npl.Text = GameText.収容番号 + Sta.GameData.TrainingTarget.Number + "\r\n" + Sta.GameData.TrainingTarget.Name;
+                        }
+                        else
+                        {
+                            npl.Text = GameText.収容番号 + Sta.GameData.TrainingTarget.Number + (Sta.GameData.TrainingTarget.Trained ? ("\r\n" + Sta.GameData.TrainingTarget.Name) : ("\r\n" + Sta.GameData.TrainingTarget.Race));
+                        }
+                    }));
+
+                bs.Add("MoveFloorUp", MyUI.Button(Med, DrawBuffer, "Floor ▲", Sta.BigWindow ? new Vector2D(0.146, 0.17) : new Vector2D(0.195, 0.205), delegate
+                    {
+                        //Sounds.操作.Play();
+                        MoveFloorUp();
+                        mod.Setting();
+                        if (Sta.AlwaysUseName)
+                        {
+                            npl.Text = GameText.収容番号 + Sta.GameData.TrainingTarget.Number + "\r\n" + Sta.GameData.TrainingTarget.Name;
+                        }
+                        else
+                        {
+                            npl.Text = GameText.収容番号 + Sta.GameData.TrainingTarget.Number + (Sta.GameData.TrainingTarget.Trained ? ("\r\n" + Sta.GameData.TrainingTarget.Name) : ("\r\n" + Sta.GameData.TrainingTarget.Race));
+                        }
+                    }));
+
     			bs.SetHitColor(Med);
-    			mod.Down = delegate(MouseButtons mb, Vector2D cp, Color hc)
-    			{
-    				if (!processing)
-    				{
-    					if (SDShow)
-    					{
-    						SaveData.Down(ref hc);
-    						if (mb == MouseButtons.Right && !processing)
-    						{
-                                //TODO fix?
-                                //Sounds.操作.Play();
-    							SDShow = false;
-    							ip.Up(ref hc);
-    							dbs.Move(ref hc);
-    						}
-    					}
-    					else
-    					{
-    						switch (mb)
-    						{
-    						case MouseButtons.Left:
-    							if (!ip.Mai2Show)
-    							{
-    								dbs.Down(ref hc);
-    								bs.Down(ref hc);
-    							}
-    							lv.Down(ref hc);
-    							ip.Down(ref hc);
-    							break;
-    						case MouseButtons.Right:
-    							if (!ip.Mai2Show)
-    							{
-    								bs["ボタン0"].Action(bs["ボタン0"]);
-    							}
-    							else
-    							{
-    								ip.nb.Action(ip.nb);
-    							}
-    							break;
-    						}
-    					}
-    				}
-    			};
-    			mod.Up = delegate(MouseButtons mb, Vector2D cp, Color hc)
-    			{
-    				if (!processing)
-    				{
-    					if (SDShow)
-    					{
-    						SaveData.Up(ref hc);
-    					}
-    					else if (mb == MouseButtons.Left)
-    					{
-    						if (!ip.Mai2Show)
-    						{
-    							dbs.Up(ref hc);
-    							bs.Up(ref hc);
-    						}
-    						lv.Up(ref hc);
-    						ip.Up(ref hc);
-    					}
-    				}
-    			};
-    			mod.Move = delegate(MouseButtons mb, Vector2D cp, Color hc)
-    			{
-    				if (!processing)
-    				{
-    					if (SDShow)
-    					{
-    						SaveData.Move(ref hc);
-    					}
-    					else
-    					{
-    						if (!ip.Mai2Show)
-    						{
-    							dbs.Move(ref hc);
-    							bs.Move(ref hc);
-    							if (bs["胸施術"].Pars.Values.First().ToPar().HitColor == hc && !(ip.SubInfoIm == GameText.胸の甲殻を切除しました) && !(ip.SubInfoIm == GameText.所持金が足りません))
-    							{
-    								ip.SubInfoIm = GameText.胸の甲殻を切除します + "(-" + 胸施術価格.ToString("#,0") + ")";
-    							}
-    							else if (ip.SubInfoIm == GameText.胸の甲殻を切除します + "(-" + 胸施術価格.ToString("#,0") + ")")
-    							{
-    								si.Set(bre: false);
-    							}
-    							if (TrainingTarget != null)
-    							{
-    								if (bs["股施術"].Pars.Values.First().ToPar().HitColor == hc && !(ip.SubInfoIm == GameText.股の + (TrainingTarget.Bod.Is蛇 ? GameText.鱗 : GameText.甲殻) + GameText.を切除しました) && !(ip.SubInfoIm == GameText.所持金が足りません))
-    								{
-    									ip.SubInfoIm = GameText.股の + (TrainingTarget.Bod.Is蛇 ? GameText.鱗 : GameText.甲殻) + GameText.を切除します + "(-" + 股施術価格.ToString("#,0") + ")";
-    								}
-    								else if (ip.SubInfoIm == GameText.股の + (TrainingTarget.Bod.Is蛇 ? GameText.鱗 : GameText.甲殻) + GameText.を切除します + "(-" + 股施術価格.ToString("#,0") + ")")
-    								{
-    									si.Set(bre: false);
-    								}
-    							}
-    							if (bs["淫紋"].Pars.Values.First().ToPar().HitColor == hc && !(ip.SubInfoIm == GameText.淫紋を刻みました) && !(ip.SubInfoIm == GameText.所持金が足りません))
-    							{
-    								ip.SubInfoIm = GameText.淫紋を刻みます + "(-" + 淫紋価格.ToString("#,0") + ")";
-    							}
-    							else if (ip.SubInfoIm == GameText.淫紋を刻みます + "(-" + 淫紋価格.ToString("#,0") + ")")
-    							{
-    								si.Set(bre: false);
-    							}
-    							if (bs["衣装"].Pars.Values.First().ToPar().HitColor == hc && !(ip.SubInfoIm == GameText.衣装を変更しました) && !(ip.SubInfoIm == GameText.所持金が足りません))
-    							{
-    								ip.SubInfoIm = GameText.衣装を変更します + "(-" + 衣装変更価格.ToString("#,0") + ")";
-    							}
-    							else if (ip.SubInfoIm == GameText.衣装を変更します + "(-" + 衣装変更価格.ToString("#,0") + ")")
-    							{
-    								si.Set(bre: false);
-    							}
-    							if (bs["保守"].Pars.Values.First().ToPar().HitColor == hc && !(ip.SubInfoIm == GameText.奴隷を保守対象に設定しました) && !(ip.SubInfoIm == GameText.奴隷の保守設定を解除しました))
-    							{
-    								ip.SubInfoIm = GameText.奴隷の保守設定を切り替えます;
-    							}
-    							else if (ip.SubInfoIm == GameText.奴隷の保守設定を切り替えます)
-    							{
-    								si.Set(bre: false);
-    							}
-    							if (bs["一般労働"].Pars.Values.First().ToPar().HitColor == hc && !(ip.SubInfoIm == GameText.奴隷を一般労働に設定しました) && !(ip.SubInfoIm == GameText.奴隷の一般労働を解除しました))
-    							{
-    								ip.SubInfoIm = GameText.奴隷の一般労働設定を切り替えます;
-    							}
-    							else if (ip.SubInfoIm == GameText.奴隷の一般労働設定を切り替えます)
-    							{
-    								si.Set(bre: false);
-    							}
-    							if (bs["娼婦労働"].Pars.Values.First().ToPar().HitColor == hc && !(ip.SubInfoIm == GameText.奴隷を娼婦労働に設定しました) && !(ip.SubInfoIm == GameText.奴隷の娼婦労働を解除しました))
-    							{
-    								ip.SubInfoIm = GameText.奴隷の娼婦労働設定を切り替えます;
-    							}
-    							else if (ip.SubInfoIm == GameText.奴隷の娼婦労働設定を切り替えます)
-    							{
-    								si.Set(bre: false);
-    							}
-    							if (bs["売却"].Pars.Values.First().ToPar().HitColor == hc)
-    							{
-    								ip.SubInfoIm = GameText.奴隷を売却します;
-    							}
-    							else if (ip.SubInfoIm == GameText.奴隷を売却します)
-    							{
-    								si.Set(bre: false);
-    							}
-    							if (bs["全一般"].Pars.Values.First().ToPar().HitColor == hc && !(ip.SubInfoIm == GameText.労働可能な全ての奴隷に一般労働を設定しました))
-    							{
-    								ip.SubInfoIm = GameText.労働可能な全ての奴隷を働かせます;
-    							}
-    							else if (ip.SubInfoIm == GameText.労働可能な全ての奴隷を働かせます)
-    							{
-    								si.Set(bre: false);
-    							}
-    							if (bs["全娼婦"].Pars.Values.First().ToPar().HitColor == hc && !(ip.SubInfoIm == GameText.労働可能な全ての奴隷に娼婦労働を設定しました))
-    							{
-    								ip.SubInfoIm = GameText.労働可能な全ての奴隷を娼婦として働かせます;
-    							}
-    							else if (ip.SubInfoIm == GameText.労働可能な全ての奴隷を娼婦として働かせます)
-    							{
-    								si.Set(bre: false);
-    							}
-    							if (bs["全解除"].Pars.Values.First().ToPar().HitColor == hc && !(ip.SubInfoIm == GameText.労働中の全ての奴隷の労働を解除しました))
-    							{
-    								ip.SubInfoIm = GameText.全ての奴隷の労働を解除します;
-    							}
-    							else if (ip.SubInfoIm == GameText.全ての奴隷の労働を解除します)
-    							{
-    								si.Set(bre: false);
-    							}
-    							if (bs["全売却"].Pars.Values.First().ToPar().HitColor == hc && !ip.SubInfoIm.StartsWith(GameText.保守以外の全ての奴隷を売却しました) && !(ip.SubInfoIm == GameText.全売却をキャンセルしました))
-    							{
-    								ip.SubInfoIm = GameText.保守以外の全ての奴隷を売却します;
-    							}
-    							else if (ip.SubInfoIm == GameText.保守以外の全ての奴隷を売却します)
-    							{
-    								si.Set(bre: false);
-    							}
-    							Player説明(ref hc, delegate
-    							{
-    								si.Set(bre: false);
-    							});
-    						}
-    						lv.Move(ref hc);
-    						ip.Move(ref hc);
-    					}
-    				}
-    			};
-    			mod.Leave = delegate
-    			{
-    				if (!processing)
-    				{
-    					if (SDShow)
-    					{
-    						SaveData.Leave();
-    					}
-    					else
-    					{
-    						if (!ip.Mai2Show)
-    						{
-    							dbs.Leave();
-    							bs.Leave();
-    						}
-    						lv.Leave();
-    					}
-    				}
-    			};
-    			mod.Wheel = delegate(MouseButtons mb, Vector2D cp, int dt, Color hc)
-    			{
-    				int num2 = 0;
-    				using (IEnumerator<But> enumerator2 = bs.EnumBut.Skip(12).GetEnumerator())
-    				{
-    					while (enumerator2.MoveNext() && !(enumerator2.Current.Pars.Values.First().ToParT().PenColor == Color.Red))
-    					{
-    						num2++;
-    					}
-    				}
-    				int num3 = 0;
-    				using (IEnumerator<But> enumerator2 = lv.bs.EnumBut.GetEnumerator())
-    				{
-    					while (enumerator2.MoveNext() && !(enumerator2.Current.Pars.Values.First().ToParT().PenColor == Color.Red))
-    					{
-    						num3++;
-    					}
-    				}
-    				int num4 = num3 - dt.Sign();
-    				d = false;
-    				if (num4 < 0 && num2 > 0)
-    				{
-    					But but3 = bs["ボタン" + num2];
-    					but3.Action(but3);
-    					num4 = 14;
-    				}
-    				else if (num4 > 14 && num2 < Sta.GameData.フロア数 - 1)
-    				{
-    					But but4 = bs["ボタン" + (num2 + 2)];
-    					but4.Action(but4);
-    					num4 = 0;
-    				}
-    				d = true;
-    				But but5 = lv.bs[num4.Limit(0, 15).ToString()];
-    				but5.Action(but5);
-    				if (ip.Mai2Show)
-    				{
-    					if (Sta.GameData.TrainingTarget == null)
-    					{
-    						ip.Mai2Im = " ";
-    						ip.選択肢表示 = false;
-    					}
-    					else
-    					{
-    						d = false;
-    						bs["売却"].Action(bs["売却"]);
-    						d = true;
-    					}
-    				}
-    			};
-    			mod.Setting = delegate
-    			{
-    				if (Med.Modeb != "PlayerInformation")
-    				{
-    					for (int j = 1; j <= 9; j++)
-    					{
-    						bs["ボタン" + j].Dra = false;
-    					}
-    					for (int k = 1; k <= Sta.GameData.フロア数; k++)
-    					{
-    						bs["ボタン" + k].Dra = true;
-    					}
-    					ip.UpdateSub2();
-    					ip.MaiShow = true;
-    					ip.Mai.Feed.Dra = false;
-    					ip.Mai2Show = false;
-    					ip.SubShow = true;
-    					ip.Sub2Show = true;
-    					d = false;
-    					Player.UI.ステート描画 = false;
-    					if (Sta.GameData.TrainingTarget != null)
-    					{
-    						But but = bs["ボタン" + (Sta.GameData.TrainingTarget.階層位置 + 1)];
-    						but.Action(but);
-    						lv縁色初期化();
-    						lv.bs[Sta.GameData.TrainingTarget.RoomNumber.ToString()].Pars.Values.First().ToParT().PenColor = Color.Red;
-    						bs["子"].Action(bs["子"]);
-    					}
-    					else
-    					{
-    						ip.TextIm = GameText.対象が設定されていません;
-    						階層選択(bs["ボタン" + (f / 15 + 1)], f);
-    						SetUI(null);
-    						int num = 0;
-    						using (IEnumerator<But> enumerator = lv.bs.EnumBut.GetEnumerator())
-    						{
-    							while (enumerator.MoveNext() && !(enumerator.Current.Pars.Values.First().ToParT().PenColor == Color.Red))
-    							{
-    								num++;
-    							}
-    						}
-    						But but2 = lv.bs[num.Limit(0, 15).ToString()];
-    						but2.Action(but2);
-    					}
-    					d = true;
-    					si.Set(bre: false);
-    					if (Sta.BigWindow)
-    					{
-    						npl.ParT.PositionBase = new Vector2D(0.095, 0.035);
-    					}
-    					else
-    					{
-    						npl.ParT.PositionBase = new Vector2D(ip.MaiB.Position.X, 0.026);
-    					}
-    				}
-    			};
-    			対象描画 = delegate(Are a, FPS FPS)
-    			{
-    				Med.GH.Clear(Col.Transparent);
-    				if (a.GH != null)
-    				{
-    					a.GH.Clear(Col.Transparent);
-    				}
-    				a.Draw(BasementBackground);
-    				if (TrainingTarget != null)
-    				{
-    					TrainingTarget.Draw(a, FPS);
-    					Player.UI.DrawState(a);
-    				}
-    				a.Draw(npl.ParT);
-    				lv.Draw(a);
-    				bs.Draw(a);
-    				dbs.Draw(a);
-    				ip.Draw(a, FPS);
-    				if (SDShow)
-    				{
-    					SaveData.Draw(a);
-    				}
-    				Med.Draw(a);
-    			};
-    			mod.Draw = delegate(FPS FPS)
-    			{
-    				SwitchMode(Med, DrawBuffer, FPS, 対象描画);
-    			};
-    			mod.Dispose = delegate
-    			{
-    				lv.Dispose();
-    				bs.Dispose();
-    			};
-    			対象UI初期化 = delegate
-    			{
-    				f = 0;
-    				npl.Text = "No Slave";
-    				lv縁色初期化();
-    			};
-    			return mod;
+
+                対象描画 = delegate (Are a, FPS FPS)
+                {
+                    Med.GH.Clear(Col.Transparent);
+                    if (a.GH != null)
+                    {
+                        a.GH.Clear(Col.Transparent);
+                    }
+                    a.Draw(BasementBackground);
+                    if (TrainingTarget != null)
+                    {
+                        TrainingTarget.Draw(a, FPS);
+                        Player.UI.DrawState(a);
+                    }
+                    a.Draw(npl.ParT);
+                    lv.Draw(a);
+                    bs.Draw(a);
+                    dbs.Draw(a);
+                    ip.Draw(a, FPS);
+                    if (SDShow)
+                    {
+                        SaveData.Draw(a);
+                    }
+                    Med.Draw(a);
+                };
+                対象UI初期化 = delegate
+                {
+                    f = 0;
+                    npl.Text = "No Slave";
+                    lv縁色初期化();
+                };
+
+                return mod;
     		}
     		catch (Exception)
     		{
@@ -3505,10 +3331,9 @@ namespace SlaveMatrix
 
     	public static Module Blessing(Med Med)
     	{
-    		Module mod = new Module();
     		Cha 祝福 = null;
     		bool d = false;
-    		Lab l = new Lab(Med, DrawBuffer, "ラベル1", new Vector2D(ip.MaiB.Position.X, 0.026), 0.1, 1.0, new Font("MS Gothic", 1f), 0.085, "No blessing", Col.White, Col.Black, ip.MaiB.BrushColor, Col.Black, Input: false);
+    		Lab l = new Lab(DrawBuffer, "ラベル1", new Vector2D(ip.MaiB.Position.X, 0.026), 0.1, 1.0, new Font("MS Gothic", 1f), 0.085, "No blessing", Col.White, Col.Black, ip.MaiB.BrushColor, Col.Black);
     		Buts bs = new Buts();
     		Action 祝福なし = delegate
     		{
@@ -3524,22 +3349,8 @@ namespace SlaveMatrix
     				祝福 = null;
     			}
     		};
-    		ParT parT = new ParT();
-    		parT.Font = new Font("MS Gothic", 0.1f);
-    		parT.PositionBase = DrawBuffer.GetPosition(0.85, 0.02);
-    		parT.Text = GameText.戻る;
-    		parT.FontSize = 0.15;
-    		parT.SizeBase = 0.05;
-    		parT.OP.AddRange(new Out[1] { Shas.Get正方形() });
-    		parT.OP.ScalingY(parT.OP.GetCenter(), 0.47);
-    		parT.OP.Rotation(parT.OP.GetCenter(), -26.0);
-    		parT.Closed = true;
-    		parT.TextColor = Col.White;
-    		parT.BrushColor = Color.FromArgb(160, Col.Black);
-    		parT.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    		parT.StringFormat.Alignment = StringAlignment.Center;
-    		parT.StringFormat.LineAlignment = StringAlignment.Center;
-    		bs.Add("ボタン0", new But1(parT, delegate
+
+    		bs.Add("ボタン0", MyUI.Button2(Med, DrawBuffer, GameText.戻る, new Vector2D(0.85, 0.02), delegate
     		{
     			//Sounds.操作.Play();
     			Med.Mode = "メインフォーム";
@@ -3552,23 +3363,8 @@ namespace SlaveMatrix
     				item.Pars.Values.First().ToParT().PenColor = penColor;
     			}
     		};
-    		ParT parT2 = new ParT();
-    		parT2.Font = new Font("MS Gothic", 0.1f);
-    		parT2.PositionBase = DrawBuffer.GetPosition(0.85, 0.1);
-    		parT2.Text = GameText.子;
-    		parT2.FontSize = 0.15;
-    		parT2.SizeBase = 0.05;
-    		parT2.OP.AddRange(new Out[1] { Shas.Get正方形() });
-    		parT2.OP.ScalingY(parT2.OP.GetCenter(), 0.47);
-    		parT2.OP.Rotation(parT2.OP.GetCenter(), -26.0);
-    		parT2.Closed = true;
-    		parT2.TextColor = Col.White;
-    		parT2.BrushColor = Color.FromArgb(160, Col.Black);
-    		parT2.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    		parT2.StringFormat.Alignment = StringAlignment.Center;
-    		parT2.StringFormat.LineAlignment = StringAlignment.Center;
-    		parT2.PenColor = Color.Red;
-    		bs.Add("子", new But1(parT2, delegate(But bu)
+
+    		bs.Add("子", MyUI.Button2(Med, DrawBuffer, GameText.子, new Vector2D(0.85, 0.1), delegate(But bu)
     		{
     			if (d)
     			{
@@ -3610,22 +3406,8 @@ namespace SlaveMatrix
     				祝福.Set基本姿勢();
     			}
     		}));
-    		ParT parT3 = new ParT();
-    		parT3.Font = new Font("MS Gothic", 0.1f);
-    		parT3.PositionBase = DrawBuffer.GetPosition(0.85, 0.18);
-    		parT3.Text = GameText.親形質1;
-    		parT3.FontSize = 0.15;
-    		parT3.SizeBase = 0.05;
-    		parT3.OP.AddRange(new Out[1] { Shas.Get正方形() });
-    		parT3.OP.ScalingY(parT3.OP.GetCenter(), 0.47);
-    		parT3.OP.Rotation(parT3.OP.GetCenter(), -26.0);
-    		parT3.Closed = true;
-    		parT3.TextColor = Col.White;
-    		parT3.BrushColor = Color.FromArgb(160, Col.Black);
-    		parT3.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    		parT3.StringFormat.Alignment = StringAlignment.Center;
-    		parT3.StringFormat.LineAlignment = StringAlignment.Center;
-    		bs.Add("親形質1", new But1(parT3, delegate(But bu)
+
+    		bs.Add("親形質1", MyUI.Button2(Med, DrawBuffer, GameText.親形質1, new Vector2D(0.85, 0.18), delegate(But bu)
     		{
     			//Sounds.操作.Play();
     			rs1(bs);
@@ -3664,22 +3446,8 @@ namespace SlaveMatrix
     				祝福.Set基本姿勢();
     			}
     		}));
-    		ParT parT4 = new ParT();
-    		parT4.Font = new Font("MS Gothic", 0.1f);
-    		parT4.PositionBase = DrawBuffer.GetPosition(0.85, 0.26);
-    		parT4.Text = GameText.親形質2;
-    		parT4.FontSize = 0.15;
-    		parT4.SizeBase = 0.05;
-    		parT4.OP.AddRange(new Out[1] { Shas.Get正方形() });
-    		parT4.OP.ScalingY(parT4.OP.GetCenter(), 0.47);
-    		parT4.OP.Rotation(parT4.OP.GetCenter(), -26.0);
-    		parT4.Closed = true;
-    		parT4.TextColor = Col.White;
-    		parT4.BrushColor = Color.FromArgb(160, Col.Black);
-    		parT4.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    		parT4.StringFormat.Alignment = StringAlignment.Center;
-    		parT4.StringFormat.LineAlignment = StringAlignment.Center;
-    		bs.Add("親形質2", new But1(parT4, delegate(But bu)
+
+    		bs.Add("親形質2", MyUI.Button2(Med, DrawBuffer, GameText.親形質2, new Vector2D(0.85, 0.26), delegate(But bu)
     		{
     			//Sounds.操作.Play();
     			rs1(bs);
@@ -3718,22 +3486,8 @@ namespace SlaveMatrix
     				祝福.Set基本姿勢();
     			}
     		}));
-    		ParT parT5 = new ParT();
-    		parT5.Font = new Font("MS Gothic", 0.1f);
-    		parT5.PositionBase = DrawBuffer.GetPosition(0.85, 0.34);
-    		parT5.Text = GameText.祝福解除;
-    		parT5.FontSize = 0.15;
-    		parT5.SizeBase = 0.05;
-    		parT5.OP.AddRange(new Out[1] { Shas.Get正方形() });
-    		parT5.OP.ScalingY(parT5.OP.GetCenter(), 0.47);
-    		parT5.OP.Rotation(parT5.OP.GetCenter(), -26.0);
-    		parT5.Closed = true;
-    		parT5.TextColor = Col.White;
-    		parT5.BrushColor = Color.FromArgb(160, Col.Black);
-    		parT5.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    		parT5.StringFormat.Alignment = StringAlignment.Center;
-    		parT5.StringFormat.LineAlignment = StringAlignment.Center;
-    		bs.Add("祝福解除", new But1(parT5, delegate
+
+    		bs.Add("祝福解除", MyUI.Button2(Med, DrawBuffer, GameText.祝福解除, new Vector2D(0.85, 0.34), delegate
     		{
                 //TODO fix?
                 //Sounds.解除.Play();
@@ -3741,6 +3495,7 @@ namespace SlaveMatrix
     			祝福なし();
     			ip.SubInfoIm = GameText.祝福を解除しました;
     		}));
+
     		bs.SetHitColor(Med);
     		Action subinfo = delegate
     		{
@@ -3753,168 +3508,156 @@ namespace SlaveMatrix
     				ip.SubInfoIm = GameText.祝福されていません;
     			}
     		};
-    		mod.Down = delegate(MouseButtons mb, Vector2D cp, Color hc)
-    		{
-    			if (!processing)
-    			{
-    				if (SDShow)
-    				{
-    					SaveData.Down(ref hc);
-    					if (mb == MouseButtons.Right && !processing)
-    					{
-    						//Sounds.操作.Play();
-    						SDShow = false;
-    						ip.Up(ref hc);
-    						dbs.Move(ref hc);
-    					}
-    				}
-    				else
-    				{
-    					switch (mb)
-    					{
-    					case MouseButtons.Left:
-    						if (!ip.選択肢表示)
-    						{
-    							dbs.Down(ref hc);
-    							bs.Down(ref hc);
-    						}
-    						ip.Down(ref hc);
-    						break;
-    					case MouseButtons.Right:
-    						if (!ip.選択肢表示)
-    						{
-    							bs["ボタン0"].Action(bs["ボタン0"]);
-    						}
-    						else
-    						{
-    							ip.nb.Action(ip.nb);
-    						}
-    						break;
-    					}
-    				}
-    			}
-    		};
-    		mod.Up = delegate(MouseButtons mb, Vector2D cp, Color hc)
-    		{
-    			if (!processing)
-    			{
-    				if (SDShow)
-    				{
-    					SaveData.Up(ref hc);
-    				}
-    				else if (mb == MouseButtons.Left)
-    				{
-    					if (!ip.選択肢表示)
-    					{
-    						dbs.Up(ref hc);
-    						bs.Up(ref hc);
-    					}
-    					ip.Up(ref hc);
-    				}
-    			}
-    		};
-    		mod.Move = delegate(MouseButtons mb, Vector2D cp, Color hc)
-    		{
-    			if (!processing)
-    			{
-    				if (SDShow)
-    				{
-    					SaveData.Move(ref hc);
-    				}
-    				else
-    				{
-    					if (!ip.選択肢表示)
-    					{
-    						dbs.Move(ref hc);
-    						bs.Move(ref hc);
-    						Player説明(ref hc, subinfo);
-    					}
-    					ip.Move(ref hc);
-    				}
-    			}
-    		};
-    		mod.Leave = delegate
-    		{
-    			if (!processing)
-    			{
-    				if (SDShow)
-    				{
-    					SaveData.Leave();
-    				}
-    				else if (!ip.選択肢表示)
-    				{
-    					dbs.Leave();
-    					bs.Leave();
-    				}
-    			}
-    		};
-    		mod.Wheel = delegate
-    		{
-    		};
-    		mod.Setting = delegate
-    		{
-    			if (Med.Modeb != "PlayerInformation")
-    			{
-    				ip.UpdateSub2();
-    				ip.MaiShow = true;
-    				ip.Mai.Feed.Dra = false;
-    				ip.Mai2Show = false;
-    				ip.SubShow = true;
-    				ip.Sub2Show = true;
-    				if (Sta.GameData.祝福 != null)
-    				{
-    					bs["子"].Dra = true;
-    					bs["親形質1"].Dra = true;
-    					bs["親形質2"].Dra = true;
-    					bs["祝福解除"].Dra = true;
-    					ip.MaiShow = true;
-    				}
-    				else
-    				{
-    					祝福なし();
-    				}
-    				subinfo();
-    				d = false;
-    				bs["子"].Action(bs["子"]);
-    				d = true;
-    			}
-    		};
-    		DrawBlessing = delegate(Are a, FPS FPS)
-    		{
-    			Med.GH.Clear(Col.Transparent);
-    			if (a.GH != null)
-    			{
-    				a.GH.Clear(Col.Transparent);
-    			}
-    			a.Draw(BasementBackground);
-    			if (祝福 != null)
-    			{
-    				祝福.Draw(a, FPS);
-    			}
-    			a.Draw(l.ParT);
-    			bs.Draw(a);
-    			dbs.Draw(a);
-    			ip.Draw(a, FPS);
-    			if (SDShow)
-    			{
-    				SaveData.Draw(a);
-    			}
-    			Med.Draw(a);
-    		};
-    		mod.Draw = delegate(FPS FPS)
-    		{
-    			SwitchMode(Med, DrawBuffer, FPS, DrawBlessing);
-    		};
-    		mod.Dispose = delegate
-    		{
-    			if (祝福 != null)
-    			{
-    				祝福.Dispose();
-    			}
-    			l.Dispose();
-    			bs.Dispose();
-    		};
-    		return mod;
+
+            DrawBlessing = delegate (Are a, FPS FPS)
+            {
+                Med.GH.Clear(Col.Transparent);
+                if (a.GH != null)
+                {
+                    a.GH.Clear(Col.Transparent);
+                }
+                a.Draw(BasementBackground);
+                if (祝福 != null)
+                {
+                    祝福.Draw(a, FPS);
+                }
+                a.Draw(l.ParT);
+                bs.Draw(a);
+                dbs.Draw(a);
+                ip.Draw(a, FPS);
+                if (SDShow)
+                {
+                    SaveData.Draw(a);
+                }
+                Med.Draw(a);
+            };
+
+            return new Module {
+                Down = delegate (MouseButtons mb, Vector2D cp, Color hc)
+                {
+                    if (SDShow)
+                    {
+                        SaveData.Down(ref hc);
+                        if (mb == MouseButtons.Right)
+                        {
+                            //Sounds.操作.Play();
+                            SDShow = false;
+                            ip.Up(ref hc);
+                            dbs.Move(ref hc);
+                        }
+                    }
+                    else
+                    {
+                        switch (mb)
+                        {
+                            case MouseButtons.Left:
+                                if (!ip.選択肢表示)
+                                {
+                                    dbs.Down(ref hc);
+                                    bs.Down(ref hc);
+                                }
+                                ip.Down(ref hc);
+                                break;
+                            case MouseButtons.Right:
+                                if (!ip.選択肢表示)
+                                {
+                                    bs["ボタン0"].Action(bs["ボタン0"]);
+                                }
+                                else
+                                {
+                                    ip.nb.Action(ip.nb);
+                                }
+                                break;
+                        }
+                    }
+                },
+                Up = delegate (MouseButtons mb, Vector2D cp, Color hc)
+                {
+                    if (SDShow)
+                    {
+                        SaveData.Up(ref hc);
+                    }
+                    else if (mb == MouseButtons.Left)
+                    {
+                        if (!ip.選択肢表示)
+                        {
+                            dbs.Up(ref hc);
+                            bs.Up(ref hc);
+                        }
+                        ip.Up(ref hc);
+                    }
+                },
+                Move = delegate (MouseButtons mb, Vector2D cp, Color hc)
+                {
+                    if (SDShow)
+                    {
+                        SaveData.Move(ref hc);
+                    }
+                    else
+                    {
+                        if (!ip.選択肢表示)
+                        {
+                            dbs.Move(ref hc);
+                            bs.Move(ref hc);
+                            Player説明(ref hc, subinfo);
+                        }
+                        ip.Move(ref hc);
+                    }
+                },
+                Leave = delegate
+                {
+                    if (SDShow)
+                    {
+                        SaveData.Leave();
+                    }
+                    else if (!ip.選択肢表示)
+                    {
+                        dbs.Leave();
+                        bs.Leave();
+                    }
+                },
+                Setting = delegate
+                {
+                    if (Med.Modeb != "PlayerInformation")
+                    {
+                        ip.UpdateSub2();
+                        ip.MaiShow = true;
+                        ip.Mai.Feed.Dra = false;
+                        ip.Mai2Show = false;
+                        ip.SubShow = true;
+                        ip.Sub2Show = true;
+                        if (Sta.GameData.祝福 != null)
+                        {
+                            bs["子"].Dra = true;
+                            bs["親形質1"].Dra = true;
+                            bs["親形質2"].Dra = true;
+                            bs["祝福解除"].Dra = true;
+                            ip.MaiShow = true;
+                        }
+                        else
+                        {
+                            祝福なし();
+                        }
+                        subinfo();
+                        d = false;
+                        bs["子"].Action(bs["子"]);
+                        d = true;
+                    }
+                },
+                Draw = delegate (FPS FPS)
+                {
+                    SwitchMode(Med, DrawBuffer, FPS, DrawBlessing);
+                },
+                Dispose = delegate
+                {
+                    if (祝福 != null)
+                    {
+                        祝福.Dispose();
+                    }
+                    l.Dispose();
+                    bs.Dispose();
+                }
+            };
     	}
 
     	public static Module Office(Med Med)
@@ -3927,7 +3670,7 @@ namespace SlaveMatrix
     		parT.Text = GameText.戻る;
     		parT.FontSize = 0.15;
     		parT.SizeBase = 0.05;
-    		parT.OP.AddRange(new Out[1] { Shas.Get正方形() });
+    		parT.OP.AddRange(new Out[1] { Shas.GetSquare() });
     		parT.OP.ScalingY(parT.OP.GetCenter(), 0.47);
     		parT.OP.Rotation(parT.OP.GetCenter(), -26.0);
     		parT.Closed = true;
@@ -3939,7 +3682,7 @@ namespace SlaveMatrix
     		bs.Add("ボタン0", new But1(parT, delegate
     		{
     			//Sounds.操作.Play();
-    			if (!時間進行(Med))
+    			if (!PassTime(Med))
     			{
     				Med.SwitchMode("メインフォーム", DrawBuffer, メインフォーム描画);
     			}
@@ -3950,7 +3693,7 @@ namespace SlaveMatrix
     		parT2.Text = GameText.借金;
     		parT2.FontSize = 0.15;
     		parT2.SizeBase = 0.05;
-    		parT2.OP.AddRange(new Out[1] { Shas.Get正方形() });
+    		parT2.OP.AddRange(new Out[1] { Shas.GetSquare() });
     		parT2.OP.ScalingY(parT2.OP.GetCenter(), 0.47);
     		parT2.OP.Rotation(parT2.OP.GetCenter(), -26.0);
     		parT2.Closed = true;
@@ -3970,7 +3713,7 @@ namespace SlaveMatrix
     		parT3.Text = GameText.購入;
     		parT3.FontSize = 0.15;
     		parT3.SizeBase = 0.05;
-    		parT3.OP.AddRange(new Out[1] { Shas.Get正方形() });
+    		parT3.OP.AddRange(new Out[1] { Shas.GetSquare() });
     		parT3.OP.ScalingY(parT3.OP.GetCenter(), 0.47);
     		parT3.OP.Rotation(parT3.OP.GetCenter(), -26.0);
     		parT3.Closed = true;
@@ -3990,7 +3733,7 @@ namespace SlaveMatrix
     		parT4.Text = GameText.祝福;
     		parT4.FontSize = 0.15;
     		parT4.SizeBase = 0.05;
-    		parT4.OP.AddRange(new Out[1] { Shas.Get正方形() });
+    		parT4.OP.AddRange(new Out[1] { Shas.GetSquare() });
     		parT4.OP.ScalingY(parT4.OP.GetCenter(), 0.47);
     		parT4.OP.Rotation(parT4.OP.GetCenter(), -26.0);
     		parT4.Closed = true;
@@ -4007,104 +3750,89 @@ namespace SlaveMatrix
     		bs.SetHitColor(Med);
     		mod.Down = delegate(MouseButtons mb, Vector2D cp, Color hc)
     		{
-    			if (!processing)
+    			if (SDShow)
     			{
-    				if (SDShow)
+    				SaveData.Down(ref hc);
+    				if (mb == MouseButtons.Right)
     				{
-    					SaveData.Down(ref hc);
-    					if (mb == MouseButtons.Right && !processing)
-    					{
-    						//Sounds.操作.Play();
-    						SDShow = false;
-    						ip.Up(ref hc);
-    						dbs.Move(ref hc);
-    					}
+    					//Sounds.操作.Play();
+    					SDShow = false;
+    					ip.Up(ref hc);
+    					dbs.Move(ref hc);
     				}
-    				else
+    			}
+    			else
+    			{
+    				switch (mb)
     				{
-    					switch (mb)
+    				case MouseButtons.Left:
+    					if (!ip.選択肢表示)
     					{
-    					case MouseButtons.Left:
-    						if (!ip.選択肢表示)
-    						{
-    							dbs.Down(ref hc);
-    							bs.Down(ref hc);
-    						}
-    						ip.Down(ref hc);
-    						break;
-    					case MouseButtons.Right:
-    						if (!ip.選択肢表示)
-    						{
-    							bs["ボタン0"].Action(bs["ボタン0"]);
-    						}
-    						else
-    						{
-    							ip.nb.Action(ip.nb);
-    						}
-    						break;
+    						dbs.Down(ref hc);
+    						bs.Down(ref hc);
     					}
+    					ip.Down(ref hc);
+    					break;
+    				case MouseButtons.Right:
+    					if (!ip.選択肢表示)
+    					{
+    						bs["ボタン0"].Action(bs["ボタン0"]);
+    					}
+    					else
+    					{
+    						ip.nb.Action(ip.nb);
+    					}
+    					break;
     				}
     			}
     		};
     		mod.Up = delegate(MouseButtons mb, Vector2D cp, Color hc)
     		{
-    			if (!processing)
+    			if (SDShow)
     			{
-    				if (SDShow)
+    				SaveData.Up(ref hc);
+    			}
+    			else if (mb == MouseButtons.Left)
+    			{
+    				if (!ip.選択肢表示)
     				{
-    					SaveData.Up(ref hc);
+    					dbs.Up(ref hc);
+    					bs.Up(ref hc);
     				}
-    				else if (mb == MouseButtons.Left)
-    				{
-    					if (!ip.選択肢表示)
-    					{
-    						dbs.Up(ref hc);
-    						bs.Up(ref hc);
-    					}
-    					ip.Up(ref hc);
-    				}
+    				ip.Up(ref hc);
     			}
     		};
     		mod.Move = delegate(MouseButtons mb, Vector2D cp, Color hc)
     		{
-    			if (!processing)
+    			if (SDShow)
     			{
-    				if (SDShow)
+    				SaveData.Move(ref hc);
+    			}
+    			else
+    			{
+    				if (!ip.選択肢表示)
     				{
-    					SaveData.Move(ref hc);
-    				}
-    				else
-    				{
-    					if (!ip.選択肢表示)
+    					dbs.Move(ref hc);
+    					bs.Move(ref hc);
+    					Player説明(ref hc, delegate
     					{
-    						dbs.Move(ref hc);
-    						bs.Move(ref hc);
-    						Player説明(ref hc, delegate
-    						{
-    							si.Set(bre: false);
-    						});
-    					}
-    					ip.Move(ref hc);
+    						si.Set(bre: false);
+    					});
     				}
+    				ip.Move(ref hc);
     			}
     		};
     		mod.Leave = delegate
     		{
-    			if (!processing)
+    			if (SDShow)
     			{
-    				if (SDShow)
-    				{
-    					SaveData.Leave();
-    				}
-    				else if (!ip.選択肢表示)
-    				{
-    					dbs.Leave();
-    					bs.Leave();
-    				}
+    				SaveData.Leave();
     			}
-    		};
-    		mod.Wheel = delegate
-    		{
+    			else if (!ip.選択肢表示)
+    			{
+    				dbs.Leave();
+    				bs.Leave();
+    			}
     		};
     		mod.Setting = delegate
     		{
@@ -4125,11 +3853,11 @@ namespace SlaveMatrix
     				if (Sta.GameData.初事務所フラグ)
     				{
     					Viola.表情_不敵1();
-    					ヴィオラ台詞.Set();
+    					ViolaText.Set();
     				}
     				else
     				{
-    					ヴィオラ台詞.Set();
+    					ViolaText.Set();
     				}
     				si.Set(bre: false);
     				if (Sta.GameData.RepaymentStage < 3)
@@ -4175,7 +3903,7 @@ namespace SlaveMatrix
     				a.GH.Clear(Col.Transparent);
     			}
     			a.Draw(OfficeBackground);
-    			Viola.Draw(a, FPS);
+    			//Viola.Draw(a, FPS);
     			ヴィオラ吹出し.Draw(a, FPS);
     			bs.Draw(a);
     			dbs.Draw(a);
@@ -4202,33 +3930,20 @@ namespace SlaveMatrix
     		Module mod = new Module();
     		Vector2D position = DrawBuffer.GetPosition(0.15, 0.37);
     		Buts bs = new Buts();
-    		ParT parT = new ParT();
-    		parT.Font = new Font("MS Gothic", 0.1f);
-    		parT.PositionBase = DrawBuffer.GetPosition(0.85, 0.02);
-    		parT.Text = GameText.戻る;
-    		parT.FontSize = 0.15;
-    		parT.SizeBase = 0.05;
-    		parT.OP.AddRange(new Out[1] { Shas.Get正方形() });
-    		parT.OP.ScalingY(parT.OP.GetCenter(), 0.47);
-    		parT.OP.Rotation(parT.OP.GetCenter(), -26.0);
-    		parT.Closed = true;
-    		parT.TextColor = Col.White;
-    		parT.BrushColor = Color.FromArgb(160, Col.Black);
-    		parT.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    		parT.StringFormat.Alignment = StringAlignment.Center;
-    		parT.StringFormat.LineAlignment = StringAlignment.Center;
-    		bs.Add("ボタン0", new But1(parT, delegate
+
+    		bs.Add("ボタン0", MyUI.Button2(Med, DrawBuffer, GameText.戻る, new Vector2D(0.85, 0.02), delegate
     		{
     			//Sounds.操作.Play();
     			Med.Mode = "Office";
     		}));
+
     		ParT parT2 = new ParT();
     		parT2.Font = new Font("MS Gothic", 0.1f);
     		parT2.PositionBase = position + DrawBuffer.GetPosition(0.0, 0.0);
     		parT2.Text = "c";
     		parT2.FontSize = 0.15;
     		parT2.SizeBase = 0.07;
-    		parT2.OP.AddRange(new Out[1] { Shas.Get正方形() });
+    		parT2.OP.AddRange(new Out[1] { Shas.GetSquare() });
     		parT2.OP.ScalingXY(parT2.OP.GetCenter(), 0.3, 0.3);
     		parT2.Closed = true;
     		parT2.TextColor = Col.White;
@@ -4241,13 +3956,14 @@ namespace SlaveMatrix
     			//Sounds.操作.Play();
     			ip.TextIm = "0";
     		}));
+
     		ParT parT3 = new ParT();
     		parT3.Font = new Font("MS Gothic", 0.1f);
     		parT3.PositionBase = position + DrawBuffer.GetPosition(0.06, 0.0);
     		parT3.Text = "m";
     		parT3.FontSize = 0.15;
     		parT3.SizeBase = 0.07;
-    		parT3.OP.AddRange(new Out[1] { Shas.Get正方形() });
+    		parT3.OP.AddRange(new Out[1] { Shas.GetSquare() });
     		parT3.OP.ScalingXY(parT3.OP.GetCenter(), 0.3, 0.3);
     		parT3.Closed = true;
     		parT3.TextColor = Col.White;
@@ -4260,6 +3976,7 @@ namespace SlaveMatrix
     			//Sounds.操作.Play();
     			ip.TextIm = 9999999999999uL.ToString("#,0");
     		}));
+
     		Action<string> SetNum = delegate(string num)
     		{
     			if (ulong.Parse(ip.TextIm, NumberStyles.AllowThousands).ToString().Length < 9999999999999uL.ToString().Length)
@@ -4268,13 +3985,14 @@ namespace SlaveMatrix
     				ip.TextIm = ulong.Parse(ip.TextIm, NumberStyles.AllowThousands).ToString("#,0");
     			}
     		};
+
     		ParT parT4 = new ParT();
     		parT4.Font = new Font("MS Gothic", 0.1f);
     		parT4.PositionBase = position + DrawBuffer.GetPosition(0.0, 0.07);
     		parT4.Text = "7";
     		parT4.FontSize = 0.15;
     		parT4.SizeBase = 0.07;
-    		parT4.OP.AddRange(new Out[1] { Shas.Get正方形() });
+    		parT4.OP.AddRange(new Out[1] { Shas.GetSquare() });
     		parT4.OP.ScalingXY(parT4.OP.GetCenter(), 0.3, 0.3);
     		parT4.Closed = true;
     		parT4.TextColor = Col.White;
@@ -4287,13 +4005,14 @@ namespace SlaveMatrix
     			//Sounds.操作.Play();
     			SetNum("7");
     		}));
+
     		ParT parT5 = new ParT();
     		parT5.Font = new Font("MS Gothic", 0.1f);
     		parT5.PositionBase = position + DrawBuffer.GetPosition(0.06, 0.07);
     		parT5.Text = "8";
     		parT5.FontSize = 0.15;
     		parT5.SizeBase = 0.07;
-    		parT5.OP.AddRange(new Out[1] { Shas.Get正方形() });
+    		parT5.OP.AddRange(new Out[1] { Shas.GetSquare() });
     		parT5.OP.ScalingXY(parT5.OP.GetCenter(), 0.3, 0.3);
     		parT5.Closed = true;
     		parT5.TextColor = Col.White;
@@ -4306,13 +4025,14 @@ namespace SlaveMatrix
     			//Sounds.操作.Play();
     			SetNum("8");
     		}));
+
     		ParT parT6 = new ParT();
     		parT6.Font = new Font("MS Gothic", 0.1f);
     		parT6.PositionBase = position + DrawBuffer.GetPosition(0.12, 0.07);
     		parT6.Text = "9";
     		parT6.FontSize = 0.15;
     		parT6.SizeBase = 0.07;
-    		parT6.OP.AddRange(new Out[1] { Shas.Get正方形() });
+    		parT6.OP.AddRange(new Out[1] { Shas.GetSquare() });
     		parT6.OP.ScalingXY(parT6.OP.GetCenter(), 0.3, 0.3);
     		parT6.Closed = true;
     		parT6.TextColor = Col.White;
@@ -4325,13 +4045,14 @@ namespace SlaveMatrix
     			//Sounds.操作.Play();
     			SetNum("9");
     		}));
+
     		ParT parT7 = new ParT();
     		parT7.Font = new Font("MS Gothic", 0.1f);
     		parT7.PositionBase = position + DrawBuffer.GetPosition(0.0, 0.14);
     		parT7.Text = "4";
     		parT7.FontSize = 0.15;
     		parT7.SizeBase = 0.07;
-    		parT7.OP.AddRange(new Out[1] { Shas.Get正方形() });
+    		parT7.OP.AddRange(new Out[1] { Shas.GetSquare() });
     		parT7.OP.ScalingXY(parT7.OP.GetCenter(), 0.3, 0.3);
     		parT7.Closed = true;
     		parT7.TextColor = Col.White;
@@ -4344,13 +4065,14 @@ namespace SlaveMatrix
     			//Sounds.操作.Play();
     			SetNum("4");
     		}));
+
     		ParT parT8 = new ParT();
     		parT8.Font = new Font("MS Gothic", 0.1f);
     		parT8.PositionBase = position + DrawBuffer.GetPosition(0.06, 0.14);
     		parT8.Text = "5";
     		parT8.FontSize = 0.15;
     		parT8.SizeBase = 0.07;
-    		parT8.OP.AddRange(new Out[1] { Shas.Get正方形() });
+    		parT8.OP.AddRange(new Out[1] { Shas.GetSquare() });
     		parT8.OP.ScalingXY(parT8.OP.GetCenter(), 0.3, 0.3);
     		parT8.Closed = true;
     		parT8.TextColor = Col.White;
@@ -4363,13 +4085,14 @@ namespace SlaveMatrix
     			//Sounds.操作.Play();
     			SetNum("5");
     		}));
+
     		ParT parT9 = new ParT();
     		parT9.Font = new Font("MS Gothic", 0.1f);
     		parT9.PositionBase = position + DrawBuffer.GetPosition(0.12, 0.14);
     		parT9.Text = "6";
     		parT9.FontSize = 0.15;
     		parT9.SizeBase = 0.07;
-    		parT9.OP.AddRange(new Out[1] { Shas.Get正方形() });
+    		parT9.OP.AddRange(new Out[1] { Shas.GetSquare() });
     		parT9.OP.ScalingXY(parT9.OP.GetCenter(), 0.3, 0.3);
     		parT9.Closed = true;
     		parT9.TextColor = Col.White;
@@ -4382,13 +4105,14 @@ namespace SlaveMatrix
     			//Sounds.操作.Play();
     			SetNum("6");
     		}));
+
     		ParT parT10 = new ParT();
     		parT10.Font = new Font("MS Gothic", 0.1f);
     		parT10.PositionBase = position + DrawBuffer.GetPosition(0.0, 0.21);
     		parT10.Text = "1";
     		parT10.FontSize = 0.15;
     		parT10.SizeBase = 0.07;
-    		parT10.OP.AddRange(new Out[1] { Shas.Get正方形() });
+    		parT10.OP.AddRange(new Out[1] { Shas.GetSquare() });
     		parT10.OP.ScalingXY(parT10.OP.GetCenter(), 0.3, 0.3);
     		parT10.Closed = true;
     		parT10.TextColor = Col.White;
@@ -4401,13 +4125,14 @@ namespace SlaveMatrix
     			//Sounds.操作.Play();
     			SetNum("1");
     		}));
+
     		ParT parT11 = new ParT();
     		parT11.Font = new Font("MS Gothic", 0.1f);
     		parT11.PositionBase = position + DrawBuffer.GetPosition(0.06, 0.21);
     		parT11.Text = "2";
     		parT11.FontSize = 0.15;
     		parT11.SizeBase = 0.07;
-    		parT11.OP.AddRange(new Out[1] { Shas.Get正方形() });
+    		parT11.OP.AddRange(new Out[1] { Shas.GetSquare() });
     		parT11.OP.ScalingXY(parT11.OP.GetCenter(), 0.3, 0.3);
     		parT11.Closed = true;
     		parT11.TextColor = Col.White;
@@ -4420,13 +4145,14 @@ namespace SlaveMatrix
     			//Sounds.操作.Play();
     			SetNum("2");
     		}));
+
     		ParT parT12 = new ParT();
     		parT12.Font = new Font("MS Gothic", 0.1f);
     		parT12.PositionBase = position + DrawBuffer.GetPosition(0.12, 0.21);
     		parT12.Text = "3";
     		parT12.FontSize = 0.15;
     		parT12.SizeBase = 0.07;
-    		parT12.OP.AddRange(new Out[1] { Shas.Get正方形() });
+    		parT12.OP.AddRange(new Out[1] { Shas.GetSquare() });
     		parT12.OP.ScalingXY(parT12.OP.GetCenter(), 0.3, 0.3);
     		parT12.Closed = true;
     		parT12.TextColor = Col.White;
@@ -4439,13 +4165,14 @@ namespace SlaveMatrix
     			//Sounds.操作.Play();
     			SetNum("3");
     		}));
+
     		ParT parT13 = new ParT();
     		parT13.Font = new Font("MS Gothic", 0.1f);
     		parT13.PositionBase = position + DrawBuffer.GetPosition(0.0, 0.28);
     		parT13.Text = "0";
     		parT13.FontSize = 0.15;
     		parT13.SizeBase = 0.07;
-    		parT13.OP.AddRange(new Out[1] { Shas.Get正方形() });
+    		parT13.OP.AddRange(new Out[1] { Shas.GetSquare() });
     		parT13.OP.ScalingXY(parT13.OP.GetCenter(), 0.3, 0.3);
     		parT13.Closed = true;
     		parT13.TextColor = Col.White;
@@ -4458,13 +4185,14 @@ namespace SlaveMatrix
     			//Sounds.操作.Play();
     			SetNum("0");
     		}));
+
     		ParT parT14 = new ParT();
     		parT14.Font = new Font("MS Gothic", 0.1f);
     		parT14.PositionBase = position + DrawBuffer.GetPosition(0.12, 0.28);
     		parT14.Text = GameText.借;
     		parT14.FontSize = 0.15;
     		parT14.SizeBase = 0.07;
-    		parT14.OP.AddRange(new Out[1] { Shas.Get正方形() });
+    		parT14.OP.AddRange(new Out[1] { Shas.GetSquare() });
     		parT14.OP.ScalingXY(parT14.OP.GetCenter(), 0.3, 0.3);
     		parT14.Closed = true;
     		parT14.TextColor = Col.White;
@@ -4485,13 +4213,13 @@ namespace SlaveMatrix
     						ip.SubInfo = GameText.借金可能額以上は無視されます;
     					}
     					Sta.GameData.日借金額 += num3;
-    					Sta.GameData.所持金 = Sta.GameData.所持金.加算(num3);
-    					Sta.GameData.借金 = Sta.GameData.借金.加算(num3);
+    					Sta.GameData.所持金 = Sta.GameData.所持金.overflow_add(num3);
+    					Sta.GameData.借金 = Sta.GameData.借金.overflow_add(num3);
     					bs["nr"].Dra = Sta.GameData.借金 != 0;
     					ip.TextIm = "0";
     					//Sounds.精算.Play();
     					ip.UpdateSub2();
-    					ヴィオラ台詞.Set();
+    					ViolaText.Set();
     				}
     				else
     				{
@@ -4504,13 +4232,14 @@ namespace SlaveMatrix
     				ip.SubInfo = GameText.今日はこれ以上借りることが出来ません;
     			}
     		}));
+
     		ParT parT15 = new ParT();
     		parT15.Font = new Font("MS Gothic", 0.1f);
     		parT15.PositionBase = position + DrawBuffer.GetPosition(0.06, 0.28);
     		parT15.Text = GameText.返;
     		parT15.FontSize = 0.15;
     		parT15.SizeBase = 0.07;
-    		parT15.OP.AddRange(new Out[1] { Shas.Get正方形() });
+    		parT15.OP.AddRange(new Out[1] { Shas.GetSquare() });
     		parT15.OP.ScalingXY(parT15.OP.GetCenter(), 0.3, 0.3);
     		parT15.Closed = true;
     		parT15.TextColor = Col.White;
@@ -4532,14 +4261,14 @@ namespace SlaveMatrix
     					}
     					if (num2 > Sta.GameData.借金)
     					{
-    						Sta.GameData.所持金 = Sta.GameData.所持金.減算(Sta.GameData.借金);
+    						Sta.GameData.所持金 = Sta.GameData.所持金.underflow_subtract(Sta.GameData.借金);
     						Sta.GameData.借金 = 0uL;
     						ip.SubInfo = GameText.返済可能額以上は無視されます;
     					}
     					else
     					{
-    						Sta.GameData.所持金 = Sta.GameData.所持金.減算(num2);
-    						Sta.GameData.借金 = Sta.GameData.借金.減算(num2);
+    						Sta.GameData.所持金 = Sta.GameData.所持金.underflow_subtract(num2);
+    						Sta.GameData.借金 = Sta.GameData.借金.underflow_subtract(num2);
     					}
     					bs["nr"].Dra = Sta.GameData.借金 != 0;
     					ip.TextIm = "0";
@@ -4557,90 +4286,82 @@ namespace SlaveMatrix
     				ip.SubInfo = GameText.所持金がありません;
     			}
     		}));
+
     		bs.SetHitColor(Med);
     		mod.Down = delegate(MouseButtons mb, Vector2D cp, Color hc)
     		{
-    			if (!processing)
+    			if (SDShow)
     			{
-    				if (SDShow)
+    				SaveData.Down(ref hc);
+    				if (mb == MouseButtons.Right)
     				{
-    					SaveData.Down(ref hc);
-    					if (mb == MouseButtons.Right && !processing)
-    					{
-    						//Sounds.操作.Play();
-    						SDShow = false;
-    						ip.Up(ref hc);
-    						dbs.Move(ref hc);
-    					}
+    					//Sounds.操作.Play();
+    					SDShow = false;
+    					ip.Up(ref hc);
+    					dbs.Move(ref hc);
     				}
-    				else
+    			}
+    			else
+    			{
+    				switch (mb)
     				{
-    					switch (mb)
+    				case MouseButtons.Left:
+    					if (!ip.選択肢表示)
     					{
-    					case MouseButtons.Left:
-    						if (!ip.選択肢表示)
-    						{
-    							ヴィオラ吹出し.Down(ヴィオラ吹出し.GetHitColor);
-    							dbs.Down(ref hc);
-    							bs.Down(ref hc);
-    						}
-    						ip.Down(ref hc);
-    						break;
-    					case MouseButtons.Right:
-    						if (!ip.選択肢表示)
-    						{
-    							bs["ボタン0"].Action(bs["ボタン0"]);
-    						}
-    						else
-    						{
-    							ip.nb.Action(ip.nb);
-    						}
-    						break;
+    						ヴィオラ吹出し.Down(ヴィオラ吹出し.GetHitColor);
+    						dbs.Down(ref hc);
+    						bs.Down(ref hc);
     					}
+    					ip.Down(ref hc);
+    					break;
+    				case MouseButtons.Right:
+    					if (!ip.選択肢表示)
+    					{
+    						bs["ボタン0"].Action(bs["ボタン0"]);
+    					}
+    					else
+    					{
+    						ip.nb.Action(ip.nb);
+    					}
+    					break;
     				}
     			}
     		};
     		mod.Up = delegate(MouseButtons mb, Vector2D cp, Color hc)
     		{
-    			if (!processing)
+    			if (SDShow)
     			{
-    				if (SDShow)
+    				SaveData.Up(ref hc);
+    			}
+    			else if (mb == MouseButtons.Left)
+    			{
+    				if (!ip.選択肢表示)
     				{
-    					SaveData.Up(ref hc);
+    					ヴィオラ吹出し.Up(ヴィオラ吹出し.GetHitColor);
+    					dbs.Up(ref hc);
+    					bs.Up(ref hc);
     				}
-    				else if (mb == MouseButtons.Left)
-    				{
-    					if (!ip.選択肢表示)
-    					{
-    						ヴィオラ吹出し.Up(ヴィオラ吹出し.GetHitColor);
-    						dbs.Up(ref hc);
-    						bs.Up(ref hc);
-    					}
-    					ip.Up(ref hc);
-    				}
+    				ip.Up(ref hc);
     			}
     		};
     		mod.Move = delegate(MouseButtons mb, Vector2D cp, Color hc)
     		{
-    			if (!processing)
+    			if (SDShow)
     			{
-    				if (SDShow)
+    				SaveData.Move(ref hc);
+    			}
+    			else
+    			{
+    				if (!ip.選択肢表示)
     				{
-    					SaveData.Move(ref hc);
-    				}
-    				else
-    				{
-    					if (!ip.選択肢表示)
+    					dbs.Move(ref hc);
+    					bs.Move(ref hc);
+    					Player説明(ref hc, delegate
     					{
-    						dbs.Move(ref hc);
-    						bs.Move(ref hc);
-    						Player説明(ref hc, delegate
-    						{
-    							si.Set(bre: false);
-    						});
-    					}
-    					ip.Move(ref hc);
+    						si.Set(bre: false);
+    					});
     				}
+    				ip.Move(ref hc);
     			}
     		};
     		mod.Leave = delegate
@@ -4677,7 +4398,7 @@ namespace SlaveMatrix
     				Viola.両触手_S字(0);
     				Viola.両触手_S字(1);
     				Viola.SetSymmetry();
-    				ヴィオラ台詞.Set();
+    				ViolaText.Set();
     				si.Set(bre: false);
     				bs["nr"].Dra = Sta.GameData.借金 != 0;
     				bs["nr"].Dra = Sta.GameData.借金 != 0;
@@ -4691,7 +4412,7 @@ namespace SlaveMatrix
     				a.GH.Clear(Col.Transparent);
     			}
     			a.Draw(OfficeBackground);
-    			Viola.Draw(a, FPS);
+    			//Viola.Draw(a, FPS);
     			ヴィオラ吹出し.Draw(a, FPS);
     			bs.Draw(a);
     			dbs.Draw(a);
@@ -4728,7 +4449,7 @@ namespace SlaveMatrix
     		parT.Text = GameText.戻る;
     		parT.FontSize = 0.15;
     		parT.SizeBase = 0.05;
-    		parT.OP.AddRange(new Out[1] { Shas.Get正方形() });
+    		parT.OP.AddRange(new Out[1] { Shas.GetSquare() });
     		parT.OP.ScalingY(parT.OP.GetCenter(), 0.47);
     		parT.OP.Rotation(parT.OP.GetCenter(), -26.0);
     		parT.Closed = true;
@@ -4755,7 +4476,7 @@ namespace SlaveMatrix
     		parT2.Text = GameText.奴隷;
     		parT2.FontSize = 0.15;
     		parT2.SizeBase = 0.05;
-    		parT2.OP.AddRange(new Out[1] { Shas.Get正方形() });
+    		parT2.OP.AddRange(new Out[1] { Shas.GetSquare() });
     		parT2.OP.ScalingY(parT2.OP.GetCenter(), 0.47);
     		parT2.OP.Rotation(parT2.OP.GetCenter(), -26.0);
     		parT2.Closed = true;
@@ -4776,7 +4497,7 @@ namespace SlaveMatrix
     		parT3.Text = GameText.道具;
     		parT3.FontSize = 0.15;
     		parT3.SizeBase = 0.05;
-    		parT3.OP.AddRange(new Out[1] { Shas.Get正方形() });
+    		parT3.OP.AddRange(new Out[1] { Shas.GetSquare() });
     		parT3.OP.ScalingY(parT3.OP.GetCenter(), 0.47);
     		parT3.OP.Rotation(parT3.OP.GetCenter(), -26.0);
     		parT3.Closed = true;
@@ -4806,7 +4527,7 @@ namespace SlaveMatrix
     		parT4.Text = GameText.ランダム;
     		parT4.FontSize = 0.15;
     		parT4.SizeBase = 0.05;
-    		parT4.OP.AddRange(new Out[1] { Shas.Get正方形() });
+    		parT4.OP.AddRange(new Out[1] { Shas.GetSquare() });
     		parT4.OP.ScalingY(parT4.OP.GetCenter(), 0.5 * num);
     		parT4.Closed = true;
     		parT4.TextColor = Col.White;
@@ -4832,7 +4553,7 @@ namespace SlaveMatrix
     		parT5.Text = GameText.鳥系;
     		parT5.FontSize = 0.15;
     		parT5.SizeBase = 0.05;
-    		parT5.OP.AddRange(new Out[1] { Shas.Get正方形() });
+    		parT5.OP.AddRange(new Out[1] { Shas.GetSquare() });
     		parT5.OP.ScalingY(parT5.OP.GetCenter(), 0.5 * num);
     		parT5.Closed = true;
     		parT5.TextColor = Col.White;
@@ -4853,7 +4574,7 @@ namespace SlaveMatrix
     		parT6.Text = GameText.蛇系;
     		parT6.FontSize = 0.15;
     		parT6.SizeBase = 0.05;
-    		parT6.OP.AddRange(new Out[1] { Shas.Get正方形() });
+    		parT6.OP.AddRange(new Out[1] { Shas.GetSquare() });
     		parT6.OP.ScalingY(parT6.OP.GetCenter(), 0.5 * num);
     		parT6.Closed = true;
     		parT6.TextColor = Col.White;
@@ -4874,7 +4595,7 @@ namespace SlaveMatrix
     		parT7.Text = GameText.獣系;
     		parT7.FontSize = 0.15;
     		parT7.SizeBase = 0.05;
-    		parT7.OP.AddRange(new Out[1] { Shas.Get正方形() });
+    		parT7.OP.AddRange(new Out[1] { Shas.GetSquare() });
     		parT7.OP.ScalingY(parT7.OP.GetCenter(), 0.5 * num);
     		parT7.Closed = true;
     		parT7.TextColor = Col.White;
@@ -4895,7 +4616,7 @@ namespace SlaveMatrix
     		parT8.Text = GameText.水系;
     		parT8.FontSize = 0.15;
     		parT8.SizeBase = 0.05;
-    		parT8.OP.AddRange(new Out[1] { Shas.Get正方形() });
+    		parT8.OP.AddRange(new Out[1] { Shas.GetSquare() });
     		parT8.OP.ScalingY(parT8.OP.GetCenter(), 0.5 * num);
     		parT8.Closed = true;
     		parT8.TextColor = Col.White;
@@ -4916,7 +4637,7 @@ namespace SlaveMatrix
     		parT9.Text = GameText.虫系;
     		parT9.FontSize = 0.15;
     		parT9.SizeBase = 0.05;
-    		parT9.OP.AddRange(new Out[1] { Shas.Get正方形() });
+    		parT9.OP.AddRange(new Out[1] { Shas.GetSquare() });
     		parT9.OP.ScalingY(parT9.OP.GetCenter(), 0.5 * num);
     		parT9.Closed = true;
     		parT9.TextColor = Col.White;
@@ -4937,7 +4658,7 @@ namespace SlaveMatrix
     		parT10.Text = GameText.人型;
     		parT10.FontSize = 0.15;
     		parT10.SizeBase = 0.05;
-    		parT10.OP.AddRange(new Out[1] { Shas.Get正方形() });
+    		parT10.OP.AddRange(new Out[1] { Shas.GetSquare() });
     		parT10.OP.ScalingY(parT10.OP.GetCenter(), 0.5 * num);
     		parT10.Closed = true;
     		parT10.TextColor = Col.White;
@@ -4958,7 +4679,7 @@ namespace SlaveMatrix
     		parT11.Text = GameText.幻獣;
     		parT11.FontSize = 0.15;
     		parT11.SizeBase = 0.05;
-    		parT11.OP.AddRange(new Out[1] { Shas.Get正方形() });
+    		parT11.OP.AddRange(new Out[1] { Shas.GetSquare() });
     		parT11.OP.ScalingY(parT11.OP.GetCenter(), 0.5 * num);
     		parT11.Closed = true;
     		parT11.TextColor = Col.White;
@@ -4979,7 +4700,7 @@ namespace SlaveMatrix
     		parT12.Text = GameText.魔獣;
     		parT12.FontSize = 0.15;
     		parT12.SizeBase = 0.05;
-    		parT12.OP.AddRange(new Out[1] { Shas.Get正方形() });
+    		parT12.OP.AddRange(new Out[1] { Shas.GetSquare() });
     		parT12.OP.ScalingY(parT12.OP.GetCenter(), 0.5 * num);
     		parT12.Closed = true;
     		parT12.TextColor = Col.White;
@@ -5000,7 +4721,7 @@ namespace SlaveMatrix
     		parT13.Text = GameText.竜系;
     		parT13.FontSize = 0.15;
     		parT13.SizeBase = 0.05;
-    		parT13.OP.AddRange(new Out[1] { Shas.Get正方形() });
+    		parT13.OP.AddRange(new Out[1] { Shas.GetSquare() });
     		parT13.OP.ScalingY(parT13.OP.GetCenter(), 0.5 * num);
     		parT13.Closed = true;
     		parT13.TextColor = Col.White;
@@ -5156,7 +4877,7 @@ namespace SlaveMatrix
     		parT14.Text = GameText.チェンジ;
     		parT14.FontSize = 0.15;
     		parT14.SizeBase = 0.05;
-    		parT14.OP.AddRange(new Out[1] { Shas.Get正方形() });
+    		parT14.OP.AddRange(new Out[1] { Shas.GetSquare() });
     		parT14.OP.ScalingY(parT14.OP.GetCenter(), 0.5 * num);
     		parT14.Closed = true;
     		parT14.TextColor = Col.White;
@@ -5182,7 +4903,7 @@ namespace SlaveMatrix
     		parT15.Text = GameText.購入;
     		parT15.FontSize = 0.15;
     		parT15.SizeBase = 0.05;
-    		parT15.OP.AddRange(new Out[1] { Shas.Get正方形() });
+    		parT15.OP.AddRange(new Out[1] { Shas.GetSquare() });
     		parT15.OP.ScalingY(parT15.OP.GetCenter(), 0.5 * num);
     		parT15.Closed = true;
     		parT15.TextColor = Col.White;
@@ -5225,101 +4946,89 @@ namespace SlaveMatrix
     		bs.SetHitColor(Med);
     		mod.Down = delegate(MouseButtons mb, Vector2D cp, Color hc)
     		{
-    			if (!processing)
+    			if (SDShow)
     			{
-    				if (SDShow)
+    				SaveData.Down(ref hc);
+    				if (mb == MouseButtons.Right)
     				{
-    					SaveData.Down(ref hc);
-    					if (mb == MouseButtons.Right && !processing)
-    					{
-                            //TODO fix?
-                            //Sounds.操作.Play();
-    						SDShow = false;
-    						ip.Up(ref hc);
-    						dbs.Move(ref hc);
-    					}
+                        //TODO fix?
+                        //Sounds.操作.Play();
+    					SDShow = false;
+    					ip.Up(ref hc);
+    					dbs.Move(ref hc);
     				}
-    				else
+    			}
+    			else
+    			{
+    				switch (mb)
     				{
-    					switch (mb)
+    				case MouseButtons.Left:
+    					if (!ip.選択肢表示)
     					{
-    					case MouseButtons.Left:
-    						if (!ip.選択肢表示)
-    						{
-    							dbs.Down(ref hc);
-    							bs.Down(ref hc);
-    						}
-    						ip.Down(ref hc);
-    						break;
-    					case MouseButtons.Right:
-    						if (!ip.選択肢表示)
-    						{
-    							bs["ボタン0"].Action(bs["ボタン0"]);
-    						}
-    						else
-    						{
-    							ip.nb.Action(ip.nb);
-    						}
-    						break;
+    						dbs.Down(ref hc);
+    						bs.Down(ref hc);
     					}
+    					ip.Down(ref hc);
+    					break;
+    				case MouseButtons.Right:
+    					if (!ip.選択肢表示)
+    					{
+    						bs["ボタン0"].Action(bs["ボタン0"]);
+    					}
+    					else
+    					{
+    						ip.nb.Action(ip.nb);
+    					}
+    					break;
     				}
     			}
     		};
     		mod.Up = delegate(MouseButtons mb, Vector2D cp, Color hc)
     		{
-    			if (!processing)
+    			if (SDShow)
     			{
-    				if (SDShow)
+    				SaveData.Up(ref hc);
+    			}
+    			else if (mb == MouseButtons.Left)
+    			{
+    				if (!ip.選択肢表示)
     				{
-    					SaveData.Up(ref hc);
+    					dbs.Up(ref hc);
+    					bs.Up(ref hc);
     				}
-    				else if (mb == MouseButtons.Left)
-    				{
-    					if (!ip.選択肢表示)
-    					{
-    						dbs.Up(ref hc);
-    						bs.Up(ref hc);
-    					}
-    					ip.Up(ref hc);
-    				}
+    				ip.Up(ref hc);
     			}
     		};
     		mod.Move = delegate(MouseButtons mb, Vector2D cp, Color hc)
     		{
-    			if (!processing)
+    			if (SDShow)
     			{
-    				if (SDShow)
+    				SaveData.Move(ref hc);
+    			}
+    			else
+    			{
+    				if (!ip.選択肢表示)
     				{
-    					SaveData.Move(ref hc);
-    				}
-    				else
-    				{
-    					if (!ip.選択肢表示)
+    					dbs.Move(ref hc);
+    					bs.Move(ref hc);
+    					Player説明(ref hc, delegate
     					{
-    						dbs.Move(ref hc);
-    						bs.Move(ref hc);
-    						Player説明(ref hc, delegate
-    						{
-    							si.Set(bre: false);
-    						});
-    					}
-    					ip.Move(ref hc);
+    						si.Set(bre: false);
+    					});
     				}
+    				ip.Move(ref hc);
     			}
     		};
     		mod.Leave = delegate
     		{
-    			if (!processing)
+    			if (SDShow)
     			{
-    				if (SDShow)
-    				{
-    					SaveData.Leave();
-    				}
-    				else if (!ip.選択肢表示)
-    				{
-    					dbs.Leave();
-    					bs.Leave();
-    				}
+    				SaveData.Leave();
+    			}
+    			else if (!ip.選択肢表示)
+    			{
+    				dbs.Leave();
+    				bs.Leave();
     			}
     		};
     		mod.Wheel = delegate(MouseButtons mb, Vector2D cp, int dt, Color hc)
@@ -5426,7 +5135,7 @@ namespace SlaveMatrix
     		parT.Text = GameText.戻る;
     		parT.FontSize = 0.15;
     		parT.SizeBase = 0.05;
-    		parT.OP.AddRange(new Out[1] { Shas.Get正方形() });
+    		parT.OP.AddRange(new Out[1] { Shas.GetSquare() });
     		parT.OP.ScalingY(parT.OP.GetCenter(), 0.47);
     		parT.OP.Rotation(parT.OP.GetCenter(), -26.0);
     		parT.Closed = true;
@@ -5453,7 +5162,7 @@ namespace SlaveMatrix
     		parT2.Text = GameText.奴隷;
     		parT2.FontSize = 0.15;
     		parT2.SizeBase = 0.05;
-    		parT2.OP.AddRange(new Out[1] { Shas.Get正方形() });
+    		parT2.OP.AddRange(new Out[1] { Shas.GetSquare() });
     		parT2.OP.ScalingY(parT2.OP.GetCenter(), 0.47);
     		parT2.OP.Rotation(parT2.OP.GetCenter(), -26.0);
     		parT2.Closed = true;
@@ -5473,7 +5182,7 @@ namespace SlaveMatrix
     		parT3.Text = GameText.道具;
     		parT3.FontSize = 0.15;
     		parT3.SizeBase = 0.05;
-    		parT3.OP.AddRange(new Out[1] { Shas.Get正方形() });
+    		parT3.OP.AddRange(new Out[1] { Shas.GetSquare() });
     		parT3.OP.ScalingY(parT3.OP.GetCenter(), 0.47);
     		parT3.OP.Rotation(parT3.OP.GetCenter(), -26.0);
     		parT3.Closed = true;
@@ -5594,160 +5303,148 @@ namespace SlaveMatrix
     		};
     		mod.Down = delegate(MouseButtons mb, Vector2D cp, Color hc)
     		{
-    			if (!processing)
+    			if (SDShow)
     			{
-    				if (SDShow)
+    				SaveData.Down(ref hc);
+    				if (mb == MouseButtons.Right)
     				{
-    					SaveData.Down(ref hc);
-    					if (mb == MouseButtons.Right && !processing)
-    					{
-    						//Sounds.操作.Play();
-    						SDShow = false;
-    						ip.Up(ref hc);
-    						dbs.Move(ref hc);
-    					}
+    					//Sounds.操作.Play();
+    					SDShow = false;
+    					ip.Up(ref hc);
+    					dbs.Move(ref hc);
     				}
-    				else
+    			}
+    			else
+    			{
+    				switch (mb)
     				{
-    					switch (mb)
+    				case MouseButtons.Left:
+    					if (!ip.選択肢表示)
     					{
-    					case MouseButtons.Left:
-    						if (!ip.選択肢表示)
-    						{
-    							dbs.Down(ref hc);
-    							bs.Down(ref hc);
-    							lv.Down(ref hc);
-    						}
-    						break;
-    					case MouseButtons.Right:
-    						if (!ip.選択肢表示)
-    						{
-    							bs["ボタン0"].Action(bs["ボタン0"]);
-    						}
-    						else
-    						{
-    							ip.nb.Action(ip.nb);
-    						}
-    						break;
+    						dbs.Down(ref hc);
+    						bs.Down(ref hc);
+    						lv.Down(ref hc);
     					}
+    					break;
+    				case MouseButtons.Right:
+    					if (!ip.選択肢表示)
+    					{
+    						bs["ボタン0"].Action(bs["ボタン0"]);
+    					}
+    					else
+    					{
+    						ip.nb.Action(ip.nb);
+    					}
+    					break;
     				}
     			}
     		};
     		mod.Up = delegate(MouseButtons mb, Vector2D cp, Color hc)
     		{
-    			if (!processing)
+    			if (SDShow)
     			{
-    				if (SDShow)
+    				SaveData.Up(ref hc);
+    			}
+    			else if (mb == MouseButtons.Left)
+    			{
+    				if (!ip.選択肢表示)
     				{
-    					SaveData.Up(ref hc);
+    					dbs.Up(ref hc);
+    					bs.Up(ref hc);
+    					lv.Up(ref hc);
     				}
-    				else if (mb == MouseButtons.Left)
-    				{
-    					if (!ip.選択肢表示)
-    					{
-    						dbs.Up(ref hc);
-    						bs.Up(ref hc);
-    						lv.Up(ref hc);
-    					}
-    					ip.Up(ref hc);
-    				}
+    				ip.Up(ref hc);
     			}
     		};
     		mod.Move = delegate(MouseButtons mb, Vector2D cp, Color hc)
     		{
-    			if (!processing)
+    			if (SDShow)
     			{
-    				if (SDShow)
+    				SaveData.Move(ref hc);
+    			}
+    			else
+    			{
+    				if (!ip.選択肢表示)
     				{
-    					SaveData.Move(ref hc);
-    				}
-    				else
-    				{
-    					if (!ip.選択肢表示)
+    					dbs.Move(ref hc);
+    					bs.Move(ref hc);
+    					lv.Move(ref hc);
+    					if (lv.bs["0"].Pars.Values.First().ToPar().HitColor == hc)
     					{
-    						dbs.Move(ref hc);
-    						bs.Move(ref hc);
-    						lv.Move(ref hc);
-    						if (lv.bs["0"].Pars.Values.First().ToPar().HitColor == hc)
-    						{
-    							ip.TextIm = GameText.ペニスを模したバイブ + "\r\n" + GameText.刺激は控えめ;
-    						}
-    						if (lv.bs["1"].Pars.Values.First().ToPar().HitColor == hc)
-    						{
-    							ip.TextIm = GameText.一般的なバイブ + "\r\n" + GameText.ディルドバイブより刺激が強い;
-    						}
-    						if (lv.bs["2"].Pars.Values.First().ToPar().HitColor == hc)
-    						{
-    							ip.TextIm = GameText.振動と回転の2つの刺激をもたらすバイブ;
-    						}
-    						if (lv.bs["3"].Pars.Values.First().ToPar().HitColor == hc)
-    						{
-    							ip.TextIm = GameText.強力な振動のバイブ + "\r\n" + GameText.刺激が強い;
-    						}
-    						if (lv.bs["4"].Pars.Values.First().ToPar().HitColor == hc)
-    						{
-    							ip.TextIm = GameText.アナルの調教に適したバイブ;
-    						}
-    						if (lv.bs["5"].Pars.Values.First().ToPar().HitColor == hc)
-    						{
-    							ip.TextIm = GameText.痛みを与えるための道具;
-    						}
-    						if (lv.bs["6"].Pars.Values.First().ToPar().HitColor == hc)
-    						{
-    							ip.TextIm = GameText.緊張を解きほぐすために利用する;
-    						}
-    						if (lv.bs["7"].Pars.Values.First().ToPar().HitColor == hc)
-    						{
-    							ip.TextIm = GameText.陰毛を剃ることが出来る;
-    						}
-    						if (lv.bs["8"].Pars.Values.First().ToPar().HitColor == hc)
-    						{
-    							ip.TextIm = GameText.吸着振動するキャップ;
-    						}
-    						if (lv.bs["9"].Pars.Values.First().ToPar().HitColor == hc)
-    						{
-    							ip.TextIm = GameText.刺激の弱いバイブの一種;
-    						}
-    						if (lv.bs["10"].Pars.Values.First().ToPar().HitColor == hc)
-    						{
-    							ip.TextIm = GameText.アナルの調教に適した道具;
-    						}
-    						if (lv.bs["11"].Pars.Values.First().ToPar().HitColor == hc)
-    						{
-    							ip.TextIm = GameText.奴隷の視界を遮るための道具;
-    						}
-    						if (lv.bs["12"].Pars.Values.First().ToPar().HitColor == hc)
-    						{
-    							ip.TextIm = GameText.奴隷の口をふさぐための道具;
-    						}
-    						if (lv.bs["13"].Pars.Values.First().ToPar().HitColor == hc)
-    						{
-    							ip.TextIm = GameText.写真を撮影することが出来る;
-    						}
-    						if (lv.bs["14"].Pars.Values.First().ToPar().HitColor == hc)
-    						{
-    							ip.TextIm = GameText.フロアを増設し収容できる奴隷の数を増やす;
-    						}
-    						Player説明(ref hc, subinfo);
+    						ip.TextIm = GameText.ペニスを模したバイブ + "\r\n" + GameText.刺激は控えめ;
     					}
-    					ip.Move(ref hc);
+    					if (lv.bs["1"].Pars.Values.First().ToPar().HitColor == hc)
+    					{
+    						ip.TextIm = GameText.一般的なバイブ + "\r\n" + GameText.ディルドバイブより刺激が強い;
+    					}
+    					if (lv.bs["2"].Pars.Values.First().ToPar().HitColor == hc)
+    					{
+    						ip.TextIm = GameText.振動と回転の2つの刺激をもたらすバイブ;
+    					}
+    					if (lv.bs["3"].Pars.Values.First().ToPar().HitColor == hc)
+    					{
+    						ip.TextIm = GameText.強力な振動のバイブ + "\r\n" + GameText.刺激が強い;
+    					}
+    					if (lv.bs["4"].Pars.Values.First().ToPar().HitColor == hc)
+    					{
+    						ip.TextIm = GameText.アナルの調教に適したバイブ;
+    					}
+    					if (lv.bs["5"].Pars.Values.First().ToPar().HitColor == hc)
+    					{
+    						ip.TextIm = GameText.痛みを与えるための道具;
+    					}
+    					if (lv.bs["6"].Pars.Values.First().ToPar().HitColor == hc)
+    					{
+    						ip.TextIm = GameText.緊張を解きほぐすために利用する;
+    					}
+    					if (lv.bs["7"].Pars.Values.First().ToPar().HitColor == hc)
+    					{
+    						ip.TextIm = GameText.陰毛を剃ることが出来る;
+    					}
+    					if (lv.bs["8"].Pars.Values.First().ToPar().HitColor == hc)
+    					{
+    						ip.TextIm = GameText.吸着振動するキャップ;
+    					}
+    					if (lv.bs["9"].Pars.Values.First().ToPar().HitColor == hc)
+    					{
+    						ip.TextIm = GameText.刺激の弱いバイブの一種;
+    					}
+    					if (lv.bs["10"].Pars.Values.First().ToPar().HitColor == hc)
+    					{
+    						ip.TextIm = GameText.アナルの調教に適した道具;
+    					}
+    					if (lv.bs["11"].Pars.Values.First().ToPar().HitColor == hc)
+    					{
+    						ip.TextIm = GameText.奴隷の視界を遮るための道具;
+    					}
+    					if (lv.bs["12"].Pars.Values.First().ToPar().HitColor == hc)
+    					{
+    						ip.TextIm = GameText.奴隷の口をふさぐための道具;
+    					}
+    					if (lv.bs["13"].Pars.Values.First().ToPar().HitColor == hc)
+    					{
+    						ip.TextIm = GameText.写真を撮影することが出来る;
+    					}
+    					if (lv.bs["14"].Pars.Values.First().ToPar().HitColor == hc)
+    					{
+    						ip.TextIm = GameText.フロアを増設し収容できる奴隷の数を増やす;
+    					}
+    					Player説明(ref hc, subinfo);
     				}
+    				ip.Move(ref hc);
     			}
     		};
     		mod.Leave = delegate
     		{
-    			if (!processing)
+    			if (SDShow)
     			{
-    				if (SDShow)
-    				{
-    					SaveData.Leave();
-    				}
-    				else if (!ip.選択肢表示)
-    				{
-    					dbs.Leave();
-    					bs.Leave();
-    					lv.Leave();
-    				}
+    				SaveData.Leave();
+    			}
+    			else if (!ip.選択肢表示)
+    			{
+    				dbs.Leave();
+    				bs.Leave();
+    				lv.Leave();
     			}
     		};
     		mod.Wheel = delegate
@@ -5830,11 +5527,11 @@ namespace SlaveMatrix
     				{
     					if (日利益額 != 0)
     					{
-    						Sta.GameData.所持金 = Sta.GameData.所持金.加算(日利益額);
+    						Sta.GameData.所持金 = Sta.GameData.所持金.overflow_add(日利益額);
     					}
     					if (日利子額 != 0)
     					{
-    						Sta.GameData.借金 = Sta.GameData.借金.加算(日利子額);
+    						Sta.GameData.借金 = Sta.GameData.借金.overflow_add(日利子額);
     					}
     					//Sounds.精算.Play();
     					ip.UpdateSub2();
@@ -5866,17 +5563,13 @@ namespace SlaveMatrix
     				ip.Mai2Show = true;
     				ip.SubShow = true;
     				ip.Sub2Show = true;
-    				while (dayp)
-    				{
-    					//Application.DoEvents();
-    				}
-    				ip.Mai2Im = (from e in 日終了ログa
+    				ip.Mai2Im = (from e in DayEndLog
     					where !string.IsNullOrWhiteSpace(e)
     					select e.Substring(0, e.Length - 2)).Join("\r\n") + ((労働利益 != 0) ? ("\r\n" + GameText.労働利益 + " + " + 労働利益.ToString("#,0")) : "");
     				ip.TextIm = ((日利益額 != 0) ? (GameText.利益 + " + " + 日利益額.ToString("#,0") + "\r\n") : "") + ((日利子額 != 0) ? (GameText.利子 + " + " + 日利子額.ToString("#,0") + "\r\n") : "") + ">> Next days.";
     				if (TrainingTarget != null && Sta.GameData.TrainingTarget != null)
     				{
-    					対象状態初期化();
+    					InitializeTrainingTarget();
     					妊娠状態反映();
     				}
     				si.Set(bre: false);
@@ -5913,22 +5606,7 @@ namespace SlaveMatrix
     		double num = 0.2;
     		double num2 = 0.039;
     		double num3 = 0.15;
-    		ParT parT = new ParT();
-    		parT.Font = new Font("MS Gothic", 0.1f);
-    		parT.PositionBase = DrawBuffer.GetPosition(new Vector2D(num2 + 0.19, num3 + 0.72));
-    		parT.Text = GameText.完了;
-    		parT.FontSize = 0.15;
-    		parT.SizeBase = 0.05;
-    		parT.OP.AddRange(new Out[1] { Shas.Get正方形() });
-    		parT.OP.ScalingY(parT.OP.GetCenter(), 0.47);
-    		parT.Closed = true;
-    		parT.TextColor = Col.White;
-    		parT.BrushColor = Color.FromArgb(160, Col.Black);
-    		parT.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    		parT.HitColor = Med.GetUniqueColor();
-    		parT.StringFormat.Alignment = StringAlignment.Center;
-    		parT.StringFormat.LineAlignment = StringAlignment.Center;
-    		But1 完了 = new But1(parT, delegate
+    		But1 完了 = MyUI.Button(Med, DrawBuffer, GameText.完了, new Vector2D(num2 + 0.19, num3 + 0.72), delegate
     		{
     			Sta.GameData.配色 = new 主人公配色(Sta.GameData.色);
     			Player.UI.ハンド右.再配色(Sta.GameData.配色);
@@ -6304,18 +5982,6 @@ namespace SlaveMatrix
     				}
     			}
     		};
-    		mod.Up = delegate
-    		{
-    		};
-    		mod.Move = delegate
-    		{
-    		};
-    		mod.Leave = delegate
-    		{
-    		};
-    		mod.Wheel = delegate
-    		{
-    		};
     		mod.Setting = delegate
     		{
     			ip.UpdateSub2();
@@ -6576,12 +6242,6 @@ namespace SlaveMatrix
     		{
     			ip.Move(ref hc);
     		};
-    		mod.Leave = delegate
-    		{
-    		};
-    		mod.Wheel = delegate
-    		{
-    		};
     		mod.Setting = delegate
     		{
     			ip.Mai.Feed.Dra = false;
@@ -6604,7 +6264,7 @@ namespace SlaveMatrix
     		DrawOP1 = delegate(Are a, FPS FPS)
     		{
     			a.Draw(OfficeBackground);
-    			Viola.Draw(a, FPS);
+    			//Viola.Draw(a, FPS);
     			ヴィオラ吹出し.Draw(a, FPS);
     			dbs.Draw(a);
     			ip.Draw(a, FPS);
@@ -6742,12 +6402,6 @@ namespace SlaveMatrix
     		{
     			ip.Move(ref hc);
     		};
-    		mod.Leave = delegate
-    		{
-    		};
-    		mod.Wheel = delegate
-    		{
-    		};
     		mod.Setting = delegate
     		{
     			Viola.両目_見つめ();
@@ -6767,7 +6421,7 @@ namespace SlaveMatrix
     				a.GH.Clear(Col.Transparent);
     			}
     			a.Draw(BasementBackground);
-    			Viola.Draw(a, FPS);
+    			//Viola.Draw(a, FPS);
     			ヴィオラ吹出し.Draw(a, FPS);
     			dbs.Draw(a);
     			ip.Draw(a, FPS);
@@ -7048,12 +6702,6 @@ namespace SlaveMatrix
     		{
     			ip.Move(ref hc);
     		};
-    		mod.Leave = delegate
-    		{
-    		};
-    		mod.Wheel = delegate
-    		{
-    		};
     		mod.Setting = delegate
     		{
     			ip.UpdateSub2();
@@ -7080,7 +6728,7 @@ namespace SlaveMatrix
     				a.GH.Clear(Col.Transparent);
     			}
     			a.Draw(OfficeBackground);
-    			Viola.Draw(a, FPS);
+    			//Viola.Draw(a, FPS);
     			ヴィオラ吹出し.Draw(a, FPS);
     			dbs.Draw(a);
     			ip.Draw(a, FPS);
@@ -7162,12 +6810,6 @@ namespace SlaveMatrix
     		{
     			ip.Move(ref hc);
     		};
-    		mod.Leave = delegate
-    		{
-    		};
-    		mod.Wheel = delegate
-    		{
-    		};
     		mod.Setting = delegate
     		{
     			ip.UpdateSub2();
@@ -7194,7 +6836,7 @@ namespace SlaveMatrix
     				a.GH.Clear(Col.Transparent);
     			}
     			a.Draw(OfficeBackground);
-    			Viola.Draw(a, FPS);
+    			//Viola.Draw(a, FPS);
     			ヴィオラ吹出し.Draw(a, FPS);
     			dbs.Draw(a);
     			ip.Draw(a, FPS);
@@ -7712,272 +7354,117 @@ namespace SlaveMatrix
     		return mod;
     	}
 
+
+
+
+
     	static Mods()
     	{
     		TrainingTarget = null;
-    		mv = new MotV(0.0, 1.0)
-    		{
-    			BaseSpeed = 2.0
-    		};
-    		sta = false;
-    		v = 0.0;
-    		単位返済段階額 = 1666666666uL;
-    		DemandMax = 8.0;
+    		fade_in = false;
     		SDShow = false;
     		save = false;
     		title = false;
-    		processing = false;
-    		日終了ログa = new string[MaxRoomNumber];
+            start = false;
+
+
+            単位返済段階額 = 1666666666uL;
+            DemandMax = 8.0;
+            DayEndLog = new string[MaxRoomNumber];
     		労働利益 = 0uL;
     		日利益額 = 0uL;
     		日利子額 = 0uL;
-    		dayp = false;
-    		cts = new CancellationTokenSource();
-    		start = false;
     	}
 
-    	public static void SensesButton()
-    	{
-    		double x = 0.6;
-    		double y = 0.9075;
-    		if (Program.biggerWindow)
-    		{
-    			x = 0.695;
-    			y = 0.932;
-    		}
-    		ParT parT = new ParT();
-    		parT.Font = new Font("MS Gothic", 0.1f);
-    		parT.PositionBase = DrawBuffer.GetPosition(x, y);
-    		parT.Text = "Senses";
-    		parT.FontSize = 0.14;
-    		parT.SizeBase = 0.05;
-    		parT.OP.AddRange(new Out[1] { Shas.Get正方形() });
-    		parT.OP.ScalingXY(parT.OP.GetCenter(), 0.87, 0.23);
-    		parT.Closed = true;
-    		parT.TextColor = Col.White;
-    		parT.BrushColor = Color.FromArgb(160, Col.Black);
-    		parT.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    		parT.StringFormat.Alignment = StringAlignment.Center;
-    		parT.StringFormat.LineAlignment = StringAlignment.Center;
-    		dbs.Add("Senses", new But1(parT, delegate
-    		{
-    			//Sounds.操作.Play();
-    			Sta.ShowSenses = !Sta.ShowSenses;
-    		}));
-    	}
 
-    	public static void ToJsonButton(Med med)
-    	{
-    		double x = 0.6;
-    		double y = 0.9075;
-    		if (Program.biggerWindow)
-    		{
-    			x = 0.695;
-    			y = 0.932;
-    			if (Sta.SensesButton)
-    			{
-    				x = 0.62;
-    			}
-    		}
-    		if (!Program.biggerWindow && Sta.SensesButton)
-    		{
-    			x = 0.5;
-    		}
-    		ParT parT = new ParT();
-    		parT.Font = new Font("MS Gothic", 0.1f);
-    		parT.PositionBase = DrawBuffer.GetPosition(x, y);
-    		parT.Text = "SaveJSON";
-    		parT.FontSize = 0.14;
-    		parT.SizeBase = 0.05;
-    		parT.OP.AddRange(new Out[1] { Shas.Get正方形() });
-    		parT.OP.ScalingXY(parT.OP.GetCenter(), 0.87, 0.23);
-    		parT.Closed = true;
-    		parT.TextColor = Col.White;
-    		parT.BrushColor = Color.FromArgb(160, Col.Black);
-    		parT.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    		parT.StringFormat.Alignment = StringAlignment.Center;
-    		parT.StringFormat.LineAlignment = StringAlignment.Center;
-    		dbs.Add("SaveJSON", new But1(parT, delegate
-    		{
-    			//Sounds.操作.Play();
-    			SaveData.bs["0"].Dra = false;
-    			save = true;
-    			SetJSLlv(med);
-    			Color HitColor = Col.Empty;
-    			SaveData.Move(ref HitColor);
-    			SDShow = true;
-    			ip.SubInfoIm = "RCl:" + GameText.戻る;
-    		}));
-    	}
-
-    	public static void UnJsonButton(Med med)
-    	{
-    		double y = 0.9075;
-    		double x = 0.5;
-    		if (Program.biggerWindow)
-    		{
-    			x = 0.62;
-    			y = 0.932;
-    			if (Sta.SensesButton)
-    			{
-    				x = 0.545;
-    			}
-    		}
-    		if (!Program.biggerWindow && Sta.SensesButton)
-    		{
-    			x = 0.4;
-    		}
-    		ParT parT = new ParT();
-    		parT.Font = new Font("MS Gothic", 0.1f);
-    		parT.PositionBase = DrawBuffer.GetPosition(x, y);
-    		parT.Text = "LoadJSON";
-    		parT.FontSize = 0.14;
-    		parT.SizeBase = 0.05;
-    		parT.OP.AddRange(new Out[1] { Shas.Get正方形() });
-    		parT.OP.ScalingXY(parT.OP.GetCenter(), 0.87, 0.23);
-    		parT.Closed = true;
-    		parT.TextColor = Col.White;
-    		parT.BrushColor = Color.FromArgb(160, Col.Black);
-    		parT.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    		parT.StringFormat.Alignment = StringAlignment.Center;
-    		parT.StringFormat.LineAlignment = StringAlignment.Center;
-    		dbs.Add("LoadJSON", new But1(parT, delegate
-    		{
-    			//Sounds.操作.Play();
-    			SaveData.bs["0"].Dra = true;
-    			save = false;
-    			title = false;
-    			SetJSLlv(med);
-    			Color HitColor = Col.Empty;
-    			SaveData.Move(ref HitColor);
-    			SDShow = true;
-    			ip.SubInfoIm = "RCl:" + GameText.戻る;
-    		}));
-    	}
+        //buttons added by the other guy
 
     	public static void NewButtons(Med med)
     	{
     		if (Sta.SensesButton)
     		{
-    			SensesButton();
-    		}
+                double x = 0.6;
+                double y = 0.9075;
+                if (Sta.BigWindow)
+                {
+                    x = 0.695;
+                    y = 0.932;
+                }
+
+                dbs.Add("Senses", MyUI.Button(med, DrawBuffer, "Senses", new Vector2D(x, y), delegate
+                {
+                    //Sounds.操作.Play();
+                    Sta.ShowSenses = !Sta.ShowSenses;
+                }));
+            }
     		if (Sta.JsonButton)
     		{
-    			ToJsonButton(med);
-    			UnJsonButton(med);
+                {
+                    double x = 0.6;
+                    double y = 0.9075;
+                    if (Sta.BigWindow)
+                    {
+                        x = 0.695;
+                        y = 0.932;
+                        if (Sta.SensesButton)
+                        {
+                            x = 0.62;
+                        }
+                    }
+                    if (!Sta.BigWindow && Sta.SensesButton)
+                    {
+                        x = 0.5;
+                    }
+
+                    dbs.Add("SaveJSON", MyUI.Button(med, DrawBuffer, "SaveJSON", new Vector2D(x, y), delegate
+                    {
+                        //Sounds.操作.Play();
+                        SaveData.bs["0"].Dra = false;
+                        save = true;
+                        SetJSLlv(med);
+                        Color HitColor = Col.Empty;
+                        SaveData.Move(ref HitColor);
+                        SDShow = true;
+                        ip.SubInfoIm = "RCl:" + GameText.戻る;
+                    }));
+                }
+
+                {
+                    double y = 0.9075;
+                    double x = 0.5;
+                    if (Sta.BigWindow)
+                    {
+                        x = 0.62;
+                        y = 0.932;
+                        if (Sta.SensesButton)
+                        {
+                            x = 0.545;
+                        }
+                    }
+                    if (!Sta.BigWindow && Sta.SensesButton)
+                    {
+                        x = 0.4;
+                    }
+
+                    dbs.Add("LoadJSON", MyUI.Button(med, DrawBuffer, "LoadJSON", new Vector2D(x, y), delegate
+                    {
+                        //Sounds.操作.Play();
+                        SaveData.bs["0"].Dra = true;
+                        save = false;
+                        title = false;
+                        SetJSLlv(med);
+                        Color HitColor = Col.Empty;
+                        SaveData.Move(ref HitColor);
+                        SDShow = true;
+                        ip.SubInfoIm = "RCl:" + GameText.戻る;
+                    }));
+                }
     		}
     	}
 
-    	public static void SetJSLlv(Med med)
-    	{
-    		SaveData.Acts = jsllv(med);
-    	}
 
-    	private static IEnumerable<TA> jsllv(Med med)
-    	{
-    		int k = 0;
-    		string[] array = Sta.JSDPaths();
-    		foreach (string text in array)
-    		{
-    			string path = text;
-    			int i = k;
-    			bool f = path == null;
-    			yield return new TA(f ? (i + ": No data") : Path.GetFileNameWithoutExtension(path).Replace("：", ":").Replace("_", "/"), delegate
-    			{
-    				if (!processing)
-    				{
-    					//Sounds.操作.Play();
-    					if (save)
-    					{
-    						processing = true;
-    						JsonSave(path, i, med);
-    					}
-    					else if (!f)
-    					{
-    						processing = true;
-    						JsonLoad(path, i, med);
-    					}
-    				}
-    			});
-    			k++;
-    		}
-    	}
 
-    	private static void JsonSave(string Path, int i, Med med)
-    	{
-    		ip.SubInfoIm = GameText.セーブ中です + "\r\n" + GameText.しばらくお待ちください;
-
-    		if (Path != null)
-    		{
-                System.IO.File.Delete(Path);
-    		}
-    		Sta.GDSaveJson(i);
-    		SetJSLlv(med);
-    		SDShow = false;
-    		ip.SubInfoIm = i + ": " + Sta.GameData.GetSaveDateString() + "\r\n" + GameText.セーブしました;
-    		processing = false;
-    		//Sounds.完了.Play();
-    	}
-
-    	private static void JsonLoad(string Path, int i, Med med)
-    	{
-    		cts.Cancel();
-    		ip.SubInfoIm = GameText.ロード中です + "\r\n" + GameText.しばらくお待ちください;
-		
-    		Sta.DontScar = true;
-    		if (Sta.TranslateJson)
-    		{
-    			string text = Sta.CurrentDirectory + "temp.json";
-    			string contents = Sta.Translate(Path, 1);
-    			File.WriteAllText(text, contents);
-    			Sta.GameData = Ser.UnJson<GameState>(text);
-                System.IO.File.Delete(text);
-    		}
-    		else
-    		{
-    			Sta.GameData = Ser.UnJson<GameState>(Path);
-    		}
-    		Sta.DontScar = false;
-    		Cha d = Viola;
-    		Viola = new Cha(med, DrawBuffer, Sta.GameData.ヴィオラ.ChaD);
-    		Viola.Set衣装(Sta.GameData.ヴィオラ.着衣);
-    		ヴィオラ吹出し.接続(Viola.Bod.頭.口_接続点);
-    		med.InvokeL(delegate
-    		{
-    			Initialize();
-    			if (d != null)
-    			{
-    				d.Dispose();
-    			}
-    			if (TrainingTarget != null)
-    			{
-    				TrainingTarget.Dispose();
-    				TrainingTarget = null;
-    			}
-    			SDShow = false;
-    			if (title)
-    			{
-    				med.SwitchMode("メインフォーム", DrawBuffer, メインフォーム描画);
-    			}
-    			else
-    			{
-    				med.Mode = "メインフォーム";
-    				ip.SubInfoIm = i + ": " + Sta.GameData.GetSaveDateString() + "\r\n" + GameText.ロードしました;
-    			}
-    			processing = false;
-    			SetDemandMaximum();
-    			if (Sta.GameData.Slaves.Length < MaxRoomNumber)
-    			{
-    				Unit[] array = new Unit[MaxRoomNumber];
-    				Array.Copy(Sta.GameData.Slaves, array, Sta.GameData.Slaves.Length);
-    				Sta.GameData.Slaves = array;
-    			}
-    			Sta.GameData.Gen = new Generator[9];
-    			Sta.GameData.GenInstance();
-    			//Sounds.完了.Play();
-    		});
-    	}
-
+        //room buttons or smthn?
     	public static void MoveRoomDown()
     	{
     		if (Sta.GameData.TrainingTarget != null)
@@ -8098,167 +7585,6 @@ namespace SlaveMatrix
     			Sta.GameData.Slaves[num - 1] = unit;
     			Sta.GameData.TrainingTarget = Sta.GameData.Slaves[num - 1];
     		}
-    	}
-
-    	public static But MoveRoomDownButton(Module mod)
-    	{
-    		double x = 0.195;
-    		double y = 0.1625;
-    		if (Program.biggerWindow)
-    		{
-    			x = 0.146;
-    			y = 0.14;
-    		}
-    		ParT parT = new ParT();
-    		parT.Font = new Font("MS Gothic", 0.1f);
-    		parT.PositionBase = DrawBuffer.GetPosition(x, y);
-    		parT.Text = "Room ▼";
-    		parT.FontSize = 0.14;
-    		parT.SizeBase = 0.05;
-    		parT.OP.AddRange(new Out[1] { Shas.Get正方形() });
-    		parT.OP.ScalingXY(parT.OP.GetCenter(), 0.87, 0.23);
-    		parT.Closed = true;
-    		parT.TextColor = Col.White;
-    		parT.BrushColor = Color.FromArgb(160, Col.Black);
-    		parT.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    		parT.StringFormat.Alignment = StringAlignment.Center;
-    		parT.StringFormat.LineAlignment = StringAlignment.Center;
-    		return new But1(parT, delegate
-    		{
-    			//Sounds.操作.Play();
-    			MoveRoomDown();
-    			mod.Setting();
-    			if (Sta.AlwaysUseName)
-    			{
-    				npl.Text = GameText.収容番号 + Sta.GameData.TrainingTarget.Number + "\r\n" + Sta.GameData.TrainingTarget.Name;
-    			}
-    			else
-    			{
-    				npl.Text = GameText.収容番号 + Sta.GameData.TrainingTarget.Number + (Sta.GameData.TrainingTarget.Trained ? ("\r\n" + Sta.GameData.TrainingTarget.Name) : ("\r\n" + Sta.GameData.TrainingTarget.Race));
-    			}
-    		});
-    	}
-
-    	public static But MoveRoomUpButton(Module mod)
-    	{
-    		double x = 0.195;
-    		double y = 0.12;
-    		if (Program.biggerWindow)
-    		{
-    			x = 0.146;
-    			y = 0.11;
-    		}
-    		ParT parT = new ParT();
-    		parT.Font = new Font("MS Gothic", 0.1f);
-    		parT.PositionBase = DrawBuffer.GetPosition(x, y);
-    		parT.Text = "Room ▲";
-    		parT.FontSize = 0.14;
-    		parT.SizeBase = 0.05;
-    		parT.OP.AddRange(new Out[1] { Shas.Get正方形() });
-    		parT.OP.ScalingXY(parT.OP.GetCenter(), 0.87, 0.23);
-    		parT.Closed = true;
-    		parT.TextColor = Col.White;
-    		parT.BrushColor = Color.FromArgb(160, Col.Black);
-    		parT.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    		parT.StringFormat.Alignment = StringAlignment.Center;
-    		parT.StringFormat.LineAlignment = StringAlignment.Center;
-    		return new But1(parT, delegate
-    		{
-    			//Sounds.操作.Play();
-    			MoveRoomUp();
-    			mod.Setting();
-    			if (Sta.AlwaysUseName)
-    			{
-    				npl.Text = GameText.収容番号 + Sta.GameData.TrainingTarget.Number + "\r\n" + Sta.GameData.TrainingTarget.Name;
-    			}
-    			else
-    			{
-    				npl.Text = GameText.収容番号 + Sta.GameData.TrainingTarget.Number + (Sta.GameData.TrainingTarget.Trained ? ("\r\n" + Sta.GameData.TrainingTarget.Name) : ("\r\n" + Sta.GameData.TrainingTarget.Race));
-    			}
-    		});
-    	}
-
-    	public static But MoveFloorDownButton(Module mod)
-    	{
-    		double x = 0.195;
-    		double y = 0.2475;
-    		if (Program.biggerWindow)
-    		{
-    			x = 0.146;
-    			y = 0.2;
-    		}
-    		ParT parT = new ParT();
-    		parT.Font = new Font("MS Gothic", 0.1f);
-    		parT.PositionBase = DrawBuffer.GetPosition(x, y);
-    		parT.Text = "Floor ▼";
-    		parT.FontSize = 0.14;
-    		parT.SizeBase = 0.05;
-    		parT.OP.AddRange(new Out[1] { Shas.Get正方形() });
-    		parT.OP.ScalingXY(parT.OP.GetCenter(), 0.87, 0.23);
-    		parT.Closed = true;
-    		parT.TextColor = Col.White;
-    		parT.BrushColor = Color.FromArgb(160, Col.Black);
-    		parT.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    		parT.StringFormat.Alignment = StringAlignment.Center;
-    		parT.StringFormat.LineAlignment = StringAlignment.Center;
-    		return new But1(parT, delegate
-    		{
-    			//Sounds.操作.Play();
-    			MoveFloorDown();
-    			mod.Setting();
-    			if (Sta.AlwaysUseName)
-    			{
-    				npl.Text = GameText.収容番号 + Sta.GameData.TrainingTarget.Number + "\r\n" + Sta.GameData.TrainingTarget.Name;
-    			}
-    			else
-    			{
-    				npl.Text = GameText.収容番号 + Sta.GameData.TrainingTarget.Number + (Sta.GameData.TrainingTarget.Trained ? ("\r\n" + Sta.GameData.TrainingTarget.Name) : ("\r\n" + Sta.GameData.TrainingTarget.Race));
-    			}
-    		});
-    	}
-
-    	public static But MoveFloorUpButton(Module mod)
-    	{
-    		double x = 0.195;
-    		double y = 0.205;
-    		if (Program.biggerWindow)
-    		{
-    			x = 0.146;
-    			y = 0.17;
-    		}
-    		ParT parT = new ParT();
-    		parT.Font = new Font("MS Gothic", 0.1f);
-    		parT.PositionBase = DrawBuffer.GetPosition(x, y);
-    		parT.Text = "Floor ▲";
-    		parT.FontSize = 0.14;
-    		parT.SizeBase = 0.05;
-    		parT.OP.AddRange(new Out[1] { Shas.Get正方形() });
-    		parT.OP.ScalingXY(parT.OP.GetCenter(), 0.87, 0.23);
-    		parT.Closed = true;
-    		parT.TextColor = Col.White;
-    		parT.BrushColor = Color.FromArgb(160, Col.Black);
-    		parT.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    		parT.StringFormat.Alignment = StringAlignment.Center;
-    		parT.StringFormat.LineAlignment = StringAlignment.Center;
-    		return new But1(parT, delegate
-    		{
-    			//Sounds.操作.Play();
-    			MoveFloorUp();
-    			mod.Setting();
-    			if (Sta.AlwaysUseName)
-    			{
-    				npl.Text = GameText.収容番号 + Sta.GameData.TrainingTarget.Number + "\r\n" + Sta.GameData.TrainingTarget.Name;
-    			}
-    			else
-    			{
-    				npl.Text = GameText.収容番号 + Sta.GameData.TrainingTarget.Number + (Sta.GameData.TrainingTarget.Trained ? ("\r\n" + Sta.GameData.TrainingTarget.Name) : ("\r\n" + Sta.GameData.TrainingTarget.Race));
-    			}
-    		});
-    	}
-
-    	public static void setName()
-    	{
-    		npl.Text = GameText.収容番号 + Sta.GameData.TrainingTarget.Number + "\r\n" + Sta.GameData.TrainingTarget.Name;
     	}
     }
 }

@@ -65,14 +65,6 @@ namespace _2DGAMELIB
     		Color.Black
     	};
 
-    	private const int LOGPIXELSX = 88;
-
-    	private const int LOGPIXELSY = 90;
-
-    	public static double dpiX;
-
-    	public static double dpiY;
-
     	public static double DpiX;
 
     	public static double DpiY;
@@ -82,12 +74,6 @@ namespace _2DGAMELIB
     	public bool ShowFPS;
 
     	//public Control BaseControlC => baseControl;
-
-    	public GlImage BaseControl => baseControl;
-
-    	public double ResMag => resMag;
-
-    	public Vector2D ResVector => resVector;
 
     	public string Mode
     	{
@@ -320,30 +306,28 @@ namespace _2DGAMELIB
     	{
     		baseControl.BitmapSetting(BD);
     		Modes[mode].Setting();
-    		double FPS = 0.0;
 
 
     		Action action = delegate
     		{
-    			FPS = FPSF.Value;
-    			if (FPS > 1.0)
+    			if (FPSF.Value > 1.0)
     			{
     				Modes[mode].Draw(FPSF);
-    			}
+
+                    if (ShowFPS)
+                    {
+                        baseControl.SetTitle(UITitle + " - FPS: " + System.Math.Round(FPSF.Value, 2));
+                    }
+                }
 
                 GD.DrawImage(BH, new Point(0, 0));
     			baseControl.SetBitmap(BD);
-    		};
+            };
 
 
     		while (Drive)
     		{
     			FPSF.FPSFixed(action);
-
-                if (ShowFPS)
-    			{
-    				baseControl.SetTitle(UITitle + " - FPS: " + System.Math.Round(FPSF.Value, 2));
-    			}
     			baseControl.PollEvents();
     		}
     	}
@@ -426,20 +410,6 @@ namespace _2DGAMELIB
     		{
     			HitColors.Remove(p.HitColor);
     		}
-    	}
-
-    	public void Dispose()
-    	{
-    		Drive = false;
-    		foreach (Module value in Modes.Values)
-    		{
-    			value.Dispose();
-    		}
-    		BD.Dispose();
-    		GD.Dispose();
-    		BH.Dispose();
-    		GH.Dispose();
-    		Sce.Dispose();
     	}
 
     	//[DllImport("user32.dll")]

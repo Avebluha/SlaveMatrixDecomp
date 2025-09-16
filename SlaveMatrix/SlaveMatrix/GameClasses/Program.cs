@@ -5,13 +5,10 @@ namespace SlaveMatrix
 {
     internal static class Program
     {
-    	public static bool biggerWindow;
 
     	[STAThread]
     	private static void Main(string[] A_0)
     	{
-    		//Application.EnableVisualStyles();
-    		//Application.SetCompatibleTextRenderingDefault(defaultValue: false);
 
             Sta.LoadConfig();
 
@@ -19,7 +16,6 @@ namespace SlaveMatrix
             if (Sta.BigWindow)
             {
                 percent = 47.0;
-                biggerWindow = true;
             }
 
             Med med = new Med
@@ -33,21 +29,10 @@ namespace SlaveMatrix
             };
 
     		med.InitializeModes("Start", Mods.GetMods);
-
     		UI uI = new UI(med);
-    		//uI.Text = GameText.スレイブマトリクス;
-    		//uI.Show();
 
     		//main loop
     		med.Drawing();
-
-
-    		if (Mods.t1 != null)
-    		{
-    			Mods.t1.Wait();
-    		}
-    		med.Dispose();
-    		Sta.Disposes();
     	}
     }
 }
