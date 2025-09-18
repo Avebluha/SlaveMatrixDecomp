@@ -3,6 +3,10 @@
     "SlaveMatrix": {
       "commandName": "Project",
       "workingDirectory": "$(SolutionDir)\\game_folder"
+    },
+    "WSL": {
+      "commandName": "WSL2",
+      "distributionName": ""
     }
   }
 }

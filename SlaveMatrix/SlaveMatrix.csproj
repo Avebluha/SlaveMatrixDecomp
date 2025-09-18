@@ -3,7 +3,7 @@
   <PropertyGroup>
     <AssemblyName>SlaveMatrix</AssemblyName>
     <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
-    <OutputType>Exe</OutputType>
+    <OutputType>WinExe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <PlatformTarget>x64</PlatformTarget>
   </PropertyGroup>
