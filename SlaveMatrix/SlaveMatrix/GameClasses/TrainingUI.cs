@@ -1342,8 +1342,9 @@ namespace SlaveMatrix
     		Focus = ハンド右CM;
     		if (Med.Mode == "Training")
     		{
-                //TODO fix?
+                //~~TODO~~ fix?
                 //Cursor.Position = Med.BaseControlC.PointToScreen(Med.FromBasePosition(ハンド右.位置B));
+                Med.CursorPosition = Med.FromBasePosition(ハンド右.位置B);
     		}
     		Set持ち手();
     	}
@@ -1456,8 +1457,11 @@ namespace SlaveMatrix
     		}
     		Focus.Ele.SetHitTrue();
     		Focus_nr = ハンド右CM;
-            //TODO fix?
+            
+            //~~TODO~~ fix?
             //Cursor.Position = Med.BaseControlC.PointToScreen(Med.FromBasePosition(ハンド右.位置B));
+            Med.CursorPosition = Med.FromBasePosition(ハンド右.位置B);
+
     		Set持ち手();
     	}
 
@@ -1897,7 +1901,7 @@ namespace SlaveMatrix
 
     	public void Down(ref MouseButtons mb, ref Vector2D cp, ref Vector2D op, ref Color hc, ref ContactD cd)
     	{
-    		if (HeldButton != 0)
+    		if (HeldButton != MouseButtons.None)
     		{
     			return;
     		}
@@ -2410,7 +2414,6 @@ namespace SlaveMatrix
     			parT7.PositionBase = parT6.PositionBase.AddY(0.015);
     			string Path = "Photo";
     			Film = new Are(Med, Hit: false);
-    			Film.Setting();
     			撮影 = new But1(parT7, delegate
     			{
     				//Sounds.撮影.Play();
@@ -2421,7 +2424,7 @@ namespace SlaveMatrix
     				}
     				DateTime now = DateTime.Now;
     				Mods.撮影描画(調教UI2.Film, Med.FPSF);
-    				Font font = new Font("MS Gothic", (float)(10.0 * Med.DpiY));
+    				Font font = new Font("MS Gothic", (float)(10.0));
     				float x = 350f;
     				float y = 365f;
     				if (Sta.BigWindow)

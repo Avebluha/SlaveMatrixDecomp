@@ -1,3 +1,4 @@
+using System.ComponentModel;
 using System.Drawing;
 using System.Linq;
 using _2DGAMELIB;
@@ -616,8 +617,11 @@ namespace SlaveMatrix
     		if (調教UI.SubFocus.Contains(this))
     		{
     			vr = cp;
-    			xr = (or.X - vr.X) * -0.008;
-    			yr = (or.Y - vr.Y) * -0.008;
+
+                //TODO Check if this works?
+                Vector2D px_diff = Med.FromBasePosition(or - vr);
+    			xr = px_diff.X * -0.008;
+    			yr = px_diff.Y * -0.008;
     			if (挿入箇所 == ContactType.Vagina)
     			{
     				膣挿抜 = yr * Player.膣挿入度;
@@ -947,16 +951,21 @@ namespace SlaveMatrix
     			return;
     		}
 
-    		//TODO fix?
-    		//v = (挿抜モーション.Run ? cp : _2DGAMELIB._Con.ToVector2D(Cursor.Position));
-    		v = cp;
-    		if (調教UI.Focus == 対象 || 挿抜モーション.Run)
+            //~~TODO~~ fix?
+            //v = (挿抜モーション.Run ? cp : _2DGAMELIB._Con.ToVector2D(Cursor.Position));
+            v = (挿抜モーション.Run ? cp : Med.CursorPosition);
+            System.Diagnostics.Debug.WriteLine("cursor pos: {0} {1}", Med.CursorPosition.X, Med.CursorPosition.Y);
+
+            if (調教UI.Focus == 対象 || 挿抜モーション.Run)
     		{
     			if (Isモード)
     			{
-    				x = (o.X - v.X) * 0.008;
-    				y = (o.Y - v.Y) * 0.008;
-    				if (Is挿入)
+                    Vector2D px_diff = Med.FromBasePosition(o - v);
+    				x = px_diff.X * 0.008;
+                    y = px_diff.Y * 0.008;
+
+                    System.Diagnostics.Debug.WriteLine("x y diffs: {0} {1}", x, y);
+                    if (Is挿入)
     				{
     					対象.Ele.角度C = (100.0 * x).Clamp(-5.0, 5.0);
     					if (Is口)
@@ -967,15 +976,20 @@ namespace SlaveMatrix
     						Player.奴体力消費小();
     						Player.主精力消費小();
     						口継続();
-    						if (mb != MouseButtons.Left && 対象.Ele.Yi == 0 && o.Y < v.Y && !挿抜モーション.Run)
-    						{
-    							調教UI.Action(ContactType.Mouth, ActionType.Insertion, CurrentState.End, アイテム情報, 0, 1, 機械: false, 射精: false);
+
+                            //if (mb != MouseButtons.Left && 対象.Ele.Yi == 0 && o.Y < v.Y && !挿抜モーション.Run)
+                            if (mb != MouseButtons.Left && 対象.Ele.Yi == 0 && o.Y > v.Y && !挿抜モーション.Run)
+                            {
+                                調教UI.Action(ContactType.Mouth, ActionType.Insertion, CurrentState.End, アイテム情報, 0, 1, 機械: false, 射精: false);
     							Player.奴体力消費小();
     							Player.主精力消費小();
     							口終了();
     							解除();
-                                //TODO fix?
+
+                                //~~TODO~~ fix?
                                 //Cursor.Position = Med.BaseControlC.PointToScreen(Med.FromBasePosition(対象.Ele.位置B));
+                                Med.CursorPosition = Med.FromBasePosition(対象.Ele.位置B);
+
     							待機時1();
     							if (調教UI.ペニス処理.フェラ.Run)
     							{
@@ -1009,15 +1023,19 @@ namespace SlaveMatrix
     						Player.奴体力消費小();
     						Player.主精力消費小();
     						肛継続();
-    						if (mb != MouseButtons.Left && 対象.Ele.Yi == 0 && o.Y < v.Y && !挿抜モーション.Run)
+                            //if (mb != MouseButtons.Left && 対象.Ele.Yi == 0 && o.Y < v.Y && !挿抜モーション.Run)
+                            if (mb != MouseButtons.Left && 対象.Ele.Yi == 0 && o.Y > v.Y && !挿抜モーション.Run)
     						{
     							調教UI.Action(ContactType.Anal, ActionType.Insertion, CurrentState.End, アイテム情報, 0, 1, 機械: false, 射精: false);
     							Player.奴体力消費小();
     							Player.主精力消費小();
     							肛終了();
     							解除();
-                                //TODO fix?
+
+                                //~~TODO~~ fix?
                                 //Cursor.Position = Med.BaseControlC.PointToScreen(Med.FromBasePosition(対象.Ele.位置B));
+                                Med.CursorPosition = Med.FromBasePosition(対象.Ele.位置B);
+
     							待機時1();
     							if (調教UI.ペニス処理.中出し)
     							{
@@ -1041,15 +1059,20 @@ namespace SlaveMatrix
     						Player.奴体力消費小();
     						Player.主精力消費小();
     						膣継続();
-    						if (mb != MouseButtons.Left && (Bod.断面_表示 ? (dy == 0) : (対象.Ele.Yi == 0)) && o.Y < v.Y && !挿抜モーション.Run)
+
+                            //if (mb != MouseButtons.Left && (Bod.断面_表示 ? (dy == 0) : (対象.Ele.Yi == 0)) && o.Y < v.Y && !挿抜モーション.Run)
+                            if (mb != MouseButtons.Left && (Bod.断面_表示 ? (dy == 0) : (対象.Ele.Yi == 0)) && o.Y > v.Y && !挿抜モーション.Run)
     						{
     							調教UI.Action(ContactType.Vagina, ActionType.Insertion, CurrentState.End, アイテム情報, 0, 1, 機械: false, 射精: false);
     							Player.奴体力消費小();
     							Player.主精力消費小();
     							膣終了();
     							解除();
-                                //TODO fix?
+
+                                //~~TODO~~ fix?
                                 //Cursor.Position = Med.BaseControlC.PointToScreen(Med.FromBasePosition(対象.Ele.位置B));
+                                Med.CursorPosition = Med.FromBasePosition(対象.Ele.位置B);
+
     							待機時1();
     							if (調教UI.ペニス処理.中出し)
     							{
@@ -1073,15 +1096,18 @@ namespace SlaveMatrix
     						Player.奴体力消費小();
     						Player.主精力消費小();
     						糸継続();
-    						if (mb != MouseButtons.Left && 対象.Ele.Yi == 0 && o.Y < v.Y && !挿抜モーション.Run)
+                            //if (mb != MouseButtons.Left && 対象.Ele.Yi == 0 && o.Y < v.Y && !挿抜モーション.Run)
+                            if (mb != MouseButtons.Left && 対象.Ele.Yi == 0 && o.Y > v.Y && !挿抜モーション.Run)
     						{
     							調教UI.Action(ContactType.Thread, ActionType.Insertion, CurrentState.End, アイテム情報, 0, 1, 機械: false, 射精: false);
     							Player.奴体力消費小();
     							Player.主精力消費小();
     							糸終了();
     							解除();
-                                //TODO fix?
+                                //~~TODO~~ fix?
                                 //Cursor.Position = Med.BaseControlC.PointToScreen(Med.FromBasePosition(対象.Ele.位置B));
+                                Med.CursorPosition = Med.FromBasePosition(対象.Ele.位置B);
+
     							待機時1();
     							if (調教UI.ペニス処理.中出し)
     							{
@@ -1368,8 +1394,9 @@ namespace SlaveMatrix
     			else if (調教UI.Focus != 調教UI.ハンド右CM && !Isモード)
     			{
     				解除();
-                    //TODO fix?
+                    //~~TODO~~ fix?
                     //Cursor.Position = Med.BaseControlC.PointToScreen(Med.FromBasePosition(対象.Ele.位置B));
+                    Med.CursorPosition = Med.FromBasePosition(対象.Ele.位置B);
     				調教UI.通常放し();
     			}
     		}

@@ -842,12 +842,6 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public static void Setting(this Are Are)
-    	{
-    		Are.GD.SmoothingMode = SmoothingMode.HighQuality;
-    		Are.GD.PixelOffsetMode = PixelOffsetMode.HighQuality;
-    	}
-
     	public static string Numf1(this double n)
     	{
     		return n.ToString("P1").PadLeft(6);

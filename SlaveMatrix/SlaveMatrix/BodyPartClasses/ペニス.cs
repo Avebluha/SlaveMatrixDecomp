@@ -591,7 +591,6 @@ namespace SlaveMatrix
     		X1Y4_血管下CP = new ColorP(X1Y4_血管下, 血管下CD, DisUnit, abj: true);
     		濃度 = e.濃度;
     		AreM = new AreM(Med.Unit, 3.0, 7.0, 0.07, Med.DisQuality, Med.HitAccuracy, 0.45);
-    		AreM.Setting();
     		AreM.BasePoint = new Vector2D(0.5, 0.1);
     		X0Y0_陰嚢.BasePointBase = X0Y0_陰嚢.ToLocal(X0Y0_陰茎.ToGlobal(X0Y0_陰茎.JP[3].Joint));
     		X0Y1_陰嚢.BasePointBase = X0Y1_陰嚢.ToLocal(X0Y1_陰茎.ToGlobal(X0Y1_陰茎.JP[3].Joint));

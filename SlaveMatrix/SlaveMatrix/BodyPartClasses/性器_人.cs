@@ -1234,7 +1234,6 @@ namespace SlaveMatrix
     		X3Y5_尿道CP = new ColorP(X3Y5_尿道, 尿道CD, DisUnit, abj: true);
     		X3Y5_膣口CP = new ColorP(X3Y5_膣口, 膣口CD, DisUnit, abj: true);
     		AreM = new AreM(Med.Unit, 1.0, 1.0, 0.024, Med.DisQuality, Med.HitAccuracy, 0.1);
-    		AreM.Setting();
     		AreM.BasePoint = new Vector2D(0.5, 0.5);
     		AreMPos = AreM.GetPosition(ref AreM.BasePoint);
     		濃度 = e.濃度;

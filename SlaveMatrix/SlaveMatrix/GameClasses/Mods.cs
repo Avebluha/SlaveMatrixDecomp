@@ -139,7 +139,8 @@ namespace SlaveMatrix
     	private static InfoPanel ip;
     	private static Buts dbs;
         private static Lab npl;
-
+        public static TextBubble ViolaTextBubble;
+        public static TextBubble SlaveTextBubble;
 
 
         //misc character stuff
@@ -147,9 +148,6 @@ namespace SlaveMatrix
     	private static Cha Viola; 
         public static ViolaText ViolaText;
         public static SlaveText SlaveText;
-        public static 吹き出し キャラ吹出し;
-        public static 吹き出し ヴィオラ吹出し;
-
 
 
         //buffers
@@ -199,7 +197,6 @@ namespace SlaveMatrix
         public static bool SDShow;
         public static bool save;
         public static bool title;
-        private static bool fade_in;
 
 
         public static int MaxRoomNumber => 135;
@@ -213,21 +210,15 @@ namespace SlaveMatrix
 
             //setup buffers
     		drawArea = new Are(Med, Hit: false);
-    		drawArea.Setting();
-
     		DrawBuffer = new Are(Med, Hit: true);
-    		DrawBuffer.Setting();
 
     		BlackBackground = new Are(Med, Hit: true);
-    		BlackBackground.Setting();
     		BlackBackground.Clear(Col.Black);
 
     		BasementBackground = new Are(Med, Hit: true);
-    		BasementBackground.Setting();
     		BasementBackground.GD.DrawImage(new Bitmap(new MemoryStream(Resources.dangeon01_ex2)), BasementBackground.Dis.GetRect());
     		
     		OfficeBackground = new Are(Med, Hit: true);
-    		OfficeBackground.Setting();
             OfficeBackground.GD.DrawImage(new Bitmap(new MemoryStream(Resources.li_room10a_c_ex2)), OfficeBackground.Dis.GetRect());
     		
             SaveData = new ListView(
@@ -276,10 +267,7 @@ namespace SlaveMatrix
     				ip.UpdateSub2();
 
     				//note: removed 50ms timeout -- could add back with mot...
-    				Med.InvokeL(delegate
-    				{
-    					Med.SwitchMode("PlayerInformation", DrawBuffer, PlayerInformationSliders);
-    				});
+    				Med.SwitchMode("PlayerInformation", DrawBuffer, PlayerInformationSliders);
     			}
     		}));
     		dbs.Add("タイトル", MyUI.Button(Med, DrawBuffer, "Title", new Vector2D(x, y), delegate
@@ -358,7 +346,7 @@ namespace SlaveMatrix
     		ip.SetHitColor(Med);
 
 
-    		ヴィオラ吹出し = new 吹き出し(
+    		ViolaTextBubble = new TextBubble(
                 DrawBuffer, 
                 右: false, 
                 new Font("MS Gothic", 1f), 
@@ -372,10 +360,10 @@ namespace SlaveMatrix
                 Col.White, 
                 delegate{}
             );
-    		ヴィオラ吹出し.SetHitColor(Med);
+    		ViolaTextBubble.SetHitColor(Med);
 
 
-    		キャラ吹出し = new 吹き出し(
+    		SlaveTextBubble = new TextBubble(
                 DrawBuffer, 
                 右: false, 
                 new Font("MS Gothic", 1f), 
@@ -387,11 +375,11 @@ namespace SlaveMatrix
                 19.0, 
                 Dis: true
             );
-    		キャラ吹出し.SetHitColor(Med);
+    		SlaveTextBubble.SetHitColor(Med);
 
     		si = new SubInfo(Med, ip);
-    		ViolaText = new ViolaText(Med, ヴィオラ吹出し);
-    		SlaveText = new SlaveText(Med, キャラ吹出し);
+    		ViolaText = new ViolaText(Med, ViolaTextBubble);
+    		SlaveText = new SlaveText(Med, SlaveTextBubble);
     		npl = new Lab(
                 DrawBuffer, 
                 "ラベル1", 
@@ -515,12 +503,12 @@ namespace SlaveMatrix
     		{
     			TrainingTarget.Dispose();
     		}
-    		キャラ吹出し.Dispose();
+    		SlaveTextBubble.Dispose();
     		if (Viola != null)
     		{
     			Viola.Dispose();
     		}
-    		ヴィオラ吹出し.Dispose();
+    		ViolaTextBubble.Dispose();
     		SaveData.Dispose();
     		ip.Dispose();
     		dbs.Dispose();
@@ -531,6 +519,7 @@ namespace SlaveMatrix
 
 
         //would really prefer not to have these here...
+        private static bool fade_in;
         static MotV mv = new MotV(0.0, 1.0)
         {
             BaseSpeed = 2.0
@@ -567,15 +556,17 @@ namespace SlaveMatrix
     	{
     		Med.Mode = Mode;
     		描画(drawArea, Med.FPSF);
-    		Med.DrawStart(Are);
-    		Med.DrawEnd(drawArea);
+    		Med.Sce.DrawStart(Are);
+    		Med.Sce.DrawEnd(drawArea);
     		fade_in = true;
     	}
+
         public static void flash(this Med Med)
         {
             調教描画(drawArea, Med.FPSF);
-            Med.ClearSta(Color.FromArgb(128, Color.White));
-            Med.DrawEnd(drawArea);
+            Color col = Color.FromArgb(128, Color.White);
+            Med.Sce.ClearStart(ref col);
+            Med.Sce.DrawEnd(drawArea);
             fade_in = true;
         }
 
@@ -670,38 +661,37 @@ namespace SlaveMatrix
     		Cha d = Viola;
     		Viola = new Cha(Med, DrawBuffer, Sta.GameData.ヴィオラ.ChaD);
     		Viola.Set衣装(Sta.GameData.ヴィオラ.着衣);
-    		ヴィオラ吹出し.接続(Viola.Bod.頭.口_接続点);
-    		Med.InvokeL(delegate
+    		ViolaTextBubble.接続(Viola.Bod.頭.口_接続点);
+    		
+    		Initialize();
+    		if (d != null)
     		{
-    			Initialize();
-    			if (d != null)
-    			{
-    				d.Dispose();
-    			}
-    			if (TrainingTarget != null)
-    			{
-    				TrainingTarget.Dispose();
-    				TrainingTarget = null;
-    			}
-    			SDShow = false;
-    			if (title)
-    			{
-    				Med.SwitchMode("メインフォーム", DrawBuffer, メインフォーム描画);
-    			}
-    			else
-    			{
-    				Med.Mode = "メインフォーム";
-    				ip.SubInfoIm = i + ": " + Sta.GameData.GetSaveDateString() + "\r\n" + GameText.ロードしました;
-    			}
-    			SetDemandMaximum();
-    			if (Sta.GameData.Slaves.Length < MaxRoomNumber)
-    			{
-    				Unit[] array = new Unit[MaxRoomNumber];
-    				Array.Copy(Sta.GameData.Slaves, array, Sta.GameData.Slaves.Length);
-    				Sta.GameData.Slaves = array;
-    			}
-    			//Med.InvokeL(Sounds.完了.Play);
-    		});
+    			d.Dispose();
+    		}
+    		if (TrainingTarget != null)
+    		{
+    			TrainingTarget.Dispose();
+    			TrainingTarget = null;
+    		}
+    		SDShow = false;
+    		if (title)
+    		{
+    			Med.SwitchMode("メインフォーム", DrawBuffer, メインフォーム描画);
+    		}
+    		else
+    		{
+    			Med.Mode = "メインフォーム";
+    			ip.SubInfoIm = i + ": " + Sta.GameData.GetSaveDateString() + "\r\n" + GameText.ロードしました;
+    		}
+    		SetDemandMaximum();
+    		if (Sta.GameData.Slaves.Length < MaxRoomNumber)
+    		{
+    			Unit[] array = new Unit[MaxRoomNumber];
+    			Array.Copy(Sta.GameData.Slaves, array, Sta.GameData.Slaves.Length);
+    			Sta.GameData.Slaves = array;
+    		}
+    		//Med.InvokeL(Sounds.完了.Play);
+    		
     	}
 
         public static void SetJSLlv(Med med)
@@ -769,40 +759,38 @@ namespace SlaveMatrix
             Cha d = Viola;
             Viola = new Cha(med, DrawBuffer, Sta.GameData.ヴィオラ.ChaD);
             Viola.Set衣装(Sta.GameData.ヴィオラ.着衣);
-            ヴィオラ吹出し.接続(Viola.Bod.頭.口_接続点);
-            med.InvokeL(delegate
+            ViolaTextBubble.接続(Viola.Bod.頭.口_接続点);
+            
+            Initialize();
+            if (d != null)
             {
-                Initialize();
-                if (d != null)
-                {
-                    d.Dispose();
-                }
-                if (TrainingTarget != null)
-                {
-                    TrainingTarget.Dispose();
-                    TrainingTarget = null;
-                }
-                SDShow = false;
-                if (title)
-                {
-                    med.SwitchMode("メインフォーム", DrawBuffer, メインフォーム描画);
-                }
-                else
-                {
-                    med.Mode = "メインフォーム";
-                    ip.SubInfoIm = i + ": " + Sta.GameData.GetSaveDateString() + "\r\n" + GameText.ロードしました;
-                }
-                SetDemandMaximum();
-                if (Sta.GameData.Slaves.Length < MaxRoomNumber)
-                {
-                    Unit[] array = new Unit[MaxRoomNumber];
-                    Array.Copy(Sta.GameData.Slaves, array, Sta.GameData.Slaves.Length);
-                    Sta.GameData.Slaves = array;
-                }
-                Sta.GameData.Gen = new Generator[9];
-                Sta.GameData.GenInstance();
-                //Sounds.完了.Play();
-            });
+                d.Dispose();
+            }
+            if (TrainingTarget != null)
+            {
+                TrainingTarget.Dispose();
+                TrainingTarget = null;
+            }
+            SDShow = false;
+            if (title)
+            {
+                med.SwitchMode("メインフォーム", DrawBuffer, メインフォーム描画);
+            }
+            else
+            {
+                med.Mode = "メインフォーム";
+                ip.SubInfoIm = i + ": " + Sta.GameData.GetSaveDateString() + "\r\n" + GameText.ロードしました;
+            }
+            SetDemandMaximum();
+            if (Sta.GameData.Slaves.Length < MaxRoomNumber)
+            {
+                Unit[] array = new Unit[MaxRoomNumber];
+                Array.Copy(Sta.GameData.Slaves, array, Sta.GameData.Slaves.Length);
+                Sta.GameData.Slaves = array;
+            }
+            Sta.GameData.Gen = new Generator[9];
+            Sta.GameData.GenInstance();
+            //Sounds.完了.Play();
         }
 
 
@@ -1098,7 +1086,7 @@ namespace SlaveMatrix
     			TrainingTarget.Dispose();
     		}
     		TrainingTarget = new Cha(Med, DrawBuffer, Sta.GameData.TrainingTarget.ChaD);
-    		キャラ吹出し.接続(TrainingTarget.Bod.頭.口_接続点);
+    		SlaveTextBubble.接続(TrainingTarget.Bod.頭.口_接続点);
     		Setnpl(u);
     		double d = ((u.Trained && Sta.MoveInsectMask) ? 1.0 : 0.0);
     		if (TrainingTarget.Bod.Is顔面)
@@ -1197,8 +1185,8 @@ namespace SlaveMatrix
     			{
     				DrawBuffer.Clear(Col.Black);
     				DrawBuffer.Draw(label.ParT);
-    				Med.DrawStart(BlackBackground);
-    				Med.DrawEnd(DrawBuffer);
+    				Med.Sce.DrawStart(BlackBackground);
+    				Med.Sce.DrawEnd(DrawBuffer);
     				v = 0.0;
     				fadeIn = true;
     				fadeOut = false;
@@ -1243,8 +1231,8 @@ namespace SlaveMatrix
     							mv.ResetValue();
     							Med.Draw(DrawBuffer);
     							fadeOut = true;
-    							Med.DrawStart(DrawBuffer);
-    							Med.DrawEnd(BlackBackground);
+    							Med.Sce.DrawStart(DrawBuffer);
+    							Med.Sce.DrawEnd(BlackBackground);
     						}
     					}
     				}
@@ -1317,8 +1305,8 @@ namespace SlaveMatrix
                     ll = false;
                     DrawBuffer.Clear(Col.Black);
                     DrawBuffer.Draw(label.ParT);
-                    Med.DrawStart(BlackBackground);
-                    Med.DrawEnd(DrawBuffer);
+                    Med.Sce.DrawStart(BlackBackground);
+                    Med.Sce.DrawEnd(DrawBuffer);
                     v = 0.0;
                     b1 = true;
                     mv.ResetValue();
@@ -1649,8 +1637,8 @@ namespace SlaveMatrix
     	{
     		調教背景 BackgroundDrawing = new 調教背景();
     		Are TrainingBackground = new Are(Med, Hit: false);
-    		TrainingBackground.Setting();
     		TrainingBackground.GD.Clear(Color.Gray);
+
     		Player.UI = new TrainingUI(Med, DrawBuffer, ip);
     		Player.UI.調教終了.Action = delegate
     		{
@@ -1713,7 +1701,7 @@ namespace SlaveMatrix
                 }
                 a.Draw(TrainingBackground);
                 TrainingTarget.Draw(a, FPS);
-                キャラ吹出し.Draw(a, FPS);
+                SlaveTextBubble.Draw(a, FPS);
                 Player.UI.StaDraw(a, FPS);
                 ip.Draw(a, FPS);
                 Med.Draw(a);
@@ -1725,8 +1713,8 @@ namespace SlaveMatrix
                         SlaveText.Set状態();
                         if (TrainingTarget.Bod.Is顔面)
                         {
-                            Action<Tex> o_done = キャラ吹出し.Tex.Done;
-                            キャラ吹出し.Tex.Done = delegate (Tex tex)
+                            Action<Tex> o_done = SlaveTextBubble.Tex.Done;
+                            SlaveTextBubble.Tex.Done = delegate (Tex tex)
                             {
                                 o_done(tex);
                                 TrainingTarget.顔面展開.Start();
@@ -1742,13 +1730,12 @@ namespace SlaveMatrix
                 TrainingTarget.Draw(a, FPS);
             };
 
-
             return new Module {
                 Setting = delegate
                 {
                     TrainingBackground.GD.Clear(Color.Gray);
                     BackgroundDrawing.Reset();
-                    BackgroundDrawing.描画(TrainingBackground);
+                    BackgroundDrawing.Draw(TrainingBackground);
                     ip.MaiShow = false;
                     ip.Mai.Feed.Dra = true;
                     ip.Mai2Show = false;
@@ -1784,7 +1771,7 @@ namespace SlaveMatrix
                     }
                     TrainingTarget.Bod.Join();
                     TrainingTarget.Bod.Update();
-                    キャラ吹出し.接続();
+                    SlaveTextBubble.接続();
                     TrainingTarget.Bod.汗染み濃度 = 1.0;
                     調教済みチェック = true;
                     TrainingTargetTrained = Sta.GameData.TrainingTarget.Trained;
@@ -1999,8 +1986,8 @@ namespace SlaveMatrix
                     TrainingTarget.Bod.カーソル = null;
                     TrainingTarget.Bod.Join();
                     TrainingTarget.Bod.Update();
-                    キャラ吹出し.接続();
-                    キャラ吹出し.消失.End();
+                    SlaveTextBubble.接続();
+                    SlaveTextBubble.消失.End();
                     Result2 = false;
                     Result3 = false;
                     si.Set(bre: false);
@@ -3844,7 +3831,7 @@ namespace SlaveMatrix
     				ip.Mai2Show = false;
     				ip.SubShow = true;
     				ip.Sub2Show = true;
-    				ヴィオラ吹出し.Tex.Feed.Dra = false;
+    				ViolaTextBubble.Tex.Feed.Dra = false;
     				bs["ボタン1"].Dra = !Sta.GameData.初事務所フラグ;
     				bs["ボタン3"].Dra = Sta.GameData.RepaymentStage == 3;
     				Viola.両目_見つめ();
@@ -3903,8 +3890,8 @@ namespace SlaveMatrix
     				a.GH.Clear(Col.Transparent);
     			}
     			a.Draw(OfficeBackground);
-    			//Viola.Draw(a, FPS);
-    			ヴィオラ吹出し.Draw(a, FPS);
+    			Viola.Draw(a, FPS);
+    			ViolaTextBubble.Draw(a, FPS);
     			bs.Draw(a);
     			dbs.Draw(a);
     			ip.Draw(a, FPS);
@@ -4308,7 +4295,7 @@ namespace SlaveMatrix
     				case MouseButtons.Left:
     					if (!ip.選択肢表示)
     					{
-    						ヴィオラ吹出し.Down(ヴィオラ吹出し.GetHitColor);
+    						ViolaTextBubble.Down(ViolaTextBubble.GetHitColor);
     						dbs.Down(ref hc);
     						bs.Down(ref hc);
     					}
@@ -4337,7 +4324,7 @@ namespace SlaveMatrix
     			{
     				if (!ip.選択肢表示)
     				{
-    					ヴィオラ吹出し.Up(ヴィオラ吹出し.GetHitColor);
+    					ViolaTextBubble.Up(ViolaTextBubble.GetHitColor);
     					dbs.Up(ref hc);
     					bs.Up(ref hc);
     				}
@@ -4412,8 +4399,8 @@ namespace SlaveMatrix
     				a.GH.Clear(Col.Transparent);
     			}
     			a.Draw(OfficeBackground);
-    			//Viola.Draw(a, FPS);
-    			ヴィオラ吹出し.Draw(a, FPS);
+    			Viola.Draw(a, FPS);
+    			ViolaTextBubble.Draw(a, FPS);
     			bs.Draw(a);
     			dbs.Draw(a);
     			ip.Draw(a, FPS);
@@ -5129,22 +5116,8 @@ namespace SlaveMatrix
     	{
     		Module mod = new Module();
     		Buts bs = new Buts();
-    		ParT parT = new ParT();
-    		parT.Font = new Font("MS Gothic", 0.1f);
-    		parT.PositionBase = DrawBuffer.GetPosition(0.85, 0.02);
-    		parT.Text = GameText.戻る;
-    		parT.FontSize = 0.15;
-    		parT.SizeBase = 0.05;
-    		parT.OP.AddRange(new Out[1] { Shas.GetSquare() });
-    		parT.OP.ScalingY(parT.OP.GetCenter(), 0.47);
-    		parT.OP.Rotation(parT.OP.GetCenter(), -26.0);
-    		parT.Closed = true;
-    		parT.TextColor = Col.White;
-    		parT.BrushColor = Color.FromArgb(160, Col.Black);
-    		parT.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    		parT.StringFormat.Alignment = StringAlignment.Center;
-    		parT.StringFormat.LineAlignment = StringAlignment.Center;
-    		bs.Add("ボタン0", new But1(parT, delegate
+
+    		bs.Add("ボタン0", MyUI.Button2(Med, DrawBuffer, GameText.戻る, new Vector2D(0.85, 0.02), delegate
     		{
     			//Sounds.操作.Play();
     			if (Sta.GameData.初事務所フラグ)
@@ -5156,48 +5129,22 @@ namespace SlaveMatrix
     				Med.Mode = "Office";
     			}
     		}));
-    		ParT parT2 = new ParT();
-    		parT2.Font = new Font("MS Gothic", 0.1f);
-    		parT2.PositionBase = DrawBuffer.GetPosition(0.85, 0.1);
-    		parT2.Text = GameText.奴隷;
-    		parT2.FontSize = 0.15;
-    		parT2.SizeBase = 0.05;
-    		parT2.OP.AddRange(new Out[1] { Shas.GetSquare() });
-    		parT2.OP.ScalingY(parT2.OP.GetCenter(), 0.47);
-    		parT2.OP.Rotation(parT2.OP.GetCenter(), -26.0);
-    		parT2.Closed = true;
-    		parT2.TextColor = Col.White;
-    		parT2.BrushColor = Color.FromArgb(160, Col.Black);
-    		parT2.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    		parT2.StringFormat.Alignment = StringAlignment.Center;
-    		parT2.StringFormat.LineAlignment = StringAlignment.Center;
-    		bs.Add("ボタン1", new But1(parT2, delegate
+
+    		bs.Add("ボタン1", MyUI.Button2(Med, DrawBuffer, GameText.奴隷, new Vector2D(0.85, 0.1), delegate
     		{
     			//Sounds.操作.Play();
     			Med.Mode = "SlaveShop";
     		}));
-    		ParT parT3 = new ParT();
-    		parT3.Font = new Font("MS Gothic", 0.1f);
-    		parT3.PositionBase = DrawBuffer.GetPosition(0.85, 0.18);
-    		parT3.Text = GameText.道具;
-    		parT3.FontSize = 0.15;
-    		parT3.SizeBase = 0.05;
-    		parT3.OP.AddRange(new Out[1] { Shas.GetSquare() });
-    		parT3.OP.ScalingY(parT3.OP.GetCenter(), 0.47);
-    		parT3.OP.Rotation(parT3.OP.GetCenter(), -26.0);
-    		parT3.Closed = true;
-    		parT3.TextColor = Col.White;
-    		parT3.BrushColor = Color.FromArgb(160, Col.Black);
-    		parT3.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    		parT3.StringFormat.Alignment = StringAlignment.Center;
-    		parT3.StringFormat.LineAlignment = StringAlignment.Center;
-    		parT3.PenColor = Color.Red;
-    		bs.Add("ボタン2", new But1(parT3, delegate
+
+            //TODO: fix
+    		//parT3.PenColor = Color.Red;
+    		bs.Add("ボタン2", MyUI.Button2(Med, DrawBuffer, GameText.道具, new Vector2D(0.85, 0.1), delegate
     		{
     			//Sounds.操作.Play();
     			Med.Mode = "ToolShop";
     		}));
     		bs.SetHitColor(Med);
+
     		ListView lv = null;
     		Action<But, int, ulong> buy = delegate(But but, int ind, ulong pri)
     		{
@@ -5221,7 +5168,9 @@ namespace SlaveMatrix
     				ip.SubInfoIm = GameText.所持金が足りません;
     			}
     		};
-    		lv = new ListView(DrawBuffer, DrawBuffer.GetPosition(0.01, 0.03), 0.5, new Font("MS Gothic", 1f), 0.07, Col.White, Col.Empty, Color.FromArgb(160, Col.Black), Col.Black, new TA(GameText.ﾃﾞｨﾙﾄﾞﾊﾞｲﾌﾞ + " 35,000,000", delegate(But b)
+    		
+            
+            lv = new ListView(DrawBuffer, DrawBuffer.GetPosition(0.01, 0.03), 0.5, new Font("MS Gothic", 1f), 0.07, Col.White, Col.Empty, Color.FromArgb(160, Col.Black), Col.Black, new TA(GameText.ﾃﾞｨﾙﾄﾞﾊﾞｲﾌﾞ + " 35,000,000", delegate(But b)
     		{
     			buy(b, 0, 35000000uL);
     		}), new TA(GameText.ﾉｰﾏﾙﾊﾞｲﾌﾞ + "   40,000,000", delegate(But b)
@@ -5290,6 +5239,8 @@ namespace SlaveMatrix
     			}
     		}));
     		lv.SetHitColor(Med);
+
+
     		Action subinfo = delegate
     		{
     			if (lv.bs.EnumBut.Any((But e) => e.Dra))
@@ -5967,7 +5918,7 @@ namespace SlaveMatrix
     		mod.Down = delegate
     		{
     			//TODO uncomment
-    			//if (!ip.Mai.IsPlaying && !ip.Sub.IsPlaying && wi == i)
+    			if (!ip.Mai.IsPlaying && !ip.Sub.IsPlaying && wi == i)
     			{
     				i++;
     				wi = i;
@@ -6144,14 +6095,14 @@ namespace SlaveMatrix
     			ip.選択yAct = delegate
     			{
     				//Sounds.操作.Play();
-    				ヴィオラ吹出し.Tex.Done = delegate
+    				ViolaTextBubble.Tex.Done = delegate
     				{
     					//Sounds.精算.Play();
     					Sta.GameData.借金 = 5000000000uL;
     					ip.UpdateSub2();
     				};
     				Viola.表情_不敵0眉上();
-    				ヴィオラ吹出し.Text = GameText.うふふそうよね;
+    				ViolaTextBubble.Text = GameText.うふふそうよね;
     				ip.Text = GameText.点6;
     				ip.SubInfo = GameText.身に覚えはない;
     				if (i == 10)
@@ -6168,14 +6119,14 @@ namespace SlaveMatrix
     			ip.選択nAct = delegate
     			{
     				//Sounds.操作.Play();
-    				ヴィオラ吹出し.Tex.Done = delegate
+    				ViolaTextBubble.Tex.Done = delegate
     				{
     					//Sounds.精算.Play();
     					Sta.GameData.借金 = 5000000000uL;
     					ip.UpdateSub2();
     				};
     				Viola.表情_素1();
-    				ヴィオラ吹出し.Text = GameText.関係ないわここに書いてあるもの + "\r\n" + GameText.ほらねそうでしょう;
+    				ViolaTextBubble.Text = GameText.関係ないわここに書いてあるもの + "\r\n" + GameText.ほらねそうでしょう;
     				ip.Text = GameText.点6;
     				ip.SubInfo = GameText.身に覚えはない;
     				if (i == 10)
@@ -6194,9 +6145,9 @@ namespace SlaveMatrix
     		mod.Down = delegate(MouseButtons mb, Vector2D cp, Color hc)
     		{
     			ip.DownB(ref hc);
-    			if (!ヴィオラ吹出し.Tex.IsPlaying && !ip.Mai.IsPlaying && !ip.Sub.IsPlaying)
+    			if (!ViolaTextBubble.Tex.IsPlaying && !ip.Mai.IsPlaying && !ip.Sub.IsPlaying)
     			{
-    				if (wi == i && i != 10 && ヴィオラ吹出し.Tex.Done == null)
+    				if (wi == i && i != 10 && ViolaTextBubble.Tex.Done == null)
     				{
     					i++;
     					wi = i;
@@ -6204,16 +6155,16 @@ namespace SlaveMatrix
     					{
     						if (i == 10)
     						{
-    							ヴィオラ吹出し.Tex.Done = d;
+    							ViolaTextBubble.Tex.Done = d;
     						}
     						else
     						{
-    							ヴィオラ吹出し.Tex.Done = null;
+    							ViolaTextBubble.Tex.Done = null;
     						}
     						if (i != 11)
     						{
     							sfc[i]();
-    							ヴィオラ吹出し.Text = tsc[i];
+    							ViolaTextBubble.Text = tsc[i];
     							ip.Text = tsp[i];
     							ip.SubInfo = sub[i];
     						}
@@ -6228,7 +6179,7 @@ namespace SlaveMatrix
     					i += 2;
     					wi = i;
     					sfc[i]();
-    					ヴィオラ吹出し.Text = tsc[i];
+    					ViolaTextBubble.Text = tsc[i];
     					ip.Text = tsp[i];
     					ip.SubInfo = sub[i];
     				}
@@ -6250,11 +6201,11 @@ namespace SlaveMatrix
     			Sta.GameData.ヴィオラ.SetViola(Med, DrawBuffer);
     			Viola = new Cha(Med, DrawBuffer, Sta.GameData.ヴィオラ.ChaD);
     			Viola.Set衣装(Sta.GameData.ヴィオラ.着衣);
-    			ヴィオラ吹出し.接続(Viola.Bod.頭.口_接続点);
+    			ViolaTextBubble.接続(Viola.Bod.頭.口_接続点);
     			i = 0;
     			wi = 0;
     			sfc[i]();
-    			ヴィオラ吹出し.Text = tsc[i];
+    			ViolaTextBubble.Text = tsc[i];
     			ip.Text = tsp[i];
     			ip.SubInfo = sub[i];
 
@@ -6264,8 +6215,8 @@ namespace SlaveMatrix
     		DrawOP1 = delegate(Are a, FPS FPS)
     		{
     			a.Draw(OfficeBackground);
-    			//Viola.Draw(a, FPS);
-    			ヴィオラ吹出し.Draw(a, FPS);
+    			Viola.Draw(a, FPS);
+    			ViolaTextBubble.Draw(a, FPS);
     			dbs.Draw(a);
     			ip.Draw(a, FPS);
     			Med.Draw(a);
@@ -6377,14 +6328,14 @@ namespace SlaveMatrix
     		mod.Down = delegate(MouseButtons mb, Vector2D cp, Color hc)
     		{
     			ip.DownB(ref hc);
-    			if (!ヴィオラ吹出し.Tex.IsPlaying && !ip.Mai.IsPlaying && !ip.Sub.IsPlaying && wi == i)
+    			if (!ViolaTextBubble.Tex.IsPlaying && !ip.Mai.IsPlaying && !ip.Sub.IsPlaying && wi == i)
     			{
     				i++;
     				wi = i;
     				if (i < tsp.Length)
     				{
     					sfc[i]();
-    					ヴィオラ吹出し.Text = tsc[i];
+    					ViolaTextBubble.Text = tsc[i];
     					ip.Text = tsp[i];
     					ip.SubInfo = sub[i];
     				}
@@ -6410,7 +6361,7 @@ namespace SlaveMatrix
     			i = 0;
     			wi = 0;
     			sfc[i]();
-    			ヴィオラ吹出し.Text = tsc[i];
+    			ViolaTextBubble.Text = tsc[i];
     			ip.Text = tsp[i];
     			ip.SubInfo = sub[i];
     		};
@@ -6421,8 +6372,8 @@ namespace SlaveMatrix
     				a.GH.Clear(Col.Transparent);
     			}
     			a.Draw(BasementBackground);
-    			//Viola.Draw(a, FPS);
-    			ヴィオラ吹出し.Draw(a, FPS);
+    			Viola.Draw(a, FPS);
+    			ViolaTextBubble.Draw(a, FPS);
     			dbs.Draw(a);
     			ip.Draw(a, FPS);
     			Med.Draw(a);
@@ -6537,7 +6488,7 @@ namespace SlaveMatrix
     				{
     					//Sounds.操作.Play();
     					Viola.表情_不敵0眉上();
-    					ヴィオラ吹出し.Text = GameText.うふふそうよね;
+    					ViolaTextBubble.Text = GameText.うふふそうよね;
     					ip.Text = GameText.点6;
     					ip.SubInfo = GameText.あなたは答える;
     					if (i == 1)
@@ -6555,7 +6506,7 @@ namespace SlaveMatrix
     				{
     					//Sounds.操作.Play();
     					Viola.表情_困り顔1();
-    					ヴィオラ吹出し.Text = GameText.嘘おっしゃい無いのは分かっているわ;
+    					ViolaTextBubble.Text = GameText.嘘おっしゃい無いのは分かっているわ;
     					ip.Text = GameText.点6;
     					ip.SubInfo = GameText.あなたは答える;
     					if (i == 1)
@@ -6592,11 +6543,11 @@ namespace SlaveMatrix
     						//Sounds.弾け.Play();
     						ip.Text = GameText.エクス2;
     						ip.SubInfo = GameText.あなたの鎖は弾け飛ぶ;
-    						ヴィオラ吹出し.Text = GameText.あらあら今ので利子が上がってしまったわうふふ;
-    						ヴィオラ吹出し.Tex.Feed.Dra = true;
+    						ViolaTextBubble.Text = GameText.あらあら今ので利子が上がってしまったわうふふ;
+    						ViolaTextBubble.Tex.Feed.Dra = true;
     						Sta.GameData.利子 *= 2.0;
     					};
-    					ヴィオラ吹出し.Tex.Feed.Dra = false;
+    					ViolaTextBubble.Tex.Feed.Dra = false;
     					Viola.Bod.拘束具_表示 = true;
     					Viola.両翼獣_閉じ(0);
     					Viola.両触手_S字(0);
@@ -6605,7 +6556,7 @@ namespace SlaveMatrix
     					Viola.Bod.Update();
     					Viola.表情_素0眉上();
     					//Sounds.変更1.Play();
-    					ヴィオラ吹出し.Text = GameText.っ点3;
+    					ViolaTextBubble.Text = GameText.っ点3;
     					ip.Text = GameText.エクス1;
     					ip.SubInfo = GameText.鋼の鎖がヴィオラを縛る + "        ";
     					if (i == 6)
@@ -6623,7 +6574,7 @@ namespace SlaveMatrix
     				{
     					//Sounds.操作.Play();
     					Viola.表情_不敵0();
-    					ヴィオラ吹出し.Text = GameText.点3うふふ + "\r\n" + GameText.慎重なのは良いことよ;
+    					ViolaTextBubble.Text = GameText.点3うふふ + "\r\n" + GameText.慎重なのは良いことよ;
     					ip.Text = GameText.点6;
     					ip.SubInfo = GameText.ヴィオラは微笑む;
     					if (i == 6)
@@ -6644,9 +6595,9 @@ namespace SlaveMatrix
     		mod.Down = delegate(MouseButtons mb, Vector2D cp, Color hc)
     		{
     			ip.DownB(ref hc);
-    			if (!ヴィオラ吹出し.Tex.IsPlaying && !ip.Mai.IsPlaying && !ip.Sub.IsPlaying)
+    			if (!ViolaTextBubble.Tex.IsPlaying && !ip.Mai.IsPlaying && !ip.Sub.IsPlaying)
     			{
-    				if (wi == i && i != 1 && i != 6 && ヴィオラ吹出し.Tex.Done == null)
+    				if (wi == i && i != 1 && i != 6 && ViolaTextBubble.Tex.Done == null)
     				{
     					i++;
     					wi = i;
@@ -6659,20 +6610,20 @@ namespace SlaveMatrix
     						}
     						if (i == 1)
     						{
-    							ヴィオラ吹出し.Tex.Done = d1;
+    							ViolaTextBubble.Tex.Done = d1;
     						}
     						else if (i == 6)
     						{
-    							ヴィオラ吹出し.Tex.Done = d2;
+    							ViolaTextBubble.Tex.Done = d2;
     						}
     						else
     						{
-    							ヴィオラ吹出し.Tex.Done = null;
+    							ViolaTextBubble.Tex.Done = null;
     						}
     						if (i != 2 && i != 7)
     						{
     							sfc[i]();
-    							ヴィオラ吹出し.Text = tsc[i];
+    							ViolaTextBubble.Text = tsc[i];
     							ip.Text = tsp[i];
     							ip.SubInfo = sub[i];
     						}
@@ -6688,7 +6639,7 @@ namespace SlaveMatrix
     					i += 2;
     					wi = i;
     					sfc[i]();
-    					ヴィオラ吹出し.Text = tsc[i];
+    					ViolaTextBubble.Text = tsc[i];
     					ip.Text = tsp[i];
     					ip.SubInfo = sub[i];
     				}
@@ -6710,14 +6661,14 @@ namespace SlaveMatrix
     			ip.Mai2Show = false;
     			ip.SubShow = true;
     			ip.Sub2Show = true;
-    			ヴィオラ吹出し.Tex.Feed.Dra = true;
+    			ViolaTextBubble.Tex.Feed.Dra = true;
     			Viola.両目_見つめ();
     			Viola.表情_基本0();
     			Viola.Set基本姿勢();
     			i = 0;
     			wi = 0;
     			sfc[i]();
-    			ヴィオラ吹出し.Text = tsc[i];
+    			ViolaTextBubble.Text = tsc[i];
     			ip.Text = tsp[i];
     			ip.SubInfo = sub[i];
     		};
@@ -6728,8 +6679,8 @@ namespace SlaveMatrix
     				a.GH.Clear(Col.Transparent);
     			}
     			a.Draw(OfficeBackground);
-    			//Viola.Draw(a, FPS);
-    			ヴィオラ吹出し.Draw(a, FPS);
+    			Viola.Draw(a, FPS);
+    			ViolaTextBubble.Draw(a, FPS);
     			dbs.Draw(a);
     			ip.Draw(a, FPS);
     			Med.Draw(a);
@@ -6785,14 +6736,14 @@ namespace SlaveMatrix
     		mod.Down = delegate(MouseButtons mb, Vector2D cp, Color hc)
     		{
     			ip.DownB(ref hc);
-    			if (!ヴィオラ吹出し.Tex.IsPlaying && !ip.Mai.IsPlaying && !ip.Sub.IsPlaying && wi == i)
+    			if (!ViolaTextBubble.Tex.IsPlaying && !ip.Mai.IsPlaying && !ip.Sub.IsPlaying && wi == i)
     			{
     				i++;
     				wi = i;
     				if (i < tsp.Length)
     				{
     					sfc[i]();
-    					ヴィオラ吹出し.Text = tsc[i];
+    					ViolaTextBubble.Text = tsc[i];
     					ip.Text = tsp[i];
     					ip.SubInfo = sub[i];
     				}
@@ -6818,14 +6769,14 @@ namespace SlaveMatrix
     			ip.Mai2Show = false;
     			ip.SubShow = true;
     			ip.Sub2Show = true;
-    			ヴィオラ吹出し.Tex.Feed.Dra = true;
+    			ViolaTextBubble.Tex.Feed.Dra = true;
     			Viola.両目_見つめ();
     			Viola.表情_基本0();
     			Viola.Set基本姿勢();
     			i = 0;
     			wi = 0;
     			sfc[i]();
-    			ヴィオラ吹出し.Text = tsc[i];
+    			ViolaTextBubble.Text = tsc[i];
     			ip.Text = tsp[i];
     			ip.SubInfo = sub[i];
     		};
@@ -6836,8 +6787,8 @@ namespace SlaveMatrix
     				a.GH.Clear(Col.Transparent);
     			}
     			a.Draw(OfficeBackground);
-    			//Viola.Draw(a, FPS);
-    			ヴィオラ吹出し.Draw(a, FPS);
+    			Viola.Draw(a, FPS);
+    			ViolaTextBubble.Draw(a, FPS);
     			dbs.Draw(a);
     			ip.Draw(a, FPS);
     			Med.Draw(a);
@@ -6893,14 +6844,14 @@ namespace SlaveMatrix
     		mod.Down = delegate(MouseButtons mb, Vector2D cp, Color hc)
     		{
     			ip.DownB(ref hc);
-    			if (!ヴィオラ吹出し.Tex.IsPlaying && !ip.Mai.IsPlaying && !ip.Sub.IsPlaying && wi == i)
+    			if (!ViolaTextBubble.Tex.IsPlaying && !ip.Mai.IsPlaying && !ip.Sub.IsPlaying && wi == i)
     			{
     				i++;
     				wi = i;
     				if (i < tsp.Length)
     				{
     					sfc[i]();
-    					ヴィオラ吹出し.Text = tsc[i];
+    					ViolaTextBubble.Text = tsc[i];
     					ip.Text = tsp[i];
     					ip.SubInfo = sub[i];
     				}
@@ -6932,14 +6883,14 @@ namespace SlaveMatrix
     			ip.Mai2Show = false;
     			ip.SubShow = true;
     			ip.Sub2Show = true;
-    			ヴィオラ吹出し.Tex.Feed.Dra = true;
+    			ViolaTextBubble.Tex.Feed.Dra = true;
     			Viola.両目_見つめ();
     			Viola.表情_基本0();
     			Viola.Set基本姿勢();
     			i = 0;
     			wi = 0;
     			sfc[i]();
-    			ヴィオラ吹出し.Text = tsc[i];
+    			ViolaTextBubble.Text = tsc[i];
     			ip.Text = tsp[i];
     			ip.SubInfo = sub[i];
     		};
@@ -7090,7 +7041,7 @@ namespace SlaveMatrix
     					yes = true;
     					//Sounds.操作.Play();
     					Viola.表情_基本1眉上();
-    					ヴィオラ吹出し.Text = GameText.え;
+    					ViolaTextBubble.Text = GameText.え;
     					ip.Text = GameText.点6;
     					ip.SubInfo = GameText.あなたは答える;
     					if (i == 2)
@@ -7109,7 +7060,7 @@ namespace SlaveMatrix
     					yes = false;
     					//Sounds.操作.Play();
     					Viola.表情_不敵0();
-    					ヴィオラ吹出し.Text = GameText.うふふそうよね;
+    					ViolaTextBubble.Text = GameText.うふふそうよね;
     					ip.Text = GameText.点6;
     					ip.SubInfo = GameText.あなたは答える;
     					if (i == 2)
@@ -7130,9 +7081,9 @@ namespace SlaveMatrix
     		mod.Down = delegate(MouseButtons mb, Vector2D cp, Color hc)
     		{
     			ip.DownB(ref hc);
-    			if (!ヴィオラ吹出し.Tex.IsPlaying && !ip.Mai.IsPlaying && !ip.Sub.IsPlaying)
+    			if (!ViolaTextBubble.Tex.IsPlaying && !ip.Mai.IsPlaying && !ip.Sub.IsPlaying)
     			{
-    				if (wi == i && i != 2 && ヴィオラ吹出し.Tex.Done == null)
+    				if (wi == i && i != 2 && ViolaTextBubble.Tex.Done == null)
     				{
     					i++;
     					wi = i;
@@ -7140,30 +7091,30 @@ namespace SlaveMatrix
     					{
     						if (i == 2)
     						{
-    							ヴィオラ吹出し.Tex.Done = d1;
+    							ViolaTextBubble.Tex.Done = d1;
     						}
     						else
     						{
-    							ヴィオラ吹出し.Tex.Done = null;
+    							ViolaTextBubble.Tex.Done = null;
     						}
     						if (i != 3)
     						{
     							if (i < 4)
     							{
     								sfc[i]();
-    								ヴィオラ吹出し.Text = tsc[i];
+    								ViolaTextBubble.Text = tsc[i];
     								ip.SubInfo = sub[i];
     							}
     							else if (yes)
     							{
     								sfcy[i - 4]();
-    								ヴィオラ吹出し.Text = tscy[i - 4];
+    								ViolaTextBubble.Text = tscy[i - 4];
     								ip.SubInfo = suby[i - 4];
     							}
     							else
     							{
     								sfcn[i - 4]();
-    								ヴィオラ吹出し.Text = tscn[i - 4];
+    								ViolaTextBubble.Text = tscn[i - 4];
     								ip.SubInfo = subn[i - 4];
     							}
     							ip.Text = tsp[i];
@@ -7182,19 +7133,19 @@ namespace SlaveMatrix
     					if (i < 4)
     					{
     						sfc[i]();
-    						ヴィオラ吹出し.Text = tsc[i];
+    						ViolaTextBubble.Text = tsc[i];
     						ip.SubInfo = sub[i];
     					}
     					else if (yes)
     					{
     						sfcy[i - 4]();
-    						ヴィオラ吹出し.Text = tscy[i - 4];
+    						ViolaTextBubble.Text = tscy[i - 4];
     						ip.SubInfo = suby[i - 4];
     					}
     					else
     					{
     						sfcn[i - 4]();
-    						ヴィオラ吹出し.Text = tscn[i - 4];
+    						ViolaTextBubble.Text = tscn[i - 4];
     						ip.SubInfo = subn[i - 4];
     					}
     					ip.Text = tsp[i];
@@ -7223,14 +7174,14 @@ namespace SlaveMatrix
     			ip.Mai2Show = false;
     			ip.SubShow = true;
     			ip.Sub2Show = true;
-    			ヴィオラ吹出し.Tex.Feed.Dra = true;
+    			ViolaTextBubble.Tex.Feed.Dra = true;
     			Viola.両目_見つめ();
     			Viola.表情_基本0();
     			Viola.Set基本姿勢();
     			i = 0;
     			wi = 0;
     			sfc[i]();
-    			ヴィオラ吹出し.Text = tsc[i];
+    			ViolaTextBubble.Text = tsc[i];
     			ip.Text = tsp[i];
     			ip.SubInfo = sub[i];
     		};
@@ -7293,14 +7244,14 @@ namespace SlaveMatrix
     		mod.Down = delegate(MouseButtons mb, Vector2D cp, Color hc)
     		{
     			ip.DownB(ref hc);
-    			if (!ヴィオラ吹出し.Tex.IsPlaying && !ip.Mai.IsPlaying && !ip.Sub.IsPlaying && wi == i)
+    			if (!ViolaTextBubble.Tex.IsPlaying && !ip.Mai.IsPlaying && !ip.Sub.IsPlaying && wi == i)
     			{
     				i++;
     				wi = i;
     				if (i < tsp.Length)
     				{
     					sfc[i]();
-    					ヴィオラ吹出し.Text = tsc[i];
+    					ViolaTextBubble.Text = tsc[i];
     					ip.Text = tsp[i];
     					ip.SubInfo = sub[i];
     				}
@@ -7332,14 +7283,14 @@ namespace SlaveMatrix
     			ip.Mai2Show = false;
     			ip.SubShow = true;
     			ip.Sub2Show = true;
-    			ヴィオラ吹出し.Tex.Feed.Dra = true;
+    			ViolaTextBubble.Tex.Feed.Dra = true;
     			Viola.両目_見つめ();
     			Viola.表情_基本0();
     			Viola.Set基本姿勢();
     			i = 0;
     			wi = 0;
     			sfc[i]();
-    			ヴィオラ吹出し.Text = tsc[i];
+    			ViolaTextBubble.Text = tsc[i];
     			ip.Text = tsp[i];
     			ip.SubInfo = sub[i];
     			Sta.GameData.祝福 = Sta.GameData.ヴィオラ;

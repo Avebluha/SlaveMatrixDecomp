@@ -39,7 +39,6 @@ namespace SlaveMatrix
     	public EleI(Med Med)
     	{
     		Lay = new Are(Med.Unit, Med.Base.XRatio, Med.Base.YRatio, Med.Base.Size + 0.0025, Med.DisQuality, Med.HitAccuracy);
-    		Lay.Setting();
     		ElesH = new HashSet<Ele>();
     	}
 

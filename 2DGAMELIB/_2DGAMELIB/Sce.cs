@@ -8,11 +8,9 @@ namespace _2DGAMELIB
     public class Sce
     {
     	private Bitmap Start;
-
     	private Graphics GS;
 
     	private Bitmap End;
-
     	private Graphics GE;
 
     	private int w;
@@ -54,12 +52,12 @@ namespace _2DGAMELIB
 
     	public void DrawStart(Are Are)
     	{
-    		Are.Draw(GS);
+    		Are.DrawTo(GS);
     	}
 
     	public void DrawEnd(Are Are)
     	{
-    		Are.Draw(GE);
+    		Are.DrawTo(GE);
     	}
 
     	public void ClearStart(ref Color ClearColor)

@@ -117,9 +117,11 @@ namespace SlaveMatrix
     		調教UI.ハンド左.角度C = 0.0;
     		if (Med.Mode == "Training")
     		{
-    			//TODO fix?
-    			//Cursor.Position = Med.BaseControlC.PointToScreen(Med.FromBasePosition(対象.Ele.位置B));
-    		}
+                //~~TODO~~ fix?
+                //Cursor.Position = Med.BaseControlC.PointToScreen(Med.FromBasePosition(対象.Ele.位置B));
+                Med.CursorPosition = Med.FromBasePosition(対象.Ele.位置B);
+
+            }
     		バスト初期化.Start();
     		if (調教UI.ハンド右.Xi == 5)
     		{
@@ -165,9 +167,11 @@ namespace SlaveMatrix
     		調教UI.ハンド左.角度C = 0.0;
     		if (Med.Mode == "Training")
     		{
-    			//TODO fix?
-    			//Cursor.Position = Med.BaseControlC.PointToScreen(Med.FromBasePosition(対象.Ele.位置B));
-    		}
+                //~~TODO~~ fix?
+                //Cursor.Position = Med.BaseControlC.PointToScreen(Med.FromBasePosition(対象.Ele.位置B));
+                Med.CursorPosition = Med.FromBasePosition(対象.Ele.位置B);
+
+            }
     		バスト初期化.Start();
     		if (調教UI.ハンド右.Xi == 2)
     		{
@@ -202,9 +206,12 @@ namespace SlaveMatrix
     		調教UI.ハンド右.位置B = 位置B;
     		Addvl(ref 陰核位置);
     		核捏ね初 = true;
-            //TODO fix?
+            //~~TODO~~ fix?
             //Cursor.Position = Med.BaseControlC.PointToScreen(Med.FromBasePosition(対象.Ele.位置B));
-    		核捏ねsi2();
+            Med.CursorPosition = Med.FromBasePosition(対象.Ele.位置B);
+
+
+            核捏ねsi2();
     	}
 
     	private void 核捏ね解除()
@@ -216,9 +223,11 @@ namespace SlaveMatrix
     		Bod.ピアス.位置C = Dat.Vec2DZero;
     		if (Med.Mode == "Training")
     		{
-                //TODO fix?
+                //~~TODO~~ fix?
                 //Cursor.Position = Med.BaseControlC.PointToScreen(Med.FromBasePosition(対象.Ele.位置B));
-    		}
+                Med.CursorPosition = Med.FromBasePosition(対象.Ele.位置B);
+
+            }
     	}
 
     	private void 核捏ねsi1()
@@ -259,9 +268,11 @@ namespace SlaveMatrix
     		Isくぱぁ = false;
     		if (Med.Mode == "Training")
     		{
-                //TODO fix?
+                //~~TODO~~ fix?
                 //Cursor.Position = Med.BaseControlC.PointToScreen(Med.FromBasePosition(対象.Ele.位置B));
-    		}
+                Med.CursorPosition = Med.FromBasePosition(対象.Ele.位置B);
+
+            }
     		if (cd.c == ContactType.Crotch)
     		{
     			くぱぁsi1();

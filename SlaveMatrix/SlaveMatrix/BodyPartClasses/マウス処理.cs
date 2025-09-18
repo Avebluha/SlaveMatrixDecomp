@@ -88,9 +88,11 @@ namespace SlaveMatrix
     		{
     			if (Is吸付)
     			{
-                    //TODO fix?
+                    //~~TODO~~ fix?
                     //Cursor.Position = Med.BaseControlC.PointToScreen(Med.FromBasePosition(対象.Ele.位置));
-    			}
+                    Med.CursorPosition = Med.FromBasePosition(対象.Ele.位置);
+
+                }
     			else if (Is舐め)
     			{
     				if (cd.e == null)

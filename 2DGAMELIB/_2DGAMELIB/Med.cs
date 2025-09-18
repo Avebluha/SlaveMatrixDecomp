@@ -9,99 +9,83 @@ namespace _2DGAMELIB
 {
     public class Med
     {
-    	public static object obj;
+        private GlImage baseControl;
 
-    	private GlImage baseControl;
+        public double Unit = 1762.4;
+        public double DisQuality = 1.0;
+        public double HitAccuracy = 0.5;
+        private double resMag = 1.0;
+        private int WidthM;
+        private int HeightM;
 
-    	public double Unit = 1762.4;
+        public bool ShowFPS;
+        public bool Drive = true;
 
-    	public Rect Base = new Rect(4.0, 3.0, 0.4);
+        public Rect Base = new Rect(4.0, 3.0, 0.4);
 
-    	public double DisQuality = 1.0;
+        public Bitmap Dis;
+        public Graphics GD;
 
-    	public double HitAccuracy = 0.5;
+        public Bitmap Hit;
+        public Graphics GH;
 
-    	public Bitmap BD;
+        public Sce Sce;
+        public FPS FPSF = new FPS(60.0);
 
-    	public Graphics GD;
+        private Size BaseSize = Size.Empty;
+        private Vector2D resVector = Dat.Vec2DZero;
 
-    	public Bitmap BH;
+        public string UITitle;
 
-    	public Graphics GH;
+        private string mode;
+        public string Modeb;
 
-    	private Color ClearColor = Color.Transparent;
+        private Dictionary<string, Module> Modes;
+        private Func<Med, Dictionary<string, Module>> GetModes;
 
-    	public bool Drive = true;
+        public HashSet<Color> HitColors = new HashSet<Color>
+        {
+            Color.Transparent,
+            Color.Black
+        };
 
-    	private Size BaseSize = Size.Empty;
 
-    	private double resMag = 1.0;
+        //public Control BaseControlC => baseControl;
 
-    	private Vector2D resVector = Dat.Vec2DZero;
+        public string Mode
+        {
+            get
+            {
+                return mode;
+            }
+            set
+            {
+                Modes[mode].Up(MouseButtons.None, Dat.Vec2DZero, Color.Empty);
+                Modes[mode].Move(MouseButtons.None, Dat.Vec2DZero, Color.Empty);
+                Modeb = mode;
+                mode = value;
+                Modes[mode].Move(MouseButtons.None, Dat.Vec2DZero, Color.Empty);
+                Modes[mode].Setting();
+            }
+        }
 
-    	private Sce Sce;
+        public Vector2D CursorPosition{
+            get {
+                return ToBasePosition(baseControl.GetCursorPoint()); //ToBasePosition(baseControl.PointToClient(System.Windows.Forms.Cursor.Position));        
+            }
 
-    	private string mode;
-
-    	public string Modeb;
-
-    	private Dictionary<string, Module> Modes;
-
-    	private Func<Med, Dictionary<string, Module>> GetModes;
-
-    	private int WidthM;
-
-    	private int HeightM;
-
-    	public static double FPS;
-
-    	public FPS FPSF = new FPS(FPS);
-
-    	private bool cur = true;
-
-    	public HashSet<Color> HitColors = new HashSet<Color>
-    	{
-    		Color.Transparent,
-    		Color.Black
-    	};
-
-    	public static double DpiX;
-
-    	public static double DpiY;
-
-    	public string UITitle;
-
-    	public bool ShowFPS;
-
-    	//public Control BaseControlC => baseControl;
-
-    	public string Mode
-    	{
-    		get
-    		{
-    			return mode;
-    		}
-    		set
-    		{
-    			Modes[mode].Up(MouseButtons.None, Dat.Vec2DZero, Color.Empty);
-    			Modes[mode].Move(MouseButtons.None, Dat.Vec2DZero, Color.Empty);
-    			Modeb = mode;
-    			mode = value;
-    			Modes[mode].Move(MouseButtons.None, Dat.Vec2DZero, Color.Empty);
-    			Modes[mode].Setting();
-    		}
-    	}
-
-    	public Vector2D CursorPosition => ToBasePosition(baseControl.GetCursorPoint()); //ToBasePosition(baseControl.PointToClient(System.Windows.Forms.Cursor.Position));
-
+            set {
+                baseControl.SetCursorPoint(FromBasePosition(value));
+            }
+        }
     	public Med()
     	{
-            //Point dpi = GetDpi();
-            //dpiX = dpi.X;
-            //dpiY = dpi.Y;
-            DpiX = 1.0; // 96.0 / dpiX;
-            DpiY = 1.0; // 96.0 / dpiY;
     	}
+
+
+
+
+
 
     	public void FadeIn(double Rate)
     	{
@@ -113,20 +97,10 @@ namespace _2DGAMELIB
     		Sce.TransD(GD, Rate);
     	}
 
-    	public void DrawStart(Are Are)
-    	{
-    		Sce.DrawStart(Are);
-    	}
 
-    	public void DrawEnd(Are Are)
-    	{
-    		Sce.DrawEnd(Are);
-    	}
 
-    	public void ClearSta(Color ClearColor)
-    	{
-    		Sce.ClearStart(ref ClearColor);
-    	}
+
+
 
     	public void InitializeModes(string Mode, Func<Med, Dictionary<string, Module>> GetModes)
     	{
@@ -138,24 +112,31 @@ namespace _2DGAMELIB
     	{
     		baseControl = BaseControl;
     		BaseSize = new Size((int)(Base.LocalWidth * Unit), (int)(Base.LocalHeight * Unit));
-    		BD = new Bitmap(BaseSize.Width, BaseSize.Height);
-    		GD = Graphics.FromImage(BD);
-    		GD.InterpolationMode = InterpolationMode.HighQualityBilinear;
-    		BH = new Bitmap((int)((double)BaseSize.Width * HitAccuracy), (int)((double)BaseSize.Height * HitAccuracy));
-    		GH = Graphics.FromImage(BH);
-    		GH.InterpolationMode = InterpolationMode.Bilinear;
-    		WidthM = BH.Width - 1;
-    		HeightM = BH.Height - 1;
-    		Clear();
+    		Dis = new Bitmap(BaseSize.Width, BaseSize.Height);
+    		GD = Graphics.FromImage(Dis);
+    		//GD.InterpolationMode = InterpolationMode.HighQualityBilinear;
+            GD.SmoothingMode = SmoothingMode.None;
+            GD.PixelOffsetMode = PixelOffsetMode.HighSpeed;
+            GD.InterpolationMode = InterpolationMode.NearestNeighbor;
+            //needed for text or smthn
+            GD.CompositingMode = CompositingMode.SourceOver;
+
+            Hit = new Bitmap((int)((double)BaseSize.Width * HitAccuracy), (int)((double)BaseSize.Height * HitAccuracy));
+    		GH = Graphics.FromImage(Hit);
+    		//GH.InterpolationMode = InterpolationMode.Bilinear;
+            GH.SmoothingMode = SmoothingMode.None;
+            GH.PixelOffsetMode = PixelOffsetMode.HighSpeed;
+            GH.InterpolationMode = InterpolationMode.NearestNeighbor;
+            GH.CompositingMode = CompositingMode.SourceOver;
+
+            WidthM = Hit.Width - 1;
+    		HeightM = Hit.Height - 1;
     		Sce = new Sce(BaseSize.Width, BaseSize.Height);
     		Modes = GetModes(this);
 
 
             BaseControl.Click = delegate (IntPtr window, GLFW.MouseButton button, InputState state, GLFW.ModifierKeys modifiers)
             {
-    			double x, y;
-    			Glfw.GetCursorPosition(GlImage.PtrToWindow(window), out x, out y);
-                Point Position5 = new Point((int)x, (int)y);
                 MouseButtons arg2 = MouseButtons.None;
                 switch (button)
                 {
@@ -176,14 +157,17 @@ namespace _2DGAMELIB
                         break;
     			}
 
-
-    			(state == InputState.Press ? Modes[mode].Down : Modes[mode].Up)(arg2, ToBasePosition(Position5), GetHitColor(ref Position5));
+                double x, y;
+                Glfw.GetCursorPosition(GlImage.PtrToWindow(window), out x, out y);
+                Vector2D Position5 = new Vector2D(x, y);
+                (state == InputState.Press ? Modes[mode].Down : Modes[mode].Up)
+                    (arg2, ToBasePosition(Position5), GetHitColor(Position5));
     		};
 
     		BaseControl.Move = delegate (IntPtr window, double x, double y)
     		{
-    			Point Position3 = new Point((int)x, (int)y);
-    			Modes[mode].Move(BaseControl.GetMouseButtons(), ToBasePosition(Position3), GetHitColor(ref Position3));
+    			Vector2D Position3 = new Vector2D(x, y);
+    			Modes[mode].Move(BaseControl.GetMouseButtons(), ToBasePosition(Position3), GetHitColor(Position3));
     		};
 
     		BaseControl.Leave = delegate (IntPtr window, bool entered)
@@ -192,8 +176,8 @@ namespace _2DGAMELIB
     			{
     				double x, y;
     				Glfw.GetCursorPosition(GlImage.PtrToWindow(window), out x, out y);
-    				Point Position2 = new Point((int)x, (int)y);
-    				Modes[mode].Leave(BaseControl.GetMouseButtons(), ToBasePosition(Position2), GetHitColor(ref Position2));
+    				Vector2D Position2 = new Vector2D(x, y);
+    				Modes[mode].Leave(BaseControl.GetMouseButtons(), ToBasePosition(Position2), GetHitColor(Position2));
     			}
     		};
 
@@ -201,9 +185,9 @@ namespace _2DGAMELIB
     		{
                 double x, y;
                 Glfw.GetCursorPosition(GlImage.PtrToWindow(window), out x, out y);
-    			Point Position = new Point((int)x, (int)y);
+    			Vector2D Position = new Vector2D(x, y);
     			//Note: yo may be inverted
-                Modes[mode].Wheel(BaseControl.GetMouseButtons(), ToBasePosition(Position), (int)yo, GetHitColor(ref Position));
+                Modes[mode].Wheel(BaseControl.GetMouseButtons(), ToBasePosition(Position), (int)yo, GetHitColor(Position));
             };
 
     		BaseControl.Resize = delegate (IntPtr window, int width, int height)
@@ -246,20 +230,22 @@ namespace _2DGAMELIB
     		return BaseSize;
     	}
 
-    	public Vector2D ToBasePosition(Point Position)
+
+
+    	public Vector2D ToBasePosition(Vector2D Position)
     	{
     		return new Vector2D(((double)Position.X - resVector.X) / Unit * resMag, ((double)Position.Y - resVector.Y) / Unit * resMag);
     	}
 
-    	public Point FromBasePosition(Vector2D Position)
+    	public Vector2D FromBasePosition(Vector2D Position)
     	{
-    		return new Point((int)(Position.X / resMag * Unit + resVector.X), (int)(Position.Y / resMag * Unit + resVector.Y));
+    		return new Vector2D(Position.X / resMag * Unit + resVector.X, Position.Y / resMag * Unit + resVector.Y);
     	}
 
-    	public Color GetHitColor(Point Position)
+    	public Color GetHitColor(Vector2D Position)
     	{
     		double num = HitAccuracy * resMag;
-    		Point point = ((Position.ToVector2D() - resVector) * num).ToPoint();
+    		Point point = ((Position - resVector) * num).ToPoint();
     		if (point.X < 0)
     		{
     			point.X = 0;
@@ -276,7 +262,7 @@ namespace _2DGAMELIB
     		{
     			point.Y = HeightM;
     		}
-    		return BH.GetPixel(point.X, point.Y);
+    		return Hit.GetPixel(point.X, point.Y);
     	}
 
     	public Color GetHitColor(ref Point Position)
@@ -299,14 +285,18 @@ namespace _2DGAMELIB
     		{
     			point.Y = HeightM;
     		}
-    		return BH.GetPixel(point.X, point.Y);
+    		return Hit.GetPixel(point.X, point.Y);
     	}
+
+
+
 
     	public void Drawing()
     	{
-    		baseControl.BitmapSetting(BD);
-    		Modes[mode].Setting();
+            baseControl.BitmapSetting(Dis);
 
+            baseControl.SetTitle(UITitle);
+            Modes[mode].Setting();
 
     		Action action = delegate
     		{
@@ -320,8 +310,9 @@ namespace _2DGAMELIB
                     }
                 }
 
-                GD.DrawImage(BH, new Point(0, 0));
-    			baseControl.SetBitmap(BD);
+                //DEBUG shows the hit lut
+                //GD.DrawImage(Hit, new Point(0, 0));
+                baseControl.SetBitmap(Dis);
             };
 
 
@@ -332,45 +323,30 @@ namespace _2DGAMELIB
     		}
     	}
 
-    	public void Clear()
-    	{
-    		GD.Clear(ClearColor);
-    		GH.Clear(ClearColor);
-    	}
 
     	public void Draw(Are Are)
     	{
-    		Are.Draw(GD, GH);
+            //Note: this is terribly slow...
+            //would be better to not copy the entire frame
+    		Are.DrawTo(GD, GH);
     	}
 
+
+
+        //TODO fix?
     	public void CursorHide()
     	{
-    		if (cur)
-    		{
-    			//TODO fix?
-    			//System.Windows.Forms.Cursor.Hide();
-    			cur = false;
-    		}
+    		//TODO fix?
     	}
 
     	public void CursorShow()
     	{
-    		if (!cur)
-            {
-                //TODO fix?
-                //System.Windows.Forms.Cursor.Show();
-                cur = true;
-    		}
+            //TODO fix?
     	}
 
-    	public void InvokeL(Action a)
-    	{
-    		//TODO this look right?
-    		a();
-    		//baseControl.Invoke(a);
-    	}
 
-    	public Color GetUniqueColor()
+        //hit color stuff
+        public Color GetUniqueColor()
     	{
     		Oth.GetRandomColor(out var ret);
     		while (HitColors.Contains(ret))
@@ -434,10 +410,6 @@ namespace _2DGAMELIB
     		//return result;
     	}*/
 
-    	static Med()
-    	{
-    		obj = new object();
-    		FPS = 60.0;
-    	}
+    	static Med() {}
     }
 }

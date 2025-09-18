@@ -6,9 +6,9 @@ namespace SlaveMatrix
     {
     	private Med Med;
 
-    	private 吹き出し hd;
+    	private TextBubble hd;
 
-    	public ViolaText(Med Med, 吹き出し hd)
+    	public ViolaText(Med Med, TextBubble hd)
     	{
     		this.Med = Med;
     		this.hd = hd;

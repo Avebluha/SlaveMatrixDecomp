@@ -40,11 +40,15 @@ namespace _2DGAMELIB
 
         public GlImage() { }
 
-    	public System.Drawing.Point GetCursorPoint() {
+    	public Vector2D GetCursorPoint() {
     		double x, y;
     		Glfw.GetCursorPosition(window, out x, out y);
-    		return new System.Drawing.Point((int)x, (int)y);
+    		return new Vector2D(x, y);
     	}
+
+        public void SetCursorPoint(Vector2D pos) {
+            Glfw.SetCursorPosition(window, pos.X, pos.Y);
+        }
 
     	public MouseButtons GetMouseButtons() {
     		MouseButtons btns = 0;
@@ -220,7 +224,7 @@ void main()
     		gl.TexParameterI(Silk.NET.OpenGL.GLEnum.Texture2D, Silk.NET.OpenGL.GLEnum.TextureMinFilter, new int[] {(int)TextureMinFilter.Nearest});
 
 
-            float[] buf = { 1.0f, 1.0f,  -1.0f, 1.0f,  1.0f, -1.0f,   -1.0f, -1.0f };
+            float[] buf = { 1.0f, 1.0f, -1.0f, 1.0f, 1.0f, -1.0f, -1.0f, -1.0f };
             vertex_buf = gl.GenBuffer();
             gl.BindBuffer(Silk.NET.OpenGL.GLEnum.ArrayBuffer, vertex_buf);
             fixed (float* buf_ = buf) gl.BufferData(Silk.NET.OpenGL.GLEnum.ArrayBuffer, (uint)(sizeof(float) * buf.Length), buf_, Silk.NET.OpenGL.GLEnum.StaticDraw);
@@ -228,102 +232,4 @@ void main()
     		vao = gl.GenVertexArray();
         }
     }
-
-
-    /*
-    public class WPFImage : ElementHost
-    {
-    	public GlImage gl_img;
-
-        private int ByteSize;
-
-    	private Rectangle rect1;
-
-    	private Int32Rect rect2;
-
-    	private BitmapData data;
-
-    	public WriteableBitmap wb;
-
-    	private bool HighQuality;
-
-    	private string ConfigPath = Directory.GetCurrentDirectory() + "\\Config.ini";
-
-    	public System.Windows.Controls.Image Image => (System.Windows.Controls.Image)base.Child;
-
-    	public WPFImage()
-    	{
-    		System.Windows.Controls.Image child = new System.Windows.Controls.Image
-    		{
-    			Stretch = Stretch.Uniform
-    		};
-    		base.Child = child;
-
-            gl_img = new GlImage();
-        }
-
-    	public void PollEvents() {
-    		gl_img.PollEvents();
-    	}
-
-    	public void ImageSetting()
-    	{
-    		try
-    		{
-    			if (!File.Exists(ConfigPath))
-    			{
-    				HighQuality = false;
-    			}
-    			else
-    			{
-    				string[] source = ConfigPath.ReadLines();
-    				HighQuality = source.First((string s) => s.StartsWith("AntiAliasing:")).Last() == '1';
-    			}
-    		}
-    		catch
-    		{
-    			HighQuality = false;
-    		}
-    		if (HighQuality)
-    		{
-    			RenderOptions.SetBitmapScalingMode(Image, BitmapScalingMode.LowQuality);
-    		}
-    		else
-    		{
-    			RenderOptions.SetBitmapScalingMode(Image, BitmapScalingMode.NearestNeighbor);
-    		}
-    		RenderOptions.SetEdgeMode(Image, EdgeMode.Aliased);
-    	}
-
-        [DllImport("Kernel32.dll")]
-        public static extern void CopyMemory(IntPtr Destination, IntPtr Source, int ByteSize);
-
-
-    	//the guy that gets called to update a frame
-        public void SetBitmap(Bitmap bmp)
-    	{
-    		data = bmp.LockBits(rect1, ImageLockMode.ReadOnly, System.Drawing.Imaging.PixelFormat.Format32bppArgb);
-    		wb.Lock();
-    		CopyMemory(wb.BackBuffer, data.Scan0, ByteSize);
-    		wb.AddDirtyRect(rect2);
-    		wb.Unlock();
-    		bmp.UnlockBits(data);
-
-    		gl_img.SetBitmap(bmp);
-    	}
-
-        public void BitmapSetting(Bitmap bmp)
-    	{
-    		int pixelWidth = bmp.Width;
-    		int num = bmp.Height;
-    		rect1 = new Rectangle(0, 0, pixelWidth, num);
-    		rect2 = new Int32Rect(0, 0, pixelWidth, num);
-    		wb = new WriteableBitmap(pixelWidth, num, bmp.HorizontalResolution, bmp.VerticalResolution, PixelFormats.Bgra32, null);
-    		ByteSize = wb.BackBufferStride * num;
-    		Image.Source = wb;
-
-    		gl_img.BitmapSetting(bmp);
-        }
-    }
-    */
 }

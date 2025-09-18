@@ -7,39 +7,26 @@ namespace _2DGAMELIB
     public class Are : Rect
     {
     	public Bitmap Dis;
+        public Bitmap Hit;
 
     	protected Graphics gd;
-
-    	protected Bitmap Hit;
-
     	protected Graphics gh;
 
     	protected double unit;
-
     	protected double disUnit;
-
     	protected double hitUnit;
 
     	protected Size WH = System.Drawing.Size.Empty;
-
     	protected Size WHH = System.Drawing.Size.Empty;
-
     	protected Size WHA = System.Drawing.Size.Empty;
 
-    	private Color ClearColor = Color.Transparent;
-
     	public Vector2D BasePoint = Dat.Vec2DZero;
-
     	public Vector2D Position = Dat.Vec2DZero;
 
-    	protected Vector2D p;
-
     	public Graphics GD => gd;
-
     	public Graphics GH => gh;
 
     	public double Unit => unit;
-
     	public double DisUnit => disUnit;
 
     	public Are() { }
@@ -132,15 +119,28 @@ namespace _2DGAMELIB
     		}
     	}
 
-    	public void Draw(Graphics GD)
+        public void Draw(Are Are)
+        {
+            Vector2D p = Are.GetPosition();
+            GD.DrawImage(Are.Dis, (float)(p.X * Are.disUnit), (float)(p.Y * Are.disUnit), Are.WHA.Width, Are.WHA.Height);
+            if (Are.gh != null && GH != null)
+            {
+                GH.DrawImage(Are.Hit, (int)(p.X * Are.hitUnit), (int)(p.Y * Are.hitUnit), Are.WHH.Width, Are.WHH.Height);
+            }
+        }
+
+
+
+
+        public void DrawTo(Graphics GD)
     	{
-    		p = GetPosition();
+    		Vector2D p = GetPosition();
     		GD.DrawImage(Dis, (int)(p.X * unit), (int)(p.Y * unit), WH.Width, WH.Height);
     	}
 
-    	public void Draw(Graphics GD, Graphics GH)
+    	public void DrawTo(Graphics GD, Graphics GH)
     	{
-    		p = GetPosition();
+            Vector2D p = GetPosition();
     		GD.DrawImage(Dis, (int)(p.X * unit), (int)(p.Y * unit), WH.Width, WH.Height);
     		if (gh != null)
     		{
@@ -148,15 +148,6 @@ namespace _2DGAMELIB
     		}
     	}
 
-    	public void Draw(Are Are)
-    	{
-            p = Are.GetPosition();
-    		GD.DrawImage(Are.Dis, (float)(p.X * Are.disUnit), (float)(p.Y * Are.disUnit), Are.WHA.Width, Are.WHA.Height);
-    		if (Are.gh != null && GH != null)
-    		{
-    			GH.DrawImage(Are.Hit, (int)(p.X * Are.hitUnit), (int)(p.Y * Are.hitUnit), Are.WHH.Width, Are.WHH.Height);
-    		}
-        }
 
 
 
@@ -164,10 +155,10 @@ namespace _2DGAMELIB
 
     	public void Clear()
     	{
-    		gd.Clear(ClearColor);
+    		gd.Clear(Color.Transparent);
     		if (gh != null)
     		{
-    			gh.Clear(ClearColor);
+    			gh.Clear(Color.Transparent);
     		}
     	}
 
@@ -176,7 +167,7 @@ namespace _2DGAMELIB
     		gd.Clear(Color);
     		if (gh != null)
     		{
-    			gh.Clear(ClearColor);
+    			gh.Clear(Color.Transparent);
     		}
     	}
 

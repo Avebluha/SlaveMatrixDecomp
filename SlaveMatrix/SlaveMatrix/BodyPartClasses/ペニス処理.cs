@@ -483,9 +483,12 @@ namespace SlaveMatrix
     			{
     				パイズリ.End();
     			}
-                //TODO fix?
+                //~~TODO~~ fix?
                 //Cursor.Position = Med.BaseControlC.PointToScreen(Med.FromBasePosition(対象.Ele.位置B));
-    			調教UI.ハンド処理.バスト初期化.Start();
+                Med.CursorPosition = Med.FromBasePosition(対象.Ele.位置B);
+
+
+                調教UI.ハンド処理.バスト初期化.Start();
     			vc = Dat.Vec2DZero;
     			Bod.胸毛_人.位置C = vc;
     			調教UI.ハンド左表示 = false;

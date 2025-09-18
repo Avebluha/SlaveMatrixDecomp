@@ -276,7 +276,7 @@ namespace _2DGAMELIB
     		}
     		if (EditF || EditTS)
     		{
-    			Font = new Font(font.FontFamily, (float)(us * fontSize * Med.DpiY));
+    			Font = new Font(font.FontFamily, (float)(us * fontSize));
     			EditF = false;
     			EditTS = false;
     		}
@@ -303,7 +303,7 @@ namespace _2DGAMELIB
     		double num = Unit * base.Size;
     		if (EditF || EditS || EditPS || EditTS)
     		{
-    			Font = new Font(font.FontFamily, (float)(num * fontSize * Med.DpiY));
+    			Font = new Font(font.FontFamily, (float)(num * fontSize));
     			EditF = false;
     			EditTS = false;
     		}
