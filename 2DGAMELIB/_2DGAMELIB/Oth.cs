@@ -13,7 +13,6 @@ namespace _2DGAMELIB
 
     	private static double s0;
 
-
     	public static Color Reverse(this Color c)
     	{
     		return Color.FromArgb(c.A, 255 - c.R, 255 - c.G, 255 - c.B);
@@ -159,10 +158,12 @@ namespace _2DGAMELIB
 
     	public static Obj ObjLoad(this byte[] bd)
     	{
-    		return bd.Load<byte[]>().ToDeserialObject<Obj>().SetDefaultR();
-    	}
+            Obj obj = bd.Load<byte[]>().ToDeserialObject<Obj>().SetDefaultR();
+            return obj;
+        }
 
-    	public static bool Lot(this double p)
+
+        public static bool Lot(this double p)
     	{
     		return RNG.XS.NextDouble() < p;
     	}

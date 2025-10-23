@@ -25,7 +25,7 @@ namespace SlaveMatrix
 
     	public override Ele GetEle(double DisUnit, Med Med, 体配色 体配色)
     	{
-    		return new 咳(DisUnit, 配色指定, 体配色, Med, this);
+    		return new Cough(DisUnit, 配色指定, 体配色, Med, this);
     	}
     }
 }

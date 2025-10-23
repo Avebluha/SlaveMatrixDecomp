@@ -1084,7 +1084,10 @@ namespace SlaveMatrix
 
     	static Sta()
     	{
-    		胴体 = Resources.胴体.ObjLoad();
+            var obj = Resources.胴体.ObjLoad();
+            obj.MigrateKeys();
+            胴体 = obj;
+
     		//胴体.SaveExMod("C:\\Users\\dave\\Documents\\胴体");
     		//Ser.ToJson(胴体, "C:\\Users\\dave\\Documents\\胴体.json");
     		//胴体 = Ser.UnJson<Obj>("C:\\Users\\dave\\Documents\\胴体.json");

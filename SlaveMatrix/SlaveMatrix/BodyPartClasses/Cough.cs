@@ -2,7 +2,7 @@ using _2DGAMELIB;
 
 namespace SlaveMatrix
 {
-    public class 咳 : Ele
+    public class Cough : Ele
     {
     	public Par X0Y0_咳基;
 
@@ -346,10 +346,10 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 咳(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 咳D e)
+    	public Cough(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 咳D e)
     	{
     		ThisType = GetType();
-    		本体 = new Difs(Sta.胴体["咳"]);
+    		本体 = new Difs(Sta.胴体["Cough"]);
     		Pars pars = 本体[0][0];
     		X0Y0_咳基 = pars["咳基"].ToPar();
     		X0Y0_雫1 = pars["雫1"].ToPar();

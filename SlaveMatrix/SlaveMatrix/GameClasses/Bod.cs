@@ -120,7 +120,7 @@ namespace SlaveMatrix
 
     	public 性器精液_人 口精液;
 
-    	public 咳 咳;
+    	public Cough 咳;
 
     	public 呼気 呼気;
 
@@ -4009,7 +4009,7 @@ namespace SlaveMatrix
     			涎右.SetHitFalse();
     			口精液 = 頭.口_接続.GetEle<性器精液_人>();
     			口精液.SetHitFalse();
-    			咳 = 頭.口_接続.GetEle<咳>();
+    			咳 = 頭.口_接続.GetEle<Cough>();
     			咳.SetHitFalse();
     			呼気 = 頭.口_接続.GetEle<呼気>();
     			呼気.SetHitFalse();
