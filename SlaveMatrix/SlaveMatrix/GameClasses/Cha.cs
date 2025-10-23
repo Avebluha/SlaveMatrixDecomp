@@ -2091,7 +2091,7 @@ namespace SlaveMatrix
                 {
                     result.c = ContactType.Side;
                 }
-                else if (((result.e is 腰 || result.e is 四足腰) && result.p != null && result.p.Tag == "下腹") || result.e is ボテ腹)
+                else if (((result.e is Waist || result.e is 四足腰) && result.p != null && result.p.Tag == "下腹") || result.e is ボテ腹)
                 {
                     result.c = ContactType.Stomache;
                 }

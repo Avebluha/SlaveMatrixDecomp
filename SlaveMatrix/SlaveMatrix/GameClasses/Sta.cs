@@ -1164,7 +1164,7 @@ namespace SlaveMatrix
     		胸t = typeof(胸);
     		肩t = typeof(肩);
     		胴t = typeof(胴);
-    		腰t = typeof(腰);
+    		腰t = typeof(Waist);
     		尾_鯨t = typeof(尾_鯨);
     		上腕_人t = typeof(上腕_人);
     		上腕_鳥t = typeof(上腕_鳥);
@@ -1338,13 +1338,13 @@ namespace SlaveMatrix
     			ConnectionInfo.胸_背中_接続,
     			ConnectionInfo.胴_胸_接続,
     			ConnectionInfo.胴_肌_接続,
-    			ConnectionInfo.腰_胴_接続,
-    			ConnectionInfo.腰_肌_接続,
-    			ConnectionInfo.腰_膣基_接続,
-    			ConnectionInfo.腰_肛門_接続,
-    			ConnectionInfo.腰_尾_接続,
-    			ConnectionInfo.腰_半身_接続,
-    			ConnectionInfo.腰_上着_接続,
+    			ConnectionInfo.Waist_胴_接続,
+    			ConnectionInfo.Waist_肌_接続,
+    			ConnectionInfo.Waist_膣基_接続,
+    			ConnectionInfo.Waist_肛門_接続,
+    			ConnectionInfo.Waist_尾_接続,
+    			ConnectionInfo.Waist_半身_接続,
+    			ConnectionInfo.Waist_上着_接続,
     			ConnectionInfo.ボテ腹_人_腹板_接続,
     			ConnectionInfo.ボテ腹_獣_腹板_接続,
     			ConnectionInfo.肛門_人_肛門精液_接続,

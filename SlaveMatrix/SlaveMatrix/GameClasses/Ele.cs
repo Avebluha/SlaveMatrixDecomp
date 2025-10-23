@@ -296,7 +296,7 @@ namespace SlaveMatrix
     				{
     					item.SizeBase *= num2;
     				}
-    				else if (item.Tag.Contains("吸盤") || this is 膣基 || this is 膣内精液 || this is 断面 || this is 性器 || this is 肛門 || this is 乳房 || this is 下着トップ || this is 腰 || this is 腰肌 || this is 四足腰 || this is 下着ボトム || this is 上着ボトム || this is 手 || this is 噴乳 || this is 飛沫 || this is 潮吹_小 || this is 潮吹_大 || this is 放尿 || this is 半身 || this is 頭頂_天 || this is 背中_光 || this is ボテ腹)
+    				else if (item.Tag.Contains("吸盤") || this is 膣基 || this is 膣内精液 || this is 断面 || this is 性器 || this is 肛門 || this is 乳房 || this is 下着トップ || this is Waist || this is 腰肌 || this is 四足腰 || this is 下着ボトム || this is 上着ボトム || this is 手 || this is 噴乳 || this is 飛沫 || this is 潮吹_小 || this is 潮吹_大 || this is 放尿 || this is 半身 || this is 頭頂_天 || this is 背中_光 || this is ボテ腹)
     				{
     					item.SizeBase *= num;
     				}
@@ -336,7 +336,7 @@ namespace SlaveMatrix
     			double num = 身長mi2 + 身長d2 * 身長_;
     			foreach (Par item in 本体.EnumAllPar())
     			{
-    				if (!item.Parent.Tag.Contains("眼") && !item.Parent.Tag.Contains("コア") && !item.Tag.Contains("傷") && !item.Tag.Contains("ボタン") && !item.Parent.Tag.Contains("輪") && !item.Tag.Contains("吸盤") && !(this is 膣基) && !(this is 膣内精液) && !(this is 断面) && !(this is 性器) && !(this is 肛門) && !(this is 乳房) && !(this is 下着トップ) && !(this is 腰) && !(this is 腰肌) && !(this is 四足腰) && !(this is 下着ボトム) && !(this is 上着ボトム) && !(this is 手) && !(this is 噴乳) && !(this is 飛沫) && !(this is 潮吹_小) && !(this is 潮吹_大) && !(this is 放尿) && !(this is 頭) && !(this is 目隠帯) && !(this is 玉口枷) && !(this is 半身) && !(this is 頭頂) && !(this is 背中_光) && !(this is ボテ腹))
+    				if (!item.Parent.Tag.Contains("眼") && !item.Parent.Tag.Contains("コア") && !item.Tag.Contains("傷") && !item.Tag.Contains("ボタン") && !item.Parent.Tag.Contains("輪") && !item.Tag.Contains("吸盤") && !(this is 膣基) && !(this is 膣内精液) && !(this is 断面) && !(this is 性器) && !(this is 肛門) && !(this is 乳房) && !(this is 下着トップ) && !(this is Waist) && !(this is 腰肌) && !(this is 四足腰) && !(this is 下着ボトム) && !(this is 上着ボトム) && !(this is 手) && !(this is 噴乳) && !(this is 飛沫) && !(this is 潮吹_小) && !(this is 潮吹_大) && !(this is 放尿) && !(this is 頭) && !(this is 目隠帯) && !(this is 玉口枷) && !(this is 半身) && !(this is 頭頂) && !(this is 背中_光) && !(this is ボテ腹))
     				{
     					if (this is 頭 || this is 目隠帯 || this is 玉口枷)
     					{
@@ -604,17 +604,17 @@ namespace SlaveMatrix
     		ConnectionInfo.胴_肌_接続 => 1, 
     		ConnectionInfo.胴_翼左_接続 => 0, 
     		ConnectionInfo.胴_翼右_接続 => 0, 
-    		ConnectionInfo.腰_胴_接続 => 1, 
-    		ConnectionInfo.腰_腿左_接続 => 1, 
-    		ConnectionInfo.腰_腿右_接続 => 1, 
-    		ConnectionInfo.腰_膣基_接続 => 1, 
-    		ConnectionInfo.腰_肛門_接続 => 1, 
-    		ConnectionInfo.腰_尾_接続 => 0, 
-    		ConnectionInfo.腰_半身_接続 => 1, 
-    		ConnectionInfo.腰_上着_接続 => 0, 
-    		ConnectionInfo.腰_肌_接続 => 1, 
-    		ConnectionInfo.腰_翼左_接続 => 0, 
-    		ConnectionInfo.腰_翼右_接続 => 0, 
+    		ConnectionInfo.Waist_胴_接続 => 1, 
+    		ConnectionInfo.Waist_腿左_接続 => 1, 
+    		ConnectionInfo.Waist_腿右_接続 => 1, 
+    		ConnectionInfo.Waist_膣基_接続 => 1, 
+    		ConnectionInfo.Waist_肛門_接続 => 1, 
+    		ConnectionInfo.Waist_尾_接続 => 0, 
+    		ConnectionInfo.Waist_半身_接続 => 1, 
+    		ConnectionInfo.Waist_上着_接続 => 0, 
+    		ConnectionInfo.Waist_肌_接続 => 1, 
+    		ConnectionInfo.Waist_翼左_接続 => 0, 
+    		ConnectionInfo.Waist_翼右_接続 => 0, 
     		ConnectionInfo.ボテ腹_人_腹板_接続 => 1, 
     		ConnectionInfo.ボテ腹_獣_腹板_接続 => 1, 
     		ConnectionInfo.肛門_人_肛門精液_接続 => 1, 

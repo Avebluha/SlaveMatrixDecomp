@@ -158,8 +158,7 @@ namespace _2DGAMELIB
 
     	public static Obj ObjLoad(this byte[] bd)
     	{
-            Obj obj = bd.Load<byte[]>().ToDeserialObject<Obj>().SetDefaultR();
-            return obj;
+            return bd.Load<byte[]>().ToDeserialObject<Obj>().SetDefaultR();
         }
 
 

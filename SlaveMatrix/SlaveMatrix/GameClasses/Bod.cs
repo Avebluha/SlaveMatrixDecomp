@@ -52,7 +52,7 @@ namespace SlaveMatrix
 
     	private IEnumerable<Ele> 色更新;
 
-    	public 腰 腰;
+    	public Waist 腰;
 
     	public 胴 胴;
 
@@ -2937,7 +2937,7 @@ namespace SlaveMatrix
     		this.Med = Med;
     		this.Cha = Cha;
     		double disUnit = Are.DisUnit;
-    		腰 = (腰)Cha.ChaD.body_tree.GetEle(disUnit, Med, Cha.配色);
+    		腰 = (Waist)Cha.ChaD.body_tree.GetEle(disUnit, Med, Cha.配色);
     		Elements = 腰.EnumEle().ToArray();
     		List<スタンプK> sk = new List<スタンプK>();
     		List<スタンプW> sw = new List<スタンプW>();
@@ -3062,7 +3062,7 @@ namespace SlaveMatrix
     						});
     					});
     					脚獣右.Add(脚獣);
-    					if (獣腿2.ConnectionType == ConnectionInfo.腰_腿右_接続)
+    					if (獣腿2.ConnectionType == ConnectionInfo.Waist_腿右_接続)
     					{
     						if (current_element is 腿_獣)
     						{
@@ -3272,7 +3272,7 @@ namespace SlaveMatrix
     								{
     									翼獣.上腕.接着 = () => bod.胴.X0Y0_胴.ToGlobal(bod.胴.X0Y0_胴.BasePointBase);
     								}
-    								else if (p is 胴 || p is 腰)
+    								else if (p is 胴 || p is Waist)
     								{
     									翼獣.上腕.接着 = () => bod.腰.X0Y0_腰.ToGlobal(bod.腰.X0Y0_腰.JP[4].Joint);
     								}
@@ -3455,7 +3455,7 @@ namespace SlaveMatrix
     					});
     				});
     				脚獣左.Add(脚獣);
-    				if (獣腿2.ConnectionType == ConnectionInfo.腰_腿左_接続)
+    				if (獣腿2.ConnectionType == ConnectionInfo.Waist_腿左_接続)
     				{
     					if (current_element is 腿_獣)
     					{
@@ -3665,7 +3665,7 @@ namespace SlaveMatrix
     							{
     								翼獣.上腕.接着 = () => bod.胴.X0Y0_胴.ToGlobal(bod.胴.X0Y0_胴.BasePointBase);
     							}
-    							else if (p is 胴 || p is 腰)
+    							else if (p is 胴 || p is Waist)
     							{
     								翼獣.上腕.接着 = () => bod.腰.X0Y0_腰.ToGlobal(bod.腰.X0Y0_腰.JP[4].Joint);
     							}
@@ -3774,7 +3774,7 @@ namespace SlaveMatrix
     				{
     					continue;
     				}
-    				if (current_element.Par is 腰)
+    				if (current_element.Par is Waist)
     				{
     					if (current_element.右)
     					{

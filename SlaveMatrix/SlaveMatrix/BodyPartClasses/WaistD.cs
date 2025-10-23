@@ -5,7 +5,7 @@ using _2DGAMELIB;
 namespace SlaveMatrix
 {
     [Serializable]
-    public class 腰D : EleD
+    public class WaistD : EleD
     {
     	public bool 腰_表示 = true;
 
@@ -131,7 +131,7 @@ namespace SlaveMatrix
 
     	public List<EleD> 翼右_接続 = new List<EleD>();
 
-    	public 腰D()
+    	public WaistD()
     	{
     		ThisType = GetType();
     	}
@@ -140,14 +140,14 @@ namespace SlaveMatrix
     	{
     		胴_接続.Add(e);
     		e.Par = this;
-    		e.接続情報 = ConnectionInfo.腰_胴_接続;
+    		e.接続情報 = ConnectionInfo.Waist_胴_接続;
     	}
 
     	public void 腿左接続(EleD e)
     	{
     		腿左_接続.Add(e);
     		e.Par = this;
-    		e.接続情報 = ConnectionInfo.腰_腿左_接続;
+    		e.接続情報 = ConnectionInfo.Waist_腿左_接続;
     		if (!(e is 獣腿D))
     		{
     			return;
@@ -162,7 +162,7 @@ namespace SlaveMatrix
     	{
     		腿右_接続.Add(e);
     		e.Par = this;
-    		e.接続情報 = ConnectionInfo.腰_腿右_接続;
+    		e.接続情報 = ConnectionInfo.Waist_腿右_接続;
     		if (!(e is 獣腿D))
     		{
     			return;
@@ -177,21 +177,21 @@ namespace SlaveMatrix
     	{
     		膣基_接続.Add(e);
     		e.Par = this;
-    		e.接続情報 = ConnectionInfo.腰_膣基_接続;
+    		e.接続情報 = ConnectionInfo.Waist_膣基_接続;
     	}
 
     	public void 肛門接続(EleD e)
     	{
     		肛門_接続.Add(e);
     		e.Par = this;
-    		e.接続情報 = ConnectionInfo.腰_肛門_接続;
+    		e.接続情報 = ConnectionInfo.Waist_肛門_接続;
     	}
 
     	public void 尾接続(EleD e)
     	{
     		尾_接続.Add(e);
     		e.Par = this;
-    		e.接続情報 = ConnectionInfo.腰_尾_接続;
+    		e.接続情報 = ConnectionInfo.Waist_尾_接続;
     		if (e is 尾_ヘD || e is 尾_ウD || e is 尾_ガD || e is 尾_蟲D)
     		{
     			foreach (EleD item in e.EnumEleD())
@@ -210,28 +210,28 @@ namespace SlaveMatrix
     	{
     		半身_接続.Add(e);
     		e.Par = this;
-    		e.接続情報 = ConnectionInfo.腰_半身_接続;
+    		e.接続情報 = ConnectionInfo.Waist_半身_接続;
     	}
 
     	public void 上着接続(EleD e)
     	{
     		上着_接続.Add(e);
     		e.Par = this;
-    		e.接続情報 = ConnectionInfo.腰_上着_接続;
+    		e.接続情報 = ConnectionInfo.Waist_上着_接続;
     	}
 
     	public void 肌接続(EleD e)
     	{
     		肌_接続.Add(e);
     		e.Par = this;
-    		e.接続情報 = ConnectionInfo.腰_肌_接続;
+    		e.接続情報 = ConnectionInfo.Waist_肌_接続;
     	}
 
     	public void 翼左接続(EleD e)
     	{
     		翼左_接続.Add(e);
     		e.Par = this;
-    		e.接続情報 = ConnectionInfo.腰_翼左_接続;
+    		e.接続情報 = ConnectionInfo.Waist_翼左_接続;
     		if (!(e is 尾D))
     		{
     			return;
@@ -246,7 +246,7 @@ namespace SlaveMatrix
     	{
     		翼右_接続.Add(e);
     		e.Par = this;
-    		e.接続情報 = ConnectionInfo.腰_翼右_接続;
+    		e.接続情報 = ConnectionInfo.Waist_翼右_接続;
     		if (!(e is 尾D))
     		{
     			return;
@@ -259,7 +259,7 @@ namespace SlaveMatrix
 
     	public override Ele GetEle(double DisUnit, Med Med, 体配色 体配色)
     	{
-    		return new 腰(DisUnit, 配色指定, 体配色, Med, this);
+    		return new Waist(DisUnit, 配色指定, 体配色, Med, this);
     	}
     }
 }

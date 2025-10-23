@@ -3,7 +3,7 @@ using _2DGAMELIB;
 
 namespace SlaveMatrix
 {
-    public class 腰 : Ele
+    public class Waist : Ele
     {
     	public Par X0Y0_腰;
 
@@ -2151,11 +2151,11 @@ namespace SlaveMatrix
 
     	public JointS 翼右_接続点 => new JointS(本体, X0Y0_腰, 9);
 
-    	public 腰(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 腰D e)
+    	public Waist(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, WaistD e)
     	{
-    		腰 腰2 = this;
+    		Waist 腰2 = this;
     		ThisType = GetType();
-    		本体 = new Difs(Sta.胴体["腰"]);
+    		本体 = new Difs(Sta.胴体["Waist"]);
     		Pars pars = 本体[0][0];
     		X0Y0_腰 = pars["腰"].ToPar();
     		X0Y0_股 = pars["股"].ToPar();
@@ -2522,7 +2522,7 @@ namespace SlaveMatrix
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 腰2;
-    				f.ConnectionType = ConnectionInfo.腰_胴_接続;
+    				f.ConnectionType = ConnectionInfo.Waist_胴_接続;
     				f.接続(腰2.胴_接続点);
     				return f;
     			}).ToArray();
@@ -2533,7 +2533,7 @@ namespace SlaveMatrix
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 腰2;
-    				f.ConnectionType = ConnectionInfo.腰_腿左_接続;
+    				f.ConnectionType = ConnectionInfo.Waist_腿左_接続;
     				f.接続(腰2.腿左_接続点);
     				return f;
     			}).ToArray();
@@ -2544,7 +2544,7 @@ namespace SlaveMatrix
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 腰2;
-    				f.ConnectionType = ConnectionInfo.腰_腿右_接続;
+    				f.ConnectionType = ConnectionInfo.Waist_腿右_接続;
     				f.接続(腰2.腿右_接続点);
     				return f;
     			}).ToArray();
@@ -2555,7 +2555,7 @@ namespace SlaveMatrix
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 腰2;
-    				f.ConnectionType = ConnectionInfo.腰_膣基_接続;
+    				f.ConnectionType = ConnectionInfo.Waist_膣基_接続;
     				f.接続(腰2.膣基_接続点);
     				return f;
     			}).ToArray();
@@ -2566,7 +2566,7 @@ namespace SlaveMatrix
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 腰2;
-    				f.ConnectionType = ConnectionInfo.腰_肛門_接続;
+    				f.ConnectionType = ConnectionInfo.Waist_肛門_接続;
     				f.接続(腰2.肛門_接続点);
     				return f;
     			}).ToArray();
@@ -2577,7 +2577,7 @@ namespace SlaveMatrix
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 腰2;
-    				f.ConnectionType = ConnectionInfo.腰_尾_接続;
+    				f.ConnectionType = ConnectionInfo.Waist_尾_接続;
     				f.接続(腰2.尾_接続点);
     				return f;
     			}).ToArray();
@@ -2588,7 +2588,7 @@ namespace SlaveMatrix
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 腰2;
-    				f.ConnectionType = ConnectionInfo.腰_半身_接続;
+    				f.ConnectionType = ConnectionInfo.Waist_半身_接続;
     				f.接続(腰2.半身_接続点);
     				return f;
     			}).ToArray();
@@ -2599,7 +2599,7 @@ namespace SlaveMatrix
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 腰2;
-    				f.ConnectionType = ConnectionInfo.腰_上着_接続;
+    				f.ConnectionType = ConnectionInfo.Waist_上着_接続;
     				f.接続(腰2.上着_接続点);
     				return f;
     			}).ToArray();
@@ -2610,7 +2610,7 @@ namespace SlaveMatrix
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 腰2;
-    				f.ConnectionType = ConnectionInfo.腰_肌_接続;
+    				f.ConnectionType = ConnectionInfo.Waist_肌_接続;
     				f.接続(腰2.肌_接続点);
     				return f;
     			}).ToArray();
@@ -2621,7 +2621,7 @@ namespace SlaveMatrix
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 腰2;
-    				f.ConnectionType = ConnectionInfo.腰_翼左_接続;
+    				f.ConnectionType = ConnectionInfo.Waist_翼左_接続;
     				f.接続(腰2.翼左_接続点);
     				return f;
     			}).ToArray();
@@ -2632,7 +2632,7 @@ namespace SlaveMatrix
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 腰2;
-    				f.ConnectionType = ConnectionInfo.腰_翼右_接続;
+    				f.ConnectionType = ConnectionInfo.Waist_翼右_接続;
     				f.接続(腰2.翼右_接続点);
     				return f;
     			}).ToArray();

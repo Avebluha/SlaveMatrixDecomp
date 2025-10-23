@@ -9,7 +9,7 @@ namespace SlaveMatrix
     {
     	public Unit Parent;
 
-    	public 腰D body_tree;
+    	public WaistD body_tree;
 
     	public 体色 body_color;
 
@@ -129,7 +129,7 @@ namespace SlaveMatrix
     		return false;
     	}
 
-    	public ChaD(腰D 構成, 体色 体色)
+    	public ChaD(WaistD 構成, 体色 体色)
     	{
     		this.body_tree = 構成;
     		this.body_color = 体色;
