@@ -3,7 +3,7 @@ using _2DGAMELIB;
 
 namespace SlaveMatrix
 {
-    public class 胴 : Ele
+    public class Torso : Ele
     {
     	public Par X0Y0_胴;
 
@@ -287,13 +287,13 @@ namespace SlaveMatrix
 
     	public JointS 翼右_接続点 => new JointS(本体, X0Y0_胴, 2);
 
-    	public 胴(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 胴D e)
+    	public Torso(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 胴D e)
     	{
-    		胴 胴2 = this;
+    		Torso 胴2 = this;
     		ThisType = GetType();
-    		本体 = new Difs(Sta.胴体["胴"]);
+    		本体 = new Difs(Sta.胴体["Torso"]);
     		Pars pars = 本体[0][0];
-    		X0Y0_胴 = pars["胴"].ToPar();
+    		X0Y0_胴 = pars["Torso"].ToPar();
     		Pars pars2 = pars["筋肉"].ToPars();
     		X0Y0_筋肉_筋肉左 = pars2["筋肉左"].ToPar();
     		X0Y0_筋肉_筋肉右 = pars2["筋肉右"].ToPar();

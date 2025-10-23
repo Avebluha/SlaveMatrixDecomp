@@ -205,7 +205,7 @@ namespace SlaveMatrix
     		ThisType = GetType();
     		本体 = new Difs(Sta.半身["四足胴"]);
     		Pars pars = 本体[0][0];
-    		X0Y0_胴 = pars["胴"].ToPar();
+    		X0Y0_胴 = pars["Torso"].ToPar();
     		Pars pars2 = pars["筋肉"].ToPars();
     		X0Y0_筋肉_筋肉左 = pars2["筋肉左"].ToPar();
     		X0Y0_筋肉_筋肉右 = pars2["筋肉右"].ToPar();

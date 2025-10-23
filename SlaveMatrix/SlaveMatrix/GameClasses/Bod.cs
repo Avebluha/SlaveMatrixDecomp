@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
@@ -54,7 +54,7 @@ namespace SlaveMatrix
 
     	public Waist 腰;
 
-    	public 胴 胴;
+    	public Torso 胴;
 
     	public 胸 胸;
 
@@ -3272,7 +3272,7 @@ namespace SlaveMatrix
     								{
     									翼獣.上腕.接着 = () => bod.胴.X0Y0_胴.ToGlobal(bod.胴.X0Y0_胴.BasePointBase);
     								}
-    								else if (p is 胴 || p is Waist)
+    								else if (p is Torso || p is Waist)
     								{
     									翼獣.上腕.接着 = () => bod.腰.X0Y0_腰.ToGlobal(bod.腰.X0Y0_腰.JP[4].Joint);
     								}
@@ -3665,7 +3665,7 @@ namespace SlaveMatrix
     							{
     								翼獣.上腕.接着 = () => bod.胴.X0Y0_胴.ToGlobal(bod.胴.X0Y0_胴.BasePointBase);
     							}
-    							else if (p is 胴 || p is Waist)
+    							else if (p is Torso || p is Waist)
     							{
     								翼獣.上腕.接着 = () => bod.腰.X0Y0_腰.ToGlobal(bod.腰.X0Y0_腰.JP[4].Joint);
     							}
@@ -3829,7 +3829,7 @@ namespace SlaveMatrix
     		長胴n = 長胴.Count;
     		if (腰 != null)
     		{
-    			胴 = 腰.胴_接続.GetEle<胴>();
+    			胴 = 腰.胴_接続.GetEle<Torso>();
     			ボテ腹_人 = 腰.肌_接続.GetEle<ボテ腹_人>();
     			ボテ腹板_人 = ボテ腹_人.腹板_接続.GetEle<ボテ腹板>();
     			ボテ腹板_人.SetHitFalse();

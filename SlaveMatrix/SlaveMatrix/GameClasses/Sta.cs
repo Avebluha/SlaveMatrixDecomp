@@ -1163,7 +1163,7 @@ namespace SlaveMatrix
     		EleDt = typeof(EleD);
     		胸t = typeof(胸);
     		肩t = typeof(肩);
-    		胴t = typeof(胴);
+    		胴t = typeof(Torso);
     		腰t = typeof(Waist);
     		尾_鯨t = typeof(尾_鯨);
     		上腕_人t = typeof(上腕_人);

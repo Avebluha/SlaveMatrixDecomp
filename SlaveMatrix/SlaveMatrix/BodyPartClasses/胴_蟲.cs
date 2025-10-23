@@ -492,7 +492,7 @@ namespace SlaveMatrix
     		X0Y0_胴_背板 = pars3["背板"].ToPar();
     		X0Y0_胴_節 = pars3["節"].ToPar();
     		X0Y0_胴_胸板 = pars3["胸板"].ToPar();
-    		X0Y0_胴_胴 = pars3["胴"].ToPar();
+    		X0Y0_胴_胴 = pars3["Torso"].ToPar();
     		X0Y0_胴_瘤左2 = pars3["瘤左2"].ToPar();
     		X0Y0_胴_瘤左1 = pars3["瘤左1"].ToPar();
     		X0Y0_胴_瘤右2 = pars3["瘤右2"].ToPar();

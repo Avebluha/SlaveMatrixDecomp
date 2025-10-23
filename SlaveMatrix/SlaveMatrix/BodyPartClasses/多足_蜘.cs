@@ -182,7 +182,7 @@ namespace SlaveMatrix
     		本体.Tag = dif.Tag;
     		本体.Add(dif);
     		Pars pars = 本体[0][0];
-    		X0Y0_胴 = pars["胴"].ToPar();
+    		X0Y0_胴 = pars["Torso"].ToPar();
     		X0Y0_胸版 = pars["胸版"].ToPar();
     		X0Y0_柄 = pars["柄"].ToPar();
     		本体.SetJoints();

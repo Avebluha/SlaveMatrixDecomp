@@ -9,7 +9,8 @@ namespace _2DGAMELIB
         static readonly Dictionary<string, string> KeyMap = new()
         {
             ["咳"] = "Cough",
-            ["腰"] = "Waist"
+            ["腰"] = "Waist",
+            ["胴"] = "Torso"
         };
 
         public static void MigrateKeys(this Obj obj)
