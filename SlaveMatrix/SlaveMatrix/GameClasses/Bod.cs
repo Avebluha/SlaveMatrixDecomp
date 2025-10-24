@@ -3829,7 +3829,7 @@ namespace SlaveMatrix
     		長胴n = 長胴.Count;
     		if (腰 != null)
     		{
-    			胴 = 腰.胴_接続.GetEle<Torso>();
+    			胴 = 腰.Torso_接続.GetEle<Torso>();
     			ボテ腹_人 = 腰.肌_接続.GetEle<ボテ腹_人>();
     			ボテ腹板_人 = ボテ腹_人.腹板_接続.GetEle<ボテ腹板>();
     			ボテ腹板_人.SetHitFalse();

@@ -955,7 +955,7 @@ namespace SlaveMatrix
 
     	public スタンプW 鞭痕;
 
-    	public Ele[] 胴_接続;
+    	public Ele[] Torso_接続;
 
     	public Ele[] 腿左_接続;
 
@@ -2516,13 +2516,13 @@ namespace SlaveMatrix
     			表示 = false;
     		}
     		Ele f;
-    		if (e.胴_接続.Count > 0)
+    		if (e.Torso_接続.Count > 0)
     		{
-    			胴_接続 = e.胴_接続.Select(delegate(EleD g)
+    			Torso_接続 = e.Torso_接続.Select(delegate(EleD g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 腰2;
-    				f.ConnectionType = ConnectionInfo.Waist_胴_接続;
+    				f.ConnectionType = ConnectionInfo.Waist_Torso_接続;
     				f.接続(腰2.胴_接続点);
     				return f;
     			}).ToArray();

@@ -44,21 +44,21 @@ namespace SlaveMatrix
     	{
     		胸_接続.Add(e);
     		e.Par = this;
-    		e.接続情報 = ConnectionInfo.胴_胸_接続;
+    		e.接続情報 = ConnectionInfo.Torso_胸_接続;
     	}
 
     	public void 肌接続(EleD e)
     	{
     		肌_接続.Add(e);
     		e.Par = this;
-    		e.接続情報 = ConnectionInfo.胴_肌_接続;
+    		e.接続情報 = ConnectionInfo.Torso_肌_接続;
     	}
 
     	public void 翼左接続(EleD e)
     	{
     		翼左_接続.Add(e);
     		e.Par = this;
-    		e.接続情報 = ConnectionInfo.胴_翼左_接続;
+    		e.接続情報 = ConnectionInfo.Torso_翼左_接続;
     		if (!(e is 尾D))
     		{
     			return;
@@ -73,7 +73,7 @@ namespace SlaveMatrix
     	{
     		翼右_接続.Add(e);
     		e.Par = this;
-    		e.接続情報 = ConnectionInfo.胴_翼右_接続;
+    		e.接続情報 = ConnectionInfo.Torso_翼右_接続;
     		if (!(e is 尾D))
     		{
     			return;

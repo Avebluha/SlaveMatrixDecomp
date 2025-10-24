@@ -949,7 +949,7 @@ namespace SlaveMatrix
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 四足胸2;
-    				f.ConnectionType = ConnectionInfo.四足胸_胴_接続;
+    				f.ConnectionType = ConnectionInfo.四足胸_Torso_接続;
     				f.接続(四足胸2.胴_接続点);
     				return f;
     			}).ToArray();

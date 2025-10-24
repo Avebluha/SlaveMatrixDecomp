@@ -395,7 +395,7 @@ namespace SlaveMatrix
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 長物_蛇2;
-    				f.ConnectionType = ConnectionInfo.長物_蛇_胴_接続;
+    				f.ConnectionType = ConnectionInfo.長物_蛇_Torso_接続;
     				f.接続(長物_蛇2.胴_接続点);
     				return f;
     			}).ToArray();

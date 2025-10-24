@@ -118,7 +118,7 @@ namespace SlaveMatrix
     	{
     		胴_接続.Add(e);
     		e.Par = this;
-    		e.接続情報 = ConnectionInfo.四足胸_胴_接続;
+    		e.接続情報 = ConnectionInfo.四足胸_Torso_接続;
     	}
 
     	public void 胸左接続(EleD e)

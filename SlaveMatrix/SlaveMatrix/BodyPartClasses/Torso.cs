@@ -291,7 +291,8 @@ namespace SlaveMatrix
     	{
     		Torso 胴2 = this;
     		ThisType = GetType();
-    		本体 = new Difs(Sta.胴体["Torso"]);
+            //This had no Torso (胴体)
+            本体 = new Difs(Sta.胴体["Torso"]);
     		Pars pars = 本体[0][0];
     		X0Y0_胴 = pars["Torso"].ToPar();
     		Pars pars2 = pars["筋肉"].ToPars();
@@ -354,7 +355,7 @@ namespace SlaveMatrix
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 胴2;
-    				f.ConnectionType = ConnectionInfo.胴_胸_接続;
+    				f.ConnectionType = ConnectionInfo.Torso_胸_接続;
     				f.接続(胴2.胸_接続点);
     				return f;
     			}).ToArray();
@@ -365,7 +366,7 @@ namespace SlaveMatrix
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 胴2;
-    				f.ConnectionType = ConnectionInfo.胴_肌_接続;
+    				f.ConnectionType = ConnectionInfo.Torso_肌_接続;
     				f.接続(胴2.肌_接続点);
     				return f;
     			}).ToArray();
@@ -376,7 +377,7 @@ namespace SlaveMatrix
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 胴2;
-    				f.ConnectionType = ConnectionInfo.胴_翼左_接続;
+    				f.ConnectionType = ConnectionInfo.Torso_翼左_接続;
     				f.接続(胴2.翼左_接続点);
     				return f;
     			}).ToArray();
@@ -387,7 +388,7 @@ namespace SlaveMatrix
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 胴2;
-    				f.ConnectionType = ConnectionInfo.胴_翼右_接続;
+    				f.ConnectionType = ConnectionInfo.Torso_翼右_接続;
     				f.接続(胴2.翼右_接続点);
     				return f;
     			}).ToArray();

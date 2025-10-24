@@ -562,7 +562,7 @@ namespace SlaveMatrix
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 胴_蟲2;
-    				f.ConnectionType = ConnectionInfo.胴_蟲_左_接続;
+    				f.ConnectionType = ConnectionInfo.Torso_蟲_左_接続;
     				f.接続(胴_蟲2.左_接続点);
     				return f;
     			}).ToArray();
@@ -573,7 +573,7 @@ namespace SlaveMatrix
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 胴_蟲2;
-    				f.ConnectionType = ConnectionInfo.胴_蟲_右_接続;
+    				f.ConnectionType = ConnectionInfo.Torso_蟲_右_接続;
     				f.接続(胴_蟲2.右_接続点);
     				return f;
     			}).ToArray();
@@ -584,7 +584,7 @@ namespace SlaveMatrix
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 胴_蟲2;
-    				f.ConnectionType = ConnectionInfo.胴_蟲_胴_接続;
+    				f.ConnectionType = ConnectionInfo.Torso_蟲_Torso_接続;
     				f.接続(胴_蟲2.胴_接続点);
     				return f;
     			}).ToArray();

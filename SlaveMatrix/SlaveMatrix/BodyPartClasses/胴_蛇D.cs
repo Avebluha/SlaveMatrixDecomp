@@ -39,21 +39,21 @@ namespace SlaveMatrix
     	{
     		左_接続.Add(e);
     		e.Par = this;
-    		e.接続情報 = ConnectionInfo.胴_蛇_左_接続;
+    		e.接続情報 = ConnectionInfo.Torso_蛇_左_接続;
     	}
 
     	public override void 右接続(EleD e)
     	{
     		右_接続.Add(e);
     		e.Par = this;
-    		e.接続情報 = ConnectionInfo.胴_蛇_右_接続;
+    		e.接続情報 = ConnectionInfo.Torso_蛇_右_接続;
     	}
 
     	public override void 胴接続(EleD e)
     	{
     		胴_接続.Add(e);
     		e.Par = this;
-    		e.接続情報 = ConnectionInfo.胴_蛇_胴_接続;
+    		e.接続情報 = ConnectionInfo.Torso_蛇_Torso_接続;
     	}
 
     	public override Ele GetEle(double DisUnit, Med Med, 体配色 体配色)

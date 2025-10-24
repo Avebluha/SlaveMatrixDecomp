@@ -1086,6 +1086,9 @@ namespace SlaveMatrix
     	{
             var obj = Resources.胴体.ObjLoad();
             obj.MigrateKeys();
+
+            var tmp = obj["Torso"];
+
             胴体 = obj;
 
     		//胴体.SaveExMod("C:\\Users\\dave\\Documents\\胴体");
@@ -1336,9 +1339,9 @@ namespace SlaveMatrix
     			ConnectionInfo.胸_首_接続,
     			ConnectionInfo.胸_肌_接続,
     			ConnectionInfo.胸_背中_接続,
-    			ConnectionInfo.胴_胸_接続,
-    			ConnectionInfo.胴_肌_接続,
-    			ConnectionInfo.Waist_胴_接続,
+    			ConnectionInfo.Torso_胸_接続,
+    			ConnectionInfo.Torso_肌_接続,
+    			ConnectionInfo.Waist_Torso_接続,
     			ConnectionInfo.Waist_肌_接続,
     			ConnectionInfo.Waist_膣基_接続,
     			ConnectionInfo.Waist_肛門_接続,
@@ -1363,9 +1366,9 @@ namespace SlaveMatrix
     			ConnectionInfo.尾_鯨_尾先_接続,
     			ConnectionInfo.長物_魚_尾_接続,
     			ConnectionInfo.長物_鯨_尾_接続,
-    			ConnectionInfo.長物_蛇_胴_接続,
-    			ConnectionInfo.長物_蟲_胴_接続,
-    			ConnectionInfo.四足胸_胴_接続,
+    			ConnectionInfo.長物_蛇_Torso_接続,
+    			ConnectionInfo.長物_蟲_Torso_接続,
+    			ConnectionInfo.四足胸_Torso_接続,
     			ConnectionInfo.四足胸_肌_接続,
     			ConnectionInfo.四足胸_背中_接続,
     			ConnectionInfo.四足胴_腰_接続,
@@ -1379,8 +1382,8 @@ namespace SlaveMatrix
     			ConnectionInfo.多足_蜘_尾_接続,
     			ConnectionInfo.多足_蠍_尾_接続,
     			ConnectionInfo.単足_植_根中央_接続,
-    			ConnectionInfo.胴_蛇_胴_接続,
-    			ConnectionInfo.胴_蟲_胴_接続,
+    			ConnectionInfo.Torso_蛇_Torso_接続,
+    			ConnectionInfo.Torso_蟲_Torso_接続,
     			ConnectionInfo.ペニス_尿道_接続
     		});
     		接続情報t = typeof(ConnectionInfo);

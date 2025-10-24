@@ -823,11 +823,11 @@ namespace SlaveMatrix
     			胸翼下人
     		},
     		{
-    			ConnectionInfo.胴_翼左_接続,
+    			ConnectionInfo.Torso_翼左_接続,
     			胴翼人
     		},
     		{
-    			ConnectionInfo.胴_翼右_接続,
+    			ConnectionInfo.Torso_翼右_接続,
     			胴翼人
     		},
     		{
@@ -1055,11 +1055,11 @@ namespace SlaveMatrix
     			蛇
     		},
     		{
-    			ConnectionInfo.胴_蛇_左_接続,
+    			ConnectionInfo.Torso_蛇_左_接続,
     			蛇
     		},
     		{
-    			ConnectionInfo.胴_蛇_右_接続,
+    			ConnectionInfo.Torso_蛇_右_接続,
     			蛇
     		},
     		{
@@ -1127,11 +1127,11 @@ namespace SlaveMatrix
     			蟲尾先
     		},
     		{
-    			ConnectionInfo.胴_蟲_左_接続,
+    			ConnectionInfo.Torso_蟲_左_接続,
     			蟲
     		},
     		{
-    			ConnectionInfo.胴_蟲_右_接続,
+    			ConnectionInfo.Torso_蟲_右_接続,
     			蟲
     		},
     		{
@@ -1199,19 +1199,19 @@ namespace SlaveMatrix
     			尾鯨
     		},
     		{
-    			ConnectionInfo.長物_蛇_胴_接続,
+    			ConnectionInfo.長物_蛇_Torso_接続,
     			尾蛇
     		},
     		{
-    			ConnectionInfo.長物_蟲_胴_接続,
+    			ConnectionInfo.長物_蟲_Torso_接続,
     			尾蟲
     		},
     		{
-    			ConnectionInfo.胴_蛇_胴_接続,
+    			ConnectionInfo.Torso_蛇_Torso_接続,
     			尾蛇
     		},
     		{
-    			ConnectionInfo.胴_蟲_胴_接続,
+    			ConnectionInfo.Torso_蟲_Torso_接続,
     			尾蟲
     		},
     		{
@@ -2164,7 +2164,7 @@ namespace SlaveMatrix
     		頭D2.接続(母方, 父方, i, ConnectionInfo.頭_額_接続, 要素構成, 接続構成, 変異率, 原種モード);
     		胸D2.接続(母方, 父方, i, ConnectionInfo.胸_翼上左_接続, 要素構成, 接続構成, 変異率, 原種モード);
     		胸D2.接続(母方, 父方, i, ConnectionInfo.胸_翼下左_接続, 要素構成, 接続構成, 変異率, 原種モード);
-    		胴D2.接続(母方, 父方, i, ConnectionInfo.胴_翼左_接続, 要素構成, 接続構成, 変異率, 原種モード);
+    		胴D2.接続(母方, 父方, i, ConnectionInfo.Torso_翼左_接続, 要素構成, 接続構成, 変異率, 原種モード);
     		腰.接続(母方, 父方, i, ConnectionInfo.Waist_翼左_接続, 要素構成, 接続構成, 変異率, 原種モード);
     		if (原種モード)
     		{
@@ -2355,7 +2355,7 @@ namespace SlaveMatrix
     				胴_蛇D 胴_蛇D2 = Mix<胴_蛇D>(母方, 父方, i, 原種モード);
     				if (胴_蛇D2 != null)
     				{
-    					胴_蛇D2.接続(母方, 父方, i, ConnectionInfo.胴_蛇_左_接続, 要素構成, 接続構成, 変異率, 原種モード);
+    					胴_蛇D2.接続(母方, 父方, i, ConnectionInfo.Torso_蛇_左_接続, 要素構成, 接続構成, 変異率, 原種モード);
     					長胴D 長胴D2 = (長胴D)胴_蛇D2.Copy();
     					長物_蛇D2.胴接続(胴_蛇D2);
     					int num11 = 2;
@@ -2367,7 +2367,7 @@ namespace SlaveMatrix
     					{
     						胴_蛇D2.胴接続(胴_蛇D2 = (胴_蛇D)長胴D2.Copy());
     					}
-    					胴_蛇D2.接続(母方, 父方, i, ConnectionInfo.胴_蛇_胴_接続, 要素構成, 接続構成, 変異率, 原種モード);
+    					胴_蛇D2.接続(母方, 父方, i, ConnectionInfo.Torso_蛇_Torso_接続, 要素構成, 接続構成, 変異率, 原種モード);
     					if (胴_蛇D2.EnumEleD().IsEleD<腿D>())
     					{
     						IEnumerable<胴_蛇D> eleDs = 長物_蛇D2.EnumEleD().Skip(1).GetEleDs<胴_蛇D>();
@@ -2399,7 +2399,7 @@ namespace SlaveMatrix
     				}
     				else
     				{
-    					長物_蛇D2.接続(母方, 父方, i, ConnectionInfo.長物_蛇_胴_接続, 要素構成, 接続構成, 変異率, 原種モード);
+    					長物_蛇D2.接続(母方, 父方, i, ConnectionInfo.長物_蛇_Torso_接続, 要素構成, 接続構成, 変異率, 原種モード);
     				}
     				長物_蛇D2.AlignC();
     				if (長物_蛇D2.ガード)
@@ -2452,7 +2452,7 @@ namespace SlaveMatrix
     				胴_蟲D 胴_蟲D2 = Mix<胴_蟲D>(母方, 父方, i, 原種モード);
     				if (胴_蟲D2 != null)
     				{
-    					胴_蟲D2.接続(母方, 父方, i, ConnectionInfo.胴_蟲_左_接続, 要素構成, 接続構成, 変異率, 原種モード);
+    					胴_蟲D2.接続(母方, 父方, i, ConnectionInfo.Torso_蟲_左_接続, 要素構成, 接続構成, 変異率, 原種モード);
     					長胴D 長胴D3 = (長胴D)胴_蟲D2.Copy();
     					長物_蟲D2.胴接続(胴_蟲D2);
     					int num19 = 2;
@@ -2464,11 +2464,11 @@ namespace SlaveMatrix
     					{
     						胴_蟲D2.胴接続(胴_蟲D2 = (胴_蟲D)長胴D3.Copy());
     					}
-    					胴_蟲D2.接続(母方, 父方, i, ConnectionInfo.胴_蟲_胴_接続, 要素構成, 接続構成, 変異率, 原種モード);
+    					胴_蟲D2.接続(母方, 父方, i, ConnectionInfo.Torso_蟲_Torso_接続, 要素構成, 接続構成, 変異率, 原種モード);
     				}
     				else
     				{
-    					長物_蟲D2.接続(母方, 父方, i, ConnectionInfo.長物_蟲_胴_接続, 要素構成, 接続構成, 変異率, 原種モード);
+    					長物_蟲D2.接続(母方, 父方, i, ConnectionInfo.長物_蟲_Torso_接続, 要素構成, 接続構成, 変異率, 原種モード);
     				}
     				長物_蟲D2.AlignC();
     				腰.翼左_接続.RemoveAll((EleD e) => e is 四足脇D);
@@ -4475,7 +4475,7 @@ namespace SlaveMatrix
     				l = 0.0;
     			}
     		}
-    		if (l == 0.0 && (接続 == ConnectionInfo.四足脇_上腕_接続 || 接続 == ConnectionInfo.Waist_腿左_接続 || 接続 == ConnectionInfo.Waist_腿左_接続 || 接続 == ConnectionInfo.四足腰_腿左_接続 || 接続 == ConnectionInfo.四足腰_腿左_接続 || 接続 == ConnectionInfo.長物_魚_尾_接続 || 接続 == ConnectionInfo.長物_鯨_尾_接続 || 接続 == ConnectionInfo.長物_蛇_胴_接続 || 接続 == ConnectionInfo.長物_蟲_胴_接続 || 接続 == ConnectionInfo.胴_蛇_胴_接続 || 接続 == ConnectionInfo.胴_蟲_胴_接続 || 接続 == ConnectionInfo.多足_蛸_軟体外左_接続 || 接続 == ConnectionInfo.多足_蛸_軟体外右_接続 || 接続 == ConnectionInfo.多足_蛸_軟体内左_接続 || 接続 == ConnectionInfo.多足_蛸_軟体内右_接続 || 接続 == ConnectionInfo.単足_植_根外左_接続 || 接続 == ConnectionInfo.単足_植_根内左_接続 || 接続 == ConnectionInfo.単足_植_根中央_接続 || 接続 == ConnectionInfo.単足_植_根内右_接続 || 接続 == ConnectionInfo.単足_植_根外右_接続 || 接続 == ConnectionInfo.頭頂_宇_頭部後_接続 || (num * 1.1).Lot()))
+    		if (l == 0.0 && (接続 == ConnectionInfo.四足脇_上腕_接続 || 接続 == ConnectionInfo.Waist_腿左_接続 || 接続 == ConnectionInfo.Waist_腿左_接続 || 接続 == ConnectionInfo.四足腰_腿左_接続 || 接続 == ConnectionInfo.四足腰_腿左_接続 || 接続 == ConnectionInfo.長物_魚_尾_接続 || 接続 == ConnectionInfo.長物_鯨_尾_接続 || 接続 == ConnectionInfo.長物_蛇_Torso_接続 || 接続 == ConnectionInfo.長物_蟲_Torso_接続 || 接続 == ConnectionInfo.Torso_蛇_Torso_接続 || 接続 == ConnectionInfo.Torso_蟲_Torso_接続 || 接続 == ConnectionInfo.多足_蛸_軟体外左_接続 || 接続 == ConnectionInfo.多足_蛸_軟体外右_接続 || 接続 == ConnectionInfo.多足_蛸_軟体内左_接続 || 接続 == ConnectionInfo.多足_蛸_軟体内右_接続 || 接続 == ConnectionInfo.単足_植_根外左_接続 || 接続 == ConnectionInfo.単足_植_根内左_接続 || 接続 == ConnectionInfo.単足_植_根中央_接続 || 接続 == ConnectionInfo.単足_植_根内右_接続 || 接続 == ConnectionInfo.単足_植_根外右_接続 || 接続 == ConnectionInfo.頭頂_宇_頭部後_接続 || (num * 1.1).Lot()))
     		{
     			l = 1.0;
     		}

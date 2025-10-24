@@ -109,7 +109,7 @@ namespace SlaveMatrix
 
     	public bool スライム;
 
-    	public List<EleD> 胴_接続 = new List<EleD>();
+    	public List<EleD> Torso_接続 = new List<EleD>();
 
     	public List<EleD> 腿左_接続 = new List<EleD>();
 
@@ -138,9 +138,9 @@ namespace SlaveMatrix
 
     	public void 胴接続(EleD e)
     	{
-    		胴_接続.Add(e);
+    		Torso_接続.Add(e);
     		e.Par = this;
-    		e.接続情報 = ConnectionInfo.Waist_胴_接続;
+    		e.接続情報 = ConnectionInfo.Waist_Torso_接続;
     	}
 
     	public void 腿左接続(EleD e)
