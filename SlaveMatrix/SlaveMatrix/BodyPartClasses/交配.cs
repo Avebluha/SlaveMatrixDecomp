@@ -1844,13 +1844,13 @@ namespace SlaveMatrix
     		胸D2.肌接続(new 上着トップ_ドレスD());
     		胸D2.AlignC();
     		胸D2.首接続(首D2);
-    		胴D 胴D2 = Mix<胴D>(母方, 父方, i, 原種モード);
+    		TorsoD 胴D2 = Mix<TorsoD>(母方, 父方, i, 原種モード);
     		胴腹板D 胴腹板D2;
     		胴D2.肌接続(胴腹板D2 = Mix<胴腹板D>(母方, 父方, i, 原種モード));
     		胴D2.肌接続(Mix<胴肌D>(母方, 父方, i, 原種モード));
     		胴D2.肌接続(new 上着ミドル_ドレスD());
     		胴D2.AlignC();
-    		胴D2.胸接続(胸D2);
+    		胴D2.Torso接続(胸D2);
     		WaistD 腰 = Mix<WaistD>(母方, 父方, i, 原種モード);
     		腰.膣基接続(new 膣基_人D());
     		腰.膣基接続(new 膣内精液_人D());
@@ -2352,7 +2352,7 @@ namespace SlaveMatrix
     			{
     				長物_蛇D 長物_蛇D2 = (長物_蛇D)半身;
     				長物_蛇D2.接続(母方, 父方, i, ConnectionInfo.長物_蛇_左_接続, 要素構成, 接続構成, 変異率, 原種モード);
-    				胴_蛇D 胴_蛇D2 = Mix<胴_蛇D>(母方, 父方, i, 原種モード);
+    				Torso_蛇D 胴_蛇D2 = Mix<Torso_蛇D>(母方, 父方, i, 原種モード);
     				if (胴_蛇D2 != null)
     				{
     					胴_蛇D2.接続(母方, 父方, i, ConnectionInfo.Torso_蛇_左_接続, 要素構成, 接続構成, 変異率, 原種モード);
@@ -2365,20 +2365,20 @@ namespace SlaveMatrix
     					num11 = (num11 + RNG.XS.NextSign() * RNG.XS.Next(4)).Clamp(0, 50);
     					for (int l = 0; l < num11; l++)
     					{
-    						胴_蛇D2.胴接続(胴_蛇D2 = (胴_蛇D)長胴D2.Copy());
+    						胴_蛇D2.Torso接続(胴_蛇D2 = (Torso_蛇D)長胴D2.Copy());
     					}
     					胴_蛇D2.接続(母方, 父方, i, ConnectionInfo.Torso_蛇_Torso_接続, 要素構成, 接続構成, 変異率, 原種モード);
     					if (胴_蛇D2.EnumEleD().IsEleD<腿D>())
     					{
-    						IEnumerable<胴_蛇D> eleDs = 長物_蛇D2.EnumEleD().Skip(1).GetEleDs<胴_蛇D>();
-    						foreach (胴_蛇D item11 in eleDs.Take(eleDs.Count() - 1))
+    						IEnumerable<Torso_蛇D> eleDs = 長物_蛇D2.EnumEleD().Skip(1).GetEleDs<Torso_蛇D>();
+    						foreach (Torso_蛇D item11 in eleDs.Take(eleDs.Count() - 1))
     						{
     							item11.左_接続.Clear();
     							item11.右_接続.Clear();
     						}
     						if (num11 < 2)
     						{
-    							胴_蛇D obj = eleDs.Last();
+    							Torso_蛇D obj = eleDs.Last();
     							obj.左_接続.Clear();
     							obj.右_接続.Clear();
     						}
@@ -2386,7 +2386,7 @@ namespace SlaveMatrix
     					else
     					{
     						int num14 = 0;
-    						foreach (胴_蛇D eleD7 in 長物_蛇D2.EnumEleD().Skip(1).GetEleDs<胴_蛇D>())
+    						foreach (Torso_蛇D eleD7 in 長物_蛇D2.EnumEleD().Skip(1).GetEleDs<Torso_蛇D>())
     						{
     							if (num14 % 3 != 1)
     							{
@@ -2449,7 +2449,7 @@ namespace SlaveMatrix
     				長物_蟲D 長物_蟲D2 = (長物_蟲D)半身;
     				長物_蟲D2.接続(母方, 父方, i, ConnectionInfo.長物_蟲_左0_接続, 要素構成, 接続構成, 変異率, 原種モード);
     				長物_蟲D2.接続(母方, 父方, i, ConnectionInfo.長物_蟲_左1_接続, 要素構成, 接続構成, 変異率, 原種モード);
-    				胴_蟲D 胴_蟲D2 = Mix<胴_蟲D>(母方, 父方, i, 原種モード);
+    				Torso_蟲D 胴_蟲D2 = Mix<Torso_蟲D>(母方, 父方, i, 原種モード);
     				if (胴_蟲D2 != null)
     				{
     					胴_蟲D2.接続(母方, 父方, i, ConnectionInfo.Torso_蟲_左_接続, 要素構成, 接続構成, 変異率, 原種モード);
@@ -2462,7 +2462,7 @@ namespace SlaveMatrix
     					num19 = (num19 + RNG.XS.NextSign() * RNG.XS.Next(4)).Clamp(0, 50);
     					for (int m = 0; m < num19; m++)
     					{
-    						胴_蟲D2.胴接続(胴_蟲D2 = (胴_蟲D)長胴D3.Copy());
+    						胴_蟲D2.Torso接続(胴_蟲D2 = (Torso_蟲D)長胴D3.Copy());
     					}
     					胴_蟲D2.接続(母方, 父方, i, ConnectionInfo.Torso_蟲_Torso_接続, 要素構成, 接続構成, 変異率, 原種モード);
     				}

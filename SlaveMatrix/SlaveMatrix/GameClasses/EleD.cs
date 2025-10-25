@@ -193,7 +193,8 @@ namespace SlaveMatrix
     	public void 接続(ConnectionInfo 接続情報, EleD ed)
     	{
     		string text = ThisType.Name.Remove(ThisType.Name.Length - 1);
-    		MethodInfo method = ThisType.GetMethod(接続情報.ToString().Remove(0, text.Length).Replace("_", ""));
+            var methodName = 接続情報.ToString().Remove(0, text.Length).Replace("_", "");
+            MethodInfo method = ThisType.GetMethod(接続情報.ToString().Remove(0, text.Length).Replace("_", ""));
     		object[] parameters = new EleD[1] { ed };
     		method.Invoke(this, parameters);
     	}

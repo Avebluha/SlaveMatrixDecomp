@@ -3,7 +3,7 @@ using _2DGAMELIB;
 
 namespace SlaveMatrix
 {
-    public class 胴_蟲 : 長胴
+    public class Torso_蟲 : 長胴
     {
     	public Par X0Y0_胴_背板;
 
@@ -97,7 +97,7 @@ namespace SlaveMatrix
 
     	public Ele[] 右_接続;
 
-    	public Ele[] 胴_接続;
+    	public Ele[] Torso_接続;
 
     	public override bool 欠損
     	{
@@ -473,9 +473,9 @@ namespace SlaveMatrix
 
     	public JointS 鎖2_接続点 => new JointS(本体, X0Y0_輪_金具右, 0);
 
-    	public 胴_蟲(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 胴_蟲D e)
+    	public Torso_蟲(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, Torso_蟲D e)
     	{
-    		胴_蟲 胴_蟲2 = this;
+    		Torso_蟲 胴_蟲2 = this;
     		ThisType = GetType();
     		Pars pars = new Pars();
     		pars.Tag = "蟲";
@@ -578,9 +578,9 @@ namespace SlaveMatrix
     				return f;
     			}).ToArray();
     		}
-    		if (e.胴_接続.Count > 0)
+    		if (e.Torso_接続.Count > 0)
     		{
-    			胴_接続 = e.胴_接続.Select(delegate(EleD g)
+    			Torso_接続 = e.Torso_接続.Select(delegate(EleD g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 胴_蟲2;

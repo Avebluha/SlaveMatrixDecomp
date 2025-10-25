@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Reflection;
 using System.Text;
 
 namespace _2DGAMELIB
@@ -20,24 +21,13 @@ namespace _2DGAMELIB
             foreach (var key in obj.Keys)
             {
                 var newKey = KeyMap.TryGetValue(key, out var mapped) ? mapped : key;
-                var newDifs = obj.Difss[key];
-                var newTag = KeyMap.TryGetValue(obj.Difss[key].Tag, out var mappedTag) ? mappedTag : obj.Difss[key].Tag;
+                var difs = obj.Difss[key];
 
-                newDifs.Tag = newTag;
-
-                for (var i = 0; i < newDifs.CountX; i++)
-                {
-                    var newDifTag = KeyMap.TryGetValue(newDifs[i].Tag, out var mappedDifTag) ? mappedDifTag : newDifs[i].Tag;
-                    newDifs[i].Tag = newDifTag;
-                }
-
-                newDict.Add(newKey, newDifs);
-
+                newDict.Add(newKey, difs);
             }
-
-            var temp = newDict["Torso"];
 
             obj.Difss = newDict;
         }
+
     }
 }

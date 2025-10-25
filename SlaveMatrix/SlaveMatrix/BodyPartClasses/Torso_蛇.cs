@@ -3,7 +3,7 @@ using _2DGAMELIB;
 
 namespace SlaveMatrix
 {
-    public class 胴_蛇 : 長胴
+    public class Torso_蛇 : 長胴
     {
     	public Par X0Y0_胴_鱗;
 
@@ -73,7 +73,7 @@ namespace SlaveMatrix
 
     	public Ele[] 右_接続;
 
-    	public Ele[] 胴_接続;
+    	public Ele[] Torso_接続;
 
     	public override bool 欠損
     	{
@@ -326,9 +326,9 @@ namespace SlaveMatrix
 
     	public JointS 鎖2_接続点 => new JointS(本体, X0Y0_輪_金具右, 0);
 
-    	public 胴_蛇(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 胴_蛇D e)
+    	public Torso_蛇(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, Torso_蛇D e)
     	{
-    		胴_蛇 胴_蛇2 = this;
+    		Torso_蛇 胴_蛇2 = this;
     		ThisType = GetType();
     		Pars pars = new Pars();
     		pars.Tag = "蛇";
@@ -418,9 +418,9 @@ namespace SlaveMatrix
     				return f;
     			}).ToArray();
     		}
-    		if (e.胴_接続.Count > 0)
+    		if (e.Torso_接続.Count > 0)
     		{
-    			胴_接続 = e.胴_接続.Select(delegate(EleD g)
+    			Torso_接続 = e.Torso_接続.Select(delegate(EleD g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 胴_蛇2;
@@ -458,9 +458,9 @@ namespace SlaveMatrix
     		Are.Draw(X0Y0_胴_鱗左);
     		Are.Draw(X0Y0_胴_鱗右);
     		Are.Draw(X0Y0_胴_胴);
-    		if (胴_接続 != null && 胴_接続[0].拘束 && 胴_接続[0] is 胴_蛇)
+    		if (Torso_接続 != null && Torso_接続[0].拘束 && Torso_接続[0] is Torso_蛇)
     		{
-    			((胴_蛇)胴_接続[0]).拘束具描画(Are);
+    			((Torso_蛇)Torso_接続[0]).拘束具描画(Are);
     		}
     	}
 

@@ -33,7 +33,7 @@ namespace SlaveMatrix
 
     	public List<EleD> 右_接続 = new List<EleD>();
 
-    	public List<EleD> 胴_接続 = new List<EleD>();
+    	public List<EleD> Torso_接続 = new List<EleD>();
 
     	public 長物_蛇D()
     	{
@@ -56,7 +56,7 @@ namespace SlaveMatrix
 
     	public void 胴接続(EleD e)
     	{
-    		胴_接続.Add(e);
+    		Torso_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.長物_蛇_Torso_接続;
     	}

@@ -113,7 +113,7 @@ namespace SlaveMatrix
 
     	public Ele[] 右1_接続;
 
-    	public Ele[] 胴_接続;
+    	public Ele[] Torso_接続;
 
     	public override bool 欠損
     	{
@@ -644,9 +644,9 @@ namespace SlaveMatrix
     				return f;
     			}).ToArray();
     		}
-    		if (e.胴_接続.Count > 0)
+    		if (e.Torso_接続.Count > 0)
     		{
-    			胴_接続 = e.胴_接続.Select(delegate(EleD g)
+    			Torso_接続 = e.Torso_接続.Select(delegate(EleD g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 長物_蟲2;

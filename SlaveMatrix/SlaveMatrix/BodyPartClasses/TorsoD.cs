@@ -5,7 +5,7 @@ using _2DGAMELIB;
 namespace SlaveMatrix
 {
     [Serializable]
-    public class 胴D : EleD
+    public class TorsoD : EleD
     {
     	public bool 胴_表示 = true;
 
@@ -35,12 +35,12 @@ namespace SlaveMatrix
 
     	public List<EleD> 翼右_接続 = new List<EleD>();
 
-    	public 胴D()
+    	public TorsoD()
     	{
     		ThisType = GetType();
     	}
 
-    	public void 胸接続(EleD e)
+    	public void Torso接続(EleD e)
     	{
     		胸_接続.Add(e);
     		e.Par = this;

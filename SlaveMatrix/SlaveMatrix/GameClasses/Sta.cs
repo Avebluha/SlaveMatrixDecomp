@@ -1298,8 +1298,8 @@ namespace SlaveMatrix
     		足_鳥Dt = typeof(足_鳥D);
     		足_竜Dt = typeof(足_竜D);
     		四足脇Dt = typeof(四足脇D);
-    		胴_蛇Dt = typeof(胴_蛇D);
-    		胴_蟲Dt = typeof(胴_蟲D);
+    		胴_蛇Dt = typeof(Torso_蛇D);
+    		胴_蟲Dt = typeof(Torso_蟲D);
     		大顎基Dt = typeof(大顎基D);
     		鳳凰Dt = typeof(鳳凰D);
     		大顎Dt = typeof(大顎D);

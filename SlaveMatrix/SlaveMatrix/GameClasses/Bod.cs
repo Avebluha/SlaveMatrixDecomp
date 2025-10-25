@@ -2259,7 +2259,7 @@ namespace SlaveMatrix
     			if (Is蛇)
     			{
     				int num = 0;
-    				胴_蛇 ele2 = 蛇.胴_接続.GetEle<胴_蛇>();
+    				Torso_蛇 ele2 = 蛇.Torso_接続.GetEle<Torso_蛇>();
     				while (ele2 != null)
     				{
     					if (num % 4 != 0)
@@ -2267,14 +2267,14 @@ namespace SlaveMatrix
     						ele2.拘束 = false;
     						ele2.鎖表示 = false;
     					}
-    					ele2 = ele2.胴_接続.GetEle<胴_蛇>();
+    					ele2 = ele2.Torso_接続.GetEle<Torso_蛇>();
     					num++;
     				}
     			}
     			if (Is蟲)
     			{
     				int num2 = 0;
-    				胴_蟲 ele3 = 蟲.胴_接続.GetEle<胴_蟲>();
+    				Torso_蟲 ele3 = 蟲.Torso_接続.GetEle<Torso_蟲>();
     				while (ele3 != null)
     				{
     					if (num2 % 2 == 0)
@@ -2282,7 +2282,7 @@ namespace SlaveMatrix
     						ele3.拘束 = false;
     						ele3.鎖表示 = false;
     					}
-    					ele3 = ele3.胴_接続.GetEle<胴_蟲>();
+    					ele3 = ele3.Torso_接続.GetEle<Torso_蟲>();
     					num2++;
     				}
     			}
@@ -4373,9 +4373,9 @@ namespace SlaveMatrix
     				蛇 = (長物_蛇)ele;
     				腰.腰CD.c2.Col2 = 蛇.胴1_鱗1CD.c2.Col1;
     				半身中1接続.Add(ele);
-    				if (蛇.胴_接続 != null)
+    				if (蛇.Torso_接続 != null)
     				{
-    					foreach (胴_蛇 item20 in 蛇.EnumEle().GetEles<胴_蛇>().Reverse())
+    					foreach (Torso_蛇 item20 in 蛇.EnumEle().GetEles<Torso_蛇>().Reverse())
     					{
     						if (item20.左_接続 != null)
     						{
@@ -4386,7 +4386,7 @@ namespace SlaveMatrix
     							Sort(item20.右_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 半身中2接続);
     						}
     					}
-    					Sort(from e in 蛇.胴_接続.Select((Ele e) => e.EnumEle()).JoinEnum()
+    					Sort(from e in 蛇.Torso_接続.Select((Ele e) => e.EnumEle()).JoinEnum()
     						where !bod.半身中2接続.Contains(e)
     						select e, 半身後接続);
     				}
@@ -4423,9 +4423,9 @@ namespace SlaveMatrix
     				蟲 = (長物_蟲)ele;
     				腰.腰CD.c2.Col2 = 蟲.胴1_胴CD.c2.Col1;
     				半身中1接続.Add(ele);
-    				if (蟲.胴_接続 != null)
+    				if (蟲.Torso_接続 != null)
     				{
-    					foreach (胴_蟲 item21 in 蟲.EnumEle().GetEles<胴_蟲>().Reverse())
+    					foreach (Torso_蟲 item21 in 蟲.EnumEle().GetEles<Torso_蟲>().Reverse())
     					{
     						if (item21.左_接続 != null)
     						{
@@ -4436,7 +4436,7 @@ namespace SlaveMatrix
     							Sort(item21.右_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 半身中2接続);
     						}
     					}
-    					Sort(from e in 蟲.胴_接続.Select((Ele e) => e.EnumEle()).JoinEnum()
+    					Sort(from e in 蟲.Torso_接続.Select((Ele e) => e.EnumEle()).JoinEnum()
     						where !bod.半身中2接続.Contains(e)
     						select e, 半身後接続);
     				}
@@ -5415,12 +5415,12 @@ namespace SlaveMatrix
     				item54.OP.OutlineFalse();
     			}
     		}
-    		Elements.SetEle(delegate(胴_蛇 e)
+    		Elements.SetEle(delegate(Torso_蛇 e)
     		{
     			e.X0Y0_胴_胴.OP[1].ps[3] = e.X0Y0_胴_胴.OP[1].ps[3].AddY(0.04);
-    			if (e.胴_接続 != null)
+    			if (e.Torso_接続 != null)
     			{
-    				e.胴_接続.SetEle(delegate(胴_蛇 f)
+    				e.Torso_接続.SetEle(delegate(Torso_蛇 f)
     				{
     					f.X0Y0_胴_胴.OP[1].ps[3] = f.X0Y0_胴_胴.OP[1].ps[3].AddY(0.04);
     				});

@@ -69,7 +69,7 @@ namespace SlaveMatrix
 
     	public Ele[] 右_接続;
 
-    	public Ele[] 胴_接続;
+    	public Ele[] Torso_接続;
 
     	public override bool 欠損
     	{
@@ -389,9 +389,9 @@ namespace SlaveMatrix
     				return f;
     			}).ToArray();
     		}
-    		if (e.胴_接続.Count > 0)
+    		if (e.Torso_接続.Count > 0)
     		{
-    			胴_接続 = e.胴_接続.Select(delegate(EleD g)
+    			Torso_接続 = e.Torso_接続.Select(delegate(EleD g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 長物_蛇2;
@@ -419,9 +419,9 @@ namespace SlaveMatrix
     		Are.Draw(X0Y0_胴1_鱗2);
     		Are.Draw(X0Y0_胴1_鱗左2);
     		Are.Draw(X0Y0_胴1_鱗右2);
-    		if (胴_接続 != null && 胴_接続[0].拘束 && 胴_接続[0] is 胴_蛇)
+    		if (Torso_接続 != null && Torso_接続[0].拘束 && Torso_接続[0] is Torso_蛇)
     		{
-    			((胴_蛇)胴_接続[0]).拘束具描画(Are);
+    			((Torso_蛇)Torso_接続[0]).拘束具描画(Are);
     		}
     		if (くぱぁ_ == 1.0)
     		{

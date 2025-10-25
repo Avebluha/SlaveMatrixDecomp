@@ -287,7 +287,7 @@ namespace SlaveMatrix
 
     	public JointS 翼右_接続点 => new JointS(本体, X0Y0_胴, 2);
 
-    	public Torso(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 胴D e)
+    	public Torso(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, TorsoD e)
     	{
     		Torso 胴2 = this;
     		ThisType = GetType();

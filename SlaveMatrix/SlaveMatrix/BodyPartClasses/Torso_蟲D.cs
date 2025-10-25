@@ -4,7 +4,7 @@ using _2DGAMELIB;
 namespace SlaveMatrix
 {
     [Serializable]
-    public class 胴_蟲D : 長胴D
+    public class Torso_蟲D : 長胴D
     {
     	public bool 胴_背板_表示 = true;
 
@@ -48,7 +48,7 @@ namespace SlaveMatrix
 
     	public bool 鎖表示;
 
-    	public 胴_蟲D()
+    	public Torso_蟲D()
     	{
     		ThisType = GetType();
     	}
@@ -67,16 +67,16 @@ namespace SlaveMatrix
     		e.接続情報 = ConnectionInfo.Torso_蟲_右_接続;
     	}
 
-    	public override void 胴接続(EleD e)
+    	public override void Torso接続(EleD e)
     	{
-    		胴_接続.Add(e);
+    		Torso_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.Torso_蟲_Torso_接続;
     	}
 
     	public override Ele GetEle(double DisUnit, Med Med, 体配色 体配色)
     	{
-    		return new 胴_蟲(DisUnit, 配色指定, 体配色, Med, this);
+    		return new Torso_蟲(DisUnit, 配色指定, 体配色, Med, this);
     	}
     }
 }
