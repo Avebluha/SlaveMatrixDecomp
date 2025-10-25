@@ -1440,7 +1440,13 @@ namespace SlaveMatrix
     	public static string[] JSDPaths()
     	{
     		JsonSavePath = Path.Combine(CurrentDirectory, "save");
-    		IEnumerable<string> source = Directory.EnumerateFiles(JsonSavePath);
+
+            if (!Directory.Exists(JsonSavePath))
+            {
+                Directory.CreateDirectory(JsonSavePath);
+            }
+
+            IEnumerable<string> source = Directory.EnumerateFiles(JsonSavePath);
     		return new string[10]
     		{
     			source.FirstOrDefault((string e) => e.StartsWith(Path.Combine(JsonSavePath, "0： "))),
