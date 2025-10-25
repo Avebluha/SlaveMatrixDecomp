@@ -531,7 +531,7 @@ namespace SlaveMatrix
     		Pars pars3 = pars2["胴1"].ToPars();
     		X0Y0_胴1_背板 = pars3["背板"].ToPar();
     		X0Y0_胴1_胸板 = pars3["胸板"].ToPar();
-    		X0Y0_胴1_胴 = pars3["Torso"].ToPar();
+    		X0Y0_胴1_胴 = pars3["胴"].ToPar();
     		X0Y0_胴1_瘤左2 = pars3["瘤左2"].ToPar();
     		X0Y0_胴1_瘤左1 = pars3["瘤左1"].ToPar();
     		X0Y0_胴1_瘤右2 = pars3["瘤右2"].ToPar();
@@ -539,7 +539,7 @@ namespace SlaveMatrix
     		Pars pars4 = pars3["胴0"].ToPars();
     		X0Y0_胴1_胴0_背板 = pars4["背板"].ToPar();
     		X0Y0_胴1_胴0_胸板 = pars4["胸板"].ToPar();
-    		X0Y0_胴1_胴0_胴 = pars4["Torso"].ToPar();
+    		X0Y0_胴1_胴0_胴 = pars4["胴"].ToPar();
     		pars3 = pars2["輪1"].ToPars();
     		X0Y0_輪1_革 = pars3["革"].ToPar();
     		X0Y0_輪1_金具1 = pars3["金具1"].ToPar();

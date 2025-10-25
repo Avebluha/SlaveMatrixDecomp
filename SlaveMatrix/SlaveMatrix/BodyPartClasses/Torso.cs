@@ -294,7 +294,7 @@ namespace SlaveMatrix
             //This had no Torso (胴体)
             本体 = new Difs(Sta.胴体["Torso"]);
     		Pars pars = 本体[0][0];
-    		X0Y0_胴 = pars["Torso"].ToPar();
+    		X0Y0_胴 = pars["胴"].ToPar();
     		Pars pars2 = pars["筋肉"].ToPars();
     		X0Y0_筋肉_筋肉左 = pars2["筋肉左"].ToPar();
     		X0Y0_筋肉_筋肉右 = pars2["筋肉右"].ToPar();
@@ -308,7 +308,7 @@ namespace SlaveMatrix
     		pars3 = pars2["右"].ToPars();
     		X0Y0_植タトゥ_右_タトゥ2 = pars3["タトゥ2"].ToPar();
     		X0Y0_植タトゥ_右_タトゥ1 = pars3["タトゥ1"].ToPar();
-    		本体.SetJoints();
+            本体.SetJoints();
     		接続根 = new JointD(本体);
     		右 = e.右;
     		反転X = e.反転X;

@@ -1394,8 +1394,8 @@ namespace SlaveMatrix
     		ThisType = GetType();
     		本体 = new Difs(Sta.半身["四足腰"]);
     		Pars pars = 本体[0][0];
-    		X0Y0_腰 = pars["Waist"].ToPar();
-    		X0Y0_股 = pars["股"].ToPar();
+    		X0Y0_腰 = pars["腰"].ToPar();
+            X0Y0_股 = pars["股"].ToPar();
     		X0Y0_下腹 = pars["下腹"].ToPar();
     		X0Y0_腰皺 = pars["腰皺"].ToPar();
     		Pars pars2 = pars["筋肉"].ToPars();
@@ -1432,7 +1432,7 @@ namespace SlaveMatrix
     		X0Y0_竜性_右_鱗1 = pars3["鱗1"].ToPar();
     		X0Y0_竜性_右_鱗2 = pars3["鱗2"].ToPar();
     		pars = 本体[0][1];
-    		X0Y1_腰 = pars["Waist"].ToPar();
+    		X0Y1_腰 = pars["腰"].ToPar();
     		X0Y1_股 = pars["股"].ToPar();
     		X0Y1_下腹 = pars["下腹"].ToPar();
     		X0Y1_腰皺 = pars["腰皺"].ToPar();
@@ -1470,7 +1470,7 @@ namespace SlaveMatrix
     		X0Y1_竜性_右_鱗1 = pars3["鱗1"].ToPar();
     		X0Y1_竜性_右_鱗2 = pars3["鱗2"].ToPar();
     		pars = 本体[0][2];
-    		X0Y2_腰 = pars["Waist"].ToPar();
+    		X0Y2_腰 = pars["腰"].ToPar();
     		X0Y2_股 = pars["股"].ToPar();
     		X0Y2_下腹 = pars["下腹"].ToPar();
     		X0Y2_腰皺 = pars["腰皺"].ToPar();
@@ -1508,7 +1508,7 @@ namespace SlaveMatrix
     		X0Y2_竜性_右_鱗1 = pars3["鱗1"].ToPar();
     		X0Y2_竜性_右_鱗2 = pars3["鱗2"].ToPar();
     		pars = 本体[0][3];
-    		X0Y3_腰 = pars["Waist"].ToPar();
+    		X0Y3_腰 = pars["腰"].ToPar();
     		X0Y3_股 = pars["股"].ToPar();
     		X0Y3_下腹 = pars["下腹"].ToPar();
     		X0Y3_腰皺 = pars["腰皺"].ToPar();
@@ -1546,7 +1546,7 @@ namespace SlaveMatrix
     		X0Y3_竜性_右_鱗1 = pars3["鱗1"].ToPar();
     		X0Y3_竜性_右_鱗2 = pars3["鱗2"].ToPar();
     		pars = 本体[0][4];
-    		X0Y4_腰 = pars["Waist"].ToPar();
+    		X0Y4_腰 = pars["腰"].ToPar();
     		X0Y4_股 = pars["股"].ToPar();
     		X0Y4_下腹 = pars["下腹"].ToPar();
     		X0Y4_腰皺 = pars["腰皺"].ToPar();
