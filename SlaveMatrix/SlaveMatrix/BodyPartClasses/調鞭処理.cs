@@ -24,7 +24,7 @@ namespace SlaveMatrix
 
     	public void 振り()
     	{
-    		調教UI.擬音キュー.Enqueue(delegate(Are a)
+    		調教UI.擬音キュー.Enqueue(delegate(RenderArea a)
     		{
     			調教UI.擬音.Sound(a, 対象.Ele.位置.GetAreaPoint(0.05), Sta.鞭振.GetVal(強さ_, 1.0), new Font("MS Gothic", 1f), Col.White, 0.2 + 0.2 * 強さ_, b: true);
     		});
@@ -32,7 +32,7 @@ namespace SlaveMatrix
 
     	public void 打ち(Vector2D p)
     	{
-    		調教UI.擬音キュー.Enqueue(delegate(Are a)
+    		調教UI.擬音キュー.Enqueue(delegate(RenderArea a)
     		{
     			調教UI.擬音.Sound(a, Sta.GetAreaPoint(ref p, 0.01), Sta.鞭打.GetVal(強さ_, RNG.XS.NextDouble()), new Font("MS Gothic", 1f), Color.Red.S(強さ_.Clamp(0.5, 1.0)), 0.2 + 0.1 * 強さ_, b: true);
     		});
@@ -194,7 +194,7 @@ namespace SlaveMatrix
     			}
     		};
     		調教UI.Mots.Add(鞭撃モーション.GetHashCode().ToString(), 鞭撃モーション);
-    		衝撃 = new 衝撃(Are.DisUnit, 配色指定.N0, null, Med, new 衝撃D
+    		衝撃 = new 衝撃(Are.DisplayUnitScale, 配色指定.N0, null, Med, new 衝撃D
     		{
     			表示 = false
     		});

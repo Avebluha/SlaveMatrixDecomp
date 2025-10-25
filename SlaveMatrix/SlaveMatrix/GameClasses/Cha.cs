@@ -12,7 +12,7 @@ namespace SlaveMatrix
     {
     	public Med Med;
 
-    	public Are Are;
+    	public RenderArea Are;
 
     	public Bod Bod;
 
@@ -244,14 +244,14 @@ namespace SlaveMatrix
     		放尿強制終了_();
     	}
 
-    	public Cha(Med Med, Are Are, ChaD ChaD)
+    	public Cha(Med Med, RenderArea Are, ChaD ChaD)
     	{
     		Cha cha = this;
     		this.Med = Med;
     		this.Are = Are;
     		this.ChaD = ChaD;
     		配色 = new 体配色(ChaD.body_color);
-    		_ = Are.DisUnit;
+    		_ = Are.DisplayUnitScale;
     		Bod = new Bod(Med, Are, this);
     		重髪 = Bod.Is髪 && Bod.EI髪.IsHeavy();
     		重胸 = Bod.Is胸 && Bod.EI胸.IsHeavy();
@@ -1994,7 +1994,7 @@ namespace SlaveMatrix
     		this.SetInitialAngle();
     	}
 
-    	public void Draw(Are Are, FPS FPS)
+    	public void Draw(RenderArea Are, FPS FPS)
     	{
     		this.FPS = FPS.Value;
     		Mots.Drive(FPS);

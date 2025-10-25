@@ -50,12 +50,12 @@ namespace _2DGAMELIB
     		Graphics.DrawImage(Start, r, 0, 0, w, h, GraphicsUnit.Pixel, ia);
     	}
 
-    	public void DrawStart(Are Are)
+    	public void DrawStart(RenderArea Are)
     	{
     		Are.DrawTo(GS);
     	}
 
-    	public void DrawEnd(Are Are)
+    	public void DrawEnd(RenderArea Are)
     	{
     		Are.DrawTo(GE);
     	}

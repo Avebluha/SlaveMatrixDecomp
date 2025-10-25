@@ -1167,7 +1167,7 @@ namespace SlaveMatrix
     		本体.JoinPAall();
     	}
 
-    	public override void 描画0(Are Are)
+    	public override void 描画0(RenderArea Are)
     	{
     		本体.Draw(Are);
     		鎖1.描画0(Are);

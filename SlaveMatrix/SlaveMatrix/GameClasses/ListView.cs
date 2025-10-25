@@ -23,7 +23,7 @@ namespace SlaveMatrix
     //list of buttons
     public class ListView
     {
-    	private Are Are;
+    	private RenderArea Are;
 
     	private ParT[] pt;
 
@@ -70,7 +70,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public ListView(Are Are, Vector2D Position, double Space, Font Font, double TextSize, Color TextColor, Color ShadColor, Color BackColor, Color FramColor, params TA[] acts)
+    	public ListView(RenderArea Are, Vector2D Position, double Space, Font Font, double TextSize, Color TextColor, Color ShadColor, Color BackColor, Color FramColor, params TA[] acts)
     	{
     		this.Are = Are;
     		this.Space = Space;
@@ -84,7 +84,7 @@ namespace SlaveMatrix
     			pt[i].Font = Font;
     			pt[i].FontSize = TextSize;
     			pt[i].RectSize = new Vector2D(100.0, 100.0);
-    			pt[i].SetStringRectOutline(Are.Unit, Are.GD);
+    			pt[i].SetStringRectOutline(Are.UnitScale, Are.DisplayGraphics);
     			pt[i].Closed = true;
     			pt[i].TextColor = TextColor;
     			if (!ShadColor.IsEmpty)
@@ -129,7 +129,7 @@ namespace SlaveMatrix
     		bs.Up(ref HitColor);
     	}
 
-    	public void Draw(Are Are)
+    	public void Draw(RenderArea Are)
     	{
     		bs.Draw(Are);
     	}

@@ -2420,7 +2420,7 @@ namespace SlaveMatrix
     		本体.JoinPAall();
     	}
 
-    	public override void 描画0(Are Are)
+    	public override void 描画0(RenderArea Are)
     	{
     		Are.Draw(X0Y0_鳥翼下腕);
     		Are.Draw(X0Y0_風切羽_羽15);
@@ -2467,7 +2467,7 @@ namespace SlaveMatrix
     		Are.Draw(X0Y0_中雨覆羽_羽1);
     	}
 
-    	public void 小雨覆描画(Are Are)
+    	public void 小雨覆描画(RenderArea Are)
     	{
     		Are.Draw(X0Y0_小雨覆_小雨覆);
     		Are.Draw(X0Y0_小雨覆_竜性_鱗1);

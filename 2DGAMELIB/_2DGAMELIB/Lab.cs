@@ -7,7 +7,7 @@ namespace _2DGAMELIB
     {
     	private ParT parT;
 
-    	private Are Are;
+    	private RenderArea Are;
 
     	private double Width;
 
@@ -33,17 +33,17 @@ namespace _2DGAMELIB
     		SetRect();
     	}
 
-    	public Lab(Are Are, string Name, ref Vector2D Position, double Size, double Width, Font Font, double TextSize, string Text, ref Color TextColor, ref Color ShadColor, ref Color BackColor, ref Color FramColor)
+    	public Lab(RenderArea Are, string Name, ref Vector2D Position, double Size, double Width, Font Font, double TextSize, string Text, ref Color TextColor, ref Color ShadColor, ref Color BackColor, ref Color FramColor)
     	{
     		Setting(Are, Name, ref Position, Size, Width, Font, TextSize, Text, ref TextColor, ref ShadColor, ref BackColor, ref FramColor);
     	}
 
-    	public Lab(Are Are, string Name, Vector2D Position, double Size, double Width, Font Font, double TextSize, string Text, Color TextColor, Color ShadColor, Color BackColor, Color FramColor)
+    	public Lab(RenderArea Are, string Name, Vector2D Position, double Size, double Width, Font Font, double TextSize, string Text, Color TextColor, Color ShadColor, Color BackColor, Color FramColor)
     	{
     		Setting(Are, Name, ref Position, Size, Width, Font, TextSize, Text, ref TextColor, ref ShadColor, ref BackColor, ref FramColor);
     	}
 
-    	private void Setting(Are Are, string Name, ref Vector2D Position, double Size, double Width, Font Font, double TextSize, string Text, ref Color TextColor, ref Color ShadColor, ref Color BackColor, ref Color FramColor)
+    	private void Setting(RenderArea Are, string Name, ref Vector2D Position, double Size, double Width, Font Font, double TextSize, string Text, ref Color TextColor, ref Color ShadColor, ref Color BackColor, ref Color FramColor)
     	{
     		this.Are = Are;
     		this.Width = Width;
@@ -98,7 +98,7 @@ namespace _2DGAMELIB
     		if (!string.IsNullOrEmpty(parT.Text))
     		{
     			parT.RectSize = new Vector2D(Width, 10.0);
-    			Vector2D_2 stringRect = parT.GetStringRect(Are.DisUnit, Are.GD);
+    			Vector2D_2 stringRect = parT.GetStringRect(Are.DisplayUnitScale, Are.DisplayGraphics);
     			double x = ((stringRect.v2.X > Min) ? stringRect.v2.X : Min) + 0.07;
     			parT.RectSize = new Vector2D(x, stringRect.v2.Y);
     		}

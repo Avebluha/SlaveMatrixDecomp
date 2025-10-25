@@ -7,7 +7,7 @@ namespace SlaveMatrix
     {
     	private Ele Par;
 
-    	public override void Draw(Are Are)
+    	public override void Draw(RenderArea Are)
     	{
     		try
     		{
@@ -44,7 +44,7 @@ namespace SlaveMatrix
     					sep.Sta.Dispose();
     				}
     				sep = default(sep);
-    				sep.Sta = EleD.GetEle(Are.DisUnit, Med, Cha.配色);
+    				sep.Sta = EleD.GetEle(Are.DisplayUnitScale, Med, Cha.配色);
     				sep.Sta.SetHitFalse();
     				sep.Sta.角度C = 45.0 * (double)(RNG.XS.NextBool() ? 1 : (-1)) * RNG.XS.NextDouble();
     				sep.Ele = he;
@@ -58,7 +58,7 @@ namespace SlaveMatrix
     		return false;
     	}
 
-    	public スタンプW(Med Med, Are Are, Cha Cha, Bod Bod, EleD EleD, Ele Par)
+    	public スタンプW(Med Med, RenderArea Are, Cha Cha, Bod Bod, EleD EleD, Ele Par)
     		: base(Med, Are, Cha, Bod, EleD)
     	{
     		this.Par = Par;

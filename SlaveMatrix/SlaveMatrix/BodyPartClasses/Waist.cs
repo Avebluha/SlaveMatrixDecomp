@@ -2942,7 +2942,7 @@ namespace SlaveMatrix
     		本体.JoinPA();
     	}
 
-    	public override void 描画0(Are Are)
+    	public override void 描画0(RenderArea Are)
     	{
     		switch (本体.IndexY)
     		{
@@ -3014,7 +3014,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override void 描画1(Are Are)
+    	public override void 描画1(RenderArea Are)
     	{
     		switch (本体.IndexY)
     		{

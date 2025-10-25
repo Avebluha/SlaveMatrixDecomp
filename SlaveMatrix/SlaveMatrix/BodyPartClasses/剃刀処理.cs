@@ -19,7 +19,7 @@ namespace SlaveMatrix
     	{
     		if (CP.GetFlag(0.1 * Cha.ChaD.現陰毛))
     		{
-    			調教UI.擬音キュー.Enqueue(delegate(Are a)
+    			調教UI.擬音キュー.Enqueue(delegate(RenderArea a)
     			{
     				調教UI.擬音.Sound(a, 対象.Ele.位置.GetAreaPoint(0.01), Sta.剃り.GetVal(Cha.ChaD.現陰毛, RNG.XS.NextDouble()), new Font("MS Gothic", 1f), Col.Black, 0.1 + 0.1 * RNG.XS.NextDouble(), b: true);
     			});

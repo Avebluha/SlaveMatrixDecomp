@@ -589,7 +589,7 @@ namespace SlaveMatrix
     		X0Y4_ハイライト.SizeXBase *= num;
     	}
 
-    	public override void 描画0(Are Are)
+    	public override void 描画0(RenderArea Are)
     	{
     		本体.Draw(Are);
     		キスマーク.Draw(Are);

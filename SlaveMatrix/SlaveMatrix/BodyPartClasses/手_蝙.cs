@@ -863,7 +863,7 @@ namespace SlaveMatrix
     		本体.JoinPAall();
     	}
 
-    	public override void 描画0(Are Are)
+    	public override void 描画0(RenderArea Are)
     	{
     		Are.Draw(X0Y0_獣翼手);
     		Are.Draw(X0Y0_小指_指1);
@@ -876,7 +876,7 @@ namespace SlaveMatrix
     		Are.Draw(X0Y0_親指_指3);
     	}
 
-    	public void 指先描画(Are Are)
+    	public void 指先描画(RenderArea Are)
     	{
     		Are.Draw(X0Y0_小指_指2);
     		Are.Draw(X0Y0_小指_指3);

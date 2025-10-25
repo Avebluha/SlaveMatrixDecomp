@@ -1460,12 +1460,12 @@ namespace SlaveMatrix
     		X0Y0_頭.JP[9].Joint = X0Y0_頭.JP[9].Joint.AddX(0.00012);
     	}
 
-    	public override void 描画0(Are Are)
+    	public override void 描画0(RenderArea Are)
     	{
     		Are.Draw(X0Y0_頭);
     	}
 
-    	public override void 描画1(Are Are)
+    	public override void 描画1(RenderArea Are)
     	{
     		Are.Draw(X0Y0_悪タトゥ_逆十字_逆十字1);
     		Are.Draw(X0Y0_悪タトゥ_逆十字_逆十字2);
@@ -1507,7 +1507,7 @@ namespace SlaveMatrix
     		Are.Draw(X0Y0_羽虫_眼右_ハイライト);
     	}
 
-    	public override void 描画2(Are Are)
+    	public override void 描画2(RenderArea Are)
     	{
     		Are.Draw(X0Y0_虫性_顎下);
     	}

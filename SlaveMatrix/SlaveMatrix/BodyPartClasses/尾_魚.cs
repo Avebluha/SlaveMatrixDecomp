@@ -9317,7 +9317,7 @@ namespace SlaveMatrix
     		X0Y0_尾14_尾.AngleBase = 0.0;
     	}
 
-    	public override void 描画0(Are Are)
+    	public override void 描画0(RenderArea Are)
     	{
     		if (Rパターン)
     		{

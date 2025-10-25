@@ -887,7 +887,7 @@ namespace SlaveMatrix
     		濃度 = e.濃度;
     	}
 
-    	public override void 描画0(Are Are)
+    	public override void 描画0(RenderArea Are)
     	{
     		Are.Draw(X0Y0_淫タトゥ_ハート_タトゥ左);
     		Are.Draw(X0Y0_淫タトゥ_ハート_タトゥ右);
@@ -920,7 +920,7 @@ namespace SlaveMatrix
     		Are.Draw(X0Y0_傷_傷I3);
     	}
 
-    	public override void 描画1(Are Are)
+    	public override void 描画1(RenderArea Are)
     	{
     		Are.Draw(X0Y0_獣性_髭1);
     		Are.Draw(X0Y0_獣性_髭2);

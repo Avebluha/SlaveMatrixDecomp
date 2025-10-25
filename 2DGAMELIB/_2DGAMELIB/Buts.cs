@@ -57,7 +57,7 @@ namespace _2DGAMELIB
     		}
     	}
 
-    	public void Draw(Are Are)
+    	public void Draw(RenderArea Are)
     	{
     		foreach (But value in buts.Values)
     		{

@@ -959,16 +959,16 @@ namespace SlaveMatrix
     		接続根.Set(接続元);
     	}
 
-    	public virtual void 描画0(Are Are)
+    	public virtual void 描画0(RenderArea Are)
     	{
     		本体.Draw(Are);
     	}
 
-    	public virtual void 描画1(Are Are)
+    	public virtual void 描画1(RenderArea Are)
     	{
     	}
 
-    	public virtual void 描画2(Are Are)
+    	public virtual void 描画2(RenderArea Are)
     	{
     	}
 

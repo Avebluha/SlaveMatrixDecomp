@@ -1781,7 +1781,7 @@ namespace SlaveMatrix
     		尺度YB = 0.99;
     	}
 
-    	public override void 描画0(Are Are)
+    	public override void 描画0(RenderArea Are)
     	{
     		Are.Draw(X0Y0_胸郭);
     		Are.Draw(X0Y0_筋肉_筋肉左);

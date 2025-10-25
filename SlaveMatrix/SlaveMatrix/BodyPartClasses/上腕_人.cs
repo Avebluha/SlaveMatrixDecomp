@@ -3929,7 +3929,7 @@ namespace SlaveMatrix
     		濃度 = e.濃度;
     	}
 
-    	public override void 描画0(Are Are)
+    	public override void 描画0(RenderArea Are)
     	{
     		Are.Draw(X0Y0_筋肉上);
     		Are.Draw(X0Y0_上腕);
@@ -4034,7 +4034,7 @@ namespace SlaveMatrix
     		Are.Draw(X0Y0_植性_欠損_葉1);
     	}
 
-    	public void 鎧描画(Are Are)
+    	public void 鎧描画(RenderArea Are)
     	{
     		Are.Draw(X0Y0_鎧_ベルト_ベルト1);
     		Are.Draw(X0Y0_鎧_ベルト_ベルト2);

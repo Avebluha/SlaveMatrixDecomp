@@ -7052,7 +7052,7 @@ namespace SlaveMatrix
     		鎖3.Dispose();
     	}
 
-    	public override void 描画0(Are Are)
+    	public override void 描画0(RenderArea Are)
     	{
     		if (本体.IndexY == 0)
     		{
@@ -7252,7 +7252,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public void 外描画(Are Are)
+    	public void 外描画(RenderArea Are)
     	{
     		if (本体.IndexY == 0)
     		{

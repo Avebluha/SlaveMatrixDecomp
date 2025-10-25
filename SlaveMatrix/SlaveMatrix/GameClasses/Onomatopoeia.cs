@@ -11,7 +11,7 @@ namespace SlaveMatrix
 
     	private List<string> del = new List<string>();
 
-    	public void Sound(Are Are, Vector2D p, string s, Font f, Color c, double d, bool b)
+    	public void Sound(RenderArea Are, Vector2D p, string s, Font f, Color c, double d, bool b)
     	{
     		ParT pt = new ParT
     		{
@@ -26,11 +26,11 @@ namespace SlaveMatrix
     			Brush = null,
     			Hit = false
     		};
-    		pt.SetStringRectOutline(Are.Unit, Are.GD);
+    		pt.SetStringRectOutline(Are.UnitScale, Are.DisplayGraphics);
     		pt.BasePointBase = pt.OP.GetCenter();
     		Mot mot = new Mot(0.0, 1.0);
     		string n = mot.GetHashCode().ToString();
-    		TextRenderingHint tr = Are.GD.TextRenderingHint;
+    		TextRenderingHint tr = Are.DisplayGraphics.TextRenderingHint;
     		mot.BaseSpeed = 0.1;
     		mot.Runing = delegate(Mot m)
     		{
@@ -39,9 +39,9 @@ namespace SlaveMatrix
     				pt.PositionCont = Oth.GetRandomVector() * 0.0025 * d;
     			}
     			pt.TextColor = Color.FromArgb((int)((double)(int)pt.TextColor.A * m.Value.Inverse()), pt.TextColor);
-    			Are.GD.TextRenderingHint = TextRenderingHint.AntiAlias;
+    			Are.DisplayGraphics.TextRenderingHint = TextRenderingHint.AntiAlias;
     			Are.Draw(pt);
-    			Are.GD.TextRenderingHint = tr;
+    			Are.DisplayGraphics.TextRenderingHint = tr;
     		};
     		mot.Reaing = delegate(Mot m)
     		{
@@ -49,7 +49,7 @@ namespace SlaveMatrix
     		};
     		mot.Ending = delegate
     		{
-    			Are.GD.TextRenderingHint = tr;
+    			Are.DisplayGraphics.TextRenderingHint = tr;
     			pt.Dispose();
     			del.Add(n);
     		};

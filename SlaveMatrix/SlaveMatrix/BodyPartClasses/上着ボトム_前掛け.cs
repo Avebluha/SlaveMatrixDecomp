@@ -472,7 +472,7 @@ namespace SlaveMatrix
     		尺度YB = 0.95;
     	}
 
-    	public override void 描画0(Are Are)
+    	public override void 描画0(RenderArea Are)
     	{
     		if (本体.IndexY == 0)
     		{
@@ -493,7 +493,7 @@ namespace SlaveMatrix
     		Are.Draw(X0Y1_縁前_縁中);
     	}
 
-    	public void 前(Are Are)
+    	public void 前(RenderArea Are)
     	{
     		if (本体.IndexY == 0)
     		{

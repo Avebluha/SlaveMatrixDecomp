@@ -9,25 +9,25 @@ namespace SlaveMatrix
 {
     public class DE : Ele
     {
-        public Action<Are> 描画;
+        public Action<RenderArea> 描画;
 
-        public DE(Ele src, Action<Are> 描画)
+        public DE(Ele src, Action<RenderArea> 描画)
         {
             Par = src;
             本体 = src.本体;
             this.描画 = 描画;
         }
 
-        public override void 描画0(Are Are)
+        public override void 描画0(RenderArea Are)
         {
             描画(Are);
         }
 
-        public override void 描画1(Are Are)
+        public override void 描画1(RenderArea Are)
         {
         }
 
-        public override void 描画2(Are Are)
+        public override void 描画2(RenderArea Are)
         {
         }
     }
@@ -694,7 +694,7 @@ namespace SlaveMatrix
 
     	public bool Is腿犬;
 
-    	private Action<Are> Draw = delegate
+    	private Action<RenderArea> Draw = delegate
     	{
     	};
 
@@ -2931,12 +2931,12 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public Bod(Med Med, Are Are, Cha Cha)
+    	public Bod(Med Med, RenderArea Are, Cha Cha)
     	{
     		Bod bod = this;
     		this.Med = Med;
     		this.Cha = Cha;
-    		double disUnit = Are.DisUnit;
+    		double disUnit = Are.DisplayUnitScale;
     		腰 = (Waist)Cha.ChaD.body_tree.GetEle(disUnit, Med, Cha.配色);
     		Elements = 腰.EnumEle().ToArray();
     		List<スタンプK> sk = new List<スタンプK>();
@@ -5475,7 +5475,7 @@ namespace SlaveMatrix
     			{
     				EI胸.AddRange(es2);
     			}
-    			EI胸.描画処理 = delegate(Are are)
+    			EI胸.描画処理 = delegate(RenderArea are)
     			{
     				bod.背中接続.描画0(are);
     				bod.背中接続.描画1(are);
@@ -5525,7 +5525,7 @@ namespace SlaveMatrix
     		{
     			EI髪 = new EleI(Med);
     			EI髪.AddRange(後髪接続);
-    			EI髪.描画処理 = delegate(Are are)
+    			EI髪.描画処理 = delegate(RenderArea are)
     			{
     				bod.後髪接続.描画0(are);
     				bod.後髪接続.描画1(are);
@@ -5538,7 +5538,7 @@ namespace SlaveMatrix
     			EI腰 = new EleI(Med);
     			EI腰.AddRange(腰後左接続);
     			EI腰.AddRange(腰後右接続);
-    			EI腰.描画処理 = delegate(Are are)
+    			EI腰.描画処理 = delegate(RenderArea are)
     			{
     				bod.腰後左接続.描画0(are);
     				bod.腰後左接続.描画1(are);
@@ -5553,7 +5553,7 @@ namespace SlaveMatrix
     			EI半後 = new EleI(Med);
     			EI半後.AddRange(尾接続);
     			EI半後.AddRange(半身後接続);
-    			EI半後.描画処理 = delegate(Are are)
+    			EI半後.描画処理 = delegate(RenderArea are)
     			{
     				bod.尾接続.描画0(are);
     				bod.尾接続.描画1(are);
@@ -5567,7 +5567,7 @@ namespace SlaveMatrix
     		{
     			EI半中1 = new EleI(Med);
     			EI半中1.AddRange(半身中1接続);
-    			EI半中1.描画処理 = delegate(Are are)
+    			EI半中1.描画処理 = delegate(RenderArea are)
     			{
     				bod.半身中1接続.描画0(are);
     				bod.半身中1接続.描画1(are);
@@ -5579,7 +5579,7 @@ namespace SlaveMatrix
     		{
     			EI半中2 = new EleI(Med);
     			EI半中2.AddRange(半身中2接続);
-    			EI半中2.描画処理 = delegate(Are are)
+    			EI半中2.描画処理 = delegate(RenderArea are)
     			{
     				bod.半身中2接続.描画0(are);
     				bod.半身中2接続.描画1(are);
@@ -5591,7 +5591,7 @@ namespace SlaveMatrix
     		{
     			EI半前 = new EleI(Med);
     			EI半前.AddRange(半身前接続);
-    			EI半前.描画処理 = delegate(Are are)
+    			EI半前.描画処理 = delegate(RenderArea are)
     			{
     				bod.半身前接続.描画0(are);
     				bod.半身前接続.描画1(are);
@@ -5604,7 +5604,7 @@ namespace SlaveMatrix
     			EI腕前 = new EleI(Med);
     			EI腕前.AddRange(下腕以降左);
     			EI腕前.AddRange(下腕以降右);
-    			EI腕前.描画処理 = delegate(Are are)
+    			EI腕前.描画処理 = delegate(RenderArea are)
     			{
     				if (bod.腕左右前後)
     				{
@@ -5641,7 +5641,7 @@ namespace SlaveMatrix
     			EI腿 = new EleI(Med);
     			EI腿.AddRange(腿左接続);
     			EI腿.AddRange(腿右接続);
-    			EI腿.描画処理 = delegate(Are are)
+    			EI腿.描画処理 = delegate(RenderArea are)
     			{
     				if (bod.腿左右前後)
     				{
@@ -5673,7 +5673,7 @@ namespace SlaveMatrix
     		Update();
     		if (Is海洋)
     		{
-    			Draw = delegate(Are are)
+    			Draw = delegate(RenderArea are)
     			{
     				bod.染み_人.色更新();
     				bod.染み_人.描画0(are);
@@ -6092,7 +6092,7 @@ namespace SlaveMatrix
     		}
     		if (Is長物)
     		{
-    			Draw = delegate(Are are)
+    			Draw = delegate(RenderArea are)
     			{
     				if (bod.Is蛇)
     				{
@@ -6523,7 +6523,7 @@ namespace SlaveMatrix
     		}
     		if (Is獣)
     		{
-    			Draw = delegate(Are are)
+    			Draw = delegate(RenderArea are)
     			{
     				bod.染み_人.色更新();
     				bod.染み_人.描画0(are);
@@ -6953,7 +6953,7 @@ namespace SlaveMatrix
     		}
     		if (Is蛸)
     		{
-    			Draw = delegate(Are are)
+    			Draw = delegate(RenderArea are)
     			{
     				bod.染み_人.色更新();
     				bod.染み_人.描画0(are);
@@ -7372,7 +7372,7 @@ namespace SlaveMatrix
     		}
     		if (Is多足)
     		{
-    			Draw = delegate(Are are)
+    			Draw = delegate(RenderArea are)
     			{
     				if (bod.Is蠍)
     				{
@@ -7800,7 +7800,7 @@ namespace SlaveMatrix
     		}
     		if (Is植)
     		{
-    			Draw = delegate(Are are)
+    			Draw = delegate(RenderArea are)
     			{
     				bod.染み_人.色更新();
     				bod.染み_人.描画0(are);
@@ -8236,7 +8236,7 @@ namespace SlaveMatrix
     		}
     		if (Is粘)
     		{
-    			Draw = delegate(Are are)
+    			Draw = delegate(RenderArea are)
     			{
     				bod.染み_人.色更新();
     				bod.染み_人.描画0(are);
@@ -8678,7 +8678,7 @@ namespace SlaveMatrix
     			};
     			return;
     		}
-    		Draw = delegate(Are are)
+    		Draw = delegate(RenderArea are)
     		{
     			bod.cb0 = bod.カーソル != null;
     			bod.cb1 = bod.cb0 && !bod.カーソル.コキ;
@@ -9572,7 +9572,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public void 描画(Are Are)
+    	public void 描画(RenderArea Are)
     	{
     		cb0 = カーソル != null;
     		cb1 = cb0 && !カーソル.コキ;

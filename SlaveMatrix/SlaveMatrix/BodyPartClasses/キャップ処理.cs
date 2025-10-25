@@ -130,7 +130,7 @@ namespace SlaveMatrix
 
     	public void 吸着(Ele 対象)
     	{
-    		調教UI.擬音キュー.Enqueue(delegate(Are a)
+    		調教UI.擬音キュー.Enqueue(delegate(RenderArea a)
     		{
     			調教UI.擬音.Sound(a, 対象.位置.GetAreaPoint(0.01), Sta.吸着.GetVal(1.0, 1.0), new Font("MS Gothic", 1f), Col.Black, 0.2, b: true);
     		});
@@ -138,7 +138,7 @@ namespace SlaveMatrix
 
     	public void 吸脱(Ele 対象)
     	{
-    		調教UI.擬音キュー.Enqueue(delegate(Are a)
+    		調教UI.擬音キュー.Enqueue(delegate(RenderArea a)
     		{
     			調教UI.擬音.Sound(a, 対象.位置.GetAreaPoint(0.01), Sta.吸脱.GetVal(1.0, 1.0), new Font("MS Gothic", 1f), Col.Black, 0.2, b: true);
     		});
@@ -148,7 +148,7 @@ namespace SlaveMatrix
     	{
     		if ((対象 is キャップ1 && CP中.GetFlag(0.2)) || (対象 is キャップ2 && !対象.右 && CP左.GetFlag(0.2)) || (対象 is キャップ2 && 対象.右 && CP右.GetFlag(0.2)))
     		{
-    			調教UI.擬音キュー.Enqueue(delegate(Are a)
+    			調教UI.擬音キュー.Enqueue(delegate(RenderArea a)
     			{
     				調教UI.擬音.Sound(a, 対象.位置.GetAreaPoint(0.02), Sta.振動.GetVal(1.0, 1.0), new Font("MS Gothic", 1f), Col.Black, 0.15, b: true);
     			});
@@ -585,7 +585,7 @@ namespace SlaveMatrix
     		: base(調教UI)
     	{
     		キャップ処理 キャップ処理2 = this;
-    		double disUnit = 調教UI.Are.DisUnit;
+    		double disUnit = 調教UI.Are.DisplayUnitScale;
     		キャップ着.SetDefault();
     		キャップ1D e = new キャップ1D();
     		e.SetValuesD("表示", true);

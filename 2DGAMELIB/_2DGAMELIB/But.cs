@@ -109,7 +109,7 @@ namespace _2DGAMELIB
     		return false;
     	}
 
-    	public void Draw(Are Are)
+    	public void Draw(RenderArea Are)
     	{
     		if (dra)
     		{

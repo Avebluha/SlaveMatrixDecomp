@@ -398,19 +398,19 @@ namespace SlaveMatrix
     		X0Y0_脇_脇.BasePointBase = X0Y0_脇_脇.BasePointBase.AddY(-0.001);
     	}
 
-    	public void 脇描画(Are Are)
+    	public void 脇描画(RenderArea Are)
     	{
     		Are.Draw(X0Y0_脇_脇);
     		Are.Draw(X0Y0_脇_筋肉);
     	}
 
-    	public void 服描画(Are Are)
+    	public void 服描画(RenderArea Are)
     	{
     		Are.Draw(X0Y0_肩_シャツ);
     		Are.Draw(X0Y0_肩_ナース);
     	}
 
-    	public override void 描画0(Are Are)
+    	public override void 描画0(RenderArea Are)
     	{
     		Are.Draw(X0Y0_肩_肩);
     		Are.Draw(X0Y0_肩_傷I1);

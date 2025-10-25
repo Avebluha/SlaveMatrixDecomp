@@ -618,7 +618,7 @@ namespace SlaveMatrix
     		AreM.Dispose();
     	}
 
-    	public override void 描画0(Are Are)
+    	public override void 描画0(RenderArea Are)
     	{
     		AreM.Clear();
     		本体.Draw(AreM);

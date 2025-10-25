@@ -41,9 +41,9 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public TextBubble(Are Are, bool 右, Font Font, double TextSize, string Text, Color TextColor, Color ShadColor, Color BackColor, double Speed, bool Dis, Color FeedColor, Action<Tex> Action)
+    	public TextBubble(RenderArea Are, bool 右, Font Font, double TextSize, string Text, Color TextColor, Color ShadColor, Color BackColor, double Speed, bool Dis, Color FeedColor, Action<Tex> Action)
     	{
-    		吹出し = new 吹出し(Are.DisUnit);
+    		吹出し = new 吹出し(Are.DisplayUnitScale);
     		吹出し.SetHitFalse();
     		吹出し.右 = 右;
     		吹出し.吹出しCD.色 = new Color2(ref BackColor, ref Col.Empty);
@@ -101,9 +101,9 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public TextBubble(Are Are, bool 右, Font Font, double TextSize, string Text, Color TextColor, Color ShadColor, Color BackColor, double Speed, bool Dis)
+    	public TextBubble(RenderArea Are, bool 右, Font Font, double TextSize, string Text, Color TextColor, Color ShadColor, Color BackColor, double Speed, bool Dis)
     	{
-    		吹出し = new 吹出し(Are.DisUnit);
+    		吹出し = new 吹出し(Are.DisplayUnitScale);
     		吹出し.SetHitFalse();
     		吹出し.右 = 右;
     		吹出し.吹出しCD.色 = new Color2(ref BackColor, ref Col.Empty);
@@ -184,7 +184,7 @@ namespace SlaveMatrix
     		Tex.Position = 吹出し.X0Y0_吹出し.ToGlobal(吹出し.X0Y0_吹出し.JP[0].Joint);
     	}
 
-    	public void Draw(Are Are, FPS FPS)
+    	public void Draw(RenderArea Are, FPS FPS)
     	{
     		Tex.Progression(FPS);
     		if (Dis)

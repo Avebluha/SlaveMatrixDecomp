@@ -985,7 +985,7 @@ namespace SlaveMatrix
     		尺度YB = 0.99;
     	}
 
-    	public override void 描画0(Are Are)
+    	public override void 描画0(RenderArea Are)
     	{
     		Are.Draw(X0Y0_虫性_甲殻2);
     		Are.Draw(X0Y0_虫性_甲殻1_甲殻);
@@ -1022,7 +1022,7 @@ namespace SlaveMatrix
     		Are.Draw(X0Y0_コア_コア1_ハイライト);
     	}
 
-    	public override void 描画1(Are Are)
+    	public override void 描画1(RenderArea Are)
     	{
     		Are.Draw(X0Y0_コア_コア2_基);
     		Are.Draw(X0Y0_コア_コア2_コア);

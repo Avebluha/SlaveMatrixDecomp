@@ -8421,7 +8421,7 @@ namespace SlaveMatrix
     		節1_吸盤4_表示 = false;
     	}
 
-    	public override void 描画0(Are Are)
+    	public override void 描画0(RenderArea Are)
     	{
     		Are.Draw(X0Y0_節1_節);
     		Are.Draw(X0Y0_節1_紋柄1);

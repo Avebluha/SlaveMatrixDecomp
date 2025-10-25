@@ -793,7 +793,7 @@ namespace SlaveMatrix
     		鎖表示 = e.鎖表示;
     	}
 
-    	public override void 描画0(Are Are)
+    	public override void 描画0(RenderArea Are)
     	{
     		本体.Draw(Are);
     		鎖1.描画0(Are);

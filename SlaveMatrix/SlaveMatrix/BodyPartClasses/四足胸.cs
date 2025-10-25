@@ -1081,7 +1081,7 @@ namespace SlaveMatrix
     		尺度YB = 0.96;
     	}
 
-    	public void 胸描画(Are Are)
+    	public void 胸描画(RenderArea Are)
     	{
     		Are.Draw(X0Y0_胸郭);
     		Are.Draw(X0Y0_筋肉_筋肉左);
@@ -1099,7 +1099,7 @@ namespace SlaveMatrix
     		Are.Draw(X0Y0_竜性_中_鱗2);
     	}
 
-    	public void 肌描画(Are Are)
+    	public void 肌描画(RenderArea Are)
     	{
     		Are.Draw(X0Y0_紋柄_紋左_紋1);
     		Are.Draw(X0Y0_紋柄_紋左_紋2);

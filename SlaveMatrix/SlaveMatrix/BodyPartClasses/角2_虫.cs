@@ -447,7 +447,7 @@ namespace SlaveMatrix
     		鎖1.Dispose();
     	}
 
-    	public override void 根描画(Are Are)
+    	public override void 根描画(RenderArea Are)
     	{
     		本体.Draw(Are);
     		if (!欠損_)
@@ -456,7 +456,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override void 描画0(Are Are)
+    	public override void 描画0(RenderArea Are)
     	{
     		本体.Draw(Are);
     		if (!欠損_)

@@ -518,7 +518,7 @@ namespace SlaveMatrix
     		濃度 = e.濃度;
     	}
 
-    	public override void 根描画(Are Are)
+    	public override void 根描画(RenderArea Are)
     	{
     		if (本体.IndexY == 0)
     		{
@@ -543,7 +543,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override void 先描画(Are Are)
+    	public override void 先描画(RenderArea Are)
     	{
     		if (本体.IndexY == 0)
     		{

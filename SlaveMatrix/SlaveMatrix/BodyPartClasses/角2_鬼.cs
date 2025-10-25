@@ -356,11 +356,11 @@ namespace SlaveMatrix
     		本体.JoinPAall();
     	}
 
-    	public override void 根描画(Are Are)
+    	public override void 根描画(RenderArea Are)
     	{
     	}
 
-    	public override void 先描画(Are Are)
+    	public override void 先描画(RenderArea Are)
     	{
     		本体.Draw(Are);
     	}

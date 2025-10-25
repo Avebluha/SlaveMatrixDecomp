@@ -8,7 +8,7 @@ namespace SlaveMatrix
 
     	public Med Med;
 
-    	public Are Are;
+    	public RenderArea Are;
 
     	public Cha Cha;
 

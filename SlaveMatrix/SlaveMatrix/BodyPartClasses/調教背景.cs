@@ -40,7 +40,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public void Draw(Are Are)
+    	public void Draw(RenderArea Are)
     	{
     		c = 0;
     		for (y = 0; y < 10; y++)

@@ -285,7 +285,7 @@ namespace _2DGAMELIB
     	}
 
 
-    	public void Draw(Are Are)
+    	public void Draw(RenderArea Are)
     	{
     		Are.Draw(Current);
     	}

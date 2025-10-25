@@ -18,12 +18,12 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public virtual void 根描画(Are Are)
+    	public virtual void 根描画(RenderArea Are)
     	{
     		本体.Draw(Are);
     	}
 
-    	public virtual void 先描画(Are Are)
+    	public virtual void 先描画(RenderArea Are)
     	{
     	}
     }

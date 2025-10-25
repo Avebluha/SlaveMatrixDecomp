@@ -759,7 +759,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public static void 描画0(this IEnumerable<Ele> es, Are Are)
+    	public static void 描画0(this IEnumerable<Ele> es, RenderArea Are)
     	{
     		foreach (Ele e in es)
     		{
@@ -767,7 +767,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public static void 描画1(this IEnumerable<Ele> es, Are Are)
+    	public static void 描画1(this IEnumerable<Ele> es, RenderArea Are)
     	{
     		foreach (Ele e in es)
     		{

@@ -2289,7 +2289,7 @@ namespace SlaveMatrix
     		X0Y4_下地.BasePointBase = X0Y4_下地.BasePointBase.AddY(y);
     	}
 
-    	public override void 描画0(Are Are)
+    	public override void 描画0(RenderArea Are)
     	{
     		switch (本体.IndexY)
     		{
@@ -2316,7 +2316,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override void 描画1(Are Are)
+    	public override void 描画1(RenderArea Are)
     	{
     		switch (本体.IndexY)
     		{

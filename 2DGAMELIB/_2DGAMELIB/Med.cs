@@ -324,7 +324,7 @@ namespace _2DGAMELIB
     	}
 
 
-    	public void Draw(Are Are)
+    	public void Draw(RenderArea Are)
     	{
             //Note: this is terribly slow...
             //would be better to not copy the entire frame

@@ -23,7 +23,7 @@ namespace SlaveMatrix
     {
     	public Med Med;
 
-    	public Are Are;
+    	public RenderArea Are;
 
     	public Cha Cha;
 
@@ -43,7 +43,7 @@ namespace SlaveMatrix
 
     	protected sep sep;
 
-    	public virtual void Draw(Are Are)
+    	public virtual void Draw(RenderArea Are)
     	{
     	}
 
@@ -55,7 +55,7 @@ namespace SlaveMatrix
     	{
     	}
 
-    	public Stamp(Med Med, Are Are, Cha Cha, Bod Bod, EleD EleD)
+    	public Stamp(Med Med, RenderArea Are, Cha Cha, Bod Bod, EleD EleD)
     	{
     		this.Med = Med;
     		this.Are = Are;

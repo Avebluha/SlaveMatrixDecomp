@@ -3862,7 +3862,7 @@ namespace SlaveMatrix
     		濃度 = e.濃度;
     	}
 
-    	public override void 描画0(Are Are)
+    	public override void 描画0(RenderArea Are)
     	{
     		if (本体.IndexY == 0)
     		{
@@ -3940,7 +3940,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public void 底描画(Are Are)
+    	public void 底描画(RenderArea Are)
     	{
     		if (本体.IndexY == 0)
     		{
@@ -3963,7 +3963,7 @@ namespace SlaveMatrix
     		Are.Draw(X0Y1_アーマ0_靴底);
     	}
 
-    	public void 靴描画(Are Are)
+    	public void 靴描画(RenderArea Are)
     	{
     		if (本体.IndexY == 0)
     		{

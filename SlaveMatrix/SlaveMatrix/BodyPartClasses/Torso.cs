@@ -409,7 +409,7 @@ namespace SlaveMatrix
     		尺度YB = 0.9;
     	}
 
-    	public override void 描画0(Are Are)
+    	public override void 描画0(RenderArea Are)
     	{
     		本体.Draw(Are);
     		キスマーク.Draw(Are);
