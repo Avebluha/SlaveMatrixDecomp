@@ -58,9 +58,9 @@ namespace SlaveMatrix
 
     	public 胸 胸;
 
-    	public 首 首;
+    	public Neck 首;
 
-    	public 頭 頭;
+    	public Head 頭;
 
     	public 基髪 基髪;
 
@@ -70,9 +70,9 @@ namespace SlaveMatrix
 
     	public 横髪 横髪右;
 
-    	public 後髪1 後髪1;
+    	public BackHair1 後髪1;
 
-    	public 後髪0 後髪0;
+    	public BackHair0 後髪0;
 
     	public 単目 単眼目;
 
@@ -3897,7 +3897,7 @@ namespace SlaveMatrix
     		}
     		if (胸 != null)
     		{
-    			首 = 胸.首_接続.GetEle<首>();
+    			首 = 胸.Neck_接続.GetEle<Neck>();
     			胸腹板_人 = 胸.肌_接続.GetEle<胸腹板>();
     			胸肌_人 = 胸.肌_接続.GetEle<胸肌>();
     			胸毛_人 = 胸.肌_接続.GetEle<胸毛>();
@@ -3934,7 +3934,7 @@ namespace SlaveMatrix
     		}
     		if (首 != null)
     		{
-    			頭 = 首.頭_接続.GetEle<頭>();
+    			頭 = 首.Head_接続.GetEle<Head>();
     		}
     		if (頭 != null)
     		{
@@ -4055,8 +4055,8 @@ namespace SlaveMatrix
     			前髪 = 基髪.前髪_接続.GetEle<前髪>();
     			横髪左 = 基髪.横髪左_接続.GetEle<横髪>();
     			横髪右 = 基髪.横髪右_接続.GetEle<横髪>();
-    			後髪1 = 基髪.後髪_接続.GetEle<後髪1>();
-    			後髪0 = 基髪.後髪_接続.GetEle<後髪0>();
+    			後髪1 = 基髪.後髪_接続.GetEle<BackHair1>();
+    			後髪0 = 基髪.後髪_接続.GetEle<BackHair0>();
     		}
     		首.キスマーク = new スタンプK(Med, Are, Cha, this, kd, 首);
     		sk.Add(首.キスマーク);
@@ -9498,7 +9498,7 @@ namespace SlaveMatrix
     	public void Add鞭痕(Vector2D cp, Color hc)
     	{
     		Ele he = GetHitEle(hc);
-    		if (he is 下腕 || he is 首)
+    		if (he is 下腕 || he is Neck)
     		{
     			return;
     		}

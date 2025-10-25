@@ -735,67 +735,67 @@ namespace SlaveMatrix
     			側頭
     		},
     		{
-    			ConnectionInfo.頭_触覚左_接続,
+    			ConnectionInfo.Head_触覚左_接続,
     			触覚
     		},
     		{
-    			ConnectionInfo.頭_触覚右_接続,
+    			ConnectionInfo.Head_触覚右_接続,
     			触覚
     		},
     		{
-    			ConnectionInfo.頭_耳左_接続,
+    			ConnectionInfo.Head_耳左_接続,
     			耳
     		},
     		{
-    			ConnectionInfo.頭_耳右_接続,
+    			ConnectionInfo.Head_耳右_接続,
     			耳
     		},
     		{
-    			ConnectionInfo.頭_頬左_接続,
+    			ConnectionInfo.Head_頬左_接続,
     			頬
     		},
     		{
-    			ConnectionInfo.頭_頬右_接続,
+    			ConnectionInfo.Head_頬右_接続,
     			頬
     		},
     		{
-    			ConnectionInfo.後髪0_肢系_左5_接続,
+    			ConnectionInfo.BackHair0_肢系_左5_接続,
     			後髪
     		},
     		{
-    			ConnectionInfo.後髪0_肢系_右5_接続,
+    			ConnectionInfo.BackHair0_肢系_右5_接続,
     			後髪
     		},
     		{
-    			ConnectionInfo.後髪0_肢系_左4_接続,
+    			ConnectionInfo.BackHair0_肢系_左4_接続,
     			後髪
     		},
     		{
-    			ConnectionInfo.後髪0_肢系_右4_接続,
+    			ConnectionInfo.BackHair0_肢系_右4_接続,
     			後髪
     		},
     		{
-    			ConnectionInfo.後髪0_肢系_左3_接続,
+    			ConnectionInfo.BackHair0_肢系_左3_接続,
     			後髪
     		},
     		{
-    			ConnectionInfo.後髪0_肢系_右3_接続,
+    			ConnectionInfo.BackHair0_肢系_右3_接続,
     			後髪
     		},
     		{
-    			ConnectionInfo.後髪0_肢系_左2_接続,
+    			ConnectionInfo.BackHair0_肢系_左2_接続,
     			後髪
     		},
     		{
-    			ConnectionInfo.後髪0_肢系_右2_接続,
+    			ConnectionInfo.BackHair0_肢系_右2_接続,
     			後髪
     		},
     		{
-    			ConnectionInfo.後髪0_肢系_左1_接続,
+    			ConnectionInfo.BackHair0_肢系_左1_接続,
     			後髪
     		},
     		{
-    			ConnectionInfo.後髪0_肢系_右1_接続,
+    			ConnectionInfo.BackHair0_肢系_右1_接続,
     			後髪
     		},
     		{
@@ -1159,11 +1159,11 @@ namespace SlaveMatrix
     			触覚蟲
     		},
     		{
-    			ConnectionInfo.頭_頭頂_接続,
+    			ConnectionInfo.Head_頭頂_接続,
     			頭頂
     		},
     		{
-    			ConnectionInfo.頭_額_接続,
+    			ConnectionInfo.Head_額_接続,
     			額
     		},
     		{
@@ -1239,11 +1239,11 @@ namespace SlaveMatrix
     			頭頂後
     		},
     		{
-    			ConnectionInfo.頭_大顎基_接続,
+    			ConnectionInfo.Head_大顎基_接続,
     			大顎基
     		},
     		{
-    			ConnectionInfo.頭_顔面_接続,
+    			ConnectionInfo.Head_顔面_接続,
     			顔面
     		},
     		{
@@ -1351,7 +1351,7 @@ namespace SlaveMatrix
     			前翅甲軸3
     		},
     		{
-    			ConnectionInfo.触手_犬_頭_接続,
+    			ConnectionInfo.触手_犬_Head_接続,
     			犬頭
     		},
     		{
@@ -1797,7 +1797,7 @@ namespace SlaveMatrix
     		int i = (原種モード ? RNG.XS.Next(3) : RNG.XS.Next(7));
     		Dictionary<ConnectionInfo, List<Type>> 接続構成 = Get接続構成(母方, 父方);
     		Type[] 要素構成 = Get要素構成(母方, 父方);
-    		頭D 頭D2 = Mix<頭D>(母方, 父方, i, 原種モード);
+    		HeadD 頭D2 = Mix<HeadD>(母方, 父方, i, 原種モード);
     		基髪D 基髪D2 = new 基髪D();
     		頭D2.基髪接続(基髪D2);
     		頭D2.目左接続(new 目傷D());
@@ -1822,7 +1822,7 @@ namespace SlaveMatrix
     		頭D2.単眼目接続(new 目隠帯D());
     		頭D2.口接続(new 玉口枷D());
     		頭D2.AlignC();
-    		首D 首D2 = Mix<首D>(母方, 父方, i, 原種モード);
+    		NeckD 首D2 = Mix<NeckD>(母方, 父方, i, 原種モード);
     		首D2.頭接続(頭D2);
     		胸D 胸D2 = Mix<胸D>(母方, 父方, i, 原種モード);
     		乳房D 乳房D2 = Mix<乳房D>(母方, 父方, 右: false, i, 原種モード);
@@ -1874,14 +1874,14 @@ namespace SlaveMatrix
     			EleD eleD = SlaveMatrix.GameClasses._Con.Get後髪0R();
     			基髪D2.後髪接続(eleD);
     			eleD.AlignR();
-    			if (eleD is 後髪0_肢系D && 変異率.Lot())
+    			if (eleD is BackHair0_肢系D && 変異率.Lot())
     			{
-    				eleD.接続(母方, 父方, i, ConnectionInfo.後髪0_肢系_左2_接続, 要素構成, 接続構成, 変異率, 原種モード);
-    				eleD.接続(母方, 父方, i, ConnectionInfo.後髪0_肢系_左3_接続, 要素構成, 接続構成, 変異率, 原種モード);
-    				eleD.接続(母方, 父方, i, ConnectionInfo.後髪0_肢系_左4_接続, 要素構成, 接続構成, 変異率, 原種モード);
-    				eleD.接続(母方, 父方, i, ConnectionInfo.後髪0_肢系_左5_接続, 要素構成, 接続構成, 変異率, 原種モード);
+    				eleD.接続(母方, 父方, i, ConnectionInfo.BackHair0_肢系_左2_接続, 要素構成, 接続構成, 変異率, 原種モード);
+    				eleD.接続(母方, 父方, i, ConnectionInfo.BackHair0_肢系_左3_接続, 要素構成, 接続構成, 変異率, 原種モード);
+    				eleD.接続(母方, 父方, i, ConnectionInfo.BackHair0_肢系_左4_接続, 要素構成, 接続構成, 変異率, 原種モード);
+    				eleD.接続(母方, 父方, i, ConnectionInfo.BackHair0_肢系_左5_接続, 要素構成, 接続構成, 変異率, 原種モード);
     			}
-    			if ((eleD is 後髪0_ジグD || eleD is 後髪0_ハネD || eleD is 後髪0_パツD || eleD is 後髪0_カルD || eleD is 後髪0_肢系D) && RNG.XS.NextBool())
+    			if ((eleD is BackHair0_ジグD || eleD is BackHair0_ハネD || eleD is BackHair0_パツD || eleD is BackHair0_カルD || eleD is BackHair0_肢系D) && RNG.XS.NextBool())
     			{
     				EleD e2 = SlaveMatrix.GameClasses._Con.Get後髪1R();
     				基髪D2.後髪接続(e2);
@@ -1902,16 +1902,16 @@ namespace SlaveMatrix
     			{
     				基髪D2.後髪接続(後髪0D2);
     				後髪0D2.AlignR();
-    				if (後髪0D2 is 後髪0_肢系D && 変異率.Lot())
+    				if (後髪0D2 is BackHair0_肢系D && 変異率.Lot())
     				{
-    					後髪0D2.接続(母方, 父方, i, ConnectionInfo.後髪0_肢系_左2_接続, 要素構成, 接続構成, 変異率, 原種モード);
-    					後髪0D2.接続(母方, 父方, i, ConnectionInfo.後髪0_肢系_左3_接続, 要素構成, 接続構成, 変異率, 原種モード);
-    					後髪0D2.接続(母方, 父方, i, ConnectionInfo.後髪0_肢系_左4_接続, 要素構成, 接続構成, 変異率, 原種モード);
-    					後髪0D2.接続(母方, 父方, i, ConnectionInfo.後髪0_肢系_左5_接続, 要素構成, 接続構成, 変異率, 原種モード);
+    					後髪0D2.接続(母方, 父方, i, ConnectionInfo.BackHair0_肢系_左2_接続, 要素構成, 接続構成, 変異率, 原種モード);
+    					後髪0D2.接続(母方, 父方, i, ConnectionInfo.BackHair0_肢系_左3_接続, 要素構成, 接続構成, 変異率, 原種モード);
+    					後髪0D2.接続(母方, 父方, i, ConnectionInfo.BackHair0_肢系_左4_接続, 要素構成, 接続構成, 変異率, 原種モード);
+    					後髪0D2.接続(母方, 父方, i, ConnectionInfo.BackHair0_肢系_左5_接続, 要素構成, 接続構成, 変異率, 原種モード);
     				}
-    				if ((後髪0D2 is 後髪0_ジグD || 後髪0D2 is 後髪0_ハネD || 後髪0D2 is 後髪0_パツD || 後髪0D2 is 後髪0_カルD || 後髪0D2 is 後髪0_肢系D) && RNG.XS.NextBool())
+    				if ((後髪0D2 is BackHair0_ジグD || 後髪0D2 is BackHair0_ハネD || 後髪0D2 is BackHair0_パツD || 後髪0D2 is BackHair0_カルD || 後髪0D2 is BackHair0_肢系D) && RNG.XS.NextBool())
     				{
-    					後髪1D 後髪1D2 = Mix<後髪1D>(母方, 父方, i, 原種モード);
+    					BackHair1D 後髪1D2 = Mix<BackHair1D>(母方, 父方, i, 原種モード);
     					if (後髪1D2 != null)
     					{
     						基髪D2.後髪接続(後髪1D2);
@@ -1921,7 +1921,7 @@ namespace SlaveMatrix
     			}
     			else if (RNG.XS.NextBool())
     			{
-    				後髪1D 後髪1D3 = Mix<後髪1D>(母方, 父方, i, 原種モード);
+    				BackHair1D 後髪1D3 = Mix<BackHair1D>(母方, 父方, i, 原種モード);
     				if (後髪1D3 != null)
     				{
     					基髪D2.後髪接続(後髪1D3);
@@ -2153,15 +2153,15 @@ namespace SlaveMatrix
     				頭D2.口接続(舌D2);
     			}
     		}
-    		頭D2.接続(母方, 父方, i, ConnectionInfo.頭_耳左_接続, 要素構成, 接続構成, 変異率, 原種モード);
+    		頭D2.接続(母方, 父方, i, ConnectionInfo.Head_耳左_接続, 要素構成, 接続構成, 変異率, 原種モード);
     		基髪D2.接続(母方, 父方, i, ConnectionInfo.基髪_頭頂左_接続, 要素構成, 接続構成, 変異率, 原種モード);
-    		頭D2.接続(母方, 父方, i, ConnectionInfo.頭_頬左_接続, 要素構成, 接続構成, 変異率, 原種モード);
-    		頭D2.接続(母方, 父方, i, ConnectionInfo.頭_大顎基_接続, 要素構成, 接続構成, 変異率, 原種モード);
-    		頭D2.接続(母方, 父方, i, ConnectionInfo.頭_顔面_接続, 要素構成, 接続構成, 変異率, 原種モード);
-    		頭D2.接続(母方, 父方, i, ConnectionInfo.頭_頭頂_接続, 要素構成, 接続構成, 変異率, 原種モード);
-    		頭D2.接続(母方, 父方, i, ConnectionInfo.頭_触覚左_接続, 要素構成, 接続構成, 変異率, 原種モード);
+    		頭D2.接続(母方, 父方, i, ConnectionInfo.Head_頬左_接続, 要素構成, 接続構成, 変異率, 原種モード);
+    		頭D2.接続(母方, 父方, i, ConnectionInfo.Head_大顎基_接続, 要素構成, 接続構成, 変異率, 原種モード);
+    		頭D2.接続(母方, 父方, i, ConnectionInfo.Head_顔面_接続, 要素構成, 接続構成, 変異率, 原種モード);
+    		頭D2.接続(母方, 父方, i, ConnectionInfo.Head_頭頂_接続, 要素構成, 接続構成, 変異率, 原種モード);
+    		頭D2.接続(母方, 父方, i, ConnectionInfo.Head_触覚左_接続, 要素構成, 接続構成, 変異率, 原種モード);
     		胸D2.接続(母方, 父方, i, ConnectionInfo.胸_肩左_接続, 要素構成, 接続構成, 変異率, 原種モード);
-    		頭D2.接続(母方, 父方, i, ConnectionInfo.頭_額_接続, 要素構成, 接続構成, 変異率, 原種モード);
+    		頭D2.接続(母方, 父方, i, ConnectionInfo.Head_額_接続, 要素構成, 接続構成, 変異率, 原種モード);
     		胸D2.接続(母方, 父方, i, ConnectionInfo.胸_翼上左_接続, 要素構成, 接続構成, 変異率, 原種モード);
     		胸D2.接続(母方, 父方, i, ConnectionInfo.胸_翼下左_接続, 要素構成, 接続構成, 変異率, 原種モード);
     		胴D2.接続(母方, 父方, i, ConnectionInfo.Torso_翼左_接続, 要素構成, 接続構成, 変異率, 原種モード);

@@ -1680,7 +1680,7 @@ namespace SlaveMatrix
 
     	public 拘束鎖 鎖5;
 
-    	public Ele[] 頭_接続;
+    	public Ele[] Head_接続;
 
     	public Ele[] 上腕左_接続;
 
@@ -6746,13 +6746,13 @@ namespace SlaveMatrix
     			表示 = false;
     		}
     		Ele f;
-    		if (e.頭_接続.Count > 0)
+    		if (e.Head_接続.Count > 0)
     		{
-    			頭_接続 = e.頭_接続.Select(delegate(EleD g)
+    			Head_接続 = e.Head_接続.Select(delegate(EleD g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 触手_犬2;
-    				f.ConnectionType = ConnectionInfo.触手_犬_頭_接続;
+    				f.ConnectionType = ConnectionInfo.触手_犬_Head_接続;
     				f.接続(触手_犬2.頭_接続点);
     				return f;
     			}).ToArray();

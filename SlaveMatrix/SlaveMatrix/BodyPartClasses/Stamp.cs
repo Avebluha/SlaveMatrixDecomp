@@ -96,7 +96,7 @@ namespace SlaveMatrix
     	{
     		if (e != null && !(e is 性器) && !(e is 肛門))
     		{
-    			return !(e is 首);
+    			return !(e is Neck);
     		}
     		return false;
     	}
@@ -105,7 +105,7 @@ namespace SlaveMatrix
     	{
     		if (e != null && !(e is 手_人) && !(e is 性器) && !(e is 肛門))
     		{
-    			return !(e is 首);
+    			return !(e is Neck);
     		}
     		return false;
     	}

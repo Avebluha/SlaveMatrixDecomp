@@ -302,7 +302,7 @@ namespace SlaveMatrix
     				}
     				else if (Xasix)
     				{
-    					if (this is 頭 || this is 目隠帯 || this is 玉口枷)
+    					if (this is Head || this is 目隠帯 || this is 玉口枷)
     					{
     						item.OP.ExpansionX(item.OP.GetCenter(), rate);
     					}
@@ -311,7 +311,7 @@ namespace SlaveMatrix
     						item.SizeXBase *= num;
     					}
     				}
-    				else if (this is 頭 || this is 目隠帯 || this is 玉口枷)
+    				else if (this is Head || this is 目隠帯 || this is 玉口枷)
     				{
     					item.OP.ExpansionY(item.OP.GetCenter(), rate);
     				}
@@ -336,9 +336,9 @@ namespace SlaveMatrix
     			double num = 身長mi2 + 身長d2 * 身長_;
     			foreach (Par item in 本体.EnumAllPar())
     			{
-    				if (!item.Parent.Tag.Contains("眼") && !item.Parent.Tag.Contains("コア") && !item.Tag.Contains("傷") && !item.Tag.Contains("ボタン") && !item.Parent.Tag.Contains("輪") && !item.Tag.Contains("吸盤") && !(this is 膣基) && !(this is 膣内精液) && !(this is 断面) && !(this is 性器) && !(this is 肛門) && !(this is 乳房) && !(this is 下着トップ) && !(this is Waist) && !(this is 腰肌) && !(this is 四足腰) && !(this is 下着ボトム) && !(this is 上着ボトム) && !(this is 手) && !(this is 噴乳) && !(this is 飛沫) && !(this is 潮吹_小) && !(this is 潮吹_大) && !(this is 放尿) && !(this is 頭) && !(this is 目隠帯) && !(this is 玉口枷) && !(this is 半身) && !(this is 頭頂) && !(this is 背中_光) && !(this is ボテ腹))
+    				if (!item.Parent.Tag.Contains("眼") && !item.Parent.Tag.Contains("コア") && !item.Tag.Contains("傷") && !item.Tag.Contains("ボタン") && !item.Parent.Tag.Contains("輪") && !item.Tag.Contains("吸盤") && !(this is 膣基) && !(this is 膣内精液) && !(this is 断面) && !(this is 性器) && !(this is 肛門) && !(this is 乳房) && !(this is 下着トップ) && !(this is Waist) && !(this is 腰肌) && !(this is 四足腰) && !(this is 下着ボトム) && !(this is 上着ボトム) && !(this is 手) && !(this is 噴乳) && !(this is 飛沫) && !(this is 潮吹_小) && !(this is 潮吹_大) && !(this is 放尿) && !(this is Head) && !(this is 目隠帯) && !(this is 玉口枷) && !(this is 半身) && !(this is 頭頂) && !(this is 背中_光) && !(this is ボテ腹))
     				{
-    					if (this is 頭 || this is 目隠帯 || this is 玉口枷)
+    					if (this is Head || this is 目隠帯 || this is 玉口枷)
     					{
     						if (num < 1.0)
     						{
@@ -542,40 +542,40 @@ namespace SlaveMatrix
 
     	public int 描画前後 => ConnectionType switch
     	{
-    		ConnectionInfo.頭_基髪_接続 => 1, 
-    		ConnectionInfo.頭_目左_接続 => 1, 
-    		ConnectionInfo.頭_目右_接続 => 1, 
-    		ConnectionInfo.頭_鼻_接続 => 1, 
-    		ConnectionInfo.頭_口_接続 => 1, 
-    		ConnectionInfo.頭_頬左_接続 => 1, 
-    		ConnectionInfo.頭_頬右_接続 => 1, 
-    		ConnectionInfo.頭_額_接続 => 1, 
-    		ConnectionInfo.頭_眉左_接続 => 1, 
-    		ConnectionInfo.頭_眉右_接続 => 1, 
-    		ConnectionInfo.頭_耳左_接続 => 1, 
-    		ConnectionInfo.頭_耳右_接続 => 1, 
-    		ConnectionInfo.頭_鼻肌_接続 => 1, 
-    		ConnectionInfo.頭_単眼目_接続 => 1, 
-    		ConnectionInfo.頭_単眼眉_接続 => 1, 
-    		ConnectionInfo.頭_頬肌左_接続 => 1, 
-    		ConnectionInfo.頭_頬肌右_接続 => 1, 
-    		ConnectionInfo.頭_触覚左_接続 => 1, 
-    		ConnectionInfo.頭_触覚右_接続 => 1, 
+    		ConnectionInfo.Head_基髪_接続 => 1, 
+    		ConnectionInfo.Head_目左_接続 => 1, 
+    		ConnectionInfo.Head_目右_接続 => 1, 
+    		ConnectionInfo.Head_鼻_接続 => 1, 
+    		ConnectionInfo.Head_口_接続 => 1, 
+    		ConnectionInfo.Head_頬左_接続 => 1, 
+    		ConnectionInfo.Head_頬右_接続 => 1, 
+    		ConnectionInfo.Head_額_接続 => 1, 
+    		ConnectionInfo.Head_眉左_接続 => 1, 
+    		ConnectionInfo.Head_眉右_接続 => 1, 
+    		ConnectionInfo.Head_耳左_接続 => 1, 
+    		ConnectionInfo.Head_耳右_接続 => 1, 
+    		ConnectionInfo.Head_鼻肌_接続 => 1, 
+    		ConnectionInfo.Head_単眼目_接続 => 1, 
+    		ConnectionInfo.Head_単眼眉_接続 => 1, 
+    		ConnectionInfo.Head_頬肌左_接続 => 1, 
+    		ConnectionInfo.Head_頬肌右_接続 => 1, 
+    		ConnectionInfo.Head_触覚左_接続 => 1, 
+    		ConnectionInfo.Head_触覚右_接続 => 1, 
     		ConnectionInfo.基髪_頭頂左_接続 => 1, 
     		ConnectionInfo.基髪_頭頂右_接続 => 1, 
     		ConnectionInfo.基髪_前髪_接続 => 1, 
     		ConnectionInfo.基髪_後髪_接続 => 0, 
-    		ConnectionInfo.後髪0_肢系_左5_接続 => 1, 
-    		ConnectionInfo.後髪0_肢系_左4_接続 => 1, 
-    		ConnectionInfo.後髪0_肢系_左3_接続 => 1, 
-    		ConnectionInfo.後髪0_肢系_左2_接続 => 1, 
-    		ConnectionInfo.後髪0_肢系_左1_接続 => 1, 
-    		ConnectionInfo.後髪0_肢系_中央_接続 => 1, 
-    		ConnectionInfo.後髪0_肢系_右1_接続 => 1, 
-    		ConnectionInfo.後髪0_肢系_右2_接続 => 1, 
-    		ConnectionInfo.後髪0_肢系_右3_接続 => 1, 
-    		ConnectionInfo.後髪0_肢系_右4_接続 => 1, 
-    		ConnectionInfo.後髪0_肢系_右5_接続 => 1, 
+    		ConnectionInfo.BackHair0_肢系_左5_接続 => 1, 
+    		ConnectionInfo.BackHair0_肢系_左4_接続 => 1, 
+    		ConnectionInfo.BackHair0_肢系_左3_接続 => 1, 
+    		ConnectionInfo.BackHair0_肢系_左2_接続 => 1, 
+    		ConnectionInfo.BackHair0_肢系_左1_接続 => 1, 
+    		ConnectionInfo.BackHair0_肢系_中央_接続 => 1, 
+    		ConnectionInfo.BackHair0_肢系_右1_接続 => 1, 
+    		ConnectionInfo.BackHair0_肢系_右2_接続 => 1, 
+    		ConnectionInfo.BackHair0_肢系_右3_接続 => 1, 
+    		ConnectionInfo.BackHair0_肢系_右4_接続 => 1, 
+    		ConnectionInfo.BackHair0_肢系_右5_接続 => 1, 
     		ConnectionInfo.横髪_肢系_肢_接続 => 1, 
     		ConnectionInfo.双目_瞼_接続 => 1, 
     		ConnectionInfo.瞼_宇_涙_接続 => 1, 
@@ -586,8 +586,8 @@ namespace SlaveMatrix
     		ConnectionInfo.鼻_人_鼻水右_接続 => 1, 
     		ConnectionInfo.鼻_獣_鼻水左_接続 => 1, 
     		ConnectionInfo.鼻_獣_鼻水右_接続 => 1, 
-    		ConnectionInfo.首_頭_接続 => 1, 
-    		ConnectionInfo.胸_首_接続 => 1, 
+    		ConnectionInfo.Neck_Head_接続 => 1, 
+    		ConnectionInfo.胸_Neck_接続 => 1, 
     		ConnectionInfo.胸_肩左_接続 => 1, 
     		ConnectionInfo.胸_肩右_接続 => 1, 
     		ConnectionInfo.胸_胸左_接続 => 1, 
@@ -788,7 +788,7 @@ namespace SlaveMatrix
     		ConnectionInfo.前翅_甲_軸1_接続 => 1, 
     		ConnectionInfo.前翅_甲_軸2_接続 => 1, 
     		ConnectionInfo.前翅_甲_軸3_接続 => 1, 
-    		ConnectionInfo.触手_犬_頭_接続 => 1, 
+    		ConnectionInfo.触手_犬_Head_接続 => 1, 
     		ConnectionInfo.触手_犬_上腕左_接続 => 1, 
     		ConnectionInfo.触手_犬_上腕右_接続 => 1, 
     		ConnectionInfo.触手_犬_下腕左_接続 => 1, 

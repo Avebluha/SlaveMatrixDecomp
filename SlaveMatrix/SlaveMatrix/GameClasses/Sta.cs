@@ -16,9 +16,9 @@ namespace SlaveMatrix
 {
     public static class Sta
     {
-    	public static Obj 胴体;
+    	public static Obj 胴体; //胴体
 
-    	public static Obj 肩左;
+        public static Obj 肩左;
 
     	public static Obj 腕左;
 
@@ -1086,9 +1086,6 @@ namespace SlaveMatrix
     	{
             var obj = Resources.胴体.ObjLoad();
             obj.MigrateKeys();
-
-            var tmp = obj["Torso"];
-
             胴体 = obj;
 
     		//胴体.SaveExMod("C:\\Users\\dave\\Documents\\胴体");
@@ -1172,11 +1169,11 @@ namespace SlaveMatrix
     		上腕_人t = typeof(上腕_人);
     		上腕_鳥t = typeof(上腕_鳥);
     		長物_鯨t = typeof(長物_鯨);
-    		後髪0_ジグDt = typeof(後髪0_ジグD);
-    		後髪0_ハネDt = typeof(後髪0_ハネD);
-    		後髪0_パツDt = typeof(後髪0_パツD);
-    		後髪0_カルDt = typeof(後髪0_カルD);
-    		後髪0_肢系Dt = typeof(後髪0_肢系D);
+    		後髪0_ジグDt = typeof(BackHair0_ジグD);
+    		後髪0_ハネDt = typeof(BackHair0_ハネD);
+    		後髪0_パツDt = typeof(BackHair0_パツD);
+    		後髪0_カルDt = typeof(BackHair0_カルD);
+    		後髪0_肢系Dt = typeof(BackHair0_肢系D);
     		耳_人Dt = typeof(耳_人D);
     		耳_尖Dt = typeof(耳_尖D);
     		耳_長Dt = typeof(耳_長D);
@@ -1319,24 +1316,24 @@ namespace SlaveMatrix
     		左右無し = new HashSet<ConnectionInfo>(new ConnectionInfo[67]
     		{
     			ConnectionInfo.none,
-    			ConnectionInfo.頭_基髪_接続,
-    			ConnectionInfo.頭_鼻_接続,
-    			ConnectionInfo.頭_口_接続,
-    			ConnectionInfo.頭_額_接続,
-    			ConnectionInfo.頭_鼻肌_接続,
-    			ConnectionInfo.頭_単眼目_接続,
-    			ConnectionInfo.頭_単眼眉_接続,
-    			ConnectionInfo.頭_大顎基_接続,
-    			ConnectionInfo.頭_顔面_接続,
-    			ConnectionInfo.頭_頭頂_接続,
+    			ConnectionInfo.Head_基髪_接続,
+    			ConnectionInfo.Head_鼻_接続,
+    			ConnectionInfo.Head_口_接続,
+    			ConnectionInfo.Head_額_接続,
+    			ConnectionInfo.Head_鼻肌_接続,
+    			ConnectionInfo.Head_単眼目_接続,
+    			ConnectionInfo.Head_単眼眉_接続,
+    			ConnectionInfo.Head_大顎基_接続,
+    			ConnectionInfo.Head_顔面_接続,
+    			ConnectionInfo.Head_頭頂_接続,
     			ConnectionInfo.基髪_前髪_接続,
     			ConnectionInfo.基髪_後髪_接続,
-    			ConnectionInfo.後髪0_肢系_中央_接続,
+    			ConnectionInfo.BackHair0_肢系_中央_接続,
     			ConnectionInfo.単目_瞼_接続,
     			ConnectionInfo.縦目_瞼_接続,
     			ConnectionInfo.吹出し_吹出し_接続,
-    			ConnectionInfo.首_頭_接続,
-    			ConnectionInfo.胸_首_接続,
+    			ConnectionInfo.Neck_Head_接続,
+    			ConnectionInfo.胸_Neck_接続,
     			ConnectionInfo.胸_肌_接続,
     			ConnectionInfo.胸_背中_接続,
     			ConnectionInfo.Torso_胸_接続,

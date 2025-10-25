@@ -4,9 +4,9 @@ namespace SlaveMatrix
 {
     public static class Uni
     {
-    	public static 頭D 頭()
+    	public static HeadD 頭()
     	{
-    		頭D obj = new 頭D();
+    		HeadD obj = new HeadD();
     		obj.基髪接続(new 基髪D());
     		obj.目左接続(new 目傷D());
     		obj.目右接続(new 目傷D

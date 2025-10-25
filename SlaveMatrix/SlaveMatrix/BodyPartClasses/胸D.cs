@@ -133,7 +133,7 @@ namespace SlaveMatrix
 
     	public double ハイライト濃度 = 1.0;
 
-    	public List<EleD> 首_接続 = new List<EleD>();
+    	public List<EleD> Neck_接続 = new List<EleD>();
 
     	public List<EleD> 肩左_接続 = new List<EleD>();
 
@@ -162,9 +162,9 @@ namespace SlaveMatrix
 
     	public void 首接続(EleD e)
     	{
-    		首_接続.Add(e);
+    		Neck_接続.Add(e);
     		e.Par = this;
-    		e.接続情報 = ConnectionInfo.胸_首_接続;
+    		e.接続情報 = ConnectionInfo.胸_Neck_接続;
     	}
 
     	public void 肩左接続(EleD e)

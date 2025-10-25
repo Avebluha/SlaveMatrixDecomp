@@ -1,6 +1,6 @@
 namespace SlaveMatrix
 {
-    public class サイド : 後髪1
+    public class サイド : BackHair1
     {
     }
 }
