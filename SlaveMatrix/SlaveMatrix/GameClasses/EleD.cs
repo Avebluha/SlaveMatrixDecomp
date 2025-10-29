@@ -1,8 +1,9 @@
+using _2DGAMELIB;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using _2DGAMELIB;
+using System.Runtime.Serialization;
 
 namespace SlaveMatrix
 {
@@ -73,11 +74,21 @@ namespace SlaveMatrix
 
     	public double 濃度 = 1.0;
 
-    	//TODO this broke loading saves
+        //TODO this broke loading saves
         [NonSerialized]
         public Type ThisType;
 
-    	public virtual Ele GetEle(double DisUnit, Med Med, 体配色 体配色)
+        //Some how fixes saves (thx GPT) 
+
+        //So how I am understend it (description)
+        //This Type is empty on deserialization because Type is not serializable
+        //We need just init it after deserialization
+
+        [OnDeserialized]
+        private void OnDeserialized(StreamingContext _) => ThisType = GetType();
+
+
+        public virtual Ele GetEle(double DisUnit, Med Med, 体配色 体配色)
     	{
     		return null;
     	}
