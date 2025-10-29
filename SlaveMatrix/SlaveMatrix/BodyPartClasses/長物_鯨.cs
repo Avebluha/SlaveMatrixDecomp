@@ -891,7 +891,7 @@ namespace SlaveMatrix
     		X0Y0_胴6_柄 = pars2["柄"].ToPar();
     		X0Y0_胴6_縦影 = pars2["縦影"].ToPar();
     		pars2 = pars["胴5"].ToPars();
-    		X0Y0_胴5_胴 = pars2["Torso"].ToPar();
+    		X0Y0_胴5_胴 = pars2["胴"].ToPar();
     		X0Y0_胴5_柄 = pars2["柄"].ToPar();
     		X0Y0_胴5_縦影 = pars2["縦影"].ToPar();
     		pars2 = pars["輪2"].ToPars();
