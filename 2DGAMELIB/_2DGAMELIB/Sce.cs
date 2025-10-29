@@ -17,7 +17,7 @@ namespace _2DGAMELIB
 
     	private int h;
 
-    	private Rectangle r;
+    	private System.Drawing.Rectangle r;
 
     	private ColorMatrix cm = new ColorMatrix();
 
@@ -31,7 +31,7 @@ namespace _2DGAMELIB
     		GS = Graphics.FromImage(Start);
     		End = new Bitmap(w, h);
     		GE = Graphics.FromImage(End);
-    		r = new Rectangle(0, 0, w, h);
+            r = new System.Drawing.Rectangle(0, 0, w, h);
     	}
 
     	public void TransformAlpha(Graphics Graphics, double Rate)

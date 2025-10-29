@@ -43,9 +43,9 @@ namespace _2DGAMELIB
     		return Func(new Hsv(ref Color)).GetColor();
     	}
 
-    	public static Rectangle GetRect(this Bitmap Bmp)
+    	public static System.Drawing.Rectangle GetRect(this Bitmap Bmp)
     	{
-    		return new Rectangle(0, 0, Bmp.Width, Bmp.Height);
+    		return new System.Drawing.Rectangle(0, 0, Bmp.Width, Bmp.Height);
     	}
 
     	public static LinearGradientBrush GetLGB(double Unit, Vector2D[] MM, Color Color1, Color Color2)
