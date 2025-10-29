@@ -1,8 +1,9 @@
+using _2DGAMELIB;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using _2DGAMELIB;
+using System.Runtime.Serialization;
 
 namespace SlaveMatrix
 {
@@ -73,11 +74,29 @@ namespace SlaveMatrix
 
     	public double 濃度 = 1.0;
 
-    	//TODO this broke loading saves
+        //TODO this broke loading saves
         [NonSerialized]
         public Type ThisType;
 
-    	public virtual Ele GetEle(double DisUnit, Med Med, 体配色 体配色)
+        // Храним только имя типа (можно AQN)
+        [OptionalField] private string _thisTypeName;
+
+        [OnSerializing]
+        private void OnSerializing(StreamingContext _)
+        {
+            _thisTypeName = ThisType?.AssemblyQualifiedName
+                            ?? GetType().AssemblyQualifiedName;
+        }
+
+        [OnDeserialized]
+        private void OnDeserialized(StreamingContext _)
+        {
+            ThisType = _thisTypeName != null
+                ? Type.GetType(_thisTypeName, throwOnError: false) ?? GetType()
+                : GetType();
+        }
+
+        public virtual Ele GetEle(double DisUnit, Med Med, 体配色 体配色)
     	{
     		return null;
     	}
