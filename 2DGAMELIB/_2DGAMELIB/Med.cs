@@ -21,7 +21,7 @@ namespace _2DGAMELIB
         public bool ShowFPS;
         public bool Drive = true;
 
-        public Rect Base = new Rect(4.0, 3.0, 0.4);
+        public Rectangle Base = new Rectangle(4.0, 3.0, 0.4);
 
         public Bitmap Dis;
         public Graphics GD;

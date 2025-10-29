@@ -1,6 +1,6 @@
 namespace _2DGAMELIB
 {
-    public class Rect
+    public class Rectangle
     {
     	public double XRatio = 1.0;
 
@@ -14,9 +14,9 @@ namespace _2DGAMELIB
 
     	public Vector2D LocalCenter => new Vector2D(LocalWidth * 0.5, LocalHeight * 0.5);
 
-    	public Rect(){}
+    	public Rectangle(){}
 
-    	public Rect(double XRatio, double YRatio, double Size)
+    	public Rectangle(double XRatio, double YRatio, double Size)
     	{
     		SetXYRatio(XRatio, YRatio);
     		this.Size = Size;

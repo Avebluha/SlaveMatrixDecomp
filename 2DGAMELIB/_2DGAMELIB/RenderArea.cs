@@ -5,7 +5,7 @@ using System.Drawing.Imaging;
 namespace _2DGAMELIB
 {
     //Render Area
-    public class RenderArea : Rect
+    public class RenderArea : Rectangle
     {
         //Display Layer
     	public Bitmap DisplayLayer;
