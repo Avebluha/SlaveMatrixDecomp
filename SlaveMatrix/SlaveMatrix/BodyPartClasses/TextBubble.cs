@@ -132,11 +132,23 @@ namespace SlaveMatrix
     				},
     				Runing = delegate(Mot m)
     				{
-    					v = m.Value.Inverse();
-    					吹出し.X0Y0_吹出し.PenColor = Color.FromArgb((int)((double)pa * v), 吹出し.X0Y0_吹出し.PenColor);
-    					吹出し.X0Y0_吹出し.BrushColor = Color.FromArgb((int)((double)ba * v), 吹出し.X0Y0_吹出し.BrushColor);
-    					Tex.ParT.TextColor = Color.FromArgb((int)((double)ta * v), Tex.ParT.TextColor);
-    					Tex.ParT.ShadColor = Color.FromArgb((int)((double)sa * v), Tex.ParT.ShadColor);
+                        //After full training slave if i tried to train again game crahes here :3
+                        v = (m.Value >= 0) ? m.Value : m.Value.Inverse();
+
+                        var penAlpha = (int)((double)pa * v);
+                        var brushAlpha = (int)((double)ba * v);
+                        var textAlpha = (int)((double)ta * v);
+                        var shadeAlpha = (int)((double)sa * v);
+
+                        var correctPenAlpha = (penAlpha > 255) ? 255 : penAlpha;
+                        var correctBrushAlpha = (brushAlpha > 255) ? 255 : brushAlpha;
+                        var correctTextAlpha = (textAlpha > 255) ? 255 : textAlpha;
+                        var correctShadeAlpha = (shadeAlpha > 255) ? 255 : shadeAlpha; 
+
+                        吹出し.X0Y0_吹出し.PenColor = Color.FromArgb(correctPenAlpha, 吹出し.X0Y0_吹出し.PenColor);
+    					吹出し.X0Y0_吹出し.BrushColor = Color.FromArgb(correctBrushAlpha, 吹出し.X0Y0_吹出し.BrushColor);
+    					Tex.ParT.TextColor = Color.FromArgb(correctTextAlpha, Tex.ParT.TextColor);
+    					Tex.ParT.ShadColor = Color.FromArgb(correctShadeAlpha, Tex.ParT.ShadColor);
     				},
     				Reaing = delegate(Mot m)
     				{
