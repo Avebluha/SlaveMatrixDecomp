@@ -384,14 +384,14 @@ namespace SlaveMatrix
     		{
     			表示 = false;
     		}
-    		if (e.脚_接続.Count > 0)
+    		if (e.Leg_接続.Count > 0)
     		{
     			Ele f;
-    			脚_接続 = e.脚_接続.Select(delegate(EleD g)
+    			Leg_接続 = e.Leg_接続.Select(delegate(EleD g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 腿_竜2;
-    				f.ConnectionType = ConnectionInfo.腿_竜_脚_接続;
+    				f.ConnectionType = ConnectionInfo.腿_竜_Leg_接続;
     				f.接続(腿_竜2.脚_接続点);
     				return f;
     			}).ToArray();

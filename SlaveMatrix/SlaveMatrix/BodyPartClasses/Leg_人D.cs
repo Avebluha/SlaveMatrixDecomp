@@ -5,9 +5,9 @@ using _2DGAMELIB;
 namespace SlaveMatrix
 {
     [Serializable]
-    public class 脚_人D : 脚D
+    public class Leg_人D : LegD
     {
-    	public bool 脚_表示 = true;
+    	public bool Leg_表示 = true;
 
     	public bool 筋_表示;
 
@@ -443,7 +443,7 @@ namespace SlaveMatrix
 
     	public List<EleD> 脚輪上_接続 = new List<EleD>();
 
-    	public 脚_人D()
+    	public Leg_人D()
     	{
     		ThisType = GetType();
     	}
@@ -452,26 +452,26 @@ namespace SlaveMatrix
     	{
     		足_接続.Add(e);
     		e.Par = this;
-    		e.接続情報 = ConnectionInfo.脚_人_足_接続;
+    		e.接続情報 = ConnectionInfo.Leg_人_足_接続;
     	}
 
     	public void 脚輪下接続(EleD e)
     	{
     		脚輪下_接続.Add(e);
     		e.Par = this;
-    		e.接続情報 = ConnectionInfo.脚_人_脚輪下_接続;
+    		e.接続情報 = ConnectionInfo.Leg_人_脚輪下_接続;
     	}
 
     	public void 脚輪上接続(EleD e)
     	{
     		脚輪上_接続.Add(e);
     		e.Par = this;
-    		e.接続情報 = ConnectionInfo.脚_人_脚輪上_接続;
+    		e.接続情報 = ConnectionInfo.Leg_人_脚輪上_接続;
     	}
 
     	public override Ele GetEle(double DisUnit, Med Med, 体配色 体配色)
     	{
-    		return new 脚_人(DisUnit, 配色指定, 体配色, Med, this);
+    		return new Leg_人(DisUnit, 配色指定, 体配色, Med, this);
     	}
     }
 }

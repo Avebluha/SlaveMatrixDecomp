@@ -5629,12 +5629,12 @@ namespace SlaveMatrix
     		脚人2.腿.SetAngle0();
     		脚人2.腿.尺度YC = 腿尺度YC;
     		脚人2.腿.角度B += 腿角度B + u1;
-    		if (脚人2.脚 != null)
+    		if (脚人2.Leg != null)
     		{
-    			脚人2.脚.SetAngle0();
-    			脚人2.脚.角度B = 0.0 - 脚人2.腿.角度B;
-    			脚人2.脚.尺度YC = 脚尺度YC;
-    			脚人2.脚.角度B += 脚角度B + u2;
+    			脚人2.Leg.SetAngle0();
+    			脚人2.Leg.角度B = 0.0 - 脚人2.腿.角度B;
+    			脚人2.Leg.尺度YC = 脚尺度YC;
+    			脚人2.Leg.角度B += 脚角度B + u2;
     			if (脚人2.足 != null)
     			{
     				脚人2.足.SetAngle0();
@@ -5651,12 +5651,12 @@ namespace SlaveMatrix
     		脚人2.腿.SetAngle0();
     		脚人2.腿.尺度YC = 腿尺度YC;
     		脚人2.腿.角度B += 0.0 - 腿角度B + (0.0 - u1);
-    		if (脚人2.脚 != null)
+    		if (脚人2.Leg != null)
     		{
-    			脚人2.脚.SetAngle0();
-    			脚人2.脚.角度B = 0.0 - 脚人2.腿.角度B;
-    			脚人2.脚.尺度YC = 脚尺度YC;
-    			脚人2.脚.角度B += 0.0 - 脚角度B + (0.0 - u2);
+    			脚人2.Leg.SetAngle0();
+    			脚人2.Leg.角度B = 0.0 - 脚人2.腿.角度B;
+    			脚人2.Leg.尺度YC = 脚尺度YC;
+    			脚人2.Leg.角度B += 0.0 - 脚角度B + (0.0 - u2);
     			if (脚人2.足 != null)
     			{
     				脚人2.足.SetAngle0();
@@ -5667,121 +5667,121 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public static void 脚_人_上開き左(this Cha Cha, int n, double u1, double u2, double u3)
+    	public static void Leg_人_上開き左(this Cha Cha, int n, double u1, double u2, double u3)
     	{
     		Cha.Bod.左腿開きi = 3;
     		Cha.脚_人左(n, u1, u2, u3, 0.0, 5.0, 0.0, 1.0, 1.0, 1.0);
     	}
 
-    	public static void 脚_人_上開き右(this Cha Cha, int n, double u1, double u2, double u3)
+    	public static void Leg_人_上開き右(this Cha Cha, int n, double u1, double u2, double u3)
     	{
     		Cha.Bod.右腿開きi = 3;
     		Cha.脚_人右(n, u1, u2, u3, 0.0, 5.0, 0.0, 1.0, 1.0, 1.0);
     	}
 
-    	public static void 脚_人_上閉じ左(this Cha Cha, int n, double u1, double u2, double u3)
+    	public static void Leg_人_上閉じ左(this Cha Cha, int n, double u1, double u2, double u3)
     	{
     		Cha.Bod.左腿開きi = 4;
     		Cha.脚_人左(n, u1, u2, u3, 3.0, 0.0, 0.0, 1.0, 1.0, 1.0);
     	}
 
-    	public static void 脚_人_上閉じ右(this Cha Cha, int n, double u1, double u2, double u3)
+    	public static void Leg_人_上閉じ右(this Cha Cha, int n, double u1, double u2, double u3)
     	{
     		Cha.Bod.右腿開きi = 4;
     		Cha.脚_人右(n, u1, u2, u3, 3.0, 0.0, 0.0, 1.0, 1.0, 1.0);
     	}
 
-    	public static void 脚_人_上閉じ内左(this Cha Cha, int n, double u1, double u2, double u3)
+    	public static void Leg_人_上閉じ内左(this Cha Cha, int n, double u1, double u2, double u3)
     	{
     		Cha.Bod.左腿開きi = 4;
     		Cha.脚_人左(n, u1, u2, u3, 3.0, 10.0, -15.0, 1.0, 1.0, 1.0);
     	}
 
-    	public static void 脚_人_上閉じ内右(this Cha Cha, int n, double u1, double u2, double u3)
+    	public static void Leg_人_上閉じ内右(this Cha Cha, int n, double u1, double u2, double u3)
     	{
     		Cha.Bod.右腿開きi = 4;
     		Cha.脚_人右(n, u1, u2, u3, 3.0, 10.0, -15.0, 1.0, 1.0, 1.0);
     	}
 
-    	public static void 脚_人_脱力左(this Cha Cha, int n, double u1, double u2, double u3)
+    	public static void Leg_人_脱力左(this Cha Cha, int n, double u1, double u2, double u3)
     	{
     		Cha.Bod.左腿開きi = 1;
     		Cha.脚_人左(n, u1, u2, u3, 0.0, -5.0, 0.0, 1.0, 1.0, 1.0);
     	}
 
-    	public static void 脚_人_脱力右(this Cha Cha, int n, double u1, double u2, double u3)
+    	public static void Leg_人_脱力右(this Cha Cha, int n, double u1, double u2, double u3)
     	{
     		Cha.Bod.右腿開きi = 1;
     		Cha.脚_人右(n, u1, u2, u3, 0.0, -5.0, 0.0, 1.0, 1.0, 1.0);
     	}
 
-    	public static void 脚_人_内股左(this Cha Cha, int n, double u1, double u2, double u3)
+    	public static void Leg_人_内股左(this Cha Cha, int n, double u1, double u2, double u3)
     	{
     		Cha.Bod.左腿開きi = 0;
     		Cha.脚_人左(n, u1, u2, u3, -5.0, 15.0, 0.0, 1.0, 1.0, 1.0);
     	}
 
-    	public static void 脚_人_内股右(this Cha Cha, int n, double u1, double u2, double u3)
+    	public static void Leg_人_内股右(this Cha Cha, int n, double u1, double u2, double u3)
     	{
     		Cha.Bod.右腿開きi = 0;
     		Cha.脚_人右(n, u1, u2, u3, -5.0, 15.0, 0.0, 1.0, 1.0, 1.0);
     	}
 
-    	public static void 脚_人_直立左(this Cha Cha, int n, double u1, double u2, double u3)
+    	public static void Leg_人_直立左(this Cha Cha, int n, double u1, double u2, double u3)
     	{
     		Cha.Bod.左腿開きi = 0;
     		Cha.脚_人左(n, u1, u2, u3, 0.0, 0.0, 0.0, 1.0, 1.0, 1.0);
     	}
 
-    	public static void 脚_人_直立右(this Cha Cha, int n, double u1, double u2, double u3)
+    	public static void Leg_人_直立右(this Cha Cha, int n, double u1, double u2, double u3)
     	{
     		Cha.Bod.右腿開きi = 0;
     		Cha.脚_人右(n, u1, u2, u3, 0.0, 0.0, 0.0, 1.0, 1.0, 1.0);
     	}
 
-    	public static void 脚_人_がに股左(this Cha Cha, int n, double u1, double u2, double u3)
+    	public static void Leg_人_がに股左(this Cha Cha, int n, double u1, double u2, double u3)
     	{
     		Cha.Bod.左腿開きi = 2;
     		Cha.脚_人左(n, u1, u2, u3, 0.0, -10.0, 0.0, 1.0, 1.0, 1.0);
     	}
 
-    	public static void 脚_人_がに股右(this Cha Cha, int n, double u1, double u2, double u3)
+    	public static void Leg_人_がに股右(this Cha Cha, int n, double u1, double u2, double u3)
     	{
     		Cha.Bod.右腿開きi = 2;
     		Cha.脚_人右(n, u1, u2, u3, 0.0, -10.0, 0.0, 1.0, 1.0, 1.0);
     	}
 
-    	public static void 脚_人_おっぴろげ左(this Cha Cha, int n, double u1, double u2, double u3)
+    	public static void Leg_人_おっぴろげ左(this Cha Cha, int n, double u1, double u2, double u3)
     	{
     		Cha.Bod.左腿開きi = 2;
     		Cha.脚_人左(n, u1, u2, u3, 10.0, 10.0, 0.0, 1.0, 1.0, 1.0);
     	}
 
-    	public static void 脚_人_おっぴろげ右(this Cha Cha, int n, double u1, double u2, double u3)
+    	public static void Leg_人_おっぴろげ右(this Cha Cha, int n, double u1, double u2, double u3)
     	{
     		Cha.Bod.右腿開きi = 2;
     		Cha.脚_人右(n, u1, u2, u3, 10.0, 10.0, 0.0, 1.0, 1.0, 1.0);
     	}
 
-    	public static void 脚_人_M字開脚左(this Cha Cha, int n, double u1, double u2, double u3)
+    	public static void Leg_人_M字開脚左(this Cha Cha, int n, double u1, double u2, double u3)
     	{
     		Cha.Bod.左腿開きi = 3;
     		Cha.脚_人左(n, u1, u2, u3, -10.0, 10.0, 0.0, 1.0, 1.0, 1.0);
     	}
 
-    	public static void 脚_人_M字開脚右(this Cha Cha, int n, double u1, double u2, double u3)
+    	public static void Leg_人_M字開脚右(this Cha Cha, int n, double u1, double u2, double u3)
     	{
     		Cha.Bod.右腿開きi = 3;
     		Cha.脚_人右(n, u1, u2, u3, -10.0, 10.0, 0.0, 1.0, 1.0, 1.0);
     	}
 
-    	public static void 脚_人_足コキ左(this Cha Cha, int n, double u1, double u2, double u3)
+    	public static void Leg_人_足コキ左(this Cha Cha, int n, double u1, double u2, double u3)
     	{
     		Cha.Bod.左腿開きi = 2;
     		Cha.脚_人左(n, u1, u2, u3, -23.0, -68.0, 47.0, 1.0, 1.0, 1.0);
     	}
 
-    	public static void 脚_人_足コキ右(this Cha Cha, int n, double u1, double u2, double u3)
+    	public static void Leg_人_足コキ右(this Cha Cha, int n, double u1, double u2, double u3)
     	{
     		Cha.Bod.右腿開きi = 2;
     		Cha.脚_人右(n, u1, u2, u3, -23.0, -68.0, 47.0, 1.0, 1.0, 1.0);
@@ -5793,8 +5793,8 @@ namespace SlaveMatrix
     		double u2 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
     		double u3 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
     		Cha.Bod.腿開きi = 2;
-    		Cha.脚_人_足コキ左(n, u, u2, u3);
-    		Cha.脚_人_足コキ右(n, u, u2, u3);
+    		Cha.Leg_人_足コキ左(n, u, u2, u3);
+    		Cha.Leg_人_足コキ右(n, u, u2, u3);
     	}
 
     	public static void 両脚人_0(this Cha Cha, int n, bool 同角, int i1, int i2)
@@ -5848,34 +5848,34 @@ namespace SlaveMatrix
     		switch (i)
     		{
     		case 0:
-    			c.脚_人_上開き左(n, u1, u2, u3);
+    			c.Leg_人_上開き左(n, u1, u2, u3);
     			break;
     		case 1:
-    			c.脚_人_上閉じ左(n, u1, u2, u3);
+    			c.Leg_人_上閉じ左(n, u1, u2, u3);
     			break;
     		case 2:
-    			c.脚_人_上閉じ内左(n, u1, u2, u3);
+    			c.Leg_人_上閉じ内左(n, u1, u2, u3);
     			break;
     		case 3:
-    			c.脚_人_脱力左(n, u1, u2, u3);
+    			c.Leg_人_脱力左(n, u1, u2, u3);
     			break;
     		case 4:
-    			c.脚_人_内股左(n, u1, u2, u3);
+    			c.Leg_人_内股左(n, u1, u2, u3);
     			break;
     		case 5:
-    			c.脚_人_直立左(n, u1, u2, u3);
+    			c.Leg_人_直立左(n, u1, u2, u3);
     			break;
     		case 6:
-    			c.脚_人_がに股左(n, u1, u2, u3);
+    			c.Leg_人_がに股左(n, u1, u2, u3);
     			break;
     		case 7:
-    			c.脚_人_おっぴろげ左(n, u1, u2, u3);
+    			c.Leg_人_おっぴろげ左(n, u1, u2, u3);
     			break;
     		case 8:
-    			c.脚_人_M字開脚左(n, u1, u2, u3);
+    			c.Leg_人_M字開脚左(n, u1, u2, u3);
     			break;
     		case 9:
-    			c.脚_人_足コキ左(n, u1, u2, u3);
+    			c.Leg_人_足コキ左(n, u1, u2, u3);
     			break;
     		}
     	}
@@ -5885,34 +5885,34 @@ namespace SlaveMatrix
     		switch (i)
     		{
     		case 0:
-    			c.脚_人_上開き右(n, u1, u2, u3);
+    			c.Leg_人_上開き右(n, u1, u2, u3);
     			break;
     		case 1:
-    			c.脚_人_上閉じ右(n, u1, u2, u3);
+    			c.Leg_人_上閉じ右(n, u1, u2, u3);
     			break;
     		case 2:
-    			c.脚_人_上閉じ内右(n, u1, u2, u3);
+    			c.Leg_人_上閉じ内右(n, u1, u2, u3);
     			break;
     		case 3:
-    			c.脚_人_脱力右(n, u1, u2, u3);
+    			c.Leg_人_脱力右(n, u1, u2, u3);
     			break;
     		case 4:
-    			c.脚_人_内股右(n, u1, u2, u3);
+    			c.Leg_人_内股右(n, u1, u2, u3);
     			break;
     		case 5:
-    			c.脚_人_直立右(n, u1, u2, u3);
+    			c.Leg_人_直立右(n, u1, u2, u3);
     			break;
     		case 6:
-    			c.脚_人_がに股右(n, u1, u2, u3);
+    			c.Leg_人_がに股右(n, u1, u2, u3);
     			break;
     		case 7:
-    			c.脚_人_おっぴろげ右(n, u1, u2, u3);
+    			c.Leg_人_おっぴろげ右(n, u1, u2, u3);
     			break;
     		case 8:
-    			c.脚_人_M字開脚右(n, u1, u2, u3);
+    			c.Leg_人_M字開脚右(n, u1, u2, u3);
     			break;
     		case 9:
-    			c.脚_人_足コキ右(n, u1, u2, u3);
+    			c.Leg_人_足コキ右(n, u1, u2, u3);
     			break;
     		}
     	}
@@ -5922,9 +5922,9 @@ namespace SlaveMatrix
     		foreach (脚人 item in Cha.Bod.脚人左)
     		{
     			item.腿.角度C = a * RNG.XS.NextDouble();
-    			if (item.脚 != null)
+    			if (item.Leg != null)
     			{
-    				item.脚.角度C = a * RNG.XS.NextDouble();
+    				item.Leg.角度C = a * RNG.XS.NextDouble();
     				if (item.足 != null)
     				{
     					item.足.角度C = a * RNG.XS.NextDouble();
@@ -5934,9 +5934,9 @@ namespace SlaveMatrix
     		foreach (脚人 item2 in Cha.Bod.脚人右)
     		{
     			item2.腿.角度C = (0.0 - a) * RNG.XS.NextDouble();
-    			if (item2.脚 != null)
+    			if (item2.Leg != null)
     			{
-    				item2.脚.角度C = (0.0 - a) * RNG.XS.NextDouble();
+    				item2.Leg.角度C = (0.0 - a) * RNG.XS.NextDouble();
     				if (item2.足 != null)
     				{
     					item2.足.角度C = (0.0 - a) * RNG.XS.NextDouble();
@@ -5945,7 +5945,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public static void 脚_獣左(this Cha Cha, int n, double u1, double u2, double u3, double u4, double 腿角度B, double 脚角度B, double 足角度B, double 腿尺度YC, double 脚尺度YC, double 足尺度YC)
+    	public static void Leg_獣左(this Cha Cha, int n, double u1, double u2, double u3, double u4, double 腿角度B, double 脚角度B, double 足角度B, double 腿尺度YC, double 脚尺度YC, double 足尺度YC)
     	{
     		脚獣 脚獣2 = Cha.Bod.脚獣左[n];
     		if (脚獣2.腿 != null)
@@ -5954,17 +5954,17 @@ namespace SlaveMatrix
     			脚獣2.腿.尺度YC = 腿尺度YC;
     			脚獣2.腿.角度B += 腿角度B + u1;
     		}
-    		if (脚獣2.脚 == null)
+    		if (脚獣2.Leg == null)
     		{
     			return;
     		}
-    		脚獣2.脚.SetAngle0();
-    		脚獣2.脚.尺度YC = 脚尺度YC;
+    		脚獣2.Leg.SetAngle0();
+    		脚獣2.Leg.尺度YC = 脚尺度YC;
     		if (脚獣2.腿 == null)
     		{
-    			脚獣2.脚.角度B += 145.0;
+    			脚獣2.Leg.角度B += 145.0;
     		}
-    		脚獣2.脚.角度B += 脚角度B + u2;
+    		脚獣2.Leg.角度B += 脚角度B + u2;
     		if (脚獣2.足 != null)
     		{
     			脚獣2.足.SetAngle0();
@@ -5987,7 +5987,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public static void 脚_獣右(this Cha Cha, int n, double u1, double u2, double u3, double u4, double 腿角度B, double 脚角度B, double 足角度B, double 腿尺度YC, double 脚尺度YC, double 足尺度YC)
+    	public static void Leg_獣右(this Cha Cha, int n, double u1, double u2, double u3, double u4, double 腿角度B, double 脚角度B, double 足角度B, double 腿尺度YC, double 脚尺度YC, double 足尺度YC)
     	{
     		脚獣 脚獣2 = Cha.Bod.脚獣右[n];
     		if (脚獣2.腿 != null)
@@ -5996,17 +5996,17 @@ namespace SlaveMatrix
     			脚獣2.腿.尺度YC = 腿尺度YC;
     			脚獣2.腿.角度B += 0.0 - 腿角度B + (0.0 - u1);
     		}
-    		if (脚獣2.脚 == null)
+    		if (脚獣2.Leg == null)
     		{
     			return;
     		}
-    		脚獣2.脚.SetAngle0();
-    		脚獣2.脚.尺度YC = 脚尺度YC;
+    		脚獣2.Leg.SetAngle0();
+    		脚獣2.Leg.尺度YC = 脚尺度YC;
     		if (脚獣2.腿 == null)
     		{
-    			脚獣2.脚.角度B += -145.0;
+    			脚獣2.Leg.角度B += -145.0;
     		}
-    		脚獣2.脚.角度B += 0.0 - 脚角度B + (0.0 - u2);
+    		脚獣2.Leg.角度B += 0.0 - 脚角度B + (0.0 - u2);
     		if (脚獣2.足 != null)
     		{
     			脚獣2.足.SetAngle0();
@@ -6029,34 +6029,34 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public static void 脚_獣_基本左(this Cha Cha, int n, double u1, double u2, double u3, double u4)
+    	public static void Leg_獣_基本左(this Cha Cha, int n, double u1, double u2, double u3, double u4)
     	{
-    		Cha.脚_獣左(n, u1, u2, u3, u4, 0.0, 0.0, 0.0, 1.0, 1.0, 1.0);
+    		Cha.Leg_獣左(n, u1, u2, u3, u4, 0.0, 0.0, 0.0, 1.0, 1.0, 1.0);
     	}
 
-    	public static void 脚_獣_基本右(this Cha Cha, int n, double u1, double u2, double u3, double u4)
+    	public static void Leg_獣_基本右(this Cha Cha, int n, double u1, double u2, double u3, double u4)
     	{
-    		Cha.脚_獣右(n, u1, u2, u3, u4, 0.0, 0.0, 0.0, 1.0, 1.0, 1.0);
+    		Cha.Leg_獣右(n, u1, u2, u3, u4, 0.0, 0.0, 0.0, 1.0, 1.0, 1.0);
     	}
 
-    	public static void 脚_獣_萎縮左(this Cha Cha, int n, double u1, double u2, double u3, double u4)
+    	public static void Leg_獣_萎縮左(this Cha Cha, int n, double u1, double u2, double u3, double u4)
     	{
-    		Cha.脚_獣左(n, u1, u2, u3, u4, 12.0, -12.0, 12.0, 1.0, 1.0, 1.0);
+    		Cha.Leg_獣左(n, u1, u2, u3, u4, 12.0, -12.0, 12.0, 1.0, 1.0, 1.0);
     	}
 
-    	public static void 脚_獣_萎縮右(this Cha Cha, int n, double u1, double u2, double u3, double u4)
+    	public static void Leg_獣_萎縮右(this Cha Cha, int n, double u1, double u2, double u3, double u4)
     	{
-    		Cha.脚_獣右(n, u1, u2, u3, u4, 12.0, -12.0, 12.0, 1.0, 1.0, 1.0);
+    		Cha.Leg_獣右(n, u1, u2, u3, u4, 12.0, -12.0, 12.0, 1.0, 1.0, 1.0);
     	}
 
-    	public static void 脚_獣_脱力左(this Cha Cha, int n, double u1, double u2, double u3, double u4)
+    	public static void Leg_獣_脱力左(this Cha Cha, int n, double u1, double u2, double u3, double u4)
     	{
-    		Cha.脚_獣左(n, u1, u2, u3, u4, -10.0, 10.0, -10.0, 1.0, 1.0, 1.0);
+    		Cha.Leg_獣左(n, u1, u2, u3, u4, -10.0, 10.0, -10.0, 1.0, 1.0, 1.0);
     	}
 
-    	public static void 脚_獣_脱力右(this Cha Cha, int n, double u1, double u2, double u3, double u4)
+    	public static void Leg_獣_脱力右(this Cha Cha, int n, double u1, double u2, double u3, double u4)
     	{
-    		Cha.脚_獣右(n, u1, u2, u3, u4, -10.0, 10.0, -10.0, 1.0, 1.0, 1.0);
+    		Cha.Leg_獣右(n, u1, u2, u3, u4, -10.0, 10.0, -10.0, 1.0, 1.0, 1.0);
     	}
 
     	public static void 両脚獣_0(this Cha Cha, int n, bool 同角, int i1, int i2)
@@ -6092,13 +6092,13 @@ namespace SlaveMatrix
     		switch (i)
     		{
     		case 0:
-    			c.脚_獣_基本左(n, u1, u2, u3, u4);
+    			c.Leg_獣_基本左(n, u1, u2, u3, u4);
     			break;
     		case 1:
-    			c.脚_獣_萎縮左(n, u1, u2, u3, u4);
+    			c.Leg_獣_萎縮左(n, u1, u2, u3, u4);
     			break;
     		case 2:
-    			c.脚_獣_脱力左(n, u1, u2, u3, u4);
+    			c.Leg_獣_脱力左(n, u1, u2, u3, u4);
     			break;
     		}
     	}
@@ -6108,13 +6108,13 @@ namespace SlaveMatrix
     		switch (i)
     		{
     		case 0:
-    			c.脚_獣_基本右(n, u1, u2, u3, u4);
+    			c.Leg_獣_基本右(n, u1, u2, u3, u4);
     			break;
     		case 1:
-    			c.脚_獣_萎縮右(n, u1, u2, u3, u4);
+    			c.Leg_獣_萎縮右(n, u1, u2, u3, u4);
     			break;
     		case 2:
-    			c.脚_獣_脱力右(n, u1, u2, u3, u4);
+    			c.Leg_獣_脱力右(n, u1, u2, u3, u4);
     			break;
     		}
     	}
@@ -6127,9 +6127,9 @@ namespace SlaveMatrix
     			{
     				item.腿.角度C = a * RNG.XS.NextDouble();
     			}
-    			if (item.脚 != null)
+    			if (item.Leg != null)
     			{
-    				item.脚.角度C = a * RNG.XS.NextDouble();
+    				item.Leg.角度C = a * RNG.XS.NextDouble();
     				if (item.足 != null)
     				{
     					item.足.角度C = a * RNG.XS.NextDouble();
@@ -6142,9 +6142,9 @@ namespace SlaveMatrix
     			{
     				item2.腿.角度C = (0.0 - a) * RNG.XS.NextDouble();
     			}
-    			if (item2.脚 != null)
+    			if (item2.Leg != null)
     			{
-    				item2.脚.角度C = (0.0 - a) * RNG.XS.NextDouble();
+    				item2.Leg.角度C = (0.0 - a) * RNG.XS.NextDouble();
     				if (item2.足 != null)
     				{
     					item2.足.角度C = (0.0 - a) * RNG.XS.NextDouble();
@@ -9451,7 +9451,7 @@ namespace SlaveMatrix
     		}
     		c.Bod.腿左右前後 = RNG.XS.NextBool();
     		c.腕();
-    		c.脚();
+    		c.Leg();
     		c.翼();
     		c.鰭();
     		c.葉();
@@ -9484,7 +9484,7 @@ namespace SlaveMatrix
     			c.腕();
     			break;
     		case 1:
-    			c.脚();
+    			c.Leg();
     			break;
     		case 2:
     			c.翼();
@@ -9611,7 +9611,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public static void 脚(this Cha c)
+    	public static void Leg(this Cha c)
     	{
     		if (Player.UI.ペニス処理.足コキ.Run)
     		{

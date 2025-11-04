@@ -579,8 +579,8 @@ namespace SlaveMatrix
     		Sta.触肢_肢蠍Dt.ToString(),
     		Sta.上腕_獣Dt.ToString(),
     		Sta.上腕_蹄Dt.ToString(),
-    		Sta.脚_鳥Dt.ToString(),
-    		Sta.脚_竜Dt.ToString()
+    		Sta.Leg_鳥Dt.ToString(),
+    		Sta.Leg_竜Dt.ToString()
     	};
 
     	private static HashSet<string> 下腕人 = new HashSet<string>
@@ -613,38 +613,38 @@ namespace SlaveMatrix
 
     	private static HashSet<string> 虫鎌 = new HashSet<string> { Sta.虫鎌Dt.ToString() };
 
-    	private static HashSet<string> 脚人 = new HashSet<string> { Sta.脚_人Dt.ToString() };
+    	private static HashSet<string> 脚人 = new HashSet<string> { Sta.Leg_人Dt.ToString() };
 
     	private static HashSet<string> 脚獣 = new HashSet<string>
     	{
-    		Sta.脚_獣Dt.ToString(),
-    		Sta.脚_蹄Dt.ToString(),
-    		Sta.脚_鳥Dt.ToString(),
-    		Sta.脚_竜Dt.ToString()
+    		Sta.Leg_獣Dt.ToString(),
+    		Sta.Leg_蹄Dt.ToString(),
+    		Sta.Leg_鳥Dt.ToString(),
+    		Sta.Leg_竜Dt.ToString()
     	};
 
     	private static HashSet<string> 脚蹄 = new HashSet<string>
     	{
-    		Sta.脚_獣Dt.ToString(),
-    		Sta.脚_蹄Dt.ToString(),
-    		Sta.脚_鳥Dt.ToString(),
-    		Sta.脚_竜Dt.ToString()
+    		Sta.Leg_獣Dt.ToString(),
+    		Sta.Leg_蹄Dt.ToString(),
+    		Sta.Leg_鳥Dt.ToString(),
+    		Sta.Leg_竜Dt.ToString()
     	};
 
     	private static HashSet<string> 脚鳥 = new HashSet<string>
     	{
-    		Sta.脚_獣Dt.ToString(),
-    		Sta.脚_蹄Dt.ToString(),
-    		Sta.脚_鳥Dt.ToString(),
-    		Sta.脚_竜Dt.ToString()
+    		Sta.Leg_獣Dt.ToString(),
+    		Sta.Leg_蹄Dt.ToString(),
+    		Sta.Leg_鳥Dt.ToString(),
+    		Sta.Leg_竜Dt.ToString()
     	};
 
     	private static HashSet<string> 脚竜 = new HashSet<string>
     	{
-    		Sta.脚_獣Dt.ToString(),
-    		Sta.脚_蹄Dt.ToString(),
-    		Sta.脚_鳥Dt.ToString(),
-    		Sta.脚_竜Dt.ToString()
+    		Sta.Leg_獣Dt.ToString(),
+    		Sta.Leg_蹄Dt.ToString(),
+    		Sta.Leg_鳥Dt.ToString(),
+    		Sta.Leg_竜Dt.ToString()
     	};
 
     	private static HashSet<string> 足人 = new HashSet<string> { Sta.足_人Dt.ToString() };
@@ -1299,43 +1299,43 @@ namespace SlaveMatrix
     			虫鎌
     		},
     		{
-    			ConnectionInfo.腿_人_脚_接続,
+    			ConnectionInfo.腿_人_Leg_接続,
     			脚人
     		},
     		{
-    			ConnectionInfo.腿_獣_脚_接続,
+    			ConnectionInfo.腿_獣_Leg_接続,
     			脚獣
     		},
     		{
-    			ConnectionInfo.腿_蹄_脚_接続,
+    			ConnectionInfo.腿_蹄_Leg_接続,
     			脚蹄
     		},
     		{
-    			ConnectionInfo.腿_鳥_脚_接続,
+    			ConnectionInfo.腿_鳥_Leg_接続,
     			脚鳥
     		},
     		{
-    			ConnectionInfo.腿_竜_脚_接続,
+    			ConnectionInfo.腿_竜_Leg_接続,
     			脚竜
     		},
     		{
-    			ConnectionInfo.脚_人_足_接続,
+    			ConnectionInfo.Leg_人_足_接続,
     			足人
     		},
     		{
-    			ConnectionInfo.脚_獣_足_接続,
+    			ConnectionInfo.Leg_獣_足_接続,
     			足獣
     		},
     		{
-    			ConnectionInfo.脚_蹄_足_接続,
+    			ConnectionInfo.Leg_蹄_足_接続,
     			足蹄
     		},
     		{
-    			ConnectionInfo.脚_鳥_足_接続,
+    			ConnectionInfo.Leg_鳥_足_接続,
     			足鳥
     		},
     		{
-    			ConnectionInfo.脚_竜_足_接続,
+    			ConnectionInfo.Leg_竜_足_接続,
     			足竜
     		},
     		{

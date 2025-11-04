@@ -3,9 +3,9 @@ using _2DGAMELIB;
 
 namespace SlaveMatrix
 {
-    public class 脚_蹄 : 獣脚
+    public class Leg_蹄 : 獣脚
     {
-    	public Par X0Y0_脚;
+    	public Par X0Y0_Leg;
 
     	public Par X0Y0_筋;
 
@@ -21,7 +21,7 @@ namespace SlaveMatrix
 
     	public Par X0Y0_脚輪_金具右;
 
-    	public ColorD 脚CD;
+    	public ColorD LegCD;
 
     	public ColorD 筋CD;
 
@@ -37,7 +37,7 @@ namespace SlaveMatrix
 
     	public ColorD 脚輪_金具右CD;
 
-    	public ColorP X0Y0_脚CP;
+    	public ColorP X0Y0_LegCP;
 
     	public ColorP X0Y0_筋CP;
 
@@ -93,16 +93,16 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 脚_表示
+    	public bool Leg_表示
     	{
     		get
     		{
-    			return X0Y0_脚.Dra;
+    			return X0Y0_Leg.Dra;
     		}
     		set
     		{
-    			X0Y0_脚.Dra = value;
-    			X0Y0_脚.Hit = value;
+    			X0Y0_Leg.Dra = value;
+    			X0Y0_Leg.Hit = value;
     		}
     	}
 
@@ -230,11 +230,11 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return 脚_表示;
+    			return Leg_表示;
     		}
     		set
     		{
-    			脚_表示 = value;
+    			Leg_表示 = value;
     			筋_表示 = value;
     			脚輪_革_表示 = value;
     			脚輪_金具1_表示 = value;
@@ -250,11 +250,11 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return 脚CD.不透明度;
+    			return LegCD.不透明度;
     		}
     		set
     		{
-    			脚CD.不透明度 = value;
+    			LegCD.不透明度 = value;
     			筋CD.不透明度 = value;
     			脚輪_革CD.不透明度 = value;
     			脚輪_金具1CD.不透明度 = value;
@@ -265,22 +265,22 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public JointS 足_接続点 => new JointS(本体, X0Y0_脚, 0);
+    	public JointS 足_接続点 => new JointS(本体, X0Y0_Leg, 0);
 
     	public JointS 鎖1_接続点 => new JointS(本体, X0Y0_脚輪_金具左, 0);
 
     	public JointS 鎖2_接続点 => new JointS(本体, X0Y0_脚輪_金具右, 0);
 
-    	public 脚_蹄(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 脚_蹄D e)
+    	public Leg_蹄(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, Leg_蹄D e)
     	{
-    		脚_蹄 脚_蹄2 = this;
+    		Leg_蹄 Leg_蹄2 = this;
     		ThisType = GetType();
     		Dif dif = new Dif(Sta.脚左["四足脚"][1]);
     		本体 = new Difs();
     		本体.Tag = dif.Tag;
     		本体.Add(dif);
     		Pars pars = 本体[0][0];
-    		X0Y0_脚 = pars["脚"].ToPar();
+    		X0Y0_Leg = pars["脚"].ToPar();
     		X0Y0_筋 = pars["筋"].ToPar();
     		Pars pars2 = pars["脚輪"].ToPars();
     		X0Y0_脚輪_革 = pars2["革"].ToPar();
@@ -313,7 +313,7 @@ namespace SlaveMatrix
     		サイズ = e.サイズ;
     		サイズX = e.サイズX;
     		サイズY = e.サイズY;
-    		脚_表示 = e.脚_表示;
+    		Leg_表示 = e.Leg_表示;
     		筋_表示 = e.筋_表示;
     		脚輪_革_表示 = e.脚輪_革_表示;
     		脚輪_金具1_表示 = e.脚輪_金具1_表示;
@@ -335,15 +335,15 @@ namespace SlaveMatrix
     			足_接続 = e.足_接続.Select(delegate(EleD g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
-    				f.Par = 脚_蹄2;
-    				f.ConnectionType = ConnectionInfo.脚_蹄_足_接続;
-    				f.接続(脚_蹄2.足_接続点);
+    				f.Par = Leg_蹄2;
+    				f.ConnectionType = ConnectionInfo.Leg_蹄_足_接続;
+    				f.接続(Leg_蹄2.足_接続点);
     				return f;
     			}).ToArray();
     		}
     		base.配色指定 = 配色指定;
     		配色(体配色);
-    		X0Y0_脚CP = new ColorP(X0Y0_脚, 脚CD, DisUnit, abj: true);
+    		X0Y0_LegCP = new ColorP(X0Y0_Leg, LegCD, DisUnit, abj: true);
     		X0Y0_筋CP = new ColorP(X0Y0_筋, 筋CD, DisUnit, abj: false);
     		X0Y0_脚輪_革CP = new ColorP(X0Y0_脚輪_革, 脚輪_革CD, DisUnit, abj: true);
     		X0Y0_脚輪_金具1CP = new ColorP(X0Y0_脚輪_金具1, 脚輪_金具1CD, DisUnit, abj: true);
@@ -374,7 +374,7 @@ namespace SlaveMatrix
     	public override void SetAngle0()
     	{
     		double num = (右 ? (-1.0) : 1.0);
-    		X0Y0_脚.AngleBase = num * -136.0;
+    		X0Y0_Leg.AngleBase = num * -136.0;
     		本体.JoinPAall();
     	}
 
@@ -389,7 +389,7 @@ namespace SlaveMatrix
 
     	public override void 色更新()
     	{
-    		X0Y0_脚CP.Update();
+    		X0Y0_LegCP.Update();
     		X0Y0_筋CP.Update();
     		X0Y0_脚輪_革CP.Update();
     		X0Y0_脚輪_金具1CP.Update();
@@ -408,7 +408,7 @@ namespace SlaveMatrix
 
     	private void 配色N0(体配色 体配色)
     	{
-    		脚CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
+    		LegCD = new ColorD(ref Col.Black, ref 体配色.毛0O);
     		筋CD = new ColorD(ref 体配色.薄線, ref 体配色.毛0O);
     		脚輪_革CD = new ColorD();
     		脚輪_金具1CD = new ColorD();

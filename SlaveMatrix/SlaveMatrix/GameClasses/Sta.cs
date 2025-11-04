@@ -294,15 +294,15 @@ namespace SlaveMatrix
 
     	public static Type 腿_竜Dt;
 
-    	public static Type 脚_人Dt;
+    	public static Type Leg_人Dt;
 
-    	public static Type 脚_獣Dt;
+    	public static Type Leg_獣Dt;
 
-    	public static Type 脚_蹄Dt;
+    	public static Type Leg_蹄Dt;
 
-    	public static Type 脚_鳥Dt;
+    	public static Type Leg_鳥Dt;
 
-    	public static Type 脚_竜Dt;
+    	public static Type Leg_竜Dt;
 
     	public static Type 足_人Dt;
 
@@ -1283,11 +1283,11 @@ namespace SlaveMatrix
     		腿_蹄Dt = typeof(腿_蹄D);
     		腿_鳥Dt = typeof(腿_鳥D);
     		腿_竜Dt = typeof(腿_竜D);
-    		脚_人Dt = typeof(脚_人D);
-    		脚_獣Dt = typeof(脚_獣D);
-    		脚_蹄Dt = typeof(脚_蹄D);
-    		脚_鳥Dt = typeof(脚_鳥D);
-    		脚_竜Dt = typeof(脚_竜D);
+    		Leg_人Dt = typeof(Leg_人D);
+    		Leg_獣Dt = typeof(Leg_獣D);
+    		Leg_蹄Dt = typeof(Leg_蹄D);
+    		Leg_鳥Dt = typeof(Leg_鳥D);
+    		Leg_竜Dt = typeof(Leg_竜D);
     		足_人Dt = typeof(足_人D);
     		足_獣Dt = typeof(足_獣D);
     		足_馬Dt = typeof(足_馬D);

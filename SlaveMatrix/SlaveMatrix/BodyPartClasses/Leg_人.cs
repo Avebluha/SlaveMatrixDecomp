@@ -3,9 +3,9 @@ using _2DGAMELIB;
 
 namespace SlaveMatrix
 {
-    public class 脚_人 : 脚
+    public class Leg_人 : Leg
     {
-    	public Par X0Y0_脚;
+    	public Par X0Y0_Leg;
 
     	public Par X0Y0_筋;
 
@@ -401,7 +401,7 @@ namespace SlaveMatrix
 
     	public Par X0Y0_脚輪下_金具右;
 
-    	public Par X0Y1_脚;
+    	public Par X0Y1_Leg;
 
     	public Par X0Y1_筋;
 
@@ -797,7 +797,7 @@ namespace SlaveMatrix
 
     	public Par X0Y1_脚輪下_金具右;
 
-    	public ColorD 脚CD;
+    	public ColorD LegCD;
 
     	public ColorD 筋CD;
 
@@ -1193,7 +1193,7 @@ namespace SlaveMatrix
 
     	public ColorD 脚輪下_金具右CD;
 
-    	public ColorP X0Y0_脚CP;
+    	public ColorP X0Y0_LegCP;
 
     	public ColorP X0Y0_筋CP;
 
@@ -1589,7 +1589,7 @@ namespace SlaveMatrix
 
     	public ColorP X0Y0_脚輪下_金具右CP;
 
-    	public ColorP X0Y1_脚CP;
+    	public ColorP X0Y1_LegCP;
 
     	public ColorP X0Y1_筋CP;
 
@@ -2036,18 +2036,18 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 脚_表示
+    	public bool Leg_表示
     	{
     		get
     		{
-    			return X0Y0_脚.Dra;
+    			return X0Y0_Leg.Dra;
     		}
     		set
     		{
-    			X0Y0_脚.Dra = value;
-    			X0Y1_脚.Dra = value;
-    			X0Y0_脚.Hit = value;
-    			X0Y1_脚.Hit = value;
+    			X0Y0_Leg.Dra = value;
+    			X0Y1_Leg.Dra = value;
+    			X0Y0_Leg.Hit = value;
+    			X0Y1_Leg.Hit = value;
     		}
     	}
 
@@ -5179,11 +5179,11 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return 脚_表示;
+    			return Leg_表示;
     		}
     		set
     		{
-    			脚_表示 = value;
+    			Leg_表示 = value;
     			筋_表示 = value;
     			淫タトゥ_足首_タトゥ_表示 = value;
     			淫タトゥ_足首_ハート1_タトゥ左_表示 = value;
@@ -5390,11 +5390,11 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return 脚CD.不透明度;
+    			return LegCD.不透明度;
     		}
     		set
     		{
-    			脚CD.不透明度 = value;
+    			LegCD.不透明度 = value;
     			筋CD.不透明度 = value;
     			淫タトゥ_足首_タトゥCD.不透明度 = value;
     			淫タトゥ_足首_ハート1_タトゥ左CD.不透明度 = value;
@@ -5738,11 +5738,11 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public JointS 足_接続点 => new JointS(本体, X0Y0_脚, 0);
+    	public JointS 足_接続点 => new JointS(本体, X0Y0_Leg, 0);
 
-    	public JointS 脚輪下_接続点 => new JointS(本体, X0Y0_脚, 2);
+    	public JointS 脚輪下_接続点 => new JointS(本体, X0Y0_Leg, 2);
 
-    	public JointS 脚輪上_接続点 => new JointS(本体, X0Y0_脚, 3);
+    	public JointS 脚輪上_接続点 => new JointS(本体, X0Y0_Leg, 3);
 
     	public JointS 鎖1_接続点 => new JointS(本体, X0Y0_脚輪上_金具左, 0);
 
@@ -5752,13 +5752,13 @@ namespace SlaveMatrix
 
     	public JointS 鎖4_接続点 => new JointS(本体, X0Y0_脚輪下_金具右, 0);
 
-    	public 脚_人(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 脚_人D e)
+    	public Leg_人(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, Leg_人D e)
     	{
-    		脚_人 脚_人2 = this;
+    		Leg_人 Leg_人2 = this;
     		ThisType = GetType();
     		本体 = new Difs(Sta.脚左["脚"]);
     		Pars pars = 本体[0][0];
-    		X0Y0_脚 = pars["脚"].ToPar();
+    		X0Y0_Leg = pars["脚"].ToPar();
     		X0Y0_筋 = pars["筋"].ToPar();
     		Pars pars2 = pars["淫タトゥ"].ToPars();
     		Pars pars3 = pars2["足首"].ToPars();
@@ -6056,7 +6056,7 @@ namespace SlaveMatrix
     		X0Y0_脚輪下_金具左 = pars2["金具左"].ToPar();
     		X0Y0_脚輪下_金具右 = pars2["金具右"].ToPar();
     		pars = 本体[0][1];
-    		X0Y1_脚 = pars["脚"].ToPar();
+    		X0Y1_Leg = pars["脚"].ToPar();
     		X0Y1_筋 = pars["筋"].ToPar();
     		pars2 = pars["淫タトゥ"].ToPars();
     		pars3 = pars2["足首"].ToPars();
@@ -6377,7 +6377,7 @@ namespace SlaveMatrix
     		サイズ = e.サイズ;
     		サイズX = e.サイズX;
     		サイズY = e.サイズY;
-    		脚_表示 = e.脚_表示;
+    		Leg_表示 = e.Leg_表示;
     		筋_表示 = e.筋_表示;
     		淫タトゥ_足首_タトゥ_表示 = e.淫タトゥ_足首_タトゥ_表示;
     		淫タトゥ_足首_ハート1_タトゥ左_表示 = e.淫タトゥ_足首_ハート1_タトゥ左_表示;
@@ -6599,9 +6599,9 @@ namespace SlaveMatrix
     			足_接続 = e.足_接続.Select(delegate(EleD g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
-    				f.Par = 脚_人2;
-    				f.ConnectionType = ConnectionInfo.脚_人_足_接続;
-    				f.接続(脚_人2.足_接続点);
+    				f.Par = Leg_人2;
+    				f.ConnectionType = ConnectionInfo.Leg_人_足_接続;
+    				f.接続(Leg_人2.足_接続点);
     				return f;
     			}).ToArray();
     		}
@@ -6610,9 +6610,9 @@ namespace SlaveMatrix
     			脚輪下_接続 = e.脚輪下_接続.Select(delegate(EleD g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
-    				f.Par = 脚_人2;
-    				f.ConnectionType = ConnectionInfo.脚_人_脚輪下_接続;
-    				f.接続(脚_人2.脚輪下_接続点);
+    				f.Par = Leg_人2;
+    				f.ConnectionType = ConnectionInfo.Leg_人_脚輪下_接続;
+    				f.接続(Leg_人2.脚輪下_接続点);
     				return f;
     			}).ToArray();
     		}
@@ -6621,15 +6621,15 @@ namespace SlaveMatrix
     			脚輪上_接続 = e.脚輪上_接続.Select(delegate(EleD g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
-    				f.Par = 脚_人2;
-    				f.ConnectionType = ConnectionInfo.脚_人_脚輪上_接続;
-    				f.接続(脚_人2.脚輪上_接続点);
+    				f.Par = Leg_人2;
+    				f.ConnectionType = ConnectionInfo.Leg_人_脚輪上_接続;
+    				f.接続(Leg_人2.脚輪上_接続点);
     				return f;
     			}).ToArray();
     		}
     		base.配色指定 = 配色指定;
     		配色(体配色);
-    		X0Y0_脚CP = new ColorP(X0Y0_脚, 脚CD, DisUnit, abj: true);
+    		X0Y0_LegCP = new ColorP(X0Y0_Leg, LegCD, DisUnit, abj: true);
     		X0Y0_筋CP = new ColorP(X0Y0_筋, 筋CD, DisUnit, abj: false);
     		X0Y0_淫タトゥ_足首_タトゥCP = new ColorP(X0Y0_淫タトゥ_足首_タトゥ, 淫タトゥ_足首_タトゥCD, DisUnit, abj: true);
     		X0Y0_淫タトゥ_足首_ハート1_タトゥ左CP = new ColorP(X0Y0_淫タトゥ_足首_ハート1_タトゥ左, 淫タトゥ_足首_ハート1_タトゥ左CD, DisUnit, abj: true);
@@ -6827,7 +6827,7 @@ namespace SlaveMatrix
     		X0Y0_脚輪下_金具3CP = new ColorP(X0Y0_脚輪下_金具3, 脚輪下_金具3CD, DisUnit, abj: true);
     		X0Y0_脚輪下_金具左CP = new ColorP(X0Y0_脚輪下_金具左, 脚輪下_金具左CD, DisUnit, abj: true);
     		X0Y0_脚輪下_金具右CP = new ColorP(X0Y0_脚輪下_金具右, 脚輪下_金具右CD, DisUnit, abj: true);
-    		X0Y1_脚CP = new ColorP(X0Y1_脚, 脚CD, DisUnit, abj: true);
+    		X0Y1_LegCP = new ColorP(X0Y1_Leg, LegCD, DisUnit, abj: true);
     		X0Y1_筋CP = new ColorP(X0Y1_筋, 筋CD, DisUnit, abj: false);
     		X0Y1_淫タトゥ_足首_タトゥCP = new ColorP(X0Y1_淫タトゥ_足首_タトゥ, 淫タトゥ_足首_タトゥCD, DisUnit, abj: true);
     		X0Y1_淫タトゥ_足首_ハート1_タトゥ左CP = new ColorP(X0Y1_淫タトゥ_足首_ハート1_タトゥ左, 淫タトゥ_足首_ハート1_タトゥ左CD, DisUnit, abj: true);
@@ -7056,7 +7056,7 @@ namespace SlaveMatrix
     	{
     		if (本体.IndexY == 0)
     		{
-    			Are.Draw(X0Y0_脚);
+    			Are.Draw(X0Y0_Leg);
     			Are.Draw(X0Y0_筋);
     			Are.Draw(X0Y0_獣性_獣毛1);
     			Are.Draw(X0Y0_獣性_獣毛2);
@@ -7154,7 +7154,7 @@ namespace SlaveMatrix
     		}
     		else
     		{
-    			Are.Draw(X0Y1_脚);
+    			Are.Draw(X0Y1_Leg);
     			Are.Draw(X0Y1_筋);
     			Are.Draw(X0Y1_獣性_獣毛1);
     			Are.Draw(X0Y1_獣性_獣毛2);
@@ -7478,8 +7478,8 @@ namespace SlaveMatrix
 
     	public void 虫性()
     	{
-    		X0Y0_脚.OP[(!右) ? 6 : 0].Outline = true;
-    		X0Y1_脚.OP[(!右) ? 6 : 0].Outline = true;
+    		X0Y0_Leg.OP[(!右) ? 6 : 0].Outline = true;
+    		X0Y1_Leg.OP[(!右) ? 6 : 0].Outline = true;
     	}
 
     	public void 開脚(腿_人 腿)
@@ -7525,7 +7525,7 @@ namespace SlaveMatrix
     	{
     		if (本体.IndexY == 0)
     		{
-    			X0Y0_脚CP.Update();
+    			X0Y0_LegCP.Update();
     			X0Y0_筋CP.Update();
     			X0Y0_淫タトゥ_足首_タトゥCP.Update();
     			X0Y0_淫タトゥ_足首_ハート1_タトゥ左CP.Update();
@@ -7726,7 +7726,7 @@ namespace SlaveMatrix
     		}
     		else
     		{
-    			X0Y1_脚CP.Update();
+    			X0Y1_LegCP.Update();
     			X0Y1_筋CP.Update();
     			X0Y1_淫タトゥ_足首_タトゥCP.Update();
     			X0Y1_淫タトゥ_足首_ハート1_タトゥ左CP.Update();
@@ -7979,7 +7979,7 @@ namespace SlaveMatrix
 
     	private void 配色N0(体配色 体配色)
     	{
-    		脚CD = new ColorD(ref Col.Black, ref 体配色.人肌O);
+    		LegCD = new ColorD(ref Col.Black, ref 体配色.人肌O);
     		筋CD = new ColorD(ref 体配色.薄線, ref Color2.Empty);
     		淫タトゥ_足首_タトゥCD = new ColorD(ref Col.Black, ref 体配色.刺青);
     		淫タトゥ_足首_ハート1_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
@@ -8181,7 +8181,7 @@ namespace SlaveMatrix
 
     	private void 配色T1(体配色 体配色)
     	{
-    		脚CD = new ColorD(ref Col.Black, ref 体配色.人肌O);
+    		LegCD = new ColorD(ref Col.Black, ref 体配色.人肌O);
     		筋CD = new ColorD(ref 体配色.薄線, ref Color2.Empty);
     		淫タトゥ_足首_タトゥCD = new ColorD(ref Col.Black, ref 体配色.刺青);
     		淫タトゥ_足首_ハート1_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
@@ -8383,7 +8383,7 @@ namespace SlaveMatrix
 
     	private void 配色T0(体配色 体配色)
     	{
-    		脚CD = new ColorD(ref Col.Black, ref 体配色.人肌O);
+    		LegCD = new ColorD(ref Col.Black, ref 体配色.人肌O);
     		筋CD = new ColorD(ref 体配色.薄線, ref Color2.Empty);
     		淫タトゥ_足首_タトゥCD = new ColorD(ref Col.Black, ref 体配色.刺青);
     		淫タトゥ_足首_ハート1_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
@@ -8585,7 +8585,7 @@ namespace SlaveMatrix
 
     	private void 配色B0(体配色 体配色)
     	{
-    		脚CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
+    		LegCD = new ColorD(ref Col.Black, ref 体配色.毛0O);
     		筋CD = new ColorD(ref 体配色.薄線, ref Color2.Empty);
     		淫タトゥ_足首_タトゥCD = new ColorD(ref Col.Black, ref 体配色.刺青);
     		淫タトゥ_足首_ハート1_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
@@ -8787,7 +8787,7 @@ namespace SlaveMatrix
 
     	private void 配色BT1(体配色 体配色)
     	{
-    		脚CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
+    		LegCD = new ColorD(ref Col.Black, ref 体配色.毛0O);
     		筋CD = new ColorD(ref 体配色.薄線, ref Color2.Empty);
     		淫タトゥ_足首_タトゥCD = new ColorD(ref Col.Black, ref 体配色.刺青);
     		淫タトゥ_足首_ハート1_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
@@ -8989,7 +8989,7 @@ namespace SlaveMatrix
 
     	private void 配色BT0(体配色 体配色)
     	{
-    		脚CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
+    		LegCD = new ColorD(ref Col.Black, ref 体配色.毛0O);
     		筋CD = new ColorD(ref 体配色.薄線, ref Color2.Empty);
     		淫タトゥ_足首_タトゥCD = new ColorD(ref Col.Black, ref 体配色.刺青);
     		淫タトゥ_足首_ハート1_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
@@ -9191,7 +9191,7 @@ namespace SlaveMatrix
 
     	private void 配色C0(体配色 体配色)
     	{
-    		脚CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
+    		LegCD = new ColorD(ref Col.Black, ref 体配色.甲0O);
     		筋CD = new ColorD(ref 体配色.薄線, ref Color2.Empty);
     		淫タトゥ_足首_タトゥCD = new ColorD(ref Col.Black, ref 体配色.刺青);
     		淫タトゥ_足首_ハート1_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
@@ -9393,7 +9393,7 @@ namespace SlaveMatrix
 
     	private void 配色CT1(体配色 体配色)
     	{
-    		脚CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
+    		LegCD = new ColorD(ref Col.Black, ref 体配色.甲0O);
     		筋CD = new ColorD(ref 体配色.薄線, ref Color2.Empty);
     		淫タトゥ_足首_タトゥCD = new ColorD(ref Col.Black, ref 体配色.刺青);
     		淫タトゥ_足首_ハート1_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
@@ -9595,7 +9595,7 @@ namespace SlaveMatrix
 
     	private void 配色CT0(体配色 体配色)
     	{
-    		脚CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
+    		LegCD = new ColorD(ref Col.Black, ref 体配色.甲0O);
     		筋CD = new ColorD(ref 体配色.薄線, ref Color2.Empty);
     		淫タトゥ_足首_タトゥCD = new ColorD(ref Col.Black, ref 体配色.刺青);
     		淫タトゥ_足首_ハート1_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
@@ -9797,7 +9797,7 @@ namespace SlaveMatrix
 
     	private void 配色L0(体配色 体配色)
     	{
-    		脚CD = new ColorD(ref Col.Black, ref 体配色.植1O);
+    		LegCD = new ColorD(ref Col.Black, ref 体配色.植1O);
     		筋CD = new ColorD(ref 体配色.薄線, ref Color2.Empty);
     		淫タトゥ_足首_タトゥCD = new ColorD(ref Col.Black, ref 体配色.刺青);
     		淫タトゥ_足首_ハート1_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
@@ -9999,7 +9999,7 @@ namespace SlaveMatrix
 
     	private void 配色LT1(体配色 体配色)
     	{
-    		脚CD = new ColorD(ref Col.Black, ref 体配色.植1O);
+    		LegCD = new ColorD(ref Col.Black, ref 体配色.植1O);
     		筋CD = new ColorD(ref 体配色.薄線, ref Color2.Empty);
     		淫タトゥ_足首_タトゥCD = new ColorD(ref Col.Black, ref 体配色.刺青);
     		淫タトゥ_足首_ハート1_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
@@ -10201,7 +10201,7 @@ namespace SlaveMatrix
 
     	private void 配色LT0(体配色 体配色)
     	{
-    		脚CD = new ColorD(ref Col.Black, ref 体配色.植1O);
+    		LegCD = new ColorD(ref Col.Black, ref 体配色.植1O);
     		筋CD = new ColorD(ref 体配色.薄線, ref Color2.Empty);
     		淫タトゥ_足首_タトゥCD = new ColorD(ref Col.Black, ref 体配色.刺青);
     		淫タトゥ_足首_ハート1_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);

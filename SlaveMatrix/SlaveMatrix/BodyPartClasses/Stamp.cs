@@ -81,9 +81,9 @@ namespace SlaveMatrix
     		sta.Clear();
     	}
 
-    	public void 脚Clear()
+    	public void LegClear()
     	{
-    		sep[] array = sta.Where((sep e) => e.Ele is 腿_人 || e.Ele is 脚_人 || e.Ele is 足_人).ToArray();
+    		sep[] array = sta.Where((sep e) => e.Ele is 腿_人 || e.Ele is Leg_人 || e.Ele is 足_人).ToArray();
     		for (int i = 0; i < array.Length; i++)
     		{
     			sep item = array[i];

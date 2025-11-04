@@ -90,9 +90,9 @@ namespace SlaveMatrix
 
     	private 腿_人 腿右;
 
-    	private 脚_人 脚左;
+    	private Leg_人 脚左;
 
-    	private 脚_人 脚右;
+    	private Leg_人 脚右;
 
     	private 足_人 足左;
 
@@ -1118,10 +1118,10 @@ namespace SlaveMatrix
     		if (Bod.脚人n > 0)
     		{
     			腿左 = Bod.脚人左[0].腿;
-    			脚左 = Bod.脚人左[0].脚;
+    			脚左 = Bod.脚人左[0].Leg;
     			足左 = Bod.脚人左[0].足;
     			腿右 = Bod.脚人右[0].腿;
-    			脚右 = Bod.脚人右[0].脚;
+    			脚右 = Bod.脚人右[0].Leg;
     			足右 = Bod.脚人右[0].足;
     		}
     	}

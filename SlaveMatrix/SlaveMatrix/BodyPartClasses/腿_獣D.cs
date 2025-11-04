@@ -19,11 +19,11 @@ namespace SlaveMatrix
     		ThisType = GetType();
     	}
 
-    	public override void 脚接続(EleD e)
+    	public override void Leg接続(EleD e)
     	{
-    		脚_接続.Add(e);
+    		Leg_接続.Add(e);
     		e.Par = this;
-    		e.接続情報 = ConnectionInfo.腿_獣_脚_接続;
+    		e.接続情報 = ConnectionInfo.腿_獣_Leg_接続;
     	}
 
     	public override Ele GetEle(double DisUnit, Med Med, 体配色 体配色)

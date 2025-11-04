@@ -1760,9 +1760,9 @@ namespace SlaveMatrix
     			{
     				脚人 脚人2 = 脚人左[0];
     				脚人2.腿.Yv = value;
-    				if (脚人2.脚 != null)
+    				if (脚人2.Leg != null)
     				{
-    					脚人2.脚.開脚(脚人2.腿);
+    					脚人2.Leg.開脚(脚人2.腿);
     				}
     				if (脚人2.足 != null)
     				{
@@ -1773,9 +1773,9 @@ namespace SlaveMatrix
     			{
     				脚人 脚人3 = 脚人右[0];
     				脚人3.腿.Yv = value;
-    				if (脚人3.脚 != null)
+    				if (脚人3.Leg != null)
     				{
-    					脚人3.脚.開脚(脚人3.腿);
+    					脚人3.Leg.開脚(脚人3.腿);
     				}
     				if (脚人3.足 != null)
     				{
@@ -1817,9 +1817,9 @@ namespace SlaveMatrix
     			{
     				脚人 脚人2 = 脚人左[0];
     				脚人2.腿.Yi = value;
-    				if (脚人2.脚 != null)
+    				if (脚人2.Leg != null)
     				{
-    					脚人2.脚.開脚(脚人2.腿);
+    					脚人2.Leg.開脚(脚人2.腿);
     				}
     				if (脚人2.足 != null)
     				{
@@ -1830,9 +1830,9 @@ namespace SlaveMatrix
     			{
     				脚人 脚人3 = 脚人右[0];
     				脚人3.腿.Yi = value;
-    				if (脚人3.脚 != null)
+    				if (脚人3.Leg != null)
     				{
-    					脚人3.脚.開脚(脚人3.腿);
+    					脚人3.Leg.開脚(脚人3.腿);
     				}
     				if (脚人3.足 != null)
     				{
@@ -1870,9 +1870,9 @@ namespace SlaveMatrix
     			{
     				脚人 脚人2 = 脚人左[0];
     				脚人2.腿.Yv = value;
-    				if (脚人2.脚 != null)
+    				if (脚人2.Leg != null)
     				{
-    					脚人2.脚.開脚(脚人2.腿);
+    					脚人2.Leg.開脚(脚人2.腿);
     				}
     				if (脚人2.足 != null)
     				{
@@ -1898,7 +1898,7 @@ namespace SlaveMatrix
     			{
     				脚人 脚人2 = 脚人左[0];
     				脚人2.腿.Yi = value;
-    				脚人2.脚.開脚(脚人2.腿);
+    				脚人2.Leg.開脚(脚人2.腿);
     				脚人2.足.開脚(脚人2.腿);
     			}
     		}
@@ -1920,9 +1920,9 @@ namespace SlaveMatrix
     			{
     				脚人 脚人2 = 脚人右[0];
     				脚人2.腿.Yv = value;
-    				if (脚人2.脚 != null)
+    				if (脚人2.Leg != null)
     				{
-    					脚人2.脚.開脚(脚人2.腿);
+    					脚人2.Leg.開脚(脚人2.腿);
     				}
     				if (脚人2.足 != null)
     				{
@@ -1948,9 +1948,9 @@ namespace SlaveMatrix
     			{
     				脚人 脚人2 = 脚人右[0];
     				脚人2.腿.Yi = value;
-    				if (脚人2.脚 != null)
+    				if (脚人2.Leg != null)
     				{
-    					脚人2.脚.開脚(脚人2.腿);
+    					脚人2.Leg.開脚(脚人2.腿);
     				}
     				if (脚人2.足 != null)
     				{
@@ -2749,10 +2749,10 @@ namespace SlaveMatrix
     			ブーツi = value;
     			foreach (脚人 item in 脚人左)
     			{
-    				if (item.脚 != null)
+    				if (item.Leg != null)
     				{
-    					Set表示(item.脚, ブーツi.脚);
-    					item.脚.ブーツ配色(ブーツi.色);
+    					Set表示(item.Leg, ブーツi.Leg);
+    					item.Leg.ブーツ配色(ブーツi.色);
     				}
     				if (item.足 != null)
     				{
@@ -2762,10 +2762,10 @@ namespace SlaveMatrix
     			}
     			foreach (脚人 item2 in 脚人右)
     			{
-    				if (item2.脚 != null)
+    				if (item2.Leg != null)
     				{
-    					Set表示(item2.脚, ブーツi.脚);
-    					item2.脚.ブーツ配色(ブーツi.色);
+    					Set表示(item2.Leg, ブーツi.Leg);
+    					item2.Leg.ブーツ配色(ブーツi.色);
     				}
     				if (item2.足 != null)
     				{
@@ -3022,7 +3022,7 @@ namespace SlaveMatrix
     					sw.Add(人腿.鞭痕);
     					脚人 = default(脚人);
     					脚人.腿 = 人腿;
-    					人腿.脚_接続.SetEle(delegate(脚_人 脚)
+    					人腿.Leg_接続.SetEle(delegate(Leg_人 脚)
     					{
     						脚.キスマーク = new スタンプK(Med, Are, Cha, bod, kd, 脚);
     						sk.Add(脚.キスマーク);
@@ -3030,13 +3030,13 @@ namespace SlaveMatrix
     						sw.Add(脚.鞭痕);
     						if (!人腿.X0Y0_腿.OP[0].Outline)
     						{
-    							人腿.腿0CD.c2.Col2 = 脚.脚CD.c2.Col1;
-    							人腿.腿1CD.c2.Col2 = 脚.脚CD.c2.Col1;
-    							人腿.腿2CD.c2.Col1 = 脚.脚CD.c2.Col1;
-    							人腿.腿3CD.c2.Col1 = 脚.脚CD.c2.Col1;
-    							人腿.腿4CD.c2.Col1 = 脚.脚CD.c2.Col1;
+    							人腿.腿0CD.c2.Col2 = 脚.LegCD.c2.Col1;
+    							人腿.腿1CD.c2.Col2 = 脚.LegCD.c2.Col1;
+    							人腿.腿2CD.c2.Col1 = 脚.LegCD.c2.Col1;
+    							人腿.腿3CD.c2.Col1 = 脚.LegCD.c2.Col1;
+    							人腿.腿4CD.c2.Col1 = 脚.LegCD.c2.Col1;
     						}
-    						脚人.脚 = 脚;
+    						脚人.Leg = 脚;
     						脚.足_接続.SetEle(delegate(足_人 足)
     						{
     							足.キスマーク = new スタンプK(Med, Are, Cha, bod, kd, 足);
@@ -3053,9 +3053,9 @@ namespace SlaveMatrix
     					獣腿 獣腿2 = (獣腿)current_element;
     					脚獣 = default(脚獣);
     					脚獣.腿 = 獣腿2;
-    					獣腿2.脚_接続.SetEle(delegate(獣脚 脚)
+    					獣腿2.Leg_接続.SetEle(delegate(獣脚 脚)
     					{
-    						脚獣.脚 = 脚;
+    						脚獣.Leg = 脚;
     						脚.足_接続.SetEle(delegate(獣足 足)
     						{
     							脚獣.足 = 足;
@@ -3102,8 +3102,8 @@ namespace SlaveMatrix
     				{
     					脚獣 = default(脚獣);
     					脚獣.腿 = null;
-    					脚獣.脚 = (獣脚)current_element;
-    					脚獣.脚.足_接続.SetEle(delegate(獣足 足)
+    					脚獣.Leg = (獣脚)current_element;
+    					脚獣.Leg.足_接続.SetEle(delegate(獣足 足)
     					{
     						脚獣.足 = 足;
     					});
@@ -3415,7 +3415,7 @@ namespace SlaveMatrix
     				sw.Add(人腿.鞭痕);
     				脚人 = default(脚人);
     				脚人.腿 = 人腿;
-    				人腿.脚_接続.SetEle(delegate(脚_人 脚)
+    				人腿.Leg_接続.SetEle(delegate(Leg_人 脚)
     				{
     					脚.キスマーク = new スタンプK(Med, Are, Cha, bod, kd, 脚);
     					sk.Add(脚.キスマーク);
@@ -3423,13 +3423,13 @@ namespace SlaveMatrix
     					sw.Add(脚.鞭痕);
     					if (!人腿.X0Y0_腿.OP[4].Outline)
     					{
-    						人腿.腿0CD.c2.Col2 = 脚.脚CD.c2.Col1;
-    						人腿.腿1CD.c2.Col2 = 脚.脚CD.c2.Col1;
-    						人腿.腿2CD.c2.Col1 = 脚.脚CD.c2.Col1;
-    						人腿.腿3CD.c2.Col1 = 脚.脚CD.c2.Col1;
-    						人腿.腿4CD.c2.Col1 = 脚.脚CD.c2.Col1;
+    						人腿.腿0CD.c2.Col2 = 脚.LegCD.c2.Col1;
+    						人腿.腿1CD.c2.Col2 = 脚.LegCD.c2.Col1;
+    						人腿.腿2CD.c2.Col1 = 脚.LegCD.c2.Col1;
+    						人腿.腿3CD.c2.Col1 = 脚.LegCD.c2.Col1;
+    						人腿.腿4CD.c2.Col1 = 脚.LegCD.c2.Col1;
     					}
-    					脚人.脚 = 脚;
+    					脚人.Leg = 脚;
     					脚.足_接続.SetEle(delegate(足_人 足)
     					{
     						足.キスマーク = new スタンプK(Med, Are, Cha, bod, kd, 足);
@@ -3446,9 +3446,9 @@ namespace SlaveMatrix
     				獣腿 獣腿2 = (獣腿)current_element;
     				脚獣 = default(脚獣);
     				脚獣.腿 = 獣腿2;
-    				獣腿2.脚_接続.SetEle(delegate(獣脚 脚)
+    				獣腿2.Leg_接続.SetEle(delegate(獣脚 脚)
     				{
-    					脚獣.脚 = 脚;
+    					脚獣.Leg = 脚;
     					脚.足_接続.SetEle(delegate(獣足 足)
     					{
     						脚獣.足 = 足;
@@ -3495,8 +3495,8 @@ namespace SlaveMatrix
     			{
     				脚獣 = default(脚獣);
     				脚獣.腿 = null;
-    				脚獣.脚 = (獣脚)current_element;
-    				脚獣.脚.足_接続.SetEle(delegate(獣足 足)
+    				脚獣.Leg = (獣脚)current_element;
+    				脚獣.Leg.足_接続.SetEle(delegate(獣足 足)
     				{
     					脚獣.足 = 足;
     				});
@@ -4318,13 +4318,13 @@ namespace SlaveMatrix
     					Sort(from e in 魚.EnumEle().Skip(1)
     						where !bod.半身後接続.Contains(e)
     						select e, 半身中2接続);
-    					Ele[] array = 腿左接続.Where((Ele e) => !(e is 腿) && !(e.Par is 腿) && !((e.Par is 脚) | (e.Par is 足))).ToArray();
+    					Ele[] array = 腿左接続.Where((Ele e) => !(e is 腿) && !(e.Par is 腿) && !((e.Par is Leg) | (e.Par is 足))).ToArray();
     					foreach (Ele item in array)
     					{
     						腿左接続.Remove(item);
     						半身前接続.Add(item);
     					}
-    					array = 腿右接続.Where((Ele e) => !(e is 腿) && !(e.Par is 腿) && !((e.Par is 脚) | (e.Par is 足))).ToArray();
+    					array = 腿右接続.Where((Ele e) => !(e is 腿) && !(e.Par is 腿) && !((e.Par is Leg) | (e.Par is 足))).ToArray();
     					foreach (Ele item2 in array)
     					{
     						腿右接続.Remove(item2);
@@ -4353,13 +4353,13 @@ namespace SlaveMatrix
     					Sort(from e in 鯨.EnumEle().Skip(1)
     						where !bod.半身後接続.Contains(e)
     						select e, 半身中2接続);
-    					Ele[] array = 腿左接続.Where((Ele e) => !(e is 腿) && !(e.Par is 腿) && !((e.Par is 脚) | (e.Par is 足))).ToArray();
+    					Ele[] array = 腿左接続.Where((Ele e) => !(e is 腿) && !(e.Par is 腿) && !((e.Par is Leg) | (e.Par is 足))).ToArray();
     					foreach (Ele item3 in array)
     					{
     						腿左接続.Remove(item3);
     						半身前接続.Add(item3);
     					}
-    					array = 腿右接続.Where((Ele e) => !(e is 腿) && !(e.Par is 腿) && !((e.Par is 脚) | (e.Par is 足))).ToArray();
+    					array = 腿右接続.Where((Ele e) => !(e is 腿) && !(e.Par is 腿) && !((e.Par is Leg) | (e.Par is 足))).ToArray();
     					foreach (Ele item4 in array)
     					{
     						腿右接続.Remove(item4);
@@ -4404,13 +4404,13 @@ namespace SlaveMatrix
     				{
     					半身中2接続.Reverse();
     				}
-    				Ele[] array = 腿左接続.Where((Ele e) => !(e is 腿) && !(e.Par is 腿) && !((e.Par is 脚) | (e.Par is 足))).ToArray();
+    				Ele[] array = 腿左接続.Where((Ele e) => !(e is 腿) && !(e.Par is 腿) && !((e.Par is Leg) | (e.Par is 足))).ToArray();
     				foreach (Ele item5 in array)
     				{
     					腿左接続.Remove(item5);
     					半身前接続.Add(item5);
     				}
-    				array = 腿右接続.Where((Ele e) => !(e is 腿) && !(e.Par is 腿) && !((e.Par is 脚) | (e.Par is 足))).ToArray();
+    				array = 腿右接続.Where((Ele e) => !(e is 腿) && !(e.Par is 腿) && !((e.Par is Leg) | (e.Par is 足))).ToArray();
     				foreach (Ele item6 in array)
     				{
     					腿右接続.Remove(item6);
@@ -4730,13 +4730,13 @@ namespace SlaveMatrix
     				{
     					Sort(蛸.軟体外右_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 半身中2接続);
     				}
-    				Ele[] array = 腿左接続.Where((Ele e) => !(e is 腿) && !(e.Par is 腿) && !((e.Par is 脚) | (e.Par is 足))).ToArray();
+    				Ele[] array = 腿左接続.Where((Ele e) => !(e is 腿) && !(e.Par is 腿) && !((e.Par is Leg) | (e.Par is 足))).ToArray();
     				foreach (Ele item7 in array)
     				{
     					腿左接続.Remove(item7);
     					半身前接続.Add(item7);
     				}
-    				array = 腿右接続.Where((Ele e) => !(e is 腿) && !(e.Par is 腿) && !((e.Par is 脚) | (e.Par is 足))).ToArray();
+    				array = 腿右接続.Where((Ele e) => !(e is 腿) && !(e.Par is 腿) && !((e.Par is Leg) | (e.Par is 足))).ToArray();
     				foreach (Ele item8 in array)
     				{
     					腿右接続.Remove(item8);
@@ -4881,13 +4881,13 @@ namespace SlaveMatrix
     				Is植 = true;
     				植 = (単足_植)ele;
     				Sort(植.EnumEle(), 半身中1接続);
-    				Ele[] array = 腿左接続.Where((Ele e) => !(e is 腿) && !(e.Par is 腿) && !((e.Par is 脚) | (e.Par is 足))).ToArray();
+    				Ele[] array = 腿左接続.Where((Ele e) => !(e is 腿) && !(e.Par is 腿) && !((e.Par is Leg) | (e.Par is 足))).ToArray();
     				foreach (Ele item9 in array)
     				{
     					腿左接続.Remove(item9);
     					半身前接続.Add(item9);
     				}
-    				array = 腿右接続.Where((Ele e) => !(e is 腿) && !(e.Par is 腿) && !((e.Par is 脚) | (e.Par is 足))).ToArray();
+    				array = 腿右接続.Where((Ele e) => !(e is 腿) && !(e.Par is 腿) && !((e.Par is Leg) | (e.Par is 足))).ToArray();
     				foreach (Ele item10 in array)
     				{
     					腿右接続.Remove(item10);
@@ -4899,13 +4899,13 @@ namespace SlaveMatrix
     				Is粘 = true;
     				粘 = (単足_粘)ele;
     				Sort(粘.EnumEle(), 半身後接続);
-    				Ele[] array = 腿左接続.Where((Ele e) => !(e is 腿) && !(e.Par is 腿) && !((e.Par is 脚) | (e.Par is 足))).ToArray();
+    				Ele[] array = 腿左接続.Where((Ele e) => !(e is 腿) && !(e.Par is 腿) && !((e.Par is Leg) | (e.Par is 足))).ToArray();
     				foreach (Ele item11 in array)
     				{
     					腿左接続.Remove(item11);
     					半身前接続.Add(item11);
     				}
-    				array = 腿右接続.Where((Ele e) => !(e is 腿) && !(e.Par is 腿) && !((e.Par is 脚) | (e.Par is 足))).ToArray();
+    				array = 腿右接続.Where((Ele e) => !(e is 腿) && !(e.Par is 腿) && !((e.Par is Leg) | (e.Par is 足))).ToArray();
     				foreach (Ele item12 in array)
     				{
     					腿右接続.Remove(item12);
@@ -4996,16 +4996,16 @@ namespace SlaveMatrix
     		}
     		foreach (脚人 item34 in 脚人左)
     		{
-    			if (item34.脚 != null)
+    			if (item34.Leg != null)
     			{
-    				Inserts(item34.脚, 1 + ((item34.脚.足_接続 != null) ? item34.脚.足_接続.Select((Ele f) => f.EnumEle()).JoinEnum().Count() : 0), new DE(item34.脚, item34.脚.外描画));
+    				Inserts(item34.Leg, 1 + ((item34.Leg.足_接続 != null) ? item34.Leg.足_接続.Select((Ele f) => f.EnumEle()).JoinEnum().Count() : 0), new DE(item34.Leg, item34.Leg.外描画));
     			}
     		}
     		foreach (脚人 item35 in 脚人右)
     		{
-    			if (item35.脚 != null)
+    			if (item35.Leg != null)
     			{
-    				Inserts(item35.脚, 1 + ((item35.脚.足_接続 != null) ? item35.脚.足_接続.Select((Ele f) => f.EnumEle()).JoinEnum().Count() : 0), new DE(item35.脚, item35.脚.外描画));
+    				Inserts(item35.Leg, 1 + ((item35.Leg.足_接続 != null) ? item35.Leg.足_接続.Select((Ele f) => f.EnumEle()).JoinEnum().Count() : 0), new DE(item35.Leg, item35.Leg.外描画));
     			}
     		}
     		foreach (脚人 item36 in 脚人左)
@@ -5129,7 +5129,7 @@ namespace SlaveMatrix
     		獣下腕 下腕右l = ((腕獣右.Count > 0) ? 腕獣右[0].下腕 : null);
     		if (!Is蠍 && !Is蜘)
     		{
-    			Ele[] array = 半身前接続.Where((Ele e) => (e is 下腕 && 下腕左l != e && 下腕右l != e) || e is 上腕 || e is 触肢 || (e.ConnectionType == ConnectionInfo.四足脇_上腕_接続 && e is 脚)).ToArray();
+    			Ele[] array = 半身前接続.Where((Ele e) => (e is 下腕 && 下腕左l != e && 下腕右l != e) || e is 上腕 || e is 触肢 || (e.ConnectionType == ConnectionInfo.四足脇_上腕_接続 && e is Leg)).ToArray();
     			foreach (Ele item15 in array)
     			{
     				半身前接続.Remove(item15);

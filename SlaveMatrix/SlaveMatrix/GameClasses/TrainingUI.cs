@@ -1580,7 +1580,7 @@ namespace SlaveMatrix
     	{
     		if (!Bod.Is拘束 && Bod.脚人n > 0)
     		{
-    			Cha.脚();
+    			Cha.Leg();
     			Cha.Bod.腿Update();
     		}
     	}
