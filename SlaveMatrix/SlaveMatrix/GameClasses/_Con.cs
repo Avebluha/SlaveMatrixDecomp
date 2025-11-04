@@ -4,9 +4,9 @@ namespace SlaveMatrix.GameClasses
 {
     public static class _Con
     {
-        public static 胸D Get胸R()
+        public static ChestD GetChestR()
         {
-            胸D obj = Uni.胸();
+            ChestD obj = Uni.Chest();
             Sta.SetValuesD(value: RNG.XS.NextDouble(), src: obj.EnumEleD(), s: "バスト");
             return obj;
         }
@@ -276,17 +276,17 @@ namespace SlaveMatrix.GameClasses
             return 胴D2;
         }
 
-        public static 胸D Set胸R(this TorsoD 胴)
+        public static ChestD SetChestR(this TorsoD 胴)
         {
-            胸D 胸D2 = Get胸R();
-            胴.Torso接続(胸D2);
-            return 胸D2;
+            ChestD ChestD2 = GetChestR();
+            胴.Torso接続(ChestD2);
+            return ChestD2;
         }
 
-        public static NeckD Set首(this 胸D 胸)
+        public static NeckD Set首(this ChestD Chest)
         {
             NeckD 首D2 = new NeckD();
-            胸.首接続(首D2);
+            Chest.首接続(首D2);
             return 首D2;
         }
 

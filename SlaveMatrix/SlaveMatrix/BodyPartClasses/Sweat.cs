@@ -18,7 +18,7 @@ namespace SlaveMatrix
     {
     	private HashSet<string> 汗対象 = new HashSet<string>
     	{
-    		Sta.胸t.ToString(),
+    		Sta.Chestt.ToString(),
     		Sta.胴t.ToString(),
     		Sta.Shouldert.ToString(),
     		Sta.腰t.ToString()

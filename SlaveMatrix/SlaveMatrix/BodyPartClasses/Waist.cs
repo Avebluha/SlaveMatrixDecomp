@@ -2129,7 +2129,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public JointS 胴_接続点 => new JointS(本体, X0Y0_腰, 0);
+    	public JointS Torso_接続点 => new JointS(本体, X0Y0_腰, 0);
 
     	public JointS 腿左_接続点 => new JointS(本体, X0Y0_腰, 1);
 
@@ -2523,7 +2523,7 @@ namespace SlaveMatrix
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 腰2;
     				f.ConnectionType = ConnectionInfo.Waist_Torso_接続;
-    				f.接続(腰2.胴_接続点);
+    				f.接続(腰2.Torso_接続点);
     				return f;
     			}).ToArray();
     		}

@@ -19,8 +19,8 @@ namespace _2DGAMELIB
             ["横髪"] = "SideHair",
             ["脚"] = "Leg",
             //["腕"] = "Arm"
-            ["肩"] = "Shoulder"
-            //["胸"] = "Chest",
+            ["肩"] = "Shoulder",
+            ["胸"] = "Chest",
             //["乳房"] = "Breast",
             //["腹"] = "Abdomen",
             //["顔"] = "Face",

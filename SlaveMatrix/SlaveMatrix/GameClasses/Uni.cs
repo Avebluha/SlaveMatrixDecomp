@@ -35,9 +35,9 @@ namespace SlaveMatrix
     		return obj;
     	}
 
-    	public static 胸D 胸()
+    	public static ChestD Chest()
     	{
-    		胸D obj = new 胸D();
+    		ChestD obj = new ChestD();
     		obj.肌接続(new 胸毛D());
     		obj.肌接続(new 胸肌D());
     		obj.肌接続(new 胸腹板D());

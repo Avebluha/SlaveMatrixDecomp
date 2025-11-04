@@ -799,27 +799,27 @@ namespace SlaveMatrix
     			後髪
     		},
     		{
-    			ConnectionInfo.胸_肩左_接続,
+    			ConnectionInfo.Chest_肩左_接続,
     			肩人
     		},
     		{
-    			ConnectionInfo.胸_肩右_接続,
+    			ConnectionInfo.Chest_肩右_接続,
     			肩人
     		},
     		{
-    			ConnectionInfo.胸_翼上左_接続,
+    			ConnectionInfo.Chest_翼上左_接続,
     			胸翼上人
     		},
     		{
-    			ConnectionInfo.胸_翼上右_接続,
+    			ConnectionInfo.Chest_翼上右_接続,
     			胸翼上人
     		},
     		{
-    			ConnectionInfo.胸_翼下左_接続,
+    			ConnectionInfo.Chest_翼下左_接続,
     			胸翼下人
     		},
     		{
-    			ConnectionInfo.胸_翼下右_接続,
+    			ConnectionInfo.Chest_翼下右_接続,
     			胸翼下人
     		},
     		{
@@ -1167,7 +1167,7 @@ namespace SlaveMatrix
     			額
     		},
     		{
-    			ConnectionInfo.胸_背中_接続,
+    			ConnectionInfo.Chest_背中_接続,
     			背中人
     		},
     		{
@@ -1824,33 +1824,33 @@ namespace SlaveMatrix
     		頭D2.AlignC();
     		NeckD 首D2 = Mix<NeckD>(母方, 父方, i, 原種モード);
     		首D2.頭接続(頭D2);
-    		胸D 胸D2 = Mix<胸D>(母方, 父方, i, 原種モード);
+    		ChestD ChestD2 = Mix<ChestD>(母方, 父方, i, 原種モード);
     		乳房D 乳房D2 = Mix<乳房D>(母方, 父方, 右: false, i, 原種モード);
     		乳房D2.噴乳接続(new 噴乳D());
     		乳房D2.噴乳接続(new ピアスD());
     		乳房D2.噴乳接続(new キャップ2D());
     		乳房D2.噴乳接続(new 下着乳首D());
-    		胸D2.胸左接続(乳房D2);
-    		胸D2.胸右接続(乳房D2.Get逆());
-    		胸D2.肌接続(Mix<胸毛D>(母方, 父方, i, 原種モード));
-    		胸D2.肌接続(Mix<胸肌D>(母方, 父方, i, 原種モード));
+    		ChestD2.胸左接続(乳房D2);
+    		ChestD2.胸右接続(乳房D2.Get逆());
+    		ChestD2.肌接続(Mix<胸毛D>(母方, 父方, i, 原種モード));
+    		ChestD2.肌接続(Mix<胸肌D>(母方, 父方, i, 原種モード));
     		胸腹板D 胸腹板D2;
-    		胸D2.肌接続(胸腹板D2 = Mix<胸腹板D>(母方, 父方, i, 原種モード));
-    		胸D2.肌接続(new 下着トップ_チューブD());
-    		胸D2.肌接続(new 下着トップ_クロスD());
-    		胸D2.肌接続(new 下着トップ_ビキニD());
-    		胸D2.肌接続(new 下着トップ_マイクロD());
-    		胸D2.肌接続(new 下着トップ_ブラD());
-    		胸D2.肌接続(new 上着トップ_ドレスD());
-    		胸D2.AlignC();
-    		胸D2.首接続(首D2);
+    		ChestD2.肌接続(胸腹板D2 = Mix<胸腹板D>(母方, 父方, i, 原種モード));
+    		ChestD2.肌接続(new 下着トップ_チューブD());
+    		ChestD2.肌接続(new 下着トップ_クロスD());
+    		ChestD2.肌接続(new 下着トップ_ビキニD());
+    		ChestD2.肌接続(new 下着トップ_マイクロD());
+    		ChestD2.肌接続(new 下着トップ_ブラD());
+    		ChestD2.肌接続(new 上着トップ_ドレスD());
+    		ChestD2.AlignC();
+    		ChestD2.首接続(首D2);
     		TorsoD 胴D2 = Mix<TorsoD>(母方, 父方, i, 原種モード);
     		胴腹板D 胴腹板D2;
     		胴D2.肌接続(胴腹板D2 = Mix<胴腹板D>(母方, 父方, i, 原種モード));
     		胴D2.肌接続(Mix<胴肌D>(母方, 父方, i, 原種モード));
     		胴D2.肌接続(new 上着ミドル_ドレスD());
     		胴D2.AlignC();
-    		胴D2.Torso接続(胸D2);
+    		胴D2.Torso接続(ChestD2);
     		WaistD 腰 = Mix<WaistD>(母方, 父方, i, 原種モード);
     		腰.膣基接続(new 膣基_人D());
     		腰.膣基接続(new 膣内精液_人D());
@@ -2160,15 +2160,15 @@ namespace SlaveMatrix
     		頭D2.接続(母方, 父方, i, ConnectionInfo.Head_顔面_接続, 要素構成, 接続構成, 変異率, 原種モード);
     		頭D2.接続(母方, 父方, i, ConnectionInfo.Head_頭頂_接続, 要素構成, 接続構成, 変異率, 原種モード);
     		頭D2.接続(母方, 父方, i, ConnectionInfo.Head_触覚左_接続, 要素構成, 接続構成, 変異率, 原種モード);
-    		胸D2.接続(母方, 父方, i, ConnectionInfo.胸_肩左_接続, 要素構成, 接続構成, 変異率, 原種モード);
+    		ChestD2.接続(母方, 父方, i, ConnectionInfo.Chest_肩左_接続, 要素構成, 接続構成, 変異率, 原種モード);
     		頭D2.接続(母方, 父方, i, ConnectionInfo.Head_額_接続, 要素構成, 接続構成, 変異率, 原種モード);
-    		胸D2.接続(母方, 父方, i, ConnectionInfo.胸_翼上左_接続, 要素構成, 接続構成, 変異率, 原種モード);
-    		胸D2.接続(母方, 父方, i, ConnectionInfo.胸_翼下左_接続, 要素構成, 接続構成, 変異率, 原種モード);
+    		ChestD2.接続(母方, 父方, i, ConnectionInfo.Chest_翼上左_接続, 要素構成, 接続構成, 変異率, 原種モード);
+    		ChestD2.接続(母方, 父方, i, ConnectionInfo.Chest_翼下左_接続, 要素構成, 接続構成, 変異率, 原種モード);
     		胴D2.接続(母方, 父方, i, ConnectionInfo.Torso_翼左_接続, 要素構成, 接続構成, 変異率, 原種モード);
     		腰.接続(母方, 父方, i, ConnectionInfo.Waist_翼左_接続, 要素構成, 接続構成, 変異率, 原種モード);
     		if (原種モード)
     		{
-    			胸D2.接続(母方, 父方, i, ConnectionInfo.胸_背中_接続, 要素構成, 接続構成, 変異率, 原種モード);
+    			ChestD2.接続(母方, 父方, i, ConnectionInfo.Chest_背中_接続, 要素構成, 接続構成, 変異率, 原種モード);
     		}
     		else
     		{
@@ -2177,27 +2177,27 @@ namespace SlaveMatrix
     			if (eleD3 != null)
     			{
     				t = eleD3.GetType().ToString();
-    				if (!胸D2.背中_接続.Any((EleD e) => e.GetType().ToString() == t) && RNG.XS.NextBool())
+    				if (!ChestD2.背中_接続.Any((EleD e) => e.GetType().ToString() == t) && RNG.XS.NextBool())
     				{
-    					胸D2.背中接続(eleD3);
+    					ChestD2.背中接続(eleD3);
     				}
     			}
     			eleD3 = Mix<背中D>(母方, 父方, i, 原種モード);
     			if (eleD3 != null)
     			{
     				t = eleD3.GetType().ToString();
-    				if (!胸D2.背中_接続.Any((EleD e) => e.GetType().ToString() == t) && RNG.XS.NextBool())
+    				if (!ChestD2.背中_接続.Any((EleD e) => e.GetType().ToString() == t) && RNG.XS.NextBool())
     				{
-    					胸D2.背中接続(eleD3);
+    					ChestD2.背中接続(eleD3);
     				}
     			}
     			eleD3 = Mix<背中D>(母方, 父方, i, 原種モード);
     			if (eleD3 != null)
     			{
     				t = eleD3.GetType().ToString();
-    				if (!胸D2.背中_接続.Any((EleD e) => e.GetType().ToString() == t) && RNG.XS.NextBool())
+    				if (!ChestD2.背中_接続.Any((EleD e) => e.GetType().ToString() == t) && RNG.XS.NextBool())
     				{
-    					胸D2.背中接続(eleD3);
+    					ChestD2.背中接続(eleD3);
     				}
     			}
     		}

@@ -379,9 +379,9 @@ namespace SlaveMatrix
     				else if (k != null)
     				{
     					k.濃度 = (k.濃度 + 0.05).Clamp(0.0, 1.0);
-    					if (マウス処理2.Bod.EI胸 != null)
+    					if (マウス処理2.Bod.EIChest != null)
     					{
-    						マウス処理2.Bod.EI胸.Updatef = true;
+    						マウス処理2.Bod.EIChest.Updatef = true;
     					}
     					if (マウス処理2.Bod.EI腕前 != null)
     					{

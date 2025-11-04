@@ -50,7 +50,7 @@ namespace SlaveMatrix
 
     	public static Type EleDt;
 
-    	public static Type 胸t;
+    	public static Type Chestt;
 
     	public static Type Shouldert;
 
@@ -1164,7 +1164,7 @@ namespace SlaveMatrix
             MaxAre = 0.0584246154149664;
     		Elet = typeof(Ele);
     		EleDt = typeof(EleD);
-    		胸t = typeof(胸);
+    		Chestt = typeof(Chest);
     		Shouldert = typeof(Shoulder);
     		胴t = typeof(Torso);
     		腰t = typeof(Waist);
@@ -1336,10 +1336,10 @@ namespace SlaveMatrix
     			ConnectionInfo.縦目_瞼_接続,
     			ConnectionInfo.吹出し_吹出し_接続,
     			ConnectionInfo.Neck_Head_接続,
-    			ConnectionInfo.胸_Neck_接続,
-    			ConnectionInfo.胸_肌_接続,
-    			ConnectionInfo.胸_背中_接続,
-    			ConnectionInfo.Torso_胸_接続,
+    			ConnectionInfo.Chest_Neck_接続,
+    			ConnectionInfo.Chest_肌_接続,
+    			ConnectionInfo.Chest_背中_接続,
+    			ConnectionInfo.Torso_Chest_接続,
     			ConnectionInfo.Torso_肌_接続,
     			ConnectionInfo.Waist_Torso_接続,
     			ConnectionInfo.Waist_肌_接続,

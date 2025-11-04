@@ -507,7 +507,7 @@ namespace SlaveMatrix
 
     	public JointS 右1_接続点 => new JointS(本体, X0Y0_胴1_胴, 1);
 
-    	public JointS 胴_接続点 => new JointS(本体, X0Y0_胴1_胴, 3);
+    	public JointS Torso_接続点 => new JointS(本体, X0Y0_胴1_胴, 3);
 
     	public JointS 鎖1_接続点 => new JointS(本体, X0Y0_輪1_金具左, 0);
 
@@ -651,7 +651,7 @@ namespace SlaveMatrix
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 長物_蟲2;
     				f.ConnectionType = ConnectionInfo.長物_蟲_Torso_接続;
-    				f.接続(長物_蟲2.胴_接続点);
+    				f.接続(長物_蟲2.Torso_接続点);
     				return f;
     			}).ToArray();
     		}

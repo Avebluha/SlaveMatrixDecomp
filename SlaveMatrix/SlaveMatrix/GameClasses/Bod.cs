@@ -56,7 +56,7 @@ namespace SlaveMatrix
 
     	public Torso 胴;
 
-    	public 胸 胸;
+    	public Chest Chest;
 
     	public Neck 首;
 
@@ -250,7 +250,7 @@ namespace SlaveMatrix
 
     	public 長物_蟲 蟲;
 
-    	public 四足胸 胸_獣;
+    	public 四足胸 Chest_獣;
 
     	public 四足胴 胴_獣;
 
@@ -560,7 +560,7 @@ namespace SlaveMatrix
 
     	private double asb2;
 
-    	public EleI EI胸;
+    	public EleI EIChest;
 
     	public EleI EI髪;
 
@@ -582,7 +582,7 @@ namespace SlaveMatrix
 
     	public bool Is髪;
 
-    	public bool Is胸;
+    	public bool IsChest;
 
     	public bool Is腰;
 
@@ -990,8 +990,8 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			胸.接続P();
-    			return 胸.X0Y0_胸郭.ToGlobal((胸.X0Y0_胸郭.OP[8].ps[2] + 胸.X0Y0_胸郭.OP[2].ps[2]) * 0.5);
+    			Chest.接続P();
+    			return Chest.X0Y0_胸郭.ToGlobal((Chest.X0Y0_胸郭.OP[8].ps[2] + Chest.X0Y0_胸郭.OP[2].ps[2]) * 0.5);
     		}
     	}
 
@@ -1498,9 +1498,9 @@ namespace SlaveMatrix
     			{
     				EI髪.Updatef = true;
     			}
-    			else if (Is胸 && EI胸.ElesH.Contains(蜘尾))
+    			else if (IsChest && EIChest.ElesH.Contains(蜘尾))
     			{
-    				EI胸.Updatef = true;
+    				EIChest.Updatef = true;
     			}
     			else if (Is腰 && EI腰.ElesH.Contains(蜘尾))
     			{
@@ -1572,7 +1572,7 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			if (左腿開きi <= 0 && 右腿開きi <= 0 && !Is腿犬 && !Is腿魚 && !Is腿獣 && (!Is獣 || 胸_獣.脇左_接続 == null || 胸_獣.脇左_接続.Length == 0) && !Is蜘 && !Is蠍)
+    			if (左腿開きi <= 0 && 右腿開きi <= 0 && !Is腿犬 && !Is腿魚 && !Is腿獣 && (!Is獣 || Chest_獣.脇左_接続 == null || Chest_獣.脇左_接続.Length == 0) && !Is蜘 && !Is蠍)
     			{
     				return Is蟲;
     			}
@@ -3268,7 +3268,7 @@ namespace SlaveMatrix
     								{
     									翼獣.上腕.接着 = () => bod.頭.X0Y0_頭.ToGlobal(bod.頭.X0Y0_頭.BasePointBase);
     								}
-    								else if (p is 胸)
+    								else if (p is Chest)
     								{
     									翼獣.上腕.接着 = () => bod.胴.X0Y0_胴.ToGlobal(bod.胴.X0Y0_胴.BasePointBase);
     								}
@@ -3284,7 +3284,7 @@ namespace SlaveMatrix
     								{
     									翼獣.上腕.接着 = () => bod.腰_獣.X0Y0_腰.ToGlobal(bod.腰.X0Y0_腰.JP[4].Joint);
     								}
-    								else if (pp != null && pp is 胸)
+    								else if (pp != null && pp is Chest)
     								{
     									翼獣.上腕.接着 = () => bod.腰.X0Y0_腰.ToGlobal(bod.腰.X0Y0_腰.BasePointBase);
     								}
@@ -3661,7 +3661,7 @@ namespace SlaveMatrix
     							{
     								翼獣.上腕.接着 = () => bod.頭.X0Y0_頭.ToGlobal(bod.頭.X0Y0_頭.BasePointBase);
     							}
-    							else if (p is 胸)
+    							else if (p is Chest)
     							{
     								翼獣.上腕.接着 = () => bod.胴.X0Y0_胴.ToGlobal(bod.胴.X0Y0_胴.BasePointBase);
     							}
@@ -3677,7 +3677,7 @@ namespace SlaveMatrix
     							{
     								翼獣.上腕.接着 = () => bod.腰_獣.X0Y0_腰.ToGlobal(bod.腰.X0Y0_腰.JP[4].Joint);
     							}
-    							else if (pp != null && pp is 胸)
+    							else if (pp != null && pp is Chest)
     							{
     								翼獣.上腕.接着 = () => bod.腰.X0Y0_腰.ToGlobal(bod.腰.X0Y0_腰.BasePointBase);
     							}
@@ -3887,7 +3887,7 @@ namespace SlaveMatrix
     		}
     		if (胴 != null)
     		{
-    			胸 = 胴.胸_接続.GetEle<胸>();
+    			Chest = 胴.Chest_接続.GetEle<Chest>();
     			胴腹板_人 = 胴.肌_接続.GetEle<胴腹板>();
     			胴肌_人 = 胴.肌_接続.GetEle<胴肌>();
     			胴腹板_人.SetHitFalse();
@@ -3895,15 +3895,15 @@ namespace SlaveMatrix
     			上着M_ドレス = 胴.肌_接続.GetEle<上着ミドル_ドレス>();
     			上着M_ドレス.SetHitFalse();
     		}
-    		if (胸 != null)
+    		if (Chest != null)
     		{
-    			首 = 胸.Neck_接続.GetEle<Neck>();
-    			胸腹板_人 = 胸.肌_接続.GetEle<胸腹板>();
-    			胸肌_人 = 胸.肌_接続.GetEle<胸肌>();
-    			胸毛_人 = 胸.肌_接続.GetEle<胸毛>();
+    			首 = Chest.Neck_接続.GetEle<Neck>();
+    			胸腹板_人 = Chest.肌_接続.GetEle<胸腹板>();
+    			胸肌_人 = Chest.肌_接続.GetEle<胸肌>();
+    			胸毛_人 = Chest.肌_接続.GetEle<胸毛>();
     			胸腹板_人.SetHitFalse();
     			胸肌_人.SetHitFalse();
-    			乳房左 = 胸.胸左_接続.GetEle<乳房>();
+    			乳房左 = Chest.胸左_接続.GetEle<乳房>();
     			噴乳左 = 乳房左.噴乳_接続.GetEle<噴乳>();
     			ピアス左 = 乳房左.噴乳_接続.GetEle<ピアス>();
     			キャップ2左 = 乳房左.噴乳_接続.GetEle<キャップ2>();
@@ -3911,7 +3911,7 @@ namespace SlaveMatrix
     			噴乳左.SetHitFalse();
     			ピアス左.SetHitFalse();
     			下着乳首左.SetHitFalse();
-    			乳房右 = 胸.胸右_接続.GetEle<乳房>();
+    			乳房右 = Chest.胸右_接続.GetEle<乳房>();
     			噴乳右 = 乳房右.噴乳_接続.GetEle<噴乳>();
     			ピアス右 = 乳房右.噴乳_接続.GetEle<ピアス>();
     			キャップ2右 = 乳房右.噴乳_接続.GetEle<キャップ2>();
@@ -3919,17 +3919,17 @@ namespace SlaveMatrix
     			噴乳右.SetHitFalse();
     			ピアス右.SetHitFalse();
     			下着乳首右.SetHitFalse();
-    			下着T_チューブ = 胸.肌_接続.GetEle<下着トップ_チューブ>();
-    			下着T_クロス = 胸.肌_接続.GetEle<下着トップ_クロス>();
-    			下着T_ビキニ = 胸.肌_接続.GetEle<下着トップ_ビキニ>();
-    			下着T_マイクロ = 胸.肌_接続.GetEle<下着トップ_マイクロ>();
-    			下着T_ブラ = 胸.肌_接続.GetEle<下着トップ_ブラ>();
+    			下着T_チューブ = Chest.肌_接続.GetEle<下着トップ_チューブ>();
+    			下着T_クロス = Chest.肌_接続.GetEle<下着トップ_クロス>();
+    			下着T_ビキニ = Chest.肌_接続.GetEle<下着トップ_ビキニ>();
+    			下着T_マイクロ = Chest.肌_接続.GetEle<下着トップ_マイクロ>();
+    			下着T_ブラ = Chest.肌_接続.GetEle<下着トップ_ブラ>();
     			下着T_チューブ.SetHitFalse();
     			下着T_クロス.SetHitFalse();
     			下着T_ビキニ.SetHitFalse();
     			下着T_マイクロ.SetHitFalse();
     			下着T_ブラ.SetHitFalse();
-    			上着T_ドレス = 胸.肌_接続.GetEle<上着トップ_ドレス>();
+    			上着T_ドレス = Chest.肌_接続.GetEle<上着トップ_ドレス>();
     			上着T_ドレス.SetHitFalse();
     		}
     		if (首 != null)
@@ -4062,10 +4062,10 @@ namespace SlaveMatrix
     		sk.Add(首.キスマーク);
     		首.鞭痕 = new スタンプW(Med, Are, Cha, this, wd, 首);
     		sw.Add(首.鞭痕);
-    		胸.キスマーク = new スタンプK(Med, Are, Cha, this, kd, 胸);
-    		sk.Add(胸.キスマーク);
-    		胸.鞭痕 = new スタンプW(Med, Are, Cha, this, wd, 胸);
-    		sw.Add(胸.鞭痕);
+    		Chest.キスマーク = new スタンプK(Med, Are, Cha, this, kd, Chest);
+    		sk.Add(Chest.キスマーク);
+    		Chest.鞭痕 = new スタンプW(Med, Are, Cha, this, wd, Chest);
+    		sw.Add(Chest.鞭痕);
     		胴.キスマーク = new スタンプK(Med, Are, Cha, this, kd, 胴);
     		sk.Add(胴.キスマーク);
     		胴.鞭痕 = new スタンプW(Med, Are, Cha, this, wd, 胴);
@@ -4178,9 +4178,9 @@ namespace SlaveMatrix
     				頭頂後 = ((頭頂_宇)頭頂).頭部後_接続.GetEle<頭頂後_宇>();
     			}
     		}
-    		if (胸.肩左_接続 != null)
+    		if (Chest.肩左_接続 != null)
     		{
-    			後脇左s = 胸.肩左_接続.GetEles<Shoulder>().ToArray();
+    			後脇左s = Chest.肩左_接続.GetEles<Shoulder>().ToArray();
     			肩左 = 後脇左s.LastOrDefault();
     			if (後脇左s.Length > 1)
     			{
@@ -4208,9 +4208,9 @@ namespace SlaveMatrix
     			後脇左s = 後脇左s.Take(後脇左s.Length - 1).ToArray();
     		}
     		nsl = new bool[1 + ((後腕左s != null) ? 後腕左s.Length : 0)];
-    		if (胸.肩右_接続 != null)
+    		if (Chest.肩右_接続 != null)
     		{
-    			後脇右s = 胸.肩右_接続.GetEles<Shoulder>().ToArray();
+    			後脇右s = Chest.肩右_接続.GetEles<Shoulder>().ToArray();
     			肩右 = 後脇右s.LastOrDefault();
     			if (後脇右s.Length > 1)
     			{
@@ -4238,21 +4238,21 @@ namespace SlaveMatrix
     			後脇右s = 後脇右s.Take(後脇右s.Length - 1).ToArray();
     		}
     		nsr = new bool[1 + ((後腕右s != null) ? 後腕右s.Length : 0)];
-    		if (胸.翼上左_接続 != null)
+    		if (Chest.翼上左_接続 != null)
     		{
-    			Sort(胸.翼上左_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 胸上左接続);
+    			Sort(Chest.翼上左_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 胸上左接続);
     		}
-    		if (胸.翼下左_接続 != null)
+    		if (Chest.翼下左_接続 != null)
     		{
-    			Sort(胸.翼下左_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 胸下左接続);
+    			Sort(Chest.翼下左_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 胸下左接続);
     		}
-    		if (胸.翼上右_接続 != null)
+    		if (Chest.翼上右_接続 != null)
     		{
-    			Sort(胸.翼上右_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 胸上右接続);
+    			Sort(Chest.翼上右_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 胸上右接続);
     		}
-    		if (胸.翼下右_接続 != null)
+    		if (Chest.翼下右_接続 != null)
     		{
-    			Sort(胸.翼下右_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 胸下右接続);
+    			Sort(Chest.翼下右_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 胸下右接続);
     		}
     		if (胴.翼左_接続 != null)
     		{
@@ -4270,9 +4270,9 @@ namespace SlaveMatrix
     		{
     			Sort(腰.翼右_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 腰後右接続);
     		}
-    		if (胸.背中_接続 != null)
+    		if (Chest.背中_接続 != null)
     		{
-    			Sort(胸.背中_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 背中接続);
+    			Sort(Chest.背中_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 背中接続);
     		}
     		if (腰.腿左_接続 != null)
     		{
@@ -4469,7 +4469,7 @@ namespace SlaveMatrix
     				{
     					if (item22 is 四足胸)
     					{
-    						胸_獣 = (四足胸)item22;
+    						Chest_獣 = (四足胸)item22;
     					}
     					else if (item22 is 四足胴)
     					{
@@ -4591,7 +4591,7 @@ namespace SlaveMatrix
     				潮吹_大_獣.SetHitFalse();
     				放尿_獣.SetHitFalse();
     				ピアス.SetHitFalse();
-    				腰.腰CD.c2.Col2 = 胸_獣.胸郭CD.c2.Col1;
+    				腰.腰CD.c2.Col2 = Chest_獣.胸郭CD.c2.Col1;
     				if (腰_獣 != null)
     				{
     					半身中1接続.Add(腰_獣);
@@ -4600,13 +4600,13 @@ namespace SlaveMatrix
     				{
     					半身中1接続.Add(胴_獣);
     				}
-    				if (胸_獣 != null)
+    				if (Chest_獣 != null)
     				{
-    					半身中1接続.Add(new DE(胸_獣, 胸_獣.胸描画));
+    					半身中1接続.Add(new DE(Chest_獣, Chest_獣.胸描画));
     				}
-    				if (胸_獣 != null)
+    				if (Chest_獣 != null)
     				{
-    					半身中1接続.Add(new DE(胸_獣, 胸_獣.肌描画));
+    					半身中1接続.Add(new DE(Chest_獣, Chest_獣.肌描画));
     				}
     				if (ボテ腹_獣 != null)
     				{
@@ -4670,27 +4670,27 @@ namespace SlaveMatrix
     						Sort(胴_獣.翼右_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 半身後接続);
     					}
     				}
-    				if (胸_獣 != null)
+    				if (Chest_獣 != null)
     				{
-    					if (胸_獣.背中_接続 != null)
+    					if (Chest_獣.背中_接続 != null)
     					{
-    						Sort(胸_獣.背中_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 半身後接続);
+    						Sort(Chest_獣.背中_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 半身後接続);
     					}
-    					if (胸_獣.翼上左_接続 != null)
+    					if (Chest_獣.翼上左_接続 != null)
     					{
-    						Sort(胸_獣.翼上左_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 半身後接続);
+    						Sort(Chest_獣.翼上左_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 半身後接続);
     					}
-    					if (胸_獣.翼下左_接続 != null)
+    					if (Chest_獣.翼下左_接続 != null)
     					{
-    						Sort(胸_獣.翼下左_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 半身後接続);
+    						Sort(Chest_獣.翼下左_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 半身後接続);
     					}
-    					if (胸_獣.翼上右_接続 != null)
+    					if (Chest_獣.翼上右_接続 != null)
     					{
-    						Sort(胸_獣.翼上右_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 半身後接続);
+    						Sort(Chest_獣.翼上右_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 半身後接続);
     					}
-    					if (胸_獣.翼下右_接続 != null)
+    					if (Chest_獣.翼下右_接続 != null)
     					{
-    						Sort(胸_獣.翼下右_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 半身後接続);
+    						Sort(Chest_獣.翼下右_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 半身後接続);
     					}
     				}
     				if (胸毛_獣 != null)
@@ -5040,13 +5040,13 @@ namespace SlaveMatrix
     				Inserts(e.Par, 2 + num, e)?.Remove(e);
     			}
     		}
-    		Ele ele5 = 腕左.LastOrDefault((Ele e) => e.Par != null && e.Par.Par != null && e.Par.Par.ConnectionType == ConnectionInfo.胸_肩左_接続);
+    		Ele ele5 = 腕左.LastOrDefault((Ele e) => e.Par != null && e.Par.Par != null && e.Par.Par.ConnectionType == ConnectionInfo.Chest_肩左_接続);
     		if (ele5 != null)
     		{
     			下腕以降左.Add(ele5);
     		}
     		HashSet<Ele> hashSet = new HashSet<Ele>();
-    		foreach (蝙通常 item38 in 蝙通常.Where((蝙通常 e) => e.上腕.Par != null && e.上腕.Par.ConnectionType == ConnectionInfo.胸_肩左_接続))
+    		foreach (蝙通常 item38 in 蝙通常.Where((蝙通常 e) => e.上腕.Par != null && e.上腕.Par.ConnectionType == ConnectionInfo.Chest_肩左_接続))
     		{
     			hashSet.Add(item38.上腕.飛膜);
     			hashSet.Add(item38.手.飛膜);
@@ -5070,13 +5070,13 @@ namespace SlaveMatrix
     		{
     			腕左.Remove(item41);
     		}
-    		ele5 = 腕右.LastOrDefault((Ele e) => e.Par != null && e.Par.Par != null && e.Par.Par.ConnectionType == ConnectionInfo.胸_肩右_接続);
+    		ele5 = 腕右.LastOrDefault((Ele e) => e.Par != null && e.Par.Par != null && e.Par.Par.ConnectionType == ConnectionInfo.Chest_肩右_接続);
     		if (ele5 != null)
     		{
     			下腕以降右.Add(ele5);
     		}
     		hashSet.Clear();
-    		foreach (蝙通常 item42 in 蝙通常.Where((蝙通常 e) => e.上腕.Par != null && e.上腕.Par.ConnectionType == ConnectionInfo.胸_肩右_接続))
+    		foreach (蝙通常 item42 in 蝙通常.Where((蝙通常 e) => e.上腕.Par != null && e.上腕.Par.ConnectionType == ConnectionInfo.Chest_肩右_接続))
     		{
     			hashSet.Add(item42.上腕.飛膜);
     			hashSet.Add(item42.手.飛膜);
@@ -5307,10 +5307,10 @@ namespace SlaveMatrix
     			染み_獣 = new 染み_獣(disUnit, 配色指定.N0, Cha.配色, Med, new 染み_獣D());
     			染み_獣.サイズ = Elements.Sum((Ele e) => e.サイズ) / (double)Elements.Length;
     			染み_獣.濃度 = 0.0;
-    			if (胸_獣.脇左_接続.IsEle<四足脇>())
+    			if (Chest_獣.脇左_接続.IsEle<四足脇>())
     			{
-    				胸_獣.X0Y0_胸郭.OP[0].Outline = false;
-    				胸_獣.X0Y0_胸郭.OP[9].Outline = false;
+    				Chest_獣.X0Y0_胸郭.OP[0].Outline = false;
+    				Chest_獣.X0Y0_胸郭.OP[9].Outline = false;
     			}
     			Vector2D positionCont3 = new Vector2D(0.0, 0.006);
     			染み_獣.X0Y0_湯気_湯気左1_湯気2.PositionCont = positionCont3;
@@ -5433,7 +5433,7 @@ namespace SlaveMatrix
     		}
     		下着乳首左.X0Y0_乳首.SizeBase = 乳房左.X0Y0_乳首.SizeBase * 1.1;
     		下着乳首右.X0Y0_乳首.SizeBase = 乳房右.X0Y0_乳首.SizeBase * 1.1;
-    		if (胸.肩左_接続 == null)
+    		if (Chest.肩左_接続 == null)
     		{
     			胸肌_人.淫タトゥ_タトゥ左_表示 = false;
     			胸肌_人.淫タトゥ_タトゥ右_表示 = false;
@@ -5455,27 +5455,27 @@ namespace SlaveMatrix
     		Set腰();
     		if (背中接続.Count + 頭頂左後接続.Count + 頭頂右後接続.Count + 胸上左接続.Count + 胸上右接続.Count + 胸下左接続.Count + 胸下右接続.Count + 胴後左接続.Count + 胴後右接続.Count + 後腕左s.Length + 後腕右s.Length > 0)
     		{
-    			EI胸 = new EleI(Med);
-    			EI胸.AddRange(背中接続);
-    			EI胸.AddRange(頭頂左後接続);
-    			EI胸.AddRange(頭頂右後接続);
-    			EI胸.AddRange(胸上左接続);
-    			EI胸.AddRange(胸上右接続);
-    			EI胸.AddRange(胸下左接続);
-    			EI胸.AddRange(胸下右接続);
-    			EI胸.AddRange(胴後左接続);
-    			EI胸.AddRange(胴後右接続);
+    			EIChest = new EleI(Med);
+    			EIChest.AddRange(背中接続);
+    			EIChest.AddRange(頭頂左後接続);
+    			EIChest.AddRange(頭頂右後接続);
+    			EIChest.AddRange(胸上左接続);
+    			EIChest.AddRange(胸上右接続);
+    			EIChest.AddRange(胸下左接続);
+    			EIChest.AddRange(胸下右接続);
+    			EIChest.AddRange(胴後左接続);
+    			EIChest.AddRange(胴後右接続);
     			List<Ele>[] array4 = 後腕左s;
     			foreach (List<Ele> es in array4)
     			{
-    				EI胸.AddRange(es);
+    				EIChest.AddRange(es);
     			}
     			array4 = 後腕右s;
     			foreach (List<Ele> es2 in array4)
     			{
-    				EI胸.AddRange(es2);
+    				EIChest.AddRange(es2);
     			}
-    			EI胸.描画処理 = delegate(RenderArea are)
+    			EIChest.描画処理 = delegate(RenderArea are)
     			{
     				bod.背中接続.描画0(are);
     				bod.背中接続.描画1(are);
@@ -5518,8 +5518,8 @@ namespace SlaveMatrix
     					es4.描画1(are);
     				}
     			};
-    			EI胸.Update();
-    			eis.Add(EI胸);
+    			EIChest.Update();
+    			eis.Add(EIChest);
     		}
     		if (後髪接続.Count > 0)
     		{
@@ -5662,7 +5662,7 @@ namespace SlaveMatrix
     			eis.Add(EI腿);
     		}
     		Is髪 = EI髪 != null;
-    		Is胸 = EI胸 != null;
+    		IsChest = EIChest != null;
     		Is腰 = EI腰 != null;
     		Is腕前 = EI腕前 != null;
     		Is半後 = EI半後 != null;
@@ -5677,9 +5677,9 @@ namespace SlaveMatrix
     			{
     				bod.染み_人.色更新();
     				bod.染み_人.描画0(are);
-    				if (bod.Is胸)
+    				if (bod.IsChest)
     				{
-    					bod.EI胸.描画(are);
+    					bod.EIChest.描画(are);
     				}
     				if (bod.Is腰)
     				{
@@ -5765,7 +5765,7 @@ namespace SlaveMatrix
     				bod.腰.描画0(are);
     				bod.腰.描画1(are);
     				bod.胴.描画0(are);
-    				bod.胸.描画0(are);
+    				bod.Chest.描画0(are);
     				bod.首.描画0(are);
     				if (bod.肩左 != null)
     				{
@@ -6104,9 +6104,9 @@ namespace SlaveMatrix
     				}
     				bod.染み_人.色更新();
     				bod.染み_人.描画0(are);
-    				if (bod.Is胸)
+    				if (bod.IsChest)
     				{
-    					bod.EI胸.描画(are);
+    					bod.EIChest.描画(are);
     				}
     				if (bod.Is腰)
     				{
@@ -6192,7 +6192,7 @@ namespace SlaveMatrix
     				bod.腰.描画0(are);
     				bod.腰.描画1(are);
     				bod.胴.描画0(are);
-    				bod.胸.描画0(are);
+    				bod.Chest.描画0(are);
     				bod.首.描画0(are);
     				if (bod.肩左 != null)
     				{
@@ -6549,9 +6549,9 @@ namespace SlaveMatrix
     						bod.カーソル.描画2(Are);
     					}
     				}
-    				if (bod.Is胸)
+    				if (bod.IsChest)
     				{
-    					bod.EI胸.描画(are);
+    					bod.EIChest.描画(are);
     				}
     				if (bod.Is腰)
     				{
@@ -6619,7 +6619,7 @@ namespace SlaveMatrix
     				bod.腰.描画0(are);
     				bod.腰.描画1(are);
     				bod.胴.描画0(are);
-    				bod.胸.描画0(are);
+    				bod.Chest.描画0(are);
     				bod.首.描画0(are);
     				if (bod.肩左 != null)
     				{
@@ -6957,9 +6957,9 @@ namespace SlaveMatrix
     			{
     				bod.染み_人.色更新();
     				bod.染み_人.描画0(are);
-    				if (bod.Is胸)
+    				if (bod.IsChest)
     				{
-    					bod.EI胸.描画(are);
+    					bod.EIChest.描画(are);
     				}
     				if (bod.Is腰)
     				{
@@ -7045,7 +7045,7 @@ namespace SlaveMatrix
     				bod.腰.描画0(are);
     				bod.腰.描画1(are);
     				bod.胴.描画0(are);
-    				bod.胸.描画0(are);
+    				bod.Chest.描画0(are);
     				bod.首.描画0(are);
     				if (bod.肩左 != null)
     				{
@@ -7381,9 +7381,9 @@ namespace SlaveMatrix
     				}
     				bod.染み_人.色更新();
     				bod.染み_人.描画0(are);
-    				if (bod.Is胸)
+    				if (bod.IsChest)
     				{
-    					bod.EI胸.描画(are);
+    					bod.EIChest.描画(are);
     				}
     				if (bod.Is腰)
     				{
@@ -7469,7 +7469,7 @@ namespace SlaveMatrix
     				bod.腰.描画0(are);
     				bod.腰.描画1(are);
     				bod.胴.描画0(are);
-    				bod.胸.描画0(are);
+    				bod.Chest.描画0(are);
     				bod.首.描画0(are);
     				if (bod.肩左 != null)
     				{
@@ -7804,9 +7804,9 @@ namespace SlaveMatrix
     			{
     				bod.染み_人.色更新();
     				bod.染み_人.描画0(are);
-    				if (bod.Is胸)
+    				if (bod.IsChest)
     				{
-    					bod.EI胸.描画(are);
+    					bod.EIChest.描画(are);
     				}
     				if (bod.Is腰)
     				{
@@ -7892,7 +7892,7 @@ namespace SlaveMatrix
     				bod.腰.描画0(are);
     				bod.腰.描画1(are);
     				bod.胴.描画0(are);
-    				bod.胸.描画0(are);
+    				bod.Chest.描画0(are);
     				bod.首.描画0(are);
     				if (bod.肩左 != null)
     				{
@@ -8240,9 +8240,9 @@ namespace SlaveMatrix
     			{
     				bod.染み_人.色更新();
     				bod.染み_人.描画0(are);
-    				if (bod.Is胸)
+    				if (bod.IsChest)
     				{
-    					bod.EI胸.描画(are);
+    					bod.EIChest.描画(are);
     				}
     				if (bod.Is腰)
     				{
@@ -8344,7 +8344,7 @@ namespace SlaveMatrix
     					bod.断面_人.描画0(are);
     				}
     				bod.胴.描画0(are);
-    				bod.胸.描画0(are);
+    				bod.Chest.描画0(are);
     				bod.首.描画0(are);
     				if (bod.肩左 != null)
     				{
@@ -8684,9 +8684,9 @@ namespace SlaveMatrix
     			bod.cb1 = bod.cb0 && !bod.カーソル.コキ;
     			bod.染み_人.色更新();
     			bod.染み_人.描画0(are);
-    			if (bod.Is胸)
+    			if (bod.IsChest)
     			{
-    				bod.EI胸.描画(are);
+    				bod.EIChest.描画(are);
     			}
     			if (bod.Is腰)
     			{
@@ -8772,7 +8772,7 @@ namespace SlaveMatrix
     			bod.腰.描画0(are);
     			bod.腰.描画1(are);
     			bod.胴.描画0(are);
-    			bod.胸.描画0(are);
+    			bod.Chest.描画0(are);
     			bod.首.描画0(are);
     			if (bod.肩左 != null)
     			{
