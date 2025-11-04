@@ -307,7 +307,7 @@ namespace SlaveMatrix
 
     	public JointS 上腕_接続点 => new JointS(本体, X0Y0_Shoulder_Shoulder, 1);
 
-    	public Shoulder(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, ShoulderD e)
+    	public Shoulder(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, ShoulderD e)
     	{
     		Shoulder Shoulder2 = this;
     		ThisType = GetType();

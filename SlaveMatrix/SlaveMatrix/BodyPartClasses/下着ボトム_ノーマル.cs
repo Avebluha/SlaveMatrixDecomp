@@ -2709,7 +2709,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 下着ボトム_ノーマル(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 下着ボトム_ノーマルD e)
+    	public 下着ボトム_ノーマル(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 下着ボトム_ノーマルD e)
     	{
     		ThisType = GetType();
     		Dif dif = new Dif(Sta.胴体["下着ボトム"][0]);

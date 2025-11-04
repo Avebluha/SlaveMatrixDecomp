@@ -18,7 +18,7 @@ namespace SlaveMatrix
                 percent = 47.0;
             }
 
-            Med med = new Med
+            ModeEventDispatcher med = new ModeEventDispatcher
     		{
     			UITitle = GameText.スレイブマトリクス,
     			Unit = Sta.HighQuality ? 2203.0 : 1101.5,

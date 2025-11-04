@@ -164,7 +164,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 汗(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 汗D e)
+    	public 汗(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 汗D e)
     	{
     		ThisType = GetType();
     		本体 = new Difs(Sta.スタンプ["汗"]);

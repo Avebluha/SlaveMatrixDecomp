@@ -21,7 +21,7 @@ namespace SlaveMatrix
     //three subclasses: one for bukkake, kiss marks, and whip marks
     public class Stamp
     {
-    	public Med Med;
+    	public ModeEventDispatcher Med;
 
     	public RenderArea Are;
 
@@ -55,7 +55,7 @@ namespace SlaveMatrix
     	{
     	}
 
-    	public Stamp(Med Med, RenderArea Are, Cha Cha, Bod Bod, EleD EleD)
+    	public Stamp(ModeEventDispatcher Med, RenderArea Are, Cha Cha, Bod Bod, EleD EleD)
     	{
     		this.Med = Med;
     		this.Are = Are;

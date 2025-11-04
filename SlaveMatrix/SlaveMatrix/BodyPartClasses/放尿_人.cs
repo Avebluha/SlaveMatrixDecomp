@@ -542,7 +542,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 放尿_人(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 放尿_人D e)
+    	public 放尿_人(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 放尿_人D e)
     	{
     		ThisType = GetType();
     		本体 = new Difs(Sta.性器付["放尿"]);

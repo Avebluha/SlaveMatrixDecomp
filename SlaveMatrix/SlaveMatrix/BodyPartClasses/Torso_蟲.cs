@@ -473,7 +473,7 @@ namespace SlaveMatrix
 
     	public JointS 鎖2_接続点 => new JointS(本体, X0Y0_輪_金具右, 0);
 
-    	public Torso_蟲(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, Torso_蟲D e)
+    	public Torso_蟲(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, Torso_蟲D e)
     	{
     		Torso_蟲 胴_蟲2 = this;
     		ThisType = GetType();

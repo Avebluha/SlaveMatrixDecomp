@@ -414,7 +414,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public SideHair_編み(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, SideHair_編みD e)
+    	public SideHair_編み(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, SideHair_編みD e)
     	{
     		ThisType = GetType();
     		Dif dif = new Dif();

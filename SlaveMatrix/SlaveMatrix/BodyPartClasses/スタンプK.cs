@@ -57,7 +57,7 @@ namespace SlaveMatrix
     		return null;
     	}
 
-    	public スタンプK(Med Med, RenderArea Are, Cha Cha, Bod Bod, EleD EleD, Ele Par)
+    	public スタンプK(ModeEventDispatcher Med, RenderArea Are, Cha Cha, Bod Bod, EleD EleD, Ele Par)
     		: base(Med, Are, Cha, Bod, EleD)
     	{
     		this.Par = Par;

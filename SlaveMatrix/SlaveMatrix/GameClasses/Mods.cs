@@ -17,7 +17,7 @@ namespace SlaveMatrix
     public static class MyUI
     {
         //normal rectangular buttons
-        public static But1 Button(Med med, RenderArea buffer, string text, Vector2D pos, Action<But> on_click) {
+        public static But1 Button(ModeEventDispatcher med, RenderArea buffer, string text, Vector2D pos, Action<But> on_click) {
 
             ParT parT = new ParT();
             parT.Font = new Font("MS Gothic", 0.1f);
@@ -75,7 +75,7 @@ namespace SlaveMatrix
         }
 
         //rhombus shaped buttons
-        public static But1 Button2(Med med, RenderArea buffer, string text, Vector2D pos, Action<But> on_click) {
+        public static But1 Button2(ModeEventDispatcher med, RenderArea buffer, string text, Vector2D pos, Action<But> on_click) {
             ParT parT = new ParT();
             parT.Font = new Font("MS Gothic", 0.1f);
             parT.PositionBase = buffer.GetPosition(pos);
@@ -111,7 +111,7 @@ namespace SlaveMatrix
             );
         }
 
-        public static Lab Label(Med med, RenderArea buffer, string text, Vector2D pos) {
+        public static Lab Label(ModeEventDispatcher med, RenderArea buffer, string text, Vector2D pos) {
             return new Lab(
                     buffer,
                     "",
@@ -201,7 +201,7 @@ namespace SlaveMatrix
 
         public static int MaxRoomNumber => 135;
 
-    	public static Dictionary<string, Module> GetMods(Med Med)
+    	public static Dictionary<string, Module> GetMods(ModeEventDispatcher Med)
     	{
     		Sta.LoadConfig();
     		Sta.タイル準備();
@@ -526,7 +526,7 @@ namespace SlaveMatrix
         };
         static double v = 0.0;
 
-        private static void SwitchMode(Med Med, RenderArea Are, FPS FPS, Action<RenderArea, FPS> 描画)
+        private static void SwitchMode(ModeEventDispatcher Med, RenderArea Are, FPS FPS, Action<RenderArea, FPS> 描画)
     	{
             if (fade_in)
     		{
@@ -552,7 +552,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public static void SwitchMode(this Med Med, string Mode, RenderArea Are, Action<RenderArea, FPS> 描画)
+    	public static void SwitchMode(this ModeEventDispatcher Med, string Mode, RenderArea Are, Action<RenderArea, FPS> 描画)
     	{
     		Med.Mode = Mode;
     		描画(drawArea, Med.FPSF);
@@ -561,7 +561,7 @@ namespace SlaveMatrix
     		fade_in = true;
     	}
 
-        public static void flash(this Med Med)
+        public static void flash(this ModeEventDispatcher Med)
         {
             調教描画(drawArea, Med.FPSF);
             Color col = Color.FromArgb(128, Color.White);
@@ -596,12 +596,12 @@ namespace SlaveMatrix
 
         //  save/load handling
         //TODO: fix
-    	public static void SetSLlv(Med Med)
+    	public static void SetSLlv(ModeEventDispatcher Med)
     	{
     		SaveData.Acts = sllv(Med);
     	}
 
-    	private static IEnumerable<TA> sllv(Med Med)
+    	private static IEnumerable<TA> sllv(ModeEventDispatcher Med)
     	{
     		int j = 0;
     		string[] array = Sta.SDPaths();
@@ -638,7 +638,7 @@ namespace SlaveMatrix
     		Sta.GDSave(0);
     	}
 
-    	private static void Save(string Path, int i, Med Med)
+    	private static void Save(string Path, int i, ModeEventDispatcher Med)
     	{
     		ip.SubInfoIm = GameText.セーブ中です + "\r\n" + GameText.しばらくお待ちください;
 
@@ -653,7 +653,7 @@ namespace SlaveMatrix
     		//Med.InvokeL(Sounds.完了.Play);
     	}
 
-    	private static void Load(string Path, int i, Med Med)
+    	private static void Load(string Path, int i, ModeEventDispatcher Med)
     	{
     		ip.SubInfoIm = GameText.ロード中です + "\r\n" + GameText.しばらくお待ちください;
 		
@@ -694,12 +694,12 @@ namespace SlaveMatrix
     		
     	}
 
-        public static void SetJSLlv(Med med)
+        public static void SetJSLlv(ModeEventDispatcher med)
         {
             SaveData.Acts = jsllv(med);
         }
 
-        private static IEnumerable<TA> jsllv(Med med)
+        private static IEnumerable<TA> jsllv(ModeEventDispatcher med)
         {
             int k = 0;
             string[] array = Sta.JSDPaths();
@@ -724,7 +724,7 @@ namespace SlaveMatrix
             }
         }
 
-        private static void JsonSave(string Path, int i, Med med)
+        private static void JsonSave(string Path, int i, ModeEventDispatcher med)
         {
             ip.SubInfoIm = GameText.セーブ中です + "\r\n" + GameText.しばらくお待ちください;
 
@@ -738,7 +738,7 @@ namespace SlaveMatrix
             ip.SubInfoIm = i + ": " + Sta.GameData.GetSaveDateString() + "\r\n" + GameText.セーブしました;
             //Sounds.完了.Play();
         }
-        private static void JsonLoad(string Path, int i, Med med)
+        private static void JsonLoad(string Path, int i, ModeEventDispatcher med)
         {
             ip.SubInfoIm = GameText.ロード中です + "\r\n" + GameText.しばらくお待ちください;
 
@@ -958,7 +958,7 @@ namespace SlaveMatrix
     			Sta.GameData.新日 = true;
     		}
     	}
-    	public static bool PassTime(Med Med)
+    	public static bool PassTime(ModeEventDispatcher Med)
     	{
     		bool flag = Sta.GameData.時間帯 == GameText.夜;
             Player.RecoverPlayerStamina();
@@ -1006,7 +1006,7 @@ namespace SlaveMatrix
     		}
     		return flag;
     	}        
-        public static void PassDay(Med Med)
+        public static void PassDay(ModeEventDispatcher Med)
     	{
     		while (!PassTime(Med))
     		{
@@ -1078,7 +1078,7 @@ namespace SlaveMatrix
     		TrainingTarget.Bod.Update();
     	}
 
-    	public static void SetTrainingTarget(Med Med, Unit u)
+    	public static void SetTrainingTarget(ModeEventDispatcher Med, Unit u)
     	{
     		Sta.GameData.TrainingTarget = u;
     		if (TrainingTarget != null)
@@ -1159,7 +1159,7 @@ namespace SlaveMatrix
 
 
         //modules
-    	public static Module Start(Med Med)
+    	public static Module Start(ModeEventDispatcher Med)
     	{
     		return new Module
     		{
@@ -1170,7 +1170,7 @@ namespace SlaveMatrix
     		};
     	}
 
-    	public static Module Credit(Med Med) {
+    	public static Module Credit(ModeEventDispatcher Med) {
     		MotV mv = new MotV(0.0, 1.0){BaseSpeed = 0.5};
 
     		double v = 0.0;
@@ -1250,7 +1250,7 @@ namespace SlaveMatrix
     		};
     	}
 
-    	public static Module Title(Med Med)
+    	public static Module Title(ModeEventDispatcher Med)
     	{
     		MotV mv = new MotV(0.0, 1.0)
     		{
@@ -1404,7 +1404,7 @@ namespace SlaveMatrix
     		};
     	}
 
-    	public static Module メインフォーム(Med Med)
+    	public static Module メインフォーム(ModeEventDispatcher Med)
     	{
     		Buts bs = new Buts();
 
@@ -1472,7 +1472,7 @@ namespace SlaveMatrix
 
             メインフォーム描画 = delegate (RenderArea a, FPS FPS)
             {
-                Med.GH.Clear(Col.Transparent);
+                Med.HitGraphics.Clear(Col.Transparent);
                 if (a.HitGraphics != null)
                 {
                     a.HitGraphics.Clear(Col.Transparent);
@@ -1633,7 +1633,7 @@ namespace SlaveMatrix
             };
     	}
 
-    	public static Module Training(Med Med)
+    	public static Module Training(ModeEventDispatcher Med)
     	{
     		調教背景 BackgroundDrawing = new 調教背景();
     		RenderArea TrainingBackground = new RenderArea(Med, Hit: false);
@@ -1694,7 +1694,7 @@ namespace SlaveMatrix
             調教描画 = delegate (RenderArea a, FPS FPS)
             {
                 Player.UI.Mots.Drive(FPS);
-                Med.GH.Clear(Col.Transparent);
+                Med.HitGraphics.Clear(Col.Transparent);
                 if (a.HitGraphics != null)
                 {
                     a.HitGraphics.Clear(Col.Transparent);
@@ -1819,11 +1819,11 @@ namespace SlaveMatrix
             };
     	}
 
-    	public static Module 調教中継行(Med Med)
+    	public static Module 調教中継行(ModeEventDispatcher Med)
     	{
     		中継描画 = delegate(RenderArea a, FPS FPS)
     		{
-    			Med.GH.Clear(Col.Transparent);
+    			Med.HitGraphics.Clear(Col.Transparent);
     			if (a.HitGraphics != null)
     			{
     				a.HitGraphics.Clear(Col.Transparent);
@@ -1869,7 +1869,7 @@ namespace SlaveMatrix
             };
     	}
 
-    	public static Module 調教中継帰(Med Med)
+    	public static Module 調教中継帰(ModeEventDispatcher Med)
     	{
     		bool Result2 = false;
     		bool Result3 = false;
@@ -2003,7 +2003,7 @@ namespace SlaveMatrix
             };
     	}
 
-    	public static Module 対象(Med Med)
+    	public static Module 対象(ModeEventDispatcher Med)
     	{
     		try
     		{
@@ -3279,7 +3279,7 @@ namespace SlaveMatrix
 
                 対象描画 = delegate (RenderArea a, FPS FPS)
                 {
-                    Med.GH.Clear(Col.Transparent);
+                    Med.HitGraphics.Clear(Col.Transparent);
                     if (a.HitGraphics != null)
                     {
                         a.HitGraphics.Clear(Col.Transparent);
@@ -3316,7 +3316,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public static Module Blessing(Med Med)
+    	public static Module Blessing(ModeEventDispatcher Med)
     	{
     		Cha 祝福 = null;
     		bool d = false;
@@ -3498,7 +3498,7 @@ namespace SlaveMatrix
 
             DrawBlessing = delegate (RenderArea a, FPS FPS)
             {
-                Med.GH.Clear(Col.Transparent);
+                Med.HitGraphics.Clear(Col.Transparent);
                 if (a.HitGraphics != null)
                 {
                     a.HitGraphics.Clear(Col.Transparent);
@@ -3647,7 +3647,7 @@ namespace SlaveMatrix
             };
     	}
 
-    	public static Module Office(Med Med)
+    	public static Module Office(ModeEventDispatcher Med)
     	{
     		Module mod = new Module();
     		Buts bs = new Buts();
@@ -3912,7 +3912,7 @@ namespace SlaveMatrix
     		return mod;
     	}
 
-    	public static Module Debt(Med Med)
+    	public static Module Debt(ModeEventDispatcher Med)
     	{
     		Module mod = new Module();
     		Vector2D position = DrawBuffer.GetPosition(0.15, 0.37);
@@ -4393,7 +4393,7 @@ namespace SlaveMatrix
     		};
     		DrawDebt = delegate(RenderArea a, FPS FPS)
     		{
-    			Med.GH.Clear(Col.Transparent);
+    			Med.HitGraphics.Clear(Col.Transparent);
     			if (a.HitGraphics != null)
     			{
     				a.HitGraphics.Clear(Col.Transparent);
@@ -4421,7 +4421,7 @@ namespace SlaveMatrix
     		return mod;
     	}
 
-    	public static Module SlaveShop(Med Med)
+    	public static Module SlaveShop(ModeEventDispatcher Med)
     	{
     		Module mod = new Module();
     		Cha PurchasTarget = null;
@@ -5072,7 +5072,7 @@ namespace SlaveMatrix
     		};
     		DrawSlaveShop = delegate(RenderArea a, FPS FPS)
     		{
-    			Med.GH.Clear(Col.Transparent);
+    			Med.HitGraphics.Clear(Col.Transparent);
     			if (a.HitGraphics != null)
     			{
     				a.HitGraphics.Clear(Col.Transparent);
@@ -5112,7 +5112,7 @@ namespace SlaveMatrix
     		return mod;
     	}
 
-    	public static Module ToolShop(Med Med)
+    	public static Module ToolShop(ModeEventDispatcher Med)
     	{
     		Module mod = new Module();
     		Buts bs = new Buts();
@@ -5439,7 +5439,7 @@ namespace SlaveMatrix
     		};
     		DrawToolShop = delegate(RenderArea a, FPS FPS)
     		{
-    			Med.GH.Clear(Col.Transparent);
+    			Med.HitGraphics.Clear(Col.Transparent);
     			if (a.HitGraphics != null)
     			{
     				a.HitGraphics.Clear(Col.Transparent);
@@ -5467,7 +5467,7 @@ namespace SlaveMatrix
     		return mod;
     	}
 
-    	public static Module StartOfDay(Med Med)
+    	public static Module StartOfDay(ModeEventDispatcher Med)
     	{
     		Module obj = new Module
     		{
@@ -5532,7 +5532,7 @@ namespace SlaveMatrix
     			{
     				TrainingTarget.Mots.Drive(FPS);
     			}
-    			Med.GH.Clear(Col.Transparent);
+    			Med.HitGraphics.Clear(Col.Transparent);
     			if (a.HitGraphics != null)
     			{
     				a.HitGraphics.Clear(Col.Transparent);
@@ -5551,7 +5551,7 @@ namespace SlaveMatrix
     		return obj;
     	}
 
-    	public static Module PlayerInformation(Med Med)
+    	public static Module PlayerInformation(ModeEventDispatcher Med)
     	{
     		Module mod = new Module();
     		double num = 0.2;
@@ -5852,7 +5852,7 @@ namespace SlaveMatrix
     		};
     		PlayerInformationSliders = delegate(RenderArea a, FPS FPS)
     		{
-    			Med.GH.Clear(Col.Transparent);
+    			Med.HitGraphics.Clear(Col.Transparent);
     			if (a.HitGraphics != null)
     			{
     				a.HitGraphics.Clear(Col.Transparent);
@@ -5896,7 +5896,7 @@ namespace SlaveMatrix
     		return mod;
     	}
 
-    	public static Module OP0(Med Med)
+    	public static Module OP0(ModeEventDispatcher Med)
     	{
     		Module mod = new Module();
     		int i = 0;
@@ -5968,7 +5968,7 @@ namespace SlaveMatrix
     		return mod;
     	}
 
-    	public static Module OP1(Med Med)
+    	public static Module OP1(ModeEventDispatcher Med)
     	{
     		Module mod = new Module();
     		int i = 0;
@@ -6231,7 +6231,7 @@ namespace SlaveMatrix
     		return mod;
     	}
 
-    	public static Module 説明(Med Med)
+    	public static Module 説明(ModeEventDispatcher Med)
     	{
     		Module mod = new Module();
     		int i = 0;
@@ -6388,7 +6388,7 @@ namespace SlaveMatrix
     		return mod;
     	}
 
-    	public static Module 初事務所(Med Med)
+    	public static Module 初事務所(ModeEventDispatcher Med)
     	{
     		Module mod = new Module();
     		int i = 0;
@@ -6695,7 +6695,7 @@ namespace SlaveMatrix
     		return mod;
     	}
 
-    	public static Module RepaymentEvent1(Med Med)
+    	public static Module RepaymentEvent1(ModeEventDispatcher Med)
     	{
     		Module mod = new Module();
     		int i = 0;
@@ -6803,7 +6803,7 @@ namespace SlaveMatrix
     		return mod;
     	}
 
-    	public static Module RepaymentEvent2(Med Med)
+    	public static Module RepaymentEvent2(ModeEventDispatcher Med)
     	{
     		Module mod = new Module();
     		int i = 0;
@@ -6904,7 +6904,7 @@ namespace SlaveMatrix
     		return mod;
     	}
 
-    	public static Module RepaymentEvent3(Med Med)
+    	public static Module RepaymentEvent3(ModeEventDispatcher Med)
     	{
     		Module mod = new Module();
     		bool yes = false;
@@ -7195,7 +7195,7 @@ namespace SlaveMatrix
     		return mod;
     	}
 
-    	public static Module ViolaBlessing(Med Med)
+    	public static Module ViolaBlessing(ModeEventDispatcher Med)
     	{
     		Module mod = new Module();
     		int i = 0;
@@ -7330,7 +7330,7 @@ namespace SlaveMatrix
 
         //buttons added by the other guy
 
-    	public static void NewButtons(Med med)
+    	public static void NewButtons(ModeEventDispatcher med)
     	{
     		if (Sta.SensesButton)
     		{

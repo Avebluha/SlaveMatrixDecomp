@@ -83,7 +83,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 目尻影(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 目尻影D e)
+    	public 目尻影(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 目尻影D e)
     	{
     		ThisType = GetType();
     		本体 = new Difs(Sta.胴体["目尻影左"]);

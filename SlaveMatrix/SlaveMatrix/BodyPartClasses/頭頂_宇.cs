@@ -1855,7 +1855,7 @@ namespace SlaveMatrix
 
     	public JointS 頭部後_接続点 => new JointS(本体, X0Y0_頭部, 0);
 
-    	public 頭頂_宇(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 頭頂_宇D e)
+    	public 頭頂_宇(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 頭頂_宇D e)
     	{
     		頭頂_宇 頭頂_宇2 = this;
     		ThisType = GetType();

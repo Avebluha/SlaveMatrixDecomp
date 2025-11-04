@@ -36,7 +36,7 @@ namespace SlaveMatrix
     		return false;
     	}
 
-    	public EleI(Med Med)
+    	public EleI(ModeEventDispatcher Med)
     	{
     		Lay = new RenderArea(Med.Unit, Med.Base.XRatio, Med.Base.YRatio, Med.Base.Size + 0.0025, Med.DisQuality, Med.HitAccuracy);
     		ElesH = new HashSet<Ele>();

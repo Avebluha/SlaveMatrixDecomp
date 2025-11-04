@@ -3795,7 +3795,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public ハンド(double DisUnit, 配色指定 配色指定, 主人公配色 体配色, Med Med, ハンドD e)
+    	public ハンド(double DisUnit, 配色指定 配色指定, 主人公配色 体配色, ModeEventDispatcher Med, ハンドD e)
     	{
     		ThisType = GetType();
     		本体 = new Difs(Sta.カーソル["ハンド"]);

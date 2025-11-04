@@ -732,7 +732,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 手_蝙(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 手_蝙D e)
+    	public 手_蝙(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 手_蝙D e)
     	{
     		飛膜 = new 飛膜_先(DisUnit, 配色指定, 体配色);
     		飛膜.Par = this;

@@ -588,7 +588,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 下着トップ_クロス(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 下着トップ_クロスD e)
+    	public 下着トップ_クロス(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 下着トップ_クロスD e)
     	{
     		ThisType = GetType();
     		Dif dif = new Dif(Sta.胴体["下着トップ"][4]);

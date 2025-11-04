@@ -802,7 +802,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 単足_粘(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 単足_粘D e)
+    	public 単足_粘(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 単足_粘D e)
     	{
     		ThisType = GetType();
     		Dif dif = new Dif();

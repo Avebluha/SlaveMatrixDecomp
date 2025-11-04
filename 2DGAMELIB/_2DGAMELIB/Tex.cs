@@ -249,7 +249,7 @@ namespace _2DGAMELIB
     		pars.Add(feed.Tag, feed);
     	}
 
-    	public void SetHitColor(Med Med)
+    	public void SetHitColor(ModeEventDispatcher Med)
     	{
     		if (parT.HitColor != Color.Transparent)
     		{

@@ -87,12 +87,12 @@ namespace SlaveMatrix
         [OnDeserialized]
         private void OnDeserialized(StreamingContext _) => ThisType = GetType();
 
-        public virtual Ele GetEle(double DisUnit, Med Med, 体配色 体配色)
+        public virtual Ele GetEle(double DisUnit, ModeEventDispatcher Med, 体配色 体配色)
     	{
     		return null;
     	}
 
-    	public virtual Ele GetEle(double DisUnit, Med Med, 主人公配色 体配色)
+    	public virtual Ele GetEle(double DisUnit, ModeEventDispatcher Med, 主人公配色 体配色)
     	{
     		return null;
     	}

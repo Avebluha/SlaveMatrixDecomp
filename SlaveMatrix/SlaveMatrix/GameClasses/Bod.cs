@@ -34,7 +34,7 @@ namespace SlaveMatrix
 
     public class Bod
     {
-    	public Med Med;
+    	public ModeEventDispatcher Med;
 
     	public Cha Cha;
 
@@ -2931,7 +2931,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public Bod(Med Med, RenderArea Are, Cha Cha)
+    	public Bod(ModeEventDispatcher Med, RenderArea Are, Cha Cha)
     	{
     		Bod bod = this;
     		this.Med = Med;

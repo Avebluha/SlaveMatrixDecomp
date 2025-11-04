@@ -694,7 +694,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 上着トップ_ドレス(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 上着トップ_ドレスD e)
+    	public 上着トップ_ドレス(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 上着トップ_ドレスD e)
     	{
     		ThisType = GetType();
     		Dif dif = new Dif(Sta.胴体["上着トップ"][2]);

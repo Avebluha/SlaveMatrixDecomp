@@ -563,7 +563,7 @@ namespace SlaveMatrix
     		Muscular = ChaD.body_tree.筋肉;
     	}
 
-    	public void SetViola(Med Med, RenderArea Are)
+    	public void SetViola(ModeEventDispatcher Med, RenderArea Are)
     	{
     		階層位置 = 0;
     		RoomNumber = 0;

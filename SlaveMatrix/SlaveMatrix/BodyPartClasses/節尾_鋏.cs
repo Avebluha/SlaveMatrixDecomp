@@ -313,7 +313,7 @@ namespace SlaveMatrix
 
     	public JointS 鎖2_接続点 => new JointS(本体, X0Y0_輪_金具右, 0);
 
-    	public 節尾_鋏(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 節尾_鋏D e)
+    	public 節尾_鋏(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 節尾_鋏D e)
     	{
     		ThisType = GetType();
     		Dif dif = new Dif();

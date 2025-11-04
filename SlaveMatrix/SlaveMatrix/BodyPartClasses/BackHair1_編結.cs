@@ -408,7 +408,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public BackHair1_編結(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, BackHair1_編結D e)
+    	public BackHair1_編結(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, BackHair1_編結D e)
     	{
     		ThisType = GetType();
     		Dif dif = new Dif();

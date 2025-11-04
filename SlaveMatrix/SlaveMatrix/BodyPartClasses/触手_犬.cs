@@ -6059,7 +6059,7 @@ namespace SlaveMatrix
 
     	public JointS 鎖6_接続点 => new JointS(本体, X0Y0_脚前_輪_金具右, 0);
 
-    	public 触手_犬(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 触手_犬D e)
+    	public 触手_犬(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 触手_犬D e)
     	{
     		触手_犬 触手_犬2 = this;
     		ThisType = GetType();

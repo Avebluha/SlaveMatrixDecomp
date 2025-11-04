@@ -66,7 +66,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public スタンプB(Med Med, RenderArea Are, Cha Cha, Bod Bod, EleD EleD, Mots Mots)
+    	public スタンプB(ModeEventDispatcher Med, RenderArea Are, Cha Cha, Bod Bod, EleD EleD, Mots Mots)
     		: base(Med, Are, Cha, Bod, EleD)
     	{
     		Ele e = null;

@@ -157,7 +157,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public void SetHitColor(Med Med)
+    	public void SetHitColor(ModeEventDispatcher Med)
     	{
     		Tex.SetHitColor(Med);
     	}

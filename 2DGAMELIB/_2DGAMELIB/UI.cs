@@ -1,3 +1,4 @@
+using GLFW;
 using System;
 using System.ComponentModel;
 using System.IO;
@@ -7,7 +8,7 @@ namespace _2DGAMELIB
 {
     public class UI //: Form
     {
-    	private Med Med;
+    	private ModeEventDispatcher modeEventDispatcher;
 
     	private GlImage wpfImage1;
 
@@ -17,16 +18,16 @@ namespace _2DGAMELIB
 
     	private bool BigWindow;
 
-    	public UI(Med Med)
+    	public UI(ModeEventDispatcher Med)
     	{
-            this.Med = Med;
+            this.modeEventDispatcher = Med;
             InitializeComponent();
     	}
 
     	private void UI_Load(object sender, EventArgs e)
     	{
     		//base.ClientSize = 
-    			Med.Setting(wpfImage1);
+    			modeEventDispatcher.Setting(wpfImage1);
     		//base.ClientSize = new Size(1024, 768);
     		try
     		{
@@ -53,7 +54,7 @@ namespace _2DGAMELIB
 
     	private void UI_FormClosing()
     	{
-    		Med.Drive = false;
+    		modeEventDispatcher.Drive = false;
     	}
 
     	private void UI_Resize(object sender, EventArgs e)
@@ -107,10 +108,9 @@ namespace _2DGAMELIB
 
     		//beauty
     		this.wpfImage1.Closing = delegate () { UI_FormClosing(); };
-
-    		//TODO fix?
-    		//base.Load += new System.EventHandler(UI_Load);
-    		UI_Load(null, null);
+            //TODO fix?
+            //base.Load += new System.EventHandler(UI_Load);
+            UI_Load(null, null);
     		//base.Resize += new System.EventHandler(UI_Resize);
     		//base.ResumeLayout(false);
     	}

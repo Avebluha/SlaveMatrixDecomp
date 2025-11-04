@@ -70,7 +70,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public Sweat(Med Med, RenderArea Are, Cha Cha, Mots Mots)
+    	public Sweat(ModeEventDispatcher Med, RenderArea Are, Cha Cha, Mots Mots)
     	{
     		Ele[] es = null;
     		Ele n = null;

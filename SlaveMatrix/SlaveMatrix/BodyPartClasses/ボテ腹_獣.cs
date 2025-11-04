@@ -157,7 +157,7 @@ namespace SlaveMatrix
 
     	public JointS 腹板_接続点 => new JointS(本体, X0Y0_腹, 0);
 
-    	public ボテ腹_獣(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, ボテ腹_獣D e)
+    	public ボテ腹_獣(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, ボテ腹_獣D e)
     	{
     		ボテ腹_獣 ボテ腹_獣2 = this;
     		ThisType = GetType();

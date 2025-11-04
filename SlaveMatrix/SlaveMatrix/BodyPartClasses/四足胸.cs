@@ -808,7 +808,7 @@ namespace SlaveMatrix
 
     	public JointS 背中_接続点 => new JointS(本体, X0Y0_胸郭, 10);
 
-    	public 四足胸(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 四足胸D e)
+    	public 四足胸(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 四足胸D e)
     	{
     		四足胸 四足胸2 = this;
     		ThisType = GetType();

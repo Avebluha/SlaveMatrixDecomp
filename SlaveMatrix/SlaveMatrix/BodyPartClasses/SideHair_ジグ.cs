@@ -141,7 +141,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public SideHair_ジグ(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, SideHair_ジグD e)
+    	public SideHair_ジグ(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, SideHair_ジグD e)
     	{
     		ThisType = GetType();
     		Dif dif = new Dif();

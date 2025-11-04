@@ -1412,7 +1412,7 @@ namespace SlaveMatrix
 
     	public JointS 背中_接続点 => new JointS(本体, X0Y0_胸郭, 10);
 
-    	public Chest(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, ChestD e)
+    	public Chest(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, ChestD e)
     	{
     		Chest Chest2 = this;
     		ThisType = GetType();

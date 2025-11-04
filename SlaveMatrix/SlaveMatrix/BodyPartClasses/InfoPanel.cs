@@ -9,7 +9,7 @@ namespace SlaveMatrix
     {
     	public RenderArea Are;
 
-    	private Med Med;
+    	private ModeEventDispatcher Med;
 
     	public Par MaiB;
 
@@ -141,7 +141,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public InfoPanel(Med Med, RenderArea Are)
+    	public InfoPanel(ModeEventDispatcher Med, RenderArea Are)
     	{
     		this.Med = Med;
     		this.Are = Are;
@@ -262,7 +262,7 @@ namespace SlaveMatrix
     		});
     	}
 
-    	public void SetHitColor(Med Med)
+    	public void SetHitColor(ModeEventDispatcher Med)
     	{
     		Mai.SetHitColor(Med);
     		Sub.SetHitColor(Med);

@@ -10,7 +10,7 @@ namespace SlaveMatrix
 {
     public class Cha
     {
-    	public Med Med;
+    	public ModeEventDispatcher Med;
 
     	public RenderArea Are;
 
@@ -244,7 +244,7 @@ namespace SlaveMatrix
     		放尿強制終了_();
     	}
 
-    	public Cha(Med Med, RenderArea Are, ChaD ChaD)
+    	public Cha(ModeEventDispatcher Med, RenderArea Are, ChaD ChaD)
     	{
     		Cha cha = this;
     		this.Med = Med;

@@ -557,7 +557,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public バイブ_アナル(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, バイブ_アナルD e)
+    	public バイブ_アナル(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, バイブ_アナルD e)
     	{
     		ThisType = GetType();
     		本体 = new Difs(Sta.カーソル["アナル"]);

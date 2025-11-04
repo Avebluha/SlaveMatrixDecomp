@@ -743,7 +743,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 前髪_上げ短1(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 前髪_上げ短1D e)
+    	public 前髪_上げ短1(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 前髪_上げ短1D e)
     	{
     		ThisType = GetType();
     		Dif dif = new Dif();

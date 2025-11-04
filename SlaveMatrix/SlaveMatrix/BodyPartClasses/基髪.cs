@@ -122,7 +122,7 @@ namespace SlaveMatrix
 
     	public JointS 後髪_接続点 => new JointS(本体, X0Y0_髪, 3);
 
-    	public 基髪(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 基髪D e)
+    	public 基髪(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 基髪D e)
     	{
     		基髪 基髪2 = this;
     		ThisType = GetType();

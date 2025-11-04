@@ -440,7 +440,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 染み_人(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 染み_人D e)
+    	public 染み_人(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 染み_人D e)
     	{
     		ThisType = GetType();
     		本体 = new Difs(Sta.その他["染み"]);

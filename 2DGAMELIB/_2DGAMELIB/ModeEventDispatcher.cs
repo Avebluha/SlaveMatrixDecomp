@@ -7,7 +7,7 @@ using System.Runtime.InteropServices;
 
 namespace _2DGAMELIB
 {
-    public class Med
+    public class ModeEventDispatcher
     {
         private GlImage baseControl;
 
@@ -23,11 +23,11 @@ namespace _2DGAMELIB
 
         public Rectangle Base = new Rectangle(4.0, 3.0, 0.4);
 
-        public Bitmap Dis;
-        public Graphics GD;
+        public Bitmap Display;
+        public Graphics DisplayGraphics;
 
         public Bitmap Hit;
-        public Graphics GH;
+        public Graphics HitGraphics;
 
         public Sce Sce;
         public FPS FPSF = new FPS(60.0);
@@ -41,7 +41,7 @@ namespace _2DGAMELIB
         public string Modeb;
 
         private Dictionary<string, Module> Modes;
-        private Func<Med, Dictionary<string, Module>> GetModes;
+        private Func<ModeEventDispatcher, Dictionary<string, Module>> GetModes;
 
         public HashSet<Color> HitColors = new HashSet<Color>
         {
@@ -78,31 +78,21 @@ namespace _2DGAMELIB
                 baseControl.SetCursorPoint(FromBasePosition(value));
             }
         }
-    	public Med()
+    	public ModeEventDispatcher()
     	{
     	}
 
-
-
-
-
-
     	public void FadeIn(double Rate)
     	{
-    		Sce.TransformAlpha(GD, Rate);
+    		Sce.TransformAlpha(DisplayGraphics, Rate);
     	}
 
     	public void FadeOut(double Rate)
     	{
-    		Sce.TransD(GD, Rate);
+    		Sce.TransD(DisplayGraphics, Rate);
     	}
 
-
-
-
-
-
-    	public void InitializeModes(string Mode, Func<Med, Dictionary<string, Module>> GetModes)
+    	public void InitializeModes(string Mode, Func<ModeEventDispatcher, Dictionary<string, Module>> GetModes)
     	{
     		mode = Mode;
     		this.GetModes = GetModes;
@@ -112,22 +102,22 @@ namespace _2DGAMELIB
     	{
     		baseControl = BaseControl;
     		BaseSize = new Size((int)(Base.LocalWidth * Unit), (int)(Base.LocalHeight * Unit));
-    		Dis = new Bitmap(BaseSize.Width, BaseSize.Height);
-    		GD = Graphics.FromImage(Dis);
+    		Display = new Bitmap(BaseSize.Width, BaseSize.Height);
+    		DisplayGraphics = Graphics.FromImage(Display);
     		//GD.InterpolationMode = InterpolationMode.HighQualityBilinear;
-            GD.SmoothingMode = SmoothingMode.None;
-            GD.PixelOffsetMode = PixelOffsetMode.HighSpeed;
-            GD.InterpolationMode = InterpolationMode.NearestNeighbor;
+            DisplayGraphics.SmoothingMode = SmoothingMode.None;
+            DisplayGraphics.PixelOffsetMode = PixelOffsetMode.HighSpeed;
+            DisplayGraphics.InterpolationMode = InterpolationMode.NearestNeighbor;
             //needed for text or smthn
-            GD.CompositingMode = CompositingMode.SourceOver;
+            DisplayGraphics.CompositingMode = CompositingMode.SourceOver;
 
-            Hit = new Bitmap((int)((double)BaseSize.Width * HitAccuracy), (int)((double)BaseSize.Height * HitAccuracy));
-    		GH = Graphics.FromImage(Hit);
+            Hit = new Bitmap((int)(BaseSize.Width * HitAccuracy), (int)(BaseSize.Height * HitAccuracy));
+    		HitGraphics = Graphics.FromImage(Hit);
     		//GH.InterpolationMode = InterpolationMode.Bilinear;
-            GH.SmoothingMode = SmoothingMode.None;
-            GH.PixelOffsetMode = PixelOffsetMode.HighSpeed;
-            GH.InterpolationMode = InterpolationMode.NearestNeighbor;
-            GH.CompositingMode = CompositingMode.SourceOver;
+            HitGraphics.SmoothingMode = SmoothingMode.None;
+            HitGraphics.PixelOffsetMode = PixelOffsetMode.HighSpeed;
+            HitGraphics.InterpolationMode = InterpolationMode.NearestNeighbor;
+            HitGraphics.CompositingMode = CompositingMode.SourceOver;
 
             WidthM = Hit.Width - 1;
     		HeightM = Hit.Height - 1;
@@ -230,8 +220,6 @@ namespace _2DGAMELIB
     		return BaseSize;
     	}
 
-
-
     	public Vector2D ToBasePosition(Vector2D Position)
     	{
     		return new Vector2D(((double)Position.X - resVector.X) / Unit * resMag, ((double)Position.Y - resVector.Y) / Unit * resMag);
@@ -288,12 +276,9 @@ namespace _2DGAMELIB
     		return Hit.GetPixel(point.X, point.Y);
     	}
 
-
-
-
     	public void Drawing()
     	{
-            baseControl.BitmapSetting(Dis);
+            baseControl.BitmapSetting(Display);
 
             baseControl.SetTitle(UITitle);
             Modes[mode].Setting();
@@ -312,7 +297,7 @@ namespace _2DGAMELIB
 
                 //DEBUG shows the hit lut
                 //GD.DrawImage(Hit, new Point(0, 0));
-                baseControl.SetBitmap(Dis);
+                baseControl.SetBitmap(Display);
             };
 
 
@@ -323,27 +308,25 @@ namespace _2DGAMELIB
     		}
     	}
 
-
     	public void Draw(RenderArea Are)
     	{
             //Note: this is terribly slow...
             //would be better to not copy the entire frame
-    		Are.DrawTo(GD, GH);
+    		Are.DrawTo(DisplayGraphics, HitGraphics);
     	}
-
-
 
         //TODO fix?
     	public void CursorHide()
     	{
-    		//TODO fix?
-    	}
+            //TODO fix?
+            Glfw.SetInputMode(baseControl.window, InputMode.Cursor, (int)CursorMode.Hidden);
+        }
 
     	public void CursorShow()
     	{
             //TODO fix?
-    	}
-
+            Glfw.SetInputMode(baseControl.window, InputMode.Cursor, (int)CursorMode.Normal);
+        }
 
         //hit color stuff
         public Color GetUniqueColor()
@@ -410,6 +393,6 @@ namespace _2DGAMELIB
     		//return result;
     	}*/
 
-    	static Med() {}
+    	static ModeEventDispatcher() {}
     }
 }

@@ -83,7 +83,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 鰭_鯨(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 鰭_鯨D e)
+    	public 鰭_鯨(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 鰭_鯨D e)
     	{
     		ThisType = GetType();
     		Dif dif = new Dif();

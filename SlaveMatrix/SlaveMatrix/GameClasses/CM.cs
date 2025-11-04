@@ -42,7 +42,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public CM(Med Med, TrainingUI 調教UI, Ele Ele)
+    	public CM(ModeEventDispatcher Med, TrainingUI 調教UI, Ele Ele)
     	{
     		this.調教UI = 調教UI;
     		this.Ele = Ele;

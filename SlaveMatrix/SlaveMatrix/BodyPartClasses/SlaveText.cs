@@ -4,11 +4,11 @@ namespace SlaveMatrix
 {
     public class SlaveText
     {
-    	private Med Med;
+    	private ModeEventDispatcher Med;
 
     	private TextBubble hd;
 
-    	public SlaveText(Med Med, TextBubble hd)
+    	public SlaveText(ModeEventDispatcher Med, TextBubble hd)
     	{
     		this.Med = Med;
     		this.hd = hd;

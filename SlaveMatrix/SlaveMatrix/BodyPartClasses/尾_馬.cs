@@ -907,7 +907,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 尾_馬(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 尾_馬D e)
+    	public 尾_馬(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 尾_馬D e)
     	{
     		ThisType = GetType();
     		Dif dif = new Dif();

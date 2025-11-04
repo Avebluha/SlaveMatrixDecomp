@@ -972,7 +972,7 @@ namespace SlaveMatrix
 
     	public JointS 尾_接続点 => new JointS(本体, X0Y0_前腹_腹節7_節0, 2);
 
-    	public 多足_蠍(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 多足_蠍D e)
+    	public 多足_蠍(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 多足_蠍D e)
     	{
     		多足_蠍 多足_蠍2 = this;
     		ThisType = GetType();

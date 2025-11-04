@@ -7,13 +7,13 @@ namespace _2DGAMELIB
     {
     	private OrderedDictionary<string, Lab> labs = new OrderedDictionary<string, Lab>();
 
-    	private Med Med;
+    	private ModeEventDispatcher Med;
 
     	private RenderArea Are;
 
     	public Lab this[string Name] => labs[Name];
 
-    	public Labs(Med Med, RenderArea Are)
+    	public Labs(ModeEventDispatcher Med, RenderArea Are)
     	{
     		this.Med = Med;
     		this.Are = Are;
