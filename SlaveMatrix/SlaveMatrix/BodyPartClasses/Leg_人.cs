@@ -5756,7 +5756,8 @@ namespace SlaveMatrix
     	{
     		Leg_人 Leg_人2 = this;
     		ThisType = GetType();
-    		本体 = new Difs(Sta.脚左["脚"]);
+            //Leg but if renamed to Leg it broke game
+    		本体 = new Difs(Sta.脚左["Leg"]);
     		Pars pars = 本体[0][0];
     		X0Y0_Leg = pars["脚"].ToPar();
     		X0Y0_筋 = pars["筋"].ToPar();

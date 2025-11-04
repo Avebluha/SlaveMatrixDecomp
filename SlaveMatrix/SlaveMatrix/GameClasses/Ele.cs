@@ -599,7 +599,7 @@ namespace SlaveMatrix
     		ConnectionInfo.胸_翼下右_接続 => 0, 
     		ConnectionInfo.胸_背中_接続 => 0, 
     		ConnectionInfo.乳房_噴乳_接続 => 1, 
-    		ConnectionInfo.肩_上腕_接続 => 1, 
+    		ConnectionInfo.Shoulder_上腕_接続 => 1, 
     		ConnectionInfo.Torso_胸_接続 => 1, 
     		ConnectionInfo.Torso_肌_接続 => 1, 
     		ConnectionInfo.Torso_翼左_接続 => 0, 

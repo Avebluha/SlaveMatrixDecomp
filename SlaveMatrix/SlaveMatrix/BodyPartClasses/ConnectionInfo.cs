@@ -70,7 +70,7 @@ namespace SlaveMatrix
     	胸_翼下右_接続,
     	胸_背中_接続,
     	乳房_噴乳_接続,
-    	肩_上腕_接続,
+    	Shoulder_上腕_接続,
     	Torso_胸_接続,
     	Torso_肌_接続,
     	Torso_翼左_接続,

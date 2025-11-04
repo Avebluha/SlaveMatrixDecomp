@@ -52,7 +52,7 @@ namespace SlaveMatrix
 
     	public static Type 胸t;
 
-    	public static Type 肩t;
+    	public static Type Shouldert;
 
     	public static Type 胴t;
 
@@ -88,7 +88,7 @@ namespace SlaveMatrix
 
     	public static Type 耳_獣Dt;
 
-    	public static Type 肩Dt;
+    	public static Type ShoulderDt;
 
     	public static Type 角1_一Dt;
 
@@ -1092,7 +1092,9 @@ namespace SlaveMatrix
     		//Ser.ToJson(胴体, "C:\\Users\\dave\\Documents\\胴体.json");
     		//胴体 = Ser.UnJson<Obj>("C:\\Users\\dave\\Documents\\胴体.json");
 
-    		肩左 = Resources.肩左.ObjLoad();
+            obj = Resources.肩左.ObjLoad();
+            obj.MigrateKeys();
+            肩左 = obj;
             //肩左.SaveExMod("C:\\Users\\dave\\Documents\\肩左");
             //Ser.ToJson(肩左, "C:\\Users\\dave\\Documents\\肩左.json");
             //肩左 = Ser.UnJson<Obj>("C:\\Users\\dave\\Documents\\肩左.json");
@@ -1102,8 +1104,9 @@ namespace SlaveMatrix
             //Ser.ToJson(腕左, "C:\\Users\\dave\\Documents\\腕左.json");
             //腕左 = Ser.UnJson<Obj>("C:\\Users\\dave\\Documents\\腕左.json");
 
-
-            脚左 = Resources.脚左.ObjLoad();
+            obj = Resources.脚左.ObjLoad();
+            obj.MigrateKeys();
+            脚左 = obj;
             //脚左.SaveExMod("C:\\Users\\dave\\Documents\\脚左");
             //Ser.ToJson(脚左, "C:\\Users\\dave\\Documents\\脚左.json");
             //脚左 = Ser.UnJson<Obj>("C:\\Users\\dave\\Documents\\脚左.json");
@@ -1162,7 +1165,7 @@ namespace SlaveMatrix
     		Elet = typeof(Ele);
     		EleDt = typeof(EleD);
     		胸t = typeof(胸);
-    		肩t = typeof(肩);
+    		Shouldert = typeof(Shoulder);
     		胴t = typeof(Torso);
     		腰t = typeof(Waist);
     		尾_鯨t = typeof(尾_鯨);
@@ -1180,7 +1183,7 @@ namespace SlaveMatrix
     		耳_鰭Dt = typeof(耳_鰭D);
     		耳_羽Dt = typeof(耳_羽D);
     		耳_獣Dt = typeof(耳_獣D);
-    		肩Dt = typeof(肩D);
+    		ShoulderDt = typeof(ShoulderD);
     		角1_一Dt = typeof(角1_一D);
     		角1_鬼Dt = typeof(角1_鬼D);
     		角1_虫Dt = typeof(角1_虫D);

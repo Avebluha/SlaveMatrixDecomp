@@ -173,7 +173,7 @@ namespace SlaveMatrix
     		}
     		else
     		{
-    			if (上腕.ConnectionType == ConnectionInfo.肩_上腕_接続)
+    			if (上腕.ConnectionType == ConnectionInfo.Shoulder_上腕_接続)
     			{
     				X0Y0_飛膜.OP[2].ps[3] = X0Y0_飛膜.ToLocal(上腕.X0Y0_獣翼上腕.ToGlobal(上腕.X0Y0_獣翼上腕.OP[3].ps[1]));
     			}
@@ -197,7 +197,7 @@ namespace SlaveMatrix
     			X0Y0_飛膜.OP[2].ps[1] += (vector2D5 - X0Y0_飛膜.OP[2].ps[1]) * 0.3;
     			X0Y0_飛膜.OP[2].ps[2] += (vector2D5 - X0Y0_飛膜.OP[2].ps[2]) * 0.3;
     		}
-    		if (上腕.ConnectionType != ConnectionInfo.肩_上腕_接続)
+    		if (上腕.ConnectionType != ConnectionInfo.Shoulder_上腕_接続)
     		{
     			X0Y0_飛膜.OP[3].ps[0] = X0Y0_飛膜.OP[2].ps[3];
     		}
@@ -263,7 +263,7 @@ namespace SlaveMatrix
     		}
     		else
     		{
-    			if (上腕.ConnectionType == ConnectionInfo.肩_上腕_接続)
+    			if (上腕.ConnectionType == ConnectionInfo.Shoulder_上腕_接続)
     			{
     				X0Y0_飛膜.OP[6].ps[0] = X0Y0_飛膜.ToLocal(上腕.X0Y0_獣翼上腕.ToGlobal(上腕.X0Y0_獣翼上腕.OP[0].ps[4]));
     			}
@@ -287,7 +287,7 @@ namespace SlaveMatrix
     			X0Y0_飛膜.OP[6].ps[2] += (vector2D5 - X0Y0_飛膜.OP[6].ps[2]) * 0.3;
     			X0Y0_飛膜.OP[6].ps[1] += (vector2D5 - X0Y0_飛膜.OP[6].ps[1]) * 0.3;
     		}
-    		if (上腕.ConnectionType != ConnectionInfo.肩_上腕_接続)
+    		if (上腕.ConnectionType != ConnectionInfo.Shoulder_上腕_接続)
     		{
     			X0Y0_飛膜.OP[5].ps[2] = X0Y0_飛膜.OP[6].ps[0];
     		}
@@ -353,7 +353,7 @@ namespace SlaveMatrix
     		}
     		else
     		{
-    			if (上腕.ConnectionType == ConnectionInfo.肩_上腕_接続)
+    			if (上腕.ConnectionType == ConnectionInfo.Shoulder_上腕_接続)
     			{
     				X0Y1_飛膜.OP[2].ps[3] = X0Y0_飛膜.ToLocal(上腕.X0Y0_獣翼上腕.ToGlobal(上腕.X0Y0_獣翼上腕.OP[3].ps[1]));
     			}
@@ -377,7 +377,7 @@ namespace SlaveMatrix
     			X0Y1_飛膜.OP[2].ps[1] += (vector2D5 - X0Y1_飛膜.OP[2].ps[1]) * 0.3;
     			X0Y1_飛膜.OP[2].ps[2] += (vector2D5 - X0Y1_飛膜.OP[2].ps[2]) * 0.3;
     		}
-    		if (上腕.ConnectionType != ConnectionInfo.肩_上腕_接続)
+    		if (上腕.ConnectionType != ConnectionInfo.Shoulder_上腕_接続)
     		{
     			X0Y1_飛膜.OP[3].ps[0] = X0Y1_飛膜.OP[2].ps[3];
     		}
@@ -487,7 +487,7 @@ namespace SlaveMatrix
     		}
     		else
     		{
-    			if (上腕.ConnectionType == ConnectionInfo.肩_上腕_接続)
+    			if (上腕.ConnectionType == ConnectionInfo.Shoulder_上腕_接続)
     			{
     				X0Y1_飛膜.OP[40].ps[0] = X0Y0_飛膜.ToLocal(上腕.X0Y0_獣翼上腕.ToGlobal(上腕.X0Y0_獣翼上腕.OP[0].ps[4]));
     			}
@@ -511,7 +511,7 @@ namespace SlaveMatrix
     			X0Y1_飛膜.OP[40].ps[2] += (vector2D5 - X0Y1_飛膜.OP[40].ps[2]) * 0.3;
     			X0Y1_飛膜.OP[40].ps[1] += (vector2D5 - X0Y1_飛膜.OP[40].ps[1]) * 0.3;
     		}
-    		if (上腕.ConnectionType != ConnectionInfo.肩_上腕_接続)
+    		if (上腕.ConnectionType != ConnectionInfo.Shoulder_上腕_接続)
     		{
     			X0Y1_飛膜.OP[39].ps[2] = X0Y1_飛膜.OP[40].ps[0];
     		}

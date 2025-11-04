@@ -87,7 +87,7 @@ namespace SlaveMatrix
     		Sta.鳳凰Dt.ToString()
     	};
 
-    	private static HashSet<string> 肩人 = new HashSet<string> { Sta.肩Dt.ToString() };
+    	private static HashSet<string> 肩人 = new HashSet<string> { Sta.ShoulderDt.ToString() };
 
     	private static HashSet<string> 胸翼上人 = new HashSet<string>
     	{
@@ -1247,7 +1247,7 @@ namespace SlaveMatrix
     			顔面
     		},
     		{
-    			ConnectionInfo.肩_上腕_接続,
+    			ConnectionInfo.Shoulder_上腕_接続,
     			上腕人
     		},
     		{
@@ -3784,7 +3784,7 @@ namespace SlaveMatrix
     			{
     				((上腕_蝙D)item32).竜性_鱗1_表示 = false;
     			}
-    			else if (item32 is 上腕D && item32.Par is 肩D)
+    			else if (item32 is 上腕D && item32.Par is ShoulderD)
     			{
     				item32.AlignR();
     			}
@@ -4448,7 +4448,7 @@ namespace SlaveMatrix
     		if (!原種モード)
     		{
     			string text = 接続.ToString();
-    			if (text.Contains("肩") || text.Contains("脇") || text.Contains("翼"))
+    			if (text.Contains("Shoulder") || text.Contains("脇") || text.Contains("翼"))
     			{
     				if (num.Lot())
     				{

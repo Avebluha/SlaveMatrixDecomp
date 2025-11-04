@@ -20,7 +20,7 @@ namespace SlaveMatrix
     	{
     		Sta.胸t.ToString(),
     		Sta.胴t.ToString(),
-    		Sta.肩t.ToString(),
+    		Sta.Shouldert.ToString(),
     		Sta.腰t.ToString()
     	};
 

@@ -344,17 +344,17 @@ namespace SlaveMatrix
 
     	private List<Ele> 大顎基接続 = new List<Ele>();
 
-    	private 肩[] 後脇左s = new 肩[0];
+    	private Shoulder[] 後脇左s = new Shoulder[0];
 
-    	private 肩[] 後脇右s = new 肩[0];
+    	private Shoulder[] 後脇右s = new Shoulder[0];
 
     	public List<Ele>[] 後腕左s = new List<Ele>[0];
 
     	public List<Ele>[] 後腕右s = new List<Ele>[0];
 
-    	private 肩 肩左;
+    	private Shoulder 肩左;
 
-    	private 肩 肩右;
+    	private Shoulder 肩右;
 
     	private List<Ele> 肩左飛膜 = new List<Ele>();
 
@@ -2947,7 +2947,7 @@ namespace SlaveMatrix
     		};
     		鞭痕D wd = new 鞭痕D();
     		蝙通常 = new List<蝙通常>();
-    		肩 人肩;
+    		Shoulder 人肩;
     		腕獣 腕獣;
     		腿_人 人腿;
     		脚人 脚人;
@@ -2982,9 +2982,9 @@ namespace SlaveMatrix
     			}
     			if (current_element.右)
     			{
-    				if (current_element is 肩)
+    				if (current_element is Shoulder)
     				{
-    					人肩 = (肩)current_element;
+    					人肩 = (Shoulder)current_element;
     					人肩.キスマーク = new スタンプK(Med, Are, Cha, this, kd, 人肩);
     					sk.Add(人肩.キスマーク);
     					人肩.鞭痕 = new スタンプW(Med, Are, Cha, this, wd, 人肩);
@@ -2998,7 +2998,7 @@ namespace SlaveMatrix
     						current_element.表示 = false;
     					}
     					腕獣 = default(腕獣);
-    					腕獣.肩 = 四足脇2;
+    					腕獣.Shoulder = 四足脇2;
     					四足脇2.上腕_接続.SetEle(delegate(獣上腕 上腕)
     					{
     						腕獣.上腕 = 上腕;
@@ -3111,13 +3111,13 @@ namespace SlaveMatrix
     				}
     				else if (current_element is 上腕)
     				{
-    					if (current_element.ConnectionType == ConnectionInfo.肩_上腕_接続)
+    					if (current_element.ConnectionType == ConnectionInfo.Shoulder_上腕_接続)
     					{
-    						人肩 = (肩)current_element.Par;
+    						人肩 = (Shoulder)current_element.Par;
     						if (current_element is 上腕_鳥)
     						{
     							腕翼鳥 = default(腕翼鳥);
-    							腕翼鳥.肩 = 人肩;
+    							腕翼鳥.Shoulder = 人肩;
     							人肩.上腕_接続.SetEle(delegate(上腕_鳥 上腕)
     							{
     								上腕.キスマーク = new スタンプK(Med, Are, Cha, bod, kd, 上腕);
@@ -3140,10 +3140,10 @@ namespace SlaveMatrix
     						else if (current_element is 上腕_蝙)
     						{
     							腕翼獣 = default(腕翼獣);
-    							腕翼獣.肩 = 人肩;
+    							腕翼獣.Shoulder = 人肩;
     							人肩.上腕_接続.SetEle(delegate(上腕_蝙 上腕)
     							{
-    								上腕.獣翼上腕CD.c2.Col1 = 人肩.肩_肩CD.c2.Col1;
+    								上腕.獣翼上腕CD.c2.Col1 = 人肩.Shoulder_ShoulderCD.c2.Col1;
     								腕翼獣.上腕 = 上腕;
     								上腕.下腕_接続.SetEle(delegate(下腕_蝙 下腕)
     								{
@@ -3161,7 +3161,7 @@ namespace SlaveMatrix
     						else
     						{
     							腕人 = default(腕人);
-    							腕人.肩 = 人肩;
+    							腕人.Shoulder = 人肩;
     							人肩.上腕_接続.SetEle(delegate(上腕_人 上腕)
     							{
     								上腕.キスマーク = new スタンプK(Med, Are, Cha, bod, kd, 上腕);
@@ -3375,9 +3375,9 @@ namespace SlaveMatrix
     					触手右.Add((触手)current_element);
     				}
     			}
-    			else if (current_element is 肩)
+    			else if (current_element is Shoulder)
     			{
-    				人肩 = (肩)current_element;
+    				人肩 = (Shoulder)current_element;
     				人肩.キスマーク = new スタンプK(Med, Are, Cha, this, kd, 人肩);
     				sk.Add(人肩.キスマーク);
     				人肩.鞭痕 = new スタンプW(Med, Are, Cha, this, wd, 人肩);
@@ -3391,7 +3391,7 @@ namespace SlaveMatrix
     					current_element.表示 = false;
     				}
     				腕獣 = default(腕獣);
-    				腕獣.肩 = 四足脇2;
+    				腕獣.Shoulder = 四足脇2;
     				四足脇2.上腕_接続.SetEle(delegate(獣上腕 上腕)
     				{
     					腕獣.上腕 = 上腕;
@@ -3504,13 +3504,13 @@ namespace SlaveMatrix
     			}
     			else if (current_element is 上腕)
     			{
-    				if (current_element.ConnectionType == ConnectionInfo.肩_上腕_接続)
+    				if (current_element.ConnectionType == ConnectionInfo.Shoulder_上腕_接続)
     				{
-    					人肩 = (肩)current_element.Par;
+    					人肩 = (Shoulder)current_element.Par;
     					if (current_element is 上腕_鳥)
     					{
     						腕翼鳥 = default(腕翼鳥);
-    						腕翼鳥.肩 = 人肩;
+    						腕翼鳥.Shoulder = 人肩;
     						人肩.上腕_接続.SetEle(delegate(上腕_鳥 上腕)
     						{
     							上腕.キスマーク = new スタンプK(Med, Are, Cha, bod, kd, 上腕);
@@ -3533,10 +3533,10 @@ namespace SlaveMatrix
     					else if (current_element is 上腕_蝙)
     					{
     						腕翼獣 = default(腕翼獣);
-    						腕翼獣.肩 = 人肩;
+    						腕翼獣.Shoulder = 人肩;
     						人肩.上腕_接続.SetEle(delegate(上腕_蝙 上腕)
     						{
-    							上腕.獣翼上腕CD.c2.Col1 = 人肩.肩_肩CD.c2.Col1;
+    							上腕.獣翼上腕CD.c2.Col1 = 人肩.Shoulder_ShoulderCD.c2.Col1;
     							腕翼獣.上腕 = 上腕;
     							上腕.下腕_接続.SetEle(delegate(下腕_蝙 下腕)
     							{
@@ -3554,7 +3554,7 @@ namespace SlaveMatrix
     					else
     					{
     						腕人 = default(腕人);
-    						腕人.肩 = 人肩;
+    						腕人.Shoulder = 人肩;
     						人肩.上腕_接続.SetEle(delegate(上腕_人 上腕)
     						{
     							上腕.キスマーク = new スタンプK(Med, Are, Cha, bod, kd, 上腕);
@@ -4180,7 +4180,7 @@ namespace SlaveMatrix
     		}
     		if (胸.肩左_接続 != null)
     		{
-    			後脇左s = 胸.肩左_接続.GetEles<肩>().ToArray();
+    			後脇左s = 胸.肩左_接続.GetEles<Shoulder>().ToArray();
     			肩左 = 後脇左s.LastOrDefault();
     			if (後脇左s.Length > 1)
     			{
@@ -4210,7 +4210,7 @@ namespace SlaveMatrix
     		nsl = new bool[1 + ((後腕左s != null) ? 後腕左s.Length : 0)];
     		if (胸.肩右_接続 != null)
     		{
-    			後脇右s = 胸.肩右_接続.GetEles<肩>().ToArray();
+    			後脇右s = 胸.肩右_接続.GetEles<Shoulder>().ToArray();
     			肩右 = 後脇右s.LastOrDefault();
     			if (後脇右s.Length > 1)
     			{
@@ -4307,7 +4307,7 @@ namespace SlaveMatrix
     				{
     					Sort(魚.尾_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 半身後接続);
     				}
-    				if (腕獣左.Count > 0 && 腕獣左.First().肩.上腕_接続.IsEle<獣脚>())
+    				if (腕獣左.Count > 0 && 腕獣左.First().Shoulder.上腕_接続.IsEle<獣脚>())
     				{
     					Sort(from e in 魚.EnumEle().Skip(1)
     						where !bod.半身後接続.Contains(e)
@@ -4342,7 +4342,7 @@ namespace SlaveMatrix
     				{
     					Sort(鯨.尾_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 半身後接続);
     				}
-    				if (腕獣左.Count > 0 && 腕獣左.First().肩.上腕_接続.IsEle<獣脚>())
+    				if (腕獣左.Count > 0 && 腕獣左.First().Shoulder.上腕_接続.IsEle<獣脚>())
     				{
     					Sort(from e in 鯨.EnumEle().Skip(1)
     						where !bod.半身後接続.Contains(e)
@@ -5495,7 +5495,7 @@ namespace SlaveMatrix
     				bod.頭頂左後接続.描画1(are);
     				bod.頭頂右後接続.描画0(are);
     				bod.頭頂右後接続.描画1(are);
-    				肩[] array5 = bod.後脇左s;
+    				Shoulder[] array5 = bod.後脇左s;
     				for (int n = 0; n < array5.Length; n++)
     				{
     					array5[n].脇描画(are);
