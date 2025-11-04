@@ -576,7 +576,7 @@ namespace SlaveMatrix
     		ConnectionInfo.BackHair0_肢系_右3_接続 => 1, 
     		ConnectionInfo.BackHair0_肢系_右4_接続 => 1, 
     		ConnectionInfo.BackHair0_肢系_右5_接続 => 1, 
-    		ConnectionInfo.横髪_肢系_肢_接続 => 1, 
+    		ConnectionInfo.SideHair_肢系_肢_接続 => 1, 
     		ConnectionInfo.双目_瞼_接続 => 1, 
     		ConnectionInfo.瞼_宇_涙_接続 => 1, 
     		ConnectionInfo.単目_瞼_接続 => 1, 

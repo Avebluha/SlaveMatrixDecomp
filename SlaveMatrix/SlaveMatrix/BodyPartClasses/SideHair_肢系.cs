@@ -3,7 +3,7 @@ using _2DGAMELIB;
 
 namespace SlaveMatrix
 {
-    public class 横髪_肢系 : 横髪
+    public class SideHair_肢系 : SideHair
     {
     	public Par X0Y0_髪;
 
@@ -88,9 +88,9 @@ namespace SlaveMatrix
 
     	public JointS 肢_接続点 => new JointS(本体, X0Y0_髪, 0);
 
-    	public 横髪_肢系(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 横髪_肢系D e)
+    	public SideHair_肢系(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, SideHair_肢系D e)
     	{
-    		横髪_肢系 横髪_肢系2 = this;
+    		SideHair_肢系 横髪_肢系2 = this;
     		ThisType = GetType();
     		Dif dif = new Dif();
     		dif.Tag = "肢系";
@@ -139,7 +139,7 @@ namespace SlaveMatrix
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 横髪_肢系2;
-    				f.ConnectionType = ConnectionInfo.横髪_肢系_肢_接続;
+    				f.ConnectionType = ConnectionInfo.SideHair_肢系_肢_接続;
     				f.接続(横髪_肢系2.肢_接続点);
     				return f;
     			}).ToArray();

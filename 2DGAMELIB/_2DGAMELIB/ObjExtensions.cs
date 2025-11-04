@@ -15,7 +15,8 @@ namespace _2DGAMELIB
             ["首"] = "Neck",
             ["頭"] = "Head",
             ["後髪0"] = "BackHair0",
-            ["後髪1"] = "BackHair1"
+            ["後髪1"] = "BackHair1",
+            ["横髪"] = "SideHair"
         };
 
         public static void MigrateKeys(this Obj obj)

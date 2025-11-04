@@ -1,6 +1,6 @@
 namespace SlaveMatrix
 {
-    public class 横髪 : Ele
+    public class SideHair : Ele
     {
     	public override double 肥大
     	{

@@ -182,27 +182,27 @@ namespace SlaveMatrix.GameClasses
         {
             return RNG.XS.NextM(5) switch
             {
-                0 => new 横髪_ジグD
+                0 => new SideHair_ジグD
                 {
                     右 = 右
                 }.SetRandom(),
-                1 => new 横髪_ハネD
+                1 => new SideHair_ハネD
                 {
                     右 = 右
                 }.SetRandom(),
-                2 => new 横髪_パツD
+                2 => new SideHair_パツD
                 {
                     右 = 右
                 }.SetRandom(),
-                3 => new 横髪_カルD
+                3 => new SideHair_カルD
                 {
                     右 = 右
                 }.SetRandom(),
-                4 => new 横髪_編みD
+                4 => new SideHair_編みD
                 {
                     右 = 右
                 }.SetRandom(),
-                _ => new 横髪_肢系D
+                _ => new SideHair_肢系D
                 {
                     右 = 右
                 },

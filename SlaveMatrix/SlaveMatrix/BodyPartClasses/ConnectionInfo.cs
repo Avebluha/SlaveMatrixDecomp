@@ -46,7 +46,7 @@ namespace SlaveMatrix
     	BackHair0_肢系_右3_接続,
     	BackHair0_肢系_右4_接続,
     	BackHair0_肢系_右5_接続,
-    	横髪_肢系_肢_接続,
+    	SideHair_肢系_肢_接続,
     	双目_瞼_接続,
     	瞼_宇_涙_接続,
     	単目_瞼_接続,

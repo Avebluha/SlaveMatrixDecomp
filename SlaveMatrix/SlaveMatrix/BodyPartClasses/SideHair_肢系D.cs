@@ -5,13 +5,13 @@ using _2DGAMELIB;
 namespace SlaveMatrix
 {
     [Serializable]
-    public class 横髪_肢系D : 横髪D
+    public class SideHair_肢系D : SideHairD
     {
     	public bool 髪_表示 = true;
 
     	public List<EleD> 肢_接続 = new List<EleD>();
 
-    	public 横髪_肢系D()
+    	public SideHair_肢系D()
     	{
     		ThisType = GetType();
     	}
@@ -20,7 +20,7 @@ namespace SlaveMatrix
     	{
     		肢_接続.Add(e);
     		e.Par = this;
-    		e.接続情報 = ConnectionInfo.横髪_肢系_肢_接続;
+    		e.接続情報 = ConnectionInfo.SideHair_肢系_肢_接続;
     	}
 
     	public EleD SetRandom()
@@ -30,7 +30,7 @@ namespace SlaveMatrix
 
     	public override Ele GetEle(double DisUnit, Med Med, 体配色 体配色)
     	{
-    		return new 横髪_肢系(DisUnit, 配色指定, 体配色, Med, this);
+    		return new SideHair_肢系(DisUnit, 配色指定, 体配色, Med, this);
     	}
     }
 }

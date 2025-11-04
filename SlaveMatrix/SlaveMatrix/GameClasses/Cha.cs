@@ -2067,7 +2067,7 @@ namespace SlaveMatrix
                 {
                     result.c = ContactType.Face;
                 }
-                else if (result.e is 横髪 || result.e is BackHair0 || result.e is BackHair1 || result.e is 基髪)
+                else if (result.e is SideHair || result.e is BackHair0 || result.e is BackHair1 || result.e is 基髪)
                 {
                     result.c = ContactType.Hair;
                 }

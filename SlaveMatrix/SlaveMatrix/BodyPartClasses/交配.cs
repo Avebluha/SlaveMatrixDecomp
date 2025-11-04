@@ -1928,7 +1928,7 @@ namespace SlaveMatrix
     					後髪1D3.AlignR();
     				}
     			}
-    			横髪D 横髪D2 = Mix<横髪D>(母方, 父方, 右: false, i, 原種モード);
+    			SideHairD 横髪D2 = Mix<SideHairD>(母方, 父方, 右: false, i, 原種モード);
     			基髪D2.横髪左接続(横髪D2);
     			横髪D2.AlignR();
     			基髪D2.横髪右接続(横髪D2.Get逆());

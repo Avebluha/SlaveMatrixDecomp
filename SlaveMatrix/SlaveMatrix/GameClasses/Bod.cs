@@ -66,9 +66,9 @@ namespace SlaveMatrix
 
     	public 前髪 前髪;
 
-    	public 横髪 横髪左;
+    	public SideHair 横髪左;
 
-    	public 横髪 横髪右;
+    	public SideHair 横髪右;
 
     	public BackHair1 後髪1;
 
@@ -2176,16 +2176,16 @@ namespace SlaveMatrix
     		set
     		{
     			横髪髪留i = value;
-    			if (横髪左 != null && 横髪左 is 横髪_編み)
+    			if (横髪左 != null && 横髪左 is SideHair_編み)
     			{
-    				横髪_編み obj = (横髪_編み)横髪左;
+    				SideHair_編み obj = (SideHair_編み)横髪左;
     				obj.髪縛1_表示 = value.髪留左.髪縛1_表示;
     				obj.髪縛2_表示 = value.髪留左.髪縛2_表示;
     				obj.髪留配色(value.髪留左.色);
     			}
-    			if (横髪右 != null && 横髪右 is 横髪_編み)
+    			if (横髪右 != null && 横髪右 is SideHair_編み)
     			{
-    				横髪_編み obj2 = (横髪_編み)横髪右;
+    				SideHair_編み obj2 = (SideHair_編み)横髪右;
     				obj2.髪縛1_表示 = value.髪留右.髪縛1_表示;
     				obj2.髪縛2_表示 = value.髪留右.髪縛2_表示;
     				obj2.髪留配色(value.髪留右.色);
@@ -4053,8 +4053,8 @@ namespace SlaveMatrix
     		if (基髪 != null)
     		{
     			前髪 = 基髪.前髪_接続.GetEle<前髪>();
-    			横髪左 = 基髪.横髪左_接続.GetEle<横髪>();
-    			横髪右 = 基髪.横髪右_接続.GetEle<横髪>();
+    			横髪左 = 基髪.横髪左_接続.GetEle<SideHair>();
+    			横髪右 = 基髪.横髪右_接続.GetEle<SideHair>();
     			後髪1 = 基髪.後髪_接続.GetEle<BackHair1>();
     			後髪0 = 基髪.後髪_接続.GetEle<BackHair0>();
     		}
@@ -4138,7 +4138,7 @@ namespace SlaveMatrix
     			Sort((from e in 基髪.頭頂左_接続.GetEles<植>()
     				select e.EnumEle()).JoinEnum(), 植左接続);
     			Sort((from e in 基髪.頭頂左_接続
-    				where !(e is 角2) && !(e is 獣耳) && !(e is 植) && !(e is 横髪)
+    				where !(e is 角2) && !(e is 獣耳) && !(e is 植) && !(e is SideHair)
     				select e.EnumEle()).JoinEnum(), 頭頂左後接続);
     		}
     		if (基髪.頭頂右_接続 != null)
@@ -4148,7 +4148,7 @@ namespace SlaveMatrix
     			Sort((from e in 基髪.頭頂右_接続.GetEles<植>()
     				select e.EnumEle()).JoinEnum(), 植右接続);
     			Sort((from e in 基髪.頭頂右_接続
-    				where !(e is 角2) && !(e is 獣耳) && !(e is 植) && !(e is 横髪)
+    				where !(e is 角2) && !(e is 獣耳) && !(e is 植) && !(e is SideHair)
     				select e.EnumEle()).JoinEnum(), 頭頂右後接続);
     		}
     		if (頭.顔面_接続 != null)

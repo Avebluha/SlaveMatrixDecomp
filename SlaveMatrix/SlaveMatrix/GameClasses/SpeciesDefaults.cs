@@ -14,7 +14,7 @@ namespace SlaveMatrix
     	{
     		foreach (EleD item in 頭.EnumEleD())
     		{
-    			if (!(item is 後髪0D) && !(item is BackHair1D) && !(item is 横髪D) && !(item is 前髪D))
+    			if (!(item is 後髪0D) && !(item is BackHair1D) && !(item is SideHairD) && !(item is 前髪D))
     			{
     				item.尺度B *= 0.98;
     			}
@@ -4938,7 +4938,7 @@ namespace SlaveMatrix
     			広がり = 1.0
     		};
     		hair_description.後髪接続(backhair_description);
-    		横髪_カルD sidehair_description = new 横髪_カルD
+    		SideHair_カルD sidehair_description = new SideHair_カルD
     		{
     			髪長1 = 1.0,
     			髪長2 = 1.0,

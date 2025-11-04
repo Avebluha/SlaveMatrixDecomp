@@ -4,7 +4,7 @@ using _2DGAMELIB;
 namespace SlaveMatrix
 {
     [Serializable]
-    public class 横髪_パツD : 横髪D
+    public class SideHair_パツD : SideHairD
     {
     	public bool 髪1_表示 = true;
 
@@ -18,12 +18,12 @@ namespace SlaveMatrix
 
     	public double 広がり;
 
-    	public 横髪_パツD()
+    	public SideHair_パツD()
     	{
     		ThisType = GetType();
     	}
 
-    	public 横髪_パツD SetRandom()
+    	public SideHair_パツD SetRandom()
     	{
     		髪長1 = RNG.XS.NextDouble();
     		髪長2 = RNG.XS.NextDouble();
@@ -36,7 +36,7 @@ namespace SlaveMatrix
 
     	public override Ele GetEle(double DisUnit, Med Med, 体配色 体配色)
     	{
-    		return new 横髪_パツ(DisUnit, 配色指定, 体配色, Med, this);
+    		return new SideHair_パツ(DisUnit, 配色指定, 体配色, Med, this);
     	}
     }
 }
