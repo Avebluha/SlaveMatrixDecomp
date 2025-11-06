@@ -664,7 +664,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 前翅_蝶(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 前翅_蝶D e)
+    	public 前翅_蝶(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 前翅_蝶D e)
     	{
     		ThisType = GetType();
     		Dif dif = new Dif(Sta.肢左["前翅"][2]);

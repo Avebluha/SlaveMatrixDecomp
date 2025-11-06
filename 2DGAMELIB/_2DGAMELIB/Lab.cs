@@ -84,7 +84,7 @@ namespace _2DGAMELIB
     		SetText(Text);
     	}
 
-    	public void SetHitColor(Med Med)
+    	public void SetHitColor(ModeEventDispatcher Med)
     	{
     		if (parT.HitColor != Color.Transparent)
     		{

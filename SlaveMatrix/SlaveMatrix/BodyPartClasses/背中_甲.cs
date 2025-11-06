@@ -854,7 +854,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 背中_甲(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 背中_甲D e)
+    	public 背中_甲(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 背中_甲D e)
     	{
     		ThisType = GetType();
     		Dif dif = new Dif();

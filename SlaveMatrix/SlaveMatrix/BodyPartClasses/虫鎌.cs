@@ -440,7 +440,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 虫鎌(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 虫鎌D e)
+    	public 虫鎌(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 虫鎌D e)
     	{
     		ThisType = GetType();
     		本体 = new Difs(Sta.肢左["虫鎌"]);

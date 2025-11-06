@@ -2,7 +2,7 @@ using _2DGAMELIB;
 
 namespace SlaveMatrix
 {
-    public class 横髪_ハネ : 横髪
+    public class SideHair_カル : SideHair
     {
     	public Par X0Y0_髪1;
 
@@ -141,12 +141,12 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 横髪_ハネ(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 横髪_ハネD e)
+    	public SideHair_カル(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, SideHair_カルD e)
     	{
     		ThisType = GetType();
     		Dif dif = new Dif();
-    		dif.Tag = "ハネ";
-    		dif.Add(new Pars(Sta.胴体["横髪左"][0][1]));
+    		dif.Tag = "カル";
+    		dif.Add(new Pars(Sta.胴体["横髪左"][0][3]));
     		本体 = new Difs();
     		本体.Tag = dif.Tag;
     		本体.Add(dif);

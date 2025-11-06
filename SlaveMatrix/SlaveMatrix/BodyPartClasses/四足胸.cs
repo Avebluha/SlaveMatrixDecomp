@@ -790,7 +790,7 @@ namespace SlaveMatrix
 
     	public JointS 脇右_接続点 => new JointS(本体, X0Y0_胸郭, 1);
 
-    	public JointS 胴_接続点 => new JointS(本体, X0Y0_胸郭, 9);
+    	public JointS Torso_接続点 => new JointS(本体, X0Y0_胸郭, 9);
 
     	public JointS 胸左_接続点 => new JointS(本体, X0Y0_胸郭, 2);
 
@@ -808,7 +808,7 @@ namespace SlaveMatrix
 
     	public JointS 背中_接続点 => new JointS(本体, X0Y0_胸郭, 10);
 
-    	public 四足胸(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 四足胸D e)
+    	public 四足胸(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 四足胸D e)
     	{
     		四足胸 四足胸2 = this;
     		ThisType = GetType();
@@ -950,7 +950,7 @@ namespace SlaveMatrix
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 四足胸2;
     				f.ConnectionType = ConnectionInfo.四足胸_Torso_接続;
-    				f.接続(四足胸2.胴_接続点);
+    				f.接続(四足胸2.Torso_接続点);
     				return f;
     			}).ToArray();
     		}

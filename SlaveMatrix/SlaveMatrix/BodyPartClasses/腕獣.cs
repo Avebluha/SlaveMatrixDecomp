@@ -2,7 +2,7 @@ namespace SlaveMatrix
 {
     public struct 腕獣
     {
-    	public 四足脇 肩;
+    	public 四足脇 Shoulder;
 
     	public 獣上腕 上腕;
 

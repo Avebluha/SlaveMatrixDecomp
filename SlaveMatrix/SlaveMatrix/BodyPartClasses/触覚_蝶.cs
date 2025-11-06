@@ -798,7 +798,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 触覚_蝶(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 触覚_蝶D e)
+    	public 触覚_蝶(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 触覚_蝶D e)
     	{
     		ThisType = GetType();
     		Dif dif = new Dif();

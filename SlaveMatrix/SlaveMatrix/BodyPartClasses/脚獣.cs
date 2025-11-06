@@ -4,7 +4,7 @@ namespace SlaveMatrix
     {
     	public 獣腿 腿;
 
-    	public 獣脚 脚;
+    	public 獣脚 Leg;
 
     	public 獣足 足;
     }

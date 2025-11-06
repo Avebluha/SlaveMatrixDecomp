@@ -117,7 +117,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 耳_人(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 耳_人D e)
+    	public 耳_人(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 耳_人D e)
     	{
     		ThisType = GetType();
     		本体 = new Difs();

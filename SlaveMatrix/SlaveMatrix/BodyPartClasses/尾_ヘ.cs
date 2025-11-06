@@ -5722,7 +5722,7 @@ namespace SlaveMatrix
 
     	public JointS 鎖4_接続点 => new JointS(本体, X0Y0_輪2_金具右, 0);
 
-    	public 尾_ヘ(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 尾_ヘD e)
+    	public 尾_ヘ(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 尾_ヘD e)
     	{
     		尾_ヘ 尾_ヘ2 = this;
     		ThisType = GetType();

@@ -62,11 +62,11 @@ namespace SlaveMatrix
 
     	private ContactType 挿入箇所;
 
-    	private 肩 肩;
+    	private Shoulder Shoulder;
 
-    	private 肩 肩左;
+    	private Shoulder 肩左;
 
-    	private 肩 肩右;
+    	private Shoulder 肩右;
 
     	private 上腕_人 上腕;
 
@@ -90,9 +90,9 @@ namespace SlaveMatrix
 
     	private 腿_人 腿右;
 
-    	private 脚_人 脚左;
+    	private Leg_人 脚左;
 
-    	private 脚_人 脚右;
+    	private Leg_人 脚右;
 
     	private 足_人 足左;
 
@@ -740,7 +740,7 @@ namespace SlaveMatrix
     					ペニス処理2.Cha.腕_人_手コキ右(0, 0.0, 0.0, 0.0, 0.0);
     				}
     				ペニス処理2.手固定 = true;
-    				ペニス処理2.肩 = (ペニス処理2.手コキ左 ? ペニス処理2.肩左 : ペニス処理2.肩右);
+    				ペニス処理2.Shoulder = (ペニス処理2.手コキ左 ? ペニス処理2.肩左 : ペニス処理2.肩右);
     				ペニス処理2.上腕 = (ペニス処理2.手コキ左 ? ペニス処理2.上腕左 : ペニス処理2.上腕右);
     				ペニス処理2.下腕 = (ペニス処理2.手コキ左 ? ペニス処理2.下腕左 : ペニス処理2.下腕右);
     				ペニス処理2.手 = (ペニス処理2.手コキ左 ? ペニス処理2.手左 : ペニス処理2.手右);
@@ -755,9 +755,9 @@ namespace SlaveMatrix
     			},
     			Runing = delegate(Mot m)
     			{
-    				if (ペニス処理2.肩 != null)
+    				if (ペニス処理2.Shoulder != null)
     				{
-    					ペニス処理2.肩.角度C = s * 5.0 * m.Value;
+    					ペニス処理2.Shoulder.角度C = s * 5.0 * m.Value;
     				}
     				if (ペニス処理2.下腕 != null)
     				{
@@ -794,9 +794,9 @@ namespace SlaveMatrix
     			{
     				ペニス処理2.手固定 = false;
     				調教UI.コキ = false;
-    				if (ペニス処理2.肩 != null)
+    				if (ペニス処理2.Shoulder != null)
     				{
-    					ペニス処理2.肩.角度C = 0.0;
+    					ペニス処理2.Shoulder.角度C = 0.0;
     				}
     				if (ペニス処理2.下腕 != null)
     				{
@@ -1106,11 +1106,11 @@ namespace SlaveMatrix
     		Bod = Cha.Bod;
     		if (Bod.腕人n > 0)
     		{
-    			肩左 = Bod.腕人左[0].肩;
+    			肩左 = Bod.腕人左[0].Shoulder;
     			上腕左 = Bod.腕人左[0].上腕;
     			下腕左 = Bod.腕人左[0].下腕;
     			手左 = Bod.腕人左[0].手;
-    			肩右 = Bod.腕人右[0].肩;
+    			肩右 = Bod.腕人右[0].Shoulder;
     			上腕右 = Bod.腕人右[0].上腕;
     			下腕右 = Bod.腕人右[0].下腕;
     			手右 = Bod.腕人右[0].手;
@@ -1118,10 +1118,10 @@ namespace SlaveMatrix
     		if (Bod.脚人n > 0)
     		{
     			腿左 = Bod.脚人左[0].腿;
-    			脚左 = Bod.脚人左[0].脚;
+    			脚左 = Bod.脚人左[0].Leg;
     			足左 = Bod.脚人左[0].足;
     			腿右 = Bod.脚人右[0].腿;
-    			脚右 = Bod.脚人右[0].脚;
+    			脚右 = Bod.脚人右[0].Leg;
     			足右 = Bod.脚人右[0].足;
     		}
     	}

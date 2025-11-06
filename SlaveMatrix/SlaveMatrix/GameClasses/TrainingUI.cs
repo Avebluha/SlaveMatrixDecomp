@@ -15,7 +15,7 @@ namespace SlaveMatrix
     	private ConstProp CP = new ConstProp();
 
 
-    	public Med Med;
+    	public ModeEventDispatcher Med;
 
     	public RenderArea Are; 
         private RenderArea Film;
@@ -1580,7 +1580,7 @@ namespace SlaveMatrix
     	{
     		if (!Bod.Is拘束 && Bod.脚人n > 0)
     		{
-    			Cha.脚();
+    			Cha.Leg();
     			Cha.Bod.腿Update();
     		}
     	}
@@ -2038,7 +2038,7 @@ namespace SlaveMatrix
     		PlayerStamina.Leave();
     	}
 
-    	public TrainingUI(Med Med, RenderArea Are, InfoPanel ip)
+    	public TrainingUI(ModeEventDispatcher Med, RenderArea Are, InfoPanel ip)
     	{
     		TrainingUI 調教UI2 = this;
     		try
@@ -3058,7 +3058,7 @@ namespace SlaveMatrix
     		SensitivityBox = new Tex("Sens", new Vector2D(num + 0.02, 0.08), 0.1, 0.6, 1.99, new Font("MS Gothic", 1f), 0.057, 0, "", Col.White, Col.Transparent, Color.FromArgb(5, Col.DarkMagenta), 100.0);
     	}
 
-    	public void StaminaButtons(RenderArea Are, Med Med, InfoPanel ip)
+    	public void StaminaButtons(RenderArea Are, ModeEventDispatcher Med, InfoPanel ip)
     	{
     		double x = 0.08;
     		double y = 0.1;

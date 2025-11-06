@@ -4,9 +4,9 @@ using _2DGAMELIB;
 namespace SlaveMatrix
 {
     [Serializable]
-    public class 脚_竜D : 獣脚D
+    public class Leg_竜D : 獣脚D
     {
-    	public bool 脚_表示 = true;
+    	public bool Leg_表示 = true;
 
     	public bool 竜性_鱗脹_鱗1_表示;
 
@@ -62,7 +62,7 @@ namespace SlaveMatrix
 
     	public bool 鎖表示;
 
-    	public 脚_竜D()
+    	public Leg_竜D()
     	{
     		ThisType = GetType();
     	}
@@ -71,12 +71,12 @@ namespace SlaveMatrix
     	{
     		足_接続.Add(e);
     		e.Par = this;
-    		e.接続情報 = ConnectionInfo.脚_竜_足_接続;
+    		e.接続情報 = ConnectionInfo.Leg_竜_足_接続;
     	}
 
-    	public override Ele GetEle(double DisUnit, Med Med, 体配色 体配色)
+    	public override Ele GetEle(double DisUnit, ModeEventDispatcher Med, 体配色 体配色)
     	{
-    		return new 脚_竜(DisUnit, 配色指定, 体配色, Med, this);
+    		return new Leg_竜(DisUnit, 配色指定, 体配色, Med, this);
     	}
     }
 }

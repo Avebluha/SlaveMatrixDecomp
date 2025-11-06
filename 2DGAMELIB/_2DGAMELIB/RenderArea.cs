@@ -38,7 +38,7 @@ namespace _2DGAMELIB
     		Setting(Unit, XRatio, YRatio, Size, DisMag, HitMag);
     	}
 
-    	public RenderArea(Med Med, bool Hit)
+    	public RenderArea(ModeEventDispatcher Med, bool Hit)
     	{
     		if (Hit)
     		{

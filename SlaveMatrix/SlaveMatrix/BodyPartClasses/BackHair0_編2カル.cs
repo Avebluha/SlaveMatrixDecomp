@@ -1081,7 +1081,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 後髪0_編2カル(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 後髪0_編2カルD e)
+    	public 後髪0_編2カル(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 後髪0_編2カルD e)
     	{
     		ThisType = GetType();
     		Dif dif = new Dif();

@@ -104,7 +104,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 顔ハイライト(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 顔ハイライトD e)
+    	public 顔ハイライト(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 顔ハイライトD e)
     	{
     		ThisType = GetType();
     		本体 = new Difs(Sta.胴体["顔ハイライト左"]);

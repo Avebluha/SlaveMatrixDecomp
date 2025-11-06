@@ -5,7 +5,7 @@ using _2DGAMELIB;
 namespace SlaveMatrix
 {
     [Serializable]
-    public class 胸D : EleD
+    public class ChestD : EleD
     {
     	public bool 胸郭_表示 = true;
 
@@ -155,7 +155,7 @@ namespace SlaveMatrix
 
     	public List<EleD> 背中_接続 = new List<EleD>();
 
-    	public 胸D()
+    	public ChestD()
     	{
     		ThisType = GetType();
     	}
@@ -164,49 +164,49 @@ namespace SlaveMatrix
     	{
     		Neck_接続.Add(e);
     		e.Par = this;
-    		e.接続情報 = ConnectionInfo.胸_Neck_接続;
+    		e.接続情報 = ConnectionInfo.Chest_Neck_接続;
     	}
 
     	public void 肩左接続(EleD e)
     	{
     		肩左_接続.Add(e);
     		e.Par = this;
-    		e.接続情報 = ConnectionInfo.胸_肩左_接続;
+    		e.接続情報 = ConnectionInfo.Chest_肩左_接続;
     	}
 
     	public void 肩右接続(EleD e)
     	{
     		肩右_接続.Add(e);
     		e.Par = this;
-    		e.接続情報 = ConnectionInfo.胸_肩右_接続;
+    		e.接続情報 = ConnectionInfo.Chest_肩右_接続;
     	}
 
     	public void 胸左接続(EleD e)
     	{
     		胸左_接続.Add(e);
     		e.Par = this;
-    		e.接続情報 = ConnectionInfo.胸_胸左_接続;
+    		e.接続情報 = ConnectionInfo.Chest_胸左_接続;
     	}
 
     	public void 胸右接続(EleD e)
     	{
     		胸右_接続.Add(e);
     		e.Par = this;
-    		e.接続情報 = ConnectionInfo.胸_胸右_接続;
+    		e.接続情報 = ConnectionInfo.Chest_胸右_接続;
     	}
 
     	public void 肌接続(EleD e)
     	{
     		肌_接続.Add(e);
     		e.Par = this;
-    		e.接続情報 = ConnectionInfo.胸_肌_接続;
+    		e.接続情報 = ConnectionInfo.Chest_肌_接続;
     	}
 
     	public void 翼上左接続(EleD e)
     	{
     		翼上左_接続.Add(e);
     		e.Par = this;
-    		e.接続情報 = ConnectionInfo.胸_翼上左_接続;
+    		e.接続情報 = ConnectionInfo.Chest_翼上左_接続;
     		if (!(e is 尾D))
     		{
     			return;
@@ -221,7 +221,7 @@ namespace SlaveMatrix
     	{
     		翼上右_接続.Add(e);
     		e.Par = this;
-    		e.接続情報 = ConnectionInfo.胸_翼上右_接続;
+    		e.接続情報 = ConnectionInfo.Chest_翼上右_接続;
     		if (!(e is 尾D))
     		{
     			return;
@@ -236,7 +236,7 @@ namespace SlaveMatrix
     	{
     		翼下左_接続.Add(e);
     		e.Par = this;
-    		e.接続情報 = ConnectionInfo.胸_翼下左_接続;
+    		e.接続情報 = ConnectionInfo.Chest_翼下左_接続;
     		if (!(e is 尾D))
     		{
     			return;
@@ -251,7 +251,7 @@ namespace SlaveMatrix
     	{
     		翼下右_接続.Add(e);
     		e.Par = this;
-    		e.接続情報 = ConnectionInfo.胸_翼下右_接続;
+    		e.接続情報 = ConnectionInfo.Chest_翼下右_接続;
     		if (!(e is 尾D))
     		{
     			return;
@@ -266,16 +266,16 @@ namespace SlaveMatrix
     	{
     		背中_接続.Add(e);
     		e.Par = this;
-    		e.接続情報 = ConnectionInfo.胸_背中_接続;
+    		e.接続情報 = ConnectionInfo.Chest_背中_接続;
     		foreach (EleD item in e.EnumEleD())
     		{
     			item.尺度B = 1.0;
     		}
     	}
 
-    	public override Ele GetEle(double DisUnit, Med Med, 体配色 体配色)
+    	public override Ele GetEle(double DisUnit, ModeEventDispatcher Med, 体配色 体配色)
     	{
-    		return new 胸(DisUnit, 配色指定, 体配色, Med, this);
+    		return new Chest(DisUnit, 配色指定, 体配色, Med, this);
     	}
     }
 }

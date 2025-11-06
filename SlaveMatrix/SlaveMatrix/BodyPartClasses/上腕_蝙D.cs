@@ -40,7 +40,7 @@ namespace SlaveMatrix
     		e.接続情報 = ConnectionInfo.上腕_蝙_下腕_接続;
     	}
 
-    	public override Ele GetEle(double DisUnit, Med Med, 体配色 体配色)
+    	public override Ele GetEle(double DisUnit, ModeEventDispatcher Med, 体配色 体配色)
     	{
     		return new 上腕_蝙(DisUnit, 配色指定, 体配色, Med, this);
     	}

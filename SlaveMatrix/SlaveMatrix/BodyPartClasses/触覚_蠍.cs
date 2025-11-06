@@ -482,7 +482,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 触覚_蠍(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 触覚_蠍D e)
+    	public 触覚_蠍(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 触覚_蠍D e)
     	{
     		ThisType = GetType();
     		Dif dif = new Dif();

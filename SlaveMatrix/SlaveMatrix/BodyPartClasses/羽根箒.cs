@@ -209,7 +209,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 羽根箒(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 羽根箒D e)
+    	public 羽根箒(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 羽根箒D e)
     	{
     		ThisType = GetType();
     		本体 = new Difs(Sta.カーソル["羽根箒"]);

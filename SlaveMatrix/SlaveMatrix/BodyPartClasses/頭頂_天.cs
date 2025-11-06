@@ -105,7 +105,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 頭頂_天(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 頭頂_天D e)
+    	public 頭頂_天(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 頭頂_天D e)
     	{
     		ThisType = GetType();
     		Dif dif = new Dif();

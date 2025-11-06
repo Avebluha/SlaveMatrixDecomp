@@ -142,7 +142,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 葉_披(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 葉_披D e)
+    	public 葉_披(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 葉_披D e)
     	{
     		ThisType = GetType();
     		Dif dif = new Dif(Sta.肢左["葉"][0]);

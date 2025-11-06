@@ -505,7 +505,7 @@ namespace SlaveMatrix
 
     	public JointS 触覚右_接続点 => new JointS(本体, X0Y0_面中0_付根右_付根2, 0);
 
-    	public 顔面_甲(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 顔面_甲D e)
+    	public 顔面_甲(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 顔面_甲D e)
     	{
     		顔面_甲 顔面_甲2 = this;
     		ThisType = GetType();

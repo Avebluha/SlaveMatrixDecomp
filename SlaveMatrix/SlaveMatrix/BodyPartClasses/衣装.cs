@@ -48,7 +48,7 @@ namespace SlaveMatrix
 
     	public static bool Isブーツ条件(this ChaD c)
     	{
-    		return c.body_tree.EnumEleD().IsEleD<脚_人D>();
+    		return c.body_tree.EnumEleD().IsEleD<Leg_人D>();
     	}
 
     	public static IEnumerable<object> Get髪留め(ChaD c)

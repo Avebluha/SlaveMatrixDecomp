@@ -138,7 +138,7 @@ namespace SlaveMatrix
 
     	public JointS 右5_接続点 => new JointS(本体, X0Y0_髪基, 6);
 
-    	public BackHair0_肢系(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, BackHair0_肢系D e)
+    	public BackHair0_肢系(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, BackHair0_肢系D e)
     	{
     		BackHair0_肢系 後髪0_肢系2 = this;
     		ThisType = GetType();

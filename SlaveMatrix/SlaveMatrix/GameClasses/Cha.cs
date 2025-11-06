@@ -10,7 +10,7 @@ namespace SlaveMatrix
 {
     public class Cha
     {
-    	public Med Med;
+    	public ModeEventDispatcher Med;
 
     	public RenderArea Are;
 
@@ -182,8 +182,8 @@ namespace SlaveMatrix
     		set
     		{
     			呼吸_ = value;
-    			Bod.胸.尺度C = 0.99 + 0.02 * 呼吸_;
-    			Bod.胸肌_人.尺度C = Bod.胸.尺度C;
+    			Bod.Chest.尺度C = 0.99 + 0.02 * 呼吸_;
+    			Bod.胸肌_人.尺度C = Bod.Chest.尺度C;
     			p.Y = y * 呼吸_ * 0.5;
     			if (Bod.Is髪)
     			{
@@ -194,9 +194,9 @@ namespace SlaveMatrix
     				Bod.EI腕前.Position = p;
     			}
     			p.Y = y * 呼吸_ * 0.28;
-    			if (Bod.Is胸)
+    			if (Bod.IsChest)
     			{
-    				Bod.EI胸.Position = p;
+    				Bod.EIChest.Position = p;
     			}
     			p.Y = 0.0 - p.Y;
     			Bod.腰.位置C = p;
@@ -244,7 +244,7 @@ namespace SlaveMatrix
     		放尿強制終了_();
     	}
 
-    	public Cha(Med Med, RenderArea Are, ChaD ChaD)
+    	public Cha(ModeEventDispatcher Med, RenderArea Are, ChaD ChaD)
     	{
     		Cha cha = this;
     		this.Med = Med;
@@ -254,7 +254,7 @@ namespace SlaveMatrix
     		_ = Are.DisplayUnitScale;
     		Bod = new Bod(Med, Are, this);
     		重髪 = Bod.Is髪 && Bod.EI髪.IsHeavy();
-    		重胸 = Bod.Is胸 && Bod.EI胸.IsHeavy();
+    		重胸 = Bod.IsChest && Bod.EIChest.IsHeavy();
     		重腰 = Bod.Is腰 && Bod.EI腰.IsHeavy();
     		重腕前 = Bod.Is腕前 && Bod.EI腕前.IsHeavy();
     		重半後 = Bod.Is半後 && Bod.EI半後.IsHeavy();
@@ -262,12 +262,12 @@ namespace SlaveMatrix
     		重半中2 = Bod.Is半中2 && Bod.EI半中2.IsHeavy();
     		重半前 = Bod.Is半前 && Bod.EI半前.IsHeavy();
     		重腿 = Bod.Is腿 && Bod.EI腿.IsHeavy();
-    		double 尺度C = Bod.胸.尺度C;
-    		Bod.胸.尺度C = 0.99;
-    		double num = Bod.胸.X0Y0_胸郭.ToGlobal(Bod.胸.X0Y0_胸郭.JP[0].Joint).Y;
-    		Bod.胸.尺度C = 1.01;
-    		double num2 = Bod.胸.X0Y0_胸郭.ToGlobal(Bod.胸.X0Y0_胸郭.JP[0].Joint).Y;
-    		Bod.胸.尺度C = 尺度C;
+    		double 尺度C = Bod.Chest.尺度C;
+    		Bod.Chest.尺度C = 0.99;
+    		double num = Bod.Chest.X0Y0_胸郭.ToGlobal(Bod.Chest.X0Y0_胸郭.JP[0].Joint).Y;
+    		Bod.Chest.尺度C = 1.01;
+    		double num2 = Bod.Chest.X0Y0_胸郭.ToGlobal(Bod.Chest.X0Y0_胸郭.JP[0].Joint).Y;
+    		Bod.Chest.尺度C = 尺度C;
     		y = num2 - num;
     		呼吸 = new Mot(0.0, 1.0)
     		{
@@ -1748,15 +1748,15 @@ namespace SlaveMatrix
     						cha.Bod.EI髪.Updatef = true;
     					}
     				}
-    				if (cha.Bod.Is胸)
+    				if (cha.Bod.IsChest)
     				{
     					if (cha.重胸)
     					{
-    						cha.Bod.EI胸.Position = p_;
+    						cha.Bod.EIChest.Position = p_;
     					}
     					else
     					{
-    						cha.Bod.EI胸.Updatef = true;
+    						cha.Bod.EIChest.Updatef = true;
     					}
     				}
     				if (cha.Bod.Is腰)
@@ -1856,9 +1856,9 @@ namespace SlaveMatrix
     				{
     					cha.Bod.EI髪.Position = Dat.Vec2DZero;
     				}
-    				if (cha.Bod.Is胸)
+    				if (cha.Bod.IsChest)
     				{
-    					cha.Bod.EI胸.Position = Dat.Vec2DZero;
+    					cha.Bod.EIChest.Position = Dat.Vec2DZero;
     				}
     				if (cha.Bod.Is腰)
     				{
@@ -2050,7 +2050,7 @@ namespace SlaveMatrix
             {
                 result.p = result.e.本体.GetHitPar_(HitColor);
                 bool flag = false;
-                bool flag2 = result.e is 肩 || result.e is 上腕 || result.e is 下腕 || result.e is 手 || result.e is 四足脇 || result.e is 腿 || result.e is 脚 || result.e is 足 || result.e is 鰭 || result.e is 葉 || result.e is 前翅 || result.e is 後翅 || result.e is 触肢 || result.e is 節足 || result.e is 節尾 || result.e is 大顎 || result.e is 虫顎 || result.e is 虫鎌 || result.e is 触手;
+                bool flag2 = result.e is Shoulder || result.e is 上腕 || result.e is 下腕 || result.e is 手 || result.e is 四足脇 || result.e is 腿 || result.e is Leg || result.e is 足 || result.e is 鰭 || result.e is 葉 || result.e is 前翅 || result.e is 後翅 || result.e is 触肢 || result.e is 節足 || result.e is 節尾 || result.e is 大顎 || result.e is 虫顎 || result.e is 虫鎌 || result.e is 触手;
                 if (result.e is 前髪 || result.e is 頭頂)
                 {
                     result.c = ContactType.Head;
@@ -2067,7 +2067,7 @@ namespace SlaveMatrix
                 {
                     result.c = ContactType.Face;
                 }
-                else if (result.e is 横髪 || result.e is BackHair0 || result.e is BackHair1 || result.e is 基髪)
+                else if (result.e is SideHair || result.e is BackHair0 || result.e is BackHair1 || result.e is 基髪)
                 {
                     result.c = ContactType.Hair;
                 }
@@ -2075,7 +2075,7 @@ namespace SlaveMatrix
                 {
                     result.c = ContactType.Neck;
                 }
-                else if (result.e is 肩)
+                else if (result.e is Shoulder)
                 {
                     result.c = ContactType.Shoulder;
                 }
@@ -2087,7 +2087,7 @@ namespace SlaveMatrix
                 {
                     result.c = ContactType.Chest;
                 }
-                else if (result.e is 胸)
+                else if (result.e is Chest)
                 {
                     result.c = ContactType.Side;
                 }

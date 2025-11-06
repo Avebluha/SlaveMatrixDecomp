@@ -507,7 +507,7 @@ namespace SlaveMatrix
 
     	public JointS 下腕_接続点 => new JointS(本体, X0Y0_獣翼上腕, 0);
 
-    	public 上腕_蝙(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 上腕_蝙D e)
+    	public 上腕_蝙(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 上腕_蝙D e)
     	{
     		上腕_蝙 上腕_蝙2 = this;
     		飛膜 = new 飛膜_根(DisUnit, 配色指定, 体配色);

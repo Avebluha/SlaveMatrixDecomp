@@ -63,7 +63,7 @@ namespace SlaveMatrix
 
     	public スタンプW 鞭痕;
 
-    	public Ele[] 胸_接続;
+    	public Ele[] Chest_接続;
 
     	public Ele[] 肌_接続;
 
@@ -279,7 +279,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public JointS 胸_接続点 => new JointS(本体, X0Y0_胴, 0);
+    	public JointS Chest_接続点 => new JointS(本体, X0Y0_胴, 0);
 
     	public JointS 肌_接続点 => new JointS(本体, X0Y0_胴, 5);
 
@@ -287,7 +287,7 @@ namespace SlaveMatrix
 
     	public JointS 翼右_接続点 => new JointS(本体, X0Y0_胴, 2);
 
-    	public Torso(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, TorsoD e)
+    	public Torso(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, TorsoD e)
     	{
     		Torso 胴2 = this;
     		ThisType = GetType();
@@ -349,14 +349,14 @@ namespace SlaveMatrix
     			表示 = false;
     		}
     		Ele f;
-    		if (e.胸_接続.Count > 0)
+    		if (e.Chest_接続.Count > 0)
     		{
-    			胸_接続 = e.胸_接続.Select(delegate(EleD g)
+    			Chest_接続 = e.Chest_接続.Select(delegate(EleD g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 胴2;
-    				f.ConnectionType = ConnectionInfo.Torso_胸_接続;
-    				f.接続(胴2.胸_接続点);
+    				f.ConnectionType = ConnectionInfo.Torso_Chest_接続;
+    				f.接続(胴2.Chest_接続点);
     				return f;
     			}).ToArray();
     		}

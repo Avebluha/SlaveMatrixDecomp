@@ -186,7 +186,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public ロータ(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, ロータD e)
+    	public ロータ(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, ロータD e)
     	{
     		ThisType = GetType();
     		本体 = new Difs(Sta.カーソル["ロータ"]);

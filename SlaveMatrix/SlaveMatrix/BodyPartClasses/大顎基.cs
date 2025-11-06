@@ -404,7 +404,7 @@ namespace SlaveMatrix
 
     	public JointS 大顎上_接続点 => new JointS(本体, X0Y0_甲殻下, 2);
 
-    	public 大顎基(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 大顎基D e)
+    	public 大顎基(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 大顎基D e)
     	{
     		大顎基 大顎基2 = this;
     		大顎上 = new 大顎上(DisUnit, 配色指定, 体配色);

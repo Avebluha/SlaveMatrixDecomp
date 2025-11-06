@@ -583,7 +583,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 口_裂け(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 口_裂けD e)
+    	public 口_裂け(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 口_裂けD e)
     	{
     		ThisType = GetType();
     		Dif dif = new Dif(Sta.胴体["口"][1]);

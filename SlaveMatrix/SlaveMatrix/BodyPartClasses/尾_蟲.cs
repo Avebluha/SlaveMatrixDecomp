@@ -1546,7 +1546,7 @@ namespace SlaveMatrix
 
     	public JointS 鎖4_接続点 => new JointS(本体, X0Y0_輪2_金具右, 0);
 
-    	public 尾_蟲(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 尾_蟲D e)
+    	public 尾_蟲(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 尾_蟲D e)
     	{
     		尾_蟲 尾_蟲2 = this;
     		ThisType = GetType();

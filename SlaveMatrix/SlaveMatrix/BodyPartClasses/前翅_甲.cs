@@ -709,7 +709,7 @@ namespace SlaveMatrix
 
     	public JointS 軸3_接続点 => new JointS(本体, X0Y0_前翅_前翅軸_軸2, 0);
 
-    	public 前翅_甲(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 前翅_甲D e)
+    	public 前翅_甲(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 前翅_甲D e)
     	{
     		前翅_甲 前翅_甲2 = this;
     		ThisType = GetType();

@@ -97,7 +97,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public ピアス(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, ピアスD e)
+    	public ピアス(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, ピアスD e)
     	{
     		ThisType = GetType();
     		本体 = new Difs(Sta.性器付["ピアス"]);

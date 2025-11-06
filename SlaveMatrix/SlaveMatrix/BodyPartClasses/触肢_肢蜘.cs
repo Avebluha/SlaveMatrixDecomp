@@ -351,7 +351,7 @@ namespace SlaveMatrix
 
     	public JointS 鎖2_接続点 => new JointS(本体, X0Y0_輪_金具右, 0);
 
-    	public 触肢_肢蜘(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 触肢_肢蜘D e)
+    	public 触肢_肢蜘(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 触肢_肢蜘D e)
     	{
     		ThisType = GetType();
     		Dif dif = new Dif();

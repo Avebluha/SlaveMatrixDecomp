@@ -122,7 +122,7 @@ namespace SlaveMatrix
 
     	public JointS 上腕_接続点 => new JointS(本体, X0Y0_脇, 0);
 
-    	public 四足脇(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 四足脇D e)
+    	public 四足脇(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 四足脇D e)
     	{
     		四足脇 四足脇2 = this;
     		ThisType = GetType();

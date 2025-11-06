@@ -49,7 +49,7 @@ namespace _2DGAMELIB
     		}
     	}
 
-    	public void SetHitColor(Med Med)
+    	public void SetHitColor(ModeEventDispatcher Med)
     	{
     		foreach (But item in EnumBut)
     		{

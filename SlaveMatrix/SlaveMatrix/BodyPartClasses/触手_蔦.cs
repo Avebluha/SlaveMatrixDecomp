@@ -3279,7 +3279,7 @@ namespace SlaveMatrix
 
     	public JointS 鎖4_接続点 => new JointS(本体, X0Y0_輪2_金具右, 0);
 
-    	public 触手_蔦(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 触手_蔦D e)
+    	public 触手_蔦(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 触手_蔦D e)
     	{
     		触手_蔦 触手_蔦2 = this;
     		ThisType = GetType();

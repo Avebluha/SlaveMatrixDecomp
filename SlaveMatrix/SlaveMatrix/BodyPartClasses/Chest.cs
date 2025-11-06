@@ -3,7 +3,7 @@ using _2DGAMELIB;
 
 namespace SlaveMatrix
 {
-    public class 胸 : Ele
+    public class Chest : Ele
     {
     	public Par X0Y0_胸郭;
 
@@ -1412,9 +1412,9 @@ namespace SlaveMatrix
 
     	public JointS 背中_接続点 => new JointS(本体, X0Y0_胸郭, 10);
 
-    	public 胸(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 胸D e)
+    	public Chest(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, ChestD e)
     	{
-    		胸 胸2 = this;
+    		Chest Chest2 = this;
     		ThisType = GetType();
     		本体 = new Difs(Sta.胴体["胸郭"]);
     		Pars pars = 本体[0][0];
@@ -1596,9 +1596,9 @@ namespace SlaveMatrix
     			Neck_接続 = e.Neck_接続.Select(delegate(EleD g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
-    				f.Par = 胸2;
-    				f.ConnectionType = ConnectionInfo.胸_Neck_接続;
-    				f.接続(胸2.首_接続点);
+    				f.Par = Chest2;
+    				f.ConnectionType = ConnectionInfo.Chest_Neck_接続;
+    				f.接続(Chest2.首_接続点);
     				return f;
     			}).ToArray();
     		}
@@ -1607,9 +1607,9 @@ namespace SlaveMatrix
     			肩左_接続 = e.肩左_接続.Select(delegate(EleD g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
-    				f.Par = 胸2;
-    				f.ConnectionType = ConnectionInfo.胸_肩左_接続;
-    				f.接続(胸2.肩左_接続点);
+    				f.Par = Chest2;
+    				f.ConnectionType = ConnectionInfo.Chest_肩左_接続;
+    				f.接続(Chest2.肩左_接続点);
     				return f;
     			}).ToArray();
     		}
@@ -1618,9 +1618,9 @@ namespace SlaveMatrix
     			肩右_接続 = e.肩右_接続.Select(delegate(EleD g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
-    				f.Par = 胸2;
-    				f.ConnectionType = ConnectionInfo.胸_肩右_接続;
-    				f.接続(胸2.肩右_接続点);
+    				f.Par = Chest2;
+    				f.ConnectionType = ConnectionInfo.Chest_肩右_接続;
+    				f.接続(Chest2.肩右_接続点);
     				return f;
     			}).ToArray();
     		}
@@ -1629,9 +1629,9 @@ namespace SlaveMatrix
     			胸左_接続 = e.胸左_接続.Select(delegate(EleD g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
-    				f.Par = 胸2;
-    				f.ConnectionType = ConnectionInfo.胸_胸左_接続;
-    				f.接続(胸2.胸左_接続点);
+    				f.Par = Chest2;
+    				f.ConnectionType = ConnectionInfo.Chest_胸左_接続;
+    				f.接続(Chest2.胸左_接続点);
     				return f;
     			}).ToArray();
     		}
@@ -1640,9 +1640,9 @@ namespace SlaveMatrix
     			胸右_接続 = e.胸右_接続.Select(delegate(EleD g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
-    				f.Par = 胸2;
-    				f.ConnectionType = ConnectionInfo.胸_胸右_接続;
-    				f.接続(胸2.胸右_接続点);
+    				f.Par = Chest2;
+    				f.ConnectionType = ConnectionInfo.Chest_胸右_接続;
+    				f.接続(Chest2.胸右_接続点);
     				return f;
     			}).ToArray();
     		}
@@ -1651,9 +1651,9 @@ namespace SlaveMatrix
     			肌_接続 = e.肌_接続.Select(delegate(EleD g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
-    				f.Par = 胸2;
-    				f.ConnectionType = ConnectionInfo.胸_肌_接続;
-    				f.接続(胸2.肌_接続点);
+    				f.Par = Chest2;
+    				f.ConnectionType = ConnectionInfo.Chest_肌_接続;
+    				f.接続(Chest2.肌_接続点);
     				return f;
     			}).ToArray();
     		}
@@ -1662,9 +1662,9 @@ namespace SlaveMatrix
     			翼上左_接続 = e.翼上左_接続.Select(delegate(EleD g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
-    				f.Par = 胸2;
-    				f.ConnectionType = ConnectionInfo.胸_翼上左_接続;
-    				f.接続(胸2.翼上左_接続点);
+    				f.Par = Chest2;
+    				f.ConnectionType = ConnectionInfo.Chest_翼上左_接続;
+    				f.接続(Chest2.翼上左_接続点);
     				return f;
     			}).ToArray();
     		}
@@ -1673,9 +1673,9 @@ namespace SlaveMatrix
     			翼上右_接続 = e.翼上右_接続.Select(delegate(EleD g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
-    				f.Par = 胸2;
-    				f.ConnectionType = ConnectionInfo.胸_翼上右_接続;
-    				f.接続(胸2.翼上右_接続点);
+    				f.Par = Chest2;
+    				f.ConnectionType = ConnectionInfo.Chest_翼上右_接続;
+    				f.接続(Chest2.翼上右_接続点);
     				return f;
     			}).ToArray();
     		}
@@ -1684,9 +1684,9 @@ namespace SlaveMatrix
     			翼下左_接続 = e.翼下左_接続.Select(delegate(EleD g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
-    				f.Par = 胸2;
-    				f.ConnectionType = ConnectionInfo.胸_翼下左_接続;
-    				f.接続(胸2.翼下左_接続点);
+    				f.Par = Chest2;
+    				f.ConnectionType = ConnectionInfo.Chest_翼下左_接続;
+    				f.接続(Chest2.翼下左_接続点);
     				return f;
     			}).ToArray();
     		}
@@ -1695,9 +1695,9 @@ namespace SlaveMatrix
     			翼下右_接続 = e.翼下右_接続.Select(delegate(EleD g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
-    				f.Par = 胸2;
-    				f.ConnectionType = ConnectionInfo.胸_翼下右_接続;
-    				f.接続(胸2.翼下右_接続点);
+    				f.Par = Chest2;
+    				f.ConnectionType = ConnectionInfo.Chest_翼下右_接続;
+    				f.接続(Chest2.翼下右_接続点);
     				return f;
     			}).ToArray();
     		}
@@ -1706,9 +1706,9 @@ namespace SlaveMatrix
     			背中_接続 = e.背中_接続.Select(delegate(EleD g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
-    				f.Par = 胸2;
-    				f.ConnectionType = ConnectionInfo.胸_背中_接続;
-    				f.接続(胸2.背中_接続点);
+    				f.Par = Chest2;
+    				f.ConnectionType = ConnectionInfo.Chest_背中_接続;
+    				f.接続(Chest2.背中_接続点);
     				return f;
     			}).ToArray();
     		}

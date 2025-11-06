@@ -346,7 +346,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public Cough(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 咳D e)
+    	public Cough(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 咳D e)
     	{
     		ThisType = GetType();
     		本体 = new Difs(Sta.胴体["Cough"]);

@@ -2,7 +2,7 @@ using _2DGAMELIB;
 
 namespace SlaveMatrix
 {
-    public class 横髪_ジグ : 横髪
+    public class SideHair_ジグ : SideHair
     {
     	public Par X0Y0_髪1;
 
@@ -141,7 +141,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 横髪_ジグ(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 横髪_ジグD e)
+    	public SideHair_ジグ(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, SideHair_ジグD e)
     	{
     		ThisType = GetType();
     		Dif dif = new Dif();

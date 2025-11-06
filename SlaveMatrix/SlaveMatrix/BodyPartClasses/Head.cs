@@ -1033,7 +1033,7 @@ namespace SlaveMatrix
 
     	public JointS 触覚右_接続点 => new JointS(本体, X0Y0_頭, 18);
 
-    	public Head(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, HeadD e)
+    	public Head(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, HeadD e)
     	{
     		Head 頭2 = this;
     		ThisType = GetType();

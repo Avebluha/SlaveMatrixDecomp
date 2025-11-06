@@ -4,7 +4,7 @@ using System.Collections.Generic;
 namespace SlaveMatrix
 {
     [Serializable]
-    public class 脚D : EleD
+    public class LegD : EleD
     {
     	public List<EleD> 足_接続 = new List<EleD>();
 

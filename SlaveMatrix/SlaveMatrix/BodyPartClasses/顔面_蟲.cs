@@ -819,7 +819,7 @@ namespace SlaveMatrix
 
     	public JointS 触覚右_接続点 => new JointS(本体, X0Y0_面, 1);
 
-    	public 顔面_蟲(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 顔面_蟲D e)
+    	public 顔面_蟲(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 顔面_蟲D e)
     	{
     		顔面_蟲 顔面_蟲2 = this;
     		ThisType = GetType();

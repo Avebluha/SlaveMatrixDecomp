@@ -812,7 +812,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 前髪_ジグ中寄(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 前髪_ジグ中寄D e)
+    	public 前髪_ジグ中寄(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 前髪_ジグ中寄D e)
     	{
     		ThisType = GetType();
     		Dif dif = new Dif();

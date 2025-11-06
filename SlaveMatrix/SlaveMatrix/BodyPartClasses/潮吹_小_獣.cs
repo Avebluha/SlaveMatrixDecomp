@@ -131,7 +131,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 潮吹_小_獣(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 潮吹_小_獣D e)
+    	public 潮吹_小_獣(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 潮吹_小_獣D e)
     	{
     		ThisType = GetType();
     		Dif dif = new Dif(Sta.性器付["四足潮吹"][0]);

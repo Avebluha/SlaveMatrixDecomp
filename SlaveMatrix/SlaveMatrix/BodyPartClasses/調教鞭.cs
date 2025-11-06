@@ -965,7 +965,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 調教鞭(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 調教鞭D e)
+    	public 調教鞭(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 調教鞭D e)
     	{
     		ThisType = GetType();
     		本体 = new Difs(Sta.カーソル["調教鞭"]);

@@ -3,9 +3,9 @@ using _2DGAMELIB;
 
 namespace SlaveMatrix
 {
-    public class 脚_竜 : 獣脚
+    public class Leg_竜 : 獣脚
     {
-    	public Par X0Y0_脚;
+    	public Par X0Y0_Leg;
 
     	public Par X0Y0_竜性_鱗脹_鱗1;
 
@@ -57,7 +57,7 @@ namespace SlaveMatrix
 
     	public Par X0Y0_脚輪_金具右;
 
-    	public ColorD 脚CD;
+    	public ColorD LegCD;
 
     	public ColorD 竜性_鱗脹_鱗1CD;
 
@@ -109,7 +109,7 @@ namespace SlaveMatrix
 
     	public ColorD 脚輪_金具右CD;
 
-    	public ColorP X0Y0_脚CP;
+    	public ColorP X0Y0_LegCP;
 
     	public ColorP X0Y0_竜性_鱗脹_鱗1CP;
 
@@ -201,16 +201,16 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 脚_表示
+    	public bool Leg_表示
     	{
     		get
     		{
-    			return X0Y0_脚.Dra;
+    			return X0Y0_Leg.Dra;
     		}
     		set
     		{
-    			X0Y0_脚.Dra = value;
-    			X0Y0_脚.Hit = value;
+    			X0Y0_Leg.Dra = value;
+    			X0Y0_Leg.Hit = value;
     		}
     	}
 
@@ -572,11 +572,11 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return 脚_表示;
+    			return Leg_表示;
     		}
     		set
     		{
-    			脚_表示 = value;
+    			Leg_表示 = value;
     			竜性_鱗脹_鱗1_表示 = value;
     			竜性_鱗脹_鱗2_表示 = value;
     			竜性_鱗脹_鱗3_表示 = value;
@@ -610,11 +610,11 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return 脚CD.不透明度;
+    			return LegCD.不透明度;
     		}
     		set
     		{
-    			脚CD.不透明度 = value;
+    			LegCD.不透明度 = value;
     			竜性_鱗脹_鱗1CD.不透明度 = value;
     			竜性_鱗脹_鱗2CD.不透明度 = value;
     			竜性_鱗脹_鱗3CD.不透明度 = value;
@@ -643,22 +643,22 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public JointS 足_接続点 => new JointS(本体, X0Y0_脚, 0);
+    	public JointS 足_接続点 => new JointS(本体, X0Y0_Leg, 0);
 
     	public JointS 鎖1_接続点 => new JointS(本体, X0Y0_脚輪_金具左, 0);
 
     	public JointS 鎖2_接続点 => new JointS(本体, X0Y0_脚輪_金具右, 0);
 
-    	public 脚_竜(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 脚_竜D e)
+    	public Leg_竜(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, Leg_竜D e)
     	{
-    		脚_竜 脚_竜2 = this;
+    		Leg_竜 Leg_竜2 = this;
     		ThisType = GetType();
     		Dif dif = new Dif(Sta.脚左["四足脚"][3]);
     		本体 = new Difs();
     		本体.Tag = dif.Tag;
     		本体.Add(dif);
     		Pars pars = 本体[0][0];
-    		X0Y0_脚 = pars["脚"].ToPar();
+    		X0Y0_Leg = pars["脚"].ToPar();
     		Pars pars2 = pars["鱗脹"].ToPars();
     		X0Y0_竜性_鱗脹_鱗1 = pars2["鱗1"].ToPar();
     		X0Y0_竜性_鱗脹_鱗2 = pars2["鱗2"].ToPar();
@@ -711,7 +711,7 @@ namespace SlaveMatrix
     		サイズ = e.サイズ;
     		サイズX = e.サイズX;
     		サイズY = e.サイズY;
-    		脚_表示 = e.脚_表示;
+    		Leg_表示 = e.Leg_表示;
     		竜性_鱗脹_鱗1_表示 = e.竜性_鱗脹_鱗1_表示;
     		竜性_鱗脹_鱗2_表示 = e.竜性_鱗脹_鱗2_表示;
     		竜性_鱗脹_鱗3_表示 = e.竜性_鱗脹_鱗3_表示;
@@ -751,15 +751,15 @@ namespace SlaveMatrix
     			足_接続 = e.足_接続.Select(delegate(EleD g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
-    				f.Par = 脚_竜2;
-    				f.ConnectionType = ConnectionInfo.脚_竜_足_接続;
-    				f.接続(脚_竜2.足_接続点);
+    				f.Par = Leg_竜2;
+    				f.ConnectionType = ConnectionInfo.Leg_竜_足_接続;
+    				f.接続(Leg_竜2.足_接続点);
     				return f;
     			}).ToArray();
     		}
     		base.配色指定 = 配色指定;
     		配色(体配色);
-    		X0Y0_脚CP = new ColorP(X0Y0_脚, 脚CD, DisUnit, abj: true);
+    		X0Y0_LegCP = new ColorP(X0Y0_Leg, LegCD, DisUnit, abj: true);
     		X0Y0_竜性_鱗脹_鱗1CP = new ColorP(X0Y0_竜性_鱗脹_鱗1, 竜性_鱗脹_鱗1CD, DisUnit, abj: true);
     		X0Y0_竜性_鱗脹_鱗2CP = new ColorP(X0Y0_竜性_鱗脹_鱗2, 竜性_鱗脹_鱗2CD, DisUnit, abj: true);
     		X0Y0_竜性_鱗脹_鱗3CP = new ColorP(X0Y0_竜性_鱗脹_鱗3, 竜性_鱗脹_鱗3CD, DisUnit, abj: true);
@@ -808,7 +808,7 @@ namespace SlaveMatrix
     	public override void SetAngle0()
     	{
     		double num = (右 ? (-1.0) : 1.0);
-    		X0Y0_脚.AngleBase = num * -136.0;
+    		X0Y0_Leg.AngleBase = num * -136.0;
     		本体.JoinPAall();
     	}
 
@@ -823,7 +823,7 @@ namespace SlaveMatrix
 
     	public override void 色更新()
     	{
-    		X0Y0_脚CP.Update();
+    		X0Y0_LegCP.Update();
     		X0Y0_竜性_鱗脹_鱗1CP.Update();
     		X0Y0_竜性_鱗脹_鱗2CP.Update();
     		X0Y0_竜性_鱗脹_鱗3CP.Update();
@@ -874,7 +874,7 @@ namespace SlaveMatrix
 
     	private void 配色N0(体配色 体配色)
     	{
-    		脚CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
+    		LegCD = new ColorD(ref Col.Black, ref 体配色.毛0O);
     		竜性_鱗脹_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
     		竜性_鱗脹_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
     		竜性_鱗脹_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
@@ -904,7 +904,7 @@ namespace SlaveMatrix
 
     	private void 配色T0(体配色 体配色)
     	{
-    		脚CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
+    		LegCD = new ColorD(ref Col.Black, ref 体配色.毛0O);
     		竜性_鱗脹_鱗1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
     		竜性_鱗脹_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
     		竜性_鱗脹_鱗3CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
@@ -934,7 +934,7 @@ namespace SlaveMatrix
 
     	private void 配色T1(体配色 体配色)
     	{
-    		脚CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
+    		LegCD = new ColorD(ref Col.Black, ref 体配色.毛0O);
     		竜性_鱗脹_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
     		竜性_鱗脹_鱗2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
     		竜性_鱗脹_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);

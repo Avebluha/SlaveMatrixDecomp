@@ -50,9 +50,9 @@ namespace SlaveMatrix
 
     	public static Type EleDt;
 
-    	public static Type 胸t;
+    	public static Type Chestt;
 
-    	public static Type 肩t;
+    	public static Type Shouldert;
 
     	public static Type 胴t;
 
@@ -88,7 +88,7 @@ namespace SlaveMatrix
 
     	public static Type 耳_獣Dt;
 
-    	public static Type 肩Dt;
+    	public static Type ShoulderDt;
 
     	public static Type 角1_一Dt;
 
@@ -294,15 +294,15 @@ namespace SlaveMatrix
 
     	public static Type 腿_竜Dt;
 
-    	public static Type 脚_人Dt;
+    	public static Type Leg_人Dt;
 
-    	public static Type 脚_獣Dt;
+    	public static Type Leg_獣Dt;
 
-    	public static Type 脚_蹄Dt;
+    	public static Type Leg_蹄Dt;
 
-    	public static Type 脚_鳥Dt;
+    	public static Type Leg_鳥Dt;
 
-    	public static Type 脚_竜Dt;
+    	public static Type Leg_竜Dt;
 
     	public static Type 足_人Dt;
 
@@ -1092,7 +1092,9 @@ namespace SlaveMatrix
     		//Ser.ToJson(胴体, "C:\\Users\\dave\\Documents\\胴体.json");
     		//胴体 = Ser.UnJson<Obj>("C:\\Users\\dave\\Documents\\胴体.json");
 
-    		肩左 = Resources.肩左.ObjLoad();
+            obj = Resources.肩左.ObjLoad();
+            obj.MigrateKeys();
+            肩左 = obj;
             //肩左.SaveExMod("C:\\Users\\dave\\Documents\\肩左");
             //Ser.ToJson(肩左, "C:\\Users\\dave\\Documents\\肩左.json");
             //肩左 = Ser.UnJson<Obj>("C:\\Users\\dave\\Documents\\肩左.json");
@@ -1102,8 +1104,9 @@ namespace SlaveMatrix
             //Ser.ToJson(腕左, "C:\\Users\\dave\\Documents\\腕左.json");
             //腕左 = Ser.UnJson<Obj>("C:\\Users\\dave\\Documents\\腕左.json");
 
-
-            脚左 = Resources.脚左.ObjLoad();
+            obj = Resources.脚左.ObjLoad();
+            obj.MigrateKeys();
+            脚左 = obj;
             //脚左.SaveExMod("C:\\Users\\dave\\Documents\\脚左");
             //Ser.ToJson(脚左, "C:\\Users\\dave\\Documents\\脚左.json");
             //脚左 = Ser.UnJson<Obj>("C:\\Users\\dave\\Documents\\脚左.json");
@@ -1161,8 +1164,8 @@ namespace SlaveMatrix
             MaxAre = 0.0584246154149664;
     		Elet = typeof(Ele);
     		EleDt = typeof(EleD);
-    		胸t = typeof(胸);
-    		肩t = typeof(肩);
+    		Chestt = typeof(Chest);
+    		Shouldert = typeof(Shoulder);
     		胴t = typeof(Torso);
     		腰t = typeof(Waist);
     		尾_鯨t = typeof(尾_鯨);
@@ -1180,7 +1183,7 @@ namespace SlaveMatrix
     		耳_鰭Dt = typeof(耳_鰭D);
     		耳_羽Dt = typeof(耳_羽D);
     		耳_獣Dt = typeof(耳_獣D);
-    		肩Dt = typeof(肩D);
+    		ShoulderDt = typeof(ShoulderD);
     		角1_一Dt = typeof(角1_一D);
     		角1_鬼Dt = typeof(角1_鬼D);
     		角1_虫Dt = typeof(角1_虫D);
@@ -1283,11 +1286,11 @@ namespace SlaveMatrix
     		腿_蹄Dt = typeof(腿_蹄D);
     		腿_鳥Dt = typeof(腿_鳥D);
     		腿_竜Dt = typeof(腿_竜D);
-    		脚_人Dt = typeof(脚_人D);
-    		脚_獣Dt = typeof(脚_獣D);
-    		脚_蹄Dt = typeof(脚_蹄D);
-    		脚_鳥Dt = typeof(脚_鳥D);
-    		脚_竜Dt = typeof(脚_竜D);
+    		Leg_人Dt = typeof(Leg_人D);
+    		Leg_獣Dt = typeof(Leg_獣D);
+    		Leg_蹄Dt = typeof(Leg_蹄D);
+    		Leg_鳥Dt = typeof(Leg_鳥D);
+    		Leg_竜Dt = typeof(Leg_竜D);
     		足_人Dt = typeof(足_人D);
     		足_獣Dt = typeof(足_獣D);
     		足_馬Dt = typeof(足_馬D);
@@ -1333,10 +1336,10 @@ namespace SlaveMatrix
     			ConnectionInfo.縦目_瞼_接続,
     			ConnectionInfo.吹出し_吹出し_接続,
     			ConnectionInfo.Neck_Head_接続,
-    			ConnectionInfo.胸_Neck_接続,
-    			ConnectionInfo.胸_肌_接続,
-    			ConnectionInfo.胸_背中_接続,
-    			ConnectionInfo.Torso_胸_接続,
+    			ConnectionInfo.Chest_Neck_接続,
+    			ConnectionInfo.Chest_肌_接続,
+    			ConnectionInfo.Chest_背中_接続,
+    			ConnectionInfo.Torso_Chest_接続,
     			ConnectionInfo.Torso_肌_接続,
     			ConnectionInfo.Waist_Torso_接続,
     			ConnectionInfo.Waist_肌_接続,

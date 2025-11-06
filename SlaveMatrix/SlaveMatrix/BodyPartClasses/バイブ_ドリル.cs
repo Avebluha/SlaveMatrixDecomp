@@ -2642,7 +2642,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public バイブ_ドリル(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, バイブ_ドリルD e)
+    	public バイブ_ドリル(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, バイブ_ドリルD e)
     	{
     		ThisType = GetType();
     		本体 = new Difs(Sta.カーソル["ドリル"]);

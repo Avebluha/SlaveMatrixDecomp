@@ -356,7 +356,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 手_獣(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 手_獣D e)
+    	public 手_獣(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 手_獣D e)
     	{
     		ThisType = GetType();
     		Dif dif = new Dif();

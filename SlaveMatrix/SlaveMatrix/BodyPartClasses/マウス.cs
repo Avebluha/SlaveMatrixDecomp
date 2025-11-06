@@ -329,7 +329,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public マウス(double DisUnit, 配色指定 配色指定, 主人公配色 体配色, Med Med, マウスD e)
+    	public マウス(double DisUnit, 配色指定 配色指定, 主人公配色 体配色, ModeEventDispatcher Med, マウスD e)
     	{
     		ThisType = GetType();
     		本体 = new Difs(Sta.カーソル["マウス"]);

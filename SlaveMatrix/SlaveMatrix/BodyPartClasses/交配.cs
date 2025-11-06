@@ -87,7 +87,7 @@ namespace SlaveMatrix
     		Sta.鳳凰Dt.ToString()
     	};
 
-    	private static HashSet<string> 肩人 = new HashSet<string> { Sta.肩Dt.ToString() };
+    	private static HashSet<string> 肩人 = new HashSet<string> { Sta.ShoulderDt.ToString() };
 
     	private static HashSet<string> 胸翼上人 = new HashSet<string>
     	{
@@ -579,8 +579,8 @@ namespace SlaveMatrix
     		Sta.触肢_肢蠍Dt.ToString(),
     		Sta.上腕_獣Dt.ToString(),
     		Sta.上腕_蹄Dt.ToString(),
-    		Sta.脚_鳥Dt.ToString(),
-    		Sta.脚_竜Dt.ToString()
+    		Sta.Leg_鳥Dt.ToString(),
+    		Sta.Leg_竜Dt.ToString()
     	};
 
     	private static HashSet<string> 下腕人 = new HashSet<string>
@@ -613,38 +613,38 @@ namespace SlaveMatrix
 
     	private static HashSet<string> 虫鎌 = new HashSet<string> { Sta.虫鎌Dt.ToString() };
 
-    	private static HashSet<string> 脚人 = new HashSet<string> { Sta.脚_人Dt.ToString() };
+    	private static HashSet<string> 脚人 = new HashSet<string> { Sta.Leg_人Dt.ToString() };
 
     	private static HashSet<string> 脚獣 = new HashSet<string>
     	{
-    		Sta.脚_獣Dt.ToString(),
-    		Sta.脚_蹄Dt.ToString(),
-    		Sta.脚_鳥Dt.ToString(),
-    		Sta.脚_竜Dt.ToString()
+    		Sta.Leg_獣Dt.ToString(),
+    		Sta.Leg_蹄Dt.ToString(),
+    		Sta.Leg_鳥Dt.ToString(),
+    		Sta.Leg_竜Dt.ToString()
     	};
 
     	private static HashSet<string> 脚蹄 = new HashSet<string>
     	{
-    		Sta.脚_獣Dt.ToString(),
-    		Sta.脚_蹄Dt.ToString(),
-    		Sta.脚_鳥Dt.ToString(),
-    		Sta.脚_竜Dt.ToString()
+    		Sta.Leg_獣Dt.ToString(),
+    		Sta.Leg_蹄Dt.ToString(),
+    		Sta.Leg_鳥Dt.ToString(),
+    		Sta.Leg_竜Dt.ToString()
     	};
 
     	private static HashSet<string> 脚鳥 = new HashSet<string>
     	{
-    		Sta.脚_獣Dt.ToString(),
-    		Sta.脚_蹄Dt.ToString(),
-    		Sta.脚_鳥Dt.ToString(),
-    		Sta.脚_竜Dt.ToString()
+    		Sta.Leg_獣Dt.ToString(),
+    		Sta.Leg_蹄Dt.ToString(),
+    		Sta.Leg_鳥Dt.ToString(),
+    		Sta.Leg_竜Dt.ToString()
     	};
 
     	private static HashSet<string> 脚竜 = new HashSet<string>
     	{
-    		Sta.脚_獣Dt.ToString(),
-    		Sta.脚_蹄Dt.ToString(),
-    		Sta.脚_鳥Dt.ToString(),
-    		Sta.脚_竜Dt.ToString()
+    		Sta.Leg_獣Dt.ToString(),
+    		Sta.Leg_蹄Dt.ToString(),
+    		Sta.Leg_鳥Dt.ToString(),
+    		Sta.Leg_竜Dt.ToString()
     	};
 
     	private static HashSet<string> 足人 = new HashSet<string> { Sta.足_人Dt.ToString() };
@@ -799,27 +799,27 @@ namespace SlaveMatrix
     			後髪
     		},
     		{
-    			ConnectionInfo.胸_肩左_接続,
+    			ConnectionInfo.Chest_肩左_接続,
     			肩人
     		},
     		{
-    			ConnectionInfo.胸_肩右_接続,
+    			ConnectionInfo.Chest_肩右_接続,
     			肩人
     		},
     		{
-    			ConnectionInfo.胸_翼上左_接続,
+    			ConnectionInfo.Chest_翼上左_接続,
     			胸翼上人
     		},
     		{
-    			ConnectionInfo.胸_翼上右_接続,
+    			ConnectionInfo.Chest_翼上右_接続,
     			胸翼上人
     		},
     		{
-    			ConnectionInfo.胸_翼下左_接続,
+    			ConnectionInfo.Chest_翼下左_接続,
     			胸翼下人
     		},
     		{
-    			ConnectionInfo.胸_翼下右_接続,
+    			ConnectionInfo.Chest_翼下右_接続,
     			胸翼下人
     		},
     		{
@@ -1167,7 +1167,7 @@ namespace SlaveMatrix
     			額
     		},
     		{
-    			ConnectionInfo.胸_背中_接続,
+    			ConnectionInfo.Chest_背中_接続,
     			背中人
     		},
     		{
@@ -1247,7 +1247,7 @@ namespace SlaveMatrix
     			顔面
     		},
     		{
-    			ConnectionInfo.肩_上腕_接続,
+    			ConnectionInfo.Shoulder_上腕_接続,
     			上腕人
     		},
     		{
@@ -1299,43 +1299,43 @@ namespace SlaveMatrix
     			虫鎌
     		},
     		{
-    			ConnectionInfo.腿_人_脚_接続,
+    			ConnectionInfo.腿_人_Leg_接続,
     			脚人
     		},
     		{
-    			ConnectionInfo.腿_獣_脚_接続,
+    			ConnectionInfo.腿_獣_Leg_接続,
     			脚獣
     		},
     		{
-    			ConnectionInfo.腿_蹄_脚_接続,
+    			ConnectionInfo.腿_蹄_Leg_接続,
     			脚蹄
     		},
     		{
-    			ConnectionInfo.腿_鳥_脚_接続,
+    			ConnectionInfo.腿_鳥_Leg_接続,
     			脚鳥
     		},
     		{
-    			ConnectionInfo.腿_竜_脚_接続,
+    			ConnectionInfo.腿_竜_Leg_接続,
     			脚竜
     		},
     		{
-    			ConnectionInfo.脚_人_足_接続,
+    			ConnectionInfo.Leg_人_足_接続,
     			足人
     		},
     		{
-    			ConnectionInfo.脚_獣_足_接続,
+    			ConnectionInfo.Leg_獣_足_接続,
     			足獣
     		},
     		{
-    			ConnectionInfo.脚_蹄_足_接続,
+    			ConnectionInfo.Leg_蹄_足_接続,
     			足蹄
     		},
     		{
-    			ConnectionInfo.脚_鳥_足_接続,
+    			ConnectionInfo.Leg_鳥_足_接続,
     			足鳥
     		},
     		{
-    			ConnectionInfo.脚_竜_足_接続,
+    			ConnectionInfo.Leg_竜_足_接続,
     			足竜
     		},
     		{
@@ -1824,33 +1824,33 @@ namespace SlaveMatrix
     		頭D2.AlignC();
     		NeckD 首D2 = Mix<NeckD>(母方, 父方, i, 原種モード);
     		首D2.頭接続(頭D2);
-    		胸D 胸D2 = Mix<胸D>(母方, 父方, i, 原種モード);
+    		ChestD ChestD2 = Mix<ChestD>(母方, 父方, i, 原種モード);
     		乳房D 乳房D2 = Mix<乳房D>(母方, 父方, 右: false, i, 原種モード);
     		乳房D2.噴乳接続(new 噴乳D());
     		乳房D2.噴乳接続(new ピアスD());
     		乳房D2.噴乳接続(new キャップ2D());
     		乳房D2.噴乳接続(new 下着乳首D());
-    		胸D2.胸左接続(乳房D2);
-    		胸D2.胸右接続(乳房D2.Get逆());
-    		胸D2.肌接続(Mix<胸毛D>(母方, 父方, i, 原種モード));
-    		胸D2.肌接続(Mix<胸肌D>(母方, 父方, i, 原種モード));
+    		ChestD2.胸左接続(乳房D2);
+    		ChestD2.胸右接続(乳房D2.Get逆());
+    		ChestD2.肌接続(Mix<胸毛D>(母方, 父方, i, 原種モード));
+    		ChestD2.肌接続(Mix<胸肌D>(母方, 父方, i, 原種モード));
     		胸腹板D 胸腹板D2;
-    		胸D2.肌接続(胸腹板D2 = Mix<胸腹板D>(母方, 父方, i, 原種モード));
-    		胸D2.肌接続(new 下着トップ_チューブD());
-    		胸D2.肌接続(new 下着トップ_クロスD());
-    		胸D2.肌接続(new 下着トップ_ビキニD());
-    		胸D2.肌接続(new 下着トップ_マイクロD());
-    		胸D2.肌接続(new 下着トップ_ブラD());
-    		胸D2.肌接続(new 上着トップ_ドレスD());
-    		胸D2.AlignC();
-    		胸D2.首接続(首D2);
+    		ChestD2.肌接続(胸腹板D2 = Mix<胸腹板D>(母方, 父方, i, 原種モード));
+    		ChestD2.肌接続(new 下着トップ_チューブD());
+    		ChestD2.肌接続(new 下着トップ_クロスD());
+    		ChestD2.肌接続(new 下着トップ_ビキニD());
+    		ChestD2.肌接続(new 下着トップ_マイクロD());
+    		ChestD2.肌接続(new 下着トップ_ブラD());
+    		ChestD2.肌接続(new 上着トップ_ドレスD());
+    		ChestD2.AlignC();
+    		ChestD2.首接続(首D2);
     		TorsoD 胴D2 = Mix<TorsoD>(母方, 父方, i, 原種モード);
     		胴腹板D 胴腹板D2;
     		胴D2.肌接続(胴腹板D2 = Mix<胴腹板D>(母方, 父方, i, 原種モード));
     		胴D2.肌接続(Mix<胴肌D>(母方, 父方, i, 原種モード));
     		胴D2.肌接続(new 上着ミドル_ドレスD());
     		胴D2.AlignC();
-    		胴D2.Torso接続(胸D2);
+    		胴D2.Torso接続(ChestD2);
     		WaistD 腰 = Mix<WaistD>(母方, 父方, i, 原種モード);
     		腰.膣基接続(new 膣基_人D());
     		腰.膣基接続(new 膣内精液_人D());
@@ -1928,7 +1928,7 @@ namespace SlaveMatrix
     					後髪1D3.AlignR();
     				}
     			}
-    			横髪D 横髪D2 = Mix<横髪D>(母方, 父方, 右: false, i, 原種モード);
+    			SideHairD 横髪D2 = Mix<SideHairD>(母方, 父方, 右: false, i, 原種モード);
     			基髪D2.横髪左接続(横髪D2);
     			横髪D2.AlignR();
     			基髪D2.横髪右接続(横髪D2.Get逆());
@@ -2160,15 +2160,15 @@ namespace SlaveMatrix
     		頭D2.接続(母方, 父方, i, ConnectionInfo.Head_顔面_接続, 要素構成, 接続構成, 変異率, 原種モード);
     		頭D2.接続(母方, 父方, i, ConnectionInfo.Head_頭頂_接続, 要素構成, 接続構成, 変異率, 原種モード);
     		頭D2.接続(母方, 父方, i, ConnectionInfo.Head_触覚左_接続, 要素構成, 接続構成, 変異率, 原種モード);
-    		胸D2.接続(母方, 父方, i, ConnectionInfo.胸_肩左_接続, 要素構成, 接続構成, 変異率, 原種モード);
+    		ChestD2.接続(母方, 父方, i, ConnectionInfo.Chest_肩左_接続, 要素構成, 接続構成, 変異率, 原種モード);
     		頭D2.接続(母方, 父方, i, ConnectionInfo.Head_額_接続, 要素構成, 接続構成, 変異率, 原種モード);
-    		胸D2.接続(母方, 父方, i, ConnectionInfo.胸_翼上左_接続, 要素構成, 接続構成, 変異率, 原種モード);
-    		胸D2.接続(母方, 父方, i, ConnectionInfo.胸_翼下左_接続, 要素構成, 接続構成, 変異率, 原種モード);
+    		ChestD2.接続(母方, 父方, i, ConnectionInfo.Chest_翼上左_接続, 要素構成, 接続構成, 変異率, 原種モード);
+    		ChestD2.接続(母方, 父方, i, ConnectionInfo.Chest_翼下左_接続, 要素構成, 接続構成, 変異率, 原種モード);
     		胴D2.接続(母方, 父方, i, ConnectionInfo.Torso_翼左_接続, 要素構成, 接続構成, 変異率, 原種モード);
     		腰.接続(母方, 父方, i, ConnectionInfo.Waist_翼左_接続, 要素構成, 接続構成, 変異率, 原種モード);
     		if (原種モード)
     		{
-    			胸D2.接続(母方, 父方, i, ConnectionInfo.胸_背中_接続, 要素構成, 接続構成, 変異率, 原種モード);
+    			ChestD2.接続(母方, 父方, i, ConnectionInfo.Chest_背中_接続, 要素構成, 接続構成, 変異率, 原種モード);
     		}
     		else
     		{
@@ -2177,27 +2177,27 @@ namespace SlaveMatrix
     			if (eleD3 != null)
     			{
     				t = eleD3.GetType().ToString();
-    				if (!胸D2.背中_接続.Any((EleD e) => e.GetType().ToString() == t) && RNG.XS.NextBool())
+    				if (!ChestD2.背中_接続.Any((EleD e) => e.GetType().ToString() == t) && RNG.XS.NextBool())
     				{
-    					胸D2.背中接続(eleD3);
+    					ChestD2.背中接続(eleD3);
     				}
     			}
     			eleD3 = Mix<背中D>(母方, 父方, i, 原種モード);
     			if (eleD3 != null)
     			{
     				t = eleD3.GetType().ToString();
-    				if (!胸D2.背中_接続.Any((EleD e) => e.GetType().ToString() == t) && RNG.XS.NextBool())
+    				if (!ChestD2.背中_接続.Any((EleD e) => e.GetType().ToString() == t) && RNG.XS.NextBool())
     				{
-    					胸D2.背中接続(eleD3);
+    					ChestD2.背中接続(eleD3);
     				}
     			}
     			eleD3 = Mix<背中D>(母方, 父方, i, 原種モード);
     			if (eleD3 != null)
     			{
     				t = eleD3.GetType().ToString();
-    				if (!胸D2.背中_接続.Any((EleD e) => e.GetType().ToString() == t) && RNG.XS.NextBool())
+    				if (!ChestD2.背中_接続.Any((EleD e) => e.GetType().ToString() == t) && RNG.XS.NextBool())
     				{
-    					胸D2.背中接続(eleD3);
+    					ChestD2.背中接続(eleD3);
     				}
     			}
     		}
@@ -3784,7 +3784,7 @@ namespace SlaveMatrix
     			{
     				((上腕_蝙D)item32).竜性_鱗1_表示 = false;
     			}
-    			else if (item32 is 上腕D && item32.Par is 肩D)
+    			else if (item32 is 上腕D && item32.Par is ShoulderD)
     			{
     				item32.AlignR();
     			}
@@ -4448,7 +4448,7 @@ namespace SlaveMatrix
     		if (!原種モード)
     		{
     			string text = 接続.ToString();
-    			if (text.Contains("肩") || text.Contains("脇") || text.Contains("翼"))
+    			if (text.Contains("Shoulder") || text.Contains("脇") || text.Contains("翼"))
     			{
     				if (num.Lot())
     				{

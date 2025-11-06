@@ -83,7 +83,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public キスマーク(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, キスマークD e)
+    	public キスマーク(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, キスマークD e)
     	{
     		ThisType = GetType();
     		本体 = new Difs(Sta.スタンプ["キスマーク"]);

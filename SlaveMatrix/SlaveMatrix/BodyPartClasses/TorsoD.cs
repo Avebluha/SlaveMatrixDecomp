@@ -27,7 +27,7 @@ namespace SlaveMatrix
 
     	public double 筋肉濃度 = 1.0;
 
-    	public List<EleD> 胸_接続 = new List<EleD>();
+    	public List<EleD> Chest_接続 = new List<EleD>();
 
     	public List<EleD> 肌_接続 = new List<EleD>();
 
@@ -42,9 +42,9 @@ namespace SlaveMatrix
 
     	public void Torso接続(EleD e)
     	{
-    		胸_接続.Add(e);
+    		Chest_接続.Add(e);
     		e.Par = this;
-    		e.接続情報 = ConnectionInfo.Torso_胸_接続;
+    		e.接続情報 = ConnectionInfo.Torso_Chest_接続;
     	}
 
     	public void 肌接続(EleD e)
@@ -84,7 +84,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override Ele GetEle(double DisUnit, Med Med, 体配色 体配色)
+    	public override Ele GetEle(double DisUnit, ModeEventDispatcher Med, 体配色 体配色)
     	{
     		return new Torso(DisUnit, 配色指定, 体配色, Med, this);
     	}

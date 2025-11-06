@@ -99,7 +99,7 @@ namespace SlaveMatrix
     		LocalHeight = Are.LocalHeight;
     	}
 
-    	public void SetHitColor(Med Med)
+    	public void SetHitColor(ModeEventDispatcher Med)
     	{
     		ParT[] array = pt;
     		foreach (ParT obj in array)

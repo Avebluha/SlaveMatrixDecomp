@@ -1388,7 +1388,7 @@ namespace SlaveMatrix
 
     	public JointS 翼右_接続点 => new JointS(本体, X0Y0_腰, 8);
 
-    	public 四足腰(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 四足腰D e)
+    	public 四足腰(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 四足腰D e)
     	{
     		四足腰 四足腰2 = this;
     		ThisType = GetType();

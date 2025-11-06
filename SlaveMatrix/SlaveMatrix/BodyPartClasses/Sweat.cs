@@ -18,9 +18,9 @@ namespace SlaveMatrix
     {
     	private HashSet<string> 汗対象 = new HashSet<string>
     	{
-    		Sta.胸t.ToString(),
+    		Sta.Chestt.ToString(),
     		Sta.胴t.ToString(),
-    		Sta.肩t.ToString(),
+    		Sta.Shouldert.ToString(),
     		Sta.腰t.ToString()
     	};
 
@@ -70,7 +70,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public Sweat(Med Med, RenderArea Are, Cha Cha, Mots Mots)
+    	public Sweat(ModeEventDispatcher Med, RenderArea Are, Cha Cha, Mots Mots)
     	{
     		Ele[] es = null;
     		Ele n = null;

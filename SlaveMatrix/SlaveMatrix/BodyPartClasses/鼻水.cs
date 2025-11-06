@@ -121,7 +121,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 鼻水(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 鼻水D e)
+    	public 鼻水(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 鼻水D e)
     	{
     		ThisType = GetType();
     		本体 = new Difs(Sta.胴体["鼻水左"]);

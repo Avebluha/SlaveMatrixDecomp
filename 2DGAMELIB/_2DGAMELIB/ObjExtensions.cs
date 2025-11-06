@@ -15,7 +15,25 @@ namespace _2DGAMELIB
             ["首"] = "Neck",
             ["頭"] = "Head",
             ["後髪0"] = "BackHair0",
-            ["後髪1"] = "BackHair1"
+            ["後髪1"] = "BackHair1",
+            ["横髪"] = "SideHair",
+            ["脚"] = "Leg",
+            //["腕"] = "Arm"
+            ["肩"] = "Shoulder",
+            ["胸"] = "Chest",
+            //["乳房"] = "Breast",
+            //["腹"] = "Abdomen",
+            //["顔"] = "Face",
+            //["目"] = "Eye",
+            //["眉"] = "Eyebrow",
+            //["瞼"] = "Eyelid",
+            //["鼻"] = "Nose",
+            //["口"] = "Mouth",
+            //["耳"] = "Ear",
+            //["触覚"] = "Antenna",
+            //["髪"] = "Hair",
+            //["基髪"] = "BaseHair",
+            //["吹出し"] = "SpeechBubble",
         };
 
         public static void MigrateKeys(this Obj obj)

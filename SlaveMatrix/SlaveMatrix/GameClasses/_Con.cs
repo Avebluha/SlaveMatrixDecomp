@@ -4,9 +4,9 @@ namespace SlaveMatrix.GameClasses
 {
     public static class _Con
     {
-        public static 胸D Get胸R()
+        public static ChestD GetChestR()
         {
-            胸D obj = Uni.胸();
+            ChestD obj = Uni.Chest();
             Sta.SetValuesD(value: RNG.XS.NextDouble(), src: obj.EnumEleD(), s: "バスト");
             return obj;
         }
@@ -182,27 +182,27 @@ namespace SlaveMatrix.GameClasses
         {
             return RNG.XS.NextM(5) switch
             {
-                0 => new 横髪_ジグD
+                0 => new SideHair_ジグD
                 {
                     右 = 右
                 }.SetRandom(),
-                1 => new 横髪_ハネD
+                1 => new SideHair_ハネD
                 {
                     右 = 右
                 }.SetRandom(),
-                2 => new 横髪_パツD
+                2 => new SideHair_パツD
                 {
                     右 = 右
                 }.SetRandom(),
-                3 => new 横髪_カルD
+                3 => new SideHair_カルD
                 {
                     右 = 右
                 }.SetRandom(),
-                4 => new 横髪_編みD
+                4 => new SideHair_編みD
                 {
                     右 = 右
                 }.SetRandom(),
-                _ => new 横髪_肢系D
+                _ => new SideHair_肢系D
                 {
                     右 = 右
                 },
@@ -276,17 +276,17 @@ namespace SlaveMatrix.GameClasses
             return 胴D2;
         }
 
-        public static 胸D Set胸R(this TorsoD 胴)
+        public static ChestD SetChestR(this TorsoD 胴)
         {
-            胸D 胸D2 = Get胸R();
-            胴.Torso接続(胸D2);
-            return 胸D2;
+            ChestD ChestD2 = GetChestR();
+            胴.Torso接続(ChestD2);
+            return ChestD2;
         }
 
-        public static NeckD Set首(this 胸D 胸)
+        public static NeckD Set首(this ChestD Chest)
         {
             NeckD 首D2 = new NeckD();
-            胸.首接続(首D2);
+            Chest.首接続(首D2);
             return 首D2;
         }
 
