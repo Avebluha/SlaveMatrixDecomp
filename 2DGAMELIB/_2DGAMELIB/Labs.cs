@@ -7,13 +7,13 @@ namespace _2DGAMELIB
     {
     	private OrderedDictionary<string, Lab> labs = new OrderedDictionary<string, Lab>();
 
-    	private Med Med;
+    	private ModeEventDispatcher Med;
 
-    	private Are Are;
+    	private RenderArea Are;
 
     	public Lab this[string Name] => labs[Name];
 
-    	public Labs(Med Med, Are Are)
+    	public Labs(ModeEventDispatcher Med, RenderArea Are)
     	{
     		this.Med = Med;
     		this.Are = Are;
@@ -24,7 +24,7 @@ namespace _2DGAMELIB
     		labs.Add(Name, new Lab(Are, Name, ref Position, Size, Width, Font, TextSize, Text, ref TextColor, ref ShadColor, ref BackColor, ref FramColor));
     	}
 
-    	public void Draw(Are Are)
+    	public void Draw(RenderArea Are)
     	{
     		foreach (Lab value in labs.Values)
     		{

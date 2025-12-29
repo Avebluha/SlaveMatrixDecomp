@@ -2825,7 +2825,7 @@ namespace SlaveMatrix
 
     	public JointS 脚_接続点 => new JointS(本体, X0Y0_腿, 0);
 
-    	public 腿_人(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 腿_人D e)
+    	public 腿_人(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 腿_人D e)
     	{
     		腿_人 腿_人2 = this;
     		ThisType = GetType();
@@ -3286,14 +3286,14 @@ namespace SlaveMatrix
     		{
     			表示 = false;
     		}
-    		if (e.脚_接続.Count > 0)
+    		if (e.Leg_接続.Count > 0)
     		{
     			Ele f;
-    			脚_接続 = e.脚_接続.Select(delegate(EleD g)
+    			Leg_接続 = e.Leg_接続.Select(delegate(EleD g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 腿_人2;
-    				f.ConnectionType = ConnectionInfo.腿_人_脚_接続;
+    				f.ConnectionType = ConnectionInfo.腿_人_Leg_接続;
     				f.接続(腿_人2.脚_接続点);
     				return f;
     			}).ToArray();
@@ -3576,7 +3576,7 @@ namespace SlaveMatrix
     		濃度 = e.濃度;
     	}
 
-    	public override void 描画0(Are Are)
+    	public override void 描画0(RenderArea Are)
     	{
     		switch (本体.IndexY)
     		{

@@ -2299,7 +2299,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 下着トップ_ブラ(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 下着トップ_ブラD e)
+    	public 下着トップ_ブラ(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 下着トップ_ブラD e)
     	{
     		ThisType = GetType();
     		Dif dif = new Dif(Sta.胴体["下着トップ"][0]);
@@ -2643,7 +2643,7 @@ namespace SlaveMatrix
     		濃度 = e.濃度;
     	}
 
-    	public override void 描画0(Are Are)
+    	public override void 描画0(RenderArea Are)
     	{
     		Are.Draw(X0Y0_バンド_バンド);
     		Are.Draw(X0Y0_バンド_縁_下);
@@ -2652,7 +2652,7 @@ namespace SlaveMatrix
     		Are.Draw(X0Y0_バンド_縁_右);
     	}
 
-    	public override void 描画1(Are Are)
+    	public override void 描画1(RenderArea Are)
     	{
     		Are.Draw(X0Y0_カップ左_紐);
     		Are.Draw(X0Y0_カップ左_ジャスター_ジャスター1);

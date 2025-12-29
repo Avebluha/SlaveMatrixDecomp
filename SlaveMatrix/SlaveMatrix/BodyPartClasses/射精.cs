@@ -260,7 +260,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 射精(double DisUnit, 配色指定 配色指定, 主人公配色 体配色, Med Med, 射精D e)
+    	public 射精(double DisUnit, 配色指定 配色指定, 主人公配色 体配色, ModeEventDispatcher Med, 射精D e)
     	{
     		ThisType = GetType();
     		本体 = new Difs(Sta.カーソル["射精"]);

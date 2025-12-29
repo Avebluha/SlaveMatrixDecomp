@@ -87,7 +87,7 @@ namespace SlaveMatrix
     		Sta.鳳凰Dt.ToString()
     	};
 
-    	private static HashSet<string> 肩人 = new HashSet<string> { Sta.肩Dt.ToString() };
+    	private static HashSet<string> 肩人 = new HashSet<string> { Sta.ShoulderDt.ToString() };
 
     	private static HashSet<string> 胸翼上人 = new HashSet<string>
     	{
@@ -579,8 +579,8 @@ namespace SlaveMatrix
     		Sta.触肢_肢蠍Dt.ToString(),
     		Sta.上腕_獣Dt.ToString(),
     		Sta.上腕_蹄Dt.ToString(),
-    		Sta.脚_鳥Dt.ToString(),
-    		Sta.脚_竜Dt.ToString()
+    		Sta.Leg_鳥Dt.ToString(),
+    		Sta.Leg_竜Dt.ToString()
     	};
 
     	private static HashSet<string> 下腕人 = new HashSet<string>
@@ -613,38 +613,38 @@ namespace SlaveMatrix
 
     	private static HashSet<string> 虫鎌 = new HashSet<string> { Sta.虫鎌Dt.ToString() };
 
-    	private static HashSet<string> 脚人 = new HashSet<string> { Sta.脚_人Dt.ToString() };
+    	private static HashSet<string> 脚人 = new HashSet<string> { Sta.Leg_人Dt.ToString() };
 
     	private static HashSet<string> 脚獣 = new HashSet<string>
     	{
-    		Sta.脚_獣Dt.ToString(),
-    		Sta.脚_蹄Dt.ToString(),
-    		Sta.脚_鳥Dt.ToString(),
-    		Sta.脚_竜Dt.ToString()
+    		Sta.Leg_獣Dt.ToString(),
+    		Sta.Leg_蹄Dt.ToString(),
+    		Sta.Leg_鳥Dt.ToString(),
+    		Sta.Leg_竜Dt.ToString()
     	};
 
     	private static HashSet<string> 脚蹄 = new HashSet<string>
     	{
-    		Sta.脚_獣Dt.ToString(),
-    		Sta.脚_蹄Dt.ToString(),
-    		Sta.脚_鳥Dt.ToString(),
-    		Sta.脚_竜Dt.ToString()
+    		Sta.Leg_獣Dt.ToString(),
+    		Sta.Leg_蹄Dt.ToString(),
+    		Sta.Leg_鳥Dt.ToString(),
+    		Sta.Leg_竜Dt.ToString()
     	};
 
     	private static HashSet<string> 脚鳥 = new HashSet<string>
     	{
-    		Sta.脚_獣Dt.ToString(),
-    		Sta.脚_蹄Dt.ToString(),
-    		Sta.脚_鳥Dt.ToString(),
-    		Sta.脚_竜Dt.ToString()
+    		Sta.Leg_獣Dt.ToString(),
+    		Sta.Leg_蹄Dt.ToString(),
+    		Sta.Leg_鳥Dt.ToString(),
+    		Sta.Leg_竜Dt.ToString()
     	};
 
     	private static HashSet<string> 脚竜 = new HashSet<string>
     	{
-    		Sta.脚_獣Dt.ToString(),
-    		Sta.脚_蹄Dt.ToString(),
-    		Sta.脚_鳥Dt.ToString(),
-    		Sta.脚_竜Dt.ToString()
+    		Sta.Leg_獣Dt.ToString(),
+    		Sta.Leg_蹄Dt.ToString(),
+    		Sta.Leg_鳥Dt.ToString(),
+    		Sta.Leg_竜Dt.ToString()
     	};
 
     	private static HashSet<string> 足人 = new HashSet<string> { Sta.足_人Dt.ToString() };
@@ -735,115 +735,115 @@ namespace SlaveMatrix
     			側頭
     		},
     		{
-    			ConnectionInfo.頭_触覚左_接続,
+    			ConnectionInfo.Head_触覚左_接続,
     			触覚
     		},
     		{
-    			ConnectionInfo.頭_触覚右_接続,
+    			ConnectionInfo.Head_触覚右_接続,
     			触覚
     		},
     		{
-    			ConnectionInfo.頭_耳左_接続,
+    			ConnectionInfo.Head_耳左_接続,
     			耳
     		},
     		{
-    			ConnectionInfo.頭_耳右_接続,
+    			ConnectionInfo.Head_耳右_接続,
     			耳
     		},
     		{
-    			ConnectionInfo.頭_頬左_接続,
+    			ConnectionInfo.Head_頬左_接続,
     			頬
     		},
     		{
-    			ConnectionInfo.頭_頬右_接続,
+    			ConnectionInfo.Head_頬右_接続,
     			頬
     		},
     		{
-    			ConnectionInfo.後髪0_肢系_左5_接続,
+    			ConnectionInfo.BackHair0_肢系_左5_接続,
     			後髪
     		},
     		{
-    			ConnectionInfo.後髪0_肢系_右5_接続,
+    			ConnectionInfo.BackHair0_肢系_右5_接続,
     			後髪
     		},
     		{
-    			ConnectionInfo.後髪0_肢系_左4_接続,
+    			ConnectionInfo.BackHair0_肢系_左4_接続,
     			後髪
     		},
     		{
-    			ConnectionInfo.後髪0_肢系_右4_接続,
+    			ConnectionInfo.BackHair0_肢系_右4_接続,
     			後髪
     		},
     		{
-    			ConnectionInfo.後髪0_肢系_左3_接続,
+    			ConnectionInfo.BackHair0_肢系_左3_接続,
     			後髪
     		},
     		{
-    			ConnectionInfo.後髪0_肢系_右3_接続,
+    			ConnectionInfo.BackHair0_肢系_右3_接続,
     			後髪
     		},
     		{
-    			ConnectionInfo.後髪0_肢系_左2_接続,
+    			ConnectionInfo.BackHair0_肢系_左2_接続,
     			後髪
     		},
     		{
-    			ConnectionInfo.後髪0_肢系_右2_接続,
+    			ConnectionInfo.BackHair0_肢系_右2_接続,
     			後髪
     		},
     		{
-    			ConnectionInfo.後髪0_肢系_左1_接続,
+    			ConnectionInfo.BackHair0_肢系_左1_接続,
     			後髪
     		},
     		{
-    			ConnectionInfo.後髪0_肢系_右1_接続,
+    			ConnectionInfo.BackHair0_肢系_右1_接続,
     			後髪
     		},
     		{
-    			ConnectionInfo.胸_肩左_接続,
+    			ConnectionInfo.Chest_肩左_接続,
     			肩人
     		},
     		{
-    			ConnectionInfo.胸_肩右_接続,
+    			ConnectionInfo.Chest_肩右_接続,
     			肩人
     		},
     		{
-    			ConnectionInfo.胸_翼上左_接続,
+    			ConnectionInfo.Chest_翼上左_接続,
     			胸翼上人
     		},
     		{
-    			ConnectionInfo.胸_翼上右_接続,
+    			ConnectionInfo.Chest_翼上右_接続,
     			胸翼上人
     		},
     		{
-    			ConnectionInfo.胸_翼下左_接続,
+    			ConnectionInfo.Chest_翼下左_接続,
     			胸翼下人
     		},
     		{
-    			ConnectionInfo.胸_翼下右_接続,
+    			ConnectionInfo.Chest_翼下右_接続,
     			胸翼下人
     		},
     		{
-    			ConnectionInfo.胴_翼左_接続,
+    			ConnectionInfo.Torso_翼左_接続,
     			胴翼人
     		},
     		{
-    			ConnectionInfo.胴_翼右_接続,
+    			ConnectionInfo.Torso_翼右_接続,
     			胴翼人
     		},
     		{
-    			ConnectionInfo.腰_翼左_接続,
+    			ConnectionInfo.Waist_翼左_接続,
     			腰翼人
     		},
     		{
-    			ConnectionInfo.腰_翼右_接続,
+    			ConnectionInfo.Waist_翼右_接続,
     			腰翼人
     		},
     		{
-    			ConnectionInfo.腰_腿左_接続,
+    			ConnectionInfo.Waist_腿左_接続,
     			腿人
     		},
     		{
-    			ConnectionInfo.腰_腿右_接続,
+    			ConnectionInfo.Waist_腿右_接続,
     			腿人
     		},
     		{
@@ -1055,11 +1055,11 @@ namespace SlaveMatrix
     			蛇
     		},
     		{
-    			ConnectionInfo.胴_蛇_左_接続,
+    			ConnectionInfo.Torso_蛇_左_接続,
     			蛇
     		},
     		{
-    			ConnectionInfo.胴_蛇_右_接続,
+    			ConnectionInfo.Torso_蛇_右_接続,
     			蛇
     		},
     		{
@@ -1127,11 +1127,11 @@ namespace SlaveMatrix
     			蟲尾先
     		},
     		{
-    			ConnectionInfo.胴_蟲_左_接続,
+    			ConnectionInfo.Torso_蟲_左_接続,
     			蟲
     		},
     		{
-    			ConnectionInfo.胴_蟲_右_接続,
+    			ConnectionInfo.Torso_蟲_右_接続,
     			蟲
     		},
     		{
@@ -1159,15 +1159,15 @@ namespace SlaveMatrix
     			触覚蟲
     		},
     		{
-    			ConnectionInfo.頭_頭頂_接続,
+    			ConnectionInfo.Head_頭頂_接続,
     			頭頂
     		},
     		{
-    			ConnectionInfo.頭_額_接続,
+    			ConnectionInfo.Head_額_接続,
     			額
     		},
     		{
-    			ConnectionInfo.胸_背中_接続,
+    			ConnectionInfo.Chest_背中_接続,
     			背中人
     		},
     		{
@@ -1175,7 +1175,7 @@ namespace SlaveMatrix
     			背中獣
     		},
     		{
-    			ConnectionInfo.腰_尾_接続,
+    			ConnectionInfo.Waist_尾_接続,
     			尾人
     		},
     		{
@@ -1199,19 +1199,19 @@ namespace SlaveMatrix
     			尾鯨
     		},
     		{
-    			ConnectionInfo.長物_蛇_胴_接続,
+    			ConnectionInfo.長物_蛇_Torso_接続,
     			尾蛇
     		},
     		{
-    			ConnectionInfo.長物_蟲_胴_接続,
+    			ConnectionInfo.長物_蟲_Torso_接続,
     			尾蟲
     		},
     		{
-    			ConnectionInfo.胴_蛇_胴_接続,
+    			ConnectionInfo.Torso_蛇_Torso_接続,
     			尾蛇
     		},
     		{
-    			ConnectionInfo.胴_蟲_胴_接続,
+    			ConnectionInfo.Torso_蟲_Torso_接続,
     			尾蟲
     		},
     		{
@@ -1239,15 +1239,15 @@ namespace SlaveMatrix
     			頭頂後
     		},
     		{
-    			ConnectionInfo.頭_大顎基_接続,
+    			ConnectionInfo.Head_大顎基_接続,
     			大顎基
     		},
     		{
-    			ConnectionInfo.頭_顔面_接続,
+    			ConnectionInfo.Head_顔面_接続,
     			顔面
     		},
     		{
-    			ConnectionInfo.肩_上腕_接続,
+    			ConnectionInfo.Shoulder_上腕_接続,
     			上腕人
     		},
     		{
@@ -1299,43 +1299,43 @@ namespace SlaveMatrix
     			虫鎌
     		},
     		{
-    			ConnectionInfo.腿_人_脚_接続,
+    			ConnectionInfo.腿_人_Leg_接続,
     			脚人
     		},
     		{
-    			ConnectionInfo.腿_獣_脚_接続,
+    			ConnectionInfo.腿_獣_Leg_接続,
     			脚獣
     		},
     		{
-    			ConnectionInfo.腿_蹄_脚_接続,
+    			ConnectionInfo.腿_蹄_Leg_接続,
     			脚蹄
     		},
     		{
-    			ConnectionInfo.腿_鳥_脚_接続,
+    			ConnectionInfo.腿_鳥_Leg_接続,
     			脚鳥
     		},
     		{
-    			ConnectionInfo.腿_竜_脚_接続,
+    			ConnectionInfo.腿_竜_Leg_接続,
     			脚竜
     		},
     		{
-    			ConnectionInfo.脚_人_足_接続,
+    			ConnectionInfo.Leg_人_足_接続,
     			足人
     		},
     		{
-    			ConnectionInfo.脚_獣_足_接続,
+    			ConnectionInfo.Leg_獣_足_接続,
     			足獣
     		},
     		{
-    			ConnectionInfo.脚_蹄_足_接続,
+    			ConnectionInfo.Leg_蹄_足_接続,
     			足蹄
     		},
     		{
-    			ConnectionInfo.脚_鳥_足_接続,
+    			ConnectionInfo.Leg_鳥_足_接続,
     			足鳥
     		},
     		{
-    			ConnectionInfo.脚_竜_足_接続,
+    			ConnectionInfo.Leg_竜_足_接続,
     			足竜
     		},
     		{
@@ -1351,7 +1351,7 @@ namespace SlaveMatrix
     			前翅甲軸3
     		},
     		{
-    			ConnectionInfo.触手_犬_頭_接続,
+    			ConnectionInfo.触手_犬_Head_接続,
     			犬頭
     		},
     		{
@@ -1446,7 +1446,7 @@ namespace SlaveMatrix
 
     	private static Type[] t0 = new Type[0];
 
-    	private static 体色 Mix(体色 母方, 体色 父方, double 変異率, 腰D d)
+    	private static 体色 Mix(体色 母方, 体色 父方, double 変異率, WaistD d)
     	{
     		体色 体色2 = new 体色();
     		switch (RNG.XS.Next(4))
@@ -1792,12 +1792,12 @@ namespace SlaveMatrix
     		};
     	}
 
-    	private static 腰D Mix(腰D 母方, 腰D 父方, double 変異率, bool 原種モード)
+    	private static WaistD Mix(WaistD 母方, WaistD 父方, double 変異率, bool 原種モード)
     	{
     		int i = (原種モード ? RNG.XS.Next(3) : RNG.XS.Next(7));
     		Dictionary<ConnectionInfo, List<Type>> 接続構成 = Get接続構成(母方, 父方);
     		Type[] 要素構成 = Get要素構成(母方, 父方);
-    		頭D 頭D2 = Mix<頭D>(母方, 父方, i, 原種モード);
+    		HeadD 頭D2 = Mix<HeadD>(母方, 父方, i, 原種モード);
     		基髪D 基髪D2 = new 基髪D();
     		頭D2.基髪接続(基髪D2);
     		頭D2.目左接続(new 目傷D());
@@ -1822,36 +1822,36 @@ namespace SlaveMatrix
     		頭D2.単眼目接続(new 目隠帯D());
     		頭D2.口接続(new 玉口枷D());
     		頭D2.AlignC();
-    		首D 首D2 = Mix<首D>(母方, 父方, i, 原種モード);
+    		NeckD 首D2 = Mix<NeckD>(母方, 父方, i, 原種モード);
     		首D2.頭接続(頭D2);
-    		胸D 胸D2 = Mix<胸D>(母方, 父方, i, 原種モード);
+    		ChestD ChestD2 = Mix<ChestD>(母方, 父方, i, 原種モード);
     		乳房D 乳房D2 = Mix<乳房D>(母方, 父方, 右: false, i, 原種モード);
     		乳房D2.噴乳接続(new 噴乳D());
     		乳房D2.噴乳接続(new ピアスD());
     		乳房D2.噴乳接続(new キャップ2D());
     		乳房D2.噴乳接続(new 下着乳首D());
-    		胸D2.胸左接続(乳房D2);
-    		胸D2.胸右接続(乳房D2.Get逆());
-    		胸D2.肌接続(Mix<胸毛D>(母方, 父方, i, 原種モード));
-    		胸D2.肌接続(Mix<胸肌D>(母方, 父方, i, 原種モード));
+    		ChestD2.胸左接続(乳房D2);
+    		ChestD2.胸右接続(乳房D2.Get逆());
+    		ChestD2.肌接続(Mix<胸毛D>(母方, 父方, i, 原種モード));
+    		ChestD2.肌接続(Mix<胸肌D>(母方, 父方, i, 原種モード));
     		胸腹板D 胸腹板D2;
-    		胸D2.肌接続(胸腹板D2 = Mix<胸腹板D>(母方, 父方, i, 原種モード));
-    		胸D2.肌接続(new 下着トップ_チューブD());
-    		胸D2.肌接続(new 下着トップ_クロスD());
-    		胸D2.肌接続(new 下着トップ_ビキニD());
-    		胸D2.肌接続(new 下着トップ_マイクロD());
-    		胸D2.肌接続(new 下着トップ_ブラD());
-    		胸D2.肌接続(new 上着トップ_ドレスD());
-    		胸D2.AlignC();
-    		胸D2.首接続(首D2);
-    		胴D 胴D2 = Mix<胴D>(母方, 父方, i, 原種モード);
+    		ChestD2.肌接続(胸腹板D2 = Mix<胸腹板D>(母方, 父方, i, 原種モード));
+    		ChestD2.肌接続(new 下着トップ_チューブD());
+    		ChestD2.肌接続(new 下着トップ_クロスD());
+    		ChestD2.肌接続(new 下着トップ_ビキニD());
+    		ChestD2.肌接続(new 下着トップ_マイクロD());
+    		ChestD2.肌接続(new 下着トップ_ブラD());
+    		ChestD2.肌接続(new 上着トップ_ドレスD());
+    		ChestD2.AlignC();
+    		ChestD2.首接続(首D2);
+    		TorsoD 胴D2 = Mix<TorsoD>(母方, 父方, i, 原種モード);
     		胴腹板D 胴腹板D2;
     		胴D2.肌接続(胴腹板D2 = Mix<胴腹板D>(母方, 父方, i, 原種モード));
     		胴D2.肌接続(Mix<胴肌D>(母方, 父方, i, 原種モード));
     		胴D2.肌接続(new 上着ミドル_ドレスD());
     		胴D2.AlignC();
-    		胴D2.胸接続(胸D2);
-    		腰D 腰 = Mix<腰D>(母方, 父方, i, 原種モード);
+    		胴D2.Torso接続(ChestD2);
+    		WaistD 腰 = Mix<WaistD>(母方, 父方, i, 原種モード);
     		腰.膣基接続(new 膣基_人D());
     		腰.膣基接続(new 膣内精液_人D());
     		腰.膣基接続(new 断面_人D());
@@ -1874,14 +1874,14 @@ namespace SlaveMatrix
     			EleD eleD = SlaveMatrix.GameClasses._Con.Get後髪0R();
     			基髪D2.後髪接続(eleD);
     			eleD.AlignR();
-    			if (eleD is 後髪0_肢系D && 変異率.Lot())
+    			if (eleD is BackHair0_肢系D && 変異率.Lot())
     			{
-    				eleD.接続(母方, 父方, i, ConnectionInfo.後髪0_肢系_左2_接続, 要素構成, 接続構成, 変異率, 原種モード);
-    				eleD.接続(母方, 父方, i, ConnectionInfo.後髪0_肢系_左3_接続, 要素構成, 接続構成, 変異率, 原種モード);
-    				eleD.接続(母方, 父方, i, ConnectionInfo.後髪0_肢系_左4_接続, 要素構成, 接続構成, 変異率, 原種モード);
-    				eleD.接続(母方, 父方, i, ConnectionInfo.後髪0_肢系_左5_接続, 要素構成, 接続構成, 変異率, 原種モード);
+    				eleD.接続(母方, 父方, i, ConnectionInfo.BackHair0_肢系_左2_接続, 要素構成, 接続構成, 変異率, 原種モード);
+    				eleD.接続(母方, 父方, i, ConnectionInfo.BackHair0_肢系_左3_接続, 要素構成, 接続構成, 変異率, 原種モード);
+    				eleD.接続(母方, 父方, i, ConnectionInfo.BackHair0_肢系_左4_接続, 要素構成, 接続構成, 変異率, 原種モード);
+    				eleD.接続(母方, 父方, i, ConnectionInfo.BackHair0_肢系_左5_接続, 要素構成, 接続構成, 変異率, 原種モード);
     			}
-    			if ((eleD is 後髪0_ジグD || eleD is 後髪0_ハネD || eleD is 後髪0_パツD || eleD is 後髪0_カルD || eleD is 後髪0_肢系D) && RNG.XS.NextBool())
+    			if ((eleD is BackHair0_ジグD || eleD is BackHair0_ハネD || eleD is BackHair0_パツD || eleD is BackHair0_カルD || eleD is BackHair0_肢系D) && RNG.XS.NextBool())
     			{
     				EleD e2 = SlaveMatrix.GameClasses._Con.Get後髪1R();
     				基髪D2.後髪接続(e2);
@@ -1902,16 +1902,16 @@ namespace SlaveMatrix
     			{
     				基髪D2.後髪接続(後髪0D2);
     				後髪0D2.AlignR();
-    				if (後髪0D2 is 後髪0_肢系D && 変異率.Lot())
+    				if (後髪0D2 is BackHair0_肢系D && 変異率.Lot())
     				{
-    					後髪0D2.接続(母方, 父方, i, ConnectionInfo.後髪0_肢系_左2_接続, 要素構成, 接続構成, 変異率, 原種モード);
-    					後髪0D2.接続(母方, 父方, i, ConnectionInfo.後髪0_肢系_左3_接続, 要素構成, 接続構成, 変異率, 原種モード);
-    					後髪0D2.接続(母方, 父方, i, ConnectionInfo.後髪0_肢系_左4_接続, 要素構成, 接続構成, 変異率, 原種モード);
-    					後髪0D2.接続(母方, 父方, i, ConnectionInfo.後髪0_肢系_左5_接続, 要素構成, 接続構成, 変異率, 原種モード);
+    					後髪0D2.接続(母方, 父方, i, ConnectionInfo.BackHair0_肢系_左2_接続, 要素構成, 接続構成, 変異率, 原種モード);
+    					後髪0D2.接続(母方, 父方, i, ConnectionInfo.BackHair0_肢系_左3_接続, 要素構成, 接続構成, 変異率, 原種モード);
+    					後髪0D2.接続(母方, 父方, i, ConnectionInfo.BackHair0_肢系_左4_接続, 要素構成, 接続構成, 変異率, 原種モード);
+    					後髪0D2.接続(母方, 父方, i, ConnectionInfo.BackHair0_肢系_左5_接続, 要素構成, 接続構成, 変異率, 原種モード);
     				}
-    				if ((後髪0D2 is 後髪0_ジグD || 後髪0D2 is 後髪0_ハネD || 後髪0D2 is 後髪0_パツD || 後髪0D2 is 後髪0_カルD || 後髪0D2 is 後髪0_肢系D) && RNG.XS.NextBool())
+    				if ((後髪0D2 is BackHair0_ジグD || 後髪0D2 is BackHair0_ハネD || 後髪0D2 is BackHair0_パツD || 後髪0D2 is BackHair0_カルD || 後髪0D2 is BackHair0_肢系D) && RNG.XS.NextBool())
     				{
-    					後髪1D 後髪1D2 = Mix<後髪1D>(母方, 父方, i, 原種モード);
+    					BackHair1D 後髪1D2 = Mix<BackHair1D>(母方, 父方, i, 原種モード);
     					if (後髪1D2 != null)
     					{
     						基髪D2.後髪接続(後髪1D2);
@@ -1921,14 +1921,14 @@ namespace SlaveMatrix
     			}
     			else if (RNG.XS.NextBool())
     			{
-    				後髪1D 後髪1D3 = Mix<後髪1D>(母方, 父方, i, 原種モード);
+    				BackHair1D 後髪1D3 = Mix<BackHair1D>(母方, 父方, i, 原種モード);
     				if (後髪1D3 != null)
     				{
     					基髪D2.後髪接続(後髪1D3);
     					後髪1D3.AlignR();
     				}
     			}
-    			横髪D 横髪D2 = Mix<横髪D>(母方, 父方, 右: false, i, 原種モード);
+    			SideHairD 横髪D2 = Mix<SideHairD>(母方, 父方, 右: false, i, 原種モード);
     			基髪D2.横髪左接続(横髪D2);
     			横髪D2.AlignR();
     			基髪D2.横髪右接続(横髪D2.Get逆());
@@ -2153,22 +2153,22 @@ namespace SlaveMatrix
     				頭D2.口接続(舌D2);
     			}
     		}
-    		頭D2.接続(母方, 父方, i, ConnectionInfo.頭_耳左_接続, 要素構成, 接続構成, 変異率, 原種モード);
+    		頭D2.接続(母方, 父方, i, ConnectionInfo.Head_耳左_接続, 要素構成, 接続構成, 変異率, 原種モード);
     		基髪D2.接続(母方, 父方, i, ConnectionInfo.基髪_頭頂左_接続, 要素構成, 接続構成, 変異率, 原種モード);
-    		頭D2.接続(母方, 父方, i, ConnectionInfo.頭_頬左_接続, 要素構成, 接続構成, 変異率, 原種モード);
-    		頭D2.接続(母方, 父方, i, ConnectionInfo.頭_大顎基_接続, 要素構成, 接続構成, 変異率, 原種モード);
-    		頭D2.接続(母方, 父方, i, ConnectionInfo.頭_顔面_接続, 要素構成, 接続構成, 変異率, 原種モード);
-    		頭D2.接続(母方, 父方, i, ConnectionInfo.頭_頭頂_接続, 要素構成, 接続構成, 変異率, 原種モード);
-    		頭D2.接続(母方, 父方, i, ConnectionInfo.頭_触覚左_接続, 要素構成, 接続構成, 変異率, 原種モード);
-    		胸D2.接続(母方, 父方, i, ConnectionInfo.胸_肩左_接続, 要素構成, 接続構成, 変異率, 原種モード);
-    		頭D2.接続(母方, 父方, i, ConnectionInfo.頭_額_接続, 要素構成, 接続構成, 変異率, 原種モード);
-    		胸D2.接続(母方, 父方, i, ConnectionInfo.胸_翼上左_接続, 要素構成, 接続構成, 変異率, 原種モード);
-    		胸D2.接続(母方, 父方, i, ConnectionInfo.胸_翼下左_接続, 要素構成, 接続構成, 変異率, 原種モード);
-    		胴D2.接続(母方, 父方, i, ConnectionInfo.胴_翼左_接続, 要素構成, 接続構成, 変異率, 原種モード);
-    		腰.接続(母方, 父方, i, ConnectionInfo.腰_翼左_接続, 要素構成, 接続構成, 変異率, 原種モード);
+    		頭D2.接続(母方, 父方, i, ConnectionInfo.Head_頬左_接続, 要素構成, 接続構成, 変異率, 原種モード);
+    		頭D2.接続(母方, 父方, i, ConnectionInfo.Head_大顎基_接続, 要素構成, 接続構成, 変異率, 原種モード);
+    		頭D2.接続(母方, 父方, i, ConnectionInfo.Head_顔面_接続, 要素構成, 接続構成, 変異率, 原種モード);
+    		頭D2.接続(母方, 父方, i, ConnectionInfo.Head_頭頂_接続, 要素構成, 接続構成, 変異率, 原種モード);
+    		頭D2.接続(母方, 父方, i, ConnectionInfo.Head_触覚左_接続, 要素構成, 接続構成, 変異率, 原種モード);
+    		ChestD2.接続(母方, 父方, i, ConnectionInfo.Chest_肩左_接続, 要素構成, 接続構成, 変異率, 原種モード);
+    		頭D2.接続(母方, 父方, i, ConnectionInfo.Head_額_接続, 要素構成, 接続構成, 変異率, 原種モード);
+    		ChestD2.接続(母方, 父方, i, ConnectionInfo.Chest_翼上左_接続, 要素構成, 接続構成, 変異率, 原種モード);
+    		ChestD2.接続(母方, 父方, i, ConnectionInfo.Chest_翼下左_接続, 要素構成, 接続構成, 変異率, 原種モード);
+    		胴D2.接続(母方, 父方, i, ConnectionInfo.Torso_翼左_接続, 要素構成, 接続構成, 変異率, 原種モード);
+    		腰.接続(母方, 父方, i, ConnectionInfo.Waist_翼左_接続, 要素構成, 接続構成, 変異率, 原種モード);
     		if (原種モード)
     		{
-    			胸D2.接続(母方, 父方, i, ConnectionInfo.胸_背中_接続, 要素構成, 接続構成, 変異率, 原種モード);
+    			ChestD2.接続(母方, 父方, i, ConnectionInfo.Chest_背中_接続, 要素構成, 接続構成, 変異率, 原種モード);
     		}
     		else
     		{
@@ -2177,27 +2177,27 @@ namespace SlaveMatrix
     			if (eleD3 != null)
     			{
     				t = eleD3.GetType().ToString();
-    				if (!胸D2.背中_接続.Any((EleD e) => e.GetType().ToString() == t) && RNG.XS.NextBool())
+    				if (!ChestD2.背中_接続.Any((EleD e) => e.GetType().ToString() == t) && RNG.XS.NextBool())
     				{
-    					胸D2.背中接続(eleD3);
+    					ChestD2.背中接続(eleD3);
     				}
     			}
     			eleD3 = Mix<背中D>(母方, 父方, i, 原種モード);
     			if (eleD3 != null)
     			{
     				t = eleD3.GetType().ToString();
-    				if (!胸D2.背中_接続.Any((EleD e) => e.GetType().ToString() == t) && RNG.XS.NextBool())
+    				if (!ChestD2.背中_接続.Any((EleD e) => e.GetType().ToString() == t) && RNG.XS.NextBool())
     				{
-    					胸D2.背中接続(eleD3);
+    					ChestD2.背中接続(eleD3);
     				}
     			}
     			eleD3 = Mix<背中D>(母方, 父方, i, 原種モード);
     			if (eleD3 != null)
     			{
     				t = eleD3.GetType().ToString();
-    				if (!胸D2.背中_接続.Any((EleD e) => e.GetType().ToString() == t) && RNG.XS.NextBool())
+    				if (!ChestD2.背中_接続.Any((EleD e) => e.GetType().ToString() == t) && RNG.XS.NextBool())
     				{
-    					胸D2.背中接続(eleD3);
+    					ChestD2.背中接続(eleD3);
     				}
     			}
     		}
@@ -2242,7 +2242,7 @@ namespace SlaveMatrix
     				{
     					item5.尺度B = 尺度B2;
     				}
-    				腰.接続(母方, 父方, i, ConnectionInfo.腰_腿左_接続, 要素構成, 接続構成, 変異率, 原種モード);
+    				腰.接続(母方, 父方, i, ConnectionInfo.Waist_腿左_接続, 要素構成, 接続構成, 変異率, 原種モード);
     				for (int num3 = 腰.腿左_接続.Count - 1; num3 > -1; num3--)
     				{
     					if (!(腰.腿左_接続[num3] is 触手_犬D))
@@ -2315,7 +2315,7 @@ namespace SlaveMatrix
     				{
     					item10.尺度B = 尺度B3;
     				}
-    				腰.接続(母方, 父方, i, ConnectionInfo.腰_腿左_接続, 要素構成, 接続構成, 変異率, 原種モード);
+    				腰.接続(母方, 父方, i, ConnectionInfo.Waist_腿左_接続, 要素構成, 接続構成, 変異率, 原種モード);
     				for (int num7 = 腰.腿左_接続.Count - 1; num7 > -1; num7--)
     				{
     					if (!(腰.腿左_接続[num7] is 触手_犬D))
@@ -2352,10 +2352,10 @@ namespace SlaveMatrix
     			{
     				長物_蛇D 長物_蛇D2 = (長物_蛇D)半身;
     				長物_蛇D2.接続(母方, 父方, i, ConnectionInfo.長物_蛇_左_接続, 要素構成, 接続構成, 変異率, 原種モード);
-    				胴_蛇D 胴_蛇D2 = Mix<胴_蛇D>(母方, 父方, i, 原種モード);
+    				Torso_蛇D 胴_蛇D2 = Mix<Torso_蛇D>(母方, 父方, i, 原種モード);
     				if (胴_蛇D2 != null)
     				{
-    					胴_蛇D2.接続(母方, 父方, i, ConnectionInfo.胴_蛇_左_接続, 要素構成, 接続構成, 変異率, 原種モード);
+    					胴_蛇D2.接続(母方, 父方, i, ConnectionInfo.Torso_蛇_左_接続, 要素構成, 接続構成, 変異率, 原種モード);
     					長胴D 長胴D2 = (長胴D)胴_蛇D2.Copy();
     					長物_蛇D2.胴接続(胴_蛇D2);
     					int num11 = 2;
@@ -2365,20 +2365,20 @@ namespace SlaveMatrix
     					num11 = (num11 + RNG.XS.NextSign() * RNG.XS.Next(4)).Clamp(0, 50);
     					for (int l = 0; l < num11; l++)
     					{
-    						胴_蛇D2.胴接続(胴_蛇D2 = (胴_蛇D)長胴D2.Copy());
+    						胴_蛇D2.Torso接続(胴_蛇D2 = (Torso_蛇D)長胴D2.Copy());
     					}
-    					胴_蛇D2.接続(母方, 父方, i, ConnectionInfo.胴_蛇_胴_接続, 要素構成, 接続構成, 変異率, 原種モード);
+    					胴_蛇D2.接続(母方, 父方, i, ConnectionInfo.Torso_蛇_Torso_接続, 要素構成, 接続構成, 変異率, 原種モード);
     					if (胴_蛇D2.EnumEleD().IsEleD<腿D>())
     					{
-    						IEnumerable<胴_蛇D> eleDs = 長物_蛇D2.EnumEleD().Skip(1).GetEleDs<胴_蛇D>();
-    						foreach (胴_蛇D item11 in eleDs.Take(eleDs.Count() - 1))
+    						IEnumerable<Torso_蛇D> eleDs = 長物_蛇D2.EnumEleD().Skip(1).GetEleDs<Torso_蛇D>();
+    						foreach (Torso_蛇D item11 in eleDs.Take(eleDs.Count() - 1))
     						{
     							item11.左_接続.Clear();
     							item11.右_接続.Clear();
     						}
     						if (num11 < 2)
     						{
-    							胴_蛇D obj = eleDs.Last();
+    							Torso_蛇D obj = eleDs.Last();
     							obj.左_接続.Clear();
     							obj.右_接続.Clear();
     						}
@@ -2386,7 +2386,7 @@ namespace SlaveMatrix
     					else
     					{
     						int num14 = 0;
-    						foreach (胴_蛇D eleD7 in 長物_蛇D2.EnumEleD().Skip(1).GetEleDs<胴_蛇D>())
+    						foreach (Torso_蛇D eleD7 in 長物_蛇D2.EnumEleD().Skip(1).GetEleDs<Torso_蛇D>())
     						{
     							if (num14 % 3 != 1)
     							{
@@ -2399,7 +2399,7 @@ namespace SlaveMatrix
     				}
     				else
     				{
-    					長物_蛇D2.接続(母方, 父方, i, ConnectionInfo.長物_蛇_胴_接続, 要素構成, 接続構成, 変異率, 原種モード);
+    					長物_蛇D2.接続(母方, 父方, i, ConnectionInfo.長物_蛇_Torso_接続, 要素構成, 接続構成, 変異率, 原種モード);
     				}
     				長物_蛇D2.AlignC();
     				if (長物_蛇D2.ガード)
@@ -2411,7 +2411,7 @@ namespace SlaveMatrix
     					腰肌.獣性_獣毛_表示 = false;
     					腰肌.陰毛_表示 = false;
     				}
-    				腰.接続(母方, 父方, i, ConnectionInfo.腰_腿左_接続, 要素構成, 接続構成, 変異率, 原種モード);
+    				腰.接続(母方, 父方, i, ConnectionInfo.Waist_腿左_接続, 要素構成, 接続構成, 変異率, 原種モード);
     				for (int num15 = 腰.腿左_接続.Count - 1; num15 > -1; num15--)
     				{
     					if (!(腰.腿左_接続[num15] is 触手_犬D))
@@ -2449,10 +2449,10 @@ namespace SlaveMatrix
     				長物_蟲D 長物_蟲D2 = (長物_蟲D)半身;
     				長物_蟲D2.接続(母方, 父方, i, ConnectionInfo.長物_蟲_左0_接続, 要素構成, 接続構成, 変異率, 原種モード);
     				長物_蟲D2.接続(母方, 父方, i, ConnectionInfo.長物_蟲_左1_接続, 要素構成, 接続構成, 変異率, 原種モード);
-    				胴_蟲D 胴_蟲D2 = Mix<胴_蟲D>(母方, 父方, i, 原種モード);
+    				Torso_蟲D 胴_蟲D2 = Mix<Torso_蟲D>(母方, 父方, i, 原種モード);
     				if (胴_蟲D2 != null)
     				{
-    					胴_蟲D2.接続(母方, 父方, i, ConnectionInfo.胴_蟲_左_接続, 要素構成, 接続構成, 変異率, 原種モード);
+    					胴_蟲D2.接続(母方, 父方, i, ConnectionInfo.Torso_蟲_左_接続, 要素構成, 接続構成, 変異率, 原種モード);
     					長胴D 長胴D3 = (長胴D)胴_蟲D2.Copy();
     					長物_蟲D2.胴接続(胴_蟲D2);
     					int num19 = 2;
@@ -2462,13 +2462,13 @@ namespace SlaveMatrix
     					num19 = (num19 + RNG.XS.NextSign() * RNG.XS.Next(4)).Clamp(0, 50);
     					for (int m = 0; m < num19; m++)
     					{
-    						胴_蟲D2.胴接続(胴_蟲D2 = (胴_蟲D)長胴D3.Copy());
+    						胴_蟲D2.Torso接続(胴_蟲D2 = (Torso_蟲D)長胴D3.Copy());
     					}
-    					胴_蟲D2.接続(母方, 父方, i, ConnectionInfo.胴_蟲_胴_接続, 要素構成, 接続構成, 変異率, 原種モード);
+    					胴_蟲D2.接続(母方, 父方, i, ConnectionInfo.Torso_蟲_Torso_接続, 要素構成, 接続構成, 変異率, 原種モード);
     				}
     				else
     				{
-    					長物_蟲D2.接続(母方, 父方, i, ConnectionInfo.長物_蟲_胴_接続, 要素構成, 接続構成, 変異率, 原種モード);
+    					長物_蟲D2.接続(母方, 父方, i, ConnectionInfo.長物_蟲_Torso_接続, 要素構成, 接続構成, 変異率, 原種モード);
     				}
     				長物_蟲D2.AlignC();
     				腰.翼左_接続.RemoveAll((EleD e) => e is 四足脇D);
@@ -2603,8 +2603,8 @@ namespace SlaveMatrix
     					e.前足 = true;
     					e.後足 = false;
     				});
-    				腰.接続(母方, 父方, i, ConnectionInfo.腰_腿左_接続, 要素構成, 接続構成, 変異率, 原種モード);
-    				腰.接続(母方, 父方, i, ConnectionInfo.腰_尾_接続, 要素構成, 接続構成, 変異率, 原種モード);
+    				腰.接続(母方, 父方, i, ConnectionInfo.Waist_腿左_接続, 要素構成, 接続構成, 変異率, 原種モード);
+    				腰.接続(母方, 父方, i, ConnectionInfo.Waist_尾_接続, 要素構成, 接続構成, 変異率, 原種モード);
     				for (int num22 = 腰.腿左_接続.Count - 1; num22 > -1; num22--)
     				{
     					if (!(腰.腿左_接続[num22] is 触手_犬D))
@@ -2976,7 +2976,7 @@ namespace SlaveMatrix
     				e5.接続(母方, 父方, i, ConnectionInfo.単足_植_根外左_接続, 要素構成, 接続構成, 変異率, 原種モード);
     				e5.接続(母方, 父方, i, ConnectionInfo.単足_植_根内左_接続, 要素構成, 接続構成, 変異率, 原種モード);
     				e5.接続(母方, 父方, i, ConnectionInfo.単足_植_根中央_接続, 要素構成, 接続構成, 変異率, 原種モード);
-    				腰.接続(母方, 父方, i, ConnectionInfo.腰_腿左_接続, 要素構成, 接続構成, 変異率, 原種モード);
+    				腰.接続(母方, 父方, i, ConnectionInfo.Waist_腿左_接続, 要素構成, 接続構成, 変異率, 原種モード);
     				for (int num26 = 腰.腿左_接続.Count - 1; num26 > -1; num26--)
     				{
     					if (!(腰.腿左_接続[num26] is 触手_犬D))
@@ -3014,12 +3014,12 @@ namespace SlaveMatrix
     					腰.腿左接続(腿_人D2);
     					腰.腿右接続(腿_人D2.Get逆());
     				}
-    				腰.接続(母方, 父方, i, ConnectionInfo.腰_尾_接続, 要素構成, 接続構成, 変異率, 原種モード);
+    				腰.接続(母方, 父方, i, ConnectionInfo.Waist_尾_接続, 要素構成, 接続構成, 変異率, 原種モード);
     			}
     			else if (半身 is 単足_粘D)
     			{
     				_ = (単足_粘D)半身;
-    				腰.接続(母方, 父方, i, ConnectionInfo.腰_腿左_接続, 要素構成, 接続構成, 変異率, 原種モード);
+    				腰.接続(母方, 父方, i, ConnectionInfo.Waist_腿左_接続, 要素構成, 接続構成, 変異率, 原種モード);
     				for (int num30 = 腰.腿左_接続.Count - 1; num30 > -1; num30--)
     				{
     					if (!(腰.腿左_接続[num30] is 触手_犬D))
@@ -3057,13 +3057,13 @@ namespace SlaveMatrix
     					腰.腿左接続(腿_人D3);
     					腰.腿右接続(腿_人D3.Get逆());
     				}
-    				腰.接続(母方, 父方, i, ConnectionInfo.腰_尾_接続, 要素構成, 接続構成, 変異率, 原種モード);
+    				腰.接続(母方, 父方, i, ConnectionInfo.Waist_尾_接続, 要素構成, 接続構成, 変異率, 原種モード);
     			}
     		};
     		Action action2 = delegate
     		{
-    			腰.接続(母方, 父方, i, ConnectionInfo.腰_腿左_接続, 要素構成, 接続構成, 変異率, 原種モード);
-    			腰.接続(母方, 父方, i, ConnectionInfo.腰_尾_接続, 要素構成, 接続構成, 変異率, 原種モード);
+    			腰.接続(母方, 父方, i, ConnectionInfo.Waist_腿左_接続, 要素構成, 接続構成, 変異率, 原種モード);
+    			腰.接続(母方, 父方, i, ConnectionInfo.Waist_尾_接続, 要素構成, 接続構成, 変異率, 原種モード);
     		};
     		if (半身 != null)
     		{
@@ -3400,7 +3400,7 @@ namespace SlaveMatrix
     				{
     					item98.尺度B = num;
     				}
-    				if (item32.接続情報 != ConnectionInfo.腰_腿左_接続 && item32.接続情報 != ConnectionInfo.腰_腿右_接続)
+    				if (item32.接続情報 != ConnectionInfo.Waist_腿左_接続 && item32.接続情報 != ConnectionInfo.Waist_腿右_接続)
     				{
     					尾_魚D2.尾0_表示 = true;
     					尾_魚D2.尾0_鱗右_鱗1_表示 = true;
@@ -3784,7 +3784,7 @@ namespace SlaveMatrix
     			{
     				((上腕_蝙D)item32).竜性_鱗1_表示 = false;
     			}
-    			else if (item32 is 上腕D && item32.Par is 肩D)
+    			else if (item32 is 上腕D && item32.Par is ShoulderD)
     			{
     				item32.AlignR();
     			}
@@ -4282,7 +4282,7 @@ namespace SlaveMatrix
     		return val;
     	}
 
-    	private static T Mix<T>(腰D 母方, 腰D 父方, int i, bool 原種モード) where T : EleD
+    	private static T Mix<T>(WaistD 母方, WaistD 父方, int i, bool 原種モード) where T : EleD
     	{
     		T eleD = (from e in 母方.EnumEleD()
     			orderby RNG.XS.Next()
@@ -4293,7 +4293,7 @@ namespace SlaveMatrix
     		return Mix(eleD, eleD2, i, 原種モード);
     	}
 
-    	private static T Mix<T>(腰D 母方, 腰D 父方, bool 右, int i, bool 原種モード) where T : EleD
+    	private static T Mix<T>(WaistD 母方, WaistD 父方, bool 右, int i, bool 原種モード) where T : EleD
     	{
     		T eleD = (from e in 母方.EnumEleD()
     			orderby RNG.XS.Next()
@@ -4304,7 +4304,7 @@ namespace SlaveMatrix
     		return Mix(eleD, eleD2, i, 原種モード);
     	}
 
-    	private static T Mix<T>(腰D 母方, 腰D 父方, Func<T, bool> con, int i, bool 原種モード) where T : EleD
+    	private static T Mix<T>(WaistD 母方, WaistD 父方, Func<T, bool> con, int i, bool 原種モード) where T : EleD
     	{
     		T eleD = (from e in 母方.EnumEleD()
     			orderby RNG.XS.Next()
@@ -4315,7 +4315,7 @@ namespace SlaveMatrix
     		return Mix(eleD, eleD2, i, 原種モード);
     	}
 
-    	private static EleD Mix(腰D 母方, 腰D 父方, int i, Type t, bool 原種モード)
+    	private static EleD Mix(WaistD 母方, WaistD 父方, int i, Type t, bool 原種モード)
     	{
     		EleD eleD = (from e in 母方.EnumEleD()
     			orderby RNG.XS.Next()
@@ -4326,7 +4326,7 @@ namespace SlaveMatrix
     		return Mix(eleD, eleD2, i, 原種モード);
     	}
 
-    	private static EleD Mix(腰D 母方, 腰D 父方, bool 右, int i, Type t, bool 原種モード)
+    	private static EleD Mix(WaistD 母方, WaistD 父方, bool 右, int i, Type t, bool 原種モード)
     	{
     		EleD eleD = (from e in 母方.EnumEleD()
     			orderby RNG.XS.Next()
@@ -4337,7 +4337,7 @@ namespace SlaveMatrix
     		return Mix(eleD, eleD2, i, 原種モード);
     	}
 
-    	private static EleD Mix(腰D 母方, 腰D 父方, Func<EleD, bool> con, int i, Type t, bool 原種モード)
+    	private static EleD Mix(WaistD 母方, WaistD 父方, Func<EleD, bool> con, int i, Type t, bool 原種モード)
     	{
     		EleD eleD = (from e in 母方.EnumEleD()
     			orderby RNG.XS.Next()
@@ -4383,7 +4383,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private static Dictionary<ConnectionInfo, List<Type>> Get接続構成(腰D 母方, 腰D 父方)
+    	private static Dictionary<ConnectionInfo, List<Type>> Get接続構成(WaistD 母方, WaistD 父方)
     	{
     		Dictionary<ConnectionInfo, List<Type>> dictionary = new Dictionary<ConnectionInfo, List<Type>>();
     		foreach (EleD item in 母方.EnumEleD().Concat(父方.EnumEleD()))
@@ -4402,14 +4402,14 @@ namespace SlaveMatrix
     		return dictionary;
     	}
 
-    	private static Type[] Get要素構成(腰D 母方, 腰D 父方)
+    	private static Type[] Get要素構成(WaistD 母方, WaistD 父方)
     	{
     		return (from e in 母方.EnumEleD().Concat(父方.EnumEleD())
     			where 接続範囲.ContainsKey(e.接続情報) && 接続範囲[e.接続情報].Contains(e.GetType().ToString())
     			select e.GetType()).ToArray();
     	}
 
-    	public static void 接続(this EleD e, 腰D 母方, 腰D 父方, int i, ConnectionInfo 接続, Type[] 要素構成, Dictionary<ConnectionInfo, List<Type>> 接続構成, double 変異率, bool 原種モード)
+    	public static void 接続(this EleD e, WaistD 母方, WaistD 父方, int i, ConnectionInfo 接続, Type[] 要素構成, Dictionary<ConnectionInfo, List<Type>> 接続構成, double 変異率, bool 原種モード)
     	{
     		string text = 接続.ToString();
     		if (text.Contains("左"))
@@ -4441,14 +4441,14 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public static IEnumerable<EleD> Enum接続肢(腰D 母方, 腰D 父方, bool 右, int i, ConnectionInfo 接続, Type[] 要素構成, Dictionary<ConnectionInfo, List<Type>> 接続構成, double 変異率, bool 原種モード)
+    	public static IEnumerable<EleD> Enum接続肢(WaistD 母方, WaistD 父方, bool 右, int i, ConnectionInfo 接続, Type[] 要素構成, Dictionary<ConnectionInfo, List<Type>> 接続構成, double 変異率, bool 原種モード)
     	{
     		double l = (接続.接続数(母方, 父方) + 接続.接続数(母方, 父方) + 接続.接続数(母方, 父方)) / 3;
     		double num = 1.0 / ((double)接続構成.Count * 0.5);
     		if (!原種モード)
     		{
     			string text = 接続.ToString();
-    			if (text.Contains("肩") || text.Contains("脇") || text.Contains("翼"))
+    			if (text.Contains("Shoulder") || text.Contains("脇") || text.Contains("翼"))
     			{
     				if (num.Lot())
     				{
@@ -4459,7 +4459,7 @@ namespace SlaveMatrix
     					l = 3.0;
     				}
     			}
-    			else if (接続 == ConnectionInfo.腰_尾_接続 || 接続 == ConnectionInfo.四足腰_尾_接続)
+    			else if (接続 == ConnectionInfo.Waist_尾_接続 || 接続 == ConnectionInfo.四足腰_尾_接続)
     			{
     				if (num.Lot())
     				{
@@ -4475,7 +4475,7 @@ namespace SlaveMatrix
     				l = 0.0;
     			}
     		}
-    		if (l == 0.0 && (接続 == ConnectionInfo.四足脇_上腕_接続 || 接続 == ConnectionInfo.腰_腿左_接続 || 接続 == ConnectionInfo.腰_腿左_接続 || 接続 == ConnectionInfo.四足腰_腿左_接続 || 接続 == ConnectionInfo.四足腰_腿左_接続 || 接続 == ConnectionInfo.長物_魚_尾_接続 || 接続 == ConnectionInfo.長物_鯨_尾_接続 || 接続 == ConnectionInfo.長物_蛇_胴_接続 || 接続 == ConnectionInfo.長物_蟲_胴_接続 || 接続 == ConnectionInfo.胴_蛇_胴_接続 || 接続 == ConnectionInfo.胴_蟲_胴_接続 || 接続 == ConnectionInfo.多足_蛸_軟体外左_接続 || 接続 == ConnectionInfo.多足_蛸_軟体外右_接続 || 接続 == ConnectionInfo.多足_蛸_軟体内左_接続 || 接続 == ConnectionInfo.多足_蛸_軟体内右_接続 || 接続 == ConnectionInfo.単足_植_根外左_接続 || 接続 == ConnectionInfo.単足_植_根内左_接続 || 接続 == ConnectionInfo.単足_植_根中央_接続 || 接続 == ConnectionInfo.単足_植_根内右_接続 || 接続 == ConnectionInfo.単足_植_根外右_接続 || 接続 == ConnectionInfo.頭頂_宇_頭部後_接続 || (num * 1.1).Lot()))
+    		if (l == 0.0 && (接続 == ConnectionInfo.四足脇_上腕_接続 || 接続 == ConnectionInfo.Waist_腿左_接続 || 接続 == ConnectionInfo.Waist_腿左_接続 || 接続 == ConnectionInfo.四足腰_腿左_接続 || 接続 == ConnectionInfo.四足腰_腿左_接続 || 接続 == ConnectionInfo.長物_魚_尾_接続 || 接続 == ConnectionInfo.長物_鯨_尾_接続 || 接続 == ConnectionInfo.長物_蛇_Torso_接続 || 接続 == ConnectionInfo.長物_蟲_Torso_接続 || 接続 == ConnectionInfo.Torso_蛇_Torso_接続 || 接続 == ConnectionInfo.Torso_蟲_Torso_接続 || 接続 == ConnectionInfo.多足_蛸_軟体外左_接続 || 接続 == ConnectionInfo.多足_蛸_軟体外右_接続 || 接続 == ConnectionInfo.多足_蛸_軟体内左_接続 || 接続 == ConnectionInfo.多足_蛸_軟体内右_接続 || 接続 == ConnectionInfo.単足_植_根外左_接続 || 接続 == ConnectionInfo.単足_植_根内左_接続 || 接続 == ConnectionInfo.単足_植_根中央_接続 || 接続 == ConnectionInfo.単足_植_根内右_接続 || 接続 == ConnectionInfo.単足_植_根外右_接続 || 接続 == ConnectionInfo.頭頂_宇_頭部後_接続 || (num * 1.1).Lot()))
     		{
     			l = 1.0;
     		}
@@ -4493,7 +4493,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public static int 接続数(this ConnectionInfo 接続情報, 腰D 母方, 腰D 父方)
+    	public static int 接続数(this ConnectionInfo 接続情報, WaistD 母方, WaistD 父方)
     	{
     		if (接続範囲.ContainsKey(接続情報))
     		{
@@ -4510,7 +4510,7 @@ namespace SlaveMatrix
     		return 0;
     	}
 
-    	public static EleD Get接続肢(腰D 母方, 腰D 父方, bool 右, int i, ConnectionInfo 接続, Type[] 要素構成, Dictionary<ConnectionInfo, List<Type>> 接続構成, double 変異率, int j, bool 原種モード)
+    	public static EleD Get接続肢(WaistD 母方, WaistD 父方, bool 右, int i, ConnectionInfo 接続, Type[] 要素構成, Dictionary<ConnectionInfo, List<Type>> 接続構成, double 変異率, int j, bool 原種モード)
     	{
     		EleD eleD = Get要素(母方, 父方, 右, i, 接続, 要素構成, 接続構成, 変異率, j, 原種モード);
     		if (eleD != null)
@@ -4544,7 +4544,7 @@ namespace SlaveMatrix
     		return eleD;
     	}
 
-    	public static EleD Get要素(腰D 母方, 腰D 父方, bool 右, int i, ConnectionInfo 接続, Type[] 要素構成, Dictionary<ConnectionInfo, List<Type>> 接続構成, double 変異率, int j, bool 原種モード)
+    	public static EleD Get要素(WaistD 母方, WaistD 父方, bool 右, int i, ConnectionInfo 接続, Type[] 要素構成, Dictionary<ConnectionInfo, List<Type>> 接続構成, double 変異率, int j, bool 原種モード)
     	{
     		if (!原種モード && 変異率.Lot())
     		{
@@ -4553,7 +4553,7 @@ namespace SlaveMatrix
     		return Get要素0(母方, 父方, 右, i, 接続, 接続構成, j, 原種モード);
     	}
 
-    	public static EleD Get要素1(腰D 母方, 腰D 父方, bool 右, int i, ConnectionInfo 接続, Type[] 要素構成, int j, bool 原種モード)
+    	public static EleD Get要素1(WaistD 母方, WaistD 父方, bool 右, int i, ConnectionInfo 接続, Type[] 要素構成, int j, bool 原種モード)
     	{
     		if (接続範囲.ContainsKey(接続))
     		{
@@ -4571,7 +4571,7 @@ namespace SlaveMatrix
     		return null;
     	}
 
-    	public static EleD Get要素0(腰D 母方, 腰D 父方, bool 右, int i, ConnectionInfo 接続, Dictionary<ConnectionInfo, List<Type>> 接続構成, int j, bool 原種モード)
+    	public static EleD Get要素0(WaistD 母方, WaistD 父方, bool 右, int i, ConnectionInfo 接続, Dictionary<ConnectionInfo, List<Type>> 接続構成, int j, bool 原種モード)
     	{
     		if (接続構成.ContainsKey(接続))
     		{
@@ -4592,7 +4592,7 @@ namespace SlaveMatrix
     	public static ChaD Mix(this ChaD 母方, ChaD 父方, bool 原種モード)
     	{
     		double num = Mix(母方.魔力濃度, 父方.魔力濃度, 1.0);
-    		腰D d;
+    		WaistD d;
     		return new ChaD(d = Mix(母方.body_tree, 父方.body_tree, num, 原種モード), Mix(母方.body_color, 父方.body_color, num, d))
     		{
     			Lust = Mix(母方.Lust, 父方.Lust, 0.6),

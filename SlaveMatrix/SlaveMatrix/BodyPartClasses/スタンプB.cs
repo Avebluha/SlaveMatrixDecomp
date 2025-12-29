@@ -9,7 +9,7 @@ namespace SlaveMatrix
     {
     	private Mot ぶっかけ垂れ;
 
-    	public override void Draw(Are Are)
+    	public override void Draw(RenderArea Are)
     	{
     		try
     		{
@@ -45,7 +45,7 @@ namespace SlaveMatrix
     				sep.Sta.Dispose();
     			}
     			sep = default(sep);
-    			sep.Sta = EleD.GetEle(Are.DisUnit, Med, Sta.GameData.配色);
+    			sep.Sta = EleD.GetEle(Are.DisplayUnitScale, Med, Sta.GameData.配色);
     			sep.Sta.SetHitFalse();
     			sep.Sta.Xv = RNG.XS.NextDouble();
     			sep.Sta.右 = RNG.XS.NextBool();
@@ -66,7 +66,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public スタンプB(Med Med, Are Are, Cha Cha, Bod Bod, EleD EleD, Mots Mots)
+    	public スタンプB(ModeEventDispatcher Med, RenderArea Are, Cha Cha, Bod Bod, EleD EleD, Mots Mots)
     		: base(Med, Are, Cha, Bod, EleD)
     	{
     		Ele e = null;

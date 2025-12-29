@@ -5,7 +5,7 @@ namespace SlaveMatrix
     [Serializable]
     public struct ブーツ情報
     {
-    	public ブーツ_脚情報 脚;
+    	public ブーツ_脚情報 Leg;
 
     	public ブーツ_足情報 足;
 
@@ -13,7 +13,7 @@ namespace SlaveMatrix
 
     	public void SetDefault()
     	{
-    		脚.SetDefault();
+    		Leg.SetDefault();
     		足.SetDefault();
     		色.SetDefault();
     	}

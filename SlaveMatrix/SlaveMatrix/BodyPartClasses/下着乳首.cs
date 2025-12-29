@@ -177,7 +177,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 下着乳首(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 下着乳首D e)
+    	public 下着乳首(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 下着乳首D e)
     	{
     		ThisType = GetType();
     		本体 = new Difs(Sta.胴体["下着乳首左"]);

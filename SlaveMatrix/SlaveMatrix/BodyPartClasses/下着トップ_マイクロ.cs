@@ -444,7 +444,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 下着トップ_マイクロ(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 下着トップ_マイクロD e)
+    	public 下着トップ_マイクロ(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 下着トップ_マイクロD e)
     	{
     		ThisType = GetType();
     		Dif dif = new Dif(Sta.胴体["下着トップ"][2]);
@@ -540,11 +540,11 @@ namespace SlaveMatrix
     		濃度 = e.濃度;
     	}
 
-    	public override void 描画0(Are Are)
+    	public override void 描画0(RenderArea Are)
     	{
     	}
 
-    	public override void 描画1(Are Are)
+    	public override void 描画1(RenderArea Are)
     	{
     		Are.Draw(X0Y0_紐);
     		Are.Draw(X0Y0_カップ左_紐);

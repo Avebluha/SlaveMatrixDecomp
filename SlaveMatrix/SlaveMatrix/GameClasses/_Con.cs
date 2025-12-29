@@ -4,20 +4,20 @@ namespace SlaveMatrix.GameClasses
 {
     public static class _Con
     {
-        public static 胸D Get胸R()
+        public static ChestD GetChestR()
         {
-            胸D obj = Uni.胸();
+            ChestD obj = Uni.Chest();
             Sta.SetValuesD(value: RNG.XS.NextDouble(), src: obj.EnumEleD(), s: "バスト");
             return obj;
         }
 
-        public static 頭D Get頭R()
+        public static HeadD Get頭R()
         {
-            頭D obj = Uni.頭().SetRandom();
+            HeadD obj = Uni.頭().SetRandom();
             基髪D 基髪D2 = (基髪D)obj.基髪_接続[0];
             EleD eleD = Get後髪0R();
             基髪D2.後髪接続(eleD);
-            if ((eleD is 後髪0_ジグD || eleD is 後髪0_ハネD || eleD is 後髪0_パツD || eleD is 後髪0_カルD || eleD is 後髪0_肢系D) && RNG.XS.NextBool())
+            if ((eleD is BackHair0_ジグD || eleD is BackHair0_ハネD || eleD is BackHair0_パツD || eleD is BackHair0_カルD || eleD is BackHair0_肢系D) && RNG.XS.NextBool())
             {
                 基髪D2.後髪接続(Get後髪1R());
             }
@@ -28,13 +28,13 @@ namespace SlaveMatrix.GameClasses
             return obj;
         }
 
-        public static 頭D Get頭R1()
+        public static HeadD Get頭R1()
         {
-            頭D obj = Uni.頭().SetRandom();
+            HeadD obj = Uni.頭().SetRandom();
             基髪D 基髪D2 = (基髪D)obj.基髪_接続[0];
             EleD eleD = Get後髪0R();
             基髪D2.後髪接続(eleD);
-            if ((eleD is 後髪0_ジグD || eleD is 後髪0_ハネD || eleD is 後髪0_パツD || eleD is 後髪0_カルD || eleD is 後髪0_肢系D) && RNG.XS.NextBool())
+            if ((eleD is BackHair0_ジグD || eleD is BackHair0_ハネD || eleD is BackHair0_パツD || eleD is BackHair0_カルD || eleD is BackHair0_肢系D) && RNG.XS.NextBool())
             {
                 基髪D2.後髪接続(Get後髪1R());
             }
@@ -138,27 +138,27 @@ namespace SlaveMatrix.GameClasses
         {
             return RNG.XS.NextM(20) switch
             {
-                0 => new 後髪0_ジグD().SetRandom(),
-                1 => new 後髪0_ハネD().SetRandom(),
-                2 => new 後髪0_パツD().SetRandom(),
-                3 => new 後髪0_カルD().SetRandom(),
-                4 => new 後髪0_肢系D().SetRandom(),
+                0 => new BackHair0_ジグD().SetRandom(),
+                1 => new BackHair0_ハネD().SetRandom(),
+                2 => new BackHair0_パツD().SetRandom(),
+                3 => new BackHair0_カルD().SetRandom(),
+                4 => new BackHair0_肢系D().SetRandom(),
                 5 => new 後髪0_編1ジグD().SetRandom(),
                 6 => new 後髪0_編1ハネD().SetRandom(),
-                7 => new 後髪0_編1パツD().SetRandom(),
-                8 => new 後髪0_編1カルD().SetRandom(),
-                9 => new 後髪0_下1ジグD().SetRandom(),
-                10 => new 後髪0_下1ハネD().SetRandom(),
-                11 => new 後髪0_下1パツD().SetRandom(),
-                12 => new 後髪0_下1カルD().SetRandom(),
+                7 => new BackHair0_編1パツD().SetRandom(),
+                8 => new BackHair0_編1カルD().SetRandom(),
+                9 => new BackHair0_下1ジグD().SetRandom(),
+                10 => new BackHair0_下1ハネD().SetRandom(),
+                11 => new BackHair0_下1パツD().SetRandom(),
+                12 => new BackHair0_下1カルD().SetRandom(),
                 13 => new 後髪0_編2ジグD().SetRandom(),
                 14 => new 後髪0_編2ハネD().SetRandom(),
                 15 => new 後髪0_編2パツD().SetRandom(),
                 16 => new 後髪0_編2カルD().SetRandom(),
-                17 => new 後髪0_下2ジグD().SetRandom(),
+                17 => new BackHair0_下2ジグD().SetRandom(),
                 18 => new 後髪0_下2ハネD().SetRandom(),
-                19 => new 後髪0_下2パツD().SetRandom(),
-                _ => new 後髪0_下2カルD().SetRandom(),
+                19 => new BackHair0_下2パツD().SetRandom(),
+                _ => new BackHair0_下2カルD().SetRandom(),
             };
         }
 
@@ -166,15 +166,15 @@ namespace SlaveMatrix.GameClasses
         {
             return RNG.XS.NextM(8) switch
             {
-                0 => new 後髪1_結1ジグD().SetRandom(),
-                1 => new 後髪1_結1ハネD().SetRandom(),
-                2 => new 後髪1_結1パツD().SetRandom(),
-                3 => new 後髪1_結1カルD().SetRandom(),
-                4 => new 後髪1_編結D().SetRandom(),
-                5 => new 後髪1_結2ジグD().SetRandom(),
-                6 => new 後髪1_結2ハネD().SetRandom(),
-                7 => new 後髪1_結2パツD().SetRandom(),
-                _ => new 後髪1_結2カルD().SetRandom(),
+                0 => new BackHair1_結1ジグD().SetRandom(),
+                1 => new BackHair1_結1ハネD().SetRandom(),
+                2 => new BackHair1_結1パツD().SetRandom(),
+                3 => new BackHair1_結1カルD().SetRandom(),
+                4 => new BackHair1_編結D().SetRandom(),
+                5 => new BackHair1_結2ジグD().SetRandom(),
+                6 => new BackHair1_結2ハネD().SetRandom(),
+                7 => new BackHair1_結2パツD().SetRandom(),
+                _ => new BackHair1_結2カルD().SetRandom(),
             };
         }
 
@@ -182,27 +182,27 @@ namespace SlaveMatrix.GameClasses
         {
             return RNG.XS.NextM(5) switch
             {
-                0 => new 横髪_ジグD
+                0 => new SideHair_ジグD
                 {
                     右 = 右
                 }.SetRandom(),
-                1 => new 横髪_ハネD
+                1 => new SideHair_ハネD
                 {
                     右 = 右
                 }.SetRandom(),
-                2 => new 横髪_パツD
+                2 => new SideHair_パツD
                 {
                     右 = 右
                 }.SetRandom(),
-                3 => new 横髪_カルD
+                3 => new SideHair_カルD
                 {
                     右 = 右
                 }.SetRandom(),
-                4 => new 横髪_編みD
+                4 => new SideHair_編みD
                 {
                     右 = 右
                 }.SetRandom(),
-                _ => new 横髪_肢系D
+                _ => new SideHair_肢系D
                 {
                     右 = 右
                 },
@@ -269,42 +269,42 @@ namespace SlaveMatrix.GameClasses
             };
         }
 
-        public static 胴D Set胴(this 腰D 腰)
+        public static TorsoD Set胴(this WaistD 腰)
         {
-            胴D 胴D2 = Uni.胴();
+            TorsoD 胴D2 = Uni.胴();
             腰.胴接続(胴D2);
             return 胴D2;
         }
 
-        public static 胸D Set胸R(this 胴D 胴)
+        public static ChestD SetChestR(this TorsoD 胴)
         {
-            胸D 胸D2 = Get胸R();
-            胴.胸接続(胸D2);
-            return 胸D2;
+            ChestD ChestD2 = GetChestR();
+            胴.Torso接続(ChestD2);
+            return ChestD2;
         }
 
-        public static 首D Set首(this 胸D 胸)
+        public static NeckD Set首(this ChestD Chest)
         {
-            首D 首D2 = new 首D();
-            胸.首接続(首D2);
+            NeckD 首D2 = new NeckD();
+            Chest.首接続(首D2);
             return 首D2;
         }
 
-        public static 頭D Set頭R(this 首D 首)
+        public static HeadD Set頭R(this NeckD 首)
         {
-            頭D 頭D2 = Get頭R();
+            HeadD 頭D2 = Get頭R();
             首.頭接続(頭D2);
             return 頭D2;
         }
 
-        public static 頭D Set頭R1(this 首D 首)
+        public static HeadD Set頭R1(this NeckD 首)
         {
-            頭D 頭D2 = Get頭R1();
+            HeadD 頭D2 = Get頭R1();
             首.頭接続(頭D2);
             return 頭D2;
         }
 
-        public static void Set双目R(this 頭D 頭)
+        public static void Set双目R(this HeadD 頭)
         {
             双目D 双目D2 = Get双眼R(右: false);
             頭.目左接続(双目D2);
@@ -314,7 +314,7 @@ namespace SlaveMatrix.GameClasses
             頭.眉右接続(眉D2.Get逆());
         }
 
-        public static void Set目弱R(this 頭D 頭)
+        public static void Set目弱R(this HeadD 頭)
         {
             双目D 双目D2 = Uni.魔弱目(右: false);
             ((瞼_弱D)双目D2.瞼_接続[0]).SetRandom();
@@ -325,7 +325,7 @@ namespace SlaveMatrix.GameClasses
             頭.眉右接続(眉D2.Get逆());
         }
 
-        public static void Set目宇R(this 頭D 頭)
+        public static void Set目宇R(this HeadD 頭)
         {
             双目D 双目D2 = Uni.宇宙目(右: false);
             ((瞼_宇D)双目D2.瞼_接続[0]).SetRandom();
@@ -336,23 +336,23 @@ namespace SlaveMatrix.GameClasses
             頭.眉右接続(眉D2.Get逆());
         }
 
-        public static void Set単目R(this 頭D 頭)
+        public static void Set単目R(this HeadD 頭)
         {
             頭.単眼目接続(Get単眼R());
             頭.単眼眉接続(Get単眼眉R());
         }
 
-        public static void Set鼻R(this 頭D 頭)
+        public static void Set鼻R(this HeadD 頭)
         {
             頭.鼻接続(Get鼻R());
         }
 
-        public static void Set鼻人(this 頭D 頭)
+        public static void Set鼻人(this HeadD 頭)
         {
             頭.鼻接続(Uni.人鼻D());
         }
 
-        public static void Set口R(this 頭D 頭)
+        public static void Set口R(this HeadD 頭)
         {
             EleD[] array = Get口R();
             foreach (EleD e in array)
@@ -361,7 +361,7 @@ namespace SlaveMatrix.GameClasses
             }
         }
 
-        public static void Set口人(this 頭D 頭)
+        public static void Set口人(this HeadD 頭)
         {
             EleD[] array = Uni.人口D();
             foreach (EleD e in array)
@@ -370,7 +370,7 @@ namespace SlaveMatrix.GameClasses
             }
         }
 
-        public static void Set口裂(this 頭D 頭)
+        public static void Set口裂(this HeadD 頭)
         {
             EleD[] array = Uni.裂口D();
             foreach (EleD e in array)
@@ -379,52 +379,52 @@ namespace SlaveMatrix.GameClasses
             }
         }
 
-        public static void Set舌短(this 頭D 頭)
+        public static void Set舌短(this HeadD 頭)
         {
             頭.口接続(new 舌_短D());
         }
 
-        public static void Set舌長(this 頭D 頭)
+        public static void Set舌長(this HeadD 頭)
         {
             頭.口接続(new 舌_長D());
         }
 
-        public static void Set耳人(this 頭D 頭)
+        public static void Set耳人(this HeadD 頭)
         {
             耳_人D 耳_人D2 = new 耳_人D();
             頭.耳左接続(耳_人D2);
             頭.耳右接続(耳_人D2.Get逆());
         }
 
-        public static void Set耳尖(this 頭D 頭)
+        public static void Set耳尖(this HeadD 頭)
         {
             耳_尖D 耳_尖D2 = new 耳_尖D();
             頭.耳左接続(耳_尖D2);
             頭.耳右接続(耳_尖D2.Get逆());
         }
 
-        public static void Set耳長(this 頭D 頭)
+        public static void Set耳長(this HeadD 頭)
         {
             耳_長D 耳_長D2 = new 耳_長D();
             頭.耳左接続(耳_長D2);
             頭.耳右接続(耳_長D2.Get逆());
         }
 
-        public static void Set耳鰭(this 頭D 頭)
+        public static void Set耳鰭(this HeadD 頭)
         {
             耳_鰭D 耳_鰭D2 = new 耳_鰭D();
             頭.耳左接続(耳_鰭D2);
             頭.耳右接続(耳_鰭D2.Get逆());
         }
 
-        public static void Set耳羽(this 頭D 頭)
+        public static void Set耳羽(this HeadD 頭)
         {
             耳_羽D 耳_羽D2 = new 耳_羽D();
             頭.耳左接続(耳_羽D2);
             頭.耳右接続(耳_羽D2.Get逆());
         }
 
-        public static void Set耳獣(this 頭D 頭)
+        public static void Set耳獣(this HeadD 頭)
         {
             耳_獣D 耳_獣D2 = new 耳_獣D();
             頭.耳左接続(耳_獣D2);

@@ -77,7 +77,7 @@ namespace SlaveMatrix
 
     	public List<EleD> 脇右_接続 = new List<EleD>();
 
-    	public List<EleD> 胴_接続 = new List<EleD>();
+    	public List<EleD> Torso_接続 = new List<EleD>();
 
     	public List<EleD> 胸左_接続 = new List<EleD>();
 
@@ -116,9 +116,9 @@ namespace SlaveMatrix
 
     	public void 胴接続(EleD e)
     	{
-    		胴_接続.Add(e);
+    		Torso_接続.Add(e);
     		e.Par = this;
-    		e.接続情報 = ConnectionInfo.四足胸_胴_接続;
+    		e.接続情報 = ConnectionInfo.四足胸_Torso_接続;
     	}
 
     	public void 胸左接続(EleD e)
@@ -197,7 +197,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override Ele GetEle(double DisUnit, Med Med, 体配色 体配色)
+    	public override Ele GetEle(double DisUnit, ModeEventDispatcher Med, 体配色 体配色)
     	{
     		return new 四足胸(DisUnit, 配色指定, 体配色, Med, this);
     	}

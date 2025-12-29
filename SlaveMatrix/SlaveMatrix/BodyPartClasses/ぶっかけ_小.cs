@@ -107,7 +107,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public ぶっかけ_小(double DisUnit, 配色指定 配色指定, 主人公配色 体配色, Med Med, ぶっかけ_小D e)
+    	public ぶっかけ_小(double DisUnit, 配色指定 配色指定, 主人公配色 体配色, ModeEventDispatcher Med, ぶっかけ_小D e)
     	{
     		ThisType = GetType();
     		Dif dif = new Dif(Sta.スタンプ["ぶっかけ"][0]);

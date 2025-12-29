@@ -5090,7 +5090,7 @@ namespace SlaveMatrix
 
     	public JointS 鎖4_接続点 => new JointS(本体, X0Y0_輪2_金具右, 0);
 
-    	public 尾_蛇(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 尾_蛇D e)
+    	public 尾_蛇(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 尾_蛇D e)
     	{
     		ThisType = GetType();
     		Dif dif = new Dif();
@@ -5909,7 +5909,7 @@ namespace SlaveMatrix
     		鎖表示 = e.鎖表示;
     	}
 
-    	public override void 描画0(Are Are)
+    	public override void 描画0(RenderArea Are)
     	{
     		Are.Draw(X0Y0_尾1_根);
     		Are.Draw(X0Y0_尾1_鱗);

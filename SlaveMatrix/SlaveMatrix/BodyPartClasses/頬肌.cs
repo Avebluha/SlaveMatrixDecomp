@@ -734,7 +734,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 頬肌(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 頬肌D e)
+    	public 頬肌(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 頬肌D e)
     	{
     		ThisType = GetType();
     		本体 = new Difs(Sta.胴体["頬肌左"]);
@@ -887,7 +887,7 @@ namespace SlaveMatrix
     		濃度 = e.濃度;
     	}
 
-    	public override void 描画0(Are Are)
+    	public override void 描画0(RenderArea Are)
     	{
     		Are.Draw(X0Y0_淫タトゥ_ハート_タトゥ左);
     		Are.Draw(X0Y0_淫タトゥ_ハート_タトゥ右);
@@ -920,7 +920,7 @@ namespace SlaveMatrix
     		Are.Draw(X0Y0_傷_傷I3);
     	}
 
-    	public override void 描画1(Are Are)
+    	public override void 描画1(RenderArea Are)
     	{
     		Are.Draw(X0Y0_獣性_髭1);
     		Are.Draw(X0Y0_獣性_髭2);

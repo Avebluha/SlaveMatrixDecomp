@@ -432,7 +432,7 @@ namespace SlaveMatrix
 
     	public JointS 尿道_接続点 => new JointS(本体, X0Y0_陰茎, 3);
 
-    	public ペニス(double DisUnit, 配色指定 配色指定, 主人公配色 体配色, Med Med, ペニスD e)
+    	public ペニス(double DisUnit, 配色指定 配色指定, 主人公配色 体配色, ModeEventDispatcher Med, ペニスD e)
     	{
     		ペニス ペニス2 = this;
     		ThisType = GetType();
@@ -618,7 +618,7 @@ namespace SlaveMatrix
     		AreM.Dispose();
     	}
 
-    	public override void 描画0(Are Are)
+    	public override void 描画0(RenderArea Are)
     	{
     		AreM.Clear();
     		本体.Draw(AreM);

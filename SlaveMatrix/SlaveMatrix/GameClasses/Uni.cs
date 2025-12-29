@@ -4,9 +4,9 @@ namespace SlaveMatrix
 {
     public static class Uni
     {
-    	public static 頭D 頭()
+    	public static HeadD 頭()
     	{
-    		頭D obj = new 頭D();
+    		HeadD obj = new HeadD();
     		obj.基髪接続(new 基髪D());
     		obj.目左接続(new 目傷D());
     		obj.目右接続(new 目傷D
@@ -35,9 +35,9 @@ namespace SlaveMatrix
     		return obj;
     	}
 
-    	public static 胸D 胸()
+    	public static ChestD Chest()
     	{
-    		胸D obj = new 胸D();
+    		ChestD obj = new ChestD();
     		obj.肌接続(new 胸毛D());
     		obj.肌接続(new 胸肌D());
     		obj.肌接続(new 胸腹板D());
@@ -53,18 +53,18 @@ namespace SlaveMatrix
     		return obj;
     	}
 
-    	public static 胴D 胴()
+    	public static TorsoD 胴()
     	{
-    		胴D obj = new 胴D();
+    		TorsoD obj = new TorsoD();
     		obj.肌接続(new 胴腹板D());
     		obj.肌接続(new 胴肌D());
     		obj.肌接続(new 上着ミドル_ドレスD());
     		return obj;
     	}
 
-    	public static 腰D 腰()
+    	public static WaistD 腰()
     	{
-    		腰D waist_description = new 腰D();
+    		WaistD waist_description = new WaistD();
     		waist_description.膣基接続(new 膣基_人D());
     		waist_description.膣基接続(new 膣内精液_人D());
     		waist_description.膣基接続(new 断面_人D());

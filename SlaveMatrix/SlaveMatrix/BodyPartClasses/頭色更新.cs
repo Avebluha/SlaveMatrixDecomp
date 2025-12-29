@@ -6,13 +6,13 @@ namespace SlaveMatrix
 {
     public class 頭色更新
     {
-    	public 頭 頭;
+    	public Head 頭;
 
     	private Ele[] 瞼;
 
     	private Vector2D[] mm;
 
-    	public 頭色更新(頭 頭, 単瞼 単瞼, 双瞼 瞼左, 双瞼 瞼右, 縦瞼 額瞼, 頬瞼 頬左, 頬瞼 頬右)
+    	public 頭色更新(Head 頭, 単瞼 単瞼, 双瞼 瞼左, 双瞼 瞼右, 縦瞼 額瞼, 頬瞼 頬左, 頬瞼 頬右)
     	{
     		this.頭 = 頭;
     		瞼 = EnumNoNull(単瞼, 瞼左, 瞼右, 額瞼, 頬左, 頬右).ToArray();

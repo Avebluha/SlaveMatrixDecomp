@@ -83,7 +83,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 鞭痕(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 鞭痕D e)
+    	public 鞭痕(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 鞭痕D e)
     	{
     		ThisType = GetType();
     		本体 = new Difs(Sta.スタンプ["鞭痕"]);

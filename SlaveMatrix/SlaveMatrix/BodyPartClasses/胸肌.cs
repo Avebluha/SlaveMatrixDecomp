@@ -818,7 +818,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 胸肌(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 胸肌D e)
+    	public 胸肌(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 胸肌D e)
     	{
     		ThisType = GetType();
     		本体 = new Difs(Sta.胴体["胸郭肌"]);
@@ -985,7 +985,7 @@ namespace SlaveMatrix
     		尺度YB = 0.99;
     	}
 
-    	public override void 描画0(Are Are)
+    	public override void 描画0(RenderArea Are)
     	{
     		Are.Draw(X0Y0_虫性_甲殻2);
     		Are.Draw(X0Y0_虫性_甲殻1_甲殻);
@@ -1022,7 +1022,7 @@ namespace SlaveMatrix
     		Are.Draw(X0Y0_コア_コア1_ハイライト);
     	}
 
-    	public override void 描画1(Are Are)
+    	public override void 描画1(RenderArea Are)
     	{
     		Are.Draw(X0Y0_コア_コア2_基);
     		Are.Draw(X0Y0_コア_コア2_コア);

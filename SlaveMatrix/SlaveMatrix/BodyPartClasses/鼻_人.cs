@@ -88,7 +88,7 @@ namespace SlaveMatrix
 
     	public JointS 鼻水右_接続点 => new JointS(本体, X0Y0_鼻, 1);
 
-    	public 鼻_人(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 鼻_人D e)
+    	public 鼻_人(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 鼻_人D e)
     	{
     		鼻_人 鼻_人2 = this;
     		ThisType = GetType();

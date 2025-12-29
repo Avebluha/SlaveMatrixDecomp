@@ -15,10 +15,10 @@ namespace SlaveMatrix
     	private ConstProp CP = new ConstProp();
 
 
-    	public Med Med;
+    	public ModeEventDispatcher Med;
 
-    	public Are Are; 
-        private Are Film;
+    	public RenderArea Are; 
+        private RenderArea Film;
 
         public Cha Cha;
 
@@ -146,7 +146,7 @@ namespace SlaveMatrix
 
         //moan queue :skull:
     	public Onomatopoeia 擬音;
-    	public Queue<Action<Are>> 擬音キュー = new Queue<Action<Are>>();
+    	public Queue<Action<RenderArea>> 擬音キュー = new Queue<Action<RenderArea>>();
 
         //animation queue?
         public List<挿入処理> SubFocus = new List<挿入処理>();
@@ -391,7 +391,7 @@ namespace SlaveMatrix
 
     	public void 発音(Vector2D p, string s, Color c, double d, bool b)
     	{
-    		擬音キュー.Enqueue(delegate(Are a)
+    		擬音キュー.Enqueue(delegate(RenderArea a)
     		{
     			擬音.Sound(a, p, s, new Font("MS Gothic", 1f), c, d, b);
     		});
@@ -399,7 +399,7 @@ namespace SlaveMatrix
 
     	public void 潮吹()
     	{
-    		擬音キュー.Enqueue(delegate(Are a)
+    		擬音キュー.Enqueue(delegate(RenderArea a)
     		{
     			擬音.Sound(a, Bod.尿道位置.GetAreaPoint(0.04), Sta.潮吹.GetVal(Player.変化V_潮吹, Player.変化V_固有値乱数), new Font("MS Gothic", 1f), Color.Azure, 0.2 + 0.2 * RNG.XS.NextDouble() * Player.変化V_潮吹, b: true);
     		});
@@ -409,7 +409,7 @@ namespace SlaveMatrix
     	{
     		if (CP.GetFlag(0.1 + 0.1 * Player.変化V_放尿 * 0.8))
     		{
-    			擬音キュー.Enqueue(delegate(Are a)
+    			擬音キュー.Enqueue(delegate(RenderArea a)
     			{
     				擬音.Sound(a, Bod.尿道位置.GetAreaPoint(0.04), Sta.放尿.GetVal(Player.変化V_放尿, Player.変化V_固有値乱数), new Font("MS Gothic", 1f), Col.Black, 0.2 + 0.2 * RNG.XS.NextDouble() * Player.変化V_放尿, b: true);
     			});
@@ -1580,7 +1580,7 @@ namespace SlaveMatrix
     	{
     		if (!Bod.Is拘束 && Bod.脚人n > 0)
     		{
-    			Cha.脚();
+    			Cha.Leg();
     			Cha.Bod.腿Update();
     		}
     	}
@@ -2038,14 +2038,14 @@ namespace SlaveMatrix
     		PlayerStamina.Leave();
     	}
 
-    	public TrainingUI(Med Med, Are Are, InfoPanel ip)
+    	public TrainingUI(ModeEventDispatcher Med, RenderArea Are, InfoPanel ip)
     	{
     		TrainingUI 調教UI2 = this;
     		try
     		{
     			this.Med = Med;
     			this.Are = Are;
-    			double disUnit = Are.DisUnit;
+    			double disUnit = Are.DisplayUnitScale;
     			this.ip = ip;
     			ペニスCM = new CM(Med, this, ペニス = new ペニス(disUnit, 配色指定.N0, Sta.GameData.配色, Med, new ペニスD
     			{
@@ -2164,7 +2164,7 @@ namespace SlaveMatrix
     			parT.SizeBase = 0.095;
     			parT.Font = new Font("MS Gothic", 1f);
     			parT.FontSize = 0.07;
-    			parT.SetStringRectOutline(Are.Unit, Are.GD);
+    			parT.SetStringRectOutline(Are.UnitScale, Are.DisplayGraphics);
     			parT.RectSize = new Vector2D(parT.OP[0].ps[1].X, parT.OP[0].ps[2].Y);
     			parT.OP.ScalingY(parT.BasePointBase, 0.9);
     			parT.Closed = true;
@@ -2182,7 +2182,7 @@ namespace SlaveMatrix
     			parT2.SizeBase = 0.095;
     			parT2.Font = new Font("MS Gothic", 1f);
     			parT2.FontSize = 0.07;
-    			parT2.SetStringRectOutline(Are.Unit, Are.GD);
+    			parT2.SetStringRectOutline(Are.UnitScale, Are.DisplayGraphics);
     			parT2.RectSize = new Vector2D(parT2.OP[0].ps[1].X, parT2.OP[0].ps[2].Y);
     			parT2.OP.ScalingY(parT2.BasePointBase, 0.9);
     			parT2.Closed = true;
@@ -2214,7 +2214,7 @@ namespace SlaveMatrix
     			parT3.SizeBase = 0.095;
     			parT3.Font = new Font("MS Gothic", 1f);
     			parT3.FontSize = 0.07;
-    			parT3.SetStringRectOutline(Are.Unit, Are.GD);
+    			parT3.SetStringRectOutline(Are.UnitScale, Are.DisplayGraphics);
     			parT3.RectSize = new Vector2D(parT3.OP[0].ps[1].X, parT3.OP[0].ps[2].Y);
     			parT3.OP.ScalingY(parT3.BasePointBase, 0.9);
     			parT3.Closed = true;
@@ -2237,7 +2237,7 @@ namespace SlaveMatrix
     			parT4.SizeBase = 0.095;
     			parT4.Font = new Font("MS Gothic", 1f);
     			parT4.FontSize = 0.07;
-    			parT4.SetStringRectOutline(Are.Unit, Are.GD);
+    			parT4.SetStringRectOutline(Are.UnitScale, Are.DisplayGraphics);
     			parT4.RectSize = new Vector2D(parT4.OP[0].ps[1].X, parT4.OP[0].ps[2].Y);
     			parT4.OP.ScalingY(parT4.BasePointBase, 0.9);
     			parT4.Closed = true;
@@ -2260,7 +2260,7 @@ namespace SlaveMatrix
     			parT5.SizeBase = 0.095;
     			parT5.Font = new Font("MS Gothic", 1f);
     			parT5.FontSize = 0.07;
-    			parT5.SetStringRectOutline(Are.Unit, Are.GD);
+    			parT5.SetStringRectOutline(Are.UnitScale, Are.DisplayGraphics);
     			parT5.RectSize = new Vector2D(parT5.OP[0].ps[1].X, parT5.OP[0].ps[2].Y);
     			parT5.OP.ScalingY(parT5.BasePointBase, 0.9);
     			parT5.Closed = true;
@@ -2366,7 +2366,7 @@ namespace SlaveMatrix
     			parT6.SizeBase = 0.095;
     			parT6.Font = new Font("MS Gothic", 1f);
     			parT6.FontSize = 0.07;
-    			parT6.SetStringRectOutline(Are.Unit, Are.GD);
+    			parT6.SetStringRectOutline(Are.UnitScale, Are.DisplayGraphics);
     			parT6.RectSize = new Vector2D(parT6.OP[0].ps[1].X, parT6.OP[0].ps[2].Y);
     			parT6.OP.ScalingY(parT6.BasePointBase, 0.9);
     			parT6.Closed = true;
@@ -2401,7 +2401,7 @@ namespace SlaveMatrix
     			parT7.SizeBase = 0.095;
     			parT7.Font = new Font("MS Gothic", 1f);
     			parT7.FontSize = 0.07;
-    			parT7.SetStringRectOutline(Are.Unit, Are.GD);
+    			parT7.SetStringRectOutline(Are.UnitScale, Are.DisplayGraphics);
     			parT7.RectSize = new Vector2D(parT7.OP[0].ps[1].X, parT7.OP[0].ps[2].Y);
     			parT7.OP.ScalingY(parT7.BasePointBase, 0.9);
     			parT7.Closed = true;
@@ -2413,7 +2413,7 @@ namespace SlaveMatrix
     			parT7.StringFormat.LineAlignment = StringAlignment.Center;
     			parT7.PositionBase = parT6.PositionBase.AddY(0.015);
     			string Path = "Photo";
-    			Film = new Are(Med, Hit: false);
+    			Film = new RenderArea(Med, Hit: false);
     			撮影 = new But1(parT7, delegate
     			{
     				//Sounds.撮影.Play();
@@ -2434,13 +2434,13 @@ namespace SlaveMatrix
     				}
     				try
     				{
-    					調教UI2.Film.GD.DrawString("Slave Matrix " + now.ToShortDateString().Replace("/", "."), font, Brushes.Coral, x, y);
+    					調教UI2.Film.DisplayGraphics.DrawString("Slave Matrix " + now.ToShortDateString().Replace("/", "."), font, Brushes.Coral, x, y);
     				}
     				finally
     				{
     					((IDisposable)font)?.Dispose();
     				}
-    				調教UI2.Film.Dis.Save(Path + "\\" + now.ToString("yyyy_MM_dd_HH_mm_ss") + ".png", ImageFormat.Png);
+    				調教UI2.Film.DisplayLayer.Save(Path + "\\" + now.ToString("yyyy_MM_dd_HH_mm_ss") + ".png", ImageFormat.Png);
     				ip.SubInfoIm = GameText.撮影しました + "\r\n" + GameText.写真はPhotoフォルダに保存されます;
     				if (Sta.GameData.TrainingTarget.Trained && !調教UI2.Cha.Bod.Is拘束 && 調教UI2.Cha.Bod.Is腕人 && !Sta.GameData.TrainingTarget.ChaD.撮影ピース経験)
     				{
@@ -2782,7 +2782,7 @@ namespace SlaveMatrix
     		擬音.Clear();
     	}
 
-    	public void 描画糸(Are Are)
+    	public void 描画糸(RenderArea Are)
     	{
     		foreach (挿入処理 item in SubFocus)
     		{
@@ -2793,7 +2793,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public void 描画肛(Are Are)
+    	public void 描画肛(RenderArea Are)
     	{
     		if (膣i肛f)
     		{
@@ -2829,7 +2829,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override void 描画0(Are Are)
+    	public override void 描画0(RenderArea Are)
     	{
     		foreach (挿入処理 item in SubFocus)
     		{
@@ -2848,7 +2848,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override void 描画1(Are Are)
+    	public override void 描画1(RenderArea Are)
     	{
     		if (ハンド挿入.Is膣)
     		{
@@ -2867,7 +2867,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override void 描画2(Are Are)
+    	public override void 描画2(RenderArea Are)
     	{
     		if (射精.表示)
     		{
@@ -2915,7 +2915,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public void StaDraw(Are Are, FPS FPS)
+    	public void StaDraw(RenderArea Are, FPS FPS)
     	{
     		Player.表示ステート更新();
     		Player.ModBox();
@@ -2975,7 +2975,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public void DrawState(Are Are)
+    	public void DrawState(RenderArea Are)
     	{
     		Player.表示ステート更新();
     		Player.ModBox();
@@ -3058,7 +3058,7 @@ namespace SlaveMatrix
     		SensitivityBox = new Tex("Sens", new Vector2D(num + 0.02, 0.08), 0.1, 0.6, 1.99, new Font("MS Gothic", 1f), 0.057, 0, "", Col.White, Col.Transparent, Color.FromArgb(5, Col.DarkMagenta), 100.0);
     	}
 
-    	public void StaminaButtons(Are Are, Med Med, InfoPanel ip)
+    	public void StaminaButtons(RenderArea Are, ModeEventDispatcher Med, InfoPanel ip)
     	{
     		double x = 0.08;
     		double y = 0.1;
@@ -3072,7 +3072,7 @@ namespace SlaveMatrix
     		parT.SizeBase = 0.095;
     		parT.Font = new Font("MS Gothic", 1f);
     		parT.FontSize = 0.07;
-    		parT.SetStringRectOutline(Are.Unit, Are.GD);
+    		parT.SetStringRectOutline(Are.UnitScale, Are.DisplayGraphics);
     		parT.RectSize = new Vector2D(parT.OP[0].ps[1].X, parT.OP[0].ps[2].Y);
     		parT.OP.ScalingY(parT.BasePointBase, 0.9);
     		parT.Closed = true;
@@ -3094,7 +3094,7 @@ namespace SlaveMatrix
     		parT2.SizeBase = 0.095;
     		parT2.Font = new Font("MS Gothic", 1f);
     		parT2.FontSize = 0.07;
-    		parT2.SetStringRectOutline(Are.Unit, Are.GD);
+    		parT2.SetStringRectOutline(Are.UnitScale, Are.DisplayGraphics);
     		parT2.RectSize = new Vector2D(parT2.OP[0].ps[1].X, parT2.OP[0].ps[2].Y);
     		parT2.OP.ScalingY(parT2.BasePointBase, 0.9);
     		parT2.Closed = true;

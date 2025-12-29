@@ -97,7 +97,7 @@ namespace _2DGAMELIB
             gl.ActiveTexture(Silk.NET.OpenGL.GLEnum.Texture0);
     		gl.BindTexture(Silk.NET.OpenGL.GLEnum.Texture2D, texture);
 
-            BitmapData data = bmp.LockBits(new Rectangle(0, 0, bmp.Width, bmp.Height), ImageLockMode.ReadOnly, System.Drawing.Imaging.PixelFormat.Format32bppArgb);
+            BitmapData data = bmp.LockBits(new System.Drawing.Rectangle(0, 0, bmp.Width, bmp.Height), ImageLockMode.ReadOnly, System.Drawing.Imaging.PixelFormat.Format32bppArgb);
             
             gl.TexImage2D(
                 Silk.NET.OpenGL.GLEnum.Texture2D, 

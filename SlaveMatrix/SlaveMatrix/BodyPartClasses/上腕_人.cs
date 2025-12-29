@@ -3443,7 +3443,7 @@ namespace SlaveMatrix
 
     	public JointS 下腕_接続点 => new JointS(本体, X0Y0_上腕, 1);
 
-    	public 上腕_人(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 上腕_人D e)
+    	public 上腕_人(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 上腕_人D e)
     	{
     		上腕_人 上腕_人2 = this;
     		ThisType = GetType();
@@ -3929,7 +3929,7 @@ namespace SlaveMatrix
     		濃度 = e.濃度;
     	}
 
-    	public override void 描画0(Are Are)
+    	public override void 描画0(RenderArea Are)
     	{
     		Are.Draw(X0Y0_筋肉上);
     		Are.Draw(X0Y0_上腕);
@@ -4034,7 +4034,7 @@ namespace SlaveMatrix
     		Are.Draw(X0Y0_植性_欠損_葉1);
     	}
 
-    	public void 鎧描画(Are Are)
+    	public void 鎧描画(RenderArea Are)
     	{
     		Are.Draw(X0Y0_鎧_ベルト_ベルト1);
     		Are.Draw(X0Y0_鎧_ベルト_ベルト2);

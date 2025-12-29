@@ -414,7 +414,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 角2_巻(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 角2_巻D e)
+    	public 角2_巻(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 角2_巻D e)
     	{
     		ThisType = GetType();
     		Dif dif = new Dif(Sta.肢左["角"][3]);
@@ -518,7 +518,7 @@ namespace SlaveMatrix
     		濃度 = e.濃度;
     	}
 
-    	public override void 根描画(Are Are)
+    	public override void 根描画(RenderArea Are)
     	{
     		if (本体.IndexY == 0)
     		{
@@ -543,7 +543,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override void 先描画(Are Are)
+    	public override void 先描画(RenderArea Are)
     	{
     		if (本体.IndexY == 0)
     		{

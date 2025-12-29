@@ -108,7 +108,7 @@ namespace SlaveMatrix
 
     	public JointS 脚_接続点 => new JointS(本体, X0Y0_腿, 0);
 
-    	public 腿_蹄(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 腿_蹄D e)
+    	public 腿_蹄(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 腿_蹄D e)
     	{
     		腿_蹄 腿_蹄2 = this;
     		ThisType = GetType();
@@ -152,14 +152,14 @@ namespace SlaveMatrix
     		{
     			表示 = false;
     		}
-    		if (e.脚_接続.Count > 0)
+    		if (e.Leg_接続.Count > 0)
     		{
     			Ele f;
-    			脚_接続 = e.脚_接続.Select(delegate(EleD g)
+    			Leg_接続 = e.Leg_接続.Select(delegate(EleD g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 腿_蹄2;
-    				f.ConnectionType = ConnectionInfo.腿_蹄_脚_接続;
+    				f.ConnectionType = ConnectionInfo.腿_蹄_Leg_接続;
     				f.接続(腿_蹄2.脚_接続点);
     				return f;
     			}).ToArray();

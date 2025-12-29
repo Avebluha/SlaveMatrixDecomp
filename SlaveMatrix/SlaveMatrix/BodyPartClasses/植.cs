@@ -1160,7 +1160,7 @@ namespace SlaveMatrix
 
     	public JointS 花_接続点 => new JointS(本体, X0Y0_茎, 6);
 
-    	public 植(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 植D e)
+    	public 植(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 植D e)
     	{
     		植 植2 = this;
     		ThisType = GetType();

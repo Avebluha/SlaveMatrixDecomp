@@ -1784,7 +1784,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 下着ボトム_マイクロ(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 下着ボトム_マイクロD e)
+    	public 下着ボトム_マイクロ(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 下着ボトム_マイクロD e)
     	{
     		ThisType = GetType();
     		Dif dif = new Dif(Sta.胴体["下着ボトム"][1]);
@@ -2289,7 +2289,7 @@ namespace SlaveMatrix
     		X0Y4_下地.BasePointBase = X0Y4_下地.BasePointBase.AddY(y);
     	}
 
-    	public override void 描画0(Are Are)
+    	public override void 描画0(RenderArea Are)
     	{
     		switch (本体.IndexY)
     		{
@@ -2316,7 +2316,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override void 描画1(Are Are)
+    	public override void 描画1(RenderArea Are)
     	{
     		switch (本体.IndexY)
     		{

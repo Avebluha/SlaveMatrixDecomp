@@ -1142,7 +1142,7 @@ namespace SlaveMatrix
 
     public class SubInfo
     {
-        private Med Med;
+        private ModeEventDispatcher Med;
 
         private InfoPanel ip;
 
@@ -1162,7 +1162,7 @@ namespace SlaveMatrix
 
         private string[] 日数進行;
 
-        public SubInfo(Med Med, InfoPanel ip)
+        public SubInfo(ModeEventDispatcher Med, InfoPanel ip)
         {
             this.Med = Med;
             this.ip = ip;

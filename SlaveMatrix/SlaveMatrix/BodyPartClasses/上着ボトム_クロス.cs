@@ -642,7 +642,7 @@ namespace SlaveMatrix
 
     	public JointS 上着ボトム後_接続点 => new JointS(本体, X0Y0_中_下地, 4);
 
-    	public 上着ボトム_クロス(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 上着ボトム_クロスD e)
+    	public 上着ボトム_クロス(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 上着ボトム_クロスD e)
     	{
     		上着ボトム_クロス 上着ボトム_クロス2 = this;
     		ThisType = GetType();

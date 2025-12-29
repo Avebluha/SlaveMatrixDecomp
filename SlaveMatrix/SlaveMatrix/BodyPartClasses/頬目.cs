@@ -231,7 +231,7 @@ namespace SlaveMatrix
 
     	public JointS 瞼_接続点 => new JointS(本体, X0Y0_白目, 0);
 
-    	public 頬目(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 頬目D e)
+    	public 頬目(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 頬目D e)
     	{
     		頬目 頬目2 = this;
     		ThisType = GetType();

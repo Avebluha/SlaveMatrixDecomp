@@ -10,11 +10,11 @@ namespace SlaveMatrix
 
     	public Vector2D PositionCont = Dat.Vec2DZero;
 
-    	public Are Lay;
+    	public RenderArea Lay;
 
     	public bool Updatef = true;
 
-    	public Action<Are> 描画処理;
+    	public Action<RenderArea> 描画処理;
 
     	public HashSet<Ele> ElesH;
 
@@ -36,13 +36,13 @@ namespace SlaveMatrix
     		return false;
     	}
 
-    	public EleI(Med Med)
+    	public EleI(ModeEventDispatcher Med)
     	{
-    		Lay = new Are(Med.Unit, Med.Base.XRatio, Med.Base.YRatio, Med.Base.Size + 0.0025, Med.DisQuality, Med.HitAccuracy);
+    		Lay = new RenderArea(Med.Unit, Med.Base.XRatio, Med.Base.YRatio, Med.Base.Size + 0.0025, Med.DisQuality, Med.HitAccuracy);
     		ElesH = new HashSet<Ele>();
     	}
 
-    	public void 描画(Are Are)
+    	public void 描画(RenderArea Are)
     	{
     		Vec.Add(ref Position, ref PositionCont, out Lay.Position);
     		Are.Draw(Lay);

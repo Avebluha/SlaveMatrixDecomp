@@ -268,7 +268,7 @@ namespace SlaveMatrix
 
     	public JointS 下腕_接続点 => new JointS(本体, X0Y0_上腕, 1);
 
-    	public 上腕_獣(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 上腕_獣D e)
+    	public 上腕_獣(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 上腕_獣D e)
     	{
     		上腕_獣 上腕_獣2 = this;
     		ThisType = GetType();

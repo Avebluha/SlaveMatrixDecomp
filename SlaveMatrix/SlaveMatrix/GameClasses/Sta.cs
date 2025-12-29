@@ -16,9 +16,9 @@ namespace SlaveMatrix
 {
     public static class Sta
     {
-    	public static Obj 胴体;
+    	public static Obj 胴体; //胴体
 
-    	public static Obj 肩左;
+        public static Obj 肩左;
 
     	public static Obj 腕左;
 
@@ -50,9 +50,9 @@ namespace SlaveMatrix
 
     	public static Type EleDt;
 
-    	public static Type 胸t;
+    	public static Type Chestt;
 
-    	public static Type 肩t;
+    	public static Type Shouldert;
 
     	public static Type 胴t;
 
@@ -88,7 +88,7 @@ namespace SlaveMatrix
 
     	public static Type 耳_獣Dt;
 
-    	public static Type 肩Dt;
+    	public static Type ShoulderDt;
 
     	public static Type 角1_一Dt;
 
@@ -294,15 +294,15 @@ namespace SlaveMatrix
 
     	public static Type 腿_竜Dt;
 
-    	public static Type 脚_人Dt;
+    	public static Type Leg_人Dt;
 
-    	public static Type 脚_獣Dt;
+    	public static Type Leg_獣Dt;
 
-    	public static Type 脚_蹄Dt;
+    	public static Type Leg_蹄Dt;
 
-    	public static Type 脚_鳥Dt;
+    	public static Type Leg_鳥Dt;
 
-    	public static Type 脚_竜Dt;
+    	public static Type Leg_竜Dt;
 
     	public static Type 足_人Dt;
 
@@ -759,7 +759,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public static void 描画0(this IEnumerable<Ele> es, Are Are)
+    	public static void 描画0(this IEnumerable<Ele> es, RenderArea Are)
     	{
     		foreach (Ele e in es)
     		{
@@ -767,7 +767,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public static void 描画1(this IEnumerable<Ele> es, Are Are)
+    	public static void 描画1(this IEnumerable<Ele> es, RenderArea Are)
     	{
     		foreach (Ele e in es)
     		{
@@ -1084,12 +1084,17 @@ namespace SlaveMatrix
 
     	static Sta()
     	{
-    		胴体 = Resources.胴体.ObjLoad();
+            var obj = Resources.胴体.ObjLoad();
+            obj.MigrateKeys();
+            胴体 = obj;
+
     		//胴体.SaveExMod("C:\\Users\\dave\\Documents\\胴体");
     		//Ser.ToJson(胴体, "C:\\Users\\dave\\Documents\\胴体.json");
     		//胴体 = Ser.UnJson<Obj>("C:\\Users\\dave\\Documents\\胴体.json");
 
-    		肩左 = Resources.肩左.ObjLoad();
+            obj = Resources.肩左.ObjLoad();
+            obj.MigrateKeys();
+            肩左 = obj;
             //肩左.SaveExMod("C:\\Users\\dave\\Documents\\肩左");
             //Ser.ToJson(肩左, "C:\\Users\\dave\\Documents\\肩左.json");
             //肩左 = Ser.UnJson<Obj>("C:\\Users\\dave\\Documents\\肩左.json");
@@ -1099,8 +1104,9 @@ namespace SlaveMatrix
             //Ser.ToJson(腕左, "C:\\Users\\dave\\Documents\\腕左.json");
             //腕左 = Ser.UnJson<Obj>("C:\\Users\\dave\\Documents\\腕左.json");
 
-
-            脚左 = Resources.脚左.ObjLoad();
+            obj = Resources.脚左.ObjLoad();
+            obj.MigrateKeys();
+            脚左 = obj;
             //脚左.SaveExMod("C:\\Users\\dave\\Documents\\脚左");
             //Ser.ToJson(脚左, "C:\\Users\\dave\\Documents\\脚左.json");
             //脚左 = Ser.UnJson<Obj>("C:\\Users\\dave\\Documents\\脚左.json");
@@ -1158,26 +1164,26 @@ namespace SlaveMatrix
             MaxAre = 0.0584246154149664;
     		Elet = typeof(Ele);
     		EleDt = typeof(EleD);
-    		胸t = typeof(胸);
-    		肩t = typeof(肩);
-    		胴t = typeof(胴);
-    		腰t = typeof(腰);
+    		Chestt = typeof(Chest);
+    		Shouldert = typeof(Shoulder);
+    		胴t = typeof(Torso);
+    		腰t = typeof(Waist);
     		尾_鯨t = typeof(尾_鯨);
     		上腕_人t = typeof(上腕_人);
     		上腕_鳥t = typeof(上腕_鳥);
     		長物_鯨t = typeof(長物_鯨);
-    		後髪0_ジグDt = typeof(後髪0_ジグD);
-    		後髪0_ハネDt = typeof(後髪0_ハネD);
-    		後髪0_パツDt = typeof(後髪0_パツD);
-    		後髪0_カルDt = typeof(後髪0_カルD);
-    		後髪0_肢系Dt = typeof(後髪0_肢系D);
+    		後髪0_ジグDt = typeof(BackHair0_ジグD);
+    		後髪0_ハネDt = typeof(BackHair0_ハネD);
+    		後髪0_パツDt = typeof(BackHair0_パツD);
+    		後髪0_カルDt = typeof(BackHair0_カルD);
+    		後髪0_肢系Dt = typeof(BackHair0_肢系D);
     		耳_人Dt = typeof(耳_人D);
     		耳_尖Dt = typeof(耳_尖D);
     		耳_長Dt = typeof(耳_長D);
     		耳_鰭Dt = typeof(耳_鰭D);
     		耳_羽Dt = typeof(耳_羽D);
     		耳_獣Dt = typeof(耳_獣D);
-    		肩Dt = typeof(肩D);
+    		ShoulderDt = typeof(ShoulderD);
     		角1_一Dt = typeof(角1_一D);
     		角1_鬼Dt = typeof(角1_鬼D);
     		角1_虫Dt = typeof(角1_虫D);
@@ -1280,11 +1286,11 @@ namespace SlaveMatrix
     		腿_蹄Dt = typeof(腿_蹄D);
     		腿_鳥Dt = typeof(腿_鳥D);
     		腿_竜Dt = typeof(腿_竜D);
-    		脚_人Dt = typeof(脚_人D);
-    		脚_獣Dt = typeof(脚_獣D);
-    		脚_蹄Dt = typeof(脚_蹄D);
-    		脚_鳥Dt = typeof(脚_鳥D);
-    		脚_竜Dt = typeof(脚_竜D);
+    		Leg_人Dt = typeof(Leg_人D);
+    		Leg_獣Dt = typeof(Leg_獣D);
+    		Leg_蹄Dt = typeof(Leg_蹄D);
+    		Leg_鳥Dt = typeof(Leg_鳥D);
+    		Leg_竜Dt = typeof(Leg_竜D);
     		足_人Dt = typeof(足_人D);
     		足_獣Dt = typeof(足_獣D);
     		足_馬Dt = typeof(足_馬D);
@@ -1292,8 +1298,8 @@ namespace SlaveMatrix
     		足_鳥Dt = typeof(足_鳥D);
     		足_竜Dt = typeof(足_竜D);
     		四足脇Dt = typeof(四足脇D);
-    		胴_蛇Dt = typeof(胴_蛇D);
-    		胴_蟲Dt = typeof(胴_蟲D);
+    		胴_蛇Dt = typeof(Torso_蛇D);
+    		胴_蟲Dt = typeof(Torso_蟲D);
     		大顎基Dt = typeof(大顎基D);
     		鳳凰Dt = typeof(鳳凰D);
     		大顎Dt = typeof(大顎D);
@@ -1313,35 +1319,35 @@ namespace SlaveMatrix
     		左右無し = new HashSet<ConnectionInfo>(new ConnectionInfo[67]
     		{
     			ConnectionInfo.none,
-    			ConnectionInfo.頭_基髪_接続,
-    			ConnectionInfo.頭_鼻_接続,
-    			ConnectionInfo.頭_口_接続,
-    			ConnectionInfo.頭_額_接続,
-    			ConnectionInfo.頭_鼻肌_接続,
-    			ConnectionInfo.頭_単眼目_接続,
-    			ConnectionInfo.頭_単眼眉_接続,
-    			ConnectionInfo.頭_大顎基_接続,
-    			ConnectionInfo.頭_顔面_接続,
-    			ConnectionInfo.頭_頭頂_接続,
+    			ConnectionInfo.Head_基髪_接続,
+    			ConnectionInfo.Head_鼻_接続,
+    			ConnectionInfo.Head_口_接続,
+    			ConnectionInfo.Head_額_接続,
+    			ConnectionInfo.Head_鼻肌_接続,
+    			ConnectionInfo.Head_単眼目_接続,
+    			ConnectionInfo.Head_単眼眉_接続,
+    			ConnectionInfo.Head_大顎基_接続,
+    			ConnectionInfo.Head_顔面_接続,
+    			ConnectionInfo.Head_頭頂_接続,
     			ConnectionInfo.基髪_前髪_接続,
     			ConnectionInfo.基髪_後髪_接続,
-    			ConnectionInfo.後髪0_肢系_中央_接続,
+    			ConnectionInfo.BackHair0_肢系_中央_接続,
     			ConnectionInfo.単目_瞼_接続,
     			ConnectionInfo.縦目_瞼_接続,
     			ConnectionInfo.吹出し_吹出し_接続,
-    			ConnectionInfo.首_頭_接続,
-    			ConnectionInfo.胸_首_接続,
-    			ConnectionInfo.胸_肌_接続,
-    			ConnectionInfo.胸_背中_接続,
-    			ConnectionInfo.胴_胸_接続,
-    			ConnectionInfo.胴_肌_接続,
-    			ConnectionInfo.腰_胴_接続,
-    			ConnectionInfo.腰_肌_接続,
-    			ConnectionInfo.腰_膣基_接続,
-    			ConnectionInfo.腰_肛門_接続,
-    			ConnectionInfo.腰_尾_接続,
-    			ConnectionInfo.腰_半身_接続,
-    			ConnectionInfo.腰_上着_接続,
+    			ConnectionInfo.Neck_Head_接続,
+    			ConnectionInfo.Chest_Neck_接続,
+    			ConnectionInfo.Chest_肌_接続,
+    			ConnectionInfo.Chest_背中_接続,
+    			ConnectionInfo.Torso_Chest_接続,
+    			ConnectionInfo.Torso_肌_接続,
+    			ConnectionInfo.Waist_Torso_接続,
+    			ConnectionInfo.Waist_肌_接続,
+    			ConnectionInfo.Waist_膣基_接続,
+    			ConnectionInfo.Waist_肛門_接続,
+    			ConnectionInfo.Waist_尾_接続,
+    			ConnectionInfo.Waist_半身_接続,
+    			ConnectionInfo.Waist_上着_接続,
     			ConnectionInfo.ボテ腹_人_腹板_接続,
     			ConnectionInfo.ボテ腹_獣_腹板_接続,
     			ConnectionInfo.肛門_人_肛門精液_接続,
@@ -1360,9 +1366,9 @@ namespace SlaveMatrix
     			ConnectionInfo.尾_鯨_尾先_接続,
     			ConnectionInfo.長物_魚_尾_接続,
     			ConnectionInfo.長物_鯨_尾_接続,
-    			ConnectionInfo.長物_蛇_胴_接続,
-    			ConnectionInfo.長物_蟲_胴_接続,
-    			ConnectionInfo.四足胸_胴_接続,
+    			ConnectionInfo.長物_蛇_Torso_接続,
+    			ConnectionInfo.長物_蟲_Torso_接続,
+    			ConnectionInfo.四足胸_Torso_接続,
     			ConnectionInfo.四足胸_肌_接続,
     			ConnectionInfo.四足胸_背中_接続,
     			ConnectionInfo.四足胴_腰_接続,
@@ -1376,8 +1382,8 @@ namespace SlaveMatrix
     			ConnectionInfo.多足_蜘_尾_接続,
     			ConnectionInfo.多足_蠍_尾_接続,
     			ConnectionInfo.単足_植_根中央_接続,
-    			ConnectionInfo.胴_蛇_胴_接続,
-    			ConnectionInfo.胴_蟲_胴_接続,
+    			ConnectionInfo.Torso_蛇_Torso_接続,
+    			ConnectionInfo.Torso_蟲_Torso_接続,
     			ConnectionInfo.ペニス_尿道_接続
     		});
     		接続情報t = typeof(ConnectionInfo);
@@ -1434,7 +1440,13 @@ namespace SlaveMatrix
     	public static string[] JSDPaths()
     	{
     		JsonSavePath = Path.Combine(CurrentDirectory, "save");
-    		IEnumerable<string> source = Directory.EnumerateFiles(JsonSavePath);
+
+            if (!Directory.Exists(JsonSavePath))
+            {
+                Directory.CreateDirectory(JsonSavePath);
+            }
+
+            IEnumerable<string> source = Directory.EnumerateFiles(JsonSavePath);
     		return new string[10]
     		{
     			source.FirstOrDefault((string e) => e.StartsWith(Path.Combine(JsonSavePath, "0： "))),

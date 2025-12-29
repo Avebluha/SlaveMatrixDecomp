@@ -21,9 +21,9 @@ namespace SlaveMatrix
     //three subclasses: one for bukkake, kiss marks, and whip marks
     public class Stamp
     {
-    	public Med Med;
+    	public ModeEventDispatcher Med;
 
-    	public Are Are;
+    	public RenderArea Are;
 
     	public Cha Cha;
 
@@ -43,7 +43,7 @@ namespace SlaveMatrix
 
     	protected sep sep;
 
-    	public virtual void Draw(Are Are)
+    	public virtual void Draw(RenderArea Are)
     	{
     	}
 
@@ -55,7 +55,7 @@ namespace SlaveMatrix
     	{
     	}
 
-    	public Stamp(Med Med, Are Are, Cha Cha, Bod Bod, EleD EleD)
+    	public Stamp(ModeEventDispatcher Med, RenderArea Are, Cha Cha, Bod Bod, EleD EleD)
     	{
     		this.Med = Med;
     		this.Are = Are;
@@ -81,9 +81,9 @@ namespace SlaveMatrix
     		sta.Clear();
     	}
 
-    	public void 脚Clear()
+    	public void LegClear()
     	{
-    		sep[] array = sta.Where((sep e) => e.Ele is 腿_人 || e.Ele is 脚_人 || e.Ele is 足_人).ToArray();
+    		sep[] array = sta.Where((sep e) => e.Ele is 腿_人 || e.Ele is Leg_人 || e.Ele is 足_人).ToArray();
     		for (int i = 0; i < array.Length; i++)
     		{
     			sep item = array[i];
@@ -96,7 +96,7 @@ namespace SlaveMatrix
     	{
     		if (e != null && !(e is 性器) && !(e is 肛門))
     		{
-    			return !(e is 首);
+    			return !(e is Neck);
     		}
     		return false;
     	}
@@ -105,7 +105,7 @@ namespace SlaveMatrix
     	{
     		if (e != null && !(e is 手_人) && !(e is 性器) && !(e is 肛門))
     		{
-    			return !(e is 首);
+    			return !(e is Neck);
     		}
     		return false;
     	}

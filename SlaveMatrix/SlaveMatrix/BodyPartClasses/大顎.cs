@@ -426,7 +426,7 @@ namespace SlaveMatrix
 
     	public JointS 鎖2_接続点 => new JointS(本体, X0Y0_輪_金具右, 0);
 
-    	public 大顎(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 大顎D e)
+    	public 大顎(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 大顎D e)
     	{
     		ThisType = GetType();
     		Dif dif = new Dif(Sta.肢左["虫顎"][1]);
@@ -543,7 +543,7 @@ namespace SlaveMatrix
     		本体.JoinPAall();
     	}
 
-    	public override void 描画0(Are Are)
+    	public override void 描画0(RenderArea Are)
     	{
     		本体.Draw(Are);
     		if (!欠損_)

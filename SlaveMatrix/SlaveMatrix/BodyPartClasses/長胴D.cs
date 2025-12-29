@@ -10,7 +10,7 @@ namespace SlaveMatrix
 
     	public List<EleD> 右_接続 = new List<EleD>();
 
-    	public List<EleD> 胴_接続 = new List<EleD>();
+    	public List<EleD> Torso_接続 = new List<EleD>();
 
     	public virtual void 左接続(EleD e)
     	{
@@ -20,7 +20,7 @@ namespace SlaveMatrix
     	{
     	}
 
-    	public virtual void 胴接続(EleD e)
+    	public virtual void Torso接続(EleD e)
     	{
     	}
     }

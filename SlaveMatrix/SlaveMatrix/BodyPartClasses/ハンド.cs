@@ -3795,7 +3795,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public ハンド(double DisUnit, 配色指定 配色指定, 主人公配色 体配色, Med Med, ハンドD e)
+    	public ハンド(double DisUnit, 配色指定 配色指定, 主人公配色 体配色, ModeEventDispatcher Med, ハンドD e)
     	{
     		ThisType = GetType();
     		本体 = new Difs(Sta.カーソル["ハンド"]);
@@ -5226,7 +5226,7 @@ namespace SlaveMatrix
     		本体.JoinPAall();
     	}
 
-    	public override void 描画0(Are Are)
+    	public override void 描画0(RenderArea Are)
     	{
     		switch (本体.IndexX)
     		{
@@ -5784,7 +5784,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override void 描画1(Are Are)
+    	public override void 描画1(RenderArea Are)
     	{
     		switch (本体.IndexX)
     		{

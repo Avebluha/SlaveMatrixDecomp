@@ -42,7 +42,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public CM(Med Med, TrainingUI 調教UI, Ele Ele)
+    	public CM(ModeEventDispatcher Med, TrainingUI 調教UI, Ele Ele)
     	{
     		this.調教UI = 調教UI;
     		this.Ele = Ele;
@@ -66,7 +66,7 @@ namespace SlaveMatrix
     		bp = default(Vector2D);
     	}
 
-    	public void 描画0(Are Are)
+    	public void 描画0(RenderArea Are)
     	{
     		if (Show && Under && 描画Show)
     		{
@@ -77,7 +77,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public void 描画1(Are Are)
+    	public void 描画1(RenderArea Are)
     	{
     		if (Show && Under && 描画Show)
     		{
@@ -86,7 +86,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public void 描画0s(Are Are)
+    	public void 描画0s(RenderArea Are)
     	{
     		if (Show && Under && 描画Show)
     		{
@@ -96,7 +96,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public void 描画1s(Are Are)
+    	public void 描画1s(RenderArea Are)
     	{
     		if (Show && Under && 描画Show)
     		{
@@ -104,7 +104,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public void 待機描画(Are Are)
+    	public void 待機描画(RenderArea Are)
     	{
     		if (Show && !Under && StaShow)
     		{
@@ -115,7 +115,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public void Draw(Are Are)
+    	public void Draw(RenderArea Are)
     	{
     		if (Show && !Under && DraShow)
     		{
@@ -128,7 +128,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public void Draws(Are Are)
+    	public void Draws(RenderArea Are)
     	{
     		if (Show && !Under && DraShow)
     		{

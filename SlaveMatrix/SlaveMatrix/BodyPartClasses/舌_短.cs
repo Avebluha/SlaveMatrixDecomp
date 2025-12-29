@@ -171,7 +171,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 舌_短(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 舌_短D e)
+    	public 舌_短(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 舌_短D e)
     	{
     		ThisType = GetType();
     		Dif dif = new Dif();

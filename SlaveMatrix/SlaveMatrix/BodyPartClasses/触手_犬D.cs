@@ -575,7 +575,7 @@ namespace SlaveMatrix
 
     	public bool 鎖表示;
 
-    	public List<EleD> 頭_接続 = new List<EleD>();
+    	public List<EleD> Head_接続 = new List<EleD>();
 
     	public List<EleD> 上腕左_接続 = new List<EleD>();
 
@@ -596,9 +596,9 @@ namespace SlaveMatrix
 
     	public void 頭接続(EleD e)
     	{
-    		頭_接続.Add(e);
+    		Head_接続.Add(e);
     		e.Par = this;
-    		e.接続情報 = ConnectionInfo.触手_犬_頭_接続;
+    		e.接続情報 = ConnectionInfo.触手_犬_Head_接続;
     	}
 
     	public void 上腕左接続(EleD e)
@@ -643,7 +643,7 @@ namespace SlaveMatrix
     		e.接続情報 = ConnectionInfo.触手_犬_手右_接続;
     	}
 
-    	public override Ele GetEle(double DisUnit, Med Med, 体配色 体配色)
+    	public override Ele GetEle(double DisUnit, ModeEventDispatcher Med, 体配色 体配色)
     	{
     		return new 触手_犬(DisUnit, 配色指定, 体配色, Med, this);
     	}

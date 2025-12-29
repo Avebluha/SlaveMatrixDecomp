@@ -58,7 +58,7 @@ namespace SlaveMatrix
 
     	public void くぱ()
     	{
-    		調教UI.擬音キュー.Enqueue(delegate(Are a)
+    		調教UI.擬音キュー.Enqueue(delegate(RenderArea a)
     		{
     			調教UI.擬音.Sound(a, Bod.膣口位置.GetAreaPoint(0.01), Sta.くぱ.GetVal(Player.変化V_膣, Player.変化V_固有値乱数), new Font("MS Gothic", 1f), Color.DeepPink.S(Player.変化V_膣.Clamp(0.5, 1.0)), 0.2 + 0.2 * RNG.XS.NextDouble() * Player.変化V_膣, b: true);
     		});

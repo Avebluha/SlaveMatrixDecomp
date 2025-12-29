@@ -329,7 +329,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public マウス(double DisUnit, 配色指定 配色指定, 主人公配色 体配色, Med Med, マウスD e)
+    	public マウス(double DisUnit, 配色指定 配色指定, 主人公配色 体配色, ModeEventDispatcher Med, マウスD e)
     	{
     		ThisType = GetType();
     		本体 = new Difs(Sta.カーソル["マウス"]);
@@ -466,7 +466,7 @@ namespace SlaveMatrix
     		本体.JoinPAall();
     	}
 
-    	public override void 描画0(Are Are)
+    	public override void 描画0(RenderArea Are)
     	{
     		switch (本体.IndexX)
     		{
@@ -516,7 +516,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override void 描画1(Are Are)
+    	public override void 描画1(RenderArea Are)
     	{
     		switch (本体.IndexX)
     		{

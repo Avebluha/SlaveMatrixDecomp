@@ -100,7 +100,7 @@ namespace SlaveMatrix
 
     	public JointS 軟体内右_接続点 => new JointS(本体, X0Y0_胴, 2);
 
-    	public 多足_蛸(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 多足_蛸D e)
+    	public 多足_蛸(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 多足_蛸D e)
     	{
     		多足_蛸 多足_蛸2 = this;
     		ThisType = GetType();
@@ -111,7 +111,7 @@ namespace SlaveMatrix
     		本体.Tag = dif.Tag;
     		本体.Add(dif);
     		Pars pars = 本体[0][0];
-    		X0Y0_胴 = pars["胴"].ToPar();
+    		X0Y0_胴 = pars["Torso"].ToPar();
     		本体.SetJoints();
     		接続根 = new JointD(本体);
     		右 = e.右;

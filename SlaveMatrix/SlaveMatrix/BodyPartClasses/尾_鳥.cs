@@ -598,7 +598,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 尾_鳥(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 尾_鳥D e)
+    	public 尾_鳥(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 尾_鳥D e)
     	{
     		ThisType = GetType();
     		Dif dif = new Dif();

@@ -400,7 +400,7 @@ namespace SlaveMatrix
 
     	public JointS 下腕_接続点 => new JointS(本体, X0Y0_鳥翼上腕, 0);
 
-    	public 上腕_鳥(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 上腕_鳥D e)
+    	public 上腕_鳥(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 上腕_鳥D e)
     	{
     		上腕_鳥 上腕_鳥2 = this;
     		ThisType = GetType();
@@ -506,7 +506,7 @@ namespace SlaveMatrix
     		本体.JoinPAall();
     	}
 
-    	public override void 描画0(Are Are)
+    	public override void 描画0(RenderArea Are)
     	{
     		Are.Draw(X0Y0_風切羽_羽3);
     		Are.Draw(X0Y0_風切羽_羽2);

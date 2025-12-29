@@ -787,7 +787,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 口_通常(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 口_通常D e)
+    	public 口_通常(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 口_通常D e)
     	{
     		ThisType = GetType();
     		Dif dif = new Dif(Sta.胴体["口"][0]);

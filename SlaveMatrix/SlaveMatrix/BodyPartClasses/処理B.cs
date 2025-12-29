@@ -6,9 +6,9 @@ namespace SlaveMatrix
     {
     	public TrainingUI 調教UI;
 
-    	public Med Med;
+    	public ModeEventDispatcher Med;
 
-    	public Are Are;
+    	public RenderArea Are;
 
     	public Cha Cha;
 

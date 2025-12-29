@@ -403,7 +403,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 紅潮(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 紅潮D e)
+    	public 紅潮(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 紅潮D e)
     	{
     		ThisType = GetType();
     		本体 = new Difs(Sta.胴体["紅潮"]);

@@ -369,7 +369,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 上着ボトム_前掛け(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 上着ボトム_前掛けD e)
+    	public 上着ボトム_前掛け(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 上着ボトム_前掛けD e)
     	{
     		ThisType = GetType();
     		Dif dif = new Dif(Sta.胴体["上着ボトム前"][1]);
@@ -472,7 +472,7 @@ namespace SlaveMatrix
     		尺度YB = 0.95;
     	}
 
-    	public override void 描画0(Are Are)
+    	public override void 描画0(RenderArea Are)
     	{
     		if (本体.IndexY == 0)
     		{
@@ -493,7 +493,7 @@ namespace SlaveMatrix
     		Are.Draw(X0Y1_縁前_縁中);
     	}
 
-    	public void 前(Are Are)
+    	public void 前(RenderArea Are)
     	{
     		if (本体.IndexY == 0)
     		{

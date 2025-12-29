@@ -18,9 +18,9 @@ namespace SlaveMatrix
     {
     	private HashSet<string> 汗対象 = new HashSet<string>
     	{
-    		Sta.胸t.ToString(),
+    		Sta.Chestt.ToString(),
     		Sta.胴t.ToString(),
-    		Sta.肩t.ToString(),
+    		Sta.Shouldert.ToString(),
     		Sta.腰t.ToString()
     	};
 
@@ -42,7 +42,7 @@ namespace SlaveMatrix
 
     	private Vector2D tp;
 
-    	public void Draw(Are Are)
+    	public void Draw(RenderArea Are)
     	{
     		if (!汗かき.Run && !汗ひき.Run)
     		{
@@ -70,7 +70,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public Sweat(Med Med, Are Are, Cha Cha, Mots Mots)
+    	public Sweat(ModeEventDispatcher Med, RenderArea Are, Cha Cha, Mots Mots)
     	{
     		Ele[] es = null;
     		Ele n = null;
@@ -216,7 +216,7 @@ namespace SlaveMatrix
     			for (int i = 0; i < ps.Length; i++)
     			{
     				_ = ref ps[i];
-    				汗 = new 汗(Are.DisUnit, 配色指定.N0, Cha.配色, Med, e2);
+    				汗 = new 汗(Are.DisplayUnitScale, 配色指定.N0, Cha.配色, Med, e2);
     				汗.SetHitFalse();
     				汗.濃度 = ((RNG.XS.NextDouble() < 0.2) ? 1.0 : 0.0);
     				位置.Add(num switch

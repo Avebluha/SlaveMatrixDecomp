@@ -7278,7 +7278,7 @@ namespace SlaveMatrix
 
     	public JointS 鎖4_接続点 => new JointS(本体, X0Y0_輪2_金具右, 0);
 
-    	public 触手_軟(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 触手_軟D e)
+    	public 触手_軟(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 触手_軟D e)
     	{
     		ThisType = GetType();
     		Dif dif = new Dif();
@@ -8421,7 +8421,7 @@ namespace SlaveMatrix
     		節1_吸盤4_表示 = false;
     	}
 
-    	public override void 描画0(Are Are)
+    	public override void 描画0(RenderArea Are)
     	{
     		Are.Draw(X0Y0_節1_節);
     		Are.Draw(X0Y0_節1_紋柄1);

@@ -4622,7 +4622,7 @@ namespace SlaveMatrix
 
     	public JointS 鎖2_接続点 => new JointS(本体, X0Y0_腕輪_金具右, 0);
 
-    	public 下腕_人(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 下腕_人D e)
+    	public 下腕_人(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 下腕_人D e)
     	{
     		下腕_人 下腕_人2 = this;
     		ThisType = GetType();
@@ -5296,7 +5296,7 @@ namespace SlaveMatrix
     		鎖1.Dispose();
     	}
 
-    	public override void 描画0(Are Are)
+    	public override void 描画0(RenderArea Are)
     	{
     		Are.Draw(X0Y0_下腕);
     		Are.Draw(X0Y0_筋肉_筋肉下);
@@ -5316,7 +5316,7 @@ namespace SlaveMatrix
     		Are.Draw(X0Y0_竜性1_手首_鱗1);
     	}
 
-    	public void 外腕描画(Are Are)
+    	public void 外腕描画(RenderArea Are)
     	{
     		Are.Draw(X0Y0_植性1_通常_花弁_花弁);
     		Are.Draw(X0Y0_植性1_通常_花弁_影_花弁影1);

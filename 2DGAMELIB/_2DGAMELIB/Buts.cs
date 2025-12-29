@@ -49,7 +49,7 @@ namespace _2DGAMELIB
     		}
     	}
 
-    	public void SetHitColor(Med Med)
+    	public void SetHitColor(ModeEventDispatcher Med)
     	{
     		foreach (But item in EnumBut)
     		{
@@ -57,7 +57,7 @@ namespace _2DGAMELIB
     		}
     	}
 
-    	public void Draw(Are Are)
+    	public void Draw(RenderArea Are)
     	{
     		foreach (But value in buts.Values)
     		{

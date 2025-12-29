@@ -907,7 +907,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 花_薔(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 花_薔D e)
+    	public 花_薔(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 花_薔D e)
     	{
     		ThisType = GetType();
     		Pars pars = new Pars();

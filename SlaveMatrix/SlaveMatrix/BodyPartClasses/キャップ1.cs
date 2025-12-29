@@ -118,7 +118,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public キャップ1(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, キャップ1D e)
+    	public キャップ1(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, キャップ1D e)
     	{
     		ThisType = GetType();
     		本体 = new Difs(Sta.性器付["キャップ中"]);

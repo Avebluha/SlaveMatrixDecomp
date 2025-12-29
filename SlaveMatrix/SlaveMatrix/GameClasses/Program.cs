@@ -18,12 +18,12 @@ namespace SlaveMatrix
                 percent = 47.0;
             }
 
-            Med med = new Med
+            ModeEventDispatcher med = new ModeEventDispatcher
     		{
     			UITitle = GameText.スレイブマトリクス,
     			Unit = Sta.HighQuality ? 2203.0 : 1101.5,
     			ShowFPS = Sta.ShowFPS,
-    			Base = new Rect(4.0, 3.0, percent / 100.0),
+    			Base = new Rectangle(4.0, 3.0, percent / 100.0),
                 DisQuality = 1.0,
     			HitAccuracy = 0.3
             };

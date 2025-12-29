@@ -344,7 +344,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 噴乳(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 噴乳D e)
+    	public 噴乳(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 噴乳D e)
     	{
     		ThisType = GetType();
     		本体 = new Difs(Sta.胴体["噴乳左"]);

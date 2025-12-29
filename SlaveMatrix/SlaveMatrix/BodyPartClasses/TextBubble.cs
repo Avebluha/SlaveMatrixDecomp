@@ -41,9 +41,9 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public TextBubble(Are Are, bool 右, Font Font, double TextSize, string Text, Color TextColor, Color ShadColor, Color BackColor, double Speed, bool Dis, Color FeedColor, Action<Tex> Action)
+    	public TextBubble(RenderArea Are, bool 右, Font Font, double TextSize, string Text, Color TextColor, Color ShadColor, Color BackColor, double Speed, bool Dis, Color FeedColor, Action<Tex> Action)
     	{
-    		吹出し = new 吹出し(Are.DisUnit);
+    		吹出し = new 吹出し(Are.DisplayUnitScale);
     		吹出し.SetHitFalse();
     		吹出し.右 = 右;
     		吹出し.吹出しCD.色 = new Color2(ref BackColor, ref Col.Empty);
@@ -101,9 +101,9 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public TextBubble(Are Are, bool 右, Font Font, double TextSize, string Text, Color TextColor, Color ShadColor, Color BackColor, double Speed, bool Dis)
+    	public TextBubble(RenderArea Are, bool 右, Font Font, double TextSize, string Text, Color TextColor, Color ShadColor, Color BackColor, double Speed, bool Dis)
     	{
-    		吹出し = new 吹出し(Are.DisUnit);
+    		吹出し = new 吹出し(Are.DisplayUnitScale);
     		吹出し.SetHitFalse();
     		吹出し.右 = 右;
     		吹出し.吹出しCD.色 = new Color2(ref BackColor, ref Col.Empty);
@@ -132,11 +132,23 @@ namespace SlaveMatrix
     				},
     				Runing = delegate(Mot m)
     				{
-    					v = m.Value.Inverse();
-    					吹出し.X0Y0_吹出し.PenColor = Color.FromArgb((int)((double)pa * v), 吹出し.X0Y0_吹出し.PenColor);
-    					吹出し.X0Y0_吹出し.BrushColor = Color.FromArgb((int)((double)ba * v), 吹出し.X0Y0_吹出し.BrushColor);
-    					Tex.ParT.TextColor = Color.FromArgb((int)((double)ta * v), Tex.ParT.TextColor);
-    					Tex.ParT.ShadColor = Color.FromArgb((int)((double)sa * v), Tex.ParT.ShadColor);
+                        //After full training slave if i tried to train again game crahes here :3
+                        v = (m.Value >= 0) ? m.Value : m.Value.Inverse();
+
+                        var penAlpha = (int)((double)pa * v);
+                        var brushAlpha = (int)((double)ba * v);
+                        var textAlpha = (int)((double)ta * v);
+                        var shadeAlpha = (int)((double)sa * v);
+
+                        var correctPenAlpha = (penAlpha > 255) ? 255 : penAlpha;
+                        var correctBrushAlpha = (brushAlpha > 255) ? 255 : brushAlpha;
+                        var correctTextAlpha = (textAlpha > 255) ? 255 : textAlpha;
+                        var correctShadeAlpha = (shadeAlpha > 255) ? 255 : shadeAlpha; 
+
+                        吹出し.X0Y0_吹出し.PenColor = Color.FromArgb(correctPenAlpha, 吹出し.X0Y0_吹出し.PenColor);
+    					吹出し.X0Y0_吹出し.BrushColor = Color.FromArgb(correctBrushAlpha, 吹出し.X0Y0_吹出し.BrushColor);
+    					Tex.ParT.TextColor = Color.FromArgb(correctTextAlpha, Tex.ParT.TextColor);
+    					Tex.ParT.ShadColor = Color.FromArgb(correctShadeAlpha, Tex.ParT.ShadColor);
     				},
     				Reaing = delegate(Mot m)
     				{
@@ -157,7 +169,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public void SetHitColor(Med Med)
+    	public void SetHitColor(ModeEventDispatcher Med)
     	{
     		Tex.SetHitColor(Med);
     	}
@@ -184,7 +196,7 @@ namespace SlaveMatrix
     		Tex.Position = 吹出し.X0Y0_吹出し.ToGlobal(吹出し.X0Y0_吹出し.JP[0].Joint);
     	}
 
-    	public void Draw(Are Are, FPS FPS)
+    	public void Draw(RenderArea Are, FPS FPS)
     	{
     		Tex.Progression(FPS);
     		if (Dis)

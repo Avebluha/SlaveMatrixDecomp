@@ -25,8 +25,10 @@ namespace _2DGAMELIB
 
     	public void Add(string Name, Mot Mot)
     	{
-    		ms.Add(Name, Mot);
-    	}
+            //Broke some times here when adding existing keys
+            //ms.Add(Name, Mot);
+            ms.TryAdd(Name, Mot);
+        }
 
     	public void Rem(string Name)
     	{

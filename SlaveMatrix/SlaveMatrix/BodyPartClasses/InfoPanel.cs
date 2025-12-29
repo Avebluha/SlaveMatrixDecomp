@@ -7,9 +7,9 @@ namespace SlaveMatrix
 {
     public class InfoPanel
     {
-    	public Are Are;
+    	public RenderArea Are;
 
-    	private Med Med;
+    	private ModeEventDispatcher Med;
 
     	public Par MaiB;
 
@@ -141,7 +141,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public InfoPanel(Med Med, Are Are)
+    	public InfoPanel(ModeEventDispatcher Med, RenderArea Are)
     	{
     		this.Med = Med;
     		this.Are = Are;
@@ -225,7 +225,7 @@ namespace SlaveMatrix
     		yp.SizeBase = Mai.ParT.SizeBase;
     		yp.Font = new Font("MS Gothic", 1f);
     		yp.FontSize = Mai.ParT.FontSize;
-    		yp.SetStringRectOutline(Are.Unit, Are.GD);
+    		yp.SetStringRectOutline(Are.UnitScale, Are.DisplayGraphics);
     		yp.RectSize = new Vector2D(yp.OP[0].ps[1].X, yp.OP[0].ps[2].Y);
     		yp.OP.ScalingY(yp.BasePointBase, 0.9);
     		yp.OP.OutlineFalse();
@@ -245,7 +245,7 @@ namespace SlaveMatrix
     		np.SizeBase = Mai.ParT.SizeBase;
     		np.Font = new Font("MS Gothic", 1f);
     		np.FontSize = Mai.ParT.FontSize;
-    		np.SetStringRectOutline(Are.Unit, Are.GD);
+    		np.SetStringRectOutline(Are.UnitScale, Are.DisplayGraphics);
     		np.RectSize = new Vector2D(np.OP[0].ps[1].X, np.OP[0].ps[2].Y);
     		np.OP.ScalingY(np.BasePointBase, 0.9);
     		np.OP.OutlineFalse();
@@ -262,7 +262,7 @@ namespace SlaveMatrix
     		});
     	}
 
-    	public void SetHitColor(Med Med)
+    	public void SetHitColor(ModeEventDispatcher Med)
     	{
     		Mai.SetHitColor(Med);
     		Sub.SetHitColor(Med);
@@ -280,7 +280,7 @@ namespace SlaveMatrix
 
     	private void SetButPos()
     	{
-    		yp.PositionBase = new Vector2D(yp.PositionBase.X, Mai.ParT.ToGlobal(Mai.ParT.GetStringRect(Are.Unit, Are.GD).v2).Y + 0.0025);
+    		yp.PositionBase = new Vector2D(yp.PositionBase.X, Mai.ParT.ToGlobal(Mai.ParT.GetStringRect(Are.UnitScale, Are.DisplayGraphics).v2).Y + 0.0025);
     		np.PositionBase = new Vector2D(np.PositionBase.X, yp.ToGlobal(yp.OP.Last().ps.Last()).Y + 0.0025);
     	}
 
@@ -310,7 +310,7 @@ namespace SlaveMatrix
     		nb.Up(ref HitColor);
     	}
 
-    	public void Draw(Are Are, FPS FPS)
+    	public void Draw(RenderArea Are, FPS FPS)
     	{
     		if (MaiShow)
     		{

@@ -1007,7 +1007,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 腰肌(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 腰肌D e)
+    	public 腰肌(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 腰肌D e)
     	{
     		ThisType = GetType();
     		本体 = new Difs(Sta.胴体["腰肌"]);

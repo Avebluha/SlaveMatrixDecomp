@@ -130,7 +130,7 @@ namespace SlaveMatrix
 
     	public JointS 肛門精液_接続点 => new JointS(本体, X0Y0_肛門2, 0);
 
-    	public 肛門_人(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 肛門_人D e)
+    	public 肛門_人(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 肛門_人D e)
     	{
     		肛門_人 肛門_人2 = this;
     		ThisType = GetType();

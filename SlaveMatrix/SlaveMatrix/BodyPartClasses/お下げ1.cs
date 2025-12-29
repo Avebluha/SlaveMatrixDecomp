@@ -1,6 +1,6 @@
 namespace SlaveMatrix
 {
-    public class お下げ1 : 後髪0
+    public class お下げ1 : BackHair0
     {
     	public virtual bool お下げ_髪縛1_表示 { get; set; }
 

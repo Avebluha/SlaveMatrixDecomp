@@ -440,7 +440,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 染み_人(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 染み_人D e)
+    	public 染み_人(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 染み_人D e)
     	{
     		ThisType = GetType();
     		本体 = new Difs(Sta.その他["染み"]);
@@ -542,7 +542,7 @@ namespace SlaveMatrix
     		濃度 = e.濃度;
     	}
 
-    	public override void 描画0(Are Are)
+    	public override void 描画0(RenderArea Are)
     	{
     		Are.Draw(X0Y0_潮1);
     		Are.Draw(X0Y0_潮2);
@@ -552,7 +552,7 @@ namespace SlaveMatrix
     		Are.Draw(X0Y0_汗);
     	}
 
-    	public void 湯気描画(Are Are)
+    	public void 湯気描画(RenderArea Are)
     	{
     		Are.Draw(X0Y0_湯気_湯気左1_湯気1);
     		Are.Draw(X0Y0_湯気_湯気左1_湯気2);

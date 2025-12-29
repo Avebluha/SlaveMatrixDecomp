@@ -6,9 +6,9 @@ namespace SlaveMatrix
     [Serializable]
     public class 腿D : EleD
     {
-    	public List<EleD> 脚_接続 = new List<EleD>();
+    	public List<EleD> Leg_接続 = new List<EleD>();
 
-    	public virtual void 脚接続(EleD e)
+    	public virtual void Leg接続(EleD e)
     	{
     	}
     }

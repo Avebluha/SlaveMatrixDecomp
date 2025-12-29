@@ -113,7 +113,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 肛門精液_獣(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 肛門精液_獣D e)
+    	public 肛門精液_獣(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 肛門精液_獣D e)
     	{
     		ThisType = GetType();
     		本体 = new Difs(Sta.半身["四足肛門精液垂れ"]);

@@ -13,7 +13,6 @@ namespace _2DGAMELIB
 
     	private static double s0;
 
-
     	public static Color Reverse(this Color c)
     	{
     		return Color.FromArgb(c.A, 255 - c.R, 255 - c.G, 255 - c.B);
@@ -44,9 +43,9 @@ namespace _2DGAMELIB
     		return Func(new Hsv(ref Color)).GetColor();
     	}
 
-    	public static Rectangle GetRect(this Bitmap Bmp)
+    	public static System.Drawing.Rectangle GetRect(this Bitmap Bmp)
     	{
-    		return new Rectangle(0, 0, Bmp.Width, Bmp.Height);
+    		return new System.Drawing.Rectangle(0, 0, Bmp.Width, Bmp.Height);
     	}
 
     	public static LinearGradientBrush GetLGB(double Unit, Vector2D[] MM, Color Color1, Color Color2)
@@ -159,10 +158,11 @@ namespace _2DGAMELIB
 
     	public static Obj ObjLoad(this byte[] bd)
     	{
-    		return bd.Load<byte[]>().ToDeserialObject<Obj>().SetDefaultR();
-    	}
+            return bd.Load<byte[]>().ToDeserialObject<Obj>().SetDefaultR();
+        }
 
-    	public static bool Lot(this double p)
+
+        public static bool Lot(this double p)
     	{
     		return RNG.XS.NextDouble() < p;
     	}

@@ -188,7 +188,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 胴肌(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 胴肌D e)
+    	public 胴肌(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 胴肌D e)
     	{
     		ThisType = GetType();
     		本体 = new Difs(Sta.胴体["胴肌"]);

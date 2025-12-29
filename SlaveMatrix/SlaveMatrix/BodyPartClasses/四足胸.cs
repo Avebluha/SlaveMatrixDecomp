@@ -201,7 +201,7 @@ namespace SlaveMatrix
 
     	public Ele[] 脇右_接続;
 
-    	public Ele[] 胴_接続;
+    	public Ele[] Torso_接続;
 
     	public Ele[] 胸左_接続;
 
@@ -790,7 +790,7 @@ namespace SlaveMatrix
 
     	public JointS 脇右_接続点 => new JointS(本体, X0Y0_胸郭, 1);
 
-    	public JointS 胴_接続点 => new JointS(本体, X0Y0_胸郭, 9);
+    	public JointS Torso_接続点 => new JointS(本体, X0Y0_胸郭, 9);
 
     	public JointS 胸左_接続点 => new JointS(本体, X0Y0_胸郭, 2);
 
@@ -808,7 +808,7 @@ namespace SlaveMatrix
 
     	public JointS 背中_接続点 => new JointS(本体, X0Y0_胸郭, 10);
 
-    	public 四足胸(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 四足胸D e)
+    	public 四足胸(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 四足胸D e)
     	{
     		四足胸 四足胸2 = this;
     		ThisType = GetType();
@@ -943,14 +943,14 @@ namespace SlaveMatrix
     				return f;
     			}).ToArray();
     		}
-    		if (e.胴_接続.Count > 0)
+    		if (e.Torso_接続.Count > 0)
     		{
-    			胴_接続 = e.胴_接続.Select(delegate(EleD g)
+    			Torso_接続 = e.Torso_接続.Select(delegate(EleD g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 四足胸2;
-    				f.ConnectionType = ConnectionInfo.四足胸_胴_接続;
-    				f.接続(四足胸2.胴_接続点);
+    				f.ConnectionType = ConnectionInfo.四足胸_Torso_接続;
+    				f.接続(四足胸2.Torso_接続点);
     				return f;
     			}).ToArray();
     		}
@@ -1081,7 +1081,7 @@ namespace SlaveMatrix
     		尺度YB = 0.96;
     	}
 
-    	public void 胸描画(Are Are)
+    	public void 胸描画(RenderArea Are)
     	{
     		Are.Draw(X0Y0_胸郭);
     		Are.Draw(X0Y0_筋肉_筋肉左);
@@ -1099,7 +1099,7 @@ namespace SlaveMatrix
     		Are.Draw(X0Y0_竜性_中_鱗2);
     	}
 
-    	public void 肌描画(Are Are)
+    	public void 肌描画(RenderArea Are)
     	{
     		Are.Draw(X0Y0_紋柄_紋左_紋1);
     		Are.Draw(X0Y0_紋柄_紋左_紋2);

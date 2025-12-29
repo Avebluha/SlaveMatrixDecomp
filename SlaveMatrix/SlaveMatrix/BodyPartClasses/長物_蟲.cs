@@ -113,7 +113,7 @@ namespace SlaveMatrix
 
     	public Ele[] 右1_接続;
 
-    	public Ele[] 胴_接続;
+    	public Ele[] Torso_接続;
 
     	public override bool 欠損
     	{
@@ -507,13 +507,13 @@ namespace SlaveMatrix
 
     	public JointS 右1_接続点 => new JointS(本体, X0Y0_胴1_胴, 1);
 
-    	public JointS 胴_接続点 => new JointS(本体, X0Y0_胴1_胴, 3);
+    	public JointS Torso_接続点 => new JointS(本体, X0Y0_胴1_胴, 3);
 
     	public JointS 鎖1_接続点 => new JointS(本体, X0Y0_輪1_金具左, 0);
 
     	public JointS 鎖2_接続点 => new JointS(本体, X0Y0_輪1_金具右, 0);
 
-    	public 長物_蟲(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 長物_蟲D e)
+    	public 長物_蟲(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 長物_蟲D e)
     	{
     		長物_蟲 長物_蟲2 = this;
     		ThisType = GetType();
@@ -644,14 +644,14 @@ namespace SlaveMatrix
     				return f;
     			}).ToArray();
     		}
-    		if (e.胴_接続.Count > 0)
+    		if (e.Torso_接続.Count > 0)
     		{
-    			胴_接続 = e.胴_接続.Select(delegate(EleD g)
+    			Torso_接続 = e.Torso_接続.Select(delegate(EleD g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 長物_蟲2;
-    				f.ConnectionType = ConnectionInfo.長物_蟲_胴_接続;
-    				f.接続(長物_蟲2.胴_接続点);
+    				f.ConnectionType = ConnectionInfo.長物_蟲_Torso_接続;
+    				f.接続(長物_蟲2.Torso_接続点);
     				return f;
     			}).ToArray();
     		}
@@ -691,7 +691,7 @@ namespace SlaveMatrix
     		鎖2.Dispose();
     	}
 
-    	public override void 描画0(Are Are)
+    	public override void 描画0(RenderArea Are)
     	{
     		本体.Draw(Are);
     		鎖1.描画0(Are);

@@ -138,7 +138,7 @@ namespace SlaveMatrix
     		e.接続情報 = ConnectionInfo.単足_植_根外右_接続;
     	}
 
-    	public override Ele GetEle(double DisUnit, Med Med, 体配色 体配色)
+    	public override Ele GetEle(double DisUnit, ModeEventDispatcher Med, 体配色 体配色)
     	{
     		return new 単足_植(DisUnit, 配色指定, 体配色, Med, this);
     	}

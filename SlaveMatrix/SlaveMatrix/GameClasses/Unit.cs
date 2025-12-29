@@ -563,7 +563,7 @@ namespace SlaveMatrix
     		Muscular = ChaD.body_tree.筋肉;
     	}
 
-    	public void SetViola(Med Med, Are Are)
+    	public void SetViola(ModeEventDispatcher Med, RenderArea Are)
     	{
     		階層位置 = 0;
     		RoomNumber = 0;
@@ -993,7 +993,7 @@ namespace SlaveMatrix
     			}
     			if (eleD is 胸肌D)
     			{
-    				if (eleD.接続情報 == ConnectionInfo.胸_肌_接続)
+    				if (eleD.接続情報 == ConnectionInfo.Chest_肌_接続)
     				{
     					胸肌D2 = (胸肌D)eleD;
     				}

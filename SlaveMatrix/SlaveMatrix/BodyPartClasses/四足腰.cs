@@ -1388,14 +1388,14 @@ namespace SlaveMatrix
 
     	public JointS 翼右_接続点 => new JointS(本体, X0Y0_腰, 8);
 
-    	public 四足腰(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 四足腰D e)
+    	public 四足腰(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 四足腰D e)
     	{
     		四足腰 四足腰2 = this;
     		ThisType = GetType();
     		本体 = new Difs(Sta.半身["四足腰"]);
     		Pars pars = 本体[0][0];
     		X0Y0_腰 = pars["腰"].ToPar();
-    		X0Y0_股 = pars["股"].ToPar();
+            X0Y0_股 = pars["股"].ToPar();
     		X0Y0_下腹 = pars["下腹"].ToPar();
     		X0Y0_腰皺 = pars["腰皺"].ToPar();
     		Pars pars2 = pars["筋肉"].ToPars();

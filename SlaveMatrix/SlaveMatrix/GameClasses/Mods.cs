@@ -17,7 +17,7 @@ namespace SlaveMatrix
     public static class MyUI
     {
         //normal rectangular buttons
-        public static But1 Button(Med med, Are buffer, string text, Vector2D pos, Action<But> on_click) {
+        public static But1 Button(ModeEventDispatcher med, RenderArea buffer, string text, Vector2D pos, Action<But> on_click) {
 
             ParT parT = new ParT();
             parT.Font = new Font("MS Gothic", 0.1f);
@@ -75,7 +75,7 @@ namespace SlaveMatrix
         }
 
         //rhombus shaped buttons
-        public static But1 Button2(Med med, Are buffer, string text, Vector2D pos, Action<But> on_click) {
+        public static But1 Button2(ModeEventDispatcher med, RenderArea buffer, string text, Vector2D pos, Action<But> on_click) {
             ParT parT = new ParT();
             parT.Font = new Font("MS Gothic", 0.1f);
             parT.PositionBase = buffer.GetPosition(pos);
@@ -96,7 +96,7 @@ namespace SlaveMatrix
             return new But1(parT, on_click);
         }
 
-        public static ListView Select(Are buffer, Vector2D pos, params TA[] acts) {
+        public static ListView Select(RenderArea buffer, Vector2D pos, params TA[] acts) {
             return new ListView(
                 buffer,
                 buffer.GetPosition(pos),
@@ -111,7 +111,7 @@ namespace SlaveMatrix
             );
         }
 
-        public static Lab Label(Med med, Are buffer, string text, Vector2D pos) {
+        public static Lab Label(ModeEventDispatcher med, RenderArea buffer, string text, Vector2D pos) {
             return new Lab(
                     buffer,
                     "",
@@ -151,30 +151,30 @@ namespace SlaveMatrix
 
 
         //buffers
-    	public static Are DrawBuffer;
-    	public static Are BlackBackground;
-    	public static Are BasementBackground;
-    	public static Are OfficeBackground;
-    	public static Are drawArea;
+    	public static RenderArea DrawBuffer;
+    	public static RenderArea BlackBackground;
+    	public static RenderArea BasementBackground;
+    	public static RenderArea OfficeBackground;
+    	public static RenderArea drawArea;
 
 
-    	private static Action<Are, FPS> メインフォーム描画;
-    	private static Action<Are, FPS> 調教描画;
-    	public static Action<Are, FPS> 撮影描画;
-    	private static Action<Are, FPS> 対象描画;
-    	private static Action<Are, FPS> DrawBlessing;
-    	private static Action<Are, FPS> DrawOffice;
-    	private static Action<Are, FPS> DrawDebt;
-    	private static Action<Are, FPS> DrawSlaveShop;
-    	private static Action<Are, FPS> DrawToolShop;
-    	private static Action<Are, FPS> 中継描画;
-    	private static Action<Are, FPS> DrawOP0;
-    	private static Action<Are, FPS> DrawOP1;
-    	private static Action<Are, FPS> 説明描画;
-    	private static Action<Are, FPS> 初事務所描画;
-    	private static Action<Are, FPS> 返済イベント描画;
-    	private static Action<Are, FPS> 日数進行描画;
-    	private static Action<Are, FPS> PlayerInformationSliders;
+    	private static Action<RenderArea, FPS> メインフォーム描画;
+    	private static Action<RenderArea, FPS> 調教描画;
+    	public static Action<RenderArea, FPS> 撮影描画;
+    	private static Action<RenderArea, FPS> 対象描画;
+    	private static Action<RenderArea, FPS> DrawBlessing;
+    	private static Action<RenderArea, FPS> DrawOffice;
+    	private static Action<RenderArea, FPS> DrawDebt;
+    	private static Action<RenderArea, FPS> DrawSlaveShop;
+    	private static Action<RenderArea, FPS> DrawToolShop;
+    	private static Action<RenderArea, FPS> 中継描画;
+    	private static Action<RenderArea, FPS> DrawOP0;
+    	private static Action<RenderArea, FPS> DrawOP1;
+    	private static Action<RenderArea, FPS> 説明描画;
+    	private static Action<RenderArea, FPS> 初事務所描画;
+    	private static Action<RenderArea, FPS> 返済イベント描画;
+    	private static Action<RenderArea, FPS> 日数進行描画;
+    	private static Action<RenderArea, FPS> PlayerInformationSliders;
         private static Action 対象UI初期化;
         private static Action 奴隷UI初期化;
 
@@ -201,7 +201,7 @@ namespace SlaveMatrix
 
         public static int MaxRoomNumber => 135;
 
-    	public static Dictionary<string, Module> GetMods(Med Med)
+    	public static Dictionary<string, Module> GetMods(ModeEventDispatcher Med)
     	{
     		Sta.LoadConfig();
     		Sta.タイル準備();
@@ -209,17 +209,17 @@ namespace SlaveMatrix
     		Sta.Set喘ぎ();
 
             //setup buffers
-    		drawArea = new Are(Med, Hit: false);
-    		DrawBuffer = new Are(Med, Hit: true);
+    		drawArea = new RenderArea(Med, Hit: false);
+    		DrawBuffer = new RenderArea(Med, Hit: true);
 
-    		BlackBackground = new Are(Med, Hit: true);
+    		BlackBackground = new RenderArea(Med, Hit: true);
     		BlackBackground.Clear(Col.Black);
 
-    		BasementBackground = new Are(Med, Hit: true);
-    		BasementBackground.GD.DrawImage(new Bitmap(new MemoryStream(Resources.dangeon01_ex2)), BasementBackground.Dis.GetRect());
+    		BasementBackground = new RenderArea(Med, Hit: true);
+    		BasementBackground.DisplayGraphics.DrawImage(new Bitmap(new MemoryStream(Resources.dangeon01_ex2)), BasementBackground.DisplayLayer.GetRect());
     		
-    		OfficeBackground = new Are(Med, Hit: true);
-            OfficeBackground.GD.DrawImage(new Bitmap(new MemoryStream(Resources.li_room10a_c_ex2)), OfficeBackground.Dis.GetRect());
+    		OfficeBackground = new RenderArea(Med, Hit: true);
+            OfficeBackground.DisplayGraphics.DrawImage(new Bitmap(new MemoryStream(Resources.li_room10a_c_ex2)), OfficeBackground.DisplayLayer.GetRect());
     		
             SaveData = new ListView(
                 DrawBuffer, 
@@ -526,7 +526,7 @@ namespace SlaveMatrix
         };
         static double v = 0.0;
 
-        private static void SwitchMode(Med Med, Are Are, FPS FPS, Action<Are, FPS> 描画)
+        private static void SwitchMode(ModeEventDispatcher Med, RenderArea Are, FPS FPS, Action<RenderArea, FPS> 描画)
     	{
             if (fade_in)
     		{
@@ -552,7 +552,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public static void SwitchMode(this Med Med, string Mode, Are Are, Action<Are, FPS> 描画)
+    	public static void SwitchMode(this ModeEventDispatcher Med, string Mode, RenderArea Are, Action<RenderArea, FPS> 描画)
     	{
     		Med.Mode = Mode;
     		描画(drawArea, Med.FPSF);
@@ -561,7 +561,7 @@ namespace SlaveMatrix
     		fade_in = true;
     	}
 
-        public static void flash(this Med Med)
+        public static void flash(this ModeEventDispatcher Med)
         {
             調教描画(drawArea, Med.FPSF);
             Color col = Color.FromArgb(128, Color.White);
@@ -596,12 +596,12 @@ namespace SlaveMatrix
 
         //  save/load handling
         //TODO: fix
-    	public static void SetSLlv(Med Med)
+    	public static void SetSLlv(ModeEventDispatcher Med)
     	{
     		SaveData.Acts = sllv(Med);
     	}
 
-    	private static IEnumerable<TA> sllv(Med Med)
+    	private static IEnumerable<TA> sllv(ModeEventDispatcher Med)
     	{
     		int j = 0;
     		string[] array = Sta.SDPaths();
@@ -638,7 +638,7 @@ namespace SlaveMatrix
     		Sta.GDSave(0);
     	}
 
-    	private static void Save(string Path, int i, Med Med)
+    	private static void Save(string Path, int i, ModeEventDispatcher Med)
     	{
     		ip.SubInfoIm = GameText.セーブ中です + "\r\n" + GameText.しばらくお待ちください;
 
@@ -653,7 +653,7 @@ namespace SlaveMatrix
     		//Med.InvokeL(Sounds.完了.Play);
     	}
 
-    	private static void Load(string Path, int i, Med Med)
+    	private static void Load(string Path, int i, ModeEventDispatcher Med)
     	{
     		ip.SubInfoIm = GameText.ロード中です + "\r\n" + GameText.しばらくお待ちください;
 		
@@ -694,12 +694,12 @@ namespace SlaveMatrix
     		
     	}
 
-        public static void SetJSLlv(Med med)
+        public static void SetJSLlv(ModeEventDispatcher med)
         {
             SaveData.Acts = jsllv(med);
         }
 
-        private static IEnumerable<TA> jsllv(Med med)
+        private static IEnumerable<TA> jsllv(ModeEventDispatcher med)
         {
             int k = 0;
             string[] array = Sta.JSDPaths();
@@ -724,7 +724,7 @@ namespace SlaveMatrix
             }
         }
 
-        private static void JsonSave(string Path, int i, Med med)
+        private static void JsonSave(string Path, int i, ModeEventDispatcher med)
         {
             ip.SubInfoIm = GameText.セーブ中です + "\r\n" + GameText.しばらくお待ちください;
 
@@ -738,7 +738,7 @@ namespace SlaveMatrix
             ip.SubInfoIm = i + ": " + Sta.GameData.GetSaveDateString() + "\r\n" + GameText.セーブしました;
             //Sounds.完了.Play();
         }
-        private static void JsonLoad(string Path, int i, Med med)
+        private static void JsonLoad(string Path, int i, ModeEventDispatcher med)
         {
             ip.SubInfoIm = GameText.ロード中です + "\r\n" + GameText.しばらくお待ちください;
 
@@ -958,7 +958,7 @@ namespace SlaveMatrix
     			Sta.GameData.新日 = true;
     		}
     	}
-    	public static bool PassTime(Med Med)
+    	public static bool PassTime(ModeEventDispatcher Med)
     	{
     		bool flag = Sta.GameData.時間帯 == GameText.夜;
             Player.RecoverPlayerStamina();
@@ -1006,7 +1006,7 @@ namespace SlaveMatrix
     		}
     		return flag;
     	}        
-        public static void PassDay(Med Med)
+        public static void PassDay(ModeEventDispatcher Med)
     	{
     		while (!PassTime(Med))
     		{
@@ -1078,7 +1078,7 @@ namespace SlaveMatrix
     		TrainingTarget.Bod.Update();
     	}
 
-    	public static void SetTrainingTarget(Med Med, Unit u)
+    	public static void SetTrainingTarget(ModeEventDispatcher Med, Unit u)
     	{
     		Sta.GameData.TrainingTarget = u;
     		if (TrainingTarget != null)
@@ -1159,7 +1159,7 @@ namespace SlaveMatrix
 
 
         //modules
-    	public static Module Start(Med Med)
+    	public static Module Start(ModeEventDispatcher Med)
     	{
     		return new Module
     		{
@@ -1170,7 +1170,7 @@ namespace SlaveMatrix
     		};
     	}
 
-    	public static Module Credit(Med Med) {
+    	public static Module Credit(ModeEventDispatcher Med) {
     		MotV mv = new MotV(0.0, 1.0){BaseSpeed = 0.5};
 
     		double v = 0.0;
@@ -1250,7 +1250,7 @@ namespace SlaveMatrix
     		};
     	}
 
-    	public static Module Title(Med Med)
+    	public static Module Title(ModeEventDispatcher Med)
     	{
     		MotV mv = new MotV(0.0, 1.0)
     		{
@@ -1404,7 +1404,7 @@ namespace SlaveMatrix
     		};
     	}
 
-    	public static Module メインフォーム(Med Med)
+    	public static Module メインフォーム(ModeEventDispatcher Med)
     	{
     		Buts bs = new Buts();
 
@@ -1470,12 +1470,12 @@ namespace SlaveMatrix
     			}
     		}));
 
-            メインフォーム描画 = delegate (Are a, FPS FPS)
+            メインフォーム描画 = delegate (RenderArea a, FPS FPS)
             {
-                Med.GH.Clear(Col.Transparent);
-                if (a.GH != null)
+                Med.HitGraphics.Clear(Col.Transparent);
+                if (a.HitGraphics != null)
                 {
-                    a.GH.Clear(Col.Transparent);
+                    a.HitGraphics.Clear(Col.Transparent);
                 }
                 a.Draw(BasementBackground);
                 if (TrainingTarget != null)
@@ -1633,11 +1633,11 @@ namespace SlaveMatrix
             };
     	}
 
-    	public static Module Training(Med Med)
+    	public static Module Training(ModeEventDispatcher Med)
     	{
     		調教背景 BackgroundDrawing = new 調教背景();
-    		Are TrainingBackground = new Are(Med, Hit: false);
-    		TrainingBackground.GD.Clear(Color.Gray);
+    		RenderArea TrainingBackground = new RenderArea(Med, Hit: false);
+    		TrainingBackground.DisplayGraphics.Clear(Color.Gray);
 
     		Player.UI = new TrainingUI(Med, DrawBuffer, ip);
     		Player.UI.調教終了.Action = delegate
@@ -1691,13 +1691,13 @@ namespace SlaveMatrix
             ContactD cd = default(ContactD);
             Vector2D op = Dat.Vec2DZero;
 
-            調教描画 = delegate (Are a, FPS FPS)
+            調教描画 = delegate (RenderArea a, FPS FPS)
             {
                 Player.UI.Mots.Drive(FPS);
-                Med.GH.Clear(Col.Transparent);
-                if (a.GH != null)
+                Med.HitGraphics.Clear(Col.Transparent);
+                if (a.HitGraphics != null)
                 {
-                    a.GH.Clear(Col.Transparent);
+                    a.HitGraphics.Clear(Col.Transparent);
                 }
                 a.Draw(TrainingBackground);
                 TrainingTarget.Draw(a, FPS);
@@ -1724,7 +1724,7 @@ namespace SlaveMatrix
                     調教済みチェック = false;
                 }
             };
-            撮影描画 = delegate (Are a, FPS FPS)
+            撮影描画 = delegate (RenderArea a, FPS FPS)
             {
                 a.Draw(TrainingBackground);
                 TrainingTarget.Draw(a, FPS);
@@ -1733,7 +1733,7 @@ namespace SlaveMatrix
             return new Module {
                 Setting = delegate
                 {
-                    TrainingBackground.GD.Clear(Color.Gray);
+                    TrainingBackground.DisplayGraphics.Clear(Color.Gray);
                     BackgroundDrawing.Reset();
                     BackgroundDrawing.Draw(TrainingBackground);
                     ip.MaiShow = false;
@@ -1819,14 +1819,14 @@ namespace SlaveMatrix
             };
     	}
 
-    	public static Module 調教中継行(Med Med)
+    	public static Module 調教中継行(ModeEventDispatcher Med)
     	{
-    		中継描画 = delegate(Are a, FPS FPS)
+    		中継描画 = delegate(RenderArea a, FPS FPS)
     		{
-    			Med.GH.Clear(Col.Transparent);
-    			if (a.GH != null)
+    			Med.HitGraphics.Clear(Col.Transparent);
+    			if (a.HitGraphics != null)
     			{
-    				a.GH.Clear(Col.Transparent);
+    				a.HitGraphics.Clear(Col.Transparent);
     			}
     			a.Draw(BlackBackground);
     			ip.Draw(a, FPS);
@@ -1869,7 +1869,7 @@ namespace SlaveMatrix
             };
     	}
 
-    	public static Module 調教中継帰(Med Med)
+    	public static Module 調教中継帰(ModeEventDispatcher Med)
     	{
     		bool Result2 = false;
     		bool Result3 = false;
@@ -2003,7 +2003,7 @@ namespace SlaveMatrix
             };
     	}
 
-    	public static Module 対象(Med Med)
+    	public static Module 対象(ModeEventDispatcher Med)
     	{
     		try
     		{
@@ -3277,12 +3277,12 @@ namespace SlaveMatrix
 
     			bs.SetHitColor(Med);
 
-                対象描画 = delegate (Are a, FPS FPS)
+                対象描画 = delegate (RenderArea a, FPS FPS)
                 {
-                    Med.GH.Clear(Col.Transparent);
-                    if (a.GH != null)
+                    Med.HitGraphics.Clear(Col.Transparent);
+                    if (a.HitGraphics != null)
                     {
-                        a.GH.Clear(Col.Transparent);
+                        a.HitGraphics.Clear(Col.Transparent);
                     }
                     a.Draw(BasementBackground);
                     if (TrainingTarget != null)
@@ -3316,7 +3316,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public static Module Blessing(Med Med)
+    	public static Module Blessing(ModeEventDispatcher Med)
     	{
     		Cha 祝福 = null;
     		bool d = false;
@@ -3496,12 +3496,12 @@ namespace SlaveMatrix
     			}
     		};
 
-            DrawBlessing = delegate (Are a, FPS FPS)
+            DrawBlessing = delegate (RenderArea a, FPS FPS)
             {
-                Med.GH.Clear(Col.Transparent);
-                if (a.GH != null)
+                Med.HitGraphics.Clear(Col.Transparent);
+                if (a.HitGraphics != null)
                 {
-                    a.GH.Clear(Col.Transparent);
+                    a.HitGraphics.Clear(Col.Transparent);
                 }
                 a.Draw(BasementBackground);
                 if (祝福 != null)
@@ -3647,7 +3647,7 @@ namespace SlaveMatrix
             };
     	}
 
-    	public static Module Office(Med Med)
+    	public static Module Office(ModeEventDispatcher Med)
     	{
     		Module mod = new Module();
     		Buts bs = new Buts();
@@ -3883,11 +3883,11 @@ namespace SlaveMatrix
     				}
     			}
     		};
-    		DrawOffice = delegate(Are a, FPS FPS)
+    		DrawOffice = delegate(RenderArea a, FPS FPS)
     		{
-    			if (a.GH != null)
+    			if (a.HitGraphics != null)
     			{
-    				a.GH.Clear(Col.Transparent);
+    				a.HitGraphics.Clear(Col.Transparent);
     			}
     			a.Draw(OfficeBackground);
     			Viola.Draw(a, FPS);
@@ -3912,7 +3912,7 @@ namespace SlaveMatrix
     		return mod;
     	}
 
-    	public static Module Debt(Med Med)
+    	public static Module Debt(ModeEventDispatcher Med)
     	{
     		Module mod = new Module();
     		Vector2D position = DrawBuffer.GetPosition(0.15, 0.37);
@@ -4391,12 +4391,12 @@ namespace SlaveMatrix
     				bs["nr"].Dra = Sta.GameData.借金 != 0;
     			}
     		};
-    		DrawDebt = delegate(Are a, FPS FPS)
+    		DrawDebt = delegate(RenderArea a, FPS FPS)
     		{
-    			Med.GH.Clear(Col.Transparent);
-    			if (a.GH != null)
+    			Med.HitGraphics.Clear(Col.Transparent);
+    			if (a.HitGraphics != null)
     			{
-    				a.GH.Clear(Col.Transparent);
+    				a.HitGraphics.Clear(Col.Transparent);
     			}
     			a.Draw(OfficeBackground);
     			Viola.Draw(a, FPS);
@@ -4421,7 +4421,7 @@ namespace SlaveMatrix
     		return mod;
     	}
 
-    	public static Module SlaveShop(Med Med)
+    	public static Module SlaveShop(ModeEventDispatcher Med)
     	{
     		Module mod = new Module();
     		Cha PurchasTarget = null;
@@ -5070,12 +5070,12 @@ namespace SlaveMatrix
     				si.Set(bre: false);
     			}
     		};
-    		DrawSlaveShop = delegate(Are a, FPS FPS)
+    		DrawSlaveShop = delegate(RenderArea a, FPS FPS)
     		{
-    			Med.GH.Clear(Col.Transparent);
-    			if (a.GH != null)
+    			Med.HitGraphics.Clear(Col.Transparent);
+    			if (a.HitGraphics != null)
     			{
-    				a.GH.Clear(Col.Transparent);
+    				a.HitGraphics.Clear(Col.Transparent);
     			}
     			a.Draw(OfficeBackground);
     			if (u != null)
@@ -5112,7 +5112,7 @@ namespace SlaveMatrix
     		return mod;
     	}
 
-    	public static Module ToolShop(Med Med)
+    	public static Module ToolShop(ModeEventDispatcher Med)
     	{
     		Module mod = new Module();
     		Buts bs = new Buts();
@@ -5437,12 +5437,12 @@ namespace SlaveMatrix
     				subinfo();
     			}
     		};
-    		DrawToolShop = delegate(Are a, FPS FPS)
+    		DrawToolShop = delegate(RenderArea a, FPS FPS)
     		{
-    			Med.GH.Clear(Col.Transparent);
-    			if (a.GH != null)
+    			Med.HitGraphics.Clear(Col.Transparent);
+    			if (a.HitGraphics != null)
     			{
-    				a.GH.Clear(Col.Transparent);
+    				a.HitGraphics.Clear(Col.Transparent);
     			}
     			a.Draw(OfficeBackground);
     			lv.Draw(a);
@@ -5467,7 +5467,7 @@ namespace SlaveMatrix
     		return mod;
     	}
 
-    	public static Module StartOfDay(Med Med)
+    	public static Module StartOfDay(ModeEventDispatcher Med)
     	{
     		Module obj = new Module
     		{
@@ -5526,16 +5526,16 @@ namespace SlaveMatrix
     				si.Set(bre: false);
     			}
     		};
-    		日数進行描画 = delegate(Are a, FPS FPS)
+    		日数進行描画 = delegate(RenderArea a, FPS FPS)
     		{
     			if (TrainingTarget != null)
     			{
     				TrainingTarget.Mots.Drive(FPS);
     			}
-    			Med.GH.Clear(Col.Transparent);
-    			if (a.GH != null)
+    			Med.HitGraphics.Clear(Col.Transparent);
+    			if (a.HitGraphics != null)
     			{
-    				a.GH.Clear(Col.Transparent);
+    				a.HitGraphics.Clear(Col.Transparent);
     			}
     			a.Draw(BlackBackground);
     			ip.Draw(a, FPS);
@@ -5551,7 +5551,7 @@ namespace SlaveMatrix
     		return obj;
     	}
 
-    	public static Module PlayerInformation(Med Med)
+    	public static Module PlayerInformation(ModeEventDispatcher Med)
     	{
     		Module mod = new Module();
     		double num = 0.2;
@@ -5616,57 +5616,57 @@ namespace SlaveMatrix
     		ls.Add("ラベル13", DrawBuffer.GetPosition(new Vector2D(num2 + 0.19, num3 + num * 3.0 + 0.005)), 0.1, 1.0, new Font("MS Gothic", 1f), 0.085, GameText.体格, Col.White, Col.Black, ip.MaiB.BrushColor, Col.Black, Input: false);
     		ls.Add("ラベル14", DrawBuffer.GetPosition(new Vector2D(num2 + 0.19, num3 + num * 3.0 + 0.045)), 0.1, 1.0, new Font("MS Gothic", 1f), 0.085, "H:", Col.White, Col.Black, ip.MaiB.BrushColor, Col.Black, Input: false);
     		ls.Add("ラベル15", DrawBuffer.GetPosition(new Vector2D(num2 + 0.19, num3 + num * 3.0 + 0.086)), 0.1, 1.0, new Font("MS Gothic", 1f), 0.085, "W:", Col.White, Col.Black, ip.MaiB.BrushColor, Col.Black, Input: false);
-    		Gau H肌 = new Gau("H肌", DrawBuffer.GetPosition(new Vector2D(num2 + 0.532, num3 + num * 0.0 + 0.06)), DrawBuffer.Size, 0.6, 0.03, 0.02, Open.Rig, _2DGAMELIB.Range.ZeroOne, DrawBuffer.DisUnit, Color.Transparent, Color.Transparent, Color.Transparent, Color.Transparent, Col.Black, Knob: true);
+    		Gau H肌 = new Gau("H肌", DrawBuffer.GetPosition(new Vector2D(num2 + 0.532, num3 + num * 0.0 + 0.06)), DrawBuffer.Size, 0.6, 0.03, 0.02, Open.Rig, _2DGAMELIB.Range.ZeroOne, DrawBuffer.DisplayUnitScale, Color.Transparent, Color.Transparent, Color.Transparent, Color.Transparent, Col.Black, Knob: true);
     		H肌.Gauge.PenColor = Col.White;
     		H肌.Frame1.PenColor = Col.White;
     		H肌.Knob.PenColor = Col.White;
     		H肌.Knob.HitColor = Med.GetUniqueColor();
-    		Gau S肌 = new Gau("S肌", DrawBuffer.GetPosition(new Vector2D(num2 + 0.532, num3 + num * 0.0 + 0.1)), DrawBuffer.Size, 0.6, 0.03, 0.02, Open.Rig, _2DGAMELIB.Range.ZeroOne, DrawBuffer.DisUnit, Color.Transparent, Color.Transparent, Color.Transparent, Color.Transparent, Col.Black, Knob: true);
+    		Gau S肌 = new Gau("S肌", DrawBuffer.GetPosition(new Vector2D(num2 + 0.532, num3 + num * 0.0 + 0.1)), DrawBuffer.Size, 0.6, 0.03, 0.02, Open.Rig, _2DGAMELIB.Range.ZeroOne, DrawBuffer.DisplayUnitScale, Color.Transparent, Color.Transparent, Color.Transparent, Color.Transparent, Col.Black, Knob: true);
     		S肌.Gauge.PenColor = Col.White;
     		S肌.Frame1.PenColor = Col.White;
     		S肌.Knob.PenColor = Col.White;
     		S肌.Knob.HitColor = Med.GetUniqueColor();
-    		Gau V肌 = new Gau("V肌", DrawBuffer.GetPosition(new Vector2D(num2 + 0.532, num3 + num * 0.0 + 0.14)), DrawBuffer.Size, 0.6, 0.03, 0.02, Open.Rig, _2DGAMELIB.Range.ZeroOne, DrawBuffer.DisUnit, Color.Transparent, Color.Transparent, Color.Transparent, Color.Transparent, Col.Black, Knob: true);
+    		Gau V肌 = new Gau("V肌", DrawBuffer.GetPosition(new Vector2D(num2 + 0.532, num3 + num * 0.0 + 0.14)), DrawBuffer.Size, 0.6, 0.03, 0.02, Open.Rig, _2DGAMELIB.Range.ZeroOne, DrawBuffer.DisplayUnitScale, Color.Transparent, Color.Transparent, Color.Transparent, Color.Transparent, Col.Black, Knob: true);
     		V肌.Gauge.PenColor = Col.White;
     		V肌.Frame1.PenColor = Col.White;
     		V肌.Knob.PenColor = Col.White;
     		V肌.Knob.HitColor = Med.GetUniqueColor();
-    		Gau H髪 = new Gau("H髪", DrawBuffer.GetPosition(new Vector2D(num2 + 0.532, num3 + num * 1.0 + 0.06)), DrawBuffer.Size, 0.6, 0.03, 0.02, Open.Rig, _2DGAMELIB.Range.ZeroOne, DrawBuffer.DisUnit, Color.Transparent, Color.Transparent, Color.Transparent, Color.Transparent, Col.Black, Knob: true);
+    		Gau H髪 = new Gau("H髪", DrawBuffer.GetPosition(new Vector2D(num2 + 0.532, num3 + num * 1.0 + 0.06)), DrawBuffer.Size, 0.6, 0.03, 0.02, Open.Rig, _2DGAMELIB.Range.ZeroOne, DrawBuffer.DisplayUnitScale, Color.Transparent, Color.Transparent, Color.Transparent, Color.Transparent, Col.Black, Knob: true);
     		H髪.Gauge.PenColor = Col.White;
     		H髪.Frame1.PenColor = Col.White;
     		H髪.Knob.PenColor = Col.White;
     		H髪.Knob.HitColor = Med.GetUniqueColor();
-    		Gau S髪 = new Gau("S髪", DrawBuffer.GetPosition(new Vector2D(num2 + 0.532, num3 + num * 1.0 + 0.1)), DrawBuffer.Size, 0.6, 0.03, 0.02, Open.Rig, _2DGAMELIB.Range.ZeroOne, DrawBuffer.DisUnit, Color.Transparent, Color.Transparent, Color.Transparent, Color.Transparent, Col.Black, Knob: true);
+    		Gau S髪 = new Gau("S髪", DrawBuffer.GetPosition(new Vector2D(num2 + 0.532, num3 + num * 1.0 + 0.1)), DrawBuffer.Size, 0.6, 0.03, 0.02, Open.Rig, _2DGAMELIB.Range.ZeroOne, DrawBuffer.DisplayUnitScale, Color.Transparent, Color.Transparent, Color.Transparent, Color.Transparent, Col.Black, Knob: true);
     		S髪.Gauge.PenColor = Col.White;
     		S髪.Frame1.PenColor = Col.White;
     		S髪.Knob.PenColor = Col.White;
     		S髪.Knob.HitColor = Med.GetUniqueColor();
-    		Gau V髪 = new Gau("V髪", DrawBuffer.GetPosition(new Vector2D(num2 + 0.532, num3 + num * 1.0 + 0.14)), DrawBuffer.Size, 0.6, 0.03, 0.02, Open.Rig, _2DGAMELIB.Range.ZeroOne, DrawBuffer.DisUnit, Color.Transparent, Color.Transparent, Color.Transparent, Color.Transparent, Col.Black, Knob: true);
+    		Gau V髪 = new Gau("V髪", DrawBuffer.GetPosition(new Vector2D(num2 + 0.532, num3 + num * 1.0 + 0.14)), DrawBuffer.Size, 0.6, 0.03, 0.02, Open.Rig, _2DGAMELIB.Range.ZeroOne, DrawBuffer.DisplayUnitScale, Color.Transparent, Color.Transparent, Color.Transparent, Color.Transparent, Col.Black, Knob: true);
     		V髪.Gauge.PenColor = Col.White;
     		V髪.Frame1.PenColor = Col.White;
     		V髪.Knob.PenColor = Col.White;
     		V髪.Knob.HitColor = Med.GetUniqueColor();
-    		Gau H瞳 = new Gau("H瞳", DrawBuffer.GetPosition(new Vector2D(num2 + 0.532, num3 + num * 2.0 + 0.06)), DrawBuffer.Size, 0.6, 0.03, 0.02, Open.Rig, _2DGAMELIB.Range.ZeroOne, DrawBuffer.DisUnit, Color.Transparent, Color.Transparent, Color.Transparent, Color.Transparent, Col.Black, Knob: true);
+    		Gau H瞳 = new Gau("H瞳", DrawBuffer.GetPosition(new Vector2D(num2 + 0.532, num3 + num * 2.0 + 0.06)), DrawBuffer.Size, 0.6, 0.03, 0.02, Open.Rig, _2DGAMELIB.Range.ZeroOne, DrawBuffer.DisplayUnitScale, Color.Transparent, Color.Transparent, Color.Transparent, Color.Transparent, Col.Black, Knob: true);
     		H瞳.Gauge.PenColor = Col.White;
     		H瞳.Frame1.PenColor = Col.White;
     		H瞳.Knob.PenColor = Col.White;
     		H瞳.Knob.HitColor = Med.GetUniqueColor();
-    		Gau S瞳 = new Gau("S瞳", DrawBuffer.GetPosition(new Vector2D(num2 + 0.532, num3 + num * 2.0 + 0.1)), DrawBuffer.Size, 0.6, 0.03, 0.02, Open.Rig, _2DGAMELIB.Range.ZeroOne, DrawBuffer.DisUnit, Color.Transparent, Color.Transparent, Color.Transparent, Color.Transparent, Col.Black, Knob: true);
+    		Gau S瞳 = new Gau("S瞳", DrawBuffer.GetPosition(new Vector2D(num2 + 0.532, num3 + num * 2.0 + 0.1)), DrawBuffer.Size, 0.6, 0.03, 0.02, Open.Rig, _2DGAMELIB.Range.ZeroOne, DrawBuffer.DisplayUnitScale, Color.Transparent, Color.Transparent, Color.Transparent, Color.Transparent, Col.Black, Knob: true);
     		S瞳.Gauge.PenColor = Col.White;
     		S瞳.Frame1.PenColor = Col.White;
     		S瞳.Knob.PenColor = Col.White;
     		S瞳.Knob.HitColor = Med.GetUniqueColor();
-    		Gau V瞳 = new Gau("V瞳", DrawBuffer.GetPosition(new Vector2D(num2 + 0.532, num3 + num * 2.0 + 0.14)), DrawBuffer.Size, 0.6, 0.03, 0.02, Open.Rig, _2DGAMELIB.Range.ZeroOne, DrawBuffer.DisUnit, Color.Transparent, Color.Transparent, Color.Transparent, Color.Transparent, Col.Black, Knob: true);
+    		Gau V瞳 = new Gau("V瞳", DrawBuffer.GetPosition(new Vector2D(num2 + 0.532, num3 + num * 2.0 + 0.14)), DrawBuffer.Size, 0.6, 0.03, 0.02, Open.Rig, _2DGAMELIB.Range.ZeroOne, DrawBuffer.DisplayUnitScale, Color.Transparent, Color.Transparent, Color.Transparent, Color.Transparent, Col.Black, Knob: true);
     		V瞳.Gauge.PenColor = Col.White;
     		V瞳.Frame1.PenColor = Col.White;
     		V瞳.Knob.PenColor = Col.White;
     		V瞳.Knob.HitColor = Med.GetUniqueColor();
-    		Gau 身長 = new Gau("身長", DrawBuffer.GetPosition(new Vector2D(num2 + 0.532, num3 + num * 3.0 + 0.06)), DrawBuffer.Size, 0.6, 0.03, 0.02, Open.Rig, _2DGAMELIB.Range.ZeroOne, DrawBuffer.DisUnit, Color.Transparent, Color.Transparent, Color.Transparent, Color.Transparent, Col.Black, Knob: true);
+    		Gau 身長 = new Gau("身長", DrawBuffer.GetPosition(new Vector2D(num2 + 0.532, num3 + num * 3.0 + 0.06)), DrawBuffer.Size, 0.6, 0.03, 0.02, Open.Rig, _2DGAMELIB.Range.ZeroOne, DrawBuffer.DisplayUnitScale, Color.Transparent, Color.Transparent, Color.Transparent, Color.Transparent, Col.Black, Knob: true);
     		身長.Gauge.PenColor = Col.White;
     		身長.Frame1.PenColor = Col.White;
     		身長.Knob.PenColor = Col.White;
     		身長.Knob.HitColor = Med.GetUniqueColor();
-    		Gau 体重 = new Gau("体重", DrawBuffer.GetPosition(new Vector2D(num2 + 0.532, num3 + num * 3.0 + 0.1)), DrawBuffer.Size, 0.6, 0.03, 0.02, Open.Rig, _2DGAMELIB.Range.ZeroOne, DrawBuffer.DisUnit, Color.Transparent, Color.Transparent, Color.Transparent, Color.Transparent, Col.Black, Knob: true);
+    		Gau 体重 = new Gau("体重", DrawBuffer.GetPosition(new Vector2D(num2 + 0.532, num3 + num * 3.0 + 0.1)), DrawBuffer.Size, 0.6, 0.03, 0.02, Open.Rig, _2DGAMELIB.Range.ZeroOne, DrawBuffer.DisplayUnitScale, Color.Transparent, Color.Transparent, Color.Transparent, Color.Transparent, Col.Black, Knob: true);
     		体重.Gauge.PenColor = Col.White;
     		体重.Frame1.PenColor = Col.White;
     		体重.Knob.PenColor = Col.White;
@@ -5850,12 +5850,12 @@ namespace SlaveMatrix
     			ls["ラベル14"].Text = "H:" + $"{身長.Value:0.00}";
     			ls["ラベル15"].Text = "W:" + $"{体重.Value:0.00}";
     		};
-    		PlayerInformationSliders = delegate(Are a, FPS FPS)
+    		PlayerInformationSliders = delegate(RenderArea a, FPS FPS)
     		{
-    			Med.GH.Clear(Col.Transparent);
-    			if (a.GH != null)
+    			Med.HitGraphics.Clear(Col.Transparent);
+    			if (a.HitGraphics != null)
     			{
-    				a.GH.Clear(Col.Transparent);
+    				a.HitGraphics.Clear(Col.Transparent);
     			}
     			a.Draw(BlackBackground);
     			ls.Draw(a);
@@ -5896,7 +5896,7 @@ namespace SlaveMatrix
     		return mod;
     	}
 
-    	public static Module OP0(Med Med)
+    	public static Module OP0(ModeEventDispatcher Med)
     	{
     		Module mod = new Module();
     		int i = 0;
@@ -5947,11 +5947,11 @@ namespace SlaveMatrix
     			ip.Text = tsp[i];
     			ip.SubInfo = sub[i];
     		};
-    		DrawOP0 = delegate(Are a, FPS FPS)
+    		DrawOP0 = delegate(RenderArea a, FPS FPS)
     		{
-    			if (a.GH != null)
+    			if (a.HitGraphics != null)
     			{
-    				a.GH.Clear(Col.Transparent);
+    				a.HitGraphics.Clear(Col.Transparent);
     			}
     			a.Draw(BlackBackground);
     			dbs.Draw(a);
@@ -5968,7 +5968,7 @@ namespace SlaveMatrix
     		return mod;
     	}
 
-    	public static Module OP1(Med Med)
+    	public static Module OP1(ModeEventDispatcher Med)
     	{
     		Module mod = new Module();
     		int i = 0;
@@ -6212,7 +6212,7 @@ namespace SlaveMatrix
     			Viola.両目_見つめ();
     			Viola.Set基本姿勢();
             };
-    		DrawOP1 = delegate(Are a, FPS FPS)
+    		DrawOP1 = delegate(RenderArea a, FPS FPS)
     		{
     			a.Draw(OfficeBackground);
     			Viola.Draw(a, FPS);
@@ -6231,7 +6231,7 @@ namespace SlaveMatrix
     		return mod;
     	}
 
-    	public static Module 説明(Med Med)
+    	public static Module 説明(ModeEventDispatcher Med)
     	{
     		Module mod = new Module();
     		int i = 0;
@@ -6365,11 +6365,11 @@ namespace SlaveMatrix
     			ip.Text = tsp[i];
     			ip.SubInfo = sub[i];
     		};
-    		説明描画 = delegate(Are a, FPS FPS)
+    		説明描画 = delegate(RenderArea a, FPS FPS)
     		{
-    			if (a.GH != null)
+    			if (a.HitGraphics != null)
     			{
-    				a.GH.Clear(Col.Transparent);
+    				a.HitGraphics.Clear(Col.Transparent);
     			}
     			a.Draw(BasementBackground);
     			Viola.Draw(a, FPS);
@@ -6388,7 +6388,7 @@ namespace SlaveMatrix
     		return mod;
     	}
 
-    	public static Module 初事務所(Med Med)
+    	public static Module 初事務所(ModeEventDispatcher Med)
     	{
     		Module mod = new Module();
     		int i = 0;
@@ -6672,11 +6672,11 @@ namespace SlaveMatrix
     			ip.Text = tsp[i];
     			ip.SubInfo = sub[i];
     		};
-    		初事務所描画 = delegate(Are a, FPS FPS)
+    		初事務所描画 = delegate(RenderArea a, FPS FPS)
     		{
-    			if (a.GH != null)
+    			if (a.HitGraphics != null)
     			{
-    				a.GH.Clear(Col.Transparent);
+    				a.HitGraphics.Clear(Col.Transparent);
     			}
     			a.Draw(OfficeBackground);
     			Viola.Draw(a, FPS);
@@ -6695,7 +6695,7 @@ namespace SlaveMatrix
     		return mod;
     	}
 
-    	public static Module RepaymentEvent1(Med Med)
+    	public static Module RepaymentEvent1(ModeEventDispatcher Med)
     	{
     		Module mod = new Module();
     		int i = 0;
@@ -6780,11 +6780,11 @@ namespace SlaveMatrix
     			ip.Text = tsp[i];
     			ip.SubInfo = sub[i];
     		};
-    		返済イベント描画 = delegate(Are a, FPS FPS)
+    		返済イベント描画 = delegate(RenderArea a, FPS FPS)
     		{
-    			if (a.GH != null)
+    			if (a.HitGraphics != null)
     			{
-    				a.GH.Clear(Col.Transparent);
+    				a.HitGraphics.Clear(Col.Transparent);
     			}
     			a.Draw(OfficeBackground);
     			Viola.Draw(a, FPS);
@@ -6803,7 +6803,7 @@ namespace SlaveMatrix
     		return mod;
     	}
 
-    	public static Module RepaymentEvent2(Med Med)
+    	public static Module RepaymentEvent2(ModeEventDispatcher Med)
     	{
     		Module mod = new Module();
     		int i = 0;
@@ -6904,7 +6904,7 @@ namespace SlaveMatrix
     		return mod;
     	}
 
-    	public static Module RepaymentEvent3(Med Med)
+    	public static Module RepaymentEvent3(ModeEventDispatcher Med)
     	{
     		Module mod = new Module();
     		bool yes = false;
@@ -7195,7 +7195,7 @@ namespace SlaveMatrix
     		return mod;
     	}
 
-    	public static Module ViolaBlessing(Med Med)
+    	public static Module ViolaBlessing(ModeEventDispatcher Med)
     	{
     		Module mod = new Module();
     		int i = 0;
@@ -7330,7 +7330,7 @@ namespace SlaveMatrix
 
         //buttons added by the other guy
 
-    	public static void NewButtons(Med med)
+    	public static void NewButtons(ModeEventDispatcher med)
     	{
     		if (Sta.SensesButton)
     		{

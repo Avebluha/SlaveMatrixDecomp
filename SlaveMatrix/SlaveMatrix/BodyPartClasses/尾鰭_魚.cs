@@ -485,7 +485,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 尾鰭_魚(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 尾鰭_魚D e)
+    	public 尾鰭_魚(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 尾鰭_魚D e)
     	{
     		ThisType = GetType();
     		Dif dif = new Dif(Sta.肢中["尾"][0]);

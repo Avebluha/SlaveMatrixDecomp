@@ -972,7 +972,7 @@ namespace SlaveMatrix
 
     	public JointS 尾_接続点 => new JointS(本体, X0Y0_前腹_腹節7_節0, 2);
 
-    	public 多足_蠍(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 多足_蠍D e)
+    	public 多足_蠍(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 多足_蠍D e)
     	{
     		多足_蠍 多足_蠍2 = this;
     		ThisType = GetType();
@@ -1326,7 +1326,7 @@ namespace SlaveMatrix
     		yield return X0Y0_前腹_腹節7_節0;
     	}
 
-    	public override void 描画0(Are Are)
+    	public override void 描画0(RenderArea Are)
     	{
     		Are.Draw(X0Y0_前腹_腹節7_節0);
     		Are.Draw(X0Y0_前腹_腹節7_節1);
@@ -1366,7 +1366,7 @@ namespace SlaveMatrix
     		Are.Draw(X0Y0_生殖口_生殖口1);
     	}
 
-    	public void 前描画(Are Are)
+    	public void 前描画(RenderArea Are)
     	{
     		Are.Draw(X0Y0_基節_肢内突起左);
     		Are.Draw(X0Y0_基節_肢内突起右);

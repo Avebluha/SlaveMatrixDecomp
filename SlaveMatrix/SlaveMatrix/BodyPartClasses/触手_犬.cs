@@ -1680,7 +1680,7 @@ namespace SlaveMatrix
 
     	public 拘束鎖 鎖5;
 
-    	public Ele[] 頭_接続;
+    	public Ele[] Head_接続;
 
     	public Ele[] 上腕左_接続;
 
@@ -6059,7 +6059,7 @@ namespace SlaveMatrix
 
     	public JointS 鎖6_接続点 => new JointS(本体, X0Y0_脚前_輪_金具右, 0);
 
-    	public 触手_犬(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 触手_犬D e)
+    	public 触手_犬(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 触手_犬D e)
     	{
     		触手_犬 触手_犬2 = this;
     		ThisType = GetType();
@@ -6746,13 +6746,13 @@ namespace SlaveMatrix
     			表示 = false;
     		}
     		Ele f;
-    		if (e.頭_接続.Count > 0)
+    		if (e.Head_接続.Count > 0)
     		{
-    			頭_接続 = e.頭_接続.Select(delegate(EleD g)
+    			Head_接続 = e.Head_接続.Select(delegate(EleD g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 触手_犬2;
-    				f.ConnectionType = ConnectionInfo.触手_犬_頭_接続;
+    				f.ConnectionType = ConnectionInfo.触手_犬_Head_接続;
     				f.接続(触手_犬2.頭_接続点);
     				return f;
     			}).ToArray();
@@ -7119,7 +7119,7 @@ namespace SlaveMatrix
     		鎖表示 = e.鎖表示;
     	}
 
-    	public override void 描画0(Are Are)
+    	public override void 描画0(RenderArea Are)
     	{
     		Are.Draw(X0Y0_脚後_鰭_鰭膜1);
     		Are.Draw(X0Y0_脚後_鰭_鰭条1);

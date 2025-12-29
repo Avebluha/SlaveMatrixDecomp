@@ -249,7 +249,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 角1_鬼(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, 角1_鬼D e)
+    	public 角1_鬼(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 角1_鬼D e)
     	{
     		ThisType = GetType();
     		Dif dif = new Dif(Sta.肢中["角"][1]);

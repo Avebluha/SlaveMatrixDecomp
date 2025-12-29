@@ -418,7 +418,7 @@ namespace SlaveMatrix
 
     	public JointS 腹板_接続点 => new JointS(本体, X0Y0_腹, 0);
 
-    	public ボテ腹_人(double DisUnit, 配色指定 配色指定, 体配色 体配色, Med Med, ボテ腹_人D e)
+    	public ボテ腹_人(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, ボテ腹_人D e)
     	{
     		ボテ腹_人 ボテ腹_人2 = this;
     		ThisType = GetType();
@@ -589,7 +589,7 @@ namespace SlaveMatrix
     		X0Y4_ハイライト.SizeXBase *= num;
     	}
 
-    	public override void 描画0(Are Are)
+    	public override void 描画0(RenderArea Are)
     	{
     		本体.Draw(Are);
     		キスマーク.Draw(Are);
