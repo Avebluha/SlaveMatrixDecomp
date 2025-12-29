@@ -854,7 +854,13 @@ namespace SlaveMatrix
 
     	public static string[] SDPaths()
     	{
-    		IEnumerable<string> source = Directory.EnumerateFiles(SavePath);
+    		if (!Directory.Exists(SavePath))
+            {
+                Directory.CreateDirectory(SavePath);
+            }
+
+            IEnumerable<string> source = Directory.EnumerateFiles(SavePath);
+
     		return new string[10]
     		{
     			source.FirstOrDefault((string e) => e.StartsWith(Path.Combine(SavePath, "0： "))),
