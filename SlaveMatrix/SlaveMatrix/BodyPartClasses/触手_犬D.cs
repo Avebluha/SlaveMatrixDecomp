@@ -17,9 +17,9 @@ namespace SlaveMatrix
 
     	public bool 脚後_鰭_鰭膜3_表示 = true;
 
-    	public bool 脚後_上腕_表示 = true;
+    	public bool 脚後_UpperArm_表示 = true;
 
-    	public bool 脚後_下腕_表示 = true;
+    	public bool 脚後_LowerArm_表示 = true;
 
     	public bool 脚後_手_手_表示 = true;
 
@@ -85,51 +85,51 @@ namespace SlaveMatrix
 
     	public bool 脚後_手_親指_爪_表示 = true;
 
-    	public bool 脚後_下腕鱗_鱗小_鱗9_表示 = true;
+    	public bool 脚後_LowerArm鱗_鱗小_鱗9_表示 = true;
 
-    	public bool 脚後_下腕鱗_鱗小_鱗8_表示 = true;
+    	public bool 脚後_LowerArm鱗_鱗小_鱗8_表示 = true;
 
-    	public bool 脚後_下腕鱗_鱗小_鱗7_表示 = true;
+    	public bool 脚後_LowerArm鱗_鱗小_鱗7_表示 = true;
 
-    	public bool 脚後_下腕鱗_鱗小_鱗6_表示 = true;
+    	public bool 脚後_LowerArm鱗_鱗小_鱗6_表示 = true;
 
-    	public bool 脚後_下腕鱗_鱗小_鱗5_表示 = true;
+    	public bool 脚後_LowerArm鱗_鱗小_鱗5_表示 = true;
 
-    	public bool 脚後_下腕鱗_鱗小_鱗4_表示 = true;
+    	public bool 脚後_LowerArm鱗_鱗小_鱗4_表示 = true;
 
-    	public bool 脚後_下腕鱗_鱗小_鱗3_表示 = true;
+    	public bool 脚後_LowerArm鱗_鱗小_鱗3_表示 = true;
 
-    	public bool 脚後_下腕鱗_鱗小_鱗2_表示 = true;
+    	public bool 脚後_LowerArm鱗_鱗小_鱗2_表示 = true;
 
-    	public bool 脚後_下腕鱗_鱗小_鱗1_表示 = true;
+    	public bool 脚後_LowerArm鱗_鱗小_鱗1_表示 = true;
 
-    	public bool 脚後_下腕鱗_鱗大_鱗9_表示 = true;
+    	public bool 脚後_LowerArm鱗_鱗大_鱗9_表示 = true;
 
-    	public bool 脚後_下腕鱗_鱗大_鱗8_表示 = true;
+    	public bool 脚後_LowerArm鱗_鱗大_鱗8_表示 = true;
 
-    	public bool 脚後_下腕鱗_鱗大_鱗7_表示 = true;
+    	public bool 脚後_LowerArm鱗_鱗大_鱗7_表示 = true;
 
-    	public bool 脚後_下腕鱗_鱗大_鱗6_表示 = true;
+    	public bool 脚後_LowerArm鱗_鱗大_鱗6_表示 = true;
 
-    	public bool 脚後_下腕鱗_鱗大_鱗5_表示 = true;
+    	public bool 脚後_LowerArm鱗_鱗大_鱗5_表示 = true;
 
-    	public bool 脚後_下腕鱗_鱗大_鱗4_表示 = true;
+    	public bool 脚後_LowerArm鱗_鱗大_鱗4_表示 = true;
 
-    	public bool 脚後_下腕鱗_鱗大_鱗3_表示 = true;
+    	public bool 脚後_LowerArm鱗_鱗大_鱗3_表示 = true;
 
-    	public bool 脚後_下腕鱗_鱗大_鱗2_表示 = true;
+    	public bool 脚後_LowerArm鱗_鱗大_鱗2_表示 = true;
 
-    	public bool 脚後_下腕鱗_鱗大_鱗1_表示 = true;
+    	public bool 脚後_LowerArm鱗_鱗大_鱗1_表示 = true;
 
-    	public bool 脚後_上腕鱗_鱗5_表示 = true;
+    	public bool 脚後_UpperArm鱗_鱗5_表示 = true;
 
-    	public bool 脚後_上腕鱗_鱗4_表示 = true;
+    	public bool 脚後_UpperArm鱗_鱗4_表示 = true;
 
-    	public bool 脚後_上腕鱗_鱗3_表示 = true;
+    	public bool 脚後_UpperArm鱗_鱗3_表示 = true;
 
-    	public bool 脚後_上腕鱗_鱗2_表示 = true;
+    	public bool 脚後_UpperArm鱗_鱗2_表示 = true;
 
-    	public bool 脚後_上腕鱗_鱗1_表示 = true;
+    	public bool 脚後_UpperArm鱗_鱗1_表示 = true;
 
     	public bool 脚後_輪_革_表示 = true;
 
@@ -427,9 +427,9 @@ namespace SlaveMatrix
 
     	public bool 頭_輪_金具右_表示 = true;
 
-    	public bool 脚前_上腕_表示 = true;
+    	public bool 脚前_UpperArm_表示 = true;
 
-    	public bool 脚前_下腕_表示 = true;
+    	public bool 脚前_LowerArm_表示 = true;
 
     	public bool 脚前_手_親指_爪_表示 = true;
 
@@ -495,51 +495,51 @@ namespace SlaveMatrix
 
     	public bool 脚前_手_鱗_鱗1_表示 = true;
 
-    	public bool 脚前_下腕鱗_鱗小_鱗9_表示 = true;
+    	public bool 脚前_LowerArm鱗_鱗小_鱗9_表示 = true;
 
-    	public bool 脚前_下腕鱗_鱗小_鱗8_表示 = true;
+    	public bool 脚前_LowerArm鱗_鱗小_鱗8_表示 = true;
 
-    	public bool 脚前_下腕鱗_鱗小_鱗7_表示 = true;
+    	public bool 脚前_LowerArm鱗_鱗小_鱗7_表示 = true;
 
-    	public bool 脚前_下腕鱗_鱗小_鱗6_表示 = true;
+    	public bool 脚前_LowerArm鱗_鱗小_鱗6_表示 = true;
 
-    	public bool 脚前_下腕鱗_鱗小_鱗5_表示 = true;
+    	public bool 脚前_LowerArm鱗_鱗小_鱗5_表示 = true;
 
-    	public bool 脚前_下腕鱗_鱗小_鱗4_表示 = true;
+    	public bool 脚前_LowerArm鱗_鱗小_鱗4_表示 = true;
 
-    	public bool 脚前_下腕鱗_鱗小_鱗3_表示 = true;
+    	public bool 脚前_LowerArm鱗_鱗小_鱗3_表示 = true;
 
-    	public bool 脚前_下腕鱗_鱗小_鱗2_表示 = true;
+    	public bool 脚前_LowerArm鱗_鱗小_鱗2_表示 = true;
 
-    	public bool 脚前_下腕鱗_鱗小_鱗1_表示 = true;
+    	public bool 脚前_LowerArm鱗_鱗小_鱗1_表示 = true;
 
-    	public bool 脚前_下腕鱗_鱗大_鱗9_表示 = true;
+    	public bool 脚前_LowerArm鱗_鱗大_鱗9_表示 = true;
 
-    	public bool 脚前_下腕鱗_鱗大_鱗8_表示 = true;
+    	public bool 脚前_LowerArm鱗_鱗大_鱗8_表示 = true;
 
-    	public bool 脚前_下腕鱗_鱗大_鱗7_表示 = true;
+    	public bool 脚前_LowerArm鱗_鱗大_鱗7_表示 = true;
 
-    	public bool 脚前_下腕鱗_鱗大_鱗6_表示 = true;
+    	public bool 脚前_LowerArm鱗_鱗大_鱗6_表示 = true;
 
-    	public bool 脚前_下腕鱗_鱗大_鱗5_表示 = true;
+    	public bool 脚前_LowerArm鱗_鱗大_鱗5_表示 = true;
 
-    	public bool 脚前_下腕鱗_鱗大_鱗4_表示 = true;
+    	public bool 脚前_LowerArm鱗_鱗大_鱗4_表示 = true;
 
-    	public bool 脚前_下腕鱗_鱗大_鱗3_表示 = true;
+    	public bool 脚前_LowerArm鱗_鱗大_鱗3_表示 = true;
 
-    	public bool 脚前_下腕鱗_鱗大_鱗2_表示 = true;
+    	public bool 脚前_LowerArm鱗_鱗大_鱗2_表示 = true;
 
-    	public bool 脚前_下腕鱗_鱗大_鱗1_表示 = true;
+    	public bool 脚前_LowerArm鱗_鱗大_鱗1_表示 = true;
 
-    	public bool 脚前_上腕鱗_鱗5_表示 = true;
+    	public bool 脚前_UpperArm鱗_鱗5_表示 = true;
 
-    	public bool 脚前_上腕鱗_鱗4_表示 = true;
+    	public bool 脚前_UpperArm鱗_鱗4_表示 = true;
 
-    	public bool 脚前_上腕鱗_鱗3_表示 = true;
+    	public bool 脚前_UpperArm鱗_鱗3_表示 = true;
 
-    	public bool 脚前_上腕鱗_鱗2_表示 = true;
+    	public bool 脚前_UpperArm鱗_鱗2_表示 = true;
 
-    	public bool 脚前_上腕鱗_鱗1_表示 = true;
+    	public bool 脚前_UpperArm鱗_鱗1_表示 = true;
 
     	public bool 脚前_鰭_鰭膜1_表示 = true;
 
@@ -577,13 +577,13 @@ namespace SlaveMatrix
 
     	public List<EleD> Head_接続 = new List<EleD>();
 
-    	public List<EleD> 上腕左_接続 = new List<EleD>();
+    	public List<EleD> UpperArm左_接続 = new List<EleD>();
 
-    	public List<EleD> 上腕右_接続 = new List<EleD>();
+    	public List<EleD> UpperArm右_接続 = new List<EleD>();
 
-    	public List<EleD> 下腕左_接続 = new List<EleD>();
+    	public List<EleD> LowerArm左_接続 = new List<EleD>();
 
-    	public List<EleD> 下腕右_接続 = new List<EleD>();
+    	public List<EleD> LowerArm右_接続 = new List<EleD>();
 
     	public List<EleD> 手左_接続 = new List<EleD>();
 
@@ -601,32 +601,32 @@ namespace SlaveMatrix
     		e.接続情報 = ConnectionInfo.触手_犬_Head_接続;
     	}
 
-    	public void 上腕左接続(EleD e)
+    	public void UpperArm左接続(EleD e)
     	{
-    		上腕左_接続.Add(e);
+    		UpperArm左_接続.Add(e);
     		e.Par = this;
-    		e.接続情報 = ConnectionInfo.触手_犬_上腕左_接続;
+    		e.接続情報 = ConnectionInfo.触手_犬_UpperArm左_接続;
     	}
 
-    	public void 上腕右接続(EleD e)
+    	public void UpperArm右接続(EleD e)
     	{
-    		上腕右_接続.Add(e);
+    		UpperArm右_接続.Add(e);
     		e.Par = this;
-    		e.接続情報 = ConnectionInfo.触手_犬_上腕右_接続;
+    		e.接続情報 = ConnectionInfo.触手_犬_UpperArm右_接続;
     	}
 
-    	public void 下腕左接続(EleD e)
+    	public void LowerArm左接続(EleD e)
     	{
-    		下腕左_接続.Add(e);
+    		LowerArm左_接続.Add(e);
     		e.Par = this;
-    		e.接続情報 = ConnectionInfo.触手_犬_下腕左_接続;
+    		e.接続情報 = ConnectionInfo.触手_犬_LowerArm左_接続;
     	}
 
-    	public void 下腕右接続(EleD e)
+    	public void LowerArm右接続(EleD e)
     	{
-    		下腕右_接続.Add(e);
+    		LowerArm右_接続.Add(e);
     		e.Par = this;
-    		e.接続情報 = ConnectionInfo.触手_犬_下腕右_接続;
+    		e.接続情報 = ConnectionInfo.触手_犬_LowerArm右_接続;
     	}
 
     	public void 手左接続(EleD e)

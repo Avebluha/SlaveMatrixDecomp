@@ -42,8 +42,8 @@ namespace SlaveMatrix
     		Sta.触覚_甲Dt.ToString(),
     		Sta.触覚_蝶Dt.ToString(),
     		Sta.触覚_蛾Dt.ToString(),
-    		Sta.上腕_鳥Dt.ToString(),
-    		Sta.上腕_蝙Dt.ToString(),
+    		Sta.UpperArm_鳥Dt.ToString(),
+    		Sta.UpperArm_蝙Dt.ToString(),
     		Sta.獣耳Dt.ToString(),
     		Sta.植Dt.ToString()
     	};
@@ -97,8 +97,8 @@ namespace SlaveMatrix
     		Sta.前翅_草Dt.ToString(),
     		Sta.後翅_甲Dt.ToString(),
     		Sta.後翅_草Dt.ToString(),
-    		Sta.上腕_鳥Dt.ToString(),
-    		Sta.上腕_蝙Dt.ToString()
+    		Sta.UpperArm_鳥Dt.ToString(),
+    		Sta.UpperArm_蝙Dt.ToString()
     	};
 
     	private static HashSet<string> 胸翼下人 = new HashSet<string>
@@ -125,8 +125,8 @@ namespace SlaveMatrix
     		Sta.触手_軟Dt.ToString(),
     		Sta.触手_触Dt.ToString(),
     		Sta.触手_蔦Dt.ToString(),
-    		Sta.上腕_鳥Dt.ToString(),
-    		Sta.上腕_蝙Dt.ToString()
+    		Sta.UpperArm_鳥Dt.ToString(),
+    		Sta.UpperArm_蝙Dt.ToString()
     	};
 
     	private static HashSet<string> 腰翼人 = new HashSet<string>
@@ -166,8 +166,8 @@ namespace SlaveMatrix
     		Sta.前翅_草Dt.ToString(),
     		Sta.後翅_甲Dt.ToString(),
     		Sta.後翅_草Dt.ToString(),
-    		Sta.上腕_鳥Dt.ToString(),
-    		Sta.上腕_蝙Dt.ToString()
+    		Sta.UpperArm_鳥Dt.ToString(),
+    		Sta.UpperArm_蝙Dt.ToString()
     	};
 
     	private static HashSet<string> 胸翼下獣 = new HashSet<string>
@@ -563,39 +563,39 @@ namespace SlaveMatrix
 
     	private static HashSet<string> 頭頂後 = new HashSet<string> { Sta.頭頂後_宇Dt.ToString() };
 
-    	private static HashSet<string> 上腕人 = new HashSet<string>
+    	private static HashSet<string> UpperArm人 = new HashSet<string>
     	{
     		Sta.鰭_魚Dt.ToString(),
     		Sta.鰭_豚Dt.ToString(),
     		Sta.鰭_鯨Dt.ToString(),
     		Sta.触肢_肢蠍Dt.ToString(),
-    		Sta.上腕_人Dt.ToString(),
-    		Sta.上腕_鳥Dt.ToString(),
-    		Sta.上腕_蝙Dt.ToString()
+    		Sta.UpperArm_人Dt.ToString(),
+    		Sta.UpperArm_鳥Dt.ToString(),
+    		Sta.UpperArm_蝙Dt.ToString()
     	};
 
-    	private static HashSet<string> 上腕獣 = new HashSet<string>
+    	private static HashSet<string> UpperArm獣 = new HashSet<string>
     	{
     		Sta.触肢_肢蠍Dt.ToString(),
-    		Sta.上腕_獣Dt.ToString(),
-    		Sta.上腕_蹄Dt.ToString(),
+    		Sta.UpperArm_獣Dt.ToString(),
+    		Sta.UpperArm_蹄Dt.ToString(),
     		Sta.Leg_鳥Dt.ToString(),
     		Sta.Leg_竜Dt.ToString()
     	};
 
-    	private static HashSet<string> 下腕人 = new HashSet<string>
+    	private static HashSet<string> LowerArm人 = new HashSet<string>
     	{
-    		Sta.下腕_人Dt.ToString(),
-    		Sta.下腕_獣Dt.ToString()
+    		Sta.LowerArm_人Dt.ToString(),
+    		Sta.LowerArm_獣Dt.ToString()
     	};
 
-    	private static HashSet<string> 下腕鳥 = new HashSet<string> { Sta.下腕_鳥Dt.ToString() };
+    	private static HashSet<string> LowerArm鳥 = new HashSet<string> { Sta.LowerArm_鳥Dt.ToString() };
 
-    	private static HashSet<string> 下腕蝙 = new HashSet<string> { Sta.下腕_蝙Dt.ToString() };
+    	private static HashSet<string> LowerArm蝙 = new HashSet<string> { Sta.LowerArm_蝙Dt.ToString() };
 
-    	private static HashSet<string> 下腕獣 = new HashSet<string> { Sta.下腕_獣Dt.ToString() };
+    	private static HashSet<string> LowerArm獣 = new HashSet<string> { Sta.LowerArm_獣Dt.ToString() };
 
-    	private static HashSet<string> 下腕蹄 = new HashSet<string> { Sta.下腕_蹄Dt.ToString() };
+    	private static HashSet<string> LowerArm蹄 = new HashSet<string> { Sta.LowerArm_蹄Dt.ToString() };
 
     	private static HashSet<string> 手人 = new HashSet<string> { Sta.手_人Dt.ToString() };
 
@@ -693,9 +693,9 @@ namespace SlaveMatrix
 
     	private static HashSet<string> 犬頭 = new HashSet<string>();
 
-    	private static HashSet<string> 犬上腕 = new HashSet<string>();
+    	private static HashSet<string> 犬UpperArm = new HashSet<string>();
 
-    	private static HashSet<string> 犬下腕 = new HashSet<string>();
+    	private static HashSet<string> 犬LowerArm = new HashSet<string>();
 
     	private static HashSet<string> 犬手 = new HashSet<string>();
 
@@ -1247,55 +1247,55 @@ namespace SlaveMatrix
     			顔面
     		},
     		{
-    			ConnectionInfo.Shoulder_上腕_接続,
-    			上腕人
+    			ConnectionInfo.Shoulder_UpperArm_接続,
+    			UpperArm人
     		},
     		{
-    			ConnectionInfo.四足脇_上腕_接続,
-    			上腕獣
+    			ConnectionInfo.四足脇_UpperArm_接続,
+    			UpperArm獣
     		},
     		{
-    			ConnectionInfo.上腕_人_下腕_接続,
-    			下腕人
+    			ConnectionInfo.UpperArm_人_LowerArm_接続,
+    			LowerArm人
     		},
     		{
-    			ConnectionInfo.上腕_鳥_下腕_接続,
-    			下腕鳥
+    			ConnectionInfo.UpperArm_鳥_LowerArm_接続,
+    			LowerArm鳥
     		},
     		{
-    			ConnectionInfo.上腕_蝙_下腕_接続,
-    			下腕蝙
+    			ConnectionInfo.UpperArm_蝙_LowerArm_接続,
+    			LowerArm蝙
     		},
     		{
-    			ConnectionInfo.上腕_獣_下腕_接続,
-    			下腕獣
+    			ConnectionInfo.UpperArm_獣_LowerArm_接続,
+    			LowerArm獣
     		},
     		{
-    			ConnectionInfo.上腕_蹄_下腕_接続,
-    			下腕蹄
+    			ConnectionInfo.UpperArm_蹄_LowerArm_接続,
+    			LowerArm蹄
     		},
     		{
-    			ConnectionInfo.下腕_人_手_接続,
+    			ConnectionInfo.LowerArm_人_手_接続,
     			手人
     		},
     		{
-    			ConnectionInfo.下腕_鳥_手_接続,
+    			ConnectionInfo.LowerArm_鳥_手_接続,
     			手鳥
     		},
     		{
-    			ConnectionInfo.下腕_蝙_手_接続,
+    			ConnectionInfo.LowerArm_蝙_手_接続,
     			手蝙
     		},
     		{
-    			ConnectionInfo.下腕_獣_手_接続,
+    			ConnectionInfo.LowerArm_獣_手_接続,
     			手獣
     		},
     		{
-    			ConnectionInfo.下腕_蹄_手_接続,
+    			ConnectionInfo.LowerArm_蹄_手_接続,
     			手蹄
     		},
     		{
-    			ConnectionInfo.下腕_人_虫鎌_接続,
+    			ConnectionInfo.LowerArm_人_虫鎌_接続,
     			虫鎌
     		},
     		{
@@ -1355,20 +1355,20 @@ namespace SlaveMatrix
     			犬頭
     		},
     		{
-    			ConnectionInfo.触手_犬_上腕左_接続,
-    			犬上腕
+    			ConnectionInfo.触手_犬_UpperArm左_接続,
+    			犬UpperArm
     		},
     		{
-    			ConnectionInfo.触手_犬_上腕右_接続,
-    			犬上腕
+    			ConnectionInfo.触手_犬_UpperArm右_接続,
+    			犬UpperArm
     		},
     		{
-    			ConnectionInfo.触手_犬_下腕左_接続,
-    			犬下腕
+    			ConnectionInfo.触手_犬_LowerArm左_接続,
+    			犬LowerArm
     		},
     		{
-    			ConnectionInfo.触手_犬_下腕右_接続,
-    			犬下腕
+    			ConnectionInfo.触手_犬_LowerArm右_接続,
+    			犬LowerArm
     		},
     		{
     			ConnectionInfo.触手_犬_手左_接続,
@@ -3780,11 +3780,11 @@ namespace SlaveMatrix
     			{
     				item32.尺度YB = 1.0;
     			}
-    			else if (item32 is 上腕_蝙D && (item32.接続情報 == ConnectionInfo.基髪_頭頂左_接続 || item32.接続情報 == ConnectionInfo.基髪_頭頂右_接続))
+    			else if (item32 is UpperArm_蝙D && (item32.接続情報 == ConnectionInfo.基髪_頭頂左_接続 || item32.接続情報 == ConnectionInfo.基髪_頭頂右_接続))
     			{
-    				((上腕_蝙D)item32).竜性_鱗1_表示 = false;
+    				((UpperArm_蝙D)item32).竜性_鱗1_表示 = false;
     			}
-    			else if (item32 is 上腕D && item32.Par is ShoulderD)
+    			else if (item32 is UpperArmD && item32.Par is ShoulderD)
     			{
     				item32.AlignR();
     			}
@@ -4475,7 +4475,7 @@ namespace SlaveMatrix
     				l = 0.0;
     			}
     		}
-    		if (l == 0.0 && (接続 == ConnectionInfo.四足脇_上腕_接続 || 接続 == ConnectionInfo.Waist_腿左_接続 || 接続 == ConnectionInfo.Waist_腿左_接続 || 接続 == ConnectionInfo.四足腰_腿左_接続 || 接続 == ConnectionInfo.四足腰_腿左_接続 || 接続 == ConnectionInfo.長物_魚_尾_接続 || 接続 == ConnectionInfo.長物_鯨_尾_接続 || 接続 == ConnectionInfo.長物_蛇_Torso_接続 || 接続 == ConnectionInfo.長物_蟲_Torso_接続 || 接続 == ConnectionInfo.Torso_蛇_Torso_接続 || 接続 == ConnectionInfo.Torso_蟲_Torso_接続 || 接続 == ConnectionInfo.多足_蛸_軟体外左_接続 || 接続 == ConnectionInfo.多足_蛸_軟体外右_接続 || 接続 == ConnectionInfo.多足_蛸_軟体内左_接続 || 接続 == ConnectionInfo.多足_蛸_軟体内右_接続 || 接続 == ConnectionInfo.単足_植_根外左_接続 || 接続 == ConnectionInfo.単足_植_根内左_接続 || 接続 == ConnectionInfo.単足_植_根中央_接続 || 接続 == ConnectionInfo.単足_植_根内右_接続 || 接続 == ConnectionInfo.単足_植_根外右_接続 || 接続 == ConnectionInfo.頭頂_宇_頭部後_接続 || (num * 1.1).Lot()))
+    		if (l == 0.0 && (接続 == ConnectionInfo.四足脇_UpperArm_接続 || 接続 == ConnectionInfo.Waist_腿左_接続 || 接続 == ConnectionInfo.Waist_腿左_接続 || 接続 == ConnectionInfo.四足腰_腿左_接続 || 接続 == ConnectionInfo.四足腰_腿左_接続 || 接続 == ConnectionInfo.長物_魚_尾_接続 || 接続 == ConnectionInfo.長物_鯨_尾_接続 || 接続 == ConnectionInfo.長物_蛇_Torso_接続 || 接続 == ConnectionInfo.長物_蟲_Torso_接続 || 接続 == ConnectionInfo.Torso_蛇_Torso_接続 || 接続 == ConnectionInfo.Torso_蟲_Torso_接続 || 接続 == ConnectionInfo.多足_蛸_軟体外左_接続 || 接続 == ConnectionInfo.多足_蛸_軟体外右_接続 || 接続 == ConnectionInfo.多足_蛸_軟体内左_接続 || 接続 == ConnectionInfo.多足_蛸_軟体内右_接続 || 接続 == ConnectionInfo.単足_植_根外左_接続 || 接続 == ConnectionInfo.単足_植_根内左_接続 || 接続 == ConnectionInfo.単足_植_根中央_接続 || 接続 == ConnectionInfo.単足_植_根内右_接続 || 接続 == ConnectionInfo.単足_植_根外右_接続 || 接続 == ConnectionInfo.頭頂_宇_頭部後_接続 || (num * 1.1).Lot()))
     		{
     			l = 1.0;
     		}

@@ -364,9 +364,9 @@ namespace SlaveMatrix
 
     	private List<Ele> 腕右 = new List<Ele>();
 
-    	private List<Ele> 下腕以降左 = new List<Ele>();
+    	private List<Ele> LowerArm以降左 = new List<Ele>();
 
-    	private List<Ele> 下腕以降右 = new List<Ele>();
+    	private List<Ele> LowerArm以降右 = new List<Ele>();
 
     	private List<Ele> 胸上左接続 = new List<Ele>();
 
@@ -422,21 +422,21 @@ namespace SlaveMatrix
 
     	public 触覚_甲 触覚甲右;
 
-    	public List<腕人> 腕人左 = new List<腕人>();
+    	public List<Arm人> Arm人左 = new List<Arm人>();
 
-    	public List<腕人> 腕人右 = new List<腕人>();
+    	public List<Arm人> Arm人右 = new List<Arm人>();
 
-    	public List<腕翼鳥> 腕翼鳥左 = new List<腕翼鳥>();
+    	public List<Arm翼鳥> 腕翼鳥左 = new List<Arm翼鳥>();
 
-    	public List<腕翼鳥> 腕翼鳥右 = new List<腕翼鳥>();
+    	public List<Arm翼鳥> 腕翼鳥右 = new List<Arm翼鳥>();
 
-    	public List<腕翼獣> 腕翼獣左 = new List<腕翼獣>();
+    	public List<Arm翼獣> 腕翼獣左 = new List<Arm翼獣>();
 
-    	public List<腕翼獣> 腕翼獣右 = new List<腕翼獣>();
+    	public List<Arm翼獣> 腕翼獣右 = new List<Arm翼獣>();
 
-    	public List<腕獣> 腕獣左 = new List<腕獣>();
+    	public List<Arm獣> 腕獣左 = new List<Arm獣>();
 
-    	public List<腕獣> 腕獣右 = new List<腕獣>();
+    	public List<Arm獣> 腕獣右 = new List<Arm獣>();
 
     	public List<脚人> 脚人左 = new List<脚人>();
 
@@ -810,7 +810,7 @@ namespace SlaveMatrix
 
     	private ブーツ情報 ブーツi;
 
-    	public int 腕人n;
+    	public int Arm人n;
 
     	public int 腕翼鳥n;
 
@@ -2948,13 +2948,13 @@ namespace SlaveMatrix
     		鞭痕D wd = new 鞭痕D();
     		蝙通常 = new List<蝙通常>();
     		Shoulder 人肩;
-    		腕獣 腕獣;
+    		Arm獣 腕獣;
     		腿_人 人腿;
     		脚人 脚人;
     		脚獣 脚獣;
-    		腕翼鳥 腕翼鳥;
-    		腕翼獣 腕翼獣;
-    		腕人 腕人;
+    		Arm翼鳥 腕翼鳥;
+    		Arm翼獣 腕翼獣;
+    		Arm人 腕人;
     		翼鳥 翼鳥;
     		翼獣 翼獣;
     		Ele p;
@@ -2997,15 +2997,15 @@ namespace SlaveMatrix
     					{
     						current_element.表示 = false;
     					}
-    					腕獣 = default(腕獣);
+    					腕獣 = default(Arm獣);
     					腕獣.Shoulder = 四足脇2;
-    					四足脇2.上腕_接続.SetEle(delegate(獣上腕 上腕)
+    					四足脇2.UpperArm_接続.SetEle(delegate(獣UpperArm UpperArm)
     					{
-    						腕獣.上腕 = 上腕;
-    						上腕.下腕_接続.SetEle(delegate(獣下腕 下腕)
+    						腕獣.UpperArm = UpperArm;
+    						UpperArm.LowerArm_接続.SetEle(delegate(獣LowerArm LowerArm)
     						{
-    							腕獣.下腕 = 下腕;
-    							下腕.手_接続.SetEle(delegate(獣手 手)
+    							腕獣.LowerArm = LowerArm;
+    							LowerArm.手_接続.SetEle(delegate(獣手 手)
     							{
     								腕獣.手 = 手;
     							});
@@ -3109,27 +3109,27 @@ namespace SlaveMatrix
     					});
     					脚獣右.Add(脚獣);
     				}
-    				else if (current_element is 上腕)
+    				else if (current_element is UpperArm)
     				{
-    					if (current_element.ConnectionType == ConnectionInfo.Shoulder_上腕_接続)
+    					if (current_element.ConnectionType == ConnectionInfo.Shoulder_UpperArm_接続)
     					{
     						人肩 = (Shoulder)current_element.Par;
-    						if (current_element is 上腕_鳥)
+    						if (current_element is UpperArm_鳥)
     						{
-    							腕翼鳥 = default(腕翼鳥);
+    							腕翼鳥 = default(Arm翼鳥);
     							腕翼鳥.Shoulder = 人肩;
-    							人肩.上腕_接続.SetEle(delegate(上腕_鳥 上腕)
+    							人肩.UpperArm_接続.SetEle(delegate(UpperArm_鳥 UpperArm)
     							{
-    								上腕.キスマーク = new スタンプK(Med, Are, Cha, bod, kd, 上腕);
-    								sk.Add(上腕.キスマーク);
-    								上腕.鞭痕 = new スタンプW(Med, Are, Cha, bod, wd, 上腕);
-    								sw.Add(上腕.鞭痕);
-    								上腕.鳥翼上腕CD.c2.Col2 = 上腕.小雨覆CD.c2.Col1;
-    								腕翼鳥.上腕 = 上腕;
-    								上腕.下腕_接続.SetEle(delegate(下腕_鳥 下腕)
+    								UpperArm.キスマーク = new スタンプK(Med, Are, Cha, bod, kd, UpperArm);
+    								sk.Add(UpperArm.キスマーク);
+    								UpperArm.鞭痕 = new スタンプW(Med, Are, Cha, bod, wd, UpperArm);
+    								sw.Add(UpperArm.鞭痕);
+    								UpperArm.鳥翼UpperArmCD.c2.Col2 = UpperArm.小雨覆CD.c2.Col1;
+    								腕翼鳥.UpperArm = UpperArm;
+    								UpperArm.LowerArm_接続.SetEle(delegate(LowerArm_鳥 LowerArm)
     								{
-    									腕翼鳥.下腕 = 下腕;
-    									下腕.手_接続.SetEle(delegate(手_鳥 手)
+    									腕翼鳥.LowerArm = LowerArm;
+    									LowerArm.手_接続.SetEle(delegate(手_鳥 手)
     									{
     										腕翼鳥.手 = 手;
     									});
@@ -3137,22 +3137,22 @@ namespace SlaveMatrix
     							});
     							腕翼鳥右.Add(腕翼鳥);
     						}
-    						else if (current_element is 上腕_蝙)
+    						else if (current_element is UpperArm_蝙)
     						{
-    							腕翼獣 = default(腕翼獣);
+    							腕翼獣 = default(Arm翼獣);
     							腕翼獣.Shoulder = 人肩;
-    							人肩.上腕_接続.SetEle(delegate(上腕_蝙 上腕)
+    							人肩.UpperArm_接続.SetEle(delegate(UpperArm_蝙 UpperArm)
     							{
-    								上腕.獣翼上腕CD.c2.Col1 = 人肩.Shoulder_ShoulderCD.c2.Col1;
-    								腕翼獣.上腕 = 上腕;
-    								上腕.下腕_接続.SetEle(delegate(下腕_蝙 下腕)
+    								UpperArm.獣翼UpperArmCD.c2.Col1 = 人肩.Shoulder_ShoulderCD.c2.Col1;
+    								腕翼獣.UpperArm = UpperArm;
+    								UpperArm.LowerArm_接続.SetEle(delegate(LowerArm_蝙 LowerArm)
     								{
-    									腕翼獣.下腕 = 下腕;
-    									下腕.手_接続.SetEle(delegate(手_蝙 手)
+    									腕翼獣.LowerArm = LowerArm;
+    									LowerArm.手_接続.SetEle(delegate(手_蝙 手)
     									{
     										腕翼獣.手 = 手;
-    										上腕.接着 = () => bod.腰.X0Y0_腰.ToGlobal(bod.腰.X0Y0_腰.BasePointBase);
-    										bod.蝙通常.Add(new 蝙通常(上腕, 下腕, 手));
+    										UpperArm.接着 = () => bod.腰.X0Y0_腰.ToGlobal(bod.腰.X0Y0_腰.BasePointBase);
+    										bod.蝙通常.Add(new 蝙通常(UpperArm, LowerArm, 手));
     									});
     								});
     							});
@@ -3160,143 +3160,143 @@ namespace SlaveMatrix
     						}
     						else
     						{
-    							腕人 = default(腕人);
+    							腕人 = default(Arm人);
     							腕人.Shoulder = 人肩;
-    							人肩.上腕_接続.SetEle(delegate(上腕_人 上腕)
+    							人肩.UpperArm_接続.SetEle(delegate(UpperArm_人 UpperArm)
     							{
-    								上腕.キスマーク = new スタンプK(Med, Are, Cha, bod, kd, 上腕);
-    								sk.Add(上腕.キスマーク);
-    								上腕.鞭痕 = new スタンプW(Med, Are, Cha, bod, wd, 上腕);
-    								sw.Add(上腕.鞭痕);
-    								腕人.上腕 = 上腕;
-    								上腕.下腕_接続.SetEle(delegate(下腕_人 下腕)
+    								UpperArm.キスマーク = new スタンプK(Med, Are, Cha, bod, kd, UpperArm);
+    								sk.Add(UpperArm.キスマーク);
+    								UpperArm.鞭痕 = new スタンプW(Med, Are, Cha, bod, wd, UpperArm);
+    								sw.Add(UpperArm.鞭痕);
+    								腕人.UpperArm = UpperArm;
+    								UpperArm.LowerArm_接続.SetEle(delegate(LowerArm_人 LowerArm)
     								{
-    									下腕.腕輪尺度修正();
-    									下腕.キスマーク = new スタンプK(Med, Are, Cha, bod, kd, 下腕);
-    									sk.Add(下腕.キスマーク);
-    									下腕.鞭痕 = new スタンプW(Med, Are, Cha, bod, wd, 下腕);
-    									sw.Add(下腕.鞭痕);
-    									if (上腕.獣性_獣毛1_表示)
+    									LowerArm.腕輪尺度修正();
+    									LowerArm.キスマーク = new スタンプK(Med, Are, Cha, bod, kd, LowerArm);
+    									sk.Add(LowerArm.キスマーク);
+    									LowerArm.鞭痕 = new スタンプW(Med, Are, Cha, bod, wd, LowerArm);
+    									sw.Add(LowerArm.鞭痕);
+    									if (UpperArm.獣性_獣毛1_表示)
     									{
-    										下腕.下腕CD.c2 = 上腕.獣性_獣毛1CD.c2;
-    										下腕.筋肉_筋肉上CD.c2 = 上腕.獣性_獣毛1CD.c2;
-    										下腕.筋肉_筋肉下CD.c2 = 上腕.獣性_獣毛1CD.c2;
+    										LowerArm.LowerArmCD.c2 = UpperArm.獣性_獣毛1CD.c2;
+    										LowerArm.筋肉_筋肉上CD.c2 = UpperArm.獣性_獣毛1CD.c2;
+    										LowerArm.筋肉_筋肉下CD.c2 = UpperArm.獣性_獣毛1CD.c2;
     									}
-    									if (上腕.虫性_虫腕_表示 && (!下腕.虫性1_虫腕上_表示 || !下腕.虫性2_虫腕下_表示))
+    									if (UpperArm.虫性_虫腕_表示 && (!LowerArm.虫性1_虫腕上_表示 || !LowerArm.虫性2_虫腕下_表示))
     									{
-    										下腕.下腕CD.c2 = 上腕.虫性_虫腕CD.c2;
-    										下腕.筋肉_筋肉上CD.c2 = 上腕.虫性_虫腕CD.c2;
-    										下腕.筋肉_筋肉下CD.c2 = 上腕.虫性_虫腕CD.c2;
+    										LowerArm.LowerArmCD.c2 = UpperArm.虫性_虫腕CD.c2;
+    										LowerArm.筋肉_筋肉上CD.c2 = UpperArm.虫性_虫腕CD.c2;
+    										LowerArm.筋肉_筋肉下CD.c2 = UpperArm.虫性_虫腕CD.c2;
     									}
-    									if (下腕.植性2_萼_萼中_表示)
+    									if (LowerArm.植性2_萼_萼中_表示)
     									{
-    										上腕.上腕CD.c2.Col2 = 下腕.植性2_萼_萼中CD.c2.Col2;
-    										上腕.筋肉上CD.c2.Col2 = 下腕.植性2_萼_萼中CD.c2.Col2;
-    										上腕.筋肉下CD.c2.Col2 = 下腕.植性2_萼_萼中CD.c2.Col2;
+    										UpperArm.UpperArmCD.c2.Col2 = LowerArm.植性2_萼_萼中CD.c2.Col2;
+    										UpperArm.筋肉上CD.c2.Col2 = LowerArm.植性2_萼_萼中CD.c2.Col2;
+    										UpperArm.筋肉下CD.c2.Col2 = LowerArm.植性2_萼_萼中CD.c2.Col2;
     									}
-    									else if (下腕.獣性1_獣腕_表示)
+    									else if (LowerArm.獣性1_獣腕_表示)
     									{
-    										上腕.上腕CD.c2.Col2 = 下腕.獣性1_獣腕CD.c2.Col1;
-    										上腕.筋肉上CD.c2.Col2 = 下腕.獣性1_獣腕CD.c2.Col1;
-    										上腕.筋肉下CD.c2.Col2 = 下腕.獣性1_獣腕CD.c2.Col1;
+    										UpperArm.UpperArmCD.c2.Col2 = LowerArm.獣性1_獣腕CD.c2.Col1;
+    										UpperArm.筋肉上CD.c2.Col2 = LowerArm.獣性1_獣腕CD.c2.Col1;
+    										UpperArm.筋肉下CD.c2.Col2 = LowerArm.獣性1_獣腕CD.c2.Col1;
     									}
     									else
     									{
-    										上腕.上腕CD.c2.Col2 = 下腕.下腕CD.c2.Col1;
-    										上腕.筋肉上CD.c2.Col2 = 下腕.下腕CD.c2.Col1;
-    										上腕.筋肉下CD.c2.Col2 = 下腕.下腕CD.c2.Col1;
+    										UpperArm.UpperArmCD.c2.Col2 = LowerArm.LowerArmCD.c2.Col1;
+    										UpperArm.筋肉上CD.c2.Col2 = LowerArm.LowerArmCD.c2.Col1;
+    										UpperArm.筋肉下CD.c2.Col2 = LowerArm.LowerArmCD.c2.Col1;
     									}
-    									腕人.下腕 = 下腕;
-    									下腕.手_接続.SetEle(delegate(手_人 手)
+    									腕人.LowerArm = LowerArm;
+    									LowerArm.手_接続.SetEle(delegate(手_人 手)
     									{
-    										if (下腕.獣性1_獣腕_表示 || 下腕.下腕CD.c2.Col1 == 下腕.獣性1_獣腕CD.c2.Col1)
+    										if (LowerArm.獣性1_獣腕_表示 || LowerArm.LowerArmCD.c2.Col1 == LowerArm.獣性1_獣腕CD.c2.Col1)
     										{
-    											手.手CD.c2 = 下腕.獣性1_獣腕CD.c2;
+    											手.手CD.c2 = LowerArm.獣性1_獣腕CD.c2;
     											手.親指_親指1CD.c2 = 手.手CD.c2;
     										}
     										else if (手.X0Y0_手.OP[6].Outline)
     										{
-    											手.手CD.c2 = 下腕.虫性1_虫腕上CD.c2;
+    											手.手CD.c2 = LowerArm.虫性1_虫腕上CD.c2;
     											手.親指_親指1CD.c2 = 手.手CD.c2;
     										}
     										腕人.手 = 手;
     									});
     								});
-    								上腕.下腕_接続.SetEle(delegate(下腕_獣 下腕)
+    								UpperArm.LowerArm_接続.SetEle(delegate(LowerArm_獣 LowerArm)
     								{
-    									上腕.上腕CD.c2.Col2 = 下腕.下腕CD.c2.Col1;
-    									上腕.筋肉上CD.c2.Col2 = 下腕.下腕CD.c2.Col1;
-    									上腕.筋肉下CD.c2.Col2 = 下腕.下腕CD.c2.Col1;
-    									下腕.X0Y0_下腕.OP[6].Outline = true;
+    									UpperArm.UpperArmCD.c2.Col2 = LowerArm.LowerArmCD.c2.Col1;
+    									UpperArm.筋肉上CD.c2.Col2 = LowerArm.LowerArmCD.c2.Col1;
+    									UpperArm.筋肉下CD.c2.Col2 = LowerArm.LowerArmCD.c2.Col1;
+    									LowerArm.X0Y0_LowerArm.OP[6].Outline = true;
     								});
     							});
-    							腕人右.Add(腕人);
+    							Arm人右.Add(腕人);
     						}
     					}
-    					else if (current_element is 上腕_鳥)
+    					else if (current_element is UpperArm_鳥)
     					{
     						翼鳥 = default(翼鳥);
-    						翼鳥.上腕 = (上腕_鳥)current_element;
-    						翼鳥.上腕.鳥翼上腕CD.c2 = 翼鳥.上腕.小雨覆CD.c2;
-    						翼鳥.上腕.キスマーク = new スタンプK(Med, Are, Cha, this, kd, 翼鳥.上腕);
-    						sk.Add(翼鳥.上腕.キスマーク);
-    						翼鳥.上腕.鞭痕 = new スタンプW(Med, Are, Cha, this, wd, 翼鳥.上腕);
-    						sw.Add(翼鳥.上腕.鞭痕);
-    						翼鳥.上腕.下腕_接続.SetEle(delegate(下腕_鳥 下腕)
+    						翼鳥.UpperArm = (UpperArm_鳥)current_element;
+    						翼鳥.UpperArm.鳥翼UpperArmCD.c2 = 翼鳥.UpperArm.小雨覆CD.c2;
+    						翼鳥.UpperArm.キスマーク = new スタンプK(Med, Are, Cha, this, kd, 翼鳥.UpperArm);
+    						sk.Add(翼鳥.UpperArm.キスマーク);
+    						翼鳥.UpperArm.鞭痕 = new スタンプW(Med, Are, Cha, this, wd, 翼鳥.UpperArm);
+    						sw.Add(翼鳥.UpperArm.鞭痕);
+    						翼鳥.UpperArm.LowerArm_接続.SetEle(delegate(LowerArm_鳥 LowerArm)
     						{
-    							翼鳥.下腕 = 下腕;
-    							下腕.手_接続.SetEle(delegate(手_鳥 手)
+    							翼鳥.LowerArm = LowerArm;
+    							LowerArm.手_接続.SetEle(delegate(手_鳥 手)
     							{
     								翼鳥.手 = 手;
     							});
     						});
     						翼鳥右.Add(翼鳥);
     					}
-    					else if (current_element is 上腕_蝙)
+    					else if (current_element is UpperArm_蝙)
     					{
     						翼獣 = default(翼獣);
-    						翼獣.上腕 = (上腕_蝙)current_element;
-    						翼獣.上腕.下腕_接続.SetEle(delegate(下腕_蝙 下腕)
+    						翼獣.UpperArm = (UpperArm_蝙)current_element;
+    						翼獣.UpperArm.LowerArm_接続.SetEle(delegate(LowerArm_蝙 LowerArm)
     						{
-    							翼獣.下腕 = 下腕;
-    							下腕.手_接続.SetEle(delegate(手_蝙 手)
+    							翼獣.LowerArm = LowerArm;
+    							LowerArm.手_接続.SetEle(delegate(手_蝙 手)
     							{
     								翼獣.手 = 手;
-    								p = 翼獣.上腕.Par;
-    								pp = 翼獣.上腕.Par.Par;
+    								p = 翼獣.UpperArm.Par;
+    								pp = 翼獣.UpperArm.Par.Par;
     								if (p is 基髪)
     								{
-    									翼獣.上腕.接着 = () => bod.頭.X0Y0_頭.ToGlobal(bod.頭.X0Y0_頭.BasePointBase);
+    									翼獣.UpperArm.接着 = () => bod.頭.X0Y0_頭.ToGlobal(bod.頭.X0Y0_頭.BasePointBase);
     								}
     								else if (p is Chest)
     								{
-    									翼獣.上腕.接着 = () => bod.胴.X0Y0_胴.ToGlobal(bod.胴.X0Y0_胴.BasePointBase);
+    									翼獣.UpperArm.接着 = () => bod.胴.X0Y0_胴.ToGlobal(bod.胴.X0Y0_胴.BasePointBase);
     								}
     								else if (p is Torso || p is Waist)
     								{
-    									翼獣.上腕.接着 = () => bod.腰.X0Y0_腰.ToGlobal(bod.腰.X0Y0_腰.JP[4].Joint);
+    									翼獣.UpperArm.接着 = () => bod.腰.X0Y0_腰.ToGlobal(bod.腰.X0Y0_腰.JP[4].Joint);
     								}
     								else if (p is 四足胸)
     								{
-    									翼獣.上腕.接着 = () => bod.胴_獣.X0Y0_胴.ToGlobal(bod.胴_獣.X0Y0_胴.BasePointBase);
+    									翼獣.UpperArm.接着 = () => bod.胴_獣.X0Y0_胴.ToGlobal(bod.胴_獣.X0Y0_胴.BasePointBase);
     								}
-    								else if ((p is 四足胴 || p is 四足腰) && (翼獣.上腕.ConnectionType == ConnectionInfo.四足腰_翼左_接続 || 翼獣.上腕.ConnectionType == ConnectionInfo.四足腰_翼右_接続))
+    								else if ((p is 四足胴 || p is 四足腰) && (翼獣.UpperArm.ConnectionType == ConnectionInfo.四足腰_翼左_接続 || 翼獣.UpperArm.ConnectionType == ConnectionInfo.四足腰_翼右_接続))
     								{
-    									翼獣.上腕.接着 = () => bod.腰_獣.X0Y0_腰.ToGlobal(bod.腰.X0Y0_腰.JP[4].Joint);
+    									翼獣.UpperArm.接着 = () => bod.腰_獣.X0Y0_腰.ToGlobal(bod.腰.X0Y0_腰.JP[4].Joint);
     								}
     								else if (pp != null && pp is Chest)
     								{
-    									翼獣.上腕.接着 = () => bod.腰.X0Y0_腰.ToGlobal(bod.腰.X0Y0_腰.BasePointBase);
+    									翼獣.UpperArm.接着 = () => bod.腰.X0Y0_腰.ToGlobal(bod.腰.X0Y0_腰.BasePointBase);
     								}
     								else if (pp != null && pp is 四足胸)
     								{
-    									翼獣.上腕.接着 = () => bod.腰_獣.X0Y0_腰.ToGlobal(bod.腰_獣.X0Y0_腰.BasePointBase);
+    									翼獣.UpperArm.接着 = () => bod.腰_獣.X0Y0_腰.ToGlobal(bod.腰_獣.X0Y0_腰.BasePointBase);
     								}
     								else
     								{
-    									翼獣.上腕.接着 = () => 翼獣.上腕.Get飛膜接続点();
+    									翼獣.UpperArm.接着 = () => 翼獣.UpperArm.Get飛膜接続点();
     								}
-    								bod.蝙通常.Add(new 蝙通常(翼獣.上腕, 下腕, 手));
+    								bod.蝙通常.Add(new 蝙通常(翼獣.UpperArm, LowerArm, 手));
     							});
     						});
     						翼獣右.Add(翼獣);
@@ -3390,15 +3390,15 @@ namespace SlaveMatrix
     				{
     					current_element.表示 = false;
     				}
-    				腕獣 = default(腕獣);
+    				腕獣 = default(Arm獣);
     				腕獣.Shoulder = 四足脇2;
-    				四足脇2.上腕_接続.SetEle(delegate(獣上腕 上腕)
+    				四足脇2.UpperArm_接続.SetEle(delegate(獣UpperArm UpperArm)
     				{
-    					腕獣.上腕 = 上腕;
-    					上腕.下腕_接続.SetEle(delegate(獣下腕 下腕)
+    					腕獣.UpperArm = UpperArm;
+    					UpperArm.LowerArm_接続.SetEle(delegate(獣LowerArm LowerArm)
     					{
-    						腕獣.下腕 = 下腕;
-    						下腕.手_接続.SetEle(delegate(獣手 手)
+    						腕獣.LowerArm = LowerArm;
+    						LowerArm.手_接続.SetEle(delegate(獣手 手)
     						{
     							腕獣.手 = 手;
     						});
@@ -3502,27 +3502,27 @@ namespace SlaveMatrix
     				});
     				脚獣左.Add(脚獣);
     			}
-    			else if (current_element is 上腕)
+    			else if (current_element is UpperArm)
     			{
-    				if (current_element.ConnectionType == ConnectionInfo.Shoulder_上腕_接続)
+    				if (current_element.ConnectionType == ConnectionInfo.Shoulder_UpperArm_接続)
     				{
     					人肩 = (Shoulder)current_element.Par;
-    					if (current_element is 上腕_鳥)
+    					if (current_element is UpperArm_鳥)
     					{
-    						腕翼鳥 = default(腕翼鳥);
+    						腕翼鳥 = default(Arm翼鳥);
     						腕翼鳥.Shoulder = 人肩;
-    						人肩.上腕_接続.SetEle(delegate(上腕_鳥 上腕)
+    						人肩.UpperArm_接続.SetEle(delegate(UpperArm_鳥 UpperArm)
     						{
-    							上腕.キスマーク = new スタンプK(Med, Are, Cha, bod, kd, 上腕);
-    							sk.Add(上腕.キスマーク);
-    							上腕.鞭痕 = new スタンプW(Med, Are, Cha, bod, wd, 上腕);
-    							sw.Add(上腕.鞭痕);
-    							上腕.鳥翼上腕CD.c2.Col2 = 上腕.小雨覆CD.c2.Col1;
-    							腕翼鳥.上腕 = 上腕;
-    							上腕.下腕_接続.SetEle(delegate(下腕_鳥 下腕)
+    							UpperArm.キスマーク = new スタンプK(Med, Are, Cha, bod, kd, UpperArm);
+    							sk.Add(UpperArm.キスマーク);
+    							UpperArm.鞭痕 = new スタンプW(Med, Are, Cha, bod, wd, UpperArm);
+    							sw.Add(UpperArm.鞭痕);
+    							UpperArm.鳥翼UpperArmCD.c2.Col2 = UpperArm.小雨覆CD.c2.Col1;
+    							腕翼鳥.UpperArm = UpperArm;
+    							UpperArm.LowerArm_接続.SetEle(delegate(LowerArm_鳥 LowerArm)
     							{
-    								腕翼鳥.下腕 = 下腕;
-    								下腕.手_接続.SetEle(delegate(手_鳥 手)
+    								腕翼鳥.LowerArm = LowerArm;
+    								LowerArm.手_接続.SetEle(delegate(手_鳥 手)
     								{
     									腕翼鳥.手 = 手;
     								});
@@ -3530,22 +3530,22 @@ namespace SlaveMatrix
     						});
     						腕翼鳥左.Add(腕翼鳥);
     					}
-    					else if (current_element is 上腕_蝙)
+    					else if (current_element is UpperArm_蝙)
     					{
-    						腕翼獣 = default(腕翼獣);
+    						腕翼獣 = default(Arm翼獣);
     						腕翼獣.Shoulder = 人肩;
-    						人肩.上腕_接続.SetEle(delegate(上腕_蝙 上腕)
+    						人肩.UpperArm_接続.SetEle(delegate(UpperArm_蝙 UpperArm)
     						{
-    							上腕.獣翼上腕CD.c2.Col1 = 人肩.Shoulder_ShoulderCD.c2.Col1;
-    							腕翼獣.上腕 = 上腕;
-    							上腕.下腕_接続.SetEle(delegate(下腕_蝙 下腕)
+    							UpperArm.獣翼UpperArmCD.c2.Col1 = 人肩.Shoulder_ShoulderCD.c2.Col1;
+    							腕翼獣.UpperArm = UpperArm;
+    							UpperArm.LowerArm_接続.SetEle(delegate(LowerArm_蝙 LowerArm)
     							{
-    								腕翼獣.下腕 = 下腕;
-    								下腕.手_接続.SetEle(delegate(手_蝙 手)
+    								腕翼獣.LowerArm = LowerArm;
+    								LowerArm.手_接続.SetEle(delegate(手_蝙 手)
     								{
     									腕翼獣.手 = 手;
-    									上腕.接着 = () => bod.腰.X0Y0_腰.ToGlobal(bod.腰.X0Y0_腰.BasePointBase);
-    									bod.蝙通常.Add(new 蝙通常(上腕, 下腕, 手));
+    									UpperArm.接着 = () => bod.腰.X0Y0_腰.ToGlobal(bod.腰.X0Y0_腰.BasePointBase);
+    									bod.蝙通常.Add(new 蝙通常(UpperArm, LowerArm, 手));
     								});
     							});
     						});
@@ -3553,143 +3553,143 @@ namespace SlaveMatrix
     					}
     					else
     					{
-    						腕人 = default(腕人);
+    						腕人 = default(Arm人);
     						腕人.Shoulder = 人肩;
-    						人肩.上腕_接続.SetEle(delegate(上腕_人 上腕)
+    						人肩.UpperArm_接続.SetEle(delegate(UpperArm_人 UpperArm)
     						{
-    							上腕.キスマーク = new スタンプK(Med, Are, Cha, bod, kd, 上腕);
-    							sk.Add(上腕.キスマーク);
-    							上腕.鞭痕 = new スタンプW(Med, Are, Cha, bod, wd, 上腕);
-    							sw.Add(上腕.鞭痕);
-    							腕人.上腕 = 上腕;
-    							上腕.下腕_接続.SetEle(delegate(下腕_人 下腕)
+    							UpperArm.キスマーク = new スタンプK(Med, Are, Cha, bod, kd, UpperArm);
+    							sk.Add(UpperArm.キスマーク);
+    							UpperArm.鞭痕 = new スタンプW(Med, Are, Cha, bod, wd, UpperArm);
+    							sw.Add(UpperArm.鞭痕);
+    							腕人.UpperArm = UpperArm;
+    							UpperArm.LowerArm_接続.SetEle(delegate(LowerArm_人 LowerArm)
     							{
-    								下腕.腕輪尺度修正();
-    								下腕.キスマーク = new スタンプK(Med, Are, Cha, bod, kd, 下腕);
-    								sk.Add(下腕.キスマーク);
-    								下腕.鞭痕 = new スタンプW(Med, Are, Cha, bod, wd, 下腕);
-    								sw.Add(下腕.鞭痕);
-    								if (上腕.獣性_獣毛1_表示)
+    								LowerArm.腕輪尺度修正();
+    								LowerArm.キスマーク = new スタンプK(Med, Are, Cha, bod, kd, LowerArm);
+    								sk.Add(LowerArm.キスマーク);
+    								LowerArm.鞭痕 = new スタンプW(Med, Are, Cha, bod, wd, LowerArm);
+    								sw.Add(LowerArm.鞭痕);
+    								if (UpperArm.獣性_獣毛1_表示)
     								{
-    									下腕.下腕CD.c2 = 上腕.獣性_獣毛1CD.c2;
-    									下腕.筋肉_筋肉上CD.c2 = 上腕.獣性_獣毛1CD.c2;
-    									下腕.筋肉_筋肉下CD.c2 = 上腕.獣性_獣毛1CD.c2;
+    									LowerArm.LowerArmCD.c2 = UpperArm.獣性_獣毛1CD.c2;
+    									LowerArm.筋肉_筋肉上CD.c2 = UpperArm.獣性_獣毛1CD.c2;
+    									LowerArm.筋肉_筋肉下CD.c2 = UpperArm.獣性_獣毛1CD.c2;
     								}
-    								if (上腕.虫性_虫腕_表示 && (!下腕.虫性1_虫腕上_表示 || !下腕.虫性2_虫腕下_表示))
+    								if (UpperArm.虫性_虫腕_表示 && (!LowerArm.虫性1_虫腕上_表示 || !LowerArm.虫性2_虫腕下_表示))
     								{
-    									下腕.下腕CD.c2 = 上腕.虫性_虫腕CD.c2;
-    									下腕.筋肉_筋肉上CD.c2 = 上腕.虫性_虫腕CD.c2;
-    									下腕.筋肉_筋肉下CD.c2 = 上腕.虫性_虫腕CD.c2;
+    									LowerArm.LowerArmCD.c2 = UpperArm.虫性_虫腕CD.c2;
+    									LowerArm.筋肉_筋肉上CD.c2 = UpperArm.虫性_虫腕CD.c2;
+    									LowerArm.筋肉_筋肉下CD.c2 = UpperArm.虫性_虫腕CD.c2;
     								}
-    								if (下腕.植性2_萼_萼中_表示)
+    								if (LowerArm.植性2_萼_萼中_表示)
     								{
-    									上腕.上腕CD.c2.Col2 = 下腕.植性2_萼_萼中CD.c2.Col2;
-    									上腕.筋肉上CD.c2.Col2 = 下腕.植性2_萼_萼中CD.c2.Col2;
-    									上腕.筋肉下CD.c2.Col2 = 下腕.植性2_萼_萼中CD.c2.Col2;
+    									UpperArm.UpperArmCD.c2.Col2 = LowerArm.植性2_萼_萼中CD.c2.Col2;
+    									UpperArm.筋肉上CD.c2.Col2 = LowerArm.植性2_萼_萼中CD.c2.Col2;
+    									UpperArm.筋肉下CD.c2.Col2 = LowerArm.植性2_萼_萼中CD.c2.Col2;
     								}
-    								else if (下腕.獣性1_獣腕_表示)
+    								else if (LowerArm.獣性1_獣腕_表示)
     								{
-    									上腕.上腕CD.c2.Col2 = 下腕.獣性1_獣腕CD.c2.Col1;
-    									上腕.筋肉上CD.c2.Col2 = 下腕.獣性1_獣腕CD.c2.Col1;
-    									上腕.筋肉下CD.c2.Col2 = 下腕.獣性1_獣腕CD.c2.Col1;
+    									UpperArm.UpperArmCD.c2.Col2 = LowerArm.獣性1_獣腕CD.c2.Col1;
+    									UpperArm.筋肉上CD.c2.Col2 = LowerArm.獣性1_獣腕CD.c2.Col1;
+    									UpperArm.筋肉下CD.c2.Col2 = LowerArm.獣性1_獣腕CD.c2.Col1;
     								}
     								else
     								{
-    									上腕.上腕CD.c2.Col2 = 下腕.下腕CD.c2.Col1;
-    									上腕.筋肉上CD.c2.Col2 = 下腕.下腕CD.c2.Col1;
-    									上腕.筋肉下CD.c2.Col2 = 下腕.下腕CD.c2.Col1;
+    									UpperArm.UpperArmCD.c2.Col2 = LowerArm.LowerArmCD.c2.Col1;
+    									UpperArm.筋肉上CD.c2.Col2 = LowerArm.LowerArmCD.c2.Col1;
+    									UpperArm.筋肉下CD.c2.Col2 = LowerArm.LowerArmCD.c2.Col1;
     								}
-    								腕人.下腕 = 下腕;
-    								下腕.手_接続.SetEle(delegate(手_人 手)
+    								腕人.LowerArm = LowerArm;
+    								LowerArm.手_接続.SetEle(delegate(手_人 手)
     								{
-    									if (下腕.獣性1_獣腕_表示 || 下腕.下腕CD.c2.Col1 == 下腕.獣性1_獣腕CD.c2.Col1)
+    									if (LowerArm.獣性1_獣腕_表示 || LowerArm.LowerArmCD.c2.Col1 == LowerArm.獣性1_獣腕CD.c2.Col1)
     									{
-    										手.手CD.c2 = 下腕.獣性1_獣腕CD.c2;
+    										手.手CD.c2 = LowerArm.獣性1_獣腕CD.c2;
     										手.親指_親指1CD.c2 = 手.手CD.c2;
     									}
     									else if (手.X0Y0_手.OP[0].Outline)
     									{
-    										手.手CD.c2 = 下腕.虫性1_虫腕上CD.c2;
+    										手.手CD.c2 = LowerArm.虫性1_虫腕上CD.c2;
     										手.親指_親指1CD.c2 = 手.手CD.c2;
     									}
     									腕人.手 = 手;
     								});
     							});
-    							上腕.下腕_接続.SetEle(delegate(下腕_獣 下腕)
+    							UpperArm.LowerArm_接続.SetEle(delegate(LowerArm_獣 LowerArm)
     							{
-    								上腕.上腕CD.c2.Col2 = 下腕.下腕CD.c2.Col1;
-    								上腕.筋肉上CD.c2.Col2 = 下腕.下腕CD.c2.Col1;
-    								上腕.筋肉下CD.c2.Col2 = 下腕.下腕CD.c2.Col1;
-    								下腕.X0Y0_下腕.OP[0].Outline = true;
+    								UpperArm.UpperArmCD.c2.Col2 = LowerArm.LowerArmCD.c2.Col1;
+    								UpperArm.筋肉上CD.c2.Col2 = LowerArm.LowerArmCD.c2.Col1;
+    								UpperArm.筋肉下CD.c2.Col2 = LowerArm.LowerArmCD.c2.Col1;
+    								LowerArm.X0Y0_LowerArm.OP[0].Outline = true;
     							});
     						});
-    						腕人左.Add(腕人);
+    						Arm人左.Add(腕人);
     					}
     				}
-    				else if (current_element is 上腕_鳥)
+    				else if (current_element is UpperArm_鳥)
     				{
     					翼鳥 = default(翼鳥);
-    					翼鳥.上腕 = (上腕_鳥)current_element;
-    					翼鳥.上腕.鳥翼上腕CD.c2 = 翼鳥.上腕.小雨覆CD.c2;
-    					翼鳥.上腕.キスマーク = new スタンプK(Med, Are, Cha, this, kd, 翼鳥.上腕);
-    					sk.Add(翼鳥.上腕.キスマーク);
-    					翼鳥.上腕.鞭痕 = new スタンプW(Med, Are, Cha, this, wd, 翼鳥.上腕);
-    					sw.Add(翼鳥.上腕.鞭痕);
-    					翼鳥.上腕.下腕_接続.SetEle(delegate(下腕_鳥 下腕)
+    					翼鳥.UpperArm = (UpperArm_鳥)current_element;
+    					翼鳥.UpperArm.鳥翼UpperArmCD.c2 = 翼鳥.UpperArm.小雨覆CD.c2;
+    					翼鳥.UpperArm.キスマーク = new スタンプK(Med, Are, Cha, this, kd, 翼鳥.UpperArm);
+    					sk.Add(翼鳥.UpperArm.キスマーク);
+    					翼鳥.UpperArm.鞭痕 = new スタンプW(Med, Are, Cha, this, wd, 翼鳥.UpperArm);
+    					sw.Add(翼鳥.UpperArm.鞭痕);
+    					翼鳥.UpperArm.LowerArm_接続.SetEle(delegate(LowerArm_鳥 LowerArm)
     					{
-    						翼鳥.下腕 = 下腕;
-    						下腕.手_接続.SetEle(delegate(手_鳥 手)
+    						翼鳥.LowerArm = LowerArm;
+    						LowerArm.手_接続.SetEle(delegate(手_鳥 手)
     						{
     							翼鳥.手 = 手;
     						});
     					});
     					翼鳥左.Add(翼鳥);
     				}
-    				else if (current_element is 上腕_蝙)
+    				else if (current_element is UpperArm_蝙)
     				{
     					翼獣 = default(翼獣);
-    					翼獣.上腕 = (上腕_蝙)current_element;
-    					翼獣.上腕.下腕_接続.SetEle(delegate(下腕_蝙 下腕)
+    					翼獣.UpperArm = (UpperArm_蝙)current_element;
+    					翼獣.UpperArm.LowerArm_接続.SetEle(delegate(LowerArm_蝙 LowerArm)
     					{
-    						翼獣.下腕 = 下腕;
-    						下腕.手_接続.SetEle(delegate(手_蝙 手)
+    						翼獣.LowerArm = LowerArm;
+    						LowerArm.手_接続.SetEle(delegate(手_蝙 手)
     						{
     							翼獣.手 = 手;
-    							p = 翼獣.上腕.Par;
-    							pp = 翼獣.上腕.Par.Par;
+    							p = 翼獣.UpperArm.Par;
+    							pp = 翼獣.UpperArm.Par.Par;
     							if (p is 基髪)
     							{
-    								翼獣.上腕.接着 = () => bod.頭.X0Y0_頭.ToGlobal(bod.頭.X0Y0_頭.BasePointBase);
+    								翼獣.UpperArm.接着 = () => bod.頭.X0Y0_頭.ToGlobal(bod.頭.X0Y0_頭.BasePointBase);
     							}
     							else if (p is Chest)
     							{
-    								翼獣.上腕.接着 = () => bod.胴.X0Y0_胴.ToGlobal(bod.胴.X0Y0_胴.BasePointBase);
+    								翼獣.UpperArm.接着 = () => bod.胴.X0Y0_胴.ToGlobal(bod.胴.X0Y0_胴.BasePointBase);
     							}
     							else if (p is Torso || p is Waist)
     							{
-    								翼獣.上腕.接着 = () => bod.腰.X0Y0_腰.ToGlobal(bod.腰.X0Y0_腰.JP[4].Joint);
+    								翼獣.UpperArm.接着 = () => bod.腰.X0Y0_腰.ToGlobal(bod.腰.X0Y0_腰.JP[4].Joint);
     							}
     							else if (p is 四足胸)
     							{
-    								翼獣.上腕.接着 = () => bod.胴_獣.X0Y0_胴.ToGlobal(bod.胴_獣.X0Y0_胴.BasePointBase);
+    								翼獣.UpperArm.接着 = () => bod.胴_獣.X0Y0_胴.ToGlobal(bod.胴_獣.X0Y0_胴.BasePointBase);
     							}
-    							else if ((p is 四足胴 || p is 四足腰) && (翼獣.上腕.ConnectionType == ConnectionInfo.四足腰_翼左_接続 || 翼獣.上腕.ConnectionType == ConnectionInfo.四足腰_翼右_接続))
+    							else if ((p is 四足胴 || p is 四足腰) && (翼獣.UpperArm.ConnectionType == ConnectionInfo.四足腰_翼左_接続 || 翼獣.UpperArm.ConnectionType == ConnectionInfo.四足腰_翼右_接続))
     							{
-    								翼獣.上腕.接着 = () => bod.腰_獣.X0Y0_腰.ToGlobal(bod.腰.X0Y0_腰.JP[4].Joint);
+    								翼獣.UpperArm.接着 = () => bod.腰_獣.X0Y0_腰.ToGlobal(bod.腰.X0Y0_腰.JP[4].Joint);
     							}
     							else if (pp != null && pp is Chest)
     							{
-    								翼獣.上腕.接着 = () => bod.腰.X0Y0_腰.ToGlobal(bod.腰.X0Y0_腰.BasePointBase);
+    								翼獣.UpperArm.接着 = () => bod.腰.X0Y0_腰.ToGlobal(bod.腰.X0Y0_腰.BasePointBase);
     							}
     							else if (pp != null && pp is 四足胸)
     							{
-    								翼獣.上腕.接着 = () => bod.腰_獣.X0Y0_腰.ToGlobal(bod.腰_獣.X0Y0_腰.BasePointBase);
+    								翼獣.UpperArm.接着 = () => bod.腰_獣.X0Y0_腰.ToGlobal(bod.腰_獣.X0Y0_腰.BasePointBase);
     							}
     							else
     							{
-    								翼獣.上腕.接着 = () => 翼獣.上腕.Get飛膜接続点();
+    								翼獣.UpperArm.接着 = () => 翼獣.UpperArm.Get飛膜接続点();
     							}
-    							bod.蝙通常.Add(new 蝙通常(翼獣.上腕, 下腕, 手));
+    							bod.蝙通常.Add(new 蝙通常(翼獣.UpperArm, LowerArm, 手));
     						});
     					});
     					翼獣左.Add(翼獣);
@@ -3799,7 +3799,7 @@ namespace SlaveMatrix
     				長胴.Add((長胴)current_element);
     			}
     		}
-    		腕人n = 腕人左.Count;
+    		Arm人n = Arm人左.Count;
     		腕翼鳥n = 腕翼鳥左.Count;
     		腕翼獣n = 腕翼獣左.Count;
     		腕獣n = 腕獣左.Count;
@@ -4190,20 +4190,20 @@ namespace SlaveMatrix
     					後腕左s[j] = new List<Ele>();
     					Sort(後脇左s[j].EnumEle(), 後腕左s[j]);
     				}
-    				if (肩左.上腕_接続 != null)
+    				if (肩左.UpperArm_接続 != null)
     				{
-    					Sort(肩左.上腕_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 腕左);
+    					Sort(肩左.UpperArm_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 腕左);
     				}
     			}
-    			else if (後脇左s.Length == 1 && 肩左.上腕_接続 != null)
+    			else if (後脇左s.Length == 1 && 肩左.UpperArm_接続 != null)
     			{
-    				後腕左s = new List<Ele>[肩左.上腕_接続.Length - 1];
+    				後腕左s = new List<Ele>[肩左.UpperArm_接続.Length - 1];
     				for (int k = 0; k < 後腕左s.Length; k++)
     				{
     					後腕左s[k] = new List<Ele>();
-    					Sort(肩左.上腕_接続[k].EnumEle(), 後腕左s[k]);
+    					Sort(肩左.UpperArm_接続[k].EnumEle(), 後腕左s[k]);
     				}
-    				Sort(肩左.上腕_接続.Last().EnumEle(), 腕左);
+    				Sort(肩左.UpperArm_接続.Last().EnumEle(), 腕左);
     			}
     			後脇左s = 後脇左s.Take(後脇左s.Length - 1).ToArray();
     		}
@@ -4220,20 +4220,20 @@ namespace SlaveMatrix
     					後腕右s[l] = new List<Ele>();
     					Sort(後脇右s[l].EnumEle(), 後腕右s[l]);
     				}
-    				if (肩右.上腕_接続 != null)
+    				if (肩右.UpperArm_接続 != null)
     				{
-    					Sort(肩右.上腕_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 腕右);
+    					Sort(肩右.UpperArm_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 腕右);
     				}
     			}
-    			else if (後脇右s.Length == 1 && 肩右.上腕_接続 != null)
+    			else if (後脇右s.Length == 1 && 肩右.UpperArm_接続 != null)
     			{
-    				後腕右s = new List<Ele>[肩右.上腕_接続.Length - 1];
+    				後腕右s = new List<Ele>[肩右.UpperArm_接続.Length - 1];
     				for (int m = 0; m < 後腕右s.Length; m++)
     				{
     					後腕右s[m] = new List<Ele>();
-    					Sort(肩右.上腕_接続[m].EnumEle(), 後腕右s[m]);
+    					Sort(肩右.UpperArm_接続[m].EnumEle(), 後腕右s[m]);
     				}
-    				Sort(肩右.上腕_接続.Last().EnumEle(), 腕右);
+    				Sort(肩右.UpperArm_接続.Last().EnumEle(), 腕右);
     			}
     			後脇右s = 後脇右s.Take(後脇右s.Length - 1).ToArray();
     		}
@@ -4307,7 +4307,7 @@ namespace SlaveMatrix
     				{
     					Sort(魚.尾_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 半身後接続);
     				}
-    				if (腕獣左.Count > 0 && 腕獣左.First().Shoulder.上腕_接続.IsEle<獣脚>())
+    				if (腕獣左.Count > 0 && 腕獣左.First().Shoulder.UpperArm_接続.IsEle<獣脚>())
     				{
     					Sort(from e in 魚.EnumEle().Skip(1)
     						where !bod.半身後接続.Contains(e)
@@ -4342,7 +4342,7 @@ namespace SlaveMatrix
     				{
     					Sort(鯨.尾_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 半身後接続);
     				}
-    				if (腕獣左.Count > 0 && 腕獣左.First().Shoulder.上腕_接続.IsEle<獣脚>())
+    				if (腕獣左.Count > 0 && 腕獣左.First().Shoulder.UpperArm_接続.IsEle<獣脚>())
     				{
     					Sort(from e in 鯨.EnumEle().Skip(1)
     						where !bod.半身後接続.Contains(e)
@@ -4915,7 +4915,7 @@ namespace SlaveMatrix
     		}
     		foreach (蝙通常 item23 in 蝙通常)
     		{
-    			Inserts(item23.上腕, 0, item23.上腕.飛膜);
+    			Inserts(item23.UpperArm, 0, item23.UpperArm.飛膜);
     			Inserts(item23.手, -2, item23.手.飛膜);
     			Inserts(item23.手.飛膜, 1, new DE(item23.手, item23.手.指先描画));
     		}
@@ -4924,74 +4924,74 @@ namespace SlaveMatrix
     		{
     			Inserts(ele4, 1 + ((ele4.顎左_接続 != null) ? ele4.顎左_接続.Select((Ele f) => f.EnumEle()).JoinEnum().Count() : 0) + ((ele4.顎右_接続 != null) ? ele4.顎右_接続.Select((Ele f) => f.EnumEle()).JoinEnum().Count() : 0), ele4.大顎上);
     		}
-    		foreach (腕人 item24 in 腕人左)
+    		foreach (Arm人 item24 in Arm人左)
     		{
-    			if (item24.下腕 != null)
+    			if (item24.LowerArm != null)
     			{
-    				Inserts(item24.下腕, 1 + ((item24.下腕.手_接続 != null) ? item24.下腕.手_接続.Select((Ele f) => f.EnumEle()).JoinEnum().Count() : 0) + ((item24.下腕.虫鎌_接続 != null) ? item24.下腕.虫鎌_接続.Select((Ele f) => f.EnumEle()).JoinEnum().Count() : 0), new DE(item24.下腕, item24.下腕.外腕描画));
+    				Inserts(item24.LowerArm, 1 + ((item24.LowerArm.手_接続 != null) ? item24.LowerArm.手_接続.Select((Ele f) => f.EnumEle()).JoinEnum().Count() : 0) + ((item24.LowerArm.虫鎌_接続 != null) ? item24.LowerArm.虫鎌_接続.Select((Ele f) => f.EnumEle()).JoinEnum().Count() : 0), new DE(item24.LowerArm, item24.LowerArm.外腕描画));
     			}
     		}
-    		foreach (腕人 item25 in 腕人右)
+    		foreach (Arm人 item25 in Arm人右)
     		{
-    			if (item25.下腕 != null)
+    			if (item25.LowerArm != null)
     			{
-    				Inserts(item25.下腕, 1 + ((item25.下腕.手_接続 != null) ? item25.下腕.手_接続.Select((Ele f) => f.EnumEle()).JoinEnum().Count() : 0) + ((item25.下腕.虫鎌_接続 != null) ? item25.下腕.虫鎌_接続.Select((Ele f) => f.EnumEle()).JoinEnum().Count() : 0), new DE(item25.下腕, item25.下腕.外腕描画));
+    				Inserts(item25.LowerArm, 1 + ((item25.LowerArm.手_接続 != null) ? item25.LowerArm.手_接続.Select((Ele f) => f.EnumEle()).JoinEnum().Count() : 0) + ((item25.LowerArm.虫鎌_接続 != null) ? item25.LowerArm.虫鎌_接続.Select((Ele f) => f.EnumEle()).JoinEnum().Count() : 0), new DE(item25.LowerArm, item25.LowerArm.外腕描画));
     			}
     		}
-    		foreach (腕翼鳥 item26 in 腕翼鳥左)
+    		foreach (Arm翼鳥 item26 in 腕翼鳥左)
     		{
-    			if (item26.下腕 != null)
+    			if (item26.LowerArm != null)
     			{
-    				Inserts(item26.下腕, 1 + ((item26.下腕.手_接続 != null) ? item26.下腕.手_接続.Select((Ele f) => f.EnumEle()).JoinEnum().Count() : 0), new DE(item26.下腕, item26.下腕.小雨覆描画));
+    				Inserts(item26.LowerArm, 1 + ((item26.LowerArm.手_接続 != null) ? item26.LowerArm.手_接続.Select((Ele f) => f.EnumEle()).JoinEnum().Count() : 0), new DE(item26.LowerArm, item26.LowerArm.小雨覆描画));
     			}
     		}
     		foreach (翼鳥 item27 in 翼鳥左)
     		{
-    			if (item27.下腕 != null)
+    			if (item27.LowerArm != null)
     			{
-    				Inserts(item27.下腕, 1 + ((item27.下腕.手_接続 != null) ? item27.下腕.手_接続.Select((Ele f) => f.EnumEle()).JoinEnum().Count() : 0), new DE(item27.下腕, item27.下腕.小雨覆描画));
+    				Inserts(item27.LowerArm, 1 + ((item27.LowerArm.手_接続 != null) ? item27.LowerArm.手_接続.Select((Ele f) => f.EnumEle()).JoinEnum().Count() : 0), new DE(item27.LowerArm, item27.LowerArm.小雨覆描画));
     			}
     		}
-    		foreach (腕翼鳥 item28 in 腕翼鳥右)
+    		foreach (Arm翼鳥 item28 in 腕翼鳥右)
     		{
-    			if (item28.下腕 != null)
+    			if (item28.LowerArm != null)
     			{
-    				Inserts(item28.下腕, 1 + ((item28.下腕.手_接続 != null) ? item28.下腕.手_接続.Select((Ele f) => f.EnumEle()).JoinEnum().Count() : 0), new DE(item28.下腕, item28.下腕.小雨覆描画));
+    				Inserts(item28.LowerArm, 1 + ((item28.LowerArm.手_接続 != null) ? item28.LowerArm.手_接続.Select((Ele f) => f.EnumEle()).JoinEnum().Count() : 0), new DE(item28.LowerArm, item28.LowerArm.小雨覆描画));
     			}
     		}
     		foreach (翼鳥 item29 in 翼鳥右)
     		{
-    			if (item29.下腕 != null)
+    			if (item29.LowerArm != null)
     			{
-    				Inserts(item29.下腕, 1 + ((item29.下腕.手_接続 != null) ? item29.下腕.手_接続.Select((Ele f) => f.EnumEle()).JoinEnum().Count() : 0), new DE(item29.下腕, item29.下腕.小雨覆描画));
+    				Inserts(item29.LowerArm, 1 + ((item29.LowerArm.手_接続 != null) ? item29.LowerArm.手_接続.Select((Ele f) => f.EnumEle()).JoinEnum().Count() : 0), new DE(item29.LowerArm, item29.LowerArm.小雨覆描画));
     			}
     		}
-    		foreach (腕翼獣 item30 in 腕翼獣左)
+    		foreach (Arm翼獣 item30 in 腕翼獣左)
     		{
-    			if (item30.下腕 != null)
+    			if (item30.LowerArm != null)
     			{
-    				Inserts(item30.下腕, 1 + ((item30.下腕.手_接続 != null) ? item30.下腕.手_接続.Select((Ele f) => f.EnumEle()).JoinEnum().Count() : 0), new DE(item30.下腕, item30.下腕.腕輪描画));
+    				Inserts(item30.LowerArm, 1 + ((item30.LowerArm.手_接続 != null) ? item30.LowerArm.手_接続.Select((Ele f) => f.EnumEle()).JoinEnum().Count() : 0), new DE(item30.LowerArm, item30.LowerArm.腕輪描画));
     			}
     		}
     		foreach (翼獣 item31 in 翼獣左)
     		{
-    			if (item31.下腕 != null)
+    			if (item31.LowerArm != null)
     			{
-    				Inserts(item31.下腕, 1 + ((item31.下腕.手_接続 != null) ? item31.下腕.手_接続.Select((Ele f) => f.EnumEle()).JoinEnum().Count() : 0), new DE(item31.下腕, item31.下腕.腕輪描画));
+    				Inserts(item31.LowerArm, 1 + ((item31.LowerArm.手_接続 != null) ? item31.LowerArm.手_接続.Select((Ele f) => f.EnumEle()).JoinEnum().Count() : 0), new DE(item31.LowerArm, item31.LowerArm.腕輪描画));
     			}
     		}
-    		foreach (腕翼獣 item32 in 腕翼獣右)
+    		foreach (Arm翼獣 item32 in 腕翼獣右)
     		{
-    			if (item32.下腕 != null)
+    			if (item32.LowerArm != null)
     			{
-    				Inserts(item32.下腕, 1 + ((item32.下腕.手_接続 != null) ? item32.下腕.手_接続.Select((Ele f) => f.EnumEle()).JoinEnum().Count() : 0), new DE(item32.下腕, item32.下腕.腕輪描画));
+    				Inserts(item32.LowerArm, 1 + ((item32.LowerArm.手_接続 != null) ? item32.LowerArm.手_接続.Select((Ele f) => f.EnumEle()).JoinEnum().Count() : 0), new DE(item32.LowerArm, item32.LowerArm.腕輪描画));
     			}
     		}
     		foreach (翼獣 item33 in 翼獣右)
     		{
-    			if (item33.下腕 != null)
+    			if (item33.LowerArm != null)
     			{
-    				Inserts(item33.下腕, 1 + ((item33.下腕.手_接続 != null) ? item33.下腕.手_接続.Select((Ele f) => f.EnumEle()).JoinEnum().Count() : 0), new DE(item33.下腕, item33.下腕.腕輪描画));
+    				Inserts(item33.LowerArm, 1 + ((item33.LowerArm.手_接続 != null) ? item33.LowerArm.手_接続.Select((Ele f) => f.EnumEle()).JoinEnum().Count() : 0), new DE(item33.LowerArm, item33.LowerArm.腕輪描画));
     			}
     		}
     		foreach (脚人 item34 in 脚人左)
@@ -5026,7 +5026,7 @@ namespace SlaveMatrix
     		}
     		foreach (虫鎌 e in 虫鎌左)
     		{
-    			if (e.ConnectionType == ConnectionInfo.下腕_人_虫鎌_接続)
+    			if (e.ConnectionType == ConnectionInfo.LowerArm_人_虫鎌_接続)
     			{
     				int num = e.Par.EnumEle().Count((Ele f) => f.Par == e.Par);
     				Inserts(e.Par, 2 + num, e)?.Remove(e);
@@ -5034,7 +5034,7 @@ namespace SlaveMatrix
     		}
     		foreach (虫鎌 e in 虫鎌右)
     		{
-    			if (e.ConnectionType == ConnectionInfo.下腕_人_虫鎌_接続)
+    			if (e.ConnectionType == ConnectionInfo.LowerArm_人_虫鎌_接続)
     			{
     				int num = e.Par.EnumEle().Count((Ele f) => f.Par == e.Par);
     				Inserts(e.Par, 2 + num, e)?.Remove(e);
@@ -5043,12 +5043,12 @@ namespace SlaveMatrix
     		Ele ele5 = 腕左.LastOrDefault((Ele e) => e.Par != null && e.Par.Par != null && e.Par.Par.ConnectionType == ConnectionInfo.Chest_肩左_接続);
     		if (ele5 != null)
     		{
-    			下腕以降左.Add(ele5);
+    			LowerArm以降左.Add(ele5);
     		}
     		HashSet<Ele> hashSet = new HashSet<Ele>();
-    		foreach (蝙通常 item38 in 蝙通常.Where((蝙通常 e) => e.上腕.Par != null && e.上腕.Par.ConnectionType == ConnectionInfo.Chest_肩左_接続))
+    		foreach (蝙通常 item38 in 蝙通常.Where((蝙通常 e) => e.UpperArm.Par != null && e.UpperArm.Par.ConnectionType == ConnectionInfo.Chest_肩左_接続))
     		{
-    			hashSet.Add(item38.上腕.飛膜);
+    			hashSet.Add(item38.UpperArm.飛膜);
     			hashSet.Add(item38.手.飛膜);
     		}
     		foreach (Ele item39 in 腕左)
@@ -5057,12 +5057,12 @@ namespace SlaveMatrix
     			{
     				肩左飛膜.Add(item39);
     			}
-    			else if (下腕以降左.Contains(item39.Par) || item39 is 大顎上 || item39 is 触肢_肢蠍)
+    			else if (LowerArm以降左.Contains(item39.Par) || item39 is 大顎上 || item39 is 触肢_肢蠍)
     			{
-    				下腕以降左.Add(item39);
+    				LowerArm以降左.Add(item39);
     			}
     		}
-    		foreach (Ele item40 in 下腕以降左)
+    		foreach (Ele item40 in LowerArm以降左)
     		{
     			腕左.Remove(item40);
     		}
@@ -5073,12 +5073,12 @@ namespace SlaveMatrix
     		ele5 = 腕右.LastOrDefault((Ele e) => e.Par != null && e.Par.Par != null && e.Par.Par.ConnectionType == ConnectionInfo.Chest_肩右_接続);
     		if (ele5 != null)
     		{
-    			下腕以降右.Add(ele5);
+    			LowerArm以降右.Add(ele5);
     		}
     		hashSet.Clear();
-    		foreach (蝙通常 item42 in 蝙通常.Where((蝙通常 e) => e.上腕.Par != null && e.上腕.Par.ConnectionType == ConnectionInfo.Chest_肩右_接続))
+    		foreach (蝙通常 item42 in 蝙通常.Where((蝙通常 e) => e.UpperArm.Par != null && e.UpperArm.Par.ConnectionType == ConnectionInfo.Chest_肩右_接続))
     		{
-    			hashSet.Add(item42.上腕.飛膜);
+    			hashSet.Add(item42.UpperArm.飛膜);
     			hashSet.Add(item42.手.飛膜);
     		}
     		foreach (Ele item43 in 腕右)
@@ -5087,12 +5087,12 @@ namespace SlaveMatrix
     			{
     				肩右飛膜.Add(item43);
     			}
-    			else if (下腕以降右.Contains(item43.Par) || item43 is 大顎上 || item43 is 触肢_肢蠍)
+    			else if (LowerArm以降右.Contains(item43.Par) || item43 is 大顎上 || item43 is 触肢_肢蠍)
     			{
-    				下腕以降右.Add(item43);
+    				LowerArm以降右.Add(item43);
     			}
     		}
-    		foreach (Ele item44 in 下腕以降右)
+    		foreach (Ele item44 in LowerArm以降右)
     		{
     			腕右.Remove(item44);
     		}
@@ -5112,11 +5112,11 @@ namespace SlaveMatrix
     			肩右飛膜.Add(item14);
     			腕右.Remove(item14);
     		}
-    		foreach (Ele item46 in 腰後左接続.Where((Ele e) => e.ConnectionType == ConnectionInfo.四足脇_上腕_接続 || bod.半身前接続.Contains(e.Par)))
+    		foreach (Ele item46 in 腰後左接続.Where((Ele e) => e.ConnectionType == ConnectionInfo.四足脇_UpperArm_接続 || bod.半身前接続.Contains(e.Par)))
     		{
     			半身前接続.Add(item46);
     		}
-    		foreach (Ele item47 in 腰後右接続.Where((Ele e) => e.ConnectionType == ConnectionInfo.四足脇_上腕_接続 || bod.半身前接続.Contains(e.Par)))
+    		foreach (Ele item47 in 腰後右接続.Where((Ele e) => e.ConnectionType == ConnectionInfo.四足脇_UpperArm_接続 || bod.半身前接続.Contains(e.Par)))
     		{
     			半身前接続.Add(item47);
     		}
@@ -5125,11 +5125,11 @@ namespace SlaveMatrix
     			腰後左接続.Remove(item48);
     			腰後右接続.Remove(item48);
     		}
-    		獣下腕 下腕左l = ((腕獣左.Count > 0) ? 腕獣左[0].下腕 : null);
-    		獣下腕 下腕右l = ((腕獣右.Count > 0) ? 腕獣右[0].下腕 : null);
+    		獣LowerArm LowerArm左l = ((腕獣左.Count > 0) ? 腕獣左[0].LowerArm : null);
+    		獣LowerArm LowerArm右l = ((腕獣右.Count > 0) ? 腕獣右[0].LowerArm : null);
     		if (!Is蠍 && !Is蜘)
     		{
-    			Ele[] array = 半身前接続.Where((Ele e) => (e is 下腕 && 下腕左l != e && 下腕右l != e) || e is 上腕 || e is 触肢 || (e.ConnectionType == ConnectionInfo.四足脇_上腕_接続 && e is Leg)).ToArray();
+    			Ele[] array = 半身前接続.Where((Ele e) => (e is LowerArm && LowerArm左l != e && LowerArm右l != e) || e is UpperArm || e is 触肢 || (e.ConnectionType == ConnectionInfo.四足脇_UpperArm_接続 && e is Leg)).ToArray();
     			foreach (Ele item15 in array)
     			{
     				半身前接続.Remove(item15);
@@ -5196,7 +5196,7 @@ namespace SlaveMatrix
     		鯨色更新 = from e in Elements
     			where e.Par != null && e.Par is 長物_鯨 && e is 尾_鯨
     			select new 鯨色更新((長物_鯨)e.Par, (尾_鯨)e);
-    		飛膜色更新 = 蝙通常.Select((蝙通常 e) => new 飛膜色更新(e.上腕.飛膜, e.手.飛膜));
+    		飛膜色更新 = 蝙通常.Select((蝙通常 e) => new 飛膜色更新(e.UpperArm.飛膜, e.手.飛膜));
     		色更新 = Elements.Where((Ele e) => !bod.頭色更新.Contains(e) && !bod.ドレス色更新.Contains(e) && !bod.鯨色更新.Any((鯨色更新 f) => f.Contains(e)));
     		Is双眉 = 眉左 != null;
     		Is単眉 = 単眼眉 != null;
@@ -5231,13 +5231,13 @@ namespace SlaveMatrix
     		Is頬眼 = 頬目左 != null;
     		Is額眼 = 額目 != null;
     		Is舌股 = 舌 is 舌_長 && ((舌_長)舌).舌股右_舌1_表示;
-    		Is最前腕人 = 肩左 != null && 肩左.上腕_接続.IsEle<上腕_人>();
+    		Is最前腕人 = 肩左 != null && 肩左.UpperArm_接続.IsEle<UpperArm_人>();
     		Is最前手人 = 肩左 != null && 肩左.EnumEle().IsEle<手_人>();
-    		Is腕人 = 下腕以降左.IsEle<下腕_人>();
-    		Is腕鳥 = 下腕以降左.IsEle<下腕_鳥>();
-    		Is腕蝙 = 下腕以降左.IsEle<下腕_蝙>();
-    		Is腕獣 = 下腕以降左.IsEle<下腕_獣>();
-    		Is腕蠍 = 下腕以降左.IsEle<触肢_肢蠍>();
+    		Is腕人 = LowerArm以降左.IsEle<LowerArm_人>();
+    		Is腕鳥 = LowerArm以降左.IsEle<LowerArm_鳥>();
+    		Is腕蝙 = LowerArm以降左.IsEle<LowerArm_蝙>();
+    		Is腕獣 = LowerArm以降左.IsEle<LowerArm_獣>();
+    		Is腕蠍 = LowerArm以降左.IsEle<触肢_肢蠍>();
     		Is腿人 = 腰.腿左_接続.IsEle<腿_人>();
     		Is腿獣 = 腰.腿左_接続.IsEle<獣腿>();
     		Is腿魚 = 腰.腿左_接続.IsEle<尾_魚>();
@@ -5599,37 +5599,37 @@ namespace SlaveMatrix
     			EI半前.Update();
     			eis.Add(EI半前);
     		}
-    		if (下腕以降左.Count + 下腕以降右.Count > 0)
+    		if (LowerArm以降左.Count + LowerArm以降右.Count > 0)
     		{
     			EI腕前 = new EleI(Med);
-    			EI腕前.AddRange(下腕以降左);
-    			EI腕前.AddRange(下腕以降右);
+    			EI腕前.AddRange(LowerArm以降左);
+    			EI腕前.AddRange(LowerArm以降右);
     			EI腕前.描画処理 = delegate(RenderArea are)
     			{
     				if (bod.腕左右前後)
     				{
     					if (!bod.腕右前後_)
     					{
-    						bod.下腕以降右.描画0(are);
-    						bod.下腕以降右.描画1(are);
+    						bod.LowerArm以降右.描画0(are);
+    						bod.LowerArm以降右.描画1(are);
     					}
     					if (!bod.腕左前後_)
     					{
-    						bod.下腕以降左.描画0(are);
-    						bod.下腕以降左.描画1(are);
+    						bod.LowerArm以降左.描画0(are);
+    						bod.LowerArm以降左.描画1(are);
     					}
     				}
     				else
     				{
     					if (!bod.腕左前後_)
     					{
-    						bod.下腕以降左.描画0(are);
-    						bod.下腕以降左.描画1(are);
+    						bod.LowerArm以降左.描画0(are);
+    						bod.LowerArm以降左.描画1(are);
     					}
     					if (!bod.腕右前後_)
     					{
-    						bod.下腕以降右.描画0(are);
-    						bod.下腕以降右.描画1(are);
+    						bod.LowerArm以降右.描画0(are);
+    						bod.LowerArm以降右.描画1(are);
     					}
     				}
     			};
@@ -5710,26 +5710,26 @@ namespace SlaveMatrix
     				{
     					if (bod.腕右前後_)
     					{
-    						bod.下腕以降右.描画0(are);
-    						bod.下腕以降右.描画1(are);
+    						bod.LowerArm以降右.描画0(are);
+    						bod.LowerArm以降右.描画1(are);
     					}
     					if (bod.腕左前後_)
     					{
-    						bod.下腕以降左.描画0(are);
-    						bod.下腕以降左.描画1(are);
+    						bod.LowerArm以降左.描画0(are);
+    						bod.LowerArm以降左.描画1(are);
     					}
     				}
     				else
     				{
     					if (bod.腕左前後_)
     					{
-    						bod.下腕以降左.描画0(are);
-    						bod.下腕以降左.描画1(are);
+    						bod.LowerArm以降左.描画0(are);
+    						bod.LowerArm以降左.描画1(are);
     					}
     					if (bod.腕右前後_)
     					{
-    						bod.下腕以降右.描画0(are);
-    						bod.下腕以降右.描画1(are);
+    						bod.LowerArm以降右.描画0(are);
+    						bod.LowerArm以降右.描画1(are);
     					}
     				}
     				bod.上着B_クロス後.描画0(are);
@@ -6137,26 +6137,26 @@ namespace SlaveMatrix
     				{
     					if (bod.腕右前後_)
     					{
-    						bod.下腕以降右.描画0(are);
-    						bod.下腕以降右.描画1(are);
+    						bod.LowerArm以降右.描画0(are);
+    						bod.LowerArm以降右.描画1(are);
     					}
     					if (bod.腕左前後_)
     					{
-    						bod.下腕以降左.描画0(are);
-    						bod.下腕以降左.描画1(are);
+    						bod.LowerArm以降左.描画0(are);
+    						bod.LowerArm以降左.描画1(are);
     					}
     				}
     				else
     				{
     					if (bod.腕左前後_)
     					{
-    						bod.下腕以降左.描画0(are);
-    						bod.下腕以降左.描画1(are);
+    						bod.LowerArm以降左.描画0(are);
+    						bod.LowerArm以降左.描画1(are);
     					}
     					if (bod.腕右前後_)
     					{
-    						bod.下腕以降右.描画0(are);
-    						bod.下腕以降右.描画1(are);
+    						bod.LowerArm以降右.描画0(are);
+    						bod.LowerArm以降右.描画1(are);
     					}
     				}
     				bod.上着B_クロス後.描画0(are);
@@ -6582,26 +6582,26 @@ namespace SlaveMatrix
     				{
     					if (bod.腕右前後_)
     					{
-    						bod.下腕以降右.描画0(are);
-    						bod.下腕以降右.描画1(are);
+    						bod.LowerArm以降右.描画0(are);
+    						bod.LowerArm以降右.描画1(are);
     					}
     					if (bod.腕左前後_)
     					{
-    						bod.下腕以降左.描画0(are);
-    						bod.下腕以降左.描画1(are);
+    						bod.LowerArm以降左.描画0(are);
+    						bod.LowerArm以降左.描画1(are);
     					}
     				}
     				else
     				{
     					if (bod.腕左前後_)
     					{
-    						bod.下腕以降左.描画0(are);
-    						bod.下腕以降左.描画1(are);
+    						bod.LowerArm以降左.描画0(are);
+    						bod.LowerArm以降左.描画1(are);
     					}
     					if (bod.腕右前後_)
     					{
-    						bod.下腕以降右.描画0(are);
-    						bod.下腕以降右.描画1(are);
+    						bod.LowerArm以降右.描画0(are);
+    						bod.LowerArm以降右.描画1(are);
     					}
     				}
     				bod.脇左_獣.描画0(are);
@@ -6990,26 +6990,26 @@ namespace SlaveMatrix
     				{
     					if (bod.腕右前後_)
     					{
-    						bod.下腕以降右.描画0(are);
-    						bod.下腕以降右.描画1(are);
+    						bod.LowerArm以降右.描画0(are);
+    						bod.LowerArm以降右.描画1(are);
     					}
     					if (bod.腕左前後_)
     					{
-    						bod.下腕以降左.描画0(are);
-    						bod.下腕以降左.描画1(are);
+    						bod.LowerArm以降左.描画0(are);
+    						bod.LowerArm以降左.描画1(are);
     					}
     				}
     				else
     				{
     					if (bod.腕左前後_)
     					{
-    						bod.下腕以降左.描画0(are);
-    						bod.下腕以降左.描画1(are);
+    						bod.LowerArm以降左.描画0(are);
+    						bod.LowerArm以降左.描画1(are);
     					}
     					if (bod.腕右前後_)
     					{
-    						bod.下腕以降右.描画0(are);
-    						bod.下腕以降右.描画1(are);
+    						bod.LowerArm以降右.描画0(are);
+    						bod.LowerArm以降右.描画1(are);
     					}
     				}
     				bod.上着B_クロス後.描画0(are);
@@ -7414,26 +7414,26 @@ namespace SlaveMatrix
     				{
     					if (bod.腕右前後_)
     					{
-    						bod.下腕以降右.描画0(are);
-    						bod.下腕以降右.描画1(are);
+    						bod.LowerArm以降右.描画0(are);
+    						bod.LowerArm以降右.描画1(are);
     					}
     					if (bod.腕左前後_)
     					{
-    						bod.下腕以降左.描画0(are);
-    						bod.下腕以降左.描画1(are);
+    						bod.LowerArm以降左.描画0(are);
+    						bod.LowerArm以降左.描画1(are);
     					}
     				}
     				else
     				{
     					if (bod.腕左前後_)
     					{
-    						bod.下腕以降左.描画0(are);
-    						bod.下腕以降左.描画1(are);
+    						bod.LowerArm以降左.描画0(are);
+    						bod.LowerArm以降左.描画1(are);
     					}
     					if (bod.腕右前後_)
     					{
-    						bod.下腕以降右.描画0(are);
-    						bod.下腕以降右.描画1(are);
+    						bod.LowerArm以降右.描画0(are);
+    						bod.LowerArm以降右.描画1(are);
     					}
     				}
     				bod.上着B_クロス後.描画0(are);
@@ -7837,26 +7837,26 @@ namespace SlaveMatrix
     				{
     					if (bod.腕右前後_)
     					{
-    						bod.下腕以降右.描画0(are);
-    						bod.下腕以降右.描画1(are);
+    						bod.LowerArm以降右.描画0(are);
+    						bod.LowerArm以降右.描画1(are);
     					}
     					if (bod.腕左前後_)
     					{
-    						bod.下腕以降左.描画0(are);
-    						bod.下腕以降左.描画1(are);
+    						bod.LowerArm以降左.描画0(are);
+    						bod.LowerArm以降左.描画1(are);
     					}
     				}
     				else
     				{
     					if (bod.腕左前後_)
     					{
-    						bod.下腕以降左.描画0(are);
-    						bod.下腕以降左.描画1(are);
+    						bod.LowerArm以降左.描画0(are);
+    						bod.LowerArm以降左.描画1(are);
     					}
     					if (bod.腕右前後_)
     					{
-    						bod.下腕以降右.描画0(are);
-    						bod.下腕以降右.描画1(are);
+    						bod.LowerArm以降右.描画0(are);
+    						bod.LowerArm以降右.描画1(are);
     					}
     				}
     				bod.上着B_クロス後.描画0(are);
@@ -8293,26 +8293,26 @@ namespace SlaveMatrix
     				{
     					if (bod.腕右前後_)
     					{
-    						bod.下腕以降右.描画0(are);
-    						bod.下腕以降右.描画1(are);
+    						bod.LowerArm以降右.描画0(are);
+    						bod.LowerArm以降右.描画1(are);
     					}
     					if (bod.腕左前後_)
     					{
-    						bod.下腕以降左.描画0(are);
-    						bod.下腕以降左.描画1(are);
+    						bod.LowerArm以降左.描画0(are);
+    						bod.LowerArm以降左.描画1(are);
     					}
     				}
     				else
     				{
     					if (bod.腕左前後_)
     					{
-    						bod.下腕以降左.描画0(are);
-    						bod.下腕以降左.描画1(are);
+    						bod.LowerArm以降左.描画0(are);
+    						bod.LowerArm以降左.描画1(are);
     					}
     					if (bod.腕右前後_)
     					{
-    						bod.下腕以降右.描画0(are);
-    						bod.下腕以降右.描画1(are);
+    						bod.LowerArm以降右.描画0(are);
+    						bod.LowerArm以降右.描画1(are);
     					}
     				}
     				bod.耳左接続.描画0(are);
@@ -8717,26 +8717,26 @@ namespace SlaveMatrix
     			{
     				if (bod.腕右前後_)
     				{
-    					bod.下腕以降右.描画0(are);
-    					bod.下腕以降右.描画1(are);
+    					bod.LowerArm以降右.描画0(are);
+    					bod.LowerArm以降右.描画1(are);
     				}
     				if (bod.腕左前後_)
     				{
-    					bod.下腕以降左.描画0(are);
-    					bod.下腕以降左.描画1(are);
+    					bod.LowerArm以降左.描画0(are);
+    					bod.LowerArm以降左.描画1(are);
     				}
     			}
     			else
     			{
     				if (bod.腕左前後_)
     				{
-    					bod.下腕以降左.描画0(are);
-    					bod.下腕以降左.描画1(are);
+    					bod.LowerArm以降左.描画0(are);
+    					bod.LowerArm以降左.描画1(are);
     				}
     				if (bod.腕右前後_)
     				{
-    					bod.下腕以降右.描画0(are);
-    					bod.下腕以降右.描画1(are);
+    					bod.LowerArm以降右.描画0(are);
+    					bod.LowerArm以降右.描画1(are);
     				}
     			}
     			bod.上着B_クロス後.描画0(are);
@@ -9213,7 +9213,7 @@ namespace SlaveMatrix
 
     	public IEnumerable<Ele> EnumAllEle()
     	{
-    		return Elements.Concat(from e in Elements.GetEles<上腕_蝙>()
+    		return Elements.Concat(from e in Elements.GetEles<UpperArm_蝙>()
     			select e.飛膜).Concat(from e in Elements.GetEles<手_蝙>()
     			select e.飛膜).Concat(from e in Elements.GetEles<大顎基>()
     			select e.大顎上);
@@ -9498,7 +9498,7 @@ namespace SlaveMatrix
     	public void Add鞭痕(Vector2D cp, Color hc)
     	{
     		Ele he = GetHitEle(hc);
-    		if (he is 下腕 || he is Neck)
+    		if (he is LowerArm || he is Neck)
     		{
     			return;
     		}
@@ -9583,7 +9583,7 @@ namespace SlaveMatrix
     		}
     		foreach (蝙通常 item in 蝙通常)
     		{
-    			if (!Contains(item.上腕) || IsUpdate(item.上腕))
+    			if (!Contains(item.UpperArm) || IsUpdate(item.UpperArm))
     			{
     				item.接続();
     			}

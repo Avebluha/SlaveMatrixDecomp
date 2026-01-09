@@ -1587,7 +1587,7 @@ namespace SlaveMatrix
 
     	public void 腕修正()
     	{
-    		if (!Bod.Is拘束 && Bod.腕人n > 0 && Bod.Is最前腕人)
+    		if (!Bod.Is拘束 && Bod.Arm人n > 0 && Bod.Is最前腕人)
     		{
     			Cha.腕();
     			Cha.Bod.EI腕前.Updatef = true;

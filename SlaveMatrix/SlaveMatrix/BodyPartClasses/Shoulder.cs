@@ -75,7 +75,7 @@ namespace SlaveMatrix
 
     	public スタンプW 鞭痕;
 
-    	public Ele[] 上腕_接続;
+    	public Ele[] UpperArm_接続;
 
     	public override bool 欠損
     	{
@@ -305,7 +305,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public JointS 上腕_接続点 => new JointS(本体, X0Y0_Shoulder_Shoulder, 1);
+    	public JointS UpperArm_接続点 => new JointS(本体, X0Y0_Shoulder_Shoulder, 1);
 
     	public Shoulder(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, ShoulderD e)
     	{
@@ -369,15 +369,15 @@ namespace SlaveMatrix
     		{
     			表示 = false;
     		}
-    		if (e.上腕_接続.Count > 0)
+    		if (e.UpperArm_接続.Count > 0)
     		{
     			Ele f;
-    			上腕_接続 = e.上腕_接続.Select(delegate(EleD g)
+    			UpperArm_接続 = e.UpperArm_接続.Select(delegate(EleD g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = Shoulder2;
-    				f.ConnectionType = ConnectionInfo.Shoulder_上腕_接続;
-    				f.接続(Shoulder2.上腕_接続点);
+    				f.ConnectionType = ConnectionInfo.Shoulder_UpperArm_接続;
+    				f.接続(Shoulder2.UpperArm_接続点);
     				return f;
     			}).ToArray();
     		}

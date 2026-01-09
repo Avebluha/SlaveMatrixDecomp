@@ -120,30 +120,30 @@ namespace SlaveMatrix
     		X0Y1_飛膜CP = new ColorP(X0Y1_飛膜, 飛膜CD, DisUnit, abj: true);
     	}
 
-    	public void 接続(上腕_蝙 上腕, 下腕_蝙 下腕, 手_蝙 手, bool カーブ)
+    	public void 接続(UpperArm_蝙 UpperArm, LowerArm_蝙 LowerArm, 手_蝙 手, bool カーブ)
     	{
     		if (本体.IndexY == 0)
     		{
     			if (右 || 反転X_ || 反転Y_)
     			{
-    				通常接続右(上腕, 下腕, 手, カーブ);
+    				通常接続右(UpperArm, LowerArm, 手, カーブ);
     			}
     			else
     			{
-    				通常接続左(上腕, 下腕, 手, カーブ);
+    				通常接続左(UpperArm, LowerArm, 手, カーブ);
     			}
     		}
     		else if (右 || 反転X_ || 反転Y_)
     		{
-    			欠損接続右(上腕, 下腕, 手, カーブ);
+    			欠損接続右(UpperArm, LowerArm, 手, カーブ);
     		}
     		else
     		{
-    			欠損接続左(上腕, 下腕, 手, カーブ);
+    			欠損接続左(UpperArm, LowerArm, 手, カーブ);
     		}
     	}
 
-    	private void 通常接続左(上腕_蝙 上腕, 下腕_蝙 下腕, 手_蝙 手, bool カーブ)
+    	private void 通常接続左(UpperArm_蝙 UpperArm, LowerArm_蝙 LowerArm, 手_蝙 手, bool カーブ)
     	{
     		Vector2D value = X0Y0_飛膜.ToLocal(手.X0Y0_人指_指3.Position);
     		Vector2D vector2D = X0Y0_飛膜.ToLocal(手.X0Y0_親指_指1.Position);
@@ -155,15 +155,15 @@ namespace SlaveMatrix
     		X0Y0_飛膜.OP[1].ps[1] = (X0Y0_飛膜.OP[1].ps[0] + X0Y0_飛膜.OP[1].ps[2]) * 0.5;
     		X0Y0_飛膜.OP[1].ps[1] += (vector2D - X0Y0_飛膜.OP[1].ps[1]) * 0.3;
     		X0Y0_飛膜.OP[2].ps[0] = X0Y0_飛膜.OP[1].ps[2];
-    		if (上腕 == null)
+    		if (UpperArm == null)
     		{
-    			if (下腕 == null)
+    			if (LowerArm == null)
     			{
     				X0Y0_飛膜.OP[2].ps[3] = X0Y0_飛膜.ToLocal(手.X0Y0_獣翼手.Position);
     			}
     			else
     			{
-    				X0Y0_飛膜.OP[2].ps[3] = X0Y0_飛膜.ToLocal(下腕.X0Y0_獣翼下腕.Position);
+    				X0Y0_飛膜.OP[2].ps[3] = X0Y0_飛膜.ToLocal(LowerArm.X0Y0_獣翼LowerArm.Position);
     			}
     			Vector2D vector2D2 = (X0Y0_飛膜.OP[2].ps[0] + X0Y0_飛膜.OP[2].ps[3]) * 0.5;
     			X0Y0_飛膜.OP[2].ps[1] = vector2D2 + (X0Y0_飛膜.OP[2].ps[0] - X0Y0_飛膜.OP[2].ps[3]) * 0.8;
@@ -173,19 +173,19 @@ namespace SlaveMatrix
     		}
     		else
     		{
-    			if (上腕.ConnectionType == ConnectionInfo.Shoulder_上腕_接続)
+    			if (UpperArm.ConnectionType == ConnectionInfo.Shoulder_UpperArm_接続)
     			{
-    				X0Y0_飛膜.OP[2].ps[3] = X0Y0_飛膜.ToLocal(上腕.X0Y0_獣翼上腕.ToGlobal(上腕.X0Y0_獣翼上腕.OP[3].ps[1]));
+    				X0Y0_飛膜.OP[2].ps[3] = X0Y0_飛膜.ToLocal(UpperArm.X0Y0_獣翼UpperArm.ToGlobal(UpperArm.X0Y0_獣翼UpperArm.OP[3].ps[1]));
     			}
     			else
     			{
-    				X0Y0_飛膜.OP[2].ps[3] = X0Y0_飛膜.ToLocal(上腕.X0Y0_獣翼上腕.ToGlobal(上腕.X0Y0_獣翼上腕.OP[3].ps[1].AddY(0.003)));
+    				X0Y0_飛膜.OP[2].ps[3] = X0Y0_飛膜.ToLocal(UpperArm.X0Y0_獣翼UpperArm.ToGlobal(UpperArm.X0Y0_獣翼UpperArm.OP[3].ps[1].AddY(0.003)));
     			}
     			Vector2D vector2D3 = (X0Y0_飛膜.OP[2].ps[0] + X0Y0_飛膜.OP[2].ps[3]) * 0.5;
     			X0Y0_飛膜.OP[2].ps[1] = (X0Y0_飛膜.OP[2].ps[0] + vector2D3) * 0.5;
     			X0Y0_飛膜.OP[2].ps[2] = (vector2D3 + X0Y0_飛膜.OP[2].ps[3]) * 0.5;
     		}
-    		if (下腕 == null)
+    		if (LowerArm == null)
     		{
     			Vector2D vector2D4 = X0Y0_飛膜.ToLocal(手.X0Y0_獣翼手.Position);
     			X0Y0_飛膜.OP[2].ps[1] += (vector2D4 - X0Y0_飛膜.OP[2].ps[1]) * 0.3;
@@ -193,11 +193,11 @@ namespace SlaveMatrix
     		}
     		else
     		{
-    			Vector2D vector2D5 = X0Y0_飛膜.ToLocal(下腕.X0Y0_獣翼下腕.Position);
+    			Vector2D vector2D5 = X0Y0_飛膜.ToLocal(LowerArm.X0Y0_獣翼LowerArm.Position);
     			X0Y0_飛膜.OP[2].ps[1] += (vector2D5 - X0Y0_飛膜.OP[2].ps[1]) * 0.3;
     			X0Y0_飛膜.OP[2].ps[2] += (vector2D5 - X0Y0_飛膜.OP[2].ps[2]) * 0.3;
     		}
-    		if (上腕.ConnectionType != ConnectionInfo.Shoulder_上腕_接続)
+    		if (UpperArm.ConnectionType != ConnectionInfo.Shoulder_UpperArm_接続)
     		{
     			X0Y0_飛膜.OP[3].ps[0] = X0Y0_飛膜.OP[2].ps[3];
     		}
@@ -233,7 +233,7 @@ namespace SlaveMatrix
     		X0Y0_飛膜.OP[8].ps[1] = X0Y0_飛膜.ToLocal(手.X0Y0_人指_指3.ToGlobal(手.X0Y0_人指_指3.OP[0].ps[1]));
     	}
 
-    	private void 通常接続右(上腕_蝙 上腕, 下腕_蝙 下腕, 手_蝙 手, bool カーブ)
+    	private void 通常接続右(UpperArm_蝙 UpperArm, LowerArm_蝙 LowerArm, 手_蝙 手, bool カーブ)
     	{
     		Vector2D value = X0Y0_飛膜.ToLocal(手.X0Y0_人指_指3.Position);
     		Vector2D vector2D = X0Y0_飛膜.ToLocal(手.X0Y0_親指_指1.Position);
@@ -245,15 +245,15 @@ namespace SlaveMatrix
     		X0Y0_飛膜.OP[7].ps[1] = (X0Y0_飛膜.OP[7].ps[2] + X0Y0_飛膜.OP[7].ps[0]) * 0.5;
     		X0Y0_飛膜.OP[7].ps[1] += (vector2D - X0Y0_飛膜.OP[7].ps[1]) * 0.3;
     		X0Y0_飛膜.OP[6].ps[3] = X0Y0_飛膜.OP[7].ps[0];
-    		if (上腕 == null)
+    		if (UpperArm == null)
     		{
-    			if (下腕 == null)
+    			if (LowerArm == null)
     			{
     				X0Y0_飛膜.OP[6].ps[0] = X0Y0_飛膜.ToLocal(手.X0Y0_獣翼手.Position);
     			}
     			else
     			{
-    				X0Y0_飛膜.OP[6].ps[0] = X0Y0_飛膜.ToLocal(下腕.X0Y0_獣翼下腕.Position);
+    				X0Y0_飛膜.OP[6].ps[0] = X0Y0_飛膜.ToLocal(LowerArm.X0Y0_獣翼LowerArm.Position);
     			}
     			Vector2D vector2D2 = (X0Y0_飛膜.OP[6].ps[3] + X0Y0_飛膜.OP[6].ps[0]) * 0.5;
     			X0Y0_飛膜.OP[6].ps[2] = vector2D2 + (X0Y0_飛膜.OP[6].ps[3] - X0Y0_飛膜.OP[6].ps[0]) * 0.8;
@@ -263,19 +263,19 @@ namespace SlaveMatrix
     		}
     		else
     		{
-    			if (上腕.ConnectionType == ConnectionInfo.Shoulder_上腕_接続)
+    			if (UpperArm.ConnectionType == ConnectionInfo.Shoulder_UpperArm_接続)
     			{
-    				X0Y0_飛膜.OP[6].ps[0] = X0Y0_飛膜.ToLocal(上腕.X0Y0_獣翼上腕.ToGlobal(上腕.X0Y0_獣翼上腕.OP[0].ps[4]));
+    				X0Y0_飛膜.OP[6].ps[0] = X0Y0_飛膜.ToLocal(UpperArm.X0Y0_獣翼UpperArm.ToGlobal(UpperArm.X0Y0_獣翼UpperArm.OP[0].ps[4]));
     			}
     			else
     			{
-    				X0Y0_飛膜.OP[6].ps[0] = X0Y0_飛膜.ToLocal(上腕.X0Y0_獣翼上腕.ToGlobal(上腕.X0Y0_獣翼上腕.OP[0].ps[4].AddY(0.003)));
+    				X0Y0_飛膜.OP[6].ps[0] = X0Y0_飛膜.ToLocal(UpperArm.X0Y0_獣翼UpperArm.ToGlobal(UpperArm.X0Y0_獣翼UpperArm.OP[0].ps[4].AddY(0.003)));
     			}
     			Vector2D vector2D3 = (X0Y0_飛膜.OP[6].ps[3] + X0Y0_飛膜.OP[6].ps[0]) * 0.5;
     			X0Y0_飛膜.OP[6].ps[2] = (X0Y0_飛膜.OP[6].ps[3] + vector2D3) * 0.5;
     			X0Y0_飛膜.OP[6].ps[1] = (vector2D3 + X0Y0_飛膜.OP[6].ps[0]) * 0.5;
     		}
-    		if (下腕 == null)
+    		if (LowerArm == null)
     		{
     			Vector2D vector2D4 = X0Y0_飛膜.ToLocal(手.X0Y0_獣翼手.Position);
     			X0Y0_飛膜.OP[6].ps[2] += (vector2D4 - X0Y0_飛膜.OP[6].ps[2]) * 0.3;
@@ -283,11 +283,11 @@ namespace SlaveMatrix
     		}
     		else
     		{
-    			Vector2D vector2D5 = X0Y0_飛膜.ToLocal(下腕.X0Y0_獣翼下腕.Position);
+    			Vector2D vector2D5 = X0Y0_飛膜.ToLocal(LowerArm.X0Y0_獣翼LowerArm.Position);
     			X0Y0_飛膜.OP[6].ps[2] += (vector2D5 - X0Y0_飛膜.OP[6].ps[2]) * 0.3;
     			X0Y0_飛膜.OP[6].ps[1] += (vector2D5 - X0Y0_飛膜.OP[6].ps[1]) * 0.3;
     		}
-    		if (上腕.ConnectionType != ConnectionInfo.Shoulder_上腕_接続)
+    		if (UpperArm.ConnectionType != ConnectionInfo.Shoulder_UpperArm_接続)
     		{
     			X0Y0_飛膜.OP[5].ps[2] = X0Y0_飛膜.OP[6].ps[0];
     		}
@@ -323,7 +323,7 @@ namespace SlaveMatrix
     		X0Y0_飛膜.OP[0].ps[1] = X0Y0_飛膜.ToLocal(手.X0Y0_人指_指3.ToGlobal(手.X0Y0_人指_指3.OP[2].ps[1]));
     	}
 
-    	private void 欠損接続左(上腕_蝙 上腕, 下腕_蝙 下腕, 手_蝙 手, bool カーブ)
+    	private void 欠損接続左(UpperArm_蝙 UpperArm, LowerArm_蝙 LowerArm, 手_蝙 手, bool カーブ)
     	{
     		Vector2D value = X0Y1_飛膜.ToLocal(手.X0Y0_人指_指3.Position);
     		Vector2D vector2D = X0Y1_飛膜.ToLocal(手.X0Y0_親指_指1.Position);
@@ -335,15 +335,15 @@ namespace SlaveMatrix
     		X0Y1_飛膜.OP[1].ps[1] = (X0Y1_飛膜.OP[1].ps[0] + X0Y1_飛膜.OP[1].ps[2]) * 0.5;
     		X0Y1_飛膜.OP[1].ps[1] += (vector2D - X0Y1_飛膜.OP[1].ps[1]) * 0.3;
     		X0Y1_飛膜.OP[2].ps[0] = X0Y1_飛膜.OP[1].ps[2];
-    		if (上腕 == null)
+    		if (UpperArm == null)
     		{
-    			if (下腕 == null)
+    			if (LowerArm == null)
     			{
     				X0Y1_飛膜.OP[2].ps[3] = X0Y1_飛膜.ToLocal(手.X0Y0_獣翼手.Position);
     			}
     			else
     			{
-    				X0Y1_飛膜.OP[2].ps[3] = X0Y1_飛膜.ToLocal(下腕.X0Y0_獣翼下腕.Position);
+    				X0Y1_飛膜.OP[2].ps[3] = X0Y1_飛膜.ToLocal(LowerArm.X0Y0_獣翼LowerArm.Position);
     			}
     			Vector2D vector2D2 = (X0Y1_飛膜.OP[2].ps[0] + X0Y1_飛膜.OP[2].ps[3]) * 0.5;
     			X0Y1_飛膜.OP[2].ps[1] = vector2D2 + (X0Y1_飛膜.OP[2].ps[0] - X0Y1_飛膜.OP[2].ps[3]) * 0.8;
@@ -353,19 +353,19 @@ namespace SlaveMatrix
     		}
     		else
     		{
-    			if (上腕.ConnectionType == ConnectionInfo.Shoulder_上腕_接続)
+    			if (UpperArm.ConnectionType == ConnectionInfo.Shoulder_UpperArm_接続)
     			{
-    				X0Y1_飛膜.OP[2].ps[3] = X0Y0_飛膜.ToLocal(上腕.X0Y0_獣翼上腕.ToGlobal(上腕.X0Y0_獣翼上腕.OP[3].ps[1]));
+    				X0Y1_飛膜.OP[2].ps[3] = X0Y0_飛膜.ToLocal(UpperArm.X0Y0_獣翼UpperArm.ToGlobal(UpperArm.X0Y0_獣翼UpperArm.OP[3].ps[1]));
     			}
     			else
     			{
-    				X0Y1_飛膜.OP[2].ps[3] = X0Y0_飛膜.ToLocal(上腕.X0Y0_獣翼上腕.ToGlobal(上腕.X0Y0_獣翼上腕.OP[3].ps[1].AddY(0.003)));
+    				X0Y1_飛膜.OP[2].ps[3] = X0Y0_飛膜.ToLocal(UpperArm.X0Y0_獣翼UpperArm.ToGlobal(UpperArm.X0Y0_獣翼UpperArm.OP[3].ps[1].AddY(0.003)));
     			}
     			Vector2D vector2D3 = (X0Y1_飛膜.OP[2].ps[0] + X0Y1_飛膜.OP[2].ps[3]) * 0.5;
     			X0Y1_飛膜.OP[2].ps[1] = (X0Y1_飛膜.OP[2].ps[0] + vector2D3) * 0.5;
     			X0Y1_飛膜.OP[2].ps[2] = (vector2D3 + X0Y1_飛膜.OP[2].ps[3]) * 0.5;
     		}
-    		if (下腕 == null)
+    		if (LowerArm == null)
     		{
     			Vector2D vector2D4 = X0Y1_飛膜.ToLocal(手.X0Y0_獣翼手.Position);
     			X0Y1_飛膜.OP[2].ps[1] += (vector2D4 - X0Y1_飛膜.OP[2].ps[1]) * 0.3;
@@ -373,11 +373,11 @@ namespace SlaveMatrix
     		}
     		else
     		{
-    			Vector2D vector2D5 = X0Y1_飛膜.ToLocal(下腕.X0Y0_獣翼下腕.Position);
+    			Vector2D vector2D5 = X0Y1_飛膜.ToLocal(LowerArm.X0Y0_獣翼LowerArm.Position);
     			X0Y1_飛膜.OP[2].ps[1] += (vector2D5 - X0Y1_飛膜.OP[2].ps[1]) * 0.3;
     			X0Y1_飛膜.OP[2].ps[2] += (vector2D5 - X0Y1_飛膜.OP[2].ps[2]) * 0.3;
     		}
-    		if (上腕.ConnectionType != ConnectionInfo.Shoulder_上腕_接続)
+    		if (UpperArm.ConnectionType != ConnectionInfo.Shoulder_UpperArm_接続)
     		{
     			X0Y1_飛膜.OP[3].ps[0] = X0Y1_飛膜.OP[2].ps[3];
     		}
@@ -457,7 +457,7 @@ namespace SlaveMatrix
     		X0Y1_飛膜.OP[42].ps[1] = X0Y1_飛膜.ToLocal(手.X0Y0_人指_指3.ToGlobal(手.X0Y0_人指_指3.OP[0].ps[1]));
     	}
 
-    	private void 欠損接続右(上腕_蝙 上腕, 下腕_蝙 下腕, 手_蝙 手, bool カーブ)
+    	private void 欠損接続右(UpperArm_蝙 UpperArm, LowerArm_蝙 LowerArm, 手_蝙 手, bool カーブ)
     	{
     		Vector2D value = X0Y1_飛膜.ToLocal(手.X0Y0_人指_指3.Position);
     		Vector2D vector2D = X0Y1_飛膜.ToLocal(手.X0Y0_親指_指1.Position);
@@ -469,15 +469,15 @@ namespace SlaveMatrix
     		X0Y1_飛膜.OP[41].ps[1] = (X0Y1_飛膜.OP[41].ps[2] + X0Y1_飛膜.OP[41].ps[0]) * 0.5;
     		X0Y1_飛膜.OP[41].ps[1] += (vector2D - X0Y1_飛膜.OP[41].ps[1]) * 0.3;
     		X0Y1_飛膜.OP[40].ps[3] = X0Y1_飛膜.OP[41].ps[0];
-    		if (上腕 == null)
+    		if (UpperArm == null)
     		{
-    			if (下腕 == null)
+    			if (LowerArm == null)
     			{
     				X0Y1_飛膜.OP[40].ps[0] = X0Y1_飛膜.ToLocal(手.X0Y0_獣翼手.Position);
     			}
     			else
     			{
-    				X0Y1_飛膜.OP[40].ps[0] = X0Y1_飛膜.ToLocal(下腕.X0Y0_獣翼下腕.Position);
+    				X0Y1_飛膜.OP[40].ps[0] = X0Y1_飛膜.ToLocal(LowerArm.X0Y0_獣翼LowerArm.Position);
     			}
     			Vector2D vector2D2 = (X0Y1_飛膜.OP[40].ps[3] + X0Y1_飛膜.OP[40].ps[0]) * 0.5;
     			X0Y1_飛膜.OP[40].ps[2] = vector2D2 + (X0Y1_飛膜.OP[40].ps[3] - X0Y1_飛膜.OP[40].ps[0]) * 0.8;
@@ -487,19 +487,19 @@ namespace SlaveMatrix
     		}
     		else
     		{
-    			if (上腕.ConnectionType == ConnectionInfo.Shoulder_上腕_接続)
+    			if (UpperArm.ConnectionType == ConnectionInfo.Shoulder_UpperArm_接続)
     			{
-    				X0Y1_飛膜.OP[40].ps[0] = X0Y0_飛膜.ToLocal(上腕.X0Y0_獣翼上腕.ToGlobal(上腕.X0Y0_獣翼上腕.OP[0].ps[4]));
+    				X0Y1_飛膜.OP[40].ps[0] = X0Y0_飛膜.ToLocal(UpperArm.X0Y0_獣翼UpperArm.ToGlobal(UpperArm.X0Y0_獣翼UpperArm.OP[0].ps[4]));
     			}
     			else
     			{
-    				X0Y1_飛膜.OP[40].ps[0] = X0Y0_飛膜.ToLocal(上腕.X0Y0_獣翼上腕.ToGlobal(上腕.X0Y0_獣翼上腕.OP[0].ps[4].AddY(0.003)));
+    				X0Y1_飛膜.OP[40].ps[0] = X0Y0_飛膜.ToLocal(UpperArm.X0Y0_獣翼UpperArm.ToGlobal(UpperArm.X0Y0_獣翼UpperArm.OP[0].ps[4].AddY(0.003)));
     			}
     			Vector2D vector2D3 = (X0Y1_飛膜.OP[40].ps[3] + X0Y1_飛膜.OP[40].ps[0]) * 0.5;
     			X0Y1_飛膜.OP[40].ps[2] = (X0Y1_飛膜.OP[40].ps[3] + vector2D3) * 0.5;
     			X0Y1_飛膜.OP[40].ps[1] = (vector2D3 + X0Y1_飛膜.OP[40].ps[0]) * 0.5;
     		}
-    		if (下腕 == null)
+    		if (LowerArm == null)
     		{
     			Vector2D vector2D4 = X0Y1_飛膜.ToLocal(手.X0Y0_獣翼手.Position);
     			X0Y1_飛膜.OP[40].ps[2] += (vector2D4 - X0Y1_飛膜.OP[40].ps[2]) * 0.3;
@@ -507,11 +507,11 @@ namespace SlaveMatrix
     		}
     		else
     		{
-    			Vector2D vector2D5 = X0Y1_飛膜.ToLocal(下腕.X0Y0_獣翼下腕.Position);
+    			Vector2D vector2D5 = X0Y1_飛膜.ToLocal(LowerArm.X0Y0_獣翼LowerArm.Position);
     			X0Y1_飛膜.OP[40].ps[2] += (vector2D5 - X0Y1_飛膜.OP[40].ps[2]) * 0.3;
     			X0Y1_飛膜.OP[40].ps[1] += (vector2D5 - X0Y1_飛膜.OP[40].ps[1]) * 0.3;
     		}
-    		if (上腕.ConnectionType != ConnectionInfo.Shoulder_上腕_接続)
+    		if (UpperArm.ConnectionType != ConnectionInfo.Shoulder_UpperArm_接続)
     		{
     			X0Y1_飛膜.OP[39].ps[2] = X0Y1_飛膜.OP[40].ps[0];
     		}

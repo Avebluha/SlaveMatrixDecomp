@@ -1,7 +1,9 @@
 namespace SlaveMatrix
 {
-    public struct 翼鳥
+    public struct Arm翼鳥
     {
+    	public Shoulder Shoulder;
+
     	public UpperArm_鳥 UpperArm;
 
     	public LowerArm_鳥 LowerArm;

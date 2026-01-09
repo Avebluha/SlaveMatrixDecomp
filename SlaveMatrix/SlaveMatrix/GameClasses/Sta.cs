@@ -250,27 +250,27 @@ namespace SlaveMatrix
 
     	public static Type 触手_蔦Dt;
 
-    	public static Type 上腕_人Dt;
+    	public static Type UpperArm_人Dt;
 
-    	public static Type 上腕_鳥Dt;
+    	public static Type UpperArm_鳥Dt;
 
-    	public static Type 上腕_蝙Dt;
+    	public static Type UpperArm_蝙Dt;
 
-    	public static Type 上腕_獣Dt;
+    	public static Type UpperArm_獣Dt;
 
-    	public static Type 上腕_蹄Dt;
+    	public static Type UpperArm_蹄Dt;
 
-    	public static Type 下腕_人Dt;
+    	public static Type LowerArm_人Dt;
 
-    	public static Type 下腕_鳥Dt;
+    	public static Type LowerArm_鳥Dt;
 
-    	public static Type 下腕_蝙Dt;
+    	public static Type LowerArm_蝙Dt;
 
-    	public static Type 獣下腕Dt;
+    	public static Type 獣LowerArmDt;
 
-    	public static Type 下腕_獣Dt;
+    	public static Type LowerArm_獣Dt;
 
-    	public static Type 下腕_蹄Dt;
+    	public static Type LowerArm_蹄Dt;
 
     	public static Type 手_人Dt;
 
@@ -1169,8 +1169,8 @@ namespace SlaveMatrix
     		胴t = typeof(Torso);
     		腰t = typeof(Waist);
     		尾_鯨t = typeof(尾_鯨);
-    		上腕_人t = typeof(上腕_人);
-    		上腕_鳥t = typeof(上腕_鳥);
+    		上腕_人t = typeof(UpperArm_人);
+    		上腕_鳥t = typeof(UpperArm_鳥);
     		長物_鯨t = typeof(長物_鯨);
     		後髪0_ジグDt = typeof(BackHair0_ジグD);
     		後髪0_ハネDt = typeof(BackHair0_ハネD);
@@ -1264,17 +1264,17 @@ namespace SlaveMatrix
     		触手_触Dt = typeof(触手_触D);
     		触手_犬Dt = typeof(触手_犬D);
     		触手_蔦Dt = typeof(触手_蔦D);
-    		上腕_人Dt = typeof(上腕_人D);
-    		上腕_鳥Dt = typeof(上腕_鳥D);
-    		上腕_蝙Dt = typeof(上腕_蝙D);
-    		上腕_獣Dt = typeof(上腕_獣D);
-    		上腕_蹄Dt = typeof(上腕_蹄D);
-    		下腕_人Dt = typeof(下腕_人D);
-    		下腕_鳥Dt = typeof(下腕_鳥D);
-    		下腕_蝙Dt = typeof(下腕_蝙D);
-    		獣下腕Dt = typeof(獣下腕D);
-    		下腕_獣Dt = typeof(下腕_獣D);
-    		下腕_蹄Dt = typeof(下腕_蹄D);
+    		UpperArm_人Dt = typeof(UpperArm_人D);
+    		UpperArm_鳥Dt = typeof(UpperArm_鳥D);
+    		UpperArm_蝙Dt = typeof(UpperArm_蝙D);
+    		UpperArm_獣Dt = typeof(UpperArm_獣D);
+    		UpperArm_蹄Dt = typeof(UpperArm_蹄D);
+    		LowerArm_人Dt = typeof(LowerArm_人D);
+    		LowerArm_鳥Dt = typeof(LowerArm_鳥D);
+    		LowerArm_蝙Dt = typeof(LowerArm_蝙D);
+    		獣LowerArmDt = typeof(獣LowerArmD);
+    		LowerArm_獣Dt = typeof(LowerArm_獣D);
+    		LowerArm_蹄Dt = typeof(LowerArm_蹄D);
     		手_人Dt = typeof(手_人D);
     		手_鳥Dt = typeof(手_鳥D);
     		手_蝙Dt = typeof(手_蝙D);

@@ -1309,7 +1309,7 @@ namespace SlaveMatrix
     			Runing = delegate(Mot m)
     			{
     				d = 5.0 * (0.15 + cha.絶頂激しさ) * m.Value.Sin() * RNG.XS.NextDouble() * l;
-    				if (cha.Bod.腕人n > 0)
+    				if (cha.Bod.Arm人n > 0)
     				{
     					cha.腕人絶頂(d);
     				}
@@ -1629,7 +1629,7 @@ namespace SlaveMatrix
     			Runing = delegate(Mot m)
     			{
     				d_ = 2.0 * m.Value;
-    				if (cha.Bod.腕人n > 0)
+    				if (cha.Bod.Arm人n > 0)
     				{
     					cha.腕人絶頂(d_);
     				}
@@ -2050,7 +2050,7 @@ namespace SlaveMatrix
             {
                 result.p = result.e.本体.GetHitPar_(HitColor);
                 bool flag = false;
-                bool flag2 = result.e is Shoulder || result.e is 上腕 || result.e is 下腕 || result.e is 手 || result.e is 四足脇 || result.e is 腿 || result.e is Leg || result.e is 足 || result.e is 鰭 || result.e is 葉 || result.e is 前翅 || result.e is 後翅 || result.e is 触肢 || result.e is 節足 || result.e is 節尾 || result.e is 大顎 || result.e is 虫顎 || result.e is 虫鎌 || result.e is 触手;
+                bool flag2 = result.e is Shoulder || result.e is UpperArm || result.e is LowerArm || result.e is 手 || result.e is 四足脇 || result.e is 腿 || result.e is Leg || result.e is 足 || result.e is 鰭 || result.e is 葉 || result.e is 前翅 || result.e is 後翅 || result.e is 触肢 || result.e is 節足 || result.e is 節尾 || result.e is 大顎 || result.e is 虫顎 || result.e is 虫鎌 || result.e is 触手;
                 if (result.e is 前髪 || result.e is 頭頂)
                 {
                     result.c = ContactType.Head;
@@ -2143,7 +2143,7 @@ namespace SlaveMatrix
                 {
                     result.c = ContactType.Tail;
                 }
-                else if (result.e is 前翅 || result.e is 後翅 || result.e is 上腕_鳥 || result.e is 下腕_鳥 || result.e is 手_鳥 || result.e is 上腕_蝙 || result.e is 下腕_蝙 || result.e is 手_蝙)
+                else if (result.e is 前翅 || result.e is 後翅 || result.e is UpperArm_鳥 || result.e is LowerArm_鳥 || result.e is 手_鳥 || result.e is UpperArm_蝙 || result.e is LowerArm_蝙 || result.e is 手_蝙)
                 {
                     result.c = ContactType.Wing;
                 }

@@ -893,9 +893,9 @@ namespace SlaveMatrix
     		飛膜.Dispose();
     	}
 
-    	public void 接続(上腕_蝙 上腕, 下腕_蝙 下腕, bool カーブ)
+    	public void 接続(UpperArm_蝙 UpperArm, LowerArm_蝙 LowerArm, bool カーブ)
     	{
-    		飛膜.接続(上腕, 下腕, this, カーブ);
+    		飛膜.接続(UpperArm, LowerArm, this, カーブ);
     	}
 
     	public override void 色更新()

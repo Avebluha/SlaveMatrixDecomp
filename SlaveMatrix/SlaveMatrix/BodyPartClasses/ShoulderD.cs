@@ -29,18 +29,18 @@ namespace SlaveMatrix
 
     	public bool Shoulder_ナース_表示;
 
-    	public List<EleD> 上腕_接続 = new List<EleD>();
+    	public List<EleD> UpperArm_接続 = new List<EleD>();
 
     	public ShoulderD()
     	{
     		ThisType = GetType();
     	}
 
-    	public void 上腕接続(EleD e)
+    	public void UpperArm接続(EleD e)
     	{
-    		上腕_接続.Add(e);
+    		UpperArm_接続.Add(e);
     		e.Par = this;
-    		e.接続情報 = ConnectionInfo.Shoulder_上腕_接続;
+    		e.接続情報 = ConnectionInfo.Shoulder_UpperArm_接続;
     	}
 
     	public override Ele GetEle(double DisUnit, ModeEventDispatcher Med, 体配色 体配色)

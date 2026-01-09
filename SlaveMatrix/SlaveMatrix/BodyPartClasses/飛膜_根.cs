@@ -120,33 +120,33 @@ namespace SlaveMatrix
     		X0Y1_飛膜CP = new ColorP(X0Y1_飛膜, 飛膜CD, DisUnit, abj: true);
     	}
 
-    	public void 接続(上腕_蝙 上腕, 下腕_蝙 下腕, 手_蝙 手, Vector2D 接着点)
+    	public void 接続(UpperArm_蝙 UpperArm, LowerArm_蝙 LowerArm, 手_蝙 手, Vector2D 接着点)
     	{
     		if (本体.IndexY == 0)
     		{
     			if (右 || 反転X_ || 反転Y_)
     			{
-    				通常接続右(上腕, 下腕, 手, 接着点);
+    				通常接続右(UpperArm, LowerArm, 手, 接着点);
     			}
     			else
     			{
-    				通常接続左(上腕, 下腕, 手, 接着点);
+    				通常接続左(UpperArm, LowerArm, 手, 接着点);
     			}
     		}
     		else if (右 || 反転X_ || 反転Y_)
     		{
-    			欠損接続右(上腕, 下腕, 手, 接着点);
+    			欠損接続右(UpperArm, LowerArm, 手, 接着点);
     		}
     		else
     		{
-    			欠損接続左(上腕, 下腕, 手, 接着点);
+    			欠損接続左(UpperArm, LowerArm, 手, 接着点);
     		}
     	}
 
-    	private void 通常接続左(上腕_蝙 上腕, 下腕_蝙 下腕, 手_蝙 手, Vector2D 接着点)
+    	private void 通常接続左(UpperArm_蝙 UpperArm, LowerArm_蝙 LowerArm, 手_蝙 手, Vector2D 接着点)
     	{
-    		Vector2D vector2D = X0Y0_飛膜.ToLocal(上腕.X0Y0_獣翼上腕.ToGlobal(上腕.X0Y0_獣翼上腕.JP[0].Joint));
-    		Vector2D vector2D2 = X0Y0_飛膜.ToLocal(上腕.X0Y0_獣翼上腕.ToGlobal(上腕.X0Y0_獣翼上腕.OP[3].ps[1]));
+    		Vector2D vector2D = X0Y0_飛膜.ToLocal(UpperArm.X0Y0_獣翼UpperArm.ToGlobal(UpperArm.X0Y0_獣翼UpperArm.JP[0].Joint));
+    		Vector2D vector2D2 = X0Y0_飛膜.ToLocal(UpperArm.X0Y0_獣翼UpperArm.ToGlobal(UpperArm.X0Y0_獣翼UpperArm.OP[3].ps[1]));
     		X0Y0_飛膜.OP[0].ps[0] = vector2D;
     		X0Y0_飛膜.OP[0].ps[2] = vector2D2;
     		X0Y0_飛膜.OP[0].ps[1] = (X0Y0_飛膜.OP[0].ps[0] + X0Y0_飛膜.OP[0].ps[2]) * 0.5;
@@ -156,7 +156,7 @@ namespace SlaveMatrix
     		X0Y0_飛膜.OP[2].ps[0] = X0Y0_飛膜.OP[1].ps[2];
     		if (手 == null)
     		{
-    			if (下腕 == null)
+    			if (LowerArm == null)
     			{
     				X0Y0_飛膜.OP[2].ps[2] = vector2D;
     				X0Y0_飛膜.OP[2].ps[1] = (X0Y0_飛膜.OP[2].ps[0] + X0Y0_飛膜.OP[2].ps[2]) * 0.5;
@@ -165,7 +165,7 @@ namespace SlaveMatrix
     			}
     			else
     			{
-    				X0Y0_飛膜.OP[2].ps[2] = X0Y0_飛膜.ToLocal(下腕.X0Y0_獣翼下腕.ToGlobal(下腕.X0Y0_獣翼下腕.JP[0].Joint));
+    				X0Y0_飛膜.OP[2].ps[2] = X0Y0_飛膜.ToLocal(LowerArm.X0Y0_獣翼LowerArm.ToGlobal(LowerArm.X0Y0_獣翼LowerArm.JP[0].Joint));
     				X0Y0_飛膜.OP[2].ps[1] = (X0Y0_飛膜.OP[2].ps[0] + X0Y0_飛膜.OP[2].ps[2]) * 0.5;
     				Vector2D vector2D3;
     				X0Y0_飛膜.OP[2].ps[1] += (vector2D3 = (vector2D - X0Y0_飛膜.OP[2].ps[1]) * 0.2);
@@ -186,10 +186,10 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 通常接続右(上腕_蝙 上腕, 下腕_蝙 下腕, 手_蝙 手, Vector2D 接着点)
+    	private void 通常接続右(UpperArm_蝙 UpperArm, LowerArm_蝙 LowerArm, 手_蝙 手, Vector2D 接着点)
     	{
-    		Vector2D vector2D = X0Y0_飛膜.ToLocal(上腕.X0Y0_獣翼上腕.ToGlobal(上腕.X0Y0_獣翼上腕.JP[0].Joint));
-    		Vector2D vector2D2 = X0Y0_飛膜.ToLocal(上腕.X0Y0_獣翼上腕.ToGlobal(上腕.X0Y0_獣翼上腕.OP[0].ps[4]));
+    		Vector2D vector2D = X0Y0_飛膜.ToLocal(UpperArm.X0Y0_獣翼UpperArm.ToGlobal(UpperArm.X0Y0_獣翼UpperArm.JP[0].Joint));
+    		Vector2D vector2D2 = X0Y0_飛膜.ToLocal(UpperArm.X0Y0_獣翼UpperArm.ToGlobal(UpperArm.X0Y0_獣翼UpperArm.OP[0].ps[4]));
     		X0Y0_飛膜.OP[3].ps[2] = vector2D;
     		X0Y0_飛膜.OP[3].ps[0] = vector2D2;
     		X0Y0_飛膜.OP[3].ps[1] = (X0Y0_飛膜.OP[3].ps[2] + X0Y0_飛膜.OP[3].ps[0]) * 0.5;
@@ -199,7 +199,7 @@ namespace SlaveMatrix
     		X0Y0_飛膜.OP[1].ps[2] = X0Y0_飛膜.OP[2].ps[0];
     		if (手 == null)
     		{
-    			if (下腕 == null)
+    			if (LowerArm == null)
     			{
     				X0Y0_飛膜.OP[1].ps[0] = vector2D;
     				X0Y0_飛膜.OP[1].ps[1] = (X0Y0_飛膜.OP[1].ps[2] + X0Y0_飛膜.OP[1].ps[0]) * 0.5;
@@ -208,7 +208,7 @@ namespace SlaveMatrix
     			}
     			else
     			{
-    				X0Y0_飛膜.OP[1].ps[0] = X0Y0_飛膜.ToLocal(下腕.X0Y0_獣翼下腕.ToGlobal(下腕.X0Y0_獣翼下腕.JP[0].Joint));
+    				X0Y0_飛膜.OP[1].ps[0] = X0Y0_飛膜.ToLocal(LowerArm.X0Y0_獣翼LowerArm.ToGlobal(LowerArm.X0Y0_獣翼LowerArm.JP[0].Joint));
     				X0Y0_飛膜.OP[1].ps[1] = (X0Y0_飛膜.OP[1].ps[2] + X0Y0_飛膜.OP[1].ps[0]) * 0.5;
     				Vector2D vector2D3;
     				X0Y0_飛膜.OP[1].ps[1] += (vector2D3 = (vector2D - X0Y0_飛膜.OP[1].ps[1]) * 0.2);
@@ -229,10 +229,10 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 欠損接続左(上腕_蝙 上腕, 下腕_蝙 下腕, 手_蝙 手, Vector2D 接着点)
+    	private void 欠損接続左(UpperArm_蝙 UpperArm, LowerArm_蝙 LowerArm, 手_蝙 手, Vector2D 接着点)
     	{
-    		Vector2D vector2D = X0Y1_飛膜.ToLocal(上腕.X0Y0_獣翼上腕.ToGlobal(上腕.X0Y0_獣翼上腕.JP[0].Joint));
-    		Vector2D value = X0Y0_飛膜.ToLocal(上腕.X0Y0_獣翼上腕.ToGlobal(上腕.X0Y0_獣翼上腕.OP[3].ps[1]));
+    		Vector2D vector2D = X0Y1_飛膜.ToLocal(UpperArm.X0Y0_獣翼UpperArm.ToGlobal(UpperArm.X0Y0_獣翼UpperArm.JP[0].Joint));
+    		Vector2D value = X0Y0_飛膜.ToLocal(UpperArm.X0Y0_獣翼UpperArm.ToGlobal(UpperArm.X0Y0_獣翼UpperArm.OP[3].ps[1]));
     		X0Y1_飛膜.OP[0].ps[0] = vector2D;
     		X0Y1_飛膜.OP[0].ps[2] = value;
     		X0Y1_飛膜.OP[0].ps[1] = (X0Y1_飛膜.OP[0].ps[0] + X0Y1_飛膜.OP[0].ps[2]) * 0.5;
@@ -240,7 +240,7 @@ namespace SlaveMatrix
     		X0Y1_飛膜.OP[1].ps[2] = X0Y1_飛膜.ToLocal(接着点);
     		X0Y1_飛膜.OP[1].ps[1] = (X0Y1_飛膜.OP[1].ps[0] + X0Y1_飛膜.OP[1].ps[2]) * 0.5;
     		Vector2D vector2D2 = X0Y1_飛膜.OP[1].ps[2];
-    		Vector2D vector2D3 = ((手 != null) ? X0Y1_飛膜.ToLocal(手.X0Y0_小指_指3.ToGlobal(手.X0Y0_小指_指3.OP[0].ps[0])) : ((下腕 == null) ? vector2D : X0Y1_飛膜.ToLocal(下腕.X0Y0_獣翼下腕.ToGlobal(下腕.X0Y0_獣翼下腕.JP[0].Joint))));
+    		Vector2D vector2D3 = ((手 != null) ? X0Y1_飛膜.ToLocal(手.X0Y0_小指_指3.ToGlobal(手.X0Y0_小指_指3.OP[0].ps[0])) : ((LowerArm == null) ? vector2D : X0Y1_飛膜.ToLocal(LowerArm.X0Y0_獣翼LowerArm.ToGlobal(LowerArm.X0Y0_獣翼LowerArm.JP[0].Joint))));
     		Vector2D vector2D4 = (vector2D2 + vector2D3) * 0.5;
     		Vector2D v = vector2D2 - vector2D3;
     		double num = v.LengthSquared();
@@ -277,10 +277,10 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 欠損接続右(上腕_蝙 上腕, 下腕_蝙 下腕, 手_蝙 手, Vector2D 接着点)
+    	private void 欠損接続右(UpperArm_蝙 UpperArm, LowerArm_蝙 LowerArm, 手_蝙 手, Vector2D 接着点)
     	{
-    		Vector2D vector2D = X0Y1_飛膜.ToLocal(上腕.X0Y0_獣翼上腕.ToGlobal(上腕.X0Y0_獣翼上腕.JP[0].Joint));
-    		Vector2D value = X0Y0_飛膜.ToLocal(上腕.X0Y0_獣翼上腕.ToGlobal(上腕.X0Y0_獣翼上腕.OP[0].ps[4]));
+    		Vector2D vector2D = X0Y1_飛膜.ToLocal(UpperArm.X0Y0_獣翼UpperArm.ToGlobal(UpperArm.X0Y0_獣翼UpperArm.JP[0].Joint));
+    		Vector2D value = X0Y0_飛膜.ToLocal(UpperArm.X0Y0_獣翼UpperArm.ToGlobal(UpperArm.X0Y0_獣翼UpperArm.OP[0].ps[4]));
     		X0Y1_飛膜.OP[10].ps[2] = vector2D;
     		X0Y1_飛膜.OP[10].ps[0] = value;
     		X0Y1_飛膜.OP[10].ps[1] = (X0Y1_飛膜.OP[10].ps[2] + X0Y1_飛膜.OP[10].ps[0]) * 0.5;
@@ -288,7 +288,7 @@ namespace SlaveMatrix
     		X0Y1_飛膜.OP[9].ps[0] = X0Y1_飛膜.ToLocal(接着点);
     		X0Y1_飛膜.OP[9].ps[1] = (X0Y1_飛膜.OP[9].ps[2] + X0Y1_飛膜.OP[9].ps[0]) * 0.5;
     		Vector2D vector2D2 = X0Y1_飛膜.OP[9].ps[0];
-    		Vector2D vector2D3 = ((手 != null) ? X0Y1_飛膜.ToLocal(手.X0Y0_小指_指3.ToGlobal(手.X0Y0_小指_指3.OP[2].ps[2])) : ((下腕 == null) ? vector2D : X0Y1_飛膜.ToLocal(下腕.X0Y0_獣翼下腕.ToGlobal(下腕.X0Y0_獣翼下腕.JP[0].Joint))));
+    		Vector2D vector2D3 = ((手 != null) ? X0Y1_飛膜.ToLocal(手.X0Y0_小指_指3.ToGlobal(手.X0Y0_小指_指3.OP[2].ps[2])) : ((LowerArm == null) ? vector2D : X0Y1_飛膜.ToLocal(LowerArm.X0Y0_獣翼LowerArm.ToGlobal(LowerArm.X0Y0_獣翼LowerArm.JP[0].Joint))));
     		Vector2D vector2D4 = (vector2D2 + vector2D3) * 0.5;
     		Vector2D v = vector2D2 - vector2D3;
     		double num = v.LengthSquared();

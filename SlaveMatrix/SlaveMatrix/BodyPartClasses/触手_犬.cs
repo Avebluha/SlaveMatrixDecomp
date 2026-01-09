@@ -16,9 +16,9 @@ namespace SlaveMatrix
 
     	public Par X0Y0_脚後_鰭_鰭膜3;
 
-    	public Par X0Y0_脚後_上腕;
+    	public Par X0Y0_脚後_UpperArm;
 
-    	public Par X0Y0_脚後_下腕;
+    	public Par X0Y0_脚後_LowerArm;
 
     	public Par X0Y0_脚後_手_手;
 
@@ -84,51 +84,51 @@ namespace SlaveMatrix
 
     	public Par X0Y0_脚後_手_親指_爪;
 
-    	public Par X0Y0_脚後_下腕鱗_鱗小_鱗9;
+    	public Par X0Y0_脚後_LowerArm鱗_鱗小_鱗9;
 
-    	public Par X0Y0_脚後_下腕鱗_鱗小_鱗8;
+    	public Par X0Y0_脚後_LowerArm鱗_鱗小_鱗8;
 
-    	public Par X0Y0_脚後_下腕鱗_鱗小_鱗7;
+    	public Par X0Y0_脚後_LowerArm鱗_鱗小_鱗7;
 
-    	public Par X0Y0_脚後_下腕鱗_鱗小_鱗6;
+    	public Par X0Y0_脚後_LowerArm鱗_鱗小_鱗6;
 
-    	public Par X0Y0_脚後_下腕鱗_鱗小_鱗5;
+    	public Par X0Y0_脚後_LowerArm鱗_鱗小_鱗5;
 
-    	public Par X0Y0_脚後_下腕鱗_鱗小_鱗4;
+    	public Par X0Y0_脚後_LowerArm鱗_鱗小_鱗4;
 
-    	public Par X0Y0_脚後_下腕鱗_鱗小_鱗3;
+    	public Par X0Y0_脚後_LowerArm鱗_鱗小_鱗3;
 
-    	public Par X0Y0_脚後_下腕鱗_鱗小_鱗2;
+    	public Par X0Y0_脚後_LowerArm鱗_鱗小_鱗2;
 
-    	public Par X0Y0_脚後_下腕鱗_鱗小_鱗1;
+    	public Par X0Y0_脚後_LowerArm鱗_鱗小_鱗1;
 
-    	public Par X0Y0_脚後_下腕鱗_鱗大_鱗9;
+    	public Par X0Y0_脚後_LowerArm鱗_鱗大_鱗9;
 
-    	public Par X0Y0_脚後_下腕鱗_鱗大_鱗8;
+    	public Par X0Y0_脚後_LowerArm鱗_鱗大_鱗8;
 
-    	public Par X0Y0_脚後_下腕鱗_鱗大_鱗7;
+    	public Par X0Y0_脚後_LowerArm鱗_鱗大_鱗7;
 
-    	public Par X0Y0_脚後_下腕鱗_鱗大_鱗6;
+    	public Par X0Y0_脚後_LowerArm鱗_鱗大_鱗6;
 
-    	public Par X0Y0_脚後_下腕鱗_鱗大_鱗5;
+    	public Par X0Y0_脚後_LowerArm鱗_鱗大_鱗5;
 
-    	public Par X0Y0_脚後_下腕鱗_鱗大_鱗4;
+    	public Par X0Y0_脚後_LowerArm鱗_鱗大_鱗4;
 
-    	public Par X0Y0_脚後_下腕鱗_鱗大_鱗3;
+    	public Par X0Y0_脚後_LowerArm鱗_鱗大_鱗3;
 
-    	public Par X0Y0_脚後_下腕鱗_鱗大_鱗2;
+    	public Par X0Y0_脚後_LowerArm鱗_鱗大_鱗2;
 
-    	public Par X0Y0_脚後_下腕鱗_鱗大_鱗1;
+    	public Par X0Y0_脚後_LowerArm鱗_鱗大_鱗1;
 
-    	public Par X0Y0_脚後_上腕鱗_鱗5;
+    	public Par X0Y0_脚後_UpperArm鱗_鱗5;
 
-    	public Par X0Y0_脚後_上腕鱗_鱗4;
+    	public Par X0Y0_脚後_UpperArm鱗_鱗4;
 
-    	public Par X0Y0_脚後_上腕鱗_鱗3;
+    	public Par X0Y0_脚後_UpperArm鱗_鱗3;
 
-    	public Par X0Y0_脚後_上腕鱗_鱗2;
+    	public Par X0Y0_脚後_UpperArm鱗_鱗2;
 
-    	public Par X0Y0_脚後_上腕鱗_鱗1;
+    	public Par X0Y0_脚後_UpperArm鱗_鱗1;
 
     	public Par X0Y0_脚後_輪_革;
 
@@ -426,9 +426,9 @@ namespace SlaveMatrix
 
     	public Par X0Y0_頭_輪_金具右;
 
-    	public Par X0Y0_脚前_上腕;
+    	public Par X0Y0_脚前_UpperArm;
 
-    	public Par X0Y0_脚前_下腕;
+    	public Par X0Y0_脚前_LowerArm;
 
     	public Par X0Y0_脚前_手_親指_爪;
 
@@ -494,51 +494,51 @@ namespace SlaveMatrix
 
     	public Par X0Y0_脚前_手_鱗_鱗1;
 
-    	public Par X0Y0_脚前_下腕鱗_鱗小_鱗9;
+    	public Par X0Y0_脚前_LowerArm鱗_鱗小_鱗9;
 
-    	public Par X0Y0_脚前_下腕鱗_鱗小_鱗8;
+    	public Par X0Y0_脚前_LowerArm鱗_鱗小_鱗8;
 
-    	public Par X0Y0_脚前_下腕鱗_鱗小_鱗7;
+    	public Par X0Y0_脚前_LowerArm鱗_鱗小_鱗7;
 
-    	public Par X0Y0_脚前_下腕鱗_鱗小_鱗6;
+    	public Par X0Y0_脚前_LowerArm鱗_鱗小_鱗6;
 
-    	public Par X0Y0_脚前_下腕鱗_鱗小_鱗5;
+    	public Par X0Y0_脚前_LowerArm鱗_鱗小_鱗5;
 
-    	public Par X0Y0_脚前_下腕鱗_鱗小_鱗4;
+    	public Par X0Y0_脚前_LowerArm鱗_鱗小_鱗4;
 
-    	public Par X0Y0_脚前_下腕鱗_鱗小_鱗3;
+    	public Par X0Y0_脚前_LowerArm鱗_鱗小_鱗3;
 
-    	public Par X0Y0_脚前_下腕鱗_鱗小_鱗2;
+    	public Par X0Y0_脚前_LowerArm鱗_鱗小_鱗2;
 
-    	public Par X0Y0_脚前_下腕鱗_鱗小_鱗1;
+    	public Par X0Y0_脚前_LowerArm鱗_鱗小_鱗1;
 
-    	public Par X0Y0_脚前_下腕鱗_鱗大_鱗9;
+    	public Par X0Y0_脚前_LowerArm鱗_鱗大_鱗9;
 
-    	public Par X0Y0_脚前_下腕鱗_鱗大_鱗8;
+    	public Par X0Y0_脚前_LowerArm鱗_鱗大_鱗8;
 
-    	public Par X0Y0_脚前_下腕鱗_鱗大_鱗7;
+    	public Par X0Y0_脚前_LowerArm鱗_鱗大_鱗7;
 
-    	public Par X0Y0_脚前_下腕鱗_鱗大_鱗6;
+    	public Par X0Y0_脚前_LowerArm鱗_鱗大_鱗6;
 
-    	public Par X0Y0_脚前_下腕鱗_鱗大_鱗5;
+    	public Par X0Y0_脚前_LowerArm鱗_鱗大_鱗5;
 
-    	public Par X0Y0_脚前_下腕鱗_鱗大_鱗4;
+    	public Par X0Y0_脚前_LowerArm鱗_鱗大_鱗4;
 
-    	public Par X0Y0_脚前_下腕鱗_鱗大_鱗3;
+    	public Par X0Y0_脚前_LowerArm鱗_鱗大_鱗3;
 
-    	public Par X0Y0_脚前_下腕鱗_鱗大_鱗2;
+    	public Par X0Y0_脚前_LowerArm鱗_鱗大_鱗2;
 
-    	public Par X0Y0_脚前_下腕鱗_鱗大_鱗1;
+    	public Par X0Y0_脚前_LowerArm鱗_鱗大_鱗1;
 
-    	public Par X0Y0_脚前_上腕鱗_鱗5;
+    	public Par X0Y0_脚前_UpperArm鱗_鱗5;
 
-    	public Par X0Y0_脚前_上腕鱗_鱗4;
+    	public Par X0Y0_脚前_UpperArm鱗_鱗4;
 
-    	public Par X0Y0_脚前_上腕鱗_鱗3;
+    	public Par X0Y0_脚前_UpperArm鱗_鱗3;
 
-    	public Par X0Y0_脚前_上腕鱗_鱗2;
+    	public Par X0Y0_脚前_UpperArm鱗_鱗2;
 
-    	public Par X0Y0_脚前_上腕鱗_鱗1;
+    	public Par X0Y0_脚前_UpperArm鱗_鱗1;
 
     	public Par X0Y0_脚前_鰭_鰭膜1;
 
@@ -572,9 +572,9 @@ namespace SlaveMatrix
 
     	public ColorD 脚後_鰭_鰭膜3CD;
 
-    	public ColorD 脚後_上腕CD;
+    	public ColorD 脚後_UpperArmCD;
 
-    	public ColorD 脚後_下腕CD;
+    	public ColorD 脚後_LowerArmCD;
 
     	public ColorD 脚後_手_手CD;
 
@@ -640,51 +640,51 @@ namespace SlaveMatrix
 
     	public ColorD 脚後_手_親指_爪CD;
 
-    	public ColorD 脚後_下腕鱗_鱗小_鱗9CD;
+    	public ColorD 脚後_LowerArm鱗_鱗小_鱗9CD;
 
-    	public ColorD 脚後_下腕鱗_鱗小_鱗8CD;
+    	public ColorD 脚後_LowerArm鱗_鱗小_鱗8CD;
 
-    	public ColorD 脚後_下腕鱗_鱗小_鱗7CD;
+    	public ColorD 脚後_LowerArm鱗_鱗小_鱗7CD;
 
-    	public ColorD 脚後_下腕鱗_鱗小_鱗6CD;
+    	public ColorD 脚後_LowerArm鱗_鱗小_鱗6CD;
 
-    	public ColorD 脚後_下腕鱗_鱗小_鱗5CD;
+    	public ColorD 脚後_LowerArm鱗_鱗小_鱗5CD;
 
-    	public ColorD 脚後_下腕鱗_鱗小_鱗4CD;
+    	public ColorD 脚後_LowerArm鱗_鱗小_鱗4CD;
 
-    	public ColorD 脚後_下腕鱗_鱗小_鱗3CD;
+    	public ColorD 脚後_LowerArm鱗_鱗小_鱗3CD;
 
-    	public ColorD 脚後_下腕鱗_鱗小_鱗2CD;
+    	public ColorD 脚後_LowerArm鱗_鱗小_鱗2CD;
 
-    	public ColorD 脚後_下腕鱗_鱗小_鱗1CD;
+    	public ColorD 脚後_LowerArm鱗_鱗小_鱗1CD;
 
-    	public ColorD 脚後_下腕鱗_鱗大_鱗9CD;
+    	public ColorD 脚後_LowerArm鱗_鱗大_鱗9CD;
 
-    	public ColorD 脚後_下腕鱗_鱗大_鱗8CD;
+    	public ColorD 脚後_LowerArm鱗_鱗大_鱗8CD;
 
-    	public ColorD 脚後_下腕鱗_鱗大_鱗7CD;
+    	public ColorD 脚後_LowerArm鱗_鱗大_鱗7CD;
 
-    	public ColorD 脚後_下腕鱗_鱗大_鱗6CD;
+    	public ColorD 脚後_LowerArm鱗_鱗大_鱗6CD;
 
-    	public ColorD 脚後_下腕鱗_鱗大_鱗5CD;
+    	public ColorD 脚後_LowerArm鱗_鱗大_鱗5CD;
 
-    	public ColorD 脚後_下腕鱗_鱗大_鱗4CD;
+    	public ColorD 脚後_LowerArm鱗_鱗大_鱗4CD;
 
-    	public ColorD 脚後_下腕鱗_鱗大_鱗3CD;
+    	public ColorD 脚後_LowerArm鱗_鱗大_鱗3CD;
 
-    	public ColorD 脚後_下腕鱗_鱗大_鱗2CD;
+    	public ColorD 脚後_LowerArm鱗_鱗大_鱗2CD;
 
-    	public ColorD 脚後_下腕鱗_鱗大_鱗1CD;
+    	public ColorD 脚後_LowerArm鱗_鱗大_鱗1CD;
 
-    	public ColorD 脚後_上腕鱗_鱗5CD;
+    	public ColorD 脚後_UpperArm鱗_鱗5CD;
 
-    	public ColorD 脚後_上腕鱗_鱗4CD;
+    	public ColorD 脚後_UpperArm鱗_鱗4CD;
 
-    	public ColorD 脚後_上腕鱗_鱗3CD;
+    	public ColorD 脚後_UpperArm鱗_鱗3CD;
 
-    	public ColorD 脚後_上腕鱗_鱗2CD;
+    	public ColorD 脚後_UpperArm鱗_鱗2CD;
 
-    	public ColorD 脚後_上腕鱗_鱗1CD;
+    	public ColorD 脚後_UpperArm鱗_鱗1CD;
 
     	public ColorD 脚後_輪_革CD;
 
@@ -982,9 +982,9 @@ namespace SlaveMatrix
 
     	public ColorD 頭_輪_金具右CD;
 
-    	public ColorD 脚前_上腕CD;
+    	public ColorD 脚前_UpperArmCD;
 
-    	public ColorD 脚前_下腕CD;
+    	public ColorD 脚前_LowerArmCD;
 
     	public ColorD 脚前_手_親指_爪CD;
 
@@ -1050,51 +1050,51 @@ namespace SlaveMatrix
 
     	public ColorD 脚前_手_鱗_鱗1CD;
 
-    	public ColorD 脚前_下腕鱗_鱗小_鱗9CD;
+    	public ColorD 脚前_LowerArm鱗_鱗小_鱗9CD;
 
-    	public ColorD 脚前_下腕鱗_鱗小_鱗8CD;
+    	public ColorD 脚前_LowerArm鱗_鱗小_鱗8CD;
 
-    	public ColorD 脚前_下腕鱗_鱗小_鱗7CD;
+    	public ColorD 脚前_LowerArm鱗_鱗小_鱗7CD;
 
-    	public ColorD 脚前_下腕鱗_鱗小_鱗6CD;
+    	public ColorD 脚前_LowerArm鱗_鱗小_鱗6CD;
 
-    	public ColorD 脚前_下腕鱗_鱗小_鱗5CD;
+    	public ColorD 脚前_LowerArm鱗_鱗小_鱗5CD;
 
-    	public ColorD 脚前_下腕鱗_鱗小_鱗4CD;
+    	public ColorD 脚前_LowerArm鱗_鱗小_鱗4CD;
 
-    	public ColorD 脚前_下腕鱗_鱗小_鱗3CD;
+    	public ColorD 脚前_LowerArm鱗_鱗小_鱗3CD;
 
-    	public ColorD 脚前_下腕鱗_鱗小_鱗2CD;
+    	public ColorD 脚前_LowerArm鱗_鱗小_鱗2CD;
 
-    	public ColorD 脚前_下腕鱗_鱗小_鱗1CD;
+    	public ColorD 脚前_LowerArm鱗_鱗小_鱗1CD;
 
-    	public ColorD 脚前_下腕鱗_鱗大_鱗9CD;
+    	public ColorD 脚前_LowerArm鱗_鱗大_鱗9CD;
 
-    	public ColorD 脚前_下腕鱗_鱗大_鱗8CD;
+    	public ColorD 脚前_LowerArm鱗_鱗大_鱗8CD;
 
-    	public ColorD 脚前_下腕鱗_鱗大_鱗7CD;
+    	public ColorD 脚前_LowerArm鱗_鱗大_鱗7CD;
 
-    	public ColorD 脚前_下腕鱗_鱗大_鱗6CD;
+    	public ColorD 脚前_LowerArm鱗_鱗大_鱗6CD;
 
-    	public ColorD 脚前_下腕鱗_鱗大_鱗5CD;
+    	public ColorD 脚前_LowerArm鱗_鱗大_鱗5CD;
 
-    	public ColorD 脚前_下腕鱗_鱗大_鱗4CD;
+    	public ColorD 脚前_LowerArm鱗_鱗大_鱗4CD;
 
-    	public ColorD 脚前_下腕鱗_鱗大_鱗3CD;
+    	public ColorD 脚前_LowerArm鱗_鱗大_鱗3CD;
 
-    	public ColorD 脚前_下腕鱗_鱗大_鱗2CD;
+    	public ColorD 脚前_LowerArm鱗_鱗大_鱗2CD;
 
-    	public ColorD 脚前_下腕鱗_鱗大_鱗1CD;
+    	public ColorD 脚前_LowerArm鱗_鱗大_鱗1CD;
 
-    	public ColorD 脚前_上腕鱗_鱗5CD;
+    	public ColorD 脚前_UpperArm鱗_鱗5CD;
 
-    	public ColorD 脚前_上腕鱗_鱗4CD;
+    	public ColorD 脚前_UpperArm鱗_鱗4CD;
 
-    	public ColorD 脚前_上腕鱗_鱗3CD;
+    	public ColorD 脚前_UpperArm鱗_鱗3CD;
 
-    	public ColorD 脚前_上腕鱗_鱗2CD;
+    	public ColorD 脚前_UpperArm鱗_鱗2CD;
 
-    	public ColorD 脚前_上腕鱗_鱗1CD;
+    	public ColorD 脚前_UpperArm鱗_鱗1CD;
 
     	public ColorD 脚前_鰭_鰭膜1CD;
 
@@ -1128,9 +1128,9 @@ namespace SlaveMatrix
 
     	public ColorP X0Y0_脚後_鰭_鰭膜3CP;
 
-    	public ColorP X0Y0_脚後_上腕CP;
+    	public ColorP X0Y0_脚後_UpperArmCP;
 
-    	public ColorP X0Y0_脚後_下腕CP;
+    	public ColorP X0Y0_脚後_LowerArmCP;
 
     	public ColorP X0Y0_脚後_手_手CP;
 
@@ -1196,51 +1196,51 @@ namespace SlaveMatrix
 
     	public ColorP X0Y0_脚後_手_親指_爪CP;
 
-    	public ColorP X0Y0_脚後_下腕鱗_鱗小_鱗9CP;
+    	public ColorP X0Y0_脚後_LowerArm鱗_鱗小_鱗9CP;
 
-    	public ColorP X0Y0_脚後_下腕鱗_鱗小_鱗8CP;
+    	public ColorP X0Y0_脚後_LowerArm鱗_鱗小_鱗8CP;
 
-    	public ColorP X0Y0_脚後_下腕鱗_鱗小_鱗7CP;
+    	public ColorP X0Y0_脚後_LowerArm鱗_鱗小_鱗7CP;
 
-    	public ColorP X0Y0_脚後_下腕鱗_鱗小_鱗6CP;
+    	public ColorP X0Y0_脚後_LowerArm鱗_鱗小_鱗6CP;
 
-    	public ColorP X0Y0_脚後_下腕鱗_鱗小_鱗5CP;
+    	public ColorP X0Y0_脚後_LowerArm鱗_鱗小_鱗5CP;
 
-    	public ColorP X0Y0_脚後_下腕鱗_鱗小_鱗4CP;
+    	public ColorP X0Y0_脚後_LowerArm鱗_鱗小_鱗4CP;
 
-    	public ColorP X0Y0_脚後_下腕鱗_鱗小_鱗3CP;
+    	public ColorP X0Y0_脚後_LowerArm鱗_鱗小_鱗3CP;
 
-    	public ColorP X0Y0_脚後_下腕鱗_鱗小_鱗2CP;
+    	public ColorP X0Y0_脚後_LowerArm鱗_鱗小_鱗2CP;
 
-    	public ColorP X0Y0_脚後_下腕鱗_鱗小_鱗1CP;
+    	public ColorP X0Y0_脚後_LowerArm鱗_鱗小_鱗1CP;
 
-    	public ColorP X0Y0_脚後_下腕鱗_鱗大_鱗9CP;
+    	public ColorP X0Y0_脚後_LowerArm鱗_鱗大_鱗9CP;
 
-    	public ColorP X0Y0_脚後_下腕鱗_鱗大_鱗8CP;
+    	public ColorP X0Y0_脚後_LowerArm鱗_鱗大_鱗8CP;
 
-    	public ColorP X0Y0_脚後_下腕鱗_鱗大_鱗7CP;
+    	public ColorP X0Y0_脚後_LowerArm鱗_鱗大_鱗7CP;
 
-    	public ColorP X0Y0_脚後_下腕鱗_鱗大_鱗6CP;
+    	public ColorP X0Y0_脚後_LowerArm鱗_鱗大_鱗6CP;
 
-    	public ColorP X0Y0_脚後_下腕鱗_鱗大_鱗5CP;
+    	public ColorP X0Y0_脚後_LowerArm鱗_鱗大_鱗5CP;
 
-    	public ColorP X0Y0_脚後_下腕鱗_鱗大_鱗4CP;
+    	public ColorP X0Y0_脚後_LowerArm鱗_鱗大_鱗4CP;
 
-    	public ColorP X0Y0_脚後_下腕鱗_鱗大_鱗3CP;
+    	public ColorP X0Y0_脚後_LowerArm鱗_鱗大_鱗3CP;
 
-    	public ColorP X0Y0_脚後_下腕鱗_鱗大_鱗2CP;
+    	public ColorP X0Y0_脚後_LowerArm鱗_鱗大_鱗2CP;
 
-    	public ColorP X0Y0_脚後_下腕鱗_鱗大_鱗1CP;
+    	public ColorP X0Y0_脚後_LowerArm鱗_鱗大_鱗1CP;
 
-    	public ColorP X0Y0_脚後_上腕鱗_鱗5CP;
+    	public ColorP X0Y0_脚後_UpperArm鱗_鱗5CP;
 
-    	public ColorP X0Y0_脚後_上腕鱗_鱗4CP;
+    	public ColorP X0Y0_脚後_UpperArm鱗_鱗4CP;
 
-    	public ColorP X0Y0_脚後_上腕鱗_鱗3CP;
+    	public ColorP X0Y0_脚後_UpperArm鱗_鱗3CP;
 
-    	public ColorP X0Y0_脚後_上腕鱗_鱗2CP;
+    	public ColorP X0Y0_脚後_UpperArm鱗_鱗2CP;
 
-    	public ColorP X0Y0_脚後_上腕鱗_鱗1CP;
+    	public ColorP X0Y0_脚後_UpperArm鱗_鱗1CP;
 
     	public ColorP X0Y0_脚後_輪_革CP;
 
@@ -1538,9 +1538,9 @@ namespace SlaveMatrix
 
     	public ColorP X0Y0_頭_輪_金具右CP;
 
-    	public ColorP X0Y0_脚前_上腕CP;
+    	public ColorP X0Y0_脚前_UpperArmCP;
 
-    	public ColorP X0Y0_脚前_下腕CP;
+    	public ColorP X0Y0_脚前_LowerArmCP;
 
     	public ColorP X0Y0_脚前_手_親指_爪CP;
 
@@ -1606,51 +1606,51 @@ namespace SlaveMatrix
 
     	public ColorP X0Y0_脚前_手_鱗_鱗1CP;
 
-    	public ColorP X0Y0_脚前_下腕鱗_鱗小_鱗9CP;
+    	public ColorP X0Y0_脚前_LowerArm鱗_鱗小_鱗9CP;
 
-    	public ColorP X0Y0_脚前_下腕鱗_鱗小_鱗8CP;
+    	public ColorP X0Y0_脚前_LowerArm鱗_鱗小_鱗8CP;
 
-    	public ColorP X0Y0_脚前_下腕鱗_鱗小_鱗7CP;
+    	public ColorP X0Y0_脚前_LowerArm鱗_鱗小_鱗7CP;
 
-    	public ColorP X0Y0_脚前_下腕鱗_鱗小_鱗6CP;
+    	public ColorP X0Y0_脚前_LowerArm鱗_鱗小_鱗6CP;
 
-    	public ColorP X0Y0_脚前_下腕鱗_鱗小_鱗5CP;
+    	public ColorP X0Y0_脚前_LowerArm鱗_鱗小_鱗5CP;
 
-    	public ColorP X0Y0_脚前_下腕鱗_鱗小_鱗4CP;
+    	public ColorP X0Y0_脚前_LowerArm鱗_鱗小_鱗4CP;
 
-    	public ColorP X0Y0_脚前_下腕鱗_鱗小_鱗3CP;
+    	public ColorP X0Y0_脚前_LowerArm鱗_鱗小_鱗3CP;
 
-    	public ColorP X0Y0_脚前_下腕鱗_鱗小_鱗2CP;
+    	public ColorP X0Y0_脚前_LowerArm鱗_鱗小_鱗2CP;
 
-    	public ColorP X0Y0_脚前_下腕鱗_鱗小_鱗1CP;
+    	public ColorP X0Y0_脚前_LowerArm鱗_鱗小_鱗1CP;
 
-    	public ColorP X0Y0_脚前_下腕鱗_鱗大_鱗9CP;
+    	public ColorP X0Y0_脚前_LowerArm鱗_鱗大_鱗9CP;
 
-    	public ColorP X0Y0_脚前_下腕鱗_鱗大_鱗8CP;
+    	public ColorP X0Y0_脚前_LowerArm鱗_鱗大_鱗8CP;
 
-    	public ColorP X0Y0_脚前_下腕鱗_鱗大_鱗7CP;
+    	public ColorP X0Y0_脚前_LowerArm鱗_鱗大_鱗7CP;
 
-    	public ColorP X0Y0_脚前_下腕鱗_鱗大_鱗6CP;
+    	public ColorP X0Y0_脚前_LowerArm鱗_鱗大_鱗6CP;
 
-    	public ColorP X0Y0_脚前_下腕鱗_鱗大_鱗5CP;
+    	public ColorP X0Y0_脚前_LowerArm鱗_鱗大_鱗5CP;
 
-    	public ColorP X0Y0_脚前_下腕鱗_鱗大_鱗4CP;
+    	public ColorP X0Y0_脚前_LowerArm鱗_鱗大_鱗4CP;
 
-    	public ColorP X0Y0_脚前_下腕鱗_鱗大_鱗3CP;
+    	public ColorP X0Y0_脚前_LowerArm鱗_鱗大_鱗3CP;
 
-    	public ColorP X0Y0_脚前_下腕鱗_鱗大_鱗2CP;
+    	public ColorP X0Y0_脚前_LowerArm鱗_鱗大_鱗2CP;
 
-    	public ColorP X0Y0_脚前_下腕鱗_鱗大_鱗1CP;
+    	public ColorP X0Y0_脚前_LowerArm鱗_鱗大_鱗1CP;
 
-    	public ColorP X0Y0_脚前_上腕鱗_鱗5CP;
+    	public ColorP X0Y0_脚前_UpperArm鱗_鱗5CP;
 
-    	public ColorP X0Y0_脚前_上腕鱗_鱗4CP;
+    	public ColorP X0Y0_脚前_UpperArm鱗_鱗4CP;
 
-    	public ColorP X0Y0_脚前_上腕鱗_鱗3CP;
+    	public ColorP X0Y0_脚前_UpperArm鱗_鱗3CP;
 
-    	public ColorP X0Y0_脚前_上腕鱗_鱗2CP;
+    	public ColorP X0Y0_脚前_UpperArm鱗_鱗2CP;
 
-    	public ColorP X0Y0_脚前_上腕鱗_鱗1CP;
+    	public ColorP X0Y0_脚前_UpperArm鱗_鱗1CP;
 
     	public ColorP X0Y0_脚前_鰭_鰭膜1CP;
 
@@ -1682,13 +1682,13 @@ namespace SlaveMatrix
 
     	public Ele[] Head_接続;
 
-    	public Ele[] 上腕左_接続;
+    	public Ele[] UpperArm左_接続;
 
-    	public Ele[] 上腕右_接続;
+    	public Ele[] UpperArm右_接続;
 
-    	public Ele[] 下腕左_接続;
+    	public Ele[] LowerArm左_接続;
 
-    	public Ele[] 下腕右_接続;
+    	public Ele[] LowerArm右_接続;
 
     	public Ele[] 手左_接続;
 
@@ -1799,29 +1799,29 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 脚後_上腕_表示
+    	public bool 脚後_UpperArm_表示
     	{
     		get
     		{
-    			return X0Y0_脚後_上腕.Dra;
+    			return X0Y0_脚後_UpperArm.Dra;
     		}
     		set
     		{
-    			X0Y0_脚後_上腕.Dra = value;
-    			X0Y0_脚後_上腕.Hit = value;
+    			X0Y0_脚後_UpperArm.Dra = value;
+    			X0Y0_脚後_UpperArm.Hit = value;
     		}
     	}
 
-    	public bool 脚後_下腕_表示
+    	public bool 脚後_LowerArm_表示
     	{
     		get
     		{
-    			return X0Y0_脚後_下腕.Dra;
+    			return X0Y0_脚後_LowerArm.Dra;
     		}
     		set
     		{
-    			X0Y0_脚後_下腕.Dra = value;
-    			X0Y0_脚後_下腕.Hit = value;
+    			X0Y0_脚後_LowerArm.Dra = value;
+    			X0Y0_脚後_LowerArm.Hit = value;
     		}
     	}
 
@@ -2241,302 +2241,302 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 脚後_下腕鱗_鱗小_鱗9_表示
+    	public bool 脚後_LowerArm鱗_鱗小_鱗9_表示
     	{
     		get
     		{
-    			return X0Y0_脚後_下腕鱗_鱗小_鱗9.Dra;
+    			return X0Y0_脚後_LowerArm鱗_鱗小_鱗9.Dra;
     		}
     		set
     		{
-    			X0Y0_脚後_下腕鱗_鱗小_鱗9.Dra = value;
-    			X0Y0_脚後_下腕鱗_鱗小_鱗9.Hit = value;
+    			X0Y0_脚後_LowerArm鱗_鱗小_鱗9.Dra = value;
+    			X0Y0_脚後_LowerArm鱗_鱗小_鱗9.Hit = value;
     		}
     	}
 
-    	public bool 脚後_下腕鱗_鱗小_鱗8_表示
+    	public bool 脚後_LowerArm鱗_鱗小_鱗8_表示
     	{
     		get
     		{
-    			return X0Y0_脚後_下腕鱗_鱗小_鱗8.Dra;
+    			return X0Y0_脚後_LowerArm鱗_鱗小_鱗8.Dra;
     		}
     		set
     		{
-    			X0Y0_脚後_下腕鱗_鱗小_鱗8.Dra = value;
-    			X0Y0_脚後_下腕鱗_鱗小_鱗8.Hit = value;
+    			X0Y0_脚後_LowerArm鱗_鱗小_鱗8.Dra = value;
+    			X0Y0_脚後_LowerArm鱗_鱗小_鱗8.Hit = value;
     		}
     	}
 
-    	public bool 脚後_下腕鱗_鱗小_鱗7_表示
+    	public bool 脚後_LowerArm鱗_鱗小_鱗7_表示
     	{
     		get
     		{
-    			return X0Y0_脚後_下腕鱗_鱗小_鱗7.Dra;
+    			return X0Y0_脚後_LowerArm鱗_鱗小_鱗7.Dra;
     		}
     		set
     		{
-    			X0Y0_脚後_下腕鱗_鱗小_鱗7.Dra = value;
-    			X0Y0_脚後_下腕鱗_鱗小_鱗7.Hit = value;
+    			X0Y0_脚後_LowerArm鱗_鱗小_鱗7.Dra = value;
+    			X0Y0_脚後_LowerArm鱗_鱗小_鱗7.Hit = value;
     		}
     	}
 
-    	public bool 脚後_下腕鱗_鱗小_鱗6_表示
+    	public bool 脚後_LowerArm鱗_鱗小_鱗6_表示
     	{
     		get
     		{
-    			return X0Y0_脚後_下腕鱗_鱗小_鱗6.Dra;
+    			return X0Y0_脚後_LowerArm鱗_鱗小_鱗6.Dra;
     		}
     		set
     		{
-    			X0Y0_脚後_下腕鱗_鱗小_鱗6.Dra = value;
-    			X0Y0_脚後_下腕鱗_鱗小_鱗6.Hit = value;
+    			X0Y0_脚後_LowerArm鱗_鱗小_鱗6.Dra = value;
+    			X0Y0_脚後_LowerArm鱗_鱗小_鱗6.Hit = value;
     		}
     	}
 
-    	public bool 脚後_下腕鱗_鱗小_鱗5_表示
+    	public bool 脚後_LowerArm鱗_鱗小_鱗5_表示
     	{
     		get
     		{
-    			return X0Y0_脚後_下腕鱗_鱗小_鱗5.Dra;
+    			return X0Y0_脚後_LowerArm鱗_鱗小_鱗5.Dra;
     		}
     		set
     		{
-    			X0Y0_脚後_下腕鱗_鱗小_鱗5.Dra = value;
-    			X0Y0_脚後_下腕鱗_鱗小_鱗5.Hit = value;
+    			X0Y0_脚後_LowerArm鱗_鱗小_鱗5.Dra = value;
+    			X0Y0_脚後_LowerArm鱗_鱗小_鱗5.Hit = value;
     		}
     	}
 
-    	public bool 脚後_下腕鱗_鱗小_鱗4_表示
+    	public bool 脚後_LowerArm鱗_鱗小_鱗4_表示
     	{
     		get
     		{
-    			return X0Y0_脚後_下腕鱗_鱗小_鱗4.Dra;
+    			return X0Y0_脚後_LowerArm鱗_鱗小_鱗4.Dra;
     		}
     		set
     		{
-    			X0Y0_脚後_下腕鱗_鱗小_鱗4.Dra = value;
-    			X0Y0_脚後_下腕鱗_鱗小_鱗4.Hit = value;
+    			X0Y0_脚後_LowerArm鱗_鱗小_鱗4.Dra = value;
+    			X0Y0_脚後_LowerArm鱗_鱗小_鱗4.Hit = value;
     		}
     	}
 
-    	public bool 脚後_下腕鱗_鱗小_鱗3_表示
+    	public bool 脚後_LowerArm鱗_鱗小_鱗3_表示
     	{
     		get
     		{
-    			return X0Y0_脚後_下腕鱗_鱗小_鱗3.Dra;
+    			return X0Y0_脚後_LowerArm鱗_鱗小_鱗3.Dra;
     		}
     		set
     		{
-    			X0Y0_脚後_下腕鱗_鱗小_鱗3.Dra = value;
-    			X0Y0_脚後_下腕鱗_鱗小_鱗3.Hit = value;
+    			X0Y0_脚後_LowerArm鱗_鱗小_鱗3.Dra = value;
+    			X0Y0_脚後_LowerArm鱗_鱗小_鱗3.Hit = value;
     		}
     	}
 
-    	public bool 脚後_下腕鱗_鱗小_鱗2_表示
+    	public bool 脚後_LowerArm鱗_鱗小_鱗2_表示
     	{
     		get
     		{
-    			return X0Y0_脚後_下腕鱗_鱗小_鱗2.Dra;
+    			return X0Y0_脚後_LowerArm鱗_鱗小_鱗2.Dra;
     		}
     		set
     		{
-    			X0Y0_脚後_下腕鱗_鱗小_鱗2.Dra = value;
-    			X0Y0_脚後_下腕鱗_鱗小_鱗2.Hit = value;
+    			X0Y0_脚後_LowerArm鱗_鱗小_鱗2.Dra = value;
+    			X0Y0_脚後_LowerArm鱗_鱗小_鱗2.Hit = value;
     		}
     	}
 
-    	public bool 脚後_下腕鱗_鱗小_鱗1_表示
+    	public bool 脚後_LowerArm鱗_鱗小_鱗1_表示
     	{
     		get
     		{
-    			return X0Y0_脚後_下腕鱗_鱗小_鱗1.Dra;
+    			return X0Y0_脚後_LowerArm鱗_鱗小_鱗1.Dra;
     		}
     		set
     		{
-    			X0Y0_脚後_下腕鱗_鱗小_鱗1.Dra = value;
-    			X0Y0_脚後_下腕鱗_鱗小_鱗1.Hit = value;
+    			X0Y0_脚後_LowerArm鱗_鱗小_鱗1.Dra = value;
+    			X0Y0_脚後_LowerArm鱗_鱗小_鱗1.Hit = value;
     		}
     	}
 
-    	public bool 脚後_下腕鱗_鱗大_鱗9_表示
+    	public bool 脚後_LowerArm鱗_鱗大_鱗9_表示
     	{
     		get
     		{
-    			return X0Y0_脚後_下腕鱗_鱗大_鱗9.Dra;
+    			return X0Y0_脚後_LowerArm鱗_鱗大_鱗9.Dra;
     		}
     		set
     		{
-    			X0Y0_脚後_下腕鱗_鱗大_鱗9.Dra = value;
-    			X0Y0_脚後_下腕鱗_鱗大_鱗9.Hit = value;
+    			X0Y0_脚後_LowerArm鱗_鱗大_鱗9.Dra = value;
+    			X0Y0_脚後_LowerArm鱗_鱗大_鱗9.Hit = value;
     		}
     	}
 
-    	public bool 脚後_下腕鱗_鱗大_鱗8_表示
+    	public bool 脚後_LowerArm鱗_鱗大_鱗8_表示
     	{
     		get
     		{
-    			return X0Y0_脚後_下腕鱗_鱗大_鱗8.Dra;
+    			return X0Y0_脚後_LowerArm鱗_鱗大_鱗8.Dra;
     		}
     		set
     		{
-    			X0Y0_脚後_下腕鱗_鱗大_鱗8.Dra = value;
-    			X0Y0_脚後_下腕鱗_鱗大_鱗8.Hit = value;
+    			X0Y0_脚後_LowerArm鱗_鱗大_鱗8.Dra = value;
+    			X0Y0_脚後_LowerArm鱗_鱗大_鱗8.Hit = value;
     		}
     	}
 
-    	public bool 脚後_下腕鱗_鱗大_鱗7_表示
+    	public bool 脚後_LowerArm鱗_鱗大_鱗7_表示
     	{
     		get
     		{
-    			return X0Y0_脚後_下腕鱗_鱗大_鱗7.Dra;
+    			return X0Y0_脚後_LowerArm鱗_鱗大_鱗7.Dra;
     		}
     		set
     		{
-    			X0Y0_脚後_下腕鱗_鱗大_鱗7.Dra = value;
-    			X0Y0_脚後_下腕鱗_鱗大_鱗7.Hit = value;
+    			X0Y0_脚後_LowerArm鱗_鱗大_鱗7.Dra = value;
+    			X0Y0_脚後_LowerArm鱗_鱗大_鱗7.Hit = value;
     		}
     	}
 
-    	public bool 脚後_下腕鱗_鱗大_鱗6_表示
+    	public bool 脚後_LowerArm鱗_鱗大_鱗6_表示
     	{
     		get
     		{
-    			return X0Y0_脚後_下腕鱗_鱗大_鱗6.Dra;
+    			return X0Y0_脚後_LowerArm鱗_鱗大_鱗6.Dra;
     		}
     		set
     		{
-    			X0Y0_脚後_下腕鱗_鱗大_鱗6.Dra = value;
-    			X0Y0_脚後_下腕鱗_鱗大_鱗6.Hit = value;
+    			X0Y0_脚後_LowerArm鱗_鱗大_鱗6.Dra = value;
+    			X0Y0_脚後_LowerArm鱗_鱗大_鱗6.Hit = value;
     		}
     	}
 
-    	public bool 脚後_下腕鱗_鱗大_鱗5_表示
+    	public bool 脚後_LowerArm鱗_鱗大_鱗5_表示
     	{
     		get
     		{
-    			return X0Y0_脚後_下腕鱗_鱗大_鱗5.Dra;
+    			return X0Y0_脚後_LowerArm鱗_鱗大_鱗5.Dra;
     		}
     		set
     		{
-    			X0Y0_脚後_下腕鱗_鱗大_鱗5.Dra = value;
-    			X0Y0_脚後_下腕鱗_鱗大_鱗5.Hit = value;
+    			X0Y0_脚後_LowerArm鱗_鱗大_鱗5.Dra = value;
+    			X0Y0_脚後_LowerArm鱗_鱗大_鱗5.Hit = value;
     		}
     	}
 
-    	public bool 脚後_下腕鱗_鱗大_鱗4_表示
+    	public bool 脚後_LowerArm鱗_鱗大_鱗4_表示
     	{
     		get
     		{
-    			return X0Y0_脚後_下腕鱗_鱗大_鱗4.Dra;
+    			return X0Y0_脚後_LowerArm鱗_鱗大_鱗4.Dra;
     		}
     		set
     		{
-    			X0Y0_脚後_下腕鱗_鱗大_鱗4.Dra = value;
-    			X0Y0_脚後_下腕鱗_鱗大_鱗4.Hit = value;
+    			X0Y0_脚後_LowerArm鱗_鱗大_鱗4.Dra = value;
+    			X0Y0_脚後_LowerArm鱗_鱗大_鱗4.Hit = value;
     		}
     	}
 
-    	public bool 脚後_下腕鱗_鱗大_鱗3_表示
+    	public bool 脚後_LowerArm鱗_鱗大_鱗3_表示
     	{
     		get
     		{
-    			return X0Y0_脚後_下腕鱗_鱗大_鱗3.Dra;
+    			return X0Y0_脚後_LowerArm鱗_鱗大_鱗3.Dra;
     		}
     		set
     		{
-    			X0Y0_脚後_下腕鱗_鱗大_鱗3.Dra = value;
-    			X0Y0_脚後_下腕鱗_鱗大_鱗3.Hit = value;
+    			X0Y0_脚後_LowerArm鱗_鱗大_鱗3.Dra = value;
+    			X0Y0_脚後_LowerArm鱗_鱗大_鱗3.Hit = value;
     		}
     	}
 
-    	public bool 脚後_下腕鱗_鱗大_鱗2_表示
+    	public bool 脚後_LowerArm鱗_鱗大_鱗2_表示
     	{
     		get
     		{
-    			return X0Y0_脚後_下腕鱗_鱗大_鱗2.Dra;
+    			return X0Y0_脚後_LowerArm鱗_鱗大_鱗2.Dra;
     		}
     		set
     		{
-    			X0Y0_脚後_下腕鱗_鱗大_鱗2.Dra = value;
-    			X0Y0_脚後_下腕鱗_鱗大_鱗2.Hit = value;
+    			X0Y0_脚後_LowerArm鱗_鱗大_鱗2.Dra = value;
+    			X0Y0_脚後_LowerArm鱗_鱗大_鱗2.Hit = value;
     		}
     	}
 
-    	public bool 脚後_下腕鱗_鱗大_鱗1_表示
+    	public bool 脚後_LowerArm鱗_鱗大_鱗1_表示
     	{
     		get
     		{
-    			return X0Y0_脚後_下腕鱗_鱗大_鱗1.Dra;
+    			return X0Y0_脚後_LowerArm鱗_鱗大_鱗1.Dra;
     		}
     		set
     		{
-    			X0Y0_脚後_下腕鱗_鱗大_鱗1.Dra = value;
-    			X0Y0_脚後_下腕鱗_鱗大_鱗1.Hit = value;
+    			X0Y0_脚後_LowerArm鱗_鱗大_鱗1.Dra = value;
+    			X0Y0_脚後_LowerArm鱗_鱗大_鱗1.Hit = value;
     		}
     	}
 
-    	public bool 脚後_上腕鱗_鱗5_表示
+    	public bool 脚後_UpperArm鱗_鱗5_表示
     	{
     		get
     		{
-    			return X0Y0_脚後_上腕鱗_鱗5.Dra;
+    			return X0Y0_脚後_UpperArm鱗_鱗5.Dra;
     		}
     		set
     		{
-    			X0Y0_脚後_上腕鱗_鱗5.Dra = value;
-    			X0Y0_脚後_上腕鱗_鱗5.Hit = value;
+    			X0Y0_脚後_UpperArm鱗_鱗5.Dra = value;
+    			X0Y0_脚後_UpperArm鱗_鱗5.Hit = value;
     		}
     	}
 
-    	public bool 脚後_上腕鱗_鱗4_表示
+    	public bool 脚後_UpperArm鱗_鱗4_表示
     	{
     		get
     		{
-    			return X0Y0_脚後_上腕鱗_鱗4.Dra;
+    			return X0Y0_脚後_UpperArm鱗_鱗4.Dra;
     		}
     		set
     		{
-    			X0Y0_脚後_上腕鱗_鱗4.Dra = value;
-    			X0Y0_脚後_上腕鱗_鱗4.Hit = value;
+    			X0Y0_脚後_UpperArm鱗_鱗4.Dra = value;
+    			X0Y0_脚後_UpperArm鱗_鱗4.Hit = value;
     		}
     	}
 
-    	public bool 脚後_上腕鱗_鱗3_表示
+    	public bool 脚後_UpperArm鱗_鱗3_表示
     	{
     		get
     		{
-    			return X0Y0_脚後_上腕鱗_鱗3.Dra;
+    			return X0Y0_脚後_UpperArm鱗_鱗3.Dra;
     		}
     		set
     		{
-    			X0Y0_脚後_上腕鱗_鱗3.Dra = value;
-    			X0Y0_脚後_上腕鱗_鱗3.Hit = value;
+    			X0Y0_脚後_UpperArm鱗_鱗3.Dra = value;
+    			X0Y0_脚後_UpperArm鱗_鱗3.Hit = value;
     		}
     	}
 
-    	public bool 脚後_上腕鱗_鱗2_表示
+    	public bool 脚後_UpperArm鱗_鱗2_表示
     	{
     		get
     		{
-    			return X0Y0_脚後_上腕鱗_鱗2.Dra;
+    			return X0Y0_脚後_UpperArm鱗_鱗2.Dra;
     		}
     		set
     		{
-    			X0Y0_脚後_上腕鱗_鱗2.Dra = value;
-    			X0Y0_脚後_上腕鱗_鱗2.Hit = value;
+    			X0Y0_脚後_UpperArm鱗_鱗2.Dra = value;
+    			X0Y0_脚後_UpperArm鱗_鱗2.Hit = value;
     		}
     	}
 
-    	public bool 脚後_上腕鱗_鱗1_表示
+    	public bool 脚後_UpperArm鱗_鱗1_表示
     	{
     		get
     		{
-    			return X0Y0_脚後_上腕鱗_鱗1.Dra;
+    			return X0Y0_脚後_UpperArm鱗_鱗1.Dra;
     		}
     		set
     		{
-    			X0Y0_脚後_上腕鱗_鱗1.Dra = value;
-    			X0Y0_脚後_上腕鱗_鱗1.Hit = value;
+    			X0Y0_脚後_UpperArm鱗_鱗1.Dra = value;
+    			X0Y0_脚後_UpperArm鱗_鱗1.Hit = value;
     		}
     	}
 
@@ -4464,29 +4464,29 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 脚前_上腕_表示
+    	public bool 脚前_UpperArm_表示
     	{
     		get
     		{
-    			return X0Y0_脚前_上腕.Dra;
+    			return X0Y0_脚前_UpperArm.Dra;
     		}
     		set
     		{
-    			X0Y0_脚前_上腕.Dra = value;
-    			X0Y0_脚前_上腕.Hit = value;
+    			X0Y0_脚前_UpperArm.Dra = value;
+    			X0Y0_脚前_UpperArm.Hit = value;
     		}
     	}
 
-    	public bool 脚前_下腕_表示
+    	public bool 脚前_LowerArm_表示
     	{
     		get
     		{
-    			return X0Y0_脚前_下腕.Dra;
+    			return X0Y0_脚前_LowerArm.Dra;
     		}
     		set
     		{
-    			X0Y0_脚前_下腕.Dra = value;
-    			X0Y0_脚前_下腕.Hit = value;
+    			X0Y0_脚前_LowerArm.Dra = value;
+    			X0Y0_脚前_LowerArm.Hit = value;
     		}
     	}
 
@@ -4906,302 +4906,302 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 脚前_下腕鱗_鱗小_鱗9_表示
+    	public bool 脚前_LowerArm鱗_鱗小_鱗9_表示
     	{
     		get
     		{
-    			return X0Y0_脚前_下腕鱗_鱗小_鱗9.Dra;
+    			return X0Y0_脚前_LowerArm鱗_鱗小_鱗9.Dra;
     		}
     		set
     		{
-    			X0Y0_脚前_下腕鱗_鱗小_鱗9.Dra = value;
-    			X0Y0_脚前_下腕鱗_鱗小_鱗9.Hit = value;
+    			X0Y0_脚前_LowerArm鱗_鱗小_鱗9.Dra = value;
+    			X0Y0_脚前_LowerArm鱗_鱗小_鱗9.Hit = value;
     		}
     	}
 
-    	public bool 脚前_下腕鱗_鱗小_鱗8_表示
+    	public bool 脚前_LowerArm鱗_鱗小_鱗8_表示
     	{
     		get
     		{
-    			return X0Y0_脚前_下腕鱗_鱗小_鱗8.Dra;
+    			return X0Y0_脚前_LowerArm鱗_鱗小_鱗8.Dra;
     		}
     		set
     		{
-    			X0Y0_脚前_下腕鱗_鱗小_鱗8.Dra = value;
-    			X0Y0_脚前_下腕鱗_鱗小_鱗8.Hit = value;
+    			X0Y0_脚前_LowerArm鱗_鱗小_鱗8.Dra = value;
+    			X0Y0_脚前_LowerArm鱗_鱗小_鱗8.Hit = value;
     		}
     	}
 
-    	public bool 脚前_下腕鱗_鱗小_鱗7_表示
+    	public bool 脚前_LowerArm鱗_鱗小_鱗7_表示
     	{
     		get
     		{
-    			return X0Y0_脚前_下腕鱗_鱗小_鱗7.Dra;
+    			return X0Y0_脚前_LowerArm鱗_鱗小_鱗7.Dra;
     		}
     		set
     		{
-    			X0Y0_脚前_下腕鱗_鱗小_鱗7.Dra = value;
-    			X0Y0_脚前_下腕鱗_鱗小_鱗7.Hit = value;
+    			X0Y0_脚前_LowerArm鱗_鱗小_鱗7.Dra = value;
+    			X0Y0_脚前_LowerArm鱗_鱗小_鱗7.Hit = value;
     		}
     	}
 
-    	public bool 脚前_下腕鱗_鱗小_鱗6_表示
+    	public bool 脚前_LowerArm鱗_鱗小_鱗6_表示
     	{
     		get
     		{
-    			return X0Y0_脚前_下腕鱗_鱗小_鱗6.Dra;
+    			return X0Y0_脚前_LowerArm鱗_鱗小_鱗6.Dra;
     		}
     		set
     		{
-    			X0Y0_脚前_下腕鱗_鱗小_鱗6.Dra = value;
-    			X0Y0_脚前_下腕鱗_鱗小_鱗6.Hit = value;
+    			X0Y0_脚前_LowerArm鱗_鱗小_鱗6.Dra = value;
+    			X0Y0_脚前_LowerArm鱗_鱗小_鱗6.Hit = value;
     		}
     	}
 
-    	public bool 脚前_下腕鱗_鱗小_鱗5_表示
+    	public bool 脚前_LowerArm鱗_鱗小_鱗5_表示
     	{
     		get
     		{
-    			return X0Y0_脚前_下腕鱗_鱗小_鱗5.Dra;
+    			return X0Y0_脚前_LowerArm鱗_鱗小_鱗5.Dra;
     		}
     		set
     		{
-    			X0Y0_脚前_下腕鱗_鱗小_鱗5.Dra = value;
-    			X0Y0_脚前_下腕鱗_鱗小_鱗5.Hit = value;
+    			X0Y0_脚前_LowerArm鱗_鱗小_鱗5.Dra = value;
+    			X0Y0_脚前_LowerArm鱗_鱗小_鱗5.Hit = value;
     		}
     	}
 
-    	public bool 脚前_下腕鱗_鱗小_鱗4_表示
+    	public bool 脚前_LowerArm鱗_鱗小_鱗4_表示
     	{
     		get
     		{
-    			return X0Y0_脚前_下腕鱗_鱗小_鱗4.Dra;
+    			return X0Y0_脚前_LowerArm鱗_鱗小_鱗4.Dra;
     		}
     		set
     		{
-    			X0Y0_脚前_下腕鱗_鱗小_鱗4.Dra = value;
-    			X0Y0_脚前_下腕鱗_鱗小_鱗4.Hit = value;
+    			X0Y0_脚前_LowerArm鱗_鱗小_鱗4.Dra = value;
+    			X0Y0_脚前_LowerArm鱗_鱗小_鱗4.Hit = value;
     		}
     	}
 
-    	public bool 脚前_下腕鱗_鱗小_鱗3_表示
+    	public bool 脚前_LowerArm鱗_鱗小_鱗3_表示
     	{
     		get
     		{
-    			return X0Y0_脚前_下腕鱗_鱗小_鱗3.Dra;
+    			return X0Y0_脚前_LowerArm鱗_鱗小_鱗3.Dra;
     		}
     		set
     		{
-    			X0Y0_脚前_下腕鱗_鱗小_鱗3.Dra = value;
-    			X0Y0_脚前_下腕鱗_鱗小_鱗3.Hit = value;
+    			X0Y0_脚前_LowerArm鱗_鱗小_鱗3.Dra = value;
+    			X0Y0_脚前_LowerArm鱗_鱗小_鱗3.Hit = value;
     		}
     	}
 
-    	public bool 脚前_下腕鱗_鱗小_鱗2_表示
+    	public bool 脚前_LowerArm鱗_鱗小_鱗2_表示
     	{
     		get
     		{
-    			return X0Y0_脚前_下腕鱗_鱗小_鱗2.Dra;
+    			return X0Y0_脚前_LowerArm鱗_鱗小_鱗2.Dra;
     		}
     		set
     		{
-    			X0Y0_脚前_下腕鱗_鱗小_鱗2.Dra = value;
-    			X0Y0_脚前_下腕鱗_鱗小_鱗2.Hit = value;
+    			X0Y0_脚前_LowerArm鱗_鱗小_鱗2.Dra = value;
+    			X0Y0_脚前_LowerArm鱗_鱗小_鱗2.Hit = value;
     		}
     	}
 
-    	public bool 脚前_下腕鱗_鱗小_鱗1_表示
+    	public bool 脚前_LowerArm鱗_鱗小_鱗1_表示
     	{
     		get
     		{
-    			return X0Y0_脚前_下腕鱗_鱗小_鱗1.Dra;
+    			return X0Y0_脚前_LowerArm鱗_鱗小_鱗1.Dra;
     		}
     		set
     		{
-    			X0Y0_脚前_下腕鱗_鱗小_鱗1.Dra = value;
-    			X0Y0_脚前_下腕鱗_鱗小_鱗1.Hit = value;
+    			X0Y0_脚前_LowerArm鱗_鱗小_鱗1.Dra = value;
+    			X0Y0_脚前_LowerArm鱗_鱗小_鱗1.Hit = value;
     		}
     	}
 
-    	public bool 脚前_下腕鱗_鱗大_鱗9_表示
+    	public bool 脚前_LowerArm鱗_鱗大_鱗9_表示
     	{
     		get
     		{
-    			return X0Y0_脚前_下腕鱗_鱗大_鱗9.Dra;
+    			return X0Y0_脚前_LowerArm鱗_鱗大_鱗9.Dra;
     		}
     		set
     		{
-    			X0Y0_脚前_下腕鱗_鱗大_鱗9.Dra = value;
-    			X0Y0_脚前_下腕鱗_鱗大_鱗9.Hit = value;
+    			X0Y0_脚前_LowerArm鱗_鱗大_鱗9.Dra = value;
+    			X0Y0_脚前_LowerArm鱗_鱗大_鱗9.Hit = value;
     		}
     	}
 
-    	public bool 脚前_下腕鱗_鱗大_鱗8_表示
+    	public bool 脚前_LowerArm鱗_鱗大_鱗8_表示
     	{
     		get
     		{
-    			return X0Y0_脚前_下腕鱗_鱗大_鱗8.Dra;
+    			return X0Y0_脚前_LowerArm鱗_鱗大_鱗8.Dra;
     		}
     		set
     		{
-    			X0Y0_脚前_下腕鱗_鱗大_鱗8.Dra = value;
-    			X0Y0_脚前_下腕鱗_鱗大_鱗8.Hit = value;
+    			X0Y0_脚前_LowerArm鱗_鱗大_鱗8.Dra = value;
+    			X0Y0_脚前_LowerArm鱗_鱗大_鱗8.Hit = value;
     		}
     	}
 
-    	public bool 脚前_下腕鱗_鱗大_鱗7_表示
+    	public bool 脚前_LowerArm鱗_鱗大_鱗7_表示
     	{
     		get
     		{
-    			return X0Y0_脚前_下腕鱗_鱗大_鱗7.Dra;
+    			return X0Y0_脚前_LowerArm鱗_鱗大_鱗7.Dra;
     		}
     		set
     		{
-    			X0Y0_脚前_下腕鱗_鱗大_鱗7.Dra = value;
-    			X0Y0_脚前_下腕鱗_鱗大_鱗7.Hit = value;
+    			X0Y0_脚前_LowerArm鱗_鱗大_鱗7.Dra = value;
+    			X0Y0_脚前_LowerArm鱗_鱗大_鱗7.Hit = value;
     		}
     	}
 
-    	public bool 脚前_下腕鱗_鱗大_鱗6_表示
+    	public bool 脚前_LowerArm鱗_鱗大_鱗6_表示
     	{
     		get
     		{
-    			return X0Y0_脚前_下腕鱗_鱗大_鱗6.Dra;
+    			return X0Y0_脚前_LowerArm鱗_鱗大_鱗6.Dra;
     		}
     		set
     		{
-    			X0Y0_脚前_下腕鱗_鱗大_鱗6.Dra = value;
-    			X0Y0_脚前_下腕鱗_鱗大_鱗6.Hit = value;
+    			X0Y0_脚前_LowerArm鱗_鱗大_鱗6.Dra = value;
+    			X0Y0_脚前_LowerArm鱗_鱗大_鱗6.Hit = value;
     		}
     	}
 
-    	public bool 脚前_下腕鱗_鱗大_鱗5_表示
+    	public bool 脚前_LowerArm鱗_鱗大_鱗5_表示
     	{
     		get
     		{
-    			return X0Y0_脚前_下腕鱗_鱗大_鱗5.Dra;
+    			return X0Y0_脚前_LowerArm鱗_鱗大_鱗5.Dra;
     		}
     		set
     		{
-    			X0Y0_脚前_下腕鱗_鱗大_鱗5.Dra = value;
-    			X0Y0_脚前_下腕鱗_鱗大_鱗5.Hit = value;
+    			X0Y0_脚前_LowerArm鱗_鱗大_鱗5.Dra = value;
+    			X0Y0_脚前_LowerArm鱗_鱗大_鱗5.Hit = value;
     		}
     	}
 
-    	public bool 脚前_下腕鱗_鱗大_鱗4_表示
+    	public bool 脚前_LowerArm鱗_鱗大_鱗4_表示
     	{
     		get
     		{
-    			return X0Y0_脚前_下腕鱗_鱗大_鱗4.Dra;
+    			return X0Y0_脚前_LowerArm鱗_鱗大_鱗4.Dra;
     		}
     		set
     		{
-    			X0Y0_脚前_下腕鱗_鱗大_鱗4.Dra = value;
-    			X0Y0_脚前_下腕鱗_鱗大_鱗4.Hit = value;
+    			X0Y0_脚前_LowerArm鱗_鱗大_鱗4.Dra = value;
+    			X0Y0_脚前_LowerArm鱗_鱗大_鱗4.Hit = value;
     		}
     	}
 
-    	public bool 脚前_下腕鱗_鱗大_鱗3_表示
+    	public bool 脚前_LowerArm鱗_鱗大_鱗3_表示
     	{
     		get
     		{
-    			return X0Y0_脚前_下腕鱗_鱗大_鱗3.Dra;
+    			return X0Y0_脚前_LowerArm鱗_鱗大_鱗3.Dra;
     		}
     		set
     		{
-    			X0Y0_脚前_下腕鱗_鱗大_鱗3.Dra = value;
-    			X0Y0_脚前_下腕鱗_鱗大_鱗3.Hit = value;
+    			X0Y0_脚前_LowerArm鱗_鱗大_鱗3.Dra = value;
+    			X0Y0_脚前_LowerArm鱗_鱗大_鱗3.Hit = value;
     		}
     	}
 
-    	public bool 脚前_下腕鱗_鱗大_鱗2_表示
+    	public bool 脚前_LowerArm鱗_鱗大_鱗2_表示
     	{
     		get
     		{
-    			return X0Y0_脚前_下腕鱗_鱗大_鱗2.Dra;
+    			return X0Y0_脚前_LowerArm鱗_鱗大_鱗2.Dra;
     		}
     		set
     		{
-    			X0Y0_脚前_下腕鱗_鱗大_鱗2.Dra = value;
-    			X0Y0_脚前_下腕鱗_鱗大_鱗2.Hit = value;
+    			X0Y0_脚前_LowerArm鱗_鱗大_鱗2.Dra = value;
+    			X0Y0_脚前_LowerArm鱗_鱗大_鱗2.Hit = value;
     		}
     	}
 
-    	public bool 脚前_下腕鱗_鱗大_鱗1_表示
+    	public bool 脚前_LowerArm鱗_鱗大_鱗1_表示
     	{
     		get
     		{
-    			return X0Y0_脚前_下腕鱗_鱗大_鱗1.Dra;
+    			return X0Y0_脚前_LowerArm鱗_鱗大_鱗1.Dra;
     		}
     		set
     		{
-    			X0Y0_脚前_下腕鱗_鱗大_鱗1.Dra = value;
-    			X0Y0_脚前_下腕鱗_鱗大_鱗1.Hit = value;
+    			X0Y0_脚前_LowerArm鱗_鱗大_鱗1.Dra = value;
+    			X0Y0_脚前_LowerArm鱗_鱗大_鱗1.Hit = value;
     		}
     	}
 
-    	public bool 脚前_上腕鱗_鱗5_表示
+    	public bool 脚前_UpperArm鱗_鱗5_表示
     	{
     		get
     		{
-    			return X0Y0_脚前_上腕鱗_鱗5.Dra;
+    			return X0Y0_脚前_UpperArm鱗_鱗5.Dra;
     		}
     		set
     		{
-    			X0Y0_脚前_上腕鱗_鱗5.Dra = value;
-    			X0Y0_脚前_上腕鱗_鱗5.Hit = value;
+    			X0Y0_脚前_UpperArm鱗_鱗5.Dra = value;
+    			X0Y0_脚前_UpperArm鱗_鱗5.Hit = value;
     		}
     	}
 
-    	public bool 脚前_上腕鱗_鱗4_表示
+    	public bool 脚前_UpperArm鱗_鱗4_表示
     	{
     		get
     		{
-    			return X0Y0_脚前_上腕鱗_鱗4.Dra;
+    			return X0Y0_脚前_UpperArm鱗_鱗4.Dra;
     		}
     		set
     		{
-    			X0Y0_脚前_上腕鱗_鱗4.Dra = value;
-    			X0Y0_脚前_上腕鱗_鱗4.Hit = value;
+    			X0Y0_脚前_UpperArm鱗_鱗4.Dra = value;
+    			X0Y0_脚前_UpperArm鱗_鱗4.Hit = value;
     		}
     	}
 
-    	public bool 脚前_上腕鱗_鱗3_表示
+    	public bool 脚前_UpperArm鱗_鱗3_表示
     	{
     		get
     		{
-    			return X0Y0_脚前_上腕鱗_鱗3.Dra;
+    			return X0Y0_脚前_UpperArm鱗_鱗3.Dra;
     		}
     		set
     		{
-    			X0Y0_脚前_上腕鱗_鱗3.Dra = value;
-    			X0Y0_脚前_上腕鱗_鱗3.Hit = value;
+    			X0Y0_脚前_UpperArm鱗_鱗3.Dra = value;
+    			X0Y0_脚前_UpperArm鱗_鱗3.Hit = value;
     		}
     	}
 
-    	public bool 脚前_上腕鱗_鱗2_表示
+    	public bool 脚前_UpperArm鱗_鱗2_表示
     	{
     		get
     		{
-    			return X0Y0_脚前_上腕鱗_鱗2.Dra;
+    			return X0Y0_脚前_UpperArm鱗_鱗2.Dra;
     		}
     		set
     		{
-    			X0Y0_脚前_上腕鱗_鱗2.Dra = value;
-    			X0Y0_脚前_上腕鱗_鱗2.Hit = value;
+    			X0Y0_脚前_UpperArm鱗_鱗2.Dra = value;
+    			X0Y0_脚前_UpperArm鱗_鱗2.Hit = value;
     		}
     	}
 
-    	public bool 脚前_上腕鱗_鱗1_表示
+    	public bool 脚前_UpperArm鱗_鱗1_表示
     	{
     		get
     		{
-    			return X0Y0_脚前_上腕鱗_鱗1.Dra;
+    			return X0Y0_脚前_UpperArm鱗_鱗1.Dra;
     		}
     		set
     		{
-    			X0Y0_脚前_上腕鱗_鱗1.Dra = value;
-    			X0Y0_脚前_上腕鱗_鱗1.Hit = value;
+    			X0Y0_脚前_UpperArm鱗_鱗1.Dra = value;
+    			X0Y0_脚前_UpperArm鱗_鱗1.Hit = value;
     		}
     	}
 
@@ -5415,12 +5415,12 @@ namespace SlaveMatrix
     		}
     		set
     		{
-    			脚前_輪_革_表示 = value && 脚前_上腕_表示;
-    			脚前_輪_金具1_表示 = value && 脚前_上腕_表示;
-    			脚前_輪_金具2_表示 = value && 脚前_上腕_表示;
-    			脚前_輪_金具3_表示 = value && 脚前_上腕_表示;
-    			脚前_輪_金具左_表示 = value && 脚前_上腕_表示;
-    			脚前_輪_金具右_表示 = value && 脚前_上腕_表示;
+    			脚前_輪_革_表示 = value && 脚前_UpperArm_表示;
+    			脚前_輪_金具1_表示 = value && 脚前_UpperArm_表示;
+    			脚前_輪_金具2_表示 = value && 脚前_UpperArm_表示;
+    			脚前_輪_金具3_表示 = value && 脚前_UpperArm_表示;
+    			脚前_輪_金具左_表示 = value && 脚前_UpperArm_表示;
+    			脚前_輪_金具右_表示 = value && 脚前_UpperArm_表示;
     		}
     	}
 
@@ -5432,12 +5432,12 @@ namespace SlaveMatrix
     		}
     		set
     		{
-    			脚後_輪_革_表示 = value && 脚後_上腕_表示;
-    			脚後_輪_金具1_表示 = value && 脚後_上腕_表示;
-    			脚後_輪_金具2_表示 = value && 脚後_上腕_表示;
-    			脚後_輪_金具3_表示 = value && 脚後_上腕_表示;
-    			脚後_輪_金具左_表示 = value && 脚後_上腕_表示;
-    			脚後_輪_金具右_表示 = value && 脚後_上腕_表示;
+    			脚後_輪_革_表示 = value && 脚後_UpperArm_表示;
+    			脚後_輪_金具1_表示 = value && 脚後_UpperArm_表示;
+    			脚後_輪_金具2_表示 = value && 脚後_UpperArm_表示;
+    			脚後_輪_金具3_表示 = value && 脚後_UpperArm_表示;
+    			脚後_輪_金具左_表示 = value && 脚後_UpperArm_表示;
+    			脚後_輪_金具右_表示 = value && 脚後_UpperArm_表示;
     		}
     	}
 
@@ -5450,8 +5450,8 @@ namespace SlaveMatrix
     		set
     		{
     			鎖1.表示 = value;
-    			鎖3.表示 = value && 脚後_上腕_表示;
-    			鎖5.表示 = value && 脚前_上腕_表示;
+    			鎖3.表示 = value && 脚後_UpperArm_表示;
+    			鎖5.表示 = value && 脚前_UpperArm_表示;
     		}
     	}
 
@@ -5468,8 +5468,8 @@ namespace SlaveMatrix
     			脚後_鰭_鰭膜2_表示 = value;
     			脚後_鰭_鰭条2_表示 = value;
     			脚後_鰭_鰭膜3_表示 = value;
-    			脚後_上腕_表示 = value;
-    			脚後_下腕_表示 = value;
+    			脚後_UpperArm_表示 = value;
+    			脚後_LowerArm_表示 = value;
     			脚後_手_手_表示 = value;
     			脚後_手_小指_指_表示 = value;
     			脚後_手_小指_爪_表示 = value;
@@ -5502,29 +5502,29 @@ namespace SlaveMatrix
     			脚後_手_鱗_鱗2_表示 = value;
     			脚後_手_鱗_鱗1_表示 = value;
     			脚後_手_親指_爪_表示 = value;
-    			脚後_下腕鱗_鱗小_鱗9_表示 = value;
-    			脚後_下腕鱗_鱗小_鱗8_表示 = value;
-    			脚後_下腕鱗_鱗小_鱗7_表示 = value;
-    			脚後_下腕鱗_鱗小_鱗6_表示 = value;
-    			脚後_下腕鱗_鱗小_鱗5_表示 = value;
-    			脚後_下腕鱗_鱗小_鱗4_表示 = value;
-    			脚後_下腕鱗_鱗小_鱗3_表示 = value;
-    			脚後_下腕鱗_鱗小_鱗2_表示 = value;
-    			脚後_下腕鱗_鱗小_鱗1_表示 = value;
-    			脚後_下腕鱗_鱗大_鱗9_表示 = value;
-    			脚後_下腕鱗_鱗大_鱗8_表示 = value;
-    			脚後_下腕鱗_鱗大_鱗7_表示 = value;
-    			脚後_下腕鱗_鱗大_鱗6_表示 = value;
-    			脚後_下腕鱗_鱗大_鱗5_表示 = value;
-    			脚後_下腕鱗_鱗大_鱗4_表示 = value;
-    			脚後_下腕鱗_鱗大_鱗3_表示 = value;
-    			脚後_下腕鱗_鱗大_鱗2_表示 = value;
-    			脚後_下腕鱗_鱗大_鱗1_表示 = value;
-    			脚後_上腕鱗_鱗5_表示 = value;
-    			脚後_上腕鱗_鱗4_表示 = value;
-    			脚後_上腕鱗_鱗3_表示 = value;
-    			脚後_上腕鱗_鱗2_表示 = value;
-    			脚後_上腕鱗_鱗1_表示 = value;
+    			脚後_LowerArm鱗_鱗小_鱗9_表示 = value;
+    			脚後_LowerArm鱗_鱗小_鱗8_表示 = value;
+    			脚後_LowerArm鱗_鱗小_鱗7_表示 = value;
+    			脚後_LowerArm鱗_鱗小_鱗6_表示 = value;
+    			脚後_LowerArm鱗_鱗小_鱗5_表示 = value;
+    			脚後_LowerArm鱗_鱗小_鱗4_表示 = value;
+    			脚後_LowerArm鱗_鱗小_鱗3_表示 = value;
+    			脚後_LowerArm鱗_鱗小_鱗2_表示 = value;
+    			脚後_LowerArm鱗_鱗小_鱗1_表示 = value;
+    			脚後_LowerArm鱗_鱗大_鱗9_表示 = value;
+    			脚後_LowerArm鱗_鱗大_鱗8_表示 = value;
+    			脚後_LowerArm鱗_鱗大_鱗7_表示 = value;
+    			脚後_LowerArm鱗_鱗大_鱗6_表示 = value;
+    			脚後_LowerArm鱗_鱗大_鱗5_表示 = value;
+    			脚後_LowerArm鱗_鱗大_鱗4_表示 = value;
+    			脚後_LowerArm鱗_鱗大_鱗3_表示 = value;
+    			脚後_LowerArm鱗_鱗大_鱗2_表示 = value;
+    			脚後_LowerArm鱗_鱗大_鱗1_表示 = value;
+    			脚後_UpperArm鱗_鱗5_表示 = value;
+    			脚後_UpperArm鱗_鱗4_表示 = value;
+    			脚後_UpperArm鱗_鱗3_表示 = value;
+    			脚後_UpperArm鱗_鱗2_表示 = value;
+    			脚後_UpperArm鱗_鱗1_表示 = value;
     			脚後_輪_革_表示 = value;
     			脚後_輪_金具1_表示 = value;
     			脚後_輪_金具2_表示 = value;
@@ -5673,8 +5673,8 @@ namespace SlaveMatrix
     			頭_輪_金具3_表示 = value;
     			頭_輪_金具左_表示 = value;
     			頭_輪_金具右_表示 = value;
-    			脚前_上腕_表示 = value;
-    			脚前_下腕_表示 = value;
+    			脚前_UpperArm_表示 = value;
+    			脚前_LowerArm_表示 = value;
     			脚前_手_親指_爪_表示 = value;
     			脚前_手_手_表示 = value;
     			脚前_手_人指_指_表示 = value;
@@ -5707,29 +5707,29 @@ namespace SlaveMatrix
     			脚前_手_鱗_鱗3_表示 = value;
     			脚前_手_鱗_鱗2_表示 = value;
     			脚前_手_鱗_鱗1_表示 = value;
-    			脚前_下腕鱗_鱗小_鱗9_表示 = value;
-    			脚前_下腕鱗_鱗小_鱗8_表示 = value;
-    			脚前_下腕鱗_鱗小_鱗7_表示 = value;
-    			脚前_下腕鱗_鱗小_鱗6_表示 = value;
-    			脚前_下腕鱗_鱗小_鱗5_表示 = value;
-    			脚前_下腕鱗_鱗小_鱗4_表示 = value;
-    			脚前_下腕鱗_鱗小_鱗3_表示 = value;
-    			脚前_下腕鱗_鱗小_鱗2_表示 = value;
-    			脚前_下腕鱗_鱗小_鱗1_表示 = value;
-    			脚前_下腕鱗_鱗大_鱗9_表示 = value;
-    			脚前_下腕鱗_鱗大_鱗8_表示 = value;
-    			脚前_下腕鱗_鱗大_鱗7_表示 = value;
-    			脚前_下腕鱗_鱗大_鱗6_表示 = value;
-    			脚前_下腕鱗_鱗大_鱗5_表示 = value;
-    			脚前_下腕鱗_鱗大_鱗4_表示 = value;
-    			脚前_下腕鱗_鱗大_鱗3_表示 = value;
-    			脚前_下腕鱗_鱗大_鱗2_表示 = value;
-    			脚前_下腕鱗_鱗大_鱗1_表示 = value;
-    			脚前_上腕鱗_鱗5_表示 = value;
-    			脚前_上腕鱗_鱗4_表示 = value;
-    			脚前_上腕鱗_鱗3_表示 = value;
-    			脚前_上腕鱗_鱗2_表示 = value;
-    			脚前_上腕鱗_鱗1_表示 = value;
+    			脚前_LowerArm鱗_鱗小_鱗9_表示 = value;
+    			脚前_LowerArm鱗_鱗小_鱗8_表示 = value;
+    			脚前_LowerArm鱗_鱗小_鱗7_表示 = value;
+    			脚前_LowerArm鱗_鱗小_鱗6_表示 = value;
+    			脚前_LowerArm鱗_鱗小_鱗5_表示 = value;
+    			脚前_LowerArm鱗_鱗小_鱗4_表示 = value;
+    			脚前_LowerArm鱗_鱗小_鱗3_表示 = value;
+    			脚前_LowerArm鱗_鱗小_鱗2_表示 = value;
+    			脚前_LowerArm鱗_鱗小_鱗1_表示 = value;
+    			脚前_LowerArm鱗_鱗大_鱗9_表示 = value;
+    			脚前_LowerArm鱗_鱗大_鱗8_表示 = value;
+    			脚前_LowerArm鱗_鱗大_鱗7_表示 = value;
+    			脚前_LowerArm鱗_鱗大_鱗6_表示 = value;
+    			脚前_LowerArm鱗_鱗大_鱗5_表示 = value;
+    			脚前_LowerArm鱗_鱗大_鱗4_表示 = value;
+    			脚前_LowerArm鱗_鱗大_鱗3_表示 = value;
+    			脚前_LowerArm鱗_鱗大_鱗2_表示 = value;
+    			脚前_LowerArm鱗_鱗大_鱗1_表示 = value;
+    			脚前_UpperArm鱗_鱗5_表示 = value;
+    			脚前_UpperArm鱗_鱗4_表示 = value;
+    			脚前_UpperArm鱗_鱗3_表示 = value;
+    			脚前_UpperArm鱗_鱗2_表示 = value;
+    			脚前_UpperArm鱗_鱗1_表示 = value;
     			脚前_鰭_鰭膜1_表示 = value;
     			脚前_鰭_鰭条1_表示 = value;
     			脚前_鰭_鰭膜2_表示 = value;
@@ -5757,8 +5757,8 @@ namespace SlaveMatrix
     			脚後_鰭_鰭膜2CD.不透明度 = value;
     			脚後_鰭_鰭条2CD.不透明度 = value;
     			脚後_鰭_鰭膜3CD.不透明度 = value;
-    			脚後_上腕CD.不透明度 = value;
-    			脚後_下腕CD.不透明度 = value;
+    			脚後_UpperArmCD.不透明度 = value;
+    			脚後_LowerArmCD.不透明度 = value;
     			脚後_手_手CD.不透明度 = value;
     			脚後_手_小指_指CD.不透明度 = value;
     			脚後_手_小指_爪CD.不透明度 = value;
@@ -5791,29 +5791,29 @@ namespace SlaveMatrix
     			脚後_手_鱗_鱗2CD.不透明度 = value;
     			脚後_手_鱗_鱗1CD.不透明度 = value;
     			脚後_手_親指_爪CD.不透明度 = value;
-    			脚後_下腕鱗_鱗小_鱗9CD.不透明度 = value;
-    			脚後_下腕鱗_鱗小_鱗8CD.不透明度 = value;
-    			脚後_下腕鱗_鱗小_鱗7CD.不透明度 = value;
-    			脚後_下腕鱗_鱗小_鱗6CD.不透明度 = value;
-    			脚後_下腕鱗_鱗小_鱗5CD.不透明度 = value;
-    			脚後_下腕鱗_鱗小_鱗4CD.不透明度 = value;
-    			脚後_下腕鱗_鱗小_鱗3CD.不透明度 = value;
-    			脚後_下腕鱗_鱗小_鱗2CD.不透明度 = value;
-    			脚後_下腕鱗_鱗小_鱗1CD.不透明度 = value;
-    			脚後_下腕鱗_鱗大_鱗9CD.不透明度 = value;
-    			脚後_下腕鱗_鱗大_鱗8CD.不透明度 = value;
-    			脚後_下腕鱗_鱗大_鱗7CD.不透明度 = value;
-    			脚後_下腕鱗_鱗大_鱗6CD.不透明度 = value;
-    			脚後_下腕鱗_鱗大_鱗5CD.不透明度 = value;
-    			脚後_下腕鱗_鱗大_鱗4CD.不透明度 = value;
-    			脚後_下腕鱗_鱗大_鱗3CD.不透明度 = value;
-    			脚後_下腕鱗_鱗大_鱗2CD.不透明度 = value;
-    			脚後_下腕鱗_鱗大_鱗1CD.不透明度 = value;
-    			脚後_上腕鱗_鱗5CD.不透明度 = value;
-    			脚後_上腕鱗_鱗4CD.不透明度 = value;
-    			脚後_上腕鱗_鱗3CD.不透明度 = value;
-    			脚後_上腕鱗_鱗2CD.不透明度 = value;
-    			脚後_上腕鱗_鱗1CD.不透明度 = value;
+    			脚後_LowerArm鱗_鱗小_鱗9CD.不透明度 = value;
+    			脚後_LowerArm鱗_鱗小_鱗8CD.不透明度 = value;
+    			脚後_LowerArm鱗_鱗小_鱗7CD.不透明度 = value;
+    			脚後_LowerArm鱗_鱗小_鱗6CD.不透明度 = value;
+    			脚後_LowerArm鱗_鱗小_鱗5CD.不透明度 = value;
+    			脚後_LowerArm鱗_鱗小_鱗4CD.不透明度 = value;
+    			脚後_LowerArm鱗_鱗小_鱗3CD.不透明度 = value;
+    			脚後_LowerArm鱗_鱗小_鱗2CD.不透明度 = value;
+    			脚後_LowerArm鱗_鱗小_鱗1CD.不透明度 = value;
+    			脚後_LowerArm鱗_鱗大_鱗9CD.不透明度 = value;
+    			脚後_LowerArm鱗_鱗大_鱗8CD.不透明度 = value;
+    			脚後_LowerArm鱗_鱗大_鱗7CD.不透明度 = value;
+    			脚後_LowerArm鱗_鱗大_鱗6CD.不透明度 = value;
+    			脚後_LowerArm鱗_鱗大_鱗5CD.不透明度 = value;
+    			脚後_LowerArm鱗_鱗大_鱗4CD.不透明度 = value;
+    			脚後_LowerArm鱗_鱗大_鱗3CD.不透明度 = value;
+    			脚後_LowerArm鱗_鱗大_鱗2CD.不透明度 = value;
+    			脚後_LowerArm鱗_鱗大_鱗1CD.不透明度 = value;
+    			脚後_UpperArm鱗_鱗5CD.不透明度 = value;
+    			脚後_UpperArm鱗_鱗4CD.不透明度 = value;
+    			脚後_UpperArm鱗_鱗3CD.不透明度 = value;
+    			脚後_UpperArm鱗_鱗2CD.不透明度 = value;
+    			脚後_UpperArm鱗_鱗1CD.不透明度 = value;
     			脚後_輪_革CD.不透明度 = value;
     			脚後_輪_金具1CD.不透明度 = value;
     			脚後_輪_金具2CD.不透明度 = value;
@@ -5962,8 +5962,8 @@ namespace SlaveMatrix
     			頭_輪_金具3CD.不透明度 = value;
     			頭_輪_金具左CD.不透明度 = value;
     			頭_輪_金具右CD.不透明度 = value;
-    			脚前_上腕CD.不透明度 = value;
-    			脚前_下腕CD.不透明度 = value;
+    			脚前_UpperArmCD.不透明度 = value;
+    			脚前_LowerArmCD.不透明度 = value;
     			脚前_手_親指_爪CD.不透明度 = value;
     			脚前_手_手CD.不透明度 = value;
     			脚前_手_人指_指CD.不透明度 = value;
@@ -5996,29 +5996,29 @@ namespace SlaveMatrix
     			脚前_手_鱗_鱗3CD.不透明度 = value;
     			脚前_手_鱗_鱗2CD.不透明度 = value;
     			脚前_手_鱗_鱗1CD.不透明度 = value;
-    			脚前_下腕鱗_鱗小_鱗9CD.不透明度 = value;
-    			脚前_下腕鱗_鱗小_鱗8CD.不透明度 = value;
-    			脚前_下腕鱗_鱗小_鱗7CD.不透明度 = value;
-    			脚前_下腕鱗_鱗小_鱗6CD.不透明度 = value;
-    			脚前_下腕鱗_鱗小_鱗5CD.不透明度 = value;
-    			脚前_下腕鱗_鱗小_鱗4CD.不透明度 = value;
-    			脚前_下腕鱗_鱗小_鱗3CD.不透明度 = value;
-    			脚前_下腕鱗_鱗小_鱗2CD.不透明度 = value;
-    			脚前_下腕鱗_鱗小_鱗1CD.不透明度 = value;
-    			脚前_下腕鱗_鱗大_鱗9CD.不透明度 = value;
-    			脚前_下腕鱗_鱗大_鱗8CD.不透明度 = value;
-    			脚前_下腕鱗_鱗大_鱗7CD.不透明度 = value;
-    			脚前_下腕鱗_鱗大_鱗6CD.不透明度 = value;
-    			脚前_下腕鱗_鱗大_鱗5CD.不透明度 = value;
-    			脚前_下腕鱗_鱗大_鱗4CD.不透明度 = value;
-    			脚前_下腕鱗_鱗大_鱗3CD.不透明度 = value;
-    			脚前_下腕鱗_鱗大_鱗2CD.不透明度 = value;
-    			脚前_下腕鱗_鱗大_鱗1CD.不透明度 = value;
-    			脚前_上腕鱗_鱗5CD.不透明度 = value;
-    			脚前_上腕鱗_鱗4CD.不透明度 = value;
-    			脚前_上腕鱗_鱗3CD.不透明度 = value;
-    			脚前_上腕鱗_鱗2CD.不透明度 = value;
-    			脚前_上腕鱗_鱗1CD.不透明度 = value;
+    			脚前_LowerArm鱗_鱗小_鱗9CD.不透明度 = value;
+    			脚前_LowerArm鱗_鱗小_鱗8CD.不透明度 = value;
+    			脚前_LowerArm鱗_鱗小_鱗7CD.不透明度 = value;
+    			脚前_LowerArm鱗_鱗小_鱗6CD.不透明度 = value;
+    			脚前_LowerArm鱗_鱗小_鱗5CD.不透明度 = value;
+    			脚前_LowerArm鱗_鱗小_鱗4CD.不透明度 = value;
+    			脚前_LowerArm鱗_鱗小_鱗3CD.不透明度 = value;
+    			脚前_LowerArm鱗_鱗小_鱗2CD.不透明度 = value;
+    			脚前_LowerArm鱗_鱗小_鱗1CD.不透明度 = value;
+    			脚前_LowerArm鱗_鱗大_鱗9CD.不透明度 = value;
+    			脚前_LowerArm鱗_鱗大_鱗8CD.不透明度 = value;
+    			脚前_LowerArm鱗_鱗大_鱗7CD.不透明度 = value;
+    			脚前_LowerArm鱗_鱗大_鱗6CD.不透明度 = value;
+    			脚前_LowerArm鱗_鱗大_鱗5CD.不透明度 = value;
+    			脚前_LowerArm鱗_鱗大_鱗4CD.不透明度 = value;
+    			脚前_LowerArm鱗_鱗大_鱗3CD.不透明度 = value;
+    			脚前_LowerArm鱗_鱗大_鱗2CD.不透明度 = value;
+    			脚前_LowerArm鱗_鱗大_鱗1CD.不透明度 = value;
+    			脚前_UpperArm鱗_鱗5CD.不透明度 = value;
+    			脚前_UpperArm鱗_鱗4CD.不透明度 = value;
+    			脚前_UpperArm鱗_鱗3CD.不透明度 = value;
+    			脚前_UpperArm鱗_鱗2CD.不透明度 = value;
+    			脚前_UpperArm鱗_鱗1CD.不透明度 = value;
     			脚前_鰭_鰭膜1CD.不透明度 = value;
     			脚前_鰭_鰭条1CD.不透明度 = value;
     			脚前_鰭_鰭膜2CD.不透明度 = value;
@@ -6035,17 +6035,17 @@ namespace SlaveMatrix
 
     	public JointS 頭_接続点 => new JointS(本体, X0Y0_胴_節18_胴, 0);
 
-    	public JointS 上腕左_接続点 => new JointS(本体, X0Y0_胴_節9_胴, 1);
+    	public JointS UpperArm左_接続点 => new JointS(本体, X0Y0_胴_節9_胴, 1);
 
-    	public JointS 上腕右_接続点 => new JointS(本体, X0Y0_胴_節10_胴, 1);
+    	public JointS UpperArm右_接続点 => new JointS(本体, X0Y0_胴_節10_胴, 1);
 
-    	public JointS 下腕左_接続点 => new JointS(本体, X0Y0_脚前_上腕, 0);
+    	public JointS LowerArm左_接続点 => new JointS(本体, X0Y0_脚前_UpperArm, 0);
 
-    	public JointS 下腕右_接続点 => new JointS(本体, X0Y0_脚後_上腕, 0);
+    	public JointS LowerArm右_接続点 => new JointS(本体, X0Y0_脚後_UpperArm, 0);
 
-    	public JointS 手左_接続点 => new JointS(本体, X0Y0_脚前_下腕, 0);
+    	public JointS 手左_接続点 => new JointS(本体, X0Y0_脚前_LowerArm, 0);
 
-    	public JointS 手右_接続点 => new JointS(本体, X0Y0_脚後_下腕, 0);
+    	public JointS 手右_接続点 => new JointS(本体, X0Y0_脚後_LowerArm, 0);
 
     	public JointS 鎖1_接続点 => new JointS(本体, X0Y0_胴_輪_金具左, 0);
 
@@ -6077,8 +6077,8 @@ namespace SlaveMatrix
     		X0Y0_脚後_鰭_鰭膜2 = pars3["鰭膜2"].ToPar();
     		X0Y0_脚後_鰭_鰭条2 = pars3["鰭条2"].ToPar();
     		X0Y0_脚後_鰭_鰭膜3 = pars3["鰭膜3"].ToPar();
-    		X0Y0_脚後_上腕 = pars2["上腕"].ToPar();
-    		X0Y0_脚後_下腕 = pars2["下腕"].ToPar();
+    		X0Y0_脚後_UpperArm = pars2["上腕"].ToPar();
+    		X0Y0_脚後_LowerArm = pars2["下腕"].ToPar();
     		pars3 = pars2["手"].ToPars();
     		X0Y0_脚後_手_手 = pars3["手"].ToPar();
     		Pars pars4 = pars3["小指"].ToPars();
@@ -6124,31 +6124,31 @@ namespace SlaveMatrix
     		X0Y0_脚後_手_親指_爪 = pars4["爪"].ToPar();
     		pars3 = pars2["下腕鱗"].ToPars();
     		pars4 = pars3["鱗小"].ToPars();
-    		X0Y0_脚後_下腕鱗_鱗小_鱗9 = pars4["鱗9"].ToPar();
-    		X0Y0_脚後_下腕鱗_鱗小_鱗8 = pars4["鱗8"].ToPar();
-    		X0Y0_脚後_下腕鱗_鱗小_鱗7 = pars4["鱗7"].ToPar();
-    		X0Y0_脚後_下腕鱗_鱗小_鱗6 = pars4["鱗6"].ToPar();
-    		X0Y0_脚後_下腕鱗_鱗小_鱗5 = pars4["鱗5"].ToPar();
-    		X0Y0_脚後_下腕鱗_鱗小_鱗4 = pars4["鱗4"].ToPar();
-    		X0Y0_脚後_下腕鱗_鱗小_鱗3 = pars4["鱗3"].ToPar();
-    		X0Y0_脚後_下腕鱗_鱗小_鱗2 = pars4["鱗2"].ToPar();
-    		X0Y0_脚後_下腕鱗_鱗小_鱗1 = pars4["鱗1"].ToPar();
+    		X0Y0_脚後_LowerArm鱗_鱗小_鱗9 = pars4["鱗9"].ToPar();
+    		X0Y0_脚後_LowerArm鱗_鱗小_鱗8 = pars4["鱗8"].ToPar();
+    		X0Y0_脚後_LowerArm鱗_鱗小_鱗7 = pars4["鱗7"].ToPar();
+    		X0Y0_脚後_LowerArm鱗_鱗小_鱗6 = pars4["鱗6"].ToPar();
+    		X0Y0_脚後_LowerArm鱗_鱗小_鱗5 = pars4["鱗5"].ToPar();
+    		X0Y0_脚後_LowerArm鱗_鱗小_鱗4 = pars4["鱗4"].ToPar();
+    		X0Y0_脚後_LowerArm鱗_鱗小_鱗3 = pars4["鱗3"].ToPar();
+    		X0Y0_脚後_LowerArm鱗_鱗小_鱗2 = pars4["鱗2"].ToPar();
+    		X0Y0_脚後_LowerArm鱗_鱗小_鱗1 = pars4["鱗1"].ToPar();
     		pars4 = pars3["鱗大"].ToPars();
-    		X0Y0_脚後_下腕鱗_鱗大_鱗9 = pars4["鱗9"].ToPar();
-    		X0Y0_脚後_下腕鱗_鱗大_鱗8 = pars4["鱗8"].ToPar();
-    		X0Y0_脚後_下腕鱗_鱗大_鱗7 = pars4["鱗7"].ToPar();
-    		X0Y0_脚後_下腕鱗_鱗大_鱗6 = pars4["鱗6"].ToPar();
-    		X0Y0_脚後_下腕鱗_鱗大_鱗5 = pars4["鱗5"].ToPar();
-    		X0Y0_脚後_下腕鱗_鱗大_鱗4 = pars4["鱗4"].ToPar();
-    		X0Y0_脚後_下腕鱗_鱗大_鱗3 = pars4["鱗3"].ToPar();
-    		X0Y0_脚後_下腕鱗_鱗大_鱗2 = pars4["鱗2"].ToPar();
-    		X0Y0_脚後_下腕鱗_鱗大_鱗1 = pars4["鱗1"].ToPar();
+    		X0Y0_脚後_LowerArm鱗_鱗大_鱗9 = pars4["鱗9"].ToPar();
+    		X0Y0_脚後_LowerArm鱗_鱗大_鱗8 = pars4["鱗8"].ToPar();
+    		X0Y0_脚後_LowerArm鱗_鱗大_鱗7 = pars4["鱗7"].ToPar();
+    		X0Y0_脚後_LowerArm鱗_鱗大_鱗6 = pars4["鱗6"].ToPar();
+    		X0Y0_脚後_LowerArm鱗_鱗大_鱗5 = pars4["鱗5"].ToPar();
+    		X0Y0_脚後_LowerArm鱗_鱗大_鱗4 = pars4["鱗4"].ToPar();
+    		X0Y0_脚後_LowerArm鱗_鱗大_鱗3 = pars4["鱗3"].ToPar();
+    		X0Y0_脚後_LowerArm鱗_鱗大_鱗2 = pars4["鱗2"].ToPar();
+    		X0Y0_脚後_LowerArm鱗_鱗大_鱗1 = pars4["鱗1"].ToPar();
     		pars3 = pars2["上腕鱗"].ToPars();
-    		X0Y0_脚後_上腕鱗_鱗5 = pars3["鱗5"].ToPar();
-    		X0Y0_脚後_上腕鱗_鱗4 = pars3["鱗4"].ToPar();
-    		X0Y0_脚後_上腕鱗_鱗3 = pars3["鱗3"].ToPar();
-    		X0Y0_脚後_上腕鱗_鱗2 = pars3["鱗2"].ToPar();
-    		X0Y0_脚後_上腕鱗_鱗1 = pars3["鱗1"].ToPar();
+    		X0Y0_脚後_UpperArm鱗_鱗5 = pars3["鱗5"].ToPar();
+    		X0Y0_脚後_UpperArm鱗_鱗4 = pars3["鱗4"].ToPar();
+    		X0Y0_脚後_UpperArm鱗_鱗3 = pars3["鱗3"].ToPar();
+    		X0Y0_脚後_UpperArm鱗_鱗2 = pars3["鱗2"].ToPar();
+    		X0Y0_脚後_UpperArm鱗_鱗1 = pars3["鱗1"].ToPar();
     		pars3 = pars2["輪"].ToPars();
     		X0Y0_脚後_輪_革 = pars3["革"].ToPar();
     		X0Y0_脚後_輪_金具1 = pars3["金具1"].ToPar();
@@ -6344,8 +6344,8 @@ namespace SlaveMatrix
     		X0Y0_頭_輪_金具左 = pars3["金具左"].ToPar();
     		X0Y0_頭_輪_金具右 = pars3["金具右"].ToPar();
     		pars2 = pars["脚前"].ToPars();
-    		X0Y0_脚前_上腕 = pars2["上腕"].ToPar();
-    		X0Y0_脚前_下腕 = pars2["下腕"].ToPar();
+    		X0Y0_脚前_UpperArm = pars2["上腕"].ToPar();
+    		X0Y0_脚前_LowerArm = pars2["下腕"].ToPar();
     		pars3 = pars2["手"].ToPars();
     		pars4 = pars3["親指"].ToPars();
     		X0Y0_脚前_手_親指_爪 = pars4["爪"].ToPar();
@@ -6392,31 +6392,31 @@ namespace SlaveMatrix
     		X0Y0_脚前_手_鱗_鱗1 = pars4["鱗1"].ToPar();
     		pars3 = pars2["下腕鱗"].ToPars();
     		pars4 = pars3["鱗小"].ToPars();
-    		X0Y0_脚前_下腕鱗_鱗小_鱗9 = pars4["鱗9"].ToPar();
-    		X0Y0_脚前_下腕鱗_鱗小_鱗8 = pars4["鱗8"].ToPar();
-    		X0Y0_脚前_下腕鱗_鱗小_鱗7 = pars4["鱗7"].ToPar();
-    		X0Y0_脚前_下腕鱗_鱗小_鱗6 = pars4["鱗6"].ToPar();
-    		X0Y0_脚前_下腕鱗_鱗小_鱗5 = pars4["鱗5"].ToPar();
-    		X0Y0_脚前_下腕鱗_鱗小_鱗4 = pars4["鱗4"].ToPar();
-    		X0Y0_脚前_下腕鱗_鱗小_鱗3 = pars4["鱗3"].ToPar();
-    		X0Y0_脚前_下腕鱗_鱗小_鱗2 = pars4["鱗2"].ToPar();
-    		X0Y0_脚前_下腕鱗_鱗小_鱗1 = pars4["鱗1"].ToPar();
+    		X0Y0_脚前_LowerArm鱗_鱗小_鱗9 = pars4["鱗9"].ToPar();
+    		X0Y0_脚前_LowerArm鱗_鱗小_鱗8 = pars4["鱗8"].ToPar();
+    		X0Y0_脚前_LowerArm鱗_鱗小_鱗7 = pars4["鱗7"].ToPar();
+    		X0Y0_脚前_LowerArm鱗_鱗小_鱗6 = pars4["鱗6"].ToPar();
+    		X0Y0_脚前_LowerArm鱗_鱗小_鱗5 = pars4["鱗5"].ToPar();
+    		X0Y0_脚前_LowerArm鱗_鱗小_鱗4 = pars4["鱗4"].ToPar();
+    		X0Y0_脚前_LowerArm鱗_鱗小_鱗3 = pars4["鱗3"].ToPar();
+    		X0Y0_脚前_LowerArm鱗_鱗小_鱗2 = pars4["鱗2"].ToPar();
+    		X0Y0_脚前_LowerArm鱗_鱗小_鱗1 = pars4["鱗1"].ToPar();
     		pars4 = pars3["鱗大"].ToPars();
-    		X0Y0_脚前_下腕鱗_鱗大_鱗9 = pars4["鱗9"].ToPar();
-    		X0Y0_脚前_下腕鱗_鱗大_鱗8 = pars4["鱗8"].ToPar();
-    		X0Y0_脚前_下腕鱗_鱗大_鱗7 = pars4["鱗7"].ToPar();
-    		X0Y0_脚前_下腕鱗_鱗大_鱗6 = pars4["鱗6"].ToPar();
-    		X0Y0_脚前_下腕鱗_鱗大_鱗5 = pars4["鱗5"].ToPar();
-    		X0Y0_脚前_下腕鱗_鱗大_鱗4 = pars4["鱗4"].ToPar();
-    		X0Y0_脚前_下腕鱗_鱗大_鱗3 = pars4["鱗3"].ToPar();
-    		X0Y0_脚前_下腕鱗_鱗大_鱗2 = pars4["鱗2"].ToPar();
-    		X0Y0_脚前_下腕鱗_鱗大_鱗1 = pars4["鱗1"].ToPar();
+    		X0Y0_脚前_LowerArm鱗_鱗大_鱗9 = pars4["鱗9"].ToPar();
+    		X0Y0_脚前_LowerArm鱗_鱗大_鱗8 = pars4["鱗8"].ToPar();
+    		X0Y0_脚前_LowerArm鱗_鱗大_鱗7 = pars4["鱗7"].ToPar();
+    		X0Y0_脚前_LowerArm鱗_鱗大_鱗6 = pars4["鱗6"].ToPar();
+    		X0Y0_脚前_LowerArm鱗_鱗大_鱗5 = pars4["鱗5"].ToPar();
+    		X0Y0_脚前_LowerArm鱗_鱗大_鱗4 = pars4["鱗4"].ToPar();
+    		X0Y0_脚前_LowerArm鱗_鱗大_鱗3 = pars4["鱗3"].ToPar();
+    		X0Y0_脚前_LowerArm鱗_鱗大_鱗2 = pars4["鱗2"].ToPar();
+    		X0Y0_脚前_LowerArm鱗_鱗大_鱗1 = pars4["鱗1"].ToPar();
     		pars3 = pars2["上腕鱗"].ToPars();
-    		X0Y0_脚前_上腕鱗_鱗5 = pars3["鱗5"].ToPar();
-    		X0Y0_脚前_上腕鱗_鱗4 = pars3["鱗4"].ToPar();
-    		X0Y0_脚前_上腕鱗_鱗3 = pars3["鱗3"].ToPar();
-    		X0Y0_脚前_上腕鱗_鱗2 = pars3["鱗2"].ToPar();
-    		X0Y0_脚前_上腕鱗_鱗1 = pars3["鱗1"].ToPar();
+    		X0Y0_脚前_UpperArm鱗_鱗5 = pars3["鱗5"].ToPar();
+    		X0Y0_脚前_UpperArm鱗_鱗4 = pars3["鱗4"].ToPar();
+    		X0Y0_脚前_UpperArm鱗_鱗3 = pars3["鱗3"].ToPar();
+    		X0Y0_脚前_UpperArm鱗_鱗2 = pars3["鱗2"].ToPar();
+    		X0Y0_脚前_UpperArm鱗_鱗1 = pars3["鱗1"].ToPar();
     		pars3 = pars2["鰭"].ToPars();
     		X0Y0_脚前_鰭_鰭膜1 = pars3["鰭膜1"].ToPar();
     		X0Y0_脚前_鰭_鰭条1 = pars3["鰭条1"].ToPar();
@@ -6460,8 +6460,8 @@ namespace SlaveMatrix
     		脚後_鰭_鰭膜2_表示 = e.脚後_鰭_鰭膜2_表示;
     		脚後_鰭_鰭条2_表示 = e.脚後_鰭_鰭条2_表示;
     		脚後_鰭_鰭膜3_表示 = e.脚後_鰭_鰭膜3_表示;
-    		脚後_上腕_表示 = e.脚後_上腕_表示;
-    		脚後_下腕_表示 = e.脚後_下腕_表示;
+    		脚後_UpperArm_表示 = e.脚後_UpperArm_表示;
+    		脚後_LowerArm_表示 = e.脚後_LowerArm_表示;
     		脚後_手_手_表示 = e.脚後_手_手_表示;
     		脚後_手_小指_指_表示 = e.脚後_手_小指_指_表示;
     		脚後_手_小指_爪_表示 = e.脚後_手_小指_爪_表示;
@@ -6494,29 +6494,29 @@ namespace SlaveMatrix
     		脚後_手_鱗_鱗2_表示 = e.脚後_手_鱗_鱗2_表示;
     		脚後_手_鱗_鱗1_表示 = e.脚後_手_鱗_鱗1_表示;
     		脚後_手_親指_爪_表示 = e.脚後_手_親指_爪_表示;
-    		脚後_下腕鱗_鱗小_鱗9_表示 = e.脚後_下腕鱗_鱗小_鱗9_表示;
-    		脚後_下腕鱗_鱗小_鱗8_表示 = e.脚後_下腕鱗_鱗小_鱗8_表示;
-    		脚後_下腕鱗_鱗小_鱗7_表示 = e.脚後_下腕鱗_鱗小_鱗7_表示;
-    		脚後_下腕鱗_鱗小_鱗6_表示 = e.脚後_下腕鱗_鱗小_鱗6_表示;
-    		脚後_下腕鱗_鱗小_鱗5_表示 = e.脚後_下腕鱗_鱗小_鱗5_表示;
-    		脚後_下腕鱗_鱗小_鱗4_表示 = e.脚後_下腕鱗_鱗小_鱗4_表示;
-    		脚後_下腕鱗_鱗小_鱗3_表示 = e.脚後_下腕鱗_鱗小_鱗3_表示;
-    		脚後_下腕鱗_鱗小_鱗2_表示 = e.脚後_下腕鱗_鱗小_鱗2_表示;
-    		脚後_下腕鱗_鱗小_鱗1_表示 = e.脚後_下腕鱗_鱗小_鱗1_表示;
-    		脚後_下腕鱗_鱗大_鱗9_表示 = e.脚後_下腕鱗_鱗大_鱗9_表示;
-    		脚後_下腕鱗_鱗大_鱗8_表示 = e.脚後_下腕鱗_鱗大_鱗8_表示;
-    		脚後_下腕鱗_鱗大_鱗7_表示 = e.脚後_下腕鱗_鱗大_鱗7_表示;
-    		脚後_下腕鱗_鱗大_鱗6_表示 = e.脚後_下腕鱗_鱗大_鱗6_表示;
-    		脚後_下腕鱗_鱗大_鱗5_表示 = e.脚後_下腕鱗_鱗大_鱗5_表示;
-    		脚後_下腕鱗_鱗大_鱗4_表示 = e.脚後_下腕鱗_鱗大_鱗4_表示;
-    		脚後_下腕鱗_鱗大_鱗3_表示 = e.脚後_下腕鱗_鱗大_鱗3_表示;
-    		脚後_下腕鱗_鱗大_鱗2_表示 = e.脚後_下腕鱗_鱗大_鱗2_表示;
-    		脚後_下腕鱗_鱗大_鱗1_表示 = e.脚後_下腕鱗_鱗大_鱗1_表示;
-    		脚後_上腕鱗_鱗5_表示 = e.脚後_上腕鱗_鱗5_表示;
-    		脚後_上腕鱗_鱗4_表示 = e.脚後_上腕鱗_鱗4_表示;
-    		脚後_上腕鱗_鱗3_表示 = e.脚後_上腕鱗_鱗3_表示;
-    		脚後_上腕鱗_鱗2_表示 = e.脚後_上腕鱗_鱗2_表示;
-    		脚後_上腕鱗_鱗1_表示 = e.脚後_上腕鱗_鱗1_表示;
+    		脚後_LowerArm鱗_鱗小_鱗9_表示 = e.脚後_LowerArm鱗_鱗小_鱗9_表示;
+    		脚後_LowerArm鱗_鱗小_鱗8_表示 = e.脚後_LowerArm鱗_鱗小_鱗8_表示;
+    		脚後_LowerArm鱗_鱗小_鱗7_表示 = e.脚後_LowerArm鱗_鱗小_鱗7_表示;
+    		脚後_LowerArm鱗_鱗小_鱗6_表示 = e.脚後_LowerArm鱗_鱗小_鱗6_表示;
+    		脚後_LowerArm鱗_鱗小_鱗5_表示 = e.脚後_LowerArm鱗_鱗小_鱗5_表示;
+    		脚後_LowerArm鱗_鱗小_鱗4_表示 = e.脚後_LowerArm鱗_鱗小_鱗4_表示;
+    		脚後_LowerArm鱗_鱗小_鱗3_表示 = e.脚後_LowerArm鱗_鱗小_鱗3_表示;
+    		脚後_LowerArm鱗_鱗小_鱗2_表示 = e.脚後_LowerArm鱗_鱗小_鱗2_表示;
+    		脚後_LowerArm鱗_鱗小_鱗1_表示 = e.脚後_LowerArm鱗_鱗小_鱗1_表示;
+    		脚後_LowerArm鱗_鱗大_鱗9_表示 = e.脚後_LowerArm鱗_鱗大_鱗9_表示;
+    		脚後_LowerArm鱗_鱗大_鱗8_表示 = e.脚後_LowerArm鱗_鱗大_鱗8_表示;
+    		脚後_LowerArm鱗_鱗大_鱗7_表示 = e.脚後_LowerArm鱗_鱗大_鱗7_表示;
+    		脚後_LowerArm鱗_鱗大_鱗6_表示 = e.脚後_LowerArm鱗_鱗大_鱗6_表示;
+    		脚後_LowerArm鱗_鱗大_鱗5_表示 = e.脚後_LowerArm鱗_鱗大_鱗5_表示;
+    		脚後_LowerArm鱗_鱗大_鱗4_表示 = e.脚後_LowerArm鱗_鱗大_鱗4_表示;
+    		脚後_LowerArm鱗_鱗大_鱗3_表示 = e.脚後_LowerArm鱗_鱗大_鱗3_表示;
+    		脚後_LowerArm鱗_鱗大_鱗2_表示 = e.脚後_LowerArm鱗_鱗大_鱗2_表示;
+    		脚後_LowerArm鱗_鱗大_鱗1_表示 = e.脚後_LowerArm鱗_鱗大_鱗1_表示;
+    		脚後_UpperArm鱗_鱗5_表示 = e.脚後_UpperArm鱗_鱗5_表示;
+    		脚後_UpperArm鱗_鱗4_表示 = e.脚後_UpperArm鱗_鱗4_表示;
+    		脚後_UpperArm鱗_鱗3_表示 = e.脚後_UpperArm鱗_鱗3_表示;
+    		脚後_UpperArm鱗_鱗2_表示 = e.脚後_UpperArm鱗_鱗2_表示;
+    		脚後_UpperArm鱗_鱗1_表示 = e.脚後_UpperArm鱗_鱗1_表示;
     		脚後_輪_革_表示 = e.脚後_輪_革_表示;
     		脚後_輪_金具1_表示 = e.脚後_輪_金具1_表示;
     		脚後_輪_金具2_表示 = e.脚後_輪_金具2_表示;
@@ -6665,8 +6665,8 @@ namespace SlaveMatrix
     		頭_輪_金具3_表示 = e.頭_輪_金具3_表示;
     		頭_輪_金具左_表示 = e.頭_輪_金具左_表示;
     		頭_輪_金具右_表示 = e.頭_輪_金具右_表示;
-    		脚前_上腕_表示 = e.脚前_上腕_表示;
-    		脚前_下腕_表示 = e.脚前_下腕_表示;
+    		脚前_UpperArm_表示 = e.脚前_UpperArm_表示;
+    		脚前_LowerArm_表示 = e.脚前_LowerArm_表示;
     		脚前_手_親指_爪_表示 = e.脚前_手_親指_爪_表示;
     		脚前_手_手_表示 = e.脚前_手_手_表示;
     		脚前_手_人指_指_表示 = e.脚前_手_人指_指_表示;
@@ -6699,29 +6699,29 @@ namespace SlaveMatrix
     		脚前_手_鱗_鱗3_表示 = e.脚前_手_鱗_鱗3_表示;
     		脚前_手_鱗_鱗2_表示 = e.脚前_手_鱗_鱗2_表示;
     		脚前_手_鱗_鱗1_表示 = e.脚前_手_鱗_鱗1_表示;
-    		脚前_下腕鱗_鱗小_鱗9_表示 = e.脚前_下腕鱗_鱗小_鱗9_表示;
-    		脚前_下腕鱗_鱗小_鱗8_表示 = e.脚前_下腕鱗_鱗小_鱗8_表示;
-    		脚前_下腕鱗_鱗小_鱗7_表示 = e.脚前_下腕鱗_鱗小_鱗7_表示;
-    		脚前_下腕鱗_鱗小_鱗6_表示 = e.脚前_下腕鱗_鱗小_鱗6_表示;
-    		脚前_下腕鱗_鱗小_鱗5_表示 = e.脚前_下腕鱗_鱗小_鱗5_表示;
-    		脚前_下腕鱗_鱗小_鱗4_表示 = e.脚前_下腕鱗_鱗小_鱗4_表示;
-    		脚前_下腕鱗_鱗小_鱗3_表示 = e.脚前_下腕鱗_鱗小_鱗3_表示;
-    		脚前_下腕鱗_鱗小_鱗2_表示 = e.脚前_下腕鱗_鱗小_鱗2_表示;
-    		脚前_下腕鱗_鱗小_鱗1_表示 = e.脚前_下腕鱗_鱗小_鱗1_表示;
-    		脚前_下腕鱗_鱗大_鱗9_表示 = e.脚前_下腕鱗_鱗大_鱗9_表示;
-    		脚前_下腕鱗_鱗大_鱗8_表示 = e.脚前_下腕鱗_鱗大_鱗8_表示;
-    		脚前_下腕鱗_鱗大_鱗7_表示 = e.脚前_下腕鱗_鱗大_鱗7_表示;
-    		脚前_下腕鱗_鱗大_鱗6_表示 = e.脚前_下腕鱗_鱗大_鱗6_表示;
-    		脚前_下腕鱗_鱗大_鱗5_表示 = e.脚前_下腕鱗_鱗大_鱗5_表示;
-    		脚前_下腕鱗_鱗大_鱗4_表示 = e.脚前_下腕鱗_鱗大_鱗4_表示;
-    		脚前_下腕鱗_鱗大_鱗3_表示 = e.脚前_下腕鱗_鱗大_鱗3_表示;
-    		脚前_下腕鱗_鱗大_鱗2_表示 = e.脚前_下腕鱗_鱗大_鱗2_表示;
-    		脚前_下腕鱗_鱗大_鱗1_表示 = e.脚前_下腕鱗_鱗大_鱗1_表示;
-    		脚前_上腕鱗_鱗5_表示 = e.脚前_上腕鱗_鱗5_表示;
-    		脚前_上腕鱗_鱗4_表示 = e.脚前_上腕鱗_鱗4_表示;
-    		脚前_上腕鱗_鱗3_表示 = e.脚前_上腕鱗_鱗3_表示;
-    		脚前_上腕鱗_鱗2_表示 = e.脚前_上腕鱗_鱗2_表示;
-    		脚前_上腕鱗_鱗1_表示 = e.脚前_上腕鱗_鱗1_表示;
+    		脚前_LowerArm鱗_鱗小_鱗9_表示 = e.脚前_LowerArm鱗_鱗小_鱗9_表示;
+    		脚前_LowerArm鱗_鱗小_鱗8_表示 = e.脚前_LowerArm鱗_鱗小_鱗8_表示;
+    		脚前_LowerArm鱗_鱗小_鱗7_表示 = e.脚前_LowerArm鱗_鱗小_鱗7_表示;
+    		脚前_LowerArm鱗_鱗小_鱗6_表示 = e.脚前_LowerArm鱗_鱗小_鱗6_表示;
+    		脚前_LowerArm鱗_鱗小_鱗5_表示 = e.脚前_LowerArm鱗_鱗小_鱗5_表示;
+    		脚前_LowerArm鱗_鱗小_鱗4_表示 = e.脚前_LowerArm鱗_鱗小_鱗4_表示;
+    		脚前_LowerArm鱗_鱗小_鱗3_表示 = e.脚前_LowerArm鱗_鱗小_鱗3_表示;
+    		脚前_LowerArm鱗_鱗小_鱗2_表示 = e.脚前_LowerArm鱗_鱗小_鱗2_表示;
+    		脚前_LowerArm鱗_鱗小_鱗1_表示 = e.脚前_LowerArm鱗_鱗小_鱗1_表示;
+    		脚前_LowerArm鱗_鱗大_鱗9_表示 = e.脚前_LowerArm鱗_鱗大_鱗9_表示;
+    		脚前_LowerArm鱗_鱗大_鱗8_表示 = e.脚前_LowerArm鱗_鱗大_鱗8_表示;
+    		脚前_LowerArm鱗_鱗大_鱗7_表示 = e.脚前_LowerArm鱗_鱗大_鱗7_表示;
+    		脚前_LowerArm鱗_鱗大_鱗6_表示 = e.脚前_LowerArm鱗_鱗大_鱗6_表示;
+    		脚前_LowerArm鱗_鱗大_鱗5_表示 = e.脚前_LowerArm鱗_鱗大_鱗5_表示;
+    		脚前_LowerArm鱗_鱗大_鱗4_表示 = e.脚前_LowerArm鱗_鱗大_鱗4_表示;
+    		脚前_LowerArm鱗_鱗大_鱗3_表示 = e.脚前_LowerArm鱗_鱗大_鱗3_表示;
+    		脚前_LowerArm鱗_鱗大_鱗2_表示 = e.脚前_LowerArm鱗_鱗大_鱗2_表示;
+    		脚前_LowerArm鱗_鱗大_鱗1_表示 = e.脚前_LowerArm鱗_鱗大_鱗1_表示;
+    		脚前_UpperArm鱗_鱗5_表示 = e.脚前_UpperArm鱗_鱗5_表示;
+    		脚前_UpperArm鱗_鱗4_表示 = e.脚前_UpperArm鱗_鱗4_表示;
+    		脚前_UpperArm鱗_鱗3_表示 = e.脚前_UpperArm鱗_鱗3_表示;
+    		脚前_UpperArm鱗_鱗2_表示 = e.脚前_UpperArm鱗_鱗2_表示;
+    		脚前_UpperArm鱗_鱗1_表示 = e.脚前_UpperArm鱗_鱗1_表示;
     		脚前_鰭_鰭膜1_表示 = e.脚前_鰭_鰭膜1_表示;
     		脚前_鰭_鰭条1_表示 = e.脚前_鰭_鰭条1_表示;
     		脚前_鰭_鰭膜2_表示 = e.脚前_鰭_鰭膜2_表示;
@@ -6757,47 +6757,47 @@ namespace SlaveMatrix
     				return f;
     			}).ToArray();
     		}
-    		if (e.上腕左_接続.Count > 0)
+    		if (e.UpperArm左_接続.Count > 0)
     		{
-    			上腕左_接続 = e.上腕左_接続.Select(delegate(EleD g)
+    			UpperArm左_接続 = e.UpperArm左_接続.Select(delegate(EleD g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 触手_犬2;
-    				f.ConnectionType = ConnectionInfo.触手_犬_上腕左_接続;
-    				f.接続(触手_犬2.上腕左_接続点);
+    				f.ConnectionType = ConnectionInfo.触手_犬_UpperArm左_接続;
+    				f.接続(触手_犬2.UpperArm左_接続点);
     				return f;
     			}).ToArray();
     		}
-    		if (e.上腕右_接続.Count > 0)
+    		if (e.UpperArm右_接続.Count > 0)
     		{
-    			上腕右_接続 = e.上腕右_接続.Select(delegate(EleD g)
+    			UpperArm右_接続 = e.UpperArm右_接続.Select(delegate(EleD g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 触手_犬2;
-    				f.ConnectionType = ConnectionInfo.触手_犬_上腕右_接続;
-    				f.接続(触手_犬2.上腕右_接続点);
+    				f.ConnectionType = ConnectionInfo.触手_犬_UpperArm右_接続;
+    				f.接続(触手_犬2.UpperArm右_接続点);
     				return f;
     			}).ToArray();
     		}
-    		if (e.下腕左_接続.Count > 0)
+    		if (e.LowerArm左_接続.Count > 0)
     		{
-    			下腕左_接続 = e.下腕左_接続.Select(delegate(EleD g)
+    			LowerArm左_接続 = e.LowerArm左_接続.Select(delegate(EleD g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 触手_犬2;
-    				f.ConnectionType = ConnectionInfo.触手_犬_下腕左_接続;
-    				f.接続(触手_犬2.下腕左_接続点);
+    				f.ConnectionType = ConnectionInfo.触手_犬_LowerArm左_接続;
+    				f.接続(触手_犬2.LowerArm左_接続点);
     				return f;
     			}).ToArray();
     		}
-    		if (e.下腕右_接続.Count > 0)
+    		if (e.LowerArm右_接続.Count > 0)
     		{
-    			下腕右_接続 = e.下腕右_接続.Select(delegate(EleD g)
+    			LowerArm右_接続 = e.LowerArm右_接続.Select(delegate(EleD g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 触手_犬2;
-    				f.ConnectionType = ConnectionInfo.触手_犬_下腕右_接続;
-    				f.接続(触手_犬2.下腕右_接続点);
+    				f.ConnectionType = ConnectionInfo.触手_犬_LowerArm右_接続;
+    				f.接続(触手_犬2.LowerArm右_接続点);
     				return f;
     			}).ToArray();
     		}
@@ -6830,8 +6830,8 @@ namespace SlaveMatrix
     		X0Y0_脚後_鰭_鰭膜2CP = new ColorP(X0Y0_脚後_鰭_鰭膜2, 脚後_鰭_鰭膜2CD, DisUnit, abj: true);
     		X0Y0_脚後_鰭_鰭条2CP = new ColorP(X0Y0_脚後_鰭_鰭条2, 脚後_鰭_鰭条2CD, DisUnit, abj: true);
     		X0Y0_脚後_鰭_鰭膜3CP = new ColorP(X0Y0_脚後_鰭_鰭膜3, 脚後_鰭_鰭膜3CD, DisUnit, abj: true);
-    		X0Y0_脚後_上腕CP = new ColorP(X0Y0_脚後_上腕, 脚後_上腕CD, DisUnit, abj: true);
-    		X0Y0_脚後_下腕CP = new ColorP(X0Y0_脚後_下腕, 脚後_下腕CD, DisUnit, abj: true);
+    		X0Y0_脚後_UpperArmCP = new ColorP(X0Y0_脚後_UpperArm, 脚後_UpperArmCD, DisUnit, abj: true);
+    		X0Y0_脚後_LowerArmCP = new ColorP(X0Y0_脚後_LowerArm, 脚後_LowerArmCD, DisUnit, abj: true);
     		X0Y0_脚後_手_手CP = new ColorP(X0Y0_脚後_手_手, 脚後_手_手CD, DisUnit, abj: true);
     		X0Y0_脚後_手_小指_指CP = new ColorP(X0Y0_脚後_手_小指_指, 脚後_手_小指_指CD, DisUnit, abj: true);
     		X0Y0_脚後_手_小指_爪CP = new ColorP(X0Y0_脚後_手_小指_爪, 脚後_手_小指_爪CD, DisUnit, abj: true);
@@ -6864,29 +6864,29 @@ namespace SlaveMatrix
     		X0Y0_脚後_手_鱗_鱗2CP = new ColorP(X0Y0_脚後_手_鱗_鱗2, 脚後_手_鱗_鱗2CD, DisUnit, abj: true);
     		X0Y0_脚後_手_鱗_鱗1CP = new ColorP(X0Y0_脚後_手_鱗_鱗1, 脚後_手_鱗_鱗1CD, DisUnit, abj: true);
     		X0Y0_脚後_手_親指_爪CP = new ColorP(X0Y0_脚後_手_親指_爪, 脚後_手_親指_爪CD, DisUnit, abj: true);
-    		X0Y0_脚後_下腕鱗_鱗小_鱗9CP = new ColorP(X0Y0_脚後_下腕鱗_鱗小_鱗9, 脚後_下腕鱗_鱗小_鱗9CD, DisUnit, abj: true);
-    		X0Y0_脚後_下腕鱗_鱗小_鱗8CP = new ColorP(X0Y0_脚後_下腕鱗_鱗小_鱗8, 脚後_下腕鱗_鱗小_鱗8CD, DisUnit, abj: true);
-    		X0Y0_脚後_下腕鱗_鱗小_鱗7CP = new ColorP(X0Y0_脚後_下腕鱗_鱗小_鱗7, 脚後_下腕鱗_鱗小_鱗7CD, DisUnit, abj: true);
-    		X0Y0_脚後_下腕鱗_鱗小_鱗6CP = new ColorP(X0Y0_脚後_下腕鱗_鱗小_鱗6, 脚後_下腕鱗_鱗小_鱗6CD, DisUnit, abj: true);
-    		X0Y0_脚後_下腕鱗_鱗小_鱗5CP = new ColorP(X0Y0_脚後_下腕鱗_鱗小_鱗5, 脚後_下腕鱗_鱗小_鱗5CD, DisUnit, abj: true);
-    		X0Y0_脚後_下腕鱗_鱗小_鱗4CP = new ColorP(X0Y0_脚後_下腕鱗_鱗小_鱗4, 脚後_下腕鱗_鱗小_鱗4CD, DisUnit, abj: true);
-    		X0Y0_脚後_下腕鱗_鱗小_鱗3CP = new ColorP(X0Y0_脚後_下腕鱗_鱗小_鱗3, 脚後_下腕鱗_鱗小_鱗3CD, DisUnit, abj: true);
-    		X0Y0_脚後_下腕鱗_鱗小_鱗2CP = new ColorP(X0Y0_脚後_下腕鱗_鱗小_鱗2, 脚後_下腕鱗_鱗小_鱗2CD, DisUnit, abj: true);
-    		X0Y0_脚後_下腕鱗_鱗小_鱗1CP = new ColorP(X0Y0_脚後_下腕鱗_鱗小_鱗1, 脚後_下腕鱗_鱗小_鱗1CD, DisUnit, abj: true);
-    		X0Y0_脚後_下腕鱗_鱗大_鱗9CP = new ColorP(X0Y0_脚後_下腕鱗_鱗大_鱗9, 脚後_下腕鱗_鱗大_鱗9CD, DisUnit, abj: true);
-    		X0Y0_脚後_下腕鱗_鱗大_鱗8CP = new ColorP(X0Y0_脚後_下腕鱗_鱗大_鱗8, 脚後_下腕鱗_鱗大_鱗8CD, DisUnit, abj: true);
-    		X0Y0_脚後_下腕鱗_鱗大_鱗7CP = new ColorP(X0Y0_脚後_下腕鱗_鱗大_鱗7, 脚後_下腕鱗_鱗大_鱗7CD, DisUnit, abj: true);
-    		X0Y0_脚後_下腕鱗_鱗大_鱗6CP = new ColorP(X0Y0_脚後_下腕鱗_鱗大_鱗6, 脚後_下腕鱗_鱗大_鱗6CD, DisUnit, abj: true);
-    		X0Y0_脚後_下腕鱗_鱗大_鱗5CP = new ColorP(X0Y0_脚後_下腕鱗_鱗大_鱗5, 脚後_下腕鱗_鱗大_鱗5CD, DisUnit, abj: true);
-    		X0Y0_脚後_下腕鱗_鱗大_鱗4CP = new ColorP(X0Y0_脚後_下腕鱗_鱗大_鱗4, 脚後_下腕鱗_鱗大_鱗4CD, DisUnit, abj: true);
-    		X0Y0_脚後_下腕鱗_鱗大_鱗3CP = new ColorP(X0Y0_脚後_下腕鱗_鱗大_鱗3, 脚後_下腕鱗_鱗大_鱗3CD, DisUnit, abj: true);
-    		X0Y0_脚後_下腕鱗_鱗大_鱗2CP = new ColorP(X0Y0_脚後_下腕鱗_鱗大_鱗2, 脚後_下腕鱗_鱗大_鱗2CD, DisUnit, abj: true);
-    		X0Y0_脚後_下腕鱗_鱗大_鱗1CP = new ColorP(X0Y0_脚後_下腕鱗_鱗大_鱗1, 脚後_下腕鱗_鱗大_鱗1CD, DisUnit, abj: true);
-    		X0Y0_脚後_上腕鱗_鱗5CP = new ColorP(X0Y0_脚後_上腕鱗_鱗5, 脚後_上腕鱗_鱗5CD, DisUnit, abj: true);
-    		X0Y0_脚後_上腕鱗_鱗4CP = new ColorP(X0Y0_脚後_上腕鱗_鱗4, 脚後_上腕鱗_鱗4CD, DisUnit, abj: true);
-    		X0Y0_脚後_上腕鱗_鱗3CP = new ColorP(X0Y0_脚後_上腕鱗_鱗3, 脚後_上腕鱗_鱗3CD, DisUnit, abj: true);
-    		X0Y0_脚後_上腕鱗_鱗2CP = new ColorP(X0Y0_脚後_上腕鱗_鱗2, 脚後_上腕鱗_鱗2CD, DisUnit, abj: true);
-    		X0Y0_脚後_上腕鱗_鱗1CP = new ColorP(X0Y0_脚後_上腕鱗_鱗1, 脚後_上腕鱗_鱗1CD, DisUnit, abj: true);
+    		X0Y0_脚後_LowerArm鱗_鱗小_鱗9CP = new ColorP(X0Y0_脚後_LowerArm鱗_鱗小_鱗9, 脚後_LowerArm鱗_鱗小_鱗9CD, DisUnit, abj: true);
+    		X0Y0_脚後_LowerArm鱗_鱗小_鱗8CP = new ColorP(X0Y0_脚後_LowerArm鱗_鱗小_鱗8, 脚後_LowerArm鱗_鱗小_鱗8CD, DisUnit, abj: true);
+    		X0Y0_脚後_LowerArm鱗_鱗小_鱗7CP = new ColorP(X0Y0_脚後_LowerArm鱗_鱗小_鱗7, 脚後_LowerArm鱗_鱗小_鱗7CD, DisUnit, abj: true);
+    		X0Y0_脚後_LowerArm鱗_鱗小_鱗6CP = new ColorP(X0Y0_脚後_LowerArm鱗_鱗小_鱗6, 脚後_LowerArm鱗_鱗小_鱗6CD, DisUnit, abj: true);
+    		X0Y0_脚後_LowerArm鱗_鱗小_鱗5CP = new ColorP(X0Y0_脚後_LowerArm鱗_鱗小_鱗5, 脚後_LowerArm鱗_鱗小_鱗5CD, DisUnit, abj: true);
+    		X0Y0_脚後_LowerArm鱗_鱗小_鱗4CP = new ColorP(X0Y0_脚後_LowerArm鱗_鱗小_鱗4, 脚後_LowerArm鱗_鱗小_鱗4CD, DisUnit, abj: true);
+    		X0Y0_脚後_LowerArm鱗_鱗小_鱗3CP = new ColorP(X0Y0_脚後_LowerArm鱗_鱗小_鱗3, 脚後_LowerArm鱗_鱗小_鱗3CD, DisUnit, abj: true);
+    		X0Y0_脚後_LowerArm鱗_鱗小_鱗2CP = new ColorP(X0Y0_脚後_LowerArm鱗_鱗小_鱗2, 脚後_LowerArm鱗_鱗小_鱗2CD, DisUnit, abj: true);
+    		X0Y0_脚後_LowerArm鱗_鱗小_鱗1CP = new ColorP(X0Y0_脚後_LowerArm鱗_鱗小_鱗1, 脚後_LowerArm鱗_鱗小_鱗1CD, DisUnit, abj: true);
+    		X0Y0_脚後_LowerArm鱗_鱗大_鱗9CP = new ColorP(X0Y0_脚後_LowerArm鱗_鱗大_鱗9, 脚後_LowerArm鱗_鱗大_鱗9CD, DisUnit, abj: true);
+    		X0Y0_脚後_LowerArm鱗_鱗大_鱗8CP = new ColorP(X0Y0_脚後_LowerArm鱗_鱗大_鱗8, 脚後_LowerArm鱗_鱗大_鱗8CD, DisUnit, abj: true);
+    		X0Y0_脚後_LowerArm鱗_鱗大_鱗7CP = new ColorP(X0Y0_脚後_LowerArm鱗_鱗大_鱗7, 脚後_LowerArm鱗_鱗大_鱗7CD, DisUnit, abj: true);
+    		X0Y0_脚後_LowerArm鱗_鱗大_鱗6CP = new ColorP(X0Y0_脚後_LowerArm鱗_鱗大_鱗6, 脚後_LowerArm鱗_鱗大_鱗6CD, DisUnit, abj: true);
+    		X0Y0_脚後_LowerArm鱗_鱗大_鱗5CP = new ColorP(X0Y0_脚後_LowerArm鱗_鱗大_鱗5, 脚後_LowerArm鱗_鱗大_鱗5CD, DisUnit, abj: true);
+    		X0Y0_脚後_LowerArm鱗_鱗大_鱗4CP = new ColorP(X0Y0_脚後_LowerArm鱗_鱗大_鱗4, 脚後_LowerArm鱗_鱗大_鱗4CD, DisUnit, abj: true);
+    		X0Y0_脚後_LowerArm鱗_鱗大_鱗3CP = new ColorP(X0Y0_脚後_LowerArm鱗_鱗大_鱗3, 脚後_LowerArm鱗_鱗大_鱗3CD, DisUnit, abj: true);
+    		X0Y0_脚後_LowerArm鱗_鱗大_鱗2CP = new ColorP(X0Y0_脚後_LowerArm鱗_鱗大_鱗2, 脚後_LowerArm鱗_鱗大_鱗2CD, DisUnit, abj: true);
+    		X0Y0_脚後_LowerArm鱗_鱗大_鱗1CP = new ColorP(X0Y0_脚後_LowerArm鱗_鱗大_鱗1, 脚後_LowerArm鱗_鱗大_鱗1CD, DisUnit, abj: true);
+    		X0Y0_脚後_UpperArm鱗_鱗5CP = new ColorP(X0Y0_脚後_UpperArm鱗_鱗5, 脚後_UpperArm鱗_鱗5CD, DisUnit, abj: true);
+    		X0Y0_脚後_UpperArm鱗_鱗4CP = new ColorP(X0Y0_脚後_UpperArm鱗_鱗4, 脚後_UpperArm鱗_鱗4CD, DisUnit, abj: true);
+    		X0Y0_脚後_UpperArm鱗_鱗3CP = new ColorP(X0Y0_脚後_UpperArm鱗_鱗3, 脚後_UpperArm鱗_鱗3CD, DisUnit, abj: true);
+    		X0Y0_脚後_UpperArm鱗_鱗2CP = new ColorP(X0Y0_脚後_UpperArm鱗_鱗2, 脚後_UpperArm鱗_鱗2CD, DisUnit, abj: true);
+    		X0Y0_脚後_UpperArm鱗_鱗1CP = new ColorP(X0Y0_脚後_UpperArm鱗_鱗1, 脚後_UpperArm鱗_鱗1CD, DisUnit, abj: true);
     		X0Y0_脚後_輪_革CP = new ColorP(X0Y0_脚後_輪_革, 脚後_輪_革CD, DisUnit, abj: true);
     		X0Y0_脚後_輪_金具1CP = new ColorP(X0Y0_脚後_輪_金具1, 脚後_輪_金具1CD, DisUnit, abj: true);
     		X0Y0_脚後_輪_金具2CP = new ColorP(X0Y0_脚後_輪_金具2, 脚後_輪_金具2CD, DisUnit, abj: true);
@@ -7035,8 +7035,8 @@ namespace SlaveMatrix
     		X0Y0_頭_輪_金具3CP = new ColorP(X0Y0_頭_輪_金具3, 頭_輪_金具3CD, DisUnit, abj: true);
     		X0Y0_頭_輪_金具左CP = new ColorP(X0Y0_頭_輪_金具左, 頭_輪_金具左CD, DisUnit, abj: true);
     		X0Y0_頭_輪_金具右CP = new ColorP(X0Y0_頭_輪_金具右, 頭_輪_金具右CD, DisUnit, abj: true);
-    		X0Y0_脚前_上腕CP = new ColorP(X0Y0_脚前_上腕, 脚前_上腕CD, DisUnit, abj: true);
-    		X0Y0_脚前_下腕CP = new ColorP(X0Y0_脚前_下腕, 脚前_下腕CD, DisUnit, abj: true);
+    		X0Y0_脚前_UpperArmCP = new ColorP(X0Y0_脚前_UpperArm, 脚前_UpperArmCD, DisUnit, abj: true);
+    		X0Y0_脚前_LowerArmCP = new ColorP(X0Y0_脚前_LowerArm, 脚前_LowerArmCD, DisUnit, abj: true);
     		X0Y0_脚前_手_親指_爪CP = new ColorP(X0Y0_脚前_手_親指_爪, 脚前_手_親指_爪CD, DisUnit, abj: true);
     		X0Y0_脚前_手_手CP = new ColorP(X0Y0_脚前_手_手, 脚前_手_手CD, DisUnit, abj: true);
     		X0Y0_脚前_手_人指_指CP = new ColorP(X0Y0_脚前_手_人指_指, 脚前_手_人指_指CD, DisUnit, abj: true);
@@ -7069,29 +7069,29 @@ namespace SlaveMatrix
     		X0Y0_脚前_手_鱗_鱗3CP = new ColorP(X0Y0_脚前_手_鱗_鱗3, 脚前_手_鱗_鱗3CD, DisUnit, abj: true);
     		X0Y0_脚前_手_鱗_鱗2CP = new ColorP(X0Y0_脚前_手_鱗_鱗2, 脚前_手_鱗_鱗2CD, DisUnit, abj: true);
     		X0Y0_脚前_手_鱗_鱗1CP = new ColorP(X0Y0_脚前_手_鱗_鱗1, 脚前_手_鱗_鱗1CD, DisUnit, abj: true);
-    		X0Y0_脚前_下腕鱗_鱗小_鱗9CP = new ColorP(X0Y0_脚前_下腕鱗_鱗小_鱗9, 脚前_下腕鱗_鱗小_鱗9CD, DisUnit, abj: true);
-    		X0Y0_脚前_下腕鱗_鱗小_鱗8CP = new ColorP(X0Y0_脚前_下腕鱗_鱗小_鱗8, 脚前_下腕鱗_鱗小_鱗8CD, DisUnit, abj: true);
-    		X0Y0_脚前_下腕鱗_鱗小_鱗7CP = new ColorP(X0Y0_脚前_下腕鱗_鱗小_鱗7, 脚前_下腕鱗_鱗小_鱗7CD, DisUnit, abj: true);
-    		X0Y0_脚前_下腕鱗_鱗小_鱗6CP = new ColorP(X0Y0_脚前_下腕鱗_鱗小_鱗6, 脚前_下腕鱗_鱗小_鱗6CD, DisUnit, abj: true);
-    		X0Y0_脚前_下腕鱗_鱗小_鱗5CP = new ColorP(X0Y0_脚前_下腕鱗_鱗小_鱗5, 脚前_下腕鱗_鱗小_鱗5CD, DisUnit, abj: true);
-    		X0Y0_脚前_下腕鱗_鱗小_鱗4CP = new ColorP(X0Y0_脚前_下腕鱗_鱗小_鱗4, 脚前_下腕鱗_鱗小_鱗4CD, DisUnit, abj: true);
-    		X0Y0_脚前_下腕鱗_鱗小_鱗3CP = new ColorP(X0Y0_脚前_下腕鱗_鱗小_鱗3, 脚前_下腕鱗_鱗小_鱗3CD, DisUnit, abj: true);
-    		X0Y0_脚前_下腕鱗_鱗小_鱗2CP = new ColorP(X0Y0_脚前_下腕鱗_鱗小_鱗2, 脚前_下腕鱗_鱗小_鱗2CD, DisUnit, abj: true);
-    		X0Y0_脚前_下腕鱗_鱗小_鱗1CP = new ColorP(X0Y0_脚前_下腕鱗_鱗小_鱗1, 脚前_下腕鱗_鱗小_鱗1CD, DisUnit, abj: true);
-    		X0Y0_脚前_下腕鱗_鱗大_鱗9CP = new ColorP(X0Y0_脚前_下腕鱗_鱗大_鱗9, 脚前_下腕鱗_鱗大_鱗9CD, DisUnit, abj: true);
-    		X0Y0_脚前_下腕鱗_鱗大_鱗8CP = new ColorP(X0Y0_脚前_下腕鱗_鱗大_鱗8, 脚前_下腕鱗_鱗大_鱗8CD, DisUnit, abj: true);
-    		X0Y0_脚前_下腕鱗_鱗大_鱗7CP = new ColorP(X0Y0_脚前_下腕鱗_鱗大_鱗7, 脚前_下腕鱗_鱗大_鱗7CD, DisUnit, abj: true);
-    		X0Y0_脚前_下腕鱗_鱗大_鱗6CP = new ColorP(X0Y0_脚前_下腕鱗_鱗大_鱗6, 脚前_下腕鱗_鱗大_鱗6CD, DisUnit, abj: true);
-    		X0Y0_脚前_下腕鱗_鱗大_鱗5CP = new ColorP(X0Y0_脚前_下腕鱗_鱗大_鱗5, 脚前_下腕鱗_鱗大_鱗5CD, DisUnit, abj: true);
-    		X0Y0_脚前_下腕鱗_鱗大_鱗4CP = new ColorP(X0Y0_脚前_下腕鱗_鱗大_鱗4, 脚前_下腕鱗_鱗大_鱗4CD, DisUnit, abj: true);
-    		X0Y0_脚前_下腕鱗_鱗大_鱗3CP = new ColorP(X0Y0_脚前_下腕鱗_鱗大_鱗3, 脚前_下腕鱗_鱗大_鱗3CD, DisUnit, abj: true);
-    		X0Y0_脚前_下腕鱗_鱗大_鱗2CP = new ColorP(X0Y0_脚前_下腕鱗_鱗大_鱗2, 脚前_下腕鱗_鱗大_鱗2CD, DisUnit, abj: true);
-    		X0Y0_脚前_下腕鱗_鱗大_鱗1CP = new ColorP(X0Y0_脚前_下腕鱗_鱗大_鱗1, 脚前_下腕鱗_鱗大_鱗1CD, DisUnit, abj: true);
-    		X0Y0_脚前_上腕鱗_鱗5CP = new ColorP(X0Y0_脚前_上腕鱗_鱗5, 脚前_上腕鱗_鱗5CD, DisUnit, abj: true);
-    		X0Y0_脚前_上腕鱗_鱗4CP = new ColorP(X0Y0_脚前_上腕鱗_鱗4, 脚前_上腕鱗_鱗4CD, DisUnit, abj: true);
-    		X0Y0_脚前_上腕鱗_鱗3CP = new ColorP(X0Y0_脚前_上腕鱗_鱗3, 脚前_上腕鱗_鱗3CD, DisUnit, abj: true);
-    		X0Y0_脚前_上腕鱗_鱗2CP = new ColorP(X0Y0_脚前_上腕鱗_鱗2, 脚前_上腕鱗_鱗2CD, DisUnit, abj: true);
-    		X0Y0_脚前_上腕鱗_鱗1CP = new ColorP(X0Y0_脚前_上腕鱗_鱗1, 脚前_上腕鱗_鱗1CD, DisUnit, abj: true);
+    		X0Y0_脚前_LowerArm鱗_鱗小_鱗9CP = new ColorP(X0Y0_脚前_LowerArm鱗_鱗小_鱗9, 脚前_LowerArm鱗_鱗小_鱗9CD, DisUnit, abj: true);
+    		X0Y0_脚前_LowerArm鱗_鱗小_鱗8CP = new ColorP(X0Y0_脚前_LowerArm鱗_鱗小_鱗8, 脚前_LowerArm鱗_鱗小_鱗8CD, DisUnit, abj: true);
+    		X0Y0_脚前_LowerArm鱗_鱗小_鱗7CP = new ColorP(X0Y0_脚前_LowerArm鱗_鱗小_鱗7, 脚前_LowerArm鱗_鱗小_鱗7CD, DisUnit, abj: true);
+    		X0Y0_脚前_LowerArm鱗_鱗小_鱗6CP = new ColorP(X0Y0_脚前_LowerArm鱗_鱗小_鱗6, 脚前_LowerArm鱗_鱗小_鱗6CD, DisUnit, abj: true);
+    		X0Y0_脚前_LowerArm鱗_鱗小_鱗5CP = new ColorP(X0Y0_脚前_LowerArm鱗_鱗小_鱗5, 脚前_LowerArm鱗_鱗小_鱗5CD, DisUnit, abj: true);
+    		X0Y0_脚前_LowerArm鱗_鱗小_鱗4CP = new ColorP(X0Y0_脚前_LowerArm鱗_鱗小_鱗4, 脚前_LowerArm鱗_鱗小_鱗4CD, DisUnit, abj: true);
+    		X0Y0_脚前_LowerArm鱗_鱗小_鱗3CP = new ColorP(X0Y0_脚前_LowerArm鱗_鱗小_鱗3, 脚前_LowerArm鱗_鱗小_鱗3CD, DisUnit, abj: true);
+    		X0Y0_脚前_LowerArm鱗_鱗小_鱗2CP = new ColorP(X0Y0_脚前_LowerArm鱗_鱗小_鱗2, 脚前_LowerArm鱗_鱗小_鱗2CD, DisUnit, abj: true);
+    		X0Y0_脚前_LowerArm鱗_鱗小_鱗1CP = new ColorP(X0Y0_脚前_LowerArm鱗_鱗小_鱗1, 脚前_LowerArm鱗_鱗小_鱗1CD, DisUnit, abj: true);
+    		X0Y0_脚前_LowerArm鱗_鱗大_鱗9CP = new ColorP(X0Y0_脚前_LowerArm鱗_鱗大_鱗9, 脚前_LowerArm鱗_鱗大_鱗9CD, DisUnit, abj: true);
+    		X0Y0_脚前_LowerArm鱗_鱗大_鱗8CP = new ColorP(X0Y0_脚前_LowerArm鱗_鱗大_鱗8, 脚前_LowerArm鱗_鱗大_鱗8CD, DisUnit, abj: true);
+    		X0Y0_脚前_LowerArm鱗_鱗大_鱗7CP = new ColorP(X0Y0_脚前_LowerArm鱗_鱗大_鱗7, 脚前_LowerArm鱗_鱗大_鱗7CD, DisUnit, abj: true);
+    		X0Y0_脚前_LowerArm鱗_鱗大_鱗6CP = new ColorP(X0Y0_脚前_LowerArm鱗_鱗大_鱗6, 脚前_LowerArm鱗_鱗大_鱗6CD, DisUnit, abj: true);
+    		X0Y0_脚前_LowerArm鱗_鱗大_鱗5CP = new ColorP(X0Y0_脚前_LowerArm鱗_鱗大_鱗5, 脚前_LowerArm鱗_鱗大_鱗5CD, DisUnit, abj: true);
+    		X0Y0_脚前_LowerArm鱗_鱗大_鱗4CP = new ColorP(X0Y0_脚前_LowerArm鱗_鱗大_鱗4, 脚前_LowerArm鱗_鱗大_鱗4CD, DisUnit, abj: true);
+    		X0Y0_脚前_LowerArm鱗_鱗大_鱗3CP = new ColorP(X0Y0_脚前_LowerArm鱗_鱗大_鱗3, 脚前_LowerArm鱗_鱗大_鱗3CD, DisUnit, abj: true);
+    		X0Y0_脚前_LowerArm鱗_鱗大_鱗2CP = new ColorP(X0Y0_脚前_LowerArm鱗_鱗大_鱗2, 脚前_LowerArm鱗_鱗大_鱗2CD, DisUnit, abj: true);
+    		X0Y0_脚前_LowerArm鱗_鱗大_鱗1CP = new ColorP(X0Y0_脚前_LowerArm鱗_鱗大_鱗1, 脚前_LowerArm鱗_鱗大_鱗1CD, DisUnit, abj: true);
+    		X0Y0_脚前_UpperArm鱗_鱗5CP = new ColorP(X0Y0_脚前_UpperArm鱗_鱗5, 脚前_UpperArm鱗_鱗5CD, DisUnit, abj: true);
+    		X0Y0_脚前_UpperArm鱗_鱗4CP = new ColorP(X0Y0_脚前_UpperArm鱗_鱗4, 脚前_UpperArm鱗_鱗4CD, DisUnit, abj: true);
+    		X0Y0_脚前_UpperArm鱗_鱗3CP = new ColorP(X0Y0_脚前_UpperArm鱗_鱗3, 脚前_UpperArm鱗_鱗3CD, DisUnit, abj: true);
+    		X0Y0_脚前_UpperArm鱗_鱗2CP = new ColorP(X0Y0_脚前_UpperArm鱗_鱗2, 脚前_UpperArm鱗_鱗2CD, DisUnit, abj: true);
+    		X0Y0_脚前_UpperArm鱗_鱗1CP = new ColorP(X0Y0_脚前_UpperArm鱗_鱗1, 脚前_UpperArm鱗_鱗1CD, DisUnit, abj: true);
     		X0Y0_脚前_鰭_鰭膜1CP = new ColorP(X0Y0_脚前_鰭_鰭膜1, 脚前_鰭_鰭膜1CD, DisUnit, abj: true);
     		X0Y0_脚前_鰭_鰭条1CP = new ColorP(X0Y0_脚前_鰭_鰭条1, 脚前_鰭_鰭条1CD, DisUnit, abj: true);
     		X0Y0_脚前_鰭_鰭膜2CP = new ColorP(X0Y0_脚前_鰭_鰭膜2, 脚前_鰭_鰭膜2CD, DisUnit, abj: true);
@@ -7126,8 +7126,8 @@ namespace SlaveMatrix
     		Are.Draw(X0Y0_脚後_鰭_鰭膜2);
     		Are.Draw(X0Y0_脚後_鰭_鰭条2);
     		Are.Draw(X0Y0_脚後_鰭_鰭膜3);
-    		Are.Draw(X0Y0_脚後_上腕);
-    		Are.Draw(X0Y0_脚後_下腕);
+    		Are.Draw(X0Y0_脚後_UpperArm);
+    		Are.Draw(X0Y0_脚後_LowerArm);
     		Are.Draw(X0Y0_脚後_手_手);
     		Are.Draw(X0Y0_脚後_手_小指_指);
     		Are.Draw(X0Y0_脚後_手_小指_爪);
@@ -7160,29 +7160,29 @@ namespace SlaveMatrix
     		Are.Draw(X0Y0_脚後_手_鱗_鱗2);
     		Are.Draw(X0Y0_脚後_手_鱗_鱗1);
     		Are.Draw(X0Y0_脚後_手_親指_爪);
-    		Are.Draw(X0Y0_脚後_下腕鱗_鱗小_鱗9);
-    		Are.Draw(X0Y0_脚後_下腕鱗_鱗小_鱗8);
-    		Are.Draw(X0Y0_脚後_下腕鱗_鱗小_鱗7);
-    		Are.Draw(X0Y0_脚後_下腕鱗_鱗小_鱗6);
-    		Are.Draw(X0Y0_脚後_下腕鱗_鱗小_鱗5);
-    		Are.Draw(X0Y0_脚後_下腕鱗_鱗小_鱗4);
-    		Are.Draw(X0Y0_脚後_下腕鱗_鱗小_鱗3);
-    		Are.Draw(X0Y0_脚後_下腕鱗_鱗小_鱗2);
-    		Are.Draw(X0Y0_脚後_下腕鱗_鱗小_鱗1);
-    		Are.Draw(X0Y0_脚後_下腕鱗_鱗大_鱗9);
-    		Are.Draw(X0Y0_脚後_下腕鱗_鱗大_鱗8);
-    		Are.Draw(X0Y0_脚後_下腕鱗_鱗大_鱗7);
-    		Are.Draw(X0Y0_脚後_下腕鱗_鱗大_鱗6);
-    		Are.Draw(X0Y0_脚後_下腕鱗_鱗大_鱗5);
-    		Are.Draw(X0Y0_脚後_下腕鱗_鱗大_鱗4);
-    		Are.Draw(X0Y0_脚後_下腕鱗_鱗大_鱗3);
-    		Are.Draw(X0Y0_脚後_下腕鱗_鱗大_鱗2);
-    		Are.Draw(X0Y0_脚後_下腕鱗_鱗大_鱗1);
-    		Are.Draw(X0Y0_脚後_上腕鱗_鱗5);
-    		Are.Draw(X0Y0_脚後_上腕鱗_鱗4);
-    		Are.Draw(X0Y0_脚後_上腕鱗_鱗3);
-    		Are.Draw(X0Y0_脚後_上腕鱗_鱗2);
-    		Are.Draw(X0Y0_脚後_上腕鱗_鱗1);
+    		Are.Draw(X0Y0_脚後_LowerArm鱗_鱗小_鱗9);
+    		Are.Draw(X0Y0_脚後_LowerArm鱗_鱗小_鱗8);
+    		Are.Draw(X0Y0_脚後_LowerArm鱗_鱗小_鱗7);
+    		Are.Draw(X0Y0_脚後_LowerArm鱗_鱗小_鱗6);
+    		Are.Draw(X0Y0_脚後_LowerArm鱗_鱗小_鱗5);
+    		Are.Draw(X0Y0_脚後_LowerArm鱗_鱗小_鱗4);
+    		Are.Draw(X0Y0_脚後_LowerArm鱗_鱗小_鱗3);
+    		Are.Draw(X0Y0_脚後_LowerArm鱗_鱗小_鱗2);
+    		Are.Draw(X0Y0_脚後_LowerArm鱗_鱗小_鱗1);
+    		Are.Draw(X0Y0_脚後_LowerArm鱗_鱗大_鱗9);
+    		Are.Draw(X0Y0_脚後_LowerArm鱗_鱗大_鱗8);
+    		Are.Draw(X0Y0_脚後_LowerArm鱗_鱗大_鱗7);
+    		Are.Draw(X0Y0_脚後_LowerArm鱗_鱗大_鱗6);
+    		Are.Draw(X0Y0_脚後_LowerArm鱗_鱗大_鱗5);
+    		Are.Draw(X0Y0_脚後_LowerArm鱗_鱗大_鱗4);
+    		Are.Draw(X0Y0_脚後_LowerArm鱗_鱗大_鱗3);
+    		Are.Draw(X0Y0_脚後_LowerArm鱗_鱗大_鱗2);
+    		Are.Draw(X0Y0_脚後_LowerArm鱗_鱗大_鱗1);
+    		Are.Draw(X0Y0_脚後_UpperArm鱗_鱗5);
+    		Are.Draw(X0Y0_脚後_UpperArm鱗_鱗4);
+    		Are.Draw(X0Y0_脚後_UpperArm鱗_鱗3);
+    		Are.Draw(X0Y0_脚後_UpperArm鱗_鱗2);
+    		Are.Draw(X0Y0_脚後_UpperArm鱗_鱗1);
     		Are.Draw(X0Y0_脚後_輪_革);
     		Are.Draw(X0Y0_脚後_輪_金具1);
     		Are.Draw(X0Y0_脚後_輪_金具2);
@@ -7333,8 +7333,8 @@ namespace SlaveMatrix
     		Are.Draw(X0Y0_頭_輪_金具3);
     		Are.Draw(X0Y0_頭_輪_金具左);
     		Are.Draw(X0Y0_頭_輪_金具右);
-    		Are.Draw(X0Y0_脚前_上腕);
-    		Are.Draw(X0Y0_脚前_下腕);
+    		Are.Draw(X0Y0_脚前_UpperArm);
+    		Are.Draw(X0Y0_脚前_LowerArm);
     		Are.Draw(X0Y0_脚前_手_親指_爪);
     		Are.Draw(X0Y0_脚前_手_手);
     		Are.Draw(X0Y0_脚前_手_人指_指);
@@ -7367,29 +7367,29 @@ namespace SlaveMatrix
     		Are.Draw(X0Y0_脚前_手_鱗_鱗3);
     		Are.Draw(X0Y0_脚前_手_鱗_鱗2);
     		Are.Draw(X0Y0_脚前_手_鱗_鱗1);
-    		Are.Draw(X0Y0_脚前_下腕鱗_鱗小_鱗9);
-    		Are.Draw(X0Y0_脚前_下腕鱗_鱗小_鱗8);
-    		Are.Draw(X0Y0_脚前_下腕鱗_鱗小_鱗7);
-    		Are.Draw(X0Y0_脚前_下腕鱗_鱗小_鱗6);
-    		Are.Draw(X0Y0_脚前_下腕鱗_鱗小_鱗5);
-    		Are.Draw(X0Y0_脚前_下腕鱗_鱗小_鱗4);
-    		Are.Draw(X0Y0_脚前_下腕鱗_鱗小_鱗3);
-    		Are.Draw(X0Y0_脚前_下腕鱗_鱗小_鱗2);
-    		Are.Draw(X0Y0_脚前_下腕鱗_鱗小_鱗1);
-    		Are.Draw(X0Y0_脚前_下腕鱗_鱗大_鱗9);
-    		Are.Draw(X0Y0_脚前_下腕鱗_鱗大_鱗8);
-    		Are.Draw(X0Y0_脚前_下腕鱗_鱗大_鱗7);
-    		Are.Draw(X0Y0_脚前_下腕鱗_鱗大_鱗6);
-    		Are.Draw(X0Y0_脚前_下腕鱗_鱗大_鱗5);
-    		Are.Draw(X0Y0_脚前_下腕鱗_鱗大_鱗4);
-    		Are.Draw(X0Y0_脚前_下腕鱗_鱗大_鱗3);
-    		Are.Draw(X0Y0_脚前_下腕鱗_鱗大_鱗2);
-    		Are.Draw(X0Y0_脚前_下腕鱗_鱗大_鱗1);
-    		Are.Draw(X0Y0_脚前_上腕鱗_鱗5);
-    		Are.Draw(X0Y0_脚前_上腕鱗_鱗4);
-    		Are.Draw(X0Y0_脚前_上腕鱗_鱗3);
-    		Are.Draw(X0Y0_脚前_上腕鱗_鱗2);
-    		Are.Draw(X0Y0_脚前_上腕鱗_鱗1);
+    		Are.Draw(X0Y0_脚前_LowerArm鱗_鱗小_鱗9);
+    		Are.Draw(X0Y0_脚前_LowerArm鱗_鱗小_鱗8);
+    		Are.Draw(X0Y0_脚前_LowerArm鱗_鱗小_鱗7);
+    		Are.Draw(X0Y0_脚前_LowerArm鱗_鱗小_鱗6);
+    		Are.Draw(X0Y0_脚前_LowerArm鱗_鱗小_鱗5);
+    		Are.Draw(X0Y0_脚前_LowerArm鱗_鱗小_鱗4);
+    		Are.Draw(X0Y0_脚前_LowerArm鱗_鱗小_鱗3);
+    		Are.Draw(X0Y0_脚前_LowerArm鱗_鱗小_鱗2);
+    		Are.Draw(X0Y0_脚前_LowerArm鱗_鱗小_鱗1);
+    		Are.Draw(X0Y0_脚前_LowerArm鱗_鱗大_鱗9);
+    		Are.Draw(X0Y0_脚前_LowerArm鱗_鱗大_鱗8);
+    		Are.Draw(X0Y0_脚前_LowerArm鱗_鱗大_鱗7);
+    		Are.Draw(X0Y0_脚前_LowerArm鱗_鱗大_鱗6);
+    		Are.Draw(X0Y0_脚前_LowerArm鱗_鱗大_鱗5);
+    		Are.Draw(X0Y0_脚前_LowerArm鱗_鱗大_鱗4);
+    		Are.Draw(X0Y0_脚前_LowerArm鱗_鱗大_鱗3);
+    		Are.Draw(X0Y0_脚前_LowerArm鱗_鱗大_鱗2);
+    		Are.Draw(X0Y0_脚前_LowerArm鱗_鱗大_鱗1);
+    		Are.Draw(X0Y0_脚前_UpperArm鱗_鱗5);
+    		Are.Draw(X0Y0_脚前_UpperArm鱗_鱗4);
+    		Are.Draw(X0Y0_脚前_UpperArm鱗_鱗3);
+    		Are.Draw(X0Y0_脚前_UpperArm鱗_鱗2);
+    		Are.Draw(X0Y0_脚前_UpperArm鱗_鱗1);
     		Are.Draw(X0Y0_脚前_鰭_鰭膜1);
     		Are.Draw(X0Y0_脚前_鰭_鰭条1);
     		Are.Draw(X0Y0_脚前_鰭_鰭膜2);
@@ -7415,8 +7415,8 @@ namespace SlaveMatrix
     	public override void SetAngle0()
     	{
     		double num = (右 ? (-1.0) : 1.0);
-    		X0Y0_脚後_上腕.AngleBase = num * -125.0;
-    		X0Y0_脚後_下腕.AngleBase = num * 8.0;
+    		X0Y0_脚後_UpperArm.AngleBase = num * -125.0;
+    		X0Y0_脚後_LowerArm.AngleBase = num * 8.0;
     		X0Y0_脚後_手_手.AngleBase = num * 36.0;
     		X0Y0_脚後_手_小指_指.AngleBase = num * 19.0;
     		X0Y0_脚後_手_小指_爪.AngleBase = 0.0;
@@ -7448,8 +7448,8 @@ namespace SlaveMatrix
     		X0Y0_頭_口膜_口膜1.AngleBase = num * -35.0;
     		X0Y0_頭_下顎_眼下_眼下.AngleBase = 0.0;
     		X0Y0_頭_上顎_眼下_眼下.AngleBase = 0.0;
-    		X0Y0_脚前_上腕.AngleBase = num * -105.0;
-    		X0Y0_脚前_下腕.AngleBase = num * 8.0;
+    		X0Y0_脚前_UpperArm.AngleBase = num * -105.0;
+    		X0Y0_脚前_LowerArm.AngleBase = num * 8.0;
     		X0Y0_脚前_手_親指_爪.AngleBase = num * -18.0;
     		X0Y0_脚前_手_手.AngleBase = num * 36.0;
     		X0Y0_脚前_手_人指_指.AngleBase = num * 19.0;
@@ -7501,8 +7501,8 @@ namespace SlaveMatrix
     		X0Y0_脚後_鰭_鰭膜2CP.Update();
     		X0Y0_脚後_鰭_鰭条2CP.Update();
     		X0Y0_脚後_鰭_鰭膜3CP.Update();
-    		X0Y0_脚後_上腕CP.Update();
-    		X0Y0_脚後_下腕CP.Update();
+    		X0Y0_脚後_UpperArmCP.Update();
+    		X0Y0_脚後_LowerArmCP.Update();
     		X0Y0_脚後_手_手CP.Update();
     		X0Y0_脚後_手_小指_指CP.Update();
     		X0Y0_脚後_手_小指_爪CP.Update();
@@ -7535,29 +7535,29 @@ namespace SlaveMatrix
     		X0Y0_脚後_手_鱗_鱗2CP.Update();
     		X0Y0_脚後_手_鱗_鱗1CP.Update();
     		X0Y0_脚後_手_親指_爪CP.Update();
-    		X0Y0_脚後_下腕鱗_鱗小_鱗9CP.Update();
-    		X0Y0_脚後_下腕鱗_鱗小_鱗8CP.Update();
-    		X0Y0_脚後_下腕鱗_鱗小_鱗7CP.Update();
-    		X0Y0_脚後_下腕鱗_鱗小_鱗6CP.Update();
-    		X0Y0_脚後_下腕鱗_鱗小_鱗5CP.Update();
-    		X0Y0_脚後_下腕鱗_鱗小_鱗4CP.Update();
-    		X0Y0_脚後_下腕鱗_鱗小_鱗3CP.Update();
-    		X0Y0_脚後_下腕鱗_鱗小_鱗2CP.Update();
-    		X0Y0_脚後_下腕鱗_鱗小_鱗1CP.Update();
-    		X0Y0_脚後_下腕鱗_鱗大_鱗9CP.Update();
-    		X0Y0_脚後_下腕鱗_鱗大_鱗8CP.Update();
-    		X0Y0_脚後_下腕鱗_鱗大_鱗7CP.Update();
-    		X0Y0_脚後_下腕鱗_鱗大_鱗6CP.Update();
-    		X0Y0_脚後_下腕鱗_鱗大_鱗5CP.Update();
-    		X0Y0_脚後_下腕鱗_鱗大_鱗4CP.Update();
-    		X0Y0_脚後_下腕鱗_鱗大_鱗3CP.Update();
-    		X0Y0_脚後_下腕鱗_鱗大_鱗2CP.Update();
-    		X0Y0_脚後_下腕鱗_鱗大_鱗1CP.Update();
-    		X0Y0_脚後_上腕鱗_鱗5CP.Update();
-    		X0Y0_脚後_上腕鱗_鱗4CP.Update();
-    		X0Y0_脚後_上腕鱗_鱗3CP.Update();
-    		X0Y0_脚後_上腕鱗_鱗2CP.Update();
-    		X0Y0_脚後_上腕鱗_鱗1CP.Update();
+    		X0Y0_脚後_LowerArm鱗_鱗小_鱗9CP.Update();
+    		X0Y0_脚後_LowerArm鱗_鱗小_鱗8CP.Update();
+    		X0Y0_脚後_LowerArm鱗_鱗小_鱗7CP.Update();
+    		X0Y0_脚後_LowerArm鱗_鱗小_鱗6CP.Update();
+    		X0Y0_脚後_LowerArm鱗_鱗小_鱗5CP.Update();
+    		X0Y0_脚後_LowerArm鱗_鱗小_鱗4CP.Update();
+    		X0Y0_脚後_LowerArm鱗_鱗小_鱗3CP.Update();
+    		X0Y0_脚後_LowerArm鱗_鱗小_鱗2CP.Update();
+    		X0Y0_脚後_LowerArm鱗_鱗小_鱗1CP.Update();
+    		X0Y0_脚後_LowerArm鱗_鱗大_鱗9CP.Update();
+    		X0Y0_脚後_LowerArm鱗_鱗大_鱗8CP.Update();
+    		X0Y0_脚後_LowerArm鱗_鱗大_鱗7CP.Update();
+    		X0Y0_脚後_LowerArm鱗_鱗大_鱗6CP.Update();
+    		X0Y0_脚後_LowerArm鱗_鱗大_鱗5CP.Update();
+    		X0Y0_脚後_LowerArm鱗_鱗大_鱗4CP.Update();
+    		X0Y0_脚後_LowerArm鱗_鱗大_鱗3CP.Update();
+    		X0Y0_脚後_LowerArm鱗_鱗大_鱗2CP.Update();
+    		X0Y0_脚後_LowerArm鱗_鱗大_鱗1CP.Update();
+    		X0Y0_脚後_UpperArm鱗_鱗5CP.Update();
+    		X0Y0_脚後_UpperArm鱗_鱗4CP.Update();
+    		X0Y0_脚後_UpperArm鱗_鱗3CP.Update();
+    		X0Y0_脚後_UpperArm鱗_鱗2CP.Update();
+    		X0Y0_脚後_UpperArm鱗_鱗1CP.Update();
     		X0Y0_脚後_輪_革CP.Update();
     		X0Y0_脚後_輪_金具1CP.Update();
     		X0Y0_脚後_輪_金具2CP.Update();
@@ -7706,8 +7706,8 @@ namespace SlaveMatrix
     		X0Y0_頭_輪_金具3CP.Update();
     		X0Y0_頭_輪_金具左CP.Update();
     		X0Y0_頭_輪_金具右CP.Update();
-    		X0Y0_脚前_上腕CP.Update();
-    		X0Y0_脚前_下腕CP.Update();
+    		X0Y0_脚前_UpperArmCP.Update();
+    		X0Y0_脚前_LowerArmCP.Update();
     		X0Y0_脚前_手_親指_爪CP.Update();
     		X0Y0_脚前_手_手CP.Update();
     		X0Y0_脚前_手_人指_指CP.Update();
@@ -7740,29 +7740,29 @@ namespace SlaveMatrix
     		X0Y0_脚前_手_鱗_鱗3CP.Update();
     		X0Y0_脚前_手_鱗_鱗2CP.Update();
     		X0Y0_脚前_手_鱗_鱗1CP.Update();
-    		X0Y0_脚前_下腕鱗_鱗小_鱗9CP.Update();
-    		X0Y0_脚前_下腕鱗_鱗小_鱗8CP.Update();
-    		X0Y0_脚前_下腕鱗_鱗小_鱗7CP.Update();
-    		X0Y0_脚前_下腕鱗_鱗小_鱗6CP.Update();
-    		X0Y0_脚前_下腕鱗_鱗小_鱗5CP.Update();
-    		X0Y0_脚前_下腕鱗_鱗小_鱗4CP.Update();
-    		X0Y0_脚前_下腕鱗_鱗小_鱗3CP.Update();
-    		X0Y0_脚前_下腕鱗_鱗小_鱗2CP.Update();
-    		X0Y0_脚前_下腕鱗_鱗小_鱗1CP.Update();
-    		X0Y0_脚前_下腕鱗_鱗大_鱗9CP.Update();
-    		X0Y0_脚前_下腕鱗_鱗大_鱗8CP.Update();
-    		X0Y0_脚前_下腕鱗_鱗大_鱗7CP.Update();
-    		X0Y0_脚前_下腕鱗_鱗大_鱗6CP.Update();
-    		X0Y0_脚前_下腕鱗_鱗大_鱗5CP.Update();
-    		X0Y0_脚前_下腕鱗_鱗大_鱗4CP.Update();
-    		X0Y0_脚前_下腕鱗_鱗大_鱗3CP.Update();
-    		X0Y0_脚前_下腕鱗_鱗大_鱗2CP.Update();
-    		X0Y0_脚前_下腕鱗_鱗大_鱗1CP.Update();
-    		X0Y0_脚前_上腕鱗_鱗5CP.Update();
-    		X0Y0_脚前_上腕鱗_鱗4CP.Update();
-    		X0Y0_脚前_上腕鱗_鱗3CP.Update();
-    		X0Y0_脚前_上腕鱗_鱗2CP.Update();
-    		X0Y0_脚前_上腕鱗_鱗1CP.Update();
+    		X0Y0_脚前_LowerArm鱗_鱗小_鱗9CP.Update();
+    		X0Y0_脚前_LowerArm鱗_鱗小_鱗8CP.Update();
+    		X0Y0_脚前_LowerArm鱗_鱗小_鱗7CP.Update();
+    		X0Y0_脚前_LowerArm鱗_鱗小_鱗6CP.Update();
+    		X0Y0_脚前_LowerArm鱗_鱗小_鱗5CP.Update();
+    		X0Y0_脚前_LowerArm鱗_鱗小_鱗4CP.Update();
+    		X0Y0_脚前_LowerArm鱗_鱗小_鱗3CP.Update();
+    		X0Y0_脚前_LowerArm鱗_鱗小_鱗2CP.Update();
+    		X0Y0_脚前_LowerArm鱗_鱗小_鱗1CP.Update();
+    		X0Y0_脚前_LowerArm鱗_鱗大_鱗9CP.Update();
+    		X0Y0_脚前_LowerArm鱗_鱗大_鱗8CP.Update();
+    		X0Y0_脚前_LowerArm鱗_鱗大_鱗7CP.Update();
+    		X0Y0_脚前_LowerArm鱗_鱗大_鱗6CP.Update();
+    		X0Y0_脚前_LowerArm鱗_鱗大_鱗5CP.Update();
+    		X0Y0_脚前_LowerArm鱗_鱗大_鱗4CP.Update();
+    		X0Y0_脚前_LowerArm鱗_鱗大_鱗3CP.Update();
+    		X0Y0_脚前_LowerArm鱗_鱗大_鱗2CP.Update();
+    		X0Y0_脚前_LowerArm鱗_鱗大_鱗1CP.Update();
+    		X0Y0_脚前_UpperArm鱗_鱗5CP.Update();
+    		X0Y0_脚前_UpperArm鱗_鱗4CP.Update();
+    		X0Y0_脚前_UpperArm鱗_鱗3CP.Update();
+    		X0Y0_脚前_UpperArm鱗_鱗2CP.Update();
+    		X0Y0_脚前_UpperArm鱗_鱗1CP.Update();
     		X0Y0_脚前_鰭_鰭膜1CP.Update();
     		X0Y0_脚前_鰭_鰭条1CP.Update();
     		X0Y0_脚前_鰭_鰭膜2CP.Update();
@@ -7808,8 +7808,8 @@ namespace SlaveMatrix
     		脚後_鰭_鰭膜2CD = new ColorD(ref Col.Black, ref 体配色.膜O);
     		脚後_鰭_鰭条2CD = new ColorD(ref Col.Black, ref 体配色.爪O);
     		脚後_鰭_鰭膜3CD = new ColorD(ref Col.Black, ref 体配色.膜O);
-    		脚後_上腕CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		脚後_下腕CD = new ColorD(ref Col.Black, ref 体配色.体0O);
+    		脚後_UpperArmCD = new ColorD(ref Col.Black, ref 体配色.体0O);
+    		脚後_LowerArmCD = new ColorD(ref Col.Black, ref 体配色.体0O);
     		脚後_手_手CD = new ColorD(ref Col.Black, ref 体配色.体0O);
     		脚後_手_小指_指CD = new ColorD(ref Col.Black, ref 体配色.体0O);
     		脚後_手_小指_爪CD = new ColorD(ref Col.Black, ref 体配色.爪O);
@@ -7842,29 +7842,29 @@ namespace SlaveMatrix
     		脚後_手_鱗_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
     		脚後_手_鱗_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
     		脚後_手_親指_爪CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		脚後_下腕鱗_鱗小_鱗9CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		脚後_下腕鱗_鱗小_鱗8CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		脚後_下腕鱗_鱗小_鱗7CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		脚後_下腕鱗_鱗小_鱗6CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		脚後_下腕鱗_鱗小_鱗5CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		脚後_下腕鱗_鱗小_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		脚後_下腕鱗_鱗小_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		脚後_下腕鱗_鱗小_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		脚後_下腕鱗_鱗小_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		脚後_下腕鱗_鱗大_鱗9CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		脚後_下腕鱗_鱗大_鱗8CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		脚後_下腕鱗_鱗大_鱗7CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		脚後_下腕鱗_鱗大_鱗6CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		脚後_下腕鱗_鱗大_鱗5CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		脚後_下腕鱗_鱗大_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		脚後_下腕鱗_鱗大_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		脚後_下腕鱗_鱗大_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		脚後_下腕鱗_鱗大_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		脚後_上腕鱗_鱗5CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		脚後_上腕鱗_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		脚後_上腕鱗_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		脚後_上腕鱗_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		脚後_上腕鱗_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		脚後_LowerArm鱗_鱗小_鱗9CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
+    		脚後_LowerArm鱗_鱗小_鱗8CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
+    		脚後_LowerArm鱗_鱗小_鱗7CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
+    		脚後_LowerArm鱗_鱗小_鱗6CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
+    		脚後_LowerArm鱗_鱗小_鱗5CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
+    		脚後_LowerArm鱗_鱗小_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
+    		脚後_LowerArm鱗_鱗小_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
+    		脚後_LowerArm鱗_鱗小_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
+    		脚後_LowerArm鱗_鱗小_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
+    		脚後_LowerArm鱗_鱗大_鱗9CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		脚後_LowerArm鱗_鱗大_鱗8CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		脚後_LowerArm鱗_鱗大_鱗7CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		脚後_LowerArm鱗_鱗大_鱗6CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		脚後_LowerArm鱗_鱗大_鱗5CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		脚後_LowerArm鱗_鱗大_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		脚後_LowerArm鱗_鱗大_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		脚後_LowerArm鱗_鱗大_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		脚後_LowerArm鱗_鱗大_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		脚後_UpperArm鱗_鱗5CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		脚後_UpperArm鱗_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		脚後_UpperArm鱗_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		脚後_UpperArm鱗_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		脚後_UpperArm鱗_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
     		脚後_輪_革CD = new ColorD();
     		脚後_輪_金具1CD = new ColorD();
     		脚後_輪_金具2CD = new ColorD();
@@ -8013,8 +8013,8 @@ namespace SlaveMatrix
     		頭_輪_金具3CD = new ColorD();
     		頭_輪_金具左CD = new ColorD();
     		頭_輪_金具右CD = new ColorD();
-    		脚前_上腕CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		脚前_下腕CD = new ColorD(ref Col.Black, ref 体配色.体0O);
+    		脚前_UpperArmCD = new ColorD(ref Col.Black, ref 体配色.体0O);
+    		脚前_LowerArmCD = new ColorD(ref Col.Black, ref 体配色.体0O);
     		脚前_手_親指_爪CD = new ColorD(ref Col.Black, ref 体配色.爪O);
     		脚前_手_手CD = new ColorD(ref Col.Black, ref 体配色.体0O);
     		脚前_手_人指_指CD = new ColorD(ref Col.Black, ref 体配色.体0O);
@@ -8047,29 +8047,29 @@ namespace SlaveMatrix
     		脚前_手_鱗_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
     		脚前_手_鱗_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
     		脚前_手_鱗_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		脚前_下腕鱗_鱗小_鱗9CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		脚前_下腕鱗_鱗小_鱗8CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		脚前_下腕鱗_鱗小_鱗7CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		脚前_下腕鱗_鱗小_鱗6CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		脚前_下腕鱗_鱗小_鱗5CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		脚前_下腕鱗_鱗小_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		脚前_下腕鱗_鱗小_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		脚前_下腕鱗_鱗小_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		脚前_下腕鱗_鱗小_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		脚前_下腕鱗_鱗大_鱗9CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		脚前_下腕鱗_鱗大_鱗8CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		脚前_下腕鱗_鱗大_鱗7CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		脚前_下腕鱗_鱗大_鱗6CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		脚前_下腕鱗_鱗大_鱗5CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		脚前_下腕鱗_鱗大_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		脚前_下腕鱗_鱗大_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		脚前_下腕鱗_鱗大_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		脚前_下腕鱗_鱗大_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		脚前_上腕鱗_鱗5CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		脚前_上腕鱗_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		脚前_上腕鱗_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		脚前_上腕鱗_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		脚前_上腕鱗_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		脚前_LowerArm鱗_鱗小_鱗9CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
+    		脚前_LowerArm鱗_鱗小_鱗8CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
+    		脚前_LowerArm鱗_鱗小_鱗7CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
+    		脚前_LowerArm鱗_鱗小_鱗6CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
+    		脚前_LowerArm鱗_鱗小_鱗5CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
+    		脚前_LowerArm鱗_鱗小_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
+    		脚前_LowerArm鱗_鱗小_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
+    		脚前_LowerArm鱗_鱗小_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
+    		脚前_LowerArm鱗_鱗小_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
+    		脚前_LowerArm鱗_鱗大_鱗9CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		脚前_LowerArm鱗_鱗大_鱗8CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		脚前_LowerArm鱗_鱗大_鱗7CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		脚前_LowerArm鱗_鱗大_鱗6CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		脚前_LowerArm鱗_鱗大_鱗5CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		脚前_LowerArm鱗_鱗大_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		脚前_LowerArm鱗_鱗大_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		脚前_LowerArm鱗_鱗大_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		脚前_LowerArm鱗_鱗大_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		脚前_UpperArm鱗_鱗5CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		脚前_UpperArm鱗_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		脚前_UpperArm鱗_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		脚前_UpperArm鱗_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		脚前_UpperArm鱗_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
     		脚前_鰭_鰭膜1CD = new ColorD(ref Col.Black, ref 体配色.膜O);
     		脚前_鰭_鰭条1CD = new ColorD(ref Col.Black, ref 体配色.爪O);
     		脚前_鰭_鰭膜2CD = new ColorD(ref Col.Black, ref 体配色.膜O);
@@ -8090,8 +8090,8 @@ namespace SlaveMatrix
     		脚後_鰭_鰭膜2CD = new ColorD(ref Col.Black, ref 体配色.膜O);
     		脚後_鰭_鰭条2CD = new ColorD(ref Col.Black, ref 体配色.爪O);
     		脚後_鰭_鰭膜3CD = new ColorD(ref Col.Black, ref 体配色.膜O);
-    		脚後_上腕CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		脚後_下腕CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		脚後_UpperArmCD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		脚後_LowerArmCD = new ColorD(ref Col.Black, ref 体配色.刺青O);
     		脚後_手_手CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
     		脚後_手_小指_指CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
     		脚後_手_小指_爪CD = new ColorD(ref Col.Black, ref 体配色.爪O);
@@ -8124,29 +8124,29 @@ namespace SlaveMatrix
     		脚後_手_鱗_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
     		脚後_手_鱗_鱗1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
     		脚後_手_親指_爪CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		脚後_下腕鱗_鱗小_鱗9CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		脚後_下腕鱗_鱗小_鱗8CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		脚後_下腕鱗_鱗小_鱗7CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		脚後_下腕鱗_鱗小_鱗6CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		脚後_下腕鱗_鱗小_鱗5CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		脚後_下腕鱗_鱗小_鱗4CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		脚後_下腕鱗_鱗小_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		脚後_下腕鱗_鱗小_鱗2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		脚後_下腕鱗_鱗小_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		脚後_下腕鱗_鱗大_鱗9CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		脚後_下腕鱗_鱗大_鱗8CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		脚後_下腕鱗_鱗大_鱗7CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		脚後_下腕鱗_鱗大_鱗6CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		脚後_下腕鱗_鱗大_鱗5CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		脚後_下腕鱗_鱗大_鱗4CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		脚後_下腕鱗_鱗大_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		脚後_下腕鱗_鱗大_鱗2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		脚後_下腕鱗_鱗大_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		脚後_上腕鱗_鱗5CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		脚後_上腕鱗_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		脚後_上腕鱗_鱗3CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		脚後_上腕鱗_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		脚後_上腕鱗_鱗1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		脚後_LowerArm鱗_鱗小_鱗9CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
+    		脚後_LowerArm鱗_鱗小_鱗8CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		脚後_LowerArm鱗_鱗小_鱗7CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
+    		脚後_LowerArm鱗_鱗小_鱗6CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		脚後_LowerArm鱗_鱗小_鱗5CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
+    		脚後_LowerArm鱗_鱗小_鱗4CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		脚後_LowerArm鱗_鱗小_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
+    		脚後_LowerArm鱗_鱗小_鱗2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		脚後_LowerArm鱗_鱗小_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
+    		脚後_LowerArm鱗_鱗大_鱗9CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		脚後_LowerArm鱗_鱗大_鱗8CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		脚後_LowerArm鱗_鱗大_鱗7CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		脚後_LowerArm鱗_鱗大_鱗6CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		脚後_LowerArm鱗_鱗大_鱗5CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		脚後_LowerArm鱗_鱗大_鱗4CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		脚後_LowerArm鱗_鱗大_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		脚後_LowerArm鱗_鱗大_鱗2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		脚後_LowerArm鱗_鱗大_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		脚後_UpperArm鱗_鱗5CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		脚後_UpperArm鱗_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		脚後_UpperArm鱗_鱗3CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		脚後_UpperArm鱗_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		脚後_UpperArm鱗_鱗1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
     		脚後_輪_革CD = new ColorD();
     		脚後_輪_金具1CD = new ColorD();
     		脚後_輪_金具2CD = new ColorD();
@@ -8295,8 +8295,8 @@ namespace SlaveMatrix
     		頭_輪_金具3CD = new ColorD();
     		頭_輪_金具左CD = new ColorD();
     		頭_輪_金具右CD = new ColorD();
-    		脚前_上腕CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		脚前_下腕CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		脚前_UpperArmCD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		脚前_LowerArmCD = new ColorD(ref Col.Black, ref 体配色.刺青O);
     		脚前_手_親指_爪CD = new ColorD(ref Col.Black, ref 体配色.爪O);
     		脚前_手_手CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
     		脚前_手_人指_指CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
@@ -8329,29 +8329,29 @@ namespace SlaveMatrix
     		脚前_手_鱗_鱗3CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
     		脚前_手_鱗_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
     		脚前_手_鱗_鱗1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		脚前_下腕鱗_鱗小_鱗9CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		脚前_下腕鱗_鱗小_鱗8CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		脚前_下腕鱗_鱗小_鱗7CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		脚前_下腕鱗_鱗小_鱗6CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		脚前_下腕鱗_鱗小_鱗5CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		脚前_下腕鱗_鱗小_鱗4CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		脚前_下腕鱗_鱗小_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		脚前_下腕鱗_鱗小_鱗2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		脚前_下腕鱗_鱗小_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		脚前_下腕鱗_鱗大_鱗9CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		脚前_下腕鱗_鱗大_鱗8CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		脚前_下腕鱗_鱗大_鱗7CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		脚前_下腕鱗_鱗大_鱗6CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		脚前_下腕鱗_鱗大_鱗5CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		脚前_下腕鱗_鱗大_鱗4CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		脚前_下腕鱗_鱗大_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		脚前_下腕鱗_鱗大_鱗2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		脚前_下腕鱗_鱗大_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		脚前_上腕鱗_鱗5CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		脚前_上腕鱗_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		脚前_上腕鱗_鱗3CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		脚前_上腕鱗_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		脚前_上腕鱗_鱗1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		脚前_LowerArm鱗_鱗小_鱗9CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
+    		脚前_LowerArm鱗_鱗小_鱗8CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		脚前_LowerArm鱗_鱗小_鱗7CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
+    		脚前_LowerArm鱗_鱗小_鱗6CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		脚前_LowerArm鱗_鱗小_鱗5CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
+    		脚前_LowerArm鱗_鱗小_鱗4CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		脚前_LowerArm鱗_鱗小_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
+    		脚前_LowerArm鱗_鱗小_鱗2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		脚前_LowerArm鱗_鱗小_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
+    		脚前_LowerArm鱗_鱗大_鱗9CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		脚前_LowerArm鱗_鱗大_鱗8CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		脚前_LowerArm鱗_鱗大_鱗7CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		脚前_LowerArm鱗_鱗大_鱗6CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		脚前_LowerArm鱗_鱗大_鱗5CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		脚前_LowerArm鱗_鱗大_鱗4CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		脚前_LowerArm鱗_鱗大_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		脚前_LowerArm鱗_鱗大_鱗2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		脚前_LowerArm鱗_鱗大_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		脚前_UpperArm鱗_鱗5CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		脚前_UpperArm鱗_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		脚前_UpperArm鱗_鱗3CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		脚前_UpperArm鱗_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		脚前_UpperArm鱗_鱗1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
     		脚前_鰭_鰭膜1CD = new ColorD(ref Col.Black, ref 体配色.膜O);
     		脚前_鰭_鰭条1CD = new ColorD(ref Col.Black, ref 体配色.爪O);
     		脚前_鰭_鰭膜2CD = new ColorD(ref Col.Black, ref 体配色.膜O);
@@ -8372,8 +8372,8 @@ namespace SlaveMatrix
     		脚後_鰭_鰭膜2CD = new ColorD(ref Col.Black, ref 体配色.膜O);
     		脚後_鰭_鰭条2CD = new ColorD(ref Col.Black, ref 体配色.爪O);
     		脚後_鰭_鰭膜3CD = new ColorD(ref Col.Black, ref 体配色.膜O);
-    		脚後_上腕CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		脚後_下腕CD = new ColorD(ref Col.Black, ref 体配色.体0O);
+    		脚後_UpperArmCD = new ColorD(ref Col.Black, ref 体配色.体0O);
+    		脚後_LowerArmCD = new ColorD(ref Col.Black, ref 体配色.体0O);
     		脚後_手_手CD = new ColorD(ref Col.Black, ref 体配色.体0O);
     		脚後_手_小指_指CD = new ColorD(ref Col.Black, ref 体配色.体0O);
     		脚後_手_小指_爪CD = new ColorD(ref Col.Black, ref 体配色.爪O);
@@ -8406,29 +8406,29 @@ namespace SlaveMatrix
     		脚後_手_鱗_鱗2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
     		脚後_手_鱗_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
     		脚後_手_親指_爪CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		脚後_下腕鱗_鱗小_鱗9CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		脚後_下腕鱗_鱗小_鱗8CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		脚後_下腕鱗_鱗小_鱗7CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		脚後_下腕鱗_鱗小_鱗6CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		脚後_下腕鱗_鱗小_鱗5CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		脚後_下腕鱗_鱗小_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		脚後_下腕鱗_鱗小_鱗3CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		脚後_下腕鱗_鱗小_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		脚後_下腕鱗_鱗小_鱗1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		脚後_下腕鱗_鱗大_鱗9CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		脚後_下腕鱗_鱗大_鱗8CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		脚後_下腕鱗_鱗大_鱗7CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		脚後_下腕鱗_鱗大_鱗6CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		脚後_下腕鱗_鱗大_鱗5CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		脚後_下腕鱗_鱗大_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		脚後_下腕鱗_鱗大_鱗3CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		脚後_下腕鱗_鱗大_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		脚後_下腕鱗_鱗大_鱗1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		脚後_上腕鱗_鱗5CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		脚後_上腕鱗_鱗4CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		脚後_上腕鱗_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		脚後_上腕鱗_鱗2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		脚後_上腕鱗_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		脚後_LowerArm鱗_鱗小_鱗9CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		脚後_LowerArm鱗_鱗小_鱗8CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
+    		脚後_LowerArm鱗_鱗小_鱗7CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		脚後_LowerArm鱗_鱗小_鱗6CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
+    		脚後_LowerArm鱗_鱗小_鱗5CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		脚後_LowerArm鱗_鱗小_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
+    		脚後_LowerArm鱗_鱗小_鱗3CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		脚後_LowerArm鱗_鱗小_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
+    		脚後_LowerArm鱗_鱗小_鱗1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		脚後_LowerArm鱗_鱗大_鱗9CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		脚後_LowerArm鱗_鱗大_鱗8CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		脚後_LowerArm鱗_鱗大_鱗7CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		脚後_LowerArm鱗_鱗大_鱗6CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		脚後_LowerArm鱗_鱗大_鱗5CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		脚後_LowerArm鱗_鱗大_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		脚後_LowerArm鱗_鱗大_鱗3CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		脚後_LowerArm鱗_鱗大_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		脚後_LowerArm鱗_鱗大_鱗1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		脚後_UpperArm鱗_鱗5CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		脚後_UpperArm鱗_鱗4CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		脚後_UpperArm鱗_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		脚後_UpperArm鱗_鱗2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		脚後_UpperArm鱗_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
     		脚後_輪_革CD = new ColorD();
     		脚後_輪_金具1CD = new ColorD();
     		脚後_輪_金具2CD = new ColorD();
@@ -8577,8 +8577,8 @@ namespace SlaveMatrix
     		頭_輪_金具3CD = new ColorD();
     		頭_輪_金具左CD = new ColorD();
     		頭_輪_金具右CD = new ColorD();
-    		脚前_上腕CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		脚前_下腕CD = new ColorD(ref Col.Black, ref 体配色.体0O);
+    		脚前_UpperArmCD = new ColorD(ref Col.Black, ref 体配色.体0O);
+    		脚前_LowerArmCD = new ColorD(ref Col.Black, ref 体配色.体0O);
     		脚前_手_親指_爪CD = new ColorD(ref Col.Black, ref 体配色.爪O);
     		脚前_手_手CD = new ColorD(ref Col.Black, ref 体配色.体0O);
     		脚前_手_人指_指CD = new ColorD(ref Col.Black, ref 体配色.体0O);
@@ -8611,29 +8611,29 @@ namespace SlaveMatrix
     		脚前_手_鱗_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
     		脚前_手_鱗_鱗2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
     		脚前_手_鱗_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		脚前_下腕鱗_鱗小_鱗9CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		脚前_下腕鱗_鱗小_鱗8CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		脚前_下腕鱗_鱗小_鱗7CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		脚前_下腕鱗_鱗小_鱗6CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		脚前_下腕鱗_鱗小_鱗5CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		脚前_下腕鱗_鱗小_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		脚前_下腕鱗_鱗小_鱗3CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		脚前_下腕鱗_鱗小_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		脚前_下腕鱗_鱗小_鱗1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		脚前_下腕鱗_鱗大_鱗9CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		脚前_下腕鱗_鱗大_鱗8CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		脚前_下腕鱗_鱗大_鱗7CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		脚前_下腕鱗_鱗大_鱗6CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		脚前_下腕鱗_鱗大_鱗5CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		脚前_下腕鱗_鱗大_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		脚前_下腕鱗_鱗大_鱗3CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		脚前_下腕鱗_鱗大_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		脚前_下腕鱗_鱗大_鱗1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		脚前_上腕鱗_鱗5CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		脚前_上腕鱗_鱗4CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		脚前_上腕鱗_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		脚前_上腕鱗_鱗2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		脚前_上腕鱗_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		脚前_LowerArm鱗_鱗小_鱗9CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		脚前_LowerArm鱗_鱗小_鱗8CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
+    		脚前_LowerArm鱗_鱗小_鱗7CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		脚前_LowerArm鱗_鱗小_鱗6CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
+    		脚前_LowerArm鱗_鱗小_鱗5CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		脚前_LowerArm鱗_鱗小_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
+    		脚前_LowerArm鱗_鱗小_鱗3CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		脚前_LowerArm鱗_鱗小_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
+    		脚前_LowerArm鱗_鱗小_鱗1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		脚前_LowerArm鱗_鱗大_鱗9CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		脚前_LowerArm鱗_鱗大_鱗8CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		脚前_LowerArm鱗_鱗大_鱗7CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		脚前_LowerArm鱗_鱗大_鱗6CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		脚前_LowerArm鱗_鱗大_鱗5CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		脚前_LowerArm鱗_鱗大_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		脚前_LowerArm鱗_鱗大_鱗3CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		脚前_LowerArm鱗_鱗大_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		脚前_LowerArm鱗_鱗大_鱗1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		脚前_UpperArm鱗_鱗5CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		脚前_UpperArm鱗_鱗4CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		脚前_UpperArm鱗_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		脚前_UpperArm鱗_鱗2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		脚前_UpperArm鱗_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
     		脚前_鰭_鰭膜1CD = new ColorD(ref Col.Black, ref 体配色.膜O);
     		脚前_鰭_鰭条1CD = new ColorD(ref Col.Black, ref 体配色.爪O);
     		脚前_鰭_鰭膜2CD = new ColorD(ref Col.Black, ref 体配色.膜O);

@@ -2938,8 +2938,8 @@ namespace SlaveMatrix
     				double num5 = (double)(num - num2) * 17.0;
     				e.角度B += num5;
     				触手_犬 obj = (触手_犬)e;
-    				obj.X0Y0_脚前_上腕.AngleBase -= num5;
-    				obj.X0Y0_脚後_上腕.AngleBase -= num5;
+    				obj.X0Y0_脚前_UpperArm.AngleBase -= num5;
+    				obj.X0Y0_脚後_UpperArm.AngleBase -= num5;
     			}
     			else
     			{
@@ -2962,8 +2962,8 @@ namespace SlaveMatrix
     			double num8 = (double)(num - num2) * -17.0;
     			e.角度B += num8;
     			触手_犬 obj2 = (触手_犬)e;
-    			obj2.X0Y0_脚前_上腕.AngleBase -= num8;
-    			obj2.X0Y0_脚後_上腕.AngleBase -= num8;
+    			obj2.X0Y0_脚前_UpperArm.AngleBase -= num8;
+    			obj2.X0Y0_脚後_UpperArm.AngleBase -= num8;
     		}
     		else
     		{
@@ -4418,34 +4418,34 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public static void 腕_人左(this Cha Cha, int n, double u1, double u2, double u3, double u4, double 肩角度B, double 上腕角度B, double 下腕角度B, double 手角度B, double 上腕尺度XC, double 下腕尺度XC, double 手尺度XC, double 下腕尺度C, double 手尺度C, bool 上腕外線, bool 下腕外線, bool 下腕反転Y, int 手Yi, bool 前後)
+    	public static void 腕_人左(this Cha Cha, int n, double u1, double u2, double u3, double u4, double 肩角度B, double UpperArm角度B, double LowerArm角度B, double 手角度B, double UpperArm尺度XC, double LowerArm尺度XC, double 手尺度XC, double LowerArm尺度C, double 手尺度C, bool UpperArm外線, bool LowerArm外線, bool LowerArm反転Y, int 手Yi, bool 前後)
     	{
-    		腕人 腕人2 = Cha.Bod.腕人左[n];
+    		Arm人 腕人2 = Cha.Bod.Arm人左[n];
     		腕人2.Shoulder.SetAngle0();
     		腕人2.Shoulder.角度B = 肩角度B + u1;
-    		if (腕人2.上腕 != null)
+    		if (腕人2.UpperArm != null)
     		{
-    			腕人2.上腕.肘部_外線 = 上腕外線;
-    			腕人2.上腕.尺度XC = 上腕尺度XC;
-    			腕人2.上腕.角度B = 上腕角度B + u2;
-    			if (腕人2.下腕 != null)
+    			腕人2.UpperArm.肘部_外線 = UpperArm外線;
+    			腕人2.UpperArm.尺度XC = UpperArm尺度XC;
+    			腕人2.UpperArm.角度B = UpperArm角度B + u2;
+    			if (腕人2.LowerArm != null)
     			{
     				Cha.Bod.腕前後(右: false, n, 前後);
-    				腕人2.下腕.反転Y = false;
-    				腕人2.下腕.肘部_外線 = 下腕外線;
-    				腕人2.下腕.尺度XC = 下腕尺度XC;
-    				腕人2.下腕.尺度C = 下腕尺度C;
-    				腕人2.下腕.角度B = 下腕角度B + u3;
-    				腕人2.下腕.反転Y = 下腕反転Y;
-    				腕人2.下腕.鎖1.反転Y = 下腕反転Y;
-    				if (腕人2.下腕.虫鎌_接続 != null)
+    				腕人2.LowerArm.反転Y = false;
+    				腕人2.LowerArm.肘部_外線 = LowerArm外線;
+    				腕人2.LowerArm.尺度XC = LowerArm尺度XC;
+    				腕人2.LowerArm.尺度C = LowerArm尺度C;
+    				腕人2.LowerArm.角度B = LowerArm角度B + u3;
+    				腕人2.LowerArm.反転Y = LowerArm反転Y;
+    				腕人2.LowerArm.鎖1.反転Y = LowerArm反転Y;
+    				if (腕人2.LowerArm.虫鎌_接続 != null)
     				{
-    					Ele[] 虫鎌_接続 = 腕人2.下腕.虫鎌_接続;
+    					Ele[] 虫鎌_接続 = 腕人2.LowerArm.虫鎌_接続;
     					foreach (Ele obj in 虫鎌_接続)
     					{
-    						obj.尺度XC = 下腕尺度XC;
-    						obj.尺度C = 下腕尺度C;
-    						obj.反転Y = 下腕反転Y;
+    						obj.尺度XC = LowerArm尺度XC;
+    						obj.尺度C = LowerArm尺度C;
+    						obj.反転Y = LowerArm反転Y;
     					}
     				}
     				if (腕人2.手 != null)
@@ -4456,7 +4456,7 @@ namespace SlaveMatrix
     					if (手Yi == 11)
     					{
     						腕人2.手.Yi = 3;
-    						bool flag = 腕人2.下腕.植性1_通常_花弁_花弁_表示 || 腕人2.下腕.植性1_欠損_花弁_花弁_表示;
+    						bool flag = 腕人2.LowerArm.植性1_通常_花弁_花弁_表示 || 腕人2.LowerArm.植性1_欠損_花弁_花弁_表示;
     						腕人2.手.角度B -= (flag ? 15.0 : 0.0);
     						腕人2.手.人指_人指3_表示 = false;
     						腕人2.手.中指_中指3_表示 = false;
@@ -4507,34 +4507,34 @@ namespace SlaveMatrix
     		腕人2.Shoulder.重複角度処理();
     	}
 
-    	public static void 腕_人右(this Cha Cha, int n, double u1, double u2, double u3, double u4, double 肩角度B, double 上腕角度B, double 下腕角度B, double 手角度B, double 上腕尺度XC, double 下腕尺度XC, double 手尺度XC, double 下腕尺度C, double 手尺度C, bool 上腕外線, bool 下腕外線, bool 下腕反転Y, int 手Yi, bool 前後)
+    	public static void 腕_人右(this Cha Cha, int n, double u1, double u2, double u3, double u4, double 肩角度B, double UpperArm角度B, double LowerArm角度B, double 手角度B, double UpperArm尺度XC, double LowerArm尺度XC, double 手尺度XC, double LowerArm尺度C, double 手尺度C, bool UpperArm外線, bool LowerArm外線, bool LowerArm反転Y, int 手Yi, bool 前後)
     	{
-    		腕人 腕人2 = Cha.Bod.腕人右[n];
+    		Arm人 腕人2 = Cha.Bod.Arm人右[n];
     		腕人2.Shoulder.SetAngle0();
     		腕人2.Shoulder.角度B = 0.0 - 肩角度B + (0.0 - u1);
-    		if (腕人2.上腕 != null)
+    		if (腕人2.UpperArm != null)
     		{
-    			腕人2.上腕.肘部_外線 = 上腕外線;
-    			腕人2.上腕.尺度XC = 上腕尺度XC;
-    			腕人2.上腕.角度B = 0.0 - 上腕角度B + (0.0 - u2);
-    			if (腕人2.下腕 != null)
+    			腕人2.UpperArm.肘部_外線 = UpperArm外線;
+    			腕人2.UpperArm.尺度XC = UpperArm尺度XC;
+    			腕人2.UpperArm.角度B = 0.0 - UpperArm角度B + (0.0 - u2);
+    			if (腕人2.LowerArm != null)
     			{
     				Cha.Bod.腕前後(右: true, n, 前後);
-    				腕人2.下腕.反転Y = false;
-    				腕人2.下腕.肘部_外線 = 下腕外線;
-    				腕人2.下腕.尺度XC = 下腕尺度XC;
-    				腕人2.下腕.尺度C = 下腕尺度C;
-    				腕人2.下腕.角度B = 0.0 - 下腕角度B + (0.0 - u3);
-    				腕人2.下腕.反転Y = 下腕反転Y;
-    				腕人2.下腕.鎖1.反転Y = 下腕反転Y;
-    				if (腕人2.下腕.虫鎌_接続 != null)
+    				腕人2.LowerArm.反転Y = false;
+    				腕人2.LowerArm.肘部_外線 = LowerArm外線;
+    				腕人2.LowerArm.尺度XC = LowerArm尺度XC;
+    				腕人2.LowerArm.尺度C = LowerArm尺度C;
+    				腕人2.LowerArm.角度B = 0.0 - LowerArm角度B + (0.0 - u3);
+    				腕人2.LowerArm.反転Y = LowerArm反転Y;
+    				腕人2.LowerArm.鎖1.反転Y = LowerArm反転Y;
+    				if (腕人2.LowerArm.虫鎌_接続 != null)
     				{
-    					Ele[] 虫鎌_接続 = 腕人2.下腕.虫鎌_接続;
+    					Ele[] 虫鎌_接続 = 腕人2.LowerArm.虫鎌_接続;
     					foreach (Ele obj in 虫鎌_接続)
     					{
-    						obj.尺度XC = 下腕尺度XC;
-    						obj.尺度C = 下腕尺度C;
-    						obj.反転Y = 下腕反転Y;
+    						obj.尺度XC = LowerArm尺度XC;
+    						obj.尺度C = LowerArm尺度C;
+    						obj.反転Y = LowerArm反転Y;
     					}
     				}
     				if (腕人2.手 != null)
@@ -4545,7 +4545,7 @@ namespace SlaveMatrix
     					if (手Yi == 11)
     					{
     						腕人2.手.Yi = 3;
-    						bool flag = 腕人2.下腕.植性1_通常_花弁_花弁_表示 || 腕人2.下腕.植性1_欠損_花弁_花弁_表示;
+    						bool flag = 腕人2.LowerArm.植性1_通常_花弁_花弁_表示 || 腕人2.LowerArm.植性1_欠損_花弁_花弁_表示;
     						腕人2.手.角度B -= (flag ? (-15.0) : 0.0);
     						腕人2.手.人指_人指3_表示 = false;
     						腕人2.手.中指_中指3_表示 = false;
@@ -4598,196 +4598,196 @@ namespace SlaveMatrix
 
     	public static void 腕_人_腕置き左(this Cha Cha, int n, double u1, double u2, double u3, double u4)
     	{
-    		Cha.腕_人左(n, u1, u2, u3, u4, 0.0, -30.0, 130.0, 0.0, 0.95, 1.0, 1.0, 1.0, 1.0, 上腕外線: true, 下腕外線: false, 下腕反転Y: false, 0, 前後: false);
+    		Cha.腕_人左(n, u1, u2, u3, u4, 0.0, -30.0, 130.0, 0.0, 0.95, 1.0, 1.0, 1.0, 1.0, UpperArm外線: true, LowerArm外線: false, LowerArm反転Y: false, 0, 前後: false);
     	}
 
     	public static void 腕_人_腕置き右(this Cha Cha, int n, double u1, double u2, double u3, double u4)
     	{
-    		Cha.腕_人右(n, u1, u2, u3, u4, 0.0, -30.0, 130.0, 0.0, 0.95, 1.0, 1.0, 1.0, 1.0, 上腕外線: true, 下腕外線: false, 下腕反転Y: false, 0, 前後: false);
+    		Cha.腕_人右(n, u1, u2, u3, u4, 0.0, -30.0, 130.0, 0.0, 0.95, 1.0, 1.0, 1.0, 1.0, UpperArm外線: true, LowerArm外線: false, LowerArm反転Y: false, 0, 前後: false);
     	}
 
     	public static void 腕_人_胸庇い左(this Cha Cha, int n, double u1, double u2, double u3, double u4)
     	{
-    		Cha.腕_人左(n, u1, u2, u3, u4, 0.0, -80.0, -230.0, 35.0, 1.0, 1.0, 1.0, 1.0, 1.0, 上腕外線: true, 下腕外線: false, 下腕反転Y: true, 1, 前後: false);
+    		Cha.腕_人左(n, u1, u2, u3, u4, 0.0, -80.0, -230.0, 35.0, 1.0, 1.0, 1.0, 1.0, 1.0, UpperArm外線: true, LowerArm外線: false, LowerArm反転Y: true, 1, 前後: false);
     	}
 
     	public static void 腕_人_胸庇い右(this Cha Cha, int n, double u1, double u2, double u3, double u4)
     	{
-    		Cha.腕_人右(n, u1, u2, u3, u4, 0.0, -80.0, -230.0, 35.0, 1.0, 1.0, 1.0, 1.0, 1.0, 上腕外線: true, 下腕外線: false, 下腕反転Y: true, 1, 前後: false);
+    		Cha.腕_人右(n, u1, u2, u3, u4, 0.0, -80.0, -230.0, 35.0, 1.0, 1.0, 1.0, 1.0, 1.0, UpperArm外線: true, LowerArm外線: false, LowerArm反転Y: true, 1, 前後: false);
     	}
 
     	public static void 腕_人_体支え左(this Cha Cha, int n, double u1, double u2, double u3, double u4)
     	{
-    		Cha.腕_人左(n, u1, u2, u3, u4, 0.0, -60.0, 360.0, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 上腕外線: false, 下腕外線: false, 下腕反転Y: true, 2, 前後: true);
+    		Cha.腕_人左(n, u1, u2, u3, u4, 0.0, -60.0, 360.0, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0, UpperArm外線: false, LowerArm外線: false, LowerArm反転Y: true, 2, 前後: true);
     	}
 
     	public static void 腕_人_体支え右(this Cha Cha, int n, double u1, double u2, double u3, double u4)
     	{
-    		Cha.腕_人右(n, u1, u2, u3, u4, 0.0, -60.0, 360.0, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 上腕外線: false, 下腕外線: false, 下腕反転Y: true, 2, 前後: true);
+    		Cha.腕_人右(n, u1, u2, u3, u4, 0.0, -60.0, 360.0, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0, UpperArm外線: false, LowerArm外線: false, LowerArm反転Y: true, 2, 前後: true);
     	}
 
     	public static void 腕_人_胸乗せ左(this Cha Cha, int n, double u1, double u2, double u3, double u4)
     	{
-    		Cha.腕_人左(n, u1, u2, u3, u4, 5.0, -80.0, 185.0, 45.0, 1.0, 0.85, 1.0, 1.0, 1.0, 上腕外線: true, 下腕外線: false, 下腕反転Y: false, 3, 前後: false);
+    		Cha.腕_人左(n, u1, u2, u3, u4, 5.0, -80.0, 185.0, 45.0, 1.0, 0.85, 1.0, 1.0, 1.0, UpperArm外線: true, LowerArm外線: false, LowerArm反転Y: false, 3, 前後: false);
     	}
 
     	public static void 腕_人_胸乗せ右(this Cha Cha, int n, double u1, double u2, double u3, double u4)
     	{
-    		Cha.腕_人右(n, u1, u2, u3, u4, 5.0, -80.0, 185.0, 45.0, 1.0, 0.85, 1.0, 1.0, 1.0, 上腕外線: true, 下腕外線: false, 下腕反転Y: false, 3, 前後: false);
+    		Cha.腕_人右(n, u1, u2, u3, u4, 5.0, -80.0, 185.0, 45.0, 1.0, 0.85, 1.0, 1.0, 1.0, UpperArm外線: true, LowerArm外線: false, LowerArm反転Y: false, 3, 前後: false);
     	}
 
     	public static void 腕_人_顔隠し左(this Cha Cha, int n, double u1, double u2, double u3, double u4)
     	{
-    		Cha.腕_人左(n, u1, u2, u3, u4, 10.0, -109.0, -202.0, -13.0, 0.8, 0.95, 1.0, 1.1, 1.0, 上腕外線: true, 下腕外線: true, 下腕反転Y: true, 4, 前後: false);
+    		Cha.腕_人左(n, u1, u2, u3, u4, 10.0, -109.0, -202.0, -13.0, 0.8, 0.95, 1.0, 1.1, 1.0, UpperArm外線: true, LowerArm外線: true, LowerArm反転Y: true, 4, 前後: false);
     	}
 
     	public static void 腕_人_顔隠し右(this Cha Cha, int n, double u1, double u2, double u3, double u4)
     	{
-    		Cha.腕_人右(n, u1, u2, u3, u4, 10.0, -109.0, -202.0, -13.0, 0.8, 0.95, 1.0, 1.1, 1.0, 上腕外線: true, 下腕外線: true, 下腕反転Y: true, 4, 前後: false);
+    		Cha.腕_人右(n, u1, u2, u3, u4, 10.0, -109.0, -202.0, -13.0, 0.8, 0.95, 1.0, 1.1, 1.0, UpperArm外線: true, LowerArm外線: true, LowerArm反転Y: true, 4, 前後: false);
     	}
 
     	public static void 腕_人_チラ見左(this Cha Cha, int n, double u1, double u2, double u3, double u4)
     	{
-    		Cha.腕_人左(n, u1, u2, u3, u4, 10.0, -109.0, -202.0, -6.0, 1.0, 0.9, 1.0, 1.1, 1.0, 上腕外線: true, 下腕外線: true, 下腕反転Y: true, 10, 前後: false);
+    		Cha.腕_人左(n, u1, u2, u3, u4, 10.0, -109.0, -202.0, -6.0, 1.0, 0.9, 1.0, 1.1, 1.0, UpperArm外線: true, LowerArm外線: true, LowerArm反転Y: true, 10, 前後: false);
     	}
 
     	public static void 腕_人_チラ見右(this Cha Cha, int n, double u1, double u2, double u3, double u4)
     	{
-    		Cha.腕_人右(n, u1, u2, u3, u4, 10.0, -109.0, -202.0, -6.0, 1.0, 0.9, 1.0, 1.1, 1.0, 上腕外線: true, 下腕外線: true, 下腕反転Y: true, 10, 前後: false);
+    		Cha.腕_人右(n, u1, u2, u3, u4, 10.0, -109.0, -202.0, -6.0, 1.0, 0.9, 1.0, 1.1, 1.0, UpperArm外線: true, LowerArm外線: true, LowerArm反転Y: true, 10, 前後: false);
     	}
 
     	public static void 腕_人_指咥え左(this Cha Cha, int n, double u1, double u2, double u3, double u4)
     	{
-    		Cha.腕_人左(n, u1, u2, u3, u4, 10.0, -102.0, -194.0, 39.0, 1.0, 1.0, 1.0, 1.0, 1.0, 上腕外線: true, 下腕外線: false, 下腕反転Y: true, 5, 前後: false);
+    		Cha.腕_人左(n, u1, u2, u3, u4, 10.0, -102.0, -194.0, 39.0, 1.0, 1.0, 1.0, 1.0, 1.0, UpperArm外線: true, LowerArm外線: false, LowerArm反転Y: true, 5, 前後: false);
     	}
 
     	public static void 腕_人_指咥え右(this Cha Cha, int n, double u1, double u2, double u3, double u4)
     	{
-    		Cha.腕_人右(n, u1, u2, u3, u4, 10.0, -102.0, -194.0, 39.0, 1.0, 1.0, 1.0, 1.0, 1.0, 上腕外線: true, 下腕外線: false, 下腕反転Y: true, 5, 前後: false);
+    		Cha.腕_人右(n, u1, u2, u3, u4, 10.0, -102.0, -194.0, 39.0, 1.0, 1.0, 1.0, 1.0, 1.0, UpperArm外線: true, LowerArm外線: false, LowerArm反転Y: true, 5, 前後: false);
     	}
 
     	public static void 腕_人_腕下げ左(this Cha Cha, int n, double u1, double u2, double u3, double u4)
     	{
-    		Cha.腕_人左(n, u1, u2, u3, u4, -5.0, -75.0, 350.0, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 上腕外線: false, 下腕外線: false, 下腕反転Y: true, 6, 前後: true);
+    		Cha.腕_人左(n, u1, u2, u3, u4, -5.0, -75.0, 350.0, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0, UpperArm外線: false, LowerArm外線: false, LowerArm反転Y: true, 6, 前後: true);
     	}
 
     	public static void 腕_人_腕下げ右(this Cha Cha, int n, double u1, double u2, double u3, double u4)
     	{
-    		Cha.腕_人右(n, u1, u2, u3, u4, -5.0, -75.0, 350.0, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 上腕外線: false, 下腕外線: false, 下腕反転Y: true, 6, 前後: true);
+    		Cha.腕_人右(n, u1, u2, u3, u4, -5.0, -75.0, 350.0, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0, UpperArm外線: false, LowerArm外線: false, LowerArm反転Y: true, 6, 前後: true);
     	}
 
     	public static void 腕_人_股隠し左(this Cha Cha, int n, double u1, double u2, double u3, double u4)
     	{
-    		Cha.腕_人左(n, u1, u2, u3, u4, 0.0, -91.0, -331.0, 23.0, 1.0, 1.0, 1.0, 1.0, 1.0, 上腕外線: true, 下腕外線: false, 下腕反転Y: true, 4, 前後: false);
+    		Cha.腕_人左(n, u1, u2, u3, u4, 0.0, -91.0, -331.0, 23.0, 1.0, 1.0, 1.0, 1.0, 1.0, UpperArm外線: true, LowerArm外線: false, LowerArm反転Y: true, 4, 前後: false);
     	}
 
     	public static void 腕_人_股隠し右(this Cha Cha, int n, double u1, double u2, double u3, double u4)
     	{
-    		Cha.腕_人右(n, u1, u2, u3, u4, 0.0, -91.0, -331.0, 23.0, 1.0, 1.0, 1.0, 1.0, 1.0, 上腕外線: true, 下腕外線: false, 下腕反転Y: true, 4, 前後: false);
+    		Cha.腕_人右(n, u1, u2, u3, u4, 0.0, -91.0, -331.0, 23.0, 1.0, 1.0, 1.0, 1.0, 1.0, UpperArm外線: true, LowerArm外線: false, LowerArm反転Y: true, 4, 前後: false);
     	}
 
     	public static void 腕_人_開帳左(this Cha Cha, int n, double u1, double u2, double u3, double u4)
     	{
-    		Cha.腕_人左(n, u1, u2, u3, u4, 10.0, -101.0, -330.0, 33.0, 1.0, 1.0, 1.0, 1.0, 1.0, 上腕外線: true, 下腕外線: false, 下腕反転Y: true, 10, 前後: false);
+    		Cha.腕_人左(n, u1, u2, u3, u4, 10.0, -101.0, -330.0, 33.0, 1.0, 1.0, 1.0, 1.0, 1.0, UpperArm外線: true, LowerArm外線: false, LowerArm反転Y: true, 10, 前後: false);
     	}
 
     	public static void 腕_人_開帳右(this Cha Cha, int n, double u1, double u2, double u3, double u4)
     	{
-    		Cha.腕_人右(n, u1, u2, u3, u4, 10.0, -101.0, -330.0, 33.0, 1.0, 1.0, 1.0, 1.0, 1.0, 上腕外線: true, 下腕外線: false, 下腕反転Y: true, 10, 前後: false);
+    		Cha.腕_人右(n, u1, u2, u3, u4, 10.0, -101.0, -330.0, 33.0, 1.0, 1.0, 1.0, 1.0, 1.0, UpperArm外線: true, LowerArm外線: false, LowerArm反転Y: true, 10, 前後: false);
     	}
 
     	public static void 腕_人_口押さえ1左(this Cha Cha, int n, double u1, double u2, double u3, double u4)
     	{
-    		Cha.腕_人左(n, u1, u2, u3, u4, 10.0, -102.0, -194.0, 39.0, 1.0, 1.0, 1.0, 1.0, 1.0, 上腕外線: true, 下腕外線: false, 下腕反転Y: true, 4, 前後: false);
+    		Cha.腕_人左(n, u1, u2, u3, u4, 10.0, -102.0, -194.0, 39.0, 1.0, 1.0, 1.0, 1.0, 1.0, UpperArm外線: true, LowerArm外線: false, LowerArm反転Y: true, 4, 前後: false);
     	}
 
     	public static void 腕_人_口押さえ1右(this Cha Cha, int n, double u1, double u2, double u3, double u4)
     	{
-    		Cha.腕_人右(n, u1, u2, u3, u4, 10.0, -102.0, -194.0, 39.0, 1.0, 1.0, 1.0, 1.0, 1.0, 上腕外線: true, 下腕外線: false, 下腕反転Y: true, 4, 前後: false);
+    		Cha.腕_人右(n, u1, u2, u3, u4, 10.0, -102.0, -194.0, 39.0, 1.0, 1.0, 1.0, 1.0, 1.0, UpperArm外線: true, LowerArm外線: false, LowerArm反転Y: true, 4, 前後: false);
     	}
 
     	public static void 腕_人_口押さえ2左(this Cha Cha, int n, double u1, double u2, double u3, double u4)
     	{
     		Cha.Bod.腕左右前後 = false;
-    		Cha.腕_人左(n, u1, u2, u3, u4, 10.0, -102.0, -194.0, 39.0, 0.9, 0.9, 1.0, 1.0, 1.0, 上腕外線: true, 下腕外線: false, 下腕反転Y: true, 4, 前後: false);
+    		Cha.腕_人左(n, u1, u2, u3, u4, 10.0, -102.0, -194.0, 39.0, 0.9, 0.9, 1.0, 1.0, 1.0, UpperArm外線: true, LowerArm外線: false, LowerArm反転Y: true, 4, 前後: false);
     	}
 
     	public static void 腕_人_口押さえ2右(this Cha Cha, int n, double u1, double u2, double u3, double u4)
     	{
     		Cha.Bod.腕左右前後 = true;
-    		Cha.腕_人右(n, u1, u2, u3, u4, 10.0, -102.0, -194.0, 39.0, 0.9, 0.9, 1.0, 1.0, 1.0, 上腕外線: true, 下腕外線: false, 下腕反転Y: true, 4, 前後: false);
+    		Cha.腕_人右(n, u1, u2, u3, u4, 10.0, -102.0, -194.0, 39.0, 0.9, 0.9, 1.0, 1.0, 1.0, UpperArm外線: true, LowerArm外線: false, LowerArm反転Y: true, 4, 前後: false);
     	}
 
     	public static void 腕_人_口押さえ3左(this Cha Cha, int n, double u1, double u2, double u3, double u4)
     	{
     		Cha.Bod.腕左右前後 = false;
-    		Cha.腕_人左(n, u1, u2, u3, u4, 10.0, -102.0, -204.0, -19.0, 1.0, 1.0, 1.0, 1.0, 1.0, 上腕外線: true, 下腕外線: false, 下腕反転Y: true, 4, 前後: false);
+    		Cha.腕_人左(n, u1, u2, u3, u4, 10.0, -102.0, -204.0, -19.0, 1.0, 1.0, 1.0, 1.0, 1.0, UpperArm外線: true, LowerArm外線: false, LowerArm反転Y: true, 4, 前後: false);
     	}
 
     	public static void 腕_人_口押さえ3右(this Cha Cha, int n, double u1, double u2, double u3, double u4)
     	{
     		Cha.Bod.腕左右前後 = true;
-    		Cha.腕_人右(n, u1, u2, u3, u4, 10.0, -102.0, -204.0, -19.0, 1.0, 1.0, 1.0, 1.0, 1.0, 上腕外線: true, 下腕外線: false, 下腕反転Y: true, 4, 前後: false);
+    		Cha.腕_人右(n, u1, u2, u3, u4, 10.0, -102.0, -204.0, -19.0, 1.0, 1.0, 1.0, 1.0, 1.0, UpperArm外線: true, LowerArm外線: false, LowerArm反転Y: true, 4, 前後: false);
     	}
 
     	public static void 腕_人_脇見せ左(this Cha Cha, int n, double u1, double u2, double u3, double u4)
     	{
-    		Cha.腕_人左(n, u1, u2, u3, u4, 20.0, 25.0, 135.0, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 上腕外線: true, 下腕外線: false, 下腕反転Y: false, 0, 前後: true);
+    		Cha.腕_人左(n, u1, u2, u3, u4, 20.0, 25.0, 135.0, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0, UpperArm外線: true, LowerArm外線: false, LowerArm反転Y: false, 0, 前後: true);
     	}
 
     	public static void 腕_人_脇見せ右(this Cha Cha, int n, double u1, double u2, double u3, double u4)
     	{
-    		Cha.腕_人右(n, u1, u2, u3, u4, 20.0, 25.0, 135.0, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 上腕外線: true, 下腕外線: false, 下腕反転Y: false, 0, 前後: true);
+    		Cha.腕_人右(n, u1, u2, u3, u4, 20.0, 25.0, 135.0, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0, UpperArm外線: true, LowerArm外線: false, LowerArm反転Y: false, 0, 前後: true);
     	}
 
     	public static void 腕_人_腰手当左(this Cha Cha, int n, double u1, double u2, double u3, double u4)
     	{
-    		Cha.腕_人左(n, u1, u2, u3, u4, 0.0, -43.0, 90.0, -30.0, 1.0, 0.85, 0.8, 1.0, 1.0, 上腕外線: true, 下腕外線: false, 下腕反転Y: true, 7, 前後: false);
+    		Cha.腕_人左(n, u1, u2, u3, u4, 0.0, -43.0, 90.0, -30.0, 1.0, 0.85, 0.8, 1.0, 1.0, UpperArm外線: true, LowerArm外線: false, LowerArm反転Y: true, 7, 前後: false);
     	}
 
     	public static void 腕_人_腰手当右(this Cha Cha, int n, double u1, double u2, double u3, double u4)
     	{
-    		Cha.腕_人右(n, u1, u2, u3, u4, 0.0, -43.0, 90.0, -30.0, 1.0, 0.85, 0.8, 1.0, 1.0, 上腕外線: true, 下腕外線: false, 下腕反転Y: true, 7, 前後: false);
+    		Cha.腕_人右(n, u1, u2, u3, u4, 0.0, -43.0, 90.0, -30.0, 1.0, 0.85, 0.8, 1.0, 1.0, UpperArm外線: true, LowerArm外線: false, LowerArm反転Y: true, 7, 前後: false);
     	}
 
     	public static void 腕_人_ピース左(this Cha Cha, int n, double u1, double u2, double u3, double u4)
     	{
-    		Cha.腕_人左(n, u1, u2, u3, u4, 0.0, -35.0, 160.0, -50.0, 0.9, 0.9, 1.0, 1.0, 1.05, 上腕外線: true, 下腕外線: false, 下腕反転Y: false, 9, 前後: false);
+    		Cha.腕_人左(n, u1, u2, u3, u4, 0.0, -35.0, 160.0, -50.0, 0.9, 0.9, 1.0, 1.0, 1.05, UpperArm外線: true, LowerArm外線: false, LowerArm反転Y: false, 9, 前後: false);
     	}
 
     	public static void 腕_人_ピース右(this Cha Cha, int n, double u1, double u2, double u3, double u4)
     	{
-    		Cha.腕_人右(n, u1, u2, u3, u4, 0.0, -35.0, 160.0, -50.0, 0.9, 0.9, 1.0, 1.0, 1.05, 上腕外線: true, 下腕外線: false, 下腕反転Y: false, 9, 前後: false);
+    		Cha.腕_人右(n, u1, u2, u3, u4, 0.0, -35.0, 160.0, -50.0, 0.9, 0.9, 1.0, 1.0, 1.05, UpperArm外線: true, LowerArm外線: false, LowerArm反転Y: false, 9, 前後: false);
     	}
 
-    	public static void 腕_人_手コキ左(this Cha Cha, int n, double u1, double u2, double u3, double u4)
+    	public static void Arm_人_手コキ左(this Cha Cha, int n, double u1, double u2, double u3, double u4)
     	{
-    		Cha.腕_人左(n, u1, u2, u3, u4, 0.0, -60.0, -160.0, 30.0, 0.8, 0.84, 1.0, 1.0, 1.0, 上腕外線: true, 下腕外線: false, 下腕反転Y: false, 11, 前後: false);
+    		Cha.腕_人左(n, u1, u2, u3, u4, 0.0, -60.0, -160.0, 30.0, 0.8, 0.84, 1.0, 1.0, 1.0, UpperArm外線: true, LowerArm外線: false, LowerArm反転Y: false, 11, 前後: false);
     	}
 
-    	public static void 腕_人_手コキ右(this Cha Cha, int n, double u1, double u2, double u3, double u4)
+    	public static void Arm_人_手コキ右(this Cha Cha, int n, double u1, double u2, double u3, double u4)
     	{
-    		Cha.腕_人右(n, u1, u2, u3, u4, 0.0, -60.0, -160.0, 30.0, 0.8, 0.84, 1.0, 1.0, 1.0, 上腕外線: true, 下腕外線: false, 下腕反転Y: false, 11, 前後: false);
+    		Cha.腕_人右(n, u1, u2, u3, u4, 0.0, -60.0, -160.0, 30.0, 0.8, 0.84, 1.0, 1.0, 1.0, UpperArm外線: true, LowerArm外線: false, LowerArm反転Y: false, 11, 前後: false);
     	}
 
     	public static void 腕_人_パイズリ左(this Cha Cha, int n, double u1, double u2, double u3, double u4)
     	{
-    		Cha.腕_人左(n, u1, u2, u3, u4, 0.0, -45.0, 155.0, 15.0, 1.0, 0.55, 0.6, 1.0, 1.0, 上腕外線: true, 下腕外線: false, 下腕反転Y: true, 8, 前後: false);
+    		Cha.腕_人左(n, u1, u2, u3, u4, 0.0, -45.0, 155.0, 15.0, 1.0, 0.55, 0.6, 1.0, 1.0, UpperArm外線: true, LowerArm外線: false, LowerArm反転Y: true, 8, 前後: false);
     	}
 
     	public static void 腕_人_パイズリ右(this Cha Cha, int n, double u1, double u2, double u3, double u4)
     	{
-    		Cha.腕_人右(n, u1, u2, u3, u4, 0.0, -45.0, 155.0, 15.0, 1.0, 0.55, 0.6, 1.0, 1.0, 上腕外線: true, 下腕外線: false, 下腕反転Y: true, 8, 前後: false);
+    		Cha.腕_人右(n, u1, u2, u3, u4, 0.0, -45.0, 155.0, 15.0, 1.0, 0.55, 0.6, 1.0, 1.0, UpperArm外線: true, LowerArm外線: false, LowerArm反転Y: true, 8, 前後: false);
     	}
 
     	public static void 腕_人_腕上げ左(this Cha Cha, int n, double u1, double u2, double u3, double u4)
     	{
-    		Cha.腕_人左(n, u1, u2, u3, u4, 0.0, -20.0, 120.0, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 上腕外線: true, 下腕外線: false, 下腕反転Y: false, 0, 前後: false);
+    		Cha.腕_人左(n, u1, u2, u3, u4, 0.0, -20.0, 120.0, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0, UpperArm外線: true, LowerArm外線: false, LowerArm反転Y: false, 0, 前後: false);
     	}
 
     	public static void 腕_人_腕上げ右(this Cha Cha, int n, double u1, double u2, double u3, double u4)
     	{
-    		Cha.腕_人右(n, u1, u2, u3, u4, 0.0, -20.0, 120.0, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 上腕外線: true, 下腕外線: false, 下腕反転Y: false, 0, 前後: false);
+    		Cha.腕_人右(n, u1, u2, u3, u4, 0.0, -20.0, 120.0, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0, UpperArm外線: true, LowerArm外線: false, LowerArm反転Y: false, 0, 前後: false);
     	}
 
     	public static void 両腕_人_腕下げ(this Cha Cha, int n, bool 左右, bool 前後)
@@ -4918,7 +4918,7 @@ namespace SlaveMatrix
     			c.腕_人_ピース左(n, u1, u2, u3, u4);
     			break;
     		case 16:
-    			c.腕_人_手コキ左(n, u1, u2, u3, u4);
+    			c.Arm_人_手コキ左(n, u1, u2, u3, u4);
     			break;
     		case 17:
     			c.腕_人_パイズリ左(n, u1, u2, u3, u4);
@@ -4982,7 +4982,7 @@ namespace SlaveMatrix
     			c.腕_人_ピース右(n, u1, u2, u3, u4);
     			break;
     		case 16:
-    			c.腕_人_手コキ右(n, u1, u2, u3, u4);
+    			c.Arm_人_手コキ右(n, u1, u2, u3, u4);
     			break;
     		case 17:
     			c.腕_人_パイズリ右(n, u1, u2, u3, u4);
@@ -4995,34 +4995,34 @@ namespace SlaveMatrix
 
     	public static void 腕人絶頂(this Cha Cha, double a)
     	{
-    		foreach (腕人 item in Cha.Bod.腕人左)
+    		foreach (Arm人 item in Cha.Bod.Arm人左)
     		{
     			item.Shoulder.角度C = a * RNG.XS.NextDouble();
-    			if (item.上腕 == null)
+    			if (item.UpperArm == null)
     			{
     				continue;
     			}
-    			item.上腕.角度C = a * RNG.XS.NextDouble();
-    			if (item.下腕 != null)
+    			item.UpperArm.角度C = a * RNG.XS.NextDouble();
+    			if (item.LowerArm != null)
     			{
-    				item.下腕.角度C = a * RNG.XS.NextDouble();
+    				item.LowerArm.角度C = a * RNG.XS.NextDouble();
     				if (item.手 != null)
     				{
     					item.手.角度C = a * RNG.XS.NextDouble();
     				}
     			}
     		}
-    		foreach (腕人 item2 in Cha.Bod.腕人右)
+    		foreach (Arm人 item2 in Cha.Bod.Arm人右)
     		{
     			item2.Shoulder.角度C = (0.0 - a) * RNG.XS.NextDouble();
-    			if (item2.上腕 == null)
+    			if (item2.UpperArm == null)
     			{
     				continue;
     			}
-    			item2.上腕.角度C = (0.0 - a) * RNG.XS.NextDouble();
-    			if (item2.下腕 != null)
+    			item2.UpperArm.角度C = (0.0 - a) * RNG.XS.NextDouble();
+    			if (item2.LowerArm != null)
     			{
-    				item2.下腕.角度C = (0.0 - a) * RNG.XS.NextDouble();
+    				item2.LowerArm.角度C = (0.0 - a) * RNG.XS.NextDouble();
     				if (item2.手 != null)
     				{
     					item2.手.角度C = (0.0 - a) * RNG.XS.NextDouble();
@@ -5031,24 +5031,24 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public static void 腕_翼鳥左(this Cha Cha, int n, double u1, double u2, double u3, double u4, double 上腕展開, double 下腕展開, double 手展開, double 肩角度B, double 上腕角度B, double 下腕角度B, double 手角度B)
+    	public static void 腕_翼鳥左(this Cha Cha, int n, double u1, double u2, double u3, double u4, double UpperArm展開, double LowerArm展開, double 手展開, double 肩角度B, double UpperArm角度B, double LowerArm角度B, double 手角度B)
     	{
-    		腕翼鳥 腕翼鳥2 = Cha.Bod.腕翼鳥左[n];
+    		Arm翼鳥 腕翼鳥2 = Cha.Bod.腕翼鳥左[n];
     		腕翼鳥2.Shoulder.SetAngle0();
     		if (n == 0)
     		{
     			腕翼鳥2.Shoulder.角度B = 肩角度B + u1;
     		}
-    		if (腕翼鳥2.上腕 != null)
+    		if (腕翼鳥2.UpperArm != null)
     		{
-    			腕翼鳥2.上腕.SetAngle0();
-    			腕翼鳥2.上腕.展開 = 上腕展開;
-    			腕翼鳥2.上腕.角度B += 上腕角度B + u2;
-    			if (腕翼鳥2.下腕 != null)
+    			腕翼鳥2.UpperArm.SetAngle0();
+    			腕翼鳥2.UpperArm.展開 = UpperArm展開;
+    			腕翼鳥2.UpperArm.角度B += UpperArm角度B + u2;
+    			if (腕翼鳥2.LowerArm != null)
     			{
-    				腕翼鳥2.下腕.SetAngle0();
-    				腕翼鳥2.下腕.展開 = 下腕展開;
-    				腕翼鳥2.下腕.角度B += 下腕角度B + u3;
+    				腕翼鳥2.LowerArm.SetAngle0();
+    				腕翼鳥2.LowerArm.展開 = LowerArm展開;
+    				腕翼鳥2.LowerArm.角度B += LowerArm角度B + u3;
     				if (腕翼鳥2.手 != null)
     				{
     					腕翼鳥2.手.SetAngle0();
@@ -5060,24 +5060,24 @@ namespace SlaveMatrix
     		腕翼鳥2.Shoulder.重複角度処理();
     	}
 
-    	public static void 腕_翼鳥右(this Cha Cha, int n, double u1, double u2, double u3, double u4, double 上腕展開, double 下腕展開, double 手展開, double 肩角度B, double 上腕角度B, double 下腕角度B, double 手角度B)
+    	public static void 腕_翼鳥右(this Cha Cha, int n, double u1, double u2, double u3, double u4, double UpperArm展開, double LowerArm展開, double 手展開, double 肩角度B, double UpperArm角度B, double LowerArm角度B, double 手角度B)
     	{
-    		腕翼鳥 腕翼鳥2 = Cha.Bod.腕翼鳥右[n];
+    		Arm翼鳥 腕翼鳥2 = Cha.Bod.腕翼鳥右[n];
     		腕翼鳥2.Shoulder.SetAngle0();
     		if (n == 0)
     		{
     			腕翼鳥2.Shoulder.角度B = 0.0 - 肩角度B + (0.0 - u1);
     		}
-    		if (腕翼鳥2.上腕 != null)
+    		if (腕翼鳥2.UpperArm != null)
     		{
-    			腕翼鳥2.上腕.SetAngle0();
-    			腕翼鳥2.上腕.展開 = 上腕展開;
-    			腕翼鳥2.上腕.角度B += 0.0 - 上腕角度B + (0.0 - u2);
-    			if (腕翼鳥2.下腕 != null)
+    			腕翼鳥2.UpperArm.SetAngle0();
+    			腕翼鳥2.UpperArm.展開 = UpperArm展開;
+    			腕翼鳥2.UpperArm.角度B += 0.0 - UpperArm角度B + (0.0 - u2);
+    			if (腕翼鳥2.LowerArm != null)
     			{
-    				腕翼鳥2.下腕.SetAngle0();
-    				腕翼鳥2.下腕.展開 = 下腕展開;
-    				腕翼鳥2.下腕.角度B += 0.0 - 下腕角度B + (0.0 - u3);
+    				腕翼鳥2.LowerArm.SetAngle0();
+    				腕翼鳥2.LowerArm.展開 = LowerArm展開;
+    				腕翼鳥2.LowerArm.角度B += 0.0 - LowerArm角度B + (0.0 - u3);
     				if (腕翼鳥2.手 != null)
     				{
     					腕翼鳥2.手.SetAngle0();
@@ -5245,34 +5245,34 @@ namespace SlaveMatrix
 
     	public static void 腕翼鳥絶頂(this Cha Cha, double a)
     	{
-    		foreach (腕翼鳥 item in Cha.Bod.腕翼鳥左)
+    		foreach (Arm翼鳥 item in Cha.Bod.腕翼鳥左)
     		{
     			item.Shoulder.角度C = a * RNG.XS.NextDouble();
     		}
-    		foreach (腕翼鳥 item2 in Cha.Bod.腕翼鳥右)
+    		foreach (Arm翼鳥 item2 in Cha.Bod.腕翼鳥右)
     		{
     			item2.Shoulder.角度C = (0.0 - a) * RNG.XS.NextDouble();
     		}
     	}
 
-    	public static void 腕_翼獣左(this Cha Cha, int n, double u1, double u2, double u3, double u4, double 上腕展開, double 下腕展開, double 手展開, double 肩角度B, double 上腕角度B, double 下腕角度B, double 手角度B)
+    	public static void 腕_翼獣左(this Cha Cha, int n, double u1, double u2, double u3, double u4, double UpperArm展開, double LowerArm展開, double 手展開, double 肩角度B, double UpperArm角度B, double LowerArm角度B, double 手角度B)
     	{
-    		腕翼獣 腕翼獣2 = Cha.Bod.腕翼獣左[n];
+    		Arm翼獣 腕翼獣2 = Cha.Bod.腕翼獣左[n];
     		腕翼獣2.Shoulder.SetAngle0();
     		if (n == 0)
     		{
     			腕翼獣2.Shoulder.角度B = 肩角度B + u1;
     		}
-    		if (腕翼獣2.上腕 != null)
+    		if (腕翼獣2.UpperArm != null)
     		{
-    			腕翼獣2.上腕.SetAngle0();
-    			腕翼獣2.上腕.展開 = 上腕展開;
-    			腕翼獣2.上腕.角度B += 上腕角度B + u2;
-    			if (腕翼獣2.下腕 != null)
+    			腕翼獣2.UpperArm.SetAngle0();
+    			腕翼獣2.UpperArm.展開 = UpperArm展開;
+    			腕翼獣2.UpperArm.角度B += UpperArm角度B + u2;
+    			if (腕翼獣2.LowerArm != null)
     			{
-    				腕翼獣2.下腕.SetAngle0();
-    				腕翼獣2.下腕.展開 = 下腕展開;
-    				腕翼獣2.下腕.角度B += 下腕角度B + u3;
+    				腕翼獣2.LowerArm.SetAngle0();
+    				腕翼獣2.LowerArm.展開 = LowerArm展開;
+    				腕翼獣2.LowerArm.角度B += LowerArm角度B + u3;
     				if (腕翼獣2.手 != null)
     				{
     					腕翼獣2.手.SetAngle0();
@@ -5284,24 +5284,24 @@ namespace SlaveMatrix
     		腕翼獣2.Shoulder.重複角度処理();
     	}
 
-    	public static void 腕_翼獣右(this Cha Cha, int n, double u1, double u2, double u3, double u4, double 上腕展開, double 下腕展開, double 手展開, double 肩角度B, double 上腕角度B, double 下腕角度B, double 手角度B)
+    	public static void 腕_翼獣右(this Cha Cha, int n, double u1, double u2, double u3, double u4, double UpperArm展開, double LowerArm展開, double 手展開, double 肩角度B, double UpperArm角度B, double LowerArm角度B, double 手角度B)
     	{
-    		腕翼獣 腕翼獣2 = Cha.Bod.腕翼獣右[n];
+    		Arm翼獣 腕翼獣2 = Cha.Bod.腕翼獣右[n];
     		腕翼獣2.Shoulder.SetAngle0();
     		if (n == 0)
     		{
     			腕翼獣2.Shoulder.角度B = 0.0 - 肩角度B + (0.0 - u1);
     		}
-    		if (腕翼獣2.上腕 != null)
+    		if (腕翼獣2.UpperArm != null)
     		{
-    			腕翼獣2.上腕.SetAngle0();
-    			腕翼獣2.上腕.展開 = 上腕展開;
-    			腕翼獣2.上腕.角度B += 0.0 - 上腕角度B + (0.0 - u2);
-    			if (腕翼獣2.下腕 != null)
+    			腕翼獣2.UpperArm.SetAngle0();
+    			腕翼獣2.UpperArm.展開 = UpperArm展開;
+    			腕翼獣2.UpperArm.角度B += 0.0 - UpperArm角度B + (0.0 - u2);
+    			if (腕翼獣2.LowerArm != null)
     			{
-    				腕翼獣2.下腕.SetAngle0();
-    				腕翼獣2.下腕.展開 = 下腕展開;
-    				腕翼獣2.下腕.角度B += 0.0 - 下腕角度B + (0.0 - u3);
+    				腕翼獣2.LowerArm.SetAngle0();
+    				腕翼獣2.LowerArm.展開 = LowerArm展開;
+    				腕翼獣2.LowerArm.角度B += 0.0 - LowerArm角度B + (0.0 - u3);
     				if (腕翼獣2.手 != null)
     				{
     					腕翼獣2.手.SetAngle0();
@@ -5437,30 +5437,30 @@ namespace SlaveMatrix
 
     	public static void 腕翼獣絶頂(this Cha Cha, double a)
     	{
-    		foreach (腕翼獣 item in Cha.Bod.腕翼獣左)
+    		foreach (Arm翼獣 item in Cha.Bod.腕翼獣左)
     		{
     			item.Shoulder.角度C = a * RNG.XS.NextDouble();
     		}
-    		foreach (腕翼獣 item2 in Cha.Bod.腕翼獣右)
+    		foreach (Arm翼獣 item2 in Cha.Bod.腕翼獣右)
     		{
     			item2.Shoulder.角度C = (0.0 - a) * RNG.XS.NextDouble();
     		}
     	}
 
-    	public static void 腕_獣左(this Cha Cha, int n, double u2, double u3, double u4, double 上腕角度B, double 下腕角度B, double 手角度B, double 上腕尺度XC, double 下腕尺度XC, double 手尺度XC)
+    	public static void 腕_獣左(this Cha Cha, int n, double u2, double u3, double u4, double UpperArm角度B, double LowerArm角度B, double 手角度B, double UpperArm尺度XC, double LowerArm尺度XC, double 手尺度XC)
     	{
-    		腕獣 腕獣2 = Cha.Bod.腕獣左[n];
+    		Arm獣 腕獣2 = Cha.Bod.腕獣左[n];
     		腕獣2.Shoulder.SetAngle0();
-    		if (腕獣2.上腕 != null)
+    		if (腕獣2.UpperArm != null)
     		{
-    			腕獣2.上腕.SetAngle0();
-    			腕獣2.上腕.尺度XC = 上腕尺度XC;
-    			腕獣2.上腕.角度B += 上腕角度B + u2;
-    			if (腕獣2.下腕 != null)
+    			腕獣2.UpperArm.SetAngle0();
+    			腕獣2.UpperArm.尺度XC = UpperArm尺度XC;
+    			腕獣2.UpperArm.角度B += UpperArm角度B + u2;
+    			if (腕獣2.LowerArm != null)
     			{
-    				腕獣2.下腕.SetAngle0();
-    				腕獣2.下腕.尺度XC = 下腕尺度XC;
-    				腕獣2.下腕.角度B += 下腕角度B + u3;
+    				腕獣2.LowerArm.SetAngle0();
+    				腕獣2.LowerArm.尺度XC = LowerArm尺度XC;
+    				腕獣2.LowerArm.角度B += LowerArm角度B + u3;
     				if (腕獣2.手 != null)
     				{
     					腕獣2.手.SetAngle0();
@@ -5472,20 +5472,20 @@ namespace SlaveMatrix
     		腕獣2.Shoulder.重複角度処理();
     	}
 
-    	public static void 腕_獣右(this Cha Cha, int n, double u2, double u3, double u4, double 上腕角度B, double 下腕角度B, double 手角度B, double 上腕尺度XC, double 下腕尺度XC, double 手尺度XC)
+    	public static void 腕_獣右(this Cha Cha, int n, double u2, double u3, double u4, double UpperArm角度B, double LowerArm角度B, double 手角度B, double UpperArm尺度XC, double LowerArm尺度XC, double 手尺度XC)
     	{
-    		腕獣 腕獣2 = Cha.Bod.腕獣右[n];
+    		Arm獣 腕獣2 = Cha.Bod.腕獣右[n];
     		腕獣2.Shoulder.SetAngle0();
-    		if (腕獣2.上腕 != null)
+    		if (腕獣2.UpperArm != null)
     		{
-    			腕獣2.上腕.SetAngle0();
-    			腕獣2.上腕.尺度XC = 上腕尺度XC;
-    			腕獣2.上腕.角度B += 0.0 - 上腕角度B + (0.0 - u2);
-    			if (腕獣2.下腕 != null)
+    			腕獣2.UpperArm.SetAngle0();
+    			腕獣2.UpperArm.尺度XC = UpperArm尺度XC;
+    			腕獣2.UpperArm.角度B += 0.0 - UpperArm角度B + (0.0 - u2);
+    			if (腕獣2.LowerArm != null)
     			{
-    				腕獣2.下腕.SetAngle0();
-    				腕獣2.下腕.尺度XC = 下腕尺度XC;
-    				腕獣2.下腕.角度B += 0.0 - 下腕角度B + (0.0 - u3);
+    				腕獣2.LowerArm.SetAngle0();
+    				腕獣2.LowerArm.尺度XC = LowerArm尺度XC;
+    				腕獣2.LowerArm.角度B += 0.0 - LowerArm角度B + (0.0 - u3);
     				if (腕獣2.手 != null)
     				{
     					腕獣2.手.SetAngle0();
@@ -5589,32 +5589,32 @@ namespace SlaveMatrix
 
     	public static void 腕獣絶頂(this Cha Cha, double a)
     	{
-    		foreach (腕獣 item in Cha.Bod.腕獣左)
+    		foreach (Arm獣 item in Cha.Bod.腕獣左)
     		{
-    			if (item.上腕 == null)
+    			if (item.UpperArm == null)
     			{
     				continue;
     			}
-    			item.上腕.角度C = a * RNG.XS.NextDouble();
-    			if (item.下腕 != null)
+    			item.UpperArm.角度C = a * RNG.XS.NextDouble();
+    			if (item.LowerArm != null)
     			{
-    				item.下腕.角度C = a * RNG.XS.NextDouble();
+    				item.LowerArm.角度C = a * RNG.XS.NextDouble();
     				if (item.手 != null)
     				{
     					item.手.角度C = a * RNG.XS.NextDouble();
     				}
     			}
     		}
-    		foreach (腕獣 item2 in Cha.Bod.腕獣右)
+    		foreach (Arm獣 item2 in Cha.Bod.腕獣右)
     		{
-    			if (item2.上腕 == null)
+    			if (item2.UpperArm == null)
     			{
     				continue;
     			}
-    			item2.上腕.角度C = (0.0 - a) * RNG.XS.NextDouble();
-    			if (item2.下腕 != null)
+    			item2.UpperArm.角度C = (0.0 - a) * RNG.XS.NextDouble();
+    			if (item2.LowerArm != null)
     			{
-    				item2.下腕.角度C = (0.0 - a) * RNG.XS.NextDouble();
+    				item2.LowerArm.角度C = (0.0 - a) * RNG.XS.NextDouble();
     				if (item2.手 != null)
     				{
     					item2.手.角度C = (0.0 - a) * RNG.XS.NextDouble();
@@ -6153,17 +6153,17 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public static void 翼鳥左(this Cha Cha, int n, double u1, double u2, double u3, double 上腕展開, double 下腕展開, double 手展開, double 上腕角度B, double 下腕角度B, double 手角度B)
+    	public static void 翼鳥左(this Cha Cha, int n, double u1, double u2, double u3, double UpperArm展開, double LowerArm展開, double 手展開, double UpperArm角度B, double LowerArm角度B, double 手角度B)
     	{
     		翼鳥 翼鳥2 = Cha.Bod.翼鳥左[n];
-    		翼鳥2.上腕.SetAngle0();
-    		翼鳥2.上腕.展開 = 上腕展開;
-    		翼鳥2.上腕.角度B += 上腕角度B + u1;
-    		if (翼鳥2.下腕 != null)
+    		翼鳥2.UpperArm.SetAngle0();
+    		翼鳥2.UpperArm.展開 = UpperArm展開;
+    		翼鳥2.UpperArm.角度B += UpperArm角度B + u1;
+    		if (翼鳥2.LowerArm != null)
     		{
-    			翼鳥2.下腕.SetAngle0();
-    			翼鳥2.下腕.展開 = 下腕展開;
-    			翼鳥2.下腕.角度B += 下腕角度B + u2;
+    			翼鳥2.LowerArm.SetAngle0();
+    			翼鳥2.LowerArm.展開 = LowerArm展開;
+    			翼鳥2.LowerArm.角度B += LowerArm角度B + u2;
     			if (翼鳥2.手 != null)
     			{
     				翼鳥2.手.SetAngle0();
@@ -6171,20 +6171,20 @@ namespace SlaveMatrix
     				翼鳥2.手.角度B += 手角度B + u3;
     			}
     		}
-    		翼鳥2.上腕.重複角度処理();
+    		翼鳥2.UpperArm.重複角度処理();
     	}
 
-    	public static void 翼鳥右(this Cha Cha, int n, double u1, double u2, double u3, double 上腕展開, double 下腕展開, double 手展開, double 上腕角度B, double 下腕角度B, double 手角度B)
+    	public static void 翼鳥右(this Cha Cha, int n, double u1, double u2, double u3, double UpperArm展開, double LowerArm展開, double 手展開, double UpperArm角度B, double LowerArm角度B, double 手角度B)
     	{
     		翼鳥 翼鳥2 = Cha.Bod.翼鳥右[n];
-    		翼鳥2.上腕.SetAngle0();
-    		翼鳥2.上腕.展開 = 上腕展開;
-    		翼鳥2.上腕.角度B += 0.0 - 上腕角度B + (0.0 - u1);
-    		if (翼鳥2.下腕 != null)
+    		翼鳥2.UpperArm.SetAngle0();
+    		翼鳥2.UpperArm.展開 = UpperArm展開;
+    		翼鳥2.UpperArm.角度B += 0.0 - UpperArm角度B + (0.0 - u1);
+    		if (翼鳥2.LowerArm != null)
     		{
-    			翼鳥2.下腕.SetAngle0();
-    			翼鳥2.下腕.展開 = 下腕展開;
-    			翼鳥2.下腕.角度B += 0.0 - 下腕角度B + (0.0 - u2);
+    			翼鳥2.LowerArm.SetAngle0();
+    			翼鳥2.LowerArm.展開 = LowerArm展開;
+    			翼鳥2.LowerArm.角度B += 0.0 - LowerArm角度B + (0.0 - u2);
     			if (翼鳥2.手 != null)
     			{
     				翼鳥2.手.SetAngle0();
@@ -6192,7 +6192,7 @@ namespace SlaveMatrix
     				翼鳥2.手.角度B += 0.0 - 手角度B + (0.0 - u3);
     			}
     		}
-    		翼鳥2.上腕.重複角度処理();
+    		翼鳥2.UpperArm.重複角度処理();
     	}
 
     	public static void 翼鳥_脱力左(this Cha Cha, int n, double u1, double u2, double u3)
@@ -6345,17 +6345,17 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public static void 翼獣左(this Cha Cha, int n, double u1, double u2, double u3, double 上腕展開, double 下腕展開, double 手展開, double 上腕角度B, double 下腕角度B, double 手角度B)
+    	public static void 翼獣左(this Cha Cha, int n, double u1, double u2, double u3, double UpperArm展開, double LowerArm展開, double 手展開, double UpperArm角度B, double LowerArm角度B, double 手角度B)
     	{
     		翼獣 翼獣2 = Cha.Bod.翼獣左[n];
-    		翼獣2.上腕.SetAngle0();
-    		翼獣2.上腕.展開 = 上腕展開;
-    		翼獣2.上腕.角度B += 上腕角度B + u1;
-    		if (翼獣2.下腕 != null)
+    		翼獣2.UpperArm.SetAngle0();
+    		翼獣2.UpperArm.展開 = UpperArm展開;
+    		翼獣2.UpperArm.角度B += UpperArm角度B + u1;
+    		if (翼獣2.LowerArm != null)
     		{
-    			翼獣2.下腕.SetAngle0();
-    			翼獣2.下腕.展開 = 下腕展開;
-    			翼獣2.下腕.角度B += 下腕角度B + u2;
+    			翼獣2.LowerArm.SetAngle0();
+    			翼獣2.LowerArm.展開 = LowerArm展開;
+    			翼獣2.LowerArm.角度B += LowerArm角度B + u2;
     			if (翼獣2.手 != null)
     			{
     				翼獣2.手.SetAngle0();
@@ -6363,20 +6363,20 @@ namespace SlaveMatrix
     				翼獣2.手.角度B += 手角度B + u3;
     			}
     		}
-    		翼獣2.上腕.重複角度処理();
+    		翼獣2.UpperArm.重複角度処理();
     	}
 
-    	public static void 翼獣右(this Cha Cha, int n, double u1, double u2, double u3, double 上腕展開, double 下腕展開, double 手展開, double 上腕角度B, double 下腕角度B, double 手角度B)
+    	public static void 翼獣右(this Cha Cha, int n, double u1, double u2, double u3, double UpperArm展開, double LowerArm展開, double 手展開, double UpperArm角度B, double LowerArm角度B, double 手角度B)
     	{
     		翼獣 翼獣2 = Cha.Bod.翼獣右[n];
-    		翼獣2.上腕.SetAngle0();
-    		翼獣2.上腕.展開 = 上腕展開;
-    		翼獣2.上腕.角度B += 0.0 - 上腕角度B + (0.0 - u1);
-    		if (翼獣2.下腕 != null)
+    		翼獣2.UpperArm.SetAngle0();
+    		翼獣2.UpperArm.展開 = UpperArm展開;
+    		翼獣2.UpperArm.角度B += 0.0 - UpperArm角度B + (0.0 - u1);
+    		if (翼獣2.LowerArm != null)
     		{
-    			翼獣2.下腕.SetAngle0();
-    			翼獣2.下腕.展開 = 下腕展開;
-    			翼獣2.下腕.角度B += 0.0 - 下腕角度B + (0.0 - u2);
+    			翼獣2.LowerArm.SetAngle0();
+    			翼獣2.LowerArm.展開 = LowerArm展開;
+    			翼獣2.LowerArm.角度B += 0.0 - LowerArm角度B + (0.0 - u2);
     			if (翼獣2.手 != null)
     			{
     				翼獣2.手.SetAngle0();
@@ -6384,7 +6384,7 @@ namespace SlaveMatrix
     				翼獣2.手.角度B += 0.0 - 手角度B + (0.0 - u3);
     			}
     		}
-    		翼獣2.上腕.重複角度処理();
+    		翼獣2.UpperArm.重複角度処理();
     	}
 
     	public static void 翼獣_脱力左(this Cha Cha, int n, double u1, double u2, double u3)
@@ -8631,18 +8631,18 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public static void 触手犬右(this Cha Cha, int n, double u1, double u2, double u3, double u4, double u5, double u6, double u7, double 根本角度, double 上腕角度, double 下腕角度, double 手角度, double 開口, double 開指, params Func<int, double>[] angs)
+    	public static void 触手犬右(this Cha Cha, int n, double u1, double u2, double u3, double u4, double u5, double u6, double u7, double 根本角度, double UpperArm角度, double LowerArm角度, double 手角度, double 開口, double 開指, params Func<int, double>[] angs)
     	{
     		触手_犬 触手_犬2 = Cha.Bod.触手犬右[n];
     		触手_犬2.SetAngle0();
-    		触手_犬2.X0Y0_脚後_上腕.AngleBase -= 触手_犬2.X0Y0_胴_節9_胴.Angle;
-    		触手_犬2.X0Y0_脚前_上腕.AngleBase -= 触手_犬2.X0Y0_胴_節9_胴.Angle;
+    		触手_犬2.X0Y0_脚後_UpperArm.AngleBase -= 触手_犬2.X0Y0_胴_節9_胴.Angle;
+    		触手_犬2.X0Y0_脚前_UpperArm.AngleBase -= 触手_犬2.X0Y0_胴_節9_胴.Angle;
     		触手_犬2.X0Y0_頭_口膜_口膜1.AngleBase -= 17.0;
-    		触手_犬2.X0Y0_脚後_上腕.AngleBase += 0.0 - 上腕角度 + (0.0 - u1);
-    		触手_犬2.X0Y0_脚後_下腕.AngleBase += 0.0 - 下腕角度 + (0.0 - u2);
+    		触手_犬2.X0Y0_脚後_UpperArm.AngleBase += 0.0 - UpperArm角度 + (0.0 - u1);
+    		触手_犬2.X0Y0_脚後_LowerArm.AngleBase += 0.0 - LowerArm角度 + (0.0 - u2);
     		触手_犬2.X0Y0_脚後_手_手.AngleBase += 0.0 - 手角度 + (0.0 - u3);
-    		触手_犬2.X0Y0_脚前_上腕.AngleBase += 0.0 - 上腕角度 + u1;
-    		触手_犬2.X0Y0_脚前_下腕.AngleBase += 0.0 - 下腕角度 + u2;
+    		触手_犬2.X0Y0_脚前_UpperArm.AngleBase += 0.0 - UpperArm角度 + u1;
+    		触手_犬2.X0Y0_脚前_LowerArm.AngleBase += 0.0 - LowerArm角度 + u2;
     		触手_犬2.X0Y0_脚前_手_手.AngleBase += 0.0 - 手角度 + u3;
     		if (触手_犬2.拘束)
     		{
@@ -8731,14 +8731,14 @@ namespace SlaveMatrix
     	{
     		foreach (触手_犬 item in Cha.Bod.触手犬左)
     		{
-    			item.X0Y0_脚後_上腕.AngleCont = a * RNG.XS.NextDouble();
-    			item.X0Y0_脚前_上腕.AngleCont = a * RNG.XS.NextDouble();
+    			item.X0Y0_脚後_UpperArm.AngleCont = a * RNG.XS.NextDouble();
+    			item.X0Y0_脚前_UpperArm.AngleCont = a * RNG.XS.NextDouble();
     			item.X0Y0_頭_口膜_口膜1.AngleCont = a * RNG.XS.NextDouble();
-    			item.X0Y0_脚後_上腕.AngleCont = a * RNG.XS.NextDouble();
-    			item.X0Y0_脚後_下腕.AngleCont = a * RNG.XS.NextDouble();
+    			item.X0Y0_脚後_UpperArm.AngleCont = a * RNG.XS.NextDouble();
+    			item.X0Y0_脚後_LowerArm.AngleCont = a * RNG.XS.NextDouble();
     			item.X0Y0_脚後_手_手.AngleCont = a * RNG.XS.NextDouble();
-    			item.X0Y0_脚前_上腕.AngleCont = a * RNG.XS.NextDouble();
-    			item.X0Y0_脚前_下腕.AngleCont = a * RNG.XS.NextDouble();
+    			item.X0Y0_脚前_UpperArm.AngleCont = a * RNG.XS.NextDouble();
+    			item.X0Y0_脚前_LowerArm.AngleCont = a * RNG.XS.NextDouble();
     			item.X0Y0_脚前_手_手.AngleCont = a * RNG.XS.NextDouble();
     			if (!item.拘束)
     			{
@@ -8762,14 +8762,14 @@ namespace SlaveMatrix
     		}
     		foreach (触手_犬 item3 in Cha.Bod.触手犬右)
     		{
-    			item3.X0Y0_脚後_上腕.AngleCont = (0.0 - a) * RNG.XS.NextDouble();
-    			item3.X0Y0_脚前_上腕.AngleCont = (0.0 - a) * RNG.XS.NextDouble();
+    			item3.X0Y0_脚後_UpperArm.AngleCont = (0.0 - a) * RNG.XS.NextDouble();
+    			item3.X0Y0_脚前_UpperArm.AngleCont = (0.0 - a) * RNG.XS.NextDouble();
     			item3.X0Y0_頭_口膜_口膜1.AngleCont = (0.0 - a) * RNG.XS.NextDouble();
-    			item3.X0Y0_脚後_上腕.AngleCont = (0.0 - a) * RNG.XS.NextDouble();
-    			item3.X0Y0_脚後_下腕.AngleCont = (0.0 - a) * RNG.XS.NextDouble();
+    			item3.X0Y0_脚後_UpperArm.AngleCont = (0.0 - a) * RNG.XS.NextDouble();
+    			item3.X0Y0_脚後_LowerArm.AngleCont = (0.0 - a) * RNG.XS.NextDouble();
     			item3.X0Y0_脚後_手_手.AngleCont = (0.0 - a) * RNG.XS.NextDouble();
-    			item3.X0Y0_脚前_上腕.AngleCont = (0.0 - a) * RNG.XS.NextDouble();
-    			item3.X0Y0_脚前_下腕.AngleCont = (0.0 - a) * RNG.XS.NextDouble();
+    			item3.X0Y0_脚前_UpperArm.AngleCont = (0.0 - a) * RNG.XS.NextDouble();
+    			item3.X0Y0_脚前_LowerArm.AngleCont = (0.0 - a) * RNG.XS.NextDouble();
     			item3.X0Y0_脚前_手_手.AngleCont = (0.0 - a) * RNG.XS.NextDouble();
     			if (!item3.拘束)
     			{
@@ -9535,7 +9535,7 @@ namespace SlaveMatrix
     			return;
     		}
     		EmotionType 状態 = c.ChaD.Emotion;
-    		if (c.Bod.腕人n > 0 && !Player.UI.ペニス処理.手固定)
+    		if (c.Bod.Arm人n > 0 && !Player.UI.ペニス処理.手固定)
     		{
     			int[] array = null;
     			if (c.ChaD.撮影ピース経験)
@@ -9580,7 +9580,7 @@ namespace SlaveMatrix
     					array = (flag ? new int[5] { 0, 2, 7, 13, 18 } : new int[7] { 0, 1, 2, 3, 7, 13, 18 });
     				}
     			}
-    			for (int i = 0; i < c.Bod.腕人n; i++)
+    			for (int i = 0; i < c.Bod.Arm人n; i++)
     			{
     				c.両腕人_0(i, RNG.XS.NextBool(), RNG.XS.NextBool(), RNG.XS.NextBool(), array[RNG.XS.Next(array.Length)], array[RNG.XS.Next(array.Length)]);
     			}
@@ -9952,10 +9952,10 @@ namespace SlaveMatrix
     		{
     			c.Bod.腿左右前後 = RNG.XS.NextBool();
     		}
-    		if (c.Bod.腕人n > 0)
+    		if (c.Bod.Arm人n > 0)
     		{
     			int num = 7;
-    			for (int i = 0; i < c.Bod.腕人n; i++)
+    			for (int i = 0; i < c.Bod.Arm人n; i++)
     			{
     				c.両腕人_0(i, RNG.XS.NextBool(), 同角: true, RNG.XS.NextBool(), num, num);
     			}
@@ -10190,10 +10190,10 @@ namespace SlaveMatrix
     		{
     			c.Bod.腿左右前後 = RNG.XS.NextBool();
     		}
-    		if (c.Bod.腕人n > 0)
+    		if (c.Bod.Arm人n > 0)
     		{
     			int num = 7;
-    			for (int i = 0; i < c.Bod.腕人n; i++)
+    			for (int i = 0; i < c.Bod.Arm人n; i++)
     			{
     				c.両腕人_0(i, RNG.XS.NextBool(), 同角: true, RNG.XS.NextBool(), num, num);
     			}
@@ -10428,10 +10428,10 @@ namespace SlaveMatrix
     		{
     			c.Bod.腿左右前後 = RNG.XS.NextBool();
     		}
-    		if (c.Bod.腕人n > 0)
+    		if (c.Bod.Arm人n > 0)
     		{
     			int num = 18;
-    			for (int i = 0; i < c.Bod.腕人n; i++)
+    			for (int i = 0; i < c.Bod.Arm人n; i++)
     			{
     				c.両腕人_0(i, RNG.XS.NextBool(), RNG.XS.NextBool(), RNG.XS.NextBool(), num, num);
     			}
@@ -10653,10 +10653,10 @@ namespace SlaveMatrix
 
     	public static void Setダブルピース(this Cha c)
     	{
-    		if (c.Bod.腕人n > 0)
+    		if (c.Bod.Arm人n > 0)
     		{
     			int num = 15;
-    			for (int i = 0; i < c.Bod.腕人n; i++)
+    			for (int i = 0; i < c.Bod.Arm人n; i++)
     			{
     				c.両腕人_0(i, RNG.XS.NextBool(), RNG.XS.NextBool(), RNG.XS.NextBool(), num, num);
     			}

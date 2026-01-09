@@ -68,17 +68,17 @@ namespace SlaveMatrix
 
     	private Shoulder 肩右;
 
-    	private 上腕_人 上腕;
+    	private UpperArm_人 UpperArm;
 
-    	private 上腕_人 上腕左;
+    	private UpperArm_人 UpperArm左;
 
-    	private 上腕_人 上腕右;
+    	private UpperArm_人 UpperArm右;
 
-    	private 下腕_人 下腕;
+    	private LowerArm_人 LowerArm;
 
-    	private 下腕_人 下腕左;
+    	private LowerArm_人 LowerArm左;
 
-    	private 下腕_人 下腕右;
+    	private LowerArm_人 LowerArm右;
 
     	private 手_人 手;
 
@@ -721,7 +721,7 @@ namespace SlaveMatrix
     			}
     		};
     		調教UI.Mots.Add(放精.GetHashCode().ToString(), 放精);
-    		double 下腕XC = 0.0;
+    		double LowerArmXC = 0.0;
     		double s = 1.0;
     		手コキ = new Mot(0.0, 1.0)
     		{
@@ -733,20 +733,20 @@ namespace SlaveMatrix
     				調教UI.コキ = true;
     				if (ペニス処理2.手コキ左)
     				{
-    					ペニス処理2.Cha.腕_人_手コキ左(0, 0.0, 0.0, 0.0, 0.0);
+    					ペニス処理2.Cha.Arm_人_手コキ左(0, 0.0, 0.0, 0.0, 0.0);
     				}
     				else
     				{
-    					ペニス処理2.Cha.腕_人_手コキ右(0, 0.0, 0.0, 0.0, 0.0);
+    					ペニス処理2.Cha.Arm_人_手コキ右(0, 0.0, 0.0, 0.0, 0.0);
     				}
     				ペニス処理2.手固定 = true;
     				ペニス処理2.Shoulder = (ペニス処理2.手コキ左 ? ペニス処理2.肩左 : ペニス処理2.肩右);
-    				ペニス処理2.上腕 = (ペニス処理2.手コキ左 ? ペニス処理2.上腕左 : ペニス処理2.上腕右);
-    				ペニス処理2.下腕 = (ペニス処理2.手コキ左 ? ペニス処理2.下腕左 : ペニス処理2.下腕右);
+    				ペニス処理2.UpperArm = (ペニス処理2.手コキ左 ? ペニス処理2.UpperArm左 : ペニス処理2.UpperArm右);
+    				ペニス処理2.LowerArm = (ペニス処理2.手コキ左 ? ペニス処理2.LowerArm左 : ペニス処理2.LowerArm右);
     				ペニス処理2.手 = (ペニス処理2.手コキ左 ? ペニス処理2.手左 : ペニス処理2.手右);
-    				if (ペニス処理2.下腕 != null)
+    				if (ペニス処理2.LowerArm != null)
     				{
-    					下腕XC = ペニス処理2.下腕.尺度XC;
+    					LowerArmXC = ペニス処理2.LowerArm.尺度XC;
     				}
     				調教UI.ペニス.位置B = ペニス処理2.Bod.首.位置.AddY(0.01);
     				調教UI.Action(ContactType.Hand, ActionType.手コ, CurrentState.Start, ToolType.Penis, 0, 1, 機械: false, 射精: false);
@@ -759,16 +759,16 @@ namespace SlaveMatrix
     				{
     					ペニス処理2.Shoulder.角度C = s * 5.0 * m.Value;
     				}
-    				if (ペニス処理2.下腕 != null)
+    				if (ペニス処理2.LowerArm != null)
     				{
-    					ペニス処理2.下腕.角度C = s * 30.0 * m.Value;
-    					ペニス処理2.下腕.尺度XC = 下腕XC * (0.9 + 0.1 * m.Value.Inverse());
-    					if (ペニス処理2.下腕.虫鎌_接続 != null)
+    					ペニス処理2.LowerArm.角度C = s * 30.0 * m.Value;
+    					ペニス処理2.LowerArm.尺度XC = LowerArmXC * (0.9 + 0.1 * m.Value.Inverse());
+    					if (ペニス処理2.LowerArm.虫鎌_接続 != null)
     					{
-    						Ele[] 虫鎌_接続2 = ペニス処理2.下腕.虫鎌_接続;
+    						Ele[] 虫鎌_接続2 = ペニス処理2.LowerArm.虫鎌_接続;
     						for (int j = 0; j < 虫鎌_接続2.Length; j++)
     						{
-    							虫鎌_接続2[j].尺度XC = ペニス処理2.下腕.尺度XC;
+    							虫鎌_接続2[j].尺度XC = ペニス処理2.LowerArm.尺度XC;
     						}
     					}
     				}
@@ -798,9 +798,9 @@ namespace SlaveMatrix
     				{
     					ペニス処理2.Shoulder.角度C = 0.0;
     				}
-    				if (ペニス処理2.下腕 != null)
+    				if (ペニス処理2.LowerArm != null)
     				{
-    					ペニス処理2.下腕.角度C = 0.0;
+    					ペニス処理2.LowerArm.角度C = 0.0;
     				}
     				if (ペニス処理2.手 != null)
     				{
@@ -867,7 +867,7 @@ namespace SlaveMatrix
     		};
     		調教UI.Mots.Add(フェラ.GetHashCode().ToString(), フェラ);
     		s = 0.0;
-    		下腕XC = 0.0;
+    		LowerArmXC = 0.0;
     		Vector2D vc = Dat.Vec2DZero;
     		bool sb = false;
     		double vl;
@@ -879,9 +879,9 @@ namespace SlaveMatrix
     			{
     				ペニス処理2.Cha.両腕_人_パイズリ(0, 左右: false, 前後: false);
     				ペニス処理2.手固定 = true;
-    				if (ペニス処理2.下腕左 != null)
+    				if (ペニス処理2.LowerArm左 != null)
     				{
-    					下腕XC = ペニス処理2.下腕左.尺度XC;
+    					LowerArmXC = ペニス処理2.LowerArm左.尺度XC;
     				}
     				vc = Dat.Vec2DZero;
     				sb = RNG.XS.NextBool();
@@ -898,16 +898,16 @@ namespace SlaveMatrix
     				{
     					ペニス処理2.肩左.角度C = 5.0 * vl;
     				}
-    				if (ペニス処理2.下腕左 != null)
+    				if (ペニス処理2.LowerArm左 != null)
     				{
-    					ペニス処理2.下腕左.角度C = -20.0 * vl;
-    					ペニス処理2.下腕左.尺度XC = 下腕XC + 0.2 * vl;
-    					if (ペニス処理2.下腕左.虫鎌_接続 != null)
+    					ペニス処理2.LowerArm左.角度C = -20.0 * vl;
+    					ペニス処理2.LowerArm左.尺度XC = LowerArmXC + 0.2 * vl;
+    					if (ペニス処理2.LowerArm左.虫鎌_接続 != null)
     					{
-    						Ele[] 虫鎌_接続 = ペニス処理2.下腕左.虫鎌_接続;
+    						Ele[] 虫鎌_接続 = ペニス処理2.LowerArm左.虫鎌_接続;
     						for (int i = 0; i < 虫鎌_接続.Length; i++)
     						{
-    							虫鎌_接続[i].尺度XC = ペニス処理2.下腕左.尺度XC;
+    							虫鎌_接続[i].尺度XC = ペニス処理2.LowerArm左.尺度XC;
     						}
     					}
     				}
@@ -919,16 +919,16 @@ namespace SlaveMatrix
     				{
     					ペニス処理2.肩右.角度C = -5.0 * vr;
     				}
-    				if (ペニス処理2.下腕右 != null)
+    				if (ペニス処理2.LowerArm右 != null)
     				{
-    					ペニス処理2.下腕右.角度C = 20.0 * vr;
-    					ペニス処理2.下腕右.尺度XC = 下腕XC + 0.2 * vr;
-    					if (ペニス処理2.下腕右.虫鎌_接続 != null)
+    					ペニス処理2.LowerArm右.角度C = 20.0 * vr;
+    					ペニス処理2.LowerArm右.尺度XC = LowerArmXC + 0.2 * vr;
+    					if (ペニス処理2.LowerArm右.虫鎌_接続 != null)
     					{
-    						Ele[] 虫鎌_接続 = ペニス処理2.下腕右.虫鎌_接続;
+    						Ele[] 虫鎌_接続 = ペニス処理2.LowerArm右.虫鎌_接続;
     						for (int i = 0; i < 虫鎌_接続.Length; i++)
     						{
-    							虫鎌_接続[i].尺度XC = ペニス処理2.下腕右.尺度XC;
+    							虫鎌_接続[i].尺度XC = ペニス処理2.LowerArm右.尺度XC;
     						}
     					}
     				}
@@ -974,9 +974,9 @@ namespace SlaveMatrix
     				{
     					ペニス処理2.肩左.角度C = 0.0;
     				}
-    				if (ペニス処理2.下腕左 != null)
+    				if (ペニス処理2.LowerArm左 != null)
     				{
-    					ペニス処理2.下腕左.角度C = 0.0;
+    					ペニス処理2.LowerArm左.角度C = 0.0;
     				}
     				if (ペニス処理2.手左 != null)
     				{
@@ -986,9 +986,9 @@ namespace SlaveMatrix
     				{
     					ペニス処理2.肩右.角度C = 0.0;
     				}
-    				if (ペニス処理2.下腕右 != null)
+    				if (ペニス処理2.LowerArm右 != null)
     				{
-    					ペニス処理2.下腕右.角度C = 0.0;
+    					ペニス処理2.LowerArm右.角度C = 0.0;
     				}
     				if (ペニス処理2.手右 != null)
     				{
@@ -1104,16 +1104,16 @@ namespace SlaveMatrix
     	{
     		base.Cha = Cha;
     		Bod = Cha.Bod;
-    		if (Bod.腕人n > 0)
+    		if (Bod.Arm人n > 0)
     		{
-    			肩左 = Bod.腕人左[0].Shoulder;
-    			上腕左 = Bod.腕人左[0].上腕;
-    			下腕左 = Bod.腕人左[0].下腕;
-    			手左 = Bod.腕人左[0].手;
-    			肩右 = Bod.腕人右[0].Shoulder;
-    			上腕右 = Bod.腕人右[0].上腕;
-    			下腕右 = Bod.腕人右[0].下腕;
-    			手右 = Bod.腕人右[0].手;
+    			肩左 = Bod.Arm人左[0].Shoulder;
+    			UpperArm左 = Bod.Arm人左[0].UpperArm;
+    			LowerArm左 = Bod.Arm人左[0].LowerArm;
+    			手左 = Bod.Arm人左[0].手;
+    			肩右 = Bod.Arm人右[0].Shoulder;
+    			UpperArm右 = Bod.Arm人右[0].UpperArm;
+    			LowerArm右 = Bod.Arm人右[0].LowerArm;
+    			手右 = Bod.Arm人右[0].手;
     		}
     		if (Bod.脚人n > 0)
     		{
