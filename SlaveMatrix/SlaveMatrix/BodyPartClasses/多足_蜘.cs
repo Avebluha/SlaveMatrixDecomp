@@ -6,19 +6,19 @@ namespace SlaveMatrix
 {
     public class 多足_蜘 : 半身
     {
-    	public Par X0Y0_胴;
+    	public Par X0Y0_Torso;
 
     	public Par X0Y0_胸版;
 
     	public Par X0Y0_柄;
 
-    	public ColorD 胴CD;
+    	public ColorD TorsoCD;
 
     	public ColorD 胸版CD;
 
     	public ColorD 柄CD;
 
-    	public ColorP X0Y0_胴CP;
+    	public ColorP X0Y0_TorsoCP;
 
     	public ColorP X0Y0_胸版CP;
 
@@ -82,16 +82,16 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 胴_表示
+    	public bool Torso_表示
     	{
     		get
     		{
-    			return X0Y0_胴.Dra;
+    			return X0Y0_Torso.Dra;
     		}
     		set
     		{
-    			X0Y0_胴.Dra = value;
-    			X0Y0_胴.Hit = value;
+    			X0Y0_Torso.Dra = value;
+    			X0Y0_Torso.Hit = value;
     		}
     	}
 
@@ -125,11 +125,11 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return 胴_表示;
+    			return Torso_表示;
     		}
     		set
     		{
-    			胴_表示 = value;
+    			Torso_表示 = value;
     			胸版_表示 = value;
     			柄_表示 = value;
     		}
@@ -139,37 +139,37 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return 胴CD.不透明度;
+    			return TorsoCD.不透明度;
     		}
     		set
     		{
-    			胴CD.不透明度 = value;
+    			TorsoCD.不透明度 = value;
     			胸版CD.不透明度 = value;
     			柄CD.不透明度 = value;
     		}
     	}
 
-    	public JointS 触肢左_接続点 => new JointS(本体, X0Y0_胴, 10);
+    	public JointS 触肢左_接続点 => new JointS(本体, X0Y0_Torso, 10);
 
-    	public JointS 触肢右_接続点 => new JointS(本体, X0Y0_胴, 11);
+    	public JointS 触肢右_接続点 => new JointS(本体, X0Y0_Torso, 11);
 
-    	public JointS 節足左1_接続点 => new JointS(本体, X0Y0_胴, 2);
+    	public JointS 節足左1_接続点 => new JointS(本体, X0Y0_Torso, 2);
 
-    	public JointS 節足左2_接続点 => new JointS(本体, X0Y0_胴, 4);
+    	public JointS 節足左2_接続点 => new JointS(本体, X0Y0_Torso, 4);
 
-    	public JointS 節足左3_接続点 => new JointS(本体, X0Y0_胴, 6);
+    	public JointS 節足左3_接続点 => new JointS(本体, X0Y0_Torso, 6);
 
-    	public JointS 節足左4_接続点 => new JointS(本体, X0Y0_胴, 8);
+    	public JointS 節足左4_接続点 => new JointS(本体, X0Y0_Torso, 8);
 
-    	public JointS 節足右1_接続点 => new JointS(本体, X0Y0_胴, 3);
+    	public JointS 節足右1_接続点 => new JointS(本体, X0Y0_Torso, 3);
 
-    	public JointS 節足右2_接続点 => new JointS(本体, X0Y0_胴, 5);
+    	public JointS 節足右2_接続点 => new JointS(本体, X0Y0_Torso, 5);
 
-    	public JointS 節足右3_接続点 => new JointS(本体, X0Y0_胴, 7);
+    	public JointS 節足右3_接続点 => new JointS(本体, X0Y0_Torso, 7);
 
-    	public JointS 節足右4_接続点 => new JointS(本体, X0Y0_胴, 9);
+    	public JointS 節足右4_接続点 => new JointS(本体, X0Y0_Torso, 9);
 
-    	public JointS 尾_接続点 => new JointS(本体, X0Y0_胴, 0);
+    	public JointS 尾_接続点 => new JointS(本体, X0Y0_Torso, 0);
 
     	public 多足_蜘(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 多足_蜘D e)
     	{
@@ -182,7 +182,7 @@ namespace SlaveMatrix
     		本体.Tag = dif.Tag;
     		本体.Add(dif);
     		Pars pars = 本体[0][0];
-    		X0Y0_胴 = pars["Torso"].ToPar();
+    		X0Y0_Torso = pars["Torso"].ToPar();
     		X0Y0_胸版 = pars["胸版"].ToPar();
     		X0Y0_柄 = pars["柄"].ToPar();
     		本体.SetJoints();
@@ -209,7 +209,7 @@ namespace SlaveMatrix
     		サイズ = e.サイズ;
     		サイズX = e.サイズX;
     		サイズY = e.サイズY;
-    		胴_表示 = e.胴_表示;
+    		Torso_表示 = e.Torso_表示;
     		胸版_表示 = e.胸版_表示;
     		柄_表示 = e.柄_表示;
     		欠損 = e.欠損;
@@ -343,7 +343,7 @@ namespace SlaveMatrix
     		}
     		base.配色指定 = 配色指定;
     		配色(体配色);
-    		X0Y0_胴CP = new ColorP(X0Y0_胴, 胴CD, DisUnit, abj: true);
+    		X0Y0_TorsoCP = new ColorP(X0Y0_Torso, TorsoCD, DisUnit, abj: true);
     		X0Y0_胸版CP = new ColorP(X0Y0_胸版, 胸版CD, DisUnit, abj: true);
     		X0Y0_柄CP = new ColorP(X0Y0_柄, 柄CD, DisUnit, abj: true);
     		濃度 = e.濃度;
@@ -351,7 +351,7 @@ namespace SlaveMatrix
 
     	public override void 色更新()
     	{
-    		X0Y0_胴CP.Update();
+    		X0Y0_TorsoCP.Update();
     		X0Y0_胸版CP.Update();
     		X0Y0_柄CP.Update();
     	}
@@ -377,21 +377,21 @@ namespace SlaveMatrix
 
     	private void 配色N0(体配色 体配色)
     	{
-    		胴CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
+    		TorsoCD = new ColorD(ref Col.Black, ref 体配色.甲0O);
     		胸版CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
     		柄CD = new ColorD(ref Col.Black, ref 体配色.体0O);
     	}
 
     	private void 配色T0(体配色 体配色)
     	{
-    		胴CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
+    		TorsoCD = new ColorD(ref Col.Black, ref 体配色.甲0O);
     		胸版CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
     		柄CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
     	}
 
     	private void 配色T1(体配色 体配色)
     	{
-    		胴CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
+    		TorsoCD = new ColorD(ref Col.Black, ref 体配色.甲0O);
     		胸版CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
     		柄CD = new ColorD(ref Col.Black, ref 体配色.体0O);
     	}

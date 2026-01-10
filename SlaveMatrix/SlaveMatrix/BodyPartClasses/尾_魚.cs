@@ -6896,7 +6896,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 胴_外線
+    	public bool Torso_外線
     	{
     		get
     		{
@@ -8151,7 +8151,7 @@ namespace SlaveMatrix
     		尾0_表示 = e.尾0_表示;
     		輪表示 = e.輪表示;
     		尾先表示 = e.尾先表示;
-    		胴_外線 = e.胴_外線;
+    		Torso_外線 = e.Torso_外線;
     		Rパターン = e.Rパターン;
     		欠損 = e.欠損;
     		筋肉 = e.筋肉;

@@ -1462,7 +1462,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 胴
+    	public bool Torso
     	{
     		get
     		{
@@ -1714,7 +1714,7 @@ namespace SlaveMatrix
     		胸板 = e.胸板;
     		節 = e.節;
     		背板 = e.背板;
-    		胴 = e.胴;
+    		Torso = e.Torso;
     		瘤 = e.瘤;
     		欠損 = e.欠損;
     		筋肉 = e.筋肉;

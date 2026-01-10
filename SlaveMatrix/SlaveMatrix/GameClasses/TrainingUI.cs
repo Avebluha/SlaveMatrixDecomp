@@ -891,8 +891,8 @@ namespace SlaveMatrix
 
     	public void Set_くぱぁ(Ele t, bool 右)
     	{
-    		Par par = (Bod.Is獣 ? Bod.腰_獣.本体.Current.EnumAllPar().First((Par e) => e.Tag == "股") : Bod.腰.本体.Current.EnumAllPar().First((Par e) => e.Tag == "股"));
-    		Bod.腰.接続PA();
+    		Par par = (Bod.Is獣 ? Bod.Waist_獣.本体.Current.EnumAllPar().First((Par e) => e.Tag == "股") : Bod.Waist.本体.Current.EnumAllPar().First((Par e) => e.Tag == "股"));
+    		Bod.Waist.接続PA();
     		if (右)
     		{
     			t.位置B = par.Position.AddXY(0.018, 0.002);

@@ -6,13 +6,13 @@ namespace SlaveMatrix
     [Serializable]
     public class Torso_蛇D : 長胴D
     {
-    	public bool 胴_鱗_表示 = true;
+    	public bool Torso_鱗_表示 = true;
 
-    	public bool 胴_鱗左_表示 = true;
+    	public bool Torso_鱗左_表示 = true;
 
-    	public bool 胴_鱗右_表示 = true;
+    	public bool Torso_鱗右_表示 = true;
 
-    	public bool 胴_表示 = true;
+    	public bool Torso_表示 = true;
 
     	public bool 輪_革_表示 = true;
 

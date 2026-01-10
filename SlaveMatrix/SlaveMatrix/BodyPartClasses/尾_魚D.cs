@@ -629,7 +629,7 @@ namespace SlaveMatrix
 
     	public bool 鎖表示;
 
-    	public bool 胴_外線;
+    	public bool Torso_外線;
 
     	public bool Rパターン;
 

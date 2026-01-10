@@ -126,7 +126,7 @@ namespace SlaveMatrix
 
     	private bool 重胸;
 
-    	private bool 重腰;
+    	private bool 重Waist;
 
     	private bool 重腕前;
 
@@ -199,10 +199,10 @@ namespace SlaveMatrix
     				Bod.EIChest.Position = p;
     			}
     			p.Y = 0.0 - p.Y;
-    			Bod.腰.位置C = p;
-    			if (Bod.Is腰)
+    			Bod.Waist.位置C = p;
+    			if (Bod.IsWaist)
     			{
-    				Bod.EI腰.Position = p;
+    				Bod.EIWaist.Position = p;
     			}
     			if (Bod.Is半後)
     			{
@@ -255,7 +255,7 @@ namespace SlaveMatrix
     		Bod = new Bod(Med, Are, this);
     		重髪 = Bod.Is髪 && Bod.EI髪.IsHeavy();
     		重胸 = Bod.IsChest && Bod.EIChest.IsHeavy();
-    		重腰 = Bod.Is腰 && Bod.EI腰.IsHeavy();
+    		重Waist = Bod.IsWaist && Bod.EIWaist.IsHeavy();
     		重腕前 = Bod.Is腕前 && Bod.EI腕前.IsHeavy();
     		重半後 = Bod.Is半後 && Bod.EI半後.IsHeavy();
     		重半中1 = Bod.Is半中1 && Bod.EI半中1.IsHeavy();
@@ -1223,22 +1223,22 @@ namespace SlaveMatrix
     		};
     		Mots.Add(絶頂終了.GetHashCode().ToString(), 絶頂終了);
     		double kv = 0.0;
-    		Par pa = Bod.腰.本体.CurJoinRoot;
+    		Par pa = Bod.Waist.本体.CurJoinRoot;
     		Par pb = null;
     		Vector2D vec = Dat.Vec2DZero;
     		Action 腰接続 = delegate
     		{
-    			pb = cha.Bod.腰.本体.CurJoinRoot;
+    			pb = cha.Bod.Waist.本体.CurJoinRoot;
     			vec = pb.ToGlobal(pb.JP[5].Joint) - pa.ToGlobal(pa.JP[5].Joint);
-    			if (cha.Bod.Is腰)
+    			if (cha.Bod.IsWaist)
     			{
-    				if (cha.重腰)
+    				if (cha.重Waist)
     				{
-    					cha.Bod.EI腰.PositionCont = vec;
+    					cha.Bod.EIWaist.PositionCont = vec;
     				}
     				else
     				{
-    					cha.Bod.EI腰.Updatef = true;
+    					cha.Bod.EIWaist.Updatef = true;
     				}
     			}
     			if (cha.Bod.Is半後)
@@ -1303,7 +1303,7 @@ namespace SlaveMatrix
     			BaseSpeed = 20.0,
     			Staing = delegate
     			{
-    				kv = cha.Bod.腰.Yv;
+    				kv = cha.Bod.Waist.Yv;
     				cha.絶頂終了.Start();
     			},
     			Runing = delegate(Mot m)
@@ -1414,9 +1414,9 @@ namespace SlaveMatrix
     					cha.脚獣絶頂(d);
     				}
     				cha.Bod.腰振りv = d * RNG.XS.NextDouble();
-    				cha.Bod.腰.位置C = new Vector2D(0.0, 0.0005 * d);
-    				cha.Bod.乳房左.位置C = cha.Bod.腰.位置C;
-    				cha.Bod.乳房右.位置C = cha.Bod.腰.位置C;
+    				cha.Bod.Waist.位置C = new Vector2D(0.0, 0.0005 * d);
+    				cha.Bod.乳房左.位置C = cha.Bod.Waist.位置C;
+    				cha.Bod.乳房右.位置C = cha.Bod.Waist.位置C;
     				if (cha.Bod.Is腕前)
     				{
     					cha.Bod.EI腕前.Updatef = true;
@@ -1437,15 +1437,15 @@ namespace SlaveMatrix
     			Ending = delegate
     			{
     				cha.Bod.腰振り_人v = kv;
-    				cha.Bod.腰.位置C = Dat.Vec2DZero;
+    				cha.Bod.Waist.位置C = Dat.Vec2DZero;
     				if (!cha.Bod.乳房左.着衣)
     				{
     					cha.Bod.乳房左.位置C = Dat.Vec2DZero;
     					cha.Bod.乳房右.位置C = Dat.Vec2DZero;
     				}
-    				if (cha.Bod.Is腰)
+    				if (cha.Bod.IsWaist)
     				{
-    					cha.Bod.EI腰.PositionCont = Dat.Vec2DZero;
+    					cha.Bod.EIWaist.PositionCont = Dat.Vec2DZero;
     				}
     				if (cha.Bod.Is半後)
     				{
@@ -1734,9 +1734,9 @@ namespace SlaveMatrix
     					cha.脚獣絶頂(d_);
     				}
     				p_.Y = -0.001 * m.Value;
-    				cha.Bod.腰.位置C = p_;
-    				cha.Bod.乳房左.位置C = cha.Bod.腰.位置C;
-    				cha.Bod.乳房右.位置C = cha.Bod.腰.位置C;
+    				cha.Bod.Waist.位置C = p_;
+    				cha.Bod.乳房左.位置C = cha.Bod.Waist.位置C;
+    				cha.Bod.乳房右.位置C = cha.Bod.Waist.位置C;
     				if (cha.Bod.Is髪)
     				{
     					if (cha.重髪)
@@ -1759,15 +1759,15 @@ namespace SlaveMatrix
     						cha.Bod.EIChest.Updatef = true;
     					}
     				}
-    				if (cha.Bod.Is腰)
+    				if (cha.Bod.IsWaist)
     				{
-    					if (cha.重腰)
+    					if (cha.重Waist)
     					{
-    						cha.Bod.EI腰.Position = p_;
+    						cha.Bod.EIWaist.Position = p_;
     					}
     					else
     					{
-    						cha.Bod.EI腰.Updatef = true;
+    						cha.Bod.EIWaist.Updatef = true;
     					}
     				}
     				if (cha.Bod.Is腕前)
@@ -1846,7 +1846,7 @@ namespace SlaveMatrix
     			},
     			Ending = delegate
     			{
-    				cha.Bod.腰.位置C = Dat.Vec2DZero;
+    				cha.Bod.Waist.位置C = Dat.Vec2DZero;
     				if (!cha.Bod.乳房左.着衣)
     				{
     					cha.Bod.乳房左.位置C = Dat.Vec2DZero;
@@ -1860,9 +1860,9 @@ namespace SlaveMatrix
     				{
     					cha.Bod.EIChest.Position = Dat.Vec2DZero;
     				}
-    				if (cha.Bod.Is腰)
+    				if (cha.Bod.IsWaist)
     				{
-    					cha.Bod.EI腰.Position = Dat.Vec2DZero;
+    					cha.Bod.EIWaist.Position = Dat.Vec2DZero;
     				}
     				if (cha.Bod.Is腕前)
     				{

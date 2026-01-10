@@ -5,7 +5,7 @@ namespace SlaveMatrix
 {
     public class 四足腰 : Ele
     {
-    	public Par X0Y0_腰;
+    	public Par X0Y0_Waist;
 
     	public Par X0Y0_股;
 
@@ -61,7 +61,7 @@ namespace SlaveMatrix
 
     	public Par X0Y0_竜性_右_鱗2;
 
-    	public Par X0Y1_腰;
+    	public Par X0Y1_Waist;
 
     	public Par X0Y1_股;
 
@@ -117,7 +117,7 @@ namespace SlaveMatrix
 
     	public Par X0Y1_竜性_右_鱗2;
 
-    	public Par X0Y2_腰;
+    	public Par X0Y2_Waist;
 
     	public Par X0Y2_股;
 
@@ -173,7 +173,7 @@ namespace SlaveMatrix
 
     	public Par X0Y2_竜性_右_鱗2;
 
-    	public Par X0Y3_腰;
+    	public Par X0Y3_Waist;
 
     	public Par X0Y3_股;
 
@@ -229,7 +229,7 @@ namespace SlaveMatrix
 
     	public Par X0Y3_竜性_右_鱗2;
 
-    	public Par X0Y4_腰;
+    	public Par X0Y4_Waist;
 
     	public Par X0Y4_股;
 
@@ -285,7 +285,7 @@ namespace SlaveMatrix
 
     	public Par X0Y4_竜性_右_鱗2;
 
-    	public ColorD 腰CD;
+    	public ColorD WaistCD;
 
     	public ColorD 股CD;
 
@@ -341,7 +341,7 @@ namespace SlaveMatrix
 
     	public ColorD 竜性_右_鱗2CD;
 
-    	public ColorP X0Y0_腰CP;
+    	public ColorP X0Y0_WaistCP;
 
     	public ColorP X0Y0_股CP;
 
@@ -397,7 +397,7 @@ namespace SlaveMatrix
 
     	public ColorP X0Y0_竜性_右_鱗2CP;
 
-    	public ColorP X0Y1_腰CP;
+    	public ColorP X0Y1_WaistCP;
 
     	public ColorP X0Y1_股CP;
 
@@ -453,7 +453,7 @@ namespace SlaveMatrix
 
     	public ColorP X0Y1_竜性_右_鱗2CP;
 
-    	public ColorP X0Y2_腰CP;
+    	public ColorP X0Y2_WaistCP;
 
     	public ColorP X0Y2_股CP;
 
@@ -509,7 +509,7 @@ namespace SlaveMatrix
 
     	public ColorP X0Y2_竜性_右_鱗2CP;
 
-    	public ColorP X0Y3_腰CP;
+    	public ColorP X0Y3_WaistCP;
 
     	public ColorP X0Y3_股CP;
 
@@ -565,7 +565,7 @@ namespace SlaveMatrix
 
     	public ColorP X0Y3_竜性_右_鱗2CP;
 
-    	public ColorP X0Y4_腰CP;
+    	public ColorP X0Y4_WaistCP;
 
     	public ColorP X0Y4_股CP;
 
@@ -684,24 +684,24 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 腰_表示
+    	public bool Waist_表示
     	{
     		get
     		{
-    			return X0Y0_腰.Dra;
+    			return X0Y0_Waist.Dra;
     		}
     		set
     		{
-    			X0Y0_腰.Dra = value;
-    			X0Y1_腰.Dra = value;
-    			X0Y2_腰.Dra = value;
-    			X0Y3_腰.Dra = value;
-    			X0Y4_腰.Dra = value;
-    			X0Y0_腰.Hit = value;
-    			X0Y1_腰.Hit = value;
-    			X0Y2_腰.Hit = value;
-    			X0Y3_腰.Hit = value;
-    			X0Y4_腰.Hit = value;
+    			X0Y0_Waist.Dra = value;
+    			X0Y1_Waist.Dra = value;
+    			X0Y2_Waist.Dra = value;
+    			X0Y3_Waist.Dra = value;
+    			X0Y4_Waist.Dra = value;
+    			X0Y0_Waist.Hit = value;
+    			X0Y1_Waist.Hit = value;
+    			X0Y2_Waist.Hit = value;
+    			X0Y3_Waist.Hit = value;
+    			X0Y4_Waist.Hit = value;
     		}
     	}
 
@@ -1294,11 +1294,11 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return 腰_表示;
+    			return Waist_表示;
     		}
     		set
     		{
-    			腰_表示 = value;
+    			Waist_表示 = value;
     			股_表示 = value;
     			下腹_表示 = value;
     			腰皺_表示 = value;
@@ -1333,11 +1333,11 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return 腰CD.不透明度;
+    			return WaistCD.不透明度;
     		}
     		set
     		{
-    			腰CD.不透明度 = value;
+    			WaistCD.不透明度 = value;
     			股CD.不透明度 = value;
     			下腹CD.不透明度 = value;
     			腰皺CD.不透明度 = value;
@@ -1368,25 +1368,25 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public JointS 腿左_接続点 => new JointS(本体, X0Y0_腰, 0);
+    	public JointS 腿左_接続点 => new JointS(本体, X0Y0_Waist, 0);
 
-    	public JointS 腿右_接続点 => new JointS(本体, X0Y0_腰, 1);
+    	public JointS 腿右_接続点 => new JointS(本体, X0Y0_Waist, 1);
 
-    	public JointS 膣基_接続点 => new JointS(本体, X0Y0_腰, 3);
+    	public JointS 膣基_接続点 => new JointS(本体, X0Y0_Waist, 3);
 
-    	public JointS 肛門_接続点 => new JointS(本体, X0Y0_腰, 4);
+    	public JointS 肛門_接続点 => new JointS(本体, X0Y0_Waist, 4);
 
-    	public JointS 尾_接続点 => new JointS(本体, X0Y0_腰, 4);
+    	public JointS 尾_接続点 => new JointS(本体, X0Y0_Waist, 4);
 
-    	public JointS 半身_接続点 => new JointS(本体, X0Y0_腰, 4);
+    	public JointS 半身_接続点 => new JointS(本体, X0Y0_Waist, 4);
 
-    	public JointS 上着_接続点 => new JointS(本体, X0Y0_腰, 5);
+    	public JointS 上着_接続点 => new JointS(本体, X0Y0_Waist, 5);
 
-    	public JointS 肌_接続点 => new JointS(本体, X0Y0_腰, 6);
+    	public JointS 肌_接続点 => new JointS(本体, X0Y0_Waist, 6);
 
-    	public JointS 翼左_接続点 => new JointS(本体, X0Y0_腰, 7);
+    	public JointS 翼左_接続点 => new JointS(本体, X0Y0_Waist, 7);
 
-    	public JointS 翼右_接続点 => new JointS(本体, X0Y0_腰, 8);
+    	public JointS 翼右_接続点 => new JointS(本体, X0Y0_Waist, 8);
 
     	public 四足腰(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 四足腰D e)
     	{
@@ -1394,7 +1394,7 @@ namespace SlaveMatrix
     		ThisType = GetType();
     		本体 = new Difs(Sta.半身["四足腰"]);
     		Pars pars = 本体[0][0];
-    		X0Y0_腰 = pars["腰"].ToPar();
+    		X0Y0_Waist = pars["腰"].ToPar();
             X0Y0_股 = pars["股"].ToPar();
     		X0Y0_下腹 = pars["下腹"].ToPar();
     		X0Y0_腰皺 = pars["腰皺"].ToPar();
@@ -1432,7 +1432,7 @@ namespace SlaveMatrix
     		X0Y0_竜性_右_鱗1 = pars3["鱗1"].ToPar();
     		X0Y0_竜性_右_鱗2 = pars3["鱗2"].ToPar();
     		pars = 本体[0][1];
-    		X0Y1_腰 = pars["腰"].ToPar();
+    		X0Y1_Waist = pars["腰"].ToPar();
     		X0Y1_股 = pars["股"].ToPar();
     		X0Y1_下腹 = pars["下腹"].ToPar();
     		X0Y1_腰皺 = pars["腰皺"].ToPar();
@@ -1470,7 +1470,7 @@ namespace SlaveMatrix
     		X0Y1_竜性_右_鱗1 = pars3["鱗1"].ToPar();
     		X0Y1_竜性_右_鱗2 = pars3["鱗2"].ToPar();
     		pars = 本体[0][2];
-    		X0Y2_腰 = pars["腰"].ToPar();
+    		X0Y2_Waist = pars["腰"].ToPar();
     		X0Y2_股 = pars["股"].ToPar();
     		X0Y2_下腹 = pars["下腹"].ToPar();
     		X0Y2_腰皺 = pars["腰皺"].ToPar();
@@ -1508,7 +1508,7 @@ namespace SlaveMatrix
     		X0Y2_竜性_右_鱗1 = pars3["鱗1"].ToPar();
     		X0Y2_竜性_右_鱗2 = pars3["鱗2"].ToPar();
     		pars = 本体[0][3];
-    		X0Y3_腰 = pars["腰"].ToPar();
+    		X0Y3_Waist = pars["腰"].ToPar();
     		X0Y3_股 = pars["股"].ToPar();
     		X0Y3_下腹 = pars["下腹"].ToPar();
     		X0Y3_腰皺 = pars["腰皺"].ToPar();
@@ -1546,7 +1546,7 @@ namespace SlaveMatrix
     		X0Y3_竜性_右_鱗1 = pars3["鱗1"].ToPar();
     		X0Y3_竜性_右_鱗2 = pars3["鱗2"].ToPar();
     		pars = 本体[0][4];
-    		X0Y4_腰 = pars["腰"].ToPar();
+    		X0Y4_Waist = pars["腰"].ToPar();
     		X0Y4_股 = pars["股"].ToPar();
     		X0Y4_下腹 = pars["下腹"].ToPar();
     		X0Y4_腰皺 = pars["腰皺"].ToPar();
@@ -1607,7 +1607,7 @@ namespace SlaveMatrix
     		サイズ = e.サイズ;
     		サイズX = e.サイズX;
     		サイズY = e.サイズY;
-    		腰_表示 = e.腰_表示;
+    		Waist_表示 = e.Waist_表示;
     		股_表示 = e.股_表示;
     		下腹_表示 = e.下腹_表示;
     		腰皺_表示 = e.腰皺_表示;
@@ -1755,7 +1755,7 @@ namespace SlaveMatrix
     		}
     		base.配色指定 = 配色指定;
     		配色(体配色);
-    		X0Y0_腰CP = new ColorP(X0Y0_腰, 腰CD, DisUnit, abj: true);
+    		X0Y0_WaistCP = new ColorP(X0Y0_Waist, WaistCD, DisUnit, abj: true);
     		X0Y0_股CP = new ColorP(X0Y0_股, 股CD, DisUnit, abj: false);
     		X0Y0_下腹CP = new ColorP(X0Y0_下腹, 下腹CD, DisUnit, abj: false);
     		X0Y0_腰皺CP = new ColorP(X0Y0_腰皺, 腰皺CD, DisUnit, abj: false);
@@ -1783,7 +1783,7 @@ namespace SlaveMatrix
     		X0Y0_竜性_左_鱗2CP = new ColorP(X0Y0_竜性_左_鱗2, 竜性_左_鱗2CD, DisUnit, abj: true);
     		X0Y0_竜性_右_鱗1CP = new ColorP(X0Y0_竜性_右_鱗1, 竜性_右_鱗1CD, DisUnit, abj: true);
     		X0Y0_竜性_右_鱗2CP = new ColorP(X0Y0_竜性_右_鱗2, 竜性_右_鱗2CD, DisUnit, abj: true);
-    		X0Y1_腰CP = new ColorP(X0Y1_腰, 腰CD, DisUnit, abj: true);
+    		X0Y1_WaistCP = new ColorP(X0Y1_Waist, WaistCD, DisUnit, abj: true);
     		X0Y1_股CP = new ColorP(X0Y1_股, 股CD, DisUnit, abj: false);
     		X0Y1_下腹CP = new ColorP(X0Y1_下腹, 下腹CD, DisUnit, abj: false);
     		X0Y1_腰皺CP = new ColorP(X0Y1_腰皺, 腰皺CD, DisUnit, abj: false);
@@ -1811,7 +1811,7 @@ namespace SlaveMatrix
     		X0Y1_竜性_左_鱗2CP = new ColorP(X0Y1_竜性_左_鱗2, 竜性_左_鱗2CD, DisUnit, abj: true);
     		X0Y1_竜性_右_鱗1CP = new ColorP(X0Y1_竜性_右_鱗1, 竜性_右_鱗1CD, DisUnit, abj: true);
     		X0Y1_竜性_右_鱗2CP = new ColorP(X0Y1_竜性_右_鱗2, 竜性_右_鱗2CD, DisUnit, abj: true);
-    		X0Y2_腰CP = new ColorP(X0Y2_腰, 腰CD, DisUnit, abj: true);
+    		X0Y2_WaistCP = new ColorP(X0Y2_Waist, WaistCD, DisUnit, abj: true);
     		X0Y2_股CP = new ColorP(X0Y2_股, 股CD, DisUnit, abj: false);
     		X0Y2_下腹CP = new ColorP(X0Y2_下腹, 下腹CD, DisUnit, abj: false);
     		X0Y2_腰皺CP = new ColorP(X0Y2_腰皺, 腰皺CD, DisUnit, abj: false);
@@ -1839,7 +1839,7 @@ namespace SlaveMatrix
     		X0Y2_竜性_左_鱗2CP = new ColorP(X0Y2_竜性_左_鱗2, 竜性_左_鱗2CD, DisUnit, abj: true);
     		X0Y2_竜性_右_鱗1CP = new ColorP(X0Y2_竜性_右_鱗1, 竜性_右_鱗1CD, DisUnit, abj: true);
     		X0Y2_竜性_右_鱗2CP = new ColorP(X0Y2_竜性_右_鱗2, 竜性_右_鱗2CD, DisUnit, abj: true);
-    		X0Y3_腰CP = new ColorP(X0Y3_腰, 腰CD, DisUnit, abj: true);
+    		X0Y3_WaistCP = new ColorP(X0Y3_Waist, WaistCD, DisUnit, abj: true);
     		X0Y3_股CP = new ColorP(X0Y3_股, 股CD, DisUnit, abj: false);
     		X0Y3_下腹CP = new ColorP(X0Y3_下腹, 下腹CD, DisUnit, abj: false);
     		X0Y3_腰皺CP = new ColorP(X0Y3_腰皺, 腰皺CD, DisUnit, abj: false);
@@ -1867,7 +1867,7 @@ namespace SlaveMatrix
     		X0Y3_竜性_左_鱗2CP = new ColorP(X0Y3_竜性_左_鱗2, 竜性_左_鱗2CD, DisUnit, abj: true);
     		X0Y3_竜性_右_鱗1CP = new ColorP(X0Y3_竜性_右_鱗1, 竜性_右_鱗1CD, DisUnit, abj: true);
     		X0Y3_竜性_右_鱗2CP = new ColorP(X0Y3_竜性_右_鱗2, 竜性_右_鱗2CD, DisUnit, abj: true);
-    		X0Y4_腰CP = new ColorP(X0Y4_腰, 腰CD, DisUnit, abj: true);
+    		X0Y4_WaistCP = new ColorP(X0Y4_Waist, WaistCD, DisUnit, abj: true);
     		X0Y4_股CP = new ColorP(X0Y4_股, 股CD, DisUnit, abj: false);
     		X0Y4_下腹CP = new ColorP(X0Y4_下腹, 下腹CD, DisUnit, abj: false);
     		X0Y4_腰皺CP = new ColorP(X0Y4_腰皺, 腰皺CD, DisUnit, abj: false);
@@ -1923,7 +1923,7 @@ namespace SlaveMatrix
     		switch (本体.IndexY)
     		{
     		case 0:
-    			X0Y0_腰CP.Update();
+    			X0Y0_WaistCP.Update();
     			X0Y0_股CP.Update();
     			X0Y0_下腹CP.Update();
     			X0Y0_腰皺CP.Update();
@@ -1953,7 +1953,7 @@ namespace SlaveMatrix
     			X0Y0_竜性_右_鱗2CP.Update();
     			break;
     		case 1:
-    			X0Y1_腰CP.Update();
+    			X0Y1_WaistCP.Update();
     			X0Y1_股CP.Update();
     			X0Y1_下腹CP.Update();
     			X0Y1_腰皺CP.Update();
@@ -1983,7 +1983,7 @@ namespace SlaveMatrix
     			X0Y1_竜性_右_鱗2CP.Update();
     			break;
     		case 2:
-    			X0Y2_腰CP.Update();
+    			X0Y2_WaistCP.Update();
     			X0Y2_股CP.Update();
     			X0Y2_下腹CP.Update();
     			X0Y2_腰皺CP.Update();
@@ -2013,7 +2013,7 @@ namespace SlaveMatrix
     			X0Y2_竜性_右_鱗2CP.Update();
     			break;
     		case 3:
-    			X0Y3_腰CP.Update();
+    			X0Y3_WaistCP.Update();
     			X0Y3_股CP.Update();
     			X0Y3_下腹CP.Update();
     			X0Y3_腰皺CP.Update();
@@ -2043,7 +2043,7 @@ namespace SlaveMatrix
     			X0Y3_竜性_右_鱗2CP.Update();
     			break;
     		default:
-    			X0Y4_腰CP.Update();
+    			X0Y4_WaistCP.Update();
     			X0Y4_股CP.Update();
     			X0Y4_下腹CP.Update();
     			X0Y4_腰皺CP.Update();
@@ -2096,7 +2096,7 @@ namespace SlaveMatrix
 
     	private void 配色N0(体配色 体配色)
     	{
-    		腰CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
+    		WaistCD = new ColorD(ref Col.Black, ref 体配色.毛0O);
     		股CD = new ColorD(ref 体配色.薄線, ref 体配色.毛0O);
     		下腹CD = new ColorD(ref 体配色.薄線, ref 体配色.毛0O);
     		腰皺CD = new ColorD(ref 体配色.薄線, ref Color2.Empty);
@@ -2128,7 +2128,7 @@ namespace SlaveMatrix
 
     	private void 配色T0(体配色 体配色)
     	{
-    		腰CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
+    		WaistCD = new ColorD(ref Col.Black, ref 体配色.毛0O);
     		股CD = new ColorD(ref 体配色.薄線, ref 体配色.毛0O);
     		下腹CD = new ColorD(ref 体配色.薄線, ref 体配色.毛0O);
     		腰皺CD = new ColorD(ref 体配色.薄線, ref Color2.Empty);
@@ -2160,7 +2160,7 @@ namespace SlaveMatrix
 
     	private void 配色T1(体配色 体配色)
     	{
-    		腰CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
+    		WaistCD = new ColorD(ref Col.Black, ref 体配色.毛0O);
     		股CD = new ColorD(ref 体配色.薄線, ref 体配色.毛0O);
     		下腹CD = new ColorD(ref 体配色.薄線, ref 体配色.毛0O);
     		腰皺CD = new ColorD(ref 体配色.薄線, ref Color2.Empty);

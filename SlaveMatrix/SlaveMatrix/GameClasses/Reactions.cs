@@ -8635,8 +8635,8 @@ namespace SlaveMatrix
     	{
     		触手_犬 触手_犬2 = Cha.Bod.触手犬右[n];
     		触手_犬2.SetAngle0();
-    		触手_犬2.X0Y0_脚後_UpperArm.AngleBase -= 触手_犬2.X0Y0_胴_節9_胴.Angle;
-    		触手_犬2.X0Y0_脚前_UpperArm.AngleBase -= 触手_犬2.X0Y0_胴_節9_胴.Angle;
+    		触手_犬2.X0Y0_脚後_UpperArm.AngleBase -= 触手_犬2.X0Y0_Torso_節9_Torso.Angle;
+    		触手_犬2.X0Y0_脚前_UpperArm.AngleBase -= 触手_犬2.X0Y0_Torso_節9_Torso.Angle;
     		触手_犬2.X0Y0_頭_口膜_口膜1.AngleBase -= 17.0;
     		触手_犬2.X0Y0_脚後_UpperArm.AngleBase += 0.0 - UpperArm角度 + (0.0 - u1);
     		触手_犬2.X0Y0_脚後_LowerArm.AngleBase += 0.0 - LowerArm角度 + (0.0 - u2);

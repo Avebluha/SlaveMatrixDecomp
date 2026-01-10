@@ -7,7 +7,7 @@ namespace SlaveMatrix
     [Serializable]
     public class TorsoD : EleD
     {
-    	public bool 胴_表示 = true;
+    	public bool Torso_表示 = true;
 
     	public bool 筋肉_筋肉左_表示;
 

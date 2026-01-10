@@ -895,7 +895,7 @@ namespace SlaveMatrix
     		ConnectionInfo.四足胸_翼下右_接続 => 0, 
     		ConnectionInfo.四足胸_背中_接続 => 0, 
     		ConnectionInfo.四足脇_UpperArm_接続 => 1, 
-    		ConnectionInfo.四足胴_腰_接続 => 0, 
+    		ConnectionInfo.四足胴_Waist_接続 => 0, 
     		ConnectionInfo.四足胴_肌_接続 => 1, 
     		ConnectionInfo.四足胴_翼左_接続 => 0, 
     		ConnectionInfo.四足胴_翼右_接続 => 0, 

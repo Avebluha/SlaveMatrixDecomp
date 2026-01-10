@@ -7,7 +7,7 @@ namespace SlaveMatrix
     [Serializable]
     public class 四足腰D : EleD
     {
-    	public bool 腰_表示 = true;
+    	public bool Waist_表示 = true;
 
     	public bool 股_表示 = true;
 

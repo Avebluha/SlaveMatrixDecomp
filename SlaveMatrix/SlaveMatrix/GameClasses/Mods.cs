@@ -1763,11 +1763,11 @@ namespace SlaveMatrix
                     Player.SensBox();
                     if (TrainingTarget.Bod.Is獣)
                     {
-                        TrainingTarget.Bod.腰.位置B = Med.Base.GetPosition(new Vector2D(0.5, 0.5)).AddY(-0.03);
+                        TrainingTarget.Bod.Waist.位置B = Med.Base.GetPosition(new Vector2D(0.5, 0.5)).AddY(-0.03);
                     }
                     else if (TrainingTarget.Bod.Is半身)
                     {
-                        TrainingTarget.Bod.腰.位置B = Med.Base.GetPosition(new Vector2D(0.5, 0.5)).AddY(-0.02);
+                        TrainingTarget.Bod.Waist.位置B = Med.Base.GetPosition(new Vector2D(0.5, 0.5)).AddY(-0.02);
                     }
                     TrainingTarget.Bod.Join();
                     TrainingTarget.Bod.Update();
@@ -1948,7 +1948,7 @@ namespace SlaveMatrix
                     TrainingTarget.Bod.膣内精液.精液濃度 = 0.0;
                     TrainingTarget.Bod.断面.精液濃度 = 0.0;
                     TrainingTarget.Bod.スタンプClear();
-                    TrainingTarget.Bod.腰.位置B = Med.Base.GetPosition(new Vector2D(0.5, 0.5));
+                    TrainingTarget.Bod.Waist.位置B = Med.Base.GetPosition(new Vector2D(0.5, 0.5));
                     TrainingTarget.Bod.汗染み濃度 = 0.0;
                     TrainingTarget.Bod.飛沫濃度 = 0.0;
                     TrainingTarget.Bod.潮染み濃度 = 0.0;
@@ -1962,7 +1962,7 @@ namespace SlaveMatrix
                     TrainingTarget.性器精液垂れ.End();
                     TrainingTarget.肛門精液垂れ.End();
                     TrainingTarget.出糸精液垂れ.End();
-                    TrainingTarget.Bod.Set腰();
+                    TrainingTarget.Bod.SetWaist();
                     if (Sta.GameData.TrainingTarget.Trained)
                     {
                         TrainingTarget.Bod.拘束具_表示 = false;

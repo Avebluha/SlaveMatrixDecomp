@@ -8,7 +8,7 @@ namespace SlaveMatrix
     [Serializable]
     public class 多足_蜘D : 半身D
     {
-    	public bool 胴_表示 = true;
+    	public bool Torso_表示 = true;
 
     	public bool 胸版_表示 = true;
 

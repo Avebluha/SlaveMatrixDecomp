@@ -7,7 +7,7 @@ namespace SlaveMatrix
     [Serializable]
     public class 四足胴D : EleD
     {
-    	public bool 胴_表示 = true;
+    	public bool Torso_表示 = true;
 
     	public bool 筋肉_筋肉左_表示 = true;
 
@@ -19,7 +19,7 @@ namespace SlaveMatrix
 
     	public double 筋肉濃度 = 1.0;
 
-    	public List<EleD> 腰_接続 = new List<EleD>();
+    	public List<EleD> Waist_接続 = new List<EleD>();
 
     	public List<EleD> 肌_接続 = new List<EleD>();
 
@@ -34,9 +34,9 @@ namespace SlaveMatrix
 
     	public void 腰接続(EleD e)
     	{
-    		腰_接続.Add(e);
+    		Waist_接続.Add(e);
     		e.Par = this;
-    		e.接続情報 = ConnectionInfo.四足胴_腰_接続;
+    		e.接続情報 = ConnectionInfo.四足胴_Waist_接続;
     	}
 
     	public void 肌接続(EleD e)

@@ -7,7 +7,7 @@ namespace SlaveMatrix
     [Serializable]
     public class 多足_蛸D : 半身D
     {
-    	public bool 胴_表示 = true;
+    	public bool Torso_表示 = true;
 
     	public List<EleD> 軟体外左_接続 = new List<EleD>();
 

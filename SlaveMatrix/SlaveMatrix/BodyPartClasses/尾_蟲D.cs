@@ -137,7 +137,7 @@ namespace SlaveMatrix
 
     	public bool 背板 = true;
 
-    	public bool 胴 = true;
+    	public bool Torso = true;
 
     	public bool 瘤 = true;
 

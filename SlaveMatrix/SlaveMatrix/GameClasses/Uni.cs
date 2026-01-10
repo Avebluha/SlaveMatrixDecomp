@@ -62,7 +62,7 @@ namespace SlaveMatrix
     		return obj;
     	}
 
-    	public static WaistD 腰()
+    	public static WaistD Waist()
     	{
     		WaistD waist_description = new WaistD();
     		waist_description.膣基接続(new 膣基_人D());

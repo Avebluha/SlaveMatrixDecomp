@@ -54,15 +54,15 @@ namespace SlaveMatrix
 
     	public static Type Shouldert;
 
-    	public static Type 胴t;
+    	public static Type Torsot;
 
-    	public static Type 腰t;
+    	public static Type Waistt;
 
     	public static Type 尾_鯨t;
 
-    	public static Type 上腕_人t;
+    	public static Type UpperArm_人t;
 
-    	public static Type 上腕_鳥t;
+    	public static Type UpperArm_鳥t;
 
     	public static Type 長物_鯨t;
 
@@ -1099,7 +1099,10 @@ namespace SlaveMatrix
             //Ser.ToJson(肩左, "C:\\Users\\dave\\Documents\\肩左.json");
             //肩左 = Ser.UnJson<Obj>("C:\\Users\\dave\\Documents\\肩左.json");
 
-            腕左 = Resources.腕左.ObjLoad();
+
+            obj = Resources.腕左.ObjLoad();
+            obj.MigrateKeys();
+            腕左 = obj;
             //腕左.SaveExMod("C:\\Users\\dave\\Documents\\腕左");
             //Ser.ToJson(腕左, "C:\\Users\\dave\\Documents\\腕左.json");
             //腕左 = Ser.UnJson<Obj>("C:\\Users\\dave\\Documents\\腕左.json");
@@ -1166,11 +1169,11 @@ namespace SlaveMatrix
     		EleDt = typeof(EleD);
     		Chestt = typeof(Chest);
     		Shouldert = typeof(Shoulder);
-    		胴t = typeof(Torso);
-    		腰t = typeof(Waist);
+    		Torsot = typeof(Torso);
+    		Waistt = typeof(Waist);
     		尾_鯨t = typeof(尾_鯨);
-    		上腕_人t = typeof(UpperArm_人);
-    		上腕_鳥t = typeof(UpperArm_鳥);
+    		UpperArm_人t = typeof(UpperArm_人);
+    		UpperArm_鳥t = typeof(UpperArm_鳥);
     		長物_鯨t = typeof(長物_鯨);
     		後髪0_ジグDt = typeof(BackHair0_ジグD);
     		後髪0_ハネDt = typeof(BackHair0_ハネD);
@@ -1371,7 +1374,7 @@ namespace SlaveMatrix
     			ConnectionInfo.四足胸_Torso_接続,
     			ConnectionInfo.四足胸_肌_接続,
     			ConnectionInfo.四足胸_背中_接続,
-    			ConnectionInfo.四足胴_腰_接続,
+    			ConnectionInfo.四足胴_Waist_接続,
     			ConnectionInfo.四足胴_肌_接続,
     			ConnectionInfo.四足腰_膣基_接続,
     			ConnectionInfo.四足腰_肛門_接続,

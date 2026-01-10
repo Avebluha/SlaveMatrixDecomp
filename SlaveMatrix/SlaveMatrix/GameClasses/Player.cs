@@ -2315,7 +2315,7 @@ namespace SlaveMatrix
     		}
     		if (Cha.Bod.Is初期腰)
     		{
-    			Cha.Bod.Set腰();
+    			Cha.Bod.SetWaist();
     		}
     		Cha.Emotion();
     		Cha.UpdateExpression();
@@ -2331,7 +2331,7 @@ namespace SlaveMatrix
     		if (Virgin && CurrentActionType == ActionType.Insertion && (CurrentToolType == ToolType.Penis || CurrentToolType == ToolType.Dildo || CurrentToolType == ToolType.Vibrator || CurrentToolType == ToolType.Drill || CurrentToolType == ToolType.デンマ || CurrentToolType == ToolType.AnalVibrator) && CurrentContactType == ContactType.Vagina && 挿入Lvn > 2)
     		{
     			Reaction2();
-    			Cha.Bod.腰.位置B += Oth.GetRandomVector() * 0.0004;
+    			Cha.Bod.Waist.位置B += Oth.GetRandomVector() * 0.0004;
     			Cha.Bod.腰振りv = RNG.XS.NextDouble();
     			switch (RNG.XS.Next(2))
     			{
@@ -2393,7 +2393,7 @@ namespace SlaveMatrix
     	public static void Reaction1()
     	{
     		Reaction2();
-    		Cha.Bod.腰.位置B += Oth.GetRandomVector() * 0.0004;
+    		Cha.Bod.Waist.位置B += Oth.GetRandomVector() * 0.0004;
     		Cha.Bod.腰振りv = RNG.XS.NextDouble();
     		Cha.Emotion();
     		Cha.UpdateExpression();

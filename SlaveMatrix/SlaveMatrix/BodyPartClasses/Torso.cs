@@ -5,7 +5,7 @@ namespace SlaveMatrix
 {
     public class Torso : Ele
     {
-    	public Par X0Y0_胴;
+    	public Par X0Y0_Torso;
 
     	public Par X0Y0_筋肉_筋肉左;
 
@@ -23,7 +23,7 @@ namespace SlaveMatrix
 
     	public Par X0Y0_植タトゥ_右_タトゥ1;
 
-    	public ColorD 胴CD;
+    	public ColorD TorsoCD;
 
     	public ColorD 筋肉_筋肉左CD;
 
@@ -41,7 +41,7 @@ namespace SlaveMatrix
 
     	public ColorD 植タトゥ_右_タトゥ1CD;
 
-    	public ColorP X0Y0_胴CP;
+    	public ColorP X0Y0_TorsoCP;
 
     	public ColorP X0Y0_筋肉_筋肉左CP;
 
@@ -109,16 +109,16 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 胴_表示
+    	public bool Torso_表示
     	{
     		get
     		{
-    			return X0Y0_胴.Dra;
+    			return X0Y0_Torso.Dra;
     		}
     		set
     		{
-    			X0Y0_胴.Dra = value;
-    			X0Y0_胴.Hit = value;
+    			X0Y0_Torso.Dra = value;
+    			X0Y0_Torso.Hit = value;
     		}
     	}
 
@@ -243,11 +243,11 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return 胴_表示;
+    			return Torso_表示;
     		}
     		set
     		{
-    			胴_表示 = value;
+    			Torso_表示 = value;
     			筋肉_筋肉左_表示 = value;
     			筋肉_筋肉右_表示 = value;
     			獣性_獣毛左_表示 = value;
@@ -263,11 +263,11 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return 胴CD.不透明度;
+    			return TorsoCD.不透明度;
     		}
     		set
     		{
-    			胴CD.不透明度 = value;
+    			TorsoCD.不透明度 = value;
     			筋肉_筋肉左CD.不透明度 = value;
     			筋肉_筋肉右CD.不透明度 = value;
     			獣性_獣毛左CD.不透明度 = value;
@@ -279,22 +279,22 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public JointS Chest_接続点 => new JointS(本体, X0Y0_胴, 0);
+    	public JointS Chest_接続点 => new JointS(本体, X0Y0_Torso, 0);
 
-    	public JointS 肌_接続点 => new JointS(本体, X0Y0_胴, 5);
+    	public JointS 肌_接続点 => new JointS(本体, X0Y0_Torso, 5);
 
-    	public JointS 翼左_接続点 => new JointS(本体, X0Y0_胴, 1);
+    	public JointS 翼左_接続点 => new JointS(本体, X0Y0_Torso, 1);
 
-    	public JointS 翼右_接続点 => new JointS(本体, X0Y0_胴, 2);
+    	public JointS 翼右_接続点 => new JointS(本体, X0Y0_Torso, 2);
 
     	public Torso(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, TorsoD e)
     	{
-    		Torso 胴2 = this;
+    		Torso Torso2 = this;
     		ThisType = GetType();
             //This had no Torso (胴体)
             本体 = new Difs(Sta.胴体["Torso"]);
     		Pars pars = 本体[0][0];
-    		X0Y0_胴 = pars["胴"].ToPar();
+    		X0Y0_Torso = pars["胴"].ToPar();
     		Pars pars2 = pars["筋肉"].ToPars();
     		X0Y0_筋肉_筋肉左 = pars2["筋肉左"].ToPar();
     		X0Y0_筋肉_筋肉右 = pars2["筋肉右"].ToPar();
@@ -332,7 +332,7 @@ namespace SlaveMatrix
     		サイズ = e.サイズ;
     		サイズX = e.サイズX;
     		サイズY = e.サイズY;
-    		胴_表示 = e.胴_表示;
+    		Torso_表示 = e.Torso_表示;
     		筋肉_筋肉左_表示 = e.筋肉_筋肉左_表示;
     		筋肉_筋肉右_表示 = e.筋肉_筋肉右_表示;
     		獣性_獣毛左_表示 = e.獣性_獣毛左_表示;
@@ -354,9 +354,9 @@ namespace SlaveMatrix
     			Chest_接続 = e.Chest_接続.Select(delegate(EleD g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
-    				f.Par = 胴2;
+    				f.Par = Torso2;
     				f.ConnectionType = ConnectionInfo.Torso_Chest_接続;
-    				f.接続(胴2.Chest_接続点);
+    				f.接続(Torso2.Chest_接続点);
     				return f;
     			}).ToArray();
     		}
@@ -365,9 +365,9 @@ namespace SlaveMatrix
     			肌_接続 = e.肌_接続.Select(delegate(EleD g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
-    				f.Par = 胴2;
+    				f.Par = Torso2;
     				f.ConnectionType = ConnectionInfo.Torso_肌_接続;
-    				f.接続(胴2.肌_接続点);
+    				f.接続(Torso2.肌_接続点);
     				return f;
     			}).ToArray();
     		}
@@ -376,9 +376,9 @@ namespace SlaveMatrix
     			翼左_接続 = e.翼左_接続.Select(delegate(EleD g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
-    				f.Par = 胴2;
+    				f.Par = Torso2;
     				f.ConnectionType = ConnectionInfo.Torso_翼左_接続;
-    				f.接続(胴2.翼左_接続点);
+    				f.接続(Torso2.翼左_接続点);
     				return f;
     			}).ToArray();
     		}
@@ -387,15 +387,15 @@ namespace SlaveMatrix
     			翼右_接続 = e.翼右_接続.Select(delegate(EleD g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
-    				f.Par = 胴2;
+    				f.Par = Torso2;
     				f.ConnectionType = ConnectionInfo.Torso_翼右_接続;
-    				f.接続(胴2.翼右_接続点);
+    				f.接続(Torso2.翼右_接続点);
     				return f;
     			}).ToArray();
     		}
     		base.配色指定 = 配色指定;
     		配色(体配色);
-    		X0Y0_胴CP = new ColorP(X0Y0_胴, 胴CD, DisUnit, abj: true);
+    		X0Y0_TorsoCP = new ColorP(X0Y0_Torso, TorsoCD, DisUnit, abj: true);
     		X0Y0_筋肉_筋肉左CP = new ColorP(X0Y0_筋肉_筋肉左, 筋肉_筋肉左CD, DisUnit, abj: false);
     		X0Y0_筋肉_筋肉右CP = new ColorP(X0Y0_筋肉_筋肉右, 筋肉_筋肉右CD, DisUnit, abj: false);
     		X0Y0_獣性_獣毛左CP = new ColorP(X0Y0_獣性_獣毛左, 獣性_獣毛左CD, DisUnit, abj: true);
@@ -418,7 +418,7 @@ namespace SlaveMatrix
 
     	public override void 色更新()
     	{
-    		X0Y0_胴CP.Update();
+    		X0Y0_TorsoCP.Update();
     		X0Y0_筋肉_筋肉左CP.Update();
     		X0Y0_筋肉_筋肉右CP.Update();
     		X0Y0_獣性_獣毛左CP.Update();
@@ -436,7 +436,7 @@ namespace SlaveMatrix
 
     	private void 配色N0(体配色 体配色)
     	{
-    		胴CD = new ColorD(ref Col.Black, ref 体配色.人肌R);
+    		TorsoCD = new ColorD(ref Col.Black, ref 体配色.人肌R);
     		筋肉_筋肉左CD = new ColorD(ref 体配色.薄線, ref 体配色.人肌O);
     		筋肉_筋肉右CD = new ColorD(ref 体配色.薄線, ref 体配色.人肌O);
     		獣性_獣毛左CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
