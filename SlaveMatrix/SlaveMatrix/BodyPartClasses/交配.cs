@@ -87,7 +87,7 @@ namespace SlaveMatrix
     		Sta.鳳凰Dt.ToString()
     	};
 
-    	private static HashSet<string> 肩人 = new HashSet<string> { Sta.ShoulderDt.ToString() };
+    	private static HashSet<string> 肩人 = new HashSet<string> { Sta.ShoulderDType.ToString() };
 
     	private static HashSet<string> 胸翼上人 = new HashSet<string>
     	{
@@ -1797,33 +1797,33 @@ namespace SlaveMatrix
     		int i = (原種モード ? RNG.XS.Next(3) : RNG.XS.Next(7));
     		Dictionary<ConnectionInfo, List<Type>> 接続構成 = Get接続構成(母方, 父方);
     		Type[] 要素構成 = Get要素構成(母方, 父方);
-    		HeadD 頭D2 = Mix<HeadD>(母方, 父方, i, 原種モード);
+    		HeadD HeadD2 = Mix<HeadD>(母方, 父方, i, 原種モード);
     		基髪D 基髪D2 = new 基髪D();
-    		頭D2.基髪接続(基髪D2);
-    		頭D2.目左接続(new 目傷D());
-    		頭D2.目右接続(new 目傷D
+    		HeadD2.基髪接続(基髪D2);
+    		HeadD2.目左接続(new 目傷D());
+    		HeadD2.目右接続(new 目傷D
     		{
     			右 = true
     		});
-    		頭D2.目左接続(new 目尻影D());
-    		頭D2.目右接続(new 目尻影D
+    		HeadD2.目左接続(new 目尻影D());
+    		HeadD2.目右接続(new 目尻影D
     		{
     			右 = true
     		});
     		鼻肌D 鼻肌D2;
-    		頭D2.鼻肌接続(鼻肌D2 = Mix<鼻肌D>(母方, 父方, i, 原種モード));
-    		頭D2.鼻肌接続(new 紅潮D());
+    		HeadD2.鼻肌接続(鼻肌D2 = Mix<鼻肌D>(母方, 父方, i, 原種モード));
+    		HeadD2.鼻肌接続(new 紅潮D());
     		頬肌D 頬肌D2 = Mix<頬肌D>(母方, 父方, 右: false, i, 原種モード);
-    		頭D2.頬肌左接続(頬肌D2);
-    		頭D2.頬肌右接続(頬肌D2.Get逆());
+    		HeadD2.頬肌左接続(頬肌D2);
+    		HeadD2.頬肌右接続(頬肌D2.Get逆());
     		顔ハイライトD 顔ハイライトD2 = Mix<顔ハイライトD>(母方, 父方, 右: false, i, 原種モード);
-    		頭D2.頬左接続(顔ハイライトD2);
-    		頭D2.頬右接続(顔ハイライトD2.Get逆());
-    		頭D2.単眼目接続(new 目隠帯D());
-    		頭D2.口接続(new 玉口枷D());
-    		頭D2.AlignC();
+    		HeadD2.頬左接続(顔ハイライトD2);
+    		HeadD2.頬右接続(顔ハイライトD2.Get逆());
+    		HeadD2.単眼目接続(new 目隠帯D());
+    		HeadD2.口接続(new 玉口枷D());
+    		HeadD2.AlignC();
     		NeckD 首D2 = Mix<NeckD>(母方, 父方, i, 原種モード);
-    		首D2.頭接続(頭D2);
+    		首D2.頭接続(HeadD2);
     		ChestD ChestD2 = Mix<ChestD>(母方, 父方, i, 原種モード);
     		乳房D 乳房D2 = Mix<乳房D>(母方, 父方, 右: false, i, 原種モード);
     		乳房D2.噴乳接続(new 噴乳D());
@@ -1963,31 +1963,31 @@ namespace SlaveMatrix
     					{
     						双目D2.瞼接続(双瞼D2);
     						双目D2.瞼接続(new 涙D());
-    						頭D2.目左接続(双目D2);
-    						頭D2.目右接続(双目D3 = (双目D)双目D2.Get逆());
+    						HeadD2.目左接続(双目D2);
+    						HeadD2.目右接続(双目D3 = (双目D)双目D2.Get逆());
     					}
-    					頭D2.眉左接続(眉D2);
-    					頭D2.眉右接続(眉D2.Get逆());
+    					HeadD2.眉左接続(眉D2);
+    					HeadD2.眉右接続(眉D2.Get逆());
     				}
     				else
     				{
     					双目D2 = SlaveMatrix.GameClasses._Con.Get双眼R(右: false);
-    					頭D2.目左接続(双目D2);
-    					頭D2.目右接続(双目D3 = (双目D)双目D2.Get逆());
+    					HeadD2.目左接続(双目D2);
+    					HeadD2.目右接続(双目D3 = (双目D)双目D2.Get逆());
     					眉D 眉D3 = SlaveMatrix.GameClasses._Con.Get眉R(右: false);
-    					頭D2.眉左接続(眉D3);
-    					頭D2.眉右接続(眉D3.Get逆());
+    					HeadD2.眉左接続(眉D3);
+    					HeadD2.眉右接続(眉D3.Get逆());
     				}
     				縦目D2 = Mix<縦目D>(母方, 父方, i, 原種モード);
     				縦瞼D2 = Mix<縦瞼D>(母方, 父方, i, 原種モード);
     				if (縦目D2 != null && 縦瞼D2 != null)
     				{
     					縦目D2.瞼接続(縦瞼D2);
-    					頭D2.額接続(縦目D2);
+    					HeadD2.額接続(縦目D2);
     				}
     				else if (!原種モード && 変異率.Lot() && 0.05.Lot())
     				{
-    					頭D2.額接続(縦目D2 = SlaveMatrix.GameClasses._Con.Get縦眼R());
+    					HeadD2.額接続(縦目D2 = SlaveMatrix.GameClasses._Con.Get縦眼R());
     					縦瞼D2 = 縦目D2.瞼_接続.GetEleD<縦瞼D>();
     				}
     				頬目D2 = Mix<頬目D>(母方, 父方, 右: false, i, 原種モード);
@@ -1995,14 +1995,14 @@ namespace SlaveMatrix
     				if (頬目D2 != null && 頬瞼D2 != null)
     				{
     					頬目D2.瞼接続(頬瞼D2);
-    					頭D2.頬肌左接続(頬目D2);
-    					頭D2.頬肌右接続(頬目D3 = (頬目D)頬目D2.Get逆());
+    					HeadD2.頬肌左接続(頬目D2);
+    					HeadD2.頬肌右接続(頬目D3 = (頬目D)頬目D2.Get逆());
     				}
     				else if (!原種モード && 変異率.Lot() && 0.05.Lot())
     				{
     					頬目D2 = SlaveMatrix.GameClasses._Con.Get頬眼R(右: false);
-    					頭D2.頬肌左接続(頬目D2);
-    					頭D2.頬肌右接続(頬目D3 = (頬目D)頬目D2.Get逆());
+    					HeadD2.頬肌左接続(頬目D2);
+    					HeadD2.頬肌右接続(頬目D3 = (頬目D)頬目D2.Get逆());
     				}
     			}
     			else
@@ -2022,14 +2022,14 @@ namespace SlaveMatrix
     						右 = true,
     						基準C = new Vector2D(-0.01, 0.0)
     					});
-    					頭D2.単眼目接続(単目D2);
-    					頭D2.単眼眉接続(単眼眉D2);
+    					HeadD2.単眼目接続(単目D2);
+    					HeadD2.単眼眉接続(単眼眉D2);
     				}
     				else
     				{
-    					頭D2.単眼目接続(単目D2 = SlaveMatrix.GameClasses._Con.Get単眼R());
+    					HeadD2.単眼目接続(単目D2 = SlaveMatrix.GameClasses._Con.Get単眼R());
     					単瞼D2 = 単目D2.瞼_接続.GetEleD<単瞼D>();
-    					頭D2.単眼眉接続(SlaveMatrix.GameClasses._Con.Get単眼眉R());
+    					HeadD2.単眼眉接続(SlaveMatrix.GameClasses._Con.Get単眼眉R());
     				}
     			}
     		}
@@ -2044,31 +2044,31 @@ namespace SlaveMatrix
     				{
     					双目D2.瞼接続(双瞼D3);
     					双目D2.瞼接続(new 涙D());
-    					頭D2.目左接続(双目D2);
-    					頭D2.目右接続(双目D3 = (双目D)双目D2.Get逆());
+    					HeadD2.目左接続(双目D2);
+    					HeadD2.目右接続(双目D3 = (双目D)双目D2.Get逆());
     				}
-    				頭D2.眉左接続(眉D4);
-    				頭D2.眉右接続(眉D4.Get逆());
+    				HeadD2.眉左接続(眉D4);
+    				HeadD2.眉右接続(眉D4.Get逆());
     			}
     			else
     			{
     				双目D2 = SlaveMatrix.GameClasses._Con.Get双眼R(右: false);
-    				頭D2.目左接続(双目D2);
-    				頭D2.目右接続(双目D3 = (双目D)双目D2.Get逆());
+    				HeadD2.目左接続(双目D2);
+    				HeadD2.目右接続(双目D3 = (双目D)双目D2.Get逆());
     				眉D 眉D5 = SlaveMatrix.GameClasses._Con.Get眉R(右: false);
-    				頭D2.眉左接続(眉D5);
-    				頭D2.眉右接続(眉D5.Get逆());
+    				HeadD2.眉左接続(眉D5);
+    				HeadD2.眉右接続(眉D5.Get逆());
     			}
     			縦目D2 = Mix<縦目D>(母方, 父方, i, 原種モード);
     			縦瞼D2 = Mix<縦瞼D>(母方, 父方, i, 原種モード);
     			if (縦目D2 != null && 縦瞼D2 != null)
     			{
     				縦目D2.瞼接続(縦瞼D2);
-    				頭D2.額接続(縦目D2);
+    				HeadD2.額接続(縦目D2);
     			}
     			else if (!原種モード && 変異率.Lot() && 0.05.Lot())
     			{
-    				頭D2.額接続(縦目D2 = SlaveMatrix.GameClasses._Con.Get縦眼R());
+    				HeadD2.額接続(縦目D2 = SlaveMatrix.GameClasses._Con.Get縦眼R());
     				縦瞼D2 = 縦目D2.瞼_接続.GetEleD<縦瞼D>();
     			}
     			頬目D2 = Mix<頬目D>(母方, 父方, 右: false, i, 原種モード);
@@ -2076,14 +2076,14 @@ namespace SlaveMatrix
     			if (頬目D2 != null && 頬瞼D3 != null)
     			{
     				頬目D2.瞼接続(頬瞼D3);
-    				頭D2.頬肌左接続(頬目D2);
-    				頭D2.頬肌右接続(頬目D3 = (頬目D)頬目D2.Get逆());
+    				HeadD2.頬肌左接続(頬目D2);
+    				HeadD2.頬肌右接続(頬目D3 = (頬目D)頬目D2.Get逆());
     			}
     			else if (!原種モード && 変異率.Lot() && 0.05.Lot())
     			{
     				頬目D2 = SlaveMatrix.GameClasses._Con.Get頬眼R(右: false);
-    				頭D2.頬肌左接続(頬目D2);
-    				頭D2.頬肌右接続(頬目D3 = (頬目D)頬目D2.Get逆());
+    				HeadD2.頬肌左接続(頬目D2);
+    				HeadD2.頬肌右接続(頬目D3 = (頬目D)頬目D2.Get逆());
     			}
     		}
     		else if (flag2)
@@ -2103,14 +2103,14 @@ namespace SlaveMatrix
     					右 = true,
     					基準C = new Vector2D(-0.01, 0.0)
     				});
-    				頭D2.単眼目接続(単目D2);
-    				頭D2.単眼眉接続(単眼眉D3);
+    				HeadD2.単眼目接続(単目D2);
+    				HeadD2.単眼眉接続(単眼眉D3);
     			}
     			else
     			{
-    				頭D2.単眼目接続(単目D2 = SlaveMatrix.GameClasses._Con.Get単眼R());
+    				HeadD2.単眼目接続(単目D2 = SlaveMatrix.GameClasses._Con.Get単眼R());
     				単瞼D2 = 単目D2.瞼_接続.GetEleD<単瞼D>();
-    				頭D2.単眼眉接続(SlaveMatrix.GameClasses._Con.Get単眼眉R());
+    				HeadD2.単眼眉接続(SlaveMatrix.GameClasses._Con.Get単眼眉R());
     			}
     		}
     		鼻D 鼻D2 = Mix<鼻D>(母方, 父方, i, 原種モード);
@@ -2121,47 +2121,47 @@ namespace SlaveMatrix
     			{
     				右 = true
     			});
-    			頭D2.鼻接続(鼻D2);
+    			HeadD2.鼻接続(鼻D2);
     		}
     		口D 口D2 = Mix<口D>(母方, 父方, i, 原種モード);
     		if (口D2 != null)
     		{
     			if (口D2 is 口_通常D)
     			{
-    				頭D2.口接続(口D2);
-    				頭D2.口接続(new 涎_通常D());
-    				頭D2.口接続(new 涎_通常D
+    				HeadD2.口接続(口D2);
+    				HeadD2.口接続(new 涎_通常D());
+    				HeadD2.口接続(new 涎_通常D
     				{
     					右 = true
     				});
     			}
     			else if (口D2 is 口_裂けD)
     			{
-    				頭D2.口接続(口D2);
-    				頭D2.口接続(new 涎_裂けD());
-    				頭D2.口接続(new 涎_裂けD
+    				HeadD2.口接続(口D2);
+    				HeadD2.口接続(new 涎_裂けD());
+    				HeadD2.口接続(new 涎_裂けD
     				{
     					右 = true
     				});
     			}
-    			頭D2.口接続(new 性器精液_人D());
-    			頭D2.口接続(new 咳D());
-    			頭D2.口接続(new 呼気D());
+    			HeadD2.口接続(new 性器精液_人D());
+    			HeadD2.口接続(new 咳D());
+    			HeadD2.口接続(new 呼気D());
     			舌D 舌D2 = Mix<舌D>(母方, 父方, i, 原種モード);
     			if (舌D2 != null)
     			{
-    				頭D2.口接続(舌D2);
+    				HeadD2.口接続(舌D2);
     			}
     		}
-    		頭D2.接続(母方, 父方, i, ConnectionInfo.Head_耳左_接続, 要素構成, 接続構成, 変異率, 原種モード);
+    		HeadD2.接続(母方, 父方, i, ConnectionInfo.Head_耳左_接続, 要素構成, 接続構成, 変異率, 原種モード);
     		基髪D2.接続(母方, 父方, i, ConnectionInfo.基髪_頭頂左_接続, 要素構成, 接続構成, 変異率, 原種モード);
-    		頭D2.接続(母方, 父方, i, ConnectionInfo.Head_頬左_接続, 要素構成, 接続構成, 変異率, 原種モード);
-    		頭D2.接続(母方, 父方, i, ConnectionInfo.Head_大顎基_接続, 要素構成, 接続構成, 変異率, 原種モード);
-    		頭D2.接続(母方, 父方, i, ConnectionInfo.Head_顔面_接続, 要素構成, 接続構成, 変異率, 原種モード);
-    		頭D2.接続(母方, 父方, i, ConnectionInfo.Head_頭頂_接続, 要素構成, 接続構成, 変異率, 原種モード);
-    		頭D2.接続(母方, 父方, i, ConnectionInfo.Head_触覚左_接続, 要素構成, 接続構成, 変異率, 原種モード);
+    		HeadD2.接続(母方, 父方, i, ConnectionInfo.Head_頬左_接続, 要素構成, 接続構成, 変異率, 原種モード);
+    		HeadD2.接続(母方, 父方, i, ConnectionInfo.Head_大顎基_接続, 要素構成, 接続構成, 変異率, 原種モード);
+    		HeadD2.接続(母方, 父方, i, ConnectionInfo.Head_顔面_接続, 要素構成, 接続構成, 変異率, 原種モード);
+    		HeadD2.接続(母方, 父方, i, ConnectionInfo.Head_頭頂_接続, 要素構成, 接続構成, 変異率, 原種モード);
+    		HeadD2.接続(母方, 父方, i, ConnectionInfo.Head_触覚左_接続, 要素構成, 接続構成, 変異率, 原種モード);
     		ChestD2.接続(母方, 父方, i, ConnectionInfo.Chest_肩左_接続, 要素構成, 接続構成, 変異率, 原種モード);
-    		頭D2.接続(母方, 父方, i, ConnectionInfo.Head_額_接続, 要素構成, 接続構成, 変異率, 原種モード);
+    		HeadD2.接続(母方, 父方, i, ConnectionInfo.Head_額_接続, 要素構成, 接続構成, 変異率, 原種モード);
     		ChestD2.接続(母方, 父方, i, ConnectionInfo.Chest_翼上左_接続, 要素構成, 接続構成, 変異率, 原種モード);
     		ChestD2.接続(母方, 父方, i, ConnectionInfo.Chest_翼下左_接続, 要素構成, 接続構成, 変異率, 原種モード);
     		TorsoD2.接続(母方, 父方, i, ConnectionInfo.Torso_翼左_接続, 要素構成, 接続構成, 変異率, 原種モード);
@@ -3793,9 +3793,9 @@ namespace SlaveMatrix
     				flag3 |= item32.筋肉;
     			}
     		}
-    		if (頭D2.額_接続.Count > 1)
+    		if (HeadD2.額_接続.Count > 1)
     		{
-    			頭D2.額_接続.Remove(頭D2.額_接続[RNG.XS.Next(頭D2.額_接続.Count)]);
+    			HeadD2.額_接続.Remove(HeadD2.額_接続[RNG.XS.Next(HeadD2.額_接続.Count)]);
     		}
     		bool flag4 = false;
     		flag4 |= 胸腹板D2.虫性_腹板_表示;
@@ -3911,14 +3911,14 @@ namespace SlaveMatrix
     			鼻肌D2.紋柄_紋右_紋4_表示 = false;
     		}
     		bool flag12 = 顔面D2?.触覚左_接続.IsEleD<触覚D>() ?? false;
-    		bool flag13 = 頭D2.触覚左_接続.IsEleD<触覚D>();
+    		bool flag13 = HeadD2.触覚左_接続.IsEleD<触覚D>();
     		bool flag14 = 基髪D2.頭頂左_接続.IsEleD<触覚D>();
     		if (!flag12 && flag13 && flag14)
     		{
     			if (RNG.XS.NextBool())
     			{
-    				頭D2.触覚左_接続.RemoveAll((EleD e) => e is 触覚D);
-    				頭D2.触覚右_接続.RemoveAll((EleD e) => e is 触覚D);
+    				HeadD2.触覚左_接続.RemoveAll((EleD e) => e is 触覚D);
+    				HeadD2.触覚右_接続.RemoveAll((EleD e) => e is 触覚D);
     			}
     			else
     			{
@@ -3948,8 +3948,8 @@ namespace SlaveMatrix
     			}
     			else
     			{
-    				頭D2.触覚左_接続.RemoveAll((EleD e) => e is 触覚D);
-    				頭D2.触覚右_接続.RemoveAll((EleD e) => e is 触覚D);
+    				HeadD2.触覚左_接続.RemoveAll((EleD e) => e is 触覚D);
+    				HeadD2.触覚右_接続.RemoveAll((EleD e) => e is 触覚D);
     			}
     		}
     		else if (flag12 && flag13 && flag14)
@@ -3957,8 +3957,8 @@ namespace SlaveMatrix
     			switch (RNG.XS.Next(2))
     			{
     			case 0:
-    				頭D2.触覚左_接続.RemoveAll((EleD e) => e is 触覚D);
-    				頭D2.触覚右_接続.RemoveAll((EleD e) => e is 触覚D);
+    				HeadD2.触覚左_接続.RemoveAll((EleD e) => e is 触覚D);
+    				HeadD2.触覚右_接続.RemoveAll((EleD e) => e is 触覚D);
     				基髪D2.頭頂左_接続.RemoveAll((EleD e) => e is 触覚D);
     				基髪D2.頭頂右_接続.RemoveAll((EleD e) => e is 触覚D);
     				break;
@@ -3971,23 +3971,23 @@ namespace SlaveMatrix
     			case 2:
     				顔面D2.触覚左_接続.RemoveAll((EleD e) => e is 触覚D);
     				顔面D2.触覚右_接続.RemoveAll((EleD e) => e is 触覚D);
-    				頭D2.触覚左_接続.RemoveAll((EleD e) => e is 触覚D);
-    				頭D2.触覚右_接続.RemoveAll((EleD e) => e is 触覚D);
+    				HeadD2.触覚左_接続.RemoveAll((EleD e) => e is 触覚D);
+    				HeadD2.触覚右_接続.RemoveAll((EleD e) => e is 触覚D);
     				break;
     			}
     		}
     		if (顔面D2 != null && flag13)
     		{
-    			foreach (触覚D eleD8 in 頭D2.触覚左_接続.GetEleDs<触覚D>())
+    			foreach (触覚D eleD8 in HeadD2.触覚左_接続.GetEleDs<触覚D>())
     			{
     				顔面D2.触覚左接続(eleD8);
     			}
-    			foreach (触覚D eleD9 in 頭D2.触覚右_接続.GetEleDs<触覚D>())
+    			foreach (触覚D eleD9 in HeadD2.触覚右_接続.GetEleDs<触覚D>())
     			{
     				顔面D2.触覚右接続(eleD9);
     			}
-    			頭D2.触覚左_接続.RemoveAll((EleD e) => e is 触覚D);
-    			頭D2.触覚右_接続.RemoveAll((EleD e) => e is 触覚D);
+    			HeadD2.触覚左_接続.RemoveAll((EleD e) => e is 触覚D);
+    			HeadD2.触覚右_接続.RemoveAll((EleD e) => e is 触覚D);
     		}
     		if (腰肌.陰毛_表示 && 腰肌.獣性_獣毛_表示)
     		{

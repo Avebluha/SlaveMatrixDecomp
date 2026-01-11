@@ -1390,7 +1390,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public JointS 首_接続点 => new JointS(本体, X0Y0_胸郭, 0);
+    	public JointS Neck_接続点 => new JointS(本体, X0Y0_胸郭, 0);
 
     	public JointS 肩左_接続点 => new JointS(本体, X0Y0_胸郭, 1);
 
@@ -1598,7 +1598,7 @@ namespace SlaveMatrix
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = Chest2;
     				f.ConnectionType = ConnectionInfo.Chest_Neck_接続;
-    				f.接続(Chest2.首_接続点);
+    				f.接続(Chest2.Neck_接続点);
     				return f;
     			}).ToArray();
     		}

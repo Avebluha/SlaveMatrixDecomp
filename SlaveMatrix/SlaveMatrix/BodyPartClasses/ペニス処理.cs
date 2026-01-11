@@ -748,7 +748,7 @@ namespace SlaveMatrix
     				{
     					LowerArmXC = ペニス処理2.LowerArm.尺度XC;
     				}
-    				調教UI.ペニス.位置B = ペニス処理2.Bod.首.位置.AddY(0.01);
+    				調教UI.ペニス.位置B = ペニス処理2.Bod.Neck.位置.AddY(0.01);
     				調教UI.Action(ContactType.Hand, ActionType.手コ, CurrentState.Start, ToolType.Penis, 0, 1, 機械: false, 射精: false);
     				Player.主精力消費小();
     				Player.奴体力消費小();

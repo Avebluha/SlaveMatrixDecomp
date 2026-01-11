@@ -15,7 +15,7 @@ namespace SlaveMatrix
 
     	public Par X0Y0_植性_棘右下;
 
-    	public Par X0Y0_首;
+    	public Par X0Y0_Neck;
 
     	public Par X0Y0_淫タトゥ_ハート_タトゥ左;
 
@@ -113,7 +113,7 @@ namespace SlaveMatrix
 
     	public ColorD 植性_棘右下CD;
 
-    	public ColorD 首CD;
+    	public ColorD NeckCD;
 
     	public ColorD 淫タトゥ_ハート_タトゥ左CD;
 
@@ -211,7 +211,7 @@ namespace SlaveMatrix
 
     	public ColorP X0Y0_植性_棘右下CP;
 
-    	public ColorP X0Y0_首CP;
+    	public ColorP X0Y0_NeckCP;
 
     	public ColorP X0Y0_淫タトゥ_ハート_タトゥ左CP;
 
@@ -411,16 +411,16 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 首_表示
+    	public bool Neck_表示
     	{
     		get
     		{
-    			return X0Y0_首.Dra;
+    			return X0Y0_Neck.Dra;
     		}
     		set
     		{
-    			X0Y0_首.Dra = value;
-    			X0Y0_首.Hit = value;
+    			X0Y0_Neck.Dra = value;
+    			X0Y0_Neck.Hit = value;
     		}
     	}
 
@@ -1054,7 +1054,7 @@ namespace SlaveMatrix
     			植性_棘左下_表示 = value;
     			植性_棘右上_表示 = value;
     			植性_棘右下_表示 = value;
-    			首_表示 = value;
+    			Neck_表示 = value;
     			淫タトゥ_ハート_タトゥ左_表示 = value;
     			淫タトゥ_ハート_タトゥ右_表示 = value;
     			淫タトゥ_タトゥ左_表示 = value;
@@ -1116,7 +1116,7 @@ namespace SlaveMatrix
     			植性_棘左下CD.不透明度 = value;
     			植性_棘右上CD.不透明度 = value;
     			植性_棘右下CD.不透明度 = value;
-    			首CD.不透明度 = value;
+    			NeckCD.不透明度 = value;
     			淫タトゥ_ハート_タトゥ左CD.不透明度 = value;
     			淫タトゥ_ハート_タトゥ右CD.不透明度 = value;
     			淫タトゥ_タトゥ左CD.不透明度 = value;
@@ -1163,7 +1163,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public JointS 頭_接続点 => new JointS(本体, X0Y0_首, 0);
+    	public JointS Head_接続点 => new JointS(本体, X0Y0_Neck, 0);
 
     	public JointS 鎖1_接続点 => new JointS(本体, X0Y0_首輪_金具左, 0);
 
@@ -1171,7 +1171,7 @@ namespace SlaveMatrix
 
     	public Neck(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, NeckD e)
     	{
-    		Neck 首2 = this;
+    		Neck Neck2 = this;
     		ThisType = GetType();
     		本体 = new Difs(Sta.胴体["Neck"]);
     		Pars pars = 本体[0][0];
@@ -1181,7 +1181,7 @@ namespace SlaveMatrix
     		X0Y0_植性_棘左下 = pars2["刺左下"].ToPar();
     		X0Y0_植性_棘右上 = pars2["刺右上"].ToPar();
     		X0Y0_植性_棘右下 = pars2["刺右下"].ToPar();
-    		X0Y0_首 = pars["首"].ToPar();
+    		X0Y0_Neck = pars["首"].ToPar();
     		pars2 = pars["淫タトゥ"].ToPars();
     		Pars pars3 = pars2["ハート"].ToPars();
     		X0Y0_淫タトゥ_ハート_タトゥ左 = pars3["タトゥ左"].ToPar();
@@ -1269,7 +1269,7 @@ namespace SlaveMatrix
     		植性_棘左下_表示 = e.植性_棘左下_表示;
     		植性_棘右上_表示 = e.植性_棘右上_表示;
     		植性_棘右下_表示 = e.植性_棘右下_表示;
-    		首_表示 = e.首_表示;
+    		Neck_表示 = e.Neck_表示;
     		淫タトゥ_ハート_タトゥ左_表示 = e.淫タトゥ_ハート_タトゥ左_表示;
     		淫タトゥ_ハート_タトゥ右_表示 = e.淫タトゥ_ハート_タトゥ右_表示;
     		淫タトゥ_タトゥ左_表示 = e.淫タトゥ_タトゥ左_表示;
@@ -1329,9 +1329,9 @@ namespace SlaveMatrix
     			Head_接続 = e.Head_接続.Select(delegate(EleD g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
-    				f.Par = 首2;
+    				f.Par = Neck2;
     				f.ConnectionType = ConnectionInfo.Neck_Head_接続;
-    				f.接続(首2.頭_接続点);
+    				f.接続(Neck2.Head_接続点);
     				return f;
     			}).ToArray();
     		}
@@ -1342,7 +1342,7 @@ namespace SlaveMatrix
     		X0Y0_植性_棘左下CP = new ColorP(X0Y0_植性_棘左下, 植性_棘左下CD, DisUnit, abj: true);
     		X0Y0_植性_棘右上CP = new ColorP(X0Y0_植性_棘右上, 植性_棘右上CD, DisUnit, abj: true);
     		X0Y0_植性_棘右下CP = new ColorP(X0Y0_植性_棘右下, 植性_棘右下CD, DisUnit, abj: true);
-    		X0Y0_首CP = new ColorP(X0Y0_首, 首CD, DisUnit, abj: true);
+    		X0Y0_NeckCP = new ColorP(X0Y0_Neck, NeckCD, DisUnit, abj: true);
     		X0Y0_淫タトゥ_ハート_タトゥ左CP = new ColorP(X0Y0_淫タトゥ_ハート_タトゥ左, 淫タトゥ_ハート_タトゥ左CD, DisUnit, abj: true);
     		X0Y0_淫タトゥ_ハート_タトゥ右CP = new ColorP(X0Y0_淫タトゥ_ハート_タトゥ右, 淫タトゥ_ハート_タトゥ右CD, DisUnit, abj: true);
     		X0Y0_淫タトゥ_タトゥ左CP = new ColorP(X0Y0_淫タトゥ_タトゥ左, 淫タトゥ_タトゥ左CD, DisUnit, abj: true);
@@ -1404,7 +1404,7 @@ namespace SlaveMatrix
     		Are.Draw(X0Y0_植性_棘左下);
     		Are.Draw(X0Y0_植性_棘右上);
     		Are.Draw(X0Y0_植性_棘右下);
-    		Are.Draw(X0Y0_首);
+    		Are.Draw(X0Y0_Neck);
     		Are.Draw(X0Y0_虫性_蛇腹4);
     		Are.Draw(X0Y0_虫性_蛇腹3);
     		Are.Draw(X0Y0_虫性_蛇腹2);
@@ -1486,7 +1486,7 @@ namespace SlaveMatrix
     		X0Y0_植性_棘左下CP.Update();
     		X0Y0_植性_棘右上CP.Update();
     		X0Y0_植性_棘右下CP.Update();
-    		X0Y0_首CP.Update();
+    		X0Y0_NeckCP.Update();
     		X0Y0_淫タトゥ_ハート_タトゥ左CP.Update();
     		X0Y0_淫タトゥ_ハート_タトゥ右CP.Update();
     		X0Y0_淫タトゥ_タトゥ左CP.Update();
@@ -1548,7 +1548,7 @@ namespace SlaveMatrix
     		植性_棘左下CD = new ColorD(ref Col.Black, ref 体配色.植1O);
     		植性_棘右上CD = new ColorD(ref Col.Black, ref 体配色.植1O);
     		植性_棘右下CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		首CD = new ColorD(ref Col.Black, ref 体配色.人肌O);
+    		NeckCD = new ColorD(ref Col.Black, ref 体配色.人肌O);
     		淫タトゥ_ハート_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
     		淫タトゥ_ハート_タトゥ右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
     		淫タトゥ_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);

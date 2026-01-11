@@ -12,7 +12,7 @@ namespace SlaveMatrix
 
     	public bool 刃_刃2_表示 = true;
 
-    	public bool 首_表示 = true;
+    	public bool Neck_表示 = true;
 
     	public bool グリップ_グリップ0_表示 = true;
 

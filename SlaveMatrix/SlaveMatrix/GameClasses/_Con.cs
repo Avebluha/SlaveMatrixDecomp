@@ -283,24 +283,24 @@ namespace SlaveMatrix.GameClasses
             return ChestD2;
         }
 
-        public static NeckD Set首(this ChestD Chest)
+        public static NeckD SetNeck(this ChestD Chest)
         {
-            NeckD 首D2 = new NeckD();
-            Chest.首接続(首D2);
-            return 首D2;
+            NeckD NeckD2 = new NeckD();
+            Chest.首接続(NeckD2);
+            return NeckD2;
         }
 
-        public static HeadD Set頭R(this NeckD 首)
+        public static HeadD Set頭R(this NeckD Neck)
         {
             HeadD 頭D2 = Get頭R();
-            首.頭接続(頭D2);
+            Neck.頭接続(頭D2);
             return 頭D2;
         }
 
-        public static HeadD Set頭R1(this NeckD 首)
+        public static HeadD Set頭R1(this NeckD Neck)
         {
             HeadD 頭D2 = Get頭R1();
-            首.頭接続(頭D2);
+            Neck.頭接続(頭D2);
             return 頭D2;
         }
 

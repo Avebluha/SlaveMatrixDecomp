@@ -17,7 +17,7 @@ namespace SlaveMatrix
 
     	public bool 植性_棘右下_表示;
 
-    	public bool 首_表示 = true;
+    	public bool Neck_表示 = true;
 
     	public bool 淫タトゥ_ハート_タトゥ左_表示;
 

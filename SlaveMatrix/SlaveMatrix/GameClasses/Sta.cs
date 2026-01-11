@@ -50,13 +50,13 @@ namespace SlaveMatrix
 
     	public static Type EleDt;
 
-    	public static Type Chestt;
+    	public static Type ChestType;
 
-    	public static Type Shouldert;
+    	public static Type ShoulderType;
 
-    	public static Type Torsot;
+    	public static Type TorsoType;
 
-    	public static Type Waistt;
+    	public static Type WaistType;
 
     	public static Type 尾_鯨t;
 
@@ -88,7 +88,7 @@ namespace SlaveMatrix
 
     	public static Type 耳_獣Dt;
 
-    	public static Type ShoulderDt;
+    	public static Type ShoulderDType;
 
     	public static Type 角1_一Dt;
 
@@ -1167,10 +1167,10 @@ namespace SlaveMatrix
             MaxAre = 0.0584246154149664;
     		Elet = typeof(Ele);
     		EleDt = typeof(EleD);
-    		Chestt = typeof(Chest);
-    		Shouldert = typeof(Shoulder);
-    		Torsot = typeof(Torso);
-    		Waistt = typeof(Waist);
+    		ChestType = typeof(Chest);
+    		ShoulderType = typeof(Shoulder);
+    		TorsoType = typeof(Torso);
+    		WaistType = typeof(Waist);
     		尾_鯨t = typeof(尾_鯨);
     		UpperArm_人t = typeof(UpperArm_人);
     		UpperArm_鳥t = typeof(UpperArm_鳥);
@@ -1186,7 +1186,7 @@ namespace SlaveMatrix
     		耳_鰭Dt = typeof(耳_鰭D);
     		耳_羽Dt = typeof(耳_羽D);
     		耳_獣Dt = typeof(耳_獣D);
-    		ShoulderDt = typeof(ShoulderD);
+    		ShoulderDType = typeof(ShoulderD);
     		角1_一Dt = typeof(角1_一D);
     		角1_鬼Dt = typeof(角1_鬼D);
     		角1_虫Dt = typeof(角1_虫D);

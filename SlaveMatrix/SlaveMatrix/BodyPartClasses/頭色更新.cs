@@ -48,7 +48,7 @@ namespace SlaveMatrix
 
     	public void 色更新()
     	{
-    		頭.X0Y0_頭.GetMiY_MaY(out mm);
+    		頭.X0Y0_Head.GetMiY_MaY(out mm);
     		頭.色更新(mm);
     		Ele[] array = 瞼;
     		for (int i = 0; i < array.Length; i++)

@@ -58,7 +58,7 @@ namespace SlaveMatrix
 
     	public Chest Chest;
 
-    	public Neck 首;
+    	public Neck Neck;
 
     	public Head 頭;
 
@@ -2431,10 +2431,10 @@ namespace SlaveMatrix
     		set
     		{
     			ドレス首i = value;
-    			if (首 != null)
+    			if (Neck != null)
     			{
-    				Set表示(首, ドレス首i);
-    				首.ドレス配色(ドレス首i.色);
+    				Set表示(Neck, ドレス首i);
+    				Neck.ドレス配色(ドレス首i.色);
     			}
     		}
     	}
@@ -2880,21 +2880,21 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return 首.拘束;
+    			return Neck.拘束;
     		}
     		set
     		{
     			if (value)
     			{
     				拘束具情報 @default = 拘束具情報.GetDefault();
-    				首.拘束 = @default.表示;
-    				首.首輪配色(@default.色);
+    				Neck.拘束 = @default.表示;
+    				Neck.首輪配色(@default.色);
     			}
     			else
     			{
     				拘束具情報 拘束具初期化 = Sta.拘束具初期化;
-    				首.拘束 = 拘束具初期化.表示;
-    				首.首輪配色(拘束具初期化.色);
+    				Neck.拘束 = 拘束具初期化.表示;
+    				Neck.首輪配色(拘束具初期化.色);
     			}
     		}
     	}
@@ -3266,7 +3266,7 @@ namespace SlaveMatrix
     								pp = 翼獣.UpperArm.Par.Par;
     								if (p is 基髪)
     								{
-    									翼獣.UpperArm.接着 = () => bod.頭.X0Y0_頭.ToGlobal(bod.頭.X0Y0_頭.BasePointBase);
+    									翼獣.UpperArm.接着 = () => bod.頭.X0Y0_Head.ToGlobal(bod.頭.X0Y0_Head.BasePointBase);
     								}
     								else if (p is Chest)
     								{
@@ -3659,7 +3659,7 @@ namespace SlaveMatrix
     							pp = 翼獣.UpperArm.Par.Par;
     							if (p is 基髪)
     							{
-    								翼獣.UpperArm.接着 = () => bod.頭.X0Y0_頭.ToGlobal(bod.頭.X0Y0_頭.BasePointBase);
+    								翼獣.UpperArm.接着 = () => bod.頭.X0Y0_Head.ToGlobal(bod.頭.X0Y0_Head.BasePointBase);
     							}
     							else if (p is Chest)
     							{
@@ -3897,7 +3897,7 @@ namespace SlaveMatrix
     		}
     		if (Chest != null)
     		{
-    			首 = Chest.Neck_接続.GetEle<Neck>();
+    			Neck = Chest.Neck_接続.GetEle<Neck>();
     			胸腹板_人 = Chest.肌_接続.GetEle<胸腹板>();
     			胸肌_人 = Chest.肌_接続.GetEle<胸肌>();
     			胸毛_人 = Chest.肌_接続.GetEle<胸毛>();
@@ -3932,9 +3932,9 @@ namespace SlaveMatrix
     			上着T_ドレス = Chest.肌_接続.GetEle<上着トップ_ドレス>();
     			上着T_ドレス.SetHitFalse();
     		}
-    		if (首 != null)
+    		if (Neck != null)
     		{
-    			頭 = 首.Head_接続.GetEle<Head>();
+    			頭 = Neck.Head_接続.GetEle<Head>();
     		}
     		if (頭 != null)
     		{
@@ -4058,10 +4058,10 @@ namespace SlaveMatrix
     			後髪1 = 基髪.後髪_接続.GetEle<BackHair1>();
     			後髪0 = 基髪.後髪_接続.GetEle<BackHair0>();
     		}
-    		首.キスマーク = new スタンプK(Med, Are, Cha, this, kd, 首);
-    		sk.Add(首.キスマーク);
-    		首.鞭痕 = new スタンプW(Med, Are, Cha, this, wd, 首);
-    		sw.Add(首.鞭痕);
+    		Neck.キスマーク = new スタンプK(Med, Are, Cha, this, kd, Neck);
+    		sk.Add(Neck.キスマーク);
+    		Neck.鞭痕 = new スタンプW(Med, Are, Cha, this, wd, Neck);
+    		sw.Add(Neck.鞭痕);
     		Chest.キスマーク = new スタンプK(Med, Are, Cha, this, kd, Chest);
     		sk.Add(Chest.キスマーク);
     		Chest.鞭痕 = new スタンプW(Med, Are, Cha, this, wd, Chest);
@@ -5265,9 +5265,9 @@ namespace SlaveMatrix
     		}
     		if (Is単眼)
     		{
-    			頭.X0Y0_頭.JP[7] = new Joi(頭.X0Y0_頭.JP[7].Joint.MulY(0.96));
-    			頭.X0Y0_頭.JP[17] = new Joi(頭.X0Y0_頭.JP[17].Joint.MulY(0.96));
-    			頭.X0Y0_頭.JP[18] = new Joi(頭.X0Y0_頭.JP[18].Joint.MulY(0.96));
+    			頭.X0Y0_Head.JP[7] = new Joi(頭.X0Y0_Head.JP[7].Joint.MulY(0.96));
+    			頭.X0Y0_Head.JP[17] = new Joi(頭.X0Y0_Head.JP[17].Joint.MulY(0.96));
+    			頭.X0Y0_Head.JP[18] = new Joi(頭.X0Y0_Head.JP[18].Joint.MulY(0.96));
     			紅潮.紅潮1_表示 = false;
     			紅潮.X0Y0_紅潮左.AngleBase = 20.0;
     			紅潮.X0Y0_紅潮弱左.AngleBase = 20.0;
@@ -5766,7 +5766,7 @@ namespace SlaveMatrix
     				bod.Waist.描画1(are);
     				bod.Torso.描画0(are);
     				bod.Chest.描画0(are);
-    				bod.首.描画0(are);
+    				bod.Neck.描画0(are);
     				if (bod.肩左 != null)
     				{
     					bod.肩左.描画0(are);
@@ -6193,7 +6193,7 @@ namespace SlaveMatrix
     				bod.Waist.描画1(are);
     				bod.Torso.描画0(are);
     				bod.Chest.描画0(are);
-    				bod.首.描画0(are);
+    				bod.Neck.描画0(are);
     				if (bod.肩左 != null)
     				{
     					bod.肩左.描画0(are);
@@ -6620,7 +6620,7 @@ namespace SlaveMatrix
     				bod.Waist.描画1(are);
     				bod.Torso.描画0(are);
     				bod.Chest.描画0(are);
-    				bod.首.描画0(are);
+    				bod.Neck.描画0(are);
     				if (bod.肩左 != null)
     				{
     					bod.肩左.描画0(are);
@@ -7046,7 +7046,7 @@ namespace SlaveMatrix
     				bod.Waist.描画1(are);
     				bod.Torso.描画0(are);
     				bod.Chest.描画0(are);
-    				bod.首.描画0(are);
+    				bod.Neck.描画0(are);
     				if (bod.肩左 != null)
     				{
     					bod.肩左.描画0(are);
@@ -7470,7 +7470,7 @@ namespace SlaveMatrix
     				bod.Waist.描画1(are);
     				bod.Torso.描画0(are);
     				bod.Chest.描画0(are);
-    				bod.首.描画0(are);
+    				bod.Neck.描画0(are);
     				if (bod.肩左 != null)
     				{
     					bod.肩左.描画0(are);
@@ -7893,7 +7893,7 @@ namespace SlaveMatrix
     				bod.Waist.描画1(are);
     				bod.Torso.描画0(are);
     				bod.Chest.描画0(are);
-    				bod.首.描画0(are);
+    				bod.Neck.描画0(are);
     				if (bod.肩左 != null)
     				{
     					bod.肩左.描画0(are);
@@ -8345,7 +8345,7 @@ namespace SlaveMatrix
     				}
     				bod.Torso.描画0(are);
     				bod.Chest.描画0(are);
-    				bod.首.描画0(are);
+    				bod.Neck.描画0(are);
     				if (bod.肩左 != null)
     				{
     					bod.肩左.描画0(are);
@@ -8773,7 +8773,7 @@ namespace SlaveMatrix
     			bod.Waist.描画1(are);
     			bod.Torso.描画0(are);
     			bod.Chest.描画0(are);
-    			bod.首.描画0(are);
+    			bod.Neck.描画0(are);
     			if (bod.肩左 != null)
     			{
     				bod.肩左.描画0(are);
@@ -9628,8 +9628,8 @@ namespace SlaveMatrix
 
     	private void Set人肌色(Color c)
     	{
-    		Color col = 頭.頭CD.色.Col1;
-    		Color col2 = 頭.頭CD.色.Col2;
+    		Color col = 頭.HeadCD.色.Col1;
+    		Color col2 = 頭.HeadCD.色.Col2;
     		Col.GetSkinGrad(ref c, out var ret);
     		ret.Col1 = col;
     		ret.GetRep(out var ret2);

@@ -1,5 +1,5 @@
-using System.Collections.Generic;
 using _2DGAMELIB;
+using System.Collections.Generic;
 
 namespace SlaveMatrix
 {
@@ -367,99 +367,99 @@ namespace SlaveMatrix
 
     	public Par X0Y0_頚_鱗1_鱗17_鱗2;
 
-    	public Par X0Y0_頭_上顎_顎基;
+    	public Par X0Y0_Head_上顎_顎基;
 
-    	public Par X0Y0_頭_上顎_鱗4;
+    	public Par X0Y0_Head_上顎_鱗4;
 
-    	public Par X0Y0_頭_上顎_鱗左1;
+    	public Par X0Y0_Head_上顎_鱗左1;
 
-    	public Par X0Y0_頭_上顎_鱗右1;
+    	public Par X0Y0_Head_上顎_鱗右1;
 
-    	public Par X0Y0_頭_上顎_鱗左2;
+    	public Par X0Y0_Head_上顎_鱗左2;
 
-    	public Par X0Y0_頭_上顎_鱗右2;
+    	public Par X0Y0_Head_上顎_鱗右2;
 
-    	public Par X0Y0_頭_上顎_鱗左3;
+    	public Par X0Y0_Head_上顎_鱗左3;
 
-    	public Par X0Y0_頭_上顎_鱗右3;
+    	public Par X0Y0_Head_上顎_鱗右3;
 
-    	public Par X0Y0_頭_上顎_鱗左4;
+    	public Par X0Y0_Head_上顎_鱗左4;
 
-    	public Par X0Y0_頭_上顎_鱗右4;
+    	public Par X0Y0_Head_上顎_鱗右4;
 
-    	public Par X0Y0_頭_上顎_鱗左5;
+    	public Par X0Y0_Head_上顎_鱗左5;
 
-    	public Par X0Y0_頭_上顎_鱗右5;
+    	public Par X0Y0_Head_上顎_鱗右5;
 
-    	public Par X0Y0_頭_上顎_鱗左8;
+    	public Par X0Y0_Head_上顎_鱗左8;
 
-    	public Par X0Y0_頭_上顎_鱗右8;
+    	public Par X0Y0_Head_上顎_鱗右8;
 
-    	public Par X0Y0_頭_上顎_鱗左9;
+    	public Par X0Y0_Head_上顎_鱗左9;
 
-    	public Par X0Y0_頭_上顎_鱗右9;
+    	public Par X0Y0_Head_上顎_鱗右9;
 
-    	public Par X0Y0_頭_上顎_鱗左10;
+    	public Par X0Y0_Head_上顎_鱗左10;
 
-    	public Par X0Y0_頭_上顎_鱗右10;
+    	public Par X0Y0_Head_上顎_鱗右10;
 
-    	public Par X0Y0_頭_上顎_鱗左11;
+    	public Par X0Y0_Head_上顎_鱗左11;
 
-    	public Par X0Y0_頭_上顎_鱗右11;
+    	public Par X0Y0_Head_上顎_鱗右11;
 
-    	public Par X0Y0_頭_下顎_顎基;
+    	public Par X0Y0_Head_下顎_顎基;
 
-    	public Par X0Y0_頭_下顎_鱗1;
+    	public Par X0Y0_Head_下顎_鱗1;
 
-    	public Par X0Y0_頭_下顎_鱗2;
+    	public Par X0Y0_Head_下顎_鱗2;
 
-    	public Par X0Y0_頭_下顎_鱗3;
+    	public Par X0Y0_Head_下顎_鱗3;
 
-    	public Par X0Y0_頭_下顎_鱗4;
+    	public Par X0Y0_Head_下顎_鱗4;
 
-    	public Par X0Y0_頭_下顎_鱗左1;
+    	public Par X0Y0_Head_下顎_鱗左1;
 
-    	public Par X0Y0_頭_下顎_鱗右1;
+    	public Par X0Y0_Head_下顎_鱗右1;
 
-    	public Par X0Y0_頭_下顎_鱗左2;
+    	public Par X0Y0_Head_下顎_鱗左2;
 
-    	public Par X0Y0_頭_下顎_鱗右2;
+    	public Par X0Y0_Head_下顎_鱗右2;
 
-    	public Par X0Y0_頭_下顎_鱗左3;
+    	public Par X0Y0_Head_下顎_鱗左3;
 
-    	public Par X0Y0_頭_下顎_鱗右3;
+    	public Par X0Y0_Head_下顎_鱗右3;
 
-    	public Par X0Y0_頭_下顎_鱗左4;
+    	public Par X0Y0_Head_下顎_鱗左4;
 
-    	public Par X0Y0_頭_下顎_鱗右4;
+    	public Par X0Y0_Head_下顎_鱗右4;
 
-    	public Par X0Y0_頭_下顎_鱗左5;
+    	public Par X0Y0_Head_下顎_鱗左5;
 
-    	public Par X0Y0_頭_下顎_鱗右5;
+    	public Par X0Y0_Head_下顎_鱗右5;
 
-    	public Par X0Y0_頭_下顎_鱗左6;
+    	public Par X0Y0_Head_下顎_鱗左6;
 
-    	public Par X0Y0_頭_下顎_鱗右6;
+    	public Par X0Y0_Head_下顎_鱗右6;
 
-    	public Par X0Y0_頭_下顎_鱗左7;
+    	public Par X0Y0_Head_下顎_鱗左7;
 
-    	public Par X0Y0_頭_下顎_鱗右7;
+    	public Par X0Y0_Head_下顎_鱗右7;
 
-    	public Par X0Y0_頭_下顎_鱗左8;
+    	public Par X0Y0_Head_下顎_鱗左8;
 
-    	public Par X0Y0_頭_下顎_鱗右8;
+    	public Par X0Y0_Head_下顎_鱗右8;
 
-    	public Par X0Y0_頭_下顎_鱗左9;
+    	public Par X0Y0_Head_下顎_鱗左9;
 
-    	public Par X0Y0_頭_下顎_鱗右9;
+    	public Par X0Y0_Head_下顎_鱗右9;
 
-    	public Par X0Y0_頭_下顎_鱗左10;
+    	public Par X0Y0_Head_下顎_鱗左10;
 
-    	public Par X0Y0_頭_下顎_鱗右10;
+    	public Par X0Y0_Head_下顎_鱗右10;
 
-    	public Par X0Y0_頭_下顎_鱗左11;
+    	public Par X0Y0_Head_下顎_鱗左11;
 
-    	public Par X0Y0_頭_下顎_鱗右11;
+    	public Par X0Y0_Head_下顎_鱗右11;
 
     	public Par X0Y0_輪2_革;
 
@@ -823,99 +823,99 @@ namespace SlaveMatrix
 
     	public ColorD 頚_鱗1_鱗17_鱗2CD;
 
-    	public ColorD 頭_上顎_顎基CD;
+    	public ColorD Head_上顎_顎基CD;
 
-    	public ColorD 頭_上顎_鱗4CD;
+    	public ColorD Head_上顎_鱗4CD;
 
-    	public ColorD 頭_上顎_鱗左1CD;
+    	public ColorD Head_上顎_鱗左1CD;
 
-    	public ColorD 頭_上顎_鱗右1CD;
+    	public ColorD Head_上顎_鱗右1CD;
 
-    	public ColorD 頭_上顎_鱗左2CD;
+    	public ColorD Head_上顎_鱗左2CD;
 
-    	public ColorD 頭_上顎_鱗右2CD;
+    	public ColorD Head_上顎_鱗右2CD;
 
-    	public ColorD 頭_上顎_鱗左3CD;
+    	public ColorD Head_上顎_鱗左3CD;
 
-    	public ColorD 頭_上顎_鱗右3CD;
+    	public ColorD Head_上顎_鱗右3CD;
 
-    	public ColorD 頭_上顎_鱗左4CD;
+    	public ColorD Head_上顎_鱗左4CD;
 
-    	public ColorD 頭_上顎_鱗右4CD;
+    	public ColorD Head_上顎_鱗右4CD;
 
-    	public ColorD 頭_上顎_鱗左5CD;
+    	public ColorD Head_上顎_鱗左5CD;
 
-    	public ColorD 頭_上顎_鱗右5CD;
+    	public ColorD Head_上顎_鱗右5CD;
 
-    	public ColorD 頭_上顎_鱗左8CD;
+    	public ColorD Head_上顎_鱗左8CD;
 
-    	public ColorD 頭_上顎_鱗右8CD;
+    	public ColorD Head_上顎_鱗右8CD;
 
-    	public ColorD 頭_上顎_鱗左9CD;
+    	public ColorD Head_上顎_鱗左9CD;
 
-    	public ColorD 頭_上顎_鱗右9CD;
+    	public ColorD Head_上顎_鱗右9CD;
 
-    	public ColorD 頭_上顎_鱗左10CD;
+    	public ColorD Head_上顎_鱗左10CD;
 
-    	public ColorD 頭_上顎_鱗右10CD;
+    	public ColorD Head_上顎_鱗右10CD;
 
-    	public ColorD 頭_上顎_鱗左11CD;
+    	public ColorD Head_上顎_鱗左11CD;
 
-    	public ColorD 頭_上顎_鱗右11CD;
+    	public ColorD Head_上顎_鱗右11CD;
 
-    	public ColorD 頭_下顎_顎基CD;
+    	public ColorD Head_下顎_顎基CD;
 
-    	public ColorD 頭_下顎_鱗1CD;
+    	public ColorD Head_下顎_鱗1CD;
 
-    	public ColorD 頭_下顎_鱗2CD;
+    	public ColorD Head_下顎_鱗2CD;
 
-    	public ColorD 頭_下顎_鱗3CD;
+    	public ColorD Head_下顎_鱗3CD;
 
-    	public ColorD 頭_下顎_鱗4CD;
+    	public ColorD Head_下顎_鱗4CD;
 
-    	public ColorD 頭_下顎_鱗左1CD;
+    	public ColorD Head_下顎_鱗左1CD;
 
-    	public ColorD 頭_下顎_鱗右1CD;
+    	public ColorD Head_下顎_鱗右1CD;
 
-    	public ColorD 頭_下顎_鱗左2CD;
+    	public ColorD Head_下顎_鱗左2CD;
 
-    	public ColorD 頭_下顎_鱗右2CD;
+    	public ColorD Head_下顎_鱗右2CD;
 
-    	public ColorD 頭_下顎_鱗左3CD;
+    	public ColorD Head_下顎_鱗左3CD;
 
-    	public ColorD 頭_下顎_鱗右3CD;
+    	public ColorD Head_下顎_鱗右3CD;
 
-    	public ColorD 頭_下顎_鱗左4CD;
+    	public ColorD Head_下顎_鱗左4CD;
 
-    	public ColorD 頭_下顎_鱗右4CD;
+    	public ColorD Head_下顎_鱗右4CD;
 
-    	public ColorD 頭_下顎_鱗左5CD;
+    	public ColorD Head_下顎_鱗左5CD;
 
-    	public ColorD 頭_下顎_鱗右5CD;
+    	public ColorD Head_下顎_鱗右5CD;
 
-    	public ColorD 頭_下顎_鱗左6CD;
+    	public ColorD Head_下顎_鱗左6CD;
 
-    	public ColorD 頭_下顎_鱗右6CD;
+    	public ColorD Head_下顎_鱗右6CD;
 
-    	public ColorD 頭_下顎_鱗左7CD;
+    	public ColorD Head_下顎_鱗左7CD;
 
-    	public ColorD 頭_下顎_鱗右7CD;
+    	public ColorD Head_下顎_鱗右7CD;
 
-    	public ColorD 頭_下顎_鱗左8CD;
+    	public ColorD Head_下顎_鱗左8CD;
 
-    	public ColorD 頭_下顎_鱗右8CD;
+    	public ColorD Head_下顎_鱗右8CD;
 
-    	public ColorD 頭_下顎_鱗左9CD;
+    	public ColorD Head_下顎_鱗左9CD;
 
-    	public ColorD 頭_下顎_鱗右9CD;
+    	public ColorD Head_下顎_鱗右9CD;
 
-    	public ColorD 頭_下顎_鱗左10CD;
+    	public ColorD Head_下顎_鱗左10CD;
 
-    	public ColorD 頭_下顎_鱗右10CD;
+    	public ColorD Head_下顎_鱗右10CD;
 
-    	public ColorD 頭_下顎_鱗左11CD;
+    	public ColorD Head_下顎_鱗左11CD;
 
-    	public ColorD 頭_下顎_鱗右11CD;
+    	public ColorD Head_下顎_鱗右11CD;
 
     	public ColorD 輪1_革CD;
 
@@ -1303,99 +1303,99 @@ namespace SlaveMatrix
 
     	public ColorP X0Y0_頚_鱗1_鱗17_鱗2CP;
 
-    	public ColorP X0Y0_頭_上顎_顎基CP;
+    	public ColorP X0Y0_Head_上顎_顎基CP;
 
-    	public ColorP X0Y0_頭_上顎_鱗4CP;
+    	public ColorP X0Y0_Head_上顎_鱗4CP;
 
-    	public ColorP X0Y0_頭_上顎_鱗左1CP;
+    	public ColorP X0Y0_Head_上顎_鱗左1CP;
 
-    	public ColorP X0Y0_頭_上顎_鱗右1CP;
+    	public ColorP X0Y0_Head_上顎_鱗右1CP;
 
-    	public ColorP X0Y0_頭_上顎_鱗左2CP;
+    	public ColorP X0Y0_Head_上顎_鱗左2CP;
 
-    	public ColorP X0Y0_頭_上顎_鱗右2CP;
+    	public ColorP X0Y0_Head_上顎_鱗右2CP;
 
-    	public ColorP X0Y0_頭_上顎_鱗左3CP;
+    	public ColorP X0Y0_Head_上顎_鱗左3CP;
 
-    	public ColorP X0Y0_頭_上顎_鱗右3CP;
+    	public ColorP X0Y0_Head_上顎_鱗右3CP;
 
-    	public ColorP X0Y0_頭_上顎_鱗左4CP;
+    	public ColorP X0Y0_Head_上顎_鱗左4CP;
 
-    	public ColorP X0Y0_頭_上顎_鱗右4CP;
+    	public ColorP X0Y0_Head_上顎_鱗右4CP;
 
-    	public ColorP X0Y0_頭_上顎_鱗左5CP;
+    	public ColorP X0Y0_Head_上顎_鱗左5CP;
 
-    	public ColorP X0Y0_頭_上顎_鱗右5CP;
+    	public ColorP X0Y0_Head_上顎_鱗右5CP;
 
-    	public ColorP X0Y0_頭_上顎_鱗左8CP;
+    	public ColorP X0Y0_Head_上顎_鱗左8CP;
 
-    	public ColorP X0Y0_頭_上顎_鱗右8CP;
+    	public ColorP X0Y0_Head_上顎_鱗右8CP;
 
-    	public ColorP X0Y0_頭_上顎_鱗左9CP;
+    	public ColorP X0Y0_Head_上顎_鱗左9CP;
 
-    	public ColorP X0Y0_頭_上顎_鱗右9CP;
+    	public ColorP X0Y0_Head_上顎_鱗右9CP;
 
-    	public ColorP X0Y0_頭_上顎_鱗左10CP;
+    	public ColorP X0Y0_Head_上顎_鱗左10CP;
 
-    	public ColorP X0Y0_頭_上顎_鱗右10CP;
+    	public ColorP X0Y0_Head_上顎_鱗右10CP;
 
-    	public ColorP X0Y0_頭_上顎_鱗左11CP;
+    	public ColorP X0Y0_Head_上顎_鱗左11CP;
 
-    	public ColorP X0Y0_頭_上顎_鱗右11CP;
+    	public ColorP X0Y0_Head_上顎_鱗右11CP;
 
-    	public ColorP X0Y0_頭_下顎_顎基CP;
+    	public ColorP X0Y0_Head_下顎_顎基CP;
 
-    	public ColorP X0Y0_頭_下顎_鱗1CP;
+    	public ColorP X0Y0_Head_下顎_鱗1CP;
 
-    	public ColorP X0Y0_頭_下顎_鱗2CP;
+    	public ColorP X0Y0_Head_下顎_鱗2CP;
 
-    	public ColorP X0Y0_頭_下顎_鱗3CP;
+    	public ColorP X0Y0_Head_下顎_鱗3CP;
 
-    	public ColorP X0Y0_頭_下顎_鱗4CP;
+    	public ColorP X0Y0_Head_下顎_鱗4CP;
 
-    	public ColorP X0Y0_頭_下顎_鱗左1CP;
+    	public ColorP X0Y0_Head_下顎_鱗左1CP;
 
-    	public ColorP X0Y0_頭_下顎_鱗右1CP;
+    	public ColorP X0Y0_Head_下顎_鱗右1CP;
 
-    	public ColorP X0Y0_頭_下顎_鱗左2CP;
+    	public ColorP X0Y0_Head_下顎_鱗左2CP;
 
-    	public ColorP X0Y0_頭_下顎_鱗右2CP;
+    	public ColorP X0Y0_Head_下顎_鱗右2CP;
 
-    	public ColorP X0Y0_頭_下顎_鱗左3CP;
+    	public ColorP X0Y0_Head_下顎_鱗左3CP;
 
-    	public ColorP X0Y0_頭_下顎_鱗右3CP;
+    	public ColorP X0Y0_Head_下顎_鱗右3CP;
 
-    	public ColorP X0Y0_頭_下顎_鱗左4CP;
+    	public ColorP X0Y0_Head_下顎_鱗左4CP;
 
-    	public ColorP X0Y0_頭_下顎_鱗右4CP;
+    	public ColorP X0Y0_Head_下顎_鱗右4CP;
 
-    	public ColorP X0Y0_頭_下顎_鱗左5CP;
+    	public ColorP X0Y0_Head_下顎_鱗左5CP;
 
-    	public ColorP X0Y0_頭_下顎_鱗右5CP;
+    	public ColorP X0Y0_Head_下顎_鱗右5CP;
 
-    	public ColorP X0Y0_頭_下顎_鱗左6CP;
+    	public ColorP X0Y0_Head_下顎_鱗左6CP;
 
-    	public ColorP X0Y0_頭_下顎_鱗右6CP;
+    	public ColorP X0Y0_Head_下顎_鱗右6CP;
 
-    	public ColorP X0Y0_頭_下顎_鱗左7CP;
+    	public ColorP X0Y0_Head_下顎_鱗左7CP;
 
-    	public ColorP X0Y0_頭_下顎_鱗右7CP;
+    	public ColorP X0Y0_Head_下顎_鱗右7CP;
 
-    	public ColorP X0Y0_頭_下顎_鱗左8CP;
+    	public ColorP X0Y0_Head_下顎_鱗左8CP;
 
-    	public ColorP X0Y0_頭_下顎_鱗右8CP;
+    	public ColorP X0Y0_Head_下顎_鱗右8CP;
 
-    	public ColorP X0Y0_頭_下顎_鱗左9CP;
+    	public ColorP X0Y0_Head_下顎_鱗左9CP;
 
-    	public ColorP X0Y0_頭_下顎_鱗右9CP;
+    	public ColorP X0Y0_Head_下顎_鱗右9CP;
 
-    	public ColorP X0Y0_頭_下顎_鱗左10CP;
+    	public ColorP X0Y0_Head_下顎_鱗左10CP;
 
-    	public ColorP X0Y0_頭_下顎_鱗右10CP;
+    	public ColorP X0Y0_Head_下顎_鱗右10CP;
 
-    	public ColorP X0Y0_頭_下顎_鱗左11CP;
+    	public ColorP X0Y0_Head_下顎_鱗左11CP;
 
-    	public ColorP X0Y0_頭_下顎_鱗右11CP;
+    	public ColorP X0Y0_Head_下顎_鱗右11CP;
 
     	public ColorP X0Y0_輪2_革CP;
 
@@ -3808,614 +3808,614 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 頭_上顎_顎基_表示
+    	public bool Head_上顎_顎基_表示
     	{
     		get
     		{
-    			return X0Y0_頭_上顎_顎基.Dra;
+    			return X0Y0_Head_上顎_顎基.Dra;
     		}
     		set
     		{
-    			X0Y0_頭_上顎_顎基.Dra = value;
-    			X0Y0_頭_上顎_顎基.Hit = value;
+    			X0Y0_Head_上顎_顎基.Dra = value;
+    			X0Y0_Head_上顎_顎基.Hit = value;
     		}
     	}
 
-    	public bool 頭_上顎_鱗4_表示
+    	public bool Head_上顎_鱗4_表示
     	{
     		get
     		{
-    			return X0Y0_頭_上顎_鱗4.Dra;
+    			return X0Y0_Head_上顎_鱗4.Dra;
     		}
     		set
     		{
-    			X0Y0_頭_上顎_鱗4.Dra = value;
-    			X0Y0_頭_上顎_鱗4.Hit = value;
+    			X0Y0_Head_上顎_鱗4.Dra = value;
+    			X0Y0_Head_上顎_鱗4.Hit = value;
     		}
     	}
 
-    	public bool 頭_上顎_鱗左1_表示
+    	public bool Head_上顎_鱗左1_表示
     	{
     		get
     		{
-    			return X0Y0_頭_上顎_鱗左1.Dra;
+    			return X0Y0_Head_上顎_鱗左1.Dra;
     		}
     		set
     		{
-    			X0Y0_頭_上顎_鱗左1.Dra = value;
-    			X0Y0_頭_上顎_鱗左1.Hit = value;
+    			X0Y0_Head_上顎_鱗左1.Dra = value;
+    			X0Y0_Head_上顎_鱗左1.Hit = value;
     		}
     	}
 
-    	public bool 頭_上顎_鱗右1_表示
+    	public bool Head_上顎_鱗右1_表示
     	{
     		get
     		{
-    			return X0Y0_頭_上顎_鱗右1.Dra;
+    			return X0Y0_Head_上顎_鱗右1.Dra;
     		}
     		set
     		{
-    			X0Y0_頭_上顎_鱗右1.Dra = value;
-    			X0Y0_頭_上顎_鱗右1.Hit = value;
+    			X0Y0_Head_上顎_鱗右1.Dra = value;
+    			X0Y0_Head_上顎_鱗右1.Hit = value;
     		}
     	}
 
-    	public bool 頭_上顎_鱗左2_表示
+    	public bool Head_上顎_鱗左2_表示
     	{
     		get
     		{
-    			return X0Y0_頭_上顎_鱗左2.Dra;
+    			return X0Y0_Head_上顎_鱗左2.Dra;
     		}
     		set
     		{
-    			X0Y0_頭_上顎_鱗左2.Dra = value;
-    			X0Y0_頭_上顎_鱗左2.Hit = value;
+    			X0Y0_Head_上顎_鱗左2.Dra = value;
+    			X0Y0_Head_上顎_鱗左2.Hit = value;
     		}
     	}
 
-    	public bool 頭_上顎_鱗右2_表示
+    	public bool Head_上顎_鱗右2_表示
     	{
     		get
     		{
-    			return X0Y0_頭_上顎_鱗右2.Dra;
+    			return X0Y0_Head_上顎_鱗右2.Dra;
     		}
     		set
     		{
-    			X0Y0_頭_上顎_鱗右2.Dra = value;
-    			X0Y0_頭_上顎_鱗右2.Hit = value;
+    			X0Y0_Head_上顎_鱗右2.Dra = value;
+    			X0Y0_Head_上顎_鱗右2.Hit = value;
     		}
     	}
 
-    	public bool 頭_上顎_鱗左3_表示
+    	public bool Head_上顎_鱗左3_表示
     	{
     		get
     		{
-    			return X0Y0_頭_上顎_鱗左3.Dra;
+    			return X0Y0_Head_上顎_鱗左3.Dra;
     		}
     		set
     		{
-    			X0Y0_頭_上顎_鱗左3.Dra = value;
-    			X0Y0_頭_上顎_鱗左3.Hit = value;
+    			X0Y0_Head_上顎_鱗左3.Dra = value;
+    			X0Y0_Head_上顎_鱗左3.Hit = value;
     		}
     	}
 
-    	public bool 頭_上顎_鱗右3_表示
+    	public bool Head_上顎_鱗右3_表示
     	{
     		get
     		{
-    			return X0Y0_頭_上顎_鱗右3.Dra;
+    			return X0Y0_Head_上顎_鱗右3.Dra;
     		}
     		set
     		{
-    			X0Y0_頭_上顎_鱗右3.Dra = value;
-    			X0Y0_頭_上顎_鱗右3.Hit = value;
+    			X0Y0_Head_上顎_鱗右3.Dra = value;
+    			X0Y0_Head_上顎_鱗右3.Hit = value;
     		}
     	}
 
-    	public bool 頭_上顎_鱗左4_表示
+    	public bool Head_上顎_鱗左4_表示
     	{
     		get
     		{
-    			return X0Y0_頭_上顎_鱗左4.Dra;
+    			return X0Y0_Head_上顎_鱗左4.Dra;
     		}
     		set
     		{
-    			X0Y0_頭_上顎_鱗左4.Dra = value;
-    			X0Y0_頭_上顎_鱗左4.Hit = value;
+    			X0Y0_Head_上顎_鱗左4.Dra = value;
+    			X0Y0_Head_上顎_鱗左4.Hit = value;
     		}
     	}
 
-    	public bool 頭_上顎_鱗右4_表示
+    	public bool Head_上顎_鱗右4_表示
     	{
     		get
     		{
-    			return X0Y0_頭_上顎_鱗右4.Dra;
+    			return X0Y0_Head_上顎_鱗右4.Dra;
     		}
     		set
     		{
-    			X0Y0_頭_上顎_鱗右4.Dra = value;
-    			X0Y0_頭_上顎_鱗右4.Hit = value;
+    			X0Y0_Head_上顎_鱗右4.Dra = value;
+    			X0Y0_Head_上顎_鱗右4.Hit = value;
     		}
     	}
 
-    	public bool 頭_上顎_鱗左5_表示
+    	public bool Head_上顎_鱗左5_表示
     	{
     		get
     		{
-    			return X0Y0_頭_上顎_鱗左5.Dra;
+    			return X0Y0_Head_上顎_鱗左5.Dra;
     		}
     		set
     		{
-    			X0Y0_頭_上顎_鱗左5.Dra = value;
-    			X0Y0_頭_上顎_鱗左5.Hit = value;
+    			X0Y0_Head_上顎_鱗左5.Dra = value;
+    			X0Y0_Head_上顎_鱗左5.Hit = value;
     		}
     	}
 
-    	public bool 頭_上顎_鱗右5_表示
+    	public bool Head_上顎_鱗右5_表示
     	{
     		get
     		{
-    			return X0Y0_頭_上顎_鱗右5.Dra;
+    			return X0Y0_Head_上顎_鱗右5.Dra;
     		}
     		set
     		{
-    			X0Y0_頭_上顎_鱗右5.Dra = value;
-    			X0Y0_頭_上顎_鱗右5.Hit = value;
+    			X0Y0_Head_上顎_鱗右5.Dra = value;
+    			X0Y0_Head_上顎_鱗右5.Hit = value;
     		}
     	}
 
-    	public bool 頭_上顎_鱗左8_表示
+    	public bool Head_上顎_鱗左8_表示
     	{
     		get
     		{
-    			return X0Y0_頭_上顎_鱗左8.Dra;
+    			return X0Y0_Head_上顎_鱗左8.Dra;
     		}
     		set
     		{
-    			X0Y0_頭_上顎_鱗左8.Dra = value;
-    			X0Y0_頭_上顎_鱗左8.Hit = value;
+    			X0Y0_Head_上顎_鱗左8.Dra = value;
+    			X0Y0_Head_上顎_鱗左8.Hit = value;
     		}
     	}
 
-    	public bool 頭_上顎_鱗右8_表示
+    	public bool Head_上顎_鱗右8_表示
     	{
     		get
     		{
-    			return X0Y0_頭_上顎_鱗右8.Dra;
+    			return X0Y0_Head_上顎_鱗右8.Dra;
     		}
     		set
     		{
-    			X0Y0_頭_上顎_鱗右8.Dra = value;
-    			X0Y0_頭_上顎_鱗右8.Hit = value;
+    			X0Y0_Head_上顎_鱗右8.Dra = value;
+    			X0Y0_Head_上顎_鱗右8.Hit = value;
     		}
     	}
 
-    	public bool 頭_上顎_鱗左9_表示
+    	public bool Head_上顎_鱗左9_表示
     	{
     		get
     		{
-    			return X0Y0_頭_上顎_鱗左9.Dra;
+    			return X0Y0_Head_上顎_鱗左9.Dra;
     		}
     		set
     		{
-    			X0Y0_頭_上顎_鱗左9.Dra = value;
-    			X0Y0_頭_上顎_鱗左9.Hit = value;
+    			X0Y0_Head_上顎_鱗左9.Dra = value;
+    			X0Y0_Head_上顎_鱗左9.Hit = value;
     		}
     	}
 
-    	public bool 頭_上顎_鱗右9_表示
+    	public bool Head_上顎_鱗右9_表示
     	{
     		get
     		{
-    			return X0Y0_頭_上顎_鱗右9.Dra;
+    			return X0Y0_Head_上顎_鱗右9.Dra;
     		}
     		set
     		{
-    			X0Y0_頭_上顎_鱗右9.Dra = value;
-    			X0Y0_頭_上顎_鱗右9.Hit = value;
+    			X0Y0_Head_上顎_鱗右9.Dra = value;
+    			X0Y0_Head_上顎_鱗右9.Hit = value;
     		}
     	}
 
-    	public bool 頭_上顎_鱗左10_表示
+    	public bool Head_上顎_鱗左10_表示
     	{
     		get
     		{
-    			return X0Y0_頭_上顎_鱗左10.Dra;
+    			return X0Y0_Head_上顎_鱗左10.Dra;
     		}
     		set
     		{
-    			X0Y0_頭_上顎_鱗左10.Dra = value;
-    			X0Y0_頭_上顎_鱗左10.Hit = value;
+    			X0Y0_Head_上顎_鱗左10.Dra = value;
+    			X0Y0_Head_上顎_鱗左10.Hit = value;
     		}
     	}
 
-    	public bool 頭_上顎_鱗右10_表示
+    	public bool Head_上顎_鱗右10_表示
     	{
     		get
     		{
-    			return X0Y0_頭_上顎_鱗右10.Dra;
+    			return X0Y0_Head_上顎_鱗右10.Dra;
     		}
     		set
     		{
-    			X0Y0_頭_上顎_鱗右10.Dra = value;
-    			X0Y0_頭_上顎_鱗右10.Hit = value;
+    			X0Y0_Head_上顎_鱗右10.Dra = value;
+    			X0Y0_Head_上顎_鱗右10.Hit = value;
     		}
     	}
 
-    	public bool 頭_上顎_鱗左11_表示
+    	public bool Head_上顎_鱗左11_表示
     	{
     		get
     		{
-    			return X0Y0_頭_上顎_鱗左11.Dra;
+    			return X0Y0_Head_上顎_鱗左11.Dra;
     		}
     		set
     		{
-    			X0Y0_頭_上顎_鱗左11.Dra = value;
-    			X0Y0_頭_上顎_鱗左11.Hit = value;
+    			X0Y0_Head_上顎_鱗左11.Dra = value;
+    			X0Y0_Head_上顎_鱗左11.Hit = value;
     		}
     	}
 
-    	public bool 頭_上顎_鱗右11_表示
+    	public bool Head_上顎_鱗右11_表示
     	{
     		get
     		{
-    			return X0Y0_頭_上顎_鱗右11.Dra;
+    			return X0Y0_Head_上顎_鱗右11.Dra;
     		}
     		set
     		{
-    			X0Y0_頭_上顎_鱗右11.Dra = value;
-    			X0Y0_頭_上顎_鱗右11.Hit = value;
+    			X0Y0_Head_上顎_鱗右11.Dra = value;
+    			X0Y0_Head_上顎_鱗右11.Hit = value;
     		}
     	}
 
-    	public bool 頭_下顎_顎基_表示
+    	public bool Head_下顎_顎基_表示
     	{
     		get
     		{
-    			return X0Y0_頭_下顎_顎基.Dra;
+    			return X0Y0_Head_下顎_顎基.Dra;
     		}
     		set
     		{
-    			X0Y0_頭_下顎_顎基.Dra = value;
-    			X0Y0_頭_下顎_顎基.Hit = value;
+    			X0Y0_Head_下顎_顎基.Dra = value;
+    			X0Y0_Head_下顎_顎基.Hit = value;
     		}
     	}
 
-    	public bool 頭_下顎_鱗1_表示
+    	public bool Head_下顎_鱗1_表示
     	{
     		get
     		{
-    			return X0Y0_頭_下顎_鱗1.Dra;
+    			return X0Y0_Head_下顎_鱗1.Dra;
     		}
     		set
     		{
-    			X0Y0_頭_下顎_鱗1.Dra = value;
-    			X0Y0_頭_下顎_鱗1.Hit = value;
+    			X0Y0_Head_下顎_鱗1.Dra = value;
+    			X0Y0_Head_下顎_鱗1.Hit = value;
     		}
     	}
 
-    	public bool 頭_下顎_鱗2_表示
+    	public bool Head_下顎_鱗2_表示
     	{
     		get
     		{
-    			return X0Y0_頭_下顎_鱗2.Dra;
+    			return X0Y0_Head_下顎_鱗2.Dra;
     		}
     		set
     		{
-    			X0Y0_頭_下顎_鱗2.Dra = value;
-    			X0Y0_頭_下顎_鱗2.Hit = value;
+    			X0Y0_Head_下顎_鱗2.Dra = value;
+    			X0Y0_Head_下顎_鱗2.Hit = value;
     		}
     	}
 
-    	public bool 頭_下顎_鱗3_表示
+    	public bool Head_下顎_鱗3_表示
     	{
     		get
     		{
-    			return X0Y0_頭_下顎_鱗3.Dra;
+    			return X0Y0_Head_下顎_鱗3.Dra;
     		}
     		set
     		{
-    			X0Y0_頭_下顎_鱗3.Dra = value;
-    			X0Y0_頭_下顎_鱗3.Hit = value;
+    			X0Y0_Head_下顎_鱗3.Dra = value;
+    			X0Y0_Head_下顎_鱗3.Hit = value;
     		}
     	}
 
-    	public bool 頭_下顎_鱗4_表示
+    	public bool Head_下顎_鱗4_表示
     	{
     		get
     		{
-    			return X0Y0_頭_下顎_鱗4.Dra;
+    			return X0Y0_Head_下顎_鱗4.Dra;
     		}
     		set
     		{
-    			X0Y0_頭_下顎_鱗4.Dra = value;
-    			X0Y0_頭_下顎_鱗4.Hit = value;
+    			X0Y0_Head_下顎_鱗4.Dra = value;
+    			X0Y0_Head_下顎_鱗4.Hit = value;
     		}
     	}
 
-    	public bool 頭_下顎_鱗左1_表示
+    	public bool Head_下顎_鱗左1_表示
     	{
     		get
     		{
-    			return X0Y0_頭_下顎_鱗左1.Dra;
+    			return X0Y0_Head_下顎_鱗左1.Dra;
     		}
     		set
     		{
-    			X0Y0_頭_下顎_鱗左1.Dra = value;
-    			X0Y0_頭_下顎_鱗左1.Hit = value;
+    			X0Y0_Head_下顎_鱗左1.Dra = value;
+    			X0Y0_Head_下顎_鱗左1.Hit = value;
     		}
     	}
 
-    	public bool 頭_下顎_鱗右1_表示
+    	public bool Head_下顎_鱗右1_表示
     	{
     		get
     		{
-    			return X0Y0_頭_下顎_鱗右1.Dra;
+    			return X0Y0_Head_下顎_鱗右1.Dra;
     		}
     		set
     		{
-    			X0Y0_頭_下顎_鱗右1.Dra = value;
-    			X0Y0_頭_下顎_鱗右1.Hit = value;
+    			X0Y0_Head_下顎_鱗右1.Dra = value;
+    			X0Y0_Head_下顎_鱗右1.Hit = value;
     		}
     	}
 
-    	public bool 頭_下顎_鱗左2_表示
+    	public bool Head_下顎_鱗左2_表示
     	{
     		get
     		{
-    			return X0Y0_頭_下顎_鱗左2.Dra;
+    			return X0Y0_Head_下顎_鱗左2.Dra;
     		}
     		set
     		{
-    			X0Y0_頭_下顎_鱗左2.Dra = value;
-    			X0Y0_頭_下顎_鱗左2.Hit = value;
+    			X0Y0_Head_下顎_鱗左2.Dra = value;
+    			X0Y0_Head_下顎_鱗左2.Hit = value;
     		}
     	}
 
-    	public bool 頭_下顎_鱗右2_表示
+    	public bool Head_下顎_鱗右2_表示
     	{
     		get
     		{
-    			return X0Y0_頭_下顎_鱗右2.Dra;
+    			return X0Y0_Head_下顎_鱗右2.Dra;
     		}
     		set
     		{
-    			X0Y0_頭_下顎_鱗右2.Dra = value;
-    			X0Y0_頭_下顎_鱗右2.Hit = value;
+    			X0Y0_Head_下顎_鱗右2.Dra = value;
+    			X0Y0_Head_下顎_鱗右2.Hit = value;
     		}
     	}
 
-    	public bool 頭_下顎_鱗左3_表示
+    	public bool Head_下顎_鱗左3_表示
     	{
     		get
     		{
-    			return X0Y0_頭_下顎_鱗左3.Dra;
+    			return X0Y0_Head_下顎_鱗左3.Dra;
     		}
     		set
     		{
-    			X0Y0_頭_下顎_鱗左3.Dra = value;
-    			X0Y0_頭_下顎_鱗左3.Hit = value;
+    			X0Y0_Head_下顎_鱗左3.Dra = value;
+    			X0Y0_Head_下顎_鱗左3.Hit = value;
     		}
     	}
 
-    	public bool 頭_下顎_鱗右3_表示
+    	public bool Head_下顎_鱗右3_表示
     	{
     		get
     		{
-    			return X0Y0_頭_下顎_鱗右3.Dra;
+    			return X0Y0_Head_下顎_鱗右3.Dra;
     		}
     		set
     		{
-    			X0Y0_頭_下顎_鱗右3.Dra = value;
-    			X0Y0_頭_下顎_鱗右3.Hit = value;
+    			X0Y0_Head_下顎_鱗右3.Dra = value;
+    			X0Y0_Head_下顎_鱗右3.Hit = value;
     		}
     	}
 
-    	public bool 頭_下顎_鱗左4_表示
+    	public bool Head_下顎_鱗左4_表示
     	{
     		get
     		{
-    			return X0Y0_頭_下顎_鱗左4.Dra;
+    			return X0Y0_Head_下顎_鱗左4.Dra;
     		}
     		set
     		{
-    			X0Y0_頭_下顎_鱗左4.Dra = value;
-    			X0Y0_頭_下顎_鱗左4.Hit = value;
+    			X0Y0_Head_下顎_鱗左4.Dra = value;
+    			X0Y0_Head_下顎_鱗左4.Hit = value;
     		}
     	}
 
-    	public bool 頭_下顎_鱗右4_表示
+    	public bool Head_下顎_鱗右4_表示
     	{
     		get
     		{
-    			return X0Y0_頭_下顎_鱗右4.Dra;
+    			return X0Y0_Head_下顎_鱗右4.Dra;
     		}
     		set
     		{
-    			X0Y0_頭_下顎_鱗右4.Dra = value;
-    			X0Y0_頭_下顎_鱗右4.Hit = value;
+    			X0Y0_Head_下顎_鱗右4.Dra = value;
+    			X0Y0_Head_下顎_鱗右4.Hit = value;
     		}
     	}
 
-    	public bool 頭_下顎_鱗左5_表示
+    	public bool Head_下顎_鱗左5_表示
     	{
     		get
     		{
-    			return X0Y0_頭_下顎_鱗左5.Dra;
+    			return X0Y0_Head_下顎_鱗左5.Dra;
     		}
     		set
     		{
-    			X0Y0_頭_下顎_鱗左5.Dra = value;
-    			X0Y0_頭_下顎_鱗左5.Hit = value;
+    			X0Y0_Head_下顎_鱗左5.Dra = value;
+    			X0Y0_Head_下顎_鱗左5.Hit = value;
     		}
     	}
 
-    	public bool 頭_下顎_鱗右5_表示
+    	public bool Head_下顎_鱗右5_表示
     	{
     		get
     		{
-    			return X0Y0_頭_下顎_鱗右5.Dra;
+    			return X0Y0_Head_下顎_鱗右5.Dra;
     		}
     		set
     		{
-    			X0Y0_頭_下顎_鱗右5.Dra = value;
-    			X0Y0_頭_下顎_鱗右5.Hit = value;
+    			X0Y0_Head_下顎_鱗右5.Dra = value;
+    			X0Y0_Head_下顎_鱗右5.Hit = value;
     		}
     	}
 
-    	public bool 頭_下顎_鱗左6_表示
+    	public bool Head_下顎_鱗左6_表示
     	{
     		get
     		{
-    			return X0Y0_頭_下顎_鱗左6.Dra;
+    			return X0Y0_Head_下顎_鱗左6.Dra;
     		}
     		set
     		{
-    			X0Y0_頭_下顎_鱗左6.Dra = value;
-    			X0Y0_頭_下顎_鱗左6.Hit = value;
+    			X0Y0_Head_下顎_鱗左6.Dra = value;
+    			X0Y0_Head_下顎_鱗左6.Hit = value;
     		}
     	}
 
-    	public bool 頭_下顎_鱗右6_表示
+    	public bool Head_下顎_鱗右6_表示
     	{
     		get
     		{
-    			return X0Y0_頭_下顎_鱗右6.Dra;
+    			return X0Y0_Head_下顎_鱗右6.Dra;
     		}
     		set
     		{
-    			X0Y0_頭_下顎_鱗右6.Dra = value;
-    			X0Y0_頭_下顎_鱗右6.Hit = value;
+    			X0Y0_Head_下顎_鱗右6.Dra = value;
+    			X0Y0_Head_下顎_鱗右6.Hit = value;
     		}
     	}
 
-    	public bool 頭_下顎_鱗左7_表示
+    	public bool Head_下顎_鱗左7_表示
     	{
     		get
     		{
-    			return X0Y0_頭_下顎_鱗左7.Dra;
+    			return X0Y0_Head_下顎_鱗左7.Dra;
     		}
     		set
     		{
-    			X0Y0_頭_下顎_鱗左7.Dra = value;
-    			X0Y0_頭_下顎_鱗左7.Hit = value;
+    			X0Y0_Head_下顎_鱗左7.Dra = value;
+    			X0Y0_Head_下顎_鱗左7.Hit = value;
     		}
     	}
 
-    	public bool 頭_下顎_鱗右7_表示
+    	public bool Head_下顎_鱗右7_表示
     	{
     		get
     		{
-    			return X0Y0_頭_下顎_鱗右7.Dra;
+    			return X0Y0_Head_下顎_鱗右7.Dra;
     		}
     		set
     		{
-    			X0Y0_頭_下顎_鱗右7.Dra = value;
-    			X0Y0_頭_下顎_鱗右7.Hit = value;
+    			X0Y0_Head_下顎_鱗右7.Dra = value;
+    			X0Y0_Head_下顎_鱗右7.Hit = value;
     		}
     	}
 
-    	public bool 頭_下顎_鱗左8_表示
+    	public bool Head_下顎_鱗左8_表示
     	{
     		get
     		{
-    			return X0Y0_頭_下顎_鱗左8.Dra;
+    			return X0Y0_Head_下顎_鱗左8.Dra;
     		}
     		set
     		{
-    			X0Y0_頭_下顎_鱗左8.Dra = value;
-    			X0Y0_頭_下顎_鱗左8.Hit = value;
+    			X0Y0_Head_下顎_鱗左8.Dra = value;
+    			X0Y0_Head_下顎_鱗左8.Hit = value;
     		}
     	}
 
-    	public bool 頭_下顎_鱗右8_表示
+    	public bool Head_下顎_鱗右8_表示
     	{
     		get
     		{
-    			return X0Y0_頭_下顎_鱗右8.Dra;
+    			return X0Y0_Head_下顎_鱗右8.Dra;
     		}
     		set
     		{
-    			X0Y0_頭_下顎_鱗右8.Dra = value;
-    			X0Y0_頭_下顎_鱗右8.Hit = value;
+    			X0Y0_Head_下顎_鱗右8.Dra = value;
+    			X0Y0_Head_下顎_鱗右8.Hit = value;
     		}
     	}
 
-    	public bool 頭_下顎_鱗左9_表示
+    	public bool Head_下顎_鱗左9_表示
     	{
     		get
     		{
-    			return X0Y0_頭_下顎_鱗左9.Dra;
+    			return X0Y0_Head_下顎_鱗左9.Dra;
     		}
     		set
     		{
-    			X0Y0_頭_下顎_鱗左9.Dra = value;
-    			X0Y0_頭_下顎_鱗左9.Hit = value;
+    			X0Y0_Head_下顎_鱗左9.Dra = value;
+    			X0Y0_Head_下顎_鱗左9.Hit = value;
     		}
     	}
 
-    	public bool 頭_下顎_鱗右9_表示
+    	public bool Head_下顎_鱗右9_表示
     	{
     		get
     		{
-    			return X0Y0_頭_下顎_鱗右9.Dra;
+    			return X0Y0_Head_下顎_鱗右9.Dra;
     		}
     		set
     		{
-    			X0Y0_頭_下顎_鱗右9.Dra = value;
-    			X0Y0_頭_下顎_鱗右9.Hit = value;
+    			X0Y0_Head_下顎_鱗右9.Dra = value;
+    			X0Y0_Head_下顎_鱗右9.Hit = value;
     		}
     	}
 
-    	public bool 頭_下顎_鱗左10_表示
+    	public bool Head_下顎_鱗左10_表示
     	{
     		get
     		{
-    			return X0Y0_頭_下顎_鱗左10.Dra;
+    			return X0Y0_Head_下顎_鱗左10.Dra;
     		}
     		set
     		{
-    			X0Y0_頭_下顎_鱗左10.Dra = value;
-    			X0Y0_頭_下顎_鱗左10.Hit = value;
+    			X0Y0_Head_下顎_鱗左10.Dra = value;
+    			X0Y0_Head_下顎_鱗左10.Hit = value;
     		}
     	}
 
-    	public bool 頭_下顎_鱗右10_表示
+    	public bool Head_下顎_鱗右10_表示
     	{
     		get
     		{
-    			return X0Y0_頭_下顎_鱗右10.Dra;
+    			return X0Y0_Head_下顎_鱗右10.Dra;
     		}
     		set
     		{
-    			X0Y0_頭_下顎_鱗右10.Dra = value;
-    			X0Y0_頭_下顎_鱗右10.Hit = value;
+    			X0Y0_Head_下顎_鱗右10.Dra = value;
+    			X0Y0_Head_下顎_鱗右10.Hit = value;
     		}
     	}
 
-    	public bool 頭_下顎_鱗左11_表示
+    	public bool Head_下顎_鱗左11_表示
     	{
     		get
     		{
-    			return X0Y0_頭_下顎_鱗左11.Dra;
+    			return X0Y0_Head_下顎_鱗左11.Dra;
     		}
     		set
     		{
-    			X0Y0_頭_下顎_鱗左11.Dra = value;
-    			X0Y0_頭_下顎_鱗左11.Hit = value;
+    			X0Y0_Head_下顎_鱗左11.Dra = value;
+    			X0Y0_Head_下顎_鱗左11.Hit = value;
     		}
     	}
 
-    	public bool 頭_下顎_鱗右11_表示
+    	public bool Head_下顎_鱗右11_表示
     	{
     		get
     		{
-    			return X0Y0_頭_下顎_鱗右11.Dra;
+    			return X0Y0_Head_下顎_鱗右11.Dra;
     		}
     		set
     		{
-    			X0Y0_頭_下顎_鱗右11.Dra = value;
-    			X0Y0_頭_下顎_鱗右11.Hit = value;
+    			X0Y0_Head_下顎_鱗右11.Dra = value;
+    			X0Y0_Head_下顎_鱗右11.Hit = value;
     		}
     	}
 
@@ -4735,53 +4735,53 @@ namespace SlaveMatrix
     			頚_鱗1_鱗16_鱗2_表示 = value;
     			頚_鱗1_鱗17_鱗1_表示 = value;
     			頚_鱗1_鱗17_鱗2_表示 = value;
-    			頭_上顎_顎基_表示 = value;
-    			頭_上顎_鱗4_表示 = value;
-    			頭_上顎_鱗左1_表示 = value;
-    			頭_上顎_鱗右1_表示 = value;
-    			頭_上顎_鱗左2_表示 = value;
-    			頭_上顎_鱗右2_表示 = value;
-    			頭_上顎_鱗左3_表示 = value;
-    			頭_上顎_鱗右3_表示 = value;
-    			頭_上顎_鱗左4_表示 = value;
-    			頭_上顎_鱗右4_表示 = value;
-    			頭_上顎_鱗左5_表示 = value;
-    			頭_上顎_鱗右5_表示 = value;
-    			頭_上顎_鱗左8_表示 = value;
-    			頭_上顎_鱗右8_表示 = value;
-    			頭_上顎_鱗左9_表示 = value;
-    			頭_上顎_鱗右9_表示 = value;
-    			頭_上顎_鱗左10_表示 = value;
-    			頭_上顎_鱗右10_表示 = value;
-    			頭_上顎_鱗左11_表示 = value;
-    			頭_上顎_鱗右11_表示 = value;
-    			頭_下顎_顎基_表示 = value;
-    			頭_下顎_鱗1_表示 = value;
-    			頭_下顎_鱗2_表示 = value;
-    			頭_下顎_鱗3_表示 = value;
-    			頭_下顎_鱗4_表示 = value;
-    			頭_下顎_鱗左1_表示 = value;
-    			頭_下顎_鱗右1_表示 = value;
-    			頭_下顎_鱗左2_表示 = value;
-    			頭_下顎_鱗右2_表示 = value;
-    			頭_下顎_鱗左3_表示 = value;
-    			頭_下顎_鱗右3_表示 = value;
-    			頭_下顎_鱗左4_表示 = value;
-    			頭_下顎_鱗右4_表示 = value;
-    			頭_下顎_鱗左5_表示 = value;
-    			頭_下顎_鱗右5_表示 = value;
-    			頭_下顎_鱗左6_表示 = value;
-    			頭_下顎_鱗右6_表示 = value;
-    			頭_下顎_鱗左7_表示 = value;
-    			頭_下顎_鱗右7_表示 = value;
-    			頭_下顎_鱗左8_表示 = value;
-    			頭_下顎_鱗右8_表示 = value;
-    			頭_下顎_鱗左9_表示 = value;
-    			頭_下顎_鱗右9_表示 = value;
-    			頭_下顎_鱗左10_表示 = value;
-    			頭_下顎_鱗右10_表示 = value;
-    			頭_下顎_鱗左11_表示 = value;
-    			頭_下顎_鱗右11_表示 = value;
+    			Head_上顎_顎基_表示 = value;
+    			Head_上顎_鱗4_表示 = value;
+    			Head_上顎_鱗左1_表示 = value;
+    			Head_上顎_鱗右1_表示 = value;
+    			Head_上顎_鱗左2_表示 = value;
+    			Head_上顎_鱗右2_表示 = value;
+    			Head_上顎_鱗左3_表示 = value;
+    			Head_上顎_鱗右3_表示 = value;
+    			Head_上顎_鱗左4_表示 = value;
+    			Head_上顎_鱗右4_表示 = value;
+    			Head_上顎_鱗左5_表示 = value;
+    			Head_上顎_鱗右5_表示 = value;
+    			Head_上顎_鱗左8_表示 = value;
+    			Head_上顎_鱗右8_表示 = value;
+    			Head_上顎_鱗左9_表示 = value;
+    			Head_上顎_鱗右9_表示 = value;
+    			Head_上顎_鱗左10_表示 = value;
+    			Head_上顎_鱗右10_表示 = value;
+    			Head_上顎_鱗左11_表示 = value;
+    			Head_上顎_鱗右11_表示 = value;
+    			Head_下顎_顎基_表示 = value;
+    			Head_下顎_鱗1_表示 = value;
+    			Head_下顎_鱗2_表示 = value;
+    			Head_下顎_鱗3_表示 = value;
+    			Head_下顎_鱗4_表示 = value;
+    			Head_下顎_鱗左1_表示 = value;
+    			Head_下顎_鱗右1_表示 = value;
+    			Head_下顎_鱗左2_表示 = value;
+    			Head_下顎_鱗右2_表示 = value;
+    			Head_下顎_鱗左3_表示 = value;
+    			Head_下顎_鱗右3_表示 = value;
+    			Head_下顎_鱗左4_表示 = value;
+    			Head_下顎_鱗右4_表示 = value;
+    			Head_下顎_鱗左5_表示 = value;
+    			Head_下顎_鱗右5_表示 = value;
+    			Head_下顎_鱗左6_表示 = value;
+    			Head_下顎_鱗右6_表示 = value;
+    			Head_下顎_鱗左7_表示 = value;
+    			Head_下顎_鱗右7_表示 = value;
+    			Head_下顎_鱗左8_表示 = value;
+    			Head_下顎_鱗右8_表示 = value;
+    			Head_下顎_鱗左9_表示 = value;
+    			Head_下顎_鱗右9_表示 = value;
+    			Head_下顎_鱗左10_表示 = value;
+    			Head_下顎_鱗右10_表示 = value;
+    			Head_下顎_鱗左11_表示 = value;
+    			Head_下顎_鱗右11_表示 = value;
     			輪2_革_表示 = value;
     			輪2_金具1_表示 = value;
     			輪2_金具2_表示 = value;
@@ -4978,53 +4978,53 @@ namespace SlaveMatrix
     			頚_鱗1_鱗16_鱗2CD.不透明度 = value;
     			頚_鱗1_鱗17_鱗1CD.不透明度 = value;
     			頚_鱗1_鱗17_鱗2CD.不透明度 = value;
-    			頭_上顎_顎基CD.不透明度 = value;
-    			頭_上顎_鱗4CD.不透明度 = value;
-    			頭_上顎_鱗左1CD.不透明度 = value;
-    			頭_上顎_鱗右1CD.不透明度 = value;
-    			頭_上顎_鱗左2CD.不透明度 = value;
-    			頭_上顎_鱗右2CD.不透明度 = value;
-    			頭_上顎_鱗左3CD.不透明度 = value;
-    			頭_上顎_鱗右3CD.不透明度 = value;
-    			頭_上顎_鱗左4CD.不透明度 = value;
-    			頭_上顎_鱗右4CD.不透明度 = value;
-    			頭_上顎_鱗左5CD.不透明度 = value;
-    			頭_上顎_鱗右5CD.不透明度 = value;
-    			頭_上顎_鱗左8CD.不透明度 = value;
-    			頭_上顎_鱗右8CD.不透明度 = value;
-    			頭_上顎_鱗左9CD.不透明度 = value;
-    			頭_上顎_鱗右9CD.不透明度 = value;
-    			頭_上顎_鱗左10CD.不透明度 = value;
-    			頭_上顎_鱗右10CD.不透明度 = value;
-    			頭_上顎_鱗左11CD.不透明度 = value;
-    			頭_上顎_鱗右11CD.不透明度 = value;
-    			頭_下顎_顎基CD.不透明度 = value;
-    			頭_下顎_鱗1CD.不透明度 = value;
-    			頭_下顎_鱗2CD.不透明度 = value;
-    			頭_下顎_鱗3CD.不透明度 = value;
-    			頭_下顎_鱗4CD.不透明度 = value;
-    			頭_下顎_鱗左1CD.不透明度 = value;
-    			頭_下顎_鱗右1CD.不透明度 = value;
-    			頭_下顎_鱗左2CD.不透明度 = value;
-    			頭_下顎_鱗右2CD.不透明度 = value;
-    			頭_下顎_鱗左3CD.不透明度 = value;
-    			頭_下顎_鱗右3CD.不透明度 = value;
-    			頭_下顎_鱗左4CD.不透明度 = value;
-    			頭_下顎_鱗右4CD.不透明度 = value;
-    			頭_下顎_鱗左5CD.不透明度 = value;
-    			頭_下顎_鱗右5CD.不透明度 = value;
-    			頭_下顎_鱗左6CD.不透明度 = value;
-    			頭_下顎_鱗右6CD.不透明度 = value;
-    			頭_下顎_鱗左7CD.不透明度 = value;
-    			頭_下顎_鱗右7CD.不透明度 = value;
-    			頭_下顎_鱗左8CD.不透明度 = value;
-    			頭_下顎_鱗右8CD.不透明度 = value;
-    			頭_下顎_鱗左9CD.不透明度 = value;
-    			頭_下顎_鱗右9CD.不透明度 = value;
-    			頭_下顎_鱗左10CD.不透明度 = value;
-    			頭_下顎_鱗右10CD.不透明度 = value;
-    			頭_下顎_鱗左11CD.不透明度 = value;
-    			頭_下顎_鱗右11CD.不透明度 = value;
+    			Head_上顎_顎基CD.不透明度 = value;
+    			Head_上顎_鱗4CD.不透明度 = value;
+    			Head_上顎_鱗左1CD.不透明度 = value;
+    			Head_上顎_鱗右1CD.不透明度 = value;
+    			Head_上顎_鱗左2CD.不透明度 = value;
+    			Head_上顎_鱗右2CD.不透明度 = value;
+    			Head_上顎_鱗左3CD.不透明度 = value;
+    			Head_上顎_鱗右3CD.不透明度 = value;
+    			Head_上顎_鱗左4CD.不透明度 = value;
+    			Head_上顎_鱗右4CD.不透明度 = value;
+    			Head_上顎_鱗左5CD.不透明度 = value;
+    			Head_上顎_鱗右5CD.不透明度 = value;
+    			Head_上顎_鱗左8CD.不透明度 = value;
+    			Head_上顎_鱗右8CD.不透明度 = value;
+    			Head_上顎_鱗左9CD.不透明度 = value;
+    			Head_上顎_鱗右9CD.不透明度 = value;
+    			Head_上顎_鱗左10CD.不透明度 = value;
+    			Head_上顎_鱗右10CD.不透明度 = value;
+    			Head_上顎_鱗左11CD.不透明度 = value;
+    			Head_上顎_鱗右11CD.不透明度 = value;
+    			Head_下顎_顎基CD.不透明度 = value;
+    			Head_下顎_鱗1CD.不透明度 = value;
+    			Head_下顎_鱗2CD.不透明度 = value;
+    			Head_下顎_鱗3CD.不透明度 = value;
+    			Head_下顎_鱗4CD.不透明度 = value;
+    			Head_下顎_鱗左1CD.不透明度 = value;
+    			Head_下顎_鱗右1CD.不透明度 = value;
+    			Head_下顎_鱗左2CD.不透明度 = value;
+    			Head_下顎_鱗右2CD.不透明度 = value;
+    			Head_下顎_鱗左3CD.不透明度 = value;
+    			Head_下顎_鱗右3CD.不透明度 = value;
+    			Head_下顎_鱗左4CD.不透明度 = value;
+    			Head_下顎_鱗右4CD.不透明度 = value;
+    			Head_下顎_鱗左5CD.不透明度 = value;
+    			Head_下顎_鱗右5CD.不透明度 = value;
+    			Head_下顎_鱗左6CD.不透明度 = value;
+    			Head_下顎_鱗右6CD.不透明度 = value;
+    			Head_下顎_鱗左7CD.不透明度 = value;
+    			Head_下顎_鱗右7CD.不透明度 = value;
+    			Head_下顎_鱗左8CD.不透明度 = value;
+    			Head_下顎_鱗右8CD.不透明度 = value;
+    			Head_下顎_鱗左9CD.不透明度 = value;
+    			Head_下顎_鱗右9CD.不透明度 = value;
+    			Head_下顎_鱗左10CD.不透明度 = value;
+    			Head_下顎_鱗右10CD.不透明度 = value;
+    			Head_下顎_鱗左11CD.不透明度 = value;
+    			Head_下顎_鱗右11CD.不透明度 = value;
     			輪1_革CD.不透明度 = value;
     			輪1_金具1CD.不透明度 = value;
     			輪1_金具2CD.不透明度 = value;
@@ -5338,54 +5338,54 @@ namespace SlaveMatrix
     		X0Y0_頚_鱗1_鱗17_鱗2 = pars4["鱗2"].ToPar();
     		pars2 = pars["頭"].ToPars();
     		pars3 = pars2["上顎"].ToPars();
-    		X0Y0_頭_上顎_顎基 = pars3["顎基"].ToPar();
-    		X0Y0_頭_上顎_鱗4 = pars3["鱗4"].ToPar();
-    		X0Y0_頭_上顎_鱗左1 = pars3["鱗左1"].ToPar();
-    		X0Y0_頭_上顎_鱗右1 = pars3["鱗右1"].ToPar();
-    		X0Y0_頭_上顎_鱗左2 = pars3["鱗左2"].ToPar();
-    		X0Y0_頭_上顎_鱗右2 = pars3["鱗右2"].ToPar();
-    		X0Y0_頭_上顎_鱗左3 = pars3["鱗左3"].ToPar();
-    		X0Y0_頭_上顎_鱗右3 = pars3["鱗右3"].ToPar();
-    		X0Y0_頭_上顎_鱗左4 = pars3["鱗左4"].ToPar();
-    		X0Y0_頭_上顎_鱗右4 = pars3["鱗右4"].ToPar();
-    		X0Y0_頭_上顎_鱗左5 = pars3["鱗左5"].ToPar();
-    		X0Y0_頭_上顎_鱗右5 = pars3["鱗右5"].ToPar();
-    		X0Y0_頭_上顎_鱗左8 = pars3["鱗左8"].ToPar();
-    		X0Y0_頭_上顎_鱗右8 = pars3["鱗右8"].ToPar();
-    		X0Y0_頭_上顎_鱗左9 = pars3["鱗左9"].ToPar();
-    		X0Y0_頭_上顎_鱗右9 = pars3["鱗右9"].ToPar();
-    		X0Y0_頭_上顎_鱗左10 = pars3["鱗左10"].ToPar();
-    		X0Y0_頭_上顎_鱗右10 = pars3["鱗右10"].ToPar();
-    		X0Y0_頭_上顎_鱗左11 = pars3["鱗左11"].ToPar();
-    		X0Y0_頭_上顎_鱗右11 = pars3["鱗右11"].ToPar();
+    		X0Y0_Head_上顎_顎基 = pars3["顎基"].ToPar();
+    		X0Y0_Head_上顎_鱗4 = pars3["鱗4"].ToPar();
+    		X0Y0_Head_上顎_鱗左1 = pars3["鱗左1"].ToPar();
+    		X0Y0_Head_上顎_鱗右1 = pars3["鱗右1"].ToPar();
+    		X0Y0_Head_上顎_鱗左2 = pars3["鱗左2"].ToPar();
+    		X0Y0_Head_上顎_鱗右2 = pars3["鱗右2"].ToPar();
+    		X0Y0_Head_上顎_鱗左3 = pars3["鱗左3"].ToPar();
+    		X0Y0_Head_上顎_鱗右3 = pars3["鱗右3"].ToPar();
+    		X0Y0_Head_上顎_鱗左4 = pars3["鱗左4"].ToPar();
+    		X0Y0_Head_上顎_鱗右4 = pars3["鱗右4"].ToPar();
+    		X0Y0_Head_上顎_鱗左5 = pars3["鱗左5"].ToPar();
+    		X0Y0_Head_上顎_鱗右5 = pars3["鱗右5"].ToPar();
+    		X0Y0_Head_上顎_鱗左8 = pars3["鱗左8"].ToPar();
+    		X0Y0_Head_上顎_鱗右8 = pars3["鱗右8"].ToPar();
+    		X0Y0_Head_上顎_鱗左9 = pars3["鱗左9"].ToPar();
+    		X0Y0_Head_上顎_鱗右9 = pars3["鱗右9"].ToPar();
+    		X0Y0_Head_上顎_鱗左10 = pars3["鱗左10"].ToPar();
+    		X0Y0_Head_上顎_鱗右10 = pars3["鱗右10"].ToPar();
+    		X0Y0_Head_上顎_鱗左11 = pars3["鱗左11"].ToPar();
+    		X0Y0_Head_上顎_鱗右11 = pars3["鱗右11"].ToPar();
     		pars3 = pars2["下顎"].ToPars();
-    		X0Y0_頭_下顎_顎基 = pars3["顎基"].ToPar();
-    		X0Y0_頭_下顎_鱗1 = pars3["鱗1"].ToPar();
-    		X0Y0_頭_下顎_鱗2 = pars3["鱗2"].ToPar();
-    		X0Y0_頭_下顎_鱗3 = pars3["鱗3"].ToPar();
-    		X0Y0_頭_下顎_鱗4 = pars3["鱗4"].ToPar();
-    		X0Y0_頭_下顎_鱗左1 = pars3["鱗左1"].ToPar();
-    		X0Y0_頭_下顎_鱗右1 = pars3["鱗右1"].ToPar();
-    		X0Y0_頭_下顎_鱗左2 = pars3["鱗左2"].ToPar();
-    		X0Y0_頭_下顎_鱗右2 = pars3["鱗右2"].ToPar();
-    		X0Y0_頭_下顎_鱗左3 = pars3["鱗左3"].ToPar();
-    		X0Y0_頭_下顎_鱗右3 = pars3["鱗右3"].ToPar();
-    		X0Y0_頭_下顎_鱗左4 = pars3["鱗左4"].ToPar();
-    		X0Y0_頭_下顎_鱗右4 = pars3["鱗右4"].ToPar();
-    		X0Y0_頭_下顎_鱗左5 = pars3["鱗左5"].ToPar();
-    		X0Y0_頭_下顎_鱗右5 = pars3["鱗右5"].ToPar();
-    		X0Y0_頭_下顎_鱗左6 = pars3["鱗左6"].ToPar();
-    		X0Y0_頭_下顎_鱗右6 = pars3["鱗右6"].ToPar();
-    		X0Y0_頭_下顎_鱗左7 = pars3["鱗左7"].ToPar();
-    		X0Y0_頭_下顎_鱗右7 = pars3["鱗右7"].ToPar();
-    		X0Y0_頭_下顎_鱗左8 = pars3["鱗左8"].ToPar();
-    		X0Y0_頭_下顎_鱗右8 = pars3["鱗右8"].ToPar();
-    		X0Y0_頭_下顎_鱗左9 = pars3["鱗左9"].ToPar();
-    		X0Y0_頭_下顎_鱗右9 = pars3["鱗右9"].ToPar();
-    		X0Y0_頭_下顎_鱗左10 = pars3["鱗左10"].ToPar();
-    		X0Y0_頭_下顎_鱗右10 = pars3["鱗右10"].ToPar();
-    		X0Y0_頭_下顎_鱗左11 = pars3["鱗左11"].ToPar();
-    		X0Y0_頭_下顎_鱗右11 = pars3["鱗右11"].ToPar();
+    		X0Y0_Head_下顎_顎基 = pars3["顎基"].ToPar();
+    		X0Y0_Head_下顎_鱗1 = pars3["鱗1"].ToPar();
+    		X0Y0_Head_下顎_鱗2 = pars3["鱗2"].ToPar();
+    		X0Y0_Head_下顎_鱗3 = pars3["鱗3"].ToPar();
+    		X0Y0_Head_下顎_鱗4 = pars3["鱗4"].ToPar();
+    		X0Y0_Head_下顎_鱗左1 = pars3["鱗左1"].ToPar();
+    		X0Y0_Head_下顎_鱗右1 = pars3["鱗右1"].ToPar();
+    		X0Y0_Head_下顎_鱗左2 = pars3["鱗左2"].ToPar();
+    		X0Y0_Head_下顎_鱗右2 = pars3["鱗右2"].ToPar();
+    		X0Y0_Head_下顎_鱗左3 = pars3["鱗左3"].ToPar();
+    		X0Y0_Head_下顎_鱗右3 = pars3["鱗右3"].ToPar();
+    		X0Y0_Head_下顎_鱗左4 = pars3["鱗左4"].ToPar();
+    		X0Y0_Head_下顎_鱗右4 = pars3["鱗右4"].ToPar();
+    		X0Y0_Head_下顎_鱗左5 = pars3["鱗左5"].ToPar();
+    		X0Y0_Head_下顎_鱗右5 = pars3["鱗右5"].ToPar();
+    		X0Y0_Head_下顎_鱗左6 = pars3["鱗左6"].ToPar();
+    		X0Y0_Head_下顎_鱗右6 = pars3["鱗右6"].ToPar();
+    		X0Y0_Head_下顎_鱗左7 = pars3["鱗左7"].ToPar();
+    		X0Y0_Head_下顎_鱗右7 = pars3["鱗右7"].ToPar();
+    		X0Y0_Head_下顎_鱗左8 = pars3["鱗左8"].ToPar();
+    		X0Y0_Head_下顎_鱗右8 = pars3["鱗右8"].ToPar();
+    		X0Y0_Head_下顎_鱗左9 = pars3["鱗左9"].ToPar();
+    		X0Y0_Head_下顎_鱗右9 = pars3["鱗右9"].ToPar();
+    		X0Y0_Head_下顎_鱗左10 = pars3["鱗左10"].ToPar();
+    		X0Y0_Head_下顎_鱗右10 = pars3["鱗右10"].ToPar();
+    		X0Y0_Head_下顎_鱗左11 = pars3["鱗左11"].ToPar();
+    		X0Y0_Head_下顎_鱗右11 = pars3["鱗右11"].ToPar();
     		pars2 = pars["輪2"].ToPars();
     		X0Y0_輪2_革 = pars2["革"].ToPar();
     		X0Y0_輪2_金具1 = pars2["金具1"].ToPar();
@@ -5598,53 +5598,53 @@ namespace SlaveMatrix
     		頚_鱗1_鱗16_鱗2_表示 = e.頚_鱗1_鱗16_鱗2_表示;
     		頚_鱗1_鱗17_鱗1_表示 = e.頚_鱗1_鱗17_鱗1_表示;
     		頚_鱗1_鱗17_鱗2_表示 = e.頚_鱗1_鱗17_鱗2_表示;
-    		頭_上顎_顎基_表示 = e.頭_上顎_顎基_表示;
-    		頭_上顎_鱗4_表示 = e.頭_上顎_鱗4_表示;
-    		頭_上顎_鱗左1_表示 = e.頭_上顎_鱗左1_表示;
-    		頭_上顎_鱗右1_表示 = e.頭_上顎_鱗右1_表示;
-    		頭_上顎_鱗左2_表示 = e.頭_上顎_鱗左2_表示;
-    		頭_上顎_鱗右2_表示 = e.頭_上顎_鱗右2_表示;
-    		頭_上顎_鱗左3_表示 = e.頭_上顎_鱗左3_表示;
-    		頭_上顎_鱗右3_表示 = e.頭_上顎_鱗右3_表示;
-    		頭_上顎_鱗左4_表示 = e.頭_上顎_鱗左4_表示;
-    		頭_上顎_鱗右4_表示 = e.頭_上顎_鱗右4_表示;
-    		頭_上顎_鱗左5_表示 = e.頭_上顎_鱗左5_表示;
-    		頭_上顎_鱗右5_表示 = e.頭_上顎_鱗右5_表示;
-    		頭_上顎_鱗左8_表示 = e.頭_上顎_鱗左8_表示;
-    		頭_上顎_鱗右8_表示 = e.頭_上顎_鱗右8_表示;
-    		頭_上顎_鱗左9_表示 = e.頭_上顎_鱗左9_表示;
-    		頭_上顎_鱗右9_表示 = e.頭_上顎_鱗右9_表示;
-    		頭_上顎_鱗左10_表示 = e.頭_上顎_鱗左10_表示;
-    		頭_上顎_鱗右10_表示 = e.頭_上顎_鱗右10_表示;
-    		頭_上顎_鱗左11_表示 = e.頭_上顎_鱗左11_表示;
-    		頭_上顎_鱗右11_表示 = e.頭_上顎_鱗右11_表示;
-    		頭_下顎_顎基_表示 = e.頭_下顎_顎基_表示;
-    		頭_下顎_鱗1_表示 = e.頭_下顎_鱗1_表示;
-    		頭_下顎_鱗2_表示 = e.頭_下顎_鱗2_表示;
-    		頭_下顎_鱗3_表示 = e.頭_下顎_鱗3_表示;
-    		頭_下顎_鱗4_表示 = e.頭_下顎_鱗4_表示;
-    		頭_下顎_鱗左1_表示 = e.頭_下顎_鱗左1_表示;
-    		頭_下顎_鱗右1_表示 = e.頭_下顎_鱗右1_表示;
-    		頭_下顎_鱗左2_表示 = e.頭_下顎_鱗左2_表示;
-    		頭_下顎_鱗右2_表示 = e.頭_下顎_鱗右2_表示;
-    		頭_下顎_鱗左3_表示 = e.頭_下顎_鱗左3_表示;
-    		頭_下顎_鱗右3_表示 = e.頭_下顎_鱗右3_表示;
-    		頭_下顎_鱗左4_表示 = e.頭_下顎_鱗左4_表示;
-    		頭_下顎_鱗右4_表示 = e.頭_下顎_鱗右4_表示;
-    		頭_下顎_鱗左5_表示 = e.頭_下顎_鱗左5_表示;
-    		頭_下顎_鱗右5_表示 = e.頭_下顎_鱗右5_表示;
-    		頭_下顎_鱗左6_表示 = e.頭_下顎_鱗左6_表示;
-    		頭_下顎_鱗右6_表示 = e.頭_下顎_鱗右6_表示;
-    		頭_下顎_鱗左7_表示 = e.頭_下顎_鱗左7_表示;
-    		頭_下顎_鱗右7_表示 = e.頭_下顎_鱗右7_表示;
-    		頭_下顎_鱗左8_表示 = e.頭_下顎_鱗左8_表示;
-    		頭_下顎_鱗右8_表示 = e.頭_下顎_鱗右8_表示;
-    		頭_下顎_鱗左9_表示 = e.頭_下顎_鱗左9_表示;
-    		頭_下顎_鱗右9_表示 = e.頭_下顎_鱗右9_表示;
-    		頭_下顎_鱗左10_表示 = e.頭_下顎_鱗左10_表示;
-    		頭_下顎_鱗右10_表示 = e.頭_下顎_鱗右10_表示;
-    		頭_下顎_鱗左11_表示 = e.頭_下顎_鱗左11_表示;
-    		頭_下顎_鱗右11_表示 = e.頭_下顎_鱗右11_表示;
+    		Head_上顎_顎基_表示 = e.頭_上顎_顎基_表示;
+    		Head_上顎_鱗4_表示 = e.頭_上顎_鱗4_表示;
+    		Head_上顎_鱗左1_表示 = e.頭_上顎_鱗左1_表示;
+    		Head_上顎_鱗右1_表示 = e.頭_上顎_鱗右1_表示;
+    		Head_上顎_鱗左2_表示 = e.頭_上顎_鱗左2_表示;
+    		Head_上顎_鱗右2_表示 = e.頭_上顎_鱗右2_表示;
+    		Head_上顎_鱗左3_表示 = e.頭_上顎_鱗左3_表示;
+    		Head_上顎_鱗右3_表示 = e.頭_上顎_鱗右3_表示;
+    		Head_上顎_鱗左4_表示 = e.頭_上顎_鱗左4_表示;
+    		Head_上顎_鱗右4_表示 = e.頭_上顎_鱗右4_表示;
+    		Head_上顎_鱗左5_表示 = e.頭_上顎_鱗左5_表示;
+    		Head_上顎_鱗右5_表示 = e.頭_上顎_鱗右5_表示;
+    		Head_上顎_鱗左8_表示 = e.頭_上顎_鱗左8_表示;
+    		Head_上顎_鱗右8_表示 = e.頭_上顎_鱗右8_表示;
+    		Head_上顎_鱗左9_表示 = e.頭_上顎_鱗左9_表示;
+    		Head_上顎_鱗右9_表示 = e.頭_上顎_鱗右9_表示;
+    		Head_上顎_鱗左10_表示 = e.頭_上顎_鱗左10_表示;
+    		Head_上顎_鱗右10_表示 = e.頭_上顎_鱗右10_表示;
+    		Head_上顎_鱗左11_表示 = e.頭_上顎_鱗左11_表示;
+    		Head_上顎_鱗右11_表示 = e.頭_上顎_鱗右11_表示;
+    		Head_下顎_顎基_表示 = e.頭_下顎_顎基_表示;
+    		Head_下顎_鱗1_表示 = e.頭_下顎_鱗1_表示;
+    		Head_下顎_鱗2_表示 = e.頭_下顎_鱗2_表示;
+    		Head_下顎_鱗3_表示 = e.頭_下顎_鱗3_表示;
+    		Head_下顎_鱗4_表示 = e.頭_下顎_鱗4_表示;
+    		Head_下顎_鱗左1_表示 = e.頭_下顎_鱗左1_表示;
+    		Head_下顎_鱗右1_表示 = e.頭_下顎_鱗右1_表示;
+    		Head_下顎_鱗左2_表示 = e.頭_下顎_鱗左2_表示;
+    		Head_下顎_鱗右2_表示 = e.頭_下顎_鱗右2_表示;
+    		Head_下顎_鱗左3_表示 = e.頭_下顎_鱗左3_表示;
+    		Head_下顎_鱗右3_表示 = e.頭_下顎_鱗右3_表示;
+    		Head_下顎_鱗左4_表示 = e.頭_下顎_鱗左4_表示;
+    		Head_下顎_鱗右4_表示 = e.頭_下顎_鱗右4_表示;
+    		Head_下顎_鱗左5_表示 = e.頭_下顎_鱗左5_表示;
+    		Head_下顎_鱗右5_表示 = e.頭_下顎_鱗右5_表示;
+    		Head_下顎_鱗左6_表示 = e.頭_下顎_鱗左6_表示;
+    		Head_下顎_鱗右6_表示 = e.頭_下顎_鱗右6_表示;
+    		Head_下顎_鱗左7_表示 = e.頭_下顎_鱗左7_表示;
+    		Head_下顎_鱗右7_表示 = e.頭_下顎_鱗右7_表示;
+    		Head_下顎_鱗左8_表示 = e.頭_下顎_鱗左8_表示;
+    		Head_下顎_鱗右8_表示 = e.頭_下顎_鱗右8_表示;
+    		Head_下顎_鱗左9_表示 = e.頭_下顎_鱗左9_表示;
+    		Head_下顎_鱗右9_表示 = e.頭_下顎_鱗右9_表示;
+    		Head_下顎_鱗左10_表示 = e.頭_下顎_鱗左10_表示;
+    		Head_下顎_鱗右10_表示 = e.頭_下顎_鱗右10_表示;
+    		Head_下顎_鱗左11_表示 = e.頭_下顎_鱗左11_表示;
+    		Head_下顎_鱗右11_表示 = e.頭_下顎_鱗右11_表示;
     		輪2_革_表示 = e.輪2_革_表示;
     		輪2_金具1_表示 = e.輪2_金具1_表示;
     		輪2_金具2_表示 = e.輪2_金具2_表示;
@@ -5844,53 +5844,53 @@ namespace SlaveMatrix
     		X0Y0_頚_鱗1_鱗16_鱗2CP = new ColorP(X0Y0_頚_鱗1_鱗16_鱗2, 頚_鱗1_鱗16_鱗2CD, DisUnit, abj: true);
     		X0Y0_頚_鱗1_鱗17_鱗1CP = new ColorP(X0Y0_頚_鱗1_鱗17_鱗1, 頚_鱗1_鱗17_鱗1CD, DisUnit, abj: true);
     		X0Y0_頚_鱗1_鱗17_鱗2CP = new ColorP(X0Y0_頚_鱗1_鱗17_鱗2, 頚_鱗1_鱗17_鱗2CD, DisUnit, abj: true);
-    		X0Y0_頭_上顎_顎基CP = new ColorP(X0Y0_頭_上顎_顎基, 頭_上顎_顎基CD, DisUnit, abj: true);
-    		X0Y0_頭_上顎_鱗4CP = new ColorP(X0Y0_頭_上顎_鱗4, 頭_上顎_鱗4CD, DisUnit, abj: true);
-    		X0Y0_頭_上顎_鱗左1CP = new ColorP(X0Y0_頭_上顎_鱗左1, 頭_上顎_鱗左1CD, DisUnit, abj: true);
-    		X0Y0_頭_上顎_鱗右1CP = new ColorP(X0Y0_頭_上顎_鱗右1, 頭_上顎_鱗右1CD, DisUnit, abj: true);
-    		X0Y0_頭_上顎_鱗左2CP = new ColorP(X0Y0_頭_上顎_鱗左2, 頭_上顎_鱗左2CD, DisUnit, abj: true);
-    		X0Y0_頭_上顎_鱗右2CP = new ColorP(X0Y0_頭_上顎_鱗右2, 頭_上顎_鱗右2CD, DisUnit, abj: true);
-    		X0Y0_頭_上顎_鱗左3CP = new ColorP(X0Y0_頭_上顎_鱗左3, 頭_上顎_鱗左3CD, DisUnit, abj: true);
-    		X0Y0_頭_上顎_鱗右3CP = new ColorP(X0Y0_頭_上顎_鱗右3, 頭_上顎_鱗右3CD, DisUnit, abj: true);
-    		X0Y0_頭_上顎_鱗左4CP = new ColorP(X0Y0_頭_上顎_鱗左4, 頭_上顎_鱗左4CD, DisUnit, abj: true);
-    		X0Y0_頭_上顎_鱗右4CP = new ColorP(X0Y0_頭_上顎_鱗右4, 頭_上顎_鱗右4CD, DisUnit, abj: true);
-    		X0Y0_頭_上顎_鱗左5CP = new ColorP(X0Y0_頭_上顎_鱗左5, 頭_上顎_鱗左5CD, DisUnit, abj: true);
-    		X0Y0_頭_上顎_鱗右5CP = new ColorP(X0Y0_頭_上顎_鱗右5, 頭_上顎_鱗右5CD, DisUnit, abj: true);
-    		X0Y0_頭_上顎_鱗左8CP = new ColorP(X0Y0_頭_上顎_鱗左8, 頭_上顎_鱗左8CD, DisUnit, abj: true);
-    		X0Y0_頭_上顎_鱗右8CP = new ColorP(X0Y0_頭_上顎_鱗右8, 頭_上顎_鱗右8CD, DisUnit, abj: true);
-    		X0Y0_頭_上顎_鱗左9CP = new ColorP(X0Y0_頭_上顎_鱗左9, 頭_上顎_鱗左9CD, DisUnit, abj: true);
-    		X0Y0_頭_上顎_鱗右9CP = new ColorP(X0Y0_頭_上顎_鱗右9, 頭_上顎_鱗右9CD, DisUnit, abj: true);
-    		X0Y0_頭_上顎_鱗左10CP = new ColorP(X0Y0_頭_上顎_鱗左10, 頭_上顎_鱗左10CD, DisUnit, abj: true);
-    		X0Y0_頭_上顎_鱗右10CP = new ColorP(X0Y0_頭_上顎_鱗右10, 頭_上顎_鱗右10CD, DisUnit, abj: true);
-    		X0Y0_頭_上顎_鱗左11CP = new ColorP(X0Y0_頭_上顎_鱗左11, 頭_上顎_鱗左11CD, DisUnit, abj: true);
-    		X0Y0_頭_上顎_鱗右11CP = new ColorP(X0Y0_頭_上顎_鱗右11, 頭_上顎_鱗右11CD, DisUnit, abj: true);
-    		X0Y0_頭_下顎_顎基CP = new ColorP(X0Y0_頭_下顎_顎基, 頭_下顎_顎基CD, DisUnit, abj: true);
-    		X0Y0_頭_下顎_鱗1CP = new ColorP(X0Y0_頭_下顎_鱗1, 頭_下顎_鱗1CD, DisUnit, abj: true);
-    		X0Y0_頭_下顎_鱗2CP = new ColorP(X0Y0_頭_下顎_鱗2, 頭_下顎_鱗2CD, DisUnit, abj: true);
-    		X0Y0_頭_下顎_鱗3CP = new ColorP(X0Y0_頭_下顎_鱗3, 頭_下顎_鱗3CD, DisUnit, abj: true);
-    		X0Y0_頭_下顎_鱗4CP = new ColorP(X0Y0_頭_下顎_鱗4, 頭_下顎_鱗4CD, DisUnit, abj: true);
-    		X0Y0_頭_下顎_鱗左1CP = new ColorP(X0Y0_頭_下顎_鱗左1, 頭_下顎_鱗左1CD, DisUnit, abj: true);
-    		X0Y0_頭_下顎_鱗右1CP = new ColorP(X0Y0_頭_下顎_鱗右1, 頭_下顎_鱗右1CD, DisUnit, abj: true);
-    		X0Y0_頭_下顎_鱗左2CP = new ColorP(X0Y0_頭_下顎_鱗左2, 頭_下顎_鱗左2CD, DisUnit, abj: true);
-    		X0Y0_頭_下顎_鱗右2CP = new ColorP(X0Y0_頭_下顎_鱗右2, 頭_下顎_鱗右2CD, DisUnit, abj: true);
-    		X0Y0_頭_下顎_鱗左3CP = new ColorP(X0Y0_頭_下顎_鱗左3, 頭_下顎_鱗左3CD, DisUnit, abj: true);
-    		X0Y0_頭_下顎_鱗右3CP = new ColorP(X0Y0_頭_下顎_鱗右3, 頭_下顎_鱗右3CD, DisUnit, abj: true);
-    		X0Y0_頭_下顎_鱗左4CP = new ColorP(X0Y0_頭_下顎_鱗左4, 頭_下顎_鱗左4CD, DisUnit, abj: true);
-    		X0Y0_頭_下顎_鱗右4CP = new ColorP(X0Y0_頭_下顎_鱗右4, 頭_下顎_鱗右4CD, DisUnit, abj: true);
-    		X0Y0_頭_下顎_鱗左5CP = new ColorP(X0Y0_頭_下顎_鱗左5, 頭_下顎_鱗左5CD, DisUnit, abj: true);
-    		X0Y0_頭_下顎_鱗右5CP = new ColorP(X0Y0_頭_下顎_鱗右5, 頭_下顎_鱗右5CD, DisUnit, abj: true);
-    		X0Y0_頭_下顎_鱗左6CP = new ColorP(X0Y0_頭_下顎_鱗左6, 頭_下顎_鱗左6CD, DisUnit, abj: true);
-    		X0Y0_頭_下顎_鱗右6CP = new ColorP(X0Y0_頭_下顎_鱗右6, 頭_下顎_鱗右6CD, DisUnit, abj: true);
-    		X0Y0_頭_下顎_鱗左7CP = new ColorP(X0Y0_頭_下顎_鱗左7, 頭_下顎_鱗左7CD, DisUnit, abj: true);
-    		X0Y0_頭_下顎_鱗右7CP = new ColorP(X0Y0_頭_下顎_鱗右7, 頭_下顎_鱗右7CD, DisUnit, abj: true);
-    		X0Y0_頭_下顎_鱗左8CP = new ColorP(X0Y0_頭_下顎_鱗左8, 頭_下顎_鱗左8CD, DisUnit, abj: true);
-    		X0Y0_頭_下顎_鱗右8CP = new ColorP(X0Y0_頭_下顎_鱗右8, 頭_下顎_鱗右8CD, DisUnit, abj: true);
-    		X0Y0_頭_下顎_鱗左9CP = new ColorP(X0Y0_頭_下顎_鱗左9, 頭_下顎_鱗左9CD, DisUnit, abj: true);
-    		X0Y0_頭_下顎_鱗右9CP = new ColorP(X0Y0_頭_下顎_鱗右9, 頭_下顎_鱗右9CD, DisUnit, abj: true);
-    		X0Y0_頭_下顎_鱗左10CP = new ColorP(X0Y0_頭_下顎_鱗左10, 頭_下顎_鱗左10CD, DisUnit, abj: true);
-    		X0Y0_頭_下顎_鱗右10CP = new ColorP(X0Y0_頭_下顎_鱗右10, 頭_下顎_鱗右10CD, DisUnit, abj: true);
-    		X0Y0_頭_下顎_鱗左11CP = new ColorP(X0Y0_頭_下顎_鱗左11, 頭_下顎_鱗左11CD, DisUnit, abj: true);
-    		X0Y0_頭_下顎_鱗右11CP = new ColorP(X0Y0_頭_下顎_鱗右11, 頭_下顎_鱗右11CD, DisUnit, abj: true);
+    		X0Y0_Head_上顎_顎基CP = new ColorP(X0Y0_Head_上顎_顎基, Head_上顎_顎基CD, DisUnit, abj: true);
+    		X0Y0_Head_上顎_鱗4CP = new ColorP(X0Y0_Head_上顎_鱗4, Head_上顎_鱗4CD, DisUnit, abj: true);
+    		X0Y0_Head_上顎_鱗左1CP = new ColorP(X0Y0_Head_上顎_鱗左1, Head_上顎_鱗左1CD, DisUnit, abj: true);
+    		X0Y0_Head_上顎_鱗右1CP = new ColorP(X0Y0_Head_上顎_鱗右1, Head_上顎_鱗右1CD, DisUnit, abj: true);
+    		X0Y0_Head_上顎_鱗左2CP = new ColorP(X0Y0_Head_上顎_鱗左2, Head_上顎_鱗左2CD, DisUnit, abj: true);
+    		X0Y0_Head_上顎_鱗右2CP = new ColorP(X0Y0_Head_上顎_鱗右2, Head_上顎_鱗右2CD, DisUnit, abj: true);
+    		X0Y0_Head_上顎_鱗左3CP = new ColorP(X0Y0_Head_上顎_鱗左3, Head_上顎_鱗左3CD, DisUnit, abj: true);
+    		X0Y0_Head_上顎_鱗右3CP = new ColorP(X0Y0_Head_上顎_鱗右3, Head_上顎_鱗右3CD, DisUnit, abj: true);
+    		X0Y0_Head_上顎_鱗左4CP = new ColorP(X0Y0_Head_上顎_鱗左4, Head_上顎_鱗左4CD, DisUnit, abj: true);
+    		X0Y0_Head_上顎_鱗右4CP = new ColorP(X0Y0_Head_上顎_鱗右4, Head_上顎_鱗右4CD, DisUnit, abj: true);
+    		X0Y0_Head_上顎_鱗左5CP = new ColorP(X0Y0_Head_上顎_鱗左5, Head_上顎_鱗左5CD, DisUnit, abj: true);
+    		X0Y0_Head_上顎_鱗右5CP = new ColorP(X0Y0_Head_上顎_鱗右5, Head_上顎_鱗右5CD, DisUnit, abj: true);
+    		X0Y0_Head_上顎_鱗左8CP = new ColorP(X0Y0_Head_上顎_鱗左8, Head_上顎_鱗左8CD, DisUnit, abj: true);
+    		X0Y0_Head_上顎_鱗右8CP = new ColorP(X0Y0_Head_上顎_鱗右8, Head_上顎_鱗右8CD, DisUnit, abj: true);
+    		X0Y0_Head_上顎_鱗左9CP = new ColorP(X0Y0_Head_上顎_鱗左9, Head_上顎_鱗左9CD, DisUnit, abj: true);
+    		X0Y0_Head_上顎_鱗右9CP = new ColorP(X0Y0_Head_上顎_鱗右9, Head_上顎_鱗右9CD, DisUnit, abj: true);
+    		X0Y0_Head_上顎_鱗左10CP = new ColorP(X0Y0_Head_上顎_鱗左10, Head_上顎_鱗左10CD, DisUnit, abj: true);
+    		X0Y0_Head_上顎_鱗右10CP = new ColorP(X0Y0_Head_上顎_鱗右10, Head_上顎_鱗右10CD, DisUnit, abj: true);
+    		X0Y0_Head_上顎_鱗左11CP = new ColorP(X0Y0_Head_上顎_鱗左11, Head_上顎_鱗左11CD, DisUnit, abj: true);
+    		X0Y0_Head_上顎_鱗右11CP = new ColorP(X0Y0_Head_上顎_鱗右11, Head_上顎_鱗右11CD, DisUnit, abj: true);
+    		X0Y0_Head_下顎_顎基CP = new ColorP(X0Y0_Head_下顎_顎基, Head_下顎_顎基CD, DisUnit, abj: true);
+    		X0Y0_Head_下顎_鱗1CP = new ColorP(X0Y0_Head_下顎_鱗1, Head_下顎_鱗1CD, DisUnit, abj: true);
+    		X0Y0_Head_下顎_鱗2CP = new ColorP(X0Y0_Head_下顎_鱗2, Head_下顎_鱗2CD, DisUnit, abj: true);
+    		X0Y0_Head_下顎_鱗3CP = new ColorP(X0Y0_Head_下顎_鱗3, Head_下顎_鱗3CD, DisUnit, abj: true);
+    		X0Y0_Head_下顎_鱗4CP = new ColorP(X0Y0_Head_下顎_鱗4, Head_下顎_鱗4CD, DisUnit, abj: true);
+    		X0Y0_Head_下顎_鱗左1CP = new ColorP(X0Y0_Head_下顎_鱗左1, Head_下顎_鱗左1CD, DisUnit, abj: true);
+    		X0Y0_Head_下顎_鱗右1CP = new ColorP(X0Y0_Head_下顎_鱗右1, Head_下顎_鱗右1CD, DisUnit, abj: true);
+    		X0Y0_Head_下顎_鱗左2CP = new ColorP(X0Y0_Head_下顎_鱗左2, Head_下顎_鱗左2CD, DisUnit, abj: true);
+    		X0Y0_Head_下顎_鱗右2CP = new ColorP(X0Y0_Head_下顎_鱗右2, Head_下顎_鱗右2CD, DisUnit, abj: true);
+    		X0Y0_Head_下顎_鱗左3CP = new ColorP(X0Y0_Head_下顎_鱗左3, Head_下顎_鱗左3CD, DisUnit, abj: true);
+    		X0Y0_Head_下顎_鱗右3CP = new ColorP(X0Y0_Head_下顎_鱗右3, Head_下顎_鱗右3CD, DisUnit, abj: true);
+    		X0Y0_Head_下顎_鱗左4CP = new ColorP(X0Y0_Head_下顎_鱗左4, Head_下顎_鱗左4CD, DisUnit, abj: true);
+    		X0Y0_Head_下顎_鱗右4CP = new ColorP(X0Y0_Head_下顎_鱗右4, Head_下顎_鱗右4CD, DisUnit, abj: true);
+    		X0Y0_Head_下顎_鱗左5CP = new ColorP(X0Y0_Head_下顎_鱗左5, Head_下顎_鱗左5CD, DisUnit, abj: true);
+    		X0Y0_Head_下顎_鱗右5CP = new ColorP(X0Y0_Head_下顎_鱗右5, Head_下顎_鱗右5CD, DisUnit, abj: true);
+    		X0Y0_Head_下顎_鱗左6CP = new ColorP(X0Y0_Head_下顎_鱗左6, Head_下顎_鱗左6CD, DisUnit, abj: true);
+    		X0Y0_Head_下顎_鱗右6CP = new ColorP(X0Y0_Head_下顎_鱗右6, Head_下顎_鱗右6CD, DisUnit, abj: true);
+    		X0Y0_Head_下顎_鱗左7CP = new ColorP(X0Y0_Head_下顎_鱗左7, Head_下顎_鱗左7CD, DisUnit, abj: true);
+    		X0Y0_Head_下顎_鱗右7CP = new ColorP(X0Y0_Head_下顎_鱗右7, Head_下顎_鱗右7CD, DisUnit, abj: true);
+    		X0Y0_Head_下顎_鱗左8CP = new ColorP(X0Y0_Head_下顎_鱗左8, Head_下顎_鱗左8CD, DisUnit, abj: true);
+    		X0Y0_Head_下顎_鱗右8CP = new ColorP(X0Y0_Head_下顎_鱗右8, Head_下顎_鱗右8CD, DisUnit, abj: true);
+    		X0Y0_Head_下顎_鱗左9CP = new ColorP(X0Y0_Head_下顎_鱗左9, Head_下顎_鱗左9CD, DisUnit, abj: true);
+    		X0Y0_Head_下顎_鱗右9CP = new ColorP(X0Y0_Head_下顎_鱗右9, Head_下顎_鱗右9CD, DisUnit, abj: true);
+    		X0Y0_Head_下顎_鱗左10CP = new ColorP(X0Y0_Head_下顎_鱗左10, Head_下顎_鱗左10CD, DisUnit, abj: true);
+    		X0Y0_Head_下顎_鱗右10CP = new ColorP(X0Y0_Head_下顎_鱗右10, Head_下顎_鱗右10CD, DisUnit, abj: true);
+    		X0Y0_Head_下顎_鱗左11CP = new ColorP(X0Y0_Head_下顎_鱗左11, Head_下顎_鱗左11CD, DisUnit, abj: true);
+    		X0Y0_Head_下顎_鱗右11CP = new ColorP(X0Y0_Head_下顎_鱗右11, Head_下顎_鱗右11CD, DisUnit, abj: true);
     		X0Y0_輪2_革CP = new ColorP(X0Y0_輪2_革, 輪2_革CD, DisUnit, abj: true);
     		X0Y0_輪2_金具1CP = new ColorP(X0Y0_輪2_金具1, 輪2_金具1CD, DisUnit, abj: true);
     		X0Y0_輪2_金具2CP = new ColorP(X0Y0_輪2_金具2, 輪2_金具2CD, DisUnit, abj: true);
@@ -6099,53 +6099,53 @@ namespace SlaveMatrix
     		Are.Draw(X0Y0_頚_鱗1_鱗16_鱗2);
     		Are.Draw(X0Y0_頚_鱗1_鱗17_鱗1);
     		Are.Draw(X0Y0_頚_鱗1_鱗17_鱗2);
-    		Are.Draw(X0Y0_頭_上顎_顎基);
-    		Are.Draw(X0Y0_頭_上顎_鱗4);
-    		Are.Draw(X0Y0_頭_上顎_鱗左1);
-    		Are.Draw(X0Y0_頭_上顎_鱗右1);
-    		Are.Draw(X0Y0_頭_上顎_鱗左2);
-    		Are.Draw(X0Y0_頭_上顎_鱗右2);
-    		Are.Draw(X0Y0_頭_上顎_鱗左3);
-    		Are.Draw(X0Y0_頭_上顎_鱗右3);
-    		Are.Draw(X0Y0_頭_上顎_鱗左4);
-    		Are.Draw(X0Y0_頭_上顎_鱗右4);
-    		Are.Draw(X0Y0_頭_上顎_鱗左5);
-    		Are.Draw(X0Y0_頭_上顎_鱗右5);
-    		Are.Draw(X0Y0_頭_上顎_鱗左8);
-    		Are.Draw(X0Y0_頭_上顎_鱗右8);
-    		Are.Draw(X0Y0_頭_上顎_鱗左9);
-    		Are.Draw(X0Y0_頭_上顎_鱗右9);
-    		Are.Draw(X0Y0_頭_上顎_鱗左10);
-    		Are.Draw(X0Y0_頭_上顎_鱗右10);
-    		Are.Draw(X0Y0_頭_上顎_鱗左11);
-    		Are.Draw(X0Y0_頭_上顎_鱗右11);
-    		Are.Draw(X0Y0_頭_下顎_顎基);
-    		Are.Draw(X0Y0_頭_下顎_鱗1);
-    		Are.Draw(X0Y0_頭_下顎_鱗2);
-    		Are.Draw(X0Y0_頭_下顎_鱗3);
-    		Are.Draw(X0Y0_頭_下顎_鱗4);
-    		Are.Draw(X0Y0_頭_下顎_鱗左1);
-    		Are.Draw(X0Y0_頭_下顎_鱗右1);
-    		Are.Draw(X0Y0_頭_下顎_鱗左2);
-    		Are.Draw(X0Y0_頭_下顎_鱗右2);
-    		Are.Draw(X0Y0_頭_下顎_鱗左3);
-    		Are.Draw(X0Y0_頭_下顎_鱗右3);
-    		Are.Draw(X0Y0_頭_下顎_鱗左4);
-    		Are.Draw(X0Y0_頭_下顎_鱗右4);
-    		Are.Draw(X0Y0_頭_下顎_鱗左5);
-    		Are.Draw(X0Y0_頭_下顎_鱗右5);
-    		Are.Draw(X0Y0_頭_下顎_鱗左6);
-    		Are.Draw(X0Y0_頭_下顎_鱗右6);
-    		Are.Draw(X0Y0_頭_下顎_鱗左7);
-    		Are.Draw(X0Y0_頭_下顎_鱗右7);
-    		Are.Draw(X0Y0_頭_下顎_鱗左8);
-    		Are.Draw(X0Y0_頭_下顎_鱗右8);
-    		Are.Draw(X0Y0_頭_下顎_鱗左9);
-    		Are.Draw(X0Y0_頭_下顎_鱗右9);
-    		Are.Draw(X0Y0_頭_下顎_鱗左10);
-    		Are.Draw(X0Y0_頭_下顎_鱗右10);
-    		Are.Draw(X0Y0_頭_下顎_鱗左11);
-    		Are.Draw(X0Y0_頭_下顎_鱗右11);
+    		Are.Draw(X0Y0_Head_上顎_顎基);
+    		Are.Draw(X0Y0_Head_上顎_鱗4);
+    		Are.Draw(X0Y0_Head_上顎_鱗左1);
+    		Are.Draw(X0Y0_Head_上顎_鱗右1);
+    		Are.Draw(X0Y0_Head_上顎_鱗左2);
+    		Are.Draw(X0Y0_Head_上顎_鱗右2);
+    		Are.Draw(X0Y0_Head_上顎_鱗左3);
+    		Are.Draw(X0Y0_Head_上顎_鱗右3);
+    		Are.Draw(X0Y0_Head_上顎_鱗左4);
+    		Are.Draw(X0Y0_Head_上顎_鱗右4);
+    		Are.Draw(X0Y0_Head_上顎_鱗左5);
+    		Are.Draw(X0Y0_Head_上顎_鱗右5);
+    		Are.Draw(X0Y0_Head_上顎_鱗左8);
+    		Are.Draw(X0Y0_Head_上顎_鱗右8);
+    		Are.Draw(X0Y0_Head_上顎_鱗左9);
+    		Are.Draw(X0Y0_Head_上顎_鱗右9);
+    		Are.Draw(X0Y0_Head_上顎_鱗左10);
+    		Are.Draw(X0Y0_Head_上顎_鱗右10);
+    		Are.Draw(X0Y0_Head_上顎_鱗左11);
+    		Are.Draw(X0Y0_Head_上顎_鱗右11);
+    		Are.Draw(X0Y0_Head_下顎_顎基);
+    		Are.Draw(X0Y0_Head_下顎_鱗1);
+    		Are.Draw(X0Y0_Head_下顎_鱗2);
+    		Are.Draw(X0Y0_Head_下顎_鱗3);
+    		Are.Draw(X0Y0_Head_下顎_鱗4);
+    		Are.Draw(X0Y0_Head_下顎_鱗左1);
+    		Are.Draw(X0Y0_Head_下顎_鱗右1);
+    		Are.Draw(X0Y0_Head_下顎_鱗左2);
+    		Are.Draw(X0Y0_Head_下顎_鱗右2);
+    		Are.Draw(X0Y0_Head_下顎_鱗左3);
+    		Are.Draw(X0Y0_Head_下顎_鱗右3);
+    		Are.Draw(X0Y0_Head_下顎_鱗左4);
+    		Are.Draw(X0Y0_Head_下顎_鱗右4);
+    		Are.Draw(X0Y0_Head_下顎_鱗左5);
+    		Are.Draw(X0Y0_Head_下顎_鱗右5);
+    		Are.Draw(X0Y0_Head_下顎_鱗左6);
+    		Are.Draw(X0Y0_Head_下顎_鱗右6);
+    		Are.Draw(X0Y0_Head_下顎_鱗左7);
+    		Are.Draw(X0Y0_Head_下顎_鱗右7);
+    		Are.Draw(X0Y0_Head_下顎_鱗左8);
+    		Are.Draw(X0Y0_Head_下顎_鱗右8);
+    		Are.Draw(X0Y0_Head_下顎_鱗左9);
+    		Are.Draw(X0Y0_Head_下顎_鱗右9);
+    		Are.Draw(X0Y0_Head_下顎_鱗左10);
+    		Are.Draw(X0Y0_Head_下顎_鱗右10);
+    		Are.Draw(X0Y0_Head_下顎_鱗左11);
+    		Are.Draw(X0Y0_Head_下顎_鱗右11);
     		Are.Draw(X0Y0_輪2_革);
     		Are.Draw(X0Y0_輪2_金具1);
     		Are.Draw(X0Y0_輪2_金具2);
@@ -6428,53 +6428,53 @@ namespace SlaveMatrix
     		X0Y0_頚_鱗1_鱗16_鱗2CP.Update();
     		X0Y0_頚_鱗1_鱗17_鱗1CP.Update();
     		X0Y0_頚_鱗1_鱗17_鱗2CP.Update();
-    		X0Y0_頭_上顎_顎基CP.Update();
-    		X0Y0_頭_上顎_鱗4CP.Update();
-    		X0Y0_頭_上顎_鱗左1CP.Update();
-    		X0Y0_頭_上顎_鱗右1CP.Update();
-    		X0Y0_頭_上顎_鱗左2CP.Update();
-    		X0Y0_頭_上顎_鱗右2CP.Update();
-    		X0Y0_頭_上顎_鱗左3CP.Update();
-    		X0Y0_頭_上顎_鱗右3CP.Update();
-    		X0Y0_頭_上顎_鱗左4CP.Update();
-    		X0Y0_頭_上顎_鱗右4CP.Update();
-    		X0Y0_頭_上顎_鱗左5CP.Update();
-    		X0Y0_頭_上顎_鱗右5CP.Update();
-    		X0Y0_頭_上顎_鱗左8CP.Update();
-    		X0Y0_頭_上顎_鱗右8CP.Update();
-    		X0Y0_頭_上顎_鱗左9CP.Update();
-    		X0Y0_頭_上顎_鱗右9CP.Update();
-    		X0Y0_頭_上顎_鱗左10CP.Update();
-    		X0Y0_頭_上顎_鱗右10CP.Update();
-    		X0Y0_頭_上顎_鱗左11CP.Update();
-    		X0Y0_頭_上顎_鱗右11CP.Update();
-    		X0Y0_頭_下顎_顎基CP.Update();
-    		X0Y0_頭_下顎_鱗1CP.Update();
-    		X0Y0_頭_下顎_鱗2CP.Update();
-    		X0Y0_頭_下顎_鱗3CP.Update();
-    		X0Y0_頭_下顎_鱗4CP.Update();
-    		X0Y0_頭_下顎_鱗左1CP.Update();
-    		X0Y0_頭_下顎_鱗右1CP.Update();
-    		X0Y0_頭_下顎_鱗左2CP.Update();
-    		X0Y0_頭_下顎_鱗右2CP.Update();
-    		X0Y0_頭_下顎_鱗左3CP.Update();
-    		X0Y0_頭_下顎_鱗右3CP.Update();
-    		X0Y0_頭_下顎_鱗左4CP.Update();
-    		X0Y0_頭_下顎_鱗右4CP.Update();
-    		X0Y0_頭_下顎_鱗左5CP.Update();
-    		X0Y0_頭_下顎_鱗右5CP.Update();
-    		X0Y0_頭_下顎_鱗左6CP.Update();
-    		X0Y0_頭_下顎_鱗右6CP.Update();
-    		X0Y0_頭_下顎_鱗左7CP.Update();
-    		X0Y0_頭_下顎_鱗右7CP.Update();
-    		X0Y0_頭_下顎_鱗左8CP.Update();
-    		X0Y0_頭_下顎_鱗右8CP.Update();
-    		X0Y0_頭_下顎_鱗左9CP.Update();
-    		X0Y0_頭_下顎_鱗右9CP.Update();
-    		X0Y0_頭_下顎_鱗左10CP.Update();
-    		X0Y0_頭_下顎_鱗右10CP.Update();
-    		X0Y0_頭_下顎_鱗左11CP.Update();
-    		X0Y0_頭_下顎_鱗右11CP.Update();
+    		X0Y0_Head_上顎_顎基CP.Update();
+    		X0Y0_Head_上顎_鱗4CP.Update();
+    		X0Y0_Head_上顎_鱗左1CP.Update();
+    		X0Y0_Head_上顎_鱗右1CP.Update();
+    		X0Y0_Head_上顎_鱗左2CP.Update();
+    		X0Y0_Head_上顎_鱗右2CP.Update();
+    		X0Y0_Head_上顎_鱗左3CP.Update();
+    		X0Y0_Head_上顎_鱗右3CP.Update();
+    		X0Y0_Head_上顎_鱗左4CP.Update();
+    		X0Y0_Head_上顎_鱗右4CP.Update();
+    		X0Y0_Head_上顎_鱗左5CP.Update();
+    		X0Y0_Head_上顎_鱗右5CP.Update();
+    		X0Y0_Head_上顎_鱗左8CP.Update();
+    		X0Y0_Head_上顎_鱗右8CP.Update();
+    		X0Y0_Head_上顎_鱗左9CP.Update();
+    		X0Y0_Head_上顎_鱗右9CP.Update();
+    		X0Y0_Head_上顎_鱗左10CP.Update();
+    		X0Y0_Head_上顎_鱗右10CP.Update();
+    		X0Y0_Head_上顎_鱗左11CP.Update();
+    		X0Y0_Head_上顎_鱗右11CP.Update();
+    		X0Y0_Head_下顎_顎基CP.Update();
+    		X0Y0_Head_下顎_鱗1CP.Update();
+    		X0Y0_Head_下顎_鱗2CP.Update();
+    		X0Y0_Head_下顎_鱗3CP.Update();
+    		X0Y0_Head_下顎_鱗4CP.Update();
+    		X0Y0_Head_下顎_鱗左1CP.Update();
+    		X0Y0_Head_下顎_鱗右1CP.Update();
+    		X0Y0_Head_下顎_鱗左2CP.Update();
+    		X0Y0_Head_下顎_鱗右2CP.Update();
+    		X0Y0_Head_下顎_鱗左3CP.Update();
+    		X0Y0_Head_下顎_鱗右3CP.Update();
+    		X0Y0_Head_下顎_鱗左4CP.Update();
+    		X0Y0_Head_下顎_鱗右4CP.Update();
+    		X0Y0_Head_下顎_鱗左5CP.Update();
+    		X0Y0_Head_下顎_鱗右5CP.Update();
+    		X0Y0_Head_下顎_鱗左6CP.Update();
+    		X0Y0_Head_下顎_鱗右6CP.Update();
+    		X0Y0_Head_下顎_鱗左7CP.Update();
+    		X0Y0_Head_下顎_鱗右7CP.Update();
+    		X0Y0_Head_下顎_鱗左8CP.Update();
+    		X0Y0_Head_下顎_鱗右8CP.Update();
+    		X0Y0_Head_下顎_鱗左9CP.Update();
+    		X0Y0_Head_下顎_鱗右9CP.Update();
+    		X0Y0_Head_下顎_鱗左10CP.Update();
+    		X0Y0_Head_下顎_鱗右10CP.Update();
+    		X0Y0_Head_下顎_鱗左11CP.Update();
+    		X0Y0_Head_下顎_鱗右11CP.Update();
     		X0Y0_輪2_革CP.Update();
     		X0Y0_輪2_金具1CP.Update();
     		X0Y0_輪2_金具2CP.Update();
@@ -6687,53 +6687,53 @@ namespace SlaveMatrix
     		頚_鱗1_鱗16_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
     		頚_鱗1_鱗17_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
     		頚_鱗1_鱗17_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_上顎_顎基CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_上顎_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_上顎_鱗左1CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_上顎_鱗右1CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_上顎_鱗左2CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_上顎_鱗右2CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_上顎_鱗左3CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_上顎_鱗右3CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_上顎_鱗左4CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_上顎_鱗右4CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_上顎_鱗左5CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_上顎_鱗右5CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_上顎_鱗左8CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_上顎_鱗右8CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_上顎_鱗左9CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_上顎_鱗右9CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_上顎_鱗左10CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_上顎_鱗右10CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_上顎_鱗左11CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_上顎_鱗右11CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_下顎_顎基CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗左1CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗右1CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗左2CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗右2CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗左3CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗右3CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗左4CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗右4CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗左5CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗右5CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗左6CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗右6CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗左7CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗右7CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗左8CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗右8CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗左9CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗右9CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗左10CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗右10CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗左11CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗右11CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
+    		Head_上顎_顎基CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
+    		Head_上顎_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
+    		Head_上顎_鱗左1CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
+    		Head_上顎_鱗右1CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
+    		Head_上顎_鱗左2CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
+    		Head_上顎_鱗右2CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
+    		Head_上顎_鱗左3CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
+    		Head_上顎_鱗右3CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
+    		Head_上顎_鱗左4CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
+    		Head_上顎_鱗右4CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
+    		Head_上顎_鱗左5CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
+    		Head_上顎_鱗右5CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
+    		Head_上顎_鱗左8CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
+    		Head_上顎_鱗右8CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
+    		Head_上顎_鱗左9CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
+    		Head_上顎_鱗右9CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
+    		Head_上顎_鱗左10CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
+    		Head_上顎_鱗右10CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
+    		Head_上顎_鱗左11CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
+    		Head_上顎_鱗右11CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
+    		Head_下顎_顎基CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
+    		Head_下顎_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
+    		Head_下顎_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
+    		Head_下顎_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
+    		Head_下顎_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
+    		Head_下顎_鱗左1CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
+    		Head_下顎_鱗右1CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
+    		Head_下顎_鱗左2CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
+    		Head_下顎_鱗右2CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
+    		Head_下顎_鱗左3CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
+    		Head_下顎_鱗右3CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
+    		Head_下顎_鱗左4CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
+    		Head_下顎_鱗右4CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
+    		Head_下顎_鱗左5CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
+    		Head_下顎_鱗右5CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
+    		Head_下顎_鱗左6CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
+    		Head_下顎_鱗右6CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
+    		Head_下顎_鱗左7CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
+    		Head_下顎_鱗右7CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
+    		Head_下顎_鱗左8CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
+    		Head_下顎_鱗右8CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
+    		Head_下顎_鱗左9CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
+    		Head_下顎_鱗右9CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
+    		Head_下顎_鱗左10CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
+    		Head_下顎_鱗右10CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
+    		Head_下顎_鱗左11CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
+    		Head_下顎_鱗右11CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
     		輪1_革CD = new ColorD();
     		輪1_金具1CD = new ColorD();
     		輪1_金具2CD = new ColorD();
@@ -6925,53 +6925,53 @@ namespace SlaveMatrix
     		頚_鱗1_鱗15_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
     		頚_鱗1_鱗16_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
     		頚_鱗1_鱗17_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_上顎_顎基CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_上顎_鱗4CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		頭_上顎_鱗左1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		頭_上顎_鱗右1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		頭_上顎_鱗左2CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_上顎_鱗右2CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_上顎_鱗左3CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_上顎_鱗右3CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_上顎_鱗左4CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		頭_上顎_鱗右4CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		頭_上顎_鱗左5CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_上顎_鱗右5CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_上顎_鱗左8CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_上顎_鱗右8CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_上顎_鱗左9CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		頭_上顎_鱗右9CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		頭_上顎_鱗左10CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_上顎_鱗右10CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_上顎_鱗左11CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		頭_上顎_鱗右11CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		頭_下顎_顎基CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗左1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		頭_下顎_鱗右1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		頭_下顎_鱗左2CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗右2CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗左3CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗右3CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗左4CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗右4CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗左5CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗右5CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗左6CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗右6CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗左7CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗右7CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗左8CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗右8CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗左9CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗右9CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗左10CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗右10CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗左11CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗右11CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
+    		Head_上顎_顎基CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
+    		Head_上顎_鱗4CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		Head_上顎_鱗左1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		Head_上顎_鱗右1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		Head_上顎_鱗左2CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
+    		Head_上顎_鱗右2CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
+    		Head_上顎_鱗左3CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
+    		Head_上顎_鱗右3CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
+    		Head_上顎_鱗左4CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		Head_上顎_鱗右4CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		Head_上顎_鱗左5CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
+    		Head_上顎_鱗右5CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
+    		Head_上顎_鱗左8CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
+    		Head_上顎_鱗右8CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
+    		Head_上顎_鱗左9CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		Head_上顎_鱗右9CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		Head_上顎_鱗左10CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
+    		Head_上顎_鱗右10CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
+    		Head_上顎_鱗左11CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		Head_上顎_鱗右11CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		Head_下顎_顎基CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
+    		Head_下顎_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
+    		Head_下顎_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
+    		Head_下顎_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
+    		Head_下顎_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
+    		Head_下顎_鱗左1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		Head_下顎_鱗右1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		Head_下顎_鱗左2CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
+    		Head_下顎_鱗右2CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
+    		Head_下顎_鱗左3CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
+    		Head_下顎_鱗右3CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
+    		Head_下顎_鱗左4CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
+    		Head_下顎_鱗右4CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
+    		Head_下顎_鱗左5CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
+    		Head_下顎_鱗右5CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
+    		Head_下顎_鱗左6CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
+    		Head_下顎_鱗右6CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
+    		Head_下顎_鱗左7CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
+    		Head_下顎_鱗右7CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
+    		Head_下顎_鱗左8CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
+    		Head_下顎_鱗右8CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
+    		Head_下顎_鱗左9CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
+    		Head_下顎_鱗右9CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
+    		Head_下顎_鱗左10CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
+    		Head_下顎_鱗右10CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
+    		Head_下顎_鱗左11CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
+    		Head_下顎_鱗右11CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
     		輪1_革CD = new ColorD();
     		輪1_金具1CD = new ColorD();
     		輪1_金具2CD = new ColorD();
@@ -7163,53 +7163,53 @@ namespace SlaveMatrix
     		頚_鱗1_鱗15_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
     		頚_鱗1_鱗16_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
     		頚_鱗1_鱗17_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_上顎_顎基CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_上顎_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_上顎_鱗左1CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_上顎_鱗右1CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_上顎_鱗左2CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_上顎_鱗右2CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_上顎_鱗左3CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		頭_上顎_鱗右3CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		頭_上顎_鱗左4CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_上顎_鱗右4CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_上顎_鱗左5CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		頭_上顎_鱗右5CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		頭_上顎_鱗左8CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		頭_上顎_鱗右8CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		頭_上顎_鱗左9CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_上顎_鱗右9CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_上顎_鱗左10CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		頭_上顎_鱗右10CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		頭_上顎_鱗左11CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_上顎_鱗右11CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_下顎_顎基CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗左1CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_下顎_鱗右1CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_下顎_鱗左2CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗右2CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗左3CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗右3CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗左4CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗右4CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗左5CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗右5CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗左6CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗右6CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗左7CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗右7CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗左8CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗右8CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗左9CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗右9CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗左10CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗右10CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗左11CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗右11CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
+    		Head_上顎_顎基CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
+    		Head_上顎_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
+    		Head_上顎_鱗左1CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
+    		Head_上顎_鱗右1CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
+    		Head_上顎_鱗左2CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
+    		Head_上顎_鱗右2CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
+    		Head_上顎_鱗左3CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		Head_上顎_鱗右3CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		Head_上顎_鱗左4CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
+    		Head_上顎_鱗右4CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
+    		Head_上顎_鱗左5CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		Head_上顎_鱗右5CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		Head_上顎_鱗左8CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		Head_上顎_鱗右8CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		Head_上顎_鱗左9CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
+    		Head_上顎_鱗右9CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
+    		Head_上顎_鱗左10CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		Head_上顎_鱗右10CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		Head_上顎_鱗左11CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
+    		Head_上顎_鱗右11CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
+    		Head_下顎_顎基CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
+    		Head_下顎_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
+    		Head_下顎_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
+    		Head_下顎_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
+    		Head_下顎_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
+    		Head_下顎_鱗左1CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
+    		Head_下顎_鱗右1CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
+    		Head_下顎_鱗左2CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
+    		Head_下顎_鱗右2CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
+    		Head_下顎_鱗左3CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
+    		Head_下顎_鱗右3CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
+    		Head_下顎_鱗左4CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
+    		Head_下顎_鱗右4CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
+    		Head_下顎_鱗左5CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
+    		Head_下顎_鱗右5CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
+    		Head_下顎_鱗左6CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
+    		Head_下顎_鱗右6CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
+    		Head_下顎_鱗左7CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
+    		Head_下顎_鱗右7CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
+    		Head_下顎_鱗左8CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
+    		Head_下顎_鱗右8CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
+    		Head_下顎_鱗左9CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
+    		Head_下顎_鱗右9CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
+    		Head_下顎_鱗左10CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
+    		Head_下顎_鱗右10CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
+    		Head_下顎_鱗左11CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
+    		Head_下顎_鱗右11CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
     		輪1_革CD = new ColorD();
     		輪1_金具1CD = new ColorD();
     		輪1_金具2CD = new ColorD();
