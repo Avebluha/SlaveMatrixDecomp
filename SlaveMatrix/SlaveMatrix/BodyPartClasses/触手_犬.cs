@@ -1282,141 +1282,141 @@ namespace SlaveMatrix
 
     	public ColorP X0Y0_Torso_節3_鱗1CP;
 
-    	public ColorP X0Y0_胴_節3_鱗3CP;
+    	public ColorP X0Y0_Torso_節3_鱗3CP;
 
-    	public ColorP X0Y0_胴_節3_鱗2CP;
+    	public ColorP X0Y0_Torso_節3_鱗2CP;
 
-    	public ColorP X0Y0_胴_節4_胴CP;
+    	public ColorP X0Y0_Torso_節4_TorsoCP;
 
-    	public ColorP X0Y0_胴_節4_鱗1CP;
+    	public ColorP X0Y0_Torso_節4_鱗1CP;
 
-    	public ColorP X0Y0_胴_節4_鱗3CP;
+    	public ColorP X0Y0_Torso_節4_鱗3CP;
 
-    	public ColorP X0Y0_胴_節4_鱗2CP;
+    	public ColorP X0Y0_Torso_節4_鱗2CP;
 
-    	public ColorP X0Y0_胴_節5_胴CP;
+    	public ColorP X0Y0_Torso_節5_TorsoCP;
 
-    	public ColorP X0Y0_胴_節5_鱗1CP;
+    	public ColorP X0Y0_Torso_節5_鱗1CP;
 
-    	public ColorP X0Y0_胴_節5_鱗3CP;
+    	public ColorP X0Y0_Torso_節5_鱗3CP;
 
-    	public ColorP X0Y0_胴_節5_鱗2CP;
+    	public ColorP X0Y0_Torso_節5_鱗2CP;
 
-    	public ColorP X0Y0_胴_節6_胴CP;
+    	public ColorP X0Y0_Torso_節6_TorsoCP;
 
-    	public ColorP X0Y0_胴_節6_鱗1CP;
+    	public ColorP X0Y0_Torso_節6_鱗1CP;
 
-    	public ColorP X0Y0_胴_節6_鱗3CP;
+    	public ColorP X0Y0_Torso_節6_鱗3CP;
 
-    	public ColorP X0Y0_胴_節6_鱗2CP;
+    	public ColorP X0Y0_Torso_節6_鱗2CP;
 
-    	public ColorP X0Y0_胴_節7_胴CP;
+    	public ColorP X0Y0_Torso_節7_TorsoCP;
 
-    	public ColorP X0Y0_胴_節7_鱗1CP;
+    	public ColorP X0Y0_Torso_節7_鱗1CP;
 
-    	public ColorP X0Y0_胴_節7_鱗3CP;
+    	public ColorP X0Y0_Torso_節7_鱗3CP;
 
-    	public ColorP X0Y0_胴_節7_鱗2CP;
+    	public ColorP X0Y0_Torso_節7_鱗2CP;
 
-    	public ColorP X0Y0_胴_節8_胴CP;
+    	public ColorP X0Y0_Torso_節8_TorsoCP;
 
-    	public ColorP X0Y0_胴_節8_鱗1CP;
+    	public ColorP X0Y0_Torso_節8_鱗1CP;
 
-    	public ColorP X0Y0_胴_節8_鱗3CP;
+    	public ColorP X0Y0_Torso_節8_鱗3CP;
 
-    	public ColorP X0Y0_胴_節8_鱗2CP;
+    	public ColorP X0Y0_Torso_節8_鱗2CP;
 
-    	public ColorP X0Y0_胴_節9_胴CP;
+    	public ColorP X0Y0_Torso_節9_TorsoCP;
 
-    	public ColorP X0Y0_胴_節9_鱗1CP;
+    	public ColorP X0Y0_Torso_節9_鱗1CP;
 
-    	public ColorP X0Y0_胴_節9_鱗3CP;
+    	public ColorP X0Y0_Torso_節9_鱗3CP;
 
-    	public ColorP X0Y0_胴_節9_鱗2CP;
+    	public ColorP X0Y0_Torso_節9_鱗2CP;
 
-    	public ColorP X0Y0_胴_節10_胴CP;
+    	public ColorP X0Y0_Torso_節10_TorsoCP;
 
-    	public ColorP X0Y0_胴_節10_鱗1CP;
+    	public ColorP X0Y0_Torso_節10_鱗1CP;
 
-    	public ColorP X0Y0_胴_節10_鱗3CP;
+    	public ColorP X0Y0_Torso_節10_鱗3CP;
 
-    	public ColorP X0Y0_胴_節10_鱗2CP;
+    	public ColorP X0Y0_Torso_節10_鱗2CP;
 
-    	public ColorP X0Y0_胴_節11_胴CP;
+    	public ColorP X0Y0_Torso_節11_TorsoCP;
 
-    	public ColorP X0Y0_胴_節11_鱗1CP;
+    	public ColorP X0Y0_Torso_節11_鱗1CP;
 
-    	public ColorP X0Y0_胴_節11_鱗3CP;
+    	public ColorP X0Y0_Torso_節11_鱗3CP;
 
-    	public ColorP X0Y0_胴_節11_鱗2CP;
+    	public ColorP X0Y0_Torso_節11_鱗2CP;
 
-    	public ColorP X0Y0_胴_節12_胴CP;
+    	public ColorP X0Y0_Torso_節12_TorsoCP;
 
-    	public ColorP X0Y0_胴_節12_鱗1CP;
+    	public ColorP X0Y0_Torso_節12_鱗1CP;
 
-    	public ColorP X0Y0_胴_節12_鱗3CP;
+    	public ColorP X0Y0_Torso_節12_鱗3CP;
 
-    	public ColorP X0Y0_胴_節12_鱗2CP;
+    	public ColorP X0Y0_Torso_節12_鱗2CP;
 
-    	public ColorP X0Y0_胴_節13_胴CP;
+    	public ColorP X0Y0_Torso_節13_TorsoCP;
 
-    	public ColorP X0Y0_胴_節13_鱗1CP;
+    	public ColorP X0Y0_Torso_節13_鱗1CP;
 
-    	public ColorP X0Y0_胴_節13_鱗3CP;
+    	public ColorP X0Y0_Torso_節13_鱗3CP;
 
-    	public ColorP X0Y0_胴_節13_鱗2CP;
+    	public ColorP X0Y0_Torso_節13_鱗2CP;
 
-    	public ColorP X0Y0_胴_節14_胴CP;
+    	public ColorP X0Y0_Torso_節14_TorsoCP;
 
-    	public ColorP X0Y0_胴_節14_鱗1CP;
+    	public ColorP X0Y0_Torso_節14_鱗1CP;
 
-    	public ColorP X0Y0_胴_節14_鱗3CP;
+    	public ColorP X0Y0_Torso_節14_鱗3CP;
 
-    	public ColorP X0Y0_胴_節14_鱗2CP;
+    	public ColorP X0Y0_Torso_節14_鱗2CP;
 
-    	public ColorP X0Y0_胴_節15_胴CP;
+    	public ColorP X0Y0_Torso_節15_TorsoCP;
 
-    	public ColorP X0Y0_胴_節15_鱗1CP;
+    	public ColorP X0Y0_Torso_節15_鱗1CP;
 
-    	public ColorP X0Y0_胴_節15_鱗3CP;
+    	public ColorP X0Y0_Torso_節15_鱗3CP;
 
-    	public ColorP X0Y0_胴_節15_鱗2CP;
+    	public ColorP X0Y0_Torso_節15_鱗2CP;
 
-    	public ColorP X0Y0_胴_節16_胴CP;
+    	public ColorP X0Y0_Torso_節16_TorsoCP;
 
-    	public ColorP X0Y0_胴_節16_鱗1CP;
+    	public ColorP X0Y0_Torso_節16_鱗1CP;
 
-    	public ColorP X0Y0_胴_節16_鱗3CP;
+    	public ColorP X0Y0_Torso_節16_鱗3CP;
 
-    	public ColorP X0Y0_胴_節16_鱗2CP;
+    	public ColorP X0Y0_Torso_節16_鱗2CP;
 
-    	public ColorP X0Y0_胴_輪_革CP;
+    	public ColorP X0Y0_Torso_輪_革CP;
 
-    	public ColorP X0Y0_胴_輪_金具1CP;
+    	public ColorP X0Y0_Torso_輪_金具1CP;
 
-    	public ColorP X0Y0_胴_輪_金具2CP;
+    	public ColorP X0Y0_Torso_輪_金具2CP;
 
-    	public ColorP X0Y0_胴_輪_金具3CP;
+    	public ColorP X0Y0_Torso_輪_金具3CP;
 
-    	public ColorP X0Y0_胴_輪_金具左CP;
+    	public ColorP X0Y0_Torso_輪_金具左CP;
 
-    	public ColorP X0Y0_胴_輪_金具右CP;
+    	public ColorP X0Y0_Torso_輪_金具右CP;
 
-    	public ColorP X0Y0_胴_節17_胴CP;
+    	public ColorP X0Y0_Torso_節17_TorsoCP;
 
-    	public ColorP X0Y0_胴_節17_鱗1CP;
+    	public ColorP X0Y0_Torso_節17_鱗1CP;
 
-    	public ColorP X0Y0_胴_節17_鱗3CP;
+    	public ColorP X0Y0_Torso_節17_鱗3CP;
 
-    	public ColorP X0Y0_胴_節17_鱗2CP;
+    	public ColorP X0Y0_Torso_節17_鱗2CP;
 
-    	public ColorP X0Y0_胴_節18_胴CP;
+    	public ColorP X0Y0_Torso_節18_TorsoCP;
 
-    	public ColorP X0Y0_胴_節18_鱗1CP;
+    	public ColorP X0Y0_Torso_節18_鱗1CP;
 
-    	public ColorP X0Y0_胴_節18_鱗3CP;
+    	public ColorP X0Y0_Torso_節18_鱗3CP;
 
-    	public ColorP X0Y0_胴_節18_鱗2CP;
+    	public ColorP X0Y0_Torso_節18_鱗2CP;
 
     	public ColorP X0Y0_頭_口膜_口膜1CP;
 
@@ -2670,7 +2670,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 胴_節1_胴_表示
+    	public bool Torso_節1_Torso_表示
     	{
     		get
     		{
@@ -2683,7 +2683,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 胴_節1_鱗1_表示
+    	public bool Torso_節1_鱗1_表示
     	{
     		get
     		{
@@ -2696,7 +2696,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 胴_節1_鱗3_表示
+    	public bool Torso_節1_鱗3_表示
     	{
     		get
     		{
@@ -2709,7 +2709,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 胴_節1_鱗2_表示
+    	public bool Torso_節1_鱗2_表示
     	{
     		get
     		{
@@ -2722,7 +2722,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 胴_節2_胴_表示
+    	public bool Torso_節2_Torso_表示
     	{
     		get
     		{
@@ -2735,7 +2735,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 胴_節2_鱗1_表示
+    	public bool Torso_節2_鱗1_表示
     	{
     		get
     		{
@@ -2748,7 +2748,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 胴_節2_鱗3_表示
+    	public bool Torso_節2_鱗3_表示
     	{
     		get
     		{
@@ -2761,7 +2761,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 胴_節2_鱗2_表示
+    	public bool Torso_節2_鱗2_表示
     	{
     		get
     		{
@@ -2774,7 +2774,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 胴_節3_胴_表示
+    	public bool Torso_節3_Torso_表示
     	{
     		get
     		{
@@ -2787,7 +2787,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 胴_節3_鱗1_表示
+    	public bool Torso_節3_鱗1_表示
     	{
     		get
     		{
@@ -2800,7 +2800,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 胴_節3_鱗3_表示
+    	public bool Torso_節3_鱗3_表示
     	{
     		get
     		{
@@ -2813,7 +2813,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 胴_節3_鱗2_表示
+    	public bool Torso_節3_鱗2_表示
     	{
     		get
     		{
@@ -2826,7 +2826,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 胴_節4_胴_表示
+    	public bool Torso_節4_Torso_表示
     	{
     		get
     		{
@@ -2839,7 +2839,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 胴_節4_鱗1_表示
+    	public bool Torso_節4_鱗1_表示
     	{
     		get
     		{
@@ -2852,7 +2852,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 胴_節4_鱗3_表示
+    	public bool Torso_節4_鱗3_表示
     	{
     		get
     		{
@@ -2865,7 +2865,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 胴_節4_鱗2_表示
+    	public bool Torso_節4_鱗2_表示
     	{
     		get
     		{
@@ -2878,7 +2878,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 胴_節5_胴_表示
+    	public bool Torso_節5_Torso_表示
     	{
     		get
     		{
@@ -2891,7 +2891,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 胴_節5_鱗1_表示
+    	public bool Torso_節5_鱗1_表示
     	{
     		get
     		{
@@ -2904,7 +2904,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 胴_節5_鱗3_表示
+    	public bool Torso_節5_鱗3_表示
     	{
     		get
     		{
@@ -2917,7 +2917,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 胴_節5_鱗2_表示
+    	public bool Torso_節5_鱗2_表示
     	{
     		get
     		{
@@ -2930,7 +2930,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 胴_節6_胴_表示
+    	public bool Torso_節6_Torso_表示
     	{
     		get
     		{
@@ -2943,7 +2943,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 胴_節6_鱗1_表示
+    	public bool Torso_節6_鱗1_表示
     	{
     		get
     		{
@@ -2956,7 +2956,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 胴_節6_鱗3_表示
+    	public bool Torso_節6_鱗3_表示
     	{
     		get
     		{
@@ -2969,7 +2969,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 胴_節6_鱗2_表示
+    	public bool Torso_節6_鱗2_表示
     	{
     		get
     		{
@@ -2982,7 +2982,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 胴_節7_胴_表示
+    	public bool Torso_節7_Torso_表示
     	{
     		get
     		{
@@ -2995,7 +2995,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 胴_節7_鱗1_表示
+    	public bool Torso_節7_鱗1_表示
     	{
     		get
     		{
@@ -3008,7 +3008,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 胴_節7_鱗3_表示
+    	public bool Torso_節7_鱗3_表示
     	{
     		get
     		{
@@ -3021,7 +3021,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 胴_節7_鱗2_表示
+    	public bool Torso_節7_鱗2_表示
     	{
     		get
     		{
@@ -3034,7 +3034,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 胴_節8_胴_表示
+    	public bool Torso_節8_Torso_表示
     	{
     		get
     		{
@@ -3047,7 +3047,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 胴_節8_鱗1_表示
+    	public bool Torso_節8_鱗1_表示
     	{
     		get
     		{
@@ -3060,7 +3060,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 胴_節8_鱗3_表示
+    	public bool Torso_節8_鱗3_表示
     	{
     		get
     		{
@@ -3073,7 +3073,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 胴_節8_鱗2_表示
+    	public bool Torso_節8_鱗2_表示
     	{
     		get
     		{
@@ -3086,7 +3086,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 胴_節9_胴_表示
+    	public bool Torso_節9_Torso_表示
     	{
     		get
     		{
@@ -3099,7 +3099,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 胴_節9_鱗1_表示
+    	public bool Torso_節9_鱗1_表示
     	{
     		get
     		{
@@ -3112,7 +3112,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 胴_節9_鱗3_表示
+    	public bool Torso_節9_鱗3_表示
     	{
     		get
     		{
@@ -3125,7 +3125,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 胴_節9_鱗2_表示
+    	public bool Torso_節9_鱗2_表示
     	{
     		get
     		{
@@ -3138,7 +3138,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 胴_節10_胴_表示
+    	public bool Torso_節10_Torso_表示
     	{
     		get
     		{
@@ -3151,7 +3151,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 胴_節10_鱗1_表示
+    	public bool Torso_節10_鱗1_表示
     	{
     		get
     		{
@@ -3164,7 +3164,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 胴_節10_鱗3_表示
+    	public bool Torso_節10_鱗3_表示
     	{
     		get
     		{
@@ -3177,7 +3177,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 胴_節10_鱗2_表示
+    	public bool Torso_節10_鱗2_表示
     	{
     		get
     		{
@@ -3190,7 +3190,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 胴_節11_胴_表示
+    	public bool Torso_節11_Torso_表示
     	{
     		get
     		{
@@ -3203,7 +3203,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 胴_節11_鱗1_表示
+    	public bool Torso_節11_鱗1_表示
     	{
     		get
     		{
@@ -3216,7 +3216,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 胴_節11_鱗3_表示
+    	public bool Torso_節11_鱗3_表示
     	{
     		get
     		{
@@ -3229,7 +3229,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 胴_節11_鱗2_表示
+    	public bool Torso_節11_鱗2_表示
     	{
     		get
     		{
@@ -3242,7 +3242,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 胴_節12_胴_表示
+    	public bool Torso_節12_Torso_表示
     	{
     		get
     		{
@@ -3255,7 +3255,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 胴_節12_鱗1_表示
+    	public bool Torso_節12_鱗1_表示
     	{
     		get
     		{
@@ -3268,7 +3268,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 胴_節12_鱗3_表示
+    	public bool Torso_節12_鱗3_表示
     	{
     		get
     		{
@@ -3281,7 +3281,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 胴_節12_鱗2_表示
+    	public bool Torso_節12_鱗2_表示
     	{
     		get
     		{
@@ -3294,7 +3294,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 胴_節13_胴_表示
+    	public bool Torso_節13_Torso_表示
     	{
     		get
     		{
@@ -3307,7 +3307,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 胴_節13_鱗1_表示
+    	public bool Torso_節13_鱗1_表示
     	{
     		get
     		{
@@ -3320,7 +3320,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 胴_節13_鱗3_表示
+    	public bool Torso_節13_鱗3_表示
     	{
     		get
     		{
@@ -3333,7 +3333,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 胴_節13_鱗2_表示
+    	public bool Torso_節13_鱗2_表示
     	{
     		get
     		{
@@ -3346,7 +3346,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 胴_節14_胴_表示
+    	public bool Torso_節14_Torso_表示
     	{
     		get
     		{
@@ -3359,7 +3359,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 胴_節14_鱗1_表示
+    	public bool Torso_節14_鱗1_表示
     	{
     		get
     		{
@@ -3372,7 +3372,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 胴_節14_鱗3_表示
+    	public bool Torso_節14_鱗3_表示
     	{
     		get
     		{
@@ -3385,7 +3385,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 胴_節14_鱗2_表示
+    	public bool Torso_節14_鱗2_表示
     	{
     		get
     		{
@@ -3398,7 +3398,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 胴_節15_胴_表示
+    	public bool Torso_節15_Torso_表示
     	{
     		get
     		{
@@ -3411,7 +3411,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 胴_節15_鱗1_表示
+    	public bool Torso_節15_鱗1_表示
     	{
     		get
     		{
@@ -3424,7 +3424,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 胴_節15_鱗3_表示
+    	public bool Torso_節15_鱗3_表示
     	{
     		get
     		{
@@ -3437,7 +3437,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 胴_節15_鱗2_表示
+    	public bool Torso_節15_鱗2_表示
     	{
     		get
     		{
@@ -3450,7 +3450,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 胴_節16_胴_表示
+    	public bool Torso_節16_Torso_表示
     	{
     		get
     		{
@@ -3463,7 +3463,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 胴_節16_鱗1_表示
+    	public bool Torso_節16_鱗1_表示
     	{
     		get
     		{
@@ -3476,7 +3476,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 胴_節16_鱗3_表示
+    	public bool Torso_節16_鱗3_表示
     	{
     		get
     		{
@@ -3489,7 +3489,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 胴_節16_鱗2_表示
+    	public bool Torso_節16_鱗2_表示
     	{
     		get
     		{
@@ -3502,7 +3502,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 胴_輪_革_表示
+    	public bool Torso_輪_革_表示
     	{
     		get
     		{
@@ -3515,7 +3515,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 胴_輪_金具1_表示
+    	public bool Torso_輪_金具1_表示
     	{
     		get
     		{
@@ -3528,7 +3528,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 胴_輪_金具2_表示
+    	public bool Torso_輪_金具2_表示
     	{
     		get
     		{
@@ -3541,7 +3541,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 胴_輪_金具3_表示
+    	public bool Torso_輪_金具3_表示
     	{
     		get
     		{
@@ -3554,7 +3554,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 胴_輪_金具左_表示
+    	public bool Torso_輪_金具左_表示
     	{
     		get
     		{
@@ -3567,7 +3567,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 胴_輪_金具右_表示
+    	public bool Torso_輪_金具右_表示
     	{
     		get
     		{
@@ -3580,7 +3580,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 胴_節17_胴_表示
+    	public bool Torso_節17_Torso_表示
     	{
     		get
     		{
@@ -3593,7 +3593,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 胴_節17_鱗1_表示
+    	public bool Torso_節17_鱗1_表示
     	{
     		get
     		{
@@ -3606,7 +3606,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 胴_節17_鱗3_表示
+    	public bool Torso_節17_鱗3_表示
     	{
     		get
     		{
@@ -3619,7 +3619,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 胴_節17_鱗2_表示
+    	public bool Torso_節17_鱗2_表示
     	{
     		get
     		{
@@ -3632,7 +3632,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 胴_節18_胴_表示
+    	public bool Torso_節18_Torso_表示
     	{
     		get
     		{
@@ -3645,7 +3645,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 胴_節18_鱗1_表示
+    	public bool Torso_節18_鱗1_表示
     	{
     		get
     		{
@@ -3658,7 +3658,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 胴_節18_鱗3_表示
+    	public bool Torso_節18_鱗3_表示
     	{
     		get
     		{
@@ -3671,7 +3671,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 胴_節18_鱗2_表示
+    	public bool Torso_節18_鱗2_表示
     	{
     		get
     		{
@@ -5394,16 +5394,16 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return 胴_輪_革_表示;
+    			return Torso_輪_革_表示;
     		}
     		set
     		{
-    			胴_輪_革_表示 = value;
-    			胴_輪_金具1_表示 = value;
-    			胴_輪_金具2_表示 = value;
-    			胴_輪_金具3_表示 = value;
-    			胴_輪_金具左_表示 = value;
-    			胴_輪_金具右_表示 = value;
+    			Torso_輪_革_表示 = value;
+    			Torso_輪_金具1_表示 = value;
+    			Torso_輪_金具2_表示 = value;
+    			Torso_輪_金具3_表示 = value;
+    			Torso_輪_金具左_表示 = value;
+    			Torso_輪_金具右_表示 = value;
     		}
     	}
 
@@ -5535,84 +5535,84 @@ namespace SlaveMatrix
     			上顎頭部後_頭1_表示 = value;
     			下顎頭部後_頭2_表示 = value;
     			下顎頭部後_頭1_表示 = value;
-    			胴_節1_胴_表示 = value;
-    			胴_節1_鱗1_表示 = value;
-    			胴_節1_鱗3_表示 = value;
-    			胴_節1_鱗2_表示 = value;
-    			胴_節2_胴_表示 = value;
-    			胴_節2_鱗1_表示 = value;
-    			胴_節2_鱗3_表示 = value;
-    			胴_節2_鱗2_表示 = value;
-    			胴_節3_胴_表示 = value;
-    			胴_節3_鱗1_表示 = value;
-    			胴_節3_鱗3_表示 = value;
-    			胴_節3_鱗2_表示 = value;
-    			胴_節4_胴_表示 = value;
-    			胴_節4_鱗1_表示 = value;
-    			胴_節4_鱗3_表示 = value;
-    			胴_節4_鱗2_表示 = value;
-    			胴_節5_胴_表示 = value;
-    			胴_節5_鱗1_表示 = value;
-    			胴_節5_鱗3_表示 = value;
-    			胴_節5_鱗2_表示 = value;
-    			胴_節6_胴_表示 = value;
-    			胴_節6_鱗1_表示 = value;
-    			胴_節6_鱗3_表示 = value;
-    			胴_節6_鱗2_表示 = value;
-    			胴_節7_胴_表示 = value;
-    			胴_節7_鱗1_表示 = value;
-    			胴_節7_鱗3_表示 = value;
-    			胴_節7_鱗2_表示 = value;
-    			胴_節8_胴_表示 = value;
-    			胴_節8_鱗1_表示 = value;
-    			胴_節8_鱗3_表示 = value;
-    			胴_節8_鱗2_表示 = value;
-    			胴_節9_胴_表示 = value;
-    			胴_節9_鱗1_表示 = value;
-    			胴_節9_鱗3_表示 = value;
-    			胴_節9_鱗2_表示 = value;
-    			胴_節10_胴_表示 = value;
-    			胴_節10_鱗1_表示 = value;
-    			胴_節10_鱗3_表示 = value;
-    			胴_節10_鱗2_表示 = value;
-    			胴_節11_胴_表示 = value;
-    			胴_節11_鱗1_表示 = value;
-    			胴_節11_鱗3_表示 = value;
-    			胴_節11_鱗2_表示 = value;
-    			胴_節12_胴_表示 = value;
-    			胴_節12_鱗1_表示 = value;
-    			胴_節12_鱗3_表示 = value;
-    			胴_節12_鱗2_表示 = value;
-    			胴_節13_胴_表示 = value;
-    			胴_節13_鱗1_表示 = value;
-    			胴_節13_鱗3_表示 = value;
-    			胴_節13_鱗2_表示 = value;
-    			胴_節14_胴_表示 = value;
-    			胴_節14_鱗1_表示 = value;
-    			胴_節14_鱗3_表示 = value;
-    			胴_節14_鱗2_表示 = value;
-    			胴_節15_胴_表示 = value;
-    			胴_節15_鱗1_表示 = value;
-    			胴_節15_鱗3_表示 = value;
-    			胴_節15_鱗2_表示 = value;
-    			胴_節16_胴_表示 = value;
-    			胴_節16_鱗1_表示 = value;
-    			胴_節16_鱗3_表示 = value;
-    			胴_節16_鱗2_表示 = value;
-    			胴_輪_革_表示 = value;
-    			胴_輪_金具1_表示 = value;
-    			胴_輪_金具2_表示 = value;
-    			胴_輪_金具3_表示 = value;
-    			胴_輪_金具左_表示 = value;
-    			胴_輪_金具右_表示 = value;
-    			胴_節17_胴_表示 = value;
-    			胴_節17_鱗1_表示 = value;
-    			胴_節17_鱗3_表示 = value;
-    			胴_節17_鱗2_表示 = value;
-    			胴_節18_胴_表示 = value;
-    			胴_節18_鱗1_表示 = value;
-    			胴_節18_鱗3_表示 = value;
-    			胴_節18_鱗2_表示 = value;
+    			Torso_節1_Torso_表示 = value;
+    			Torso_節1_鱗1_表示 = value;
+    			Torso_節1_鱗3_表示 = value;
+    			Torso_節1_鱗2_表示 = value;
+    			Torso_節2_Torso_表示 = value;
+    			Torso_節2_鱗1_表示 = value;
+    			Torso_節2_鱗3_表示 = value;
+    			Torso_節2_鱗2_表示 = value;
+    			Torso_節3_Torso_表示 = value;
+    			Torso_節3_鱗1_表示 = value;
+    			Torso_節3_鱗3_表示 = value;
+    			Torso_節3_鱗2_表示 = value;
+    			Torso_節4_Torso_表示 = value;
+    			Torso_節4_鱗1_表示 = value;
+    			Torso_節4_鱗3_表示 = value;
+    			Torso_節4_鱗2_表示 = value;
+    			Torso_節5_Torso_表示 = value;
+    			Torso_節5_鱗1_表示 = value;
+    			Torso_節5_鱗3_表示 = value;
+    			Torso_節5_鱗2_表示 = value;
+    			Torso_節6_Torso_表示 = value;
+    			Torso_節6_鱗1_表示 = value;
+    			Torso_節6_鱗3_表示 = value;
+    			Torso_節6_鱗2_表示 = value;
+    			Torso_節7_Torso_表示 = value;
+    			Torso_節7_鱗1_表示 = value;
+    			Torso_節7_鱗3_表示 = value;
+    			Torso_節7_鱗2_表示 = value;
+    			Torso_節8_Torso_表示 = value;
+    			Torso_節8_鱗1_表示 = value;
+    			Torso_節8_鱗3_表示 = value;
+    			Torso_節8_鱗2_表示 = value;
+    			Torso_節9_Torso_表示 = value;
+    			Torso_節9_鱗1_表示 = value;
+    			Torso_節9_鱗3_表示 = value;
+    			Torso_節9_鱗2_表示 = value;
+    			Torso_節10_Torso_表示 = value;
+    			Torso_節10_鱗1_表示 = value;
+    			Torso_節10_鱗3_表示 = value;
+    			Torso_節10_鱗2_表示 = value;
+    			Torso_節11_Torso_表示 = value;
+    			Torso_節11_鱗1_表示 = value;
+    			Torso_節11_鱗3_表示 = value;
+    			Torso_節11_鱗2_表示 = value;
+    			Torso_節12_Torso_表示 = value;
+    			Torso_節12_鱗1_表示 = value;
+    			Torso_節12_鱗3_表示 = value;
+    			Torso_節12_鱗2_表示 = value;
+    			Torso_節13_Torso_表示 = value;
+    			Torso_節13_鱗1_表示 = value;
+    			Torso_節13_鱗3_表示 = value;
+    			Torso_節13_鱗2_表示 = value;
+    			Torso_節14_Torso_表示 = value;
+    			Torso_節14_鱗1_表示 = value;
+    			Torso_節14_鱗3_表示 = value;
+    			Torso_節14_鱗2_表示 = value;
+    			Torso_節15_Torso_表示 = value;
+    			Torso_節15_鱗1_表示 = value;
+    			Torso_節15_鱗3_表示 = value;
+    			Torso_節15_鱗2_表示 = value;
+    			Torso_節16_Torso_表示 = value;
+    			Torso_節16_鱗1_表示 = value;
+    			Torso_節16_鱗3_表示 = value;
+    			Torso_節16_鱗2_表示 = value;
+    			Torso_輪_革_表示 = value;
+    			Torso_輪_金具1_表示 = value;
+    			Torso_輪_金具2_表示 = value;
+    			Torso_輪_金具3_表示 = value;
+    			Torso_輪_金具左_表示 = value;
+    			Torso_輪_金具右_表示 = value;
+    			Torso_節17_Torso_表示 = value;
+    			Torso_節17_鱗1_表示 = value;
+    			Torso_節17_鱗3_表示 = value;
+    			Torso_節17_鱗2_表示 = value;
+    			Torso_節18_Torso_表示 = value;
+    			Torso_節18_鱗1_表示 = value;
+    			Torso_節18_鱗3_表示 = value;
+    			Torso_節18_鱗2_表示 = value;
     			頭_口膜_口膜1_表示 = value;
     			頭_口膜_口膜2_表示 = value;
     			頭_口膜_口膜3_表示 = value;
@@ -6527,84 +6527,84 @@ namespace SlaveMatrix
     		上顎頭部後_頭1_表示 = e.上顎頭部後_頭1_表示;
     		下顎頭部後_頭2_表示 = e.下顎頭部後_頭2_表示;
     		下顎頭部後_頭1_表示 = e.下顎頭部後_頭1_表示;
-    		胴_節1_胴_表示 = e.胴_節1_胴_表示;
-    		胴_節1_鱗1_表示 = e.胴_節1_鱗1_表示;
-    		胴_節1_鱗3_表示 = e.胴_節1_鱗3_表示;
-    		胴_節1_鱗2_表示 = e.胴_節1_鱗2_表示;
-    		胴_節2_胴_表示 = e.胴_節2_胴_表示;
-    		胴_節2_鱗1_表示 = e.胴_節2_鱗1_表示;
-    		胴_節2_鱗3_表示 = e.胴_節2_鱗3_表示;
-    		胴_節2_鱗2_表示 = e.胴_節2_鱗2_表示;
-    		胴_節3_胴_表示 = e.胴_節3_胴_表示;
-    		胴_節3_鱗1_表示 = e.胴_節3_鱗1_表示;
-    		胴_節3_鱗3_表示 = e.胴_節3_鱗3_表示;
-    		胴_節3_鱗2_表示 = e.胴_節3_鱗2_表示;
-    		胴_節4_胴_表示 = e.胴_節4_胴_表示;
-    		胴_節4_鱗1_表示 = e.胴_節4_鱗1_表示;
-    		胴_節4_鱗3_表示 = e.胴_節4_鱗3_表示;
-    		胴_節4_鱗2_表示 = e.胴_節4_鱗2_表示;
-    		胴_節5_胴_表示 = e.胴_節5_胴_表示;
-    		胴_節5_鱗1_表示 = e.胴_節5_鱗1_表示;
-    		胴_節5_鱗3_表示 = e.胴_節5_鱗3_表示;
-    		胴_節5_鱗2_表示 = e.胴_節5_鱗2_表示;
-    		胴_節6_胴_表示 = e.胴_節6_胴_表示;
-    		胴_節6_鱗1_表示 = e.胴_節6_鱗1_表示;
-    		胴_節6_鱗3_表示 = e.胴_節6_鱗3_表示;
-    		胴_節6_鱗2_表示 = e.胴_節6_鱗2_表示;
-    		胴_節7_胴_表示 = e.胴_節7_胴_表示;
-    		胴_節7_鱗1_表示 = e.胴_節7_鱗1_表示;
-    		胴_節7_鱗3_表示 = e.胴_節7_鱗3_表示;
-    		胴_節7_鱗2_表示 = e.胴_節7_鱗2_表示;
-    		胴_節8_胴_表示 = e.胴_節8_胴_表示;
-    		胴_節8_鱗1_表示 = e.胴_節8_鱗1_表示;
-    		胴_節8_鱗3_表示 = e.胴_節8_鱗3_表示;
-    		胴_節8_鱗2_表示 = e.胴_節8_鱗2_表示;
-    		胴_節9_胴_表示 = e.胴_節9_胴_表示;
-    		胴_節9_鱗1_表示 = e.胴_節9_鱗1_表示;
-    		胴_節9_鱗3_表示 = e.胴_節9_鱗3_表示;
-    		胴_節9_鱗2_表示 = e.胴_節9_鱗2_表示;
-    		胴_節10_胴_表示 = e.胴_節10_胴_表示;
-    		胴_節10_鱗1_表示 = e.胴_節10_鱗1_表示;
-    		胴_節10_鱗3_表示 = e.胴_節10_鱗3_表示;
-    		胴_節10_鱗2_表示 = e.胴_節10_鱗2_表示;
-    		胴_節11_胴_表示 = e.胴_節11_胴_表示;
-    		胴_節11_鱗1_表示 = e.胴_節11_鱗1_表示;
-    		胴_節11_鱗3_表示 = e.胴_節11_鱗3_表示;
-    		胴_節11_鱗2_表示 = e.胴_節11_鱗2_表示;
-    		胴_節12_胴_表示 = e.胴_節12_胴_表示;
-    		胴_節12_鱗1_表示 = e.胴_節12_鱗1_表示;
-    		胴_節12_鱗3_表示 = e.胴_節12_鱗3_表示;
-    		胴_節12_鱗2_表示 = e.胴_節12_鱗2_表示;
-    		胴_節13_胴_表示 = e.胴_節13_胴_表示;
-    		胴_節13_鱗1_表示 = e.胴_節13_鱗1_表示;
-    		胴_節13_鱗3_表示 = e.胴_節13_鱗3_表示;
-    		胴_節13_鱗2_表示 = e.胴_節13_鱗2_表示;
-    		胴_節14_胴_表示 = e.胴_節14_胴_表示;
-    		胴_節14_鱗1_表示 = e.胴_節14_鱗1_表示;
-    		胴_節14_鱗3_表示 = e.胴_節14_鱗3_表示;
-    		胴_節14_鱗2_表示 = e.胴_節14_鱗2_表示;
-    		胴_節15_胴_表示 = e.胴_節15_胴_表示;
-    		胴_節15_鱗1_表示 = e.胴_節15_鱗1_表示;
-    		胴_節15_鱗3_表示 = e.胴_節15_鱗3_表示;
-    		胴_節15_鱗2_表示 = e.胴_節15_鱗2_表示;
-    		胴_節16_胴_表示 = e.胴_節16_胴_表示;
-    		胴_節16_鱗1_表示 = e.胴_節16_鱗1_表示;
-    		胴_節16_鱗3_表示 = e.胴_節16_鱗3_表示;
-    		胴_節16_鱗2_表示 = e.胴_節16_鱗2_表示;
-    		胴_輪_革_表示 = e.胴_輪_革_表示;
-    		胴_輪_金具1_表示 = e.胴_輪_金具1_表示;
-    		胴_輪_金具2_表示 = e.胴_輪_金具2_表示;
-    		胴_輪_金具3_表示 = e.胴_輪_金具3_表示;
-    		胴_輪_金具左_表示 = e.胴_輪_金具左_表示;
-    		胴_輪_金具右_表示 = e.胴_輪_金具右_表示;
-    		胴_節17_胴_表示 = e.胴_節17_胴_表示;
-    		胴_節17_鱗1_表示 = e.胴_節17_鱗1_表示;
-    		胴_節17_鱗3_表示 = e.胴_節17_鱗3_表示;
-    		胴_節17_鱗2_表示 = e.胴_節17_鱗2_表示;
-    		胴_節18_胴_表示 = e.胴_節18_胴_表示;
-    		胴_節18_鱗1_表示 = e.胴_節18_鱗1_表示;
-    		胴_節18_鱗3_表示 = e.胴_節18_鱗3_表示;
-    		胴_節18_鱗2_表示 = e.胴_節18_鱗2_表示;
+    		Torso_節1_Torso_表示 = e.Torso_節1_Torso_表示;
+    		Torso_節1_鱗1_表示 = e.Torso_節1_鱗1_表示;
+    		Torso_節1_鱗3_表示 = e.Torso_節1_鱗3_表示;
+    		Torso_節1_鱗2_表示 = e.Torso_節1_鱗2_表示;
+    		Torso_節2_Torso_表示 = e.Torso_節2_Torso_表示;
+    		Torso_節2_鱗1_表示 = e.Torso_節2_鱗1_表示;
+    		Torso_節2_鱗3_表示 = e.Torso_節2_鱗3_表示;
+    		Torso_節2_鱗2_表示 = e.Torso_節2_鱗2_表示;
+    		Torso_節3_Torso_表示 = e.Torso_節3_Torso_表示;
+    		Torso_節3_鱗1_表示 = e.Torso_節3_鱗1_表示;
+    		Torso_節3_鱗3_表示 = e.Torso_節3_鱗3_表示;
+    		Torso_節3_鱗2_表示 = e.Torso_節3_鱗2_表示;
+    		Torso_節4_Torso_表示 = e.Torso_節4_Torso_表示;
+    		Torso_節4_鱗1_表示 = e.Torso_節4_鱗1_表示;
+    		Torso_節4_鱗3_表示 = e.Torso_節4_鱗3_表示;
+    		Torso_節4_鱗2_表示 = e.Torso_節4_鱗2_表示;
+    		Torso_節5_Torso_表示 = e.Torso_節5_Torso_表示;
+    		Torso_節5_鱗1_表示 = e.Torso_節5_鱗1_表示;
+    		Torso_節5_鱗3_表示 = e.Torso_節5_鱗3_表示;
+    		Torso_節5_鱗2_表示 = e.Torso_節5_鱗2_表示;
+    		Torso_節6_Torso_表示 = e.Torso_節6_Torso_表示;
+    		Torso_節6_鱗1_表示 = e.Torso_節6_鱗1_表示;
+    		Torso_節6_鱗3_表示 = e.Torso_節6_鱗3_表示;
+    		Torso_節6_鱗2_表示 = e.Torso_節6_鱗2_表示;
+    		Torso_節7_Torso_表示 = e.Torso_節7_Torso_表示;
+    		Torso_節7_鱗1_表示 = e.Torso_節7_鱗1_表示;
+    		Torso_節7_鱗3_表示 = e.Torso_節7_鱗3_表示;
+    		Torso_節7_鱗2_表示 = e.Torso_節7_鱗2_表示;
+    		Torso_節8_Torso_表示 = e.Torso_節8_Torso_表示;
+    		Torso_節8_鱗1_表示 = e.Torso_節8_鱗1_表示;
+    		Torso_節8_鱗3_表示 = e.Torso_節8_鱗3_表示;
+    		Torso_節8_鱗2_表示 = e.Torso_節8_鱗2_表示;
+    		Torso_節9_Torso_表示 = e.Torso_節9_Torso_表示;
+    		Torso_節9_鱗1_表示 = e.Torso_節9_鱗1_表示;
+    		Torso_節9_鱗3_表示 = e.Torso_節9_鱗3_表示;
+    		Torso_節9_鱗2_表示 = e.Torso_節9_鱗2_表示;
+    		Torso_節10_Torso_表示 = e.Torso_節10_Torso_表示;
+    		Torso_節10_鱗1_表示 = e.Torso_節10_鱗1_表示;
+    		Torso_節10_鱗3_表示 = e.Torso_節10_鱗3_表示;
+    		Torso_節10_鱗2_表示 = e.Torso_節10_鱗2_表示;
+    		Torso_節11_Torso_表示 = e.Torso_節11_Torso_表示;
+    		Torso_節11_鱗1_表示 = e.Torso_節11_鱗1_表示;
+    		Torso_節11_鱗3_表示 = e.Torso_節11_鱗3_表示;
+    		Torso_節11_鱗2_表示 = e.Torso_節11_鱗2_表示;
+    		Torso_節12_Torso_表示 = e.Torso_節12_Torso_表示;
+    		Torso_節12_鱗1_表示 = e.Torso_節12_鱗1_表示;
+    		Torso_節12_鱗3_表示 = e.Torso_節12_鱗3_表示;
+    		Torso_節12_鱗2_表示 = e.Torso_節12_鱗2_表示;
+    		Torso_節13_Torso_表示 = e.Torso_節13_Torso_表示;
+    		Torso_節13_鱗1_表示 = e.Torso_節13_鱗1_表示;
+    		Torso_節13_鱗3_表示 = e.Torso_節13_鱗3_表示;
+    		Torso_節13_鱗2_表示 = e.Torso_節13_鱗2_表示;
+    		Torso_節14_Torso_表示 = e.Torso_節14_Torso_表示;
+    		Torso_節14_鱗1_表示 = e.Torso_節14_鱗1_表示;
+    		Torso_節14_鱗3_表示 = e.Torso_節14_鱗3_表示;
+    		Torso_節14_鱗2_表示 = e.Torso_節14_鱗2_表示;
+    		Torso_節15_Torso_表示 = e.Torso_節15_Torso_表示;
+    		Torso_節15_鱗1_表示 = e.Torso_節15_鱗1_表示;
+    		Torso_節15_鱗3_表示 = e.Torso_節15_鱗3_表示;
+    		Torso_節15_鱗2_表示 = e.Torso_節15_鱗2_表示;
+    		Torso_節16_Torso_表示 = e.Torso_節16_Torso_表示;
+    		Torso_節16_鱗1_表示 = e.Torso_節16_鱗1_表示;
+    		Torso_節16_鱗3_表示 = e.Torso_節16_鱗3_表示;
+    		Torso_節16_鱗2_表示 = e.Torso_節16_鱗2_表示;
+    		Torso_輪_革_表示 = e.Torso_輪_革_表示;
+    		Torso_輪_金具1_表示 = e.Torso_輪_金具1_表示;
+    		Torso_輪_金具2_表示 = e.Torso_輪_金具2_表示;
+    		Torso_輪_金具3_表示 = e.Torso_輪_金具3_表示;
+    		Torso_輪_金具左_表示 = e.Torso_輪_金具左_表示;
+    		Torso_輪_金具右_表示 = e.Torso_輪_金具右_表示;
+    		Torso_節17_Torso_表示 = e.Torso_節17_Torso_表示;
+    		Torso_節17_鱗1_表示 = e.Torso_節17_鱗1_表示;
+    		Torso_節17_鱗3_表示 = e.Torso_節17_鱗3_表示;
+    		Torso_節17_鱗2_表示 = e.Torso_節17_鱗2_表示;
+    		Torso_節18_Torso_表示 = e.Torso_節18_Torso_表示;
+    		Torso_節18_鱗1_表示 = e.Torso_節18_鱗1_表示;
+    		Torso_節18_鱗3_表示 = e.Torso_節18_鱗3_表示;
+    		Torso_節18_鱗2_表示 = e.Torso_節18_鱗2_表示;
     		頭_口膜_口膜1_表示 = e.頭_口膜_口膜1_表示;
     		頭_口膜_口膜2_表示 = e.頭_口膜_口膜2_表示;
     		頭_口膜_口膜3_表示 = e.頭_口膜_口膜3_表示;
@@ -6907,74 +6907,74 @@ namespace SlaveMatrix
     		X0Y0_Torso_節2_鱗2CP = new ColorP(X0Y0_Torso_節2_鱗2, Torso_節2_鱗2CD, DisUnit, abj: true);
     		X0Y0_Torso_節3_TorsoCP = new ColorP(X0Y0_Torso_節3_Torso, Torso_節3_TorsoCD, DisUnit, abj: true);
     		X0Y0_Torso_節3_鱗1CP = new ColorP(X0Y0_Torso_節3_鱗1, Torso_節3_鱗1CD, DisUnit, abj: true);
-    		X0Y0_胴_節3_鱗3CP = new ColorP(X0Y0_Torso_節3_鱗3, Torso_節3_鱗3CD, DisUnit, abj: true);
-    		X0Y0_胴_節3_鱗2CP = new ColorP(X0Y0_Torso_節3_鱗2, Torso_節3_鱗2CD, DisUnit, abj: true);
-    		X0Y0_胴_節4_胴CP = new ColorP(X0Y0_Torso_節4_Torso, Torso_節4_TorsoCD, DisUnit, abj: true);
-    		X0Y0_胴_節4_鱗1CP = new ColorP(X0Y0_Torso_節4_鱗1, Torso_節4_鱗1CD, DisUnit, abj: true);
-    		X0Y0_胴_節4_鱗3CP = new ColorP(X0Y0_Torso_節4_鱗3, Torso_節4_鱗3CD, DisUnit, abj: true);
-    		X0Y0_胴_節4_鱗2CP = new ColorP(X0Y0_Torso_節4_鱗2, Torso_節4_鱗2CD, DisUnit, abj: true);
-    		X0Y0_胴_節5_胴CP = new ColorP(X0Y0_Torso_節5_Torso, Torso_節5_TorsoCD, DisUnit, abj: true);
-    		X0Y0_胴_節5_鱗1CP = new ColorP(X0Y0_Torso_節5_鱗1, Torso_節5_鱗1CD, DisUnit, abj: true);
-    		X0Y0_胴_節5_鱗3CP = new ColorP(X0Y0_Torso_節5_鱗3, Torso_節5_鱗3CD, DisUnit, abj: true);
-    		X0Y0_胴_節5_鱗2CP = new ColorP(X0Y0_Torso_節5_鱗2, Torso_節5_鱗2CD, DisUnit, abj: true);
-    		X0Y0_胴_節6_胴CP = new ColorP(X0Y0_Torso_節6_Torso, Torso_節6_TorsoCD, DisUnit, abj: true);
-    		X0Y0_胴_節6_鱗1CP = new ColorP(X0Y0_Torso_節6_鱗1, Torso_節6_鱗1CD, DisUnit, abj: true);
-    		X0Y0_胴_節6_鱗3CP = new ColorP(X0Y0_Torso_節6_鱗3, Torso_節6_鱗3CD, DisUnit, abj: true);
-    		X0Y0_胴_節6_鱗2CP = new ColorP(X0Y0_Torso_節6_鱗2, Torso_節6_鱗2CD, DisUnit, abj: true);
-    		X0Y0_胴_節7_胴CP = new ColorP(X0Y0_Torso_節7_Torso, Torso_節7_TorsoCD, DisUnit, abj: true);
-    		X0Y0_胴_節7_鱗1CP = new ColorP(X0Y0_Torso_節7_鱗1, Torso_節7_鱗1CD, DisUnit, abj: true);
-    		X0Y0_胴_節7_鱗3CP = new ColorP(X0Y0_Torso_節7_鱗3, Torso_節7_鱗3CD, DisUnit, abj: true);
-    		X0Y0_胴_節7_鱗2CP = new ColorP(X0Y0_Torso_節7_鱗2, Torso_節7_鱗2CD, DisUnit, abj: true);
-    		X0Y0_胴_節8_胴CP = new ColorP(X0Y0_Torso_節8_Torso, Torso_節8_TorsoCD, DisUnit, abj: true);
-    		X0Y0_胴_節8_鱗1CP = new ColorP(X0Y0_Torso_節8_鱗1, Torso_節8_鱗1CD, DisUnit, abj: true);
-    		X0Y0_胴_節8_鱗3CP = new ColorP(X0Y0_Torso_節8_鱗3, Torso_節8_鱗3CD, DisUnit, abj: true);
-    		X0Y0_胴_節8_鱗2CP = new ColorP(X0Y0_Torso_節8_鱗2, Torso_節8_鱗2CD, DisUnit, abj: true);
-    		X0Y0_胴_節9_胴CP = new ColorP(X0Y0_Torso_節9_Torso, Torso_節9_TorsoCD, DisUnit, abj: true);
-    		X0Y0_胴_節9_鱗1CP = new ColorP(X0Y0_Torso_節9_鱗1, Torso_節9_鱗1CD, DisUnit, abj: true);
-    		X0Y0_胴_節9_鱗3CP = new ColorP(X0Y0_Torso_節9_鱗3, Torso_節9_鱗3CD, DisUnit, abj: true);
-    		X0Y0_胴_節9_鱗2CP = new ColorP(X0Y0_Torso_節9_鱗2, Torso_節9_鱗2CD, DisUnit, abj: true);
-    		X0Y0_胴_節10_胴CP = new ColorP(X0Y0_Torso_節10_Torso, Torso_節10_TorsoCD, DisUnit, abj: true);
-    		X0Y0_胴_節10_鱗1CP = new ColorP(X0Y0_Torso_節10_鱗1, Torso_節10_鱗1CD, DisUnit, abj: true);
-    		X0Y0_胴_節10_鱗3CP = new ColorP(X0Y0_Torso_節10_鱗3, Torso_節10_鱗3CD, DisUnit, abj: true);
-    		X0Y0_胴_節10_鱗2CP = new ColorP(X0Y0_Torso_節10_鱗2, Torso_節10_鱗2CD, DisUnit, abj: true);
-    		X0Y0_胴_節11_胴CP = new ColorP(X0Y0_Torso_節11_Torso, Torso_節11_TorsoCD, DisUnit, abj: true);
-    		X0Y0_胴_節11_鱗1CP = new ColorP(X0Y0_Torso_節11_鱗1, Torso_節11_鱗1CD, DisUnit, abj: true);
-    		X0Y0_胴_節11_鱗3CP = new ColorP(X0Y0_Torso_節11_鱗3, Torso_節11_鱗3CD, DisUnit, abj: true);
-    		X0Y0_胴_節11_鱗2CP = new ColorP(X0Y0_Torso_節11_鱗2, Torso_節11_鱗2CD, DisUnit, abj: true);
-    		X0Y0_胴_節12_胴CP = new ColorP(X0Y0_Torso_節12_Torso, Torso_節12_TorsoCD, DisUnit, abj: true);
-    		X0Y0_胴_節12_鱗1CP = new ColorP(X0Y0_Torso_節12_鱗1, Torso_節12_鱗1CD, DisUnit, abj: true);
-    		X0Y0_胴_節12_鱗3CP = new ColorP(X0Y0_Torso_節12_鱗3, Torso_節12_鱗3CD, DisUnit, abj: true);
-    		X0Y0_胴_節12_鱗2CP = new ColorP(X0Y0_Torso_節12_鱗2, Torso_節12_鱗2CD, DisUnit, abj: true);
-    		X0Y0_胴_節13_胴CP = new ColorP(X0Y0_Torso_節13_Torso, Torso_節13_TorsoCD, DisUnit, abj: true);
-    		X0Y0_胴_節13_鱗1CP = new ColorP(X0Y0_Torso_節13_鱗1, Torso_節13_鱗1CD, DisUnit, abj: true);
-    		X0Y0_胴_節13_鱗3CP = new ColorP(X0Y0_Torso_節13_鱗3, Torso_節13_鱗3CD, DisUnit, abj: true);
-    		X0Y0_胴_節13_鱗2CP = new ColorP(X0Y0_Torso_節13_鱗2, Torso_節13_鱗2CD, DisUnit, abj: true);
-    		X0Y0_胴_節14_胴CP = new ColorP(X0Y0_Torso_節14_Torso, Torso_節14_TorsoCD, DisUnit, abj: true);
-    		X0Y0_胴_節14_鱗1CP = new ColorP(X0Y0_Torso_節14_鱗1, Torso_節14_鱗1CD, DisUnit, abj: true);
-    		X0Y0_胴_節14_鱗3CP = new ColorP(X0Y0_Torso_節14_鱗3, Torso_節14_鱗3CD, DisUnit, abj: true);
-    		X0Y0_胴_節14_鱗2CP = new ColorP(X0Y0_Torso_節14_鱗2, Torso_節14_鱗2CD, DisUnit, abj: true);
-    		X0Y0_胴_節15_胴CP = new ColorP(X0Y0_Torso_節15_Torso, Torso_節15_TorsoCD, DisUnit, abj: true);
-    		X0Y0_胴_節15_鱗1CP = new ColorP(X0Y0_Torso_節15_鱗1, Torso_節15_鱗1CD, DisUnit, abj: true);
-    		X0Y0_胴_節15_鱗3CP = new ColorP(X0Y0_Torso_節15_鱗3, Torso_節15_鱗3CD, DisUnit, abj: true);
-    		X0Y0_胴_節15_鱗2CP = new ColorP(X0Y0_Torso_節15_鱗2, Torso_節15_鱗2CD, DisUnit, abj: true);
-    		X0Y0_胴_節16_胴CP = new ColorP(X0Y0_Torso_節16_Torso, Torso_節16_TorsoCD, DisUnit, abj: true);
-    		X0Y0_胴_節16_鱗1CP = new ColorP(X0Y0_Torso_節16_鱗1, Torso_節16_鱗1CD, DisUnit, abj: true);
-    		X0Y0_胴_節16_鱗3CP = new ColorP(X0Y0_Torso_節16_鱗3, Torso_節16_鱗3CD, DisUnit, abj: true);
-    		X0Y0_胴_節16_鱗2CP = new ColorP(X0Y0_Torso_節16_鱗2, Torso_節16_鱗2CD, DisUnit, abj: true);
-    		X0Y0_胴_輪_革CP = new ColorP(X0Y0_Torso_輪_革, Torso_輪_革CD, DisUnit, abj: true);
-    		X0Y0_胴_輪_金具1CP = new ColorP(X0Y0_Torso_輪_金具1, Torso_輪_金具1CD, DisUnit, abj: true);
-    		X0Y0_胴_輪_金具2CP = new ColorP(X0Y0_Torso_輪_金具2, Torso_輪_金具2CD, DisUnit, abj: true);
-    		X0Y0_胴_輪_金具3CP = new ColorP(X0Y0_Torso_輪_金具3, Torso_輪_金具3CD, DisUnit, abj: true);
-    		X0Y0_胴_輪_金具左CP = new ColorP(X0Y0_Torso_輪_金具左, Torso_輪_金具左CD, DisUnit, abj: true);
-    		X0Y0_胴_輪_金具右CP = new ColorP(X0Y0_Torso_輪_金具右, Torso_輪_金具右CD, DisUnit, abj: true);
-    		X0Y0_胴_節17_胴CP = new ColorP(X0Y0_Torso_節17_Torso, Torso_節17_TorsoCD, DisUnit, abj: true);
-    		X0Y0_胴_節17_鱗1CP = new ColorP(X0Y0_Torso_節17_鱗1, Torso_節17_鱗1CD, DisUnit, abj: true);
-    		X0Y0_胴_節17_鱗3CP = new ColorP(X0Y0_Torso_節17_鱗3, Torso_節17_鱗3CD, DisUnit, abj: true);
-    		X0Y0_胴_節17_鱗2CP = new ColorP(X0Y0_Torso_節17_鱗2, Torso_節17_鱗2CD, DisUnit, abj: true);
-    		X0Y0_胴_節18_胴CP = new ColorP(X0Y0_Torso_節18_Torso, Torso_節18_TorsoCD, DisUnit, abj: true);
-    		X0Y0_胴_節18_鱗1CP = new ColorP(X0Y0_Torso_節18_鱗1, Torso_節18_鱗1CD, DisUnit, abj: true);
-    		X0Y0_胴_節18_鱗3CP = new ColorP(X0Y0_Torso_節18_鱗3, Torso_節18_鱗3CD, DisUnit, abj: true);
-    		X0Y0_胴_節18_鱗2CP = new ColorP(X0Y0_Torso_節18_鱗2, Torso_節18_鱗2CD, DisUnit, abj: true);
+    		X0Y0_Torso_節3_鱗3CP = new ColorP(X0Y0_Torso_節3_鱗3, Torso_節3_鱗3CD, DisUnit, abj: true);
+    		X0Y0_Torso_節3_鱗2CP = new ColorP(X0Y0_Torso_節3_鱗2, Torso_節3_鱗2CD, DisUnit, abj: true);
+    		X0Y0_Torso_節4_TorsoCP = new ColorP(X0Y0_Torso_節4_Torso, Torso_節4_TorsoCD, DisUnit, abj: true);
+    		X0Y0_Torso_節4_鱗1CP = new ColorP(X0Y0_Torso_節4_鱗1, Torso_節4_鱗1CD, DisUnit, abj: true);
+    		X0Y0_Torso_節4_鱗3CP = new ColorP(X0Y0_Torso_節4_鱗3, Torso_節4_鱗3CD, DisUnit, abj: true);
+    		X0Y0_Torso_節4_鱗2CP = new ColorP(X0Y0_Torso_節4_鱗2, Torso_節4_鱗2CD, DisUnit, abj: true);
+    		X0Y0_Torso_節5_TorsoCP = new ColorP(X0Y0_Torso_節5_Torso, Torso_節5_TorsoCD, DisUnit, abj: true);
+    		X0Y0_Torso_節5_鱗1CP = new ColorP(X0Y0_Torso_節5_鱗1, Torso_節5_鱗1CD, DisUnit, abj: true);
+    		X0Y0_Torso_節5_鱗3CP = new ColorP(X0Y0_Torso_節5_鱗3, Torso_節5_鱗3CD, DisUnit, abj: true);
+    		X0Y0_Torso_節5_鱗2CP = new ColorP(X0Y0_Torso_節5_鱗2, Torso_節5_鱗2CD, DisUnit, abj: true);
+    		X0Y0_Torso_節6_TorsoCP = new ColorP(X0Y0_Torso_節6_Torso, Torso_節6_TorsoCD, DisUnit, abj: true);
+    		X0Y0_Torso_節6_鱗1CP = new ColorP(X0Y0_Torso_節6_鱗1, Torso_節6_鱗1CD, DisUnit, abj: true);
+    		X0Y0_Torso_節6_鱗3CP = new ColorP(X0Y0_Torso_節6_鱗3, Torso_節6_鱗3CD, DisUnit, abj: true);
+    		X0Y0_Torso_節6_鱗2CP = new ColorP(X0Y0_Torso_節6_鱗2, Torso_節6_鱗2CD, DisUnit, abj: true);
+    		X0Y0_Torso_節7_TorsoCP = new ColorP(X0Y0_Torso_節7_Torso, Torso_節7_TorsoCD, DisUnit, abj: true);
+    		X0Y0_Torso_節7_鱗1CP = new ColorP(X0Y0_Torso_節7_鱗1, Torso_節7_鱗1CD, DisUnit, abj: true);
+    		X0Y0_Torso_節7_鱗3CP = new ColorP(X0Y0_Torso_節7_鱗3, Torso_節7_鱗3CD, DisUnit, abj: true);
+    		X0Y0_Torso_節7_鱗2CP = new ColorP(X0Y0_Torso_節7_鱗2, Torso_節7_鱗2CD, DisUnit, abj: true);
+    		X0Y0_Torso_節8_TorsoCP = new ColorP(X0Y0_Torso_節8_Torso, Torso_節8_TorsoCD, DisUnit, abj: true);
+    		X0Y0_Torso_節8_鱗1CP = new ColorP(X0Y0_Torso_節8_鱗1, Torso_節8_鱗1CD, DisUnit, abj: true);
+    		X0Y0_Torso_節8_鱗3CP = new ColorP(X0Y0_Torso_節8_鱗3, Torso_節8_鱗3CD, DisUnit, abj: true);
+    		X0Y0_Torso_節8_鱗2CP = new ColorP(X0Y0_Torso_節8_鱗2, Torso_節8_鱗2CD, DisUnit, abj: true);
+    		X0Y0_Torso_節9_TorsoCP = new ColorP(X0Y0_Torso_節9_Torso, Torso_節9_TorsoCD, DisUnit, abj: true);
+    		X0Y0_Torso_節9_鱗1CP = new ColorP(X0Y0_Torso_節9_鱗1, Torso_節9_鱗1CD, DisUnit, abj: true);
+    		X0Y0_Torso_節9_鱗3CP = new ColorP(X0Y0_Torso_節9_鱗3, Torso_節9_鱗3CD, DisUnit, abj: true);
+    		X0Y0_Torso_節9_鱗2CP = new ColorP(X0Y0_Torso_節9_鱗2, Torso_節9_鱗2CD, DisUnit, abj: true);
+    		X0Y0_Torso_節10_TorsoCP = new ColorP(X0Y0_Torso_節10_Torso, Torso_節10_TorsoCD, DisUnit, abj: true);
+    		X0Y0_Torso_節10_鱗1CP = new ColorP(X0Y0_Torso_節10_鱗1, Torso_節10_鱗1CD, DisUnit, abj: true);
+    		X0Y0_Torso_節10_鱗3CP = new ColorP(X0Y0_Torso_節10_鱗3, Torso_節10_鱗3CD, DisUnit, abj: true);
+    		X0Y0_Torso_節10_鱗2CP = new ColorP(X0Y0_Torso_節10_鱗2, Torso_節10_鱗2CD, DisUnit, abj: true);
+    		X0Y0_Torso_節11_TorsoCP = new ColorP(X0Y0_Torso_節11_Torso, Torso_節11_TorsoCD, DisUnit, abj: true);
+    		X0Y0_Torso_節11_鱗1CP = new ColorP(X0Y0_Torso_節11_鱗1, Torso_節11_鱗1CD, DisUnit, abj: true);
+    		X0Y0_Torso_節11_鱗3CP = new ColorP(X0Y0_Torso_節11_鱗3, Torso_節11_鱗3CD, DisUnit, abj: true);
+    		X0Y0_Torso_節11_鱗2CP = new ColorP(X0Y0_Torso_節11_鱗2, Torso_節11_鱗2CD, DisUnit, abj: true);
+    		X0Y0_Torso_節12_TorsoCP = new ColorP(X0Y0_Torso_節12_Torso, Torso_節12_TorsoCD, DisUnit, abj: true);
+    		X0Y0_Torso_節12_鱗1CP = new ColorP(X0Y0_Torso_節12_鱗1, Torso_節12_鱗1CD, DisUnit, abj: true);
+    		X0Y0_Torso_節12_鱗3CP = new ColorP(X0Y0_Torso_節12_鱗3, Torso_節12_鱗3CD, DisUnit, abj: true);
+    		X0Y0_Torso_節12_鱗2CP = new ColorP(X0Y0_Torso_節12_鱗2, Torso_節12_鱗2CD, DisUnit, abj: true);
+    		X0Y0_Torso_節13_TorsoCP = new ColorP(X0Y0_Torso_節13_Torso, Torso_節13_TorsoCD, DisUnit, abj: true);
+    		X0Y0_Torso_節13_鱗1CP = new ColorP(X0Y0_Torso_節13_鱗1, Torso_節13_鱗1CD, DisUnit, abj: true);
+    		X0Y0_Torso_節13_鱗3CP = new ColorP(X0Y0_Torso_節13_鱗3, Torso_節13_鱗3CD, DisUnit, abj: true);
+    		X0Y0_Torso_節13_鱗2CP = new ColorP(X0Y0_Torso_節13_鱗2, Torso_節13_鱗2CD, DisUnit, abj: true);
+    		X0Y0_Torso_節14_TorsoCP = new ColorP(X0Y0_Torso_節14_Torso, Torso_節14_TorsoCD, DisUnit, abj: true);
+    		X0Y0_Torso_節14_鱗1CP = new ColorP(X0Y0_Torso_節14_鱗1, Torso_節14_鱗1CD, DisUnit, abj: true);
+    		X0Y0_Torso_節14_鱗3CP = new ColorP(X0Y0_Torso_節14_鱗3, Torso_節14_鱗3CD, DisUnit, abj: true);
+    		X0Y0_Torso_節14_鱗2CP = new ColorP(X0Y0_Torso_節14_鱗2, Torso_節14_鱗2CD, DisUnit, abj: true);
+    		X0Y0_Torso_節15_TorsoCP = new ColorP(X0Y0_Torso_節15_Torso, Torso_節15_TorsoCD, DisUnit, abj: true);
+    		X0Y0_Torso_節15_鱗1CP = new ColorP(X0Y0_Torso_節15_鱗1, Torso_節15_鱗1CD, DisUnit, abj: true);
+    		X0Y0_Torso_節15_鱗3CP = new ColorP(X0Y0_Torso_節15_鱗3, Torso_節15_鱗3CD, DisUnit, abj: true);
+    		X0Y0_Torso_節15_鱗2CP = new ColorP(X0Y0_Torso_節15_鱗2, Torso_節15_鱗2CD, DisUnit, abj: true);
+    		X0Y0_Torso_節16_TorsoCP = new ColorP(X0Y0_Torso_節16_Torso, Torso_節16_TorsoCD, DisUnit, abj: true);
+    		X0Y0_Torso_節16_鱗1CP = new ColorP(X0Y0_Torso_節16_鱗1, Torso_節16_鱗1CD, DisUnit, abj: true);
+    		X0Y0_Torso_節16_鱗3CP = new ColorP(X0Y0_Torso_節16_鱗3, Torso_節16_鱗3CD, DisUnit, abj: true);
+    		X0Y0_Torso_節16_鱗2CP = new ColorP(X0Y0_Torso_節16_鱗2, Torso_節16_鱗2CD, DisUnit, abj: true);
+    		X0Y0_Torso_輪_革CP = new ColorP(X0Y0_Torso_輪_革, Torso_輪_革CD, DisUnit, abj: true);
+    		X0Y0_Torso_輪_金具1CP = new ColorP(X0Y0_Torso_輪_金具1, Torso_輪_金具1CD, DisUnit, abj: true);
+    		X0Y0_Torso_輪_金具2CP = new ColorP(X0Y0_Torso_輪_金具2, Torso_輪_金具2CD, DisUnit, abj: true);
+    		X0Y0_Torso_輪_金具3CP = new ColorP(X0Y0_Torso_輪_金具3, Torso_輪_金具3CD, DisUnit, abj: true);
+    		X0Y0_Torso_輪_金具左CP = new ColorP(X0Y0_Torso_輪_金具左, Torso_輪_金具左CD, DisUnit, abj: true);
+    		X0Y0_Torso_輪_金具右CP = new ColorP(X0Y0_Torso_輪_金具右, Torso_輪_金具右CD, DisUnit, abj: true);
+    		X0Y0_Torso_節17_TorsoCP = new ColorP(X0Y0_Torso_節17_Torso, Torso_節17_TorsoCD, DisUnit, abj: true);
+    		X0Y0_Torso_節17_鱗1CP = new ColorP(X0Y0_Torso_節17_鱗1, Torso_節17_鱗1CD, DisUnit, abj: true);
+    		X0Y0_Torso_節17_鱗3CP = new ColorP(X0Y0_Torso_節17_鱗3, Torso_節17_鱗3CD, DisUnit, abj: true);
+    		X0Y0_Torso_節17_鱗2CP = new ColorP(X0Y0_Torso_節17_鱗2, Torso_節17_鱗2CD, DisUnit, abj: true);
+    		X0Y0_Torso_節18_TorsoCP = new ColorP(X0Y0_Torso_節18_Torso, Torso_節18_TorsoCD, DisUnit, abj: true);
+    		X0Y0_Torso_節18_鱗1CP = new ColorP(X0Y0_Torso_節18_鱗1, Torso_節18_鱗1CD, DisUnit, abj: true);
+    		X0Y0_Torso_節18_鱗3CP = new ColorP(X0Y0_Torso_節18_鱗3, Torso_節18_鱗3CD, DisUnit, abj: true);
+    		X0Y0_Torso_節18_鱗2CP = new ColorP(X0Y0_Torso_節18_鱗2, Torso_節18_鱗2CD, DisUnit, abj: true);
     		X0Y0_頭_口膜_口膜1CP = new ColorP(X0Y0_頭_口膜_口膜1, 頭_口膜_口膜1CD, DisUnit, abj: true);
     		X0Y0_頭_口膜_口膜2CP = new ColorP(X0Y0_頭_口膜_口膜2, 頭_口膜_口膜2CD, DisUnit, abj: true);
     		X0Y0_頭_口膜_口膜3CP = new ColorP(X0Y0_頭_口膜_口膜3, 頭_口膜_口膜3CD, DisUnit, abj: true);
@@ -7578,74 +7578,74 @@ namespace SlaveMatrix
     		X0Y0_Torso_節2_鱗2CP.Update();
     		X0Y0_Torso_節3_TorsoCP.Update();
     		X0Y0_Torso_節3_鱗1CP.Update();
-    		X0Y0_胴_節3_鱗3CP.Update();
-    		X0Y0_胴_節3_鱗2CP.Update();
-    		X0Y0_胴_節4_胴CP.Update();
-    		X0Y0_胴_節4_鱗1CP.Update();
-    		X0Y0_胴_節4_鱗3CP.Update();
-    		X0Y0_胴_節4_鱗2CP.Update();
-    		X0Y0_胴_節5_胴CP.Update();
-    		X0Y0_胴_節5_鱗1CP.Update();
-    		X0Y0_胴_節5_鱗3CP.Update();
-    		X0Y0_胴_節5_鱗2CP.Update();
-    		X0Y0_胴_節6_胴CP.Update();
-    		X0Y0_胴_節6_鱗1CP.Update();
-    		X0Y0_胴_節6_鱗3CP.Update();
-    		X0Y0_胴_節6_鱗2CP.Update();
-    		X0Y0_胴_節7_胴CP.Update();
-    		X0Y0_胴_節7_鱗1CP.Update();
-    		X0Y0_胴_節7_鱗3CP.Update();
-    		X0Y0_胴_節7_鱗2CP.Update();
-    		X0Y0_胴_節8_胴CP.Update();
-    		X0Y0_胴_節8_鱗1CP.Update();
-    		X0Y0_胴_節8_鱗3CP.Update();
-    		X0Y0_胴_節8_鱗2CP.Update();
-    		X0Y0_胴_節9_胴CP.Update();
-    		X0Y0_胴_節9_鱗1CP.Update();
-    		X0Y0_胴_節9_鱗3CP.Update();
-    		X0Y0_胴_節9_鱗2CP.Update();
-    		X0Y0_胴_節10_胴CP.Update();
-    		X0Y0_胴_節10_鱗1CP.Update();
-    		X0Y0_胴_節10_鱗3CP.Update();
-    		X0Y0_胴_節10_鱗2CP.Update();
-    		X0Y0_胴_節11_胴CP.Update();
-    		X0Y0_胴_節11_鱗1CP.Update();
-    		X0Y0_胴_節11_鱗3CP.Update();
-    		X0Y0_胴_節11_鱗2CP.Update();
-    		X0Y0_胴_節12_胴CP.Update();
-    		X0Y0_胴_節12_鱗1CP.Update();
-    		X0Y0_胴_節12_鱗3CP.Update();
-    		X0Y0_胴_節12_鱗2CP.Update();
-    		X0Y0_胴_節13_胴CP.Update();
-    		X0Y0_胴_節13_鱗1CP.Update();
-    		X0Y0_胴_節13_鱗3CP.Update();
-    		X0Y0_胴_節13_鱗2CP.Update();
-    		X0Y0_胴_節14_胴CP.Update();
-    		X0Y0_胴_節14_鱗1CP.Update();
-    		X0Y0_胴_節14_鱗3CP.Update();
-    		X0Y0_胴_節14_鱗2CP.Update();
-    		X0Y0_胴_節15_胴CP.Update();
-    		X0Y0_胴_節15_鱗1CP.Update();
-    		X0Y0_胴_節15_鱗3CP.Update();
-    		X0Y0_胴_節15_鱗2CP.Update();
-    		X0Y0_胴_節16_胴CP.Update();
-    		X0Y0_胴_節16_鱗1CP.Update();
-    		X0Y0_胴_節16_鱗3CP.Update();
-    		X0Y0_胴_節16_鱗2CP.Update();
-    		X0Y0_胴_輪_革CP.Update();
-    		X0Y0_胴_輪_金具1CP.Update();
-    		X0Y0_胴_輪_金具2CP.Update();
-    		X0Y0_胴_輪_金具3CP.Update();
-    		X0Y0_胴_輪_金具左CP.Update();
-    		X0Y0_胴_輪_金具右CP.Update();
-    		X0Y0_胴_節17_胴CP.Update();
-    		X0Y0_胴_節17_鱗1CP.Update();
-    		X0Y0_胴_節17_鱗3CP.Update();
-    		X0Y0_胴_節17_鱗2CP.Update();
-    		X0Y0_胴_節18_胴CP.Update();
-    		X0Y0_胴_節18_鱗1CP.Update();
-    		X0Y0_胴_節18_鱗3CP.Update();
-    		X0Y0_胴_節18_鱗2CP.Update();
+    		X0Y0_Torso_節3_鱗3CP.Update();
+    		X0Y0_Torso_節3_鱗2CP.Update();
+    		X0Y0_Torso_節4_TorsoCP.Update();
+    		X0Y0_Torso_節4_鱗1CP.Update();
+    		X0Y0_Torso_節4_鱗3CP.Update();
+    		X0Y0_Torso_節4_鱗2CP.Update();
+    		X0Y0_Torso_節5_TorsoCP.Update();
+    		X0Y0_Torso_節5_鱗1CP.Update();
+    		X0Y0_Torso_節5_鱗3CP.Update();
+    		X0Y0_Torso_節5_鱗2CP.Update();
+    		X0Y0_Torso_節6_TorsoCP.Update();
+    		X0Y0_Torso_節6_鱗1CP.Update();
+    		X0Y0_Torso_節6_鱗3CP.Update();
+    		X0Y0_Torso_節6_鱗2CP.Update();
+    		X0Y0_Torso_節7_TorsoCP.Update();
+    		X0Y0_Torso_節7_鱗1CP.Update();
+    		X0Y0_Torso_節7_鱗3CP.Update();
+    		X0Y0_Torso_節7_鱗2CP.Update();
+    		X0Y0_Torso_節8_TorsoCP.Update();
+    		X0Y0_Torso_節8_鱗1CP.Update();
+    		X0Y0_Torso_節8_鱗3CP.Update();
+    		X0Y0_Torso_節8_鱗2CP.Update();
+    		X0Y0_Torso_節9_TorsoCP.Update();
+    		X0Y0_Torso_節9_鱗1CP.Update();
+    		X0Y0_Torso_節9_鱗3CP.Update();
+    		X0Y0_Torso_節9_鱗2CP.Update();
+    		X0Y0_Torso_節10_TorsoCP.Update();
+    		X0Y0_Torso_節10_鱗1CP.Update();
+    		X0Y0_Torso_節10_鱗3CP.Update();
+    		X0Y0_Torso_節10_鱗2CP.Update();
+    		X0Y0_Torso_節11_TorsoCP.Update();
+    		X0Y0_Torso_節11_鱗1CP.Update();
+    		X0Y0_Torso_節11_鱗3CP.Update();
+    		X0Y0_Torso_節11_鱗2CP.Update();
+    		X0Y0_Torso_節12_TorsoCP.Update();
+    		X0Y0_Torso_節12_鱗1CP.Update();
+    		X0Y0_Torso_節12_鱗3CP.Update();
+    		X0Y0_Torso_節12_鱗2CP.Update();
+    		X0Y0_Torso_節13_TorsoCP.Update();
+    		X0Y0_Torso_節13_鱗1CP.Update();
+    		X0Y0_Torso_節13_鱗3CP.Update();
+    		X0Y0_Torso_節13_鱗2CP.Update();
+    		X0Y0_Torso_節14_TorsoCP.Update();
+    		X0Y0_Torso_節14_鱗1CP.Update();
+    		X0Y0_Torso_節14_鱗3CP.Update();
+    		X0Y0_Torso_節14_鱗2CP.Update();
+    		X0Y0_Torso_節15_TorsoCP.Update();
+    		X0Y0_Torso_節15_鱗1CP.Update();
+    		X0Y0_Torso_節15_鱗3CP.Update();
+    		X0Y0_Torso_節15_鱗2CP.Update();
+    		X0Y0_Torso_節16_TorsoCP.Update();
+    		X0Y0_Torso_節16_鱗1CP.Update();
+    		X0Y0_Torso_節16_鱗3CP.Update();
+    		X0Y0_Torso_節16_鱗2CP.Update();
+    		X0Y0_Torso_輪_革CP.Update();
+    		X0Y0_Torso_輪_金具1CP.Update();
+    		X0Y0_Torso_輪_金具2CP.Update();
+    		X0Y0_Torso_輪_金具3CP.Update();
+    		X0Y0_Torso_輪_金具左CP.Update();
+    		X0Y0_Torso_輪_金具右CP.Update();
+    		X0Y0_Torso_節17_TorsoCP.Update();
+    		X0Y0_Torso_節17_鱗1CP.Update();
+    		X0Y0_Torso_節17_鱗3CP.Update();
+    		X0Y0_Torso_節17_鱗2CP.Update();
+    		X0Y0_Torso_節18_TorsoCP.Update();
+    		X0Y0_Torso_節18_鱗1CP.Update();
+    		X0Y0_Torso_節18_鱗3CP.Update();
+    		X0Y0_Torso_節18_鱗2CP.Update();
     		X0Y0_頭_口膜_口膜1CP.Update();
     		X0Y0_頭_口膜_口膜2CP.Update();
     		X0Y0_頭_口膜_口膜3CP.Update();

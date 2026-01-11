@@ -1850,7 +1850,7 @@ namespace SlaveMatrix
     		TorsoD2.肌接続(Mix<胴肌D>(母方, 父方, i, 原種モード));
     		TorsoD2.肌接続(new 上着ミドル_ドレスD());
     		TorsoD2.AlignC();
-    		TorsoD2.Torso接続(ChestD2);
+    		TorsoD2.胴接続(ChestD2);
     		WaistD Waist = Mix<WaistD>(母方, 父方, i, 原種モード);
     		Waist.膣基接続(new 膣基_人D());
     		Waist.膣基接続(new 膣内精液_人D());

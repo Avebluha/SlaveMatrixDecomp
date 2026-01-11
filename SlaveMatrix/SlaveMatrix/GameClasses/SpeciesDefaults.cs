@@ -50,7 +50,7 @@ namespace SlaveMatrix
     	public static ChaD GetHarpy()
     	{
     		WaistD WaistD2 = Uni.Waist();
-    		ChestD ChestD2 = WaistD2.Set胴().SetChestR();
+    		ChestD ChestD2 = WaistD2.SetTorso().SetChestR();
     		HeadD 頭D2 = ChestD2.Set首().Set頭R();
     		頭D2.EnumEleD().GetEleD<基髪D>();
     		頭D2.Set双目R();
@@ -122,7 +122,7 @@ namespace SlaveMatrix
     	public static ChaD Getアフール()
     	{
     		WaistD obj = Uni.Waist();
-    		ChestD obj2 = obj.Set胴().SetChestR();
+    		ChestD obj2 = obj.SetTorso().SetChestR();
     		HeadD 頭D2 = obj2.Set首().Set頭R();
     		基髪D eleD = 頭D2.EnumEleD().GetEleD<基髪D>();
     		頭D2.Set双目R();
@@ -167,7 +167,7 @@ namespace SlaveMatrix
     	public static ChaD Getハルピュイア()
     	{
     		WaistD obj = Uni.Waist();
-    		ChestD obj2 = obj.Set胴().SetChestR();
+    		ChestD obj2 = obj.SetTorso().SetChestR();
     		HeadD 頭D2 = obj2.Set首().Set頭R();
     		頭D2.EnumEleD().GetEleD<基髪D>();
     		頭D2.Set双目R();
@@ -224,7 +224,7 @@ namespace SlaveMatrix
     	public static ChaD GetPhoenix()
     	{
     		WaistD obj = Uni.Waist();
-    		ChestD obj2 = obj.Set胴().SetChestR();
+    		ChestD obj2 = obj.SetTorso().SetChestR();
     		HeadD 頭D2 = obj2.Set首().Set頭R();
     		頭D2.EnumEleD().GetEleD<基髪D>();
     		頭D2.Set双目R();
@@ -284,7 +284,7 @@ namespace SlaveMatrix
     	public static ChaD Getラミア()
     	{
     		WaistD WaistD2 = Uni.Waist();
-    		ChestD obj = WaistD2.Set胴().SetChestR();
+    		ChestD obj = WaistD2.SetTorso().SetChestR();
     		HeadD 頭D2 = obj.Set首().Set頭R();
     		頭D2.EnumEleD().GetEleD<基髪D>();
     		頭D2.Set双目R();
@@ -312,13 +312,13 @@ namespace SlaveMatrix
     		WaistD2.半身接続(長物_蛇D2);
     		長物_蛇D2.くぱぁ = 1.0;
     		長物_蛇D2.ガード = false;
-    		Torso_蛇D 胴_蛇D2 = new Torso_蛇D();
-    		長物_蛇D2.胴接続(胴_蛇D2);
+    		Torso_蛇D Torso_蛇D2 = new Torso_蛇D();
+    		長物_蛇D2.胴接続(Torso_蛇D2);
     		for (int i = 0; i < 40; i++)
     		{
-    			胴_蛇D2.Torso接続(胴_蛇D2 = new Torso_蛇D());
+    			Torso_蛇D2.Torso接続(Torso_蛇D2 = new Torso_蛇D());
     		}
-    		胴_蛇D2.Torso接続(new 尾_ヘD());
+    		Torso_蛇D2.Torso接続(new 尾_ヘD());
     		WaistD2.EnumEleD().SetValuesD<口_通常D>("牙", true);
     		WaistD2.EnumEleD().SetValuesD<舌_長D>("股舌表示", true);
     		WaistD2.EnumEleD().SetValuesD("肥大", RNG.XS.NextDouble());
@@ -332,7 +332,7 @@ namespace SlaveMatrix
     	public static ChaD Getシーラミア()
     	{
     		WaistD WaistD2 = Uni.Waist();
-    		ChestD obj = WaistD2.Set胴().SetChestR();
+    		ChestD obj = WaistD2.SetTorso().SetChestR();
     		HeadD 頭D2 = obj.Set首().Set頭R();
     		頭D2.EnumEleD().GetEleD<基髪D>();
     		頭D2.Set双目R();
@@ -375,7 +375,7 @@ namespace SlaveMatrix
     	public static ChaD Getオノケンタウレ()
     	{
     		WaistD obj = Uni.Waist();
-    		ChestD obj2 = obj.Set胴().SetChestR();
+    		ChestD obj2 = obj.SetTorso().SetChestR();
     		HeadD 頭D2 = obj2.Set首().Set頭R();
     		頭D2.EnumEleD().GetEleD<基髪D>();
     		頭D2.Set双目R();
@@ -430,7 +430,7 @@ namespace SlaveMatrix
     	public static ChaD Getヒッポケンタウレ()
     	{
     		WaistD WaistD2 = Uni.Waist();
-    		ChestD ChestD2 = WaistD2.Set胴().SetChestR();
+    		ChestD ChestD2 = WaistD2.SetTorso().SetChestR();
     		HeadD 頭D2 = ChestD2.Set首().Set頭R();
     		頭D2.EnumEleD().GetEleD<基髪D>();
     		頭D2.Set双目R();
@@ -496,7 +496,7 @@ namespace SlaveMatrix
     	public static ChaD Getブケンタウレ()
     	{
     		WaistD WaistD2 = Uni.Waist();
-    		ChestD ChestD2 = WaistD2.Set胴().SetChestR();
+    		ChestD ChestD2 = WaistD2.SetTorso().SetChestR();
     		HeadD 頭D2 = ChestD2.Set首().Set頭R();
     		基髪D eleD = 頭D2.EnumEleD().GetEleD<基髪D>();
     		頭D2.Set双目R();
@@ -566,7 +566,7 @@ namespace SlaveMatrix
     	public static ChaD Getカプラケンタウレ()
     	{
     		WaistD WaistD2 = Uni.Waist();
-    		ChestD ChestD2 = WaistD2.Set胴().SetChestR();
+    		ChestD ChestD2 = WaistD2.SetTorso().SetChestR();
     		HeadD 頭D2 = ChestD2.Set首().Set頭R();
     		基髪D eleD = 頭D2.EnumEleD().GetEleD<基髪D>();
     		頭D2.Set双目R();
@@ -636,7 +636,7 @@ namespace SlaveMatrix
     	public static ChaD Getマーメイド()
     	{
     		WaistD obj = Uni.Waist();
-    		ChestD obj2 = obj.Set胴().SetChestR();
+    		ChestD obj2 = obj.SetTorso().SetChestR();
     		HeadD 頭D2 = obj2.Set首().Set頭R();
     		頭D2.EnumEleD().GetEleD<基髪D>();
     		頭D2.Set双目R();
@@ -668,7 +668,7 @@ namespace SlaveMatrix
     	public static ChaD Getドルフィンマーメイド()
     	{
     		WaistD obj = Uni.Waist();
-    		ChestD obj2 = obj.Set胴().SetChestR();
+    		ChestD obj2 = obj.SetTorso().SetChestR();
     		HeadD 頭D2 = obj2.Set首().Set頭R();
     		頭D2.EnumEleD().GetEleD<基髪D>();
     		頭D2.Set双目R();
@@ -700,7 +700,7 @@ namespace SlaveMatrix
     	public static ChaD Getオールドマーメイド()
     	{
     		WaistD obj = Uni.Waist();
-    		ChestD obj2 = obj.Set胴().SetChestR();
+    		ChestD obj2 = obj.SetTorso().SetChestR();
     		HeadD 頭D2 = obj2.Set首().Set頭R();
     		頭D2.EnumEleD().GetEleD<基髪D>();
     		頭D2.Set双目R();
@@ -736,7 +736,7 @@ namespace SlaveMatrix
     	public static ChaD Getイクテュオケンタウレ(bool b)
     	{
     		WaistD WaistD2 = Uni.Waist();
-    		ChestD obj = WaistD2.Set胴().SetChestR();
+    		ChestD obj = WaistD2.SetTorso().SetChestR();
     		HeadD 頭D2 = obj.Set首().Set頭R();
     		頭D2.EnumEleD().GetEleD<基髪D>();
     		頭D2.Set双目R();
@@ -776,10 +776,10 @@ namespace SlaveMatrix
     			EleD eleD = new 鰭_魚D();
     			長物_蛇D2.左接続(eleD);
     			長物_蛇D2.右接続(eleD.Get逆());
-    			Torso_蛇D 胴_蛇D2 = new Torso_蛇D();
-    			長物_蛇D2.胴接続(胴_蛇D2);
+    			Torso_蛇D Torso_蛇D2 = new Torso_蛇D();
+    			長物_蛇D2.胴接続(Torso_蛇D2);
     			尾_ヘD 尾_ヘD2 = new 尾_ヘD();
-    			胴_蛇D2.Torso接続(尾_ヘD2);
+    			Torso_蛇D2.Torso接続(尾_ヘD2);
     			尾_ヘD2.尾先接続(new 尾鰭_魚D());
     		}
     		WaistD2.EnumEleD().SetValuesD("肥大", RNG.XS.NextDouble());
@@ -792,7 +792,7 @@ namespace SlaveMatrix
     	public static ChaD Getデルピヌスケンタウレ()
     	{
     		WaistD obj = Uni.Waist();
-    		ChestD obj2 = obj.Set胴().SetChestR();
+    		ChestD obj2 = obj.SetTorso().SetChestR();
     		HeadD 頭D2 = obj2.Set首().Set頭R();
     		頭D2.EnumEleD().GetEleD<基髪D>();
     		頭D2.Set双目R();
@@ -828,7 +828,7 @@ namespace SlaveMatrix
     	public static ChaD Getスキュラ()
     	{
     		WaistD WaistD2 = Uni.Waist();
-    		ChestD obj = WaistD2.Set胴().SetChestR();
+    		ChestD obj = WaistD2.SetTorso().SetChestR();
     		HeadD 頭D2 = obj.Set首().Set頭R();
     		頭D2.EnumEleD().GetEleD<基髪D>();
     		頭D2.Set双目R();
@@ -893,7 +893,7 @@ namespace SlaveMatrix
     	public static ChaD Getオールドスキュラ(bool b)
     	{
     		WaistD obj = Uni.Waist();
-    		ChestD obj2 = obj.Set胴().SetChestR();
+    		ChestD obj2 = obj.SetTorso().SetChestR();
     		HeadD 頭D2 = obj2.Set首().Set頭R();
     		頭D2.EnumEleD().GetEleD<基髪D>();
     		頭D2.Set双目R();
@@ -944,7 +944,7 @@ namespace SlaveMatrix
     	public static ChaD Getカリュブディス()
     	{
     		WaistD WaistD2 = Uni.Waist();
-    		ChestD ChestD2 = WaistD2.Set胴().SetChestR();
+    		ChestD ChestD2 = WaistD2.SetTorso().SetChestR();
     		HeadD 頭D2 = ChestD2.Set首().Set頭R();
     		基髪D eleD = 頭D2.EnumEleD().GetEleD<基髪D>();
     		頭D2.Set双目R();
@@ -1002,7 +1002,7 @@ namespace SlaveMatrix
     	public static ChaD Getアラクネ(bool b)
     	{
     		WaistD WaistD2 = Uni.Waist();
-    		ChestD obj = WaistD2.Set胴().SetChestR();
+    		ChestD obj = WaistD2.SetTorso().SetChestR();
     		HeadD 頭D2 = obj.Set首().Set頭R();
     		頭D2.EnumEleD().GetEleD<基髪D>();
     		頭D2.Set双目R();
@@ -1081,7 +1081,7 @@ namespace SlaveMatrix
     	public static ChaD Getギルタブリル()
     	{
     		WaistD WaistD2 = Uni.Waist();
-    		ChestD obj = WaistD2.Set胴().SetChestR();
+    		ChestD obj = WaistD2.SetTorso().SetChestR();
     		HeadD 頭D2 = obj.Set首().Set頭R();
     		頭D2.EnumEleD().GetEleD<基髪D>();
     		頭D2.Set双目R();
@@ -1173,7 +1173,7 @@ namespace SlaveMatrix
     	public static ChaD Getギルタブルル()
     	{
     		WaistD obj = Uni.Waist();
-    		TorsoD 胴D2 = obj.Set胴();
+    		TorsoD 胴D2 = obj.SetTorso();
     		ChestD ChestD2 = 胴D2.SetChestR();
     		HeadD 頭D2 = ChestD2.Set首().Set頭R();
     		基髪D eleD = 頭D2.EnumEleD().GetEleD<基髪D>();
@@ -1240,7 +1240,7 @@ namespace SlaveMatrix
     	public static ChaD Getアルラウネ()
     	{
     		WaistD obj = Uni.Waist();
-    		TorsoD obj2 = obj.Set胴();
+    		TorsoD obj2 = obj.SetTorso();
     		ChestD obj3 = obj2.SetChestR();
     		HeadD 頭D2 = obj3.Set首().Set頭R();
     		基髪D eleD = 頭D2.EnumEleD().GetEleD<基髪D>();
@@ -1349,8 +1349,8 @@ namespace SlaveMatrix
     	public static ChaD Getサキュバス()
     	{
     		WaistD WaistD2 = Uni.Waist();
-    		TorsoD 胴D2 = WaistD2.Set胴();
-    		ChestD ChestD2 = 胴D2.SetChestR();
+    		TorsoD TorsoD2 = WaistD2.SetTorso();
+    		ChestD ChestD2 = TorsoD2.SetChestR();
     		HeadD 頭D2 = ChestD2.Set首().Set頭R();
     		基髪D eleD = 頭D2.EnumEleD().GetEleD<基髪D>();
     		頭D2.Set双目R();
@@ -1400,8 +1400,8 @@ namespace SlaveMatrix
     		LowerArm_蝙D2.手接続(e2);
     		UpperArm_蝙D UpperArm_蝙D2 = new UpperArm_蝙D();
     		UpperArm_蝙D2.LowerArm接続(LowerArm_蝙D2);
-    		胴D2.翼左接続(UpperArm_蝙D2);
-    		胴D2.翼右接続(UpperArm_蝙D2.Get逆());
+    		TorsoD2.翼左接続(UpperArm_蝙D2);
+    		TorsoD2.翼右接続(UpperArm_蝙D2.Get逆());
     		足_人D e3 = new 足_人D();
     		Leg_人D Leg_人D2 = new Leg_人D();
     		Leg_人D2.足接続(e3);
@@ -1426,7 +1426,7 @@ namespace SlaveMatrix
     	public static ChaD Getデビル()
     	{
     		WaistD WaistD2 = Uni.Waist();
-    		ChestD ChestD2 = WaistD2.Set胴().SetChestR();
+    		ChestD ChestD2 = WaistD2.SetTorso().SetChestR();
     		HeadD 頭D2 = ChestD2.Set首().Set頭R();
     		基髪D eleD = 頭D2.EnumEleD().GetEleD<基髪D>();
     		頭D2.Set双目R();
@@ -1528,7 +1528,7 @@ namespace SlaveMatrix
     	public static ChaD Getエンジェル(bool b)
     	{
     		WaistD WaistD2 = Uni.Waist();
-    		ChestD ChestD2 = WaistD2.Set胴().SetChestR();
+    		ChestD ChestD2 = WaistD2.SetTorso().SetChestR();
     		HeadD 頭D2 = ChestD2.Set首().Set頭R();
     		頭D2.EnumEleD().GetEleD<基髪D>();
     		頭D2.Set双目R();
@@ -1590,7 +1590,7 @@ namespace SlaveMatrix
     	public static ChaD Getウェアキャット()
     	{
     		WaistD obj = Uni.Waist();
-    		ChestD obj2 = obj.Set胴().SetChestR();
+    		ChestD obj2 = obj.SetTorso().SetChestR();
     		HeadD 頭D2 = obj2.Set首().Set頭R();
     		基髪D eleD = 頭D2.EnumEleD().GetEleD<基髪D>();
     		頭D2.Set双目R();
@@ -1641,7 +1641,7 @@ namespace SlaveMatrix
     	public static ChaD Getウェアフォックス()
     	{
     		WaistD obj = Uni.Waist();
-    		ChestD obj2 = obj.Set胴().SetChestR();
+    		ChestD obj2 = obj.SetTorso().SetChestR();
     		HeadD 頭D2 = obj2.Set首().Set頭R();
     		基髪D eleD = 頭D2.EnumEleD().GetEleD<基髪D>();
     		頭D2.Set双目R();
@@ -1694,7 +1694,7 @@ namespace SlaveMatrix
     	public static ChaD Getウェアウルフ()
     	{
     		WaistD obj = Uni.Waist();
-    		ChestD obj2 = obj.Set胴().SetChestR();
+    		ChestD obj2 = obj.SetTorso().SetChestR();
     		HeadD 頭D2 = obj2.Set首().Set頭R();
     		基髪D eleD = 頭D2.EnumEleD().GetEleD<基髪D>();
     		頭D2.Set双目R();
@@ -1739,7 +1739,7 @@ namespace SlaveMatrix
     	public static ChaD Getリザードマン()
     	{
     		WaistD WaistD2 = Uni.Waist();
-    		ChestD obj = WaistD2.Set胴().SetChestR();
+    		ChestD obj = WaistD2.SetTorso().SetChestR();
     		HeadD 頭D2 = obj.Set首().Set頭R();
     		頭D2.EnumEleD().GetEleD<基髪D>();
     		頭D2.Set双目R();
@@ -1796,7 +1796,7 @@ namespace SlaveMatrix
     	public static ChaD Getドラゴニュート()
     	{
     		WaistD WaistD2 = Uni.Waist();
-    		ChestD ChestD2 = WaistD2.Set胴().SetChestR();
+    		ChestD ChestD2 = WaistD2.SetTorso().SetChestR();
     		HeadD 頭D2 = ChestD2.Set首().Set頭R();
     		基髪D eleD = 頭D2.EnumEleD().GetEleD<基髪D>();
     		頭D2.Set双目R();
@@ -1909,7 +1909,7 @@ namespace SlaveMatrix
     	public static ChaD Getドラゴン()
     	{
     		WaistD WaistD2 = Uni.Waist();
-    		ChestD ChestD2 = WaistD2.Set胴().SetChestR();
+    		ChestD ChestD2 = WaistD2.SetTorso().SetChestR();
     		HeadD 頭D2 = ChestD2.Set首().Set頭R();
     		基髪D eleD = 頭D2.EnumEleD().GetEleD<基髪D>();
     		頭D2.Set双目R();
@@ -2024,7 +2024,7 @@ namespace SlaveMatrix
     	public static ChaD Getドラコケンタウレ()
     	{
     		WaistD WaistD2 = Uni.Waist();
-    		ChestD ChestD2 = WaistD2.Set胴().SetChestR();
+    		ChestD ChestD2 = WaistD2.SetTorso().SetChestR();
     		HeadD 頭D2 = ChestD2.Set首().Set頭R();
     		基髪D eleD = 頭D2.EnumEleD().GetEleD<基髪D>();
     		頭D2.Set双目R();
@@ -2117,7 +2117,7 @@ namespace SlaveMatrix
     	public static ChaD Getワイバーン()
     	{
     		WaistD WaistD2 = Uni.Waist();
-    		ChestD ChestD2 = WaistD2.Set胴().SetChestR();
+    		ChestD ChestD2 = WaistD2.SetTorso().SetChestR();
     		HeadD 頭D2 = ChestD2.Set首().Set頭R();
     		基髪D eleD = 頭D2.EnumEleD().GetEleD<基髪D>();
     		頭D2.Set双目R();
@@ -2225,7 +2225,7 @@ namespace SlaveMatrix
     	public static ChaD Getワーム()
     	{
     		WaistD WaistD2 = Uni.Waist();
-    		HeadD 頭D2 = WaistD2.Set胴().SetChestR().Set首()
+    		HeadD 頭D2 = WaistD2.SetTorso().SetChestR().Set首()
     			.Set頭R();
     		基髪D eleD = 頭D2.EnumEleD().GetEleD<基髪D>();
     		頭D2.Set双目R();
@@ -2252,13 +2252,13 @@ namespace SlaveMatrix
     		eleD.頭頂右接続(e.Get逆());
     		長物_蛇D 長物_蛇D2 = new 長物_蛇D();
     		WaistD2.半身接続(長物_蛇D2);
-    		Torso_蛇D 胴_蛇D2 = new Torso_蛇D();
-    		長物_蛇D2.胴接続(胴_蛇D2);
+    		Torso_蛇D Torso_蛇D2 = new Torso_蛇D();
+    		長物_蛇D2.胴接続(Torso_蛇D2);
     		for (int i = 0; i < 40; i++)
     		{
-    			胴_蛇D2.Torso接続(胴_蛇D2 = new Torso_蛇D());
+    			Torso_蛇D2.Torso接続(Torso_蛇D2 = new Torso_蛇D());
     		}
-    		胴_蛇D2.Torso接続(new 尾_ヘD());
+    		Torso_蛇D2.Torso接続(new 尾_ヘD());
     		WaistD2.EnumEleD().SetValuesD("竜性", true);
     		WaistD2.EnumEleD().SetValuesD<腰肌D>("竜性", false);
     		WaistD2.EnumEleD().SetValuesD<双目D>("猫目", RNG.XS.NextBool());
@@ -2274,7 +2274,7 @@ namespace SlaveMatrix
     	public static ChaD Getサンドワーム()
     	{
     		WaistD WaistD2 = Uni.Waist();
-    		ChestD ChestD2 = WaistD2.Set胴().SetChestR();
+    		ChestD ChestD2 = WaistD2.SetTorso().SetChestR();
     		HeadD 頭D2 = ChestD2.Set首().Set頭R();
     		基髪D eleD = 頭D2.EnumEleD().GetEleD<基髪D>();
     		頭D2.Set双目R();
@@ -2349,7 +2349,7 @@ namespace SlaveMatrix
     	public static ChaD Getリュウ()
     	{
     		WaistD WaistD2 = Uni.Waist();
-    		ChestD ChestD2 = WaistD2.Set胴().SetChestR();
+    		ChestD ChestD2 = WaistD2.SetTorso().SetChestR();
     		HeadD 頭D2 = ChestD2.Set首().Set頭R();
     		基髪D eleD = 頭D2.EnumEleD().GetEleD<基髪D>();
     		頭D2.Set双目R();
@@ -2379,22 +2379,22 @@ namespace SlaveMatrix
     		四足脇D2.UpperArm接続(Leg_竜D2);
     		WaistD2.翼左接続(四足脇D2);
     		WaistD2.翼右接続(四足脇D2.Get逆());
-    		Torso_蛇D 胴_蛇D2 = new Torso_蛇D();
-    		長物_蛇D2.胴接続(胴_蛇D2);
+    		Torso_蛇D Torso_蛇D2 = new Torso_蛇D();
+    		長物_蛇D2.胴接続(Torso_蛇D2);
     		for (int i = 0; i < 50; i++)
     		{
-    			胴_蛇D2.Torso接続(胴_蛇D2 = new Torso_蛇D());
+    			Torso_蛇D2.Torso接続(Torso_蛇D2 = new Torso_蛇D());
     		}
     		e = new 足_鳥D();
     		Leg_竜D2 = new Leg_竜D();
     		Leg_竜D2.足接続(e);
     		腿_竜D 腿_竜D2 = new 腿_竜D();
     		腿_竜D2.Leg接続(Leg_竜D2);
-    		胴_蛇D2.左接続(腿_竜D2);
-    		胴_蛇D2.右接続(腿_竜D2.Get逆());
+    		Torso_蛇D2.左接続(腿_竜D2);
+    		Torso_蛇D2.右接続(腿_竜D2.Get逆());
     		尾_ヘD 尾_ヘD2 = new 尾_ヘD();
     		尾_ヘD2.尾先接続(new 尾鰭_魚D());
-    		胴_蛇D2.Torso接続(尾_ヘD2);
+    		Torso_蛇D2.Torso接続(尾_ヘD2);
     		WaistD2.EnumEleD().SetValuesD<HeadD>("馬", true);
     		ChestD2.肌_接続.SetValuesD<胸毛D>("表示", true);
     		WaistD2.EnumEleD().SetValuesD("竜性", true);
@@ -2411,7 +2411,7 @@ namespace SlaveMatrix
     	public static ChaD Getスライム()
     	{
     		WaistD obj = Uni.Waist();
-    		ChestD obj2 = obj.Set胴().SetChestR();
+    		ChestD obj2 = obj.SetTorso().SetChestR();
     		HeadD 頭D2 = obj2.Set首().Set頭R();
     		頭D2.EnumEleD().GetEleD<基髪D>();
     		頭D2.Set双目R();
@@ -2454,7 +2454,7 @@ namespace SlaveMatrix
     	public static ChaD Getフェアリー(bool b1, bool b2)
     	{
     		WaistD WaistD2 = Uni.Waist();
-    		ChestD ChestD2 = WaistD2.Set胴().SetChestR();
+    		ChestD ChestD2 = WaistD2.SetTorso().SetChestR();
     		HeadD 頭D2 = ChestD2.Set首().Set頭R();
     		基髪D eleD = 頭D2.EnumEleD().GetEleD<基髪D>();
     		頭D2.Set双目R();
@@ -2580,7 +2580,7 @@ namespace SlaveMatrix
     	public static ChaD Getオーグリス(bool b)
     	{
     		WaistD WaistD2 = Uni.Waist();
-    		ChestD obj = WaistD2.Set胴().SetChestR();
+    		ChestD obj = WaistD2.SetTorso().SetChestR();
     		NeckD 首D2 = obj.Set首();
     		HeadD 頭D2;
     		if (b)
@@ -2651,7 +2651,7 @@ namespace SlaveMatrix
     	public static ChaD Getサイクロプス()
     	{
     		WaistD obj = Uni.Waist();
-    		ChestD obj2 = obj.Set胴().SetChestR();
+    		ChestD obj2 = obj.SetTorso().SetChestR();
     		HeadD 頭D2 = obj2.Set首().Set頭R1();
     		頭D2.EnumEleD().GetEleD<基髪D>();
     		頭D2.Set単目R();
@@ -2693,7 +2693,7 @@ namespace SlaveMatrix
     	public static ChaD Getエイリアン()
     	{
     		WaistD WaistD2 = Uni.Waist();
-    		ChestD obj = WaistD2.Set胴().SetChestR();
+    		ChestD obj = WaistD2.SetTorso().SetChestR();
     		HeadD 頭D2 = obj.Set首().Set頭R();
     		頭D2.EnumEleD().GetEleD<基髪D>();
     		頭D2.Set目宇R();
@@ -2752,7 +2752,7 @@ namespace SlaveMatrix
     	public static ChaD Getクラーケン()
     	{
     		WaistD WaistD2 = Uni.Waist();
-    		ChestD obj = WaistD2.Set胴().SetChestR();
+    		ChestD obj = WaistD2.SetTorso().SetChestR();
     		HeadD 頭D2 = obj.Set首().Set頭R();
     		頭D2.EnumEleD().GetEleD<基髪D>();
     		頭D2.Set双目R();
@@ -2807,7 +2807,7 @@ namespace SlaveMatrix
     	public static ChaD Getセイレーン(int i)
     	{
     		WaistD WaistD2 = Uni.Waist();
-    		ChestD ChestD2 = WaistD2.Set胴().SetChestR();
+    		ChestD ChestD2 = WaistD2.SetTorso().SetChestR();
     		HeadD 頭D2 = ChestD2.Set首().Set頭R();
     		頭D2.EnumEleD().GetEleD<基髪D>();
     		頭D2.Set双目R();
@@ -2941,7 +2941,7 @@ namespace SlaveMatrix
     	public static ChaD Getユニコーン()
     	{
     		WaistD obj = Uni.Waist();
-    		ChestD obj2 = obj.Set胴().SetChestR();
+    		ChestD obj2 = obj.SetTorso().SetChestR();
     		HeadD 頭D2 = obj2.Set首().Set頭R1();
     		頭D2.EnumEleD().GetEleD<基髪D>();
     		頭D2.Set双目R();
@@ -2998,7 +2998,7 @@ namespace SlaveMatrix
     	public static ChaD Getモノケロス()
     	{
     		WaistD obj = Uni.Waist();
-    		ChestD obj2 = obj.Set胴().SetChestR();
+    		ChestD obj2 = obj.SetTorso().SetChestR();
     		HeadD 頭D2 = obj2.Set首().Set頭R1();
     		頭D2.EnumEleD().GetEleD<基髪D>();
     		頭D2.Set双目R();
@@ -3065,7 +3065,7 @@ namespace SlaveMatrix
     	public static ChaD Getアリコーン()
     	{
     		WaistD obj = Uni.Waist();
-    		ChestD obj2 = obj.Set胴().SetChestR();
+    		ChestD obj2 = obj.SetTorso().SetChestR();
     		HeadD 頭D2 = obj2.Set首().Set頭R1();
     		頭D2.EnumEleD().GetEleD<基髪D>();
     		頭D2.Set双目R();
@@ -3138,7 +3138,7 @@ namespace SlaveMatrix
     	public static ChaD Getバイコーン()
     	{
     		WaistD obj = Uni.Waist();
-    		ChestD ChestD2 = obj.Set胴().SetChestR();
+    		ChestD ChestD2 = obj.SetTorso().SetChestR();
     		HeadD 頭D2 = ChestD2.Set首().Set頭R();
     		基髪D eleD = 頭D2.EnumEleD().GetEleD<基髪D>();
     		頭D2.Set双目R();
@@ -3201,7 +3201,7 @@ namespace SlaveMatrix
     	public static ChaD Getペガサス()
     	{
     		WaistD obj = Uni.Waist();
-    		ChestD obj2 = obj.Set胴().SetChestR();
+    		ChestD obj2 = obj.SetTorso().SetChestR();
     		HeadD 頭D2 = obj2.Set首().Set頭R();
     		頭D2.EnumEleD().GetEleD<基髪D>();
     		頭D2.Set双目R();
@@ -3273,7 +3273,7 @@ namespace SlaveMatrix
     	public static ChaD Getグリフォン()
     	{
     		WaistD obj = Uni.Waist();
-    		ChestD obj2 = obj.Set胴().SetChestR();
+    		ChestD obj2 = obj.SetTorso().SetChestR();
     		HeadD 頭D2 = obj2.Set首().Set頭R();
     		頭D2.EnumEleD().GetEleD<基髪D>();
     		頭D2.Set双目R();
@@ -3346,7 +3346,7 @@ namespace SlaveMatrix
     	public static ChaD Getヒッポグリフ()
     	{
     		WaistD obj = Uni.Waist();
-    		ChestD obj2 = obj.Set胴().SetChestR();
+    		ChestD obj2 = obj.SetTorso().SetChestR();
     		HeadD 頭D2 = obj2.Set首().Set頭R();
     		頭D2.EnumEleD().GetEleD<基髪D>();
     		頭D2.Set双目R();
@@ -3424,7 +3424,7 @@ namespace SlaveMatrix
     	public static ChaD Getキマイラ()
     	{
     		WaistD WaistD2 = Uni.Waist();
-    		ChestD ChestD2 = WaistD2.Set胴().SetChestR();
+    		ChestD ChestD2 = WaistD2.SetTorso().SetChestR();
     		HeadD 頭D2 = ChestD2.Set首().Set頭R();
     		基髪D eleD = 頭D2.EnumEleD().GetEleD<基髪D>();
     		頭D2.Set双目R();
@@ -3495,7 +3495,7 @@ namespace SlaveMatrix
     	public static ChaD Getスフィンクス(bool b)
     	{
     		WaistD WaistD2 = Uni.Waist();
-    		TorsoD e = WaistD2.Set胴();
+    		TorsoD e = WaistD2.SetTorso();
     		ChestD ChestD2 = e.SetChestR();
     		HeadD 頭D2 = ChestD2.Set首().Set頭R();
     		頭D2.EnumEleD().GetEleD<基髪D>();
@@ -3606,7 +3606,7 @@ namespace SlaveMatrix
     	public static ChaD Getレオントケンタウレ()
     	{
     		WaistD obj = Uni.Waist();
-    		ChestD ChestD2 = obj.Set胴().SetChestR();
+    		ChestD ChestD2 = obj.SetTorso().SetChestR();
     		HeadD 頭D2 = ChestD2.Set首().Set頭R();
     		基髪D eleD = 頭D2.EnumEleD().GetEleD<基髪D>();
     		頭D2.Set双目R();
@@ -3671,7 +3671,7 @@ namespace SlaveMatrix
     	public static ChaD Getティグリスケンタウレ()
     	{
     		WaistD WaistD2 = Uni.Waist();
-    		ChestD obj = WaistD2.Set胴().SetChestR();
+    		ChestD obj = WaistD2.SetTorso().SetChestR();
     		HeadD 頭D2 = obj.Set首().Set頭R();
     		基髪D eleD = 頭D2.EnumEleD().GetEleD<基髪D>();
     		頭D2.Set双目R();
@@ -3747,7 +3747,7 @@ namespace SlaveMatrix
     	public static ChaD Getパンテーラケンタウレ()
     	{
     		WaistD obj = Uni.Waist();
-    		ChestD obj2 = obj.Set胴().SetChestR();
+    		ChestD obj2 = obj.SetTorso().SetChestR();
     		HeadD 頭D2 = obj2.Set首().Set頭R();
     		基髪D eleD = 頭D2.EnumEleD().GetEleD<基髪D>();
     		頭D2.Set双目R();
@@ -3811,7 +3811,7 @@ namespace SlaveMatrix
     	public static ChaD Getチータケンタウレ()
     	{
     		WaistD obj = Uni.Waist();
-    		ChestD obj2 = obj.Set胴().SetChestR();
+    		ChestD obj2 = obj.SetTorso().SetChestR();
     		HeadD 頭D2 = obj2.Set首().Set頭R();
     		基髪D eleD = 頭D2.EnumEleD().GetEleD<基髪D>();
     		頭D2.Set双目R();
@@ -3888,7 +3888,7 @@ namespace SlaveMatrix
     	public static ChaD Getウェアドラゴンフライ()
     	{
     		WaistD obj = Uni.Waist();
-    		ChestD obj2 = obj.Set胴().SetChestR();
+    		ChestD obj2 = obj.SetTorso().SetChestR();
     		HeadD 頭D2 = obj2.Set首().Set頭R();
     		頭D2.EnumEleD().GetEleD<基髪D>();
     		頭D2.Set双目R();
@@ -3951,7 +3951,7 @@ namespace SlaveMatrix
     	public static ChaD Getウェアビートル()
     	{
     		WaistD obj = Uni.Waist();
-    		ChestD obj2 = obj.Set胴().SetChestR();
+    		ChestD obj2 = obj.SetTorso().SetChestR();
     		HeadD 頭D2 = obj2.Set首().Set頭R();
     		頭D2.EnumEleD().GetEleD<基髪D>();
     		頭D2.Set双目R();
@@ -4013,7 +4013,7 @@ namespace SlaveMatrix
     	public static ChaD Getウェアスタッグビートル()
     	{
     		WaistD obj = Uni.Waist();
-    		ChestD obj2 = obj.Set胴().SetChestR();
+    		ChestD obj2 = obj.SetTorso().SetChestR();
     		HeadD 頭D2 = obj2.Set首().Set頭R();
     		頭D2.EnumEleD().GetEleD<基髪D>();
     		頭D2.Set双目R();
@@ -4078,7 +4078,7 @@ namespace SlaveMatrix
     	public static ChaD Getウェアマンティス()
     	{
     		WaistD obj = Uni.Waist();
-    		TorsoD obj2 = obj.Set胴();
+    		TorsoD obj2 = obj.SetTorso();
     		ChestD obj3 = obj2.SetChestR();
     		HeadD 頭D2 = obj3.Set首().Set頭R();
     		頭D2.EnumEleD().GetEleD<基髪D>();
@@ -4140,7 +4140,7 @@ namespace SlaveMatrix
     	public static ChaD Getエキドナ()
     	{
     		WaistD WaistD2 = Uni.Waist();
-    		ChestD obj = WaistD2.Set胴().SetChestR();
+    		ChestD obj = WaistD2.SetTorso().SetChestR();
     		HeadD 頭D2 = obj.Set首().Set頭R();
     		頭D2.EnumEleD().GetEleD<基髪D>();
     		頭D2.Set双目R();
@@ -4182,13 +4182,13 @@ namespace SlaveMatrix
     		obj.翼上右接続(UpperArm_鳥D2.Get逆());
     		長物_蛇D 長物_蛇D2 = new 長物_蛇D();
     		WaistD2.半身接続(長物_蛇D2);
-    		Torso_蛇D 胴_蛇D2 = new Torso_蛇D();
-    		長物_蛇D2.胴接続(胴_蛇D2);
+    		Torso_蛇D Torso_蛇D2 = new Torso_蛇D();
+    		長物_蛇D2.胴接続(Torso_蛇D2);
     		for (int i = 0; i < 45; i++)
     		{
-    			胴_蛇D2.Torso接続(胴_蛇D2 = new Torso_蛇D());
+    			Torso_蛇D2.Torso接続(Torso_蛇D2 = new Torso_蛇D());
     		}
-    		胴_蛇D2.Torso接続(RNG.XS.NextBool() ? ((尾D)new 尾_ヘD()) : ((尾D)new 尾_ガD()));
+    		Torso_蛇D2.Torso接続(RNG.XS.NextBool() ? ((尾D)new 尾_ヘD()) : ((尾D)new 尾_ガD()));
     		WaistD2.EnumEleD().SetValuesD<口_通常D>("牙", true);
     		WaistD2.EnumEleD().SetValuesD<舌_長D>("股舌表示", true);
     		WaistD2.EnumEleD().SetValuesD("肥大", RNG.XS.NextDouble());
@@ -4202,7 +4202,7 @@ namespace SlaveMatrix
     	public static ChaD Getゴルゴン()
     	{
     		WaistD WaistD2 = Uni.Waist();
-    		ChestD ChestD2 = WaistD2.Set胴().SetChestR();
+    		ChestD ChestD2 = WaistD2.SetTorso().SetChestR();
     		HeadD 頭D2 = ChestD2.Set首().Set頭R();
     		基髪D eleD = 頭D2.EnumEleD().GetEleD<基髪D>();
     		BackHair0_肢系D 後髪0_肢系D2 = new BackHair0_肢系D();
@@ -4292,7 +4292,7 @@ namespace SlaveMatrix
     	public static ChaD Getヒュドラ()
     	{
     		WaistD WaistD2 = Uni.Waist();
-    		HeadD 頭D2 = WaistD2.Set胴().SetChestR().Set首()
+    		HeadD 頭D2 = WaistD2.SetTorso().SetChestR().Set首()
     			.Set頭R();
     		基髪D eleD = 頭D2.EnumEleD().GetEleD<基髪D>();
     		BackHair0_肢系D 後髪0_肢系D2 = new BackHair0_肢系D();
@@ -4322,13 +4322,13 @@ namespace SlaveMatrix
     		頭D2.頭頂接続(頭頂_宇D2);
     		長物_蛇D 長物_蛇D2 = new 長物_蛇D();
     		WaistD2.半身接続(長物_蛇D2);
-    		Torso_蛇D 胴_蛇D2 = new Torso_蛇D();
-    		長物_蛇D2.胴接続(胴_蛇D2);
+    		Torso_蛇D Torso_蛇D2 = new Torso_蛇D();
+    		長物_蛇D2.胴接続(Torso_蛇D2);
     		for (int i = 0; i < 45; i++)
     		{
-    			胴_蛇D2.Torso接続(胴_蛇D2 = new Torso_蛇D());
+    			Torso_蛇D2.Torso接続(Torso_蛇D2 = new Torso_蛇D());
     		}
-    		胴_蛇D2.Torso接続(new 尾_ヘD());
+    		Torso_蛇D2.Torso接続(new 尾_ヘD());
     		WaistD2.EnumEleD().SetValuesD("竜性", true);
     		WaistD2.EnumEleD().SetValuesD<腰肌D>("竜性", false);
     		WaistD2.EnumEleD().SetValuesD<舌_長D>("股舌表示", true);
@@ -4343,7 +4343,7 @@ namespace SlaveMatrix
     	public static ChaD Getウロボロス()
     	{
     		WaistD WaistD2 = Uni.Waist();
-    		HeadD 頭D2 = WaistD2.Set胴().SetChestR().Set首()
+    		HeadD 頭D2 = WaistD2.SetTorso().SetChestR().Set首()
     			.Set頭R();
     		基髪D eleD = 頭D2.EnumEleD().GetEleD<基髪D>();
     		頭D2.Set双目R();
@@ -4359,13 +4359,13 @@ namespace SlaveMatrix
     		頭D2.顔面接続(e);
     		長物_蛇D 長物_蛇D2 = new 長物_蛇D();
     		WaistD2.半身接続(長物_蛇D2);
-    		Torso_蛇D 胴_蛇D2 = new Torso_蛇D();
-    		長物_蛇D2.胴接続(胴_蛇D2);
+    		Torso_蛇D Torso_蛇D2 = new Torso_蛇D();
+    		長物_蛇D2.胴接続(Torso_蛇D2);
     		for (int i = 0; i < 40; i++)
     		{
-    			胴_蛇D2.Torso接続(胴_蛇D2 = new Torso_蛇D());
+    			Torso_蛇D2.Torso接続(Torso_蛇D2 = new Torso_蛇D());
     		}
-    		胴_蛇D2.Torso接続(new 尾_ヘD());
+    		Torso_蛇D2.Torso接続(new 尾_ヘD());
     		WaistD2.EnumEleD().SetValuesD("竜性", true);
     		WaistD2.EnumEleD().SetValuesD<腰肌D>("竜性", false);
     		WaistD2.EnumEleD().SetValuesD("コア1", true);
@@ -4381,7 +4381,7 @@ namespace SlaveMatrix
     	public static ChaD Getカッパ()
     	{
     		WaistD WaistD2 = Uni.Waist();
-    		ChestD obj = WaistD2.Set胴().SetChestR();
+    		ChestD obj = WaistD2.SetTorso().SetChestR();
     		HeadD 頭D2 = obj.Set首().Set頭R();
     		頭D2.EnumEleD().GetEleD<基髪D>();
     		頭D2.Set双目R();
@@ -4430,7 +4430,7 @@ namespace SlaveMatrix
     	public static ChaD Getムカデジョウロウ()
     	{
     		WaistD WaistD2 = Uni.Waist();
-    		ChestD ChestD2 = WaistD2.Set胴().SetChestR();
+    		ChestD ChestD2 = WaistD2.SetTorso().SetChestR();
     		HeadD 頭D2 = ChestD2.Set首().Set頭R();
     		頭D2.EnumEleD().GetEleD<基髪D>();
     		頭D2.Set双目R();
@@ -4480,15 +4480,15 @@ namespace SlaveMatrix
     		長物_蟲D2.右0接続(eleD.Get逆());
     		長物_蟲D2.左1接続(eleD.Copy());
     		長物_蟲D2.右1接続(eleD.Get逆());
-    		Torso_蟲D 胴_蟲D2 = new Torso_蟲D();
-    		長物_蟲D2.胴接続(胴_蟲D2);
-    		胴_蟲D2.左接続(eleD.Copy());
-    		胴_蟲D2.右接続(eleD.Get逆());
+    		Torso_蟲D Torso_蟲D2 = new Torso_蟲D();
+    		長物_蟲D2.胴接続(Torso_蟲D2);
+    		Torso_蟲D2.左接続(eleD.Copy());
+    		Torso_蟲D2.右接続(eleD.Get逆());
     		for (int i = 0; i < 21; i++)
     		{
-    			胴_蟲D2.Torso接続(胴_蟲D2 = new Torso_蟲D());
-    			胴_蟲D2.左接続(eleD.Copy());
-    			胴_蟲D2.右接続(eleD.Get逆());
+    			Torso_蟲D2.Torso接続(Torso_蟲D2 = new Torso_蟲D());
+    			Torso_蟲D2.左接続(eleD.Copy());
+    			Torso_蟲D2.右接続(eleD.Get逆());
     		}
     		尾_蟲D 尾_蟲D2 = new 尾_蟲D();
     		節尾_曳航D 節尾_曳航D2 = new 節尾_曳航D();
@@ -4504,7 +4504,7 @@ namespace SlaveMatrix
     		尾_蟲D2.右5接続(eleD.Get逆());
     		尾_蟲D2.尾左接続(節尾_曳航D2);
     		尾_蟲D2.尾右接続(節尾_曳航D2.Get逆());
-    		胴_蟲D2.Torso接続(尾_蟲D2);
+    		Torso_蟲D2.Torso接続(尾_蟲D2);
     		WaistD2.EnumEleD().SetValuesD<口_通常D>("牙", true);
     		WaistD2.EnumEleD().SetValuesD("肥大", RNG.XS.NextDouble());
     		WaistD2.EnumEleD().SetValuesD("身長", 頭D2.目高);
@@ -4517,7 +4517,7 @@ namespace SlaveMatrix
     	public static ChaD Getカーバンクル()
     	{
     		WaistD WaistD2 = Uni.Waist();
-    		ChestD obj = WaistD2.Set胴().SetChestR();
+    		ChestD obj = WaistD2.SetTorso().SetChestR();
     		HeadD 頭D2 = obj.Set首().Set頭R1();
     		基髪D eleD = 頭D2.EnumEleD().GetEleD<基髪D>();
     		頭D2.Set双目R();
@@ -4569,7 +4569,7 @@ namespace SlaveMatrix
     	public static ChaD Getバジリスク()
     	{
     		WaistD WaistD2 = Uni.Waist();
-    		TorsoD obj = WaistD2.Set胴();
+    		TorsoD obj = WaistD2.SetTorso();
     		HeadD 頭D2 = obj.SetChestR().Set首().Set頭R();
     		頭D2.EnumEleD().GetEleD<基髪D>();
     		頭D2.Set双目R();
@@ -4618,13 +4618,13 @@ namespace SlaveMatrix
     		四足脇D2.UpperArm接続(Leg_竜D2);
     		WaistD2.翼左接続(四足脇D2);
     		WaistD2.翼右接続(四足脇D2.Get逆());
-    		Torso_蛇D 胴_蛇D2 = new Torso_蛇D();
-    		長物_蛇D2.胴接続(胴_蛇D2);
+    		Torso_蛇D Torso_蛇D2 = new Torso_蛇D();
+    		長物_蛇D2.胴接続(Torso_蛇D2);
     		for (int i = 0; i < 30; i++)
     		{
-    			胴_蛇D2.Torso接続(胴_蛇D2 = new Torso_蛇D());
+    			Torso_蛇D2.Torso接続(Torso_蛇D2 = new Torso_蛇D());
     		}
-    		胴_蛇D2.Torso接続(new 尾_ヘD());
+    		Torso_蛇D2.Torso接続(new 尾_ヘD());
     		WaistD2.EnumEleD().SetValuesD("竜性", true);
     		WaistD2.EnumEleD().SetValuesD<腰肌D>("竜性", false);
     		WaistD2.EnumEleD().SetValuesD<口_通常D>("牙", true);
@@ -4639,7 +4639,7 @@ namespace SlaveMatrix
     	public static ChaD Getコカトリス()
     	{
     		WaistD WaistD2 = Uni.Waist();
-    		TorsoD obj = WaistD2.Set胴();
+    		TorsoD obj = WaistD2.SetTorso();
     		ChestD ChestD2 = obj.SetChestR();
     		HeadD 頭D2 = ChestD2.Set首().Set頭R();
     		頭D2.EnumEleD().GetEleD<基髪D>();
@@ -4677,13 +4677,13 @@ namespace SlaveMatrix
     		四足脇D2.UpperArm接続(Leg_竜D2);
     		WaistD2.翼左接続(四足脇D2);
     		WaistD2.翼右接続(四足脇D2.Get逆());
-    		Torso_蛇D 胴_蛇D2 = new Torso_蛇D();
-    		長物_蛇D2.胴接続(胴_蛇D2);
+    		Torso_蛇D Torso_蛇D2 = new Torso_蛇D();
+    		長物_蛇D2.胴接続(Torso_蛇D2);
     		for (int i = 0; i < 30; i++)
     		{
-    			胴_蛇D2.Torso接続(胴_蛇D2 = new Torso_蛇D());
+    			Torso_蛇D2.Torso接続(Torso_蛇D2 = new Torso_蛇D());
     		}
-    		胴_蛇D2.Torso接続(new 尾_ヘD());
+    		Torso_蛇D2.Torso接続(new 尾_ヘD());
     		WaistD2.EnumEleD().SetValuesD("獣性", true);
     		WaistD2.EnumEleD().SetValuesD("竜性", true);
     		WaistD2.EnumEleD().SetValuesD<腰肌D>("竜性", false);
@@ -4700,7 +4700,7 @@ namespace SlaveMatrix
     	public static ChaD Getカトブレパス()
     	{
     		WaistD obj = Uni.Waist();
-    		ChestD obj2 = obj.Set胴().SetChestR();
+    		ChestD obj2 = obj.SetTorso().SetChestR();
     		HeadD 頭D2 = obj2.Set首().Set頭R();
     		基髪D eleD = 頭D2.EnumEleD().GetEleD<基髪D>();
     		eleD.前髪_接続.RemoveAt(0);
@@ -4763,7 +4763,7 @@ namespace SlaveMatrix
     	public static ChaD Getミノタウロス()
     	{
     		WaistD WaistD2 = Uni.Waist();
-    		ChestD ChestD2 = WaistD2.Set胴().SetChestR();
+    		ChestD ChestD2 = WaistD2.SetTorso().SetChestR();
     		HeadD 頭D2 = ChestD2.Set首().Set頭R();
     		基髪D eleD = 頭D2.EnumEleD().GetEleD<基髪D>();
     		頭D2.Set双目R();
@@ -4816,7 +4816,7 @@ namespace SlaveMatrix
     	public static ChaD Getリリン()
     	{
     		WaistD obj = Uni.Waist();
-    		ChestD obj2 = obj.Set胴().SetChestR();
+    		ChestD obj2 = obj.SetTorso().SetChestR();
     		HeadD 頭D2 = obj2.Set首().Set頭R();
     		頭D2.EnumEleD().GetEleD<基髪D>();
     		頭D2.Set双目R();
@@ -4851,7 +4851,7 @@ namespace SlaveMatrix
     	public static ChaD Getエルフ()
     	{
     		WaistD obj = Uni.Waist();
-    		ChestD obj2 = obj.Set胴().SetChestR();
+    		ChestD obj2 = obj.SetTorso().SetChestR();
     		HeadD 頭D2 = obj2.Set首().Set頭R();
     		頭D2.EnumEleD().GetEleD<基髪D>();
     		頭D2.Set双目R();
@@ -4886,7 +4886,7 @@ namespace SlaveMatrix
     	public static ChaD Getドワーフ()
     	{
     		WaistD obj = Uni.Waist();
-    		ChestD obj2 = obj.Set胴().SetChestR();
+    		ChestD obj2 = obj.SetTorso().SetChestR();
     		HeadD 頭D2 = obj2.Set首().Set頭R();
     		頭D2.EnumEleD().GetEleD<基髪D>();
     		頭D2.Set双目R();
@@ -4921,7 +4921,7 @@ namespace SlaveMatrix
     	public static ChaD GetViola()
     	{
     		WaistD waist_description = Uni.Waist();
-    		TorsoD body_description = waist_description.Set胴();
+    		TorsoD body_description = waist_description.SetTorso();
     		ChestD chest_description = body_description.SetChestR();
     		NeckD neck_description = chest_description.Set首();
     		HeadD head_description = Uni.頭();
@@ -5109,7 +5109,7 @@ namespace SlaveMatrix
     	public static ChaD Getヒューマン()
     	{
     		WaistD obj = Uni.Waist();
-    		ChestD obj2 = obj.Set胴().SetChestR();
+    		ChestD obj2 = obj.SetTorso().SetChestR();
     		HeadD 頭D2 = obj2.Set首().Set頭R();
     		頭D2.EnumEleD().GetEleD<基髪D>();
     		頭D2.Set双目R();
@@ -5144,7 +5144,7 @@ namespace SlaveMatrix
     	public static ChaD Getプレーヤー()
     	{
     		WaistD obj = Uni.Waist();
-    		ChestD obj2 = obj.Set胴().SetChestR();
+    		ChestD obj2 = obj.SetTorso().SetChestR();
     		HeadD 頭D2 = obj2.Set首().Set頭R();
     		頭D2.EnumEleD().GetEleD<基髪D>();
     		頭D2.Set目弱R();

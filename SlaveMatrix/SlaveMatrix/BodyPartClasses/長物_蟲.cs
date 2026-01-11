@@ -5,25 +5,25 @@ namespace SlaveMatrix
 {
     public class 長物_蟲 : 半身
     {
-    	public Par X0Y0_胴1_背板;
+    	public Par X0Y0_Torso1_背板;
 
-    	public Par X0Y0_胴1_胸板;
+    	public Par X0Y0_Torso1_胸板;
 
-    	public Par X0Y0_胴1_胴;
+    	public Par X0Y0_Torso1_Torso;
 
-    	public Par X0Y0_胴1_瘤左2;
+    	public Par X0Y0_Torso1_瘤左2;
 
-    	public Par X0Y0_胴1_瘤左1;
+    	public Par X0Y0_Torso1_瘤左1;
 
-    	public Par X0Y0_胴1_瘤右2;
+    	public Par X0Y0_Torso1_瘤右2;
 
-    	public Par X0Y0_胴1_瘤右1;
+    	public Par X0Y0_Torso1_瘤右1;
 
-    	public Par X0Y0_胴1_胴0_背板;
+    	public Par X0Y0_Torso1_Torso0_背板;
 
-    	public Par X0Y0_胴1_胴0_胸板;
+    	public Par X0Y0_Torso1_Torso0_胸板;
 
-    	public Par X0Y0_胴1_胴0_胴;
+    	public Par X0Y0_Torso1_Torso0_Torso;
 
     	public Par X0Y0_輪1_革;
 
@@ -37,25 +37,25 @@ namespace SlaveMatrix
 
     	public Par X0Y0_輪1_金具右;
 
-    	public ColorD 胴1_背板CD;
+    	public ColorD Torso1_背板CD;
 
-    	public ColorD 胴1_胸板CD;
+    	public ColorD Torso1_胸板CD;
 
-    	public ColorD 胴1_胴CD;
+    	public ColorD Torso1_TorsoCD;
 
-    	public ColorD 胴1_瘤左2CD;
+    	public ColorD Torso1_瘤左2CD;
 
-    	public ColorD 胴1_瘤左1CD;
+    	public ColorD Torso1_瘤左1CD;
 
-    	public ColorD 胴1_瘤右2CD;
+    	public ColorD Torso1_瘤右2CD;
 
-    	public ColorD 胴1_瘤右1CD;
+    	public ColorD Torso1_瘤右1CD;
 
-    	public ColorD 胴1_胴0_背板CD;
+    	public ColorD Torso1_Torso0_背板CD;
 
-    	public ColorD 胴1_胴0_胸板CD;
+    	public ColorD Torso1_Torso0_胸板CD;
 
-    	public ColorD 胴1_胴0_胴CD;
+    	public ColorD Torso1_Torso0_TorsoCD;
 
     	public ColorD 輪1_革CD;
 
@@ -69,25 +69,25 @@ namespace SlaveMatrix
 
     	public ColorD 輪1_金具右CD;
 
-    	public ColorP X0Y0_胴1_背板CP;
+    	public ColorP X0Y0_Torso1_背板CP;
 
-    	public ColorP X0Y0_胴1_胸板CP;
+    	public ColorP X0Y0_Torso1_胸板CP;
 
-    	public ColorP X0Y0_胴1_胴CP;
+    	public ColorP X0Y0_Torso1_TorsoCP;
 
-    	public ColorP X0Y0_胴1_瘤左2CP;
+    	public ColorP X0Y0_Torso1_瘤左2CP;
 
-    	public ColorP X0Y0_胴1_瘤左1CP;
+    	public ColorP X0Y0_Torso1_瘤左1CP;
 
-    	public ColorP X0Y0_胴1_瘤右2CP;
+    	public ColorP X0Y0_Torso1_瘤右2CP;
 
-    	public ColorP X0Y0_胴1_瘤右1CP;
+    	public ColorP X0Y0_Torso1_瘤右1CP;
 
-    	public ColorP X0Y0_胴1_胴0_背板CP;
+    	public ColorP X0Y0_Torso1_Torso0_背板CP;
 
-    	public ColorP X0Y0_胴1_胴0_胸板CP;
+    	public ColorP X0Y0_Torso1_Torso0_胸板CP;
 
-    	public ColorP X0Y0_胴1_胴0_胴CP;
+    	public ColorP X0Y0_Torso1_Torso0_TorsoCP;
 
     	public ColorP X0Y0_輪1_革CP;
 
@@ -152,133 +152,133 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 胴1_背板_表示
+    	public bool Torso1_背板_表示
     	{
     		get
     		{
-    			return X0Y0_胴1_背板.Dra;
+    			return X0Y0_Torso1_背板.Dra;
     		}
     		set
     		{
-    			X0Y0_胴1_背板.Dra = value;
-    			X0Y0_胴1_背板.Hit = value;
+    			X0Y0_Torso1_背板.Dra = value;
+    			X0Y0_Torso1_背板.Hit = value;
     		}
     	}
 
-    	public bool 胴1_胸板_表示
+    	public bool Torso1_胸板_表示
     	{
     		get
     		{
-    			return X0Y0_胴1_胸板.Dra;
+    			return X0Y0_Torso1_胸板.Dra;
     		}
     		set
     		{
-    			X0Y0_胴1_胸板.Dra = value;
-    			X0Y0_胴1_胸板.Hit = value;
+    			X0Y0_Torso1_胸板.Dra = value;
+    			X0Y0_Torso1_胸板.Hit = value;
     		}
     	}
 
-    	public bool 胴1_胴_表示
+    	public bool Torso1_Torso_表示
     	{
     		get
     		{
-    			return X0Y0_胴1_胴.Dra;
+    			return X0Y0_Torso1_Torso.Dra;
     		}
     		set
     		{
-    			X0Y0_胴1_胴.Dra = value;
-    			X0Y0_胴1_胴.Hit = value;
+    			X0Y0_Torso1_Torso.Dra = value;
+    			X0Y0_Torso1_Torso.Hit = value;
     		}
     	}
 
-    	public bool 胴1_瘤左2_表示
+    	public bool Torso1_瘤左2_表示
     	{
     		get
     		{
-    			return X0Y0_胴1_瘤左2.Dra;
+    			return X0Y0_Torso1_瘤左2.Dra;
     		}
     		set
     		{
-    			X0Y0_胴1_瘤左2.Dra = value;
-    			X0Y0_胴1_瘤左2.Hit = value;
+    			X0Y0_Torso1_瘤左2.Dra = value;
+    			X0Y0_Torso1_瘤左2.Hit = value;
     		}
     	}
 
-    	public bool 胴1_瘤左1_表示
+    	public bool Torso1_瘤左1_表示
     	{
     		get
     		{
-    			return X0Y0_胴1_瘤左1.Dra;
+    			return X0Y0_Torso1_瘤左1.Dra;
     		}
     		set
     		{
-    			X0Y0_胴1_瘤左1.Dra = value;
-    			X0Y0_胴1_瘤左1.Hit = value;
+    			X0Y0_Torso1_瘤左1.Dra = value;
+    			X0Y0_Torso1_瘤左1.Hit = value;
     		}
     	}
 
-    	public bool 胴1_瘤右2_表示
+    	public bool Torso1_瘤右2_表示
     	{
     		get
     		{
-    			return X0Y0_胴1_瘤右2.Dra;
+    			return X0Y0_Torso1_瘤右2.Dra;
     		}
     		set
     		{
-    			X0Y0_胴1_瘤右2.Dra = value;
-    			X0Y0_胴1_瘤右2.Hit = value;
+    			X0Y0_Torso1_瘤右2.Dra = value;
+    			X0Y0_Torso1_瘤右2.Hit = value;
     		}
     	}
 
-    	public bool 胴1_瘤右1_表示
+    	public bool Torso1_瘤右1_表示
     	{
     		get
     		{
-    			return X0Y0_胴1_瘤右1.Dra;
+    			return X0Y0_Torso1_瘤右1.Dra;
     		}
     		set
     		{
-    			X0Y0_胴1_瘤右1.Dra = value;
-    			X0Y0_胴1_瘤右1.Hit = value;
+    			X0Y0_Torso1_瘤右1.Dra = value;
+    			X0Y0_Torso1_瘤右1.Hit = value;
     		}
     	}
 
-    	public bool 胴1_胴0_背板_表示
+    	public bool Torso1_Torso0_背板_表示
     	{
     		get
     		{
-    			return X0Y0_胴1_胴0_背板.Dra;
+    			return X0Y0_Torso1_Torso0_背板.Dra;
     		}
     		set
     		{
-    			X0Y0_胴1_胴0_背板.Dra = value;
-    			X0Y0_胴1_胴0_背板.Hit = value;
+    			X0Y0_Torso1_Torso0_背板.Dra = value;
+    			X0Y0_Torso1_Torso0_背板.Hit = value;
     		}
     	}
 
-    	public bool 胴1_胴0_胸板_表示
+    	public bool Torso1_Torso0_胸板_表示
     	{
     		get
     		{
-    			return X0Y0_胴1_胴0_胸板.Dra;
+    			return X0Y0_Torso1_Torso0_胸板.Dra;
     		}
     		set
     		{
-    			X0Y0_胴1_胴0_胸板.Dra = value;
-    			X0Y0_胴1_胴0_胸板.Hit = value;
+    			X0Y0_Torso1_Torso0_胸板.Dra = value;
+    			X0Y0_Torso1_Torso0_胸板.Hit = value;
     		}
     	}
 
-    	public bool 胴1_胴0_胴_表示
+    	public bool Torso1_Torso0_Torso_表示
     	{
     		get
     		{
-    			return X0Y0_胴1_胴0_胴.Dra;
+    			return X0Y0_Torso1_Torso0_Torso.Dra;
     		}
     		set
     		{
-    			X0Y0_胴1_胴0_胴.Dra = value;
-    			X0Y0_胴1_胴0_胴.Hit = value;
+    			X0Y0_Torso1_Torso0_Torso.Dra = value;
+    			X0Y0_Torso1_Torso0_Torso.Hit = value;
     		}
     	}
 
@@ -394,20 +394,20 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return 胴1_背板_表示;
+    			return Torso1_背板_表示;
     		}
     		set
     		{
-    			胴1_背板_表示 = value;
-    			胴1_胸板_表示 = value;
-    			胴1_胴_表示 = value;
-    			胴1_瘤左2_表示 = value;
-    			胴1_瘤左1_表示 = value;
-    			胴1_瘤右2_表示 = value;
-    			胴1_瘤右1_表示 = value;
-    			胴1_胴0_背板_表示 = value;
-    			胴1_胴0_胸板_表示 = value;
-    			胴1_胴0_胴_表示 = value;
+    			Torso1_背板_表示 = value;
+    			Torso1_胸板_表示 = value;
+    			Torso1_Torso_表示 = value;
+    			Torso1_瘤左2_表示 = value;
+    			Torso1_瘤左1_表示 = value;
+    			Torso1_瘤右2_表示 = value;
+    			Torso1_瘤右1_表示 = value;
+    			Torso1_Torso0_背板_表示 = value;
+    			Torso1_Torso0_胸板_表示 = value;
+    			Torso1_Torso0_Torso_表示 = value;
     			輪1_革_表示 = value;
     			輪1_金具1_表示 = value;
     			輪1_金具2_表示 = value;
@@ -423,20 +423,20 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return 胴1_背板CD.不透明度;
+    			return Torso1_背板CD.不透明度;
     		}
     		set
     		{
-    			胴1_背板CD.不透明度 = value;
-    			胴1_胸板CD.不透明度 = value;
-    			胴1_胴CD.不透明度 = value;
-    			胴1_瘤左2CD.不透明度 = value;
-    			胴1_瘤左1CD.不透明度 = value;
-    			胴1_瘤右2CD.不透明度 = value;
-    			胴1_瘤右1CD.不透明度 = value;
-    			胴1_胴0_背板CD.不透明度 = value;
-    			胴1_胴0_胸板CD.不透明度 = value;
-    			胴1_胴0_胴CD.不透明度 = value;
+    			Torso1_背板CD.不透明度 = value;
+    			Torso1_胸板CD.不透明度 = value;
+    			Torso1_TorsoCD.不透明度 = value;
+    			Torso1_瘤左2CD.不透明度 = value;
+    			Torso1_瘤左1CD.不透明度 = value;
+    			Torso1_瘤右2CD.不透明度 = value;
+    			Torso1_瘤右1CD.不透明度 = value;
+    			Torso1_Torso0_背板CD.不透明度 = value;
+    			Torso1_Torso0_胸板CD.不透明度 = value;
+    			Torso1_Torso0_TorsoCD.不透明度 = value;
     			輪1_革CD.不透明度 = value;
     			輪1_金具1CD.不透明度 = value;
     			輪1_金具2CD.不透明度 = value;
@@ -450,12 +450,12 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return 胴1_背板_表示;
+    			return Torso1_背板_表示;
     		}
     		set
     		{
-    			胴1_背板_表示 = value;
-    			胴1_胴0_背板_表示 = value;
+    			Torso1_背板_表示 = value;
+    			Torso1_Torso0_背板_表示 = value;
     		}
     	}
 
@@ -463,24 +463,24 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return 胴1_胸板_表示;
+    			return Torso1_胸板_表示;
     		}
     		set
     		{
-    			胴1_胸板_表示 = value;
+    			Torso1_胸板_表示 = value;
     		}
     	}
 
-    	public bool 胴
+    	public bool Torso
     	{
     		get
     		{
-    			return 胴1_胴_表示;
+    			return Torso1_Torso_表示;
     		}
     		set
     		{
-    			胴1_胴_表示 = value;
-    			胴1_胴0_胴_表示 = value;
+    			Torso1_Torso_表示 = value;
+    			Torso1_Torso0_Torso_表示 = value;
     		}
     	}
 
@@ -488,26 +488,26 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return 胴1_瘤左2_表示;
+    			return Torso1_瘤左2_表示;
     		}
     		set
     		{
-    			胴1_瘤左2_表示 = value;
-    			胴1_瘤左1_表示 = value;
-    			胴1_瘤右2_表示 = value;
-    			胴1_瘤右1_表示 = value;
+    			Torso1_瘤左2_表示 = value;
+    			Torso1_瘤左1_表示 = value;
+    			Torso1_瘤右2_表示 = value;
+    			Torso1_瘤右1_表示 = value;
     		}
     	}
 
-    	public JointS 左0_接続点 => new JointS(本体, X0Y0_胴1_胴0_胴, 1);
+    	public JointS 左0_接続点 => new JointS(本体, X0Y0_Torso1_Torso0_Torso, 1);
 
-    	public JointS 右0_接続点 => new JointS(本体, X0Y0_胴1_胴0_胴, 2);
+    	public JointS 右0_接続点 => new JointS(本体, X0Y0_Torso1_Torso0_Torso, 2);
 
-    	public JointS 左1_接続点 => new JointS(本体, X0Y0_胴1_胴, 0);
+    	public JointS 左1_接続点 => new JointS(本体, X0Y0_Torso1_Torso, 0);
 
-    	public JointS 右1_接続点 => new JointS(本体, X0Y0_胴1_胴, 1);
+    	public JointS 右1_接続点 => new JointS(本体, X0Y0_Torso1_Torso, 1);
 
-    	public JointS Torso_接続点 => new JointS(本体, X0Y0_胴1_胴, 3);
+    	public JointS Torso_接続点 => new JointS(本体, X0Y0_Torso1_Torso, 3);
 
     	public JointS 鎖1_接続点 => new JointS(本体, X0Y0_輪1_金具左, 0);
 
@@ -529,17 +529,17 @@ namespace SlaveMatrix
     		本体.Add(dif);
     		Pars pars2 = 本体[0][0];
     		Pars pars3 = pars2["胴1"].ToPars();
-    		X0Y0_胴1_背板 = pars3["背板"].ToPar();
-    		X0Y0_胴1_胸板 = pars3["胸板"].ToPar();
-    		X0Y0_胴1_胴 = pars3["胴"].ToPar();
-    		X0Y0_胴1_瘤左2 = pars3["瘤左2"].ToPar();
-    		X0Y0_胴1_瘤左1 = pars3["瘤左1"].ToPar();
-    		X0Y0_胴1_瘤右2 = pars3["瘤右2"].ToPar();
-    		X0Y0_胴1_瘤右1 = pars3["瘤右1"].ToPar();
+    		X0Y0_Torso1_背板 = pars3["背板"].ToPar();
+    		X0Y0_Torso1_胸板 = pars3["胸板"].ToPar();
+    		X0Y0_Torso1_Torso = pars3["胴"].ToPar();
+    		X0Y0_Torso1_瘤左2 = pars3["瘤左2"].ToPar();
+    		X0Y0_Torso1_瘤左1 = pars3["瘤左1"].ToPar();
+    		X0Y0_Torso1_瘤右2 = pars3["瘤右2"].ToPar();
+    		X0Y0_Torso1_瘤右1 = pars3["瘤右1"].ToPar();
     		Pars pars4 = pars3["胴0"].ToPars();
-    		X0Y0_胴1_胴0_背板 = pars4["背板"].ToPar();
-    		X0Y0_胴1_胴0_胸板 = pars4["胸板"].ToPar();
-    		X0Y0_胴1_胴0_胴 = pars4["胴"].ToPar();
+    		X0Y0_Torso1_Torso0_背板 = pars4["背板"].ToPar();
+    		X0Y0_Torso1_Torso0_胸板 = pars4["胸板"].ToPar();
+    		X0Y0_Torso1_Torso0_Torso = pars4["胴"].ToPar();
     		pars3 = pars2["輪1"].ToPars();
     		X0Y0_輪1_革 = pars3["革"].ToPar();
     		X0Y0_輪1_金具1 = pars3["金具1"].ToPar();
@@ -571,16 +571,16 @@ namespace SlaveMatrix
     		サイズ = e.サイズ;
     		サイズX = e.サイズX;
     		サイズY = e.サイズY;
-    		胴1_背板_表示 = e.胴1_背板_表示;
-    		胴1_胸板_表示 = e.胴1_胸板_表示;
-    		胴1_胴_表示 = e.胴1_胴_表示;
-    		胴1_瘤左2_表示 = e.胴1_瘤左2_表示;
-    		胴1_瘤左1_表示 = e.胴1_瘤左1_表示;
-    		胴1_瘤右2_表示 = e.胴1_瘤右2_表示;
-    		胴1_瘤右1_表示 = e.胴1_瘤右1_表示;
-    		胴1_胴0_背板_表示 = e.胴1_胴0_背板_表示;
-    		胴1_胴0_胸板_表示 = e.胴1_胴0_胸板_表示;
-    		胴1_胴0_胴_表示 = e.胴1_胴0_胴_表示;
+    		Torso1_背板_表示 = e.Torso1_背板_表示;
+    		Torso1_胸板_表示 = e.Torso1_胸板_表示;
+    		Torso1_Torso_表示 = e.Torso1_Torso_表示;
+    		Torso1_瘤左2_表示 = e.Torso1_瘤左2_表示;
+    		Torso1_瘤左1_表示 = e.Torso1_瘤左1_表示;
+    		Torso1_瘤右2_表示 = e.Torso1_瘤右2_表示;
+    		Torso1_瘤右1_表示 = e.Torso1_瘤右1_表示;
+    		Torso1_Torso0_背板_表示 = e.Torso1_Torso0_背板_表示;
+    		Torso1_Torso0_胸板_表示 = e.Torso1_Torso0_胸板_表示;
+    		Torso1_Torso0_Torso_表示 = e.Torso1_Torso0_Torso_表示;
     		輪1_革_表示 = e.輪1_革_表示;
     		輪1_金具1_表示 = e.輪1_金具1_表示;
     		輪1_金具2_表示 = e.輪1_金具2_表示;
@@ -590,7 +590,7 @@ namespace SlaveMatrix
     		輪1表示 = e.輪1表示;
     		背板 = e.背板;
     		胸板 = e.胸板;
-    		胴 = e.胴;
+    		Torso = e.Torso;
     		瘤 = e.瘤;
     		欠損 = e.欠損;
     		筋肉 = e.筋肉;
@@ -657,16 +657,16 @@ namespace SlaveMatrix
     		}
     		base.配色指定 = 配色指定;
     		配色(体配色);
-    		X0Y0_胴1_背板CP = new ColorP(X0Y0_胴1_背板, 胴1_背板CD, DisUnit, abj: true);
-    		X0Y0_胴1_胸板CP = new ColorP(X0Y0_胴1_胸板, 胴1_胸板CD, DisUnit, abj: true);
-    		X0Y0_胴1_胴CP = new ColorP(X0Y0_胴1_胴, 胴1_胴CD, DisUnit, abj: true);
-    		X0Y0_胴1_瘤左2CP = new ColorP(X0Y0_胴1_瘤左2, 胴1_瘤左2CD, DisUnit, abj: true);
-    		X0Y0_胴1_瘤左1CP = new ColorP(X0Y0_胴1_瘤左1, 胴1_瘤左1CD, DisUnit, abj: true);
-    		X0Y0_胴1_瘤右2CP = new ColorP(X0Y0_胴1_瘤右2, 胴1_瘤右2CD, DisUnit, abj: true);
-    		X0Y0_胴1_瘤右1CP = new ColorP(X0Y0_胴1_瘤右1, 胴1_瘤右1CD, DisUnit, abj: true);
-    		X0Y0_胴1_胴0_背板CP = new ColorP(X0Y0_胴1_胴0_背板, 胴1_胴0_背板CD, DisUnit, abj: true);
-    		X0Y0_胴1_胴0_胸板CP = new ColorP(X0Y0_胴1_胴0_胸板, 胴1_胴0_胸板CD, DisUnit, abj: true);
-    		X0Y0_胴1_胴0_胴CP = new ColorP(X0Y0_胴1_胴0_胴, 胴1_胴0_胴CD, DisUnit, abj: true);
+    		X0Y0_Torso1_背板CP = new ColorP(X0Y0_Torso1_背板, Torso1_背板CD, DisUnit, abj: true);
+    		X0Y0_Torso1_胸板CP = new ColorP(X0Y0_Torso1_胸板, Torso1_胸板CD, DisUnit, abj: true);
+    		X0Y0_Torso1_TorsoCP = new ColorP(X0Y0_Torso1_Torso, Torso1_TorsoCD, DisUnit, abj: true);
+    		X0Y0_Torso1_瘤左2CP = new ColorP(X0Y0_Torso1_瘤左2, Torso1_瘤左2CD, DisUnit, abj: true);
+    		X0Y0_Torso1_瘤左1CP = new ColorP(X0Y0_Torso1_瘤左1, Torso1_瘤左1CD, DisUnit, abj: true);
+    		X0Y0_Torso1_瘤右2CP = new ColorP(X0Y0_Torso1_瘤右2, Torso1_瘤右2CD, DisUnit, abj: true);
+    		X0Y0_Torso1_瘤右1CP = new ColorP(X0Y0_Torso1_瘤右1, Torso1_瘤右1CD, DisUnit, abj: true);
+    		X0Y0_Torso1_Torso0_背板CP = new ColorP(X0Y0_Torso1_Torso0_背板, Torso1_Torso0_背板CD, DisUnit, abj: true);
+    		X0Y0_Torso1_Torso0_胸板CP = new ColorP(X0Y0_Torso1_Torso0_胸板, Torso1_Torso0_胸板CD, DisUnit, abj: true);
+    		X0Y0_Torso1_Torso0_TorsoCP = new ColorP(X0Y0_Torso1_Torso0_Torso, Torso1_Torso0_TorsoCD, DisUnit, abj: true);
     		X0Y0_輪1_革CP = new ColorP(X0Y0_輪1_革, 輪1_革CD, DisUnit, abj: true);
     		X0Y0_輪1_金具1CP = new ColorP(X0Y0_輪1_金具1, 輪1_金具1CD, DisUnit, abj: true);
     		X0Y0_輪1_金具2CP = new ColorP(X0Y0_輪1_金具2, 輪1_金具2CD, DisUnit, abj: true);
@@ -709,16 +709,16 @@ namespace SlaveMatrix
 
     	public override void 色更新()
     	{
-    		X0Y0_胴1_背板CP.Update();
-    		X0Y0_胴1_胸板CP.Update();
-    		X0Y0_胴1_胴CP.Update();
-    		X0Y0_胴1_瘤左2CP.Update();
-    		X0Y0_胴1_瘤左1CP.Update();
-    		X0Y0_胴1_瘤右2CP.Update();
-    		X0Y0_胴1_瘤右1CP.Update();
-    		X0Y0_胴1_胴0_背板CP.Update();
-    		X0Y0_胴1_胴0_胸板CP.Update();
-    		X0Y0_胴1_胴0_胴CP.Update();
+    		X0Y0_Torso1_背板CP.Update();
+    		X0Y0_Torso1_胸板CP.Update();
+    		X0Y0_Torso1_TorsoCP.Update();
+    		X0Y0_Torso1_瘤左2CP.Update();
+    		X0Y0_Torso1_瘤左1CP.Update();
+    		X0Y0_Torso1_瘤右2CP.Update();
+    		X0Y0_Torso1_瘤右1CP.Update();
+    		X0Y0_Torso1_Torso0_背板CP.Update();
+    		X0Y0_Torso1_Torso0_胸板CP.Update();
+    		X0Y0_Torso1_Torso0_TorsoCP.Update();
     		X0Y0_輪1_革CP.Update();
     		X0Y0_輪1_金具1CP.Update();
     		X0Y0_輪1_金具2CP.Update();
@@ -752,16 +752,16 @@ namespace SlaveMatrix
 
     	private void 配色N0(体配色 体配色)
     	{
-    		胴1_背板CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		胴1_胸板CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		胴1_胴CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		胴1_瘤左2CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		胴1_瘤左1CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		胴1_瘤右2CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		胴1_瘤右1CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		胴1_胴0_背板CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		胴1_胴0_胸板CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		胴1_胴0_胴CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
+    		Torso1_背板CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
+    		Torso1_胸板CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
+    		Torso1_TorsoCD = new ColorD(ref Col.Black, ref 体配色.甲1O);
+    		Torso1_瘤左2CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
+    		Torso1_瘤左1CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
+    		Torso1_瘤右2CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
+    		Torso1_瘤右1CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
+    		Torso1_Torso0_背板CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
+    		Torso1_Torso0_胸板CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
+    		Torso1_Torso0_TorsoCD = new ColorD(ref Col.Black, ref 体配色.甲1O);
     		輪1_革CD = new ColorD();
     		輪1_金具1CD = new ColorD();
     		輪1_金具2CD = new ColorD();
@@ -772,16 +772,16 @@ namespace SlaveMatrix
 
     	private void 配色T0(体配色 体配色)
     	{
-    		胴1_背板CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		胴1_胸板CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		胴1_胴CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		胴1_瘤左2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		胴1_瘤左1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		胴1_瘤右2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		胴1_瘤右1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		胴1_胴0_背板CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		胴1_胴0_胸板CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		胴1_胴0_胴CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		Torso1_背板CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
+    		Torso1_胸板CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
+    		Torso1_TorsoCD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		Torso1_瘤左2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		Torso1_瘤左1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		Torso1_瘤右2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		Torso1_瘤右1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		Torso1_Torso0_背板CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
+    		Torso1_Torso0_胸板CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
+    		Torso1_Torso0_TorsoCD = new ColorD(ref Col.Black, ref 体配色.刺青O);
     		輪1_革CD = new ColorD();
     		輪1_金具1CD = new ColorD();
     		輪1_金具2CD = new ColorD();
@@ -792,16 +792,16 @@ namespace SlaveMatrix
 
     	private void 配色T1(体配色 体配色)
     	{
-    		胴1_背板CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		胴1_胸板CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		胴1_胴CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		胴1_瘤左2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		胴1_瘤左1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		胴1_瘤右2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		胴1_瘤右1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		胴1_胴0_背板CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		胴1_胴0_胸板CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		胴1_胴0_胴CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
+    		Torso1_背板CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
+    		Torso1_胸板CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		Torso1_TorsoCD = new ColorD(ref Col.Black, ref 体配色.甲1O);
+    		Torso1_瘤左2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		Torso1_瘤左1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		Torso1_瘤右2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		Torso1_瘤右1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		Torso1_Torso0_背板CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
+    		Torso1_Torso0_胸板CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		Torso1_Torso0_TorsoCD = new ColorD(ref Col.Black, ref 体配色.甲1O);
     		輪1_革CD = new ColorD();
     		輪1_金具1CD = new ColorD();
     		輪1_金具2CD = new ColorD();

@@ -269,17 +269,17 @@ namespace SlaveMatrix.GameClasses
             };
         }
 
-        public static TorsoD Set胴(this WaistD Waist)
+        public static TorsoD SetTorso(this WaistD Waist)
         {
-            TorsoD 胴D2 = Uni.胴();
-            Waist.胴接続(胴D2);
-            return 胴D2;
+            TorsoD TorsoD2 = Uni.胴();
+            Waist.胴接続(TorsoD2);
+            return TorsoD2;
         }
 
-        public static ChestD SetChestR(this TorsoD 胴)
+        public static ChestD SetChestR(this TorsoD Torso)
         {
             ChestD ChestD2 = GetChestR();
-            胴.Torso接続(ChestD2);
+            Torso.胴接続(ChestD2);
             return ChestD2;
         }
 

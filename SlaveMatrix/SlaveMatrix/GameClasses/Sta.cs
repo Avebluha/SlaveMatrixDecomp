@@ -318,9 +318,9 @@ namespace SlaveMatrix
 
     	public static Type 四足脇Dt;
 
-    	public static Type 胴_蛇Dt;
+    	public static Type Torso_蛇Dt;
 
-    	public static Type 胴_蟲Dt;
+    	public static Type Torso_蟲Dt;
 
     	public static Type 大顎基Dt;
 
@@ -1301,8 +1301,8 @@ namespace SlaveMatrix
     		足_鳥Dt = typeof(足_鳥D);
     		足_竜Dt = typeof(足_竜D);
     		四足脇Dt = typeof(四足脇D);
-    		胴_蛇Dt = typeof(Torso_蛇D);
-    		胴_蟲Dt = typeof(Torso_蟲D);
+    		Torso_蛇Dt = typeof(Torso_蛇D);
+    		Torso_蟲Dt = typeof(Torso_蟲D);
     		大顎基Dt = typeof(大顎基D);
     		鳳凰Dt = typeof(鳳凰D);
     		大顎Dt = typeof(大顎D);

@@ -40,7 +40,7 @@ namespace SlaveMatrix
     		ThisType = GetType();
     	}
 
-    	public void Torso接続(EleD e)
+    	public void 胴接続(EleD e)
     	{
     		Chest_接続.Add(e);
     		e.Par = this;

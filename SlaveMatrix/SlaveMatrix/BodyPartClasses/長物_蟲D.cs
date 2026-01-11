@@ -7,25 +7,25 @@ namespace SlaveMatrix
     [Serializable]
     public class 長物_蟲D : 半身D
     {
-    	public bool 胴1_背板_表示 = true;
+    	public bool Torso1_背板_表示 = true;
 
-    	public bool 胴1_胸板_表示 = true;
+    	public bool Torso1_胸板_表示 = true;
 
-    	public bool 胴1_胴_表示 = true;
+    	public bool Torso1_Torso_表示 = true;
 
-    	public bool 胴1_瘤左2_表示 = true;
+    	public bool Torso1_瘤左2_表示 = true;
 
-    	public bool 胴1_瘤左1_表示 = true;
+    	public bool Torso1_瘤左1_表示 = true;
 
-    	public bool 胴1_瘤右2_表示 = true;
+    	public bool Torso1_瘤右2_表示 = true;
 
-    	public bool 胴1_瘤右1_表示 = true;
+    	public bool Torso1_瘤右1_表示 = true;
 
-    	public bool 胴1_胴0_背板_表示 = true;
+    	public bool Torso1_Torso0_背板_表示 = true;
 
-    	public bool 胴1_胴0_胸板_表示 = true;
+    	public bool Torso1_Torso0_胸板_表示 = true;
 
-    	public bool 胴1_胴0_胴_表示 = true;
+    	public bool Torso1_Torso0_Torso_表示 = true;
 
     	public bool 輪1_革_表示 = true;
 
@@ -45,7 +45,7 @@ namespace SlaveMatrix
 
     	public bool 胸板 = true;
 
-    	public bool 胴 = true;
+    	public bool Torso = true;
 
     	public bool 瘤 = true;
 
