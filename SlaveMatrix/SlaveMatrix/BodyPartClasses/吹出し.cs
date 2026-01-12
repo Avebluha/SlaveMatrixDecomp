@@ -85,16 +85,16 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public JointS 吹出し_接続点 => new JointS(本体, X0Y0_吹出し, 0);
+    	public JointS 吹出し_接続点 => new JointS(Body, X0Y0_吹出し, 0);
 
     	public 吹出し(double DisUnit)
     	{
     		ThisType = GetType();
-    		本体 = new Difs(Sta.胴体["吹出し"]);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs(Sta.胴体["吹出し"]);
+    		Pars pars = Body[0][0];
     		X0Y0_吹出し = pars["吹出し"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		吹出しCD = new ColorD();
     		吹出しCD.線 = Col.Black;
     		吹出しCD.色 = new Color2(ref Col.White, ref Col.Empty);

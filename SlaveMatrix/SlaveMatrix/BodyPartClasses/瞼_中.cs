@@ -601,8 +601,8 @@ namespace SlaveMatrix
     	public 瞼_中(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 瞼_中D e)
     	{
     		ThisType = GetType();
-    		本体 = new Difs(Sta.胴体["魔性中瞼左"]);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs(Sta.胴体["魔性中瞼左"]);
+    		Pars pars = Body[0][0];
     		X0Y0_瞼 = pars["瞼"].ToPar();
     		X0Y0_二重 = pars["二重"].ToPar();
     		Pars pars2 = pars["睫毛"].ToPars();
@@ -610,7 +610,7 @@ namespace SlaveMatrix
     		X0Y0_睫毛_睫毛4 = pars2["睫毛4"].ToPar();
     		X0Y0_睫毛_睫毛1 = pars2["睫毛1"].ToPar();
     		X0Y0_睫毛_睫毛2 = pars2["睫毛2"].ToPar();
-    		pars = 本体[0][1];
+    		pars = Body[0][1];
     		X0Y1_瞼 = pars["瞼"].ToPar();
     		X0Y1_二重 = pars["二重"].ToPar();
     		pars2 = pars["睫毛"].ToPars();
@@ -618,7 +618,7 @@ namespace SlaveMatrix
     		X0Y1_睫毛_睫毛4 = pars2["睫毛4"].ToPar();
     		X0Y1_睫毛_睫毛1 = pars2["睫毛1"].ToPar();
     		X0Y1_睫毛_睫毛2 = pars2["睫毛2"].ToPar();
-    		pars = 本体[0][2];
+    		pars = Body[0][2];
     		X0Y2_瞼 = pars["瞼"].ToPar();
     		X0Y2_二重 = pars["二重"].ToPar();
     		pars2 = pars["睫毛"].ToPars();
@@ -626,7 +626,7 @@ namespace SlaveMatrix
     		X0Y2_睫毛_睫毛4 = pars2["睫毛4"].ToPar();
     		X0Y2_睫毛_睫毛1 = pars2["睫毛1"].ToPar();
     		X0Y2_睫毛_睫毛2 = pars2["睫毛2"].ToPar();
-    		pars = 本体[0][3];
+    		pars = Body[0][3];
     		X0Y3_瞼 = pars["瞼"].ToPar();
     		X0Y3_二重 = pars["二重"].ToPar();
     		pars2 = pars["睫毛"].ToPars();
@@ -634,7 +634,7 @@ namespace SlaveMatrix
     		X0Y3_睫毛_睫毛4 = pars2["睫毛4"].ToPar();
     		X0Y3_睫毛_睫毛1 = pars2["睫毛1"].ToPar();
     		X0Y3_睫毛_睫毛2 = pars2["睫毛2"].ToPar();
-    		pars = 本体[0][4];
+    		pars = Body[0][4];
     		X0Y4_瞼 = pars["瞼"].ToPar();
     		X0Y4_二重 = pars["二重"].ToPar();
     		pars2 = pars["睫毛"].ToPars();
@@ -642,7 +642,7 @@ namespace SlaveMatrix
     		X0Y4_睫毛_睫毛4 = pars2["睫毛4"].ToPar();
     		X0Y4_睫毛_睫毛1 = pars2["睫毛1"].ToPar();
     		X0Y4_睫毛_睫毛2 = pars2["睫毛2"].ToPar();
-    		pars = 本体[1][0];
+    		pars = Body[1][0];
     		X1Y0_瞼 = pars["瞼"].ToPar();
     		X1Y0_二重 = pars["二重"].ToPar();
     		pars2 = pars["睫毛"].ToPars();
@@ -650,7 +650,7 @@ namespace SlaveMatrix
     		X1Y0_睫毛_睫毛4 = pars2["睫毛4"].ToPar();
     		X1Y0_睫毛_睫毛1 = pars2["睫毛1"].ToPar();
     		X1Y0_睫毛_睫毛2 = pars2["睫毛2"].ToPar();
-    		pars = 本体[1][1];
+    		pars = Body[1][1];
     		X1Y1_瞼 = pars["瞼"].ToPar();
     		X1Y1_二重 = pars["二重"].ToPar();
     		pars2 = pars["睫毛"].ToPars();
@@ -658,7 +658,7 @@ namespace SlaveMatrix
     		X1Y1_睫毛_睫毛4 = pars2["睫毛4"].ToPar();
     		X1Y1_睫毛_睫毛1 = pars2["睫毛1"].ToPar();
     		X1Y1_睫毛_睫毛2 = pars2["睫毛2"].ToPar();
-    		pars = 本体[1][2];
+    		pars = Body[1][2];
     		X1Y2_瞼 = pars["瞼"].ToPar();
     		X1Y2_二重 = pars["二重"].ToPar();
     		pars2 = pars["睫毛"].ToPars();
@@ -666,7 +666,7 @@ namespace SlaveMatrix
     		X1Y2_睫毛_睫毛4 = pars2["睫毛4"].ToPar();
     		X1Y2_睫毛_睫毛1 = pars2["睫毛1"].ToPar();
     		X1Y2_睫毛_睫毛2 = pars2["睫毛2"].ToPar();
-    		pars = 本体[1][3];
+    		pars = Body[1][3];
     		X1Y3_瞼 = pars["瞼"].ToPar();
     		X1Y3_二重 = pars["二重"].ToPar();
     		pars2 = pars["睫毛"].ToPars();
@@ -674,7 +674,7 @@ namespace SlaveMatrix
     		X1Y3_睫毛_睫毛4 = pars2["睫毛4"].ToPar();
     		X1Y3_睫毛_睫毛1 = pars2["睫毛1"].ToPar();
     		X1Y3_睫毛_睫毛2 = pars2["睫毛2"].ToPar();
-    		pars = 本体[1][4];
+    		pars = Body[1][4];
     		X1Y4_瞼 = pars["瞼"].ToPar();
     		X1Y4_二重 = pars["二重"].ToPar();
     		pars2 = pars["睫毛"].ToPars();
@@ -682,8 +682,8 @@ namespace SlaveMatrix
     		X1Y4_睫毛_睫毛4 = pars2["睫毛4"].ToPar();
     		X1Y4_睫毛_睫毛1 = pars2["睫毛1"].ToPar();
     		X1Y4_睫毛_睫毛2 = pars2["睫毛2"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -802,9 +802,9 @@ namespace SlaveMatrix
 
     	public override void 色更新()
     	{
-    		if (本体.IndexX == 0)
+    		if (Body.IndexX == 0)
     		{
-    			switch (本体.IndexY)
+    			switch (Body.IndexY)
     			{
     			case 0:
     				X0Y0_瞼CP.Update();
@@ -850,7 +850,7 @@ namespace SlaveMatrix
     		}
     		else
     		{
-    			switch (本体.IndexY)
+    			switch (Body.IndexY)
     			{
     			case 0:
     				X1Y0_瞼CP.Update();
@@ -898,9 +898,9 @@ namespace SlaveMatrix
 
     	public override void 色更新(Vector2D[] mm)
     	{
-    		if (本体.IndexX == 0)
+    		if (Body.IndexX == 0)
     		{
-    			switch (本体.IndexY)
+    			switch (Body.IndexY)
     			{
     			case 0:
     				X0Y0_瞼CP.Update(mm);
@@ -946,7 +946,7 @@ namespace SlaveMatrix
     		}
     		else
     		{
-    			switch (本体.IndexY)
+    			switch (Body.IndexY)
     			{
     			case 0:
     				X1Y0_瞼CP.Update(mm);

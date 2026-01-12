@@ -316,17 +316,17 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public JointS 脚_接続点 => new JointS(本体, X0Y0_腿, 0);
+    	public JointS 脚_接続点 => new JointS(Body, X0Y0_腿, 0);
 
     	public 腿_竜(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 腿_竜D e)
     	{
     		腿_竜 腿_竜2 = this;
     		ThisType = GetType();
     		Dif dif = new Dif(Sta.脚左["四足腿"][3]);
-    		本体 = new Difs();
-    		本体.Tag = dif.Tag;
-    		本体.Add(dif);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs();
+    		Body.Tag = dif.Tag;
+    		Body.Add(dif);
+    		Pars pars = Body[0][0];
     		X0Y0_腿 = pars["腿"].ToPar();
     		Pars pars2 = pars["鱗下"].ToPars();
     		X0Y0_竜性_鱗下_鱗1 = pars2["鱗1"].ToPar();
@@ -341,8 +341,8 @@ namespace SlaveMatrix
     		X0Y0_竜性_鱗上_鱗3 = pars2["鱗3"].ToPar();
     		X0Y0_竜性_鱗上_鱗4 = pars2["鱗4"].ToPar();
     		X0Y0_筋 = pars["筋"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -417,7 +417,7 @@ namespace SlaveMatrix
     	{
     		double num = (右 ? (-1.0) : 1.0);
     		X0Y0_腿.AngleBase = num * 144.0;
-    		本体.JoinPAall();
+    		Body.JoinPAall();
     	}
 
     	public override void 色更新()

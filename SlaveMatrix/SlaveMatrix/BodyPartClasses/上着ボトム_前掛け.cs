@@ -373,10 +373,10 @@ namespace SlaveMatrix
     	{
     		ThisType = GetType();
     		Dif dif = new Dif(Sta.胴体["上着ボトム前"][1]);
-    		本体 = new Difs();
-    		本体.Tag = dif.Tag;
-    		本体.Add(dif);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs();
+    		Body.Tag = dif.Tag;
+    		Body.Add(dif);
+    		Pars pars = Body[0][0];
     		X0Y0_帯 = pars["帯"].ToPar();
     		X0Y0_巻 = pars["巻"].ToPar();
     		Pars pars2 = pars["縁後"].ToPars();
@@ -390,7 +390,7 @@ namespace SlaveMatrix
     		X0Y0_縁前_縁左 = pars2["縁左"].ToPar();
     		X0Y0_縁前_縁右 = pars2["縁右"].ToPar();
     		X0Y0_縁前_縁中 = pars2["縁中"].ToPar();
-    		pars = 本体[0][1];
+    		pars = Body[0][1];
     		X0Y1_帯 = pars["帯"].ToPar();
     		X0Y1_巻 = pars["巻"].ToPar();
     		pars2 = pars["縁後"].ToPars();
@@ -403,8 +403,8 @@ namespace SlaveMatrix
     		X0Y1_縁前_縁左 = pars2["縁左"].ToPar();
     		X0Y1_縁前_縁右 = pars2["縁右"].ToPar();
     		X0Y1_縁前_縁中 = pars2["縁中"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -474,7 +474,7 @@ namespace SlaveMatrix
 
     	public override void 描画0(RenderArea Are)
     	{
-    		if (本体.IndexY == 0)
+    		if (Body.IndexY == 0)
     		{
     			Are.Draw(X0Y0_帯);
     			Are.Draw(X0Y0_巻);
@@ -495,7 +495,7 @@ namespace SlaveMatrix
 
     	public void 前(RenderArea Are)
     	{
-    		if (本体.IndexY == 0)
+    		if (Body.IndexY == 0)
     		{
     			Are.Draw(X0Y0_前掛_前掛1);
     			Are.Draw(X0Y0_前掛_前掛2);
@@ -517,7 +517,7 @@ namespace SlaveMatrix
 
     	public override void 色更新()
     	{
-    		if (本体.IndexY == 0)
+    		if (Body.IndexY == 0)
     		{
     			X0Y0_帯CP.Update();
     			X0Y0_巻CP.Update();

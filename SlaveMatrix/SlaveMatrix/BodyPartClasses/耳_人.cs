@@ -33,7 +33,7 @@ namespace SlaveMatrix
     		set
     		{
     			欠損_ = value;
-    			本体.IndexX = (欠損_ ? 1 : 0);
+    			Body.IndexX = (欠損_ ? 1 : 0);
     		}
     	}
 
@@ -120,19 +120,19 @@ namespace SlaveMatrix
     	public 耳_人(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 耳_人D e)
     	{
     		ThisType = GetType();
-    		本体 = new Difs();
-    		本体.Tag = "通";
-    		本体.Add(new Dif(Sta.肢左["耳"][0]));
-    		本体.Add(new Dif(Sta.肢左["耳"][1]));
-    		Pars pars = 本体[0][0];
+    		Body = new Difs();
+    		Body.Tag = "通";
+    		Body.Add(new Dif(Sta.肢左["耳"][0]));
+    		Body.Add(new Dif(Sta.肢左["耳"][1]));
+    		Pars pars = Body[0][0];
     		X0Y0_耳 = pars["耳"].ToPar();
     		X0Y0_耳線 = pars["耳線"].ToPar();
-    		pars = 本体[1][0];
+    		pars = Body[1][0];
     		X1Y0_耳 = pars["耳"].ToPar();
     		X1Y0_耳線 = pars["耳線"].ToPar();
     		Xasix = false;
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -178,12 +178,12 @@ namespace SlaveMatrix
     		double num = (右 ? (-1.0) : 1.0);
     		X0Y0_耳.AngleBase = num * -18.0;
     		X1Y0_耳.AngleBase = num * -18.0;
-    		本体.JoinPAall();
+    		Body.JoinPAall();
     	}
 
     	public override void 色更新()
     	{
-    		if (本体.IndexX == 0)
+    		if (Body.IndexX == 0)
     		{
     			X0Y0_耳CP.Update();
     			X0Y0_耳線CP.Update();

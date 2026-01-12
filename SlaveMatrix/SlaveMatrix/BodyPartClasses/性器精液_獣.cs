@@ -231,33 +231,33 @@ namespace SlaveMatrix
     	public 性器精液_獣(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 性器精液_獣D e)
     	{
     		ThisType = GetType();
-    		本体 = new Difs(Sta.性器付["四足性器精液垂れ"]);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs(Sta.性器付["四足性器精液垂れ"]);
+    		Pars pars = Body[0][0];
     		X0Y0_精液 = pars["精液"].ToPar();
     		X0Y0_血液1 = pars["血液1"].ToPar();
     		X0Y0_血液2 = pars["血液2"].ToPar();
-    		pars = 本体[0][1];
+    		pars = Body[0][1];
     		X0Y1_精液 = pars["精液"].ToPar();
     		X0Y1_血液1 = pars["血液1"].ToPar();
     		X0Y1_血液2 = pars["血液2"].ToPar();
-    		pars = 本体[0][2];
+    		pars = Body[0][2];
     		X0Y2_精液 = pars["精液"].ToPar();
     		X0Y2_血液1 = pars["血液1"].ToPar();
     		X0Y2_血液2 = pars["血液2"].ToPar();
-    		pars = 本体[0][3];
+    		pars = Body[0][3];
     		X0Y3_精液 = pars["精液"].ToPar();
     		X0Y3_血液1 = pars["血液1"].ToPar();
     		X0Y3_血液2 = pars["血液2"].ToPar();
-    		pars = 本体[0][4];
+    		pars = Body[0][4];
     		X0Y4_精液 = pars["精液"].ToPar();
     		X0Y4_血液1 = pars["血液1"].ToPar();
     		X0Y4_血液2 = pars["血液2"].ToPar();
-    		pars = 本体[0][5];
+    		pars = Body[0][5];
     		X0Y5_精液 = pars["精液"].ToPar();
     		X0Y5_血液1 = pars["血液1"].ToPar();
     		X0Y5_血液2 = pars["血液2"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -315,7 +315,7 @@ namespace SlaveMatrix
 
     	public override void 色更新()
     	{
-    		switch (本体.IndexY)
+    		switch (Body.IndexY)
     		{
     		case 0:
     			X0Y0_精液CP.Update();

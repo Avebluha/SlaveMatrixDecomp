@@ -265,21 +265,21 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public JointS 足_接続点 => new JointS(本体, X0Y0_Leg, 0);
+    	public JointS 足_接続点 => new JointS(Body, X0Y0_Leg, 0);
 
-    	public JointS 鎖1_接続点 => new JointS(本体, X0Y0_脚輪_金具左, 0);
+    	public JointS 鎖1_接続点 => new JointS(Body, X0Y0_脚輪_金具左, 0);
 
-    	public JointS 鎖2_接続点 => new JointS(本体, X0Y0_脚輪_金具右, 0);
+    	public JointS 鎖2_接続点 => new JointS(Body, X0Y0_脚輪_金具右, 0);
 
     	public Leg_獣(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, Leg_獣D e)
     	{
     		Leg_獣 Leg_獣2 = this;
     		ThisType = GetType();
     		Dif dif = new Dif(Sta.脚左["四足脚"][0]);
-    		本体 = new Difs();
-    		本体.Tag = dif.Tag;
-    		本体.Add(dif);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs();
+    		Body.Tag = dif.Tag;
+    		Body.Add(dif);
+    		Pars pars = Body[0][0];
     		X0Y0_Leg = pars["脚"].ToPar();
     		X0Y0_筋 = pars["筋"].ToPar();
     		Pars pars2 = pars["脚輪"].ToPars();
@@ -289,8 +289,8 @@ namespace SlaveMatrix
     		X0Y0_脚輪_金具3 = pars2["金具3"].ToPar();
     		X0Y0_脚輪_金具左 = pars2["金具左"].ToPar();
     		X0Y0_脚輪_金具右 = pars2["金具右"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -361,7 +361,7 @@ namespace SlaveMatrix
 
     	public override void 描画0(RenderArea Are)
     	{
-    		本体.Draw(Are);
+    		Body.Draw(Are);
     		鎖1.描画0(Are);
     	}
 
@@ -375,7 +375,7 @@ namespace SlaveMatrix
     	{
     		double num = (右 ? (-1.0) : 1.0);
     		X0Y0_Leg.AngleBase = num * -136.0;
-    		本体.JoinPAall();
+    		Body.JoinPAall();
     	}
 
     	public override bool Is革(Par p)

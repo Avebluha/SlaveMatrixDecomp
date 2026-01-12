@@ -60,10 +60,10 @@ namespace SlaveMatrix
     				if (汗.濃度 != 0.0)
     				{
     					tp = ryps2.r.ToGlobal(local);
-    					汗.本体.CurJoinRoot.PositionBase = tp + (ryps2.r.ToGlobal(ryps2.c) - tp) * 位置[this.i];
-    					汗.本体.JoinPA();
+    					汗.Body.CurJoinRoot.PositionBase = tp + (ryps2.r.ToGlobal(ryps2.c) - tp) * 位置[this.i];
+    					汗.Body.JoinPA();
     					汗.色更新();
-    					汗.本体.Draw(Are);
+    					汗.Body.Draw(Are);
     				}
     				this.i++;
     			}
@@ -206,7 +206,7 @@ namespace SlaveMatrix
     		foreach (Ele item in Cha.Bod.Elements.Where((Ele e) => 汗対象.Contains(e.GetType().ToString())))
     		{
     			ryps = default(ryps);
-    			ryps.r = item.本体.CurJoinRoot;
+    			ryps.r = item.Body.CurJoinRoot;
     			ryps.c = ryps.r.OP.GetCenter();
     			ryps.ps = (from p in ryps.r.OP.EnumPoints()
     				where ryps.c.Y > p.Y

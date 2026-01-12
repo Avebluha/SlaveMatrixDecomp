@@ -56,8 +56,8 @@ namespace SlaveMatrix
     			o = v;
     			対象.Ele.角度C = 0.0;
     			対象.Ele.Xi = 0;
-    			対象.Ele.Yi = (対象.Ele.Yi + x).Limit(0, 対象.Ele.本体.CountY);
-    			対象.Ele.本体.JoinPA();
+    			対象.Ele.Yi = (対象.Ele.Yi + x).Limit(0, 対象.Ele.Body.CountY);
+    			対象.Ele.Body.JoinPA();
     			移動時();
     		}
     	}
@@ -151,7 +151,7 @@ namespace SlaveMatrix
     				{
     					鞭.角度C = -100.0 * m.Value;
     				}
-    				p = 鞭.本体.Current.EnumAllPar().First((Par e) => e.Tag.Contains("先"));
+    				p = 鞭.Body.Current.EnumAllPar().First((Par e) => e.Tag.Contains("先"));
     				cp = p.ToGlobal(p.JP[0].Joint);
     				hc = 調鞭処理2.Med.GetHitColor(調鞭処理2.Med.FromBasePosition(cp));
     				if (調教UI.Bod.IsHit(hc))
@@ -182,7 +182,7 @@ namespace SlaveMatrix
     				{
     					鞭.Yi = 0;
     				}
-    				鞭.本体.JoinPA();
+    				鞭.Body.JoinPA();
     				m.End();
     			},
     			Rouing = delegate

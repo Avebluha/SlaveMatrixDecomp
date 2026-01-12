@@ -968,8 +968,8 @@ namespace SlaveMatrix
     	public 調教鞭(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 調教鞭D e)
     	{
     		ThisType = GetType();
-    		本体 = new Difs(Sta.カーソル["調教鞭"]);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs(Sta.カーソル["調教鞭"]);
+    		Pars pars = Body[0][0];
     		X0Y0_先 = pars["先"].ToPar();
     		X0Y0_柄 = pars["柄"].ToPar();
     		X0Y0_線1 = pars["線1"].ToPar();
@@ -981,7 +981,7 @@ namespace SlaveMatrix
     		X0Y0_線7 = pars["線7"].ToPar();
     		X0Y0_線8 = pars["線8"].ToPar();
     		X0Y0_紐 = pars["紐"].ToPar();
-    		pars = 本体[0][1];
+    		pars = Body[0][1];
     		X0Y1_先 = pars["先"].ToPar();
     		X0Y1_柄 = pars["柄"].ToPar();
     		X0Y1_線1 = pars["線1"].ToPar();
@@ -993,7 +993,7 @@ namespace SlaveMatrix
     		X0Y1_線7 = pars["線7"].ToPar();
     		X0Y1_線8 = pars["線8"].ToPar();
     		X0Y1_紐 = pars["紐"].ToPar();
-    		pars = 本体[0][2];
+    		pars = Body[0][2];
     		X0Y2_先 = pars["先"].ToPar();
     		X0Y2_柄 = pars["柄"].ToPar();
     		X0Y2_線1 = pars["線1"].ToPar();
@@ -1005,7 +1005,7 @@ namespace SlaveMatrix
     		X0Y2_線7 = pars["線7"].ToPar();
     		X0Y2_線8 = pars["線8"].ToPar();
     		X0Y2_紐 = pars["紐"].ToPar();
-    		pars = 本体[0][3];
+    		pars = Body[0][3];
     		X0Y3_先 = pars["先"].ToPar();
     		X0Y3_柄 = pars["柄"].ToPar();
     		X0Y3_線1 = pars["線1"].ToPar();
@@ -1017,7 +1017,7 @@ namespace SlaveMatrix
     		X0Y3_線7 = pars["線7"].ToPar();
     		X0Y3_線8 = pars["線8"].ToPar();
     		X0Y3_紐 = pars["紐"].ToPar();
-    		pars = 本体[0][4];
+    		pars = Body[0][4];
     		X0Y4_先 = pars["先"].ToPar();
     		X0Y4_柄 = pars["柄"].ToPar();
     		X0Y4_線1 = pars["線1"].ToPar();
@@ -1029,7 +1029,7 @@ namespace SlaveMatrix
     		X0Y4_線7 = pars["線7"].ToPar();
     		X0Y4_線8 = pars["線8"].ToPar();
     		X0Y4_紐 = pars["紐"].ToPar();
-    		pars = 本体[1][0];
+    		pars = Body[1][0];
     		X1Y0_先 = pars["先"].ToPar();
     		X1Y0_柄 = pars["柄"].ToPar();
     		X1Y0_線1 = pars["線1"].ToPar();
@@ -1043,7 +1043,7 @@ namespace SlaveMatrix
     		X1Y0_紐 = pars["紐"].ToPar();
     		X1Y0_鞭撃エフェクト1 = pars["鞭撃エフェクト1"].ToPar();
     		X1Y0_鞭撃エフェクト2 = pars["鞭撃エフェクト2"].ToPar();
-    		pars = 本体[1][1];
+    		pars = Body[1][1];
     		X1Y1_先 = pars["先"].ToPar();
     		X1Y1_柄 = pars["柄"].ToPar();
     		X1Y1_線1 = pars["線1"].ToPar();
@@ -1057,7 +1057,7 @@ namespace SlaveMatrix
     		X1Y1_紐 = pars["紐"].ToPar();
     		X1Y1_鞭撃エフェクト1 = pars["鞭撃エフェクト1"].ToPar();
     		X1Y1_鞭撃エフェクト2 = pars["鞭撃エフェクト2"].ToPar();
-    		pars = 本体[1][2];
+    		pars = Body[1][2];
     		X1Y2_先 = pars["先"].ToPar();
     		X1Y2_柄 = pars["柄"].ToPar();
     		X1Y2_線1 = pars["線1"].ToPar();
@@ -1071,7 +1071,7 @@ namespace SlaveMatrix
     		X1Y2_紐 = pars["紐"].ToPar();
     		X1Y2_鞭撃エフェクト1 = pars["鞭撃エフェクト1"].ToPar();
     		X1Y2_鞭撃エフェクト2 = pars["鞭撃エフェクト2"].ToPar();
-    		pars = 本体[1][3];
+    		pars = Body[1][3];
     		X1Y3_先 = pars["先"].ToPar();
     		X1Y3_柄 = pars["柄"].ToPar();
     		X1Y3_線1 = pars["線1"].ToPar();
@@ -1083,7 +1083,7 @@ namespace SlaveMatrix
     		X1Y3_線7 = pars["線7"].ToPar();
     		X1Y3_線8 = pars["線8"].ToPar();
     		X1Y3_紐 = pars["紐"].ToPar();
-    		pars = 本体[1][4];
+    		pars = Body[1][4];
     		X1Y4_先 = pars["先"].ToPar();
     		X1Y4_柄 = pars["柄"].ToPar();
     		X1Y4_線1 = pars["線1"].ToPar();
@@ -1097,8 +1097,8 @@ namespace SlaveMatrix
     		X1Y4_紐 = pars["紐"].ToPar();
     		X1Y4_鞭撃エフェクト1 = pars["鞭撃エフェクト1"].ToPar();
     		X1Y4_鞭撃エフェクト2 = pars["鞭撃エフェクト2"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -1263,14 +1263,14 @@ namespace SlaveMatrix
     		X1Y4_鞭撃エフェクト2CP = new ColorP(X1Y4_鞭撃エフェクト2, 鞭撃エフェクト2CD, DisUnit, abj: true);
     		濃度 = e.濃度;
     		尺度B = 1.01;
-    		本体.JoinPAall();
+    		Body.JoinPAall();
     	}
 
     	public override void 色更新()
     	{
-    		if (本体.IndexX == 0)
+    		if (Body.IndexX == 0)
     		{
-    			switch (本体.IndexY)
+    			switch (Body.IndexY)
     			{
     			case 0:
     				X0Y0_先CP.Update();
@@ -1340,7 +1340,7 @@ namespace SlaveMatrix
     			}
     			return;
     		}
-    		switch (本体.IndexY)
+    		switch (Body.IndexY)
     		{
     		case 0:
     			X1Y0_先CP.Update();

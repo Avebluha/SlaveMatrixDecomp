@@ -569,8 +569,8 @@ namespace SlaveMatrix
     	public 玉口枷(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 玉口枷D e)
     	{
     		ThisType = GetType();
-    		本体 = new Difs(Sta.胴体["玉口枷"]);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs(Sta.胴体["玉口枷"]);
+    		Pars pars = Body[0][0];
     		X0Y0_金具左上 = pars["金具左上"].ToPar();
     		X0Y0_金具左下 = pars["金具左下"].ToPar();
     		X0Y0_革左 = pars["革左"].ToPar();
@@ -595,8 +595,8 @@ namespace SlaveMatrix
     		X0Y0_丸金具右内 = pars["丸金具右内"].ToPar();
     		X0Y0_丸金具左外 = pars["丸金具左外"].ToPar();
     		X0Y0_丸金具右外 = pars["丸金具右外"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;

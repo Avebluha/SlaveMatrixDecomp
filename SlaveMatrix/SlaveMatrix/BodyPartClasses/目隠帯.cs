@@ -527,8 +527,8 @@ namespace SlaveMatrix
     	public 目隠帯(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 目隠帯D e)
     	{
     		ThisType = GetType();
-    		本体 = new Difs(Sta.胴体["目隠帯"]);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs(Sta.胴体["目隠帯"]);
+    		Pars pars = Body[0][0];
     		X0Y0_革 = pars["革"].ToPar();
     		X0Y0_丸金具上中 = pars["丸金具上中"].ToPar();
     		X0Y0_丸金具上左1 = pars["丸金具上左1"].ToPar();
@@ -551,8 +551,8 @@ namespace SlaveMatrix
     		X0Y0_丸金具下右3 = pars["丸金具下右3"].ToPar();
     		X0Y0_丸金具下右4 = pars["丸金具下右4"].ToPar();
     		X0Y0_丸金具下右5 = pars["丸金具下右5"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;

@@ -165,28 +165,28 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return 本体.CurJoinRoot.SizeBase;
+    			return Body.CurJoinRoot.SizeBase;
     		}
     		set
     		{
-    			foreach (Par item in 本体.EnumAllPar())
+    			foreach (Par item in Body.EnumAllPar())
     			{
     				item.SizeBase = value;
     			}
-    			本体.JoinP();
+    			Body.JoinP();
     		}
     	}
 
     	public 下着乳首(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 下着乳首D e)
     	{
     		ThisType = GetType();
-    		本体 = new Difs(Sta.胴体["下着乳首左"]);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs(Sta.胴体["下着乳首左"]);
+    		Pars pars = Body[0][0];
     		X0Y0_乳首 = pars["乳首"].ToPar();
     		X0Y0_染み2 = pars["染み2"].ToPar();
     		X0Y0_染み1 = pars["染み1"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;

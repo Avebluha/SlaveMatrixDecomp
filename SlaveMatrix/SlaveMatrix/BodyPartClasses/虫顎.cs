@@ -171,18 +171,18 @@ namespace SlaveMatrix
     	{
     		ThisType = GetType();
     		Dif dif = new Dif(Sta.肢左["虫顎"][0]);
-    		本体 = new Difs();
-    		本体.Tag = dif.Tag;
-    		本体.Add(dif);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs();
+    		Body.Tag = dif.Tag;
+    		Body.Add(dif);
+    		Pars pars = Body[0][0];
     		X0Y0_顎 = pars["顎"].ToPar();
     		X0Y0_節 = pars["節"].ToPar();
     		Pars pars2 = pars["牙"].ToPars();
     		X0Y0_牙_牙1 = pars2["牙1"].ToPar();
     		X0Y0_牙_牙2 = pars2["牙2"].ToPar();
     		X0Y0_牙_牙0 = pars2["牙0"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -231,7 +231,7 @@ namespace SlaveMatrix
     	{
     		double num = (右 ? (-1.0) : 1.0);
     		X0Y0_顎.AngleBase = num * -53.0;
-    		本体.JoinPAall();
+    		Body.JoinPAall();
     	}
 
     	public override void 色更新()

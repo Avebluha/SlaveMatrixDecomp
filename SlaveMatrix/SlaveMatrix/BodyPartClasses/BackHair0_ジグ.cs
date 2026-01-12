@@ -384,10 +384,10 @@ namespace SlaveMatrix
     		Dif dif = new Dif();
     		dif.Tag = "ジグ";
     		dif.Add(new Pars(Sta.胴体["BackHair0"][0][0]));
-    		本体 = new Difs();
-    		本体.Tag = dif.Tag;
-    		本体.Add(dif);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs();
+    		Body.Tag = dif.Tag;
+    		Body.Add(dif);
+    		Pars pars = Body[0][0];
     		X0Y0_髪基 = pars["髪基"].ToPar();
     		X0Y0_髪中 = pars["髪中"].ToPar();
     		X0Y0_髪左1 = pars["髪左1"].ToPar();
@@ -400,8 +400,8 @@ namespace SlaveMatrix
     		X0Y0_髪右3 = pars["髪右3"].ToPar();
     		X0Y0_髪右4 = pars["髪右4"].ToPar();
     		X0Y0_髪右5 = pars["髪右5"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -471,7 +471,7 @@ namespace SlaveMatrix
     	public override void SetAngle0()
     	{
     		_ = 右;
-    		本体.JoinPAall();
+    		Body.JoinPAall();
     	}
 
     	public void スライム()

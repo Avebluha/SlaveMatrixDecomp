@@ -1163,18 +1163,18 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public JointS Head_接続点 => new JointS(本体, X0Y0_Neck, 0);
+    	public JointS Head_接続点 => new JointS(Body, X0Y0_Neck, 0);
 
-    	public JointS 鎖1_接続点 => new JointS(本体, X0Y0_首輪_金具左, 0);
+    	public JointS 鎖1_接続点 => new JointS(Body, X0Y0_首輪_金具左, 0);
 
-    	public JointS 鎖2_接続点 => new JointS(本体, X0Y0_首輪_金具右, 0);
+    	public JointS 鎖2_接続点 => new JointS(Body, X0Y0_首輪_金具右, 0);
 
     	public Neck(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, NeckD e)
     	{
     		Neck Neck2 = this;
     		ThisType = GetType();
-    		本体 = new Difs(Sta.胴体["Neck"]);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs(Sta.胴体["Neck"]);
+    		Pars pars = Body[0][0];
     		Pars pars2 = pars["植性"].ToPars();
     		X0Y0_植性_蔦 = pars2["蔦"].ToPar();
     		X0Y0_植性_棘左上 = pars2["刺左上"].ToPar();
@@ -1240,8 +1240,8 @@ namespace SlaveMatrix
     		X0Y0_首輪_金具3 = pars2["金具3"].ToPar();
     		X0Y0_首輪_金具左 = pars2["金具左"].ToPar();
     		X0Y0_首輪_金具右 = pars2["金具右"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;

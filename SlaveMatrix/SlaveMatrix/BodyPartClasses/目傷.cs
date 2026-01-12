@@ -169,24 +169,24 @@ namespace SlaveMatrix
     	public 目傷(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 目傷D e)
     	{
     		ThisType = GetType();
-    		本体 = new Difs(Sta.胴体["目傷左"]);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs(Sta.胴体["目傷左"]);
+    		Pars pars = Body[0][0];
     		X0Y0_傷上 = pars["傷上"].ToPar();
     		X0Y0_傷下 = pars["傷下"].ToPar();
-    		pars = 本体[0][1];
+    		pars = Body[0][1];
     		X0Y1_傷上 = pars["傷上"].ToPar();
     		X0Y1_傷下 = pars["傷下"].ToPar();
-    		pars = 本体[0][2];
+    		pars = Body[0][2];
     		X0Y2_傷上 = pars["傷上"].ToPar();
     		X0Y2_傷下 = pars["傷下"].ToPar();
-    		pars = 本体[0][3];
+    		pars = Body[0][3];
     		X0Y3_傷上 = pars["傷上"].ToPar();
     		X0Y3_傷下 = pars["傷下"].ToPar();
-    		pars = 本体[0][4];
+    		pars = Body[0][4];
     		X0Y4_傷上 = pars["傷上"].ToPar();
     		X0Y4_傷下 = pars["傷下"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -235,7 +235,7 @@ namespace SlaveMatrix
 
     	public override void 色更新()
     	{
-    		switch (本体.IndexY)
+    		switch (Body.IndexY)
     		{
     		case 0:
     			X0Y0_傷上CP.Update();

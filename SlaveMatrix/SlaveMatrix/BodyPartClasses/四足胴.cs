@@ -191,20 +191,20 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public JointS Waist_接続点 => new JointS(本体, X0Y0_Torso, 4);
+    	public JointS Waist_接続点 => new JointS(Body, X0Y0_Torso, 4);
 
-    	public JointS 肌_接続点 => new JointS(本体, X0Y0_Torso, 5);
+    	public JointS 肌_接続点 => new JointS(Body, X0Y0_Torso, 5);
 
-    	public JointS 翼左_接続点 => new JointS(本体, X0Y0_Torso, 0);
+    	public JointS 翼左_接続点 => new JointS(Body, X0Y0_Torso, 0);
 
-    	public JointS 翼右_接続点 => new JointS(本体, X0Y0_Torso, 1);
+    	public JointS 翼右_接続点 => new JointS(Body, X0Y0_Torso, 1);
 
     	public 四足胴(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 四足胴D e)
     	{
     		四足胴 四足胴2 = this;
     		ThisType = GetType();
-    		本体 = new Difs(Sta.半身["四足胴"]);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs(Sta.半身["四足胴"]);
+    		Pars pars = Body[0][0];
     		X0Y0_Torso = pars["Torso"].ToPar();
     		Pars pars2 = pars["筋肉"].ToPars();
     		X0Y0_筋肉_筋肉左 = pars2["筋肉左"].ToPar();
@@ -212,8 +212,8 @@ namespace SlaveMatrix
     		pars2 = pars["獣性"].ToPars();
     		X0Y0_獣性_獣毛左 = pars2["獣毛左"].ToPar();
     		X0Y0_獣性_獣毛右 = pars2["獣毛右"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;

@@ -308,8 +308,8 @@ namespace SlaveMatrix
     	public 鼻肌(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 鼻肌D e)
     	{
     		ThisType = GetType();
-    		本体 = new Difs(Sta.胴体["鼻肌"]);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs(Sta.胴体["鼻肌"]);
+    		Pars pars = Body[0][0];
     		Pars pars2 = pars["紋柄"].ToPars();
     		Pars pars3 = pars2["紋左"].ToPars();
     		X0Y0_紋柄_紋左_紋1 = pars3["紋1"].ToPar();
@@ -324,8 +324,8 @@ namespace SlaveMatrix
     		X0Y0_紋柄_紋右_紋4 = pars3["紋4"].ToPar();
     		X0Y0_紋柄_紋右_紋5 = pars3["紋5"].ToPar();
     		X0Y0_傷I = pars["傷I"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;

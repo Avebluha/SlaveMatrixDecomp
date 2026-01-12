@@ -3441,14 +3441,14 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public JointS LowerArm_接続点 => new JointS(本体, X0Y0_UpperArm, 1);
+    	public JointS LowerArm_接続点 => new JointS(Body, X0Y0_UpperArm, 1);
 
     	public UpperArm_人(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, UpperArm_人D e)
     	{
     		UpperArm_人 UpperArm_人2 = this;
     		ThisType = GetType();
-    		本体 = new Difs(Sta.腕左["UpperArm"]);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs(Sta.腕左["UpperArm"]);
+    		Pars pars = Body[0][0];
     		X0Y0_筋肉上 = pars["筋肉上"].ToPar();
     		X0Y0_UpperArm = pars["上腕"].ToPar();
     		X0Y0_筋肉下 = pars["筋肉下"].ToPar();
@@ -3609,8 +3609,8 @@ namespace SlaveMatrix
     		X0Y0_鎧_鎧_鎧1 = pars3["鎧1"].ToPar();
     		X0Y0_鎧_鎧_鎧2 = pars3["鎧2"].ToPar();
     		Xasix = false;
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -4047,7 +4047,7 @@ namespace SlaveMatrix
     		double num = (右 ? (-1.0) : 1.0);
     		X0Y0_UpperArm.AngleBase = num * -30.0;
     		尺度XC = 0.95;
-    		本体.JoinPAall();
+    		Body.JoinPAall();
     	}
 
     	public override bool Is布(Par p)

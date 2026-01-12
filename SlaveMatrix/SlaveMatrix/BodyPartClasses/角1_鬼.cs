@@ -73,7 +73,7 @@ namespace SlaveMatrix
     		set
     		{
     			欠損_ = value;
-    			本体.IndexY = (欠損_ ? 1 : 0);
+    			Body.IndexY = (欠損_ ? 1 : 0);
     		}
     	}
 
@@ -253,24 +253,24 @@ namespace SlaveMatrix
     	{
     		ThisType = GetType();
     		Dif dif = new Dif(Sta.肢中["角"][1]);
-    		本体 = new Difs();
-    		本体.Tag = dif.Tag;
-    		本体.Add(dif);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs();
+    		Body.Tag = dif.Tag;
+    		Body.Add(dif);
+    		Pars pars = Body[0][0];
     		X0Y0_根 = pars["根"].ToPar();
     		X0Y0_線1 = pars["線1"].ToPar();
     		X0Y0_線2 = pars["線2"].ToPar();
     		X0Y0_線3 = pars["線3"].ToPar();
     		X0Y0_線4 = pars["線4"].ToPar();
     		X0Y0_線5 = pars["線5"].ToPar();
-    		pars = 本体[0][1];
+    		pars = Body[0][1];
     		X0Y1_根 = pars["根"].ToPar();
     		X0Y1_折線1 = pars["折線1"].ToPar();
     		X0Y1_折線2 = pars["折線2"].ToPar();
     		X0Y1_線1 = pars["線1"].ToPar();
     		X0Y1_線2 = pars["線2"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -326,7 +326,7 @@ namespace SlaveMatrix
 
     	public override void 色更新()
     	{
-    		if (本体.IndexY == 0)
+    		if (Body.IndexY == 0)
     		{
     			X0Y0_根CP.Update();
     			X0Y0_線1CP.Update();

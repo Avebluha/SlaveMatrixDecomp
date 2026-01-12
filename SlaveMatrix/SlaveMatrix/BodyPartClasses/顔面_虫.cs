@@ -631,19 +631,19 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public JointS 触覚左_接続点 => new JointS(本体, X0Y0_付根左_付根2, 0);
+    	public JointS 触覚左_接続点 => new JointS(Body, X0Y0_付根左_付根2, 0);
 
-    	public JointS 触覚右_接続点 => new JointS(本体, X0Y0_付根右_付根2, 0);
+    	public JointS 触覚右_接続点 => new JointS(Body, X0Y0_付根右_付根2, 0);
 
     	public 顔面_虫(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 顔面_虫D e)
     	{
     		顔面_虫 顔面_虫2 = this;
     		ThisType = GetType();
     		Dif dif = new Dif(Sta.肢中["顔面"][1]);
-    		本体 = new Difs();
-    		本体.Tag = dif.Tag;
-    		本体.Add(dif);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs();
+    		Body.Tag = dif.Tag;
+    		Body.Add(dif);
+    		Pars pars = Body[0][0];
     		X0Y0_面基 = pars["面基"].ToPar();
     		Pars pars2 = pars["複眼左"].ToPars();
     		X0Y0_複眼左_複眼1 = pars2["複眼1"].ToPar();
@@ -679,8 +679,8 @@ namespace SlaveMatrix
     		X0Y0_単眼_眼右_基 = pars3["基"].ToPar();
     		X0Y0_単眼_眼右_眼 = pars3["眼"].ToPar();
     		X0Y0_単眼_眼右_ハイライト = pars3["ハイライト"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;

@@ -89,7 +89,7 @@ namespace SlaveMatrix
     		set
     		{
     			欠損_ = value;
-    			本体.IndexY = (欠損_ ? 1 : 0);
+    			Body.IndexY = (欠損_ ? 1 : 0);
     		}
     	}
 
@@ -301,10 +301,10 @@ namespace SlaveMatrix
     	{
     		ThisType = GetType();
     		Dif dif = new Dif(Sta.肢左["角"][4]);
-    		本体 = new Difs();
-    		本体.Tag = dif.Tag;
-    		本体.Add(dif);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs();
+    		Body.Tag = dif.Tag;
+    		Body.Add(dif);
+    		Pars pars = Body[0][0];
     		X0Y0_根 = pars["根"].ToPar();
     		X0Y0_凹1 = pars["凹1"].ToPar();
     		X0Y0_凹2 = pars["凹2"].ToPar();
@@ -315,13 +315,13 @@ namespace SlaveMatrix
     		X0Y0_凹7 = pars["凹7"].ToPar();
     		X0Y0_凹8 = pars["凹8"].ToPar();
     		X0Y0_線 = pars["線"].ToPar();
-    		pars = 本体[0][1];
+    		pars = Body[0][1];
     		X0Y1_根 = pars["根"].ToPar();
     		X0Y1_凹1 = pars["凹1"].ToPar();
     		X0Y1_凹2 = pars["凹2"].ToPar();
     		X0Y1_凹3 = pars["凹3"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -385,12 +385,12 @@ namespace SlaveMatrix
     		double num = (右 ? (-1.0) : 1.0);
     		X0Y0_根.AngleBase = num * -33.0000000000003;
     		X0Y1_根.AngleBase = num * -33.0000000000003;
-    		本体.JoinPAall();
+    		Body.JoinPAall();
     	}
 
     	public override void 色更新()
     	{
-    		if (本体.IndexY == 0)
+    		if (Body.IndexY == 0)
     		{
     			X0Y0_根CP.Update();
     			X0Y0_凹1CP.Update();

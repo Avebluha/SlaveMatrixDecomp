@@ -17,11 +17,11 @@ namespace SlaveMatrix
     			}
     			foreach (sep stum in sta)
     			{
-    				p = stum.Ele.本体.Current.GetPar(stum.Path);
+    				p = stum.Ele.Body.Current.GetPar(stum.Path);
     				stum.Sta.角度B = p.AngleBase - stum.Par.AngleBase;
     				stum.Sta.位置B = p.ToGlobal(stum.Pos);
     				stum.Sta.色更新();
-    				stum.Sta.本体.Draw(Are);
+    				stum.Sta.Body.Draw(Are);
     			}
     		}
     		catch
@@ -33,7 +33,7 @@ namespace SlaveMatrix
     	{
     		if (チェック2(he) && he == Par)
     		{
-    			p = he.本体.GetHitPar_(hc);
+    			p = he.Body.GetHitPar_(hc);
     			c2 = he.GetParOfColorP(p).ColorD.色;
     			if (c2.Col1 == Cha.配色.人肌O.Col1 || c2.Col2 == Cha.配色.人肌O.Col1)
     			{

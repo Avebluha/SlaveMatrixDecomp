@@ -683,8 +683,8 @@ namespace SlaveMatrix
     	public バイブ_ディル(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, バイブ_ディルD e)
     	{
     		ThisType = GetType();
-    		本体 = new Difs(Sta.カーソル["ディル"]);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs(Sta.カーソル["ディル"]);
+    		Pars pars = Body[0][0];
     		X0Y0_ヘッド = pars["ヘッド"].ToPar();
     		X0Y0_血管1 = pars["血管1"].ToPar();
     		X0Y0_血管2 = pars["血管2"].ToPar();
@@ -700,7 +700,7 @@ namespace SlaveMatrix
     		X0Y0_ユニット_パワー2 = pars2["パワー2"].ToPar();
     		X0Y0_ユニット_パワー3 = pars2["パワー3"].ToPar();
     		X0Y0_ユニット_パワー4 = pars2["パワー4"].ToPar();
-    		pars = 本体[0][1];
+    		pars = Body[0][1];
     		X0Y1_ヘッド = pars["ヘッド"].ToPar();
     		X0Y1_血管1 = pars["血管1"].ToPar();
     		X0Y1_血管2 = pars["血管2"].ToPar();
@@ -716,7 +716,7 @@ namespace SlaveMatrix
     		X0Y1_ユニット_パワー2 = pars2["パワー2"].ToPar();
     		X0Y1_ユニット_パワー3 = pars2["パワー3"].ToPar();
     		X0Y1_ユニット_パワー4 = pars2["パワー4"].ToPar();
-    		pars = 本体[0][2];
+    		pars = Body[0][2];
     		X0Y2_ヘッド = pars["ヘッド"].ToPar();
     		X0Y2_血管1 = pars["血管1"].ToPar();
     		X0Y2_血管2 = pars["血管2"].ToPar();
@@ -731,7 +731,7 @@ namespace SlaveMatrix
     		X0Y2_ユニット_パワー2 = pars2["パワー2"].ToPar();
     		X0Y2_ユニット_パワー3 = pars2["パワー3"].ToPar();
     		X0Y2_ユニット_パワー4 = pars2["パワー4"].ToPar();
-    		pars = 本体[0][3];
+    		pars = Body[0][3];
     		X0Y3_ヘッド = pars["ヘッド"].ToPar();
     		X0Y3_血管1 = pars["血管1"].ToPar();
     		X0Y3_血管2 = pars["血管2"].ToPar();
@@ -746,7 +746,7 @@ namespace SlaveMatrix
     		X0Y3_ユニット_パワー2 = pars2["パワー2"].ToPar();
     		X0Y3_ユニット_パワー3 = pars2["パワー3"].ToPar();
     		X0Y3_ユニット_パワー4 = pars2["パワー4"].ToPar();
-    		pars = 本体[0][4];
+    		pars = Body[0][4];
     		X0Y4_ヘッド = pars["ヘッド"].ToPar();
     		X0Y4_血管 = pars["血管"].ToPar();
     		pars2 = pars["ユニット"].ToPars();
@@ -760,8 +760,8 @@ namespace SlaveMatrix
     		X0Y4_ユニット_パワー2 = pars2["パワー2"].ToPar();
     		X0Y4_ユニット_パワー3 = pars2["パワー3"].ToPar();
     		X0Y4_ユニット_パワー4 = pars2["パワー4"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -882,12 +882,12 @@ namespace SlaveMatrix
     		X0Y4_ユニット_ユニット.BasePointBase = X0Y4_ユニット_ユニット.ToLocal(X0Y4_ヘッド.ToGlobal(X0Y4_ヘッド.JP[2].Joint));
     		尺度B *= 1.07;
     		尺度B = 1.08;
-    		本体.JoinPAall();
+    		Body.JoinPAall();
     	}
 
     	public override void 色更新()
     	{
-    		switch (本体.IndexY)
+    		switch (Body.IndexY)
     		{
     		case 0:
     			X0Y0_ヘッドCP.Update();

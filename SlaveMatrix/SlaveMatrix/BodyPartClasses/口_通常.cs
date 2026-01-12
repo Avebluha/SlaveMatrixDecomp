@@ -791,10 +791,10 @@ namespace SlaveMatrix
     	{
     		ThisType = GetType();
     		Dif dif = new Dif(Sta.胴体["口"][0]);
-    		本体 = new Difs();
-    		本体.Tag = dif.Tag;
-    		本体.Add(dif);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs();
+    		Body.Tag = dif.Tag;
+    		Body.Add(dif);
+    		Pars pars = Body[0][0];
     		X0Y0_口 = pars["口"].ToPar();
     		X0Y0_口紅上 = pars["口紅上"].ToPar();
     		X0Y0_牙左 = pars["牙左"].ToPar();
@@ -802,7 +802,7 @@ namespace SlaveMatrix
     		Pars pars2 = pars["口紅下"].ToPars();
     		X0Y0_口紅下_口紅 = pars2["口紅"].ToPar();
     		X0Y0_口紅下_ハイライト = pars2["ハイライト"].ToPar();
-    		pars = 本体[0][1];
+    		pars = Body[0][1];
     		X0Y1_口 = pars["口"].ToPar();
     		X0Y1_口紅上 = pars["口紅上"].ToPar();
     		X0Y1_牙左 = pars["牙左"].ToPar();
@@ -810,7 +810,7 @@ namespace SlaveMatrix
     		pars2 = pars["口紅下"].ToPars();
     		X0Y1_口紅下_口紅 = pars2["口紅"].ToPar();
     		X0Y1_口紅下_ハイライト = pars2["ハイライト"].ToPar();
-    		pars = 本体[0][2];
+    		pars = Body[0][2];
     		X0Y2_口 = pars["口"].ToPar();
     		X0Y2_口紅上 = pars["口紅上"].ToPar();
     		X0Y2_歯 = pars["歯"].ToPar();
@@ -819,7 +819,7 @@ namespace SlaveMatrix
     		pars2 = pars["口紅下"].ToPars();
     		X0Y2_口紅下_口紅 = pars2["口紅"].ToPar();
     		X0Y2_口紅下_ハイライト = pars2["ハイライト"].ToPar();
-    		pars = 本体[0][3];
+    		pars = Body[0][3];
     		X0Y3_口 = pars["口"].ToPar();
     		X0Y3_口紅上 = pars["口紅上"].ToPar();
     		X0Y3_歯 = pars["歯"].ToPar();
@@ -828,7 +828,7 @@ namespace SlaveMatrix
     		pars2 = pars["口紅下"].ToPars();
     		X0Y3_口紅下_口紅 = pars2["口紅"].ToPar();
     		X0Y3_口紅下_ハイライト = pars2["ハイライト"].ToPar();
-    		pars = 本体[0][4];
+    		pars = Body[0][4];
     		X0Y4_口 = pars["口"].ToPar();
     		X0Y4_口紅上 = pars["口紅上"].ToPar();
     		X0Y4_牙左 = pars["牙左"].ToPar();
@@ -836,7 +836,7 @@ namespace SlaveMatrix
     		pars2 = pars["口紅下"].ToPars();
     		X0Y4_口紅下_口紅 = pars2["口紅"].ToPar();
     		X0Y4_口紅下_ハイライト = pars2["ハイライト"].ToPar();
-    		pars = 本体[0][5];
+    		pars = Body[0][5];
     		X0Y5_口 = pars["口"].ToPar();
     		X0Y5_口紅上 = pars["口紅上"].ToPar();
     		X0Y5_牙左 = pars["牙左"].ToPar();
@@ -844,7 +844,7 @@ namespace SlaveMatrix
     		pars2 = pars["口紅下"].ToPars();
     		X0Y5_口紅下_口紅 = pars2["口紅"].ToPar();
     		X0Y5_口紅下_ハイライト = pars2["ハイライト"].ToPar();
-    		pars = 本体[0][6];
+    		pars = Body[0][6];
     		X0Y6_口 = pars["口"].ToPar();
     		X0Y6_口紅上 = pars["口紅上"].ToPar();
     		X0Y6_牙左 = pars["牙左"].ToPar();
@@ -852,7 +852,7 @@ namespace SlaveMatrix
     		pars2 = pars["口紅下"].ToPars();
     		X0Y6_口紅下_口紅 = pars2["口紅"].ToPar();
     		X0Y6_口紅下_ハイライト = pars2["ハイライト"].ToPar();
-    		pars = 本体[0][7];
+    		pars = Body[0][7];
     		X0Y7_口 = pars["口"].ToPar();
     		X0Y7_歯 = pars["歯"].ToPar();
     		X0Y7_口紅上 = pars["口紅上"].ToPar();
@@ -861,7 +861,7 @@ namespace SlaveMatrix
     		pars2 = pars["口紅下"].ToPars();
     		X0Y7_口紅下_口紅 = pars2["口紅"].ToPar();
     		X0Y7_口紅下_ハイライト = pars2["ハイライト"].ToPar();
-    		pars = 本体[0][8];
+    		pars = Body[0][8];
     		X0Y8_口 = pars["口"].ToPar();
     		X0Y8_歯 = pars["歯"].ToPar();
     		X0Y8_口紅上 = pars["口紅上"].ToPar();
@@ -870,7 +870,7 @@ namespace SlaveMatrix
     		pars2 = pars["口紅下"].ToPars();
     		X0Y8_口紅下_口紅 = pars2["口紅"].ToPar();
     		X0Y8_口紅下_ハイライト = pars2["ハイライト"].ToPar();
-    		pars = 本体[0][9];
+    		pars = Body[0][9];
     		X0Y9_口 = pars["口"].ToPar();
     		X0Y9_口紅上 = pars["口紅上"].ToPar();
     		X0Y9_牙左 = pars["牙左"].ToPar();
@@ -878,7 +878,7 @@ namespace SlaveMatrix
     		pars2 = pars["口紅下"].ToPars();
     		X0Y9_口紅下_口紅 = pars2["口紅"].ToPar();
     		X0Y9_口紅下_ハイライト = pars2["ハイライト"].ToPar();
-    		pars = 本体[0][10];
+    		pars = Body[0][10];
     		X0Y10_口 = pars["口"].ToPar();
     		X0Y10_口紅上 = pars["口紅上"].ToPar();
     		X0Y10_牙左 = pars["牙左"].ToPar();
@@ -886,7 +886,7 @@ namespace SlaveMatrix
     		pars2 = pars["口紅下"].ToPars();
     		X0Y10_口紅下_口紅 = pars2["口紅"].ToPar();
     		X0Y10_口紅下_ハイライト = pars2["ハイライト"].ToPar();
-    		pars = 本体[0][11];
+    		pars = Body[0][11];
     		X0Y11_口 = pars["口"].ToPar();
     		X0Y11_口紅上 = pars["口紅上"].ToPar();
     		X0Y11_牙左 = pars["牙左"].ToPar();
@@ -894,7 +894,7 @@ namespace SlaveMatrix
     		pars2 = pars["口紅下"].ToPars();
     		X0Y11_口紅下_口紅 = pars2["口紅"].ToPar();
     		X0Y11_口紅下_ハイライト = pars2["ハイライト"].ToPar();
-    		pars = 本体[0][12];
+    		pars = Body[0][12];
     		X0Y12_口 = pars["口"].ToPar();
     		X0Y12_口紅上 = pars["口紅上"].ToPar();
     		X0Y12_牙左 = pars["牙左"].ToPar();
@@ -902,7 +902,7 @@ namespace SlaveMatrix
     		pars2 = pars["口紅下"].ToPars();
     		X0Y12_口紅下_口紅 = pars2["口紅"].ToPar();
     		X0Y12_口紅下_ハイライト = pars2["ハイライト"].ToPar();
-    		pars = 本体[0][13];
+    		pars = Body[0][13];
     		X0Y13_口 = pars["口"].ToPar();
     		X0Y13_頬左 = pars["頬左"].ToPar();
     		X0Y13_頬右 = pars["頬右"].ToPar();
@@ -912,8 +912,8 @@ namespace SlaveMatrix
     		pars2 = pars["口紅下"].ToPars();
     		X0Y13_口紅下_口紅 = pars2["口紅"].ToPar();
     		X0Y13_口紅下_ハイライト = pars2["ハイライト"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -1053,7 +1053,7 @@ namespace SlaveMatrix
 
     	public override void 色更新()
     	{
-    		switch (本体.IndexY)
+    		switch (Body.IndexY)
     		{
     		case 0:
     			X0Y0_口CP.Update();

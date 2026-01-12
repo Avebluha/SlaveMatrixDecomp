@@ -124,15 +124,15 @@ namespace SlaveMatrix
     	public 単眼眉(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 単眼眉D e)
     	{
     		ThisType = GetType();
-    		本体 = new Difs(Sta.胴体["単眼眉"]);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs(Sta.胴体["単眼眉"]);
+    		Pars pars = Body[0][0];
     		X0Y0_眉 = pars["眉"].ToPar();
-    		pars = 本体[0][1];
+    		pars = Body[0][1];
     		X0Y1_眉 = pars["眉"].ToPar();
-    		pars = 本体[0][2];
+    		pars = Body[0][2];
     		X0Y2_眉 = pars["眉"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -173,7 +173,7 @@ namespace SlaveMatrix
 
     	public override void 色更新()
     	{
-    		switch (本体.IndexY)
+    		switch (Body.IndexY)
     		{
     		case 0:
     			X0Y0_眉CP.Update();

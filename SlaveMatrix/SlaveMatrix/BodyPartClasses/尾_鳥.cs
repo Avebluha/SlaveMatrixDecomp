@@ -604,10 +604,10 @@ namespace SlaveMatrix
     		Dif dif = new Dif();
     		dif.Tag = "鳥尾";
     		dif.Add(new Pars(Sta.尻尾["尾"][0][9]));
-    		本体 = new Difs();
-    		本体.Tag = dif.Tag;
-    		本体.Add(dif);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs();
+    		Body.Tag = dif.Tag;
+    		Body.Add(dif);
+    		Pars pars = Body[0][0];
     		X0Y0_尾0 = pars["尾0"].ToPar();
     		Pars pars2 = pars["風切羽"].ToPars();
     		Pars pars3 = pars2["左"].ToPars();
@@ -638,8 +638,8 @@ namespace SlaveMatrix
     		X0Y0_雨覆羽_右_羽4 = pars3["羽4"].ToPar();
     		X0Y0_雨覆羽_右_羽5 = pars3["羽5"].ToPar();
     		X0Y0_羽根 = pars["羽根"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -748,7 +748,7 @@ namespace SlaveMatrix
     		X0Y0_雨覆羽_右_羽3.AngleBase = num * -42.0;
     		X0Y0_雨覆羽_右_羽4.AngleBase = num * -52.0;
     		X0Y0_雨覆羽_右_羽5.AngleBase = num * -62.0;
-    		本体.JoinPAall();
+    		Body.JoinPAall();
     	}
 
     	public override IEnumerable<Par> Enum軸()

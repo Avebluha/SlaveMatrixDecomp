@@ -737,8 +737,8 @@ namespace SlaveMatrix
     	public 頬肌(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 頬肌D e)
     	{
     		ThisType = GetType();
-    		本体 = new Difs(Sta.胴体["頬肌左"]);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs(Sta.胴体["頬肌左"]);
+    		Pars pars = Body[0][0];
     		Pars pars2 = pars["淫タトゥ"].ToPars();
     		Pars pars3 = pars2["ハート"].ToPars();
     		X0Y0_淫タトゥ_ハート_タトゥ左 = pars3["タトゥ左"].ToPar();
@@ -787,8 +787,8 @@ namespace SlaveMatrix
     		X0Y0_猟豹_タトゥ = pars2["タトゥ"].ToPar();
     		pars2 = pars["牛柄"].ToPars();
     		X0Y0_牛柄_牛柄 = pars2["牛柄"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;

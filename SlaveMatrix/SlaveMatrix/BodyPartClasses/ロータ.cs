@@ -189,27 +189,27 @@ namespace SlaveMatrix
     	public ロータ(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, ロータD e)
     	{
     		ThisType = GetType();
-    		本体 = new Difs(Sta.カーソル["ロータ"]);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs(Sta.カーソル["ロータ"]);
+    		Pars pars = Body[0][0];
     		X0Y0_ロータ = pars["ロータ"].ToPar();
     		X0Y0_ロータ線 = pars["ロータ線"].ToPar();
     		X0Y0_コード = pars["コード"].ToPar();
-    		pars = 本体[0][1];
+    		pars = Body[0][1];
     		X0Y1_ロータ = pars["ロータ"].ToPar();
     		X0Y1_ロータ線 = pars["ロータ線"].ToPar();
     		X0Y1_コード = pars["コード"].ToPar();
-    		pars = 本体[0][2];
+    		pars = Body[0][2];
     		X0Y2_ロータ = pars["ロータ"].ToPar();
     		X0Y2_ロータ線 = pars["ロータ線"].ToPar();
     		X0Y2_コード = pars["コード"].ToPar();
-    		pars = 本体[0][3];
+    		pars = Body[0][3];
     		X0Y3_ロータ = pars["ロータ"].ToPar();
     		X0Y3_コード = pars["コード"].ToPar();
-    		pars = 本体[0][4];
+    		pars = Body[0][4];
     		X0Y4_ロータ = pars["ロータ"].ToPar();
     		X0Y4_コード = pars["コード"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -264,12 +264,12 @@ namespace SlaveMatrix
     		X0Y3_ロータ.BasePointBase = X0Y3_ロータ.ToLocal(X0Y3_ロータ.ToGlobal(X0Y3_ロータ.JP[1].Joint));
     		X0Y4_ロータ.BasePointBase = X0Y4_ロータ.ToLocal(X0Y4_ロータ.ToGlobal(X0Y4_ロータ.JP[1].Joint));
     		尺度B = 1.08;
-    		本体.JoinPAall();
+    		Body.JoinPAall();
     	}
 
     	public override void 色更新()
     	{
-    		switch (本体.IndexY)
+    		switch (Body.IndexY)
     		{
     		case 0:
     			X0Y0_ロータCP.Update();

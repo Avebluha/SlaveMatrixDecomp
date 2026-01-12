@@ -231,7 +231,7 @@ namespace SlaveMatrix
     			if (Bod.断面_表示)
     			{
     				dv = (dv + value).Clamp(0.0, 1.0);
-    				dy = ((dv >= 1.0) ? (対象.Ele.本体.CountY - 1) : ((int)((double)対象.Ele.本体.CountY * dv)));
+    				dy = ((dv >= 1.0) ? (対象.Ele.Body.CountY - 1) : ((int)((double)対象.Ele.Body.CountY * dv)));
     				if (対象.Ele is バイブ_アナル)
     				{
     					dy = dy.Limit(0, Bod.Is獣 ? A断面獣最大i : A断面人最大i);
@@ -660,9 +660,9 @@ namespace SlaveMatrix
     			if (Bod.断面_表示)
     			{
     				Bod.性器.接続PA();
-    				対象.Ele.位置B = Bod.性器.本体.Current.EnumAllPar().First((Par p_) => p_.Tag.Contains("膣口")).Position;
-    				p0 = 対象.Ele.本体.pr[対象.Ele.本体[対象.Ele.本体.IndexX][0]];
-    				py = 対象.Ele.本体.pr[対象.Ele.本体[対象.Ele.本体.IndexX][dy]];
+    				対象.Ele.位置B = Bod.性器.Body.Current.EnumAllPar().First((Par p_) => p_.Tag.Contains("膣口")).Position;
+    				p0 = 対象.Ele.Body.pr[対象.Ele.Body[対象.Ele.Body.IndexX][0]];
+    				py = 対象.Ele.Body.pr[対象.Ele.Body[対象.Ele.Body.IndexX][dy]];
     				if (pn)
     				{
     					bp = py.PositionBase;
@@ -869,7 +869,7 @@ namespace SlaveMatrix
     			対象.Ele.Yi = 0;
     			Bod.性器.Xi = 3;
     			dv = v;
-    			dy = ((dv >= 1.0) ? (対象.Ele.本体.CountY - 1) : ((int)((double)対象.Ele.本体.CountY * dv)));
+    			dy = ((dv >= 1.0) ? (対象.Ele.Body.CountY - 1) : ((int)((double)対象.Ele.Body.CountY * dv)));
     			if (対象.Ele is バイブ_アナル)
     			{
     				dy = dy.Limit(0, Bod.Is獣 ? A断面獣最大i : A断面人最大i);
@@ -1517,7 +1517,7 @@ namespace SlaveMatrix
     					if (v)
     					{
     						対象.Ele.位置C = p.MulX(0.5);
-    						対象.Ele.本体.Current.EnumAllPar().First((Par e) => e.Tag.Contains("ヘッド")).PositionCont = p;
+    						対象.Ele.Body.Current.EnumAllPar().First((Par e) => e.Tag.Contains("ヘッド")).PositionCont = p;
     					}
     					else
     					{
@@ -1557,7 +1557,7 @@ namespace SlaveMatrix
     				Ending = delegate(Mot m)
     				{
     					m.ResetValue();
-    					foreach (Par item in 対象.Ele.本体.EnumAllPar())
+    					foreach (Par item in 対象.Ele.Body.EnumAllPar())
     					{
     						item.PositionCont = Dat.Vec2DZero;
     					}
@@ -1579,7 +1579,7 @@ namespace SlaveMatrix
     				Runing = delegate(Mot m)
     				{
     					対象.Ele.Xv = m.Value;
-    					対象.Ele.本体.JoinPA();
+    					対象.Ele.Body.JoinPA();
     					if (挿入処理2.Is挿入)
     					{
     						調教UI.Action(挿入処理2.挿入箇所, ActionType.Insertion, CurrentState.Continue, 挿入処理2.アイテム情報, 対象.Ele.Yi, 挿入処理2.強さ, 機械: true, 射精: false);
@@ -1675,12 +1675,12 @@ namespace SlaveMatrix
     		押し付け = 振動機能 || 対象.Ele is ペニス;
     		A断面獣最大i = 5;
     		A断面人最大i = A断面獣最大i - 1;
-    		double num = 1.0 / (double)調教UI.アナル.本体.CountY;
+    		double num = 1.0 / (double)調教UI.アナル.Body.CountY;
     		A通常獣最大v = num * (double)(A断面獣最大i - 1);
     		A通常人最大v = num * (double)(A断面人最大i - 1);
     		P断面獣最大i = 11;
     		P断面人最大i = P断面獣最大i - 1;
-    		double num2 = 1.0 / (double)調教UI.パール.本体.CountY;
+    		double num2 = 1.0 / (double)調教UI.パール.Body.CountY;
     		P通常獣最大v = num2 * (double)(P断面獣最大i - 1);
     		P通常人最大v = num2 * (double)(P断面人最大i - 1);
     		psi = ((対象.Ele is ロータ) ? 2 : 0);
@@ -1717,8 +1717,8 @@ namespace SlaveMatrix
     	{
     		base.Cha = Cha;
     		Bod = Cha.Bod;
-    		性器単位v = 1.0 / (double)Bod.性器.本体.CountY;
-    		断面単位v = 1.0 / (double)Bod.断面.本体.CountY;
+    		性器単位v = 1.0 / (double)Bod.性器.Body.CountY;
+    		断面単位v = 1.0 / (double)Bod.断面.Body.CountY;
     		断面単位v2 = 断面単位v * 2.0;
     		断面単位v3 = 断面単位v * 3.0;
     	}

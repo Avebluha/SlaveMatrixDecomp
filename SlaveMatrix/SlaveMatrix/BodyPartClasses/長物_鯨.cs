@@ -837,43 +837,43 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public JointS 左0_接続点 => new JointS(本体, X0Y0_Torso1_Torso, 4);
+    	public JointS 左0_接続点 => new JointS(Body, X0Y0_Torso1_Torso, 4);
 
-    	public JointS 右0_接続点 => new JointS(本体, X0Y0_Torso1_Torso, 5);
+    	public JointS 右0_接続点 => new JointS(Body, X0Y0_Torso1_Torso, 5);
 
-    	public JointS 左1_接続点 => new JointS(本体, X0Y0_Torso1_Torso, 2);
+    	public JointS 左1_接続点 => new JointS(Body, X0Y0_Torso1_Torso, 2);
 
-    	public JointS 右1_接続点 => new JointS(本体, X0Y0_Torso1_Torso, 3);
+    	public JointS 右1_接続点 => new JointS(Body, X0Y0_Torso1_Torso, 3);
 
-    	public JointS 左2_接続点 => new JointS(本体, X0Y0_Torso2_Torso, 2);
+    	public JointS 左2_接続点 => new JointS(Body, X0Y0_Torso2_Torso, 2);
 
-    	public JointS 右2_接続点 => new JointS(本体, X0Y0_Torso2_Torso, 3);
+    	public JointS 右2_接続点 => new JointS(Body, X0Y0_Torso2_Torso, 3);
 
-    	public JointS 左3_接続点 => new JointS(本体, X0Y0_Torso3_Torso, 2);
+    	public JointS 左3_接続点 => new JointS(Body, X0Y0_Torso3_Torso, 2);
 
-    	public JointS 右3_接続点 => new JointS(本体, X0Y0_Torso3_Torso, 3);
+    	public JointS 右3_接続点 => new JointS(Body, X0Y0_Torso3_Torso, 3);
 
-    	public JointS 左4_接続点 => new JointS(本体, X0Y0_Torso4_Torso, 2);
+    	public JointS 左4_接続点 => new JointS(Body, X0Y0_Torso4_Torso, 2);
 
-    	public JointS 右4_接続点 => new JointS(本体, X0Y0_Torso4_Torso, 3);
+    	public JointS 右4_接続点 => new JointS(Body, X0Y0_Torso4_Torso, 3);
 
-    	public JointS 左5_接続点 => new JointS(本体, X0Y0_Torso5_Torso, 2);
+    	public JointS 左5_接続点 => new JointS(Body, X0Y0_Torso5_Torso, 2);
 
-    	public JointS 右5_接続点 => new JointS(本体, X0Y0_Torso5_Torso, 3);
+    	public JointS 右5_接続点 => new JointS(Body, X0Y0_Torso5_Torso, 3);
 
-    	public JointS 左6_接続点 => new JointS(本体, X0Y0_Torso6_Torso, 2);
+    	public JointS 左6_接続点 => new JointS(Body, X0Y0_Torso6_Torso, 2);
 
-    	public JointS 右6_接続点 => new JointS(本体, X0Y0_Torso6_Torso, 3);
+    	public JointS 右6_接続点 => new JointS(Body, X0Y0_Torso6_Torso, 3);
 
-    	public JointS 尾_接続点 => new JointS(本体, X0Y0_Torso6_Torso, 1);
+    	public JointS 尾_接続点 => new JointS(Body, X0Y0_Torso6_Torso, 1);
 
-    	public JointS 鎖1_接続点 => new JointS(本体, X0Y0_輪1_金具左, 0);
+    	public JointS 鎖1_接続点 => new JointS(Body, X0Y0_輪1_金具左, 0);
 
-    	public JointS 鎖2_接続点 => new JointS(本体, X0Y0_輪1_金具右, 0);
+    	public JointS 鎖2_接続点 => new JointS(Body, X0Y0_輪1_金具右, 0);
 
-    	public JointS 鎖3_接続点 => new JointS(本体, X0Y0_輪2_金具左, 0);
+    	public JointS 鎖3_接続点 => new JointS(Body, X0Y0_輪2_金具左, 0);
 
-    	public JointS 鎖4_接続点 => new JointS(本体, X0Y0_輪2_金具右, 0);
+    	public JointS 鎖4_接続点 => new JointS(Body, X0Y0_輪2_金具右, 0);
 
     	public 長物_鯨(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 長物_鯨D e)
     	{
@@ -882,10 +882,10 @@ namespace SlaveMatrix
     		Dif dif = new Dif();
     		dif.Tag = "鯨";
     		dif.Add(new Pars(Sta.半身["長物"][0][1]));
-    		本体 = new Difs();
-    		本体.Tag = dif.Tag;
-    		本体.Add(dif);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs();
+    		Body.Tag = dif.Tag;
+    		Body.Add(dif);
+    		Pars pars = Body[0][0];
     		Pars pars2 = pars["胴6"].ToPars();
     		X0Y0_Torso6_Torso = pars2["胴"].ToPar();
     		X0Y0_Torso6_柄 = pars2["柄"].ToPar();
@@ -924,8 +924,8 @@ namespace SlaveMatrix
     		X0Y0_輪1_金具3 = pars2["金具3"].ToPar();
     		X0Y0_輪1_金具左 = pars2["金具左"].ToPar();
     		X0Y0_輪1_金具右 = pars2["金具右"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -1252,7 +1252,7 @@ namespace SlaveMatrix
     		X0Y0_Torso5_Torso.AngleBase = maxAngle.GetRanAngle();
     		X0Y0_Torso4_Torso.AngleBase = maxAngle.GetRanAngle();
     		X0Y0_Torso3_Torso.AngleBase = maxAngle.GetRanAngle();
-    		本体.JoinPAall();
+    		Body.JoinPAall();
     	}
 
     	public IEnumerable<Par> 軸列挙()

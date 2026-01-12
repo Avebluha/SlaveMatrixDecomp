@@ -989,56 +989,56 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public JointS 基髪_接続点 => new JointS(本体, X0Y0_Head, 0);
+    	public JointS 基髪_接続点 => new JointS(Body, X0Y0_Head, 0);
 
-    	public JointS 目左_接続点 => new JointS(本体, X0Y0_Head, 1);
+    	public JointS 目左_接続点 => new JointS(Body, X0Y0_Head, 1);
 
-    	public JointS 目右_接続点 => new JointS(本体, X0Y0_Head, 2);
+    	public JointS 目右_接続点 => new JointS(Body, X0Y0_Head, 2);
 
-    	public JointS 鼻_接続点 => new JointS(本体, X0Y0_Head, 3);
+    	public JointS 鼻_接続点 => new JointS(Body, X0Y0_Head, 3);
 
-    	public JointS 口_接続点 => new JointS(本体, X0Y0_Head, 4);
+    	public JointS 口_接続点 => new JointS(Body, X0Y0_Head, 4);
 
-    	public JointS 頬左_接続点 => new JointS(本体, X0Y0_Head, 5);
+    	public JointS 頬左_接続点 => new JointS(Body, X0Y0_Head, 5);
 
-    	public JointS 頬右_接続点 => new JointS(本体, X0Y0_Head, 6);
+    	public JointS 頬右_接続点 => new JointS(Body, X0Y0_Head, 6);
 
-    	public JointS 額_接続点 => new JointS(本体, X0Y0_Head, 7);
+    	public JointS 額_接続点 => new JointS(Body, X0Y0_Head, 7);
 
-    	public JointS 眉左_接続点 => new JointS(本体, X0Y0_Head, 8);
+    	public JointS 眉左_接続点 => new JointS(Body, X0Y0_Head, 8);
 
-    	public JointS 眉右_接続点 => new JointS(本体, X0Y0_Head, 9);
+    	public JointS 眉右_接続点 => new JointS(Body, X0Y0_Head, 9);
 
-    	public JointS 耳左_接続点 => new JointS(本体, X0Y0_Head, 10);
+    	public JointS 耳左_接続点 => new JointS(Body, X0Y0_Head, 10);
 
-    	public JointS 耳右_接続点 => new JointS(本体, X0Y0_Head, 11);
+    	public JointS 耳右_接続点 => new JointS(Body, X0Y0_Head, 11);
 
-    	public JointS 鼻肌_接続点 => new JointS(本体, X0Y0_Head, 12);
+    	public JointS 鼻肌_接続点 => new JointS(Body, X0Y0_Head, 12);
 
-    	public JointS 単眼目_接続点 => new JointS(本体, X0Y0_Head, 13);
+    	public JointS 単眼目_接続点 => new JointS(Body, X0Y0_Head, 13);
 
-    	public JointS 単眼眉_接続点 => new JointS(本体, X0Y0_Head, 14);
+    	public JointS 単眼眉_接続点 => new JointS(Body, X0Y0_Head, 14);
 
-    	public JointS 大顎基_接続点 => new JointS(本体, X0Y0_Head, 14);
+    	public JointS 大顎基_接続点 => new JointS(Body, X0Y0_Head, 14);
 
-    	public JointS 顔面_接続点 => new JointS(本体, X0Y0_Head, 13);
+    	public JointS 顔面_接続点 => new JointS(Body, X0Y0_Head, 13);
 
-    	public JointS 頭頂_接続点 => new JointS(本体, X0Y0_Head, 14);
+    	public JointS 頭頂_接続点 => new JointS(Body, X0Y0_Head, 14);
 
-    	public JointS 頬肌左_接続点 => new JointS(本体, X0Y0_Head, 15);
+    	public JointS 頬肌左_接続点 => new JointS(Body, X0Y0_Head, 15);
 
-    	public JointS 頬肌右_接続点 => new JointS(本体, X0Y0_Head, 16);
+    	public JointS 頬肌右_接続点 => new JointS(Body, X0Y0_Head, 16);
 
-    	public JointS 触覚左_接続点 => new JointS(本体, X0Y0_Head, 17);
+    	public JointS 触覚左_接続点 => new JointS(Body, X0Y0_Head, 17);
 
-    	public JointS 触覚右_接続点 => new JointS(本体, X0Y0_Head, 18);
+    	public JointS 触覚右_接続点 => new JointS(Body, X0Y0_Head, 18);
 
     	public Head(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, HeadD e)
     	{
     		Head 頭2 = this;
     		ThisType = GetType();
-    		本体 = new Difs(Sta.胴体["Head"]);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs(Sta.胴体["Head"]);
+    		Pars pars = Body[0][0];
     		X0Y0_Head = pars["頭"].ToPar();
     		Pars pars2 = pars["悪タトゥ"].ToPars();
     		Pars pars3 = pars2["逆十字"].ToPars();
@@ -1096,8 +1096,8 @@ namespace SlaveMatrix
     		X0Y0_馬柄_馬柄 = pars2["牛柄"].ToPar();
     		pars2 = pars["虫顎"].ToPars();
     		X0Y0_虫性_顎下 = pars2["顎下"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;

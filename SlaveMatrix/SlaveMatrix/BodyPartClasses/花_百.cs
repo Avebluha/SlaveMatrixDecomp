@@ -1503,10 +1503,10 @@ namespace SlaveMatrix
     		Dif dif = new Dif();
     		dif.Tag = "花";
     		dif.Add(new Pars(pars));
-    		本体 = new Difs();
-    		本体.Tag = dif.Tag;
-    		本体.Add(dif);
-    		Pars pars3 = 本体[0][0];
+    		Body = new Difs();
+    		Body.Tag = dif.Tag;
+    		Body.Add(dif);
+    		Pars pars3 = Body[0][0];
     		Pars pars4 = pars3["ユリ"].ToPars();
     		Pars pars5 = pars4["通常"].ToPars();
     		X0Y0_花_ユリ_通常_萼2 = pars5["萼2"].ToPar();
@@ -1575,8 +1575,8 @@ namespace SlaveMatrix
     		X0Y0_萼_通常_萼 = pars5["萼"].ToPar();
     		pars5 = pars8["欠損"].ToPars();
     		X0Y0_萼_欠損_萼 = pars5["萼"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -1725,7 +1725,7 @@ namespace SlaveMatrix
     	{
     		double num = (右 ? (-1.0) : 1.0);
     		X0Y0_萼_通常_萼.AngleBase = num * -81.0;
-    		本体.JoinPAall();
+    		Body.JoinPAall();
     	}
 
     	public override void 色更新()

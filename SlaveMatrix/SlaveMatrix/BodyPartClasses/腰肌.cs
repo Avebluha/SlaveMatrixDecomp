@@ -1010,8 +1010,8 @@ namespace SlaveMatrix
     	public 腰肌(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 腰肌D e)
     	{
     		ThisType = GetType();
-    		本体 = new Difs(Sta.胴体["腰肌"]);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs(Sta.胴体["腰肌"]);
+    		Pars pars = Body[0][0];
     		Pars pars2 = pars["淫タトゥ"].ToPars();
     		Pars pars3 = pars2["ハート"].ToPars();
     		X0Y0_淫タトゥ_ハート_タトゥ左1 = pars3["タトゥ左1"].ToPar();
@@ -1041,7 +1041,7 @@ namespace SlaveMatrix
     		pars3 = pars2["腹板1"].ToPars();
     		X0Y0_虫性_腹板1_腹板 = pars3["腹板"].ToPar();
     		X0Y0_虫性_腹板1_縦線 = pars3["縦線"].ToPar();
-    		pars = 本体[0][1];
+    		pars = Body[0][1];
     		pars2 = pars["淫タトゥ"].ToPars();
     		pars3 = pars2["ハート"].ToPars();
     		X0Y1_淫タトゥ_ハート_タトゥ左1 = pars3["タトゥ左1"].ToPar();
@@ -1071,7 +1071,7 @@ namespace SlaveMatrix
     		pars3 = pars2["腹板1"].ToPars();
     		X0Y1_虫性_腹板1_腹板 = pars3["腹板"].ToPar();
     		X0Y1_虫性_腹板1_縦線 = pars3["縦線"].ToPar();
-    		pars = 本体[0][2];
+    		pars = Body[0][2];
     		pars2 = pars["淫タトゥ"].ToPars();
     		pars3 = pars2["ハート"].ToPars();
     		X0Y2_淫タトゥ_ハート_タトゥ左1 = pars3["タトゥ左1"].ToPar();
@@ -1101,7 +1101,7 @@ namespace SlaveMatrix
     		pars3 = pars2["腹板1"].ToPars();
     		X0Y2_虫性_腹板1_腹板 = pars3["腹板"].ToPar();
     		X0Y2_虫性_腹板1_縦線 = pars3["縦線"].ToPar();
-    		pars = 本体[0][3];
+    		pars = Body[0][3];
     		pars2 = pars["淫タトゥ"].ToPars();
     		pars3 = pars2["ハート"].ToPars();
     		X0Y3_淫タトゥ_ハート_タトゥ左1 = pars3["タトゥ左1"].ToPar();
@@ -1131,7 +1131,7 @@ namespace SlaveMatrix
     		pars3 = pars2["腹板1"].ToPars();
     		X0Y3_虫性_腹板1_腹板 = pars3["腹板"].ToPar();
     		X0Y3_虫性_腹板1_縦線 = pars3["縦線"].ToPar();
-    		pars = 本体[0][4];
+    		pars = Body[0][4];
     		pars2 = pars["淫タトゥ"].ToPars();
     		pars3 = pars2["ハート"].ToPars();
     		X0Y4_淫タトゥ_ハート_タトゥ左1 = pars3["タトゥ左1"].ToPar();
@@ -1161,8 +1161,8 @@ namespace SlaveMatrix
     		pars3 = pars2["腹板1"].ToPars();
     		X0Y4_虫性_腹板1_腹板 = pars3["腹板"].ToPar();
     		X0Y4_虫性_腹板1_縦線 = pars3["縦線"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -1326,7 +1326,7 @@ namespace SlaveMatrix
 
     	public override void 色更新()
     	{
-    		switch (本体.IndexY)
+    		switch (Body.IndexY)
     		{
     		case 0:
     			X0Y0_淫タトゥ_ハート_タトゥ左1CP.Update();

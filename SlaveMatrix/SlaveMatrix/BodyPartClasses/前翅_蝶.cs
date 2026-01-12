@@ -225,7 +225,7 @@ namespace SlaveMatrix
     		set
     		{
     			欠損_ = value;
-    			本体.IndexY = (欠損_ ? 1 : 0);
+    			Body.IndexY = (欠損_ ? 1 : 0);
     		}
     	}
 
@@ -668,10 +668,10 @@ namespace SlaveMatrix
     	{
     		ThisType = GetType();
     		Dif dif = new Dif(Sta.肢左["前翅"][2]);
-    		本体 = new Difs();
-    		本体.Tag = dif.Tag;
-    		本体.Add(dif);
-    		Pars pars = 本体[0][0]["前翅"].ToPars();
+    		Body = new Difs();
+    		Body.Tag = dif.Tag;
+    		Body.Add(dif);
+    		Pars pars = Body[0][0]["前翅"].ToPars();
     		X0Y0_前翅_前翅 = pars["前翅"].ToPar();
     		Pars pars2 = pars["水青"].ToPars();
     		X0Y0_前翅_水青_柄 = pars2["柄"].ToPar();
@@ -695,7 +695,7 @@ namespace SlaveMatrix
     		X0Y0_前翅_揚羽_紋4 = pars2["紋4"].ToPar();
     		X0Y0_前翅_揚羽_紋5 = pars2["紋5"].ToPar();
     		X0Y0_前翅_揚羽_紋6 = pars2["紋6"].ToPar();
-    		pars = 本体[0][1]["前翅"].ToPars();
+    		pars = Body[0][1]["前翅"].ToPars();
     		X0Y1_前翅_前翅 = pars["前翅"].ToPar();
     		pars2 = pars["水青"].ToPars();
     		X0Y1_前翅_水青_柄 = pars2["柄"].ToPar();
@@ -720,8 +720,8 @@ namespace SlaveMatrix
     		X0Y1_前翅_揚羽_紋5 = pars2["紋5"].ToPar();
     		X0Y1_前翅_揚羽_紋6 = pars2["紋6"].ToPar();
     		Xasix = false;
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -825,12 +825,12 @@ namespace SlaveMatrix
     		double num = (右 ? (-1.0) : 1.0);
     		X0Y0_前翅_前翅.AngleBase = num * 29.0;
     		X0Y1_前翅_前翅.AngleBase = num * 29.0;
-    		本体.JoinPAall();
+    		Body.JoinPAall();
     	}
 
     	public override void 色更新()
     	{
-    		if (本体.IndexY == 0)
+    		if (Body.IndexY == 0)
     		{
     			X0Y0_前翅_前翅CP.Update();
     			X0Y0_前翅_水青_柄CP.Update();

@@ -215,10 +215,10 @@ namespace SlaveMatrix
     		Dif dif = new Dif();
     		dif.Tag = "エイリアン";
     		dif.Add(new Pars(Sta.肢中["頭部後"][0][0]));
-    		本体 = new Difs();
-    		本体.Tag = dif.Tag;
-    		本体.Add(dif);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs();
+    		Body.Tag = dif.Tag;
+    		Body.Add(dif);
+    		Pars pars = Body[0][0];
     		X0Y0_頭部 = pars["頭部"].ToPar();
     		Pars pars2 = pars["線"].ToPars();
     		X0Y0_線_線左1 = pars2["線左1"].ToPar();
@@ -227,8 +227,8 @@ namespace SlaveMatrix
     		X0Y0_線_線右1 = pars2["線右1"].ToPar();
     		X0Y0_線_線右2 = pars2["線右2"].ToPar();
     		X0Y0_線_線右3 = pars2["線右3"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;

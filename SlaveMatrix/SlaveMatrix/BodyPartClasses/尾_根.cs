@@ -1385,9 +1385,9 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public JointS 鎖1_接続点 => new JointS(本体, X0Y0_輪_金具左, 0);
+    	public JointS 鎖1_接続点 => new JointS(Body, X0Y0_輪_金具左, 0);
 
-    	public JointS 鎖2_接続点 => new JointS(本体, X0Y0_輪_金具右, 0);
+    	public JointS 鎖2_接続点 => new JointS(Body, X0Y0_輪_金具右, 0);
 
     	public 尾_根(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 尾_根D e)
     	{
@@ -1395,10 +1395,10 @@ namespace SlaveMatrix
     		Dif dif = new Dif();
     		dif.Tag = "根尾";
     		dif.Add(new Pars(Sta.尻尾["尾"][0][22]));
-    		本体 = new Difs();
-    		本体.Tag = dif.Tag;
-    		本体.Add(dif);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs();
+    		Body.Tag = dif.Tag;
+    		Body.Add(dif);
+    		Pars pars = Body[0][0];
     		Pars pars2 = pars["尾0"].ToPars();
     		X0Y0_尾0_尾 = pars2["尾"].ToPar();
     		X0Y0_尾0_線1 = pars2["線1"].ToPar();
@@ -1479,8 +1479,8 @@ namespace SlaveMatrix
     		X0Y0_尾17_線1 = pars2["線1"].ToPar();
     		X0Y0_尾17_線2 = pars2["線2"].ToPar();
     		X0Y0_尾18 = pars["尾18"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -1748,7 +1748,7 @@ namespace SlaveMatrix
     		X0Y0_尾16_尾.AngleBase = maxAngle.GetRanAngle();
     		X0Y0_尾17_尾.AngleBase = maxAngle.GetRanAngle();
     		X0Y0_尾18.AngleBase = maxAngle.GetRanAngle();
-    		本体.JoinPAall();
+    		Body.JoinPAall();
     	}
 
     	public override bool Is革(Par p)

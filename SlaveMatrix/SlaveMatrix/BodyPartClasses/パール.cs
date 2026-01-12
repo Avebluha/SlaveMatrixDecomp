@@ -995,8 +995,8 @@ namespace SlaveMatrix
     	public パール(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, パールD e)
     	{
     		ThisType = GetType();
-    		本体 = new Difs(Sta.カーソル["パール"]);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs(Sta.カーソル["パール"]);
+    		Pars pars = Body[0][0];
     		X0Y0_軸 = pars["軸"].ToPar();
     		X0Y0_玉境界 = pars["玉境界"].ToPar();
     		X0Y0_玉1 = pars["玉1"].ToPar();
@@ -1008,7 +1008,7 @@ namespace SlaveMatrix
     		X0Y0_玉7 = pars["玉7"].ToPar();
     		X0Y0_輪上 = pars["輪上"].ToPar();
     		X0Y0_輪下 = pars["輪下"].ToPar();
-    		pars = 本体[0][1];
+    		pars = Body[0][1];
     		X0Y1_軸 = pars["軸"].ToPar();
     		X0Y1_玉境界 = pars["玉境界"].ToPar();
     		X0Y1_玉1 = pars["玉1"].ToPar();
@@ -1020,7 +1020,7 @@ namespace SlaveMatrix
     		X0Y1_玉7 = pars["玉7"].ToPar();
     		X0Y1_輪上 = pars["輪上"].ToPar();
     		X0Y1_輪下 = pars["輪下"].ToPar();
-    		pars = 本体[0][2];
+    		pars = Body[0][2];
     		X0Y2_軸 = pars["軸"].ToPar();
     		X0Y2_玉境界 = pars["玉境界"].ToPar();
     		X0Y2_玉1 = pars["玉1"].ToPar();
@@ -1031,7 +1031,7 @@ namespace SlaveMatrix
     		X0Y2_玉6 = pars["玉6"].ToPar();
     		X0Y2_輪上 = pars["輪上"].ToPar();
     		X0Y2_輪下 = pars["輪下"].ToPar();
-    		pars = 本体[0][3];
+    		pars = Body[0][3];
     		X0Y3_軸 = pars["軸"].ToPar();
     		X0Y3_玉境界 = pars["玉境界"].ToPar();
     		X0Y3_玉1 = pars["玉1"].ToPar();
@@ -1042,7 +1042,7 @@ namespace SlaveMatrix
     		X0Y3_玉6 = pars["玉6"].ToPar();
     		X0Y3_輪上 = pars["輪上"].ToPar();
     		X0Y3_輪下 = pars["輪下"].ToPar();
-    		pars = 本体[0][4];
+    		pars = Body[0][4];
     		X0Y4_軸 = pars["軸"].ToPar();
     		X0Y4_玉境界 = pars["玉境界"].ToPar();
     		X0Y4_玉1 = pars["玉1"].ToPar();
@@ -1052,7 +1052,7 @@ namespace SlaveMatrix
     		X0Y4_玉5 = pars["玉5"].ToPar();
     		X0Y4_輪上 = pars["輪上"].ToPar();
     		X0Y4_輪下 = pars["輪下"].ToPar();
-    		pars = 本体[0][5];
+    		pars = Body[0][5];
     		X0Y5_軸 = pars["軸"].ToPar();
     		X0Y5_玉境界 = pars["玉境界"].ToPar();
     		X0Y5_玉1 = pars["玉1"].ToPar();
@@ -1062,7 +1062,7 @@ namespace SlaveMatrix
     		X0Y5_玉5 = pars["玉5"].ToPar();
     		X0Y5_輪上 = pars["輪上"].ToPar();
     		X0Y5_輪下 = pars["輪下"].ToPar();
-    		pars = 本体[0][6];
+    		pars = Body[0][6];
     		X0Y6_軸 = pars["軸"].ToPar();
     		X0Y6_玉境界 = pars["玉境界"].ToPar();
     		X0Y6_玉1 = pars["玉1"].ToPar();
@@ -1071,7 +1071,7 @@ namespace SlaveMatrix
     		X0Y6_玉4 = pars["玉4"].ToPar();
     		X0Y6_輪上 = pars["輪上"].ToPar();
     		X0Y6_輪下 = pars["輪下"].ToPar();
-    		pars = 本体[0][7];
+    		pars = Body[0][7];
     		X0Y7_軸 = pars["軸"].ToPar();
     		X0Y7_玉境界 = pars["玉境界"].ToPar();
     		X0Y7_玉1 = pars["玉1"].ToPar();
@@ -1080,7 +1080,7 @@ namespace SlaveMatrix
     		X0Y7_玉4 = pars["玉4"].ToPar();
     		X0Y7_輪上 = pars["輪上"].ToPar();
     		X0Y7_輪下 = pars["輪下"].ToPar();
-    		pars = 本体[0][8];
+    		pars = Body[0][8];
     		X0Y8_軸 = pars["軸"].ToPar();
     		X0Y8_玉境界 = pars["玉境界"].ToPar();
     		X0Y8_玉1 = pars["玉1"].ToPar();
@@ -1088,7 +1088,7 @@ namespace SlaveMatrix
     		X0Y8_玉3 = pars["玉3"].ToPar();
     		X0Y8_輪上 = pars["輪上"].ToPar();
     		X0Y8_輪下 = pars["輪下"].ToPar();
-    		pars = 本体[0][9];
+    		pars = Body[0][9];
     		X0Y9_軸 = pars["軸"].ToPar();
     		X0Y9_玉境界 = pars["玉境界"].ToPar();
     		X0Y9_玉1 = pars["玉1"].ToPar();
@@ -1096,48 +1096,48 @@ namespace SlaveMatrix
     		X0Y9_玉3 = pars["玉3"].ToPar();
     		X0Y9_輪上 = pars["輪上"].ToPar();
     		X0Y9_輪下 = pars["輪下"].ToPar();
-    		pars = 本体[0][10];
+    		pars = Body[0][10];
     		X0Y10_軸 = pars["軸"].ToPar();
     		X0Y10_玉境界 = pars["玉境界"].ToPar();
     		X0Y10_玉1 = pars["玉1"].ToPar();
     		X0Y10_玉2 = pars["玉2"].ToPar();
     		X0Y10_輪上 = pars["輪上"].ToPar();
     		X0Y10_輪下 = pars["輪下"].ToPar();
-    		pars = 本体[0][11];
+    		pars = Body[0][11];
     		X0Y11_軸 = pars["軸"].ToPar();
     		X0Y11_玉境界 = pars["玉境界"].ToPar();
     		X0Y11_玉1 = pars["玉1"].ToPar();
     		X0Y11_玉2 = pars["玉2"].ToPar();
     		X0Y11_輪上 = pars["輪上"].ToPar();
     		X0Y11_輪下 = pars["輪下"].ToPar();
-    		pars = 本体[0][12];
+    		pars = Body[0][12];
     		X0Y12_軸 = pars["軸"].ToPar();
     		X0Y12_玉境界 = pars["玉境界"].ToPar();
     		X0Y12_玉 = pars["玉"].ToPar();
     		X0Y12_輪上 = pars["輪上"].ToPar();
     		X0Y12_輪下 = pars["輪下"].ToPar();
-    		pars = 本体[0][13];
+    		pars = Body[0][13];
     		X0Y13_軸 = pars["軸"].ToPar();
     		X0Y13_玉境界 = pars["玉境界"].ToPar();
     		X0Y13_玉 = pars["玉"].ToPar();
     		X0Y13_輪上 = pars["輪上"].ToPar();
     		X0Y13_輪下 = pars["輪下"].ToPar();
-    		pars = 本体[0][14];
+    		pars = Body[0][14];
     		X0Y14_軸 = pars["軸"].ToPar();
     		X0Y14_玉境界 = pars["玉境界"].ToPar();
     		X0Y14_輪上 = pars["輪上"].ToPar();
     		X0Y14_輪下 = pars["輪下"].ToPar();
-    		pars = 本体[0][15];
+    		pars = Body[0][15];
     		X0Y15_軸 = pars["軸"].ToPar();
     		X0Y15_玉境界 = pars["玉境界"].ToPar();
     		X0Y15_輪上 = pars["輪上"].ToPar();
     		X0Y15_輪下 = pars["輪下"].ToPar();
-    		pars = 本体[0][16];
+    		pars = Body[0][16];
     		X0Y16_軸 = pars["軸"].ToPar();
     		X0Y16_輪上境界 = pars["輪上境界"].ToPar();
     		X0Y16_輪下 = pars["輪下"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -1325,12 +1325,12 @@ namespace SlaveMatrix
     		X0Y16_輪下.BasePointBase = X0Y16_輪下.ToLocal(X0Y16_輪上境界.ToGlobal(X0Y16_輪上境界.JP[0].Joint));
     		尺度B *= 1.07;
     		尺度B = 1.08;
-    		本体.JoinPAall();
+    		Body.JoinPAall();
     	}
 
     	public override void 色更新()
     	{
-    		switch (本体.IndexY)
+    		switch (Body.IndexY)
     		{
     		case 0:
     			X0Y0_軸CP.Update();

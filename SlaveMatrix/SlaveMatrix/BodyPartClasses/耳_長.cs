@@ -91,7 +91,7 @@ namespace SlaveMatrix
     		set
     		{
     			欠損_ = value;
-    			本体.IndexX = (欠損_ ? 1 : 0);
+    			Body.IndexX = (欠損_ ? 1 : 0);
     		}
     	}
 
@@ -219,37 +219,37 @@ namespace SlaveMatrix
     	public 耳_長(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 耳_長D e)
     	{
     		ThisType = GetType();
-    		本体 = new Difs();
-    		本体.Tag = "長";
-    		本体.Add(new Dif(Sta.肢左["耳"][4]));
-    		本体.Add(new Dif(Sta.肢左["耳"][5]));
-    		Pars pars = 本体[0][0];
+    		Body = new Difs();
+    		Body.Tag = "長";
+    		Body.Add(new Dif(Sta.肢左["耳"][4]));
+    		Body.Add(new Dif(Sta.肢左["耳"][5]));
+    		Pars pars = Body[0][0];
     		X0Y0_耳 = pars["耳"].ToPar();
     		X0Y0_耳線1 = pars["耳線1"].ToPar();
     		X0Y0_耳線2 = pars["耳線2"].ToPar();
-    		pars = 本体[0][1];
+    		pars = Body[0][1];
     		X0Y1_耳 = pars["耳"].ToPar();
     		X0Y1_耳線1 = pars["耳線1"].ToPar();
     		X0Y1_耳線2 = pars["耳線2"].ToPar();
-    		pars = 本体[0][2];
+    		pars = Body[0][2];
     		X0Y2_耳 = pars["耳"].ToPar();
     		X0Y2_耳線1 = pars["耳線1"].ToPar();
     		X0Y2_耳線2 = pars["耳線2"].ToPar();
-    		pars = 本体[1][0];
+    		pars = Body[1][0];
     		X1Y0_耳 = pars["耳"].ToPar();
     		X1Y0_耳線1 = pars["耳線1"].ToPar();
     		X1Y0_耳線2 = pars["耳線2"].ToPar();
-    		pars = 本体[1][1];
+    		pars = Body[1][1];
     		X1Y1_耳 = pars["耳"].ToPar();
     		X1Y1_耳線1 = pars["耳線1"].ToPar();
     		X1Y1_耳線2 = pars["耳線2"].ToPar();
-    		pars = 本体[1][2];
+    		pars = Body[1][2];
     		X1Y2_耳 = pars["耳"].ToPar();
     		X1Y2_耳線1 = pars["耳線1"].ToPar();
     		X1Y2_耳線2 = pars["耳線2"].ToPar();
     		Xasix = false;
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -314,14 +314,14 @@ namespace SlaveMatrix
     		X1Y0_耳.AngleBase = num * -344.0;
     		X1Y1_耳.AngleBase = num * -351.0;
     		X1Y2_耳.AngleBase = num * 0.0;
-    		本体.JoinPAall();
+    		Body.JoinPAall();
     	}
 
     	public override void 色更新()
     	{
-    		if (本体.IndexX == 0)
+    		if (Body.IndexX == 0)
     		{
-    			switch (本体.IndexY)
+    			switch (Body.IndexY)
     			{
     			case 0:
     				X0Y0_耳CP.Update();
@@ -342,7 +342,7 @@ namespace SlaveMatrix
     		}
     		else
     		{
-    			switch (本体.IndexY)
+    			switch (Body.IndexY)
     			{
     			case 0:
     				X1Y0_耳CP.Update();

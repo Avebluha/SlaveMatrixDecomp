@@ -443,8 +443,8 @@ namespace SlaveMatrix
     	public 染み_人(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 染み_人D e)
     	{
     		ThisType = GetType();
-    		本体 = new Difs(Sta.その他["染み"]);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs(Sta.その他["染み"]);
+    		Pars pars = Body[0][0];
     		X0Y0_潮1 = pars["潮1"].ToPar();
     		X0Y0_潮2 = pars["潮2"].ToPar();
     		X0Y0_潮3 = pars["潮3"].ToPar();
@@ -470,8 +470,8 @@ namespace SlaveMatrix
     		pars3 = pars2["湯気右3"].ToPars();
     		X0Y0_湯気_湯気右3_湯気1 = pars3["湯気1"].ToPar();
     		X0Y0_湯気_湯気右3_湯気2 = pars3["湯気2"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;

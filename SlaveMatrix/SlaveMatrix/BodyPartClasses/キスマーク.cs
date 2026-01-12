@@ -86,11 +86,11 @@ namespace SlaveMatrix
     	public キスマーク(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, キスマークD e)
     	{
     		ThisType = GetType();
-    		本体 = new Difs(Sta.スタンプ["キスマーク"]);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs(Sta.スタンプ["キスマーク"]);
+    		Pars pars = Body[0][0];
     		X0Y0_キスマーク = pars["キスマーク"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;

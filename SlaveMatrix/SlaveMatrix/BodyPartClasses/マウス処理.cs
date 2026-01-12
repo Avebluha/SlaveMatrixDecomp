@@ -320,7 +320,7 @@ namespace SlaveMatrix
     				調教UI.押し(ref cd);
     			}
     			調教UI.マウス.Xi = 3;
-    			調教UI.マウス.Yi = (調教UI.マウス.Yi - dt.Sign() * 2).Clamp(0, 調教UI.マウス.本体.CountY);
+    			調教UI.マウス.Yi = (調教UI.マウス.Yi - dt.Sign() * 2).Clamp(0, 調教UI.マウス.Body.CountY);
     			if (cd.c == ContactType.Mouth)
     			{
     				対象.Ele.濃度 = 0.5;

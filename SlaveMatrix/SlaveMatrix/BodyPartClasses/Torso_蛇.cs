@@ -316,15 +316,15 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public JointS 左_接続点 => new JointS(本体, X0Y0_Torso_Torso, 2);
+    	public JointS 左_接続点 => new JointS(Body, X0Y0_Torso_Torso, 2);
 
-    	public JointS 右_接続点 => new JointS(本体, X0Y0_Torso_Torso, 3);
+    	public JointS 右_接続点 => new JointS(Body, X0Y0_Torso_Torso, 3);
 
-    	public JointS Torso_接続点 => new JointS(本体, X0Y0_Torso_Torso, 1);
+    	public JointS Torso_接続点 => new JointS(Body, X0Y0_Torso_Torso, 1);
 
-    	public JointS 鎖1_接続点 => new JointS(本体, X0Y0_輪_金具左, 0);
+    	public JointS 鎖1_接続点 => new JointS(Body, X0Y0_輪_金具左, 0);
 
-    	public JointS 鎖2_接続点 => new JointS(本体, X0Y0_輪_金具右, 0);
+    	public JointS 鎖2_接続点 => new JointS(Body, X0Y0_輪_金具右, 0);
 
     	public Torso_蛇(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, Torso_蛇D e)
     	{
@@ -337,10 +337,10 @@ namespace SlaveMatrix
     		Dif dif = new Dif();
     		dif.Tag = pars.Tag;
     		dif.Add(pars);
-    		本体 = new Difs();
-    		本体.Tag = dif.Tag;
-    		本体.Add(dif);
-    		Pars pars2 = 本体[0][0];
+    		Body = new Difs();
+    		Body.Tag = dif.Tag;
+    		Body.Add(dif);
+    		Pars pars2 = Body[0][0];
     		Pars pars3 = pars2["胴2"].ToPars();
     		X0Y0_Torso_鱗 = pars3["鱗"].ToPar();
     		X0Y0_Torso_鱗左 = pars3["鱗左"].ToPar();
@@ -353,8 +353,8 @@ namespace SlaveMatrix
     		X0Y0_輪_金具3 = pars3["金具3"].ToPar();
     		X0Y0_輪_金具左 = pars3["金具左"].ToPar();
     		X0Y0_輪_金具右 = pars3["金具右"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -489,7 +489,7 @@ namespace SlaveMatrix
     		{
     			_ = 右;
     			X0Y0_Torso_Torso.AngleBase = 20.0.GetRanAngle();
-    			本体.JoinPAall();
+    			Body.JoinPAall();
     		}
     	}
 

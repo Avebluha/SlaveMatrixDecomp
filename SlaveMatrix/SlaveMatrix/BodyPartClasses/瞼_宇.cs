@@ -200,35 +200,35 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public JointS 涙_接続点 => new JointS(本体, X0Y0_目, 2);
+    	public JointS 涙_接続点 => new JointS(Body, X0Y0_目, 2);
 
     	public 瞼_宇(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 瞼_宇D e)
     	{
     		瞼_宇 瞼_宇2 = this;
     		ThisType = GetType();
-    		本体 = new Difs(Sta.胴体["エイリアン目左"]);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs(Sta.胴体["エイリアン目左"]);
+    		Pars pars = Body[0][0];
     		X0Y0_目 = pars["目"].ToPar();
     		X0Y0_ハイライト = pars["ハイライト"].ToPar();
     		X0Y0_瞬膜 = pars["瞬膜"].ToPar();
-    		pars = 本体[0][1];
+    		pars = Body[0][1];
     		X0Y1_目 = pars["目"].ToPar();
     		X0Y1_ハイライト = pars["ハイライト"].ToPar();
     		X0Y1_瞬膜 = pars["瞬膜"].ToPar();
-    		pars = 本体[0][2];
+    		pars = Body[0][2];
     		X0Y2_目 = pars["目"].ToPar();
     		X0Y2_ハイライト = pars["ハイライト"].ToPar();
     		X0Y2_瞬膜 = pars["瞬膜"].ToPar();
-    		pars = 本体[0][3];
+    		pars = Body[0][3];
     		X0Y3_目 = pars["目"].ToPar();
     		X0Y3_ハイライト = pars["ハイライト"].ToPar();
     		X0Y3_瞬膜 = pars["瞬膜"].ToPar();
-    		pars = 本体[0][4];
+    		pars = Body[0][4];
     		X0Y4_目 = pars["目"].ToPar();
     		X0Y4_ハイライト = pars["ハイライト"].ToPar();
     		X0Y4_瞬膜 = pars["瞬膜"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -296,7 +296,7 @@ namespace SlaveMatrix
 
     	public override void 色更新()
     	{
-    		switch (本体.IndexY)
+    		switch (Body.IndexY)
     		{
     		case 0:
     			X0Y0_目CP.Update();

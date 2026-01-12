@@ -2303,10 +2303,10 @@ namespace SlaveMatrix
     	{
     		ThisType = GetType();
     		Dif dif = new Dif(Sta.胴体["下着トップ"][0]);
-    		本体 = new Difs();
-    		本体.Tag = dif.Tag;
-    		本体.Add(dif);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs();
+    		Body.Tag = dif.Tag;
+    		Body.Add(dif);
+    		Pars pars = Body[0][0];
     		Pars pars2 = pars["バンド"].ToPars();
     		X0Y0_バンド_バンド = pars2["バンド"].ToPar();
     		Pars pars3 = pars2["縁"].ToPars();
@@ -2415,8 +2415,8 @@ namespace SlaveMatrix
     		pars2 = pars["リボン"].ToPars();
     		X0Y0_リボン_リボン = pars2["リボン"].ToPar();
     		X0Y0_リボン_結び目 = pars2["結び目"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;

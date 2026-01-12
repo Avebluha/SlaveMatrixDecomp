@@ -612,7 +612,7 @@ namespace SlaveMatrix
     			Runing = delegate(Mot m)
     			{
     				xc = 1.0 + 0.2 * m.Value;
-    				foreach (Par item in 調教UI.ペニス.本体.EnumAllPar())
+    				foreach (Par item in 調教UI.ペニス.Body.EnumAllPar())
     				{
     					if (item.Tag != "陰嚢")
     					{
@@ -677,7 +677,7 @@ namespace SlaveMatrix
     					調教UI.射精.Yv = m.Value;
     					if (調教UI.射精.Yv >= 0.65 && 調教UI.Focus == ペニス)
     					{
-    						p = 調教UI.射精.本体.Current.EnumAllPar().First();
+    						p = 調教UI.射精.Body.Current.EnumAllPar().First();
     						cp = p.ToGlobal(p.OP.GetCenter() + Oth.GetRandomVector() * 0.0025);
     						hc = ペニス処理2.Med.GetHitColor(ペニス処理2.Med.FromBasePosition(cp));
     						ペニス処理2.Bod.Addぶっかけ(cp, hc);

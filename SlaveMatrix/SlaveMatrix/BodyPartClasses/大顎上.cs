@@ -170,15 +170,15 @@ namespace SlaveMatrix
     	public 大顎上(double DisUnit, 配色指定 配色指定, 体配色 体配色)
     	{
     		ThisType = GetType();
-    		本体 = new Difs(Sta.肢中["大顎上"]);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs(Sta.肢中["大顎上"]);
+    		Pars pars = Body[0][0];
     		X0Y0_甲殻 = pars["甲殻"].ToPar();
     		X0Y0_線左 = pars["線左"].ToPar();
     		X0Y0_線右 = pars["線右"].ToPar();
     		X0Y0_棘左 = pars["刺左"].ToPar();
     		X0Y0_棘右 = pars["刺右"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		base.配色指定 = 配色指定;
     		配色(体配色);
     		X0Y0_甲殻CP = new ColorP(X0Y0_甲殻, 甲殻CD, DisUnit, abj: true);

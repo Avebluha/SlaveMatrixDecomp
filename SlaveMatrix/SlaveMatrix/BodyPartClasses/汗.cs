@@ -167,21 +167,21 @@ namespace SlaveMatrix
     	public 汗(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 汗D e)
     	{
     		ThisType = GetType();
-    		本体 = new Difs(Sta.スタンプ["汗"]);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs(Sta.スタンプ["汗"]);
+    		Pars pars = Body[0][0];
     		X0Y0_汗0 = pars["汗0"].ToPar();
     		X0Y0_汗1 = pars["汗1"].ToPar();
     		X0Y0_汗ハイライト = pars["汗ハイライト"].ToPar();
-    		pars = 本体[0][1];
+    		pars = Body[0][1];
     		X0Y1_汗0流れ = pars["汗0流れ"].ToPar();
-    		pars = 本体[0][2];
+    		pars = Body[0][2];
     		X0Y2_汗0流れ = pars["汗0流れ"].ToPar();
-    		pars = 本体[0][3];
+    		pars = Body[0][3];
     		X0Y3_汗0流れ = pars["汗0流れ"].ToPar();
-    		pars = 本体[0][4];
+    		pars = Body[0][4];
     		X0Y4_汗0流れ = pars["汗0流れ"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -229,7 +229,7 @@ namespace SlaveMatrix
 
     	public override void 色更新()
     	{
-    		switch (本体.IndexY)
+    		switch (Body.IndexY)
     		{
     		case 0:
     			X0Y0_汗0CP.Update();

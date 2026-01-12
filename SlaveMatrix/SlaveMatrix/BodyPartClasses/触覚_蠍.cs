@@ -488,10 +488,10 @@ namespace SlaveMatrix
     		Dif dif = new Dif();
     		dif.Tag = "蠍";
     		dif.Add(new Pars(Sta.肢左["触覚"][0][5]));
-    		本体 = new Difs();
-    		本体.Tag = dif.Tag;
-    		本体.Add(dif);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs();
+    		Body.Tag = dif.Tag;
+    		Body.Add(dif);
+    		Pars pars = Body[0][0];
     		Pars pars2 = pars["櫛状板1"].ToPars();
     		X0Y0_櫛状版1_櫛状版1 = pars2["櫛状板1"].ToPar();
     		X0Y0_櫛状版1_櫛状版2 = pars2["櫛状板2"].ToPar();
@@ -513,8 +513,8 @@ namespace SlaveMatrix
     		X0Y0_歯12 = pars["歯12"].ToPar();
     		X0Y0_歯13 = pars["歯13"].ToPar();
     		X0Y0_櫛状板2 = pars["櫛状板2"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -593,7 +593,7 @@ namespace SlaveMatrix
     	{
     		double num = (右 ? (-1.0) : 1.0);
     		X0Y0_櫛状版1_櫛状版1.AngleBase = num * 45.0;
-    		本体.JoinPAall();
+    		Body.JoinPAall();
     	}
 
     	public override void 色更新()

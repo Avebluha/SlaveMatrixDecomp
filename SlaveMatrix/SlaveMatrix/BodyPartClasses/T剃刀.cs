@@ -485,8 +485,8 @@ namespace SlaveMatrix
     	public T剃刀(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, T剃刀D e)
     	{
     		ThisType = GetType();
-    		本体 = new Difs(Sta.カーソル["T字剃刀"]);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs(Sta.カーソル["T字剃刀"]);
+    		Pars pars = Body[0][0];
     		X0Y0_ヘッド = pars["ヘッド"].ToPar();
     		Pars pars2 = pars["刃"].ToPars();
     		X0Y0_刃_刃1 = pars2["刃1"].ToPar();
@@ -509,8 +509,8 @@ namespace SlaveMatrix
     		X0Y0_グリップ_グリップ13 = pars2["グリップ13"].ToPar();
     		X0Y0_グリップ_グリップ14 = pars2["グリップ14"].ToPar();
     		X0Y0_グリップ_グリップ15 = pars2["グリップ15"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -584,12 +584,12 @@ namespace SlaveMatrix
     		X0Y0_グリップ_グリップ15CP = new ColorP(X0Y0_グリップ_グリップ15, グリップ_グリップ15CD, DisUnit, abj: true);
     		濃度 = e.濃度;
     		Vector2D local = X0Y0_刃_刃1.OP[0].ps[1];
-    		foreach (Par item in 本体.EnumJoinRoot)
+    		foreach (Par item in Body.EnumJoinRoot)
     		{
     			item.BasePointBase = item.ToLocal(X0Y0_刃_刃1.ToGlobal(local));
     		}
     		尺度B = 1.08;
-    		本体.JoinPAall();
+    		Body.JoinPAall();
     	}
 
     	public override void 色更新()

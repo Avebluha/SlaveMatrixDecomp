@@ -3088,22 +3088,22 @@ namespace SlaveMatrix
 
     	public static void 眉_下左(this Cha Cha)
     	{
-    		Cha.Bod.眉左.本体.CurJoinRoot.PositionCont = Dat.Vec2DZero;
+    		Cha.Bod.眉左.Body.CurJoinRoot.PositionCont = Dat.Vec2DZero;
     	}
 
     	public static void 眉_下右(this Cha Cha)
     	{
-    		Cha.Bod.眉右.本体.CurJoinRoot.PositionCont = Dat.Vec2DZero;
+    		Cha.Bod.眉右.Body.CurJoinRoot.PositionCont = Dat.Vec2DZero;
     	}
 
     	public static void 眉_上左(this Cha Cha)
     	{
-    		Cha.Bod.眉左.本体.CurJoinRoot.PositionCont = -Dat.Vec2DUnitY * 0.003;
+    		Cha.Bod.眉左.Body.CurJoinRoot.PositionCont = -Dat.Vec2DUnitY * 0.003;
     	}
 
     	public static void 眉_上右(this Cha Cha)
     	{
-    		Cha.Bod.眉右.本体.CurJoinRoot.PositionCont = -Dat.Vec2DUnitY * 0.003;
+    		Cha.Bod.眉右.Body.CurJoinRoot.PositionCont = -Dat.Vec2DUnitY * 0.003;
     	}
 
     	public static void 両眉_下(this Cha Cha)
@@ -3183,12 +3183,12 @@ namespace SlaveMatrix
 
     	public static void 単眉_下(this Cha Cha)
     	{
-    		Cha.Bod.単眼眉.本体.CurJoinRoot.PositionCont = Dat.Vec2DZero;
+    		Cha.Bod.単眼眉.Body.CurJoinRoot.PositionCont = Dat.Vec2DZero;
     	}
 
     	public static void 単眉_上(this Cha Cha)
     	{
-    		Cha.Bod.単眼眉.本体.CurJoinRoot.PositionCont = -Dat.Vec2DUnitY * 0.003;
+    		Cha.Bod.単眼眉.Body.CurJoinRoot.PositionCont = -Dat.Vec2DUnitY * 0.003;
     	}
 
     	public static void 単眉_1(this Cha c, int i)
@@ -4228,14 +4228,14 @@ namespace SlaveMatrix
     	{
     		大顎 obj = Cha.Bod.大顎左[n];
     		obj.SetAngle0();
-    		obj.本体.CurJoinRoot.AngleBase += 根本角度 + u1;
+    		obj.Body.CurJoinRoot.AngleBase += 根本角度 + u1;
     	}
 
     	public static void 大顎右(this Cha Cha, int n, double u1, double 根本角度)
     	{
     		大顎 obj = Cha.Bod.大顎右[n];
     		obj.SetAngle0();
-    		obj.本体.CurJoinRoot.AngleBase += 0.0 - 根本角度 + (0.0 - u1);
+    		obj.Body.CurJoinRoot.AngleBase += 0.0 - 根本角度 + (0.0 - u1);
     	}
 
     	public static void 大顎_基本左(this Cha Cha, int n, double u1)

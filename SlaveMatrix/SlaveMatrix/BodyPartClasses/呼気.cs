@@ -403,8 +403,8 @@ namespace SlaveMatrix
     	public 呼気(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 呼気D e)
     	{
     		ThisType = GetType();
-    		本体 = new Difs(Sta.胴体["呼気"]);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs(Sta.胴体["呼気"]);
+    		Pars pars = Body[0][0];
     		Pars pars2 = pars["呼気左1"].ToPars();
     		X0Y0_呼気左1_呼気1 = pars2["呼気1"].ToPar();
     		X0Y0_呼気左1_呼気2 = pars2["呼気2"].ToPar();
@@ -423,7 +423,7 @@ namespace SlaveMatrix
     		pars2 = pars["呼気右3"].ToPars();
     		X0Y0_呼気右3_呼気1 = pars2["呼気1"].ToPar();
     		X0Y0_呼気右3_呼気2 = pars2["呼気2"].ToPar();
-    		Pars pars3 = 本体[0][1];
+    		Pars pars3 = Body[0][1];
     		pars2 = pars3["呼気左1"].ToPars();
     		X0Y1_呼気左1_呼気1 = pars2["呼気1"].ToPar();
     		X0Y1_呼気左1_呼気2 = pars2["呼気2"].ToPar();
@@ -442,8 +442,8 @@ namespace SlaveMatrix
     		pars2 = pars3["呼気右3"].ToPars();
     		X0Y1_呼気右3_呼気1 = pars2["呼気1"].ToPar();
     		X0Y1_呼気右3_呼気2 = pars2["呼気2"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -516,7 +516,7 @@ namespace SlaveMatrix
 
     	public override void 色更新()
     	{
-    		if (本体.IndexY == 0)
+    		if (Body.IndexY == 0)
     		{
     			X0Y0_呼気左1_呼気1CP.Update();
     			X0Y0_呼気左1_呼気2CP.Update();

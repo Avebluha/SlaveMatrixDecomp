@@ -107,12 +107,12 @@ namespace SlaveMatrix
     	public 鎖(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 鎖D e)
     	{
     		ThisType = GetType();
-    		本体 = new Difs(Sta.その他["鎖"]);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs(Sta.その他["鎖"]);
+    		Pars pars = Body[0][0];
     		X0Y0_鎖2 = pars["鎖2"].ToPar();
     		X0Y0_鎖1 = pars["鎖1"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;

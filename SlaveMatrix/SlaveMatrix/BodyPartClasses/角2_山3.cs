@@ -165,7 +165,7 @@ namespace SlaveMatrix
     		set
     		{
     			欠損_ = value;
-    			本体.IndexY = (欠損_ ? 1 : 0);
+    			Body.IndexY = (欠損_ ? 1 : 0);
     		}
     	}
 
@@ -533,10 +533,10 @@ namespace SlaveMatrix
     	{
     		ThisType = GetType();
     		Dif dif = new Dif(Sta.肢左["角"][2]);
-    		本体 = new Difs();
-    		本体.Tag = dif.Tag;
-    		本体.Add(dif);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs();
+    		Body.Tag = dif.Tag;
+    		Body.Add(dif);
+    		Pars pars = Body[0][0];
     		Pars pars2 = pars["根"].ToPars();
     		X0Y0_根_根 = pars2["根"].ToPar();
     		X0Y0_根_凸1 = pars2["凸1"].ToPar();
@@ -557,7 +557,7 @@ namespace SlaveMatrix
     		X0Y0_先_凸4 = pars2["凸4"].ToPar();
     		X0Y0_先_凸5 = pars2["凸5"].ToPar();
     		X0Y0_先_凸6 = pars2["凸6"].ToPar();
-    		pars2 = 本体[0][1]["根"].ToPars();
+    		pars2 = Body[0][1]["根"].ToPars();
     		X0Y1_根_根 = pars2["根"].ToPar();
     		X0Y1_根_折線1 = pars2["折線1"].ToPar();
     		X0Y1_根_折線2 = pars2["折線2"].ToPar();
@@ -567,8 +567,8 @@ namespace SlaveMatrix
     		X0Y1_根_凸4 = pars2["凸4"].ToPar();
     		X0Y1_根_凸5 = pars2["凸5"].ToPar();
     		X0Y1_根_凸6 = pars2["凸6"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -653,7 +653,7 @@ namespace SlaveMatrix
 
     	public override void 根描画(RenderArea Are)
     	{
-    		if (本体.IndexY == 0)
+    		if (Body.IndexY == 0)
     		{
     			Are.Draw(X0Y0_根_根);
     			Are.Draw(X0Y0_根_凸1);
@@ -683,7 +683,7 @@ namespace SlaveMatrix
 
     	public override void 先描画(RenderArea Are)
     	{
-    		if (本体.IndexY == 0)
+    		if (Body.IndexY == 0)
     		{
     			Are.Draw(X0Y0_先_先);
     			Are.Draw(X0Y0_先_凸1);
@@ -697,7 +697,7 @@ namespace SlaveMatrix
 
     	public override void 色更新()
     	{
-    		if (本体.IndexY == 0)
+    		if (Body.IndexY == 0)
     		{
     			Pars.GetMiY_MaY(out mm);
     			X0Y0_根_根CP.Update(mm);

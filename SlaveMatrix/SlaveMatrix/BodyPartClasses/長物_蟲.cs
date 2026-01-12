@@ -499,19 +499,19 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public JointS 左0_接続点 => new JointS(本体, X0Y0_Torso1_Torso0_Torso, 1);
+    	public JointS 左0_接続点 => new JointS(Body, X0Y0_Torso1_Torso0_Torso, 1);
 
-    	public JointS 右0_接続点 => new JointS(本体, X0Y0_Torso1_Torso0_Torso, 2);
+    	public JointS 右0_接続点 => new JointS(Body, X0Y0_Torso1_Torso0_Torso, 2);
 
-    	public JointS 左1_接続点 => new JointS(本体, X0Y0_Torso1_Torso, 0);
+    	public JointS 左1_接続点 => new JointS(Body, X0Y0_Torso1_Torso, 0);
 
-    	public JointS 右1_接続点 => new JointS(本体, X0Y0_Torso1_Torso, 1);
+    	public JointS 右1_接続点 => new JointS(Body, X0Y0_Torso1_Torso, 1);
 
-    	public JointS Torso_接続点 => new JointS(本体, X0Y0_Torso1_Torso, 3);
+    	public JointS Torso_接続点 => new JointS(Body, X0Y0_Torso1_Torso, 3);
 
-    	public JointS 鎖1_接続点 => new JointS(本体, X0Y0_輪1_金具左, 0);
+    	public JointS 鎖1_接続点 => new JointS(Body, X0Y0_輪1_金具左, 0);
 
-    	public JointS 鎖2_接続点 => new JointS(本体, X0Y0_輪1_金具右, 0);
+    	public JointS 鎖2_接続点 => new JointS(Body, X0Y0_輪1_金具右, 0);
 
     	public 長物_蟲(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 長物_蟲D e)
     	{
@@ -524,10 +524,10 @@ namespace SlaveMatrix
     		Dif dif = new Dif();
     		dif.Tag = pars.Tag;
     		dif.Add(pars);
-    		本体 = new Difs();
-    		本体.Tag = dif.Tag;
-    		本体.Add(dif);
-    		Pars pars2 = 本体[0][0];
+    		Body = new Difs();
+    		Body.Tag = dif.Tag;
+    		Body.Add(dif);
+    		Pars pars2 = Body[0][0];
     		Pars pars3 = pars2["胴1"].ToPars();
     		X0Y0_Torso1_背板 = pars3["背板"].ToPar();
     		X0Y0_Torso1_胸板 = pars3["胸板"].ToPar();
@@ -547,8 +547,8 @@ namespace SlaveMatrix
     		X0Y0_輪1_金具3 = pars3["金具3"].ToPar();
     		X0Y0_輪1_金具左 = pars3["金具左"].ToPar();
     		X0Y0_輪1_金具右 = pars3["金具右"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -693,7 +693,7 @@ namespace SlaveMatrix
 
     	public override void 描画0(RenderArea Are)
     	{
-    		本体.Draw(Are);
+    		Body.Draw(Are);
     		鎖1.描画0(Are);
     		鎖2.描画0(Are);
     	}

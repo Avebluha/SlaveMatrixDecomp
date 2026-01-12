@@ -172,19 +172,19 @@ namespace SlaveMatrix
     	public 上着ボトム_クロス後(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 上着ボトム_クロス後D e)
     	{
     		ThisType = GetType();
-    		本体 = new Difs(Sta.胴体["上着ボトム後"]);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs(Sta.胴体["上着ボトム後"]);
+    		Pars pars = Body[0][0];
     		X0Y0_下地 = pars["下地"].ToPar();
     		Pars pars2 = pars["染み"].ToPars();
     		X0Y0_染み_染み2 = pars2["染み2"].ToPar();
     		X0Y0_染み_染み1 = pars2["染み1"].ToPar();
-    		pars = 本体[0][1];
+    		pars = Body[0][1];
     		X0Y1_下地 = pars["下地"].ToPar();
     		pars2 = pars["染み"].ToPars();
     		X0Y1_染み_染み2 = pars2["染み2"].ToPar();
     		X0Y1_染み_染み1 = pars2["染み1"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -243,7 +243,7 @@ namespace SlaveMatrix
 
     	public override void 色更新()
     	{
-    		if (本体.IndexY == 0)
+    		if (Body.IndexY == 0)
     		{
     			X0Y0_下地CP.Update();
     			X0Y0_染み_染み2CP.Update();

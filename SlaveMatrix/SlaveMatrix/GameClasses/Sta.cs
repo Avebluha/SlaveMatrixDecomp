@@ -828,7 +828,7 @@ namespace SlaveMatrix
 
     	public static void SetHitFalse(this Ele e)
     	{
-    		foreach (Par item in e.本体.EnumAllPar())
+    		foreach (Par item in e.Body.EnumAllPar())
     		{
     			item.Hit = false;
     		}
@@ -836,7 +836,7 @@ namespace SlaveMatrix
 
     	public static void SetHitTrue(this Ele e)
     	{
-    		foreach (Par item in e.本体.EnumAllPar())
+    		foreach (Par item in e.Body.EnumAllPar())
     		{
     			item.Hit = true;
     		}

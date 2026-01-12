@@ -149,27 +149,27 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public JointS 触肢左_接続点 => new JointS(本体, X0Y0_Torso, 10);
+    	public JointS 触肢左_接続点 => new JointS(Body, X0Y0_Torso, 10);
 
-    	public JointS 触肢右_接続点 => new JointS(本体, X0Y0_Torso, 11);
+    	public JointS 触肢右_接続点 => new JointS(Body, X0Y0_Torso, 11);
 
-    	public JointS 節足左1_接続点 => new JointS(本体, X0Y0_Torso, 2);
+    	public JointS 節足左1_接続点 => new JointS(Body, X0Y0_Torso, 2);
 
-    	public JointS 節足左2_接続点 => new JointS(本体, X0Y0_Torso, 4);
+    	public JointS 節足左2_接続点 => new JointS(Body, X0Y0_Torso, 4);
 
-    	public JointS 節足左3_接続点 => new JointS(本体, X0Y0_Torso, 6);
+    	public JointS 節足左3_接続点 => new JointS(Body, X0Y0_Torso, 6);
 
-    	public JointS 節足左4_接続点 => new JointS(本体, X0Y0_Torso, 8);
+    	public JointS 節足左4_接続点 => new JointS(Body, X0Y0_Torso, 8);
 
-    	public JointS 節足右1_接続点 => new JointS(本体, X0Y0_Torso, 3);
+    	public JointS 節足右1_接続点 => new JointS(Body, X0Y0_Torso, 3);
 
-    	public JointS 節足右2_接続点 => new JointS(本体, X0Y0_Torso, 5);
+    	public JointS 節足右2_接続点 => new JointS(Body, X0Y0_Torso, 5);
 
-    	public JointS 節足右3_接続点 => new JointS(本体, X0Y0_Torso, 7);
+    	public JointS 節足右3_接続点 => new JointS(Body, X0Y0_Torso, 7);
 
-    	public JointS 節足右4_接続点 => new JointS(本体, X0Y0_Torso, 9);
+    	public JointS 節足右4_接続点 => new JointS(Body, X0Y0_Torso, 9);
 
-    	public JointS 尾_接続点 => new JointS(本体, X0Y0_Torso, 0);
+    	public JointS 尾_接続点 => new JointS(Body, X0Y0_Torso, 0);
 
     	public 多足_蜘(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 多足_蜘D e)
     	{
@@ -178,15 +178,15 @@ namespace SlaveMatrix
     		Dif dif = new Dif();
     		dif.Tag = "蜘";
     		dif.Add(new Pars(Sta.半身["多足"][0][1]));
-    		本体 = new Difs();
-    		本体.Tag = dif.Tag;
-    		本体.Add(dif);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs();
+    		Body.Tag = dif.Tag;
+    		Body.Add(dif);
+    		Pars pars = Body[0][0];
     		X0Y0_Torso = pars["Torso"].ToPar();
     		X0Y0_胸版 = pars["胸版"].ToPar();
     		X0Y0_柄 = pars["柄"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;

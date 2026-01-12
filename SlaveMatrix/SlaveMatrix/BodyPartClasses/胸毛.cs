@@ -86,11 +86,11 @@ namespace SlaveMatrix
     	public 胸毛(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 胸毛D e)
     	{
     		ThisType = GetType();
-    		本体 = new Difs(Sta.胴体["胸毛"]);
-    		Pars pars = 本体[0][0]["獣性"].ToPars();
+    		Body = new Difs(Sta.胴体["胸毛"]);
+    		Pars pars = Body[0][0]["獣性"].ToPars();
     		X0Y0_獣性_胸毛 = pars["胸毛"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;

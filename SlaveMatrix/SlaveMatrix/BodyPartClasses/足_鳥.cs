@@ -1860,9 +1860,9 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public JointS 鎖1_接続点 => new JointS(本体, X0Y0_脚輪_金具左, 0);
+    	public JointS 鎖1_接続点 => new JointS(Body, X0Y0_脚輪_金具左, 0);
 
-    	public JointS 鎖2_接続点 => new JointS(本体, X0Y0_脚輪_金具右, 0);
+    	public JointS 鎖2_接続点 => new JointS(Body, X0Y0_脚輪_金具右, 0);
 
     	public 足_鳥(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 足_鳥D e)
     	{
@@ -1870,10 +1870,10 @@ namespace SlaveMatrix
     		Dif dif = new Dif();
     		dif.Tag = "鳥";
     		dif.Add(new Pars(Sta.脚左["四足足"][2][0]));
-    		本体 = new Difs();
-    		本体.Tag = dif.Tag;
-    		本体.Add(dif);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs();
+    		Body.Tag = dif.Tag;
+    		Body.Add(dif);
+    		Pars pars = Body[0][0];
     		X0Y0_足 = pars["足"].ToPar();
     		X0Y0_筋 = pars["筋"].ToPar();
     		X0Y0_足首 = pars["足首"].ToPar();
@@ -1975,8 +1975,8 @@ namespace SlaveMatrix
     		X0Y0_親指_竜性_鱗1_竜性_鱗4 = pars3["鱗4"].ToPar();
     		X0Y0_親指_竜性_鱗1_竜性_鱗5 = pars3["鱗5"].ToPar();
     		X0Y0_親指_竜性_鱗1_竜性_鱗6 = pars3["鱗6"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -2294,7 +2294,7 @@ namespace SlaveMatrix
     		X0Y0_人指_指2.AngleBase = num * -13.0;
     		X0Y0_人指_指1.AngleBase = num * 41.0;
     		X0Y0_親指_指1.AngleBase = num * 43.0;
-    		本体.JoinPAall();
+    		Body.JoinPAall();
     	}
 
     	public override void 色更新()

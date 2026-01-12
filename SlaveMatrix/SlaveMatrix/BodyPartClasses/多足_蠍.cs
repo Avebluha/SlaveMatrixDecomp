@@ -946,31 +946,31 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public JointS 触肢左_接続点 => new JointS(本体, X0Y0_基節_基節左0, 0);
+    	public JointS 触肢左_接続点 => new JointS(Body, X0Y0_基節_基節左0, 0);
 
-    	public JointS 節足左1_接続点 => new JointS(本体, X0Y0_基節_基節左1, 0);
+    	public JointS 節足左1_接続点 => new JointS(Body, X0Y0_基節_基節左1, 0);
 
-    	public JointS 節足左2_接続点 => new JointS(本体, X0Y0_基節_基節左2, 0);
+    	public JointS 節足左2_接続点 => new JointS(Body, X0Y0_基節_基節左2, 0);
 
-    	public JointS 節足左3_接続点 => new JointS(本体, X0Y0_基節_基節左3, 0);
+    	public JointS 節足左3_接続点 => new JointS(Body, X0Y0_基節_基節左3, 0);
 
-    	public JointS 節足左4_接続点 => new JointS(本体, X0Y0_基節_基節左4, 0);
+    	public JointS 節足左4_接続点 => new JointS(Body, X0Y0_基節_基節左4, 0);
 
-    	public JointS 触肢右_接続点 => new JointS(本体, X0Y0_基節_基節右0, 0);
+    	public JointS 触肢右_接続点 => new JointS(Body, X0Y0_基節_基節右0, 0);
 
-    	public JointS 節足右1_接続点 => new JointS(本体, X0Y0_基節_基節右1, 0);
+    	public JointS 節足右1_接続点 => new JointS(Body, X0Y0_基節_基節右1, 0);
 
-    	public JointS 節足右2_接続点 => new JointS(本体, X0Y0_基節_基節右2, 0);
+    	public JointS 節足右2_接続点 => new JointS(Body, X0Y0_基節_基節右2, 0);
 
-    	public JointS 節足右3_接続点 => new JointS(本体, X0Y0_基節_基節右3, 0);
+    	public JointS 節足右3_接続点 => new JointS(Body, X0Y0_基節_基節右3, 0);
 
-    	public JointS 節足右4_接続点 => new JointS(本体, X0Y0_基節_基節右4, 0);
+    	public JointS 節足右4_接続点 => new JointS(Body, X0Y0_基節_基節右4, 0);
 
-    	public JointS 櫛状板左_接続点 => new JointS(本体, X0Y0_生殖口_生殖口1, 0);
+    	public JointS 櫛状板左_接続点 => new JointS(Body, X0Y0_生殖口_生殖口1, 0);
 
-    	public JointS 櫛状板右_接続点 => new JointS(本体, X0Y0_生殖口_生殖口1, 1);
+    	public JointS 櫛状板右_接続点 => new JointS(Body, X0Y0_生殖口_生殖口1, 1);
 
-    	public JointS 尾_接続点 => new JointS(本体, X0Y0_前腹_腹節7_節0, 2);
+    	public JointS 尾_接続点 => new JointS(Body, X0Y0_前腹_腹節7_節0, 2);
 
     	public 多足_蠍(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 多足_蠍D e)
     	{
@@ -979,10 +979,10 @@ namespace SlaveMatrix
     		Dif dif = new Dif();
     		dif.Tag = "蠍";
     		dif.Add(new Pars(Sta.半身["多足"][0][2]));
-    		本体 = new Difs();
-    		本体.Tag = dif.Tag;
-    		本体.Add(dif);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs();
+    		Body.Tag = dif.Tag;
+    		Body.Add(dif);
+    		Pars pars = Body[0][0];
     		Pars pars2 = pars["前腹"].ToPars();
     		Pars pars3 = pars2["腹節7"].ToPars();
     		X0Y0_前腹_腹節7_節0 = pars3["節0"].ToPar();
@@ -1032,8 +1032,8 @@ namespace SlaveMatrix
     		pars2 = pars["生殖口"].ToPars();
     		X0Y0_生殖口_生殖口0 = pars2["生殖口0"].ToPar();
     		X0Y0_生殖口_生殖口1 = pars2["生殖口1"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -1313,7 +1313,7 @@ namespace SlaveMatrix
     		X0Y0_前腹_腹節4_節0.AngleBase = maxAngle.GetRanAngle();
     		X0Y0_前腹_腹節3_節0.AngleBase = maxAngle.GetRanAngle();
     		X0Y0_前腹_腹節2_節0.AngleBase = maxAngle.GetRanAngle();
-    		本体.JoinPAall();
+    		Body.JoinPAall();
     	}
 
     	public IEnumerable<Par> 軸列挙()

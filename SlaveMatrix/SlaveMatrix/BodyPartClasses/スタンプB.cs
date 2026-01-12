@@ -21,10 +21,10 @@ namespace SlaveMatrix
     			{
     				if (stum.Sta.表示)
     				{
-    					p = stum.Ele.本体.Current.GetPar(stum.Path);
+    					p = stum.Ele.Body.Current.GetPar(stum.Path);
     					stum.Sta.位置B = p.ToGlobal(stum.Pos);
     					stum.Sta.色更新();
-    					stum.Sta.本体.Draw(Are);
+    					stum.Sta.Body.Draw(Are);
     				}
     			}
     		}
@@ -50,7 +50,7 @@ namespace SlaveMatrix
     			sep.Sta.Xv = RNG.XS.NextDouble();
     			sep.Sta.右 = RNG.XS.NextBool();
     			sep.Ele = he;
-    			sep.Par = he.本体.GetHitPar_(hc);
+    			sep.Par = he.Body.GetHitPar_(hc);
     			sep.Path = sep.Par.GetPath();
     			sep.Pos = sep.Par.ToLocal(cp);
     			if (参照.ContainsKey(he))

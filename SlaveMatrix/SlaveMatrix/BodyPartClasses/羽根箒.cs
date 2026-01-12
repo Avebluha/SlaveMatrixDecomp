@@ -212,8 +212,8 @@ namespace SlaveMatrix
     	public 羽根箒(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 羽根箒D e)
     	{
     		ThisType = GetType();
-    		本体 = new Difs(Sta.カーソル["羽根箒"]);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs(Sta.カーソル["羽根箒"]);
+    		Pars pars = Body[0][0];
     		X0Y0_羽根1 = pars["羽根1"].ToPar();
     		X0Y0_羽根2 = pars["羽根2"].ToPar();
     		X0Y0_羽根3 = pars["羽根3"].ToPar();
@@ -221,8 +221,8 @@ namespace SlaveMatrix
     		X0Y0_羽根5 = pars["羽根5"].ToPar();
     		X0Y0_羽根 = pars["羽根"].ToPar();
     		X0Y0_柄 = pars["柄"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -269,7 +269,7 @@ namespace SlaveMatrix
     		X0Y0_羽根CP = new ColorP(X0Y0_羽根, 羽根CD, DisUnit, abj: true);
     		X0Y0_柄CP = new ColorP(X0Y0_柄, 柄CD, DisUnit, abj: true);
     		濃度 = e.濃度;
-    		本体.JoinPAall();
+    		Body.JoinPAall();
     	}
 
     	public override void 色更新()

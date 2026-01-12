@@ -140,23 +140,23 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public JointS LowerArm_接続点 => new JointS(本体, X0Y0_UpperArm, 1);
+    	public JointS LowerArm_接続点 => new JointS(Body, X0Y0_UpperArm, 1);
 
     	public UpperArm_蹄(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, UpperArm_蹄D e)
     	{
     		UpperArm_蹄 UpperArm_蹄2 = this;
     		ThisType = GetType();
     		Dif dif = new Dif(Sta.腕左["四足UpperArm"][1]);
-    		本体 = new Difs();
-    		本体.Tag = dif.Tag;
-    		本体.Add(dif);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs();
+    		Body.Tag = dif.Tag;
+    		Body.Add(dif);
+    		Pars pars = Body[0][0];
     		X0Y0_筋肉上 = pars["筋肉上"].ToPar();
     		X0Y0_UpperArm = pars["上腕"].ToPar();
     		X0Y0_筋肉下 = pars["筋肉下"].ToPar();
     		Xasix = false;
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -213,7 +213,7 @@ namespace SlaveMatrix
     	{
     		double num = (右 ? (-1.0) : 1.0);
     		X0Y0_UpperArm.AngleBase = num * -96.0;
-    		本体.JoinPAall();
+    		Body.JoinPAall();
     	}
 
     	public override void 色更新()

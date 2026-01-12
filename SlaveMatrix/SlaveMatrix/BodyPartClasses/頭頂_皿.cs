@@ -212,10 +212,10 @@ namespace SlaveMatrix
     		Dif dif = new Dif();
     		dif.Tag = "皿";
     		dif.Add(new Pars(Sta.肢中["頭部前"][0][1]));
-    		本体 = new Difs();
-    		本体.Tag = dif.Tag;
-    		本体.Add(dif);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs();
+    		Body.Tag = dif.Tag;
+    		Body.Add(dif);
+    		Pars pars = Body[0][0];
     		X0Y0_皿1 = pars["皿1"].ToPar();
     		X0Y0_皿2 = pars["皿2"].ToPar();
     		Pars pars2 = pars["甲殻"].ToPars();
@@ -223,8 +223,8 @@ namespace SlaveMatrix
     		X0Y0_甲殻_甲殻3 = pars2["甲殻3"].ToPar();
     		X0Y0_甲殻_甲殻2 = pars2["甲殻2"].ToPar();
     		X0Y0_甲殻_甲殻1 = pars2["甲殻1"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;

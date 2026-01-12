@@ -93,7 +93,7 @@ namespace SlaveMatrix
     		set
     		{
     			欠損_ = value;
-    			本体.IndexY = (欠損_ ? 1 : 0);
+    			Body.IndexY = (欠損_ ? 1 : 0);
     		}
     	}
 
@@ -344,18 +344,18 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public JointS 鎖1_接続点 => new JointS(本体, X0Y0_輪_金具左, 0);
+    	public JointS 鎖1_接続点 => new JointS(Body, X0Y0_輪_金具左, 0);
 
-    	public JointS 鎖2_接続点 => new JointS(本体, X0Y0_輪_金具右, 0);
+    	public JointS 鎖2_接続点 => new JointS(Body, X0Y0_輪_金具右, 0);
 
     	public 角2_虫(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 角2_虫D e)
     	{
     		ThisType = GetType();
     		Dif dif = new Dif(Sta.肢左["角"][9]);
-    		本体 = new Difs();
-    		本体.Tag = dif.Tag;
-    		本体.Add(dif);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs();
+    		Body.Tag = dif.Tag;
+    		Body.Add(dif);
+    		Pars pars = Body[0][0];
     		X0Y0_根 = pars["根"].ToPar();
     		Pars pars2 = pars["刺"].ToPars();
     		X0Y0_棘_棘1 = pars2["刺1"].ToPar();
@@ -368,14 +368,14 @@ namespace SlaveMatrix
     		X0Y0_輪_金具3 = pars2["金具3"].ToPar();
     		X0Y0_輪_金具左 = pars2["金具左"].ToPar();
     		X0Y0_輪_金具右 = pars2["金具右"].ToPar();
-    		pars = 本体[0][1];
+    		pars = Body[0][1];
     		X0Y1_根 = pars["根"].ToPar();
     		pars2 = pars["刺"].ToPars();
     		X0Y1_棘_棘2 = pars2["刺2"].ToPar();
     		X0Y1_棘_棘3 = pars2["刺3"].ToPar();
     		X0Y1_折線 = pars["折線"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -449,7 +449,7 @@ namespace SlaveMatrix
 
     	public override void 根描画(RenderArea Are)
     	{
-    		本体.Draw(Are);
+    		Body.Draw(Are);
     		if (!欠損_)
     		{
     			鎖1.描画0(Are);
@@ -458,7 +458,7 @@ namespace SlaveMatrix
 
     	public override void 描画0(RenderArea Are)
     	{
-    		本体.Draw(Are);
+    		Body.Draw(Are);
     		if (!欠損_)
     		{
     			鎖1.描画0(Are);
@@ -476,7 +476,7 @@ namespace SlaveMatrix
 
     	public override void 色更新()
     	{
-    		if (本体.IndexY == 0)
+    		if (Body.IndexY == 0)
     		{
     			X0Y0_根CP.Update();
     			X0Y0_棘_棘1CP.Update();

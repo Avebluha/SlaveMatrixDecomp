@@ -808,10 +808,10 @@ namespace SlaveMatrix
     		Dif dif = new Dif();
     		dif.Tag = "粘";
     		dif.Add(new Pars(Sta.半身["単足"][0][1]));
-    		本体 = new Difs();
-    		本体.Tag = dif.Tag;
-    		本体.Add(dif);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs();
+    		Body.Tag = dif.Tag;
+    		Body.Add(dif);
+    		Pars pars = Body[0][0];
     		X0Y0_粘液0 = pars["粘液0"].ToPar();
     		X0Y0_粘液1 = pars["粘液1"].ToPar();
     		Pars pars2 = pars["粘液2"].ToPars();
@@ -851,8 +851,8 @@ namespace SlaveMatrix
     		X0Y0_粘液上右_粘液 = pars2["粘液"].ToPar();
     		X0Y0_粘液上右_ハイライト = pars2["ハイライト"].ToPar();
     		X0Y0_ハイライト = pars["ハイライト"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;

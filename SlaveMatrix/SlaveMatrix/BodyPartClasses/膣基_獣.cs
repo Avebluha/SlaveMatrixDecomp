@@ -86,11 +86,11 @@ namespace SlaveMatrix
     	public 膣基_獣(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 膣基_獣D e)
     	{
     		ThisType = GetType();
-    		本体 = new Difs(Sta.半身["四足膣基"]);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs(Sta.半身["四足膣基"]);
+    		Pars pars = Body[0][0];
     		X0Y0_膣基 = pars["膣基"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;

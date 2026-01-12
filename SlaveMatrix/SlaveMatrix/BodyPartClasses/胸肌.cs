@@ -821,8 +821,8 @@ namespace SlaveMatrix
     	public 胸肌(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 胸肌D e)
     	{
     		ThisType = GetType();
-    		本体 = new Difs(Sta.胴体["胸郭肌"]);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs(Sta.胴体["胸郭肌"]);
+    		Pars pars = Body[0][0];
     		Pars pars2 = pars["甲殻"].ToPars();
     		X0Y0_虫性_甲殻2 = pars2["甲殻2"].ToPar();
     		Pars pars3 = pars2["甲殻1"].ToPars();
@@ -876,8 +876,8 @@ namespace SlaveMatrix
     		X0Y0_コア_コア1_基 = pars3["基"].ToPar();
     		X0Y0_コア_コア1_コア = pars3["コア"].ToPar();
     		X0Y0_コア_コア1_ハイライト = pars3["ハイライト"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;

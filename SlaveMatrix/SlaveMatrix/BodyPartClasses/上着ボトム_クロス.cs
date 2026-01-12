@@ -640,17 +640,17 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public JointS 上着ボトム後_接続点 => new JointS(本体, X0Y0_中_下地, 4);
+    	public JointS 上着ボトム後_接続点 => new JointS(Body, X0Y0_中_下地, 4);
 
     	public 上着ボトム_クロス(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 上着ボトム_クロスD e)
     	{
     		上着ボトム_クロス 上着ボトム_クロス2 = this;
     		ThisType = GetType();
     		Dif dif = new Dif(Sta.胴体["上着ボトム前"][0]);
-    		本体 = new Difs();
-    		本体.Tag = dif.Tag;
-    		本体.Add(dif);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs();
+    		Body.Tag = dif.Tag;
+    		Body.Add(dif);
+    		Pars pars = Body[0][0];
     		Pars pars2 = pars["中"].ToPars();
     		X0Y0_中_下地 = pars2["下地"].ToPar();
     		X0Y0_中_皺1 = pars2["皺1"].ToPar();
@@ -671,7 +671,7 @@ namespace SlaveMatrix
     		X0Y0_右_皺4 = pars2["皺4"].ToPar();
     		X0Y0_右_皺5 = pars2["皺5"].ToPar();
     		X0Y0_右_皺6 = pars2["皺6"].ToPar();
-    		Pars pars3 = 本体[0][1];
+    		Pars pars3 = Body[0][1];
     		pars2 = pars3["中"].ToPars();
     		X0Y1_中_下地 = pars2["下地"].ToPar();
     		X0Y1_中_皺1 = pars2["皺1"].ToPar();
@@ -692,8 +692,8 @@ namespace SlaveMatrix
     		X0Y1_右_皺4 = pars2["皺4"].ToPar();
     		X0Y1_右_皺5 = pars2["皺5"].ToPar();
     		X0Y1_右_皺6 = pars2["皺6"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -813,7 +813,7 @@ namespace SlaveMatrix
 
     	public override void 色更新()
     	{
-    		if (本体.IndexY == 0)
+    		if (Body.IndexY == 0)
     		{
     			X0Y0_中_下地CP.Update();
     			X0Y0_中_皺1CP.Update();

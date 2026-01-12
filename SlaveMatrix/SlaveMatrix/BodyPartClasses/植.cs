@@ -1158,7 +1158,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public JointS 花_接続点 => new JointS(本体, X0Y0_茎, 6);
+    	public JointS 花_接続点 => new JointS(Body, X0Y0_茎, 6);
 
     	public 植(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 植D e)
     	{
@@ -1170,10 +1170,10 @@ namespace SlaveMatrix
     		Dif dif = new Dif();
     		dif.Tag = "植";
     		dif.Add(pars);
-    		本体 = new Difs();
-    		本体.Tag = dif.Tag;
-    		本体.Add(dif);
-    		Pars pars2 = 本体[0][0];
+    		Body = new Difs();
+    		Body.Tag = dif.Tag;
+    		Body.Add(dif);
+    		Pars pars2 = Body[0][0];
     		Pars pars3 = pars2["通常葉4"].ToPars();
     		Pars pars4 = pars3["通常"].ToPars();
     		X0Y0_披針葉4_通常_葉 = pars4["葉"].ToPar();
@@ -1233,8 +1233,8 @@ namespace SlaveMatrix
     		pars4 = pars11["欠損"].ToPars();
     		X0Y0_心臓葉3_欠損_葉 = pars4["葉"].ToPar();
     		X0Y0_心臓葉3_欠損_葉脈 = pars4["葉脈"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -1389,7 +1389,7 @@ namespace SlaveMatrix
     		X0Y0_心臓葉2_欠損_葉脈.AngleBase = num * -41.0;
     		X0Y0_心臓葉3_通常_葉脈.AngleBase = num * -64.9999999999998;
     		X0Y0_心臓葉3_欠損_葉脈.AngleBase = num * -64.9999999999998;
-    		本体.JoinPAall();
+    		Body.JoinPAall();
     	}
 
     	public override void 色更新()

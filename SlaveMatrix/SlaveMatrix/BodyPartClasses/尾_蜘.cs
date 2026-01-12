@@ -445,7 +445,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public JointS 出糸_接続点 => new JointS(本体, X0Y0_尾0, 0);
+    	public JointS 出糸_接続点 => new JointS(Body, X0Y0_尾0, 0);
 
     	public 尾_蜘(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 尾_蜘D e)
     	{
@@ -454,10 +454,10 @@ namespace SlaveMatrix
     		Dif dif = new Dif();
     		dif.Tag = "蜘尾";
     		dif.Add(new Pars(Sta.尻尾["尾"][0][11]));
-    		本体 = new Difs();
-    		本体.Tag = dif.Tag;
-    		本体.Add(dif);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs();
+    		Body.Tag = dif.Tag;
+    		Body.Add(dif);
+    		Pars pars = Body[0][0];
     		X0Y0_尾0 = pars["尾0"].ToPar();
     		X0Y0_柄0 = pars["柄0"].ToPar();
     		X0Y0_柄左1 = pars["柄左1"].ToPar();
@@ -479,8 +479,8 @@ namespace SlaveMatrix
     		X0Y0_出糸突起前_出糸突起左 = pars2["出糸突起左"].ToPar();
     		X0Y0_出糸突起前_出糸突起右 = pars2["出糸突起右"].ToPar();
     		X0Y0_付根線 = pars["付根線"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -565,7 +565,7 @@ namespace SlaveMatrix
     	public override void SetAngle0()
     	{
     		_ = 右;
-    		本体.JoinPAall();
+    		Body.JoinPAall();
     	}
 
     	public override IEnumerable<Par> Enum軸()

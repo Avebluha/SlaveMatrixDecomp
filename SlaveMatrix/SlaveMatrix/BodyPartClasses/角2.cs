@@ -20,7 +20,7 @@ namespace SlaveMatrix
 
     	public virtual void 根描画(RenderArea Are)
     	{
-    		本体.Draw(Are);
+    		Body.Draw(Are);
     	}
 
     	public virtual void 先描画(RenderArea Are)

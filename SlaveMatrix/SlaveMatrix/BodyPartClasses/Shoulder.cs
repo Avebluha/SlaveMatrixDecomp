@@ -305,14 +305,14 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public JointS UpperArm_接続点 => new JointS(本体, X0Y0_Shoulder_Shoulder, 1);
+    	public JointS UpperArm_接続点 => new JointS(Body, X0Y0_Shoulder_Shoulder, 1);
 
     	public Shoulder(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, ShoulderD e)
     	{
     		Shoulder Shoulder2 = this;
     		ThisType = GetType();
-    		本体 = new Difs(Sta.肩左["Shoulder"]);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs(Sta.肩左["Shoulder"]);
+    		Pars pars = Body[0][0];
     		Pars pars2 = pars["脇"].ToPars();
     		X0Y0_脇_脇 = pars2["脇"].ToPar();
     		X0Y0_脇_筋肉 = pars2["筋肉"].ToPar();
@@ -327,8 +327,8 @@ namespace SlaveMatrix
     		X0Y0_Shoulder_傷I4 = pars2["傷I4"].ToPar();
     		X0Y0_Shoulder_シャツ = pars2["シャツ"].ToPar();
     		X0Y0_Shoulder_ナース = pars2["ナース"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;

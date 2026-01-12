@@ -557,8 +557,8 @@ namespace SlaveMatrix
     	public 飛沫_人(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 飛沫_人D e)
     	{
     		ThisType = GetType();
-    		本体 = new Difs(Sta.性器付["飛沫"]);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs(Sta.性器付["飛沫"]);
+    		Pars pars = Body[0][0];
     		X0Y0_飛沫基 = pars["飛沫基"].ToPar();
     		X0Y0_雫1 = pars["雫1"].ToPar();
     		X0Y0_雫2 = pars["雫2"].ToPar();
@@ -570,7 +570,7 @@ namespace SlaveMatrix
     		X0Y0_雫8 = pars["雫8"].ToPar();
     		X0Y0_雫9 = pars["雫9"].ToPar();
     		X0Y0_雫10 = pars["雫10"].ToPar();
-    		pars = 本体[0][1];
+    		pars = Body[0][1];
     		X0Y1_飛沫基 = pars["飛沫基"].ToPar();
     		X0Y1_雫1 = pars["雫1"].ToPar();
     		X0Y1_雫2 = pars["雫2"].ToPar();
@@ -582,7 +582,7 @@ namespace SlaveMatrix
     		X0Y1_雫8 = pars["雫8"].ToPar();
     		X0Y1_雫9 = pars["雫9"].ToPar();
     		X0Y1_雫10 = pars["雫10"].ToPar();
-    		pars = 本体[0][2];
+    		pars = Body[0][2];
     		X0Y2_飛沫基 = pars["飛沫基"].ToPar();
     		X0Y2_雫1 = pars["雫1"].ToPar();
     		X0Y2_雫2 = pars["雫2"].ToPar();
@@ -594,7 +594,7 @@ namespace SlaveMatrix
     		X0Y2_雫8 = pars["雫8"].ToPar();
     		X0Y2_雫9 = pars["雫9"].ToPar();
     		X0Y2_雫10 = pars["雫10"].ToPar();
-    		pars = 本体[0][3];
+    		pars = Body[0][3];
     		X0Y3_飛沫基 = pars["飛沫基"].ToPar();
     		X0Y3_雫1 = pars["雫1"].ToPar();
     		X0Y3_雫2 = pars["雫2"].ToPar();
@@ -606,7 +606,7 @@ namespace SlaveMatrix
     		X0Y3_雫8 = pars["雫8"].ToPar();
     		X0Y3_雫9 = pars["雫9"].ToPar();
     		X0Y3_雫10 = pars["雫10"].ToPar();
-    		pars = 本体[0][4];
+    		pars = Body[0][4];
     		X0Y4_飛沫基 = pars["飛沫基"].ToPar();
     		X0Y4_雫1 = pars["雫1"].ToPar();
     		X0Y4_雫2 = pars["雫2"].ToPar();
@@ -618,8 +618,8 @@ namespace SlaveMatrix
     		X0Y4_雫8 = pars["雫8"].ToPar();
     		X0Y4_雫9 = pars["雫9"].ToPar();
     		X0Y4_雫10 = pars["雫10"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -722,7 +722,7 @@ namespace SlaveMatrix
 
     	public override void 色更新()
     	{
-    		switch (本体.IndexY)
+    		switch (Body.IndexY)
     		{
     		case 0:
     			X0Y0_飛沫基CP.Update();

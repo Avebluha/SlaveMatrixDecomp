@@ -448,10 +448,10 @@ namespace SlaveMatrix
     	{
     		ThisType = GetType();
     		Dif dif = new Dif(Sta.胴体["下着トップ"][1]);
-    		本体 = new Difs();
-    		本体.Tag = dif.Tag;
-    		本体.Add(dif);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs();
+    		Body.Tag = dif.Tag;
+    		Body.Add(dif);
+    		Pars pars = Body[0][0];
     		X0Y0_紐 = pars["紐"].ToPar();
     		Pars pars2 = pars["カップ左"].ToPars();
     		X0Y0_カップ左_紐 = pars2["紐"].ToPar();
@@ -469,8 +469,8 @@ namespace SlaveMatrix
     		X0Y0_カップ右_縁_縁2 = pars3["縁2"].ToPar();
     		X0Y0_カップ右_縁_縁3 = pars3["縁3"].ToPar();
     		X0Y0_カップ右_縁_縁4 = pars3["縁4"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;

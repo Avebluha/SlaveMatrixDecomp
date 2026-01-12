@@ -116,27 +116,27 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public JointS 左5_接続点 => new JointS(本体, X0Y0_髪基, 5);
+    	public JointS 左5_接続点 => new JointS(Body, X0Y0_髪基, 5);
 
-    	public JointS 左4_接続点 => new JointS(本体, X0Y0_髪基, 1);
+    	public JointS 左4_接続点 => new JointS(Body, X0Y0_髪基, 1);
 
-    	public JointS 左3_接続点 => new JointS(本体, X0Y0_髪基, 7);
+    	public JointS 左3_接続点 => new JointS(Body, X0Y0_髪基, 7);
 
-    	public JointS 左2_接続点 => new JointS(本体, X0Y0_髪基, 3);
+    	public JointS 左2_接続点 => new JointS(Body, X0Y0_髪基, 3);
 
-    	public JointS 左1_接続点 => new JointS(本体, X0Y0_髪基, 9);
+    	public JointS 左1_接続点 => new JointS(Body, X0Y0_髪基, 9);
 
-    	public JointS 中央_接続点 => new JointS(本体, X0Y0_髪基, 0);
+    	public JointS 中央_接続点 => new JointS(Body, X0Y0_髪基, 0);
 
-    	public JointS 右1_接続点 => new JointS(本体, X0Y0_髪基, 10);
+    	public JointS 右1_接続点 => new JointS(Body, X0Y0_髪基, 10);
 
-    	public JointS 右2_接続点 => new JointS(本体, X0Y0_髪基, 4);
+    	public JointS 右2_接続点 => new JointS(Body, X0Y0_髪基, 4);
 
-    	public JointS 右3_接続点 => new JointS(本体, X0Y0_髪基, 8);
+    	public JointS 右3_接続点 => new JointS(Body, X0Y0_髪基, 8);
 
-    	public JointS 右4_接続点 => new JointS(本体, X0Y0_髪基, 2);
+    	public JointS 右4_接続点 => new JointS(Body, X0Y0_髪基, 2);
 
-    	public JointS 右5_接続点 => new JointS(本体, X0Y0_髪基, 6);
+    	public JointS 右5_接続点 => new JointS(Body, X0Y0_髪基, 6);
 
     	public BackHair0_肢系(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, BackHair0_肢系D e)
     	{
@@ -145,13 +145,13 @@ namespace SlaveMatrix
     		Dif dif = new Dif();
     		dif.Tag = "肢系";
     		dif.Add(new Pars(Sta.胴体["BackHair0"][0][21]));
-    		本体 = new Difs();
-    		本体.Tag = dif.Tag;
-    		本体.Add(dif);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs();
+    		Body.Tag = dif.Tag;
+    		Body.Add(dif);
+    		Pars pars = Body[0][0];
     		X0Y0_髪基 = pars["髪基"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -318,7 +318,7 @@ namespace SlaveMatrix
     	public override void SetAngle0()
     	{
     		_ = 右;
-    		本体.JoinPAall();
+    		Body.JoinPAall();
     	}
 
     	public void スライム()

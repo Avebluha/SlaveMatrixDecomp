@@ -425,8 +425,8 @@ namespace SlaveMatrix
     	public 頬瞼(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 頬瞼D e)
     	{
     		ThisType = GetType();
-    		本体 = new Difs(Sta.胴体["頬瞼左"]);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs(Sta.胴体["頬瞼左"]);
+    		Pars pars = Body[0][0];
     		Pars pars2 = pars["瞼左"].ToPars();
     		X0Y0_瞼左_瞼 = pars2["瞼"].ToPar();
     		X0Y0_瞼左_睫毛1 = pars2["睫毛1"].ToPar();
@@ -435,7 +435,7 @@ namespace SlaveMatrix
     		X0Y0_瞼右_瞼 = pars2["瞼"].ToPar();
     		X0Y0_瞼右_睫毛1 = pars2["睫毛1"].ToPar();
     		X0Y0_瞼右_睫毛2 = pars2["睫毛2"].ToPar();
-    		Pars pars3 = 本体[0][1];
+    		Pars pars3 = Body[0][1];
     		pars2 = pars3["瞼左"].ToPars();
     		X0Y1_瞼左_瞼 = pars2["瞼"].ToPar();
     		X0Y1_瞼左_睫毛1 = pars2["睫毛1"].ToPar();
@@ -444,7 +444,7 @@ namespace SlaveMatrix
     		X0Y1_瞼右_瞼 = pars2["瞼"].ToPar();
     		X0Y1_瞼右_睫毛1 = pars2["睫毛1"].ToPar();
     		X0Y1_瞼右_睫毛2 = pars2["睫毛2"].ToPar();
-    		Pars pars4 = 本体[0][2];
+    		Pars pars4 = Body[0][2];
     		pars2 = pars4["瞼左"].ToPars();
     		X0Y2_瞼左_瞼 = pars2["瞼"].ToPar();
     		X0Y2_瞼左_睫毛1 = pars2["睫毛1"].ToPar();
@@ -453,7 +453,7 @@ namespace SlaveMatrix
     		X0Y2_瞼右_瞼 = pars2["瞼"].ToPar();
     		X0Y2_瞼右_睫毛1 = pars2["睫毛1"].ToPar();
     		X0Y2_瞼右_睫毛2 = pars2["睫毛2"].ToPar();
-    		Pars pars5 = 本体[0][3];
+    		Pars pars5 = Body[0][3];
     		pars2 = pars5["瞼左"].ToPars();
     		X0Y3_瞼左_瞼 = pars2["瞼"].ToPar();
     		X0Y3_瞼左_睫毛1 = pars2["睫毛1"].ToPar();
@@ -462,7 +462,7 @@ namespace SlaveMatrix
     		X0Y3_瞼右_瞼 = pars2["瞼"].ToPar();
     		X0Y3_瞼右_睫毛1 = pars2["睫毛1"].ToPar();
     		X0Y3_瞼右_睫毛2 = pars2["睫毛2"].ToPar();
-    		Pars pars6 = 本体[0][4];
+    		Pars pars6 = Body[0][4];
     		pars2 = pars6["瞼左"].ToPars();
     		X0Y4_瞼左_瞼 = pars2["瞼"].ToPar();
     		X0Y4_瞼左_睫毛1 = pars2["睫毛1"].ToPar();
@@ -471,8 +471,8 @@ namespace SlaveMatrix
     		X0Y4_瞼右_瞼 = pars2["瞼"].ToPar();
     		X0Y4_瞼右_睫毛1 = pars2["睫毛1"].ToPar();
     		X0Y4_瞼右_睫毛2 = pars2["睫毛2"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -560,7 +560,7 @@ namespace SlaveMatrix
 
     	public override void 色更新()
     	{
-    		switch (本体.IndexY)
+    		switch (Body.IndexY)
     		{
     		case 0:
     			X0Y0_瞼左_瞼CP.Update();
@@ -607,7 +607,7 @@ namespace SlaveMatrix
 
     	public override void 色更新(Vector2D[] mm)
     	{
-    		switch (本体.IndexY)
+    		switch (Body.IndexY)
     		{
     		case 0:
     			X0Y0_瞼左_瞼CP.Update(mm);

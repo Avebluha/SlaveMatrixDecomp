@@ -14,7 +14,7 @@ namespace SlaveMatrix
         public DE(Ele src, Action<RenderArea> 描画)
         {
             Par = src;
-            本体 = src.本体;
+            Body = src.Body;
             this.描画 = 描画;
         }
 
@@ -1018,7 +1018,7 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			Par par = 性器.本体.Current.EnumAllPar().First((Par e) => e.Tag == "陰核");
+    			Par par = 性器.Body.Current.EnumAllPar().First((Par e) => e.Tag == "陰核");
     			性器.接続PA();
     			return par.ToGlobal(par.BasePointBase.AddY(-0.003));
     		}
@@ -1028,7 +1028,7 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			Par par = 乳房左.本体.Current.EnumAllPar().First((Par e) => e.Tag == "乳首");
+    			Par par = 乳房左.Body.Current.EnumAllPar().First((Par e) => e.Tag == "乳首");
     			乳房左.接続PA();
     			return par.ToGlobal(par.BasePointBase);
     		}
@@ -1038,7 +1038,7 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			Par par = 乳房右.本体.Current.EnumAllPar().First((Par e) => e.Tag == "乳首");
+    			Par par = 乳房右.Body.Current.EnumAllPar().First((Par e) => e.Tag == "乳首");
     			乳房右.接続PA();
     			return par.ToGlobal(par.BasePointBase);
     		}
@@ -1048,7 +1048,7 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			Par par = 性器.本体.Current.EnumAllPar().First((Par e) => e.Tag == "尿道");
+    			Par par = 性器.Body.Current.EnumAllPar().First((Par e) => e.Tag == "尿道");
     			性器.接続PA();
     			return par.ToGlobal(par.BasePointBase);
     		}
@@ -1058,7 +1058,7 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			Par par = 性器.本体.Current.EnumAllPar().First((Par e) => e.Tag == "膣口");
+    			Par par = 性器.Body.Current.EnumAllPar().First((Par e) => e.Tag == "膣口");
     			性器.接続PA();
     			return par.Position;
     		}
@@ -1594,17 +1594,17 @@ namespace SlaveMatrix
     			腰肌_人.Yv = value;
     			下着B_ノーマル.Yv = value;
     			下着B_マイクロ.Yv = value;
-    			性器_人.本体.SizeYCont = 0.65 + Waist.Yv * 0.35;
-    			foreach (Par item in 性器_人.本体.EnumJoinRoot)
+    			性器_人.Body.SizeYCont = 0.65 + Waist.Yv * 0.35;
+    			foreach (Par item in 性器_人.Body.EnumJoinRoot)
     			{
     				item.PositionCont = Dat.Vec2DUnitY * (Waist.Yv * 0.001 + 0.001);
     			}
-    			肛門_人.本体.SizeYCont = 0.65 + Waist.Yv * 0.35;
-    			foreach (Par item2 in 上着B_クロス.本体.EnumJoinRoot)
+    			肛門_人.Body.SizeYCont = 0.65 + Waist.Yv * 0.35;
+    			foreach (Par item2 in 上着B_クロス.Body.EnumJoinRoot)
     			{
     				item2.PositionCont = Dat.Vec2DUnitY * (Waist.Yv * 0.003);
     			}
-    			foreach (Par item3 in 上着B_前掛け.本体.EnumJoinRoot)
+    			foreach (Par item3 in 上着B_前掛け.Body.EnumJoinRoot)
     			{
     				item3.PositionCont = Dat.Vec2DUnitY * (Waist.Yv * 0.003);
     			}
@@ -1624,17 +1624,17 @@ namespace SlaveMatrix
     			腰肌_人.Yi = value;
     			下着B_ノーマル.Yi = value;
     			下着B_マイクロ.Yi = value;
-    			性器_人.本体.SizeYCont = 0.65 + Waist.Yv * 0.35;
-    			foreach (Par item in 性器_人.本体.EnumJoinRoot)
+    			性器_人.Body.SizeYCont = 0.65 + Waist.Yv * 0.35;
+    			foreach (Par item in 性器_人.Body.EnumJoinRoot)
     			{
     				item.PositionCont = Dat.Vec2DUnitY * (Waist.Yv * 0.001 + 0.001);
     			}
-    			肛門_人.本体.SizeYCont = 0.65 + Waist.Yv * 0.35;
-    			foreach (Par item2 in 上着B_クロス.本体.EnumJoinRoot)
+    			肛門_人.Body.SizeYCont = 0.65 + Waist.Yv * 0.35;
+    			foreach (Par item2 in 上着B_クロス.Body.EnumJoinRoot)
     			{
     				item2.PositionCont = Dat.Vec2DUnitY * (Waist.Yv * 0.003);
     			}
-    			foreach (Par item3 in 上着B_前掛け.本体.EnumJoinRoot)
+    			foreach (Par item3 in 上着B_前掛け.Body.EnumJoinRoot)
     			{
     				item3.PositionCont = Dat.Vec2DUnitY * (Waist.Yv * 0.003);
     			}
@@ -1652,12 +1652,12 @@ namespace SlaveMatrix
     		{
     			Waist_獣.Yv = value;
     			腰肌_獣.Yv = value;
-    			性器_獣.本体.SizeYCont = 0.65 + Waist_獣.Yv * 0.35;
-    			foreach (Par item in 性器_獣.本体.EnumJoinRoot)
+    			性器_獣.Body.SizeYCont = 0.65 + Waist_獣.Yv * 0.35;
+    			foreach (Par item in 性器_獣.Body.EnumJoinRoot)
     			{
     				item.PositionCont = Dat.Vec2DUnitY * (Waist_獣.Yv * 0.001 + 0.001);
     			}
-    			肛門_獣.本体.SizeYCont = 0.65 + Waist_獣.Yv * 0.35;
+    			肛門_獣.Body.SizeYCont = 0.65 + Waist_獣.Yv * 0.35;
     			腰振り_獣();
     		}
     	}
@@ -1672,12 +1672,12 @@ namespace SlaveMatrix
     		{
     			Waist_獣.Yi = value;
     			腰肌_獣.Yi = value;
-    			性器_獣.本体.SizeYCont = 0.65 + Waist_獣.Yv * 0.35;
-    			foreach (Par item in 性器_獣.本体.EnumJoinRoot)
+    			性器_獣.Body.SizeYCont = 0.65 + Waist_獣.Yv * 0.35;
+    			foreach (Par item in 性器_獣.Body.EnumJoinRoot)
     			{
     				item.PositionCont = Dat.Vec2DUnitY * (Waist_獣.Yv * 0.001 + 0.001);
     			}
-    			肛門_獣.本体.SizeYCont = 0.65 + Waist_獣.Yv * 0.35;
+    			肛門_獣.Body.SizeYCont = 0.65 + Waist_獣.Yv * 0.35;
     			腰振り_獣();
     		}
     	}
@@ -2973,7 +2973,7 @@ namespace SlaveMatrix
     			{
     				((角2_鬼)current_element).SetBasePoint();
     			}
-    			foreach (Par item19 in current_element.本体.EnumAllPar())
+    			foreach (Par item19 in current_element.Body.EnumAllPar())
     			{
     				if (item19.Tag.Contains("ハイライト"))
     				{
@@ -5405,12 +5405,12 @@ namespace SlaveMatrix
     		if (Is粘 && Waist.腿左_接続 != null)
     		{
     			foreach (Par item53 in (from e in Waist.腿左_接続.GetEles<腿>()
-    				select e.本体.EnumAllPar()).Aggregate((IEnumerable<Par> e1, IEnumerable<Par> e2) => e1.Concat(e2)))
+    				select e.Body.EnumAllPar()).Aggregate((IEnumerable<Par> e1, IEnumerable<Par> e2) => e1.Concat(e2)))
     			{
     				item53.OP.OutlineFalse();
     			}
     			foreach (Par item54 in (from e in Waist.腿右_接続.GetEles<腿>()
-    				select e.本体.EnumAllPar()).Aggregate((IEnumerable<Par> e1, IEnumerable<Par> e2) => e1.Concat(e2)))
+    				select e.Body.EnumAllPar()).Aggregate((IEnumerable<Par> e1, IEnumerable<Par> e2) => e1.Concat(e2)))
     			{
     				item54.OP.OutlineFalse();
     			}
@@ -9203,12 +9203,12 @@ namespace SlaveMatrix
 
     	public Ele GetHitEle(Color hc)
     	{
-    		return EnumAllEle().FirstOrDefault((Ele e) => e.本体.IsHit(ref hc));
+    		return EnumAllEle().FirstOrDefault((Ele e) => e.Body.IsHit(ref hc));
     	}
 
     	public bool IsHit(Color hc)
     	{
-    		return EnumAllEle().Any((Ele e) => e.本体.IsHit(ref hc));
+    		return EnumAllEle().Any((Ele e) => e.Body.IsHit(ref hc));
     	}
 
     	public IEnumerable<Ele> EnumAllEle()
@@ -9260,11 +9260,11 @@ namespace SlaveMatrix
     			}
     		}
     		染み_人.位置B = Waist.位置;
-    		染み_人.本体.JoinP();
+    		染み_人.Body.JoinP();
     		if (Is獣)
     		{
     			染み_獣.位置B = Waist_獣.位置;
-    			染み_獣.本体.JoinP();
+    			染み_獣.Body.JoinP();
     		}
     		Waist_人y = Waist.Yi;
     		if (Is獣)
@@ -9796,14 +9796,14 @@ namespace SlaveMatrix
     		Torso.X0Y0_筋肉_筋肉左.PositionCont = Dat.Vec2DUnitY * (Waist.Yv * -0.004);
     		Torso.X0Y0_筋肉_筋肉右.PositionCont = Dat.Vec2DUnitY * (Waist.Yv * -0.004);
     		胴腹板_人.X0Y0_虫性_腹板.PositionCont = Dat.Vec2DUnitY * (Waist.Yv * -0.002);
-    		胴肌_人.本体.SizeYCont = 0.85 + (1.0 - Waist.Yv) * 0.15;
+    		胴肌_人.Body.SizeYCont = 0.85 + (1.0 - Waist.Yv) * 0.15;
     	}
 
     	private void 腰振り_獣()
     	{
     		Torso_獣.X0Y0_筋肉_筋肉左.PositionCont = Dat.Vec2DUnitY * (Waist_獣.Yv * -0.004);
     		Torso_獣.X0Y0_筋肉_筋肉右.PositionCont = Dat.Vec2DUnitY * (Waist_獣.Yv * -0.004);
-    		胴肌_獣.本体.SizeYCont = 0.85 + (1.0 - Waist_獣.Yv) * 0.15;
+    		胴肌_獣.Body.SizeYCont = 0.85 + (1.0 - Waist_獣.Yv) * 0.15;
     		if (EI半中1 != null)
     		{
     			EI半中1.Updatef = true;

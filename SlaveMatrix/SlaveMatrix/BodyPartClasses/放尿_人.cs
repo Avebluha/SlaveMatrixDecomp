@@ -545,85 +545,85 @@ namespace SlaveMatrix
     	public 放尿_人(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 放尿_人D e)
     	{
     		ThisType = GetType();
-    		本体 = new Difs(Sta.性器付["放尿"]);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs(Sta.性器付["放尿"]);
+    		Pars pars = Body[0][0];
     		X0Y0_尿 = pars["尿"].ToPar();
     		X0Y0_尿散り1 = pars["尿散り1"].ToPar();
     		X0Y0_尿散り2 = pars["尿散り2"].ToPar();
     		X0Y0_尿散り3 = pars["尿散り3"].ToPar();
     		X0Y0_尿散り4 = pars["尿散り4"].ToPar();
     		X0Y0_尿散り5 = pars["尿散り5"].ToPar();
-    		pars = 本体[0][1];
+    		pars = Body[0][1];
     		X0Y1_尿 = pars["尿"].ToPar();
     		X0Y1_尿散り1 = pars["尿散り1"].ToPar();
     		X0Y1_尿散り2 = pars["尿散り2"].ToPar();
     		X0Y1_尿散り3 = pars["尿散り3"].ToPar();
     		X0Y1_尿散り4 = pars["尿散り4"].ToPar();
     		X0Y1_尿散り5 = pars["尿散り5"].ToPar();
-    		pars = 本体[0][2];
+    		pars = Body[0][2];
     		X0Y2_尿 = pars["尿"].ToPar();
     		X0Y2_尿散り1 = pars["尿散り1"].ToPar();
     		X0Y2_尿散り2 = pars["尿散り2"].ToPar();
     		X0Y2_尿散り3 = pars["尿散り3"].ToPar();
     		X0Y2_尿散り4 = pars["尿散り4"].ToPar();
     		X0Y2_尿散り5 = pars["尿散り5"].ToPar();
-    		pars = 本体[0][3];
+    		pars = Body[0][3];
     		X0Y3_尿 = pars["尿"].ToPar();
     		X0Y3_尿散り1 = pars["尿散り1"].ToPar();
     		X0Y3_尿散り2 = pars["尿散り2"].ToPar();
     		X0Y3_尿散り3 = pars["尿散り3"].ToPar();
     		X0Y3_尿散り4 = pars["尿散り4"].ToPar();
     		X0Y3_尿散り5 = pars["尿散り5"].ToPar();
-    		pars = 本体[0][4];
+    		pars = Body[0][4];
     		X0Y4_尿 = pars["尿"].ToPar();
     		X0Y4_尿散り1 = pars["尿散り1"].ToPar();
     		X0Y4_尿散り2 = pars["尿散り2"].ToPar();
     		X0Y4_尿散り3 = pars["尿散り3"].ToPar();
     		X0Y4_尿散り4 = pars["尿散り4"].ToPar();
     		X0Y4_尿散り5 = pars["尿散り5"].ToPar();
-    		pars = 本体[0][5];
+    		pars = Body[0][5];
     		X0Y5_尿 = pars["尿"].ToPar();
     		X0Y5_尿散り1 = pars["尿散り1"].ToPar();
     		X0Y5_尿散り2 = pars["尿散り2"].ToPar();
     		X0Y5_尿散り3 = pars["尿散り3"].ToPar();
     		X0Y5_尿散り4 = pars["尿散り4"].ToPar();
     		X0Y5_尿散り5 = pars["尿散り5"].ToPar();
-    		pars = 本体[0][6];
+    		pars = Body[0][6];
     		X0Y6_尿 = pars["尿"].ToPar();
     		X0Y6_尿散り1 = pars["尿散り1"].ToPar();
     		X0Y6_尿散り2 = pars["尿散り2"].ToPar();
     		X0Y6_尿散り3 = pars["尿散り3"].ToPar();
     		X0Y6_尿散り4 = pars["尿散り4"].ToPar();
     		X0Y6_尿散り5 = pars["尿散り5"].ToPar();
-    		pars = 本体[0][7];
+    		pars = Body[0][7];
     		X0Y7_尿 = pars["尿"].ToPar();
     		X0Y7_尿散り1 = pars["尿散り1"].ToPar();
     		X0Y7_尿散り2 = pars["尿散り2"].ToPar();
     		X0Y7_尿散り3 = pars["尿散り3"].ToPar();
     		X0Y7_尿散り4 = pars["尿散り4"].ToPar();
     		X0Y7_尿散り5 = pars["尿散り5"].ToPar();
-    		pars = 本体[0][8];
+    		pars = Body[0][8];
     		X0Y8_尿 = pars["尿"].ToPar();
     		X0Y8_尿散り1 = pars["尿散り1"].ToPar();
     		X0Y8_尿散り2 = pars["尿散り2"].ToPar();
     		X0Y8_尿散り3 = pars["尿散り3"].ToPar();
     		X0Y8_尿散り4 = pars["尿散り4"].ToPar();
     		X0Y8_尿散り5 = pars["尿散り5"].ToPar();
-    		pars = 本体[0][9];
+    		pars = Body[0][9];
     		X0Y9_尿 = pars["尿"].ToPar();
     		X0Y9_尿散り1 = pars["尿散り1"].ToPar();
     		X0Y9_尿散り2 = pars["尿散り2"].ToPar();
     		X0Y9_尿散り3 = pars["尿散り3"].ToPar();
     		X0Y9_尿散り4 = pars["尿散り4"].ToPar();
-    		pars = 本体[0][10];
+    		pars = Body[0][10];
     		X0Y10_尿 = pars["尿"].ToPar();
     		X0Y10_尿散り1 = pars["尿散り1"].ToPar();
     		X0Y10_尿散り2 = pars["尿散り2"].ToPar();
     		X0Y10_尿散り3 = pars["尿散り3"].ToPar();
     		X0Y10_尿散り4 = pars["尿散り4"].ToPar();
     		X0Y10_尿散り5 = pars["尿散り5"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -731,7 +731,7 @@ namespace SlaveMatrix
 
     	public override void 色更新()
     	{
-    		switch (本体.IndexY)
+    		switch (Body.IndexY)
     		{
     		case 0:
     			X0Y0_尿CP.Update();

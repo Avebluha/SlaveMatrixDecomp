@@ -279,21 +279,21 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public JointS Chest_接続点 => new JointS(本体, X0Y0_Torso, 0);
+    	public JointS Chest_接続点 => new JointS(Body, X0Y0_Torso, 0);
 
-    	public JointS 肌_接続点 => new JointS(本体, X0Y0_Torso, 5);
+    	public JointS 肌_接続点 => new JointS(Body, X0Y0_Torso, 5);
 
-    	public JointS 翼左_接続点 => new JointS(本体, X0Y0_Torso, 1);
+    	public JointS 翼左_接続点 => new JointS(Body, X0Y0_Torso, 1);
 
-    	public JointS 翼右_接続点 => new JointS(本体, X0Y0_Torso, 2);
+    	public JointS 翼右_接続点 => new JointS(Body, X0Y0_Torso, 2);
 
     	public Torso(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, TorsoD e)
     	{
     		Torso Torso2 = this;
     		ThisType = GetType();
             //This had no Torso (胴体)
-            本体 = new Difs(Sta.胴体["Torso"]);
-    		Pars pars = 本体[0][0];
+            Body = new Difs(Sta.胴体["Torso"]);
+    		Pars pars = Body[0][0];
     		X0Y0_Torso = pars["胴"].ToPar();
     		Pars pars2 = pars["筋肉"].ToPars();
     		X0Y0_筋肉_筋肉左 = pars2["筋肉左"].ToPar();
@@ -308,8 +308,8 @@ namespace SlaveMatrix
     		pars3 = pars2["右"].ToPars();
     		X0Y0_植タトゥ_右_タトゥ2 = pars3["タトゥ2"].ToPar();
     		X0Y0_植タトゥ_右_タトゥ1 = pars3["タトゥ1"].ToPar();
-            本体.SetJoints();
-    		接続根 = new JointD(本体);
+            Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -411,7 +411,7 @@ namespace SlaveMatrix
 
     	public override void 描画0(RenderArea Are)
     	{
-    		本体.Draw(Are);
+    		Body.Draw(Are);
     		キスマーク.Draw(Are);
     		鞭痕.Draw(Are);
     	}

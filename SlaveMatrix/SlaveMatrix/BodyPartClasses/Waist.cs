@@ -2129,34 +2129,34 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public JointS Torso_接続点 => new JointS(本体, X0Y0_Waist, 0);
+    	public JointS Torso_接続点 => new JointS(Body, X0Y0_Waist, 0);
 
-    	public JointS 腿左_接続点 => new JointS(本体, X0Y0_Waist, 1);
+    	public JointS 腿左_接続点 => new JointS(Body, X0Y0_Waist, 1);
 
-    	public JointS 腿右_接続点 => new JointS(本体, X0Y0_Waist, 2);
+    	public JointS 腿右_接続点 => new JointS(Body, X0Y0_Waist, 2);
 
-    	public JointS 膣基_接続点 => new JointS(本体, X0Y0_Waist, 4);
+    	public JointS 膣基_接続点 => new JointS(Body, X0Y0_Waist, 4);
 
-    	public JointS 肛門_接続点 => new JointS(本体, X0Y0_Waist, 5);
+    	public JointS 肛門_接続点 => new JointS(Body, X0Y0_Waist, 5);
 
-    	public JointS 尾_接続点 => new JointS(本体, X0Y0_Waist, 5);
+    	public JointS 尾_接続点 => new JointS(Body, X0Y0_Waist, 5);
 
-    	public JointS 半身_接続点 => new JointS(本体, X0Y0_Waist, 5);
+    	public JointS 半身_接続点 => new JointS(Body, X0Y0_Waist, 5);
 
-    	public JointS 上着_接続点 => new JointS(本体, X0Y0_Waist, 6);
+    	public JointS 上着_接続点 => new JointS(Body, X0Y0_Waist, 6);
 
-    	public JointS 肌_接続点 => new JointS(本体, X0Y0_Waist, 7);
+    	public JointS 肌_接続点 => new JointS(Body, X0Y0_Waist, 7);
 
-    	public JointS 翼左_接続点 => new JointS(本体, X0Y0_Waist, 8);
+    	public JointS 翼左_接続点 => new JointS(Body, X0Y0_Waist, 8);
 
-    	public JointS 翼右_接続点 => new JointS(本体, X0Y0_Waist, 9);
+    	public JointS 翼右_接続点 => new JointS(Body, X0Y0_Waist, 9);
 
     	public Waist(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, WaistD e)
     	{
     		Waist Waist2 = this;
     		ThisType = GetType();
-    		本体 = new Difs(Sta.胴体["Waist"]);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs(Sta.胴体["Waist"]);
+    		Pars pars = Body[0][0];
     		X0Y0_Waist = pars["腰"].ToPar();
     		X0Y0_股 = pars["股"].ToPar();
     		X0Y0_下腹 = pars["下腹"].ToPar();
@@ -2212,7 +2212,7 @@ namespace SlaveMatrix
     		X0Y0_ハイライト上右 = pars["ハイライト上右"].ToPar();
     		X0Y0_ハイライト下左 = pars["ハイライト下左"].ToPar();
     		X0Y0_ハイライト下右 = pars["ハイライト下右"].ToPar();
-    		pars = 本体[0][1];
+    		pars = Body[0][1];
     		X0Y1_Waist = pars["腰"].ToPar();
     		X0Y1_股 = pars["股"].ToPar();
     		X0Y1_下腹 = pars["下腹"].ToPar();
@@ -2268,7 +2268,7 @@ namespace SlaveMatrix
     		X0Y1_ハイライト上右 = pars["ハイライト上右"].ToPar();
     		X0Y1_ハイライト下左 = pars["ハイライト下左"].ToPar();
     		X0Y1_ハイライト下右 = pars["ハイライト下右"].ToPar();
-    		pars = 本体[0][2];
+    		pars = Body[0][2];
     		X0Y2_Waist = pars["腰"].ToPar();
     		X0Y2_股 = pars["股"].ToPar();
     		X0Y2_下腹 = pars["下腹"].ToPar();
@@ -2324,7 +2324,7 @@ namespace SlaveMatrix
     		X0Y2_ハイライト上右 = pars["ハイライト上右"].ToPar();
     		X0Y2_ハイライト下左 = pars["ハイライト下左"].ToPar();
     		X0Y2_ハイライト下右 = pars["ハイライト下右"].ToPar();
-    		pars = 本体[0][3];
+    		pars = Body[0][3];
     		X0Y3_Waist = pars["腰"].ToPar();
     		X0Y3_股 = pars["股"].ToPar();
     		X0Y3_下腹 = pars["下腹"].ToPar();
@@ -2380,7 +2380,7 @@ namespace SlaveMatrix
     		X0Y3_ハイライト上右 = pars["ハイライト上右"].ToPar();
     		X0Y3_ハイライト下左 = pars["ハイライト下左"].ToPar();
     		X0Y3_ハイライト下右 = pars["ハイライト下右"].ToPar();
-    		pars = 本体[0][4];
+    		pars = Body[0][4];
     		X0Y4_Waist = pars["腰"].ToPar();
     		X0Y4_股 = pars["股"].ToPar();
     		X0Y4_下腹 = pars["下腹"].ToPar();
@@ -2436,8 +2436,8 @@ namespace SlaveMatrix
     		X0Y4_ハイライト上右 = pars["ハイライト上右"].ToPar();
     		X0Y4_ハイライト下左 = pars["ハイライト下左"].ToPar();
     		X0Y4_ハイライト下右 = pars["ハイライト下右"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -2934,17 +2934,17 @@ namespace SlaveMatrix
 
     	public override void 接続P()
     	{
-    		本体.JoinP();
+    		Body.JoinP();
     	}
 
     	public override void 接続PA()
     	{
-    		本体.JoinPA();
+    		Body.JoinPA();
     	}
 
     	public override void 描画0(RenderArea Are)
     	{
-    		switch (本体.IndexY)
+    		switch (Body.IndexY)
     		{
     		case 0:
     			Are.Draw(X0Y0_Waist);
@@ -3016,7 +3016,7 @@ namespace SlaveMatrix
 
     	public override void 描画1(RenderArea Are)
     	{
-    		switch (本体.IndexY)
+    		switch (Body.IndexY)
     		{
     		case 0:
     			Are.Draw(X0Y0_ハイライト);
@@ -3203,7 +3203,7 @@ namespace SlaveMatrix
 
     	public override void 色更新()
     	{
-    		switch (本体.IndexY)
+    		switch (Body.IndexY)
     		{
     		case 0:
     			X0Y0_WaistCP.Update();

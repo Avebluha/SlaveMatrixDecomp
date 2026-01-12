@@ -615,10 +615,10 @@ namespace SlaveMatrix
     		Dif dif = new Dif();
     		dif.Tag = "節";
     		dif.Add(new Pars(Sta.肢左["触覚"][0][1]));
-    		本体 = new Difs();
-    		本体.Tag = dif.Tag;
-    		本体.Add(dif);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs();
+    		Body.Tag = dif.Tag;
+    		Body.Add(dif);
+    		Pars pars = Body[0][0];
     		X0Y0_節1 = pars["節1"].ToPar();
     		X0Y0_節2 = pars["節2"].ToPar();
     		X0Y0_節3 = pars["節3"].ToPar();
@@ -645,8 +645,8 @@ namespace SlaveMatrix
     		X0Y0_節24 = pars["節24"].ToPar();
     		X0Y0_節25 = pars["節25"].ToPar();
     		X0Y0_節26 = pars["節26"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -791,7 +791,7 @@ namespace SlaveMatrix
     		num3 -= num4;
     		X0Y0_節26.AngleBase = num * (double)num2 * num3;
     		X0Y0_節1.AngleBase = num * -10.0;
-    		本体.JoinPAall();
+    		Body.JoinPAall();
     	}
 
     	public override IEnumerable<Par> Enum軸()

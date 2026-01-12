@@ -46,7 +46,7 @@ namespace SlaveMatrix
     	{
     		this.調教UI = 調教UI;
     		this.Ele = Ele;
-    		foreach (Par item in Ele.本体.EnumAllPar())
+    		foreach (Par item in Ele.Body.EnumAllPar())
     		{
     			item.HitColor = Med.GetUniqueColor();
     		}
@@ -70,7 +70,7 @@ namespace SlaveMatrix
     	{
     		if (Show && Under && 描画Show)
     		{
-    			Ele.本体.JoinPA();
+    			Ele.Body.JoinPA();
     			Ele.色更新();
     			調教UI.持ち手下描画();
     			Ele.描画0(Are);
@@ -90,7 +90,7 @@ namespace SlaveMatrix
     	{
     		if (Show && Under && 描画Show)
     		{
-    			Ele.本体.JoinPA();
+    			Ele.Body.JoinPA();
     			Ele.色更新();
     			Ele.描画0(Are);
     		}
@@ -108,7 +108,7 @@ namespace SlaveMatrix
     	{
     		if (Show && !Under && StaShow)
     		{
-    			Ele.本体.JoinPA();
+    			Ele.Body.JoinPA();
     			Ele.色更新();
     			Ele.描画0(Are);
     			Ele.描画1(Are);
@@ -120,7 +120,7 @@ namespace SlaveMatrix
     		if (Show && !Under && DraShow)
     		{
     			調教UI.持ち手下描画();
-    			Ele.本体.JoinPA();
+    			Ele.Body.JoinPA();
     			Ele.色更新();
     			Ele.描画0(Are);
     			Ele.描画1(Are);
@@ -132,7 +132,7 @@ namespace SlaveMatrix
     	{
     		if (Show && !Under && DraShow)
     		{
-    			Ele.本体.JoinPA();
+    			Ele.Body.JoinPA();
     			Ele.色更新();
     			Ele.描画0(Are);
     			Ele.描画1(Are);

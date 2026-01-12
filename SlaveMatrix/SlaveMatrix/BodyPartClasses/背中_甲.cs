@@ -860,10 +860,10 @@ namespace SlaveMatrix
     		Dif dif = new Dif();
     		dif.Tag = "甲羅";
     		dif.Add(new Pars(Sta.肢中["背中"][0][1]));
-    		本体 = new Difs();
-    		本体.Tag = dif.Tag;
-    		本体.Add(dif);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs();
+    		Body.Tag = dif.Tag;
+    		Body.Add(dif);
+    		Pars pars = Body[0][0];
     		Pars pars2 = pars["左"].ToPars();
     		X0Y0_左_甲羅1 = pars2["甲羅1"].ToPar();
     		X0Y0_左_甲羅2 = pars2["甲羅2"].ToPar();
@@ -906,8 +906,8 @@ namespace SlaveMatrix
     		X0Y0_右_側甲_側甲3 = pars3["側甲3"].ToPar();
     		X0Y0_右_側甲_側甲2 = pars3["側甲2"].ToPar();
     		X0Y0_右_側甲_側甲1 = pars3["側甲1"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;

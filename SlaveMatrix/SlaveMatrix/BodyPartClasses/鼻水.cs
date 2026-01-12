@@ -124,19 +124,19 @@ namespace SlaveMatrix
     	public 鼻水(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 鼻水D e)
     	{
     		ThisType = GetType();
-    		本体 = new Difs(Sta.胴体["鼻水左"]);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs(Sta.胴体["鼻水左"]);
+    		Pars pars = Body[0][0];
     		X0Y0_鼻水 = pars["鼻水"].ToPar();
-    		pars = 本体[0][1];
+    		pars = Body[0][1];
     		X0Y1_鼻水 = pars["鼻水"].ToPar();
-    		pars = 本体[0][2];
+    		pars = Body[0][2];
     		X0Y2_鼻水 = pars["鼻水"].ToPar();
-    		pars = 本体[0][3];
+    		pars = Body[0][3];
     		X0Y3_鼻水 = pars["鼻水"].ToPar();
-    		pars = 本体[0][4];
+    		pars = Body[0][4];
     		X0Y4_鼻水 = pars["鼻水"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -179,7 +179,7 @@ namespace SlaveMatrix
 
     	public override void 色更新()
     	{
-    		switch (本体.IndexY)
+    		switch (Body.IndexY)
     		{
     		case 0:
     			X0Y0_鼻水CP.Update();

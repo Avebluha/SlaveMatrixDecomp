@@ -406,8 +406,8 @@ namespace SlaveMatrix
     	public 紅潮(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 紅潮D e)
     	{
     		ThisType = GetType();
-    		本体 = new Difs(Sta.胴体["紅潮"]);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs(Sta.胴体["紅潮"]);
+    		Pars pars = Body[0][0];
     		X0Y0_紅潮0 = pars["紅潮0"].ToPar();
     		X0Y0_紅潮1 = pars["紅潮1"].ToPar();
     		X0Y0_紅潮右 = pars["紅潮右"].ToPar();
@@ -418,8 +418,8 @@ namespace SlaveMatrix
     		X0Y0_紅潮弱右 = pars["紅潮弱右"].ToPar();
     		X0Y0_紅潮線弱左 = pars["紅潮線弱左"].ToPar();
     		X0Y0_紅潮線弱右 = pars["紅潮線弱右"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;

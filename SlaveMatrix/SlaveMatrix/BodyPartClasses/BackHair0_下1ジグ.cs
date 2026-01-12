@@ -307,10 +307,10 @@ namespace SlaveMatrix
     		Dif dif = new Dif();
     		dif.Tag = "下げ1ジグ";
     		dif.Add(new Pars(Sta.胴体["BackHair0"][0][4]));
-    		本体 = new Difs();
-    		本体.Tag = dif.Tag;
-    		本体.Add(dif);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs();
+    		Body.Tag = dif.Tag;
+    		Body.Add(dif);
+    		Pars pars = Body[0][0];
     		X0Y0_髪基 = pars["髪基"].ToPar();
     		Pars pars2 = pars["お下げ"].ToPars();
     		X0Y0_お下げ_髪節 = pars2["髪節"].ToPar();
@@ -321,8 +321,8 @@ namespace SlaveMatrix
     		X0Y0_お下げ_髪右2 = pars2["髪右2"].ToPar();
     		X0Y0_お下げ_髪右1 = pars2["髪右1"].ToPar();
     		X0Y0_お下げ_髪根 = pars2["髪根"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -388,7 +388,7 @@ namespace SlaveMatrix
     		double num = (右 ? (-1.0) : 1.0);
     		X0Y0_お下げ_髪節.AngleBase = num * 30.0;
     		X0Y0_お下げ_髪根.AngleBase = num * -25.0;
-    		本体.JoinPAall();
+    		Body.JoinPAall();
     	}
 
     	public void スライム()

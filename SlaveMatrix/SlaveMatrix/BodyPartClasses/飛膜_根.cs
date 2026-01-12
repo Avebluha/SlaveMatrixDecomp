@@ -23,7 +23,7 @@ namespace SlaveMatrix
     		set
     		{
     			欠損_ = value;
-    			本体.IndexY = (欠損_ ? 1 : 0);
+    			Body.IndexY = (欠損_ ? 1 : 0);
     		}
     	}
 
@@ -106,14 +106,14 @@ namespace SlaveMatrix
     	public 飛膜_根(double DisUnit, 配色指定 配色指定, 体配色 体配色)
     	{
     		ThisType = GetType();
-    		本体 = new Difs(Sta.腕左["飛膜根"]);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs(Sta.腕左["飛膜根"]);
+    		Pars pars = Body[0][0];
     		X0Y0_飛膜 = pars["飛膜"].ToPar();
-    		pars = 本体[0][1];
+    		pars = Body[0][1];
     		X0Y1_飛膜 = pars["飛膜"].ToPar();
     		Xasix = false;
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		base.配色指定 = 配色指定;
     		配色(体配色);
     		X0Y0_飛膜CP = new ColorP(X0Y0_飛膜, 飛膜CD, DisUnit, abj: true);
@@ -122,7 +122,7 @@ namespace SlaveMatrix
 
     	public void 接続(UpperArm_蝙 UpperArm, LowerArm_蝙 LowerArm, 手_蝙 手, Vector2D 接着点)
     	{
-    		if (本体.IndexY == 0)
+    		if (Body.IndexY == 0)
     		{
     			if (右 || 反転X_ || 反転Y_)
     			{
@@ -327,7 +327,7 @@ namespace SlaveMatrix
 
     	public override void 色更新()
     	{
-    		if (本体.IndexY == 0)
+    		if (Body.IndexY == 0)
     		{
     			X0Y0_飛膜CP.Update();
     		}
@@ -339,7 +339,7 @@ namespace SlaveMatrix
 
     	public override void 色更新(Vector2D[] mm)
     	{
-    		if (本体.IndexY == 0)
+    		if (Body.IndexY == 0)
     		{
     			X0Y0_飛膜CP.Update(mm);
     		}

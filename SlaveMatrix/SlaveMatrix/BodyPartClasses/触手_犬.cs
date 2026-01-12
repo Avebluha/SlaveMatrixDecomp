@@ -6033,31 +6033,31 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public JointS 頭_接続点 => new JointS(本体, X0Y0_Torso_節18_Torso, 0);
+    	public JointS 頭_接続点 => new JointS(Body, X0Y0_Torso_節18_Torso, 0);
 
-    	public JointS UpperArm左_接続点 => new JointS(本体, X0Y0_Torso_節9_Torso, 1);
+    	public JointS UpperArm左_接続点 => new JointS(Body, X0Y0_Torso_節9_Torso, 1);
 
-    	public JointS UpperArm右_接続点 => new JointS(本体, X0Y0_Torso_節10_Torso, 1);
+    	public JointS UpperArm右_接続点 => new JointS(Body, X0Y0_Torso_節10_Torso, 1);
 
-    	public JointS LowerArm左_接続点 => new JointS(本体, X0Y0_脚前_UpperArm, 0);
+    	public JointS LowerArm左_接続点 => new JointS(Body, X0Y0_脚前_UpperArm, 0);
 
-    	public JointS LowerArm右_接続点 => new JointS(本体, X0Y0_脚後_UpperArm, 0);
+    	public JointS LowerArm右_接続点 => new JointS(Body, X0Y0_脚後_UpperArm, 0);
 
-    	public JointS 手左_接続点 => new JointS(本体, X0Y0_脚前_LowerArm, 0);
+    	public JointS 手左_接続点 => new JointS(Body, X0Y0_脚前_LowerArm, 0);
 
-    	public JointS 手右_接続点 => new JointS(本体, X0Y0_脚後_LowerArm, 0);
+    	public JointS 手右_接続点 => new JointS(Body, X0Y0_脚後_LowerArm, 0);
 
-    	public JointS 鎖1_接続点 => new JointS(本体, X0Y0_Torso_輪_金具左, 0);
+    	public JointS 鎖1_接続点 => new JointS(Body, X0Y0_Torso_輪_金具左, 0);
 
-    	public JointS 鎖2_接続点 => new JointS(本体, X0Y0_Torso_輪_金具右, 0);
+    	public JointS 鎖2_接続点 => new JointS(Body, X0Y0_Torso_輪_金具右, 0);
 
-    	public JointS 鎖3_接続点 => new JointS(本体, X0Y0_脚後_輪_金具左, 0);
+    	public JointS 鎖3_接続点 => new JointS(Body, X0Y0_脚後_輪_金具左, 0);
 
-    	public JointS 鎖4_接続点 => new JointS(本体, X0Y0_脚後_輪_金具右, 0);
+    	public JointS 鎖4_接続点 => new JointS(Body, X0Y0_脚後_輪_金具右, 0);
 
-    	public JointS 鎖5_接続点 => new JointS(本体, X0Y0_脚前_輪_金具左, 0);
+    	public JointS 鎖5_接続点 => new JointS(Body, X0Y0_脚前_輪_金具左, 0);
 
-    	public JointS 鎖6_接続点 => new JointS(本体, X0Y0_脚前_輪_金具右, 0);
+    	public JointS 鎖6_接続点 => new JointS(Body, X0Y0_脚前_輪_金具右, 0);
 
     	public 触手_犬(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 触手_犬D e)
     	{
@@ -6066,10 +6066,10 @@ namespace SlaveMatrix
     		Dif dif = new Dif();
     		dif.Tag = "スキュラ";
     		dif.Add(new Pars(Sta.肢左["触手"][0][2]));
-    		本体 = new Difs();
-    		本体.Tag = dif.Tag;
-    		本体.Add(dif);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs();
+    		Body.Tag = dif.Tag;
+    		Body.Add(dif);
+    		Pars pars = Body[0][0];
     		Pars pars2 = pars["脚後"].ToPars();
     		Pars pars3 = pars2["鰭"].ToPars();
     		X0Y0_脚後_鰭_鰭膜1 = pars3["鰭膜1"].ToPar();
@@ -6431,8 +6431,8 @@ namespace SlaveMatrix
     		X0Y0_脚前_輪_金具左 = pars3["金具左"].ToPar();
     		X0Y0_脚前_輪_金具右 = pars3["金具右"].ToPar();
     		Xasix = false;
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -7460,7 +7460,7 @@ namespace SlaveMatrix
     		X0Y0_脚前_手_薬指_爪.AngleBase = 0.0;
     		X0Y0_脚前_手_小指_指.AngleBase = num * 19.0;
     		X0Y0_脚前_手_小指_爪.AngleBase = 0.0;
-    		本体.JoinPAall();
+    		Body.JoinPAall();
     	}
 
     	public override bool Is革(Par p)

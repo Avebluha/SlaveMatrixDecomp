@@ -53,7 +53,7 @@ namespace SlaveMatrix
     		set
     		{
     			欠損_ = value;
-    			本体.IndexY = (欠損_ ? 1 : 0);
+    			Body.IndexY = (欠損_ ? 1 : 0);
     		}
     	}
 
@@ -175,25 +175,25 @@ namespace SlaveMatrix
     	{
     		ThisType = GetType();
     		Dif dif = new Dif(Sta.肢左["鰭"][0]);
-    		本体 = new Difs();
-    		本体.Tag = dif.Tag;
-    		本体.Add(dif);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs();
+    		Body.Tag = dif.Tag;
+    		Body.Add(dif);
+    		Pars pars = Body[0][0];
     		Pars pars2 = pars["鰭2"].ToPars();
     		X0Y0_鰭2_鰭膜 = pars2["鰭膜"].ToPar();
     		X0Y0_鰭2_鰭条 = pars2["鰭条"].ToPar();
     		pars2 = pars["鰭1"].ToPars();
     		X0Y0_鰭1_鰭膜 = pars2["鰭膜"].ToPar();
     		X0Y0_鰭1_鰭条 = pars2["鰭条"].ToPar();
-    		Pars pars3 = 本体[0][1];
+    		Pars pars3 = Body[0][1];
     		pars2 = pars3["鰭2"].ToPars();
     		X0Y1_鰭2_鰭膜 = pars2["鰭膜"].ToPar();
     		X0Y1_鰭2_鰭条 = pars2["鰭条"].ToPar();
     		pars2 = pars3["鰭1"].ToPars();
     		X0Y1_鰭1_鰭膜 = pars2["鰭膜"].ToPar();
     		X0Y1_鰭1_鰭条 = pars2["鰭条"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -251,12 +251,12 @@ namespace SlaveMatrix
     		X0Y1_鰭2_鰭条.AngleBase = 0.0;
     		X0Y1_鰭1_鰭膜.AngleBase = 0.0;
     		X0Y1_鰭1_鰭条.AngleBase = 0.0;
-    		本体.JoinPAall();
+    		Body.JoinPAall();
     	}
 
     	public override void 色更新()
     	{
-    		if (本体.IndexY == 0)
+    		if (Body.IndexY == 0)
     		{
     			X0Y0_鰭2_鰭膜CP.Update();
     			X0Y0_鰭2_鰭条CP.Update();

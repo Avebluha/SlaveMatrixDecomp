@@ -398,14 +398,14 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public JointS LowerArm_接続点 => new JointS(本体, X0Y0_鳥翼UpperArm, 0);
+    	public JointS LowerArm_接続点 => new JointS(Body, X0Y0_鳥翼UpperArm, 0);
 
     	public UpperArm_鳥(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, UpperArm_鳥D e)
     	{
     		UpperArm_鳥 UpperArm_鳥2 = this;
     		ThisType = GetType();
-    		本体 = new Difs(Sta.腕左["鳥翼UpperArm"]);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs(Sta.腕左["鳥翼UpperArm"]);
+    		Pars pars = Body[0][0];
     		Pars pars2 = pars["風切羽"].ToPars();
     		X0Y0_風切羽_羽3 = pars2["羽3"].ToPar();
     		X0Y0_風切羽_羽2 = pars2["羽2"].ToPar();
@@ -419,8 +419,8 @@ namespace SlaveMatrix
     		X0Y0_竜性_鱗3 = pars2["鱗3"].ToPar();
     		X0Y0_竜性_鱗4 = pars2["鱗4"].ToPar();
     		Xasix = false;
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -503,7 +503,7 @@ namespace SlaveMatrix
     		X0Y0_風切羽_羽1.AngleBase = num * -100.129973503791;
     		X0Y0_風切羽_羽2.AngleBase = num * -102.129973503791;
     		X0Y0_風切羽_羽3.AngleBase = num * -103.129973503791;
-    		本体.JoinPAall();
+    		Body.JoinPAall();
     	}
 
     	public override void 描画0(RenderArea Are)

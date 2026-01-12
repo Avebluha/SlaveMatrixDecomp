@@ -53,9 +53,9 @@ namespace SlaveMatrix
     	private void 移動時(ref Color hc)
     	{
     		p = null;
-    		if (Bod.腰肌_人 != null && Bod.腰肌_人.本体.IsHit(ref hc))
+    		if (Bod.腰肌_人 != null && Bod.腰肌_人.Body.IsHit(ref hc))
     		{
-    			p = Bod.腰肌_人.本体.GetHitPar_(hc);
+    			p = Bod.腰肌_人.Body.GetHitPar_(hc);
     		}
     		if (p != null && (p.Tag == "獣毛" || p.Tag == "陰毛"))
     		{
@@ -121,9 +121,9 @@ namespace SlaveMatrix
     			return;
     		}
     		p = null;
-    		if (Bod.腰肌_人 != null && Bod.腰肌_人.本体.IsHit(ref hc))
+    		if (Bod.腰肌_人 != null && Bod.腰肌_人.Body.IsHit(ref hc))
     		{
-    			p = Bod.腰肌_人.本体.GetHitPar_(hc);
+    			p = Bod.腰肌_人.Body.GetHitPar_(hc);
     		}
     		if (mb == MouseButtons.Left && p != null && (p.Tag == "獣毛" || p.Tag == "陰毛"))
     		{

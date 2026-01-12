@@ -1405,10 +1405,10 @@ namespace SlaveMatrix
     		Dif dif = new Dif();
     		dif.Tag = "鳳凰";
     		dif.Add(new Pars(Sta.肢中["尾"][2][0]));
-    		本体 = new Difs();
-    		本体.Tag = dif.Tag;
-    		本体.Add(dif);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs();
+    		Body.Tag = dif.Tag;
+    		Body.Add(dif);
+    		Pars pars = Body[0][0];
     		Pars pars2 = pars["羽"].ToPars();
     		X0Y0_羽_羽 = pars2["羽"].ToPar();
     		X0Y0_羽_紋1 = pars2["紋1"].ToPar();
@@ -1493,8 +1493,8 @@ namespace SlaveMatrix
     		X0Y0_羽21_羽 = pars2["羽"].ToPar();
     		X0Y0_羽21_紋1 = pars2["紋1"].ToPar();
     		X0Y0_羽21_紋2 = pars2["紋2"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -1680,7 +1680,7 @@ namespace SlaveMatrix
     		X0Y0_羽19_羽.AngleBase = maxAngle.GetRanAngle();
     		X0Y0_羽20_羽.AngleBase = maxAngle.GetRanAngle();
     		X0Y0_羽21_羽.AngleBase = maxAngle.GetRanAngle();
-    		本体.JoinPAall();
+    		Body.JoinPAall();
     	}
 
     	public override void 色更新()

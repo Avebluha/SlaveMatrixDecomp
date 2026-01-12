@@ -2645,8 +2645,8 @@ namespace SlaveMatrix
     	public バイブ_ドリル(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, バイブ_ドリルD e)
     	{
     		ThisType = GetType();
-    		本体 = new Difs(Sta.カーソル["ドリル"]);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs(Sta.カーソル["ドリル"]);
+    		Pars pars = Body[0][0];
     		X0Y0_ヘッド = pars["ヘッド"].ToPar();
     		X0Y0_イボ1 = pars["イボ1"].ToPar();
     		X0Y0_イボ2 = pars["イボ2"].ToPar();
@@ -2677,7 +2677,7 @@ namespace SlaveMatrix
     		X0Y0_ユニット_パワー2 = pars2["パワー2"].ToPar();
     		X0Y0_ユニット_パワー3 = pars2["パワー3"].ToPar();
     		X0Y0_ユニット_パワー4 = pars2["パワー4"].ToPar();
-    		pars = 本体[0][1];
+    		pars = Body[0][1];
     		X0Y1_ヘッド = pars["ヘッド"].ToPar();
     		X0Y1_イボ1 = pars["イボ1"].ToPar();
     		X0Y1_イボ2 = pars["イボ2"].ToPar();
@@ -2707,7 +2707,7 @@ namespace SlaveMatrix
     		X0Y1_ユニット_パワー2 = pars2["パワー2"].ToPar();
     		X0Y1_ユニット_パワー3 = pars2["パワー3"].ToPar();
     		X0Y1_ユニット_パワー4 = pars2["パワー4"].ToPar();
-    		pars = 本体[0][2];
+    		pars = Body[0][2];
     		X0Y2_ヘッド = pars["ヘッド"].ToPar();
     		X0Y2_イボ1 = pars["イボ1"].ToPar();
     		X0Y2_イボ2 = pars["イボ2"].ToPar();
@@ -2732,7 +2732,7 @@ namespace SlaveMatrix
     		X0Y2_ユニット_パワー2 = pars2["パワー2"].ToPar();
     		X0Y2_ユニット_パワー3 = pars2["パワー3"].ToPar();
     		X0Y2_ユニット_パワー4 = pars2["パワー4"].ToPar();
-    		pars = 本体[0][3];
+    		pars = Body[0][3];
     		X0Y3_ヘッド = pars["ヘッド"].ToPar();
     		X0Y3_イボ1 = pars["イボ1"].ToPar();
     		X0Y3_イボ2 = pars["イボ2"].ToPar();
@@ -2752,7 +2752,7 @@ namespace SlaveMatrix
     		X0Y3_ユニット_パワー2 = pars2["パワー2"].ToPar();
     		X0Y3_ユニット_パワー3 = pars2["パワー3"].ToPar();
     		X0Y3_ユニット_パワー4 = pars2["パワー4"].ToPar();
-    		pars = 本体[0][4];
+    		pars = Body[0][4];
     		X0Y4_ヘッド = pars["ヘッド"].ToPar();
     		X0Y4_イボ1 = pars["イボ1"].ToPar();
     		X0Y4_イボ2 = pars["イボ2"].ToPar();
@@ -2768,7 +2768,7 @@ namespace SlaveMatrix
     		X0Y4_ユニット_パワー2 = pars2["パワー2"].ToPar();
     		X0Y4_ユニット_パワー3 = pars2["パワー3"].ToPar();
     		X0Y4_ユニット_パワー4 = pars2["パワー4"].ToPar();
-    		pars = 本体[1][0];
+    		pars = Body[1][0];
     		X1Y0_ヘッド = pars["ヘッド"].ToPar();
     		X1Y0_イボ1 = pars["イボ1"].ToPar();
     		X1Y0_イボ2 = pars["イボ2"].ToPar();
@@ -2800,7 +2800,7 @@ namespace SlaveMatrix
     		X1Y0_ユニット_パワー2 = pars2["パワー2"].ToPar();
     		X1Y0_ユニット_パワー3 = pars2["パワー3"].ToPar();
     		X1Y0_ユニット_パワー4 = pars2["パワー4"].ToPar();
-    		pars = 本体[1][1];
+    		pars = Body[1][1];
     		X1Y1_ヘッド = pars["ヘッド"].ToPar();
     		X1Y1_イボ1 = pars["イボ1"].ToPar();
     		X1Y1_イボ2 = pars["イボ2"].ToPar();
@@ -2830,7 +2830,7 @@ namespace SlaveMatrix
     		X1Y1_ユニット_パワー2 = pars2["パワー2"].ToPar();
     		X1Y1_ユニット_パワー3 = pars2["パワー3"].ToPar();
     		X1Y1_ユニット_パワー4 = pars2["パワー4"].ToPar();
-    		pars = 本体[1][2];
+    		pars = Body[1][2];
     		X1Y2_ヘッド = pars["ヘッド"].ToPar();
     		X1Y2_イボ1 = pars["イボ1"].ToPar();
     		X1Y2_イボ2 = pars["イボ2"].ToPar();
@@ -2856,7 +2856,7 @@ namespace SlaveMatrix
     		X1Y2_ユニット_パワー2 = pars2["パワー2"].ToPar();
     		X1Y2_ユニット_パワー3 = pars2["パワー3"].ToPar();
     		X1Y2_ユニット_パワー4 = pars2["パワー4"].ToPar();
-    		pars = 本体[1][3];
+    		pars = Body[1][3];
     		X1Y3_ヘッド = pars["ヘッド"].ToPar();
     		X1Y3_イボ1 = pars["イボ1"].ToPar();
     		X1Y3_イボ2 = pars["イボ2"].ToPar();
@@ -2877,7 +2877,7 @@ namespace SlaveMatrix
     		X1Y3_ユニット_パワー2 = pars2["パワー2"].ToPar();
     		X1Y3_ユニット_パワー3 = pars2["パワー3"].ToPar();
     		X1Y3_ユニット_パワー4 = pars2["パワー4"].ToPar();
-    		pars = 本体[1][4];
+    		pars = Body[1][4];
     		X1Y4_ヘッド = pars["ヘッド"].ToPar();
     		X1Y4_イボ1 = pars["イボ1"].ToPar();
     		X1Y4_イボ2 = pars["イボ2"].ToPar();
@@ -2893,7 +2893,7 @@ namespace SlaveMatrix
     		X1Y4_ユニット_パワー2 = pars2["パワー2"].ToPar();
     		X1Y4_ユニット_パワー3 = pars2["パワー3"].ToPar();
     		X1Y4_ユニット_パワー4 = pars2["パワー4"].ToPar();
-    		pars = 本体[2][0];
+    		pars = Body[2][0];
     		X2Y0_ヘッド = pars["ヘッド"].ToPar();
     		X2Y0_イボ1 = pars["イボ1"].ToPar();
     		X2Y0_イボ2 = pars["イボ2"].ToPar();
@@ -2927,7 +2927,7 @@ namespace SlaveMatrix
     		X2Y0_ユニット_パワー2 = pars2["パワー2"].ToPar();
     		X2Y0_ユニット_パワー3 = pars2["パワー3"].ToPar();
     		X2Y0_ユニット_パワー4 = pars2["パワー4"].ToPar();
-    		pars = 本体[2][1];
+    		pars = Body[2][1];
     		X2Y1_ヘッド = pars["ヘッド"].ToPar();
     		X2Y1_イボ1 = pars["イボ1"].ToPar();
     		X2Y1_イボ2 = pars["イボ2"].ToPar();
@@ -2959,7 +2959,7 @@ namespace SlaveMatrix
     		X2Y1_ユニット_パワー2 = pars2["パワー2"].ToPar();
     		X2Y1_ユニット_パワー3 = pars2["パワー3"].ToPar();
     		X2Y1_ユニット_パワー4 = pars2["パワー4"].ToPar();
-    		pars = 本体[2][2];
+    		pars = Body[2][2];
     		X2Y2_ヘッド = pars["ヘッド"].ToPar();
     		X2Y2_イボ1 = pars["イボ1"].ToPar();
     		X2Y2_イボ2 = pars["イボ2"].ToPar();
@@ -2986,7 +2986,7 @@ namespace SlaveMatrix
     		X2Y2_ユニット_パワー2 = pars2["パワー2"].ToPar();
     		X2Y2_ユニット_パワー3 = pars2["パワー3"].ToPar();
     		X2Y2_ユニット_パワー4 = pars2["パワー4"].ToPar();
-    		pars = 本体[2][3];
+    		pars = Body[2][3];
     		X2Y3_ヘッド = pars["ヘッド"].ToPar();
     		X2Y3_イボ1 = pars["イボ1"].ToPar();
     		X2Y3_イボ2 = pars["イボ2"].ToPar();
@@ -3009,7 +3009,7 @@ namespace SlaveMatrix
     		X2Y3_ユニット_パワー2 = pars2["パワー2"].ToPar();
     		X2Y3_ユニット_パワー3 = pars2["パワー3"].ToPar();
     		X2Y3_ユニット_パワー4 = pars2["パワー4"].ToPar();
-    		pars = 本体[2][4];
+    		pars = Body[2][4];
     		X2Y4_ヘッド = pars["ヘッド"].ToPar();
     		X2Y4_イボ1 = pars["イボ1"].ToPar();
     		X2Y4_イボ2 = pars["イボ2"].ToPar();
@@ -3026,8 +3026,8 @@ namespace SlaveMatrix
     		X2Y4_ユニット_パワー2 = pars2["パワー2"].ToPar();
     		X2Y4_ユニット_パワー3 = pars2["パワー3"].ToPar();
     		X2Y4_ユニット_パワー4 = pars2["パワー4"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -3459,15 +3459,15 @@ namespace SlaveMatrix
     		X2Y4_ユニット_ユニット.BasePointBase = X2Y4_ユニット_ユニット.ToLocal(X2Y4_ヘッド.ToGlobal(X2Y4_ヘッド.JP[4].Joint));
     		尺度B *= 1.07;
     		尺度B = 1.08;
-    		本体.JoinPAall();
+    		Body.JoinPAall();
     	}
 
     	public override void 色更新()
     	{
-    		switch (本体.IndexX)
+    		switch (Body.IndexX)
     		{
     		case 0:
-    			switch (本体.IndexY)
+    			switch (Body.IndexY)
     			{
     			case 0:
     				X0Y0_ヘッドCP.Update();
@@ -3594,7 +3594,7 @@ namespace SlaveMatrix
     			}
     			return;
     		case 1:
-    			switch (本体.IndexY)
+    			switch (Body.IndexY)
     			{
     			case 0:
     				X1Y0_ヘッドCP.Update();
@@ -3724,7 +3724,7 @@ namespace SlaveMatrix
     			}
     			return;
     		}
-    		switch (本体.IndexY)
+    		switch (Body.IndexY)
     		{
     		case 0:
     			X2Y0_ヘッドCP.Update();

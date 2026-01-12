@@ -191,16 +191,16 @@ namespace SlaveMatrix
     	public 胴肌(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 胴肌D e)
     	{
     		ThisType = GetType();
-    		本体 = new Difs(Sta.胴体["胴肌"]);
-    		Pars pars = 本体[0][0]["植タトゥ"].ToPars();
+    		Body = new Difs(Sta.胴体["胴肌"]);
+    		Pars pars = Body[0][0]["植タトゥ"].ToPars();
     		X0Y0_植タトゥ_タトゥ花左 = pars["タトゥ花左"].ToPar();
     		X0Y0_植タトゥ_タトゥ花右 = pars["タトゥ花右"].ToPar();
     		X0Y0_植タトゥ_タトゥ花 = pars["タトゥ花"].ToPar();
     		X0Y0_植タトゥ_タトゥ茎 = pars["タトゥ茎"].ToPar();
     		X0Y0_植タトゥ_タトゥ葉左 = pars["タトゥ葉左"].ToPar();
     		X0Y0_植タトゥ_タトゥ葉右 = pars["タトゥ葉右"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;

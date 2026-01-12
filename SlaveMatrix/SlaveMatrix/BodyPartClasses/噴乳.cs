@@ -347,47 +347,47 @@ namespace SlaveMatrix
     	public 噴乳(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 噴乳D e)
     	{
     		ThisType = GetType();
-    		本体 = new Difs(Sta.胴体["噴乳左"]);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs(Sta.胴体["噴乳左"]);
+    		Pars pars = Body[0][0];
     		X0Y0_母乳垂れ1 = pars["母乳垂れ1"].ToPar();
     		X0Y0_母乳垂れ2 = pars["母乳垂れ2"].ToPar();
-    		pars = 本体[0][1];
+    		pars = Body[0][1];
     		X0Y1_母乳1 = pars["母乳1"].ToPar();
     		X0Y1_母乳2 = pars["母乳2"].ToPar();
     		X0Y1_母乳3 = pars["母乳3"].ToPar();
     		X0Y1_母乳4 = pars["母乳4"].ToPar();
     		X0Y1_母乳垂れ1 = pars["母乳垂れ1"].ToPar();
     		X0Y1_母乳垂れ2 = pars["母乳垂れ2"].ToPar();
-    		pars = 本体[0][2];
+    		pars = Body[0][2];
     		X0Y2_母乳1 = pars["母乳1"].ToPar();
     		X0Y2_母乳2 = pars["母乳2"].ToPar();
     		X0Y2_母乳3 = pars["母乳3"].ToPar();
     		X0Y2_母乳4 = pars["母乳4"].ToPar();
     		X0Y2_母乳垂れ1 = pars["母乳垂れ1"].ToPar();
     		X0Y2_母乳垂れ2 = pars["母乳垂れ2"].ToPar();
-    		pars = 本体[0][3];
+    		pars = Body[0][3];
     		X0Y3_母乳1 = pars["母乳1"].ToPar();
     		X0Y3_母乳2 = pars["母乳2"].ToPar();
     		X0Y3_母乳3 = pars["母乳3"].ToPar();
     		X0Y3_母乳4 = pars["母乳4"].ToPar();
     		X0Y3_母乳垂れ1 = pars["母乳垂れ1"].ToPar();
     		X0Y3_母乳垂れ2 = pars["母乳垂れ2"].ToPar();
-    		pars = 本体[0][4];
+    		pars = Body[0][4];
     		X0Y4_母乳1 = pars["母乳1"].ToPar();
     		X0Y4_母乳2 = pars["母乳2"].ToPar();
     		X0Y4_母乳3 = pars["母乳3"].ToPar();
     		X0Y4_母乳4 = pars["母乳4"].ToPar();
     		X0Y4_母乳垂れ1 = pars["母乳垂れ1"].ToPar();
     		X0Y4_母乳垂れ2 = pars["母乳垂れ2"].ToPar();
-    		pars = 本体[0][5];
+    		pars = Body[0][5];
     		X0Y5_母乳1 = pars["母乳1"].ToPar();
     		X0Y5_母乳2 = pars["母乳2"].ToPar();
     		X0Y5_母乳3 = pars["母乳3"].ToPar();
     		X0Y5_母乳4 = pars["母乳4"].ToPar();
     		X0Y5_母乳垂れ1 = pars["母乳垂れ1"].ToPar();
     		X0Y5_母乳垂れ2 = pars["母乳垂れ2"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -462,7 +462,7 @@ namespace SlaveMatrix
 
     	public override void 色更新()
     	{
-    		switch (本体.IndexY)
+    		switch (Body.IndexY)
     		{
     		case 0:
     			X0Y0_母乳垂れ1CP.Update();

@@ -505,7 +505,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public JointS LowerArm_接続点 => new JointS(本体, X0Y0_獣翼UpperArm, 0);
+    	public JointS LowerArm_接続点 => new JointS(Body, X0Y0_獣翼UpperArm, 0);
 
     	public UpperArm_蝙(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, UpperArm_蝙D e)
     	{
@@ -513,8 +513,8 @@ namespace SlaveMatrix
     		飛膜 = new 飛膜_根(DisUnit, 配色指定, 体配色);
     		飛膜.Par = this;
     		ThisType = GetType();
-    		本体 = new Difs(Sta.腕左["獣翼UpperArm"]);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs(Sta.腕左["獣翼UpperArm"]);
+    		Pars pars = Body[0][0];
     		X0Y0_獣翼UpperArm = pars["獣翼上腕"].ToPar();
     		Pars pars2 = pars["鱗"].ToPars();
     		X0Y0_竜性_鱗1 = pars2["鱗1"].ToPar();
@@ -524,8 +524,8 @@ namespace SlaveMatrix
     		X0Y0_竜性_鱗5 = pars2["鱗5"].ToPar();
     		X0Y0_竜性_鱗6 = pars2["鱗6"].ToPar();
     		Xasix = false;
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -595,7 +595,7 @@ namespace SlaveMatrix
     	{
     		double num = (右 ? (-1.0) : 1.0);
     		X0Y0_獣翼UpperArm.AngleBase = num * 0.0;
-    		本体.JoinPAall();
+    		Body.JoinPAall();
     	}
 
     	public override void Dispose()

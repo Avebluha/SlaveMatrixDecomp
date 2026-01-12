@@ -121,12 +121,12 @@ namespace SlaveMatrix
     	public キャップ2(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, キャップ2D e)
     	{
     		ThisType = GetType();
-    		本体 = new Difs(Sta.胴体["キャップ左"]);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs(Sta.胴体["キャップ左"]);
+    		Pars pars = Body[0][0];
     		X0Y0_根本 = pars["根本"].ToPar();
     		X0Y0_先端 = pars["先端"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;

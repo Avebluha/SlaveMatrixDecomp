@@ -73,7 +73,7 @@ namespace SlaveMatrix
     		if (!対象.Ele.右 && cp.X < xc)
     		{
     			対象.Ele.右 = !対象.Ele.右;
-    			対象.Ele.本体.JoinPA();
+    			対象.Ele.Body.JoinPA();
     			ハンド右.X11Y0_小指.ReverseX();
     			ハンド右.X11Y0_薬指.ReverseX();
     			ハンド右.X11Y0_中指.ReverseX();
@@ -88,12 +88,12 @@ namespace SlaveMatrix
     			ハンド右.X11Y0_呪印_輪3_輪内.ReverseX();
     			ハンド右.X11Y0_呪印_鎖1.ReverseX();
     			ハンド右.X11Y0_呪印_鎖3.ReverseX();
-    			ハンド右.本体.JoinPA();
+    			ハンド右.Body.JoinPA();
     		}
     		else if (対象.Ele.右 && cp.X > xc)
     		{
     			対象.Ele.右 = !対象.Ele.右;
-    			対象.Ele.本体.JoinPA();
+    			対象.Ele.Body.JoinPA();
     			ハンド右.X11Y0_小指.ReverseX();
     			ハンド右.X11Y0_薬指.ReverseX();
     			ハンド右.X11Y0_中指.ReverseX();
@@ -108,7 +108,7 @@ namespace SlaveMatrix
     			ハンド右.X11Y0_呪印_輪3_輪内.ReverseX();
     			ハンド右.X11Y0_呪印_鎖1.ReverseX();
     			ハンド右.X11Y0_呪印_鎖3.ReverseX();
-    			ハンド右.本体.JoinPA();
+    			ハンド右.Body.JoinPA();
     		}
     		移動時();
     	}
@@ -158,7 +158,7 @@ namespace SlaveMatrix
     				ハンド右.X11Y0_呪印_輪3_輪内.ReverseX();
     				ハンド右.X11Y0_呪印_鎖1.ReverseX();
     				ハンド右.X11Y0_呪印_鎖3.ReverseX();
-    				ハンド右.本体.JoinPA();
+    				ハンド右.Body.JoinPA();
     			}
     			調教UI.通常放し();
     			if (Sta.GameData.ガイド)

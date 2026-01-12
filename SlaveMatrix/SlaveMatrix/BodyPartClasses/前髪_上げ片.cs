@@ -727,10 +727,10 @@ namespace SlaveMatrix
     		Dif dif = new Dif();
     		dif.Tag = "上げ片";
     		dif.Add(new Pars(Sta.胴体["前髪"][0][16]));
-    		本体 = new Difs();
-    		本体.Tag = dif.Tag;
-    		本体.Add(dif);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs();
+    		Body.Tag = dif.Tag;
+    		Body.Add(dif);
+    		Pars pars = Body[0][0];
     		X0Y0_髪基 = pars["髪基"].ToPar();
     		X0Y0_髪左1 = pars["髪左1"].ToPar();
     		Pars pars2 = pars["編み左"].ToPars();
@@ -767,8 +767,8 @@ namespace SlaveMatrix
     		X0Y0_髪右3 = pars["髪右3"].ToPar();
     		X0Y0_髪右4 = pars["髪右4"].ToPar();
     		X0Y0_ハイライト右 = pars["ハイライト右"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;

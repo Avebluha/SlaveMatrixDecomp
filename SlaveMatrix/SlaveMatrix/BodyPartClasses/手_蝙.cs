@@ -737,8 +737,8 @@ namespace SlaveMatrix
     		飛膜 = new 飛膜_先(DisUnit, 配色指定, 体配色);
     		飛膜.Par = this;
     		ThisType = GetType();
-    		本体 = new Difs(Sta.腕左["獣翼手"]);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs(Sta.腕左["獣翼手"]);
+    		Pars pars = Body[0][0];
     		X0Y0_獣翼手 = pars["獣翼手"].ToPar();
     		Pars pars2 = pars["小指"].ToPars();
     		X0Y0_小指_指1 = pars2["指1"].ToPar();
@@ -761,8 +761,8 @@ namespace SlaveMatrix
     		X0Y0_親指_指2 = pars2["指2"].ToPar();
     		X0Y0_親指_指3 = pars2["指3"].ToPar();
     		Xasix = false;
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -860,7 +860,7 @@ namespace SlaveMatrix
     		X0Y0_親指_指1.AngleBase = num * -257.575894274218;
     		X0Y0_親指_指2.AngleBase = num * 328.764949390357;
     		X0Y0_親指_指3.AngleBase = num * 15.8109448838614;
-    		本体.JoinPAall();
+    		Body.JoinPAall();
     	}
 
     	public override void 描画0(RenderArea Are)

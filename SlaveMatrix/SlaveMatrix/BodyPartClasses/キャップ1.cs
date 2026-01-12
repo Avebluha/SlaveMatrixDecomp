@@ -121,12 +121,12 @@ namespace SlaveMatrix
     	public キャップ1(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, キャップ1D e)
     	{
     		ThisType = GetType();
-    		本体 = new Difs(Sta.性器付["キャップ中"]);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs(Sta.性器付["キャップ中"]);
+    		Pars pars = Body[0][0];
     		X0Y0_根本 = pars["根本"].ToPar();
     		X0Y0_先端 = pars["先端"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -164,7 +164,7 @@ namespace SlaveMatrix
     		X0Y0_先端CP = new ColorP(X0Y0_先端, 先端CD, DisUnit, abj: true);
     		濃度 = e.濃度;
     		Vector2D local = X0Y0_根本.OP[0].ps[2];
-    		foreach (Par item in 本体.EnumJoinRoot)
+    		foreach (Par item in Body.EnumJoinRoot)
     		{
     			item.BasePointBase = item.ToLocal(X0Y0_根本.ToGlobal(local));
     		}

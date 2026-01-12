@@ -1223,12 +1223,12 @@ namespace SlaveMatrix
     		};
     		Mots.Add(絶頂終了.GetHashCode().ToString(), 絶頂終了);
     		double kv = 0.0;
-    		Par pa = Bod.Waist.本体.CurJoinRoot;
+    		Par pa = Bod.Waist.Body.CurJoinRoot;
     		Par pb = null;
     		Vector2D vec = Dat.Vec2DZero;
     		Action 腰接続 = delegate
     		{
-    			pb = cha.Bod.Waist.本体.CurJoinRoot;
+    			pb = cha.Bod.Waist.Body.CurJoinRoot;
     			vec = pb.ToGlobal(pb.JP[5].Joint) - pa.ToGlobal(pa.JP[5].Joint);
     			if (cha.Bod.IsWaist)
     			{
@@ -1987,7 +1987,7 @@ namespace SlaveMatrix
     		};
     		Mots.Add(ごっくん.GetHashCode().ToString(), ごっくん);
     		Mots.Drive(Med.FPSF);
-    		Med.SetUniqueColor(Bod.Elements.Select((Ele e) => e.本体.EnumAllPar()).JoinEnum());
+    		Med.SetUniqueColor(Bod.Elements.Select((Ele e) => e.Body.EnumAllPar()).JoinEnum());
     		汗掻き = new Sweat(Med, Are, this, Mots);
     		汗かき = 汗掻き.汗かき;
     		Bod.汗掻き = 汗掻き;
@@ -2005,7 +2005,7 @@ namespace SlaveMatrix
     	{
     		Bod.Dispose();
     		汗掻き.Dispose();
-    		Med.RemUniqueColor(Bod.Elements.Select((Ele e) => e.本体.EnumAllPar()).JoinEnum());
+    		Med.RemUniqueColor(Bod.Elements.Select((Ele e) => e.Body.EnumAllPar()).JoinEnum());
     	}
 
     	public void Set衣装(IEnumerable<object> 衣装)
@@ -2048,7 +2048,7 @@ namespace SlaveMatrix
             result.e = this.Bod.GetHitEle(HitColor);
             if (result.e != null)
             {
-                result.p = result.e.本体.GetHitPar_(HitColor);
+                result.p = result.e.Body.GetHitPar_(HitColor);
                 bool flag = false;
                 bool flag2 = result.e is Shoulder || result.e is UpperArm || result.e is LowerArm || result.e is 手 || result.e is 四足脇 || result.e is 腿 || result.e is Leg || result.e is 足 || result.e is 鰭 || result.e is 葉 || result.e is 前翅 || result.e is 後翅 || result.e is 触肢 || result.e is 節足 || result.e is 節尾 || result.e is 大顎 || result.e is 虫顎 || result.e is 虫鎌 || result.e is 触手;
                 if (result.e is 前髪 || result.e is 頭頂)

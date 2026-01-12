@@ -5738,27 +5738,27 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public JointS 足_接続点 => new JointS(本体, X0Y0_Leg, 0);
+    	public JointS 足_接続点 => new JointS(Body, X0Y0_Leg, 0);
 
-    	public JointS 脚輪下_接続点 => new JointS(本体, X0Y0_Leg, 2);
+    	public JointS 脚輪下_接続点 => new JointS(Body, X0Y0_Leg, 2);
 
-    	public JointS 脚輪上_接続点 => new JointS(本体, X0Y0_Leg, 3);
+    	public JointS 脚輪上_接続点 => new JointS(Body, X0Y0_Leg, 3);
 
-    	public JointS 鎖1_接続点 => new JointS(本体, X0Y0_脚輪上_金具左, 0);
+    	public JointS 鎖1_接続点 => new JointS(Body, X0Y0_脚輪上_金具左, 0);
 
-    	public JointS 鎖2_接続点 => new JointS(本体, X0Y0_脚輪上_金具右, 0);
+    	public JointS 鎖2_接続点 => new JointS(Body, X0Y0_脚輪上_金具右, 0);
 
-    	public JointS 鎖3_接続点 => new JointS(本体, X0Y0_脚輪下_金具左, 0);
+    	public JointS 鎖3_接続点 => new JointS(Body, X0Y0_脚輪下_金具左, 0);
 
-    	public JointS 鎖4_接続点 => new JointS(本体, X0Y0_脚輪下_金具右, 0);
+    	public JointS 鎖4_接続点 => new JointS(Body, X0Y0_脚輪下_金具右, 0);
 
     	public Leg_人(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, Leg_人D e)
     	{
     		Leg_人 Leg_人2 = this;
     		ThisType = GetType();
             //Leg but if renamed to Leg it broke game
-    		本体 = new Difs(Sta.脚左["Leg"]);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs(Sta.脚左["Leg"]);
+    		Pars pars = Body[0][0];
     		X0Y0_Leg = pars["脚"].ToPar();
     		X0Y0_筋 = pars["筋"].ToPar();
     		Pars pars2 = pars["淫タトゥ"].ToPars();
@@ -6056,7 +6056,7 @@ namespace SlaveMatrix
     		X0Y0_脚輪下_金具3 = pars2["金具3"].ToPar();
     		X0Y0_脚輪下_金具左 = pars2["金具左"].ToPar();
     		X0Y0_脚輪下_金具右 = pars2["金具右"].ToPar();
-    		pars = 本体[0][1];
+    		pars = Body[0][1];
     		X0Y1_Leg = pars["脚"].ToPar();
     		X0Y1_筋 = pars["筋"].ToPar();
     		pars2 = pars["淫タトゥ"].ToPars();
@@ -6354,8 +6354,8 @@ namespace SlaveMatrix
     		X0Y1_脚輪下_金具3 = pars2["金具3"].ToPar();
     		X0Y1_脚輪下_金具左 = pars2["金具左"].ToPar();
     		X0Y1_脚輪下_金具右 = pars2["金具右"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -7055,7 +7055,7 @@ namespace SlaveMatrix
 
     	public override void 描画0(RenderArea Are)
     	{
-    		if (本体.IndexY == 0)
+    		if (Body.IndexY == 0)
     		{
     			Are.Draw(X0Y0_Leg);
     			Are.Draw(X0Y0_筋);
@@ -7255,7 +7255,7 @@ namespace SlaveMatrix
 
     	public void 外描画(RenderArea Are)
     	{
-    		if (本体.IndexY == 0)
+    		if (Body.IndexY == 0)
     		{
     			Are.Draw(X0Y0_ブーツ_タン_タン);
     			Are.Draw(X0Y0_ブーツ_タン_縁_縁1);
@@ -7485,13 +7485,13 @@ namespace SlaveMatrix
 
     	public void 開脚(腿_人 腿)
     	{
-    		if (腿.本体.IndexY == 0 || 腿.本体.IndexY == 4)
+    		if (腿.Body.IndexY == 0 || 腿.Body.IndexY == 4)
     		{
-    			本体.IndexY = 0;
+    			Body.IndexY = 0;
     		}
-    		else if (腿.本体.IndexY == 1 || 腿.本体.IndexY == 2 || 腿.本体.IndexY == 3)
+    		else if (腿.Body.IndexY == 1 || 腿.Body.IndexY == 2 || 腿.Body.IndexY == 3)
     		{
-    			本体.IndexY = 1;
+    			Body.IndexY = 1;
     		}
     	}
 
@@ -7524,7 +7524,7 @@ namespace SlaveMatrix
 
     	public override void 色更新()
     	{
-    		if (本体.IndexY == 0)
+    		if (Body.IndexY == 0)
     		{
     			X0Y0_LegCP.Update();
     			X0Y0_筋CP.Update();

@@ -110,27 +110,27 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public JointS 頭頂左_接続点 => new JointS(本体, X0Y0_髪, 0);
+    	public JointS 頭頂左_接続点 => new JointS(Body, X0Y0_髪, 0);
 
-    	public JointS 頭頂右_接続点 => new JointS(本体, X0Y0_髪, 1);
+    	public JointS 頭頂右_接続点 => new JointS(Body, X0Y0_髪, 1);
 
-    	public JointS 横髪左_接続点 => new JointS(本体, X0Y0_髪, 0);
+    	public JointS 横髪左_接続点 => new JointS(Body, X0Y0_髪, 0);
 
-    	public JointS 横髪右_接続点 => new JointS(本体, X0Y0_髪, 1);
+    	public JointS 横髪右_接続点 => new JointS(Body, X0Y0_髪, 1);
 
-    	public JointS 前髪_接続点 => new JointS(本体, X0Y0_髪, 2);
+    	public JointS 前髪_接続点 => new JointS(Body, X0Y0_髪, 2);
 
-    	public JointS 後髪_接続点 => new JointS(本体, X0Y0_髪, 3);
+    	public JointS 後髪_接続点 => new JointS(Body, X0Y0_髪, 3);
 
     	public 基髪(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 基髪D e)
     	{
     		基髪 基髪2 = this;
     		ThisType = GetType();
-    		本体 = new Difs(Sta.胴体["基髪"]);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs(Sta.胴体["基髪"]);
+    		Pars pars = Body[0][0];
     		X0Y0_髪 = pars["髪"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
