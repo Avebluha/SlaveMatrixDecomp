@@ -2,7 +2,7 @@ using _2DGAMELIB;
 
 namespace SlaveMatrix
 {
-    public class バイブ_デンマ : Ele
+    public class バイブ_デンマ : Ele //baibu_denma
     {
     	public Par X0Y0_ヘッド;
 

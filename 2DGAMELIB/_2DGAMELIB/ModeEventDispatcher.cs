@@ -215,6 +215,17 @@ namespace _2DGAMELIB
                         resVector.Y = ((double)height - (double)BaseSize.Height / resMag) * 0.5;
                     }
                 }
+
+                int fbW, fbH;
+
+                Glfw.GetFramebufferSize(GlImage.PtrToWindow(window), out fbW, out fbH);
+
+                uint vpW = (uint)(BaseSize.Width / resMag);
+                uint vpH = (uint)(BaseSize.Height / resMag);
+                int vpX = (int)(resVector.X);
+                int vpY = (int)(fbH - resVector.Y - vpH);
+
+                baseControl.SetViewport(vpW, vpH, vpX, vpY);
             };
 
     		return BaseSize;

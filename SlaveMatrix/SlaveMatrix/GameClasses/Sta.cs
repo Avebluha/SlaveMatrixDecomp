@@ -902,7 +902,7 @@ namespace SlaveMatrix
     		return t[num][num2];
     	}
 
-    	public static List<string[]> パース(this string s)
+    	public static List<string[]> Parse(this string s)
     	{
     		List<string[]> list = new List<string[]>();
     		string[] array = s.Split("\r\n\r\n");
@@ -921,29 +921,29 @@ namespace SlaveMatrix
     	public static void Set擬音()
     	{
     		string[] array = ImiPath.FromText().Split(',');
-    		口挿 = array[0].パース();
-    		口中 = array[1].パース();
-    		口抜 = array[2].パース();
-    		膣挿 = array[3].パース();
-    		膣中 = array[4].パース();
-    		膣抜 = array[5].パース();
-    		肛挿 = array[6].パース();
-    		肛中 = array[7].パース();
-    		肛抜 = array[8].パース();
-    		糸挿 = array[9].パース();
-    		糸中 = array[10].パース();
-    		糸抜 = array[11].パース();
-    		潮吹 = array[12].パース();
-    		放尿 = array[13].パース();
-    		くぱ = array[14].パース();
-    		吸引 = array[15].パース();
-    		吸着 = array[16].パース();
-    		吸脱 = array[17].パース();
-    		振動 = array[18].パース();
-    		鞭振 = array[19].パース();
-    		鞭打 = array[20].パース();
-    		剃り = array[21].パース();
-    		射精 = array[22].パース();
+    		口挿 = array[0].Parse();
+    		口中 = array[1].Parse();
+    		口抜 = array[2].Parse();
+    		膣挿 = array[3].Parse();
+    		膣中 = array[4].Parse();
+    		膣抜 = array[5].Parse();
+    		肛挿 = array[6].Parse();
+    		肛中 = array[7].Parse();
+    		肛抜 = array[8].Parse();
+    		糸挿 = array[9].Parse();
+    		糸中 = array[10].Parse();
+    		糸抜 = array[11].Parse();
+    		潮吹 = array[12].Parse();
+    		放尿 = array[13].Parse();
+    		くぱ = array[14].Parse();
+    		吸引 = array[15].Parse();
+    		吸着 = array[16].Parse();
+    		吸脱 = array[17].Parse();
+    		振動 = array[18].Parse();
+    		鞭振 = array[19].Parse();
+    		鞭打 = array[20].Parse();
+    		剃り = array[21].Parse();
+    		射精 = array[22].Parse();
     		処女喪失 = (from f in array[23].Split("\r\n")
     			where !string.IsNullOrWhiteSpace(f) && !f.StartsWith("//")
     			select f).First();
@@ -1088,9 +1088,9 @@ namespace SlaveMatrix
             obj.MigrateKeys();
             胴体 = obj;
 
-    		//胴体.SaveExMod("C:\\Users\\dave\\Documents\\胴体");
-    		//Ser.ToJson(胴体, "C:\\Users\\dave\\Documents\\胴体.json");
-    		//胴体 = Ser.UnJson<Obj>("C:\\Users\\dave\\Documents\\胴体.json");
+            //胴体.SaveExMod("C:\\Users\\adel4\\Documents\\胴体");
+            //Ser.ToJson(胴体, "C:\\Users\\adel4\\Documents\\胴体.json");
+            //胴体 = Ser.UnJson<Obj>("C:\\Users\\adel4\\Documents\\胴体.json");
 
             obj = Resources.肩左.ObjLoad();
             obj.MigrateKeys();
