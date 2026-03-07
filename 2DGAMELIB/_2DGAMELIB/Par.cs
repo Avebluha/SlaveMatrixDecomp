@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Linq;
+using System.Diagnostics;
 
 namespace _2DGAMELIB
 {
@@ -11,7 +12,20 @@ namespace _2DGAMELIB
     [Serializable]
     public class Par
     {
-    	private Pars parent;
+        //FOR TESTS
+        public static long TCalc;
+        public static long TCalcH;
+        public static long TFill;
+        public static long TOutline;
+        public static long THitFill;
+
+        public static int NCalc;
+        public static int NCalcH;
+        public static int NFill;
+        public static int NOutline;
+        public static int NHitFill;
+
+        private Pars parent;
 
     	public string Tag = "";
 
@@ -645,7 +659,11 @@ namespace _2DGAMELIB
 
     		mv = Position * Unit - bp;
 
-    		Path.Reset();
+            double a = System.Math.PI * Angle / 180.0;
+            M11 = System.Math.Cos(a);
+            M12 = System.Math.Sin(a);
+
+            Path.Reset();
     		OutlinePath.Reset();
     		foreach (Out item in op)
     		{
@@ -654,7 +672,7 @@ namespace _2DGAMELIB
     			{
     				p.X = item.ps[i].X * usx;
     				p.Y = item.ps[i].Y * usy;
-    				p = Rotate(Angle, p) + mv;
+    				p = Rotate(ref p) + mv;
 
     				points[i].X = (float)p.X;
     				points[i].Y = (float)p.Y;
@@ -677,11 +695,8 @@ namespace _2DGAMELIB
     		}
     	}
 
-    	private Vector2D Rotate(double angle, Vector2D p)
+    	private Vector2D Rotate(ref Vector2D p)
     	{
-            double M11 = System.Math.Cos(System.Math.PI * angle / 180.0);
-            double M12 = System.Math.Sin(System.Math.PI * angle / 180.0);
-
             p.X -= bp.X;
     		p.Y -= bp.Y;
 
@@ -694,33 +709,45 @@ namespace _2DGAMELIB
     		return p;
     	}
 
-    	public void Draw(double Unit, Graphics Graphics)
-    	{
-    		if (Dra)
-    		{
-    			if (Edit)
-    			{
-    				Calculation(Unit);
-    				Edit = false;
-    			}
-    			if (pen != null && (EditP || EditPS))
-    			{
-    				pen.Width = (float)(Unit * penWidth * positionSize);
-    				EditP = false;
-    				EditPS = false;
-    			}
-    			if (brush != null)
-    			{
-    				Graphics.FillPath(brush, Path);
-    			}
-    			if (pen != null)
-    			{
-    				Graphics.DrawPath(pen, OutlinePath);
-    			}
-    		}
-    	}
+        public void Draw(double Unit, Graphics Graphics)
+        {
+            if (Dra)
+            {
+                if (Edit)
+                {
+                    long t0 = Stopwatch.GetTimestamp();
+                    Calculation(Unit);
+                    TCalc += Stopwatch.GetTimestamp() - t0;
+                    NCalc++;
+                    Edit = false;
+                }
 
-    	private void CalculationH(double Unit)
+                if (pen != null && (EditP || EditPS))
+                {
+                    pen.Width = (float)(Unit * penWidth * positionSize);
+                    EditP = false;
+                    EditPS = false;
+                }
+
+                if (brush != null)
+                {
+                    long t0 = Stopwatch.GetTimestamp();
+                    Graphics.FillPath(brush, Path);
+                    TFill += Stopwatch.GetTimestamp() - t0;
+                    NFill++;
+                }
+
+                if (pen != null)
+                {
+                    long t0 = Stopwatch.GetTimestamp();
+                    Graphics.DrawPath(pen, OutlinePath);
+                    TOutline += Stopwatch.GetTimestamp() - t0;
+                    NOutline++;
+                }
+            }
+        }
+
+        private void CalculationH(double Unit)
     	{
     		ush = Unit * Size;
     		usxh = ush * SizeX;
@@ -786,20 +813,27 @@ namespace _2DGAMELIB
     		ph.Y = vh.Y + bph.Y;
     	}
 
-    	public void DrawH(double Unit, Graphics Graphics)
-    	{
-    		if (Hit)
-    		{
-    			if (EditH)
-    			{
-    				CalculationH(Unit);
-    				EditH = false;
-    			}
-    			Graphics.FillPath(HitBrush, gph);
-    		}
-    	}
+        public void DrawH(double Unit, Graphics Graphics)
+        {
+            if (Hit)
+            {
+                if (EditH)
+                {
+                    long t0 = Stopwatch.GetTimestamp();
+                    CalculationH(Unit);
+                    TCalcH += Stopwatch.GetTimestamp() - t0;
+                    NCalcH++;
+                    EditH = false;
+                }
 
-    	public void SetJointP(int Index, Par Par)
+                long t1 = Stopwatch.GetTimestamp();
+                Graphics.FillPath(HitBrush, gph);
+                THitFill += Stopwatch.GetTimestamp() - t1;
+                NHitFill++;
+            }
+        }
+
+        public void SetJointP(int Index, Par Par)
     	{
     		if (Index < jp.Count)
     		{

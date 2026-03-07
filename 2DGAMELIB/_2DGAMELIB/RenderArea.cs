@@ -19,6 +19,8 @@ namespace _2DGAMELIB
     	protected double displayUnitScale;
     	protected double hitUnitScale;
 
+        private int DrawCals = 0;
+
     	protected Size WH = System.Drawing.Size.Empty;
     	protected Size WHH = System.Drawing.Size.Empty;
     	protected Size WHA = System.Drawing.Size.Empty;
@@ -37,6 +39,7 @@ namespace _2DGAMELIB
     	{
     		Setting(Unit, XRatio, YRatio, Size, DisMag, HitMag);
     	}
+
 
     	public RenderArea(ModeEventDispatcher Med, bool Hit)
     	{
@@ -64,10 +67,11 @@ namespace _2DGAMELIB
 
 
             displayGraphics.SmoothingMode = SmoothingMode.None;
-    		displayGraphics.PixelOffsetMode = PixelOffsetMode.HighSpeed;
+    		displayGraphics.PixelOffsetMode = PixelOffsetMode.None;
             displayGraphics.InterpolationMode = InterpolationMode.NearestNeighbor;
-    		//needed for text or smthn
-    		displayGraphics.CompositingMode = CompositingMode.SourceOver;
+            //needed for text or smthn
+            displayGraphics.CompositingMode = CompositingMode.SourceOver;
+            displayGraphics.CompositingQuality = CompositingQuality.HighSpeed;
         }
         private void Setting(double Unit, double XRatio, double YRatio, double Size, double DisMag, double HitMag)
     	{
@@ -81,9 +85,10 @@ namespace _2DGAMELIB
 
 
     		hitGraphics.SmoothingMode = SmoothingMode.None;
-    		hitGraphics.PixelOffsetMode = PixelOffsetMode.HighSpeed;
+    		hitGraphics.PixelOffsetMode = PixelOffsetMode.None;
             hitGraphics.InterpolationMode = InterpolationMode.NearestNeighbor;
             hitGraphics.CompositingMode = CompositingMode.SourceOver;
+            hitGraphics.CompositingQuality = CompositingQuality.HighSpeed;
         }
 
     	public Vector2D GetPosition()
@@ -93,35 +98,44 @@ namespace _2DGAMELIB
 
     	public void Draw(Par Par)
     	{
-    		Par.Draw(displayUnitScale, displayGraphics);
-    		if (hitGraphics != null)
-    		{
-    			Par.DrawH(hitUnitScale, hitGraphics);
-    		}
+            Par.Draw(displayUnitScale, displayGraphics);
+            if (hitGraphics != null)
+            {
+                Par.DrawH(hitUnitScale, hitGraphics);
+            }
     	}
 
     	public void Draw(ParT ParT)
     	{
-    		ParT.Draw(displayUnitScale, displayGraphics);
-    		if (hitGraphics != null)
-    		{
-    			ParT.DrawH(hitUnitScale, hitGraphics);
-    		}
+            ParT.Draw(displayUnitScale, displayGraphics);
+            if (hitGraphics != null)
+            {
+                ParT.DrawH(hitUnitScale, hitGraphics);
+            }
     	}
 
     	public void Draw(Pars Pars)
     	{
-    		Pars.Draw(displayUnitScale, displayGraphics);
-    		if (hitGraphics != null)
-    		{
-    			Pars.DrawH(hitUnitScale, hitGraphics);
-    		}
+            Pars.Draw(displayUnitScale, displayGraphics);
+            if (hitGraphics != null)
+            {
+                Pars.DrawH(hitUnitScale, hitGraphics);
+               
+            }
+            
     	}
 
         public void Draw(RenderArea Are)
-        {
-            Vector2D p = Are.GetPosition();
-            DisplayGraphics.DrawImage(Are.DisplayLayer, (float)(p.X * Are.displayUnitScale), (float)(p.Y * Are.displayUnitScale), Are.WHA.Width, Are.WHA.Height);
+        { 
+            var p = Are.GetPosition();
+            int x = (int)(p.X * Are.displayUnitScale);
+            int y = (int)(p.Y * Are.displayUnitScale);
+
+            if (Are.DisplayLayer.Width == Are.WHA.Width && Are.DisplayLayer.Height == Are.WHA.Height)
+                DisplayGraphics.DrawImageUnscaled(Are.DisplayLayer, x, y);
+            else
+                DisplayGraphics.DrawImage(Are.DisplayLayer, x, y, Are.WHA.Width, Are.WHA.Height);
+
             if (Are.hitGraphics != null && HitGraphics != null)
             {
                 HitGraphics.DrawImage(Are.HitLayer, (int)(p.X * Are.hitUnitScale), (int)(p.Y * Are.hitUnitScale), Are.WHH.Width, Are.WHH.Height);
@@ -132,7 +146,7 @@ namespace _2DGAMELIB
     	{
     		Vector2D p = GetPosition();
     		GD.DrawImage(DisplayLayer, (int)(p.X * unitScale), (int)(p.Y * unitScale), WH.Width, WH.Height);
-    	}
+        }
 
     	public void DrawTo(Graphics displayGraphics, Graphics hitGraphics)
     	{
@@ -142,7 +156,7 @@ namespace _2DGAMELIB
     		{
     			hitGraphics.DrawImage(HitLayer, (int)(p.X * hitUnitScale), (int)(p.Y * hitUnitScale), WHH.Width, WHH.Height);
     		}
-    	}
+        }
 
     	public void Clear()
     	{

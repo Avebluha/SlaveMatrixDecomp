@@ -165,6 +165,7 @@ namespace _2DGAMELIB
     		Glfw.SetWindowUserPointer(window, GCHandle.ToIntPtr(handle));
 
             Glfw.MakeContextCurrent(window);
+            Glfw.SwapInterval(0);
             gl = Silk.NET.OpenGL.GL.GetApi(Glfw.GetProcAddress);
 
 

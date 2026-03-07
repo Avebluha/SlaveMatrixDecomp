@@ -294,6 +294,10 @@ namespace _2DGAMELIB
             baseControl.SetTitle(UITitle);
             Modes[mode].Setting();
 
+            FrameTimeCounter FTC = new FrameTimeCounter();
+            RealFpsCounter RFC = new RealFpsCounter();
+
+            /*
     		Action action = delegate
     		{
     			if (FPSF.Value > 1.0)
@@ -309,6 +313,28 @@ namespace _2DGAMELIB
                 //DEBUG shows the hit lut
                 //GD.DrawImage(Hit, new Point(0, 0));
                 baseControl.SetBitmap(Display);
+            };
+
+            */
+
+            Action action = () =>
+            {
+                if (FPSF.Value > 1.0)
+                    Modes[mode].Draw(FPSF);
+
+                baseControl.SetBitmap(Display);
+
+                FTC.Frame();
+                RFC.Frame();
+
+                if (ShowFPS)
+                {
+                    baseControl.SetTitle(
+                        UITitle +
+                        " - FPS: " + RFC.Value.ToString("F1") +
+                        " | Frame: " + FTC.FrameMs.ToString("F2") + " ms"
+                    );
+                }
             };
 
 
