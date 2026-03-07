@@ -155,12 +155,29 @@ namespace _2DGAMELIB
 
     	public new void SetDefault()
     	{
-    		base.SetDefault();
-    		font = new Font("", 1f);
-    		brusht = new SolidBrush(Color.Black);
-    		brushs = null;
-    		stringformat = new StringFormat();
-    	}
+            base.SetDefault();
+
+            if (font != null)
+                font.Dispose();
+
+            if (brusht != null)
+                brusht.Dispose();
+
+            if (brushs != null)
+                brushs.Dispose();
+
+            if (stringformat != null)
+                stringformat.Dispose();
+
+            font = new Font("", 1f);
+            brusht = new SolidBrush(Color.Black);
+            brushs = null;
+            stringformat = new StringFormat();
+
+            EditF = true;
+            EditT = true;
+            EditTS = true;
+        }
 
     	public ParT()
     	{
@@ -174,23 +191,21 @@ namespace _2DGAMELIB
     	private void CopyT(ParT ParT)
     	{
     		Copy(ParT);
+
     		fontSize = ParT.fontSize;
+
     		if (ParT.font != null)
-    		{
     			Font = ParT.font.Copy();
-    		}
+
     		if (ParT.brusht != null)
-    		{
     			TextBrush = ParT.brusht.Copy();
-    		}
+
     		if (ParT.brushs != null)
-    		{
     			ShadBrush = ParT.brushs.Copy();
-    		}
+
     		if (ParT.stringformat != null)
-    		{
     			StringFormat = ParT.stringformat.Copy();
-    		}
+
     		positionT = ParT.positionT;
     		rectSize = ParT.rectSize;
     		Text = ParT.Text;
@@ -199,13 +214,11 @@ namespace _2DGAMELIB
     	public new void Draw(double Unit, Graphics Graphics)
     	{
     		if (Edit)
-    		{
     			EditT = true;
-    		}
+
     		if (EditS || EditPS)
-    		{
     			EditTS = true;
-    		}
+
     		base.Draw(Unit, Graphics);
     		DrawString(Unit, Graphics);
     	}
@@ -215,18 +228,23 @@ namespace _2DGAMELIB
     		us = Unit * base.Size;
     		usx = us * base.SizeX;
     		usy = us * base.SizeY;
+
     		bp = base.BasePoint;
     		bp.X *= usx;
     		bp.Y *= usy;
+
     		a0 = base.Angle;
             a1 = System.Math.PI * a0 / 180.0;
             M11 = System.Math.Cos(a1);
             M12 = System.Math.Sin(a1);
+
     		v.X = bp.X * M11 + bp.Y * (0.0 - M12);
     		v.Y = bp.X * M12 + bp.Y * M11;
+
     		p = base.Position;
     		bp.X = p.X * Unit - v.X;
     		bp.Y = p.Y * Unit - v.Y;
+
     		rect.X = (float)(positionT.X * us);
     		rect.Y = (float)(positionT.Y * us);
     		rect.Width = (float)(rectSize.X * us);
@@ -261,12 +279,14 @@ namespace _2DGAMELIB
     			Calculation(Unit);
     			EditT = false;
     		}
+
     		if (EditF || EditTS)
     		{
                 RebuildFont((float)(us * fontSize));
     			EditF = false;
     			EditTS = false;
     		}
+
     		af = (float)a0;
     		xf = (float)base.SizeX;
     		yf = (float)base.SizeY;
@@ -345,17 +365,18 @@ namespace _2DGAMELIB
         public void SetStringRectOutline(double Unit, Graphics Graphics)
     	{
     		Vector2D[] stringRectPoints = GetStringRectPoints(Unit, Graphics);
-    		Out @out = new Out
-    		{
-    			Tension = 0f
-    		};
+
+    		Out @out = new Out { Tension = 0f };
     		Vector2D vector2D = Dat.Vec2DZero - stringRectPoints[0];
+
     		double x = 0.05;
     		double num = 0.025;
-    		@out.ps.Add(stringRectPoints[0].AddY(0.0 - num) + vector2D);
-    		@out.ps.Add(stringRectPoints[1].AddXY(x, 0.0 - num) + vector2D);
+
+    		@out.ps.Add(stringRectPoints[0].AddY(-num) + vector2D);
+    		@out.ps.Add(stringRectPoints[1].AddXY(x, -num) + vector2D);
     		@out.ps.Add(stringRectPoints[2].AddXY(x, num) + vector2D);
     		@out.ps.Add(stringRectPoints[3].AddY(num) + vector2D);
+
     		base.OP.Add(@out);
     	}
     	public new void Dispose()
