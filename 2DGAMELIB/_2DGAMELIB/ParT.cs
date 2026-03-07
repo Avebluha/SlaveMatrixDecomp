@@ -1,7 +1,8 @@
+using Newtonsoft.Json;
 using System;
 using System.Drawing;
 using System.Drawing.Drawing2D;
-using Newtonsoft.Json;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace _2DGAMELIB
 {
@@ -18,7 +19,6 @@ namespace _2DGAMELIB
 
     	[NonSerialized, JsonIgnore]
     	private Brush brusht = new SolidBrush(Color.Black);
-
 
         //unused
     	private const double Shift = 1.0;
@@ -69,15 +69,9 @@ namespace _2DGAMELIB
 
     	private CharacterRange[] crr = new CharacterRange[1];
 
-        //unused
-    	private CharacterRange[] cre = new CharacterRange[1];
-
     	public Font Font
     	{
-    		get
-    		{
-    			return font;
-    		}
+    		get { return font; }
     		set
     		{
     			if (font != value && font != null)
@@ -91,10 +85,7 @@ namespace _2DGAMELIB
 
     	public double FontSize
     	{
-    		get
-    		{
-    			return fontSize;
-    		}
+    		get { return fontSize; }
     		set
     		{
     			fontSize = value;
@@ -104,10 +95,7 @@ namespace _2DGAMELIB
 
     	public Brush TextBrush
     	{
-    		get
-    		{
-    			return brusht;
-    		}
+    		get { return brusht; }
     		set
     		{
     			if (brusht != value && brusht != null)
@@ -120,50 +108,31 @@ namespace _2DGAMELIB
 
     	public Color TextColor
     	{
-    		get
-    		{
-    			return ((SolidBrush)brusht).Color;
-    		}
-    		set
-    		{
-    			((SolidBrush)brusht).Color = value;
-    		}
+    		get { return ((SolidBrush)brusht).Color; }
+    		set { ((SolidBrush)brusht).Color = value; }
     	}
 
     	public Brush ShadBrush
     	{
-    		get
-    		{
-    			return brushs;
-    		}
+    		get { return brushs; }
     		set
     		{
-    			if (brushs != value && brushs != null)
-    			{
+    			if (brushs != value && brushs != null)    			
     				brushs.Dispose();
-    			}
+
     			brushs = value;
     		}
     	}
 
     	public Color ShadColor
     	{
-    		get
-    		{
-    			return ((SolidBrush)brushs).Color;
-    		}
-    		set
-    		{
-    			((SolidBrush)brushs).Color = value;
-    		}
+    		get { return ((SolidBrush)brushs).Color; }
+    		set { ((SolidBrush)brushs).Color = value; }
     	}
 
     	public StringFormat StringFormat
     	{
-    		get
-    		{
-    			return stringformat;
-    		}
+    		get { return stringformat; }
     		set
     		{
     			if (stringformat != value && stringformat != null)
@@ -176,10 +145,7 @@ namespace _2DGAMELIB
 
     	public Vector2D RectSize
     	{
-    		get
-    		{
-    			return rectSize;
-    		}
+    		get { return rectSize; }
     		set
     		{
     			rectSize = value;
@@ -267,7 +233,28 @@ namespace _2DGAMELIB
     		rect.Height = (float)(rectSize.Y * us);
     	}
 
-    	private void DrawString(double Unit, Graphics Graphics)
+        private void RebuildFont(double scaledSize)
+        {
+            if (font == null)
+                font = new Font("", 1f);
+
+            Font oldFont = font;
+
+            font = new Font(
+                oldFont.FontFamily,
+                (float)scaledSize,
+                oldFont.Style,
+                oldFont.Unit,
+                oldFont.GdiCharSet,
+                oldFont.GdiVerticalFont);
+
+            oldFont.Dispose();
+
+            EditF = true;
+            EditTS = true;
+        }
+
+        private void DrawString(double Unit, Graphics Graphics)
     	{
     		if (EditT)
     		{
@@ -276,56 +263,86 @@ namespace _2DGAMELIB
     		}
     		if (EditF || EditTS)
     		{
-    			Font = new Font(font.FontFamily, (float)(us * fontSize));
+                RebuildFont((float)(us * fontSize));
     			EditF = false;
     			EditTS = false;
     		}
     		af = (float)a0;
     		xf = (float)base.SizeX;
     		yf = (float)base.SizeY;
-    		if (brushs != null)
-    		{
-    			Graphics.TranslateTransform((float)(bp.X + 1.0), (float)(bp.Y + 1.0));
-    			Graphics.RotateTransform(af);
-    			Graphics.ScaleTransform(xf, yf);
-    			Graphics.DrawString(Text, font, brushs, rect, stringformat);
-    			Graphics.ResetTransform();
-    		}
-    		Graphics.TranslateTransform((float)bp.X, (float)bp.Y);
-    		Graphics.RotateTransform(af);
-    		Graphics.ScaleTransform(xf, yf);
-    		Graphics.DrawString(Text, font, brusht, rect, stringformat);
-            Graphics.ResetTransform();
-    	}
+
+
+            if (brushs != null)
+            {
+                GraphicsState state = Graphics.Save();
+
+                Graphics.TranslateTransform((float)(bp.X + Shift), (float)(bp.Y + Shift));
+                Graphics.RotateTransform(af);
+                Graphics.ScaleTransform(xf, yf);
+                Graphics.DrawString(Text, font, brushs, rect, stringformat);
+
+                Graphics.Restore(state);
+            }
+
+            {
+                GraphicsState state = Graphics.Save();
+
+                Graphics.TranslateTransform((float)bp.X, (float)bp.Y);
+                Graphics.RotateTransform(af);
+                Graphics.ScaleTransform(xf, yf);
+                Graphics.DrawString(Text, font, brusht, rect, stringformat);
+
+                Graphics.Restore(state);
+            }
+        }
 
     	public Vector2D_2 GetStringRect(double Unit, Graphics Graphics)
     	{
     		double num = Unit * base.Size;
+
     		if (EditF || EditS || EditPS || EditTS)
     		{
-    			Font = new Font(font.FontFamily, (float)(num * fontSize));
-    			EditF = false;
+                RebuildFont((float)(num * fontSize));
+                EditF = false;
     			EditTS = false;
     		}
+
     		crr[0] = new CharacterRange(0, Text.Length);
     		stringformat.SetMeasurableCharacterRanges(crr);
-    		RectangleF bounds = Graphics.MeasureCharacterRanges(Text, font, new RectangleF((float)(positionT.X * num), (float)(positionT.Y * num), (float)(rectSize.X * num), (float)(rectSize.Y * num)), stringformat)[0].GetBounds(Graphics);
-    		return new Vector2D_2(new Vector2D((double)bounds.X / num, (double)bounds.Y / num), new Vector2D((double)bounds.Width / num, (double)bounds.Height / num));
-    	}
 
-    	public Vector2D[] GetStringRectPoints(double Unit, Graphics Graphics)
+            RectangleF layoutRect = new RectangleF(
+                (float)(positionT.X * num),
+                (float)(positionT.Y * num),
+                (float)(rectSize.X * num),
+                (float)(rectSize.X * num));
+
+            RectangleF bounds = Graphics
+                .MeasureCharacterRanges(Text ?? string.Empty,  font, layoutRect, stringformat)[0]
+                .GetBounds(Graphics);
+
+            return new Vector2D_2(
+                new Vector2D(bounds.X / num, bounds.Y / num),
+                new Vector2D(bounds.Width / num, bounds.Height / num));
+        }
+
+        public Vector2D[] GetStringRectPoints(double Unit, Graphics Graphics)
     	{
-    		Vector2D_2 stringRect = GetStringRect(Unit, Graphics);
-    		stringRect.v2.X *= 1.07;
-    		return new Vector2D[4]
-    		{
-    			stringRect.v1,
-    			new Vector2D(stringRect.v2.X, stringRect.v1.Y),
-    			stringRect.v2,
-    			new Vector2D(stringRect.v1.X, stringRect.v2.Y)
-    		};
-    	}
-    	public void SetStringRectOutline(double Unit, Graphics Graphics)
+            Vector2D_2 stringRect = GetStringRect(Unit, Graphics);
+
+            Vector2D pos = stringRect.v1;
+            Vector2D size = stringRect.v2;
+
+            size.X *= 1.07f;
+
+            return new Vector2D[4]
+            {
+                pos,
+                new Vector2D(pos.X + size.X, pos.Y),
+                new Vector2D(pos.X + size.X, pos.Y + size.Y),
+                new Vector2D(pos.X, pos.Y + size.Y)
+            };
+        }
+        public void SetStringRectOutline(double Unit, Graphics Graphics)
     	{
     		Vector2D[] stringRectPoints = GetStringRectPoints(Unit, Graphics);
     		Out @out = new Out
@@ -344,21 +361,29 @@ namespace _2DGAMELIB
     	public new void Dispose()
     	{
     		base.Dispose();
+
     		if (font != null)
     		{
     			font.Dispose();
+                font = null;
     		}
+
     		if (brusht != null)
     		{
     			brusht.Dispose();
+                brusht = null;
     		}
+
     		if (brushs != null)
     		{
-    			brushs.Dispose();
+    			brushs.Dispose();   
+                brushs = null;
     		}
+
     		if (stringformat != null)
     		{
-    			stringformat.Dispose();
+    			stringformat.Dispose(); 
+                stringformat = null;
     		}
     	}
     }
