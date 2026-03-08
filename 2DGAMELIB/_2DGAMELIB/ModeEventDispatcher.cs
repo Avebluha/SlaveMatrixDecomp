@@ -297,26 +297,6 @@ namespace _2DGAMELIB
             FrameTimeCounter FTC = new FrameTimeCounter();
             RealFpsCounter RFC = new RealFpsCounter();
 
-            /*
-    		Action action = delegate
-    		{
-    			if (FPSF.Value > 1.0)
-    			{
-    				Modes[mode].Draw(FPSF);
-
-                    if (ShowFPS)
-                    {
-                        baseControl.SetTitle(UITitle + " - FPS: " + System.Math.Round(FPSF.Value, 2));
-                    }
-                }
-
-                //DEBUG shows the hit lut
-                //GD.DrawImage(Hit, new Point(0, 0));
-                baseControl.SetBitmap(Display);
-            };
-
-            */
-
             Action action = () =>
             {
                 if (FPSF.Value > 1.0)
@@ -336,7 +316,6 @@ namespace _2DGAMELIB
                     );
                 }
             };
-
 
     		while (Drive)
     		{

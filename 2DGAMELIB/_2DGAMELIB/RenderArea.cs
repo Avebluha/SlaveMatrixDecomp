@@ -37,7 +37,6 @@ namespace _2DGAMELIB
     		Setting(Unit, XRatio, YRatio, Size, DisMag, HitMag);
     	}
 
-
     	public RenderArea(ModeEventDispatcher Med, bool Hit)
     	{
     		if (Hit)
@@ -59,7 +58,7 @@ namespace _2DGAMELIB
             displayOutputSize.Height = (int)(base.LocalHeight * Unit);
             displayBufferSize.Width = (int)(base.LocalWidth * displayUnitScale);
             displayBufferSize.Height = (int)(base.LocalHeight * displayUnitScale);
-            DisplayLayer = new Bitmap((int)((double)displayOutputSize.Width * DisMag), (int)((double)displayOutputSize.Height * DisMag));
+            DisplayLayer = new Bitmap(displayBufferSize.Width, displayBufferSize.Height);
             displayGraphics = Graphics.FromImage(DisplayLayer);
 
 
@@ -149,7 +148,7 @@ namespace _2DGAMELIB
     	{
             Vector2D p = GetPosition();
     		displayGraphics.DrawImage(DisplayLayer, (int)(p.X * unitScale), (int)(p.Y * unitScale), displayOutputSize.Width, displayOutputSize.Height);
-    		if (this.hitGraphics != null)
+    		if (this.hitGraphics != null && hitGraphics != null)
     		{
     			hitGraphics.DrawImage(HitLayer, (int)(p.X * hitUnitScale), (int)(p.Y * hitUnitScale), hitBufferSize.Width, hitBufferSize.Height);
     		}
