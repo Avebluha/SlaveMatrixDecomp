@@ -348,7 +348,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -369,7 +369,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 上着ボトム_前掛け(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 上着ボトム_前掛けD e)
+    	public 上着ボトム_前掛け(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 上着ボトム_前掛けD e)
     	{
     		ThisType = GetType();
     		Dif dif = new Dif(Sta.胴体["上着ボトム前"][1]);
@@ -468,7 +468,7 @@ namespace SlaveMatrix
     		X0Y1_縁前_縁左CP = new ColorP(X0Y1_縁前_縁左, 縁前_縁左CD, DisUnit, abj: true);
     		X0Y1_縁前_縁右CP = new ColorP(X0Y1_縁前_縁右, 縁前_縁右CD, DisUnit, abj: true);
     		X0Y1_縁前_縁中CP = new ColorP(X0Y1_縁前_縁中, 縁前_縁中CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     		尺度YB = 0.95;
     	}
 
@@ -544,12 +544,12 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		帯CD = new ColorD();
     		巻CD = new ColorD();

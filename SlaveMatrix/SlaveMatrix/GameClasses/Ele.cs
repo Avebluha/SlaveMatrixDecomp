@@ -538,7 +538,7 @@ namespace SlaveMatrix
 
     	public virtual bool 表示 { get; set; }
 
-    	public virtual double 濃度 { get; set; }
+    	public virtual double Intensity { get; set; }
 
     	public int 描画前後 => ConnectionType switch
     	{

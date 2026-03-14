@@ -213,7 +213,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -507,7 +507,7 @@ namespace SlaveMatrix
 
     	public JointS LowerArm_接続点 => new JointS(Body, X0Y0_獣翼UpperArm, 0);
 
-    	public UpperArm_蝙(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, UpperArm_蝙D e)
+    	public UpperArm_蝙(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, UpperArm_蝙D e)
     	{
     		UpperArm_蝙 UpperArm_蝙2 = this;
     		飛膜 = new 飛膜_根(DisUnit, 配色指定, 体配色);
@@ -587,7 +587,7 @@ namespace SlaveMatrix
     		X0Y0_竜性_鱗4CP = new ColorP(X0Y0_竜性_鱗4, 竜性_鱗4CD, DisUnit, abj: true);
     		X0Y0_竜性_鱗5CP = new ColorP(X0Y0_竜性_鱗5, 竜性_鱗5CD, DisUnit, abj: true);
     		X0Y0_竜性_鱗6CP = new ColorP(X0Y0_竜性_鱗6, 竜性_鱗6CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     		尺度B = 1.02;
     	}
 
@@ -625,7 +625,7 @@ namespace SlaveMatrix
     		X0Y0_竜性_鱗6CP.Update();
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		switch (配色指定)
     		{
@@ -644,7 +644,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		獣翼UpperArmCD = new ColorD(ref Col.Black, ref 体配色.毛0O);
     		竜性_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
@@ -655,7 +655,7 @@ namespace SlaveMatrix
     		竜性_鱗6CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
     	}
 
-    	private void 配色T0(体配色 体配色)
+    	private void 配色T0(BodyColorSet 体配色)
     	{
     		獣翼UpperArmCD = new ColorD(ref Col.Black, ref 体配色.毛0O);
     		竜性_鱗1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
@@ -666,7 +666,7 @@ namespace SlaveMatrix
     		竜性_鱗6CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
     	}
 
-    	private void 配色T1(体配色 体配色)
+    	private void 配色T1(BodyColorSet 体配色)
     	{
     		獣翼UpperArmCD = new ColorD(ref Col.Black, ref 体配色.毛0O);
     		竜性_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);

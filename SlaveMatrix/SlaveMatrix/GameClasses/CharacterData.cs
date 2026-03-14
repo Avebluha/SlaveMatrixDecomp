@@ -5,7 +5,7 @@ using _2DGAMELIB;
 namespace SlaveMatrix
 {
     [Serializable]
-    public class ChaD
+    public class CharacterData
     {
     	public Unit Parent;
 
@@ -129,7 +129,7 @@ namespace SlaveMatrix
     		return false;
     	}
 
-    	public ChaD(WaistD 構成, 体色 体色)
+    	public CharacterData(WaistD 構成, 体色 体色)
     	{
     		this.body_tree = 構成;
     		this.body_color = 体色;

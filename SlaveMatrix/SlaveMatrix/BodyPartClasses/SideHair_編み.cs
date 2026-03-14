@@ -331,7 +331,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -414,7 +414,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public SideHair_編み(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, SideHair_編みD e)
+    	public SideHair_編み(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, SideHair_編みD e)
     	{
     		ThisType = GetType();
     		Dif dif = new Dif();
@@ -507,7 +507,7 @@ namespace SlaveMatrix
     		X0Y0_髪左CP = new ColorP(X0Y0_髪左, 髪左CD, DisUnit, abj: false);
     		X0Y0_髪右CP = new ColorP(X0Y0_髪右, 髪右CD, DisUnit, abj: false);
     		X0Y0_髪根CP = new ColorP(X0Y0_髪根, 髪根CD, DisUnit, abj: false);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     	}
 
     	public override bool Is布(Par p)
@@ -537,12 +537,12 @@ namespace SlaveMatrix
     		X0Y0_髪根CP.Update();
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		髪CD = new ColorD(ref 体配色.髪線, ref 体配色.髪O);
     		編節1_髪節CD = new ColorD(ref 体配色.髪線, ref 体配色.髪O);

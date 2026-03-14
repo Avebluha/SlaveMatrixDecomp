@@ -382,7 +382,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -403,7 +403,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 紅潮(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 紅潮D e)
+    	public 紅潮(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 紅潮D e)
     	{
     		ThisType = GetType();
     		Body = new Difs(Sta.胴体["紅潮"]);
@@ -481,7 +481,7 @@ namespace SlaveMatrix
     		紅潮線左右濃度 = e.紅潮線左右濃度;
     		紅潮弱左右濃度 = e.紅潮弱左右濃度;
     		紅潮線弱左右濃度 = e.紅潮線弱左右濃度;
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     	}
 
     	public override void 色更新()
@@ -498,12 +498,12 @@ namespace SlaveMatrix
     		X0Y0_紅潮線弱右CP.Update();
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		Color Col = Color.FromArgb((int)((double)(int)体配色.紅潮.Col1.A * 0.7), 体配色.紅潮.Col1);
     		紅潮0CD = new ColorD();

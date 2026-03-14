@@ -191,7 +191,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -209,7 +209,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 羽根箒(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 羽根箒D e)
+    	public 羽根箒(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 羽根箒D e)
     	{
     		ThisType = GetType();
     		Body = new Difs(Sta.カーソル["羽根箒"]);
@@ -268,7 +268,7 @@ namespace SlaveMatrix
     		X0Y0_羽根5CP = new ColorP(X0Y0_羽根5, 羽根5CD, DisUnit, abj: true);
     		X0Y0_羽根CP = new ColorP(X0Y0_羽根, 羽根CD, DisUnit, abj: true);
     		X0Y0_柄CP = new ColorP(X0Y0_柄, 柄CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     		Body.JoinPAall();
     	}
 
@@ -283,12 +283,12 @@ namespace SlaveMatrix
     		X0Y0_柄CP.Update();
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		Col.GetGrad(ref Col.White, out var ret);
     		羽根1CD = new ColorD(ref Col.Black, ref ret);

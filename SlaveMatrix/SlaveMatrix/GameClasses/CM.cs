@@ -56,7 +56,7 @@ namespace SlaveMatrix
     	{
     		Ele.Xi = 0;
     		Ele.Yi = 0;
-    		Ele.濃度 = 0.5;
+    		Ele.Intensity = 0.5;
     		使用状態 = UsageStatus.Standby;
     		Under = false;
     		描画Show = true;

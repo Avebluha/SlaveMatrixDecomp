@@ -155,7 +155,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -171,7 +171,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 舌_短(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 舌_短D e)
+    	public 舌_短(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 舌_短D e)
     	{
     		ThisType = GetType();
     		Dif dif = new Dif();
@@ -230,7 +230,7 @@ namespace SlaveMatrix
     		X0Y0_舌3CP = new ColorP(X0Y0_舌3, 舌3CD, DisUnit, abj: true);
     		X0Y0_舌4CP = new ColorP(X0Y0_舌4, 舌4CD, DisUnit, abj: true);
     		X0Y0_舌5CP = new ColorP(X0Y0_舌5, 舌5CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     	}
 
     	public override void 色更新()
@@ -243,12 +243,12 @@ namespace SlaveMatrix
     		X0Y0_舌5CP.Update(mm);
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		舌1CD = new ColorD(ref 体配色.粘膜線, ref 体配色.舌);
     		舌2CD = new ColorD(ref 体配色.粘膜線, ref 体配色.舌);

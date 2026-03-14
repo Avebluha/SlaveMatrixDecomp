@@ -2599,7 +2599,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -2642,7 +2642,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public バイブ_ドリル(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, バイブ_ドリルD e)
+    	public バイブ_ドリル(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, バイブ_ドリルD e)
     	{
     		ThisType = GetType();
     		Body = new Difs(Sta.カーソル["ドリル"]);
@@ -3441,7 +3441,7 @@ namespace SlaveMatrix
     		X2Y4_ユニット_パワー2CP = new ColorP(X2Y4_ユニット_パワー2, ユニット_パワー2CD, DisUnit, abj: true);
     		X2Y4_ユニット_パワー3CP = new ColorP(X2Y4_ユニット_パワー3, ユニット_パワー3CD, DisUnit, abj: true);
     		X2Y4_ユニット_パワー4CP = new ColorP(X2Y4_ユニット_パワー4, ユニット_パワー4CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     		X0Y0_ユニット_ユニット.BasePointBase = X0Y0_ユニット_ユニット.ToLocal(X0Y0_ヘッド.ToGlobal(X0Y0_ヘッド.JP[18].Joint));
     		X0Y1_ユニット_ユニット.BasePointBase = X0Y1_ユニット_ユニット.ToLocal(X0Y1_ヘッド.ToGlobal(X0Y1_ヘッド.JP[17].Joint));
     		X0Y2_ユニット_ユニット.BasePointBase = X0Y2_ユニット_ユニット.ToLocal(X0Y2_ヘッド.ToGlobal(X0Y2_ヘッド.JP[12].Joint));
@@ -3862,12 +3862,12 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		Col.GetGrad(ref Col.DarkMagenta, out var ret);
     		ヘッドCD = new ColorD(ref Col.Black, ref ret);

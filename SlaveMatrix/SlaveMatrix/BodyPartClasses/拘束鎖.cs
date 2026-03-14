@@ -232,7 +232,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -252,7 +252,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 拘束鎖(double DisUnit, bool 右, 配色指定 配色指定, 体配色 体配色, bool Xasix)
+    	public 拘束鎖(double DisUnit, bool 右, 配色指定 配色指定, BodyColorSet 体配色, bool Xasix)
     	{
     		ThisType = GetType();
     		Body = new Difs(Sta.その他["拘束鎖"]);
@@ -333,12 +333,12 @@ namespace SlaveMatrix
     		X0Y0_鎖9CP.Update();
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		鎖2CD = new ColorD();
     		鎖1CD = new ColorD();

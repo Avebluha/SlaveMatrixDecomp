@@ -1459,7 +1459,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -1492,7 +1492,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 花_百(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 花_百D e)
+    	public 花_百(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 花_百D e)
     	{
     		ThisType = GetType();
     		Pars pars = new Pars();
@@ -1718,7 +1718,7 @@ namespace SlaveMatrix
     		X0Y0_花_ユリ_欠損_萼1_萼1CP = new ColorP(X0Y0_花_ユリ_欠損_萼1_萼1, 花_ユリ_萼1_萼1CD, DisUnit, abj: true);
     		X0Y0_萼_通常_萼CP = new ColorP(X0Y0_萼_通常_萼, 萼_萼CD, DisUnit, abj: true);
     		X0Y0_萼_欠損_萼CP = new ColorP(X0Y0_萼_欠損_萼, 萼_萼CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     	}
 
     	public override void SetAngle0()
@@ -1776,7 +1776,7 @@ namespace SlaveMatrix
     		X0Y0_萼_欠損_萼CP.Update();
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		switch (配色指定)
     		{
@@ -1795,7 +1795,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		花_ユリ_萼2CD = new ColorD(ref Col.Black, ref 体配色.百O);
     		花_ユリ_萼3CD = new ColorD(ref Col.Black, ref 体配色.百O);
@@ -1821,7 +1821,7 @@ namespace SlaveMatrix
     		萼_萼CD = new ColorD(ref Col.Black, ref 体配色.植1O);
     	}
 
-    	private void 配色T0(体配色 体配色)
+    	private void 配色T0(BodyColorSet 体配色)
     	{
     		花_ユリ_萼2CD = new ColorD(ref Col.Black, ref 体配色.百O);
     		花_ユリ_萼3CD = new ColorD(ref Col.Black, ref 体配色.百O);
@@ -1847,7 +1847,7 @@ namespace SlaveMatrix
     		萼_萼CD = new ColorD(ref Col.Black, ref 体配色.植1O);
     	}
 
-    	private void 配色T1(体配色 体配色)
+    	private void 配色T1(BodyColorSet 体配色)
     	{
     		花_ユリ_萼2CD = new ColorD(ref Col.Black, ref 体配色.百O);
     		花_ユリ_萼3CD = new ColorD(ref Col.Black, ref 体配色.百O);

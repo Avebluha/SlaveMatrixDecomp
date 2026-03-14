@@ -2075,7 +2075,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -2151,7 +2151,7 @@ namespace SlaveMatrix
 
     	public JointS 翼右_接続点 => new JointS(Body, X0Y0_Waist, 9);
 
-    	public Waist(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, WaistD e)
+    	public Waist(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, WaistD e)
     	{
     		Waist Waist2 = this;
     		ThisType = GetType();
@@ -2860,7 +2860,7 @@ namespace SlaveMatrix
     		傷I左濃度 = e.傷I左濃度;
     		傷I右濃度 = e.傷I右濃度;
     		ハイライト濃度 = e.ハイライト濃度;
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     		尺度YB = 0.95;
     		double num = 1.0025;
     		X0Y0_臍.BasePointBase = new Vector2D(X0Y0_臍.BasePointBase.X, 0.363998381176966);
@@ -3433,7 +3433,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		switch (配色指定)
     		{
@@ -3452,7 +3452,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		WaistCD = new ColorD(ref Col.Black, ref 体配色.人肌O);
     		股CD = new ColorD(ref 体配色.薄線, ref 体配色.人肌R);
@@ -3499,7 +3499,7 @@ namespace SlaveMatrix
     		ハイライト下右CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
     	}
 
-    	private void 配色T0(体配色 体配色)
+    	private void 配色T0(BodyColorSet 体配色)
     	{
     		WaistCD = new ColorD(ref Col.Black, ref 体配色.人肌O);
     		股CD = new ColorD(ref 体配色.薄線, ref 体配色.人肌R);
@@ -3546,7 +3546,7 @@ namespace SlaveMatrix
     		ハイライト下右CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
     	}
 
-    	private void 配色T1(体配色 体配色)
+    	private void 配色T1(BodyColorSet 体配色)
     	{
     		WaistCD = new ColorD(ref Col.Black, ref 体配色.人肌O);
     		股CD = new ColorD(ref 体配色.薄線, ref 体配色.人肌R);

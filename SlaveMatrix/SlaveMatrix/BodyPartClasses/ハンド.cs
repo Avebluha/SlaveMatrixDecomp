@@ -3769,7 +3769,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -5204,7 +5204,7 @@ namespace SlaveMatrix
     		X14Y2_呪印_鎖1CP = new ColorP(X14Y2_呪印_鎖1, 呪印_鎖1CD, DisUnit, abj: true);
     		X14Y2_呪印_鎖2CP = new ColorP(X14Y2_呪印_鎖2, 呪印_鎖2CD, DisUnit, abj: true);
     		X14Y2_呪印_鎖3CP = new ColorP(X14Y2_呪印_鎖3, 呪印_鎖3CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     		尺度B *= 1.1;
     		double y = 0.0015;
     		X6Y0_手.BasePointBase = X6Y0_手.ToLocal(X6Y0_人指.ToGlobal(X6Y0_人指.JP[0].Joint.AddY(y)));

@@ -114,7 +114,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -142,7 +142,7 @@ namespace SlaveMatrix
 
     	public JointS 手_接続点 => new JointS(Body, X0Y0_LowerArm, 2);
 
-    	public LowerArm_蹄(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, LowerArm_蹄D e)
+    	public LowerArm_蹄(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, LowerArm_蹄D e)
     	{
     		LowerArm_蹄 LowerArm_蹄2 = this;
     		ThisType = GetType();
@@ -207,7 +207,7 @@ namespace SlaveMatrix
     		X0Y0_LowerArmCP = new ColorP(X0Y0_LowerArm, LowerArmCD, DisUnit, abj: true);
     		X0Y0_筋肉_筋肉下CP = new ColorP(X0Y0_筋肉_筋肉下, 筋肉_筋肉下CD, DisUnit, abj: false);
     		X0Y0_筋肉_筋肉上CP = new ColorP(X0Y0_筋肉_筋肉上, 筋肉_筋肉上CD, DisUnit, abj: false);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     	}
 
     	public override void SetAngle0()
@@ -224,12 +224,12 @@ namespace SlaveMatrix
     		X0Y0_筋肉_筋肉上CP.Update();
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		LowerArmCD = new ColorD(ref Col.Black, ref 体配色.毛0O);
     		筋肉_筋肉下CD = new ColorD(ref 体配色.薄線, ref 体配色.毛0O);

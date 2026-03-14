@@ -3283,7 +3283,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -3443,7 +3443,7 @@ namespace SlaveMatrix
 
     	public JointS LowerArm_接続点 => new JointS(Body, X0Y0_UpperArm, 1);
 
-    	public UpperArm_人(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, UpperArm_人D e)
+    	public UpperArm_人(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, UpperArm_人D e)
     	{
     		UpperArm_人 UpperArm_人2 = this;
     		ThisType = GetType();
@@ -3926,7 +3926,7 @@ namespace SlaveMatrix
     		X0Y0_鎧_鎧_鎧2CP = new ColorP(X0Y0_鎧_鎧_鎧2, 鎧_鎧_鎧2CD, DisUnit, abj: true);
     		傷X濃度 = e.傷X濃度;
     		ハイライト濃度 = e.ハイライト濃度;
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     	}
 
     	public override void 描画0(RenderArea Are)
@@ -4185,7 +4185,7 @@ namespace SlaveMatrix
     		X0Y0_鎧_鎧_鎧2CP.Update();
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		switch (配色指定)
     		{
@@ -4204,7 +4204,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		筋肉上CD = new ColorD(ref 体配色.薄線, ref 体配色.人肌O);
     		UpperArmCD = new ColorD(ref Col.Black, ref 体配色.人肌O);
@@ -4286,7 +4286,7 @@ namespace SlaveMatrix
     		鎧_鎧_鎧2CD = new ColorD();
     	}
 
-    	private void 配色T0(体配色 体配色)
+    	private void 配色T0(BodyColorSet 体配色)
     	{
     		筋肉上CD = new ColorD(ref 体配色.薄線, ref 体配色.人肌O);
     		UpperArmCD = new ColorD(ref Col.Black, ref 体配色.人肌O);
@@ -4368,7 +4368,7 @@ namespace SlaveMatrix
     		鎧_鎧_鎧2CD = new ColorD();
     	}
 
-    	private void 配色T1(体配色 体配色)
+    	private void 配色T1(BodyColorSet 体配色)
     	{
     		筋肉上CD = new ColorD(ref 体配色.薄線, ref 体配色.人肌O);
     		UpperArmCD = new ColorD(ref Col.Black, ref 体配色.人肌O);

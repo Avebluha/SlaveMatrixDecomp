@@ -315,7 +315,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -456,7 +456,7 @@ namespace SlaveMatrix
     		X4Y4_舌CP = new ColorP(X4Y4_舌, 舌CD, DisUnit, abj: true);
     		X4Y4_上唇CP = new ColorP(X4Y4_上唇, 上唇CD, DisUnit, abj: true);
     		X4Y4_下唇CP = new ColorP(X4Y4_下唇, 下唇CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     		X4Y0_上唇.BasePointBase = X4Y0_上唇.ToLocal(X4Y0_舌.ToGlobal(X4Y0_舌.JP[0].Joint));
     		X4Y1_上唇.BasePointBase = X4Y1_上唇.ToLocal(X4Y1_舌.ToGlobal(X4Y1_舌.JP[0].Joint));
     		X4Y2_上唇.BasePointBase = X4Y2_上唇.ToLocal(X4Y2_舌.ToGlobal(X4Y2_舌.JP[0].Joint));

@@ -144,8 +144,8 @@ namespace SlaveMatrix
 
 
         //misc character stuff
-        private static Cha TrainingTarget;
-    	private static Cha Viola; 
+        private static Character TrainingTarget;
+    	private static Character Viola; 
         public static ViolaText ViolaText;
         public static SlaveText SlaveText;
 
@@ -411,7 +411,7 @@ namespace SlaveMatrix
     			},
     			{
     				"メインフォーム",
-    				メインフォーム(Med)
+    				MainForm(Med)
     			},
     			{
     				"対象",
@@ -576,19 +576,19 @@ namespace SlaveMatrix
     	{
     		if (Sta.GameData.RepaymentStage == 0)
     		{
-    			DemandMax = 8.0;
+    			DemandMax = 88.0;
     		}
     		else if (Sta.GameData.RepaymentStage == 1)
     		{
-    			DemandMax = 9.0;
+    			DemandMax = 99.0;
     		}
     		else if (Sta.GameData.RepaymentStage == 2)
     		{
-    			DemandMax = 10.0;
+    			DemandMax = 110.0;
     		}
     		else
     		{
-    			DemandMax = 11.0;
+    			DemandMax = 111.0;
     		}
     	}
 
@@ -658,10 +658,10 @@ namespace SlaveMatrix
     		ip.SubInfoIm = GameText.ロード中です + "\r\n" + GameText.しばらくお待ちください;
 		
     		Sta.GameData = Path.LoadExMod<GameState>();
-    		Cha d = Viola;
-    		Viola = new Cha(Med, DrawBuffer, Sta.GameData.ヴィオラ.ChaD);
+    		Character d = Viola;
+    		Viola = new Character(Med, DrawBuffer, Sta.GameData.ヴィオラ.ChaD);
     		Viola.Set衣装(Sta.GameData.ヴィオラ.着衣);
-    		ViolaTextBubble.接続(Viola.Bod.頭.口_接続点);
+    		ViolaTextBubble.接続(Viola.Body.頭.口_接続点);
     		
     		Initialize();
     		if (d != null)
@@ -756,10 +756,10 @@ namespace SlaveMatrix
                 Sta.GameData = Ser.UnJson<GameState>(Path);
             }
             Sta.DontScar = false;
-            Cha d = Viola;
-            Viola = new Cha(med, DrawBuffer, Sta.GameData.ヴィオラ.ChaD);
+            Character d = Viola;
+            Viola = new Character(med, DrawBuffer, Sta.GameData.ヴィオラ.ChaD);
             Viola.Set衣装(Sta.GameData.ヴィオラ.着衣);
-            ViolaTextBubble.接続(Viola.Bod.頭.口_接続点);
+            ViolaTextBubble.接続(Viola.Body.頭.口_接続点);
             
             Initialize();
             if (d != null)
@@ -793,12 +793,6 @@ namespace SlaveMatrix
             //Sounds.完了.Play();
         }
 
-
-
-
-
-
-
         private static void Initialize()
     	{
             Sta.GameData.Refresh = false;
@@ -815,8 +809,6 @@ namespace SlaveMatrix
         {
             npl.Text = GameText.収容番号 + u.Number + "\r\n" + (Sta.AlwaysUseName ? u.Name : (u.Trained ? u.Name : u.Race));
         }
-
-
 
         public static void EndDay()
     	{
@@ -1019,20 +1011,20 @@ namespace SlaveMatrix
     	{
     		if (Sta.GameData.TrainingTarget.妊娠状態変数 > -1)
     		{
-    			TrainingTarget.Bod.ボテ腹i = Sta.GameData.TrainingTarget.妊娠状態変数;
-    			TrainingTarget.Bod.ボテ腹_表示 = true;
-    			if (!TrainingTarget.Bod.Is獣)
+    			TrainingTarget.Body.ボテ腹i = Sta.GameData.TrainingTarget.妊娠状態変数;
+    			TrainingTarget.Body.ボテ腹_表示 = true;
+    			if (!TrainingTarget.Body.Is獣)
     			{
-    				TrainingTarget.Bod.ボテ腹_人.ハイライト表示 = Sta.GameData.TrainingTarget.妊娠状態変数 > 2;
+    				TrainingTarget.Body.ボテ腹_人.ハイライト表示 = Sta.GameData.TrainingTarget.妊娠状態変数 > 2;
     			}
     		}
     		else
     		{
-    			TrainingTarget.Bod.ボテ腹i = 0;
-    			TrainingTarget.Bod.ボテ腹_表示 = false;
+    			TrainingTarget.Body.ボテ腹i = 0;
+    			TrainingTarget.Body.ボテ腹_表示 = false;
     		}
-    		TrainingTarget.Bod.断面_表示 = TrainingTarget.Bod.断面_表示;
-    		TrainingTarget.Bod.変動ステート更新();
+    		//TrainingTarget.Bod.断面_表示 = TrainingTarget.Bod.断面_表示;
+    		TrainingTarget.Body.変動ステート更新();
     	}
 
     	public static void ResetTrainingTarget()
@@ -1049,33 +1041,33 @@ namespace SlaveMatrix
     		TrainingTarget.口修正();
     		if (Sta.GameData.TrainingTarget.Trained)
     		{
-    			TrainingTarget.Bod.拘束具_表示 = false;
-    			TrainingTarget.Bod.首輪_表示 = true;
+    			TrainingTarget.Body.拘束具_表示 = false;
+    			TrainingTarget.Body.首輪_表示 = true;
     			TrainingTarget.Set基本姿勢();
     		}
     		else
     		{
-    			TrainingTarget.Bod.拘束具_表示 = true;
+    			TrainingTarget.Body.拘束具_表示 = true;
     			TrainingTarget.Set拘束姿勢();
     		}
     		if (Sta.GameData.TrainingTarget.ChaD.胸施術)
     		{
-    			TrainingTarget.Bod.胸施術();
+    			TrainingTarget.Body.胸施術();
     		}
     		if (Sta.GameData.TrainingTarget.ChaD.股施術)
     		{
-    			TrainingTarget.Bod.股施術();
+    			TrainingTarget.Body.股施術();
     		}
     		if (Sta.GameData.TrainingTarget.ChaD.タトゥ)
     		{
-    			TrainingTarget.Bod.タトゥ();
+    			TrainingTarget.Body.タトゥ();
     		}
     		if (Sta.GameData.TrainingTarget.着衣 != null)
     		{
     			TrainingTarget.Set衣装(Sta.GameData.TrainingTarget.着衣);
     		}
-    		TrainingTarget.Bod.Join();
-    		TrainingTarget.Bod.Update();
+    		TrainingTarget.Body.Join();
+    		TrainingTarget.Body.Update();
     	}
 
     	public static void SetTrainingTarget(ModeEventDispatcher Med, Unit u)
@@ -1085,22 +1077,22 @@ namespace SlaveMatrix
     		{
     			TrainingTarget.Dispose();
     		}
-    		TrainingTarget = new Cha(Med, DrawBuffer, Sta.GameData.TrainingTarget.ChaD);
-    		SlaveTextBubble.接続(TrainingTarget.Bod.頭.口_接続点);
+    		TrainingTarget = new Character(Med, DrawBuffer, Sta.GameData.TrainingTarget.ChaD);
+    		SlaveTextBubble.接続(TrainingTarget.Body.頭.口_接続点);
     		Setnpl(u);
     		double d = ((u.Trained && Sta.MoveInsectMask) ? 1.0 : 0.0);
-    		if (TrainingTarget.Bod.Is顔面)
+    		if (TrainingTarget.Body.Is顔面)
     		{
-    			TrainingTarget.Bod.頭.顔面_接続.SetEle(delegate(顔面 顔面)
+    			TrainingTarget.Body.頭.顔面_接続.SetEle(delegate(顔面 顔面)
     			{
     				顔面.展開0 = d;
     				顔面.展開1 = d;
     			});
-    			TrainingTarget.Bod.頭.大顎基_接続.SetEle(delegate(大顎基 大顎)
+    			TrainingTarget.Body.頭.大顎基_接続.SetEle(delegate(大顎基 大顎)
     			{
     				大顎.展開 = d;
     			});
-    			TrainingTarget.Bod.頭.額_接続.SetEle(delegate(角1_虫 虫角)
+    			TrainingTarget.Body.頭.額_接続.SetEle(delegate(角1_虫 虫角)
     			{
     				虫角.展開 = d;
     			});
@@ -1112,20 +1104,20 @@ namespace SlaveMatrix
     	{
     		Player.SetState();
     		TrainingTarget.Crying = false;
-    		if (TrainingTarget.Bod.鼻水左 != null)
+    		if (TrainingTarget.Body.LeftNoseDrip != null)
     		{
-    			TrainingTarget.Bod.鼻水左.表示 = false;
-    			TrainingTarget.Bod.鼻水右.表示 = false;
+    			TrainingTarget.Body.LeftNoseDrip.表示 = false;
+    			TrainingTarget.Body.RightNoseDrip.表示 = false;
     		}
-    		if (TrainingTarget.Bod.涎左 != null)
+    		if (TrainingTarget.Body.LeftDrool != null)
     		{
-    			TrainingTarget.Bod.涎左.表示 = false;
-    			TrainingTarget.Bod.涎右.表示 = false;
+    			TrainingTarget.Body.LeftDrool.表示 = false;
+    			TrainingTarget.Body.RightDrool.表示 = false;
     		}
-    		TrainingTarget.Bod.噴乳左.表示 = false;
-    		TrainingTarget.Bod.噴乳右.表示 = false;
-    		TrainingTarget.噴乳染み = 0.0;
-    		TrainingTarget.Bod.下着T染み = 0.0;
+    		TrainingTarget.Body.LeftMilkSpray.表示 = false;
+    		TrainingTarget.Body.RightMilkSpary.表示 = false;
+    		TrainingTarget.MilkStain = 0.0;
+    		TrainingTarget.Body.下着T染み = 0.0;
     		TrainingTarget.SetInitialExpression();
     		TrainingTarget.Emotion();
     		TrainingTarget.UpdateExpression();
@@ -1142,7 +1134,6 @@ namespace SlaveMatrix
     		Player.SensBox();
     	}
 
-
     	public static void Player説明(ref Color hc, Action Reset)
     	{
     		if (dbs["プレイヤー"].Pars.Values.First().ToPar().HitColor == hc)
@@ -1155,9 +1146,6 @@ namespace SlaveMatrix
     		}
     	}
 
-
-
-
         //modules
     	public static Module Start(ModeEventDispatcher Med)
     	{
@@ -1169,7 +1157,6 @@ namespace SlaveMatrix
                 }
     		};
     	}
-
     	public static Module Credit(ModeEventDispatcher Med) {
     		MotV mv = new MotV(0.0, 1.0){BaseSpeed = 0.5};
 
@@ -1404,7 +1391,7 @@ namespace SlaveMatrix
     		};
     	}
 
-    	public static Module メインフォーム(ModeEventDispatcher Med)
+    	public static Module MainForm(ModeEventDispatcher Med)
     	{
     		Buts bs = new Buts();
 
@@ -1560,7 +1547,7 @@ namespace SlaveMatrix
                         {
                             if (TrainingTarget != null)
                             {
-                                TrainingTarget.CP = cp;
+                                TrainingTarget.CursorPosition = cp;
                             }
                             dbs.Move(ref hc);
                             bs.Move(ref hc);
@@ -1653,36 +1640,36 @@ namespace SlaveMatrix
     			{
     				TrainingTarget.EyeTracking.End();
     			}
-    			if (TrainingTarget.Bod.Is双眉)
+    			if (TrainingTarget.Body.Is双眉)
     			{
-    				TrainingTarget.Bod.眉左.眉間_表示 = false;
-    				TrainingTarget.Bod.眉右.眉間_表示 = false;
+    				TrainingTarget.Body.眉左.眉間_表示 = false;
+    				TrainingTarget.Body.眉右.眉間_表示 = false;
     			}
-    			if (TrainingTarget.Bod.Is双眼)
+    			if (TrainingTarget.Body.IsDualEyes)
     			{
     				TrainingTarget.瞼_半1左();
     				TrainingTarget.瞼_半1右();
     				TrainingTarget.目_見つめ左();
     				TrainingTarget.目_見つめ右();
     			}
-    			if (TrainingTarget.Bod.Is頬眼)
+    			if (TrainingTarget.Body.IsCheekEyes)
     			{
     				TrainingTarget.頬瞼_半1左();
     				TrainingTarget.頬瞼_半1右();
     				TrainingTarget.頬目_見つめ左();
     				TrainingTarget.頬目_見つめ右();
     			}
-    			if (TrainingTarget.Bod.Is単眼)
+    			if (TrainingTarget.Body.IsSingleEye)
     			{
     				TrainingTarget.単瞼_半1();
     				TrainingTarget.単目_見つめ();
     			}
-    			if (TrainingTarget.Bod.Is額眼)
+    			if (TrainingTarget.Body.IsForeheadEye)
     			{
     				TrainingTarget.額瞼_半1();
     				TrainingTarget.額目_見つめ();
     			}
-    			if (!TrainingTarget.Bod.玉口枷_表示)
+    			if (!TrainingTarget.Body.玉口枷_表示)
     			{
     				TrainingTarget.口_閉笑();
     			}
@@ -1711,7 +1698,7 @@ namespace SlaveMatrix
                     {
                         調教完了表情();
                         SlaveText.Set状態();
-                        if (TrainingTarget.Bod.Is顔面)
+                        if (TrainingTarget.Body.Is顔面)
                         {
                             Action<Tex> o_done = SlaveTextBubble.Tex.Done;
                             SlaveTextBubble.Tex.Done = delegate (Tex tex)
@@ -1761,18 +1748,18 @@ namespace SlaveMatrix
                     Player.表示ステート更新();
                     Player.ModBox();
                     Player.SensBox();
-                    if (TrainingTarget.Bod.Is獣)
+                    if (TrainingTarget.Body.Is獣)
                     {
-                        TrainingTarget.Bod.Waist.位置B = Med.Base.GetPosition(new Vector2D(0.5, 0.5)).AddY(-0.03);
+                        TrainingTarget.Body.Waist.位置B = Med.Base.GetPosition(new Vector2D(0.5, 0.5)).AddY(-0.03);
                     }
-                    else if (TrainingTarget.Bod.Is半身)
+                    else if (TrainingTarget.Body.Is半身)
                     {
-                        TrainingTarget.Bod.Waist.位置B = Med.Base.GetPosition(new Vector2D(0.5, 0.5)).AddY(-0.02);
+                        TrainingTarget.Body.Waist.位置B = Med.Base.GetPosition(new Vector2D(0.5, 0.5)).AddY(-0.02);
                     }
-                    TrainingTarget.Bod.Join();
-                    TrainingTarget.Bod.Update();
+                    TrainingTarget.Body.Join();
+                    TrainingTarget.Body.Update();
                     SlaveTextBubble.接続();
-                    TrainingTarget.Bod.汗染み濃度 = 1.0;
+                    TrainingTarget.Body.汗染み濃度 = 1.0;
                     調教済みチェック = true;
                     TrainingTargetTrained = Sta.GameData.TrainingTarget.Trained;
                     if (調教完了 = Sta.GameData.TrainingTarget.IsTrained())
@@ -1793,7 +1780,7 @@ namespace SlaveMatrix
                 },
                 Move = delegate (MouseButtons mb, Vector2D cp, Color hc)
                 {
-                    TrainingTarget.CP = cp;
+                    TrainingTarget.CursorPosition = cp;
                     cd = TrainingTarget.GetContact(ref hc);
                     Player.UI.Move(ref mb, ref cp, ref op, ref hc, ref cd);
                     ip.Move(ref hc);
@@ -1847,16 +1834,16 @@ namespace SlaveMatrix
                     ip.SubShow = true;
                     ip.Sub2Show = false;
                     ip.Text = GameText.点6;
-                    if (!TrainingTarget.Bod.Setピアス.ピアス_表示)
+                    if (!TrainingTarget.Body.Setピアス.ピアス_表示)
                     {
-                        TrainingTarget.Bod.脱衣();
+                        TrainingTarget.Body.脱衣();
                     }
                     Player.UI.SetTarget(Sta.GameData.TrainingTarget, TrainingTarget);
                     Player.SetStateTraining();
                     Player.表示ステート更新();
                     Player.ModBox();
                     Player.SensBox();
-                    TrainingTarget.Bod.首輪_表示 = true;
+                    TrainingTarget.Body.首輪_表示 = true;
                     si.Set(bre: false);
                     Player.UI.Reset();
                     Player.UI.擬音キュー.Clear();
@@ -1935,8 +1922,8 @@ namespace SlaveMatrix
                     }
                     Sta.GameData.TrainingTarget.発情フラグ = Player.UI.発情bu;
                     Player.調教終了時();
-                    TrainingTarget.絶頂.End();
-                    TrainingTarget.体揺れ.End();
+                    TrainingTarget.Climax.End();
+                    TrainingTarget.BodySway.End();
 
 
                     TrainingTarget.放尿強制終了();
@@ -1945,33 +1932,33 @@ namespace SlaveMatrix
 
                     Player.絶頂終了処理_();
                     Player.射精終了処理_();
-                    TrainingTarget.Bod.膣内精液.精液濃度 = 0.0;
-                    TrainingTarget.Bod.断面.精液濃度 = 0.0;
-                    TrainingTarget.Bod.スタンプClear();
-                    TrainingTarget.Bod.Waist.位置B = Med.Base.GetPosition(new Vector2D(0.5, 0.5));
-                    TrainingTarget.Bod.汗染み濃度 = 0.0;
-                    TrainingTarget.Bod.飛沫濃度 = 0.0;
-                    TrainingTarget.Bod.潮染み濃度 = 0.0;
-                    TrainingTarget.Bod.尿染み濃度 = 0.0;
-                    if (!TrainingTarget.Bod.Is粘)
+                    TrainingTarget.Body.VaginalCumDrip.精液濃度 = 0.0;
+                    TrainingTarget.Body.断面.精液濃度 = 0.0;
+                    TrainingTarget.Body.スタンプClear();
+                    TrainingTarget.Body.Waist.位置B = Med.Base.GetPosition(new Vector2D(0.5, 0.5));
+                    TrainingTarget.Body.汗染み濃度 = 0.0;
+                    TrainingTarget.Body.SplashIntencity = 0.0;
+                    TrainingTarget.Body.SquirtStainIntensity = 0.0;
+                    TrainingTarget.Body.UrineStainIntensity = 0.0;
+                    if (!TrainingTarget.Body.Is粘)
                     {
-                        TrainingTarget.Bod.断面_表示 = false;
+                        TrainingTarget.Body.断面_表示 = false;
                     }
                     TrainingTarget.EyeTracking.End();
-                    TrainingTarget.口腔精液垂れ.End();
-                    TrainingTarget.性器精液垂れ.End();
-                    TrainingTarget.肛門精液垂れ.End();
-                    TrainingTarget.出糸精液垂れ.End();
-                    TrainingTarget.Bod.SetWaist();
+                    TrainingTarget.MouthCumDrip.End();
+                    TrainingTarget.GenitalCumDrip.End();
+                    TrainingTarget.AnalCumDrip.End();
+                    TrainingTarget.ThreadCumDrip.End();
+                    TrainingTarget.Body.SetWaist();
                     if (Sta.GameData.TrainingTarget.Trained)
                     {
-                        TrainingTarget.Bod.拘束具_表示 = false;
-                        TrainingTarget.Bod.首輪_表示 = true;
+                        TrainingTarget.Body.拘束具_表示 = false;
+                        TrainingTarget.Body.首輪_表示 = true;
                         TrainingTarget.Set基本姿勢();
                     }
                     else
                     {
-                        TrainingTarget.Bod.拘束具_表示 = true;
+                        TrainingTarget.Body.拘束具_表示 = true;
                         TrainingTarget.Set拘束姿勢();
                     }
                     TrainingTarget.Emotion();
@@ -1983,9 +1970,9 @@ namespace SlaveMatrix
                     Player.表示ステート更新();
                     Player.ModBox();
                     Player.SensBox();
-                    TrainingTarget.Bod.カーソル = null;
-                    TrainingTarget.Bod.Join();
-                    TrainingTarget.Bod.Update();
+                    TrainingTarget.Body.カーソル = null;
+                    TrainingTarget.Body.Join();
+                    TrainingTarget.Body.Update();
                     SlaveTextBubble.接続();
                     SlaveTextBubble.消失.End();
                     Result2 = false;
@@ -2244,11 +2231,11 @@ namespace SlaveMatrix
                                 }
                                 if (TrainingTarget != null)
                                 {
-                                    if (bs["股施術"].Pars.Values.First().ToPar().HitColor == hc && !(ip.SubInfoIm == GameText.股の + (TrainingTarget.Bod.Is蛇 ? GameText.鱗 : GameText.甲殻) + GameText.を切除しました) && !(ip.SubInfoIm == GameText.所持金が足りません))
+                                    if (bs["股施術"].Pars.Values.First().ToPar().HitColor == hc && !(ip.SubInfoIm == GameText.股の + (TrainingTarget.Body.Is蛇 ? GameText.鱗 : GameText.甲殻) + GameText.を切除しました) && !(ip.SubInfoIm == GameText.所持金が足りません))
                                     {
-                                        ip.SubInfoIm = GameText.股の + (TrainingTarget.Bod.Is蛇 ? GameText.鱗 : GameText.甲殻) + GameText.を切除します + "(-" + 股施術価格.ToString("#,0") + ")";
+                                        ip.SubInfoIm = GameText.股の + (TrainingTarget.Body.Is蛇 ? GameText.鱗 : GameText.甲殻) + GameText.を切除します + "(-" + 股施術価格.ToString("#,0") + ")";
                                     }
-                                    else if (ip.SubInfoIm == GameText.股の + (TrainingTarget.Bod.Is蛇 ? GameText.鱗 : GameText.甲殻) + GameText.を切除します + "(-" + 股施術価格.ToString("#,0") + ")")
+                                    else if (ip.SubInfoIm == GameText.股の + (TrainingTarget.Body.Is蛇 ? GameText.鱗 : GameText.甲殻) + GameText.を切除します + "(-" + 股施術価格.ToString("#,0") + ")")
                                     {
                                         si.Set(bre: false);
                                     }
@@ -2498,7 +2485,7 @@ namespace SlaveMatrix
     				b.Pars.Values.First().ToParT().PenColor = Color.Red;
     				if (Sta.GameData.TrainingTarget != null)
     				{
-    					if (TrainingTarget == null || TrainingTarget.ChaD != Sta.GameData.TrainingTarget.ChaD)
+    					if (TrainingTarget == null || TrainingTarget.CharacterData != Sta.GameData.TrainingTarget.ChaD)
     					{
     						SetTrainingTarget(Med, Sta.GameData.TrainingTarget);
     					}
@@ -2521,20 +2508,20 @@ namespace SlaveMatrix
     					{
     						TrainingTarget.Dispose();
     					}
-    					TrainingTarget = new Cha(Med, DrawBuffer, Sta.GameData.TrainingTarget.Mother.ChaD);
-    					if (TrainingTarget.Bod.Is双眼)
+    					TrainingTarget = new Character(Med, DrawBuffer, Sta.GameData.TrainingTarget.Mother.ChaD);
+    					if (TrainingTarget.Body.IsDualEyes)
     					{
     						TrainingTarget.両目_見つめ();
     					}
-    					if (TrainingTarget.Bod.Is頬眼)
+    					if (TrainingTarget.Body.IsCheekEyes)
     					{
     						TrainingTarget.両頬目_見つめ();
     					}
-    					if (TrainingTarget.Bod.Is単眼)
+    					if (TrainingTarget.Body.IsSingleEye)
     					{
     						TrainingTarget.単目_見つめ();
     					}
-    					if (TrainingTarget.Bod.Is額眼)
+    					if (TrainingTarget.Body.IsForeheadEye)
     					{
     						TrainingTarget.額目_見つめ();
     					}
@@ -2565,20 +2552,20 @@ namespace SlaveMatrix
     					{
     						TrainingTarget.Dispose();
     					}
-    					TrainingTarget = new Cha(Med, DrawBuffer, Sta.GameData.TrainingTarget.Father.ChaD);
-    					if (TrainingTarget.Bod.Is双眼)
+    					TrainingTarget = new Character(Med, DrawBuffer, Sta.GameData.TrainingTarget.Father.ChaD);
+    					if (TrainingTarget.Body.IsDualEyes)
     					{
     						TrainingTarget.両目_見つめ();
     					}
-    					if (TrainingTarget.Bod.Is頬眼)
+    					if (TrainingTarget.Body.IsCheekEyes)
     					{
     						TrainingTarget.両頬目_見つめ();
     					}
-    					if (TrainingTarget.Bod.Is単眼)
+    					if (TrainingTarget.Body.IsSingleEye)
     					{
     						TrainingTarget.単目_見つめ();
     					}
-    					if (TrainingTarget.Bod.Is額眼)
+    					if (TrainingTarget.Body.IsForeheadEye)
     					{
     						TrainingTarget.額目_見つめ();
     					}
@@ -3072,7 +3059,7 @@ namespace SlaveMatrix
                         ////Sounds.精算.Play();
     					ip.UpdateSub2();
     					Sta.GameData.TrainingTarget.ChaD.胸施術 = true;
-    					TrainingTarget.Bod.胸施術();
+    					TrainingTarget.Body.胸施術();
     					if (Sta.GameData.TrainingTarget.着衣 != null)
     					{
     						TrainingTarget.Set衣装(Sta.GameData.TrainingTarget.着衣);
@@ -3085,13 +3072,13 @@ namespace SlaveMatrix
     					TrainingTarget.UpdateExpression();
     					if (Sta.GameData.TrainingTarget.Trained)
     					{
-    						TrainingTarget.Bod.拘束具_表示 = false;
-    						TrainingTarget.Bod.首輪_表示 = true;
+    						TrainingTarget.Body.拘束具_表示 = false;
+    						TrainingTarget.Body.首輪_表示 = true;
     						TrainingTarget.Set基本姿勢();
     					}
     					else
     					{
-    						TrainingTarget.Bod.拘束具_表示 = true;
+    						TrainingTarget.Body.拘束具_表示 = true;
     						TrainingTarget.Set拘束姿勢();
     					}
     				}
@@ -3113,26 +3100,26 @@ namespace SlaveMatrix
     					//Sounds.精算.Play();
     					ip.UpdateSub2();
     					Sta.GameData.TrainingTarget.ChaD.股施術 = true;
-    					TrainingTarget.Bod.股施術();
+    					TrainingTarget.Body.股施術();
     					if (Sta.GameData.TrainingTarget.着衣 != null)
     					{
     						TrainingTarget.Set衣装(Sta.GameData.TrainingTarget.着衣);
     					}
     					Sta.GameData.TrainingTarget.体力消費();
     					bs["股施術"].Dra = false;
-    					ip.SubInfoIm = GameText.股の + (TrainingTarget.Bod.Is蠍 ? GameText.甲殻 : GameText.鱗) + GameText.を切除しました;
+    					ip.SubInfoIm = GameText.股の + (TrainingTarget.Body.Is蠍 ? GameText.甲殻 : GameText.鱗) + GameText.を切除しました;
     					TrainingTarget.SetInitialExpression();
     					TrainingTarget.Emotion();
     					TrainingTarget.UpdateExpression();
     					if (Sta.GameData.TrainingTarget.Trained)
     					{
-    						TrainingTarget.Bod.拘束具_表示 = false;
-    						TrainingTarget.Bod.首輪_表示 = true;
+    						TrainingTarget.Body.拘束具_表示 = false;
+    						TrainingTarget.Body.首輪_表示 = true;
     						TrainingTarget.Set基本姿勢();
     					}
     					else
     					{
-    						TrainingTarget.Bod.拘束具_表示 = true;
+    						TrainingTarget.Body.拘束具_表示 = true;
     						TrainingTarget.Set拘束姿勢();
     					}
     				}
@@ -3153,7 +3140,7 @@ namespace SlaveMatrix
     					//Sounds.精算.Play();
     					ip.UpdateSub2();
     					Sta.GameData.TrainingTarget.ChaD.タトゥ = true;
-    					TrainingTarget.Bod.タトゥ();
+    					TrainingTarget.Body.タトゥ();
     					Sta.GameData.TrainingTarget.発情フラグ = true;
     					Sta.GameData.TrainingTarget.体力消費();
     					bs["淫紋"].Dra = false;
@@ -3163,18 +3150,18 @@ namespace SlaveMatrix
     					TrainingTarget.UpdateExpression();
     					if (Sta.GameData.TrainingTarget.Trained)
     					{
-    						TrainingTarget.Bod.拘束具_表示 = false;
-    						TrainingTarget.Bod.首輪_表示 = true;
+    						TrainingTarget.Body.拘束具_表示 = false;
+    						TrainingTarget.Body.首輪_表示 = true;
     						TrainingTarget.Set基本姿勢();
     					}
     					else
     					{
-    						TrainingTarget.Bod.拘束具_表示 = true;
+    						TrainingTarget.Body.拘束具_表示 = true;
     						TrainingTarget.Set拘束姿勢();
     					}
-    					if (TrainingTarget.Bod.Is獣)
+    					if (TrainingTarget.Body.Is獣)
     					{
-    						TrainingTarget.Bod.EI半中1.Updatef = true;
+    						TrainingTarget.Body.EI半中1.Updatef = true;
     					}
     				}
     			}));
@@ -3203,13 +3190,13 @@ namespace SlaveMatrix
     					TrainingTarget.UpdateExpression();
     					if (Sta.GameData.TrainingTarget.Trained)
     					{
-    						TrainingTarget.Bod.拘束具_表示 = false;
-    						TrainingTarget.Bod.首輪_表示 = true;
+    						TrainingTarget.Body.拘束具_表示 = false;
+    						TrainingTarget.Body.首輪_表示 = true;
     						TrainingTarget.Set基本姿勢();
     					}
     					else
     					{
-    						TrainingTarget.Bod.拘束具_表示 = true;
+    						TrainingTarget.Body.拘束具_表示 = true;
     						TrainingTarget.Set拘束姿勢();
     					}
     				}
@@ -3318,7 +3305,7 @@ namespace SlaveMatrix
 
     	public static Module Blessing(ModeEventDispatcher Med)
     	{
-    		Cha 祝福 = null;
+    		Character 祝福 = null;
     		bool d = false;
     		Lab l = new Lab(DrawBuffer, "ラベル1", new Vector2D(ip.MaiB.Position.X, 0.026), 0.1, 1.0, new Font("MS Gothic", 1f), 0.085, "No blessing", Col.White, Col.Black, ip.MaiB.BrushColor, Col.Black);
     		Buts bs = new Buts();
@@ -3367,20 +3354,20 @@ namespace SlaveMatrix
     				{
     					祝福.Dispose();
     				}
-    				祝福 = new Cha(Med, DrawBuffer, Sta.GameData.祝福.ChaD);
-    				if (祝福.Bod.Is双眼)
+    				祝福 = new Character(Med, DrawBuffer, Sta.GameData.祝福.ChaD);
+    				if (祝福.Body.IsDualEyes)
     				{
     					祝福.両目_見つめ();
     				}
-    				if (祝福.Bod.Is頬眼)
+    				if (祝福.Body.IsCheekEyes)
     				{
     					祝福.両頬目_見つめ();
     				}
-    				if (祝福.Bod.Is単眼)
+    				if (祝福.Body.IsSingleEye)
     				{
     					祝福.単目_見つめ();
     				}
-    				if (祝福.Bod.Is額眼)
+    				if (祝福.Body.IsForeheadEye)
     				{
     					祝福.額目_見つめ();
     				}
@@ -3407,20 +3394,20 @@ namespace SlaveMatrix
     				{
     					祝福.Dispose();
     				}
-    				祝福 = new Cha(Med, DrawBuffer, Sta.GameData.祝福.Mother.ChaD);
-    				if (祝福.Bod.Is双眼)
+    				祝福 = new Character(Med, DrawBuffer, Sta.GameData.祝福.Mother.ChaD);
+    				if (祝福.Body.IsDualEyes)
     				{
     					祝福.両目_見つめ();
     				}
-    				if (祝福.Bod.Is頬眼)
+    				if (祝福.Body.IsCheekEyes)
     				{
     					祝福.両頬目_見つめ();
     				}
-    				if (祝福.Bod.Is単眼)
+    				if (祝福.Body.IsSingleEye)
     				{
     					祝福.単目_見つめ();
     				}
-    				if (祝福.Bod.Is額眼)
+    				if (祝福.Body.IsForeheadEye)
     				{
     					祝福.額目_見つめ();
     				}
@@ -3447,20 +3434,20 @@ namespace SlaveMatrix
     				{
     					祝福.Dispose();
     				}
-    				祝福 = new Cha(Med, DrawBuffer, Sta.GameData.祝福.Father.ChaD);
-    				if (祝福.Bod.Is双眼)
+    				祝福 = new Character(Med, DrawBuffer, Sta.GameData.祝福.Father.ChaD);
+    				if (祝福.Body.IsDualEyes)
     				{
     					祝福.両目_見つめ();
     				}
-    				if (祝福.Bod.Is頬眼)
+    				if (祝福.Body.IsCheekEyes)
     				{
     					祝福.両頬目_見つめ();
     				}
-    				if (祝福.Bod.Is単眼)
+    				if (祝福.Body.IsSingleEye)
     				{
     					祝福.単目_見つめ();
     				}
-    				if (祝福.Bod.Is額眼)
+    				if (祝福.Body.IsForeheadEye)
     				{
     					祝福.額目_見つめ();
     				}
@@ -4388,7 +4375,7 @@ namespace SlaveMatrix
     				ViolaText.Set();
     				si.Set(bre: false);
     				bs["nr"].Dra = Sta.GameData.借金 != 0;
-    				bs["nr"].Dra = Sta.GameData.借金 != 0;
+    				//bs["nr"].Dra = Sta.GameData.借金 != 0;
     			}
     		};
     		DrawDebt = delegate(RenderArea a, FPS FPS)
@@ -4424,7 +4411,7 @@ namespace SlaveMatrix
     	public static Module SlaveShop(ModeEventDispatcher Med)
     	{
     		Module mod = new Module();
-    		Cha PurchasTarget = null;
+    		Character PurchasTarget = null;
     		bool d = false;
     		Action Reload = null;
     		Unit u = null;
@@ -4843,12 +4830,12 @@ namespace SlaveMatrix
     			if (u != null)
     			{
     				PurchasTarget?.Dispose();
-    				PurchasTarget = new Cha(Med, DrawBuffer, u.ChaD);
+    				PurchasTarget = new Character(Med, DrawBuffer, u.ChaD);
 
     				PurchasTarget.SetInitialExpression();
     				PurchasTarget.Emotion();
     				PurchasTarget.UpdateExpression();
-    				PurchasTarget.Bod.拘束具_表示 = true;
+    				PurchasTarget.Body.拘束具_表示 = true;
     				PurchasTarget.Set拘束姿勢();
     				PurchasTarget.Set衣装(u.着衣);
     				ip.TextIm = u.GetStatus();
@@ -5530,7 +5517,7 @@ namespace SlaveMatrix
     		{
     			if (TrainingTarget != null)
     			{
-    				TrainingTarget.Mots.Drive(FPS);
+    				TrainingTarget.Motions.Drive(FPS);
     			}
     			Med.HitGraphics.Clear(Col.Transparent);
     			if (a.HitGraphics != null)
@@ -6199,9 +6186,9 @@ namespace SlaveMatrix
     			//Sounds.日常BGM.Play();
     			Sta.GameData.ヴィオラ = new Unit();
     			Sta.GameData.ヴィオラ.SetViola(Med, DrawBuffer);
-    			Viola = new Cha(Med, DrawBuffer, Sta.GameData.ヴィオラ.ChaD);
+    			Viola = new Character(Med, DrawBuffer, Sta.GameData.ヴィオラ.ChaD);
     			Viola.Set衣装(Sta.GameData.ヴィオラ.着衣);
-    			ViolaTextBubble.接続(Viola.Bod.頭.口_接続点);
+    			ViolaTextBubble.接続(Viola.Body.頭.口_接続点);
     			i = 0;
     			wi = 0;
     			sfc[i]();
@@ -6533,12 +6520,12 @@ namespace SlaveMatrix
     					//Sounds.操作.Play();
     					ip.Sub.Done = delegate
     					{
-    						Viola.Bod.拘束具_表示 = false;
+    						Viola.Body.拘束具_表示 = false;
     						Viola.両翼獣_全開(0);
     						Viola.両触手_S字(0);
     						Viola.両触手_S字(1);
     						Viola.SetSymmetry();
-    						Viola.Bod.Update();
+    						Viola.Body.Update();
     						Viola.表情_不敵1();
     						//Sounds.弾け.Play();
     						ip.Text = GameText.エクス2;
@@ -6548,12 +6535,12 @@ namespace SlaveMatrix
     						Sta.GameData.利子 *= 2.0;
     					};
     					ViolaTextBubble.Tex.Feed.Dra = false;
-    					Viola.Bod.拘束具_表示 = true;
+    					Viola.Body.拘束具_表示 = true;
     					Viola.両翼獣_閉じ(0);
     					Viola.両触手_S字(0);
     					Viola.両触手_S字(1);
     					Viola.SetSymmetry();
-    					Viola.Bod.Update();
+    					Viola.Body.Update();
     					Viola.表情_素0眉上();
     					//Sounds.変更1.Play();
     					ViolaTextBubble.Text = GameText.っ点3;
@@ -6606,7 +6593,7 @@ namespace SlaveMatrix
     						if (i == 8)
     						{
     							Viola.両翼獣_半開き(0);
-    							Viola.Bod.Update();
+    							Viola.Body.Update();
     						}
     						if (i == 1)
     						{
@@ -7305,10 +7292,6 @@ namespace SlaveMatrix
     		return mod;
     	}
 
-
-
-
-
     	static Mods()
     	{
     		TrainingTarget = null;
@@ -7327,9 +7310,7 @@ namespace SlaveMatrix
     		日利子額 = 0uL;
     	}
 
-
         //buttons added by the other guy
-
     	public static void NewButtons(ModeEventDispatcher med)
     	{
     		if (Sta.SensesButton)
@@ -7412,8 +7393,6 @@ namespace SlaveMatrix
                 }
     		}
     	}
-
-
 
         //room buttons or smthn?
     	public static void MoveRoomDown()

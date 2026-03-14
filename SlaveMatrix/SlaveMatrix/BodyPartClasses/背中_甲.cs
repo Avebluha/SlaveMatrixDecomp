@@ -771,7 +771,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -854,7 +854,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 背中_甲(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 背中_甲D e)
+    	public 背中_甲(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 背中_甲D e)
     	{
     		ThisType = GetType();
     		Dif dif = new Dif();
@@ -1012,7 +1012,7 @@ namespace SlaveMatrix
     		X0Y0_右_側甲_側甲3CP = new ColorP(X0Y0_右_側甲_側甲3, 右_側甲_側甲3CD, DisUnit, abj: true);
     		X0Y0_右_側甲_側甲2CP = new ColorP(X0Y0_右_側甲_側甲2, 右_側甲_側甲2CD, DisUnit, abj: true);
     		X0Y0_右_側甲_側甲1CP = new ColorP(X0Y0_右_側甲_側甲1, 右_側甲_側甲1CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     	}
 
     	public override void 色更新()
@@ -1055,7 +1055,7 @@ namespace SlaveMatrix
     		X0Y0_右_側甲_側甲1CP.Update();
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		switch (配色指定)
     		{
@@ -1074,7 +1074,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		左_甲羅1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
     		左_甲羅2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
@@ -1114,7 +1114,7 @@ namespace SlaveMatrix
     		右_側甲_側甲1CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
     	}
 
-    	private void 配色T0(体配色 体配色)
+    	private void 配色T0(BodyColorSet 体配色)
     	{
     		左_甲羅1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
     		左_甲羅2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
@@ -1154,7 +1154,7 @@ namespace SlaveMatrix
     		右_側甲_側甲1CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
     	}
 
-    	private void 配色T1(体配色 体配色)
+    	private void 配色T1(BodyColorSet 体配色)
     	{
     		左_甲羅1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
     		左_甲羅2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);

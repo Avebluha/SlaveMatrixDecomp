@@ -941,7 +941,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -965,7 +965,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 調教鞭(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 調教鞭D e)
+    	public 調教鞭(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 調教鞭D e)
     	{
     		ThisType = GetType();
     		Body = new Difs(Sta.カーソル["調教鞭"]);
@@ -1261,7 +1261,7 @@ namespace SlaveMatrix
     		X1Y4_紐CP = new ColorP(X1Y4_紐, 紐CD, DisUnit, abj: true);
     		X1Y4_鞭撃エフェクト1CP = new ColorP(X1Y4_鞭撃エフェクト1, 鞭撃エフェクト1CD, DisUnit, abj: true);
     		X1Y4_鞭撃エフェクト2CP = new ColorP(X1Y4_鞭撃エフェクト2, 鞭撃エフェクト2CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     		尺度B = 1.01;
     		Body.JoinPAall();
     	}
@@ -1418,12 +1418,12 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		Color2 色 = new Color2(ref Col.Black, ref Col.Empty);
     		先CD = new ColorD(ref Col.Black, ref 色);

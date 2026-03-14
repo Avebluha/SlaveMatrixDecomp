@@ -2842,7 +2842,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -3169,7 +3169,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 足_人(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 足_人D e)
+    	public 足_人(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 足_人D e)
     	{
     		ThisType = GetType();
     		Body = new Difs(Sta.脚左["足"]);
@@ -3859,7 +3859,7 @@ namespace SlaveMatrix
     		X0Y1_アーマ1_鉄靴1CP = new ColorP(X0Y1_アーマ1_鉄靴1, アーマ1_鉄靴1CD, DisUnit, abj: true);
     		X0Y1_アーマ1_鉄靴2CP = new ColorP(X0Y1_アーマ1_鉄靴2, アーマ1_鉄靴2CD, DisUnit, abj: true);
     		X0Y1_アーマ1_鉄靴3CP = new ColorP(X0Y1_アーマ1_鉄靴3, アーマ1_鉄靴3CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     	}
 
     	public override void 描画0(RenderArea Are)
@@ -4424,7 +4424,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		switch (配色指定)
     		{
@@ -4446,7 +4446,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		ヒール0_ヒールCD = new ColorD();
     		ヒール0_靴底CD = new ColorD();
@@ -4559,7 +4559,7 @@ namespace SlaveMatrix
     		ナース1_ストラップ4_縁2CD = new ColorD();
     	}
 
-    	private void 配色B0(体配色 体配色)
+    	private void 配色B0(BodyColorSet 体配色)
     	{
     		ヒール0_ヒールCD = new ColorD();
     		ヒール0_靴底CD = new ColorD();
@@ -4672,7 +4672,7 @@ namespace SlaveMatrix
     		ナース1_ストラップ4_縁2CD = new ColorD();
     	}
 
-    	private void 配色C0(体配色 体配色)
+    	private void 配色C0(BodyColorSet 体配色)
     	{
     		ヒール0_ヒールCD = new ColorD();
     		ヒール0_靴底CD = new ColorD();
@@ -4785,7 +4785,7 @@ namespace SlaveMatrix
     		ナース1_ストラップ4_縁2CD = new ColorD();
     	}
 
-    	private void 配色L0(体配色 体配色)
+    	private void 配色L0(BodyColorSet 体配色)
     	{
     		ヒール0_ヒールCD = new ColorD();
     		ヒール0_靴底CD = new ColorD();

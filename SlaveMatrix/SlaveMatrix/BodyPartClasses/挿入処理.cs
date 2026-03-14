@@ -53,11 +53,11 @@ namespace SlaveMatrix
 
     	private bool 押し付け;
 
-    	private Mot 振動モーション;
+    	private Motion 振動モーション;
 
-    	private Mot 回転モーション;
+    	private Motion 回転モーション;
 
-    	public Mot 抜け落ち;
+    	public Motion 抜け落ち;
 
     	public double 口排出度 = 1.0;
 
@@ -67,7 +67,7 @@ namespace SlaveMatrix
 
     	public double 糸排出度 = 1.0;
 
-    	public Mot 挿抜モーション;
+    	public Motion 挿抜モーション;
 
     	public bool 挿抜フラグ;
 
@@ -258,7 +258,7 @@ namespace SlaveMatrix
     				if (!Bod.Is獣 && !(対象.Ele is バイブ_デンマ) && !(対象.Ele is ハンド) && !(対象.Ele is マウス) && !(対象.Ele is ロータ))
     				{
     					Bod.断面.膣サイズY = 1.0 + 0.2 * dv.Clamp(0.0, 1.0);
-    					Bod.膣内精液.尺度YC = Bod.断面.膣サイズY;
+    					Bod.VaginalCumDrip.尺度YC = Bod.断面.膣サイズY;
     					Bod.膣基.尺度YC = Bod.断面.膣サイズY;
     				}
     				if (!(対象.Ele is ハンド) || (対象.Ele.Xi != 6 && 対象.Ele.Xi != 7))
@@ -896,7 +896,7 @@ namespace SlaveMatrix
     			if (!Bod.Is獣 && !(対象.Ele is バイブ_デンマ) && !(対象.Ele is ハンド) && !(対象.Ele is マウス) && !(対象.Ele is ロータ))
     			{
     				Bod.断面.膣サイズY = 1.0 + 0.2 * dv.Clamp(0.0, 1.0);
-    				Bod.膣内精液.尺度YC = Bod.断面.膣サイズY;
+    				Bod.VaginalCumDrip.尺度YC = Bod.断面.膣サイズY;
     				Bod.膣基.尺度YC = Bod.断面.膣サイズY;
     			}
     			if (!(対象.Ele is ハンド) || (対象.Ele.Xi != 6 && 対象.Ele.Xi != 7))
@@ -930,7 +930,7 @@ namespace SlaveMatrix
     	{
     		if (対象.Ele is ペニス && Insert > oi && Insert > 0.8)
     		{
-    			Cha.体揺れ.Start();
+    			Cha.BodySway.Start();
     		}
     		oi = Insert;
     	}
@@ -997,13 +997,13 @@ namespace SlaveMatrix
     							}
     							if (調教UI.ペニス処理.中出し)
     							{
-    								if (Cha.ChaD.SkillL > 0.5 * Sta.GameData.TrainingTarget.MaxSkillL && Cha.ChaD.Affection > 0.6 && Cha.ChaD.Lust > 0.5)
+    								if (Cha.CharacterData.SkillL > 0.5 * Sta.GameData.TrainingTarget.MaxSkillL && Cha.CharacterData.Affection > 0.6 && Cha.CharacterData.Lust > 0.5)
     								{
-    									Cha.ごっくん.Start();
+    									Cha.Swallow.Start();
     								}
     								else
     								{
-    									Cha.口腔精液垂れ.Start();
+    									Cha.MouthCumDrip.Start();
     								}
     								調教UI.ペニス処理.中出しCount = 0;
     								調教UI.ペニス処理.中出し = false;
@@ -1039,7 +1039,7 @@ namespace SlaveMatrix
     							待機時1();
     							if (調教UI.ペニス処理.中出し)
     							{
-    								Cha.肛門精液垂れ.Start();
+    								Cha.AnalCumDrip.Start();
     								調教UI.ペニス処理.中出しCount = 0;
     								調教UI.ペニス処理.中出し = false;
     							}
@@ -1076,7 +1076,7 @@ namespace SlaveMatrix
     							待機時1();
     							if (調教UI.ペニス処理.中出し)
     							{
-    								Cha.性器精液垂れ.Start();
+    								Cha.GenitalCumDrip.Start();
     								調教UI.ペニス処理.中出しCount = 0;
     								調教UI.ペニス処理.中出し = false;
     							}
@@ -1111,7 +1111,7 @@ namespace SlaveMatrix
     							待機時1();
     							if (調教UI.ペニス処理.中出し)
     							{
-    								Cha.出糸精液垂れ.Start();
+    								Cha.ThreadCumDrip.Start();
     								調教UI.ペニス処理.中出しCount = 0;
     								調教UI.ペニス処理.中出し = false;
     							}
@@ -1505,13 +1505,13 @@ namespace SlaveMatrix
     			Vector2D p = Dat.Vec2DZero;
     			bool f = !(対象.Ele is ロータ);
     			bool v = 対象.Ele is バイブ_ディル || 対象.Ele is バイブ_コモン || 対象.Ele is バイブ_ドリル || 対象.Ele is バイブ_アナル || 対象.Ele is バイブ_デンマ;
-    			振動モーション = new Mot(-1.0, 1.0)
+    			振動モーション = new Motion(-1.0, 1.0)
     			{
     				BaseSpeed = double.MaxValue,
-    				Staing = delegate
+    				OnStart = delegate
     				{
     				},
-    				Runing = delegate(Mot m)
+    				OnUpdate = delegate(Motion m)
     				{
     					p.X = m.Value * d * 挿入処理2.強度;
     					if (v)
@@ -1548,13 +1548,13 @@ namespace SlaveMatrix
     					}
     					挿入処理2.振動_();
     				},
-    				Reaing = delegate
+    				OnReach = delegate
     				{
     				},
-    				Rouing = delegate
+    				OnLoop = delegate
     				{
     				},
-    				Ending = delegate(Mot m)
+    				OnEnd = delegate(Motion m)
     				{
     					m.ResetValue();
     					foreach (Par item in 対象.Ele.Body.EnumAllPar())
@@ -1569,14 +1569,14 @@ namespace SlaveMatrix
     		回転機能 = 対象.Ele is バイブ_ドリル;
     		if (回転機能)
     		{
-    			回転モーション = new Mot(0.0, 1.0)
+    			回転モーション = new Motion(0.0, 1.0)
     			{
     				BaseSpeed = 10.0 * base.強度,
-    				Staing = delegate
+    				OnStart = delegate
     				{
     					対象.Ele.Xv = 0.0;
     				},
-    				Runing = delegate(Mot m)
+    				OnUpdate = delegate(Motion m)
     				{
     					対象.Ele.Xv = m.Value;
     					対象.Ele.Body.JoinPA();
@@ -1592,14 +1592,14 @@ namespace SlaveMatrix
     					}
     					挿入処理2.振動_();
     				},
-    				Reaing = delegate(Mot m)
+    				OnReach = delegate(Motion m)
     				{
     					m.ResetValue();
     				},
-    				Rouing = delegate
+    				OnLoop = delegate
     				{
     				},
-    				Ending = delegate(Mot m)
+    				OnEnd = delegate(Motion m)
     				{
     					m.ResetValue();
     					対象.Ele.Xv = 0.0;
@@ -1607,13 +1607,13 @@ namespace SlaveMatrix
     			};
     			調教UI.Mots.Add(回転モーション.GetHashCode().ToString(), 回転モーション);
     		}
-    		抜け落ち = new Mot(0.0, 1.0)
+    		抜け落ち = new Motion(0.0, 1.0)
     		{
     			BaseSpeed = 1.0,
-    			Staing = delegate
+    			OnStart = delegate
     			{
     			},
-    			Runing = delegate(Mot m)
+    			OnUpdate = delegate(Motion m)
     			{
     				挿入処理2.Insert = (-0.01 - 0.04 * 挿入処理2.Insert.Inverse()) * 挿入処理2.排出;
     				if (挿入処理2.Insert == 0.0)
@@ -1636,7 +1636,7 @@ namespace SlaveMatrix
     						break;
     					}
     					挿入処理2.解除();
-    					対象.Ele.濃度 = 0.5;
+    					対象.Ele.Intensity = 0.5;
     					対象.StaShow = true;
     					対象.使用状態 = UsageStatus.Standby;
     					対象.Ele.右 = false;
@@ -1660,13 +1660,13 @@ namespace SlaveMatrix
     					m.End();
     				}
     			},
-    			Reaing = delegate
+    			OnReach = delegate
     			{
     			},
-    			Rouing = delegate
+    			OnLoop = delegate
     			{
     			},
-    			Ending = delegate(Mot m)
+    			OnEnd = delegate(Motion m)
     			{
     				m.ResetValue();
     			}
@@ -1688,35 +1688,35 @@ namespace SlaveMatrix
     		MouseButtons mb_ = MouseButtons.None;
     		Vector2D cp_ = default(Vector2D);
     		Color hc_ = default(Color);
-    		挿抜モーション = new Mot(0.0, 1.0)
+    		挿抜モーション = new Motion(0.0, 1.0)
     		{
     			BaseSpeed = 1.0 + 3.0 * Player.PlayerExcitement,
-    			Staing = delegate
+    			OnStart = delegate
     			{
     			},
-    			Runing = delegate(Mot m)
+    			OnUpdate = delegate(Motion m)
     			{
     				m.BaseSpeed = 1.0 + 3.0 * Player.PlayerExcitement;
     				cp_ = new Vector2D(0.0, 100.0 * m.Value);
     				挿入処理2.MoveO(ref mb_, ref cp_, ref hc_, ref 挿入処理2.cd);
     			},
-    			Reaing = delegate
+    			OnReach = delegate
     			{
     			},
-    			Rouing = delegate
+    			OnLoop = delegate
     			{
     			},
-    			Ending = delegate
+    			OnEnd = delegate
     			{
     			}
     		};
     		調教UI.Mots.Add(挿抜モーション.GetHashCode().ToString(), 挿抜モーション);
     	}
 
-    	public void SetCha(Cha Cha)
+    	public void SetCha(Character Cha)
     	{
     		base.Cha = Cha;
-    		Bod = Cha.Bod;
+    		Bod = Cha.Body;
     		性器単位v = 1.0 / (double)Bod.性器.Body.CountY;
     		断面単位v = 1.0 / (double)Bod.断面.Body.CountY;
     		断面単位v2 = 断面単位v * 2.0;
@@ -1743,7 +1743,7 @@ namespace SlaveMatrix
     				break;
     			}
     			解除();
-    			対象.Ele.濃度 = 0.5;
+    			対象.Ele.Intensity = 0.5;
     			対象.StaShow = true;
     			対象.使用状態 = UsageStatus.Standby;
     			対象.Ele.右 = false;

@@ -70,7 +70,7 @@ namespace SlaveMatrix
             return GetHumanoid();
         }
 
-        private static Unit Generate(ChaD ChaD1, ChaD ChaD2, int 妊娠進行期間, string 種族)
+        private static Unit Generate(CharacterData ChaD1, CharacterData ChaD2, int 妊娠進行期間, string 種族)
     	{
     		妊娠進行期間 = (int)((double)妊娠進行期間 * 0.5).Clamp(0.0, 5.0);
     		Unit unit = GetUnit(ChaD1, 妊娠進行期間, 種族).Mix(GetUnit(ChaD2, 妊娠進行期間, 種族), 原種モード: true);
@@ -86,7 +86,7 @@ namespace SlaveMatrix
     		return unit;
     	}
 
-    	private static Unit GetUnit(ChaD ChaD, int 妊娠進行期間, string 種族)
+    	private static Unit GetUnit(CharacterData ChaD, int 妊娠進行期間, string 種族)
     	{
     		Unit unit = new Unit();
     		unit.ChaD = ChaD;

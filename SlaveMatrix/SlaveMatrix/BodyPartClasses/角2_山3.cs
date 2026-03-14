@@ -498,7 +498,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -529,7 +529,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 角2_山3(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 角2_山3D e)
+    	public 角2_山3(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 角2_山3D e)
     	{
     		ThisType = GetType();
     		Dif dif = new Dif(Sta.肢左["角"][2]);
@@ -648,7 +648,7 @@ namespace SlaveMatrix
     		X0Y1_根_凸4CP = new ColorP(X0Y1_根_凸4, 根_凸4CD, DisUnit, abj: true);
     		X0Y1_根_凸5CP = new ColorP(X0Y1_根_凸5, 根_凸5CD, DisUnit, abj: true);
     		X0Y1_根_凸6CP = new ColorP(X0Y1_根_凸6, 根_凸6CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     	}
 
     	public override void 根描画(RenderArea Are)
@@ -733,7 +733,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		switch (配色指定)
     		{
@@ -752,7 +752,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		根_根CD = new ColorD(ref Col.Black, ref 体配色.角0O);
     		根_凸1CD = new ColorD(ref Col.Black, ref 体配色.角1O);
@@ -776,7 +776,7 @@ namespace SlaveMatrix
     		根_折線2CD = new ColorD(ref Col.Black, ref Color2.Empty);
     	}
 
-    	private void 配色T0(体配色 体配色)
+    	private void 配色T0(BodyColorSet 体配色)
     	{
     		根_根CD = new ColorD(ref Col.Black, ref 体配色.角0O);
     		根_凸1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
@@ -800,7 +800,7 @@ namespace SlaveMatrix
     		根_折線2CD = new ColorD(ref Col.Black, ref Color2.Empty);
     	}
 
-    	private void 配色T1(体配色 体配色)
+    	private void 配色T1(BodyColorSet 体配色)
     	{
     		根_根CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
     		根_凸1CD = new ColorD(ref Col.Black, ref 体配色.角1O);

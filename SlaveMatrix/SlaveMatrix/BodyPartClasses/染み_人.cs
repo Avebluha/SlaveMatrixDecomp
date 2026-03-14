@@ -411,7 +411,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -440,7 +440,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 染み_人(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 染み_人D e)
+    	public 染み_人(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 染み_人D e)
     	{
     		ThisType = GetType();
     		Body = new Difs(Sta.その他["染み"]);
@@ -539,7 +539,7 @@ namespace SlaveMatrix
     		X0Y0_湯気_湯気右2_湯気2CP = new ColorP(X0Y0_湯気_湯気右2_湯気2, 湯気_湯気右2_湯気2CD, DisUnit, abj: true);
     		X0Y0_湯気_湯気右3_湯気1CP = new ColorP(X0Y0_湯気_湯気右3_湯気1, 湯気_湯気右3_湯気1CD, DisUnit, abj: true);
     		X0Y0_湯気_湯気右3_湯気2CP = new ColorP(X0Y0_湯気_湯気右3_湯気2, 湯気_湯気右3_湯気2CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     	}
 
     	public override void 描画0(RenderArea Are)
@@ -590,12 +590,12 @@ namespace SlaveMatrix
     		X0Y0_湯気_湯気右3_湯気2CP.Update();
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		潮1CD = new ColorD(ref Col.Empty, ref 体配色.染み);
     		潮2CD = new ColorD(ref Col.Empty, ref 体配色.染み);

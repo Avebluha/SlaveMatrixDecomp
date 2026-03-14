@@ -612,7 +612,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -642,7 +642,7 @@ namespace SlaveMatrix
 
     	public JointS 上着ボトム後_接続点 => new JointS(Body, X0Y0_中_下地, 4);
 
-    	public 上着ボトム_クロス(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 上着ボトム_クロスD e)
+    	public 上着ボトム_クロス(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 上着ボトム_クロスD e)
     	{
     		上着ボトム_クロス 上着ボトム_クロス2 = this;
     		ThisType = GetType();
@@ -797,7 +797,7 @@ namespace SlaveMatrix
     		X0Y1_右_皺4CP = new ColorP(X0Y1_右_皺4, 右_皺4CD, DisUnit, abj: true);
     		X0Y1_右_皺5CP = new ColorP(X0Y1_右_皺5, 右_皺5CD, DisUnit, abj: true);
     		X0Y1_右_皺6CP = new ColorP(X0Y1_右_皺6, 右_皺6CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     		尺度XB = 1.01;
     		尺度YB = 0.95;
     	}
@@ -855,12 +855,12 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		中_下地CD = new ColorD();
     		中_皺1CD = new ColorD();

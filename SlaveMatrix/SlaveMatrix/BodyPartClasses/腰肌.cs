@@ -975,7 +975,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -1007,7 +1007,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 腰肌(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 腰肌D e)
+    	public 腰肌(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 腰肌D e)
     	{
     		ThisType = GetType();
     		Body = new Difs(Sta.胴体["腰肌"]);
@@ -1320,7 +1320,7 @@ namespace SlaveMatrix
     		X0Y4_虫性_腹板2_縦線CP = new ColorP(X0Y4_虫性_腹板2_縦線, 虫性_腹板2_縦線CD, DisUnit, abj: true);
     		X0Y4_虫性_腹板1_腹板CP = new ColorP(X0Y4_虫性_腹板1_腹板, 虫性_腹板1_腹板CD, DisUnit, abj: true);
     		X0Y4_虫性_腹板1_縦線CP = new ColorP(X0Y4_虫性_腹板1_縦線, 虫性_腹板1_縦線CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     		尺度YB = 0.95;
     	}
 
@@ -1446,7 +1446,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		switch (配色指定)
     		{
@@ -1465,7 +1465,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		淫タトゥ_ハート_タトゥ左1CD = new ColorD(ref Col.Black, ref 体配色.刺青);
     		淫タトゥ_ハート_タトゥ右1CD = new ColorD(ref Col.Black, ref 体配色.刺青);
@@ -1490,7 +1490,7 @@ namespace SlaveMatrix
     		虫性_腹板1_縦線CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
     	}
 
-    	private void 配色T0(体配色 体配色)
+    	private void 配色T0(BodyColorSet 体配色)
     	{
     		淫タトゥ_ハート_タトゥ左1CD = new ColorD(ref Col.Black, ref 体配色.刺青);
     		淫タトゥ_ハート_タトゥ右1CD = new ColorD(ref Col.Black, ref 体配色.刺青);
@@ -1515,7 +1515,7 @@ namespace SlaveMatrix
     		虫性_腹板1_縦線CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
     	}
 
-    	private void 配色T1(体配色 体配色)
+    	private void 配色T1(BodyColorSet 体配色)
     	{
     		淫タトゥ_ハート_タトゥ左1CD = new ColorD(ref Col.Black, ref 体配色.刺青);
     		淫タトゥ_ハート_タトゥ右1CD = new ColorD(ref Col.Black, ref 体配色.刺青);

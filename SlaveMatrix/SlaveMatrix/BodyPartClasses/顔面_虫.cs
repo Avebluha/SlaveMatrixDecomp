@@ -572,7 +572,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -635,7 +635,7 @@ namespace SlaveMatrix
 
     	public JointS 触覚右_接続点 => new JointS(Body, X0Y0_付根右_付根2, 0);
 
-    	public 顔面_虫(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 顔面_虫D e)
+    	public 顔面_虫(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 顔面_虫D e)
     	{
     		顔面_虫 顔面_虫2 = this;
     		ThisType = GetType();
@@ -789,7 +789,7 @@ namespace SlaveMatrix
     		X0Y0_単眼_眼右_基CP = new ColorP(X0Y0_単眼_眼右_基, 単眼_眼右_基CD, DisUnit, abj: true);
     		X0Y0_単眼_眼右_眼CP = new ColorP(X0Y0_単眼_眼右_眼, 単眼_眼右_眼CD, DisUnit, abj: true);
     		X0Y0_単眼_眼右_ハイライトCP = new ColorP(X0Y0_単眼_眼右_ハイライト, 単眼_眼右_ハイライトCD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     	}
 
     	public override void 色更新()
@@ -822,12 +822,12 @@ namespace SlaveMatrix
     		X0Y0_単眼_眼右_ハイライトCP.Update();
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		面基CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
     		複眼左_複眼1CD = new ColorD(ref Col.Black, ref 体配色.眼0O);

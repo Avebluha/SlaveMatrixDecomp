@@ -151,7 +151,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -167,7 +167,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 虫顎(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 虫顎D e)
+    	public 虫顎(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 虫顎D e)
     	{
     		ThisType = GetType();
     		Dif dif = new Dif(Sta.肢左["虫顎"][0]);
@@ -224,7 +224,7 @@ namespace SlaveMatrix
     		X0Y0_牙_牙1CP = new ColorP(X0Y0_牙_牙1, 牙_牙1CD, DisUnit, abj: true);
     		X0Y0_牙_牙2CP = new ColorP(X0Y0_牙_牙2, 牙_牙2CD, DisUnit, abj: true);
     		X0Y0_牙_牙0CP = new ColorP(X0Y0_牙_牙0, 牙_牙0CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     	}
 
     	public override void SetAngle0()
@@ -243,7 +243,7 @@ namespace SlaveMatrix
     		X0Y0_牙_牙0CP.Update();
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		switch (配色指定)
     		{
@@ -262,7 +262,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		顎CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
     		節CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
@@ -271,7 +271,7 @@ namespace SlaveMatrix
     		牙_牙0CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
     	}
 
-    	private void 配色T0(体配色 体配色)
+    	private void 配色T0(BodyColorSet 体配色)
     	{
     		顎CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
     		節CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
@@ -280,7 +280,7 @@ namespace SlaveMatrix
     		牙_牙0CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
     	}
 
-    	private void 配色T1(体配色 体配色)
+    	private void 配色T1(BodyColorSet 体配色)
     	{
     		顎CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
     		節CD = new ColorD(ref Col.Black, ref 体配色.甲1O);

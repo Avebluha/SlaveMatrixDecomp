@@ -351,7 +351,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -408,7 +408,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public BackHair1_編結(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, BackHair1_編結D e)
+    	public BackHair1_編結(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, BackHair1_編結D e)
     	{
     		ThisType = GetType();
     		Dif dif = new Dif();
@@ -506,7 +506,7 @@ namespace SlaveMatrix
     		X0Y0_お下げ_編節6_髪編目CP = new ColorP(X0Y0_お下げ_編節6_髪編目, お下げ_編節6_髪編目CD, DisUnit, abj: false);
     		X0Y0_お下げ_編節7_髪節CP = new ColorP(X0Y0_お下げ_編節7_髪節, お下げ_編節7_髪節CD, DisUnit, abj: false);
     		X0Y0_お下げ_編節7_髪編目CP = new ColorP(X0Y0_お下げ_編節7_髪編目, お下げ_編節7_髪編目CD, DisUnit, abj: false);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     	}
 
     	public override void SetAngle0()
@@ -534,12 +534,12 @@ namespace SlaveMatrix
     		X0Y0_お下げ_編節7_髪編目CP.Update();
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		髪基CD = new ColorD(ref 体配色.髪線, ref 体配色.髪O);
     		お下げ_編節1_髪節CD = new ColorD(ref 体配色.髪線, ref 体配色.髪O);

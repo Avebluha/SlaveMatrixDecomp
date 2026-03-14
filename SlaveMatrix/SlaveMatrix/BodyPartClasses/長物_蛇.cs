@@ -244,7 +244,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -301,7 +301,7 @@ namespace SlaveMatrix
 
     	public JointS Torso_接続点 => new JointS(Body, X0Y0_Torso1_Torso, 1);
 
-    	public 長物_蛇(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 長物_蛇D e)
+    	public 長物_蛇(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 長物_蛇D e)
     	{
     		長物_蛇 長物_蛇2 = this;
     		ThisType = GetType();
@@ -411,7 +411,7 @@ namespace SlaveMatrix
     		X0Y0_Torso1_鱗右2CP = new ColorP(X0Y0_Torso1_鱗右2, Torso1_鱗右2CD, DisUnit, abj: true);
     		X0Y0_Torso1_鱗左1CP = new ColorP(X0Y0_Torso1_鱗左1, Torso1_鱗左1CD, DisUnit, abj: true);
     		X0Y0_Torso1_鱗右1CP = new ColorP(X0Y0_Torso1_鱗右1, Torso1_鱗右1CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     	}
 
     	public override void 描画0(RenderArea Are)
@@ -455,7 +455,7 @@ namespace SlaveMatrix
     		X0Y0_Torso1_鱗右1CP.Update();
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		switch (配色指定)
     		{
@@ -474,7 +474,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		Torso1_TorsoCD = new ColorD(ref Col.Empty, ref Color2.Empty);
     		Torso1_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
@@ -487,7 +487,7 @@ namespace SlaveMatrix
     		Torso1_鱗右1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
     	}
 
-    	private void 配色T0(体配色 体配色)
+    	private void 配色T0(BodyColorSet 体配色)
     	{
     		Torso1_TorsoCD = new ColorD(ref Col.Empty, ref Color2.Empty);
     		Torso1_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
@@ -500,7 +500,7 @@ namespace SlaveMatrix
     		Torso1_鱗右1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
     	}
 
-    	private void 配色T1(体配色 体配色)
+    	private void 配色T1(BodyColorSet 体配色)
     	{
     		Torso1_TorsoCD = new ColorD(ref Col.Empty, ref Color2.Empty);
     		Torso1_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);

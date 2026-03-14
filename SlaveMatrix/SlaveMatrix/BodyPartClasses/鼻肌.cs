@@ -283,7 +283,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -305,7 +305,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 鼻肌(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 鼻肌D e)
+    	public 鼻肌(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 鼻肌D e)
     	{
     		ThisType = GetType();
     		Body = new Difs(Sta.胴体["鼻肌"]);
@@ -380,7 +380,7 @@ namespace SlaveMatrix
     		X0Y0_紋柄_紋右_紋5CP = new ColorP(X0Y0_紋柄_紋右_紋5, 紋柄_紋右_紋5CD, DisUnit, abj: true);
     		X0Y0_傷ICP = new ColorP(X0Y0_傷I, 傷ICD, DisUnit, abj: true);
     		傷I右濃度 = e.傷I右濃度;
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     	}
 
     	public override void 色更新()
@@ -398,12 +398,12 @@ namespace SlaveMatrix
     		X0Y0_傷ICP.Update();
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		紋柄_紋左_紋1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
     		紋柄_紋左_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);

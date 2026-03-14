@@ -2,7 +2,7 @@ using System.Drawing;
 
 namespace SlaveMatrix
 {
-    public class 体配色
+    public class BodyColorSet
     {
     	public Color2 髪O;
 
@@ -218,7 +218,7 @@ namespace SlaveMatrix
 
     	public Color 尿線;
 
-    	public 体配色(体色 色)
+    	public BodyColorSet(体色 色)
     	{
     		if (色.粘膜 == Col.Empty)
     		{

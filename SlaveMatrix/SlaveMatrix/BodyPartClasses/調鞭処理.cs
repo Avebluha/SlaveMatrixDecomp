@@ -8,9 +8,9 @@ namespace SlaveMatrix
     {
     	public 衝撃 衝撃;
 
-    	public Mot 鞭撃モーション;
+    	public Motion 鞭撃モーション;
 
-    	private Mot 衝撃モーション;
+    	private Motion 衝撃モーション;
 
     	private Vector2D v;
 
@@ -120,10 +120,10 @@ namespace SlaveMatrix
     		Par p;
     		Vector2D cp;
     		Color hc;
-    		鞭撃モーション = new Mot(0.0, 1.0)
+    		鞭撃モーション = new Motion(0.0, 1.0)
     		{
     			BaseSpeed = 10.0 * 強さ_,
-    			Staing = delegate
+    			OnStart = delegate
     			{
     				l = 調鞭処理2.mb == MouseButtons.Left;
     				鞭.Xi = 1;
@@ -141,7 +141,7 @@ namespace SlaveMatrix
     				鞭.鞭撃エフェクト2CD.不透明度 = 調鞭処理2.強度;
     				調鞭処理2.振り();
     			},
-    			Runing = delegate(Mot m)
+    			OnUpdate = delegate(Motion m)
     			{
     				if (l)
     				{
@@ -170,7 +170,7 @@ namespace SlaveMatrix
     					調鞭処理2.打ち(cp);
     				}
     			},
-    			Reaing = delegate(Mot m)
+    			OnReach = delegate(Motion m)
     			{
     				鞭.鞭撃エフェクト1_表示 = false;
     				鞭.鞭撃エフェクト2_表示 = false;
@@ -185,10 +185,10 @@ namespace SlaveMatrix
     				鞭.Body.JoinPA();
     				m.End();
     			},
-    			Rouing = delegate
+    			OnLoop = delegate
     			{
     			},
-    			Ending = delegate(Mot m)
+    			OnEnd = delegate(Motion m)
     			{
     				m.ResetValue();
     			}
@@ -199,10 +199,10 @@ namespace SlaveMatrix
     			表示 = false
     		});
     		衝撃.尺度B = 1.2;
-    		衝撃モーション = new Mot(0.0, 1.0)
+    		衝撃モーション = new Motion(0.0, 1.0)
     		{
     			BaseSpeed = 5.0,
-    			Staing = delegate
+    			OnStart = delegate
     			{
     				調鞭処理2.衝撃.表示 = true;
     				調鞭処理2.衝撃.角度C = 360.0 * RNG.XS.NextDouble();
@@ -210,18 +210,18 @@ namespace SlaveMatrix
     				//TODO fix?
     				//Sounds.鞭撃.Play();
     			},
-    			Runing = delegate(Mot m)
+    			OnUpdate = delegate(Motion m)
     			{
     				調鞭処理2.衝撃.尺度C = m.Value * 調鞭処理2.強さ_;
     			},
-    			Reaing = delegate(Mot m)
+    			OnReach = delegate(Motion m)
     			{
     				m.End();
     			},
-    			Rouing = delegate
+    			OnLoop = delegate
     			{
     			},
-    			Ending = delegate(Mot m)
+    			OnEnd = delegate(Motion m)
     			{
     				調鞭処理2.衝撃.表示 = false;
     				m.ResetValue();
@@ -230,10 +230,10 @@ namespace SlaveMatrix
     		調教UI.Mots.Add(衝撃モーション.GetHashCode().ToString(), 衝撃モーション);
     	}
 
-    	public void SetCha(Cha Cha)
+    	public void SetCha(Character Cha)
     	{
     		base.Cha = Cha;
-    		Bod = Cha.Bod;
+    		Bod = Cha.Body;
     	}
 
     	public new void Reset()

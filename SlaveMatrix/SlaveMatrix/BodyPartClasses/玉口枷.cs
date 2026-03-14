@@ -531,7 +531,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -566,7 +566,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 玉口枷(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 玉口枷D e)
+    	public 玉口枷(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 玉口枷D e)
     	{
     		ThisType = GetType();
     		Body = new Difs(Sta.胴体["玉口枷"]);
@@ -676,7 +676,7 @@ namespace SlaveMatrix
     		X0Y0_丸金具右内CP = new ColorP(X0Y0_丸金具右内, 丸金具右内CD, DisUnit, abj: true);
     		X0Y0_丸金具左外CP = new ColorP(X0Y0_丸金具左外, 丸金具左外CD, DisUnit, abj: true);
     		X0Y0_丸金具右外CP = new ColorP(X0Y0_丸金具右外, 丸金具右外CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     	}
 
     	public override bool Is革(Par p)
@@ -716,12 +716,12 @@ namespace SlaveMatrix
     		X0Y0_丸金具右外CP.Update();
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		金具左上CD = new ColorD();
     		金具左下CD = new ColorD();

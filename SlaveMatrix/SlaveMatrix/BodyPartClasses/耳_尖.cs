@@ -152,7 +152,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -165,7 +165,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 耳_尖(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 耳_尖D e)
+    	public 耳_尖(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 耳_尖D e)
     	{
     		ThisType = GetType();
     		Body = new Difs();
@@ -238,7 +238,7 @@ namespace SlaveMatrix
     		X1Y1_耳線CP = new ColorP(X1Y1_耳線, 耳線CD, DisUnit, abj: true);
     		X1Y2_耳CP = new ColorP(X1Y2_耳, 耳CD, DisUnit, abj: true);
     		X1Y2_耳線CP = new ColorP(X1Y2_耳線, 耳線CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     	}
 
     	public override void SetAngle0()
@@ -293,12 +293,12 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		耳CD = new ColorD(ref Col.Black, ref 体配色.人肌O);
     		耳線CD = new ColorD(ref Col.Black, ref Color2.Empty);

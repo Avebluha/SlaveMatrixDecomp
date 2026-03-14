@@ -403,7 +403,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -422,7 +422,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public ボテ腹板(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, ボテ腹板D e)
+    	public ボテ腹板(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, ボテ腹板D e)
     	{
     		ThisType = GetType();
     		Body = new Difs(Sta.胴体["ボテ腹板"]);
@@ -572,7 +572,7 @@ namespace SlaveMatrix
     		X0Y4_腹板2_縦線CP = new ColorP(X0Y4_腹板2_縦線, 腹板2_縦線CD, DisUnit, abj: true);
     		X0Y4_腹板1_腹板CP = new ColorP(X0Y4_腹板1_腹板, 腹板1_腹板CD, DisUnit, abj: true);
     		X0Y4_腹板1_縦線CP = new ColorP(X0Y4_腹板1_縦線, 腹板1_縦線CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     		尺度YB = 0.95;
     	}
 
@@ -633,12 +633,12 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		腹板4_腹板CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
     		腹板4_縦線CD = new ColorD(ref Col.Black, ref 体配色.甲1O);

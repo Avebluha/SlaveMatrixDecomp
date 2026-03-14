@@ -759,7 +759,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -802,7 +802,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 単足_粘(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 単足_粘D e)
+    	public 単足_粘(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 単足_粘D e)
     	{
     		ThisType = GetType();
     		Dif dif = new Dif();
@@ -950,7 +950,7 @@ namespace SlaveMatrix
     		X0Y0_粘液上右_ハイライトCP = new ColorP(X0Y0_粘液上右_ハイライト, 粘液上右_ハイライトCD, DisUnit, abj: true);
     		X0Y0_ハイライトCP = new ColorP(X0Y0_ハイライト, ハイライトCD, DisUnit, abj: true);
     		ハイライト濃度 = e.ハイライト濃度;
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     	}
 
     	public override void 色更新()
@@ -989,12 +989,12 @@ namespace SlaveMatrix
     		X0Y0_ハイライトCP.Update();
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		Col.Alpha(ref 体配色.人肌O, 128, out var ret);
     		粘液0CD = new ColorD(ref Col.Empty, ref ret);

@@ -10,7 +10,7 @@ namespace SlaveMatrix
 
     	public bool Is舐め;
 
-    	private Mot キスモーション;
+    	private Motion キスモーション;
 
     	private ContactD 箇所;
 
@@ -126,7 +126,7 @@ namespace SlaveMatrix
     		else if (Player.フェラ1 && cd.c == ContactType.Mouth)
     		{
     			箇所 = cd;
-    			対象.Ele.濃度 = 0.5;
+    			対象.Ele.Intensity = 0.5;
     			調教UI.マウス.Xi = 4;
     			調教UI.マウス挿入.Move(ref mb, ref cp, ref hc, ref cd);
     		}
@@ -155,7 +155,7 @@ namespace SlaveMatrix
     			調教UI.放し();
     			if (!(調教UI.X < cp.X) || !(cp.Y < 調教UI.Y))
     			{
-    				対象.Ele.濃度 = 1.0;
+    				対象.Ele.Intensity = 1.0;
     			}
     			オーバー時("", ref cd);
     		}
@@ -190,7 +190,7 @@ namespace SlaveMatrix
     				}
     				else if (cd.c == ContactType.Mouth)
     				{
-    					対象.Ele.濃度 = 0.5;
+    					対象.Ele.Intensity = 0.5;
     					対象.Ele.角度C = (double)RNG.XS.NextSign() * 45.0;
     					調教UI.Set_口(対象.Ele);
     					吸引時(GameText.口腔 + "\r\n");
@@ -232,7 +232,7 @@ namespace SlaveMatrix
     		{
     			if (!Isモード && !調教UI.ペニス挿入.Is挿入)
     			{
-    				調教UI.Focus.Ele.濃度 = 0.5;
+    				調教UI.Focus.Ele.Intensity = 0.5;
     				調教UI.Focus = 調教UI.ペニスCM;
     				調教UI.ペニスCM.Ele.位置B = cp;
     				調教UI.ペニス処理.選択 = true;
@@ -246,7 +246,7 @@ namespace SlaveMatrix
     				切り替え = false;
     				return;
     			}
-    			調教UI.Focus.Ele.濃度 = 0.5;
+    			調教UI.Focus.Ele.Intensity = 0.5;
     			調教UI.Focus = 調教UI.ハンド右CM;
     			調教UI.ハンド右.位置B = cp;
     			調教UI.ハンド処理.切り替え = true;
@@ -264,7 +264,7 @@ namespace SlaveMatrix
     			調教UI.マウス.Xi = 0;
     			Is吸付 = false;
     			キスモーション.End();
-    			対象.Ele.濃度 = 1.0;
+    			対象.Ele.Intensity = 1.0;
     			対象.Ele.角度C = 0.0;
     			調教UI.放し();
     			if (cd.c == ContactType.Mouth)
@@ -323,7 +323,7 @@ namespace SlaveMatrix
     			調教UI.マウス.Yi = (調教UI.マウス.Yi - dt.Sign() * 2).Clamp(0, 調教UI.マウス.Body.CountY);
     			if (cd.c == ContactType.Mouth)
     			{
-    				対象.Ele.濃度 = 0.5;
+    				対象.Ele.Intensity = 0.5;
     			}
     		}
     	}
@@ -339,17 +339,17 @@ namespace SlaveMatrix
     		キスマーク k = null;
     		Vector2D cp;
     		Color hc;
-    		キスモーション = new Mot(0.0, 0.15)
+    		キスモーション = new Motion(0.0, 0.15)
     		{
     			BaseSpeed = 4.0,
-    			Staing = delegate
+    			OnStart = delegate
     			{
     				f = true;
     				sw.Restart();
     				s = 1.09.Reciprocal();
     				マウス処理2.吸引();
     			},
-    			Runing = delegate(Mot m)
+    			OnUpdate = delegate(Motion m)
     			{
     				if (マウス処理2.箇所.c == ContactType.Milk)
     				{
@@ -378,7 +378,7 @@ namespace SlaveMatrix
     				}
     				else if (k != null)
     				{
-    					k.濃度 = (k.濃度 + 0.05).Clamp(0.0, 1.0);
+    					k.Intensity = (k.Intensity + 0.05).Clamp(0.0, 1.0);
     					if (マウス処理2.Bod.EIChest != null)
     					{
     						マウス処理2.Bod.EIChest.Updatef = true;
@@ -395,20 +395,20 @@ namespace SlaveMatrix
     				調教UI.Action(マウス処理2.箇所.c, ActionType.吸引, CurrentState.Continue, ToolType.マウス, 0, 1, 機械: false, 射精: false);
     				Player.奴体力消費小();
     				Player.主精力消費小();
-    				if (マウス処理2.Bod.噴乳左.母乳垂れ1_表示 && マウス処理2.箇所.c == ContactType.Milk && マウス処理2.Cha.噴乳.Run)
+    				if (マウス処理2.Bod.LeftMilkSpray.母乳垂れ1_表示 && マウス処理2.箇所.c == ContactType.Milk && マウス処理2.Cha.MilkSpray.Run)
     				{
     					Sta.GameData.精力 = (Sta.GameData.精力 + 0.02 * RNG.XS.NextDouble()).Clamp(0.0, 1.0);
     				}
     			},
-    			Reaing = delegate(Mot m)
+    			OnReach = delegate(Motion m)
     			{
     				f = false;
     				d = m.Value.Inverse();
     			},
-    			Rouing = delegate
+    			OnLoop = delegate
     			{
     			},
-    			Ending = delegate(Mot m)
+    			OnEnd = delegate(Motion m)
     			{
     				m.ResetValue();
     				マウス処理2.対象.Ele.尺度C = 1.0;
@@ -419,10 +419,10 @@ namespace SlaveMatrix
     		調教UI.Mots.Add(キスモーション.GetHashCode().ToString(), キスモーション);
     	}
 
-    	public void SetCha(Cha Cha)
+    	public void SetCha(Character Cha)
     	{
     		base.Cha = Cha;
-    		Bod = Cha.Bod;
+    		Bod = Cha.Body;
     	}
 
     	public new void Reset()

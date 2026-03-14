@@ -142,7 +142,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -157,7 +157,7 @@ namespace SlaveMatrix
 
     	public JointS 腹板_接続点 => new JointS(Body, X0Y0_腹, 0);
 
-    	public ボテ腹_獣(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, ボテ腹_獣D e)
+    	public ボテ腹_獣(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, ボテ腹_獣D e)
     	{
     		ボテ腹_獣 ボテ腹_獣2 = this;
     		ThisType = GetType();
@@ -234,7 +234,7 @@ namespace SlaveMatrix
     		X0Y3_臍CP = new ColorP(X0Y3_臍, 臍CD, DisUnit, abj: false);
     		X0Y4_腹CP = new ColorP(X0Y4_腹, 腹CD, DisUnit, abj: true);
     		X0Y4_臍CP = new ColorP(X0Y4_臍, 臍CD, DisUnit, abj: false);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     		double num = 1.0;
     		X0Y0_臍.BasePointBase = new Vector2D(X0Y0_臍.BasePointBase.X, 0.360579157918298);
     		X0Y1_臍.BasePointBase = new Vector2D(X0Y1_臍.BasePointBase.X, 0.360579157918298);
@@ -282,12 +282,12 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		腹CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
     		臍CD = new ColorD(ref 体配色.薄線, ref 体配色.毛0O);

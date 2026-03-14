@@ -398,7 +398,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -418,7 +418,7 @@ namespace SlaveMatrix
 
     	public JointS 腹板_接続点 => new JointS(Body, X0Y0_腹, 0);
 
-    	public ボテ腹_人(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, ボテ腹_人D e)
+    	public ボテ腹_人(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, ボテ腹_人D e)
     	{
     		ボテ腹_人 ボテ腹_人2 = this;
     		ThisType = GetType();
@@ -552,7 +552,7 @@ namespace SlaveMatrix
     		X0Y4_ハイライト右1CP = new ColorP(X0Y4_ハイライト右1, ハイライト右1CD, DisUnit, abj: true);
     		X0Y4_ハイライト右2CP = new ColorP(X0Y4_ハイライト右2, ハイライト右2CD, DisUnit, abj: true);
     		ハイライト濃度 = e.ハイライト濃度;
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     		尺度YB = 0.95;
     		double num = 1.0;
     		X0Y0_臍.BasePointBase = new Vector2D(X0Y0_臍.BasePointBase.X, 0.363449439772374);
@@ -648,12 +648,12 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		腹CD = new ColorD(ref Col.Black, ref 体配色.人肌O);
     		ハイライトCD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);

@@ -186,7 +186,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -202,7 +202,7 @@ namespace SlaveMatrix
 
     	public JointS 涙_接続点 => new JointS(Body, X0Y0_目, 2);
 
-    	public 瞼_宇(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 瞼_宇D e)
+    	public 瞼_宇(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 瞼_宇D e)
     	{
     		瞼_宇 瞼_宇2 = this;
     		ThisType = GetType();
@@ -291,7 +291,7 @@ namespace SlaveMatrix
     		X0Y4_目CP = new ColorP(X0Y4_目, 目CD, DisUnit, abj: true);
     		X0Y4_ハイライトCP = new ColorP(X0Y4_ハイライト, ハイライトCD, DisUnit, abj: true);
     		X0Y4_瞬膜CP = new ColorP(X0Y4_瞬膜, 瞬膜CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     	}
 
     	public override void 色更新()
@@ -326,12 +326,12 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		目CD = new ColorD(ref Col.Black, ref 体配色.目左O);
     		ハイライトCD = new ColorD(ref Col.Empty, ref 体配色.ハイライト);

@@ -535,7 +535,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -616,7 +616,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 断面_獣(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 断面_獣D e)
+    	public 断面_獣(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 断面_獣D e)
     	{
     		ThisType = GetType();
     		Body = new Difs(Sta.半身["四足断面"]);
@@ -779,7 +779,7 @@ namespace SlaveMatrix
     		X0Y4_子宮内CP = new ColorP(X0Y4_子宮内, 子宮内CD, DisUnit, abj: true);
     		X0Y4_子宮口CP = new ColorP(X0Y4_子宮口, 子宮口CD, DisUnit, abj: true);
     		X0Y4_精液CP = new ColorP(X0Y4_精液, 精液CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     		精液濃度 = e.精液濃度;
     	}
 
@@ -855,12 +855,12 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		膣基CD = new ColorD(ref Col.Empty, ref Color2.Empty);
     		Col.Alpha(ref 体配色.粘膜, 160, out var ret);

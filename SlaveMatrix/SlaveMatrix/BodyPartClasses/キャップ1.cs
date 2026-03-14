@@ -91,7 +91,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -118,7 +118,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public キャップ1(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, キャップ1D e)
+    	public キャップ1(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, キャップ1D e)
     	{
     		ThisType = GetType();
     		Body = new Difs(Sta.性器付["キャップ中"]);
@@ -162,7 +162,7 @@ namespace SlaveMatrix
     		配色(体配色);
     		X0Y0_根本CP = new ColorP(X0Y0_根本, 根本CD, DisUnit, abj: true);
     		X0Y0_先端CP = new ColorP(X0Y0_先端, 先端CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     		Vector2D local = X0Y0_根本.OP[0].ps[2];
     		foreach (Par item in Body.EnumJoinRoot)
     		{
@@ -176,12 +176,12 @@ namespace SlaveMatrix
     		X0Y0_先端CP.Update();
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		根本CD = new ColorD();
     		先端CD = new ColorD();

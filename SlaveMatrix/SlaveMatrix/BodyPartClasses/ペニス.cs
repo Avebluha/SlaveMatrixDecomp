@@ -402,7 +402,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -589,7 +589,7 @@ namespace SlaveMatrix
     		X1Y4_陰嚢CP = new ColorP(X1Y4_陰嚢, 陰嚢CD, DisUnit, abj: true);
     		X1Y4_陰茎CP = new ColorP(X1Y4_陰茎, 陰茎CD, DisUnit, abj: true);
     		X1Y4_血管下CP = new ColorP(X1Y4_血管下, 血管下CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     		AreM = new AreM(Med.Unit, 3.0, 7.0, 0.07, Med.DisQuality, Med.HitAccuracy, 0.45);
     		AreM.BasePoint = new Vector2D(0.5, 0.1);
     		X0Y0_陰嚢.BasePointBase = X0Y0_陰嚢.ToLocal(X0Y0_陰茎.ToGlobal(X0Y0_陰茎.JP[3].Joint));

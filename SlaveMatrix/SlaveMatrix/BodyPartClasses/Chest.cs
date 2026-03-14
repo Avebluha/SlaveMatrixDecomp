@@ -1321,7 +1321,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -1412,7 +1412,7 @@ namespace SlaveMatrix
 
     	public JointS 背中_接続点 => new JointS(Body, X0Y0_胸郭, 10);
 
-    	public Chest(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, ChestD e)
+    	public Chest(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, ChestD e)
     	{
     		Chest Chest2 = this;
     		ThisType = GetType();
@@ -1776,7 +1776,7 @@ namespace SlaveMatrix
     		傷X左濃度 = e.傷X左濃度;
     		傷X右濃度 = e.傷X右濃度;
     		ハイライト濃度 = e.ハイライト濃度;
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     		尺度B = 0.99;
     		尺度YB = 0.99;
     	}
@@ -1969,12 +1969,12 @@ namespace SlaveMatrix
     		X0Y0_ハイライト内右CP.Update();
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		胸郭CD = new ColorD(ref Col.Black, ref 体配色.人肌O);
     		筋肉_筋肉左CD = new ColorD(ref 体配色.薄線, ref 体配色.人肌O);

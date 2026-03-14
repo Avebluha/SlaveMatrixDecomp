@@ -2511,7 +2511,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -2798,7 +2798,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 手_人(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 手_人D e)
+    	public 手_人(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 手_人D e)
     	{
     		ThisType = GetType();
     		Body = new Difs(Sta.腕左["手"]);
@@ -3657,7 +3657,7 @@ namespace SlaveMatrix
     		X0Y10_グローブ_グローブCP = new ColorP(X0Y10_グローブ_グローブ, グローブ_グローブCD, DisUnit, abj: true);
     		X0Y10_グローブ_縁1CP = new ColorP(X0Y10_グローブ_縁1, グローブ_縁1CD, DisUnit, abj: true);
     		X0Y10_グローブ_縁2CP = new ColorP(X0Y10_グローブ_縁2, グローブ_縁2CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     	}
 
     	public void 虫性()
@@ -4537,7 +4537,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		switch (配色指定)
     		{
@@ -4562,7 +4562,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		グローブ_グローブCD = new ColorD();
     		グローブ_縁1CD = new ColorD();
@@ -4598,7 +4598,7 @@ namespace SlaveMatrix
     		悪タトゥ_五芒星_五角形CD = new ColorD(ref 体配色.刺青.Col1, ref Color2.Empty);
     	}
 
-    	private void 配色B0(体配色 体配色)
+    	private void 配色B0(BodyColorSet 体配色)
     	{
     		グローブ_グローブCD = new ColorD();
     		グローブ_縁1CD = new ColorD();
@@ -4634,7 +4634,7 @@ namespace SlaveMatrix
     		悪タトゥ_五芒星_五角形CD = new ColorD(ref 体配色.刺青.Col1, ref Color2.Empty);
     	}
 
-    	private void 配色C0(体配色 体配色)
+    	private void 配色C0(BodyColorSet 体配色)
     	{
     		グローブ_グローブCD = new ColorD();
     		グローブ_縁1CD = new ColorD();
@@ -4670,7 +4670,7 @@ namespace SlaveMatrix
     		悪タトゥ_五芒星_五角形CD = new ColorD(ref 体配色.刺青.Col1, ref Color2.Empty);
     	}
 
-    	private void 配色S0(体配色 体配色)
+    	private void 配色S0(BodyColorSet 体配色)
     	{
     		グローブ_グローブCD = new ColorD();
     		グローブ_縁1CD = new ColorD();
@@ -4706,7 +4706,7 @@ namespace SlaveMatrix
     		悪タトゥ_五芒星_五角形CD = new ColorD(ref 体配色.刺青.Col1, ref Color2.Empty);
     	}
 
-    	private void 配色L0(体配色 体配色)
+    	private void 配色L0(BodyColorSet 体配色)
     	{
     		グローブ_グローブCD = new ColorD();
     		グローブ_縁1CD = new ColorD();

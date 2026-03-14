@@ -373,7 +373,7 @@ namespace SlaveMatrix
 
     	public static string 後から変更できます => Comm[56];
 
-    	public static string スレイブマトリクス => Comm[57];
+    	public static string SlaveMatrix => Comm[57];
 
     	public static string 事務所 => Base[0];
 

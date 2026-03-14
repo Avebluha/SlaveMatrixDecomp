@@ -856,7 +856,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -891,7 +891,7 @@ namespace SlaveMatrix
 
     	public JointS 膣口_接続点 => new JointS(Body, X0Y0_性器基, 2);
 
-    	public 性器_獣(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 性器_獣D e)
+    	public 性器_獣(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 性器_獣D e)
     	{
     		性器_獣 性器_獣2 = this;
     		ThisType = GetType();
@@ -1236,7 +1236,7 @@ namespace SlaveMatrix
     		AreM = new AreM(Med.Unit, 1.0, 1.0, 0.024, Med.DisQuality, Med.HitAccuracy, 0.1);
     		AreM.BasePoint = new Vector2D(0.5, 0.5);
     		AreMPos = AreM.GetPosition(ref AreM.BasePoint);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     		Xi = 1;
     	}
 
@@ -1467,12 +1467,12 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		小陰唇CD = new ColorD(ref 体配色.粘膜線, ref 体配色.粘膜);
     		性器基CD = new ColorD(ref 体配色.粘膜線, ref 体配色.粘膜);

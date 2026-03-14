@@ -549,7 +549,7 @@ namespace SlaveMatrix
     		e.接続情報 = ConnectionInfo.尾_ヘ_尾先_接続;
     	}
 
-    	public override Ele GetEle(double DisUnit, ModeEventDispatcher Med, 体配色 体配色)
+    	public override Ele GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
     	{
     		return new 尾_ヘ(DisUnit, 配色指定, 体配色, Med, this);
     	}

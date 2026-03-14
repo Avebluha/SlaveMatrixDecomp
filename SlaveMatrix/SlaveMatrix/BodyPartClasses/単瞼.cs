@@ -1013,7 +1013,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -1268,7 +1268,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 単瞼(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 単瞼D e)
+    	public 単瞼(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 単瞼D e)
     	{
     		ThisType = GetType();
     		Body = new Difs(Sta.胴体["単眼瞼"]);
@@ -1599,7 +1599,7 @@ namespace SlaveMatrix
     		X1Y4_睫毛下下左CP = new ColorP(X1Y4_睫毛下下左, 睫毛下下左CD, DisUnit, abj: true);
     		X1Y4_睫毛下上右CP = new ColorP(X1Y4_睫毛下上右, 睫毛下上右CD, DisUnit, abj: true);
     		X1Y4_睫毛下下右CP = new ColorP(X1Y4_睫毛下下右, 睫毛下下右CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     	}
 
     	private void 睫毛長さ(Par p, double d)
@@ -1943,12 +1943,12 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		瞼下CD = new ColorD(ref 体配色.睫毛.Col1, ref 体配色.人肌O);
     		瞼上CD = new ColorD(ref 体配色.睫毛.Col1, ref 体配色.人肌O);

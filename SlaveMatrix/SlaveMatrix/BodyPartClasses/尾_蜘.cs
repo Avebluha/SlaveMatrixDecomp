@@ -399,7 +399,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -447,7 +447,7 @@ namespace SlaveMatrix
 
     	public JointS 出糸_接続点 => new JointS(Body, X0Y0_尾0, 0);
 
-    	public 尾_蜘(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 尾_蜘D e)
+    	public 尾_蜘(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 尾_蜘D e)
     	{
     		尾_蜘 尾_蜘2 = this;
     		ThisType = GetType();
@@ -559,7 +559,7 @@ namespace SlaveMatrix
     		X0Y0_出糸突起前_出糸突起左CP = new ColorP(X0Y0_出糸突起前_出糸突起左, 出糸突起前_出糸突起左CD, DisUnit, abj: true);
     		X0Y0_出糸突起前_出糸突起右CP = new ColorP(X0Y0_出糸突起前_出糸突起右, 出糸突起前_出糸突起右CD, DisUnit, abj: true);
     		X0Y0_付根線CP = new ColorP(X0Y0_付根線, 付根線CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     	}
 
     	public override void SetAngle0()
@@ -595,7 +595,7 @@ namespace SlaveMatrix
     		X0Y0_付根線CP.Update();
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		switch (配色指定)
     		{
@@ -614,7 +614,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		尾0CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
     		柄0CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
@@ -635,7 +635,7 @@ namespace SlaveMatrix
     		付根線CD = new ColorD(ref Col.Black, ref Color2.Empty);
     	}
 
-    	private void 配色T0(体配色 体配色)
+    	private void 配色T0(BodyColorSet 体配色)
     	{
     		尾0CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
     		柄0CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
@@ -656,7 +656,7 @@ namespace SlaveMatrix
     		付根線CD = new ColorD(ref Col.Black, ref Color2.Empty);
     	}
 
-    	private void 配色T1(体配色 体配色)
+    	private void 配色T1(BodyColorSet 体配色)
     	{
     		尾0CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
     		柄0CD = new ColorD(ref Col.Black, ref 体配色.甲0O);

@@ -3579,7 +3579,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -3771,7 +3771,7 @@ namespace SlaveMatrix
 
     	public JointS 鎖4_接続点 => new JointS(Body, X0Y0_手先_輪2_金具右, 0);
 
-    	public 触手_触(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 触手_触D e)
+    	public 触手_触(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 触手_触D e)
     	{
     		ThisType = GetType();
     		Dif dif = new Dif();
@@ -4426,7 +4426,7 @@ namespace SlaveMatrix
     		X0Y0_手先_節10_吸盤_吸盤4CP = new ColorP(X0Y0_手先_節10_吸盤_吸盤4, 手先_節10_吸盤_吸盤4CD, DisUnit, abj: true);
     		X0Y0_手先_節10_爪_爪2CP = new ColorP(X0Y0_手先_節10_爪_爪2, 手先_節10_爪_爪2CD, DisUnit, abj: true);
     		X0Y0_手先_節10_爪_爪1CP = new ColorP(X0Y0_手先_節10_爪_爪1, 手先_節10_爪_爪1CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     		鎖1 = new 拘束鎖(DisUnit, 右, 配色指定, 体配色, Xasix);
     		鎖2 = new 拘束鎖(DisUnit, !右, 配色指定, 体配色, Xasix);
     		鎖3 = new 拘束鎖(DisUnit, 右, 配色指定, 体配色, Xasix);
@@ -4991,7 +4991,7 @@ namespace SlaveMatrix
     		鎖4.色更新();
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		switch (配色指定)
     		{
@@ -5010,7 +5010,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		腕部_節1_節CD = new ColorD(ref Col.Black, ref 体配色.体1O);
     		腕部_節1_紋柄_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
@@ -5187,7 +5187,7 @@ namespace SlaveMatrix
     		手先_輪2_金具右CD = new ColorD();
     	}
 
-    	private void 配色T0(体配色 体配色)
+    	private void 配色T0(BodyColorSet 体配色)
     	{
     		this.配色T(0, "節CD", ref 体配色.体1O, ref 体配色.刺青O);
     		腕部_節1_紋柄_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
@@ -5330,7 +5330,7 @@ namespace SlaveMatrix
     		手先_輪2_金具右CD = new ColorD();
     	}
 
-    	private void 配色T1(体配色 体配色)
+    	private void 配色T1(BodyColorSet 体配色)
     	{
     		this.配色T(1, "節CD", ref 体配色.体1O, ref 体配色.刺青O);
     		腕部_節1_紋柄_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);

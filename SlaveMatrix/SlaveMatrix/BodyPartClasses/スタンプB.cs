@@ -7,7 +7,7 @@ namespace SlaveMatrix
 {
     public class スタンプB : Stamp
     {
-    	private Mot ぶっかけ垂れ;
+    	private Motion ぶっかけ垂れ;
 
     	public override void Draw(RenderArea Are)
     	{
@@ -66,30 +66,30 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public スタンプB(ModeEventDispatcher Med, RenderArea Are, Cha Cha, Bod Bod, EleD EleD, Mots Mots)
+    	public スタンプB(ModeEventDispatcher Med, RenderArea Are, Character Cha, Body Bod, EleD EleD, Motions Mots)
     		: base(Med, Are, Cha, Bod, EleD)
     	{
     		Ele e = null;
-    		ぶっかけ垂れ = new Mot(0.0, 1.0)
+    		ぶっかけ垂れ = new Motion(0.0, 1.0)
     		{
     			BaseSpeed = 1.0,
-    			Staing = delegate(Mot m)
+    			OnStart = delegate(Motion m)
     			{
     				e = sta.Last().Sta;
     				m.Max = RNG.XS.NextDouble();
     			},
-    			Runing = delegate(Mot m)
+    			OnUpdate = delegate(Motion m)
     			{
     				e.Yv = m.Value;
     			},
-    			Reaing = delegate(Mot m)
+    			OnReach = delegate(Motion m)
     			{
     				m.End();
     			},
-    			Rouing = delegate
+    			OnLoop = delegate
     			{
     			},
-    			Ending = delegate
+    			OnEnd = delegate
     			{
     			}
     		};

@@ -283,7 +283,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -307,7 +307,7 @@ namespace SlaveMatrix
 
     	public JointS UpperArm_接続点 => new JointS(Body, X0Y0_Shoulder_Shoulder, 1);
 
-    	public Shoulder(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, ShoulderD e)
+    	public Shoulder(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, ShoulderD e)
     	{
     		Shoulder Shoulder2 = this;
     		ThisType = GetType();
@@ -394,7 +394,7 @@ namespace SlaveMatrix
     		X0Y0_Shoulder_傷I4CP = new ColorP(X0Y0_Shoulder_傷I4, Shoulder_傷I4CD, DisUnit, abj: true);
     		X0Y0_Shoulder_シャツCP = new ColorP(X0Y0_Shoulder_シャツ, Shoulder_シャツCD, DisUnit, abj: true);
     		X0Y0_Shoulder_ナースCP = new ColorP(X0Y0_Shoulder_ナース, Shoulder_ナースCD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     		X0Y0_脇_脇.BasePointBase = X0Y0_脇_脇.BasePointBase.AddY(-0.001);
     	}
 
@@ -455,12 +455,12 @@ namespace SlaveMatrix
     		X0Y0_Shoulder_ナースCP.Update(ナース);
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		脇_脇CD = new ColorD(ref Col.Black, ref 体配色.人肌R);
     		脇_筋肉CD = new ColorD(ref Col.Black, ref 体配色.人肌R);

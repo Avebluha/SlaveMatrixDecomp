@@ -173,7 +173,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -206,7 +206,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 頭頂_皿(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 頭頂_皿D e)
+    	public 頭頂_皿(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 頭頂_皿D e)
     	{
     		ThisType = GetType();
     		Dif dif = new Dif();
@@ -269,7 +269,7 @@ namespace SlaveMatrix
     		X0Y0_甲殻_甲殻3CP = new ColorP(X0Y0_甲殻_甲殻3, 甲殻_甲殻3CD, DisUnit, abj: true);
     		X0Y0_甲殻_甲殻2CP = new ColorP(X0Y0_甲殻_甲殻2, 甲殻_甲殻2CD, DisUnit, abj: true);
     		X0Y0_甲殻_甲殻1CP = new ColorP(X0Y0_甲殻_甲殻1, 甲殻_甲殻1CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     	}
 
     	public override void 色更新()
@@ -282,12 +282,12 @@ namespace SlaveMatrix
     		X0Y0_甲殻_甲殻1CP.Update();
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		皿1CD = new ColorD(ref Col.Black, ref 体配色.歯);
     		皿2CD = new ColorD(ref Col.Black, ref 体配色.爪O);

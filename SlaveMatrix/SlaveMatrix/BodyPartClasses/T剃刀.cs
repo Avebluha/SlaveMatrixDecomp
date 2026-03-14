@@ -451,7 +451,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -482,7 +482,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public T剃刀(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, T剃刀D e)
+    	public T剃刀(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, T剃刀D e)
     	{
     		ThisType = GetType();
     		Body = new Difs(Sta.カーソル["T字剃刀"]);
@@ -582,7 +582,7 @@ namespace SlaveMatrix
     		X0Y0_グリップ_グリップ13CP = new ColorP(X0Y0_グリップ_グリップ13, グリップ_グリップ13CD, DisUnit, abj: true);
     		X0Y0_グリップ_グリップ14CP = new ColorP(X0Y0_グリップ_グリップ14, グリップ_グリップ14CD, DisUnit, abj: true);
     		X0Y0_グリップ_グリップ15CP = new ColorP(X0Y0_グリップ_グリップ15, グリップ_グリップ15CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     		Vector2D local = X0Y0_刃_刃1.OP[0].ps[1];
     		foreach (Par item in Body.EnumJoinRoot)
     		{
@@ -616,12 +616,12 @@ namespace SlaveMatrix
     		X0Y0_グリップ_グリップ15CP.Update();
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		ヘッドCD = new ColorD();
     		ヘッドCD.線 = Col.Black;

@@ -647,7 +647,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -694,7 +694,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 上着トップ_ドレス(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 上着トップ_ドレスD e)
+    	public 上着トップ_ドレス(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 上着トップ_ドレスD e)
     	{
     		ThisType = GetType();
     		Dif dif = new Dif(Sta.胴体["上着トップ"][2]);
@@ -841,7 +841,7 @@ namespace SlaveMatrix
     		X0Y0_右_柄_柄2CP = new ColorP(X0Y0_右_柄_柄2, 右_柄_柄2CD, DisUnit, abj: true);
     		X0Y0_右_バストCP = new ColorP(X0Y0_右_バスト, 右_バストCD, DisUnit, abj: true);
     		X0Y0_右_縁CP = new ColorP(X0Y0_右_縁, 右_縁CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     	}
 
     	public override bool Is革(Par p)
@@ -907,12 +907,12 @@ namespace SlaveMatrix
     		X0Y0_右_縁CP.Update(縁右);
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		服基CD = new ColorD(ref Col.Empty, ref Color2.Empty);
     		紐_紐1_紐下_紐CD = new ColorD();

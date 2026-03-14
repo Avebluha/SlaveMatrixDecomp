@@ -86,7 +86,7 @@ namespace SlaveMatrix
     //probably represents the player
     public static class Player
     {
-    	public static Cha Cha;
+    	public static Character Cha;
 
     	public static TrainingUI UI;
 
@@ -154,7 +154,7 @@ namespace SlaveMatrix
 
     	public static double 調教前調教力;
 
-    	public static Mot ゲージ降下処理;
+    	public static Motion ゲージ降下処理;
 
     	public static bool 強制終了;
 
@@ -406,7 +406,7 @@ namespace SlaveMatrix
     		{
     			if (!強制終了 && Sta.GameData.TrainingTarget != null && Cha != null)
     			{
-    				return Cha.Med.Mode == "Training";
+    				return Cha.ModeEventDispatcher.Mode == "Training";
     			}
     			return false;
     		}
@@ -475,7 +475,7 @@ namespace SlaveMatrix
 
     	public static double 緊張値 => (Sensitivity + Tension.Inverse() + Shame.Inverse()) / 3.0 * Lust * Affection * 処女0_8w * 傷物0_8w * 調教済1_1w * 拘束具補正減 * 目隠帯補正減;
 
-    	public static double 羞恥値 => (Sensitivity + Excitement + PlayerExcitement + Shame + Cha.Bod.くぱぁ0) / 5.0 * Affection * 無毛1_5w * 処女1_5w * 発情0_5w * 調教済1_1w * 目隠帯補正減 * 玉口枷補正増;
+    	public static double 羞恥値 => (Sensitivity + Excitement + PlayerExcitement + Shame + Cha.Body.くぱぁ0) / 5.0 * Affection * 無毛1_5w * 処女1_5w * 発情0_5w * 調教済1_1w * 目隠帯補正減 * 玉口枷補正増;
 
     	public static double 奉仕補正
     	{
@@ -612,7 +612,7 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			if (!Cha.Bod.拘束具_表示)
+    			if (!Cha.Body.拘束具_表示)
     			{
     				return 1.0;
     			}
@@ -624,7 +624,7 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			if (!Cha.Bod.拘束具_表示)
+    			if (!Cha.Body.拘束具_表示)
     			{
     				return 1.0;
     			}
@@ -636,7 +636,7 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			if (!Cha.Bod.目隠帯_表示)
+    			if (!Cha.Body.目隠帯_表示)
     			{
     				return 1.0;
     			}
@@ -648,7 +648,7 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			if (!Cha.Bod.目隠帯_表示)
+    			if (!Cha.Body.目隠帯_表示)
     			{
     				return 1.0;
     			}
@@ -660,7 +660,7 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			if (!Cha.Bod.玉口枷_表示)
+    			if (!Cha.Body.玉口枷_表示)
     			{
     				return 1.0;
     			}
@@ -672,7 +672,7 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			if (!Cha.Bod.玉口枷_表示)
+    			if (!Cha.Body.玉口枷_表示)
     			{
     				return 1.0;
     			}
@@ -726,7 +726,7 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			if (!絶頂中 && !Cha.Bod.Is拘束 && Pride == 0.0)
+    			if (!絶頂中 && !Cha.Body.Is拘束 && Pride == 0.0)
     			{
     				if (!(Lust > 0.5) && !(Affection > 0.5))
     				{
@@ -758,7 +758,7 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			if (Cha.Bod.Is最前手人 && 奉仕0)
+    			if (Cha.Body.Is最前手人 && 奉仕0)
     			{
     				return SkillL > 0.1 * Sta.GameData.TrainingTarget.MaxSkillL;
     			}
@@ -782,7 +782,7 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			if (Cha.Bod.Is最前手人 && 奉仕0)
+    			if (Cha.Body.Is最前手人 && 奉仕0)
     			{
     				return SkillL > 0.2 * Sta.GameData.TrainingTarget.MaxSkillL;
     			}
@@ -794,7 +794,7 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			if (Cha.Bod.Is最前手人 && 奉仕0)
+    			if (Cha.Body.Is最前手人 && 奉仕0)
     			{
     				return SkillL > 0.4 * Sta.GameData.TrainingTarget.MaxSkillL;
     			}
@@ -806,7 +806,7 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			if (Cha.Bod.Is最前手人 && 奉仕0)
+    			if (Cha.Body.Is最前手人 && 奉仕0)
     			{
     				return SkillL > 0.6 * Sta.GameData.TrainingTarget.MaxSkillL;
     			}
@@ -818,7 +818,7 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			if (奉仕1 && !Cha.Bod.玉口枷_表示)
+    			if (奉仕1 && !Cha.Body.玉口枷_表示)
     			{
     				return SkillL > 0.15 * Sta.GameData.TrainingTarget.MaxSkillL;
     			}
@@ -830,7 +830,7 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			if (!絶頂中 && 奉仕1 && !Cha.Bod.玉口枷_表示 && SkillL > 0.5 * Sta.GameData.TrainingTarget.MaxSkillL)
+    			if (!絶頂中 && 奉仕1 && !Cha.Body.玉口枷_表示 && SkillL > 0.5 * Sta.GameData.TrainingTarget.MaxSkillL)
     			{
     				return CurrentToolType == ToolType.Penis;
     			}
@@ -878,7 +878,7 @@ namespace SlaveMatrix
 
     	public static double 変化V_糸 => 糸挿入度;
 
-    	public static double 変化V_固有値乱数 => Cha.ChaD.固有値 * RNG.XS.NextDouble();
+    	public static double 変化V_固有値乱数 => Cha.CharacterData.固有値 * RNG.XS.NextDouble();
 
     	public static double 無毛1_5w
     	{
@@ -1067,21 +1067,21 @@ namespace SlaveMatrix
     			Cha.Emotion();
     			Cha.UpdateExpression();
     			Cha.UpdatePosture();
-    			Cha.Bod.処女喪失 = false;
-    			Cha.Bod.膣内精液.血液1_表示 = false;
-    			Cha.Bod.膣内精液.血液2_表示 = false;
-    			Cha.Bod.性器精液.血液1_表示 = false;
-    			Cha.Bod.性器精液.血液2_表示 = false;
-    			Cha.Bod.飛沫濃度 = 0.0;
-    			Cha.Bod.潮染み濃度 = 0.0;
-    			Cha.Bod.尿染み濃度 = 0.0;
-    			Cha.Bod.湯気左濃度 = 0.0;
-    			Cha.Bod.湯気右濃度 = 0.0;
+    			Cha.Body.処女喪失 = false;
+    			Cha.Body.VaginalCumDrip.血液1_表示 = false;
+    			Cha.Body.VaginalCumDrip.血液2_表示 = false;
+    			Cha.Body.GenetalCum.血液1_表示 = false;
+    			Cha.Body.GenetalCum.血液2_表示 = false;
+    			Cha.Body.SplashIntencity = 0.0;
+    			Cha.Body.SquirtStainIntensity = 0.0;
+    			Cha.Body.UrineStainIntensity = 0.0;
+    			Cha.Body.湯気左濃度 = 0.0;
+    			Cha.Body.湯気右濃度 = 0.0;
     			放尿率 = 1.0;
-    			Cha.Bod.噴乳左.母乳垂れ1_表示 = false;
-    			Cha.Bod.噴乳左.母乳垂れ2_表示 = false;
-    			Cha.Bod.噴乳右.母乳垂れ1_表示 = false;
-    			Cha.Bod.噴乳右.母乳垂れ2_表示 = false;
+    			Cha.Body.LeftMilkSpray.母乳垂れ1_表示 = false;
+    			Cha.Body.LeftMilkSpray.母乳垂れ2_表示 = false;
+    			Cha.Body.RightMilkSpary.母乳垂れ1_表示 = false;
+    			Cha.Body.RightMilkSpary.母乳垂れ2_表示 = false;
     			表示ステート更新();
     			強制終了 = false;
     			ModBox();
@@ -1097,7 +1097,7 @@ namespace SlaveMatrix
     	public static void Result2()
     	{
     		UI.ip.TextIm = GameText.抵抗値 + Pride.Numf2() + "\r\n" + GameText.欲望度 + Lust.Numf2() + " " + GameText.情愛度 + Affection.Numf2() + "\r\n" + GameText.卑屈度 + Training.Numf2() + " " + GameText.技巧度 + SkillL.Numf2() + "\r\n\r\n" + GameText.調教力 + 調教力.Numf2();
-    		Cha.Bod.変動ステート更新();
+    		Cha.Body.変動ステート更新();
     	}
 
     	public static void アクション入力(ContactType contactType, ActionType actionType, CurrentState タイミング情報, ToolType toolType, int 挿入Lv, int 強さ, bool 機械, bool 射精)
@@ -1198,11 +1198,11 @@ namespace SlaveMatrix
     		}
     		if (0.05.Lot())
     		{
-    			if (Cha.Bod.Is双眉)
+    			if (Cha.Body.Is双眉)
     			{
     				Cha.両眉_0(RNG.XS.NextBool(), RNG.XS.NextM(3, 4), RNG.XS.NextM(3, 4));
     			}
-    			if (Cha.Bod.Is単眉)
+    			if (Cha.Body.Is単眉)
     			{
     				Cha.単眉_顰();
     			}
@@ -1221,10 +1221,10 @@ namespace SlaveMatrix
     		}
     		絶頂中 = true;
     		double value = 4.0 * Excitement * Tension.Inverse() * Shame * Pride.Inverse() * Lust * Affection;
-    		Cha.絶頂激しさ = value.Clamp(0.0, 1.0);
-    		Cha.絶頂時間 = value.Clamp(0.0, 0.85);
+    		Cha.ClimaxIntensity = value.Clamp(0.0, 1.0);
+    		Cha.ClimaxDuration = value.Clamp(0.0, 0.85);
     		UI.絶頂ゲージ点滅.Start();
-    		Cha.絶頂.Start();
+    		Cha.Climax.Start();
     		if (UI.ペニス処理.手コキ.Run)
     		{
     			UI.ペニス処理.手コキ.End();
@@ -1246,11 +1246,11 @@ namespace SlaveMatrix
     		Reaction0();
     		if (0.05.Lot())
     		{
-    			if (Cha.Bod.Is双眉)
+    			if (Cha.Body.Is双眉)
     			{
     				Cha.両眉_0(RNG.XS.NextBool(), RNG.XS.NextM(3, 4), RNG.XS.NextM(3, 4));
     			}
-    			if (Cha.Bod.Is単眉)
+    			if (Cha.Body.Is単眉)
     			{
     				Cha.単眉_顰();
     			}
@@ -1275,21 +1275,21 @@ namespace SlaveMatrix
     		}
     		if (絶頂回数 > 1 && Lust > 0.6 && 0.1.Lot())
     		{
-    			if (Cha.Bod.Is双眼)
+    			if (Cha.Body.IsDualEyes)
     			{
     				Cha.目_上転左();
     				Cha.目_上転右();
     			}
-    			if (Cha.Bod.Is単眼)
+    			if (Cha.Body.IsSingleEye)
     			{
     				Cha.単目_上転();
     			}
-    			if (Cha.Bod.Is頬眼)
+    			if (Cha.Body.IsCheekEyes)
     			{
     				Cha.頬目_上転左();
     				Cha.頬目_上転右();
     			}
-    			if (Cha.Bod.Is額眼)
+    			if (Cha.Body.IsForeheadEye)
     			{
     				Cha.額目_上転();
     			}
@@ -1298,21 +1298,21 @@ namespace SlaveMatrix
     		{
     			if (0.1.Lot())
     			{
-    				if (Cha.Bod.Is双眼)
+    				if (Cha.Body.IsDualEyes)
     				{
     					Cha.瞼_瞑左();
     					Cha.瞼_瞑右();
     				}
-    				if (Cha.Bod.Is単眼)
+    				if (Cha.Body.IsSingleEye)
     				{
     					Cha.単瞼_瞑();
     				}
-    				if (Cha.Bod.Is頬眼)
+    				if (Cha.Body.IsCheekEyes)
     				{
     					Cha.頬瞼_瞑左();
     					Cha.頬瞼_瞑右();
     				}
-    				if (Cha.Bod.Is額眼)
+    				if (Cha.Body.IsForeheadEye)
     				{
     					Cha.額瞼_瞑();
     				}
@@ -1320,48 +1320,48 @@ namespace SlaveMatrix
     		}
     		else if (0.1.Lot())
     		{
-    			if (Cha.Bod.Is双眼)
+    			if (Cha.Body.IsDualEyes)
     			{
     				Cha.瞼_半1左();
     				Cha.瞼_半1右();
     			}
-    			if (Cha.Bod.Is単眼)
+    			if (Cha.Body.IsSingleEye)
     			{
     				Cha.単瞼_半1();
     			}
-    			if (Cha.Bod.Is頬眼)
+    			if (Cha.Body.IsCheekEyes)
     			{
     				Cha.頬瞼_半1左();
     				Cha.頬瞼_半1右();
     			}
-    			if (Cha.Bod.Is額眼)
+    			if (Cha.Body.IsForeheadEye)
     			{
     				Cha.額瞼_半1();
     			}
     		}
     		if (手膣 && Stamina > 0.1 && Wetness > 0.6 && Tension == 0.0 && Lust > 0.7 && Affection > 0.7 && (Excitement * 0.05).Lot())
     		{
-    			Cha.潮吹大.Start();
+    			Cha.SquirtLarge.Start();
     		}
     		else if (Wetness > 0.5 && Tension == 0.0 && Lust > 0.5 && Affection > 0.5 && (Excitement * 0.05).Lot())
     		{
-    			Cha.潮吹小.Start();
+    			Cha.SquirtSmall.Start();
     		}
-    		if (Cha.Crying && Cha.Bod.舌_表示 && (Cha.絶頂激しさ * 0.0008).Lot())
+    		if (Cha.Crying && Cha.Body.舌_表示 && (Cha.ClimaxIntensity * 0.0008).Lot())
     		{
-    			Cha.鼻水.Start();
+    			Cha.NoseDrip.Start();
     		}
-    		if ((Cha.Bod.舌_表示 || Cha.Bod.玉口枷_表示) && (Cha.絶頂激しさ * 0.001).Lot())
+    		if ((Cha.Body.舌_表示 || Cha.Body.玉口枷_表示) && (Cha.ClimaxIntensity * 0.001).Lot())
     		{
-    			Cha.涎.Start();
+    			Cha.Drool.Start();
     		}
     		if (0.05.Lot())
     		{
-    			if (Cha.Bod.Is双眉)
+    			if (Cha.Body.Is双眉)
     			{
     				Cha.両眉_0(RNG.XS.NextBool(), RNG.XS.NextM(3, 4), RNG.XS.NextM(3, 4));
     			}
-    			if (Cha.Bod.Is単眉)
+    			if (Cha.Body.Is単眉)
     			{
     				Cha.単眉_顰();
     			}
@@ -1377,9 +1377,9 @@ namespace SlaveMatrix
     		if (加算前提)
     		{
     			絶頂終了処理_();
-    			if (Cha.Bod.くぱぁ0 > 0.5 && (0.1 + 放尿率 * 放尿経験値 * Tension.Inverse() * 0.5).Lot())
+    			if (Cha.Body.くぱぁ0 > 0.5 && (0.1 + 放尿率 * 放尿経験値 * Tension.Inverse() * 0.5).Lot())
     			{
-    				Cha.放尿.Start();
+    				Cha.Urination.Start();
     				放尿率 = (放尿率 - 0.1).Clamp(0.0, 1.0);
     				放尿経験値 = (放尿経験値 + 0.03 * RNG.XS.NextDouble()).Clamp(0.0, 1.0);
     			}
@@ -1391,8 +1391,8 @@ namespace SlaveMatrix
     	{
     		UI.絶頂ゲージ点滅.End();
     		絶頂中 = false;
-    		Sensitivity -= Cha.絶頂激しさ.Inverse() * 0.5;
-    		Excitement -= Cha.絶頂激しさ.Inverse() * 0.5;
+    		Sensitivity -= Cha.ClimaxIntensity.Inverse() * 0.5;
+    		Excitement -= Cha.ClimaxIntensity.Inverse() * 0.5;
     	}
 
     	public static void 射精処理()
@@ -1411,26 +1411,26 @@ namespace SlaveMatrix
     		}
     		if (((SkillL + Lust) * 0.05).Lot())
     		{
-    			if (Cha.Bod.Is双眼)
+    			if (Cha.Body.IsDualEyes)
     			{
     				Cha.目_見つめ左();
     				Cha.目_見つめ右();
     			}
-    			if (Cha.Bod.Is頬眼)
+    			if (Cha.Body.IsCheekEyes)
     			{
     				Cha.頬目_見つめ左();
     				Cha.頬目_見つめ右();
     			}
-    			if (Cha.Bod.Is単眼)
+    			if (Cha.Body.IsSingleEye)
     			{
     				Cha.単目_見つめ();
     			}
-    			if (Cha.Bod.Is額眼)
+    			if (Cha.Body.IsForeheadEye)
     			{
     				Cha.額目_見つめ();
     			}
     		}
-    		if (!Cha.Bod.玉口枷_表示 && !Cha.Bod.舌_表示 && ((SkillL + Lust) * 0.05).Lot())
+    		if (!Cha.Body.玉口枷_表示 && !Cha.Body.舌_表示 && ((SkillL + Lust) * 0.05).Lot())
     		{
     			Cha.口_開き();
     			Cha.舌_出し();
@@ -1465,26 +1465,26 @@ namespace SlaveMatrix
     		}
     		if (((SkillL + Lust) * 0.05).Lot())
     		{
-    			if (Cha.Bod.Is双眼)
+    			if (Cha.Body.IsDualEyes)
     			{
     				Cha.目_見つめ左();
     				Cha.目_見つめ右();
     			}
-    			if (Cha.Bod.Is頬眼)
+    			if (Cha.Body.IsCheekEyes)
     			{
     				Cha.頬目_見つめ左();
     				Cha.頬目_見つめ右();
     			}
-    			if (Cha.Bod.Is単眼)
+    			if (Cha.Body.IsSingleEye)
     			{
     				Cha.単目_見つめ();
     			}
-    			if (Cha.Bod.Is額眼)
+    			if (Cha.Body.IsForeheadEye)
     			{
     				Cha.額目_見つめ();
     			}
     		}
-    		if (!Cha.Bod.玉口枷_表示 && !Cha.Bod.舌_表示 && ((SkillL + Lust) * 0.05).Lot())
+    		if (!Cha.Body.玉口枷_表示 && !Cha.Body.舌_表示 && ((SkillL + Lust) * 0.05).Lot())
     		{
     			Cha.口_開き();
     			Cha.舌_出し();
@@ -1538,42 +1538,42 @@ namespace SlaveMatrix
     		}
     		if (0.7.Lot())
     		{
-    			if (Cha.Bod.Is双眼)
+    			if (Cha.Body.IsDualEyes)
     			{
     				Cha.瞼_瞑左();
     				Cha.瞼_瞑右();
     			}
-    			if (Cha.Bod.Is単眼)
+    			if (Cha.Body.IsSingleEye)
     			{
     				Cha.単瞼_瞑();
     			}
-    			if (Cha.Bod.Is頬眼)
+    			if (Cha.Body.IsCheekEyes)
     			{
     				Cha.頬瞼_瞑左();
     				Cha.頬瞼_瞑右();
     			}
-    			if (Cha.Bod.Is額眼)
+    			if (Cha.Body.IsForeheadEye)
     			{
     				Cha.額瞼_瞑();
     			}
     		}
     		else
     		{
-    			if (Cha.Bod.Is双眼)
+    			if (Cha.Body.IsDualEyes)
     			{
     				Cha.瞼_半2左();
     				Cha.瞼_半2右();
     			}
-    			if (Cha.Bod.Is単眼)
+    			if (Cha.Body.IsSingleEye)
     			{
     				Cha.単瞼_半2();
     			}
-    			if (Cha.Bod.Is頬眼)
+    			if (Cha.Body.IsCheekEyes)
     			{
     				Cha.頬瞼_半2左();
     				Cha.頬瞼_半2右();
     			}
-    			if (Cha.Bod.Is額眼)
+    			if (Cha.Body.IsForeheadEye)
     			{
     				Cha.額瞼_半2();
     			}
@@ -1681,7 +1681,7 @@ namespace SlaveMatrix
     		double num2 = 0.0005 - num;
     		if (接触o == CurrentContactType && 強さo == 強さn)
     		{
-    			奴隷接触慣れ = (奴隷接触慣れ + (num + num2 * Cha.ChaD.固有値 * 調教力.Inverse())).Clamp(0.0, 1.0);
+    			奴隷接触慣れ = (奴隷接触慣れ + (num + num2 * Cha.CharacterData.固有値 * 調教力.Inverse())).Clamp(0.0, 1.0);
     		}
     		else
     		{
@@ -1689,7 +1689,7 @@ namespace SlaveMatrix
     		}
     		if (アクション情報o == CurrentActionType && 強さo == 強さn)
     		{
-    			奴隷アクション慣れ = (奴隷アクション慣れ + (num + num2 * Cha.ChaD.固有値 * 調教力.Inverse())).Clamp(0.0, 1.0);
+    			奴隷アクション慣れ = (奴隷アクション慣れ + (num + num2 * Cha.CharacterData.固有値 * 調教力.Inverse())).Clamp(0.0, 1.0);
     		}
     		else
     		{
@@ -1748,17 +1748,17 @@ namespace SlaveMatrix
     		Wetness = (Wetness + (num + num2 * 奴隷a * 潤滑値)).Clamp(0.0, 1.0);
     	}
 
-    	public static bool 苦痛条件(this Cha c)
+    	public static bool 苦痛条件(this Character c)
     	{
-    		if ((!機械n || !(c.ChaD.Lust < 0.5) || !(c.ChaD.Affection < 0.5)) && (CurrentActionType != ActionType.Whipping || !(c.ChaD.Lust < 0.65)))
+    		if ((!機械n || !(c.CharacterData.Lust < 0.5) || !(c.CharacterData.Affection < 0.5)) && (CurrentActionType != ActionType.Whipping || !(c.CharacterData.Lust < 0.65)))
     		{
     			if (CurrentActionType == ActionType.Insertion)
     			{
-    				if (!(c.ChaD.Wetness < 0.5) && !Virgin)
+    				if (!(c.CharacterData.Wetness < 0.5) && !Virgin)
     				{
     					if (CurrentContactType != 0)
     					{
-    						return c.ChaD.Sesnsitivities[CurrentContactType] < 0.5;
+    						return c.CharacterData.Sesnsitivities[CurrentContactType] < 0.5;
     					}
     					return false;
     				}
@@ -1822,7 +1822,7 @@ namespace SlaveMatrix
     		{
     			部位感度[CurrentContactType] = (部位感度[CurrentContactType] + 0.015 * 奴隷a * 調教力影響値 * 発情1_5w * 調教済1_1w).Clamp(0.0, 1.0);
     		}
-    		if (Cha.Bod.玉口枷_表示 && 部位感度.ContainsKey(ContactType.Mouth))
+    		if (Cha.Body.玉口枷_表示 && 部位感度.ContainsKey(ContactType.Mouth))
     		{
     			部位感度[ContactType.Mouth] = (部位感度[ContactType.Mouth] + 0.005 * 奴隷a * 調教力影響値 * 発情1_5w * 調教済1_1w).Clamp(0.0, 1.0);
     		}
@@ -1852,7 +1852,7 @@ namespace SlaveMatrix
     		{
     			Training = (Training + 0.5 * 奴隷a * 調教力影響値 * 傷物1_2w * 拘束具補正増 * 玉口枷補正増).Clamp(0.0, 1.0);
     		}
-    		if ((0.1 * RNG.XS.NextDouble() * Cha.ChaD.固有値).Lot())
+    		if ((0.1 * RNG.XS.NextDouble() * Cha.CharacterData.固有値).Lot())
     		{
     			Training = (Training + 0.2 * 奴隷a * 調教力影響値 * 傷物1_2w * 拘束具補正増 * 玉口枷補正増).Clamp(0.0, 1.0);
     		}
@@ -1877,7 +1877,7 @@ namespace SlaveMatrix
     		{
     			部位感度[CurrentContactType] = (部位感度[CurrentContactType] + 0.03 * 奴隷a * 感度興奮差 * 調教力影響値 * 発情1_5w * 調教済1_1w * RNG.XS.NextDouble()).Clamp(0.0, 1.0);
     		}
-    		if (Cha.Bod.玉口枷_表示 && 部位感度.ContainsKey(ContactType.Mouth))
+    		if (Cha.Body.玉口枷_表示 && 部位感度.ContainsKey(ContactType.Mouth))
     		{
     			部位感度[ContactType.Mouth] = (部位感度[ContactType.Mouth] + 0.01 * 奴隷a * 調教力影響値 * 発情1_5w * 調教済1_1w).Clamp(0.0, 1.0);
     		}
@@ -1923,30 +1923,30 @@ namespace SlaveMatrix
     		UI.精力mゲージ.Value = PlayerStamina;
     		UI.射精mゲージ.Value = PlayerSensitivity;
     		UI.興奮mゲージ.Value = PlayerExcitement;
-    		Cha.Bod.下着B染み = Wetness;
-    		Cha.Bod.陰核勃起 = Excitement;
-    		Cha.Bod.乳首勃起 = Excitement;
-    		Cha.Bod.顔紅潮 = Excitement.Max(Shame);
-    		Cha.Bod.体紅潮 = Excitement;
-    		Cha.呼吸速度 = 0.2 + 0.8 * Excitement;
+    		Cha.Body.下着B染み = Wetness;
+    		Cha.Body.陰核勃起 = Excitement;
+    		Cha.Body.乳首勃起 = Excitement;
+    		Cha.Body.顔紅潮 = Excitement.Max(Shame);
+    		Cha.Body.体紅潮 = Excitement;
+    		Cha.BreathingSpeed = 0.2 + 0.8 * Excitement;
     		if (Lust > 0.5 && Affection > 0.5)
     		{
-    			Cha.Bod.子宮下がり = Excitement;
+    			Cha.Body.子宮下がり = Excitement;
     		}
     		if (Lust > 0.5 && 部位感度[ContactType.Anal] > 0.75)
     		{
-    			Cha.Bod.肛門開き = Excitement;
+    			Cha.Body.肛門開き = Excitement;
     		}
     		if (Lust > 0.3)
     		{
     			if (!UI.ハンド処理.Isくぱぁ && (!UI.Is挿入 || UI.ハンド左.Xi == 7))
     			{
-    				Cha.Bod.くぱぁ0 = Excitement;
+    				Cha.Body.くぱぁ0 = Excitement;
     			}
-    			if (!Cha.ChaD.股施術 && (Cha.Bod.Is蠍 || (Cha.Bod.Is蛇 && Cha.Bod.蛇.ガード)))
+    			if (!Cha.CharacterData.股施術 && (Cha.Body.Is蠍 || (Cha.Body.Is蛇 && Cha.Body.蛇.ガード)))
     			{
-    				Cha.Bod.くぱぁ1 = Excitement;
-    				if (Cha.Bod.くぱぁ1 < 0.3)
+    				Cha.Body.くぱぁ1 = Excitement;
+    				if (Cha.Body.くぱぁ1 < 0.3)
     				{
     					UI.くぱぁ閉じ時();
     				}
@@ -1971,100 +1971,100 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public static double 否定_(this Cha c)
+    	public static double 否定_(this Character c)
     	{
-    		return c.ChaD.Pride;
+    		return c.CharacterData.Pride;
     	}
 
-    	public static double 屈辱_(this Cha c)
+    	public static double 屈辱_(this Character c)
     	{
-    		return c.ChaD.Sensitivity * c.ChaD.Pride * c.ChaD.Taming;
+    		return c.CharacterData.Sensitivity * c.CharacterData.Pride * c.CharacterData.Taming;
     	}
 
-    	public static double 羞恥_(this Cha c)
+    	public static double 羞恥_(this Character c)
     	{
-    		return c.ChaD.Shyness;
+    		return c.CharacterData.Shyness;
     	}
 
-    	public static double 受容_(this Cha c)
+    	public static double 受容_(this Character c)
     	{
-    		return c.ChaD.Tension.Inverse() * c.ChaD.Pride.Inverse() * c.ChaD.Affection;
+    		return c.CharacterData.Tension.Inverse() * c.CharacterData.Pride.Inverse() * c.CharacterData.Affection;
     	}
 
-    	public static double 欲望_(this Cha c)
+    	public static double 欲望_(this Character c)
     	{
-    		return c.ChaD.Tension.Inverse() * c.ChaD.Pride.Inverse() * c.ChaD.Lust;
+    		return c.CharacterData.Tension.Inverse() * c.CharacterData.Pride.Inverse() * c.CharacterData.Lust;
     	}
 
-    	public static double 興奮_(this Cha c)
+    	public static double 興奮_(this Character c)
     	{
-    		return c.ChaD.Tension.Inverse() * c.ChaD.Pride.Inverse() * c.ChaD.Excitement * c.ChaD.Lust;
+    		return c.CharacterData.Tension.Inverse() * c.CharacterData.Pride.Inverse() * c.CharacterData.Excitement * c.CharacterData.Lust;
     	}
 
-    	public static double 余裕_(this Cha c)
+    	public static double 余裕_(this Character c)
     	{
-    		return c.ChaD.Tension.Inverse() * c.ChaD.Stamina * c.ChaD.Sensitivity.Inverse() * c.ChaD.Taming.Inverse() * c.ChaD.SkillL;
+    		return c.CharacterData.Tension.Inverse() * c.CharacterData.Stamina * c.CharacterData.Sensitivity.Inverse() * c.CharacterData.Taming.Inverse() * c.CharacterData.SkillL;
     	}
 
-    	public static double 幸福_(this Cha c)
+    	public static double 幸福_(this Character c)
     	{
-    		return c.ChaD.Tension.Inverse() * c.ChaD.Pride.Inverse() * c.ChaD.Tension.Inverse() * c.ChaD.Affection;
+    		return c.CharacterData.Tension.Inverse() * c.CharacterData.Pride.Inverse() * c.CharacterData.Tension.Inverse() * c.CharacterData.Affection;
     	}
 
-    	public static double 喜悦_(this Cha c)
+    	public static double 喜悦_(this Character c)
     	{
-    		return c.ChaD.Tension.Inverse() * c.ChaD.Pride.Inverse() * c.ChaD.Sensitivity * c.ChaD.Affection * c.ChaD.Lust;
+    		return c.CharacterData.Tension.Inverse() * c.CharacterData.Pride.Inverse() * c.CharacterData.Sensitivity * c.CharacterData.Affection * c.CharacterData.Lust;
     	}
 
-    	public static double 淫乱_(this Cha c)
+    	public static double 淫乱_(this Character c)
     	{
-    		return c.ChaD.Tension.Inverse() * c.ChaD.Pride.Inverse() * c.ChaD.Sensitivity * c.ChaD.Excitement * c.ChaD.Lust * c.ChaD.Taming;
+    		return c.CharacterData.Tension.Inverse() * c.CharacterData.Pride.Inverse() * c.CharacterData.Sensitivity * c.CharacterData.Excitement * c.CharacterData.Lust * c.CharacterData.Taming;
     	}
 
-    	public static double 其他_(this Cha c)
+    	public static double 其他_(this Character c)
     	{
     		return 0.2;
     	}
 
-    	public static void Emotion(this Cha c)
+    	public static void Emotion(this Character c)
     	{
-    		switch (c.ChaD.Emotion)
+    		switch (c.CharacterData.Emotion)
     		{
     		case EmotionType.none:
     			switch (Oth.GetRandomIndex(c.否定_(), c.屈辱_(), c.羞恥_(), c.受容_(), c.欲望_(), c.興奮_(), c.余裕_(), c.幸福_(), c.喜悦_(), c.淫乱_(), c.其他_()))
     			{
     			case 0:
-    				c.ChaD.Emotion = EmotionType.Denial;
+    				c.CharacterData.Emotion = EmotionType.Denial;
     				break;
     			case 1:
-    				c.ChaD.Emotion = EmotionType.Humiliation;
+    				c.CharacterData.Emotion = EmotionType.Humiliation;
     				break;
     			case 2:
-    				c.ChaD.Emotion = EmotionType.Shame;
+    				c.CharacterData.Emotion = EmotionType.Shame;
     				break;
     			case 3:
-    				c.ChaD.Emotion = EmotionType.Acceptance;
+    				c.CharacterData.Emotion = EmotionType.Acceptance;
     				break;
     			case 4:
-    				c.ChaD.Emotion = EmotionType.Desire;
+    				c.CharacterData.Emotion = EmotionType.Desire;
     				break;
     			case 5:
-    				c.ChaD.Emotion = EmotionType.Excitement;
+    				c.CharacterData.Emotion = EmotionType.Excitement;
     				break;
     			case 6:
-    				c.ChaD.Emotion = EmotionType.余裕;
+    				c.CharacterData.Emotion = EmotionType.余裕;
     				break;
     			case 7:
-    				c.ChaD.Emotion = EmotionType.Happiness;
+    				c.CharacterData.Emotion = EmotionType.Happiness;
     				break;
     			case 8:
-    				c.ChaD.Emotion = EmotionType.Joy;
+    				c.CharacterData.Emotion = EmotionType.Joy;
     				break;
     			case 9:
-    				c.ChaD.Emotion = EmotionType.Lewd;
+    				c.CharacterData.Emotion = EmotionType.Lewd;
     				break;
     			case 10:
-    				c.ChaD.Emotion = EmotionType.Other;
+    				c.CharacterData.Emotion = EmotionType.Other;
     				break;
     			}
     			break;
@@ -2072,16 +2072,16 @@ namespace SlaveMatrix
     			switch (Oth.GetRandomIndex(c.否定_(), c.屈辱_(), c.羞恥_(), c.喜悦_()))
     			{
     			case 0:
-    				c.ChaD.Emotion = EmotionType.Denial;
+    				c.CharacterData.Emotion = EmotionType.Denial;
     				break;
     			case 1:
-    				c.ChaD.Emotion = EmotionType.Humiliation;
+    				c.CharacterData.Emotion = EmotionType.Humiliation;
     				break;
     			case 2:
-    				c.ChaD.Emotion = EmotionType.Shame;
+    				c.CharacterData.Emotion = EmotionType.Shame;
     				break;
     			case 3:
-    				c.ChaD.Emotion = EmotionType.Joy;
+    				c.CharacterData.Emotion = EmotionType.Joy;
     				break;
     			}
     			break;
@@ -2089,16 +2089,16 @@ namespace SlaveMatrix
     			switch (Oth.GetRandomIndex(c.否定_(), c.屈辱_(), c.羞恥_(), c.興奮_()))
     			{
     			case 0:
-    				c.ChaD.Emotion = EmotionType.Denial;
+    				c.CharacterData.Emotion = EmotionType.Denial;
     				break;
     			case 1:
-    				c.ChaD.Emotion = EmotionType.Humiliation;
+    				c.CharacterData.Emotion = EmotionType.Humiliation;
     				break;
     			case 2:
-    				c.ChaD.Emotion = EmotionType.Shame;
+    				c.CharacterData.Emotion = EmotionType.Shame;
     				break;
     			case 3:
-    				c.ChaD.Emotion = EmotionType.Excitement;
+    				c.CharacterData.Emotion = EmotionType.Excitement;
     				break;
     			}
     			break;
@@ -2106,13 +2106,13 @@ namespace SlaveMatrix
     			switch (Oth.GetRandomIndex(c.屈辱_(), c.羞恥_(), c.興奮_()))
     			{
     			case 0:
-    				c.ChaD.Emotion = EmotionType.Humiliation;
+    				c.CharacterData.Emotion = EmotionType.Humiliation;
     				break;
     			case 1:
-    				c.ChaD.Emotion = EmotionType.Shame;
+    				c.CharacterData.Emotion = EmotionType.Shame;
     				break;
     			case 2:
-    				c.ChaD.Emotion = EmotionType.Excitement;
+    				c.CharacterData.Emotion = EmotionType.Excitement;
     				break;
     			}
     			break;
@@ -2120,19 +2120,19 @@ namespace SlaveMatrix
     			switch (Oth.GetRandomIndex(c.羞恥_(), c.受容_(), c.欲望_(), c.興奮_(), c.余裕_()))
     			{
     			case 0:
-    				c.ChaD.Emotion = EmotionType.Shame;
+    				c.CharacterData.Emotion = EmotionType.Shame;
     				break;
     			case 1:
-    				c.ChaD.Emotion = EmotionType.Acceptance;
+    				c.CharacterData.Emotion = EmotionType.Acceptance;
     				break;
     			case 2:
-    				c.ChaD.Emotion = EmotionType.Desire;
+    				c.CharacterData.Emotion = EmotionType.Desire;
     				break;
     			case 3:
-    				c.ChaD.Emotion = EmotionType.Excitement;
+    				c.CharacterData.Emotion = EmotionType.Excitement;
     				break;
     			case 4:
-    				c.ChaD.Emotion = EmotionType.余裕;
+    				c.CharacterData.Emotion = EmotionType.余裕;
     				break;
     			}
     			break;
@@ -2140,19 +2140,19 @@ namespace SlaveMatrix
     			switch (Oth.GetRandomIndex(c.受容_(), c.欲望_(), c.興奮_(), c.喜悦_(), c.淫乱_()))
     			{
     			case 0:
-    				c.ChaD.Emotion = EmotionType.Acceptance;
+    				c.CharacterData.Emotion = EmotionType.Acceptance;
     				break;
     			case 1:
-    				c.ChaD.Emotion = EmotionType.Desire;
+    				c.CharacterData.Emotion = EmotionType.Desire;
     				break;
     			case 2:
-    				c.ChaD.Emotion = EmotionType.Excitement;
+    				c.CharacterData.Emotion = EmotionType.Excitement;
     				break;
     			case 3:
-    				c.ChaD.Emotion = EmotionType.Joy;
+    				c.CharacterData.Emotion = EmotionType.Joy;
     				break;
     			case 4:
-    				c.ChaD.Emotion = EmotionType.Lewd;
+    				c.CharacterData.Emotion = EmotionType.Lewd;
     				break;
     			}
     			break;
@@ -2160,19 +2160,19 @@ namespace SlaveMatrix
     			switch (Oth.GetRandomIndex(c.羞恥_(), c.欲望_(), c.興奮_(), c.喜悦_(), c.淫乱_()))
     			{
     			case 0:
-    				c.ChaD.Emotion = EmotionType.Shame;
+    				c.CharacterData.Emotion = EmotionType.Shame;
     				break;
     			case 1:
-    				c.ChaD.Emotion = EmotionType.Desire;
+    				c.CharacterData.Emotion = EmotionType.Desire;
     				break;
     			case 2:
-    				c.ChaD.Emotion = EmotionType.Excitement;
+    				c.CharacterData.Emotion = EmotionType.Excitement;
     				break;
     			case 3:
-    				c.ChaD.Emotion = EmotionType.Joy;
+    				c.CharacterData.Emotion = EmotionType.Joy;
     				break;
     			case 4:
-    				c.ChaD.Emotion = EmotionType.Lewd;
+    				c.CharacterData.Emotion = EmotionType.Lewd;
     				break;
     			}
     			break;
@@ -2180,19 +2180,19 @@ namespace SlaveMatrix
     			switch (Oth.GetRandomIndex(c.受容_(), c.欲望_(), c.興奮_(), c.余裕_(), c.幸福_()))
     			{
     			case 0:
-    				c.ChaD.Emotion = EmotionType.Acceptance;
+    				c.CharacterData.Emotion = EmotionType.Acceptance;
     				break;
     			case 1:
-    				c.ChaD.Emotion = EmotionType.Desire;
+    				c.CharacterData.Emotion = EmotionType.Desire;
     				break;
     			case 2:
-    				c.ChaD.Emotion = EmotionType.Excitement;
+    				c.CharacterData.Emotion = EmotionType.Excitement;
     				break;
     			case 3:
-    				c.ChaD.Emotion = EmotionType.余裕;
+    				c.CharacterData.Emotion = EmotionType.余裕;
     				break;
     			case 4:
-    				c.ChaD.Emotion = EmotionType.Happiness;
+    				c.CharacterData.Emotion = EmotionType.Happiness;
     				break;
     			}
     			break;
@@ -2200,19 +2200,19 @@ namespace SlaveMatrix
     			switch (Oth.GetRandomIndex(c.受容_(), c.欲望_(), c.余裕_(), c.幸福_(), c.喜悦_()))
     			{
     			case 0:
-    				c.ChaD.Emotion = EmotionType.Acceptance;
+    				c.CharacterData.Emotion = EmotionType.Acceptance;
     				break;
     			case 1:
-    				c.ChaD.Emotion = EmotionType.Desire;
+    				c.CharacterData.Emotion = EmotionType.Desire;
     				break;
     			case 2:
-    				c.ChaD.Emotion = EmotionType.余裕;
+    				c.CharacterData.Emotion = EmotionType.余裕;
     				break;
     			case 3:
-    				c.ChaD.Emotion = EmotionType.Happiness;
+    				c.CharacterData.Emotion = EmotionType.Happiness;
     				break;
     			case 4:
-    				c.ChaD.Emotion = EmotionType.Joy;
+    				c.CharacterData.Emotion = EmotionType.Joy;
     				break;
     			}
     			break;
@@ -2220,25 +2220,25 @@ namespace SlaveMatrix
     			switch (Oth.GetRandomIndex(c.羞恥_(), c.受容_(), c.欲望_(), c.興奮_(), c.幸福_(), c.喜悦_(), c.淫乱_()))
     			{
     			case 0:
-    				c.ChaD.Emotion = EmotionType.Shame;
+    				c.CharacterData.Emotion = EmotionType.Shame;
     				break;
     			case 1:
-    				c.ChaD.Emotion = EmotionType.Acceptance;
+    				c.CharacterData.Emotion = EmotionType.Acceptance;
     				break;
     			case 2:
-    				c.ChaD.Emotion = EmotionType.Desire;
+    				c.CharacterData.Emotion = EmotionType.Desire;
     				break;
     			case 3:
-    				c.ChaD.Emotion = EmotionType.Excitement;
+    				c.CharacterData.Emotion = EmotionType.Excitement;
     				break;
     			case 4:
-    				c.ChaD.Emotion = EmotionType.Happiness;
+    				c.CharacterData.Emotion = EmotionType.Happiness;
     				break;
     			case 5:
-    				c.ChaD.Emotion = EmotionType.Joy;
+    				c.CharacterData.Emotion = EmotionType.Joy;
     				break;
     			case 6:
-    				c.ChaD.Emotion = EmotionType.Lewd;
+    				c.CharacterData.Emotion = EmotionType.Lewd;
     				break;
     			}
     			break;
@@ -2246,25 +2246,25 @@ namespace SlaveMatrix
     			switch (Oth.GetRandomIndex(c.屈辱_(), c.羞恥_(), c.欲望_(), c.興奮_(), c.幸福_(), c.喜悦_(), c.淫乱_()))
     			{
     			case 0:
-    				c.ChaD.Emotion = EmotionType.Humiliation;
+    				c.CharacterData.Emotion = EmotionType.Humiliation;
     				break;
     			case 1:
-    				c.ChaD.Emotion = EmotionType.Shame;
+    				c.CharacterData.Emotion = EmotionType.Shame;
     				break;
     			case 2:
-    				c.ChaD.Emotion = EmotionType.Desire;
+    				c.CharacterData.Emotion = EmotionType.Desire;
     				break;
     			case 3:
-    				c.ChaD.Emotion = EmotionType.Excitement;
+    				c.CharacterData.Emotion = EmotionType.Excitement;
     				break;
     			case 4:
-    				c.ChaD.Emotion = EmotionType.Happiness;
+    				c.CharacterData.Emotion = EmotionType.Happiness;
     				break;
     			case 5:
-    				c.ChaD.Emotion = EmotionType.Joy;
+    				c.CharacterData.Emotion = EmotionType.Joy;
     				break;
     			case 6:
-    				c.ChaD.Emotion = EmotionType.Lewd;
+    				c.CharacterData.Emotion = EmotionType.Lewd;
     				break;
     			}
     			break;
@@ -2272,30 +2272,30 @@ namespace SlaveMatrix
     			switch (Oth.GetRandomIndex(c.羞恥_(), c.受容_(), c.余裕_(), c.幸福_(), c.其他_()))
     			{
     			case 0:
-    				c.ChaD.Emotion = EmotionType.Shame;
+    				c.CharacterData.Emotion = EmotionType.Shame;
     				break;
     			case 1:
-    				c.ChaD.Emotion = EmotionType.Acceptance;
+    				c.CharacterData.Emotion = EmotionType.Acceptance;
     				break;
     			case 2:
-    				c.ChaD.Emotion = EmotionType.余裕;
+    				c.CharacterData.Emotion = EmotionType.余裕;
     				break;
     			case 3:
-    				c.ChaD.Emotion = EmotionType.Happiness;
+    				c.CharacterData.Emotion = EmotionType.Happiness;
     				break;
     			case 4:
-    				c.ChaD.Emotion = EmotionType.Other;
+    				c.CharacterData.Emotion = EmotionType.Other;
     				break;
     			}
     			break;
     		}
     		if (c.苦痛条件())
     		{
-    			c.ChaD.Emotion = EmotionType.Humiliation;
+    			c.CharacterData.Emotion = EmotionType.Humiliation;
     		}
-    		if (c.放尿.Run)
+    		if (c.Urination.Run)
     		{
-    			c.ChaD.Emotion = EmotionType.Shame;
+    			c.CharacterData.Emotion = EmotionType.Shame;
     		}
     	}
 
@@ -2313,9 +2313,9 @@ namespace SlaveMatrix
     		{
     			Cha.Crying = false;
     		}
-    		if (Cha.Bod.Is初期腰)
+    		if (Cha.Body.Is初期腰)
     		{
-    			Cha.Bod.SetWaist();
+    			Cha.Body.SetWaist();
     		}
     		Cha.Emotion();
     		Cha.UpdateExpression();
@@ -2331,34 +2331,34 @@ namespace SlaveMatrix
     		if (Virgin && CurrentActionType == ActionType.Insertion && (CurrentToolType == ToolType.Penis || CurrentToolType == ToolType.Dildo || CurrentToolType == ToolType.Vibrator || CurrentToolType == ToolType.Drill || CurrentToolType == ToolType.デンマ || CurrentToolType == ToolType.AnalVibrator) && CurrentContactType == ContactType.Vagina && 挿入Lvn > 2)
     		{
     			Reaction2();
-    			Cha.Bod.Waist.位置B += Oth.GetRandomVector() * 0.0004;
-    			Cha.Bod.腰振りv = RNG.XS.NextDouble();
+    			Cha.Body.Waist.位置B += Oth.GetRandomVector() * 0.0004;
+    			Cha.Body.HipMotionValue = RNG.XS.NextDouble();
     			switch (RNG.XS.Next(2))
     			{
     			case 0:
-    				Cha.ChaD.Emotion = EmotionType.Humiliation;
+    				Cha.CharacterData.Emotion = EmotionType.Humiliation;
     				break;
     			case 1:
-    				Cha.ChaD.Emotion = EmotionType.Shame;
+    				Cha.CharacterData.Emotion = EmotionType.Shame;
     				break;
     			}
     			Cha.SetInitialExpression();
     			Cha.UpdatePosture();
     			Virgin = false;
     			Sta.GameData.TrainingTarget.Virgin = false;
-    			UI.発音(Cha.Bod.膣口位置.GetAreaPoint(0.04), Sta.処女喪失, Color.Red, 0.3, b: true);
-    			Cha.Bod.処女喪失 = true;
-    			if (Cha.Bod.断面_表示)
+    			UI.発音(Cha.Body.膣口位置.GetAreaPoint(0.04), Sta.処女喪失, Color.Red, 0.3, b: true);
+    			Cha.Body.処女喪失 = true;
+    			if (Cha.Body.断面_表示)
     			{
-    				Cha.Bod.膣内精液.血液1_表示 = true;
-    				Cha.Bod.膣内精液.血液2_表示 = true;
+    				Cha.Body.VaginalCumDrip.血液1_表示 = true;
+    				Cha.Body.VaginalCumDrip.血液2_表示 = true;
     			}
-    			Cha.Bod.性器精液.血液1_表示 = true;
-    			Cha.Bod.性器精液.血液2_表示 = true;
-    			Cha.Bod.性器精液.血液濃度 = 0.0;
+    			Cha.Body.GenetalCum.血液1_表示 = true;
+    			Cha.Body.GenetalCum.血液2_表示 = true;
+    			Cha.Body.GenetalCum.血液濃度 = 0.0;
     			発声();
     		}
-    		else if (!射精n && (初回 || タイミング情報n == CurrentState.Start || CurrentActionType == ActionType.Whipping || (CurrentContactType == ContactType.Vagina && CurrentActionType == ActionType.Insertion && 挿入Lvn == (int)(5.0 * Cha.ChaD.固有値) && 0.2.Lot())))
+    		else if (!射精n && (初回 || タイミング情報n == CurrentState.Start || CurrentActionType == ActionType.Whipping || (CurrentContactType == ContactType.Vagina && CurrentActionType == ActionType.Insertion && 挿入Lvn == (int)(5.0 * Cha.CharacterData.固有値) && 0.2.Lot())))
     		{
     			Reaction1();
     			初回 = false;
@@ -2380,9 +2380,9 @@ namespace SlaveMatrix
     			WaitingState1();
     			初回 = true;
     			反応度 = 1.0;
-    			if (CurrentActionType == ActionType.Insertion && CurrentContactType == ContactType.Mouth && SkillL < 0.5 * Sta.GameData.TrainingTarget.MaxSkillL && Reactions.Tongue.Contains(Cha.Bod.口i) && ((CurrentToolType == ToolType.Hand && 手口) || CurrentToolType == ToolType.Penis || CurrentToolType == ToolType.Dildo || CurrentToolType == ToolType.Vibrator || CurrentToolType == ToolType.Drill || CurrentToolType == ToolType.デンマ || CurrentToolType == ToolType.AnalVibrator) && (SkillL.Inverse() * 0.8).Lot())
+    			if (CurrentActionType == ActionType.Insertion && CurrentContactType == ContactType.Mouth && SkillL < 0.5 * Sta.GameData.TrainingTarget.MaxSkillL && Reactions.Tongue.Contains(Cha.Body.口i) && ((CurrentToolType == ToolType.Hand && 手口) || CurrentToolType == ToolType.Penis || CurrentToolType == ToolType.Dildo || CurrentToolType == ToolType.Vibrator || CurrentToolType == ToolType.Drill || CurrentToolType == ToolType.デンマ || CurrentToolType == ToolType.AnalVibrator) && (SkillL.Inverse() * 0.8).Lot())
     			{
-    				Cha.Coughing.Start();
+    				Cha.Cough.Start();
     				return;
     			}
     			Cha.SetInitialExpression();
@@ -2393,8 +2393,8 @@ namespace SlaveMatrix
     	public static void Reaction1()
     	{
     		Reaction2();
-    		Cha.Bod.Waist.位置B += Oth.GetRandomVector() * 0.0004;
-    		Cha.Bod.腰振りv = RNG.XS.NextDouble();
+    		Cha.Body.Waist.位置B += Oth.GetRandomVector() * 0.0004;
+    		Cha.Body.HipMotionValue = RNG.XS.NextDouble();
     		Cha.Emotion();
     		Cha.UpdateExpression();
     		Cha.UpdatePosture();
@@ -2402,42 +2402,42 @@ namespace SlaveMatrix
     		{
     			if (0.7.Lot())
     			{
-    				if (Cha.Bod.Is双眼)
+    				if (Cha.Body.IsDualEyes)
     				{
     					Cha.瞼_瞑左();
     					Cha.瞼_瞑右();
     				}
-    				if (Cha.Bod.Is単眼)
+    				if (Cha.Body.IsSingleEye)
     				{
     					Cha.単瞼_瞑();
     				}
-    				if (Cha.Bod.Is頬眼)
+    				if (Cha.Body.IsCheekEyes)
     				{
     					Cha.頬瞼_瞑左();
     					Cha.頬瞼_瞑右();
     				}
-    				if (Cha.Bod.Is額眼)
+    				if (Cha.Body.IsForeheadEye)
     				{
     					Cha.額瞼_瞑();
     				}
     			}
     			else
     			{
-    				if (Cha.Bod.Is双眼)
+    				if (Cha.Body.IsDualEyes)
     				{
     					Cha.瞼_半2左();
     					Cha.瞼_半2右();
     				}
-    				if (Cha.Bod.Is単眼)
+    				if (Cha.Body.IsSingleEye)
     				{
     					Cha.単瞼_半2();
     				}
-    				if (Cha.Bod.Is頬眼)
+    				if (Cha.Body.IsCheekEyes)
     				{
     					Cha.頬瞼_半2左();
     					Cha.頬瞼_半2右();
     				}
-    				if (Cha.Bod.Is額眼)
+    				if (Cha.Body.IsForeheadEye)
     				{
     					Cha.額瞼_半2();
     				}
@@ -2459,21 +2459,21 @@ namespace SlaveMatrix
     		{
     			Cha.Crying = false;
     		}
-    		if ((Cha.Bod.玉口枷_表示 && Sensitivity.Lot()) || (CurrentActionType == ActionType.Insertion && CurrentContactType == ContactType.Mouth && Sensitivity > 0.5 && Excitement > 0.5 && Lust > 0.8 && Sensitivity.Lot() && ((CurrentToolType == ToolType.Hand && 手膣) || CurrentToolType == ToolType.Penis || CurrentToolType == ToolType.Dildo || CurrentToolType == ToolType.Vibrator || CurrentToolType == ToolType.Drill || CurrentToolType == ToolType.デンマ || CurrentToolType == ToolType.AnalVibrator)))
+    		if ((Cha.Body.玉口枷_表示 && Sensitivity.Lot()) || (CurrentActionType == ActionType.Insertion && CurrentContactType == ContactType.Mouth && Sensitivity > 0.5 && Excitement > 0.5 && Lust > 0.8 && Sensitivity.Lot() && ((CurrentToolType == ToolType.Hand && 手膣) || CurrentToolType == ToolType.Penis || CurrentToolType == ToolType.Dildo || CurrentToolType == ToolType.Vibrator || CurrentToolType == ToolType.Drill || CurrentToolType == ToolType.デンマ || CurrentToolType == ToolType.AnalVibrator)))
     		{
-    			Cha.涎.Start();
+    			Cha.Drool.Start();
     		}
     		if (Stamina > 0.1 && Sensitivity > 0.5 && Wetness > 0.6 && Tension == 0.0 && Lust > 0.7 && Affection > 0.7 && (Excitement * 0.05).Lot())
     		{
-    			Cha.潮吹小.Start();
+    			Cha.SquirtSmall.Start();
     		}
     		if (CurrentActionType == ActionType.Insertion && CurrentContactType == ContactType.Vagina && Sensitivity > 0.4 && Wetness == 1.0 && Lust > 0.7 && Affection > 0.7 && Sensitivity.Lot() && ((CurrentToolType == ToolType.Hand && 手膣) || CurrentToolType == ToolType.Penis || CurrentToolType == ToolType.Dildo || CurrentToolType == ToolType.Vibrator || CurrentToolType == ToolType.Drill || CurrentToolType == ToolType.デンマ || CurrentToolType == ToolType.AnalVibrator))
     		{
-    			Cha.飛沫.Start();
+    			Cha.Splash.Start();
     		}
-    		if (Sta.GameData.TrainingTarget.妊娠状態変数 > 2 && !Cha.Bod.乳房左.虫性_甲殻_表示 && (CurrentActionType == ActionType.乳捏 || CurrentActionType == ActionType.パイ || ((double)Sta.GameData.TrainingTarget.妊娠状態変数 * 0.1).Lot()))
+    		if (Sta.GameData.TrainingTarget.妊娠状態変数 > 2 && !Cha.Body.乳房左.虫性_甲殻_表示 && (CurrentActionType == ActionType.乳捏 || CurrentActionType == ActionType.パイ || ((double)Sta.GameData.TrainingTarget.妊娠状態変数 * 0.1).Lot()))
     		{
-    			Cha.噴乳.Start();
+    			Cha.MilkSpray.Start();
     		}
     		if (!Cha.膣ヒク.Run && (CurrentContactType == ContactType.Crotch || CurrentContactType == ContactType.Sex || CurrentContactType == ContactType.Nucleus || CurrentContactType == ContactType.Vagina || RNG.XS.NextBool()) && 部位感度[ContactType.Vagina] > 0.4)
     		{
@@ -2506,12 +2506,12 @@ namespace SlaveMatrix
     			num = 1 + Oth.GetRandomIndex((Shame + Tension + Training + Pride) / 4.0, (Sensitivity + Affection + Lust) / 3.0 - num2, (Sensitivity + Excitement + Affection + Lust + Training) / 5.0 - num2);
     		}
     		string text = "";
-    		if (Cha.Bod.口i == 4 || Cha.Bod.口i == 10 || Cha.Bod.口i == 11)
+    		if (Cha.Body.口i == 4 || Cha.Body.口i == 10 || Cha.Body.口i == 11)
     		{
     			string[][] n = Sta.n;
     			text = n[num][RNG.XS.Next(n[num].Length)];
     		}
-    		else if (Cha.Bod.玉口枷_表示)
+    		else if (Cha.Body.玉口枷_表示)
     		{
     			text = Sta.o[3][RNG.XS.Next(Sta.o[3].Length)];
     		}
@@ -2524,7 +2524,7 @@ namespace SlaveMatrix
     			}
     			while (n[num].Length < 1 || string.IsNullOrWhiteSpace(text = n[num][RNG.XS.Next(n[num].Length)]));
     		}
-    		UI.発音(Cha.Bod.口腔位置.GetAreaPoint(0.05), text.語尾() + " ", Color.Pink, 0.3 + 0.1 * Excitement, b: true);
+    		UI.発音(Cha.Body.口腔位置.GetAreaPoint(0.05), text.語尾() + " ", Color.Pink, 0.3 + 0.1 * Excitement, b: true);
     	}
 
     	public static string 語尾(this string s)
@@ -2564,13 +2564,13 @@ namespace SlaveMatrix
     	{
     		絶頂中 = false;
     		射精中 = false;
-    		ゲージ降下処理 = new Mot(0.0, 1.0)
+    		ゲージ降下処理 = new Motion(0.0, 1.0)
     		{
     			BaseSpeed = 1.0,
-    			Staing = delegate
+    			OnStart = delegate
     			{
     			},
-    			Runing = delegate
+    			OnUpdate = delegate
     			{
     				if (加算前提)
     				{
@@ -2591,13 +2591,13 @@ namespace SlaveMatrix
     					WaitingState0();
     				}
     			},
-    			Reaing = delegate
+    			OnReach = delegate
     			{
     			},
-    			Rouing = delegate
+    			OnLoop = delegate
     			{
     			},
-    			Ending = delegate
+    			OnEnd = delegate
     			{
     			}
     		};
@@ -2612,7 +2612,7 @@ namespace SlaveMatrix
     		{
     			return;
     		}
-    		ChaD chaD = Sta.GameData.TrainingTarget.ChaD;
+    		CharacterData chaD = Sta.GameData.TrainingTarget.ChaD;
     		List<string> list = new List<string>();
     		foreach (KeyValuePair<ContactType, double> item in chaD.Sesnsitivities)
     		{
@@ -2634,7 +2634,7 @@ namespace SlaveMatrix
     		{
     			return;
     		}
-    		ChaD chaD = Sta.GameData.TrainingTarget.ChaD;
+    		CharacterData chaD = Sta.GameData.TrainingTarget.ChaD;
     		UI.SensitivityBox.TextIm = "Sensitivities:\r\n";
     		foreach (KeyValuePair<ContactType, double> item in chaD.Sesnsitivities)
     		{

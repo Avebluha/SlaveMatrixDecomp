@@ -451,7 +451,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -482,7 +482,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 触覚_蠍(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 触覚_蠍D e)
+    	public 触覚_蠍(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 触覚_蠍D e)
     	{
     		ThisType = GetType();
     		Dif dif = new Dif();
@@ -586,7 +586,7 @@ namespace SlaveMatrix
     		X0Y0_歯12CP = new ColorP(X0Y0_歯12, 歯12CD, DisUnit, abj: true);
     		X0Y0_歯13CP = new ColorP(X0Y0_歯13, 歯13CD, DisUnit, abj: true);
     		X0Y0_櫛状板2CP = new ColorP(X0Y0_櫛状板2, 櫛状板2CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     	}
 
     	public override void SetAngle0()
@@ -620,7 +620,7 @@ namespace SlaveMatrix
     		X0Y0_櫛状板2CP.Update();
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		switch (配色指定)
     		{
@@ -639,7 +639,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		櫛状版1_櫛状版1CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
     		櫛状版1_櫛状版2CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
@@ -663,7 +663,7 @@ namespace SlaveMatrix
     		櫛状板2CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
     	}
 
-    	private void 配色T1(体配色 体配色)
+    	private void 配色T1(BodyColorSet 体配色)
     	{
     		櫛状版1_櫛状版1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
     		櫛状版1_櫛状版2CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
@@ -687,7 +687,7 @@ namespace SlaveMatrix
     		櫛状板2CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
     	}
 
-    	private void 配色T0(体配色 体配色)
+    	private void 配色T0(BodyColorSet 体配色)
     	{
     		櫛状版1_櫛状版1CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
     		櫛状版1_櫛状版2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);

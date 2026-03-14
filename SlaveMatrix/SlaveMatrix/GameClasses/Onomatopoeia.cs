@@ -7,7 +7,7 @@ namespace SlaveMatrix
 {
     public class Onomatopoeia
     {
-    	private Mots ms = new Mots();
+    	private Motions ms = new Motions();
 
     	private List<string> del = new List<string>();
 
@@ -28,11 +28,11 @@ namespace SlaveMatrix
     		};
     		pt.SetStringRectOutline(Are.UnitScale, Are.DisplayGraphics);
     		pt.BasePointBase = pt.OP.GetCenter();
-    		Mot mot = new Mot(0.0, 1.0);
+    		Motion mot = new Motion(0.0, 1.0);
     		string n = mot.GetHashCode().ToString();
     		TextRenderingHint tr = Are.DisplayGraphics.TextRenderingHint;
     		mot.BaseSpeed = 0.1;
-    		mot.Runing = delegate(Mot m)
+    		mot.OnUpdate = delegate(Motion m)
     		{
     			if (b)
     			{
@@ -43,11 +43,11 @@ namespace SlaveMatrix
     			Are.Draw(pt);
     			Are.DisplayGraphics.TextRenderingHint = tr;
     		};
-    		mot.Reaing = delegate(Mot m)
+    		mot.OnReach = delegate(Motion m)
     		{
     			m.End();
     		};
-    		mot.Ending = delegate
+    		mot.OnEnd = delegate
     		{
     			Are.DisplayGraphics.TextRenderingHint = tr;
     			pt.Dispose();
@@ -69,7 +69,7 @@ namespace SlaveMatrix
 
     	public void Clear()
     	{
-    		foreach (KeyValuePair<string, Mot> m in ms.ms)
+    		foreach (KeyValuePair<string, Motion> m in ms.ms)
     		{
     			m.Value.End();
     		}
@@ -82,7 +82,7 @@ namespace SlaveMatrix
 
     	public void Dispose()
     	{
-    		foreach (Mot value in ms.ms.Values)
+    		foreach (Motion value in ms.ms.Values)
     		{
     			value.End();
     		}

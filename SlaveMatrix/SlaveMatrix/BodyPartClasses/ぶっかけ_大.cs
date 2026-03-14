@@ -95,7 +95,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -163,7 +163,7 @@ namespace SlaveMatrix
     		X0Y2_精液CP = new ColorP(X0Y2_精液, 精液CD, DisUnit, abj: true);
     		X0Y3_精液CP = new ColorP(X0Y3_精液, 精液CD, DisUnit, abj: true);
     		X0Y4_精液CP = new ColorP(X0Y4_精液, 精液CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     	}
 
     	public override void 色更新()

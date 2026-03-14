@@ -172,7 +172,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -186,7 +186,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public ロータ(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, ロータD e)
+    	public ロータ(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, ロータD e)
     	{
     		ThisType = GetType();
     		Body = new Difs(Sta.カーソル["ロータ"]);
@@ -257,7 +257,7 @@ namespace SlaveMatrix
     		X0Y3_コードCP = new ColorP(X0Y3_コード, コードCD, DisUnit, abj: true);
     		X0Y4_ロータCP = new ColorP(X0Y4_ロータ, ロータCD, DisUnit, abj: true);
     		X0Y4_コードCP = new ColorP(X0Y4_コード, コードCD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     		X0Y0_ロータ.BasePointBase = X0Y0_ロータ.ToLocal(X0Y0_ロータ.ToGlobal(X0Y0_ロータ.JP[2].Joint));
     		X0Y1_ロータ.BasePointBase = X0Y1_ロータ.ToLocal(X0Y1_ロータ.ToGlobal(X0Y1_ロータ.JP[2].Joint));
     		X0Y2_ロータ.BasePointBase = X0Y2_ロータ.ToLocal(X0Y2_ロータ.ToGlobal(X0Y2_ロータ.JP[2].Joint));
@@ -297,12 +297,12 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		Col.GetGrad(ref Col.Violet, out var ret);
     		ロータCD = new ColorD(ref Col.Black, ref ret);

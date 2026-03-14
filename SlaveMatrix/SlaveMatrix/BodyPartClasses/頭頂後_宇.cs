@@ -191,7 +191,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -209,7 +209,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 頭頂後_宇(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 頭頂後_宇D e)
+    	public 頭頂後_宇(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 頭頂後_宇D e)
     	{
     		ThisType = GetType();
     		Dif dif = new Dif();
@@ -274,7 +274,7 @@ namespace SlaveMatrix
     		X0Y0_線_線右1CP = new ColorP(X0Y0_線_線右1, 線_線右1CD, DisUnit, abj: true);
     		X0Y0_線_線右2CP = new ColorP(X0Y0_線_線右2, 線_線右2CD, DisUnit, abj: true);
     		X0Y0_線_線右3CP = new ColorP(X0Y0_線_線右3, 線_線右3CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     	}
 
     	public override void 色更新()
@@ -288,12 +288,12 @@ namespace SlaveMatrix
     		X0Y0_線_線右3CP.Update();
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		頭部CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
     		線_線左1CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);

@@ -18,31 +18,31 @@ namespace SlaveMatrix
 
     	public bool 足固定;
 
-    	public Mot チンピク;
+    	public Motion チンピク;
 
     	public double 射精時間;
 
-    	public Mot 射精終了;
+    	public Motion 射精終了;
 
-    	public Mot 射精;
+    	public Motion 射精;
 
-    	private Mot 放精;
+    	private Motion 放精;
 
     	public int 中出しCount;
 
-    	public Mot 手コキ;
+    	public Motion 手コキ;
 
     	public bool 手コキ左;
 
-    	public Mot フェラ;
+    	public Motion フェラ;
 
-    	public Mot パイズリ;
+    	public Motion パイズリ;
 
     	public bool Isパイズリ相互;
 
     	public bool Isパイズリ他動;
 
-    	public Mot 足コキ;
+    	public Motion 足コキ;
 
     	private double 扱き = 1.0;
 
@@ -122,18 +122,18 @@ namespace SlaveMatrix
     			if (value)
     			{
     				調教UI.ハンド右.Xi = 13;
-    				調教UI.ハンド右.濃度 = 調教UI.ペニス.濃度;
+    				調教UI.ハンド右.Intensity = 調教UI.ペニス.Intensity;
     				調教UI.ハンド右.角度C = 0.0;
     			}
     			else
     			{
     				調教UI.Set持ち手();
     				調教UI.ハンド右.位置B = 調教UI.ハンド右CM.bp;
-    				調教UI.ハンド右.濃度 = 0.5;
+    				調教UI.ハンド右.Intensity = 0.5;
     				調教UI.ハンド右.位置C = Dat.Vec2DZero;
     				調教UI.放し();
     			}
-    			調教UI.ハンド右.濃度 = 1.0;
+    			調教UI.ハンド右.Intensity = 1.0;
     		}
     	}
 
@@ -237,7 +237,7 @@ namespace SlaveMatrix
     				if (Isパイズリ他動)
     				{
     					持ち手 = false;
-    					調教UI.ハンド右.濃度 = 0.5;
+    					調教UI.ハンド右.Intensity = 0.5;
     				}
     				else
     				{
@@ -358,7 +358,7 @@ namespace SlaveMatrix
     					調教UI.ハンド右.Xi = 4;
     					調教UI.ハンド左.Xi = 4;
     					調教UI.ハンド右CM.使用状態 = UsageStatus.InUse;
-    					調教UI.ハンド右.濃度 = 1.0;
+    					調教UI.ハンド右.Intensity = 1.0;
     					調教UI.ハンド左表示 = true;
     					調教UI.押し(ref cd);
     					調教UI.腕修正();
@@ -441,7 +441,7 @@ namespace SlaveMatrix
     				if (!調教UI.ハンド挿入.Is挿入)
     				{
     					持ち手 = false;
-    					調教UI.Focus.Ele.濃度 = 0.5;
+    					調教UI.Focus.Ele.Intensity = 0.5;
     					調教UI.Focus = 調教UI.ハンド右CM;
     					調教UI.ハンド右.位置B = cp;
     					調教UI.ハンド処理.切り替え = true;
@@ -456,7 +456,7 @@ namespace SlaveMatrix
     		else if (mb == MouseButtons.Middle && !手コキ.Run && !パイズリ.Run && !足コキ.Run && !Isモード && !調教UI.マウス挿入.Is挿入)
     		{
     			持ち手 = false;
-    			調教UI.Focus.Ele.濃度 = 0.5;
+    			調教UI.Focus.Ele.Intensity = 0.5;
     			調教UI.Focus = 調教UI.マウスCM;
     			調教UI.マウスCM.Ele.位置B = cp;
     			調教UI.マウス処理.切り替え = true;
@@ -549,27 +549,27 @@ namespace SlaveMatrix
     		ペニス処理 ペニス処理2 = this;
     		double d = 調教UI.ペニス.X0Y4_陰嚢.BasePointBase.Y - 調教UI.ペニス.X0Y0_陰嚢.BasePointBase.Y;
     		Vector2D v = new Vector2D(対象.Ele.位置C.X, d);
-    		チンピク = new Mot(0.0, 1.0)
+    		チンピク = new Motion(0.0, 1.0)
     		{
     			BaseSpeed = 4.0,
-    			Staing = delegate
+    			OnStart = delegate
     			{
     				ペニス処理2.対象.Ele.Yi = 0;
     			},
-    			Runing = delegate(Mot m)
+    			OnUpdate = delegate(Motion m)
     			{
     				ペニス処理2.対象.Ele.Yv = m.Value;
     				v.Y = d * m.Value;
     				ペニス処理2.対象.Ele.位置C = v;
     			},
-    			Reaing = delegate
+    			OnReach = delegate
     			{
     			},
-    			Rouing = delegate(Mot m)
+    			OnLoop = delegate(Motion m)
     			{
     				m.End();
     			},
-    			Ending = delegate(Mot m)
+    			OnEnd = delegate(Motion m)
     			{
     				m.ResetValue();
     				ペニス処理2.対象.Ele.Yi = 0;
@@ -577,25 +577,25 @@ namespace SlaveMatrix
     			}
     		};
     		調教UI.Mots.Add(チンピク.GetHashCode().ToString(), チンピク);
-    		射精終了 = new Mot(0.0, 1.0)
+    		射精終了 = new Motion(0.0, 1.0)
     		{
     			BaseSpeed = 0.2 - 0.18 * 射精時間,
-    			Staing = delegate(Mot m)
+    			OnStart = delegate(Motion m)
     			{
     				m.BaseSpeed = 0.2 - 0.18 * ペニス処理2.射精時間;
     			},
-    			Runing = delegate
+    			OnUpdate = delegate
     			{
     				Player.射精処理();
     			},
-    			Reaing = delegate(Mot m)
+    			OnReach = delegate(Motion m)
     			{
     				m.End();
     			},
-    			Rouing = delegate
+    			OnLoop = delegate
     			{
     			},
-    			Ending = delegate
+    			OnEnd = delegate
     			{
     				ペニス処理2.射精.End();
     				Player.射精終了処理();
@@ -603,13 +603,13 @@ namespace SlaveMatrix
     		};
     		調教UI.Mots.Add(射精終了.GetHashCode().ToString(), 射精終了);
     		double xc;
-    		射精 = new Mot(0.0, 1.0)
+    		射精 = new Motion(0.0, 1.0)
     		{
     			BaseSpeed = 4.0,
-    			Staing = delegate
+    			OnStart = delegate
     			{
     			},
-    			Runing = delegate(Mot m)
+    			OnUpdate = delegate(Motion m)
     			{
     				xc = 1.0 + 0.2 * m.Value;
     				foreach (Par item in 調教UI.ペニス.Body.EnumAllPar())
@@ -622,7 +622,7 @@ namespace SlaveMatrix
     				調教UI.ペニス.位置C = Oth.GetRandomVector() * 0.001;
     				調教UI.射精.位置C = 調教UI.ペニス.位置C;
     			},
-    			Reaing = delegate(Mot m)
+    			OnReach = delegate(Motion m)
     			{
     				ペニス処理2.放精.Start();
     				ペニス処理2.中出し = 調教UI.ペニス挿入.Is挿入;
@@ -634,10 +634,10 @@ namespace SlaveMatrix
     				Player.主精力消費大();
     				m.End();
     			},
-    			Rouing = delegate
+    			OnLoop = delegate
     			{
     			},
-    			Ending = delegate(Mot m)
+    			OnEnd = delegate(Motion m)
     			{
     				ペニス処理2.対象.Ele.尺度XC = 1.0;
     				調教UI.ペニス.位置C = Dat.Vec2DZero;
@@ -652,10 +652,10 @@ namespace SlaveMatrix
     		Vector2D cp;
     		Color hc;
     		ContactType c;
-    		放精 = new Mot(0.0, 1.0)
+    		放精 = new Motion(0.0, 1.0)
     		{
     			BaseSpeed = 3.0,
-    			Staing = delegate
+    			OnStart = delegate
     			{
     				//Sounds.射精.Play();
     				ペニス処理2.射精_();
@@ -669,7 +669,7 @@ namespace SlaveMatrix
     					断面 = ペニス処理2.Bod.断面_表示 && ペニス処理2.挿入箇所 == ContactType.Vagina;
     				}
     			},
-    			Runing = delegate(Mot m)
+    			OnUpdate = delegate(Motion m)
     			{
     				if (外出し)
     				{
@@ -692,21 +692,21 @@ namespace SlaveMatrix
     				{
     					if (断面 && ペニス処理2.挿入箇所 == ContactType.Vagina)
     					{
-    						ペニス処理2.Bod.膣内精液.精液濃度 = (ペニス処理2.Bod.膣内精液.精液濃度 + 0.05).Clamp(0.0, 1.0);
+    						ペニス処理2.Bod.VaginalCumDrip.精液濃度 = (ペニス処理2.Bod.VaginalCumDrip.精液濃度 + 0.05).Clamp(0.0, 1.0);
     						ペニス処理2.Bod.断面.精液濃度 = (ペニス処理2.Bod.断面.精液濃度 + 0.025).Clamp(0.0, 1.0);
     					}
     					調教UI.Action(ペニス処理2.挿入箇所, ActionType.Insertion, CurrentState.Start, ToolType.Penis, 0, 1, 機械: false, 射精: true);
     					Player.中出し処理();
     				}
     			},
-    			Reaing = delegate(Mot m)
+    			OnReach = delegate(Motion m)
     			{
     				m.End();
     			},
-    			Rouing = delegate
+    			OnLoop = delegate
     			{
     			},
-    			Ending = delegate
+    			OnEnd = delegate
     			{
     				if (外出し)
     				{
@@ -723,10 +723,10 @@ namespace SlaveMatrix
     		調教UI.Mots.Add(放精.GetHashCode().ToString(), 放精);
     		double LowerArmXC = 0.0;
     		double s = 1.0;
-    		手コキ = new Mot(0.0, 1.0)
+    		手コキ = new Motion(0.0, 1.0)
     		{
     			BaseSpeed = 1.0,
-    			Staing = delegate
+    			OnStart = delegate
     			{
     				s = (ペニス処理2.手コキ左 ? 1.0 : (-1.0));
     				ペニス処理2.持ち手 = false;
@@ -753,7 +753,7 @@ namespace SlaveMatrix
     				Player.主精力消費小();
     				Player.奴体力消費小();
     			},
-    			Runing = delegate(Mot m)
+    			OnUpdate = delegate(Motion m)
     			{
     				if (ペニス処理2.Shoulder != null)
     				{
@@ -784,13 +784,13 @@ namespace SlaveMatrix
     				Player.主精力消費小();
     				Player.奴体力消費小();
     			},
-    			Reaing = delegate
+    			OnReach = delegate
     			{
     			},
-    			Rouing = delegate
+    			OnLoop = delegate
     			{
     			},
-    			Ending = delegate
+    			OnEnd = delegate
     			{
     				ペニス処理2.手固定 = false;
     				調教UI.コキ = false;
@@ -821,10 +821,10 @@ namespace SlaveMatrix
     		double t;
     		double d1;
     		double d2;
-    		フェラ = new Mot(0.0, 1.0)
+    		フェラ = new Motion(0.0, 1.0)
     		{
     			BaseSpeed = 1.0,
-    			Staing = delegate
+    			OnStart = delegate
     			{
     				ペニス処理2.Bod.頬濃度 = 0.0;
     				ペニス処理2.Bod.口.Yi = 13;
@@ -834,9 +834,9 @@ namespace SlaveMatrix
     				Player.奴体力消費小();
     				Player.主精力消費小();
     			},
-    			Runing = delegate(Mot m)
+    			OnUpdate = delegate(Motion m)
     			{
-    				t = ペニス処理2.Cha.ChaD.SkillL / Sta.GameData.TrainingTarget.MaxSkillL * 0.4;
+    				t = ペニス処理2.Cha.CharacterData.SkillL / Sta.GameData.TrainingTarget.MaxSkillL * 0.4;
     				d1 = m.Value.Sin() * 調教UI.ペニス.Yv.Inverse() * t;
     				d2 = m.Value * 調教UI.ペニス.Yv * t;
     				ペニス処理2.Bod.頬濃度 = d1;
@@ -846,14 +846,14 @@ namespace SlaveMatrix
     				Player.奴体力消費小();
     				Player.主精力消費小();
     			},
-    			Reaing = delegate
+    			OnReach = delegate
     			{
     			},
-    			Rouing = delegate
+    			OnLoop = delegate
     			{
     				s = RNG.XS.NextSign();
     			},
-    			Ending = delegate(Mot m)
+    			OnEnd = delegate(Motion m)
     			{
     				m.ResetValue();
     				ペニス処理2.Bod.舌_表示 = false;
@@ -872,10 +872,10 @@ namespace SlaveMatrix
     		bool sb = false;
     		double vl;
     		double vr;
-    		パイズリ = new Mot(0.0, 1.0)
+    		パイズリ = new Motion(0.0, 1.0)
     		{
     			BaseSpeed = 1.0,
-    			Staing = delegate
+    			OnStart = delegate
     			{
     				ペニス処理2.Cha.両腕_人_パイズリ(0, 左右: false, 前後: false);
     				ペニス処理2.手固定 = true;
@@ -890,7 +890,7 @@ namespace SlaveMatrix
     				Player.主精力消費小();
     				Player.奴体力消費小();
     			},
-    			Runing = delegate(Mot m)
+    			OnUpdate = delegate(Motion m)
     			{
     				vl = ((!ペニス処理2.Isパイズリ相互) ? m.Value : (sb ? m.Value : m.Value.Inverse()));
     				vr = ((!ペニス処理2.Isパイズリ相互) ? m.Value : (sb ? m.Value.Inverse() : m.Value));
@@ -958,13 +958,13 @@ namespace SlaveMatrix
     				Player.主精力消費小();
     				Player.奴体力消費小();
     			},
-    			Reaing = delegate
+    			OnReach = delegate
     			{
     			},
-    			Rouing = delegate
+    			OnLoop = delegate
     			{
     			},
-    			Ending = delegate(Mot m)
+    			OnEnd = delegate(Motion m)
     			{
     				ペニス処理2.手固定 = false;
     				調教UI.ハンド処理.バスト初期化.Start();
@@ -1005,14 +1005,14 @@ namespace SlaveMatrix
     			}
     		};
     		調教UI.Mots.Add(パイズリ.GetHashCode().ToString(), パイズリ);
-    		足コキ = new Mot(0.0, 1.0)
+    		足コキ = new Motion(0.0, 1.0)
     		{
     			BaseSpeed = 1.0,
-    			Staing = delegate
+    			OnStart = delegate
     			{
     				ペニス処理2.持ち手 = false;
     				調教UI.コキ = true;
-    				ペニス処理2.Bod.腰振り_人v = 1.0;
+    				ペニス処理2.Bod.HipMotion_人v = 1.0;
     				調教UI.ペニス.位置B = ペニス処理2.Bod.局部位置.AddY(0.035);
     				ペニス処理2.Cha.両脚_人_足コキ(0);
     				ペニス処理2.足固定 = true;
@@ -1020,7 +1020,7 @@ namespace SlaveMatrix
     				Player.主精力消費小();
     				Player.奴体力消費小();
     			},
-    			Runing = delegate(Mot m)
+    			OnUpdate = delegate(Motion m)
     			{
     				if (ペニス処理2.腿左 != null)
     				{
@@ -1054,13 +1054,13 @@ namespace SlaveMatrix
     				Player.主精力消費小();
     				Player.奴体力消費小();
     			},
-    			Reaing = delegate
+    			OnReach = delegate
     			{
     			},
-    			Rouing = delegate
+    			OnLoop = delegate
     			{
     			},
-    			Ending = delegate
+    			OnEnd = delegate
     			{
     				ペニス処理2.足固定 = false;
     				調教UI.コキ = false;
@@ -1100,10 +1100,10 @@ namespace SlaveMatrix
     		調教UI.Mots.Add(足コキ.GetHashCode().ToString(), 足コキ);
     	}
 
-    	public void SetCha(Cha Cha)
+    	public void SetCha(Character Cha)
     	{
     		base.Cha = Cha;
-    		Bod = Cha.Bod;
+    		Bod = Cha.Body;
     		if (Bod.Arm人n > 0)
     		{
     			肩左 = Bod.Arm人左[0].Shoulder;

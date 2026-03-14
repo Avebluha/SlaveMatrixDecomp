@@ -4589,11 +4589,11 @@ namespace SlaveMatrix
     		return null;
     	}
 
-    	public static ChaD Mix(this ChaD 母方, ChaD 父方, bool 原種モード)
+    	public static CharacterData Mix(this CharacterData 母方, CharacterData 父方, bool 原種モード)
     	{
     		double num = Mix(母方.魔力濃度, 父方.魔力濃度, 1.0);
     		WaistD d;
-    		return new ChaD(d = Mix(母方.body_tree, 父方.body_tree, num, 原種モード), Mix(母方.body_color, 父方.body_color, num, d))
+    		return new CharacterData(d = Mix(母方.body_tree, 父方.body_tree, num, 原種モード), Mix(母方.body_color, 父方.body_color, num, d))
     		{
     			Lust = Mix(母方.Lust, 父方.Lust, 0.6),
     			Affection = Mix(母方.Affection, 父方.Affection, 0.6),

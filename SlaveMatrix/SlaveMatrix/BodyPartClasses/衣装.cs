@@ -9,7 +9,7 @@ namespace SlaveMatrix
     [Serializable]
     public static class 衣装
     {
-    	public static bool Is下着ボトム条件(this ChaD c)
+    	public static bool Is下着ボトム条件(this CharacterData c)
     	{
     		if (!c.body_tree.半身_接続.IsEleD<長物_魚D>() && !c.body_tree.半身_接続.IsEleD<長物_鯨D>() && !c.body_tree.半身_接続.IsEleD<長物_蛇D>() && !c.body_tree.半身_接続.IsEleD<長物_蟲D>() && !c.body_tree.半身_接続.IsEleD<四足胸D>() && !c.body_tree.半身_接続.IsEleD<多足_蛸D>() && !c.body_tree.半身_接続.IsEleD<多足_蜘D>())
     		{
@@ -18,12 +18,12 @@ namespace SlaveMatrix
     		return false;
     	}
 
-    	public static bool Is上着ボトム条件(this ChaD c)
+    	public static bool Is上着ボトム条件(this CharacterData c)
     	{
     		return true;
     	}
 
-    	public static bool Is紐付き条件(this ChaD c)
+    	public static bool Is紐付き条件(this CharacterData c)
     	{
     		if (!c.body_tree.半身_接続.IsEleD<単足_植D>())
     		{
@@ -32,7 +32,7 @@ namespace SlaveMatrix
     		return true;
     	}
 
-    	public static bool Is前掛け条件(this ChaD c)
+    	public static bool Is前掛け条件(this CharacterData c)
     	{
     		if (!c.body_tree.半身_接続.IsEleD<四足胸D>() && !c.body_tree.腿左_接続.IsEleD<獣腿D>())
     		{
@@ -46,12 +46,12 @@ namespace SlaveMatrix
     		return false;
     	}
 
-    	public static bool Isブーツ条件(this ChaD c)
+    	public static bool Isブーツ条件(this CharacterData c)
     	{
     		return c.body_tree.EnumEleD().IsEleD<Leg_人D>();
     	}
 
-    	public static IEnumerable<object> Get髪留め(ChaD c)
+    	public static IEnumerable<object> Get髪留め(CharacterData c)
     	{
     		髪留2情報 @default = 髪留2情報.GetDefault();
     		髪留2情報 横髪 = 髪留2情報.GetDefault();
@@ -90,7 +90,7 @@ namespace SlaveMatrix
     		yield return 横髪;
     	}
 
-    	public static IEnumerable<object> Getビキニ(ChaD c, bool t)
+    	public static IEnumerable<object> Getビキニ(CharacterData c, bool t)
     	{
     		Col.GetRandomClothesColor(out var c0);
     		Col.GetRandomClothesColor(out var c1);
@@ -184,7 +184,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public static IEnumerable<object> Getランジェリー(ChaD c, bool t, bool a)
+    	public static IEnumerable<object> Getランジェリー(CharacterData c, bool t, bool a)
     	{
     		Col.GetRandomClothesColor(a ? RNG.XS.Next(32, 256) : 255, out var c0);
     		Col.GetRandomClothesColor(a ? RNG.XS.Next(32, 256) : 255, out var c1);
@@ -238,7 +238,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public static IEnumerable<object> Getピアス(ChaD c)
+    	public static IEnumerable<object> Getピアス(CharacterData c)
     	{
     		ピアス情報 ピアス中 = ピアス情報.GetDefault();
     		ピアス中.色.ピアス = (RNG.XS.NextBool() ? Color.Gold : Color.Silver);
@@ -254,7 +254,7 @@ namespace SlaveMatrix
     		yield return default2;
     	}
 
-    	public static IEnumerable<object> Getヴィオラ服0(ChaD c)
+    	public static IEnumerable<object> Getヴィオラ服0(CharacterData c)
     	{
     		ドレス首情報 ドレス首 = ドレス首情報.GetDefault();
     		ドレス首.色.SetDefault();
@@ -297,7 +297,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public static IEnumerable<object> Getヴィオラ服1(ChaD c)
+    	public static IEnumerable<object> Getヴィオラ服1(CharacterData c)
     	{
     		Col.GetRandomClothesColor(out var c0);
     		Col.GetRandomClothesColor(out var c1);
@@ -363,7 +363,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public static IEnumerable<object> Get奴隷服(ChaD c, bool b, bool r, bool a)
+    	public static IEnumerable<object> Get奴隷服(CharacterData c, bool b, bool r, bool a)
     	{
     		Color c0 = Col.Empty;
     		Color c1 = Col.Empty;

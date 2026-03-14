@@ -404,7 +404,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -732,7 +732,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 手_蝙(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 手_蝙D e)
+    	public 手_蝙(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 手_蝙D e)
     	{
     		飛膜 = new 飛膜_先(DisUnit, 配色指定, 体配色);
     		飛膜.Par = this;
@@ -838,7 +838,7 @@ namespace SlaveMatrix
     		X0Y0_親指_指2CP = new ColorP(X0Y0_親指_指2, 親指_指2CD, DisUnit, abj: true);
     		X0Y0_親指_指3CP = new ColorP(X0Y0_親指_指3, 親指_指3CD, DisUnit, abj: true);
     		尺度B = 1.02;
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     	}
 
     	public override void SetAngle0()
@@ -923,12 +923,12 @@ namespace SlaveMatrix
     		X0Y0_親指_指3CP.Update();
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		獣翼手CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
     		小指_指1CD = new ColorD(ref Col.Black, ref 体配色.毛0R);

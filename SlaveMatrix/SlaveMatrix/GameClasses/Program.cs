@@ -20,7 +20,7 @@ namespace SlaveMatrix
 
             ModeEventDispatcher med = new ModeEventDispatcher
     		{
-    			UITitle = GameText.スレイブマトリクス,
+    			UITitle = GameText.SlaveMatrix, //sureibumatorikusu
     			Unit = Sta.HighQuality ? 2203.0 : 1101.5,
     			ShowFPS = Sta.ShowFPS,
     			Base = new Rectangle(4.0, 3.0, percent / 100.0),

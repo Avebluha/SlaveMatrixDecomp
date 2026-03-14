@@ -201,7 +201,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -228,7 +228,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 性器精液_獣(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 性器精液_獣D e)
+    	public 性器精液_獣(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 性器精液_獣D e)
     	{
     		ThisType = GetType();
     		Body = new Difs(Sta.性器付["四足性器精液垂れ"]);
@@ -310,7 +310,7 @@ namespace SlaveMatrix
     		X0Y5_精液CP = new ColorP(X0Y5_精液, 精液CD, DisUnit, abj: true);
     		X0Y5_血液1CP = new ColorP(X0Y5_血液1, 血液1CD, DisUnit, abj: true);
     		X0Y5_血液2CP = new ColorP(X0Y5_血液2, 血液2CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     	}
 
     	public override void 色更新()
@@ -350,12 +350,12 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		精液CD = new ColorD();
     		血液1CD = new ColorD(ref Col.Empty, ref 体配色.血液O);

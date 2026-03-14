@@ -72,7 +72,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -88,7 +88,7 @@ namespace SlaveMatrix
 
     	public JointS 鼻水右_接続点 => new JointS(Body, X0Y0_鼻, 1);
 
-    	public 鼻_獣(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 鼻_獣D e)
+    	public 鼻_獣(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 鼻_獣D e)
     	{
     		鼻_獣 鼻_獣2 = this;
     		ThisType = GetType();
@@ -158,7 +158,7 @@ namespace SlaveMatrix
     		base.配色指定 = 配色指定;
     		配色(体配色);
     		X0Y0_鼻CP = new ColorP(X0Y0_鼻, 鼻CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     	}
 
     	public override void 色更新()
@@ -166,12 +166,12 @@ namespace SlaveMatrix
     		X0Y0_鼻CP.Update();
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		鼻CD = new ColorD(ref Col.Black, ref 体配色.紋O);
     	}

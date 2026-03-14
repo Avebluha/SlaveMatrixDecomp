@@ -1315,7 +1315,7 @@ namespace SlaveMatrix
     		at = typeof(Ele[]).ToString();
     		cdt = typeof(ColorD).ToString();
     		cpt = typeof(ColorP).ToString();
-    		Bodt = typeof(Bod);
+    		Bodt = typeof(Body);
     		dt = typeof(double).ToString();
     		bt = typeof(bool).ToString();
     		ct = typeof(Color).ToString();

@@ -896,7 +896,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -1033,7 +1033,7 @@ namespace SlaveMatrix
 
     	public JointS 触覚右_接続点 => new JointS(Body, X0Y0_Head, 18);
 
-    	public Head(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, HeadD e)
+    	public Head(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, HeadD e)
     	{
     		Head 頭2 = this;
     		ThisType = GetType();
@@ -1455,7 +1455,7 @@ namespace SlaveMatrix
     		X0Y0_竜性_鱗3CP = new ColorP(X0Y0_竜性_鱗3, 竜性_鱗3CD, DisUnit, abj: true);
     		X0Y0_馬柄_馬柄CP = new ColorP(X0Y0_馬柄_馬柄, 馬柄_馬柄CD, DisUnit, abj: true);
     		X0Y0_虫性_顎下CP = new ColorP(X0Y0_虫性_顎下, 虫性_顎下CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     		X0Y0_Head.JP[8].Joint = X0Y0_Head.JP[8].Joint.AddX(-0.00012);
     		X0Y0_Head.JP[9].Joint = X0Y0_Head.JP[9].Joint.AddX(0.00012);
     	}
@@ -1675,12 +1675,12 @@ namespace SlaveMatrix
     		X0Y0_虫性_顎下CP.Update();
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		HeadCD = new ColorD(ref Col.Black, ref 体配色.人肌O);
     		悪タトゥ_逆十字_逆十字1CD = new ColorD(ref 体配色.刺青.Col1, ref Color2.Empty);

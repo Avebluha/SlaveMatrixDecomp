@@ -91,7 +91,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -104,7 +104,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 尾鰭_鯨(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 尾鰭_鯨D e)
+    	public 尾鰭_鯨(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 尾鰭_鯨D e)
     	{
     		ThisType = GetType();
     		Dif dif = new Dif();
@@ -153,7 +153,7 @@ namespace SlaveMatrix
     		配色(体配色);
     		X0Y0_鰭CP = new ColorP(X0Y0_鰭, 鰭CD, DisUnit, abj: true);
     		X0Y0_尾CP = new ColorP(X0Y0_尾, 尾CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     	}
 
     	public override void 色更新()
@@ -162,12 +162,12 @@ namespace SlaveMatrix
     		X0Y0_尾CP.Update();
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		鰭CD = new ColorD(ref Col.Black, ref 体配色.体0O);
     		尾CD = new ColorD(ref Col.Black, ref 体配色.体0O);

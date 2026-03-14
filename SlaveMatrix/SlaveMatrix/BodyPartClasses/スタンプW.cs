@@ -35,7 +35,7 @@ namespace SlaveMatrix
     		{
     			p = he.Body.GetHitPar_(hc);
     			c2 = he.GetParOfColorP(p).ColorD.色;
-    			if (c2.Col1 == Cha.配色.人肌O.Col1 || c2.Col2 == Cha.配色.人肌O.Col1)
+    			if (c2.Col1 == Cha.ColorSet.人肌O.Col1 || c2.Col2 == Cha.ColorSet.人肌O.Col1)
     			{
     				if (sta.Count >= 33)
     				{
@@ -44,7 +44,7 @@ namespace SlaveMatrix
     					sep.Sta.Dispose();
     				}
     				sep = default(sep);
-    				sep.Sta = EleD.GetEle(Are.DisplayUnitScale, Med, Cha.配色);
+    				sep.Sta = EleD.GetEle(Are.DisplayUnitScale, Med, Cha.ColorSet);
     				sep.Sta.SetHitFalse();
     				sep.Sta.角度C = 45.0 * (double)(RNG.XS.NextBool() ? 1 : (-1)) * RNG.XS.NextDouble();
     				sep.Ele = he;
@@ -58,7 +58,7 @@ namespace SlaveMatrix
     		return false;
     	}
 
-    	public スタンプW(ModeEventDispatcher Med, RenderArea Are, Cha Cha, Bod Bod, EleD EleD, Ele Par)
+    	public スタンプW(ModeEventDispatcher Med, RenderArea Are, Character Cha, Body Bod, EleD EleD, Ele Par)
     		: base(Med, Are, Cha, Bod, EleD)
     	{
     		this.Par = Par;

@@ -532,7 +532,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -554,7 +554,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 飛沫_人(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 飛沫_人D e)
+    	public 飛沫_人(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 飛沫_人D e)
     	{
     		ThisType = GetType();
     		Body = new Difs(Sta.性器付["飛沫"]);
@@ -717,7 +717,7 @@ namespace SlaveMatrix
     		X0Y4_雫8CP = new ColorP(X0Y4_雫8, 雫8CD, DisUnit, abj: true);
     		X0Y4_雫9CP = new ColorP(X0Y4_雫9, 雫9CD, DisUnit, abj: true);
     		X0Y4_雫10CP = new ColorP(X0Y4_雫10, 雫10CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     	}
 
     	public override void 色更新()
@@ -792,12 +792,12 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		飛沫基CD = new ColorD(ref Col.Empty, ref Color2.Empty);
     		雫1CD = new ColorD(ref Col.Empty, ref 体配色.体液);

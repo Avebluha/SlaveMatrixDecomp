@@ -64,7 +64,7 @@ namespace SlaveMatrix
 
     	public ColorD 涙0流れ0CD;
 
-    	public ColorD 涙0流れ1CD;
+    	public ColorD Tear0流れ1CD;
 
     	public ColorD 涙0CD;
 
@@ -166,7 +166,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 涙0流れ0_表示
+    	public bool Tear0流れ0_表示
     	{
     		get
     		{
@@ -189,7 +189,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 涙0_表示
+    	public bool Tear0_表示
     	{
     		get
     		{
@@ -235,7 +235,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 涙ハイライト_表示
+    	public bool Tearハイライト_表示
     	{
     		get
     		{
@@ -258,7 +258,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 涙0流れ1_表示
+    	public bool Tear0流れ1_表示
     	{
     		get
     		{
@@ -283,19 +283,19 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return 涙0流れ0_表示;
+    			return Tear0流れ0_表示;
     		}
     		set
     		{
-    			涙0流れ0_表示 = value;
-    			涙0_表示 = value;
+    			Tear0流れ0_表示 = value;
+    			Tear0_表示 = value;
     			涙1_表示 = value;
-    			涙ハイライト_表示 = value;
-    			涙0流れ1_表示 = value;
+    			Tearハイライト_表示 = value;
+    			Tear0流れ1_表示 = value;
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -304,7 +304,7 @@ namespace SlaveMatrix
     		set
     		{
     			涙0流れ0CD.不透明度 = value;
-    			涙0流れ1CD.不透明度 = value;
+    			Tear0流れ1CD.不透明度 = value;
     			涙0CD.不透明度 = value;
     			涙1CD.不透明度 = value;
     			涙ハイライトCD.不透明度 = value;
@@ -325,7 +325,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 涙(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 涙D e)
+    	public 涙(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 涙D e)
     	{
     		ThisType = GetType();
     		Body = new Difs(Sta.胴体["涙左"]);
@@ -388,11 +388,11 @@ namespace SlaveMatrix
     		サイズ = e.サイズ;
     		サイズX = e.サイズX;
     		サイズY = e.サイズY;
-    		涙0流れ0_表示 = e.涙0流れ0_表示;
-    		涙0_表示 = e.涙0_表示;
+    		Tear0流れ0_表示 = e.涙0流れ0_表示;
+    		Tear0_表示 = e.涙0_表示;
     		涙1_表示 = e.涙1_表示;
-    		涙ハイライト_表示 = e.涙ハイライト_表示;
-    		涙0流れ1_表示 = e.涙0流れ1_表示;
+    		Tearハイライト_表示 = e.涙ハイライト_表示;
+    		Tear0流れ1_表示 = e.涙0流れ1_表示;
     		欠損 = e.欠損;
     		筋肉 = e.筋肉;
     		拘束 = e.拘束;
@@ -407,31 +407,31 @@ namespace SlaveMatrix
     		X0Y0_涙1CP = new ColorP(X0Y0_涙1, 涙1CD, DisUnit, abj: true);
     		X0Y0_涙ハイライトCP = new ColorP(X0Y0_涙ハイライト, 涙ハイライトCD, DisUnit, abj: true);
     		X0Y1_涙0流れ0CP = new ColorP(X0Y1_涙0流れ0, 涙0流れ0CD, DisUnit, abj: true);
-    		X0Y1_涙0流れ1CP = new ColorP(X0Y1_涙0流れ1, 涙0流れ1CD, DisUnit, abj: true);
+    		X0Y1_涙0流れ1CP = new ColorP(X0Y1_涙0流れ1, Tear0流れ1CD, DisUnit, abj: true);
     		X0Y1_涙0CP = new ColorP(X0Y1_涙0, 涙0CD, DisUnit, abj: true);
     		X0Y1_涙1CP = new ColorP(X0Y1_涙1, 涙1CD, DisUnit, abj: true);
     		X0Y1_涙ハイライトCP = new ColorP(X0Y1_涙ハイライト, 涙ハイライトCD, DisUnit, abj: true);
     		X0Y2_涙0流れ0CP = new ColorP(X0Y2_涙0流れ0, 涙0流れ0CD, DisUnit, abj: true);
-    		X0Y2_涙0流れ1CP = new ColorP(X0Y2_涙0流れ1, 涙0流れ1CD, DisUnit, abj: true);
+    		X0Y2_涙0流れ1CP = new ColorP(X0Y2_涙0流れ1, Tear0流れ1CD, DisUnit, abj: true);
     		X0Y2_涙0CP = new ColorP(X0Y2_涙0, 涙0CD, DisUnit, abj: true);
     		X0Y2_涙1CP = new ColorP(X0Y2_涙1, 涙1CD, DisUnit, abj: true);
     		X0Y2_涙ハイライトCP = new ColorP(X0Y2_涙ハイライト, 涙ハイライトCD, DisUnit, abj: true);
     		X0Y3_涙0流れ0CP = new ColorP(X0Y3_涙0流れ0, 涙0流れ0CD, DisUnit, abj: true);
-    		X0Y3_涙0流れ1CP = new ColorP(X0Y3_涙0流れ1, 涙0流れ1CD, DisUnit, abj: true);
+    		X0Y3_涙0流れ1CP = new ColorP(X0Y3_涙0流れ1, Tear0流れ1CD, DisUnit, abj: true);
     		X0Y3_涙0CP = new ColorP(X0Y3_涙0, 涙0CD, DisUnit, abj: true);
     		X0Y3_涙1CP = new ColorP(X0Y3_涙1, 涙1CD, DisUnit, abj: true);
     		X0Y3_涙ハイライトCP = new ColorP(X0Y3_涙ハイライト, 涙ハイライトCD, DisUnit, abj: true);
     		X0Y4_涙0流れ0CP = new ColorP(X0Y4_涙0流れ0, 涙0流れ0CD, DisUnit, abj: true);
-    		X0Y4_涙0流れ1CP = new ColorP(X0Y4_涙0流れ1, 涙0流れ1CD, DisUnit, abj: true);
+    		X0Y4_涙0流れ1CP = new ColorP(X0Y4_涙0流れ1, Tear0流れ1CD, DisUnit, abj: true);
     		X0Y4_涙0CP = new ColorP(X0Y4_涙0, 涙0CD, DisUnit, abj: true);
     		X0Y4_涙1CP = new ColorP(X0Y4_涙1, 涙1CD, DisUnit, abj: true);
     		X0Y4_涙ハイライトCP = new ColorP(X0Y4_涙ハイライト, 涙ハイライトCD, DisUnit, abj: true);
     		X0Y5_涙0流れ0CP = new ColorP(X0Y5_涙0流れ0, 涙0流れ0CD, DisUnit, abj: true);
-    		X0Y5_涙0流れ1CP = new ColorP(X0Y5_涙0流れ1, 涙0流れ1CD, DisUnit, abj: true);
+    		X0Y5_涙0流れ1CP = new ColorP(X0Y5_涙0流れ1, Tear0流れ1CD, DisUnit, abj: true);
     		X0Y5_涙0CP = new ColorP(X0Y5_涙0, 涙0CD, DisUnit, abj: true);
     		X0Y5_涙1CP = new ColorP(X0Y5_涙1, 涙1CD, DisUnit, abj: true);
     		X0Y5_涙ハイライトCP = new ColorP(X0Y5_涙ハイライト, 涙ハイライトCD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     	}
 
     	public override void 色更新()
@@ -482,15 +482,15 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		涙0流れ0CD = new ColorD(ref 体配色.体液線, ref Color2.Empty);
-    		涙0流れ1CD = new ColorD(ref 体配色.体液線, ref Color2.Empty);
+    		Tear0流れ1CD = new ColorD(ref 体配色.体液線, ref Color2.Empty);
     		涙0CD = new ColorD(ref 体配色.体液線, ref 体配色.人肌O);
     		涙1CD = new ColorD(ref 体配色.体液線, ref Color2.Empty);
     		涙ハイライトCD = new ColorD(ref 体配色.ハイライト.Col1, ref 体配色.ハイライト);

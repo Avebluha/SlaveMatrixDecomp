@@ -24,7 +24,7 @@ namespace SlaveMatrix
 
     	public Unit Child;
 
-    	private ChaD cd;
+    	private CharacterData cd;
 
     	public ulong Price;
 
@@ -106,7 +106,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public ChaD ChaD
+    	public CharacterData ChaD
     	{
     		get
     		{

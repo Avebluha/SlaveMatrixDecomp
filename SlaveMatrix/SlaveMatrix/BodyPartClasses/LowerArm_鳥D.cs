@@ -232,7 +232,7 @@ namespace SlaveMatrix
     		e.接続情報 = ConnectionInfo.LowerArm_鳥_手_接続;
     	}
 
-    	public override Ele GetEle(double DisUnit, ModeEventDispatcher Med, 体配色 体配色)
+    	public override Ele GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
     	{
     		return new LowerArm_鳥(DisUnit, 配色指定, 体配色, Med, this);
     	}

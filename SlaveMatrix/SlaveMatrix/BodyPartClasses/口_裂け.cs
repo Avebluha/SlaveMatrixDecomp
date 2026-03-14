@@ -567,7 +567,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -583,7 +583,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 口_裂け(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 口_裂けD e)
+    	public 口_裂け(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 口_裂けD e)
     	{
     		ThisType = GetType();
     		Dif dif = new Dif(Sta.胴体["口"][1]);
@@ -792,7 +792,7 @@ namespace SlaveMatrix
     		X0Y13_口紅下_ハイライトCP = new ColorP(X0Y13_口紅下_ハイライト, 口紅下_ハイライトCD, DisUnit, abj: true);
     		口紅濃度 = e.口紅濃度;
     		ハイライト濃度 = e.ハイライト濃度;
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     		double y = 1.5E-05;
     		X0Y0_口.BasePointBase = X0Y0_口.BasePointBase.AddY(y);
     		X0Y1_口.BasePointBase = X0Y1_口.BasePointBase.AddY(y);
@@ -911,12 +911,12 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		口CD = new ColorD(ref Col.Black, ref 体配色.粘膜);
     		歯CD = new ColorD(ref Col.Black, ref 体配色.歯);

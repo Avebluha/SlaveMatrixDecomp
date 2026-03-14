@@ -285,7 +285,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -310,7 +310,7 @@ namespace SlaveMatrix
 
     	public JointS 鎖2_接続点 => new JointS(Body, X0Y0_腕輪_金具右, 0);
 
-    	public 手_馬(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 手_馬D e)
+    	public 手_馬(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 手_馬D e)
     	{
     		ThisType = GetType();
     		Dif dif = new Dif();
@@ -386,7 +386,7 @@ namespace SlaveMatrix
     		X0Y0_腕輪_金具3CP = new ColorP(X0Y0_腕輪_金具3, 腕輪_金具3CD, DisUnit, abj: true);
     		X0Y0_腕輪_金具左CP = new ColorP(X0Y0_腕輪_金具左, 腕輪_金具左CD, DisUnit, abj: true);
     		X0Y0_腕輪_金具右CP = new ColorP(X0Y0_腕輪_金具右, 腕輪_金具右CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     		鎖1 = new 拘束鎖(DisUnit, 右: false, 配色指定, 体配色, Xasix);
     		鎖1.反転Y = true;
     		鎖1.接続(鎖1_接続点);
@@ -440,12 +440,12 @@ namespace SlaveMatrix
     		鎖1.色更新();
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		指0CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
     		筋CD = new ColorD(ref 体配色.薄線, ref 体配色.毛0O);

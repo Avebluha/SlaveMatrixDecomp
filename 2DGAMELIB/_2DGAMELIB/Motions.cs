@@ -2,11 +2,11 @@ using System.Collections.Generic;
 
 namespace _2DGAMELIB
 {
-    public class Mots
+    public class Motions
     {
-    	public Dictionary<string, Mot> ms;
+    	public Dictionary<string, Motion> ms;
 
-    	public Mot this[string Name]
+    	public Motion this[string Name]
     	{
     		get
     		{
@@ -18,12 +18,12 @@ namespace _2DGAMELIB
     		}
     	}
 
-    	public Mots()
+    	public Motions()
     	{
-    		ms = new Dictionary<string, Mot>();
+    		ms = new Dictionary<string, Motion>();
     	}
 
-    	public void Add(string Name, Mot Mot)
+    	public void Add(string Name, Motion Mot)
     	{
             //Broke some times here when adding existing keys
             //ms.Add(Name, Mot);
@@ -37,7 +37,7 @@ namespace _2DGAMELIB
 
     	public void Drive(FPS FPS)
     	{
-    		foreach (Mot value in ms.Values)
+    		foreach (Motion value in ms.Values)
     		{
     			value.GetValue(FPS);
     		}

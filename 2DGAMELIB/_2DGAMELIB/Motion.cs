@@ -2,25 +2,25 @@ using System;
 
 namespace _2DGAMELIB
 {
-    public class Mot : MotV
+    public class Motion : MotV
     {
-    	public Action<Mot> Staing;
+    	public Action<Motion> OnStart;
 
-    	public Action<Mot> Runing;
+    	public Action<Motion> OnUpdate;
 
-    	public Action<Mot> Reaing;
+    	public Action<Motion> OnReach;
 
-    	public Action<Mot> Rouing;
+    	public Action<Motion> OnLoop;
 
-    	public Action<Mot> Ending;
+    	public Action<Motion> OnEnd;
 
-    	private bool run;
+    	private bool run; //OnUpdate
 
-    	private bool rou;
+    	private bool rou; //OnLoop
 
     	public bool Run => run;
 
-    	public Mot(double Min, double Max)
+    	public Motion(double Min, double Max)
     		: base(Min, Max)
     	{
     	}
@@ -32,23 +32,23 @@ namespace _2DGAMELIB
     			return;
     		}
     		base.GetValue(FPS);
-    		if (Runing != null)
+    		if (OnUpdate != null)
     		{
-    			Runing(this);
+    			OnUpdate(this);
     		}
     		if (Value == min)
     		{
-    			if (rou && Rouing != null)
+    			if (rou && OnLoop != null)
     			{
-    				Rouing(this);
+    				OnLoop(this);
     			}
     			rou = false;
     		}
     		else if (Value == max)
     		{
-    			if (Reaing != null)
+    			if (OnReach != null)
     			{
-    				Reaing(this);
+    				OnReach(this);
     			}
     			rou = true;
     		}
@@ -56,9 +56,9 @@ namespace _2DGAMELIB
 
     	public void Start()
     	{
-    		if (Staing != null)
+    		if (OnStart != null)
     		{
-    			Staing(this);
+    			OnStart(this);
     		}
     		run = true;
     	}
@@ -66,9 +66,9 @@ namespace _2DGAMELIB
     	public void End()
     	{
     		run = false;
-    		if (Ending != null)
+    		if (OnEnd != null)
     		{
-    			Ending(this);
+    			OnEnd(this);
     		}
     		ResetValue();
     		rou = false;

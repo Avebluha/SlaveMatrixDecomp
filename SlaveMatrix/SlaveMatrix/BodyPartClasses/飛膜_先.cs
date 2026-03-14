@@ -78,7 +78,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -103,7 +103,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 飛膜_先(double DisUnit, 配色指定 配色指定, 体配色 体配色)
+    	public 飛膜_先(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色)
     	{
     		ThisType = GetType();
     		Body = new Difs(Sta.腕左["飛膜先"]);
@@ -615,7 +615,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		switch (配色指定)
     		{
@@ -634,17 +634,17 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		飛膜CD = new ColorD(ref Col.Black, ref 体配色.膜R);
     	}
 
-    	private void 配色T0(体配色 体配色)
+    	private void 配色T0(BodyColorSet 体配色)
     	{
     		飛膜CD = new ColorD(ref Col.Black, ref 体配色.刺青R);
     	}
 
-    	private void 配色T1(体配色 体配色)
+    	private void 配色T1(BodyColorSet 体配色)
     	{
     		飛膜CD = new ColorD(ref Col.Black, ref 体配色.刺青R);
     	}

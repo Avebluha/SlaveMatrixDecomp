@@ -71,7 +71,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -83,7 +83,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 鞭痕(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 鞭痕D e)
+    	public 鞭痕(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 鞭痕D e)
     	{
     		ThisType = GetType();
     		Body = new Difs(Sta.スタンプ["鞭痕"]);
@@ -124,7 +124,7 @@ namespace SlaveMatrix
     		base.配色指定 = 配色指定;
     		配色(体配色);
     		X0Y0_鞭痕CP = new ColorP(X0Y0_鞭痕, 鞭痕CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     	}
 
     	public override void 色更新()
@@ -132,12 +132,12 @@ namespace SlaveMatrix
     		X0Y0_鞭痕CP.Update();
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		鞭痕CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
     	}

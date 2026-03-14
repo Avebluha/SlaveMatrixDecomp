@@ -7,7 +7,7 @@ namespace SlaveMatrix
     {
     	public bool Is擽り;
 
-    	private Mot 擽りモーション;
+    	private Motion 擽りモーション;
 
     	private ハンド ハンド右;
 
@@ -214,13 +214,13 @@ namespace SlaveMatrix
     		ハンド右 = 調教UI.ハンド右;
     		xc = Med.Base.LocalCenter.X;
     		Color hc;
-    		擽りモーション = new Mot(0.0, 1.0)
+    		擽りモーション = new Motion(0.0, 1.0)
     		{
     			BaseSpeed = 16.0 * base.強度,
-    			Staing = delegate
+    			OnStart = delegate
     			{
     			},
-    			Runing = delegate(Mot m)
+    			OnUpdate = delegate(Motion m)
     			{
     				羽根箒.Ele.角度C = 10.0 * m.Value;
     				hc = 調教UI.羽根箒先端hc;
@@ -228,13 +228,13 @@ namespace SlaveMatrix
     				Player.奴体力消費小();
     				Player.主精力消費小();
     			},
-    			Reaing = delegate
+    			OnReach = delegate
     			{
     			},
-    			Rouing = delegate
+    			OnLoop = delegate
     			{
     			},
-    			Ending = delegate(Mot m)
+    			OnEnd = delegate(Motion m)
     			{
     				m.ResetValue();
     				羽根箒.Ele.角度C = 0.0;
@@ -243,10 +243,10 @@ namespace SlaveMatrix
     		調教UI.Mots.Add(擽りモーション.GetHashCode().ToString(), 擽りモーション);
     	}
 
-    	public void SetCha(Cha Cha)
+    	public void SetCha(Character Cha)
     	{
     		base.Cha = Cha;
-    		Bod = Cha.Bod;
+    		Bod = Cha.Body;
     	}
 
     	public new void Reset()

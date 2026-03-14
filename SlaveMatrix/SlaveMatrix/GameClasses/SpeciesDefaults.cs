@@ -47,7 +47,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public static ChaD GetHarpy()
+    	public static CharacterData GetHarpy()
     	{
     		WaistD WaistD2 = Uni.Waist();
     		ChestD ChestD2 = WaistD2.SetTorso().SetChestR();
@@ -116,10 +116,10 @@ namespace SlaveMatrix
     		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
     		WaistD2.SetLowerHair();
     		WaistD2.AdjustScale(頭D2);
-    		return new ChaD(WaistD2, new 体色(RNG.XS.NextBool()));
+    		return new CharacterData(WaistD2, new 体色(RNG.XS.NextBool()));
     	}
 
-    	public static ChaD Getアフール()
+    	public static CharacterData Getアフール()
     	{
     		WaistD obj = Uni.Waist();
     		ChestD obj2 = obj.SetTorso().SetChestR();
@@ -161,10 +161,10 @@ namespace SlaveMatrix
     		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
     		obj.SetLowerHair();
     		obj.AdjustScale(頭D2);
-    		return new ChaD(obj, new 体色(b0: false));
+    		return new CharacterData(obj, new 体色(b0: false));
     	}
 
-    	public static ChaD Getハルピュイア()
+    	public static CharacterData Getハルピュイア()
     	{
     		WaistD obj = Uni.Waist();
     		ChestD obj2 = obj.SetTorso().SetChestR();
@@ -218,10 +218,10 @@ namespace SlaveMatrix
     		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
     		obj.SetLowerHair();
     		obj.AdjustScale(頭D2);
-    		return new ChaD(obj, new 体色(RNG.XS.NextBool()));
+    		return new CharacterData(obj, new 体色(RNG.XS.NextBool()));
     	}
 
-    	public static ChaD GetPhoenix()
+    	public static CharacterData GetPhoenix()
     	{
     		WaistD obj = Uni.Waist();
     		ChestD obj2 = obj.SetTorso().SetChestR();
@@ -278,10 +278,10 @@ namespace SlaveMatrix
     		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
     		obj.SetLowerHair();
     		obj.AdjustScale(頭D2);
-    		return new ChaD(obj, new 体色(b0: false));
+    		return new CharacterData(obj, new 体色(b0: false));
     	}
 
-    	public static ChaD Getラミア()
+    	public static CharacterData Getラミア()
     	{
     		WaistD WaistD2 = Uni.Waist();
     		ChestD obj = WaistD2.SetTorso().SetChestR();
@@ -326,10 +326,10 @@ namespace SlaveMatrix
     		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
     		WaistD2.SetLowerHair();
     		WaistD2.AdjustScale(頭D2);
-    		return new ChaD(WaistD2, new 体色(RNG.XS.NextBool()));
+    		return new CharacterData(WaistD2, new 体色(RNG.XS.NextBool()));
     	}
 
-    	public static ChaD Getシーラミア()
+    	public static CharacterData Getシーラミア()
     	{
     		WaistD WaistD2 = Uni.Waist();
     		ChestD obj = WaistD2.SetTorso().SetChestR();
@@ -369,10 +369,10 @@ namespace SlaveMatrix
     		WaistD2.EnumEleD().SetValuesD("身長", 頭D2.目高);
     		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
     		WaistD2.AdjustScale(頭D2);
-    		return new ChaD(WaistD2, new 体色(RNG.XS.NextBool()));
+    		return new CharacterData(WaistD2, new 体色(RNG.XS.NextBool()));
     	}
 
-    	public static ChaD Getオノケンタウレ()
+    	public static CharacterData Getオノケンタウレ()
     	{
     		WaistD obj = Uni.Waist();
     		ChestD obj2 = obj.SetTorso().SetChestR();
@@ -424,10 +424,10 @@ namespace SlaveMatrix
     		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
     		obj.SetLowerHair();
     		obj.AdjustScale(頭D2);
-    		return new ChaD(obj, new 体色(RNG.XS.NextBool()));
+    		return new CharacterData(obj, new 体色(RNG.XS.NextBool()));
     	}
 
-    	public static ChaD Getヒッポケンタウレ()
+    	public static CharacterData Getヒッポケンタウレ()
     	{
     		WaistD WaistD2 = Uni.Waist();
     		ChestD ChestD2 = WaistD2.SetTorso().SetChestR();
@@ -490,10 +490,10 @@ namespace SlaveMatrix
     		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
     		WaistD2.SetLowerHair();
     		WaistD2.AdjustScale(頭D2);
-    		return new ChaD(WaistD2, new 体色(RNG.XS.NextBool()));
+    		return new CharacterData(WaistD2, new 体色(RNG.XS.NextBool()));
     	}
 
-    	public static ChaD Getブケンタウレ()
+    	public static CharacterData Getブケンタウレ()
     	{
     		WaistD WaistD2 = Uni.Waist();
     		ChestD ChestD2 = WaistD2.SetTorso().SetChestR();
@@ -560,10 +560,10 @@ namespace SlaveMatrix
     		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
     		WaistD2.SetLowerHair();
     		WaistD2.AdjustScale(頭D2);
-    		return new ChaD(WaistD2, new 体色(RNG.XS.NextBool()));
+    		return new CharacterData(WaistD2, new 体色(RNG.XS.NextBool()));
     	}
 
-    	public static ChaD Getカプラケンタウレ()
+    	public static CharacterData Getカプラケンタウレ()
     	{
     		WaistD WaistD2 = Uni.Waist();
     		ChestD ChestD2 = WaistD2.SetTorso().SetChestR();
@@ -630,10 +630,10 @@ namespace SlaveMatrix
     		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
     		WaistD2.SetLowerHair();
     		WaistD2.AdjustScale(頭D2);
-    		return new ChaD(WaistD2, new 体色(RNG.XS.NextBool()));
+    		return new CharacterData(WaistD2, new 体色(RNG.XS.NextBool()));
     	}
 
-    	public static ChaD Getマーメイド()
+    	public static CharacterData Getマーメイド()
     	{
     		WaistD obj = Uni.Waist();
     		ChestD obj2 = obj.SetTorso().SetChestR();
@@ -662,10 +662,10 @@ namespace SlaveMatrix
     		obj.EnumEleD().SetValuesD("身長", 頭D2.目高);
     		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
     		obj.AdjustScale(頭D2);
-    		return new ChaD(obj, new 体色(RNG.XS.NextBool()));
+    		return new CharacterData(obj, new 体色(RNG.XS.NextBool()));
     	}
 
-    	public static ChaD Getドルフィンマーメイド()
+    	public static CharacterData Getドルフィンマーメイド()
     	{
     		WaistD obj = Uni.Waist();
     		ChestD obj2 = obj.SetTorso().SetChestR();
@@ -694,10 +694,10 @@ namespace SlaveMatrix
     		obj.EnumEleD().SetValuesD("身長", 頭D2.目高);
     		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
     		obj.AdjustScale(頭D2);
-    		return new ChaD(obj, new 体色(RNG.XS.NextBool()));
+    		return new CharacterData(obj, new 体色(RNG.XS.NextBool()));
     	}
 
-    	public static ChaD Getオールドマーメイド()
+    	public static CharacterData Getオールドマーメイド()
     	{
     		WaistD obj = Uni.Waist();
     		ChestD obj2 = obj.SetTorso().SetChestR();
@@ -730,10 +730,10 @@ namespace SlaveMatrix
     		obj.EnumEleD().SetValuesD("身長", 頭D2.目高);
     		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
     		obj.AdjustScale(頭D2);
-    		return new ChaD(obj, new 体色(RNG.XS.NextBool()));
+    		return new CharacterData(obj, new 体色(RNG.XS.NextBool()));
     	}
 
-    	public static ChaD Getイクテュオケンタウレ(bool b)
+    	public static CharacterData Getイクテュオケンタウレ(bool b)
     	{
     		WaistD WaistD2 = Uni.Waist();
     		ChestD obj = WaistD2.SetTorso().SetChestR();
@@ -786,10 +786,10 @@ namespace SlaveMatrix
     		WaistD2.EnumEleD().SetValuesD("身長", 頭D2.目高);
     		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
     		WaistD2.AdjustScale(頭D2);
-    		return new ChaD(WaistD2, new 体色(RNG.XS.NextBool()));
+    		return new CharacterData(WaistD2, new 体色(RNG.XS.NextBool()));
     	}
 
-    	public static ChaD Getデルピヌスケンタウレ()
+    	public static CharacterData Getデルピヌスケンタウレ()
     	{
     		WaistD obj = Uni.Waist();
     		ChestD obj2 = obj.SetTorso().SetChestR();
@@ -822,10 +822,10 @@ namespace SlaveMatrix
     		obj.EnumEleD().SetValuesD("身長", 頭D2.目高);
     		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
     		obj.AdjustScale(頭D2);
-    		return new ChaD(obj, new 体色(RNG.XS.NextBool()));
+    		return new CharacterData(obj, new 体色(RNG.XS.NextBool()));
     	}
 
-    	public static ChaD Getスキュラ()
+    	public static CharacterData Getスキュラ()
     	{
     		WaistD WaistD2 = Uni.Waist();
     		ChestD obj = WaistD2.SetTorso().SetChestR();
@@ -887,10 +887,10 @@ namespace SlaveMatrix
     		WaistD2.EnumEleD().SetValuesD("身長", 頭D2.目高);
     		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
     		WaistD2.AdjustScale(頭D2);
-    		return new ChaD(WaistD2, new 体色(RNG.XS.NextBool()));
+    		return new CharacterData(WaistD2, new 体色(RNG.XS.NextBool()));
     	}
 
-    	public static ChaD Getオールドスキュラ(bool b)
+    	public static CharacterData Getオールドスキュラ(bool b)
     	{
     		WaistD obj = Uni.Waist();
     		ChestD obj2 = obj.SetTorso().SetChestR();
@@ -938,10 +938,10 @@ namespace SlaveMatrix
     		obj.EnumEleD().SetValuesD("身長", 頭D2.目高);
     		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
     		obj.AdjustScale(頭D2);
-    		return new ChaD(obj, new 体色(RNG.XS.NextBool()));
+    		return new CharacterData(obj, new 体色(RNG.XS.NextBool()));
     	}
 
-    	public static ChaD Getカリュブディス()
+    	public static CharacterData Getカリュブディス()
     	{
     		WaistD WaistD2 = Uni.Waist();
     		ChestD ChestD2 = WaistD2.SetTorso().SetChestR();
@@ -996,10 +996,10 @@ namespace SlaveMatrix
     		WaistD2.EnumEleD().SetValuesD("身長", 頭D2.目高);
     		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
     		WaistD2.AdjustScale(頭D2);
-    		return new ChaD(WaistD2, new 体色(b0: false));
+    		return new CharacterData(WaistD2, new 体色(b0: false));
     	}
 
-    	public static ChaD Getアラクネ(bool b)
+    	public static CharacterData Getアラクネ(bool b)
     	{
     		WaistD WaistD2 = Uni.Waist();
     		ChestD obj = WaistD2.SetTorso().SetChestR();
@@ -1075,10 +1075,10 @@ namespace SlaveMatrix
     		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
     		WaistD2.SetLowerHair();
     		WaistD2.AdjustScale(頭D2);
-    		return new ChaD(WaistD2, new 体色(RNG.XS.NextBool()));
+    		return new CharacterData(WaistD2, new 体色(RNG.XS.NextBool()));
     	}
 
-    	public static ChaD Getギルタブリル()
+    	public static CharacterData Getギルタブリル()
     	{
     		WaistD WaistD2 = Uni.Waist();
     		ChestD obj = WaistD2.SetTorso().SetChestR();
@@ -1167,10 +1167,10 @@ namespace SlaveMatrix
     		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
     		WaistD2.SetLowerHair();
     		WaistD2.AdjustScale(頭D2);
-    		return new ChaD(WaistD2, new 体色(RNG.XS.NextBool()));
+    		return new CharacterData(WaistD2, new 体色(RNG.XS.NextBool()));
     	}
 
-    	public static ChaD Getギルタブルル()
+    	public static CharacterData Getギルタブルル()
     	{
     		WaistD obj = Uni.Waist();
     		TorsoD 胴D2 = obj.SetTorso();
@@ -1234,10 +1234,10 @@ namespace SlaveMatrix
     		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
     		obj.SetLowerHair();
     		obj.AdjustScale(頭D2);
-    		return new ChaD(obj, new 体色(b0: false));
+    		return new CharacterData(obj, new 体色(b0: false));
     	}
 
-    	public static ChaD Getアルラウネ()
+    	public static CharacterData Getアルラウネ()
     	{
     		WaistD obj = Uni.Waist();
     		TorsoD obj2 = obj.SetTorso();
@@ -1343,10 +1343,10 @@ namespace SlaveMatrix
     		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
     		obj.SetLowerHair();
     		obj.AdjustScale(頭D2);
-    		return new ChaD(obj, new 体色(b0: false));
+    		return new CharacterData(obj, new 体色(b0: false));
     	}
 
-    	public static ChaD Getサキュバス()
+    	public static CharacterData Getサキュバス()
     	{
     		WaistD WaistD2 = Uni.Waist();
     		TorsoD TorsoD2 = WaistD2.SetTorso();
@@ -1417,13 +1417,13 @@ namespace SlaveMatrix
     		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
     		WaistD2.SetLowerHair();
     		WaistD2.AdjustScale(頭D2);
-    		return new ChaD(WaistD2, new 体色(RNG.XS.NextBool()))
+    		return new CharacterData(WaistD2, new 体色(RNG.XS.NextBool()))
     		{
     			現陰毛 = 0.0
     		};
     	}
 
-    	public static ChaD Getデビル()
+    	public static CharacterData Getデビル()
     	{
     		WaistD WaistD2 = Uni.Waist();
     		ChestD ChestD2 = WaistD2.SetTorso().SetChestR();
@@ -1522,10 +1522,10 @@ namespace SlaveMatrix
     		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
     		WaistD2.SetLowerHair();
     		WaistD2.AdjustScale(頭D2);
-    		return new ChaD(WaistD2, new 体色(b0: false));
+    		return new CharacterData(WaistD2, new 体色(b0: false));
     	}
 
-    	public static ChaD Getエンジェル(bool b)
+    	public static CharacterData Getエンジェル(bool b)
     	{
     		WaistD WaistD2 = Uni.Waist();
     		ChestD ChestD2 = WaistD2.SetTorso().SetChestR();
@@ -1584,10 +1584,10 @@ namespace SlaveMatrix
     		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
     		WaistD2.SetLowerHair();
     		WaistD2.AdjustScale(頭D2);
-    		return new ChaD(WaistD2, new 体色(RNG.XS.NextBool()));
+    		return new CharacterData(WaistD2, new 体色(RNG.XS.NextBool()));
     	}
 
-    	public static ChaD Getウェアキャット()
+    	public static CharacterData Getウェアキャット()
     	{
     		WaistD obj = Uni.Waist();
     		ChestD obj2 = obj.SetTorso().SetChestR();
@@ -1635,10 +1635,10 @@ namespace SlaveMatrix
     		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
     		obj.SetLowerHair();
     		obj.AdjustScale(頭D2);
-    		return new ChaD(obj, new 体色(RNG.XS.NextBool()));
+    		return new CharacterData(obj, new 体色(RNG.XS.NextBool()));
     	}
 
-    	public static ChaD Getウェアフォックス()
+    	public static CharacterData Getウェアフォックス()
     	{
     		WaistD obj = Uni.Waist();
     		ChestD obj2 = obj.SetTorso().SetChestR();
@@ -1688,10 +1688,10 @@ namespace SlaveMatrix
     		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
     		obj.SetLowerHair();
     		obj.AdjustScale(頭D2);
-    		return new ChaD(obj, new 体色(RNG.XS.NextBool()));
+    		return new CharacterData(obj, new 体色(RNG.XS.NextBool()));
     	}
 
-    	public static ChaD Getウェアウルフ()
+    	public static CharacterData Getウェアウルフ()
     	{
     		WaistD obj = Uni.Waist();
     		ChestD obj2 = obj.SetTorso().SetChestR();
@@ -1733,10 +1733,10 @@ namespace SlaveMatrix
     		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
     		obj.SetLowerHair();
     		obj.AdjustScale(頭D2);
-    		return new ChaD(obj, new 体色(RNG.XS.NextBool()));
+    		return new CharacterData(obj, new 体色(RNG.XS.NextBool()));
     	}
 
-    	public static ChaD Getリザードマン()
+    	public static CharacterData Getリザードマン()
     	{
     		WaistD WaistD2 = Uni.Waist();
     		ChestD obj = WaistD2.SetTorso().SetChestR();
@@ -1790,10 +1790,10 @@ namespace SlaveMatrix
     		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
     		WaistD2.SetLowerHair();
     		WaistD2.AdjustScale(頭D2);
-    		return new ChaD(WaistD2, new 体色(RNG.XS.NextBool()));
+    		return new CharacterData(WaistD2, new 体色(RNG.XS.NextBool()));
     	}
 
-    	public static ChaD Getドラゴニュート()
+    	public static CharacterData Getドラゴニュート()
     	{
     		WaistD WaistD2 = Uni.Waist();
     		ChestD ChestD2 = WaistD2.SetTorso().SetChestR();
@@ -1903,10 +1903,10 @@ namespace SlaveMatrix
     		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
     		WaistD2.SetLowerHair();
     		WaistD2.AdjustScale(頭D2);
-    		return new ChaD(WaistD2, new 体色(RNG.XS.NextBool()));
+    		return new CharacterData(WaistD2, new 体色(RNG.XS.NextBool()));
     	}
 
-    	public static ChaD Getドラゴン()
+    	public static CharacterData Getドラゴン()
     	{
     		WaistD WaistD2 = Uni.Waist();
     		ChestD ChestD2 = WaistD2.SetTorso().SetChestR();
@@ -2018,10 +2018,10 @@ namespace SlaveMatrix
     		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
     		WaistD2.SetLowerHair();
     		WaistD2.AdjustScale(頭D2);
-    		return new ChaD(WaistD2, new 体色(b0: false));
+    		return new CharacterData(WaistD2, new 体色(b0: false));
     	}
 
-    	public static ChaD Getドラコケンタウレ()
+    	public static CharacterData Getドラコケンタウレ()
     	{
     		WaistD WaistD2 = Uni.Waist();
     		ChestD ChestD2 = WaistD2.SetTorso().SetChestR();
@@ -2111,10 +2111,10 @@ namespace SlaveMatrix
     		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
     		WaistD2.SetLowerHair();
     		WaistD2.AdjustScale(頭D2);
-    		return new ChaD(WaistD2, new 体色(RNG.XS.NextBool()));
+    		return new CharacterData(WaistD2, new 体色(RNG.XS.NextBool()));
     	}
 
-    	public static ChaD Getワイバーン()
+    	public static CharacterData Getワイバーン()
     	{
     		WaistD WaistD2 = Uni.Waist();
     		ChestD ChestD2 = WaistD2.SetTorso().SetChestR();
@@ -2219,10 +2219,10 @@ namespace SlaveMatrix
     		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
     		WaistD2.SetLowerHair();
     		WaistD2.AdjustScale(頭D2);
-    		return new ChaD(WaistD2, new 体色(b0: false));
+    		return new CharacterData(WaistD2, new 体色(b0: false));
     	}
 
-    	public static ChaD Getワーム()
+    	public static CharacterData Getワーム()
     	{
     		WaistD WaistD2 = Uni.Waist();
     		HeadD 頭D2 = WaistD2.SetTorso().SetChestR().SetNeck()
@@ -2268,10 +2268,10 @@ namespace SlaveMatrix
     		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
     		WaistD2.SetLowerHair();
     		WaistD2.AdjustScale(頭D2);
-    		return new ChaD(WaistD2, new 体色(b0: false));
+    		return new CharacterData(WaistD2, new 体色(b0: false));
     	}
 
-    	public static ChaD Getサンドワーム()
+    	public static CharacterData Getサンドワーム()
     	{
     		WaistD WaistD2 = Uni.Waist();
     		ChestD ChestD2 = WaistD2.SetTorso().SetChestR();
@@ -2343,10 +2343,10 @@ namespace SlaveMatrix
     		WaistD2.EnumEleD().SetValuesD("身長", 頭D2.目高);
     		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
     		WaistD2.AdjustScale(頭D2);
-    		return new ChaD(WaistD2, new 体色(b0: false));
+    		return new CharacterData(WaistD2, new 体色(b0: false));
     	}
 
-    	public static ChaD Getリュウ()
+    	public static CharacterData Getリュウ()
     	{
     		WaistD WaistD2 = Uni.Waist();
     		ChestD ChestD2 = WaistD2.SetTorso().SetChestR();
@@ -2405,10 +2405,10 @@ namespace SlaveMatrix
     		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
     		WaistD2.SetLowerHair();
     		WaistD2.AdjustScale(頭D2);
-    		return new ChaD(WaistD2, new 体色(b0: false));
+    		return new CharacterData(WaistD2, new 体色(b0: false));
     	}
 
-    	public static ChaD Getスライム()
+    	public static CharacterData Getスライム()
     	{
     		WaistD obj = Uni.Waist();
     		ChestD obj2 = obj.SetTorso().SetChestR();
@@ -2448,10 +2448,10 @@ namespace SlaveMatrix
     		obj.EnumEleD().SetValuesD("身長", 頭D2.目高);
     		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
     		obj.AdjustScale(頭D2);
-    		return new ChaD(obj, new 体色(b0: false));
+    		return new CharacterData(obj, new 体色(b0: false));
     	}
 
-    	public static ChaD Getフェアリー(bool b1, bool b2)
+    	public static CharacterData Getフェアリー(bool b1, bool b2)
     	{
     		WaistD WaistD2 = Uni.Waist();
     		ChestD ChestD2 = WaistD2.SetTorso().SetChestR();
@@ -2574,10 +2574,10 @@ namespace SlaveMatrix
     		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
     		WaistD2.SetLowerHair();
     		WaistD2.AdjustScale(頭D2);
-    		return new ChaD(WaistD2, new 体色(RNG.XS.NextBool()));
+    		return new CharacterData(WaistD2, new 体色(RNG.XS.NextBool()));
     	}
 
-    	public static ChaD Getオーグリス(bool b)
+    	public static CharacterData Getオーグリス(bool b)
     	{
     		WaistD WaistD2 = Uni.Waist();
     		ChestD obj = WaistD2.SetTorso().SetChestR();
@@ -2645,10 +2645,10 @@ namespace SlaveMatrix
     		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
     		WaistD2.SetLowerHair();
     		WaistD2.AdjustScale(頭D2);
-    		return new ChaD(WaistD2, new 体色(RNG.XS.NextBool()));
+    		return new CharacterData(WaistD2, new 体色(RNG.XS.NextBool()));
     	}
 
-    	public static ChaD Getサイクロプス()
+    	public static CharacterData Getサイクロプス()
     	{
     		WaistD obj = Uni.Waist();
     		ChestD obj2 = obj.SetTorso().SetChestR();
@@ -2687,10 +2687,10 @@ namespace SlaveMatrix
     		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
     		obj.SetLowerHair();
     		obj.AdjustScale(頭D2);
-    		return new ChaD(obj, new 体色(RNG.XS.NextBool()));
+    		return new CharacterData(obj, new 体色(RNG.XS.NextBool()));
     	}
 
-    	public static ChaD Getエイリアン()
+    	public static CharacterData Getエイリアン()
     	{
     		WaistD WaistD2 = Uni.Waist();
     		ChestD obj = WaistD2.SetTorso().SetChestR();
@@ -2746,10 +2746,10 @@ namespace SlaveMatrix
     		WaistD2.EnumEleD().SetValuesD("身長", 頭D2.目高);
     		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
     		WaistD2.AdjustScale(頭D2);
-    		return new ChaD(WaistD2, new 体色(b0: false));
+    		return new CharacterData(WaistD2, new 体色(b0: false));
     	}
 
-    	public static ChaD Getクラーケン()
+    	public static CharacterData Getクラーケン()
     	{
     		WaistD WaistD2 = Uni.Waist();
     		ChestD obj = WaistD2.SetTorso().SetChestR();
@@ -2801,10 +2801,10 @@ namespace SlaveMatrix
     		WaistD2.EnumEleD().SetValuesD("身長", 頭D2.目高);
     		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
     		WaistD2.AdjustScale(頭D2);
-    		return new ChaD(WaistD2, new 体色(b0: false));
+    		return new CharacterData(WaistD2, new 体色(b0: false));
     	}
 
-    	public static ChaD Getセイレーン(int i)
+    	public static CharacterData Getセイレーン(int i)
     	{
     		WaistD WaistD2 = Uni.Waist();
     		ChestD ChestD2 = WaistD2.SetTorso().SetChestR();
@@ -2935,10 +2935,10 @@ namespace SlaveMatrix
     		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
     		WaistD2.SetLowerHair();
     		WaistD2.AdjustScale(頭D2);
-    		return new ChaD(WaistD2, new 体色(RNG.XS.NextBool()));
+    		return new CharacterData(WaistD2, new 体色(RNG.XS.NextBool()));
     	}
 
-    	public static ChaD Getユニコーン()
+    	public static CharacterData Getユニコーン()
     	{
     		WaistD obj = Uni.Waist();
     		ChestD obj2 = obj.SetTorso().SetChestR();
@@ -2992,10 +2992,10 @@ namespace SlaveMatrix
     		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
     		obj.SetLowerHair();
     		obj.AdjustScale(頭D2);
-    		return new ChaD(obj, new 体色(RNG.XS.NextBool()));
+    		return new CharacterData(obj, new 体色(RNG.XS.NextBool()));
     	}
 
-    	public static ChaD Getモノケロス()
+    	public static CharacterData Getモノケロス()
     	{
     		WaistD obj = Uni.Waist();
     		ChestD obj2 = obj.SetTorso().SetChestR();
@@ -3059,10 +3059,10 @@ namespace SlaveMatrix
     		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
     		obj.SetLowerHair();
     		obj.AdjustScale(頭D2);
-    		return new ChaD(obj, new 体色(b0: false));
+    		return new CharacterData(obj, new 体色(b0: false));
     	}
 
-    	public static ChaD Getアリコーン()
+    	public static CharacterData Getアリコーン()
     	{
     		WaistD obj = Uni.Waist();
     		ChestD obj2 = obj.SetTorso().SetChestR();
@@ -3132,10 +3132,10 @@ namespace SlaveMatrix
     		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
     		obj.SetLowerHair();
     		obj.AdjustScale(頭D2);
-    		return new ChaD(obj, new 体色(b0: false));
+    		return new CharacterData(obj, new 体色(b0: false));
     	}
 
-    	public static ChaD Getバイコーン()
+    	public static CharacterData Getバイコーン()
     	{
     		WaistD obj = Uni.Waist();
     		ChestD ChestD2 = obj.SetTorso().SetChestR();
@@ -3195,10 +3195,10 @@ namespace SlaveMatrix
     		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
     		obj.SetLowerHair();
     		obj.AdjustScale(頭D2);
-    		return new ChaD(obj, new 体色(b0: false));
+    		return new CharacterData(obj, new 体色(b0: false));
     	}
 
-    	public static ChaD Getペガサス()
+    	public static CharacterData Getペガサス()
     	{
     		WaistD obj = Uni.Waist();
     		ChestD obj2 = obj.SetTorso().SetChestR();
@@ -3267,10 +3267,10 @@ namespace SlaveMatrix
     		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
     		obj.SetLowerHair();
     		obj.AdjustScale(頭D2);
-    		return new ChaD(obj, new 体色(RNG.XS.NextBool()));
+    		return new CharacterData(obj, new 体色(RNG.XS.NextBool()));
     	}
 
-    	public static ChaD Getグリフォン()
+    	public static CharacterData Getグリフォン()
     	{
     		WaistD obj = Uni.Waist();
     		ChestD obj2 = obj.SetTorso().SetChestR();
@@ -3340,10 +3340,10 @@ namespace SlaveMatrix
     		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
     		obj.SetLowerHair();
     		obj.AdjustScale(頭D2);
-    		return new ChaD(obj, new 体色(b0: false));
+    		return new CharacterData(obj, new 体色(b0: false));
     	}
 
-    	public static ChaD Getヒッポグリフ()
+    	public static CharacterData Getヒッポグリフ()
     	{
     		WaistD obj = Uni.Waist();
     		ChestD obj2 = obj.SetTorso().SetChestR();
@@ -3418,10 +3418,10 @@ namespace SlaveMatrix
     		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
     		obj.SetLowerHair();
     		obj.AdjustScale(頭D2);
-    		return new ChaD(obj, new 体色(b0: false));
+    		return new CharacterData(obj, new 体色(b0: false));
     	}
 
-    	public static ChaD Getキマイラ()
+    	public static CharacterData Getキマイラ()
     	{
     		WaistD WaistD2 = Uni.Waist();
     		ChestD ChestD2 = WaistD2.SetTorso().SetChestR();
@@ -3489,10 +3489,10 @@ namespace SlaveMatrix
     		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
     		WaistD2.SetLowerHair();
     		WaistD2.AdjustScale(頭D2);
-    		return new ChaD(WaistD2, new 体色(b0: false));
+    		return new CharacterData(WaistD2, new 体色(b0: false));
     	}
 
-    	public static ChaD Getスフィンクス(bool b)
+    	public static CharacterData Getスフィンクス(bool b)
     	{
     		WaistD WaistD2 = Uni.Waist();
     		TorsoD e = WaistD2.SetTorso();
@@ -3600,10 +3600,10 @@ namespace SlaveMatrix
     		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
     		WaistD2.SetLowerHair();
     		WaistD2.AdjustScale(頭D2);
-    		return new ChaD(WaistD2, new 体色(RNG.XS.NextBool()));
+    		return new CharacterData(WaistD2, new 体色(RNG.XS.NextBool()));
     	}
 
-    	public static ChaD Getレオントケンタウレ()
+    	public static CharacterData Getレオントケンタウレ()
     	{
     		WaistD obj = Uni.Waist();
     		ChestD ChestD2 = obj.SetTorso().SetChestR();
@@ -3665,10 +3665,10 @@ namespace SlaveMatrix
     		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
     		obj.SetLowerHair();
     		obj.AdjustScale(頭D2);
-    		return new ChaD(obj, new 体色(RNG.XS.NextBool()));
+    		return new CharacterData(obj, new 体色(RNG.XS.NextBool()));
     	}
 
-    	public static ChaD Getティグリスケンタウレ()
+    	public static CharacterData Getティグリスケンタウレ()
     	{
     		WaistD WaistD2 = Uni.Waist();
     		ChestD obj = WaistD2.SetTorso().SetChestR();
@@ -3741,10 +3741,10 @@ namespace SlaveMatrix
     		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
     		WaistD2.SetLowerHair();
     		WaistD2.AdjustScale(頭D2);
-    		return new ChaD(WaistD2, new 体色(RNG.XS.NextBool()));
+    		return new CharacterData(WaistD2, new 体色(RNG.XS.NextBool()));
     	}
 
-    	public static ChaD Getパンテーラケンタウレ()
+    	public static CharacterData Getパンテーラケンタウレ()
     	{
     		WaistD obj = Uni.Waist();
     		ChestD obj2 = obj.SetTorso().SetChestR();
@@ -3805,10 +3805,10 @@ namespace SlaveMatrix
     		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
     		obj.SetLowerHair();
     		obj.AdjustScale(頭D2);
-    		return new ChaD(obj, new 体色(RNG.XS.NextBool()));
+    		return new CharacterData(obj, new 体色(RNG.XS.NextBool()));
     	}
 
-    	public static ChaD Getチータケンタウレ()
+    	public static CharacterData Getチータケンタウレ()
     	{
     		WaistD obj = Uni.Waist();
     		ChestD obj2 = obj.SetTorso().SetChestR();
@@ -3882,10 +3882,10 @@ namespace SlaveMatrix
     		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
     		obj.SetLowerHair();
     		obj.AdjustScale(頭D2);
-    		return new ChaD(obj, new 体色(RNG.XS.NextBool()));
+    		return new CharacterData(obj, new 体色(RNG.XS.NextBool()));
     	}
 
-    	public static ChaD Getウェアドラゴンフライ()
+    	public static CharacterData Getウェアドラゴンフライ()
     	{
     		WaistD obj = Uni.Waist();
     		ChestD obj2 = obj.SetTorso().SetChestR();
@@ -3945,10 +3945,10 @@ namespace SlaveMatrix
     		obj.EnumEleD().SetValuesD("身長", 頭D2.目高);
     		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
     		obj.AdjustScale(頭D2);
-    		return new ChaD(obj, new 体色(b0: false));
+    		return new CharacterData(obj, new 体色(b0: false));
     	}
 
-    	public static ChaD Getウェアビートル()
+    	public static CharacterData Getウェアビートル()
     	{
     		WaistD obj = Uni.Waist();
     		ChestD obj2 = obj.SetTorso().SetChestR();
@@ -4007,10 +4007,10 @@ namespace SlaveMatrix
     		obj.EnumEleD().SetValuesD("身長", 頭D2.目高);
     		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
     		obj.AdjustScale(頭D2);
-    		return new ChaD(obj, new 体色(b0: false));
+    		return new CharacterData(obj, new 体色(b0: false));
     	}
 
-    	public static ChaD Getウェアスタッグビートル()
+    	public static CharacterData Getウェアスタッグビートル()
     	{
     		WaistD obj = Uni.Waist();
     		ChestD obj2 = obj.SetTorso().SetChestR();
@@ -4072,10 +4072,10 @@ namespace SlaveMatrix
     		obj.EnumEleD().SetValuesD("身長", 頭D2.目高);
     		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
     		obj.AdjustScale(頭D2);
-    		return new ChaD(obj, new 体色(b0: false));
+    		return new CharacterData(obj, new 体色(b0: false));
     	}
 
-    	public static ChaD Getウェアマンティス()
+    	public static CharacterData Getウェアマンティス()
     	{
     		WaistD obj = Uni.Waist();
     		TorsoD obj2 = obj.SetTorso();
@@ -4134,10 +4134,10 @@ namespace SlaveMatrix
     		obj.EnumEleD().SetValuesD("身長", 頭D2.目高);
     		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
     		obj.AdjustScale(頭D2);
-    		return new ChaD(obj, new 体色(b0: false));
+    		return new CharacterData(obj, new 体色(b0: false));
     	}
 
-    	public static ChaD Getエキドナ()
+    	public static CharacterData Getエキドナ()
     	{
     		WaistD WaistD2 = Uni.Waist();
     		ChestD obj = WaistD2.SetTorso().SetChestR();
@@ -4196,10 +4196,10 @@ namespace SlaveMatrix
     		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
     		WaistD2.SetLowerHair();
     		WaistD2.AdjustScale(頭D2);
-    		return new ChaD(WaistD2, new 体色(b0: false));
+    		return new CharacterData(WaistD2, new 体色(b0: false));
     	}
 
-    	public static ChaD Getゴルゴン()
+    	public static CharacterData Getゴルゴン()
     	{
     		WaistD WaistD2 = Uni.Waist();
     		ChestD ChestD2 = WaistD2.SetTorso().SetChestR();
@@ -4286,10 +4286,10 @@ namespace SlaveMatrix
     		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
     		WaistD2.SetLowerHair();
     		WaistD2.AdjustScale(頭D2);
-    		return new ChaD(WaistD2, new 体色(b0: false));
+    		return new CharacterData(WaistD2, new 体色(b0: false));
     	}
 
-    	public static ChaD Getヒュドラ()
+    	public static CharacterData Getヒュドラ()
     	{
     		WaistD WaistD2 = Uni.Waist();
     		HeadD 頭D2 = WaistD2.SetTorso().SetChestR().SetNeck()
@@ -4337,10 +4337,10 @@ namespace SlaveMatrix
     		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
     		WaistD2.SetLowerHair();
     		WaistD2.AdjustScale(頭D2);
-    		return new ChaD(WaistD2, new 体色(b0: false));
+    		return new CharacterData(WaistD2, new 体色(b0: false));
     	}
 
-    	public static ChaD Getウロボロス()
+    	public static CharacterData Getウロボロス()
     	{
     		WaistD WaistD2 = Uni.Waist();
     		HeadD 頭D2 = WaistD2.SetTorso().SetChestR().SetNeck()
@@ -4375,10 +4375,10 @@ namespace SlaveMatrix
     		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
     		WaistD2.SetLowerHair();
     		WaistD2.AdjustScale(頭D2);
-    		return new ChaD(WaistD2, new 体色(b0: false));
+    		return new CharacterData(WaistD2, new 体色(b0: false));
     	}
 
-    	public static ChaD Getカッパ()
+    	public static CharacterData Getカッパ()
     	{
     		WaistD WaistD2 = Uni.Waist();
     		ChestD obj = WaistD2.SetTorso().SetChestR();
@@ -4424,10 +4424,10 @@ namespace SlaveMatrix
     		WaistD2.EnumEleD().SetValuesD("身長", 頭D2.目高);
     		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
     		WaistD2.AdjustScale(頭D2);
-    		return new ChaD(WaistD2, new 体色(b0: false));
+    		return new CharacterData(WaistD2, new 体色(b0: false));
     	}
 
-    	public static ChaD Getムカデジョウロウ()
+    	public static CharacterData Getムカデジョウロウ()
     	{
     		WaistD WaistD2 = Uni.Waist();
     		ChestD ChestD2 = WaistD2.SetTorso().SetChestR();
@@ -4511,10 +4511,10 @@ namespace SlaveMatrix
     		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
     		WaistD2.SetLowerHair();
     		WaistD2.AdjustScale(頭D2);
-    		return new ChaD(WaistD2, new 体色(RNG.XS.NextBool()));
+    		return new CharacterData(WaistD2, new 体色(RNG.XS.NextBool()));
     	}
 
-    	public static ChaD Getカーバンクル()
+    	public static CharacterData Getカーバンクル()
     	{
     		WaistD WaistD2 = Uni.Waist();
     		ChestD obj = WaistD2.SetTorso().SetChestR();
@@ -4563,10 +4563,10 @@ namespace SlaveMatrix
     		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
     		WaistD2.SetLowerHair();
     		WaistD2.AdjustScale(頭D2);
-    		return new ChaD(WaistD2, new 体色(b0: false));
+    		return new CharacterData(WaistD2, new 体色(b0: false));
     	}
 
-    	public static ChaD Getバジリスク()
+    	public static CharacterData Getバジリスク()
     	{
     		WaistD WaistD2 = Uni.Waist();
     		TorsoD obj = WaistD2.SetTorso();
@@ -4633,10 +4633,10 @@ namespace SlaveMatrix
     		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
     		WaistD2.SetLowerHair();
     		WaistD2.AdjustScale(頭D2);
-    		return new ChaD(WaistD2, new 体色(b0: false));
+    		return new CharacterData(WaistD2, new 体色(b0: false));
     	}
 
-    	public static ChaD Getコカトリス()
+    	public static CharacterData Getコカトリス()
     	{
     		WaistD WaistD2 = Uni.Waist();
     		TorsoD obj = WaistD2.SetTorso();
@@ -4694,10 +4694,10 @@ namespace SlaveMatrix
     		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
     		WaistD2.SetLowerHair();
     		WaistD2.AdjustScale(頭D2);
-    		return new ChaD(WaistD2, new 体色(b0: false));
+    		return new CharacterData(WaistD2, new 体色(b0: false));
     	}
 
-    	public static ChaD Getカトブレパス()
+    	public static CharacterData Getカトブレパス()
     	{
     		WaistD obj = Uni.Waist();
     		ChestD obj2 = obj.SetTorso().SetChestR();
@@ -4757,10 +4757,10 @@ namespace SlaveMatrix
     		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
     		obj.SetLowerHair();
     		obj.AdjustScale(頭D2);
-    		return new ChaD(obj, new 体色(b0: false));
+    		return new CharacterData(obj, new 体色(b0: false));
     	}
 
-    	public static ChaD Getミノタウロス()
+    	public static CharacterData Getミノタウロス()
     	{
     		WaistD WaistD2 = Uni.Waist();
     		ChestD ChestD2 = WaistD2.SetTorso().SetChestR();
@@ -4810,10 +4810,10 @@ namespace SlaveMatrix
     		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
     		WaistD2.SetLowerHair();
     		WaistD2.AdjustScale(頭D2);
-    		return new ChaD(WaistD2, new 体色(RNG.XS.NextBool()));
+    		return new CharacterData(WaistD2, new 体色(RNG.XS.NextBool()));
     	}
 
-    	public static ChaD Getリリン()
+    	public static CharacterData Getリリン()
     	{
     		WaistD obj = Uni.Waist();
     		ChestD obj2 = obj.SetTorso().SetChestR();
@@ -4845,10 +4845,10 @@ namespace SlaveMatrix
     		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
     		obj.SetLowerHair();
     		obj.AdjustScale(頭D2);
-    		return new ChaD(obj, new 体色(RNG.XS.NextBool()));
+    		return new CharacterData(obj, new 体色(RNG.XS.NextBool()));
     	}
 
-    	public static ChaD Getエルフ()
+    	public static CharacterData Getエルフ()
     	{
     		WaistD obj = Uni.Waist();
     		ChestD obj2 = obj.SetTorso().SetChestR();
@@ -4880,10 +4880,10 @@ namespace SlaveMatrix
     		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
     		obj.SetLowerHair();
     		obj.AdjustScale(頭D2);
-    		return new ChaD(obj, new 体色(b0: true));
+    		return new CharacterData(obj, new 体色(b0: true));
     	}
 
-    	public static ChaD Getドワーフ()
+    	public static CharacterData Getドワーフ()
     	{
     		WaistD obj = Uni.Waist();
     		ChestD obj2 = obj.SetTorso().SetChestR();
@@ -4915,10 +4915,10 @@ namespace SlaveMatrix
     		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
     		obj.SetLowerHair();
     		obj.AdjustScale(頭D2);
-    		return new ChaD(obj, new 体色(b0: true));
+    		return new CharacterData(obj, new 体色(b0: true));
     	}
 
-    	public static ChaD GetViola()
+    	public static CharacterData GetViola()
     	{
     		WaistD waist_description = Uni.Waist();
     		TorsoD body_description = waist_description.SetTorso();
@@ -5083,7 +5083,7 @@ namespace SlaveMatrix
     		waist_description.EnumEleD().SetValuesD("身長", 0.9);
     		waist_description.EnumEleD().SetValuesD("鋭爪", 0.6);
 
-    		ChaD chaD = new ChaD(waist_description, new 体色(b0: false)
+    		CharacterData chaD = new CharacterData(waist_description, new 体色(b0: false)
     		{
     			髪 = Color.FromArgb(255, 239, 241, 194).Add(0, 128, 0),
     			眉 = Color.FromArgb(255, 239, 241, 194).Add(0, 128, 0),
@@ -5106,7 +5106,7 @@ namespace SlaveMatrix
 
     	}
 
-    	public static ChaD Getヒューマン()
+    	public static CharacterData Getヒューマン()
     	{
     		WaistD obj = Uni.Waist();
     		ChestD obj2 = obj.SetTorso().SetChestR();
@@ -5138,10 +5138,10 @@ namespace SlaveMatrix
     		obj.EnumEleD().SetValuesD("鋭爪", 0.0);
     		obj.SetLowerHair();
     		obj.AdjustScale(頭D2);
-    		return new ChaD(obj, new 体色(b0: true));
+    		return new CharacterData(obj, new 体色(b0: true));
     	}
 
-    	public static ChaD Getプレーヤー()
+    	public static CharacterData Getプレーヤー()
     	{
     		WaistD obj = Uni.Waist();
     		ChestD obj2 = obj.SetTorso().SetChestR();
@@ -5173,7 +5173,7 @@ namespace SlaveMatrix
     		obj.EnumEleD().SetValuesD("鋭爪", 0.0);
     		obj.肌_接続.GetEleD<腰肌D>().陰毛_表示 = true;
     		obj.AdjustScale(頭D2);
-    		return new ChaD(obj, new 体色(b0: true)
+    		return new CharacterData(obj, new 体色(b0: true)
     		{
     			目左 = Sta.GameData.色.瞳色,
     			目右 = Sta.GameData.色.瞳色,

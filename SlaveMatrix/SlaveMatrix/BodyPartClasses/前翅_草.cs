@@ -364,7 +364,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -398,7 +398,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 前翅_草(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 前翅_草D e)
+    	public 前翅_草(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 前翅_草D e)
     	{
     		ThisType = GetType();
     		Dif dif = new Dif(Sta.肢左["前翅"][3]);
@@ -502,7 +502,7 @@ namespace SlaveMatrix
     		X0Y1_前翅_前翅2CP = new ColorP(X0Y1_前翅_前翅2, 前翅_前翅2CD, DisUnit, abj: true);
     		X0Y1_前翅_紋1CP = new ColorP(X0Y1_前翅_紋1, 前翅_紋1CD, DisUnit, abj: true);
     		X0Y1_前翅_紋2CP = new ColorP(X0Y1_前翅_紋2, 前翅_紋2CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     	}
 
     	public override void SetAngle0()
@@ -547,12 +547,12 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		Col.Alpha(ref 体配色.体0O, 128, out var ret);
     		前翅_前翅1CD = new ColorD(ref Col.Black, ref ret);

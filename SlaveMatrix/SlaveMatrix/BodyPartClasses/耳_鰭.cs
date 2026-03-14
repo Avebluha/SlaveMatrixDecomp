@@ -366,7 +366,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -383,7 +383,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 耳_鰭(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 耳_鰭D e)
+    	public 耳_鰭(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 耳_鰭D e)
     	{
     		ThisType = GetType();
     		Body = new Difs();
@@ -531,7 +531,7 @@ namespace SlaveMatrix
     		X1Y2_鰭耳1_鰭条CP = new ColorP(X1Y2_鰭耳1_鰭条, 鰭耳1_鰭条CD, DisUnit, abj: true);
     		X1Y2_鰭耳2_鰭膜CP = new ColorP(X1Y2_鰭耳2_鰭膜, 鰭耳2_鰭膜CD, DisUnit, abj: true);
     		X1Y2_鰭耳2_鰭条CP = new ColorP(X1Y2_鰭耳2_鰭条, 鰭耳2_鰭条CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     	}
 
     	public override void 色更新()
@@ -604,12 +604,12 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		鰭耳3_鰭膜CD = new ColorD(ref Col.Black, ref 体配色.膜O);
     		鰭耳3_鰭条CD = new ColorD(ref Col.Black, ref 体配色.爪O);

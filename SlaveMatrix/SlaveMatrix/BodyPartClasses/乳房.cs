@@ -676,7 +676,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -792,7 +792,7 @@ namespace SlaveMatrix
 
     	public JointS 噴乳_接続点 => new JointS(Body, X0Y0_乳首, 0);
 
-    	public 乳房(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 乳房D e)
+    	public 乳房(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 乳房D e)
     	{
     		乳房 乳房2 = this;
     		ThisType = GetType();
@@ -1001,7 +1001,7 @@ namespace SlaveMatrix
     		傷I1濃度 = e.傷I1濃度;
     		傷I2濃度 = e.傷I2濃度;
     		ハイライト濃度 = e.ハイライト濃度;
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     	}
 
     	public override void 描画0(RenderArea Are)
@@ -1170,12 +1170,12 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		乳房CD = new ColorD(ref Col.Black, ref 体配色.人肌O);
     		乳輪CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);

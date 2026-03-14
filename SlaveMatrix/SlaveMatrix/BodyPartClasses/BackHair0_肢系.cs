@@ -95,7 +95,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -138,7 +138,7 @@ namespace SlaveMatrix
 
     	public JointS 右5_接続点 => new JointS(Body, X0Y0_髪基, 6);
 
-    	public BackHair0_肢系(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, BackHair0_肢系D e)
+    	public BackHair0_肢系(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, BackHair0_肢系D e)
     	{
     		BackHair0_肢系 後髪0_肢系2 = this;
     		ThisType = GetType();
@@ -312,7 +312,7 @@ namespace SlaveMatrix
     		base.配色指定 = 配色指定;
     		配色(体配色);
     		X0Y0_髪基CP = new ColorP(X0Y0_髪基, 髪基CD, DisUnit, abj: false);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     	}
 
     	public override void SetAngle0()
@@ -332,12 +332,12 @@ namespace SlaveMatrix
     		X0Y0_髪基CP.Update();
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		髪基CD = new ColorD(ref 体配色.髪線, ref 体配色.髪O);
     	}

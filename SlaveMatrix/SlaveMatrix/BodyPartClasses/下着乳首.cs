@@ -139,7 +139,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -177,7 +177,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 下着乳首(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 下着乳首D e)
+    	public 下着乳首(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 下着乳首D e)
     	{
     		ThisType = GetType();
     		Body = new Difs(Sta.胴体["下着乳首左"]);
@@ -228,7 +228,7 @@ namespace SlaveMatrix
     		X0Y0_染み2CP = new ColorP(X0Y0_染み2, 染み2CD, DisUnit, abj: true);
     		X0Y0_染み1CP = new ColorP(X0Y0_染み1, 染み1CD, DisUnit, abj: true);
     		染み濃度 = e.染み濃度;
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     	}
 
     	public override void 色更新()
@@ -238,12 +238,12 @@ namespace SlaveMatrix
     		X0Y0_染み1CP.Update();
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		乳首CD = new ColorD();
     		染み2CD = new ColorD(ref Col.Empty, ref 体配色.染み);

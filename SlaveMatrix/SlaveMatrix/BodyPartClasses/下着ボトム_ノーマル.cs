@@ -2646,7 +2646,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -2709,7 +2709,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 下着ボトム_ノーマル(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 下着ボトム_ノーマルD e)
+    	public 下着ボトム_ノーマル(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 下着ボトム_ノーマルD e)
     	{
     		ThisType = GetType();
     		Dif dif = new Dif(Sta.胴体["下着ボトム"][0]);
@@ -3459,7 +3459,7 @@ namespace SlaveMatrix
     		X0Y4_染み_染み2CP = new ColorP(X0Y4_染み_染み2, 染み_染み2CD, DisUnit, abj: true);
     		X0Y4_染み_染み1CP = new ColorP(X0Y4_染み_染み1, 染み_染み1CD, DisUnit, abj: true);
     		染み濃度 = e.染み濃度;
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     		尺度YB = 0.95;
     		double y = 0.0005;
     		X0Y0_下地.BasePointBase = X0Y0_下地.BasePointBase.AddY(y);
@@ -4049,12 +4049,12 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		紐左CD = new ColorD();
     		紐右CD = new ColorD();

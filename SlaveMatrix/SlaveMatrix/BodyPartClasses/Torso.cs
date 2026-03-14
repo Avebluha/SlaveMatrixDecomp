@@ -259,7 +259,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -287,7 +287,7 @@ namespace SlaveMatrix
 
     	public JointS 翼右_接続点 => new JointS(Body, X0Y0_Torso, 2);
 
-    	public Torso(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, TorsoD e)
+    	public Torso(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, TorsoD e)
     	{
     		Torso Torso2 = this;
     		ThisType = GetType();
@@ -405,7 +405,7 @@ namespace SlaveMatrix
     		X0Y0_植タトゥ_右_タトゥ2CP = new ColorP(X0Y0_植タトゥ_右_タトゥ2, 植タトゥ_右_タトゥ2CD, DisUnit, abj: true);
     		X0Y0_植タトゥ_右_タトゥ1CP = new ColorP(X0Y0_植タトゥ_右_タトゥ1, 植タトゥ_右_タトゥ1CD, DisUnit, abj: true);
     		筋肉濃度 = e.筋肉濃度;
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     		尺度YB = 0.9;
     	}
 
@@ -429,12 +429,12 @@ namespace SlaveMatrix
     		X0Y0_植タトゥ_右_タトゥ1CP.Update();
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		TorsoCD = new ColorD(ref Col.Black, ref 体配色.人肌R);
     		筋肉_筋肉左CD = new ColorD(ref 体配色.薄線, ref 体配色.人肌O);

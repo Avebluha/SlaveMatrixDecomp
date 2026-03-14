@@ -315,7 +315,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -346,7 +346,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public Cough(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 咳D e)
+    	public Cough(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 咳D e)
     	{
     		ThisType = GetType();
     		Body = new Difs(Sta.胴体["Cough"]);
@@ -454,7 +454,7 @@ namespace SlaveMatrix
     		X0Y4_雫3CP = new ColorP(X0Y4_雫3, 雫3CD, DisUnit, abj: true);
     		X0Y4_雫4CP = new ColorP(X0Y4_雫4, 雫4CD, DisUnit, abj: true);
     		X0Y4_雫5CP = new ColorP(X0Y4_雫5, 雫5CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     	}
 
     	public override void 色更新()
@@ -504,12 +504,12 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		咳基CD = new ColorD(ref Col.Empty, ref Color2.Empty);
     		雫1CD = new ColorD(ref Col.Empty, ref 体配色.体液);

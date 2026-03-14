@@ -396,7 +396,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -426,7 +426,7 @@ namespace SlaveMatrix
 
     	public JointS 鎖2_接続点 => new JointS(Body, X0Y0_輪_金具右, 0);
 
-    	public 大顎(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 大顎D e)
+    	public 大顎(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 大顎D e)
     	{
     		ThisType = GetType();
     		Dif dif = new Dif(Sta.肢左["虫顎"][1]);
@@ -520,7 +520,7 @@ namespace SlaveMatrix
     		X0Y1_折線2CP = new ColorP(X0Y1_折線2, 折線2CD, DisUnit, abj: true);
     		X0Y1_折線3CP = new ColorP(X0Y1_折線3, 折線3CD, DisUnit, abj: true);
     		X0Y1_穴CP = new ColorP(X0Y1_穴, 穴CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     		鎖1 = new 拘束鎖(DisUnit, 右, 配色指定, 体配色, Xasix);
     		鎖1.接続(鎖1_接続点);
     		int num = (右 ? (-10) : 10);
@@ -590,7 +590,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		switch (配色指定)
     		{
@@ -609,7 +609,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		刺_棘1CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
     		刺_棘2CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
@@ -630,7 +630,7 @@ namespace SlaveMatrix
     		穴CD.色 = new Color2(ref Col.Black, ref 体配色.甲0O.Col2);
     	}
 
-    	private void 配色T0(体配色 体配色)
+    	private void 配色T0(BodyColorSet 体配色)
     	{
     		刺_棘1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
     		刺_棘2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
@@ -651,7 +651,7 @@ namespace SlaveMatrix
     		穴CD.色 = new Color2(ref Col.Black, ref 体配色.甲0O.Col2);
     	}
 
-    	private void 配色T1(体配色 体配色)
+    	private void 配色T1(BodyColorSet 体配色)
     	{
     		刺_棘1CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
     		刺_棘2CD = new ColorD(ref Col.Black, ref 体配色.甲0O);

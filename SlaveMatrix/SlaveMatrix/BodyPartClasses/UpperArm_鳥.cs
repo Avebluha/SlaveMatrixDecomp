@@ -256,7 +256,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -400,7 +400,7 @@ namespace SlaveMatrix
 
     	public JointS LowerArm_接続点 => new JointS(Body, X0Y0_鳥翼UpperArm, 0);
 
-    	public UpperArm_鳥(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, UpperArm_鳥D e)
+    	public UpperArm_鳥(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, UpperArm_鳥D e)
     	{
     		UpperArm_鳥 UpperArm_鳥2 = this;
     		ThisType = GetType();
@@ -492,7 +492,7 @@ namespace SlaveMatrix
     		X0Y0_竜性_鱗2CP = new ColorP(X0Y0_竜性_鱗2, 竜性_鱗2CD, DisUnit, abj: true);
     		X0Y0_竜性_鱗3CP = new ColorP(X0Y0_竜性_鱗3, 竜性_鱗3CD, DisUnit, abj: true);
     		X0Y0_竜性_鱗4CP = new ColorP(X0Y0_竜性_鱗4, 竜性_鱗4CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     	}
 
     	public override void SetAngle0()
@@ -536,7 +536,7 @@ namespace SlaveMatrix
     		X0Y0_竜性_鱗4CP.Update();
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		switch (配色指定)
     		{
@@ -555,7 +555,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		風切羽_羽3CD = new ColorD(ref Col.Black, ref 体配色.羽1O);
     		風切羽_羽2CD = new ColorD(ref Col.Black, ref 体配色.羽1O);
@@ -569,7 +569,7 @@ namespace SlaveMatrix
     		竜性_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
     	}
 
-    	private void 配色T0(体配色 体配色)
+    	private void 配色T0(BodyColorSet 体配色)
     	{
     		風切羽_羽3CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
     		風切羽_羽2CD = new ColorD(ref Col.Black, ref 体配色.羽1O);
@@ -583,7 +583,7 @@ namespace SlaveMatrix
     		竜性_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
     	}
 
-    	private void 配色T1(体配色 体配色)
+    	private void 配色T1(BodyColorSet 体配色)
     	{
     		風切羽_羽3CD = new ColorD(ref Col.Black, ref 体配色.羽1O);
     		風切羽_羽2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);

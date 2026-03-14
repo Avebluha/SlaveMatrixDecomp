@@ -525,7 +525,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -542,7 +542,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 放尿_獣(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 放尿_獣D e)
+    	public 放尿_獣(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 放尿_獣D e)
     	{
     		ThisType = GetType();
     		Body = new Difs(Sta.性器付["四足放尿"]);
@@ -726,7 +726,7 @@ namespace SlaveMatrix
     		X0Y10_尿散り3CP = new ColorP(X0Y10_尿散り3, 尿散り3CD, DisUnit, abj: true);
     		X0Y10_尿散り4CP = new ColorP(X0Y10_尿散り4, 尿散り4CD, DisUnit, abj: true);
     		X0Y10_尿散り5CP = new ColorP(X0Y10_尿散り5, 尿散り5CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     	}
 
     	public override void 色更新()
@@ -823,12 +823,12 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		尿CD = new ColorD(ref 体配色.尿線, ref 体配色.尿);
     		尿散り1CD = new ColorD(ref 体配色.尿線, ref 体配色.尿);

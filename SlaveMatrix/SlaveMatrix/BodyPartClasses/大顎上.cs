@@ -151,7 +151,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -167,7 +167,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 大顎上(double DisUnit, 配色指定 配色指定, 体配色 体配色)
+    	public 大顎上(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色)
     	{
     		ThisType = GetType();
     		Body = new Difs(Sta.肢中["大顎上"]);
@@ -197,12 +197,12 @@ namespace SlaveMatrix
     		X0Y0_棘右CP.Update();
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		甲殻CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
     		線左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);

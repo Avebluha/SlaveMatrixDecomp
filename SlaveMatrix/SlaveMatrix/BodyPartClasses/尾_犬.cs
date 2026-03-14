@@ -216,7 +216,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -235,7 +235,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 尾_犬(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 尾_犬D e)
+    	public 尾_犬(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 尾_犬D e)
     	{
     		ThisType = GetType();
     		Dif dif = new Dif();
@@ -303,7 +303,7 @@ namespace SlaveMatrix
     		X0Y0_尾5CP = new ColorP(X0Y0_尾5, 尾5CD, DisUnit, abj: true);
     		X0Y0_尾6CP = new ColorP(X0Y0_尾6, 尾6CD, DisUnit, abj: true);
     		X0Y0_尾7CP = new ColorP(X0Y0_尾7, 尾7CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     	}
 
     	public override void SetAngle0()
@@ -346,7 +346,7 @@ namespace SlaveMatrix
     		X0Y0_尾7CP.Update(mm);
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		switch (配色指定)
     		{
@@ -365,7 +365,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		尾0CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
     		尾1CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
@@ -377,12 +377,12 @@ namespace SlaveMatrix
     		尾7CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
     	}
 
-    	private void 配色T0(体配色 体配色)
+    	private void 配色T0(BodyColorSet 体配色)
     	{
     		this.配色T(0, "尾", ref 体配色.毛0O, ref 体配色.刺青O);
     	}
 
-    	private void 配色T1(体配色 体配色)
+    	private void 配色T1(BodyColorSet 体配色)
     	{
     		this.配色T(1, "尾", ref 体配色.毛0O, ref 体配色.刺青O);
     	}

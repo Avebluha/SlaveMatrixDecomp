@@ -135,7 +135,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -171,7 +171,7 @@ namespace SlaveMatrix
 
     	public JointS 尾_接続点 => new JointS(Body, X0Y0_Torso, 0);
 
-    	public 多足_蜘(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 多足_蜘D e)
+    	public 多足_蜘(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 多足_蜘D e)
     	{
     		多足_蜘 多足_蜘2 = this;
     		ThisType = GetType();
@@ -346,7 +346,7 @@ namespace SlaveMatrix
     		X0Y0_TorsoCP = new ColorP(X0Y0_Torso, TorsoCD, DisUnit, abj: true);
     		X0Y0_胸版CP = new ColorP(X0Y0_胸版, 胸版CD, DisUnit, abj: true);
     		X0Y0_柄CP = new ColorP(X0Y0_柄, 柄CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     	}
 
     	public override void 色更新()
@@ -356,7 +356,7 @@ namespace SlaveMatrix
     		X0Y0_柄CP.Update();
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		switch (配色指定)
     		{
@@ -375,21 +375,21 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		TorsoCD = new ColorD(ref Col.Black, ref 体配色.甲0O);
     		胸版CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
     		柄CD = new ColorD(ref Col.Black, ref 体配色.体0O);
     	}
 
-    	private void 配色T0(体配色 体配色)
+    	private void 配色T0(BodyColorSet 体配色)
     	{
     		TorsoCD = new ColorD(ref Col.Black, ref 体配色.甲0O);
     		胸版CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
     		柄CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
     	}
 
-    	private void 配色T1(体配色 体配色)
+    	private void 配色T1(BodyColorSet 体配色)
     	{
     		TorsoCD = new ColorD(ref Col.Black, ref 体配色.甲0O);
     		胸版CD = new ColorD(ref Col.Black, ref 体配色.刺青O);

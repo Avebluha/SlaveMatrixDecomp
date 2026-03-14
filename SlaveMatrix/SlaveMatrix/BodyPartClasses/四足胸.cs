@@ -743,7 +743,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -808,7 +808,7 @@ namespace SlaveMatrix
 
     	public JointS 背中_接続点 => new JointS(Body, X0Y0_胸郭, 10);
 
-    	public 四足胸(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 四足胸D e)
+    	public 四足胸(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 四足胸D e)
     	{
     		四足胸 四足胸2 = this;
     		ThisType = GetType();
@@ -1077,7 +1077,7 @@ namespace SlaveMatrix
     		X0Y0_竜性_右_鱗2CP = new ColorP(X0Y0_竜性_右_鱗2, 竜性_右_鱗2CD, DisUnit, abj: true);
     		X0Y0_竜性_右_鱗3CP = new ColorP(X0Y0_竜性_右_鱗3, 竜性_右_鱗3CD, DisUnit, abj: true);
     		筋肉濃度 = e.筋肉濃度;
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     		尺度YB = 0.96;
     	}
 
@@ -1157,12 +1157,12 @@ namespace SlaveMatrix
     		X0Y0_竜性_右_鱗3CP.Update();
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		胸郭CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
     		筋肉_筋肉左CD = new ColorD(ref 体配色.薄線, ref 体配色.毛0O);

@@ -301,7 +301,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -321,7 +321,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 上着ミドル_ドレス(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 上着ミドル_ドレスD e)
+    	public 上着ミドル_ドレス(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 上着ミドル_ドレスD e)
     	{
     		ThisType = GetType();
     		Dif dif = new Dif(Sta.胴体["上着ミドル"][2]);
@@ -402,7 +402,7 @@ namespace SlaveMatrix
     		柄右 = new Par[2] { X0Y0_柄_柄右_柄2_柄1, X0Y0_柄_柄右_柄2_柄2 };
     		X0Y0_柄_柄右_柄2_柄1CP = new ColorP(X0Y0_柄_柄右_柄2_柄1, 柄_柄右_柄2_柄1CD, DisUnit, abj: true);
     		X0Y0_柄_柄右_柄2_柄2CP = new ColorP(X0Y0_柄_柄右_柄2_柄2, 柄_柄右_柄2_柄2CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     		尺度YB = 0.95;
     	}
 
@@ -445,12 +445,12 @@ namespace SlaveMatrix
     		X0Y0_柄_柄右_柄2_柄2CP.Update(mm);
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		服CD = new ColorD();
     		縁_縁左CD = new ColorD();

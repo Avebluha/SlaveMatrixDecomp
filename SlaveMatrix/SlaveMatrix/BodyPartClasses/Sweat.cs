@@ -30,9 +30,9 @@ namespace SlaveMatrix
 
     	private List<double> 位置 = new List<double>();
 
-    	public Mot 汗かき;
+    	public Motion 汗かき;
 
-    	private Mot 汗ひき;
+    	private Motion 汗ひき;
 
     	private bool 汗だし = true;
 
@@ -57,7 +57,7 @@ namespace SlaveMatrix
     			foreach (Vector2D local in ps)
     			{
     				汗 = 全体[this.i];
-    				if (汗.濃度 != 0.0)
+    				if (汗.Intensity != 0.0)
     				{
     					tp = ryps2.r.ToGlobal(local);
     					汗.Body.CurJoinRoot.PositionBase = tp + (ryps2.r.ToGlobal(ryps2.c) - tp) * 位置[this.i];
@@ -70,34 +70,34 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public Sweat(ModeEventDispatcher Med, RenderArea Are, Cha Cha, Mots Mots)
+    	public Sweat(ModeEventDispatcher Med, RenderArea Are, Character Cha, Motions Mots)
     	{
     		Ele[] es = null;
     		Ele n = null;
     		bool re = false;
-    		汗かき = new Mot(0.0, 1.0)
+    		汗かき = new Motion(0.0, 1.0)
     		{
     			BaseSpeed = 1.0,
-    			Staing = delegate
+    			OnStart = delegate
     			{
     				if (汗だし)
     				{
-    					es = 全体.Where((Ele e) => e.濃度 != 0.0).ToArray();
+    					es = 全体.Where((Ele e) => e.Intensity != 0.0).ToArray();
     					Ele[] array5 = es;
     					for (int num3 = 0; num3 < array5.Length; num3++)
     					{
-    						array5[num3].濃度 = 0.0;
+    						array5[num3].Intensity = 0.0;
     					}
     				}
     			},
-    			Runing = delegate(Mot m)
+    			OnUpdate = delegate(Motion m)
     			{
     				if (汗だし)
     				{
     					Ele[] array4 = es;
     					for (int num2 = 0; num2 < array4.Length; num2++)
     					{
-    						array4[num2].濃度 = m.Value;
+    						array4[num2].Intensity = m.Value;
     					}
     				}
     				else if (!re)
@@ -106,21 +106,21 @@ namespace SlaveMatrix
     				}
     				else
     				{
-    					n.濃度 = m.Value;
+    					n.Intensity = m.Value;
     				}
     			},
-    			Reaing = delegate(Mot m)
+    			OnReach = delegate(Motion m)
     			{
     				if (汗だし)
     				{
     					Ele[] array3 = es;
     					for (int l = 0; l < array3.Length; l++)
     					{
-    						array3[l].濃度 = 1.0;
+    						array3[l].Intensity = 1.0;
     					}
     					m.ResetValue();
     					汗だし = false;
-    					es = 全体.Where((Ele e) => e.濃度 != 0.0).ToArray();
+    					es = 全体.Where((Ele e) => e.Intensity != 0.0).ToArray();
     					n = es[RNG.XS.Next(es.Length)];
     				}
     				else
@@ -128,36 +128,36 @@ namespace SlaveMatrix
     					re = true;
     				}
     			},
-    			Rouing = delegate(Mot m)
+    			OnLoop = delegate(Motion m)
     			{
     				if (!汗だし)
     				{
     					n.Yv = 0.0;
-    					n.濃度 = 0.0;
-    					es = 全体.Where((Ele e) => e.濃度 != 0.0).ToArray();
+    					n.Intensity = 0.0;
+    					es = 全体.Where((Ele e) => e.Intensity != 0.0).ToArray();
     					if (es.Length != 0)
     					{
     						n = es[RNG.XS.Next(es.Length)];
     					}
-    					es = 全体.Where((Ele e) => e.濃度 == 0.0).ToArray();
+    					es = 全体.Where((Ele e) => e.Intensity == 0.0).ToArray();
     					if (es.Length != 0)
     					{
-    						es[RNG.XS.Next(es.Length)].濃度 = 1.0;
+    						es[RNG.XS.Next(es.Length)].Intensity = 1.0;
     					}
     					re = false;
     					m.ResetValue();
     				}
     			},
-    			Ending = delegate(Mot m)
+    			OnEnd = delegate(Motion m)
     			{
     				if (!汗だし)
     				{
     					n.Yv = 0.0;
-    					n.濃度 = 0.0;
-    					es = 全体.Where((Ele e) => e.濃度 != 0.0).ToArray();
+    					n.Intensity = 0.0;
+    					es = 全体.Where((Ele e) => e.Intensity != 0.0).ToArray();
     					n = es[RNG.XS.Next(es.Length)];
-    					es = 全体.Where((Ele e) => e.濃度 == 0.0).ToArray();
-    					es[RNG.XS.Next(es.Length)].濃度 = 1.0;
+    					es = 全体.Where((Ele e) => e.Intensity == 0.0).ToArray();
+    					es[RNG.XS.Next(es.Length)].Intensity = 1.0;
     					re = false;
     					m.ResetValue();
     					汗ひき.Start();
@@ -165,36 +165,36 @@ namespace SlaveMatrix
     			}
     		};
     		Mots.Add(汗かき.GetHashCode().ToString(), 汗かき);
-    		汗ひき = new Mot(0.0, 1.0)
+    		汗ひき = new Motion(0.0, 1.0)
     		{
     			BaseSpeed = 1.0,
-    			Staing = delegate
+    			OnStart = delegate
     			{
-    				es = 全体.Where((Ele e) => e.濃度 != 0.0).ToArray();
+    				es = 全体.Where((Ele e) => e.Intensity != 0.0).ToArray();
     			},
-    			Runing = delegate(Mot m)
+    			OnUpdate = delegate(Motion m)
     			{
     				Ele[] array2 = es;
     				for (int k = 0; k < array2.Length; k++)
     				{
-    					array2[k].濃度 = m.Value.Inverse();
+    					array2[k].Intensity = m.Value.Inverse();
     				}
     			},
-    			Reaing = delegate(Mot m)
+    			OnReach = delegate(Motion m)
     			{
     				m.End();
     				m.ResetValue();
     				Ele[] array = es;
     				for (int j = 0; j < array.Length; j++)
     				{
-    					array[j].濃度 = 1.0;
+    					array[j].Intensity = 1.0;
     				}
     				汗だし = true;
     			},
-    			Rouing = delegate
+    			OnLoop = delegate
     			{
     			},
-    			Ending = delegate
+    			OnEnd = delegate
     			{
     			}
     		};
@@ -203,7 +203,7 @@ namespace SlaveMatrix
     		int num = 0;
     		汗D e2 = new 汗D();
     		ryps ryps;
-    		foreach (Ele item in Cha.Bod.Elements.Where((Ele e) => 汗対象.Contains(e.GetType().ToString())))
+    		foreach (Ele item in Cha.Body.Elements.Where((Ele e) => 汗対象.Contains(e.GetType().ToString())))
     		{
     			ryps = default(ryps);
     			ryps.r = item.Body.CurJoinRoot;
@@ -216,9 +216,9 @@ namespace SlaveMatrix
     			for (int i = 0; i < ps.Length; i++)
     			{
     				_ = ref ps[i];
-    				汗 = new 汗(Are.DisplayUnitScale, 配色指定.N0, Cha.配色, Med, e2);
+    				汗 = new 汗(Are.DisplayUnitScale, 配色指定.N0, Cha.ColorSet, Med, e2);
     				汗.SetHitFalse();
-    				汗.濃度 = ((RNG.XS.NextDouble() < 0.2) ? 1.0 : 0.0);
+    				汗.Intensity = ((RNG.XS.NextDouble() < 0.2) ? 1.0 : 0.0);
     				位置.Add(num switch
     				{
     					1 => 0.5, 

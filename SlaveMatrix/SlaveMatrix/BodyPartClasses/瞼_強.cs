@@ -495,7 +495,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -598,7 +598,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 瞼_強(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 瞼_強D e)
+    	public 瞼_強(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 瞼_強D e)
     	{
     		ThisType = GetType();
     		Body = new Difs(Sta.胴体["魔性強瞼左"]);
@@ -787,7 +787,7 @@ namespace SlaveMatrix
     		X1Y4_睫毛_睫毛4CP = new ColorP(X1Y4_睫毛_睫毛4, 睫毛_睫毛4CD, DisUnit, abj: true);
     		X1Y4_睫毛_睫毛1CP = new ColorP(X1Y4_睫毛_睫毛1, 睫毛_睫毛1CD, DisUnit, abj: true);
     		X1Y4_睫毛_睫毛2CP = new ColorP(X1Y4_睫毛_睫毛2, 睫毛_睫毛2CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     		尺度XB = 0.95;
     	}
 
@@ -992,12 +992,12 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		瞼CD = new ColorD(ref 体配色.睫毛.Col1, ref 体配色.人肌O);
     		二重CD = new ColorD(ref Col.Black, ref 体配色.人肌O);

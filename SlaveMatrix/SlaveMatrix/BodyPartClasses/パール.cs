@@ -969,7 +969,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -992,7 +992,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public パール(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, パールD e)
+    	public パール(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, パールD e)
     	{
     		ThisType = GetType();
     		Body = new Difs(Sta.カーソル["パール"]);
@@ -1305,7 +1305,7 @@ namespace SlaveMatrix
     		X0Y16_軸CP = new ColorP(X0Y16_軸, 軸CD, DisUnit, abj: true);
     		X0Y16_輪上境界CP = new ColorP(X0Y16_輪上境界, 輪上境界CD, DisUnit, abj: true);
     		X0Y16_輪下CP = new ColorP(X0Y16_輪下, 輪下CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     		X0Y0_輪下.BasePointBase = X0Y0_輪下.ToLocal(X0Y0_玉境界.ToGlobal(X0Y0_玉境界.JP[0].Joint));
     		X0Y1_輪下.BasePointBase = X0Y1_輪下.ToLocal(X0Y1_玉境界.ToGlobal(X0Y1_玉境界.JP[0].Joint));
     		X0Y2_輪下.BasePointBase = X0Y2_輪下.ToLocal(X0Y2_玉境界.ToGlobal(X0Y2_玉境界.JP[0].Joint));
@@ -1492,12 +1492,12 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		Col.GetGrad(ref Col.Pink, out var ret);
     		軸CD = new ColorD(ref Col.Black, ref ret);

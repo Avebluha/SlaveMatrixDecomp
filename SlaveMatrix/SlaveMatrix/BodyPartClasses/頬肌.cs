@@ -691,7 +691,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -734,7 +734,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 頬肌(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 頬肌D e)
+    	public 頬肌(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 頬肌D e)
     	{
     		ThisType = GetType();
     		Body = new Difs(Sta.胴体["頬肌左"]);
@@ -884,7 +884,7 @@ namespace SlaveMatrix
     		X0Y0_竜性_鱗3CP = new ColorP(X0Y0_竜性_鱗3, 竜性_鱗3CD, DisUnit, abj: true);
     		X0Y0_猟豹_タトゥCP = new ColorP(X0Y0_猟豹_タトゥ, 猟豹_タトゥCD, DisUnit, abj: true);
     		X0Y0_牛柄_牛柄CP = new ColorP(X0Y0_牛柄_牛柄, 牛柄_牛柄CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     	}
 
     	public override void 描画0(RenderArea Are)
@@ -963,12 +963,12 @@ namespace SlaveMatrix
     		X0Y0_牛柄_牛柄CP.Update();
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		淫タトゥ_ハート_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
     		淫タトゥ_ハート_タトゥ右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
