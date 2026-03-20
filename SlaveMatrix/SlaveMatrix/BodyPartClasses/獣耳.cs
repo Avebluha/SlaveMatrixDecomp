@@ -91,7 +91,7 @@ namespace SlaveMatrix
     		set
     		{
     			欠損_ = value;
-    			本体.IndexX = (欠損_ ? 1 : 0);
+    			Body.IndexX = (欠損_ ? 1 : 0);
     		}
     	}
 
@@ -202,7 +202,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -216,36 +216,36 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 獣耳(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 獣耳D e)
+    	public 獣耳(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 獣耳D e)
     	{
     		ThisType = GetType();
-    		本体 = new Difs(Sta.肢左["獣耳"]);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs(Sta.肢左["獣耳"]);
+    		Pars pars = Body[0][0];
     		X0Y0_獣耳外 = pars["獣耳外"].ToPar();
     		X0Y0_獣耳内 = pars["獣耳内"].ToPar();
     		X0Y0_耳毛 = pars["耳毛"].ToPar();
-    		pars = 本体[0][1];
+    		pars = Body[0][1];
     		X0Y1_獣耳外 = pars["獣耳外"].ToPar();
     		X0Y1_獣耳内 = pars["獣耳内"].ToPar();
     		X0Y1_耳毛 = pars["耳毛"].ToPar();
-    		pars = 本体[0][2];
+    		pars = Body[0][2];
     		X0Y2_獣耳外 = pars["獣耳外"].ToPar();
     		X0Y2_獣耳内 = pars["獣耳内"].ToPar();
     		X0Y2_耳毛 = pars["耳毛"].ToPar();
-    		pars = 本体[1][0];
+    		pars = Body[1][0];
     		X1Y0_獣耳外 = pars["獣耳外"].ToPar();
     		X1Y0_獣耳内 = pars["獣耳内"].ToPar();
     		X1Y0_耳毛 = pars["耳毛"].ToPar();
-    		pars = 本体[1][1];
+    		pars = Body[1][1];
     		X1Y1_獣耳外 = pars["獣耳外"].ToPar();
     		X1Y1_獣耳内 = pars["獣耳内"].ToPar();
     		X1Y1_耳毛 = pars["耳毛"].ToPar();
-    		pars = 本体[1][2];
+    		pars = Body[1][2];
     		X1Y2_獣耳外 = pars["獣耳外"].ToPar();
     		X1Y2_獣耳内 = pars["獣耳内"].ToPar();
     		X1Y2_耳毛 = pars["耳毛"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -298,7 +298,7 @@ namespace SlaveMatrix
     		X1Y2_獣耳外CP = new ColorP(X1Y2_獣耳外, 獣耳外CD, DisUnit, abj: true);
     		X1Y2_獣耳内CP = new ColorP(X1Y2_獣耳内, 獣耳内CD, DisUnit, abj: true);
     		X1Y2_耳毛CP = new ColorP(X1Y2_耳毛, 耳毛CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     	}
 
     	public override void SetAngle0()
@@ -310,14 +310,14 @@ namespace SlaveMatrix
     		X1Y0_獣耳外.AngleBase = num * -46.0;
     		X1Y1_獣耳外.AngleBase = num * -64.0;
     		X1Y2_獣耳外.AngleBase = num * -78.0;
-    		本体.JoinPAall();
+    		Body.JoinPAall();
     	}
 
     	public override void 色更新()
     	{
-    		if (本体.IndexX == 0)
+    		if (Body.IndexX == 0)
     		{
-    			switch (本体.IndexY)
+    			switch (Body.IndexY)
     			{
     			case 0:
     				X0Y0_獣耳外CP.Update();
@@ -338,7 +338,7 @@ namespace SlaveMatrix
     		}
     		else
     		{
-    			switch (本体.IndexY)
+    			switch (Body.IndexY)
     			{
     			case 0:
     				X1Y0_獣耳外CP.Update();
@@ -359,7 +359,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		switch (配色指定)
     		{
@@ -378,21 +378,21 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		獣耳外CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
     		獣耳内CD = new ColorD(ref Col.Black, ref 体配色.人肌R);
     		耳毛CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
     	}
 
-    	private void 配色T0(体配色 体配色)
+    	private void 配色T0(BodyColorSet 体配色)
     	{
     		獣耳外CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
     		獣耳内CD = new ColorD(ref Col.Black, ref 体配色.人肌R);
     		耳毛CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
     	}
 
-    	private void 配色T1(体配色 体配色)
+    	private void 配色T1(BodyColorSet 体配色)
     	{
     		獣耳外CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
     		獣耳内CD = new ColorD(ref Col.Black, ref 体配色.人肌R);

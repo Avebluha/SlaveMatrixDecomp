@@ -676,7 +676,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -741,15 +741,15 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return 本体.CurJoinRoot.SizeBase;
+    			return Body.CurJoinRoot.SizeBase;
     		}
     		set
     		{
-    			foreach (Par item in 本体.EnumAllPar())
+    			foreach (Par item in Body.EnumAllPar())
     			{
     				item.SizeBase = value;
     			}
-    			本体.JoinP();
+    			Body.JoinP();
     		}
     	}
 
@@ -757,15 +757,15 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return 本体.CurJoinRoot.SizeYBase;
+    			return Body.CurJoinRoot.SizeYBase;
     		}
     		set
     		{
-    			foreach (Par item in 本体.EnumAllPar())
+    			foreach (Par item in Body.EnumAllPar())
     			{
     				item.SizeYBase = value;
     			}
-    			本体.JoinP();
+    			Body.JoinP();
     		}
     	}
 
@@ -790,14 +790,14 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public JointS 噴乳_接続点 => new JointS(本体, X0Y0_乳首, 0);
+    	public JointS 噴乳_接続点 => new JointS(Body, X0Y0_乳首, 0);
 
-    	public 乳房(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 乳房D e)
+    	public 乳房(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 乳房D e)
     	{
     		乳房 乳房2 = this;
     		ThisType = GetType();
-    		本体 = new Difs(Sta.胴体["胸左"]);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs(Sta.胴体["胸左"]);
+    		Pars pars = Body[0][0];
     		X0Y0_乳房 = pars["乳房"].ToPar();
     		X0Y0_乳輪 = pars["乳輪"].ToPar();
     		X0Y0_乳首 = pars["乳首"].ToPar();
@@ -813,7 +813,7 @@ namespace SlaveMatrix
     		X0Y0_傷I2 = pars["傷I2"].ToPar();
     		pars2 = pars["虫性"].ToPars();
     		X0Y0_虫性_甲殻 = pars2["甲殻"].ToPar();
-    		pars = 本体[0][1];
+    		pars = Body[0][1];
     		X0Y1_乳房 = pars["乳房"].ToPar();
     		X0Y1_乳輪 = pars["乳輪"].ToPar();
     		X0Y1_乳首 = pars["乳首"].ToPar();
@@ -829,7 +829,7 @@ namespace SlaveMatrix
     		X0Y1_傷I2 = pars["傷I2"].ToPar();
     		pars2 = pars["虫性"].ToPars();
     		X0Y1_虫性_甲殻 = pars2["甲殻"].ToPar();
-    		pars = 本体[0][2];
+    		pars = Body[0][2];
     		X0Y2_乳房 = pars["乳房"].ToPar();
     		X0Y2_乳輪 = pars["乳輪"].ToPar();
     		X0Y2_乳首 = pars["乳首"].ToPar();
@@ -843,7 +843,7 @@ namespace SlaveMatrix
     		X0Y2_傷I2 = pars["傷I2"].ToPar();
     		pars2 = pars["虫性"].ToPars();
     		X0Y2_虫性_甲殻 = pars2["甲殻"].ToPar();
-    		pars = 本体[0][3];
+    		pars = Body[0][3];
     		X0Y3_乳房 = pars["乳房"].ToPar();
     		X0Y3_乳輪 = pars["乳輪"].ToPar();
     		X0Y3_乳首 = pars["乳首"].ToPar();
@@ -858,7 +858,7 @@ namespace SlaveMatrix
     		X0Y3_傷I2 = pars["傷I2"].ToPar();
     		pars2 = pars["虫性"].ToPars();
     		X0Y3_虫性_甲殻 = pars2["甲殻"].ToPar();
-    		pars = 本体[0][4];
+    		pars = Body[0][4];
     		X0Y4_乳房 = pars["乳房"].ToPar();
     		X0Y4_乳輪 = pars["乳輪"].ToPar();
     		X0Y4_乳首 = pars["乳首"].ToPar();
@@ -873,8 +873,8 @@ namespace SlaveMatrix
     		X0Y4_傷I2 = pars["傷I2"].ToPar();
     		pars2 = pars["虫性"].ToPars();
     		X0Y4_虫性_甲殻 = pars2["甲殻"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -1001,12 +1001,12 @@ namespace SlaveMatrix
     		傷I1濃度 = e.傷I1濃度;
     		傷I2濃度 = e.傷I2濃度;
     		ハイライト濃度 = e.ハイライト濃度;
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     	}
 
     	public override void 描画0(RenderArea Are)
     	{
-    		switch (本体.IndexY)
+    		switch (Body.IndexY)
     		{
     		case 0:
     			Are.Draw(X0Y0_乳房);
@@ -1094,7 +1094,7 @@ namespace SlaveMatrix
 
     	public override void 色更新()
     	{
-    		switch (本体.IndexY)
+    		switch (Body.IndexY)
     		{
     		case 0:
     			X0Y0_乳房CP.Update();
@@ -1170,12 +1170,12 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		乳房CD = new ColorD(ref Col.Black, ref 体配色.人肌O);
     		乳輪CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);

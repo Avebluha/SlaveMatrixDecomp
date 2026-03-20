@@ -147,7 +147,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -156,7 +156,7 @@ namespace SlaveMatrix
     		set
     		{
     			甲殻下CD.不透明度 = value;
-    			大顎上.濃度 = value;
+    			大顎上.Intensity = value;
     		}
     	}
 
@@ -398,24 +398,24 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public JointS 顎左_接続点 => new JointS(本体, X0Y0_甲殻下, 0);
+    	public JointS 顎左_接続点 => new JointS(Body, X0Y0_甲殻下, 0);
 
-    	public JointS 顎右_接続点 => new JointS(本体, X0Y0_甲殻下, 1);
+    	public JointS 顎右_接続点 => new JointS(Body, X0Y0_甲殻下, 1);
 
-    	public JointS 大顎上_接続点 => new JointS(本体, X0Y0_甲殻下, 2);
+    	public JointS 大顎上_接続点 => new JointS(Body, X0Y0_甲殻下, 2);
 
-    	public 大顎基(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 大顎基D e)
+    	public 大顎基(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 大顎基D e)
     	{
     		大顎基 大顎基2 = this;
     		大顎上 = new 大顎上(DisUnit, 配色指定, 体配色);
     		大顎上.Par = this;
     		ThisType = GetType();
-    		本体 = new Difs(Sta.肢中["大顎基"]);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs(Sta.肢中["大顎基"]);
+    		Pars pars = Body[0][0];
     		X0Y0_甲殻下 = pars["甲殻下"].ToPar();
     		大顎上.接続(大顎上_接続点);
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -477,7 +477,7 @@ namespace SlaveMatrix
     		base.配色指定 = 配色指定;
     		配色(体配色);
     		X0Y0_甲殻下CP = new ColorP(X0Y0_甲殻下, 甲殻下CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     	}
 
     	public override void Dispose()
@@ -504,12 +504,12 @@ namespace SlaveMatrix
     		大顎上.色更新();
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		甲殻下CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
     	}

@@ -3769,7 +3769,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -3798,8 +3798,8 @@ namespace SlaveMatrix
     	public ハンド(double DisUnit, 配色指定 配色指定, 主人公配色 体配色, ModeEventDispatcher Med, ハンドD e)
     	{
     		ThisType = GetType();
-    		本体 = new Difs(Sta.カーソル["ハンド"]);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs(Sta.カーソル["ハンド"]);
+    		Pars pars = Body[0][0];
     		X0Y0_親指 = pars["親指"].ToPar();
     		X0Y0_手 = pars["手"].ToPar();
     		X0Y0_小指 = pars["小指"].ToPar();
@@ -3819,7 +3819,7 @@ namespace SlaveMatrix
     		X0Y0_呪印_鎖1 = pars2["鎖1"].ToPar();
     		X0Y0_呪印_鎖2 = pars2["鎖2"].ToPar();
     		X0Y0_呪印_鎖3 = pars2["鎖3"].ToPar();
-    		pars = 本体[1][0];
+    		pars = Body[1][0];
     		X1Y0_親指 = pars["親指"].ToPar();
     		X1Y0_手 = pars["手"].ToPar();
     		X1Y0_小指 = pars["小指"].ToPar();
@@ -3839,7 +3839,7 @@ namespace SlaveMatrix
     		X1Y0_呪印_鎖1 = pars2["鎖1"].ToPar();
     		X1Y0_呪印_鎖2 = pars2["鎖2"].ToPar();
     		X1Y0_呪印_鎖3 = pars2["鎖3"].ToPar();
-    		pars = 本体[2][0];
+    		pars = Body[2][0];
     		X2Y0_親指 = pars["親指"].ToPar();
     		X2Y0_手 = pars["手"].ToPar();
     		X2Y0_小指 = pars["小指"].ToPar();
@@ -3859,7 +3859,7 @@ namespace SlaveMatrix
     		X2Y0_呪印_鎖1 = pars2["鎖1"].ToPar();
     		X2Y0_呪印_鎖2 = pars2["鎖2"].ToPar();
     		X2Y0_呪印_鎖3 = pars2["鎖3"].ToPar();
-    		pars = 本体[2][1];
+    		pars = Body[2][1];
     		X2Y1_親指 = pars["親指"].ToPar();
     		X2Y1_手 = pars["手"].ToPar();
     		X2Y1_小指 = pars["小指"].ToPar();
@@ -3879,7 +3879,7 @@ namespace SlaveMatrix
     		X2Y1_呪印_鎖1 = pars2["鎖1"].ToPar();
     		X2Y1_呪印_鎖2 = pars2["鎖2"].ToPar();
     		X2Y1_呪印_鎖3 = pars2["鎖3"].ToPar();
-    		pars = 本体[2][2];
+    		pars = Body[2][2];
     		X2Y2_親指 = pars["親指"].ToPar();
     		X2Y2_手 = pars["手"].ToPar();
     		X2Y2_小指 = pars["小指"].ToPar();
@@ -3899,7 +3899,7 @@ namespace SlaveMatrix
     		X2Y2_呪印_鎖1 = pars2["鎖1"].ToPar();
     		X2Y2_呪印_鎖2 = pars2["鎖2"].ToPar();
     		X2Y2_呪印_鎖3 = pars2["鎖3"].ToPar();
-    		pars = 本体[2][3];
+    		pars = Body[2][3];
     		X2Y3_親指 = pars["親指"].ToPar();
     		X2Y3_手 = pars["手"].ToPar();
     		X2Y3_小指 = pars["小指"].ToPar();
@@ -3919,7 +3919,7 @@ namespace SlaveMatrix
     		X2Y3_呪印_鎖1 = pars2["鎖1"].ToPar();
     		X2Y3_呪印_鎖2 = pars2["鎖2"].ToPar();
     		X2Y3_呪印_鎖3 = pars2["鎖3"].ToPar();
-    		pars = 本体[2][4];
+    		pars = Body[2][4];
     		X2Y4_親指 = pars["親指"].ToPar();
     		X2Y4_手 = pars["手"].ToPar();
     		X2Y4_小指 = pars["小指"].ToPar();
@@ -3939,7 +3939,7 @@ namespace SlaveMatrix
     		X2Y4_呪印_鎖1 = pars2["鎖1"].ToPar();
     		X2Y4_呪印_鎖2 = pars2["鎖2"].ToPar();
     		X2Y4_呪印_鎖3 = pars2["鎖3"].ToPar();
-    		pars = 本体[3][0];
+    		pars = Body[3][0];
     		X3Y0_親指 = pars["親指"].ToPar();
     		X3Y0_手 = pars["手"].ToPar();
     		X3Y0_小指 = pars["小指"].ToPar();
@@ -3959,7 +3959,7 @@ namespace SlaveMatrix
     		X3Y0_呪印_鎖1 = pars2["鎖1"].ToPar();
     		X3Y0_呪印_鎖2 = pars2["鎖2"].ToPar();
     		X3Y0_呪印_鎖3 = pars2["鎖3"].ToPar();
-    		pars = 本体[4][0];
+    		pars = Body[4][0];
     		X4Y0_親指 = pars["親指"].ToPar();
     		X4Y0_手 = pars["手"].ToPar();
     		X4Y0_小指 = pars["小指"].ToPar();
@@ -3979,7 +3979,7 @@ namespace SlaveMatrix
     		X4Y0_呪印_鎖1 = pars2["鎖1"].ToPar();
     		X4Y0_呪印_鎖2 = pars2["鎖2"].ToPar();
     		X4Y0_呪印_鎖3 = pars2["鎖3"].ToPar();
-    		pars = 本体[5][0];
+    		pars = Body[5][0];
     		X5Y0_親指 = pars["親指"].ToPar();
     		X5Y0_手 = pars["手"].ToPar();
     		X5Y0_小指 = pars["小指"].ToPar();
@@ -3999,7 +3999,7 @@ namespace SlaveMatrix
     		X5Y0_呪印_鎖1 = pars2["鎖1"].ToPar();
     		X5Y0_呪印_鎖2 = pars2["鎖2"].ToPar();
     		X5Y0_呪印_鎖3 = pars2["鎖3"].ToPar();
-    		pars = 本体[5][1];
+    		pars = Body[5][1];
     		X5Y1_親指 = pars["親指"].ToPar();
     		X5Y1_手 = pars["手"].ToPar();
     		X5Y1_小指 = pars["小指"].ToPar();
@@ -4019,7 +4019,7 @@ namespace SlaveMatrix
     		X5Y1_呪印_鎖1 = pars2["鎖1"].ToPar();
     		X5Y1_呪印_鎖2 = pars2["鎖2"].ToPar();
     		X5Y1_呪印_鎖3 = pars2["鎖3"].ToPar();
-    		pars = 本体[5][2];
+    		pars = Body[5][2];
     		X5Y2_親指 = pars["親指"].ToPar();
     		X5Y2_手 = pars["手"].ToPar();
     		X5Y2_小指 = pars["小指"].ToPar();
@@ -4039,7 +4039,7 @@ namespace SlaveMatrix
     		X5Y2_呪印_鎖1 = pars2["鎖1"].ToPar();
     		X5Y2_呪印_鎖2 = pars2["鎖2"].ToPar();
     		X5Y2_呪印_鎖3 = pars2["鎖3"].ToPar();
-    		pars = 本体[5][3];
+    		pars = Body[5][3];
     		X5Y3_親指 = pars["親指"].ToPar();
     		X5Y3_手 = pars["手"].ToPar();
     		X5Y3_小指 = pars["小指"].ToPar();
@@ -4059,7 +4059,7 @@ namespace SlaveMatrix
     		X5Y3_呪印_鎖1 = pars2["鎖1"].ToPar();
     		X5Y3_呪印_鎖2 = pars2["鎖2"].ToPar();
     		X5Y3_呪印_鎖3 = pars2["鎖3"].ToPar();
-    		pars = 本体[5][4];
+    		pars = Body[5][4];
     		X5Y4_親指 = pars["親指"].ToPar();
     		X5Y4_手 = pars["手"].ToPar();
     		X5Y4_小指 = pars["小指"].ToPar();
@@ -4079,7 +4079,7 @@ namespace SlaveMatrix
     		X5Y4_呪印_鎖1 = pars2["鎖1"].ToPar();
     		X5Y4_呪印_鎖2 = pars2["鎖2"].ToPar();
     		X5Y4_呪印_鎖3 = pars2["鎖3"].ToPar();
-    		pars = 本体[6][0];
+    		pars = Body[6][0];
     		X6Y0_親指 = pars["親指"].ToPar();
     		X6Y0_手 = pars["手"].ToPar();
     		X6Y0_小指 = pars["小指"].ToPar();
@@ -4099,7 +4099,7 @@ namespace SlaveMatrix
     		X6Y0_呪印_鎖1 = pars2["鎖1"].ToPar();
     		X6Y0_呪印_鎖2 = pars2["鎖2"].ToPar();
     		X6Y0_呪印_鎖3 = pars2["鎖3"].ToPar();
-    		pars = 本体[6][1];
+    		pars = Body[6][1];
     		X6Y1_親指 = pars["親指"].ToPar();
     		X6Y1_手 = pars["手"].ToPar();
     		X6Y1_小指 = pars["小指"].ToPar();
@@ -4119,7 +4119,7 @@ namespace SlaveMatrix
     		X6Y1_呪印_鎖1 = pars2["鎖1"].ToPar();
     		X6Y1_呪印_鎖2 = pars2["鎖2"].ToPar();
     		X6Y1_呪印_鎖3 = pars2["鎖3"].ToPar();
-    		pars = 本体[6][2];
+    		pars = Body[6][2];
     		X6Y2_親指 = pars["親指"].ToPar();
     		X6Y2_手 = pars["手"].ToPar();
     		X6Y2_小指 = pars["小指"].ToPar();
@@ -4139,7 +4139,7 @@ namespace SlaveMatrix
     		X6Y2_呪印_鎖1 = pars2["鎖1"].ToPar();
     		X6Y2_呪印_鎖2 = pars2["鎖2"].ToPar();
     		X6Y2_呪印_鎖3 = pars2["鎖3"].ToPar();
-    		pars = 本体[6][3];
+    		pars = Body[6][3];
     		X6Y3_親指 = pars["親指"].ToPar();
     		X6Y3_手 = pars["手"].ToPar();
     		X6Y3_小指 = pars["小指"].ToPar();
@@ -4159,7 +4159,7 @@ namespace SlaveMatrix
     		X6Y3_呪印_鎖1 = pars2["鎖1"].ToPar();
     		X6Y3_呪印_鎖2 = pars2["鎖2"].ToPar();
     		X6Y3_呪印_鎖3 = pars2["鎖3"].ToPar();
-    		pars = 本体[6][4];
+    		pars = Body[6][4];
     		X6Y4_親指 = pars["親指"].ToPar();
     		X6Y4_手 = pars["手"].ToPar();
     		X6Y4_小指 = pars["小指"].ToPar();
@@ -4179,7 +4179,7 @@ namespace SlaveMatrix
     		X6Y4_呪印_鎖1 = pars2["鎖1"].ToPar();
     		X6Y4_呪印_鎖2 = pars2["鎖2"].ToPar();
     		X6Y4_呪印_鎖3 = pars2["鎖3"].ToPar();
-    		pars = 本体[7][0];
+    		pars = Body[7][0];
     		X7Y0_小指 = pars["小指"].ToPar();
     		X7Y0_薬指 = pars["薬指"].ToPar();
     		X7Y0_中指 = pars["中指"].ToPar();
@@ -4199,7 +4199,7 @@ namespace SlaveMatrix
     		X7Y0_呪印_鎖1 = pars2["鎖1"].ToPar();
     		X7Y0_呪印_鎖2 = pars2["鎖2"].ToPar();
     		X7Y0_呪印_鎖3 = pars2["鎖3"].ToPar();
-    		pars = 本体[7][1];
+    		pars = Body[7][1];
     		X7Y1_小指 = pars["小指"].ToPar();
     		X7Y1_薬指 = pars["薬指"].ToPar();
     		X7Y1_中指 = pars["中指"].ToPar();
@@ -4219,7 +4219,7 @@ namespace SlaveMatrix
     		X7Y1_呪印_鎖1 = pars2["鎖1"].ToPar();
     		X7Y1_呪印_鎖2 = pars2["鎖2"].ToPar();
     		X7Y1_呪印_鎖3 = pars2["鎖3"].ToPar();
-    		pars = 本体[7][2];
+    		pars = Body[7][2];
     		X7Y2_小指 = pars["小指"].ToPar();
     		X7Y2_薬指 = pars["薬指"].ToPar();
     		X7Y2_中指 = pars["中指"].ToPar();
@@ -4239,7 +4239,7 @@ namespace SlaveMatrix
     		X7Y2_呪印_鎖1 = pars2["鎖1"].ToPar();
     		X7Y2_呪印_鎖2 = pars2["鎖2"].ToPar();
     		X7Y2_呪印_鎖3 = pars2["鎖3"].ToPar();
-    		pars = 本体[7][3];
+    		pars = Body[7][3];
     		X7Y3_小指 = pars["小指"].ToPar();
     		X7Y3_薬指 = pars["薬指"].ToPar();
     		X7Y3_中指 = pars["中指"].ToPar();
@@ -4259,7 +4259,7 @@ namespace SlaveMatrix
     		X7Y3_呪印_鎖1 = pars2["鎖1"].ToPar();
     		X7Y3_呪印_鎖2 = pars2["鎖2"].ToPar();
     		X7Y3_呪印_鎖3 = pars2["鎖3"].ToPar();
-    		pars = 本体[7][4];
+    		pars = Body[7][4];
     		X7Y4_小指 = pars["小指"].ToPar();
     		X7Y4_薬指 = pars["薬指"].ToPar();
     		X7Y4_中指 = pars["中指"].ToPar();
@@ -4279,77 +4279,77 @@ namespace SlaveMatrix
     		X7Y4_呪印_鎖1 = pars2["鎖1"].ToPar();
     		X7Y4_呪印_鎖2 = pars2["鎖2"].ToPar();
     		X7Y4_呪印_鎖3 = pars2["鎖3"].ToPar();
-    		pars = 本体[8][0];
+    		pars = Body[8][0];
     		X8Y0_手 = pars["手"].ToPar();
     		X8Y0_小指 = pars["小指"].ToPar();
     		X8Y0_薬指 = pars["薬指"].ToPar();
     		X8Y0_中指 = pars["中指"].ToPar();
     		X8Y0_人指 = pars["人指"].ToPar();
     		X8Y0_親指 = pars["親指"].ToPar();
-    		pars = 本体[8][1];
+    		pars = Body[8][1];
     		X8Y1_手 = pars["手"].ToPar();
     		X8Y1_小指 = pars["小指"].ToPar();
     		X8Y1_薬指 = pars["薬指"].ToPar();
     		X8Y1_中指 = pars["中指"].ToPar();
     		X8Y1_人指 = pars["人指"].ToPar();
     		X8Y1_親指 = pars["親指"].ToPar();
-    		pars = 本体[8][2];
+    		pars = Body[8][2];
     		X8Y2_手 = pars["手"].ToPar();
     		X8Y2_小指 = pars["小指"].ToPar();
     		X8Y2_薬指 = pars["薬指"].ToPar();
     		X8Y2_中指 = pars["中指"].ToPar();
     		X8Y2_人指 = pars["人指"].ToPar();
     		X8Y2_親指 = pars["親指"].ToPar();
-    		pars = 本体[8][3];
+    		pars = Body[8][3];
     		X8Y3_手 = pars["手"].ToPar();
     		X8Y3_小指 = pars["小指"].ToPar();
     		X8Y3_薬指 = pars["薬指"].ToPar();
     		X8Y3_中指 = pars["中指"].ToPar();
     		X8Y3_人指 = pars["人指"].ToPar();
     		X8Y3_親指 = pars["親指"].ToPar();
-    		pars = 本体[8][4];
+    		pars = Body[8][4];
     		X8Y4_手 = pars["手"].ToPar();
     		X8Y4_小指 = pars["小指"].ToPar();
     		X8Y4_薬指 = pars["薬指"].ToPar();
     		X8Y4_中指 = pars["中指"].ToPar();
     		X8Y4_人指 = pars["人指"].ToPar();
     		X8Y4_親指 = pars["親指"].ToPar();
-    		pars = 本体[9][0];
+    		pars = Body[9][0];
     		X9Y0_手 = pars["手"].ToPar();
     		X9Y0_小指 = pars["小指"].ToPar();
     		X9Y0_薬指 = pars["薬指"].ToPar();
     		X9Y0_中指 = pars["中指"].ToPar();
     		X9Y0_人指 = pars["人指"].ToPar();
     		X9Y0_親指 = pars["親指"].ToPar();
-    		pars = 本体[9][1];
+    		pars = Body[9][1];
     		X9Y1_手 = pars["手"].ToPar();
     		X9Y1_小指 = pars["小指"].ToPar();
     		X9Y1_薬指 = pars["薬指"].ToPar();
     		X9Y1_中指 = pars["中指"].ToPar();
     		X9Y1_人指 = pars["人指"].ToPar();
     		X9Y1_親指 = pars["親指"].ToPar();
-    		pars = 本体[9][2];
+    		pars = Body[9][2];
     		X9Y2_手 = pars["手"].ToPar();
     		X9Y2_小指 = pars["小指"].ToPar();
     		X9Y2_薬指 = pars["薬指"].ToPar();
     		X9Y2_中指 = pars["中指"].ToPar();
     		X9Y2_人指 = pars["人指"].ToPar();
     		X9Y2_親指 = pars["親指"].ToPar();
-    		pars = 本体[9][3];
+    		pars = Body[9][3];
     		X9Y3_手 = pars["手"].ToPar();
     		X9Y3_小指 = pars["小指"].ToPar();
     		X9Y3_薬指 = pars["薬指"].ToPar();
     		X9Y3_中指 = pars["中指"].ToPar();
     		X9Y3_人指 = pars["人指"].ToPar();
     		X9Y3_親指 = pars["親指"].ToPar();
-    		pars = 本体[9][4];
+    		pars = Body[9][4];
     		X9Y4_手 = pars["手"].ToPar();
     		X9Y4_小指 = pars["小指"].ToPar();
     		X9Y4_薬指 = pars["薬指"].ToPar();
     		X9Y4_中指 = pars["中指"].ToPar();
     		X9Y4_人指 = pars["人指"].ToPar();
     		X9Y4_親指 = pars["親指"].ToPar();
-    		pars = 本体[10][0];
+    		pars = Body[10][0];
     		X10Y0_親指 = pars["親指"].ToPar();
     		X10Y0_手 = pars["手"].ToPar();
     		X10Y0_小指 = pars["小指"].ToPar();
@@ -4369,7 +4369,7 @@ namespace SlaveMatrix
     		X10Y0_呪印_鎖1 = pars2["鎖1"].ToPar();
     		X10Y0_呪印_鎖2 = pars2["鎖2"].ToPar();
     		X10Y0_呪印_鎖3 = pars2["鎖3"].ToPar();
-    		pars = 本体[10][1];
+    		pars = Body[10][1];
     		X10Y1_親指 = pars["親指"].ToPar();
     		X10Y1_手 = pars["手"].ToPar();
     		X10Y1_小指 = pars["小指"].ToPar();
@@ -4389,7 +4389,7 @@ namespace SlaveMatrix
     		X10Y1_呪印_鎖1 = pars2["鎖1"].ToPar();
     		X10Y1_呪印_鎖2 = pars2["鎖2"].ToPar();
     		X10Y1_呪印_鎖3 = pars2["鎖3"].ToPar();
-    		pars = 本体[10][2];
+    		pars = Body[10][2];
     		X10Y2_親指 = pars["親指"].ToPar();
     		X10Y2_手 = pars["手"].ToPar();
     		X10Y2_小指 = pars["小指"].ToPar();
@@ -4409,7 +4409,7 @@ namespace SlaveMatrix
     		X10Y2_呪印_鎖1 = pars2["鎖1"].ToPar();
     		X10Y2_呪印_鎖2 = pars2["鎖2"].ToPar();
     		X10Y2_呪印_鎖3 = pars2["鎖3"].ToPar();
-    		pars = 本体[10][3];
+    		pars = Body[10][3];
     		X10Y3_親指 = pars["親指"].ToPar();
     		X10Y3_手 = pars["手"].ToPar();
     		X10Y3_小指 = pars["小指"].ToPar();
@@ -4429,7 +4429,7 @@ namespace SlaveMatrix
     		X10Y3_呪印_鎖1 = pars2["鎖1"].ToPar();
     		X10Y3_呪印_鎖2 = pars2["鎖2"].ToPar();
     		X10Y3_呪印_鎖3 = pars2["鎖3"].ToPar();
-    		pars = 本体[10][4];
+    		pars = Body[10][4];
     		X10Y4_親指 = pars["親指"].ToPar();
     		X10Y4_手 = pars["手"].ToPar();
     		X10Y4_小指 = pars["小指"].ToPar();
@@ -4449,7 +4449,7 @@ namespace SlaveMatrix
     		X10Y4_呪印_鎖1 = pars2["鎖1"].ToPar();
     		X10Y4_呪印_鎖2 = pars2["鎖2"].ToPar();
     		X10Y4_呪印_鎖3 = pars2["鎖3"].ToPar();
-    		pars = 本体[11][0];
+    		pars = Body[11][0];
     		X11Y0_小指 = pars["小指"].ToPar();
     		X11Y0_薬指 = pars["薬指"].ToPar();
     		X11Y0_中指 = pars["中指"].ToPar();
@@ -4468,7 +4468,7 @@ namespace SlaveMatrix
     		X11Y0_呪印_輪3_輪内 = pars3["輪内"].ToPar();
     		X11Y0_呪印_鎖1 = pars2["鎖1"].ToPar();
     		X11Y0_呪印_鎖3 = pars2["鎖3"].ToPar();
-    		pars = 本体[12][0];
+    		pars = Body[12][0];
     		X12Y0_親指 = pars["親指"].ToPar();
     		X12Y0_手 = pars["手"].ToPar();
     		X12Y0_小指 = pars["小指"].ToPar();
@@ -4488,7 +4488,7 @@ namespace SlaveMatrix
     		X12Y0_呪印_鎖1 = pars2["鎖1"].ToPar();
     		X12Y0_呪印_鎖2 = pars2["鎖2"].ToPar();
     		X12Y0_呪印_鎖3 = pars2["鎖3"].ToPar();
-    		pars = 本体[13][0];
+    		pars = Body[13][0];
     		X13Y0_中指 = pars["中指"].ToPar();
     		X13Y0_人指 = pars["人指"].ToPar();
     		X13Y0_手 = pars["手"].ToPar();
@@ -4505,7 +4505,7 @@ namespace SlaveMatrix
     		X13Y0_呪印_輪3_輪内 = pars3["輪内"].ToPar();
     		X13Y0_呪印_鎖1 = pars2["鎖1"].ToPar();
     		X13Y0_呪印_鎖3 = pars2["鎖3"].ToPar();
-    		pars = 本体[14][0];
+    		pars = Body[14][0];
     		X14Y0_親指 = pars["親指"].ToPar();
     		X14Y0_手 = pars["手"].ToPar();
     		X14Y0_小指 = pars["小指"].ToPar();
@@ -4525,7 +4525,7 @@ namespace SlaveMatrix
     		X14Y0_呪印_鎖1 = pars2["鎖1"].ToPar();
     		X14Y0_呪印_鎖2 = pars2["鎖2"].ToPar();
     		X14Y0_呪印_鎖3 = pars2["鎖3"].ToPar();
-    		pars = 本体[14][1];
+    		pars = Body[14][1];
     		X14Y1_親指 = pars["親指"].ToPar();
     		X14Y1_手 = pars["手"].ToPar();
     		X14Y1_小指 = pars["小指"].ToPar();
@@ -4545,7 +4545,7 @@ namespace SlaveMatrix
     		X14Y1_呪印_鎖1 = pars2["鎖1"].ToPar();
     		X14Y1_呪印_鎖2 = pars2["鎖2"].ToPar();
     		X14Y1_呪印_鎖3 = pars2["鎖3"].ToPar();
-    		pars = 本体[14][2];
+    		pars = Body[14][2];
     		X14Y2_親指 = pars["親指"].ToPar();
     		X14Y2_手 = pars["手"].ToPar();
     		X14Y2_小指 = pars["小指"].ToPar();
@@ -4565,8 +4565,8 @@ namespace SlaveMatrix
     		X14Y2_呪印_鎖1 = pars2["鎖1"].ToPar();
     		X14Y2_呪印_鎖2 = pars2["鎖2"].ToPar();
     		X14Y2_呪印_鎖3 = pars2["鎖3"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -5204,7 +5204,7 @@ namespace SlaveMatrix
     		X14Y2_呪印_鎖1CP = new ColorP(X14Y2_呪印_鎖1, 呪印_鎖1CD, DisUnit, abj: true);
     		X14Y2_呪印_鎖2CP = new ColorP(X14Y2_呪印_鎖2, 呪印_鎖2CD, DisUnit, abj: true);
     		X14Y2_呪印_鎖3CP = new ColorP(X14Y2_呪印_鎖3, 呪印_鎖3CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     		尺度B *= 1.1;
     		double y = 0.0015;
     		X6Y0_手.BasePointBase = X6Y0_手.ToLocal(X6Y0_人指.ToGlobal(X6Y0_人指.JP[0].Joint.AddY(y)));
@@ -5223,12 +5223,12 @@ namespace SlaveMatrix
     		X8Y3_手.BasePointBase = X8Y3_手.ToLocal(X8Y3_中指.ToGlobal(X8Y3_中指.JP[0].Joint));
     		X8Y4_手.BasePointBase = X8Y4_手.ToLocal(X8Y4_中指.ToGlobal(X8Y4_中指.JP[0].Joint));
     		尺度B = 1.075;
-    		本体.JoinPAall();
+    		Body.JoinPAall();
     	}
 
     	public override void 描画0(RenderArea Are)
     	{
-    		switch (本体.IndexX)
+    		switch (Body.IndexX)
     		{
     		case 0:
     			Are.Draw(X0Y0_親指);
@@ -5265,7 +5265,7 @@ namespace SlaveMatrix
     			Are.Draw(X1Y0_呪印_鎖3);
     			break;
     		case 2:
-    			switch (本体.IndexY)
+    			switch (Body.IndexY)
     			{
     			case 0:
     				Are.Draw(X2Y0_親指);
@@ -5389,7 +5389,7 @@ namespace SlaveMatrix
     			Are.Draw(X4Y0_呪印_鎖3);
     			break;
     		case 5:
-    			switch (本体.IndexY)
+    			switch (Body.IndexY)
     			{
     			case 0:
     				Are.Draw(X5Y0_親指);
@@ -5479,7 +5479,7 @@ namespace SlaveMatrix
     			}
     			break;
     		case 6:
-    			switch (本体.IndexY)
+    			switch (Body.IndexY)
     			{
     			case 0:
     				Are.Draw(X6Y0_人指);
@@ -5499,7 +5499,7 @@ namespace SlaveMatrix
     			}
     			break;
     		case 7:
-    			switch (本体.IndexY)
+    			switch (Body.IndexY)
     			{
     			case 0:
     				Are.Draw(X7Y0_人指);
@@ -5519,7 +5519,7 @@ namespace SlaveMatrix
     			}
     			break;
     		case 8:
-    			switch (本体.IndexY)
+    			switch (Body.IndexY)
     			{
     			case 0:
     				Are.Draw(X8Y0_薬指);
@@ -5544,7 +5544,7 @@ namespace SlaveMatrix
     			}
     			break;
     		case 9:
-    			switch (本体.IndexY)
+    			switch (Body.IndexY)
     			{
     			case 0:
     				Are.Draw(X9Y0_手);
@@ -5589,7 +5589,7 @@ namespace SlaveMatrix
     			}
     			break;
     		case 10:
-    			switch (本体.IndexY)
+    			switch (Body.IndexY)
     			{
     			case 0:
     				Are.Draw(X10Y0_親指);
@@ -5726,7 +5726,7 @@ namespace SlaveMatrix
     			Are.Draw(X13Y0_呪印_鎖3);
     			break;
     		default:
-    			switch (本体.IndexY)
+    			switch (Body.IndexY)
     			{
     			case 0:
     				Are.Draw(X14Y0_親指);
@@ -5786,10 +5786,10 @@ namespace SlaveMatrix
 
     	public override void 描画1(RenderArea Are)
     	{
-    		switch (本体.IndexX)
+    		switch (Body.IndexX)
     		{
     		case 6:
-    			switch (本体.IndexY)
+    			switch (Body.IndexY)
     			{
     			case 0:
     				Are.Draw(X6Y0_親指);
@@ -5874,7 +5874,7 @@ namespace SlaveMatrix
     			}
     			break;
     		case 7:
-    			switch (本体.IndexY)
+    			switch (Body.IndexY)
     			{
     			case 0:
     				Are.Draw(X7Y0_小指);
@@ -5959,7 +5959,7 @@ namespace SlaveMatrix
     			}
     			break;
     		case 8:
-    			switch (本体.IndexY)
+    			switch (Body.IndexY)
     			{
     			case 0:
     				Are.Draw(X8Y0_手);
@@ -5998,7 +5998,7 @@ namespace SlaveMatrix
 
     	public override void 色更新()
     	{
-    		switch (本体.IndexX)
+    		switch (Body.IndexX)
     		{
     		case 0:
     			X0Y0_親指CP.Update();
@@ -6035,7 +6035,7 @@ namespace SlaveMatrix
     			X1Y0_呪印_鎖3CP.Update();
     			break;
     		case 2:
-    			switch (本体.IndexY)
+    			switch (Body.IndexY)
     			{
     			case 0:
     				X2Y0_親指CP.Update();
@@ -6159,7 +6159,7 @@ namespace SlaveMatrix
     			X4Y0_呪印_鎖3CP.Update();
     			break;
     		case 5:
-    			switch (本体.IndexY)
+    			switch (Body.IndexY)
     			{
     			case 0:
     				X5Y0_親指CP.Update();
@@ -6249,7 +6249,7 @@ namespace SlaveMatrix
     			}
     			break;
     		case 6:
-    			switch (本体.IndexY)
+    			switch (Body.IndexY)
     			{
     			case 0:
     				X6Y0Pars.GetMiY_MaY(out mm);
@@ -6344,7 +6344,7 @@ namespace SlaveMatrix
     			}
     			break;
     		case 7:
-    			switch (本体.IndexY)
+    			switch (Body.IndexY)
     			{
     			case 0:
     				X7Y0Pars.GetMiY_MaY(out mm);
@@ -6439,7 +6439,7 @@ namespace SlaveMatrix
     			}
     			break;
     		case 8:
-    			switch (本体.IndexY)
+    			switch (Body.IndexY)
     			{
     			case 0:
     				X8Y0_手CP.Update();
@@ -6484,7 +6484,7 @@ namespace SlaveMatrix
     			}
     			break;
     		case 9:
-    			switch (本体.IndexY)
+    			switch (Body.IndexY)
     			{
     			case 0:
     				X9Y0_手CP.Update();
@@ -6529,7 +6529,7 @@ namespace SlaveMatrix
     			}
     			break;
     		case 10:
-    			switch (本体.IndexY)
+    			switch (Body.IndexY)
     			{
     			case 0:
     				X10Y0_親指CP.Update();
@@ -6666,7 +6666,7 @@ namespace SlaveMatrix
     			X13Y0_呪印_鎖3CP.Update();
     			break;
     		default:
-    			switch (本体.IndexY)
+    			switch (Body.IndexY)
     			{
     			case 0:
     				X14Y0_親指CP.Update();

@@ -8,7 +8,7 @@ namespace SlaveMatrix
     [Serializable]
     public class 多足_蜘D : 半身D
     {
-    	public bool 胴_表示 = true;
+    	public bool Torso_表示 = true;
 
     	public bool 胸版_表示 = true;
 
@@ -122,7 +122,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override Ele GetEle(double DisUnit, ModeEventDispatcher Med, 体配色 体配色)
+    	public override Ele GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
     	{
     		return new 多足_蜘(DisUnit, 配色指定, 体配色, Med, this);
     	}

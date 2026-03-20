@@ -17,11 +17,11 @@ namespace SlaveMatrix
 
     	public void 剃り()
     	{
-    		if (CP.GetFlag(0.1 * Cha.ChaD.現陰毛))
+    		if (CP.GetFlag(0.1 * Cha.CharacterData.現陰毛))
     		{
     			調教UI.擬音キュー.Enqueue(delegate(RenderArea a)
     			{
-    				調教UI.擬音.Sound(a, 対象.Ele.位置.GetAreaPoint(0.01), Sta.剃り.GetVal(Cha.ChaD.現陰毛, RNG.XS.NextDouble()), new Font("MS Gothic", 1f), Col.Black, 0.1 + 0.1 * RNG.XS.NextDouble(), b: true);
+    				調教UI.擬音.Sound(a, 対象.Ele.位置.GetAreaPoint(0.01), Sta.剃り.GetVal(Cha.CharacterData.現陰毛, RNG.XS.NextDouble()), new Font("MS Gothic", 1f), Col.Black, 0.1 + 0.1 * RNG.XS.NextDouble(), b: true);
     			});
     		}
     	}
@@ -53,9 +53,9 @@ namespace SlaveMatrix
     	private void 移動時(ref Color hc)
     	{
     		p = null;
-    		if (Bod.腰肌_人 != null && Bod.腰肌_人.本体.IsHit(ref hc))
+    		if (Bod.腰肌_人 != null && Bod.腰肌_人.Body.IsHit(ref hc))
     		{
-    			p = Bod.腰肌_人.本体.GetHitPar_(hc);
+    			p = Bod.腰肌_人.Body.GetHitPar_(hc);
     		}
     		if (p != null && (p.Tag == "獣毛" || p.Tag == "陰毛"))
     		{
@@ -88,10 +88,10 @@ namespace SlaveMatrix
     				Player.奴体力消費小();
     				Player.主精力消費小();
     				剃り();
-    				Cha.ChaD.現陰毛 = (Cha.ChaD.現陰毛 - 0.01).Clamp(0.0, 1.0);
-    				Cha.Bod.腰肌_人.陰毛CD.不透明度 = Cha.ChaD.現陰毛 * Cha.ChaD.最陰毛濃度;
-    				Cha.Bod.腰肌_人.獣性_獣毛CD.不透明度 = Cha.ChaD.現陰毛;
-    				Cha.Bod.腰肌_人.陰毛_ハートCD.不透明度 = Cha.ChaD.現陰毛.Inverse() * Cha.ChaD.最陰毛濃度;
+    				Cha.CharacterData.現陰毛 = (Cha.CharacterData.現陰毛 - 0.01).Clamp(0.0, 1.0);
+    				Cha.Body.腰肌_人.陰毛CD.不透明度 = Cha.CharacterData.現陰毛 * Cha.CharacterData.最陰毛濃度;
+    				Cha.Body.腰肌_人.獣性_獣毛CD.不透明度 = Cha.CharacterData.現陰毛;
+    				Cha.Body.腰肌_人.陰毛_ハートCD.不透明度 = Cha.CharacterData.現陰毛.Inverse() * Cha.CharacterData.最陰毛濃度;
     			}
     			else if (調教UI.押し状態)
     			{
@@ -121,9 +121,9 @@ namespace SlaveMatrix
     			return;
     		}
     		p = null;
-    		if (Bod.腰肌_人 != null && Bod.腰肌_人.本体.IsHit(ref hc))
+    		if (Bod.腰肌_人 != null && Bod.腰肌_人.Body.IsHit(ref hc))
     		{
-    			p = Bod.腰肌_人.本体.GetHitPar_(hc);
+    			p = Bod.腰肌_人.Body.GetHitPar_(hc);
     		}
     		if (mb == MouseButtons.Left && p != null && (p.Tag == "獣毛" || p.Tag == "陰毛"))
     		{
@@ -169,10 +169,10 @@ namespace SlaveMatrix
     	{
     	}
 
-    	public void SetCha(Cha Cha)
+    	public void SetCha(Character Cha)
     	{
     		base.Cha = Cha;
-    		Bod = Cha.Bod;
+    		Bod = Cha.Body;
     	}
 
     	public new void Reset()

@@ -1321,7 +1321,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -1390,34 +1390,34 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public JointS 首_接続点 => new JointS(本体, X0Y0_胸郭, 0);
+    	public JointS Neck_接続点 => new JointS(Body, X0Y0_胸郭, 0);
 
-    	public JointS 肩左_接続点 => new JointS(本体, X0Y0_胸郭, 1);
+    	public JointS 肩左_接続点 => new JointS(Body, X0Y0_胸郭, 1);
 
-    	public JointS 肩右_接続点 => new JointS(本体, X0Y0_胸郭, 2);
+    	public JointS 肩右_接続点 => new JointS(Body, X0Y0_胸郭, 2);
 
-    	public JointS 胸左_接続点 => new JointS(本体, X0Y0_胸郭, 3);
+    	public JointS 胸左_接続点 => new JointS(Body, X0Y0_胸郭, 3);
 
-    	public JointS 胸右_接続点 => new JointS(本体, X0Y0_胸郭, 4);
+    	public JointS 胸右_接続点 => new JointS(Body, X0Y0_胸郭, 4);
 
-    	public JointS 肌_接続点 => new JointS(本体, X0Y0_胸郭, 10);
+    	public JointS 肌_接続点 => new JointS(Body, X0Y0_胸郭, 10);
 
-    	public JointS 翼上左_接続点 => new JointS(本体, X0Y0_胸郭, 8);
+    	public JointS 翼上左_接続点 => new JointS(Body, X0Y0_胸郭, 8);
 
-    	public JointS 翼上右_接続点 => new JointS(本体, X0Y0_胸郭, 9);
+    	public JointS 翼上右_接続点 => new JointS(Body, X0Y0_胸郭, 9);
 
-    	public JointS 翼下左_接続点 => new JointS(本体, X0Y0_胸郭, 11);
+    	public JointS 翼下左_接続点 => new JointS(Body, X0Y0_胸郭, 11);
 
-    	public JointS 翼下右_接続点 => new JointS(本体, X0Y0_胸郭, 12);
+    	public JointS 翼下右_接続点 => new JointS(Body, X0Y0_胸郭, 12);
 
-    	public JointS 背中_接続点 => new JointS(本体, X0Y0_胸郭, 10);
+    	public JointS 背中_接続点 => new JointS(Body, X0Y0_胸郭, 10);
 
-    	public Chest(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, ChestD e)
+    	public Chest(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, ChestD e)
     	{
     		Chest Chest2 = this;
     		ThisType = GetType();
-    		本体 = new Difs(Sta.胴体["胸郭"]);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs(Sta.胴体["胸郭"]);
+    		Pars pars = Body[0][0];
     		X0Y0_胸郭 = pars["胸郭"].ToPar();
     		Pars pars2 = pars["筋肉"].ToPars();
     		X0Y0_筋肉_筋肉左 = pars2["筋肉左"].ToPar();
@@ -1500,8 +1500,8 @@ namespace SlaveMatrix
     		X0Y0_ハイライト外右 = pars["ハイライト外右"].ToPar();
     		X0Y0_ハイライト内左 = pars["ハイライト内左"].ToPar();
     		X0Y0_ハイライト内右 = pars["ハイライト内右"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -1598,7 +1598,7 @@ namespace SlaveMatrix
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = Chest2;
     				f.ConnectionType = ConnectionInfo.Chest_Neck_接続;
-    				f.接続(Chest2.首_接続点);
+    				f.接続(Chest2.Neck_接続点);
     				return f;
     			}).ToArray();
     		}
@@ -1776,7 +1776,7 @@ namespace SlaveMatrix
     		傷X左濃度 = e.傷X左濃度;
     		傷X右濃度 = e.傷X右濃度;
     		ハイライト濃度 = e.ハイライト濃度;
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     		尺度B = 0.99;
     		尺度YB = 0.99;
     	}
@@ -1969,12 +1969,12 @@ namespace SlaveMatrix
     		X0Y0_ハイライト内右CP.Update();
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		胸郭CD = new ColorD(ref Col.Black, ref 体配色.人肌O);
     		筋肉_筋肉左CD = new ColorD(ref 体配色.薄線, ref 体配色.人肌O);

@@ -2463,7 +2463,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -2684,159 +2684,159 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public JointS 左1_接続点 => new JointS(本体, X0Y0_尾0_尾, 2);
+    	public JointS 左1_接続点 => new JointS(Body, X0Y0_尾0_尾, 2);
 
-    	public JointS 右1_接続点 => new JointS(本体, X0Y0_尾0_尾, 3);
+    	public JointS 右1_接続点 => new JointS(Body, X0Y0_尾0_尾, 3);
 
-    	public JointS 左2_接続点 => new JointS(本体, X0Y0_尾1_尾, 2);
+    	public JointS 左2_接続点 => new JointS(Body, X0Y0_尾1_尾, 2);
 
-    	public JointS 右2_接続点 => new JointS(本体, X0Y0_尾1_尾, 3);
+    	public JointS 右2_接続点 => new JointS(Body, X0Y0_尾1_尾, 3);
 
-    	public JointS 左3_接続点 => new JointS(本体, X0Y0_尾2_尾, 2);
+    	public JointS 左3_接続点 => new JointS(Body, X0Y0_尾2_尾, 2);
 
-    	public JointS 右3_接続点 => new JointS(本体, X0Y0_尾2_尾, 3);
+    	public JointS 右3_接続点 => new JointS(Body, X0Y0_尾2_尾, 3);
 
-    	public JointS 左4_接続点 => new JointS(本体, X0Y0_尾3_尾, 2);
+    	public JointS 左4_接続点 => new JointS(Body, X0Y0_尾3_尾, 2);
 
-    	public JointS 右4_接続点 => new JointS(本体, X0Y0_尾3_尾, 3);
+    	public JointS 右4_接続点 => new JointS(Body, X0Y0_尾3_尾, 3);
 
-    	public JointS 左5_接続点 => new JointS(本体, X0Y0_尾4_尾, 2);
+    	public JointS 左5_接続点 => new JointS(Body, X0Y0_尾4_尾, 2);
 
-    	public JointS 右5_接続点 => new JointS(本体, X0Y0_尾4_尾, 3);
+    	public JointS 右5_接続点 => new JointS(Body, X0Y0_尾4_尾, 3);
 
-    	public JointS 左6_接続点 => new JointS(本体, X0Y0_尾5_尾, 2);
+    	public JointS 左6_接続点 => new JointS(Body, X0Y0_尾5_尾, 2);
 
-    	public JointS 右6_接続点 => new JointS(本体, X0Y0_尾5_尾, 3);
+    	public JointS 右6_接続点 => new JointS(Body, X0Y0_尾5_尾, 3);
 
-    	public JointS 左7_接続点 => new JointS(本体, X0Y0_尾6_尾, 2);
+    	public JointS 左7_接続点 => new JointS(Body, X0Y0_尾6_尾, 2);
 
-    	public JointS 右7_接続点 => new JointS(本体, X0Y0_尾6_尾, 3);
+    	public JointS 右7_接続点 => new JointS(Body, X0Y0_尾6_尾, 3);
 
-    	public JointS 左8_接続点 => new JointS(本体, X0Y0_尾7_尾, 2);
+    	public JointS 左8_接続点 => new JointS(Body, X0Y0_尾7_尾, 2);
 
-    	public JointS 右8_接続点 => new JointS(本体, X0Y0_尾7_尾, 3);
+    	public JointS 右8_接続点 => new JointS(Body, X0Y0_尾7_尾, 3);
 
-    	public JointS 左9_接続点 => new JointS(本体, X0Y0_尾8_尾, 2);
+    	public JointS 左9_接続点 => new JointS(Body, X0Y0_尾8_尾, 2);
 
-    	public JointS 右9_接続点 => new JointS(本体, X0Y0_尾8_尾, 3);
+    	public JointS 右9_接続点 => new JointS(Body, X0Y0_尾8_尾, 3);
 
-    	public JointS 左10_接続点 => new JointS(本体, X0Y0_尾9_尾, 2);
+    	public JointS 左10_接続点 => new JointS(Body, X0Y0_尾9_尾, 2);
 
-    	public JointS 右10_接続点 => new JointS(本体, X0Y0_尾9_尾, 3);
+    	public JointS 右10_接続点 => new JointS(Body, X0Y0_尾9_尾, 3);
 
-    	public JointS 左11_接続点 => new JointS(本体, X0Y0_尾10_尾, 2);
+    	public JointS 左11_接続点 => new JointS(Body, X0Y0_尾10_尾, 2);
 
-    	public JointS 右11_接続点 => new JointS(本体, X0Y0_尾10_尾, 3);
+    	public JointS 右11_接続点 => new JointS(Body, X0Y0_尾10_尾, 3);
 
-    	public JointS 左12_接続点 => new JointS(本体, X0Y0_尾11_尾, 2);
+    	public JointS 左12_接続点 => new JointS(Body, X0Y0_尾11_尾, 2);
 
-    	public JointS 右12_接続点 => new JointS(本体, X0Y0_尾11_尾, 3);
+    	public JointS 右12_接続点 => new JointS(Body, X0Y0_尾11_尾, 3);
 
-    	public JointS 左13_接続点 => new JointS(本体, X0Y0_尾12_尾, 2);
+    	public JointS 左13_接続点 => new JointS(Body, X0Y0_尾12_尾, 2);
 
-    	public JointS 右13_接続点 => new JointS(本体, X0Y0_尾12_尾, 3);
+    	public JointS 右13_接続点 => new JointS(Body, X0Y0_尾12_尾, 3);
 
-    	public JointS 左14_接続点 => new JointS(本体, X0Y0_尾13_尾, 2);
+    	public JointS 左14_接続点 => new JointS(Body, X0Y0_尾13_尾, 2);
 
-    	public JointS 右14_接続点 => new JointS(本体, X0Y0_尾13_尾, 3);
+    	public JointS 右14_接続点 => new JointS(Body, X0Y0_尾13_尾, 3);
 
-    	public JointS 左15_接続点 => new JointS(本体, X0Y0_尾14_尾, 2);
+    	public JointS 左15_接続点 => new JointS(Body, X0Y0_尾14_尾, 2);
 
-    	public JointS 右15_接続点 => new JointS(本体, X0Y0_尾14_尾, 3);
+    	public JointS 右15_接続点 => new JointS(Body, X0Y0_尾14_尾, 3);
 
-    	public JointS 左16_接続点 => new JointS(本体, X0Y0_尾15_尾, 2);
+    	public JointS 左16_接続点 => new JointS(Body, X0Y0_尾15_尾, 2);
 
-    	public JointS 右16_接続点 => new JointS(本体, X0Y0_尾15_尾, 3);
+    	public JointS 右16_接続点 => new JointS(Body, X0Y0_尾15_尾, 3);
 
-    	public JointS 左17_接続点 => new JointS(本体, X0Y0_尾16_尾, 2);
+    	public JointS 左17_接続点 => new JointS(Body, X0Y0_尾16_尾, 2);
 
-    	public JointS 右17_接続点 => new JointS(本体, X0Y0_尾16_尾, 3);
+    	public JointS 右17_接続点 => new JointS(Body, X0Y0_尾16_尾, 3);
 
-    	public JointS 左18_接続点 => new JointS(本体, X0Y0_尾17_尾, 2);
+    	public JointS 左18_接続点 => new JointS(Body, X0Y0_尾17_尾, 2);
 
-    	public JointS 右18_接続点 => new JointS(本体, X0Y0_尾17_尾, 3);
+    	public JointS 右18_接続点 => new JointS(Body, X0Y0_尾17_尾, 3);
 
-    	public JointS 左19_接続点 => new JointS(本体, X0Y0_尾18_尾, 2);
+    	public JointS 左19_接続点 => new JointS(Body, X0Y0_尾18_尾, 2);
 
-    	public JointS 右19_接続点 => new JointS(本体, X0Y0_尾18_尾, 3);
+    	public JointS 右19_接続点 => new JointS(Body, X0Y0_尾18_尾, 3);
 
-    	public JointS 左20_接続点 => new JointS(本体, X0Y0_尾19_尾, 2);
+    	public JointS 左20_接続点 => new JointS(Body, X0Y0_尾19_尾, 2);
 
-    	public JointS 右20_接続点 => new JointS(本体, X0Y0_尾19_尾, 3);
+    	public JointS 右20_接続点 => new JointS(Body, X0Y0_尾19_尾, 3);
 
-    	public JointS 左21_接続点 => new JointS(本体, X0Y0_尾20_尾, 2);
+    	public JointS 左21_接続点 => new JointS(Body, X0Y0_尾20_尾, 2);
 
-    	public JointS 右21_接続点 => new JointS(本体, X0Y0_尾20_尾, 3);
+    	public JointS 右21_接続点 => new JointS(Body, X0Y0_尾20_尾, 3);
 
-    	public JointS 左22_接続点 => new JointS(本体, X0Y0_尾21_尾, 2);
+    	public JointS 左22_接続点 => new JointS(Body, X0Y0_尾21_尾, 2);
 
-    	public JointS 右22_接続点 => new JointS(本体, X0Y0_尾21_尾, 3);
+    	public JointS 右22_接続点 => new JointS(Body, X0Y0_尾21_尾, 3);
 
-    	public JointS 左23_接続点 => new JointS(本体, X0Y0_尾22_尾, 2);
+    	public JointS 左23_接続点 => new JointS(Body, X0Y0_尾22_尾, 2);
 
-    	public JointS 右23_接続点 => new JointS(本体, X0Y0_尾22_尾, 3);
+    	public JointS 右23_接続点 => new JointS(Body, X0Y0_尾22_尾, 3);
 
-    	public JointS 左24_接続点 => new JointS(本体, X0Y0_尾23_尾, 2);
+    	public JointS 左24_接続点 => new JointS(Body, X0Y0_尾23_尾, 2);
 
-    	public JointS 右24_接続点 => new JointS(本体, X0Y0_尾23_尾, 3);
+    	public JointS 右24_接続点 => new JointS(Body, X0Y0_尾23_尾, 3);
 
-    	public JointS 左25_接続点 => new JointS(本体, X0Y0_尾24_尾, 2);
+    	public JointS 左25_接続点 => new JointS(Body, X0Y0_尾24_尾, 2);
 
-    	public JointS 右25_接続点 => new JointS(本体, X0Y0_尾24_尾, 3);
+    	public JointS 右25_接続点 => new JointS(Body, X0Y0_尾24_尾, 3);
 
-    	public JointS 左26_接続点 => new JointS(本体, X0Y0_尾25_尾, 2);
+    	public JointS 左26_接続点 => new JointS(Body, X0Y0_尾25_尾, 2);
 
-    	public JointS 右26_接続点 => new JointS(本体, X0Y0_尾25_尾, 3);
+    	public JointS 右26_接続点 => new JointS(Body, X0Y0_尾25_尾, 3);
 
-    	public JointS 左27_接続点 => new JointS(本体, X0Y0_尾26_尾, 2);
+    	public JointS 左27_接続点 => new JointS(Body, X0Y0_尾26_尾, 2);
 
-    	public JointS 右27_接続点 => new JointS(本体, X0Y0_尾26_尾, 3);
+    	public JointS 右27_接続点 => new JointS(Body, X0Y0_尾26_尾, 3);
 
-    	public JointS 左28_接続点 => new JointS(本体, X0Y0_尾27_尾, 2);
+    	public JointS 左28_接続点 => new JointS(Body, X0Y0_尾27_尾, 2);
 
-    	public JointS 右28_接続点 => new JointS(本体, X0Y0_尾27_尾, 3);
+    	public JointS 右28_接続点 => new JointS(Body, X0Y0_尾27_尾, 3);
 
-    	public JointS 左29_接続点 => new JointS(本体, X0Y0_尾28_尾, 2);
+    	public JointS 左29_接続点 => new JointS(Body, X0Y0_尾28_尾, 2);
 
-    	public JointS 右29_接続点 => new JointS(本体, X0Y0_尾28_尾, 3);
+    	public JointS 右29_接続点 => new JointS(Body, X0Y0_尾28_尾, 3);
 
-    	public JointS 左30_接続点 => new JointS(本体, X0Y0_尾29_尾, 2);
+    	public JointS 左30_接続点 => new JointS(Body, X0Y0_尾29_尾, 2);
 
-    	public JointS 右30_接続点 => new JointS(本体, X0Y0_尾29_尾, 3);
+    	public JointS 右30_接続点 => new JointS(Body, X0Y0_尾29_尾, 3);
 
-    	public JointS 左31_接続点 => new JointS(本体, X0Y0_尾30_尾, 2);
+    	public JointS 左31_接続点 => new JointS(Body, X0Y0_尾30_尾, 2);
 
-    	public JointS 右31_接続点 => new JointS(本体, X0Y0_尾30_尾, 3);
+    	public JointS 右31_接続点 => new JointS(Body, X0Y0_尾30_尾, 3);
 
-    	public JointS 左32_接続点 => new JointS(本体, X0Y0_尾31_尾, 2);
+    	public JointS 左32_接続点 => new JointS(Body, X0Y0_尾31_尾, 2);
 
-    	public JointS 右32_接続点 => new JointS(本体, X0Y0_尾31_尾, 3);
+    	public JointS 右32_接続点 => new JointS(Body, X0Y0_尾31_尾, 3);
 
-    	public JointS 左33_接続点 => new JointS(本体, X0Y0_尾32_尾, 2);
+    	public JointS 左33_接続点 => new JointS(Body, X0Y0_尾32_尾, 2);
 
-    	public JointS 右33_接続点 => new JointS(本体, X0Y0_尾32_尾, 3);
+    	public JointS 右33_接続点 => new JointS(Body, X0Y0_尾32_尾, 3);
 
-    	public JointS 左34_接続点 => new JointS(本体, X0Y0_尾33_尾, 2);
+    	public JointS 左34_接続点 => new JointS(Body, X0Y0_尾33_尾, 2);
 
-    	public JointS 右34_接続点 => new JointS(本体, X0Y0_尾33_尾, 3);
+    	public JointS 右34_接続点 => new JointS(Body, X0Y0_尾33_尾, 3);
 
-    	public JointS 尾先_接続点 => new JointS(本体, X0Y0_尾13_尾, 1);
+    	public JointS 尾先_接続点 => new JointS(Body, X0Y0_尾13_尾, 1);
 
-    	public JointS 鎖1_接続点 => new JointS(本体, X0Y0_輪_金具左, 0);
+    	public JointS 鎖1_接続点 => new JointS(Body, X0Y0_輪_金具左, 0);
 
-    	public JointS 鎖2_接続点 => new JointS(本体, X0Y0_輪_金具右, 0);
+    	public JointS 鎖2_接続点 => new JointS(Body, X0Y0_輪_金具右, 0);
 
-    	public 尾_鯨(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 尾_鯨D e)
+    	public 尾_鯨(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 尾_鯨D e)
     	{
     		尾_鯨 尾_鯨2 = this;
     		ThisType = GetType();
     		Dif dif = new Dif();
     		dif.Tag = "鯨尾";
     		dif.Add(new Pars(Sta.尻尾["尾"][0][20]));
-    		本体 = new Difs();
-    		本体.Tag = dif.Tag;
-    		本体.Add(dif);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs();
+    		Body.Tag = dif.Tag;
+    		Body.Add(dif);
+    		Pars pars = Body[0][0];
     		Pars pars2 = pars["尾33"].ToPars();
     		X0Y0_尾33_尾 = pars2["尾"].ToPar();
     		X0Y0_尾33_柄 = pars2["柄"].ToPar();
@@ -2980,8 +2980,8 @@ namespace SlaveMatrix
     		X0Y0_尾0_尾 = pars2["尾"].ToPar();
     		X0Y0_尾0_柄 = pars2["柄"].ToPar();
     		X0Y0_尾0_縦影 = pars2["縦影"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -4000,7 +4000,7 @@ namespace SlaveMatrix
     		X0Y0_尾0_尾CP = new ColorP(X0Y0_尾0_尾, 尾0_尾CD, DisUnit, abj: true);
     		X0Y0_尾0_柄CP = new ColorP(X0Y0_尾0_柄, 尾0_柄CD, DisUnit, abj: true);
     		X0Y0_尾0_縦影CP = new ColorP(X0Y0_尾0_縦影, 尾0_縦影CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     		鎖1 = new 拘束鎖(DisUnit, 右, 配色指定, 体配色, Xasix);
     		鎖2 = new 拘束鎖(DisUnit, !右, 配色指定, 体配色, Xasix);
     		鎖1.接続(鎖1_接続点);
@@ -4170,7 +4170,7 @@ namespace SlaveMatrix
     		X0Y0_尾2_尾.AngleBase = maxAngle.GetRanAngle();
     		X0Y0_尾1_尾.AngleBase = maxAngle.GetRanAngle();
     		X0Y0_尾0_尾.AngleBase = maxAngle.GetRanAngle();
-    		本体.JoinPAall();
+    		Body.JoinPAall();
     		if (尾先_接続 != null)
     		{
     			Set尾先角度();
@@ -4481,7 +4481,7 @@ namespace SlaveMatrix
     		鎖2.色更新();
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		switch (配色指定)
     		{
@@ -4500,7 +4500,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		尾33_尾CD = new ColorD(ref Col.Black, ref 体配色.体1O);
     		尾33_柄CD = new ColorD(ref Col.Black, ref 体配色.体0O);
@@ -4614,7 +4614,7 @@ namespace SlaveMatrix
     		輪_金具右CD = new ColorD();
     	}
 
-    	private void 配色T0(体配色 体配色)
+    	private void 配色T0(BodyColorSet 体配色)
     	{
     		尾33_尾CD = new ColorD(ref Col.Black, ref 体配色.体1O);
     		尾33_柄CD = new ColorD(ref Col.Black, ref 体配色.体0O);
@@ -4726,7 +4726,7 @@ namespace SlaveMatrix
     		輪_金具右CD = new ColorD();
     	}
 
-    	private void 配色T1(体配色 体配色)
+    	private void 配色T1(BodyColorSet 体配色)
     	{
     		尾33_尾CD = new ColorD(ref Col.Black, ref 体配色.体1O);
     		尾33_柄CD = new ColorD(ref Col.Black, ref 体配色.刺青O);

@@ -10,9 +10,9 @@ namespace SlaveMatrix
 
     	public RenderArea Are;
 
-    	public Cha Cha;
+    	public Character Cha;
 
-    	public Bod Bod;
+    	public Body Bod;
 
     	public InfoPanel ip;
 

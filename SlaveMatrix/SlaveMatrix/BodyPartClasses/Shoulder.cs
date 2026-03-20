@@ -75,7 +75,7 @@ namespace SlaveMatrix
 
     	public スタンプW 鞭痕;
 
-    	public Ele[] 上腕_接続;
+    	public Ele[] UpperArm_接続;
 
     	public override bool 欠損
     	{
@@ -283,7 +283,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -305,14 +305,14 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public JointS 上腕_接続点 => new JointS(本体, X0Y0_Shoulder_Shoulder, 1);
+    	public JointS UpperArm_接続点 => new JointS(Body, X0Y0_Shoulder_Shoulder, 1);
 
-    	public Shoulder(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, ShoulderD e)
+    	public Shoulder(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, ShoulderD e)
     	{
     		Shoulder Shoulder2 = this;
     		ThisType = GetType();
-    		本体 = new Difs(Sta.肩左["Shoulder"]);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs(Sta.肩左["Shoulder"]);
+    		Pars pars = Body[0][0];
     		Pars pars2 = pars["脇"].ToPars();
     		X0Y0_脇_脇 = pars2["脇"].ToPar();
     		X0Y0_脇_筋肉 = pars2["筋肉"].ToPar();
@@ -327,8 +327,8 @@ namespace SlaveMatrix
     		X0Y0_Shoulder_傷I4 = pars2["傷I4"].ToPar();
     		X0Y0_Shoulder_シャツ = pars2["シャツ"].ToPar();
     		X0Y0_Shoulder_ナース = pars2["ナース"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -369,15 +369,15 @@ namespace SlaveMatrix
     		{
     			表示 = false;
     		}
-    		if (e.上腕_接続.Count > 0)
+    		if (e.UpperArm_接続.Count > 0)
     		{
     			Ele f;
-    			上腕_接続 = e.上腕_接続.Select(delegate(EleD g)
+    			UpperArm_接続 = e.UpperArm_接続.Select(delegate(EleD g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = Shoulder2;
-    				f.ConnectionType = ConnectionInfo.Shoulder_上腕_接続;
-    				f.接続(Shoulder2.上腕_接続点);
+    				f.ConnectionType = ConnectionInfo.Shoulder_UpperArm_接続;
+    				f.接続(Shoulder2.UpperArm_接続点);
     				return f;
     			}).ToArray();
     		}
@@ -394,7 +394,7 @@ namespace SlaveMatrix
     		X0Y0_Shoulder_傷I4CP = new ColorP(X0Y0_Shoulder_傷I4, Shoulder_傷I4CD, DisUnit, abj: true);
     		X0Y0_Shoulder_シャツCP = new ColorP(X0Y0_Shoulder_シャツ, Shoulder_シャツCD, DisUnit, abj: true);
     		X0Y0_Shoulder_ナースCP = new ColorP(X0Y0_Shoulder_ナース, Shoulder_ナースCD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     		X0Y0_脇_脇.BasePointBase = X0Y0_脇_脇.BasePointBase.AddY(-0.001);
     	}
 
@@ -455,12 +455,12 @@ namespace SlaveMatrix
     		X0Y0_Shoulder_ナースCP.Update(ナース);
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		脇_脇CD = new ColorD(ref Col.Black, ref 体配色.人肌R);
     		脇_筋肉CD = new ColorD(ref Col.Black, ref 体配色.人肌R);

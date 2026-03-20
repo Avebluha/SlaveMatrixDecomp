@@ -2842,7 +2842,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -3169,11 +3169,11 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 足_人(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 足_人D e)
+    	public 足_人(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 足_人D e)
     	{
     		ThisType = GetType();
-    		本体 = new Difs(Sta.脚左["足"]);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs(Sta.脚左["足"]);
+    		Pars pars = Body[0][0];
     		Pars pars2 = pars["ヒール0"].ToPars();
     		X0Y0_ヒール0_靴底 = pars2["靴底"].ToPar();
     		pars2 = pars["サンダル0"].ToPars();
@@ -3328,7 +3328,7 @@ namespace SlaveMatrix
     		X0Y0_アーマ1_鉄靴1 = pars2["鉄靴1"].ToPar();
     		X0Y0_アーマ1_鉄靴2 = pars2["鉄靴2"].ToPar();
     		X0Y0_アーマ1_鉄靴3 = pars2["鉄靴3"].ToPar();
-    		pars = 本体[0][1];
+    		pars = Body[0][1];
     		pars2 = pars["ヒール0"].ToPars();
     		X0Y1_ヒール0_ヒール = pars2["ヒール"].ToPar();
     		X0Y1_ヒール0_靴底 = pars2["靴底"].ToPar();
@@ -3491,8 +3491,8 @@ namespace SlaveMatrix
     		X0Y1_アーマ1_鉄靴1 = pars2["鉄靴1"].ToPar();
     		X0Y1_アーマ1_鉄靴2 = pars2["鉄靴2"].ToPar();
     		X0Y1_アーマ1_鉄靴3 = pars2["鉄靴3"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -3859,12 +3859,12 @@ namespace SlaveMatrix
     		X0Y1_アーマ1_鉄靴1CP = new ColorP(X0Y1_アーマ1_鉄靴1, アーマ1_鉄靴1CD, DisUnit, abj: true);
     		X0Y1_アーマ1_鉄靴2CP = new ColorP(X0Y1_アーマ1_鉄靴2, アーマ1_鉄靴2CD, DisUnit, abj: true);
     		X0Y1_アーマ1_鉄靴3CP = new ColorP(X0Y1_アーマ1_鉄靴3, アーマ1_鉄靴3CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     	}
 
     	public override void 描画0(RenderArea Are)
     	{
-    		if (本体.IndexY == 0)
+    		if (Body.IndexY == 0)
     		{
     			Are.Draw(X0Y0_足);
     			Are.Draw(X0Y0_小指_小指1);
@@ -3942,7 +3942,7 @@ namespace SlaveMatrix
 
     	public void 底描画(RenderArea Are)
     	{
-    		if (本体.IndexY == 0)
+    		if (Body.IndexY == 0)
     		{
     			Are.Draw(X0Y0_ヒール0_靴底);
     			Are.Draw(X0Y0_サンダル0_靴底);
@@ -3965,7 +3965,7 @@ namespace SlaveMatrix
 
     	public void 靴描画(RenderArea Are)
     	{
-    		if (本体.IndexY == 0)
+    		if (Body.IndexY == 0)
     		{
     			Are.Draw(X0Y0_ヒール1_バンプ);
     			Are.Draw(X0Y0_ヒール1_ストラップ_ストラップ);
@@ -4167,13 +4167,13 @@ namespace SlaveMatrix
 
     	public void 開脚(腿_人 腿)
     	{
-    		if (腿.本体.IndexY == 0 || 腿.本体.IndexY == 4)
+    		if (腿.Body.IndexY == 0 || 腿.Body.IndexY == 4)
     		{
-    			本体.IndexY = 0;
+    			Body.IndexY = 0;
     		}
-    		else if (腿.本体.IndexY == 1 || 腿.本体.IndexY == 2 || 腿.本体.IndexY == 3)
+    		else if (腿.Body.IndexY == 1 || 腿.Body.IndexY == 2 || 腿.Body.IndexY == 3)
     		{
-    			本体.IndexY = 1;
+    			Body.IndexY = 1;
     		}
     	}
 
@@ -4206,7 +4206,7 @@ namespace SlaveMatrix
 
     	public override void 色更新()
     	{
-    		if (本体.IndexY == 0)
+    		if (Body.IndexY == 0)
     		{
     			X0Y0_ヒール0_靴底CP.Update();
     			X0Y0_サンダル0_靴底CP.Update();
@@ -4424,7 +4424,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		switch (配色指定)
     		{
@@ -4446,7 +4446,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		ヒール0_ヒールCD = new ColorD();
     		ヒール0_靴底CD = new ColorD();
@@ -4559,7 +4559,7 @@ namespace SlaveMatrix
     		ナース1_ストラップ4_縁2CD = new ColorD();
     	}
 
-    	private void 配色B0(体配色 体配色)
+    	private void 配色B0(BodyColorSet 体配色)
     	{
     		ヒール0_ヒールCD = new ColorD();
     		ヒール0_靴底CD = new ColorD();
@@ -4672,7 +4672,7 @@ namespace SlaveMatrix
     		ナース1_ストラップ4_縁2CD = new ColorD();
     	}
 
-    	private void 配色C0(体配色 体配色)
+    	private void 配色C0(BodyColorSet 体配色)
     	{
     		ヒール0_ヒールCD = new ColorD();
     		ヒール0_靴底CD = new ColorD();
@@ -4785,7 +4785,7 @@ namespace SlaveMatrix
     		ナース1_ストラップ4_縁2CD = new ColorD();
     	}
 
-    	private void 配色L0(体配色 体配色)
+    	private void 配色L0(BodyColorSet 体配色)
     	{
     		ヒール0_ヒールCD = new ColorD();
     		ヒール0_靴底CD = new ColorD();

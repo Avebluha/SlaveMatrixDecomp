@@ -149,7 +149,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -164,24 +164,24 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 汗(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 汗D e)
+    	public 汗(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 汗D e)
     	{
     		ThisType = GetType();
-    		本体 = new Difs(Sta.スタンプ["汗"]);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs(Sta.スタンプ["汗"]);
+    		Pars pars = Body[0][0];
     		X0Y0_汗0 = pars["汗0"].ToPar();
     		X0Y0_汗1 = pars["汗1"].ToPar();
     		X0Y0_汗ハイライト = pars["汗ハイライト"].ToPar();
-    		pars = 本体[0][1];
+    		pars = Body[0][1];
     		X0Y1_汗0流れ = pars["汗0流れ"].ToPar();
-    		pars = 本体[0][2];
+    		pars = Body[0][2];
     		X0Y2_汗0流れ = pars["汗0流れ"].ToPar();
-    		pars = 本体[0][3];
+    		pars = Body[0][3];
     		X0Y3_汗0流れ = pars["汗0流れ"].ToPar();
-    		pars = 本体[0][4];
+    		pars = Body[0][4];
     		X0Y4_汗0流れ = pars["汗0流れ"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -224,12 +224,12 @@ namespace SlaveMatrix
     		X0Y2_汗0流れCP = new ColorP(X0Y2_汗0流れ, 汗0流れCD, DisUnit, abj: true);
     		X0Y3_汗0流れCP = new ColorP(X0Y3_汗0流れ, 汗0流れCD, DisUnit, abj: true);
     		X0Y4_汗0流れCP = new ColorP(X0Y4_汗0流れ, 汗0流れCD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     	}
 
     	public override void 色更新()
     	{
-    		switch (本体.IndexY)
+    		switch (Body.IndexY)
     		{
     		case 0:
     			X0Y0_汗0CP.Update();
@@ -251,12 +251,12 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		汗0流れCD = new ColorD(ref 体配色.体液線, ref Color2.Empty);
     		汗0CD = new ColorD(ref 体配色.体液線, ref Color2.Empty);

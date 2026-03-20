@@ -771,7 +771,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -818,11 +818,11 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 胸肌(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 胸肌D e)
+    	public 胸肌(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 胸肌D e)
     	{
     		ThisType = GetType();
-    		本体 = new Difs(Sta.胴体["胸郭肌"]);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs(Sta.胴体["胸郭肌"]);
+    		Pars pars = Body[0][0];
     		Pars pars2 = pars["甲殻"].ToPars();
     		X0Y0_虫性_甲殻2 = pars2["甲殻2"].ToPar();
     		Pars pars3 = pars2["甲殻1"].ToPars();
@@ -876,8 +876,8 @@ namespace SlaveMatrix
     		X0Y0_コア_コア1_基 = pars3["基"].ToPar();
     		X0Y0_コア_コア1_コア = pars3["コア"].ToPar();
     		X0Y0_コア_コア1_ハイライト = pars3["ハイライト"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -981,7 +981,7 @@ namespace SlaveMatrix
     		X0Y0_コア_コア1_基CP = new ColorP(X0Y0_コア_コア1_基, コア_コア1_基CD, DisUnit, abj: true);
     		X0Y0_コア_コア1_コアCP = new ColorP(X0Y0_コア_コア1_コア, コア_コア1_コアCD, DisUnit, abj: true);
     		X0Y0_コア_コア1_ハイライトCP = new ColorP(X0Y0_コア_コア1_ハイライト, コア_コア1_ハイライトCD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     		尺度YB = 0.99;
     	}
 
@@ -1069,7 +1069,7 @@ namespace SlaveMatrix
     		X0Y0_コア_コア1_ハイライトCP.Update();
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		switch (配色指定)
     		{
@@ -1088,7 +1088,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		虫性_甲殻2CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
     		虫性_甲殻1_甲殻CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
@@ -1128,7 +1128,7 @@ namespace SlaveMatrix
     		コア_コア1_ハイライトCD = new ColorD(ref Col.Empty, ref 体配色.ハイライト);
     	}
 
-    	private void 配色T0(体配色 体配色)
+    	private void 配色T0(BodyColorSet 体配色)
     	{
     		虫性_甲殻2CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
     		虫性_甲殻1_甲殻CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
@@ -1168,7 +1168,7 @@ namespace SlaveMatrix
     		コア_コア1_ハイライトCD = new ColorD(ref Col.Empty, ref 体配色.ハイライト);
     	}
 
-    	private void 配色T1(体配色 体配色)
+    	private void 配色T1(BodyColorSet 体配色)
     	{
     		虫性_甲殻2CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
     		虫性_甲殻1_甲殻CD = new ColorD(ref Col.Black, ref 体配色.甲0O);

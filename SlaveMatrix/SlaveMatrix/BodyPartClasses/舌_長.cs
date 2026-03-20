@@ -418,7 +418,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -446,16 +446,16 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 舌_長(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 舌_長D e)
+    	public 舌_長(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 舌_長D e)
     	{
     		ThisType = GetType();
     		Dif dif = new Dif();
     		dif.Tag = "長";
     		dif.Add(new Pars(Sta.胴体["舌"][0][1]));
-    		本体 = new Difs();
-    		本体.Tag = dif.Tag;
-    		本体.Add(dif);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs();
+    		Body.Tag = dif.Tag;
+    		Body.Add(dif);
+    		Pars pars = Body[0][0];
     		X0Y0_舌1 = pars["舌1"].ToPar();
     		X0Y0_舌2 = pars["舌2"].ToPar();
     		X0Y0_舌3 = pars["舌3"].ToPar();
@@ -475,8 +475,8 @@ namespace SlaveMatrix
     		X0Y0_舌股右_舌4 = pars2["舌4"].ToPar();
     		X0Y0_舌股右_舌5 = pars2["舌5"].ToPar();
     		X0Y0_舌股右_舌6 = pars2["舌6"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -548,7 +548,7 @@ namespace SlaveMatrix
     		X0Y0_舌股右_舌4CP = new ColorP(X0Y0_舌股右_舌4, 舌股右_舌4CD, DisUnit, abj: true);
     		X0Y0_舌股右_舌5CP = new ColorP(X0Y0_舌股右_舌5, 舌股右_舌5CD, DisUnit, abj: true);
     		X0Y0_舌股右_舌6CP = new ColorP(X0Y0_舌股右_舌6, 舌股右_舌6CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     	}
 
     	public override void 色更新()
@@ -573,12 +573,12 @@ namespace SlaveMatrix
     		X0Y0_舌股右_舌6CP.Update(mm);
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		舌1CD = new ColorD(ref 体配色.粘膜線, ref 体配色.舌);
     		舌2CD = new ColorD(ref 体配色.粘膜線, ref 体配色.舌);

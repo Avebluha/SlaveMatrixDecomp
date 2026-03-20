@@ -272,7 +272,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -294,16 +294,16 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 触覚_甲(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 触覚_甲D e)
+    	public 触覚_甲(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 触覚_甲D e)
     	{
     		ThisType = GetType();
     		Dif dif = new Dif();
     		dif.Tag = "甲";
     		dif.Add(new Pars(Sta.肢左["触覚"][0][2]));
-    		本体 = new Difs();
-    		本体.Tag = dif.Tag;
-    		本体.Add(dif);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs();
+    		Body.Tag = dif.Tag;
+    		Body.Add(dif);
+    		Pars pars = Body[0][0];
     		X0Y0_節0 = pars["節0"].ToPar();
     		X0Y0_節1 = pars["節1"].ToPar();
     		X0Y0_節2 = pars["節2"].ToPar();
@@ -315,8 +315,8 @@ namespace SlaveMatrix
     		X0Y0_節8 = pars["節8"].ToPar();
     		X0Y0_節9 = pars["節9"].ToPar();
     		X0Y0_節10 = pars["節10"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -370,7 +370,7 @@ namespace SlaveMatrix
     		X0Y0_節8CP = new ColorP(X0Y0_節8, 節8CD, DisUnit, abj: true);
     		X0Y0_節9CP = new ColorP(X0Y0_節9, 節9CD, DisUnit, abj: true);
     		X0Y0_節10CP = new ColorP(X0Y0_節10, 節10CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     	}
 
     	public override void SetAngle0()
@@ -398,7 +398,7 @@ namespace SlaveMatrix
     		X0Y0_節9.AngleBase = num * (double)num2 * num3;
     		num3 -= num4;
     		X0Y0_節10.AngleBase = num * (double)num2 * num3;
-    		本体.JoinPAall();
+    		Body.JoinPAall();
     	}
 
     	public override IEnumerable<Par> Enum軸()
@@ -431,7 +431,7 @@ namespace SlaveMatrix
     		X0Y0_節10CP.Update();
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		switch (配色指定)
     		{
@@ -450,7 +450,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		節0CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
     		節1CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
@@ -465,12 +465,12 @@ namespace SlaveMatrix
     		節10CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
     	}
 
-    	private void 配色T0(体配色 体配色)
+    	private void 配色T0(BodyColorSet 体配色)
     	{
     		this.配色T(0, "節", ref 体配色.甲0O, ref 体配色.刺青O);
     	}
 
-    	private void 配色T1(体配色 体配色)
+    	private void 配色T1(BodyColorSet 体配色)
     	{
     		this.配色T(1, "節", ref 体配色.甲0O, ref 体配色.刺青O);
     	}

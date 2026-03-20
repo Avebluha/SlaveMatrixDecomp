@@ -65,7 +65,7 @@ namespace SlaveMatrix
     		set
     		{
     			欠損_ = value;
-    			本体.IndexX = (欠損_ ? 1 : 0);
+    			Body.IndexX = (欠損_ ? 1 : 0);
     		}
     	}
 
@@ -152,7 +152,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -165,34 +165,34 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 耳_尖(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 耳_尖D e)
+    	public 耳_尖(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 耳_尖D e)
     	{
     		ThisType = GetType();
-    		本体 = new Difs();
-    		本体.Tag = "尖";
-    		本体.Add(new Dif(Sta.肢左["耳"][2]));
-    		本体.Add(new Dif(Sta.肢左["耳"][3]));
-    		Pars pars = 本体[0][0];
+    		Body = new Difs();
+    		Body.Tag = "尖";
+    		Body.Add(new Dif(Sta.肢左["耳"][2]));
+    		Body.Add(new Dif(Sta.肢左["耳"][3]));
+    		Pars pars = Body[0][0];
     		X0Y0_耳 = pars["耳"].ToPar();
     		X0Y0_耳線 = pars["耳線"].ToPar();
-    		pars = 本体[0][1];
+    		pars = Body[0][1];
     		X0Y1_耳 = pars["耳"].ToPar();
     		X0Y1_耳線 = pars["耳線"].ToPar();
-    		pars = 本体[0][2];
+    		pars = Body[0][2];
     		X0Y2_耳 = pars["耳"].ToPar();
     		X0Y2_耳線 = pars["耳線"].ToPar();
-    		pars = 本体[1][0];
+    		pars = Body[1][0];
     		X1Y0_耳 = pars["耳"].ToPar();
     		X1Y0_耳線 = pars["耳線"].ToPar();
-    		pars = 本体[1][1];
+    		pars = Body[1][1];
     		X1Y1_耳 = pars["耳"].ToPar();
     		X1Y1_耳線 = pars["耳線"].ToPar();
-    		pars = 本体[1][2];
+    		pars = Body[1][2];
     		X1Y2_耳 = pars["耳"].ToPar();
     		X1Y2_耳線 = pars["耳線"].ToPar();
     		Xasix = false;
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -238,7 +238,7 @@ namespace SlaveMatrix
     		X1Y1_耳線CP = new ColorP(X1Y1_耳線, 耳線CD, DisUnit, abj: true);
     		X1Y2_耳CP = new ColorP(X1Y2_耳, 耳CD, DisUnit, abj: true);
     		X1Y2_耳線CP = new ColorP(X1Y2_耳線, 耳線CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     	}
 
     	public override void SetAngle0()
@@ -250,14 +250,14 @@ namespace SlaveMatrix
     		X1Y0_耳.AngleBase = num * -325.0;
     		X1Y1_耳.AngleBase = num * -337.0;
     		X1Y2_耳.AngleBase = num * -350.0;
-    		本体.JoinPAall();
+    		Body.JoinPAall();
     	}
 
     	public override void 色更新()
     	{
-    		if (本体.IndexX == 0)
+    		if (Body.IndexX == 0)
     		{
-    			switch (本体.IndexY)
+    			switch (Body.IndexY)
     			{
     			case 0:
     				X0Y0_耳CP.Update();
@@ -275,7 +275,7 @@ namespace SlaveMatrix
     		}
     		else
     		{
-    			switch (本体.IndexY)
+    			switch (Body.IndexY)
     			{
     			case 0:
     				X1Y0_耳CP.Update();
@@ -293,12 +293,12 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		耳CD = new ColorD(ref Col.Black, ref 体配色.人肌O);
     		耳線CD = new ColorD(ref Col.Black, ref Color2.Empty);

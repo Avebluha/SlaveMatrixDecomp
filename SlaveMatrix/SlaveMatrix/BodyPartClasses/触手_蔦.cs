@@ -3068,7 +3068,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -3221,75 +3221,75 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public JointS 節1_接続点 => new JointS(本体, X0Y0_節1_節, 1);
+    	public JointS 節1_接続点 => new JointS(Body, X0Y0_節1_節, 1);
 
-    	public JointS 節2_接続点 => new JointS(本体, X0Y0_節2_節, 1);
+    	public JointS 節2_接続点 => new JointS(Body, X0Y0_節2_節, 1);
 
-    	public JointS 節3_接続点 => new JointS(本体, X0Y0_節3_節, 1);
+    	public JointS 節3_接続点 => new JointS(Body, X0Y0_節3_節, 1);
 
-    	public JointS 節4_接続点 => new JointS(本体, X0Y0_節4_節, 1);
+    	public JointS 節4_接続点 => new JointS(Body, X0Y0_節4_節, 1);
 
-    	public JointS 節5_接続点 => new JointS(本体, X0Y0_節5_節, 1);
+    	public JointS 節5_接続点 => new JointS(Body, X0Y0_節5_節, 1);
 
-    	public JointS 節6_接続点 => new JointS(本体, X0Y0_節6_節, 1);
+    	public JointS 節6_接続点 => new JointS(Body, X0Y0_節6_節, 1);
 
-    	public JointS 節7_接続点 => new JointS(本体, X0Y0_節7_節, 1);
+    	public JointS 節7_接続点 => new JointS(Body, X0Y0_節7_節, 1);
 
-    	public JointS 節8_接続点 => new JointS(本体, X0Y0_節8_節, 1);
+    	public JointS 節8_接続点 => new JointS(Body, X0Y0_節8_節, 1);
 
-    	public JointS 節9_接続点 => new JointS(本体, X0Y0_節9_節, 1);
+    	public JointS 節9_接続点 => new JointS(Body, X0Y0_節9_節, 1);
 
-    	public JointS 節10_接続点 => new JointS(本体, X0Y0_節10_節, 1);
+    	public JointS 節10_接続点 => new JointS(Body, X0Y0_節10_節, 1);
 
-    	public JointS 節11_接続点 => new JointS(本体, X0Y0_節11_節, 1);
+    	public JointS 節11_接続点 => new JointS(Body, X0Y0_節11_節, 1);
 
-    	public JointS 節12_接続点 => new JointS(本体, X0Y0_節12_節, 1);
+    	public JointS 節12_接続点 => new JointS(Body, X0Y0_節12_節, 1);
 
-    	public JointS 節13_接続点 => new JointS(本体, X0Y0_節13_節, 1);
+    	public JointS 節13_接続点 => new JointS(Body, X0Y0_節13_節, 1);
 
-    	public JointS 節14_接続点 => new JointS(本体, X0Y0_節14_節, 1);
+    	public JointS 節14_接続点 => new JointS(Body, X0Y0_節14_節, 1);
 
-    	public JointS 節15_接続点 => new JointS(本体, X0Y0_節15_節, 1);
+    	public JointS 節15_接続点 => new JointS(Body, X0Y0_節15_節, 1);
 
-    	public JointS 節16_接続点 => new JointS(本体, X0Y0_節16_節, 1);
+    	public JointS 節16_接続点 => new JointS(Body, X0Y0_節16_節, 1);
 
-    	public JointS 節17_接続点 => new JointS(本体, X0Y0_節17_節, 1);
+    	public JointS 節17_接続点 => new JointS(Body, X0Y0_節17_節, 1);
 
-    	public JointS 節18_接続点 => new JointS(本体, X0Y0_節18_節, 1);
+    	public JointS 節18_接続点 => new JointS(Body, X0Y0_節18_節, 1);
 
-    	public JointS 節19_接続点 => new JointS(本体, X0Y0_節19_節, 1);
+    	public JointS 節19_接続点 => new JointS(Body, X0Y0_節19_節, 1);
 
-    	public JointS 節20_接続点 => new JointS(本体, X0Y0_節20_節, 1);
+    	public JointS 節20_接続点 => new JointS(Body, X0Y0_節20_節, 1);
 
-    	public JointS 節21_接続点 => new JointS(本体, X0Y0_節21_節, 1);
+    	public JointS 節21_接続点 => new JointS(Body, X0Y0_節21_節, 1);
 
-    	public JointS 節22_接続点 => new JointS(本体, X0Y0_節22_節, 1);
+    	public JointS 節22_接続点 => new JointS(Body, X0Y0_節22_節, 1);
 
-    	public JointS 節23_接続点 => new JointS(本体, X0Y0_節23_節, 1);
+    	public JointS 節23_接続点 => new JointS(Body, X0Y0_節23_節, 1);
 
-    	public JointS 節24_接続点 => new JointS(本体, X0Y0_節24_節, 1);
+    	public JointS 節24_接続点 => new JointS(Body, X0Y0_節24_節, 1);
 
-    	public JointS 先端_接続点 => new JointS(本体, X0Y0_節24_節, 0);
+    	public JointS 先端_接続点 => new JointS(Body, X0Y0_節24_節, 0);
 
-    	public JointS 鎖1_接続点 => new JointS(本体, X0Y0_輪1_金具左, 0);
+    	public JointS 鎖1_接続点 => new JointS(Body, X0Y0_輪1_金具左, 0);
 
-    	public JointS 鎖2_接続点 => new JointS(本体, X0Y0_輪1_金具右, 0);
+    	public JointS 鎖2_接続点 => new JointS(Body, X0Y0_輪1_金具右, 0);
 
-    	public JointS 鎖3_接続点 => new JointS(本体, X0Y0_輪2_金具左, 0);
+    	public JointS 鎖3_接続点 => new JointS(Body, X0Y0_輪2_金具左, 0);
 
-    	public JointS 鎖4_接続点 => new JointS(本体, X0Y0_輪2_金具右, 0);
+    	public JointS 鎖4_接続点 => new JointS(Body, X0Y0_輪2_金具右, 0);
 
-    	public 触手_蔦(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 触手_蔦D e)
+    	public 触手_蔦(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 触手_蔦D e)
     	{
     		触手_蔦 触手_蔦2 = this;
     		ThisType = GetType();
     		Dif dif = new Dif();
     		dif.Tag = "蔦";
     		dif.Add(new Pars(Sta.肢左["触手"][0][3]));
-    		本体 = new Difs();
-    		本体.Tag = dif.Tag;
-    		本体.Add(dif);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs();
+    		Body.Tag = dif.Tag;
+    		Body.Add(dif);
+    		Pars pars = Body[0][0];
     		Pars pars2 = pars["節1"].ToPars();
     		X0Y0_節1_節 = pars2["節"].ToPar();
     		X0Y0_節1_棘1 = pars2["棘1"].ToPar();
@@ -3463,8 +3463,8 @@ namespace SlaveMatrix
     		X0Y0_先端_輪_金具左 = pars3["金具左"].ToPar();
     		X0Y0_先端_輪_金具右 = pars3["金具右"].ToPar();
     		Xasix = false;
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -4066,7 +4066,7 @@ namespace SlaveMatrix
     		X0Y0_先端_輪_金具3CP = new ColorP(X0Y0_先端_輪_金具3, 先端_輪_金具3CD, DisUnit, abj: true);
     		X0Y0_先端_輪_金具左CP = new ColorP(X0Y0_先端_輪_金具左, 先端_輪_金具左CD, DisUnit, abj: true);
     		X0Y0_先端_輪_金具右CP = new ColorP(X0Y0_先端_輪_金具右, 先端_輪_金具右CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     		鎖1 = new 拘束鎖(DisUnit, 右: false, 配色指定, 体配色, Xasix);
     		鎖2 = new 拘束鎖(DisUnit, 右: true, 配色指定, 体配色, Xasix);
     		鎖3 = new 拘束鎖(DisUnit, 右: false, 配色指定, 体配色, Xasix);
@@ -4274,7 +4274,7 @@ namespace SlaveMatrix
     		X0Y0_節24_節.AngleBase = maxAngle.GetRanAngle();
     		X0Y0_先端_上顎_顎.AngleBase = num * (double)RNG.XS.NextM(15);
     		X0Y0_先端_下顎_顎.AngleBase = num * (0.0 - X0Y0_先端_上顎_顎.AngleBase);
-    		本体.JoinPAall();
+    		Body.JoinPAall();
     	}
 
     	public void Set角度(触手_蔦 蔦)
@@ -4306,7 +4306,7 @@ namespace SlaveMatrix
     		X0Y0_節24_節.AngleBase = num * 蔦.X0Y0_節24_節.AngleBase;
     		X0Y0_先端_上顎_顎.AngleBase = num * 蔦.X0Y0_先端_上顎_顎.AngleBase;
     		X0Y0_先端_下顎_顎.AngleBase = num * 蔦.X0Y0_先端_下顎_顎.AngleBase;
-    		本体.JoinPAall();
+    		Body.JoinPAall();
     	}
 
     	public override bool Is革(Par p)
@@ -4501,7 +4501,7 @@ namespace SlaveMatrix
     		鎖4.色更新();
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		switch (配色指定)
     		{
@@ -4520,7 +4520,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		節1_節CD = new ColorD(ref Col.Black, ref 体配色.植0O);
     		節1_棘1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
@@ -4666,7 +4666,7 @@ namespace SlaveMatrix
     		輪2_金具右CD = new ColorD();
     	}
 
-    	private void 配色T0(体配色 体配色)
+    	private void 配色T0(BodyColorSet 体配色)
     	{
     		節1_節CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
     		節1_棘1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
@@ -4812,7 +4812,7 @@ namespace SlaveMatrix
     		輪2_金具右CD = new ColorD();
     	}
 
-    	private void 配色T1(体配色 体配色)
+    	private void 配色T1(BodyColorSet 体配色)
     	{
     		節1_節CD = new ColorD(ref Col.Black, ref 体配色.植0O);
     		節1_棘1CD = new ColorD(ref Col.Black, ref 体配色.植1O);

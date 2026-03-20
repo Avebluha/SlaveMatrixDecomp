@@ -1479,7 +1479,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -1511,14 +1511,14 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 潮吹_大_人(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 潮吹_大_人D e)
+    	public 潮吹_大_人(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 潮吹_大_人D e)
     	{
     		ThisType = GetType();
     		Dif dif = new Dif(Sta.性器付["潮吹"][1]);
-    		本体 = new Difs();
-    		本体.Tag = dif.Tag;
-    		本体.Add(dif);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs();
+    		Body.Tag = dif.Tag;
+    		Body.Add(dif);
+    		Pars pars = Body[0][0];
     		X0Y0_潮吹基 = pars["潮吹基"].ToPar();
     		X0Y0_雫1 = pars["雫1"].ToPar();
     		X0Y0_雫2 = pars["雫2"].ToPar();
@@ -1540,7 +1540,7 @@ namespace SlaveMatrix
     		X0Y0_雫18 = pars["雫18"].ToPar();
     		X0Y0_雫19 = pars["雫19"].ToPar();
     		X0Y0_雫20 = pars["雫20"].ToPar();
-    		pars = 本体[0][1];
+    		pars = Body[0][1];
     		X0Y1_潮吹基 = pars["潮吹基"].ToPar();
     		X0Y1_雫1 = pars["雫1"].ToPar();
     		X0Y1_雫2 = pars["雫2"].ToPar();
@@ -1562,7 +1562,7 @@ namespace SlaveMatrix
     		X0Y1_雫18 = pars["雫18"].ToPar();
     		X0Y1_雫19 = pars["雫19"].ToPar();
     		X0Y1_雫20 = pars["雫20"].ToPar();
-    		pars = 本体[0][2];
+    		pars = Body[0][2];
     		X0Y2_潮吹基 = pars["潮吹基"].ToPar();
     		X0Y2_雫1 = pars["雫1"].ToPar();
     		X0Y2_雫2 = pars["雫2"].ToPar();
@@ -1584,7 +1584,7 @@ namespace SlaveMatrix
     		X0Y2_雫18 = pars["雫18"].ToPar();
     		X0Y2_雫19 = pars["雫19"].ToPar();
     		X0Y2_雫20 = pars["雫20"].ToPar();
-    		pars = 本体[0][3];
+    		pars = Body[0][3];
     		X0Y3_潮吹基 = pars["潮吹基"].ToPar();
     		X0Y3_雫1 = pars["雫1"].ToPar();
     		X0Y3_雫2 = pars["雫2"].ToPar();
@@ -1606,7 +1606,7 @@ namespace SlaveMatrix
     		X0Y3_雫18 = pars["雫18"].ToPar();
     		X0Y3_雫19 = pars["雫19"].ToPar();
     		X0Y3_雫20 = pars["雫20"].ToPar();
-    		pars = 本体[0][4];
+    		pars = Body[0][4];
     		X0Y4_潮吹基 = pars["潮吹基"].ToPar();
     		X0Y4_雫1 = pars["雫1"].ToPar();
     		X0Y4_雫2 = pars["雫2"].ToPar();
@@ -1628,7 +1628,7 @@ namespace SlaveMatrix
     		X0Y4_雫18 = pars["雫18"].ToPar();
     		X0Y4_雫19 = pars["雫19"].ToPar();
     		X0Y4_雫20 = pars["雫20"].ToPar();
-    		pars = 本体[0][5];
+    		pars = Body[0][5];
     		X0Y5_潮吹基 = pars["潮吹基"].ToPar();
     		X0Y5_雫1 = pars["雫1"].ToPar();
     		X0Y5_雫2 = pars["雫2"].ToPar();
@@ -1650,7 +1650,7 @@ namespace SlaveMatrix
     		X0Y5_雫18 = pars["雫18"].ToPar();
     		X0Y5_雫19 = pars["雫19"].ToPar();
     		X0Y5_雫20 = pars["雫20"].ToPar();
-    		pars = 本体[0][6];
+    		pars = Body[0][6];
     		X0Y6_潮吹基 = pars["潮吹基"].ToPar();
     		X0Y6_雫1 = pars["雫1"].ToPar();
     		X0Y6_雫2 = pars["雫2"].ToPar();
@@ -1672,7 +1672,7 @@ namespace SlaveMatrix
     		X0Y6_雫18 = pars["雫18"].ToPar();
     		X0Y6_雫19 = pars["雫19"].ToPar();
     		X0Y6_雫20 = pars["雫20"].ToPar();
-    		pars = 本体[0][7];
+    		pars = Body[0][7];
     		X0Y7_潮吹基 = pars["潮吹基"].ToPar();
     		X0Y7_雫1 = pars["雫1"].ToPar();
     		X0Y7_雫2 = pars["雫2"].ToPar();
@@ -1694,7 +1694,7 @@ namespace SlaveMatrix
     		X0Y7_雫18 = pars["雫18"].ToPar();
     		X0Y7_雫19 = pars["雫19"].ToPar();
     		X0Y7_雫20 = pars["雫20"].ToPar();
-    		pars = 本体[0][8];
+    		pars = Body[0][8];
     		X0Y8_潮吹基 = pars["潮吹基"].ToPar();
     		X0Y8_雫1 = pars["雫1"].ToPar();
     		X0Y8_雫2 = pars["雫2"].ToPar();
@@ -1716,8 +1716,8 @@ namespace SlaveMatrix
     		X0Y8_雫18 = pars["雫18"].ToPar();
     		X0Y8_雫19 = pars["雫19"].ToPar();
     		X0Y8_雫20 = pars["雫20"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -1959,12 +1959,12 @@ namespace SlaveMatrix
     		X0Y8_雫18CP = new ColorP(X0Y8_雫18, 雫18CD, DisUnit, abj: true);
     		X0Y8_雫19CP = new ColorP(X0Y8_雫19, 雫19CD, DisUnit, abj: true);
     		X0Y8_雫20CP = new ColorP(X0Y8_雫20, 雫20CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     	}
 
     	public override void 色更新()
     	{
-    		switch (本体.IndexY)
+    		switch (Body.IndexY)
     		{
     		case 0:
     			X0Y0_潮吹基CP.Update();
@@ -2176,12 +2176,12 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		潮吹基CD = new ColorD(ref Col.Empty, ref Color2.Empty);
     		雫1CD = new ColorD(ref Col.Empty, ref 体配色.体液);

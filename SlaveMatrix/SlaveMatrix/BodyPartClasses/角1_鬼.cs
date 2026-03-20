@@ -73,7 +73,7 @@ namespace SlaveMatrix
     		set
     		{
     			欠損_ = value;
-    			本体.IndexY = (欠損_ ? 1 : 0);
+    			Body.IndexY = (欠損_ ? 1 : 0);
     		}
     	}
 
@@ -230,7 +230,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -249,28 +249,28 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 角1_鬼(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 角1_鬼D e)
+    	public 角1_鬼(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 角1_鬼D e)
     	{
     		ThisType = GetType();
     		Dif dif = new Dif(Sta.肢中["角"][1]);
-    		本体 = new Difs();
-    		本体.Tag = dif.Tag;
-    		本体.Add(dif);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs();
+    		Body.Tag = dif.Tag;
+    		Body.Add(dif);
+    		Pars pars = Body[0][0];
     		X0Y0_根 = pars["根"].ToPar();
     		X0Y0_線1 = pars["線1"].ToPar();
     		X0Y0_線2 = pars["線2"].ToPar();
     		X0Y0_線3 = pars["線3"].ToPar();
     		X0Y0_線4 = pars["線4"].ToPar();
     		X0Y0_線5 = pars["線5"].ToPar();
-    		pars = 本体[0][1];
+    		pars = Body[0][1];
     		X0Y1_根 = pars["根"].ToPar();
     		X0Y1_折線1 = pars["折線1"].ToPar();
     		X0Y1_折線2 = pars["折線2"].ToPar();
     		X0Y1_線1 = pars["線1"].ToPar();
     		X0Y1_線2 = pars["線2"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -321,12 +321,12 @@ namespace SlaveMatrix
     		X0Y1_折線2CP = new ColorP(X0Y1_折線2, 折線2CD, DisUnit, abj: true);
     		X0Y1_線1CP = new ColorP(X0Y1_線1, 線1CD, DisUnit, abj: false);
     		X0Y1_線2CP = new ColorP(X0Y1_線2, 線2CD, DisUnit, abj: false);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     	}
 
     	public override void 色更新()
     	{
-    		if (本体.IndexY == 0)
+    		if (Body.IndexY == 0)
     		{
     			X0Y0_根CP.Update();
     			X0Y0_線1CP.Update();
@@ -345,7 +345,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		switch (配色指定)
     		{
@@ -364,7 +364,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		根CD = new ColorD(ref Col.Black, ref 体配色.角0O);
     		線1CD = new ColorD(ref 体配色.角1O.Col2, ref Color2.Empty);
@@ -376,7 +376,7 @@ namespace SlaveMatrix
     		折線2CD = new ColorD(ref Col.Black, ref Color2.Empty);
     	}
 
-    	private void 配色T0(体配色 体配色)
+    	private void 配色T0(BodyColorSet 体配色)
     	{
     		根CD = new ColorD(ref Col.Black, ref 体配色.角0O);
     		線1CD = new ColorD(ref 体配色.刺青O.Col2, ref Color2.Empty);
@@ -388,7 +388,7 @@ namespace SlaveMatrix
     		折線2CD = new ColorD(ref Col.Black, ref Color2.Empty);
     	}
 
-    	private void 配色T1(体配色 体配色)
+    	private void 配色T1(BodyColorSet 体配色)
     	{
     		根CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
     		線1CD = new ColorD(ref 体配色.角1O.Col2, ref Color2.Empty);

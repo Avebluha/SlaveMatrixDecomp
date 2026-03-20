@@ -595,7 +595,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -630,24 +630,24 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public JointS 鎖1_接続点 => new JointS(本体, X0Y0_輪1_金具左, 0);
+    	public JointS 鎖1_接続点 => new JointS(Body, X0Y0_輪1_金具左, 0);
 
-    	public JointS 鎖2_接続点 => new JointS(本体, X0Y0_輪1_金具右, 0);
+    	public JointS 鎖2_接続点 => new JointS(Body, X0Y0_輪1_金具右, 0);
 
-    	public JointS 鎖3_接続点 => new JointS(本体, X0Y0_輪2_金具左, 0);
+    	public JointS 鎖3_接続点 => new JointS(Body, X0Y0_輪2_金具左, 0);
 
-    	public JointS 鎖4_接続点 => new JointS(本体, X0Y0_輪2_金具右, 0);
+    	public JointS 鎖4_接続点 => new JointS(Body, X0Y0_輪2_金具右, 0);
 
-    	public 尾_虫(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 尾_虫D e)
+    	public 尾_虫(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 尾_虫D e)
     	{
     		ThisType = GetType();
     		Dif dif = new Dif();
     		dif.Tag = "虫尾";
     		dif.Add(new Pars(Sta.尻尾["尾"][0][10]));
-    		本体 = new Difs();
-    		本体.Tag = dif.Tag;
-    		本体.Add(dif);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs();
+    		Body.Tag = dif.Tag;
+    		Body.Add(dif);
+    		Pars pars = Body[0][0];
     		X0Y0_尾10 = pars["尾10"].ToPar();
     		X0Y0_針 = pars["針"].ToPar();
     		Pars pars2 = pars["輪2"].ToPars();
@@ -674,8 +674,8 @@ namespace SlaveMatrix
     		X0Y0_尾2 = pars["尾2"].ToPar();
     		X0Y0_尾1 = pars["尾1"].ToPar();
     		X0Y0_尾0 = pars["尾0"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -757,7 +757,7 @@ namespace SlaveMatrix
     		X0Y0_尾2CP = new ColorP(X0Y0_尾2, 尾2CD, DisUnit, abj: true);
     		X0Y0_尾1CP = new ColorP(X0Y0_尾1, 尾1CD, DisUnit, abj: true);
     		X0Y0_尾0CP = new ColorP(X0Y0_尾0, 尾0CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     		鎖1 = new 拘束鎖(DisUnit, 右, 配色指定, 体配色, Xasix);
     		鎖2 = new 拘束鎖(DisUnit, !右, 配色指定, 体配色, Xasix);
     		鎖3 = new 拘束鎖(DisUnit, 右, 配色指定, 体配色, Xasix);
@@ -830,7 +830,7 @@ namespace SlaveMatrix
     		X0Y0_尾2.AngleBase = maxAngle.GetRanAngle();
     		X0Y0_尾1.AngleBase = maxAngle.GetRanAngle();
     		X0Y0_尾0.AngleBase = maxAngle.GetRanAngle();
-    		本体.JoinPAall();
+    		Body.JoinPAall();
     	}
 
     	public override bool Is革(Par p)
@@ -893,7 +893,7 @@ namespace SlaveMatrix
     		鎖4.色更新();
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		switch (配色指定)
     		{
@@ -912,7 +912,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		尾10CD = new ColorD(ref Col.Black, ref 体配色.甲0R);
     		針CD = new ColorD(ref Col.Black, ref 体配色.体0O);
@@ -940,7 +940,7 @@ namespace SlaveMatrix
     		輪2_金具右CD = new ColorD();
     	}
 
-    	private void 配色T0(体配色 体配色)
+    	private void 配色T0(BodyColorSet 体配色)
     	{
     		this.配色T(0, "尾", ref 体配色.甲0R, ref 体配色.刺青R);
     		針CD = new ColorD(ref Col.Black, ref 体配色.体0O);
@@ -958,7 +958,7 @@ namespace SlaveMatrix
     		輪2_金具右CD = new ColorD();
     	}
 
-    	private void 配色T1(体配色 体配色)
+    	private void 配色T1(BodyColorSet 体配色)
     	{
     		this.配色T(1, "尾", ref 体配色.甲0R, ref 体配色.刺青R);
     		針CD = new ColorD(ref Col.Black, ref 体配色.体0O);

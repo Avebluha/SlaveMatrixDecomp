@@ -2707,7 +2707,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -2823,14 +2823,14 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public JointS 脚_接続点 => new JointS(本体, X0Y0_腿, 0);
+    	public JointS 脚_接続点 => new JointS(Body, X0Y0_腿, 0);
 
-    	public 腿_人(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 腿_人D e)
+    	public 腿_人(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 腿_人D e)
     	{
     		腿_人 腿_人2 = this;
     		ThisType = GetType();
-    		本体 = new Difs(Sta.脚左["腿"]);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs(Sta.脚左["腿"]);
+    		Pars pars = Body[0][0];
     		X0Y0_腿 = pars["腿"].ToPar();
     		X0Y0_筋 = pars["筋"].ToPar();
     		Pars pars2 = pars["獣性"].ToPars();
@@ -2909,7 +2909,7 @@ namespace SlaveMatrix
     		X0Y0_ニーハイ_ニーハイ1 = pars2["ニーハイ1"].ToPar();
     		X0Y0_ニーハイ_ニーハイ2 = pars2["ニーハイ2"].ToPar();
     		X0Y0_ニーハイ_ハイライト = pars2["ハイライト"].ToPar();
-    		pars = 本体[0][1];
+    		pars = Body[0][1];
     		X0Y1_腿 = pars["腿"].ToPar();
     		X0Y1_筋 = pars["筋"].ToPar();
     		pars2 = pars["獣性"].ToPars();
@@ -2988,7 +2988,7 @@ namespace SlaveMatrix
     		X0Y1_ニーハイ_ニーハイ1 = pars2["ニーハイ1"].ToPar();
     		X0Y1_ニーハイ_ニーハイ2 = pars2["ニーハイ2"].ToPar();
     		X0Y1_ニーハイ_ハイライト = pars2["ハイライト"].ToPar();
-    		pars = 本体[0][2];
+    		pars = Body[0][2];
     		X0Y2_腿 = pars["腿"].ToPar();
     		X0Y2_筋 = pars["筋"].ToPar();
     		pars2 = pars["獣性"].ToPars();
@@ -3050,7 +3050,7 @@ namespace SlaveMatrix
     		X0Y2_ニーハイ_ニーハイ1 = pars2["ニーハイ1"].ToPar();
     		X0Y2_ニーハイ_ニーハイ2 = pars2["ニーハイ2"].ToPar();
     		X0Y2_ニーハイ_ハイライト = pars2["ハイライト"].ToPar();
-    		pars = 本体[0][3];
+    		pars = Body[0][3];
     		X0Y3_腿 = pars["腿"].ToPar();
     		X0Y3_筋 = pars["筋"].ToPar();
     		pars2 = pars["獣性"].ToPars();
@@ -3122,7 +3122,7 @@ namespace SlaveMatrix
     		X0Y3_ニーハイ_ニーハイ1 = pars2["ニーハイ1"].ToPar();
     		X0Y3_ニーハイ_ニーハイ2 = pars2["ニーハイ2"].ToPar();
     		X0Y3_ニーハイ_ハイライト = pars2["ハイライト"].ToPar();
-    		pars = 本体[0][4];
+    		pars = Body[0][4];
     		X0Y4_腿 = pars["腿"].ToPar();
     		X0Y4_筋 = pars["筋"].ToPar();
     		pars2 = pars["獣性"].ToPars();
@@ -3188,8 +3188,8 @@ namespace SlaveMatrix
     		X0Y4_ニーハイ_ニーハイ1 = pars2["ニーハイ1"].ToPar();
     		X0Y4_ニーハイ_ニーハイ2 = pars2["ニーハイ2"].ToPar();
     		X0Y4_ニーハイ_ハイライト = pars2["ハイライト"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -3573,12 +3573,12 @@ namespace SlaveMatrix
     		傷I4濃度 = e.傷I4濃度;
     		傷X濃度 = e.傷X濃度;
     		ハイライト濃度 = e.ハイライト濃度;
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     	}
 
     	public override void 描画0(RenderArea Are)
     	{
-    		switch (本体.IndexY)
+    		switch (Body.IndexY)
     		{
     		case 0:
     			Are.Draw(X0Y0_腿);
@@ -3873,7 +3873,7 @@ namespace SlaveMatrix
     		X0Y2_腿.AngleBase = num * -271.0;
     		X0Y3_腿.AngleBase = num * -222.0;
     		X0Y4_腿.AngleBase = num * -182.0;
-    		本体.JoinPAall();
+    		Body.JoinPAall();
     	}
 
     	public void 虫性()
@@ -3926,7 +3926,7 @@ namespace SlaveMatrix
 
     	public override void 色更新()
     	{
-    		switch (本体.IndexY)
+    		switch (Body.IndexY)
     		{
     		case 0:
     			X0Y0_腿CP.Update();
@@ -4203,7 +4203,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		switch (配色指定)
     		{
@@ -4231,7 +4231,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		腿0CD = new ColorD(ref Col.Black, ref 体配色.人肌R);
     		腿1CD = new ColorD(ref Col.Black, ref 体配色.人肌R);
@@ -4314,7 +4314,7 @@ namespace SlaveMatrix
     		ニーハイ_ハイライトCD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
     	}
 
-    	private void 配色T1(体配色 体配色)
+    	private void 配色T1(BodyColorSet 体配色)
     	{
     		腿0CD = new ColorD(ref Col.Black, ref 体配色.人肌R);
     		腿1CD = new ColorD(ref Col.Black, ref 体配色.人肌R);
@@ -4397,7 +4397,7 @@ namespace SlaveMatrix
     		ニーハイ_ハイライトCD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
     	}
 
-    	private void 配色T0(体配色 体配色)
+    	private void 配色T0(BodyColorSet 体配色)
     	{
     		腿0CD = new ColorD(ref Col.Black, ref 体配色.人肌R);
     		腿1CD = new ColorD(ref Col.Black, ref 体配色.人肌R);
@@ -4480,7 +4480,7 @@ namespace SlaveMatrix
     		ニーハイ_ハイライトCD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
     	}
 
-    	private void 配色C0(体配色 体配色)
+    	private void 配色C0(BodyColorSet 体配色)
     	{
     		腿0CD = new ColorD(ref Col.Black, ref 体配色.甲0R);
     		腿1CD = new ColorD(ref Col.Black, ref 体配色.甲0R);
@@ -4563,7 +4563,7 @@ namespace SlaveMatrix
     		ニーハイ_ハイライトCD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
     	}
 
-    	private void 配色CT1(体配色 体配色)
+    	private void 配色CT1(BodyColorSet 体配色)
     	{
     		腿0CD = new ColorD(ref Col.Black, ref 体配色.甲0R);
     		腿1CD = new ColorD(ref Col.Black, ref 体配色.甲0R);
@@ -4646,7 +4646,7 @@ namespace SlaveMatrix
     		ニーハイ_ハイライトCD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
     	}
 
-    	private void 配色CT0(体配色 体配色)
+    	private void 配色CT0(BodyColorSet 体配色)
     	{
     		腿0CD = new ColorD(ref Col.Black, ref 体配色.甲0R);
     		腿1CD = new ColorD(ref Col.Black, ref 体配色.甲0R);

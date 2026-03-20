@@ -1311,7 +1311,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -1399,16 +1399,16 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 鳳凰(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 鳳凰D e)
+    	public 鳳凰(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 鳳凰D e)
     	{
     		ThisType = GetType();
     		Dif dif = new Dif();
     		dif.Tag = "鳳凰";
     		dif.Add(new Pars(Sta.肢中["尾"][2][0]));
-    		本体 = new Difs();
-    		本体.Tag = dif.Tag;
-    		本体.Add(dif);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs();
+    		Body.Tag = dif.Tag;
+    		Body.Add(dif);
+    		Pars pars = Body[0][0];
     		Pars pars2 = pars["羽"].ToPars();
     		X0Y0_羽_羽 = pars2["羽"].ToPar();
     		X0Y0_羽_紋1 = pars2["紋1"].ToPar();
@@ -1493,8 +1493,8 @@ namespace SlaveMatrix
     		X0Y0_羽21_羽 = pars2["羽"].ToPar();
     		X0Y0_羽21_紋1 = pars2["紋1"].ToPar();
     		X0Y0_羽21_紋2 = pars2["紋2"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -1652,7 +1652,7 @@ namespace SlaveMatrix
     		X0Y0_羽21_羽CP = new ColorP(X0Y0_羽21_羽, 羽21_羽CD, DisUnit, abj: true);
     		X0Y0_羽21_紋1CP = new ColorP(X0Y0_羽21_紋1, 羽21_紋1CD, DisUnit, abj: true);
     		X0Y0_羽21_紋2CP = new ColorP(X0Y0_羽21_紋2, 羽21_紋2CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     	}
 
     	public override void SetAngle0()
@@ -1680,7 +1680,7 @@ namespace SlaveMatrix
     		X0Y0_羽19_羽.AngleBase = maxAngle.GetRanAngle();
     		X0Y0_羽20_羽.AngleBase = maxAngle.GetRanAngle();
     		X0Y0_羽21_羽.AngleBase = maxAngle.GetRanAngle();
-    		本体.JoinPAall();
+    		Body.JoinPAall();
     	}
 
     	public override void 色更新()
@@ -1750,7 +1750,7 @@ namespace SlaveMatrix
     		X0Y0_羽21_紋2CP.Update();
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		switch (配色指定)
     		{
@@ -1769,7 +1769,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		羽_羽CD = new ColorD(ref Col.Black, ref 体配色.羽0O);
     		羽_紋1CD = new ColorD(ref Col.Empty, ref 体配色.柄O);
@@ -1836,7 +1836,7 @@ namespace SlaveMatrix
     		羽21_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
     	}
 
-    	private void 配色T0(体配色 体配色)
+    	private void 配色T0(BodyColorSet 体配色)
     	{
     		羽_羽CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
     		羽_紋1CD = new ColorD(ref Col.Empty, ref 体配色.柄O);
@@ -1903,7 +1903,7 @@ namespace SlaveMatrix
     		羽21_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
     	}
 
-    	private void 配色T1(体配色 体配色)
+    	private void 配色T1(BodyColorSet 体配色)
     	{
     		羽_羽CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
     		羽_紋1CD = new ColorD(ref Col.Empty, ref 体配色.柄O);

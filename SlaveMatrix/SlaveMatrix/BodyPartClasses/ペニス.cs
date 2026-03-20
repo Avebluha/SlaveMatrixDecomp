@@ -402,7 +402,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -430,71 +430,71 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public JointS 尿道_接続点 => new JointS(本体, X0Y0_陰茎, 3);
+    	public JointS 尿道_接続点 => new JointS(Body, X0Y0_陰茎, 3);
 
     	public ペニス(double DisUnit, 配色指定 配色指定, 主人公配色 体配色, ModeEventDispatcher Med, ペニスD e)
     	{
     		ペニス ペニス2 = this;
     		ThisType = GetType();
-    		本体 = new Difs(Sta.カーソル["ペニス"]);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs(Sta.カーソル["ペニス"]);
+    		Pars pars = Body[0][0];
     		X0Y0_陰嚢 = pars["陰嚢"].ToPar();
     		X0Y0_陰茎 = pars["陰茎"].ToPar();
     		X0Y0_血管下 = pars["血管下"].ToPar();
     		X0Y0_血管上 = pars["血管上"].ToPar();
     		X0Y0_亀頭 = pars["亀頭"].ToPar();
-    		pars = 本体[0][1];
+    		pars = Body[0][1];
     		X0Y1_陰嚢 = pars["陰嚢"].ToPar();
     		X0Y1_陰茎 = pars["陰茎"].ToPar();
     		X0Y1_血管下 = pars["血管下"].ToPar();
     		X0Y1_血管上 = pars["血管上"].ToPar();
     		X0Y1_亀頭 = pars["亀頭"].ToPar();
-    		pars = 本体[0][2];
+    		pars = Body[0][2];
     		X0Y2_陰嚢 = pars["陰嚢"].ToPar();
     		X0Y2_陰茎 = pars["陰茎"].ToPar();
     		X0Y2_血管下 = pars["血管下"].ToPar();
     		X0Y2_血管上 = pars["血管上"].ToPar();
     		X0Y2_亀頭 = pars["亀頭"].ToPar();
-    		pars = 本体[0][3];
+    		pars = Body[0][3];
     		X0Y3_陰嚢 = pars["陰嚢"].ToPar();
     		X0Y3_陰茎 = pars["陰茎"].ToPar();
     		X0Y3_血管下 = pars["血管下"].ToPar();
     		X0Y3_血管上 = pars["血管上"].ToPar();
     		X0Y3_亀頭 = pars["亀頭"].ToPar();
-    		pars = 本体[0][4];
+    		pars = Body[0][4];
     		X0Y4_陰嚢 = pars["陰嚢"].ToPar();
     		X0Y4_陰茎 = pars["陰茎"].ToPar();
     		X0Y4_血管下 = pars["血管下"].ToPar();
     		X0Y4_血管上 = pars["血管上"].ToPar();
     		X0Y4_亀頭 = pars["亀頭"].ToPar();
-    		pars = 本体[1][0];
+    		pars = Body[1][0];
     		X1Y0_陰嚢 = pars["陰嚢"].ToPar();
     		X1Y0_陰茎 = pars["陰茎"].ToPar();
     		X1Y0_血管下 = pars["血管下"].ToPar();
     		X1Y0_血管上 = pars["血管上"].ToPar();
     		X1Y0_亀頭 = pars["亀頭"].ToPar();
-    		pars = 本体[1][1];
+    		pars = Body[1][1];
     		X1Y1_陰嚢 = pars["陰嚢"].ToPar();
     		X1Y1_陰茎 = pars["陰茎"].ToPar();
     		X1Y1_血管下 = pars["血管下"].ToPar();
     		X1Y1_血管上 = pars["血管上"].ToPar();
     		X1Y1_亀頭 = pars["亀頭"].ToPar();
-    		pars = 本体[1][2];
+    		pars = Body[1][2];
     		X1Y2_陰嚢 = pars["陰嚢"].ToPar();
     		X1Y2_陰茎 = pars["陰茎"].ToPar();
     		X1Y2_血管下 = pars["血管下"].ToPar();
     		X1Y2_血管上 = pars["血管上"].ToPar();
-    		pars = 本体[1][3];
+    		pars = Body[1][3];
     		X1Y3_陰嚢 = pars["陰嚢"].ToPar();
     		X1Y3_陰茎 = pars["陰茎"].ToPar();
     		X1Y3_血管下 = pars["血管下"].ToPar();
     		X1Y3_血管上 = pars["血管上"].ToPar();
-    		pars = 本体[1][4];
+    		pars = Body[1][4];
     		X1Y4_陰嚢 = pars["陰嚢"].ToPar();
     		X1Y4_陰茎 = pars["陰茎"].ToPar();
     		X1Y4_血管下 = pars["血管下"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -589,7 +589,7 @@ namespace SlaveMatrix
     		X1Y4_陰嚢CP = new ColorP(X1Y4_陰嚢, 陰嚢CD, DisUnit, abj: true);
     		X1Y4_陰茎CP = new ColorP(X1Y4_陰茎, 陰茎CD, DisUnit, abj: true);
     		X1Y4_血管下CP = new ColorP(X1Y4_血管下, 血管下CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     		AreM = new AreM(Med.Unit, 3.0, 7.0, 0.07, Med.DisQuality, Med.HitAccuracy, 0.45);
     		AreM.BasePoint = new Vector2D(0.5, 0.1);
     		X0Y0_陰嚢.BasePointBase = X0Y0_陰嚢.ToLocal(X0Y0_陰茎.ToGlobal(X0Y0_陰茎.JP[3].Joint));
@@ -603,11 +603,11 @@ namespace SlaveMatrix
     		X1Y3_陰嚢.BasePointBase = X1Y3_陰嚢.ToLocal(X1Y3_陰茎.ToGlobal(X1Y3_陰茎.JP[2].Joint));
     		X1Y4_陰嚢.BasePointBase = X1Y4_陰嚢.ToLocal(X1Y4_陰茎.ToGlobal(X1Y4_陰茎.JP[2].Joint));
     		Vector2D position = AreM.GetPosition(ref AreM.BasePoint);
-    		foreach (Par item in 本体.EnumJoinRoot)
+    		foreach (Par item in Body.EnumJoinRoot)
     		{
     			item.PositionBase = position;
     		}
-    		本体.JoinPAall();
+    		Body.JoinPAall();
     		尺度B *= 1.07;
     		尺度B = 1.08;
     	}
@@ -621,15 +621,15 @@ namespace SlaveMatrix
     	public override void 描画0(RenderArea Are)
     	{
     		AreM.Clear();
-    		本体.Draw(AreM);
+    		Body.Draw(AreM);
     		Are.Draw(AreM);
     	}
 
     	public override void 色更新()
     	{
-    		if (本体.IndexX == 0)
+    		if (Body.IndexX == 0)
     		{
-    			switch (本体.IndexY)
+    			switch (Body.IndexY)
     			{
     			case 0:
     				X0Y0_陰嚢CP.Update();
@@ -670,7 +670,7 @@ namespace SlaveMatrix
     		}
     		else
     		{
-    			switch (本体.IndexY)
+    			switch (Body.IndexY)
     			{
     			case 0:
     				X1Y0_陰嚢CP.Update();

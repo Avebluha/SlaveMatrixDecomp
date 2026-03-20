@@ -7,17 +7,17 @@ namespace SlaveMatrix
     [Serializable]
     public class 長物_鯨D : 半身D
     {
-    	public bool 胴6_表示 = true;
+    	public bool Torso6_表示 = true;
 
-    	public bool 胴6_柄_表示 = true;
+    	public bool Torso6_柄_表示 = true;
 
-    	public bool 胴6_縦影_表示 = true;
+    	public bool Torso6_縦影_表示 = true;
 
-    	public bool 胴5_表示 = true;
+    	public bool Torso5_表示 = true;
 
-    	public bool 胴5_柄_表示 = true;
+    	public bool Torso5_柄_表示 = true;
 
-    	public bool 胴5_縦影_表示 = true;
+    	public bool Torso5_縦影_表示 = true;
 
     	public bool 輪2_革_表示 = true;
 
@@ -31,29 +31,29 @@ namespace SlaveMatrix
 
     	public bool 輪2_金具右_表示 = true;
 
-    	public bool 胴4_表示 = true;
+    	public bool Torso4_表示 = true;
 
-    	public bool 胴4_柄_表示 = true;
+    	public bool Torso4_柄_表示 = true;
 
-    	public bool 胴4_縦影_表示 = true;
+    	public bool Torso4_縦影_表示 = true;
 
-    	public bool 胴3_表示 = true;
+    	public bool Torso3_表示 = true;
 
-    	public bool 胴3_柄_表示 = true;
+    	public bool Torso3_柄_表示 = true;
 
-    	public bool 胴3_縦影_表示 = true;
+    	public bool Torso3_縦影_表示 = true;
 
-    	public bool 胴2_表示 = true;
+    	public bool Torso2_表示 = true;
 
-    	public bool 胴2_柄_表示 = true;
+    	public bool Torso2_柄_表示 = true;
 
-    	public bool 胴2_縦影_表示 = true;
+    	public bool Torso2_縦影_表示 = true;
 
-    	public bool 胴1_表示 = true;
+    	public bool Torso1_表示 = true;
 
-    	public bool 胴1_柄_表示 = true;
+    	public bool Torso1_柄_表示 = true;
 
-    	public bool 胴1_縦影_表示 = true;
+    	public bool Torso1_縦影_表示 = true;
 
     	public bool 輪1_革_表示 = true;
 
@@ -217,7 +217,7 @@ namespace SlaveMatrix
     		e.接続情報 = ConnectionInfo.長物_鯨_尾_接続;
     	}
 
-    	public override Ele GetEle(double DisUnit, ModeEventDispatcher Med, 体配色 体配色)
+    	public override Ele GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
     	{
     		return new 長物_鯨(DisUnit, 配色指定, 体配色, Med, this);
     	}

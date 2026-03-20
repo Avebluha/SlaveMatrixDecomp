@@ -469,7 +469,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -532,14 +532,14 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 下着トップ_チューブ(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 下着トップ_チューブD e)
+    	public 下着トップ_チューブ(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 下着トップ_チューブD e)
     	{
     		ThisType = GetType();
     		Dif dif = new Dif(Sta.胴体["下着トップ"][3]);
-    		本体 = new Difs();
-    		本体.Tag = dif.Tag;
-    		本体.Add(dif);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs();
+    		Body.Tag = dif.Tag;
+    		Body.Add(dif);
+    		Pars pars = Body[0][0];
     		Pars pars2 = pars["布"].ToPars();
     		Pars pars3 = pars2["布左"].ToPars();
     		X0Y0_布_布左_布 = pars3["布"].ToPar();
@@ -564,8 +564,8 @@ namespace SlaveMatrix
     		pars2 = pars["縁"].ToPars();
     		X0Y0_縁_縁1 = pars2["縁1"].ToPar();
     		X0Y0_縁_縁2 = pars2["縁2"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -639,7 +639,7 @@ namespace SlaveMatrix
     		X0Y0_皺_皺2CP = new ColorP(X0Y0_皺_皺2, 皺_皺2CD, DisUnit, abj: true);
     		X0Y0_縁_縁1CP = new ColorP(X0Y0_縁_縁1, 縁_縁1CD, DisUnit, abj: true);
     		X0Y0_縁_縁2CP = new ColorP(X0Y0_縁_縁2, 縁_縁2CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     	}
 
     	public override void 描画0(RenderArea Are)
@@ -693,12 +693,12 @@ namespace SlaveMatrix
     		X0Y0_縁_縁2CP.Update();
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		布_布左_布CD = new ColorD();
     		布_布左_皺_皺1CD = new ColorD();

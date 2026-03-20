@@ -1,5 +1,5 @@
-using System.Linq;
 using _2DGAMELIB;
+using System.Linq;
 
 namespace SlaveMatrix
 {
@@ -17,7 +17,7 @@ namespace SlaveMatrix
 
     	public ColorP X0Y0_筋肉CP;
 
-    	public Ele[] 上腕_接続;
+    	public Ele[] UpperArm_接続;
 
     	public override bool 欠損
     	{
@@ -107,7 +107,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -120,18 +120,18 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public JointS 上腕_接続点 => new JointS(本体, X0Y0_脇, 0);
+    	public JointS UpperArm_接続点 => new JointS(Body, X0Y0_脇, 0);
 
-    	public 四足脇(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 四足脇D e)
+    	public 四足脇(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 四足脇D e)
     	{
     		四足脇 四足脇2 = this;
     		ThisType = GetType();
-    		本体 = new Difs(Sta.肩左["四足脇"]);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs(Sta.肩左["四足脇"]);
+    		Pars pars = Body[0][0];
     		X0Y0_脇 = pars["脇"].ToPar();
     		X0Y0_筋肉 = pars["筋肉"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -163,15 +163,15 @@ namespace SlaveMatrix
     		{
     			表示 = false;
     		}
-    		if (e.上腕_接続.Count > 0)
+    		if (e.UpperArm_接続.Count > 0)
     		{
     			Ele f;
-    			上腕_接続 = e.上腕_接続.Select(delegate(EleD g)
+    			UpperArm_接続 = e.UpperArm_接続.Select(delegate(EleD g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 四足脇2;
-    				f.ConnectionType = ConnectionInfo.四足脇_上腕_接続;
-    				f.接続(四足脇2.上腕_接続点);
+    				f.ConnectionType = ConnectionInfo.四足脇_UpperArm_接続;
+    				f.接続(四足脇2.UpperArm_接続点);
     				return f;
     			}).ToArray();
     		}
@@ -180,7 +180,7 @@ namespace SlaveMatrix
     		X0Y0_脇CP = new ColorP(X0Y0_脇, 脇CD, DisUnit, abj: true);
     		X0Y0_筋肉CP = new ColorP(X0Y0_筋肉, 筋肉CD, DisUnit, abj: true);
     		筋肉濃度 = e.筋肉濃度;
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     	}
 
     	public override void 色更新()
@@ -189,7 +189,7 @@ namespace SlaveMatrix
     		X0Y0_筋肉CP.Update();
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		switch (配色指定)
     		{
@@ -205,13 +205,13 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		脇CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
     		筋肉CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
     	}
 
-    	private void 配色H0(体配色 体配色)
+    	private void 配色H0(BodyColorSet 体配色)
     	{
     		脇CD = new ColorD(ref Col.Black, ref 体配色.柄O);
     		筋肉CD = new ColorD(ref Col.Black, ref 体配色.柄O);

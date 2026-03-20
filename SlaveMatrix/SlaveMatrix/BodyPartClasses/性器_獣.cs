@@ -856,7 +856,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -885,163 +885,163 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public JointS 陰核_接続点 => new JointS(本体, X0Y0_性器基, 0);
+    	public JointS 陰核_接続点 => new JointS(Body, X0Y0_性器基, 0);
 
-    	public JointS 尿道_接続点 => new JointS(本体, X0Y0_性器基, 1);
+    	public JointS 尿道_接続点 => new JointS(Body, X0Y0_性器基, 1);
 
-    	public JointS 膣口_接続点 => new JointS(本体, X0Y0_性器基, 2);
+    	public JointS 膣口_接続点 => new JointS(Body, X0Y0_性器基, 2);
 
-    	public 性器_獣(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 性器_獣D e)
+    	public 性器_獣(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 性器_獣D e)
     	{
     		性器_獣 性器_獣2 = this;
     		ThisType = GetType();
-    		本体 = new Difs(Sta.性器["四足性器"]);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs(Sta.性器["四足性器"]);
+    		Pars pars = Body[0][0];
     		X0Y0_小陰唇 = pars["小陰唇"].ToPar();
     		X0Y0_性器基 = pars["性器基"].ToPar();
     		X0Y0_陰核 = pars["陰核"].ToPar();
     		X0Y0_尿道 = pars["尿道"].ToPar();
     		X0Y0_膣口 = pars["膣口"].ToPar();
-    		pars = 本体[0][1];
+    		pars = Body[0][1];
     		X0Y1_小陰唇 = pars["小陰唇"].ToPar();
     		X0Y1_性器基 = pars["性器基"].ToPar();
     		X0Y1_陰核 = pars["陰核"].ToPar();
     		X0Y1_尿道 = pars["尿道"].ToPar();
     		X0Y1_膣口 = pars["膣口"].ToPar();
-    		pars = 本体[0][2];
+    		pars = Body[0][2];
     		X0Y2_小陰唇 = pars["小陰唇"].ToPar();
     		X0Y2_性器基 = pars["性器基"].ToPar();
     		X0Y2_陰核 = pars["陰核"].ToPar();
     		X0Y2_尿道 = pars["尿道"].ToPar();
     		X0Y2_膣口 = pars["膣口"].ToPar();
-    		pars = 本体[0][3];
+    		pars = Body[0][3];
     		X0Y3_小陰唇 = pars["小陰唇"].ToPar();
     		X0Y3_性器基 = pars["性器基"].ToPar();
     		X0Y3_陰核 = pars["陰核"].ToPar();
     		X0Y3_尿道 = pars["尿道"].ToPar();
     		X0Y3_膣口 = pars["膣口"].ToPar();
-    		pars = 本体[0][4];
+    		pars = Body[0][4];
     		X0Y4_小陰唇 = pars["小陰唇"].ToPar();
     		X0Y4_性器基 = pars["性器基"].ToPar();
     		X0Y4_陰核 = pars["陰核"].ToPar();
     		X0Y4_尿道 = pars["尿道"].ToPar();
     		X0Y4_膣口 = pars["膣口"].ToPar();
-    		pars = 本体[0][5];
+    		pars = Body[0][5];
     		X0Y5_小陰唇 = pars["小陰唇"].ToPar();
     		X0Y5_性器基 = pars["性器基"].ToPar();
     		X0Y5_陰核 = pars["陰核"].ToPar();
     		X0Y5_尿道 = pars["尿道"].ToPar();
     		X0Y5_膣口 = pars["膣口"].ToPar();
-    		pars = 本体[1][0];
+    		pars = Body[1][0];
     		X1Y0_小陰唇 = pars["小陰唇"].ToPar();
     		X1Y0_性器基 = pars["性器基"].ToPar();
     		X1Y0_陰核 = pars["陰核"].ToPar();
     		X1Y0_尿道 = pars["尿道"].ToPar();
     		X1Y0_膣口 = pars["膣口"].ToPar();
-    		pars = 本体[1][1];
+    		pars = Body[1][1];
     		X1Y1_小陰唇 = pars["小陰唇"].ToPar();
     		X1Y1_性器基 = pars["性器基"].ToPar();
     		X1Y1_陰核 = pars["陰核"].ToPar();
     		X1Y1_尿道 = pars["尿道"].ToPar();
     		X1Y1_膣口 = pars["膣口"].ToPar();
-    		pars = 本体[1][2];
+    		pars = Body[1][2];
     		X1Y2_小陰唇 = pars["小陰唇"].ToPar();
     		X1Y2_性器基 = pars["性器基"].ToPar();
     		X1Y2_陰核 = pars["陰核"].ToPar();
     		X1Y2_尿道 = pars["尿道"].ToPar();
     		X1Y2_膣口 = pars["膣口"].ToPar();
-    		pars = 本体[1][3];
+    		pars = Body[1][3];
     		X1Y3_小陰唇 = pars["小陰唇"].ToPar();
     		X1Y3_性器基 = pars["性器基"].ToPar();
     		X1Y3_陰核 = pars["陰核"].ToPar();
     		X1Y3_尿道 = pars["尿道"].ToPar();
     		X1Y3_膣口 = pars["膣口"].ToPar();
-    		pars = 本体[1][4];
+    		pars = Body[1][4];
     		X1Y4_小陰唇 = pars["小陰唇"].ToPar();
     		X1Y4_性器基 = pars["性器基"].ToPar();
     		X1Y4_陰核 = pars["陰核"].ToPar();
     		X1Y4_尿道 = pars["尿道"].ToPar();
     		X1Y4_膣口 = pars["膣口"].ToPar();
-    		pars = 本体[1][5];
+    		pars = Body[1][5];
     		X1Y5_小陰唇 = pars["小陰唇"].ToPar();
     		X1Y5_性器基 = pars["性器基"].ToPar();
     		X1Y5_陰核 = pars["陰核"].ToPar();
     		X1Y5_尿道 = pars["尿道"].ToPar();
     		X1Y5_膣口 = pars["膣口"].ToPar();
-    		pars = 本体[2][0];
+    		pars = Body[2][0];
     		X2Y0_小陰唇 = pars["小陰唇"].ToPar();
     		X2Y0_性器基 = pars["性器基"].ToPar();
     		X2Y0_陰核 = pars["陰核"].ToPar();
     		X2Y0_尿道 = pars["尿道"].ToPar();
     		X2Y0_膣口 = pars["膣口"].ToPar();
-    		pars = 本体[2][1];
+    		pars = Body[2][1];
     		X2Y1_小陰唇 = pars["小陰唇"].ToPar();
     		X2Y1_性器基 = pars["性器基"].ToPar();
     		X2Y1_陰核 = pars["陰核"].ToPar();
     		X2Y1_尿道 = pars["尿道"].ToPar();
     		X2Y1_膣口 = pars["膣口"].ToPar();
-    		pars = 本体[2][2];
+    		pars = Body[2][2];
     		X2Y2_小陰唇 = pars["小陰唇"].ToPar();
     		X2Y2_性器基 = pars["性器基"].ToPar();
     		X2Y2_陰核 = pars["陰核"].ToPar();
     		X2Y2_尿道 = pars["尿道"].ToPar();
     		X2Y2_膣口 = pars["膣口"].ToPar();
-    		pars = 本体[2][3];
+    		pars = Body[2][3];
     		X2Y3_小陰唇 = pars["小陰唇"].ToPar();
     		X2Y3_性器基 = pars["性器基"].ToPar();
     		X2Y3_陰核 = pars["陰核"].ToPar();
     		X2Y3_尿道 = pars["尿道"].ToPar();
     		X2Y3_膣口 = pars["膣口"].ToPar();
-    		pars = 本体[2][4];
+    		pars = Body[2][4];
     		X2Y4_小陰唇 = pars["小陰唇"].ToPar();
     		X2Y4_性器基 = pars["性器基"].ToPar();
     		X2Y4_陰核 = pars["陰核"].ToPar();
     		X2Y4_尿道 = pars["尿道"].ToPar();
     		X2Y4_膣口 = pars["膣口"].ToPar();
-    		pars = 本体[2][5];
+    		pars = Body[2][5];
     		X2Y5_小陰唇 = pars["小陰唇"].ToPar();
     		X2Y5_性器基 = pars["性器基"].ToPar();
     		X2Y5_陰核 = pars["陰核"].ToPar();
     		X2Y5_尿道 = pars["尿道"].ToPar();
     		X2Y5_膣口 = pars["膣口"].ToPar();
-    		pars = 本体[3][0];
+    		pars = Body[3][0];
     		X3Y0_小陰唇 = pars["小陰唇"].ToPar();
     		X3Y0_性器基 = pars["性器基"].ToPar();
     		X3Y0_陰核 = pars["陰核"].ToPar();
     		X3Y0_尿道 = pars["尿道"].ToPar();
     		X3Y0_膣口 = pars["膣口"].ToPar();
-    		pars = 本体[3][1];
+    		pars = Body[3][1];
     		X3Y1_小陰唇 = pars["小陰唇"].ToPar();
     		X3Y1_性器基 = pars["性器基"].ToPar();
     		X3Y1_陰核 = pars["陰核"].ToPar();
     		X3Y1_尿道 = pars["尿道"].ToPar();
     		X3Y1_膣口 = pars["膣口"].ToPar();
-    		pars = 本体[3][2];
+    		pars = Body[3][2];
     		X3Y2_小陰唇 = pars["小陰唇"].ToPar();
     		X3Y2_性器基 = pars["性器基"].ToPar();
     		X3Y2_陰核 = pars["陰核"].ToPar();
     		X3Y2_尿道 = pars["尿道"].ToPar();
     		X3Y2_膣口 = pars["膣口"].ToPar();
-    		pars = 本体[3][3];
+    		pars = Body[3][3];
     		X3Y3_小陰唇 = pars["小陰唇"].ToPar();
     		X3Y3_性器基 = pars["性器基"].ToPar();
     		X3Y3_陰核 = pars["陰核"].ToPar();
     		X3Y3_尿道 = pars["尿道"].ToPar();
     		X3Y3_膣口 = pars["膣口"].ToPar();
-    		pars = 本体[3][4];
+    		pars = Body[3][4];
     		X3Y4_小陰唇 = pars["小陰唇"].ToPar();
     		X3Y4_性器基 = pars["性器基"].ToPar();
     		X3Y4_陰核 = pars["陰核"].ToPar();
     		X3Y4_尿道 = pars["尿道"].ToPar();
     		X3Y4_膣口 = pars["膣口"].ToPar();
-    		pars = 本体[3][5];
+    		pars = Body[3][5];
     		X3Y5_小陰唇 = pars["小陰唇"].ToPar();
     		X3Y5_性器基 = pars["性器基"].ToPar();
     		X3Y5_陰核 = pars["陰核"].ToPar();
     		X3Y5_尿道 = pars["尿道"].ToPar();
     		X3Y5_膣口 = pars["膣口"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -1236,7 +1236,7 @@ namespace SlaveMatrix
     		AreM = new AreM(Med.Unit, 1.0, 1.0, 0.024, Med.DisQuality, Med.HitAccuracy, 0.1);
     		AreM.BasePoint = new Vector2D(0.5, 0.5);
     		AreMPos = AreM.GetPosition(ref AreM.BasePoint);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     		Xi = 1;
     	}
 
@@ -1256,7 +1256,7 @@ namespace SlaveMatrix
     	{
     		AreM.Clear();
     		位置B = AreMPos;
-    		本体.Draw(AreM);
+    		Body.Draw(AreM);
     		Are.Draw(AreM);
     	}
 
@@ -1274,10 +1274,10 @@ namespace SlaveMatrix
 
     	public override void 色更新()
     	{
-    		switch (本体.IndexX)
+    		switch (Body.IndexX)
     		{
     		case 0:
-    			switch (本体.IndexY)
+    			switch (Body.IndexY)
     			{
     			case 0:
     				X0Y0_小陰唇CP.Update();
@@ -1324,7 +1324,7 @@ namespace SlaveMatrix
     			}
     			break;
     		case 1:
-    			switch (本体.IndexY)
+    			switch (Body.IndexY)
     			{
     			case 0:
     				X1Y0_小陰唇CP.Update();
@@ -1371,7 +1371,7 @@ namespace SlaveMatrix
     			}
     			break;
     		case 2:
-    			switch (本体.IndexY)
+    			switch (Body.IndexY)
     			{
     			case 0:
     				X2Y0_小陰唇CP.Update();
@@ -1418,7 +1418,7 @@ namespace SlaveMatrix
     			}
     			break;
     		default:
-    			switch (本体.IndexY)
+    			switch (Body.IndexY)
     			{
     			case 0:
     				X3Y0_小陰唇CP.Update();
@@ -1467,12 +1467,12 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		小陰唇CD = new ColorD(ref 体配色.粘膜線, ref 体配色.粘膜);
     		性器基CD = new ColorD(ref 体配色.粘膜線, ref 体配色.粘膜);

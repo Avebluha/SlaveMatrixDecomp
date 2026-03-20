@@ -16,7 +16,7 @@ namespace SlaveMatrix
 
     	public bool Dis;
 
-    	public Mot 消失;
+    	public Motion 消失;
 
     	public Color GetHitColor => Tex.ParT.HitColor;
 
@@ -66,13 +66,13 @@ namespace SlaveMatrix
     			int sa = ShadColor.A;
     			double v;
 
-    			消失 = new Mot(0.0, 1.0)
+    			消失 = new Motion(0.0, 1.0)
     			{
     				BaseSpeed = 1.0,
-    				Staing = delegate
+    				OnStart = delegate
     				{
                     },
-    				Runing = delegate(Mot m)
+    				OnUpdate = delegate(Motion m)
     				{
     					if (m.Value < m.Max - 1)
     						return;
@@ -82,14 +82,14 @@ namespace SlaveMatrix
     					Tex.ParT.TextColor = Color.FromArgb((int)((double)ta * v), Tex.ParT.TextColor);
     					Tex.ParT.ShadColor = Color.FromArgb((int)((double)sa * v), Tex.ParT.ShadColor);
     				},
-    				Reaing = delegate(Mot m)
+    				OnReach = delegate(Motion m)
     				{
     					m.End();
     				},
-    				Rouing = delegate
+    				OnLoop = delegate
     				{
     				},
-    				Ending = delegate
+    				OnEnd = delegate
     				{
     					表示 = false;
     					吹出し.X0Y0_吹出し.PenColor = Color.FromArgb(pa, 吹出し.X0Y0_吹出し.PenColor);
@@ -124,13 +124,13 @@ namespace SlaveMatrix
     			int ta = TextColor.A;
     			int sa = ShadColor.A;
     			double v;
-    			消失 = new Mot(0.0, 1.0)
+    			消失 = new Motion(0.0, 1.0)
     			{
     				BaseSpeed = 1.0,
-    				Staing = delegate
+    				OnStart = delegate
     				{
     				},
-    				Runing = delegate(Mot m)
+    				OnUpdate = delegate(Motion m)
     				{
                         //After full training slave if i tried to train again game crahes here :3
                         v = (m.Value >= 0) ? m.Value : m.Value.Inverse();
@@ -150,14 +150,14 @@ namespace SlaveMatrix
     					Tex.ParT.TextColor = Color.FromArgb(correctTextAlpha, Tex.ParT.TextColor);
     					Tex.ParT.ShadColor = Color.FromArgb(correctShadeAlpha, Tex.ParT.ShadColor);
     				},
-    				Reaing = delegate(Mot m)
+    				OnReach = delegate(Motion m)
     				{
     					m.End();
     				},
-    				Rouing = delegate
+    				OnLoop = delegate
     				{
     				},
-    				Ending = delegate
+    				OnEnd = delegate
     				{
     					表示 = false;
     					吹出し.X0Y0_吹出し.PenColor = Color.FromArgb(pa, 吹出し.X0Y0_吹出し.PenColor);
@@ -205,7 +205,7 @@ namespace SlaveMatrix
     		}
     		if (表示)
     		{
-    			吹出し.本体.Draw(Are);
+    			吹出し.Body.Draw(Are);
     			Are.Draw(Tex.Pars);
     		}
     	}

@@ -7,7 +7,7 @@ namespace SlaveMatrix
 {
     public class スタンプB : Stamp
     {
-    	private Mot ぶっかけ垂れ;
+    	private Motion ぶっかけ垂れ;
 
     	public override void Draw(RenderArea Are)
     	{
@@ -21,10 +21,10 @@ namespace SlaveMatrix
     			{
     				if (stum.Sta.表示)
     				{
-    					p = stum.Ele.本体.Current.GetPar(stum.Path);
+    					p = stum.Ele.Body.Current.GetPar(stum.Path);
     					stum.Sta.位置B = p.ToGlobal(stum.Pos);
     					stum.Sta.色更新();
-    					stum.Sta.本体.Draw(Are);
+    					stum.Sta.Body.Draw(Are);
     				}
     			}
     		}
@@ -50,7 +50,7 @@ namespace SlaveMatrix
     			sep.Sta.Xv = RNG.XS.NextDouble();
     			sep.Sta.右 = RNG.XS.NextBool();
     			sep.Ele = he;
-    			sep.Par = he.本体.GetHitPar_(hc);
+    			sep.Par = he.Body.GetHitPar_(hc);
     			sep.Path = sep.Par.GetPath();
     			sep.Pos = sep.Par.ToLocal(cp);
     			if (参照.ContainsKey(he))
@@ -66,30 +66,30 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public スタンプB(ModeEventDispatcher Med, RenderArea Are, Cha Cha, Bod Bod, EleD EleD, Mots Mots)
+    	public スタンプB(ModeEventDispatcher Med, RenderArea Are, Character Cha, Body Bod, EleD EleD, Motions Mots)
     		: base(Med, Are, Cha, Bod, EleD)
     	{
     		Ele e = null;
-    		ぶっかけ垂れ = new Mot(0.0, 1.0)
+    		ぶっかけ垂れ = new Motion(0.0, 1.0)
     		{
     			BaseSpeed = 1.0,
-    			Staing = delegate(Mot m)
+    			OnStart = delegate(Motion m)
     			{
     				e = sta.Last().Sta;
     				m.Max = RNG.XS.NextDouble();
     			},
-    			Runing = delegate(Mot m)
+    			OnUpdate = delegate(Motion m)
     			{
     				e.Yv = m.Value;
     			},
-    			Reaing = delegate(Mot m)
+    			OnReach = delegate(Motion m)
     			{
     				m.End();
     			},
-    			Rouing = delegate
+    			OnLoop = delegate
     			{
     			},
-    			Ending = delegate
+    			OnEnd = delegate
     			{
     			}
     		};

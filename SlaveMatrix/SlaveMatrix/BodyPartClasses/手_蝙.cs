@@ -404,7 +404,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -732,13 +732,13 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 手_蝙(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 手_蝙D e)
+    	public 手_蝙(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 手_蝙D e)
     	{
     		飛膜 = new 飛膜_先(DisUnit, 配色指定, 体配色);
     		飛膜.Par = this;
     		ThisType = GetType();
-    		本体 = new Difs(Sta.腕左["獣翼手"]);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs(Sta.腕左["獣翼手"]);
+    		Pars pars = Body[0][0];
     		X0Y0_獣翼手 = pars["獣翼手"].ToPar();
     		Pars pars2 = pars["小指"].ToPars();
     		X0Y0_小指_指1 = pars2["指1"].ToPar();
@@ -761,8 +761,8 @@ namespace SlaveMatrix
     		X0Y0_親指_指2 = pars2["指2"].ToPar();
     		X0Y0_親指_指3 = pars2["指3"].ToPar();
     		Xasix = false;
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -838,7 +838,7 @@ namespace SlaveMatrix
     		X0Y0_親指_指2CP = new ColorP(X0Y0_親指_指2, 親指_指2CD, DisUnit, abj: true);
     		X0Y0_親指_指3CP = new ColorP(X0Y0_親指_指3, 親指_指3CD, DisUnit, abj: true);
     		尺度B = 1.02;
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     	}
 
     	public override void SetAngle0()
@@ -860,7 +860,7 @@ namespace SlaveMatrix
     		X0Y0_親指_指1.AngleBase = num * -257.575894274218;
     		X0Y0_親指_指2.AngleBase = num * 328.764949390357;
     		X0Y0_親指_指3.AngleBase = num * 15.8109448838614;
-    		本体.JoinPAall();
+    		Body.JoinPAall();
     	}
 
     	public override void 描画0(RenderArea Are)
@@ -893,9 +893,9 @@ namespace SlaveMatrix
     		飛膜.Dispose();
     	}
 
-    	public void 接続(上腕_蝙 上腕, 下腕_蝙 下腕, bool カーブ)
+    	public void 接続(UpperArm_蝙 UpperArm, LowerArm_蝙 LowerArm, bool カーブ)
     	{
-    		飛膜.接続(上腕, 下腕, this, カーブ);
+    		飛膜.接続(UpperArm, LowerArm, this, カーブ);
     	}
 
     	public override void 色更新()
@@ -923,12 +923,12 @@ namespace SlaveMatrix
     		X0Y0_親指_指3CP.Update();
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		獣翼手CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
     		小指_指1CD = new ColorD(ref Col.Black, ref 体配色.毛0R);

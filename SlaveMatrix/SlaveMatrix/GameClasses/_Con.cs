@@ -269,38 +269,38 @@ namespace SlaveMatrix.GameClasses
             };
         }
 
-        public static TorsoD Set胴(this WaistD 腰)
+        public static TorsoD SetTorso(this WaistD Waist)
         {
-            TorsoD 胴D2 = Uni.胴();
-            腰.胴接続(胴D2);
-            return 胴D2;
+            TorsoD TorsoD2 = Uni.胴();
+            Waist.胴接続(TorsoD2);
+            return TorsoD2;
         }
 
-        public static ChestD SetChestR(this TorsoD 胴)
+        public static ChestD SetChestR(this TorsoD Torso)
         {
             ChestD ChestD2 = GetChestR();
-            胴.Torso接続(ChestD2);
+            Torso.胴接続(ChestD2);
             return ChestD2;
         }
 
-        public static NeckD Set首(this ChestD Chest)
+        public static NeckD SetNeck(this ChestD Chest)
         {
-            NeckD 首D2 = new NeckD();
-            Chest.首接続(首D2);
-            return 首D2;
+            NeckD NeckD2 = new NeckD();
+            Chest.首接続(NeckD2);
+            return NeckD2;
         }
 
-        public static HeadD Set頭R(this NeckD 首)
+        public static HeadD Set頭R(this NeckD Neck)
         {
             HeadD 頭D2 = Get頭R();
-            首.頭接続(頭D2);
+            Neck.頭接続(頭D2);
             return 頭D2;
         }
 
-        public static HeadD Set頭R1(this NeckD 首)
+        public static HeadD Set頭R1(this NeckD Neck)
         {
             HeadD 頭D2 = Get頭R1();
-            首.頭接続(頭D2);
+            Neck.頭接続(頭D2);
             return 頭D2;
         }
 

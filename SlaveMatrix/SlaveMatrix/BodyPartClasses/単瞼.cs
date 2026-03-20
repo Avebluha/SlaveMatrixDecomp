@@ -1013,7 +1013,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -1259,7 +1259,7 @@ namespace SlaveMatrix
     		{
     			サイズ_ = value;
     			double rate = 0.98 + 0.06 * サイズ_;
-    			foreach (Par item in 本体.EnumAllPar())
+    			foreach (Par item in Body.EnumAllPar())
     			{
     				Vector2D center = item.OP.GetCenter();
     				item.OP.ScalingXY(center, rate);
@@ -1268,11 +1268,11 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 単瞼(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 単瞼D e)
+    	public 単瞼(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 単瞼D e)
     	{
     		ThisType = GetType();
-    		本体 = new Difs(Sta.胴体["単眼瞼"]);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs(Sta.胴体["単眼瞼"]);
+    		Pars pars = Body[0][0];
     		X0Y0_瞼下 = pars["瞼下"].ToPar();
     		X0Y0_瞼上 = pars["瞼上"].ToPar();
     		X0Y0_二重 = pars["二重"].ToPar();
@@ -1286,7 +1286,7 @@ namespace SlaveMatrix
     		X0Y0_睫毛下下左 = pars["睫毛下下左"].ToPar();
     		X0Y0_睫毛下上右 = pars["睫毛下上右"].ToPar();
     		X0Y0_睫毛下下右 = pars["睫毛下下右"].ToPar();
-    		pars = 本体[0][1];
+    		pars = Body[0][1];
     		X0Y1_瞼下 = pars["瞼下"].ToPar();
     		X0Y1_瞼上 = pars["瞼上"].ToPar();
     		X0Y1_二重 = pars["二重"].ToPar();
@@ -1300,7 +1300,7 @@ namespace SlaveMatrix
     		X0Y1_睫毛下下左 = pars["睫毛下下左"].ToPar();
     		X0Y1_睫毛下上右 = pars["睫毛下上右"].ToPar();
     		X0Y1_睫毛下下右 = pars["睫毛下下右"].ToPar();
-    		pars = 本体[0][2];
+    		pars = Body[0][2];
     		X0Y2_瞼下 = pars["瞼下"].ToPar();
     		X0Y2_瞼上 = pars["瞼上"].ToPar();
     		X0Y2_二重 = pars["二重"].ToPar();
@@ -1314,7 +1314,7 @@ namespace SlaveMatrix
     		X0Y2_睫毛下下左 = pars["睫毛下下左"].ToPar();
     		X0Y2_睫毛下上右 = pars["睫毛下上右"].ToPar();
     		X0Y2_睫毛下下右 = pars["睫毛下下右"].ToPar();
-    		pars = 本体[0][3];
+    		pars = Body[0][3];
     		X0Y3_瞼下 = pars["瞼下"].ToPar();
     		X0Y3_瞼上 = pars["瞼上"].ToPar();
     		X0Y3_二重 = pars["二重"].ToPar();
@@ -1328,7 +1328,7 @@ namespace SlaveMatrix
     		X0Y3_睫毛下下左 = pars["睫毛下下左"].ToPar();
     		X0Y3_睫毛下上右 = pars["睫毛下上右"].ToPar();
     		X0Y3_睫毛下下右 = pars["睫毛下下右"].ToPar();
-    		pars = 本体[0][4];
+    		pars = Body[0][4];
     		X0Y4_瞼下 = pars["瞼下"].ToPar();
     		X0Y4_瞼上 = pars["瞼上"].ToPar();
     		X0Y4_二重 = pars["二重"].ToPar();
@@ -1342,7 +1342,7 @@ namespace SlaveMatrix
     		X0Y4_睫毛下下左 = pars["睫毛下下左"].ToPar();
     		X0Y4_睫毛下上右 = pars["睫毛下上右"].ToPar();
     		X0Y4_睫毛下下右 = pars["睫毛下下右"].ToPar();
-    		pars = 本体[1][0];
+    		pars = Body[1][0];
     		X1Y0_瞼下 = pars["瞼下"].ToPar();
     		X1Y0_瞼上 = pars["瞼上"].ToPar();
     		X1Y0_二重 = pars["二重"].ToPar();
@@ -1356,7 +1356,7 @@ namespace SlaveMatrix
     		X1Y0_睫毛下下左 = pars["睫毛下下左"].ToPar();
     		X1Y0_睫毛下上右 = pars["睫毛下上右"].ToPar();
     		X1Y0_睫毛下下右 = pars["睫毛下下右"].ToPar();
-    		pars = 本体[1][1];
+    		pars = Body[1][1];
     		X1Y1_瞼下 = pars["瞼下"].ToPar();
     		X1Y1_瞼上 = pars["瞼上"].ToPar();
     		X1Y1_二重 = pars["二重"].ToPar();
@@ -1370,7 +1370,7 @@ namespace SlaveMatrix
     		X1Y1_睫毛下下左 = pars["睫毛下下左"].ToPar();
     		X1Y1_睫毛下上右 = pars["睫毛下上右"].ToPar();
     		X1Y1_睫毛下下右 = pars["睫毛下下右"].ToPar();
-    		pars = 本体[1][2];
+    		pars = Body[1][2];
     		X1Y2_瞼下 = pars["瞼下"].ToPar();
     		X1Y2_瞼上 = pars["瞼上"].ToPar();
     		X1Y2_二重 = pars["二重"].ToPar();
@@ -1384,7 +1384,7 @@ namespace SlaveMatrix
     		X1Y2_睫毛下下左 = pars["睫毛下下左"].ToPar();
     		X1Y2_睫毛下上右 = pars["睫毛下上右"].ToPar();
     		X1Y2_睫毛下下右 = pars["睫毛下下右"].ToPar();
-    		pars = 本体[1][3];
+    		pars = Body[1][3];
     		X1Y3_瞼下 = pars["瞼下"].ToPar();
     		X1Y3_瞼上 = pars["瞼上"].ToPar();
     		X1Y3_二重 = pars["二重"].ToPar();
@@ -1398,7 +1398,7 @@ namespace SlaveMatrix
     		X1Y3_睫毛下下左 = pars["睫毛下下左"].ToPar();
     		X1Y3_睫毛下上右 = pars["睫毛下上右"].ToPar();
     		X1Y3_睫毛下下右 = pars["睫毛下下右"].ToPar();
-    		pars = 本体[1][4];
+    		pars = Body[1][4];
     		X1Y4_瞼下 = pars["瞼下"].ToPar();
     		X1Y4_瞼上 = pars["瞼上"].ToPar();
     		X1Y4_二重 = pars["二重"].ToPar();
@@ -1412,8 +1412,8 @@ namespace SlaveMatrix
     		X1Y4_睫毛下下左 = pars["睫毛下下左"].ToPar();
     		X1Y4_睫毛下上右 = pars["睫毛下上右"].ToPar();
     		X1Y4_睫毛下下右 = pars["睫毛下下右"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -1599,7 +1599,7 @@ namespace SlaveMatrix
     		X1Y4_睫毛下下左CP = new ColorP(X1Y4_睫毛下下左, 睫毛下下左CD, DisUnit, abj: true);
     		X1Y4_睫毛下上右CP = new ColorP(X1Y4_睫毛下上右, 睫毛下上右CD, DisUnit, abj: true);
     		X1Y4_睫毛下下右CP = new ColorP(X1Y4_睫毛下下右, 睫毛下下右CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     	}
 
     	private void 睫毛長さ(Par p, double d)
@@ -1613,9 +1613,9 @@ namespace SlaveMatrix
 
     	public override void 色更新()
     	{
-    		if (本体.IndexX == 0)
+    		if (Body.IndexX == 0)
     		{
-    			switch (本体.IndexY)
+    			switch (Body.IndexY)
     			{
     			case 0:
     				X0Y0_瞼下CP.Update();
@@ -1696,7 +1696,7 @@ namespace SlaveMatrix
     		}
     		else
     		{
-    			switch (本体.IndexY)
+    			switch (Body.IndexY)
     			{
     			case 0:
     				X1Y0_瞼下CP.Update();
@@ -1779,9 +1779,9 @@ namespace SlaveMatrix
 
     	public override void 色更新(Vector2D[] mm)
     	{
-    		if (本体.IndexX == 0)
+    		if (Body.IndexX == 0)
     		{
-    			switch (本体.IndexY)
+    			switch (Body.IndexY)
     			{
     			case 0:
     				X0Y0_瞼下CP.Update(mm);
@@ -1862,7 +1862,7 @@ namespace SlaveMatrix
     		}
     		else
     		{
-    			switch (本体.IndexY)
+    			switch (Body.IndexY)
     			{
     			case 0:
     				X1Y0_瞼下CP.Update(mm);
@@ -1943,12 +1943,12 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		瞼下CD = new ColorD(ref 体配色.睫毛.Col1, ref 体配色.人肌O);
     		瞼上CD = new ColorD(ref 体配色.睫毛.Col1, ref 体配色.人肌O);

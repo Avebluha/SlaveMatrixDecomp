@@ -315,7 +315,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -332,59 +332,59 @@ namespace SlaveMatrix
     	public マウス(double DisUnit, 配色指定 配色指定, 主人公配色 体配色, ModeEventDispatcher Med, マウスD e)
     	{
     		ThisType = GetType();
-    		本体 = new Difs(Sta.カーソル["マウス"]);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs(Sta.カーソル["マウス"]);
+    		Pars pars = Body[0][0];
     		X0Y0_上唇 = pars["上唇"].ToPar();
     		X0Y0_下唇 = pars["下唇"].ToPar();
-    		pars = 本体[1][0];
+    		pars = Body[1][0];
     		X1Y0_上唇 = pars["上唇"].ToPar();
     		X1Y0_下唇 = pars["下唇"].ToPar();
-    		pars = 本体[2][0];
+    		pars = Body[2][0];
     		X2Y0_舌 = pars["舌"].ToPar();
     		X2Y0_上唇 = pars["上唇"].ToPar();
     		X2Y0_下唇 = pars["下唇"].ToPar();
-    		pars = 本体[3][0];
+    		pars = Body[3][0];
     		X3Y0_舌 = pars["舌"].ToPar();
     		X3Y0_上唇 = pars["上唇"].ToPar();
     		X3Y0_下唇 = pars["下唇"].ToPar();
-    		pars = 本体[3][1];
+    		pars = Body[3][1];
     		X3Y1_舌 = pars["舌"].ToPar();
     		X3Y1_上唇 = pars["上唇"].ToPar();
     		X3Y1_下唇 = pars["下唇"].ToPar();
-    		pars = 本体[3][2];
+    		pars = Body[3][2];
     		X3Y2_舌 = pars["舌"].ToPar();
     		X3Y2_上唇 = pars["上唇"].ToPar();
     		X3Y2_下唇 = pars["下唇"].ToPar();
-    		pars = 本体[3][3];
+    		pars = Body[3][3];
     		X3Y3_舌 = pars["舌"].ToPar();
     		X3Y3_上唇 = pars["上唇"].ToPar();
     		X3Y3_下唇 = pars["下唇"].ToPar();
-    		pars = 本体[3][4];
+    		pars = Body[3][4];
     		X3Y4_舌 = pars["舌"].ToPar();
     		X3Y4_上唇 = pars["上唇"].ToPar();
     		X3Y4_下唇 = pars["下唇"].ToPar();
-    		pars = 本体[4][0];
+    		pars = Body[4][0];
     		X4Y0_舌 = pars["舌"].ToPar();
     		X4Y0_上唇 = pars["上唇"].ToPar();
     		X4Y0_下唇 = pars["下唇"].ToPar();
-    		pars = 本体[4][1];
+    		pars = Body[4][1];
     		X4Y1_舌 = pars["舌"].ToPar();
     		X4Y1_上唇 = pars["上唇"].ToPar();
     		X4Y1_下唇 = pars["下唇"].ToPar();
-    		pars = 本体[4][2];
+    		pars = Body[4][2];
     		X4Y2_舌 = pars["舌"].ToPar();
     		X4Y2_上唇 = pars["上唇"].ToPar();
     		X4Y2_下唇 = pars["下唇"].ToPar();
-    		pars = 本体[4][3];
+    		pars = Body[4][3];
     		X4Y3_舌 = pars["舌"].ToPar();
     		X4Y3_上唇 = pars["上唇"].ToPar();
     		X4Y3_下唇 = pars["下唇"].ToPar();
-    		pars = 本体[4][4];
+    		pars = Body[4][4];
     		X4Y4_舌 = pars["舌"].ToPar();
     		X4Y4_上唇 = pars["上唇"].ToPar();
     		X4Y4_下唇 = pars["下唇"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -456,25 +456,25 @@ namespace SlaveMatrix
     		X4Y4_舌CP = new ColorP(X4Y4_舌, 舌CD, DisUnit, abj: true);
     		X4Y4_上唇CP = new ColorP(X4Y4_上唇, 上唇CD, DisUnit, abj: true);
     		X4Y4_下唇CP = new ColorP(X4Y4_下唇, 下唇CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     		X4Y0_上唇.BasePointBase = X4Y0_上唇.ToLocal(X4Y0_舌.ToGlobal(X4Y0_舌.JP[0].Joint));
     		X4Y1_上唇.BasePointBase = X4Y1_上唇.ToLocal(X4Y1_舌.ToGlobal(X4Y1_舌.JP[0].Joint));
     		X4Y2_上唇.BasePointBase = X4Y2_上唇.ToLocal(X4Y2_舌.ToGlobal(X4Y2_舌.JP[0].Joint));
     		X4Y3_上唇.BasePointBase = X4Y3_上唇.ToLocal(X4Y3_舌.ToGlobal(X4Y3_舌.JP[0].Joint));
     		X4Y4_上唇.BasePointBase = X4Y4_上唇.ToLocal(X4Y4_舌.ToGlobal(X4Y4_舌.JP[0].Joint));
     		尺度B = 1.08;
-    		本体.JoinPAall();
+    		Body.JoinPAall();
     	}
 
     	public override void 描画0(RenderArea Are)
     	{
-    		switch (本体.IndexX)
+    		switch (Body.IndexX)
     		{
     		case 2:
     			Are.Draw(X2Y0_舌);
     			break;
     		case 3:
-    			switch (本体.IndexY)
+    			switch (Body.IndexY)
     			{
     			case 0:
     				Are.Draw(X3Y0_舌);
@@ -494,7 +494,7 @@ namespace SlaveMatrix
     			}
     			break;
     		case 4:
-    			switch (本体.IndexY)
+    			switch (Body.IndexY)
     			{
     			case 0:
     				Are.Draw(X4Y0_舌);
@@ -518,7 +518,7 @@ namespace SlaveMatrix
 
     	public override void 描画1(RenderArea Are)
     	{
-    		switch (本体.IndexX)
+    		switch (Body.IndexX)
     		{
     		case 0:
     			Are.Draw(X0Y0_上唇);
@@ -533,7 +533,7 @@ namespace SlaveMatrix
     			Are.Draw(X2Y0_下唇);
     			break;
     		case 3:
-    			switch (本体.IndexY)
+    			switch (Body.IndexY)
     			{
     			case 0:
     				Are.Draw(X3Y0_上唇);
@@ -558,7 +558,7 @@ namespace SlaveMatrix
     			}
     			break;
     		default:
-    			switch (本体.IndexY)
+    			switch (Body.IndexY)
     			{
     			case 0:
     				Are.Draw(X4Y0_上唇);
@@ -587,7 +587,7 @@ namespace SlaveMatrix
 
     	public override void 色更新()
     	{
-    		switch (本体.IndexX)
+    		switch (Body.IndexX)
     		{
     		case 0:
     			X0Y0_上唇CP.Update();
@@ -603,7 +603,7 @@ namespace SlaveMatrix
     			X2Y0_下唇CP.Update();
     			break;
     		case 3:
-    			switch (本体.IndexY)
+    			switch (Body.IndexY)
     			{
     			case 0:
     				X3Y0_舌CP.Update();
@@ -633,7 +633,7 @@ namespace SlaveMatrix
     			}
     			break;
     		default:
-    			switch (本体.IndexY)
+    			switch (Body.IndexY)
     			{
     			case 0:
     				X4Y0_舌CP.Update();

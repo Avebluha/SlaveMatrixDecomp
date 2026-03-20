@@ -1,11 +1,11 @@
-using System.Linq;
 using _2DGAMELIB;
+using System.Linq;
 
 namespace SlaveMatrix
 {
     public class Head : Ele
     {
-    	public Par X0Y0_頭;
+    	public Par X0Y0_Head;
 
     	public Par X0Y0_悪タトゥ_逆十字_逆十字1;
 
@@ -85,7 +85,7 @@ namespace SlaveMatrix
 
     	public Par X0Y0_虫性_顎下;
 
-    	public ColorD 頭CD;
+    	public ColorD HeadCD;
 
     	public ColorD 悪タトゥ_逆十字_逆十字1CD;
 
@@ -165,7 +165,7 @@ namespace SlaveMatrix
 
     	public ColorD 虫性_顎下CD;
 
-    	public ColorP X0Y0_頭CP;
+    	public ColorP X0Y0_HeadCP;
 
     	public ColorP X0Y0_悪タトゥ_逆十字_逆十字1CP;
 
@@ -325,16 +325,16 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 頭_表示
+    	public bool Head_表示
     	{
     		get
     		{
-    			return X0Y0_頭.Dra;
+    			return X0Y0_Head.Dra;
     		}
     		set
     		{
-    			X0Y0_頭.Dra = value;
-    			X0Y0_頭.Hit = value;
+    			X0Y0_Head.Dra = value;
+    			X0Y0_Head.Hit = value;
     		}
     	}
 
@@ -849,11 +849,11 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return 頭_表示;
+    			return Head_表示;
     		}
     		set
     		{
-    			頭_表示 = value;
+    			Head_表示 = value;
     			悪タトゥ_逆十字_逆十字1_表示 = value;
     			悪タトゥ_逆十字_逆十字2_表示 = value;
     			隈取_タトゥ_表示 = value;
@@ -896,15 +896,15 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
-    			return 頭CD.不透明度;
+    			return HeadCD.不透明度;
     		}
     		set
     		{
-    			頭CD.不透明度 = value;
+    			HeadCD.不透明度 = value;
     			悪タトゥ_逆十字_逆十字1CD.不透明度 = value;
     			悪タトゥ_逆十字_逆十字2CD.不透明度 = value;
     			隈取_タトゥCD.不透明度 = value;
@@ -952,18 +952,18 @@ namespace SlaveMatrix
     		set
     		{
     			double y = 0.9975 + 0.004 * value.Inverse();
-    			X0Y0_頭.JP[0].Joint = X0Y0_頭.JP[0].Joint.MulY(y);
-    			X0Y0_頭.JP[1].Joint = X0Y0_頭.JP[1].Joint.MulY(y);
-    			X0Y0_頭.JP[2].Joint = X0Y0_頭.JP[2].Joint.MulY(y);
-    			X0Y0_頭.JP[8].Joint = X0Y0_頭.JP[8].Joint.MulY(y);
-    			X0Y0_頭.JP[9].Joint = X0Y0_頭.JP[9].Joint.MulY(y);
-    			X0Y0_頭.JP[12].Joint = X0Y0_頭.JP[12].Joint.MulY(y);
-    			X0Y0_頭.JP[13].Joint = X0Y0_頭.JP[13].Joint.MulY(y);
-    			X0Y0_頭.JP[14].Joint = X0Y0_頭.JP[14].Joint.MulY(y);
-    			X0Y0_頭.JP[10].Joint = X0Y0_頭.JP[10].Joint.MulY(y);
-    			X0Y0_頭.JP[11].Joint = X0Y0_頭.JP[11].Joint.MulY(y);
-    			X0Y0_頭.JP[15].Joint = X0Y0_頭.JP[15].Joint.MulY(y);
-    			X0Y0_頭.JP[16].Joint = X0Y0_頭.JP[16].Joint.MulY(y);
+    			X0Y0_Head.JP[0].Joint = X0Y0_Head.JP[0].Joint.MulY(y);
+    			X0Y0_Head.JP[1].Joint = X0Y0_Head.JP[1].Joint.MulY(y);
+    			X0Y0_Head.JP[2].Joint = X0Y0_Head.JP[2].Joint.MulY(y);
+    			X0Y0_Head.JP[8].Joint = X0Y0_Head.JP[8].Joint.MulY(y);
+    			X0Y0_Head.JP[9].Joint = X0Y0_Head.JP[9].Joint.MulY(y);
+    			X0Y0_Head.JP[12].Joint = X0Y0_Head.JP[12].Joint.MulY(y);
+    			X0Y0_Head.JP[13].Joint = X0Y0_Head.JP[13].Joint.MulY(y);
+    			X0Y0_Head.JP[14].Joint = X0Y0_Head.JP[14].Joint.MulY(y);
+    			X0Y0_Head.JP[10].Joint = X0Y0_Head.JP[10].Joint.MulY(y);
+    			X0Y0_Head.JP[11].Joint = X0Y0_Head.JP[11].Joint.MulY(y);
+    			X0Y0_Head.JP[15].Joint = X0Y0_Head.JP[15].Joint.MulY(y);
+    			X0Y0_Head.JP[16].Joint = X0Y0_Head.JP[16].Joint.MulY(y);
     		}
     	}
 
@@ -972,10 +972,10 @@ namespace SlaveMatrix
     		set
     		{
     			double num = 0.0007 * value;
-    			X0Y0_頭.JP[1].Joint = X0Y0_頭.JP[1].Joint.AddX(0.0 - num);
-    			X0Y0_頭.JP[2].Joint = X0Y0_頭.JP[2].Joint.AddX(num);
-    			X0Y0_頭.JP[15].Joint = X0Y0_頭.JP[15].Joint.AddX(0.0 - num);
-    			X0Y0_頭.JP[16].Joint = X0Y0_頭.JP[16].Joint.AddX(num);
+    			X0Y0_Head.JP[1].Joint = X0Y0_Head.JP[1].Joint.AddX(0.0 - num);
+    			X0Y0_Head.JP[2].Joint = X0Y0_Head.JP[2].Joint.AddX(num);
+    			X0Y0_Head.JP[15].Joint = X0Y0_Head.JP[15].Joint.AddX(0.0 - num);
+    			X0Y0_Head.JP[16].Joint = X0Y0_Head.JP[16].Joint.AddX(num);
     		}
     	}
 
@@ -984,62 +984,62 @@ namespace SlaveMatrix
     		set
     		{
     			double num = 0.001 * value;
-    			X0Y0_頭.JP[8].Joint = X0Y0_頭.JP[8].Joint.AddX(0.0 - num);
-    			X0Y0_頭.JP[9].Joint = X0Y0_頭.JP[9].Joint.AddX(num);
+    			X0Y0_Head.JP[8].Joint = X0Y0_Head.JP[8].Joint.AddX(0.0 - num);
+    			X0Y0_Head.JP[9].Joint = X0Y0_Head.JP[9].Joint.AddX(num);
     		}
     	}
 
-    	public JointS 基髪_接続点 => new JointS(本体, X0Y0_頭, 0);
+    	public JointS 基髪_接続点 => new JointS(Body, X0Y0_Head, 0);
 
-    	public JointS 目左_接続点 => new JointS(本体, X0Y0_頭, 1);
+    	public JointS 目左_接続点 => new JointS(Body, X0Y0_Head, 1);
 
-    	public JointS 目右_接続点 => new JointS(本体, X0Y0_頭, 2);
+    	public JointS 目右_接続点 => new JointS(Body, X0Y0_Head, 2);
 
-    	public JointS 鼻_接続点 => new JointS(本体, X0Y0_頭, 3);
+    	public JointS 鼻_接続点 => new JointS(Body, X0Y0_Head, 3);
 
-    	public JointS 口_接続点 => new JointS(本体, X0Y0_頭, 4);
+    	public JointS 口_接続点 => new JointS(Body, X0Y0_Head, 4);
 
-    	public JointS 頬左_接続点 => new JointS(本体, X0Y0_頭, 5);
+    	public JointS 頬左_接続点 => new JointS(Body, X0Y0_Head, 5);
 
-    	public JointS 頬右_接続点 => new JointS(本体, X0Y0_頭, 6);
+    	public JointS 頬右_接続点 => new JointS(Body, X0Y0_Head, 6);
 
-    	public JointS 額_接続点 => new JointS(本体, X0Y0_頭, 7);
+    	public JointS 額_接続点 => new JointS(Body, X0Y0_Head, 7);
 
-    	public JointS 眉左_接続点 => new JointS(本体, X0Y0_頭, 8);
+    	public JointS 眉左_接続点 => new JointS(Body, X0Y0_Head, 8);
 
-    	public JointS 眉右_接続点 => new JointS(本体, X0Y0_頭, 9);
+    	public JointS 眉右_接続点 => new JointS(Body, X0Y0_Head, 9);
 
-    	public JointS 耳左_接続点 => new JointS(本体, X0Y0_頭, 10);
+    	public JointS 耳左_接続点 => new JointS(Body, X0Y0_Head, 10);
 
-    	public JointS 耳右_接続点 => new JointS(本体, X0Y0_頭, 11);
+    	public JointS 耳右_接続点 => new JointS(Body, X0Y0_Head, 11);
 
-    	public JointS 鼻肌_接続点 => new JointS(本体, X0Y0_頭, 12);
+    	public JointS 鼻肌_接続点 => new JointS(Body, X0Y0_Head, 12);
 
-    	public JointS 単眼目_接続点 => new JointS(本体, X0Y0_頭, 13);
+    	public JointS 単眼目_接続点 => new JointS(Body, X0Y0_Head, 13);
 
-    	public JointS 単眼眉_接続点 => new JointS(本体, X0Y0_頭, 14);
+    	public JointS 単眼眉_接続点 => new JointS(Body, X0Y0_Head, 14);
 
-    	public JointS 大顎基_接続点 => new JointS(本体, X0Y0_頭, 14);
+    	public JointS 大顎基_接続点 => new JointS(Body, X0Y0_Head, 14);
 
-    	public JointS 顔面_接続点 => new JointS(本体, X0Y0_頭, 13);
+    	public JointS 顔面_接続点 => new JointS(Body, X0Y0_Head, 13);
 
-    	public JointS 頭頂_接続点 => new JointS(本体, X0Y0_頭, 14);
+    	public JointS 頭頂_接続点 => new JointS(Body, X0Y0_Head, 14);
 
-    	public JointS 頬肌左_接続点 => new JointS(本体, X0Y0_頭, 15);
+    	public JointS 頬肌左_接続点 => new JointS(Body, X0Y0_Head, 15);
 
-    	public JointS 頬肌右_接続点 => new JointS(本体, X0Y0_頭, 16);
+    	public JointS 頬肌右_接続点 => new JointS(Body, X0Y0_Head, 16);
 
-    	public JointS 触覚左_接続点 => new JointS(本体, X0Y0_頭, 17);
+    	public JointS 触覚左_接続点 => new JointS(Body, X0Y0_Head, 17);
 
-    	public JointS 触覚右_接続点 => new JointS(本体, X0Y0_頭, 18);
+    	public JointS 触覚右_接続点 => new JointS(Body, X0Y0_Head, 18);
 
-    	public Head(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, HeadD e)
+    	public Head(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, HeadD e)
     	{
     		Head 頭2 = this;
     		ThisType = GetType();
-    		本体 = new Difs(Sta.胴体["Head"]);
-    		Pars pars = 本体[0][0];
-    		X0Y0_頭 = pars["頭"].ToPar();
+    		Body = new Difs(Sta.胴体["Head"]);
+    		Pars pars = Body[0][0];
+    		X0Y0_Head = pars["頭"].ToPar();
     		Pars pars2 = pars["悪タトゥ"].ToPars();
     		Pars pars3 = pars2["逆十字"].ToPars();
     		X0Y0_悪タトゥ_逆十字_逆十字1 = pars3["逆十字1"].ToPar();
@@ -1096,8 +1096,8 @@ namespace SlaveMatrix
     		X0Y0_馬柄_馬柄 = pars2["牛柄"].ToPar();
     		pars2 = pars["虫顎"].ToPars();
     		X0Y0_虫性_顎下 = pars2["顎下"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -1120,7 +1120,7 @@ namespace SlaveMatrix
     		サイズ = e.サイズ;
     		サイズX = e.サイズX;
     		サイズY = e.サイズY;
-    		頭_表示 = e.頭_表示;
+    		Head_表示 = e.頭_表示;
     		悪タトゥ_逆十字_逆十字1_表示 = e.悪タトゥ_逆十字_逆十字1_表示;
     		悪タトゥ_逆十字_逆十字2_表示 = e.悪タトゥ_逆十字_逆十字2_表示;
     		隈取_タトゥ_表示 = e.隈取_タトゥ_表示;
@@ -1415,7 +1415,7 @@ namespace SlaveMatrix
     		}
     		base.配色指定 = 配色指定;
     		配色(体配色);
-    		X0Y0_頭CP = new ColorP(X0Y0_頭, 頭CD, DisUnit, abj: true);
+    		X0Y0_HeadCP = new ColorP(X0Y0_Head, HeadCD, DisUnit, abj: true);
     		X0Y0_悪タトゥ_逆十字_逆十字1CP = new ColorP(X0Y0_悪タトゥ_逆十字_逆十字1, 悪タトゥ_逆十字_逆十字1CD, DisUnit, abj: false);
     		X0Y0_悪タトゥ_逆十字_逆十字2CP = new ColorP(X0Y0_悪タトゥ_逆十字_逆十字2, 悪タトゥ_逆十字_逆十字2CD, DisUnit, abj: true);
     		X0Y0_隈取_タトゥCP = new ColorP(X0Y0_隈取_タトゥ, 隈取_タトゥCD, DisUnit, abj: true);
@@ -1455,14 +1455,14 @@ namespace SlaveMatrix
     		X0Y0_竜性_鱗3CP = new ColorP(X0Y0_竜性_鱗3, 竜性_鱗3CD, DisUnit, abj: true);
     		X0Y0_馬柄_馬柄CP = new ColorP(X0Y0_馬柄_馬柄, 馬柄_馬柄CD, DisUnit, abj: true);
     		X0Y0_虫性_顎下CP = new ColorP(X0Y0_虫性_顎下, 虫性_顎下CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
-    		X0Y0_頭.JP[8].Joint = X0Y0_頭.JP[8].Joint.AddX(-0.00012);
-    		X0Y0_頭.JP[9].Joint = X0Y0_頭.JP[9].Joint.AddX(0.00012);
+    		Intensity = e.濃度;
+    		X0Y0_Head.JP[8].Joint = X0Y0_Head.JP[8].Joint.AddX(-0.00012);
+    		X0Y0_Head.JP[9].Joint = X0Y0_Head.JP[9].Joint.AddX(0.00012);
     	}
 
     	public override void 描画0(RenderArea Are)
     	{
-    		Are.Draw(X0Y0_頭);
+    		Are.Draw(X0Y0_Head);
     	}
 
     	public override void 描画1(RenderArea Are)
@@ -1516,7 +1516,7 @@ namespace SlaveMatrix
     	{
     		double y = 0.0003 * Rate;
     		Par par = Sta.胴体["Head"][0][0]["頭"].ToPar();
-    		Par x0Y0_頭 = X0Y0_頭;
+    		Par x0Y0_頭 = X0Y0_Head;
     		x0Y0_頭.OP[0].ps[3] = par.OP[0].ps[3].AddY(y);
     		x0Y0_頭.OP[0].ps[4] = par.OP[0].ps[4].AddY(y);
     		x0Y0_頭.OP[1].ps[0] = par.OP[1].ps[0].AddY(y);
@@ -1589,7 +1589,7 @@ namespace SlaveMatrix
 
     	public override void 色更新()
     	{
-    		X0Y0_頭CP.Update();
+    		X0Y0_HeadCP.Update();
     		X0Y0_悪タトゥ_逆十字_逆十字1CP.Update();
     		X0Y0_悪タトゥ_逆十字_逆十字2CP.Update();
     		X0Y0_隈取_タトゥCP.Update();
@@ -1633,7 +1633,7 @@ namespace SlaveMatrix
 
     	public override void 色更新(Vector2D[] mm)
     	{
-    		X0Y0_頭CP.Update(mm);
+    		X0Y0_HeadCP.Update(mm);
     		X0Y0_悪タトゥ_逆十字_逆十字1CP.Update();
     		X0Y0_悪タトゥ_逆十字_逆十字2CP.Update();
     		X0Y0_隈取_タトゥCP.Update();
@@ -1675,14 +1675,14 @@ namespace SlaveMatrix
     		X0Y0_虫性_顎下CP.Update();
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
-    		頭CD = new ColorD(ref Col.Black, ref 体配色.人肌O);
+    		HeadCD = new ColorD(ref Col.Black, ref 体配色.人肌O);
     		悪タトゥ_逆十字_逆十字1CD = new ColorD(ref 体配色.刺青.Col1, ref Color2.Empty);
     		悪タトゥ_逆十字_逆十字2CD = new ColorD(ref Col.Black, ref 体配色.刺青);
     		隈取_タトゥCD = new ColorD(ref Col.Black, ref 体配色.刺青);

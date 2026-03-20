@@ -315,7 +315,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -346,47 +346,47 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public Cough(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 咳D e)
+    	public Cough(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 咳D e)
     	{
     		ThisType = GetType();
-    		本体 = new Difs(Sta.胴体["Cough"]);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs(Sta.胴体["Cough"]);
+    		Pars pars = Body[0][0];
     		X0Y0_咳基 = pars["咳基"].ToPar();
     		X0Y0_雫1 = pars["雫1"].ToPar();
     		X0Y0_雫2 = pars["雫2"].ToPar();
     		X0Y0_雫3 = pars["雫3"].ToPar();
     		X0Y0_雫4 = pars["雫4"].ToPar();
     		X0Y0_雫5 = pars["雫5"].ToPar();
-    		pars = 本体[0][1];
+    		pars = Body[0][1];
     		X0Y1_咳基 = pars["咳基"].ToPar();
     		X0Y1_雫1 = pars["雫1"].ToPar();
     		X0Y1_雫2 = pars["雫2"].ToPar();
     		X0Y1_雫3 = pars["雫3"].ToPar();
     		X0Y1_雫4 = pars["雫4"].ToPar();
     		X0Y1_雫5 = pars["雫5"].ToPar();
-    		pars = 本体[0][2];
+    		pars = Body[0][2];
     		X0Y2_咳基 = pars["咳基"].ToPar();
     		X0Y2_雫1 = pars["雫1"].ToPar();
     		X0Y2_雫2 = pars["雫2"].ToPar();
     		X0Y2_雫3 = pars["雫3"].ToPar();
     		X0Y2_雫4 = pars["雫4"].ToPar();
     		X0Y2_雫5 = pars["雫5"].ToPar();
-    		pars = 本体[0][3];
+    		pars = Body[0][3];
     		X0Y3_咳基 = pars["咳基"].ToPar();
     		X0Y3_雫1 = pars["雫1"].ToPar();
     		X0Y3_雫2 = pars["雫2"].ToPar();
     		X0Y3_雫3 = pars["雫3"].ToPar();
     		X0Y3_雫4 = pars["雫4"].ToPar();
     		X0Y3_雫5 = pars["雫5"].ToPar();
-    		pars = 本体[0][4];
+    		pars = Body[0][4];
     		X0Y4_咳基 = pars["咳基"].ToPar();
     		X0Y4_雫1 = pars["雫1"].ToPar();
     		X0Y4_雫2 = pars["雫2"].ToPar();
     		X0Y4_雫3 = pars["雫3"].ToPar();
     		X0Y4_雫4 = pars["雫4"].ToPar();
     		X0Y4_雫5 = pars["雫5"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -454,12 +454,12 @@ namespace SlaveMatrix
     		X0Y4_雫3CP = new ColorP(X0Y4_雫3, 雫3CD, DisUnit, abj: true);
     		X0Y4_雫4CP = new ColorP(X0Y4_雫4, 雫4CD, DisUnit, abj: true);
     		X0Y4_雫5CP = new ColorP(X0Y4_雫5, 雫5CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     	}
 
     	public override void 色更新()
     	{
-    		switch (本体.IndexY)
+    		switch (Body.IndexY)
     		{
     		case 0:
     			X0Y0_咳基CP.Update();
@@ -504,12 +504,12 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		咳基CD = new ColorD(ref Col.Empty, ref Color2.Empty);
     		雫1CD = new ColorD(ref Col.Empty, ref 体配色.体液);

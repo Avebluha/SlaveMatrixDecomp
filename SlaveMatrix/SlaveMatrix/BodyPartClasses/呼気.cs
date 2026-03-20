@@ -363,7 +363,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -400,11 +400,11 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 呼気(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 呼気D e)
+    	public 呼気(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 呼気D e)
     	{
     		ThisType = GetType();
-    		本体 = new Difs(Sta.胴体["呼気"]);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs(Sta.胴体["呼気"]);
+    		Pars pars = Body[0][0];
     		Pars pars2 = pars["呼気左1"].ToPars();
     		X0Y0_呼気左1_呼気1 = pars2["呼気1"].ToPar();
     		X0Y0_呼気左1_呼気2 = pars2["呼気2"].ToPar();
@@ -423,7 +423,7 @@ namespace SlaveMatrix
     		pars2 = pars["呼気右3"].ToPars();
     		X0Y0_呼気右3_呼気1 = pars2["呼気1"].ToPar();
     		X0Y0_呼気右3_呼気2 = pars2["呼気2"].ToPar();
-    		Pars pars3 = 本体[0][1];
+    		Pars pars3 = Body[0][1];
     		pars2 = pars3["呼気左1"].ToPars();
     		X0Y1_呼気左1_呼気1 = pars2["呼気1"].ToPar();
     		X0Y1_呼気左1_呼気2 = pars2["呼気2"].ToPar();
@@ -442,8 +442,8 @@ namespace SlaveMatrix
     		pars2 = pars3["呼気右3"].ToPars();
     		X0Y1_呼気右3_呼気1 = pars2["呼気1"].ToPar();
     		X0Y1_呼気右3_呼気2 = pars2["呼気2"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -511,12 +511,12 @@ namespace SlaveMatrix
     		X0Y1_呼気右2_呼気2CP = new ColorP(X0Y1_呼気右2_呼気2, 呼気右2_呼気2CD, DisUnit, abj: true);
     		X0Y1_呼気右3_呼気1CP = new ColorP(X0Y1_呼気右3_呼気1, 呼気右3_呼気1CD, DisUnit, abj: true);
     		X0Y1_呼気右3_呼気2CP = new ColorP(X0Y1_呼気右3_呼気2, 呼気右3_呼気2CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     	}
 
     	public override void 色更新()
     	{
-    		if (本体.IndexY == 0)
+    		if (Body.IndexY == 0)
     		{
     			X0Y0_呼気左1_呼気1CP.Update();
     			X0Y0_呼気左1_呼気2CP.Update();
@@ -548,12 +548,12 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		呼気左1_呼気1CD = new ColorD(ref Col.Empty, ref 体配色.呼気);
     		呼気左1_呼気2CD = new ColorD(ref Col.Empty, ref 体配色.呼気);

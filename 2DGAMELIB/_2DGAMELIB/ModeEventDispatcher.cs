@@ -215,6 +215,17 @@ namespace _2DGAMELIB
                         resVector.Y = ((double)height - (double)BaseSize.Height / resMag) * 0.5;
                     }
                 }
+
+                int fbW, fbH;
+
+                Glfw.GetFramebufferSize(GlImage.PtrToWindow(window), out fbW, out fbH);
+
+                uint vpW = (uint)(BaseSize.Width / resMag);
+                uint vpH = (uint)(BaseSize.Height / resMag);
+                int vpX = (int)(resVector.X);
+                int vpY = (int)(fbH - resVector.Y - vpH);
+
+                baseControl.SetViewport(vpW, vpH, vpX, vpY);
             };
 
     		return BaseSize;
@@ -283,23 +294,28 @@ namespace _2DGAMELIB
             baseControl.SetTitle(UITitle);
             Modes[mode].Setting();
 
-    		Action action = delegate
-    		{
-    			if (FPSF.Value > 1.0)
-    			{
-    				Modes[mode].Draw(FPSF);
+            FrameTimeCounter FTC = new FrameTimeCounter();
+            RealFpsCounter RFC = new RealFpsCounter();
 
-                    if (ShowFPS)
-                    {
-                        baseControl.SetTitle(UITitle + " - FPS: " + System.Math.Round(FPSF.Value, 2));
-                    }
-                }
+            Action action = () =>
+            {
+                if (FPSF.Value > 1.0)
+                    Modes[mode].Draw(FPSF);
 
-                //DEBUG shows the hit lut
-                //GD.DrawImage(Hit, new Point(0, 0));
                 baseControl.SetBitmap(Display);
-            };
 
+                FTC.Frame();
+                RFC.Frame();
+
+                if (ShowFPS)
+                {
+                    baseControl.SetTitle(
+                        UITitle +
+                        " - FPS: " + RFC.Value.ToString("F1") +
+                        " | Frame: " + FTC.FrameMs.ToString("F2") + " ms"
+                    );
+                }
+            };
 
     		while (Drive)
     		{

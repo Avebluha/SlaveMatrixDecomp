@@ -174,7 +174,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -229,14 +229,14 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public JointS 瞼_接続点 => new JointS(本体, X0Y0_白目, 0);
+    	public JointS 瞼_接続点 => new JointS(Body, X0Y0_白目, 0);
 
-    	public 頬目(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 頬目D e)
+    	public 頬目(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 頬目D e)
     	{
     		頬目 頬目2 = this;
     		ThisType = GetType();
-    		本体 = new Difs(Sta.胴体["頬目左"]);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs(Sta.胴体["頬目左"]);
+    		Pars pars = Body[0][0];
     		X0Y0_白目 = pars["白目"].ToPar();
     		Pars pars2 = pars["黒目"].ToPars();
     		X0Y0_黒目_黒目 = pars2["黒目"].ToPar();
@@ -244,8 +244,8 @@ namespace SlaveMatrix
     		X0Y0_黒目_ハート = pars2["ハート"].ToPar();
     		X0Y0_黒目_ハイライト上 = pars2["ハイライト上"].ToPar();
     		X0Y0_黒目_ハイライト下 = pars2["ハイライト下"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -309,7 +309,7 @@ namespace SlaveMatrix
     		X0Y0_黒目_ハートCP = new ColorP(X0Y0_黒目_ハート, 黒目_ハートCD, DisUnit, abj: true);
     		X0Y0_黒目_ハイライト上CP = new ColorP(X0Y0_黒目_ハイライト上, 黒目_ハイライト上CD, DisUnit, abj: true);
     		X0Y0_黒目_ハイライト下CP = new ColorP(X0Y0_黒目_ハイライト下, 黒目_ハイライト下CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     	}
 
     	public void 猫目()
@@ -334,7 +334,7 @@ namespace SlaveMatrix
     		X0Y0_黒目_ハイライト下CP.Update();
     	}
 
-    	private void 配色N0(体配色 体配色, bool 右)
+    	private void 配色N0(BodyColorSet 体配色, bool 右)
     	{
     		if (右)
     		{

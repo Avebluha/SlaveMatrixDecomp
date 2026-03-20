@@ -171,7 +171,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -188,19 +188,19 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 胴肌(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 胴肌D e)
+    	public 胴肌(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 胴肌D e)
     	{
     		ThisType = GetType();
-    		本体 = new Difs(Sta.胴体["胴肌"]);
-    		Pars pars = 本体[0][0]["植タトゥ"].ToPars();
+    		Body = new Difs(Sta.胴体["胴肌"]);
+    		Pars pars = Body[0][0]["植タトゥ"].ToPars();
     		X0Y0_植タトゥ_タトゥ花左 = pars["タトゥ花左"].ToPar();
     		X0Y0_植タトゥ_タトゥ花右 = pars["タトゥ花右"].ToPar();
     		X0Y0_植タトゥ_タトゥ花 = pars["タトゥ花"].ToPar();
     		X0Y0_植タトゥ_タトゥ茎 = pars["タトゥ茎"].ToPar();
     		X0Y0_植タトゥ_タトゥ葉左 = pars["タトゥ葉左"].ToPar();
     		X0Y0_植タトゥ_タトゥ葉右 = pars["タトゥ葉右"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -244,7 +244,7 @@ namespace SlaveMatrix
     		X0Y0_植タトゥ_タトゥ茎CP = new ColorP(X0Y0_植タトゥ_タトゥ茎, 植タトゥ_タトゥ茎CD, DisUnit, abj: true);
     		X0Y0_植タトゥ_タトゥ葉左CP = new ColorP(X0Y0_植タトゥ_タトゥ葉左, 植タトゥ_タトゥ葉左CD, DisUnit, abj: true);
     		X0Y0_植タトゥ_タトゥ葉右CP = new ColorP(X0Y0_植タトゥ_タトゥ葉右, 植タトゥ_タトゥ葉右CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     		尺度YB = 0.95;
     	}
 
@@ -258,12 +258,12 @@ namespace SlaveMatrix
     		X0Y0_植タトゥ_タトゥ葉右CP.Update();
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		植タトゥ_タトゥ花左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
     		植タトゥ_タトゥ花右CD = new ColorD(ref Col.Black, ref 体配色.刺青);

@@ -41,7 +41,7 @@ namespace SlaveMatrix
     		set
     		{
     			欠損_ = value;
-    			本体.IndexY = (欠損_ ? RNG.XS.NextM(1, 2) : 0);
+    			Body.IndexY = (欠損_ ? RNG.XS.NextM(1, 2) : 0);
     		}
     	}
 
@@ -73,12 +73,12 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return 本体.IndexY;
+    			return Body.IndexY;
     		}
     		set
     		{
-    			本体.IndexY = value;
-    			欠損_ = 本体.IndexY > 0;
+    			Body.IndexY = value;
+    			欠損_ = Body.IndexY > 0;
     		}
     	}
 
@@ -129,7 +129,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -142,24 +142,24 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 葉_心(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 葉_心D e)
+    	public 葉_心(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 葉_心D e)
     	{
     		ThisType = GetType();
     		Dif dif = new Dif(Sta.肢左["葉"][1]);
-    		本体 = new Difs();
-    		本体.Tag = dif.Tag;
-    		本体.Add(dif);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs();
+    		Body.Tag = dif.Tag;
+    		Body.Add(dif);
+    		Pars pars = Body[0][0];
     		X0Y0_通常_葉 = pars["葉"].ToPar();
     		X0Y0_通常_葉脈 = pars["葉脈"].ToPar();
-    		pars = 本体[0][1];
+    		pars = Body[0][1];
     		X0Y1_欠損1_葉 = pars["葉"].ToPar();
     		X0Y1_欠損1_葉脈 = pars["葉脈"].ToPar();
-    		pars = 本体[0][2];
+    		pars = Body[0][2];
     		X0Y2_欠損2_葉 = pars["葉"].ToPar();
     		X0Y2_欠損2_葉脈 = pars["葉脈"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -200,17 +200,17 @@ namespace SlaveMatrix
     		X0Y1_欠損1_葉脈CP = new ColorP(X0Y1_欠損1_葉脈, 葉脈CD, DisUnit, abj: true);
     		X0Y2_欠損2_葉CP = new ColorP(X0Y2_欠損2_葉, 葉CD, DisUnit, abj: true);
     		X0Y2_欠損2_葉脈CP = new ColorP(X0Y2_欠損2_葉脈, 葉脈CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     	}
 
     	public override void 色更新()
     	{
-    		if (本体.IndexY == 0)
+    		if (Body.IndexY == 0)
     		{
     			X0Y0_通常_葉CP.Update();
     			X0Y0_通常_葉脈CP.Update();
     		}
-    		else if (本体.IndexY == 1)
+    		else if (Body.IndexY == 1)
     		{
     			X0Y1_欠損1_葉CP.Update();
     			X0Y1_欠損1_葉脈CP.Update();
@@ -222,7 +222,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		switch (配色指定)
     		{
@@ -241,19 +241,19 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		葉CD = new ColorD(ref Col.Black, ref 体配色.植1O);
     		葉脈CD = new ColorD(ref Col.Black, ref 体配色.植0O);
     	}
 
-    	private void 配色T1(体配色 体配色)
+    	private void 配色T1(BodyColorSet 体配色)
     	{
     		葉CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
     		葉脈CD = new ColorD(ref Col.Black, ref 体配色.植0O);
     	}
 
-    	private void 配色T0(体配色 体配色)
+    	private void 配色T0(BodyColorSet 体配色)
     	{
     		葉CD = new ColorD(ref Col.Black, ref 体配色.植1O);
     		葉脈CD = new ColorD(ref Col.Black, ref 体配色.刺青O);

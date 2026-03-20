@@ -389,7 +389,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -426,25 +426,25 @@ namespace SlaveMatrix
     		{
     			if (反転Y_ != value)
     			{
-    				本体.JoinPAall();
-    				本体.ReverseY();
+    				Body.JoinPAall();
+    				Body.ReverseY();
     				X0Y0_輪_革.ReverseY();
     				X0Y0_輪_金具1.ReverseY();
     				X0Y0_輪_金具2.ReverseY();
     				X0Y0_輪_金具3.ReverseY();
     				X0Y0_輪_金具左.ReverseY();
     				X0Y0_輪_金具右.ReverseY();
-    				本体.JoinP();
+    				Body.JoinP();
     			}
     			反転Y_ = value;
     		}
     	}
 
-    	public 虫鎌(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 虫鎌D e)
+    	public 虫鎌(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 虫鎌D e)
     	{
     		ThisType = GetType();
-    		本体 = new Difs(Sta.肢左["虫鎌"]);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs(Sta.肢左["虫鎌"]);
+    		Pars pars = Body[0][0];
     		X0Y0_虫鎌節 = pars["虫鎌節"].ToPar();
     		X0Y0_虫棘1 = pars["虫棘1"].ToPar();
     		X0Y0_虫棘2 = pars["虫棘2"].ToPar();
@@ -463,8 +463,8 @@ namespace SlaveMatrix
     		X0Y0_輪_金具左 = pars2["金具左"].ToPar();
     		X0Y0_輪_金具右 = pars2["金具右"].ToPar();
     		Xasix = false;
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -529,7 +529,7 @@ namespace SlaveMatrix
     		X0Y0_輪_金具3CP = new ColorP(X0Y0_輪_金具3, 輪_金具3CD, DisUnit, abj: true);
     		X0Y0_輪_金具左CP = new ColorP(X0Y0_輪_金具左, 輪_金具左CD, DisUnit, abj: true);
     		X0Y0_輪_金具右CP = new ColorP(X0Y0_輪_金具右, 輪_金具右CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     	}
 
     	public override void SetAngle0()
@@ -537,7 +537,7 @@ namespace SlaveMatrix
     		double num = (右 ? (-1.0) : 1.0);
     		num *= (反転Y ? (-1.0) : 1.0);
     		X0Y0_虫鎌1.AngleBase = num * -14.0;
-    		本体.JoinPAall();
+    		Body.JoinPAall();
     	}
 
     	public override bool Is革(Par p)
@@ -569,7 +569,7 @@ namespace SlaveMatrix
     		X0Y0_輪_金具右CP.Update();
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		switch (配色指定)
     		{
@@ -588,7 +588,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		虫鎌節CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
     		虫棘1CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
@@ -608,7 +608,7 @@ namespace SlaveMatrix
     		輪_金具右CD = new ColorD();
     	}
 
-    	private void 配色T0(体配色 体配色)
+    	private void 配色T0(BodyColorSet 体配色)
     	{
     		虫鎌節CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
     		虫棘1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
@@ -628,7 +628,7 @@ namespace SlaveMatrix
     		輪_金具右CD = new ColorD();
     	}
 
-    	private void 配色T1(体配色 体配色)
+    	private void 配色T1(BodyColorSet 体配色)
     	{
     		虫鎌節CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
     		虫棘1CD = new ColorD(ref Col.Black, ref 体配色.甲0O);

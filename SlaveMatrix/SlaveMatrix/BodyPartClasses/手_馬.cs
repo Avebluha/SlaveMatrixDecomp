@@ -285,7 +285,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -306,20 +306,20 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public JointS 鎖1_接続点 => new JointS(本体, X0Y0_腕輪_金具左, 0);
+    	public JointS 鎖1_接続点 => new JointS(Body, X0Y0_腕輪_金具左, 0);
 
-    	public JointS 鎖2_接続点 => new JointS(本体, X0Y0_腕輪_金具右, 0);
+    	public JointS 鎖2_接続点 => new JointS(Body, X0Y0_腕輪_金具右, 0);
 
-    	public 手_馬(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 手_馬D e)
+    	public 手_馬(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 手_馬D e)
     	{
     		ThisType = GetType();
     		Dif dif = new Dif();
     		dif.Tag = "馬";
     		dif.Add(new Pars(Sta.腕左["四足手"][1][0]));
-    		本体 = new Difs();
-    		本体.Tag = dif.Tag;
-    		本体.Add(dif);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs();
+    		Body.Tag = dif.Tag;
+    		Body.Add(dif);
+    		Pars pars = Body[0][0];
     		X0Y0_指0 = pars["指0"].ToPar();
     		X0Y0_筋 = pars["筋"].ToPar();
     		X0Y0_蹄 = pars["蹄"].ToPar();
@@ -332,8 +332,8 @@ namespace SlaveMatrix
     		X0Y0_腕輪_金具左 = pars2["金具左"].ToPar();
     		X0Y0_腕輪_金具右 = pars2["金具右"].ToPar();
     		Xasix = false;
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -386,7 +386,7 @@ namespace SlaveMatrix
     		X0Y0_腕輪_金具3CP = new ColorP(X0Y0_腕輪_金具3, 腕輪_金具3CD, DisUnit, abj: true);
     		X0Y0_腕輪_金具左CP = new ColorP(X0Y0_腕輪_金具左, 腕輪_金具左CD, DisUnit, abj: true);
     		X0Y0_腕輪_金具右CP = new ColorP(X0Y0_腕輪_金具右, 腕輪_金具右CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     		鎖1 = new 拘束鎖(DisUnit, 右: false, 配色指定, 体配色, Xasix);
     		鎖1.反転Y = true;
     		鎖1.接続(鎖1_接続点);
@@ -397,7 +397,7 @@ namespace SlaveMatrix
 
     	public override void 描画0(RenderArea Are)
     	{
-    		本体.Draw(Are);
+    		Body.Draw(Are);
     		鎖1.描画0(Are);
     	}
 
@@ -412,7 +412,7 @@ namespace SlaveMatrix
     		double num = (右 ? (-1.0) : 1.0);
     		X0Y0_指0.AngleBase = num * 217.0;
     		X0Y0_指1.AngleBase = num * -13.0;
-    		本体.JoinPAall();
+    		Body.JoinPAall();
     	}
 
     	public override bool Is革(Par p)
@@ -440,12 +440,12 @@ namespace SlaveMatrix
     		鎖1.色更新();
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		指0CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
     		筋CD = new ColorD(ref 体配色.薄線, ref 体配色.毛0O);

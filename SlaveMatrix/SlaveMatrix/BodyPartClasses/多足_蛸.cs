@@ -5,11 +5,11 @@ namespace SlaveMatrix
 {
     public class 多足_蛸 : 半身
     {
-    	public Par X0Y0_胴;
+    	public Par X0Y0_Torso;
 
-    	public ColorD 胴CD;
+    	public ColorD TorsoCD;
 
-    	public ColorP X0Y0_胴CP;
+    	public ColorP X0Y0_TorsoCP;
 
     	public Ele[] 軟体外左_接続;
 
@@ -55,16 +55,16 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 胴_表示
+    	public bool Torso_表示
     	{
     		get
     		{
-    			return X0Y0_胴.Dra;
+    			return X0Y0_Torso.Dra;
     		}
     		set
     		{
-    			X0Y0_胴.Dra = value;
-    			X0Y0_胴.Hit = value;
+    			X0Y0_Torso.Dra = value;
+    			X0Y0_Torso.Hit = value;
     		}
     	}
 
@@ -72,48 +72,48 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return 胴_表示;
+    			return Torso_表示;
     		}
     		set
     		{
-    			胴_表示 = value;
+    			Torso_表示 = value;
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
-    			return 胴CD.不透明度;
+    			return TorsoCD.不透明度;
     		}
     		set
     		{
-    			胴CD.不透明度 = value;
+    			TorsoCD.不透明度 = value;
     		}
     	}
 
-    	public JointS 軟体外左_接続点 => new JointS(本体, X0Y0_胴, 0);
+    	public JointS 軟体外左_接続点 => new JointS(Body, X0Y0_Torso, 0);
 
-    	public JointS 軟体外右_接続点 => new JointS(本体, X0Y0_胴, 3);
+    	public JointS 軟体外右_接続点 => new JointS(Body, X0Y0_Torso, 3);
 
-    	public JointS 軟体内左_接続点 => new JointS(本体, X0Y0_胴, 1);
+    	public JointS 軟体内左_接続点 => new JointS(Body, X0Y0_Torso, 1);
 
-    	public JointS 軟体内右_接続点 => new JointS(本体, X0Y0_胴, 2);
+    	public JointS 軟体内右_接続点 => new JointS(Body, X0Y0_Torso, 2);
 
-    	public 多足_蛸(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 多足_蛸D e)
+    	public 多足_蛸(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 多足_蛸D e)
     	{
     		多足_蛸 多足_蛸2 = this;
     		ThisType = GetType();
     		Dif dif = new Dif();
     		dif.Tag = "蛸";
     		dif.Add(new Pars(Sta.半身["多足"][0][0]));
-    		本体 = new Difs();
-    		本体.Tag = dif.Tag;
-    		本体.Add(dif);
-    		Pars pars = 本体[0][0];
-    		X0Y0_胴 = pars["Torso"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body = new Difs();
+    		Body.Tag = dif.Tag;
+    		Body.Add(dif);
+    		Pars pars = Body[0][0];
+    		X0Y0_Torso = pars["胴"].ToPar();
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -136,7 +136,7 @@ namespace SlaveMatrix
     		サイズ = e.サイズ;
     		サイズX = e.サイズX;
     		サイズY = e.サイズY;
-    		胴_表示 = e.胴_表示;
+    		Torso_表示 = e.Torso_表示;
     		欠損 = e.欠損;
     		筋肉 = e.筋肉;
     		拘束 = e.拘束;
@@ -191,16 +191,16 @@ namespace SlaveMatrix
     		}
     		base.配色指定 = 配色指定;
     		配色(体配色);
-    		X0Y0_胴CP = new ColorP(X0Y0_胴, 胴CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		X0Y0_TorsoCP = new ColorP(X0Y0_Torso, TorsoCD, DisUnit, abj: true);
+    		Intensity = e.濃度;
     	}
 
     	public override void 色更新()
     	{
-    		X0Y0_胴CP.Update();
+    		X0Y0_TorsoCP.Update();
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		switch (配色指定)
     		{
@@ -219,19 +219,19 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
-    		胴CD = new ColorD(ref Col.Black, ref 体配色.体0O);
+    		TorsoCD = new ColorD(ref Col.Black, ref 体配色.体0O);
     	}
 
-    	private void 配色T0(体配色 体配色)
+    	private void 配色T0(BodyColorSet 体配色)
     	{
-    		胴CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		TorsoCD = new ColorD(ref Col.Black, ref 体配色.刺青O);
     	}
 
-    	private void 配色T1(体配色 体配色)
+    	private void 配色T1(BodyColorSet 体配色)
     	{
-    		胴CD = new ColorD(ref Col.Black, ref 体配色.体0O);
+    		TorsoCD = new ColorD(ref Col.Black, ref 体配色.体0O);
     	}
     }
 }

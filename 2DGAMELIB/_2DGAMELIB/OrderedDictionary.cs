@@ -15,6 +15,7 @@ namespace _2DGAMELIB
     	{
     		get
     		{
+                //TODO: somewhere "Torso" not translated
     			return values[Key];
     		}
     		set

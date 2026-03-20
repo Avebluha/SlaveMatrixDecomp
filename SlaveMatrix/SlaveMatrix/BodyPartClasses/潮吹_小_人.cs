@@ -119,7 +119,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -131,33 +131,33 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 潮吹_小_人(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 潮吹_小_人D e)
+    	public 潮吹_小_人(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 潮吹_小_人D e)
     	{
     		ThisType = GetType();
     		Dif dif = new Dif(Sta.性器付["潮吹"][0]);
-    		本体 = new Difs();
-    		本体.Tag = dif.Tag;
-    		本体.Add(dif);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs();
+    		Body.Tag = dif.Tag;
+    		Body.Add(dif);
+    		Pars pars = Body[0][0];
     		X0Y0_雫 = pars["雫"].ToPar();
-    		pars = 本体[0][1];
+    		pars = Body[0][1];
     		X0Y1_雫 = pars["雫"].ToPar();
-    		pars = 本体[0][2];
+    		pars = Body[0][2];
     		X0Y2_雫 = pars["雫"].ToPar();
-    		pars = 本体[0][3];
+    		pars = Body[0][3];
     		X0Y3_雫 = pars["雫"].ToPar();
-    		pars = 本体[0][4];
+    		pars = Body[0][4];
     		X0Y4_雫 = pars["雫"].ToPar();
-    		pars = 本体[0][5];
+    		pars = Body[0][5];
     		X0Y5_雫 = pars["雫"].ToPar();
-    		pars = 本体[0][6];
+    		pars = Body[0][6];
     		X0Y6_雫 = pars["雫"].ToPar();
-    		pars = 本体[0][7];
+    		pars = Body[0][7];
     		X0Y7_雫 = pars["雫"].ToPar();
-    		pars = 本体[0][8];
+    		pars = Body[0][8];
     		X0Y8_雫 = pars["雫"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -199,12 +199,12 @@ namespace SlaveMatrix
     		X0Y6_雫CP = new ColorP(X0Y6_雫, 雫CD, DisUnit, abj: true);
     		X0Y7_雫CP = new ColorP(X0Y7_雫, 雫CD, DisUnit, abj: true);
     		X0Y8_雫CP = new ColorP(X0Y8_雫, 雫CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     	}
 
     	public override void 色更新()
     	{
-    		switch (本体.IndexY)
+    		switch (Body.IndexY)
     		{
     		case 0:
     			X0Y0_雫CP.Update();
@@ -236,12 +236,12 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		雫CD = new ColorD(ref Col.Empty, ref 体配色.体液);
     	}

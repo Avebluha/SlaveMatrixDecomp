@@ -2042,7 +2042,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -2299,14 +2299,14 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 下着トップ_ブラ(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 下着トップ_ブラD e)
+    	public 下着トップ_ブラ(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 下着トップ_ブラD e)
     	{
     		ThisType = GetType();
     		Dif dif = new Dif(Sta.胴体["下着トップ"][0]);
-    		本体 = new Difs();
-    		本体.Tag = dif.Tag;
-    		本体.Add(dif);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs();
+    		Body.Tag = dif.Tag;
+    		Body.Add(dif);
+    		Pars pars = Body[0][0];
     		Pars pars2 = pars["バンド"].ToPars();
     		X0Y0_バンド_バンド = pars2["バンド"].ToPar();
     		Pars pars3 = pars2["縁"].ToPars();
@@ -2415,8 +2415,8 @@ namespace SlaveMatrix
     		pars2 = pars["リボン"].ToPars();
     		X0Y0_リボン_リボン = pars2["リボン"].ToPar();
     		X0Y0_リボン_結び目 = pars2["結び目"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -2640,7 +2640,7 @@ namespace SlaveMatrix
     		X0Y0_リボン_リボンCP = new ColorP(X0Y0_リボン_リボン, リボン_リボンCD, DisUnit, abj: true);
     		X0Y0_リボン_結び目CP = new ColorP(X0Y0_リボン_結び目, リボン_結び目CD, DisUnit, abj: true);
     		尺度YB *= 1.1;
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     	}
 
     	public override void 描画0(RenderArea Are)
@@ -2826,12 +2826,12 @@ namespace SlaveMatrix
     		X0Y0_リボン_結び目CP.Update();
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		バンド_バンドCD = new ColorD();
     		バンド_縁_下CD = new ColorD();

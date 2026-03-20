@@ -25,9 +25,9 @@ namespace SlaveMatrix
 
     	public RenderArea Are;
 
-    	public Cha Cha;
+    	public Character Cha;
 
-    	public Bod Bod;
+    	public Body Bod;
 
     	protected EleD EleD;
 
@@ -55,7 +55,7 @@ namespace SlaveMatrix
     	{
     	}
 
-    	public Stamp(ModeEventDispatcher Med, RenderArea Are, Cha Cha, Bod Bod, EleD EleD)
+    	public Stamp(ModeEventDispatcher Med, RenderArea Are, Character Cha, Body Bod, EleD EleD)
     	{
     		this.Med = Med;
     		this.Are = Are;

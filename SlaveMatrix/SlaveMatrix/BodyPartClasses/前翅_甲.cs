@@ -236,7 +236,7 @@ namespace SlaveMatrix
     		set
     		{
     			欠損_ = value;
-    			本体.IndexY = (欠損_ ? 1 : 0);
+    			Body.IndexY = (欠損_ ? 1 : 0);
     		}
     	}
 
@@ -647,7 +647,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -703,21 +703,21 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public JointS 軸1_接続点 => new JointS(本体, X0Y0_付根_付根0, 0);
+    	public JointS 軸1_接続点 => new JointS(Body, X0Y0_付根_付根0, 0);
 
-    	public JointS 軸2_接続点 => new JointS(本体, X0Y0_前翅_前翅軸_軸1, 0);
+    	public JointS 軸2_接続点 => new JointS(Body, X0Y0_前翅_前翅軸_軸1, 0);
 
-    	public JointS 軸3_接続点 => new JointS(本体, X0Y0_前翅_前翅軸_軸2, 0);
+    	public JointS 軸3_接続点 => new JointS(Body, X0Y0_前翅_前翅軸_軸2, 0);
 
-    	public 前翅_甲(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 前翅_甲D e)
+    	public 前翅_甲(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 前翅_甲D e)
     	{
     		前翅_甲 前翅_甲2 = this;
     		ThisType = GetType();
     		Dif dif = new Dif(Sta.肢左["前翅"][0]);
-    		本体 = new Difs();
-    		本体.Tag = dif.Tag;
-    		本体.Add(dif);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs();
+    		Body.Tag = dif.Tag;
+    		Body.Add(dif);
+    		Pars pars = Body[0][0];
     		Pars pars2 = pars["前翅"].ToPars();
     		Pars pars3 = pars2["前翅軸"].ToPars();
     		X0Y0_前翅_前翅軸_軸1 = pars3["軸1"].ToPar();
@@ -740,7 +740,7 @@ namespace SlaveMatrix
     		X0Y0_甲付根 = pars["甲付根"].ToPar();
     		X0Y0_紋1 = pars["紋1"].ToPar();
     		X0Y0_紋2 = pars["紋2"].ToPar();
-    		pars = 本体[0][1];
+    		pars = Body[0][1];
     		pars2 = pars["前翅"].ToPars();
     		pars3 = pars2["前翅軸"].ToPars();
     		X0Y1_前翅_前翅軸_軸1 = pars3["軸1"].ToPar();
@@ -770,8 +770,8 @@ namespace SlaveMatrix
     		X0Y1_欠け2 = pars["欠け2"].ToPar();
     		X0Y1_欠け3 = pars["欠け3"].ToPar();
     		Xasix = false;
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -904,7 +904,7 @@ namespace SlaveMatrix
     		X0Y1_欠け1CP = new ColorP(X0Y1_欠け1, 欠け1CD, DisUnit, abj: true);
     		X0Y1_欠け2CP = new ColorP(X0Y1_欠け2, 欠け2CD, DisUnit, abj: true);
     		X0Y1_欠け3CP = new ColorP(X0Y1_欠け3, 欠け3CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     	}
 
     	public override void SetAngle0()
@@ -922,12 +922,12 @@ namespace SlaveMatrix
     		X0Y1_前翅_前翅甲_甲1.AngleBase = num * -4.0;
     		X0Y0_甲付根.AngleBase = num * 5.0;
     		X0Y1_甲付根.AngleBase = num * 5.0;
-    		本体.JoinPAall();
+    		Body.JoinPAall();
     	}
 
     	public override void 色更新()
     	{
-    		if (本体.IndexY == 0)
+    		if (Body.IndexY == 0)
     		{
     			X0Y0_前翅_前翅軸_軸1CP.Update();
     			X0Y0_前翅_前翅軸_軸2CP.Update();
@@ -977,12 +977,12 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		前翅_前翅軸_軸1CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
     		前翅_前翅軸_軸2CD = new ColorD(ref Col.Black, ref 体配色.甲0O);

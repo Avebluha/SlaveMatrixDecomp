@@ -296,7 +296,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -319,16 +319,16 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 尾_狐(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 尾_狐D e)
+    	public 尾_狐(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 尾_狐D e)
     	{
     		ThisType = GetType();
     		Dif dif = new Dif();
     		dif.Tag = "狐尾";
     		dif.Add(new Pars(Sta.尻尾["尾"][0][2]));
-    		本体 = new Difs();
-    		本体.Tag = dif.Tag;
-    		本体.Add(dif);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs();
+    		Body.Tag = dif.Tag;
+    		Body.Add(dif);
+    		Pars pars = Body[0][0];
     		X0Y0_尾0 = pars["尾0"].ToPar();
     		X0Y0_尾1 = pars["尾1"].ToPar();
     		X0Y0_尾2 = pars["尾2"].ToPar();
@@ -341,8 +341,8 @@ namespace SlaveMatrix
     		X0Y0_尾9 = pars["尾9"].ToPar();
     		X0Y0_尾10 = pars["尾10"].ToPar();
     		X0Y0_尾11 = pars["尾11"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -403,7 +403,7 @@ namespace SlaveMatrix
     		X0Y0_尾9CP = new ColorP(X0Y0_尾9, 尾9CD, DisUnit, abj: true);
     		X0Y0_尾10CP = new ColorP(X0Y0_尾10, 尾10CD, DisUnit, abj: true);
     		X0Y0_尾11CP = new ColorP(X0Y0_尾11, 尾11CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     	}
 
     	public override void SetAngle0()
@@ -422,7 +422,7 @@ namespace SlaveMatrix
     		X0Y0_尾9.AngleBase = maxAngle.GetRanAngle();
     		X0Y0_尾10.AngleBase = maxAngle.GetRanAngle();
     		X0Y0_尾11.AngleBase = maxAngle.GetRanAngle();
-    		本体.JoinPAall();
+    		Body.JoinPAall();
     	}
 
     	public override IEnumerable<Par> Enum軸()
@@ -458,7 +458,7 @@ namespace SlaveMatrix
     		X0Y0_尾11CP.Update(mm);
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		switch (配色指定)
     		{
@@ -477,7 +477,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		尾0CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
     		尾1CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
@@ -493,12 +493,12 @@ namespace SlaveMatrix
     		尾11CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
     	}
 
-    	private void 配色T0(体配色 体配色)
+    	private void 配色T0(BodyColorSet 体配色)
     	{
     		this.配色T(0, "尾", ref 体配色.毛0O, ref 体配色.刺青O);
     	}
 
-    	private void 配色T1(体配色 体配色)
+    	private void 配色T1(BodyColorSet 体配色)
     	{
     		this.配色T(1, "尾", ref 体配色.毛0O, ref 体配色.刺青O);
     	}

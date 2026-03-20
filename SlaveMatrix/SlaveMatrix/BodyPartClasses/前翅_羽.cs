@@ -323,7 +323,7 @@ namespace SlaveMatrix
     		set
     		{
     			欠損_ = value;
-    			本体.IndexY = (欠損_ ? 1 : 0);
+    			Body.IndexY = (欠損_ ? 1 : 0);
     		}
     	}
 
@@ -858,7 +858,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -900,14 +900,14 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 前翅_羽(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 前翅_羽D e)
+    	public 前翅_羽(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 前翅_羽D e)
     	{
     		ThisType = GetType();
     		Dif dif = new Dif(Sta.肢左["前翅"][1]);
-    		本体 = new Difs();
-    		本体.Tag = dif.Tag;
-    		本体.Add(dif);
-    		Pars pars = 本体[0][0]["前翅"].ToPars();
+    		Body = new Difs();
+    		Body.Tag = dif.Tag;
+    		Body.Add(dif);
+    		Pars pars = Body[0][0]["前翅"].ToPars();
     		X0Y0_前翅_前翅 = pars["前翅"].ToPar();
     		X0Y0_前翅_翅脈1 = pars["翅脈1"].ToPar();
     		X0Y0_前翅_翅脈2 = pars["翅脈2"].ToPar();
@@ -941,7 +941,7 @@ namespace SlaveMatrix
     		X0Y0_前翅_翅脈網2_翅脈網線1 = pars2["翅脈網線1"].ToPar();
     		X0Y0_前翅_翅脈網2_翅脈網線2 = pars2["翅脈網線2"].ToPar();
     		X0Y0_前翅_翅脈網2_翅脈網線3 = pars2["翅脈網線3"].ToPar();
-    		pars = 本体[0][1]["前翅"].ToPars();
+    		pars = Body[0][1]["前翅"].ToPars();
     		X0Y1_前翅_前翅 = pars["前翅"].ToPar();
     		X0Y1_前翅_翅脈1 = pars["翅脈1"].ToPar();
     		X0Y1_前翅_翅脈2 = pars["翅脈2"].ToPar();
@@ -976,8 +976,8 @@ namespace SlaveMatrix
     		X0Y1_前翅_翅脈網2_翅脈網線2 = pars2["翅脈網線2"].ToPar();
     		X0Y1_前翅_翅脈網2_翅脈網線3 = pars2["翅脈網線3"].ToPar();
     		Xasix = false;
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -1102,7 +1102,7 @@ namespace SlaveMatrix
     		X0Y1_前翅_翅脈網2_翅脈網線1CP = new ColorP(X0Y1_前翅_翅脈網2_翅脈網線1, 前翅_翅脈網2_翅脈網線1CD, DisUnit, abj: true);
     		X0Y1_前翅_翅脈網2_翅脈網線2CP = new ColorP(X0Y1_前翅_翅脈網2_翅脈網線2, 前翅_翅脈網2_翅脈網線2CD, DisUnit, abj: true);
     		X0Y1_前翅_翅脈網2_翅脈網線3CP = new ColorP(X0Y1_前翅_翅脈網2_翅脈網線3, 前翅_翅脈網2_翅脈網線3CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     	}
 
     	public override void SetAngle0()
@@ -1110,12 +1110,12 @@ namespace SlaveMatrix
     		double num = (右 ? (-1.0) : 1.0);
     		X0Y0_前翅_前翅.AngleBase = num * 14.0;
     		X0Y1_前翅_前翅.AngleBase = num * 14.0;
-    		本体.JoinPAall();
+    		Body.JoinPAall();
     	}
 
     	public override void 色更新()
     	{
-    		if (本体.IndexY == 0)
+    		if (Body.IndexY == 0)
     		{
     			X0Y0_前翅_前翅CP.Update();
     			X0Y0_前翅_翅脈1CP.Update();
@@ -1185,7 +1185,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		switch (配色指定)
     		{
@@ -1204,7 +1204,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		前翅_前翅CD = new ColorD(ref Col.Black, ref Color2.Empty);
     		前翅_翅脈1CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
@@ -1239,7 +1239,7 @@ namespace SlaveMatrix
     		前翅_翅脈網2_翅脈網線3CD = new ColorD(ref Col.Black, ref 体配色.ハイライト2O);
     	}
 
-    	private void 配色T1(体配色 体配色)
+    	private void 配色T1(BodyColorSet 体配色)
     	{
     		前翅_前翅CD = new ColorD(ref Col.Black, ref Color2.Empty);
     		前翅_翅脈1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
@@ -1274,7 +1274,7 @@ namespace SlaveMatrix
     		前翅_翅脈網2_翅脈網線3CD = new ColorD(ref Col.Black, ref 体配色.ハイライト2O);
     	}
 
-    	private void 配色T0(体配色 体配色)
+    	private void 配色T0(BodyColorSet 体配色)
     	{
     		前翅_前翅CD = new ColorD(ref Col.Black, ref Color2.Empty);
     		前翅_翅脈1CD = new ColorD(ref Col.Black, ref 体配色.甲0O);

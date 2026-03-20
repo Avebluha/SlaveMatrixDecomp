@@ -17,7 +17,7 @@ namespace SlaveMatrix
 
     	public bool 植性_棘右下_表示;
 
-    	public bool 首_表示 = true;
+    	public bool Neck_表示 = true;
 
     	public bool 淫タトゥ_ハート_タトゥ左_表示;
 
@@ -127,7 +127,7 @@ namespace SlaveMatrix
     		e.接続情報 = ConnectionInfo.Neck_Head_接続;
     	}
 
-    	public override Ele GetEle(double DisUnit, ModeEventDispatcher Med, 体配色 体配色)
+    	public override Ele GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
     	{
     		return new Neck(DisUnit, 配色指定, 体配色, Med, this);
     	}

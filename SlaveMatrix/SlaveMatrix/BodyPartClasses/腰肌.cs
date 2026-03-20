@@ -975,7 +975,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -1007,11 +1007,11 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 腰肌(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 腰肌D e)
+    	public 腰肌(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 腰肌D e)
     	{
     		ThisType = GetType();
-    		本体 = new Difs(Sta.胴体["腰肌"]);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs(Sta.胴体["腰肌"]);
+    		Pars pars = Body[0][0];
     		Pars pars2 = pars["淫タトゥ"].ToPars();
     		Pars pars3 = pars2["ハート"].ToPars();
     		X0Y0_淫タトゥ_ハート_タトゥ左1 = pars3["タトゥ左1"].ToPar();
@@ -1041,7 +1041,7 @@ namespace SlaveMatrix
     		pars3 = pars2["腹板1"].ToPars();
     		X0Y0_虫性_腹板1_腹板 = pars3["腹板"].ToPar();
     		X0Y0_虫性_腹板1_縦線 = pars3["縦線"].ToPar();
-    		pars = 本体[0][1];
+    		pars = Body[0][1];
     		pars2 = pars["淫タトゥ"].ToPars();
     		pars3 = pars2["ハート"].ToPars();
     		X0Y1_淫タトゥ_ハート_タトゥ左1 = pars3["タトゥ左1"].ToPar();
@@ -1071,7 +1071,7 @@ namespace SlaveMatrix
     		pars3 = pars2["腹板1"].ToPars();
     		X0Y1_虫性_腹板1_腹板 = pars3["腹板"].ToPar();
     		X0Y1_虫性_腹板1_縦線 = pars3["縦線"].ToPar();
-    		pars = 本体[0][2];
+    		pars = Body[0][2];
     		pars2 = pars["淫タトゥ"].ToPars();
     		pars3 = pars2["ハート"].ToPars();
     		X0Y2_淫タトゥ_ハート_タトゥ左1 = pars3["タトゥ左1"].ToPar();
@@ -1101,7 +1101,7 @@ namespace SlaveMatrix
     		pars3 = pars2["腹板1"].ToPars();
     		X0Y2_虫性_腹板1_腹板 = pars3["腹板"].ToPar();
     		X0Y2_虫性_腹板1_縦線 = pars3["縦線"].ToPar();
-    		pars = 本体[0][3];
+    		pars = Body[0][3];
     		pars2 = pars["淫タトゥ"].ToPars();
     		pars3 = pars2["ハート"].ToPars();
     		X0Y3_淫タトゥ_ハート_タトゥ左1 = pars3["タトゥ左1"].ToPar();
@@ -1131,7 +1131,7 @@ namespace SlaveMatrix
     		pars3 = pars2["腹板1"].ToPars();
     		X0Y3_虫性_腹板1_腹板 = pars3["腹板"].ToPar();
     		X0Y3_虫性_腹板1_縦線 = pars3["縦線"].ToPar();
-    		pars = 本体[0][4];
+    		pars = Body[0][4];
     		pars2 = pars["淫タトゥ"].ToPars();
     		pars3 = pars2["ハート"].ToPars();
     		X0Y4_淫タトゥ_ハート_タトゥ左1 = pars3["タトゥ左1"].ToPar();
@@ -1161,8 +1161,8 @@ namespace SlaveMatrix
     		pars3 = pars2["腹板1"].ToPars();
     		X0Y4_虫性_腹板1_腹板 = pars3["腹板"].ToPar();
     		X0Y4_虫性_腹板1_縦線 = pars3["縦線"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -1320,13 +1320,13 @@ namespace SlaveMatrix
     		X0Y4_虫性_腹板2_縦線CP = new ColorP(X0Y4_虫性_腹板2_縦線, 虫性_腹板2_縦線CD, DisUnit, abj: true);
     		X0Y4_虫性_腹板1_腹板CP = new ColorP(X0Y4_虫性_腹板1_腹板, 虫性_腹板1_腹板CD, DisUnit, abj: true);
     		X0Y4_虫性_腹板1_縦線CP = new ColorP(X0Y4_虫性_腹板1_縦線, 虫性_腹板1_縦線CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     		尺度YB = 0.95;
     	}
 
     	public override void 色更新()
     	{
-    		switch (本体.IndexY)
+    		switch (Body.IndexY)
     		{
     		case 0:
     			X0Y0_淫タトゥ_ハート_タトゥ左1CP.Update();
@@ -1446,7 +1446,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		switch (配色指定)
     		{
@@ -1465,7 +1465,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		淫タトゥ_ハート_タトゥ左1CD = new ColorD(ref Col.Black, ref 体配色.刺青);
     		淫タトゥ_ハート_タトゥ右1CD = new ColorD(ref Col.Black, ref 体配色.刺青);
@@ -1490,7 +1490,7 @@ namespace SlaveMatrix
     		虫性_腹板1_縦線CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
     	}
 
-    	private void 配色T0(体配色 体配色)
+    	private void 配色T0(BodyColorSet 体配色)
     	{
     		淫タトゥ_ハート_タトゥ左1CD = new ColorD(ref Col.Black, ref 体配色.刺青);
     		淫タトゥ_ハート_タトゥ右1CD = new ColorD(ref Col.Black, ref 体配色.刺青);
@@ -1515,7 +1515,7 @@ namespace SlaveMatrix
     		虫性_腹板1_縦線CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
     	}
 
-    	private void 配色T1(体配色 体配色)
+    	private void 配色T1(BodyColorSet 体配色)
     	{
     		淫タトゥ_ハート_タトゥ左1CD = new ColorD(ref Col.Black, ref 体配色.刺青);
     		淫タトゥ_ハート_タトゥ右1CD = new ColorD(ref Col.Black, ref 体配色.刺青);

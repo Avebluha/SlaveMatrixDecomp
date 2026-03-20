@@ -71,7 +71,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -83,14 +83,14 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 衝撃(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 衝撃D e)
+    	public 衝撃(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 衝撃D e)
     	{
     		ThisType = GetType();
-    		本体 = new Difs(Sta.その他["衝撃"]);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs(Sta.その他["衝撃"]);
+    		Pars pars = Body[0][0];
     		X0Y0_衝撃 = pars["衝撃"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -124,7 +124,7 @@ namespace SlaveMatrix
     		base.配色指定 = 配色指定;
     		配色(体配色);
     		X0Y0_衝撃CP = new ColorP(X0Y0_衝撃, 衝撃CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     	}
 
     	public override void 色更新()
@@ -132,12 +132,12 @@ namespace SlaveMatrix
     		X0Y0_衝撃CP.Update();
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		衝撃CD = new ColorD();
     		衝撃CD.線 = Col.Empty;

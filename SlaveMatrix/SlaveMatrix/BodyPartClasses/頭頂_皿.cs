@@ -173,7 +173,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -206,16 +206,16 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 頭頂_皿(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 頭頂_皿D e)
+    	public 頭頂_皿(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 頭頂_皿D e)
     	{
     		ThisType = GetType();
     		Dif dif = new Dif();
     		dif.Tag = "皿";
     		dif.Add(new Pars(Sta.肢中["頭部前"][0][1]));
-    		本体 = new Difs();
-    		本体.Tag = dif.Tag;
-    		本体.Add(dif);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs();
+    		Body.Tag = dif.Tag;
+    		Body.Add(dif);
+    		Pars pars = Body[0][0];
     		X0Y0_皿1 = pars["皿1"].ToPar();
     		X0Y0_皿2 = pars["皿2"].ToPar();
     		Pars pars2 = pars["甲殻"].ToPars();
@@ -223,8 +223,8 @@ namespace SlaveMatrix
     		X0Y0_甲殻_甲殻3 = pars2["甲殻3"].ToPar();
     		X0Y0_甲殻_甲殻2 = pars2["甲殻2"].ToPar();
     		X0Y0_甲殻_甲殻1 = pars2["甲殻1"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -269,7 +269,7 @@ namespace SlaveMatrix
     		X0Y0_甲殻_甲殻3CP = new ColorP(X0Y0_甲殻_甲殻3, 甲殻_甲殻3CD, DisUnit, abj: true);
     		X0Y0_甲殻_甲殻2CP = new ColorP(X0Y0_甲殻_甲殻2, 甲殻_甲殻2CD, DisUnit, abj: true);
     		X0Y0_甲殻_甲殻1CP = new ColorP(X0Y0_甲殻_甲殻1, 甲殻_甲殻1CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     	}
 
     	public override void 色更新()
@@ -282,12 +282,12 @@ namespace SlaveMatrix
     		X0Y0_甲殻_甲殻1CP.Update();
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		皿1CD = new ColorD(ref Col.Black, ref 体配色.歯);
     		皿2CD = new ColorD(ref Col.Black, ref 体配色.爪O);

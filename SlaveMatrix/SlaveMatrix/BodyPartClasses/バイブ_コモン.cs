@@ -937,7 +937,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -971,11 +971,11 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public バイブ_コモン(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, バイブ_コモンD e)
+    	public バイブ_コモン(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, バイブ_コモンD e)
     	{
     		ThisType = GetType();
-    		本体 = new Difs(Sta.カーソル["コモン"]);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs(Sta.カーソル["コモン"]);
+    		Pars pars = Body[0][0];
     		X0Y0_ヘッド = pars["ヘッド"].ToPar();
     		X0Y0_イボ1 = pars["イボ1"].ToPar();
     		X0Y0_イボ2 = pars["イボ2"].ToPar();
@@ -1000,7 +1000,7 @@ namespace SlaveMatrix
     		X0Y0_ユニット_パワー2 = pars2["パワー2"].ToPar();
     		X0Y0_ユニット_パワー3 = pars2["パワー3"].ToPar();
     		X0Y0_ユニット_パワー4 = pars2["パワー4"].ToPar();
-    		pars = 本体[0][1];
+    		pars = Body[0][1];
     		X0Y1_ヘッド = pars["ヘッド"].ToPar();
     		X0Y1_イボ1 = pars["イボ1"].ToPar();
     		X0Y1_イボ2 = pars["イボ2"].ToPar();
@@ -1025,7 +1025,7 @@ namespace SlaveMatrix
     		X0Y1_ユニット_パワー2 = pars2["パワー2"].ToPar();
     		X0Y1_ユニット_パワー3 = pars2["パワー3"].ToPar();
     		X0Y1_ユニット_パワー4 = pars2["パワー4"].ToPar();
-    		pars = 本体[0][2];
+    		pars = Body[0][2];
     		X0Y2_ヘッド = pars["ヘッド"].ToPar();
     		X0Y2_イボ1 = pars["イボ1"].ToPar();
     		X0Y2_イボ2 = pars["イボ2"].ToPar();
@@ -1047,7 +1047,7 @@ namespace SlaveMatrix
     		X0Y2_ユニット_パワー2 = pars2["パワー2"].ToPar();
     		X0Y2_ユニット_パワー3 = pars2["パワー3"].ToPar();
     		X0Y2_ユニット_パワー4 = pars2["パワー4"].ToPar();
-    		pars = 本体[0][3];
+    		pars = Body[0][3];
     		X0Y3_ヘッド = pars["ヘッド"].ToPar();
     		X0Y3_イボ1 = pars["イボ1"].ToPar();
     		X0Y3_イボ2 = pars["イボ2"].ToPar();
@@ -1066,7 +1066,7 @@ namespace SlaveMatrix
     		X0Y3_ユニット_パワー2 = pars2["パワー2"].ToPar();
     		X0Y3_ユニット_パワー3 = pars2["パワー3"].ToPar();
     		X0Y3_ユニット_パワー4 = pars2["パワー4"].ToPar();
-    		pars = 本体[0][4];
+    		pars = Body[0][4];
     		X0Y4_ヘッド = pars["ヘッド"].ToPar();
     		pars2 = pars["ユニット"].ToPars();
     		X0Y4_ユニット_ユニット = pars2["ユニット"].ToPar();
@@ -1079,8 +1079,8 @@ namespace SlaveMatrix
     		X0Y4_ユニット_パワー2 = pars2["パワー2"].ToPar();
     		X0Y4_ユニット_パワー3 = pars2["パワー3"].ToPar();
     		X0Y4_ユニット_パワー4 = pars2["パワー4"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -1229,7 +1229,7 @@ namespace SlaveMatrix
     		X0Y4_ユニット_パワー2CP = new ColorP(X0Y4_ユニット_パワー2, ユニット_パワー2CD, DisUnit, abj: true);
     		X0Y4_ユニット_パワー3CP = new ColorP(X0Y4_ユニット_パワー3, ユニット_パワー3CD, DisUnit, abj: true);
     		X0Y4_ユニット_パワー4CP = new ColorP(X0Y4_ユニット_パワー4, ユニット_パワー4CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     		X0Y0_ユニット_ユニット.BasePointBase = X0Y0_ユニット_ユニット.ToLocal(X0Y0_ヘッド.ToGlobal(X0Y0_ヘッド.JP[12].Joint));
     		X0Y1_ユニット_ユニット.BasePointBase = X0Y1_ユニット_ユニット.ToLocal(X0Y1_ヘッド.ToGlobal(X0Y1_ヘッド.JP[12].Joint));
     		X0Y2_ユニット_ユニット.BasePointBase = X0Y2_ユニット_ユニット.ToLocal(X0Y2_ヘッド.ToGlobal(X0Y2_ヘッド.JP[9].Joint));
@@ -1237,12 +1237,12 @@ namespace SlaveMatrix
     		X0Y4_ユニット_ユニット.BasePointBase = X0Y4_ユニット_ユニット.ToLocal(X0Y4_ヘッド.ToGlobal(X0Y4_ヘッド.JP[0].Joint));
     		尺度B *= 1.07;
     		尺度B = 1.08;
-    		本体.JoinPAall();
+    		Body.JoinPAall();
     	}
 
     	public override void 色更新()
     	{
-    		switch (本体.IndexY)
+    		switch (Body.IndexY)
     		{
     		case 0:
     			X0Y0_ヘッドCP.Update();
@@ -1351,12 +1351,12 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		Col.GetGrad(ref Col.HotPink, out var ret);
     		ヘッドCD = new ColorD(ref Col.Black, ref ret);

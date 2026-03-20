@@ -93,7 +93,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -106,21 +106,21 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public JointS 脚_接続点 => new JointS(本体, X0Y0_腿, 0);
+    	public JointS 脚_接続点 => new JointS(Body, X0Y0_腿, 0);
 
-    	public 腿_鳥(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 腿_鳥D e)
+    	public 腿_鳥(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 腿_鳥D e)
     	{
     		腿_鳥 腿_鳥2 = this;
     		ThisType = GetType();
     		Dif dif = new Dif(Sta.脚左["四足腿"][2]);
-    		本体 = new Difs();
-    		本体.Tag = dif.Tag;
-    		本体.Add(dif);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs();
+    		Body.Tag = dif.Tag;
+    		Body.Add(dif);
+    		Pars pars = Body[0][0];
     		X0Y0_腿 = pars["腿"].ToPar();
     		X0Y0_筋 = pars["筋"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -168,14 +168,14 @@ namespace SlaveMatrix
     		配色(体配色);
     		X0Y0_腿CP = new ColorP(X0Y0_腿, 腿CD, DisUnit, abj: true);
     		X0Y0_筋CP = new ColorP(X0Y0_筋, 筋CD, DisUnit, abj: false);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     	}
 
     	public override void SetAngle0()
     	{
     		double num = (右 ? (-1.0) : 1.0);
     		X0Y0_腿.AngleBase = num * 144.0;
-    		本体.JoinPAall();
+    		Body.JoinPAall();
     	}
 
     	public override void 色更新()
@@ -184,12 +184,12 @@ namespace SlaveMatrix
     		X0Y0_筋CP.Update();
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		腿CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
     		筋CD = new ColorD(ref 体配色.薄線, ref 体配色.毛0O);

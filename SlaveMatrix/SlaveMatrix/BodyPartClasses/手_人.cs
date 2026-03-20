@@ -2511,7 +2511,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -2798,11 +2798,11 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 手_人(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 手_人D e)
+    	public 手_人(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 手_人D e)
     	{
     		ThisType = GetType();
-    		本体 = new Difs(Sta.腕左["手"]);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs(Sta.腕左["手"]);
+    		Pars pars = Body[0][0];
     		Pars pars2 = pars["グローブ"].ToPars();
     		X0Y0_グローブ_グローブ = pars2["グローブ"].ToPar();
     		X0Y0_グローブ_縁1 = pars2["縁1"].ToPar();
@@ -2835,7 +2835,7 @@ namespace SlaveMatrix
     		X0Y0_親指_獣性_肉球 = pars2["獣肉球"].ToPar();
     		X0Y0_親指_親指2 = pars2["親指2"].ToPar();
     		X0Y0_親指_親指3 = pars2["親指3"].ToPar();
-    		pars = 本体[0][1];
+    		pars = Body[0][1];
     		pars2 = pars["親指"].ToPars();
     		X0Y1_親指_親指3 = pars2["親指3"].ToPar();
     		X0Y1_親指_親指2 = pars2["親指2"].ToPar();
@@ -2876,7 +2876,7 @@ namespace SlaveMatrix
     		X0Y1_グローブ_グローブ = pars2["グローブ"].ToPar();
     		X0Y1_グローブ_縁1 = pars2["縁1"].ToPar();
     		X0Y1_グローブ_縁2 = pars2["縁2"].ToPar();
-    		pars = 本体[0][2];
+    		pars = Body[0][2];
     		pars2 = pars["親指"].ToPars();
     		X0Y2_親指_親指3 = pars2["親指3"].ToPar();
     		X0Y2_親指_親指2 = pars2["親指2"].ToPar();
@@ -2917,7 +2917,7 @@ namespace SlaveMatrix
     		X0Y2_グローブ_グローブ = pars2["グローブ"].ToPar();
     		X0Y2_グローブ_縁1 = pars2["縁1"].ToPar();
     		X0Y2_グローブ_縁2 = pars2["縁2"].ToPar();
-    		pars = 本体[0][3];
+    		pars = Body[0][3];
     		pars2 = pars["親指"].ToPars();
     		X0Y3_親指_親指1 = pars2["親指1"].ToPar();
     		X0Y3_親指_親指2 = pars2["親指2"].ToPar();
@@ -2958,7 +2958,7 @@ namespace SlaveMatrix
     		X0Y3_グローブ_グローブ = pars2["グローブ"].ToPar();
     		X0Y3_グローブ_縁1 = pars2["縁1"].ToPar();
     		X0Y3_グローブ_縁2 = pars2["縁2"].ToPar();
-    		pars = 本体[0][4];
+    		pars = Body[0][4];
     		pars2 = pars["親指"].ToPars();
     		X0Y4_親指_親指3 = pars2["親指3"].ToPar();
     		X0Y4_親指_親指2 = pars2["親指2"].ToPar();
@@ -2999,7 +2999,7 @@ namespace SlaveMatrix
     		X0Y4_グローブ_グローブ = pars2["グローブ"].ToPar();
     		X0Y4_グローブ_縁1 = pars2["縁1"].ToPar();
     		X0Y4_グローブ_縁2 = pars2["縁2"].ToPar();
-    		pars = 本体[0][5];
+    		pars = Body[0][5];
     		pars2 = pars["親指"].ToPars();
     		X0Y5_親指_親指1 = pars2["親指1"].ToPar();
     		X0Y5_親指_親指2 = pars2["親指2"].ToPar();
@@ -3040,7 +3040,7 @@ namespace SlaveMatrix
     		X0Y5_グローブ_グローブ = pars2["グローブ"].ToPar();
     		X0Y5_グローブ_縁1 = pars2["縁1"].ToPar();
     		X0Y5_グローブ_縁2 = pars2["縁2"].ToPar();
-    		pars = 本体[0][6];
+    		pars = Body[0][6];
     		pars2 = pars["小指"].ToPars();
     		X0Y6_小指_小指3 = pars2["小指3"].ToPar();
     		X0Y6_小指_小指2 = pars2["小指2"].ToPar();
@@ -3081,7 +3081,7 @@ namespace SlaveMatrix
     		X0Y6_グローブ_グローブ = pars2["グローブ"].ToPar();
     		X0Y6_グローブ_縁1 = pars2["縁1"].ToPar();
     		X0Y6_グローブ_縁2 = pars2["縁2"].ToPar();
-    		pars = 本体[0][7];
+    		pars = Body[0][7];
     		pars2 = pars["親指"].ToPars();
     		X0Y7_親指_親指1 = pars2["親指1"].ToPar();
     		X0Y7_親指_親指2 = pars2["親指2"].ToPar();
@@ -3122,7 +3122,7 @@ namespace SlaveMatrix
     		X0Y7_グローブ_グローブ = pars2["グローブ"].ToPar();
     		X0Y7_グローブ_縁1 = pars2["縁1"].ToPar();
     		X0Y7_グローブ_縁2 = pars2["縁2"].ToPar();
-    		pars = 本体[0][8];
+    		pars = Body[0][8];
     		pars2 = pars["親指"].ToPars();
     		X0Y8_親指_親指3 = pars2["親指3"].ToPar();
     		X0Y8_親指_親指2 = pars2["親指2"].ToPar();
@@ -3163,7 +3163,7 @@ namespace SlaveMatrix
     		X0Y8_グローブ_グローブ = pars2["グローブ"].ToPar();
     		X0Y8_グローブ_縁1 = pars2["縁1"].ToPar();
     		X0Y8_グローブ_縁2 = pars2["縁2"].ToPar();
-    		pars = 本体[0][9];
+    		pars = Body[0][9];
     		pars2 = pars["グローブ"].ToPars();
     		X0Y9_グローブ_グローブ = pars2["グローブ"].ToPar();
     		X0Y9_グローブ_縁1 = pars2["縁1"].ToPar();
@@ -3196,7 +3196,7 @@ namespace SlaveMatrix
     		X0Y9_親指_獣肉球 = pars2["獣肉球"].ToPar();
     		X0Y9_親指_親指2 = pars2["親指2"].ToPar();
     		X0Y9_親指_親指3 = pars2["親指3"].ToPar();
-    		pars = 本体[0][10];
+    		pars = Body[0][10];
     		pars2 = pars["親指"].ToPars();
     		X0Y10_親指_親指3 = pars2["親指3"].ToPar();
     		X0Y10_親指_親指2 = pars2["親指2"].ToPar();
@@ -3238,8 +3238,8 @@ namespace SlaveMatrix
     		X0Y10_グローブ_縁1 = pars2["縁1"].ToPar();
     		X0Y10_グローブ_縁2 = pars2["縁2"].ToPar();
     		Xasix = false;
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -3657,7 +3657,7 @@ namespace SlaveMatrix
     		X0Y10_グローブ_グローブCP = new ColorP(X0Y10_グローブ_グローブ, グローブ_グローブCD, DisUnit, abj: true);
     		X0Y10_グローブ_縁1CP = new ColorP(X0Y10_グローブ_縁1, グローブ_縁1CD, DisUnit, abj: true);
     		X0Y10_グローブ_縁2CP = new ColorP(X0Y10_グローブ_縁2, グローブ_縁2CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     	}
 
     	public void 虫性()
@@ -4127,7 +4127,7 @@ namespace SlaveMatrix
 
     	public void 獣性()
     	{
-    		foreach (Par item in 本体.EnumAllPar())
+    		foreach (Par item in Body.EnumAllPar())
     		{
     			item.OP.ExpansionXY(item.OP.GetCenter(), 0.001);
     			item.SizeBase *= 1.2;
@@ -4136,7 +4136,7 @@ namespace SlaveMatrix
 
     	public void 竜性()
     	{
-    		foreach (Par item in 本体.EnumAllPar())
+    		foreach (Par item in Body.EnumAllPar())
     		{
     			if (item.Tag.Contains("鱗"))
     			{
@@ -4179,7 +4179,7 @@ namespace SlaveMatrix
 
     	public override void 色更新()
     	{
-    		switch (本体.IndexY)
+    		switch (Body.IndexY)
     		{
     		case 0:
     			X0Y0_グローブ_グローブCP.Update();
@@ -4537,7 +4537,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		switch (配色指定)
     		{
@@ -4562,7 +4562,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		グローブ_グローブCD = new ColorD();
     		グローブ_縁1CD = new ColorD();
@@ -4598,7 +4598,7 @@ namespace SlaveMatrix
     		悪タトゥ_五芒星_五角形CD = new ColorD(ref 体配色.刺青.Col1, ref Color2.Empty);
     	}
 
-    	private void 配色B0(体配色 体配色)
+    	private void 配色B0(BodyColorSet 体配色)
     	{
     		グローブ_グローブCD = new ColorD();
     		グローブ_縁1CD = new ColorD();
@@ -4634,7 +4634,7 @@ namespace SlaveMatrix
     		悪タトゥ_五芒星_五角形CD = new ColorD(ref 体配色.刺青.Col1, ref Color2.Empty);
     	}
 
-    	private void 配色C0(体配色 体配色)
+    	private void 配色C0(BodyColorSet 体配色)
     	{
     		グローブ_グローブCD = new ColorD();
     		グローブ_縁1CD = new ColorD();
@@ -4670,7 +4670,7 @@ namespace SlaveMatrix
     		悪タトゥ_五芒星_五角形CD = new ColorD(ref 体配色.刺青.Col1, ref Color2.Empty);
     	}
 
-    	private void 配色S0(体配色 体配色)
+    	private void 配色S0(BodyColorSet 体配色)
     	{
     		グローブ_グローブCD = new ColorD();
     		グローブ_縁1CD = new ColorD();
@@ -4706,7 +4706,7 @@ namespace SlaveMatrix
     		悪タトゥ_五芒星_五角形CD = new ColorD(ref 体配色.刺青.Col1, ref Color2.Empty);
     	}
 
-    	private void 配色L0(体配色 体配色)
+    	private void 配色L0(BodyColorSet 体配色)
     	{
     		グローブ_グローブCD = new ColorD();
     		グローブ_縁1CD = new ColorD();

@@ -7,7 +7,7 @@ namespace SlaveMatrix
     [Serializable]
     public class TorsoD : EleD
     {
-    	public bool 胴_表示 = true;
+    	public bool Torso_表示 = true;
 
     	public bool 筋肉_筋肉左_表示;
 
@@ -40,7 +40,7 @@ namespace SlaveMatrix
     		ThisType = GetType();
     	}
 
-    	public void Torso接続(EleD e)
+    	public void 胴接続(EleD e)
     	{
     		Chest_接続.Add(e);
     		e.Par = this;
@@ -84,7 +84,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override Ele GetEle(double DisUnit, ModeEventDispatcher Med, 体配色 体配色)
+    	public override Ele GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
     	{
     		return new Torso(DisUnit, 配色指定, 体配色, Med, this);
     	}

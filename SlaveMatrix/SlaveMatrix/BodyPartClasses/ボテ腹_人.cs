@@ -398,7 +398,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -416,14 +416,14 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public JointS 腹板_接続点 => new JointS(本体, X0Y0_腹, 0);
+    	public JointS 腹板_接続点 => new JointS(Body, X0Y0_腹, 0);
 
-    	public ボテ腹_人(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, ボテ腹_人D e)
+    	public ボテ腹_人(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, ボテ腹_人D e)
     	{
     		ボテ腹_人 ボテ腹_人2 = this;
     		ThisType = GetType();
-    		本体 = new Difs(Sta.胴体["ボテ腹"]);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs(Sta.胴体["ボテ腹"]);
+    		Pars pars = Body[0][0];
     		X0Y0_腹 = pars["腹"].ToPar();
     		X0Y0_ハイライト = pars["ハイライト"].ToPar();
     		X0Y0_臍 = pars["臍"].ToPar();
@@ -431,7 +431,7 @@ namespace SlaveMatrix
     		X0Y0_ハイライト左2 = pars["ハイライト左2"].ToPar();
     		X0Y0_ハイライト右1 = pars["ハイライト右1"].ToPar();
     		X0Y0_ハイライト右2 = pars["ハイライト右2"].ToPar();
-    		pars = 本体[0][1];
+    		pars = Body[0][1];
     		X0Y1_腹 = pars["腹"].ToPar();
     		X0Y1_ハイライト = pars["ハイライト"].ToPar();
     		X0Y1_臍 = pars["臍"].ToPar();
@@ -439,7 +439,7 @@ namespace SlaveMatrix
     		X0Y1_ハイライト左2 = pars["ハイライト左2"].ToPar();
     		X0Y1_ハイライト右1 = pars["ハイライト右1"].ToPar();
     		X0Y1_ハイライト右2 = pars["ハイライト右2"].ToPar();
-    		pars = 本体[0][2];
+    		pars = Body[0][2];
     		X0Y2_腹 = pars["腹"].ToPar();
     		X0Y2_ハイライト = pars["ハイライト"].ToPar();
     		X0Y2_臍 = pars["臍"].ToPar();
@@ -447,7 +447,7 @@ namespace SlaveMatrix
     		X0Y2_ハイライト左2 = pars["ハイライト左2"].ToPar();
     		X0Y2_ハイライト右1 = pars["ハイライト右1"].ToPar();
     		X0Y2_ハイライト右2 = pars["ハイライト右2"].ToPar();
-    		pars = 本体[0][3];
+    		pars = Body[0][3];
     		X0Y3_腹 = pars["腹"].ToPar();
     		X0Y3_ハイライト = pars["ハイライト"].ToPar();
     		X0Y3_臍 = pars["臍"].ToPar();
@@ -455,7 +455,7 @@ namespace SlaveMatrix
     		X0Y3_ハイライト左2 = pars["ハイライト左2"].ToPar();
     		X0Y3_ハイライト右1 = pars["ハイライト右1"].ToPar();
     		X0Y3_ハイライト右2 = pars["ハイライト右2"].ToPar();
-    		pars = 本体[0][4];
+    		pars = Body[0][4];
     		X0Y4_腹 = pars["腹"].ToPar();
     		X0Y4_ハイライト = pars["ハイライト"].ToPar();
     		X0Y4_臍 = pars["臍"].ToPar();
@@ -463,8 +463,8 @@ namespace SlaveMatrix
     		X0Y4_ハイライト左2 = pars["ハイライト左2"].ToPar();
     		X0Y4_ハイライト右1 = pars["ハイライト右1"].ToPar();
     		X0Y4_ハイライト右2 = pars["ハイライト右2"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -552,7 +552,7 @@ namespace SlaveMatrix
     		X0Y4_ハイライト右1CP = new ColorP(X0Y4_ハイライト右1, ハイライト右1CD, DisUnit, abj: true);
     		X0Y4_ハイライト右2CP = new ColorP(X0Y4_ハイライト右2, ハイライト右2CD, DisUnit, abj: true);
     		ハイライト濃度 = e.ハイライト濃度;
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     		尺度YB = 0.95;
     		double num = 1.0;
     		X0Y0_臍.BasePointBase = new Vector2D(X0Y0_臍.BasePointBase.X, 0.363449439772374);
@@ -591,14 +591,14 @@ namespace SlaveMatrix
 
     	public override void 描画0(RenderArea Are)
     	{
-    		本体.Draw(Are);
+    		Body.Draw(Are);
     		キスマーク.Draw(Are);
     		鞭痕.Draw(Are);
     	}
 
     	public override void 色更新()
     	{
-    		switch (本体.IndexY)
+    		switch (Body.IndexY)
     		{
     		case 0:
     			X0Y0_腹CP.Update();
@@ -648,12 +648,12 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		腹CD = new ColorD(ref Col.Black, ref 体配色.人肌O);
     		ハイライトCD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);

@@ -6,13 +6,13 @@ namespace SlaveMatrix
     [Serializable]
     public class Torso_蛇D : 長胴D
     {
-    	public bool 胴_鱗_表示 = true;
+    	public bool Torso_鱗_表示 = true;
 
-    	public bool 胴_鱗左_表示 = true;
+    	public bool Torso_鱗左_表示 = true;
 
-    	public bool 胴_鱗右_表示 = true;
+    	public bool Torso_鱗右_表示 = true;
 
-    	public bool 胴_表示 = true;
+    	public bool Torso_表示 = true;
 
     	public bool 輪_革_表示 = true;
 
@@ -56,7 +56,7 @@ namespace SlaveMatrix
     		e.接続情報 = ConnectionInfo.Torso_蛇_Torso_接続;
     	}
 
-    	public override Ele GetEle(double DisUnit, ModeEventDispatcher Med, 体配色 体配色)
+    	public override Ele GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
     	{
     		return new Torso_蛇(DisUnit, 配色指定, 体配色, Med, this);
     	}

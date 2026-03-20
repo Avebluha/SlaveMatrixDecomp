@@ -247,7 +247,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -263,59 +263,59 @@ namespace SlaveMatrix
     	public 射精(double DisUnit, 配色指定 配色指定, 主人公配色 体配色, ModeEventDispatcher Med, 射精D e)
     	{
     		ThisType = GetType();
-    		本体 = new Difs(Sta.カーソル["射精"]);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs(Sta.カーソル["射精"]);
+    		Pars pars = Body[0][0];
     		X0Y0_精液 = pars["精液"].ToPar();
-    		pars = 本体[0][1];
+    		pars = Body[0][1];
     		X0Y1_精液 = pars["精液"].ToPar();
-    		pars = 本体[0][2];
+    		pars = Body[0][2];
     		X0Y2_精液 = pars["精液"].ToPar();
-    		pars = 本体[0][3];
+    		pars = Body[0][3];
     		X0Y3_精液 = pars["精液"].ToPar();
-    		pars = 本体[0][4];
+    		pars = Body[0][4];
     		X0Y4_精液 = pars["精液"].ToPar();
-    		pars = 本体[0][5];
+    		pars = Body[0][5];
     		X0Y5_精液 = pars["精液"].ToPar();
-    		pars = 本体[0][6];
+    		pars = Body[0][6];
     		X0Y6_精液 = pars["精液"].ToPar();
-    		pars = 本体[1][0];
+    		pars = Body[1][0];
     		X1Y0_精液 = pars["精液"].ToPar();
-    		pars = 本体[1][1];
+    		pars = Body[1][1];
     		X1Y1_精液 = pars["精液"].ToPar();
-    		pars = 本体[1][2];
+    		pars = Body[1][2];
     		X1Y2_精液 = pars["精液"].ToPar();
-    		pars = 本体[1][3];
+    		pars = Body[1][3];
     		X1Y3_精液 = pars["精液"].ToPar();
-    		pars = 本体[1][4];
+    		pars = Body[1][4];
     		X1Y4_精液 = pars["精液"].ToPar();
-    		pars = 本体[1][5];
+    		pars = Body[1][5];
     		X1Y5_精液 = pars["精液"].ToPar();
-    		pars = 本体[1][6];
+    		pars = Body[1][6];
     		X1Y6_精液 = pars["精液"].ToPar();
-    		pars = 本体[1][7];
+    		pars = Body[1][7];
     		X1Y7_精液 = pars["精液"].ToPar();
-    		pars = 本体[1][8];
+    		pars = Body[1][8];
     		X1Y8_精液掛け = pars["精液掛け"].ToPar();
     		X1Y8_精液 = pars["精液"].ToPar();
-    		pars = 本体[1][9];
+    		pars = Body[1][9];
     		X1Y9_精液掛け = pars["精液掛け"].ToPar();
     		X1Y9_精液 = pars["精液"].ToPar();
-    		pars = 本体[1][10];
+    		pars = Body[1][10];
     		X1Y10_精液掛け = pars["精液掛け"].ToPar();
     		X1Y10_精液 = pars["精液"].ToPar();
-    		pars = 本体[1][11];
+    		pars = Body[1][11];
     		X1Y11_精液掛け = pars["精液掛け"].ToPar();
     		X1Y11_精液 = pars["精液"].ToPar();
-    		pars = 本体[1][12];
+    		pars = Body[1][12];
     		X1Y12_精液掛け = pars["精液掛け"].ToPar();
     		X1Y12_精液 = pars["精液"].ToPar();
-    		pars = 本体[1][13];
+    		pars = Body[1][13];
     		X1Y13_精液掛け = pars["精液掛け"].ToPar();
     		X1Y13_精液 = pars["精液"].ToPar();
-    		pars = 本体[1][14];
+    		pars = Body[1][14];
     		X1Y14_精液 = pars["精液"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -377,14 +377,14 @@ namespace SlaveMatrix
     		X1Y13_精液掛けCP = new ColorP(X1Y13_精液掛け, 精液掛けCD, DisUnit, abj: true);
     		X1Y13_精液CP = new ColorP(X1Y13_精液, 精液CD, DisUnit, abj: true);
     		X1Y14_精液CP = new ColorP(X1Y14_精液, 精液CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     	}
 
     	public override void 色更新()
     	{
-    		if (本体.IndexX == 0)
+    		if (Body.IndexX == 0)
     		{
-    			switch (本体.IndexY)
+    			switch (Body.IndexY)
     			{
     			case 0:
     				X0Y0_精液CP.Update();
@@ -410,7 +410,7 @@ namespace SlaveMatrix
     			}
     			return;
     		}
-    		switch (本体.IndexY)
+    		switch (Body.IndexY)
     		{
     		case 0:
     			X1Y0_精液CP.Update();

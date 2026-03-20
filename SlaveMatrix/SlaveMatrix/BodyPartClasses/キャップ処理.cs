@@ -32,7 +32,7 @@ namespace SlaveMatrix
 
     	private bool ハンドf;
 
-    	private Mot キャップ振動;
+    	private Motion キャップ振動;
 
     	private bool キャップ中_;
 
@@ -273,7 +273,7 @@ namespace SlaveMatrix
     				キャップ[Bod.キャップ1].DraShow = true;
     				キャップ[Bod.キャップ1].StaShow = true;
     				キャップ[Bod.キャップ1].描画Show = true;
-    				キャップ[Bod.キャップ1].Ele.濃度 = 0.5;
+    				キャップ[Bod.キャップ1].Ele.Intensity = 0.5;
     				キャップ[Bod.キャップ1].使用状態 = UsageStatus.Standby;
     				キャップ.Remove(Bod.キャップ1);
     			}
@@ -289,7 +289,7 @@ namespace SlaveMatrix
     			{
     				if (キャップ中着 && (cd.e is キャップ1 || cd.c == ContactType.Nucleus))
     				{
-    					調教UI.ハンド右.本体.IndexX = 5;
+    					調教UI.ハンド右.Body.IndexX = 5;
     					調教UI.Set_キャップ中(調教UI.ハンド右);
     					切替時(キャップ中);
     				}
@@ -298,28 +298,28 @@ namespace SlaveMatrix
     					調教UI.ハンド右CM.Show = false;
     					調教UI.ハンド左表示 = true;
     					調教UI.ハンド左.位置B = cp;
-    					調教UI.ハンド左.本体.IndexX = 5;
+    					調教UI.ハンド左.Body.IndexX = 5;
     					調教UI.Set_キャップ左(調教UI.ハンド左);
     					切替時(キャップ左);
     				}
     				else if (キャップ右着 && (cd.e is キャップ2 || cd.c == ContactType.Milk) && cd.e.右)
     				{
-    					調教UI.ハンド右.本体.IndexX = 5;
+    					調教UI.ハンド右.Body.IndexX = 5;
     					調教UI.Set_キャップ右(調教UI.ハンド右);
     					切替時(キャップ右);
     				}
-    				else if (cd.c != ContactType.Milk && (キャップ中着 || キャップ左着 || キャップ右着) && (調教UI.ハンド右.本体.IndexX == 5 || 調教UI.ハンド左.本体.IndexX == 5))
+    				else if (cd.c != ContactType.Milk && (キャップ中着 || キャップ左着 || キャップ右着) && (調教UI.ハンド右.Body.IndexX == 5 || 調教UI.ハンド左.Body.IndexX == 5))
     				{
     					調教UI.ハンド左表示 = false;
     					調教UI.ハンド右CM.Show = true;
-    					調教UI.ハンド右.本体.IndexX = 0;
-    					調教UI.ハンド左.本体.IndexX = 0;
+    					調教UI.ハンド右.Body.IndexX = 0;
+    					調教UI.ハンド左.Body.IndexX = 0;
     				}
     			}
     		}
     		else if (調教UI.Focus == キャップ1 || 調教UI.Focus == キャップ2 || 調教UI.Focus == キャップ3)
     		{
-    			if (!キャップ中着 && (cd.e is キャップ1 || cd.c == ContactType.Nucleus) && (Cha.ChaD.股施術 || (!Cha.Bod.Is蠍 && (!Cha.Bod.Is蛇 || !Cha.Bod.蛇.ガード))))
+    			if (!キャップ中着 && (cd.e is キャップ1 || cd.c == ContactType.Nucleus) && (Cha.CharacterData.股施術 || (!Cha.Body.Is蠍 && (!Cha.Body.Is蛇 || !Cha.Body.蛇.ガード))))
     			{
     				調教UI.押し(ref cd);
     				調教UI.Focus.DraShow = false;
@@ -376,7 +376,7 @@ namespace SlaveMatrix
 
     	public void Down(ref MouseButtons mb, ref Vector2D cp, ref Vector2D op, ref Color hc, ref ContactD cd)
     	{
-    		if (調教UI.Focus.Ele.濃度 == 1.0)
+    		if (調教UI.Focus.Ele.Intensity == 1.0)
     		{
     			if (ハンドf)
     			{
@@ -419,7 +419,7 @@ namespace SlaveMatrix
     						キャップ[Bod.キャップ1].DraShow = true;
     						キャップ[Bod.キャップ1].StaShow = true;
     						キャップ[Bod.キャップ1].描画Show = true;
-    						キャップ[Bod.キャップ1].Ele.濃度 = 0.5;
+    						キャップ[Bod.キャップ1].Ele.Intensity = 0.5;
     						キャップ[Bod.キャップ1].使用状態 = UsageStatus.Standby;
     						キャップ.Remove(Bod.キャップ1);
     						キャップ中着 = false;
@@ -459,7 +459,7 @@ namespace SlaveMatrix
     						キャップ[Bod.キャップ2左].DraShow = true;
     						キャップ[Bod.キャップ2左].StaShow = true;
     						キャップ[Bod.キャップ2左].描画Show = true;
-    						キャップ[Bod.キャップ2左].Ele.濃度 = 0.5;
+    						キャップ[Bod.キャップ2左].Ele.Intensity = 0.5;
     						キャップ[Bod.キャップ2左].使用状態 = UsageStatus.Standby;
     						キャップ.Remove(Bod.キャップ2左);
     						キャップ左着 = false;
@@ -503,7 +503,7 @@ namespace SlaveMatrix
     						キャップ[Bod.キャップ2右].DraShow = true;
     						キャップ[Bod.キャップ2右].StaShow = true;
     						キャップ[Bod.キャップ2右].描画Show = true;
-    						キャップ[Bod.キャップ2右].Ele.濃度 = 0.5;
+    						キャップ[Bod.キャップ2右].Ele.Intensity = 0.5;
     						キャップ[Bod.キャップ2右].使用状態 = UsageStatus.Standby;
     						キャップ.Remove(Bod.キャップ2右);
     						キャップ右着 = false;
@@ -518,7 +518,7 @@ namespace SlaveMatrix
     				}
     				if (mb == MouseButtons.Left)
     				{
-    					if (!キャップ中着 && (cd.c == ContactType.Nucleus || cd.e == Bod.キャップ1) && (Cha.ChaD.股施術 || (!Cha.Bod.Is蠍 && (!Cha.Bod.Is蛇 || !Cha.Bod.蛇.ガード))))
+    					if (!キャップ中着 && (cd.c == ContactType.Nucleus || cd.e == Bod.キャップ1) && (Cha.CharacterData.股施術 || (!Cha.Body.Is蠍 && (!Cha.Body.Is蛇 || !Cha.Body.蛇.ガード))))
     					{
     						Bod.Setキャップ1 = キャップ着;
     						キャップ.Add(Bod.キャップ1, 調教UI.Focus);
@@ -597,21 +597,21 @@ namespace SlaveMatrix
     		調教UI.キャップ1.配色(配色);
     		調教UI.キャップ2.配色(配色);
     		調教UI.キャップ3.配色(配色);
-    		調教UI.キャップ1.濃度 = 0.5;
-    		調教UI.キャップ2.濃度 = 0.5;
-    		調教UI.キャップ3.濃度 = 0.5;
+    		調教UI.キャップ1.Intensity = 0.5;
+    		調教UI.キャップ2.Intensity = 0.5;
+    		調教UI.キャップ3.Intensity = 0.5;
     		調教UI.キャップ1CM = キャップ1;
     		調教UI.キャップ2CM = キャップ2;
     		調教UI.キャップ3CM = キャップ3;
     		double d = 0.0005;
     		Vector2D p = Dat.Vec2DZero;
-    		キャップ振動 = new Mot(-1.0, 1.0)
+    		キャップ振動 = new Motion(-1.0, 1.0)
     		{
     			BaseSpeed = double.MaxValue,
-    			Staing = delegate
+    			OnStart = delegate
     			{
     			},
-    			Runing = delegate(Mot m)
+    			OnUpdate = delegate(Motion m)
     			{
     				if (キャップ処理2.キャップ左_)
     				{
@@ -641,13 +641,13 @@ namespace SlaveMatrix
     					キャップ処理2.振動(キャップ処理2.Bod.キャップ1);
     				}
     			},
-    			Reaing = delegate
+    			OnReach = delegate
     			{
     			},
-    			Rouing = delegate
+    			OnLoop = delegate
     			{
     			},
-    			Ending = delegate(Mot m)
+    			OnEnd = delegate(Motion m)
     			{
     				m.ResetValue();
     				キャップ処理2.Bod.キャップ2左.位置C = Dat.Vec2DZero;
@@ -658,10 +658,10 @@ namespace SlaveMatrix
     		調教UI.Mots.Add(キャップ振動.GetHashCode().ToString(), キャップ振動);
     	}
 
-    	public void SetCha(Cha Cha)
+    	public void SetCha(Character Cha)
     	{
     		base.Cha = Cha;
-    		Bod = Cha.Bod;
+    		Bod = Cha.Body;
     	}
 
     	public new void Reset()
@@ -700,19 +700,19 @@ namespace SlaveMatrix
     		キャップ1.DraShow = true;
     		キャップ1.StaShow = true;
     		キャップ1.描画Show = true;
-    		キャップ1.Ele.濃度 = 0.5;
+    		キャップ1.Ele.Intensity = 0.5;
     		キャップ1.使用状態 = UsageStatus.Standby;
     		キャップ2.Show = true;
     		キャップ2.DraShow = true;
     		キャップ2.StaShow = true;
     		キャップ2.描画Show = true;
-    		キャップ2.Ele.濃度 = 0.5;
+    		キャップ2.Ele.Intensity = 0.5;
     		キャップ2.使用状態 = UsageStatus.Standby;
     		キャップ3.Show = true;
     		キャップ3.DraShow = true;
     		キャップ3.StaShow = true;
     		キャップ3.描画Show = true;
-    		キャップ3.Ele.濃度 = 0.5;
+    		キャップ3.Ele.Intensity = 0.5;
     		キャップ3.使用状態 = UsageStatus.Standby;
     		base.Reset();
     		CP中.Reset();
@@ -733,9 +733,9 @@ namespace SlaveMatrix
     		キャップ左 = false;
     		キャップ右 = false;
     		キャップ着.SetDefault();
-    		調教UI.キャップ1.濃度 = 0.5;
-    		調教UI.キャップ2.濃度 = 0.5;
-    		調教UI.キャップ3.濃度 = 0.5;
+    		調教UI.キャップ1.Intensity = 0.5;
+    		調教UI.キャップ2.Intensity = 0.5;
+    		調教UI.キャップ3.Intensity = 0.5;
     	}
     }
 }

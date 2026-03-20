@@ -18,9 +18,9 @@ namespace SlaveMatrix
 
     	public bool Is体撫で;
 
-    	public Mot バスト初期化;
+    	public Motion バスト初期化;
 
-    	public Mot くぱぁ中;
+    	public Motion くぱぁ中;
 
     	private bool 核捏ね初;
 
@@ -730,7 +730,7 @@ namespace SlaveMatrix
     					切り替え = false;
     					return;
     				}
-    				調教UI.Focus.Ele.濃度 = 0.5;
+    				調教UI.Focus.Ele.Intensity = 0.5;
     				調教UI.Focus = 調教UI.ペニスCM;
     				調教UI.ペニスCM.Ele.位置B = cp;
     				調教UI.ペニス処理.選択 = true;
@@ -751,7 +751,7 @@ namespace SlaveMatrix
     				切り替え = false;
     				return;
     			}
-    			調教UI.Focus.Ele.濃度 = 0.5;
+    			調教UI.Focus.Ele.Intensity = 0.5;
     			調教UI.Focus = 調教UI.マウスCM;
     			調教UI.マウスCM.Ele.位置B = cp;
     			調教UI.マウス処理.Move(ref mb, ref cp, ref hc, ref cd);
@@ -859,8 +859,8 @@ namespace SlaveMatrix
     			調教UI.Set_乳首(調教UI.ハンド左, 右: false);
     			調教UI.押し(ref cd);
     			乳繰りモード(ref cd);
-    			調教UI.ハンド右.Yi = (調教UI.ハンド右.Yi + dt.Sign() * 2).Clamp(0, 調教UI.ハンド右.本体.CountY);
-    			調教UI.ハンド左.Yi = (調教UI.ハンド左.Yi - dt.Sign() * 2).Clamp(0, 調教UI.ハンド左.本体.CountY);
+    			調教UI.ハンド右.Yi = (調教UI.ハンド右.Yi + dt.Sign() * 2).Clamp(0, 調教UI.ハンド右.Body.CountY);
+    			調教UI.ハンド左.Yi = (調教UI.ハンド左.Yi - dt.Sign() * 2).Clamp(0, 調教UI.ハンド左.Body.CountY);
     			乳繰りsi();
     			調教UI.乳首演出();
     		}
@@ -872,15 +872,15 @@ namespace SlaveMatrix
     		ハンド処理 ハンド処理2 = this;
     		double d = 1.0;
     		bool f = false;
-    		バスト初期化 = new Mot(0.0, 1.0)
+    		バスト初期化 = new Motion(0.0, 1.0)
     		{
     			BaseSpeed = 1.0,
-    			Staing = delegate
+    			OnStart = delegate
     			{
     				f = ハンド処理2.Bod.乳房右.Yi <= 2;
     				d = ハンド処理2.Bod.乳房右.Yv;
     			},
-    			Runing = delegate(Mot m)
+    			OnUpdate = delegate(Motion m)
     			{
     				if (f)
     				{
@@ -913,14 +913,14 @@ namespace SlaveMatrix
     					}
     				}
     			},
-    			Reaing = delegate(Mot m)
+    			OnReach = delegate(Motion m)
     			{
     				m.End();
     			},
-    			Rouing = delegate
+    			OnLoop = delegate
     			{
     			},
-    			Ending = delegate(Mot m)
+    			OnEnd = delegate(Motion m)
     			{
     				m.ResetValue();
     				ハンド処理2.Bod.乳房右.Yi = 0;
@@ -928,24 +928,24 @@ namespace SlaveMatrix
     			}
     		};
     		調教UI.Mots.Add(バスト初期化.GetHashCode().ToString(), バスト初期化);
-    		くぱぁ中 = new Mot(0.0, 1.0)
+    		くぱぁ中 = new Motion(0.0, 1.0)
     		{
     			BaseSpeed = 1.0,
-    			Staing = delegate
+    			OnStart = delegate
     			{
     			},
-    			Runing = delegate
+    			OnUpdate = delegate
     			{
     				調教UI.Action(ContactType.Crotch, ActionType.くぱ, CurrentState.Continue, ToolType.Hand, 0, 1, 機械: false, 射精: false);
     				Player.奴体力消費小();
     			},
-    			Reaing = delegate
+    			OnReach = delegate
     			{
     			},
-    			Rouing = delegate
+    			OnLoop = delegate
     			{
     			},
-    			Ending = delegate(Mot m)
+    			OnEnd = delegate(Motion m)
     			{
     				m.ResetValue();
     			}
@@ -953,10 +953,10 @@ namespace SlaveMatrix
     		調教UI.Mots.Add(くぱぁ中.GetHashCode().ToString(), くぱぁ中);
     	}
 
-    	public void SetCha(Cha Cha)
+    	public void SetCha(Character Cha)
     	{
     		base.Cha = Cha;
-    		Bod = Cha.Bod;
+    		Bod = Cha.Body;
     	}
 
     	public new void Reset()

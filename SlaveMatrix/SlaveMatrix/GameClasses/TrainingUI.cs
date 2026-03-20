@@ -20,9 +20,9 @@ namespace SlaveMatrix
     	public RenderArea Are; 
         private RenderArea Film;
 
-        public Cha Cha;
+        public Character Cha;
 
-    	public Bod Bod;
+    	public Body Bod;
 
     	public InfoPanel ip;
 
@@ -139,9 +139,9 @@ namespace SlaveMatrix
 
         public 射精 射精;
 
-    	public Mot 絶頂ゲージ点滅;
-    	public Mot 射精ゲージ点滅;
-    	public Mots Mots = new Mots();
+    	public Motion 絶頂ゲージ点滅;
+    	public Motion 射精ゲージ点滅;
+    	public Motions Mots = new Motions();
 
 
         //moan queue :skull:
@@ -188,7 +188,7 @@ namespace SlaveMatrix
     		{
     			if (!ペニス挿入.Is膣 && !ペニス挿入.Is肛 && !ペニス挿入.Is糸 && !マウス挿入.Is膣 && !マウス挿入.Is肛 && !マウス挿入.Is糸 && !ハンド挿入.Is膣 && !ハンド挿入.Is肛 && !ハンド挿入.Is糸 && !ロータ挿入.Is膣 && !ロータ挿入.Is肛 && !ロータ挿入.Is糸 && !コモン挿入.Is膣 && !コモン挿入.Is肛 && !コモン挿入.Is糸 && !ディル挿入.Is膣 && !ディル挿入.Is肛 && !ディル挿入.Is糸 && !アナル挿入.Is膣 && !アナル挿入.Is肛 && !アナル挿入.Is糸 && !デンマ挿入.Is膣 && !デンマ挿入.Is肛 && !デンマ挿入.Is糸 && !ドリル挿入.Is膣 && !ドリル挿入.Is肛 && !ドリル挿入.Is糸 && !パール挿入.Is膣 && !パール挿入.Is肛 && !パール挿入.Is糸 && !ハンド処理.Isくぱぁ && !Player.Is性器接触)
     			{
-    				return Cha.Is放尿();
+    				return Cha.IsUrinating();
     			}
     			return true;
     		}
@@ -241,7 +241,7 @@ namespace SlaveMatrix
     		{
     			FocusReset();
     			Focus_nr = value;
-    			if (Med.Mode == "Training" && Cha != null && Cha.ChaD.Lust > 0.5 && RNG.XS.NextBool())
+    			if (Med.Mode == "Training" && Cha != null && Cha.CharacterData.Lust > 0.5 && RNG.XS.NextBool())
     			{
     				Cha.EyeTracking.Start();
     			}
@@ -259,7 +259,7 @@ namespace SlaveMatrix
     			focus = value;
     			focus.StaShow = false;
     			focus.使用状態 = UsageStatus.InUse;
-    			focus.Ele.濃度 = 1.0;
+    			focus.Ele.Intensity = 1.0;
     			if (focus == 羽根箒CM)
     			{
     				羽根箒.角度B = -90.0;
@@ -810,7 +810,7 @@ namespace SlaveMatrix
 
     	public void Set_口(Ele t)
     	{
-    		Par par = Bod.口.本体.Current.EnumAllPar().First((Par e) => e.Tag == "口");
+    		Par par = Bod.口.Body.Current.EnumAllPar().First((Par e) => e.Tag == "口");
     		Bod.口.接続PA();
     		t.位置B = par.Position;
     	}
@@ -865,14 +865,14 @@ namespace SlaveMatrix
 
     	public void Set_陰核(Ele t)
     	{
-    		Par par = Bod.性器.本体.Current.EnumAllPar().First((Par e) => e.Tag == "陰核");
+    		Par par = Bod.性器.Body.Current.EnumAllPar().First((Par e) => e.Tag == "陰核");
     		Bod.性器.接続PA();
     		t.位置B = par.Position;
     	}
 
     	public void Set_膣口(Ele t)
     	{
-    		Par par = Bod.性器.本体.Current.EnumAllPar().First((Par e) => e.Tag == "膣口");
+    		Par par = Bod.性器.Body.Current.EnumAllPar().First((Par e) => e.Tag == "膣口");
     		Bod.性器.接続PA();
     		t.位置B = par.Position;
     	}
@@ -891,8 +891,8 @@ namespace SlaveMatrix
 
     	public void Set_くぱぁ(Ele t, bool 右)
     	{
-    		Par par = (Bod.Is獣 ? Bod.腰_獣.本体.Current.EnumAllPar().First((Par e) => e.Tag == "股") : Bod.腰.本体.Current.EnumAllPar().First((Par e) => e.Tag == "股"));
-    		Bod.腰.接続PA();
+    		Par par = (Bod.Is獣 ? Bod.Waist_獣.Body.Current.EnumAllPar().First((Par e) => e.Tag == "股") : Bod.Waist.Body.Current.EnumAllPar().First((Par e) => e.Tag == "股"));
+    		Bod.Waist.接続PA();
     		if (右)
     		{
     			t.位置B = par.Position.AddXY(0.018, 0.002);
@@ -964,43 +964,43 @@ namespace SlaveMatrix
 
     	private 挿入処理 Get挿入処理(ref Color hc)
     	{
-    		if (ペニス.本体.IsHit(ref hc))
+    		if (ペニス.Body.IsHit(ref hc))
     		{
     			return ペニス挿入;
     		}
-    		if (マウス.本体.IsHit(ref hc))
+    		if (マウス.Body.IsHit(ref hc))
     		{
     			return マウス挿入;
     		}
-    		if (ハンド右.本体.IsHit(ref hc))
+    		if (ハンド右.Body.IsHit(ref hc))
     		{
     			return ハンド挿入;
     		}
-    		if (ロータ.本体.IsHit(ref hc))
+    		if (ロータ.Body.IsHit(ref hc))
     		{
     			return ロータ挿入;
     		}
-    		if (コモン.本体.IsHit(ref hc))
+    		if (コモン.Body.IsHit(ref hc))
     		{
     			return コモン挿入;
     		}
-    		if (ディル.本体.IsHit(ref hc))
+    		if (ディル.Body.IsHit(ref hc))
     		{
     			return ディル挿入;
     		}
-    		if (アナル.本体.IsHit(ref hc))
+    		if (アナル.Body.IsHit(ref hc))
     		{
     			return アナル挿入;
     		}
-    		if (デンマ.本体.IsHit(ref hc))
+    		if (デンマ.Body.IsHit(ref hc))
     		{
     			return デンマ挿入;
     		}
-    		if (ドリル.本体.IsHit(ref hc))
+    		if (ドリル.Body.IsHit(ref hc))
     		{
     			return ドリル挿入;
     		}
-    		if (パール.本体.IsHit(ref hc))
+    		if (パール.Body.IsHit(ref hc))
     		{
     			return パール挿入;
     		}
@@ -1066,7 +1066,7 @@ namespace SlaveMatrix
     			調教鞭.Yi = 2;
     			focus.Ele.角度C = 0.0;
     		}
-    		focus.Ele.本体.JoinPAall();
+    		focus.Ele.Body.JoinPAall();
     	}
 
     	public void Set持ち手()
@@ -1079,7 +1079,7 @@ namespace SlaveMatrix
     			ハンド右.角度C = 0.0;
     			ハンド右.Xi = 0;
     			ハンド右.Yi = 0;
-    			ハンド右.本体.JoinPA();
+    			ハンド右.Body.JoinPA();
     			return;
     		}
     		持ち手 = true;
@@ -1109,7 +1109,7 @@ namespace SlaveMatrix
     			ハンド右.Xi = 5;
     			Set_キャップ3(ハンド右);
     		}
-    		ハンド右.本体.JoinPA();
+    		ハンド右.Body.JoinPA();
     	}
 
     	public void Joi持ち手()
@@ -1180,7 +1180,7 @@ namespace SlaveMatrix
     	{
     		if (持ち手)
     		{
-    			ハンド右.濃度 = 0.2;
+    			ハンド右.Intensity = 0.2;
     		}
     	}
 
@@ -1188,7 +1188,7 @@ namespace SlaveMatrix
     	{
     		if (持ち手)
     		{
-    			ハンド右.濃度 = 1.0;
+    			ハンド右.Intensity = 1.0;
     		}
     	}
 
@@ -1197,7 +1197,7 @@ namespace SlaveMatrix
     		if (持ち手)
     		{
     			Joi持ち手();
-    			ハンド右.本体.JoinPA();
+    			ハンド右.Body.JoinPA();
     			ハンド右.色更新();
     			if (ハンド右.Xi == 11)
     			{
@@ -1338,7 +1338,7 @@ namespace SlaveMatrix
 
     	public void 通常放し()
     	{
-    		focus.Ele.濃度 = 0.5;
+    		focus.Ele.Intensity = 0.5;
     		Focus = ハンド右CM;
     		if (Med.Mode == "Training")
     		{
@@ -1581,16 +1581,16 @@ namespace SlaveMatrix
     		if (!Bod.Is拘束 && Bod.脚人n > 0)
     		{
     			Cha.Leg();
-    			Cha.Bod.腿Update();
+    			Cha.Body.腿Update();
     		}
     	}
 
     	public void 腕修正()
     	{
-    		if (!Bod.Is拘束 && Bod.腕人n > 0 && Bod.Is最前腕人)
+    		if (!Bod.Is拘束 && Bod.Arm人n > 0 && Bod.Is最前腕人)
     		{
     			Cha.腕();
-    			Cha.Bod.EI腕前.Updatef = true;
+    			Cha.Body.EI腕前.Updatef = true;
     		}
     	}
 
@@ -1633,32 +1633,32 @@ namespace SlaveMatrix
     		if (IsTool = X < cp.X && cp.Y < Y && mb != MouseButtons.Left && !Isモード)
     		{
     			Med.CursorShow();
-    			if (focus.Ele.濃度 == 1.0)
+    			if (focus.Ele.Intensity == 1.0)
     			{
-    				Focus.Ele.濃度 = 0.2;
+    				Focus.Ele.Intensity = 0.2;
     			}
     			In持ち手();
     			Color hc_ = hc;
     			hcm = (from e in EnumCM()
     				where e.使用状態 == UsageStatus.Standby
-    				select e).FirstOrDefault((CM e) => e.Ele.本体.IsHit(ref hc_));
+    				select e).FirstOrDefault((CM e) => e.Ele.Body.IsHit(ref hc_));
     			if (hcm != null)
     			{
     				foreach (CM item in from e in EnumCM()
     					where e.使用状態 == UsageStatus.Standby
     					select e)
     				{
-    					item.Ele.濃度 = 0.5;
+    					item.Ele.Intensity = 0.5;
     				}
-    				hcm.Ele.濃度 = 1.0;
+    				hcm.Ele.Intensity = 1.0;
     			}
     			else
     			{
     				foreach (CM item2 in from e in EnumCM()
-    					where e.使用状態 == UsageStatus.Standby && e.Ele.濃度 == 1.0
+    					where e.使用状態 == UsageStatus.Standby && e.Ele.Intensity == 1.0
     					select e)
     				{
-    					item2.Ele.濃度 = 0.5;
+    					item2.Ele.Intensity = 0.5;
     				}
     			}
     		}
@@ -1672,16 +1672,16 @@ namespace SlaveMatrix
     			{
     				Med.CursorHide();
     			}
-    			if (focus.Ele.濃度 == 0.2)
+    			if (focus.Ele.Intensity == 0.2)
     			{
-    				Focus.Ele.濃度 = 1.0;
+    				Focus.Ele.Intensity = 1.0;
     			}
     			Out持ち手();
     			foreach (CM item3 in from e in EnumCM()
-    				where e.使用状態 == UsageStatus.Standby && e.Ele.濃度 == 1.0
+    				where e.使用状態 == UsageStatus.Standby && e.Ele.Intensity == 1.0
     				select e)
     			{
-    				item3.Ele.濃度 = 0.5;
+    				item3.Ele.Intensity = 0.5;
     			}
     			if (!Isモード)
     			{
@@ -1719,7 +1719,7 @@ namespace SlaveMatrix
     			bool flag = true;
     			foreach (挿入処理 item4 in SubFocus)
     			{
-    				if (flag = item4.対象.Ele.本体.IsHit(ref hc))
+    				if (flag = item4.対象.Ele.Body.IsHit(ref hc))
     				{
     					if (item4.対象 == ロータCM)
     					{
@@ -1916,17 +1916,17 @@ namespace SlaveMatrix
     			Color hc_ = hc;
     			CM cM = (from e in EnumCM()
     				where e.使用状態 == UsageStatus.Standby
-    				select e).FirstOrDefault((CM e) => e.Ele.本体.IsHit(ref hc_));
+    				select e).FirstOrDefault((CM e) => e.Ele.Body.IsHit(ref hc_));
     			if (cM != null)
     			{
-    				Focus.Ele.濃度 = 0.5;
+    				Focus.Ele.Intensity = 0.5;
     				Focus = cM;
-    				Focus.Ele.濃度 = 0.2;
+    				Focus.Ele.Intensity = 0.2;
     				Focus.Ele.位置B = Med.CursorPosition;
     				Set持ち手();
     				if (持ち手)
     				{
-    					ハンド右.濃度 = 0.2;
+    					ハンド右.Intensity = 0.2;
     				}
     				else
     				{
@@ -2442,7 +2442,7 @@ namespace SlaveMatrix
     				}
     				調教UI2.Film.DisplayLayer.Save(Path + "\\" + now.ToString("yyyy_MM_dd_HH_mm_ss") + ".png", ImageFormat.Png);
     				ip.SubInfoIm = GameText.撮影しました + "\r\n" + GameText.写真はPhotoフォルダに保存されます;
-    				if (Sta.GameData.TrainingTarget.Trained && !調教UI2.Cha.Bod.Is拘束 && 調教UI2.Cha.Bod.Is腕人 && !Sta.GameData.TrainingTarget.ChaD.撮影ピース経験)
+    				if (Sta.GameData.TrainingTarget.Trained && !調教UI2.Cha.Body.Is拘束 && 調教UI2.Cha.Body.Is腕人 && !Sta.GameData.TrainingTarget.ChaD.撮影ピース経験)
     				{
     					ip.Text = GameText.愛想が悪い + "\r\n" + GameText.ダブルピースさせますか;
     					ip.Mai.Done = delegate
@@ -2452,7 +2452,7 @@ namespace SlaveMatrix
     							//Sounds.操作.Play();
     							Sta.GameData.TrainingTarget.ChaD.撮影ピース経験 = true;
     							調教UI2.Cha.Setダブルピース();
-    							調教UI2.Cha.Bod.Update();
+    							調教UI2.Cha.Body.Update();
     							ip.選択肢表示 = false;
     							ip.MaiShow = false;
     						};
@@ -2546,45 +2546,45 @@ namespace SlaveMatrix
     			Player.ゲージ降下処理.Start();
     			擬音 = new Onomatopoeia();
     			AddBoxes();
-    			絶頂ゲージ点滅 = new Mot(0.0, 1.0)
+    			絶頂ゲージ点滅 = new Motion(0.0, 1.0)
     			{
     				BaseSpeed = 2.0,
-    				Staing = delegate
+    				OnStart = delegate
     				{
     				},
-    				Runing = delegate(Mot m)
+    				OnUpdate = delegate(Motion m)
     				{
     					調教UI2.絶頂sゲージ.SetAlphaG(m.Value);
     				},
-    				Reaing = delegate
+    				OnReach = delegate
     				{
     				},
-    				Rouing = delegate
+    				OnLoop = delegate
     				{
     				},
-    				Ending = delegate
+    				OnEnd = delegate
     				{
     					調教UI2.絶頂sゲージ.SetAlphaG(1.0);
     				}
     			};
     			Mots.Add(絶頂ゲージ点滅.GetHashCode().ToString(), 絶頂ゲージ点滅);
-    			射精ゲージ点滅 = new Mot(0.0, 1.0)
+    			射精ゲージ点滅 = new Motion(0.0, 1.0)
     			{
     				BaseSpeed = 2.0,
-    				Staing = delegate
+    				OnStart = delegate
     				{
     				},
-    				Runing = delegate(Mot m)
+    				OnUpdate = delegate(Motion m)
     				{
     					調教UI2.射精mゲージ.SetAlphaG(m.Value);
     				},
-    				Reaing = delegate
+    				OnReach = delegate
     				{
     				},
-    				Rouing = delegate
+    				OnLoop = delegate
     				{
     				},
-    				Ending = delegate
+    				OnEnd = delegate
     				{
     					調教UI2.射精mゲージ.SetAlphaG(1.0);
     				}
@@ -2596,7 +2596,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public void SetTarget(Unit Unit, Cha Cha)
+    	public void SetTarget(Unit Unit, Character Cha)
     	{
     		if (this.Cha != null)
     		{
@@ -2604,7 +2604,7 @@ namespace SlaveMatrix
     			this.Cha.放尿擬音 = null;
     		}
     		this.Cha = Cha;
-    		Bod = Cha.Bod;
+    		Bod = Cha.Body;
     		Bod.カーソル = this;
     		ペニス挿入.SetCha(Cha);
     		マウス挿入.SetCha(Cha);
@@ -2669,7 +2669,7 @@ namespace SlaveMatrix
     			Bod.断面_表示 = Sta.GameData.断面;
     		}
     		断面.Dra = Sta.GameData.心眼;
-    		媚薬.Dra = Sta.GameData.媚薬 && !Cha.ChaD.タトゥ;
+    		媚薬.Dra = Sta.GameData.媚薬 && !Cha.CharacterData.タトゥ;
     		拘束具.Dra = Unit.Trained;
     		SlaveStamina.Dra = Sta.StaminaButton;
     		PlayerStamina.Dra = Sta.StaminaButton;
@@ -2677,7 +2677,7 @@ namespace SlaveMatrix
 
     	public void Reset()
     	{
-    		foreach (Mot value in Mots.ms.Values)
+    		foreach (Motion value in Mots.ms.Values)
     		{
     			if (value != Player.ゲージ降下処理)
     			{
@@ -2700,7 +2700,7 @@ namespace SlaveMatrix
     			ハンド右.X11Y0_呪印_輪3_輪内.ReverseX();
     			ハンド右.X11Y0_呪印_鎖1.ReverseX();
     			ハンド右.X11Y0_呪印_鎖3.ReverseX();
-    			ハンド右.本体.JoinPA();
+    			ハンド右.Body.JoinPA();
     		}
     		Focus = ハンド右CM;
     		通常放し();
@@ -2724,7 +2724,7 @@ namespace SlaveMatrix
     		マウスCM.Reset();
     		ハンド右CM.Reset();
     		ハンド左CM.Reset();
-    		ハンド左.濃度 = 1.0;
+    		ハンド左.Intensity = 1.0;
     		ハンド左.SetHitFalse();
     		ロータCM.Reset();
     		コモンCM.Reset();
@@ -2873,7 +2873,7 @@ namespace SlaveMatrix
     		{
     			射精.位置B = ペニス.位置B;
     			射精.色更新();
-    			射精.本体.Draw(Are);
+    			射精.Body.Draw(Are);
     		}
     		foreach (挿入処理 item in SubFocus)
     		{

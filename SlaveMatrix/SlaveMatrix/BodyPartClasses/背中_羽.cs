@@ -91,7 +91,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -104,20 +104,20 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 背中_羽(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 背中_羽D e)
+    	public 背中_羽(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 背中_羽D e)
     	{
     		ThisType = GetType();
     		Dif dif = new Dif();
     		dif.Tag = "羽毛";
     		dif.Add(new Pars(Sta.肢中["背中"][0][0]));
-    		本体 = new Difs();
-    		本体.Tag = dif.Tag;
-    		本体.Add(dif);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs();
+    		Body.Tag = dif.Tag;
+    		Body.Add(dif);
+    		Pars pars = Body[0][0];
     		X0Y0_羽毛1 = pars["羽毛1"].ToPar();
     		X0Y0_羽毛2 = pars["羽毛2"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -157,7 +157,7 @@ namespace SlaveMatrix
     		配色(体配色);
     		X0Y0_羽毛1CP = new ColorP(X0Y0_羽毛1, 羽毛1CD, DisUnit, abj: true);
     		X0Y0_羽毛2CP = new ColorP(X0Y0_羽毛2, 羽毛2CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     	}
 
     	public void 毛()
@@ -172,7 +172,7 @@ namespace SlaveMatrix
     		X0Y0_羽毛2CP.Update();
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		switch (配色指定)
     		{
@@ -191,19 +191,19 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		羽毛1CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
     		羽毛2CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
     	}
 
-    	private void 配色T0(体配色 体配色)
+    	private void 配色T0(BodyColorSet 体配色)
     	{
     		羽毛1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
     		羽毛2CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
     	}
 
-    	private void 配色T1(体配色 体配色)
+    	private void 配色T1(BodyColorSet 体配色)
     	{
     		羽毛1CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
     		羽毛2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);

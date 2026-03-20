@@ -691,7 +691,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -743,16 +743,16 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 前髪_上げ長1(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 前髪_上げ長1D e)
+    	public 前髪_上げ長1(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 前髪_上げ長1D e)
     	{
     		ThisType = GetType();
     		Dif dif = new Dif();
     		dif.Tag = "上げ長1";
     		dif.Add(new Pars(Sta.胴体["前髪"][0][14]));
-    		本体 = new Difs();
-    		本体.Tag = dif.Tag;
-    		本体.Add(dif);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs();
+    		Body.Tag = dif.Tag;
+    		Body.Add(dif);
+    		Pars pars = Body[0][0];
     		X0Y0_髪基 = pars["髪基"].ToPar();
     		X0Y0_髪左1 = pars["髪左1"].ToPar();
     		X0Y0_髪左2 = pars["髪左2"].ToPar();
@@ -790,8 +790,8 @@ namespace SlaveMatrix
     		X0Y0_髪右根2 = pars["髪右根2"].ToPar();
     		X0Y0_髪右3 = pars["髪右3"].ToPar();
     		X0Y0_髪右4 = pars["髪右4"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -886,7 +886,7 @@ namespace SlaveMatrix
     		X0Y0_髪右3CP = new ColorP(X0Y0_髪右3, 髪右3CD, DisUnit, abj: false);
     		X0Y0_髪右4CP = new ColorP(X0Y0_髪右4, 髪右4CD, DisUnit, abj: false);
     		ハイライト濃度 = e.ハイライト濃度;
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     	}
 
     	public override void 色更新()
@@ -922,12 +922,12 @@ namespace SlaveMatrix
     		X0Y0_髪右4CP.Update();
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		髪基CD = new ColorD(ref Col.Empty, ref Color2.Empty);
     		髪左1CD = new ColorD(ref 体配色.髪線, ref 体配色.髪O);

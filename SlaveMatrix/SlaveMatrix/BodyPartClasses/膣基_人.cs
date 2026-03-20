@@ -71,7 +71,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -83,14 +83,14 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 膣基_人(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 膣基_人D e)
+    	public 膣基_人(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 膣基_人D e)
     	{
     		ThisType = GetType();
-    		本体 = new Difs(Sta.胴体["膣基"]);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs(Sta.胴体["膣基"]);
+    		Pars pars = Body[0][0];
     		X0Y0_膣基 = pars["膣基"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -124,7 +124,7 @@ namespace SlaveMatrix
     		base.配色指定 = 配色指定;
     		配色(体配色);
     		X0Y0_膣基CP = new ColorP(X0Y0_膣基, 膣基CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     		尺度YB = 0.95;
     	}
 
@@ -133,12 +133,12 @@ namespace SlaveMatrix
     		X0Y0_膣基CP.Update();
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		Col.Alpha(ref 体配色.粘膜, 160, out var ret);
     		膣基CD = new ColorD(ref 体配色.粘膜線, ref ret);

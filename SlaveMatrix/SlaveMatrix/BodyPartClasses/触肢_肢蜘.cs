@@ -324,7 +324,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -347,20 +347,20 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public JointS 鎖1_接続点 => new JointS(本体, X0Y0_輪_金具左, 0);
+    	public JointS 鎖1_接続点 => new JointS(Body, X0Y0_輪_金具左, 0);
 
-    	public JointS 鎖2_接続点 => new JointS(本体, X0Y0_輪_金具右, 0);
+    	public JointS 鎖2_接続点 => new JointS(Body, X0Y0_輪_金具右, 0);
 
-    	public 触肢_肢蜘(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 触肢_肢蜘D e)
+    	public 触肢_肢蜘(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 触肢_肢蜘D e)
     	{
     		ThisType = GetType();
     		Dif dif = new Dif();
     		dif.Tag = "触肢蜘";
     		dif.Add(new Pars(Sta.肢左["節足"][0][1]));
-    		本体 = new Difs();
-    		本体.Tag = dif.Tag;
-    		本体.Add(dif);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs();
+    		Body.Tag = dif.Tag;
+    		Body.Add(dif);
+    		Pars pars = Body[0][0];
     		X0Y0_基節 = pars["基節"].ToPar();
     		X0Y0_転節 = pars["転節"].ToPar();
     		X0Y0_腿節 = pars["腿節"].ToPar();
@@ -375,8 +375,8 @@ namespace SlaveMatrix
     		X0Y0_輪_金具右 = pars2["金具右"].ToPar();
     		X0Y0_蹠節 = pars["蹠節"].ToPar();
     		Xasix = false;
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -433,7 +433,7 @@ namespace SlaveMatrix
     		X0Y0_輪_金具左CP = new ColorP(X0Y0_輪_金具左, 輪_金具左CD, DisUnit, abj: true);
     		X0Y0_輪_金具右CP = new ColorP(X0Y0_輪_金具右, 輪_金具右CD, DisUnit, abj: true);
     		X0Y0_蹠節CP = new ColorP(X0Y0_蹠節, 蹠節CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     		鎖1 = new 拘束鎖(DisUnit, 右: false, 配色指定, 体配色, Xasix);
     		鎖1.接続(鎖1_接続点);
     		鎖表示 = e.鎖表示;
@@ -471,7 +471,7 @@ namespace SlaveMatrix
     		X0Y0_膝節.AngleBase = num * 125.0;
     		X0Y0_脛節.AngleBase = num * 5.0;
     		X0Y0_蹠節.AngleBase = num * 70.0;
-    		本体.JoinPAall();
+    		Body.JoinPAall();
     	}
 
     	public override void SetRestraintAngle()
@@ -483,7 +483,7 @@ namespace SlaveMatrix
     		X0Y0_膝節.AngleBase = num * 30.0;
     		X0Y0_脛節.AngleBase = num * 5.0;
     		X0Y0_蹠節.AngleBase = num * 70.0;
-    		本体.JoinPAall();
+    		Body.JoinPAall();
     	}
 
     	public override bool Is革(Par p)
@@ -513,7 +513,7 @@ namespace SlaveMatrix
     		鎖1.色更新();
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		switch (配色指定)
     		{
@@ -532,7 +532,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		基節CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
     		転節CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
@@ -548,7 +548,7 @@ namespace SlaveMatrix
     		輪_金具右CD = new ColorD();
     	}
 
-    	private void 配色T0(体配色 体配色)
+    	private void 配色T0(BodyColorSet 体配色)
     	{
     		基節CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
     		転節CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
@@ -564,7 +564,7 @@ namespace SlaveMatrix
     		輪_金具右CD = new ColorD();
     	}
 
-    	private void 配色T1(体配色 体配色)
+    	private void 配色T1(BodyColorSet 体配色)
     	{
     		基節CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
     		転節CD = new ColorD(ref Col.Black, ref 体配色.甲1O);

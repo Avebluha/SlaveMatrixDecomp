@@ -7,7 +7,7 @@ namespace SlaveMatrix
     [Serializable]
     public class 四足腰D : EleD
     {
-    	public bool 腰_表示 = true;
+    	public bool Waist_表示 = true;
 
     	public bool 股_表示 = true;
 
@@ -188,7 +188,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override Ele GetEle(double DisUnit, ModeEventDispatcher Med, 体配色 体配色)
+    	public override Ele GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
     	{
     		return new 四足腰(DisUnit, 配色指定, 体配色, Med, this);
     	}

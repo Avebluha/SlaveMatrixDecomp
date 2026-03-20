@@ -114,7 +114,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -128,19 +128,19 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public JointS 肛門精液_接続点 => new JointS(本体, X0Y0_肛門2, 0);
+    	public JointS 肛門精液_接続点 => new JointS(Body, X0Y0_肛門2, 0);
 
-    	public 肛門_人(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 肛門_人D e)
+    	public 肛門_人(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 肛門_人D e)
     	{
     		肛門_人 肛門_人2 = this;
     		ThisType = GetType();
-    		本体 = new Difs(Sta.胴体["肛門"]);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs(Sta.胴体["肛門"]);
+    		Pars pars = Body[0][0];
     		X0Y0_肛門3 = pars["肛門3"].ToPar();
     		X0Y0_肛門2 = pars["肛門2"].ToPar();
     		X0Y0_肛門1 = pars["肛門1"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -190,7 +190,7 @@ namespace SlaveMatrix
     		X0Y0_肛門3CP = new ColorP(X0Y0_肛門3, 肛門3CD, DisUnit, abj: true);
     		X0Y0_肛門2CP = new ColorP(X0Y0_肛門2, 肛門2CD, DisUnit, abj: true);
     		X0Y0_肛門1CP = new ColorP(X0Y0_肛門1, 肛門1CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     	}
 
     	public override void 色更新()
@@ -200,12 +200,12 @@ namespace SlaveMatrix
     		X0Y0_肛門1CP.Update();
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		肛門3CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
     		肛門2CD = new ColorD(ref 体配色.粘膜線, ref 体配色.粘膜);

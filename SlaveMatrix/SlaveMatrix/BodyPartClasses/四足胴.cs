@@ -5,7 +5,7 @@ namespace SlaveMatrix
 {
     public class 四足胴 : Ele
     {
-    	public Par X0Y0_胴;
+    	public Par X0Y0_Torso;
 
     	public Par X0Y0_筋肉_筋肉左;
 
@@ -15,7 +15,7 @@ namespace SlaveMatrix
 
     	public Par X0Y0_獣性_獣毛右;
 
-    	public ColorD 胴CD;
+    	public ColorD TorsoCD;
 
     	public ColorD 筋肉_筋肉左CD;
 
@@ -25,7 +25,7 @@ namespace SlaveMatrix
 
     	public ColorD 獣性_獣毛右CD;
 
-    	public ColorP X0Y0_胴CP;
+    	public ColorP X0Y0_TorsoCP;
 
     	public ColorP X0Y0_筋肉_筋肉左CP;
 
@@ -35,7 +35,7 @@ namespace SlaveMatrix
 
     	public ColorP X0Y0_獣性_獣毛右CP;
 
-    	public Ele[] 腰_接続;
+    	public Ele[] Waist_接続;
 
     	public Ele[] 肌_接続;
 
@@ -81,16 +81,16 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 胴_表示
+    	public bool Torso_表示
     	{
     		get
     		{
-    			return X0Y0_胴.Dra;
+    			return X0Y0_Torso.Dra;
     		}
     		set
     		{
-    			X0Y0_胴.Dra = value;
-    			X0Y0_胴.Hit = value;
+    			X0Y0_Torso.Dra = value;
+    			X0Y0_Torso.Hit = value;
     		}
     	}
 
@@ -163,11 +163,11 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return 胴_表示;
+    			return Torso_表示;
     		}
     		set
     		{
-    			胴_表示 = value;
+    			Torso_表示 = value;
     			筋肉_筋肉左_表示 = value;
     			筋肉_筋肉右_表示 = value;
     			獣性_獣毛左_表示 = value;
@@ -175,15 +175,15 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
-    			return 胴CD.不透明度;
+    			return TorsoCD.不透明度;
     		}
     		set
     		{
-    			胴CD.不透明度 = value;
+    			TorsoCD.不透明度 = value;
     			筋肉_筋肉左CD.不透明度 = value;
     			筋肉_筋肉右CD.不透明度 = value;
     			獣性_獣毛左CD.不透明度 = value;
@@ -191,29 +191,29 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public JointS 腰_接続点 => new JointS(本体, X0Y0_胴, 4);
+    	public JointS Waist_接続点 => new JointS(Body, X0Y0_Torso, 4);
 
-    	public JointS 肌_接続点 => new JointS(本体, X0Y0_胴, 5);
+    	public JointS 肌_接続点 => new JointS(Body, X0Y0_Torso, 5);
 
-    	public JointS 翼左_接続点 => new JointS(本体, X0Y0_胴, 0);
+    	public JointS 翼左_接続点 => new JointS(Body, X0Y0_Torso, 0);
 
-    	public JointS 翼右_接続点 => new JointS(本体, X0Y0_胴, 1);
+    	public JointS 翼右_接続点 => new JointS(Body, X0Y0_Torso, 1);
 
-    	public 四足胴(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 四足胴D e)
+    	public 四足胴(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 四足胴D e)
     	{
     		四足胴 四足胴2 = this;
     		ThisType = GetType();
-    		本体 = new Difs(Sta.半身["四足胴"]);
-    		Pars pars = 本体[0][0];
-    		X0Y0_胴 = pars["Torso"].ToPar();
+    		Body = new Difs(Sta.半身["四足胴"]);
+    		Pars pars = Body[0][0];
+    		X0Y0_Torso = pars["胴"].ToPar();
     		Pars pars2 = pars["筋肉"].ToPars();
     		X0Y0_筋肉_筋肉左 = pars2["筋肉左"].ToPar();
     		X0Y0_筋肉_筋肉右 = pars2["筋肉右"].ToPar();
     		pars2 = pars["獣性"].ToPars();
     		X0Y0_獣性_獣毛左 = pars2["獣毛左"].ToPar();
     		X0Y0_獣性_獣毛右 = pars2["獣毛右"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -236,7 +236,7 @@ namespace SlaveMatrix
     		サイズ = e.サイズ;
     		サイズX = e.サイズX;
     		サイズY = e.サイズY;
-    		胴_表示 = e.胴_表示;
+    		Torso_表示 = e.Torso_表示;
     		筋肉_筋肉左_表示 = e.筋肉_筋肉左_表示;
     		筋肉_筋肉右_表示 = e.筋肉_筋肉右_表示;
     		獣性_獣毛左_表示 = e.獣性_獣毛左_表示;
@@ -249,14 +249,14 @@ namespace SlaveMatrix
     			表示 = false;
     		}
     		Ele f;
-    		if (e.腰_接続.Count > 0)
+    		if (e.Waist_接続.Count > 0)
     		{
-    			腰_接続 = e.腰_接続.Select(delegate(EleD g)
+    			Waist_接続 = e.Waist_接続.Select(delegate(EleD g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 四足胴2;
-    				f.ConnectionType = ConnectionInfo.四足胴_腰_接続;
-    				f.接続(四足胴2.腰_接続点);
+    				f.ConnectionType = ConnectionInfo.四足胴_Waist_接続;
+    				f.接続(四足胴2.Waist_接続点);
     				return f;
     			}).ToArray();
     		}
@@ -295,33 +295,33 @@ namespace SlaveMatrix
     		}
     		base.配色指定 = 配色指定;
     		配色(体配色);
-    		X0Y0_胴CP = new ColorP(X0Y0_胴, 胴CD, DisUnit, abj: true);
+    		X0Y0_TorsoCP = new ColorP(X0Y0_Torso, TorsoCD, DisUnit, abj: true);
     		X0Y0_筋肉_筋肉左CP = new ColorP(X0Y0_筋肉_筋肉左, 筋肉_筋肉左CD, DisUnit, abj: false);
     		X0Y0_筋肉_筋肉右CP = new ColorP(X0Y0_筋肉_筋肉右, 筋肉_筋肉右CD, DisUnit, abj: false);
     		X0Y0_獣性_獣毛左CP = new ColorP(X0Y0_獣性_獣毛左, 獣性_獣毛左CD, DisUnit, abj: true);
     		X0Y0_獣性_獣毛右CP = new ColorP(X0Y0_獣性_獣毛右, 獣性_獣毛右CD, DisUnit, abj: true);
     		筋肉濃度 = e.筋肉濃度;
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     		尺度YB = 0.96;
     	}
 
     	public override void 色更新()
     	{
-    		X0Y0_胴CP.Update();
+    		X0Y0_TorsoCP.Update();
     		X0Y0_筋肉_筋肉左CP.Update();
     		X0Y0_筋肉_筋肉右CP.Update();
     		X0Y0_獣性_獣毛左CP.Update();
     		X0Y0_獣性_獣毛右CP.Update();
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
-    		胴CD = new ColorD(ref Col.Black, ref 体配色.毛0R);
+    		TorsoCD = new ColorD(ref Col.Black, ref 体配色.毛0R);
     		筋肉_筋肉左CD = new ColorD(ref 体配色.薄線, ref 体配色.毛0O);
     		筋肉_筋肉右CD = new ColorD(ref 体配色.薄線, ref 体配色.毛0O);
     		獣性_獣毛左CD = new ColorD(ref Col.Black, ref 体配色.毛0O);

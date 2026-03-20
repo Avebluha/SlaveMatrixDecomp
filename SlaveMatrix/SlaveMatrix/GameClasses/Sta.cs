@@ -50,19 +50,19 @@ namespace SlaveMatrix
 
     	public static Type EleDt;
 
-    	public static Type Chestt;
+    	public static Type ChestType;
 
-    	public static Type Shouldert;
+    	public static Type ShoulderType;
 
-    	public static Type 胴t;
+    	public static Type TorsoType;
 
-    	public static Type 腰t;
+    	public static Type WaistType;
 
     	public static Type 尾_鯨t;
 
-    	public static Type 上腕_人t;
+    	public static Type UpperArm_人t;
 
-    	public static Type 上腕_鳥t;
+    	public static Type UpperArm_鳥t;
 
     	public static Type 長物_鯨t;
 
@@ -88,7 +88,7 @@ namespace SlaveMatrix
 
     	public static Type 耳_獣Dt;
 
-    	public static Type ShoulderDt;
+    	public static Type ShoulderDType;
 
     	public static Type 角1_一Dt;
 
@@ -250,27 +250,27 @@ namespace SlaveMatrix
 
     	public static Type 触手_蔦Dt;
 
-    	public static Type 上腕_人Dt;
+    	public static Type UpperArm_人Dt;
 
-    	public static Type 上腕_鳥Dt;
+    	public static Type UpperArm_鳥Dt;
 
-    	public static Type 上腕_蝙Dt;
+    	public static Type UpperArm_蝙Dt;
 
-    	public static Type 上腕_獣Dt;
+    	public static Type UpperArm_獣Dt;
 
-    	public static Type 上腕_蹄Dt;
+    	public static Type UpperArm_蹄Dt;
 
-    	public static Type 下腕_人Dt;
+    	public static Type LowerArm_人Dt;
 
-    	public static Type 下腕_鳥Dt;
+    	public static Type LowerArm_鳥Dt;
 
-    	public static Type 下腕_蝙Dt;
+    	public static Type LowerArm_蝙Dt;
 
-    	public static Type 獣下腕Dt;
+    	public static Type 獣LowerArmDt;
 
-    	public static Type 下腕_獣Dt;
+    	public static Type LowerArm_獣Dt;
 
-    	public static Type 下腕_蹄Dt;
+    	public static Type LowerArm_蹄Dt;
 
     	public static Type 手_人Dt;
 
@@ -318,9 +318,9 @@ namespace SlaveMatrix
 
     	public static Type 四足脇Dt;
 
-    	public static Type 胴_蛇Dt;
+    	public static Type Torso_蛇Dt;
 
-    	public static Type 胴_蟲Dt;
+    	public static Type Torso_蟲Dt;
 
     	public static Type 大顎基Dt;
 
@@ -828,7 +828,7 @@ namespace SlaveMatrix
 
     	public static void SetHitFalse(this Ele e)
     	{
-    		foreach (Par item in e.本体.EnumAllPar())
+    		foreach (Par item in e.Body.EnumAllPar())
     		{
     			item.Hit = false;
     		}
@@ -836,7 +836,7 @@ namespace SlaveMatrix
 
     	public static void SetHitTrue(this Ele e)
     	{
-    		foreach (Par item in e.本体.EnumAllPar())
+    		foreach (Par item in e.Body.EnumAllPar())
     		{
     			item.Hit = true;
     		}
@@ -902,7 +902,7 @@ namespace SlaveMatrix
     		return t[num][num2];
     	}
 
-    	public static List<string[]> パース(this string s)
+    	public static List<string[]> Parse(this string s)
     	{
     		List<string[]> list = new List<string[]>();
     		string[] array = s.Split("\r\n\r\n");
@@ -921,29 +921,29 @@ namespace SlaveMatrix
     	public static void Set擬音()
     	{
     		string[] array = ImiPath.FromText().Split(',');
-    		口挿 = array[0].パース();
-    		口中 = array[1].パース();
-    		口抜 = array[2].パース();
-    		膣挿 = array[3].パース();
-    		膣中 = array[4].パース();
-    		膣抜 = array[5].パース();
-    		肛挿 = array[6].パース();
-    		肛中 = array[7].パース();
-    		肛抜 = array[8].パース();
-    		糸挿 = array[9].パース();
-    		糸中 = array[10].パース();
-    		糸抜 = array[11].パース();
-    		潮吹 = array[12].パース();
-    		放尿 = array[13].パース();
-    		くぱ = array[14].パース();
-    		吸引 = array[15].パース();
-    		吸着 = array[16].パース();
-    		吸脱 = array[17].パース();
-    		振動 = array[18].パース();
-    		鞭振 = array[19].パース();
-    		鞭打 = array[20].パース();
-    		剃り = array[21].パース();
-    		射精 = array[22].パース();
+    		口挿 = array[0].Parse();
+    		口中 = array[1].Parse();
+    		口抜 = array[2].Parse();
+    		膣挿 = array[3].Parse();
+    		膣中 = array[4].Parse();
+    		膣抜 = array[5].Parse();
+    		肛挿 = array[6].Parse();
+    		肛中 = array[7].Parse();
+    		肛抜 = array[8].Parse();
+    		糸挿 = array[9].Parse();
+    		糸中 = array[10].Parse();
+    		糸抜 = array[11].Parse();
+    		潮吹 = array[12].Parse();
+    		放尿 = array[13].Parse();
+    		くぱ = array[14].Parse();
+    		吸引 = array[15].Parse();
+    		吸着 = array[16].Parse();
+    		吸脱 = array[17].Parse();
+    		振動 = array[18].Parse();
+    		鞭振 = array[19].Parse();
+    		鞭打 = array[20].Parse();
+    		剃り = array[21].Parse();
+    		射精 = array[22].Parse();
     		処女喪失 = (from f in array[23].Split("\r\n")
     			where !string.IsNullOrWhiteSpace(f) && !f.StartsWith("//")
     			select f).First();
@@ -1088,9 +1088,9 @@ namespace SlaveMatrix
             obj.MigrateKeys();
             胴体 = obj;
 
-    		//胴体.SaveExMod("C:\\Users\\dave\\Documents\\胴体");
-    		//Ser.ToJson(胴体, "C:\\Users\\dave\\Documents\\胴体.json");
-    		//胴体 = Ser.UnJson<Obj>("C:\\Users\\dave\\Documents\\胴体.json");
+            //胴体.SaveExMod("C:\\Users\\adel4\\Documents\\胴体");
+            //Ser.ToJson(胴体, "C:\\Users\\adel4\\Documents\\胴体.json");
+            //胴体 = Ser.UnJson<Obj>("C:\\Users\\adel4\\Documents\\胴体.json");
 
             obj = Resources.肩左.ObjLoad();
             obj.MigrateKeys();
@@ -1099,7 +1099,10 @@ namespace SlaveMatrix
             //Ser.ToJson(肩左, "C:\\Users\\dave\\Documents\\肩左.json");
             //肩左 = Ser.UnJson<Obj>("C:\\Users\\dave\\Documents\\肩左.json");
 
-            腕左 = Resources.腕左.ObjLoad();
+
+            obj = Resources.腕左.ObjLoad();
+            obj.MigrateKeys();
+            腕左 = obj;
             //腕左.SaveExMod("C:\\Users\\dave\\Documents\\腕左");
             //Ser.ToJson(腕左, "C:\\Users\\dave\\Documents\\腕左.json");
             //腕左 = Ser.UnJson<Obj>("C:\\Users\\dave\\Documents\\腕左.json");
@@ -1164,13 +1167,13 @@ namespace SlaveMatrix
             MaxAre = 0.0584246154149664;
     		Elet = typeof(Ele);
     		EleDt = typeof(EleD);
-    		Chestt = typeof(Chest);
-    		Shouldert = typeof(Shoulder);
-    		胴t = typeof(Torso);
-    		腰t = typeof(Waist);
+    		ChestType = typeof(Chest);
+    		ShoulderType = typeof(Shoulder);
+    		TorsoType = typeof(Torso);
+    		WaistType = typeof(Waist);
     		尾_鯨t = typeof(尾_鯨);
-    		上腕_人t = typeof(上腕_人);
-    		上腕_鳥t = typeof(上腕_鳥);
+    		UpperArm_人t = typeof(UpperArm_人);
+    		UpperArm_鳥t = typeof(UpperArm_鳥);
     		長物_鯨t = typeof(長物_鯨);
     		後髪0_ジグDt = typeof(BackHair0_ジグD);
     		後髪0_ハネDt = typeof(BackHair0_ハネD);
@@ -1183,7 +1186,7 @@ namespace SlaveMatrix
     		耳_鰭Dt = typeof(耳_鰭D);
     		耳_羽Dt = typeof(耳_羽D);
     		耳_獣Dt = typeof(耳_獣D);
-    		ShoulderDt = typeof(ShoulderD);
+    		ShoulderDType = typeof(ShoulderD);
     		角1_一Dt = typeof(角1_一D);
     		角1_鬼Dt = typeof(角1_鬼D);
     		角1_虫Dt = typeof(角1_虫D);
@@ -1264,17 +1267,17 @@ namespace SlaveMatrix
     		触手_触Dt = typeof(触手_触D);
     		触手_犬Dt = typeof(触手_犬D);
     		触手_蔦Dt = typeof(触手_蔦D);
-    		上腕_人Dt = typeof(上腕_人D);
-    		上腕_鳥Dt = typeof(上腕_鳥D);
-    		上腕_蝙Dt = typeof(上腕_蝙D);
-    		上腕_獣Dt = typeof(上腕_獣D);
-    		上腕_蹄Dt = typeof(上腕_蹄D);
-    		下腕_人Dt = typeof(下腕_人D);
-    		下腕_鳥Dt = typeof(下腕_鳥D);
-    		下腕_蝙Dt = typeof(下腕_蝙D);
-    		獣下腕Dt = typeof(獣下腕D);
-    		下腕_獣Dt = typeof(下腕_獣D);
-    		下腕_蹄Dt = typeof(下腕_蹄D);
+    		UpperArm_人Dt = typeof(UpperArm_人D);
+    		UpperArm_鳥Dt = typeof(UpperArm_鳥D);
+    		UpperArm_蝙Dt = typeof(UpperArm_蝙D);
+    		UpperArm_獣Dt = typeof(UpperArm_獣D);
+    		UpperArm_蹄Dt = typeof(UpperArm_蹄D);
+    		LowerArm_人Dt = typeof(LowerArm_人D);
+    		LowerArm_鳥Dt = typeof(LowerArm_鳥D);
+    		LowerArm_蝙Dt = typeof(LowerArm_蝙D);
+    		獣LowerArmDt = typeof(獣LowerArmD);
+    		LowerArm_獣Dt = typeof(LowerArm_獣D);
+    		LowerArm_蹄Dt = typeof(LowerArm_蹄D);
     		手_人Dt = typeof(手_人D);
     		手_鳥Dt = typeof(手_鳥D);
     		手_蝙Dt = typeof(手_蝙D);
@@ -1298,8 +1301,8 @@ namespace SlaveMatrix
     		足_鳥Dt = typeof(足_鳥D);
     		足_竜Dt = typeof(足_竜D);
     		四足脇Dt = typeof(四足脇D);
-    		胴_蛇Dt = typeof(Torso_蛇D);
-    		胴_蟲Dt = typeof(Torso_蟲D);
+    		Torso_蛇Dt = typeof(Torso_蛇D);
+    		Torso_蟲Dt = typeof(Torso_蟲D);
     		大顎基Dt = typeof(大顎基D);
     		鳳凰Dt = typeof(鳳凰D);
     		大顎Dt = typeof(大顎D);
@@ -1312,7 +1315,7 @@ namespace SlaveMatrix
     		at = typeof(Ele[]).ToString();
     		cdt = typeof(ColorD).ToString();
     		cpt = typeof(ColorP).ToString();
-    		Bodt = typeof(Bod);
+    		Bodt = typeof(Body);
     		dt = typeof(double).ToString();
     		bt = typeof(bool).ToString();
     		ct = typeof(Color).ToString();
@@ -1371,7 +1374,7 @@ namespace SlaveMatrix
     			ConnectionInfo.四足胸_Torso_接続,
     			ConnectionInfo.四足胸_肌_接続,
     			ConnectionInfo.四足胸_背中_接続,
-    			ConnectionInfo.四足胴_腰_接続,
+    			ConnectionInfo.四足胴_Waist_接続,
     			ConnectionInfo.四足胴_肌_接続,
     			ConnectionInfo.四足腰_膣基_接続,
     			ConnectionInfo.四足腰_肛門_接続,

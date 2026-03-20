@@ -37,7 +37,7 @@ namespace SlaveMatrix
     		e.接続情報 = ConnectionInfo.単目_瞼_接続;
     	}
 
-    	public override Ele GetEle(double DisUnit, ModeEventDispatcher Med, 体配色 体配色)
+    	public override Ele GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
     	{
     		return new 単目(DisUnit, 配色指定, 体配色, Med, this);
     	}

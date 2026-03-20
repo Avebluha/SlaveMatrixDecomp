@@ -5386,7 +5386,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -5738,27 +5738,27 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public JointS 足_接続点 => new JointS(本体, X0Y0_Leg, 0);
+    	public JointS 足_接続点 => new JointS(Body, X0Y0_Leg, 0);
 
-    	public JointS 脚輪下_接続点 => new JointS(本体, X0Y0_Leg, 2);
+    	public JointS 脚輪下_接続点 => new JointS(Body, X0Y0_Leg, 2);
 
-    	public JointS 脚輪上_接続点 => new JointS(本体, X0Y0_Leg, 3);
+    	public JointS 脚輪上_接続点 => new JointS(Body, X0Y0_Leg, 3);
 
-    	public JointS 鎖1_接続点 => new JointS(本体, X0Y0_脚輪上_金具左, 0);
+    	public JointS 鎖1_接続点 => new JointS(Body, X0Y0_脚輪上_金具左, 0);
 
-    	public JointS 鎖2_接続点 => new JointS(本体, X0Y0_脚輪上_金具右, 0);
+    	public JointS 鎖2_接続点 => new JointS(Body, X0Y0_脚輪上_金具右, 0);
 
-    	public JointS 鎖3_接続点 => new JointS(本体, X0Y0_脚輪下_金具左, 0);
+    	public JointS 鎖3_接続点 => new JointS(Body, X0Y0_脚輪下_金具左, 0);
 
-    	public JointS 鎖4_接続点 => new JointS(本体, X0Y0_脚輪下_金具右, 0);
+    	public JointS 鎖4_接続点 => new JointS(Body, X0Y0_脚輪下_金具右, 0);
 
-    	public Leg_人(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, Leg_人D e)
+    	public Leg_人(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, Leg_人D e)
     	{
     		Leg_人 Leg_人2 = this;
     		ThisType = GetType();
             //Leg but if renamed to Leg it broke game
-    		本体 = new Difs(Sta.脚左["Leg"]);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs(Sta.脚左["Leg"]);
+    		Pars pars = Body[0][0];
     		X0Y0_Leg = pars["脚"].ToPar();
     		X0Y0_筋 = pars["筋"].ToPar();
     		Pars pars2 = pars["淫タトゥ"].ToPars();
@@ -6056,7 +6056,7 @@ namespace SlaveMatrix
     		X0Y0_脚輪下_金具3 = pars2["金具3"].ToPar();
     		X0Y0_脚輪下_金具左 = pars2["金具左"].ToPar();
     		X0Y0_脚輪下_金具右 = pars2["金具右"].ToPar();
-    		pars = 本体[0][1];
+    		pars = Body[0][1];
     		X0Y1_Leg = pars["脚"].ToPar();
     		X0Y1_筋 = pars["筋"].ToPar();
     		pars2 = pars["淫タトゥ"].ToPars();
@@ -6354,8 +6354,8 @@ namespace SlaveMatrix
     		X0Y1_脚輪下_金具3 = pars2["金具3"].ToPar();
     		X0Y1_脚輪下_金具左 = pars2["金具左"].ToPar();
     		X0Y1_脚輪下_金具右 = pars2["金具右"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -7035,7 +7035,7 @@ namespace SlaveMatrix
     		傷I4濃度 = e.傷I4濃度;
     		傷I5濃度 = e.傷I5濃度;
     		ハイライト濃度 = e.ハイライト濃度;
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     		鎖1 = new 拘束鎖(DisUnit, 右, 配色指定, 体配色, Xasix);
     		鎖3 = new 拘束鎖(DisUnit, 右, 配色指定, 体配色, Xasix);
     		鎖1.接続(鎖1_接続点);
@@ -7055,7 +7055,7 @@ namespace SlaveMatrix
 
     	public override void 描画0(RenderArea Are)
     	{
-    		if (本体.IndexY == 0)
+    		if (Body.IndexY == 0)
     		{
     			Are.Draw(X0Y0_Leg);
     			Are.Draw(X0Y0_筋);
@@ -7255,7 +7255,7 @@ namespace SlaveMatrix
 
     	public void 外描画(RenderArea Are)
     	{
-    		if (本体.IndexY == 0)
+    		if (Body.IndexY == 0)
     		{
     			Are.Draw(X0Y0_ブーツ_タン_タン);
     			Are.Draw(X0Y0_ブーツ_タン_縁_縁1);
@@ -7485,13 +7485,13 @@ namespace SlaveMatrix
 
     	public void 開脚(腿_人 腿)
     	{
-    		if (腿.本体.IndexY == 0 || 腿.本体.IndexY == 4)
+    		if (腿.Body.IndexY == 0 || 腿.Body.IndexY == 4)
     		{
-    			本体.IndexY = 0;
+    			Body.IndexY = 0;
     		}
-    		else if (腿.本体.IndexY == 1 || 腿.本体.IndexY == 2 || 腿.本体.IndexY == 3)
+    		else if (腿.Body.IndexY == 1 || 腿.Body.IndexY == 2 || 腿.Body.IndexY == 3)
     		{
-    			本体.IndexY = 1;
+    			Body.IndexY = 1;
     		}
     	}
 
@@ -7524,7 +7524,7 @@ namespace SlaveMatrix
 
     	public override void 色更新()
     	{
-    		if (本体.IndexY == 0)
+    		if (Body.IndexY == 0)
     		{
     			X0Y0_LegCP.Update();
     			X0Y0_筋CP.Update();
@@ -7932,7 +7932,7 @@ namespace SlaveMatrix
     		鎖3.色更新();
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		switch (配色指定)
     		{
@@ -7978,7 +7978,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		LegCD = new ColorD(ref Col.Black, ref 体配色.人肌O);
     		筋CD = new ColorD(ref 体配色.薄線, ref Color2.Empty);
@@ -8180,7 +8180,7 @@ namespace SlaveMatrix
     		脚輪下_金具右CD = new ColorD();
     	}
 
-    	private void 配色T1(体配色 体配色)
+    	private void 配色T1(BodyColorSet 体配色)
     	{
     		LegCD = new ColorD(ref Col.Black, ref 体配色.人肌O);
     		筋CD = new ColorD(ref 体配色.薄線, ref Color2.Empty);
@@ -8382,7 +8382,7 @@ namespace SlaveMatrix
     		脚輪下_金具右CD = new ColorD();
     	}
 
-    	private void 配色T0(体配色 体配色)
+    	private void 配色T0(BodyColorSet 体配色)
     	{
     		LegCD = new ColorD(ref Col.Black, ref 体配色.人肌O);
     		筋CD = new ColorD(ref 体配色.薄線, ref Color2.Empty);
@@ -8584,7 +8584,7 @@ namespace SlaveMatrix
     		脚輪下_金具右CD = new ColorD();
     	}
 
-    	private void 配色B0(体配色 体配色)
+    	private void 配色B0(BodyColorSet 体配色)
     	{
     		LegCD = new ColorD(ref Col.Black, ref 体配色.毛0O);
     		筋CD = new ColorD(ref 体配色.薄線, ref Color2.Empty);
@@ -8786,7 +8786,7 @@ namespace SlaveMatrix
     		脚輪下_金具右CD = new ColorD();
     	}
 
-    	private void 配色BT1(体配色 体配色)
+    	private void 配色BT1(BodyColorSet 体配色)
     	{
     		LegCD = new ColorD(ref Col.Black, ref 体配色.毛0O);
     		筋CD = new ColorD(ref 体配色.薄線, ref Color2.Empty);
@@ -8988,7 +8988,7 @@ namespace SlaveMatrix
     		脚輪下_金具右CD = new ColorD();
     	}
 
-    	private void 配色BT0(体配色 体配色)
+    	private void 配色BT0(BodyColorSet 体配色)
     	{
     		LegCD = new ColorD(ref Col.Black, ref 体配色.毛0O);
     		筋CD = new ColorD(ref 体配色.薄線, ref Color2.Empty);
@@ -9190,7 +9190,7 @@ namespace SlaveMatrix
     		脚輪下_金具右CD = new ColorD();
     	}
 
-    	private void 配色C0(体配色 体配色)
+    	private void 配色C0(BodyColorSet 体配色)
     	{
     		LegCD = new ColorD(ref Col.Black, ref 体配色.甲0O);
     		筋CD = new ColorD(ref 体配色.薄線, ref Color2.Empty);
@@ -9392,7 +9392,7 @@ namespace SlaveMatrix
     		脚輪下_金具右CD = new ColorD();
     	}
 
-    	private void 配色CT1(体配色 体配色)
+    	private void 配色CT1(BodyColorSet 体配色)
     	{
     		LegCD = new ColorD(ref Col.Black, ref 体配色.甲0O);
     		筋CD = new ColorD(ref 体配色.薄線, ref Color2.Empty);
@@ -9594,7 +9594,7 @@ namespace SlaveMatrix
     		脚輪下_金具右CD = new ColorD();
     	}
 
-    	private void 配色CT0(体配色 体配色)
+    	private void 配色CT0(BodyColorSet 体配色)
     	{
     		LegCD = new ColorD(ref Col.Black, ref 体配色.甲0O);
     		筋CD = new ColorD(ref 体配色.薄線, ref Color2.Empty);
@@ -9796,7 +9796,7 @@ namespace SlaveMatrix
     		脚輪下_金具右CD = new ColorD();
     	}
 
-    	private void 配色L0(体配色 体配色)
+    	private void 配色L0(BodyColorSet 体配色)
     	{
     		LegCD = new ColorD(ref Col.Black, ref 体配色.植1O);
     		筋CD = new ColorD(ref 体配色.薄線, ref Color2.Empty);
@@ -9998,7 +9998,7 @@ namespace SlaveMatrix
     		脚輪下_金具右CD = new ColorD();
     	}
 
-    	private void 配色LT1(体配色 体配色)
+    	private void 配色LT1(BodyColorSet 体配色)
     	{
     		LegCD = new ColorD(ref Col.Black, ref 体配色.植1O);
     		筋CD = new ColorD(ref 体配色.薄線, ref Color2.Empty);
@@ -10200,7 +10200,7 @@ namespace SlaveMatrix
     		脚輪下_金具右CD = new ColorD();
     	}
 
-    	private void 配色LT0(体配色 体配色)
+    	private void 配色LT0(BodyColorSet 体配色)
     	{
     		LegCD = new ColorD(ref Col.Black, ref 体配色.植1O);
     		筋CD = new ColorD(ref 体配色.薄線, ref Color2.Empty);

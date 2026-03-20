@@ -137,7 +137,7 @@ namespace SlaveMatrix
 
     	public bool 背板 = true;
 
-    	public bool 胴 = true;
+    	public bool Torso = true;
 
     	public bool 瘤 = true;
 
@@ -256,7 +256,7 @@ namespace SlaveMatrix
     		e.接続情報 = ConnectionInfo.尾_蟲_尾右_接続;
     	}
 
-    	public override Ele GetEle(double DisUnit, ModeEventDispatcher Med, 体配色 体配色)
+    	public override Ele GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
     	{
     		return new 尾_蟲(DisUnit, 配色指定, 体配色, Med, this);
     	}

@@ -37,8 +37,15 @@ namespace _2DGAMELIB
     	private uint texture;
     	private uint vertex_buf;
     	private uint vao;
+        public int texW = 0;
+        public int texH = 0;
 
         public GlImage() { }
+
+        public void SetViewport(uint vpW, uint vpH, int vpX, int vpY)
+        {
+            gl.Viewport(vpX, vpY, vpW, vpH);
+        }
 
     	public Vector2D GetCursorPoint() {
     		double x, y;
@@ -92,48 +99,47 @@ namespace _2DGAMELIB
         public unsafe void SetBitmap(Bitmap bmp)
         {
             gl.UseProgram(shader_program);
-            gl.Viewport(new Size(bmp.Width, bmp.Height));
-
             gl.ActiveTexture(Silk.NET.OpenGL.GLEnum.Texture0);
-    		gl.BindTexture(Silk.NET.OpenGL.GLEnum.Texture2D, texture);
+            gl.BindTexture(Silk.NET.OpenGL.GLEnum.Texture2D, texture);
 
-            BitmapData data = bmp.LockBits(new System.Drawing.Rectangle(0, 0, bmp.Width, bmp.Height), ImageLockMode.ReadOnly, System.Drawing.Imaging.PixelFormat.Format32bppArgb);
-            
-            gl.TexImage2D(
-                Silk.NET.OpenGL.GLEnum.Texture2D, 
+            if (bmp.Width != texW || bmp.Height != texH)
+            {
+                gl.TexImage2D(
+                Silk.NET.OpenGL.GLEnum.Texture2D,
                 0,
-                InternalFormat.Rgba8, 
-                (uint)bmp.Width, 
-                (uint)bmp.Height, 
+                InternalFormat.Rgba8,
+                (uint)bmp.Width,
+                (uint)bmp.Height,
                 0,
                 Silk.NET.OpenGL.GLEnum.Bgra,
-                Silk.NET.OpenGL.GLEnum.UnsignedByte, 
-                (void*)data.Scan0
-            );
+                Silk.NET.OpenGL.GLEnum.UnsignedByte,
+                null);
+
+                texW = bmp.Width;
+                texH = bmp.Height;
+            }
+
+            BitmapData data = bmp.LockBits(new System.Drawing.Rectangle(0, 0, bmp.Width, bmp.Height), ImageLockMode.ReadOnly, System.Drawing.Imaging.PixelFormat.Format32bppArgb);
+
+            gl.PixelStore(GLEnum.UnpackAlignment, 1);
+
+            gl.TexSubImage2D(
+                Silk.NET.OpenGL.GLEnum.Texture2D,
+                0,
+                0,
+                0,
+                (uint)bmp.Width,
+                (uint)bmp.Height,
+                Silk.NET.OpenGL.GLEnum.Bgra,
+                Silk.NET.OpenGL.GLEnum.UnsignedByte,
+                (void*)data.Scan0);
 
             bmp.UnlockBits(data);
 
-
-            int res_pos = gl.GetUniformLocation(shader_program, "res");
-    		gl.Uniform2(res_pos, (float)bmp.Width, (float)bmp.Height);
-
-            gl.BindBuffer(GLEnum.ArrayBuffer, vertex_buf);
-            uint vert_pos = (uint)gl.GetAttribLocation(shader_program, "vertPos");
-            gl.EnableVertexAttribArray(vert_pos);
-
-
             gl.BindVertexArray(vao);
-            gl.VertexAttribPointer(
-                vert_pos,
-                2,
-                GLEnum.Float,
-                false,
-                0,
-                IntPtr.Zero
-            );
-
-
             gl.DrawArrays(GLEnum.TriangleStrip, 0, 4);
+            gl.BindVertexArray(0);
+
             Glfw.SwapBuffers(window);
         }
 
@@ -159,36 +165,39 @@ namespace _2DGAMELIB
     		Glfw.SetWindowUserPointer(window, GCHandle.ToIntPtr(handle));
 
             Glfw.MakeContextCurrent(window);
+            Glfw.SwapInterval(0);
             gl = Silk.NET.OpenGL.GL.GetApi(Glfw.GetProcAddress);
 
 
     		string vertexShaderSource =
     @"
-#version 100
-precision mediump float;
+#version 330 core
 
-attribute vec2 vertPos;
+layout (location = 0) in vec2 aPos;
+layout (location = 1) in vec2 aUV;
+
+out vec2 vUV;
 
 void main()
 {
-    gl_Position = vec4(vertPos, 0.0, 1.0);
+    gl_Position = vec4(aPos, 0.0f, 1.0f);
+    vUV = aUV;
 }
 ";
 
             string fragmentShaderSource =
     @"
-#version 100
-precision mediump float;
+#version 330 core
+
+in vec2 vUV;
+
+out vec4 FragColor;
 
 uniform sampler2D sTexture;
-uniform vec2 res;
 
 void main()
 {
-	vec2 tc = gl_FragCoord.xy / res;
-	tc.y = 1.0 - tc.y;
-
-    gl_FragColor = texture2D(sTexture, tc);
+    FragColor = texture(sTexture, vUV);
 }
 ";
 
@@ -217,19 +226,67 @@ void main()
 
             gl.ActiveTexture(Silk.NET.OpenGL.GLEnum.Texture0);
             gl.BindTexture(Silk.NET.OpenGL.GLEnum.Texture2D, texture);
-            
+
             gl.TexParameterI(Silk.NET.OpenGL.GLEnum.Texture2D, Silk.NET.OpenGL.GLEnum.TextureWrapS, new int[] {(int)TextureWrapMode.ClampToEdge});
             gl.TexParameterI(Silk.NET.OpenGL.GLEnum.Texture2D, Silk.NET.OpenGL.GLEnum.TextureWrapT, new int[] {(int)TextureWrapMode.ClampToEdge});
     		gl.TexParameterI(Silk.NET.OpenGL.GLEnum.Texture2D, Silk.NET.OpenGL.GLEnum.TextureMagFilter, new int[] {(int)TextureMagFilter.Nearest});
     		gl.TexParameterI(Silk.NET.OpenGL.GLEnum.Texture2D, Silk.NET.OpenGL.GLEnum.TextureMinFilter, new int[] {(int)TextureMinFilter.Nearest});
 
+            gl.TexImage2D(
+                Silk.NET.OpenGL.GLEnum.Texture2D,
+                0,
+                InternalFormat.Rgba8,
+                (uint)bmp.Width,
+                (uint)bmp.Height,
+                0,
+                Silk.NET.OpenGL.GLEnum.Bgra,
+                Silk.NET.OpenGL.GLEnum.UnsignedByte,
+                null
+            );
 
-            float[] buf = { 1.0f, 1.0f, -1.0f, 1.0f, 1.0f, -1.0f, -1.0f, -1.0f };
+            texW = bmp.Width;
+            texH = bmp.Height;
+
+            float[] buf = {
+                -1.0f, -1.0f, 0.0f, 1.0f,
+                1.0f, -1.0f, 1.0f, 1.0f,
+                -1.0f, 1.0f, 0.0f, 0.0f,
+                1.0f, 1.0f, 1.0f, 0.0f
+            };
+
             vertex_buf = gl.GenBuffer();
             gl.BindBuffer(Silk.NET.OpenGL.GLEnum.ArrayBuffer, vertex_buf);
             fixed (float* buf_ = buf) gl.BufferData(Silk.NET.OpenGL.GLEnum.ArrayBuffer, (uint)(sizeof(float) * buf.Length), buf_, Silk.NET.OpenGL.GLEnum.StaticDraw);
 
     		vao = gl.GenVertexArray();
+
+            gl.BindVertexArray(vao);
+            gl.BindBuffer(GLEnum.ArrayBuffer, vertex_buf);
+
+
+            gl.VertexAttribPointer(
+                0,
+                2,
+                GLEnum.Float,
+                false,
+                4 * sizeof(float),
+                IntPtr.Zero
+            );
+
+            gl.EnableVertexAttribArray(0);
+
+            gl.VertexAttribPointer(
+                1,
+                2,
+                GLEnum.Float,
+                false,
+                4 * sizeof(float),
+                (void*)(2 * sizeof(float))
+            );
+
+            gl.EnableVertexAttribArray(1);
+
+            gl.BindVertexArray(0);
         }
     }
 }

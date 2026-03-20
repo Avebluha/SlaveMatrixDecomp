@@ -1765,7 +1765,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -1860,20 +1860,20 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public JointS 鎖1_接続点 => new JointS(本体, X0Y0_脚輪_金具左, 0);
+    	public JointS 鎖1_接続点 => new JointS(Body, X0Y0_脚輪_金具左, 0);
 
-    	public JointS 鎖2_接続点 => new JointS(本体, X0Y0_脚輪_金具右, 0);
+    	public JointS 鎖2_接続点 => new JointS(Body, X0Y0_脚輪_金具右, 0);
 
-    	public 足_鳥(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 足_鳥D e)
+    	public 足_鳥(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 足_鳥D e)
     	{
     		ThisType = GetType();
     		Dif dif = new Dif();
     		dif.Tag = "鳥";
     		dif.Add(new Pars(Sta.脚左["四足足"][2][0]));
-    		本体 = new Difs();
-    		本体.Tag = dif.Tag;
-    		本体.Add(dif);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs();
+    		Body.Tag = dif.Tag;
+    		Body.Add(dif);
+    		Pars pars = Body[0][0];
     		X0Y0_足 = pars["足"].ToPar();
     		X0Y0_筋 = pars["筋"].ToPar();
     		X0Y0_足首 = pars["足首"].ToPar();
@@ -1975,8 +1975,8 @@ namespace SlaveMatrix
     		X0Y0_親指_竜性_鱗1_竜性_鱗4 = pars3["鱗4"].ToPar();
     		X0Y0_親指_竜性_鱗1_竜性_鱗5 = pars3["鱗5"].ToPar();
     		X0Y0_親指_竜性_鱗1_竜性_鱗6 = pars3["鱗6"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -2177,7 +2177,7 @@ namespace SlaveMatrix
     		X0Y0_親指_竜性_鱗1_竜性_鱗4CP = new ColorP(X0Y0_親指_竜性_鱗1_竜性_鱗4, 親指_竜性_鱗1_竜性_鱗4CD, DisUnit, abj: true);
     		X0Y0_親指_竜性_鱗1_竜性_鱗5CP = new ColorP(X0Y0_親指_竜性_鱗1_竜性_鱗5, 親指_竜性_鱗1_竜性_鱗5CD, DisUnit, abj: true);
     		X0Y0_親指_竜性_鱗1_竜性_鱗6CP = new ColorP(X0Y0_親指_竜性_鱗1_竜性_鱗6, 親指_竜性_鱗1_竜性_鱗6CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     		鎖1 = new 拘束鎖(DisUnit, 右, 配色指定, 体配色, Xasix);
     		鎖1.接続(鎖1_接続点);
     		int num = (右 ? (-10) : 10);
@@ -2294,7 +2294,7 @@ namespace SlaveMatrix
     		X0Y0_人指_指2.AngleBase = num * -13.0;
     		X0Y0_人指_指1.AngleBase = num * 41.0;
     		X0Y0_親指_指1.AngleBase = num * 43.0;
-    		本体.JoinPAall();
+    		Body.JoinPAall();
     	}
 
     	public override void 色更新()
@@ -2387,7 +2387,7 @@ namespace SlaveMatrix
     		鎖1.色更新();
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		switch (配色指定)
     		{
@@ -2406,7 +2406,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		足CD = new ColorD(ref Col.Black, ref 体配色.人肌O);
     		筋CD = new ColorD(ref 体配色.薄線, ref Color2.Empty);
@@ -2494,7 +2494,7 @@ namespace SlaveMatrix
     		親指_竜性_鱗1_竜性_鱗6CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
     	}
 
-    	private void 配色T0(体配色 体配色)
+    	private void 配色T0(BodyColorSet 体配色)
     	{
     		足CD = new ColorD(ref Col.Black, ref 体配色.人肌O);
     		筋CD = new ColorD(ref 体配色.薄線, ref Color2.Empty);
@@ -2582,7 +2582,7 @@ namespace SlaveMatrix
     		親指_竜性_鱗1_竜性_鱗6CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
     	}
 
-    	private void 配色T1(体配色 体配色)
+    	private void 配色T1(BodyColorSet 体配色)
     	{
     		足CD = new ColorD(ref Col.Black, ref 体配色.人肌O);
     		筋CD = new ColorD(ref 体配色.薄線, ref Color2.Empty);

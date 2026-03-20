@@ -10,7 +10,7 @@ namespace SlaveMatrix
 
     	public Par X0Y0_刃_刃2;
 
-    	public Par X0Y0_首;
+    	public Par X0Y0_Neck;
 
     	public Par X0Y0_グリップ_グリップ0;
 
@@ -50,7 +50,7 @@ namespace SlaveMatrix
 
     	public ColorD 刃_刃2CD;
 
-    	public ColorD 首CD;
+    	public ColorD NeckCD;
 
     	public ColorD グリップ_グリップ0CD;
 
@@ -90,7 +90,7 @@ namespace SlaveMatrix
 
     	public ColorP X0Y0_刃_刃2CP;
 
-    	public ColorP X0Y0_首CP;
+    	public ColorP X0Y0_NeckCP;
 
     	public ColorP X0Y0_グリップ_グリップ0CP;
 
@@ -199,16 +199,16 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 首_表示
+    	public bool Neck_表示
     	{
     		get
     		{
-    			return X0Y0_首.Dra;
+    			return X0Y0_Neck.Dra;
     		}
     		set
     		{
-    			X0Y0_首.Dra = value;
-    			X0Y0_首.Hit = value;
+    			X0Y0_Neck.Dra = value;
+    			X0Y0_Neck.Hit = value;
     		}
     	}
 
@@ -431,7 +431,7 @@ namespace SlaveMatrix
     			ヘッド_表示 = value;
     			刃_刃1_表示 = value;
     			刃_刃2_表示 = value;
-    			首_表示 = value;
+    			Neck_表示 = value;
     			グリップ_グリップ0_表示 = value;
     			グリップ_グリップ1_表示 = value;
     			グリップ_グリップ2_表示 = value;
@@ -451,7 +451,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -462,7 +462,7 @@ namespace SlaveMatrix
     			ヘッドCD.不透明度 = value;
     			刃_刃1CD.不透明度 = value;
     			刃_刃2CD.不透明度 = value;
-    			首CD.不透明度 = value;
+    			NeckCD.不透明度 = value;
     			グリップ_グリップ0CD.不透明度 = value;
     			グリップ_グリップ1CD.不透明度 = value;
     			グリップ_グリップ2CD.不透明度 = value;
@@ -482,16 +482,16 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public T剃刀(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, T剃刀D e)
+    	public T剃刀(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, T剃刀D e)
     	{
     		ThisType = GetType();
-    		本体 = new Difs(Sta.カーソル["T字剃刀"]);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs(Sta.カーソル["T字剃刀"]);
+    		Pars pars = Body[0][0];
     		X0Y0_ヘッド = pars["ヘッド"].ToPar();
     		Pars pars2 = pars["刃"].ToPars();
     		X0Y0_刃_刃1 = pars2["刃1"].ToPar();
     		X0Y0_刃_刃2 = pars2["刃2"].ToPar();
-    		X0Y0_首 = pars["首"].ToPar();
+    		X0Y0_Neck = pars["首"].ToPar();
     		pars2 = pars["グリップ"].ToPars();
     		X0Y0_グリップ_グリップ0 = pars2["グリップ0"].ToPar();
     		X0Y0_グリップ_グリップ1 = pars2["グリップ1"].ToPar();
@@ -509,8 +509,8 @@ namespace SlaveMatrix
     		X0Y0_グリップ_グリップ13 = pars2["グリップ13"].ToPar();
     		X0Y0_グリップ_グリップ14 = pars2["グリップ14"].ToPar();
     		X0Y0_グリップ_グリップ15 = pars2["グリップ15"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -536,7 +536,7 @@ namespace SlaveMatrix
     		ヘッド_表示 = e.ヘッド_表示;
     		刃_刃1_表示 = e.刃_刃1_表示;
     		刃_刃2_表示 = e.刃_刃2_表示;
-    		首_表示 = e.首_表示;
+    		Neck_表示 = e.Neck_表示;
     		グリップ_グリップ0_表示 = e.グリップ_グリップ0_表示;
     		グリップ_グリップ1_表示 = e.グリップ_グリップ1_表示;
     		グリップ_グリップ2_表示 = e.グリップ_グリップ2_表示;
@@ -565,7 +565,7 @@ namespace SlaveMatrix
     		X0Y0_ヘッドCP = new ColorP(X0Y0_ヘッド, ヘッドCD, DisUnit, abj: true);
     		X0Y0_刃_刃1CP = new ColorP(X0Y0_刃_刃1, 刃_刃1CD, DisUnit, abj: true);
     		X0Y0_刃_刃2CP = new ColorP(X0Y0_刃_刃2, 刃_刃2CD, DisUnit, abj: true);
-    		X0Y0_首CP = new ColorP(X0Y0_首, 首CD, DisUnit, abj: true);
+    		X0Y0_NeckCP = new ColorP(X0Y0_Neck, NeckCD, DisUnit, abj: true);
     		X0Y0_グリップ_グリップ0CP = new ColorP(X0Y0_グリップ_グリップ0, グリップ_グリップ0CD, DisUnit, abj: true);
     		X0Y0_グリップ_グリップ1CP = new ColorP(X0Y0_グリップ_グリップ1, グリップ_グリップ1CD, DisUnit, abj: true);
     		X0Y0_グリップ_グリップ2CP = new ColorP(X0Y0_グリップ_グリップ2, グリップ_グリップ2CD, DisUnit, abj: true);
@@ -582,14 +582,14 @@ namespace SlaveMatrix
     		X0Y0_グリップ_グリップ13CP = new ColorP(X0Y0_グリップ_グリップ13, グリップ_グリップ13CD, DisUnit, abj: true);
     		X0Y0_グリップ_グリップ14CP = new ColorP(X0Y0_グリップ_グリップ14, グリップ_グリップ14CD, DisUnit, abj: true);
     		X0Y0_グリップ_グリップ15CP = new ColorP(X0Y0_グリップ_グリップ15, グリップ_グリップ15CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     		Vector2D local = X0Y0_刃_刃1.OP[0].ps[1];
-    		foreach (Par item in 本体.EnumJoinRoot)
+    		foreach (Par item in Body.EnumJoinRoot)
     		{
     			item.BasePointBase = item.ToLocal(X0Y0_刃_刃1.ToGlobal(local));
     		}
     		尺度B = 1.08;
-    		本体.JoinPAall();
+    		Body.JoinPAall();
     	}
 
     	public override void 色更新()
@@ -597,7 +597,7 @@ namespace SlaveMatrix
     		X0Y0_ヘッドCP.Update();
     		X0Y0_刃_刃1CP.Update();
     		X0Y0_刃_刃2CP.Update();
-    		X0Y0_首CP.Update();
+    		X0Y0_NeckCP.Update();
     		X0Y0_グリップ_グリップ0CP.Update();
     		X0Y0_グリップ_グリップ1CP.Update();
     		X0Y0_グリップ_グリップ2CP.Update();
@@ -616,12 +616,12 @@ namespace SlaveMatrix
     		X0Y0_グリップ_グリップ15CP.Update();
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		ヘッドCD = new ColorD();
     		ヘッドCD.線 = Col.Black;
@@ -629,7 +629,7 @@ namespace SlaveMatrix
     		Col.GetGrad(ref Col.DarkGray, out var ret);
     		刃_刃1CD = new ColorD(ref Col.Black, ref ret);
     		刃_刃2CD = new ColorD(ref Col.Black, ref ret);
-    		首CD = new ColorD(ref Col.Black, ref ret);
+    		NeckCD = new ColorD(ref Col.Black, ref ret);
     		ret = new Color2(ref Col.DimGray, ref Col.Black);
     		グリップ_グリップ0CD = new ColorD(ref Col.Black, ref ret);
     		グリップ_グリップ1CD = new ColorD(ref Col.Black, ref ret);

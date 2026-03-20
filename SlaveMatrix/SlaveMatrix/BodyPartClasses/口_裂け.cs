@@ -567,7 +567,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -583,109 +583,109 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 口_裂け(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 口_裂けD e)
+    	public 口_裂け(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 口_裂けD e)
     	{
     		ThisType = GetType();
     		Dif dif = new Dif(Sta.胴体["口"][1]);
-    		本体 = new Difs();
-    		本体.Tag = dif.Tag;
-    		本体.Add(dif);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs();
+    		Body.Tag = dif.Tag;
+    		Body.Add(dif);
+    		Pars pars = Body[0][0];
     		X0Y0_口 = pars["口"].ToPar();
     		X0Y0_歯 = pars["歯"].ToPar();
     		X0Y0_口紅上 = pars["口紅上"].ToPar();
     		Pars pars2 = pars["口紅下"].ToPars();
     		X0Y0_口紅下_口紅 = pars2["口紅"].ToPar();
     		X0Y0_口紅下_ハイライト = pars2["ハイライト"].ToPar();
-    		pars = 本体[0][1];
+    		pars = Body[0][1];
     		X0Y1_口 = pars["口"].ToPar();
     		X0Y1_歯 = pars["歯"].ToPar();
     		X0Y1_口紅上 = pars["口紅上"].ToPar();
     		pars2 = pars["口紅下"].ToPars();
     		X0Y1_口紅下_口紅 = pars2["口紅"].ToPar();
     		X0Y1_口紅下_ハイライト = pars2["ハイライト"].ToPar();
-    		pars = 本体[0][2];
+    		pars = Body[0][2];
     		X0Y2_口 = pars["口"].ToPar();
     		X0Y2_歯 = pars["歯"].ToPar();
     		X0Y2_口紅上 = pars["口紅上"].ToPar();
     		pars2 = pars["口紅下"].ToPars();
     		X0Y2_口紅下_口紅 = pars2["口紅"].ToPar();
     		X0Y2_口紅下_ハイライト = pars2["ハイライト"].ToPar();
-    		pars = 本体[0][3];
+    		pars = Body[0][3];
     		X0Y3_口 = pars["口"].ToPar();
     		X0Y3_歯 = pars["歯"].ToPar();
     		X0Y3_口紅上 = pars["口紅上"].ToPar();
     		pars2 = pars["口紅下"].ToPars();
     		X0Y3_口紅下_口紅 = pars2["口紅"].ToPar();
     		X0Y3_口紅下_ハイライト = pars2["ハイライト"].ToPar();
-    		pars = 本体[0][4];
+    		pars = Body[0][4];
     		X0Y4_口 = pars["口"].ToPar();
     		X0Y4_口紅上 = pars["口紅上"].ToPar();
     		pars2 = pars["口紅下"].ToPars();
     		X0Y4_口紅下_口紅 = pars2["口紅"].ToPar();
     		X0Y4_口紅下_ハイライト = pars2["ハイライト"].ToPar();
-    		pars = 本体[0][5];
+    		pars = Body[0][5];
     		X0Y5_口 = pars["口"].ToPar();
     		X0Y5_歯 = pars["歯"].ToPar();
     		X0Y5_口紅上 = pars["口紅上"].ToPar();
     		pars2 = pars["口紅下"].ToPars();
     		X0Y5_口紅下_口紅 = pars2["口紅"].ToPar();
     		X0Y5_口紅下_ハイライト = pars2["ハイライト"].ToPar();
-    		pars = 本体[0][6];
+    		pars = Body[0][6];
     		X0Y6_口 = pars["口"].ToPar();
     		X0Y6_歯 = pars["歯"].ToPar();
     		X0Y6_口紅上 = pars["口紅上"].ToPar();
     		pars2 = pars["口紅下"].ToPars();
     		X0Y6_口紅下_口紅 = pars2["口紅"].ToPar();
     		X0Y6_口紅下_ハイライト = pars2["ハイライト"].ToPar();
-    		pars = 本体[0][7];
+    		pars = Body[0][7];
     		X0Y7_口 = pars["口"].ToPar();
     		X0Y7_歯 = pars["歯"].ToPar();
     		X0Y7_口紅上 = pars["口紅上"].ToPar();
     		pars2 = pars["口紅下"].ToPars();
     		X0Y7_口紅下_口紅 = pars2["口紅"].ToPar();
     		X0Y7_口紅下_ハイライト = pars2["ハイライト"].ToPar();
-    		pars = 本体[0][8];
+    		pars = Body[0][8];
     		X0Y8_口 = pars["口"].ToPar();
     		X0Y8_歯 = pars["歯"].ToPar();
     		X0Y8_口紅上 = pars["口紅上"].ToPar();
     		pars2 = pars["口紅下"].ToPars();
     		X0Y8_口紅下_口紅 = pars2["口紅"].ToPar();
     		X0Y8_口紅下_ハイライト = pars2["ハイライト"].ToPar();
-    		pars = 本体[0][9];
+    		pars = Body[0][9];
     		X0Y9_口 = pars["口"].ToPar();
     		X0Y9_歯 = pars["歯"].ToPar();
     		X0Y9_口紅上 = pars["口紅上"].ToPar();
     		pars2 = pars["口紅下"].ToPars();
     		X0Y9_口紅下_口紅 = pars2["口紅"].ToPar();
     		X0Y9_口紅下_ハイライト = pars2["ハイライト"].ToPar();
-    		pars = 本体[0][10];
+    		pars = Body[0][10];
     		X0Y10_口 = pars["口"].ToPar();
     		X0Y10_口紅上 = pars["口紅上"].ToPar();
     		pars2 = pars["口紅下"].ToPars();
     		X0Y10_口紅下_口紅 = pars2["口紅"].ToPar();
     		X0Y10_口紅下_ハイライト = pars2["ハイライト"].ToPar();
-    		pars = 本体[0][11];
+    		pars = Body[0][11];
     		X0Y11_口 = pars["口"].ToPar();
     		X0Y11_口紅上 = pars["口紅上"].ToPar();
     		pars2 = pars["口紅下"].ToPars();
     		X0Y11_口紅下_口紅 = pars2["口紅"].ToPar();
     		X0Y11_口紅下_ハイライト = pars2["ハイライト"].ToPar();
-    		pars = 本体[0][12];
+    		pars = Body[0][12];
     		X0Y12_口 = pars["口"].ToPar();
     		X0Y12_歯 = pars["歯"].ToPar();
     		X0Y12_口紅上 = pars["口紅上"].ToPar();
     		pars2 = pars["口紅下"].ToPars();
     		X0Y12_口紅下_口紅 = pars2["口紅"].ToPar();
     		X0Y12_口紅下_ハイライト = pars2["ハイライト"].ToPar();
-    		pars = 本体[0][13];
+    		pars = Body[0][13];
     		X0Y13_口 = pars["口"].ToPar();
     		X0Y13_口紅上 = pars["口紅上"].ToPar();
     		pars2 = pars["口紅下"].ToPars();
     		X0Y13_口紅下_口紅 = pars2["口紅"].ToPar();
     		X0Y13_口紅下_ハイライト = pars2["ハイライト"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -792,7 +792,7 @@ namespace SlaveMatrix
     		X0Y13_口紅下_ハイライトCP = new ColorP(X0Y13_口紅下_ハイライト, 口紅下_ハイライトCD, DisUnit, abj: true);
     		口紅濃度 = e.口紅濃度;
     		ハイライト濃度 = e.ハイライト濃度;
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     		double y = 1.5E-05;
     		X0Y0_口.BasePointBase = X0Y0_口.BasePointBase.AddY(y);
     		X0Y1_口.BasePointBase = X0Y1_口.BasePointBase.AddY(y);
@@ -812,7 +812,7 @@ namespace SlaveMatrix
 
     	public override void 色更新()
     	{
-    		switch (本体.IndexY)
+    		switch (Body.IndexY)
     		{
     		case 0:
     			X0Y0_口CP.Update();
@@ -911,12 +911,12 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		口CD = new ColorD(ref Col.Black, ref 体配色.粘膜);
     		歯CD = new ColorD(ref Col.Black, ref 体配色.歯);

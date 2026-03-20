@@ -111,7 +111,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -137,16 +137,16 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 膣内精液_獣(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 膣内精液_獣D e)
+    	public 膣内精液_獣(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 膣内精液_獣D e)
     	{
     		ThisType = GetType();
-    		本体 = new Difs(Sta.半身["四足膣内精液"]);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs(Sta.半身["四足膣内精液"]);
+    		Pars pars = Body[0][0];
     		X0Y0_精液 = pars["精液"].ToPar();
     		X0Y0_血液1 = pars["血液1"].ToPar();
     		X0Y0_血液2 = pars["血液2"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -184,7 +184,7 @@ namespace SlaveMatrix
     		X0Y0_精液CP = new ColorP(X0Y0_精液, 精液CD, DisUnit, abj: true);
     		X0Y0_血液1CP = new ColorP(X0Y0_血液1, 血液1CD, DisUnit, abj: true);
     		X0Y0_血液2CP = new ColorP(X0Y0_血液2, 血液2CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     		精液濃度 = e.精液濃度;
     	}
 
@@ -195,12 +195,12 @@ namespace SlaveMatrix
     		X0Y0_血液2CP.Update();
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		精液CD = new ColorD();
     		血液1CD = new ColorD(ref Col.Empty, ref 体配色.血液O);

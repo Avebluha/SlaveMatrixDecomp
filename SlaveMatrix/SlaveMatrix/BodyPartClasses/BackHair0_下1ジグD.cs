@@ -49,7 +49,7 @@ namespace SlaveMatrix
     		return this;
     	}
 
-    	public override Ele GetEle(double DisUnit, ModeEventDispatcher Med, 体配色 体配色)
+    	public override Ele GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
     	{
     		return new 後髪0_下1ジグ(DisUnit, 配色指定, 体配色, Med, this);
     	}

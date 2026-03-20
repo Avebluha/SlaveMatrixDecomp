@@ -91,7 +91,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -118,15 +118,15 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public キャップ2(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, キャップ2D e)
+    	public キャップ2(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, キャップ2D e)
     	{
     		ThisType = GetType();
-    		本体 = new Difs(Sta.胴体["キャップ左"]);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs(Sta.胴体["キャップ左"]);
+    		Pars pars = Body[0][0];
     		X0Y0_根本 = pars["根本"].ToPar();
     		X0Y0_先端 = pars["先端"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -162,7 +162,7 @@ namespace SlaveMatrix
     		配色(体配色);
     		X0Y0_根本CP = new ColorP(X0Y0_根本, 根本CD, DisUnit, abj: true);
     		X0Y0_先端CP = new ColorP(X0Y0_先端, 先端CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     	}
 
     	public override void 色更新()
@@ -171,12 +171,12 @@ namespace SlaveMatrix
     		X0Y0_先端CP.Update();
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		根本CD = new ColorD();
     		先端CD = new ColorD();

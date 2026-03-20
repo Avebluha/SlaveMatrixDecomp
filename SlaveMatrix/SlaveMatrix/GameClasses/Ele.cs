@@ -12,9 +12,9 @@ namespace SlaveMatrix
 
     	public ConnectionInfo ConnectionType;
 
-    	public Difs 本体;
+    	public Difs Body; //本体
 
-    	public static double 肥大mi1 = -5E-07;
+        public static double 肥大mi1 = -5E-07;
 
     	public static double 肥大ma1 = 8E-05;
 
@@ -66,15 +66,15 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return 本体.CurJoinRoot.BasePointBase;
+    			return Body.CurJoinRoot.BasePointBase;
     		}
     		set
     		{
-    			foreach (Par item in 本体.EnumJoinRoot)
+    			foreach (Par item in Body.EnumJoinRoot)
     			{
     				item.BasePointBase = value;
     			}
-    			本体.JoinP();
+    			Body.JoinP();
     		}
     	}
 
@@ -82,33 +82,33 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return 本体.CurJoinRoot.BasePointCont;
+    			return Body.CurJoinRoot.BasePointCont;
     		}
     		set
     		{
-    			foreach (Par item in 本体.EnumJoinRoot)
+    			foreach (Par item in Body.EnumJoinRoot)
     			{
     				item.BasePointCont = value;
     			}
-    			本体.JoinP();
+    			Body.JoinP();
     		}
     	}
 
-    	public virtual Vector2D 位置 => 本体.CurJoinRoot.Position;
+    	public virtual Vector2D 位置 => Body.CurJoinRoot.Position;
 
     	public virtual Vector2D 位置B
     	{
     		get
     		{
-    			return 本体.CurJoinRoot.PositionBase;
+    			return Body.CurJoinRoot.PositionBase;
     		}
     		set
     		{
-    			foreach (Par item in 本体.EnumJoinRoot)
+    			foreach (Par item in Body.EnumJoinRoot)
     			{
     				item.PositionBase = value;
     			}
-    			本体.JoinP();
+    			Body.JoinP();
     		}
     	}
 
@@ -116,15 +116,15 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return 本体.CurJoinRoot.PositionCont;
+    			return Body.CurJoinRoot.PositionCont;
     		}
     		set
     		{
-    			foreach (Par item in 本体.EnumJoinRoot)
+    			foreach (Par item in Body.EnumJoinRoot)
     			{
     				item.PositionCont = value;
     			}
-    			本体.JoinP();
+    			Body.JoinP();
     		}
     	}
 
@@ -132,11 +132,11 @@ namespace SlaveMatrix
     	{
     		set
     		{
-    			foreach (Par item in 本体.EnumAllPar())
+    			foreach (Par item in Body.EnumAllPar())
     			{
     				item.AngleBase = value;
     			}
-    			本体.JoinPA();
+    			Body.JoinPA();
     		}
     	}
 
@@ -144,15 +144,15 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return 本体.CurJoinRoot.AngleBase;
+    			return Body.CurJoinRoot.AngleBase;
     		}
     		set
     		{
-    			foreach (Par item in 本体.EnumJoinRoot)
+    			foreach (Par item in Body.EnumJoinRoot)
     			{
     				item.AngleBase = value;
     			}
-    			本体.JoinPA();
+    			Body.JoinPA();
     		}
     	}
 
@@ -160,15 +160,15 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return 本体.CurJoinRoot.AngleCont;
+    			return Body.CurJoinRoot.AngleCont;
     		}
     		set
     		{
-    			foreach (Par item in 本体.EnumJoinRoot)
+    			foreach (Par item in Body.EnumJoinRoot)
     			{
     				item.AngleCont = value;
     			}
-    			本体.JoinPA();
+    			Body.JoinPA();
     		}
     	}
 
@@ -176,15 +176,15 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return 本体.CurJoinRoot.SizeBase;
+    			return Body.CurJoinRoot.SizeBase;
     		}
     		set
     		{
-    			foreach (Par item in 本体.EnumAllPar())
+    			foreach (Par item in Body.EnumAllPar())
     			{
     				item.SizeBase *= value;
     			}
-    			本体.JoinP();
+    			Body.JoinP();
     		}
     	}
 
@@ -192,15 +192,15 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return 本体.CurJoinRoot.SizeCont;
+    			return Body.CurJoinRoot.SizeCont;
     		}
     		set
     		{
-    			foreach (Par item in 本体.EnumAllPar())
+    			foreach (Par item in Body.EnumAllPar())
     			{
     				item.SizeCont = value;
     			}
-    			本体.JoinP();
+    			Body.JoinP();
     		}
     	}
 
@@ -208,15 +208,15 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return 本体.CurJoinRoot.SizeXBase;
+    			return Body.CurJoinRoot.SizeXBase;
     		}
     		set
     		{
-    			foreach (Par item in 本体.EnumAllPar())
+    			foreach (Par item in Body.EnumAllPar())
     			{
     				item.SizeXBase *= value;
     			}
-    			本体.JoinP();
+    			Body.JoinP();
     		}
     	}
 
@@ -224,15 +224,15 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return 本体.CurJoinRoot.SizeXCont;
+    			return Body.CurJoinRoot.SizeXCont;
     		}
     		set
     		{
-    			foreach (Par item in 本体.EnumAllPar())
+    			foreach (Par item in Body.EnumAllPar())
     			{
     				item.SizeXCont = value;
     			}
-    			本体.JoinP();
+    			Body.JoinP();
     		}
     	}
 
@@ -240,15 +240,15 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return 本体.CurJoinRoot.SizeYBase;
+    			return Body.CurJoinRoot.SizeYBase;
     		}
     		set
     		{
-    			foreach (Par item in 本体.EnumAllPar())
+    			foreach (Par item in Body.EnumAllPar())
     			{
     				item.SizeYBase *= value;
     			}
-    			本体.JoinP();
+    			Body.JoinP();
     		}
     	}
 
@@ -256,23 +256,23 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return 本体.CurJoinRoot.SizeYCont;
+    			return Body.CurJoinRoot.SizeYCont;
     		}
     		set
     		{
-    			foreach (Par item in 本体.EnumAllPar())
+    			foreach (Par item in Body.EnumAllPar())
     			{
     				item.SizeYCont = value;
     			}
-    			本体.JoinP();
+    			Body.JoinP();
     		}
     	}
 
-    	public virtual double 尺度 => 本体.CurJoinRoot.Size;
+    	public virtual double 尺度 => Body.CurJoinRoot.Size;
 
-    	public virtual double 尺度Y => 本体.CurJoinRoot.SizeY;
+    	public virtual double 尺度Y => Body.CurJoinRoot.SizeY;
 
-    	public virtual double 尺度X => 本体.CurJoinRoot.SizeX;
+    	public virtual double 尺度X => Body.CurJoinRoot.SizeX;
 
     	public virtual double 肥大
     	{
@@ -286,7 +286,7 @@ namespace SlaveMatrix
     			double rate = 肥大mi1 + 肥大d1 * 肥大_;
     			double num = 肥大mi2 + 肥大d2 * 肥大_;
     			double num2 = num + 0.05 * 肥大_.Inverse();
-    			foreach (Par item in 本体.EnumAllPar())
+    			foreach (Par item in Body.EnumAllPar())
     			{
     				if (item.Parent.Tag.Contains("眼") || item.Parent.Tag.Contains("コア") || item.Tag.Contains("傷") || item.Tag.Contains("ボタン"))
     				{
@@ -320,7 +320,7 @@ namespace SlaveMatrix
     					item.SizeYBase *= num;
     				}
     			}
-    			本体.JoinP();
+    			Body.JoinP();
     		}
     	}
 
@@ -334,7 +334,7 @@ namespace SlaveMatrix
     		{
     			身長_ = value;
     			double num = 身長mi2 + 身長d2 * 身長_;
-    			foreach (Par item in 本体.EnumAllPar())
+    			foreach (Par item in Body.EnumAllPar())
     			{
     				if (!item.Parent.Tag.Contains("眼") && !item.Parent.Tag.Contains("コア") && !item.Tag.Contains("傷") && !item.Tag.Contains("ボタン") && !item.Parent.Tag.Contains("輪") && !item.Tag.Contains("吸盤") && !(this is 膣基) && !(this is 膣内精液) && !(this is 断面) && !(this is 性器) && !(this is 肛門) && !(this is 乳房) && !(this is 下着トップ) && !(this is Waist) && !(this is 腰肌) && !(this is 四足腰) && !(this is 下着ボトム) && !(this is 上着ボトム) && !(this is 手) && !(this is 噴乳) && !(this is 飛沫) && !(this is 潮吹_小) && !(this is 潮吹_大) && !(this is 放尿) && !(this is Head) && !(this is 目隠帯) && !(this is 玉口枷) && !(this is 半身) && !(this is 頭頂) && !(this is 背中_光) && !(this is ボテ腹))
     				{
@@ -367,7 +367,7 @@ namespace SlaveMatrix
     					item.OP.ScalingXY(item.OP.GetCenter(), 1.0 / num);
     				}
     			}
-    			本体.JoinP();
+    			Body.JoinP();
     		}
     	}
 
@@ -381,9 +381,9 @@ namespace SlaveMatrix
     		{
     			if (右_ != value)
     			{
-    				本体.JoinPAall();
-    				本体.ReverseX();
-    				本体.JoinP();
+    				Body.JoinPAall();
+    				Body.ReverseX();
+    				Body.JoinP();
     			}
     			右_ = value;
     		}
@@ -399,9 +399,9 @@ namespace SlaveMatrix
     		{
     			if (反転X_ != value)
     			{
-    				本体.JoinPAall();
-    				本体.ReverseX();
-    				本体.JoinP();
+    				Body.JoinPAall();
+    				Body.ReverseX();
+    				Body.JoinP();
     			}
     			反転X_ = value;
     		}
@@ -417,9 +417,9 @@ namespace SlaveMatrix
     		{
     			if (反転Y_ != value)
     			{
-    				本体.JoinPAall();
-    				本体.ReverseY();
-    				本体.JoinP();
+    				Body.JoinPAall();
+    				Body.ReverseY();
+    				Body.JoinP();
     			}
     			反転Y_ = value;
     		}
@@ -429,11 +429,11 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return 本体.ValueX;
+    			return Body.ValueX;
     		}
     		set
     		{
-    			本体.ValueX = value;
+    			Body.ValueX = value;
     		}
     	}
 
@@ -441,11 +441,11 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return 本体.ValueY;
+    			return Body.ValueY;
     		}
     		set
     		{
-    			本体.ValueY = value;
+    			Body.ValueY = value;
     		}
     	}
 
@@ -453,11 +453,11 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return 本体.IndexX;
+    			return Body.IndexX;
     		}
     		set
     		{
-    			本体.IndexX = value;
+    			Body.IndexX = value;
     		}
     	}
 
@@ -465,11 +465,11 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return 本体.IndexY;
+    			return Body.IndexY;
     		}
     		set
     		{
-    			本体.IndexY = value;
+    			Body.IndexY = value;
     		}
     	}
 
@@ -483,7 +483,7 @@ namespace SlaveMatrix
     		{
     			サイズ_ = value;
     			double rate = 0.95 + 0.09 * サイズ_;
-    			foreach (Par item in 本体.EnumAllPar())
+    			foreach (Par item in Body.EnumAllPar())
     			{
     				Vector2D center = item.OP.GetCenter();
     				item.OP.ScalingXY(center, rate);
@@ -502,7 +502,7 @@ namespace SlaveMatrix
     		{
     			サイズX_ = value;
     			double rate = 0.95 + 0.09 * サイズX_;
-    			foreach (Par item in 本体.EnumAllPar())
+    			foreach (Par item in Body.EnumAllPar())
     			{
     				Vector2D center = item.OP.GetCenter();
     				item.OP.ScalingX(center, rate);
@@ -521,7 +521,7 @@ namespace SlaveMatrix
     		{
     			サイズY_ = value;
     			double rate = 0.95 + 0.09 * サイズY_;
-    			foreach (Par item in 本体.EnumAllPar())
+    			foreach (Par item in Body.EnumAllPar())
     			{
     				Vector2D center = item.OP.GetCenter();
     				item.OP.ScalingY(center, rate);
@@ -538,7 +538,7 @@ namespace SlaveMatrix
 
     	public virtual bool 表示 { get; set; }
 
-    	public virtual double 濃度 { get; set; }
+    	public virtual double Intensity { get; set; }
 
     	public int 描画前後 => ConnectionType switch
     	{
@@ -599,7 +599,7 @@ namespace SlaveMatrix
     		ConnectionInfo.Chest_翼下右_接続 => 0, 
     		ConnectionInfo.Chest_背中_接続 => 0, 
     		ConnectionInfo.乳房_噴乳_接続 => 1, 
-    		ConnectionInfo.Shoulder_上腕_接続 => 1, 
+    		ConnectionInfo.Shoulder_UpperArm_接続 => 1, 
     		ConnectionInfo.Torso_Chest_接続 => 1, 
     		ConnectionInfo.Torso_肌_接続 => 1, 
     		ConnectionInfo.Torso_翼左_接続 => 0, 
@@ -789,10 +789,10 @@ namespace SlaveMatrix
     		ConnectionInfo.前翅_甲_軸2_接続 => 1, 
     		ConnectionInfo.前翅_甲_軸3_接続 => 1, 
     		ConnectionInfo.触手_犬_Head_接続 => 1, 
-    		ConnectionInfo.触手_犬_上腕左_接続 => 1, 
-    		ConnectionInfo.触手_犬_上腕右_接続 => 1, 
-    		ConnectionInfo.触手_犬_下腕左_接続 => 1, 
-    		ConnectionInfo.触手_犬_下腕右_接続 => 1, 
+    		ConnectionInfo.触手_犬_UpperArm左_接続 => 1, 
+    		ConnectionInfo.触手_犬_UpperArm右_接続 => 1, 
+    		ConnectionInfo.触手_犬_LowerArm左_接続 => 1, 
+    		ConnectionInfo.触手_犬_LowerArm右_接続 => 1, 
     		ConnectionInfo.触手_犬_手左_接続 => 1, 
     		ConnectionInfo.触手_犬_手右_接続 => 1, 
     		ConnectionInfo.触手_蔦_節1_接続 => 1, 
@@ -820,19 +820,19 @@ namespace SlaveMatrix
     		ConnectionInfo.触手_蔦_節23_接続 => 1, 
     		ConnectionInfo.触手_蔦_節24_接続 => 1, 
     		ConnectionInfo.触手_蔦_先端_接続 => 1, 
-    		ConnectionInfo.上腕_人_下腕_接続 => 1, 
-    		ConnectionInfo.上腕_鳥_下腕_接続 => 1, 
-    		ConnectionInfo.上腕_蝙_下腕_接続 => 1, 
-    		ConnectionInfo.上腕_獣_下腕_接続 => 1, 
-    		ConnectionInfo.上腕_蹄_下腕_接続 => 1, 
-    		ConnectionInfo.下腕_人_外腕_接続 => 1, 
-    		ConnectionInfo.下腕_人_手_接続 => 1, 
-    		ConnectionInfo.下腕_人_虫鎌_接続 => 1, 
-    		ConnectionInfo.下腕_鳥_手_接続 => 1, 
-    		ConnectionInfo.下腕_蝙_手_接続 => 1, 
-    		ConnectionInfo.下腕_蝙_腕輪_接続 => 1, 
-    		ConnectionInfo.下腕_獣_手_接続 => 1, 
-    		ConnectionInfo.下腕_蹄_手_接続 => 1, 
+    		ConnectionInfo.UpperArm_人_LowerArm_接続 => 1, 
+    		ConnectionInfo.UpperArm_鳥_LowerArm_接続 => 1, 
+    		ConnectionInfo.UpperArm_蝙_LowerArm_接続 => 1, 
+    		ConnectionInfo.UpperArm_獣_LowerArm_接続 => 1, 
+    		ConnectionInfo.UpperArm_蹄_LowerArm_接続 => 1, 
+    		ConnectionInfo.LowerArm_人_OuterArm_接続 => 1, 
+    		ConnectionInfo.LowerArm_人_手_接続 => 1, 
+    		ConnectionInfo.LowerArm_人_虫鎌_接続 => 1, 
+    		ConnectionInfo.LowerArm_鳥_手_接続 => 1, 
+    		ConnectionInfo.LowerArm_蝙_手_接続 => 1, 
+    		ConnectionInfo.LowerArm_蝙_腕輪_接続 => 1, 
+    		ConnectionInfo.LowerArm_獣_手_接続 => 1, 
+    		ConnectionInfo.LowerArm_蹄_手_接続 => 1, 
     		ConnectionInfo.腿_人_Leg_接続 => 1, 
     		ConnectionInfo.腿_獣_Leg_接続 => 1, 
     		ConnectionInfo.腿_蹄_Leg_接続 => 1, 
@@ -894,8 +894,8 @@ namespace SlaveMatrix
     		ConnectionInfo.四足胸_翼下左_接続 => 0, 
     		ConnectionInfo.四足胸_翼下右_接続 => 0, 
     		ConnectionInfo.四足胸_背中_接続 => 0, 
-    		ConnectionInfo.四足脇_上腕_接続 => 1, 
-    		ConnectionInfo.四足胴_腰_接続 => 0, 
+    		ConnectionInfo.四足脇_UpperArm_接続 => 1, 
+    		ConnectionInfo.四足胴_Waist_接続 => 0, 
     		ConnectionInfo.四足胴_肌_接続 => 1, 
     		ConnectionInfo.四足胴_翼左_接続 => 0, 
     		ConnectionInfo.四足胴_翼右_接続 => 0, 
@@ -961,7 +961,7 @@ namespace SlaveMatrix
 
     	public virtual void 描画0(RenderArea Are)
     	{
-    		本体.Draw(Are);
+    		Body.Draw(Are);
     	}
 
     	public virtual void 描画1(RenderArea Are)
@@ -974,7 +974,7 @@ namespace SlaveMatrix
 
     	public virtual void Dispose()
     	{
-    		本体.Dispose();
+    		Body.Dispose();
     	}
 
     	public virtual void 接続P()
@@ -1002,11 +1002,11 @@ namespace SlaveMatrix
 
     	public void SetAngle(Ele e)
     	{
-    		foreach (var item in 本体.EnumAllPar().Zip(e.本体.EnumAllPar(), (Par a0, Par a1) => new { a0, a1 }))
+    		foreach (var item in Body.EnumAllPar().Zip(e.Body.EnumAllPar(), (Par a0, Par a1) => new { a0, a1 }))
     		{
     			item.a0.AngleBase = 0.0 - item.a1.AngleBase;
     		}
-    		本体.JoinPAall();
+    		Body.JoinPAall();
     	}
 
     	public virtual void SetRestraintAngle()

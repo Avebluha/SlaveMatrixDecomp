@@ -1,47 +1,47 @@
+using _2DGAMELIB;
 using System;
 using System.Collections.Generic;
-using _2DGAMELIB;
 
 namespace SlaveMatrix
 {
     [Serializable]
     public class 長物_魚D : 半身D
     {
-    	public bool 胴6_鱗左_鱗1_表示 = true;
+    	public bool Torso6_鱗左_鱗1_表示 = true;
 
-    	public bool 胴6_鱗左_鱗2_表示 = true;
+    	public bool Torso6_鱗左_鱗2_表示 = true;
 
-    	public bool 胴6_鱗左_鱗3_表示 = true;
+    	public bool Torso6_鱗左_鱗3_表示 = true;
 
-    	public bool 胴6_鱗左_鱗4_表示 = true;
+    	public bool Torso6_鱗左_鱗4_表示 = true;
 
-    	public bool 胴6_鱗右_鱗1_表示 = true;
+    	public bool Torso6_鱗右_鱗1_表示 = true;
 
-    	public bool 胴6_鱗右_鱗2_表示 = true;
+    	public bool Torso6_鱗右_鱗2_表示 = true;
 
-    	public bool 胴6_鱗右_鱗3_表示 = true;
+    	public bool Torso6_鱗右_鱗3_表示 = true;
 
-    	public bool 胴6_鱗右_鱗4_表示 = true;
+    	public bool Torso6_鱗右_鱗4_表示 = true;
 
-    	public bool 胴6_胴_表示 = true;
+    	public bool Torso6_Torso_表示 = true;
 
-    	public bool 胴5_鱗左_鱗1_表示 = true;
+    	public bool Torso5_鱗左_鱗1_表示 = true;
 
-    	public bool 胴5_鱗左_鱗2_表示 = true;
+    	public bool Torso5_鱗左_鱗2_表示 = true;
 
-    	public bool 胴5_鱗左_鱗3_表示 = true;
+    	public bool Torso5_鱗左_鱗3_表示 = true;
 
-    	public bool 胴5_鱗左_鱗4_表示 = true;
+    	public bool Torso5_鱗左_鱗4_表示 = true;
 
-    	public bool 胴5_鱗右_鱗1_表示 = true;
+    	public bool Torso5_鱗右_鱗1_表示 = true;
 
-    	public bool 胴5_鱗右_鱗2_表示 = true;
+    	public bool Torso5_鱗右_鱗2_表示 = true;
 
-    	public bool 胴5_鱗右_鱗3_表示 = true;
+    	public bool Torso5_鱗右_鱗3_表示 = true;
 
-    	public bool 胴5_鱗右_鱗4_表示 = true;
+    	public bool Torso5_鱗右_鱗4_表示 = true;
 
-    	public bool 胴5_胴_表示 = true;
+    	public bool Torso5_Torso_表示 = true;
 
     	public bool 輪2_革_表示 = true;
 
@@ -55,95 +55,95 @@ namespace SlaveMatrix
 
     	public bool 輪2_金具右_表示 = true;
 
-    	public bool 胴4_鱗左_鱗1_表示 = true;
+    	public bool Torso4_鱗左_鱗1_表示 = true;
 
-    	public bool 胴4_鱗左_鱗2_表示 = true;
+    	public bool Torso4_鱗左_鱗2_表示 = true;
 
-    	public bool 胴4_鱗左_鱗3_表示 = true;
+    	public bool Torso4_鱗左_鱗3_表示 = true;
 
-    	public bool 胴4_鱗左_鱗4_表示 = true;
+    	public bool Torso4_鱗左_鱗4_表示 = true;
 
-    	public bool 胴4_鱗右_鱗1_表示 = true;
+    	public bool Torso4_鱗右_鱗1_表示 = true;
 
-    	public bool 胴4_鱗右_鱗2_表示 = true;
+    	public bool Torso4_鱗右_鱗2_表示 = true;
 
-    	public bool 胴4_鱗右_鱗3_表示 = true;
+    	public bool Torso4_鱗右_鱗3_表示 = true;
 
-    	public bool 胴4_鱗右_鱗4_表示 = true;
+    	public bool Torso4_鱗右_鱗4_表示 = true;
 
-    	public bool 胴4_胴_表示 = true;
+    	public bool Torso4_Torso_表示 = true;
 
-    	public bool 胴3_鱗左_鱗1_表示 = true;
+    	public bool Torso3_鱗左_鱗1_表示 = true;
 
-    	public bool 胴3_鱗左_鱗2_表示 = true;
+    	public bool Torso3_鱗左_鱗2_表示 = true;
 
-    	public bool 胴3_鱗左_鱗3_表示 = true;
+    	public bool Torso3_鱗左_鱗3_表示 = true;
 
-    	public bool 胴3_鱗左_鱗4_表示 = true;
+    	public bool Torso3_鱗左_鱗4_表示 = true;
 
-    	public bool 胴3_鱗右_鱗1_表示 = true;
+    	public bool Torso3_鱗右_鱗1_表示 = true;
 
-    	public bool 胴3_鱗右_鱗2_表示 = true;
+    	public bool Torso3_鱗右_鱗2_表示 = true;
 
-    	public bool 胴3_鱗右_鱗3_表示 = true;
+    	public bool Torso3_鱗右_鱗3_表示 = true;
 
-    	public bool 胴3_鱗右_鱗4_表示 = true;
+    	public bool Torso3_鱗右_鱗4_表示 = true;
 
-    	public bool 胴3_胴_表示 = true;
+    	public bool Torso3_Torso_表示 = true;
 
-    	public bool 胴2_鱗左_鱗1_表示 = true;
+    	public bool Torso2_鱗左_鱗1_表示 = true;
 
-    	public bool 胴2_鱗左_鱗2_表示 = true;
+    	public bool Torso2_鱗左_鱗2_表示 = true;
 
-    	public bool 胴2_鱗左_鱗3_表示 = true;
+    	public bool Torso2_鱗左_鱗3_表示 = true;
 
-    	public bool 胴2_鱗左_鱗4_表示 = true;
+    	public bool Torso2_鱗左_鱗4_表示 = true;
 
-    	public bool 胴2_鱗右_鱗1_表示 = true;
+    	public bool Torso2_鱗右_鱗1_表示 = true;
 
-    	public bool 胴2_鱗右_鱗2_表示 = true;
+    	public bool Torso2_鱗右_鱗2_表示 = true;
 
-    	public bool 胴2_鱗右_鱗3_表示 = true;
+    	public bool Torso2_鱗右_鱗3_表示 = true;
 
-    	public bool 胴2_鱗右_鱗4_表示 = true;
+    	public bool Torso2_鱗右_鱗4_表示 = true;
 
-    	public bool 胴2_胴_表示 = true;
+    	public bool Torso2_Torso_表示 = true;
 
-    	public bool 胴1_鱗左2_鱗1_表示 = true;
+    	public bool Torso1_鱗左2_鱗1_表示 = true;
 
-    	public bool 胴1_鱗左2_鱗2_表示 = true;
+    	public bool Torso1_鱗左2_鱗2_表示 = true;
 
-    	public bool 胴1_鱗左2_鱗3_表示 = true;
+    	public bool Torso1_鱗左2_鱗3_表示 = true;
 
-    	public bool 胴1_鱗左2_鱗4_表示 = true;
+    	public bool Torso1_鱗左2_鱗4_表示 = true;
 
-    	public bool 胴1_鱗右2_鱗1_表示 = true;
+    	public bool Torso1_鱗右2_鱗1_表示 = true;
 
-    	public bool 胴1_鱗右2_鱗2_表示 = true;
+    	public bool Torso1_鱗右2_鱗2_表示 = true;
 
-    	public bool 胴1_鱗右2_鱗3_表示 = true;
+    	public bool Torso1_鱗右2_鱗3_表示 = true;
 
-    	public bool 胴1_鱗右2_鱗4_表示 = true;
+    	public bool Torso1_鱗右2_鱗4_表示 = true;
 
-    	public bool 胴1_胴2_表示 = true;
+    	public bool Torso1_Torso2_表示 = true;
 
-    	public bool 胴1_胴1_表示 = true;
+    	public bool Torso1_Torso1_表示 = true;
 
-    	public bool 胴1_鱗左1_鱗1_表示 = true;
+    	public bool Torso1_鱗左1_鱗1_表示 = true;
 
-    	public bool 胴1_鱗左1_鱗2_表示 = true;
+    	public bool Torso1_鱗左1_鱗2_表示 = true;
 
-    	public bool 胴1_鱗左1_鱗3_表示 = true;
+    	public bool Torso1_鱗左1_鱗3_表示 = true;
 
-    	public bool 胴1_鱗左1_鱗4_表示 = true;
+    	public bool Torso1_鱗左1_鱗4_表示 = true;
 
-    	public bool 胴1_鱗右1_鱗1_表示 = true;
+    	public bool Torso1_鱗右1_鱗1_表示 = true;
 
-    	public bool 胴1_鱗右1_鱗2_表示 = true;
+    	public bool Torso1_鱗右1_鱗2_表示 = true;
 
-    	public bool 胴1_鱗右1_鱗3_表示 = true;
+    	public bool Torso1_鱗右1_鱗3_表示 = true;
 
-    	public bool 胴1_鱗右1_鱗4_表示 = true;
+    	public bool Torso1_鱗右1_鱗4_表示 = true;
 
     	public bool 輪1_革_表示 = true;
 
@@ -161,7 +161,7 @@ namespace SlaveMatrix
 
     	public bool 輪2表示 = true;
 
-    	public bool 胴_外線;
+    	public bool Torso_外線;
 
     	public bool Rパターン;
 
@@ -315,7 +315,7 @@ namespace SlaveMatrix
     		e.接続情報 = ConnectionInfo.長物_魚_尾_接続;
     	}
 
-    	public override Ele GetEle(double DisUnit, ModeEventDispatcher Med, 体配色 体配色)
+    	public override Ele GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
     	{
     		return new 長物_魚(DisUnit, 配色指定, 体配色, Med, this);
     	}

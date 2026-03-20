@@ -113,7 +113,7 @@ namespace SlaveMatrix
     		set
     		{
     			欠損_ = value;
-    			本体.IndexY = (欠損_ ? 1 : 0);
+    			Body.IndexY = (欠損_ ? 1 : 0);
     		}
     	}
 
@@ -396,7 +396,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -422,18 +422,18 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public JointS 鎖1_接続点 => new JointS(本体, X0Y0_輪_金具左, 0);
+    	public JointS 鎖1_接続点 => new JointS(Body, X0Y0_輪_金具左, 0);
 
-    	public JointS 鎖2_接続点 => new JointS(本体, X0Y0_輪_金具右, 0);
+    	public JointS 鎖2_接続点 => new JointS(Body, X0Y0_輪_金具右, 0);
 
-    	public 大顎(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 大顎D e)
+    	public 大顎(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 大顎D e)
     	{
     		ThisType = GetType();
     		Dif dif = new Dif(Sta.肢左["虫顎"][1]);
-    		本体 = new Difs();
-    		本体.Tag = dif.Tag;
-    		本体.Add(dif);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs();
+    		Body.Tag = dif.Tag;
+    		Body.Add(dif);
+    		Pars pars = Body[0][0];
     		Pars pars2 = pars["刺"].ToPars();
     		X0Y0_棘_棘1 = pars2["刺1"].ToPar();
     		X0Y0_棘_棘2 = pars2["刺2"].ToPar();
@@ -447,15 +447,15 @@ namespace SlaveMatrix
     		X0Y0_輪_金具3 = pars2["金具3"].ToPar();
     		X0Y0_輪_金具左 = pars2["金具左"].ToPar();
     		X0Y0_輪_金具右 = pars2["金具右"].ToPar();
-    		pars = 本体[0][1];
+    		pars = Body[0][1];
     		X0Y1_牙 = pars["牙"].ToPar();
     		X0Y1_線 = pars["線"].ToPar();
     		X0Y1_折線1 = pars["折線1"].ToPar();
     		X0Y1_折線2 = pars["折線2"].ToPar();
     		X0Y1_折線3 = pars["折線3"].ToPar();
     		X0Y1_穴 = pars["穴"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -520,7 +520,7 @@ namespace SlaveMatrix
     		X0Y1_折線2CP = new ColorP(X0Y1_折線2, 折線2CD, DisUnit, abj: true);
     		X0Y1_折線3CP = new ColorP(X0Y1_折線3, 折線3CD, DisUnit, abj: true);
     		X0Y1_穴CP = new ColorP(X0Y1_穴, 穴CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     		鎖1 = new 拘束鎖(DisUnit, 右, 配色指定, 体配色, Xasix);
     		鎖1.接続(鎖1_接続点);
     		int num = (右 ? (-10) : 10);
@@ -540,12 +540,12 @@ namespace SlaveMatrix
     		X0Y0_牙.AngleBase = num * -22.0;
     		X0Y1_牙.AngleBase = num * -22.0;
     		X0Y0_輪_革.AngleBase = num * -21.0;
-    		本体.JoinPAall();
+    		Body.JoinPAall();
     	}
 
     	public override void 描画0(RenderArea Are)
     	{
-    		本体.Draw(Are);
+    		Body.Draw(Are);
     		if (!欠損_)
     		{
     			鎖1.描画0(Are);
@@ -563,7 +563,7 @@ namespace SlaveMatrix
 
     	public override void 色更新()
     	{
-    		if (本体.IndexY == 0)
+    		if (Body.IndexY == 0)
     		{
     			X0Y0_棘_棘1CP.Update();
     			X0Y0_棘_棘2CP.Update();
@@ -590,7 +590,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		switch (配色指定)
     		{
@@ -609,7 +609,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		刺_棘1CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
     		刺_棘2CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
@@ -630,7 +630,7 @@ namespace SlaveMatrix
     		穴CD.色 = new Color2(ref Col.Black, ref 体配色.甲0O.Col2);
     	}
 
-    	private void 配色T0(体配色 体配色)
+    	private void 配色T0(BodyColorSet 体配色)
     	{
     		刺_棘1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
     		刺_棘2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
@@ -651,7 +651,7 @@ namespace SlaveMatrix
     		穴CD.色 = new Color2(ref Col.Black, ref 体配色.甲0O.Col2);
     	}
 
-    	private void 配色T1(体配色 体配色)
+    	private void 配色T1(BodyColorSet 体配色)
     	{
     		刺_棘1CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
     		刺_棘2CD = new ColorD(ref Col.Black, ref 体配色.甲0O);

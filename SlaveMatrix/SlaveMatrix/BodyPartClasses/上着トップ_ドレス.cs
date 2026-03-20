@@ -647,7 +647,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -694,14 +694,14 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 上着トップ_ドレス(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 上着トップ_ドレスD e)
+    	public 上着トップ_ドレス(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 上着トップ_ドレスD e)
     	{
     		ThisType = GetType();
     		Dif dif = new Dif(Sta.胴体["上着トップ"][2]);
-    		本体 = new Difs();
-    		本体.Tag = dif.Tag;
-    		本体.Add(dif);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs();
+    		Body.Tag = dif.Tag;
+    		Body.Add(dif);
+    		Pars pars = Body[0][0];
     		X0Y0_服基 = pars["服基"].ToPar();
     		Pars pars2 = pars["紐"].ToPars();
     		Pars pars3 = pars2["紐1"].ToPars();
@@ -748,8 +748,8 @@ namespace SlaveMatrix
     		X0Y0_右_柄_柄2 = pars3["柄2"].ToPar();
     		X0Y0_右_バスト = pars2["バスト"].ToPar();
     		X0Y0_右_縁 = pars2["縁"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -841,7 +841,7 @@ namespace SlaveMatrix
     		X0Y0_右_柄_柄2CP = new ColorP(X0Y0_右_柄_柄2, 右_柄_柄2CD, DisUnit, abj: true);
     		X0Y0_右_バストCP = new ColorP(X0Y0_右_バスト, 右_バストCD, DisUnit, abj: true);
     		X0Y0_右_縁CP = new ColorP(X0Y0_右_縁, 右_縁CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     	}
 
     	public override bool Is革(Par p)
@@ -907,12 +907,12 @@ namespace SlaveMatrix
     		X0Y0_右_縁CP.Update(縁右);
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		服基CD = new ColorD(ref Col.Empty, ref Color2.Empty);
     		紐_紐1_紐下_紐CD = new ColorD();

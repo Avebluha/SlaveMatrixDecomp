@@ -91,7 +91,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -104,15 +104,15 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 顔ハイライト(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 顔ハイライトD e)
+    	public 顔ハイライト(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 顔ハイライトD e)
     	{
     		ThisType = GetType();
-    		本体 = new Difs(Sta.胴体["顔ハイライト左"]);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs(Sta.胴体["顔ハイライト左"]);
+    		Pars pars = Body[0][0];
     		X0Y0_ハイライト1 = pars["ハイライト1"].ToPar();
     		X0Y0_ハイライト2 = pars["ハイライト2"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -148,7 +148,7 @@ namespace SlaveMatrix
     		配色(体配色);
     		X0Y0_ハイライト1CP = new ColorP(X0Y0_ハイライト1, ハイライト1CD, DisUnit, abj: true);
     		X0Y0_ハイライト2CP = new ColorP(X0Y0_ハイライト2, ハイライト2CD, DisUnit, abj: true);
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     	}
 
     	public override void 色更新()
@@ -157,12 +157,12 @@ namespace SlaveMatrix
     		X0Y0_ハイライト2CP.Update();
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		ハイライト1CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
     		ハイライト2CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2R);

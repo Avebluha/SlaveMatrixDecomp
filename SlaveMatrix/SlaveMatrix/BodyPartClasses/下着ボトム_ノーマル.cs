@@ -2646,7 +2646,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override double 濃度
+    	public override double Intensity
     	{
     		get
     		{
@@ -2709,14 +2709,14 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 下着ボトム_ノーマル(double DisUnit, 配色指定 配色指定, 体配色 体配色, ModeEventDispatcher Med, 下着ボトム_ノーマルD e)
+    	public 下着ボトム_ノーマル(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 下着ボトム_ノーマルD e)
     	{
     		ThisType = GetType();
     		Dif dif = new Dif(Sta.胴体["下着ボトム"][0]);
-    		本体 = new Difs();
-    		本体.Tag = dif.Tag;
-    		本体.Add(dif);
-    		Pars pars = 本体[0][0];
+    		Body = new Difs();
+    		Body.Tag = dif.Tag;
+    		Body.Add(dif);
+    		Pars pars = Body[0][0];
     		X0Y0_紐左 = pars["紐左"].ToPar();
     		X0Y0_紐右 = pars["紐右"].ToPar();
     		X0Y0_下地 = pars["下地"].ToPar();
@@ -2791,7 +2791,7 @@ namespace SlaveMatrix
     		pars2 = pars["染み"].ToPars();
     		X0Y0_染み_染み2 = pars2["染み2"].ToPar();
     		X0Y0_染み_染み1 = pars2["染み1"].ToPar();
-    		pars = 本体[0][1];
+    		pars = Body[0][1];
     		X0Y1_紐左 = pars["紐左"].ToPar();
     		X0Y1_紐右 = pars["紐右"].ToPar();
     		X0Y1_下地 = pars["下地"].ToPar();
@@ -2866,7 +2866,7 @@ namespace SlaveMatrix
     		pars2 = pars["染み"].ToPars();
     		X0Y1_染み_染み2 = pars2["染み2"].ToPar();
     		X0Y1_染み_染み1 = pars2["染み1"].ToPar();
-    		pars = 本体[0][2];
+    		pars = Body[0][2];
     		X0Y2_紐左 = pars["紐左"].ToPar();
     		X0Y2_紐右 = pars["紐右"].ToPar();
     		X0Y2_下地 = pars["下地"].ToPar();
@@ -2941,7 +2941,7 @@ namespace SlaveMatrix
     		pars2 = pars["染み"].ToPars();
     		X0Y2_染み_染み2 = pars2["染み2"].ToPar();
     		X0Y2_染み_染み1 = pars2["染み1"].ToPar();
-    		pars = 本体[0][3];
+    		pars = Body[0][3];
     		X0Y3_紐左 = pars["紐左"].ToPar();
     		X0Y3_紐右 = pars["紐右"].ToPar();
     		X0Y3_下地 = pars["下地"].ToPar();
@@ -3016,7 +3016,7 @@ namespace SlaveMatrix
     		pars2 = pars["染み"].ToPars();
     		X0Y3_染み_染み2 = pars2["染み2"].ToPar();
     		X0Y3_染み_染み1 = pars2["染み1"].ToPar();
-    		pars = 本体[0][4];
+    		pars = Body[0][4];
     		X0Y4_紐左 = pars["紐左"].ToPar();
     		X0Y4_紐右 = pars["紐右"].ToPar();
     		X0Y4_下地 = pars["下地"].ToPar();
@@ -3091,8 +3091,8 @@ namespace SlaveMatrix
     		pars2 = pars["染み"].ToPars();
     		X0Y4_染み_染み2 = pars2["染み2"].ToPar();
     		X0Y4_染み_染み1 = pars2["染み1"].ToPar();
-    		本体.SetJoints();
-    		接続根 = new JointD(本体);
+    		Body.SetJoints();
+    		接続根 = new JointD(Body);
     		右 = e.右;
     		反転X = e.反転X;
     		反転Y = e.反転Y;
@@ -3459,7 +3459,7 @@ namespace SlaveMatrix
     		X0Y4_染み_染み2CP = new ColorP(X0Y4_染み_染み2, 染み_染み2CD, DisUnit, abj: true);
     		X0Y4_染み_染み1CP = new ColorP(X0Y4_染み_染み1, 染み_染み1CD, DisUnit, abj: true);
     		染み濃度 = e.染み濃度;
-    		濃度 = e.濃度;
+    		Intensity = e.濃度;
     		尺度YB = 0.95;
     		double y = 0.0005;
     		X0Y0_下地.BasePointBase = X0Y0_下地.BasePointBase.AddY(y);
@@ -3471,7 +3471,7 @@ namespace SlaveMatrix
 
     	public override void 描画0(RenderArea Are)
     	{
-    		switch (本体.IndexY)
+    		switch (Body.IndexY)
     		{
     		case 0:
     			Are.Draw(X0Y0_紐左);
@@ -3498,7 +3498,7 @@ namespace SlaveMatrix
 
     	public override void 描画1(RenderArea Are)
     	{
-    		switch (本体.IndexY)
+    		switch (Body.IndexY)
     		{
     		case 0:
     			Are.Draw(X0Y0_下地);
@@ -3774,7 +3774,7 @@ namespace SlaveMatrix
 
     	public override void 色更新()
     	{
-    		switch (本体.IndexY)
+    		switch (Body.IndexY)
     		{
     		case 0:
     			X0Y0_紐左CP.Update();
@@ -4049,12 +4049,12 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void 配色(体配色 体配色)
+    	private void 配色(BodyColorSet 体配色)
     	{
     		配色N0(体配色);
     	}
 
-    	private void 配色N0(体配色 体配色)
+    	private void 配色N0(BodyColorSet 体配色)
     	{
     		紐左CD = new ColorD();
     		紐右CD = new ColorD();
