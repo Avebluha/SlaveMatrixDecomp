@@ -64,6 +64,17 @@ namespace _2DGAMELIB
             ["耳"] = "Ear",
             ["獣耳"] = "BeastEar",
             ["角"] = "Horn",
+            ["胸郭"] = "Chest",
+            ["胸郭肌"] = "ChestSkin",
+            ["胸郭腹板"] = "ChestPlate",
+            ["胸左"] = "LeftBreast",
+            ["胴肌"] = "TorsoSkin",
+            ["胴腹板"] = "TorsoPlate",
+            ["腰肌"] = "WaistSkin",
+            ["ボテ腹"] = "PregnantBelly",
+            ["ボテ腹板"] = "PregnantBellyPlate",
+            ["固定帯"] = "FixingBelt",
+            ["紅潮"] = "Blush",
         };
 
         public static void MigrateKeys(this Obj obj)

@@ -9,28 +9,28 @@ parts:
   path: Parts/Waist/
 - id: Torso
   path: Parts/Torso/
-- id: 胸郭
-  path: Parts/胸郭/
+- id: Chest
+  path: Parts/Chest/
 - id: 膣基
   path: Parts/膣基/
 - id: 膣内精液
   path: Parts/膣内精液/
 - id: 断面
   path: Parts/断面/
-- id: ボテ腹
-  path: Parts/ボテ腹/
-- id: 腰肌
-  path: Parts/腰肌/
-- id: ボテ腹板
-  path: Parts/ボテ腹板/
-- id: 胴腹板
-  path: Parts/胴腹板/
-- id: 胴肌
-  path: Parts/胴肌/
+- id: PregnantBelly
+  path: Parts/PregnantBelly/
+- id: WaistSkin
+  path: Parts/WaistSkin/
+- id: PregnantBellyPlate
+  path: Parts/PregnantBellyPlate/
+- id: TorsoPlate
+  path: Parts/TorsoPlate/
+- id: TorsoSkin
+  path: Parts/TorsoSkin/
 - id: 肛門
   path: Parts/肛門/
-- id: 固定帯
-  path: Parts/固定帯/
+- id: FixingBelt
+  path: Parts/FixingBelt/
 - id: Neck
   path: Parts/Neck/
 - id: Head
@@ -67,8 +67,8 @@ parts:
   path: Parts/CheekEyeLeft/
 - id: CheekEyelidLeft
   path: Parts/CheekEyelidLeft/
-- id: 紅潮
-  path: Parts/紅潮/
+- id: Blush
+  path: Parts/Blush/
 - id: EyeCornerShadowLeft
   path: Parts/EyeCornerShadowLeft/
 - id: FaceHighlightLeft
@@ -91,12 +91,12 @@ parts:
   path: Parts/DroolMouthGashLeft/
 - id: 玉口枷
   path: Parts/玉口枷/
-- id: 胸郭腹板
-  path: Parts/胸郭腹板/
-- id: 胸郭肌
-  path: Parts/胸郭肌/
-- id: 胸左
-  path: Parts/胸左/
+- id: ChestPlate
+  path: Parts/ChestPlate/
+- id: ChestSkin
+  path: Parts/ChestSkin/
+- id: LeftBreast
+  path: Parts/LeftBreast/
 - id: ChestHair
   path: Parts/ChestHair/
 - id: 横髪左
