@@ -37,46 +37,46 @@ parts:
   path: Parts/Head/
 - id: BaseHair
   path: Parts/BaseHair/
-- id: 単眼目
-  path: Parts/単眼目/
-- id: 単眼瞼
-  path: Parts/単眼瞼/
-- id: 目左
-  path: Parts/目左/
-- id: 魔性弱瞼左
-  path: Parts/魔性弱瞼左/
-- id: 魔性中瞼左
-  path: Parts/魔性中瞼左/
-- id: 魔性強瞼左
-  path: Parts/魔性強瞼左/
-- id: 獣性瞼左
-  path: Parts/獣性瞼左/
+- id: MonoEye
+  path: Parts/MonoEye/
+- id: MonoEyelid
+  path: Parts/MonoEyelid/
+- id: EyeLeft
+  path: Parts/EyeLeft/
+- id: DemonicWeakEyelidLeft
+  path: Parts/DemonicWeakEyelidLeft/
+- id: DemonicMidEyelidLeft
+  path: Parts/DemonicMidEyelidLeft/
+- id: DemonicStrongEyelidLeft
+  path: Parts/DemonicStrongEyelidLeft/
+- id: BestialEyelidLeft
+  path: Parts/BestialEyelidLeft/
 - id: エイリアン目左
   path: Parts/エイリアン目左/
 - id: 鼻肌
   path: Parts/鼻肌/
-- id: 目傷左
-  path: Parts/目傷左/
-- id: 頬肌左
-  path: Parts/頬肌左/
-- id: 額目
-  path: Parts/額目/
-- id: 額瞼
-  path: Parts/額瞼/
-- id: 頬目左
-  path: Parts/頬目左/
-- id: 頬瞼左
-  path: Parts/頬瞼左/
+- id: EyeScarLeft
+  path: Parts/EyeScarLeft/
+- id: CheekSkinLeft
+  path: Parts/CheekSkinLeft/
+- id: ForeheadEye
+  path: Parts/ForeheadEye/
+- id: ForeheadEyelid
+  path: Parts/ForeheadEyelid/
+- id: CheekEyeLeft
+  path: Parts/CheekEyeLeft/
+- id: CheekEyelidLeft
+  path: Parts/CheekEyelidLeft/
 - id: 紅潮
   path: Parts/紅潮/
-- id: 目尻影左
-  path: Parts/目尻影左/
-- id: 顔ハイライト左
-  path: Parts/顔ハイライト左/
+- id: EyeCornerShadowLeft
+  path: Parts/EyeCornerShadowLeft/
+- id: FaceHighlightLeft
+  path: Parts/FaceHighlightLeft/
 - id: 涙左
   path: Parts/涙左/
-- id: 目隠帯
-  path: Parts/目隠帯/
+- id: Blindfold
+  path: Parts/Blindfold/
 - id: 鼻水左
   path: Parts/鼻水左/
 - id: 鼻
@@ -103,10 +103,10 @@ parts:
   path: Parts/横髪左/
 - id: FrontHair
   path: Parts/FrontHair/
-- id: 単眼眉
-  path: Parts/単眼眉/
-- id: 眉左
-  path: Parts/眉左/
+- id: MonoEyebrow
+  path: Parts/MonoEyebrow/
+- id: EyebrowLeft
+  path: Parts/EyebrowLeft/
 - id: 青筋左
   path: Parts/青筋左/
 - id: 噴乳左
@@ -215,8 +215,8 @@ parts:
   path: Parts/四足固定帯/
 - id: 多足
   path: Parts/多足/
-- id: 単足
-  path: Parts/単足/
+- id: MonoLeg
+  path: Parts/MonoLeg/
 - id: 四足留具後
   path: Parts/四足留具後/
 - id: 四足留具前
@@ -259,8 +259,8 @@ parts:
   path: Parts/大顎基/
 - id: 大顎上
   path: Parts/大顎上/
-- id: 顔面
-  path: Parts/顔面/
+- id: Face
+  path: Parts/Face/
 - id: 角
   path: Parts/角/
 - id: 背中
