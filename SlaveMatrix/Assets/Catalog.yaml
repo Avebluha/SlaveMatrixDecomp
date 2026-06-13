@@ -81,14 +81,14 @@ parts:
   path: Parts/鼻水左/
 - id: 鼻
   path: Parts/鼻/
-- id: 口
-  path: Parts/口/
-- id: 舌
-  path: Parts/舌/
-- id: 涎左
-  path: Parts/涎左/
-- id: 涎口裂け左
-  path: Parts/涎口裂け左/
+- id: Mouth
+  path: Parts/Mouth/
+- id: Tongue
+  path: Parts/Tongue/
+- id: DroolLeft
+  path: Parts/DroolLeft/
+- id: DroolMouthGashLeft
+  path: Parts/DroolMouthGashLeft/
 - id: 玉口枷
   path: Parts/玉口枷/
 - id: 胸郭腹板
@@ -135,8 +135,8 @@ parts:
   path: Parts/肛門精液垂れ/
 - id: Cough
   path: Parts/Cough/
-- id: 呼気
-  path: Parts/呼気/
+- id: Breath
+  path: Parts/Breath/
 - id: 留具後
   path: Parts/留具後/
 - id: 留具前
@@ -145,8 +145,8 @@ parts:
   path: Parts/意思表示/
 - id: 反応
   path: Parts/反応/
-- id: 吹出し
-  path: Parts/吹出し/
+- id: SpeechBubble
+  path: Parts/SpeechBubble/
 - id: Shoulder
   path: Parts/Shoulder/
 - id: 四足脇

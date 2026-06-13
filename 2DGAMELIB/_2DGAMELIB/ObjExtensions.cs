@@ -52,6 +52,12 @@ namespace _2DGAMELIB
             ["頬目左"] = "CheekEyeLeft",
             ["頬瞼左"] = "CheekEyelidLeft",
             ["頬肌左"] = "CheekSkinLeft",
+            ["口"] = "Mouth",
+            ["舌"] = "Tongue",
+            ["涎左"] = "DroolLeft",
+            ["涎口裂け左"] = "DroolMouthGashLeft",
+            ["呼気"] = "Breath",
+            ["吹出し"] = "SpeechBubble",
         };
 
         public static void MigrateKeys(this Obj obj)
