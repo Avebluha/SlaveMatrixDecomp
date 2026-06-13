@@ -1089,80 +1089,80 @@ namespace SlaveMatrix
             胴体 = obj;
 
             //胴体.SaveExMod("C:\\Users\\adel4\\Documents\\胴体");
-            //Ser.ToJson(胴体, "C:\\Users\\adel4\\Documents\\胴体.json");
-            //胴体 = Ser.UnJson<BodyTemplate>("C:\\Users\\adel4\\Documents\\胴体.json");
+            //Serializer.ToJson(胴体, "C:\\Users\\adel4\\Documents\\胴体.json");
+            //胴体 = Serializer.UnJson<BodyTemplate>("C:\\Users\\adel4\\Documents\\胴体.json");
 
             obj = Resources.肩左.ObjLoad();
             obj.MigrateKeys();
             肩左 = obj;
             //肩左.SaveExMod("C:\\Users\\dave\\Documents\\肩左");
-            //Ser.ToJson(肩左, "C:\\Users\\dave\\Documents\\肩左.json");
-            //肩左 = Ser.UnJson<BodyTemplate>("C:\\Users\\dave\\Documents\\肩左.json");
+            //Serializer.ToJson(肩左, "C:\\Users\\dave\\Documents\\肩左.json");
+            //肩左 = Serializer.UnJson<BodyTemplate>("C:\\Users\\dave\\Documents\\肩左.json");
 
 
             obj = Resources.腕左.ObjLoad();
             obj.MigrateKeys();
             腕左 = obj;
             //腕左.SaveExMod("C:\\Users\\dave\\Documents\\腕左");
-            //Ser.ToJson(腕左, "C:\\Users\\dave\\Documents\\腕左.json");
-            //腕左 = Ser.UnJson<BodyTemplate>("C:\\Users\\dave\\Documents\\腕左.json");
+            //Serializer.ToJson(腕左, "C:\\Users\\dave\\Documents\\腕左.json");
+            //腕左 = Serializer.UnJson<BodyTemplate>("C:\\Users\\dave\\Documents\\腕左.json");
 
             obj = Resources.脚左.ObjLoad();
             obj.MigrateKeys();
             脚左 = obj;
             //脚左.SaveExMod("C:\\Users\\dave\\Documents\\脚左");
-            //Ser.ToJson(脚左, "C:\\Users\\dave\\Documents\\脚左.json");
-            //脚左 = Ser.UnJson<BodyTemplate>("C:\\Users\\dave\\Documents\\脚左.json");
+            //Serializer.ToJson(脚左, "C:\\Users\\dave\\Documents\\脚左.json");
+            //脚左 = Serializer.UnJson<BodyTemplate>("C:\\Users\\dave\\Documents\\脚左.json");
 
             尻尾 = Resources.尻尾.ObjLoad();
             //尻尾.SaveExMod("C:\\Users\\dave\\Documents\\尻尾");
-            //Ser.ToJson(尻尾, "C:\\Users\\dave\\Documents\\尻尾.json");
-            //尻尾 = Ser.UnJson<BodyTemplate>("C:\\Users\\dave\\Documents\\尻尾.json");
+            //Serializer.ToJson(尻尾, "C:\\Users\\dave\\Documents\\尻尾.json");
+            //尻尾 = Serializer.UnJson<BodyTemplate>("C:\\Users\\dave\\Documents\\尻尾.json");
 
             半身 = Resources.半身.ObjLoad();
             //半身.SaveExMod("C:\\Users\\dave\\Documents\\半身");
-            //Ser.ToJson(半身, "C:\\Users\\dave\\Documents\\半身.json");
-            //半身 = Ser.UnJson<BodyTemplate>("C:\\Users\\dave\\Documents\\半身.json");
+            //Serializer.ToJson(半身, "C:\\Users\\dave\\Documents\\半身.json");
+            //半身 = Serializer.UnJson<BodyTemplate>("C:\\Users\\dave\\Documents\\半身.json");
 
             肢左 = Resources.肢左.ObjLoad();
             //肢左.SaveExMod("C:\\Users\\dave\\Documents\\肢左");
-            //Ser.ToJson(肢左, "C:\\Users\\dave\\Documents\\肢左.json");
-            //肢左 = Ser.UnJson<BodyTemplate>("C:\\Users\\dave\\Documents\\肢左.json");
+            //Serializer.ToJson(肢左, "C:\\Users\\dave\\Documents\\肢左.json");
+            //肢左 = Serializer.UnJson<BodyTemplate>("C:\\Users\\dave\\Documents\\肢左.json");
 
             肢中 = Resources.肢中.ObjLoad();
             //肢中.SaveExMod("C:\\Users\\dave\\Documents\\肢中");
-            //Ser.ToJson(肢中, "C:\\Users\\dave\\Documents\\肢中.json");
-            //肢中 = Ser.UnJson<BodyTemplate>("C:\\Users\\dave\\Documents\\肢中.json");
+            //Serializer.ToJson(肢中, "C:\\Users\\dave\\Documents\\肢中.json");
+            //肢中 = Serializer.UnJson<BodyTemplate>("C:\\Users\\dave\\Documents\\肢中.json");
 
             性器 = Resources.性器.ObjLoad();
             //性器.SaveExMod("C:\\Users\\dave\\Documents\\性器");
-            //Ser.ToJson(性器, "C:\\Users\\dave\\Documents\\性器.json");
-            //性器 = Ser.UnJson<BodyTemplate>("C:\\Users\\dave\\Documents\\性器.json");
+            //Serializer.ToJson(性器, "C:\\Users\\dave\\Documents\\性器.json");
+            //性器 = Serializer.UnJson<BodyTemplate>("C:\\Users\\dave\\Documents\\性器.json");
 
             性器付 = Resources.性器付.ObjLoad();
             //性器付.SaveExMod("C:\\Users\\dave\\Documents\\性器付");
-            //Ser.ToJson(性器付, "C:\\Users\\dave\\Documents\\性器付.json");
-            //性器付 = Ser.UnJson<BodyTemplate>("C:\\Users\\dave\\Documents\\性器付.json");
+            //Serializer.ToJson(性器付, "C:\\Users\\dave\\Documents\\性器付.json");
+            //性器付 = Serializer.UnJson<BodyTemplate>("C:\\Users\\dave\\Documents\\性器付.json");
 
             スタンプ = Resources.スタンプ.ObjLoad();
             //スタンプ.SaveExMod("C:\\Users\\dave\\Documents\\スタンプ");
-            //Ser.ToJson(スタンプ, "C:\\Users\\dave\\Documents\\スタンプ.json");
-            //スタンプ = Ser.UnJson<BodyTemplate>("C:\\Users\\dave\\Documents\\スタンプ.json");
+            //Serializer.ToJson(スタンプ, "C:\\Users\\dave\\Documents\\スタンプ.json");
+            //スタンプ = Serializer.UnJson<BodyTemplate>("C:\\Users\\dave\\Documents\\スタンプ.json");
 
             カーソル = Resources.カーソル.ObjLoad();
             //カーソル.SaveExMod("C:\\Users\\dave\\Documents\\カーソル");
-            //Ser.ToJson(カーソル, "C:\\Users\\dave\\Documents\\カーソル.json");
-            //カーソル = Ser.UnJson<BodyTemplate>("C:\\Users\\dave\\Documents\\カーソル.json");
+            //Serializer.ToJson(カーソル, "C:\\Users\\dave\\Documents\\カーソル.json");
+            //カーソル = Serializer.UnJson<BodyTemplate>("C:\\Users\\dave\\Documents\\カーソル.json");
 
             その他 = Resources.その他.ObjLoad();
             //その他.SaveExMod("C:\\Users\\dave\\Documents\\その他");
-            //Ser.ToJson(その他, "C:\\Users\\dave\\Documents\\その他.json");
-            //その他 = Ser.UnJson<BodyTemplate>("C:\\Users\\dave\\Documents\\その他.json");
+            //Serializer.ToJson(その他, "C:\\Users\\dave\\Documents\\その他.json");
+            //その他 = Serializer.UnJson<BodyTemplate>("C:\\Users\\dave\\Documents\\その他.json");
 
             タイル = Resources.タイル.ObjLoad();
             //タイル.SaveExMod("C:\\Users\\dave\\Documents\\タイル");
-            //Ser.ToJson(タイル, "C:\\Users\\dave\\Documents\\タイル.json");
-            //タイル = Ser.UnJson<BodyTemplate>("C:\\Users\\dave\\Documents\\タイル.json");
+            //Serializer.ToJson(タイル, "C:\\Users\\dave\\Documents\\タイル.json");
+            //タイル = Serializer.UnJson<BodyTemplate>("C:\\Users\\dave\\Documents\\タイル.json");
 
             MaxAre = 0.0584246154149664;
     		Elet = typeof(Ele);
@@ -1468,7 +1468,7 @@ namespace SlaveMatrix
     	public static string Translate(string Path, int Mode)
     	{
     		TranslateJsonFile = System.IO.Path.Combine(CurrentDirectory, "text", "Translate.json");
-    		TranslateDict = Ser.UnJson<Dictionary<string, string>>(TranslateJsonFile);
+    		TranslateDict = Serializer.UnJson<Dictionary<string, string>>(TranslateJsonFile);
     		string input = File.ReadAllText(Path);
     		switch (Mode)
     		{

@@ -748,12 +748,12 @@ namespace SlaveMatrix
                 string text = Sta.CurrentDirectory + "temp.json";
                 string contents = Sta.Translate(Path, 1);
                 File.WriteAllText(text, contents);
-                Sta.GameData = Ser.UnJson<GameState>(text);
+                Sta.GameData = Serializer.UnJson<GameState>(text);
                 System.IO.File.Delete(text);
             }
             else
             {
-                Sta.GameData = Ser.UnJson<GameState>(Path);
+                Sta.GameData = Serializer.UnJson<GameState>(Path);
             }
             Sta.DontScar = false;
             Character d = Viola;

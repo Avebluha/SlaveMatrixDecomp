@@ -10,7 +10,7 @@ using Newtonsoft.Json.Serialization;
 
 namespace _2DGAMELIB
 {
-    public static class Ser
+    public static class Serializer
     {
         private static SerializableAttribute s = new SerializableAttribute();
 
@@ -86,7 +86,7 @@ namespace _2DGAMELIB
             return (T)NewFormatter().Deserialize(serializationStream);
         }
 
-        static Ser() { }
+        static Serializer() { }
 
         public static T JsonDeepCopy<T>(this T Object)
         {
