@@ -245,7 +245,7 @@ namespace SlaveMatrix
 
     	public ShapePart X3Y5_膣口;
 
-    	public AreM AreM;
+    	public ManagedArea ManagedArea;
 
     	private Vector2D AreMPos;
 
@@ -1233,9 +1233,9 @@ namespace SlaveMatrix
     		X3Y5_陰核CP = new ColorP(X3Y5_陰核, 陰核CD, DisUnit, abj: true);
     		X3Y5_尿道CP = new ColorP(X3Y5_尿道, 尿道CD, DisUnit, abj: true);
     		X3Y5_膣口CP = new ColorP(X3Y5_膣口, 膣口CD, DisUnit, abj: true);
-    		AreM = new AreM(Med.Unit, 1.0, 1.0, 0.024, Med.DisQuality, Med.HitAccuracy, 0.1);
-    		AreM.BasePoint = new Vector2D(0.5, 0.5);
-    		AreMPos = AreM.GetPosition(ref AreM.BasePoint);
+    		ManagedArea = new ManagedArea(Med.Unit, 1.0, 1.0, 0.024, Med.DisQuality, Med.HitAccuracy, 0.1);
+    		ManagedArea.BasePoint = new Vector2D(0.5, 0.5);
+    		AreMPos = ManagedArea.GetPosition(ref ManagedArea.BasePoint);
     		Intensity = e.濃度;
     		Xi = 1;
     	}
@@ -1243,21 +1243,21 @@ namespace SlaveMatrix
     	private void AreMSetPos()
     	{
     		p = 接続根.Difs0.Current.GetPar(接続根.Path0);
-    		AreM.Position = p.ToGlobal(p.JP[接続根.Index].Joint);
+    		ManagedArea.Position = p.ToGlobal(p.JP[接続根.Index].Joint);
     	}
 
     	public override void Dispose()
     	{
     		base.Dispose();
-    		AreM.Dispose();
+    		ManagedArea.Dispose();
     	}
 
     	public override void 描画0(RenderArea Are)
     	{
-    		AreM.Clear();
+    		ManagedArea.Clear();
     		位置B = AreMPos;
-    		Body.Draw(AreM);
-    		Are.Draw(AreM);
+    		Body.Draw(ManagedArea);
+    		Are.Draw(ManagedArea);
     	}
 
     	public override void 接続P()

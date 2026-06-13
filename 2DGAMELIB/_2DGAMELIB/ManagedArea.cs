@@ -3,13 +3,14 @@ using System.Drawing.Drawing2D;
 
 namespace _2DGAMELIB
 {
-    public class AreM : RenderArea
+	//TODO: Find a better name...
+    public class ManagedArea : RenderArea
     {
     	private double strength;
 
     	private double unitS;
 
-    	public AreM(double Unit, double XRatio, double YRatio, double Size, double DisMag, double HitMag, double Strength) : 
+    	public ManagedArea(double Unit, double XRatio, double YRatio, double Size, double DisMag, double HitMag, double Strength) : 
             base(Unit, XRatio, YRatio, Size, DisMag, HitMag)
     	{
             SetXYRatio(XRatio, YRatio);

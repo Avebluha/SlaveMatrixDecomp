@@ -484,7 +484,7 @@ namespace SlaveMatrix
 
     	private void Set_ペニス(Element t)
     	{
-    		t.位置B = ペニス.AreM.Position;
+    		t.位置B = ペニス.ManagedArea.Position;
     	}
 
     	private void Set_ロータ(Element t)

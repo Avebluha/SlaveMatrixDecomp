@@ -141,7 +141,7 @@ namespace SlaveMatrix
     	{
     		調教UI.擬音キュー.Enqueue(delegate(RenderArea a)
     		{
-    			調教UI.擬音.Sound(a, GlobalState.GetAreaPoint(ref 調教UI.ペニス.AreM.Position, 0.02), GlobalState.射精.GetVal(Player.変化V_射精, 1.0), new Font("MS Gothic", 1f), Color.White, 0.2 + 0.2 * Rng.XS.NextDouble() * Player.変化V_射精, b: true);
+    			調教UI.擬音.Sound(a, GlobalState.GetAreaPoint(ref 調教UI.ペニス.ManagedArea.Position, 0.02), GlobalState.射精.GetVal(Player.変化V_射精, 1.0), new Font("MS Gothic", 1f), Color.White, 0.2 + 0.2 * Rng.XS.NextDouble() * Player.変化V_射精, b: true);
     		});
     	}
 

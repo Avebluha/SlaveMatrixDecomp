@@ -97,7 +97,7 @@ namespace SlaveMatrix
 
     	public ShapePart X1Y4_血管下;
 
-    	public AreM AreM;
+    	public ManagedArea ManagedArea;
 
     	public ColorD 陰嚢CD;
 
@@ -422,11 +422,11 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return AreM.Position;
+    			return ManagedArea.Position;
     		}
     		set
     		{
-    			AreM.Position = value;
+    			ManagedArea.Position = value;
     		}
     	}
 
@@ -590,8 +590,8 @@ namespace SlaveMatrix
     		X1Y4_陰茎CP = new ColorP(X1Y4_陰茎, 陰茎CD, DisUnit, abj: true);
     		X1Y4_血管下CP = new ColorP(X1Y4_血管下, 血管下CD, DisUnit, abj: true);
     		Intensity = e.濃度;
-    		AreM = new AreM(Med.Unit, 3.0, 7.0, 0.07, Med.DisQuality, Med.HitAccuracy, 0.45);
-    		AreM.BasePoint = new Vector2D(0.5, 0.1);
+    		ManagedArea = new ManagedArea(Med.Unit, 3.0, 7.0, 0.07, Med.DisQuality, Med.HitAccuracy, 0.45);
+    		ManagedArea.BasePoint = new Vector2D(0.5, 0.1);
     		X0Y0_陰嚢.BasePointBase = X0Y0_陰嚢.ToLocal(X0Y0_陰茎.ToGlobal(X0Y0_陰茎.JP[3].Joint));
     		X0Y1_陰嚢.BasePointBase = X0Y1_陰嚢.ToLocal(X0Y1_陰茎.ToGlobal(X0Y1_陰茎.JP[3].Joint));
     		X0Y2_陰嚢.BasePointBase = X0Y2_陰嚢.ToLocal(X0Y2_陰茎.ToGlobal(X0Y2_陰茎.JP[3].Joint));
@@ -602,7 +602,7 @@ namespace SlaveMatrix
     		X1Y2_陰嚢.BasePointBase = X1Y2_陰嚢.ToLocal(X1Y2_陰茎.ToGlobal(X1Y2_陰茎.JP[2].Joint));
     		X1Y3_陰嚢.BasePointBase = X1Y3_陰嚢.ToLocal(X1Y3_陰茎.ToGlobal(X1Y3_陰茎.JP[2].Joint));
     		X1Y4_陰嚢.BasePointBase = X1Y4_陰嚢.ToLocal(X1Y4_陰茎.ToGlobal(X1Y4_陰茎.JP[2].Joint));
-    		Vector2D position = AreM.GetPosition(ref AreM.BasePoint);
+    		Vector2D position = ManagedArea.GetPosition(ref ManagedArea.BasePoint);
     		foreach (ShapePart item in Body.EnumJoinRoot)
     		{
     			item.PositionBase = position;
@@ -615,14 +615,14 @@ namespace SlaveMatrix
     	public override void Dispose()
     	{
     		base.Dispose();
-    		AreM.Dispose();
+    		ManagedArea.Dispose();
     	}
 
     	public override void 描画0(RenderArea Are)
     	{
-    		AreM.Clear();
-    		Body.Draw(AreM);
-    		Are.Draw(AreM);
+    		ManagedArea.Clear();
+    		Body.Draw(ManagedArea);
+    		Are.Draw(ManagedArea);
     	}
 
     	public override void 色更新()

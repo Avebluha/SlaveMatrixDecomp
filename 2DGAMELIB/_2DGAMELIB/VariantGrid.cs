@@ -289,9 +289,9 @@ namespace _2DGAMELIB
     	{
     		Are.Draw(Current);
     	}
-    	public void Draw(AreM AreM)
+    	public void Draw(ManagedArea ManagedArea)
     	{
-    		AreM.Draw(Current);
+    		ManagedArea.Draw(Current);
     	}
 
     	private ShapePart GetJoinRoot(PartGroup ps)
