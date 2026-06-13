@@ -2423,7 +2423,7 @@ namespace SlaveMatrix
     					Directory.CreateDirectory(Path);
     				}
     				DateTime now = DateTime.Now;
-    				Mods.撮影描画(調教UI2.Film, Med.FPSF);
+    				ModuleRegistry.撮影描画(調教UI2.Film, Med.FPSF);
     				Font font = new Font("MS Gothic", (float)(10.0));
     				float x = 350f;
     				float y = 365f;

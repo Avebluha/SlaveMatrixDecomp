@@ -129,7 +129,7 @@ namespace SlaveMatrix
         }
     }
 
-    public static class Mods
+    public static class ModuleRegistry
     {
 
 
@@ -7292,7 +7292,7 @@ namespace SlaveMatrix
     		return mod;
     	}
 
-    	static Mods()
+    	static ModuleRegistry()
     	{
     		TrainingTarget = null;
     		fade_in = false;

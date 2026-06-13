@@ -550,7 +550,7 @@ namespace SlaveMatrix
     		その他.Dispose();
     		タイル.Dispose();
     		Sounds.Close();
-    		Mods.Dispose();
+    		ModuleRegistry.Dispose();
     	}
 
     	public static double GetRanAngle(this double MaxAngle)

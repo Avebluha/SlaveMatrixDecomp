@@ -32,7 +32,7 @@ namespace SlaveMatrix
     			HitAccuracy = 0.3
             };
 
-    		med.InitializeModes("Start", Mods.GetMods);
+    		med.InitializeModes("Start", ModuleRegistry.GetMods);
     		UI uI = new UI(med);
 
     		//main loop
