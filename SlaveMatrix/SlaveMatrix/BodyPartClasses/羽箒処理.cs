@@ -207,7 +207,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 羽箒処理(TrainingUI 調教UI, CM 羽根箒)
+    	public 羽箒処理(TrainingUI 調教UI, CharacterElement 羽根箒)
     		: base(調教UI, 羽根箒)
     	{
     		羽箒処理 羽箒処理2 = this;

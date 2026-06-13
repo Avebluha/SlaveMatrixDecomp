@@ -543,7 +543,7 @@ namespace SlaveMatrix
     		射精.Start();
     	}
 
-    	public ペニス処理(TrainingUI 調教UI, CM ペニス)
+    	public ペニス処理(TrainingUI 調教UI, CharacterElement ペニス)
     		: base(調教UI, ペニス)
     	{
     		ペニス処理 ペニス処理2 = this;

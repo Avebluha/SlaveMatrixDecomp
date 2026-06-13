@@ -12,13 +12,13 @@ namespace SlaveMatrix
 
     	public ConstProp CP右 = new ConstProp();
 
-    	public CM キャップ1;
+    	public CharacterElement キャップ1;
 
-    	public CM キャップ2;
+    	public CharacterElement キャップ2;
 
-    	public CM キャップ3;
+    	public CharacterElement キャップ3;
 
-    	private Dictionary<Element, CM> キャップ = new Dictionary<Element, CM>();
+    	private Dictionary<Element, CharacterElement> キャップ = new Dictionary<Element, CharacterElement>();
 
     	private キャップ情報 キャップ着;
 
@@ -589,9 +589,9 @@ namespace SlaveMatrix
     		キャップ着.SetDefault();
     		キャップ1D e = new キャップ1D();
     		e.SetValuesD("表示", true);
-    		キャップ1 = new CM(Med, 調教UI, 調教UI.キャップ1 = new キャップ1(disUnit, 配色指定.N0, null, Med, e));
-    		キャップ2 = new CM(Med, 調教UI, 調教UI.キャップ2 = new キャップ1(disUnit, 配色指定.N0, null, Med, e));
-    		キャップ3 = new CM(Med, 調教UI, 調教UI.キャップ3 = new キャップ1(disUnit, 配色指定.N0, null, Med, e));
+    		キャップ1 = new CharacterElement(Med, 調教UI, 調教UI.キャップ1 = new キャップ1(disUnit, 配色指定.N0, null, Med, e));
+    		キャップ2 = new CharacterElement(Med, 調教UI, 調教UI.キャップ2 = new キャップ1(disUnit, 配色指定.N0, null, Med, e));
+    		キャップ3 = new CharacterElement(Med, 調教UI, 調教UI.キャップ3 = new キャップ1(disUnit, 配色指定.N0, null, Med, e));
     		キャップ色 配色 = default(キャップ色);
     		配色.SetDefault();
     		調教UI.キャップ1.配色(配色);
@@ -600,9 +600,9 @@ namespace SlaveMatrix
     		調教UI.キャップ1.Intensity = 0.5;
     		調教UI.キャップ2.Intensity = 0.5;
     		調教UI.キャップ3.Intensity = 0.5;
-    		調教UI.キャップ1CM = キャップ1;
-    		調教UI.キャップ2CM = キャップ2;
-    		調教UI.キャップ3CM = キャップ3;
+    		調教UI.キャップ1CharacterElement = キャップ1;
+    		調教UI.キャップ2CharacterElement = キャップ2;
+    		調教UI.キャップ3CharacterElement = キャップ3;
     		double d = 0.0005;
     		Vector2D p = DataConsts.Vec2DZero;
     		キャップ振動 = new Motion(-1.0, 1.0)

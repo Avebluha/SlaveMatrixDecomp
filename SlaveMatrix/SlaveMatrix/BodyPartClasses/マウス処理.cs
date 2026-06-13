@@ -328,7 +328,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public マウス処理(TrainingUI 調教UI, CM マウス)
+    	public マウス処理(TrainingUI 調教UI, CharacterElement マウス)
     		: base(調教UI, マウス)
     	{
     		マウス処理 マウス処理2 = this;

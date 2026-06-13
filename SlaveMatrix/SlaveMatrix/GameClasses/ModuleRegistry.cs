@@ -1737,9 +1737,9 @@ namespace SlaveMatrix
                     Player.UI.調教鞭CM.Show = Sta.GameData.PurchasedTools[5];
                     Player.UI.羽根箒CM.Show = Sta.GameData.PurchasedTools[6];
                     Player.UI.T剃刀CM.Show = Sta.GameData.PurchasedTools[7];
-                    Player.UI.キャップ1CM.Show = Sta.GameData.PurchasedTools[8];
-                    Player.UI.キャップ2CM.Show = Sta.GameData.PurchasedTools[8];
-                    Player.UI.キャップ3CM.Show = Sta.GameData.PurchasedTools[8];
+                    Player.UI.キャップ1CharacterElement.Show = Sta.GameData.PurchasedTools[8];
+                    Player.UI.キャップ2CharacterElement.Show = Sta.GameData.PurchasedTools[8];
+                    Player.UI.キャップ3CharacterElement.Show = Sta.GameData.PurchasedTools[8];
                     Player.UI.ロータCM.Show = Sta.GameData.PurchasedTools[9];
                     Player.UI.パールCM.Show = Sta.GameData.PurchasedTools[10];
                     Player.UI.目隠帯.Dra = Sta.GameData.PurchasedTools[11];

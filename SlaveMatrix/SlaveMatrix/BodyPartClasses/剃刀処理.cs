@@ -164,7 +164,7 @@ namespace SlaveMatrix
     	{
     	}
 
-    	public 剃刀処理(TrainingUI 調教UI, CM T剃刀)
+    	public 剃刀処理(TrainingUI 調教UI, CharacterElement T剃刀)
     		: base(調教UI, T剃刀)
     	{
     	}

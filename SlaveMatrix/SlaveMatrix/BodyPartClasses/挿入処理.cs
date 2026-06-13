@@ -1470,7 +1470,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 挿入処理(TrainingUI 調教UI, CM 対象)
+    	public 挿入処理(TrainingUI 調教UI, CharacterElement 対象)
     		: base(調教UI, 対象)
     	{
     		挿入処理 挿入処理2 = this;

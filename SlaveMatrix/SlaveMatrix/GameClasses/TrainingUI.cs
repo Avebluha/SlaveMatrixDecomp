@@ -46,25 +46,25 @@ namespace SlaveMatrix
     	public キャップ1 キャップ2;
     	public キャップ1 キャップ3;
 
-    	public CM ペニスCM;
-    	public CM マウスCM;
-    	public CM ハンド右CM;
-    	public CM ハンド左CM;
-    	public CM ロータCM;
-    	public CM コモンCM;
-    	public CM ディルCM;
-    	public CM アナルCM;
-    	public CM デンマCM;
-    	public CM ドリルCM;
-    	public CM パールCM;
-    	public CM 羽根箒CM;
-    	public CM 調教鞭CM;
-    	public CM T剃刀CM;
-    	public CM キャップ1CM;
-    	public CM キャップ2CM;
-        public CM キャップ3CM;
-        private CM focus;
-        private CM hcm;
+    	public CharacterElement ペニスCM;
+    	public CharacterElement マウスCM;
+    	public CharacterElement ハンド右CM;
+    	public CharacterElement ハンド左CM;
+    	public CharacterElement ロータCM;
+    	public CharacterElement コモンCM;
+    	public CharacterElement ディルCM;
+    	public CharacterElement アナルCM;
+    	public CharacterElement デンマCM;
+    	public CharacterElement ドリルCM;
+    	public CharacterElement パールCM;
+    	public CharacterElement 羽根箒CM;
+    	public CharacterElement 調教鞭CM;
+    	public CharacterElement T剃刀CM;
+    	public CharacterElement キャップ1CharacterElement;
+    	public CharacterElement キャップ2CharacterElement;
+        public CharacterElement キャップ3CharacterElement;
+        private CharacterElement focus;
+        private CharacterElement hcm;
 
         //tool animations?
         public 挿入処理 ペニス挿入;
@@ -231,7 +231,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public CM Focus
+    	public CharacterElement Focus
     	{
     		get
     		{
@@ -248,7 +248,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public CM Focus_nr
+    	public CharacterElement Focus_nr
     	{
     		get
     		{
@@ -448,7 +448,7 @@ namespace SlaveMatrix
     	{
     	}
 
-    	public IEnumerable<CM> EnumCM()
+    	public IEnumerable<CharacterElement> EnumCM()
     	{
     		yield return ペニスCM;
     		yield return マウスCM;
@@ -463,9 +463,9 @@ namespace SlaveMatrix
     		yield return 羽根箒CM;
     		yield return 調教鞭CM;
     		yield return T剃刀CM;
-    		yield return キャップ1CM;
-    		yield return キャップ2CM;
-    		yield return キャップ3CM;
+    		yield return キャップ1CharacterElement;
+    		yield return キャップ2CharacterElement;
+    		yield return キャップ3CharacterElement;
     	}
 
     	public void Set挿入Position()
@@ -908,11 +908,11 @@ namespace SlaveMatrix
     		return cd.e != null;
     	}
 
-    	public bool Isバイブ(CM cm)
+    	public bool Isバイブ(CharacterElement CharacterElement)
     	{
-    		if (コモンCM != cm && ディルCM != cm && アナルCM != cm && デンマCM != cm)
+    		if (コモンCM != CharacterElement && ディルCM != CharacterElement && アナルCM != CharacterElement && デンマCM != CharacterElement)
     		{
-    			return ドリルCM == cm;
+    			return ドリルCM == CharacterElement;
     		}
     		return true;
     	}
@@ -1094,17 +1094,17 @@ namespace SlaveMatrix
     		{
     			ハンド右.Xi = 11;
     		}
-    		else if (focus == キャップ1CM)
+    		else if (focus == キャップ1CharacterElement)
     		{
     			ハンド右.Xi = 5;
     			Set_キャップ1(ハンド右);
     		}
-    		else if (focus == キャップ2CM)
+    		else if (focus == キャップ2CharacterElement)
     		{
     			ハンド右.Xi = 5;
     			Set_キャップ2(ハンド右);
     		}
-    		else if (focus == キャップ3CM)
+    		else if (focus == キャップ3CharacterElement)
     		{
     			ハンド右.Xi = 5;
     			Set_キャップ3(ハンド右);
@@ -1161,15 +1161,15 @@ namespace SlaveMatrix
     			{
     				Set_T剃刀(ハンド右);
     			}
-    			else if (Focus == キャップ1CM)
+    			else if (Focus == キャップ1CharacterElement)
     			{
     				Set_キャップ1(ハンド右);
     			}
-    			else if (Focus == キャップ2CM)
+    			else if (Focus == キャップ2CharacterElement)
     			{
     				Set_キャップ2(ハンド右);
     			}
-    			else if (Focus == キャップ3CM)
+    			else if (Focus == キャップ3CharacterElement)
     			{
     				Set_キャップ3(ハンド右);
     			}
@@ -1641,10 +1641,10 @@ namespace SlaveMatrix
     			Color hc_ = hc;
     			hcm = (from e in EnumCM()
     				where e.使用状態 == UsageStatus.Standby
-    				select e).FirstOrDefault((CM e) => e.Element.Body.IsHit(ref hc_));
+    				select e).FirstOrDefault((CharacterElement e) => e.Element.Body.IsHit(ref hc_));
     			if (hcm != null)
     			{
-    				foreach (CM item in from e in EnumCM()
+    				foreach (CharacterElement item in from e in EnumCM()
     					where e.使用状態 == UsageStatus.Standby
     					select e)
     				{
@@ -1654,7 +1654,7 @@ namespace SlaveMatrix
     			}
     			else
     			{
-    				foreach (CM item2 in from e in EnumCM()
+    				foreach (CharacterElement item2 in from e in EnumCM()
     					where e.使用状態 == UsageStatus.Standby && e.Element.Intensity == 1.0
     					select e)
     				{
@@ -1677,7 +1677,7 @@ namespace SlaveMatrix
     				Focus.Element.Intensity = 1.0;
     			}
     			Out持ち手();
-    			foreach (CM item3 in from e in EnumCM()
+    			foreach (CharacterElement item3 in from e in EnumCM()
     				where e.使用状態 == UsageStatus.Standby && e.Element.Intensity == 1.0
     				select e)
     			{
@@ -1914,9 +1914,9 @@ namespace SlaveMatrix
     		if (X < cp.X && cp.Y < Y)
     		{
     			Color hc_ = hc;
-    			CM cM = (from e in EnumCM()
+    			CharacterElement cM = (from e in EnumCM()
     				where e.使用状態 == UsageStatus.Standby
-    				select e).FirstOrDefault((CM e) => e.Element.Body.IsHit(ref hc_));
+    				select e).FirstOrDefault((CharacterElement e) => e.Element.Body.IsHit(ref hc_));
     			if (cM != null)
     			{
     				Focus.Element.Intensity = 0.5;
@@ -2047,17 +2047,17 @@ namespace SlaveMatrix
     			this.Are = Are;
     			double disUnit = Are.DisplayUnitScale;
     			this.ip = ip;
-    			ペニスCM = new CM(Med, this, ペニス = new ペニス(disUnit, 配色指定.N0, Sta.GameData.配色, Med, new ペニスD
+    			ペニスCM = new CharacterElement(Med, this, ペニス = new ペニス(disUnit, 配色指定.N0, Sta.GameData.配色, Med, new ペニスD
     			{
     				濃度 = 0.5,
     				尺度C = 1.09
     			}));
-    			マウスCM = new CM(Med, this, マウス = new マウス(disUnit, 配色指定.N0, Sta.GameData.配色, Med, new マウスD
+    			マウスCM = new CharacterElement(Med, this, マウス = new マウス(disUnit, 配色指定.N0, Sta.GameData.配色, Med, new マウスD
     			{
     				濃度 = 0.5,
     				尺度C = 1.09
     			}));
-    			ハンド右CM = new CM(Med, this, ハンド右 = new ハンド(disUnit, 配色指定.N0, Sta.GameData.配色, Med, new ハンドD
+    			ハンド右CM = new CharacterElement(Med, this, ハンド右 = new ハンド(disUnit, 配色指定.N0, Sta.GameData.配色, Med, new ハンドD
     			{
     				尺度C = 1.09,
     				呪印_輪1_輪外_表示 = false,
@@ -2070,7 +2070,7 @@ namespace SlaveMatrix
     				呪印_鎖2_表示 = false,
     				呪印_鎖3_表示 = false
     			}));
-    			ハンド左CM = new CM(Med, this, ハンド左 = new ハンド(disUnit, 配色指定.N0, Sta.GameData.配色, Med, new ハンドD
+    			ハンド左CM = new CharacterElement(Med, this, ハンド左 = new ハンド(disUnit, 配色指定.N0, Sta.GameData.配色, Med, new ハンドD
     			{
     				尺度C = 1.09,
     				呪印_輪1_輪外_表示 = false,
@@ -2085,53 +2085,53 @@ namespace SlaveMatrix
     				右 = true
     			}));
     			ハンド左.SetHitFalse();
-    			ロータCM = new CM(Med, this, ロータ = new ロータ(disUnit, 配色指定.N0, null, Med, new ロータD
+    			ロータCM = new CharacterElement(Med, this, ロータ = new ロータ(disUnit, 配色指定.N0, null, Med, new ロータD
     			{
     				濃度 = 0.5,
     				尺度C = 1.09
     			}));
-    			コモンCM = new CM(Med, this, コモン = new バイブ_コモン(disUnit, 配色指定.N0, null, Med, new バイブ_コモンD
+    			コモンCM = new CharacterElement(Med, this, コモン = new バイブ_コモン(disUnit, 配色指定.N0, null, Med, new バイブ_コモンD
     			{
     				濃度 = 0.5,
     				尺度C = 1.09
     			}));
-    			ディルCM = new CM(Med, this, ディル = new バイブ_ディル(disUnit, 配色指定.N0, null, Med, new バイブ_ディルD
+    			ディルCM = new CharacterElement(Med, this, ディル = new バイブ_ディル(disUnit, 配色指定.N0, null, Med, new バイブ_ディルD
     			{
     				濃度 = 0.5,
     				尺度C = 1.09
     			}));
-    			アナルCM = new CM(Med, this, アナル = new バイブ_アナル(disUnit, 配色指定.N0, null, Med, new バイブ_アナルD
+    			アナルCM = new CharacterElement(Med, this, アナル = new バイブ_アナル(disUnit, 配色指定.N0, null, Med, new バイブ_アナルD
     			{
     				濃度 = 0.5,
     				尺度C = 1.09
     			}));
-    			デンマCM = new CM(Med, this, デンマ = new バイブ_デンマ(disUnit, 配色指定.N0, null, Med, new バイブ_デンマD
+    			デンマCM = new CharacterElement(Med, this, デンマ = new バイブ_デンマ(disUnit, 配色指定.N0, null, Med, new バイブ_デンマD
     			{
     				濃度 = 0.5,
     				尺度C = 1.09
     			}));
-    			ドリルCM = new CM(Med, this, ドリル = new バイブ_ドリル(disUnit, 配色指定.N0, null, Med, new バイブ_ドリルD
+    			ドリルCM = new CharacterElement(Med, this, ドリル = new バイブ_ドリル(disUnit, 配色指定.N0, null, Med, new バイブ_ドリルD
     			{
     				濃度 = 0.5,
     				尺度C = 1.09
     			}));
-    			パールCM = new CM(Med, this, パール = new パール(disUnit, 配色指定.N0, null, Med, new パールD
+    			パールCM = new CharacterElement(Med, this, パール = new パール(disUnit, 配色指定.N0, null, Med, new パールD
     			{
     				濃度 = 0.5,
     				尺度C = 1.09
     			}));
-    			羽根箒CM = new CM(Med, this, 羽根箒 = new 羽根箒(disUnit, 配色指定.N0, null, Med, new 羽根箒D
+    			羽根箒CM = new CharacterElement(Med, this, 羽根箒 = new 羽根箒(disUnit, 配色指定.N0, null, Med, new 羽根箒D
     			{
     				濃度 = 0.5,
     				尺度C = 1.09
     			}));
-    			調教鞭CM = new CM(Med, this, 調教鞭 = new 調教鞭(disUnit, 配色指定.N0, null, Med, new 調教鞭D
+    			調教鞭CM = new CharacterElement(Med, this, 調教鞭 = new 調教鞭(disUnit, 配色指定.N0, null, Med, new 調教鞭D
     			{
     				濃度 = 0.5,
     				尺度C = 1.09,
     				Yi = 2
     			}));
-    			T剃刀CM = new CM(Med, this, T剃刀 = new T剃刀(disUnit, 配色指定.N0, null, Med, new T剃刀D
+    			T剃刀CM = new CharacterElement(Med, this, T剃刀 = new T剃刀(disUnit, 配色指定.N0, null, Med, new T剃刀D
     			{
     				濃度 = 0.5,
     				尺度C = 1.09
@@ -2528,9 +2528,9 @@ namespace SlaveMatrix
     			ディル.位置B = (ディルCM.bp = vector2D + new Vector2D(0.076533333333333, 0.0));
     			パール.位置B = (パールCM.bp = vector2D + new Vector2D(0.0574, 0.14175));
     			ロータ.位置B = (ロータCM.bp = vector2D + new Vector2D(0.076533333333333, 0.17325));
-    			キャップ1.位置B = (キャップ1CM.bp = vector2D + new Vector2D(0.095666666666666, 0.1667));
-    			キャップ2.位置B = (キャップ2CM.bp = vector2D + new Vector2D(0.095666666666666, 0.1807));
-    			キャップ3.位置B = (キャップ3CM.bp = vector2D + new Vector2D(0.095666666666666, 0.1947));
+    			キャップ1.位置B = (キャップ1CharacterElement.bp = vector2D + new Vector2D(0.095666666666666, 0.1667));
+    			キャップ2.位置B = (キャップ2CharacterElement.bp = vector2D + new Vector2D(0.095666666666666, 0.1807));
+    			キャップ3.位置B = (キャップ3CharacterElement.bp = vector2D + new Vector2D(0.095666666666666, 0.1947));
     			T剃刀.位置B = (T剃刀CM.bp = vector2D + new Vector2D(0.0574, 0.091));
     			羽根箒.位置B = (羽根箒CM.bp = vector2D + new Vector2D(0.076533333333333, 0.116));
     			調教鞭.位置B = (調教鞭CM.bp = vector2D + new Vector2D(0.095666666666666, 0.11025));
@@ -2765,9 +2765,9 @@ namespace SlaveMatrix
     		ディル.位置B = (ディルCM.bp = vector2D + new Vector2D(0.076533333333333, 0.0));
     		パール.位置B = (パールCM.bp = vector2D + new Vector2D(0.0574, 0.14175));
     		ロータ.位置B = (ロータCM.bp = vector2D + new Vector2D(0.076533333333333, 0.17325));
-    		キャップ1.位置B = (キャップ1CM.bp = vector2D + new Vector2D(0.095666666666666, 0.1667));
-    		キャップ2.位置B = (キャップ2CM.bp = vector2D + new Vector2D(0.095666666666666, 0.1807));
-    		キャップ3.位置B = (キャップ3CM.bp = vector2D + new Vector2D(0.095666666666666, 0.1947));
+    		キャップ1.位置B = (キャップ1CharacterElement.bp = vector2D + new Vector2D(0.095666666666666, 0.1667));
+    		キャップ2.位置B = (キャップ2CharacterElement.bp = vector2D + new Vector2D(0.095666666666666, 0.1807));
+    		キャップ3.位置B = (キャップ3CharacterElement.bp = vector2D + new Vector2D(0.095666666666666, 0.1947));
     		T剃刀.位置B = (T剃刀CM.bp = vector2D + new Vector2D(0.0574, 0.091));
     		羽根箒.位置B = (羽根箒CM.bp = vector2D + new Vector2D(0.076533333333333, 0.116));
     		調教鞭.位置B = (調教鞭CM.bp = vector2D + new Vector2D(0.095666666666666, 0.11025));
@@ -2799,7 +2799,7 @@ namespace SlaveMatrix
     		{
     			focus.描画0(Are);
     			focus.描画1(Are);
-    			if (!持ち手 || ((focus == キャップ1CM || focus == キャップ2CM || focus == キャップ3CM) && (キャップ処理.Isキャップ1着() || キャップ処理.Isキャップ2左着() || キャップ処理.Isキャップ2右着()) && !focus.DraShow))
+    			if (!持ち手 || ((focus == キャップ1CharacterElement || focus == キャップ2CharacterElement || focus == キャップ3CharacterElement) && (キャップ処理.Isキャップ1着() || キャップ処理.Isキャップ2左着() || キャップ処理.Isキャップ2右着()) && !focus.DraShow))
     			{
     				ハンド右CM.待機描画(Are);
     			}
@@ -2932,7 +2932,7 @@ namespace SlaveMatrix
     		}
     		ペニスCM.待機描画(Are);
     		マウスCM.待機描画(Are);
-    		if (!膣i肛f && !Is乳弄り && (!持ち手 || ((focus == キャップ1CM || focus == キャップ2CM || focus == キャップ3CM) && (キャップ処理.Isキャップ1着() || キャップ処理.Isキャップ2左着() || キャップ処理.Isキャップ2右着()) && !focus.DraShow)))
+    		if (!膣i肛f && !Is乳弄り && (!持ち手 || ((focus == キャップ1CharacterElement || focus == キャップ2CharacterElement || focus == キャップ3CharacterElement) && (キャップ処理.Isキャップ1着() || キャップ処理.Isキャップ2左着() || キャップ処理.Isキャップ2右着()) && !focus.DraShow)))
     		{
     			ハンド右CM.待機描画(Are);
     		}
@@ -2946,9 +2946,9 @@ namespace SlaveMatrix
     		羽根箒CM.待機描画(Are);
     		調教鞭CM.待機描画(Are);
     		T剃刀CM.待機描画(Are);
-    		キャップ1CM.待機描画(Are);
-    		キャップ2CM.待機描画(Are);
-    		キャップ3CM.待機描画(Are);
+    		キャップ1CharacterElement.待機描画(Are);
+    		キャップ2CharacterElement.待機描画(Are);
+    		キャップ3CharacterElement.待機描画(Are);
     		調教終了.Draw(Are);
     		拘束具.Draw(Are);
     		目隠帯.Draw(Are);

@@ -111,7 +111,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 調鞭処理(TrainingUI 調教UI, CM 調教鞭)
+    	public 調鞭処理(TrainingUI 調教UI, CharacterElement 調教鞭)
     		: base(調教UI, 調教鞭)
     	{
     		調鞭処理 調鞭処理2 = this;

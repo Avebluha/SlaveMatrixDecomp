@@ -2,7 +2,7 @@ using _2DGAMELIB;
 
 namespace SlaveMatrix
 {
-    public class CM
+    public class CharacterElement
     {
     	private TrainingUI 調教UI;
 
@@ -42,7 +42,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public CM(ModeEventDispatcher Med, TrainingUI 調教UI, Element Element)
+    	public CharacterElement(ModeEventDispatcher Med, TrainingUI 調教UI, Element Element)
     	{
     		this.調教UI = 調教UI;
     		this.Element = Element;

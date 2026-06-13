@@ -866,7 +866,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public ハンド処理(TrainingUI 調教UI, CM ハンド)
+    	public ハンド処理(TrainingUI 調教UI, CharacterElement ハンド)
     		: base(調教UI, ハンド)
     	{
     		ハンド処理 ハンド処理2 = this;
