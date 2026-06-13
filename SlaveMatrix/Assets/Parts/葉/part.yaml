@@ -1,0 +1,36 @@
+id: 葉
+original_key: 葉
+resource: 肢左
+morph_x: 2
+morph_y: 3
+variants:
+- x: 0
+  y: 0
+  file: x0y0.svg
+- x: 0
+  y: 1
+  file: x0y1.svg
+- x: 0
+  y: 2
+  file: x0y2.svg
+- x: 1
+  y: 0
+  file: x1y0.svg
+- x: 1
+  y: 1
+  file: x1y1.svg
+- x: 1
+  y: 2
+  file: x1y2.svg
+fields:
+- name: 葉
+- name: 葉脈
+joints:
+- position: [
+  0.011628401968068896,
+  0.02014601754626799
+]
+- position: [
+  0.011628401968068889,
+  -0.004161837954568095
+]

@@ -1,0 +1,11 @@
+id: 押し付け
+original_key: 押し付け
+resource: カーソル
+morph_x: 1
+morph_y: 1
+variants:
+- x: 0
+  y: 0
+  file: x0y0.svg
+fields:
+- name: 皺

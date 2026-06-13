@@ -1,0 +1,129 @@
+id: 四足性器
+original_key: 四足性器
+resource: 性器
+morph_x: 4
+morph_y: 6
+variants:
+- x: 0
+  y: 0
+  file: x0y0.svg
+- x: 0
+  y: 1
+  file: x0y1.svg
+- x: 0
+  y: 2
+  file: x0y2.svg
+- x: 0
+  y: 3
+  file: x0y3.svg
+- x: 0
+  y: 4
+  file: x0y4.svg
+- x: 0
+  y: 5
+  file: x0y5.svg
+- x: 1
+  y: 0
+  file: x1y0.svg
+- x: 1
+  y: 1
+  file: x1y1.svg
+- x: 1
+  y: 2
+  file: x1y2.svg
+- x: 1
+  y: 3
+  file: x1y3.svg
+- x: 1
+  y: 4
+  file: x1y4.svg
+- x: 1
+  y: 5
+  file: x1y5.svg
+- x: 2
+  y: 0
+  file: x2y0.svg
+- x: 2
+  y: 1
+  file: x2y1.svg
+- x: 2
+  y: 2
+  file: x2y2.svg
+- x: 2
+  y: 3
+  file: x2y3.svg
+- x: 2
+  y: 4
+  file: x2y4.svg
+- x: 2
+  y: 5
+  file: x2y5.svg
+- x: 3
+  y: 0
+  file: x3y0.svg
+- x: 3
+  y: 1
+  file: x3y1.svg
+- x: 3
+  y: 2
+  file: x3y2.svg
+- x: 3
+  y: 3
+  file: x3y3.svg
+- x: 3
+  y: 4
+  file: x3y4.svg
+- x: 3
+  y: 5
+  file: x3y5.svg
+fields:
+- name: 小陰唇
+- name: 性器基
+- name: 陰核
+- name: 尿道
+- name: 膣口
+joints:
+- position: [
+  0.01919286476298842,
+  0.023595236640994305
+]
+- position: [
+  0.019192864762988426,
+  0.013894537276120108
+]
+- position: [
+  0.019192864762988447,
+  0.017204273695853593
+]
+- position: [
+  0.019192864762988426,
+  0.02087839664316967
+]
+- position: [
+  0.017946087271852165,
+  0.013223195550123659
+]
+- position: [
+  0.017935023838670416,
+  0.012543171719556996
+]
+- position: [
+  0.019192864762988426,
+  0.01208742032849737
+]
+- position: [
+  0.02045070568730644,
+  0.012543171719556996
+]
+- position: [
+  0.01919286476298842,
+  0.017204273695853593
+]
+- position: [
+  0.01919286476298842,
+  0.02087839664316967
+]
+- position: [
+  0.02043964225412464,
+  0.013223195550123659
+]

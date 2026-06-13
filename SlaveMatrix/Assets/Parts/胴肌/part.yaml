@@ -1,0 +1,20 @@
+id: 胴肌
+original_key: 胴肌
+resource: 胴体
+morph_x: 1
+morph_y: 1
+variants:
+- x: 0
+  y: 0
+  file: x0y0.svg
+fields:
+- name: 植タトゥ
+joints:
+- position: [
+  0.09500000000000003,
+  0.08574610515953168
+]
+- position: [
+  0.09500000000000003,
+  0.09354234315162449
+]

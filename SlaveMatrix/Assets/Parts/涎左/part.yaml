@@ -1,0 +1,23 @@
+id: 涎左
+original_key: 涎左
+resource: 胴体
+morph_x: 1
+morph_y: 5
+variants:
+- x: 0
+  y: 0
+  file: x0y0.svg
+- x: 0
+  y: 1
+  file: x0y1.svg
+- x: 0
+  y: 2
+  file: x0y2.svg
+- x: 0
+  y: 3
+  file: x0y3.svg
+- x: 0
+  y: 4
+  file: x0y4.svg
+fields:
+- name: 涎

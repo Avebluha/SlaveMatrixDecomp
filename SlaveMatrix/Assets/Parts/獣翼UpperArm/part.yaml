@@ -1,0 +1,21 @@
+id: 獣翼UpperArm
+original_key: 獣翼上腕
+resource: 腕左
+morph_x: 1
+morph_y: 1
+variants:
+- x: 0
+  y: 0
+  file: x0y0.svg
+fields:
+- name: 獣翼上腕
+- name: 鱗
+joints:
+- position: [
+  0.058090923706733015,
+  0.06675256824373756
+]
+- position: [
+  0.0772455488959185,
+  0.06739140739968597
+]

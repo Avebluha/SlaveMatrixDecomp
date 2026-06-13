@@ -1,0 +1,17 @@
+id: 胸郭腹板
+original_key: 胸郭腹板
+resource: 胴体
+morph_x: 1
+morph_y: 1
+variants:
+- x: 0
+  y: 0
+  file: x0y0.svg
+fields:
+- name: 腹板
+- name: 縦線
+joints:
+- position: [
+  0.5000000158677831,
+  0.5526169508801205
+]

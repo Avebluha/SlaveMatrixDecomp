@@ -1,0 +1,11 @@
+id: 下着陰核
+original_key: 下着陰核
+resource: 胴体
+morph_x: 1
+morph_y: 1
+variants:
+- x: 0
+  y: 0
+  file: x0y0.svg
+fields:
+- name: 陰核

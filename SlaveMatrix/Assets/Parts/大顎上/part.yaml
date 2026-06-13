@@ -1,0 +1,28 @@
+id: 大顎上
+original_key: 大顎上
+resource: 肢中
+morph_x: 1
+morph_y: 1
+variants:
+- x: 0
+  y: 0
+  file: x0y0.svg
+fields:
+- name: 甲殻
+- name: 線左
+- name: 線右
+- name: 刺左
+- name: 刺右
+joints:
+- position: [
+  0.0455606092983783,
+  0.0760071894825491
+]
+- position: [
+  0.06543895629489324,
+  0.0760071894825491
+]
+- position: [
+  0.05549978279663584,
+  0.07334493974274894
+]
