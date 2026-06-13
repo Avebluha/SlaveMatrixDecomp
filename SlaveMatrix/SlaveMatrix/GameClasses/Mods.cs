@@ -223,7 +223,7 @@ namespace SlaveMatrix
     		
             SaveData = new ListView(
                 DrawBuffer, 
-                Dat.Vec2DZero.AddY(0.0025), 
+                DataConsts.Vec2DZero.AddY(0.0025), 
                 0.25, 
                 new Font("MS Gothic", 1f), 
                 0.11, 
@@ -1676,7 +1676,7 @@ namespace SlaveMatrix
     		};
 
             ContactD cd = default(ContactD);
-            Vector2D op = Dat.Vec2DZero;
+            Vector2D op = DataConsts.Vec2DZero;
 
             調教描画 = delegate (RenderArea a, FPS FPS)
             {

@@ -158,7 +158,7 @@ namespace SlaveMatrix
 
     	private bool 重腿;
 
-    	private Vector2D p = Dat.Vec2DZero;
+    	private Vector2D p = DataConsts.Vec2DZero;
 
         private delegate void MorphMotion(double value);
 
@@ -350,7 +350,7 @@ namespace SlaveMatrix
         private void ResetMoveParts()
         {
             for (int i = 0; i < _moveParts.Count; i++)            
-                _moveParts[i].EI.Position = Dat.Vec2DZero;            
+                _moveParts[i].EI.Position = DataConsts.Vec2DZero;            
         }
         private void ApplyContParts(Vector2D offset)
         {
@@ -367,7 +367,7 @@ namespace SlaveMatrix
         private void ResetContParts()
         {
             for (int i = 0; i < _moveParts.Count; i++)
-                _moveParts[i].EI.PositionCont = Dat.Vec2DZero;
+                _moveParts[i].EI.PositionCont = DataConsts.Vec2DZero;
         }
         public double BreathingSpeed
     	{
@@ -1335,7 +1335,7 @@ namespace SlaveMatrix
     		double savedHipValue = 0.0;
     		Par pa = Body.Waist.Body.CurJoinRoot;
     		Par pb = null;
-    		Vector2D vec = Dat.Vec2DZero;
+    		Vector2D vec = DataConsts.Vec2DZero;
     		Action 腰接続 = delegate
     		{
     			pb = cha.Body.Waist.Body.CurJoinRoot;
@@ -1382,11 +1382,11 @@ namespace SlaveMatrix
     			OnEnd = delegate
     			{
     				cha.Body.HipMotion_人v = savedHipValue;
-    				cha.Body.Waist.位置C = Dat.Vec2DZero;
+    				cha.Body.Waist.位置C = DataConsts.Vec2DZero;
     				if (!cha.Body.乳房左.着衣)
     				{
-    					cha.Body.乳房左.位置C = Dat.Vec2DZero;
-    					cha.Body.乳房右.位置C = Dat.Vec2DZero;
+    					cha.Body.乳房左.位置C = DataConsts.Vec2DZero;
+    					cha.Body.乳房右.位置C = DataConsts.Vec2DZero;
     				}
 
                     ResetContParts();
@@ -1541,7 +1541,7 @@ namespace SlaveMatrix
     			}
     		};
     		Motions.Add(顔面展開.GetHashCode().ToString(), 顔面展開);
-    		Vector2D p_ = Dat.Vec2DZero;
+    		Vector2D p_ = DataConsts.Vec2DZero;
     		double d_;
     		BodySway = new Motion(0.0, 1.0)
     		{
@@ -1571,11 +1571,11 @@ namespace SlaveMatrix
     			},
     			OnEnd = delegate
     			{
-    				cha.Body.Waist.位置C = Dat.Vec2DZero;
+    				cha.Body.Waist.位置C = DataConsts.Vec2DZero;
     				if (!cha.Body.乳房左.着衣)
     				{
-    					cha.Body.乳房左.位置C = Dat.Vec2DZero;
-    					cha.Body.乳房右.位置C = Dat.Vec2DZero;
+    					cha.Body.乳房左.位置C = DataConsts.Vec2DZero;
+    					cha.Body.乳房右.位置C = DataConsts.Vec2DZero;
     				}
 
                     ResetMoveParts();

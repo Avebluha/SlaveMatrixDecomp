@@ -152,7 +152,7 @@ namespace SlaveMatrix
     		Vector2D vector2D = Are.GetPosition(0.2, 1.0 - num4 * num2 / Are.LocalHeight).AddY(0.0 - num);
     		double y = 1.01;
     		MaiB = new Par();
-    		MaiB.BasePointBase = Dat.Vec2DZero;
+    		MaiB.BasePointBase = DataConsts.Vec2DZero;
     		MaiB.PositionBase = vector2D;
     		MaiB.SizeBase = num2;
     		MaiB.OP.AddRange(new Out[1] { Shas.GetSquare() });
@@ -171,7 +171,7 @@ namespace SlaveMatrix
     		Mai.Feed.OP.OutlineFalse();
     		double num5 = num4 * 4.53;
     		Mai2B = new Par();
-    		Mai2B.BasePointBase = Dat.Vec2DZero;
+    		Mai2B.BasePointBase = DataConsts.Vec2DZero;
     		Mai2B.PositionBase = new Vector2D(vector2D.X, 0.01);
     		Mai2B.SizeBase = num2;
     		Mai2B.OP.AddRange(new Out[1] { Shas.GetSquare() });
@@ -191,7 +191,7 @@ namespace SlaveMatrix
     		num3 = Are.LocalWidth * 0.19 / num2;
     		vector2D = Are.GetPosition(1.0 - (num3 * num2 / Are.LocalWidth + 0.005), 1.0 - num4 * num2 / Are.LocalHeight).AddY(0.0 - num);
     		SubB = new Par();
-    		SubB.BasePointBase = Dat.Vec2DZero;
+    		SubB.BasePointBase = DataConsts.Vec2DZero;
     		SubB.PositionBase = vector2D;
     		SubB.SizeBase = num2;
     		SubB.OP.AddRange(new Out[1] { Shas.GetSquare() });
@@ -207,7 +207,7 @@ namespace SlaveMatrix
     		SubInnfo_l = new Lab(Are, "SubInfo", vector2D, num2, 1.0, new Font("MS Gothic", 1f), 0.07, "Sub Info.", Col.White, Col.Black, Color.FromArgb(160, Col.Black), Col.Empty);
     		SubInnfo_l.ParT.PositionBase = SubInnfo_l.ParT.PositionBase.AddY((0.0 - SubInnfo_l.ParT.OP[0].ps[3].Y) * SubInnfo_l.ParT.SizeBase);
     		Sub2B = new Par();
-    		Sub2B.BasePointBase = Dat.Vec2DZero;
+    		Sub2B.BasePointBase = DataConsts.Vec2DZero;
     		Sub2B.PositionBase = new Vector2D(0.0025, vector2D.Y);
     		Sub2B.SizeBase = num2;
     		Sub2B.OP.AddRange(new Out[1] { Shas.GetSquare() });

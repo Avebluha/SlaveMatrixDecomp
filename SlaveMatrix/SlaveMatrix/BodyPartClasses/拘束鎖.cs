@@ -297,7 +297,7 @@ namespace SlaveMatrix
     			return;
     		}
     		int num = 0;
-    		Vector2D vec2DZero = Dat.Vec2DZero;
+    		Vector2D vec2DZero = DataConsts.Vec2DZero;
     		foreach (Out item in par.OP)
     		{
     			foreach (Vector2D item2 in item.ps.Skip(1).Take(item.ps.Count - 2))

@@ -3088,22 +3088,22 @@ namespace SlaveMatrix
 
     	public static void 眉_下左(this Character Cha)
     	{
-    		Cha.Body.眉左.Body.CurJoinRoot.PositionCont = Dat.Vec2DZero;
+    		Cha.Body.眉左.Body.CurJoinRoot.PositionCont = DataConsts.Vec2DZero;
     	}
 
     	public static void 眉_下右(this Character Cha)
     	{
-    		Cha.Body.眉右.Body.CurJoinRoot.PositionCont = Dat.Vec2DZero;
+    		Cha.Body.眉右.Body.CurJoinRoot.PositionCont = DataConsts.Vec2DZero;
     	}
 
     	public static void 眉_上左(this Character Cha)
     	{
-    		Cha.Body.眉左.Body.CurJoinRoot.PositionCont = -Dat.Vec2DUnitY * 0.003;
+    		Cha.Body.眉左.Body.CurJoinRoot.PositionCont = -DataConsts.Vec2DUnitY * 0.003;
     	}
 
     	public static void 眉_上右(this Character Cha)
     	{
-    		Cha.Body.眉右.Body.CurJoinRoot.PositionCont = -Dat.Vec2DUnitY * 0.003;
+    		Cha.Body.眉右.Body.CurJoinRoot.PositionCont = -DataConsts.Vec2DUnitY * 0.003;
     	}
 
     	public static void 両眉_下(this Character Cha)
@@ -3183,12 +3183,12 @@ namespace SlaveMatrix
 
     	public static void 単眉_下(this Character Cha)
     	{
-    		Cha.Body.単眼眉.Body.CurJoinRoot.PositionCont = Dat.Vec2DZero;
+    		Cha.Body.単眼眉.Body.CurJoinRoot.PositionCont = DataConsts.Vec2DZero;
     	}
 
     	public static void 単眉_上(this Character Cha)
     	{
-    		Cha.Body.単眼眉.Body.CurJoinRoot.PositionCont = -Dat.Vec2DUnitY * 0.003;
+    		Cha.Body.単眼眉.Body.CurJoinRoot.PositionCont = -DataConsts.Vec2DUnitY * 0.003;
     	}
 
     	public static void 単眉_1(this Character c, int i)

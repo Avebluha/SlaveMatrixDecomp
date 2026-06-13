@@ -1057,7 +1057,7 @@ namespace SlaveMatrix
     		focus.Ele.Xi = 0;
     		focus.Ele.Yi = 0;
     		focus.Ele.位置B = focus.bp;
-    		focus.Ele.位置C = Dat.Vec2DZero;
+    		focus.Ele.位置C = DataConsts.Vec2DZero;
     		focus.Ele.角度B = 0.0;
     		focus.Ele.角度C = 0.0;
     		focus.Ele.右 = false;
@@ -1074,7 +1074,7 @@ namespace SlaveMatrix
     		if (focus == ペニスCM || focus == マウスCM || focus == ハンド右CM)
     		{
     			持ち手 = false;
-    			ハンド右.位置C = Dat.Vec2DZero;
+    			ハンド右.位置C = DataConsts.Vec2DZero;
     			ハンド右.角度B = 0.0;
     			ハンド右.角度C = 0.0;
     			ハンド右.Xi = 0;
@@ -1083,7 +1083,7 @@ namespace SlaveMatrix
     			return;
     		}
     		持ち手 = true;
-    		ハンド右.位置C = Dat.Vec2DZero;
+    		ハンド右.位置C = DataConsts.Vec2DZero;
     		ハンド右.角度B = 0.0;
     		ハンド右.角度C = 0.0;
     		if (focus == コモンCM || focus == ディルCM || focus == アナルCM || focus == デンマCM || focus == ドリルCM)

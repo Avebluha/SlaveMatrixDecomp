@@ -28,9 +28,9 @@ namespace _2DGAMELIB
     	[NonSerialized, JsonIgnore]
     	private StringFormat stringformat = new StringFormat();
 
-    	private Vector2D positionT = Dat.Vec2DZero;
+    	private Vector2D positionT = DataConsts.Vec2DZero;
 
-    	private Vector2D rectSize = Dat.Vec2DOne;
+    	private Vector2D rectSize = DataConsts.Vec2DOne;
 
     	public string Text = "";
 
@@ -366,7 +366,7 @@ namespace _2DGAMELIB
     		Vector2D[] stringRectPoints = GetStringRectPoints(Unit, Graphics);
 
     		Out @out = new Out { Tension = 0f };
-    		Vector2D vector2D = Dat.Vec2DZero - stringRectPoints[0];
+    		Vector2D vector2D = DataConsts.Vec2DZero - stringRectPoints[0];
 
     		double x = 0.05;
     		double num = 0.025;

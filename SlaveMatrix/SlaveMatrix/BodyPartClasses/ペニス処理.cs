@@ -58,7 +58,7 @@ namespace SlaveMatrix
 
     	private Vector2D o;
 
-    	private Vector2D vc = Dat.Vec2DZero;
+    	private Vector2D vc = DataConsts.Vec2DZero;
 
     	private ContactType 挿入箇所;
 
@@ -130,7 +130,7 @@ namespace SlaveMatrix
     				調教UI.Set持ち手();
     				調教UI.ハンド右.位置B = 調教UI.ハンド右CM.bp;
     				調教UI.ハンド右.Intensity = 0.5;
-    				調教UI.ハンド右.位置C = Dat.Vec2DZero;
+    				調教UI.ハンド右.位置C = DataConsts.Vec2DZero;
     				調教UI.放し();
     			}
     			調教UI.ハンド右.Intensity = 1.0;
@@ -489,11 +489,11 @@ namespace SlaveMatrix
 
 
                 調教UI.ハンド処理.バスト初期化.Start();
-    			vc = Dat.Vec2DZero;
+    			vc = DataConsts.Vec2DZero;
     			Bod.胸毛_人.位置C = vc;
     			調教UI.ハンド左表示 = false;
-    			調教UI.ハンド右.位置C = Dat.Vec2DZero;
-    			調教UI.ハンド左.位置C = Dat.Vec2DZero;
+    			調教UI.ハンド右.位置C = DataConsts.Vec2DZero;
+    			調教UI.ハンド左.位置C = DataConsts.Vec2DZero;
     			対象.Ele.角度C = 0.0;
     			持ち手 = false;
     			Isパイズリ = false;
@@ -573,7 +573,7 @@ namespace SlaveMatrix
     			{
     				m.ResetValue();
     				ペニス処理2.対象.Ele.Yi = 0;
-    				ペニス処理2.対象.Ele.位置C = Dat.Vec2DZero;
+    				ペニス処理2.対象.Ele.位置C = DataConsts.Vec2DZero;
     			}
     		};
     		調教UI.Mots.Add(チンピク.GetHashCode().ToString(), チンピク);
@@ -640,8 +640,8 @@ namespace SlaveMatrix
     			OnEnd = delegate(Motion m)
     			{
     				ペニス処理2.対象.Ele.尺度XC = 1.0;
-    				調教UI.ペニス.位置C = Dat.Vec2DZero;
-    				調教UI.射精.位置C = Dat.Vec2DZero;
+    				調教UI.ペニス.位置C = DataConsts.Vec2DZero;
+    				調教UI.射精.位置C = DataConsts.Vec2DZero;
     				m.ResetValue();
     			}
     		};
@@ -816,7 +816,7 @@ namespace SlaveMatrix
     			}
     		};
     		調教UI.Mots.Add(手コキ.GetHashCode().ToString(), 手コキ);
-    		_ = Dat.Vec2DZero;
+    		_ = DataConsts.Vec2DZero;
     		s = 0.0;
     		double t;
     		double d1;
@@ -868,7 +868,7 @@ namespace SlaveMatrix
     		調教UI.Mots.Add(フェラ.GetHashCode().ToString(), フェラ);
     		s = 0.0;
     		LowerArmXC = 0.0;
-    		Vector2D vc = Dat.Vec2DZero;
+    		Vector2D vc = DataConsts.Vec2DZero;
     		bool sb = false;
     		double vl;
     		double vr;
@@ -883,7 +883,7 @@ namespace SlaveMatrix
     				{
     					LowerArmXC = ペニス処理2.LowerArm左.尺度XC;
     				}
-    				vc = Dat.Vec2DZero;
+    				vc = DataConsts.Vec2DZero;
     				sb = RNG.XS.NextBool();
     				s = (sb ? (-1.0) : 1.0);
     				調教UI.Action(ContactType.Chest, ActionType.パイ, CurrentState.Start, ToolType.Penis, 0, 1, 機械: false, 射精: false);
@@ -969,7 +969,7 @@ namespace SlaveMatrix
     				ペニス処理2.手固定 = false;
     				調教UI.ハンド処理.バスト初期化.Start();
     				ペニス処理2.Bod.胸毛_人.角度C = 0.0;
-    				ペニス処理2.Bod.胸毛_人.位置C = Dat.Vec2DZero;
+    				ペニス処理2.Bod.胸毛_人.位置C = DataConsts.Vec2DZero;
     				if (ペニス処理2.肩左 != null)
     				{
     					ペニス処理2.肩左.角度C = 0.0;
@@ -1156,7 +1156,7 @@ namespace SlaveMatrix
     		d = 0.0;
     		v = default(Vector2D);
     		o = default(Vector2D);
-    		vc = Dat.Vec2DZero;
+    		vc = DataConsts.Vec2DZero;
     		挿入箇所 = ContactType.none;
     	}
     }

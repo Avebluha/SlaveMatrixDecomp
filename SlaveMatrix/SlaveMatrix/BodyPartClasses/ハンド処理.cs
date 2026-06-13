@@ -202,7 +202,7 @@ namespace SlaveMatrix
     		Is核捏ね = true;
     		箇所 = cd.c;
     		Vector2D 陰核位置 = Bod.陰核位置;
-    		Vector2D 位置B = 陰核位置 + Dat.Vec2DUnitY * 0.0015;
+    		Vector2D 位置B = 陰核位置 + DataConsts.Vec2DUnitY * 0.0015;
     		調教UI.ハンド右.位置B = 位置B;
     		Addvl(ref 陰核位置);
     		核捏ね初 = true;
@@ -220,7 +220,7 @@ namespace SlaveMatrix
     		vl.Clear();
     		調教UI.ハンド右.Yi = 0;
     		調教UI.ハンド右.角度C = 0.0;
-    		Bod.ピアス.位置C = Dat.Vec2DZero;
+    		Bod.ピアス.位置C = DataConsts.Vec2DZero;
     		if (Med.Mode == "Training")
     		{
                 //~~TODO~~ fix?
@@ -339,7 +339,7 @@ namespace SlaveMatrix
 
     	private void 乳捏ね(ref Vector2D cp)
     	{
-    		double num = (調教UI.ハンド右.位置B - GetCenter()).Angle02π(Dat.Vec2DUnitY).ToDegree();
+    		double num = (調教UI.ハンド右.位置B - GetCenter()).Angle02π(DataConsts.Vec2DUnitY).ToDegree();
     		if (!double.IsNaN(num))
     		{
     			Bod.乳房右.Yi = (int)((360.0 - num) / u);
@@ -361,8 +361,8 @@ namespace SlaveMatrix
     	{
     		double num = (o.X - v.X) * 0.008;
     		Vector2D 陰核位置 = Bod.陰核位置;
-    		Vector2D coord = 陰核位置 + Dat.Vec2DUnitY * 0.0015;
-    		double num2 = Dat.Vec2DUnitY.Angle02π(調教UI.ハンド右.位置B - GetCenter());
+    		Vector2D coord = 陰核位置 + DataConsts.Vec2DUnitY * 0.0015;
+    		double num2 = DataConsts.Vec2DUnitY.Angle02π(調教UI.ハンド右.位置B - GetCenter());
     		if (!double.IsNaN(num2))
     		{
     			調教UI.ハンド右.位置B = coord.TransformCoordinateBP(陰核位置, num2.RotationZ());
@@ -400,7 +400,7 @@ namespace SlaveMatrix
 
     	private Vector2D GetCenter()
     	{
-    		vs = Dat.Vec2DZero;
+    		vs = DataConsts.Vec2DZero;
     		foreach (Vector2D item in vl)
     		{
     			vs += item;

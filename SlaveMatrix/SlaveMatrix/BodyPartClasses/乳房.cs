@@ -785,7 +785,7 @@ namespace SlaveMatrix
     			}
     			else
     			{
-    				位置C = Dat.Vec2DZero;
+    				位置C = DataConsts.Vec2DZero;
     			}
     		}
     	}

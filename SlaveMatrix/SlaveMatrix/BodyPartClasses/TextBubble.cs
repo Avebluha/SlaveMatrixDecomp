@@ -50,10 +50,10 @@ namespace SlaveMatrix
     		吹出し.X0Y0_吹出しCP.Setting();
     		double num = 1.35;
     		double num2 = 0.75;
-    		吹出し.位置C = Dat.Vec2DUnitY * 0.005;
+    		吹出し.位置C = DataConsts.Vec2DUnitY * 0.005;
     		吹出し.尺度B = num * 1.1;
     		吹出し.尺度YB = num2;
-    		Tex = new Tex("Tex", Dat.Vec2DZero, 0.1, 吹出し.尺度B, 0.63 * num * num2, Font, TextSize, 25, Text, TextColor, ShadColor, Color.Transparent, Speed, FeedColor, Action);
+    		Tex = new Tex("Tex", DataConsts.Vec2DZero, 0.1, 吹出し.尺度B, 0.63 * num * num2, Font, TextSize, 25, Text, TextColor, ShadColor, Color.Transparent, Speed, FeedColor, Action);
     		Tex.Feed.OP.OutlineFalse();
     		Tex.ParT.BasePointBase = Tex.ParT.OP.GetCenter().AddY(0.04);
     		this.Dis = Dis;
@@ -110,10 +110,10 @@ namespace SlaveMatrix
     		吹出し.X0Y0_吹出しCP.Setting();
     		double num = 1.35;
     		double num2 = 0.75;
-    		吹出し.位置C = Dat.Vec2DUnitY * 0.005;
+    		吹出し.位置C = DataConsts.Vec2DUnitY * 0.005;
     		吹出し.尺度B = num * 1.1;
     		吹出し.尺度YB = num2;
-    		Tex = new Tex("Tex", Dat.Vec2DZero, 0.1, 吹出し.尺度B, 0.63 * num * num2, Font, TextSize, 25, Text, TextColor, ShadColor, Color.Transparent, Speed);
+    		Tex = new Tex("Tex", DataConsts.Vec2DZero, 0.1, 吹出し.尺度B, 0.63 * num * num2, Font, TextSize, 25, Text, TextColor, ShadColor, Color.Transparent, Speed);
     		Tex.ParT.BasePointBase = Tex.ParT.OP.GetCenter().AddY(0.04);
     		this.Dis = Dis;
     		if (Dis)

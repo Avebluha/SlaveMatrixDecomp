@@ -247,7 +247,7 @@ namespace SlaveMatrix
     		Vector2D vector2D5 = (X0Y1_飛膜.OP[2].ps[0] + X0Y1_飛膜.OP[9].ps[2]) * 0.5;
     		Vector2D v2 = X0Y1_飛膜.OP[2].ps[0] - X0Y1_飛膜.OP[9].ps[2];
     		double num2 = v2.LengthSquared();
-    		double num3 = v2.Angle02π(Dat.Vec2DUnitX);
+    		double num3 = v2.Angle02π(DataConsts.Vec2DUnitX);
     		QuaternionD rotation = num3.RotationZQ();
     		QuaternionD rotation2 = (v2.Angle02π(v) - num3).RotationZQ();
     		double num4 = num / num2;
@@ -295,7 +295,7 @@ namespace SlaveMatrix
     		Vector2D vector2D5 = (X0Y1_飛膜.OP[8].ps[2] + X0Y1_飛膜.OP[1].ps[0]) * 0.5;
     		Vector2D v2 = X0Y1_飛膜.OP[8].ps[2] - X0Y1_飛膜.OP[1].ps[0];
     		double num2 = v2.LengthSquared();
-    		double num3 = v2.Angle02π(-Dat.Vec2DUnitX);
+    		double num3 = v2.Angle02π(-DataConsts.Vec2DUnitX);
     		QuaternionD rotation = num3.RotationZQ();
     		QuaternionD rotation2 = (v2.Angle02π(v) - num3).RotationZQ();
     		double num4 = num / num2;

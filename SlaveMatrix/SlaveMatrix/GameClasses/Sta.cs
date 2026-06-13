@@ -967,7 +967,7 @@ namespace SlaveMatrix
     			4 => new Vector2D(RNG.XS.NextDouble(num3, num3 + num6), RNG.XS.NextDouble(num5, num5 + num7)), 
     			5 => new Vector2D(RNG.XS.NextDouble(num3, num3 + num6), RNG.XS.NextDouble(num4, num5)), 
     			6 => new Vector2D(RNG.XS.NextDouble(num3, num3 + num6), RNG.XS.NextDouble(num4, num5)), 
-    			_ => Dat.Vec2DZero, 
+    			_ => DataConsts.Vec2DZero, 
     		};
     	}
 
@@ -989,7 +989,7 @@ namespace SlaveMatrix
     			4 => new Vector2D(RNG.XS.NextDouble(num3, num3 + num6), RNG.XS.NextDouble(num5, num5 + num7)), 
     			5 => new Vector2D(RNG.XS.NextDouble(num3, num3 + num6), RNG.XS.NextDouble(num4, num5)), 
     			6 => new Vector2D(RNG.XS.NextDouble(num3, num3 + num6), RNG.XS.NextDouble(num4, num5)), 
-    			_ => Dat.Vec2DZero, 
+    			_ => DataConsts.Vec2DZero, 
     		};
     	}
 

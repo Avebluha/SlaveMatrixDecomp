@@ -8,7 +8,7 @@ namespace _2DGAMELIB
     [Serializable]
     public class Joi
     {
-    	public Vector2D Joint = Dat.Vec2DZero;
+    	public Vector2D Joint = DataConsts.Vec2DZero;
 
     	public Joi(Joi Joi)
     	{

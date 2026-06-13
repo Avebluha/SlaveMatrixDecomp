@@ -67,7 +67,7 @@ namespace SlaveMatrix
     			キャップ中_ = value;
     			if (!キャップ中_)
     			{
-    				Bod.キャップ1.位置C = Dat.Vec2DZero;
+    				Bod.キャップ1.位置C = DataConsts.Vec2DZero;
     			}
     			if (キャップ中_ || キャップ左_ || キャップ右_)
     			{
@@ -91,7 +91,7 @@ namespace SlaveMatrix
     			キャップ左_ = value;
     			if (!キャップ左_)
     			{
-    				Bod.キャップ1.位置C = Dat.Vec2DZero;
+    				Bod.キャップ1.位置C = DataConsts.Vec2DZero;
     			}
     			if (キャップ中_ || キャップ左_ || キャップ右_)
     			{
@@ -115,7 +115,7 @@ namespace SlaveMatrix
     			キャップ右_ = value;
     			if (!キャップ右_)
     			{
-    				Bod.キャップ1.位置C = Dat.Vec2DZero;
+    				Bod.キャップ1.位置C = DataConsts.Vec2DZero;
     			}
     			if (キャップ中_ || キャップ左_ || キャップ右_)
     			{
@@ -604,7 +604,7 @@ namespace SlaveMatrix
     		調教UI.キャップ2CM = キャップ2;
     		調教UI.キャップ3CM = キャップ3;
     		double d = 0.0005;
-    		Vector2D p = Dat.Vec2DZero;
+    		Vector2D p = DataConsts.Vec2DZero;
     		キャップ振動 = new Motion(-1.0, 1.0)
     		{
     			BaseSpeed = double.MaxValue,
@@ -650,9 +650,9 @@ namespace SlaveMatrix
     			OnEnd = delegate(Motion m)
     			{
     				m.ResetValue();
-    				キャップ処理2.Bod.キャップ2左.位置C = Dat.Vec2DZero;
-    				キャップ処理2.Bod.キャップ2右.位置C = Dat.Vec2DZero;
-    				キャップ処理2.Bod.キャップ1.位置C = Dat.Vec2DZero;
+    				キャップ処理2.Bod.キャップ2左.位置C = DataConsts.Vec2DZero;
+    				キャップ処理2.Bod.キャップ2右.位置C = DataConsts.Vec2DZero;
+    				キャップ処理2.Bod.キャップ1.位置C = DataConsts.Vec2DZero;
     			}
     		};
     		調教UI.Mots.Add(キャップ振動.GetHashCode().ToString(), キャップ振動);

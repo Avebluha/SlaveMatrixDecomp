@@ -1400,19 +1400,19 @@ namespace SlaveMatrix
     			double num = -0.003;
     			if (Is獣)
     			{
-    				断面_獣.X0Y0_子宮.BasePointCont = Dat.Vec2DUnitY * num * 子宮下がり_;
-    				断面_獣.X0Y1_子宮.BasePointCont = Dat.Vec2DUnitY * num * 子宮下がり_;
-    				断面_獣.X0Y2_子宮.BasePointCont = Dat.Vec2DUnitY * num * 子宮下がり_;
-    				断面_獣.X0Y3_子宮.BasePointCont = Dat.Vec2DUnitY * num * 子宮下がり_;
-    				断面_獣.X0Y4_子宮.BasePointCont = Dat.Vec2DUnitY * num * 子宮下がり_;
+    				断面_獣.X0Y0_子宮.BasePointCont = DataConsts.Vec2DUnitY * num * 子宮下がり_;
+    				断面_獣.X0Y1_子宮.BasePointCont = DataConsts.Vec2DUnitY * num * 子宮下がり_;
+    				断面_獣.X0Y2_子宮.BasePointCont = DataConsts.Vec2DUnitY * num * 子宮下がり_;
+    				断面_獣.X0Y3_子宮.BasePointCont = DataConsts.Vec2DUnitY * num * 子宮下がり_;
+    				断面_獣.X0Y4_子宮.BasePointCont = DataConsts.Vec2DUnitY * num * 子宮下がり_;
     			}
     			else
     			{
-    				断面_人.X0Y0_子宮.BasePointCont = Dat.Vec2DUnitY * num * 子宮下がり_;
-    				断面_人.X0Y1_子宮.BasePointCont = Dat.Vec2DUnitY * num * 子宮下がり_;
-    				断面_人.X0Y2_子宮.BasePointCont = Dat.Vec2DUnitY * num * 子宮下がり_;
-    				断面_人.X0Y3_子宮.BasePointCont = Dat.Vec2DUnitY * num * 子宮下がり_;
-    				断面_人.X0Y4_子宮.BasePointCont = Dat.Vec2DUnitY * num * 子宮下がり_;
+    				断面_人.X0Y0_子宮.BasePointCont = DataConsts.Vec2DUnitY * num * 子宮下がり_;
+    				断面_人.X0Y1_子宮.BasePointCont = DataConsts.Vec2DUnitY * num * 子宮下がり_;
+    				断面_人.X0Y2_子宮.BasePointCont = DataConsts.Vec2DUnitY * num * 子宮下がり_;
+    				断面_人.X0Y3_子宮.BasePointCont = DataConsts.Vec2DUnitY * num * 子宮下がり_;
+    				断面_人.X0Y4_子宮.BasePointCont = DataConsts.Vec2DUnitY * num * 子宮下がり_;
     			}
     		}
     	}
@@ -1597,16 +1597,16 @@ namespace SlaveMatrix
     			性器_人.Body.SizeYCont = 0.65 + Waist.Yv * 0.35;
     			foreach (Par item in 性器_人.Body.EnumJoinRoot)
     			{
-    				item.PositionCont = Dat.Vec2DUnitY * (Waist.Yv * 0.001 + 0.001);
+    				item.PositionCont = DataConsts.Vec2DUnitY * (Waist.Yv * 0.001 + 0.001);
     			}
     			肛門_人.Body.SizeYCont = 0.65 + Waist.Yv * 0.35;
     			foreach (Par item2 in 上着B_クロス.Body.EnumJoinRoot)
     			{
-    				item2.PositionCont = Dat.Vec2DUnitY * (Waist.Yv * 0.003);
+    				item2.PositionCont = DataConsts.Vec2DUnitY * (Waist.Yv * 0.003);
     			}
     			foreach (Par item3 in 上着B_前掛け.Body.EnumJoinRoot)
     			{
-    				item3.PositionCont = Dat.Vec2DUnitY * (Waist.Yv * 0.003);
+    				item3.PositionCont = DataConsts.Vec2DUnitY * (Waist.Yv * 0.003);
     			}
     			腰振り_人();
     		}
@@ -1627,16 +1627,16 @@ namespace SlaveMatrix
     			性器_人.Body.SizeYCont = 0.65 + Waist.Yv * 0.35;
     			foreach (Par item in 性器_人.Body.EnumJoinRoot)
     			{
-    				item.PositionCont = Dat.Vec2DUnitY * (Waist.Yv * 0.001 + 0.001);
+    				item.PositionCont = DataConsts.Vec2DUnitY * (Waist.Yv * 0.001 + 0.001);
     			}
     			肛門_人.Body.SizeYCont = 0.65 + Waist.Yv * 0.35;
     			foreach (Par item2 in 上着B_クロス.Body.EnumJoinRoot)
     			{
-    				item2.PositionCont = Dat.Vec2DUnitY * (Waist.Yv * 0.003);
+    				item2.PositionCont = DataConsts.Vec2DUnitY * (Waist.Yv * 0.003);
     			}
     			foreach (Par item3 in 上着B_前掛け.Body.EnumJoinRoot)
     			{
-    				item3.PositionCont = Dat.Vec2DUnitY * (Waist.Yv * 0.003);
+    				item3.PositionCont = DataConsts.Vec2DUnitY * (Waist.Yv * 0.003);
     			}
     			腰振り_人();
     		}
@@ -1655,7 +1655,7 @@ namespace SlaveMatrix
     			性器_獣.Body.SizeYCont = 0.65 + Waist_獣.Yv * 0.35;
     			foreach (Par item in 性器_獣.Body.EnumJoinRoot)
     			{
-    				item.PositionCont = Dat.Vec2DUnitY * (Waist_獣.Yv * 0.001 + 0.001);
+    				item.PositionCont = DataConsts.Vec2DUnitY * (Waist_獣.Yv * 0.001 + 0.001);
     			}
     			肛門_獣.Body.SizeYCont = 0.65 + Waist_獣.Yv * 0.35;
     			腰振り_獣();
@@ -1675,7 +1675,7 @@ namespace SlaveMatrix
     			性器_獣.Body.SizeYCont = 0.65 + Waist_獣.Yv * 0.35;
     			foreach (Par item in 性器_獣.Body.EnumJoinRoot)
     			{
-    				item.PositionCont = Dat.Vec2DUnitY * (Waist_獣.Yv * 0.001 + 0.001);
+    				item.PositionCont = DataConsts.Vec2DUnitY * (Waist_獣.Yv * 0.001 + 0.001);
     			}
     			肛門_獣.Body.SizeYCont = 0.65 + Waist_獣.Yv * 0.35;
     			腰振り_獣();
@@ -5279,8 +5279,8 @@ namespace SlaveMatrix
     		染み_人 = new 染み_人(disUnit, 配色指定.N0, Cha.ColorSet, Med, new 染み_人D());
     		染み_人.サイズ = Elements.Sum((Ele e) => e.サイズ) / (double)Elements.Length;
     		染み_人.Intensity = 0.0;
-    		Vector2D positionCont = Dat.Vec2DUnitY * -0.03;
-    		Vector2D positionCont2 = Dat.Vec2DUnitY * 0.03;
+    		Vector2D positionCont = DataConsts.Vec2DUnitY * -0.03;
+    		Vector2D positionCont2 = DataConsts.Vec2DUnitY * 0.03;
     		染み_人.X0Y0_汗.PositionCont = positionCont;
     		染み_人.X0Y0_潮1.PositionCont = positionCont2;
     		if (Is獣)
@@ -9793,16 +9793,16 @@ namespace SlaveMatrix
 
     	private void 腰振り_人()
     	{
-    		Torso.X0Y0_筋肉_筋肉左.PositionCont = Dat.Vec2DUnitY * (Waist.Yv * -0.004);
-    		Torso.X0Y0_筋肉_筋肉右.PositionCont = Dat.Vec2DUnitY * (Waist.Yv * -0.004);
-    		胴腹板_人.X0Y0_虫性_腹板.PositionCont = Dat.Vec2DUnitY * (Waist.Yv * -0.002);
+    		Torso.X0Y0_筋肉_筋肉左.PositionCont = DataConsts.Vec2DUnitY * (Waist.Yv * -0.004);
+    		Torso.X0Y0_筋肉_筋肉右.PositionCont = DataConsts.Vec2DUnitY * (Waist.Yv * -0.004);
+    		胴腹板_人.X0Y0_虫性_腹板.PositionCont = DataConsts.Vec2DUnitY * (Waist.Yv * -0.002);
     		胴肌_人.Body.SizeYCont = 0.85 + (1.0 - Waist.Yv) * 0.15;
     	}
 
     	private void 腰振り_獣()
     	{
-    		Torso_獣.X0Y0_筋肉_筋肉左.PositionCont = Dat.Vec2DUnitY * (Waist_獣.Yv * -0.004);
-    		Torso_獣.X0Y0_筋肉_筋肉右.PositionCont = Dat.Vec2DUnitY * (Waist_獣.Yv * -0.004);
+    		Torso_獣.X0Y0_筋肉_筋肉左.PositionCont = DataConsts.Vec2DUnitY * (Waist_獣.Yv * -0.004);
+    		Torso_獣.X0Y0_筋肉_筋肉右.PositionCont = DataConsts.Vec2DUnitY * (Waist_獣.Yv * -0.004);
     		胴肌_獣.Body.SizeYCont = 0.85 + (1.0 - Waist_獣.Yv) * 0.15;
     		if (EI半中1 != null)
     		{

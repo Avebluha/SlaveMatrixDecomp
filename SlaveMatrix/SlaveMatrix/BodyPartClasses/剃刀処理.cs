@@ -79,7 +79,7 @@ namespace SlaveMatrix
     			{
     				調教UI.押し(ref cd);
     				v = op - cp;
-    				a = 0.0 - v.Angle02π(-Dat.Vec2DUnitY).ToDegree();
+    				a = 0.0 - v.Angle02π(-DataConsts.Vec2DUnitY).ToDegree();
     				if (!double.IsNaN(a))
     				{
     					対象.Ele.角度C = a;

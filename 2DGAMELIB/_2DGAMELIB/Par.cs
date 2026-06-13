@@ -33,20 +33,20 @@ namespace _2DGAMELIB
 
     	protected List<Joi> jp = new List<Joi>();
 
-    	protected Vector2D basePointBase = Dat.Vec2DZero;
+    	protected Vector2D basePointBase = DataConsts.Vec2DZero;
 
         //cont short for contract?
-        protected Vector2D basePointCont = Dat.Vec2DZero;
+        protected Vector2D basePointCont = DataConsts.Vec2DZero;
 
-    	protected Vector2D positionBase = Dat.Vec2DZero;
+    	protected Vector2D positionBase = DataConsts.Vec2DZero;
 
-    	protected Vector2D positionContO = Dat.Vec2DZero;
+    	protected Vector2D positionContO = DataConsts.Vec2DZero;
 
-    	protected Vector2D positionCont = Dat.Vec2DZero;
+    	protected Vector2D positionCont = DataConsts.Vec2DZero;
 
     	protected double positionSize = 1.0;
 
-    	protected Vector2D positionVector = Dat.Vec2DZero;
+    	protected Vector2D positionVector = DataConsts.Vec2DZero;
 
     	protected double anglePare;
 

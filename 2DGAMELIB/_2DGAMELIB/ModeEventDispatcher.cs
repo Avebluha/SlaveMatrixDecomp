@@ -33,7 +33,7 @@ namespace _2DGAMELIB
         public FPS FPSF = new FPS(60.0);
 
         private Size BaseSize = Size.Empty;
-        private Vector2D resVector = Dat.Vec2DZero;
+        private Vector2D resVector = DataConsts.Vec2DZero;
 
         public string UITitle;
 
@@ -60,11 +60,11 @@ namespace _2DGAMELIB
             }
             set
             {
-                Modes[mode].Up(MouseButtons.None, Dat.Vec2DZero, Color.Empty);
-                Modes[mode].Move(MouseButtons.None, Dat.Vec2DZero, Color.Empty);
+                Modes[mode].Up(MouseButtons.None, DataConsts.Vec2DZero, Color.Empty);
+                Modes[mode].Move(MouseButtons.None, DataConsts.Vec2DZero, Color.Empty);
                 Modeb = mode;
                 mode = value;
-                Modes[mode].Move(MouseButtons.None, Dat.Vec2DZero, Color.Empty);
+                Modes[mode].Move(MouseButtons.None, DataConsts.Vec2DZero, Color.Empty);
                 Modes[mode].Setting();
             }
         }

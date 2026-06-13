@@ -3,7 +3,7 @@ using System.Runtime.InteropServices;
 namespace _2DGAMELIB
 {
     [StructLayout(LayoutKind.Sequential, Size = 1)]
-    public struct Dat
+    public struct DataConsts
     {
     	public static MatrixD MatDZero = new MatrixD(0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0);
 

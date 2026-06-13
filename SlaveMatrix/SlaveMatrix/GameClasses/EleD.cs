@@ -20,13 +20,13 @@ namespace SlaveMatrix
 
     	public bool 拘束;
 
-    	public Vector2D 基準B = Dat.Vec2DZero;
+    	public Vector2D 基準B = DataConsts.Vec2DZero;
 
-    	public Vector2D 基準C = Dat.Vec2DZero;
+    	public Vector2D 基準C = DataConsts.Vec2DZero;
 
-    	public Vector2D 位置B = Dat.Vec2DZero;
+    	public Vector2D 位置B = DataConsts.Vec2DZero;
 
-    	public Vector2D 位置C = Dat.Vec2DZero;
+    	public Vector2D 位置C = DataConsts.Vec2DZero;
 
     	public double 角度B;
 

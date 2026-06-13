@@ -264,7 +264,7 @@ namespace _2DGAMELIB
     			Open.Bot => frame1.ToGlobal((TL1 + TR1) * 0.5), 
     			Open.Rig => frame1.ToGlobal((TL1 + BL1) * 0.5), 
     			Open.Lef => frame1.ToGlobal((TR1 + BR1) * 0.5), 
-    			_ => Dat.Vec2DZero, 
+    			_ => DataConsts.Vec2DZero, 
     		};
     	}
 
@@ -276,7 +276,7 @@ namespace _2DGAMELIB
     			Open.Bot => gauge.ToGlobal((BLG + BRG) * 0.5), 
     			Open.Rig => gauge.ToGlobal((TRG + BRG) * 0.5), 
     			Open.Lef => gauge.ToGlobal((TLG + BLG) * 0.5), 
-    			_ => Dat.Vec2DZero, 
+    			_ => DataConsts.Vec2DZero, 
     		};
     	}
 

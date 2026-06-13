@@ -57,7 +57,7 @@ namespace _2DGAMELIB
     	public static Vector2D GetCenter(this IEnumerable<Out> Out)
     	{
     		double num = 0.0;
-    		Vector2D vec2DZero = Dat.Vec2DZero;
+    		Vector2D vec2DZero = DataConsts.Vec2DZero;
     		foreach (Out item in Out)
     		{
     			foreach (Vector2D p in item.ps)
@@ -72,7 +72,7 @@ namespace _2DGAMELIB
     	public static Vector2D GetCenter(this IEnumerable<Joi> Joi)
     	{
     		double num = 0.0;
-    		Vector2D vec2DZero = Dat.Vec2DZero;
+    		Vector2D vec2DZero = DataConsts.Vec2DZero;
     		foreach (Joi item in Joi)
     		{
     			vec2DZero += item.Joint;

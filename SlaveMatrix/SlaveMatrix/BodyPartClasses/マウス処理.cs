@@ -412,8 +412,8 @@ namespace SlaveMatrix
     			{
     				m.ResetValue();
     				マウス処理2.対象.Ele.尺度C = 1.0;
-    				マウス処理2.対象.Ele.位置C = Dat.Vec2DZero;
-    				調教UI.マウス.X2Y0_舌.PositionCont = Dat.Vec2DZero;
+    				マウス処理2.対象.Ele.位置C = DataConsts.Vec2DZero;
+    				調教UI.マウス.X2Y0_舌.PositionCont = DataConsts.Vec2DZero;
     			}
     		};
     		調教UI.Mots.Add(キスモーション.GetHashCode().ToString(), キスモーション);

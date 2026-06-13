@@ -23,8 +23,8 @@ namespace _2DGAMELIB
     	protected Size hitBufferSize = System.Drawing.Size.Empty;
     	protected Size displayBufferSize = System.Drawing.Size.Empty;
 
-    	public Vector2D BasePoint = Dat.Vec2DZero;
-    	public Vector2D Position = Dat.Vec2DZero;
+    	public Vector2D BasePoint = DataConsts.Vec2DZero;
+    	public Vector2D Position = DataConsts.Vec2DZero;
 
     	public Graphics DisplayGraphics => displayGraphics;
     	public Graphics HitGraphics => hitGraphics;

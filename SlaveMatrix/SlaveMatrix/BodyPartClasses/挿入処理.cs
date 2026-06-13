@@ -1502,7 +1502,7 @@ namespace SlaveMatrix
     			{
     				d *= 1.5;
     			}
-    			Vector2D p = Dat.Vec2DZero;
+    			Vector2D p = DataConsts.Vec2DZero;
     			bool f = !(対象.Ele is ロータ);
     			bool v = 対象.Ele is バイブ_ディル || 対象.Ele is バイブ_コモン || 対象.Ele is バイブ_ドリル || 対象.Ele is バイブ_アナル || 対象.Ele is バイブ_デンマ;
     			振動モーション = new Motion(-1.0, 1.0)
@@ -1559,9 +1559,9 @@ namespace SlaveMatrix
     					m.ResetValue();
     					foreach (Par item in 対象.Ele.Body.EnumAllPar())
     					{
-    						item.PositionCont = Dat.Vec2DZero;
+    						item.PositionCont = DataConsts.Vec2DZero;
     					}
-    					挿入処理2.Bod.断面.位置C = Dat.Vec2DZero;
+    					挿入処理2.Bod.断面.位置C = DataConsts.Vec2DZero;
     				}
     			};
     			調教UI.Mots.Add(振動モーション.GetHashCode().ToString(), 振動モーション);
@@ -1641,7 +1641,7 @@ namespace SlaveMatrix
     					対象.使用状態 = UsageStatus.Standby;
     					対象.Ele.右 = false;
     					対象.Ele.位置B = 対象.bp;
-    					対象.Ele.位置C = Dat.Vec2DZero;
+    					対象.Ele.位置C = DataConsts.Vec2DZero;
     					対象.Ele.角度B = 0.0;
     					対象.Ele.角度C = 0.0;
     					対象.Ele.Xi = 0;
@@ -1748,7 +1748,7 @@ namespace SlaveMatrix
     			対象.使用状態 = UsageStatus.Standby;
     			対象.Ele.右 = false;
     			対象.Ele.位置B = 対象.bp;
-    			対象.Ele.位置C = Dat.Vec2DZero;
+    			対象.Ele.位置C = DataConsts.Vec2DZero;
     			対象.Ele.角度B = 0.0;
     			対象.Ele.角度C = 0.0;
     			対象.Ele.Xi = 0;

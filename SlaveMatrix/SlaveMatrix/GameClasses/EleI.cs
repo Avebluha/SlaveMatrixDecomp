@@ -6,9 +6,9 @@ namespace SlaveMatrix
 {
     public class EleI : IDisposable
     {
-    	public Vector2D Position = Dat.Vec2DZero;
+    	public Vector2D Position = DataConsts.Vec2DZero;
 
-    	public Vector2D PositionCont = Dat.Vec2DZero;
+    	public Vector2D PositionCont = DataConsts.Vec2DZero;
 
     	public RenderArea Lay;
 
