@@ -2440,7 +2440,7 @@ namespace SlaveMatrix
     				{
     					((IDisposable)font)?.Dispose();
     				}
-    				調教UI2.Film.DisplayLayer.Save(Path + "\\" + now.ToString("yyyy_MM_dd_HH_mm_ss") + ".png", ImageFormat.Png);
+    				調教UI2.Film.DisplayLayer.Save(System.IO.Path.Combine(Path, now.ToString("yyyy_MM_dd_HH_mm_ss") + ".png"), ImageFormat.Png);
     				ip.SubInfoIm = GameText.撮影しました + "\r\n" + GameText.写真はPhotoフォルダに保存されます;
     				if (Sta.GameData.TrainingTarget.Trained && !調教UI2.Cha.Body.Is拘束 && 調教UI2.Cha.Body.Is腕人 && !Sta.GameData.TrainingTarget.ChaD.撮影ピース経験)
     				{

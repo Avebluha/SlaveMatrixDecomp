@@ -628,7 +628,7 @@ namespace SlaveMatrix
 
     	private static void AutoSave()
     	{
-    		string s = Sta.SavePath + "\\0： ";
+    		string s = Path.Combine(Sta.SavePath, "0： ");
     		foreach (string item in from e in Directory.EnumerateFiles(Sta.SavePath)
     			where e.StartsWith(s)
     			select e)

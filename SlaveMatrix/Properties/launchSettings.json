@@ -2,7 +2,10 @@
   "profiles": {
     "SlaveMatrix": {
       "commandName": "Project",
-      "workingDirectory": "$(SolutionDir)\\game_folder"
+      "workingDirectory": "../game_folder",
+      "environmentVariables": {
+        "DOTNET_SYSTEM_GLOBALIZATION_INVARIANT": "true"
+      }
     },
     "WSL": {
       "commandName": "WSL2",

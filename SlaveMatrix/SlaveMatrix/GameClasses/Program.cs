@@ -1,15 +1,19 @@
 using System;
+using System.Reflection;
 using _2DGAMELIB;
 
 namespace SlaveMatrix
 {
     internal static class Program
     {
+        static Program()
+        {
+            AppContext.SetSwitch("System.Drawing.EnableUnixSupport", true);
+        }
 
     	[STAThread]
     	private static void Main(string[] A_0)
     	{
-
             Sta.LoadConfig();
 
             double percent = 35.0;
