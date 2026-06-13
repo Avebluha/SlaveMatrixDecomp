@@ -3,7 +3,7 @@ using System.Drawing;
 
 namespace _2DGAMELIB
 {
-    public class Labs
+    public class LabelMap
     {
     	private OrderedDictionary<string, Lab> labs = new OrderedDictionary<string, Lab>();
 
@@ -13,7 +13,7 @@ namespace _2DGAMELIB
 
     	public Lab this[string Name] => labs[Name];
 
-    	public Labs(ModeEventDispatcher Med, RenderArea Are)
+    	public LabelMap(ModeEventDispatcher Med, RenderArea Are)
     	{
     		this.Med = Med;
     		this.Are = Are;

@@ -5586,7 +5586,7 @@ namespace SlaveMatrix
     				}
     			}
     		});
-    		Labs ls = new Labs(Med, DrawBuffer);
+    		LabelMap ls = new LabelMap(Med, DrawBuffer);
     		ls.Add("ラベル0", DrawBuffer.GetPosition(new Vector2D(num2 + 0.19, num3 - 0.1)), 0.1, 2.5, new Font("MS Gothic", 1f), 0.085, " ", Col.White, Col.Black, ip.MaiB.BrushColor, Col.Black, Input: false);
     		ls.Add("ラベル1", DrawBuffer.GetPosition(new Vector2D(num2 + 0.19, num3 + num * 0.0 + 0.005)), 0.1, 1.0, new Font("MS Gothic", 1f), 0.085, GameText.肌の色, Col.White, Col.Black, ip.MaiB.BrushColor, Col.Black, Input: false);
     		ls.Add("ラベル2", DrawBuffer.GetPosition(new Vector2D(num2 + 0.19, num3 + num * 0.0 + 0.045)), 0.1, 1.0, new Font("MS Gothic", 1f), 0.085, "H:", Col.White, Col.Black, ip.MaiB.BrushColor, Col.Black, Input: false);
