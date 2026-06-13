@@ -1410,7 +1410,7 @@ namespace SlaveMatrix
     		上着B_クロス初期化 = default(上着B_クロス情報);
     		上着B_前掛け初期化 = default(上着B_前掛け情報);
     		ブーツ初期化 = default(ブーツ情報);
-    		CurrentDirectory = Directory.GetCurrentDirectory();
+    		CurrentDirectory = AppContext.BaseDirectory;
     		GameData = new GameState();
     		SavePath = Path.Combine(CurrentDirectory, "save");
     		ImiPath = Path.Combine(CurrentDirectory, "text", "Basement", "Training", "Imitation.txt");
