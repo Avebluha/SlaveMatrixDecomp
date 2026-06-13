@@ -603,14 +603,14 @@ namespace SlaveMatrix
     		ThisType = GetType();
     		Dif dif = new Dif();
     		dif.Tag = "鳥尾";
-    		dif.Add(new Pars(Sta.尻尾["尾"][0][9]));
+    		dif.Add(new PartGroup(Sta.尻尾["尾"][0][9]));
     		Body = new Difs();
     		Body.Tag = dif.Tag;
     		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		X0Y0_尾0 = pars["尾0"].ToPar();
-    		Pars pars2 = pars["風切羽"].ToPars();
-    		Pars pars3 = pars2["左"].ToPars();
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_尾0 = partGroup["尾0"].ToPar();
+    		PartGroup pars2 = partGroup["風切羽"].ToPars();
+    		PartGroup pars3 = pars2["左"].ToPars();
     		X0Y0_風切羽_左_羽1 = pars3["羽1"].ToPar();
     		X0Y0_風切羽_左_羽2 = pars3["羽2"].ToPar();
     		X0Y0_風切羽_左_羽3 = pars3["羽3"].ToPar();
@@ -624,7 +624,7 @@ namespace SlaveMatrix
     		X0Y0_風切羽_右_羽4 = pars3["羽4"].ToPar();
     		X0Y0_風切羽_右_羽5 = pars3["羽5"].ToPar();
     		X0Y0_風切羽_右_羽6 = pars3["羽6"].ToPar();
-    		Pars pars4 = pars["雨覆羽"].ToPars();
+    		PartGroup pars4 = partGroup["雨覆羽"].ToPars();
     		pars3 = pars4["左"].ToPars();
     		X0Y0_雨覆羽_左_羽1 = pars3["羽1"].ToPar();
     		X0Y0_雨覆羽_左_羽2 = pars3["羽2"].ToPar();
@@ -637,7 +637,7 @@ namespace SlaveMatrix
     		X0Y0_雨覆羽_右_羽3 = pars3["羽3"].ToPar();
     		X0Y0_雨覆羽_右_羽4 = pars3["羽4"].ToPar();
     		X0Y0_雨覆羽_右_羽5 = pars3["羽5"].ToPar();
-    		X0Y0_羽根 = pars["羽根"].ToPar();
+    		X0Y0_羽根 = partGroup["羽根"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;

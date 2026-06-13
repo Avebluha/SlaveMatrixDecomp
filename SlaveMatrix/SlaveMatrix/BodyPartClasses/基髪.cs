@@ -127,8 +127,8 @@ namespace SlaveMatrix
     		基髪 基髪2 = this;
     		ThisType = GetType();
     		Body = new Difs(Sta.胴体["基髪"]);
-    		Pars pars = Body[0][0];
-    		X0Y0_髪 = pars["髪"].ToPar();
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_髪 = partGroup["髪"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;

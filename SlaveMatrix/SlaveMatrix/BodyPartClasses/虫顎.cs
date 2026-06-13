@@ -174,10 +174,10 @@ namespace SlaveMatrix
     		Body = new Difs();
     		Body.Tag = dif.Tag;
     		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		X0Y0_顎 = pars["顎"].ToPar();
-    		X0Y0_節 = pars["節"].ToPar();
-    		Pars pars2 = pars["牙"].ToPars();
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_顎 = partGroup["顎"].ToPar();
+    		X0Y0_節 = partGroup["節"].ToPar();
+    		PartGroup pars2 = partGroup["牙"].ToPars();
     		X0Y0_牙_牙1 = pars2["牙1"].ToPar();
     		X0Y0_牙_牙2 = pars2["牙2"].ToPar();
     		X0Y0_牙_牙0 = pars2["牙0"].ToPar();

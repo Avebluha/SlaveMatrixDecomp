@@ -125,16 +125,16 @@ namespace SlaveMatrix
     	{
     		ThisType = GetType();
     		Body = new Difs(Sta.胴体["鼻水左"]);
-    		Pars pars = Body[0][0];
-    		X0Y0_鼻水 = pars["鼻水"].ToPar();
-    		pars = Body[0][1];
-    		X0Y1_鼻水 = pars["鼻水"].ToPar();
-    		pars = Body[0][2];
-    		X0Y2_鼻水 = pars["鼻水"].ToPar();
-    		pars = Body[0][3];
-    		X0Y3_鼻水 = pars["鼻水"].ToPar();
-    		pars = Body[0][4];
-    		X0Y4_鼻水 = pars["鼻水"].ToPar();
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_鼻水 = partGroup["鼻水"].ToPar();
+    		partGroup = Body[0][1];
+    		X0Y1_鼻水 = partGroup["鼻水"].ToPar();
+    		partGroup = Body[0][2];
+    		X0Y2_鼻水 = partGroup["鼻水"].ToPar();
+    		partGroup = Body[0][3];
+    		X0Y3_鼻水 = partGroup["鼻水"].ToPar();
+    		partGroup = Body[0][4];
+    		X0Y4_鼻水 = partGroup["鼻水"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;

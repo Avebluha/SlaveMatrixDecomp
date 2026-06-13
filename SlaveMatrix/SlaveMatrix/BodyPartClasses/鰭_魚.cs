@@ -178,14 +178,14 @@ namespace SlaveMatrix
     		Body = new Difs();
     		Body.Tag = dif.Tag;
     		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		Pars pars2 = pars["鰭2"].ToPars();
+    		PartGroup partGroup = Body[0][0];
+    		PartGroup pars2 = partGroup["鰭2"].ToPars();
     		X0Y0_鰭2_鰭膜 = pars2["鰭膜"].ToPar();
     		X0Y0_鰭2_鰭条 = pars2["鰭条"].ToPar();
-    		pars2 = pars["鰭1"].ToPars();
+    		pars2 = partGroup["鰭1"].ToPars();
     		X0Y0_鰭1_鰭膜 = pars2["鰭膜"].ToPar();
     		X0Y0_鰭1_鰭条 = pars2["鰭条"].ToPar();
-    		Pars pars3 = Body[0][1];
+    		PartGroup pars3 = Body[0][1];
     		pars2 = pars3["鰭2"].ToPars();
     		X0Y1_鰭2_鰭膜 = pars2["鰭膜"].ToPar();
     		X0Y1_鰭2_鰭条 = pars2["鰭条"].ToPar();

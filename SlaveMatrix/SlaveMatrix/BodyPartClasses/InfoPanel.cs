@@ -316,24 +316,24 @@ namespace SlaveMatrix
     		{
     			Are.Draw(MaiB);
     			Mai.Progression(FPS);
-    			Are.Draw(Mai.Pars);
+    			Are.Draw(Mai.PartGroup);
     		}
     		if (Mai2Show)
     		{
     			Are.Draw(Mai2B);
-    			Are.Draw(Mai2.Pars);
+    			Are.Draw(Mai2.PartGroup);
     		}
     		if (SubShow)
     		{
     			Are.Draw(SubB);
     			Sub.Progression(FPS);
-    			Are.Draw(Sub.Pars);
+    			Are.Draw(Sub.PartGroup);
     			Are.Draw(SubInnfo_l.ShapePartT);
     		}
     		if (Sub2Show)
     		{
     			Are.Draw(Sub2B);
-    			Are.Draw(Sub2.Pars);
+    			Are.Draw(Sub2.PartGroup);
     		}
     		if (yp.Dra)
     		{

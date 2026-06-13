@@ -87,8 +87,8 @@ namespace SlaveMatrix
     	{
     		ThisType = GetType();
     		Body = new Difs(Sta.その他["衝撃"]);
-    		Pars pars = Body[0][0];
-    		X0Y0_衝撃 = pars["衝撃"].ToPar();
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_衝撃 = partGroup["衝撃"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;

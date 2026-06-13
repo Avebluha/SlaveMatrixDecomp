@@ -146,13 +146,13 @@ namespace SlaveMatrix
     		ThisType = GetType();
     		Dif dif = new Dif();
     		dif.Tag = "ジグ";
-    		dif.Add(new Pars(Sta.胴体["横髪左"][0][0]));
+    		dif.Add(new PartGroup(Sta.胴体["横髪左"][0][0]));
     		Body = new Difs();
     		Body.Tag = dif.Tag;
     		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		X0Y0_髪1 = pars["髪1"].ToPar();
-    		X0Y0_髪2 = pars["髪2"].ToPar();
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_髪1 = partGroup["髪1"].ToPar();
+    		X0Y0_髪2 = partGroup["髪2"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;

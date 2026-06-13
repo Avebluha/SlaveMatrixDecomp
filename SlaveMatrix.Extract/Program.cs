@@ -420,22 +420,22 @@ class Program
         return token.ToString();
     }
 
-    static string ExportParsToSvg(Pars pars, List<string> foundJoints)
+    static string ExportParsToSvg(PartGroup PartGroup, List<string> foundJoints)
     {
         var sb = new StringBuilder();
         sb.AppendLine("<?xml version=\"1.0\" encoding=\"UTF-8\"?>");
         sb.AppendLine("<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1 1\">");
-        ExportParsToSvgInner(pars, sb, foundJoints);
+        ExportParsToSvgInner(PartGroup, sb, foundJoints);
         sb.AppendLine("</svg>");
         return sb.ToString();
     }
 
-    static void ExportParsToSvgInner(Pars pars, StringBuilder sb, List<string> foundJoints)
+    static void ExportParsToSvgInner(PartGroup PartGroup, StringBuilder sb, List<string> foundJoints)
     {
-        foreach (string key in pars.Keys)
+        foreach (string key in PartGroup.Keys)
         {
-            var val = pars[key];
-            if (val is Pars childPars)
+            var val = PartGroup[key];
+            if (val is PartGroup childPars)
             {
                 sb.AppendLine($"<g id=\"{EscapeXml(key)}\">");
                 ExportParsToSvgInner(childPars, sb, foundJoints);
@@ -608,18 +608,18 @@ class Program
         return result;
     }
 
-    static JObject ExportPars(Pars pars)
+    static JObject ExportPars(PartGroup PartGroup)
     {
         var result = new JObject
         {
-            ["Tag"] = pars.Tag ?? "",
+            ["Tag"] = PartGroup.Tag ?? "",
             ["Children"] = new JObject()
         };
 
-        foreach (string key in pars.Keys)
+        foreach (string key in PartGroup.Keys)
         {
-            var val = pars[key];
-            if (val is Pars childPars)
+            var val = PartGroup[key];
+            if (val is PartGroup childPars)
                 result["Children"][key] = ExportPars(childPars);
             else if (val is ShapePartT parT)
                 result["Children"][key] = ExportParT(parT);

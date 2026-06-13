@@ -127,9 +127,9 @@ namespace SlaveMatrix
     		四足脇 四足脇2 = this;
     		ThisType = GetType();
     		Body = new Difs(Sta.肩左["四足脇"]);
-    		Pars pars = Body[0][0];
-    		X0Y0_脇 = pars["脇"].ToPar();
-    		X0Y0_筋肉 = pars["筋肉"].ToPar();
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_脇 = partGroup["脇"].ToPar();
+    		X0Y0_筋肉 = partGroup["筋肉"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;

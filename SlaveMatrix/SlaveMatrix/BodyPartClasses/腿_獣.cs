@@ -158,10 +158,10 @@ namespace SlaveMatrix
     		Body = new Difs();
     		Body.Tag = dif.Tag;
     		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		X0Y0_腿 = pars["腿"].ToPar();
-    		X0Y0_筋 = pars["筋"].ToPar();
-    		Pars pars2 = pars["虎左"].ToPars();
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_腿 = partGroup["腿"].ToPar();
+    		X0Y0_筋 = partGroup["筋"].ToPar();
+    		PartGroup pars2 = partGroup["虎左"].ToPars();
     		X0Y0_虎柄_虎1 = pars2["虎1"].ToPar();
     		X0Y0_虎柄_虎2 = pars2["虎2"].ToPar();
     		Body.SetJoints();

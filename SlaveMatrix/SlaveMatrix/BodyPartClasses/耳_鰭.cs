@@ -390,17 +390,17 @@ namespace SlaveMatrix
     		Body.Tag = "鰭";
     		Body.Add(new Dif(Sta.肢左["耳"][6]));
     		Body.Add(new Dif(Sta.肢左["耳"][7]));
-    		Pars pars = Body[0][0];
-    		Pars pars2 = pars["鰭耳3"].ToPars();
+    		PartGroup partGroup = Body[0][0];
+    		PartGroup pars2 = partGroup["鰭耳3"].ToPars();
     		X0Y0_鰭耳3_鰭膜 = pars2["鰭膜"].ToPar();
     		X0Y0_鰭耳3_鰭条 = pars2["鰭条"].ToPar();
-    		pars2 = pars["鰭耳1"].ToPars();
+    		pars2 = partGroup["鰭耳1"].ToPars();
     		X0Y0_鰭耳1_鰭膜 = pars2["鰭膜"].ToPar();
     		X0Y0_鰭耳1_鰭条 = pars2["鰭条"].ToPar();
-    		pars2 = pars["鰭耳2"].ToPars();
+    		pars2 = partGroup["鰭耳2"].ToPars();
     		X0Y0_鰭耳2_鰭膜 = pars2["鰭膜"].ToPar();
     		X0Y0_鰭耳2_鰭条 = pars2["鰭条"].ToPar();
-    		Pars pars3 = Body[0][1];
+    		PartGroup pars3 = Body[0][1];
     		pars2 = pars3["鰭耳3"].ToPars();
     		X0Y1_鰭耳3_鰭膜 = pars2["鰭膜"].ToPar();
     		X0Y1_鰭耳3_鰭条 = pars2["鰭条"].ToPar();
@@ -410,7 +410,7 @@ namespace SlaveMatrix
     		pars2 = pars3["鰭耳2"].ToPars();
     		X0Y1_鰭耳2_鰭膜 = pars2["鰭膜"].ToPar();
     		X0Y1_鰭耳2_鰭条 = pars2["鰭条"].ToPar();
-    		Pars pars4 = Body[0][2];
+    		PartGroup pars4 = Body[0][2];
     		pars2 = pars4["鰭耳3"].ToPars();
     		X0Y2_鰭耳3_鰭膜 = pars2["鰭膜"].ToPar();
     		X0Y2_鰭耳3_鰭条 = pars2["鰭条"].ToPar();
@@ -420,7 +420,7 @@ namespace SlaveMatrix
     		pars2 = pars4["鰭耳2"].ToPars();
     		X0Y2_鰭耳2_鰭膜 = pars2["鰭膜"].ToPar();
     		X0Y2_鰭耳2_鰭条 = pars2["鰭条"].ToPar();
-    		Pars pars5 = Body[1][0];
+    		PartGroup pars5 = Body[1][0];
     		pars2 = pars5["鰭耳3"].ToPars();
     		X1Y0_鰭耳3_鰭膜 = pars2["鰭膜"].ToPar();
     		X1Y0_鰭耳3_鰭条 = pars2["鰭条"].ToPar();
@@ -430,7 +430,7 @@ namespace SlaveMatrix
     		pars2 = pars5["鰭耳2"].ToPars();
     		X1Y0_鰭耳2_鰭膜 = pars2["鰭膜"].ToPar();
     		X1Y0_鰭耳2_鰭条 = pars2["鰭条"].ToPar();
-    		Pars pars6 = Body[1][1];
+    		PartGroup pars6 = Body[1][1];
     		pars2 = pars6["鰭耳3"].ToPars();
     		X1Y1_鰭耳3_鰭膜 = pars2["鰭膜"].ToPar();
     		X1Y1_鰭耳3_鰭条 = pars2["鰭条"].ToPar();
@@ -440,7 +440,7 @@ namespace SlaveMatrix
     		pars2 = pars6["鰭耳2"].ToPars();
     		X1Y1_鰭耳2_鰭膜 = pars2["鰭膜"].ToPar();
     		X1Y1_鰭耳2_鰭条 = pars2["鰭条"].ToPar();
-    		Pars pars7 = Body[1][2];
+    		PartGroup pars7 = Body[1][2];
     		pars2 = pars7["鰭耳3"].ToPars();
     		X1Y2_鰭耳3_鰭膜 = pars2["鰭膜"].ToPar();
     		X1Y2_鰭耳3_鰭条 = pars2["鰭条"].ToPar();

@@ -108,9 +108,9 @@ namespace SlaveMatrix
     	{
     		ThisType = GetType();
     		Body = new Difs(Sta.その他["鎖"]);
-    		Pars pars = Body[0][0];
-    		X0Y0_鎖2 = pars["鎖2"].ToPar();
-    		X0Y0_鎖1 = pars["鎖1"].ToPar();
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_鎖2 = partGroup["鎖2"].ToPar();
+    		X0Y0_鎖1 = partGroup["鎖1"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;

@@ -486,13 +486,13 @@ namespace SlaveMatrix
     	{
     		ThisType = GetType();
     		Body = new Difs(Sta.カーソル["T字剃刀"]);
-    		Pars pars = Body[0][0];
-    		X0Y0_ヘッド = pars["ヘッド"].ToPar();
-    		Pars pars2 = pars["刃"].ToPars();
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_ヘッド = partGroup["ヘッド"].ToPar();
+    		PartGroup pars2 = partGroup["刃"].ToPars();
     		X0Y0_刃_刃1 = pars2["刃1"].ToPar();
     		X0Y0_刃_刃2 = pars2["刃2"].ToPar();
-    		X0Y0_Neck = pars["首"].ToPar();
-    		pars2 = pars["グリップ"].ToPars();
+    		X0Y0_Neck = partGroup["首"].ToPar();
+    		pars2 = partGroup["グリップ"].ToPars();
     		X0Y0_グリップ_グリップ0 = pars2["グリップ0"].ToPar();
     		X0Y0_グリップ_グリップ1 = pars2["グリップ1"].ToPar();
     		X0Y0_グリップ_グリップ2 = pars2["グリップ2"].ToPar();

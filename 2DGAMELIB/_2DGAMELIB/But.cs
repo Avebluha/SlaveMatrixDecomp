@@ -9,7 +9,7 @@ namespace _2DGAMELIB
 
     	private Color hc = Color.Transparent;
 
-    	protected Pars pars;
+    	protected PartGroup partGroup;
 
     	protected Action<But> Over = delegate
     	{
@@ -48,23 +48,23 @@ namespace _2DGAMELIB
     		}
     	}
 
-    	public Pars Pars => pars;
+    	public PartGroup PartGroup => partGroup;
 
     	public But(ShapePartT ShapePartT, Action<But> Action)
     	{
-    		pars = new Pars(ShapePartT);
+		    partGroup = new PartGroup(ShapePartT);
     		this.Action = Action;
     	}
 
     	public bool Move(ref Color HitColor)
     	{
-    		if (Dra && !f2 && pars.IsHit(ref HitColor))
+    		if (Dra && !f2 && partGroup.IsHit(ref HitColor))
     		{
     			f2 = true;
     			Over(this);
     			return true;
     		}
-    		if (Dra && f2 && !pars.IsHit(ref HitColor))
+    		if (Dra && f2 && !partGroup.IsHit(ref HitColor))
     		{
     			f1 = false;
     			f2 = false;
@@ -88,7 +88,7 @@ namespace _2DGAMELIB
 
     	public bool Down(ref Color HitColor)
     	{
-    		if (Dra && !f1 && pars.IsHit(ref HitColor))
+    		if (Dra && !f1 && partGroup.IsHit(ref HitColor))
     		{
     			f1 = true;
     			Push(this);
@@ -99,7 +99,7 @@ namespace _2DGAMELIB
 
     	public bool Up(ref Color HitColor)
     	{
-    		if (Dra && f1 && pars.IsHit(ref HitColor))
+    		if (Dra && f1 && partGroup.IsHit(ref HitColor))
     		{
     			f1 = false;
     			Release(this);
@@ -113,13 +113,13 @@ namespace _2DGAMELIB
     	{
     		if (dra)
     		{
-    			Are.Draw(pars);
+    			Are.Draw(partGroup);
     		}
     	}
 
     	public void SetHitColor(ModeEventDispatcher Med)
     	{
-    		foreach (ShapePart item in pars.EnumAllPar())
+    		foreach (ShapePart item in partGroup.EnumAllPar())
     		{
     			if (item.HitColor != Color.Transparent)
     			{
@@ -131,7 +131,7 @@ namespace _2DGAMELIB
 
     	public void Dispose()
     	{
-    		pars.Dispose();
+		    partGroup.Dispose();
     	}
     }
 }

@@ -94,12 +94,12 @@ namespace SlaveMatrix
     		ThisType = GetType();
     		Dif dif = new Dif();
     		dif.Tag = "肢系";
-    		dif.Add(new Pars(Sta.胴体["横髪左"][0][5]));
+    		dif.Add(new PartGroup(Sta.胴体["横髪左"][0][5]));
     		Body = new Difs();
     		Body.Tag = dif.Tag;
     		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		X0Y0_髪 = pars["髪"].ToPar();
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_髪 = partGroup["髪"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;

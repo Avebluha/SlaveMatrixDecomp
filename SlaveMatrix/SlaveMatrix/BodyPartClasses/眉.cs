@@ -152,14 +152,14 @@ namespace SlaveMatrix
     	{
     		ThisType = GetType();
     		Body = new Difs(Sta.胴体["眉左"]);
-    		Pars pars = Body[0][0];
-    		X0Y0_眉 = pars["眉"].ToPar();
-    		pars = Body[0][1];
-    		X0Y1_眉 = pars["眉"].ToPar();
-    		X0Y1_眉間 = pars["眉間"].ToPar();
-    		pars = Body[0][2];
-    		X0Y2_眉 = pars["眉"].ToPar();
-    		X0Y2_眉間 = pars["眉間"].ToPar();
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_眉 = partGroup["眉"].ToPar();
+    		partGroup = Body[0][1];
+    		X0Y1_眉 = partGroup["眉"].ToPar();
+    		X0Y1_眉間 = partGroup["眉間"].ToPar();
+    		partGroup = Body[0][2];
+    		X0Y2_眉 = partGroup["眉"].ToPar();
+    		X0Y2_眉間 = partGroup["眉間"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;

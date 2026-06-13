@@ -204,12 +204,12 @@ namespace SlaveMatrix
     		四足胴 四足胴2 = this;
     		ThisType = GetType();
     		Body = new Difs(Sta.半身["四足胴"]);
-    		Pars pars = Body[0][0];
-    		X0Y0_Torso = pars["胴"].ToPar();
-    		Pars pars2 = pars["筋肉"].ToPars();
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_Torso = partGroup["胴"].ToPar();
+    		PartGroup pars2 = partGroup["筋肉"].ToPars();
     		X0Y0_筋肉_筋肉左 = pars2["筋肉左"].ToPar();
     		X0Y0_筋肉_筋肉右 = pars2["筋肉右"].ToPar();
-    		pars2 = pars["獣性"].ToPars();
+    		pars2 = partGroup["獣性"].ToPars();
     		X0Y0_獣性_獣毛左 = pars2["獣毛左"].ToPar();
     		X0Y0_獣性_獣毛右 = pars2["獣毛右"].ToPar();
     		Body.SetJoints();

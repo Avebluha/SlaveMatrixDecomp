@@ -111,16 +111,16 @@ namespace SlaveMatrix
     	{
     		ThisType = GetType();
     		Body = new Difs(Sta.胴体["涎左"]);
-    		Pars pars = Body[0][0];
-    		X0Y0_涎 = pars["涎"].ToPar();
-    		pars = Body[0][1];
-    		X0Y1_涎 = pars["涎"].ToPar();
-    		pars = Body[0][2];
-    		X0Y2_涎 = pars["涎"].ToPar();
-    		pars = Body[0][3];
-    		X0Y3_涎 = pars["涎"].ToPar();
-    		pars = Body[0][4];
-    		X0Y4_涎 = pars["涎"].ToPar();
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_涎 = partGroup["涎"].ToPar();
+    		partGroup = Body[0][1];
+    		X0Y1_涎 = partGroup["涎"].ToPar();
+    		partGroup = Body[0][2];
+    		X0Y2_涎 = partGroup["涎"].ToPar();
+    		partGroup = Body[0][3];
+    		X0Y3_涎 = partGroup["涎"].ToPar();
+    		partGroup = Body[0][4];
+    		X0Y4_涎 = partGroup["涎"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;

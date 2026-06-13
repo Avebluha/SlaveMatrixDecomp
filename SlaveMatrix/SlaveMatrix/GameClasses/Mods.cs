@@ -1136,7 +1136,7 @@ namespace SlaveMatrix
 
     	public static void Player説明(ref Color hc, Action Reset)
     	{
-    		if (dbs["プレイヤー"].Pars.Values.First().ToPar().HitColor == hc)
+    		if (dbs["プレイヤー"].PartGroup.Values.First().ToPar().HitColor == hc)
     		{
     			ip.SubInfoIm = GameText.プレイヤーの遺伝情報を設定します + "(-" + 10000000uL.ToString("#,0") + ")";
     		}
@@ -1551,7 +1551,7 @@ namespace SlaveMatrix
                             }
                             dbs.Move(ref hc);
                             bs.Move(ref hc);
-                            if (bs["ボタン7"].Pars.Values.First().ToPar().HitColor == hc)
+                            if (bs["ボタン7"].PartGroup.Values.First().ToPar().HitColor == hc)
                             {
                                 ip.SubInfoIm = GameText.奴隷をランダムに選択します;
                             }
@@ -2015,7 +2015,7 @@ namespace SlaveMatrix
     			{
     				foreach (But item in lv.bs.EnumBut)
     				{
-    					item.Pars.Values.First().ToParT().PenColor = lv初期縁色;
+    					item.PartGroup.Values.First().ToParT().PenColor = lv初期縁色;
     				}
     			};
     			Action<Unit> SetUI = delegate(Unit u)
@@ -2077,7 +2077,7 @@ namespace SlaveMatrix
     						e.act = delegate(But b)
     						{
     							lv縁色初期化();
-    							b.Pars.Values.First().ToParT().PenColor = Color.Red;
+    							b.PartGroup.Values.First().ToParT().PenColor = Color.Red;
     							Sta.GameData.TrainingTarget = null;
     							if (TrainingTarget != null)
     							{
@@ -2093,7 +2093,7 @@ namespace SlaveMatrix
     						e.act = delegate(But b)
     						{
     							lv縁色初期化();
-    							b.Pars.Values.First().ToParT().PenColor = Color.Red;
+    							b.PartGroup.Values.First().ToParT().PenColor = Color.Red;
     							Sta.GameData.TrainingTarget = u;
     							bs["子"].Action(bs["子"]);
     							if (ip.Mai2Show)
@@ -2124,7 +2124,7 @@ namespace SlaveMatrix
                 {
                     foreach (But item2 in bs.EnumBut.Skip(1).Take(3))
                     {
-                        item2.Pars.Values.First().ToParT().PenColor = bs初期縁色;
+                        item2.PartGroup.Values.First().ToParT().PenColor = bs初期縁色;
                     }
                 };
                 Color f初期縁色 = Col.Black;
@@ -2132,13 +2132,13 @@ namespace SlaveMatrix
                 {
                     foreach (But item3 in bs.EnumBut.Skip(10))
                     {
-                        item3.Pars.Values.First().ToParT().PenColor = f初期縁色;
+                        item3.PartGroup.Values.First().ToParT().PenColor = f初期縁色;
                     }
                 };
                 Action<But, int> 階層選択 = delegate (But b, int o)
                 {
                     f縁色初期化();
-                    b.Pars.Values.First().ToParT().PenColor = Color.Red;
+                    b.PartGroup.Values.First().ToParT().PenColor = Color.Red;
                     set(o);
                 };
                 Action 部屋選択 = delegate
@@ -2146,7 +2146,7 @@ namespace SlaveMatrix
                     lv縁色初期化();
                     if (Sta.GameData.TrainingTarget != null && f == Sta.GameData.TrainingTarget.階層位置 * 15)
                     {
-                        lv.bs[Sta.GameData.TrainingTarget.RoomNumber.ToString()].Pars.Values.First().ToParT().PenColor = Color.Red;
+                        lv.bs[Sta.GameData.TrainingTarget.RoomNumber.ToString()].PartGroup.Values.First().ToParT().PenColor = Color.Red;
                     }
                 };
 
@@ -2221,7 +2221,7 @@ namespace SlaveMatrix
                             {
                                 dbs.Move(ref hc);
                                 bs.Move(ref hc);
-                                if (bs["胸施術"].Pars.Values.First().ToPar().HitColor == hc && !(ip.SubInfoIm == GameText.胸の甲殻を切除しました) && !(ip.SubInfoIm == GameText.所持金が足りません))
+                                if (bs["胸施術"].PartGroup.Values.First().ToPar().HitColor == hc && !(ip.SubInfoIm == GameText.胸の甲殻を切除しました) && !(ip.SubInfoIm == GameText.所持金が足りません))
                                 {
                                     ip.SubInfoIm = GameText.胸の甲殻を切除します + "(-" + 胸施術価格.ToString("#,0") + ")";
                                 }
@@ -2231,7 +2231,7 @@ namespace SlaveMatrix
                                 }
                                 if (TrainingTarget != null)
                                 {
-                                    if (bs["股施術"].Pars.Values.First().ToPar().HitColor == hc && !(ip.SubInfoIm == GameText.股の + (TrainingTarget.Body.Is蛇 ? GameText.鱗 : GameText.甲殻) + GameText.を切除しました) && !(ip.SubInfoIm == GameText.所持金が足りません))
+                                    if (bs["股施術"].PartGroup.Values.First().ToPar().HitColor == hc && !(ip.SubInfoIm == GameText.股の + (TrainingTarget.Body.Is蛇 ? GameText.鱗 : GameText.甲殻) + GameText.を切除しました) && !(ip.SubInfoIm == GameText.所持金が足りません))
                                     {
                                         ip.SubInfoIm = GameText.股の + (TrainingTarget.Body.Is蛇 ? GameText.鱗 : GameText.甲殻) + GameText.を切除します + "(-" + 股施術価格.ToString("#,0") + ")";
                                     }
@@ -2240,7 +2240,7 @@ namespace SlaveMatrix
                                         si.Set(bre: false);
                                     }
                                 }
-                                if (bs["淫紋"].Pars.Values.First().ToPar().HitColor == hc && !(ip.SubInfoIm == GameText.淫紋を刻みました) && !(ip.SubInfoIm == GameText.所持金が足りません))
+                                if (bs["淫紋"].PartGroup.Values.First().ToPar().HitColor == hc && !(ip.SubInfoIm == GameText.淫紋を刻みました) && !(ip.SubInfoIm == GameText.所持金が足りません))
                                 {
                                     ip.SubInfoIm = GameText.淫紋を刻みます + "(-" + 淫紋価格.ToString("#,0") + ")";
                                 }
@@ -2248,7 +2248,7 @@ namespace SlaveMatrix
                                 {
                                     si.Set(bre: false);
                                 }
-                                if (bs["衣装"].Pars.Values.First().ToPar().HitColor == hc && !(ip.SubInfoIm == GameText.衣装を変更しました) && !(ip.SubInfoIm == GameText.所持金が足りません))
+                                if (bs["衣装"].PartGroup.Values.First().ToPar().HitColor == hc && !(ip.SubInfoIm == GameText.衣装を変更しました) && !(ip.SubInfoIm == GameText.所持金が足りません))
                                 {
                                     ip.SubInfoIm = GameText.衣装を変更します + "(-" + 衣装変更価格.ToString("#,0") + ")";
                                 }
@@ -2256,7 +2256,7 @@ namespace SlaveMatrix
                                 {
                                     si.Set(bre: false);
                                 }
-                                if (bs["保守"].Pars.Values.First().ToPar().HitColor == hc && !(ip.SubInfoIm == GameText.奴隷を保守対象に設定しました) && !(ip.SubInfoIm == GameText.奴隷の保守設定を解除しました))
+                                if (bs["保守"].PartGroup.Values.First().ToPar().HitColor == hc && !(ip.SubInfoIm == GameText.奴隷を保守対象に設定しました) && !(ip.SubInfoIm == GameText.奴隷の保守設定を解除しました))
                                 {
                                     ip.SubInfoIm = GameText.奴隷の保守設定を切り替えます;
                                 }
@@ -2264,7 +2264,7 @@ namespace SlaveMatrix
                                 {
                                     si.Set(bre: false);
                                 }
-                                if (bs["一般労働"].Pars.Values.First().ToPar().HitColor == hc && !(ip.SubInfoIm == GameText.奴隷を一般労働に設定しました) && !(ip.SubInfoIm == GameText.奴隷の一般労働を解除しました))
+                                if (bs["一般労働"].PartGroup.Values.First().ToPar().HitColor == hc && !(ip.SubInfoIm == GameText.奴隷を一般労働に設定しました) && !(ip.SubInfoIm == GameText.奴隷の一般労働を解除しました))
                                 {
                                     ip.SubInfoIm = GameText.奴隷の一般労働設定を切り替えます;
                                 }
@@ -2272,7 +2272,7 @@ namespace SlaveMatrix
                                 {
                                     si.Set(bre: false);
                                 }
-                                if (bs["娼婦労働"].Pars.Values.First().ToPar().HitColor == hc && !(ip.SubInfoIm == GameText.奴隷を娼婦労働に設定しました) && !(ip.SubInfoIm == GameText.奴隷の娼婦労働を解除しました))
+                                if (bs["娼婦労働"].PartGroup.Values.First().ToPar().HitColor == hc && !(ip.SubInfoIm == GameText.奴隷を娼婦労働に設定しました) && !(ip.SubInfoIm == GameText.奴隷の娼婦労働を解除しました))
                                 {
                                     ip.SubInfoIm = GameText.奴隷の娼婦労働設定を切り替えます;
                                 }
@@ -2280,7 +2280,7 @@ namespace SlaveMatrix
                                 {
                                     si.Set(bre: false);
                                 }
-                                if (bs["売却"].Pars.Values.First().ToPar().HitColor == hc)
+                                if (bs["売却"].PartGroup.Values.First().ToPar().HitColor == hc)
                                 {
                                     ip.SubInfoIm = GameText.奴隷を売却します;
                                 }
@@ -2288,7 +2288,7 @@ namespace SlaveMatrix
                                 {
                                     si.Set(bre: false);
                                 }
-                                if (bs["全一般"].Pars.Values.First().ToPar().HitColor == hc && !(ip.SubInfoIm == GameText.労働可能な全ての奴隷に一般労働を設定しました))
+                                if (bs["全一般"].PartGroup.Values.First().ToPar().HitColor == hc && !(ip.SubInfoIm == GameText.労働可能な全ての奴隷に一般労働を設定しました))
                                 {
                                     ip.SubInfoIm = GameText.労働可能な全ての奴隷を働かせます;
                                 }
@@ -2296,7 +2296,7 @@ namespace SlaveMatrix
                                 {
                                     si.Set(bre: false);
                                 }
-                                if (bs["全娼婦"].Pars.Values.First().ToPar().HitColor == hc && !(ip.SubInfoIm == GameText.労働可能な全ての奴隷に娼婦労働を設定しました))
+                                if (bs["全娼婦"].PartGroup.Values.First().ToPar().HitColor == hc && !(ip.SubInfoIm == GameText.労働可能な全ての奴隷に娼婦労働を設定しました))
                                 {
                                     ip.SubInfoIm = GameText.労働可能な全ての奴隷を娼婦として働かせます;
                                 }
@@ -2304,7 +2304,7 @@ namespace SlaveMatrix
                                 {
                                     si.Set(bre: false);
                                 }
-                                if (bs["全解除"].Pars.Values.First().ToPar().HitColor == hc && !(ip.SubInfoIm == GameText.労働中の全ての奴隷の労働を解除しました))
+                                if (bs["全解除"].PartGroup.Values.First().ToPar().HitColor == hc && !(ip.SubInfoIm == GameText.労働中の全ての奴隷の労働を解除しました))
                                 {
                                     ip.SubInfoIm = GameText.全ての奴隷の労働を解除します;
                                 }
@@ -2312,7 +2312,7 @@ namespace SlaveMatrix
                                 {
                                     si.Set(bre: false);
                                 }
-                                if (bs["全売却"].Pars.Values.First().ToPar().HitColor == hc && !ip.SubInfoIm.StartsWith(GameText.保守以外の全ての奴隷を売却しました) && !(ip.SubInfoIm == GameText.全売却をキャンセルしました))
+                                if (bs["全売却"].PartGroup.Values.First().ToPar().HitColor == hc && !ip.SubInfoIm.StartsWith(GameText.保守以外の全ての奴隷を売却しました) && !(ip.SubInfoIm == GameText.全売却をキャンセルしました))
                                 {
                                     ip.SubInfoIm = GameText.保守以外の全ての奴隷を売却します;
                                 }
@@ -2350,7 +2350,7 @@ namespace SlaveMatrix
                         int num2 = 0;
                         using (IEnumerator<But> enumerator2 = bs.EnumBut.Skip(12).GetEnumerator())
                         {
-                            while (enumerator2.MoveNext() && !(enumerator2.Current.Pars.Values.First().ToParT().PenColor == Color.Red))
+                            while (enumerator2.MoveNext() && !(enumerator2.Current.PartGroup.Values.First().ToParT().PenColor == Color.Red))
                             {
                                 num2++;
                             }
@@ -2358,7 +2358,7 @@ namespace SlaveMatrix
                         int num3 = 0;
                         using (IEnumerator<But> enumerator2 = lv.bs.EnumBut.GetEnumerator())
                         {
-                            while (enumerator2.MoveNext() && !(enumerator2.Current.Pars.Values.First().ToParT().PenColor == Color.Red))
+                            while (enumerator2.MoveNext() && !(enumerator2.Current.PartGroup.Values.First().ToParT().PenColor == Color.Red))
                             {
                                 num3++;
                             }
@@ -2420,7 +2420,7 @@ namespace SlaveMatrix
                                 But but = bs["ボタン" + (Sta.GameData.TrainingTarget.階層位置 + 1)];
                                 but.Action(but);
                                 lv縁色初期化();
-                                lv.bs[Sta.GameData.TrainingTarget.RoomNumber.ToString()].Pars.Values.First().ToParT().PenColor = Color.Red;
+                                lv.bs[Sta.GameData.TrainingTarget.RoomNumber.ToString()].PartGroup.Values.First().ToParT().PenColor = Color.Red;
                                 bs["子"].Action(bs["子"]);
                             }
                             else
@@ -2431,7 +2431,7 @@ namespace SlaveMatrix
                                 int num = 0;
                                 using (IEnumerator<But> enumerator = lv.bs.EnumBut.GetEnumerator())
                                 {
-                                    while (enumerator.MoveNext() && !(enumerator.Current.Pars.Values.First().ToParT().PenColor == Color.Red))
+                                    while (enumerator.MoveNext() && !(enumerator.Current.PartGroup.Values.First().ToParT().PenColor == Color.Red))
                                     {
                                         num++;
                                     }
@@ -2465,7 +2465,7 @@ namespace SlaveMatrix
                 bs.Add("ボタン0", MyUI.Button2(Med, DrawBuffer, GameText.戻る, new Vector2D(0.85, 0.02), delegate
                 {
                     ////Sounds.操作.Play();
-                    if (Sta.GameData.TrainingTarget != null && bs["子"].Pars.Values.First().ToParT().PenColor != Color.Red)
+                    if (Sta.GameData.TrainingTarget != null && bs["子"].PartGroup.Values.First().ToParT().PenColor != Color.Red)
                     {
                         SetTrainingTarget(Med, Sta.GameData.TrainingTarget);
                         SetUI(Sta.GameData.TrainingTarget);
@@ -2482,7 +2482,7 @@ namespace SlaveMatrix
     					////Sounds.操作.Play();
     				}
     				bs縁色初期化();
-    				b.Pars.Values.First().ToParT().PenColor = Color.Red;
+    				b.PartGroup.Values.First().ToParT().PenColor = Color.Red;
     				if (Sta.GameData.TrainingTarget != null)
     				{
     					if (TrainingTarget == null || TrainingTarget.CharacterData != Sta.GameData.TrainingTarget.ChaD)
@@ -2501,7 +2501,7 @@ namespace SlaveMatrix
     			{
     				////Sounds.操作.Play();
     				bs縁色初期化();
-    				b.Pars.Values.First().ToParT().PenColor = Color.Red;
+    				b.PartGroup.Values.First().ToParT().PenColor = Color.Red;
     				if (Sta.GameData.TrainingTarget != null)
     				{
     					if (TrainingTarget != null)
@@ -2545,7 +2545,7 @@ namespace SlaveMatrix
     			{
     				////Sounds.操作.Play();
     				bs縁色初期化();
-    				b.Pars.Values.First().ToParT().PenColor = Color.Red;
+    				b.PartGroup.Values.First().ToParT().PenColor = Color.Red;
     				if (Sta.GameData.TrainingTarget != null)
     				{
     					if (TrainingTarget != null)
@@ -3331,10 +3331,10 @@ namespace SlaveMatrix
     		}));
     		Action<Buts> rs1 = delegate(Buts bs_)
     		{
-    			Color penColor = bs_["ボタン0"].Pars.Values.First().ToParT().PenColor;
+    			Color penColor = bs_["ボタン0"].PartGroup.Values.First().ToParT().PenColor;
     			foreach (But item in bs_.EnumBut.Skip(1))
     			{
-    				item.Pars.Values.First().ToParT().PenColor = penColor;
+    				item.PartGroup.Values.First().ToParT().PenColor = penColor;
     			}
     		};
 
@@ -3345,7 +3345,7 @@ namespace SlaveMatrix
     				//Sounds.操作.Play();
     			}
     			rs1(bs);
-    			bu.Pars.Values.First().ToParT().PenColor = Color.Red;
+    			bu.PartGroup.Values.First().ToParT().PenColor = Color.Red;
     			if (Sta.GameData.祝福 != null)
     			{
     				l.Text = Sta.GameData.祝福.Name;
@@ -3385,7 +3385,7 @@ namespace SlaveMatrix
     		{
     			//Sounds.操作.Play();
     			rs1(bs);
-    			bu.Pars.Values.First().ToParT().PenColor = Color.Red;
+    			bu.PartGroup.Values.First().ToParT().PenColor = Color.Red;
     			if (Sta.GameData.祝福 != null)
     			{
     				l.Text = GameText.親形質1;
@@ -3425,7 +3425,7 @@ namespace SlaveMatrix
     		{
     			//Sounds.操作.Play();
     			rs1(bs);
-    			bu.Pars.Values.First().ToParT().PenColor = Color.Red;
+    			bu.PartGroup.Values.First().ToParT().PenColor = Color.Red;
     			if (Sta.GameData.祝福 != null)
     			{
     				l.Text = GameText.親形質2;
@@ -4490,7 +4490,7 @@ namespace SlaveMatrix
     		{
     			foreach (But item in bs.EnumBut.Skip(3).Take(10))
     			{
-    				item.Pars.Values.First().ToParT().PenColor = bs初期縁色;
+    				item.PartGroup.Values.First().ToParT().PenColor = bs初期縁色;
     			}
     		};
     		double num = 0.7;
@@ -4518,7 +4518,7 @@ namespace SlaveMatrix
     			}
     			d = true;
     			bs縁色初期化();
-    			bu.Pars.Values.First().ToParT().PenColor = Color.Red;
+    			bu.PartGroup.Values.First().ToParT().PenColor = Color.Red;
     			Reload();
     		}));
     		ShapePartT shapePartT5 = new ShapePartT();
@@ -4539,7 +4539,7 @@ namespace SlaveMatrix
     		{
     			//Sounds.操作.Play();
     			bs縁色初期化();
-    			bu.Pars.Values.First().ToParT().PenColor = Color.Red;
+    			bu.PartGroup.Values.First().ToParT().PenColor = Color.Red;
     			Reload();
     		}));
     		ShapePartT shapePartT6 = new ShapePartT();
@@ -4560,7 +4560,7 @@ namespace SlaveMatrix
     		{
     			//Sounds.操作.Play();
     			bs縁色初期化();
-    			bu.Pars.Values.First().ToParT().PenColor = Color.Red;
+    			bu.PartGroup.Values.First().ToParT().PenColor = Color.Red;
     			Reload();
     		}));
     		ShapePartT shapePartT7 = new ShapePartT();
@@ -4581,7 +4581,7 @@ namespace SlaveMatrix
     		{
     			//Sounds.操作.Play();
     			bs縁色初期化();
-    			bu.Pars.Values.First().ToParT().PenColor = Color.Red;
+    			bu.PartGroup.Values.First().ToParT().PenColor = Color.Red;
     			Reload();
     		}));
     		ShapePartT shapePartT8 = new ShapePartT();
@@ -4602,7 +4602,7 @@ namespace SlaveMatrix
     		{
     			//Sounds.操作.Play();
     			bs縁色初期化();
-    			bu.Pars.Values.First().ToParT().PenColor = Color.Red;
+    			bu.PartGroup.Values.First().ToParT().PenColor = Color.Red;
     			Reload();
     		}));
     		ShapePartT shapePartT9 = new ShapePartT();
@@ -4623,7 +4623,7 @@ namespace SlaveMatrix
     		{
     			//Sounds.操作.Play();
     			bs縁色初期化();
-    			bu.Pars.Values.First().ToParT().PenColor = Color.Red;
+    			bu.PartGroup.Values.First().ToParT().PenColor = Color.Red;
     			Reload();
     		}));
     		ShapePartT shapePartT10 = new ShapePartT();
@@ -4644,7 +4644,7 @@ namespace SlaveMatrix
     		{
     			//Sounds.操作.Play();
     			bs縁色初期化();
-    			bu.Pars.Values.First().ToParT().PenColor = Color.Red;
+    			bu.PartGroup.Values.First().ToParT().PenColor = Color.Red;
     			Reload();
     		}));
     		ShapePartT shapePartT11 = new ShapePartT();
@@ -4665,7 +4665,7 @@ namespace SlaveMatrix
     		{
     			//Sounds.操作.Play();
     			bs縁色初期化();
-    			bu.Pars.Values.First().ToParT().PenColor = Color.Red;
+    			bu.PartGroup.Values.First().ToParT().PenColor = Color.Red;
     			Reload();
     		}));
     		ShapePartT shapePartT12 = new ShapePartT();
@@ -4686,7 +4686,7 @@ namespace SlaveMatrix
     		{
     			//Sounds.操作.Play();
     			bs縁色初期化();
-    			bu.Pars.Values.First().ToParT().PenColor = Color.Red;
+    			bu.PartGroup.Values.First().ToParT().PenColor = Color.Red;
     			Reload();
     		}));
     		ShapePartT shapePartT13 = new ShapePartT();
@@ -4707,12 +4707,12 @@ namespace SlaveMatrix
     		{
     			//Sounds.操作.Play();
     			bs縁色初期化();
-    			bu.Pars.Values.First().ToParT().PenColor = Color.Red;
+    			bu.PartGroup.Values.First().ToParT().PenColor = Color.Red;
     			Reload();
     		}));
     		Action SetGen = delegate
     		{
-    			if (bs["対象0"].Pars.Values.First().ToParT().PenColor == Color.Red)
+    			if (bs["対象0"].PartGroup.Values.First().ToParT().PenColor == Color.Red)
     			{
     				if ((Sta.GameData.鳥系.Count != 0 && Sta.GameData.系統開放[0]) || (Sta.GameData.蛇系.Count != 0 && Sta.GameData.系統開放[1]) || (Sta.GameData.獣系.Count != 0 && Sta.GameData.系統開放[2]) || (Sta.GameData.水系.Count != 0 && Sta.GameData.系統開放[3]) || (Sta.GameData.虫系.Count != 0 && Sta.GameData.系統開放[4]) || (Sta.GameData.人型.Count != 0 && Sta.GameData.系統開放[5]) || (Sta.GameData.幻獣.Count != 0 && Sta.GameData.系統開放[6]) || (Sta.GameData.魔獣.Count != 0 && Sta.GameData.系統開放[7]) || (Sta.GameData.竜系.Count != 0 && Sta.GameData.系統開放[8]))
     				{
@@ -4785,39 +4785,39 @@ namespace SlaveMatrix
     					}
     				}
     			}
-    			else if (bs["対象1"].Pars.Values.First().ToParT().PenColor == Color.Red)
+    			else if (bs["対象1"].PartGroup.Values.First().ToParT().PenColor == Color.Red)
     			{
     				g = Sta.GameData.鳥系;
     			}
-    			else if (bs["対象2"].Pars.Values.First().ToParT().PenColor == Color.Red)
+    			else if (bs["対象2"].PartGroup.Values.First().ToParT().PenColor == Color.Red)
     			{
     				g = Sta.GameData.蛇系;
     			}
-    			else if (bs["対象3"].Pars.Values.First().ToParT().PenColor == Color.Red)
+    			else if (bs["対象3"].PartGroup.Values.First().ToParT().PenColor == Color.Red)
     			{
     				g = Sta.GameData.獣系;
     			}
-    			else if (bs["対象4"].Pars.Values.First().ToParT().PenColor == Color.Red)
+    			else if (bs["対象4"].PartGroup.Values.First().ToParT().PenColor == Color.Red)
     			{
     				g = Sta.GameData.水系;
     			}
-    			else if (bs["対象5"].Pars.Values.First().ToParT().PenColor == Color.Red)
+    			else if (bs["対象5"].PartGroup.Values.First().ToParT().PenColor == Color.Red)
     			{
     				g = Sta.GameData.虫系;
     			}
-    			else if (bs["対象6"].Pars.Values.First().ToParT().PenColor == Color.Red)
+    			else if (bs["対象6"].PartGroup.Values.First().ToParT().PenColor == Color.Red)
     			{
     				g = Sta.GameData.人型;
     			}
-    			else if (bs["対象7"].Pars.Values.First().ToParT().PenColor == Color.Red)
+    			else if (bs["対象7"].PartGroup.Values.First().ToParT().PenColor == Color.Red)
     			{
     				g = Sta.GameData.幻獣;
     			}
-    			else if (bs["対象8"].Pars.Values.First().ToParT().PenColor == Color.Red)
+    			else if (bs["対象8"].PartGroup.Values.First().ToParT().PenColor == Color.Red)
     			{
     				g = Sta.GameData.魔獣;
     			}
-    			else if (bs["対象9"].Pars.Values.First().ToParT().PenColor == Color.Red)
+    			else if (bs["対象9"].PartGroup.Values.First().ToParT().PenColor == Color.Red)
     			{
     				g = Sta.GameData.竜系;
     			}
@@ -5010,7 +5010,7 @@ namespace SlaveMatrix
     			int num3 = 0;
     			using (IEnumerator<But> enumerator = bs.EnumBut.Skip(3).Take(10).GetEnumerator())
     			{
-    				while (enumerator.MoveNext() && !(enumerator.Current.Pars.Values.First().ToParT().PenColor == Color.Red))
+    				while (enumerator.MoveNext() && !(enumerator.Current.PartGroup.Values.First().ToParT().PenColor == Color.Red))
     				{
     					num3++;
     				}
@@ -5094,7 +5094,7 @@ namespace SlaveMatrix
     		{
     			d = false;
     			bs縁色初期化();
-    			bs["対象0"].Pars.Values.First().ToParT().PenColor = Color.Red;
+    			bs["対象0"].PartGroup.Values.First().ToParT().PenColor = Color.Red;
     		};
     		return mod;
     	}
@@ -5307,63 +5307,63 @@ namespace SlaveMatrix
     					dbs.Move(ref hc);
     					bs.Move(ref hc);
     					lv.Move(ref hc);
-    					if (lv.bs["0"].Pars.Values.First().ToPar().HitColor == hc)
+    					if (lv.bs["0"].PartGroup.Values.First().ToPar().HitColor == hc)
     					{
     						ip.TextIm = GameText.ペニスを模したバイブ + "\r\n" + GameText.刺激は控えめ;
     					}
-    					if (lv.bs["1"].Pars.Values.First().ToPar().HitColor == hc)
+    					if (lv.bs["1"].PartGroup.Values.First().ToPar().HitColor == hc)
     					{
     						ip.TextIm = GameText.一般的なバイブ + "\r\n" + GameText.ディルドバイブより刺激が強い;
     					}
-    					if (lv.bs["2"].Pars.Values.First().ToPar().HitColor == hc)
+    					if (lv.bs["2"].PartGroup.Values.First().ToPar().HitColor == hc)
     					{
     						ip.TextIm = GameText.振動と回転の2つの刺激をもたらすバイブ;
     					}
-    					if (lv.bs["3"].Pars.Values.First().ToPar().HitColor == hc)
+    					if (lv.bs["3"].PartGroup.Values.First().ToPar().HitColor == hc)
     					{
     						ip.TextIm = GameText.強力な振動のバイブ + "\r\n" + GameText.刺激が強い;
     					}
-    					if (lv.bs["4"].Pars.Values.First().ToPar().HitColor == hc)
+    					if (lv.bs["4"].PartGroup.Values.First().ToPar().HitColor == hc)
     					{
     						ip.TextIm = GameText.アナルの調教に適したバイブ;
     					}
-    					if (lv.bs["5"].Pars.Values.First().ToPar().HitColor == hc)
+    					if (lv.bs["5"].PartGroup.Values.First().ToPar().HitColor == hc)
     					{
     						ip.TextIm = GameText.痛みを与えるための道具;
     					}
-    					if (lv.bs["6"].Pars.Values.First().ToPar().HitColor == hc)
+    					if (lv.bs["6"].PartGroup.Values.First().ToPar().HitColor == hc)
     					{
     						ip.TextIm = GameText.緊張を解きほぐすために利用する;
     					}
-    					if (lv.bs["7"].Pars.Values.First().ToPar().HitColor == hc)
+    					if (lv.bs["7"].PartGroup.Values.First().ToPar().HitColor == hc)
     					{
     						ip.TextIm = GameText.陰毛を剃ることが出来る;
     					}
-    					if (lv.bs["8"].Pars.Values.First().ToPar().HitColor == hc)
+    					if (lv.bs["8"].PartGroup.Values.First().ToPar().HitColor == hc)
     					{
     						ip.TextIm = GameText.吸着振動するキャップ;
     					}
-    					if (lv.bs["9"].Pars.Values.First().ToPar().HitColor == hc)
+    					if (lv.bs["9"].PartGroup.Values.First().ToPar().HitColor == hc)
     					{
     						ip.TextIm = GameText.刺激の弱いバイブの一種;
     					}
-    					if (lv.bs["10"].Pars.Values.First().ToPar().HitColor == hc)
+    					if (lv.bs["10"].PartGroup.Values.First().ToPar().HitColor == hc)
     					{
     						ip.TextIm = GameText.アナルの調教に適した道具;
     					}
-    					if (lv.bs["11"].Pars.Values.First().ToPar().HitColor == hc)
+    					if (lv.bs["11"].PartGroup.Values.First().ToPar().HitColor == hc)
     					{
     						ip.TextIm = GameText.奴隷の視界を遮るための道具;
     					}
-    					if (lv.bs["12"].Pars.Values.First().ToPar().HitColor == hc)
+    					if (lv.bs["12"].PartGroup.Values.First().ToPar().HitColor == hc)
     					{
     						ip.TextIm = GameText.奴隷の口をふさぐための道具;
     					}
-    					if (lv.bs["13"].Pars.Values.First().ToPar().HitColor == hc)
+    					if (lv.bs["13"].PartGroup.Values.First().ToPar().HitColor == hc)
     					{
     						ip.TextIm = GameText.写真を撮影することが出来る;
     					}
-    					if (lv.bs["14"].Pars.Values.First().ToPar().HitColor == hc)
+    					if (lv.bs["14"].PartGroup.Values.First().ToPar().HitColor == hc)
     					{
     						ip.TextIm = GameText.フロアを増設し収容できる奴隷の数を増やす;
     					}
@@ -5846,17 +5846,17 @@ namespace SlaveMatrix
     			}
     			a.Draw(BlackBackground);
     			ls.Draw(a);
-    			a.Draw(H肌.Pars);
-    			a.Draw(S肌.Pars);
-    			a.Draw(V肌.Pars);
-    			a.Draw(H髪.Pars);
-    			a.Draw(S髪.Pars);
-    			a.Draw(V髪.Pars);
-    			a.Draw(H瞳.Pars);
-    			a.Draw(S瞳.Pars);
-    			a.Draw(V瞳.Pars);
-    			a.Draw(身長.Pars);
-    			a.Draw(体重.Pars);
+    			a.Draw(H肌.PartGroup);
+    			a.Draw(S肌.PartGroup);
+    			a.Draw(V肌.PartGroup);
+    			a.Draw(H髪.PartGroup);
+    			a.Draw(S髪.PartGroup);
+    			a.Draw(V髪.PartGroup);
+    			a.Draw(H瞳.PartGroup);
+    			a.Draw(S瞳.PartGroup);
+    			a.Draw(V瞳.PartGroup);
+    			a.Draw(身長.PartGroup);
+    			a.Draw(体重.PartGroup);
     			完了.Draw(a);
     			Med.Draw(a);
     		};

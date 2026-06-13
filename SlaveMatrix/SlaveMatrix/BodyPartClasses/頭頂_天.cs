@@ -110,13 +110,13 @@ namespace SlaveMatrix
     		ThisType = GetType();
     		Dif dif = new Dif();
     		dif.Tag = "天輪";
-    		dif.Add(new Pars(Sta.肢中["頭部前"][0][2]));
+    		dif.Add(new PartGroup(Sta.肢中["頭部前"][0][2]));
     		Body = new Difs();
     		Body.Tag = dif.Tag;
     		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		X0Y0_天輪上 = pars["天輪上"].ToPar();
-    		X0Y0_天輪下 = pars["天輪下"].ToPar();
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_天輪上 = partGroup["天輪上"].ToPar();
+    		X0Y0_天輪下 = partGroup["天輪下"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;

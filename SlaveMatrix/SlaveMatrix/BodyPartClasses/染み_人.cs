@@ -444,15 +444,15 @@ namespace SlaveMatrix
     	{
     		ThisType = GetType();
     		Body = new Difs(Sta.その他["染み"]);
-    		Pars pars = Body[0][0];
-    		X0Y0_潮1 = pars["潮1"].ToPar();
-    		X0Y0_潮2 = pars["潮2"].ToPar();
-    		X0Y0_潮3 = pars["潮3"].ToPar();
-    		X0Y0_尿1 = pars["尿1"].ToPar();
-    		X0Y0_尿2 = pars["尿2"].ToPar();
-    		X0Y0_汗 = pars["汗"].ToPar();
-    		Pars pars2 = pars["湯気"].ToPars();
-    		Pars pars3 = pars2["湯気左1"].ToPars();
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_潮1 = partGroup["潮1"].ToPar();
+    		X0Y0_潮2 = partGroup["潮2"].ToPar();
+    		X0Y0_潮3 = partGroup["潮3"].ToPar();
+    		X0Y0_尿1 = partGroup["尿1"].ToPar();
+    		X0Y0_尿2 = partGroup["尿2"].ToPar();
+    		X0Y0_汗 = partGroup["汗"].ToPar();
+    		PartGroup pars2 = partGroup["湯気"].ToPars();
+    		PartGroup pars3 = pars2["湯気左1"].ToPars();
     		X0Y0_湯気_湯気左1_湯気1 = pars3["湯気1"].ToPar();
     		X0Y0_湯気_湯気左1_湯気2 = pars3["湯気2"].ToPar();
     		pars3 = pars2["湯気左2"].ToPars();

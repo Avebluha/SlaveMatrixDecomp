@@ -827,10 +827,10 @@ namespace SlaveMatrix
     		Body = new Difs();
     		Body.Tag = dif.Tag;
     		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		X0Y0_面 = pars["面"].ToPar();
-    		Pars pars2 = pars["眼左"].ToPars();
-    		Pars pars3 = pars2["眼1"].ToPars();
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_面 = partGroup["面"].ToPar();
+    		PartGroup pars2 = partGroup["眼左"].ToPars();
+    		PartGroup pars3 = pars2["眼1"].ToPars();
     		X0Y0_眼左_眼1_基 = pars3["基"].ToPar();
     		X0Y0_眼左_眼1_眼 = pars3["眼"].ToPar();
     		X0Y0_眼左_眼1_ハイライト = pars3["ハイライト"].ToPar();
@@ -850,7 +850,7 @@ namespace SlaveMatrix
     		X0Y0_眼左_眼5_基 = pars3["基"].ToPar();
     		X0Y0_眼左_眼5_眼 = pars3["眼"].ToPar();
     		X0Y0_眼左_眼5_ハイライト = pars3["ハイライト"].ToPar();
-    		pars2 = pars["眼右"].ToPars();
+    		pars2 = partGroup["眼右"].ToPars();
     		pars3 = pars2["眼1"].ToPars();
     		X0Y0_眼右_眼1_基 = pars3["基"].ToPar();
     		X0Y0_眼右_眼1_眼 = pars3["眼"].ToPar();
@@ -871,10 +871,10 @@ namespace SlaveMatrix
     		X0Y0_眼右_眼5_基 = pars3["基"].ToPar();
     		X0Y0_眼右_眼5_眼 = pars3["眼"].ToPar();
     		X0Y0_眼右_眼5_ハイライト = pars3["ハイライト"].ToPar();
-    		pars2 = pars["角左"].ToPars();
+    		pars2 = partGroup["角左"].ToPars();
     		X0Y0_角左_角左1 = pars2["角左1"].ToPar();
     		X0Y0_角左_角左2 = pars2["角左2"].ToPar();
-    		pars2 = pars["角右"].ToPars();
+    		pars2 = partGroup["角右"].ToPars();
     		X0Y0_角右_角右1 = pars2["角右1"].ToPar();
     		X0Y0_角右_角右2 = pars2["角右2"].ToPar();
     		Body.SetJoints();

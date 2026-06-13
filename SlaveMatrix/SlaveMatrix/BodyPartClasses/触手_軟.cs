@@ -7283,12 +7283,12 @@ namespace SlaveMatrix
     		ThisType = GetType();
     		Dif dif = new Dif();
     		dif.Tag = "軟体";
-    		dif.Add(new Pars(Sta.肢左["触手"][0][0]));
+    		dif.Add(new PartGroup(Sta.肢左["触手"][0][0]));
     		Body = new Difs();
     		Body.Tag = dif.Tag;
     		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		Pars pars2 = pars["節1"].ToPars();
+    		PartGroup partGroup = Body[0][0];
+    		PartGroup pars2 = partGroup["節1"].ToPars();
     		X0Y0_節1_節 = pars2["節"].ToPar();
     		X0Y0_節1_紋柄1 = pars2["柄1"].ToPar();
     		X0Y0_節1_紋柄2 = pars2["柄2"].ToPar();
@@ -7297,7 +7297,7 @@ namespace SlaveMatrix
     		X0Y0_節1_吸盤2 = pars2["吸盤2"].ToPar();
     		X0Y0_節1_吸盤3 = pars2["吸盤3"].ToPar();
     		X0Y0_節1_吸盤4 = pars2["吸盤4"].ToPar();
-    		pars2 = pars["節2"].ToPars();
+    		pars2 = partGroup["節2"].ToPars();
     		X0Y0_節2_節 = pars2["節"].ToPar();
     		X0Y0_節2_紋柄1 = pars2["柄1"].ToPar();
     		X0Y0_節2_紋柄2 = pars2["柄2"].ToPar();
@@ -7306,7 +7306,7 @@ namespace SlaveMatrix
     		X0Y0_節2_吸盤2 = pars2["吸盤2"].ToPar();
     		X0Y0_節2_吸盤3 = pars2["吸盤3"].ToPar();
     		X0Y0_節2_吸盤4 = pars2["吸盤4"].ToPar();
-    		pars2 = pars["節3"].ToPars();
+    		pars2 = partGroup["節3"].ToPars();
     		X0Y0_節3_節 = pars2["節"].ToPar();
     		X0Y0_節3_紋柄1 = pars2["柄1"].ToPar();
     		X0Y0_節3_紋柄2 = pars2["柄2"].ToPar();
@@ -7315,7 +7315,7 @@ namespace SlaveMatrix
     		X0Y0_節3_吸盤2 = pars2["吸盤2"].ToPar();
     		X0Y0_節3_吸盤3 = pars2["吸盤3"].ToPar();
     		X0Y0_節3_吸盤4 = pars2["吸盤4"].ToPar();
-    		pars2 = pars["節4"].ToPars();
+    		pars2 = partGroup["節4"].ToPars();
     		X0Y0_節4_節 = pars2["節"].ToPar();
     		X0Y0_節4_紋柄1 = pars2["柄1"].ToPar();
     		X0Y0_節4_紋柄2 = pars2["柄2"].ToPar();
@@ -7324,7 +7324,7 @@ namespace SlaveMatrix
     		X0Y0_節4_吸盤2 = pars2["吸盤2"].ToPar();
     		X0Y0_節4_吸盤3 = pars2["吸盤3"].ToPar();
     		X0Y0_節4_吸盤4 = pars2["吸盤4"].ToPar();
-    		pars2 = pars["節5"].ToPars();
+    		pars2 = partGroup["節5"].ToPars();
     		X0Y0_節5_節 = pars2["節"].ToPar();
     		X0Y0_節5_紋柄1 = pars2["柄1"].ToPar();
     		X0Y0_節5_紋柄2 = pars2["柄2"].ToPar();
@@ -7333,7 +7333,7 @@ namespace SlaveMatrix
     		X0Y0_節5_吸盤2 = pars2["吸盤2"].ToPar();
     		X0Y0_節5_吸盤3 = pars2["吸盤3"].ToPar();
     		X0Y0_節5_吸盤4 = pars2["吸盤4"].ToPar();
-    		pars2 = pars["節6"].ToPars();
+    		pars2 = partGroup["節6"].ToPars();
     		X0Y0_節6_節 = pars2["節"].ToPar();
     		X0Y0_節6_紋柄1 = pars2["柄1"].ToPar();
     		X0Y0_節6_紋柄2 = pars2["柄2"].ToPar();
@@ -7342,7 +7342,7 @@ namespace SlaveMatrix
     		X0Y0_節6_吸盤2 = pars2["吸盤2"].ToPar();
     		X0Y0_節6_吸盤3 = pars2["吸盤3"].ToPar();
     		X0Y0_節6_吸盤4 = pars2["吸盤4"].ToPar();
-    		pars2 = pars["節7"].ToPars();
+    		pars2 = partGroup["節7"].ToPars();
     		X0Y0_節7_節 = pars2["節"].ToPar();
     		X0Y0_節7_紋柄1 = pars2["柄1"].ToPar();
     		X0Y0_節7_紋柄2 = pars2["柄2"].ToPar();
@@ -7351,7 +7351,7 @@ namespace SlaveMatrix
     		X0Y0_節7_吸盤2 = pars2["吸盤2"].ToPar();
     		X0Y0_節7_吸盤3 = pars2["吸盤3"].ToPar();
     		X0Y0_節7_吸盤4 = pars2["吸盤4"].ToPar();
-    		pars2 = pars["節8"].ToPars();
+    		pars2 = partGroup["節8"].ToPars();
     		X0Y0_節8_節 = pars2["節"].ToPar();
     		X0Y0_節8_紋柄1 = pars2["柄1"].ToPar();
     		X0Y0_節8_紋柄2 = pars2["柄2"].ToPar();
@@ -7360,14 +7360,14 @@ namespace SlaveMatrix
     		X0Y0_節8_吸盤2 = pars2["吸盤2"].ToPar();
     		X0Y0_節8_吸盤3 = pars2["吸盤3"].ToPar();
     		X0Y0_節8_吸盤4 = pars2["吸盤4"].ToPar();
-    		pars2 = pars["輪1"].ToPars();
+    		pars2 = partGroup["輪1"].ToPars();
     		X0Y0_輪1_革 = pars2["革"].ToPar();
     		X0Y0_輪1_金具1 = pars2["金具1"].ToPar();
     		X0Y0_輪1_金具2 = pars2["金具2"].ToPar();
     		X0Y0_輪1_金具3 = pars2["金具3"].ToPar();
     		X0Y0_輪1_金具左 = pars2["金具左"].ToPar();
     		X0Y0_輪1_金具右 = pars2["金具右"].ToPar();
-    		pars2 = pars["節9"].ToPars();
+    		pars2 = partGroup["節9"].ToPars();
     		X0Y0_節9_節 = pars2["節"].ToPar();
     		X0Y0_節9_紋柄1 = pars2["柄1"].ToPar();
     		X0Y0_節9_紋柄2 = pars2["柄2"].ToPar();
@@ -7376,7 +7376,7 @@ namespace SlaveMatrix
     		X0Y0_節9_吸盤2 = pars2["吸盤2"].ToPar();
     		X0Y0_節9_吸盤3 = pars2["吸盤3"].ToPar();
     		X0Y0_節9_吸盤4 = pars2["吸盤4"].ToPar();
-    		pars2 = pars["節10"].ToPars();
+    		pars2 = partGroup["節10"].ToPars();
     		X0Y0_節10_節 = pars2["節"].ToPar();
     		X0Y0_節10_紋柄1 = pars2["柄1"].ToPar();
     		X0Y0_節10_紋柄2 = pars2["柄2"].ToPar();
@@ -7385,7 +7385,7 @@ namespace SlaveMatrix
     		X0Y0_節10_吸盤2 = pars2["吸盤2"].ToPar();
     		X0Y0_節10_吸盤3 = pars2["吸盤3"].ToPar();
     		X0Y0_節10_吸盤4 = pars2["吸盤4"].ToPar();
-    		pars2 = pars["節11"].ToPars();
+    		pars2 = partGroup["節11"].ToPars();
     		X0Y0_節11_節 = pars2["節"].ToPar();
     		X0Y0_節11_紋柄1 = pars2["柄1"].ToPar();
     		X0Y0_節11_紋柄2 = pars2["柄2"].ToPar();
@@ -7394,7 +7394,7 @@ namespace SlaveMatrix
     		X0Y0_節11_吸盤2 = pars2["吸盤2"].ToPar();
     		X0Y0_節11_吸盤3 = pars2["吸盤3"].ToPar();
     		X0Y0_節11_吸盤4 = pars2["吸盤4"].ToPar();
-    		pars2 = pars["節12"].ToPars();
+    		pars2 = partGroup["節12"].ToPars();
     		X0Y0_節12_節 = pars2["節"].ToPar();
     		X0Y0_節12_紋柄1 = pars2["柄1"].ToPar();
     		X0Y0_節12_紋柄2 = pars2["柄2"].ToPar();
@@ -7403,7 +7403,7 @@ namespace SlaveMatrix
     		X0Y0_節12_吸盤2 = pars2["吸盤2"].ToPar();
     		X0Y0_節12_吸盤3 = pars2["吸盤3"].ToPar();
     		X0Y0_節12_吸盤4 = pars2["吸盤4"].ToPar();
-    		pars2 = pars["節13"].ToPars();
+    		pars2 = partGroup["節13"].ToPars();
     		X0Y0_節13_節 = pars2["節"].ToPar();
     		X0Y0_節13_紋柄1 = pars2["柄1"].ToPar();
     		X0Y0_節13_紋柄2 = pars2["柄2"].ToPar();
@@ -7412,7 +7412,7 @@ namespace SlaveMatrix
     		X0Y0_節13_吸盤2 = pars2["吸盤2"].ToPar();
     		X0Y0_節13_吸盤3 = pars2["吸盤3"].ToPar();
     		X0Y0_節13_吸盤4 = pars2["吸盤4"].ToPar();
-    		pars2 = pars["節14"].ToPars();
+    		pars2 = partGroup["節14"].ToPars();
     		X0Y0_節14_節 = pars2["節"].ToPar();
     		X0Y0_節14_紋柄1 = pars2["柄1"].ToPar();
     		X0Y0_節14_紋柄2 = pars2["柄2"].ToPar();
@@ -7421,7 +7421,7 @@ namespace SlaveMatrix
     		X0Y0_節14_吸盤2 = pars2["吸盤2"].ToPar();
     		X0Y0_節14_吸盤3 = pars2["吸盤3"].ToPar();
     		X0Y0_節14_吸盤4 = pars2["吸盤4"].ToPar();
-    		pars2 = pars["節15"].ToPars();
+    		pars2 = partGroup["節15"].ToPars();
     		X0Y0_節15_節 = pars2["節"].ToPar();
     		X0Y0_節15_紋柄1 = pars2["柄1"].ToPar();
     		X0Y0_節15_紋柄2 = pars2["柄2"].ToPar();
@@ -7430,7 +7430,7 @@ namespace SlaveMatrix
     		X0Y0_節15_吸盤2 = pars2["吸盤2"].ToPar();
     		X0Y0_節15_吸盤3 = pars2["吸盤3"].ToPar();
     		X0Y0_節15_吸盤4 = pars2["吸盤4"].ToPar();
-    		pars2 = pars["節16"].ToPars();
+    		pars2 = partGroup["節16"].ToPars();
     		X0Y0_節16_節 = pars2["節"].ToPar();
     		X0Y0_節16_紋柄1 = pars2["柄1"].ToPar();
     		X0Y0_節16_紋柄2 = pars2["柄2"].ToPar();
@@ -7439,7 +7439,7 @@ namespace SlaveMatrix
     		X0Y0_節16_吸盤2 = pars2["吸盤2"].ToPar();
     		X0Y0_節16_吸盤3 = pars2["吸盤3"].ToPar();
     		X0Y0_節16_吸盤4 = pars2["吸盤4"].ToPar();
-    		pars2 = pars["節17"].ToPars();
+    		pars2 = partGroup["節17"].ToPars();
     		X0Y0_節17_節 = pars2["節"].ToPar();
     		X0Y0_節17_紋柄1 = pars2["柄1"].ToPar();
     		X0Y0_節17_紋柄2 = pars2["柄2"].ToPar();
@@ -7448,7 +7448,7 @@ namespace SlaveMatrix
     		X0Y0_節17_吸盤2 = pars2["吸盤2"].ToPar();
     		X0Y0_節17_吸盤3 = pars2["吸盤3"].ToPar();
     		X0Y0_節17_吸盤4 = pars2["吸盤4"].ToPar();
-    		pars2 = pars["節18"].ToPars();
+    		pars2 = partGroup["節18"].ToPars();
     		X0Y0_節18_節 = pars2["節"].ToPar();
     		X0Y0_節18_紋柄1 = pars2["柄1"].ToPar();
     		X0Y0_節18_紋柄2 = pars2["柄2"].ToPar();
@@ -7457,7 +7457,7 @@ namespace SlaveMatrix
     		X0Y0_節18_吸盤2 = pars2["吸盤2"].ToPar();
     		X0Y0_節18_吸盤3 = pars2["吸盤3"].ToPar();
     		X0Y0_節18_吸盤4 = pars2["吸盤4"].ToPar();
-    		pars2 = pars["節19"].ToPars();
+    		pars2 = partGroup["節19"].ToPars();
     		X0Y0_節19_節 = pars2["節"].ToPar();
     		X0Y0_節19_紋柄1 = pars2["柄1"].ToPar();
     		X0Y0_節19_紋柄2 = pars2["柄2"].ToPar();
@@ -7466,14 +7466,14 @@ namespace SlaveMatrix
     		X0Y0_節19_吸盤2 = pars2["吸盤2"].ToPar();
     		X0Y0_節19_吸盤3 = pars2["吸盤3"].ToPar();
     		X0Y0_節19_吸盤4 = pars2["吸盤4"].ToPar();
-    		pars2 = pars["輪2"].ToPars();
+    		pars2 = partGroup["輪2"].ToPars();
     		X0Y0_輪2_革 = pars2["革"].ToPar();
     		X0Y0_輪2_金具1 = pars2["金具1"].ToPar();
     		X0Y0_輪2_金具2 = pars2["金具2"].ToPar();
     		X0Y0_輪2_金具3 = pars2["金具3"].ToPar();
     		X0Y0_輪2_金具左 = pars2["金具左"].ToPar();
     		X0Y0_輪2_金具右 = pars2["金具右"].ToPar();
-    		pars2 = pars["節20"].ToPars();
+    		pars2 = partGroup["節20"].ToPars();
     		X0Y0_節20_節 = pars2["節"].ToPar();
     		X0Y0_節20_紋柄1 = pars2["柄1"].ToPar();
     		X0Y0_節20_紋柄2 = pars2["柄2"].ToPar();
@@ -7482,7 +7482,7 @@ namespace SlaveMatrix
     		X0Y0_節20_吸盤2 = pars2["吸盤2"].ToPar();
     		X0Y0_節20_吸盤3 = pars2["吸盤3"].ToPar();
     		X0Y0_節20_吸盤4 = pars2["吸盤4"].ToPar();
-    		pars2 = pars["節21"].ToPars();
+    		pars2 = partGroup["節21"].ToPars();
     		X0Y0_節21_節 = pars2["節"].ToPar();
     		X0Y0_節21_紋柄1 = pars2["柄1"].ToPar();
     		X0Y0_節21_紋柄2 = pars2["柄2"].ToPar();
@@ -7491,7 +7491,7 @@ namespace SlaveMatrix
     		X0Y0_節21_吸盤2 = pars2["吸盤2"].ToPar();
     		X0Y0_節21_吸盤3 = pars2["吸盤3"].ToPar();
     		X0Y0_節21_吸盤4 = pars2["吸盤4"].ToPar();
-    		pars2 = pars["節22"].ToPars();
+    		pars2 = partGroup["節22"].ToPars();
     		X0Y0_節22_節 = pars2["節"].ToPar();
     		X0Y0_節22_紋柄1 = pars2["柄1"].ToPar();
     		X0Y0_節22_紋柄2 = pars2["柄2"].ToPar();
@@ -7500,7 +7500,7 @@ namespace SlaveMatrix
     		X0Y0_節22_吸盤2 = pars2["吸盤2"].ToPar();
     		X0Y0_節22_吸盤3 = pars2["吸盤3"].ToPar();
     		X0Y0_節22_吸盤4 = pars2["吸盤4"].ToPar();
-    		pars2 = pars["節23"].ToPars();
+    		pars2 = partGroup["節23"].ToPars();
     		X0Y0_節23_節 = pars2["節"].ToPar();
     		X0Y0_節23_紋柄1 = pars2["柄1"].ToPar();
     		X0Y0_節23_紋柄2 = pars2["柄2"].ToPar();
@@ -7509,7 +7509,7 @@ namespace SlaveMatrix
     		X0Y0_節23_吸盤2 = pars2["吸盤2"].ToPar();
     		X0Y0_節23_吸盤3 = pars2["吸盤3"].ToPar();
     		X0Y0_節23_吸盤4 = pars2["吸盤4"].ToPar();
-    		pars2 = pars["節24"].ToPars();
+    		pars2 = partGroup["節24"].ToPars();
     		X0Y0_節24_節 = pars2["節"].ToPar();
     		X0Y0_節24_紋柄1 = pars2["柄1"].ToPar();
     		X0Y0_節24_紋柄2 = pars2["柄2"].ToPar();
@@ -7518,7 +7518,7 @@ namespace SlaveMatrix
     		X0Y0_節24_吸盤2 = pars2["吸盤2"].ToPar();
     		X0Y0_節24_吸盤3 = pars2["吸盤3"].ToPar();
     		X0Y0_節24_吸盤4 = pars2["吸盤4"].ToPar();
-    		pars2 = pars["節25"].ToPars();
+    		pars2 = partGroup["節25"].ToPars();
     		X0Y0_節25_節 = pars2["節"].ToPar();
     		X0Y0_節25_紋柄1 = pars2["柄1"].ToPar();
     		X0Y0_節25_紋柄2 = pars2["柄2"].ToPar();
@@ -7527,7 +7527,7 @@ namespace SlaveMatrix
     		X0Y0_節25_吸盤2 = pars2["吸盤2"].ToPar();
     		X0Y0_節25_吸盤3 = pars2["吸盤3"].ToPar();
     		X0Y0_節25_吸盤4 = pars2["吸盤4"].ToPar();
-    		pars2 = pars["節26"].ToPars();
+    		pars2 = partGroup["節26"].ToPars();
     		X0Y0_節26_節 = pars2["節"].ToPar();
     		X0Y0_節26_紋柄1 = pars2["柄1"].ToPar();
     		X0Y0_節26_紋柄2 = pars2["柄2"].ToPar();
@@ -7536,7 +7536,7 @@ namespace SlaveMatrix
     		X0Y0_節26_吸盤2 = pars2["吸盤2"].ToPar();
     		X0Y0_節26_吸盤3 = pars2["吸盤3"].ToPar();
     		X0Y0_節26_吸盤4 = pars2["吸盤4"].ToPar();
-    		pars2 = pars["節27"].ToPars();
+    		pars2 = partGroup["節27"].ToPars();
     		X0Y0_節27_節 = pars2["節"].ToPar();
     		X0Y0_節27_紋柄1 = pars2["柄1"].ToPar();
     		X0Y0_節27_紋柄2 = pars2["柄2"].ToPar();
@@ -7545,7 +7545,7 @@ namespace SlaveMatrix
     		X0Y0_節27_吸盤2 = pars2["吸盤2"].ToPar();
     		X0Y0_節27_吸盤3 = pars2["吸盤3"].ToPar();
     		X0Y0_節27_吸盤4 = pars2["吸盤4"].ToPar();
-    		pars2 = pars["節28"].ToPars();
+    		pars2 = partGroup["節28"].ToPars();
     		X0Y0_節28_節 = pars2["節"].ToPar();
     		X0Y0_節28_紋柄1 = pars2["柄1"].ToPar();
     		X0Y0_節28_紋柄2 = pars2["柄2"].ToPar();
@@ -7554,7 +7554,7 @@ namespace SlaveMatrix
     		X0Y0_節28_吸盤2 = pars2["吸盤2"].ToPar();
     		X0Y0_節28_吸盤3 = pars2["吸盤3"].ToPar();
     		X0Y0_節28_吸盤4 = pars2["吸盤4"].ToPar();
-    		pars2 = pars["節29"].ToPars();
+    		pars2 = partGroup["節29"].ToPars();
     		X0Y0_節29_節 = pars2["節"].ToPar();
     		X0Y0_節29_紋柄1 = pars2["柄1"].ToPar();
     		X0Y0_節29_紋柄2 = pars2["柄2"].ToPar();
@@ -7563,7 +7563,7 @@ namespace SlaveMatrix
     		X0Y0_節29_吸盤2 = pars2["吸盤2"].ToPar();
     		X0Y0_節29_吸盤3 = pars2["吸盤3"].ToPar();
     		X0Y0_節29_吸盤4 = pars2["吸盤4"].ToPar();
-    		pars2 = pars["節30"].ToPars();
+    		pars2 = partGroup["節30"].ToPars();
     		X0Y0_節30_節 = pars2["節"].ToPar();
     		X0Y0_節30_紋柄1 = pars2["柄1"].ToPar();
     		X0Y0_節30_紋柄2 = pars2["柄2"].ToPar();
@@ -7572,7 +7572,7 @@ namespace SlaveMatrix
     		X0Y0_節30_吸盤2 = pars2["吸盤2"].ToPar();
     		X0Y0_節30_吸盤3 = pars2["吸盤3"].ToPar();
     		X0Y0_節30_吸盤4 = pars2["吸盤4"].ToPar();
-    		pars2 = pars["節31"].ToPars();
+    		pars2 = partGroup["節31"].ToPars();
     		X0Y0_節31_節 = pars2["節"].ToPar();
     		X0Y0_節31_紋柄1 = pars2["柄1"].ToPar();
     		X0Y0_節31_紋柄2 = pars2["柄2"].ToPar();
@@ -7581,7 +7581,7 @@ namespace SlaveMatrix
     		X0Y0_節31_吸盤2 = pars2["吸盤2"].ToPar();
     		X0Y0_節31_吸盤3 = pars2["吸盤3"].ToPar();
     		X0Y0_節31_吸盤4 = pars2["吸盤4"].ToPar();
-    		pars2 = pars["節32"].ToPars();
+    		pars2 = partGroup["節32"].ToPars();
     		X0Y0_節32_節 = pars2["節"].ToPar();
     		X0Y0_節32_紋柄1 = pars2["柄1"].ToPar();
     		X0Y0_節32_紋柄2 = pars2["柄2"].ToPar();
@@ -7590,7 +7590,7 @@ namespace SlaveMatrix
     		X0Y0_節32_吸盤2 = pars2["吸盤2"].ToPar();
     		X0Y0_節32_吸盤3 = pars2["吸盤3"].ToPar();
     		X0Y0_節32_吸盤4 = pars2["吸盤4"].ToPar();
-    		pars2 = pars["節33"].ToPars();
+    		pars2 = partGroup["節33"].ToPars();
     		X0Y0_節33_節 = pars2["節"].ToPar();
     		X0Y0_節33_紋柄1 = pars2["柄1"].ToPar();
     		X0Y0_節33_紋柄2 = pars2["柄2"].ToPar();
@@ -7599,7 +7599,7 @@ namespace SlaveMatrix
     		X0Y0_節33_吸盤2 = pars2["吸盤2"].ToPar();
     		X0Y0_節33_吸盤3 = pars2["吸盤3"].ToPar();
     		X0Y0_節33_吸盤4 = pars2["吸盤4"].ToPar();
-    		pars2 = pars["節34"].ToPars();
+    		pars2 = partGroup["節34"].ToPars();
     		X0Y0_節34_節 = pars2["節"].ToPar();
     		X0Y0_節34_紋柄1 = pars2["柄1"].ToPar();
     		X0Y0_節34_紋柄2 = pars2["柄2"].ToPar();
@@ -7608,7 +7608,7 @@ namespace SlaveMatrix
     		X0Y0_節34_吸盤2 = pars2["吸盤2"].ToPar();
     		X0Y0_節34_吸盤3 = pars2["吸盤3"].ToPar();
     		X0Y0_節34_吸盤4 = pars2["吸盤4"].ToPar();
-    		pars2 = pars["節35"].ToPars();
+    		pars2 = partGroup["節35"].ToPars();
     		X0Y0_節35_節 = pars2["節"].ToPar();
     		X0Y0_節35_紋柄1 = pars2["柄1"].ToPar();
     		X0Y0_節35_紋柄2 = pars2["柄2"].ToPar();
@@ -7617,7 +7617,7 @@ namespace SlaveMatrix
     		X0Y0_節35_吸盤2 = pars2["吸盤2"].ToPar();
     		X0Y0_節35_吸盤3 = pars2["吸盤3"].ToPar();
     		X0Y0_節35_吸盤4 = pars2["吸盤4"].ToPar();
-    		pars2 = pars["節36"].ToPars();
+    		pars2 = partGroup["節36"].ToPars();
     		X0Y0_節36_節 = pars2["節"].ToPar();
     		X0Y0_節36_紋柄1 = pars2["柄1"].ToPar();
     		X0Y0_節36_紋柄2 = pars2["柄2"].ToPar();
@@ -7626,7 +7626,7 @@ namespace SlaveMatrix
     		X0Y0_節36_吸盤2 = pars2["吸盤2"].ToPar();
     		X0Y0_節36_吸盤3 = pars2["吸盤3"].ToPar();
     		X0Y0_節36_吸盤4 = pars2["吸盤4"].ToPar();
-    		pars2 = pars["節37"].ToPars();
+    		pars2 = partGroup["節37"].ToPars();
     		X0Y0_節37_節 = pars2["節"].ToPar();
     		X0Y0_節37_紋柄1 = pars2["柄1"].ToPar();
     		X0Y0_節37_紋柄2 = pars2["柄2"].ToPar();
@@ -7635,7 +7635,7 @@ namespace SlaveMatrix
     		X0Y0_節37_吸盤2 = pars2["吸盤2"].ToPar();
     		X0Y0_節37_吸盤3 = pars2["吸盤3"].ToPar();
     		X0Y0_節37_吸盤4 = pars2["吸盤4"].ToPar();
-    		pars2 = pars["節38"].ToPars();
+    		pars2 = partGroup["節38"].ToPars();
     		X0Y0_節38_節 = pars2["節"].ToPar();
     		X0Y0_節38_紋柄1 = pars2["柄1"].ToPar();
     		X0Y0_節38_紋柄2 = pars2["柄2"].ToPar();
@@ -7644,7 +7644,7 @@ namespace SlaveMatrix
     		X0Y0_節38_吸盤2 = pars2["吸盤2"].ToPar();
     		X0Y0_節38_吸盤3 = pars2["吸盤3"].ToPar();
     		X0Y0_節38_吸盤4 = pars2["吸盤4"].ToPar();
-    		pars2 = pars["節39"].ToPars();
+    		pars2 = partGroup["節39"].ToPars();
     		X0Y0_節39_節 = pars2["節"].ToPar();
     		X0Y0_節39_紋柄1 = pars2["柄1"].ToPar();
     		X0Y0_節39_紋柄2 = pars2["柄2"].ToPar();
@@ -7653,7 +7653,7 @@ namespace SlaveMatrix
     		X0Y0_節39_吸盤2 = pars2["吸盤2"].ToPar();
     		X0Y0_節39_吸盤3 = pars2["吸盤3"].ToPar();
     		X0Y0_節39_吸盤4 = pars2["吸盤4"].ToPar();
-    		pars2 = pars["節40"].ToPars();
+    		pars2 = partGroup["節40"].ToPars();
     		X0Y0_節40_節 = pars2["節"].ToPar();
     		X0Y0_節40_紋柄1 = pars2["柄1"].ToPar();
     		X0Y0_節40_紋柄2 = pars2["柄2"].ToPar();
@@ -7662,7 +7662,7 @@ namespace SlaveMatrix
     		X0Y0_節40_吸盤2 = pars2["吸盤2"].ToPar();
     		X0Y0_節40_吸盤3 = pars2["吸盤3"].ToPar();
     		X0Y0_節40_吸盤4 = pars2["吸盤4"].ToPar();
-    		pars2 = pars["節41"].ToPars();
+    		pars2 = partGroup["節41"].ToPars();
     		X0Y0_節41_節 = pars2["節"].ToPar();
     		X0Y0_節41_紋柄1 = pars2["柄1"].ToPar();
     		X0Y0_節41_紋柄2 = pars2["柄2"].ToPar();

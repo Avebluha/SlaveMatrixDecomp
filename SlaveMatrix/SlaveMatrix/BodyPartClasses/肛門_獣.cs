@@ -135,10 +135,10 @@ namespace SlaveMatrix
     		肛門_獣 肛門_獣2 = this;
     		ThisType = GetType();
     		Body = new Difs(Sta.半身["四足肛門"]);
-    		Pars pars = Body[0][0];
-    		X0Y0_肛門3 = pars["肛門3"].ToPar();
-    		X0Y0_肛門2 = pars["肛門2"].ToPar();
-    		X0Y0_肛門1 = pars["肛門1"].ToPar();
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_肛門3 = partGroup["肛門3"].ToPar();
+    		X0Y0_肛門2 = partGroup["肛門2"].ToPar();
+    		X0Y0_肛門1 = partGroup["肛門1"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;

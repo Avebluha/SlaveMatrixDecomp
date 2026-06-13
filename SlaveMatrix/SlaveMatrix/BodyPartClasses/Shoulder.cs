@@ -312,13 +312,13 @@ namespace SlaveMatrix
     		Shoulder Shoulder2 = this;
     		ThisType = GetType();
     		Body = new Difs(Sta.肩左["Shoulder"]);
-    		Pars pars = Body[0][0];
-    		Pars pars2 = pars["脇"].ToPars();
+    		PartGroup partGroup = Body[0][0];
+    		PartGroup pars2 = partGroup["脇"].ToPars();
     		X0Y0_脇_脇 = pars2["脇"].ToPar();
     		X0Y0_脇_筋肉 = pars2["筋肉"].ToPar();
-    		pars2 = pars["肩"].ToPars();
+    		pars2 = partGroup["肩"].ToPars();
     		X0Y0_Shoulder_Shoulder = pars2["肩"].ToPar();
-    		Pars pars3 = pars2["虫性"].ToPars();
+    		PartGroup pars3 = pars2["虫性"].ToPars();
     		X0Y0_Shoulder_虫性_甲殻1 = pars3["甲殻1"].ToPar();
     		X0Y0_Shoulder_虫性_甲殻2 = pars3["甲殻2"].ToPar();
     		X0Y0_Shoulder_傷I1 = pars2["傷I1"].ToPar();

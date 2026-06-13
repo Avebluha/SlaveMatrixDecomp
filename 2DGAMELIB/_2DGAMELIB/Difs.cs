@@ -17,9 +17,9 @@ namespace _2DGAMELIB
 
     	private List<Dif> difs = new List<Dif>();
 
-    	public Dictionary<Pars, Joints> pj;
+    	public Dictionary<PartGroup, Joints> pj;
 
-    	public Dictionary<Pars, ShapePart> pr;
+    	public Dictionary<PartGroup, ShapePart> pr;
 
     	public int CountX => difs.Count;
 
@@ -79,7 +79,7 @@ namespace _2DGAMELIB
     		}
     	}
 
-    	public Pars Current => difs[IndexX][IndexY];
+    	public PartGroup Current => difs[IndexX][IndexY];
 
     	public double PositionSize
     	{
@@ -218,7 +218,7 @@ namespace _2DGAMELIB
     	{
     		get
     		{
-    			Pars current = Current;
+    			PartGroup current = Current;
     			if (pr.ContainsKey(current))
     			{
     				return pr[current];
@@ -240,11 +240,11 @@ namespace _2DGAMELIB
     		}
     	}
 
-    	public IEnumerable<Pars> EnumAllPars()
+    	public IEnumerable<PartGroup> EnumAllPars()
     	{
     		foreach (Dif dif in difs)
     		{
-    			foreach (Pars item in dif.Parss)
+    			foreach (PartGroup item in dif.Parss)
     			{
     				yield return item;
     			}
@@ -294,7 +294,7 @@ namespace _2DGAMELIB
     		AreM.Draw(Current);
     	}
 
-    	private ShapePart GetJoinRoot(Pars ps)
+    	private ShapePart GetJoinRoot(PartGroup ps)
     	{
     		ShapePart[] array = ps.EnumAllPar().ToArray();
     		if (array.Length <= 1)
@@ -320,9 +320,9 @@ namespace _2DGAMELIB
 
     	public void SetJoints()
     	{
-    		pj = new Dictionary<Pars, Joints>();
-    		pr = new Dictionary<Pars, ShapePart>();
-    		foreach (Pars item in EnumAllPars())
+    		pj = new Dictionary<PartGroup, Joints>();
+    		pr = new Dictionary<PartGroup, ShapePart>();
+    		foreach (PartGroup item in EnumAllPars())
     		{
     			ShapePart joinRoot = GetJoinRoot(item);
     			if (joinRoot != null)
@@ -351,7 +351,7 @@ namespace _2DGAMELIB
     		}
     	}
 
-    	public void JoinPA(Pars ps)
+    	public void JoinPA(PartGroup ps)
     	{
     		if (pj.ContainsKey(ps))
     		{
@@ -361,7 +361,7 @@ namespace _2DGAMELIB
 
     	public ShapePart GetHitPar_(Color HitColor)
     	{
-    		return difs.FirstOrDefault((Dif d) => d.IsHit(ref HitColor)).Parss.FirstOrDefault((Pars ps) => ps.IsHit(ref HitColor)).EnumAllPar().FirstOrDefault((ShapePart e) => e.HitColor == HitColor);
+    		return difs.FirstOrDefault((Dif d) => d.IsHit(ref HitColor)).Parss.FirstOrDefault((PartGroup ps) => ps.IsHit(ref HitColor)).EnumAllPar().FirstOrDefault((ShapePart e) => e.HitColor == HitColor);
     	}
 
     	public bool IsHit(ref Color HitColor)

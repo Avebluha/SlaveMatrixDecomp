@@ -539,11 +539,11 @@ namespace SlaveMatrix
     		Body = new Difs();
     		Body.Tag = dif.Tag;
     		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		Pars pars2 = pars["布"].ToPars();
-    		Pars pars3 = pars2["布左"].ToPars();
+    		PartGroup partGroup = Body[0][0];
+    		PartGroup pars2 = partGroup["布"].ToPars();
+    		PartGroup pars3 = pars2["布左"].ToPars();
     		X0Y0_布_布左_布 = pars3["布"].ToPar();
-    		Pars pars4 = pars3["皺"].ToPars();
+    		PartGroup pars4 = pars3["皺"].ToPars();
     		X0Y0_布_布左_皺_皺1 = pars4["皺1"].ToPar();
     		X0Y0_布_布左_皺_皺2 = pars4["皺2"].ToPar();
     		pars4 = pars3["縁"].ToPars();
@@ -558,10 +558,10 @@ namespace SlaveMatrix
     		X0Y0_布_布右_縁_縁1 = pars4["縁1"].ToPar();
     		X0Y0_布_布右_縁_縁2 = pars4["縁2"].ToPar();
     		X0Y0_布_布 = pars2["布"].ToPar();
-    		pars2 = pars["皺"].ToPars();
+    		pars2 = partGroup["皺"].ToPars();
     		X0Y0_皺_皺1 = pars2["皺1"].ToPar();
     		X0Y0_皺_皺2 = pars2["皺2"].ToPar();
-    		pars2 = pars["縁"].ToPars();
+    		pars2 = partGroup["縁"].ToPars();
     		X0Y0_縁_縁1 = pars2["縁1"].ToPar();
     		X0Y0_縁_縁2 = pars2["縁2"].ToPar();
     		Body.SetJoints();

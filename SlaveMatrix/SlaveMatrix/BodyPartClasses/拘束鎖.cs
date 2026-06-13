@@ -256,16 +256,16 @@ namespace SlaveMatrix
     	{
     		ThisType = GetType();
     		Body = new Difs(Sta.その他["拘束鎖"]);
-    		Pars pars = Body[0][0];
-    		X0Y0_鎖2 = pars["鎖2"].ToPar();
-    		X0Y0_鎖1 = pars["鎖1"].ToPar();
-    		X0Y0_鎖4 = pars["鎖4"].ToPar();
-    		X0Y0_鎖3 = pars["鎖3"].ToPar();
-    		X0Y0_鎖6 = pars["鎖6"].ToPar();
-    		X0Y0_鎖5 = pars["鎖5"].ToPar();
-    		X0Y0_鎖8 = pars["鎖8"].ToPar();
-    		X0Y0_鎖7 = pars["鎖7"].ToPar();
-    		X0Y0_鎖9 = pars["鎖9"].ToPar();
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_鎖2 = partGroup["鎖2"].ToPar();
+    		X0Y0_鎖1 = partGroup["鎖1"].ToPar();
+    		X0Y0_鎖4 = partGroup["鎖4"].ToPar();
+    		X0Y0_鎖3 = partGroup["鎖3"].ToPar();
+    		X0Y0_鎖6 = partGroup["鎖6"].ToPar();
+    		X0Y0_鎖5 = partGroup["鎖5"].ToPar();
+    		X0Y0_鎖8 = partGroup["鎖8"].ToPar();
+    		X0Y0_鎖7 = partGroup["鎖7"].ToPar();
+    		X0Y0_鎖9 = partGroup["鎖9"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		if (Xasix)

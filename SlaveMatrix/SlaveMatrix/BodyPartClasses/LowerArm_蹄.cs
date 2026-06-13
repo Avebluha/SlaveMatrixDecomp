@@ -150,9 +150,9 @@ namespace SlaveMatrix
     		Body = new Difs();
     		Body.Tag = dif.Tag;
     		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		X0Y0_LowerArm = pars["下腕"].ToPar();
-    		Pars pars2 = pars["筋肉"].ToPars();
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_LowerArm = partGroup["下腕"].ToPar();
+    		PartGroup pars2 = partGroup["筋肉"].ToPars();
     		X0Y0_筋肉_筋肉下 = pars2["筋肉下"].ToPar();
     		X0Y0_筋肉_筋肉上 = pars2["筋肉上"].ToPar();
     		Xasix = false;

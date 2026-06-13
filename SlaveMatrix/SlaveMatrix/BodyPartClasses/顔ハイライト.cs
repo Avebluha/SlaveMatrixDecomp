@@ -108,9 +108,9 @@ namespace SlaveMatrix
     	{
     		ThisType = GetType();
     		Body = new Difs(Sta.胴体["顔ハイライト左"]);
-    		Pars pars = Body[0][0];
-    		X0Y0_ハイライト1 = pars["ハイライト1"].ToPar();
-    		X0Y0_ハイライト2 = pars["ハイライト2"].ToPar();
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_ハイライト1 = partGroup["ハイライト1"].ToPar();
+    		X0Y0_ハイライト2 = partGroup["ハイライト2"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;

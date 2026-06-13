@@ -213,14 +213,14 @@ namespace SlaveMatrix
     	{
     		ThisType = GetType();
     		Body = new Difs(Sta.カーソル["羽根箒"]);
-    		Pars pars = Body[0][0];
-    		X0Y0_羽根1 = pars["羽根1"].ToPar();
-    		X0Y0_羽根2 = pars["羽根2"].ToPar();
-    		X0Y0_羽根3 = pars["羽根3"].ToPar();
-    		X0Y0_羽根4 = pars["羽根4"].ToPar();
-    		X0Y0_羽根5 = pars["羽根5"].ToPar();
-    		X0Y0_羽根 = pars["羽根"].ToPar();
-    		X0Y0_柄 = pars["柄"].ToPar();
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_羽根1 = partGroup["羽根1"].ToPar();
+    		X0Y0_羽根2 = partGroup["羽根2"].ToPar();
+    		X0Y0_羽根3 = partGroup["羽根3"].ToPar();
+    		X0Y0_羽根4 = partGroup["羽根4"].ToPar();
+    		X0Y0_羽根5 = partGroup["羽根5"].ToPar();
+    		X0Y0_羽根 = partGroup["羽根"].ToPar();
+    		X0Y0_柄 = partGroup["柄"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;

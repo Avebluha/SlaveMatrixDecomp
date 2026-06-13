@@ -181,10 +181,10 @@ namespace SlaveMatrix
     	{
     		ThisType = GetType();
     		Body = new Difs(Sta.胴体["下着乳首左"]);
-    		Pars pars = Body[0][0];
-    		X0Y0_乳首 = pars["乳首"].ToPar();
-    		X0Y0_染み2 = pars["染み2"].ToPar();
-    		X0Y0_染み1 = pars["染み1"].ToPar();
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_乳首 = partGroup["乳首"].ToPar();
+    		X0Y0_染み2 = partGroup["染み2"].ToPar();
+    		X0Y0_染み1 = partGroup["染み1"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;

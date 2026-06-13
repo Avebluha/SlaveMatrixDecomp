@@ -460,12 +460,12 @@ namespace SlaveMatrix
     		Body = new Difs();
     		Body.Tag = dif.Tag;
     		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		X0Y0_LowerArm = pars["下腕"].ToPar();
-    		Pars pars2 = pars["筋肉"].ToPars();
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_LowerArm = partGroup["下腕"].ToPar();
+    		PartGroup pars2 = partGroup["筋肉"].ToPars();
     		X0Y0_筋肉_筋肉下 = pars2["筋肉下"].ToPar();
     		X0Y0_筋肉_筋肉上 = pars2["筋肉上"].ToPar();
-    		pars2 = pars["鱗"].ToPars();
+    		pars2 = partGroup["鱗"].ToPars();
     		X0Y0_竜性_鱗1 = pars2["鱗1"].ToPar();
     		X0Y0_竜性_鱗2 = pars2["鱗2"].ToPar();
     		X0Y0_竜性_鱗3 = pars2["鱗3"].ToPar();
@@ -473,7 +473,7 @@ namespace SlaveMatrix
     		X0Y0_竜性_鱗5 = pars2["鱗5"].ToPar();
     		X0Y0_竜性_鱗6 = pars2["鱗6"].ToPar();
     		X0Y0_竜性_鱗7 = pars2["鱗7"].ToPar();
-    		pars2 = pars["腕輪"].ToPars();
+    		pars2 = partGroup["腕輪"].ToPars();
     		X0Y0_腕輪_革 = pars2["革"].ToPar();
     		X0Y0_腕輪_金具1 = pars2["金具1"].ToPar();
     		X0Y0_腕輪_金具2 = pars2["金具2"].ToPar();

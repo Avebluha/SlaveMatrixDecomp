@@ -1495,25 +1495,25 @@ namespace SlaveMatrix
     	public 花_百(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 花_百D e)
     	{
     		ThisType = GetType();
-    		Pars pars = new Pars();
-    		pars.Tag = "ユリ";
-    		Pars pars2 = Sta.肢左["植"][0][0];
-    		pars.Add("ユリ", new Pars(pars2["花"].ToPars()["ユリ"].ToPars()));
-    		pars.Add("萼", new Pars(pars2["萼"].ToPars()));
+    		PartGroup partGroup = new PartGroup();
+    		partGroup.Tag = "ユリ";
+    		PartGroup pars2 = Sta.肢左["植"][0][0];
+    		partGroup.Add("ユリ", new PartGroup(pars2["花"].ToPars()["ユリ"].ToPars()));
+    		partGroup.Add("萼", new PartGroup(pars2["萼"].ToPars()));
     		Dif dif = new Dif();
     		dif.Tag = "花";
-    		dif.Add(new Pars(pars));
+    		dif.Add(new PartGroup(partGroup));
     		Body = new Difs();
     		Body.Tag = dif.Tag;
     		Body.Add(dif);
-    		Pars pars3 = Body[0][0];
-    		Pars pars4 = pars3["ユリ"].ToPars();
-    		Pars pars5 = pars4["通常"].ToPars();
+    		PartGroup pars3 = Body[0][0];
+    		PartGroup pars4 = pars3["ユリ"].ToPars();
+    		PartGroup pars5 = pars4["通常"].ToPars();
     		X0Y0_花_ユリ_通常_萼2 = pars5["萼2"].ToPar();
     		X0Y0_花_ユリ_通常_萼3 = pars5["萼3"].ToPar();
     		X0Y0_花_ユリ_通常_花弁1 = pars5["花弁1"].ToPar();
-    		Pars pars6 = pars5["蕊"].ToPars();
-    		Pars pars7 = pars6["雄蕊中後"].ToPars();
+    		PartGroup pars6 = pars5["蕊"].ToPars();
+    		PartGroup pars7 = pars6["雄蕊中後"].ToPars();
     		X0Y0_花_ユリ_通常_蕊_雄蕊中後_葯 = pars7["葯"].ToPar();
     		X0Y0_花_ユリ_通常_蕊_雄蕊中後_雄蕊 = pars7["雄蕊"].ToPar();
     		pars7 = pars6["雌蕊"].ToPars();
@@ -1570,7 +1570,7 @@ namespace SlaveMatrix
     		pars6 = pars5["萼1"].ToPars();
     		X0Y0_花_ユリ_欠損_萼1_萼2 = pars6["萼2"].ToPar();
     		X0Y0_花_ユリ_欠損_萼1_萼1 = pars6["萼1"].ToPar();
-    		Pars pars8 = pars3["萼"].ToPars();
+    		PartGroup pars8 = pars3["萼"].ToPars();
     		pars5 = pars8["通常"].ToPars();
     		X0Y0_萼_通常_萼 = pars5["萼"].ToPar();
     		pars5 = pars8["欠損"].ToPars();

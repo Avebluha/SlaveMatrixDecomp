@@ -517,18 +517,18 @@ namespace SlaveMatrix
     	{
     		長物_蟲 長物_蟲2 = this;
     		ThisType = GetType();
-    		Pars pars = new Pars();
-    		pars.Tag = "蟲";
-    		pars.Add(new Pars(Sta.半身["長物"][0][3]["胴1"].ToPars()));
-    		pars.Add(new Pars(Sta.半身["長物"][0][3]["輪1"].ToPars()));
+    		PartGroup partGroup = new PartGroup();
+    		partGroup.Tag = "蟲";
+    		partGroup.Add(new PartGroup(Sta.半身["長物"][0][3]["胴1"].ToPars()));
+    		partGroup.Add(new PartGroup(Sta.半身["長物"][0][3]["輪1"].ToPars()));
     		Dif dif = new Dif();
-    		dif.Tag = pars.Tag;
-    		dif.Add(pars);
+    		dif.Tag = partGroup.Tag;
+    		dif.Add(partGroup);
     		Body = new Difs();
     		Body.Tag = dif.Tag;
     		Body.Add(dif);
-    		Pars pars2 = Body[0][0];
-    		Pars pars3 = pars2["胴1"].ToPars();
+    		PartGroup pars2 = Body[0][0];
+    		PartGroup pars3 = pars2["胴1"].ToPars();
     		X0Y0_Torso1_背板 = pars3["背板"].ToPar();
     		X0Y0_Torso1_胸板 = pars3["胸板"].ToPar();
     		X0Y0_Torso1_Torso = pars3["胴"].ToPar();
@@ -536,7 +536,7 @@ namespace SlaveMatrix
     		X0Y0_Torso1_瘤左1 = pars3["瘤左1"].ToPar();
     		X0Y0_Torso1_瘤右2 = pars3["瘤右2"].ToPar();
     		X0Y0_Torso1_瘤右1 = pars3["瘤右1"].ToPar();
-    		Pars pars4 = pars3["胴0"].ToPars();
+    		PartGroup pars4 = pars3["胴0"].ToPars();
     		X0Y0_Torso1_Torso0_背板 = pars4["背板"].ToPar();
     		X0Y0_Torso1_Torso0_胸板 = pars4["胸板"].ToPar();
     		X0Y0_Torso1_Torso0_Torso = pars4["胴"].ToPar();

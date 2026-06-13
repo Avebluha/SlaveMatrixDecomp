@@ -286,13 +286,13 @@ namespace SlaveMatrix
     		ThisType = GetType();
     		Dif dif = new Dif();
     		dif.Tag = "結い1ハネ";
-    		dif.Add(new Pars(Sta.胴体["BackHair1"][0][1]));
+    		dif.Add(new PartGroup(Sta.胴体["BackHair1"][0][1]));
     		Body = new Difs();
     		Body.Tag = dif.Tag;
     		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		X0Y0_髪基 = pars["髪基"].ToPar();
-    		Pars pars2 = pars["お下げ"].ToPars();
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_髪基 = partGroup["髪基"].ToPar();
+    		PartGroup pars2 = partGroup["お下げ"].ToPars();
     		X0Y0_お下げ_髪根 = pars2["髪根"].ToPar();
     		X0Y0_お下げ_髪左1 = pars2["髪左1"].ToPar();
     		X0Y0_お下げ_髪左2 = pars2["髪左2"].ToPar();

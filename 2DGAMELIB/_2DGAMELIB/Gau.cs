@@ -18,7 +18,7 @@ namespace _2DGAMELIB
 
     public class Gau
     {
-    	private Pars pars;
+    	private PartGroup _partGroup;
 
     	private ShapePart base_;
 
@@ -56,7 +56,7 @@ namespace _2DGAMELIB
 
     	private Color MinusColor2;
 
-    	public Pars Pars => pars;
+    	public PartGroup PartGroup => _partGroup;
 
     	public ShapePart Base => base_;
 
@@ -282,7 +282,7 @@ namespace _2DGAMELIB
 
     	private void ParSetting(string Name, ref Vector2D Position, double Size, double Width, double Height, double Margin, ref Color BackColor, bool knob)
     	{
-    		pars = new Pars();
+    		_partGroup = new PartGroup();
     		base_ = new ShapePart
     		{
     			Tag = Name + "_ベース",
@@ -296,7 +296,7 @@ namespace _2DGAMELIB
     			BrushColor = BackColor
     		};
     		base_.BasePointBase = base_.OP.GetCenter();
-    		pars.Add(base_.Tag, base_);
+    		_partGroup.Add(base_.Tag, base_);
     		frame1 = new ShapePart
     		{
     			Tag = Name + "_フレーム1",
@@ -309,7 +309,7 @@ namespace _2DGAMELIB
     			Brush = null
     		};
     		frame1.BasePointBase = GetBasePoint1();
-    		pars.Add(frame1.Tag, frame1);
+    		_partGroup.Add(frame1.Tag, frame1);
     		if (Range == Range.MinusPlus)
     		{
     			frame2 = new ShapePart
@@ -324,7 +324,7 @@ namespace _2DGAMELIB
     				Brush = null
     			};
     			frame2.BasePointBase = GetBasePoint2();
-    			pars.Add(frame2.Tag, frame2);
+    			_partGroup.Add(frame2.Tag, frame2);
     		}
     		gauge = new ShapePart
     		{
@@ -337,7 +337,7 @@ namespace _2DGAMELIB
     			Closed = true
     		};
     		gauge.BasePointBase = GetBasePoint();
-    		pars.Add(gauge.Tag, gauge);
+    		_partGroup.Add(gauge.Tag, gauge);
     		if (knob)
     		{
     			this.knob = new ShapePart
@@ -351,7 +351,7 @@ namespace _2DGAMELIB
     				BrushColor = Color.FromArgb(128, Color.White)
     			};
     			this.knob.BasePointBase = this.knob.OP.GetCenter();
-    			pars.Add(this.knob.Tag, this.knob);
+    			_partGroup.Add(this.knob.Tag, this.knob);
     		}
     	}
 
@@ -549,7 +549,7 @@ namespace _2DGAMELIB
 
     	public void Dispose()
     	{
-    		pars.Dispose();
+    		_partGroup.Dispose();
     		PlusBrush.Dispose();
     		if (MinusBrush != null)
     		{

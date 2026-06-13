@@ -859,15 +859,15 @@ namespace SlaveMatrix
     		ThisType = GetType();
     		Dif dif = new Dif();
     		dif.Tag = "甲羅";
-    		dif.Add(new Pars(Sta.肢中["背中"][0][1]));
+    		dif.Add(new PartGroup(Sta.肢中["背中"][0][1]));
     		Body = new Difs();
     		Body.Tag = dif.Tag;
     		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		Pars pars2 = pars["左"].ToPars();
+    		PartGroup partGroup = Body[0][0];
+    		PartGroup pars2 = partGroup["左"].ToPars();
     		X0Y0_左_甲羅1 = pars2["甲羅1"].ToPar();
     		X0Y0_左_甲羅2 = pars2["甲羅2"].ToPar();
-    		Pars pars3 = pars2["鱗"].ToPars();
+    		PartGroup pars3 = pars2["鱗"].ToPars();
     		X0Y0_左_鱗_鱗12 = pars3["鱗12"].ToPar();
     		X0Y0_左_鱗_鱗11 = pars3["鱗11"].ToPar();
     		X0Y0_左_鱗_鱗10 = pars3["鱗10"].ToPar();
@@ -885,7 +885,7 @@ namespace SlaveMatrix
     		X0Y0_左_側甲_側甲3 = pars3["側甲3"].ToPar();
     		X0Y0_左_側甲_側甲2 = pars3["側甲2"].ToPar();
     		X0Y0_左_側甲_側甲1 = pars3["側甲1"].ToPar();
-    		pars2 = pars["右"].ToPars();
+    		pars2 = partGroup["右"].ToPars();
     		X0Y0_右_甲羅1 = pars2["甲羅1"].ToPar();
     		X0Y0_右_甲羅2 = pars2["甲羅2"].ToPar();
     		pars3 = pars2["鱗"].ToPars();

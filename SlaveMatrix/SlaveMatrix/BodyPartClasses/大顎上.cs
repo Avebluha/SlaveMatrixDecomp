@@ -171,12 +171,12 @@ namespace SlaveMatrix
     	{
     		ThisType = GetType();
     		Body = new Difs(Sta.肢中["大顎上"]);
-    		Pars pars = Body[0][0];
-    		X0Y0_甲殻 = pars["甲殻"].ToPar();
-    		X0Y0_線左 = pars["線左"].ToPar();
-    		X0Y0_線右 = pars["線右"].ToPar();
-    		X0Y0_棘左 = pars["刺左"].ToPar();
-    		X0Y0_棘右 = pars["刺右"].ToPar();
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_甲殻 = partGroup["甲殻"].ToPar();
+    		X0Y0_線左 = partGroup["線左"].ToPar();
+    		X0Y0_線右 = partGroup["線右"].ToPar();
+    		X0Y0_棘左 = partGroup["刺左"].ToPar();
+    		X0Y0_棘右 = partGroup["刺右"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		base.配色指定 = 配色指定;

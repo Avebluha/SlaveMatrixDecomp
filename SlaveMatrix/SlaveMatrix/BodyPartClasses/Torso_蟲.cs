@@ -477,18 +477,18 @@ namespace SlaveMatrix
     	{
     		Torso_蟲 Torso_蟲2 = this;
     		ThisType = GetType();
-    		Pars pars = new Pars();
-    		pars.Tag = "蟲";
-    		pars.Add(new Pars(Sta.半身["長物"][0][3]["胴4"].ToPars()));
-    		pars.Add(new Pars(Sta.半身["長物"][0][3]["輪2"].ToPars()));
+    		PartGroup partGroup = new PartGroup();
+    		partGroup.Tag = "蟲";
+    		partGroup.Add(new PartGroup(Sta.半身["長物"][0][3]["胴4"].ToPars()));
+    		partGroup.Add(new PartGroup(Sta.半身["長物"][0][3]["輪2"].ToPars()));
     		Dif dif = new Dif();
-    		dif.Tag = pars.Tag;
-    		dif.Add(pars);
+    		dif.Tag = partGroup.Tag;
+    		dif.Add(partGroup);
     		Body = new Difs();
     		Body.Tag = dif.Tag;
     		Body.Add(dif);
-    		Pars pars2 = Body[0][0];
-    		Pars pars3 = pars2["胴4"].ToPars();
+    		PartGroup pars2 = Body[0][0];
+    		PartGroup pars3 = pars2["胴4"].ToPars();
     		X0Y0_Torso_背板 = pars3["背板"].ToPar();
     		X0Y0_Torso_節 = pars3["節"].ToPar();
     		X0Y0_Torso_胸板 = pars3["胸板"].ToPar();

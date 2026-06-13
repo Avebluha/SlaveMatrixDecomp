@@ -106,12 +106,12 @@ namespace SlaveMatrix
     		ThisType = GetType();
     		Dif dif = new Dif();
     		dif.Tag = "蛸";
-    		dif.Add(new Pars(Sta.半身["多足"][0][0]));
+    		dif.Add(new PartGroup(Sta.半身["多足"][0][0]));
     		Body = new Difs();
     		Body.Tag = dif.Tag;
     		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		X0Y0_Torso = pars["胴"].ToPar();
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_Torso = partGroup["胴"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;

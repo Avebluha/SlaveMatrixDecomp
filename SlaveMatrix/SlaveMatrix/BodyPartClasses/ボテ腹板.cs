@@ -426,20 +426,20 @@ namespace SlaveMatrix
     	{
     		ThisType = GetType();
     		Body = new Difs(Sta.胴体["ボテ腹板"]);
-    		Pars pars = Body[0][0];
-    		Pars pars2 = pars["腹板4"].ToPars();
+    		PartGroup partGroup = Body[0][0];
+    		PartGroup pars2 = partGroup["腹板4"].ToPars();
     		X0Y0_腹板4_腹板 = pars2["腹板"].ToPar();
     		X0Y0_腹板4_縦線 = pars2["縦線"].ToPar();
-    		pars2 = pars["腹板3"].ToPars();
+    		pars2 = partGroup["腹板3"].ToPars();
     		X0Y0_腹板3_腹板 = pars2["腹板"].ToPar();
     		X0Y0_腹板3_縦線 = pars2["縦線"].ToPar();
-    		pars2 = pars["腹板2"].ToPars();
+    		pars2 = partGroup["腹板2"].ToPars();
     		X0Y0_腹板2_腹板 = pars2["腹板"].ToPar();
     		X0Y0_腹板2_縦線 = pars2["縦線"].ToPar();
-    		pars2 = pars["腹板1"].ToPars();
+    		pars2 = partGroup["腹板1"].ToPars();
     		X0Y0_腹板1_腹板 = pars2["腹板"].ToPar();
     		X0Y0_腹板1_縦線 = pars2["縦線"].ToPar();
-    		Pars pars3 = Body[0][1];
+    		PartGroup pars3 = Body[0][1];
     		pars2 = pars3["腹板4"].ToPars();
     		X0Y1_腹板4_腹板 = pars2["腹板"].ToPar();
     		X0Y1_腹板4_縦線 = pars2["縦線"].ToPar();
@@ -452,7 +452,7 @@ namespace SlaveMatrix
     		pars2 = pars3["腹板1"].ToPars();
     		X0Y1_腹板1_腹板 = pars2["腹板"].ToPar();
     		X0Y1_腹板1_縦線 = pars2["縦線"].ToPar();
-    		Pars pars4 = Body[0][2];
+    		PartGroup pars4 = Body[0][2];
     		pars2 = pars4["腹板4"].ToPars();
     		X0Y2_腹板4_腹板 = pars2["腹板"].ToPar();
     		X0Y2_腹板4_縦線 = pars2["縦線"].ToPar();
@@ -465,7 +465,7 @@ namespace SlaveMatrix
     		pars2 = pars4["腹板1"].ToPars();
     		X0Y2_腹板1_腹板 = pars2["腹板"].ToPar();
     		X0Y2_腹板1_縦線 = pars2["縦線"].ToPar();
-    		Pars pars5 = Body[0][3];
+    		PartGroup pars5 = Body[0][3];
     		pars2 = pars5["腹板4"].ToPars();
     		X0Y3_腹板4_腹板 = pars2["腹板"].ToPar();
     		X0Y3_腹板4_縦線 = pars2["縦線"].ToPar();
@@ -478,7 +478,7 @@ namespace SlaveMatrix
     		pars2 = pars5["腹板1"].ToPars();
     		X0Y3_腹板1_腹板 = pars2["腹板"].ToPar();
     		X0Y3_腹板1_縦線 = pars2["縦線"].ToPar();
-    		Pars pars6 = Body[0][4];
+    		PartGroup pars6 = Body[0][4];
     		pars2 = pars6["腹板4"].ToPars();
     		X0Y4_腹板4_腹板 = pars2["腹板"].ToPar();
     		X0Y4_腹板4_縦線 = pars2["縦線"].ToPar();

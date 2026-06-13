@@ -5728,12 +5728,12 @@ namespace SlaveMatrix
     		ThisType = GetType();
     		Dif dif = new Dif();
     		dif.Tag = "ヘビ";
-    		dif.Add(new Pars(Sta.尻尾["尾"][0][16]));
+    		dif.Add(new PartGroup(Sta.尻尾["尾"][0][16]));
     		Body = new Difs();
     		Body.Tag = dif.Tag;
     		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		Pars pars2 = pars["尾35"].ToPars();
+    		PartGroup partGroup = Body[0][0];
+    		PartGroup pars2 = partGroup["尾35"].ToPars();
     		X0Y0_尾35_尾 = pars2["尾"].ToPar();
     		X0Y0_尾35_鱗左3 = pars2["鱗左3"].ToPar();
     		X0Y0_尾35_鱗右3 = pars2["鱗右3"].ToPar();
@@ -5741,7 +5741,7 @@ namespace SlaveMatrix
     		X0Y0_尾35_鱗右2 = pars2["鱗右2"].ToPar();
     		X0Y0_尾35_鱗左1 = pars2["鱗左1"].ToPar();
     		X0Y0_尾35_鱗右1 = pars2["鱗右1"].ToPar();
-    		pars2 = pars["尾34"].ToPars();
+    		pars2 = partGroup["尾34"].ToPars();
     		X0Y0_尾34_尾 = pars2["尾"].ToPar();
     		X0Y0_尾34_鱗左3 = pars2["鱗左3"].ToPar();
     		X0Y0_尾34_鱗右3 = pars2["鱗右3"].ToPar();
@@ -5749,7 +5749,7 @@ namespace SlaveMatrix
     		X0Y0_尾34_鱗右2 = pars2["鱗右2"].ToPar();
     		X0Y0_尾34_鱗左1 = pars2["鱗左1"].ToPar();
     		X0Y0_尾34_鱗右1 = pars2["鱗右1"].ToPar();
-    		pars2 = pars["尾33"].ToPars();
+    		pars2 = partGroup["尾33"].ToPars();
     		X0Y0_尾33_尾 = pars2["尾"].ToPar();
     		X0Y0_尾33_鱗左3 = pars2["鱗左3"].ToPar();
     		X0Y0_尾33_鱗右3 = pars2["鱗右3"].ToPar();
@@ -5757,7 +5757,7 @@ namespace SlaveMatrix
     		X0Y0_尾33_鱗右2 = pars2["鱗右2"].ToPar();
     		X0Y0_尾33_鱗左1 = pars2["鱗左1"].ToPar();
     		X0Y0_尾33_鱗右1 = pars2["鱗右1"].ToPar();
-    		pars2 = pars["尾32"].ToPars();
+    		pars2 = partGroup["尾32"].ToPars();
     		X0Y0_尾32_尾 = pars2["尾"].ToPar();
     		X0Y0_尾32_鱗左3 = pars2["鱗左3"].ToPar();
     		X0Y0_尾32_鱗右3 = pars2["鱗右3"].ToPar();
@@ -5765,7 +5765,7 @@ namespace SlaveMatrix
     		X0Y0_尾32_鱗右2 = pars2["鱗右2"].ToPar();
     		X0Y0_尾32_鱗左1 = pars2["鱗左1"].ToPar();
     		X0Y0_尾32_鱗右1 = pars2["鱗右1"].ToPar();
-    		pars2 = pars["尾31"].ToPars();
+    		pars2 = partGroup["尾31"].ToPars();
     		X0Y0_尾31_尾 = pars2["尾"].ToPar();
     		X0Y0_尾31_鱗左3 = pars2["鱗左3"].ToPar();
     		X0Y0_尾31_鱗右3 = pars2["鱗右3"].ToPar();
@@ -5773,7 +5773,7 @@ namespace SlaveMatrix
     		X0Y0_尾31_鱗右2 = pars2["鱗右2"].ToPar();
     		X0Y0_尾31_鱗左1 = pars2["鱗左1"].ToPar();
     		X0Y0_尾31_鱗右1 = pars2["鱗右1"].ToPar();
-    		pars2 = pars["尾30"].ToPars();
+    		pars2 = partGroup["尾30"].ToPars();
     		X0Y0_尾30_尾 = pars2["尾"].ToPar();
     		X0Y0_尾30_鱗左3 = pars2["鱗左3"].ToPar();
     		X0Y0_尾30_鱗右3 = pars2["鱗右3"].ToPar();
@@ -5781,7 +5781,7 @@ namespace SlaveMatrix
     		X0Y0_尾30_鱗右2 = pars2["鱗右2"].ToPar();
     		X0Y0_尾30_鱗左1 = pars2["鱗左1"].ToPar();
     		X0Y0_尾30_鱗右1 = pars2["鱗右1"].ToPar();
-    		pars2 = pars["尾29"].ToPars();
+    		pars2 = partGroup["尾29"].ToPars();
     		X0Y0_尾29_尾 = pars2["尾"].ToPar();
     		X0Y0_尾29_鱗左3 = pars2["鱗左3"].ToPar();
     		X0Y0_尾29_鱗右3 = pars2["鱗右3"].ToPar();
@@ -5789,7 +5789,7 @@ namespace SlaveMatrix
     		X0Y0_尾29_鱗右2 = pars2["鱗右2"].ToPar();
     		X0Y0_尾29_鱗左1 = pars2["鱗左1"].ToPar();
     		X0Y0_尾29_鱗右1 = pars2["鱗右1"].ToPar();
-    		pars2 = pars["尾28"].ToPars();
+    		pars2 = partGroup["尾28"].ToPars();
     		X0Y0_尾28_尾 = pars2["尾"].ToPar();
     		X0Y0_尾28_鱗左3 = pars2["鱗左3"].ToPar();
     		X0Y0_尾28_鱗右3 = pars2["鱗右3"].ToPar();
@@ -5797,7 +5797,7 @@ namespace SlaveMatrix
     		X0Y0_尾28_鱗右2 = pars2["鱗右2"].ToPar();
     		X0Y0_尾28_鱗左1 = pars2["鱗左1"].ToPar();
     		X0Y0_尾28_鱗右1 = pars2["鱗右1"].ToPar();
-    		pars2 = pars["尾27"].ToPars();
+    		pars2 = partGroup["尾27"].ToPars();
     		X0Y0_尾27_尾 = pars2["尾"].ToPar();
     		X0Y0_尾27_鱗左3 = pars2["鱗左3"].ToPar();
     		X0Y0_尾27_鱗右3 = pars2["鱗右3"].ToPar();
@@ -5805,7 +5805,7 @@ namespace SlaveMatrix
     		X0Y0_尾27_鱗右2 = pars2["鱗右2"].ToPar();
     		X0Y0_尾27_鱗左1 = pars2["鱗左1"].ToPar();
     		X0Y0_尾27_鱗右1 = pars2["鱗右1"].ToPar();
-    		pars2 = pars["尾26"].ToPars();
+    		pars2 = partGroup["尾26"].ToPars();
     		X0Y0_尾26_尾 = pars2["尾"].ToPar();
     		X0Y0_尾26_鱗左3 = pars2["鱗左3"].ToPar();
     		X0Y0_尾26_鱗右3 = pars2["鱗右3"].ToPar();
@@ -5813,7 +5813,7 @@ namespace SlaveMatrix
     		X0Y0_尾26_鱗右2 = pars2["鱗右2"].ToPar();
     		X0Y0_尾26_鱗左1 = pars2["鱗左1"].ToPar();
     		X0Y0_尾26_鱗右1 = pars2["鱗右1"].ToPar();
-    		pars2 = pars["尾25"].ToPars();
+    		pars2 = partGroup["尾25"].ToPars();
     		X0Y0_尾25_尾 = pars2["尾"].ToPar();
     		X0Y0_尾25_鱗左3 = pars2["鱗左3"].ToPar();
     		X0Y0_尾25_鱗右3 = pars2["鱗右3"].ToPar();
@@ -5821,7 +5821,7 @@ namespace SlaveMatrix
     		X0Y0_尾25_鱗右2 = pars2["鱗右2"].ToPar();
     		X0Y0_尾25_鱗左1 = pars2["鱗左1"].ToPar();
     		X0Y0_尾25_鱗右1 = pars2["鱗右1"].ToPar();
-    		pars2 = pars["尾24"].ToPars();
+    		pars2 = partGroup["尾24"].ToPars();
     		X0Y0_尾24_尾 = pars2["尾"].ToPar();
     		X0Y0_尾24_鱗左3 = pars2["鱗左3"].ToPar();
     		X0Y0_尾24_鱗右3 = pars2["鱗右3"].ToPar();
@@ -5829,7 +5829,7 @@ namespace SlaveMatrix
     		X0Y0_尾24_鱗右2 = pars2["鱗右2"].ToPar();
     		X0Y0_尾24_鱗左1 = pars2["鱗左1"].ToPar();
     		X0Y0_尾24_鱗右1 = pars2["鱗右1"].ToPar();
-    		pars2 = pars["尾23"].ToPars();
+    		pars2 = partGroup["尾23"].ToPars();
     		X0Y0_尾23_尾 = pars2["尾"].ToPar();
     		X0Y0_尾23_鱗左3 = pars2["鱗左3"].ToPar();
     		X0Y0_尾23_鱗右3 = pars2["鱗右3"].ToPar();
@@ -5837,7 +5837,7 @@ namespace SlaveMatrix
     		X0Y0_尾23_鱗右2 = pars2["鱗右2"].ToPar();
     		X0Y0_尾23_鱗左1 = pars2["鱗左1"].ToPar();
     		X0Y0_尾23_鱗右1 = pars2["鱗右1"].ToPar();
-    		pars2 = pars["尾22"].ToPars();
+    		pars2 = partGroup["尾22"].ToPars();
     		X0Y0_尾22_尾 = pars2["尾"].ToPar();
     		X0Y0_尾22_鱗左3 = pars2["鱗左3"].ToPar();
     		X0Y0_尾22_鱗右3 = pars2["鱗右3"].ToPar();
@@ -5845,7 +5845,7 @@ namespace SlaveMatrix
     		X0Y0_尾22_鱗右2 = pars2["鱗右2"].ToPar();
     		X0Y0_尾22_鱗左1 = pars2["鱗左1"].ToPar();
     		X0Y0_尾22_鱗右1 = pars2["鱗右1"].ToPar();
-    		pars2 = pars["尾21"].ToPars();
+    		pars2 = partGroup["尾21"].ToPars();
     		X0Y0_尾21_尾 = pars2["尾"].ToPar();
     		X0Y0_尾21_鱗左3 = pars2["鱗左3"].ToPar();
     		X0Y0_尾21_鱗右3 = pars2["鱗右3"].ToPar();
@@ -5853,7 +5853,7 @@ namespace SlaveMatrix
     		X0Y0_尾21_鱗右2 = pars2["鱗右2"].ToPar();
     		X0Y0_尾21_鱗左1 = pars2["鱗左1"].ToPar();
     		X0Y0_尾21_鱗右1 = pars2["鱗右1"].ToPar();
-    		pars2 = pars["尾20"].ToPars();
+    		pars2 = partGroup["尾20"].ToPars();
     		X0Y0_尾20_尾 = pars2["尾"].ToPar();
     		X0Y0_尾20_鱗左3 = pars2["鱗左3"].ToPar();
     		X0Y0_尾20_鱗右3 = pars2["鱗右3"].ToPar();
@@ -5861,7 +5861,7 @@ namespace SlaveMatrix
     		X0Y0_尾20_鱗右2 = pars2["鱗右2"].ToPar();
     		X0Y0_尾20_鱗左1 = pars2["鱗左1"].ToPar();
     		X0Y0_尾20_鱗右1 = pars2["鱗右1"].ToPar();
-    		pars2 = pars["尾19"].ToPars();
+    		pars2 = partGroup["尾19"].ToPars();
     		X0Y0_尾19_尾 = pars2["尾"].ToPar();
     		X0Y0_尾19_鱗左3 = pars2["鱗左3"].ToPar();
     		X0Y0_尾19_鱗右3 = pars2["鱗右3"].ToPar();
@@ -5869,7 +5869,7 @@ namespace SlaveMatrix
     		X0Y0_尾19_鱗右2 = pars2["鱗右2"].ToPar();
     		X0Y0_尾19_鱗左1 = pars2["鱗左1"].ToPar();
     		X0Y0_尾19_鱗右1 = pars2["鱗右1"].ToPar();
-    		pars2 = pars["尾18"].ToPars();
+    		pars2 = partGroup["尾18"].ToPars();
     		X0Y0_尾18_尾 = pars2["尾"].ToPar();
     		X0Y0_尾18_鱗左3 = pars2["鱗左3"].ToPar();
     		X0Y0_尾18_鱗右3 = pars2["鱗右3"].ToPar();
@@ -5877,7 +5877,7 @@ namespace SlaveMatrix
     		X0Y0_尾18_鱗右2 = pars2["鱗右2"].ToPar();
     		X0Y0_尾18_鱗左1 = pars2["鱗左1"].ToPar();
     		X0Y0_尾18_鱗右1 = pars2["鱗右1"].ToPar();
-    		pars2 = pars["尾17"].ToPars();
+    		pars2 = partGroup["尾17"].ToPars();
     		X0Y0_尾17_尾 = pars2["尾"].ToPar();
     		X0Y0_尾17_鱗左3 = pars2["鱗左3"].ToPar();
     		X0Y0_尾17_鱗右3 = pars2["鱗右3"].ToPar();
@@ -5885,7 +5885,7 @@ namespace SlaveMatrix
     		X0Y0_尾17_鱗右2 = pars2["鱗右2"].ToPar();
     		X0Y0_尾17_鱗左1 = pars2["鱗左1"].ToPar();
     		X0Y0_尾17_鱗右1 = pars2["鱗右1"].ToPar();
-    		pars2 = pars["尾16"].ToPars();
+    		pars2 = partGroup["尾16"].ToPars();
     		X0Y0_尾16_尾 = pars2["尾"].ToPar();
     		X0Y0_尾16_鱗左3 = pars2["鱗左3"].ToPar();
     		X0Y0_尾16_鱗右3 = pars2["鱗右3"].ToPar();
@@ -5893,7 +5893,7 @@ namespace SlaveMatrix
     		X0Y0_尾16_鱗右2 = pars2["鱗右2"].ToPar();
     		X0Y0_尾16_鱗左1 = pars2["鱗左1"].ToPar();
     		X0Y0_尾16_鱗右1 = pars2["鱗右1"].ToPar();
-    		pars2 = pars["尾15"].ToPars();
+    		pars2 = partGroup["尾15"].ToPars();
     		X0Y0_尾15_尾 = pars2["尾"].ToPar();
     		X0Y0_尾15_鱗左3 = pars2["鱗左3"].ToPar();
     		X0Y0_尾15_鱗右3 = pars2["鱗右3"].ToPar();
@@ -5901,7 +5901,7 @@ namespace SlaveMatrix
     		X0Y0_尾15_鱗右2 = pars2["鱗右2"].ToPar();
     		X0Y0_尾15_鱗左1 = pars2["鱗左1"].ToPar();
     		X0Y0_尾15_鱗右1 = pars2["鱗右1"].ToPar();
-    		pars2 = pars["尾14"].ToPars();
+    		pars2 = partGroup["尾14"].ToPars();
     		X0Y0_尾14_尾 = pars2["尾"].ToPar();
     		X0Y0_尾14_鱗左3 = pars2["鱗左3"].ToPar();
     		X0Y0_尾14_鱗右3 = pars2["鱗右3"].ToPar();
@@ -5909,7 +5909,7 @@ namespace SlaveMatrix
     		X0Y0_尾14_鱗右2 = pars2["鱗右2"].ToPar();
     		X0Y0_尾14_鱗左1 = pars2["鱗左1"].ToPar();
     		X0Y0_尾14_鱗右1 = pars2["鱗右1"].ToPar();
-    		pars2 = pars["尾13"].ToPars();
+    		pars2 = partGroup["尾13"].ToPars();
     		X0Y0_尾13_尾 = pars2["尾"].ToPar();
     		X0Y0_尾13_鱗左3 = pars2["鱗左3"].ToPar();
     		X0Y0_尾13_鱗右3 = pars2["鱗右3"].ToPar();
@@ -5917,7 +5917,7 @@ namespace SlaveMatrix
     		X0Y0_尾13_鱗右2 = pars2["鱗右2"].ToPar();
     		X0Y0_尾13_鱗左1 = pars2["鱗左1"].ToPar();
     		X0Y0_尾13_鱗右1 = pars2["鱗右1"].ToPar();
-    		pars2 = pars["尾12"].ToPars();
+    		pars2 = partGroup["尾12"].ToPars();
     		X0Y0_尾12_尾 = pars2["尾"].ToPar();
     		X0Y0_尾12_鱗左3 = pars2["鱗左3"].ToPar();
     		X0Y0_尾12_鱗右3 = pars2["鱗右3"].ToPar();
@@ -5925,7 +5925,7 @@ namespace SlaveMatrix
     		X0Y0_尾12_鱗右2 = pars2["鱗右2"].ToPar();
     		X0Y0_尾12_鱗左1 = pars2["鱗左1"].ToPar();
     		X0Y0_尾12_鱗右1 = pars2["鱗右1"].ToPar();
-    		pars2 = pars["尾11"].ToPars();
+    		pars2 = partGroup["尾11"].ToPars();
     		X0Y0_尾11_尾 = pars2["尾"].ToPar();
     		X0Y0_尾11_鱗左3 = pars2["鱗左3"].ToPar();
     		X0Y0_尾11_鱗右3 = pars2["鱗右3"].ToPar();
@@ -5933,7 +5933,7 @@ namespace SlaveMatrix
     		X0Y0_尾11_鱗右2 = pars2["鱗右2"].ToPar();
     		X0Y0_尾11_鱗左1 = pars2["鱗左1"].ToPar();
     		X0Y0_尾11_鱗右1 = pars2["鱗右1"].ToPar();
-    		pars2 = pars["尾10"].ToPars();
+    		pars2 = partGroup["尾10"].ToPars();
     		X0Y0_尾10_尾 = pars2["尾"].ToPar();
     		X0Y0_尾10_鱗左3 = pars2["鱗左3"].ToPar();
     		X0Y0_尾10_鱗右3 = pars2["鱗右3"].ToPar();
@@ -5941,7 +5941,7 @@ namespace SlaveMatrix
     		X0Y0_尾10_鱗右2 = pars2["鱗右2"].ToPar();
     		X0Y0_尾10_鱗左1 = pars2["鱗左1"].ToPar();
     		X0Y0_尾10_鱗右1 = pars2["鱗右1"].ToPar();
-    		pars2 = pars["尾9"].ToPars();
+    		pars2 = partGroup["尾9"].ToPars();
     		X0Y0_尾9_尾 = pars2["尾"].ToPar();
     		X0Y0_尾9_鱗左3 = pars2["鱗左3"].ToPar();
     		X0Y0_尾9_鱗右3 = pars2["鱗右3"].ToPar();
@@ -5949,7 +5949,7 @@ namespace SlaveMatrix
     		X0Y0_尾9_鱗右2 = pars2["鱗右2"].ToPar();
     		X0Y0_尾9_鱗左1 = pars2["鱗左1"].ToPar();
     		X0Y0_尾9_鱗右1 = pars2["鱗右1"].ToPar();
-    		pars2 = pars["尾8"].ToPars();
+    		pars2 = partGroup["尾8"].ToPars();
     		X0Y0_尾8_尾 = pars2["尾"].ToPar();
     		X0Y0_尾8_鱗左3 = pars2["鱗左3"].ToPar();
     		X0Y0_尾8_鱗右3 = pars2["鱗右3"].ToPar();
@@ -5957,7 +5957,7 @@ namespace SlaveMatrix
     		X0Y0_尾8_鱗右2 = pars2["鱗右2"].ToPar();
     		X0Y0_尾8_鱗左1 = pars2["鱗左1"].ToPar();
     		X0Y0_尾8_鱗右1 = pars2["鱗右1"].ToPar();
-    		pars2 = pars["尾7"].ToPars();
+    		pars2 = partGroup["尾7"].ToPars();
     		X0Y0_尾7_尾 = pars2["尾"].ToPar();
     		X0Y0_尾7_鱗左3 = pars2["鱗左3"].ToPar();
     		X0Y0_尾7_鱗右3 = pars2["鱗右3"].ToPar();
@@ -5965,7 +5965,7 @@ namespace SlaveMatrix
     		X0Y0_尾7_鱗右2 = pars2["鱗右2"].ToPar();
     		X0Y0_尾7_鱗左1 = pars2["鱗左1"].ToPar();
     		X0Y0_尾7_鱗右1 = pars2["鱗右1"].ToPar();
-    		pars2 = pars["尾6"].ToPars();
+    		pars2 = partGroup["尾6"].ToPars();
     		X0Y0_尾6_尾 = pars2["尾"].ToPar();
     		X0Y0_尾6_鱗左3 = pars2["鱗左3"].ToPar();
     		X0Y0_尾6_鱗右3 = pars2["鱗右3"].ToPar();
@@ -5973,7 +5973,7 @@ namespace SlaveMatrix
     		X0Y0_尾6_鱗右2 = pars2["鱗右2"].ToPar();
     		X0Y0_尾6_鱗左1 = pars2["鱗左1"].ToPar();
     		X0Y0_尾6_鱗右1 = pars2["鱗右1"].ToPar();
-    		pars2 = pars["尾5"].ToPars();
+    		pars2 = partGroup["尾5"].ToPars();
     		X0Y0_尾5_尾 = pars2["尾"].ToPar();
     		X0Y0_尾5_鱗左3 = pars2["鱗左3"].ToPar();
     		X0Y0_尾5_鱗右3 = pars2["鱗右3"].ToPar();
@@ -5981,7 +5981,7 @@ namespace SlaveMatrix
     		X0Y0_尾5_鱗右2 = pars2["鱗右2"].ToPar();
     		X0Y0_尾5_鱗左1 = pars2["鱗左1"].ToPar();
     		X0Y0_尾5_鱗右1 = pars2["鱗右1"].ToPar();
-    		pars2 = pars["尾4"].ToPars();
+    		pars2 = partGroup["尾4"].ToPars();
     		X0Y0_尾4_尾 = pars2["尾"].ToPar();
     		X0Y0_尾4_鱗左3 = pars2["鱗左3"].ToPar();
     		X0Y0_尾4_鱗右3 = pars2["鱗右3"].ToPar();
@@ -5989,7 +5989,7 @@ namespace SlaveMatrix
     		X0Y0_尾4_鱗右2 = pars2["鱗右2"].ToPar();
     		X0Y0_尾4_鱗左1 = pars2["鱗左1"].ToPar();
     		X0Y0_尾4_鱗右1 = pars2["鱗右1"].ToPar();
-    		pars2 = pars["尾3"].ToPars();
+    		pars2 = partGroup["尾3"].ToPars();
     		X0Y0_尾3_尾 = pars2["尾"].ToPar();
     		X0Y0_尾3_鱗左3 = pars2["鱗左3"].ToPar();
     		X0Y0_尾3_鱗右3 = pars2["鱗右3"].ToPar();
@@ -5997,7 +5997,7 @@ namespace SlaveMatrix
     		X0Y0_尾3_鱗右2 = pars2["鱗右2"].ToPar();
     		X0Y0_尾3_鱗左1 = pars2["鱗左1"].ToPar();
     		X0Y0_尾3_鱗右1 = pars2["鱗右1"].ToPar();
-    		pars2 = pars["尾2"].ToPars();
+    		pars2 = partGroup["尾2"].ToPars();
     		X0Y0_尾2_尾 = pars2["尾"].ToPar();
     		X0Y0_尾2_鱗左3 = pars2["鱗左3"].ToPar();
     		X0Y0_尾2_鱗右3 = pars2["鱗右3"].ToPar();
@@ -6005,7 +6005,7 @@ namespace SlaveMatrix
     		X0Y0_尾2_鱗右2 = pars2["鱗右2"].ToPar();
     		X0Y0_尾2_鱗左1 = pars2["鱗左1"].ToPar();
     		X0Y0_尾2_鱗右1 = pars2["鱗右1"].ToPar();
-    		pars2 = pars["尾1"].ToPars();
+    		pars2 = partGroup["尾1"].ToPars();
     		X0Y0_尾1_尾 = pars2["尾"].ToPar();
     		X0Y0_尾1_鱗左3 = pars2["鱗左3"].ToPar();
     		X0Y0_尾1_鱗右3 = pars2["鱗右3"].ToPar();
@@ -6013,18 +6013,18 @@ namespace SlaveMatrix
     		X0Y0_尾1_鱗右2 = pars2["鱗右2"].ToPar();
     		X0Y0_尾1_鱗左1 = pars2["鱗左1"].ToPar();
     		X0Y0_尾1_鱗右1 = pars2["鱗右1"].ToPar();
-    		pars2 = pars["尾0"].ToPars();
+    		pars2 = partGroup["尾0"].ToPars();
     		X0Y0_尾0_尾 = pars2["尾"].ToPar();
     		X0Y0_尾0_鱗右 = pars2["鱗右"].ToPar();
     		X0Y0_尾0_鱗左 = pars2["鱗左"].ToPar();
-    		pars2 = pars["輪1"].ToPars();
+    		pars2 = partGroup["輪1"].ToPars();
     		X0Y0_輪1_革 = pars2["革"].ToPar();
     		X0Y0_輪1_金具1 = pars2["金具1"].ToPar();
     		X0Y0_輪1_金具2 = pars2["金具2"].ToPar();
     		X0Y0_輪1_金具3 = pars2["金具3"].ToPar();
     		X0Y0_輪1_金具左 = pars2["金具左"].ToPar();
     		X0Y0_輪1_金具右 = pars2["金具右"].ToPar();
-    		pars2 = pars["輪2"].ToPars();
+    		pars2 = partGroup["輪2"].ToPars();
     		X0Y0_輪2_革 = pars2["革"].ToPar();
     		X0Y0_輪2_金具1 = pars2["金具1"].ToPar();
     		X0Y0_輪2_金具2 = pars2["金具2"].ToPar();

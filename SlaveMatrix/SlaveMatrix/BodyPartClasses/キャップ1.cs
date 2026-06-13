@@ -122,9 +122,9 @@ namespace SlaveMatrix
     	{
     		ThisType = GetType();
     		Body = new Difs(Sta.性器付["キャップ中"]);
-    		Pars pars = Body[0][0];
-    		X0Y0_根本 = pars["根本"].ToPar();
-    		X0Y0_先端 = pars["先端"].ToPar();
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_根本 = partGroup["根本"].ToPar();
+    		X0Y0_先端 = partGroup["先端"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;

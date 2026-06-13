@@ -1552,12 +1552,12 @@ namespace SlaveMatrix
     		ThisType = GetType();
     		Dif dif = new Dif();
     		dif.Tag = "蟲尾";
-    		dif.Add(new Pars(Sta.尻尾["尾"][0][21]));
+    		dif.Add(new PartGroup(Sta.尻尾["尾"][0][21]));
     		Body = new Difs();
     		Body.Tag = dif.Tag;
     		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		Pars pars2 = pars["尾5"].ToPars();
+    		PartGroup partGroup = Body[0][0];
+    		PartGroup pars2 = partGroup["尾5"].ToPars();
     		X0Y0_尾5_背板 = pars2["背板"].ToPar();
     		X0Y0_尾5_節 = pars2["節"].ToPar();
     		X0Y0_尾5_胸板 = pars2["胸板"].ToPar();
@@ -1566,7 +1566,7 @@ namespace SlaveMatrix
     		X0Y0_尾5_瘤左1 = pars2["瘤左1"].ToPar();
     		X0Y0_尾5_瘤右2 = pars2["瘤右2"].ToPar();
     		X0Y0_尾5_瘤右1 = pars2["瘤右1"].ToPar();
-    		pars2 = pars["尾4"].ToPars();
+    		pars2 = partGroup["尾4"].ToPars();
     		X0Y0_尾4_背板 = pars2["背板"].ToPar();
     		X0Y0_尾4_節 = pars2["節"].ToPar();
     		X0Y0_尾4_胸板 = pars2["胸板"].ToPar();
@@ -1575,7 +1575,7 @@ namespace SlaveMatrix
     		X0Y0_尾4_瘤左1 = pars2["瘤左1"].ToPar();
     		X0Y0_尾4_瘤右2 = pars2["瘤右2"].ToPar();
     		X0Y0_尾4_瘤右1 = pars2["瘤右1"].ToPar();
-    		pars2 = pars["尾3"].ToPars();
+    		pars2 = partGroup["尾3"].ToPars();
     		X0Y0_尾3_背板 = pars2["背板"].ToPar();
     		X0Y0_尾3_節 = pars2["節"].ToPar();
     		X0Y0_尾3_胸板 = pars2["胸板"].ToPar();
@@ -1584,14 +1584,14 @@ namespace SlaveMatrix
     		X0Y0_尾3_瘤左1 = pars2["瘤左1"].ToPar();
     		X0Y0_尾3_瘤右2 = pars2["瘤右2"].ToPar();
     		X0Y0_尾3_瘤右1 = pars2["瘤右1"].ToPar();
-    		pars2 = pars["輪2"].ToPars();
+    		pars2 = partGroup["輪2"].ToPars();
     		X0Y0_輪2_革 = pars2["革"].ToPar();
     		X0Y0_輪2_金具1 = pars2["金具1"].ToPar();
     		X0Y0_輪2_金具2 = pars2["金具2"].ToPar();
     		X0Y0_輪2_金具3 = pars2["金具3"].ToPar();
     		X0Y0_輪2_金具左 = pars2["金具左"].ToPar();
     		X0Y0_輪2_金具右 = pars2["金具右"].ToPar();
-    		pars2 = pars["尾2"].ToPars();
+    		pars2 = partGroup["尾2"].ToPars();
     		X0Y0_尾2_背板 = pars2["背板"].ToPar();
     		X0Y0_尾2_節 = pars2["節"].ToPar();
     		X0Y0_尾2_胸板 = pars2["胸板"].ToPar();
@@ -1600,7 +1600,7 @@ namespace SlaveMatrix
     		X0Y0_尾2_瘤左1 = pars2["瘤左1"].ToPar();
     		X0Y0_尾2_瘤右2 = pars2["瘤右2"].ToPar();
     		X0Y0_尾2_瘤右1 = pars2["瘤右1"].ToPar();
-    		pars2 = pars["尾1"].ToPars();
+    		pars2 = partGroup["尾1"].ToPars();
     		X0Y0_尾1_背板 = pars2["背板"].ToPar();
     		X0Y0_尾1_節 = pars2["節"].ToPar();
     		X0Y0_尾1_胸板 = pars2["胸板"].ToPar();
@@ -1609,7 +1609,7 @@ namespace SlaveMatrix
     		X0Y0_尾1_瘤左1 = pars2["瘤左1"].ToPar();
     		X0Y0_尾1_瘤右2 = pars2["瘤右2"].ToPar();
     		X0Y0_尾1_瘤右1 = pars2["瘤右1"].ToPar();
-    		pars2 = pars["尾0"].ToPars();
+    		pars2 = partGroup["尾0"].ToPars();
     		X0Y0_尾0_背板 = pars2["背板"].ToPar();
     		X0Y0_尾0_節 = pars2["節"].ToPar();
     		X0Y0_尾0_胸板 = pars2["胸板"].ToPar();
@@ -1618,7 +1618,7 @@ namespace SlaveMatrix
     		X0Y0_尾0_瘤左1 = pars2["瘤左1"].ToPar();
     		X0Y0_尾0_瘤右2 = pars2["瘤右2"].ToPar();
     		X0Y0_尾0_瘤右1 = pars2["瘤右1"].ToPar();
-    		pars2 = pars["輪1"].ToPars();
+    		pars2 = partGroup["輪1"].ToPars();
     		X0Y0_輪1_革 = pars2["革"].ToPar();
     		X0Y0_輪1_金具1 = pars2["金具1"].ToPar();
     		X0Y0_輪1_金具2 = pars2["金具2"].ToPar();

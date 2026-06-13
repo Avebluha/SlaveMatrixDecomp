@@ -91,8 +91,8 @@ namespace SlaveMatrix
     	{
     		ThisType = GetType();
     		Body = new Difs(Sta.胴体["吹出し"]);
-    		Pars pars = Body[0][0];
-    		X0Y0_吹出し = pars["吹出し"].ToPar();
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_吹出し = partGroup["吹出し"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		吹出しCD = new ColorD();

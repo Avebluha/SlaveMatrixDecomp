@@ -40,12 +40,12 @@ namespace _2DGAMELIB
             hitGraphics.PixelOffsetMode = PixelOffsetMode.None;
         }
 
-    	public new void Draw(Pars Pars)
+    	public new void Draw(PartGroup PartGroup)
     	{
-    		Pars.Draw(unitS, displayGraphics);
+    		PartGroup.Draw(unitS, displayGraphics);
     		if (hitGraphics != null)
     		{
-    			Pars.DrawH(hitUnitScale, hitGraphics);
+    			PartGroup.DrawH(hitUnitScale, hitGraphics);
     		}
     	}
     }

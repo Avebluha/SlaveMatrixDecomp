@@ -107,10 +107,10 @@ namespace SlaveMatrix
     	{
     		ThisType = GetType();
     		Body = new Difs(Sta.腕左["飛膜根"]);
-    		Pars pars = Body[0][0];
-    		X0Y0_飛膜 = pars["飛膜"].ToPar();
-    		pars = Body[0][1];
-    		X0Y1_飛膜 = pars["飛膜"].ToPar();
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_飛膜 = partGroup["飛膜"].ToPar();
+    		partGroup = Body[0][1];
+    		X0Y1_飛膜 = partGroup["飛膜"].ToPar();
     		Xasix = false;
     		Body.SetJoints();
     		接続根 = new JointD(Body);

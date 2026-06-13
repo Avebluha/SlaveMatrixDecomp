@@ -206,7 +206,7 @@ namespace SlaveMatrix
     		if (表示)
     		{
     			吹出し.Body.Draw(Are);
-    			Are.Draw(Tex.Pars);
+    			Are.Draw(Tex.PartGroup);
     		}
     	}
 

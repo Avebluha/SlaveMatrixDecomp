@@ -124,12 +124,12 @@ namespace SlaveMatrix
     		Body.Tag = "通";
     		Body.Add(new Dif(Sta.肢左["耳"][0]));
     		Body.Add(new Dif(Sta.肢左["耳"][1]));
-    		Pars pars = Body[0][0];
-    		X0Y0_耳 = pars["耳"].ToPar();
-    		X0Y0_耳線 = pars["耳線"].ToPar();
-    		pars = Body[1][0];
-    		X1Y0_耳 = pars["耳"].ToPar();
-    		X1Y0_耳線 = pars["耳線"].ToPar();
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_耳 = partGroup["耳"].ToPar();
+    		X0Y0_耳線 = partGroup["耳線"].ToPar();
+    		partGroup = Body[1][0];
+    		X1Y0_耳 = partGroup["耳"].ToPar();
+    		X1Y0_耳線 = partGroup["耳線"].ToPar();
     		Xasix = false;
     		Body.SetJoints();
     		接続根 = new JointD(Body);

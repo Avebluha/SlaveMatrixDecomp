@@ -2306,15 +2306,15 @@ namespace SlaveMatrix
     		Body = new Difs();
     		Body.Tag = dif.Tag;
     		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		Pars pars2 = pars["バンド"].ToPars();
+    		PartGroup partGroup = Body[0][0];
+    		PartGroup pars2 = partGroup["バンド"].ToPars();
     		X0Y0_バンド_バンド = pars2["バンド"].ToPar();
-    		Pars pars3 = pars2["縁"].ToPars();
+    		PartGroup pars3 = pars2["縁"].ToPars();
     		X0Y0_バンド_縁_下 = pars3["下"].ToPar();
     		X0Y0_バンド_縁_上 = pars3["上"].ToPar();
     		X0Y0_バンド_縁_左 = pars3["左"].ToPar();
     		X0Y0_バンド_縁_右 = pars3["右"].ToPar();
-    		pars2 = pars["カップ左"].ToPars();
+    		pars2 = partGroup["カップ左"].ToPars();
     		X0Y0_カップ左_紐 = pars2["紐"].ToPar();
     		pars3 = pars2["ジャスター"].ToPars();
     		X0Y0_カップ左_ジャスター_ジャスター1 = pars3["ジャスター1"].ToPar();
@@ -2337,7 +2337,7 @@ namespace SlaveMatrix
     		X0Y0_カップ左_レース_レース12 = pars3["レース12"].ToPar();
     		X0Y0_カップ左_カップ1 = pars2["カップ1"].ToPar();
     		pars3 = pars2["柄"].ToPars();
-    		Pars pars4 = pars3["柄1"].ToPars();
+    		PartGroup pars4 = pars3["柄1"].ToPars();
     		X0Y0_カップ左_柄_柄1_柄1 = pars4["柄1"].ToPar();
     		X0Y0_カップ左_柄_柄1_柄2 = pars4["柄2"].ToPar();
     		pars4 = pars3["柄2"].ToPars();
@@ -2363,7 +2363,7 @@ namespace SlaveMatrix
     		X0Y0_カップ左_縁_縁2 = pars3["縁2"].ToPar();
     		X0Y0_カップ左_縁_縁3 = pars3["縁3"].ToPar();
     		X0Y0_カップ左_縁_縁4 = pars3["縁4"].ToPar();
-    		pars2 = pars["カップ右"].ToPars();
+    		pars2 = partGroup["カップ右"].ToPars();
     		X0Y0_カップ右_紐 = pars2["紐"].ToPar();
     		pars3 = pars2["ジャスター"].ToPars();
     		X0Y0_カップ右_ジャスター_ジャスター1 = pars3["ジャスター1"].ToPar();
@@ -2412,7 +2412,7 @@ namespace SlaveMatrix
     		X0Y0_カップ右_縁_縁2 = pars3["縁2"].ToPar();
     		X0Y0_カップ右_縁_縁3 = pars3["縁3"].ToPar();
     		X0Y0_カップ右_縁_縁4 = pars3["縁4"].ToPar();
-    		pars2 = pars["リボン"].ToPars();
+    		pars2 = partGroup["リボン"].ToPars();
     		X0Y0_リボン_リボン = pars2["リボン"].ToPar();
     		X0Y0_リボン_結び目 = pars2["結び目"].ToPar();
     		Body.SetJoints();

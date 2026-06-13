@@ -150,10 +150,10 @@ namespace SlaveMatrix
     		Body = new Difs();
     		Body.Tag = dif.Tag;
     		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		X0Y0_筋肉上 = pars["筋肉上"].ToPar();
-    		X0Y0_UpperArm = pars["上腕"].ToPar();
-    		X0Y0_筋肉下 = pars["筋肉下"].ToPar();
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_筋肉上 = partGroup["筋肉上"].ToPar();
+    		X0Y0_UpperArm = partGroup["上腕"].ToPar();
+    		X0Y0_筋肉下 = partGroup["筋肉下"].ToPar();
     		Xasix = false;
     		Body.SetJoints();
     		接続根 = new JointD(Body);

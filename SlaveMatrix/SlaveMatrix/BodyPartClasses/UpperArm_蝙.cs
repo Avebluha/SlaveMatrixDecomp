@@ -514,9 +514,9 @@ namespace SlaveMatrix
     		飛膜.Par = this;
     		ThisType = GetType();
     		Body = new Difs(Sta.腕左["獣翼UpperArm"]);
-    		Pars pars = Body[0][0];
-    		X0Y0_獣翼UpperArm = pars["獣翼上腕"].ToPar();
-    		Pars pars2 = pars["鱗"].ToPars();
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_獣翼UpperArm = partGroup["獣翼上腕"].ToPar();
+    		PartGroup pars2 = partGroup["鱗"].ToPars();
     		X0Y0_竜性_鱗1 = pars2["鱗1"].ToPar();
     		X0Y0_竜性_鱗2 = pars2["鱗2"].ToPar();
     		X0Y0_竜性_鱗3 = pars2["鱗3"].ToPar();

@@ -226,9 +226,9 @@ namespace SlaveMatrix
     		双目 双目2 = this;
     		ThisType = GetType();
     		Body = new Difs(Sta.胴体["目左"]);
-    		Pars pars = Body[0][0];
-    		X0Y0_白目 = pars["白目"].ToPar();
-    		Pars pars2 = pars["黒目"].ToPars();
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_白目 = partGroup["白目"].ToPar();
+    		PartGroup pars2 = partGroup["黒目"].ToPars();
     		X0Y0_黒目_黒目 = pars2["黒目"].ToPar();
     		X0Y0_黒目_瞳孔 = pars2["瞳孔"].ToPar();
     		X0Y0_黒目_ハート = pars2["ハート"].ToPar();

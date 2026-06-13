@@ -2080,9 +2080,9 @@ namespace SlaveMatrix
     		LowerArm_鳥 LowerArm_鳥2 = this;
     		ThisType = GetType();
     		Body = new Difs(Sta.腕左["鳥翼LowerArm"]);
-    		Pars pars = Body[0][0];
-    		X0Y0_鳥翼LowerArm = pars["鳥翼下腕"].ToPar();
-    		Pars pars2 = pars["風切羽"].ToPars();
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_鳥翼LowerArm = partGroup["鳥翼下腕"].ToPar();
+    		PartGroup pars2 = partGroup["風切羽"].ToPars();
     		X0Y0_風切羽_羽15 = pars2["羽15"].ToPar();
     		X0Y0_風切羽_羽14 = pars2["羽14"].ToPar();
     		X0Y0_風切羽_羽13 = pars2["羽13"].ToPar();
@@ -2098,7 +2098,7 @@ namespace SlaveMatrix
     		X0Y0_風切羽_羽3 = pars2["羽3"].ToPar();
     		X0Y0_風切羽_羽2 = pars2["羽2"].ToPar();
     		X0Y0_風切羽_羽1 = pars2["羽1"].ToPar();
-    		pars2 = pars["雨覆羽"].ToPars();
+    		pars2 = partGroup["雨覆羽"].ToPars();
     		X0Y0_雨覆羽_羽14 = pars2["羽14"].ToPar();
     		X0Y0_雨覆羽_羽13 = pars2["羽13"].ToPar();
     		X0Y0_雨覆羽_羽12 = pars2["羽12"].ToPar();
@@ -2113,7 +2113,7 @@ namespace SlaveMatrix
     		X0Y0_雨覆羽_羽3 = pars2["羽3"].ToPar();
     		X0Y0_雨覆羽_羽2 = pars2["羽2"].ToPar();
     		X0Y0_雨覆羽_羽1 = pars2["羽1"].ToPar();
-    		pars2 = pars["中雨覆羽"].ToPars();
+    		pars2 = partGroup["中雨覆羽"].ToPars();
     		X0Y0_中雨覆羽_羽13 = pars2["羽13"].ToPar();
     		X0Y0_中雨覆羽_羽12 = pars2["羽12"].ToPar();
     		X0Y0_中雨覆羽_羽11 = pars2["羽11"].ToPar();
@@ -2127,7 +2127,7 @@ namespace SlaveMatrix
     		X0Y0_中雨覆羽_羽3 = pars2["羽3"].ToPar();
     		X0Y0_中雨覆羽_羽2 = pars2["羽2"].ToPar();
     		X0Y0_中雨覆羽_羽1 = pars2["羽1"].ToPar();
-    		pars2 = pars["小雨覆"].ToPars();
+    		pars2 = partGroup["小雨覆"].ToPars();
     		X0Y0_小雨覆_小雨覆 = pars2["小雨覆"].ToPar();
     		pars2 = pars2["鱗"].ToPars();
     		X0Y0_小雨覆_竜性_鱗1 = pars2["鱗1"].ToPar();
@@ -2139,7 +2139,7 @@ namespace SlaveMatrix
     		X0Y0_小雨覆_竜性_鱗7 = pars2["鱗7"].ToPar();
     		X0Y0_小雨覆_竜性_鱗8 = pars2["鱗8"].ToPar();
     		X0Y0_小雨覆_竜性_鱗9 = pars2["鱗9"].ToPar();
-    		pars2 = pars["腕輪"].ToPars();
+    		pars2 = partGroup["腕輪"].ToPars();
     		X0Y0_腕輪_革 = pars2["革"].ToPar();
     		X0Y0_腕輪_金具1 = pars2["金具1"].ToPar();
     		X0Y0_腕輪_金具2 = pars2["金具2"].ToPar();

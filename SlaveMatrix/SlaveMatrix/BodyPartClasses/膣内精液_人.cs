@@ -141,10 +141,10 @@ namespace SlaveMatrix
     	{
     		ThisType = GetType();
     		Body = new Difs(Sta.胴体["膣内精液"]);
-    		Pars pars = Body[0][0];
-    		X0Y0_精液 = pars["精液"].ToPar();
-    		X0Y0_血液1 = pars["血液1"].ToPar();
-    		X0Y0_血液2 = pars["血液2"].ToPar();
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_精液 = partGroup["精液"].ToPar();
+    		X0Y0_血液1 = partGroup["血液1"].ToPar();
+    		X0Y0_血液2 = partGroup["血液2"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;

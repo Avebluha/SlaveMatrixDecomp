@@ -309,9 +309,9 @@ namespace SlaveMatrix
     	{
     		ThisType = GetType();
     		Body = new Difs(Sta.胴体["鼻肌"]);
-    		Pars pars = Body[0][0];
-    		Pars pars2 = pars["紋柄"].ToPars();
-    		Pars pars3 = pars2["紋左"].ToPars();
+    		PartGroup partGroup = Body[0][0];
+    		PartGroup pars2 = partGroup["紋柄"].ToPars();
+    		PartGroup pars3 = pars2["紋左"].ToPars();
     		X0Y0_紋柄_紋左_紋1 = pars3["紋1"].ToPar();
     		X0Y0_紋柄_紋左_紋2 = pars3["紋2"].ToPar();
     		X0Y0_紋柄_紋左_紋3 = pars3["紋3"].ToPar();
@@ -323,7 +323,7 @@ namespace SlaveMatrix
     		X0Y0_紋柄_紋右_紋3 = pars3["紋3"].ToPar();
     		X0Y0_紋柄_紋右_紋4 = pars3["紋4"].ToPar();
     		X0Y0_紋柄_紋右_紋5 = pars3["紋5"].ToPar();
-    		X0Y0_傷I = pars["傷I"].ToPar();
+    		X0Y0_傷I = partGroup["傷I"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;

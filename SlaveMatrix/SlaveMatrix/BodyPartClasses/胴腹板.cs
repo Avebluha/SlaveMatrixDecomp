@@ -108,9 +108,9 @@ namespace SlaveMatrix
     	{
     		ThisType = GetType();
     		Body = new Difs(Sta.胴体["胴腹板"]);
-    		Pars pars = Body[0][0];
-    		X0Y0_虫性_腹板 = pars["腹板"].ToPar();
-    		X0Y0_虫性_縦線 = pars["縦線"].ToPar();
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_虫性_腹板 = partGroup["腹板"].ToPar();
+    		X0Y0_虫性_縦線 = partGroup["縦線"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;

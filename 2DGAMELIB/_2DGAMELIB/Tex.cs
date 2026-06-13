@@ -7,7 +7,7 @@ namespace _2DGAMELIB
 {
     public class Tex
     {
-    	private Pars pars;
+    	private PartGroup _partGroup;
 
     	private ShapePartT _shapePartT;
 
@@ -43,7 +43,7 @@ namespace _2DGAMELIB
 
     	private bool FastText;
 
-    	public Pars Pars => pars;
+    	public PartGroup PartGroup => _partGroup;
 
     	public ShapePartT ShapePartT => _shapePartT;
 
@@ -203,7 +203,7 @@ namespace _2DGAMELIB
 
     	private void SetParT(string Name, ref Vector2D Position, double Size, double Width, double Height, Font Font, double TextSize, string Text, ref Color TextColor, ref Color ShadColor, ref Color BackColor)
     	{
-    		pars = new Pars();
+    		_partGroup = new PartGroup();
     		Out[] array = new Out[1] { Shas.GetSquare() };
     		array.OutlineFalse();
     		_shapePartT = new ShapePartT
@@ -226,7 +226,7 @@ namespace _2DGAMELIB
     		{
     			_shapePartT.ShadBrush = new SolidBrush(ShadColor);
     		}
-    		pars.Add(_shapePartT.Tag, _shapePartT);
+    		_partGroup.Add(_shapePartT.Tag, _shapePartT);
     	}
 
     	private void SetFeed(string Name, double Size, ref Color FeedColor)
@@ -246,7 +246,7 @@ namespace _2DGAMELIB
     			Hit = false
     		};
     		feed.OP.ReverseY(feed.BasePointBase);
-    		pars.Add(feed.Tag, feed);
+    		_partGroup.Add(feed.Tag, feed);
     	}
 
     	public void SetHitColor(ModeEventDispatcher Med)
@@ -326,7 +326,7 @@ namespace _2DGAMELIB
 
     	public void Dispose()
     	{
-    		pars.Dispose();
+    		_partGroup.Dispose();
     	}
     }
 }

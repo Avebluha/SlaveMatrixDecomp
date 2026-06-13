@@ -9,13 +9,13 @@ namespace _2DGAMELIB
     {
     	public string Tag = "";
 
-    	private List<Pars> parss = new List<Pars>();
+    	private List<PartGroup> parss = new List<PartGroup>();
 
-    	public List<Pars> Parss => parss;
+    	public List<PartGroup> Parss => parss;
 
     	public int Count => parss.Count;
 
-    	public Pars this[int Index]
+    	public PartGroup this[int Index]
     	{
     		get
     		{
@@ -31,7 +31,7 @@ namespace _2DGAMELIB
     	{
     		set
     		{
-    			foreach (Pars item in parss)
+    			foreach (PartGroup item in parss)
     			{
     				item.PositionSize = value;
     			}
@@ -42,7 +42,7 @@ namespace _2DGAMELIB
     	{
     		set
     		{
-    			foreach (Pars item in parss)
+    			foreach (PartGroup item in parss)
     			{
     				item.PositionVector = value;
     			}
@@ -53,7 +53,7 @@ namespace _2DGAMELIB
     	{
     		set
     		{
-    			foreach (Pars item in parss)
+    			foreach (PartGroup item in parss)
     			{
     				item.AngleBase = value;
     			}
@@ -64,7 +64,7 @@ namespace _2DGAMELIB
     	{
     		set
     		{
-    			foreach (Pars item in parss)
+    			foreach (PartGroup item in parss)
     			{
     				item.AngleCont = value;
     			}
@@ -75,7 +75,7 @@ namespace _2DGAMELIB
     	{
     		set
     		{
-    			foreach (Pars item in parss)
+    			foreach (PartGroup item in parss)
     			{
     				item.SizeBase = value;
     			}
@@ -86,7 +86,7 @@ namespace _2DGAMELIB
     	{
     		set
     		{
-    			foreach (Pars item in parss)
+    			foreach (PartGroup item in parss)
     			{
     				item.SizeCont = value;
     			}
@@ -97,7 +97,7 @@ namespace _2DGAMELIB
     	{
     		set
     		{
-    			foreach (Pars item in parss)
+    			foreach (PartGroup item in parss)
     			{
     				item.SizeXBase = value;
     			}
@@ -108,7 +108,7 @@ namespace _2DGAMELIB
     	{
     		set
     		{
-    			foreach (Pars item in parss)
+    			foreach (PartGroup item in parss)
     			{
     				item.SizeXCont = value;
     			}
@@ -119,7 +119,7 @@ namespace _2DGAMELIB
     	{
     		set
     		{
-    			foreach (Pars item in parss)
+    			foreach (PartGroup item in parss)
     			{
     				item.SizeYBase = value;
     			}
@@ -130,7 +130,7 @@ namespace _2DGAMELIB
     	{
     		set
     		{
-    			foreach (Pars item in parss)
+    			foreach (PartGroup item in parss)
     			{
     				item.SizeYCont = value;
     			}
@@ -141,7 +141,7 @@ namespace _2DGAMELIB
     	{
     		set
     		{
-    			foreach (Pars item in parss)
+    			foreach (PartGroup item in parss)
     			{
     				item.Dra = value;
     			}
@@ -152,7 +152,7 @@ namespace _2DGAMELIB
     	{
     		set
     		{
-    			foreach (Pars item in parss)
+    			foreach (PartGroup item in parss)
     			{
     				item.Hit = value;
     			}
@@ -161,7 +161,7 @@ namespace _2DGAMELIB
 
     	public IEnumerable<ShapePart> EnumAllPar()
     	{
-    		foreach (Pars item in parss)
+    		foreach (PartGroup item in parss)
     		{
     			foreach (ShapePart item2 in item.EnumAllPar())
     			{
@@ -172,7 +172,7 @@ namespace _2DGAMELIB
 
     	public void SetDefault()
     	{
-    		foreach (Pars item in parss)
+    		foreach (PartGroup item in parss)
     		{
     			item.SetDefault();
     		}
@@ -190,21 +190,21 @@ namespace _2DGAMELIB
     	private void Copy(Dif Dif)
     	{
     		Tag = Dif.Tag;
-    		foreach (Pars item in Dif.parss)
+    		foreach (PartGroup item in Dif.parss)
     		{
-    			parss.Add(new Pars(item));
+    			parss.Add(new PartGroup(item));
     		}
     	}
 
-    	public void Add(Pars Pars)
+    	public void Add(PartGroup PartGroup)
     	{
-    		parss.Add(Pars);
+    		parss.Add(PartGroup);
     	}
 
     	public List<string> GetHitTags(ref Color HitColor)
     	{
     		List<string> list = new List<string>();
-    		foreach (Pars item in parss)
+    		foreach (PartGroup item in parss)
     		{
     			list.AddRange(item.GetHitTags(ref HitColor));
     		}
@@ -214,7 +214,7 @@ namespace _2DGAMELIB
     	public List<ShapePart> GetHitPars(ref Color HitColor)
     	{
     		List<ShapePart> list = new List<ShapePart>();
-    		foreach (Pars item in parss)
+    		foreach (PartGroup item in parss)
     		{
     			list.AddRange(item.GetHitPars(ref HitColor));
     		}
@@ -223,7 +223,7 @@ namespace _2DGAMELIB
 
     	public bool IsHit(ref Color HitColor)
     	{
-    		foreach (Pars item in parss)
+    		foreach (PartGroup item in parss)
     		{
     			if (item.IsHit(ref HitColor))
     			{
@@ -235,7 +235,7 @@ namespace _2DGAMELIB
 
     	public void ReverseX()
     	{
-    		foreach (Pars item in parss)
+    		foreach (PartGroup item in parss)
     		{
     			item.ReverseX();
     		}
@@ -243,7 +243,7 @@ namespace _2DGAMELIB
 
     	public void ReverseY()
     	{
-    		foreach (Pars item in parss)
+    		foreach (PartGroup item in parss)
     		{
     			item.ReverseY();
     		}
@@ -251,7 +251,7 @@ namespace _2DGAMELIB
 
     	public void Dispose()
     	{
-    		foreach (Pars item in parss)
+    		foreach (PartGroup item in parss)
     		{
     			item.Dispose();
     		}

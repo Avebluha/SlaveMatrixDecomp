@@ -565,9 +565,9 @@ namespace SlaveMatrix
     		LowerArm_蝙 LowerArm_蝙2 = this;
     		ThisType = GetType();
     		Body = new Difs(Sta.腕左["獣翼LowerArm"]);
-    		Pars pars = Body[0][0];
-    		X0Y0_獣翼LowerArm = pars["獣翼下腕"].ToPar();
-    		Pars pars2 = pars["鱗"].ToPars();
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_獣翼LowerArm = partGroup["獣翼下腕"].ToPar();
+    		PartGroup pars2 = partGroup["鱗"].ToPars();
     		X0Y0_竜性_鱗1 = pars2["鱗1"].ToPar();
     		X0Y0_竜性_鱗2 = pars2["鱗2"].ToPar();
     		X0Y0_竜性_鱗3 = pars2["鱗3"].ToPar();
@@ -581,7 +581,7 @@ namespace SlaveMatrix
     		X0Y0_竜性_鱗11 = pars2["鱗11"].ToPar();
     		X0Y0_竜性_鱗12 = pars2["鱗12"].ToPar();
     		X0Y0_竜性_鱗13 = pars2["鱗13"].ToPar();
-    		pars2 = pars["腕輪"].ToPars();
+    		pars2 = partGroup["腕輪"].ToPars();
     		X0Y0_腕輪_革 = pars2["革"].ToPar();
     		X0Y0_腕輪_金具1 = pars2["金具1"].ToPar();
     		X0Y0_腕輪_金具2 = pars2["金具2"].ToPar();

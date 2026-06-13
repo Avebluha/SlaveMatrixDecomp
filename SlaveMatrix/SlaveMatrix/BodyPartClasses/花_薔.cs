@@ -910,20 +910,20 @@ namespace SlaveMatrix
     	public 花_薔(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 花_薔D e)
     	{
     		ThisType = GetType();
-    		Pars pars = new Pars();
-    		pars.Tag = "バラ";
-    		Pars pars2 = Sta.肢左["植"][0][0];
-    		pars.Add("バラ", new Pars(pars2["花"].ToPars()["バラ"].ToPars()));
-    		pars.Add("萼", new Pars(pars2["萼"].ToPars()));
+    		PartGroup partGroup = new PartGroup();
+    		partGroup.Tag = "バラ";
+    		PartGroup pars2 = Sta.肢左["植"][0][0];
+    		partGroup.Add("バラ", new PartGroup(pars2["花"].ToPars()["バラ"].ToPars()));
+    		partGroup.Add("萼", new PartGroup(pars2["萼"].ToPars()));
     		Dif dif = new Dif();
     		dif.Tag = "花";
-    		dif.Add(new Pars(pars));
+    		dif.Add(new PartGroup(partGroup));
     		Body = new Difs();
     		Body.Tag = dif.Tag;
     		Body.Add(dif);
-    		Pars pars3 = Body[0][0];
-    		Pars pars4 = pars3["バラ"].ToPars();
-    		Pars pars5 = pars4["通常"].ToPars();
+    		PartGroup pars3 = Body[0][0];
+    		PartGroup pars4 = pars3["バラ"].ToPars();
+    		PartGroup pars5 = pars4["通常"].ToPars();
     		X0Y0_花_バラ_通常_花弁2 = pars5["花弁2"].ToPar();
     		X0Y0_花_バラ_通常_花弁4 = pars5["花弁4"].ToPar();
     		X0Y0_花_バラ_通常_花弁3 = pars5["花弁3"].ToPar();
@@ -949,7 +949,7 @@ namespace SlaveMatrix
     		X0Y0_花_バラ_欠損_花弁11 = pars5["花弁11"].ToPar();
     		X0Y0_花_バラ_欠損_花弁10 = pars5["花弁10"].ToPar();
     		X0Y0_花_バラ_欠損_花弁影 = pars5["花弁影"].ToPar();
-    		Pars pars6 = pars3["萼"].ToPars();
+    		PartGroup pars6 = pars3["萼"].ToPars();
     		pars5 = pars6["通常"].ToPars();
     		X0Y0_萼_通常_萼 = pars5["萼"].ToPar();
     		pars5 = pars6["欠損"].ToPars();

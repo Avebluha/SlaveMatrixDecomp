@@ -101,8 +101,8 @@ namespace SlaveMatrix
     	{
     		ThisType = GetType();
     		Body = new Difs(Sta.性器付["ピアス"]);
-    		Pars pars = Body[0][0];
-    		X0Y0_ピアス = pars["ピアス"].ToPar();
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_ピアス = partGroup["ピアス"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;

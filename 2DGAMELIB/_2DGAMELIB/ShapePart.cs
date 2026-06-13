@@ -25,7 +25,7 @@ namespace _2DGAMELIB
         public static int NOutline;
         public static int NHitFill;
 
-        private Pars parent;
+        private PartGroup parent;
 
     	public string Tag = "";
 
@@ -147,7 +147,7 @@ namespace _2DGAMELIB
 
     	private bool EditH = true;
 
-    	public Pars Parent => parent;
+    	public PartGroup Parent => parent;
 
     	public List<Out> OP
     	{
@@ -546,7 +546,7 @@ namespace _2DGAMELIB
     			HitBrush.Color = value;
     		}
     	}
-    	public void SetParent(Pars Parent)
+    	public void SetParent(PartGroup Parent)
     	{
     		parent = Parent;
     	}
@@ -965,8 +965,8 @@ namespace _2DGAMELIB
     	public List<int> GetPath()
     	{
     		List<int> list = new List<int> { parent.IndexOf(this) };
-    		Pars pars2 = parent;
-    		for (Pars pars3 = pars2.Parent; pars3 != null; pars3 = pars2.Parent)
+    		PartGroup pars2 = parent;
+    		for (PartGroup pars3 = pars2.Parent; pars3 != null; pars3 = pars2.Parent)
     		{
     			list.Insert(0, pars3.IndexOf(pars2));
     			pars2 = pars3;

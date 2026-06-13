@@ -536,8 +536,8 @@ namespace SlaveMatrix
     		Body = new Difs();
     		Body.Tag = dif.Tag;
     		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		Pars pars2 = pars["根"].ToPars();
+    		PartGroup partGroup = Body[0][0];
+    		PartGroup pars2 = partGroup["根"].ToPars();
     		X0Y0_根_根 = pars2["根"].ToPar();
     		X0Y0_根_凸1 = pars2["凸1"].ToPar();
     		X0Y0_根_凸2 = pars2["凸2"].ToPar();
@@ -549,7 +549,7 @@ namespace SlaveMatrix
     		X0Y0_根_凸8 = pars2["凸8"].ToPar();
     		X0Y0_根_凸9 = pars2["凸9"].ToPar();
     		X0Y0_根_凸10 = pars2["凸10"].ToPar();
-    		pars2 = pars["先"].ToPars();
+    		pars2 = partGroup["先"].ToPars();
     		X0Y0_先_先 = pars2["先"].ToPar();
     		X0Y0_先_凸1 = pars2["凸1"].ToPar();
     		X0Y0_先_凸2 = pars2["凸2"].ToPar();

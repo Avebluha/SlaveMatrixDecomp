@@ -87,8 +87,8 @@ namespace SlaveMatrix
     	{
     		ThisType = GetType();
     		Body = new Difs(Sta.胴体["胸毛"]);
-    		Pars pars = Body[0][0]["獣性"].ToPars();
-    		X0Y0_獣性_胸毛 = pars["胸毛"].ToPar();
+    		PartGroup partGroup = Body[0][0]["獣性"].ToPars();
+    		X0Y0_獣性_胸毛 = partGroup["胸毛"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;

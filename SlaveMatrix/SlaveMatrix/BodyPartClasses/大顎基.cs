@@ -411,8 +411,8 @@ namespace SlaveMatrix
     		大顎上.Par = this;
     		ThisType = GetType();
     		Body = new Difs(Sta.肢中["大顎基"]);
-    		Pars pars = Body[0][0];
-    		X0Y0_甲殻下 = pars["甲殻下"].ToPar();
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_甲殻下 = partGroup["甲殻下"].ToPar();
     		大顎上.接続(大顎上_接続点);
     		Body.SetJoints();
     		接続根 = new JointD(Body);

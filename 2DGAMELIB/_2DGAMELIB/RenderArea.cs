@@ -110,12 +110,12 @@ namespace _2DGAMELIB
             }
     	}
 
-    	public void Draw(Pars Pars)
+    	public void Draw(PartGroup PartGroup)
     	{
-            Pars.Draw(displayUnitScale, displayGraphics);
+            PartGroup.Draw(displayUnitScale, displayGraphics);
             if (hitGraphics != null)
             {
-                Pars.DrawH(hitUnitScale, hitGraphics);
+                PartGroup.DrawH(hitUnitScale, hitGraphics);
                
             }
             

@@ -407,17 +407,17 @@ namespace SlaveMatrix
     	{
     		ThisType = GetType();
     		Body = new Difs(Sta.胴体["紅潮"]);
-    		Pars pars = Body[0][0];
-    		X0Y0_紅潮0 = pars["紅潮0"].ToPar();
-    		X0Y0_紅潮1 = pars["紅潮1"].ToPar();
-    		X0Y0_紅潮右 = pars["紅潮右"].ToPar();
-    		X0Y0_紅潮左 = pars["紅潮左"].ToPar();
-    		X0Y0_紅潮線左 = pars["紅潮線左"].ToPar();
-    		X0Y0_紅潮線右 = pars["紅潮線右"].ToPar();
-    		X0Y0_紅潮弱左 = pars["紅潮弱左"].ToPar();
-    		X0Y0_紅潮弱右 = pars["紅潮弱右"].ToPar();
-    		X0Y0_紅潮線弱左 = pars["紅潮線弱左"].ToPar();
-    		X0Y0_紅潮線弱右 = pars["紅潮線弱右"].ToPar();
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_紅潮0 = partGroup["紅潮0"].ToPar();
+    		X0Y0_紅潮1 = partGroup["紅潮1"].ToPar();
+    		X0Y0_紅潮右 = partGroup["紅潮右"].ToPar();
+    		X0Y0_紅潮左 = partGroup["紅潮左"].ToPar();
+    		X0Y0_紅潮線左 = partGroup["紅潮線左"].ToPar();
+    		X0Y0_紅潮線右 = partGroup["紅潮線右"].ToPar();
+    		X0Y0_紅潮弱左 = partGroup["紅潮弱左"].ToPar();
+    		X0Y0_紅潮弱右 = partGroup["紅潮弱右"].ToPar();
+    		X0Y0_紅潮線弱左 = partGroup["紅潮線弱左"].ToPar();
+    		X0Y0_紅潮線弱右 = partGroup["紅潮線弱右"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;

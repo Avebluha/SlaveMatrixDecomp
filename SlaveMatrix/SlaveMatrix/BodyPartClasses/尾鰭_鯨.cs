@@ -109,13 +109,13 @@ namespace SlaveMatrix
     		ThisType = GetType();
     		Dif dif = new Dif();
     		dif.Tag = "鯨鰭";
-    		dif.Add(new Pars(Sta.肢中["尾"][1][0]));
+    		dif.Add(new PartGroup(Sta.肢中["尾"][1][0]));
     		Body = new Difs();
     		Body.Tag = dif.Tag;
     		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		X0Y0_鰭 = pars["鰭"].ToPar();
-    		X0Y0_尾 = pars["尾"].ToPar();
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_鰭 = partGroup["鰭"].ToPar();
+    		X0Y0_尾 = partGroup["尾"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;

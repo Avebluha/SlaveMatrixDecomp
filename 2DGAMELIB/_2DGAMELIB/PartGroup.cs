@@ -6,15 +6,15 @@ using System.Drawing.Drawing2D;
 namespace _2DGAMELIB
 {
     [Serializable]
-    public class Pars
+    public class PartGroup
     {
-    	private Pars parent;
+    	private PartGroup parent;
 
     	public string Tag = "";
 
     	public OrderedDictionary<string, object> pars = new OrderedDictionary<string, object>();
 
-    	public Pars Parent => parent;
+    	public PartGroup Parent => parent;
 
     	public IEnumerable<string> Keys => pars.Keys;
 
@@ -26,9 +26,9 @@ namespace _2DGAMELIB
     		{
     			foreach (object value2 in pars.Values)
     			{
-    				if (value2 is Pars)
+    				if (value2 is PartGroup)
     				{
-    					((Pars)value2).PositionSize = value;
+    					((PartGroup)value2).PositionSize = value;
     				}
     				else if (value2 is ShapePart)
     				{
@@ -44,9 +44,9 @@ namespace _2DGAMELIB
     		{
     			foreach (object value2 in pars.Values)
     			{
-    				if (value2 is Pars)
+    				if (value2 is PartGroup)
     				{
-    					((Pars)value2).PositionVector = value;
+    					((PartGroup)value2).PositionVector = value;
     				}
     				else if (value2 is ShapePart)
     				{
@@ -62,9 +62,9 @@ namespace _2DGAMELIB
     		{
     			foreach (object value2 in pars.Values)
     			{
-    				if (value2 is Pars)
+    				if (value2 is PartGroup)
     				{
-    					((Pars)value2).AngleBase = value;
+    					((PartGroup)value2).AngleBase = value;
     				}
     				else if (value2 is ShapePart)
     				{
@@ -80,9 +80,9 @@ namespace _2DGAMELIB
     		{
     			foreach (object value2 in pars.Values)
     			{
-    				if (value2 is Pars)
+    				if (value2 is PartGroup)
     				{
-    					((Pars)value2).AngleCont = value;
+    					((PartGroup)value2).AngleCont = value;
     				}
     				else if (value2 is ShapePart)
     				{
@@ -98,9 +98,9 @@ namespace _2DGAMELIB
     		{
     			foreach (object value2 in pars.Values)
     			{
-    				if (value2 is Pars)
+    				if (value2 is PartGroup)
     				{
-    					((Pars)value2).SizeBase = value;
+    					((PartGroup)value2).SizeBase = value;
     				}
     				else if (value2 is ShapePart)
     				{
@@ -116,9 +116,9 @@ namespace _2DGAMELIB
     		{
     			foreach (object value2 in pars.Values)
     			{
-    				if (value2 is Pars)
+    				if (value2 is PartGroup)
     				{
-    					((Pars)value2).SizeCont = value;
+    					((PartGroup)value2).SizeCont = value;
     				}
     				else if (value2 is ShapePart)
     				{
@@ -134,9 +134,9 @@ namespace _2DGAMELIB
     		{
     			foreach (object value2 in pars.Values)
     			{
-    				if (value2 is Pars)
+    				if (value2 is PartGroup)
     				{
-    					((Pars)value2).SizeXBase = value;
+    					((PartGroup)value2).SizeXBase = value;
     				}
     				else if (value2 is ShapePart)
     				{
@@ -152,9 +152,9 @@ namespace _2DGAMELIB
     		{
     			foreach (object value2 in pars.Values)
     			{
-    				if (value2 is Pars)
+    				if (value2 is PartGroup)
     				{
-    					((Pars)value2).SizeXCont = value;
+    					((PartGroup)value2).SizeXCont = value;
     				}
     				else if (value2 is ShapePart)
     				{
@@ -170,9 +170,9 @@ namespace _2DGAMELIB
     		{
     			foreach (object value2 in pars.Values)
     			{
-    				if (value2 is Pars)
+    				if (value2 is PartGroup)
     				{
-    					((Pars)value2).SizeYBase = value;
+    					((PartGroup)value2).SizeYBase = value;
     				}
     				else if (value2 is ShapePart)
     				{
@@ -188,9 +188,9 @@ namespace _2DGAMELIB
     		{
     			foreach (object value2 in pars.Values)
     			{
-    				if (value2 is Pars)
+    				if (value2 is PartGroup)
     				{
-    					((Pars)value2).SizeYCont = value;
+    					((PartGroup)value2).SizeYCont = value;
     				}
     				else if (value2 is ShapePart)
     				{
@@ -206,9 +206,9 @@ namespace _2DGAMELIB
     		{
     			foreach (object value2 in pars.Values)
     			{
-    				if (value2 is Pars)
+    				if (value2 is PartGroup)
     				{
-    					((Pars)value2).Dra = value;
+    					((PartGroup)value2).Dra = value;
     				}
     				else if (value2 is ShapePart)
     				{
@@ -224,9 +224,9 @@ namespace _2DGAMELIB
     		{
     			foreach (object value2 in pars.Values)
     			{
-    				if (value2 is Pars)
+    				if (value2 is PartGroup)
     				{
-    					((Pars)value2).Hit = value;
+    					((PartGroup)value2).Hit = value;
     				}
     				else if (value2 is ShapePart)
     				{
@@ -260,7 +260,7 @@ namespace _2DGAMELIB
     		}
     	}
 
-    	public void SetParent(Pars Parent)
+    	public void SetParent(PartGroup Parent)
     	{
     		parent = Parent;
     	}
@@ -282,24 +282,24 @@ namespace _2DGAMELIB
     		pars.Add(Name, ShapePartT);
     	}
 
-    	public void Add(string Name, Pars Pars)
+    	public void Add(string Name, PartGroup PartGroup)
     	{
-    		Pars.SetParent(this);
-    		pars.Add(Name, Pars);
+    		PartGroup.SetParent(this);
+    		pars.Add(Name, PartGroup);
     	}
 
-    	public void Add(Pars Pars)
+    	public void Add(PartGroup PartGroup)
     	{
-    		Pars.SetParent(this);
-    		pars.Add(Pars.Tag, Pars);
+    		PartGroup.SetParent(this);
+    		pars.Add(PartGroup.Tag, PartGroup);
     	}
 
     	public void Remove(string Name)
     	{
     		object obj = pars[Name];
-    		if (obj is Pars)
+    		if (obj is PartGroup)
     		{
-    			((Pars)obj).SetParent(null);
+    			((PartGroup)obj).SetParent(null);
     		}
     		else if (obj is ShapePartT)
     		{
@@ -316,9 +316,9 @@ namespace _2DGAMELIB
     	{
     		foreach (object value in pars.Values)
     		{
-    			if (value is Pars)
+    			if (value is PartGroup)
     			{
-    				foreach (ShapePart item in ((Pars)value).EnumAllPar())
+    				foreach (ShapePart item in ((PartGroup)value).EnumAllPar())
     				{
     					yield return item;
     				}
@@ -334,9 +334,9 @@ namespace _2DGAMELIB
     	{
     		foreach (object value in pars.Values)
     		{
-    			if (value is Pars)
+    			if (value is PartGroup)
     			{
-    				((Pars)value).SetDefault();
+    				((PartGroup)value).SetDefault();
     			}
     			else if (value is ShapePartT)
     			{
@@ -349,36 +349,36 @@ namespace _2DGAMELIB
     		}
     	}
 
-    	public Pars()
+    	public PartGroup()
     	{
     	}
 
-    	public Pars(ShapePart ShapePart)
+    	public PartGroup(ShapePart ShapePart)
     	{
     		Tag = ShapePart.Tag;
     		Add(ShapePart.Tag, ShapePart);
     	}
 
-    	public Pars(ShapePartT ShapePartT)
+    	public PartGroup(ShapePartT ShapePartT)
     	{
     		Tag = ShapePartT.Tag;
     		Add(ShapePartT.Tag, ShapePartT);
     	}
 
-    	public Pars(Pars Pars)
+    	public PartGroup(PartGroup PartGroup)
     	{
-    		Copy(Pars);
+    		Copy(PartGroup);
     	}
 
-    	private void Copy(Pars Pars)
+    	private void Copy(PartGroup PartGroup)
     	{
-    		Tag = Pars.Tag;
-    		foreach (string key in Pars.pars.Keys)
+    		Tag = PartGroup.Tag;
+    		foreach (string key in PartGroup.pars.Keys)
     		{
-    			object obj = Pars.pars[key];
-    			if (obj is Pars)
+    			object obj = PartGroup.pars[key];
+    			if (obj is PartGroup)
     			{
-    				Add(key, ((Pars)obj).Clone());
+    				Add(key, ((PartGroup)obj).Clone());
     			}
     			else if (obj is ShapePartT)
     			{
@@ -391,16 +391,16 @@ namespace _2DGAMELIB
     		}
     	}
 
-    	private Pars Clone()
+    	private PartGroup Clone()
     	{
-    		Pars pars2 = new Pars();
+    		PartGroup pars2 = new PartGroup();
     		pars2.Tag = Tag;
     		foreach (string key in pars.Keys)
     		{
     			object obj = pars[key];
-    			if (obj is Pars)
+    			if (obj is PartGroup)
     			{
-    				pars2.Add(key, ((Pars)obj).Clone());
+    				pars2.Add(key, ((PartGroup)obj).Clone());
     			}
     			else if (obj is ShapePartT)
     			{
@@ -418,9 +418,9 @@ namespace _2DGAMELIB
     	{
     		foreach (object value in pars.Values)
     		{
-    			if (value is Pars)
+    			if (value is PartGroup)
     			{
-    				((Pars)value).Draw(Unit, Graphics);
+    				((PartGroup)value).Draw(Unit, Graphics);
     			}
     			else if (value is ShapePartT)
     			{
@@ -437,9 +437,9 @@ namespace _2DGAMELIB
     	{
     		foreach (object value in pars.Values)
     		{
-    			if (value is Pars)
+    			if (value is PartGroup)
     			{
-    				((Pars)value).DrawH(Unit, Graphics);
+    				((PartGroup)value).DrawH(Unit, Graphics);
     			}
     			else if (value is ShapePart)
     			{
@@ -454,9 +454,9 @@ namespace _2DGAMELIB
     		foreach (object value in pars.Values)
     		{
     			ShapePart shapePart;
-    			if (value is Pars)
+    			if (value is PartGroup)
     			{
-    				list.AddRange(((Pars)value).GetHitTags(ref HitColor));
+    				list.AddRange(((PartGroup)value).GetHitTags(ref HitColor));
     			}
     			else if (value is ShapePart && (shapePart = (ShapePart)value).HitColor == HitColor)
     			{
@@ -472,9 +472,9 @@ namespace _2DGAMELIB
     		foreach (object value in pars.Values)
     		{
     			ShapePart item;
-    			if (value is Pars)
+    			if (value is PartGroup)
     			{
-    				list.AddRange(((Pars)value).GetHitPars(ref HitColor));
+    				list.AddRange(((PartGroup)value).GetHitPars(ref HitColor));
     			}
     			else if (value is ShapePart && (item = (ShapePart)value).HitColor == HitColor)
     			{
@@ -488,7 +488,7 @@ namespace _2DGAMELIB
     	{
     		foreach (object value in pars.Values)
     		{
-    			if (value is Pars && ((Pars)value).IsHit(ref HitColor))
+    			if (value is PartGroup && ((PartGroup)value).IsHit(ref HitColor))
     			{
     				return true;
     			}
@@ -508,9 +508,9 @@ namespace _2DGAMELIB
     	private ShapePart GetPar(int l, List<int> Path)
     	{
     		object obj = pars[Path[l]];
-    		if (obj is Pars)
+    		if (obj is PartGroup)
     		{
-    			return ((Pars)obj).GetPar(l + 1, Path);
+    			return ((PartGroup)obj).GetPar(l + 1, Path);
     		}
     		return (ShapePart)obj;
     	}
@@ -519,9 +519,9 @@ namespace _2DGAMELIB
     	{
     		foreach (object value in pars.Values)
     		{
-    			if (value is Pars)
+    			if (value is PartGroup)
     			{
-    				((Pars)value).ReverseX();
+    				((PartGroup)value).ReverseX();
     			}
     			else if (value is ShapePart)
     			{
@@ -534,9 +534,9 @@ namespace _2DGAMELIB
     	{
     		foreach (object value in pars.Values)
     		{
-    			if (value is Pars)
+    			if (value is PartGroup)
     			{
-    				((Pars)value).ReverseY();
+    				((PartGroup)value).ReverseY();
     			}
     			else if (value is ShapePart)
     			{
@@ -549,9 +549,9 @@ namespace _2DGAMELIB
     	{
     		foreach (object value in pars.Values)
     		{
-    			if (value is Pars)
+    			if (value is PartGroup)
     			{
-    				((Pars)value).Dispose();
+    				((PartGroup)value).Dispose();
     			}
     			else if (value is ShapePartT)
     			{
@@ -564,11 +564,11 @@ namespace _2DGAMELIB
     		}
     	}
     }
-    public static class pars
+    public static class PartGroupUtils
     {
-    	public static Pars ToPars(this object obj)
+    	public static PartGroup ToPars(this object obj)
     	{
-    		return (Pars)obj;
+    		return (PartGroup)obj;
     	}
 
     	public static ShapePartT ToParT(this object obj)

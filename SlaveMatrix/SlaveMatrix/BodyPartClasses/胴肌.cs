@@ -192,13 +192,13 @@ namespace SlaveMatrix
     	{
     		ThisType = GetType();
     		Body = new Difs(Sta.胴体["胴肌"]);
-    		Pars pars = Body[0][0]["植タトゥ"].ToPars();
-    		X0Y0_植タトゥ_タトゥ花左 = pars["タトゥ花左"].ToPar();
-    		X0Y0_植タトゥ_タトゥ花右 = pars["タトゥ花右"].ToPar();
-    		X0Y0_植タトゥ_タトゥ花 = pars["タトゥ花"].ToPar();
-    		X0Y0_植タトゥ_タトゥ茎 = pars["タトゥ茎"].ToPar();
-    		X0Y0_植タトゥ_タトゥ葉左 = pars["タトゥ葉左"].ToPar();
-    		X0Y0_植タトゥ_タトゥ葉右 = pars["タトゥ葉右"].ToPar();
+    		PartGroup partGroup = Body[0][0]["植タトゥ"].ToPars();
+    		X0Y0_植タトゥ_タトゥ花左 = partGroup["タトゥ花左"].ToPar();
+    		X0Y0_植タトゥ_タトゥ花右 = partGroup["タトゥ花右"].ToPar();
+    		X0Y0_植タトゥ_タトゥ花 = partGroup["タトゥ花"].ToPar();
+    		X0Y0_植タトゥ_タトゥ茎 = partGroup["タトゥ茎"].ToPar();
+    		X0Y0_植タトゥ_タトゥ葉左 = partGroup["タトゥ葉左"].ToPar();
+    		X0Y0_植タトゥ_タトゥ葉右 = partGroup["タトゥ葉右"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;

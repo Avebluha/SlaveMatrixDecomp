@@ -214,13 +214,13 @@ namespace SlaveMatrix
     		ThisType = GetType();
     		Dif dif = new Dif();
     		dif.Tag = "エイリアン";
-    		dif.Add(new Pars(Sta.肢中["頭部後"][0][0]));
+    		dif.Add(new PartGroup(Sta.肢中["頭部後"][0][0]));
     		Body = new Difs();
     		Body.Tag = dif.Tag;
     		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		X0Y0_頭部 = pars["頭部"].ToPar();
-    		Pars pars2 = pars["線"].ToPars();
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_頭部 = partGroup["頭部"].ToPar();
+    		PartGroup pars2 = partGroup["線"].ToPars();
     		X0Y0_線_線左1 = pars2["線左1"].ToPar();
     		X0Y0_線_線左2 = pars2["線左2"].ToPar();
     		X0Y0_線_線左3 = pars2["線左3"].ToPar();

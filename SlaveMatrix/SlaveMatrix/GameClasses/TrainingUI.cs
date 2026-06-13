@@ -1694,7 +1694,7 @@ namespace SlaveMatrix
     				撮影.Move(ref hc);
     				SlaveStamina.Move(ref hc);
     				PlayerStamina.Move(ref hc);
-    				if (調教終了.Pars.IsHit(ref hc) || 拘束具.Pars.IsHit(ref hc) || 目隠帯.Pars.IsHit(ref hc) || 玉口枷.Pars.IsHit(ref hc) || 断面.Pars.IsHit(ref hc) || 媚薬.Pars.IsHit(ref hc) || 撮影.Pars.IsHit(ref hc))
+    				if (調教終了.PartGroup.IsHit(ref hc) || 拘束具.PartGroup.IsHit(ref hc) || 目隠帯.PartGroup.IsHit(ref hc) || 玉口枷.PartGroup.IsHit(ref hc) || 断面.PartGroup.IsHit(ref hc) || 媚薬.PartGroup.IsHit(ref hc) || 撮影.PartGroup.IsHit(ref hc))
     				{
     					Med.CursorShow();
     				}
@@ -1702,7 +1702,7 @@ namespace SlaveMatrix
     				{
     					Med.CursorShow();
     				}
-    				else if (SlaveStamina.Pars.IsHit(ref hc) || PlayerStamina.Pars.IsHit(ref hc))
+    				else if (SlaveStamina.PartGroup.IsHit(ref hc) || PlayerStamina.PartGroup.IsHit(ref hc))
     				{
     					Med.CursorShow();
     				}
@@ -1865,35 +1865,35 @@ namespace SlaveMatrix
     		{
     			ip.SubInfoIm = ((hcm == ペニスCM || hcm == マウスCM || hcm == ハンド右CM) ? ("LCl:" + GameText.選択) : ("LCl:" + GameText.持つ));
     		}
-    		if (拘束具.Pars.Values.First().ToPar().HitColor == hc)
+    		if (拘束具.PartGroup.Values.First().ToPar().HitColor == hc)
     		{
     			ip.SubInfoIm = GameText.拘束状態を切換えます;
     		}
-    		if (目隠帯.Pars.Values.First().ToPar().HitColor == hc)
+    		if (目隠帯.PartGroup.Values.First().ToPar().HitColor == hc)
     		{
     			ip.SubInfoIm = GameText.目隠状態を切換えます;
     		}
-    		if (玉口枷.Pars.Values.First().ToPar().HitColor == hc)
+    		if (玉口枷.PartGroup.Values.First().ToPar().HitColor == hc)
     		{
     			ip.SubInfoIm = GameText.口枷状態を切換えます;
     		}
-    		if (断面.Pars.Values.First().ToPar().HitColor == hc)
+    		if (断面.PartGroup.Values.First().ToPar().HitColor == hc)
     		{
     			ip.SubInfoIm = GameText.断面表示を切換えます;
     		}
-    		if (媚薬.Pars.Values.First().ToPar().HitColor == hc)
+    		if (媚薬.PartGroup.Values.First().ToPar().HitColor == hc)
     		{
     			ip.SubInfoIm = GameText.発情状態になります + "(-" + 媚薬投与価格.ToString("#,0") + ")";
     		}
-    		if (SlaveStamina.Pars.Values.First().ToPar().HitColor == hc)
+    		if (SlaveStamina.PartGroup.Values.First().ToPar().HitColor == hc)
     		{
     			ip.SubInfoIm = "Reset slave's stamina";
     		}
-    		if (PlayerStamina.Pars.Values.First().ToPar().HitColor == hc)
+    		if (PlayerStamina.PartGroup.Values.First().ToPar().HitColor == hc)
     		{
     			ip.SubInfoIm = "Reset player's stamina";
     		}
-    		if (撮影.Pars.Values.First().ToPar().HitColor == hc && ip.SubInfoIm != GameText.撮影しました + "\r\n" + GameText.写真はPhotoフォルダに保存されます)
+    		if (撮影.PartGroup.Values.First().ToPar().HitColor == hc && ip.SubInfoIm != GameText.撮影しました + "\r\n" + GameText.写真はPhotoフォルダに保存されます)
     		{
     			ip.SubInfoIm = GameText.撮影を行います;
     		}
@@ -2485,32 +2485,32 @@ namespace SlaveMatrix
     			興奮mゲージ.Frame1.Pen = null;
     			興奮mゲージ.Gauge.Pen = null;
     			Color c = Med.GetUniqueColor();
-    			foreach (ShapePart item in 体力sゲージ.Pars.EnumAllPar())
+    			foreach (ShapePart item in 体力sゲージ.PartGroup.EnumAllPar())
     			{
     				item.HitColor = c;
     			}
     			Med.GetUniqueColor(out c);
-    			foreach (ShapePart item2 in 絶頂sゲージ.Pars.EnumAllPar())
+    			foreach (ShapePart item2 in 絶頂sゲージ.PartGroup.EnumAllPar())
     			{
     				item2.HitColor = c;
     			}
     			Med.GetUniqueColor(out c);
-    			foreach (ShapePart item3 in 興奮sゲージ.Pars.EnumAllPar())
+    			foreach (ShapePart item3 in 興奮sゲージ.PartGroup.EnumAllPar())
     			{
     				item3.HitColor = c;
     			}
     			Med.GetUniqueColor(out c);
-    			foreach (ShapePart item4 in 精力mゲージ.Pars.EnumAllPar())
+    			foreach (ShapePart item4 in 精力mゲージ.PartGroup.EnumAllPar())
     			{
     				item4.HitColor = c;
     			}
     			Med.GetUniqueColor(out c);
-    			foreach (ShapePart item5 in 射精mゲージ.Pars.EnumAllPar())
+    			foreach (ShapePart item5 in 射精mゲージ.PartGroup.EnumAllPar())
     			{
     				item5.HitColor = c;
     			}
     			Med.GetUniqueColor(out c);
-    			foreach (ShapePart item6 in 興奮mゲージ.Pars.EnumAllPar())
+    			foreach (ShapePart item6 in 興奮mゲージ.PartGroup.EnumAllPar())
     			{
     				item6.HitColor = c;
     			}
@@ -2920,12 +2920,12 @@ namespace SlaveMatrix
     		Player.表示ステート更新();
     		Player.ModBox();
     		Player.SensBox();
-    		Are.Draw(体力sゲージ.Pars);
-    		Are.Draw(興奮sゲージ.Pars);
-    		Are.Draw(絶頂sゲージ.Pars);
-    		Are.Draw(精力mゲージ.Pars);
-    		Are.Draw(興奮mゲージ.Pars);
-    		Are.Draw(射精mゲージ.Pars);
+    		Are.Draw(体力sゲージ.PartGroup);
+    		Are.Draw(興奮sゲージ.PartGroup);
+    		Are.Draw(絶頂sゲージ.PartGroup);
+    		Are.Draw(精力mゲージ.PartGroup);
+    		Are.Draw(興奮mゲージ.PartGroup);
+    		Are.Draw(射精mゲージ.PartGroup);
     		if (!Is乳弄り && !Isフォーカス糸挿入)
     		{
     			描画2(Are);
@@ -2966,12 +2966,12 @@ namespace SlaveMatrix
     		擬音.Draw(FPS);
     		if (ステート描画)
     		{
-    			Are.Draw(ステート.Pars);
+    			Are.Draw(ステート.PartGroup);
     		}
     		if (Sta.ShowSenses)
     		{
-    			Are.Draw(InfoBox.Pars);
-    			Are.Draw(SensitivityBox.Pars);
+    			Are.Draw(InfoBox.PartGroup);
+    			Are.Draw(SensitivityBox.PartGroup);
     		}
     	}
 
@@ -2980,16 +2980,16 @@ namespace SlaveMatrix
     		Player.表示ステート更新();
     		Player.ModBox();
     		Player.SensBox();
-    		Are.Draw(体力sゲージ.Pars);
-    		Are.Draw(精力mゲージ.Pars);
+    		Are.Draw(体力sゲージ.PartGroup);
+    		Are.Draw(精力mゲージ.PartGroup);
     		if (ステート描画)
     		{
-    			Are.Draw(ステート.Pars);
+    			Are.Draw(ステート.PartGroup);
     		}
     		if (Sta.ShowSenses)
     		{
-    			Are.Draw(InfoBox.Pars);
-    			Are.Draw(SensitivityBox.Pars);
+    			Are.Draw(InfoBox.PartGroup);
+    			Are.Draw(SensitivityBox.PartGroup);
     		}
     	}
 

@@ -1086,14 +1086,14 @@ namespace SlaveMatrix
     		ThisType = GetType();
     		Dif dif = new Dif();
     		dif.Tag = "編み2パツ";
-    		dif.Add(new Pars(Sta.胴体["BackHair0"][0][18]));
+    		dif.Add(new PartGroup(Sta.胴体["BackHair0"][0][18]));
     		Body = new Difs();
     		Body.Tag = dif.Tag;
     		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		X0Y0_髪基 = pars["髪基"].ToPar();
-    		Pars pars2 = pars["お下げ左"].ToPars();
-    		Pars pars3 = pars2["編節1"].ToPars();
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_髪基 = partGroup["髪基"].ToPar();
+    		PartGroup pars2 = partGroup["お下げ左"].ToPars();
+    		PartGroup pars3 = pars2["編節1"].ToPars();
     		X0Y0_お下げ左_編節1_髪節 = pars3["髪節"].ToPar();
     		X0Y0_お下げ左_編節1_髪編目 = pars3["髪編目"].ToPar();
     		pars3 = pars2["編節2"].ToPars();
@@ -1122,7 +1122,7 @@ namespace SlaveMatrix
     		X0Y0_お下げ左_髪左1 = pars2["髪左1"].ToPar();
     		X0Y0_お下げ左_髪右1 = pars2["髪右1"].ToPar();
     		X0Y0_お下げ左_髪根 = pars2["髪根"].ToPar();
-    		pars2 = pars["お下げ右"].ToPars();
+    		pars2 = partGroup["お下げ右"].ToPars();
     		pars3 = pars2["編節1"].ToPars();
     		X0Y0_お下げ右_編節1_髪節 = pars3["髪節"].ToPar();
     		X0Y0_お下げ右_編節1_髪編目 = pars3["髪編目"].ToPar();

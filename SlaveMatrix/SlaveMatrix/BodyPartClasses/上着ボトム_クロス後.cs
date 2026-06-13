@@ -173,14 +173,14 @@ namespace SlaveMatrix
     	{
     		ThisType = GetType();
     		Body = new Difs(Sta.胴体["上着ボトム後"]);
-    		Pars pars = Body[0][0];
-    		X0Y0_下地 = pars["下地"].ToPar();
-    		Pars pars2 = pars["染み"].ToPars();
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_下地 = partGroup["下地"].ToPar();
+    		PartGroup pars2 = partGroup["染み"].ToPars();
     		X0Y0_染み_染み2 = pars2["染み2"].ToPar();
     		X0Y0_染み_染み1 = pars2["染み1"].ToPar();
-    		pars = Body[0][1];
-    		X0Y1_下地 = pars["下地"].ToPar();
-    		pars2 = pars["染み"].ToPars();
+    		partGroup = Body[0][1];
+    		X0Y1_下地 = partGroup["下地"].ToPar();
+    		pars2 = partGroup["染み"].ToPars();
     		X0Y1_染み_染み2 = pars2["染み2"].ToPar();
     		X0Y1_染み_染み1 = pars2["染み1"].ToPar();
     		Body.SetJoints();
