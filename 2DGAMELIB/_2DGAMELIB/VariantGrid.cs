@@ -305,7 +305,7 @@ namespace _2DGAMELIB
     		foreach (ShapePart p0 in array2)
     		{
     			Vector2D p = p0.Position;
-    			if (array.All((ShapePart p1) => p0 == p1 || p1.JP.All((JointPoint j) => !(p1.ToGlobal(j.Joint).DistanceSquared(p) <= Join.IdentityDistance))))
+    			if (array.All((ShapePart p1) => p0 == p1 || p1.JP.All((JointPoint j) => !(p1.ToGlobal(j.Joint).DistanceSquared(p) <= JointLink.IdentityDistance))))
     			{
     				return p0;
     			}

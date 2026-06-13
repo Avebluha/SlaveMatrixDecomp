@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace _2DGAMELIB
 {
-    public static class Join
+    public static class JointLink
     {
     	public static double IdentityDistance = System.Math.Pow(5E-05, 2.0);
 

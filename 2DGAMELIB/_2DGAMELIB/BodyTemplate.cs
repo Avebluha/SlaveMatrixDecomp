@@ -228,7 +228,7 @@ namespace _2DGAMELIB
     			if (difs.EnumJoinRoot.All(delegate(ShapePart p0)
     			{
     				p = p0.Position;
-    				return pa.All((ShapePart p1) => p0 == p1 || p1.JP.All((JointPoint j) => !(p1.ToGlobal(j.Joint).DistanceSquared(p) <= Join.IdentityDistance)));
+    				return pa.All((ShapePart p1) => p0 == p1 || p1.JP.All((JointPoint j) => !(p1.ToGlobal(j.Joint).DistanceSquared(p) <= JointLink.IdentityDistance)));
     			}))
     			{
     				return difs;
