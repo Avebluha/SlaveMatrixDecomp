@@ -23,7 +23,7 @@ namespace _2DGAMELIB
     	{
     	};
 
-    	private MotV mv;
+    	private MotionBase mv;
 
     	private bool f1;
 
@@ -162,7 +162,7 @@ namespace _2DGAMELIB
     		this.Action = Action;
     		SetParT(Name, ref Position, Size, Width, Height, Font, TextSize, Text, ref TextColor, ref ShadColor, ref BackColor);
     		SetFeed(Name, Size, ref FeedColor);
-    		mv = new MotV(0.0, 255.0);
+    		mv = new MotionBase(0.0, 255.0);
     		mv.BaseSpeed = 2.0;
     	}
 
@@ -258,7 +258,7 @@ namespace _2DGAMELIB
     		_shapePartT.HitColor = Med.GetUniqueColor();
     	}
 
-    	public void Progression(FPS FPS)
+    	public void Progression(FpsCounter FPS)
     	{
     		if (!f1)
     		{

@@ -1685,7 +1685,7 @@ namespace SlaveMatrix
     		this.SetInitialAngle();
     	}
 
-    	public void Draw(RenderArea Are, FPS FPS)
+    	public void Draw(RenderArea Are, FpsCounter FPS)
     	{
     		this.FPS = FPS.Value;
     		Motions.Drive(FPS);

@@ -196,7 +196,7 @@ namespace SlaveMatrix
     		TextBlock.Position = 吹出し.X0Y0_吹出し.ToGlobal(吹出し.X0Y0_吹出し.JP[0].Joint);
     	}
 
-    	public void Draw(RenderArea Are, FPS FPS)
+    	public void Draw(RenderArea Are, FpsCounter FPS)
     	{
     		TextBlock.Progression(FPS);
     		if (Dis)

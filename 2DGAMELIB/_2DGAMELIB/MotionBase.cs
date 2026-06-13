@@ -1,6 +1,6 @@
 namespace _2DGAMELIB
 {
-    public class MotV
+    public class MotionBase
     {
     	public double Value;
 
@@ -58,7 +58,7 @@ namespace _2DGAMELIB
     		}
     	}
 
-    	public MotV(double Min, double Max)
+    	public MotionBase(double Min, double Max)
     	{
     		min = Min;
     		max = Max;
@@ -78,13 +78,13 @@ namespace _2DGAMELIB
     		Value = min;
     	}
 
-    	private void Count(FPS FPS)
+    	private void Count(FpsCounter FPS)
     	{
     		m = Frame / FPS.Value;
     		Value += (m * d + m * LowestIncrease) * BaseSpeed * ((s > 0) ? GotoSpeed : RetuSpeed) * (double)s;
     	}
 
-    	public void GetValue(FPS FPS)
+    	public void GetValue(FpsCounter FPS)
     	{
     		if (!((double)(FPS.sw.ElapsedMilliseconds - st) < Interval) && FPS.Value > 0.0)
     		{

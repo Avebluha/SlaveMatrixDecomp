@@ -25,7 +25,7 @@ namespace _2DGAMELIB
     	{
     	};
 
-    	public Action<FPS> Draw = delegate
+    	public Action<FpsCounter> Draw = delegate
     	{
     	};
 

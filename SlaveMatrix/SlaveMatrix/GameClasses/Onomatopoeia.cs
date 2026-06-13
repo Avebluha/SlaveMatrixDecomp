@@ -57,7 +57,7 @@ namespace SlaveMatrix
     		mot.Start();
     	}
 
-    	public void Draw(FPS FPS)
+    	public void Draw(FpsCounter FPS)
     	{
     		ms.Drive(FPS);
     		foreach (string item in del)

@@ -3,7 +3,7 @@ using System.Diagnostics;
 
 namespace _2DGAMELIB
 {
-    public class FPS
+    public class FpsCounter
     {
     	public Stopwatch sw = new Stopwatch();
 
@@ -11,7 +11,7 @@ namespace _2DGAMELIB
     	public double Value;
 
     	private double ticks_per_frame;
-    	public FPS(double FPS)
+    	public FpsCounter(double FPS)
     	{
     		Value = FPS;
     		ticks_per_frame = (double)Stopwatch.Frequency / FPS;

@@ -30,7 +30,7 @@ namespace _2DGAMELIB
         public Graphics HitGraphics;
 
         public SceneFader SceneFader;
-        public FPS FPSF = new FPS(60.0);
+        public FpsCounter FPSF = new FpsCounter(60.0);
 
         private Size BaseSize = Size.Empty;
         private Vector2D resVector = DataConsts.Vec2DZero;

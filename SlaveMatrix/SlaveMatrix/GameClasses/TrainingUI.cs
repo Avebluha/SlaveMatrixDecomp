@@ -2915,7 +2915,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public void StaDraw(RenderArea Are, FPS FPS)
+    	public void StaDraw(RenderArea Are, FpsCounter FPS)
     	{
     		Player.表示ステート更新();
     		Player.ModBox();

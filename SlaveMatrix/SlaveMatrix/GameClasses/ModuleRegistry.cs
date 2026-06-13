@@ -158,23 +158,23 @@ namespace SlaveMatrix
     	public static RenderArea drawArea;
 
 
-    	private static Action<RenderArea, FPS> メインフォーム描画;
-    	private static Action<RenderArea, FPS> 調教描画;
-    	public static Action<RenderArea, FPS> 撮影描画;
-    	private static Action<RenderArea, FPS> 対象描画;
-    	private static Action<RenderArea, FPS> DrawBlessing;
-    	private static Action<RenderArea, FPS> DrawOffice;
-    	private static Action<RenderArea, FPS> DrawDebt;
-    	private static Action<RenderArea, FPS> DrawSlaveShop;
-    	private static Action<RenderArea, FPS> DrawToolShop;
-    	private static Action<RenderArea, FPS> 中継描画;
-    	private static Action<RenderArea, FPS> DrawOP0;
-    	private static Action<RenderArea, FPS> DrawOP1;
-    	private static Action<RenderArea, FPS> 説明描画;
-    	private static Action<RenderArea, FPS> 初事務所描画;
-    	private static Action<RenderArea, FPS> 返済イベント描画;
-    	private static Action<RenderArea, FPS> 日数進行描画;
-    	private static Action<RenderArea, FPS> PlayerInformationSliders;
+    	private static Action<RenderArea, FpsCounter> メインフォーム描画;
+    	private static Action<RenderArea, FpsCounter> 調教描画;
+    	public static Action<RenderArea, FpsCounter> 撮影描画;
+    	private static Action<RenderArea, FpsCounter> 対象描画;
+    	private static Action<RenderArea, FpsCounter> DrawBlessing;
+    	private static Action<RenderArea, FpsCounter> DrawOffice;
+    	private static Action<RenderArea, FpsCounter> DrawDebt;
+    	private static Action<RenderArea, FpsCounter> DrawSlaveShop;
+    	private static Action<RenderArea, FpsCounter> DrawToolShop;
+    	private static Action<RenderArea, FpsCounter> 中継描画;
+    	private static Action<RenderArea, FpsCounter> DrawOP0;
+    	private static Action<RenderArea, FpsCounter> DrawOP1;
+    	private static Action<RenderArea, FpsCounter> 説明描画;
+    	private static Action<RenderArea, FpsCounter> 初事務所描画;
+    	private static Action<RenderArea, FpsCounter> 返済イベント描画;
+    	private static Action<RenderArea, FpsCounter> 日数進行描画;
+    	private static Action<RenderArea, FpsCounter> PlayerInformationSliders;
         private static Action 対象UI初期化;
         private static Action 奴隷UI初期化;
 
@@ -520,13 +520,13 @@ namespace SlaveMatrix
 
         //would really prefer not to have these here...
         private static bool fade_in;
-        static MotV mv = new MotV(0.0, 1.0)
+        static MotionBase mv = new MotionBase(0.0, 1.0)
         {
             BaseSpeed = 2.0
         };
         static double v = 0.0;
 
-        private static void SwitchMode(ModeEventDispatcher Med, RenderArea Are, FPS FPS, Action<RenderArea, FPS> 描画)
+        private static void SwitchMode(ModeEventDispatcher Med, RenderArea Are, FpsCounter FPS, Action<RenderArea, FpsCounter> 描画)
     	{
             if (fade_in)
     		{
@@ -552,7 +552,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public static void SwitchMode(this ModeEventDispatcher Med, string Mode, RenderArea Are, Action<RenderArea, FPS> 描画)
+    	public static void SwitchMode(this ModeEventDispatcher Med, string Mode, RenderArea Are, Action<RenderArea, FpsCounter> 描画)
     	{
     		Med.Mode = Mode;
     		描画(drawArea, Med.FPSF);
@@ -1158,7 +1158,7 @@ namespace SlaveMatrix
     		};
     	}
     	public static Module Credit(ModeEventDispatcher Med) {
-    		MotV mv = new MotV(0.0, 1.0){BaseSpeed = 0.5};
+    		MotionBase mv = new MotionBase(0.0, 1.0){BaseSpeed = 0.5};
 
     		double v = 0.0;
     		bool fadeIn = true;
@@ -1185,7 +1185,7 @@ namespace SlaveMatrix
     				Med.Mode = "Title";
     			},
 
-    			Draw = delegate (FPS FPS)
+    			Draw = delegate (FpsCounter FPS)
     			{
     				if (fadeIn || fadeOut)
     				{
@@ -1239,7 +1239,7 @@ namespace SlaveMatrix
 
     	public static Module Title(ModeEventDispatcher Med)
     	{
-    		MotV mv = new MotV(0.0, 1.0)
+    		MotionBase mv = new MotionBase(0.0, 1.0)
     		{
     			BaseSpeed = 0.5
     		};
@@ -1345,7 +1345,7 @@ namespace SlaveMatrix
     					listView.Leave();
     				}
     			},
-    			Draw = delegate (FPS FPS)
+    			Draw = delegate (FpsCounter FPS)
     			{
     				if (b1)
     				{
@@ -1457,7 +1457,7 @@ namespace SlaveMatrix
     			}
     		}));
 
-            メインフォーム描画 = delegate (RenderArea a, FPS FPS)
+            メインフォーム描画 = delegate (RenderArea a, FpsCounter FPS)
             {
                 Med.HitGraphics.Clear(ColorHelper.Transparent);
                 if (a.HitGraphics != null)
@@ -1609,7 +1609,7 @@ namespace SlaveMatrix
                         npl.ShapePartT.PositionBase = new Vector2D(Player.UI.ステート.Position.X, 0.026);
                     }
                 },
-                Draw = delegate (FPS FPS)
+                Draw = delegate (FpsCounter FPS)
                 {
                     SwitchMode(Med, DrawBuffer, FPS, メインフォーム描画);
                 },
@@ -1678,7 +1678,7 @@ namespace SlaveMatrix
             ContactD cd = default(ContactD);
             Vector2D op = DataConsts.Vec2DZero;
 
-            調教描画 = delegate (RenderArea a, FPS FPS)
+            調教描画 = delegate (RenderArea a, FpsCounter FPS)
             {
                 Player.UI.Mots.Drive(FPS);
                 Med.HitGraphics.Clear(ColorHelper.Transparent);
@@ -1711,7 +1711,7 @@ namespace SlaveMatrix
                     調教済みチェック = false;
                 }
             };
-            撮影描画 = delegate (RenderArea a, FPS FPS)
+            撮影描画 = delegate (RenderArea a, FpsCounter FPS)
             {
                 a.Draw(TrainingBackground);
                 TrainingTarget.Draw(a, FPS);
@@ -1794,7 +1794,7 @@ namespace SlaveMatrix
                 {
                     Player.UI.Wheel(ref mb, ref cp, ref dt, ref hc, ref cd);
                 },
-                Draw = delegate (FPS FPS)
+                Draw = delegate (FpsCounter FPS)
                 {
                     SwitchMode(Med, DrawBuffer, FPS, 調教描画);
                 },
@@ -1808,7 +1808,7 @@ namespace SlaveMatrix
 
     	public static Module 調教中継行(ModeEventDispatcher Med)
     	{
-    		中継描画 = delegate(RenderArea a, FPS FPS)
+    		中継描画 = delegate(RenderArea a, FpsCounter FPS)
     		{
     			Med.HitGraphics.Clear(ColorHelper.Transparent);
     			if (a.HitGraphics != null)
@@ -1849,7 +1849,7 @@ namespace SlaveMatrix
                     Player.UI.擬音キュー.Clear();
                     Player.UI.擬音.Clear();
                 },
-                Draw = delegate (FPS FPS)
+                Draw = delegate (FpsCounter FPS)
                 {
                     SwitchMode(Med, DrawBuffer, FPS, 中継描画);
                 }
@@ -1983,7 +1983,7 @@ namespace SlaveMatrix
                     Sta.GameData.拘束具 = false;
                     Sta.GameData.断面 = false;
                 },
-                Draw = delegate (FPS FPS)
+                Draw = delegate (FpsCounter FPS)
                 {
                     SwitchMode(Med, DrawBuffer, FPS, 中継描画);
                 }
@@ -2451,7 +2451,7 @@ namespace SlaveMatrix
                             }
                         }
                     },
-                    Draw = delegate (FPS FPS)
+                    Draw = delegate (FpsCounter FPS)
                     {
                         SwitchMode(Med, DrawBuffer, FPS, 対象描画);
                     },
@@ -3264,7 +3264,7 @@ namespace SlaveMatrix
 
     			bs.SetHitColor(Med);
 
-                対象描画 = delegate (RenderArea a, FPS FPS)
+                対象描画 = delegate (RenderArea a, FpsCounter FPS)
                 {
                     Med.HitGraphics.Clear(ColorHelper.Transparent);
                     if (a.HitGraphics != null)
@@ -3483,7 +3483,7 @@ namespace SlaveMatrix
     			}
     		};
 
-            DrawBlessing = delegate (RenderArea a, FPS FPS)
+            DrawBlessing = delegate (RenderArea a, FpsCounter FPS)
             {
                 Med.HitGraphics.Clear(ColorHelper.Transparent);
                 if (a.HitGraphics != null)
@@ -3618,7 +3618,7 @@ namespace SlaveMatrix
                         d = true;
                     }
                 },
-                Draw = delegate (FPS FPS)
+                Draw = delegate (FpsCounter FPS)
                 {
                     SwitchMode(Med, DrawBuffer, FPS, DrawBlessing);
                 },
@@ -3870,7 +3870,7 @@ namespace SlaveMatrix
     				}
     			}
     		};
-    		DrawOffice = delegate(RenderArea a, FPS FPS)
+    		DrawOffice = delegate(RenderArea a, FpsCounter FPS)
     		{
     			if (a.HitGraphics != null)
     			{
@@ -3888,7 +3888,7 @@ namespace SlaveMatrix
     			}
     			Med.Draw(a);
     		};
-    		mod.Draw = delegate(FPS FPS)
+    		mod.Draw = delegate(FpsCounter FPS)
     		{
     			SwitchMode(Med, DrawBuffer, FPS, DrawOffice);
     		};
@@ -4378,7 +4378,7 @@ namespace SlaveMatrix
     				//bs["nr"].Dra = Sta.GameData.借金 != 0;
     			}
     		};
-    		DrawDebt = delegate(RenderArea a, FPS FPS)
+    		DrawDebt = delegate(RenderArea a, FpsCounter FPS)
     		{
     			Med.HitGraphics.Clear(ColorHelper.Transparent);
     			if (a.HitGraphics != null)
@@ -4397,7 +4397,7 @@ namespace SlaveMatrix
     			}
     			Med.Draw(a);
     		};
-    		mod.Draw = delegate(FPS FPS)
+    		mod.Draw = delegate(FpsCounter FPS)
     		{
     			SwitchMode(Med, DrawBuffer, FPS, DrawDebt);
     		};
@@ -5057,7 +5057,7 @@ namespace SlaveMatrix
     				si.Set(bre: false);
     			}
     		};
-    		DrawSlaveShop = delegate(RenderArea a, FPS FPS)
+    		DrawSlaveShop = delegate(RenderArea a, FpsCounter FPS)
     		{
     			Med.HitGraphics.Clear(ColorHelper.Transparent);
     			if (a.HitGraphics != null)
@@ -5078,7 +5078,7 @@ namespace SlaveMatrix
     			}
     			Med.Draw(a);
     		};
-    		mod.Draw = delegate(FPS FPS)
+    		mod.Draw = delegate(FpsCounter FPS)
     		{
     			SwitchMode(Med, DrawBuffer, FPS, DrawSlaveShop);
     		};
@@ -5424,7 +5424,7 @@ namespace SlaveMatrix
     				subinfo();
     			}
     		};
-    		DrawToolShop = delegate(RenderArea a, FPS FPS)
+    		DrawToolShop = delegate(RenderArea a, FpsCounter FPS)
     		{
     			Med.HitGraphics.Clear(ColorHelper.Transparent);
     			if (a.HitGraphics != null)
@@ -5442,7 +5442,7 @@ namespace SlaveMatrix
     			}
     			Med.Draw(DrawBuffer);
     		};
-    		mod.Draw = delegate(FPS FPS)
+    		mod.Draw = delegate(FpsCounter FPS)
     		{
     			SwitchMode(Med, DrawBuffer, FPS, DrawToolShop);
     		};
@@ -5513,7 +5513,7 @@ namespace SlaveMatrix
     				si.Set(bre: false);
     			}
     		};
-    		日数進行描画 = delegate(RenderArea a, FPS FPS)
+    		日数進行描画 = delegate(RenderArea a, FpsCounter FPS)
     		{
     			if (TrainingTarget != null)
     			{
@@ -5528,7 +5528,7 @@ namespace SlaveMatrix
     			ip.Draw(a, FPS);
     			Med.Draw(a);
     		};
-    		obj.Draw = delegate(FPS FPS)
+    		obj.Draw = delegate(FpsCounter FPS)
     		{
     			SwitchMode(Med, DrawBuffer, FPS, 日数進行描画);
     		};
@@ -5837,7 +5837,7 @@ namespace SlaveMatrix
     			ls["ラベル14"].Text = "H:" + $"{身長.Value:0.00}";
     			ls["ラベル15"].Text = "W:" + $"{体重.Value:0.00}";
     		};
-    		PlayerInformationSliders = delegate(RenderArea a, FPS FPS)
+    		PlayerInformationSliders = delegate(RenderArea a, FpsCounter FPS)
     		{
     			Med.HitGraphics.Clear(ColorHelper.Transparent);
     			if (a.HitGraphics != null)
@@ -5860,7 +5860,7 @@ namespace SlaveMatrix
     			完了.Draw(a);
     			Med.Draw(a);
     		};
-    		mod.Draw = delegate(FPS FPS)
+    		mod.Draw = delegate(FpsCounter FPS)
     		{
     			SwitchMode(Med, DrawBuffer, FPS, PlayerInformationSliders);
     		};
@@ -5934,7 +5934,7 @@ namespace SlaveMatrix
     			ip.Text = tsp[i];
     			ip.SubInfo = sub[i];
     		};
-    		DrawOP0 = delegate(RenderArea a, FPS FPS)
+    		DrawOP0 = delegate(RenderArea a, FpsCounter FPS)
     		{
     			if (a.HitGraphics != null)
     			{
@@ -5945,7 +5945,7 @@ namespace SlaveMatrix
     			ip.Draw(a, FPS);
     			Med.Draw(a);
     		};
-    		mod.Draw = delegate(FPS FPS)
+    		mod.Draw = delegate(FpsCounter FPS)
     		{
     			SwitchMode(Med, DrawBuffer, FPS, DrawOP0);
     		};
@@ -6199,7 +6199,7 @@ namespace SlaveMatrix
     			Viola.両目_見つめ();
     			Viola.Set基本姿勢();
             };
-    		DrawOP1 = delegate(RenderArea a, FPS FPS)
+    		DrawOP1 = delegate(RenderArea a, FpsCounter FPS)
     		{
     			a.Draw(OfficeBackground);
     			Viola.Draw(a, FPS);
@@ -6208,7 +6208,7 @@ namespace SlaveMatrix
     			ip.Draw(a, FPS);
     			Med.Draw(a);
     		};
-    		mod.Draw = delegate(FPS FPS)
+    		mod.Draw = delegate(FpsCounter FPS)
     		{
     			SwitchMode(Med, DrawBuffer, FPS, DrawOP1);
     		};
@@ -6352,7 +6352,7 @@ namespace SlaveMatrix
     			ip.Text = tsp[i];
     			ip.SubInfo = sub[i];
     		};
-    		説明描画 = delegate(RenderArea a, FPS FPS)
+    		説明描画 = delegate(RenderArea a, FpsCounter FPS)
     		{
     			if (a.HitGraphics != null)
     			{
@@ -6365,7 +6365,7 @@ namespace SlaveMatrix
     			ip.Draw(a, FPS);
     			Med.Draw(a);
     		};
-    		mod.Draw = delegate(FPS FPS)
+    		mod.Draw = delegate(FpsCounter FPS)
     		{
     			SwitchMode(Med, DrawBuffer, FPS, 説明描画);
     		};
@@ -6659,7 +6659,7 @@ namespace SlaveMatrix
     			ip.Text = tsp[i];
     			ip.SubInfo = sub[i];
     		};
-    		初事務所描画 = delegate(RenderArea a, FPS FPS)
+    		初事務所描画 = delegate(RenderArea a, FpsCounter FPS)
     		{
     			if (a.HitGraphics != null)
     			{
@@ -6672,7 +6672,7 @@ namespace SlaveMatrix
     			ip.Draw(a, FPS);
     			Med.Draw(a);
     		};
-    		mod.Draw = delegate(FPS FPS)
+    		mod.Draw = delegate(FpsCounter FPS)
     		{
     			SwitchMode(Med, DrawBuffer, FPS, 初事務所描画);
     		};
@@ -6767,7 +6767,7 @@ namespace SlaveMatrix
     			ip.Text = tsp[i];
     			ip.SubInfo = sub[i];
     		};
-    		返済イベント描画 = delegate(RenderArea a, FPS FPS)
+    		返済イベント描画 = delegate(RenderArea a, FpsCounter FPS)
     		{
     			if (a.HitGraphics != null)
     			{
@@ -6780,7 +6780,7 @@ namespace SlaveMatrix
     			ip.Draw(a, FPS);
     			Med.Draw(a);
     		};
-    		mod.Draw = delegate(FPS FPS)
+    		mod.Draw = delegate(FpsCounter FPS)
     		{
     			SwitchMode(Med, DrawBuffer, FPS, 返済イベント描画);
     		};
@@ -6881,7 +6881,7 @@ namespace SlaveMatrix
     			ip.Text = tsp[i];
     			ip.SubInfo = sub[i];
     		};
-    		mod.Draw = delegate(FPS FPS)
+    		mod.Draw = delegate(FpsCounter FPS)
     		{
     			SwitchMode(Med, DrawBuffer, FPS, 返済イベント描画);
     		};
@@ -7172,7 +7172,7 @@ namespace SlaveMatrix
     			ip.Text = tsp[i];
     			ip.SubInfo = sub[i];
     		};
-    		mod.Draw = delegate(FPS FPS)
+    		mod.Draw = delegate(FpsCounter FPS)
     		{
     			SwitchMode(Med, DrawBuffer, FPS, 返済イベント描画);
     		};
@@ -7282,7 +7282,7 @@ namespace SlaveMatrix
     			ip.SubInfo = sub[i];
     			Sta.GameData.祝福 = Sta.GameData.ヴィオラ;
     		};
-    		mod.Draw = delegate(FPS FPS)
+    		mod.Draw = delegate(FpsCounter FPS)
     		{
     			SwitchMode(Med, DrawBuffer, FPS, 返済イベント描画);
     		};

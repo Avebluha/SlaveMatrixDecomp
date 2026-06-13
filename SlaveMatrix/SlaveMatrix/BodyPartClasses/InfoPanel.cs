@@ -310,7 +310,7 @@ namespace SlaveMatrix
     		nb.Up(ref HitColor);
     	}
 
-    	public void Draw(RenderArea Are, FPS FPS)
+    	public void Draw(RenderArea Are, FpsCounter FPS)
     	{
     		if (MaiShow)
     		{
