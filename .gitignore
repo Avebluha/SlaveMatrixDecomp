@@ -3,5 +3,7 @@ SlaveMatrix/obj/
 2DGAMELIB/bin/
 SlaveMatrix/bin/
 .vs/
+.idea/
+Config.ini
 game_folder/save/*
 /game_folder/save
