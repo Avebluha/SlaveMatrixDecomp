@@ -880,7 +880,7 @@ namespace SlaveMatrix
     	{
     		//if (!EncryptSave)
     		{
-    			GameData.SaveExMod(SavePath + "\\" + i + "： " + GameData.GetSaveDateString().Replace("/", "_") + ".sav");
+    			GameData.SaveExMod(Path.Combine(SavePath, i + "： " + GameData.GetSaveDateString().Replace("/", "_") + ".sav"));
     		}
     		/*else
     		{
