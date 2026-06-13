@@ -113,9 +113,9 @@ namespace SlaveMatrix
     	public Gau 射精mゲージ;
     	public Gau 興奮mゲージ;
 
-    	public Tex ステート;
-        public Tex InfoBox;
-        public Tex SensitivityBox;
+    	public TextBlock ステート;
+        public TextBlock InfoBox;
+        public TextBlock SensitivityBox;
 
 
 
@@ -3032,8 +3032,8 @@ namespace SlaveMatrix
     		Film.Dispose();
     		InfoBox.Dispose();
     		SensitivityBox.Dispose();
-    		//((Tex)(object)SlaveStamina).Dispose();
-    		//((Tex)(object)PlayerStamina).Dispose();
+    		//((TextBlock)(object)SlaveStamina).Dispose();
+    		//((TextBlock)(object)PlayerStamina).Dispose();
     	}
 
     	public void Action(ContactType 接触, ActionType アクション情報, CurrentState タイミング情報, ToolType アイテム情報, int 挿入Lv, int 強さ, bool 機械, bool 射精)
@@ -3053,9 +3053,9 @@ namespace SlaveMatrix
     		{
     			width = 0.75;
     		}
-    		ステート = new Tex("Tex", new Vector2D(Are.GetPosition(0.08, 0.7).X, 0.1), 0.1, width, 1.15, new Font("MS Gothic", 1f), 0.07, 0, "", ColorHelper.White, ColorHelper.Black, Color.FromArgb(160, ColorHelper.Black), 15.0);
-    		InfoBox = new Tex("Info", new Vector2D(num, 0.005), 0.1, 0.9, 0.85, new Font("MS Gothic", 1f), 0.07, 0, "", ColorHelper.White, ColorHelper.Transparent, Color.FromArgb(15, ColorHelper.DarkMagenta), 100.0);
-    		SensitivityBox = new Tex("Sens", new Vector2D(num + 0.02, 0.08), 0.1, 0.6, 1.99, new Font("MS Gothic", 1f), 0.057, 0, "", ColorHelper.White, ColorHelper.Transparent, Color.FromArgb(5, ColorHelper.DarkMagenta), 100.0);
+    		ステート = new TextBlock("TextBlock", new Vector2D(Are.GetPosition(0.08, 0.7).X, 0.1), 0.1, width, 1.15, new Font("MS Gothic", 1f), 0.07, 0, "", ColorHelper.White, ColorHelper.Black, Color.FromArgb(160, ColorHelper.Black), 15.0);
+    		InfoBox = new TextBlock("Info", new Vector2D(num, 0.005), 0.1, 0.9, 0.85, new Font("MS Gothic", 1f), 0.07, 0, "", ColorHelper.White, ColorHelper.Transparent, Color.FromArgb(15, ColorHelper.DarkMagenta), 100.0);
+    		SensitivityBox = new TextBlock("Sens", new Vector2D(num + 0.02, 0.08), 0.1, 0.6, 1.99, new Font("MS Gothic", 1f), 0.057, 0, "", ColorHelper.White, ColorHelper.Transparent, Color.FromArgb(5, ColorHelper.DarkMagenta), 100.0);
     	}
 
     	public void StaminaButtons(RenderArea Are, ModeEventDispatcher Med, InfoPanel ip)

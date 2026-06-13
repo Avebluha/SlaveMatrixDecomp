@@ -1700,10 +1700,10 @@ namespace SlaveMatrix
                         SlaveText.Set状態();
                         if (TrainingTarget.Body.Is顔面)
                         {
-                            Action<Tex> o_done = SlaveTextBubble.Tex.Done;
-                            SlaveTextBubble.Tex.Done = delegate (Tex tex)
+                            Action<TextBlock> o_done = SlaveTextBubble.TextBlock.Done;
+                            SlaveTextBubble.TextBlock.Done = delegate (TextBlock TextBlock)
                             {
-                                o_done(tex);
+                                o_done(TextBlock);
                                 TrainingTarget.顔面展開.Start();
                             };
                         }
@@ -3818,7 +3818,7 @@ namespace SlaveMatrix
     				ip.Mai2Show = false;
     				ip.SubShow = true;
     				ip.Sub2Show = true;
-    				ViolaTextBubble.Tex.Feed.Dra = false;
+    				ViolaTextBubble.TextBlock.Feed.Dra = false;
     				bs["ボタン1"].Dra = !Sta.GameData.初事務所フラグ;
     				bs["ボタン3"].Dra = Sta.GameData.RepaymentStage == 3;
     				Viola.両目_見つめ();
@@ -6076,13 +6076,13 @@ namespace SlaveMatrix
     			GameText.話が進む,
     			GameText.事は運ぶ
     		};
-    		Action<Tex> d = delegate
+    		Action<TextBlock> d = delegate
     		{
     			ip.SubInfo = GameText.安い額ではない;
     			ip.選択yAct = delegate
     			{
     				//Sounds.操作.Play();
-    				ViolaTextBubble.Tex.Done = delegate
+    				ViolaTextBubble.TextBlock.Done = delegate
     				{
     					//Sounds.精算.Play();
     					Sta.GameData.借金 = 5000000000uL;
@@ -6106,7 +6106,7 @@ namespace SlaveMatrix
     			ip.選択nAct = delegate
     			{
     				//Sounds.操作.Play();
-    				ViolaTextBubble.Tex.Done = delegate
+    				ViolaTextBubble.TextBlock.Done = delegate
     				{
     					//Sounds.精算.Play();
     					Sta.GameData.借金 = 5000000000uL;
@@ -6132,9 +6132,9 @@ namespace SlaveMatrix
     		mod.Down = delegate(MouseButtons mb, Vector2D cp, Color hc)
     		{
     			ip.DownB(ref hc);
-    			if (!ViolaTextBubble.Tex.IsPlaying && !ip.Mai.IsPlaying && !ip.Sub.IsPlaying)
+    			if (!ViolaTextBubble.TextBlock.IsPlaying && !ip.Mai.IsPlaying && !ip.Sub.IsPlaying)
     			{
-    				if (wi == i && i != 10 && ViolaTextBubble.Tex.Done == null)
+    				if (wi == i && i != 10 && ViolaTextBubble.TextBlock.Done == null)
     				{
     					i++;
     					wi = i;
@@ -6142,11 +6142,11 @@ namespace SlaveMatrix
     					{
     						if (i == 10)
     						{
-    							ViolaTextBubble.Tex.Done = d;
+    							ViolaTextBubble.TextBlock.Done = d;
     						}
     						else
     						{
-    							ViolaTextBubble.Tex.Done = null;
+    							ViolaTextBubble.TextBlock.Done = null;
     						}
     						if (i != 11)
     						{
@@ -6315,7 +6315,7 @@ namespace SlaveMatrix
     		mod.Down = delegate(MouseButtons mb, Vector2D cp, Color hc)
     		{
     			ip.DownB(ref hc);
-    			if (!ViolaTextBubble.Tex.IsPlaying && !ip.Mai.IsPlaying && !ip.Sub.IsPlaying && wi == i)
+    			if (!ViolaTextBubble.TextBlock.IsPlaying && !ip.Mai.IsPlaying && !ip.Sub.IsPlaying && wi == i)
     			{
     				i++;
     				wi = i;
@@ -6467,7 +6467,7 @@ namespace SlaveMatrix
     			GameText.話が終わる,
     			GameText.話は終わる
     		};
-    		Action<Tex> d1 = delegate
+    		Action<TextBlock> d1 = delegate
     		{
     			ip.Mai.Done = delegate
     			{
@@ -6511,7 +6511,7 @@ namespace SlaveMatrix
     			};
     			ip.Text = GameText.金が無い;
     		};
-    		Action<Tex> d2 = delegate
+    		Action<TextBlock> d2 = delegate
     		{
     			ip.Mai.Done = delegate
     			{
@@ -6531,10 +6531,10 @@ namespace SlaveMatrix
     						ip.Text = GameText.エクス2;
     						ip.SubInfo = GameText.あなたの鎖は弾け飛ぶ;
     						ViolaTextBubble.Text = GameText.あらあら今ので利子が上がってしまったわうふふ;
-    						ViolaTextBubble.Tex.Feed.Dra = true;
+    						ViolaTextBubble.TextBlock.Feed.Dra = true;
     						Sta.GameData.利子 *= 2.0;
     					};
-    					ViolaTextBubble.Tex.Feed.Dra = false;
+    					ViolaTextBubble.TextBlock.Feed.Dra = false;
     					Viola.Body.拘束具_表示 = true;
     					Viola.両翼獣_閉じ(0);
     					Viola.両触手_S字(0);
@@ -6582,9 +6582,9 @@ namespace SlaveMatrix
     		mod.Down = delegate(MouseButtons mb, Vector2D cp, Color hc)
     		{
     			ip.DownB(ref hc);
-    			if (!ViolaTextBubble.Tex.IsPlaying && !ip.Mai.IsPlaying && !ip.Sub.IsPlaying)
+    			if (!ViolaTextBubble.TextBlock.IsPlaying && !ip.Mai.IsPlaying && !ip.Sub.IsPlaying)
     			{
-    				if (wi == i && i != 1 && i != 6 && ViolaTextBubble.Tex.Done == null)
+    				if (wi == i && i != 1 && i != 6 && ViolaTextBubble.TextBlock.Done == null)
     				{
     					i++;
     					wi = i;
@@ -6597,15 +6597,15 @@ namespace SlaveMatrix
     						}
     						if (i == 1)
     						{
-    							ViolaTextBubble.Tex.Done = d1;
+    							ViolaTextBubble.TextBlock.Done = d1;
     						}
     						else if (i == 6)
     						{
-    							ViolaTextBubble.Tex.Done = d2;
+    							ViolaTextBubble.TextBlock.Done = d2;
     						}
     						else
     						{
-    							ViolaTextBubble.Tex.Done = null;
+    							ViolaTextBubble.TextBlock.Done = null;
     						}
     						if (i != 2 && i != 7)
     						{
@@ -6648,7 +6648,7 @@ namespace SlaveMatrix
     			ip.Mai2Show = false;
     			ip.SubShow = true;
     			ip.Sub2Show = true;
-    			ViolaTextBubble.Tex.Feed.Dra = true;
+    			ViolaTextBubble.TextBlock.Feed.Dra = true;
     			Viola.両目_見つめ();
     			Viola.表情_基本0();
     			Viola.Set基本姿勢();
@@ -6723,7 +6723,7 @@ namespace SlaveMatrix
     		mod.Down = delegate(MouseButtons mb, Vector2D cp, Color hc)
     		{
     			ip.DownB(ref hc);
-    			if (!ViolaTextBubble.Tex.IsPlaying && !ip.Mai.IsPlaying && !ip.Sub.IsPlaying && wi == i)
+    			if (!ViolaTextBubble.TextBlock.IsPlaying && !ip.Mai.IsPlaying && !ip.Sub.IsPlaying && wi == i)
     			{
     				i++;
     				wi = i;
@@ -6756,7 +6756,7 @@ namespace SlaveMatrix
     			ip.Mai2Show = false;
     			ip.SubShow = true;
     			ip.Sub2Show = true;
-    			ViolaTextBubble.Tex.Feed.Dra = true;
+    			ViolaTextBubble.TextBlock.Feed.Dra = true;
     			Viola.両目_見つめ();
     			Viola.表情_基本0();
     			Viola.Set基本姿勢();
@@ -6831,7 +6831,7 @@ namespace SlaveMatrix
     		mod.Down = delegate(MouseButtons mb, Vector2D cp, Color hc)
     		{
     			ip.DownB(ref hc);
-    			if (!ViolaTextBubble.Tex.IsPlaying && !ip.Mai.IsPlaying && !ip.Sub.IsPlaying && wi == i)
+    			if (!ViolaTextBubble.TextBlock.IsPlaying && !ip.Mai.IsPlaying && !ip.Sub.IsPlaying && wi == i)
     			{
     				i++;
     				wi = i;
@@ -6870,7 +6870,7 @@ namespace SlaveMatrix
     			ip.Mai2Show = false;
     			ip.SubShow = true;
     			ip.Sub2Show = true;
-    			ViolaTextBubble.Tex.Feed.Dra = true;
+    			ViolaTextBubble.TextBlock.Feed.Dra = true;
     			Viola.両目_見つめ();
     			Viola.表情_基本0();
     			Viola.Set基本姿勢();
@@ -7019,7 +7019,7 @@ namespace SlaveMatrix
     			GameText.余韻に浸る,
     			GameText.物語は終わった
     		};
-    		Action<Tex> d1 = delegate
+    		Action<TextBlock> d1 = delegate
     		{
     			ip.Mai.Done = delegate
     			{
@@ -7068,9 +7068,9 @@ namespace SlaveMatrix
     		mod.Down = delegate(MouseButtons mb, Vector2D cp, Color hc)
     		{
     			ip.DownB(ref hc);
-    			if (!ViolaTextBubble.Tex.IsPlaying && !ip.Mai.IsPlaying && !ip.Sub.IsPlaying)
+    			if (!ViolaTextBubble.TextBlock.IsPlaying && !ip.Mai.IsPlaying && !ip.Sub.IsPlaying)
     			{
-    				if (wi == i && i != 2 && ViolaTextBubble.Tex.Done == null)
+    				if (wi == i && i != 2 && ViolaTextBubble.TextBlock.Done == null)
     				{
     					i++;
     					wi = i;
@@ -7078,11 +7078,11 @@ namespace SlaveMatrix
     					{
     						if (i == 2)
     						{
-    							ViolaTextBubble.Tex.Done = d1;
+    							ViolaTextBubble.TextBlock.Done = d1;
     						}
     						else
     						{
-    							ViolaTextBubble.Tex.Done = null;
+    							ViolaTextBubble.TextBlock.Done = null;
     						}
     						if (i != 3)
     						{
@@ -7161,7 +7161,7 @@ namespace SlaveMatrix
     			ip.Mai2Show = false;
     			ip.SubShow = true;
     			ip.Sub2Show = true;
-    			ViolaTextBubble.Tex.Feed.Dra = true;
+    			ViolaTextBubble.TextBlock.Feed.Dra = true;
     			Viola.両目_見つめ();
     			Viola.表情_基本0();
     			Viola.Set基本姿勢();
@@ -7231,7 +7231,7 @@ namespace SlaveMatrix
     		mod.Down = delegate(MouseButtons mb, Vector2D cp, Color hc)
     		{
     			ip.DownB(ref hc);
-    			if (!ViolaTextBubble.Tex.IsPlaying && !ip.Mai.IsPlaying && !ip.Sub.IsPlaying && wi == i)
+    			if (!ViolaTextBubble.TextBlock.IsPlaying && !ip.Mai.IsPlaying && !ip.Sub.IsPlaying && wi == i)
     			{
     				i++;
     				wi = i;
@@ -7270,7 +7270,7 @@ namespace SlaveMatrix
     			ip.Mai2Show = false;
     			ip.SubShow = true;
     			ip.Sub2Show = true;
-    			ViolaTextBubble.Tex.Feed.Dra = true;
+    			ViolaTextBubble.TextBlock.Feed.Dra = true;
     			Viola.両目_見つめ();
     			Viola.表情_基本0();
     			Viola.Set基本姿勢();

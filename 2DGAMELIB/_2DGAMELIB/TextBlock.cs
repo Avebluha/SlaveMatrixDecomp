@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace _2DGAMELIB
 {
-    public class Tex
+    public class TextBlock
     {
     	private PartGroup _partGroup;
 
@@ -19,7 +19,7 @@ namespace _2DGAMELIB
 
     	private double speed = 1.0;
 
-    	private Action<Tex> Action = delegate
+    	private Action<TextBlock> Action = delegate
     	{
     	};
 
@@ -33,7 +33,7 @@ namespace _2DGAMELIB
 
     	private int Max;
 
-    	public Action<Tex> Done;
+    	public Action<TextBlock> Done;
 
     	private byte a0;
 
@@ -127,7 +127,7 @@ namespace _2DGAMELIB
 
     	public bool IsPlaying => !f1;
 
-    	public Tex(string Name, Vector2D Position, double Size, double Width, double Height, Font Font, double TextSize, int Space, string Text, Color TextColor, Color ShadColor, Color BackColor, double Speed, Color FeedColor, Action<Tex> Action)
+    	public TextBlock(string Name, Vector2D Position, double Size, double Width, double Height, Font Font, double TextSize, int Space, string Text, Color TextColor, Color ShadColor, Color BackColor, double Speed, Color FeedColor, Action<TextBlock> Action)
     	{
     		try
     		{
@@ -166,7 +166,7 @@ namespace _2DGAMELIB
     		mv.BaseSpeed = 2.0;
     	}
 
-    	public Tex(string Name, Vector2D Position, double Size, double Width, double Height, Font Font, double TextSize, int Space, string Text, Color TextColor, Color ShadColor, Color BackColor, double Speed)
+    	public TextBlock(string Name, Vector2D Position, double Size, double Width, double Height, Font Font, double TextSize, int Space, string Text, Color TextColor, Color ShadColor, Color BackColor, double Speed)
     	{
     		try
     		{

@@ -13,19 +13,19 @@ namespace SlaveMatrix
 
     	public ShapePart MaiB;
 
-    	public Tex Mai;
+    	public TextBlock Mai;
 
     	public ShapePart Mai2B;
 
-    	public Tex Mai2;
+    	public TextBlock Mai2;
 
     	public ShapePart SubB;
 
-    	public Tex Sub;
+    	public TextBlock Sub;
 
     	public ShapePart Sub2B;
 
-    	public Tex Sub2;
+    	public TextBlock Sub2;
 
     	private Lab SubInnfo_l;
 
@@ -162,7 +162,7 @@ namespace SlaveMatrix
     		MaiB.BrushColor = Color.FromArgb(160, ColorHelper.Black);
     		MaiB.Hit = false;
     		MaiB.JP.Add(new JointPoint(MaiB.OP.GetCenter()));
-    		Mai = new Tex("Tex1", vector2D, num2, num3 * 0.98, num4 * 0.91, new Font("MS Gothic", 1f), 0.08, 0, " ", ColorHelper.White, ColorHelper.Black, Color.Transparent, 19.0, ColorHelper.White, delegate(Tex sp)
+    		Mai = new TextBlock("Tex1", vector2D, num2, num3 * 0.98, num4 * 0.91, new Font("MS Gothic", 1f), 0.08, 0, " ", ColorHelper.White, ColorHelper.Black, Color.Transparent, 19.0, ColorHelper.White, delegate(TextBlock sp)
     		{
     			sp.Text = sp.Text;
     		});
@@ -181,7 +181,7 @@ namespace SlaveMatrix
     		Mai2B.BrushColor = Color.FromArgb(160, ColorHelper.Black);
     		Mai2B.Hit = false;
     		Mai2B.JP.Add(new JointPoint(Mai2B.OP.GetCenter()));
-    		Mai2 = new Tex("Tex3", vector2D, num2, num3 * 0.98, num5 * 0.97, new Font("MS Gothic", 1f), 0.08, 0, " ", ColorHelper.White, ColorHelper.Black, Color.Transparent, 19.0, ColorHelper.White, delegate(Tex sp)
+    		Mai2 = new TextBlock("Tex3", vector2D, num2, num3 * 0.98, num5 * 0.97, new Font("MS Gothic", 1f), 0.08, 0, " ", ColorHelper.White, ColorHelper.Black, Color.Transparent, 19.0, ColorHelper.White, delegate(TextBlock sp)
     		{
     			sp.Text = sp.Text;
     		});
@@ -201,7 +201,7 @@ namespace SlaveMatrix
     		SubB.BrushColor = Color.FromArgb(160, ColorHelper.Black);
     		SubB.Hit = false;
     		SubB.JP.Add(new JointPoint(SubB.OP.GetCenter()));
-    		Sub = new Tex("Tex4", vector2D, num2 * 1.01, num3 * 0.98, num4 * 0.91, new Font("MS Gothic", 1f), 0.07, 0, " ", ColorHelper.White, ColorHelper.Black, Color.Transparent, 15.0);
+    		Sub = new TextBlock("Tex4", vector2D, num2 * 1.01, num3 * 0.98, num4 * 0.91, new Font("MS Gothic", 1f), 0.07, 0, " ", ColorHelper.White, ColorHelper.Black, Color.Transparent, 15.0);
     		Sub.ShapePartT.BasePointBase = Sub.ShapePartT.OP.GetCenter().MulY(y);
     		Sub.Position = SubB.ToGlobal(SubB.JP[0].Joint);
     		SubInnfo_l = new Lab(Are, "SubInfo", vector2D, num2, 1.0, new Font("MS Gothic", 1f), 0.07, "Sub Info.", ColorHelper.White, ColorHelper.Black, Color.FromArgb(160, ColorHelper.Black), ColorHelper.Empty);
@@ -217,7 +217,7 @@ namespace SlaveMatrix
     		Sub2B.BrushColor = Color.FromArgb(160, ColorHelper.Black);
     		Sub2B.Hit = false;
     		Sub2B.JP.Add(new JointPoint(SubB.OP.GetCenter()));
-    		Sub2 = new Tex("Tex3", Sub2B.PositionBase, num2 * 1.01, num3 * 0.98, num4 * 0.91, new Font("MS Gothic", 1f), 0.07, 0, "", ColorHelper.White, ColorHelper.Black, Color.Transparent, 15.0);
+    		Sub2 = new TextBlock("Tex3", Sub2B.PositionBase, num2 * 1.01, num3 * 0.98, num4 * 0.91, new Font("MS Gothic", 1f), 0.07, 0, "", ColorHelper.White, ColorHelper.Black, Color.Transparent, 15.0);
     		Sub2.ShapePartT.BasePointBase = Sub2.ShapePartT.OP.GetCenter().MulY(y);
     		Sub2.Position = Sub2B.ToGlobal(Sub2B.JP[0].Joint);
     		yp = new ShapePartT();

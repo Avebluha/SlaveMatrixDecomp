@@ -2638,7 +2638,7 @@ namespace SlaveMatrix
     		UI.SensitivityBox.TextIm = "Sensitivities:\r\n";
     		foreach (KeyValuePair<ContactType, double> item in chaD.Sesnsitivities)
     		{
-    			Tex sensitivityBox = UI.SensitivityBox;
+    			TextBlock sensitivityBox = UI.SensitivityBox;
     			sensitivityBox.TextIm = sensitivityBox.TextIm + GameText.TouchTranslation(item.Key) + ": " + item.Value.Numf1() + "\r\n";
     		}
     	}
