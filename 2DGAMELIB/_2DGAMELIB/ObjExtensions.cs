@@ -90,6 +90,19 @@ namespace _2DGAMELIB
             ["手"] = "Hand",
             ["足"] = "Foot",
             ["腿"] = "Thigh",
+            ["前翅"] = "Forewing",
+            ["後翅"] = "Hindwing",
+            ["触手"] = "Tentacle",
+            ["触覚"] = "Antenna",
+            ["節足"] = "SegmentLeg",
+            ["虫鎌"] = "InsectScythe",
+            ["虫顎"] = "InsectJaw",
+            ["植"] = "Plant",
+            ["葉"] = "Leaf",
+            ["羽根箒"] = "FeatherDuster",
+            ["飛沫"] = "Splash",
+            ["飛膜先"] = "MembraneTip",
+            ["飛膜根"] = "MembraneBase",
         };
 
         public static void MigrateKeys(this Obj obj)

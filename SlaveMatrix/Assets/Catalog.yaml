@@ -163,10 +163,10 @@ parts:
   path: Parts/鳥翼LowerArm/
 - id: 鳥翼手
   path: Parts/鳥翼手/
-- id: 飛膜根
-  path: Parts/飛膜根/
-- id: 飛膜先
-  path: Parts/飛膜先/
+- id: MembraneBase
+  path: Parts/MembraneBase/
+- id: MembraneTip
+  path: Parts/MembraneTip/
 - id: 獣翼UpperArm
   path: Parts/獣翼UpperArm/
 - id: 獣翼LowerArm
@@ -225,30 +225,30 @@ parts:
   path: Parts/四足肛門精液垂れ/
 - id: 鰭
   path: Parts/鰭/
-- id: 葉
-  path: Parts/葉/
+- id: Leaf
+  path: Parts/Leaf/
 - id: Horn
   path: Parts/Horn/
 - id: Ear
   path: Parts/Ear/
-- id: 植
-  path: Parts/植/
+- id: Plant
+  path: Parts/Plant/
 - id: BeastEar
   path: Parts/BeastEar/
-- id: 虫顎
-  path: Parts/虫顎/
-- id: 触覚
-  path: Parts/触覚/
-- id: 虫鎌
-  path: Parts/虫鎌/
-- id: 前翅
-  path: Parts/前翅/
-- id: 後翅
-  path: Parts/後翅/
-- id: 節足
-  path: Parts/節足/
-- id: 触手
-  path: Parts/触手/
+- id: InsectJaw
+  path: Parts/InsectJaw/
+- id: Antenna
+  path: Parts/Antenna/
+- id: InsectScythe
+  path: Parts/InsectScythe/
+- id: Forewing
+  path: Parts/Forewing/
+- id: Hindwing
+  path: Parts/Hindwing/
+- id: SegmentLeg
+  path: Parts/SegmentLeg/
+- id: Tentacle
+  path: Parts/Tentacle/
 - id: Tail
   path: Parts/Tail/
 - id: 頭部後
@@ -269,8 +269,8 @@ parts:
   path: Parts/Genitals/
 - id: 四足性器
   path: Parts/四足性器/
-- id: 飛沫
-  path: Parts/飛沫/
+- id: Splash
+  path: Parts/Splash/
 - id: Squirting
   path: Parts/Squirting/
 - id: Urination
@@ -323,8 +323,8 @@ parts:
   path: Parts/ドリル/
 - id: パール
   path: Parts/パール/
-- id: 羽根箒
-  path: Parts/羽根箒/
+- id: FeatherDuster
+  path: Parts/FeatherDuster/
 - id: 調教鞭
   path: Parts/調教鞭/
 - id: T字剃刀
