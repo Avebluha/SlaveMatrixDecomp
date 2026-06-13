@@ -16,7 +16,7 @@ namespace _2DGAMELIB
         Rig
     }
 
-    public class Gau
+    public class ProgressBar
     {
     	private PartGroup _partGroup;
 
@@ -495,7 +495,7 @@ namespace _2DGAMELIB
     		return 0.0;
     	}
 
-    	public Gau(string Name, Vector2D Position, double Size, double Width, double Height, double Margin, Open Open, Range Range, double DisUnit, Color PlusColor1, Color PlusColor2, Color MinusColor1, Color MinusColor2, Color BackColor, bool Knob)
+    	public ProgressBar(string Name, Vector2D Position, double Size, double Width, double Height, double Margin, Open Open, Range Range, double DisUnit, Color PlusColor1, Color PlusColor2, Color MinusColor1, Color MinusColor2, Color BackColor, bool Knob)
     	{
     		this.Open = Open;
     		this.Range = Range;

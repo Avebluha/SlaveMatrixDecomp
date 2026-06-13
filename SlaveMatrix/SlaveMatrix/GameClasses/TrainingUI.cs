@@ -106,12 +106,12 @@ namespace SlaveMatrix
     	private ScreenSwitch 玉口枷sw = new ScreenSwitch(Color.OrangeRed);
     	private ScreenSwitch 断面sw = new ScreenSwitch(Color.OrangeRed);
 
-    	public Gau 体力sゲージ;
-    	public Gau 絶頂sゲージ;
-    	public Gau 興奮sゲージ;
-    	public Gau 精力mゲージ;
-    	public Gau 射精mゲージ;
-    	public Gau 興奮mゲージ;
+    	public ProgressBar 体力sゲージ;
+    	public ProgressBar 絶頂sゲージ;
+    	public ProgressBar 興奮sゲージ;
+    	public ProgressBar 精力mゲージ;
+    	public ProgressBar 射精mゲージ;
+    	public ProgressBar 興奮mゲージ;
 
     	public TextBlock ステート;
         public TextBlock InfoBox;
@@ -2468,20 +2468,20 @@ namespace SlaveMatrix
     				}
     			});
     			int alpha = 200;
-    			体力sゲージ = new Gau("体力", Are.GetPosition(new Vector2D(0.025, 0.5)), Are.Size, 0.025, Are.YRatio * 0.98, 0.02, Open.Top, _2DGAMELIB.Range.ZeroOne, disUnit, Color.FromArgb(alpha, Color.Red), Color.Yellow, Color.FromArgb(alpha, Color.Gray), Color.FromArgb(alpha, Color.Gray), Color.FromArgb(alpha, ColorHelper.Black), Knob: false);
+    			体力sゲージ = new ProgressBar("体力", Are.GetPosition(new Vector2D(0.025, 0.5)), Are.Size, 0.025, Are.YRatio * 0.98, 0.02, Open.Top, _2DGAMELIB.Range.ZeroOne, disUnit, Color.FromArgb(alpha, Color.Red), Color.Yellow, Color.FromArgb(alpha, Color.Gray), Color.FromArgb(alpha, Color.Gray), Color.FromArgb(alpha, ColorHelper.Black), Knob: false);
     			体力sゲージ.Frame1.Pen = null;
-    			絶頂sゲージ = new Gau("絶頂", Are.GetPosition(new Vector2D(0.060000000000000005, 0.5)), Are.Size, 0.01, Are.YRatio * 0.98, 0.02, Open.Top, _2DGAMELIB.Range.ZeroOne, disUnit, Color.FromArgb(alpha, Color.DeepPink), ColorHelper.White, Color.FromArgb(alpha, Color.Gray), Color.FromArgb(alpha, Color.Gray), Color.Transparent, Knob: false);
+    			絶頂sゲージ = new ProgressBar("絶頂", Are.GetPosition(new Vector2D(0.060000000000000005, 0.5)), Are.Size, 0.01, Are.YRatio * 0.98, 0.02, Open.Top, _2DGAMELIB.Range.ZeroOne, disUnit, Color.FromArgb(alpha, Color.DeepPink), ColorHelper.White, Color.FromArgb(alpha, Color.Gray), Color.FromArgb(alpha, Color.Gray), Color.Transparent, Knob: false);
     			絶頂sゲージ.Frame1.Pen = null;
     			絶頂sゲージ.Gauge.Pen = null;
-    			興奮sゲージ = new Gau("興奮", Are.GetPosition(new Vector2D(0.060000000000000005, 0.5)), Are.Size, 0.025, Are.YRatio * 0.98, 0.02, Open.Top, _2DGAMELIB.Range.ZeroOne, disUnit, Color.FromArgb(180, ColorHelper.White), Color.FromArgb(180, Color.Red), Color.FromArgb(alpha, Color.Gray), Color.FromArgb(alpha, Color.Gray), Color.FromArgb(alpha, ColorHelper.Black), Knob: false);
+    			興奮sゲージ = new ProgressBar("興奮", Are.GetPosition(new Vector2D(0.060000000000000005, 0.5)), Are.Size, 0.025, Are.YRatio * 0.98, 0.02, Open.Top, _2DGAMELIB.Range.ZeroOne, disUnit, Color.FromArgb(180, ColorHelper.White), Color.FromArgb(180, Color.Red), Color.FromArgb(alpha, Color.Gray), Color.FromArgb(alpha, Color.Gray), Color.FromArgb(alpha, ColorHelper.Black), Knob: false);
     			興奮sゲージ.Frame1.Pen = null;
     			興奮sゲージ.Gauge.Pen = null;
-    			精力mゲージ = new Gau("精力", Are.GetPosition(new Vector2D(0.025.Inverse(), 0.5)), Are.Size, 0.025, Are.YRatio * 0.98, 0.02, Open.Top, _2DGAMELIB.Range.ZeroOne, disUnit, Color.FromArgb(alpha, ColorHelper.Yellow.Add(180, 0, 0)), ColorHelper.Red.Add(180, 0, 0), Color.FromArgb(alpha, Color.Gray), Color.FromArgb(alpha, Color.Gray), Color.FromArgb(alpha, ColorHelper.Black), Knob: false);
+    			精力mゲージ = new ProgressBar("精力", Are.GetPosition(new Vector2D(0.025.Inverse(), 0.5)), Are.Size, 0.025, Are.YRatio * 0.98, 0.02, Open.Top, _2DGAMELIB.Range.ZeroOne, disUnit, Color.FromArgb(alpha, ColorHelper.Yellow.Add(180, 0, 0)), ColorHelper.Red.Add(180, 0, 0), Color.FromArgb(alpha, Color.Gray), Color.FromArgb(alpha, Color.Gray), Color.FromArgb(alpha, ColorHelper.Black), Knob: false);
     			精力mゲージ.Frame1.Pen = null;
-    			射精mゲージ = new Gau("射精", Are.GetPosition(new Vector2D(0.060000000000000005.Inverse(), 0.5)), Are.Size, 0.01, Are.YRatio * 0.98, 0.02, Open.Top, _2DGAMELIB.Range.ZeroOne, disUnit, Color.FromArgb(alpha, ColorHelper.DeepPink.Add(180, 0, 0)), ColorHelper.White.Add(180, 0, 0), Color.FromArgb(alpha, Color.Gray), Color.FromArgb(alpha, Color.Gray), Color.Transparent, Knob: false);
+    			射精mゲージ = new ProgressBar("射精", Are.GetPosition(new Vector2D(0.060000000000000005.Inverse(), 0.5)), Are.Size, 0.01, Are.YRatio * 0.98, 0.02, Open.Top, _2DGAMELIB.Range.ZeroOne, disUnit, Color.FromArgb(alpha, ColorHelper.DeepPink.Add(180, 0, 0)), ColorHelper.White.Add(180, 0, 0), Color.FromArgb(alpha, Color.Gray), Color.FromArgb(alpha, Color.Gray), Color.Transparent, Knob: false);
     			射精mゲージ.Frame1.Pen = null;
     			射精mゲージ.Gauge.Pen = null;
-    			興奮mゲージ = new Gau("興奮", Are.GetPosition(new Vector2D(0.060000000000000005.Inverse(), 0.5)), Are.Size, 0.025, Are.YRatio * 0.98, 0.02, Open.Top, _2DGAMELIB.Range.ZeroOne, disUnit, Color.FromArgb(180, ColorHelper.White), Color.FromArgb(180, Color.Red), Color.FromArgb(alpha, Color.Gray), Color.FromArgb(alpha, Color.Gray), Color.FromArgb(alpha, ColorHelper.Black), Knob: false);
+    			興奮mゲージ = new ProgressBar("興奮", Are.GetPosition(new Vector2D(0.060000000000000005.Inverse(), 0.5)), Are.Size, 0.025, Are.YRatio * 0.98, 0.02, Open.Top, _2DGAMELIB.Range.ZeroOne, disUnit, Color.FromArgb(180, ColorHelper.White), Color.FromArgb(180, Color.Red), Color.FromArgb(alpha, Color.Gray), Color.FromArgb(alpha, Color.Gray), Color.FromArgb(alpha, ColorHelper.Black), Knob: false);
     			興奮mゲージ.Frame1.Pen = null;
     			興奮mゲージ.Gauge.Pen = null;
     			Color c = Med.GetUniqueColor();
