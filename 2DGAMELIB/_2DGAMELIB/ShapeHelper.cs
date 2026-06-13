@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace _2DGAMELIB
 {
-    public static class Shas
+    public static class ShapeHelper
     {
         //rectangle coords
 

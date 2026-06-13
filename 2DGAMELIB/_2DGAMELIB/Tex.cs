@@ -204,7 +204,7 @@ namespace _2DGAMELIB
     	private void SetParT(string Name, ref Vector2D Position, double Size, double Width, double Height, Font Font, double TextSize, string Text, ref Color TextColor, ref Color ShadColor, ref Color BackColor)
     	{
     		_partGroup = new PartGroup();
-    		CurveOutline[] array = new CurveOutline[1] { Shas.GetSquare() };
+    		CurveOutline[] array = new CurveOutline[1] { ShapeHelper.GetSquare() };
     		array.OutlineFalse();
     		_shapePartT = new ShapePartT
     		{
@@ -231,7 +231,7 @@ namespace _2DGAMELIB
 
     	private void SetFeed(string Name, double Size, ref Color FeedColor)
     	{
-    		CurveOutline[] array = new CurveOutline[1] { Shas.GetTriangle() };
+    		CurveOutline[] array = new CurveOutline[1] { ShapeHelper.GetTriangle() };
     		feed = new ShapePart
     		{
     			Tag = Name + "_Feed",

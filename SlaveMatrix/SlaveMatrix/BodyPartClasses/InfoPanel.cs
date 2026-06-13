@@ -155,7 +155,7 @@ namespace SlaveMatrix
     		MaiB.BasePointBase = DataConsts.Vec2DZero;
     		MaiB.PositionBase = vector2D;
     		MaiB.SizeBase = num2;
-    		MaiB.OP.AddRange(new CurveOutline[1] { Shas.GetSquare() });
+    		MaiB.OP.AddRange(new CurveOutline[1] { ShapeHelper.GetSquare() });
     		MaiB.OP.ScalingX(MaiB.BasePointBase, num3);
     		MaiB.OP.ScalingY(MaiB.BasePointBase, num4);
     		MaiB.Closed = true;
@@ -174,7 +174,7 @@ namespace SlaveMatrix
     		Mai2B.BasePointBase = DataConsts.Vec2DZero;
     		Mai2B.PositionBase = new Vector2D(vector2D.X, 0.01);
     		Mai2B.SizeBase = num2;
-    		Mai2B.OP.AddRange(new CurveOutline[1] { Shas.GetSquare() });
+    		Mai2B.OP.AddRange(new CurveOutline[1] { ShapeHelper.GetSquare() });
     		Mai2B.OP.ScalingX(Mai2B.BasePointBase, num3);
     		Mai2B.OP.ScalingY(Mai2B.BasePointBase, num5);
     		Mai2B.Closed = true;
@@ -194,7 +194,7 @@ namespace SlaveMatrix
     		SubB.BasePointBase = DataConsts.Vec2DZero;
     		SubB.PositionBase = vector2D;
     		SubB.SizeBase = num2;
-    		SubB.OP.AddRange(new CurveOutline[1] { Shas.GetSquare() });
+    		SubB.OP.AddRange(new CurveOutline[1] { ShapeHelper.GetSquare() });
     		SubB.OP.ScalingX(SubB.BasePointBase, num3);
     		SubB.OP.ScalingY(SubB.BasePointBase, num4);
     		SubB.Closed = true;
@@ -210,7 +210,7 @@ namespace SlaveMatrix
     		Sub2B.BasePointBase = DataConsts.Vec2DZero;
     		Sub2B.PositionBase = new Vector2D(0.0025, vector2D.Y);
     		Sub2B.SizeBase = num2;
-    		Sub2B.OP.AddRange(new CurveOutline[1] { Shas.GetSquare() });
+    		Sub2B.OP.AddRange(new CurveOutline[1] { ShapeHelper.GetSquare() });
     		Sub2B.OP.ScalingX(Sub2B.BasePointBase, num3);
     		Sub2B.OP.ScalingY(Sub2B.BasePointBase, num4);
     		Sub2B.Closed = true;
