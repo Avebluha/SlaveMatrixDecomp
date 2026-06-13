@@ -7,11 +7,11 @@ using _2DGAMELIB;
 
 namespace SlaveMatrix
 {
-    public class DE : Element
+    public class DrawableElement : Element
     {
         public Action<RenderArea> 描画;
 
-        public DE(Element src, Action<RenderArea> 描画)
+        public DrawableElement(Element src, Action<RenderArea> 描画)
         {
             Par = src;
             Body = src.Body;
@@ -246,7 +246,7 @@ namespace SlaveMatrix
 
     	public 長物_蛇 蛇;
 
-    	public DE 蛇前;
+    	public DrawableElement 蛇前;
 
     	public 長物_蟲 蟲;
 
@@ -300,7 +300,7 @@ namespace SlaveMatrix
 
     	public 多足_蠍 蠍;
 
-    	public DE 蠍前;
+    	public DrawableElement 蠍前;
 
     	public 単足_植 植;
 
@@ -4390,7 +4390,7 @@ namespace SlaveMatrix
     						where !bod.半身中2接続.Contains(e)
     						select e, 半身後接続);
     				}
-    				蛇前 = new DE(蛇, 蛇.前描画);
+    				蛇前 = new DrawableElement(蛇, 蛇.前描画);
     				if (蛇.左_接続 != null)
     				{
     					Sort(蛇.左_接続.Select((Element e) => e.EnumEle()).JoinEnum(), 半身前接続);
@@ -4602,11 +4602,11 @@ namespace SlaveMatrix
     				}
     				if (Chest_獣 != null)
     				{
-    					半身中1接続.Add(new DE(Chest_獣, Chest_獣.胸描画));
+    					半身中1接続.Add(new DrawableElement(Chest_獣, Chest_獣.胸描画));
     				}
     				if (Chest_獣 != null)
     				{
-    					半身中1接続.Add(new DE(Chest_獣, Chest_獣.肌描画));
+    					半身中1接続.Add(new DrawableElement(Chest_獣, Chest_獣.肌描画));
     				}
     				if (ボテ腹_獣 != null)
     				{
@@ -4826,7 +4826,7 @@ namespace SlaveMatrix
     					Sort(蠍.尾_接続.Select((Element e) => e.EnumEle()).JoinEnum(), 半身後接続);
     				}
     				半身中1接続.Add(蠍);
-    				蠍前 = new DE(蠍, 蠍.前描画);
+    				蠍前 = new DrawableElement(蠍, 蠍.前描画);
     				if (蠍.触肢左_接続 != null)
     				{
     					Sort(蠍.触肢左_接続.Select((Element e) => e.EnumEle()).JoinEnum(), 半身前接続);
@@ -4917,7 +4917,7 @@ namespace SlaveMatrix
     		{
     			Inserts(item23.UpperArm, 0, item23.UpperArm.飛膜);
     			Inserts(item23.手, -2, item23.手.飛膜);
-    			Inserts(item23.手.飛膜, 1, new DE(item23.手, item23.手.指先描画));
+    			Inserts(item23.手.飛膜, 1, new DrawableElement(item23.手, item23.手.指先描画));
     		}
     		大顎基 ele4 = 大顎基接続.GetEle<大顎基>();
     		if (ele4 != null)
@@ -4928,100 +4928,100 @@ namespace SlaveMatrix
     		{
     			if (item24.LowerArm != null)
     			{
-    				Inserts(item24.LowerArm, 1 + ((item24.LowerArm.手_接続 != null) ? item24.LowerArm.手_接続.Select((Element f) => f.EnumEle()).JoinEnum().Count() : 0) + ((item24.LowerArm.虫鎌_接続 != null) ? item24.LowerArm.虫鎌_接続.Select((Element f) => f.EnumEle()).JoinEnum().Count() : 0), new DE(item24.LowerArm, item24.LowerArm.外腕描画));
+    				Inserts(item24.LowerArm, 1 + ((item24.LowerArm.手_接続 != null) ? item24.LowerArm.手_接続.Select((Element f) => f.EnumEle()).JoinEnum().Count() : 0) + ((item24.LowerArm.虫鎌_接続 != null) ? item24.LowerArm.虫鎌_接続.Select((Element f) => f.EnumEle()).JoinEnum().Count() : 0), new DrawableElement(item24.LowerArm, item24.LowerArm.外腕描画));
     			}
     		}
     		foreach (Arm人 item25 in Arm人右)
     		{
     			if (item25.LowerArm != null)
     			{
-    				Inserts(item25.LowerArm, 1 + ((item25.LowerArm.手_接続 != null) ? item25.LowerArm.手_接続.Select((Element f) => f.EnumEle()).JoinEnum().Count() : 0) + ((item25.LowerArm.虫鎌_接続 != null) ? item25.LowerArm.虫鎌_接続.Select((Element f) => f.EnumEle()).JoinEnum().Count() : 0), new DE(item25.LowerArm, item25.LowerArm.外腕描画));
+    				Inserts(item25.LowerArm, 1 + ((item25.LowerArm.手_接続 != null) ? item25.LowerArm.手_接続.Select((Element f) => f.EnumEle()).JoinEnum().Count() : 0) + ((item25.LowerArm.虫鎌_接続 != null) ? item25.LowerArm.虫鎌_接続.Select((Element f) => f.EnumEle()).JoinEnum().Count() : 0), new DrawableElement(item25.LowerArm, item25.LowerArm.外腕描画));
     			}
     		}
     		foreach (Arm翼鳥 item26 in 腕翼鳥左)
     		{
     			if (item26.LowerArm != null)
     			{
-    				Inserts(item26.LowerArm, 1 + ((item26.LowerArm.手_接続 != null) ? item26.LowerArm.手_接続.Select((Element f) => f.EnumEle()).JoinEnum().Count() : 0), new DE(item26.LowerArm, item26.LowerArm.小雨覆描画));
+    				Inserts(item26.LowerArm, 1 + ((item26.LowerArm.手_接続 != null) ? item26.LowerArm.手_接続.Select((Element f) => f.EnumEle()).JoinEnum().Count() : 0), new DrawableElement(item26.LowerArm, item26.LowerArm.小雨覆描画));
     			}
     		}
     		foreach (翼鳥 item27 in 翼鳥左)
     		{
     			if (item27.LowerArm != null)
     			{
-    				Inserts(item27.LowerArm, 1 + ((item27.LowerArm.手_接続 != null) ? item27.LowerArm.手_接続.Select((Element f) => f.EnumEle()).JoinEnum().Count() : 0), new DE(item27.LowerArm, item27.LowerArm.小雨覆描画));
+    				Inserts(item27.LowerArm, 1 + ((item27.LowerArm.手_接続 != null) ? item27.LowerArm.手_接続.Select((Element f) => f.EnumEle()).JoinEnum().Count() : 0), new DrawableElement(item27.LowerArm, item27.LowerArm.小雨覆描画));
     			}
     		}
     		foreach (Arm翼鳥 item28 in 腕翼鳥右)
     		{
     			if (item28.LowerArm != null)
     			{
-    				Inserts(item28.LowerArm, 1 + ((item28.LowerArm.手_接続 != null) ? item28.LowerArm.手_接続.Select((Element f) => f.EnumEle()).JoinEnum().Count() : 0), new DE(item28.LowerArm, item28.LowerArm.小雨覆描画));
+    				Inserts(item28.LowerArm, 1 + ((item28.LowerArm.手_接続 != null) ? item28.LowerArm.手_接続.Select((Element f) => f.EnumEle()).JoinEnum().Count() : 0), new DrawableElement(item28.LowerArm, item28.LowerArm.小雨覆描画));
     			}
     		}
     		foreach (翼鳥 item29 in 翼鳥右)
     		{
     			if (item29.LowerArm != null)
     			{
-    				Inserts(item29.LowerArm, 1 + ((item29.LowerArm.手_接続 != null) ? item29.LowerArm.手_接続.Select((Element f) => f.EnumEle()).JoinEnum().Count() : 0), new DE(item29.LowerArm, item29.LowerArm.小雨覆描画));
+    				Inserts(item29.LowerArm, 1 + ((item29.LowerArm.手_接続 != null) ? item29.LowerArm.手_接続.Select((Element f) => f.EnumEle()).JoinEnum().Count() : 0), new DrawableElement(item29.LowerArm, item29.LowerArm.小雨覆描画));
     			}
     		}
     		foreach (Arm翼獣 item30 in 腕翼獣左)
     		{
     			if (item30.LowerArm != null)
     			{
-    				Inserts(item30.LowerArm, 1 + ((item30.LowerArm.手_接続 != null) ? item30.LowerArm.手_接続.Select((Element f) => f.EnumEle()).JoinEnum().Count() : 0), new DE(item30.LowerArm, item30.LowerArm.腕輪描画));
+    				Inserts(item30.LowerArm, 1 + ((item30.LowerArm.手_接続 != null) ? item30.LowerArm.手_接続.Select((Element f) => f.EnumEle()).JoinEnum().Count() : 0), new DrawableElement(item30.LowerArm, item30.LowerArm.腕輪描画));
     			}
     		}
     		foreach (翼獣 item31 in 翼獣左)
     		{
     			if (item31.LowerArm != null)
     			{
-    				Inserts(item31.LowerArm, 1 + ((item31.LowerArm.手_接続 != null) ? item31.LowerArm.手_接続.Select((Element f) => f.EnumEle()).JoinEnum().Count() : 0), new DE(item31.LowerArm, item31.LowerArm.腕輪描画));
+    				Inserts(item31.LowerArm, 1 + ((item31.LowerArm.手_接続 != null) ? item31.LowerArm.手_接続.Select((Element f) => f.EnumEle()).JoinEnum().Count() : 0), new DrawableElement(item31.LowerArm, item31.LowerArm.腕輪描画));
     			}
     		}
     		foreach (Arm翼獣 item32 in 腕翼獣右)
     		{
     			if (item32.LowerArm != null)
     			{
-    				Inserts(item32.LowerArm, 1 + ((item32.LowerArm.手_接続 != null) ? item32.LowerArm.手_接続.Select((Element f) => f.EnumEle()).JoinEnum().Count() : 0), new DE(item32.LowerArm, item32.LowerArm.腕輪描画));
+    				Inserts(item32.LowerArm, 1 + ((item32.LowerArm.手_接続 != null) ? item32.LowerArm.手_接続.Select((Element f) => f.EnumEle()).JoinEnum().Count() : 0), new DrawableElement(item32.LowerArm, item32.LowerArm.腕輪描画));
     			}
     		}
     		foreach (翼獣 item33 in 翼獣右)
     		{
     			if (item33.LowerArm != null)
     			{
-    				Inserts(item33.LowerArm, 1 + ((item33.LowerArm.手_接続 != null) ? item33.LowerArm.手_接続.Select((Element f) => f.EnumEle()).JoinEnum().Count() : 0), new DE(item33.LowerArm, item33.LowerArm.腕輪描画));
+    				Inserts(item33.LowerArm, 1 + ((item33.LowerArm.手_接続 != null) ? item33.LowerArm.手_接続.Select((Element f) => f.EnumEle()).JoinEnum().Count() : 0), new DrawableElement(item33.LowerArm, item33.LowerArm.腕輪描画));
     			}
     		}
     		foreach (脚人 item34 in 脚人左)
     		{
     			if (item34.Leg != null)
     			{
-    				Inserts(item34.Leg, 1 + ((item34.Leg.足_接続 != null) ? item34.Leg.足_接続.Select((Element f) => f.EnumEle()).JoinEnum().Count() : 0), new DE(item34.Leg, item34.Leg.外描画));
+    				Inserts(item34.Leg, 1 + ((item34.Leg.足_接続 != null) ? item34.Leg.足_接続.Select((Element f) => f.EnumEle()).JoinEnum().Count() : 0), new DrawableElement(item34.Leg, item34.Leg.外描画));
     			}
     		}
     		foreach (脚人 item35 in 脚人右)
     		{
     			if (item35.Leg != null)
     			{
-    				Inserts(item35.Leg, 1 + ((item35.Leg.足_接続 != null) ? item35.Leg.足_接続.Select((Element f) => f.EnumEle()).JoinEnum().Count() : 0), new DE(item35.Leg, item35.Leg.外描画));
+    				Inserts(item35.Leg, 1 + ((item35.Leg.足_接続 != null) ? item35.Leg.足_接続.Select((Element f) => f.EnumEle()).JoinEnum().Count() : 0), new DrawableElement(item35.Leg, item35.Leg.外描画));
     			}
     		}
     		foreach (脚人 item36 in 脚人左)
     		{
     			if (item36.足 != null)
     			{
-    				Inserts(item36.足, -1, new DE(item36.足, item36.足.底描画));
-    				Inserts(item36.足, 2, new DE(item36.足, item36.足.靴描画));
+    				Inserts(item36.足, -1, new DrawableElement(item36.足, item36.足.底描画));
+    				Inserts(item36.足, 2, new DrawableElement(item36.足, item36.足.靴描画));
     			}
     		}
     		foreach (脚人 item37 in 脚人右)
     		{
     			if (item37.足 != null)
     			{
-    				Inserts(item37.足, -1, new DE(item37.足, item37.足.底描画));
-    				Inserts(item37.足, 2, new DE(item37.足, item37.足.靴描画));
+    				Inserts(item37.足, -1, new DrawableElement(item37.足, item37.足.底描画));
+    				Inserts(item37.足, 2, new DrawableElement(item37.足, item37.足.靴描画));
     			}
     		}
     		foreach (虫鎌 e in 虫鎌左)
@@ -5053,7 +5053,7 @@ namespace SlaveMatrix
     		}
     		foreach (Element item39 in 腕左)
     		{
-    			if (hashSet.Contains(item39) || (item39 is DE && ((DE)item39).Par is 手_蝙))
+    			if (hashSet.Contains(item39) || (item39 is DrawableElement && ((DrawableElement)item39).Par is 手_蝙))
     			{
     				肩左飛膜.Add(item39);
     			}
@@ -5083,7 +5083,7 @@ namespace SlaveMatrix
     		}
     		foreach (Element item43 in 腕右)
     		{
-    			if (hashSet.Contains(item43) || (item43 is DE && ((DE)item43).Par is 手_蝙))
+    			if (hashSet.Contains(item43) || (item43 is DrawableElement && ((DrawableElement)item43).Par is 手_蝙))
     			{
     				肩右飛膜.Add(item43);
     			}
