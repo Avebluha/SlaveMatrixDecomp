@@ -5265,9 +5265,9 @@ namespace SlaveMatrix
     		}
     		if (IsSingleEye)
     		{
-    			頭.X0Y0_Head.JP[7] = new Joi(頭.X0Y0_Head.JP[7].Joint.MulY(0.96));
-    			頭.X0Y0_Head.JP[17] = new Joi(頭.X0Y0_Head.JP[17].Joint.MulY(0.96));
-    			頭.X0Y0_Head.JP[18] = new Joi(頭.X0Y0_Head.JP[18].Joint.MulY(0.96));
+    			頭.X0Y0_Head.JP[7] = new JointPoint(頭.X0Y0_Head.JP[7].Joint.MulY(0.96));
+    			頭.X0Y0_Head.JP[17] = new JointPoint(頭.X0Y0_Head.JP[17].Joint.MulY(0.96));
+    			頭.X0Y0_Head.JP[18] = new JointPoint(頭.X0Y0_Head.JP[18].Joint.MulY(0.96));
     			紅潮.紅潮1_表示 = false;
     			紅潮.X0Y0_紅潮左.AngleBase = 20.0;
     			紅潮.X0Y0_紅潮弱左.AngleBase = 20.0;

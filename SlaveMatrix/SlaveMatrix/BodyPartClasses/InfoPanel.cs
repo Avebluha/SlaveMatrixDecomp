@@ -161,7 +161,7 @@ namespace SlaveMatrix
     		MaiB.Closed = true;
     		MaiB.BrushColor = Color.FromArgb(160, Col.Black);
     		MaiB.Hit = false;
-    		MaiB.JP.Add(new Joi(MaiB.OP.GetCenter()));
+    		MaiB.JP.Add(new JointPoint(MaiB.OP.GetCenter()));
     		Mai = new Tex("Tex1", vector2D, num2, num3 * 0.98, num4 * 0.91, new Font("MS Gothic", 1f), 0.08, 0, " ", Col.White, Col.Black, Color.Transparent, 19.0, Col.White, delegate(Tex sp)
     		{
     			sp.Text = sp.Text;
@@ -180,7 +180,7 @@ namespace SlaveMatrix
     		Mai2B.Closed = true;
     		Mai2B.BrushColor = Color.FromArgb(160, Col.Black);
     		Mai2B.Hit = false;
-    		Mai2B.JP.Add(new Joi(Mai2B.OP.GetCenter()));
+    		Mai2B.JP.Add(new JointPoint(Mai2B.OP.GetCenter()));
     		Mai2 = new Tex("Tex3", vector2D, num2, num3 * 0.98, num5 * 0.97, new Font("MS Gothic", 1f), 0.08, 0, " ", Col.White, Col.Black, Color.Transparent, 19.0, Col.White, delegate(Tex sp)
     		{
     			sp.Text = sp.Text;
@@ -200,7 +200,7 @@ namespace SlaveMatrix
     		SubB.Closed = true;
     		SubB.BrushColor = Color.FromArgb(160, Col.Black);
     		SubB.Hit = false;
-    		SubB.JP.Add(new Joi(SubB.OP.GetCenter()));
+    		SubB.JP.Add(new JointPoint(SubB.OP.GetCenter()));
     		Sub = new Tex("Tex4", vector2D, num2 * 1.01, num3 * 0.98, num4 * 0.91, new Font("MS Gothic", 1f), 0.07, 0, " ", Col.White, Col.Black, Color.Transparent, 15.0);
     		Sub.ShapePartT.BasePointBase = Sub.ShapePartT.OP.GetCenter().MulY(y);
     		Sub.Position = SubB.ToGlobal(SubB.JP[0].Joint);
@@ -216,7 +216,7 @@ namespace SlaveMatrix
     		Sub2B.Closed = true;
     		Sub2B.BrushColor = Color.FromArgb(160, Col.Black);
     		Sub2B.Hit = false;
-    		Sub2B.JP.Add(new Joi(SubB.OP.GetCenter()));
+    		Sub2B.JP.Add(new JointPoint(SubB.OP.GetCenter()));
     		Sub2 = new Tex("Tex3", Sub2B.PositionBase, num2 * 1.01, num3 * 0.98, num4 * 0.91, new Font("MS Gothic", 1f), 0.07, 0, "", Col.White, Col.Black, Color.Transparent, 15.0);
     		Sub2.ShapePartT.BasePointBase = Sub2.ShapePartT.OP.GetCenter().MulY(y);
     		Sub2.Position = Sub2B.ToGlobal(Sub2B.JP[0].Joint);

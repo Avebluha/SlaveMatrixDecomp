@@ -69,11 +69,11 @@ namespace _2DGAMELIB
     		return vec2DZero / num;
     	}
 
-    	public static Vector2D GetCenter(this IEnumerable<Joi> Joi)
+    	public static Vector2D GetCenter(this IEnumerable<JointPoint> Joi)
     	{
     		double num = 0.0;
     		Vector2D vec2DZero = DataConsts.Vec2DZero;
-    		foreach (Joi item in Joi)
+    		foreach (JointPoint item in Joi)
     		{
     			vec2DZero += item.Joint;
     			num += 1.0;
@@ -200,60 +200,60 @@ namespace _2DGAMELIB
     		}
     	}
 
-    	public static void ScalingX(this IEnumerable<Joi> Joi, Vector2D BP, double Rate)
+    	public static void ScalingX(this IEnumerable<JointPoint> Joi, Vector2D BP, double Rate)
     	{
     		double num = BP.X - BP.X * Rate;
-    		foreach (Joi item in Joi)
+    		foreach (JointPoint item in Joi)
     		{
     			item.Joint.X = item.Joint.X * Rate + num;
     		}
     	}
 
-    	public static void ScalingX(this IEnumerable<Joi> Joi, ref Vector2D BP, double Rate)
+    	public static void ScalingX(this IEnumerable<JointPoint> Joi, ref Vector2D BP, double Rate)
     	{
     		double num = BP.X - BP.X * Rate;
-    		foreach (Joi item in Joi)
+    		foreach (JointPoint item in Joi)
     		{
     			item.Joint.X = item.Joint.X * Rate + num;
     		}
     	}
 
-    	public static void ScalingY(this IEnumerable<Joi> Joi, Vector2D BP, double Rate)
+    	public static void ScalingY(this IEnumerable<JointPoint> Joi, Vector2D BP, double Rate)
     	{
     		double num = BP.Y - BP.Y * Rate;
-    		foreach (Joi item in Joi)
+    		foreach (JointPoint item in Joi)
     		{
     			item.Joint.Y = item.Joint.Y * Rate + num;
     		}
     	}
 
-    	public static void ScalingY(this IEnumerable<Joi> Joi, ref Vector2D BP, double Rate)
+    	public static void ScalingY(this IEnumerable<JointPoint> Joi, ref Vector2D BP, double Rate)
     	{
     		double num = BP.Y - BP.Y * Rate;
-    		foreach (Joi item in Joi)
+    		foreach (JointPoint item in Joi)
     		{
     			item.Joint.Y = item.Joint.Y * Rate + num;
     		}
     	}
 
-    	public static void ScalingXY(this IEnumerable<Joi> Joi, Vector2D BP, double Rate)
+    	public static void ScalingXY(this IEnumerable<JointPoint> Joi, Vector2D BP, double Rate)
     	{
     		Vector2D vector2D = default(Vector2D);
     		vector2D.X = BP.X - BP.X * Rate;
     		vector2D.Y = BP.Y - BP.Y * Rate;
-    		foreach (Joi item in Joi)
+    		foreach (JointPoint item in Joi)
     		{
     			item.Joint.X = item.Joint.X * Rate + vector2D.X;
     			item.Joint.Y = item.Joint.Y * Rate + vector2D.Y;
     		}
     	}
 
-    	public static void ScalingXY(this IEnumerable<Joi> Joi, ref Vector2D BP, double Rate)
+    	public static void ScalingXY(this IEnumerable<JointPoint> Joi, ref Vector2D BP, double Rate)
     	{
     		Vector2D vector2D = default(Vector2D);
     		vector2D.X = BP.X - BP.X * Rate;
     		vector2D.Y = BP.Y - BP.Y * Rate;
-    		foreach (Joi item in Joi)
+    		foreach (JointPoint item in Joi)
     		{
     			item.Joint.X = item.Joint.X * Rate + vector2D.X;
     			item.Joint.Y = item.Joint.Y * Rate + vector2D.Y;
@@ -308,19 +308,19 @@ namespace _2DGAMELIB
     		Out.Reverse();
     	}
 
-    	public static void ReverseX(this List<Joi> Joi, ref Vector2D BP)
+    	public static void ReverseX(this List<JointPoint> Joi, ref Vector2D BP)
     	{
     		double num = BP.X - (1.0 - BP.X);
-    		foreach (Joi item in Joi)
+    		foreach (JointPoint item in Joi)
     		{
     			item.Joint.X = 1.0 - item.Joint.X + num;
     		}
     	}
 
-    	public static void ReverseY(this List<Joi> Joi, ref Vector2D BP)
+    	public static void ReverseY(this List<JointPoint> Joi, ref Vector2D BP)
     	{
     		double num = BP.Y - (1.0 - BP.Y);
-    		foreach (Joi item in Joi)
+    		foreach (JointPoint item in Joi)
     		{
     			item.Joint.Y = 1.0 - item.Joint.Y + num;
     		}
@@ -400,9 +400,9 @@ namespace _2DGAMELIB
     		}
     	}
 
-    	public static void ExpansionX(this List<Joi> Joi, ref Vector2D BP, double Rate)
+    	public static void ExpansionX(this List<JointPoint> Joi, ref Vector2D BP, double Rate)
     	{
-    		foreach (Joi item in Joi)
+    		foreach (JointPoint item in Joi)
     		{
     			Vector2D vector2D = (item.Joint - BP).newNormalize();
     			vector2D.Y = 0.0;
@@ -410,9 +410,9 @@ namespace _2DGAMELIB
     		}
     	}
 
-    	public static void ExpansionY(this List<Joi> Joi, ref Vector2D BP, double Rate)
+    	public static void ExpansionY(this List<JointPoint> Joi, ref Vector2D BP, double Rate)
     	{
-    		foreach (Joi item in Joi)
+    		foreach (JointPoint item in Joi)
     		{
     			Vector2D vector2D = (item.Joint - BP).newNormalize();
     			vector2D.X = 0.0;
@@ -420,17 +420,17 @@ namespace _2DGAMELIB
     		}
     	}
 
-    	public static void ExpansionXY(this List<Joi> Joi, Vector2D BP, double Rate)
+    	public static void ExpansionXY(this List<JointPoint> Joi, Vector2D BP, double Rate)
     	{
-    		foreach (Joi item in Joi)
+    		foreach (JointPoint item in Joi)
     		{
     			item.Joint += (item.Joint - BP).newNormalize() * Rate;
     		}
     	}
 
-    	public static void ExpansionXY(this List<Joi> Joi, ref Vector2D BP, double Rate)
+    	public static void ExpansionXY(this List<JointPoint> Joi, ref Vector2D BP, double Rate)
     	{
-    		foreach (Joi item in Joi)
+    		foreach (JointPoint item in Joi)
     		{
     			item.Joint += (item.Joint - BP).newNormalize() * Rate;
     		}

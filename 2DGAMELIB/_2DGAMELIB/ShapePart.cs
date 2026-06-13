@@ -31,7 +31,7 @@ namespace _2DGAMELIB
 
     	protected List<CurveOutline> op = new List<CurveOutline>();
 
-    	protected List<Joi> jp = new List<Joi>();
+    	protected List<JointPoint> jp = new List<JointPoint>();
 
     	protected Vector2D basePointBase = DataConsts.Vec2DZero;
 
@@ -176,7 +176,7 @@ namespace _2DGAMELIB
     		}
     	}
 
-    	public List<Joi> JP
+    	public List<JointPoint> JP
     	{
     		get
     		{
@@ -188,7 +188,7 @@ namespace _2DGAMELIB
     		}
     	}
 
-    	public IEnumerable<Joi> InitializeJP
+    	public IEnumerable<JointPoint> InitializeJP
     	{
     		set
     		{
@@ -588,10 +588,10 @@ namespace _2DGAMELIB
     		{
     			op.Add(new CurveOutline(ShapePart.op[i]));
     		}
-    		jp = new List<Joi>(ShapePart.jp.Count);
+    		jp = new List<JointPoint>(ShapePart.jp.Count);
     		for (int j = 0; j < ShapePart.jp.Count; j++)
     		{
-    			jp.Add(new Joi(ShapePart.jp[j]));
+    			jp.Add(new JointPoint(ShapePart.jp[j]));
     		}
     		basePointBase = ShapePart.basePointBase;
     		basePointCont = ShapePart.basePointCont;

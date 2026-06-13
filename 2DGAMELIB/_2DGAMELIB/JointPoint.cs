@@ -6,16 +6,16 @@ namespace _2DGAMELIB
 
     //its the position of a joint
     [Serializable]
-    public class Joi
+    public class JointPoint
     {
     	public Vector2D Joint = DataConsts.Vec2DZero;
 
-    	public Joi(Joi Joi)
+    	public JointPoint(JointPoint JointPoint)
     	{
-    		Joint = Joi.Joint;
+    		Joint = JointPoint.Joint;
     	}
 
-    	public Joi(Vector2D Joint)
+    	public JointPoint(Vector2D Joint)
     	{
     		this.Joint = Joint;
     	}

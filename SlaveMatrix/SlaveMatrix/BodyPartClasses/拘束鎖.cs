@@ -306,7 +306,7 @@ namespace SlaveMatrix
     				num++;
     			}
     		}
-    		shapePart.JP[0] = new Joi(vec2DZero / num);
+    		shapePart.JP[0] = new JointPoint(vec2DZero / num);
     		接続P();
     		尺度B = (shapePart.GetArea() / X0Y0_鎖1.GetArea()).Sqrt() * 1.2;
     	}

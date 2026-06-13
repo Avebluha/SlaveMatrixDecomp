@@ -14,7 +14,7 @@ namespace _2DGAMELIB
     		int num = 0;
     		List<int> list = new List<int>();
     		List<ShapePart> list2 = EnumPar.ToList();
-    		foreach (Joi item in JoinRoot.JP)
+    		foreach (JointPoint item in JoinRoot.JP)
     		{
     			Vector2D v = JoinRoot.ToGlobal(item.Joint);
     			int num2 = 0;
@@ -59,7 +59,7 @@ namespace _2DGAMELIB
     			{
     				ShapePart shapePart = js.Joins[i].Par1;
     				int num3 = 0;
-    				foreach (Joi item in shapePart.JP)
+    				foreach (JointPoint item in shapePart.JP)
     				{
     					Vector2D v = shapePart.ToGlobal(item.Joint);
     					int num4 = 0;
@@ -108,7 +108,7 @@ namespace _2DGAMELIB
     				if (JoinRoot != item2)
     				{
     					int num2 = 0;
-    					foreach (Joi item3 in item.JP)
+    					foreach (JointPoint item3 in item.JP)
     					{
     						Vector2D v = item.ToGlobal(item3.Joint);
     						foreach (ShapePart item4 in item2.EnumJoinRoot)
@@ -160,7 +160,7 @@ namespace _2DGAMELIB
     						if (difs != item2)
     						{
     							int num4 = 0;
-    							foreach (Joi item3 in item.JP)
+    							foreach (JointPoint item3 in item.JP)
     							{
     								Vector2D v = item.ToGlobal(item3.Joint);
     								foreach (ShapePart item4 in item2.EnumJoinRoot)
