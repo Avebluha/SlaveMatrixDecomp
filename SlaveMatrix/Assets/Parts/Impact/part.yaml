@@ -1,0 +1,11 @@
+id: Impact
+original_key: 衝撃
+resource: その他
+morph_x: 1
+morph_y: 1
+variants:
+- x: 0
+  y: 0
+  file: x0y0.svg
+fields:
+- name: 衝撃

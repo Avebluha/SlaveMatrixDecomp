@@ -289,46 +289,46 @@ parts:
   path: Parts/ピアス/
 - id: CapMid
   path: Parts/CapMid/
-- id: キスマーク
-  path: Parts/キスマーク/
-- id: 鞭痕
-  path: Parts/鞭痕/
-- id: 汗
-  path: Parts/汗/
-- id: ぶっかけ
-  path: Parts/ぶっかけ/
-- id: 汚れ
-  path: Parts/汚れ/
+- id: KissMark
+  path: Parts/KissMark/
+- id: WhipMark
+  path: Parts/WhipMark/
+- id: Sweat
+  path: Parts/Sweat/
+- id: Bukkake
+  path: Parts/Bukkake/
+- id: Stain
+  path: Parts/Stain/
 - id: Pressing
   path: Parts/Pressing/
 - id: Ejaculation
   path: Parts/Ejaculation/
-- id: ペニス
-  path: Parts/ペニス/
-- id: ハンド
-  path: Parts/ハンド/
-- id: マウス
-  path: Parts/マウス/
-- id: ロータ
-  path: Parts/ロータ/
-- id: コモン
-  path: Parts/コモン/
-- id: ディル
-  path: Parts/ディル/
-- id: アナル
-  path: Parts/アナル/
-- id: デンマ
-  path: Parts/デンマ/
-- id: ドリル
-  path: Parts/ドリル/
-- id: パール
-  path: Parts/パール/
+- id: PenisCursor
+  path: Parts/PenisCursor/
+- id: HandCursor
+  path: Parts/HandCursor/
+- id: MouthCursor
+  path: Parts/MouthCursor/
+- id: RotoCursor
+  path: Parts/RotoCursor/
+- id: CommonCursor
+  path: Parts/CommonCursor/
+- id: DildoCursor
+  path: Parts/DildoCursor/
+- id: AnalCursor
+  path: Parts/AnalCursor/
+- id: VibratorCursor
+  path: Parts/VibratorCursor/
+- id: DrillCursor
+  path: Parts/DrillCursor/
+- id: PearlCursor
+  path: Parts/PearlCursor/
 - id: FeatherDuster
   path: Parts/FeatherDuster/
 - id: 調教鞭
   path: Parts/調教鞭/
-- id: T字剃刀
-  path: Parts/T字剃刀/
+- id: TRazorCursor
+  path: Parts/TRazorCursor/
 - id: 染み
   path: Parts/染み/
 - id: 四足染み
@@ -337,15 +337,15 @@ parts:
   path: Parts/RestraintUpper/
 - id: RestraintLower
   path: Parts/RestraintLower/
-- id: 衝撃
-  path: Parts/衝撃/
-- id: 流血大
-  path: Parts/流血大/
-- id: 流血中
-  path: Parts/流血中/
-- id: 流血小
-  path: Parts/流血小/
-- id: 鎖
-  path: Parts/鎖/
+- id: Impact
+  path: Parts/Impact/
+- id: BleedingLarge
+  path: Parts/BleedingLarge/
+- id: BleedingMid
+  path: Parts/BleedingMid/
+- id: BleedingSmall
+  path: Parts/BleedingSmall/
+- id: Chain
+  path: Parts/Chain/
 - id: RestraintChain
   path: Parts/RestraintChain/

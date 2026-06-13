@@ -1,0 +1,49 @@
+id: BleedingSmall
+original_key: 流血小
+resource: その他
+morph_x: 1
+morph_y: 5
+variants:
+- x: 0
+  y: 0
+  file: x0y0.svg
+- x: 0
+  y: 1
+  file: x0y1.svg
+- x: 0
+  y: 2
+  file: x0y2.svg
+- x: 0
+  y: 3
+  file: x0y3.svg
+- x: 0
+  y: 4
+  file: x0y4.svg
+fields:
+- name: 血痕
+- name: 流血
+joints:
+- position: [
+  0.3798670310818435,
+  0.39069250887037926
+]
+- position: [
+  0.09500000000000003,
+  0.07948224858946686
+]
+- position: [
+  0.09500000000000003,
+  0.08124036609854052
+]
+- position: [
+  0.09500000000000003,
+  0.08299848360761417
+]
+- position: [
+  0.09500000000000003,
+  0.08475660111668781
+]
+- position: [
+  0.09500000000000003,
+  0.08651471862576146
+]
