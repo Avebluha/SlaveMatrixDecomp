@@ -6,39 +6,39 @@ namespace SlaveMatrix
 {
     public class 尾_蜘 : 尾
     {
-    	public Par X0Y0_尾0;
+    	public ShapePart X0Y0_尾0;
 
-    	public Par X0Y0_柄0;
+    	public ShapePart X0Y0_柄0;
 
-    	public Par X0Y0_柄左1;
+    	public ShapePart X0Y0_柄左1;
 
-    	public Par X0Y0_柄左2;
+    	public ShapePart X0Y0_柄左2;
 
-    	public Par X0Y0_柄右1;
+    	public ShapePart X0Y0_柄右1;
 
-    	public Par X0Y0_柄右2;
+    	public ShapePart X0Y0_柄右2;
 
-    	public Par X0Y0_出糸突起後_出糸突起基;
+    	public ShapePart X0Y0_出糸突起後_出糸突起基;
 
-    	public Par X0Y0_出糸突起後_出糸突起中;
+    	public ShapePart X0Y0_出糸突起後_出糸突起中;
 
-    	public Par X0Y0_出糸突起後_出糸突起左;
+    	public ShapePart X0Y0_出糸突起後_出糸突起左;
 
-    	public Par X0Y0_出糸突起後_出糸突起右;
+    	public ShapePart X0Y0_出糸突起後_出糸突起右;
 
-    	public Par X0Y0_出糸突起左_出糸突起1;
+    	public ShapePart X0Y0_出糸突起左_出糸突起1;
 
-    	public Par X0Y0_出糸突起左_出糸突起2;
+    	public ShapePart X0Y0_出糸突起左_出糸突起2;
 
-    	public Par X0Y0_出糸突起右_出糸突起1;
+    	public ShapePart X0Y0_出糸突起右_出糸突起1;
 
-    	public Par X0Y0_出糸突起右_出糸突起2;
+    	public ShapePart X0Y0_出糸突起右_出糸突起2;
 
-    	public Par X0Y0_出糸突起前_出糸突起左;
+    	public ShapePart X0Y0_出糸突起前_出糸突起左;
 
-    	public Par X0Y0_出糸突起前_出糸突起右;
+    	public ShapePart X0Y0_出糸突起前_出糸突起右;
 
-    	public Par X0Y0_付根線;
+    	public ShapePart X0Y0_付根線;
 
     	public ColorD 尾0CD;
 
@@ -568,7 +568,7 @@ namespace SlaveMatrix
     		Body.JoinPAall();
     	}
 
-    	public override IEnumerable<Par> Enum軸()
+    	public override IEnumerable<ShapePart> Enum軸()
     	{
     		yield return X0Y0_尾0;
     	}
@@ -576,7 +576,7 @@ namespace SlaveMatrix
     	public override void 色更新()
     	{
     		X0Y0_尾0CP.Update();
-    		X0Y0_柄0CP.Par.GetMiY_MaY(out mm);
+    		X0Y0_柄0CP.ShapePart.GetMiY_MaY(out mm);
     		X0Y0_柄0CP.Update(mm);
     		X0Y0_柄左1CP.Update(mm);
     		X0Y0_柄左2CP.Update(mm);

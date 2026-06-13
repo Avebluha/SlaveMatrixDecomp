@@ -4,11 +4,11 @@ namespace SlaveMatrix
 {
     public class 単眼眉 : Ele
     {
-    	public Par X0Y0_眉;
+    	public ShapePart X0Y0_眉;
 
-    	public Par X0Y1_眉;
+    	public ShapePart X0Y1_眉;
 
-    	public Par X0Y2_眉;
+    	public ShapePart X0Y2_眉;
 
     	public ColorD 眉CD;
 

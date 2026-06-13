@@ -4,41 +4,41 @@ namespace SlaveMatrix
 {
     public class 耳_獣 : 耳
     {
-    	public Par X0Y0_耳;
+    	public ShapePart X0Y0_耳;
 
-    	public Par X0Y0_耳線1;
+    	public ShapePart X0Y0_耳線1;
 
-    	public Par X0Y0_耳線2;
+    	public ShapePart X0Y0_耳線2;
 
-    	public Par X0Y1_耳;
+    	public ShapePart X0Y1_耳;
 
-    	public Par X0Y1_耳線1;
+    	public ShapePart X0Y1_耳線1;
 
-    	public Par X0Y1_耳線2;
+    	public ShapePart X0Y1_耳線2;
 
-    	public Par X0Y2_耳;
+    	public ShapePart X0Y2_耳;
 
-    	public Par X0Y2_耳線1;
+    	public ShapePart X0Y2_耳線1;
 
-    	public Par X0Y2_耳線2;
+    	public ShapePart X0Y2_耳線2;
 
-    	public Par X1Y0_耳;
+    	public ShapePart X1Y0_耳;
 
-    	public Par X1Y0_耳線1;
+    	public ShapePart X1Y0_耳線1;
 
-    	public Par X1Y0_耳線2;
+    	public ShapePart X1Y0_耳線2;
 
-    	public Par X1Y1_耳;
+    	public ShapePart X1Y1_耳;
 
-    	public Par X1Y1_耳線1;
+    	public ShapePart X1Y1_耳線1;
 
-    	public Par X1Y1_耳線2;
+    	public ShapePart X1Y1_耳線2;
 
-    	public Par X1Y2_耳;
+    	public ShapePart X1Y2_耳;
 
-    	public Par X1Y2_耳線1;
+    	public ShapePart X1Y2_耳線1;
 
-    	public Par X1Y2_耳線2;
+    	public ShapePart X1Y2_耳線2;
 
     	public ColorD 耳CD;
 

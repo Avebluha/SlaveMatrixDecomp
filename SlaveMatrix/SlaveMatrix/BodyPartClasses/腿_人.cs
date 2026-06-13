@@ -6,529 +6,529 @@ namespace SlaveMatrix
 {
     public class 腿_人 : 腿
     {
-    	public Par X0Y0_腿;
+    	public ShapePart X0Y0_腿;
 
-    	public Par X0Y0_筋;
+    	public ShapePart X0Y0_筋;
 
-    	public Par X0Y0_獣性_獣毛1;
+    	public ShapePart X0Y0_獣性_獣毛1;
 
-    	public Par X0Y0_獣性_獣毛2;
+    	public ShapePart X0Y0_獣性_獣毛2;
 
-    	public Par X0Y0_淫タトゥ_ハート_タトゥ左;
+    	public ShapePart X0Y0_淫タトゥ_ハート_タトゥ左;
 
-    	public Par X0Y0_淫タトゥ_ハート_タトゥ右;
+    	public ShapePart X0Y0_淫タトゥ_ハート_タトゥ右;
 
-    	public Par X0Y0_淫タトゥ_タトゥ左1;
+    	public ShapePart X0Y0_淫タトゥ_タトゥ左1;
 
-    	public Par X0Y0_淫タトゥ_タトゥ右1;
+    	public ShapePart X0Y0_淫タトゥ_タトゥ右1;
 
-    	public Par X0Y0_淫タトゥ_タトゥ左2;
+    	public ShapePart X0Y0_淫タトゥ_タトゥ左2;
 
-    	public Par X0Y0_淫タトゥ_タトゥ右2;
+    	public ShapePart X0Y0_淫タトゥ_タトゥ右2;
 
-    	public Par X0Y0_悪タトゥ1_文字_文字a_枠;
+    	public ShapePart X0Y0_悪タトゥ1_文字_文字a_枠;
 
-    	public Par X0Y0_悪タトゥ1_文字_文字a_文字タトゥ1;
+    	public ShapePart X0Y0_悪タトゥ1_文字_文字a_文字タトゥ1;
 
-    	public Par X0Y0_悪タトゥ1_文字_文字a_文字タトゥ2;
+    	public ShapePart X0Y0_悪タトゥ1_文字_文字a_文字タトゥ2;
 
-    	public Par X0Y0_悪タトゥ1_文字_文字b_枠;
+    	public ShapePart X0Y0_悪タトゥ1_文字_文字b_枠;
 
-    	public Par X0Y0_悪タトゥ1_文字_文字b_文字タトゥ1;
+    	public ShapePart X0Y0_悪タトゥ1_文字_文字b_文字タトゥ1;
 
-    	public Par X0Y0_悪タトゥ1_文字_文字b_文字タトゥ2;
+    	public ShapePart X0Y0_悪タトゥ1_文字_文字b_文字タトゥ2;
 
-    	public Par X0Y0_悪タトゥ1_文字_文字c_枠;
+    	public ShapePart X0Y0_悪タトゥ1_文字_文字c_枠;
 
-    	public Par X0Y0_悪タトゥ1_文字_文字c_文字タトゥ1;
+    	public ShapePart X0Y0_悪タトゥ1_文字_文字c_文字タトゥ1;
 
-    	public Par X0Y0_悪タトゥ1_文字_文字c_文字タトゥ2;
+    	public ShapePart X0Y0_悪タトゥ1_文字_文字c_文字タトゥ2;
 
-    	public Par X0Y0_悪タトゥ1_文字_文字d_枠;
+    	public ShapePart X0Y0_悪タトゥ1_文字_文字d_枠;
 
-    	public Par X0Y0_悪タトゥ1_文字_文字d_文字タトゥ1;
+    	public ShapePart X0Y0_悪タトゥ1_文字_文字d_文字タトゥ1;
 
-    	public Par X0Y0_悪タトゥ1_文字_文字d_文字タトゥ2;
+    	public ShapePart X0Y0_悪タトゥ1_文字_文字d_文字タトゥ2;
 
-    	public Par X0Y0_悪タトゥ1_文字_文字e_枠;
+    	public ShapePart X0Y0_悪タトゥ1_文字_文字e_枠;
 
-    	public Par X0Y0_悪タトゥ1_文字_文字e_文字タトゥ1;
+    	public ShapePart X0Y0_悪タトゥ1_文字_文字e_文字タトゥ1;
 
-    	public Par X0Y0_悪タトゥ1_文字_文字e_文字タトゥ2;
+    	public ShapePart X0Y0_悪タトゥ1_文字_文字e_文字タトゥ2;
 
-    	public Par X0Y0_悪タトゥ1_文字_文字e_文字タトゥ3;
+    	public ShapePart X0Y0_悪タトゥ1_文字_文字e_文字タトゥ3;
 
-    	public Par X0Y0_悪タトゥ1_タトゥ1;
+    	public ShapePart X0Y0_悪タトゥ1_タトゥ1;
 
-    	public Par X0Y0_悪タトゥ1_タトゥ2;
+    	public ShapePart X0Y0_悪タトゥ1_タトゥ2;
 
-    	public Par X0Y0_悪タトゥ2_逆十字_逆十字1;
+    	public ShapePart X0Y0_悪タトゥ2_逆十字_逆十字1;
 
-    	public Par X0Y0_悪タトゥ2_逆十字_逆十字2;
+    	public ShapePart X0Y0_悪タトゥ2_逆十字_逆十字2;
 
-    	public Par X0Y0_竜性_鱗1;
+    	public ShapePart X0Y0_竜性_鱗1;
 
-    	public Par X0Y0_竜性_鱗2;
+    	public ShapePart X0Y0_竜性_鱗2;
 
-    	public Par X0Y0_竜性_鱗3;
+    	public ShapePart X0Y0_竜性_鱗3;
 
-    	public Par X0Y0_竜性_鱗4;
+    	public ShapePart X0Y0_竜性_鱗4;
 
-    	public Par X0Y0_紋柄_紋1;
+    	public ShapePart X0Y0_紋柄_紋1;
 
-    	public Par X0Y0_紋柄_紋2;
+    	public ShapePart X0Y0_紋柄_紋2;
 
-    	public Par X0Y0_紋柄_紋3;
+    	public ShapePart X0Y0_紋柄_紋3;
 
-    	public Par X0Y0_紋柄_紋4;
+    	public ShapePart X0Y0_紋柄_紋4;
 
-    	public Par X0Y0_植性_通常_葉3;
+    	public ShapePart X0Y0_植性_通常_葉3;
 
-    	public Par X0Y0_植性_通常_葉2;
+    	public ShapePart X0Y0_植性_通常_葉2;
 
-    	public Par X0Y0_植性_通常_葉1;
+    	public ShapePart X0Y0_植性_通常_葉1;
 
-    	public Par X0Y0_植性_欠損_葉3;
+    	public ShapePart X0Y0_植性_欠損_葉3;
 
-    	public Par X0Y0_植性_欠損_葉2;
+    	public ShapePart X0Y0_植性_欠損_葉2;
 
-    	public Par X0Y0_植性_欠損_葉1;
+    	public ShapePart X0Y0_植性_欠損_葉1;
 
-    	public Par X0Y0_虫性_器官1;
+    	public ShapePart X0Y0_虫性_器官1;
 
-    	public Par X0Y0_虫性_器官2;
+    	public ShapePart X0Y0_虫性_器官2;
 
-    	public Par X0Y0_傷I1;
+    	public ShapePart X0Y0_傷I1;
 
-    	public Par X0Y0_傷I2;
+    	public ShapePart X0Y0_傷I2;
 
-    	public Par X0Y0_傷I3;
+    	public ShapePart X0Y0_傷I3;
 
-    	public Par X0Y0_傷I4;
+    	public ShapePart X0Y0_傷I4;
 
-    	public Par X0Y0_傷X;
+    	public ShapePart X0Y0_傷X;
 
-    	public Par X0Y0_ハイライト1;
+    	public ShapePart X0Y0_ハイライト1;
 
-    	public Par X0Y0_ハイライト2;
+    	public ShapePart X0Y0_ハイライト2;
 
-    	public Par X0Y0_パンスト;
+    	public ShapePart X0Y0_パンスト;
 
-    	public Par X0Y0_パンスト_ハイライト;
+    	public ShapePart X0Y0_パンスト_ハイライト;
 
-    	public Par X0Y0_ニーハイ_ニーハイ1;
+    	public ShapePart X0Y0_ニーハイ_ニーハイ1;
 
-    	public Par X0Y0_ニーハイ_ニーハイ2;
+    	public ShapePart X0Y0_ニーハイ_ニーハイ2;
 
-    	public Par X0Y0_ニーハイ_ハイライト;
+    	public ShapePart X0Y0_ニーハイ_ハイライト;
 
-    	public Par X0Y1_腿;
+    	public ShapePart X0Y1_腿;
 
-    	public Par X0Y1_筋;
+    	public ShapePart X0Y1_筋;
 
-    	public Par X0Y1_獣性_獣毛1;
+    	public ShapePart X0Y1_獣性_獣毛1;
 
-    	public Par X0Y1_獣性_獣毛2;
+    	public ShapePart X0Y1_獣性_獣毛2;
 
-    	public Par X0Y1_淫タトゥ_ハート_タトゥ左;
+    	public ShapePart X0Y1_淫タトゥ_ハート_タトゥ左;
 
-    	public Par X0Y1_淫タトゥ_ハート_タトゥ右;
+    	public ShapePart X0Y1_淫タトゥ_ハート_タトゥ右;
 
-    	public Par X0Y1_淫タトゥ_タトゥ左1;
+    	public ShapePart X0Y1_淫タトゥ_タトゥ左1;
 
-    	public Par X0Y1_淫タトゥ_タトゥ右1;
+    	public ShapePart X0Y1_淫タトゥ_タトゥ右1;
 
-    	public Par X0Y1_淫タトゥ_タトゥ左2;
+    	public ShapePart X0Y1_淫タトゥ_タトゥ左2;
 
-    	public Par X0Y1_淫タトゥ_タトゥ右2;
+    	public ShapePart X0Y1_淫タトゥ_タトゥ右2;
 
-    	public Par X0Y1_悪タトゥ1_文字_文字a_枠;
+    	public ShapePart X0Y1_悪タトゥ1_文字_文字a_枠;
 
-    	public Par X0Y1_悪タトゥ1_文字_文字a_文字タトゥ1;
+    	public ShapePart X0Y1_悪タトゥ1_文字_文字a_文字タトゥ1;
 
-    	public Par X0Y1_悪タトゥ1_文字_文字a_文字タトゥ2;
+    	public ShapePart X0Y1_悪タトゥ1_文字_文字a_文字タトゥ2;
 
-    	public Par X0Y1_悪タトゥ1_文字_文字b_枠;
+    	public ShapePart X0Y1_悪タトゥ1_文字_文字b_枠;
 
-    	public Par X0Y1_悪タトゥ1_文字_文字b_文字タトゥ1;
+    	public ShapePart X0Y1_悪タトゥ1_文字_文字b_文字タトゥ1;
 
-    	public Par X0Y1_悪タトゥ1_文字_文字b_文字タトゥ2;
+    	public ShapePart X0Y1_悪タトゥ1_文字_文字b_文字タトゥ2;
 
-    	public Par X0Y1_悪タトゥ1_文字_文字c_枠;
+    	public ShapePart X0Y1_悪タトゥ1_文字_文字c_枠;
 
-    	public Par X0Y1_悪タトゥ1_文字_文字c_文字タトゥ1;
+    	public ShapePart X0Y1_悪タトゥ1_文字_文字c_文字タトゥ1;
 
-    	public Par X0Y1_悪タトゥ1_文字_文字c_文字タトゥ2;
+    	public ShapePart X0Y1_悪タトゥ1_文字_文字c_文字タトゥ2;
 
-    	public Par X0Y1_悪タトゥ1_文字_文字d_枠;
+    	public ShapePart X0Y1_悪タトゥ1_文字_文字d_枠;
 
-    	public Par X0Y1_悪タトゥ1_文字_文字d_文字タトゥ1;
+    	public ShapePart X0Y1_悪タトゥ1_文字_文字d_文字タトゥ1;
 
-    	public Par X0Y1_悪タトゥ1_文字_文字d_文字タトゥ2;
+    	public ShapePart X0Y1_悪タトゥ1_文字_文字d_文字タトゥ2;
 
-    	public Par X0Y1_悪タトゥ1_文字_文字e_枠;
+    	public ShapePart X0Y1_悪タトゥ1_文字_文字e_枠;
 
-    	public Par X0Y1_悪タトゥ1_文字_文字e_文字タトゥ1;
+    	public ShapePart X0Y1_悪タトゥ1_文字_文字e_文字タトゥ1;
 
-    	public Par X0Y1_悪タトゥ1_文字_文字e_文字タトゥ2;
+    	public ShapePart X0Y1_悪タトゥ1_文字_文字e_文字タトゥ2;
 
-    	public Par X0Y1_悪タトゥ1_文字_文字e_文字タトゥ3;
+    	public ShapePart X0Y1_悪タトゥ1_文字_文字e_文字タトゥ3;
 
-    	public Par X0Y1_悪タトゥ1_タトゥ1;
+    	public ShapePart X0Y1_悪タトゥ1_タトゥ1;
 
-    	public Par X0Y1_悪タトゥ1_タトゥ2;
+    	public ShapePart X0Y1_悪タトゥ1_タトゥ2;
 
-    	public Par X0Y1_悪タトゥ2_逆十字_逆十字1;
+    	public ShapePart X0Y1_悪タトゥ2_逆十字_逆十字1;
 
-    	public Par X0Y1_悪タトゥ2_逆十字_逆十字2;
+    	public ShapePart X0Y1_悪タトゥ2_逆十字_逆十字2;
 
-    	public Par X0Y1_鱗_鱗1;
+    	public ShapePart X0Y1_鱗_鱗1;
 
-    	public Par X0Y1_鱗_鱗2;
+    	public ShapePart X0Y1_鱗_鱗2;
 
-    	public Par X0Y1_鱗_鱗3;
+    	public ShapePart X0Y1_鱗_鱗3;
 
-    	public Par X0Y1_鱗_鱗4;
+    	public ShapePart X0Y1_鱗_鱗4;
 
-    	public Par X0Y1_紋柄_紋1;
+    	public ShapePart X0Y1_紋柄_紋1;
 
-    	public Par X0Y1_紋柄_紋2;
+    	public ShapePart X0Y1_紋柄_紋2;
 
-    	public Par X0Y1_紋柄_紋3;
+    	public ShapePart X0Y1_紋柄_紋3;
 
-    	public Par X0Y1_紋柄_紋4;
+    	public ShapePart X0Y1_紋柄_紋4;
 
-    	public Par X0Y1_植性_通常_葉3;
+    	public ShapePart X0Y1_植性_通常_葉3;
 
-    	public Par X0Y1_植性_通常_葉2;
+    	public ShapePart X0Y1_植性_通常_葉2;
 
-    	public Par X0Y1_植性_通常_葉1;
+    	public ShapePart X0Y1_植性_通常_葉1;
 
-    	public Par X0Y1_植性_欠損_葉3;
+    	public ShapePart X0Y1_植性_欠損_葉3;
 
-    	public Par X0Y1_植性_欠損_葉2;
+    	public ShapePart X0Y1_植性_欠損_葉2;
 
-    	public Par X0Y1_植性_欠損_葉1;
+    	public ShapePart X0Y1_植性_欠損_葉1;
 
-    	public Par X0Y1_虫性_器官1;
+    	public ShapePart X0Y1_虫性_器官1;
 
-    	public Par X0Y1_虫性_器官2;
+    	public ShapePart X0Y1_虫性_器官2;
 
-    	public Par X0Y1_傷I1;
+    	public ShapePart X0Y1_傷I1;
 
-    	public Par X0Y1_傷I2;
+    	public ShapePart X0Y1_傷I2;
 
-    	public Par X0Y1_傷I3;
+    	public ShapePart X0Y1_傷I3;
 
-    	public Par X0Y1_傷I4;
+    	public ShapePart X0Y1_傷I4;
 
-    	public Par X0Y1_傷X;
+    	public ShapePart X0Y1_傷X;
 
-    	public Par X0Y1_ハイライト1;
+    	public ShapePart X0Y1_ハイライト1;
 
-    	public Par X0Y1_ハイライト2;
+    	public ShapePart X0Y1_ハイライト2;
 
-    	public Par X0Y1_パンスト;
+    	public ShapePart X0Y1_パンスト;
 
-    	public Par X0Y1_パンスト_ハイライト;
+    	public ShapePart X0Y1_パンスト_ハイライト;
 
-    	public Par X0Y1_ニーハイ_ニーハイ1;
+    	public ShapePart X0Y1_ニーハイ_ニーハイ1;
 
-    	public Par X0Y1_ニーハイ_ニーハイ2;
+    	public ShapePart X0Y1_ニーハイ_ニーハイ2;
 
-    	public Par X0Y1_ニーハイ_ハイライト;
+    	public ShapePart X0Y1_ニーハイ_ハイライト;
 
-    	public Par X0Y2_腿;
+    	public ShapePart X0Y2_腿;
 
-    	public Par X0Y2_筋;
+    	public ShapePart X0Y2_筋;
 
-    	public Par X0Y2_獣性_獣毛1;
+    	public ShapePart X0Y2_獣性_獣毛1;
 
-    	public Par X0Y2_獣性_獣毛2;
+    	public ShapePart X0Y2_獣性_獣毛2;
 
-    	public Par X0Y2_淫タトゥ_ハート_タトゥ左;
+    	public ShapePart X0Y2_淫タトゥ_ハート_タトゥ左;
 
-    	public Par X0Y2_淫タトゥ_ハート_タトゥ右;
+    	public ShapePart X0Y2_淫タトゥ_ハート_タトゥ右;
 
-    	public Par X0Y2_淫タトゥ_タトゥ右1;
+    	public ShapePart X0Y2_淫タトゥ_タトゥ右1;
 
-    	public Par X0Y2_淫タトゥ_タトゥ右2;
+    	public ShapePart X0Y2_淫タトゥ_タトゥ右2;
 
-    	public Par X0Y2_悪タトゥ1_文字_文字b_枠;
+    	public ShapePart X0Y2_悪タトゥ1_文字_文字b_枠;
 
-    	public Par X0Y2_悪タトゥ1_文字_文字b_文字タトゥ1;
+    	public ShapePart X0Y2_悪タトゥ1_文字_文字b_文字タトゥ1;
 
-    	public Par X0Y2_悪タトゥ1_文字_文字b_文字タトゥ2;
+    	public ShapePart X0Y2_悪タトゥ1_文字_文字b_文字タトゥ2;
 
-    	public Par X0Y2_悪タトゥ1_文字_文字c_枠;
+    	public ShapePart X0Y2_悪タトゥ1_文字_文字c_枠;
 
-    	public Par X0Y2_悪タトゥ1_文字_文字c_文字タトゥ1;
+    	public ShapePart X0Y2_悪タトゥ1_文字_文字c_文字タトゥ1;
 
-    	public Par X0Y2_悪タトゥ1_文字_文字c_文字タトゥ2;
+    	public ShapePart X0Y2_悪タトゥ1_文字_文字c_文字タトゥ2;
 
-    	public Par X0Y2_悪タトゥ1_文字_文字d_枠;
+    	public ShapePart X0Y2_悪タトゥ1_文字_文字d_枠;
 
-    	public Par X0Y2_悪タトゥ1_文字_文字d_文字タトゥ1;
+    	public ShapePart X0Y2_悪タトゥ1_文字_文字d_文字タトゥ1;
 
-    	public Par X0Y2_悪タトゥ1_文字_文字d_文字タトゥ2;
+    	public ShapePart X0Y2_悪タトゥ1_文字_文字d_文字タトゥ2;
 
-    	public Par X0Y2_悪タトゥ1_文字_文字e_枠;
+    	public ShapePart X0Y2_悪タトゥ1_文字_文字e_枠;
 
-    	public Par X0Y2_悪タトゥ1_文字_文字e_文字タトゥ1;
+    	public ShapePart X0Y2_悪タトゥ1_文字_文字e_文字タトゥ1;
 
-    	public Par X0Y2_悪タトゥ1_文字_文字e_文字タトゥ2;
+    	public ShapePart X0Y2_悪タトゥ1_文字_文字e_文字タトゥ2;
 
-    	public Par X0Y2_悪タトゥ1_文字_文字e_文字タトゥ3;
+    	public ShapePart X0Y2_悪タトゥ1_文字_文字e_文字タトゥ3;
 
-    	public Par X0Y2_悪タトゥ1_文字_文字a_枠;
+    	public ShapePart X0Y2_悪タトゥ1_文字_文字a_枠;
 
-    	public Par X0Y2_悪タトゥ1_文字_文字a_文字タトゥ1;
+    	public ShapePart X0Y2_悪タトゥ1_文字_文字a_文字タトゥ1;
 
-    	public Par X0Y2_悪タトゥ1_文字_文字a_文字タトゥ2;
+    	public ShapePart X0Y2_悪タトゥ1_文字_文字a_文字タトゥ2;
 
-    	public Par X0Y2_悪タトゥ1_タトゥ1;
+    	public ShapePart X0Y2_悪タトゥ1_タトゥ1;
 
-    	public Par X0Y2_悪タトゥ1_タトゥ2;
+    	public ShapePart X0Y2_悪タトゥ1_タトゥ2;
 
-    	public Par X0Y2_悪タトゥ2_逆十字_逆十字1;
+    	public ShapePart X0Y2_悪タトゥ2_逆十字_逆十字1;
 
-    	public Par X0Y2_悪タトゥ2_逆十字_逆十字2;
+    	public ShapePart X0Y2_悪タトゥ2_逆十字_逆十字2;
 
-    	public Par X0Y2_植性_通常_葉3;
+    	public ShapePart X0Y2_植性_通常_葉3;
 
-    	public Par X0Y2_植性_通常_葉2;
+    	public ShapePart X0Y2_植性_通常_葉2;
 
-    	public Par X0Y2_植性_通常_葉1;
+    	public ShapePart X0Y2_植性_通常_葉1;
 
-    	public Par X0Y2_植性_欠損_葉3;
+    	public ShapePart X0Y2_植性_欠損_葉3;
 
-    	public Par X0Y2_植性_欠損_葉2;
+    	public ShapePart X0Y2_植性_欠損_葉2;
 
-    	public Par X0Y2_植性_欠損_葉1;
+    	public ShapePart X0Y2_植性_欠損_葉1;
 
-    	public Par X0Y2_傷I1;
+    	public ShapePart X0Y2_傷I1;
 
-    	public Par X0Y2_傷I2;
+    	public ShapePart X0Y2_傷I2;
 
-    	public Par X0Y2_傷I3;
+    	public ShapePart X0Y2_傷I3;
 
-    	public Par X0Y2_ハイライト1;
+    	public ShapePart X0Y2_ハイライト1;
 
-    	public Par X0Y2_ハイライト2;
+    	public ShapePart X0Y2_ハイライト2;
 
-    	public Par X0Y2_パンスト;
+    	public ShapePart X0Y2_パンスト;
 
-    	public Par X0Y2_パンスト_ハイライト;
+    	public ShapePart X0Y2_パンスト_ハイライト;
 
-    	public Par X0Y2_ニーハイ_ニーハイ1;
+    	public ShapePart X0Y2_ニーハイ_ニーハイ1;
 
-    	public Par X0Y2_ニーハイ_ニーハイ2;
+    	public ShapePart X0Y2_ニーハイ_ニーハイ2;
 
-    	public Par X0Y2_ニーハイ_ハイライト;
+    	public ShapePart X0Y2_ニーハイ_ハイライト;
 
-    	public Par X0Y3_腿;
+    	public ShapePart X0Y3_腿;
 
-    	public Par X0Y3_筋;
+    	public ShapePart X0Y3_筋;
 
-    	public Par X0Y3_獣性_獣毛1;
+    	public ShapePart X0Y3_獣性_獣毛1;
 
-    	public Par X0Y3_獣性_獣毛2;
+    	public ShapePart X0Y3_獣性_獣毛2;
 
-    	public Par X0Y3_淫タトゥ_タトゥ左1;
+    	public ShapePart X0Y3_淫タトゥ_タトゥ左1;
 
-    	public Par X0Y3_淫タトゥ_タトゥ右1;
+    	public ShapePart X0Y3_淫タトゥ_タトゥ右1;
 
-    	public Par X0Y3_淫タトゥ_タトゥ左2;
+    	public ShapePart X0Y3_淫タトゥ_タトゥ左2;
 
-    	public Par X0Y3_淫タトゥ_タトゥ右2;
+    	public ShapePart X0Y3_淫タトゥ_タトゥ右2;
 
-    	public Par X0Y3_悪タトゥ1_文字_文字c_枠;
+    	public ShapePart X0Y3_悪タトゥ1_文字_文字c_枠;
 
-    	public Par X0Y3_悪タトゥ1_文字_文字c_文字タトゥ1;
+    	public ShapePart X0Y3_悪タトゥ1_文字_文字c_文字タトゥ1;
 
-    	public Par X0Y3_悪タトゥ1_文字_文字c_文字タトゥ2;
+    	public ShapePart X0Y3_悪タトゥ1_文字_文字c_文字タトゥ2;
 
-    	public Par X0Y3_悪タトゥ1_文字_文字d_枠;
+    	public ShapePart X0Y3_悪タトゥ1_文字_文字d_枠;
 
-    	public Par X0Y3_悪タトゥ1_文字_文字d_文字タトゥ1;
+    	public ShapePart X0Y3_悪タトゥ1_文字_文字d_文字タトゥ1;
 
-    	public Par X0Y3_悪タトゥ1_文字_文字d_文字タトゥ2;
+    	public ShapePart X0Y3_悪タトゥ1_文字_文字d_文字タトゥ2;
 
-    	public Par X0Y3_悪タトゥ1_文字_文字e_枠;
+    	public ShapePart X0Y3_悪タトゥ1_文字_文字e_枠;
 
-    	public Par X0Y3_悪タトゥ1_文字_文字e_文字タトゥ1;
+    	public ShapePart X0Y3_悪タトゥ1_文字_文字e_文字タトゥ1;
 
-    	public Par X0Y3_悪タトゥ1_文字_文字e_文字タトゥ2;
+    	public ShapePart X0Y3_悪タトゥ1_文字_文字e_文字タトゥ2;
 
-    	public Par X0Y3_悪タトゥ1_文字_文字e_文字タトゥ3;
+    	public ShapePart X0Y3_悪タトゥ1_文字_文字e_文字タトゥ3;
 
-    	public Par X0Y3_悪タトゥ1_文字_文字a_枠;
+    	public ShapePart X0Y3_悪タトゥ1_文字_文字a_枠;
 
-    	public Par X0Y3_悪タトゥ1_文字_文字a_文字タトゥ1;
+    	public ShapePart X0Y3_悪タトゥ1_文字_文字a_文字タトゥ1;
 
-    	public Par X0Y3_悪タトゥ1_文字_文字a_文字タトゥ2;
+    	public ShapePart X0Y3_悪タトゥ1_文字_文字a_文字タトゥ2;
 
-    	public Par X0Y3_悪タトゥ1_文字_文字b_枠;
+    	public ShapePart X0Y3_悪タトゥ1_文字_文字b_枠;
 
-    	public Par X0Y3_悪タトゥ1_文字_文字b_文字タトゥ1;
+    	public ShapePart X0Y3_悪タトゥ1_文字_文字b_文字タトゥ1;
 
-    	public Par X0Y3_悪タトゥ1_文字_文字b_文字タトゥ2;
+    	public ShapePart X0Y3_悪タトゥ1_文字_文字b_文字タトゥ2;
 
-    	public Par X0Y3_悪タトゥ1_タトゥ1;
+    	public ShapePart X0Y3_悪タトゥ1_タトゥ1;
 
-    	public Par X0Y3_悪タトゥ1_タトゥ2;
+    	public ShapePart X0Y3_悪タトゥ1_タトゥ2;
 
-    	public Par X0Y3_悪タトゥ2_逆十字_逆十字1;
+    	public ShapePart X0Y3_悪タトゥ2_逆十字_逆十字1;
 
-    	public Par X0Y3_悪タトゥ2_逆十字_逆十字2;
+    	public ShapePart X0Y3_悪タトゥ2_逆十字_逆十字2;
 
-    	public Par X0Y3_鱗_鱗1;
+    	public ShapePart X0Y3_鱗_鱗1;
 
-    	public Par X0Y3_鱗_鱗2;
+    	public ShapePart X0Y3_鱗_鱗2;
 
-    	public Par X0Y3_鱗_鱗3;
+    	public ShapePart X0Y3_鱗_鱗3;
 
-    	public Par X0Y3_鱗_鱗4;
+    	public ShapePart X0Y3_鱗_鱗4;
 
-    	public Par X0Y3_紋柄_紋1;
+    	public ShapePart X0Y3_紋柄_紋1;
 
-    	public Par X0Y3_紋柄_紋2;
+    	public ShapePart X0Y3_紋柄_紋2;
 
-    	public Par X0Y3_紋柄_紋3;
+    	public ShapePart X0Y3_紋柄_紋3;
 
-    	public Par X0Y3_紋柄_紋4;
+    	public ShapePart X0Y3_紋柄_紋4;
 
-    	public Par X0Y3_植性_通常_葉3;
+    	public ShapePart X0Y3_植性_通常_葉3;
 
-    	public Par X0Y3_植性_通常_葉2;
+    	public ShapePart X0Y3_植性_通常_葉2;
 
-    	public Par X0Y3_植性_通常_葉1;
+    	public ShapePart X0Y3_植性_通常_葉1;
 
-    	public Par X0Y3_植性_欠損_葉3;
+    	public ShapePart X0Y3_植性_欠損_葉3;
 
-    	public Par X0Y3_植性_欠損_葉2;
+    	public ShapePart X0Y3_植性_欠損_葉2;
 
-    	public Par X0Y3_植性_欠損_葉1;
+    	public ShapePart X0Y3_植性_欠損_葉1;
 
-    	public Par X0Y3_傷I1;
+    	public ShapePart X0Y3_傷I1;
 
-    	public Par X0Y3_傷I2;
+    	public ShapePart X0Y3_傷I2;
 
-    	public Par X0Y3_傷I3;
+    	public ShapePart X0Y3_傷I3;
 
-    	public Par X0Y3_傷X;
+    	public ShapePart X0Y3_傷X;
 
-    	public Par X0Y3_ハイライト1;
+    	public ShapePart X0Y3_ハイライト1;
 
-    	public Par X0Y3_ハイライト2;
+    	public ShapePart X0Y3_ハイライト2;
 
-    	public Par X0Y3_パンスト;
+    	public ShapePart X0Y3_パンスト;
 
-    	public Par X0Y3_パンスト_ハイライト;
+    	public ShapePart X0Y3_パンスト_ハイライト;
 
-    	public Par X0Y3_ニーハイ_ニーハイ1;
+    	public ShapePart X0Y3_ニーハイ_ニーハイ1;
 
-    	public Par X0Y3_ニーハイ_ニーハイ2;
+    	public ShapePart X0Y3_ニーハイ_ニーハイ2;
 
-    	public Par X0Y3_ニーハイ_ハイライト;
+    	public ShapePart X0Y3_ニーハイ_ハイライト;
 
-    	public Par X0Y4_腿;
+    	public ShapePart X0Y4_腿;
 
-    	public Par X0Y4_筋;
+    	public ShapePart X0Y4_筋;
 
-    	public Par X0Y4_獣性_獣毛1;
+    	public ShapePart X0Y4_獣性_獣毛1;
 
-    	public Par X0Y4_獣性_獣毛2;
+    	public ShapePart X0Y4_獣性_獣毛2;
 
-    	public Par X0Y4_淫タトゥ_タトゥ左1;
+    	public ShapePart X0Y4_淫タトゥ_タトゥ左1;
 
-    	public Par X0Y4_淫タトゥ_タトゥ右1;
+    	public ShapePart X0Y4_淫タトゥ_タトゥ右1;
 
-    	public Par X0Y4_淫タトゥ_タトゥ左2;
+    	public ShapePart X0Y4_淫タトゥ_タトゥ左2;
 
-    	public Par X0Y4_淫タトゥ_タトゥ右2;
+    	public ShapePart X0Y4_淫タトゥ_タトゥ右2;
 
-    	public Par X0Y4_悪タトゥ1_文字_文字d_枠;
+    	public ShapePart X0Y4_悪タトゥ1_文字_文字d_枠;
 
-    	public Par X0Y4_悪タトゥ1_文字_文字d_文字タトゥ1;
+    	public ShapePart X0Y4_悪タトゥ1_文字_文字d_文字タトゥ1;
 
-    	public Par X0Y4_悪タトゥ1_文字_文字d_文字タトゥ2;
+    	public ShapePart X0Y4_悪タトゥ1_文字_文字d_文字タトゥ2;
 
-    	public Par X0Y4_悪タトゥ1_文字_文字e_枠;
+    	public ShapePart X0Y4_悪タトゥ1_文字_文字e_枠;
 
-    	public Par X0Y4_悪タトゥ1_文字_文字e_文字タトゥ1;
+    	public ShapePart X0Y4_悪タトゥ1_文字_文字e_文字タトゥ1;
 
-    	public Par X0Y4_悪タトゥ1_文字_文字e_文字タトゥ2;
+    	public ShapePart X0Y4_悪タトゥ1_文字_文字e_文字タトゥ2;
 
-    	public Par X0Y4_悪タトゥ1_文字_文字e_文字タトゥ3;
+    	public ShapePart X0Y4_悪タトゥ1_文字_文字e_文字タトゥ3;
 
-    	public Par X0Y4_悪タトゥ1_文字_文字a_枠;
+    	public ShapePart X0Y4_悪タトゥ1_文字_文字a_枠;
 
-    	public Par X0Y4_悪タトゥ1_文字_文字a_文字タトゥ1;
+    	public ShapePart X0Y4_悪タトゥ1_文字_文字a_文字タトゥ1;
 
-    	public Par X0Y4_悪タトゥ1_文字_文字a_文字タトゥ2;
+    	public ShapePart X0Y4_悪タトゥ1_文字_文字a_文字タトゥ2;
 
-    	public Par X0Y4_悪タトゥ1_文字_文字b_枠;
+    	public ShapePart X0Y4_悪タトゥ1_文字_文字b_枠;
 
-    	public Par X0Y4_悪タトゥ1_文字_文字b_文字タトゥ1;
+    	public ShapePart X0Y4_悪タトゥ1_文字_文字b_文字タトゥ1;
 
-    	public Par X0Y4_悪タトゥ1_文字_文字b_文字タトゥ2;
+    	public ShapePart X0Y4_悪タトゥ1_文字_文字b_文字タトゥ2;
 
-    	public Par X0Y4_悪タトゥ1_文字_文字c_枠;
+    	public ShapePart X0Y4_悪タトゥ1_文字_文字c_枠;
 
-    	public Par X0Y4_悪タトゥ1_文字_文字c_文字タトゥ1;
+    	public ShapePart X0Y4_悪タトゥ1_文字_文字c_文字タトゥ1;
 
-    	public Par X0Y4_悪タトゥ1_文字_文字c_文字タトゥ2;
+    	public ShapePart X0Y4_悪タトゥ1_文字_文字c_文字タトゥ2;
 
-    	public Par X0Y4_悪タトゥ1_タトゥ1;
+    	public ShapePart X0Y4_悪タトゥ1_タトゥ1;
 
-    	public Par X0Y4_悪タトゥ1_タトゥ2;
+    	public ShapePart X0Y4_悪タトゥ1_タトゥ2;
 
-    	public Par X0Y4_鱗_鱗1;
+    	public ShapePart X0Y4_鱗_鱗1;
 
-    	public Par X0Y4_鱗_鱗2;
+    	public ShapePart X0Y4_鱗_鱗2;
 
-    	public Par X0Y4_鱗_鱗3;
+    	public ShapePart X0Y4_鱗_鱗3;
 
-    	public Par X0Y4_鱗_鱗4;
+    	public ShapePart X0Y4_鱗_鱗4;
 
-    	public Par X0Y4_紋柄_紋1;
+    	public ShapePart X0Y4_紋柄_紋1;
 
-    	public Par X0Y4_紋柄_紋2;
+    	public ShapePart X0Y4_紋柄_紋2;
 
-    	public Par X0Y4_紋柄_紋3;
+    	public ShapePart X0Y4_紋柄_紋3;
 
-    	public Par X0Y4_紋柄_紋4;
+    	public ShapePart X0Y4_紋柄_紋4;
 
-    	public Par X0Y4_植性_通常_葉3;
+    	public ShapePart X0Y4_植性_通常_葉3;
 
-    	public Par X0Y4_植性_通常_葉2;
+    	public ShapePart X0Y4_植性_通常_葉2;
 
-    	public Par X0Y4_植性_通常_葉1;
+    	public ShapePart X0Y4_植性_通常_葉1;
 
-    	public Par X0Y4_植性_欠損_葉3;
+    	public ShapePart X0Y4_植性_欠損_葉3;
 
-    	public Par X0Y4_植性_欠損_葉2;
+    	public ShapePart X0Y4_植性_欠損_葉2;
 
-    	public Par X0Y4_植性_欠損_葉1;
+    	public ShapePart X0Y4_植性_欠損_葉1;
 
-    	public Par X0Y4_傷I1;
+    	public ShapePart X0Y4_傷I1;
 
-    	public Par X0Y4_傷X;
+    	public ShapePart X0Y4_傷X;
 
-    	public Par X0Y4_ハイライト1;
+    	public ShapePart X0Y4_ハイライト1;
 
-    	public Par X0Y4_ハイライト2;
+    	public ShapePart X0Y4_ハイライト2;
 
-    	public Par X0Y4_パンスト;
+    	public ShapePart X0Y4_パンスト;
 
-    	public Par X0Y4_パンスト_ハイライト;
+    	public ShapePart X0Y4_パンスト_ハイライト;
 
-    	public Par X0Y4_ニーハイ_ニーハイ1;
+    	public ShapePart X0Y4_ニーハイ_ニーハイ1;
 
-    	public Par X0Y4_ニーハイ_ニーハイ2;
+    	public ShapePart X0Y4_ニーハイ_ニーハイ2;
 
-    	public Par X0Y4_ニーハイ_ハイライト;
+    	public ShapePart X0Y4_ニーハイ_ハイライト;
 
     	public ColorD 腿0CD;
 
@@ -3915,7 +3915,7 @@ namespace SlaveMatrix
     		腿4CD.色 = new Color2(ref 腿4CD.c2.Col1, ref Col);
     	}
 
-    	public override bool Is布(Par p)
+    	public override bool Is布(ShapePart p)
     	{
     		if (p != X0Y0_パンスト && p != X0Y0_パンスト_ハイライト && p != X0Y0_ニーハイ_ニーハイ1 && p != X0Y0_ニーハイ_ニーハイ2 && p != X0Y0_ニーハイ_ハイライト && p != X0Y1_パンスト && p != X0Y1_パンスト_ハイライト && p != X0Y1_ニーハイ_ニーハイ1 && p != X0Y1_ニーハイ_ニーハイ2 && p != X0Y1_ニーハイ_ハイライト && p != X0Y2_パンスト && p != X0Y2_パンスト_ハイライト && p != X0Y2_ニーハイ_ニーハイ1 && p != X0Y2_ニーハイ_ニーハイ2 && p != X0Y2_ニーハイ_ハイライト && p != X0Y3_パンスト && p != X0Y3_パンスト_ハイライト && p != X0Y3_ニーハイ_ニーハイ1 && p != X0Y3_ニーハイ_ニーハイ2 && p != X0Y3_ニーハイ_ハイライト && p != X0Y4_パンスト && p != X0Y4_パンスト_ハイライト && p != X0Y4_ニーハイ_ニーハイ1 && p != X0Y4_ニーハイ_ニーハイ2)
     		{

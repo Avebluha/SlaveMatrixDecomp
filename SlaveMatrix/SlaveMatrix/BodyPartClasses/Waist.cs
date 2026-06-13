@@ -5,435 +5,435 @@ namespace SlaveMatrix
 {
     public class Waist : Ele
     {
-    	public Par X0Y0_Waist;
+    	public ShapePart X0Y0_Waist;
 
-    	public Par X0Y0_股;
+    	public ShapePart X0Y0_股;
 
-    	public Par X0Y0_下腹;
+    	public ShapePart X0Y0_下腹;
 
-    	public Par X0Y0_腰皺;
+    	public ShapePart X0Y0_腰皺;
 
-    	public Par X0Y0_筋肉_筋肉下;
+    	public ShapePart X0Y0_筋肉_筋肉下;
 
-    	public Par X0Y0_筋肉_筋肉左;
+    	public ShapePart X0Y0_筋肉_筋肉左;
 
-    	public Par X0Y0_筋肉_筋肉右;
+    	public ShapePart X0Y0_筋肉_筋肉右;
 
-    	public Par X0Y0_筋肉_筋上左;
+    	public ShapePart X0Y0_筋肉_筋上左;
 
-    	public Par X0Y0_筋肉_筋上右;
+    	public ShapePart X0Y0_筋肉_筋上右;
 
-    	public Par X0Y0_筋肉_筋下左;
+    	public ShapePart X0Y0_筋肉_筋下左;
 
-    	public Par X0Y0_筋肉_筋下右;
+    	public ShapePart X0Y0_筋肉_筋下右;
 
-    	public Par X0Y0_ハイライト;
+    	public ShapePart X0Y0_ハイライト;
 
-    	public Par X0Y0_臍;
+    	public ShapePart X0Y0_臍;
 
-    	public Par X0Y0_悪タトゥ_渦_タトゥ1左;
+    	public ShapePart X0Y0_悪タトゥ_渦_タトゥ1左;
 
-    	public Par X0Y0_悪タトゥ_渦_タトゥ1右;
+    	public ShapePart X0Y0_悪タトゥ_渦_タトゥ1右;
 
-    	public Par X0Y0_悪タトゥ_渦_タトゥ2左;
+    	public ShapePart X0Y0_悪タトゥ_渦_タトゥ2左;
 
-    	public Par X0Y0_悪タトゥ_渦_タトゥ2右;
+    	public ShapePart X0Y0_悪タトゥ_渦_タトゥ2右;
 
-    	public Par X0Y0_淫タトゥ_ハート_タトゥ1左;
+    	public ShapePart X0Y0_淫タトゥ_ハート_タトゥ1左;
 
-    	public Par X0Y0_淫タトゥ_ハート_タトゥ1右;
+    	public ShapePart X0Y0_淫タトゥ_ハート_タトゥ1右;
 
-    	public Par X0Y0_淫タトゥ_ハート_タトゥ2左;
+    	public ShapePart X0Y0_淫タトゥ_ハート_タトゥ2左;
 
-    	public Par X0Y0_淫タトゥ_ハート_タトゥ2右;
+    	public ShapePart X0Y0_淫タトゥ_ハート_タトゥ2右;
 
-    	public Par X0Y0_傷X左;
+    	public ShapePart X0Y0_傷X左;
 
-    	public Par X0Y0_傷X右;
+    	public ShapePart X0Y0_傷X右;
 
-    	public Par X0Y0_傷I左;
+    	public ShapePart X0Y0_傷I左;
 
-    	public Par X0Y0_傷I右;
+    	public ShapePart X0Y0_傷I右;
 
-    	public Par X0Y0_紋柄_紋左_紋1;
+    	public ShapePart X0Y0_紋柄_紋左_紋1;
 
-    	public Par X0Y0_紋柄_紋左_紋2;
+    	public ShapePart X0Y0_紋柄_紋左_紋2;
 
-    	public Par X0Y0_紋柄_紋左_紋3;
+    	public ShapePart X0Y0_紋柄_紋左_紋3;
 
-    	public Par X0Y0_紋柄_紋右_紋1;
+    	public ShapePart X0Y0_紋柄_紋右_紋1;
 
-    	public Par X0Y0_紋柄_紋右_紋2;
+    	public ShapePart X0Y0_紋柄_紋右_紋2;
 
-    	public Par X0Y0_紋柄_紋右_紋3;
+    	public ShapePart X0Y0_紋柄_紋右_紋3;
 
-    	public Par X0Y0_獣性_獣毛左;
+    	public ShapePart X0Y0_獣性_獣毛左;
 
-    	public Par X0Y0_獣性_獣毛右;
+    	public ShapePart X0Y0_獣性_獣毛右;
 
-    	public Par X0Y0_虫性_甲殻2;
+    	public ShapePart X0Y0_虫性_甲殻2;
 
-    	public Par X0Y0_虫性_甲殻1;
+    	public ShapePart X0Y0_虫性_甲殻1;
 
-    	public Par X0Y0_竜性_左_鱗1;
+    	public ShapePart X0Y0_竜性_左_鱗1;
 
-    	public Par X0Y0_竜性_左_鱗2;
+    	public ShapePart X0Y0_竜性_左_鱗2;
 
-    	public Par X0Y0_竜性_右_鱗1;
+    	public ShapePart X0Y0_竜性_右_鱗1;
 
-    	public Par X0Y0_竜性_右_鱗2;
+    	public ShapePart X0Y0_竜性_右_鱗2;
 
-    	public Par X0Y0_ハイライト上左;
+    	public ShapePart X0Y0_ハイライト上左;
 
-    	public Par X0Y0_ハイライト上右;
+    	public ShapePart X0Y0_ハイライト上右;
 
-    	public Par X0Y0_ハイライト下左;
+    	public ShapePart X0Y0_ハイライト下左;
 
-    	public Par X0Y0_ハイライト下右;
+    	public ShapePart X0Y0_ハイライト下右;
 
-    	public Par X0Y1_Waist;
+    	public ShapePart X0Y1_Waist;
 
-    	public Par X0Y1_股;
+    	public ShapePart X0Y1_股;
 
-    	public Par X0Y1_下腹;
+    	public ShapePart X0Y1_下腹;
 
-    	public Par X0Y1_腰皺;
+    	public ShapePart X0Y1_腰皺;
 
-    	public Par X0Y1_筋肉_筋肉下;
+    	public ShapePart X0Y1_筋肉_筋肉下;
 
-    	public Par X0Y1_筋肉_筋肉左;
+    	public ShapePart X0Y1_筋肉_筋肉左;
 
-    	public Par X0Y1_筋肉_筋肉右;
+    	public ShapePart X0Y1_筋肉_筋肉右;
 
-    	public Par X0Y1_筋肉_筋上左;
+    	public ShapePart X0Y1_筋肉_筋上左;
 
-    	public Par X0Y1_筋肉_筋上右;
+    	public ShapePart X0Y1_筋肉_筋上右;
 
-    	public Par X0Y1_筋肉_筋下左;
+    	public ShapePart X0Y1_筋肉_筋下左;
 
-    	public Par X0Y1_筋肉_筋下右;
+    	public ShapePart X0Y1_筋肉_筋下右;
 
-    	public Par X0Y1_ハイライト;
+    	public ShapePart X0Y1_ハイライト;
 
-    	public Par X0Y1_臍;
+    	public ShapePart X0Y1_臍;
 
-    	public Par X0Y1_悪タトゥ_渦_タトゥ1左;
+    	public ShapePart X0Y1_悪タトゥ_渦_タトゥ1左;
 
-    	public Par X0Y1_悪タトゥ_渦_タトゥ1右;
+    	public ShapePart X0Y1_悪タトゥ_渦_タトゥ1右;
 
-    	public Par X0Y1_悪タトゥ_渦_タトゥ2左;
+    	public ShapePart X0Y1_悪タトゥ_渦_タトゥ2左;
 
-    	public Par X0Y1_悪タトゥ_渦_タトゥ2右;
+    	public ShapePart X0Y1_悪タトゥ_渦_タトゥ2右;
 
-    	public Par X0Y1_淫タトゥ_ハート_タトゥ1左;
+    	public ShapePart X0Y1_淫タトゥ_ハート_タトゥ1左;
 
-    	public Par X0Y1_淫タトゥ_ハート_タトゥ1右;
+    	public ShapePart X0Y1_淫タトゥ_ハート_タトゥ1右;
 
-    	public Par X0Y1_淫タトゥ_ハート_タトゥ2左;
+    	public ShapePart X0Y1_淫タトゥ_ハート_タトゥ2左;
 
-    	public Par X0Y1_淫タトゥ_ハート_タトゥ2右;
+    	public ShapePart X0Y1_淫タトゥ_ハート_タトゥ2右;
 
-    	public Par X0Y1_傷X左;
+    	public ShapePart X0Y1_傷X左;
 
-    	public Par X0Y1_傷X右;
+    	public ShapePart X0Y1_傷X右;
 
-    	public Par X0Y1_傷I左;
+    	public ShapePart X0Y1_傷I左;
 
-    	public Par X0Y1_傷I右;
+    	public ShapePart X0Y1_傷I右;
 
-    	public Par X0Y1_紋柄_紋左_紋1;
+    	public ShapePart X0Y1_紋柄_紋左_紋1;
 
-    	public Par X0Y1_紋柄_紋左_紋2;
+    	public ShapePart X0Y1_紋柄_紋左_紋2;
 
-    	public Par X0Y1_紋柄_紋左_紋3;
+    	public ShapePart X0Y1_紋柄_紋左_紋3;
 
-    	public Par X0Y1_紋柄_紋右_紋1;
+    	public ShapePart X0Y1_紋柄_紋右_紋1;
 
-    	public Par X0Y1_紋柄_紋右_紋2;
+    	public ShapePart X0Y1_紋柄_紋右_紋2;
 
-    	public Par X0Y1_紋柄_紋右_紋3;
+    	public ShapePart X0Y1_紋柄_紋右_紋3;
 
-    	public Par X0Y1_獣性_獣毛左;
+    	public ShapePart X0Y1_獣性_獣毛左;
 
-    	public Par X0Y1_獣性_獣毛右;
+    	public ShapePart X0Y1_獣性_獣毛右;
 
-    	public Par X0Y1_虫性_甲殻2;
+    	public ShapePart X0Y1_虫性_甲殻2;
 
-    	public Par X0Y1_虫性_甲殻1;
+    	public ShapePart X0Y1_虫性_甲殻1;
 
-    	public Par X0Y1_竜性_左_鱗1;
+    	public ShapePart X0Y1_竜性_左_鱗1;
 
-    	public Par X0Y1_竜性_左_鱗2;
+    	public ShapePart X0Y1_竜性_左_鱗2;
 
-    	public Par X0Y1_竜性_右_鱗1;
+    	public ShapePart X0Y1_竜性_右_鱗1;
 
-    	public Par X0Y1_竜性_右_鱗2;
+    	public ShapePart X0Y1_竜性_右_鱗2;
 
-    	public Par X0Y1_ハイライト上左;
+    	public ShapePart X0Y1_ハイライト上左;
 
-    	public Par X0Y1_ハイライト上右;
+    	public ShapePart X0Y1_ハイライト上右;
 
-    	public Par X0Y1_ハイライト下左;
+    	public ShapePart X0Y1_ハイライト下左;
 
-    	public Par X0Y1_ハイライト下右;
+    	public ShapePart X0Y1_ハイライト下右;
 
-    	public Par X0Y2_Waist;
+    	public ShapePart X0Y2_Waist;
 
-    	public Par X0Y2_股;
+    	public ShapePart X0Y2_股;
 
-    	public Par X0Y2_下腹;
+    	public ShapePart X0Y2_下腹;
 
-    	public Par X0Y2_腰皺;
+    	public ShapePart X0Y2_腰皺;
 
-    	public Par X0Y2_筋肉_筋肉下;
+    	public ShapePart X0Y2_筋肉_筋肉下;
 
-    	public Par X0Y2_筋肉_筋肉左;
+    	public ShapePart X0Y2_筋肉_筋肉左;
 
-    	public Par X0Y2_筋肉_筋肉右;
+    	public ShapePart X0Y2_筋肉_筋肉右;
 
-    	public Par X0Y2_筋肉_筋上左;
+    	public ShapePart X0Y2_筋肉_筋上左;
 
-    	public Par X0Y2_筋肉_筋上右;
+    	public ShapePart X0Y2_筋肉_筋上右;
 
-    	public Par X0Y2_筋肉_筋下左;
+    	public ShapePart X0Y2_筋肉_筋下左;
 
-    	public Par X0Y2_筋肉_筋下右;
+    	public ShapePart X0Y2_筋肉_筋下右;
 
-    	public Par X0Y2_ハイライト;
+    	public ShapePart X0Y2_ハイライト;
 
-    	public Par X0Y2_臍;
+    	public ShapePart X0Y2_臍;
 
-    	public Par X0Y2_悪タトゥ_渦_タトゥ1左;
+    	public ShapePart X0Y2_悪タトゥ_渦_タトゥ1左;
 
-    	public Par X0Y2_悪タトゥ_渦_タトゥ1右;
+    	public ShapePart X0Y2_悪タトゥ_渦_タトゥ1右;
 
-    	public Par X0Y2_悪タトゥ_渦_タトゥ2左;
+    	public ShapePart X0Y2_悪タトゥ_渦_タトゥ2左;
 
-    	public Par X0Y2_悪タトゥ_渦_タトゥ2右;
+    	public ShapePart X0Y2_悪タトゥ_渦_タトゥ2右;
 
-    	public Par X0Y2_淫タトゥ_ハート_タトゥ1左;
+    	public ShapePart X0Y2_淫タトゥ_ハート_タトゥ1左;
 
-    	public Par X0Y2_淫タトゥ_ハート_タトゥ1右;
+    	public ShapePart X0Y2_淫タトゥ_ハート_タトゥ1右;
 
-    	public Par X0Y2_淫タトゥ_ハート_タトゥ2左;
+    	public ShapePart X0Y2_淫タトゥ_ハート_タトゥ2左;
 
-    	public Par X0Y2_淫タトゥ_ハート_タトゥ2右;
+    	public ShapePart X0Y2_淫タトゥ_ハート_タトゥ2右;
 
-    	public Par X0Y2_傷X左;
+    	public ShapePart X0Y2_傷X左;
 
-    	public Par X0Y2_傷X右;
+    	public ShapePart X0Y2_傷X右;
 
-    	public Par X0Y2_傷I左;
+    	public ShapePart X0Y2_傷I左;
 
-    	public Par X0Y2_傷I右;
+    	public ShapePart X0Y2_傷I右;
 
-    	public Par X0Y2_紋柄_紋左_紋1;
+    	public ShapePart X0Y2_紋柄_紋左_紋1;
 
-    	public Par X0Y2_紋柄_紋左_紋2;
+    	public ShapePart X0Y2_紋柄_紋左_紋2;
 
-    	public Par X0Y2_紋柄_紋左_紋3;
+    	public ShapePart X0Y2_紋柄_紋左_紋3;
 
-    	public Par X0Y2_紋柄_紋右_紋1;
+    	public ShapePart X0Y2_紋柄_紋右_紋1;
 
-    	public Par X0Y2_紋柄_紋右_紋2;
+    	public ShapePart X0Y2_紋柄_紋右_紋2;
 
-    	public Par X0Y2_紋柄_紋右_紋3;
+    	public ShapePart X0Y2_紋柄_紋右_紋3;
 
-    	public Par X0Y2_獣性_獣毛左;
+    	public ShapePart X0Y2_獣性_獣毛左;
 
-    	public Par X0Y2_獣性_獣毛右;
+    	public ShapePart X0Y2_獣性_獣毛右;
 
-    	public Par X0Y2_虫性_甲殻2;
+    	public ShapePart X0Y2_虫性_甲殻2;
 
-    	public Par X0Y2_虫性_甲殻1;
+    	public ShapePart X0Y2_虫性_甲殻1;
 
-    	public Par X0Y2_竜性_左_鱗1;
+    	public ShapePart X0Y2_竜性_左_鱗1;
 
-    	public Par X0Y2_竜性_左_鱗2;
+    	public ShapePart X0Y2_竜性_左_鱗2;
 
-    	public Par X0Y2_竜性_右_鱗1;
+    	public ShapePart X0Y2_竜性_右_鱗1;
 
-    	public Par X0Y2_竜性_右_鱗2;
+    	public ShapePart X0Y2_竜性_右_鱗2;
 
-    	public Par X0Y2_ハイライト上左;
+    	public ShapePart X0Y2_ハイライト上左;
 
-    	public Par X0Y2_ハイライト上右;
+    	public ShapePart X0Y2_ハイライト上右;
 
-    	public Par X0Y2_ハイライト下左;
+    	public ShapePart X0Y2_ハイライト下左;
 
-    	public Par X0Y2_ハイライト下右;
+    	public ShapePart X0Y2_ハイライト下右;
 
-    	public Par X0Y3_Waist;
+    	public ShapePart X0Y3_Waist;
 
-    	public Par X0Y3_股;
+    	public ShapePart X0Y3_股;
 
-    	public Par X0Y3_下腹;
+    	public ShapePart X0Y3_下腹;
 
-    	public Par X0Y3_腰皺;
+    	public ShapePart X0Y3_腰皺;
 
-    	public Par X0Y3_筋肉_筋肉下;
+    	public ShapePart X0Y3_筋肉_筋肉下;
 
-    	public Par X0Y3_筋肉_筋肉左;
+    	public ShapePart X0Y3_筋肉_筋肉左;
 
-    	public Par X0Y3_筋肉_筋肉右;
+    	public ShapePart X0Y3_筋肉_筋肉右;
 
-    	public Par X0Y3_筋肉_筋上左;
+    	public ShapePart X0Y3_筋肉_筋上左;
 
-    	public Par X0Y3_筋肉_筋上右;
+    	public ShapePart X0Y3_筋肉_筋上右;
 
-    	public Par X0Y3_筋肉_筋下左;
+    	public ShapePart X0Y3_筋肉_筋下左;
 
-    	public Par X0Y3_筋肉_筋下右;
+    	public ShapePart X0Y3_筋肉_筋下右;
 
-    	public Par X0Y3_ハイライト;
+    	public ShapePart X0Y3_ハイライト;
 
-    	public Par X0Y3_臍;
+    	public ShapePart X0Y3_臍;
 
-    	public Par X0Y3_悪タトゥ_渦_タトゥ1左;
+    	public ShapePart X0Y3_悪タトゥ_渦_タトゥ1左;
 
-    	public Par X0Y3_悪タトゥ_渦_タトゥ1右;
+    	public ShapePart X0Y3_悪タトゥ_渦_タトゥ1右;
 
-    	public Par X0Y3_悪タトゥ_渦_タトゥ2左;
+    	public ShapePart X0Y3_悪タトゥ_渦_タトゥ2左;
 
-    	public Par X0Y3_悪タトゥ_渦_タトゥ2右;
+    	public ShapePart X0Y3_悪タトゥ_渦_タトゥ2右;
 
-    	public Par X0Y3_淫タトゥ_ハート_タトゥ1左;
+    	public ShapePart X0Y3_淫タトゥ_ハート_タトゥ1左;
 
-    	public Par X0Y3_淫タトゥ_ハート_タトゥ1右;
+    	public ShapePart X0Y3_淫タトゥ_ハート_タトゥ1右;
 
-    	public Par X0Y3_淫タトゥ_ハート_タトゥ2左;
+    	public ShapePart X0Y3_淫タトゥ_ハート_タトゥ2左;
 
-    	public Par X0Y3_淫タトゥ_ハート_タトゥ2右;
+    	public ShapePart X0Y3_淫タトゥ_ハート_タトゥ2右;
 
-    	public Par X0Y3_傷X左;
+    	public ShapePart X0Y3_傷X左;
 
-    	public Par X0Y3_傷X右;
+    	public ShapePart X0Y3_傷X右;
 
-    	public Par X0Y3_傷I左;
+    	public ShapePart X0Y3_傷I左;
 
-    	public Par X0Y3_傷I右;
+    	public ShapePart X0Y3_傷I右;
 
-    	public Par X0Y3_紋柄_紋左_紋1;
+    	public ShapePart X0Y3_紋柄_紋左_紋1;
 
-    	public Par X0Y3_紋柄_紋左_紋2;
+    	public ShapePart X0Y3_紋柄_紋左_紋2;
 
-    	public Par X0Y3_紋柄_紋左_紋3;
+    	public ShapePart X0Y3_紋柄_紋左_紋3;
 
-    	public Par X0Y3_紋柄_紋右_紋1;
+    	public ShapePart X0Y3_紋柄_紋右_紋1;
 
-    	public Par X0Y3_紋柄_紋右_紋2;
+    	public ShapePart X0Y3_紋柄_紋右_紋2;
 
-    	public Par X0Y3_紋柄_紋右_紋3;
+    	public ShapePart X0Y3_紋柄_紋右_紋3;
 
-    	public Par X0Y3_獣性_獣毛左;
+    	public ShapePart X0Y3_獣性_獣毛左;
 
-    	public Par X0Y3_獣性_獣毛右;
+    	public ShapePart X0Y3_獣性_獣毛右;
 
-    	public Par X0Y3_虫性_甲殻2;
+    	public ShapePart X0Y3_虫性_甲殻2;
 
-    	public Par X0Y3_虫性_甲殻1;
+    	public ShapePart X0Y3_虫性_甲殻1;
 
-    	public Par X0Y3_竜性_左_鱗1;
+    	public ShapePart X0Y3_竜性_左_鱗1;
 
-    	public Par X0Y3_竜性_左_鱗2;
+    	public ShapePart X0Y3_竜性_左_鱗2;
 
-    	public Par X0Y3_竜性_右_鱗1;
+    	public ShapePart X0Y3_竜性_右_鱗1;
 
-    	public Par X0Y3_竜性_右_鱗2;
+    	public ShapePart X0Y3_竜性_右_鱗2;
 
-    	public Par X0Y3_ハイライト上左;
+    	public ShapePart X0Y3_ハイライト上左;
 
-    	public Par X0Y3_ハイライト上右;
+    	public ShapePart X0Y3_ハイライト上右;
 
-    	public Par X0Y3_ハイライト下左;
+    	public ShapePart X0Y3_ハイライト下左;
 
-    	public Par X0Y3_ハイライト下右;
+    	public ShapePart X0Y3_ハイライト下右;
 
-    	public Par X0Y4_Waist;
+    	public ShapePart X0Y4_Waist;
 
-    	public Par X0Y4_股;
+    	public ShapePart X0Y4_股;
 
-    	public Par X0Y4_下腹;
+    	public ShapePart X0Y4_下腹;
 
-    	public Par X0Y4_腰皺;
+    	public ShapePart X0Y4_腰皺;
 
-    	public Par X0Y4_筋肉_筋肉下;
+    	public ShapePart X0Y4_筋肉_筋肉下;
 
-    	public Par X0Y4_筋肉_筋肉左;
+    	public ShapePart X0Y4_筋肉_筋肉左;
 
-    	public Par X0Y4_筋肉_筋肉右;
+    	public ShapePart X0Y4_筋肉_筋肉右;
 
-    	public Par X0Y4_筋肉_筋上左;
+    	public ShapePart X0Y4_筋肉_筋上左;
 
-    	public Par X0Y4_筋肉_筋上右;
+    	public ShapePart X0Y4_筋肉_筋上右;
 
-    	public Par X0Y4_筋肉_筋下左;
+    	public ShapePart X0Y4_筋肉_筋下左;
 
-    	public Par X0Y4_筋肉_筋下右;
+    	public ShapePart X0Y4_筋肉_筋下右;
 
-    	public Par X0Y4_ハイライト;
+    	public ShapePart X0Y4_ハイライト;
 
-    	public Par X0Y4_臍;
+    	public ShapePart X0Y4_臍;
 
-    	public Par X0Y4_悪タトゥ_渦_タトゥ1左;
+    	public ShapePart X0Y4_悪タトゥ_渦_タトゥ1左;
 
-    	public Par X0Y4_悪タトゥ_渦_タトゥ1右;
+    	public ShapePart X0Y4_悪タトゥ_渦_タトゥ1右;
 
-    	public Par X0Y4_悪タトゥ_渦_タトゥ2左;
+    	public ShapePart X0Y4_悪タトゥ_渦_タトゥ2左;
 
-    	public Par X0Y4_悪タトゥ_渦_タトゥ2右;
+    	public ShapePart X0Y4_悪タトゥ_渦_タトゥ2右;
 
-    	public Par X0Y4_淫タトゥ_ハート_タトゥ1左;
+    	public ShapePart X0Y4_淫タトゥ_ハート_タトゥ1左;
 
-    	public Par X0Y4_淫タトゥ_ハート_タトゥ1右;
+    	public ShapePart X0Y4_淫タトゥ_ハート_タトゥ1右;
 
-    	public Par X0Y4_淫タトゥ_ハート_タトゥ2左;
+    	public ShapePart X0Y4_淫タトゥ_ハート_タトゥ2左;
 
-    	public Par X0Y4_淫タトゥ_ハート_タトゥ2右;
+    	public ShapePart X0Y4_淫タトゥ_ハート_タトゥ2右;
 
-    	public Par X0Y4_傷X左;
+    	public ShapePart X0Y4_傷X左;
 
-    	public Par X0Y4_傷X右;
+    	public ShapePart X0Y4_傷X右;
 
-    	public Par X0Y4_傷I左;
+    	public ShapePart X0Y4_傷I左;
 
-    	public Par X0Y4_傷I右;
+    	public ShapePart X0Y4_傷I右;
 
-    	public Par X0Y4_紋柄_紋左_紋1;
+    	public ShapePart X0Y4_紋柄_紋左_紋1;
 
-    	public Par X0Y4_紋柄_紋左_紋2;
+    	public ShapePart X0Y4_紋柄_紋左_紋2;
 
-    	public Par X0Y4_紋柄_紋左_紋3;
+    	public ShapePart X0Y4_紋柄_紋左_紋3;
 
-    	public Par X0Y4_紋柄_紋右_紋1;
+    	public ShapePart X0Y4_紋柄_紋右_紋1;
 
-    	public Par X0Y4_紋柄_紋右_紋2;
+    	public ShapePart X0Y4_紋柄_紋右_紋2;
 
-    	public Par X0Y4_紋柄_紋右_紋3;
+    	public ShapePart X0Y4_紋柄_紋右_紋3;
 
-    	public Par X0Y4_獣性_獣毛左;
+    	public ShapePart X0Y4_獣性_獣毛左;
 
-    	public Par X0Y4_獣性_獣毛右;
+    	public ShapePart X0Y4_獣性_獣毛右;
 
-    	public Par X0Y4_虫性_甲殻2;
+    	public ShapePart X0Y4_虫性_甲殻2;
 
-    	public Par X0Y4_虫性_甲殻1;
+    	public ShapePart X0Y4_虫性_甲殻1;
 
-    	public Par X0Y4_竜性_左_鱗1;
+    	public ShapePart X0Y4_竜性_左_鱗1;
 
-    	public Par X0Y4_竜性_左_鱗2;
+    	public ShapePart X0Y4_竜性_左_鱗2;
 
-    	public Par X0Y4_竜性_右_鱗1;
+    	public ShapePart X0Y4_竜性_右_鱗1;
 
-    	public Par X0Y4_竜性_右_鱗2;
+    	public ShapePart X0Y4_竜性_右_鱗2;
 
-    	public Par X0Y4_ハイライト上左;
+    	public ShapePart X0Y4_ハイライト上左;
 
-    	public Par X0Y4_ハイライト上右;
+    	public ShapePart X0Y4_ハイライト上右;
 
-    	public Par X0Y4_ハイライト下左;
+    	public ShapePart X0Y4_ハイライト下左;
 
-    	public Par X0Y4_ハイライト下右;
+    	public ShapePart X0Y4_ハイライト下右;
 
     	public ColorD WaistCD;
 

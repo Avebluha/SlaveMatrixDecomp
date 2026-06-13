@@ -5,101 +5,101 @@ namespace SlaveMatrix
 {
     public class 尾_牛 : 尾
     {
-    	public Par X0Y0_尾0;
+    	public ShapePart X0Y0_尾0;
 
-    	public Par X0Y0_尾1;
+    	public ShapePart X0Y0_尾1;
 
-    	public Par X0Y0_尾2;
+    	public ShapePart X0Y0_尾2;
 
-    	public Par X0Y0_尾3;
+    	public ShapePart X0Y0_尾3;
 
-    	public Par X0Y0_尾4;
+    	public ShapePart X0Y0_尾4;
 
-    	public Par X0Y0_尾5;
+    	public ShapePart X0Y0_尾5;
 
-    	public Par X0Y0_尾6;
+    	public ShapePart X0Y0_尾6;
 
-    	public Par X0Y0_尾7;
+    	public ShapePart X0Y0_尾7;
 
-    	public Par X0Y0_毛尾_尾0;
+    	public ShapePart X0Y0_毛尾_尾0;
 
-    	public Par X0Y0_毛尾_尾1;
+    	public ShapePart X0Y0_毛尾_尾1;
 
-    	public Par X0Y0_毛尾_尾2;
+    	public ShapePart X0Y0_毛尾_尾2;
 
-    	public Par X0Y0_毛尾_尾3;
+    	public ShapePart X0Y0_毛尾_尾3;
 
-    	public Par X0Y0_毛尾_尾4;
+    	public ShapePart X0Y0_毛尾_尾4;
 
-    	public Par X0Y0_毛尾_中央_尾0;
+    	public ShapePart X0Y0_毛尾_中央_尾0;
 
-    	public Par X0Y0_毛尾_中央_尾1;
+    	public ShapePart X0Y0_毛尾_中央_尾1;
 
-    	public Par X0Y0_毛尾_中央_尾2;
+    	public ShapePart X0Y0_毛尾_中央_尾2;
 
-    	public Par X0Y0_毛尾_中央_尾3;
+    	public ShapePart X0Y0_毛尾_中央_尾3;
 
-    	public Par X0Y0_毛尾_中央_尾4;
+    	public ShapePart X0Y0_毛尾_中央_尾4;
 
-    	public Par X0Y0_毛尾_中央_尾5;
+    	public ShapePart X0Y0_毛尾_中央_尾5;
 
-    	public Par X0Y0_毛尾_中央_尾6;
+    	public ShapePart X0Y0_毛尾_中央_尾6;
 
-    	public Par X0Y0_毛尾_左2_尾0;
+    	public ShapePart X0Y0_毛尾_左2_尾0;
 
-    	public Par X0Y0_毛尾_左2_尾1;
+    	public ShapePart X0Y0_毛尾_左2_尾1;
 
-    	public Par X0Y0_毛尾_左2_尾2;
+    	public ShapePart X0Y0_毛尾_左2_尾2;
 
-    	public Par X0Y0_毛尾_左2_尾3;
+    	public ShapePart X0Y0_毛尾_左2_尾3;
 
-    	public Par X0Y0_毛尾_左2_尾4;
+    	public ShapePart X0Y0_毛尾_左2_尾4;
 
-    	public Par X0Y0_毛尾_左2_尾5;
+    	public ShapePart X0Y0_毛尾_左2_尾5;
 
-    	public Par X0Y0_毛尾_左2_尾6;
+    	public ShapePart X0Y0_毛尾_左2_尾6;
 
-    	public Par X0Y0_毛尾_左1_尾0;
+    	public ShapePart X0Y0_毛尾_左1_尾0;
 
-    	public Par X0Y0_毛尾_左1_尾1;
+    	public ShapePart X0Y0_毛尾_左1_尾1;
 
-    	public Par X0Y0_毛尾_左1_尾2;
+    	public ShapePart X0Y0_毛尾_左1_尾2;
 
-    	public Par X0Y0_毛尾_左1_尾3;
+    	public ShapePart X0Y0_毛尾_左1_尾3;
 
-    	public Par X0Y0_毛尾_左1_尾4;
+    	public ShapePart X0Y0_毛尾_左1_尾4;
 
-    	public Par X0Y0_毛尾_左1_尾5;
+    	public ShapePart X0Y0_毛尾_左1_尾5;
 
-    	public Par X0Y0_毛尾_左1_尾6;
+    	public ShapePart X0Y0_毛尾_左1_尾6;
 
-    	public Par X0Y0_毛尾_右2_尾0;
+    	public ShapePart X0Y0_毛尾_右2_尾0;
 
-    	public Par X0Y0_毛尾_右2_尾1;
+    	public ShapePart X0Y0_毛尾_右2_尾1;
 
-    	public Par X0Y0_毛尾_右2_尾2;
+    	public ShapePart X0Y0_毛尾_右2_尾2;
 
-    	public Par X0Y0_毛尾_右2_尾3;
+    	public ShapePart X0Y0_毛尾_右2_尾3;
 
-    	public Par X0Y0_毛尾_右2_尾4;
+    	public ShapePart X0Y0_毛尾_右2_尾4;
 
-    	public Par X0Y0_毛尾_右2_尾5;
+    	public ShapePart X0Y0_毛尾_右2_尾5;
 
-    	public Par X0Y0_毛尾_右2_尾6;
+    	public ShapePart X0Y0_毛尾_右2_尾6;
 
-    	public Par X0Y0_毛尾_右1_尾0;
+    	public ShapePart X0Y0_毛尾_右1_尾0;
 
-    	public Par X0Y0_毛尾_右1_尾1;
+    	public ShapePart X0Y0_毛尾_右1_尾1;
 
-    	public Par X0Y0_毛尾_右1_尾2;
+    	public ShapePart X0Y0_毛尾_右1_尾2;
 
-    	public Par X0Y0_毛尾_右1_尾3;
+    	public ShapePart X0Y0_毛尾_右1_尾3;
 
-    	public Par X0Y0_毛尾_右1_尾4;
+    	public ShapePart X0Y0_毛尾_右1_尾4;
 
-    	public Par X0Y0_毛尾_右1_尾5;
+    	public ShapePart X0Y0_毛尾_右1_尾5;
 
-    	public Par X0Y0_毛尾_右1_尾6;
+    	public ShapePart X0Y0_毛尾_右1_尾6;
 
     	public ColorD 尾0CD;
 
@@ -293,7 +293,7 @@ namespace SlaveMatrix
 
     	public ColorP X0Y0_毛尾_右1_尾6CP;
 
-    	public Par[] Pars;
+    	public ShapePart[] Pars;
 
     	private Vector2D[] mm;
 
@@ -1220,7 +1220,7 @@ namespace SlaveMatrix
     		}
     		base.配色指定 = 配色指定;
     		配色(体配色);
-    		Pars = new Par[48]
+    		Pars = new ShapePart[48]
     		{
     			X0Y0_尾0, X0Y0_尾1, X0Y0_尾2, X0Y0_尾3, X0Y0_尾4, X0Y0_尾5, X0Y0_尾6, X0Y0_尾7, X0Y0_毛尾_尾0, X0Y0_毛尾_尾1,
     			X0Y0_毛尾_尾2, X0Y0_毛尾_尾3, X0Y0_毛尾_尾4, X0Y0_毛尾_中央_尾0, X0Y0_毛尾_中央_尾1, X0Y0_毛尾_中央_尾2, X0Y0_毛尾_中央_尾3, X0Y0_毛尾_中央_尾4, X0Y0_毛尾_中央_尾5, X0Y0_毛尾_中央_尾6,
@@ -1334,7 +1334,7 @@ namespace SlaveMatrix
     		Body.JoinPAall();
     	}
 
-    	public override IEnumerable<Par> Enum軸()
+    	public override IEnumerable<ShapePart> Enum軸()
     	{
     		yield return X0Y0_尾0;
     		yield return X0Y0_尾1;

@@ -4,45 +4,45 @@ namespace SlaveMatrix
 {
     public class 後翅_甲 : 後翅
     {
-    	public Par X0Y0_後翅_後翅根_後翅;
+    	public ShapePart X0Y0_後翅_後翅根_後翅;
 
-    	public Par X0Y0_後翅_後翅根_翅脈1;
+    	public ShapePart X0Y0_後翅_後翅根_翅脈1;
 
-    	public Par X0Y0_後翅_後翅根_翅脈2;
+    	public ShapePart X0Y0_後翅_後翅根_翅脈2;
 
-    	public Par X0Y0_後翅_後翅根_翅脈3;
+    	public ShapePart X0Y0_後翅_後翅根_翅脈3;
 
-    	public Par X0Y0_後翅_後翅根_翅脈4;
+    	public ShapePart X0Y0_後翅_後翅根_翅脈4;
 
-    	public Par X0Y0_後翅_後翅先_後翅;
+    	public ShapePart X0Y0_後翅_後翅先_後翅;
 
-    	public Par X0Y0_後翅_後翅先_翅脈1;
+    	public ShapePart X0Y0_後翅_後翅先_翅脈1;
 
-    	public Par X0Y0_後翅_後翅先_翅脈2;
+    	public ShapePart X0Y0_後翅_後翅先_翅脈2;
 
-    	public Par X0Y0_後翅_後翅先_翅脈3;
+    	public ShapePart X0Y0_後翅_後翅先_翅脈3;
 
-    	public Par X0Y0_後翅_後翅先_翅脈4;
+    	public ShapePart X0Y0_後翅_後翅先_翅脈4;
 
-    	public Par X0Y1_後翅_後翅根_後翅;
+    	public ShapePart X0Y1_後翅_後翅根_後翅;
 
-    	public Par X0Y1_後翅_後翅根_翅脈1;
+    	public ShapePart X0Y1_後翅_後翅根_翅脈1;
 
-    	public Par X0Y1_後翅_後翅根_翅脈2;
+    	public ShapePart X0Y1_後翅_後翅根_翅脈2;
 
-    	public Par X0Y1_後翅_後翅根_翅脈3;
+    	public ShapePart X0Y1_後翅_後翅根_翅脈3;
 
-    	public Par X0Y1_後翅_後翅根_翅脈4;
+    	public ShapePart X0Y1_後翅_後翅根_翅脈4;
 
-    	public Par X0Y1_後翅_後翅先_後翅;
+    	public ShapePart X0Y1_後翅_後翅先_後翅;
 
-    	public Par X0Y1_後翅_後翅先_翅脈1;
+    	public ShapePart X0Y1_後翅_後翅先_翅脈1;
 
-    	public Par X0Y1_後翅_後翅先_翅脈2;
+    	public ShapePart X0Y1_後翅_後翅先_翅脈2;
 
-    	public Par X0Y1_後翅_後翅先_翅脈3;
+    	public ShapePart X0Y1_後翅_後翅先_翅脈3;
 
-    	public Par X0Y1_後翅_後翅先_翅脈4;
+    	public ShapePart X0Y1_後翅_後翅先_翅脈4;
 
     	public ColorD 後翅_後翅根_後翅CD;
 
@@ -343,7 +343,7 @@ namespace SlaveMatrix
     			X0Y0_後翅_後翅先_後翅.AngleCont = num2 * -180.0 * num;
     			X0Y1_後翅_後翅根_後翅.AngleCont = num2 * -77.0 * num;
     			X0Y1_後翅_後翅先_後翅.AngleCont = num2 * -180.0 * num;
-    			foreach (Par item in Body.EnumAllPar())
+    			foreach (ShapePart item in Body.EnumAllPar())
     			{
     				item.SizeCont = 0.35 + 0.65 * value;
     			}

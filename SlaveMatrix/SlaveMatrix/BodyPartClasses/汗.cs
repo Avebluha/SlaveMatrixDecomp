@@ -4,19 +4,19 @@ namespace SlaveMatrix
 {
     public class 汗 : Ele
     {
-    	public Par X0Y0_汗0;
+    	public ShapePart X0Y0_汗0;
 
-    	public Par X0Y0_汗1;
+    	public ShapePart X0Y0_汗1;
 
-    	public Par X0Y0_汗ハイライト;
+    	public ShapePart X0Y0_汗ハイライト;
 
-    	public Par X0Y1_汗0流れ;
+    	public ShapePart X0Y1_汗0流れ;
 
-    	public Par X0Y2_汗0流れ;
+    	public ShapePart X0Y2_汗0流れ;
 
-    	public Par X0Y3_汗0流れ;
+    	public ShapePart X0Y3_汗0流れ;
 
-    	public Par X0Y4_汗0流れ;
+    	public ShapePart X0Y4_汗0流れ;
 
     	public ColorD 汗0流れCD;
 

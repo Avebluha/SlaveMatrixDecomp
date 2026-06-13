@@ -4,79 +4,79 @@ namespace SlaveMatrix
 {
     public class マウス : Ele
     {
-    	public Par X0Y0_上唇;
+    	public ShapePart X0Y0_上唇;
 
-    	public Par X0Y0_下唇;
+    	public ShapePart X0Y0_下唇;
 
-    	public Par X1Y0_上唇;
+    	public ShapePart X1Y0_上唇;
 
-    	public Par X1Y0_下唇;
+    	public ShapePart X1Y0_下唇;
 
-    	public Par X2Y0_舌;
+    	public ShapePart X2Y0_舌;
 
-    	public Par X2Y0_上唇;
+    	public ShapePart X2Y0_上唇;
 
-    	public Par X2Y0_下唇;
+    	public ShapePart X2Y0_下唇;
 
-    	public Par X3Y0_舌;
+    	public ShapePart X3Y0_舌;
 
-    	public Par X3Y0_上唇;
+    	public ShapePart X3Y0_上唇;
 
-    	public Par X3Y0_下唇;
+    	public ShapePart X3Y0_下唇;
 
-    	public Par X3Y1_舌;
+    	public ShapePart X3Y1_舌;
 
-    	public Par X3Y1_上唇;
+    	public ShapePart X3Y1_上唇;
 
-    	public Par X3Y1_下唇;
+    	public ShapePart X3Y1_下唇;
 
-    	public Par X3Y2_舌;
+    	public ShapePart X3Y2_舌;
 
-    	public Par X3Y2_上唇;
+    	public ShapePart X3Y2_上唇;
 
-    	public Par X3Y2_下唇;
+    	public ShapePart X3Y2_下唇;
 
-    	public Par X3Y3_舌;
+    	public ShapePart X3Y3_舌;
 
-    	public Par X3Y3_上唇;
+    	public ShapePart X3Y3_上唇;
 
-    	public Par X3Y3_下唇;
+    	public ShapePart X3Y3_下唇;
 
-    	public Par X3Y4_舌;
+    	public ShapePart X3Y4_舌;
 
-    	public Par X3Y4_上唇;
+    	public ShapePart X3Y4_上唇;
 
-    	public Par X3Y4_下唇;
+    	public ShapePart X3Y4_下唇;
 
-    	public Par X4Y0_舌;
+    	public ShapePart X4Y0_舌;
 
-    	public Par X4Y0_上唇;
+    	public ShapePart X4Y0_上唇;
 
-    	public Par X4Y0_下唇;
+    	public ShapePart X4Y0_下唇;
 
-    	public Par X4Y1_舌;
+    	public ShapePart X4Y1_舌;
 
-    	public Par X4Y1_上唇;
+    	public ShapePart X4Y1_上唇;
 
-    	public Par X4Y1_下唇;
+    	public ShapePart X4Y1_下唇;
 
-    	public Par X4Y2_舌;
+    	public ShapePart X4Y2_舌;
 
-    	public Par X4Y2_上唇;
+    	public ShapePart X4Y2_上唇;
 
-    	public Par X4Y2_下唇;
+    	public ShapePart X4Y2_下唇;
 
-    	public Par X4Y3_舌;
+    	public ShapePart X4Y3_舌;
 
-    	public Par X4Y3_上唇;
+    	public ShapePart X4Y3_上唇;
 
-    	public Par X4Y3_下唇;
+    	public ShapePart X4Y3_下唇;
 
-    	public Par X4Y4_舌;
+    	public ShapePart X4Y4_舌;
 
-    	public Par X4Y4_上唇;
+    	public ShapePart X4Y4_上唇;
 
-    	public Par X4Y4_下唇;
+    	public ShapePart X4Y4_下唇;
 
     	public ColorD 舌CD;
 

@@ -8,7 +8,7 @@ namespace SlaveMatrix
     [Serializable]
     public class ColorP
     {
-    	public Par Par;
+    	public ShapePart ShapePart;
 
     	public ColorD ColorD;
 
@@ -30,9 +30,9 @@ namespace SlaveMatrix
 
     	private float f1;
 
-    	public ColorP(Par Par, ColorD ColorD, double Unit, bool abj)
+    	public ColorP(ShapePart ShapePart, ColorD ColorD, double Unit, bool abj)
     	{
-    		this.Par = Par;
+    		this.ShapePart = ShapePart;
     		this.ColorD = ColorD;
     		this.Unit = Unit;
     		this.abj = abj;
@@ -41,12 +41,12 @@ namespace SlaveMatrix
 
     	public void Setting()
     	{
-    		Par.Brush = new SolidBrush(Color.LightGray);
+    		ShapePart.Brush = new SolidBrush(Color.LightGray);
     		u0 = Unit * 0.99009900990099;
     		u1 = Unit * 1.01;
     		if (ColorD.線 == Col.Empty)
     		{
-    			Par.Pen = null;
+    			ShapePart.Pen = null;
     			p = delegate
     			{
     			};
@@ -55,18 +55,18 @@ namespace SlaveMatrix
     		{
     			if (abj)
     			{
-    				Par.GetAlpha(out var ret);
+    				ShapePart.GetAlpha(out var ret);
     				ColorD.線 = Color.FromArgb(ret, ColorD.線);
     			}
     			p = delegate
     			{
-    				Par.PenColor = ColorD.線;
+    				ShapePart.PenColor = ColorD.線;
     			};
     			UpdateLine();
     		}
     		if (ColorD.色.Col1 == Col.Empty)
     		{
-    			Par.Brush = null;
+    			ShapePart.Brush = null;
     			b = delegate
     			{
     			};
@@ -77,7 +77,7 @@ namespace SlaveMatrix
     			{
     				b = delegate
     				{
-    					Par.BrushColor = ColorD.色.Col1;
+    					ShapePart.BrushColor = ColorD.色.Col1;
     				};
     			}
     			else
@@ -87,23 +87,23 @@ namespace SlaveMatrix
     				float f1;
     				b = delegate
     				{
-    					Par.GetMiY_MaY(out MM);
+    					ShapePart.GetMiY_MaY(out MM);
     					f0 = (float)(MM[0].Y * u0);
     					f1 = (float)(MM[1].Y * u1);
     					if (f0 >= 0f || f1 >= 0f)
     					{
     						LGB = new LinearGradientBrush(new PointF(0f, f0), new PointF(0f, f1), ColorD.色.Col1, ColorD.色.Col2);
     						LGB.GammaCorrection = true;
-    						Par.Brush = LGB;
+    						ShapePart.Brush = LGB;
     					}
     				};
     			}
     			UpdateColor();
     		}
-    		if (Par.Pen == null && Par.Brush == null)
+    		if (ShapePart.Pen == null && ShapePart.Brush == null)
     		{
-    			Par.Dra = false;
-    			Par.Hit = false;
+    			ShapePart.Dra = false;
+    			ShapePart.Hit = false;
     		}
     	}
 
@@ -119,7 +119,7 @@ namespace SlaveMatrix
 
     	public void Update()
     	{
-    		if (Par.Dra)
+    		if (ShapePart.Dra)
     		{
     			p();
     			b();
@@ -128,7 +128,7 @@ namespace SlaveMatrix
 
     	public void Update(Vector2D[] mm)
     	{
-    		if (Par.Dra)
+    		if (ShapePart.Dra)
     		{
     			p();
     			f0 = (float)(mm[0].Y * u0);
@@ -137,7 +137,7 @@ namespace SlaveMatrix
     			{
     				LGB = new LinearGradientBrush(new PointF(0f, f0), new PointF(0f, f1), ColorD.色.Col1, ColorD.色.Col2);
     				LGB.GammaCorrection = true;
-    				Par.Brush = LGB;
+    				ShapePart.Brush = LGB;
     			}
     		}
     	}

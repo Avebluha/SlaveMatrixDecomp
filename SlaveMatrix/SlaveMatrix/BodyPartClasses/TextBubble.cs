@@ -18,7 +18,7 @@ namespace SlaveMatrix
 
     	public Motion 消失;
 
-    	public Color GetHitColor => Tex.ParT.HitColor;
+    	public Color GetHitColor => Tex.ShapePartT.HitColor;
 
     	public string Text
     	{
@@ -55,7 +55,7 @@ namespace SlaveMatrix
     		吹出し.尺度YB = num2;
     		Tex = new Tex("Tex", DataConsts.Vec2DZero, 0.1, 吹出し.尺度B, 0.63 * num * num2, Font, TextSize, 25, Text, TextColor, ShadColor, Color.Transparent, Speed, FeedColor, Action);
     		Tex.Feed.OP.OutlineFalse();
-    		Tex.ParT.BasePointBase = Tex.ParT.OP.GetCenter().AddY(0.04);
+    		Tex.ShapePartT.BasePointBase = Tex.ShapePartT.OP.GetCenter().AddY(0.04);
     		this.Dis = Dis;
     		if (Dis)
     		{
@@ -79,8 +79,8 @@ namespace SlaveMatrix
     					v = (1 + m.Value - m.Max).Inverse();
     					吹出し.X0Y0_吹出し.PenColor = Color.FromArgb((int)((double)pa * v), 吹出し.X0Y0_吹出し.PenColor);
     					吹出し.X0Y0_吹出し.BrushColor = Color.FromArgb((int)((double)ba * v), 吹出し.X0Y0_吹出し.BrushColor);
-    					Tex.ParT.TextColor = Color.FromArgb((int)((double)ta * v), Tex.ParT.TextColor);
-    					Tex.ParT.ShadColor = Color.FromArgb((int)((double)sa * v), Tex.ParT.ShadColor);
+    					Tex.ShapePartT.TextColor = Color.FromArgb((int)((double)ta * v), Tex.ShapePartT.TextColor);
+    					Tex.ShapePartT.ShadColor = Color.FromArgb((int)((double)sa * v), Tex.ShapePartT.ShadColor);
     				},
     				OnReach = delegate(Motion m)
     				{
@@ -94,8 +94,8 @@ namespace SlaveMatrix
     					表示 = false;
     					吹出し.X0Y0_吹出し.PenColor = Color.FromArgb(pa, 吹出し.X0Y0_吹出し.PenColor);
     					吹出し.X0Y0_吹出し.BrushColor = Color.FromArgb(ba, 吹出し.X0Y0_吹出し.BrushColor);
-    					Tex.ParT.TextColor = Color.FromArgb(ta, Tex.ParT.TextColor);
-    					Tex.ParT.ShadColor = Color.FromArgb(sa, Tex.ParT.ShadColor);
+    					Tex.ShapePartT.TextColor = Color.FromArgb(ta, Tex.ShapePartT.TextColor);
+    					Tex.ShapePartT.ShadColor = Color.FromArgb(sa, Tex.ShapePartT.ShadColor);
     				}
     			};
     		}
@@ -114,7 +114,7 @@ namespace SlaveMatrix
     		吹出し.尺度B = num * 1.1;
     		吹出し.尺度YB = num2;
     		Tex = new Tex("Tex", DataConsts.Vec2DZero, 0.1, 吹出し.尺度B, 0.63 * num * num2, Font, TextSize, 25, Text, TextColor, ShadColor, Color.Transparent, Speed);
-    		Tex.ParT.BasePointBase = Tex.ParT.OP.GetCenter().AddY(0.04);
+    		Tex.ShapePartT.BasePointBase = Tex.ShapePartT.OP.GetCenter().AddY(0.04);
     		this.Dis = Dis;
     		if (Dis)
     		{
@@ -147,8 +147,8 @@ namespace SlaveMatrix
 
                         吹出し.X0Y0_吹出し.PenColor = Color.FromArgb(correctPenAlpha, 吹出し.X0Y0_吹出し.PenColor);
     					吹出し.X0Y0_吹出し.BrushColor = Color.FromArgb(correctBrushAlpha, 吹出し.X0Y0_吹出し.BrushColor);
-    					Tex.ParT.TextColor = Color.FromArgb(correctTextAlpha, Tex.ParT.TextColor);
-    					Tex.ParT.ShadColor = Color.FromArgb(correctShadeAlpha, Tex.ParT.ShadColor);
+    					Tex.ShapePartT.TextColor = Color.FromArgb(correctTextAlpha, Tex.ShapePartT.TextColor);
+    					Tex.ShapePartT.ShadColor = Color.FromArgb(correctShadeAlpha, Tex.ShapePartT.ShadColor);
     				},
     				OnReach = delegate(Motion m)
     				{
@@ -162,8 +162,8 @@ namespace SlaveMatrix
     					表示 = false;
     					吹出し.X0Y0_吹出し.PenColor = Color.FromArgb(pa, 吹出し.X0Y0_吹出し.PenColor);
     					吹出し.X0Y0_吹出し.BrushColor = Color.FromArgb(ba, 吹出し.X0Y0_吹出し.BrushColor);
-    					Tex.ParT.TextColor = Color.FromArgb(ta, Tex.ParT.TextColor);
-    					Tex.ParT.ShadColor = Color.FromArgb(sa, Tex.ParT.ShadColor);
+    					Tex.ShapePartT.TextColor = Color.FromArgb(ta, Tex.ShapePartT.TextColor);
+    					Tex.ShapePartT.ShadColor = Color.FromArgb(sa, Tex.ShapePartT.ShadColor);
     				}
     			};
     		}

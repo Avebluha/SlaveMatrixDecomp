@@ -4,9 +4,9 @@ namespace SlaveMatrix
 {
     public class 飛膜_根 : Ele
     {
-    	public Par X0Y0_飛膜;
+    	public ShapePart X0Y0_飛膜;
 
-    	public Par X0Y1_飛膜;
+    	public ShapePart X0Y1_飛膜;
 
     	public ColorD 飛膜CD;
 

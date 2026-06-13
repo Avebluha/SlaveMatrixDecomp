@@ -71,7 +71,7 @@ namespace SlaveMatrix
     		ret.Col2 = Color.FromArgb(Alpha, Color2.Col2);
     	}
 
-    	public static void GetAlpha(this Par p, out int ret)
+    	public static void GetAlpha(this ShapePart p, out int ret)
     	{
     		ret = (int)(100.0 + (double)abj * 255.0 * (p.GetArea() / Sta.MaxAre));
     		ret = ((ret > 160) ? 160 : ret);

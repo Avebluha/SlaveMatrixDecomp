@@ -6,155 +6,155 @@ namespace SlaveMatrix
 {
     public class 長物_魚 : 半身
     {
-    	public Par X0Y0_Torso6_鱗左_鱗1;
+    	public ShapePart X0Y0_Torso6_鱗左_鱗1;
 
-    	public Par X0Y0_Torso6_鱗左_鱗2;
+    	public ShapePart X0Y0_Torso6_鱗左_鱗2;
 
-    	public Par X0Y0_Torso6_鱗左_鱗3;
+    	public ShapePart X0Y0_Torso6_鱗左_鱗3;
 
-    	public Par X0Y0_Torso6_鱗左_鱗4;
+    	public ShapePart X0Y0_Torso6_鱗左_鱗4;
 
-    	public Par X0Y0_Torso6_鱗右_鱗1;
+    	public ShapePart X0Y0_Torso6_鱗右_鱗1;
 
-    	public Par X0Y0_Torso6_鱗右_鱗2;
+    	public ShapePart X0Y0_Torso6_鱗右_鱗2;
 
-    	public Par X0Y0_Torso6_鱗右_鱗3;
+    	public ShapePart X0Y0_Torso6_鱗右_鱗3;
 
-    	public Par X0Y0_Torso6_鱗右_鱗4;
+    	public ShapePart X0Y0_Torso6_鱗右_鱗4;
 
-    	public Par X0Y0_Torso6_Torso;
+    	public ShapePart X0Y0_Torso6_Torso;
 
-    	public Par X0Y0_Torso5_鱗左_鱗1;
+    	public ShapePart X0Y0_Torso5_鱗左_鱗1;
 
-    	public Par X0Y0_Torso5_鱗左_鱗2;
+    	public ShapePart X0Y0_Torso5_鱗左_鱗2;
 
-    	public Par X0Y0_Torso5_鱗左_鱗3;
+    	public ShapePart X0Y0_Torso5_鱗左_鱗3;
 
-    	public Par X0Y0_Torso5_鱗左_鱗4;
+    	public ShapePart X0Y0_Torso5_鱗左_鱗4;
 
-    	public Par X0Y0_Torso5_鱗右_鱗1;
+    	public ShapePart X0Y0_Torso5_鱗右_鱗1;
 
-    	public Par X0Y0_Torso5_鱗右_鱗2;
+    	public ShapePart X0Y0_Torso5_鱗右_鱗2;
 
-    	public Par X0Y0_Torso5_鱗右_鱗3;
+    	public ShapePart X0Y0_Torso5_鱗右_鱗3;
 
-    	public Par X0Y0_Torso5_鱗右_鱗4;
+    	public ShapePart X0Y0_Torso5_鱗右_鱗4;
 
-    	public Par X0Y0_Torso5_Torso;
+    	public ShapePart X0Y0_Torso5_Torso;
 
-    	public Par X0Y0_輪2_革;
+    	public ShapePart X0Y0_輪2_革;
 
-    	public Par X0Y0_輪2_金具1;
+    	public ShapePart X0Y0_輪2_金具1;
 
-    	public Par X0Y0_輪2_金具2;
+    	public ShapePart X0Y0_輪2_金具2;
 
-    	public Par X0Y0_輪2_金具3;
+    	public ShapePart X0Y0_輪2_金具3;
 
-    	public Par X0Y0_輪2_金具左;
+    	public ShapePart X0Y0_輪2_金具左;
 
-    	public Par X0Y0_輪2_金具右;
+    	public ShapePart X0Y0_輪2_金具右;
 
-    	public Par X0Y0_Torso4_鱗左_鱗1;
+    	public ShapePart X0Y0_Torso4_鱗左_鱗1;
 
-    	public Par X0Y0_Torso4_鱗左_鱗2;
+    	public ShapePart X0Y0_Torso4_鱗左_鱗2;
 
-    	public Par X0Y0_Torso4_鱗左_鱗3;
+    	public ShapePart X0Y0_Torso4_鱗左_鱗3;
 
-    	public Par X0Y0_Torso4_鱗左_鱗4;
+    	public ShapePart X0Y0_Torso4_鱗左_鱗4;
 
-    	public Par X0Y0_Torso4_鱗右_鱗1;
+    	public ShapePart X0Y0_Torso4_鱗右_鱗1;
 
-    	public Par X0Y0_Torso4_鱗右_鱗2;
+    	public ShapePart X0Y0_Torso4_鱗右_鱗2;
 
-    	public Par X0Y0_Torso4_鱗右_鱗3;
+    	public ShapePart X0Y0_Torso4_鱗右_鱗3;
 
-    	public Par X0Y0_Torso4_鱗右_鱗4;
+    	public ShapePart X0Y0_Torso4_鱗右_鱗4;
 
-    	public Par X0Y0_Torso4_Torso;
+    	public ShapePart X0Y0_Torso4_Torso;
 
-    	public Par X0Y0_Torso3_鱗左_鱗1;
+    	public ShapePart X0Y0_Torso3_鱗左_鱗1;
 
-    	public Par X0Y0_Torso3_鱗左_鱗2;
+    	public ShapePart X0Y0_Torso3_鱗左_鱗2;
 
-    	public Par X0Y0_Torso3_鱗左_鱗3;
+    	public ShapePart X0Y0_Torso3_鱗左_鱗3;
 
-    	public Par X0Y0_Torso3_鱗左_鱗4;
+    	public ShapePart X0Y0_Torso3_鱗左_鱗4;
 
-    	public Par X0Y0_Torso3_鱗右_鱗1;
+    	public ShapePart X0Y0_Torso3_鱗右_鱗1;
 
-    	public Par X0Y0_Torso3_鱗右_鱗2;
+    	public ShapePart X0Y0_Torso3_鱗右_鱗2;
 
-    	public Par X0Y0_Torso3_鱗右_鱗3;
+    	public ShapePart X0Y0_Torso3_鱗右_鱗3;
 
-    	public Par X0Y0_Torso3_鱗右_鱗4;
+    	public ShapePart X0Y0_Torso3_鱗右_鱗4;
 
-    	public Par X0Y0_Torso3_Torso;
+    	public ShapePart X0Y0_Torso3_Torso;
 
-    	public Par X0Y0_Torso2_鱗左_鱗1;
+    	public ShapePart X0Y0_Torso2_鱗左_鱗1;
 
-    	public Par X0Y0_Torso2_鱗左_鱗2;
+    	public ShapePart X0Y0_Torso2_鱗左_鱗2;
 
-    	public Par X0Y0_Torso2_鱗左_鱗3;
+    	public ShapePart X0Y0_Torso2_鱗左_鱗3;
 
-    	public Par X0Y0_Torso2_鱗左_鱗4;
+    	public ShapePart X0Y0_Torso2_鱗左_鱗4;
 
-    	public Par X0Y0_Torso2_鱗右_鱗1;
+    	public ShapePart X0Y0_Torso2_鱗右_鱗1;
 
-    	public Par X0Y0_Torso2_鱗右_鱗2;
+    	public ShapePart X0Y0_Torso2_鱗右_鱗2;
 
-    	public Par X0Y0_Torso2_鱗右_鱗3;
+    	public ShapePart X0Y0_Torso2_鱗右_鱗3;
 
-    	public Par X0Y0_Torso2_鱗右_鱗4;
+    	public ShapePart X0Y0_Torso2_鱗右_鱗4;
 
-    	public Par X0Y0_Torso2_Torso;
+    	public ShapePart X0Y0_Torso2_Torso;
 
-    	public Par X0Y0_Torso1_鱗左2_鱗1;
+    	public ShapePart X0Y0_Torso1_鱗左2_鱗1;
 
-    	public Par X0Y0_Torso1_鱗左2_鱗2;
+    	public ShapePart X0Y0_Torso1_鱗左2_鱗2;
 
-    	public Par X0Y0_Torso1_鱗左2_鱗3;
+    	public ShapePart X0Y0_Torso1_鱗左2_鱗3;
 
-    	public Par X0Y0_Torso1_鱗左2_鱗4;
+    	public ShapePart X0Y0_Torso1_鱗左2_鱗4;
 
-    	public Par X0Y0_Torso1_鱗右2_鱗1;
+    	public ShapePart X0Y0_Torso1_鱗右2_鱗1;
 
-    	public Par X0Y0_Torso1_鱗右2_鱗2;
+    	public ShapePart X0Y0_Torso1_鱗右2_鱗2;
 
-    	public Par X0Y0_Torso1_鱗右2_鱗3;
+    	public ShapePart X0Y0_Torso1_鱗右2_鱗3;
 
-    	public Par X0Y0_Torso1_鱗右2_鱗4;
+    	public ShapePart X0Y0_Torso1_鱗右2_鱗4;
 
-    	public Par X0Y0_Torso1_Torso2;
+    	public ShapePart X0Y0_Torso1_Torso2;
 
-    	public Par X0Y0_Torso1_Torso1;
+    	public ShapePart X0Y0_Torso1_Torso1;
 
-    	public Par X0Y0_Torso1_鱗左1_鱗1;
+    	public ShapePart X0Y0_Torso1_鱗左1_鱗1;
 
-    	public Par X0Y0_Torso1_鱗左1_鱗2;
+    	public ShapePart X0Y0_Torso1_鱗左1_鱗2;
 
-    	public Par X0Y0_Torso1_鱗左1_鱗3;
+    	public ShapePart X0Y0_Torso1_鱗左1_鱗3;
 
-    	public Par X0Y0_Torso1_鱗左1_鱗4;
+    	public ShapePart X0Y0_Torso1_鱗左1_鱗4;
 
-    	public Par X0Y0_Torso1_鱗右1_鱗1;
+    	public ShapePart X0Y0_Torso1_鱗右1_鱗1;
 
-    	public Par X0Y0_Torso1_鱗右1_鱗2;
+    	public ShapePart X0Y0_Torso1_鱗右1_鱗2;
 
-    	public Par X0Y0_Torso1_鱗右1_鱗3;
+    	public ShapePart X0Y0_Torso1_鱗右1_鱗3;
 
-    	public Par X0Y0_Torso1_鱗右1_鱗4;
+    	public ShapePart X0Y0_Torso1_鱗右1_鱗4;
 
-    	public Par X0Y0_輪1_革;
+    	public ShapePart X0Y0_輪1_革;
 
-    	public Par X0Y0_輪1_金具1;
+    	public ShapePart X0Y0_輪1_金具1;
 
-    	public Par X0Y0_輪1_金具2;
+    	public ShapePart X0Y0_輪1_金具2;
 
-    	public Par X0Y0_輪1_金具3;
+    	public ShapePart X0Y0_輪1_金具3;
 
-    	public Par X0Y0_輪1_金具左;
+    	public ShapePart X0Y0_輪1_金具左;
 
-    	public Par X0Y0_輪1_金具右;
+    	public ShapePart X0Y0_輪1_金具右;
 
     	public ColorD Torso6_鱗左_鱗1CD;
 
@@ -2544,7 +2544,7 @@ namespace SlaveMatrix
     		Body.JoinPAall();
     	}
 
-    	public IEnumerable<Par> 軸列挙()
+    	public IEnumerable<ShapePart> 軸列挙()
     	{
     		yield return X0Y0_Torso3_Torso;
     		yield return X0Y0_Torso4_Torso;
@@ -2552,7 +2552,7 @@ namespace SlaveMatrix
     		yield return X0Y0_Torso6_Torso;
     	}
 
-    	public override bool Is革(Par p)
+    	public override bool Is革(ShapePart p)
     	{
     		if (p != X0Y0_輪2_革 && p != X0Y0_輪2_金具1 && p != X0Y0_輪2_金具2 && p != X0Y0_輪2_金具3 && p != X0Y0_輪2_金具左 && p != X0Y0_輪2_金具右 && p != X0Y0_輪1_革 && p != X0Y0_輪1_金具1 && p != X0Y0_輪1_金具2 && p != X0Y0_輪1_金具3 && p != X0Y0_輪1_金具左)
     		{

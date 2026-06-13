@@ -4,17 +4,17 @@ namespace SlaveMatrix
 {
     public class 上着ボトム_クロス後 : 上着ボトム
     {
-    	public Par X0Y0_下地;
+    	public ShapePart X0Y0_下地;
 
-    	public Par X0Y0_染み_染み2;
+    	public ShapePart X0Y0_染み_染み2;
 
-    	public Par X0Y0_染み_染み1;
+    	public ShapePart X0Y0_染み_染み1;
 
-    	public Par X0Y1_下地;
+    	public ShapePart X0Y1_下地;
 
-    	public Par X0Y1_染み_染み2;
+    	public ShapePart X0Y1_染み_染み2;
 
-    	public Par X0Y1_染み_染み1;
+    	public ShapePart X0Y1_染み_染み1;
 
     	public ColorD 下地CD;
 
@@ -232,7 +232,7 @@ namespace SlaveMatrix
     		尺度YB = 0.95;
     	}
 
-    	public override bool Is布(Par p)
+    	public override bool Is布(ShapePart p)
     	{
     		if (p != X0Y0_下地 && p != X0Y0_染み_染み2 && p != X0Y0_染み_染み1 && p != X0Y1_下地 && p != X0Y1_染み_染み2)
     		{

@@ -4,9 +4,9 @@ namespace SlaveMatrix
 {
     public class 胴腹板 : Ele
     {
-    	public Par X0Y0_虫性_腹板;
+    	public ShapePart X0Y0_虫性_腹板;
 
-    	public Par X0Y0_虫性_縦線;
+    	public ShapePart X0Y0_虫性_縦線;
 
     	public ColorD 虫性_腹板CD;
 

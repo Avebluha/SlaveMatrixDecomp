@@ -5,23 +5,23 @@ namespace SlaveMatrix
 {
     public class Torso : Ele
     {
-    	public Par X0Y0_Torso;
+    	public ShapePart X0Y0_Torso;
 
-    	public Par X0Y0_筋肉_筋肉左;
+    	public ShapePart X0Y0_筋肉_筋肉左;
 
-    	public Par X0Y0_筋肉_筋肉右;
+    	public ShapePart X0Y0_筋肉_筋肉右;
 
-    	public Par X0Y0_獣性_獣毛左;
+    	public ShapePart X0Y0_獣性_獣毛左;
 
-    	public Par X0Y0_獣性_獣毛右;
+    	public ShapePart X0Y0_獣性_獣毛右;
 
-    	public Par X0Y0_植タトゥ_左_タトゥ2;
+    	public ShapePart X0Y0_植タトゥ_左_タトゥ2;
 
-    	public Par X0Y0_植タトゥ_左_タトゥ1;
+    	public ShapePart X0Y0_植タトゥ_左_タトゥ1;
 
-    	public Par X0Y0_植タトゥ_右_タトゥ2;
+    	public ShapePart X0Y0_植タトゥ_右_タトゥ2;
 
-    	public Par X0Y0_植タトゥ_右_タトゥ1;
+    	public ShapePart X0Y0_植タトゥ_右_タトゥ1;
 
     	public ColorD TorsoCD;
 

@@ -4,27 +4,27 @@ namespace SlaveMatrix
 {
     public class 角1_鬼 : 角1
     {
-    	public Par X0Y0_根;
+    	public ShapePart X0Y0_根;
 
-    	public Par X0Y0_線1;
+    	public ShapePart X0Y0_線1;
 
-    	public Par X0Y0_線2;
+    	public ShapePart X0Y0_線2;
 
-    	public Par X0Y0_線3;
+    	public ShapePart X0Y0_線3;
 
-    	public Par X0Y0_線4;
+    	public ShapePart X0Y0_線4;
 
-    	public Par X0Y0_線5;
+    	public ShapePart X0Y0_線5;
 
-    	public Par X0Y1_根;
+    	public ShapePart X0Y1_根;
 
-    	public Par X0Y1_折線1;
+    	public ShapePart X0Y1_折線1;
 
-    	public Par X0Y1_折線2;
+    	public ShapePart X0Y1_折線2;
 
-    	public Par X0Y1_線1;
+    	public ShapePart X0Y1_線1;
 
-    	public Par X0Y1_線2;
+    	public ShapePart X0Y1_線2;
 
     	public ColorD 根CD;
 

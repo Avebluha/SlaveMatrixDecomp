@@ -4,185 +4,185 @@ namespace SlaveMatrix
 {
     public class 口_通常 : 口
     {
-    	public Par X0Y0_口;
+    	public ShapePart X0Y0_口;
 
-    	public Par X0Y0_口紅上;
+    	public ShapePart X0Y0_口紅上;
 
-    	public Par X0Y0_牙左;
+    	public ShapePart X0Y0_牙左;
 
-    	public Par X0Y0_牙右;
+    	public ShapePart X0Y0_牙右;
 
-    	public Par X0Y0_口紅下_口紅;
+    	public ShapePart X0Y0_口紅下_口紅;
 
-    	public Par X0Y0_口紅下_ハイライト;
+    	public ShapePart X0Y0_口紅下_ハイライト;
 
-    	public Par X0Y1_口;
+    	public ShapePart X0Y1_口;
 
-    	public Par X0Y1_口紅上;
+    	public ShapePart X0Y1_口紅上;
 
-    	public Par X0Y1_牙左;
+    	public ShapePart X0Y1_牙左;
 
-    	public Par X0Y1_牙右;
+    	public ShapePart X0Y1_牙右;
 
-    	public Par X0Y1_口紅下_口紅;
+    	public ShapePart X0Y1_口紅下_口紅;
 
-    	public Par X0Y1_口紅下_ハイライト;
+    	public ShapePart X0Y1_口紅下_ハイライト;
 
-    	public Par X0Y2_口;
+    	public ShapePart X0Y2_口;
 
-    	public Par X0Y2_口紅上;
+    	public ShapePart X0Y2_口紅上;
 
-    	public Par X0Y2_歯;
+    	public ShapePart X0Y2_歯;
 
-    	public Par X0Y2_牙左;
+    	public ShapePart X0Y2_牙左;
 
-    	public Par X0Y2_牙右;
+    	public ShapePart X0Y2_牙右;
 
-    	public Par X0Y2_口紅下_口紅;
+    	public ShapePart X0Y2_口紅下_口紅;
 
-    	public Par X0Y2_口紅下_ハイライト;
+    	public ShapePart X0Y2_口紅下_ハイライト;
 
-    	public Par X0Y3_口;
+    	public ShapePart X0Y3_口;
 
-    	public Par X0Y3_口紅上;
+    	public ShapePart X0Y3_口紅上;
 
-    	public Par X0Y3_歯;
+    	public ShapePart X0Y3_歯;
 
-    	public Par X0Y3_牙左;
+    	public ShapePart X0Y3_牙左;
 
-    	public Par X0Y3_牙右;
+    	public ShapePart X0Y3_牙右;
 
-    	public Par X0Y3_口紅下_口紅;
+    	public ShapePart X0Y3_口紅下_口紅;
 
-    	public Par X0Y3_口紅下_ハイライト;
+    	public ShapePart X0Y3_口紅下_ハイライト;
 
-    	public Par X0Y4_口;
+    	public ShapePart X0Y4_口;
 
-    	public Par X0Y4_口紅上;
+    	public ShapePart X0Y4_口紅上;
 
-    	public Par X0Y4_牙左;
+    	public ShapePart X0Y4_牙左;
 
-    	public Par X0Y4_牙右;
+    	public ShapePart X0Y4_牙右;
 
-    	public Par X0Y4_口紅下_口紅;
+    	public ShapePart X0Y4_口紅下_口紅;
 
-    	public Par X0Y4_口紅下_ハイライト;
+    	public ShapePart X0Y4_口紅下_ハイライト;
 
-    	public Par X0Y5_口;
+    	public ShapePart X0Y5_口;
 
-    	public Par X0Y5_口紅上;
+    	public ShapePart X0Y5_口紅上;
 
-    	public Par X0Y5_牙左;
+    	public ShapePart X0Y5_牙左;
 
-    	public Par X0Y5_牙右;
+    	public ShapePart X0Y5_牙右;
 
-    	public Par X0Y5_口紅下_口紅;
+    	public ShapePart X0Y5_口紅下_口紅;
 
-    	public Par X0Y5_口紅下_ハイライト;
+    	public ShapePart X0Y5_口紅下_ハイライト;
 
-    	public Par X0Y6_口;
+    	public ShapePart X0Y6_口;
 
-    	public Par X0Y6_口紅上;
+    	public ShapePart X0Y6_口紅上;
 
-    	public Par X0Y6_牙左;
+    	public ShapePart X0Y6_牙左;
 
-    	public Par X0Y6_牙右;
+    	public ShapePart X0Y6_牙右;
 
-    	public Par X0Y6_口紅下_口紅;
+    	public ShapePart X0Y6_口紅下_口紅;
 
-    	public Par X0Y6_口紅下_ハイライト;
+    	public ShapePart X0Y6_口紅下_ハイライト;
 
-    	public Par X0Y7_口;
+    	public ShapePart X0Y7_口;
 
-    	public Par X0Y7_歯;
+    	public ShapePart X0Y7_歯;
 
-    	public Par X0Y7_口紅上;
+    	public ShapePart X0Y7_口紅上;
 
-    	public Par X0Y7_牙左;
+    	public ShapePart X0Y7_牙左;
 
-    	public Par X0Y7_牙右;
+    	public ShapePart X0Y7_牙右;
 
-    	public Par X0Y7_口紅下_口紅;
+    	public ShapePart X0Y7_口紅下_口紅;
 
-    	public Par X0Y7_口紅下_ハイライト;
+    	public ShapePart X0Y7_口紅下_ハイライト;
 
-    	public Par X0Y8_口;
+    	public ShapePart X0Y8_口;
 
-    	public Par X0Y8_歯;
+    	public ShapePart X0Y8_歯;
 
-    	public Par X0Y8_口紅上;
+    	public ShapePart X0Y8_口紅上;
 
-    	public Par X0Y8_牙左;
+    	public ShapePart X0Y8_牙左;
 
-    	public Par X0Y8_牙右;
+    	public ShapePart X0Y8_牙右;
 
-    	public Par X0Y8_口紅下_口紅;
+    	public ShapePart X0Y8_口紅下_口紅;
 
-    	public Par X0Y8_口紅下_ハイライト;
+    	public ShapePart X0Y8_口紅下_ハイライト;
 
-    	public Par X0Y9_口;
+    	public ShapePart X0Y9_口;
 
-    	public Par X0Y9_口紅上;
+    	public ShapePart X0Y9_口紅上;
 
-    	public Par X0Y9_牙左;
+    	public ShapePart X0Y9_牙左;
 
-    	public Par X0Y9_牙右;
+    	public ShapePart X0Y9_牙右;
 
-    	public Par X0Y9_口紅下_口紅;
+    	public ShapePart X0Y9_口紅下_口紅;
 
-    	public Par X0Y9_口紅下_ハイライト;
+    	public ShapePart X0Y9_口紅下_ハイライト;
 
-    	public Par X0Y10_口;
+    	public ShapePart X0Y10_口;
 
-    	public Par X0Y10_口紅上;
+    	public ShapePart X0Y10_口紅上;
 
-    	public Par X0Y10_牙左;
+    	public ShapePart X0Y10_牙左;
 
-    	public Par X0Y10_牙右;
+    	public ShapePart X0Y10_牙右;
 
-    	public Par X0Y10_口紅下_口紅;
+    	public ShapePart X0Y10_口紅下_口紅;
 
-    	public Par X0Y10_口紅下_ハイライト;
+    	public ShapePart X0Y10_口紅下_ハイライト;
 
-    	public Par X0Y11_口;
+    	public ShapePart X0Y11_口;
 
-    	public Par X0Y11_口紅上;
+    	public ShapePart X0Y11_口紅上;
 
-    	public Par X0Y11_牙左;
+    	public ShapePart X0Y11_牙左;
 
-    	public Par X0Y11_牙右;
+    	public ShapePart X0Y11_牙右;
 
-    	public Par X0Y11_口紅下_口紅;
+    	public ShapePart X0Y11_口紅下_口紅;
 
-    	public Par X0Y11_口紅下_ハイライト;
+    	public ShapePart X0Y11_口紅下_ハイライト;
 
-    	public Par X0Y12_口;
+    	public ShapePart X0Y12_口;
 
-    	public Par X0Y12_口紅上;
+    	public ShapePart X0Y12_口紅上;
 
-    	public Par X0Y12_牙左;
+    	public ShapePart X0Y12_牙左;
 
-    	public Par X0Y12_牙右;
+    	public ShapePart X0Y12_牙右;
 
-    	public Par X0Y12_口紅下_口紅;
+    	public ShapePart X0Y12_口紅下_口紅;
 
-    	public Par X0Y12_口紅下_ハイライト;
+    	public ShapePart X0Y12_口紅下_ハイライト;
 
-    	public Par X0Y13_口;
+    	public ShapePart X0Y13_口;
 
-    	public Par X0Y13_頬左;
+    	public ShapePart X0Y13_頬左;
 
-    	public Par X0Y13_頬右;
+    	public ShapePart X0Y13_頬右;
 
-    	public Par X0Y13_口紅上;
+    	public ShapePart X0Y13_口紅上;
 
-    	public Par X0Y13_牙左;
+    	public ShapePart X0Y13_牙左;
 
-    	public Par X0Y13_牙右;
+    	public ShapePart X0Y13_牙右;
 
-    	public Par X0Y13_口紅下_口紅;
+    	public ShapePart X0Y13_口紅下_口紅;
 
-    	public Par X0Y13_口紅下_ハイライト;
+    	public ShapePart X0Y13_口紅下_ハイライト;
 
     	public ColorD 口CD;
 

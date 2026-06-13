@@ -4,51 +4,51 @@ namespace SlaveMatrix
 {
     public class 足_獣 : 獣足
     {
-    	public Par X0Y0_足;
+    	public ShapePart X0Y0_足;
 
-    	public Par X0Y0_筋;
+    	public ShapePart X0Y0_筋;
 
-    	public Par X0Y0_小指_指;
+    	public ShapePart X0Y0_小指_指;
 
-    	public Par X0Y0_小指_爪;
+    	public ShapePart X0Y0_小指_爪;
 
-    	public Par X0Y0_小指_肉球;
+    	public ShapePart X0Y0_小指_肉球;
 
-    	public Par X0Y0_薬指_指;
+    	public ShapePart X0Y0_薬指_指;
 
-    	public Par X0Y0_薬指_爪;
+    	public ShapePart X0Y0_薬指_爪;
 
-    	public Par X0Y0_薬指_肉球;
+    	public ShapePart X0Y0_薬指_肉球;
 
-    	public Par X0Y0_中指_指;
+    	public ShapePart X0Y0_中指_指;
 
-    	public Par X0Y0_中指_爪;
+    	public ShapePart X0Y0_中指_爪;
 
-    	public Par X0Y0_中指_肉球;
+    	public ShapePart X0Y0_中指_肉球;
 
-    	public Par X0Y0_人指_指;
+    	public ShapePart X0Y0_人指_指;
 
-    	public Par X0Y0_人指_爪;
+    	public ShapePart X0Y0_人指_爪;
 
-    	public Par X0Y0_人指_肉球;
+    	public ShapePart X0Y0_人指_肉球;
 
-    	public Par X0Y0_肉球_肉球左;
+    	public ShapePart X0Y0_肉球_肉球左;
 
-    	public Par X0Y0_肉球_肉球中;
+    	public ShapePart X0Y0_肉球_肉球中;
 
-    	public Par X0Y0_肉球_肉球右;
+    	public ShapePart X0Y0_肉球_肉球右;
 
-    	public Par X0Y0_脚輪_革;
+    	public ShapePart X0Y0_脚輪_革;
 
-    	public Par X0Y0_脚輪_金具1;
+    	public ShapePart X0Y0_脚輪_金具1;
 
-    	public Par X0Y0_脚輪_金具2;
+    	public ShapePart X0Y0_脚輪_金具2;
 
-    	public Par X0Y0_脚輪_金具3;
+    	public ShapePart X0Y0_脚輪_金具3;
 
-    	public Par X0Y0_脚輪_金具左;
+    	public ShapePart X0Y0_脚輪_金具左;
 
-    	public Par X0Y0_脚輪_金具右;
+    	public ShapePart X0Y0_脚輪_金具右;
 
     	public ColorD 足CD;
 

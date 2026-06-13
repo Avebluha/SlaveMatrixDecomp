@@ -5,27 +5,27 @@ namespace SlaveMatrix
 {
     public class Shoulder : Ele
     {
-    	public Par X0Y0_脇_脇;
+    	public ShapePart X0Y0_脇_脇;
 
-    	public Par X0Y0_脇_筋肉;
+    	public ShapePart X0Y0_脇_筋肉;
 
-    	public Par X0Y0_Shoulder_Shoulder;
+    	public ShapePart X0Y0_Shoulder_Shoulder;
 
-    	public Par X0Y0_Shoulder_虫性_甲殻1;
+    	public ShapePart X0Y0_Shoulder_虫性_甲殻1;
 
-    	public Par X0Y0_Shoulder_虫性_甲殻2;
+    	public ShapePart X0Y0_Shoulder_虫性_甲殻2;
 
-    	public Par X0Y0_Shoulder_傷I1;
+    	public ShapePart X0Y0_Shoulder_傷I1;
 
-    	public Par X0Y0_Shoulder_傷I2;
+    	public ShapePart X0Y0_Shoulder_傷I2;
 
-    	public Par X0Y0_Shoulder_傷I3;
+    	public ShapePart X0Y0_Shoulder_傷I3;
 
-    	public Par X0Y0_Shoulder_傷I4;
+    	public ShapePart X0Y0_Shoulder_傷I4;
 
-    	public Par X0Y0_Shoulder_シャツ;
+    	public ShapePart X0Y0_Shoulder_シャツ;
 
-    	public Par X0Y0_Shoulder_ナース;
+    	public ShapePart X0Y0_Shoulder_ナース;
 
     	public ColorD 脇_脇CD;
 
@@ -423,7 +423,7 @@ namespace SlaveMatrix
     		Are.Draw(X0Y0_Shoulder_虫性_甲殻2);
     	}
 
-    	public override bool Is布(Par p)
+    	public override bool Is布(ShapePart p)
     	{
     		if (p != X0Y0_Shoulder_シャツ)
     		{

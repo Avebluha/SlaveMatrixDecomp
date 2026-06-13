@@ -5,7 +5,7 @@ namespace SlaveMatrix
 {
     public class 基髪 : Ele
     {
-    	public Par X0Y0_髪;
+    	public ShapePart X0Y0_髪;
 
     	public ColorD 髪CD;
 

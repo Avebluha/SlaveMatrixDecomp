@@ -178,11 +178,11 @@ namespace _2DGAMELIB
     	}
 
     	public Difs JoinRoot => r;
-    	public IEnumerable<Par> EnumAllPar()
+    	public IEnumerable<ShapePart> EnumAllPar()
     	{
     		foreach (Difs value in Difss.Values)
     		{
-    			foreach (Par item in value.EnumAllPar())
+    			foreach (ShapePart item in value.EnumAllPar())
     			{
     				yield return item;
     			}
@@ -220,15 +220,15 @@ namespace _2DGAMELIB
     		{
     			return array.FirstOrDefault();
     		}
-    		Par[] pa = EnumAllPar().ToArray();
+    		ShapePart[] pa = EnumAllPar().ToArray();
     		Difs[] array2 = array;
     		Vector2D p;
     		foreach (Difs difs in array2)
     		{
-    			if (difs.EnumJoinRoot.All(delegate(Par p0)
+    			if (difs.EnumJoinRoot.All(delegate(ShapePart p0)
     			{
     				p = p0.Position;
-    				return pa.All((Par p1) => p0 == p1 || p1.JP.All((Joi j) => !(p1.ToGlobal(j.Joint).DistanceSquared(p) <= Join.IdentityDistance)));
+    				return pa.All((ShapePart p1) => p0 == p1 || p1.JP.All((Joi j) => !(p1.ToGlobal(j.Joint).DistanceSquared(p) <= Join.IdentityDistance)));
     			}))
     			{
     				return difs;

@@ -8,11 +8,11 @@ namespace SlaveMatrix
 
     	public 上着ミドル_ドレス ミドル;
 
-    	private Par[] ドレス;
+    	private ShapePart[] ドレス;
 
-    	private Par[] 縁左;
+    	private ShapePart[] 縁左;
 
-    	private Par[] 縁右;
+    	private ShapePart[] 縁右;
 
     	private Vector2D[] ドレスm;
 
@@ -24,9 +24,9 @@ namespace SlaveMatrix
     	{
     		this.トップ = トップ;
     		this.ミドル = ミドル;
-    		ドレス = new Par[5] { トップ.X0Y0_左_服, トップ.X0Y0_左_バスト, トップ.X0Y0_右_服, トップ.X0Y0_右_バスト, ミドル.X0Y0_服 };
-    		縁左 = new Par[2] { トップ.X0Y0_左_縁, ミドル.X0Y0_縁_縁左 };
-    		縁右 = new Par[2] { トップ.X0Y0_右_縁, ミドル.X0Y0_縁_縁右 };
+    		ドレス = new ShapePart[5] { トップ.X0Y0_左_服, トップ.X0Y0_左_バスト, トップ.X0Y0_右_服, トップ.X0Y0_右_バスト, ミドル.X0Y0_服 };
+    		縁左 = new ShapePart[2] { トップ.X0Y0_左_縁, ミドル.X0Y0_縁_縁左 };
+    		縁右 = new ShapePart[2] { トップ.X0Y0_右_縁, ミドル.X0Y0_縁_縁右 };
     	}
 
     	public void 色更新()

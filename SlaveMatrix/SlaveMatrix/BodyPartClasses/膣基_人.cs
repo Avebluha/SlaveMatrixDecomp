@@ -4,7 +4,7 @@ namespace SlaveMatrix
 {
     public class 膣基_人 : 膣基
     {
-    	public Par X0Y0_膣基;
+    	public ShapePart X0Y0_膣基;
 
     	public ColorD 膣基CD;
 

@@ -6,85 +6,85 @@ namespace SlaveMatrix
 {
     public class 多足_蠍 : 半身
     {
-    	public Par X0Y0_前腹_腹節7_節0;
+    	public ShapePart X0Y0_前腹_腹節7_節0;
 
-    	public Par X0Y0_前腹_腹節7_節1;
+    	public ShapePart X0Y0_前腹_腹節7_節1;
 
-    	public Par X0Y0_前腹_腹節6_節0;
+    	public ShapePart X0Y0_前腹_腹節6_節0;
 
-    	public Par X0Y0_前腹_腹節6_節1;
+    	public ShapePart X0Y0_前腹_腹節6_節1;
 
-    	public Par X0Y0_前腹_腹節6_節線;
+    	public ShapePart X0Y0_前腹_腹節6_節線;
 
-    	public Par X0Y0_前腹_腹節6_気門左;
+    	public ShapePart X0Y0_前腹_腹節6_気門左;
 
-    	public Par X0Y0_前腹_腹節6_気門右;
+    	public ShapePart X0Y0_前腹_腹節6_気門右;
 
-    	public Par X0Y0_前腹_腹節5_節0;
+    	public ShapePart X0Y0_前腹_腹節5_節0;
 
-    	public Par X0Y0_前腹_腹節5_節1;
+    	public ShapePart X0Y0_前腹_腹節5_節1;
 
-    	public Par X0Y0_前腹_腹節5_節線;
+    	public ShapePart X0Y0_前腹_腹節5_節線;
 
-    	public Par X0Y0_前腹_腹節5_気門左;
+    	public ShapePart X0Y0_前腹_腹節5_気門左;
 
-    	public Par X0Y0_前腹_腹節5_気門右;
+    	public ShapePart X0Y0_前腹_腹節5_気門右;
 
-    	public Par X0Y0_前腹_腹節4_節0;
+    	public ShapePart X0Y0_前腹_腹節4_節0;
 
-    	public Par X0Y0_前腹_腹節4_節1;
+    	public ShapePart X0Y0_前腹_腹節4_節1;
 
-    	public Par X0Y0_前腹_腹節4_節線;
+    	public ShapePart X0Y0_前腹_腹節4_節線;
 
-    	public Par X0Y0_前腹_腹節4_気門左;
+    	public ShapePart X0Y0_前腹_腹節4_気門左;
 
-    	public Par X0Y0_前腹_腹節4_気門右;
+    	public ShapePart X0Y0_前腹_腹節4_気門右;
 
-    	public Par X0Y0_前腹_腹節3_節0;
+    	public ShapePart X0Y0_前腹_腹節3_節0;
 
-    	public Par X0Y0_前腹_腹節3_節1;
+    	public ShapePart X0Y0_前腹_腹節3_節1;
 
-    	public Par X0Y0_前腹_腹節3_節線;
+    	public ShapePart X0Y0_前腹_腹節3_節線;
 
-    	public Par X0Y0_前腹_腹節3_気門左;
+    	public ShapePart X0Y0_前腹_腹節3_気門左;
 
-    	public Par X0Y0_前腹_腹節3_気門右;
+    	public ShapePart X0Y0_前腹_腹節3_気門右;
 
-    	public Par X0Y0_前腹_腹節2_節0;
+    	public ShapePart X0Y0_前腹_腹節2_節0;
 
-    	public Par X0Y0_頭胸;
+    	public ShapePart X0Y0_頭胸;
 
-    	public Par X0Y0_基節_基節左0;
+    	public ShapePart X0Y0_基節_基節左0;
 
-    	public Par X0Y0_基節_基節左1;
+    	public ShapePart X0Y0_基節_基節左1;
 
-    	public Par X0Y0_基節_肢内突起左;
+    	public ShapePart X0Y0_基節_肢内突起左;
 
-    	public Par X0Y0_基節_基節左2;
+    	public ShapePart X0Y0_基節_基節左2;
 
-    	public Par X0Y0_基節_基節左3;
+    	public ShapePart X0Y0_基節_基節左3;
 
-    	public Par X0Y0_基節_基節左4;
+    	public ShapePart X0Y0_基節_基節左4;
 
-    	public Par X0Y0_基節_基節右0;
+    	public ShapePart X0Y0_基節_基節右0;
 
-    	public Par X0Y0_基節_基節右1;
+    	public ShapePart X0Y0_基節_基節右1;
 
-    	public Par X0Y0_基節_肢内突起右;
+    	public ShapePart X0Y0_基節_肢内突起右;
 
-    	public Par X0Y0_基節_基節右2;
+    	public ShapePart X0Y0_基節_基節右2;
 
-    	public Par X0Y0_基節_基節右3;
+    	public ShapePart X0Y0_基節_基節右3;
 
-    	public Par X0Y0_基節_基節右4;
+    	public ShapePart X0Y0_基節_基節右4;
 
-    	public Par X0Y0_生殖口蓋左;
+    	public ShapePart X0Y0_生殖口蓋左;
 
-    	public Par X0Y0_生殖口蓋右;
+    	public ShapePart X0Y0_生殖口蓋右;
 
-    	public Par X0Y0_生殖口_生殖口0;
+    	public ShapePart X0Y0_生殖口_生殖口0;
 
-    	public Par X0Y0_生殖口_生殖口1;
+    	public ShapePart X0Y0_生殖口_生殖口1;
 
     	public ColorD 前腹_腹節7_節0CD;
 
@@ -1316,7 +1316,7 @@ namespace SlaveMatrix
     		Body.JoinPAall();
     	}
 
-    	public IEnumerable<Par> 軸列挙()
+    	public IEnumerable<ShapePart> 軸列挙()
     	{
     		yield return X0Y0_前腹_腹節2_節0;
     		yield return X0Y0_前腹_腹節3_節0;

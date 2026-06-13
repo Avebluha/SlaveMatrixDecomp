@@ -5,85 +5,85 @@ namespace SlaveMatrix
 {
     public class Head : Ele
     {
-    	public Par X0Y0_Head;
+    	public ShapePart X0Y0_Head;
 
-    	public Par X0Y0_悪タトゥ_逆十字_逆十字1;
+    	public ShapePart X0Y0_悪タトゥ_逆十字_逆十字1;
 
-    	public Par X0Y0_悪タトゥ_逆十字_逆十字2;
+    	public ShapePart X0Y0_悪タトゥ_逆十字_逆十字2;
 
-    	public Par X0Y0_隈取_タトゥ;
+    	public ShapePart X0Y0_隈取_タトゥ;
 
-    	public Par X0Y0_隈取_タトゥ左;
+    	public ShapePart X0Y0_隈取_タトゥ左;
 
-    	public Par X0Y0_隈取_タトゥ右;
+    	public ShapePart X0Y0_隈取_タトゥ右;
 
-    	public Par X0Y0_秘石_基;
+    	public ShapePart X0Y0_秘石_基;
 
-    	public Par X0Y0_秘石_秘石;
+    	public ShapePart X0Y0_秘石_秘石;
 
-    	public Par X0Y0_秘石_ハイライト;
+    	public ShapePart X0Y0_秘石_ハイライト;
 
-    	public Par X0Y0_蜘蛛_眼左1_基;
+    	public ShapePart X0Y0_蜘蛛_眼左1_基;
 
-    	public Par X0Y0_蜘蛛_眼左1_眼;
+    	public ShapePart X0Y0_蜘蛛_眼左1_眼;
 
-    	public Par X0Y0_蜘蛛_眼左1_ハイライト;
+    	public ShapePart X0Y0_蜘蛛_眼左1_ハイライト;
 
-    	public Par X0Y0_蜘蛛_眼左2_基;
+    	public ShapePart X0Y0_蜘蛛_眼左2_基;
 
-    	public Par X0Y0_蜘蛛_眼左2_眼;
+    	public ShapePart X0Y0_蜘蛛_眼左2_眼;
 
-    	public Par X0Y0_蜘蛛_眼左2_ハイライト;
+    	public ShapePart X0Y0_蜘蛛_眼左2_ハイライト;
 
-    	public Par X0Y0_蜘蛛_眼右1_基;
+    	public ShapePart X0Y0_蜘蛛_眼右1_基;
 
-    	public Par X0Y0_蜘蛛_眼右1_眼;
+    	public ShapePart X0Y0_蜘蛛_眼右1_眼;
 
-    	public Par X0Y0_蜘蛛_眼右1_ハイライト;
+    	public ShapePart X0Y0_蜘蛛_眼右1_ハイライト;
 
-    	public Par X0Y0_蜘蛛_眼右2_基;
+    	public ShapePart X0Y0_蜘蛛_眼右2_基;
 
-    	public Par X0Y0_蜘蛛_眼右2_眼;
+    	public ShapePart X0Y0_蜘蛛_眼右2_眼;
 
-    	public Par X0Y0_蜘蛛_眼右2_ハイライト;
+    	public ShapePart X0Y0_蜘蛛_眼右2_ハイライト;
 
-    	public Par X0Y0_羽虫_眼中_基;
+    	public ShapePart X0Y0_羽虫_眼中_基;
 
-    	public Par X0Y0_羽虫_眼中_眼;
+    	public ShapePart X0Y0_羽虫_眼中_眼;
 
-    	public Par X0Y0_羽虫_眼中_ハイライト;
+    	public ShapePart X0Y0_羽虫_眼中_ハイライト;
 
-    	public Par X0Y0_羽虫_眼左_基;
+    	public ShapePart X0Y0_羽虫_眼左_基;
 
-    	public Par X0Y0_羽虫_眼左_眼;
+    	public ShapePart X0Y0_羽虫_眼左_眼;
 
-    	public Par X0Y0_羽虫_眼左_ハイライト;
+    	public ShapePart X0Y0_羽虫_眼左_ハイライト;
 
-    	public Par X0Y0_羽虫_眼右_基;
+    	public ShapePart X0Y0_羽虫_眼右_基;
 
-    	public Par X0Y0_羽虫_眼右_眼;
+    	public ShapePart X0Y0_羽虫_眼右_眼;
 
-    	public Par X0Y0_羽虫_眼右_ハイライト;
+    	public ShapePart X0Y0_羽虫_眼右_ハイライト;
 
-    	public Par X0Y0_紋柄_紋;
+    	public ShapePart X0Y0_紋柄_紋;
 
-    	public Par X0Y0_紋柄_紋左1;
+    	public ShapePart X0Y0_紋柄_紋左1;
 
-    	public Par X0Y0_紋柄_紋右1;
+    	public ShapePart X0Y0_紋柄_紋右1;
 
-    	public Par X0Y0_紋柄_紋左2;
+    	public ShapePart X0Y0_紋柄_紋左2;
 
-    	public Par X0Y0_紋柄_紋右2;
+    	public ShapePart X0Y0_紋柄_紋右2;
 
-    	public Par X0Y0_竜性_鱗1;
+    	public ShapePart X0Y0_竜性_鱗1;
 
-    	public Par X0Y0_竜性_鱗2;
+    	public ShapePart X0Y0_竜性_鱗2;
 
-    	public Par X0Y0_竜性_鱗3;
+    	public ShapePart X0Y0_竜性_鱗3;
 
-    	public Par X0Y0_馬柄_馬柄;
+    	public ShapePart X0Y0_馬柄_馬柄;
 
-    	public Par X0Y0_虫性_顎下;
+    	public ShapePart X0Y0_虫性_顎下;
 
     	public ColorD HeadCD;
 
@@ -1515,16 +1515,16 @@ namespace SlaveMatrix
     	private void 開顎(double Rate)
     	{
     		double y = 0.0003 * Rate;
-    		Par par = Sta.胴体["Head"][0][0]["頭"].ToPar();
-    		Par x0Y0_頭 = X0Y0_Head;
-    		x0Y0_頭.OP[0].ps[3] = par.OP[0].ps[3].AddY(y);
-    		x0Y0_頭.OP[0].ps[4] = par.OP[0].ps[4].AddY(y);
-    		x0Y0_頭.OP[1].ps[0] = par.OP[1].ps[0].AddY(y);
-    		x0Y0_頭.OP[1].ps[1] = par.OP[1].ps[1].AddY(y);
-    		x0Y0_頭.OP[1].ps[2] = par.OP[1].ps[2].AddY(y);
-    		x0Y0_頭.OP[1].ps[3] = par.OP[1].ps[3].AddY(y);
-    		x0Y0_頭.OP[2].ps[0] = par.OP[2].ps[0].AddY(y);
-    		x0Y0_頭.OP[2].ps[1] = par.OP[2].ps[1].AddY(y);
+    		ShapePart shapePart = Sta.胴体["Head"][0][0]["頭"].ToPar();
+    		ShapePart x0Y0_頭 = X0Y0_Head;
+    		x0Y0_頭.OP[0].ps[3] = shapePart.OP[0].ps[3].AddY(y);
+    		x0Y0_頭.OP[0].ps[4] = shapePart.OP[0].ps[4].AddY(y);
+    		x0Y0_頭.OP[1].ps[0] = shapePart.OP[1].ps[0].AddY(y);
+    		x0Y0_頭.OP[1].ps[1] = shapePart.OP[1].ps[1].AddY(y);
+    		x0Y0_頭.OP[1].ps[2] = shapePart.OP[1].ps[2].AddY(y);
+    		x0Y0_頭.OP[1].ps[3] = shapePart.OP[1].ps[3].AddY(y);
+    		x0Y0_頭.OP[2].ps[0] = shapePart.OP[2].ps[0].AddY(y);
+    		x0Y0_頭.OP[2].ps[1] = shapePart.OP[2].ps[1].AddY(y);
     	}
 
     	public void 開顎(口 口)

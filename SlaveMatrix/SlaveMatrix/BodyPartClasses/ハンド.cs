@@ -4,1167 +4,1167 @@ namespace SlaveMatrix
 {
     public class ハンド : Ele
     {
-    	public Par X0Y0_親指;
+    	public ShapePart X0Y0_親指;
 
-    	public Par X0Y0_手;
+    	public ShapePart X0Y0_手;
 
-    	public Par X0Y0_小指;
+    	public ShapePart X0Y0_小指;
 
-    	public Par X0Y0_薬指;
+    	public ShapePart X0Y0_薬指;
 
-    	public Par X0Y0_中指;
+    	public ShapePart X0Y0_中指;
 
-    	public Par X0Y0_人指;
+    	public ShapePart X0Y0_人指;
 
-    	public Par X0Y0_呪印_輪1_輪外;
+    	public ShapePart X0Y0_呪印_輪1_輪外;
 
-    	public Par X0Y0_呪印_輪1_輪内;
+    	public ShapePart X0Y0_呪印_輪1_輪内;
 
-    	public Par X0Y0_呪印_輪2_輪外;
+    	public ShapePart X0Y0_呪印_輪2_輪外;
 
-    	public Par X0Y0_呪印_輪2_輪内;
+    	public ShapePart X0Y0_呪印_輪2_輪内;
 
-    	public Par X0Y0_呪印_輪3_輪外;
+    	public ShapePart X0Y0_呪印_輪3_輪外;
 
-    	public Par X0Y0_呪印_輪3_輪内;
+    	public ShapePart X0Y0_呪印_輪3_輪内;
 
-    	public Par X0Y0_呪印_鎖1;
+    	public ShapePart X0Y0_呪印_鎖1;
 
-    	public Par X0Y0_呪印_鎖2;
+    	public ShapePart X0Y0_呪印_鎖2;
 
-    	public Par X0Y0_呪印_鎖3;
+    	public ShapePart X0Y0_呪印_鎖3;
 
-    	public Par X1Y0_親指;
+    	public ShapePart X1Y0_親指;
 
-    	public Par X1Y0_手;
+    	public ShapePart X1Y0_手;
 
-    	public Par X1Y0_小指;
+    	public ShapePart X1Y0_小指;
 
-    	public Par X1Y0_薬指;
+    	public ShapePart X1Y0_薬指;
 
-    	public Par X1Y0_中指;
+    	public ShapePart X1Y0_中指;
 
-    	public Par X1Y0_人指;
+    	public ShapePart X1Y0_人指;
 
-    	public Par X1Y0_呪印_輪1_輪外;
+    	public ShapePart X1Y0_呪印_輪1_輪外;
 
-    	public Par X1Y0_呪印_輪1_輪内;
+    	public ShapePart X1Y0_呪印_輪1_輪内;
 
-    	public Par X1Y0_呪印_輪2_輪外;
+    	public ShapePart X1Y0_呪印_輪2_輪外;
 
-    	public Par X1Y0_呪印_輪2_輪内;
+    	public ShapePart X1Y0_呪印_輪2_輪内;
 
-    	public Par X1Y0_呪印_輪3_輪外;
+    	public ShapePart X1Y0_呪印_輪3_輪外;
 
-    	public Par X1Y0_呪印_輪3_輪内;
+    	public ShapePart X1Y0_呪印_輪3_輪内;
 
-    	public Par X1Y0_呪印_鎖1;
+    	public ShapePart X1Y0_呪印_鎖1;
 
-    	public Par X1Y0_呪印_鎖2;
+    	public ShapePart X1Y0_呪印_鎖2;
 
-    	public Par X1Y0_呪印_鎖3;
+    	public ShapePart X1Y0_呪印_鎖3;
 
-    	public Par X2Y0_親指;
+    	public ShapePart X2Y0_親指;
 
-    	public Par X2Y0_手;
+    	public ShapePart X2Y0_手;
 
-    	public Par X2Y0_小指;
+    	public ShapePart X2Y0_小指;
 
-    	public Par X2Y0_薬指;
+    	public ShapePart X2Y0_薬指;
 
-    	public Par X2Y0_中指;
+    	public ShapePart X2Y0_中指;
 
-    	public Par X2Y0_人指;
+    	public ShapePart X2Y0_人指;
 
-    	public Par X2Y0_呪印_輪1_輪外;
+    	public ShapePart X2Y0_呪印_輪1_輪外;
 
-    	public Par X2Y0_呪印_輪1_輪内;
+    	public ShapePart X2Y0_呪印_輪1_輪内;
 
-    	public Par X2Y0_呪印_輪2_輪外;
+    	public ShapePart X2Y0_呪印_輪2_輪外;
 
-    	public Par X2Y0_呪印_輪2_輪内;
+    	public ShapePart X2Y0_呪印_輪2_輪内;
 
-    	public Par X2Y0_呪印_輪3_輪外;
+    	public ShapePart X2Y0_呪印_輪3_輪外;
 
-    	public Par X2Y0_呪印_輪3_輪内;
+    	public ShapePart X2Y0_呪印_輪3_輪内;
 
-    	public Par X2Y0_呪印_鎖1;
+    	public ShapePart X2Y0_呪印_鎖1;
 
-    	public Par X2Y0_呪印_鎖2;
+    	public ShapePart X2Y0_呪印_鎖2;
 
-    	public Par X2Y0_呪印_鎖3;
+    	public ShapePart X2Y0_呪印_鎖3;
 
-    	public Par X2Y1_親指;
+    	public ShapePart X2Y1_親指;
 
-    	public Par X2Y1_手;
+    	public ShapePart X2Y1_手;
 
-    	public Par X2Y1_小指;
+    	public ShapePart X2Y1_小指;
 
-    	public Par X2Y1_薬指;
+    	public ShapePart X2Y1_薬指;
 
-    	public Par X2Y1_中指;
+    	public ShapePart X2Y1_中指;
 
-    	public Par X2Y1_人指;
+    	public ShapePart X2Y1_人指;
 
-    	public Par X2Y1_呪印_輪1_輪外;
+    	public ShapePart X2Y1_呪印_輪1_輪外;
 
-    	public Par X2Y1_呪印_輪1_輪内;
+    	public ShapePart X2Y1_呪印_輪1_輪内;
 
-    	public Par X2Y1_呪印_輪2_輪外;
+    	public ShapePart X2Y1_呪印_輪2_輪外;
 
-    	public Par X2Y1_呪印_輪2_輪内;
+    	public ShapePart X2Y1_呪印_輪2_輪内;
 
-    	public Par X2Y1_呪印_輪3_輪外;
+    	public ShapePart X2Y1_呪印_輪3_輪外;
 
-    	public Par X2Y1_呪印_輪3_輪内;
+    	public ShapePart X2Y1_呪印_輪3_輪内;
 
-    	public Par X2Y1_呪印_鎖1;
+    	public ShapePart X2Y1_呪印_鎖1;
 
-    	public Par X2Y1_呪印_鎖2;
+    	public ShapePart X2Y1_呪印_鎖2;
 
-    	public Par X2Y1_呪印_鎖3;
+    	public ShapePart X2Y1_呪印_鎖3;
 
-    	public Par X2Y2_親指;
+    	public ShapePart X2Y2_親指;
 
-    	public Par X2Y2_手;
+    	public ShapePart X2Y2_手;
 
-    	public Par X2Y2_小指;
+    	public ShapePart X2Y2_小指;
 
-    	public Par X2Y2_薬指;
+    	public ShapePart X2Y2_薬指;
 
-    	public Par X2Y2_中指;
+    	public ShapePart X2Y2_中指;
 
-    	public Par X2Y2_人指;
+    	public ShapePart X2Y2_人指;
 
-    	public Par X2Y2_呪印_輪1_輪外;
+    	public ShapePart X2Y2_呪印_輪1_輪外;
 
-    	public Par X2Y2_呪印_輪1_輪内;
+    	public ShapePart X2Y2_呪印_輪1_輪内;
 
-    	public Par X2Y2_呪印_輪2_輪外;
+    	public ShapePart X2Y2_呪印_輪2_輪外;
 
-    	public Par X2Y2_呪印_輪2_輪内;
+    	public ShapePart X2Y2_呪印_輪2_輪内;
 
-    	public Par X2Y2_呪印_輪3_輪外;
+    	public ShapePart X2Y2_呪印_輪3_輪外;
 
-    	public Par X2Y2_呪印_輪3_輪内;
+    	public ShapePart X2Y2_呪印_輪3_輪内;
 
-    	public Par X2Y2_呪印_鎖1;
+    	public ShapePart X2Y2_呪印_鎖1;
 
-    	public Par X2Y2_呪印_鎖2;
+    	public ShapePart X2Y2_呪印_鎖2;
 
-    	public Par X2Y2_呪印_鎖3;
+    	public ShapePart X2Y2_呪印_鎖3;
 
-    	public Par X2Y3_親指;
+    	public ShapePart X2Y3_親指;
 
-    	public Par X2Y3_手;
+    	public ShapePart X2Y3_手;
 
-    	public Par X2Y3_小指;
+    	public ShapePart X2Y3_小指;
 
-    	public Par X2Y3_薬指;
+    	public ShapePart X2Y3_薬指;
 
-    	public Par X2Y3_中指;
+    	public ShapePart X2Y3_中指;
 
-    	public Par X2Y3_人指;
+    	public ShapePart X2Y3_人指;
 
-    	public Par X2Y3_呪印_輪1_輪外;
+    	public ShapePart X2Y3_呪印_輪1_輪外;
 
-    	public Par X2Y3_呪印_輪1_輪内;
+    	public ShapePart X2Y3_呪印_輪1_輪内;
 
-    	public Par X2Y3_呪印_輪2_輪外;
+    	public ShapePart X2Y3_呪印_輪2_輪外;
 
-    	public Par X2Y3_呪印_輪2_輪内;
+    	public ShapePart X2Y3_呪印_輪2_輪内;
 
-    	public Par X2Y3_呪印_輪3_輪外;
+    	public ShapePart X2Y3_呪印_輪3_輪外;
 
-    	public Par X2Y3_呪印_輪3_輪内;
+    	public ShapePart X2Y3_呪印_輪3_輪内;
 
-    	public Par X2Y3_呪印_鎖1;
+    	public ShapePart X2Y3_呪印_鎖1;
 
-    	public Par X2Y3_呪印_鎖2;
+    	public ShapePart X2Y3_呪印_鎖2;
 
-    	public Par X2Y3_呪印_鎖3;
+    	public ShapePart X2Y3_呪印_鎖3;
 
-    	public Par X2Y4_親指;
+    	public ShapePart X2Y4_親指;
 
-    	public Par X2Y4_手;
+    	public ShapePart X2Y4_手;
 
-    	public Par X2Y4_小指;
+    	public ShapePart X2Y4_小指;
 
-    	public Par X2Y4_薬指;
+    	public ShapePart X2Y4_薬指;
 
-    	public Par X2Y4_中指;
+    	public ShapePart X2Y4_中指;
 
-    	public Par X2Y4_人指;
+    	public ShapePart X2Y4_人指;
 
-    	public Par X2Y4_呪印_輪1_輪外;
+    	public ShapePart X2Y4_呪印_輪1_輪外;
 
-    	public Par X2Y4_呪印_輪1_輪内;
+    	public ShapePart X2Y4_呪印_輪1_輪内;
 
-    	public Par X2Y4_呪印_輪2_輪外;
+    	public ShapePart X2Y4_呪印_輪2_輪外;
 
-    	public Par X2Y4_呪印_輪2_輪内;
+    	public ShapePart X2Y4_呪印_輪2_輪内;
 
-    	public Par X2Y4_呪印_輪3_輪外;
+    	public ShapePart X2Y4_呪印_輪3_輪外;
 
-    	public Par X2Y4_呪印_輪3_輪内;
+    	public ShapePart X2Y4_呪印_輪3_輪内;
 
-    	public Par X2Y4_呪印_鎖1;
+    	public ShapePart X2Y4_呪印_鎖1;
 
-    	public Par X2Y4_呪印_鎖2;
+    	public ShapePart X2Y4_呪印_鎖2;
 
-    	public Par X2Y4_呪印_鎖3;
+    	public ShapePart X2Y4_呪印_鎖3;
 
-    	public Par X3Y0_親指;
+    	public ShapePart X3Y0_親指;
 
-    	public Par X3Y0_手;
+    	public ShapePart X3Y0_手;
 
-    	public Par X3Y0_小指;
+    	public ShapePart X3Y0_小指;
 
-    	public Par X3Y0_薬指;
+    	public ShapePart X3Y0_薬指;
 
-    	public Par X3Y0_中指;
+    	public ShapePart X3Y0_中指;
 
-    	public Par X3Y0_人指;
+    	public ShapePart X3Y0_人指;
 
-    	public Par X3Y0_呪印_輪1_輪外;
+    	public ShapePart X3Y0_呪印_輪1_輪外;
 
-    	public Par X3Y0_呪印_輪1_輪内;
+    	public ShapePart X3Y0_呪印_輪1_輪内;
 
-    	public Par X3Y0_呪印_輪2_輪外;
+    	public ShapePart X3Y0_呪印_輪2_輪外;
 
-    	public Par X3Y0_呪印_輪2_輪内;
+    	public ShapePart X3Y0_呪印_輪2_輪内;
 
-    	public Par X3Y0_呪印_輪3_輪外;
+    	public ShapePart X3Y0_呪印_輪3_輪外;
 
-    	public Par X3Y0_呪印_輪3_輪内;
+    	public ShapePart X3Y0_呪印_輪3_輪内;
 
-    	public Par X3Y0_呪印_鎖1;
+    	public ShapePart X3Y0_呪印_鎖1;
 
-    	public Par X3Y0_呪印_鎖2;
+    	public ShapePart X3Y0_呪印_鎖2;
 
-    	public Par X3Y0_呪印_鎖3;
+    	public ShapePart X3Y0_呪印_鎖3;
 
-    	public Par X4Y0_親指;
+    	public ShapePart X4Y0_親指;
 
-    	public Par X4Y0_手;
+    	public ShapePart X4Y0_手;
 
-    	public Par X4Y0_小指;
+    	public ShapePart X4Y0_小指;
 
-    	public Par X4Y0_薬指;
+    	public ShapePart X4Y0_薬指;
 
-    	public Par X4Y0_中指;
+    	public ShapePart X4Y0_中指;
 
-    	public Par X4Y0_人指;
+    	public ShapePart X4Y0_人指;
 
-    	public Par X4Y0_呪印_輪1_輪外;
+    	public ShapePart X4Y0_呪印_輪1_輪外;
 
-    	public Par X4Y0_呪印_輪1_輪内;
+    	public ShapePart X4Y0_呪印_輪1_輪内;
 
-    	public Par X4Y0_呪印_輪2_輪外;
+    	public ShapePart X4Y0_呪印_輪2_輪外;
 
-    	public Par X4Y0_呪印_輪2_輪内;
+    	public ShapePart X4Y0_呪印_輪2_輪内;
 
-    	public Par X4Y0_呪印_輪3_輪外;
+    	public ShapePart X4Y0_呪印_輪3_輪外;
 
-    	public Par X4Y0_呪印_輪3_輪内;
+    	public ShapePart X4Y0_呪印_輪3_輪内;
 
-    	public Par X4Y0_呪印_鎖1;
+    	public ShapePart X4Y0_呪印_鎖1;
 
-    	public Par X4Y0_呪印_鎖2;
+    	public ShapePart X4Y0_呪印_鎖2;
 
-    	public Par X4Y0_呪印_鎖3;
+    	public ShapePart X4Y0_呪印_鎖3;
 
-    	public Par X5Y0_親指;
+    	public ShapePart X5Y0_親指;
 
-    	public Par X5Y0_手;
+    	public ShapePart X5Y0_手;
 
-    	public Par X5Y0_小指;
+    	public ShapePart X5Y0_小指;
 
-    	public Par X5Y0_薬指;
+    	public ShapePart X5Y0_薬指;
 
-    	public Par X5Y0_中指;
+    	public ShapePart X5Y0_中指;
 
-    	public Par X5Y0_人指;
+    	public ShapePart X5Y0_人指;
 
-    	public Par X5Y0_呪印_輪1_輪外;
+    	public ShapePart X5Y0_呪印_輪1_輪外;
 
-    	public Par X5Y0_呪印_輪1_輪内;
+    	public ShapePart X5Y0_呪印_輪1_輪内;
 
-    	public Par X5Y0_呪印_輪2_輪外;
+    	public ShapePart X5Y0_呪印_輪2_輪外;
 
-    	public Par X5Y0_呪印_輪2_輪内;
+    	public ShapePart X5Y0_呪印_輪2_輪内;
 
-    	public Par X5Y0_呪印_輪3_輪外;
+    	public ShapePart X5Y0_呪印_輪3_輪外;
 
-    	public Par X5Y0_呪印_輪3_輪内;
+    	public ShapePart X5Y0_呪印_輪3_輪内;
 
-    	public Par X5Y0_呪印_鎖1;
+    	public ShapePart X5Y0_呪印_鎖1;
 
-    	public Par X5Y0_呪印_鎖2;
+    	public ShapePart X5Y0_呪印_鎖2;
 
-    	public Par X5Y0_呪印_鎖3;
+    	public ShapePart X5Y0_呪印_鎖3;
 
-    	public Par X5Y1_親指;
+    	public ShapePart X5Y1_親指;
 
-    	public Par X5Y1_手;
+    	public ShapePart X5Y1_手;
 
-    	public Par X5Y1_小指;
+    	public ShapePart X5Y1_小指;
 
-    	public Par X5Y1_薬指;
+    	public ShapePart X5Y1_薬指;
 
-    	public Par X5Y1_中指;
+    	public ShapePart X5Y1_中指;
 
-    	public Par X5Y1_人指;
+    	public ShapePart X5Y1_人指;
 
-    	public Par X5Y1_呪印_輪1_輪外;
+    	public ShapePart X5Y1_呪印_輪1_輪外;
 
-    	public Par X5Y1_呪印_輪1_輪内;
+    	public ShapePart X5Y1_呪印_輪1_輪内;
 
-    	public Par X5Y1_呪印_輪2_輪外;
+    	public ShapePart X5Y1_呪印_輪2_輪外;
 
-    	public Par X5Y1_呪印_輪2_輪内;
+    	public ShapePart X5Y1_呪印_輪2_輪内;
 
-    	public Par X5Y1_呪印_輪3_輪外;
+    	public ShapePart X5Y1_呪印_輪3_輪外;
 
-    	public Par X5Y1_呪印_輪3_輪内;
+    	public ShapePart X5Y1_呪印_輪3_輪内;
 
-    	public Par X5Y1_呪印_鎖1;
+    	public ShapePart X5Y1_呪印_鎖1;
 
-    	public Par X5Y1_呪印_鎖2;
+    	public ShapePart X5Y1_呪印_鎖2;
 
-    	public Par X5Y1_呪印_鎖3;
+    	public ShapePart X5Y1_呪印_鎖3;
 
-    	public Par X5Y2_親指;
+    	public ShapePart X5Y2_親指;
 
-    	public Par X5Y2_手;
+    	public ShapePart X5Y2_手;
 
-    	public Par X5Y2_小指;
+    	public ShapePart X5Y2_小指;
 
-    	public Par X5Y2_薬指;
+    	public ShapePart X5Y2_薬指;
 
-    	public Par X5Y2_中指;
+    	public ShapePart X5Y2_中指;
 
-    	public Par X5Y2_人指;
+    	public ShapePart X5Y2_人指;
 
-    	public Par X5Y2_呪印_輪1_輪外;
+    	public ShapePart X5Y2_呪印_輪1_輪外;
 
-    	public Par X5Y2_呪印_輪1_輪内;
+    	public ShapePart X5Y2_呪印_輪1_輪内;
 
-    	public Par X5Y2_呪印_輪2_輪外;
+    	public ShapePart X5Y2_呪印_輪2_輪外;
 
-    	public Par X5Y2_呪印_輪2_輪内;
+    	public ShapePart X5Y2_呪印_輪2_輪内;
 
-    	public Par X5Y2_呪印_輪3_輪外;
+    	public ShapePart X5Y2_呪印_輪3_輪外;
 
-    	public Par X5Y2_呪印_輪3_輪内;
+    	public ShapePart X5Y2_呪印_輪3_輪内;
 
-    	public Par X5Y2_呪印_鎖1;
+    	public ShapePart X5Y2_呪印_鎖1;
 
-    	public Par X5Y2_呪印_鎖2;
+    	public ShapePart X5Y2_呪印_鎖2;
 
-    	public Par X5Y2_呪印_鎖3;
+    	public ShapePart X5Y2_呪印_鎖3;
 
-    	public Par X5Y3_親指;
+    	public ShapePart X5Y3_親指;
 
-    	public Par X5Y3_手;
+    	public ShapePart X5Y3_手;
 
-    	public Par X5Y3_小指;
+    	public ShapePart X5Y3_小指;
 
-    	public Par X5Y3_薬指;
+    	public ShapePart X5Y3_薬指;
 
-    	public Par X5Y3_中指;
+    	public ShapePart X5Y3_中指;
 
-    	public Par X5Y3_人指;
+    	public ShapePart X5Y3_人指;
 
-    	public Par X5Y3_呪印_輪1_輪外;
+    	public ShapePart X5Y3_呪印_輪1_輪外;
 
-    	public Par X5Y3_呪印_輪1_輪内;
+    	public ShapePart X5Y3_呪印_輪1_輪内;
 
-    	public Par X5Y3_呪印_輪2_輪外;
+    	public ShapePart X5Y3_呪印_輪2_輪外;
 
-    	public Par X5Y3_呪印_輪2_輪内;
+    	public ShapePart X5Y3_呪印_輪2_輪内;
 
-    	public Par X5Y3_呪印_輪3_輪外;
+    	public ShapePart X5Y3_呪印_輪3_輪外;
 
-    	public Par X5Y3_呪印_輪3_輪内;
+    	public ShapePart X5Y3_呪印_輪3_輪内;
 
-    	public Par X5Y3_呪印_鎖1;
+    	public ShapePart X5Y3_呪印_鎖1;
 
-    	public Par X5Y3_呪印_鎖2;
+    	public ShapePart X5Y3_呪印_鎖2;
 
-    	public Par X5Y3_呪印_鎖3;
+    	public ShapePart X5Y3_呪印_鎖3;
 
-    	public Par X5Y4_親指;
+    	public ShapePart X5Y4_親指;
 
-    	public Par X5Y4_手;
+    	public ShapePart X5Y4_手;
 
-    	public Par X5Y4_小指;
+    	public ShapePart X5Y4_小指;
 
-    	public Par X5Y4_薬指;
+    	public ShapePart X5Y4_薬指;
 
-    	public Par X5Y4_中指;
+    	public ShapePart X5Y4_中指;
 
-    	public Par X5Y4_人指;
+    	public ShapePart X5Y4_人指;
 
-    	public Par X5Y4_呪印_輪1_輪外;
+    	public ShapePart X5Y4_呪印_輪1_輪外;
 
-    	public Par X5Y4_呪印_輪1_輪内;
+    	public ShapePart X5Y4_呪印_輪1_輪内;
 
-    	public Par X5Y4_呪印_輪2_輪外;
+    	public ShapePart X5Y4_呪印_輪2_輪外;
 
-    	public Par X5Y4_呪印_輪2_輪内;
+    	public ShapePart X5Y4_呪印_輪2_輪内;
 
-    	public Par X5Y4_呪印_輪3_輪外;
+    	public ShapePart X5Y4_呪印_輪3_輪外;
 
-    	public Par X5Y4_呪印_輪3_輪内;
+    	public ShapePart X5Y4_呪印_輪3_輪内;
 
-    	public Par X5Y4_呪印_鎖1;
+    	public ShapePart X5Y4_呪印_鎖1;
 
-    	public Par X5Y4_呪印_鎖2;
+    	public ShapePart X5Y4_呪印_鎖2;
 
-    	public Par X5Y4_呪印_鎖3;
+    	public ShapePart X5Y4_呪印_鎖3;
 
-    	public Par X6Y0_親指;
+    	public ShapePart X6Y0_親指;
 
-    	public Par X6Y0_手;
+    	public ShapePart X6Y0_手;
 
-    	public Par X6Y0_小指;
+    	public ShapePart X6Y0_小指;
 
-    	public Par X6Y0_薬指;
+    	public ShapePart X6Y0_薬指;
 
-    	public Par X6Y0_中指;
+    	public ShapePart X6Y0_中指;
 
-    	public Par X6Y0_人指;
+    	public ShapePart X6Y0_人指;
 
-    	public Par X6Y0_呪印_輪1_輪外;
+    	public ShapePart X6Y0_呪印_輪1_輪外;
 
-    	public Par X6Y0_呪印_輪1_輪内;
+    	public ShapePart X6Y0_呪印_輪1_輪内;
 
-    	public Par X6Y0_呪印_輪2_輪外;
+    	public ShapePart X6Y0_呪印_輪2_輪外;
 
-    	public Par X6Y0_呪印_輪2_輪内;
+    	public ShapePart X6Y0_呪印_輪2_輪内;
 
-    	public Par X6Y0_呪印_輪3_輪外;
+    	public ShapePart X6Y0_呪印_輪3_輪外;
 
-    	public Par X6Y0_呪印_輪3_輪内;
+    	public ShapePart X6Y0_呪印_輪3_輪内;
 
-    	public Par X6Y0_呪印_鎖1;
+    	public ShapePart X6Y0_呪印_鎖1;
 
-    	public Par X6Y0_呪印_鎖2;
+    	public ShapePart X6Y0_呪印_鎖2;
 
-    	public Par X6Y0_呪印_鎖3;
+    	public ShapePart X6Y0_呪印_鎖3;
 
-    	public Par X6Y1_親指;
+    	public ShapePart X6Y1_親指;
 
-    	public Par X6Y1_手;
+    	public ShapePart X6Y1_手;
 
-    	public Par X6Y1_小指;
+    	public ShapePart X6Y1_小指;
 
-    	public Par X6Y1_薬指;
+    	public ShapePart X6Y1_薬指;
 
-    	public Par X6Y1_中指;
+    	public ShapePart X6Y1_中指;
 
-    	public Par X6Y1_人指;
+    	public ShapePart X6Y1_人指;
 
-    	public Par X6Y1_呪印_輪1_輪外;
+    	public ShapePart X6Y1_呪印_輪1_輪外;
 
-    	public Par X6Y1_呪印_輪1_輪内;
+    	public ShapePart X6Y1_呪印_輪1_輪内;
 
-    	public Par X6Y1_呪印_輪2_輪外;
+    	public ShapePart X6Y1_呪印_輪2_輪外;
 
-    	public Par X6Y1_呪印_輪2_輪内;
+    	public ShapePart X6Y1_呪印_輪2_輪内;
 
-    	public Par X6Y1_呪印_輪3_輪外;
+    	public ShapePart X6Y1_呪印_輪3_輪外;
 
-    	public Par X6Y1_呪印_輪3_輪内;
+    	public ShapePart X6Y1_呪印_輪3_輪内;
 
-    	public Par X6Y1_呪印_鎖1;
+    	public ShapePart X6Y1_呪印_鎖1;
 
-    	public Par X6Y1_呪印_鎖2;
+    	public ShapePart X6Y1_呪印_鎖2;
 
-    	public Par X6Y1_呪印_鎖3;
+    	public ShapePart X6Y1_呪印_鎖3;
 
-    	public Par X6Y2_親指;
+    	public ShapePart X6Y2_親指;
 
-    	public Par X6Y2_手;
+    	public ShapePart X6Y2_手;
 
-    	public Par X6Y2_小指;
+    	public ShapePart X6Y2_小指;
 
-    	public Par X6Y2_薬指;
+    	public ShapePart X6Y2_薬指;
 
-    	public Par X6Y2_中指;
+    	public ShapePart X6Y2_中指;
 
-    	public Par X6Y2_人指;
+    	public ShapePart X6Y2_人指;
 
-    	public Par X6Y2_呪印_輪1_輪外;
+    	public ShapePart X6Y2_呪印_輪1_輪外;
 
-    	public Par X6Y2_呪印_輪1_輪内;
+    	public ShapePart X6Y2_呪印_輪1_輪内;
 
-    	public Par X6Y2_呪印_輪2_輪外;
+    	public ShapePart X6Y2_呪印_輪2_輪外;
 
-    	public Par X6Y2_呪印_輪2_輪内;
+    	public ShapePart X6Y2_呪印_輪2_輪内;
 
-    	public Par X6Y2_呪印_輪3_輪外;
+    	public ShapePart X6Y2_呪印_輪3_輪外;
 
-    	public Par X6Y2_呪印_輪3_輪内;
+    	public ShapePart X6Y2_呪印_輪3_輪内;
 
-    	public Par X6Y2_呪印_鎖1;
+    	public ShapePart X6Y2_呪印_鎖1;
 
-    	public Par X6Y2_呪印_鎖2;
+    	public ShapePart X6Y2_呪印_鎖2;
 
-    	public Par X6Y2_呪印_鎖3;
+    	public ShapePart X6Y2_呪印_鎖3;
 
-    	public Par X6Y3_親指;
+    	public ShapePart X6Y3_親指;
 
-    	public Par X6Y3_手;
+    	public ShapePart X6Y3_手;
 
-    	public Par X6Y3_小指;
+    	public ShapePart X6Y3_小指;
 
-    	public Par X6Y3_薬指;
+    	public ShapePart X6Y3_薬指;
 
-    	public Par X6Y3_中指;
+    	public ShapePart X6Y3_中指;
 
-    	public Par X6Y3_人指;
+    	public ShapePart X6Y3_人指;
 
-    	public Par X6Y3_呪印_輪1_輪外;
+    	public ShapePart X6Y3_呪印_輪1_輪外;
 
-    	public Par X6Y3_呪印_輪1_輪内;
+    	public ShapePart X6Y3_呪印_輪1_輪内;
 
-    	public Par X6Y3_呪印_輪2_輪外;
+    	public ShapePart X6Y3_呪印_輪2_輪外;
 
-    	public Par X6Y3_呪印_輪2_輪内;
+    	public ShapePart X6Y3_呪印_輪2_輪内;
 
-    	public Par X6Y3_呪印_輪3_輪外;
+    	public ShapePart X6Y3_呪印_輪3_輪外;
 
-    	public Par X6Y3_呪印_輪3_輪内;
+    	public ShapePart X6Y3_呪印_輪3_輪内;
 
-    	public Par X6Y3_呪印_鎖1;
+    	public ShapePart X6Y3_呪印_鎖1;
 
-    	public Par X6Y3_呪印_鎖2;
+    	public ShapePart X6Y3_呪印_鎖2;
 
-    	public Par X6Y3_呪印_鎖3;
+    	public ShapePart X6Y3_呪印_鎖3;
 
-    	public Par X6Y4_親指;
+    	public ShapePart X6Y4_親指;
 
-    	public Par X6Y4_手;
+    	public ShapePart X6Y4_手;
 
-    	public Par X6Y4_小指;
+    	public ShapePart X6Y4_小指;
 
-    	public Par X6Y4_薬指;
+    	public ShapePart X6Y4_薬指;
 
-    	public Par X6Y4_中指;
+    	public ShapePart X6Y4_中指;
 
-    	public Par X6Y4_人指;
+    	public ShapePart X6Y4_人指;
 
-    	public Par X6Y4_呪印_輪1_輪外;
+    	public ShapePart X6Y4_呪印_輪1_輪外;
 
-    	public Par X6Y4_呪印_輪1_輪内;
+    	public ShapePart X6Y4_呪印_輪1_輪内;
 
-    	public Par X6Y4_呪印_輪2_輪外;
+    	public ShapePart X6Y4_呪印_輪2_輪外;
 
-    	public Par X6Y4_呪印_輪2_輪内;
+    	public ShapePart X6Y4_呪印_輪2_輪内;
 
-    	public Par X6Y4_呪印_輪3_輪外;
+    	public ShapePart X6Y4_呪印_輪3_輪外;
 
-    	public Par X6Y4_呪印_輪3_輪内;
+    	public ShapePart X6Y4_呪印_輪3_輪内;
 
-    	public Par X6Y4_呪印_鎖1;
+    	public ShapePart X6Y4_呪印_鎖1;
 
-    	public Par X6Y4_呪印_鎖2;
+    	public ShapePart X6Y4_呪印_鎖2;
 
-    	public Par X6Y4_呪印_鎖3;
+    	public ShapePart X6Y4_呪印_鎖3;
 
-    	public Par X7Y0_小指;
+    	public ShapePart X7Y0_小指;
 
-    	public Par X7Y0_薬指;
+    	public ShapePart X7Y0_薬指;
 
-    	public Par X7Y0_中指;
+    	public ShapePart X7Y0_中指;
 
-    	public Par X7Y0_親指;
+    	public ShapePart X7Y0_親指;
 
-    	public Par X7Y0_手;
+    	public ShapePart X7Y0_手;
 
-    	public Par X7Y0_人指;
+    	public ShapePart X7Y0_人指;
 
-    	public Par X7Y0_呪印_輪1_輪外;
+    	public ShapePart X7Y0_呪印_輪1_輪外;
 
-    	public Par X7Y0_呪印_輪1_輪内;
+    	public ShapePart X7Y0_呪印_輪1_輪内;
 
-    	public Par X7Y0_呪印_輪2_輪外;
+    	public ShapePart X7Y0_呪印_輪2_輪外;
 
-    	public Par X7Y0_呪印_輪2_輪内;
+    	public ShapePart X7Y0_呪印_輪2_輪内;
 
-    	public Par X7Y0_呪印_輪3_輪外;
+    	public ShapePart X7Y0_呪印_輪3_輪外;
 
-    	public Par X7Y0_呪印_輪3_輪内;
+    	public ShapePart X7Y0_呪印_輪3_輪内;
 
-    	public Par X7Y0_呪印_鎖1;
+    	public ShapePart X7Y0_呪印_鎖1;
 
-    	public Par X7Y0_呪印_鎖2;
+    	public ShapePart X7Y0_呪印_鎖2;
 
-    	public Par X7Y0_呪印_鎖3;
+    	public ShapePart X7Y0_呪印_鎖3;
 
-    	public Par X7Y1_小指;
+    	public ShapePart X7Y1_小指;
 
-    	public Par X7Y1_薬指;
+    	public ShapePart X7Y1_薬指;
 
-    	public Par X7Y1_中指;
+    	public ShapePart X7Y1_中指;
 
-    	public Par X7Y1_親指;
+    	public ShapePart X7Y1_親指;
 
-    	public Par X7Y1_手;
+    	public ShapePart X7Y1_手;
 
-    	public Par X7Y1_人指;
+    	public ShapePart X7Y1_人指;
 
-    	public Par X7Y1_呪印_輪1_輪外;
+    	public ShapePart X7Y1_呪印_輪1_輪外;
 
-    	public Par X7Y1_呪印_輪1_輪内;
+    	public ShapePart X7Y1_呪印_輪1_輪内;
 
-    	public Par X7Y1_呪印_輪2_輪外;
+    	public ShapePart X7Y1_呪印_輪2_輪外;
 
-    	public Par X7Y1_呪印_輪2_輪内;
+    	public ShapePart X7Y1_呪印_輪2_輪内;
 
-    	public Par X7Y1_呪印_輪3_輪外;
+    	public ShapePart X7Y1_呪印_輪3_輪外;
 
-    	public Par X7Y1_呪印_輪3_輪内;
+    	public ShapePart X7Y1_呪印_輪3_輪内;
 
-    	public Par X7Y1_呪印_鎖1;
+    	public ShapePart X7Y1_呪印_鎖1;
 
-    	public Par X7Y1_呪印_鎖2;
+    	public ShapePart X7Y1_呪印_鎖2;
 
-    	public Par X7Y1_呪印_鎖3;
+    	public ShapePart X7Y1_呪印_鎖3;
 
-    	public Par X7Y2_小指;
+    	public ShapePart X7Y2_小指;
 
-    	public Par X7Y2_薬指;
+    	public ShapePart X7Y2_薬指;
 
-    	public Par X7Y2_中指;
+    	public ShapePart X7Y2_中指;
 
-    	public Par X7Y2_親指;
+    	public ShapePart X7Y2_親指;
 
-    	public Par X7Y2_手;
+    	public ShapePart X7Y2_手;
 
-    	public Par X7Y2_人指;
+    	public ShapePart X7Y2_人指;
 
-    	public Par X7Y2_呪印_輪1_輪外;
+    	public ShapePart X7Y2_呪印_輪1_輪外;
 
-    	public Par X7Y2_呪印_輪1_輪内;
+    	public ShapePart X7Y2_呪印_輪1_輪内;
 
-    	public Par X7Y2_呪印_輪2_輪外;
+    	public ShapePart X7Y2_呪印_輪2_輪外;
 
-    	public Par X7Y2_呪印_輪2_輪内;
+    	public ShapePart X7Y2_呪印_輪2_輪内;
 
-    	public Par X7Y2_呪印_輪3_輪外;
+    	public ShapePart X7Y2_呪印_輪3_輪外;
 
-    	public Par X7Y2_呪印_輪3_輪内;
+    	public ShapePart X7Y2_呪印_輪3_輪内;
 
-    	public Par X7Y2_呪印_鎖1;
+    	public ShapePart X7Y2_呪印_鎖1;
 
-    	public Par X7Y2_呪印_鎖2;
+    	public ShapePart X7Y2_呪印_鎖2;
 
-    	public Par X7Y2_呪印_鎖3;
+    	public ShapePart X7Y2_呪印_鎖3;
 
-    	public Par X7Y3_小指;
+    	public ShapePart X7Y3_小指;
 
-    	public Par X7Y3_薬指;
+    	public ShapePart X7Y3_薬指;
 
-    	public Par X7Y3_中指;
+    	public ShapePart X7Y3_中指;
 
-    	public Par X7Y3_親指;
+    	public ShapePart X7Y3_親指;
 
-    	public Par X7Y3_手;
+    	public ShapePart X7Y3_手;
 
-    	public Par X7Y3_人指;
+    	public ShapePart X7Y3_人指;
 
-    	public Par X7Y3_呪印_輪1_輪外;
+    	public ShapePart X7Y3_呪印_輪1_輪外;
 
-    	public Par X7Y3_呪印_輪1_輪内;
+    	public ShapePart X7Y3_呪印_輪1_輪内;
 
-    	public Par X7Y3_呪印_輪2_輪外;
+    	public ShapePart X7Y3_呪印_輪2_輪外;
 
-    	public Par X7Y3_呪印_輪2_輪内;
+    	public ShapePart X7Y3_呪印_輪2_輪内;
 
-    	public Par X7Y3_呪印_輪3_輪外;
+    	public ShapePart X7Y3_呪印_輪3_輪外;
 
-    	public Par X7Y3_呪印_輪3_輪内;
+    	public ShapePart X7Y3_呪印_輪3_輪内;
 
-    	public Par X7Y3_呪印_鎖1;
+    	public ShapePart X7Y3_呪印_鎖1;
 
-    	public Par X7Y3_呪印_鎖2;
+    	public ShapePart X7Y3_呪印_鎖2;
 
-    	public Par X7Y3_呪印_鎖3;
+    	public ShapePart X7Y3_呪印_鎖3;
 
-    	public Par X7Y4_小指;
+    	public ShapePart X7Y4_小指;
 
-    	public Par X7Y4_薬指;
+    	public ShapePart X7Y4_薬指;
 
-    	public Par X7Y4_中指;
+    	public ShapePart X7Y4_中指;
 
-    	public Par X7Y4_親指;
+    	public ShapePart X7Y4_親指;
 
-    	public Par X7Y4_手;
+    	public ShapePart X7Y4_手;
 
-    	public Par X7Y4_人指;
+    	public ShapePart X7Y4_人指;
 
-    	public Par X7Y4_呪印_輪1_輪外;
+    	public ShapePart X7Y4_呪印_輪1_輪外;
 
-    	public Par X7Y4_呪印_輪1_輪内;
+    	public ShapePart X7Y4_呪印_輪1_輪内;
 
-    	public Par X7Y4_呪印_輪2_輪外;
+    	public ShapePart X7Y4_呪印_輪2_輪外;
 
-    	public Par X7Y4_呪印_輪2_輪内;
+    	public ShapePart X7Y4_呪印_輪2_輪内;
 
-    	public Par X7Y4_呪印_輪3_輪外;
+    	public ShapePart X7Y4_呪印_輪3_輪外;
 
-    	public Par X7Y4_呪印_輪3_輪内;
+    	public ShapePart X7Y4_呪印_輪3_輪内;
 
-    	public Par X7Y4_呪印_鎖1;
+    	public ShapePart X7Y4_呪印_鎖1;
 
-    	public Par X7Y4_呪印_鎖2;
+    	public ShapePart X7Y4_呪印_鎖2;
 
-    	public Par X7Y4_呪印_鎖3;
+    	public ShapePart X7Y4_呪印_鎖3;
 
-    	public Par X8Y0_手;
+    	public ShapePart X8Y0_手;
 
-    	public Par X8Y0_小指;
+    	public ShapePart X8Y0_小指;
 
-    	public Par X8Y0_薬指;
+    	public ShapePart X8Y0_薬指;
 
-    	public Par X8Y0_中指;
+    	public ShapePart X8Y0_中指;
 
-    	public Par X8Y0_人指;
+    	public ShapePart X8Y0_人指;
 
-    	public Par X8Y0_親指;
+    	public ShapePart X8Y0_親指;
 
-    	public Par X8Y1_手;
+    	public ShapePart X8Y1_手;
 
-    	public Par X8Y1_小指;
+    	public ShapePart X8Y1_小指;
 
-    	public Par X8Y1_薬指;
+    	public ShapePart X8Y1_薬指;
 
-    	public Par X8Y1_中指;
+    	public ShapePart X8Y1_中指;
 
-    	public Par X8Y1_人指;
+    	public ShapePart X8Y1_人指;
 
-    	public Par X8Y1_親指;
+    	public ShapePart X8Y1_親指;
 
-    	public Par X8Y2_手;
+    	public ShapePart X8Y2_手;
 
-    	public Par X8Y2_小指;
+    	public ShapePart X8Y2_小指;
 
-    	public Par X8Y2_薬指;
+    	public ShapePart X8Y2_薬指;
 
-    	public Par X8Y2_中指;
+    	public ShapePart X8Y2_中指;
 
-    	public Par X8Y2_人指;
+    	public ShapePart X8Y2_人指;
 
-    	public Par X8Y2_親指;
+    	public ShapePart X8Y2_親指;
 
-    	public Par X8Y3_手;
+    	public ShapePart X8Y3_手;
 
-    	public Par X8Y3_小指;
+    	public ShapePart X8Y3_小指;
 
-    	public Par X8Y3_薬指;
+    	public ShapePart X8Y3_薬指;
 
-    	public Par X8Y3_中指;
+    	public ShapePart X8Y3_中指;
 
-    	public Par X8Y3_人指;
+    	public ShapePart X8Y3_人指;
 
-    	public Par X8Y3_親指;
+    	public ShapePart X8Y3_親指;
 
-    	public Par X8Y4_手;
+    	public ShapePart X8Y4_手;
 
-    	public Par X8Y4_小指;
+    	public ShapePart X8Y4_小指;
 
-    	public Par X8Y4_薬指;
+    	public ShapePart X8Y4_薬指;
 
-    	public Par X8Y4_中指;
+    	public ShapePart X8Y4_中指;
 
-    	public Par X8Y4_人指;
+    	public ShapePart X8Y4_人指;
 
-    	public Par X8Y4_親指;
+    	public ShapePart X8Y4_親指;
 
-    	public Par X9Y0_手;
+    	public ShapePart X9Y0_手;
 
-    	public Par X9Y0_小指;
+    	public ShapePart X9Y0_小指;
 
-    	public Par X9Y0_薬指;
+    	public ShapePart X9Y0_薬指;
 
-    	public Par X9Y0_中指;
+    	public ShapePart X9Y0_中指;
 
-    	public Par X9Y0_人指;
+    	public ShapePart X9Y0_人指;
 
-    	public Par X9Y0_親指;
+    	public ShapePart X9Y0_親指;
 
-    	public Par X9Y1_手;
+    	public ShapePart X9Y1_手;
 
-    	public Par X9Y1_小指;
+    	public ShapePart X9Y1_小指;
 
-    	public Par X9Y1_薬指;
+    	public ShapePart X9Y1_薬指;
 
-    	public Par X9Y1_中指;
+    	public ShapePart X9Y1_中指;
 
-    	public Par X9Y1_人指;
+    	public ShapePart X9Y1_人指;
 
-    	public Par X9Y1_親指;
+    	public ShapePart X9Y1_親指;
 
-    	public Par X9Y2_手;
+    	public ShapePart X9Y2_手;
 
-    	public Par X9Y2_小指;
+    	public ShapePart X9Y2_小指;
 
-    	public Par X9Y2_薬指;
+    	public ShapePart X9Y2_薬指;
 
-    	public Par X9Y2_中指;
+    	public ShapePart X9Y2_中指;
 
-    	public Par X9Y2_人指;
+    	public ShapePart X9Y2_人指;
 
-    	public Par X9Y2_親指;
+    	public ShapePart X9Y2_親指;
 
-    	public Par X9Y3_手;
+    	public ShapePart X9Y3_手;
 
-    	public Par X9Y3_小指;
+    	public ShapePart X9Y3_小指;
 
-    	public Par X9Y3_薬指;
+    	public ShapePart X9Y3_薬指;
 
-    	public Par X9Y3_中指;
+    	public ShapePart X9Y3_中指;
 
-    	public Par X9Y3_人指;
+    	public ShapePart X9Y3_人指;
 
-    	public Par X9Y3_親指;
+    	public ShapePart X9Y3_親指;
 
-    	public Par X9Y4_手;
+    	public ShapePart X9Y4_手;
 
-    	public Par X9Y4_小指;
+    	public ShapePart X9Y4_小指;
 
-    	public Par X9Y4_薬指;
+    	public ShapePart X9Y4_薬指;
 
-    	public Par X9Y4_中指;
+    	public ShapePart X9Y4_中指;
 
-    	public Par X9Y4_人指;
+    	public ShapePart X9Y4_人指;
 
-    	public Par X9Y4_親指;
+    	public ShapePart X9Y4_親指;
 
-    	public Par X10Y0_親指;
+    	public ShapePart X10Y0_親指;
 
-    	public Par X10Y0_手;
+    	public ShapePart X10Y0_手;
 
-    	public Par X10Y0_小指;
+    	public ShapePart X10Y0_小指;
 
-    	public Par X10Y0_薬指;
+    	public ShapePart X10Y0_薬指;
 
-    	public Par X10Y0_中指;
+    	public ShapePart X10Y0_中指;
 
-    	public Par X10Y0_人指;
+    	public ShapePart X10Y0_人指;
 
-    	public Par X10Y0_呪印_輪1_輪外;
+    	public ShapePart X10Y0_呪印_輪1_輪外;
 
-    	public Par X10Y0_呪印_輪1_輪内;
+    	public ShapePart X10Y0_呪印_輪1_輪内;
 
-    	public Par X10Y0_呪印_輪2_輪外;
+    	public ShapePart X10Y0_呪印_輪2_輪外;
 
-    	public Par X10Y0_呪印_輪2_輪内;
+    	public ShapePart X10Y0_呪印_輪2_輪内;
 
-    	public Par X10Y0_呪印_輪3_輪外;
+    	public ShapePart X10Y0_呪印_輪3_輪外;
 
-    	public Par X10Y0_呪印_輪3_輪内;
+    	public ShapePart X10Y0_呪印_輪3_輪内;
 
-    	public Par X10Y0_呪印_鎖1;
+    	public ShapePart X10Y0_呪印_鎖1;
 
-    	public Par X10Y0_呪印_鎖2;
+    	public ShapePart X10Y0_呪印_鎖2;
 
-    	public Par X10Y0_呪印_鎖3;
+    	public ShapePart X10Y0_呪印_鎖3;
 
-    	public Par X10Y1_親指;
+    	public ShapePart X10Y1_親指;
 
-    	public Par X10Y1_手;
+    	public ShapePart X10Y1_手;
 
-    	public Par X10Y1_小指;
+    	public ShapePart X10Y1_小指;
 
-    	public Par X10Y1_薬指;
+    	public ShapePart X10Y1_薬指;
 
-    	public Par X10Y1_中指;
+    	public ShapePart X10Y1_中指;
 
-    	public Par X10Y1_人指;
+    	public ShapePart X10Y1_人指;
 
-    	public Par X10Y1_呪印_輪1_輪外;
+    	public ShapePart X10Y1_呪印_輪1_輪外;
 
-    	public Par X10Y1_呪印_輪1_輪内;
+    	public ShapePart X10Y1_呪印_輪1_輪内;
 
-    	public Par X10Y1_呪印_輪2_輪外;
+    	public ShapePart X10Y1_呪印_輪2_輪外;
 
-    	public Par X10Y1_呪印_輪2_輪内;
+    	public ShapePart X10Y1_呪印_輪2_輪内;
 
-    	public Par X10Y1_呪印_輪3_輪外;
+    	public ShapePart X10Y1_呪印_輪3_輪外;
 
-    	public Par X10Y1_呪印_輪3_輪内;
+    	public ShapePart X10Y1_呪印_輪3_輪内;
 
-    	public Par X10Y1_呪印_鎖1;
+    	public ShapePart X10Y1_呪印_鎖1;
 
-    	public Par X10Y1_呪印_鎖2;
+    	public ShapePart X10Y1_呪印_鎖2;
 
-    	public Par X10Y1_呪印_鎖3;
+    	public ShapePart X10Y1_呪印_鎖3;
 
-    	public Par X10Y2_親指;
+    	public ShapePart X10Y2_親指;
 
-    	public Par X10Y2_手;
+    	public ShapePart X10Y2_手;
 
-    	public Par X10Y2_小指;
+    	public ShapePart X10Y2_小指;
 
-    	public Par X10Y2_薬指;
+    	public ShapePart X10Y2_薬指;
 
-    	public Par X10Y2_中指;
+    	public ShapePart X10Y2_中指;
 
-    	public Par X10Y2_人指;
+    	public ShapePart X10Y2_人指;
 
-    	public Par X10Y2_呪印_輪1_輪外;
+    	public ShapePart X10Y2_呪印_輪1_輪外;
 
-    	public Par X10Y2_呪印_輪1_輪内;
+    	public ShapePart X10Y2_呪印_輪1_輪内;
 
-    	public Par X10Y2_呪印_輪2_輪外;
+    	public ShapePart X10Y2_呪印_輪2_輪外;
 
-    	public Par X10Y2_呪印_輪2_輪内;
+    	public ShapePart X10Y2_呪印_輪2_輪内;
 
-    	public Par X10Y2_呪印_輪3_輪外;
+    	public ShapePart X10Y2_呪印_輪3_輪外;
 
-    	public Par X10Y2_呪印_輪3_輪内;
+    	public ShapePart X10Y2_呪印_輪3_輪内;
 
-    	public Par X10Y2_呪印_鎖1;
+    	public ShapePart X10Y2_呪印_鎖1;
 
-    	public Par X10Y2_呪印_鎖2;
+    	public ShapePart X10Y2_呪印_鎖2;
 
-    	public Par X10Y2_呪印_鎖3;
+    	public ShapePart X10Y2_呪印_鎖3;
 
-    	public Par X10Y3_親指;
+    	public ShapePart X10Y3_親指;
 
-    	public Par X10Y3_手;
+    	public ShapePart X10Y3_手;
 
-    	public Par X10Y3_小指;
+    	public ShapePart X10Y3_小指;
 
-    	public Par X10Y3_薬指;
+    	public ShapePart X10Y3_薬指;
 
-    	public Par X10Y3_中指;
+    	public ShapePart X10Y3_中指;
 
-    	public Par X10Y3_人指;
+    	public ShapePart X10Y3_人指;
 
-    	public Par X10Y3_呪印_輪1_輪外;
+    	public ShapePart X10Y3_呪印_輪1_輪外;
 
-    	public Par X10Y3_呪印_輪1_輪内;
+    	public ShapePart X10Y3_呪印_輪1_輪内;
 
-    	public Par X10Y3_呪印_輪2_輪外;
+    	public ShapePart X10Y3_呪印_輪2_輪外;
 
-    	public Par X10Y3_呪印_輪2_輪内;
+    	public ShapePart X10Y3_呪印_輪2_輪内;
 
-    	public Par X10Y3_呪印_輪3_輪外;
+    	public ShapePart X10Y3_呪印_輪3_輪外;
 
-    	public Par X10Y3_呪印_輪3_輪内;
+    	public ShapePart X10Y3_呪印_輪3_輪内;
 
-    	public Par X10Y3_呪印_鎖1;
+    	public ShapePart X10Y3_呪印_鎖1;
 
-    	public Par X10Y3_呪印_鎖2;
+    	public ShapePart X10Y3_呪印_鎖2;
 
-    	public Par X10Y3_呪印_鎖3;
+    	public ShapePart X10Y3_呪印_鎖3;
 
-    	public Par X10Y4_親指;
+    	public ShapePart X10Y4_親指;
 
-    	public Par X10Y4_手;
+    	public ShapePart X10Y4_手;
 
-    	public Par X10Y4_小指;
+    	public ShapePart X10Y4_小指;
 
-    	public Par X10Y4_薬指;
+    	public ShapePart X10Y4_薬指;
 
-    	public Par X10Y4_中指;
+    	public ShapePart X10Y4_中指;
 
-    	public Par X10Y4_人指;
+    	public ShapePart X10Y4_人指;
 
-    	public Par X10Y4_呪印_輪1_輪外;
+    	public ShapePart X10Y4_呪印_輪1_輪外;
 
-    	public Par X10Y4_呪印_輪1_輪内;
+    	public ShapePart X10Y4_呪印_輪1_輪内;
 
-    	public Par X10Y4_呪印_輪2_輪外;
+    	public ShapePart X10Y4_呪印_輪2_輪外;
 
-    	public Par X10Y4_呪印_輪2_輪内;
+    	public ShapePart X10Y4_呪印_輪2_輪内;
 
-    	public Par X10Y4_呪印_輪3_輪外;
+    	public ShapePart X10Y4_呪印_輪3_輪外;
 
-    	public Par X10Y4_呪印_輪3_輪内;
+    	public ShapePart X10Y4_呪印_輪3_輪内;
 
-    	public Par X10Y4_呪印_鎖1;
+    	public ShapePart X10Y4_呪印_鎖1;
 
-    	public Par X10Y4_呪印_鎖2;
+    	public ShapePart X10Y4_呪印_鎖2;
 
-    	public Par X10Y4_呪印_鎖3;
+    	public ShapePart X10Y4_呪印_鎖3;
 
-    	public Par X11Y0_小指;
+    	public ShapePart X11Y0_小指;
 
-    	public Par X11Y0_薬指;
+    	public ShapePart X11Y0_薬指;
 
-    	public Par X11Y0_中指;
+    	public ShapePart X11Y0_中指;
 
-    	public Par X11Y0_人指;
+    	public ShapePart X11Y0_人指;
 
-    	public Par X11Y0_手;
+    	public ShapePart X11Y0_手;
 
-    	public Par X11Y0_親指;
+    	public ShapePart X11Y0_親指;
 
-    	public Par X11Y0_呪印_輪1_輪外;
+    	public ShapePart X11Y0_呪印_輪1_輪外;
 
-    	public Par X11Y0_呪印_輪1_輪内;
+    	public ShapePart X11Y0_呪印_輪1_輪内;
 
-    	public Par X11Y0_呪印_輪2_輪外;
+    	public ShapePart X11Y0_呪印_輪2_輪外;
 
-    	public Par X11Y0_呪印_輪2_輪内;
+    	public ShapePart X11Y0_呪印_輪2_輪内;
 
-    	public Par X11Y0_呪印_輪3_輪外;
+    	public ShapePart X11Y0_呪印_輪3_輪外;
 
-    	public Par X11Y0_呪印_輪3_輪内;
+    	public ShapePart X11Y0_呪印_輪3_輪内;
 
-    	public Par X11Y0_呪印_鎖1;
+    	public ShapePart X11Y0_呪印_鎖1;
 
-    	public Par X11Y0_呪印_鎖3;
+    	public ShapePart X11Y0_呪印_鎖3;
 
-    	public Par X12Y0_親指;
+    	public ShapePart X12Y0_親指;
 
-    	public Par X12Y0_手;
+    	public ShapePart X12Y0_手;
 
-    	public Par X12Y0_小指;
+    	public ShapePart X12Y0_小指;
 
-    	public Par X12Y0_薬指;
+    	public ShapePart X12Y0_薬指;
 
-    	public Par X12Y0_中指;
+    	public ShapePart X12Y0_中指;
 
-    	public Par X12Y0_人指;
+    	public ShapePart X12Y0_人指;
 
-    	public Par X12Y0_呪印_輪1_輪外;
+    	public ShapePart X12Y0_呪印_輪1_輪外;
 
-    	public Par X12Y0_呪印_輪1_輪内;
+    	public ShapePart X12Y0_呪印_輪1_輪内;
 
-    	public Par X12Y0_呪印_輪2_輪外;
+    	public ShapePart X12Y0_呪印_輪2_輪外;
 
-    	public Par X12Y0_呪印_輪2_輪内;
+    	public ShapePart X12Y0_呪印_輪2_輪内;
 
-    	public Par X12Y0_呪印_輪3_輪外;
+    	public ShapePart X12Y0_呪印_輪3_輪外;
 
-    	public Par X12Y0_呪印_輪3_輪内;
+    	public ShapePart X12Y0_呪印_輪3_輪内;
 
-    	public Par X12Y0_呪印_鎖1;
+    	public ShapePart X12Y0_呪印_鎖1;
 
-    	public Par X12Y0_呪印_鎖2;
+    	public ShapePart X12Y0_呪印_鎖2;
 
-    	public Par X12Y0_呪印_鎖3;
+    	public ShapePart X12Y0_呪印_鎖3;
 
-    	public Par X13Y0_中指;
+    	public ShapePart X13Y0_中指;
 
-    	public Par X13Y0_人指;
+    	public ShapePart X13Y0_人指;
 
-    	public Par X13Y0_手;
+    	public ShapePart X13Y0_手;
 
-    	public Par X13Y0_親指;
+    	public ShapePart X13Y0_親指;
 
-    	public Par X13Y0_呪印_輪1_輪外;
+    	public ShapePart X13Y0_呪印_輪1_輪外;
 
-    	public Par X13Y0_呪印_輪1_輪内;
+    	public ShapePart X13Y0_呪印_輪1_輪内;
 
-    	public Par X13Y0_呪印_輪2_輪外;
+    	public ShapePart X13Y0_呪印_輪2_輪外;
 
-    	public Par X13Y0_呪印_輪2_輪内;
+    	public ShapePart X13Y0_呪印_輪2_輪内;
 
-    	public Par X13Y0_呪印_輪3_輪外;
+    	public ShapePart X13Y0_呪印_輪3_輪外;
 
-    	public Par X13Y0_呪印_輪3_輪内;
+    	public ShapePart X13Y0_呪印_輪3_輪内;
 
-    	public Par X13Y0_呪印_鎖1;
+    	public ShapePart X13Y0_呪印_鎖1;
 
-    	public Par X13Y0_呪印_鎖3;
+    	public ShapePart X13Y0_呪印_鎖3;
 
-    	public Par X14Y0_親指;
+    	public ShapePart X14Y0_親指;
 
-    	public Par X14Y0_手;
+    	public ShapePart X14Y0_手;
 
-    	public Par X14Y0_小指;
+    	public ShapePart X14Y0_小指;
 
-    	public Par X14Y0_薬指;
+    	public ShapePart X14Y0_薬指;
 
-    	public Par X14Y0_中指;
+    	public ShapePart X14Y0_中指;
 
-    	public Par X14Y0_人指;
+    	public ShapePart X14Y0_人指;
 
-    	public Par X14Y0_呪印_輪1_輪外;
+    	public ShapePart X14Y0_呪印_輪1_輪外;
 
-    	public Par X14Y0_呪印_輪1_輪内;
+    	public ShapePart X14Y0_呪印_輪1_輪内;
 
-    	public Par X14Y0_呪印_輪2_輪外;
+    	public ShapePart X14Y0_呪印_輪2_輪外;
 
-    	public Par X14Y0_呪印_輪2_輪内;
+    	public ShapePart X14Y0_呪印_輪2_輪内;
 
-    	public Par X14Y0_呪印_輪3_輪外;
+    	public ShapePart X14Y0_呪印_輪3_輪外;
 
-    	public Par X14Y0_呪印_輪3_輪内;
+    	public ShapePart X14Y0_呪印_輪3_輪内;
 
-    	public Par X14Y0_呪印_鎖1;
+    	public ShapePart X14Y0_呪印_鎖1;
 
-    	public Par X14Y0_呪印_鎖2;
+    	public ShapePart X14Y0_呪印_鎖2;
 
-    	public Par X14Y0_呪印_鎖3;
+    	public ShapePart X14Y0_呪印_鎖3;
 
-    	public Par X14Y1_親指;
+    	public ShapePart X14Y1_親指;
 
-    	public Par X14Y1_手;
+    	public ShapePart X14Y1_手;
 
-    	public Par X14Y1_小指;
+    	public ShapePart X14Y1_小指;
 
-    	public Par X14Y1_薬指;
+    	public ShapePart X14Y1_薬指;
 
-    	public Par X14Y1_中指;
+    	public ShapePart X14Y1_中指;
 
-    	public Par X14Y1_人指;
+    	public ShapePart X14Y1_人指;
 
-    	public Par X14Y1_呪印_輪1_輪外;
+    	public ShapePart X14Y1_呪印_輪1_輪外;
 
-    	public Par X14Y1_呪印_輪1_輪内;
+    	public ShapePart X14Y1_呪印_輪1_輪内;
 
-    	public Par X14Y1_呪印_輪2_輪外;
+    	public ShapePart X14Y1_呪印_輪2_輪外;
 
-    	public Par X14Y1_呪印_輪2_輪内;
+    	public ShapePart X14Y1_呪印_輪2_輪内;
 
-    	public Par X14Y1_呪印_輪3_輪外;
+    	public ShapePart X14Y1_呪印_輪3_輪外;
 
-    	public Par X14Y1_呪印_輪3_輪内;
+    	public ShapePart X14Y1_呪印_輪3_輪内;
 
-    	public Par X14Y1_呪印_鎖1;
+    	public ShapePart X14Y1_呪印_鎖1;
 
-    	public Par X14Y1_呪印_鎖2;
+    	public ShapePart X14Y1_呪印_鎖2;
 
-    	public Par X14Y1_呪印_鎖3;
+    	public ShapePart X14Y1_呪印_鎖3;
 
-    	public Par X14Y2_親指;
+    	public ShapePart X14Y2_親指;
 
-    	public Par X14Y2_手;
+    	public ShapePart X14Y2_手;
 
-    	public Par X14Y2_小指;
+    	public ShapePart X14Y2_小指;
 
-    	public Par X14Y2_薬指;
+    	public ShapePart X14Y2_薬指;
 
-    	public Par X14Y2_中指;
+    	public ShapePart X14Y2_中指;
 
-    	public Par X14Y2_人指;
+    	public ShapePart X14Y2_人指;
 
-    	public Par X14Y2_呪印_輪1_輪外;
+    	public ShapePart X14Y2_呪印_輪1_輪外;
 
-    	public Par X14Y2_呪印_輪1_輪内;
+    	public ShapePart X14Y2_呪印_輪1_輪内;
 
-    	public Par X14Y2_呪印_輪2_輪外;
+    	public ShapePart X14Y2_呪印_輪2_輪外;
 
-    	public Par X14Y2_呪印_輪2_輪内;
+    	public ShapePart X14Y2_呪印_輪2_輪内;
 
-    	public Par X14Y2_呪印_輪3_輪外;
+    	public ShapePart X14Y2_呪印_輪3_輪外;
 
-    	public Par X14Y2_呪印_輪3_輪内;
+    	public ShapePart X14Y2_呪印_輪3_輪内;
 
-    	public Par X14Y2_呪印_鎖1;
+    	public ShapePart X14Y2_呪印_鎖1;
 
-    	public Par X14Y2_呪印_鎖2;
+    	public ShapePart X14Y2_呪印_鎖2;
 
-    	public Par X14Y2_呪印_鎖3;
+    	public ShapePart X14Y2_呪印_鎖3;
 
     	public ColorD 親指CD;
 
@@ -2360,25 +2360,25 @@ namespace SlaveMatrix
 
     	private Vector2D[] mm;
 
-    	private Par[] X6Y0Pars;
+    	private ShapePart[] X6Y0Pars;
 
-    	private Par[] X6Y1Pars;
+    	private ShapePart[] X6Y1Pars;
 
-    	private Par[] X6Y2Pars;
+    	private ShapePart[] X6Y2Pars;
 
-    	private Par[] X6Y3Pars;
+    	private ShapePart[] X6Y3Pars;
 
-    	private Par[] X6Y4Pars;
+    	private ShapePart[] X6Y4Pars;
 
-    	private Par[] X7Y0Pars;
+    	private ShapePart[] X7Y0Pars;
 
-    	private Par[] X7Y1Pars;
+    	private ShapePart[] X7Y1Pars;
 
-    	private Par[] X7Y2Pars;
+    	private ShapePart[] X7Y2Pars;
 
-    	private Par[] X7Y3Pars;
+    	private ShapePart[] X7Y3Pars;
 
-    	private Par[] X7Y4Pars;
+    	private ShapePart[] X7Y4Pars;
 
     	public override bool 欠損
     	{
@@ -4613,16 +4613,16 @@ namespace SlaveMatrix
     		}
     		base.配色指定 = 配色指定;
     		配色(体配色);
-    		X6Y0Pars = new Par[2] { X6Y0_手, X6Y0_人指 };
-    		X6Y1Pars = new Par[2] { X6Y1_手, X6Y1_人指 };
-    		X6Y2Pars = new Par[2] { X6Y2_手, X6Y2_人指 };
-    		X6Y3Pars = new Par[2] { X6Y3_手, X6Y3_人指 };
-    		X6Y4Pars = new Par[2] { X6Y4_手, X6Y4_人指 };
-    		X7Y0Pars = new Par[2] { X7Y0_手, X7Y0_人指 };
-    		X7Y1Pars = new Par[2] { X7Y1_手, X7Y1_人指 };
-    		X7Y2Pars = new Par[2] { X7Y2_手, X7Y2_人指 };
-    		X7Y3Pars = new Par[2] { X7Y3_手, X7Y3_人指 };
-    		X7Y4Pars = new Par[2] { X7Y4_手, X7Y4_人指 };
+    		X6Y0Pars = new ShapePart[2] { X6Y0_手, X6Y0_人指 };
+    		X6Y1Pars = new ShapePart[2] { X6Y1_手, X6Y1_人指 };
+    		X6Y2Pars = new ShapePart[2] { X6Y2_手, X6Y2_人指 };
+    		X6Y3Pars = new ShapePart[2] { X6Y3_手, X6Y3_人指 };
+    		X6Y4Pars = new ShapePart[2] { X6Y4_手, X6Y4_人指 };
+    		X7Y0Pars = new ShapePart[2] { X7Y0_手, X7Y0_人指 };
+    		X7Y1Pars = new ShapePart[2] { X7Y1_手, X7Y1_人指 };
+    		X7Y2Pars = new ShapePart[2] { X7Y2_手, X7Y2_人指 };
+    		X7Y3Pars = new ShapePart[2] { X7Y3_手, X7Y3_人指 };
+    		X7Y4Pars = new ShapePart[2] { X7Y4_手, X7Y4_人指 };
     		X0Y0_親指CP = new ColorP(X0Y0_親指, 親指CD, DisUnit, abj: true);
     		X0Y0_手CP = new ColorP(X0Y0_手, 手CD, DisUnit, abj: true);
     		X0Y0_小指CP = new ColorP(X0Y0_小指, 小指CD, DisUnit, abj: true);

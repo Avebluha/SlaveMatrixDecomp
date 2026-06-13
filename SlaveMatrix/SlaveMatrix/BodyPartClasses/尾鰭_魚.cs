@@ -4,65 +4,65 @@ namespace SlaveMatrix
 {
     public class 尾鰭_魚 : 尾鰭
     {
-    	public Par X0Y0_鰭左2_鰭膜;
+    	public ShapePart X0Y0_鰭左2_鰭膜;
 
-    	public Par X0Y0_鰭左2_鰭条;
+    	public ShapePart X0Y0_鰭左2_鰭条;
 
-    	public Par X0Y0_鰭右2_鰭膜;
+    	public ShapePart X0Y0_鰭右2_鰭膜;
 
-    	public Par X0Y0_鰭右2_鰭条;
+    	public ShapePart X0Y0_鰭右2_鰭条;
 
-    	public Par X0Y0_鰭左1_鰭膜;
+    	public ShapePart X0Y0_鰭左1_鰭膜;
 
-    	public Par X0Y0_鰭左1_鰭条;
+    	public ShapePart X0Y0_鰭左1_鰭条;
 
-    	public Par X0Y0_鰭右1_鰭膜;
+    	public ShapePart X0Y0_鰭右1_鰭膜;
 
-    	public Par X0Y0_鰭右1_鰭条;
+    	public ShapePart X0Y0_鰭右1_鰭条;
 
-    	public Par X0Y0_尾_尾;
+    	public ShapePart X0Y0_尾_尾;
 
-    	public Par X0Y0_尾_鱗右3;
+    	public ShapePart X0Y0_尾_鱗右3;
 
-    	public Par X0Y0_尾_鱗左3;
+    	public ShapePart X0Y0_尾_鱗左3;
 
-    	public Par X0Y0_尾_鱗右2;
+    	public ShapePart X0Y0_尾_鱗右2;
 
-    	public Par X0Y0_尾_鱗左2;
+    	public ShapePart X0Y0_尾_鱗左2;
 
-    	public Par X0Y0_尾_鱗右1;
+    	public ShapePart X0Y0_尾_鱗右1;
 
-    	public Par X0Y0_尾_鱗左1;
+    	public ShapePart X0Y0_尾_鱗左1;
 
-    	public Par X0Y1_鰭左2_鰭膜;
+    	public ShapePart X0Y1_鰭左2_鰭膜;
 
-    	public Par X0Y1_鰭左2_鰭条;
+    	public ShapePart X0Y1_鰭左2_鰭条;
 
-    	public Par X0Y1_鰭右2_鰭膜;
+    	public ShapePart X0Y1_鰭右2_鰭膜;
 
-    	public Par X0Y1_鰭右2_鰭条;
+    	public ShapePart X0Y1_鰭右2_鰭条;
 
-    	public Par X0Y1_鰭左1_鰭膜;
+    	public ShapePart X0Y1_鰭左1_鰭膜;
 
-    	public Par X0Y1_鰭左1_鰭条;
+    	public ShapePart X0Y1_鰭左1_鰭条;
 
-    	public Par X0Y1_鰭右1_鰭膜;
+    	public ShapePart X0Y1_鰭右1_鰭膜;
 
-    	public Par X0Y1_鰭右1_鰭条;
+    	public ShapePart X0Y1_鰭右1_鰭条;
 
-    	public Par X0Y1_尾_尾;
+    	public ShapePart X0Y1_尾_尾;
 
-    	public Par X0Y1_尾_鱗右3;
+    	public ShapePart X0Y1_尾_鱗右3;
 
-    	public Par X0Y1_尾_鱗左3;
+    	public ShapePart X0Y1_尾_鱗左3;
 
-    	public Par X0Y1_尾_鱗右2;
+    	public ShapePart X0Y1_尾_鱗右2;
 
-    	public Par X0Y1_尾_鱗左2;
+    	public ShapePart X0Y1_尾_鱗左2;
 
-    	public Par X0Y1_尾_鱗右1;
+    	public ShapePart X0Y1_尾_鱗右1;
 
-    	public Par X0Y1_尾_鱗左1;
+    	public ShapePart X0Y1_尾_鱗左1;
 
     	public ColorD 鰭左2_鰭膜CD;
 

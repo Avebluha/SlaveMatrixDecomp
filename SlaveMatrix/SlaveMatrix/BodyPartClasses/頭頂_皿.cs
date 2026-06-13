@@ -4,17 +4,17 @@ namespace SlaveMatrix
 {
     public class 頭頂_皿 : 頭頂
     {
-    	public Par X0Y0_皿1;
+    	public ShapePart X0Y0_皿1;
 
-    	public Par X0Y0_皿2;
+    	public ShapePart X0Y0_皿2;
 
-    	public Par X0Y0_甲殻_甲殻4;
+    	public ShapePart X0Y0_甲殻_甲殻4;
 
-    	public Par X0Y0_甲殻_甲殻3;
+    	public ShapePart X0Y0_甲殻_甲殻3;
 
-    	public Par X0Y0_甲殻_甲殻2;
+    	public ShapePart X0Y0_甲殻_甲殻2;
 
-    	public Par X0Y0_甲殻_甲殻1;
+    	public ShapePart X0Y0_甲殻_甲殻1;
 
     	public ColorD 皿1CD;
 

@@ -5,7 +5,7 @@ namespace SlaveMatrix
 {
     public class SideHair_肢系 : SideHair
     {
-    	public Par X0Y0_髪;
+    	public ShapePart X0Y0_髪;
 
     	public ColorD 髪CD;
 

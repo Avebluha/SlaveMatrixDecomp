@@ -5,23 +5,23 @@ namespace SlaveMatrix
 {
     public class 拘束鎖 : Ele
     {
-    	public Par X0Y0_鎖2;
+    	public ShapePart X0Y0_鎖2;
 
-    	public Par X0Y0_鎖1;
+    	public ShapePart X0Y0_鎖1;
 
-    	public Par X0Y0_鎖4;
+    	public ShapePart X0Y0_鎖4;
 
-    	public Par X0Y0_鎖3;
+    	public ShapePart X0Y0_鎖3;
 
-    	public Par X0Y0_鎖6;
+    	public ShapePart X0Y0_鎖6;
 
-    	public Par X0Y0_鎖5;
+    	public ShapePart X0Y0_鎖5;
 
-    	public Par X0Y0_鎖8;
+    	public ShapePart X0Y0_鎖8;
 
-    	public Par X0Y0_鎖7;
+    	public ShapePart X0Y0_鎖7;
 
-    	public Par X0Y0_鎖9;
+    	public ShapePart X0Y0_鎖9;
 
     	public ColorD 鎖2CD;
 
@@ -291,14 +291,14 @@ namespace SlaveMatrix
 
     	public void SetSize()
     	{
-    		Par par = 接続根.Difs0.Current.GetPar(接続根.Path0);
-    		if (par.JP.Count <= 0)
+    		ShapePart shapePart = 接続根.Difs0.Current.GetPar(接続根.Path0);
+    		if (shapePart.JP.Count <= 0)
     		{
     			return;
     		}
     		int num = 0;
     		Vector2D vec2DZero = DataConsts.Vec2DZero;
-    		foreach (Out item in par.OP)
+    		foreach (Out item in shapePart.OP)
     		{
     			foreach (Vector2D item2 in item.ps.Skip(1).Take(item.ps.Count - 2))
     			{
@@ -306,12 +306,12 @@ namespace SlaveMatrix
     				num++;
     			}
     		}
-    		par.JP[0] = new Joi(vec2DZero / num);
+    		shapePart.JP[0] = new Joi(vec2DZero / num);
     		接続P();
-    		尺度B = (par.GetArea() / X0Y0_鎖1.GetArea()).Sqrt() * 1.2;
+    		尺度B = (shapePart.GetArea() / X0Y0_鎖1.GetArea()).Sqrt() * 1.2;
     	}
 
-    	public override bool Is鉄(Par p)
+    	public override bool Is鉄(ShapePart p)
     	{
     		if (X0Y0_鎖2 != p && X0Y0_鎖1 != p && X0Y0_鎖4 != p && X0Y0_鎖3 != p && X0Y0_鎖6 != p && X0Y0_鎖5 != p && X0Y0_鎖8 != p && X0Y0_鎖7 != p)
     		{

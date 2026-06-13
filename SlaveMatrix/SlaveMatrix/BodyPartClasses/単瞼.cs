@@ -4,265 +4,265 @@ namespace SlaveMatrix
 {
     public class 単瞼 : Ele
     {
-    	public Par X0Y0_瞼下;
+    	public ShapePart X0Y0_瞼下;
 
-    	public Par X0Y0_瞼上;
+    	public ShapePart X0Y0_瞼上;
 
-    	public Par X0Y0_二重;
+    	public ShapePart X0Y0_二重;
 
-    	public Par X0Y0_睫毛上上左;
+    	public ShapePart X0Y0_睫毛上上左;
 
-    	public Par X0Y0_睫毛上中左;
+    	public ShapePart X0Y0_睫毛上中左;
 
-    	public Par X0Y0_睫毛上下左;
+    	public ShapePart X0Y0_睫毛上下左;
 
-    	public Par X0Y0_睫毛上上右;
+    	public ShapePart X0Y0_睫毛上上右;
 
-    	public Par X0Y0_睫毛上中右;
+    	public ShapePart X0Y0_睫毛上中右;
 
-    	public Par X0Y0_睫毛上下右;
+    	public ShapePart X0Y0_睫毛上下右;
 
-    	public Par X0Y0_睫毛下上左;
+    	public ShapePart X0Y0_睫毛下上左;
 
-    	public Par X0Y0_睫毛下下左;
+    	public ShapePart X0Y0_睫毛下下左;
 
-    	public Par X0Y0_睫毛下上右;
+    	public ShapePart X0Y0_睫毛下上右;
 
-    	public Par X0Y0_睫毛下下右;
+    	public ShapePart X0Y0_睫毛下下右;
 
-    	public Par X0Y1_瞼下;
+    	public ShapePart X0Y1_瞼下;
 
-    	public Par X0Y1_瞼上;
+    	public ShapePart X0Y1_瞼上;
 
-    	public Par X0Y1_二重;
+    	public ShapePart X0Y1_二重;
 
-    	public Par X0Y1_睫毛上上左;
+    	public ShapePart X0Y1_睫毛上上左;
 
-    	public Par X0Y1_睫毛上中左;
+    	public ShapePart X0Y1_睫毛上中左;
 
-    	public Par X0Y1_睫毛上下左;
+    	public ShapePart X0Y1_睫毛上下左;
 
-    	public Par X0Y1_睫毛上上右;
+    	public ShapePart X0Y1_睫毛上上右;
 
-    	public Par X0Y1_睫毛上中右;
+    	public ShapePart X0Y1_睫毛上中右;
 
-    	public Par X0Y1_睫毛上下右;
+    	public ShapePart X0Y1_睫毛上下右;
 
-    	public Par X0Y1_睫毛下上左;
+    	public ShapePart X0Y1_睫毛下上左;
 
-    	public Par X0Y1_睫毛下下左;
+    	public ShapePart X0Y1_睫毛下下左;
 
-    	public Par X0Y1_睫毛下上右;
+    	public ShapePart X0Y1_睫毛下上右;
 
-    	public Par X0Y1_睫毛下下右;
+    	public ShapePart X0Y1_睫毛下下右;
 
-    	public Par X0Y2_瞼下;
+    	public ShapePart X0Y2_瞼下;
 
-    	public Par X0Y2_瞼上;
+    	public ShapePart X0Y2_瞼上;
 
-    	public Par X0Y2_二重;
+    	public ShapePart X0Y2_二重;
 
-    	public Par X0Y2_睫毛上上左;
+    	public ShapePart X0Y2_睫毛上上左;
 
-    	public Par X0Y2_睫毛上中左;
+    	public ShapePart X0Y2_睫毛上中左;
 
-    	public Par X0Y2_睫毛上下左;
+    	public ShapePart X0Y2_睫毛上下左;
 
-    	public Par X0Y2_睫毛上上右;
+    	public ShapePart X0Y2_睫毛上上右;
 
-    	public Par X0Y2_睫毛上中右;
+    	public ShapePart X0Y2_睫毛上中右;
 
-    	public Par X0Y2_睫毛上下右;
+    	public ShapePart X0Y2_睫毛上下右;
 
-    	public Par X0Y2_睫毛下上左;
+    	public ShapePart X0Y2_睫毛下上左;
 
-    	public Par X0Y2_睫毛下下左;
+    	public ShapePart X0Y2_睫毛下下左;
 
-    	public Par X0Y2_睫毛下上右;
+    	public ShapePart X0Y2_睫毛下上右;
 
-    	public Par X0Y2_睫毛下下右;
+    	public ShapePart X0Y2_睫毛下下右;
 
-    	public Par X0Y3_瞼下;
+    	public ShapePart X0Y3_瞼下;
 
-    	public Par X0Y3_瞼上;
+    	public ShapePart X0Y3_瞼上;
 
-    	public Par X0Y3_二重;
+    	public ShapePart X0Y3_二重;
 
-    	public Par X0Y3_睫毛上上左;
+    	public ShapePart X0Y3_睫毛上上左;
 
-    	public Par X0Y3_睫毛上中左;
+    	public ShapePart X0Y3_睫毛上中左;
 
-    	public Par X0Y3_睫毛上下左;
+    	public ShapePart X0Y3_睫毛上下左;
 
-    	public Par X0Y3_睫毛上上右;
+    	public ShapePart X0Y3_睫毛上上右;
 
-    	public Par X0Y3_睫毛上中右;
+    	public ShapePart X0Y3_睫毛上中右;
 
-    	public Par X0Y3_睫毛上下右;
+    	public ShapePart X0Y3_睫毛上下右;
 
-    	public Par X0Y3_睫毛下上左;
+    	public ShapePart X0Y3_睫毛下上左;
 
-    	public Par X0Y3_睫毛下下左;
+    	public ShapePart X0Y3_睫毛下下左;
 
-    	public Par X0Y3_睫毛下上右;
+    	public ShapePart X0Y3_睫毛下上右;
 
-    	public Par X0Y3_睫毛下下右;
+    	public ShapePart X0Y3_睫毛下下右;
 
-    	public Par X0Y4_瞼下;
+    	public ShapePart X0Y4_瞼下;
 
-    	public Par X0Y4_瞼上;
+    	public ShapePart X0Y4_瞼上;
 
-    	public Par X0Y4_二重;
+    	public ShapePart X0Y4_二重;
 
-    	public Par X0Y4_睫毛上上左;
+    	public ShapePart X0Y4_睫毛上上左;
 
-    	public Par X0Y4_睫毛上中左;
+    	public ShapePart X0Y4_睫毛上中左;
 
-    	public Par X0Y4_睫毛上下左;
+    	public ShapePart X0Y4_睫毛上下左;
 
-    	public Par X0Y4_睫毛上上右;
+    	public ShapePart X0Y4_睫毛上上右;
 
-    	public Par X0Y4_睫毛上中右;
+    	public ShapePart X0Y4_睫毛上中右;
 
-    	public Par X0Y4_睫毛上下右;
+    	public ShapePart X0Y4_睫毛上下右;
 
-    	public Par X0Y4_睫毛下上左;
+    	public ShapePart X0Y4_睫毛下上左;
 
-    	public Par X0Y4_睫毛下下左;
+    	public ShapePart X0Y4_睫毛下下左;
 
-    	public Par X0Y4_睫毛下上右;
+    	public ShapePart X0Y4_睫毛下上右;
 
-    	public Par X0Y4_睫毛下下右;
+    	public ShapePart X0Y4_睫毛下下右;
 
-    	public Par X1Y0_瞼下;
+    	public ShapePart X1Y0_瞼下;
 
-    	public Par X1Y0_瞼上;
+    	public ShapePart X1Y0_瞼上;
 
-    	public Par X1Y0_二重;
+    	public ShapePart X1Y0_二重;
 
-    	public Par X1Y0_睫毛上上左;
+    	public ShapePart X1Y0_睫毛上上左;
 
-    	public Par X1Y0_睫毛上中左;
+    	public ShapePart X1Y0_睫毛上中左;
 
-    	public Par X1Y0_睫毛上下左;
+    	public ShapePart X1Y0_睫毛上下左;
 
-    	public Par X1Y0_睫毛上上右;
+    	public ShapePart X1Y0_睫毛上上右;
 
-    	public Par X1Y0_睫毛上中右;
+    	public ShapePart X1Y0_睫毛上中右;
 
-    	public Par X1Y0_睫毛上下右;
+    	public ShapePart X1Y0_睫毛上下右;
 
-    	public Par X1Y0_睫毛下上左;
+    	public ShapePart X1Y0_睫毛下上左;
 
-    	public Par X1Y0_睫毛下下左;
+    	public ShapePart X1Y0_睫毛下下左;
 
-    	public Par X1Y0_睫毛下上右;
+    	public ShapePart X1Y0_睫毛下上右;
 
-    	public Par X1Y0_睫毛下下右;
+    	public ShapePart X1Y0_睫毛下下右;
 
-    	public Par X1Y1_瞼下;
+    	public ShapePart X1Y1_瞼下;
 
-    	public Par X1Y1_瞼上;
+    	public ShapePart X1Y1_瞼上;
 
-    	public Par X1Y1_二重;
+    	public ShapePart X1Y1_二重;
 
-    	public Par X1Y1_睫毛上上左;
+    	public ShapePart X1Y1_睫毛上上左;
 
-    	public Par X1Y1_睫毛上中左;
+    	public ShapePart X1Y1_睫毛上中左;
 
-    	public Par X1Y1_睫毛上下左;
+    	public ShapePart X1Y1_睫毛上下左;
 
-    	public Par X1Y1_睫毛上上右;
+    	public ShapePart X1Y1_睫毛上上右;
 
-    	public Par X1Y1_睫毛上中右;
+    	public ShapePart X1Y1_睫毛上中右;
 
-    	public Par X1Y1_睫毛上下右;
+    	public ShapePart X1Y1_睫毛上下右;
 
-    	public Par X1Y1_睫毛下上左;
+    	public ShapePart X1Y1_睫毛下上左;
 
-    	public Par X1Y1_睫毛下下左;
+    	public ShapePart X1Y1_睫毛下下左;
 
-    	public Par X1Y1_睫毛下上右;
+    	public ShapePart X1Y1_睫毛下上右;
 
-    	public Par X1Y1_睫毛下下右;
+    	public ShapePart X1Y1_睫毛下下右;
 
-    	public Par X1Y2_瞼下;
+    	public ShapePart X1Y2_瞼下;
 
-    	public Par X1Y2_瞼上;
+    	public ShapePart X1Y2_瞼上;
 
-    	public Par X1Y2_二重;
+    	public ShapePart X1Y2_二重;
 
-    	public Par X1Y2_睫毛上上左;
+    	public ShapePart X1Y2_睫毛上上左;
 
-    	public Par X1Y2_睫毛上中左;
+    	public ShapePart X1Y2_睫毛上中左;
 
-    	public Par X1Y2_睫毛上下左;
+    	public ShapePart X1Y2_睫毛上下左;
 
-    	public Par X1Y2_睫毛上上右;
+    	public ShapePart X1Y2_睫毛上上右;
 
-    	public Par X1Y2_睫毛上中右;
+    	public ShapePart X1Y2_睫毛上中右;
 
-    	public Par X1Y2_睫毛上下右;
+    	public ShapePart X1Y2_睫毛上下右;
 
-    	public Par X1Y2_睫毛下上左;
+    	public ShapePart X1Y2_睫毛下上左;
 
-    	public Par X1Y2_睫毛下下左;
+    	public ShapePart X1Y2_睫毛下下左;
 
-    	public Par X1Y2_睫毛下上右;
+    	public ShapePart X1Y2_睫毛下上右;
 
-    	public Par X1Y2_睫毛下下右;
+    	public ShapePart X1Y2_睫毛下下右;
 
-    	public Par X1Y3_瞼下;
+    	public ShapePart X1Y3_瞼下;
 
-    	public Par X1Y3_瞼上;
+    	public ShapePart X1Y3_瞼上;
 
-    	public Par X1Y3_二重;
+    	public ShapePart X1Y3_二重;
 
-    	public Par X1Y3_睫毛上上左;
+    	public ShapePart X1Y3_睫毛上上左;
 
-    	public Par X1Y3_睫毛上中左;
+    	public ShapePart X1Y3_睫毛上中左;
 
-    	public Par X1Y3_睫毛上下左;
+    	public ShapePart X1Y3_睫毛上下左;
 
-    	public Par X1Y3_睫毛上上右;
+    	public ShapePart X1Y3_睫毛上上右;
 
-    	public Par X1Y3_睫毛上中右;
+    	public ShapePart X1Y3_睫毛上中右;
 
-    	public Par X1Y3_睫毛上下右;
+    	public ShapePart X1Y3_睫毛上下右;
 
-    	public Par X1Y3_睫毛下上左;
+    	public ShapePart X1Y3_睫毛下上左;
 
-    	public Par X1Y3_睫毛下下左;
+    	public ShapePart X1Y3_睫毛下下左;
 
-    	public Par X1Y3_睫毛下上右;
+    	public ShapePart X1Y3_睫毛下上右;
 
-    	public Par X1Y3_睫毛下下右;
+    	public ShapePart X1Y3_睫毛下下右;
 
-    	public Par X1Y4_瞼下;
+    	public ShapePart X1Y4_瞼下;
 
-    	public Par X1Y4_瞼上;
+    	public ShapePart X1Y4_瞼上;
 
-    	public Par X1Y4_二重;
+    	public ShapePart X1Y4_二重;
 
-    	public Par X1Y4_睫毛上上左;
+    	public ShapePart X1Y4_睫毛上上左;
 
-    	public Par X1Y4_睫毛上中左;
+    	public ShapePart X1Y4_睫毛上中左;
 
-    	public Par X1Y4_睫毛上下左;
+    	public ShapePart X1Y4_睫毛上下左;
 
-    	public Par X1Y4_睫毛上上右;
+    	public ShapePart X1Y4_睫毛上上右;
 
-    	public Par X1Y4_睫毛上中右;
+    	public ShapePart X1Y4_睫毛上中右;
 
-    	public Par X1Y4_睫毛上下右;
+    	public ShapePart X1Y4_睫毛上下右;
 
-    	public Par X1Y4_睫毛下上左;
+    	public ShapePart X1Y4_睫毛下上左;
 
-    	public Par X1Y4_睫毛下下左;
+    	public ShapePart X1Y4_睫毛下下左;
 
-    	public Par X1Y4_睫毛下上右;
+    	public ShapePart X1Y4_睫毛下上右;
 
-    	public Par X1Y4_睫毛下下右;
+    	public ShapePart X1Y4_睫毛下下右;
 
     	public ColorD 瞼下CD;
 
@@ -1259,7 +1259,7 @@ namespace SlaveMatrix
     		{
     			サイズ_ = value;
     			double rate = 0.98 + 0.06 * サイズ_;
-    			foreach (Par item in Body.EnumAllPar())
+    			foreach (ShapePart item in Body.EnumAllPar())
     			{
     				Vector2D center = item.OP.GetCenter();
     				item.OP.ScalingXY(center, rate);
@@ -1602,7 +1602,7 @@ namespace SlaveMatrix
     		Intensity = e.濃度;
     	}
 
-    	private void 睫毛長さ(Par p, double d)
+    	private void 睫毛長さ(ShapePart p, double d)
     	{
     		double num = 0.0;
     		double num2 = 1.5;

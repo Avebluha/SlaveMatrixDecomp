@@ -18,7 +18,7 @@ namespace SlaveMatrix
     			foreach (sep stum in sta)
     			{
     				p = stum.Ele.Body.Current.GetPar(stum.Path);
-    				stum.Sta.角度B = p.AngleBase - stum.Par.AngleBase;
+    				stum.Sta.角度B = p.AngleBase - stum.ShapePart.AngleBase;
     				stum.Sta.位置B = p.ToGlobal(stum.Pos);
     				stum.Sta.色更新();
     				stum.Sta.Body.Draw(Are);
@@ -47,9 +47,9 @@ namespace SlaveMatrix
     				sep.Sta = EleD.GetEle(Are.DisplayUnitScale, Med, Cha.ColorSet);
     				sep.Sta.SetHitFalse();
     				sep.Ele = he;
-    				sep.Par = p;
-    				sep.Path = sep.Par.GetPath();
-    				sep.Pos = sep.Par.ToLocal(cp);
+    				sep.ShapePart = p;
+    				sep.Path = sep.ShapePart.GetPath();
+    				sep.Pos = sep.ShapePart.ToLocal(cp);
     				sta.Add(sep);
     			}
     			return (キスマーク)sep.Sta;

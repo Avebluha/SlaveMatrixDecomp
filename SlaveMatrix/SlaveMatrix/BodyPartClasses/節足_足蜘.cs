@@ -4,41 +4,41 @@ namespace SlaveMatrix
 {
     public class 節足_足蜘 : 節足
     {
-    	public Par X0Y0_基節;
+    	public ShapePart X0Y0_基節;
 
-    	public Par X0Y0_転節;
+    	public ShapePart X0Y0_転節;
 
-    	public Par X0Y0_腿節;
+    	public ShapePart X0Y0_腿節;
 
-    	public Par X0Y0_柄1;
+    	public ShapePart X0Y0_柄1;
 
-    	public Par X0Y0_膝節;
+    	public ShapePart X0Y0_膝節;
 
-    	public Par X0Y0_脛節;
+    	public ShapePart X0Y0_脛節;
 
-    	public Par X0Y0_柄2;
+    	public ShapePart X0Y0_柄2;
 
-    	public Par X0Y0_輪_革;
+    	public ShapePart X0Y0_輪_革;
 
-    	public Par X0Y0_輪_金具1;
+    	public ShapePart X0Y0_輪_金具1;
 
-    	public Par X0Y0_輪_金具2;
+    	public ShapePart X0Y0_輪_金具2;
 
-    	public Par X0Y0_輪_金具3;
+    	public ShapePart X0Y0_輪_金具3;
 
-    	public Par X0Y0_輪_金具左;
+    	public ShapePart X0Y0_輪_金具左;
 
-    	public Par X0Y0_輪_金具右;
+    	public ShapePart X0Y0_輪_金具右;
 
-    	public Par X0Y0_蹠節;
+    	public ShapePart X0Y0_蹠節;
 
-    	public Par X0Y0_跗節1;
+    	public ShapePart X0Y0_跗節1;
 
-    	public Par X0Y0_跗節2;
+    	public ShapePart X0Y0_跗節2;
 
-    	public Par X0Y0_爪_爪1;
+    	public ShapePart X0Y0_爪_爪1;
 
-    	public Par X0Y0_爪_爪2;
+    	public ShapePart X0Y0_爪_爪2;
 
     	public ColorD 基節CD;
 
@@ -652,7 +652,7 @@ namespace SlaveMatrix
     		Body.JoinPAall();
     	}
 
-    	public override bool Is革(Par p)
+    	public override bool Is革(ShapePart p)
     	{
     		if (p != X0Y0_輪_革 && p != X0Y0_輪_金具1 && p != X0Y0_輪_金具2 && p != X0Y0_輪_金具3 && p != X0Y0_輪_金具左)
     		{
@@ -665,11 +665,11 @@ namespace SlaveMatrix
     	{
     		X0Y0_基節CP.Update();
     		X0Y0_転節CP.Update();
-    		X0Y0_腿節CP.Par.GetMiY_MaY(out mm);
+    		X0Y0_腿節CP.ShapePart.GetMiY_MaY(out mm);
     		X0Y0_腿節CP.Update(mm);
     		X0Y0_柄1CP.Update(mm);
     		X0Y0_膝節CP.Update();
-    		X0Y0_脛節CP.Par.GetMiY_MaY(out mm);
+    		X0Y0_脛節CP.ShapePart.GetMiY_MaY(out mm);
     		X0Y0_脛節CP.Update(mm);
     		X0Y0_柄2CP.Update(mm);
     		X0Y0_輪_革CP.Update();

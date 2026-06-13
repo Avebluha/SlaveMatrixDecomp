@@ -5,17 +5,17 @@ namespace SlaveMatrix
 {
     public class 単目 : Ele
     {
-    	public Par X0Y0_白目;
+    	public ShapePart X0Y0_白目;
 
-    	public Par X0Y0_黒目_黒目;
+    	public ShapePart X0Y0_黒目_黒目;
 
-    	public Par X0Y0_黒目_瞳孔;
+    	public ShapePart X0Y0_黒目_瞳孔;
 
-    	public Par X0Y0_黒目_ハイライト上;
+    	public ShapePart X0Y0_黒目_ハイライト上;
 
-    	public Par X0Y0_黒目_ハイライト下;
+    	public ShapePart X0Y0_黒目_ハイライト下;
 
-    	public Par X0Y0_黒目_ハート;
+    	public ShapePart X0Y0_黒目_ハート;
 
     	public ColorD 白目CD;
 

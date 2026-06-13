@@ -4,15 +4,15 @@ namespace SlaveMatrix
 {
     public class 涎_通常 : 涎
     {
-    	public Par X0Y0_涎;
+    	public ShapePart X0Y0_涎;
 
-    	public Par X0Y1_涎;
+    	public ShapePart X0Y1_涎;
 
-    	public Par X0Y2_涎;
+    	public ShapePart X0Y2_涎;
 
-    	public Par X0Y3_涎;
+    	public ShapePart X0Y3_涎;
 
-    	public Par X0Y4_涎;
+    	public ShapePart X0Y4_涎;
 
     	public ColorD 涎CD;
 

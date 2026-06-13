@@ -4,251 +4,251 @@ namespace SlaveMatrix
 {
     public class パール : Ele
     {
-    	public Par X0Y0_軸;
+    	public ShapePart X0Y0_軸;
 
-    	public Par X0Y0_玉境界;
+    	public ShapePart X0Y0_玉境界;
 
-    	public Par X0Y0_玉1;
+    	public ShapePart X0Y0_玉1;
 
-    	public Par X0Y0_玉2;
+    	public ShapePart X0Y0_玉2;
 
-    	public Par X0Y0_玉3;
+    	public ShapePart X0Y0_玉3;
 
-    	public Par X0Y0_玉4;
+    	public ShapePart X0Y0_玉4;
 
-    	public Par X0Y0_玉5;
+    	public ShapePart X0Y0_玉5;
 
-    	public Par X0Y0_玉6;
+    	public ShapePart X0Y0_玉6;
 
-    	public Par X0Y0_玉7;
+    	public ShapePart X0Y0_玉7;
 
-    	public Par X0Y0_輪上;
+    	public ShapePart X0Y0_輪上;
 
-    	public Par X0Y0_輪下;
+    	public ShapePart X0Y0_輪下;
 
-    	public Par X0Y1_軸;
+    	public ShapePart X0Y1_軸;
 
-    	public Par X0Y1_玉境界;
+    	public ShapePart X0Y1_玉境界;
 
-    	public Par X0Y1_玉1;
+    	public ShapePart X0Y1_玉1;
 
-    	public Par X0Y1_玉2;
+    	public ShapePart X0Y1_玉2;
 
-    	public Par X0Y1_玉3;
+    	public ShapePart X0Y1_玉3;
 
-    	public Par X0Y1_玉4;
+    	public ShapePart X0Y1_玉4;
 
-    	public Par X0Y1_玉5;
+    	public ShapePart X0Y1_玉5;
 
-    	public Par X0Y1_玉6;
+    	public ShapePart X0Y1_玉6;
 
-    	public Par X0Y1_玉7;
+    	public ShapePart X0Y1_玉7;
 
-    	public Par X0Y1_輪上;
+    	public ShapePart X0Y1_輪上;
 
-    	public Par X0Y1_輪下;
+    	public ShapePart X0Y1_輪下;
 
-    	public Par X0Y2_軸;
+    	public ShapePart X0Y2_軸;
 
-    	public Par X0Y2_玉境界;
+    	public ShapePart X0Y2_玉境界;
 
-    	public Par X0Y2_玉1;
+    	public ShapePart X0Y2_玉1;
 
-    	public Par X0Y2_玉2;
+    	public ShapePart X0Y2_玉2;
 
-    	public Par X0Y2_玉3;
+    	public ShapePart X0Y2_玉3;
 
-    	public Par X0Y2_玉4;
+    	public ShapePart X0Y2_玉4;
 
-    	public Par X0Y2_玉5;
+    	public ShapePart X0Y2_玉5;
 
-    	public Par X0Y2_玉6;
+    	public ShapePart X0Y2_玉6;
 
-    	public Par X0Y2_輪上;
+    	public ShapePart X0Y2_輪上;
 
-    	public Par X0Y2_輪下;
+    	public ShapePart X0Y2_輪下;
 
-    	public Par X0Y3_軸;
+    	public ShapePart X0Y3_軸;
 
-    	public Par X0Y3_玉境界;
+    	public ShapePart X0Y3_玉境界;
 
-    	public Par X0Y3_玉1;
+    	public ShapePart X0Y3_玉1;
 
-    	public Par X0Y3_玉2;
+    	public ShapePart X0Y3_玉2;
 
-    	public Par X0Y3_玉3;
+    	public ShapePart X0Y3_玉3;
 
-    	public Par X0Y3_玉4;
+    	public ShapePart X0Y3_玉4;
 
-    	public Par X0Y3_玉5;
+    	public ShapePart X0Y3_玉5;
 
-    	public Par X0Y3_玉6;
+    	public ShapePart X0Y3_玉6;
 
-    	public Par X0Y3_輪上;
+    	public ShapePart X0Y3_輪上;
 
-    	public Par X0Y3_輪下;
+    	public ShapePart X0Y3_輪下;
 
-    	public Par X0Y4_軸;
+    	public ShapePart X0Y4_軸;
 
-    	public Par X0Y4_玉境界;
+    	public ShapePart X0Y4_玉境界;
 
-    	public Par X0Y4_玉1;
+    	public ShapePart X0Y4_玉1;
 
-    	public Par X0Y4_玉2;
+    	public ShapePart X0Y4_玉2;
 
-    	public Par X0Y4_玉3;
+    	public ShapePart X0Y4_玉3;
 
-    	public Par X0Y4_玉4;
+    	public ShapePart X0Y4_玉4;
 
-    	public Par X0Y4_玉5;
+    	public ShapePart X0Y4_玉5;
 
-    	public Par X0Y4_輪上;
+    	public ShapePart X0Y4_輪上;
 
-    	public Par X0Y4_輪下;
+    	public ShapePart X0Y4_輪下;
 
-    	public Par X0Y5_軸;
+    	public ShapePart X0Y5_軸;
 
-    	public Par X0Y5_玉境界;
+    	public ShapePart X0Y5_玉境界;
 
-    	public Par X0Y5_玉1;
+    	public ShapePart X0Y5_玉1;
 
-    	public Par X0Y5_玉2;
+    	public ShapePart X0Y5_玉2;
 
-    	public Par X0Y5_玉3;
+    	public ShapePart X0Y5_玉3;
 
-    	public Par X0Y5_玉4;
+    	public ShapePart X0Y5_玉4;
 
-    	public Par X0Y5_玉5;
+    	public ShapePart X0Y5_玉5;
 
-    	public Par X0Y5_輪上;
+    	public ShapePart X0Y5_輪上;
 
-    	public Par X0Y5_輪下;
+    	public ShapePart X0Y5_輪下;
 
-    	public Par X0Y6_軸;
+    	public ShapePart X0Y6_軸;
 
-    	public Par X0Y6_玉境界;
+    	public ShapePart X0Y6_玉境界;
 
-    	public Par X0Y6_玉1;
+    	public ShapePart X0Y6_玉1;
 
-    	public Par X0Y6_玉2;
+    	public ShapePart X0Y6_玉2;
 
-    	public Par X0Y6_玉3;
+    	public ShapePart X0Y6_玉3;
 
-    	public Par X0Y6_玉4;
+    	public ShapePart X0Y6_玉4;
 
-    	public Par X0Y6_輪上;
+    	public ShapePart X0Y6_輪上;
 
-    	public Par X0Y6_輪下;
+    	public ShapePart X0Y6_輪下;
 
-    	public Par X0Y7_軸;
+    	public ShapePart X0Y7_軸;
 
-    	public Par X0Y7_玉境界;
+    	public ShapePart X0Y7_玉境界;
 
-    	public Par X0Y7_玉1;
+    	public ShapePart X0Y7_玉1;
 
-    	public Par X0Y7_玉2;
+    	public ShapePart X0Y7_玉2;
 
-    	public Par X0Y7_玉3;
+    	public ShapePart X0Y7_玉3;
 
-    	public Par X0Y7_玉4;
+    	public ShapePart X0Y7_玉4;
 
-    	public Par X0Y7_輪上;
+    	public ShapePart X0Y7_輪上;
 
-    	public Par X0Y7_輪下;
+    	public ShapePart X0Y7_輪下;
 
-    	public Par X0Y8_軸;
+    	public ShapePart X0Y8_軸;
 
-    	public Par X0Y8_玉境界;
+    	public ShapePart X0Y8_玉境界;
 
-    	public Par X0Y8_玉1;
+    	public ShapePart X0Y8_玉1;
 
-    	public Par X0Y8_玉2;
+    	public ShapePart X0Y8_玉2;
 
-    	public Par X0Y8_玉3;
+    	public ShapePart X0Y8_玉3;
 
-    	public Par X0Y8_輪上;
+    	public ShapePart X0Y8_輪上;
 
-    	public Par X0Y8_輪下;
+    	public ShapePart X0Y8_輪下;
 
-    	public Par X0Y9_軸;
+    	public ShapePart X0Y9_軸;
 
-    	public Par X0Y9_玉境界;
+    	public ShapePart X0Y9_玉境界;
 
-    	public Par X0Y9_玉1;
+    	public ShapePart X0Y9_玉1;
 
-    	public Par X0Y9_玉2;
+    	public ShapePart X0Y9_玉2;
 
-    	public Par X0Y9_玉3;
+    	public ShapePart X0Y9_玉3;
 
-    	public Par X0Y9_輪上;
+    	public ShapePart X0Y9_輪上;
 
-    	public Par X0Y9_輪下;
+    	public ShapePart X0Y9_輪下;
 
-    	public Par X0Y10_軸;
+    	public ShapePart X0Y10_軸;
 
-    	public Par X0Y10_玉境界;
+    	public ShapePart X0Y10_玉境界;
 
-    	public Par X0Y10_玉1;
+    	public ShapePart X0Y10_玉1;
 
-    	public Par X0Y10_玉2;
+    	public ShapePart X0Y10_玉2;
 
-    	public Par X0Y10_輪上;
+    	public ShapePart X0Y10_輪上;
 
-    	public Par X0Y10_輪下;
+    	public ShapePart X0Y10_輪下;
 
-    	public Par X0Y11_軸;
+    	public ShapePart X0Y11_軸;
 
-    	public Par X0Y11_玉境界;
+    	public ShapePart X0Y11_玉境界;
 
-    	public Par X0Y11_玉1;
+    	public ShapePart X0Y11_玉1;
 
-    	public Par X0Y11_玉2;
+    	public ShapePart X0Y11_玉2;
 
-    	public Par X0Y11_輪上;
+    	public ShapePart X0Y11_輪上;
 
-    	public Par X0Y11_輪下;
+    	public ShapePart X0Y11_輪下;
 
-    	public Par X0Y12_軸;
+    	public ShapePart X0Y12_軸;
 
-    	public Par X0Y12_玉境界;
+    	public ShapePart X0Y12_玉境界;
 
-    	public Par X0Y12_玉;
+    	public ShapePart X0Y12_玉;
 
-    	public Par X0Y12_輪上;
+    	public ShapePart X0Y12_輪上;
 
-    	public Par X0Y12_輪下;
+    	public ShapePart X0Y12_輪下;
 
-    	public Par X0Y13_軸;
+    	public ShapePart X0Y13_軸;
 
-    	public Par X0Y13_玉境界;
+    	public ShapePart X0Y13_玉境界;
 
-    	public Par X0Y13_玉;
+    	public ShapePart X0Y13_玉;
 
-    	public Par X0Y13_輪上;
+    	public ShapePart X0Y13_輪上;
 
-    	public Par X0Y13_輪下;
+    	public ShapePart X0Y13_輪下;
 
-    	public Par X0Y14_軸;
+    	public ShapePart X0Y14_軸;
 
-    	public Par X0Y14_玉境界;
+    	public ShapePart X0Y14_玉境界;
 
-    	public Par X0Y14_輪上;
+    	public ShapePart X0Y14_輪上;
 
-    	public Par X0Y14_輪下;
+    	public ShapePart X0Y14_輪下;
 
-    	public Par X0Y15_軸;
+    	public ShapePart X0Y15_軸;
 
-    	public Par X0Y15_玉境界;
+    	public ShapePart X0Y15_玉境界;
 
-    	public Par X0Y15_輪上;
+    	public ShapePart X0Y15_輪上;
 
-    	public Par X0Y15_輪下;
+    	public ShapePart X0Y15_輪下;
 
-    	public Par X0Y16_軸;
+    	public ShapePart X0Y16_軸;
 
-    	public Par X0Y16_輪上境界;
+    	public ShapePart X0Y16_輪上境界;
 
-    	public Par X0Y16_輪下;
+    	public ShapePart X0Y16_輪下;
 
     	public ColorD 軸CD;
 

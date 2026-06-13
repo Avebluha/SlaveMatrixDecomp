@@ -4,181 +4,181 @@ namespace SlaveMatrix
 {
     public class 後翅_草 : 後翅
     {
-    	public Par X0Y0_後翅_後翅1_後翅;
+    	public ShapePart X0Y0_後翅_後翅1_後翅;
 
-    	public Par X0Y0_後翅_後翅1_翅脈1;
+    	public ShapePart X0Y0_後翅_後翅1_翅脈1;
 
-    	public Par X0Y0_後翅_後翅1_翅脈2;
+    	public ShapePart X0Y0_後翅_後翅1_翅脈2;
 
-    	public Par X0Y0_後翅_後翅1_翅脈3;
+    	public ShapePart X0Y0_後翅_後翅1_翅脈3;
 
-    	public Par X0Y0_後翅_後翅2_後翅;
+    	public ShapePart X0Y0_後翅_後翅2_後翅;
 
-    	public Par X0Y0_後翅_後翅2_翅脈1;
+    	public ShapePart X0Y0_後翅_後翅2_翅脈1;
 
-    	public Par X0Y0_後翅_後翅2_翅脈2;
+    	public ShapePart X0Y0_後翅_後翅2_翅脈2;
 
-    	public Par X0Y0_後翅_後翅2_翅脈3;
+    	public ShapePart X0Y0_後翅_後翅2_翅脈3;
 
-    	public Par X0Y0_後翅_後翅3_後翅;
+    	public ShapePart X0Y0_後翅_後翅3_後翅;
 
-    	public Par X0Y0_後翅_後翅3_翅脈1;
+    	public ShapePart X0Y0_後翅_後翅3_翅脈1;
 
-    	public Par X0Y0_後翅_後翅3_翅脈2;
+    	public ShapePart X0Y0_後翅_後翅3_翅脈2;
 
-    	public Par X0Y0_後翅_後翅3_翅脈3;
+    	public ShapePart X0Y0_後翅_後翅3_翅脈3;
 
-    	public Par X0Y0_後翅_後翅4_後翅;
+    	public ShapePart X0Y0_後翅_後翅4_後翅;
 
-    	public Par X0Y0_後翅_後翅4_翅脈1;
+    	public ShapePart X0Y0_後翅_後翅4_翅脈1;
 
-    	public Par X0Y0_後翅_後翅4_翅脈2;
+    	public ShapePart X0Y0_後翅_後翅4_翅脈2;
 
-    	public Par X0Y0_後翅_後翅4_翅脈3;
+    	public ShapePart X0Y0_後翅_後翅4_翅脈3;
 
-    	public Par X0Y0_後翅_後翅5_後翅;
+    	public ShapePart X0Y0_後翅_後翅5_後翅;
 
-    	public Par X0Y0_後翅_後翅5_翅脈1;
+    	public ShapePart X0Y0_後翅_後翅5_翅脈1;
 
-    	public Par X0Y0_後翅_後翅5_翅脈2;
+    	public ShapePart X0Y0_後翅_後翅5_翅脈2;
 
-    	public Par X0Y0_後翅_後翅5_翅脈3;
+    	public ShapePart X0Y0_後翅_後翅5_翅脈3;
 
-    	public Par X0Y0_後翅_後翅6_後翅;
+    	public ShapePart X0Y0_後翅_後翅6_後翅;
 
-    	public Par X0Y0_後翅_後翅6_翅脈1;
+    	public ShapePart X0Y0_後翅_後翅6_翅脈1;
 
-    	public Par X0Y0_後翅_後翅6_翅脈2;
+    	public ShapePart X0Y0_後翅_後翅6_翅脈2;
 
-    	public Par X0Y0_後翅_後翅6_翅脈3;
+    	public ShapePart X0Y0_後翅_後翅6_翅脈3;
 
-    	public Par X0Y0_後翅_後翅7_後翅;
+    	public ShapePart X0Y0_後翅_後翅7_後翅;
 
-    	public Par X0Y0_後翅_後翅7_翅脈1;
+    	public ShapePart X0Y0_後翅_後翅7_翅脈1;
 
-    	public Par X0Y0_後翅_後翅7_翅脈2;
+    	public ShapePart X0Y0_後翅_後翅7_翅脈2;
 
-    	public Par X0Y0_後翅_後翅7_翅脈3;
+    	public ShapePart X0Y0_後翅_後翅7_翅脈3;
 
-    	public Par X0Y0_後翅_後翅8_後翅;
+    	public ShapePart X0Y0_後翅_後翅8_後翅;
 
-    	public Par X0Y0_後翅_後翅8_翅脈1;
+    	public ShapePart X0Y0_後翅_後翅8_翅脈1;
 
-    	public Par X0Y0_後翅_後翅8_翅脈2;
+    	public ShapePart X0Y0_後翅_後翅8_翅脈2;
 
-    	public Par X0Y0_後翅_後翅8_翅脈3;
+    	public ShapePart X0Y0_後翅_後翅8_翅脈3;
 
-    	public Par X0Y0_後翅_後翅9_後翅;
+    	public ShapePart X0Y0_後翅_後翅9_後翅;
 
-    	public Par X0Y0_後翅_後翅9_翅脈1;
+    	public ShapePart X0Y0_後翅_後翅9_翅脈1;
 
-    	public Par X0Y0_後翅_後翅9_翅脈2;
+    	public ShapePart X0Y0_後翅_後翅9_翅脈2;
 
-    	public Par X0Y0_後翅_後翅9_翅脈3;
+    	public ShapePart X0Y0_後翅_後翅9_翅脈3;
 
-    	public Par X0Y0_後翅_後翅10_後翅;
+    	public ShapePart X0Y0_後翅_後翅10_後翅;
 
-    	public Par X0Y0_後翅_後翅10_翅脈1;
+    	public ShapePart X0Y0_後翅_後翅10_翅脈1;
 
-    	public Par X0Y0_後翅_後翅10_翅脈2;
+    	public ShapePart X0Y0_後翅_後翅10_翅脈2;
 
-    	public Par X0Y0_後翅_後翅10_翅脈3;
+    	public ShapePart X0Y0_後翅_後翅10_翅脈3;
 
-    	public Par X0Y0_後翅_後翅11_後翅;
+    	public ShapePart X0Y0_後翅_後翅11_後翅;
 
-    	public Par X0Y0_後翅_後翅11_翅脈1;
+    	public ShapePart X0Y0_後翅_後翅11_翅脈1;
 
-    	public Par X0Y0_後翅_後翅11_翅脈2;
+    	public ShapePart X0Y0_後翅_後翅11_翅脈2;
 
-    	public Par X0Y0_後翅_後翅11_翅脈3;
+    	public ShapePart X0Y0_後翅_後翅11_翅脈3;
 
-    	public Par X0Y1_後翅_後翅1_後翅;
+    	public ShapePart X0Y1_後翅_後翅1_後翅;
 
-    	public Par X0Y1_後翅_後翅1_翅脈1;
+    	public ShapePart X0Y1_後翅_後翅1_翅脈1;
 
-    	public Par X0Y1_後翅_後翅1_翅脈2;
+    	public ShapePart X0Y1_後翅_後翅1_翅脈2;
 
-    	public Par X0Y1_後翅_後翅1_翅脈3;
+    	public ShapePart X0Y1_後翅_後翅1_翅脈3;
 
-    	public Par X0Y1_後翅_後翅2_後翅;
+    	public ShapePart X0Y1_後翅_後翅2_後翅;
 
-    	public Par X0Y1_後翅_後翅2_翅脈1;
+    	public ShapePart X0Y1_後翅_後翅2_翅脈1;
 
-    	public Par X0Y1_後翅_後翅2_翅脈2;
+    	public ShapePart X0Y1_後翅_後翅2_翅脈2;
 
-    	public Par X0Y1_後翅_後翅2_翅脈3;
+    	public ShapePart X0Y1_後翅_後翅2_翅脈3;
 
-    	public Par X0Y1_後翅_後翅3_後翅;
+    	public ShapePart X0Y1_後翅_後翅3_後翅;
 
-    	public Par X0Y1_後翅_後翅3_翅脈1;
+    	public ShapePart X0Y1_後翅_後翅3_翅脈1;
 
-    	public Par X0Y1_後翅_後翅3_翅脈2;
+    	public ShapePart X0Y1_後翅_後翅3_翅脈2;
 
-    	public Par X0Y1_後翅_後翅3_翅脈3;
+    	public ShapePart X0Y1_後翅_後翅3_翅脈3;
 
-    	public Par X0Y1_後翅_後翅4_後翅;
+    	public ShapePart X0Y1_後翅_後翅4_後翅;
 
-    	public Par X0Y1_後翅_後翅4_翅脈1;
+    	public ShapePart X0Y1_後翅_後翅4_翅脈1;
 
-    	public Par X0Y1_後翅_後翅4_翅脈2;
+    	public ShapePart X0Y1_後翅_後翅4_翅脈2;
 
-    	public Par X0Y1_後翅_後翅4_翅脈3;
+    	public ShapePart X0Y1_後翅_後翅4_翅脈3;
 
-    	public Par X0Y1_後翅_後翅5_後翅;
+    	public ShapePart X0Y1_後翅_後翅5_後翅;
 
-    	public Par X0Y1_後翅_後翅5_翅脈1;
+    	public ShapePart X0Y1_後翅_後翅5_翅脈1;
 
-    	public Par X0Y1_後翅_後翅5_翅脈2;
+    	public ShapePart X0Y1_後翅_後翅5_翅脈2;
 
-    	public Par X0Y1_後翅_後翅5_翅脈3;
+    	public ShapePart X0Y1_後翅_後翅5_翅脈3;
 
-    	public Par X0Y1_後翅_後翅6_後翅;
+    	public ShapePart X0Y1_後翅_後翅6_後翅;
 
-    	public Par X0Y1_後翅_後翅6_翅脈1;
+    	public ShapePart X0Y1_後翅_後翅6_翅脈1;
 
-    	public Par X0Y1_後翅_後翅6_翅脈2;
+    	public ShapePart X0Y1_後翅_後翅6_翅脈2;
 
-    	public Par X0Y1_後翅_後翅6_翅脈3;
+    	public ShapePart X0Y1_後翅_後翅6_翅脈3;
 
-    	public Par X0Y1_後翅_後翅7_後翅;
+    	public ShapePart X0Y1_後翅_後翅7_後翅;
 
-    	public Par X0Y1_後翅_後翅7_翅脈1;
+    	public ShapePart X0Y1_後翅_後翅7_翅脈1;
 
-    	public Par X0Y1_後翅_後翅7_翅脈2;
+    	public ShapePart X0Y1_後翅_後翅7_翅脈2;
 
-    	public Par X0Y1_後翅_後翅7_翅脈3;
+    	public ShapePart X0Y1_後翅_後翅7_翅脈3;
 
-    	public Par X0Y1_後翅_後翅8_後翅;
+    	public ShapePart X0Y1_後翅_後翅8_後翅;
 
-    	public Par X0Y1_後翅_後翅8_翅脈1;
+    	public ShapePart X0Y1_後翅_後翅8_翅脈1;
 
-    	public Par X0Y1_後翅_後翅8_翅脈2;
+    	public ShapePart X0Y1_後翅_後翅8_翅脈2;
 
-    	public Par X0Y1_後翅_後翅8_翅脈3;
+    	public ShapePart X0Y1_後翅_後翅8_翅脈3;
 
-    	public Par X0Y1_後翅_後翅9_後翅;
+    	public ShapePart X0Y1_後翅_後翅9_後翅;
 
-    	public Par X0Y1_後翅_後翅9_翅脈1;
+    	public ShapePart X0Y1_後翅_後翅9_翅脈1;
 
-    	public Par X0Y1_後翅_後翅9_翅脈2;
+    	public ShapePart X0Y1_後翅_後翅9_翅脈2;
 
-    	public Par X0Y1_後翅_後翅9_翅脈3;
+    	public ShapePart X0Y1_後翅_後翅9_翅脈3;
 
-    	public Par X0Y1_後翅_後翅10_後翅;
+    	public ShapePart X0Y1_後翅_後翅10_後翅;
 
-    	public Par X0Y1_後翅_後翅10_翅脈1;
+    	public ShapePart X0Y1_後翅_後翅10_翅脈1;
 
-    	public Par X0Y1_後翅_後翅10_翅脈2;
+    	public ShapePart X0Y1_後翅_後翅10_翅脈2;
 
-    	public Par X0Y1_後翅_後翅10_翅脈3;
+    	public ShapePart X0Y1_後翅_後翅10_翅脈3;
 
-    	public Par X0Y1_後翅_後翅11_後翅;
+    	public ShapePart X0Y1_後翅_後翅11_後翅;
 
-    	public Par X0Y1_後翅_後翅11_翅脈1;
+    	public ShapePart X0Y1_後翅_後翅11_翅脈1;
 
-    	public Par X0Y1_後翅_後翅11_翅脈2;
+    	public ShapePart X0Y1_後翅_後翅11_翅脈2;
 
-    	public Par X0Y1_後翅_後翅11_翅脈3;
+    	public ShapePart X0Y1_後翅_後翅11_翅脈3;
 
     	public ColorD 後翅_後翅1_後翅CD;
 

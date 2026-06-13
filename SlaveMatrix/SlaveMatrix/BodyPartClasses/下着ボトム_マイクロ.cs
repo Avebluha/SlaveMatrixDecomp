@@ -4,355 +4,355 @@ namespace SlaveMatrix
 {
     public class 下着ボトム_マイクロ : 下着ボトム
     {
-    	public Par X0Y0_紐左;
+    	public ShapePart X0Y0_紐左;
 
-    	public Par X0Y0_紐右;
+    	public ShapePart X0Y0_紐右;
 
-    	public Par X0Y0_下地;
+    	public ShapePart X0Y0_下地;
 
-    	public Par X0Y0_線;
+    	public ShapePart X0Y0_線;
 
-    	public Par X0Y0_ライン_ライン上;
+    	public ShapePart X0Y0_ライン_ライン上;
 
-    	public Par X0Y0_ライン_ライン左;
+    	public ShapePart X0Y0_ライン_ライン左;
 
-    	public Par X0Y0_ライン_ライン右;
+    	public ShapePart X0Y0_ライン_ライン右;
 
-    	public Par X0Y0_ライン_ライン左下;
+    	public ShapePart X0Y0_ライン_ライン左下;
 
-    	public Par X0Y0_ライン_ライン右下;
+    	public ShapePart X0Y0_ライン_ライン右下;
 
-    	public Par X0Y0_ライン_ライン下左;
+    	public ShapePart X0Y0_ライン_ライン下左;
 
-    	public Par X0Y0_ライン_ライン下右;
+    	public ShapePart X0Y0_ライン_ライン下右;
 
-    	public Par X0Y0_結び紐左_紐1;
+    	public ShapePart X0Y0_結び紐左_紐1;
 
-    	public Par X0Y0_結び紐左_紐2;
+    	public ShapePart X0Y0_結び紐左_紐2;
 
-    	public Par X0Y0_結び紐左_輪1_紐後;
+    	public ShapePart X0Y0_結び紐左_輪1_紐後;
 
-    	public Par X0Y0_結び紐左_輪1_紐前;
+    	public ShapePart X0Y0_結び紐左_輪1_紐前;
 
-    	public Par X0Y0_結び紐左_輪2_紐後;
+    	public ShapePart X0Y0_結び紐左_輪2_紐後;
 
-    	public Par X0Y0_結び紐左_輪2_紐前;
+    	public ShapePart X0Y0_結び紐左_輪2_紐前;
 
-    	public Par X0Y0_結び紐左_結び目;
+    	public ShapePart X0Y0_結び紐左_結び目;
 
-    	public Par X0Y0_結び紐右_紐1;
+    	public ShapePart X0Y0_結び紐右_紐1;
 
-    	public Par X0Y0_結び紐右_紐2;
+    	public ShapePart X0Y0_結び紐右_紐2;
 
-    	public Par X0Y0_結び紐右_輪1_紐後;
+    	public ShapePart X0Y0_結び紐右_輪1_紐後;
 
-    	public Par X0Y0_結び紐右_輪1_紐前;
+    	public ShapePart X0Y0_結び紐右_輪1_紐前;
 
-    	public Par X0Y0_結び紐右_輪2_紐後;
+    	public ShapePart X0Y0_結び紐右_輪2_紐後;
 
-    	public Par X0Y0_結び紐右_輪2_紐前;
+    	public ShapePart X0Y0_結び紐右_輪2_紐前;
 
-    	public Par X0Y0_結び紐右_結び目;
+    	public ShapePart X0Y0_結び紐右_結び目;
 
-    	public Par X0Y0_ヴィオラ_紐左;
+    	public ShapePart X0Y0_ヴィオラ_紐左;
 
-    	public Par X0Y0_ヴィオラ_紐右;
+    	public ShapePart X0Y0_ヴィオラ_紐右;
 
-    	public Par X0Y0_ヴィオラ_丸金具左;
+    	public ShapePart X0Y0_ヴィオラ_丸金具左;
 
-    	public Par X0Y0_ヴィオラ_丸金具右;
+    	public ShapePart X0Y0_ヴィオラ_丸金具右;
 
-    	public Par X0Y0_ヴィオラ_金具左_金具1;
+    	public ShapePart X0Y0_ヴィオラ_金具左_金具1;
 
-    	public Par X0Y0_ヴィオラ_金具左_金具2;
+    	public ShapePart X0Y0_ヴィオラ_金具左_金具2;
 
-    	public Par X0Y0_ヴィオラ_金具右_金具1;
+    	public ShapePart X0Y0_ヴィオラ_金具右_金具1;
 
-    	public Par X0Y0_ヴィオラ_金具右_金具2;
+    	public ShapePart X0Y0_ヴィオラ_金具右_金具2;
 
-    	public Par X0Y0_染み_染み2;
+    	public ShapePart X0Y0_染み_染み2;
 
-    	public Par X0Y0_染み_染み1;
+    	public ShapePart X0Y0_染み_染み1;
 
-    	public Par X0Y1_紐左;
+    	public ShapePart X0Y1_紐左;
 
-    	public Par X0Y1_紐右;
+    	public ShapePart X0Y1_紐右;
 
-    	public Par X0Y1_下地;
+    	public ShapePart X0Y1_下地;
 
-    	public Par X0Y1_線;
+    	public ShapePart X0Y1_線;
 
-    	public Par X0Y1_ライン_ライン上;
+    	public ShapePart X0Y1_ライン_ライン上;
 
-    	public Par X0Y1_ライン_ライン左;
+    	public ShapePart X0Y1_ライン_ライン左;
 
-    	public Par X0Y1_ライン_ライン右;
+    	public ShapePart X0Y1_ライン_ライン右;
 
-    	public Par X0Y1_ライン_ライン左下;
+    	public ShapePart X0Y1_ライン_ライン左下;
 
-    	public Par X0Y1_ライン_ライン右下;
+    	public ShapePart X0Y1_ライン_ライン右下;
 
-    	public Par X0Y1_ライン_ライン下左;
+    	public ShapePart X0Y1_ライン_ライン下左;
 
-    	public Par X0Y1_ライン_ライン下右;
+    	public ShapePart X0Y1_ライン_ライン下右;
 
-    	public Par X0Y1_結び紐左_紐1;
+    	public ShapePart X0Y1_結び紐左_紐1;
 
-    	public Par X0Y1_結び紐左_紐2;
+    	public ShapePart X0Y1_結び紐左_紐2;
 
-    	public Par X0Y1_結び紐左_輪1_紐後;
+    	public ShapePart X0Y1_結び紐左_輪1_紐後;
 
-    	public Par X0Y1_結び紐左_輪1_紐前;
+    	public ShapePart X0Y1_結び紐左_輪1_紐前;
 
-    	public Par X0Y1_結び紐左_輪2_紐後;
+    	public ShapePart X0Y1_結び紐左_輪2_紐後;
 
-    	public Par X0Y1_結び紐左_輪2_紐前;
+    	public ShapePart X0Y1_結び紐左_輪2_紐前;
 
-    	public Par X0Y1_結び紐左_結び目;
+    	public ShapePart X0Y1_結び紐左_結び目;
 
-    	public Par X0Y1_結び紐右_紐1;
+    	public ShapePart X0Y1_結び紐右_紐1;
 
-    	public Par X0Y1_結び紐右_紐2;
+    	public ShapePart X0Y1_結び紐右_紐2;
 
-    	public Par X0Y1_結び紐右_輪1_紐後;
+    	public ShapePart X0Y1_結び紐右_輪1_紐後;
 
-    	public Par X0Y1_結び紐右_輪1_紐前;
+    	public ShapePart X0Y1_結び紐右_輪1_紐前;
 
-    	public Par X0Y1_結び紐右_輪2_紐後;
+    	public ShapePart X0Y1_結び紐右_輪2_紐後;
 
-    	public Par X0Y1_結び紐右_輪2_紐前;
+    	public ShapePart X0Y1_結び紐右_輪2_紐前;
 
-    	public Par X0Y1_結び紐右_結び目;
+    	public ShapePart X0Y1_結び紐右_結び目;
 
-    	public Par X0Y1_ヴィオラ_紐左;
+    	public ShapePart X0Y1_ヴィオラ_紐左;
 
-    	public Par X0Y1_ヴィオラ_紐右;
+    	public ShapePart X0Y1_ヴィオラ_紐右;
 
-    	public Par X0Y1_ヴィオラ_丸金具左;
+    	public ShapePart X0Y1_ヴィオラ_丸金具左;
 
-    	public Par X0Y1_ヴィオラ_丸金具右;
+    	public ShapePart X0Y1_ヴィオラ_丸金具右;
 
-    	public Par X0Y1_ヴィオラ_金具左_金具1;
+    	public ShapePart X0Y1_ヴィオラ_金具左_金具1;
 
-    	public Par X0Y1_ヴィオラ_金具左_金具2;
+    	public ShapePart X0Y1_ヴィオラ_金具左_金具2;
 
-    	public Par X0Y1_ヴィオラ_金具右_金具1;
+    	public ShapePart X0Y1_ヴィオラ_金具右_金具1;
 
-    	public Par X0Y1_ヴィオラ_金具右_金具2;
+    	public ShapePart X0Y1_ヴィオラ_金具右_金具2;
 
-    	public Par X0Y1_染み_染み2;
+    	public ShapePart X0Y1_染み_染み2;
 
-    	public Par X0Y1_染み_染み1;
+    	public ShapePart X0Y1_染み_染み1;
 
-    	public Par X0Y2_紐左;
+    	public ShapePart X0Y2_紐左;
 
-    	public Par X0Y2_紐右;
+    	public ShapePart X0Y2_紐右;
 
-    	public Par X0Y2_下地;
+    	public ShapePart X0Y2_下地;
 
-    	public Par X0Y2_線;
+    	public ShapePart X0Y2_線;
 
-    	public Par X0Y2_ライン_ライン上;
+    	public ShapePart X0Y2_ライン_ライン上;
 
-    	public Par X0Y2_ライン_ライン左;
+    	public ShapePart X0Y2_ライン_ライン左;
 
-    	public Par X0Y2_ライン_ライン右;
+    	public ShapePart X0Y2_ライン_ライン右;
 
-    	public Par X0Y2_ライン_ライン左下;
+    	public ShapePart X0Y2_ライン_ライン左下;
 
-    	public Par X0Y2_ライン_ライン右下;
+    	public ShapePart X0Y2_ライン_ライン右下;
 
-    	public Par X0Y2_ライン_ライン下左;
+    	public ShapePart X0Y2_ライン_ライン下左;
 
-    	public Par X0Y2_ライン_ライン下右;
+    	public ShapePart X0Y2_ライン_ライン下右;
 
-    	public Par X0Y2_結び紐左_紐1;
+    	public ShapePart X0Y2_結び紐左_紐1;
 
-    	public Par X0Y2_結び紐左_紐2;
+    	public ShapePart X0Y2_結び紐左_紐2;
 
-    	public Par X0Y2_結び紐左_輪1_紐後;
+    	public ShapePart X0Y2_結び紐左_輪1_紐後;
 
-    	public Par X0Y2_結び紐左_輪1_紐前;
+    	public ShapePart X0Y2_結び紐左_輪1_紐前;
 
-    	public Par X0Y2_結び紐左_輪2_紐後;
+    	public ShapePart X0Y2_結び紐左_輪2_紐後;
 
-    	public Par X0Y2_結び紐左_輪2_紐前;
+    	public ShapePart X0Y2_結び紐左_輪2_紐前;
 
-    	public Par X0Y2_結び紐左_結び目;
+    	public ShapePart X0Y2_結び紐左_結び目;
 
-    	public Par X0Y2_結び紐右_紐1;
+    	public ShapePart X0Y2_結び紐右_紐1;
 
-    	public Par X0Y2_結び紐右_紐2;
+    	public ShapePart X0Y2_結び紐右_紐2;
 
-    	public Par X0Y2_結び紐右_輪1_紐後;
+    	public ShapePart X0Y2_結び紐右_輪1_紐後;
 
-    	public Par X0Y2_結び紐右_輪1_紐前;
+    	public ShapePart X0Y2_結び紐右_輪1_紐前;
 
-    	public Par X0Y2_結び紐右_輪2_紐後;
+    	public ShapePart X0Y2_結び紐右_輪2_紐後;
 
-    	public Par X0Y2_結び紐右_輪2_紐前;
+    	public ShapePart X0Y2_結び紐右_輪2_紐前;
 
-    	public Par X0Y2_結び紐右_結び目;
+    	public ShapePart X0Y2_結び紐右_結び目;
 
-    	public Par X0Y2_ヴィオラ_紐左;
+    	public ShapePart X0Y2_ヴィオラ_紐左;
 
-    	public Par X0Y2_ヴィオラ_紐右;
+    	public ShapePart X0Y2_ヴィオラ_紐右;
 
-    	public Par X0Y2_ヴィオラ_丸金具左;
+    	public ShapePart X0Y2_ヴィオラ_丸金具左;
 
-    	public Par X0Y2_ヴィオラ_丸金具右;
+    	public ShapePart X0Y2_ヴィオラ_丸金具右;
 
-    	public Par X0Y2_ヴィオラ_金具左_金具1;
+    	public ShapePart X0Y2_ヴィオラ_金具左_金具1;
 
-    	public Par X0Y2_ヴィオラ_金具左_金具2;
+    	public ShapePart X0Y2_ヴィオラ_金具左_金具2;
 
-    	public Par X0Y2_ヴィオラ_金具右_金具1;
+    	public ShapePart X0Y2_ヴィオラ_金具右_金具1;
 
-    	public Par X0Y2_ヴィオラ_金具右_金具2;
+    	public ShapePart X0Y2_ヴィオラ_金具右_金具2;
 
-    	public Par X0Y2_染み_染み2;
+    	public ShapePart X0Y2_染み_染み2;
 
-    	public Par X0Y2_染み_染み1;
+    	public ShapePart X0Y2_染み_染み1;
 
-    	public Par X0Y3_紐左;
+    	public ShapePart X0Y3_紐左;
 
-    	public Par X0Y3_紐右;
+    	public ShapePart X0Y3_紐右;
 
-    	public Par X0Y3_下地;
+    	public ShapePart X0Y3_下地;
 
-    	public Par X0Y3_線;
+    	public ShapePart X0Y3_線;
 
-    	public Par X0Y3_ライン_ライン上;
+    	public ShapePart X0Y3_ライン_ライン上;
 
-    	public Par X0Y3_ライン_ライン左;
+    	public ShapePart X0Y3_ライン_ライン左;
 
-    	public Par X0Y3_ライン_ライン右;
+    	public ShapePart X0Y3_ライン_ライン右;
 
-    	public Par X0Y3_ライン_ライン左下;
+    	public ShapePart X0Y3_ライン_ライン左下;
 
-    	public Par X0Y3_ライン_ライン右下;
+    	public ShapePart X0Y3_ライン_ライン右下;
 
-    	public Par X0Y3_ライン_ライン下左;
+    	public ShapePart X0Y3_ライン_ライン下左;
 
-    	public Par X0Y3_ライン_ライン下右;
+    	public ShapePart X0Y3_ライン_ライン下右;
 
-    	public Par X0Y3_結び紐左_紐1;
+    	public ShapePart X0Y3_結び紐左_紐1;
 
-    	public Par X0Y3_結び紐左_紐2;
+    	public ShapePart X0Y3_結び紐左_紐2;
 
-    	public Par X0Y3_結び紐左_輪1_紐後;
+    	public ShapePart X0Y3_結び紐左_輪1_紐後;
 
-    	public Par X0Y3_結び紐左_輪1_紐前;
+    	public ShapePart X0Y3_結び紐左_輪1_紐前;
 
-    	public Par X0Y3_結び紐左_輪2_紐後;
+    	public ShapePart X0Y3_結び紐左_輪2_紐後;
 
-    	public Par X0Y3_結び紐左_輪2_紐前;
+    	public ShapePart X0Y3_結び紐左_輪2_紐前;
 
-    	public Par X0Y3_結び紐左_結び目;
+    	public ShapePart X0Y3_結び紐左_結び目;
 
-    	public Par X0Y3_結び紐右_紐1;
+    	public ShapePart X0Y3_結び紐右_紐1;
 
-    	public Par X0Y3_結び紐右_紐2;
+    	public ShapePart X0Y3_結び紐右_紐2;
 
-    	public Par X0Y3_結び紐右_輪1_紐後;
+    	public ShapePart X0Y3_結び紐右_輪1_紐後;
 
-    	public Par X0Y3_結び紐右_輪1_紐前;
+    	public ShapePart X0Y3_結び紐右_輪1_紐前;
 
-    	public Par X0Y3_結び紐右_輪2_紐後;
+    	public ShapePart X0Y3_結び紐右_輪2_紐後;
 
-    	public Par X0Y3_結び紐右_輪2_紐前;
+    	public ShapePart X0Y3_結び紐右_輪2_紐前;
 
-    	public Par X0Y3_結び紐右_結び目;
+    	public ShapePart X0Y3_結び紐右_結び目;
 
-    	public Par X0Y3_ヴィオラ_紐左;
+    	public ShapePart X0Y3_ヴィオラ_紐左;
 
-    	public Par X0Y3_ヴィオラ_紐右;
+    	public ShapePart X0Y3_ヴィオラ_紐右;
 
-    	public Par X0Y3_ヴィオラ_丸金具左;
+    	public ShapePart X0Y3_ヴィオラ_丸金具左;
 
-    	public Par X0Y3_ヴィオラ_丸金具右;
+    	public ShapePart X0Y3_ヴィオラ_丸金具右;
 
-    	public Par X0Y3_ヴィオラ_金具左_金具1;
+    	public ShapePart X0Y3_ヴィオラ_金具左_金具1;
 
-    	public Par X0Y3_ヴィオラ_金具左_金具2;
+    	public ShapePart X0Y3_ヴィオラ_金具左_金具2;
 
-    	public Par X0Y3_ヴィオラ_金具右_金具1;
+    	public ShapePart X0Y3_ヴィオラ_金具右_金具1;
 
-    	public Par X0Y3_ヴィオラ_金具右_金具2;
+    	public ShapePart X0Y3_ヴィオラ_金具右_金具2;
 
-    	public Par X0Y3_染み_染み2;
+    	public ShapePart X0Y3_染み_染み2;
 
-    	public Par X0Y3_染み_染み1;
+    	public ShapePart X0Y3_染み_染み1;
 
-    	public Par X0Y4_紐左;
+    	public ShapePart X0Y4_紐左;
 
-    	public Par X0Y4_紐右;
+    	public ShapePart X0Y4_紐右;
 
-    	public Par X0Y4_下地;
+    	public ShapePart X0Y4_下地;
 
-    	public Par X0Y4_線;
+    	public ShapePart X0Y4_線;
 
-    	public Par X0Y4_ライン_ライン上;
+    	public ShapePart X0Y4_ライン_ライン上;
 
-    	public Par X0Y4_ライン_ライン左;
+    	public ShapePart X0Y4_ライン_ライン左;
 
-    	public Par X0Y4_ライン_ライン右;
+    	public ShapePart X0Y4_ライン_ライン右;
 
-    	public Par X0Y4_ライン_ライン左下;
+    	public ShapePart X0Y4_ライン_ライン左下;
 
-    	public Par X0Y4_ライン_ライン右下;
+    	public ShapePart X0Y4_ライン_ライン右下;
 
-    	public Par X0Y4_ライン_ライン下左;
+    	public ShapePart X0Y4_ライン_ライン下左;
 
-    	public Par X0Y4_ライン_ライン下右;
+    	public ShapePart X0Y4_ライン_ライン下右;
 
-    	public Par X0Y4_結び紐左_紐1;
+    	public ShapePart X0Y4_結び紐左_紐1;
 
-    	public Par X0Y4_結び紐左_紐2;
+    	public ShapePart X0Y4_結び紐左_紐2;
 
-    	public Par X0Y4_結び紐左_輪1_紐後;
+    	public ShapePart X0Y4_結び紐左_輪1_紐後;
 
-    	public Par X0Y4_結び紐左_輪1_紐前;
+    	public ShapePart X0Y4_結び紐左_輪1_紐前;
 
-    	public Par X0Y4_結び紐左_輪2_紐後;
+    	public ShapePart X0Y4_結び紐左_輪2_紐後;
 
-    	public Par X0Y4_結び紐左_輪2_紐前;
+    	public ShapePart X0Y4_結び紐左_輪2_紐前;
 
-    	public Par X0Y4_結び紐左_結び目;
+    	public ShapePart X0Y4_結び紐左_結び目;
 
-    	public Par X0Y4_結び紐右_紐1;
+    	public ShapePart X0Y4_結び紐右_紐1;
 
-    	public Par X0Y4_結び紐右_紐2;
+    	public ShapePart X0Y4_結び紐右_紐2;
 
-    	public Par X0Y4_結び紐右_輪1_紐後;
+    	public ShapePart X0Y4_結び紐右_輪1_紐後;
 
-    	public Par X0Y4_結び紐右_輪1_紐前;
+    	public ShapePart X0Y4_結び紐右_輪1_紐前;
 
-    	public Par X0Y4_結び紐右_輪2_紐後;
+    	public ShapePart X0Y4_結び紐右_輪2_紐後;
 
-    	public Par X0Y4_結び紐右_輪2_紐前;
+    	public ShapePart X0Y4_結び紐右_輪2_紐前;
 
-    	public Par X0Y4_結び紐右_結び目;
+    	public ShapePart X0Y4_結び紐右_結び目;
 
-    	public Par X0Y4_ヴィオラ_紐左;
+    	public ShapePart X0Y4_ヴィオラ_紐左;
 
-    	public Par X0Y4_ヴィオラ_紐右;
+    	public ShapePart X0Y4_ヴィオラ_紐右;
 
-    	public Par X0Y4_ヴィオラ_丸金具左;
+    	public ShapePart X0Y4_ヴィオラ_丸金具左;
 
-    	public Par X0Y4_ヴィオラ_丸金具右;
+    	public ShapePart X0Y4_ヴィオラ_丸金具右;
 
-    	public Par X0Y4_ヴィオラ_金具左_金具1;
+    	public ShapePart X0Y4_ヴィオラ_金具左_金具1;
 
-    	public Par X0Y4_ヴィオラ_金具左_金具2;
+    	public ShapePart X0Y4_ヴィオラ_金具左_金具2;
 
-    	public Par X0Y4_ヴィオラ_金具右_金具1;
+    	public ShapePart X0Y4_ヴィオラ_金具右_金具1;
 
-    	public Par X0Y4_ヴィオラ_金具右_金具2;
+    	public ShapePart X0Y4_ヴィオラ_金具右_金具2;
 
-    	public Par X0Y4_染み_染み2;
+    	public ShapePart X0Y4_染み_染み2;
 
-    	public Par X0Y4_染み_染み1;
+    	public ShapePart X0Y4_染み_染み1;
 
     	public ColorD 紐左CD;
 
@@ -2498,7 +2498,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override bool Is布(Par p)
+    	public override bool Is布(ShapePart p)
     	{
     		if (p != X0Y0_紐左 && p != X0Y0_紐右 && p != X0Y0_下地 && p != X0Y0_線 && p != X0Y0_ライン_ライン上 && p != X0Y0_ライン_ライン左 && p != X0Y0_ライン_ライン右 && p != X0Y0_ライン_ライン左下 && p != X0Y0_ライン_ライン右下 && p != X0Y0_ライン_ライン下左 && p != X0Y0_ライン_ライン下右 && p != X0Y0_結び紐左_紐1 && p != X0Y0_結び紐左_紐2 && p != X0Y0_結び紐左_輪1_紐後 && p != X0Y0_結び紐左_輪1_紐前 && p != X0Y0_結び紐左_輪2_紐後 && p != X0Y0_結び紐左_輪2_紐前 && p != X0Y0_結び紐左_結び目 && p != X0Y0_結び紐右_紐1 && p != X0Y0_結び紐右_紐2 && p != X0Y0_結び紐右_輪1_紐後 && p != X0Y0_結び紐右_輪1_紐前 && p != X0Y0_結び紐右_輪2_紐後 && p != X0Y0_結び紐右_輪2_紐前 && p != X0Y0_結び紐右_結び目 && p != X0Y0_ヴィオラ_紐左 && p != X0Y0_ヴィオラ_紐右 && p != X0Y0_ヴィオラ_丸金具左 && p != X0Y0_ヴィオラ_丸金具右 && p != X0Y0_ヴィオラ_金具左_金具1 && p != X0Y0_ヴィオラ_金具左_金具2 && p != X0Y0_ヴィオラ_金具右_金具1 && p != X0Y0_ヴィオラ_金具右_金具2 && p != X0Y0_染み_染み2 && p != X0Y0_染み_染み1 && p != X0Y1_紐左 && p != X0Y1_紐右 && p != X0Y1_下地 && p != X0Y1_線 && p != X0Y1_ライン_ライン上 && p != X0Y1_ライン_ライン左 && p != X0Y1_ライン_ライン右 && p != X0Y1_ライン_ライン左下 && p != X0Y1_ライン_ライン右下 && p != X0Y1_ライン_ライン下左 && p != X0Y1_ライン_ライン下右 && p != X0Y1_結び紐左_紐1 && p != X0Y1_結び紐左_紐2 && p != X0Y1_結び紐左_輪1_紐後 && p != X0Y1_結び紐左_輪1_紐前 && p != X0Y1_結び紐左_輪2_紐後 && p != X0Y1_結び紐左_輪2_紐前 && p != X0Y1_結び紐左_結び目 && p != X0Y1_結び紐右_紐1 && p != X0Y1_結び紐右_紐2 && p != X0Y1_結び紐右_輪1_紐後 && p != X0Y1_結び紐右_輪1_紐前 && p != X0Y1_結び紐右_輪2_紐後 && p != X0Y1_結び紐右_輪2_紐前 && p != X0Y1_結び紐右_結び目 && p != X0Y1_ヴィオラ_紐左 && p != X0Y1_ヴィオラ_紐右 && p != X0Y1_ヴィオラ_丸金具左 && p != X0Y1_ヴィオラ_丸金具右 && p != X0Y1_ヴィオラ_金具左_金具1 && p != X0Y1_ヴィオラ_金具左_金具2 && p != X0Y1_ヴィオラ_金具右_金具1 && p != X0Y1_ヴィオラ_金具右_金具2 && p != X0Y1_染み_染み2 && p != X0Y1_染み_染み1 && p != X0Y2_紐左 && p != X0Y2_紐右 && p != X0Y2_下地 && p != X0Y2_線 && p != X0Y2_ライン_ライン上 && p != X0Y2_ライン_ライン左 && p != X0Y2_ライン_ライン右 && p != X0Y2_ライン_ライン左下 && p != X0Y2_ライン_ライン右下 && p != X0Y2_ライン_ライン下左 && p != X0Y2_ライン_ライン下右 && p != X0Y2_結び紐左_紐1 && p != X0Y2_結び紐左_紐2 && p != X0Y2_結び紐左_輪1_紐後 && p != X0Y2_結び紐左_輪1_紐前 && p != X0Y2_結び紐左_輪2_紐後 && p != X0Y2_結び紐左_輪2_紐前 && p != X0Y2_結び紐左_結び目 && p != X0Y2_結び紐右_紐1 && p != X0Y2_結び紐右_紐2 && p != X0Y2_結び紐右_輪1_紐後 && p != X0Y2_結び紐右_輪1_紐前 && p != X0Y2_結び紐右_輪2_紐後 && p != X0Y2_結び紐右_輪2_紐前 && p != X0Y2_結び紐右_結び目 && p != X0Y2_ヴィオラ_紐左 && p != X0Y2_ヴィオラ_紐右 && p != X0Y2_ヴィオラ_丸金具左 && p != X0Y2_ヴィオラ_丸金具右 && p != X0Y2_ヴィオラ_金具左_金具1 && p != X0Y2_ヴィオラ_金具左_金具2 && p != X0Y2_ヴィオラ_金具右_金具1 && p != X0Y2_ヴィオラ_金具右_金具2 && p != X0Y2_染み_染み2 && p != X0Y2_染み_染み1 && p != X0Y3_紐左 && p != X0Y3_紐右 && p != X0Y3_下地 && p != X0Y3_線 && p != X0Y3_ライン_ライン上 && p != X0Y3_ライン_ライン左 && p != X0Y3_ライン_ライン右 && p != X0Y3_ライン_ライン左下 && p != X0Y3_ライン_ライン右下 && p != X0Y3_ライン_ライン下左 && p != X0Y3_ライン_ライン下右 && p != X0Y3_結び紐左_紐1 && p != X0Y3_結び紐左_紐2 && p != X0Y3_結び紐左_輪1_紐後 && p != X0Y3_結び紐左_輪1_紐前 && p != X0Y3_結び紐左_輪2_紐後 && p != X0Y3_結び紐左_輪2_紐前 && p != X0Y3_結び紐左_結び目 && p != X0Y3_結び紐右_紐1 && p != X0Y3_結び紐右_紐2 && p != X0Y3_結び紐右_輪1_紐後 && p != X0Y3_結び紐右_輪1_紐前 && p != X0Y3_結び紐右_輪2_紐後 && p != X0Y3_結び紐右_輪2_紐前 && p != X0Y3_結び紐右_結び目 && p != X0Y3_ヴィオラ_紐左 && p != X0Y3_ヴィオラ_紐右 && p != X0Y3_ヴィオラ_丸金具左 && p != X0Y3_ヴィオラ_丸金具右 && p != X0Y3_ヴィオラ_金具左_金具1 && p != X0Y3_ヴィオラ_金具左_金具2 && p != X0Y3_ヴィオラ_金具右_金具1 && p != X0Y3_ヴィオラ_金具右_金具2 && p != X0Y3_染み_染み2 && p != X0Y3_染み_染み1 && p != X0Y4_紐左 && p != X0Y4_紐右 && p != X0Y4_下地 && p != X0Y4_線 && p != X0Y4_ライン_ライン上 && p != X0Y4_ライン_ライン左 && p != X0Y4_ライン_ライン右 && p != X0Y4_ライン_ライン左下 && p != X0Y4_ライン_ライン右下 && p != X0Y4_ライン_ライン下左 && p != X0Y4_ライン_ライン下右 && p != X0Y4_結び紐左_紐1 && p != X0Y4_結び紐左_紐2 && p != X0Y4_結び紐左_輪1_紐後 && p != X0Y4_結び紐左_輪1_紐前 && p != X0Y4_結び紐左_輪2_紐後 && p != X0Y4_結び紐左_輪2_紐前 && p != X0Y4_結び紐左_結び目 && p != X0Y4_結び紐右_紐1 && p != X0Y4_結び紐右_紐2 && p != X0Y4_結び紐右_輪1_紐後 && p != X0Y4_結び紐右_輪1_紐前 && p != X0Y4_結び紐右_輪2_紐後 && p != X0Y4_結び紐右_輪2_紐前 && p != X0Y4_結び紐右_結び目 && p != X0Y4_ヴィオラ_紐左 && p != X0Y4_ヴィオラ_紐右 && p != X0Y4_ヴィオラ_丸金具左 && p != X0Y4_ヴィオラ_丸金具右 && p != X0Y4_ヴィオラ_金具左_金具1 && p != X0Y4_ヴィオラ_金具左_金具2 && p != X0Y4_ヴィオラ_金具右_金具1 && p != X0Y4_ヴィオラ_金具右_金具2 && p != X0Y4_染み_染み2)
     		{

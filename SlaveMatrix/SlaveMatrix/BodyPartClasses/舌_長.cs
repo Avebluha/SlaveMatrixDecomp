@@ -4,39 +4,39 @@ namespace SlaveMatrix
 {
     public class 舌_長 : 舌
     {
-    	public Par X0Y0_舌1;
+    	public ShapePart X0Y0_舌1;
 
-    	public Par X0Y0_舌2;
+    	public ShapePart X0Y0_舌2;
 
-    	public Par X0Y0_舌3;
+    	public ShapePart X0Y0_舌3;
 
-    	public Par X0Y0_舌4;
+    	public ShapePart X0Y0_舌4;
 
-    	public Par X0Y0_舌5;
+    	public ShapePart X0Y0_舌5;
 
-    	public Par X0Y0_舌股左_舌1;
+    	public ShapePart X0Y0_舌股左_舌1;
 
-    	public Par X0Y0_舌股左_舌2;
+    	public ShapePart X0Y0_舌股左_舌2;
 
-    	public Par X0Y0_舌股左_舌3;
+    	public ShapePart X0Y0_舌股左_舌3;
 
-    	public Par X0Y0_舌股左_舌4;
+    	public ShapePart X0Y0_舌股左_舌4;
 
-    	public Par X0Y0_舌股左_舌5;
+    	public ShapePart X0Y0_舌股左_舌5;
 
-    	public Par X0Y0_舌股左_舌6;
+    	public ShapePart X0Y0_舌股左_舌6;
 
-    	public Par X0Y0_舌股右_舌1;
+    	public ShapePart X0Y0_舌股右_舌1;
 
-    	public Par X0Y0_舌股右_舌2;
+    	public ShapePart X0Y0_舌股右_舌2;
 
-    	public Par X0Y0_舌股右_舌3;
+    	public ShapePart X0Y0_舌股右_舌3;
 
-    	public Par X0Y0_舌股右_舌4;
+    	public ShapePart X0Y0_舌股右_舌4;
 
-    	public Par X0Y0_舌股右_舌5;
+    	public ShapePart X0Y0_舌股右_舌5;
 
-    	public Par X0Y0_舌股右_舌6;
+    	public ShapePart X0Y0_舌股右_舌6;
 
     	public ColorD 舌1CD;
 
@@ -106,7 +106,7 @@ namespace SlaveMatrix
 
     	public ColorP X0Y0_舌股右_舌6CP;
 
-    	public Par[] Pars;
+    	public ShapePart[] Pars;
 
     	private Vector2D[] mm;
 
@@ -526,7 +526,7 @@ namespace SlaveMatrix
     		}
     		base.配色指定 = 配色指定;
     		配色(体配色);
-    		Pars = new Par[17]
+    		Pars = new ShapePart[17]
     		{
     			X0Y0_舌1, X0Y0_舌2, X0Y0_舌3, X0Y0_舌4, X0Y0_舌5, X0Y0_舌股左_舌1, X0Y0_舌股左_舌2, X0Y0_舌股左_舌3, X0Y0_舌股左_舌4, X0Y0_舌股左_舌5,
     			X0Y0_舌股左_舌6, X0Y0_舌股右_舌1, X0Y0_舌股右_舌2, X0Y0_舌股右_舌3, X0Y0_舌股右_舌4, X0Y0_舌股右_舌5, X0Y0_舌股右_舌6

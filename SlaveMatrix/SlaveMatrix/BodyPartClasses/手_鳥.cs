@@ -4,151 +4,151 @@ namespace SlaveMatrix
 {
     public class 手_鳥 : 翼手
     {
-    	public Par X0Y0_鳥翼手;
+    	public ShapePart X0Y0_鳥翼手;
 
-    	public Par X0Y0_風切羽_羽10;
+    	public ShapePart X0Y0_風切羽_羽10;
 
-    	public Par X0Y0_風切羽_羽9;
+    	public ShapePart X0Y0_風切羽_羽9;
 
-    	public Par X0Y0_風切羽_羽8;
+    	public ShapePart X0Y0_風切羽_羽8;
 
-    	public Par X0Y0_風切羽_羽7;
+    	public ShapePart X0Y0_風切羽_羽7;
 
-    	public Par X0Y0_風切羽_羽6;
+    	public ShapePart X0Y0_風切羽_羽6;
 
-    	public Par X0Y0_風切羽_羽5;
+    	public ShapePart X0Y0_風切羽_羽5;
 
-    	public Par X0Y0_風切羽_羽4;
+    	public ShapePart X0Y0_風切羽_羽4;
 
-    	public Par X0Y0_風切羽_羽3;
+    	public ShapePart X0Y0_風切羽_羽3;
 
-    	public Par X0Y0_風切羽_羽2;
+    	public ShapePart X0Y0_風切羽_羽2;
 
-    	public Par X0Y0_風切羽_羽1;
+    	public ShapePart X0Y0_風切羽_羽1;
 
-    	public Par X0Y0_雨覆羽_羽10;
+    	public ShapePart X0Y0_雨覆羽_羽10;
 
-    	public Par X0Y0_雨覆羽_羽9;
+    	public ShapePart X0Y0_雨覆羽_羽9;
 
-    	public Par X0Y0_雨覆羽_羽8;
+    	public ShapePart X0Y0_雨覆羽_羽8;
 
-    	public Par X0Y0_雨覆羽_羽7;
+    	public ShapePart X0Y0_雨覆羽_羽7;
 
-    	public Par X0Y0_雨覆羽_羽6;
+    	public ShapePart X0Y0_雨覆羽_羽6;
 
-    	public Par X0Y0_雨覆羽_羽5;
+    	public ShapePart X0Y0_雨覆羽_羽5;
 
-    	public Par X0Y0_雨覆羽_羽4;
+    	public ShapePart X0Y0_雨覆羽_羽4;
 
-    	public Par X0Y0_雨覆羽_羽3;
+    	public ShapePart X0Y0_雨覆羽_羽3;
 
-    	public Par X0Y0_雨覆羽_羽2;
+    	public ShapePart X0Y0_雨覆羽_羽2;
 
-    	public Par X0Y0_雨覆羽_羽1;
+    	public ShapePart X0Y0_雨覆羽_羽1;
 
-    	public Par X0Y0_小翼羽_羽3;
+    	public ShapePart X0Y0_小翼羽_羽3;
 
-    	public Par X0Y0_小翼羽_羽2;
+    	public ShapePart X0Y0_小翼羽_羽2;
 
-    	public Par X0Y0_小翼羽_羽1;
+    	public ShapePart X0Y0_小翼羽_羽1;
 
-    	public Par X0Y0_指_中指_爪;
+    	public ShapePart X0Y0_指_中指_爪;
 
-    	public Par X0Y0_指_中指_指3;
+    	public ShapePart X0Y0_指_中指_指3;
 
-    	public Par X0Y0_指_中指_指2;
+    	public ShapePart X0Y0_指_中指_指2;
 
-    	public Par X0Y0_指_中指_指1;
+    	public ShapePart X0Y0_指_中指_指1;
 
-    	public Par X0Y0_指_中指_鱗3_鱗1;
+    	public ShapePart X0Y0_指_中指_鱗3_鱗1;
 
-    	public Par X0Y0_指_中指_鱗3_鱗2;
+    	public ShapePart X0Y0_指_中指_鱗3_鱗2;
 
-    	public Par X0Y0_指_中指_鱗3_鱗3;
+    	public ShapePart X0Y0_指_中指_鱗3_鱗3;
 
-    	public Par X0Y0_指_中指_鱗3_鱗4;
+    	public ShapePart X0Y0_指_中指_鱗3_鱗4;
 
-    	public Par X0Y0_指_中指_鱗2_鱗1;
+    	public ShapePart X0Y0_指_中指_鱗2_鱗1;
 
-    	public Par X0Y0_指_中指_鱗2_鱗2;
+    	public ShapePart X0Y0_指_中指_鱗2_鱗2;
 
-    	public Par X0Y0_指_中指_鱗2_鱗3;
+    	public ShapePart X0Y0_指_中指_鱗2_鱗3;
 
-    	public Par X0Y0_指_中指_鱗2_鱗4;
+    	public ShapePart X0Y0_指_中指_鱗2_鱗4;
 
-    	public Par X0Y0_指_中指_鱗1_鱗1;
+    	public ShapePart X0Y0_指_中指_鱗1_鱗1;
 
-    	public Par X0Y0_指_中指_鱗1_鱗2;
+    	public ShapePart X0Y0_指_中指_鱗1_鱗2;
 
-    	public Par X0Y0_指_中指_鱗1_鱗3;
+    	public ShapePart X0Y0_指_中指_鱗1_鱗3;
 
-    	public Par X0Y0_指_中指_鱗1_鱗4;
+    	public ShapePart X0Y0_指_中指_鱗1_鱗4;
 
-    	public Par X0Y0_指_中指_鱗1_鱗5;
+    	public ShapePart X0Y0_指_中指_鱗1_鱗5;
 
-    	public Par X0Y0_指_中指_鱗1_鱗6;
+    	public ShapePart X0Y0_指_中指_鱗1_鱗6;
 
-    	public Par X0Y0_指_人指_爪;
+    	public ShapePart X0Y0_指_人指_爪;
 
-    	public Par X0Y0_指_人指_指3;
+    	public ShapePart X0Y0_指_人指_指3;
 
-    	public Par X0Y0_指_人指_指2;
+    	public ShapePart X0Y0_指_人指_指2;
 
-    	public Par X0Y0_指_人指_指1;
+    	public ShapePart X0Y0_指_人指_指1;
 
-    	public Par X0Y0_指_人指_鱗3_鱗1;
+    	public ShapePart X0Y0_指_人指_鱗3_鱗1;
 
-    	public Par X0Y0_指_人指_鱗3_鱗2;
+    	public ShapePart X0Y0_指_人指_鱗3_鱗2;
 
-    	public Par X0Y0_指_人指_鱗3_鱗3;
+    	public ShapePart X0Y0_指_人指_鱗3_鱗3;
 
-    	public Par X0Y0_指_人指_鱗3_鱗4;
+    	public ShapePart X0Y0_指_人指_鱗3_鱗4;
 
-    	public Par X0Y0_指_人指_鱗2_鱗1;
+    	public ShapePart X0Y0_指_人指_鱗2_鱗1;
 
-    	public Par X0Y0_指_人指_鱗2_鱗2;
+    	public ShapePart X0Y0_指_人指_鱗2_鱗2;
 
-    	public Par X0Y0_指_人指_鱗2_鱗3;
+    	public ShapePart X0Y0_指_人指_鱗2_鱗3;
 
-    	public Par X0Y0_指_人指_鱗2_鱗4;
+    	public ShapePart X0Y0_指_人指_鱗2_鱗4;
 
-    	public Par X0Y0_指_人指_鱗1_鱗1;
+    	public ShapePart X0Y0_指_人指_鱗1_鱗1;
 
-    	public Par X0Y0_指_人指_鱗1_鱗2;
+    	public ShapePart X0Y0_指_人指_鱗1_鱗2;
 
-    	public Par X0Y0_指_人指_鱗1_鱗3;
+    	public ShapePart X0Y0_指_人指_鱗1_鱗3;
 
-    	public Par X0Y0_指_人指_鱗1_鱗4;
+    	public ShapePart X0Y0_指_人指_鱗1_鱗4;
 
-    	public Par X0Y0_指_人指_鱗1_鱗5;
+    	public ShapePart X0Y0_指_人指_鱗1_鱗5;
 
-    	public Par X0Y0_指_人指_鱗1_鱗6;
+    	public ShapePart X0Y0_指_人指_鱗1_鱗6;
 
-    	public Par X0Y0_指_親指_爪;
+    	public ShapePart X0Y0_指_親指_爪;
 
-    	public Par X0Y0_指_親指_指2;
+    	public ShapePart X0Y0_指_親指_指2;
 
-    	public Par X0Y0_指_親指_指1;
+    	public ShapePart X0Y0_指_親指_指1;
 
-    	public Par X0Y0_指_親指_鱗2_鱗1;
+    	public ShapePart X0Y0_指_親指_鱗2_鱗1;
 
-    	public Par X0Y0_指_親指_鱗2_鱗2;
+    	public ShapePart X0Y0_指_親指_鱗2_鱗2;
 
-    	public Par X0Y0_指_親指_鱗2_鱗3;
+    	public ShapePart X0Y0_指_親指_鱗2_鱗3;
 
-    	public Par X0Y0_指_親指_鱗2_鱗4;
+    	public ShapePart X0Y0_指_親指_鱗2_鱗4;
 
-    	public Par X0Y0_指_親指_鱗1_鱗1;
+    	public ShapePart X0Y0_指_親指_鱗1_鱗1;
 
-    	public Par X0Y0_指_親指_鱗1_鱗2;
+    	public ShapePart X0Y0_指_親指_鱗1_鱗2;
 
-    	public Par X0Y0_指_親指_鱗1_鱗3;
+    	public ShapePart X0Y0_指_親指_鱗1_鱗3;
 
-    	public Par X0Y0_指_親指_鱗1_鱗4;
+    	public ShapePart X0Y0_指_親指_鱗1_鱗4;
 
-    	public Par X0Y0_指_親指_鱗1_鱗5;
+    	public ShapePart X0Y0_指_親指_鱗1_鱗5;
 
-    	public Par X0Y0_指_親指_鱗1_鱗6;
+    	public ShapePart X0Y0_指_親指_鱗1_鱗6;
 
     	public ColorD 鳥翼手CD;
 

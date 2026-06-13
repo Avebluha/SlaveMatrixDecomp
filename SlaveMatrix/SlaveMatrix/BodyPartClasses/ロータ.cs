@@ -5,31 +5,31 @@ namespace SlaveMatrix
 {
     public class ロータ : Ele
     {
-    	public Par X0Y0_ロータ;
+    	public ShapePart X0Y0_ロータ;
 
-    	public Par X0Y0_ロータ線;
+    	public ShapePart X0Y0_ロータ線;
 
-    	public Par X0Y0_コード;
+    	public ShapePart X0Y0_コード;
 
-    	public Par X0Y1_ロータ;
+    	public ShapePart X0Y1_ロータ;
 
-    	public Par X0Y1_ロータ線;
+    	public ShapePart X0Y1_ロータ線;
 
-    	public Par X0Y1_コード;
+    	public ShapePart X0Y1_コード;
 
-    	public Par X0Y2_ロータ;
+    	public ShapePart X0Y2_ロータ;
 
-    	public Par X0Y2_ロータ線;
+    	public ShapePart X0Y2_ロータ線;
 
-    	public Par X0Y2_コード;
+    	public ShapePart X0Y2_コード;
 
-    	public Par X0Y3_ロータ;
+    	public ShapePart X0Y3_ロータ;
 
-    	public Par X0Y3_コード;
+    	public ShapePart X0Y3_コード;
 
-    	public Par X0Y4_ロータ;
+    	public ShapePart X0Y4_ロータ;
 
-    	public Par X0Y4_コード;
+    	public ShapePart X0Y4_コード;
 
     	public ColorD ロータCD;
 

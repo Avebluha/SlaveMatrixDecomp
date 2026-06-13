@@ -4,21 +4,21 @@ namespace SlaveMatrix
 {
     public class BackHair1_結1カル : アップ
     {
-    	public Par X0Y0_髪基;
+    	public ShapePart X0Y0_髪基;
 
-    	public Par X0Y0_お下げ_髪根;
+    	public ShapePart X0Y0_お下げ_髪根;
 
-    	public Par X0Y0_お下げ_髪左1;
+    	public ShapePart X0Y0_お下げ_髪左1;
 
-    	public Par X0Y0_お下げ_髪左2;
+    	public ShapePart X0Y0_お下げ_髪左2;
 
-    	public Par X0Y0_お下げ_髪左3;
+    	public ShapePart X0Y0_お下げ_髪左3;
 
-    	public Par X0Y0_お下げ_髪右1;
+    	public ShapePart X0Y0_お下げ_髪右1;
 
-    	public Par X0Y0_お下げ_髪右2;
+    	public ShapePart X0Y0_お下げ_髪右2;
 
-    	public Par X0Y0_お下げ_髪右3;
+    	public ShapePart X0Y0_お下げ_髪右3;
 
     	public ColorD 髪基CD;
 

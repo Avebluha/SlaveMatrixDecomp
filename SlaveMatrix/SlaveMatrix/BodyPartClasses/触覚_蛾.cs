@@ -5,307 +5,307 @@ namespace SlaveMatrix
 {
     public class 触覚_蛾 : 触覚
     {
-    	public Par X0Y0_節1_節;
+    	public ShapePart X0Y0_節1_節;
 
-    	public Par X0Y0_節1_毛左;
+    	public ShapePart X0Y0_節1_毛左;
 
-    	public Par X0Y0_節1_毛右;
+    	public ShapePart X0Y0_節1_毛右;
 
-    	public Par X0Y0_節2_節;
+    	public ShapePart X0Y0_節2_節;
 
-    	public Par X0Y0_節2_毛左;
+    	public ShapePart X0Y0_節2_毛左;
 
-    	public Par X0Y0_節2_毛右;
+    	public ShapePart X0Y0_節2_毛右;
 
-    	public Par X0Y0_節3_節;
+    	public ShapePart X0Y0_節3_節;
 
-    	public Par X0Y0_節3_毛左;
+    	public ShapePart X0Y0_節3_毛左;
 
-    	public Par X0Y0_節3_毛右;
+    	public ShapePart X0Y0_節3_毛右;
 
-    	public Par X0Y0_節4_節;
+    	public ShapePart X0Y0_節4_節;
 
-    	public Par X0Y0_節4_毛左;
+    	public ShapePart X0Y0_節4_毛左;
 
-    	public Par X0Y0_節4_毛右;
+    	public ShapePart X0Y0_節4_毛右;
 
-    	public Par X0Y0_節5_節;
+    	public ShapePart X0Y0_節5_節;
 
-    	public Par X0Y0_節5_毛左;
+    	public ShapePart X0Y0_節5_毛左;
 
-    	public Par X0Y0_節5_毛右;
+    	public ShapePart X0Y0_節5_毛右;
 
-    	public Par X0Y0_節6_節;
+    	public ShapePart X0Y0_節6_節;
 
-    	public Par X0Y0_節6_毛左;
+    	public ShapePart X0Y0_節6_毛左;
 
-    	public Par X0Y0_節6_毛右;
+    	public ShapePart X0Y0_節6_毛右;
 
-    	public Par X0Y0_節7_節;
+    	public ShapePart X0Y0_節7_節;
 
-    	public Par X0Y0_節7_毛左;
+    	public ShapePart X0Y0_節7_毛左;
 
-    	public Par X0Y0_節7_毛右;
+    	public ShapePart X0Y0_節7_毛右;
 
-    	public Par X0Y0_節8_節;
+    	public ShapePart X0Y0_節8_節;
 
-    	public Par X0Y0_節8_毛左;
+    	public ShapePart X0Y0_節8_毛左;
 
-    	public Par X0Y0_節8_毛右;
+    	public ShapePart X0Y0_節8_毛右;
 
-    	public Par X0Y0_節9_節;
+    	public ShapePart X0Y0_節9_節;
 
-    	public Par X0Y0_節9_毛左;
+    	public ShapePart X0Y0_節9_毛左;
 
-    	public Par X0Y0_節9_毛右;
+    	public ShapePart X0Y0_節9_毛右;
 
-    	public Par X0Y0_節10_節;
+    	public ShapePart X0Y0_節10_節;
 
-    	public Par X0Y0_節10_毛左;
+    	public ShapePart X0Y0_節10_毛左;
 
-    	public Par X0Y0_節10_毛右;
+    	public ShapePart X0Y0_節10_毛右;
 
-    	public Par X0Y0_節11_節;
+    	public ShapePart X0Y0_節11_節;
 
-    	public Par X0Y0_節11_毛左;
+    	public ShapePart X0Y0_節11_毛左;
 
-    	public Par X0Y0_節11_毛右;
+    	public ShapePart X0Y0_節11_毛右;
 
-    	public Par X0Y0_節12_節;
+    	public ShapePart X0Y0_節12_節;
 
-    	public Par X0Y0_節12_毛左;
+    	public ShapePart X0Y0_節12_毛左;
 
-    	public Par X0Y0_節12_毛右;
+    	public ShapePart X0Y0_節12_毛右;
 
-    	public Par X0Y0_節13_節;
+    	public ShapePart X0Y0_節13_節;
 
-    	public Par X0Y0_節13_毛左;
+    	public ShapePart X0Y0_節13_毛左;
 
-    	public Par X0Y0_節13_毛右;
+    	public ShapePart X0Y0_節13_毛右;
 
-    	public Par X0Y0_節14_節;
+    	public ShapePart X0Y0_節14_節;
 
-    	public Par X0Y0_節14_毛左;
+    	public ShapePart X0Y0_節14_毛左;
 
-    	public Par X0Y0_節14_毛右;
+    	public ShapePart X0Y0_節14_毛右;
 
-    	public Par X0Y0_節15_節;
+    	public ShapePart X0Y0_節15_節;
 
-    	public Par X0Y0_節15_毛左;
+    	public ShapePart X0Y0_節15_毛左;
 
-    	public Par X0Y0_節15_毛右;
+    	public ShapePart X0Y0_節15_毛右;
 
-    	public Par X0Y0_節16_節;
+    	public ShapePart X0Y0_節16_節;
 
-    	public Par X0Y0_節16_毛左;
+    	public ShapePart X0Y0_節16_毛左;
 
-    	public Par X0Y0_節16_毛右;
+    	public ShapePart X0Y0_節16_毛右;
 
-    	public Par X0Y0_節17_節;
+    	public ShapePart X0Y0_節17_節;
 
-    	public Par X0Y0_節17_毛左;
+    	public ShapePart X0Y0_節17_毛左;
 
-    	public Par X0Y0_節17_毛右;
+    	public ShapePart X0Y0_節17_毛右;
 
-    	public Par X0Y0_節18_節;
+    	public ShapePart X0Y0_節18_節;
 
-    	public Par X0Y0_節18_毛左;
+    	public ShapePart X0Y0_節18_毛左;
 
-    	public Par X0Y0_節18_毛右;
+    	public ShapePart X0Y0_節18_毛右;
 
-    	public Par X0Y0_節19_節;
+    	public ShapePart X0Y0_節19_節;
 
-    	public Par X0Y0_節19_毛左;
+    	public ShapePart X0Y0_節19_毛左;
 
-    	public Par X0Y0_節19_毛右;
+    	public ShapePart X0Y0_節19_毛右;
 
-    	public Par X0Y0_節20_節;
+    	public ShapePart X0Y0_節20_節;
 
-    	public Par X0Y0_節20_毛左;
+    	public ShapePart X0Y0_節20_毛左;
 
-    	public Par X0Y0_節20_毛右;
+    	public ShapePart X0Y0_節20_毛右;
 
-    	public Par X0Y0_節21_節;
+    	public ShapePart X0Y0_節21_節;
 
-    	public Par X0Y0_節21_毛左;
+    	public ShapePart X0Y0_節21_毛左;
 
-    	public Par X0Y0_節21_毛右;
+    	public ShapePart X0Y0_節21_毛右;
 
-    	public Par X0Y0_節22_節;
+    	public ShapePart X0Y0_節22_節;
 
-    	public Par X0Y0_節22_毛左;
+    	public ShapePart X0Y0_節22_毛左;
 
-    	public Par X0Y0_節22_毛右;
+    	public ShapePart X0Y0_節22_毛右;
 
-    	public Par X0Y0_節23_節;
+    	public ShapePart X0Y0_節23_節;
 
-    	public Par X0Y0_節23_毛左;
+    	public ShapePart X0Y0_節23_毛左;
 
-    	public Par X0Y0_節23_毛右;
+    	public ShapePart X0Y0_節23_毛右;
 
-    	public Par X0Y0_節24_節;
+    	public ShapePart X0Y0_節24_節;
 
-    	public Par X0Y0_節24_毛左;
+    	public ShapePart X0Y0_節24_毛左;
 
-    	public Par X0Y0_節24_毛右;
+    	public ShapePart X0Y0_節24_毛右;
 
-    	public Par X0Y0_節25_節;
+    	public ShapePart X0Y0_節25_節;
 
-    	public Par X0Y0_節25_毛左;
+    	public ShapePart X0Y0_節25_毛左;
 
-    	public Par X0Y0_節25_毛右;
+    	public ShapePart X0Y0_節25_毛右;
 
-    	public Par X0Y0_節26_節;
+    	public ShapePart X0Y0_節26_節;
 
-    	public Par X0Y0_節26_毛左;
+    	public ShapePart X0Y0_節26_毛左;
 
-    	public Par X0Y0_節26_毛右;
+    	public ShapePart X0Y0_節26_毛右;
 
-    	public Par X0Y0_節27_節;
+    	public ShapePart X0Y0_節27_節;
 
-    	public Par X0Y0_節27_毛左;
+    	public ShapePart X0Y0_節27_毛左;
 
-    	public Par X0Y0_節27_毛右;
+    	public ShapePart X0Y0_節27_毛右;
 
-    	public Par X0Y0_節28_節;
+    	public ShapePart X0Y0_節28_節;
 
-    	public Par X0Y0_節28_毛左;
+    	public ShapePart X0Y0_節28_毛左;
 
-    	public Par X0Y0_節28_毛右;
+    	public ShapePart X0Y0_節28_毛右;
 
-    	public Par X0Y0_節29_節;
+    	public ShapePart X0Y0_節29_節;
 
-    	public Par X0Y0_節29_毛左;
+    	public ShapePart X0Y0_節29_毛左;
 
-    	public Par X0Y0_節29_毛右;
+    	public ShapePart X0Y0_節29_毛右;
 
-    	public Par X0Y0_節30_節;
+    	public ShapePart X0Y0_節30_節;
 
-    	public Par X0Y0_節30_毛左;
+    	public ShapePart X0Y0_節30_毛左;
 
-    	public Par X0Y0_節30_毛右;
+    	public ShapePart X0Y0_節30_毛右;
 
-    	public Par X0Y0_節31_節;
+    	public ShapePart X0Y0_節31_節;
 
-    	public Par X0Y0_節31_毛左;
+    	public ShapePart X0Y0_節31_毛左;
 
-    	public Par X0Y0_節31_毛右;
+    	public ShapePart X0Y0_節31_毛右;
 
-    	public Par X0Y0_節32_節;
+    	public ShapePart X0Y0_節32_節;
 
-    	public Par X0Y0_節32_毛左;
+    	public ShapePart X0Y0_節32_毛左;
 
-    	public Par X0Y0_節32_毛右;
+    	public ShapePart X0Y0_節32_毛右;
 
-    	public Par X0Y0_節33_節;
+    	public ShapePart X0Y0_節33_節;
 
-    	public Par X0Y0_節33_毛左;
+    	public ShapePart X0Y0_節33_毛左;
 
-    	public Par X0Y0_節33_毛右;
+    	public ShapePart X0Y0_節33_毛右;
 
-    	public Par X0Y0_節34_節;
+    	public ShapePart X0Y0_節34_節;
 
-    	public Par X0Y0_節34_毛左;
+    	public ShapePart X0Y0_節34_毛左;
 
-    	public Par X0Y0_節34_毛右;
+    	public ShapePart X0Y0_節34_毛右;
 
-    	public Par X0Y0_節35_節;
+    	public ShapePart X0Y0_節35_節;
 
-    	public Par X0Y0_節35_毛左;
+    	public ShapePart X0Y0_節35_毛左;
 
-    	public Par X0Y0_節35_毛右;
+    	public ShapePart X0Y0_節35_毛右;
 
-    	public Par X0Y0_節36_節;
+    	public ShapePart X0Y0_節36_節;
 
-    	public Par X0Y0_節36_毛左;
+    	public ShapePart X0Y0_節36_毛左;
 
-    	public Par X0Y0_節36_毛右;
+    	public ShapePart X0Y0_節36_毛右;
 
-    	public Par X0Y0_節37_節;
+    	public ShapePart X0Y0_節37_節;
 
-    	public Par X0Y0_節37_毛左;
+    	public ShapePart X0Y0_節37_毛左;
 
-    	public Par X0Y0_節37_毛右;
+    	public ShapePart X0Y0_節37_毛右;
 
-    	public Par X0Y0_節38_節;
+    	public ShapePart X0Y0_節38_節;
 
-    	public Par X0Y0_節38_毛左;
+    	public ShapePart X0Y0_節38_毛左;
 
-    	public Par X0Y0_節38_毛右;
+    	public ShapePart X0Y0_節38_毛右;
 
-    	public Par X0Y0_節39_節;
+    	public ShapePart X0Y0_節39_節;
 
-    	public Par X0Y0_節39_毛左;
+    	public ShapePart X0Y0_節39_毛左;
 
-    	public Par X0Y0_節39_毛右;
+    	public ShapePart X0Y0_節39_毛右;
 
-    	public Par X0Y0_節40_節;
+    	public ShapePart X0Y0_節40_節;
 
-    	public Par X0Y0_節40_毛左;
+    	public ShapePart X0Y0_節40_毛左;
 
-    	public Par X0Y0_節40_毛右;
+    	public ShapePart X0Y0_節40_毛右;
 
-    	public Par X0Y0_節41_節;
+    	public ShapePart X0Y0_節41_節;
 
-    	public Par X0Y0_節41_毛左;
+    	public ShapePart X0Y0_節41_毛左;
 
-    	public Par X0Y0_節41_毛右;
+    	public ShapePart X0Y0_節41_毛右;
 
-    	public Par X0Y0_節42_節;
+    	public ShapePart X0Y0_節42_節;
 
-    	public Par X0Y0_節42_毛左;
+    	public ShapePart X0Y0_節42_毛左;
 
-    	public Par X0Y0_節42_毛右;
+    	public ShapePart X0Y0_節42_毛右;
 
-    	public Par X0Y0_節43_節;
+    	public ShapePart X0Y0_節43_節;
 
-    	public Par X0Y0_節43_毛左;
+    	public ShapePart X0Y0_節43_毛左;
 
-    	public Par X0Y0_節43_毛右;
+    	public ShapePart X0Y0_節43_毛右;
 
-    	public Par X0Y0_節44_節;
+    	public ShapePart X0Y0_節44_節;
 
-    	public Par X0Y0_節44_毛左;
+    	public ShapePart X0Y0_節44_毛左;
 
-    	public Par X0Y0_節44_毛右;
+    	public ShapePart X0Y0_節44_毛右;
 
-    	public Par X0Y0_節45_節;
+    	public ShapePart X0Y0_節45_節;
 
-    	public Par X0Y0_節45_毛左;
+    	public ShapePart X0Y0_節45_毛左;
 
-    	public Par X0Y0_節45_毛右;
+    	public ShapePart X0Y0_節45_毛右;
 
-    	public Par X0Y0_節46_節;
+    	public ShapePart X0Y0_節46_節;
 
-    	public Par X0Y0_節46_毛左;
+    	public ShapePart X0Y0_節46_毛左;
 
-    	public Par X0Y0_節46_毛右;
+    	public ShapePart X0Y0_節46_毛右;
 
-    	public Par X0Y0_節47_節;
+    	public ShapePart X0Y0_節47_節;
 
-    	public Par X0Y0_節47_毛左;
+    	public ShapePart X0Y0_節47_毛左;
 
-    	public Par X0Y0_節47_毛右;
+    	public ShapePart X0Y0_節47_毛右;
 
-    	public Par X0Y0_節48_節;
+    	public ShapePart X0Y0_節48_節;
 
-    	public Par X0Y0_節48_毛左;
+    	public ShapePart X0Y0_節48_毛左;
 
-    	public Par X0Y0_節48_毛右;
+    	public ShapePart X0Y0_節48_毛右;
 
-    	public Par X0Y0_節49_節;
+    	public ShapePart X0Y0_節49_節;
 
-    	public Par X0Y0_節49_毛左;
+    	public ShapePart X0Y0_節49_毛左;
 
-    	public Par X0Y0_節49_毛右;
+    	public ShapePart X0Y0_節49_毛右;
 
-    	public Par X0Y0_節50_節;
+    	public ShapePart X0Y0_節50_節;
 
-    	public Par X0Y0_節50_毛左;
+    	public ShapePart X0Y0_節50_毛左;
 
-    	public Par X0Y0_節50_毛右;
+    	public ShapePart X0Y0_節50_毛右;
 
-    	public Par X0Y0_節;
+    	public ShapePart X0Y0_節;
 
     	public ColorD 節1_節CD;
 
@@ -3894,7 +3894,7 @@ namespace SlaveMatrix
     		Body.JoinPAall();
     	}
 
-    	public override IEnumerable<Par> Enum軸()
+    	public override IEnumerable<ShapePart> Enum軸()
     	{
     		yield return X0Y0_節1_節;
     		yield return X0Y0_節2_節;

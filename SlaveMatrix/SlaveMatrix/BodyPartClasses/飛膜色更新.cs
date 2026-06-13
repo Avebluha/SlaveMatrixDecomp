@@ -8,7 +8,7 @@ namespace SlaveMatrix
 
     	public 飛膜_先 先;
 
-    	private Par[] 飛膜;
+    	private ShapePart[] 飛膜;
 
     	private Vector2D[] 飛膜m;
 
@@ -16,7 +16,7 @@ namespace SlaveMatrix
     	{
     		this.根 = 根;
     		this.先 = 先;
-    		飛膜 = new Par[4] { 根.X0Y0_飛膜, 根.X0Y1_飛膜, 先.X0Y0_飛膜, 先.X0Y1_飛膜 };
+    		飛膜 = new ShapePart[4] { 根.X0Y0_飛膜, 根.X0Y1_飛膜, 先.X0Y0_飛膜, 先.X0Y1_飛膜 };
     	}
 
     	public void 色更新()

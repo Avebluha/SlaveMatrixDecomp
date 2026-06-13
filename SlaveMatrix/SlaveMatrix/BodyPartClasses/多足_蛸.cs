@@ -5,7 +5,7 @@ namespace SlaveMatrix
 {
     public class 多足_蛸 : 半身
     {
-    	public Par X0Y0_Torso;
+    	public ShapePart X0Y0_Torso;
 
     	public ColorD TorsoCD;
 

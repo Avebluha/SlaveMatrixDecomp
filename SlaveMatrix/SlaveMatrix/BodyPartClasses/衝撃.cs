@@ -4,7 +4,7 @@ namespace SlaveMatrix
 {
     public class 衝撃 : Ele
     {
-    	public Par X0Y0_衝撃;
+    	public ShapePart X0Y0_衝撃;
 
     	public ColorD 衝撃CD;
 

@@ -4,35 +4,35 @@ namespace SlaveMatrix
 {
     public class BackHair1_編結 : アップ
     {
-    	public Par X0Y0_髪基;
+    	public ShapePart X0Y0_髪基;
 
-    	public Par X0Y0_お下げ_編節1_髪節;
+    	public ShapePart X0Y0_お下げ_編節1_髪節;
 
-    	public Par X0Y0_お下げ_編節1_髪編目;
+    	public ShapePart X0Y0_お下げ_編節1_髪編目;
 
-    	public Par X0Y0_お下げ_編節2_髪節;
+    	public ShapePart X0Y0_お下げ_編節2_髪節;
 
-    	public Par X0Y0_お下げ_編節2_髪編目;
+    	public ShapePart X0Y0_お下げ_編節2_髪編目;
 
-    	public Par X0Y0_お下げ_編節3_髪節;
+    	public ShapePart X0Y0_お下げ_編節3_髪節;
 
-    	public Par X0Y0_お下げ_編節3_髪編目;
+    	public ShapePart X0Y0_お下げ_編節3_髪編目;
 
-    	public Par X0Y0_お下げ_編節4_髪節;
+    	public ShapePart X0Y0_お下げ_編節4_髪節;
 
-    	public Par X0Y0_お下げ_編節4_髪編目;
+    	public ShapePart X0Y0_お下げ_編節4_髪編目;
 
-    	public Par X0Y0_お下げ_編節5_髪節;
+    	public ShapePart X0Y0_お下げ_編節5_髪節;
 
-    	public Par X0Y0_お下げ_編節5_髪編目;
+    	public ShapePart X0Y0_お下げ_編節5_髪編目;
 
-    	public Par X0Y0_お下げ_編節6_髪節;
+    	public ShapePart X0Y0_お下げ_編節6_髪節;
 
-    	public Par X0Y0_お下げ_編節6_髪編目;
+    	public ShapePart X0Y0_お下げ_編節6_髪編目;
 
-    	public Par X0Y0_お下げ_編節7_髪節;
+    	public ShapePart X0Y0_お下げ_編節7_髪節;
 
-    	public Par X0Y0_お下げ_編節7_髪編目;
+    	public ShapePart X0Y0_お下げ_編節7_髪編目;
 
     	public ColorD 髪基CD;
 

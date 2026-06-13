@@ -11,7 +11,7 @@ namespace SlaveMatrix
 
         public Ele Ele;
 
-        public Par Par;
+        public ShapePart ShapePart;
 
         public List<int> Path;
 
@@ -35,7 +35,7 @@ namespace SlaveMatrix
 
     	protected const int Max = 33;
 
-    	protected Par p;
+    	protected ShapePart p;
 
     	protected Color2 c2;
 

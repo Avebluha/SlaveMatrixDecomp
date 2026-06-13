@@ -5,7 +5,7 @@ namespace SlaveMatrix
 {
     public class 大顎基 : Ele
     {
-    	public Par X0Y0_甲殻下;
+    	public ShapePart X0Y0_甲殻下;
 
     	public 大顎上 大顎上;
 

@@ -6,65 +6,65 @@ namespace SlaveMatrix
 {
     public class 長物_鯨 : 半身
     {
-    	public Par X0Y0_Torso6_Torso;
+    	public ShapePart X0Y0_Torso6_Torso;
 
-    	public Par X0Y0_Torso6_柄;
+    	public ShapePart X0Y0_Torso6_柄;
 
-    	public Par X0Y0_Torso6_縦影;
+    	public ShapePart X0Y0_Torso6_縦影;
 
-    	public Par X0Y0_Torso5_Torso;
+    	public ShapePart X0Y0_Torso5_Torso;
 
-    	public Par X0Y0_Torso5_柄;
+    	public ShapePart X0Y0_Torso5_柄;
 
-    	public Par X0Y0_Torso5_縦影;
+    	public ShapePart X0Y0_Torso5_縦影;
 
-    	public Par X0Y0_輪2_革;
+    	public ShapePart X0Y0_輪2_革;
 
-    	public Par X0Y0_輪2_金具1;
+    	public ShapePart X0Y0_輪2_金具1;
 
-    	public Par X0Y0_輪2_金具2;
+    	public ShapePart X0Y0_輪2_金具2;
 
-    	public Par X0Y0_輪2_金具3;
+    	public ShapePart X0Y0_輪2_金具3;
 
-    	public Par X0Y0_輪2_金具左;
+    	public ShapePart X0Y0_輪2_金具左;
 
-    	public Par X0Y0_輪2_金具右;
+    	public ShapePart X0Y0_輪2_金具右;
 
-    	public Par X0Y0_Torso4_Torso;
+    	public ShapePart X0Y0_Torso4_Torso;
 
-    	public Par X0Y0_Torso4_柄;
+    	public ShapePart X0Y0_Torso4_柄;
 
-    	public Par X0Y0_Torso4_縦影;
+    	public ShapePart X0Y0_Torso4_縦影;
 
-    	public Par X0Y0_Torso3_Torso;
+    	public ShapePart X0Y0_Torso3_Torso;
 
-    	public Par X0Y0_Torso3_柄;
+    	public ShapePart X0Y0_Torso3_柄;
 
-    	public Par X0Y0_Torso3_縦影;
+    	public ShapePart X0Y0_Torso3_縦影;
 
-    	public Par X0Y0_Torso2_Torso;
+    	public ShapePart X0Y0_Torso2_Torso;
 
-    	public Par X0Y0_Torso2_柄;
+    	public ShapePart X0Y0_Torso2_柄;
 
-    	public Par X0Y0_Torso2_縦影;
+    	public ShapePart X0Y0_Torso2_縦影;
 
-    	public Par X0Y0_Torso1_Torso;
+    	public ShapePart X0Y0_Torso1_Torso;
 
-    	public Par X0Y0_Torso1_柄;
+    	public ShapePart X0Y0_Torso1_柄;
 
-    	public Par X0Y0_Torso1_縦影;
+    	public ShapePart X0Y0_Torso1_縦影;
 
-    	public Par X0Y0_輪1_革;
+    	public ShapePart X0Y0_輪1_革;
 
-    	public Par X0Y0_輪1_金具1;
+    	public ShapePart X0Y0_輪1_金具1;
 
-    	public Par X0Y0_輪1_金具2;
+    	public ShapePart X0Y0_輪1_金具2;
 
-    	public Par X0Y0_輪1_金具3;
+    	public ShapePart X0Y0_輪1_金具3;
 
-    	public Par X0Y0_輪1_金具左;
+    	public ShapePart X0Y0_輪1_金具左;
 
-    	public Par X0Y0_輪1_金具右;
+    	public ShapePart X0Y0_輪1_金具右;
 
     	public ColorD Torso6_TorsoCD;
 
@@ -224,7 +224,7 @@ namespace SlaveMatrix
 
     	public Ele[] 尾_接続;
 
-    	private Par[] Pars;
+    	private ShapePart[] Pars;
 
     	private Vector2D[] mm;
 
@@ -1157,7 +1157,7 @@ namespace SlaveMatrix
     		}
     		base.配色指定 = 配色指定;
     		配色(体配色);
-    		Pars = new Par[6] { X0Y0_Torso6_Torso, X0Y0_Torso5_Torso, X0Y0_Torso4_Torso, X0Y0_Torso3_Torso, X0Y0_Torso2_Torso, X0Y0_Torso1_Torso };
+    		Pars = new ShapePart[6] { X0Y0_Torso6_Torso, X0Y0_Torso5_Torso, X0Y0_Torso4_Torso, X0Y0_Torso3_Torso, X0Y0_Torso2_Torso, X0Y0_Torso1_Torso };
     		X0Y0_Torso6_TorsoCP = new ColorP(X0Y0_Torso6_Torso, Torso6_TorsoCD, DisUnit, abj: true);
     		X0Y0_Torso6_柄CP = new ColorP(X0Y0_Torso6_柄, Torso6_柄CD, DisUnit, abj: true);
     		X0Y0_Torso6_縦影CP = new ColorP(X0Y0_Torso6_縦影, Torso6_縦影CD, DisUnit, abj: true);
@@ -1255,7 +1255,7 @@ namespace SlaveMatrix
     		Body.JoinPAall();
     	}
 
-    	public IEnumerable<Par> 軸列挙()
+    	public IEnumerable<ShapePart> 軸列挙()
     	{
     		yield return X0Y0_Torso3_Torso;
     		yield return X0Y0_Torso4_Torso;
@@ -1263,7 +1263,7 @@ namespace SlaveMatrix
     		yield return X0Y0_Torso6_Torso;
     	}
 
-    	public override bool Is革(Par p)
+    	public override bool Is革(ShapePart p)
     	{
     		if (p != X0Y0_輪2_革 && p != X0Y0_輪2_金具1 && p != X0Y0_輪2_金具2 && p != X0Y0_輪2_金具3 && p != X0Y0_輪2_金具左 && p != X0Y0_輪2_金具右 && p != X0Y0_輪1_革 && p != X0Y0_輪1_金具1 && p != X0Y0_輪1_金具2 && p != X0Y0_輪1_金具3 && p != X0Y0_輪1_金具左)
     		{

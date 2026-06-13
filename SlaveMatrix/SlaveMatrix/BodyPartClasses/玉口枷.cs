@@ -4,53 +4,53 @@ namespace SlaveMatrix
 {
     public class 玉口枷 : Ele
     {
-    	public Par X0Y0_金具左上;
+    	public ShapePart X0Y0_金具左上;
 
-    	public Par X0Y0_金具左下;
+    	public ShapePart X0Y0_金具左下;
 
-    	public Par X0Y0_革左;
+    	public ShapePart X0Y0_革左;
 
-    	public Par X0Y0_金具右上;
+    	public ShapePart X0Y0_金具右上;
 
-    	public Par X0Y0_金具右下;
+    	public ShapePart X0Y0_金具右下;
 
-    	public Par X0Y0_革右;
+    	public ShapePart X0Y0_革右;
 
-    	public Par X0Y0_革;
+    	public ShapePart X0Y0_革;
 
-    	public Par X0Y0_玉;
+    	public ShapePart X0Y0_玉;
 
-    	public Par X0Y0_穴中上;
+    	public ShapePart X0Y0_穴中上;
 
-    	public Par X0Y0_穴右;
+    	public ShapePart X0Y0_穴右;
 
-    	public Par X0Y0_穴中下;
+    	public ShapePart X0Y0_穴中下;
 
-    	public Par X0Y0_穴左;
+    	public ShapePart X0Y0_穴左;
 
-    	public Par X0Y0_穴上右上;
+    	public ShapePart X0Y0_穴上右上;
 
-    	public Par X0Y0_穴上右下;
+    	public ShapePart X0Y0_穴上右下;
 
-    	public Par X0Y0_穴下右上;
+    	public ShapePart X0Y0_穴下右上;
 
-    	public Par X0Y0_穴下右下;
+    	public ShapePart X0Y0_穴下右下;
 
-    	public Par X0Y0_穴下左下;
+    	public ShapePart X0Y0_穴下左下;
 
-    	public Par X0Y0_穴下左上;
+    	public ShapePart X0Y0_穴下左上;
 
-    	public Par X0Y0_穴上左下;
+    	public ShapePart X0Y0_穴上左下;
 
-    	public Par X0Y0_穴上左上;
+    	public ShapePart X0Y0_穴上左上;
 
-    	public Par X0Y0_丸金具左内;
+    	public ShapePart X0Y0_丸金具左内;
 
-    	public Par X0Y0_丸金具右内;
+    	public ShapePart X0Y0_丸金具右内;
 
-    	public Par X0Y0_丸金具左外;
+    	public ShapePart X0Y0_丸金具左外;
 
-    	public Par X0Y0_丸金具右外;
+    	public ShapePart X0Y0_丸金具右外;
 
     	public ColorD 金具左上CD;
 
@@ -679,7 +679,7 @@ namespace SlaveMatrix
     		Intensity = e.濃度;
     	}
 
-    	public override bool Is革(Par p)
+    	public override bool Is革(ShapePart p)
     	{
     		if (p != X0Y0_金具左上 && p != X0Y0_金具左下 && p != X0Y0_革左 && p != X0Y0_金具右上 && p != X0Y0_金具右下 && p != X0Y0_革右 && p != X0Y0_革 && p != X0Y0_玉 && p != X0Y0_穴中上 && p != X0Y0_穴右 && p != X0Y0_穴中下 && p != X0Y0_穴左 && p != X0Y0_穴上右上 && p != X0Y0_穴上右下 && p != X0Y0_穴下右上 && p != X0Y0_穴下右下 && p != X0Y0_穴下左下 && p != X0Y0_穴下左上 && p != X0Y0_穴上左下 && p != X0Y0_穴上左上 && p != X0Y0_丸金具左内 && p != X0Y0_丸金具右内 && p != X0Y0_丸金具左外)
     		{

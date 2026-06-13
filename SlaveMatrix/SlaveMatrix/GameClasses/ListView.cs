@@ -25,7 +25,7 @@ namespace SlaveMatrix
     {
     	private RenderArea Are;
 
-    	private ParT[] pt;
+    	private ShapePartT[] pt;
 
     	public Buts bs;
 
@@ -61,7 +61,7 @@ namespace SlaveMatrix
     			double num = 0.0;
     			double num2 = pt[0].OP[0].ps[3].Y * pt[0].SizeBase;
     			num2 += num2 * Space;
-    			ParT[] array = pt;
+    			ShapePartT[] array = pt;
     			for (int i = 0; i < array.Length; i++)
     			{
     				array[i].PositionBase = p.AddY(num);
@@ -74,11 +74,11 @@ namespace SlaveMatrix
     	{
     		this.Are = Are;
     		this.Space = Space;
-    		pt = new ParT[acts.Length];
+    		pt = new ShapePartT[acts.Length];
     		bs = new Buts();
     		for (int i = 0; i < acts.Length; i++)
     		{
-    			pt[i] = new ParT();
+    			pt[i] = new ShapePartT();
     			pt[i].Text = acts[i].Text;
     			pt[i].SizeBase = 0.095;
     			pt[i].Font = Font;
@@ -101,8 +101,8 @@ namespace SlaveMatrix
 
     	public void SetHitColor(ModeEventDispatcher Med)
     	{
-    		ParT[] array = pt;
-    		foreach (ParT obj in array)
+    		ShapePartT[] array = pt;
+    		foreach (ShapePartT obj in array)
     		{
     			obj.HitColor = Med.GetUniqueColor();
     			obj.HitColor = Med.GetUniqueColor();

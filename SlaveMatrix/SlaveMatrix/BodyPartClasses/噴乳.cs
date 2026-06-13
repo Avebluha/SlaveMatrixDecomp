@@ -4,69 +4,69 @@ namespace SlaveMatrix
 {
     public class 噴乳 : Ele
     {
-    	public Par X0Y0_母乳垂れ1;
+    	public ShapePart X0Y0_母乳垂れ1;
 
-    	public Par X0Y0_母乳垂れ2;
+    	public ShapePart X0Y0_母乳垂れ2;
 
-    	public Par X0Y1_母乳1;
+    	public ShapePart X0Y1_母乳1;
 
-    	public Par X0Y1_母乳2;
+    	public ShapePart X0Y1_母乳2;
 
-    	public Par X0Y1_母乳3;
+    	public ShapePart X0Y1_母乳3;
 
-    	public Par X0Y1_母乳4;
+    	public ShapePart X0Y1_母乳4;
 
-    	public Par X0Y1_母乳垂れ1;
+    	public ShapePart X0Y1_母乳垂れ1;
 
-    	public Par X0Y1_母乳垂れ2;
+    	public ShapePart X0Y1_母乳垂れ2;
 
-    	public Par X0Y2_母乳1;
+    	public ShapePart X0Y2_母乳1;
 
-    	public Par X0Y2_母乳2;
+    	public ShapePart X0Y2_母乳2;
 
-    	public Par X0Y2_母乳3;
+    	public ShapePart X0Y2_母乳3;
 
-    	public Par X0Y2_母乳4;
+    	public ShapePart X0Y2_母乳4;
 
-    	public Par X0Y2_母乳垂れ1;
+    	public ShapePart X0Y2_母乳垂れ1;
 
-    	public Par X0Y2_母乳垂れ2;
+    	public ShapePart X0Y2_母乳垂れ2;
 
-    	public Par X0Y3_母乳1;
+    	public ShapePart X0Y3_母乳1;
 
-    	public Par X0Y3_母乳2;
+    	public ShapePart X0Y3_母乳2;
 
-    	public Par X0Y3_母乳3;
+    	public ShapePart X0Y3_母乳3;
 
-    	public Par X0Y3_母乳4;
+    	public ShapePart X0Y3_母乳4;
 
-    	public Par X0Y3_母乳垂れ1;
+    	public ShapePart X0Y3_母乳垂れ1;
 
-    	public Par X0Y3_母乳垂れ2;
+    	public ShapePart X0Y3_母乳垂れ2;
 
-    	public Par X0Y4_母乳1;
+    	public ShapePart X0Y4_母乳1;
 
-    	public Par X0Y4_母乳2;
+    	public ShapePart X0Y4_母乳2;
 
-    	public Par X0Y4_母乳3;
+    	public ShapePart X0Y4_母乳3;
 
-    	public Par X0Y4_母乳4;
+    	public ShapePart X0Y4_母乳4;
 
-    	public Par X0Y4_母乳垂れ1;
+    	public ShapePart X0Y4_母乳垂れ1;
 
-    	public Par X0Y4_母乳垂れ2;
+    	public ShapePart X0Y4_母乳垂れ2;
 
-    	public Par X0Y5_母乳1;
+    	public ShapePart X0Y5_母乳1;
 
-    	public Par X0Y5_母乳2;
+    	public ShapePart X0Y5_母乳2;
 
-    	public Par X0Y5_母乳3;
+    	public ShapePart X0Y5_母乳3;
 
-    	public Par X0Y5_母乳4;
+    	public ShapePart X0Y5_母乳4;
 
-    	public Par X0Y5_母乳垂れ1;
+    	public ShapePart X0Y5_母乳垂れ1;
 
-    	public Par X0Y5_母乳垂れ2;
+    	public ShapePart X0Y5_母乳垂れ2;
 
     	public ColorD 母乳1CD;
 

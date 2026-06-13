@@ -6,19 +6,19 @@ namespace SlaveMatrix
 {
     public class UpperArm_蝙 : 翼UpperArm
     {
-    	public Par X0Y0_獣翼UpperArm;
+    	public ShapePart X0Y0_獣翼UpperArm;
 
-    	public Par X0Y0_竜性_鱗1;
+    	public ShapePart X0Y0_竜性_鱗1;
 
-    	public Par X0Y0_竜性_鱗2;
+    	public ShapePart X0Y0_竜性_鱗2;
 
-    	public Par X0Y0_竜性_鱗3;
+    	public ShapePart X0Y0_竜性_鱗3;
 
-    	public Par X0Y0_竜性_鱗4;
+    	public ShapePart X0Y0_竜性_鱗4;
 
-    	public Par X0Y0_竜性_鱗5;
+    	public ShapePart X0Y0_竜性_鱗5;
 
-    	public Par X0Y0_竜性_鱗6;
+    	public ShapePart X0Y0_竜性_鱗6;
 
     	public 飛膜_根 飛膜;
 

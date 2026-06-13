@@ -5,11 +5,11 @@ namespace SlaveMatrix
 {
     public class UpperArm_蹄 : 獣UpperArm
     {
-    	public Par X0Y0_筋肉上;
+    	public ShapePart X0Y0_筋肉上;
 
-    	public Par X0Y0_UpperArm;
+    	public ShapePart X0Y0_UpperArm;
 
-    	public Par X0Y0_筋肉下;
+    	public ShapePart X0Y0_筋肉下;
 
     	public ColorD 筋肉上CD;
 

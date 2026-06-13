@@ -5,29 +5,29 @@ namespace SlaveMatrix
 {
     public class 腿_竜 : 獣腿
     {
-    	public Par X0Y0_腿;
+    	public ShapePart X0Y0_腿;
 
-    	public Par X0Y0_竜性_鱗下_鱗1;
+    	public ShapePart X0Y0_竜性_鱗下_鱗1;
 
-    	public Par X0Y0_竜性_鱗下_鱗2;
+    	public ShapePart X0Y0_竜性_鱗下_鱗2;
 
-    	public Par X0Y0_竜性_鱗下_鱗3;
+    	public ShapePart X0Y0_竜性_鱗下_鱗3;
 
-    	public Par X0Y0_竜性_鱗下_鱗4;
+    	public ShapePart X0Y0_竜性_鱗下_鱗4;
 
-    	public Par X0Y0_竜性_鱗下_鱗5;
+    	public ShapePart X0Y0_竜性_鱗下_鱗5;
 
-    	public Par X0Y0_竜性_鱗下_鱗6;
+    	public ShapePart X0Y0_竜性_鱗下_鱗6;
 
-    	public Par X0Y0_竜性_鱗上_鱗1;
+    	public ShapePart X0Y0_竜性_鱗上_鱗1;
 
-    	public Par X0Y0_竜性_鱗上_鱗2;
+    	public ShapePart X0Y0_竜性_鱗上_鱗2;
 
-    	public Par X0Y0_竜性_鱗上_鱗3;
+    	public ShapePart X0Y0_竜性_鱗上_鱗3;
 
-    	public Par X0Y0_竜性_鱗上_鱗4;
+    	public ShapePart X0Y0_竜性_鱗上_鱗4;
 
-    	public Par X0Y0_筋;
+    	public ShapePart X0Y0_筋;
 
     	public ColorD 腿CD;
 

@@ -4,43 +4,43 @@ namespace SlaveMatrix
 {
     public class 上着ボトム_前掛け : 上着ボトム
     {
-    	public Par X0Y0_帯;
+    	public ShapePart X0Y0_帯;
 
-    	public Par X0Y0_巻;
+    	public ShapePart X0Y0_巻;
 
-    	public Par X0Y0_縁後_縁左;
+    	public ShapePart X0Y0_縁後_縁左;
 
-    	public Par X0Y0_縁後_縁右;
+    	public ShapePart X0Y0_縁後_縁右;
 
-    	public Par X0Y0_前掛_前掛1;
+    	public ShapePart X0Y0_前掛_前掛1;
 
-    	public Par X0Y0_前掛_前掛2;
+    	public ShapePart X0Y0_前掛_前掛2;
 
-    	public Par X0Y0_前掛_前掛3;
+    	public ShapePart X0Y0_前掛_前掛3;
 
-    	public Par X0Y0_縁前_縁左;
+    	public ShapePart X0Y0_縁前_縁左;
 
-    	public Par X0Y0_縁前_縁右;
+    	public ShapePart X0Y0_縁前_縁右;
 
-    	public Par X0Y0_縁前_縁中;
+    	public ShapePart X0Y0_縁前_縁中;
 
-    	public Par X0Y1_帯;
+    	public ShapePart X0Y1_帯;
 
-    	public Par X0Y1_巻;
+    	public ShapePart X0Y1_巻;
 
-    	public Par X0Y1_縁後_縁左;
+    	public ShapePart X0Y1_縁後_縁左;
 
-    	public Par X0Y1_縁後_縁右;
+    	public ShapePart X0Y1_縁後_縁右;
 
-    	public Par X0Y1_前掛_前掛1;
+    	public ShapePart X0Y1_前掛_前掛1;
 
-    	public Par X0Y1_前掛_前掛2;
+    	public ShapePart X0Y1_前掛_前掛2;
 
-    	public Par X0Y1_縁前_縁左;
+    	public ShapePart X0Y1_縁前_縁左;
 
-    	public Par X0Y1_縁前_縁右;
+    	public ShapePart X0Y1_縁前_縁右;
 
-    	public Par X0Y1_縁前_縁中;
+    	public ShapePart X0Y1_縁前_縁中;
 
     	public ColorD 帯CD;
 
@@ -506,7 +506,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override bool Is布(Par p)
+    	public override bool Is布(ShapePart p)
     	{
     		if (p != X0Y0_帯 && p != X0Y0_巻 && p != X0Y0_縁後_縁左 && p != X0Y0_縁後_縁右 && p != X0Y0_前掛_前掛1 && p != X0Y0_前掛_前掛2 && p != X0Y0_前掛_前掛3 && p != X0Y0_縁前_縁左 && p != X0Y0_縁前_縁右 && p != X0Y0_縁前_縁中 && p != X0Y1_帯 && p != X0Y1_巻 && p != X0Y1_縁後_縁左 && p != X0Y1_縁後_縁右 && p != X0Y1_前掛_前掛1 && p != X0Y1_前掛_前掛2 && p != X0Y1_縁前_縁左 && p != X0Y1_縁前_縁右)
     		{

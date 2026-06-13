@@ -8,18 +8,18 @@ namespace _2DGAMELIB
     {
     	public static double IdentityDistance = System.Math.Pow(5E-05, 2.0);
 
-    	public static Joints GetJoints(this Par JoinRoot, IEnumerable<Par> EnumPar)
+    	public static Joints GetJoints(this ShapePart JoinRoot, IEnumerable<ShapePart> EnumPar)
     	{
     		Joints joints = new Joints();
     		int num = 0;
     		List<int> list = new List<int>();
-    		List<Par> list2 = EnumPar.ToList();
+    		List<ShapePart> list2 = EnumPar.ToList();
     		foreach (Joi item in JoinRoot.JP)
     		{
     			Vector2D v = JoinRoot.ToGlobal(item.Joint);
     			int num2 = 0;
     			list.Clear();
-    			foreach (Par item2 in list2)
+    			foreach (ShapePart item2 in list2)
     			{
     				if (JoinRoot != item2)
     				{
@@ -48,7 +48,7 @@ namespace _2DGAMELIB
     		return joints;
     	}
 
-    	private static void GetJoints(List<Par> pl, Joints js, List<int> del)
+    	private static void GetJoints(List<ShapePart> pl, Joints js, List<int> del)
     	{
     		int num = -1;
     		int num2 = 0;
@@ -57,20 +57,20 @@ namespace _2DGAMELIB
     			num = js.Joins.Count;
     			for (int i = num2; i < num; i++)
     			{
-    				Par par = js.Joins[i].Par1;
+    				ShapePart shapePart = js.Joins[i].Par1;
     				int num3 = 0;
-    				foreach (Joi item in par.JP)
+    				foreach (Joi item in shapePart.JP)
     				{
-    					Vector2D v = par.ToGlobal(item.Joint);
+    					Vector2D v = shapePart.ToGlobal(item.Joint);
     					int num4 = 0;
     					del.Clear();
-    					foreach (Par item2 in pl)
+    					foreach (ShapePart item2 in pl)
     					{
-    						if (par != item2)
+    						if (shapePart != item2)
     						{
     							if (v.DistanceSquared(item2.Position) <= IdentityDistance)
     							{
-    								js.Joins.Add(new Joint(par, num3, item2));
+    								js.Joins.Add(new Joint(shapePart, num3, item2));
     								if (!del.Contains(num4))
     								{
     									del.Add(num4);
@@ -99,7 +99,7 @@ namespace _2DGAMELIB
     		JointsD jointsD = new JointsD();
     		List<int> list = new List<int>();
     		List<Difs> list2 = EnumDifs.ToList();
-    		foreach (Par item in JoinRoot.EnumAllPar())
+    		foreach (ShapePart item in JoinRoot.EnumAllPar())
     		{
     			int num = 0;
     			list.Clear();
@@ -111,7 +111,7 @@ namespace _2DGAMELIB
     					foreach (Joi item3 in item.JP)
     					{
     						Vector2D v = item.ToGlobal(item3.Joint);
-    						foreach (Par item4 in item2.EnumJoinRoot)
+    						foreach (ShapePart item4 in item2.EnumJoinRoot)
     						{
     							if (v.DistanceSquared(item4.Position) <= IdentityDistance)
     							{
@@ -151,7 +151,7 @@ namespace _2DGAMELIB
     			for (int i = num2; i < num; i++)
     			{
     				Difs difs = jsd.Joins[i].Difs1;
-    				foreach (Par item in difs.EnumAllPar())
+    				foreach (ShapePart item in difs.EnumAllPar())
     				{
     					int num3 = 0;
     					del.Clear();
@@ -163,7 +163,7 @@ namespace _2DGAMELIB
     							foreach (Joi item3 in item.JP)
     							{
     								Vector2D v = item.ToGlobal(item3.Joint);
-    								foreach (Par item4 in item2.EnumJoinRoot)
+    								foreach (ShapePart item4 in item2.EnumJoinRoot)
     								{
     									if (v.DistanceSquared(item4.Position) <= IdentityDistance)
     									{

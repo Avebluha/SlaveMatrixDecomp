@@ -4,89 +4,89 @@ namespace SlaveMatrix
 {
     public class 前翅_蝶 : 前翅
     {
-    	public Par X0Y0_前翅_前翅;
+    	public ShapePart X0Y0_前翅_前翅;
 
-    	public Par X0Y0_前翅_水青_柄;
+    	public ShapePart X0Y0_前翅_水青_柄;
 
-    	public Par X0Y0_前翅_水青_縁柄;
+    	public ShapePart X0Y0_前翅_水青_縁柄;
 
-    	public Par X0Y0_前翅_水青_紋1;
+    	public ShapePart X0Y0_前翅_水青_紋1;
 
-    	public Par X0Y0_前翅_水青_紋2;
+    	public ShapePart X0Y0_前翅_水青_紋2;
 
-    	public Par X0Y0_前翅_揚羽_柄1;
+    	public ShapePart X0Y0_前翅_揚羽_柄1;
 
-    	public Par X0Y0_前翅_揚羽_柄2;
+    	public ShapePart X0Y0_前翅_揚羽_柄2;
 
-    	public Par X0Y0_前翅_揚羽_柄3;
+    	public ShapePart X0Y0_前翅_揚羽_柄3;
 
-    	public Par X0Y0_前翅_揚羽_柄4;
+    	public ShapePart X0Y0_前翅_揚羽_柄4;
 
-    	public Par X0Y0_前翅_揚羽_柄5;
+    	public ShapePart X0Y0_前翅_揚羽_柄5;
 
-    	public Par X0Y0_前翅_揚羽_柄6;
+    	public ShapePart X0Y0_前翅_揚羽_柄6;
 
-    	public Par X0Y0_前翅_揚羽_柄7;
+    	public ShapePart X0Y0_前翅_揚羽_柄7;
 
-    	public Par X0Y0_前翅_揚羽_柄8;
+    	public ShapePart X0Y0_前翅_揚羽_柄8;
 
-    	public Par X0Y0_前翅_揚羽_柄9;
+    	public ShapePart X0Y0_前翅_揚羽_柄9;
 
-    	public Par X0Y0_前翅_揚羽_柄10;
+    	public ShapePart X0Y0_前翅_揚羽_柄10;
 
-    	public Par X0Y0_前翅_揚羽_紋1;
+    	public ShapePart X0Y0_前翅_揚羽_紋1;
 
-    	public Par X0Y0_前翅_揚羽_紋2;
+    	public ShapePart X0Y0_前翅_揚羽_紋2;
 
-    	public Par X0Y0_前翅_揚羽_紋3;
+    	public ShapePart X0Y0_前翅_揚羽_紋3;
 
-    	public Par X0Y0_前翅_揚羽_紋4;
+    	public ShapePart X0Y0_前翅_揚羽_紋4;
 
-    	public Par X0Y0_前翅_揚羽_紋5;
+    	public ShapePart X0Y0_前翅_揚羽_紋5;
 
-    	public Par X0Y0_前翅_揚羽_紋6;
+    	public ShapePart X0Y0_前翅_揚羽_紋6;
 
-    	public Par X0Y1_前翅_前翅;
+    	public ShapePart X0Y1_前翅_前翅;
 
-    	public Par X0Y1_前翅_水青_柄;
+    	public ShapePart X0Y1_前翅_水青_柄;
 
-    	public Par X0Y1_前翅_水青_縁柄;
+    	public ShapePart X0Y1_前翅_水青_縁柄;
 
-    	public Par X0Y1_前翅_水青_紋1;
+    	public ShapePart X0Y1_前翅_水青_紋1;
 
-    	public Par X0Y1_前翅_水青_紋2;
+    	public ShapePart X0Y1_前翅_水青_紋2;
 
-    	public Par X0Y1_前翅_揚羽_柄1;
+    	public ShapePart X0Y1_前翅_揚羽_柄1;
 
-    	public Par X0Y1_前翅_揚羽_柄2;
+    	public ShapePart X0Y1_前翅_揚羽_柄2;
 
-    	public Par X0Y1_前翅_揚羽_柄3;
+    	public ShapePart X0Y1_前翅_揚羽_柄3;
 
-    	public Par X0Y1_前翅_揚羽_柄4;
+    	public ShapePart X0Y1_前翅_揚羽_柄4;
 
-    	public Par X0Y1_前翅_揚羽_柄5;
+    	public ShapePart X0Y1_前翅_揚羽_柄5;
 
-    	public Par X0Y1_前翅_揚羽_柄6;
+    	public ShapePart X0Y1_前翅_揚羽_柄6;
 
-    	public Par X0Y1_前翅_揚羽_柄7;
+    	public ShapePart X0Y1_前翅_揚羽_柄7;
 
-    	public Par X0Y1_前翅_揚羽_柄8;
+    	public ShapePart X0Y1_前翅_揚羽_柄8;
 
-    	public Par X0Y1_前翅_揚羽_柄9;
+    	public ShapePart X0Y1_前翅_揚羽_柄9;
 
-    	public Par X0Y1_前翅_揚羽_柄10;
+    	public ShapePart X0Y1_前翅_揚羽_柄10;
 
-    	public Par X0Y1_前翅_揚羽_紋1;
+    	public ShapePart X0Y1_前翅_揚羽_紋1;
 
-    	public Par X0Y1_前翅_揚羽_紋2;
+    	public ShapePart X0Y1_前翅_揚羽_紋2;
 
-    	public Par X0Y1_前翅_揚羽_紋3;
+    	public ShapePart X0Y1_前翅_揚羽_紋3;
 
-    	public Par X0Y1_前翅_揚羽_紋4;
+    	public ShapePart X0Y1_前翅_揚羽_紋4;
 
-    	public Par X0Y1_前翅_揚羽_紋5;
+    	public ShapePart X0Y1_前翅_揚羽_紋5;
 
-    	public Par X0Y1_前翅_揚羽_紋6;
+    	public ShapePart X0Y1_前翅_揚羽_紋6;
 
     	public ColorD 前翅_前翅CD;
 

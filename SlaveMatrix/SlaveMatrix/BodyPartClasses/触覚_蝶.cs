@@ -5,75 +5,75 @@ namespace SlaveMatrix
 {
     public class 触覚_蝶 : 触覚
     {
-    	public Par X0Y0_節1;
+    	public ShapePart X0Y0_節1;
 
-    	public Par X0Y0_節2;
+    	public ShapePart X0Y0_節2;
 
-    	public Par X0Y0_節3;
+    	public ShapePart X0Y0_節3;
 
-    	public Par X0Y0_節4;
+    	public ShapePart X0Y0_節4;
 
-    	public Par X0Y0_節5;
+    	public ShapePart X0Y0_節5;
 
-    	public Par X0Y0_節6;
+    	public ShapePart X0Y0_節6;
 
-    	public Par X0Y0_節7;
+    	public ShapePart X0Y0_節7;
 
-    	public Par X0Y0_節8;
+    	public ShapePart X0Y0_節8;
 
-    	public Par X0Y0_節9;
+    	public ShapePart X0Y0_節9;
 
-    	public Par X0Y0_節10;
+    	public ShapePart X0Y0_節10;
 
-    	public Par X0Y0_節11;
+    	public ShapePart X0Y0_節11;
 
-    	public Par X0Y0_節12;
+    	public ShapePart X0Y0_節12;
 
-    	public Par X0Y0_節13;
+    	public ShapePart X0Y0_節13;
 
-    	public Par X0Y0_節14;
+    	public ShapePart X0Y0_節14;
 
-    	public Par X0Y0_節15;
+    	public ShapePart X0Y0_節15;
 
-    	public Par X0Y0_節16;
+    	public ShapePart X0Y0_節16;
 
-    	public Par X0Y0_節17;
+    	public ShapePart X0Y0_節17;
 
-    	public Par X0Y0_節18;
+    	public ShapePart X0Y0_節18;
 
-    	public Par X0Y0_節19;
+    	public ShapePart X0Y0_節19;
 
-    	public Par X0Y0_節20;
+    	public ShapePart X0Y0_節20;
 
-    	public Par X0Y0_節21;
+    	public ShapePart X0Y0_節21;
 
-    	public Par X0Y0_節22;
+    	public ShapePart X0Y0_節22;
 
-    	public Par X0Y0_節23;
+    	public ShapePart X0Y0_節23;
 
-    	public Par X0Y0_節24;
+    	public ShapePart X0Y0_節24;
 
-    	public Par X0Y0_節25;
+    	public ShapePart X0Y0_節25;
 
-    	public Par X0Y0_節26;
+    	public ShapePart X0Y0_節26;
 
-    	public Par X0Y0_節27;
+    	public ShapePart X0Y0_節27;
 
-    	public Par X0Y0_節28;
+    	public ShapePart X0Y0_節28;
 
-    	public Par X0Y0_節29;
+    	public ShapePart X0Y0_節29;
 
-    	public Par X0Y0_節30;
+    	public ShapePart X0Y0_節30;
 
-    	public Par X0Y0_節31;
+    	public ShapePart X0Y0_節31;
 
-    	public Par X0Y0_節32;
+    	public ShapePart X0Y0_節32;
 
-    	public Par X0Y0_節33;
+    	public ShapePart X0Y0_節33;
 
-    	public Par X0Y0_節34;
+    	public ShapePart X0Y0_節34;
 
-    	public Par X0Y0_節35;
+    	public ShapePart X0Y0_節35;
 
     	public ColorD 節1CD;
 
@@ -1027,7 +1027,7 @@ namespace SlaveMatrix
     		Body.JoinPAall();
     	}
 
-    	public override IEnumerable<Par> Enum軸()
+    	public override IEnumerable<ShapePart> Enum軸()
     	{
     		yield return X0Y0_節1;
     		yield return X0Y0_節2;

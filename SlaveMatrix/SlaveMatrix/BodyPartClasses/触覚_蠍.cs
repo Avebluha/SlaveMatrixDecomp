@@ -4,45 +4,45 @@ namespace SlaveMatrix
 {
     public class 触覚_蠍 : 触覚
     {
-    	public Par X0Y0_櫛状版1_櫛状版1;
+    	public ShapePart X0Y0_櫛状版1_櫛状版1;
 
-    	public Par X0Y0_櫛状版1_櫛状版2;
+    	public ShapePart X0Y0_櫛状版1_櫛状版2;
 
-    	public Par X0Y0_櫛状版1_櫛状版3;
+    	public ShapePart X0Y0_櫛状版1_櫛状版3;
 
-    	public Par X0Y0_櫛状版1_櫛状版4;
+    	public ShapePart X0Y0_櫛状版1_櫛状版4;
 
-    	public Par X0Y0_櫛状版1_櫛状版5;
+    	public ShapePart X0Y0_櫛状版1_櫛状版5;
 
-    	public Par X0Y0_櫛状版1_櫛状版6;
+    	public ShapePart X0Y0_櫛状版1_櫛状版6;
 
-    	public Par X0Y0_歯1;
+    	public ShapePart X0Y0_歯1;
 
-    	public Par X0Y0_歯2;
+    	public ShapePart X0Y0_歯2;
 
-    	public Par X0Y0_歯3;
+    	public ShapePart X0Y0_歯3;
 
-    	public Par X0Y0_歯4;
+    	public ShapePart X0Y0_歯4;
 
-    	public Par X0Y0_歯5;
+    	public ShapePart X0Y0_歯5;
 
-    	public Par X0Y0_歯6;
+    	public ShapePart X0Y0_歯6;
 
-    	public Par X0Y0_歯7;
+    	public ShapePart X0Y0_歯7;
 
-    	public Par X0Y0_歯8;
+    	public ShapePart X0Y0_歯8;
 
-    	public Par X0Y0_歯9;
+    	public ShapePart X0Y0_歯9;
 
-    	public Par X0Y0_歯10;
+    	public ShapePart X0Y0_歯10;
 
-    	public Par X0Y0_歯11;
+    	public ShapePart X0Y0_歯11;
 
-    	public Par X0Y0_歯12;
+    	public ShapePart X0Y0_歯12;
 
-    	public Par X0Y0_歯13;
+    	public ShapePart X0Y0_歯13;
 
-    	public Par X0Y0_櫛状板2;
+    	public ShapePart X0Y0_櫛状板2;
 
     	public ColorD 櫛状版1_櫛状版1CD;
 

@@ -70,7 +70,7 @@ namespace SlaveMatrix
     		}
     		set
     		{
-    			foreach (Par item in Body.EnumJoinRoot)
+    			foreach (ShapePart item in Body.EnumJoinRoot)
     			{
     				item.BasePointBase = value;
     			}
@@ -86,7 +86,7 @@ namespace SlaveMatrix
     		}
     		set
     		{
-    			foreach (Par item in Body.EnumJoinRoot)
+    			foreach (ShapePart item in Body.EnumJoinRoot)
     			{
     				item.BasePointCont = value;
     			}
@@ -104,7 +104,7 @@ namespace SlaveMatrix
     		}
     		set
     		{
-    			foreach (Par item in Body.EnumJoinRoot)
+    			foreach (ShapePart item in Body.EnumJoinRoot)
     			{
     				item.PositionBase = value;
     			}
@@ -120,7 +120,7 @@ namespace SlaveMatrix
     		}
     		set
     		{
-    			foreach (Par item in Body.EnumJoinRoot)
+    			foreach (ShapePart item in Body.EnumJoinRoot)
     			{
     				item.PositionCont = value;
     			}
@@ -132,7 +132,7 @@ namespace SlaveMatrix
     	{
     		set
     		{
-    			foreach (Par item in Body.EnumAllPar())
+    			foreach (ShapePart item in Body.EnumAllPar())
     			{
     				item.AngleBase = value;
     			}
@@ -148,7 +148,7 @@ namespace SlaveMatrix
     		}
     		set
     		{
-    			foreach (Par item in Body.EnumJoinRoot)
+    			foreach (ShapePart item in Body.EnumJoinRoot)
     			{
     				item.AngleBase = value;
     			}
@@ -164,7 +164,7 @@ namespace SlaveMatrix
     		}
     		set
     		{
-    			foreach (Par item in Body.EnumJoinRoot)
+    			foreach (ShapePart item in Body.EnumJoinRoot)
     			{
     				item.AngleCont = value;
     			}
@@ -180,7 +180,7 @@ namespace SlaveMatrix
     		}
     		set
     		{
-    			foreach (Par item in Body.EnumAllPar())
+    			foreach (ShapePart item in Body.EnumAllPar())
     			{
     				item.SizeBase *= value;
     			}
@@ -196,7 +196,7 @@ namespace SlaveMatrix
     		}
     		set
     		{
-    			foreach (Par item in Body.EnumAllPar())
+    			foreach (ShapePart item in Body.EnumAllPar())
     			{
     				item.SizeCont = value;
     			}
@@ -212,7 +212,7 @@ namespace SlaveMatrix
     		}
     		set
     		{
-    			foreach (Par item in Body.EnumAllPar())
+    			foreach (ShapePart item in Body.EnumAllPar())
     			{
     				item.SizeXBase *= value;
     			}
@@ -228,7 +228,7 @@ namespace SlaveMatrix
     		}
     		set
     		{
-    			foreach (Par item in Body.EnumAllPar())
+    			foreach (ShapePart item in Body.EnumAllPar())
     			{
     				item.SizeXCont = value;
     			}
@@ -244,7 +244,7 @@ namespace SlaveMatrix
     		}
     		set
     		{
-    			foreach (Par item in Body.EnumAllPar())
+    			foreach (ShapePart item in Body.EnumAllPar())
     			{
     				item.SizeYBase *= value;
     			}
@@ -260,7 +260,7 @@ namespace SlaveMatrix
     		}
     		set
     		{
-    			foreach (Par item in Body.EnumAllPar())
+    			foreach (ShapePart item in Body.EnumAllPar())
     			{
     				item.SizeYCont = value;
     			}
@@ -286,7 +286,7 @@ namespace SlaveMatrix
     			double rate = 肥大mi1 + 肥大d1 * 肥大_;
     			double num = 肥大mi2 + 肥大d2 * 肥大_;
     			double num2 = num + 0.05 * 肥大_.Inverse();
-    			foreach (Par item in Body.EnumAllPar())
+    			foreach (ShapePart item in Body.EnumAllPar())
     			{
     				if (item.Parent.Tag.Contains("眼") || item.Parent.Tag.Contains("コア") || item.Tag.Contains("傷") || item.Tag.Contains("ボタン"))
     				{
@@ -334,7 +334,7 @@ namespace SlaveMatrix
     		{
     			身長_ = value;
     			double num = 身長mi2 + 身長d2 * 身長_;
-    			foreach (Par item in Body.EnumAllPar())
+    			foreach (ShapePart item in Body.EnumAllPar())
     			{
     				if (!item.Parent.Tag.Contains("眼") && !item.Parent.Tag.Contains("コア") && !item.Tag.Contains("傷") && !item.Tag.Contains("ボタン") && !item.Parent.Tag.Contains("輪") && !item.Tag.Contains("吸盤") && !(this is 膣基) && !(this is 膣内精液) && !(this is 断面) && !(this is 性器) && !(this is 肛門) && !(this is 乳房) && !(this is 下着トップ) && !(this is Waist) && !(this is 腰肌) && !(this is 四足腰) && !(this is 下着ボトム) && !(this is 上着ボトム) && !(this is 手) && !(this is 噴乳) && !(this is 飛沫) && !(this is 潮吹_小) && !(this is 潮吹_大) && !(this is 放尿) && !(this is Head) && !(this is 目隠帯) && !(this is 玉口枷) && !(this is 半身) && !(this is 頭頂) && !(this is 背中_光) && !(this is ボテ腹))
     				{
@@ -483,7 +483,7 @@ namespace SlaveMatrix
     		{
     			サイズ_ = value;
     			double rate = 0.95 + 0.09 * サイズ_;
-    			foreach (Par item in Body.EnumAllPar())
+    			foreach (ShapePart item in Body.EnumAllPar())
     			{
     				Vector2D center = item.OP.GetCenter();
     				item.OP.ScalingXY(center, rate);
@@ -502,7 +502,7 @@ namespace SlaveMatrix
     		{
     			サイズX_ = value;
     			double rate = 0.95 + 0.09 * サイズX_;
-    			foreach (Par item in Body.EnumAllPar())
+    			foreach (ShapePart item in Body.EnumAllPar())
     			{
     				Vector2D center = item.OP.GetCenter();
     				item.OP.ScalingX(center, rate);
@@ -521,7 +521,7 @@ namespace SlaveMatrix
     		{
     			サイズY_ = value;
     			double rate = 0.95 + 0.09 * サイズY_;
-    			foreach (Par item in Body.EnumAllPar())
+    			foreach (ShapePart item in Body.EnumAllPar())
     			{
     				Vector2D center = item.OP.GetCenter();
     				item.OP.ScalingY(center, rate);
@@ -1002,7 +1002,7 @@ namespace SlaveMatrix
 
     	public void SetAngle(Ele e)
     	{
-    		foreach (var item in Body.EnumAllPar().Zip(e.Body.EnumAllPar(), (Par a0, Par a1) => new { a0, a1 }))
+    		foreach (var item in Body.EnumAllPar().Zip(e.Body.EnumAllPar(), (ShapePart a0, ShapePart a1) => new { a0, a1 }))
     		{
     			item.a0.AngleBase = 0.0 - item.a1.AngleBase;
     		}
@@ -1049,24 +1049,24 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public ColorP GetParOfColorP(Par p)
+    	public ColorP GetParOfColorP(ShapePart p)
     	{
     		return (from e in ThisType.GetFields()
     			where e.FieldType.ToString() == Sta.cpt
-    			select e.GetValue(this)).Cast<ColorP>().FirstOrDefault((ColorP e) => e.Par == p);
+    			select e.GetValue(this)).Cast<ColorP>().FirstOrDefault((ColorP e) => e.ShapePart == p);
     	}
 
-    	public virtual bool Is布(Par p)
+    	public virtual bool Is布(ShapePart p)
     	{
     		return false;
     	}
 
-    	public virtual bool Is革(Par p)
+    	public virtual bool Is革(ShapePart p)
     	{
     		return false;
     	}
 
-    	public virtual bool Is鉄(Par p)
+    	public virtual bool Is鉄(ShapePart p)
     	{
     		return false;
     	}

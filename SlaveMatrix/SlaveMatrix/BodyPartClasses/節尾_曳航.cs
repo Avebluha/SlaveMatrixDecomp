@@ -4,27 +4,27 @@ namespace SlaveMatrix
 {
     public class 節尾_曳航 : 節尾
     {
-    	public Par X0Y0_前腿節;
+    	public ShapePart X0Y0_前腿節;
 
-    	public Par X0Y0_腿節;
+    	public ShapePart X0Y0_腿節;
 
-    	public Par X0Y0_輪_革;
+    	public ShapePart X0Y0_輪_革;
 
-    	public Par X0Y0_輪_金具1;
+    	public ShapePart X0Y0_輪_金具1;
 
-    	public Par X0Y0_輪_金具2;
+    	public ShapePart X0Y0_輪_金具2;
 
-    	public Par X0Y0_輪_金具3;
+    	public ShapePart X0Y0_輪_金具3;
 
-    	public Par X0Y0_輪_金具左;
+    	public ShapePart X0Y0_輪_金具左;
 
-    	public Par X0Y0_輪_金具右;
+    	public ShapePart X0Y0_輪_金具右;
 
-    	public Par X0Y0_脛節;
+    	public ShapePart X0Y0_脛節;
 
-    	public Par X0Y0_付節1;
+    	public ShapePart X0Y0_付節1;
 
-    	public Par X0Y0_付節2;
+    	public ShapePart X0Y0_付節2;
 
     	public ColorD 前腿節CD;
 
@@ -456,7 +456,7 @@ namespace SlaveMatrix
     		Body.JoinPAall();
     	}
 
-    	public override bool Is革(Par p)
+    	public override bool Is革(ShapePart p)
     	{
     		if (p != X0Y0_輪_革 && p != X0Y0_輪_金具1 && p != X0Y0_輪_金具2 && p != X0Y0_輪_金具3 && p != X0Y0_輪_金具左)
     		{

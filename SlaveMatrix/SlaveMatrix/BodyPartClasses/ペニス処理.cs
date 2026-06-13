@@ -612,7 +612,7 @@ namespace SlaveMatrix
     			OnUpdate = delegate(Motion m)
     			{
     				xc = 1.0 + 0.2 * m.Value;
-    				foreach (Par item in 調教UI.ペニス.Body.EnumAllPar())
+    				foreach (ShapePart item in 調教UI.ペニス.Body.EnumAllPar())
     				{
     					if (item.Tag != "陰嚢")
     					{
@@ -648,7 +648,7 @@ namespace SlaveMatrix
     		調教UI.Mots.Add(射精.GetHashCode().ToString(), 射精);
     		bool 外出し = false;
     		bool 断面 = false;
-    		Par p;
+    		ShapePart p;
     		Vector2D cp;
     		Color hc;
     		ContactType c;

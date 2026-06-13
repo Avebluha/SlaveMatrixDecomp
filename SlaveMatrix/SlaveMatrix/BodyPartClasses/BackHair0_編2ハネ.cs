@@ -4,91 +4,91 @@ namespace SlaveMatrix
 {
     public class BackHair0_編2ハネ : お下げ2
     {
-    	public Par X0Y0_髪基;
+    	public ShapePart X0Y0_髪基;
 
-    	public Par X0Y0_お下げ左_編節1_髪節;
+    	public ShapePart X0Y0_お下げ左_編節1_髪節;
 
-    	public Par X0Y0_お下げ左_編節1_髪編目;
+    	public ShapePart X0Y0_お下げ左_編節1_髪編目;
 
-    	public Par X0Y0_お下げ左_編節2_髪節;
+    	public ShapePart X0Y0_お下げ左_編節2_髪節;
 
-    	public Par X0Y0_お下げ左_編節2_髪編目;
+    	public ShapePart X0Y0_お下げ左_編節2_髪編目;
 
-    	public Par X0Y0_お下げ左_編節3_髪節;
+    	public ShapePart X0Y0_お下げ左_編節3_髪節;
 
-    	public Par X0Y0_お下げ左_編節3_髪編目;
+    	public ShapePart X0Y0_お下げ左_編節3_髪編目;
 
-    	public Par X0Y0_お下げ左_編節4_髪節;
+    	public ShapePart X0Y0_お下げ左_編節4_髪節;
 
-    	public Par X0Y0_お下げ左_編節4_髪編目;
+    	public ShapePart X0Y0_お下げ左_編節4_髪編目;
 
-    	public Par X0Y0_お下げ左_編節5_髪節;
+    	public ShapePart X0Y0_お下げ左_編節5_髪節;
 
-    	public Par X0Y0_お下げ左_編節5_髪編目;
+    	public ShapePart X0Y0_お下げ左_編節5_髪編目;
 
-    	public Par X0Y0_お下げ左_編節6_髪節;
+    	public ShapePart X0Y0_お下げ左_編節6_髪節;
 
-    	public Par X0Y0_お下げ左_編節6_髪編目;
+    	public ShapePart X0Y0_お下げ左_編節6_髪編目;
 
-    	public Par X0Y0_お下げ左_編節7_髪節;
+    	public ShapePart X0Y0_お下げ左_編節7_髪節;
 
-    	public Par X0Y0_お下げ左_編節7_髪編目;
+    	public ShapePart X0Y0_お下げ左_編節7_髪編目;
 
-    	public Par X0Y0_お下げ左_編節8_髪節;
+    	public ShapePart X0Y0_お下げ左_編節8_髪節;
 
-    	public Par X0Y0_お下げ左_編節8_髪編目;
+    	public ShapePart X0Y0_お下げ左_編節8_髪編目;
 
-    	public Par X0Y0_お下げ左_髪縛1;
+    	public ShapePart X0Y0_お下げ左_髪縛1;
 
-    	public Par X0Y0_お下げ左_髪縛2;
+    	public ShapePart X0Y0_お下げ左_髪縛2;
 
-    	public Par X0Y0_お下げ左_髪左1;
+    	public ShapePart X0Y0_お下げ左_髪左1;
 
-    	public Par X0Y0_お下げ左_髪右1;
+    	public ShapePart X0Y0_お下げ左_髪右1;
 
-    	public Par X0Y0_お下げ左_髪根;
+    	public ShapePart X0Y0_お下げ左_髪根;
 
-    	public Par X0Y0_お下げ右_編節1_髪節;
+    	public ShapePart X0Y0_お下げ右_編節1_髪節;
 
-    	public Par X0Y0_お下げ右_編節1_髪編目;
+    	public ShapePart X0Y0_お下げ右_編節1_髪編目;
 
-    	public Par X0Y0_お下げ右_編節2_髪節;
+    	public ShapePart X0Y0_お下げ右_編節2_髪節;
 
-    	public Par X0Y0_お下げ右_編節2_髪編目;
+    	public ShapePart X0Y0_お下げ右_編節2_髪編目;
 
-    	public Par X0Y0_お下げ右_編節3_髪節;
+    	public ShapePart X0Y0_お下げ右_編節3_髪節;
 
-    	public Par X0Y0_お下げ右_編節3_髪編目;
+    	public ShapePart X0Y0_お下げ右_編節3_髪編目;
 
-    	public Par X0Y0_お下げ右_編節4_髪節;
+    	public ShapePart X0Y0_お下げ右_編節4_髪節;
 
-    	public Par X0Y0_お下げ右_編節4_髪編目;
+    	public ShapePart X0Y0_お下げ右_編節4_髪編目;
 
-    	public Par X0Y0_お下げ右_編節5_髪節;
+    	public ShapePart X0Y0_お下げ右_編節5_髪節;
 
-    	public Par X0Y0_お下げ右_編節5_髪編目;
+    	public ShapePart X0Y0_お下げ右_編節5_髪編目;
 
-    	public Par X0Y0_お下げ右_編節6_髪節;
+    	public ShapePart X0Y0_お下げ右_編節6_髪節;
 
-    	public Par X0Y0_お下げ右_編節6_髪編目;
+    	public ShapePart X0Y0_お下げ右_編節6_髪編目;
 
-    	public Par X0Y0_お下げ右_編節7_髪節;
+    	public ShapePart X0Y0_お下げ右_編節7_髪節;
 
-    	public Par X0Y0_お下げ右_編節7_髪編目;
+    	public ShapePart X0Y0_お下げ右_編節7_髪編目;
 
-    	public Par X0Y0_お下げ右_編節8_髪節;
+    	public ShapePart X0Y0_お下げ右_編節8_髪節;
 
-    	public Par X0Y0_お下げ右_編節8_髪編目;
+    	public ShapePart X0Y0_お下げ右_編節8_髪編目;
 
-    	public Par X0Y0_お下げ右_髪縛1;
+    	public ShapePart X0Y0_お下げ右_髪縛1;
 
-    	public Par X0Y0_お下げ右_髪縛2;
+    	public ShapePart X0Y0_お下げ右_髪縛2;
 
-    	public Par X0Y0_お下げ右_髪右1;
+    	public ShapePart X0Y0_お下げ右_髪右1;
 
-    	public Par X0Y0_お下げ右_髪左1;
+    	public ShapePart X0Y0_お下げ右_髪左1;
 
-    	public Par X0Y0_お下げ右_髪根;
+    	public ShapePart X0Y0_お下げ右_髪根;
 
     	public ColorD 髪基CD;
 
@@ -1443,7 +1443,7 @@ namespace SlaveMatrix
     		X0Y0_お下げ右_髪根.OP[(!右) ? 4 : 0].Outline = false;
     	}
 
-    	public override bool Is布(Par p)
+    	public override bool Is布(ShapePart p)
     	{
     		if (p != X0Y0_お下げ左_髪縛1 && p != X0Y0_お下げ左_髪縛2 && p != X0Y0_お下げ右_髪縛1)
     		{

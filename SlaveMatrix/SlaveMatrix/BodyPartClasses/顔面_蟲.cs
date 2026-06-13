@@ -5,75 +5,75 @@ namespace SlaveMatrix
 {
     public class 顔面_蟲 : 顔面
     {
-    	public Par X0Y0_面;
+    	public ShapePart X0Y0_面;
 
-    	public Par X0Y0_眼左_眼1_基;
+    	public ShapePart X0Y0_眼左_眼1_基;
 
-    	public Par X0Y0_眼左_眼1_眼;
+    	public ShapePart X0Y0_眼左_眼1_眼;
 
-    	public Par X0Y0_眼左_眼1_ハイライト;
+    	public ShapePart X0Y0_眼左_眼1_ハイライト;
 
-    	public Par X0Y0_眼左_眼2_基;
+    	public ShapePart X0Y0_眼左_眼2_基;
 
-    	public Par X0Y0_眼左_眼2_眼;
+    	public ShapePart X0Y0_眼左_眼2_眼;
 
-    	public Par X0Y0_眼左_眼2_ハイライト;
+    	public ShapePart X0Y0_眼左_眼2_ハイライト;
 
-    	public Par X0Y0_眼左_眼3_基;
+    	public ShapePart X0Y0_眼左_眼3_基;
 
-    	public Par X0Y0_眼左_眼3_眼;
+    	public ShapePart X0Y0_眼左_眼3_眼;
 
-    	public Par X0Y0_眼左_眼3_ハイライト;
+    	public ShapePart X0Y0_眼左_眼3_ハイライト;
 
-    	public Par X0Y0_眼左_眼4_基;
+    	public ShapePart X0Y0_眼左_眼4_基;
 
-    	public Par X0Y0_眼左_眼4_眼;
+    	public ShapePart X0Y0_眼左_眼4_眼;
 
-    	public Par X0Y0_眼左_眼4_ハイライト;
+    	public ShapePart X0Y0_眼左_眼4_ハイライト;
 
-    	public Par X0Y0_眼左_眼5_基;
+    	public ShapePart X0Y0_眼左_眼5_基;
 
-    	public Par X0Y0_眼左_眼5_眼;
+    	public ShapePart X0Y0_眼左_眼5_眼;
 
-    	public Par X0Y0_眼左_眼5_ハイライト;
+    	public ShapePart X0Y0_眼左_眼5_ハイライト;
 
-    	public Par X0Y0_眼右_眼1_基;
+    	public ShapePart X0Y0_眼右_眼1_基;
 
-    	public Par X0Y0_眼右_眼1_眼;
+    	public ShapePart X0Y0_眼右_眼1_眼;
 
-    	public Par X0Y0_眼右_眼1_ハイライト;
+    	public ShapePart X0Y0_眼右_眼1_ハイライト;
 
-    	public Par X0Y0_眼右_眼2_基;
+    	public ShapePart X0Y0_眼右_眼2_基;
 
-    	public Par X0Y0_眼右_眼2_眼;
+    	public ShapePart X0Y0_眼右_眼2_眼;
 
-    	public Par X0Y0_眼右_眼2_ハイライト;
+    	public ShapePart X0Y0_眼右_眼2_ハイライト;
 
-    	public Par X0Y0_眼右_眼3_基;
+    	public ShapePart X0Y0_眼右_眼3_基;
 
-    	public Par X0Y0_眼右_眼3_眼;
+    	public ShapePart X0Y0_眼右_眼3_眼;
 
-    	public Par X0Y0_眼右_眼3_ハイライト;
+    	public ShapePart X0Y0_眼右_眼3_ハイライト;
 
-    	public Par X0Y0_眼右_眼4_基;
+    	public ShapePart X0Y0_眼右_眼4_基;
 
-    	public Par X0Y0_眼右_眼4_眼;
+    	public ShapePart X0Y0_眼右_眼4_眼;
 
-    	public Par X0Y0_眼右_眼4_ハイライト;
+    	public ShapePart X0Y0_眼右_眼4_ハイライト;
 
-    	public Par X0Y0_眼右_眼5_基;
+    	public ShapePart X0Y0_眼右_眼5_基;
 
-    	public Par X0Y0_眼右_眼5_眼;
+    	public ShapePart X0Y0_眼右_眼5_眼;
 
-    	public Par X0Y0_眼右_眼5_ハイライト;
+    	public ShapePart X0Y0_眼右_眼5_ハイライト;
 
-    	public Par X0Y0_角左_角左1;
+    	public ShapePart X0Y0_角左_角左1;
 
-    	public Par X0Y0_角左_角左2;
+    	public ShapePart X0Y0_角左_角左2;
 
-    	public Par X0Y0_角右_角右1;
+    	public ShapePart X0Y0_角右_角右1;
 
-    	public Par X0Y0_角右_角右2;
+    	public ShapePart X0Y0_角右_角右2;
 
     	public ColorD 面CD;
 

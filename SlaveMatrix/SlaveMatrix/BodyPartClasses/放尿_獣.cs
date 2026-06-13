@@ -4,135 +4,135 @@ namespace SlaveMatrix
 {
     public class 放尿_獣 : 放尿
     {
-    	public Par X0Y0_尿;
+    	public ShapePart X0Y0_尿;
 
-    	public Par X0Y0_尿散り1;
+    	public ShapePart X0Y0_尿散り1;
 
-    	public Par X0Y0_尿散り2;
+    	public ShapePart X0Y0_尿散り2;
 
-    	public Par X0Y0_尿散り3;
+    	public ShapePart X0Y0_尿散り3;
 
-    	public Par X0Y0_尿散り4;
+    	public ShapePart X0Y0_尿散り4;
 
-    	public Par X0Y0_尿散り5;
+    	public ShapePart X0Y0_尿散り5;
 
-    	public Par X0Y1_尿;
+    	public ShapePart X0Y1_尿;
 
-    	public Par X0Y1_尿散り1;
+    	public ShapePart X0Y1_尿散り1;
 
-    	public Par X0Y1_尿散り2;
+    	public ShapePart X0Y1_尿散り2;
 
-    	public Par X0Y1_尿散り3;
+    	public ShapePart X0Y1_尿散り3;
 
-    	public Par X0Y1_尿散り4;
+    	public ShapePart X0Y1_尿散り4;
 
-    	public Par X0Y1_尿散り5;
+    	public ShapePart X0Y1_尿散り5;
 
-    	public Par X0Y2_尿;
+    	public ShapePart X0Y2_尿;
 
-    	public Par X0Y2_尿散り1;
+    	public ShapePart X0Y2_尿散り1;
 
-    	public Par X0Y2_尿散り2;
+    	public ShapePart X0Y2_尿散り2;
 
-    	public Par X0Y2_尿散り3;
+    	public ShapePart X0Y2_尿散り3;
 
-    	public Par X0Y2_尿散り4;
+    	public ShapePart X0Y2_尿散り4;
 
-    	public Par X0Y2_尿散り5;
+    	public ShapePart X0Y2_尿散り5;
 
-    	public Par X0Y3_尿;
+    	public ShapePart X0Y3_尿;
 
-    	public Par X0Y3_尿散り1;
+    	public ShapePart X0Y3_尿散り1;
 
-    	public Par X0Y3_尿散り2;
+    	public ShapePart X0Y3_尿散り2;
 
-    	public Par X0Y3_尿散り3;
+    	public ShapePart X0Y3_尿散り3;
 
-    	public Par X0Y3_尿散り4;
+    	public ShapePart X0Y3_尿散り4;
 
-    	public Par X0Y3_尿散り5;
+    	public ShapePart X0Y3_尿散り5;
 
-    	public Par X0Y4_尿;
+    	public ShapePart X0Y4_尿;
 
-    	public Par X0Y4_尿散り1;
+    	public ShapePart X0Y4_尿散り1;
 
-    	public Par X0Y4_尿散り2;
+    	public ShapePart X0Y4_尿散り2;
 
-    	public Par X0Y4_尿散り3;
+    	public ShapePart X0Y4_尿散り3;
 
-    	public Par X0Y4_尿散り4;
+    	public ShapePart X0Y4_尿散り4;
 
-    	public Par X0Y4_尿散り5;
+    	public ShapePart X0Y4_尿散り5;
 
-    	public Par X0Y5_尿;
+    	public ShapePart X0Y5_尿;
 
-    	public Par X0Y5_尿散り1;
+    	public ShapePart X0Y5_尿散り1;
 
-    	public Par X0Y5_尿散り2;
+    	public ShapePart X0Y5_尿散り2;
 
-    	public Par X0Y5_尿散り3;
+    	public ShapePart X0Y5_尿散り3;
 
-    	public Par X0Y5_尿散り4;
+    	public ShapePart X0Y5_尿散り4;
 
-    	public Par X0Y5_尿散り5;
+    	public ShapePart X0Y5_尿散り5;
 
-    	public Par X0Y6_尿;
+    	public ShapePart X0Y6_尿;
 
-    	public Par X0Y6_尿散り1;
+    	public ShapePart X0Y6_尿散り1;
 
-    	public Par X0Y6_尿散り2;
+    	public ShapePart X0Y6_尿散り2;
 
-    	public Par X0Y6_尿散り3;
+    	public ShapePart X0Y6_尿散り3;
 
-    	public Par X0Y6_尿散り4;
+    	public ShapePart X0Y6_尿散り4;
 
-    	public Par X0Y6_尿散り5;
+    	public ShapePart X0Y6_尿散り5;
 
-    	public Par X0Y7_尿;
+    	public ShapePart X0Y7_尿;
 
-    	public Par X0Y7_尿散り1;
+    	public ShapePart X0Y7_尿散り1;
 
-    	public Par X0Y7_尿散り2;
+    	public ShapePart X0Y7_尿散り2;
 
-    	public Par X0Y7_尿散り3;
+    	public ShapePart X0Y7_尿散り3;
 
-    	public Par X0Y7_尿散り4;
+    	public ShapePart X0Y7_尿散り4;
 
-    	public Par X0Y7_尿散り5;
+    	public ShapePart X0Y7_尿散り5;
 
-    	public Par X0Y8_尿;
+    	public ShapePart X0Y8_尿;
 
-    	public Par X0Y8_尿散り1;
+    	public ShapePart X0Y8_尿散り1;
 
-    	public Par X0Y8_尿散り2;
+    	public ShapePart X0Y8_尿散り2;
 
-    	public Par X0Y8_尿散り3;
+    	public ShapePart X0Y8_尿散り3;
 
-    	public Par X0Y8_尿散り4;
+    	public ShapePart X0Y8_尿散り4;
 
-    	public Par X0Y8_尿散り5;
+    	public ShapePart X0Y8_尿散り5;
 
-    	public Par X0Y9_尿;
+    	public ShapePart X0Y9_尿;
 
-    	public Par X0Y9_尿散り1;
+    	public ShapePart X0Y9_尿散り1;
 
-    	public Par X0Y9_尿散り2;
+    	public ShapePart X0Y9_尿散り2;
 
-    	public Par X0Y9_尿散り3;
+    	public ShapePart X0Y9_尿散り3;
 
-    	public Par X0Y9_尿散り4;
+    	public ShapePart X0Y9_尿散り4;
 
-    	public Par X0Y10_尿;
+    	public ShapePart X0Y10_尿;
 
-    	public Par X0Y10_尿散り1;
+    	public ShapePart X0Y10_尿散り1;
 
-    	public Par X0Y10_尿散り2;
+    	public ShapePart X0Y10_尿散り2;
 
-    	public Par X0Y10_尿散り3;
+    	public ShapePart X0Y10_尿散り3;
 
-    	public Par X0Y10_尿散り4;
+    	public ShapePart X0Y10_尿散り4;
 
-    	public Par X0Y10_尿散り5;
+    	public ShapePart X0Y10_尿散り5;
 
     	public ColorD 尿CD;
 

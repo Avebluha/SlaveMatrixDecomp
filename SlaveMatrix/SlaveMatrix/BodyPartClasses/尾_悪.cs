@@ -5,57 +5,57 @@ namespace SlaveMatrix
 {
     public class 尾_悪 : 尾
     {
-    	public Par X0Y0_尾0;
+    	public ShapePart X0Y0_尾0;
 
-    	public Par X0Y0_尾1;
+    	public ShapePart X0Y0_尾1;
 
-    	public Par X0Y0_尾2;
+    	public ShapePart X0Y0_尾2;
 
-    	public Par X0Y0_尾3;
+    	public ShapePart X0Y0_尾3;
 
-    	public Par X0Y0_尾4;
+    	public ShapePart X0Y0_尾4;
 
-    	public Par X0Y0_尾5;
+    	public ShapePart X0Y0_尾5;
 
-    	public Par X0Y0_尾6;
+    	public ShapePart X0Y0_尾6;
 
-    	public Par X0Y0_尾7;
+    	public ShapePart X0Y0_尾7;
 
-    	public Par X0Y0_尾8;
+    	public ShapePart X0Y0_尾8;
 
-    	public Par X0Y0_輪_革;
+    	public ShapePart X0Y0_輪_革;
 
-    	public Par X0Y0_輪_金具1;
+    	public ShapePart X0Y0_輪_金具1;
 
-    	public Par X0Y0_輪_金具2;
+    	public ShapePart X0Y0_輪_金具2;
 
-    	public Par X0Y0_輪_金具3;
+    	public ShapePart X0Y0_輪_金具3;
 
-    	public Par X0Y0_輪_金具左;
+    	public ShapePart X0Y0_輪_金具左;
 
-    	public Par X0Y0_輪_金具右;
+    	public ShapePart X0Y0_輪_金具右;
 
-    	public Par X0Y0_尾9;
+    	public ShapePart X0Y0_尾9;
 
-    	public Par X0Y0_尾10;
+    	public ShapePart X0Y0_尾10;
 
-    	public Par X0Y0_尾11;
+    	public ShapePart X0Y0_尾11;
 
-    	public Par X0Y0_尾12;
+    	public ShapePart X0Y0_尾12;
 
-    	public Par X0Y0_尾13;
+    	public ShapePart X0Y0_尾13;
 
-    	public Par X0Y0_尾14;
+    	public ShapePart X0Y0_尾14;
 
-    	public Par X0Y0_尾15;
+    	public ShapePart X0Y0_尾15;
 
-    	public Par X0Y0_尾16;
+    	public ShapePart X0Y0_尾16;
 
-    	public Par X0Y0_尾17;
+    	public ShapePart X0Y0_尾17;
 
-    	public Par X0Y0_先端_先;
+    	public ShapePart X0Y0_先端_先;
 
-    	public Par X0Y0_先端_尾;
+    	public ShapePart X0Y0_先端_尾;
 
     	public ColorD 尾0CD;
 
@@ -165,7 +165,7 @@ namespace SlaveMatrix
 
     	public 拘束鎖 鎖2;
 
-    	public Par[] Pars;
+    	public ShapePart[] Pars;
 
     	private Vector2D[] mm;
 
@@ -752,7 +752,7 @@ namespace SlaveMatrix
     		}
     		base.配色指定 = 配色指定;
     		配色(体配色);
-    		Pars = new Par[26]
+    		Pars = new ShapePart[26]
     		{
     			X0Y0_尾0, X0Y0_尾1, X0Y0_尾2, X0Y0_尾3, X0Y0_尾4, X0Y0_尾5, X0Y0_尾6, X0Y0_尾7, X0Y0_尾8, X0Y0_輪_革,
     			X0Y0_輪_金具1, X0Y0_輪_金具2, X0Y0_輪_金具3, X0Y0_輪_金具左, X0Y0_輪_金具右, X0Y0_尾9, X0Y0_尾10, X0Y0_尾11, X0Y0_尾12, X0Y0_尾13,
@@ -860,7 +860,7 @@ namespace SlaveMatrix
     		Body.JoinPAall();
     	}
 
-    	public override bool Is革(Par p)
+    	public override bool Is革(ShapePart p)
     	{
     		if (p != X0Y0_輪_革 && p != X0Y0_輪_金具1 && p != X0Y0_輪_金具2 && p != X0Y0_輪_金具3 && p != X0Y0_輪_金具左)
     		{
@@ -869,7 +869,7 @@ namespace SlaveMatrix
     		return true;
     	}
 
-    	public override IEnumerable<Par> Enum軸()
+    	public override IEnumerable<ShapePart> Enum軸()
     	{
     		yield return X0Y0_尾0;
     		yield return X0Y0_尾1;

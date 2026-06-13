@@ -46,7 +46,7 @@ namespace SlaveMatrix
     	{
     		this.調教UI = 調教UI;
     		this.Ele = Ele;
-    		foreach (Par item in Ele.Body.EnumAllPar())
+    		foreach (ShapePart item in Ele.Body.EnumAllPar())
     		{
     			item.HitColor = Med.GetUniqueColor();
     		}

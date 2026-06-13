@@ -6,125 +6,125 @@ namespace SlaveMatrix
 {
     public class 尾_蟲 : 尾
     {
-    	public Par X0Y0_尾5_背板;
+    	public ShapePart X0Y0_尾5_背板;
 
-    	public Par X0Y0_尾5_節;
+    	public ShapePart X0Y0_尾5_節;
 
-    	public Par X0Y0_尾5_胸板;
+    	public ShapePart X0Y0_尾5_胸板;
 
-    	public Par X0Y0_尾5_尾;
+    	public ShapePart X0Y0_尾5_尾;
 
-    	public Par X0Y0_尾5_瘤左2;
+    	public ShapePart X0Y0_尾5_瘤左2;
 
-    	public Par X0Y0_尾5_瘤左1;
+    	public ShapePart X0Y0_尾5_瘤左1;
 
-    	public Par X0Y0_尾5_瘤右2;
+    	public ShapePart X0Y0_尾5_瘤右2;
 
-    	public Par X0Y0_尾5_瘤右1;
+    	public ShapePart X0Y0_尾5_瘤右1;
 
-    	public Par X0Y0_尾4_背板;
+    	public ShapePart X0Y0_尾4_背板;
 
-    	public Par X0Y0_尾4_節;
+    	public ShapePart X0Y0_尾4_節;
 
-    	public Par X0Y0_尾4_胸板;
+    	public ShapePart X0Y0_尾4_胸板;
 
-    	public Par X0Y0_尾4_尾;
+    	public ShapePart X0Y0_尾4_尾;
 
-    	public Par X0Y0_尾4_瘤左2;
+    	public ShapePart X0Y0_尾4_瘤左2;
 
-    	public Par X0Y0_尾4_瘤左1;
+    	public ShapePart X0Y0_尾4_瘤左1;
 
-    	public Par X0Y0_尾4_瘤右2;
+    	public ShapePart X0Y0_尾4_瘤右2;
 
-    	public Par X0Y0_尾4_瘤右1;
+    	public ShapePart X0Y0_尾4_瘤右1;
 
-    	public Par X0Y0_尾3_背板;
+    	public ShapePart X0Y0_尾3_背板;
 
-    	public Par X0Y0_尾3_節;
+    	public ShapePart X0Y0_尾3_節;
 
-    	public Par X0Y0_尾3_胸板;
+    	public ShapePart X0Y0_尾3_胸板;
 
-    	public Par X0Y0_尾3_尾;
+    	public ShapePart X0Y0_尾3_尾;
 
-    	public Par X0Y0_尾3_瘤左2;
+    	public ShapePart X0Y0_尾3_瘤左2;
 
-    	public Par X0Y0_尾3_瘤左1;
+    	public ShapePart X0Y0_尾3_瘤左1;
 
-    	public Par X0Y0_尾3_瘤右2;
+    	public ShapePart X0Y0_尾3_瘤右2;
 
-    	public Par X0Y0_尾3_瘤右1;
+    	public ShapePart X0Y0_尾3_瘤右1;
 
-    	public Par X0Y0_輪2_革;
+    	public ShapePart X0Y0_輪2_革;
 
-    	public Par X0Y0_輪2_金具1;
+    	public ShapePart X0Y0_輪2_金具1;
 
-    	public Par X0Y0_輪2_金具2;
+    	public ShapePart X0Y0_輪2_金具2;
 
-    	public Par X0Y0_輪2_金具3;
+    	public ShapePart X0Y0_輪2_金具3;
 
-    	public Par X0Y0_輪2_金具左;
+    	public ShapePart X0Y0_輪2_金具左;
 
-    	public Par X0Y0_輪2_金具右;
+    	public ShapePart X0Y0_輪2_金具右;
 
-    	public Par X0Y0_尾2_背板;
+    	public ShapePart X0Y0_尾2_背板;
 
-    	public Par X0Y0_尾2_節;
+    	public ShapePart X0Y0_尾2_節;
 
-    	public Par X0Y0_尾2_胸板;
+    	public ShapePart X0Y0_尾2_胸板;
 
-    	public Par X0Y0_尾2_尾;
+    	public ShapePart X0Y0_尾2_尾;
 
-    	public Par X0Y0_尾2_瘤左2;
+    	public ShapePart X0Y0_尾2_瘤左2;
 
-    	public Par X0Y0_尾2_瘤左1;
+    	public ShapePart X0Y0_尾2_瘤左1;
 
-    	public Par X0Y0_尾2_瘤右2;
+    	public ShapePart X0Y0_尾2_瘤右2;
 
-    	public Par X0Y0_尾2_瘤右1;
+    	public ShapePart X0Y0_尾2_瘤右1;
 
-    	public Par X0Y0_尾1_背板;
+    	public ShapePart X0Y0_尾1_背板;
 
-    	public Par X0Y0_尾1_節;
+    	public ShapePart X0Y0_尾1_節;
 
-    	public Par X0Y0_尾1_胸板;
+    	public ShapePart X0Y0_尾1_胸板;
 
-    	public Par X0Y0_尾1_尾;
+    	public ShapePart X0Y0_尾1_尾;
 
-    	public Par X0Y0_尾1_瘤左2;
+    	public ShapePart X0Y0_尾1_瘤左2;
 
-    	public Par X0Y0_尾1_瘤左1;
+    	public ShapePart X0Y0_尾1_瘤左1;
 
-    	public Par X0Y0_尾1_瘤右2;
+    	public ShapePart X0Y0_尾1_瘤右2;
 
-    	public Par X0Y0_尾1_瘤右1;
+    	public ShapePart X0Y0_尾1_瘤右1;
 
-    	public Par X0Y0_輪1_革;
+    	public ShapePart X0Y0_輪1_革;
 
-    	public Par X0Y0_輪1_金具1;
+    	public ShapePart X0Y0_輪1_金具1;
 
-    	public Par X0Y0_輪1_金具2;
+    	public ShapePart X0Y0_輪1_金具2;
 
-    	public Par X0Y0_輪1_金具3;
+    	public ShapePart X0Y0_輪1_金具3;
 
-    	public Par X0Y0_輪1_金具左;
+    	public ShapePart X0Y0_輪1_金具左;
 
-    	public Par X0Y0_輪1_金具右;
+    	public ShapePart X0Y0_輪1_金具右;
 
-    	public Par X0Y0_尾0_背板;
+    	public ShapePart X0Y0_尾0_背板;
 
-    	public Par X0Y0_尾0_節;
+    	public ShapePart X0Y0_尾0_節;
 
-    	public Par X0Y0_尾0_胸板;
+    	public ShapePart X0Y0_尾0_胸板;
 
-    	public Par X0Y0_尾0_尾;
+    	public ShapePart X0Y0_尾0_尾;
 
-    	public Par X0Y0_尾0_瘤左2;
+    	public ShapePart X0Y0_尾0_瘤左2;
 
-    	public Par X0Y0_尾0_瘤左1;
+    	public ShapePart X0Y0_尾0_瘤左1;
 
-    	public Par X0Y0_尾0_瘤右2;
+    	public ShapePart X0Y0_尾0_瘤右2;
 
-    	public Par X0Y0_尾0_瘤右1;
+    	public ShapePart X0Y0_尾0_瘤右1;
 
     	public ColorD 尾5_背板CD;
 
@@ -2025,7 +2025,7 @@ namespace SlaveMatrix
     		Body.JoinPAall();
     	}
 
-    	public override bool Is革(Par p)
+    	public override bool Is革(ShapePart p)
     	{
     		if (p != X0Y0_輪2_革 && p != X0Y0_輪2_金具1 && p != X0Y0_輪2_金具2 && p != X0Y0_輪2_金具3 && p != X0Y0_輪2_金具左 && p != X0Y0_輪2_金具右 && p != X0Y0_輪1_革 && p != X0Y0_輪1_金具1 && p != X0Y0_輪1_金具2 && p != X0Y0_輪1_金具3 && p != X0Y0_輪1_金具左)
     		{
@@ -2034,7 +2034,7 @@ namespace SlaveMatrix
     		return true;
     	}
 
-    	public override IEnumerable<Par> Enum軸()
+    	public override IEnumerable<ShapePart> Enum軸()
     	{
     		yield return X0Y0_尾0_尾;
     		yield return X0Y0_尾1_尾;

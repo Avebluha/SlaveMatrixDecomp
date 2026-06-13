@@ -5,285 +5,285 @@ namespace SlaveMatrix
 {
     public class 四足腰 : Ele
     {
-    	public Par X0Y0_Waist;
+    	public ShapePart X0Y0_Waist;
 
-    	public Par X0Y0_股;
+    	public ShapePart X0Y0_股;
 
-    	public Par X0Y0_下腹;
+    	public ShapePart X0Y0_下腹;
 
-    	public Par X0Y0_腰皺;
+    	public ShapePart X0Y0_腰皺;
 
-    	public Par X0Y0_筋肉_筋肉下;
+    	public ShapePart X0Y0_筋肉_筋肉下;
 
-    	public Par X0Y0_筋肉_筋肉左;
+    	public ShapePart X0Y0_筋肉_筋肉左;
 
-    	public Par X0Y0_筋肉_筋肉右;
+    	public ShapePart X0Y0_筋肉_筋肉右;
 
-    	public Par X0Y0_筋肉_筋上左;
+    	public ShapePart X0Y0_筋肉_筋上左;
 
-    	public Par X0Y0_筋肉_筋上右;
+    	public ShapePart X0Y0_筋肉_筋上右;
 
-    	public Par X0Y0_筋肉_筋下左;
+    	public ShapePart X0Y0_筋肉_筋下左;
 
-    	public Par X0Y0_筋肉_筋下右;
+    	public ShapePart X0Y0_筋肉_筋下右;
 
-    	public Par X0Y0_臍;
+    	public ShapePart X0Y0_臍;
 
-    	public Par X0Y0_紋柄_紋左_紋1;
+    	public ShapePart X0Y0_紋柄_紋左_紋1;
 
-    	public Par X0Y0_紋柄_紋左_紋2;
+    	public ShapePart X0Y0_紋柄_紋左_紋2;
 
-    	public Par X0Y0_紋柄_紋左_紋3;
+    	public ShapePart X0Y0_紋柄_紋左_紋3;
 
-    	public Par X0Y0_紋柄_紋右_紋1;
+    	public ShapePart X0Y0_紋柄_紋右_紋1;
 
-    	public Par X0Y0_紋柄_紋右_紋2;
+    	public ShapePart X0Y0_紋柄_紋右_紋2;
 
-    	public Par X0Y0_紋柄_紋右_紋3;
+    	public ShapePart X0Y0_紋柄_紋右_紋3;
 
-    	public Par X0Y0_虎柄_虎左;
+    	public ShapePart X0Y0_虎柄_虎左;
 
-    	public Par X0Y0_虎柄_虎右;
+    	public ShapePart X0Y0_虎柄_虎右;
 
-    	public Par X0Y0_竜性_中_鱗1;
+    	public ShapePart X0Y0_竜性_中_鱗1;
 
-    	public Par X0Y0_竜性_中_鱗2;
+    	public ShapePart X0Y0_竜性_中_鱗2;
 
-    	public Par X0Y0_竜性_中_鱗3;
+    	public ShapePart X0Y0_竜性_中_鱗3;
 
-    	public Par X0Y0_竜性_中_鱗4;
+    	public ShapePart X0Y0_竜性_中_鱗4;
 
-    	public Par X0Y0_竜性_左_鱗1;
+    	public ShapePart X0Y0_竜性_左_鱗1;
 
-    	public Par X0Y0_竜性_左_鱗2;
+    	public ShapePart X0Y0_竜性_左_鱗2;
 
-    	public Par X0Y0_竜性_右_鱗1;
+    	public ShapePart X0Y0_竜性_右_鱗1;
 
-    	public Par X0Y0_竜性_右_鱗2;
+    	public ShapePart X0Y0_竜性_右_鱗2;
 
-    	public Par X0Y1_Waist;
+    	public ShapePart X0Y1_Waist;
 
-    	public Par X0Y1_股;
+    	public ShapePart X0Y1_股;
 
-    	public Par X0Y1_下腹;
+    	public ShapePart X0Y1_下腹;
 
-    	public Par X0Y1_腰皺;
+    	public ShapePart X0Y1_腰皺;
 
-    	public Par X0Y1_筋肉_筋肉下;
+    	public ShapePart X0Y1_筋肉_筋肉下;
 
-    	public Par X0Y1_筋肉_筋肉左;
+    	public ShapePart X0Y1_筋肉_筋肉左;
 
-    	public Par X0Y1_筋肉_筋肉右;
+    	public ShapePart X0Y1_筋肉_筋肉右;
 
-    	public Par X0Y1_筋肉_筋上左;
+    	public ShapePart X0Y1_筋肉_筋上左;
 
-    	public Par X0Y1_筋肉_筋上右;
+    	public ShapePart X0Y1_筋肉_筋上右;
 
-    	public Par X0Y1_筋肉_筋下左;
+    	public ShapePart X0Y1_筋肉_筋下左;
 
-    	public Par X0Y1_筋肉_筋下右;
+    	public ShapePart X0Y1_筋肉_筋下右;
 
-    	public Par X0Y1_臍;
+    	public ShapePart X0Y1_臍;
 
-    	public Par X0Y1_紋柄_紋左_紋1;
+    	public ShapePart X0Y1_紋柄_紋左_紋1;
 
-    	public Par X0Y1_紋柄_紋左_紋2;
+    	public ShapePart X0Y1_紋柄_紋左_紋2;
 
-    	public Par X0Y1_紋柄_紋左_紋3;
+    	public ShapePart X0Y1_紋柄_紋左_紋3;
 
-    	public Par X0Y1_紋柄_紋右_紋1;
+    	public ShapePart X0Y1_紋柄_紋右_紋1;
 
-    	public Par X0Y1_紋柄_紋右_紋2;
+    	public ShapePart X0Y1_紋柄_紋右_紋2;
 
-    	public Par X0Y1_紋柄_紋右_紋3;
+    	public ShapePart X0Y1_紋柄_紋右_紋3;
 
-    	public Par X0Y1_虎柄_虎左;
+    	public ShapePart X0Y1_虎柄_虎左;
 
-    	public Par X0Y1_虎柄_虎右;
+    	public ShapePart X0Y1_虎柄_虎右;
 
-    	public Par X0Y1_竜性_中_鱗1;
+    	public ShapePart X0Y1_竜性_中_鱗1;
 
-    	public Par X0Y1_竜性_中_鱗2;
+    	public ShapePart X0Y1_竜性_中_鱗2;
 
-    	public Par X0Y1_竜性_中_鱗3;
+    	public ShapePart X0Y1_竜性_中_鱗3;
 
-    	public Par X0Y1_竜性_中_鱗4;
+    	public ShapePart X0Y1_竜性_中_鱗4;
 
-    	public Par X0Y1_竜性_左_鱗1;
+    	public ShapePart X0Y1_竜性_左_鱗1;
 
-    	public Par X0Y1_竜性_左_鱗2;
+    	public ShapePart X0Y1_竜性_左_鱗2;
 
-    	public Par X0Y1_竜性_右_鱗1;
+    	public ShapePart X0Y1_竜性_右_鱗1;
 
-    	public Par X0Y1_竜性_右_鱗2;
+    	public ShapePart X0Y1_竜性_右_鱗2;
 
-    	public Par X0Y2_Waist;
+    	public ShapePart X0Y2_Waist;
 
-    	public Par X0Y2_股;
+    	public ShapePart X0Y2_股;
 
-    	public Par X0Y2_下腹;
+    	public ShapePart X0Y2_下腹;
 
-    	public Par X0Y2_腰皺;
+    	public ShapePart X0Y2_腰皺;
 
-    	public Par X0Y2_筋肉_筋肉下;
+    	public ShapePart X0Y2_筋肉_筋肉下;
 
-    	public Par X0Y2_筋肉_筋肉左;
+    	public ShapePart X0Y2_筋肉_筋肉左;
 
-    	public Par X0Y2_筋肉_筋肉右;
+    	public ShapePart X0Y2_筋肉_筋肉右;
 
-    	public Par X0Y2_筋肉_筋上左;
+    	public ShapePart X0Y2_筋肉_筋上左;
 
-    	public Par X0Y2_筋肉_筋上右;
+    	public ShapePart X0Y2_筋肉_筋上右;
 
-    	public Par X0Y2_筋肉_筋下左;
+    	public ShapePart X0Y2_筋肉_筋下左;
 
-    	public Par X0Y2_筋肉_筋下右;
+    	public ShapePart X0Y2_筋肉_筋下右;
 
-    	public Par X0Y2_臍;
+    	public ShapePart X0Y2_臍;
 
-    	public Par X0Y2_紋柄_紋左_紋1;
+    	public ShapePart X0Y2_紋柄_紋左_紋1;
 
-    	public Par X0Y2_紋柄_紋左_紋2;
+    	public ShapePart X0Y2_紋柄_紋左_紋2;
 
-    	public Par X0Y2_紋柄_紋左_紋3;
+    	public ShapePart X0Y2_紋柄_紋左_紋3;
 
-    	public Par X0Y2_紋柄_紋右_紋1;
+    	public ShapePart X0Y2_紋柄_紋右_紋1;
 
-    	public Par X0Y2_紋柄_紋右_紋2;
+    	public ShapePart X0Y2_紋柄_紋右_紋2;
 
-    	public Par X0Y2_紋柄_紋右_紋3;
+    	public ShapePart X0Y2_紋柄_紋右_紋3;
 
-    	public Par X0Y2_虎柄_虎左;
+    	public ShapePart X0Y2_虎柄_虎左;
 
-    	public Par X0Y2_虎柄_虎右;
+    	public ShapePart X0Y2_虎柄_虎右;
 
-    	public Par X0Y2_竜性_中_鱗1;
+    	public ShapePart X0Y2_竜性_中_鱗1;
 
-    	public Par X0Y2_竜性_中_鱗2;
+    	public ShapePart X0Y2_竜性_中_鱗2;
 
-    	public Par X0Y2_竜性_中_鱗3;
+    	public ShapePart X0Y2_竜性_中_鱗3;
 
-    	public Par X0Y2_竜性_中_鱗4;
+    	public ShapePart X0Y2_竜性_中_鱗4;
 
-    	public Par X0Y2_竜性_左_鱗1;
+    	public ShapePart X0Y2_竜性_左_鱗1;
 
-    	public Par X0Y2_竜性_左_鱗2;
+    	public ShapePart X0Y2_竜性_左_鱗2;
 
-    	public Par X0Y2_竜性_右_鱗1;
+    	public ShapePart X0Y2_竜性_右_鱗1;
 
-    	public Par X0Y2_竜性_右_鱗2;
+    	public ShapePart X0Y2_竜性_右_鱗2;
 
-    	public Par X0Y3_Waist;
+    	public ShapePart X0Y3_Waist;
 
-    	public Par X0Y3_股;
+    	public ShapePart X0Y3_股;
 
-    	public Par X0Y3_下腹;
+    	public ShapePart X0Y3_下腹;
 
-    	public Par X0Y3_腰皺;
+    	public ShapePart X0Y3_腰皺;
 
-    	public Par X0Y3_筋肉_筋肉下;
+    	public ShapePart X0Y3_筋肉_筋肉下;
 
-    	public Par X0Y3_筋肉_筋肉左;
+    	public ShapePart X0Y3_筋肉_筋肉左;
 
-    	public Par X0Y3_筋肉_筋肉右;
+    	public ShapePart X0Y3_筋肉_筋肉右;
 
-    	public Par X0Y3_筋肉_筋上左;
+    	public ShapePart X0Y3_筋肉_筋上左;
 
-    	public Par X0Y3_筋肉_筋上右;
+    	public ShapePart X0Y3_筋肉_筋上右;
 
-    	public Par X0Y3_筋肉_筋下左;
+    	public ShapePart X0Y3_筋肉_筋下左;
 
-    	public Par X0Y3_筋肉_筋下右;
+    	public ShapePart X0Y3_筋肉_筋下右;
 
-    	public Par X0Y3_臍;
+    	public ShapePart X0Y3_臍;
 
-    	public Par X0Y3_紋柄_紋左_紋1;
+    	public ShapePart X0Y3_紋柄_紋左_紋1;
 
-    	public Par X0Y3_紋柄_紋左_紋2;
+    	public ShapePart X0Y3_紋柄_紋左_紋2;
 
-    	public Par X0Y3_紋柄_紋左_紋3;
+    	public ShapePart X0Y3_紋柄_紋左_紋3;
 
-    	public Par X0Y3_紋柄_紋右_紋1;
+    	public ShapePart X0Y3_紋柄_紋右_紋1;
 
-    	public Par X0Y3_紋柄_紋右_紋2;
+    	public ShapePart X0Y3_紋柄_紋右_紋2;
 
-    	public Par X0Y3_紋柄_紋右_紋3;
+    	public ShapePart X0Y3_紋柄_紋右_紋3;
 
-    	public Par X0Y3_虎柄_虎左;
+    	public ShapePart X0Y3_虎柄_虎左;
 
-    	public Par X0Y3_虎柄_虎右;
+    	public ShapePart X0Y3_虎柄_虎右;
 
-    	public Par X0Y3_竜性_中_鱗1;
+    	public ShapePart X0Y3_竜性_中_鱗1;
 
-    	public Par X0Y3_竜性_中_鱗2;
+    	public ShapePart X0Y3_竜性_中_鱗2;
 
-    	public Par X0Y3_竜性_中_鱗3;
+    	public ShapePart X0Y3_竜性_中_鱗3;
 
-    	public Par X0Y3_竜性_中_鱗4;
+    	public ShapePart X0Y3_竜性_中_鱗4;
 
-    	public Par X0Y3_竜性_左_鱗1;
+    	public ShapePart X0Y3_竜性_左_鱗1;
 
-    	public Par X0Y3_竜性_左_鱗2;
+    	public ShapePart X0Y3_竜性_左_鱗2;
 
-    	public Par X0Y3_竜性_右_鱗1;
+    	public ShapePart X0Y3_竜性_右_鱗1;
 
-    	public Par X0Y3_竜性_右_鱗2;
+    	public ShapePart X0Y3_竜性_右_鱗2;
 
-    	public Par X0Y4_Waist;
+    	public ShapePart X0Y4_Waist;
 
-    	public Par X0Y4_股;
+    	public ShapePart X0Y4_股;
 
-    	public Par X0Y4_下腹;
+    	public ShapePart X0Y4_下腹;
 
-    	public Par X0Y4_腰皺;
+    	public ShapePart X0Y4_腰皺;
 
-    	public Par X0Y4_筋肉_筋肉下;
+    	public ShapePart X0Y4_筋肉_筋肉下;
 
-    	public Par X0Y4_筋肉_筋肉左;
+    	public ShapePart X0Y4_筋肉_筋肉左;
 
-    	public Par X0Y4_筋肉_筋肉右;
+    	public ShapePart X0Y4_筋肉_筋肉右;
 
-    	public Par X0Y4_筋肉_筋上左;
+    	public ShapePart X0Y4_筋肉_筋上左;
 
-    	public Par X0Y4_筋肉_筋上右;
+    	public ShapePart X0Y4_筋肉_筋上右;
 
-    	public Par X0Y4_筋肉_筋下左;
+    	public ShapePart X0Y4_筋肉_筋下左;
 
-    	public Par X0Y4_筋肉_筋下右;
+    	public ShapePart X0Y4_筋肉_筋下右;
 
-    	public Par X0Y4_臍;
+    	public ShapePart X0Y4_臍;
 
-    	public Par X0Y4_紋柄_紋左_紋1;
+    	public ShapePart X0Y4_紋柄_紋左_紋1;
 
-    	public Par X0Y4_紋柄_紋左_紋2;
+    	public ShapePart X0Y4_紋柄_紋左_紋2;
 
-    	public Par X0Y4_紋柄_紋左_紋3;
+    	public ShapePart X0Y4_紋柄_紋左_紋3;
 
-    	public Par X0Y4_紋柄_紋右_紋1;
+    	public ShapePart X0Y4_紋柄_紋右_紋1;
 
-    	public Par X0Y4_紋柄_紋右_紋2;
+    	public ShapePart X0Y4_紋柄_紋右_紋2;
 
-    	public Par X0Y4_紋柄_紋右_紋3;
+    	public ShapePart X0Y4_紋柄_紋右_紋3;
 
-    	public Par X0Y4_虎柄_虎左;
+    	public ShapePart X0Y4_虎柄_虎左;
 
-    	public Par X0Y4_虎柄_虎右;
+    	public ShapePart X0Y4_虎柄_虎右;
 
-    	public Par X0Y4_竜性_中_鱗1;
+    	public ShapePart X0Y4_竜性_中_鱗1;
 
-    	public Par X0Y4_竜性_中_鱗2;
+    	public ShapePart X0Y4_竜性_中_鱗2;
 
-    	public Par X0Y4_竜性_中_鱗3;
+    	public ShapePart X0Y4_竜性_中_鱗3;
 
-    	public Par X0Y4_竜性_中_鱗4;
+    	public ShapePart X0Y4_竜性_中_鱗4;
 
-    	public Par X0Y4_竜性_左_鱗1;
+    	public ShapePart X0Y4_竜性_左_鱗1;
 
-    	public Par X0Y4_竜性_左_鱗2;
+    	public ShapePart X0Y4_竜性_左_鱗2;
 
-    	public Par X0Y4_竜性_右_鱗1;
+    	public ShapePart X0Y4_竜性_右_鱗1;
 
-    	public Par X0Y4_竜性_右_鱗2;
+    	public ShapePart X0Y4_竜性_右_鱗2;
 
     	public ColorD WaistCD;
 

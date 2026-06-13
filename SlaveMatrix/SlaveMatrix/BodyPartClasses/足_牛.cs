@@ -4,35 +4,35 @@ namespace SlaveMatrix
 {
     public class 足_牛 : 獣足
     {
-    	public Par X0Y0_足;
+    	public ShapePart X0Y0_足;
 
-    	public Par X0Y0_筋;
+    	public ShapePart X0Y0_筋;
 
-    	public Par X0Y0_指;
+    	public ShapePart X0Y0_指;
 
-    	public Par X0Y0_蹄_蹄;
+    	public ShapePart X0Y0_蹄_蹄;
 
-    	public Par X0Y0_蹄_蹄線;
+    	public ShapePart X0Y0_蹄_蹄線;
 
-    	public Par X0Y0_蹄_蹄左;
+    	public ShapePart X0Y0_蹄_蹄左;
 
-    	public Par X0Y0_蹄_蹄右;
+    	public ShapePart X0Y0_蹄_蹄右;
 
-    	public Par X0Y0_蹄_副蹄左;
+    	public ShapePart X0Y0_蹄_副蹄左;
 
-    	public Par X0Y0_蹄_副蹄右;
+    	public ShapePart X0Y0_蹄_副蹄右;
 
-    	public Par X0Y0_脚輪_革;
+    	public ShapePart X0Y0_脚輪_革;
 
-    	public Par X0Y0_脚輪_金具1;
+    	public ShapePart X0Y0_脚輪_金具1;
 
-    	public Par X0Y0_脚輪_金具2;
+    	public ShapePart X0Y0_脚輪_金具2;
 
-    	public Par X0Y0_脚輪_金具3;
+    	public ShapePart X0Y0_脚輪_金具3;
 
-    	public Par X0Y0_脚輪_金具左;
+    	public ShapePart X0Y0_脚輪_金具左;
 
-    	public Par X0Y0_脚輪_金具右;
+    	public ShapePart X0Y0_脚輪_金具右;
 
     	public ColorD 足CD;
 

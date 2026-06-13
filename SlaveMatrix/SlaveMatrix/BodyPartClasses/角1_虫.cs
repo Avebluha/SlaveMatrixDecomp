@@ -4,33 +4,33 @@ namespace SlaveMatrix
 {
     public class 角1_虫 : 角1
     {
-    	public Par X0Y0_根;
+    	public ShapePart X0Y0_根;
 
-    	public Par X0Y0_器官左_器官1;
+    	public ShapePart X0Y0_器官左_器官1;
 
-    	public Par X0Y0_器官左_器官2;
+    	public ShapePart X0Y0_器官左_器官2;
 
-    	public Par X0Y0_器官右_器官1;
+    	public ShapePart X0Y0_器官右_器官1;
 
-    	public Par X0Y0_器官右_器官2;
+    	public ShapePart X0Y0_器官右_器官2;
 
-    	public Par X0Y0_線;
+    	public ShapePart X0Y0_線;
 
-    	public Par X0Y1_根;
+    	public ShapePart X0Y1_根;
 
-    	public Par X0Y1_器官左_器官1;
+    	public ShapePart X0Y1_器官左_器官1;
 
-    	public Par X0Y1_器官左_器官2;
+    	public ShapePart X0Y1_器官左_器官2;
 
-    	public Par X0Y1_器官右_器官1;
+    	public ShapePart X0Y1_器官右_器官1;
 
-    	public Par X0Y1_器官右_器官2;
+    	public ShapePart X0Y1_器官右_器官2;
 
-    	public Par X0Y1_線;
+    	public ShapePart X0Y1_線;
 
-    	public Par X0Y1_折線1;
+    	public ShapePart X0Y1_折線1;
 
-    	public Par X0Y1_折線2;
+    	public ShapePart X0Y1_折線2;
 
     	public ColorD 根CD;
 

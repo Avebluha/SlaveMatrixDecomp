@@ -4,23 +4,23 @@ namespace SlaveMatrix
 {
     public class BackHair0_下1パツ : お下げ1
     {
-    	public Par X0Y0_髪基;
+    	public ShapePart X0Y0_髪基;
 
-    	public Par X0Y0_お下げ_髪節;
+    	public ShapePart X0Y0_お下げ_髪節;
 
-    	public Par X0Y0_お下げ_髪縛1;
+    	public ShapePart X0Y0_お下げ_髪縛1;
 
-    	public Par X0Y0_お下げ_髪縛2;
+    	public ShapePart X0Y0_お下げ_髪縛2;
 
-    	public Par X0Y0_お下げ_髪左2;
+    	public ShapePart X0Y0_お下げ_髪左2;
 
-    	public Par X0Y0_お下げ_髪左1;
+    	public ShapePart X0Y0_お下げ_髪左1;
 
-    	public Par X0Y0_お下げ_髪右2;
+    	public ShapePart X0Y0_お下げ_髪右2;
 
-    	public Par X0Y0_お下げ_髪右1;
+    	public ShapePart X0Y0_お下げ_髪右1;
 
-    	public Par X0Y0_お下げ_髪根;
+    	public ShapePart X0Y0_お下げ_髪根;
 
     	public ColorD 髪基CD;
 
@@ -422,7 +422,7 @@ namespace SlaveMatrix
     		X0Y0_お下げ_髪根.OP[(!右) ? 3 : 0].Outline = false;
     	}
 
-    	public override bool Is布(Par p)
+    	public override bool Is布(ShapePart p)
     	{
     		if (p != X0Y0_お下げ_髪縛1)
     		{

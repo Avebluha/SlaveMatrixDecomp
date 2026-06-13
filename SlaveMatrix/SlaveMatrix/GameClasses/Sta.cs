@@ -524,7 +524,7 @@ namespace SlaveMatrix
         public static void タイル準備()
     	{
     		タイル.SetJoints();
-    		foreach (Par item in タイル.EnumAllPar())
+    		foreach (ShapePart item in タイル.EnumAllPar())
     		{
     			item.BrushColor = Col.DarkGray;
     			item.GetAlpha(out var ret);
@@ -828,7 +828,7 @@ namespace SlaveMatrix
 
     	public static void SetHitFalse(this Ele e)
     	{
-    		foreach (Par item in e.Body.EnumAllPar())
+    		foreach (ShapePart item in e.Body.EnumAllPar())
     		{
     			item.Hit = false;
     		}
@@ -836,7 +836,7 @@ namespace SlaveMatrix
 
     	public static void SetHitTrue(this Ele e)
     	{
-    		foreach (Par item in e.Body.EnumAllPar())
+    		foreach (ShapePart item in e.Body.EnumAllPar())
     		{
     			item.Hit = true;
     		}

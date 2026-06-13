@@ -4,17 +4,17 @@ namespace SlaveMatrix
 {
     public class 胴肌 : Ele
     {
-    	public Par X0Y0_植タトゥ_タトゥ花左;
+    	public ShapePart X0Y0_植タトゥ_タトゥ花左;
 
-    	public Par X0Y0_植タトゥ_タトゥ花右;
+    	public ShapePart X0Y0_植タトゥ_タトゥ花右;
 
-    	public Par X0Y0_植タトゥ_タトゥ花;
+    	public ShapePart X0Y0_植タトゥ_タトゥ花;
 
-    	public Par X0Y0_植タトゥ_タトゥ茎;
+    	public ShapePart X0Y0_植タトゥ_タトゥ茎;
 
-    	public Par X0Y0_植タトゥ_タトゥ葉左;
+    	public ShapePart X0Y0_植タトゥ_タトゥ葉左;
 
-    	public Par X0Y0_植タトゥ_タトゥ葉右;
+    	public ShapePart X0Y0_植タトゥ_タトゥ葉右;
 
     	public ColorD 植タトゥ_タトゥ花左CD;
 

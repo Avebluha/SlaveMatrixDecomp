@@ -4,29 +4,29 @@ namespace SlaveMatrix
 {
     public class 手_牛 : 獣手
     {
-    	public Par X0Y0_指0;
+    	public ShapePart X0Y0_指0;
 
-    	public Par X0Y0_筋;
+    	public ShapePart X0Y0_筋;
 
-    	public Par X0Y0_蹄_蹄2;
+    	public ShapePart X0Y0_蹄_蹄2;
 
-    	public Par X0Y0_蹄_蹄1;
+    	public ShapePart X0Y0_蹄_蹄1;
 
-    	public Par X0Y0_蹄_副蹄;
+    	public ShapePart X0Y0_蹄_副蹄;
 
-    	public Par X0Y0_指1;
+    	public ShapePart X0Y0_指1;
 
-    	public Par X0Y0_腕輪_革;
+    	public ShapePart X0Y0_腕輪_革;
 
-    	public Par X0Y0_腕輪_金具1;
+    	public ShapePart X0Y0_腕輪_金具1;
 
-    	public Par X0Y0_腕輪_金具2;
+    	public ShapePart X0Y0_腕輪_金具2;
 
-    	public Par X0Y0_腕輪_金具3;
+    	public ShapePart X0Y0_腕輪_金具3;
 
-    	public Par X0Y0_腕輪_金具左;
+    	public ShapePart X0Y0_腕輪_金具左;
 
-    	public Par X0Y0_腕輪_金具右;
+    	public ShapePart X0Y0_腕輪_金具右;
 
     	public ColorD 指0CD;
 
@@ -464,7 +464,7 @@ namespace SlaveMatrix
     		Body.JoinPAall();
     	}
 
-    	public override bool Is革(Par p)
+    	public override bool Is革(ShapePart p)
     	{
     		if (p != X0Y0_腕輪_革 && p != X0Y0_腕輪_金具1 && p != X0Y0_腕輪_金具2 && p != X0Y0_腕輪_金具3 && p != X0Y0_腕輪_金具左)
     		{

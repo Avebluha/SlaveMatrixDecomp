@@ -4,65 +4,65 @@ namespace SlaveMatrix
 {
     public class 頬瞼 : Ele
     {
-    	public Par X0Y0_瞼左_瞼;
+    	public ShapePart X0Y0_瞼左_瞼;
 
-    	public Par X0Y0_瞼左_睫毛1;
+    	public ShapePart X0Y0_瞼左_睫毛1;
 
-    	public Par X0Y0_瞼左_睫毛2;
+    	public ShapePart X0Y0_瞼左_睫毛2;
 
-    	public Par X0Y0_瞼右_瞼;
+    	public ShapePart X0Y0_瞼右_瞼;
 
-    	public Par X0Y0_瞼右_睫毛1;
+    	public ShapePart X0Y0_瞼右_睫毛1;
 
-    	public Par X0Y0_瞼右_睫毛2;
+    	public ShapePart X0Y0_瞼右_睫毛2;
 
-    	public Par X0Y1_瞼左_瞼;
+    	public ShapePart X0Y1_瞼左_瞼;
 
-    	public Par X0Y1_瞼左_睫毛1;
+    	public ShapePart X0Y1_瞼左_睫毛1;
 
-    	public Par X0Y1_瞼左_睫毛2;
+    	public ShapePart X0Y1_瞼左_睫毛2;
 
-    	public Par X0Y1_瞼右_瞼;
+    	public ShapePart X0Y1_瞼右_瞼;
 
-    	public Par X0Y1_瞼右_睫毛1;
+    	public ShapePart X0Y1_瞼右_睫毛1;
 
-    	public Par X0Y1_瞼右_睫毛2;
+    	public ShapePart X0Y1_瞼右_睫毛2;
 
-    	public Par X0Y2_瞼左_瞼;
+    	public ShapePart X0Y2_瞼左_瞼;
 
-    	public Par X0Y2_瞼左_睫毛1;
+    	public ShapePart X0Y2_瞼左_睫毛1;
 
-    	public Par X0Y2_瞼左_睫毛2;
+    	public ShapePart X0Y2_瞼左_睫毛2;
 
-    	public Par X0Y2_瞼右_瞼;
+    	public ShapePart X0Y2_瞼右_瞼;
 
-    	public Par X0Y2_瞼右_睫毛1;
+    	public ShapePart X0Y2_瞼右_睫毛1;
 
-    	public Par X0Y2_瞼右_睫毛2;
+    	public ShapePart X0Y2_瞼右_睫毛2;
 
-    	public Par X0Y3_瞼左_瞼;
+    	public ShapePart X0Y3_瞼左_瞼;
 
-    	public Par X0Y3_瞼左_睫毛1;
+    	public ShapePart X0Y3_瞼左_睫毛1;
 
-    	public Par X0Y3_瞼左_睫毛2;
+    	public ShapePart X0Y3_瞼左_睫毛2;
 
-    	public Par X0Y3_瞼右_瞼;
+    	public ShapePart X0Y3_瞼右_瞼;
 
-    	public Par X0Y3_瞼右_睫毛1;
+    	public ShapePart X0Y3_瞼右_睫毛1;
 
-    	public Par X0Y3_瞼右_睫毛2;
+    	public ShapePart X0Y3_瞼右_睫毛2;
 
-    	public Par X0Y4_瞼左_瞼;
+    	public ShapePart X0Y4_瞼左_瞼;
 
-    	public Par X0Y4_瞼左_睫毛1;
+    	public ShapePart X0Y4_瞼左_睫毛1;
 
-    	public Par X0Y4_瞼左_睫毛2;
+    	public ShapePart X0Y4_瞼左_睫毛2;
 
-    	public Par X0Y4_瞼右_瞼;
+    	public ShapePart X0Y4_瞼右_瞼;
 
-    	public Par X0Y4_瞼右_睫毛1;
+    	public ShapePart X0Y4_瞼右_睫毛1;
 
-    	public Par X0Y4_瞼右_睫毛2;
+    	public ShapePart X0Y4_瞼右_睫毛2;
 
     	public ColorD 瞼左_瞼CD;
 
@@ -549,7 +549,7 @@ namespace SlaveMatrix
     		Intensity = e.濃度;
     	}
 
-    	private void 睫毛長さ(Par p, double d)
+    	private void 睫毛長さ(ShapePart p, double d)
     	{
     		double num = 0.0;
     		double num2 = 2.0;

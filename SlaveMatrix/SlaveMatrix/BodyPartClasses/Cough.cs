@@ -4,65 +4,65 @@ namespace SlaveMatrix
 {
     public class Cough : Ele
     {
-    	public Par X0Y0_咳基;
+    	public ShapePart X0Y0_咳基;
 
-    	public Par X0Y0_雫1;
+    	public ShapePart X0Y0_雫1;
 
-    	public Par X0Y0_雫2;
+    	public ShapePart X0Y0_雫2;
 
-    	public Par X0Y0_雫3;
+    	public ShapePart X0Y0_雫3;
 
-    	public Par X0Y0_雫4;
+    	public ShapePart X0Y0_雫4;
 
-    	public Par X0Y0_雫5;
+    	public ShapePart X0Y0_雫5;
 
-    	public Par X0Y1_咳基;
+    	public ShapePart X0Y1_咳基;
 
-    	public Par X0Y1_雫1;
+    	public ShapePart X0Y1_雫1;
 
-    	public Par X0Y1_雫2;
+    	public ShapePart X0Y1_雫2;
 
-    	public Par X0Y1_雫3;
+    	public ShapePart X0Y1_雫3;
 
-    	public Par X0Y1_雫4;
+    	public ShapePart X0Y1_雫4;
 
-    	public Par X0Y1_雫5;
+    	public ShapePart X0Y1_雫5;
 
-    	public Par X0Y2_咳基;
+    	public ShapePart X0Y2_咳基;
 
-    	public Par X0Y2_雫1;
+    	public ShapePart X0Y2_雫1;
 
-    	public Par X0Y2_雫2;
+    	public ShapePart X0Y2_雫2;
 
-    	public Par X0Y2_雫3;
+    	public ShapePart X0Y2_雫3;
 
-    	public Par X0Y2_雫4;
+    	public ShapePart X0Y2_雫4;
 
-    	public Par X0Y2_雫5;
+    	public ShapePart X0Y2_雫5;
 
-    	public Par X0Y3_咳基;
+    	public ShapePart X0Y3_咳基;
 
-    	public Par X0Y3_雫1;
+    	public ShapePart X0Y3_雫1;
 
-    	public Par X0Y3_雫2;
+    	public ShapePart X0Y3_雫2;
 
-    	public Par X0Y3_雫3;
+    	public ShapePart X0Y3_雫3;
 
-    	public Par X0Y3_雫4;
+    	public ShapePart X0Y3_雫4;
 
-    	public Par X0Y3_雫5;
+    	public ShapePart X0Y3_雫5;
 
-    	public Par X0Y4_咳基;
+    	public ShapePart X0Y4_咳基;
 
-    	public Par X0Y4_雫1;
+    	public ShapePart X0Y4_雫1;
 
-    	public Par X0Y4_雫2;
+    	public ShapePart X0Y4_雫2;
 
-    	public Par X0Y4_雫3;
+    	public ShapePart X0Y4_雫3;
 
-    	public Par X0Y4_雫4;
+    	public ShapePart X0Y4_雫4;
 
-    	public Par X0Y4_雫5;
+    	public ShapePart X0Y4_雫5;
 
     	public ColorD 咳基CD;
 

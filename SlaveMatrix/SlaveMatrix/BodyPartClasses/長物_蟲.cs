@@ -5,37 +5,37 @@ namespace SlaveMatrix
 {
     public class 長物_蟲 : 半身
     {
-    	public Par X0Y0_Torso1_背板;
+    	public ShapePart X0Y0_Torso1_背板;
 
-    	public Par X0Y0_Torso1_胸板;
+    	public ShapePart X0Y0_Torso1_胸板;
 
-    	public Par X0Y0_Torso1_Torso;
+    	public ShapePart X0Y0_Torso1_Torso;
 
-    	public Par X0Y0_Torso1_瘤左2;
+    	public ShapePart X0Y0_Torso1_瘤左2;
 
-    	public Par X0Y0_Torso1_瘤左1;
+    	public ShapePart X0Y0_Torso1_瘤左1;
 
-    	public Par X0Y0_Torso1_瘤右2;
+    	public ShapePart X0Y0_Torso1_瘤右2;
 
-    	public Par X0Y0_Torso1_瘤右1;
+    	public ShapePart X0Y0_Torso1_瘤右1;
 
-    	public Par X0Y0_Torso1_Torso0_背板;
+    	public ShapePart X0Y0_Torso1_Torso0_背板;
 
-    	public Par X0Y0_Torso1_Torso0_胸板;
+    	public ShapePart X0Y0_Torso1_Torso0_胸板;
 
-    	public Par X0Y0_Torso1_Torso0_Torso;
+    	public ShapePart X0Y0_Torso1_Torso0_Torso;
 
-    	public Par X0Y0_輪1_革;
+    	public ShapePart X0Y0_輪1_革;
 
-    	public Par X0Y0_輪1_金具1;
+    	public ShapePart X0Y0_輪1_金具1;
 
-    	public Par X0Y0_輪1_金具2;
+    	public ShapePart X0Y0_輪1_金具2;
 
-    	public Par X0Y0_輪1_金具3;
+    	public ShapePart X0Y0_輪1_金具3;
 
-    	public Par X0Y0_輪1_金具左;
+    	public ShapePart X0Y0_輪1_金具左;
 
-    	public Par X0Y0_輪1_金具右;
+    	public ShapePart X0Y0_輪1_金具右;
 
     	public ColorD Torso1_背板CD;
 
@@ -698,7 +698,7 @@ namespace SlaveMatrix
     		鎖2.描画0(Are);
     	}
 
-    	public override bool Is革(Par p)
+    	public override bool Is革(ShapePart p)
     	{
     		if (p != X0Y0_輪1_革 && p != X0Y0_輪1_金具1 && p != X0Y0_輪1_金具2 && p != X0Y0_輪1_金具3 && p != X0Y0_輪1_金具左)
     		{

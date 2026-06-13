@@ -4,105 +4,105 @@ namespace SlaveMatrix
 {
     public class 瞼_獣 : 双瞼
     {
-    	public Par X0Y0_瞼;
+    	public ShapePart X0Y0_瞼;
 
-    	public Par X0Y0_二重;
+    	public ShapePart X0Y0_二重;
 
-    	public Par X0Y0_睫毛_睫毛3;
+    	public ShapePart X0Y0_睫毛_睫毛3;
 
-    	public Par X0Y0_睫毛_睫毛1;
+    	public ShapePart X0Y0_睫毛_睫毛1;
 
-    	public Par X0Y0_睫毛_睫毛2;
+    	public ShapePart X0Y0_睫毛_睫毛2;
 
-    	public Par X0Y1_瞼;
+    	public ShapePart X0Y1_瞼;
 
-    	public Par X0Y1_二重;
+    	public ShapePart X0Y1_二重;
 
-    	public Par X0Y1_睫毛_睫毛3;
+    	public ShapePart X0Y1_睫毛_睫毛3;
 
-    	public Par X0Y1_睫毛_睫毛1;
+    	public ShapePart X0Y1_睫毛_睫毛1;
 
-    	public Par X0Y1_睫毛_睫毛2;
+    	public ShapePart X0Y1_睫毛_睫毛2;
 
-    	public Par X0Y2_瞼;
+    	public ShapePart X0Y2_瞼;
 
-    	public Par X0Y2_二重;
+    	public ShapePart X0Y2_二重;
 
-    	public Par X0Y2_睫毛_睫毛3;
+    	public ShapePart X0Y2_睫毛_睫毛3;
 
-    	public Par X0Y2_睫毛_睫毛1;
+    	public ShapePart X0Y2_睫毛_睫毛1;
 
-    	public Par X0Y2_睫毛_睫毛2;
+    	public ShapePart X0Y2_睫毛_睫毛2;
 
-    	public Par X0Y3_瞼;
+    	public ShapePart X0Y3_瞼;
 
-    	public Par X0Y3_二重;
+    	public ShapePart X0Y3_二重;
 
-    	public Par X0Y3_睫毛_睫毛3;
+    	public ShapePart X0Y3_睫毛_睫毛3;
 
-    	public Par X0Y3_睫毛_睫毛1;
+    	public ShapePart X0Y3_睫毛_睫毛1;
 
-    	public Par X0Y3_睫毛_睫毛2;
+    	public ShapePart X0Y3_睫毛_睫毛2;
 
-    	public Par X0Y4_瞼;
+    	public ShapePart X0Y4_瞼;
 
-    	public Par X0Y4_二重;
+    	public ShapePart X0Y4_二重;
 
-    	public Par X0Y4_睫毛_睫毛3;
+    	public ShapePart X0Y4_睫毛_睫毛3;
 
-    	public Par X0Y4_睫毛_睫毛1;
+    	public ShapePart X0Y4_睫毛_睫毛1;
 
-    	public Par X0Y4_睫毛_睫毛2;
+    	public ShapePart X0Y4_睫毛_睫毛2;
 
-    	public Par X1Y0_瞼;
+    	public ShapePart X1Y0_瞼;
 
-    	public Par X1Y0_二重;
+    	public ShapePart X1Y0_二重;
 
-    	public Par X1Y0_睫毛_睫毛3;
+    	public ShapePart X1Y0_睫毛_睫毛3;
 
-    	public Par X1Y0_睫毛_睫毛1;
+    	public ShapePart X1Y0_睫毛_睫毛1;
 
-    	public Par X1Y0_睫毛_睫毛2;
+    	public ShapePart X1Y0_睫毛_睫毛2;
 
-    	public Par X1Y1_瞼;
+    	public ShapePart X1Y1_瞼;
 
-    	public Par X1Y1_二重;
+    	public ShapePart X1Y1_二重;
 
-    	public Par X1Y1_睫毛_睫毛3;
+    	public ShapePart X1Y1_睫毛_睫毛3;
 
-    	public Par X1Y1_睫毛_睫毛1;
+    	public ShapePart X1Y1_睫毛_睫毛1;
 
-    	public Par X1Y1_睫毛_睫毛2;
+    	public ShapePart X1Y1_睫毛_睫毛2;
 
-    	public Par X1Y2_瞼;
+    	public ShapePart X1Y2_瞼;
 
-    	public Par X1Y2_二重;
+    	public ShapePart X1Y2_二重;
 
-    	public Par X1Y2_睫毛_睫毛3;
+    	public ShapePart X1Y2_睫毛_睫毛3;
 
-    	public Par X1Y2_睫毛_睫毛1;
+    	public ShapePart X1Y2_睫毛_睫毛1;
 
-    	public Par X1Y2_睫毛_睫毛2;
+    	public ShapePart X1Y2_睫毛_睫毛2;
 
-    	public Par X1Y3_瞼;
+    	public ShapePart X1Y3_瞼;
 
-    	public Par X1Y3_二重;
+    	public ShapePart X1Y3_二重;
 
-    	public Par X1Y3_睫毛_睫毛3;
+    	public ShapePart X1Y3_睫毛_睫毛3;
 
-    	public Par X1Y3_睫毛_睫毛1;
+    	public ShapePart X1Y3_睫毛_睫毛1;
 
-    	public Par X1Y3_睫毛_睫毛2;
+    	public ShapePart X1Y3_睫毛_睫毛2;
 
-    	public Par X1Y4_瞼;
+    	public ShapePart X1Y4_瞼;
 
-    	public Par X1Y4_二重;
+    	public ShapePart X1Y4_二重;
 
-    	public Par X1Y4_睫毛_睫毛3;
+    	public ShapePart X1Y4_睫毛_睫毛3;
 
-    	public Par X1Y4_睫毛_睫毛1;
+    	public ShapePart X1Y4_睫毛_睫毛1;
 
-    	public Par X1Y4_睫毛_睫毛2;
+    	public ShapePart X1Y4_睫毛_睫毛2;
 
     	public ColorD 瞼CD;
 
@@ -676,7 +676,7 @@ namespace SlaveMatrix
     		Intensity = e.濃度;
     	}
 
-    	private void 睫毛長さ(Par p, double d)
+    	private void 睫毛長さ(ShapePart p, double d)
     	{
     		double num = 0.0;
     		double num2 = 1.5;

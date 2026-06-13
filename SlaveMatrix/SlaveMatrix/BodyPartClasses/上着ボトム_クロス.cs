@@ -5,73 +5,73 @@ namespace SlaveMatrix
 {
     public class 上着ボトム_クロス : 上着ボトム
     {
-    	public Par X0Y0_中_下地;
+    	public ShapePart X0Y0_中_下地;
 
-    	public Par X0Y0_中_皺1;
+    	public ShapePart X0Y0_中_皺1;
 
-    	public Par X0Y0_中_皺2;
+    	public ShapePart X0Y0_中_皺2;
 
-    	public Par X0Y0_左_下地;
+    	public ShapePart X0Y0_左_下地;
 
-    	public Par X0Y0_左_皺1;
+    	public ShapePart X0Y0_左_皺1;
 
-    	public Par X0Y0_左_皺2;
+    	public ShapePart X0Y0_左_皺2;
 
-    	public Par X0Y0_左_皺3;
+    	public ShapePart X0Y0_左_皺3;
 
-    	public Par X0Y0_左_皺4;
+    	public ShapePart X0Y0_左_皺4;
 
-    	public Par X0Y0_左_皺5;
+    	public ShapePart X0Y0_左_皺5;
 
-    	public Par X0Y0_左_皺6;
+    	public ShapePart X0Y0_左_皺6;
 
-    	public Par X0Y0_右_下地;
+    	public ShapePart X0Y0_右_下地;
 
-    	public Par X0Y0_右_皺1;
+    	public ShapePart X0Y0_右_皺1;
 
-    	public Par X0Y0_右_皺2;
+    	public ShapePart X0Y0_右_皺2;
 
-    	public Par X0Y0_右_皺3;
+    	public ShapePart X0Y0_右_皺3;
 
-    	public Par X0Y0_右_皺4;
+    	public ShapePart X0Y0_右_皺4;
 
-    	public Par X0Y0_右_皺5;
+    	public ShapePart X0Y0_右_皺5;
 
-    	public Par X0Y0_右_皺6;
+    	public ShapePart X0Y0_右_皺6;
 
-    	public Par X0Y1_中_下地;
+    	public ShapePart X0Y1_中_下地;
 
-    	public Par X0Y1_中_皺1;
+    	public ShapePart X0Y1_中_皺1;
 
-    	public Par X0Y1_中_皺2;
+    	public ShapePart X0Y1_中_皺2;
 
-    	public Par X0Y1_左_下地;
+    	public ShapePart X0Y1_左_下地;
 
-    	public Par X0Y1_左_皺1;
+    	public ShapePart X0Y1_左_皺1;
 
-    	public Par X0Y1_左_皺2;
+    	public ShapePart X0Y1_左_皺2;
 
-    	public Par X0Y1_左_皺3;
+    	public ShapePart X0Y1_左_皺3;
 
-    	public Par X0Y1_左_皺4;
+    	public ShapePart X0Y1_左_皺4;
 
-    	public Par X0Y1_左_皺5;
+    	public ShapePart X0Y1_左_皺5;
 
-    	public Par X0Y1_左_皺6;
+    	public ShapePart X0Y1_左_皺6;
 
-    	public Par X0Y1_右_下地;
+    	public ShapePart X0Y1_右_下地;
 
-    	public Par X0Y1_右_皺1;
+    	public ShapePart X0Y1_右_皺1;
 
-    	public Par X0Y1_右_皺2;
+    	public ShapePart X0Y1_右_皺2;
 
-    	public Par X0Y1_右_皺3;
+    	public ShapePart X0Y1_右_皺3;
 
-    	public Par X0Y1_右_皺4;
+    	public ShapePart X0Y1_右_皺4;
 
-    	public Par X0Y1_右_皺5;
+    	public ShapePart X0Y1_右_皺5;
 
-    	public Par X0Y1_右_皺6;
+    	public ShapePart X0Y1_右_皺6;
 
     	public ColorD 中_下地CD;
 
@@ -802,7 +802,7 @@ namespace SlaveMatrix
     		尺度YB = 0.95;
     	}
 
-    	public override bool Is布(Par p)
+    	public override bool Is布(ShapePart p)
     	{
     		if (p != X0Y0_中_下地 && p != X0Y0_中_皺1 && p != X0Y0_中_皺2 && p != X0Y0_左_下地 && p != X0Y0_左_皺1 && p != X0Y0_左_皺2 && p != X0Y0_左_皺3 && p != X0Y0_左_皺4 && p != X0Y0_左_皺5 && p != X0Y0_左_皺6 && p != X0Y0_右_下地 && p != X0Y0_右_皺1 && p != X0Y0_右_皺2 && p != X0Y0_右_皺3 && p != X0Y0_右_皺4 && p != X0Y0_右_皺5 && p != X0Y0_右_皺6 && p != X0Y1_中_下地 && p != X0Y1_中_皺1 && p != X0Y1_中_皺2 && p != X0Y1_左_下地 && p != X0Y1_左_皺1 && p != X0Y1_左_皺2 && p != X0Y1_左_皺3 && p != X0Y1_左_皺4 && p != X0Y1_左_皺5 && p != X0Y1_左_皺6 && p != X0Y1_右_下地 && p != X0Y1_右_皺1 && p != X0Y1_右_皺2 && p != X0Y1_右_皺3 && p != X0Y1_右_皺4 && p != X0Y1_右_皺5)
     		{

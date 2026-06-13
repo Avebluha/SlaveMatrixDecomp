@@ -4,9 +4,9 @@ namespace SlaveMatrix
 {
     public class 鎖 : Ele
     {
-    	public Par X0Y0_鎖2;
+    	public ShapePart X0Y0_鎖2;
 
-    	public Par X0Y0_鎖1;
+    	public ShapePart X0Y0_鎖1;
 
     	public ColorD 鎖2CD;
 
@@ -151,7 +151,7 @@ namespace SlaveMatrix
     		Intensity = e.濃度;
     	}
 
-    	public override bool Is鉄(Par p)
+    	public override bool Is鉄(ShapePart p)
     	{
     		if (p != X0Y0_鎖2)
     		{

@@ -4,383 +4,383 @@ namespace SlaveMatrix
 {
     public class 潮吹_大_獣 : 潮吹_大
     {
-    	public Par X0Y0_潮吹基;
+    	public ShapePart X0Y0_潮吹基;
 
-    	public Par X0Y0_雫1;
+    	public ShapePart X0Y0_雫1;
 
-    	public Par X0Y0_雫2;
+    	public ShapePart X0Y0_雫2;
 
-    	public Par X0Y0_雫3;
+    	public ShapePart X0Y0_雫3;
 
-    	public Par X0Y0_雫4;
+    	public ShapePart X0Y0_雫4;
 
-    	public Par X0Y0_雫5;
+    	public ShapePart X0Y0_雫5;
 
-    	public Par X0Y0_雫6;
+    	public ShapePart X0Y0_雫6;
 
-    	public Par X0Y0_雫7;
+    	public ShapePart X0Y0_雫7;
 
-    	public Par X0Y0_雫8;
+    	public ShapePart X0Y0_雫8;
 
-    	public Par X0Y0_雫9;
+    	public ShapePart X0Y0_雫9;
 
-    	public Par X0Y0_雫10;
+    	public ShapePart X0Y0_雫10;
 
-    	public Par X0Y0_雫11;
+    	public ShapePart X0Y0_雫11;
 
-    	public Par X0Y0_雫12;
+    	public ShapePart X0Y0_雫12;
 
-    	public Par X0Y0_雫13;
+    	public ShapePart X0Y0_雫13;
 
-    	public Par X0Y0_雫14;
+    	public ShapePart X0Y0_雫14;
 
-    	public Par X0Y0_雫15;
+    	public ShapePart X0Y0_雫15;
 
-    	public Par X0Y0_雫16;
+    	public ShapePart X0Y0_雫16;
 
-    	public Par X0Y0_雫17;
+    	public ShapePart X0Y0_雫17;
 
-    	public Par X0Y0_雫18;
+    	public ShapePart X0Y0_雫18;
 
-    	public Par X0Y0_雫19;
+    	public ShapePart X0Y0_雫19;
 
-    	public Par X0Y0_雫20;
+    	public ShapePart X0Y0_雫20;
 
-    	public Par X0Y1_潮吹基;
+    	public ShapePart X0Y1_潮吹基;
 
-    	public Par X0Y1_雫1;
+    	public ShapePart X0Y1_雫1;
 
-    	public Par X0Y1_雫2;
+    	public ShapePart X0Y1_雫2;
 
-    	public Par X0Y1_雫3;
+    	public ShapePart X0Y1_雫3;
 
-    	public Par X0Y1_雫4;
+    	public ShapePart X0Y1_雫4;
 
-    	public Par X0Y1_雫5;
+    	public ShapePart X0Y1_雫5;
 
-    	public Par X0Y1_雫6;
+    	public ShapePart X0Y1_雫6;
 
-    	public Par X0Y1_雫7;
+    	public ShapePart X0Y1_雫7;
 
-    	public Par X0Y1_雫8;
+    	public ShapePart X0Y1_雫8;
 
-    	public Par X0Y1_雫9;
+    	public ShapePart X0Y1_雫9;
 
-    	public Par X0Y1_雫10;
+    	public ShapePart X0Y1_雫10;
 
-    	public Par X0Y1_雫11;
+    	public ShapePart X0Y1_雫11;
 
-    	public Par X0Y1_雫12;
+    	public ShapePart X0Y1_雫12;
 
-    	public Par X0Y1_雫13;
+    	public ShapePart X0Y1_雫13;
 
-    	public Par X0Y1_雫14;
+    	public ShapePart X0Y1_雫14;
 
-    	public Par X0Y1_雫15;
+    	public ShapePart X0Y1_雫15;
 
-    	public Par X0Y1_雫16;
+    	public ShapePart X0Y1_雫16;
 
-    	public Par X0Y1_雫17;
+    	public ShapePart X0Y1_雫17;
 
-    	public Par X0Y1_雫18;
+    	public ShapePart X0Y1_雫18;
 
-    	public Par X0Y1_雫19;
+    	public ShapePart X0Y1_雫19;
 
-    	public Par X0Y1_雫20;
+    	public ShapePart X0Y1_雫20;
 
-    	public Par X0Y2_潮吹基;
+    	public ShapePart X0Y2_潮吹基;
 
-    	public Par X0Y2_雫1;
+    	public ShapePart X0Y2_雫1;
 
-    	public Par X0Y2_雫2;
+    	public ShapePart X0Y2_雫2;
 
-    	public Par X0Y2_雫3;
+    	public ShapePart X0Y2_雫3;
 
-    	public Par X0Y2_雫4;
+    	public ShapePart X0Y2_雫4;
 
-    	public Par X0Y2_雫5;
+    	public ShapePart X0Y2_雫5;
 
-    	public Par X0Y2_雫6;
+    	public ShapePart X0Y2_雫6;
 
-    	public Par X0Y2_雫7;
+    	public ShapePart X0Y2_雫7;
 
-    	public Par X0Y2_雫8;
+    	public ShapePart X0Y2_雫8;
 
-    	public Par X0Y2_雫9;
+    	public ShapePart X0Y2_雫9;
 
-    	public Par X0Y2_雫10;
+    	public ShapePart X0Y2_雫10;
 
-    	public Par X0Y2_雫11;
+    	public ShapePart X0Y2_雫11;
 
-    	public Par X0Y2_雫12;
+    	public ShapePart X0Y2_雫12;
 
-    	public Par X0Y2_雫13;
+    	public ShapePart X0Y2_雫13;
 
-    	public Par X0Y2_雫14;
+    	public ShapePart X0Y2_雫14;
 
-    	public Par X0Y2_雫15;
+    	public ShapePart X0Y2_雫15;
 
-    	public Par X0Y2_雫16;
+    	public ShapePart X0Y2_雫16;
 
-    	public Par X0Y2_雫17;
+    	public ShapePart X0Y2_雫17;
 
-    	public Par X0Y2_雫18;
+    	public ShapePart X0Y2_雫18;
 
-    	public Par X0Y2_雫19;
+    	public ShapePart X0Y2_雫19;
 
-    	public Par X0Y2_雫20;
+    	public ShapePart X0Y2_雫20;
 
-    	public Par X0Y3_潮吹基;
+    	public ShapePart X0Y3_潮吹基;
 
-    	public Par X0Y3_雫1;
+    	public ShapePart X0Y3_雫1;
 
-    	public Par X0Y3_雫2;
+    	public ShapePart X0Y3_雫2;
 
-    	public Par X0Y3_雫3;
+    	public ShapePart X0Y3_雫3;
 
-    	public Par X0Y3_雫4;
+    	public ShapePart X0Y3_雫4;
 
-    	public Par X0Y3_雫5;
+    	public ShapePart X0Y3_雫5;
 
-    	public Par X0Y3_雫6;
+    	public ShapePart X0Y3_雫6;
 
-    	public Par X0Y3_雫7;
+    	public ShapePart X0Y3_雫7;
 
-    	public Par X0Y3_雫8;
+    	public ShapePart X0Y3_雫8;
 
-    	public Par X0Y3_雫9;
+    	public ShapePart X0Y3_雫9;
 
-    	public Par X0Y3_雫10;
+    	public ShapePart X0Y3_雫10;
 
-    	public Par X0Y3_雫11;
+    	public ShapePart X0Y3_雫11;
 
-    	public Par X0Y3_雫12;
+    	public ShapePart X0Y3_雫12;
 
-    	public Par X0Y3_雫13;
+    	public ShapePart X0Y3_雫13;
 
-    	public Par X0Y3_雫14;
+    	public ShapePart X0Y3_雫14;
 
-    	public Par X0Y3_雫15;
+    	public ShapePart X0Y3_雫15;
 
-    	public Par X0Y3_雫16;
+    	public ShapePart X0Y3_雫16;
 
-    	public Par X0Y3_雫17;
+    	public ShapePart X0Y3_雫17;
 
-    	public Par X0Y3_雫18;
+    	public ShapePart X0Y3_雫18;
 
-    	public Par X0Y3_雫19;
+    	public ShapePart X0Y3_雫19;
 
-    	public Par X0Y3_雫20;
+    	public ShapePart X0Y3_雫20;
 
-    	public Par X0Y4_潮吹基;
+    	public ShapePart X0Y4_潮吹基;
 
-    	public Par X0Y4_雫1;
+    	public ShapePart X0Y4_雫1;
 
-    	public Par X0Y4_雫2;
+    	public ShapePart X0Y4_雫2;
 
-    	public Par X0Y4_雫3;
+    	public ShapePart X0Y4_雫3;
 
-    	public Par X0Y4_雫4;
+    	public ShapePart X0Y4_雫4;
 
-    	public Par X0Y4_雫5;
+    	public ShapePart X0Y4_雫5;
 
-    	public Par X0Y4_雫6;
+    	public ShapePart X0Y4_雫6;
 
-    	public Par X0Y4_雫7;
+    	public ShapePart X0Y4_雫7;
 
-    	public Par X0Y4_雫8;
+    	public ShapePart X0Y4_雫8;
 
-    	public Par X0Y4_雫9;
+    	public ShapePart X0Y4_雫9;
 
-    	public Par X0Y4_雫10;
+    	public ShapePart X0Y4_雫10;
 
-    	public Par X0Y4_雫11;
+    	public ShapePart X0Y4_雫11;
 
-    	public Par X0Y4_雫12;
+    	public ShapePart X0Y4_雫12;
 
-    	public Par X0Y4_雫13;
+    	public ShapePart X0Y4_雫13;
 
-    	public Par X0Y4_雫14;
+    	public ShapePart X0Y4_雫14;
 
-    	public Par X0Y4_雫15;
+    	public ShapePart X0Y4_雫15;
 
-    	public Par X0Y4_雫16;
+    	public ShapePart X0Y4_雫16;
 
-    	public Par X0Y4_雫17;
+    	public ShapePart X0Y4_雫17;
 
-    	public Par X0Y4_雫18;
+    	public ShapePart X0Y4_雫18;
 
-    	public Par X0Y4_雫19;
+    	public ShapePart X0Y4_雫19;
 
-    	public Par X0Y4_雫20;
+    	public ShapePart X0Y4_雫20;
 
-    	public Par X0Y5_潮吹基;
+    	public ShapePart X0Y5_潮吹基;
 
-    	public Par X0Y5_雫1;
+    	public ShapePart X0Y5_雫1;
 
-    	public Par X0Y5_雫2;
+    	public ShapePart X0Y5_雫2;
 
-    	public Par X0Y5_雫3;
+    	public ShapePart X0Y5_雫3;
 
-    	public Par X0Y5_雫4;
+    	public ShapePart X0Y5_雫4;
 
-    	public Par X0Y5_雫5;
+    	public ShapePart X0Y5_雫5;
 
-    	public Par X0Y5_雫6;
+    	public ShapePart X0Y5_雫6;
 
-    	public Par X0Y5_雫7;
+    	public ShapePart X0Y5_雫7;
 
-    	public Par X0Y5_雫8;
+    	public ShapePart X0Y5_雫8;
 
-    	public Par X0Y5_雫9;
+    	public ShapePart X0Y5_雫9;
 
-    	public Par X0Y5_雫10;
+    	public ShapePart X0Y5_雫10;
 
-    	public Par X0Y5_雫11;
+    	public ShapePart X0Y5_雫11;
 
-    	public Par X0Y5_雫12;
+    	public ShapePart X0Y5_雫12;
 
-    	public Par X0Y5_雫13;
+    	public ShapePart X0Y5_雫13;
 
-    	public Par X0Y5_雫14;
+    	public ShapePart X0Y5_雫14;
 
-    	public Par X0Y5_雫15;
+    	public ShapePart X0Y5_雫15;
 
-    	public Par X0Y5_雫16;
+    	public ShapePart X0Y5_雫16;
 
-    	public Par X0Y5_雫17;
+    	public ShapePart X0Y5_雫17;
 
-    	public Par X0Y5_雫18;
+    	public ShapePart X0Y5_雫18;
 
-    	public Par X0Y5_雫19;
+    	public ShapePart X0Y5_雫19;
 
-    	public Par X0Y5_雫20;
+    	public ShapePart X0Y5_雫20;
 
-    	public Par X0Y6_潮吹基;
+    	public ShapePart X0Y6_潮吹基;
 
-    	public Par X0Y6_雫1;
+    	public ShapePart X0Y6_雫1;
 
-    	public Par X0Y6_雫2;
+    	public ShapePart X0Y6_雫2;
 
-    	public Par X0Y6_雫3;
+    	public ShapePart X0Y6_雫3;
 
-    	public Par X0Y6_雫4;
+    	public ShapePart X0Y6_雫4;
 
-    	public Par X0Y6_雫5;
+    	public ShapePart X0Y6_雫5;
 
-    	public Par X0Y6_雫6;
+    	public ShapePart X0Y6_雫6;
 
-    	public Par X0Y6_雫7;
+    	public ShapePart X0Y6_雫7;
 
-    	public Par X0Y6_雫8;
+    	public ShapePart X0Y6_雫8;
 
-    	public Par X0Y6_雫9;
+    	public ShapePart X0Y6_雫9;
 
-    	public Par X0Y6_雫10;
+    	public ShapePart X0Y6_雫10;
 
-    	public Par X0Y6_雫11;
+    	public ShapePart X0Y6_雫11;
 
-    	public Par X0Y6_雫12;
+    	public ShapePart X0Y6_雫12;
 
-    	public Par X0Y6_雫13;
+    	public ShapePart X0Y6_雫13;
 
-    	public Par X0Y6_雫14;
+    	public ShapePart X0Y6_雫14;
 
-    	public Par X0Y6_雫15;
+    	public ShapePart X0Y6_雫15;
 
-    	public Par X0Y6_雫16;
+    	public ShapePart X0Y6_雫16;
 
-    	public Par X0Y6_雫17;
+    	public ShapePart X0Y6_雫17;
 
-    	public Par X0Y6_雫18;
+    	public ShapePart X0Y6_雫18;
 
-    	public Par X0Y6_雫19;
+    	public ShapePart X0Y6_雫19;
 
-    	public Par X0Y6_雫20;
+    	public ShapePart X0Y6_雫20;
 
-    	public Par X0Y7_潮吹基;
+    	public ShapePart X0Y7_潮吹基;
 
-    	public Par X0Y7_雫1;
+    	public ShapePart X0Y7_雫1;
 
-    	public Par X0Y7_雫2;
+    	public ShapePart X0Y7_雫2;
 
-    	public Par X0Y7_雫3;
+    	public ShapePart X0Y7_雫3;
 
-    	public Par X0Y7_雫4;
+    	public ShapePart X0Y7_雫4;
 
-    	public Par X0Y7_雫5;
+    	public ShapePart X0Y7_雫5;
 
-    	public Par X0Y7_雫6;
+    	public ShapePart X0Y7_雫6;
 
-    	public Par X0Y7_雫7;
+    	public ShapePart X0Y7_雫7;
 
-    	public Par X0Y7_雫8;
+    	public ShapePart X0Y7_雫8;
 
-    	public Par X0Y7_雫9;
+    	public ShapePart X0Y7_雫9;
 
-    	public Par X0Y7_雫10;
+    	public ShapePart X0Y7_雫10;
 
-    	public Par X0Y7_雫11;
+    	public ShapePart X0Y7_雫11;
 
-    	public Par X0Y7_雫12;
+    	public ShapePart X0Y7_雫12;
 
-    	public Par X0Y7_雫13;
+    	public ShapePart X0Y7_雫13;
 
-    	public Par X0Y7_雫14;
+    	public ShapePart X0Y7_雫14;
 
-    	public Par X0Y7_雫15;
+    	public ShapePart X0Y7_雫15;
 
-    	public Par X0Y7_雫16;
+    	public ShapePart X0Y7_雫16;
 
-    	public Par X0Y7_雫17;
+    	public ShapePart X0Y7_雫17;
 
-    	public Par X0Y7_雫18;
+    	public ShapePart X0Y7_雫18;
 
-    	public Par X0Y7_雫19;
+    	public ShapePart X0Y7_雫19;
 
-    	public Par X0Y7_雫20;
+    	public ShapePart X0Y7_雫20;
 
-    	public Par X0Y8_潮吹基;
+    	public ShapePart X0Y8_潮吹基;
 
-    	public Par X0Y8_雫1;
+    	public ShapePart X0Y8_雫1;
 
-    	public Par X0Y8_雫2;
+    	public ShapePart X0Y8_雫2;
 
-    	public Par X0Y8_雫3;
+    	public ShapePart X0Y8_雫3;
 
-    	public Par X0Y8_雫4;
+    	public ShapePart X0Y8_雫4;
 
-    	public Par X0Y8_雫5;
+    	public ShapePart X0Y8_雫5;
 
-    	public Par X0Y8_雫6;
+    	public ShapePart X0Y8_雫6;
 
-    	public Par X0Y8_雫7;
+    	public ShapePart X0Y8_雫7;
 
-    	public Par X0Y8_雫8;
+    	public ShapePart X0Y8_雫8;
 
-    	public Par X0Y8_雫9;
+    	public ShapePart X0Y8_雫9;
 
-    	public Par X0Y8_雫10;
+    	public ShapePart X0Y8_雫10;
 
-    	public Par X0Y8_雫11;
+    	public ShapePart X0Y8_雫11;
 
-    	public Par X0Y8_雫12;
+    	public ShapePart X0Y8_雫12;
 
-    	public Par X0Y8_雫13;
+    	public ShapePart X0Y8_雫13;
 
-    	public Par X0Y8_雫14;
+    	public ShapePart X0Y8_雫14;
 
-    	public Par X0Y8_雫15;
+    	public ShapePart X0Y8_雫15;
 
-    	public Par X0Y8_雫16;
+    	public ShapePart X0Y8_雫16;
 
-    	public Par X0Y8_雫17;
+    	public ShapePart X0Y8_雫17;
 
-    	public Par X0Y8_雫18;
+    	public ShapePart X0Y8_雫18;
 
-    	public Par X0Y8_雫19;
+    	public ShapePart X0Y8_雫19;
 
-    	public Par X0Y8_雫20;
+    	public ShapePart X0Y8_雫20;
 
     	public ColorD 潮吹基CD;
 

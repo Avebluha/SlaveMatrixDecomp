@@ -4,27 +4,27 @@ namespace SlaveMatrix
 {
     public class 鼻肌 : Ele
     {
-    	public Par X0Y0_紋柄_紋左_紋1;
+    	public ShapePart X0Y0_紋柄_紋左_紋1;
 
-    	public Par X0Y0_紋柄_紋左_紋2;
+    	public ShapePart X0Y0_紋柄_紋左_紋2;
 
-    	public Par X0Y0_紋柄_紋左_紋3;
+    	public ShapePart X0Y0_紋柄_紋左_紋3;
 
-    	public Par X0Y0_紋柄_紋左_紋4;
+    	public ShapePart X0Y0_紋柄_紋左_紋4;
 
-    	public Par X0Y0_紋柄_紋左_紋5;
+    	public ShapePart X0Y0_紋柄_紋左_紋5;
 
-    	public Par X0Y0_紋柄_紋右_紋1;
+    	public ShapePart X0Y0_紋柄_紋右_紋1;
 
-    	public Par X0Y0_紋柄_紋右_紋2;
+    	public ShapePart X0Y0_紋柄_紋右_紋2;
 
-    	public Par X0Y0_紋柄_紋右_紋3;
+    	public ShapePart X0Y0_紋柄_紋右_紋3;
 
-    	public Par X0Y0_紋柄_紋右_紋4;
+    	public ShapePart X0Y0_紋柄_紋右_紋4;
 
-    	public Par X0Y0_紋柄_紋右_紋5;
+    	public ShapePart X0Y0_紋柄_紋右_紋5;
 
-    	public Par X0Y0_傷I;
+    	public ShapePart X0Y0_傷I;
 
     	public ColorD 紋柄_紋左_紋1CD;
 

@@ -10,7 +10,7 @@ namespace _2DGAMELIB
 {
     //represents a whole or part of a body part :3
     [Serializable]
-    public class Par
+    public class ShapePart
     {
         //FOR TESTS
         public static long TCalc;
@@ -569,61 +569,61 @@ namespace _2DGAMELIB
     		gph = new GraphicsPath();
     	}
 
-    	public Par()
+    	public ShapePart()
     	{
     		pen.StartCap = LineCap.Round;
     		pen.EndCap = LineCap.Round;
     	}
 
-    	public Par(Par Par)
+    	public ShapePart(ShapePart ShapePart)
     	{
-    		Copy(Par);
+    		Copy(ShapePart);
     	}
 
-    	protected void Copy(Par Par)
+    	protected void Copy(ShapePart ShapePart)
     	{
-    		Tag = Par.Tag;
-    		op = new List<Out>(Par.op.Count);
-    		for (int i = 0; i < Par.op.Count; i++)
+    		Tag = ShapePart.Tag;
+    		op = new List<Out>(ShapePart.op.Count);
+    		for (int i = 0; i < ShapePart.op.Count; i++)
     		{
-    			op.Add(new Out(Par.op[i]));
+    			op.Add(new Out(ShapePart.op[i]));
     		}
-    		jp = new List<Joi>(Par.jp.Count);
-    		for (int j = 0; j < Par.jp.Count; j++)
+    		jp = new List<Joi>(ShapePart.jp.Count);
+    		for (int j = 0; j < ShapePart.jp.Count; j++)
     		{
-    			jp.Add(new Joi(Par.jp[j]));
+    			jp.Add(new Joi(ShapePart.jp[j]));
     		}
-    		basePointBase = Par.basePointBase;
-    		basePointCont = Par.basePointCont;
-    		positionBase = Par.positionBase;
-    		positionContO = Par.positionContO;
-    		positionCont = Par.positionCont;
-    		positionSize = Par.positionSize;
-    		positionVector = Par.positionVector;
-    		anglePare = Par.anglePare;
-    		angleBase = Par.angleBase;
-    		angleCont = Par.angleCont;
-    		sizeBase = Par.sizeBase;
-    		sizeCont = Par.sizeCont;
-    		xSizeBase = Par.xSizeBase;
-    		xSizeCont = Par.xSizeCont;
-    		ySizeBase = Par.ySizeBase;
-    		ySizeCont = Par.ySizeCont;
-    		penWidth = Par.penWidth;
-    		Dra = Par.Dra;
-    		closed = Par.closed;
-    		if (Par.pen != null)
+    		basePointBase = ShapePart.basePointBase;
+    		basePointCont = ShapePart.basePointCont;
+    		positionBase = ShapePart.positionBase;
+    		positionContO = ShapePart.positionContO;
+    		positionCont = ShapePart.positionCont;
+    		positionSize = ShapePart.positionSize;
+    		positionVector = ShapePart.positionVector;
+    		anglePare = ShapePart.anglePare;
+    		angleBase = ShapePart.angleBase;
+    		angleCont = ShapePart.angleCont;
+    		sizeBase = ShapePart.sizeBase;
+    		sizeCont = ShapePart.sizeCont;
+    		xSizeBase = ShapePart.xSizeBase;
+    		xSizeCont = ShapePart.xSizeCont;
+    		ySizeBase = ShapePart.ySizeBase;
+    		ySizeCont = ShapePart.ySizeCont;
+    		penWidth = ShapePart.penWidth;
+    		Dra = ShapePart.Dra;
+    		closed = ShapePart.closed;
+    		if (ShapePart.pen != null)
     		{
-    			Pen = Par.pen.Copy();
+    			Pen = ShapePart.pen.Copy();
     		}
-    		if (Par.brush != null)
+    		if (ShapePart.brush != null)
     		{
-    			Brush = Par.brush.Copy();
+    			Brush = ShapePart.brush.Copy();
     		}
-    		Hit = Par.Hit;
-    		if (Par.HitBrush != null)
+    		Hit = ShapePart.Hit;
+    		if (ShapePart.HitBrush != null)
     		{
-    			HitBrush = (SolidBrush)Par.HitBrush.Copy();
+    			HitBrush = (SolidBrush)ShapePart.HitBrush.Copy();
     		}
     	}
 
@@ -833,25 +833,25 @@ namespace _2DGAMELIB
             }
         }
 
-        public void SetJointP(int Index, Par Par)
+        public void SetJointP(int Index, ShapePart ShapePart)
     	{
     		if (Index < jp.Count)
     		{
-    			Par.PositionBase = ToGlobal(jp[Index].Joint);
+    			ShapePart.PositionBase = ToGlobal(jp[Index].Joint);
     		}
-    		Par.Edit = true;
-    		Par.EditH = true;
+    		ShapePart.Edit = true;
+    		ShapePart.EditH = true;
     	}
 
-    	public void SetJointPA(int Index, Par Par)
+    	public void SetJointPA(int Index, ShapePart ShapePart)
     	{
     		if (Index < jp.Count)
     		{
-    			Par.PositionBase = ToGlobal(jp[Index].Joint);
+    			ShapePart.PositionBase = ToGlobal(jp[Index].Joint);
     		}
-    		Par.AngleParent = Angle;
-    		Par.Edit = true;
-    		Par.EditH = true;
+    		ShapePart.AngleParent = Angle;
+    		ShapePart.Edit = true;
+    		ShapePart.EditH = true;
     	}
 
     	public Vector2D ToGlobal(Vector2D Local)
@@ -954,12 +954,12 @@ namespace _2DGAMELIB
 
     	public bool IsParT()
     	{
-    		return this is ParT;
+    		return this is ShapePartT;
     	}
 
-    	public ParT ToParT()
+    	public ShapePartT ToParT()
     	{
-    		return (ParT)this;
+    		return (ShapePartT)this;
     	}
 
     	public List<int> GetPath()

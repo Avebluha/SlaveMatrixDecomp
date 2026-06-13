@@ -4,41 +4,41 @@ namespace SlaveMatrix
 {
     public class 性器精液_獣 : 性器精液
     {
-    	public Par X0Y0_精液;
+    	public ShapePart X0Y0_精液;
 
-    	public Par X0Y0_血液1;
+    	public ShapePart X0Y0_血液1;
 
-    	public Par X0Y0_血液2;
+    	public ShapePart X0Y0_血液2;
 
-    	public Par X0Y1_精液;
+    	public ShapePart X0Y1_精液;
 
-    	public Par X0Y1_血液1;
+    	public ShapePart X0Y1_血液1;
 
-    	public Par X0Y1_血液2;
+    	public ShapePart X0Y1_血液2;
 
-    	public Par X0Y2_精液;
+    	public ShapePart X0Y2_精液;
 
-    	public Par X0Y2_血液1;
+    	public ShapePart X0Y2_血液1;
 
-    	public Par X0Y2_血液2;
+    	public ShapePart X0Y2_血液2;
 
-    	public Par X0Y3_精液;
+    	public ShapePart X0Y3_精液;
 
-    	public Par X0Y3_血液1;
+    	public ShapePart X0Y3_血液1;
 
-    	public Par X0Y3_血液2;
+    	public ShapePart X0Y3_血液2;
 
-    	public Par X0Y4_精液;
+    	public ShapePart X0Y4_精液;
 
-    	public Par X0Y4_血液1;
+    	public ShapePart X0Y4_血液1;
 
-    	public Par X0Y4_血液2;
+    	public ShapePart X0Y4_血液2;
 
-    	public Par X0Y5_精液;
+    	public ShapePart X0Y5_精液;
 
-    	public Par X0Y5_血液1;
+    	public ShapePart X0Y5_血液1;
 
-    	public Par X0Y5_血液2;
+    	public ShapePart X0Y5_血液2;
 
     	public ColorD 精液CD;
 

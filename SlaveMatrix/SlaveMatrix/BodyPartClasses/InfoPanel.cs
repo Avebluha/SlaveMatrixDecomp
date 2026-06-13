@@ -11,19 +11,19 @@ namespace SlaveMatrix
 
     	private ModeEventDispatcher Med;
 
-    	public Par MaiB;
+    	public ShapePart MaiB;
 
     	public Tex Mai;
 
-    	public Par Mai2B;
+    	public ShapePart Mai2B;
 
     	public Tex Mai2;
 
-    	public Par SubB;
+    	public ShapePart SubB;
 
     	public Tex Sub;
 
-    	public Par Sub2B;
+    	public ShapePart Sub2B;
 
     	public Tex Sub2;
 
@@ -37,9 +37,9 @@ namespace SlaveMatrix
 
     	public bool Sub2Show = true;
 
-    	private ParT yp;
+    	private ShapePartT yp;
 
-    	private ParT np;
+    	private ShapePartT np;
 
     	public But1 yb;
 
@@ -151,7 +151,7 @@ namespace SlaveMatrix
     		double num4 = Are.LocalHeight * (1.0 / 6.0) / num2;
     		Vector2D vector2D = Are.GetPosition(0.2, 1.0 - num4 * num2 / Are.LocalHeight).AddY(0.0 - num);
     		double y = 1.01;
-    		MaiB = new Par();
+    		MaiB = new ShapePart();
     		MaiB.BasePointBase = DataConsts.Vec2DZero;
     		MaiB.PositionBase = vector2D;
     		MaiB.SizeBase = num2;
@@ -166,11 +166,11 @@ namespace SlaveMatrix
     		{
     			sp.Text = sp.Text;
     		});
-    		Mai.ParT.BasePointBase = Mai.ParT.OP.GetCenter().MulY(y);
+    		Mai.ShapePartT.BasePointBase = Mai.ShapePartT.OP.GetCenter().MulY(y);
     		Mai.Position = MaiB.ToGlobal(MaiB.JP[0].Joint);
     		Mai.Feed.OP.OutlineFalse();
     		double num5 = num4 * 4.53;
-    		Mai2B = new Par();
+    		Mai2B = new ShapePart();
     		Mai2B.BasePointBase = DataConsts.Vec2DZero;
     		Mai2B.PositionBase = new Vector2D(vector2D.X, 0.01);
     		Mai2B.SizeBase = num2;
@@ -185,12 +185,12 @@ namespace SlaveMatrix
     		{
     			sp.Text = sp.Text;
     		});
-    		Mai2.ParT.BasePointBase = Mai2.ParT.OP.GetCenter().MulY(y);
+    		Mai2.ShapePartT.BasePointBase = Mai2.ShapePartT.OP.GetCenter().MulY(y);
     		Mai2.Position = Mai2B.ToGlobal(Mai2B.JP[0].Joint);
     		Mai2.Feed.OP.OutlineFalse();
     		num3 = Are.LocalWidth * 0.19 / num2;
     		vector2D = Are.GetPosition(1.0 - (num3 * num2 / Are.LocalWidth + 0.005), 1.0 - num4 * num2 / Are.LocalHeight).AddY(0.0 - num);
-    		SubB = new Par();
+    		SubB = new ShapePart();
     		SubB.BasePointBase = DataConsts.Vec2DZero;
     		SubB.PositionBase = vector2D;
     		SubB.SizeBase = num2;
@@ -202,11 +202,11 @@ namespace SlaveMatrix
     		SubB.Hit = false;
     		SubB.JP.Add(new Joi(SubB.OP.GetCenter()));
     		Sub = new Tex("Tex4", vector2D, num2 * 1.01, num3 * 0.98, num4 * 0.91, new Font("MS Gothic", 1f), 0.07, 0, " ", Col.White, Col.Black, Color.Transparent, 15.0);
-    		Sub.ParT.BasePointBase = Sub.ParT.OP.GetCenter().MulY(y);
+    		Sub.ShapePartT.BasePointBase = Sub.ShapePartT.OP.GetCenter().MulY(y);
     		Sub.Position = SubB.ToGlobal(SubB.JP[0].Joint);
     		SubInnfo_l = new Lab(Are, "SubInfo", vector2D, num2, 1.0, new Font("MS Gothic", 1f), 0.07, "Sub Info.", Col.White, Col.Black, Color.FromArgb(160, Col.Black), Col.Empty);
-    		SubInnfo_l.ParT.PositionBase = SubInnfo_l.ParT.PositionBase.AddY((0.0 - SubInnfo_l.ParT.OP[0].ps[3].Y) * SubInnfo_l.ParT.SizeBase);
-    		Sub2B = new Par();
+    		SubInnfo_l.ShapePartT.PositionBase = SubInnfo_l.ShapePartT.PositionBase.AddY((0.0 - SubInnfo_l.ShapePartT.OP[0].ps[3].Y) * SubInnfo_l.ShapePartT.SizeBase);
+    		Sub2B = new ShapePart();
     		Sub2B.BasePointBase = DataConsts.Vec2DZero;
     		Sub2B.PositionBase = new Vector2D(0.0025, vector2D.Y);
     		Sub2B.SizeBase = num2;
@@ -218,13 +218,13 @@ namespace SlaveMatrix
     		Sub2B.Hit = false;
     		Sub2B.JP.Add(new Joi(SubB.OP.GetCenter()));
     		Sub2 = new Tex("Tex3", Sub2B.PositionBase, num2 * 1.01, num3 * 0.98, num4 * 0.91, new Font("MS Gothic", 1f), 0.07, 0, "", Col.White, Col.Black, Color.Transparent, 15.0);
-    		Sub2.ParT.BasePointBase = Sub2.ParT.OP.GetCenter().MulY(y);
+    		Sub2.ShapePartT.BasePointBase = Sub2.ShapePartT.OP.GetCenter().MulY(y);
     		Sub2.Position = Sub2B.ToGlobal(Sub2B.JP[0].Joint);
-    		yp = new ParT();
+    		yp = new ShapePartT();
     		yp.Text = "・" + GameText.はい;
-    		yp.SizeBase = Mai.ParT.SizeBase;
+    		yp.SizeBase = Mai.ShapePartT.SizeBase;
     		yp.Font = new Font("MS Gothic", 1f);
-    		yp.FontSize = Mai.ParT.FontSize;
+    		yp.FontSize = Mai.ShapePartT.FontSize;
     		yp.SetStringRectOutline(Are.UnitScale, Are.DisplayGraphics);
     		yp.RectSize = new Vector2D(yp.OP[0].ps[1].X, yp.OP[0].ps[2].Y);
     		yp.OP.ScalingY(yp.BasePointBase, 0.9);
@@ -240,11 +240,11 @@ namespace SlaveMatrix
     		yb = new But1(yp, delegate
     		{
     		});
-    		np = new ParT();
+    		np = new ShapePartT();
     		np.Text = "・" + GameText.いいえ;
-    		np.SizeBase = Mai.ParT.SizeBase;
+    		np.SizeBase = Mai.ShapePartT.SizeBase;
     		np.Font = new Font("MS Gothic", 1f);
-    		np.FontSize = Mai.ParT.FontSize;
+    		np.FontSize = Mai.ShapePartT.FontSize;
     		np.SetStringRectOutline(Are.UnitScale, Are.DisplayGraphics);
     		np.RectSize = new Vector2D(np.OP[0].ps[1].X, np.OP[0].ps[2].Y);
     		np.OP.ScalingY(np.BasePointBase, 0.9);
@@ -280,7 +280,7 @@ namespace SlaveMatrix
 
     	private void SetButPos()
     	{
-    		yp.PositionBase = new Vector2D(yp.PositionBase.X, Mai.ParT.ToGlobal(Mai.ParT.GetStringRect(Are.UnitScale, Are.DisplayGraphics).v2).Y + 0.0025);
+    		yp.PositionBase = new Vector2D(yp.PositionBase.X, Mai.ShapePartT.ToGlobal(Mai.ShapePartT.GetStringRect(Are.UnitScale, Are.DisplayGraphics).v2).Y + 0.0025);
     		np.PositionBase = new Vector2D(np.PositionBase.X, yp.ToGlobal(yp.OP.Last().ps.Last()).Y + 0.0025);
     	}
 
@@ -328,7 +328,7 @@ namespace SlaveMatrix
     			Are.Draw(SubB);
     			Sub.Progression(FPS);
     			Are.Draw(Sub.Pars);
-    			Are.Draw(SubInnfo_l.ParT);
+    			Are.Draw(SubInnfo_l.ShapePartT);
     		}
     		if (Sub2Show)
     		{

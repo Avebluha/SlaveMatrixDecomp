@@ -4,9 +4,9 @@ namespace SlaveMatrix
 {
     public class 尾鰭_鯨 : 尾鰭
     {
-    	public Par X0Y0_鰭;
+    	public ShapePart X0Y0_鰭;
 
-    	public Par X0Y0_尾;
+    	public ShapePart X0Y0_尾;
 
     	public ColorD 鰭CD;
 

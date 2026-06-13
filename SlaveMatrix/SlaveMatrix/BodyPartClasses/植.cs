@@ -5,75 +5,75 @@ namespace SlaveMatrix
 {
     public class 植 : Ele
     {
-    	public Par X0Y0_披針葉4_通常_葉;
+    	public ShapePart X0Y0_披針葉4_通常_葉;
 
-    	public Par X0Y0_披針葉4_通常_葉脈;
+    	public ShapePart X0Y0_披針葉4_通常_葉脈;
 
-    	public Par X0Y0_披針葉4_欠損_葉;
+    	public ShapePart X0Y0_披針葉4_欠損_葉;
 
-    	public Par X0Y0_披針葉4_欠損_葉脈;
+    	public ShapePart X0Y0_披針葉4_欠損_葉脈;
 
-    	public Par X0Y0_心臓葉4_通常_葉;
+    	public ShapePart X0Y0_心臓葉4_通常_葉;
 
-    	public Par X0Y0_心臓葉4_通常_葉脈;
+    	public ShapePart X0Y0_心臓葉4_通常_葉脈;
 
-    	public Par X0Y0_心臓葉4_欠損_葉;
+    	public ShapePart X0Y0_心臓葉4_欠損_葉;
 
-    	public Par X0Y0_心臓葉4_欠損_葉脈;
+    	public ShapePart X0Y0_心臓葉4_欠損_葉脈;
 
-    	public Par X0Y0_茎;
+    	public ShapePart X0Y0_茎;
 
-    	public Par X0Y0_根1;
+    	public ShapePart X0Y0_根1;
 
-    	public Par X0Y0_根2;
+    	public ShapePart X0Y0_根2;
 
-    	public Par X0Y0_披針葉1_通常_葉;
+    	public ShapePart X0Y0_披針葉1_通常_葉;
 
-    	public Par X0Y0_披針葉1_通常_葉脈;
+    	public ShapePart X0Y0_披針葉1_通常_葉脈;
 
-    	public Par X0Y0_披針葉1_欠損_葉;
+    	public ShapePart X0Y0_披針葉1_欠損_葉;
 
-    	public Par X0Y0_披針葉1_欠損_葉脈;
+    	public ShapePart X0Y0_披針葉1_欠損_葉脈;
 
-    	public Par X0Y0_披針葉2_通常_葉;
+    	public ShapePart X0Y0_披針葉2_通常_葉;
 
-    	public Par X0Y0_披針葉2_通常_葉脈;
+    	public ShapePart X0Y0_披針葉2_通常_葉脈;
 
-    	public Par X0Y0_披針葉2_欠損_葉;
+    	public ShapePart X0Y0_披針葉2_欠損_葉;
 
-    	public Par X0Y0_披針葉2_欠損_葉脈;
+    	public ShapePart X0Y0_披針葉2_欠損_葉脈;
 
-    	public Par X0Y0_披針葉3_通常_葉;
+    	public ShapePart X0Y0_披針葉3_通常_葉;
 
-    	public Par X0Y0_披針葉3_通常_葉脈;
+    	public ShapePart X0Y0_披針葉3_通常_葉脈;
 
-    	public Par X0Y0_披針葉3_欠損_葉;
+    	public ShapePart X0Y0_披針葉3_欠損_葉;
 
-    	public Par X0Y0_披針葉3_欠損_葉脈;
+    	public ShapePart X0Y0_披針葉3_欠損_葉脈;
 
-    	public Par X0Y0_心臓葉1_通常_葉;
+    	public ShapePart X0Y0_心臓葉1_通常_葉;
 
-    	public Par X0Y0_心臓葉1_通常_葉脈;
+    	public ShapePart X0Y0_心臓葉1_通常_葉脈;
 
-    	public Par X0Y0_心臓葉1_欠損_葉;
+    	public ShapePart X0Y0_心臓葉1_欠損_葉;
 
-    	public Par X0Y0_心臓葉1_欠損_葉脈;
+    	public ShapePart X0Y0_心臓葉1_欠損_葉脈;
 
-    	public Par X0Y0_心臓葉2_通常_葉;
+    	public ShapePart X0Y0_心臓葉2_通常_葉;
 
-    	public Par X0Y0_心臓葉2_通常_葉脈;
+    	public ShapePart X0Y0_心臓葉2_通常_葉脈;
 
-    	public Par X0Y0_心臓葉2_欠損_葉;
+    	public ShapePart X0Y0_心臓葉2_欠損_葉;
 
-    	public Par X0Y0_心臓葉2_欠損_葉脈;
+    	public ShapePart X0Y0_心臓葉2_欠損_葉脈;
 
-    	public Par X0Y0_心臓葉3_通常_葉;
+    	public ShapePart X0Y0_心臓葉3_通常_葉;
 
-    	public Par X0Y0_心臓葉3_通常_葉脈;
+    	public ShapePart X0Y0_心臓葉3_通常_葉脈;
 
-    	public Par X0Y0_心臓葉3_欠損_葉;
+    	public ShapePart X0Y0_心臓葉3_欠損_葉;
 
-    	public Par X0Y0_心臓葉3_欠損_葉脈;
+    	public ShapePart X0Y0_心臓葉3_欠損_葉脈;
 
     	public ColorD 葉4CD;
 

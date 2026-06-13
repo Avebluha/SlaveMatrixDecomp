@@ -5,23 +5,23 @@ namespace SlaveMatrix
 {
     public class UpperArm_獣 : 獣UpperArm
     {
-    	public Par X0Y0_筋肉上;
+    	public ShapePart X0Y0_筋肉上;
 
-    	public Par X0Y0_UpperArm;
+    	public ShapePart X0Y0_UpperArm;
 
-    	public Par X0Y0_筋肉下;
+    	public ShapePart X0Y0_筋肉下;
 
-    	public Par X0Y0_虎柄_虎1;
+    	public ShapePart X0Y0_虎柄_虎1;
 
-    	public Par X0Y0_虎柄_虎2;
+    	public ShapePart X0Y0_虎柄_虎2;
 
-    	public Par X0Y0_竜性_鱗4;
+    	public ShapePart X0Y0_竜性_鱗4;
 
-    	public Par X0Y0_竜性_鱗3;
+    	public ShapePart X0Y0_竜性_鱗3;
 
-    	public Par X0Y0_竜性_鱗2;
+    	public ShapePart X0Y0_竜性_鱗2;
 
-    	public Par X0Y0_竜性_鱗1;
+    	public ShapePart X0Y0_竜性_鱗1;
 
     	public ColorD 筋肉上CD;
 

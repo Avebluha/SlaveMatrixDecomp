@@ -4,59 +4,59 @@ namespace SlaveMatrix
 {
     public class 角2_山3 : 角2
     {
-    	public Par X0Y0_根_根;
+    	public ShapePart X0Y0_根_根;
 
-    	public Par X0Y0_根_凸1;
+    	public ShapePart X0Y0_根_凸1;
 
-    	public Par X0Y0_根_凸2;
+    	public ShapePart X0Y0_根_凸2;
 
-    	public Par X0Y0_根_凸3;
+    	public ShapePart X0Y0_根_凸3;
 
-    	public Par X0Y0_根_凸4;
+    	public ShapePart X0Y0_根_凸4;
 
-    	public Par X0Y0_根_凸5;
+    	public ShapePart X0Y0_根_凸5;
 
-    	public Par X0Y0_根_凸6;
+    	public ShapePart X0Y0_根_凸6;
 
-    	public Par X0Y0_根_凸7;
+    	public ShapePart X0Y0_根_凸7;
 
-    	public Par X0Y0_根_凸8;
+    	public ShapePart X0Y0_根_凸8;
 
-    	public Par X0Y0_根_凸9;
+    	public ShapePart X0Y0_根_凸9;
 
-    	public Par X0Y0_根_凸10;
+    	public ShapePart X0Y0_根_凸10;
 
-    	public Par X0Y0_先_先;
+    	public ShapePart X0Y0_先_先;
 
-    	public Par X0Y0_先_凸1;
+    	public ShapePart X0Y0_先_凸1;
 
-    	public Par X0Y0_先_凸2;
+    	public ShapePart X0Y0_先_凸2;
 
-    	public Par X0Y0_先_凸3;
+    	public ShapePart X0Y0_先_凸3;
 
-    	public Par X0Y0_先_凸4;
+    	public ShapePart X0Y0_先_凸4;
 
-    	public Par X0Y0_先_凸5;
+    	public ShapePart X0Y0_先_凸5;
 
-    	public Par X0Y0_先_凸6;
+    	public ShapePart X0Y0_先_凸6;
 
-    	public Par X0Y1_根_根;
+    	public ShapePart X0Y1_根_根;
 
-    	public Par X0Y1_根_折線1;
+    	public ShapePart X0Y1_根_折線1;
 
-    	public Par X0Y1_根_折線2;
+    	public ShapePart X0Y1_根_折線2;
 
-    	public Par X0Y1_根_凸1;
+    	public ShapePart X0Y1_根_凸1;
 
-    	public Par X0Y1_根_凸2;
+    	public ShapePart X0Y1_根_凸2;
 
-    	public Par X0Y1_根_凸3;
+    	public ShapePart X0Y1_根_凸3;
 
-    	public Par X0Y1_根_凸4;
+    	public ShapePart X0Y1_根_凸4;
 
-    	public Par X0Y1_根_凸5;
+    	public ShapePart X0Y1_根_凸5;
 
-    	public Par X0Y1_根_凸6;
+    	public ShapePart X0Y1_根_凸6;
 
     	public ColorD 根_根CD;
 
@@ -152,7 +152,7 @@ namespace SlaveMatrix
 
     	public ColorP X0Y1_根_凸6CP;
 
-    	public Par[] Pars;
+    	public ShapePart[] Pars;
 
     	private Vector2D[] mm;
 
@@ -620,7 +620,7 @@ namespace SlaveMatrix
     		}
     		base.配色指定 = 配色指定;
     		配色(体配色);
-    		Pars = new Par[2] { X0Y0_根_根, X0Y0_先_先 };
+    		Pars = new ShapePart[2] { X0Y0_根_根, X0Y0_先_先 };
     		X0Y0_根_根CP = new ColorP(X0Y0_根_根, 根_根CD, DisUnit, abj: true);
     		X0Y0_根_凸1CP = new ColorP(X0Y0_根_凸1, 根_凸1CD, DisUnit, abj: true);
     		X0Y0_根_凸2CP = new ColorP(X0Y0_根_凸2, 根_凸2CD, DisUnit, abj: true);

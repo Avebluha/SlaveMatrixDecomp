@@ -50,9 +50,9 @@ namespace _2DGAMELIB
 
     	public Pars Pars => pars;
 
-    	public But(ParT ParT, Action<But> Action)
+    	public But(ShapePartT ShapePartT, Action<But> Action)
     	{
-    		pars = new Pars(ParT);
+    		pars = new Pars(ShapePartT);
     		this.Action = Action;
     	}
 
@@ -119,7 +119,7 @@ namespace _2DGAMELIB
 
     	public void SetHitColor(ModeEventDispatcher Med)
     	{
-    		foreach (Par item in pars.EnumAllPar())
+    		foreach (ShapePart item in pars.EnumAllPar())
     		{
     			if (item.HitColor != Color.Transparent)
     			{

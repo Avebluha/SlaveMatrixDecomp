@@ -5,7 +5,7 @@ namespace _2DGAMELIB
 {
     public class Lab
     {
-    	private ParT parT;
+    	private ShapePartT _shapePartT;
 
     	private RenderArea Are;
 
@@ -13,13 +13,13 @@ namespace _2DGAMELIB
 
     	private double Min;
 
-    	public ParT ParT => parT;
+    	public ShapePartT ShapePartT => _shapePartT;
 
     	public string Text
     	{
     		get
     		{
-    			return parT.Text;
+    			return _shapePartT.Text;
     		}
     		set
     		{
@@ -29,7 +29,7 @@ namespace _2DGAMELIB
 
     	private void SetText(string Text)
     	{
-    		parT.Text = Text;
+    		_shapePartT.Text = Text;
     		SetRect();
     	}
 
@@ -55,7 +55,7 @@ namespace _2DGAMELIB
     		}
 
 
-    		parT = new ParT
+    		_shapePartT = new ShapePartT
     		{
     			InitializeOP = array,
     			BasePointBase = array[0].ps[0],
@@ -75,49 +75,49 @@ namespace _2DGAMELIB
 
     		if (ShadColor != Color.Empty)
     		{
-    			parT.ShadBrush = new SolidBrush(ShadColor);
+    			_shapePartT.ShadBrush = new SolidBrush(ShadColor);
     		}
 
 
     		SetRect();
-    		Min = parT.RectSize.Y;
+    		Min = _shapePartT.RectSize.Y;
     		SetText(Text);
     	}
 
     	public void SetHitColor(ModeEventDispatcher Med)
     	{
-    		if (parT.HitColor != Color.Transparent)
+    		if (_shapePartT.HitColor != Color.Transparent)
     		{
-    			Med.RemUniqueColor(parT.HitColor);
+    			Med.RemUniqueColor(_shapePartT.HitColor);
     		}
-    		parT.HitColor = Med.GetUniqueColor();
+    		_shapePartT.HitColor = Med.GetUniqueColor();
     	}
 
     	private void SetRect()
     	{
-    		if (!string.IsNullOrEmpty(parT.Text))
+    		if (!string.IsNullOrEmpty(_shapePartT.Text))
     		{
-    			parT.RectSize = new Vector2D(Width, 10.0);
-    			Vector2D_2 stringRect = parT.GetStringRect(Are.DisplayUnitScale, Are.DisplayGraphics);
+    			_shapePartT.RectSize = new Vector2D(Width, 10.0);
+    			Vector2D_2 stringRect = _shapePartT.GetStringRect(Are.DisplayUnitScale, Are.DisplayGraphics);
     			double x = ((stringRect.v2.X > Min) ? stringRect.v2.X : Min) + 0.07;
-    			parT.RectSize = new Vector2D(x, stringRect.v2.Y);
+    			_shapePartT.RectSize = new Vector2D(x, stringRect.v2.Y);
     		}
     		else
     		{
     			double x2 = Min + 0.07;
-    			parT.RectSize = new Vector2D(x2, Min);
+    			_shapePartT.RectSize = new Vector2D(x2, Min);
     		}
 
 
-    		parT.OP[0].ps[0] = new Vector2D(0.0, 0.0);
-    		parT.OP[0].ps[1] = new Vector2D(parT.RectSize.X, 0.0);
-    		parT.OP[0].ps[2] = new Vector2D(parT.RectSize.X, parT.RectSize.Y);
-    		parT.OP[0].ps[3] = new Vector2D(0.0, parT.RectSize.Y);
+    		_shapePartT.OP[0].ps[0] = new Vector2D(0.0, 0.0);
+    		_shapePartT.OP[0].ps[1] = new Vector2D(_shapePartT.RectSize.X, 0.0);
+    		_shapePartT.OP[0].ps[2] = new Vector2D(_shapePartT.RectSize.X, _shapePartT.RectSize.Y);
+    		_shapePartT.OP[0].ps[3] = new Vector2D(0.0, _shapePartT.RectSize.Y);
     	}
 
     	public void Dispose()
     	{
-    		parT.Dispose();
+    		_shapePartT.Dispose();
     	}
     }
 }

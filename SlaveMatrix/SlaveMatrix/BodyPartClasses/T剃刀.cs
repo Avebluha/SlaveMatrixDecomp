@@ -4,45 +4,45 @@ namespace SlaveMatrix
 {
     public class T剃刀 : Ele
     {
-    	public Par X0Y0_ヘッド;
+    	public ShapePart X0Y0_ヘッド;
 
-    	public Par X0Y0_刃_刃1;
+    	public ShapePart X0Y0_刃_刃1;
 
-    	public Par X0Y0_刃_刃2;
+    	public ShapePart X0Y0_刃_刃2;
 
-    	public Par X0Y0_Neck;
+    	public ShapePart X0Y0_Neck;
 
-    	public Par X0Y0_グリップ_グリップ0;
+    	public ShapePart X0Y0_グリップ_グリップ0;
 
-    	public Par X0Y0_グリップ_グリップ1;
+    	public ShapePart X0Y0_グリップ_グリップ1;
 
-    	public Par X0Y0_グリップ_グリップ2;
+    	public ShapePart X0Y0_グリップ_グリップ2;
 
-    	public Par X0Y0_グリップ_グリップ3;
+    	public ShapePart X0Y0_グリップ_グリップ3;
 
-    	public Par X0Y0_グリップ_グリップ4;
+    	public ShapePart X0Y0_グリップ_グリップ4;
 
-    	public Par X0Y0_グリップ_グリップ5;
+    	public ShapePart X0Y0_グリップ_グリップ5;
 
-    	public Par X0Y0_グリップ_グリップ6;
+    	public ShapePart X0Y0_グリップ_グリップ6;
 
-    	public Par X0Y0_グリップ_グリップ7;
+    	public ShapePart X0Y0_グリップ_グリップ7;
 
-    	public Par X0Y0_グリップ_グリップ8;
+    	public ShapePart X0Y0_グリップ_グリップ8;
 
-    	public Par X0Y0_グリップ_グリップ9;
+    	public ShapePart X0Y0_グリップ_グリップ9;
 
-    	public Par X0Y0_グリップ_グリップ10;
+    	public ShapePart X0Y0_グリップ_グリップ10;
 
-    	public Par X0Y0_グリップ_グリップ11;
+    	public ShapePart X0Y0_グリップ_グリップ11;
 
-    	public Par X0Y0_グリップ_グリップ12;
+    	public ShapePart X0Y0_グリップ_グリップ12;
 
-    	public Par X0Y0_グリップ_グリップ13;
+    	public ShapePart X0Y0_グリップ_グリップ13;
 
-    	public Par X0Y0_グリップ_グリップ14;
+    	public ShapePart X0Y0_グリップ_グリップ14;
 
-    	public Par X0Y0_グリップ_グリップ15;
+    	public ShapePart X0Y0_グリップ_グリップ15;
 
     	public ColorD ヘッドCD;
 
@@ -584,7 +584,7 @@ namespace SlaveMatrix
     		X0Y0_グリップ_グリップ15CP = new ColorP(X0Y0_グリップ_グリップ15, グリップ_グリップ15CD, DisUnit, abj: true);
     		Intensity = e.濃度;
     		Vector2D local = X0Y0_刃_刃1.OP[0].ps[1];
-    		foreach (Par item in Body.EnumJoinRoot)
+    		foreach (ShapePart item in Body.EnumJoinRoot)
     		{
     			item.BasePointBase = item.ToLocal(X0Y0_刃_刃1.ToGlobal(local));
     		}

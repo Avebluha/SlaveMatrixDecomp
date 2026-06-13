@@ -8,7 +8,7 @@ namespace SlaveMatrix
 
     	public 尾_鯨 尾;
 
-    	private Par[] 鯨;
+    	private ShapePart[] 鯨;
 
     	private Vector2D[] 鯨m;
 
@@ -16,7 +16,7 @@ namespace SlaveMatrix
     	{
     		this.長物 = 長物;
     		this.尾 = 尾;
-    		鯨 = new Par[40]
+    		鯨 = new ShapePart[40]
     		{
     			長物.X0Y0_Torso6_Torso, 長物.X0Y0_Torso5_Torso, 長物.X0Y0_Torso4_Torso, 長物.X0Y0_Torso3_Torso, 長物.X0Y0_Torso2_Torso, 長物.X0Y0_Torso1_Torso, 尾.X0Y0_尾33_尾, 尾.X0Y0_尾32_尾, 尾.X0Y0_尾31_尾, 尾.X0Y0_尾30_尾,
     			尾.X0Y0_尾29_尾, 尾.X0Y0_尾28_尾, 尾.X0Y0_尾27_尾, 尾.X0Y0_尾26_尾, 尾.X0Y0_尾25_尾, 尾.X0Y0_尾24_尾, 尾.X0Y0_尾23_尾, 尾.X0Y0_尾22_尾, 尾.X0Y0_尾21_尾, 尾.X0Y0_尾20_尾,

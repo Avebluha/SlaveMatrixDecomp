@@ -4,23 +4,23 @@ namespace SlaveMatrix
 {
     public class 上着ミドル_ドレス : 上着ミドル
     {
-    	public Par X0Y0_服;
+    	public ShapePart X0Y0_服;
 
-    	public Par X0Y0_縁_縁左;
+    	public ShapePart X0Y0_縁_縁左;
 
-    	public Par X0Y0_縁_縁右;
+    	public ShapePart X0Y0_縁_縁右;
 
-    	public Par X0Y0_柄_柄左_柄1;
+    	public ShapePart X0Y0_柄_柄左_柄1;
 
-    	public Par X0Y0_柄_柄左_柄2_柄1;
+    	public ShapePart X0Y0_柄_柄左_柄2_柄1;
 
-    	public Par X0Y0_柄_柄左_柄2_柄2;
+    	public ShapePart X0Y0_柄_柄左_柄2_柄2;
 
-    	public Par X0Y0_柄_柄右_柄1;
+    	public ShapePart X0Y0_柄_柄右_柄1;
 
-    	public Par X0Y0_柄_柄右_柄2_柄1;
+    	public ShapePart X0Y0_柄_柄右_柄2_柄1;
 
-    	public Par X0Y0_柄_柄右_柄2_柄2;
+    	public ShapePart X0Y0_柄_柄右_柄2_柄2;
 
     	public ColorD 服CD;
 
@@ -58,9 +58,9 @@ namespace SlaveMatrix
 
     	public ColorP X0Y0_柄_柄右_柄2_柄2CP;
 
-    	private Par[] 柄左;
+    	private ShapePart[] 柄左;
 
-    	private Par[] 柄右;
+    	private ShapePart[] 柄右;
 
     	private Vector2D[] mm;
 
@@ -395,18 +395,18 @@ namespace SlaveMatrix
     		X0Y0_縁_縁左CP = new ColorP(X0Y0_縁_縁左, 縁_縁左CD, DisUnit, abj: true);
     		X0Y0_縁_縁右CP = new ColorP(X0Y0_縁_縁右, 縁_縁右CD, DisUnit, abj: true);
     		X0Y0_柄_柄左_柄1CP = new ColorP(X0Y0_柄_柄左_柄1, 柄_柄左_柄1CD, DisUnit, abj: true);
-    		柄左 = new Par[2] { X0Y0_柄_柄左_柄2_柄1, X0Y0_柄_柄左_柄2_柄2 };
+    		柄左 = new ShapePart[2] { X0Y0_柄_柄左_柄2_柄1, X0Y0_柄_柄左_柄2_柄2 };
     		X0Y0_柄_柄左_柄2_柄1CP = new ColorP(X0Y0_柄_柄左_柄2_柄1, 柄_柄左_柄2_柄1CD, DisUnit, abj: true);
     		X0Y0_柄_柄左_柄2_柄2CP = new ColorP(X0Y0_柄_柄左_柄2_柄2, 柄_柄左_柄2_柄2CD, DisUnit, abj: true);
     		X0Y0_柄_柄右_柄1CP = new ColorP(X0Y0_柄_柄右_柄1, 柄_柄右_柄1CD, DisUnit, abj: true);
-    		柄右 = new Par[2] { X0Y0_柄_柄右_柄2_柄1, X0Y0_柄_柄右_柄2_柄2 };
+    		柄右 = new ShapePart[2] { X0Y0_柄_柄右_柄2_柄1, X0Y0_柄_柄右_柄2_柄2 };
     		X0Y0_柄_柄右_柄2_柄1CP = new ColorP(X0Y0_柄_柄右_柄2_柄1, 柄_柄右_柄2_柄1CD, DisUnit, abj: true);
     		X0Y0_柄_柄右_柄2_柄2CP = new ColorP(X0Y0_柄_柄右_柄2_柄2, 柄_柄右_柄2_柄2CD, DisUnit, abj: true);
     		Intensity = e.濃度;
     		尺度YB = 0.95;
     	}
 
-    	public override bool Is革(Par p)
+    	public override bool Is革(ShapePart p)
     	{
     		if (p != X0Y0_服 && p != X0Y0_縁_縁左 && p != X0Y0_縁_縁右 && p != X0Y0_柄_柄左_柄1 && p != X0Y0_柄_柄左_柄2_柄1 && p != X0Y0_柄_柄左_柄2_柄2 && p != X0Y0_柄_柄右_柄1 && p != X0Y0_柄_柄右_柄2_柄1)
     		{

@@ -6,621 +6,621 @@ namespace SlaveMatrix
 {
     public class 尾_魚 : 尾
     {
-    	public Par X0Y0_尾33_鱗左_鱗1;
+    	public ShapePart X0Y0_尾33_鱗左_鱗1;
 
-    	public Par X0Y0_尾33_鱗左_鱗3;
+    	public ShapePart X0Y0_尾33_鱗左_鱗3;
 
-    	public Par X0Y0_尾33_鱗右_鱗1;
+    	public ShapePart X0Y0_尾33_鱗右_鱗1;
 
-    	public Par X0Y0_尾33_鱗右_鱗3;
+    	public ShapePart X0Y0_尾33_鱗右_鱗3;
 
-    	public Par X0Y0_尾33_尾;
+    	public ShapePart X0Y0_尾33_尾;
 
-    	public Par X0Y0_尾32_鱗左_鱗1;
+    	public ShapePart X0Y0_尾32_鱗左_鱗1;
 
-    	public Par X0Y0_尾32_鱗左_鱗2;
+    	public ShapePart X0Y0_尾32_鱗左_鱗2;
 
-    	public Par X0Y0_尾32_鱗左_鱗3;
+    	public ShapePart X0Y0_尾32_鱗左_鱗3;
 
-    	public Par X0Y0_尾32_鱗左_鱗4;
+    	public ShapePart X0Y0_尾32_鱗左_鱗4;
 
-    	public Par X0Y0_尾32_鱗右_鱗1;
+    	public ShapePart X0Y0_尾32_鱗右_鱗1;
 
-    	public Par X0Y0_尾32_鱗右_鱗2;
+    	public ShapePart X0Y0_尾32_鱗右_鱗2;
 
-    	public Par X0Y0_尾32_鱗右_鱗3;
+    	public ShapePart X0Y0_尾32_鱗右_鱗3;
 
-    	public Par X0Y0_尾32_鱗右_鱗4;
+    	public ShapePart X0Y0_尾32_鱗右_鱗4;
 
-    	public Par X0Y0_尾32_尾;
+    	public ShapePart X0Y0_尾32_尾;
 
-    	public Par X0Y0_尾31_鱗左_鱗1;
+    	public ShapePart X0Y0_尾31_鱗左_鱗1;
 
-    	public Par X0Y0_尾31_鱗左_鱗2;
+    	public ShapePart X0Y0_尾31_鱗左_鱗2;
 
-    	public Par X0Y0_尾31_鱗左_鱗3;
+    	public ShapePart X0Y0_尾31_鱗左_鱗3;
 
-    	public Par X0Y0_尾31_鱗左_鱗4;
+    	public ShapePart X0Y0_尾31_鱗左_鱗4;
 
-    	public Par X0Y0_尾31_鱗右_鱗1;
+    	public ShapePart X0Y0_尾31_鱗右_鱗1;
 
-    	public Par X0Y0_尾31_鱗右_鱗2;
+    	public ShapePart X0Y0_尾31_鱗右_鱗2;
 
-    	public Par X0Y0_尾31_鱗右_鱗3;
+    	public ShapePart X0Y0_尾31_鱗右_鱗3;
 
-    	public Par X0Y0_尾31_鱗右_鱗4;
+    	public ShapePart X0Y0_尾31_鱗右_鱗4;
 
-    	public Par X0Y0_尾31_尾;
+    	public ShapePart X0Y0_尾31_尾;
 
-    	public Par X0Y0_尾30_鱗左_鱗1;
+    	public ShapePart X0Y0_尾30_鱗左_鱗1;
 
-    	public Par X0Y0_尾30_鱗左_鱗2;
+    	public ShapePart X0Y0_尾30_鱗左_鱗2;
 
-    	public Par X0Y0_尾30_鱗左_鱗3;
+    	public ShapePart X0Y0_尾30_鱗左_鱗3;
 
-    	public Par X0Y0_尾30_鱗左_鱗4;
+    	public ShapePart X0Y0_尾30_鱗左_鱗4;
 
-    	public Par X0Y0_尾30_鱗右_鱗1;
+    	public ShapePart X0Y0_尾30_鱗右_鱗1;
 
-    	public Par X0Y0_尾30_鱗右_鱗2;
+    	public ShapePart X0Y0_尾30_鱗右_鱗2;
 
-    	public Par X0Y0_尾30_鱗右_鱗3;
+    	public ShapePart X0Y0_尾30_鱗右_鱗3;
 
-    	public Par X0Y0_尾30_鱗右_鱗4;
+    	public ShapePart X0Y0_尾30_鱗右_鱗4;
 
-    	public Par X0Y0_尾30_尾;
+    	public ShapePart X0Y0_尾30_尾;
 
-    	public Par X0Y0_尾29_鱗左_鱗1;
+    	public ShapePart X0Y0_尾29_鱗左_鱗1;
 
-    	public Par X0Y0_尾29_鱗左_鱗2;
+    	public ShapePart X0Y0_尾29_鱗左_鱗2;
 
-    	public Par X0Y0_尾29_鱗左_鱗3;
+    	public ShapePart X0Y0_尾29_鱗左_鱗3;
 
-    	public Par X0Y0_尾29_鱗左_鱗4;
+    	public ShapePart X0Y0_尾29_鱗左_鱗4;
 
-    	public Par X0Y0_尾29_鱗右_鱗1;
+    	public ShapePart X0Y0_尾29_鱗右_鱗1;
 
-    	public Par X0Y0_尾29_鱗右_鱗2;
+    	public ShapePart X0Y0_尾29_鱗右_鱗2;
 
-    	public Par X0Y0_尾29_鱗右_鱗3;
+    	public ShapePart X0Y0_尾29_鱗右_鱗3;
 
-    	public Par X0Y0_尾29_鱗右_鱗4;
+    	public ShapePart X0Y0_尾29_鱗右_鱗4;
 
-    	public Par X0Y0_尾29_尾;
+    	public ShapePart X0Y0_尾29_尾;
 
-    	public Par X0Y0_尾28_鱗左_鱗1;
+    	public ShapePart X0Y0_尾28_鱗左_鱗1;
 
-    	public Par X0Y0_尾28_鱗左_鱗2;
+    	public ShapePart X0Y0_尾28_鱗左_鱗2;
 
-    	public Par X0Y0_尾28_鱗左_鱗3;
+    	public ShapePart X0Y0_尾28_鱗左_鱗3;
 
-    	public Par X0Y0_尾28_鱗左_鱗4;
+    	public ShapePart X0Y0_尾28_鱗左_鱗4;
 
-    	public Par X0Y0_尾28_鱗右_鱗1;
+    	public ShapePart X0Y0_尾28_鱗右_鱗1;
 
-    	public Par X0Y0_尾28_鱗右_鱗2;
+    	public ShapePart X0Y0_尾28_鱗右_鱗2;
 
-    	public Par X0Y0_尾28_鱗右_鱗3;
+    	public ShapePart X0Y0_尾28_鱗右_鱗3;
 
-    	public Par X0Y0_尾28_鱗右_鱗4;
+    	public ShapePart X0Y0_尾28_鱗右_鱗4;
 
-    	public Par X0Y0_尾28_尾;
+    	public ShapePart X0Y0_尾28_尾;
 
-    	public Par X0Y0_尾27_鱗左_鱗1;
+    	public ShapePart X0Y0_尾27_鱗左_鱗1;
 
-    	public Par X0Y0_尾27_鱗左_鱗2;
+    	public ShapePart X0Y0_尾27_鱗左_鱗2;
 
-    	public Par X0Y0_尾27_鱗左_鱗3;
+    	public ShapePart X0Y0_尾27_鱗左_鱗3;
 
-    	public Par X0Y0_尾27_鱗左_鱗4;
+    	public ShapePart X0Y0_尾27_鱗左_鱗4;
 
-    	public Par X0Y0_尾27_鱗右_鱗1;
+    	public ShapePart X0Y0_尾27_鱗右_鱗1;
 
-    	public Par X0Y0_尾27_鱗右_鱗2;
+    	public ShapePart X0Y0_尾27_鱗右_鱗2;
 
-    	public Par X0Y0_尾27_鱗右_鱗3;
+    	public ShapePart X0Y0_尾27_鱗右_鱗3;
 
-    	public Par X0Y0_尾27_鱗右_鱗4;
+    	public ShapePart X0Y0_尾27_鱗右_鱗4;
 
-    	public Par X0Y0_尾27_尾;
+    	public ShapePart X0Y0_尾27_尾;
 
-    	public Par X0Y0_尾26_鱗左_鱗1;
+    	public ShapePart X0Y0_尾26_鱗左_鱗1;
 
-    	public Par X0Y0_尾26_鱗左_鱗2;
+    	public ShapePart X0Y0_尾26_鱗左_鱗2;
 
-    	public Par X0Y0_尾26_鱗左_鱗3;
+    	public ShapePart X0Y0_尾26_鱗左_鱗3;
 
-    	public Par X0Y0_尾26_鱗左_鱗4;
+    	public ShapePart X0Y0_尾26_鱗左_鱗4;
 
-    	public Par X0Y0_尾26_鱗右_鱗1;
+    	public ShapePart X0Y0_尾26_鱗右_鱗1;
 
-    	public Par X0Y0_尾26_鱗右_鱗2;
+    	public ShapePart X0Y0_尾26_鱗右_鱗2;
 
-    	public Par X0Y0_尾26_鱗右_鱗3;
+    	public ShapePart X0Y0_尾26_鱗右_鱗3;
 
-    	public Par X0Y0_尾26_鱗右_鱗4;
+    	public ShapePart X0Y0_尾26_鱗右_鱗4;
 
-    	public Par X0Y0_尾26_尾;
+    	public ShapePart X0Y0_尾26_尾;
 
-    	public Par X0Y0_尾25_鱗左_鱗1;
+    	public ShapePart X0Y0_尾25_鱗左_鱗1;
 
-    	public Par X0Y0_尾25_鱗左_鱗2;
+    	public ShapePart X0Y0_尾25_鱗左_鱗2;
 
-    	public Par X0Y0_尾25_鱗左_鱗3;
+    	public ShapePart X0Y0_尾25_鱗左_鱗3;
 
-    	public Par X0Y0_尾25_鱗左_鱗4;
+    	public ShapePart X0Y0_尾25_鱗左_鱗4;
 
-    	public Par X0Y0_尾25_鱗右_鱗1;
+    	public ShapePart X0Y0_尾25_鱗右_鱗1;
 
-    	public Par X0Y0_尾25_鱗右_鱗2;
+    	public ShapePart X0Y0_尾25_鱗右_鱗2;
 
-    	public Par X0Y0_尾25_鱗右_鱗3;
+    	public ShapePart X0Y0_尾25_鱗右_鱗3;
 
-    	public Par X0Y0_尾25_鱗右_鱗4;
+    	public ShapePart X0Y0_尾25_鱗右_鱗4;
 
-    	public Par X0Y0_尾25_尾;
+    	public ShapePart X0Y0_尾25_尾;
 
-    	public Par X0Y0_尾24_鱗左_鱗1;
+    	public ShapePart X0Y0_尾24_鱗左_鱗1;
 
-    	public Par X0Y0_尾24_鱗左_鱗2;
+    	public ShapePart X0Y0_尾24_鱗左_鱗2;
 
-    	public Par X0Y0_尾24_鱗左_鱗3;
+    	public ShapePart X0Y0_尾24_鱗左_鱗3;
 
-    	public Par X0Y0_尾24_鱗左_鱗4;
+    	public ShapePart X0Y0_尾24_鱗左_鱗4;
 
-    	public Par X0Y0_尾24_鱗右_鱗1;
+    	public ShapePart X0Y0_尾24_鱗右_鱗1;
 
-    	public Par X0Y0_尾24_鱗右_鱗2;
+    	public ShapePart X0Y0_尾24_鱗右_鱗2;
 
-    	public Par X0Y0_尾24_鱗右_鱗3;
+    	public ShapePart X0Y0_尾24_鱗右_鱗3;
 
-    	public Par X0Y0_尾24_鱗右_鱗4;
+    	public ShapePart X0Y0_尾24_鱗右_鱗4;
 
-    	public Par X0Y0_尾24_尾;
+    	public ShapePart X0Y0_尾24_尾;
 
-    	public Par X0Y0_尾23_鱗左_鱗1;
+    	public ShapePart X0Y0_尾23_鱗左_鱗1;
 
-    	public Par X0Y0_尾23_鱗左_鱗2;
+    	public ShapePart X0Y0_尾23_鱗左_鱗2;
 
-    	public Par X0Y0_尾23_鱗左_鱗3;
+    	public ShapePart X0Y0_尾23_鱗左_鱗3;
 
-    	public Par X0Y0_尾23_鱗左_鱗4;
+    	public ShapePart X0Y0_尾23_鱗左_鱗4;
 
-    	public Par X0Y0_尾23_鱗右_鱗1;
+    	public ShapePart X0Y0_尾23_鱗右_鱗1;
 
-    	public Par X0Y0_尾23_鱗右_鱗2;
+    	public ShapePart X0Y0_尾23_鱗右_鱗2;
 
-    	public Par X0Y0_尾23_鱗右_鱗3;
+    	public ShapePart X0Y0_尾23_鱗右_鱗3;
 
-    	public Par X0Y0_尾23_鱗右_鱗4;
+    	public ShapePart X0Y0_尾23_鱗右_鱗4;
 
-    	public Par X0Y0_尾23_尾;
+    	public ShapePart X0Y0_尾23_尾;
 
-    	public Par X0Y0_尾22_鱗左_鱗1;
+    	public ShapePart X0Y0_尾22_鱗左_鱗1;
 
-    	public Par X0Y0_尾22_鱗左_鱗2;
+    	public ShapePart X0Y0_尾22_鱗左_鱗2;
 
-    	public Par X0Y0_尾22_鱗左_鱗3;
+    	public ShapePart X0Y0_尾22_鱗左_鱗3;
 
-    	public Par X0Y0_尾22_鱗左_鱗4;
+    	public ShapePart X0Y0_尾22_鱗左_鱗4;
 
-    	public Par X0Y0_尾22_鱗右_鱗1;
+    	public ShapePart X0Y0_尾22_鱗右_鱗1;
 
-    	public Par X0Y0_尾22_鱗右_鱗2;
+    	public ShapePart X0Y0_尾22_鱗右_鱗2;
 
-    	public Par X0Y0_尾22_鱗右_鱗3;
+    	public ShapePart X0Y0_尾22_鱗右_鱗3;
 
-    	public Par X0Y0_尾22_鱗右_鱗4;
+    	public ShapePart X0Y0_尾22_鱗右_鱗4;
 
-    	public Par X0Y0_尾22_尾;
+    	public ShapePart X0Y0_尾22_尾;
 
-    	public Par X0Y0_尾21_鱗左_鱗1;
+    	public ShapePart X0Y0_尾21_鱗左_鱗1;
 
-    	public Par X0Y0_尾21_鱗左_鱗2;
+    	public ShapePart X0Y0_尾21_鱗左_鱗2;
 
-    	public Par X0Y0_尾21_鱗左_鱗3;
+    	public ShapePart X0Y0_尾21_鱗左_鱗3;
 
-    	public Par X0Y0_尾21_鱗左_鱗4;
+    	public ShapePart X0Y0_尾21_鱗左_鱗4;
 
-    	public Par X0Y0_尾21_鱗右_鱗1;
+    	public ShapePart X0Y0_尾21_鱗右_鱗1;
 
-    	public Par X0Y0_尾21_鱗右_鱗2;
+    	public ShapePart X0Y0_尾21_鱗右_鱗2;
 
-    	public Par X0Y0_尾21_鱗右_鱗3;
+    	public ShapePart X0Y0_尾21_鱗右_鱗3;
 
-    	public Par X0Y0_尾21_鱗右_鱗4;
+    	public ShapePart X0Y0_尾21_鱗右_鱗4;
 
-    	public Par X0Y0_尾21_尾;
+    	public ShapePart X0Y0_尾21_尾;
 
-    	public Par X0Y0_尾20_鱗左_鱗1;
+    	public ShapePart X0Y0_尾20_鱗左_鱗1;
 
-    	public Par X0Y0_尾20_鱗左_鱗2;
+    	public ShapePart X0Y0_尾20_鱗左_鱗2;
 
-    	public Par X0Y0_尾20_鱗左_鱗3;
+    	public ShapePart X0Y0_尾20_鱗左_鱗3;
 
-    	public Par X0Y0_尾20_鱗左_鱗4;
+    	public ShapePart X0Y0_尾20_鱗左_鱗4;
 
-    	public Par X0Y0_尾20_鱗右_鱗1;
+    	public ShapePart X0Y0_尾20_鱗右_鱗1;
 
-    	public Par X0Y0_尾20_鱗右_鱗2;
+    	public ShapePart X0Y0_尾20_鱗右_鱗2;
 
-    	public Par X0Y0_尾20_鱗右_鱗3;
+    	public ShapePart X0Y0_尾20_鱗右_鱗3;
 
-    	public Par X0Y0_尾20_鱗右_鱗4;
+    	public ShapePart X0Y0_尾20_鱗右_鱗4;
 
-    	public Par X0Y0_尾20_尾;
+    	public ShapePart X0Y0_尾20_尾;
 
-    	public Par X0Y0_尾19_鱗左_鱗1;
+    	public ShapePart X0Y0_尾19_鱗左_鱗1;
 
-    	public Par X0Y0_尾19_鱗左_鱗2;
+    	public ShapePart X0Y0_尾19_鱗左_鱗2;
 
-    	public Par X0Y0_尾19_鱗左_鱗3;
+    	public ShapePart X0Y0_尾19_鱗左_鱗3;
 
-    	public Par X0Y0_尾19_鱗左_鱗4;
+    	public ShapePart X0Y0_尾19_鱗左_鱗4;
 
-    	public Par X0Y0_尾19_鱗右_鱗1;
+    	public ShapePart X0Y0_尾19_鱗右_鱗1;
 
-    	public Par X0Y0_尾19_鱗右_鱗2;
+    	public ShapePart X0Y0_尾19_鱗右_鱗2;
 
-    	public Par X0Y0_尾19_鱗右_鱗3;
+    	public ShapePart X0Y0_尾19_鱗右_鱗3;
 
-    	public Par X0Y0_尾19_鱗右_鱗4;
+    	public ShapePart X0Y0_尾19_鱗右_鱗4;
 
-    	public Par X0Y0_尾19_尾;
+    	public ShapePart X0Y0_尾19_尾;
 
-    	public Par X0Y0_尾18_鱗左_鱗1;
+    	public ShapePart X0Y0_尾18_鱗左_鱗1;
 
-    	public Par X0Y0_尾18_鱗左_鱗2;
+    	public ShapePart X0Y0_尾18_鱗左_鱗2;
 
-    	public Par X0Y0_尾18_鱗左_鱗3;
+    	public ShapePart X0Y0_尾18_鱗左_鱗3;
 
-    	public Par X0Y0_尾18_鱗左_鱗4;
+    	public ShapePart X0Y0_尾18_鱗左_鱗4;
 
-    	public Par X0Y0_尾18_鱗右_鱗1;
+    	public ShapePart X0Y0_尾18_鱗右_鱗1;
 
-    	public Par X0Y0_尾18_鱗右_鱗2;
+    	public ShapePart X0Y0_尾18_鱗右_鱗2;
 
-    	public Par X0Y0_尾18_鱗右_鱗3;
+    	public ShapePart X0Y0_尾18_鱗右_鱗3;
 
-    	public Par X0Y0_尾18_鱗右_鱗4;
+    	public ShapePart X0Y0_尾18_鱗右_鱗4;
 
-    	public Par X0Y0_尾18_尾;
+    	public ShapePart X0Y0_尾18_尾;
 
-    	public Par X0Y0_尾17_鱗左_鱗1;
+    	public ShapePart X0Y0_尾17_鱗左_鱗1;
 
-    	public Par X0Y0_尾17_鱗左_鱗2;
+    	public ShapePart X0Y0_尾17_鱗左_鱗2;
 
-    	public Par X0Y0_尾17_鱗左_鱗3;
+    	public ShapePart X0Y0_尾17_鱗左_鱗3;
 
-    	public Par X0Y0_尾17_鱗左_鱗4;
+    	public ShapePart X0Y0_尾17_鱗左_鱗4;
 
-    	public Par X0Y0_尾17_鱗右_鱗1;
+    	public ShapePart X0Y0_尾17_鱗右_鱗1;
 
-    	public Par X0Y0_尾17_鱗右_鱗2;
+    	public ShapePart X0Y0_尾17_鱗右_鱗2;
 
-    	public Par X0Y0_尾17_鱗右_鱗3;
+    	public ShapePart X0Y0_尾17_鱗右_鱗3;
 
-    	public Par X0Y0_尾17_鱗右_鱗4;
+    	public ShapePart X0Y0_尾17_鱗右_鱗4;
 
-    	public Par X0Y0_尾17_尾;
+    	public ShapePart X0Y0_尾17_尾;
 
-    	public Par X0Y0_尾16_鱗左_鱗1;
+    	public ShapePart X0Y0_尾16_鱗左_鱗1;
 
-    	public Par X0Y0_尾16_鱗左_鱗2;
+    	public ShapePart X0Y0_尾16_鱗左_鱗2;
 
-    	public Par X0Y0_尾16_鱗左_鱗3;
+    	public ShapePart X0Y0_尾16_鱗左_鱗3;
 
-    	public Par X0Y0_尾16_鱗左_鱗4;
+    	public ShapePart X0Y0_尾16_鱗左_鱗4;
 
-    	public Par X0Y0_尾16_鱗右_鱗1;
+    	public ShapePart X0Y0_尾16_鱗右_鱗1;
 
-    	public Par X0Y0_尾16_鱗右_鱗2;
+    	public ShapePart X0Y0_尾16_鱗右_鱗2;
 
-    	public Par X0Y0_尾16_鱗右_鱗3;
+    	public ShapePart X0Y0_尾16_鱗右_鱗3;
 
-    	public Par X0Y0_尾16_鱗右_鱗4;
+    	public ShapePart X0Y0_尾16_鱗右_鱗4;
 
-    	public Par X0Y0_尾16_尾;
+    	public ShapePart X0Y0_尾16_尾;
 
-    	public Par X0Y0_尾15_鱗左_鱗1;
+    	public ShapePart X0Y0_尾15_鱗左_鱗1;
 
-    	public Par X0Y0_尾15_鱗左_鱗2;
+    	public ShapePart X0Y0_尾15_鱗左_鱗2;
 
-    	public Par X0Y0_尾15_鱗左_鱗3;
+    	public ShapePart X0Y0_尾15_鱗左_鱗3;
 
-    	public Par X0Y0_尾15_鱗左_鱗4;
+    	public ShapePart X0Y0_尾15_鱗左_鱗4;
 
-    	public Par X0Y0_尾15_鱗右_鱗1;
+    	public ShapePart X0Y0_尾15_鱗右_鱗1;
 
-    	public Par X0Y0_尾15_鱗右_鱗2;
+    	public ShapePart X0Y0_尾15_鱗右_鱗2;
 
-    	public Par X0Y0_尾15_鱗右_鱗3;
+    	public ShapePart X0Y0_尾15_鱗右_鱗3;
 
-    	public Par X0Y0_尾15_鱗右_鱗4;
+    	public ShapePart X0Y0_尾15_鱗右_鱗4;
 
-    	public Par X0Y0_尾15_尾;
+    	public ShapePart X0Y0_尾15_尾;
 
-    	public Par X0Y0_尾14_鱗左_鱗1;
+    	public ShapePart X0Y0_尾14_鱗左_鱗1;
 
-    	public Par X0Y0_尾14_鱗左_鱗2;
+    	public ShapePart X0Y0_尾14_鱗左_鱗2;
 
-    	public Par X0Y0_尾14_鱗左_鱗3;
+    	public ShapePart X0Y0_尾14_鱗左_鱗3;
 
-    	public Par X0Y0_尾14_鱗左_鱗4;
+    	public ShapePart X0Y0_尾14_鱗左_鱗4;
 
-    	public Par X0Y0_尾14_鱗右_鱗1;
+    	public ShapePart X0Y0_尾14_鱗右_鱗1;
 
-    	public Par X0Y0_尾14_鱗右_鱗2;
+    	public ShapePart X0Y0_尾14_鱗右_鱗2;
 
-    	public Par X0Y0_尾14_鱗右_鱗3;
+    	public ShapePart X0Y0_尾14_鱗右_鱗3;
 
-    	public Par X0Y0_尾14_鱗右_鱗4;
+    	public ShapePart X0Y0_尾14_鱗右_鱗4;
 
-    	public Par X0Y0_尾14_尾;
+    	public ShapePart X0Y0_尾14_尾;
 
-    	public Par X0Y0_尾13_鱗左_鱗1;
+    	public ShapePart X0Y0_尾13_鱗左_鱗1;
 
-    	public Par X0Y0_尾13_鱗左_鱗2;
+    	public ShapePart X0Y0_尾13_鱗左_鱗2;
 
-    	public Par X0Y0_尾13_鱗左_鱗3;
+    	public ShapePart X0Y0_尾13_鱗左_鱗3;
 
-    	public Par X0Y0_尾13_鱗左_鱗4;
+    	public ShapePart X0Y0_尾13_鱗左_鱗4;
 
-    	public Par X0Y0_尾13_鱗右_鱗1;
+    	public ShapePart X0Y0_尾13_鱗右_鱗1;
 
-    	public Par X0Y0_尾13_鱗右_鱗2;
+    	public ShapePart X0Y0_尾13_鱗右_鱗2;
 
-    	public Par X0Y0_尾13_鱗右_鱗3;
+    	public ShapePart X0Y0_尾13_鱗右_鱗3;
 
-    	public Par X0Y0_尾13_鱗右_鱗4;
+    	public ShapePart X0Y0_尾13_鱗右_鱗4;
 
-    	public Par X0Y0_尾13_尾;
+    	public ShapePart X0Y0_尾13_尾;
 
-    	public Par X0Y0_尾12_鱗左_鱗1;
+    	public ShapePart X0Y0_尾12_鱗左_鱗1;
 
-    	public Par X0Y0_尾12_鱗左_鱗2;
+    	public ShapePart X0Y0_尾12_鱗左_鱗2;
 
-    	public Par X0Y0_尾12_鱗左_鱗3;
+    	public ShapePart X0Y0_尾12_鱗左_鱗3;
 
-    	public Par X0Y0_尾12_鱗左_鱗4;
+    	public ShapePart X0Y0_尾12_鱗左_鱗4;
 
-    	public Par X0Y0_尾12_鱗右_鱗1;
+    	public ShapePart X0Y0_尾12_鱗右_鱗1;
 
-    	public Par X0Y0_尾12_鱗右_鱗2;
+    	public ShapePart X0Y0_尾12_鱗右_鱗2;
 
-    	public Par X0Y0_尾12_鱗右_鱗3;
+    	public ShapePart X0Y0_尾12_鱗右_鱗3;
 
-    	public Par X0Y0_尾12_鱗右_鱗4;
+    	public ShapePart X0Y0_尾12_鱗右_鱗4;
 
-    	public Par X0Y0_尾12_尾;
+    	public ShapePart X0Y0_尾12_尾;
 
-    	public Par X0Y0_尾11_鱗左_鱗1;
+    	public ShapePart X0Y0_尾11_鱗左_鱗1;
 
-    	public Par X0Y0_尾11_鱗左_鱗2;
+    	public ShapePart X0Y0_尾11_鱗左_鱗2;
 
-    	public Par X0Y0_尾11_鱗左_鱗3;
+    	public ShapePart X0Y0_尾11_鱗左_鱗3;
 
-    	public Par X0Y0_尾11_鱗左_鱗4;
+    	public ShapePart X0Y0_尾11_鱗左_鱗4;
 
-    	public Par X0Y0_尾11_鱗右_鱗1;
+    	public ShapePart X0Y0_尾11_鱗右_鱗1;
 
-    	public Par X0Y0_尾11_鱗右_鱗2;
+    	public ShapePart X0Y0_尾11_鱗右_鱗2;
 
-    	public Par X0Y0_尾11_鱗右_鱗3;
+    	public ShapePart X0Y0_尾11_鱗右_鱗3;
 
-    	public Par X0Y0_尾11_鱗右_鱗4;
+    	public ShapePart X0Y0_尾11_鱗右_鱗4;
 
-    	public Par X0Y0_尾11_尾;
+    	public ShapePart X0Y0_尾11_尾;
 
-    	public Par X0Y0_尾10_鱗左_鱗1;
+    	public ShapePart X0Y0_尾10_鱗左_鱗1;
 
-    	public Par X0Y0_尾10_鱗左_鱗2;
+    	public ShapePart X0Y0_尾10_鱗左_鱗2;
 
-    	public Par X0Y0_尾10_鱗左_鱗3;
+    	public ShapePart X0Y0_尾10_鱗左_鱗3;
 
-    	public Par X0Y0_尾10_鱗左_鱗4;
+    	public ShapePart X0Y0_尾10_鱗左_鱗4;
 
-    	public Par X0Y0_尾10_鱗右_鱗1;
+    	public ShapePart X0Y0_尾10_鱗右_鱗1;
 
-    	public Par X0Y0_尾10_鱗右_鱗2;
+    	public ShapePart X0Y0_尾10_鱗右_鱗2;
 
-    	public Par X0Y0_尾10_鱗右_鱗3;
+    	public ShapePart X0Y0_尾10_鱗右_鱗3;
 
-    	public Par X0Y0_尾10_鱗右_鱗4;
+    	public ShapePart X0Y0_尾10_鱗右_鱗4;
 
-    	public Par X0Y0_尾10_尾;
+    	public ShapePart X0Y0_尾10_尾;
 
-    	public Par X0Y0_尾9_鱗左_鱗1;
+    	public ShapePart X0Y0_尾9_鱗左_鱗1;
 
-    	public Par X0Y0_尾9_鱗左_鱗2;
+    	public ShapePart X0Y0_尾9_鱗左_鱗2;
 
-    	public Par X0Y0_尾9_鱗左_鱗3;
+    	public ShapePart X0Y0_尾9_鱗左_鱗3;
 
-    	public Par X0Y0_尾9_鱗左_鱗4;
+    	public ShapePart X0Y0_尾9_鱗左_鱗4;
 
-    	public Par X0Y0_尾9_鱗右_鱗1;
+    	public ShapePart X0Y0_尾9_鱗右_鱗1;
 
-    	public Par X0Y0_尾9_鱗右_鱗2;
+    	public ShapePart X0Y0_尾9_鱗右_鱗2;
 
-    	public Par X0Y0_尾9_鱗右_鱗3;
+    	public ShapePart X0Y0_尾9_鱗右_鱗3;
 
-    	public Par X0Y0_尾9_鱗右_鱗4;
+    	public ShapePart X0Y0_尾9_鱗右_鱗4;
 
-    	public Par X0Y0_尾9_尾;
+    	public ShapePart X0Y0_尾9_尾;
 
-    	public Par X0Y0_尾8_鱗左_鱗1;
+    	public ShapePart X0Y0_尾8_鱗左_鱗1;
 
-    	public Par X0Y0_尾8_鱗左_鱗2;
+    	public ShapePart X0Y0_尾8_鱗左_鱗2;
 
-    	public Par X0Y0_尾8_鱗左_鱗3;
+    	public ShapePart X0Y0_尾8_鱗左_鱗3;
 
-    	public Par X0Y0_尾8_鱗左_鱗4;
+    	public ShapePart X0Y0_尾8_鱗左_鱗4;
 
-    	public Par X0Y0_尾8_鱗右_鱗1;
+    	public ShapePart X0Y0_尾8_鱗右_鱗1;
 
-    	public Par X0Y0_尾8_鱗右_鱗2;
+    	public ShapePart X0Y0_尾8_鱗右_鱗2;
 
-    	public Par X0Y0_尾8_鱗右_鱗3;
+    	public ShapePart X0Y0_尾8_鱗右_鱗3;
 
-    	public Par X0Y0_尾8_鱗右_鱗4;
+    	public ShapePart X0Y0_尾8_鱗右_鱗4;
 
-    	public Par X0Y0_尾8_尾;
+    	public ShapePart X0Y0_尾8_尾;
 
-    	public Par X0Y0_尾7_鱗左_鱗1;
+    	public ShapePart X0Y0_尾7_鱗左_鱗1;
 
-    	public Par X0Y0_尾7_鱗左_鱗2;
+    	public ShapePart X0Y0_尾7_鱗左_鱗2;
 
-    	public Par X0Y0_尾7_鱗左_鱗3;
+    	public ShapePart X0Y0_尾7_鱗左_鱗3;
 
-    	public Par X0Y0_尾7_鱗左_鱗4;
+    	public ShapePart X0Y0_尾7_鱗左_鱗4;
 
-    	public Par X0Y0_尾7_鱗右_鱗1;
+    	public ShapePart X0Y0_尾7_鱗右_鱗1;
 
-    	public Par X0Y0_尾7_鱗右_鱗2;
+    	public ShapePart X0Y0_尾7_鱗右_鱗2;
 
-    	public Par X0Y0_尾7_鱗右_鱗3;
+    	public ShapePart X0Y0_尾7_鱗右_鱗3;
 
-    	public Par X0Y0_尾7_鱗右_鱗4;
+    	public ShapePart X0Y0_尾7_鱗右_鱗4;
 
-    	public Par X0Y0_尾7_尾;
+    	public ShapePart X0Y0_尾7_尾;
 
-    	public Par X0Y0_尾6_鱗左_鱗1;
+    	public ShapePart X0Y0_尾6_鱗左_鱗1;
 
-    	public Par X0Y0_尾6_鱗左_鱗2;
+    	public ShapePart X0Y0_尾6_鱗左_鱗2;
 
-    	public Par X0Y0_尾6_鱗左_鱗3;
+    	public ShapePart X0Y0_尾6_鱗左_鱗3;
 
-    	public Par X0Y0_尾6_鱗左_鱗4;
+    	public ShapePart X0Y0_尾6_鱗左_鱗4;
 
-    	public Par X0Y0_尾6_鱗右_鱗1;
+    	public ShapePart X0Y0_尾6_鱗右_鱗1;
 
-    	public Par X0Y0_尾6_鱗右_鱗2;
+    	public ShapePart X0Y0_尾6_鱗右_鱗2;
 
-    	public Par X0Y0_尾6_鱗右_鱗3;
+    	public ShapePart X0Y0_尾6_鱗右_鱗3;
 
-    	public Par X0Y0_尾6_鱗右_鱗4;
+    	public ShapePart X0Y0_尾6_鱗右_鱗4;
 
-    	public Par X0Y0_尾6_尾;
+    	public ShapePart X0Y0_尾6_尾;
 
-    	public Par X0Y0_尾5_鱗左_鱗1;
+    	public ShapePart X0Y0_尾5_鱗左_鱗1;
 
-    	public Par X0Y0_尾5_鱗左_鱗2;
+    	public ShapePart X0Y0_尾5_鱗左_鱗2;
 
-    	public Par X0Y0_尾5_鱗左_鱗3;
+    	public ShapePart X0Y0_尾5_鱗左_鱗3;
 
-    	public Par X0Y0_尾5_鱗左_鱗4;
+    	public ShapePart X0Y0_尾5_鱗左_鱗4;
 
-    	public Par X0Y0_尾5_鱗右_鱗1;
+    	public ShapePart X0Y0_尾5_鱗右_鱗1;
 
-    	public Par X0Y0_尾5_鱗右_鱗2;
+    	public ShapePart X0Y0_尾5_鱗右_鱗2;
 
-    	public Par X0Y0_尾5_鱗右_鱗3;
+    	public ShapePart X0Y0_尾5_鱗右_鱗3;
 
-    	public Par X0Y0_尾5_鱗右_鱗4;
+    	public ShapePart X0Y0_尾5_鱗右_鱗4;
 
-    	public Par X0Y0_尾5_尾;
+    	public ShapePart X0Y0_尾5_尾;
 
-    	public Par X0Y0_尾4_鱗左_鱗1;
+    	public ShapePart X0Y0_尾4_鱗左_鱗1;
 
-    	public Par X0Y0_尾4_鱗左_鱗2;
+    	public ShapePart X0Y0_尾4_鱗左_鱗2;
 
-    	public Par X0Y0_尾4_鱗左_鱗3;
+    	public ShapePart X0Y0_尾4_鱗左_鱗3;
 
-    	public Par X0Y0_尾4_鱗左_鱗4;
+    	public ShapePart X0Y0_尾4_鱗左_鱗4;
 
-    	public Par X0Y0_尾4_鱗右_鱗1;
+    	public ShapePart X0Y0_尾4_鱗右_鱗1;
 
-    	public Par X0Y0_尾4_鱗右_鱗2;
+    	public ShapePart X0Y0_尾4_鱗右_鱗2;
 
-    	public Par X0Y0_尾4_鱗右_鱗3;
+    	public ShapePart X0Y0_尾4_鱗右_鱗3;
 
-    	public Par X0Y0_尾4_鱗右_鱗4;
+    	public ShapePart X0Y0_尾4_鱗右_鱗4;
 
-    	public Par X0Y0_尾4_尾;
+    	public ShapePart X0Y0_尾4_尾;
 
-    	public Par X0Y0_輪_革;
+    	public ShapePart X0Y0_輪_革;
 
-    	public Par X0Y0_輪_金具1;
+    	public ShapePart X0Y0_輪_金具1;
 
-    	public Par X0Y0_輪_金具2;
+    	public ShapePart X0Y0_輪_金具2;
 
-    	public Par X0Y0_輪_金具3;
+    	public ShapePart X0Y0_輪_金具3;
 
-    	public Par X0Y0_輪_金具左;
+    	public ShapePart X0Y0_輪_金具左;
 
-    	public Par X0Y0_輪_金具右;
+    	public ShapePart X0Y0_輪_金具右;
 
-    	public Par X0Y0_尾3_鱗左_鱗1;
+    	public ShapePart X0Y0_尾3_鱗左_鱗1;
 
-    	public Par X0Y0_尾3_鱗左_鱗2;
+    	public ShapePart X0Y0_尾3_鱗左_鱗2;
 
-    	public Par X0Y0_尾3_鱗左_鱗3;
+    	public ShapePart X0Y0_尾3_鱗左_鱗3;
 
-    	public Par X0Y0_尾3_鱗左_鱗4;
+    	public ShapePart X0Y0_尾3_鱗左_鱗4;
 
-    	public Par X0Y0_尾3_鱗右_鱗1;
+    	public ShapePart X0Y0_尾3_鱗右_鱗1;
 
-    	public Par X0Y0_尾3_鱗右_鱗2;
+    	public ShapePart X0Y0_尾3_鱗右_鱗2;
 
-    	public Par X0Y0_尾3_鱗右_鱗3;
+    	public ShapePart X0Y0_尾3_鱗右_鱗3;
 
-    	public Par X0Y0_尾3_鱗右_鱗4;
+    	public ShapePart X0Y0_尾3_鱗右_鱗4;
 
-    	public Par X0Y0_尾3_尾;
+    	public ShapePart X0Y0_尾3_尾;
 
-    	public Par X0Y0_尾2_鱗左_鱗1;
+    	public ShapePart X0Y0_尾2_鱗左_鱗1;
 
-    	public Par X0Y0_尾2_鱗左_鱗2;
+    	public ShapePart X0Y0_尾2_鱗左_鱗2;
 
-    	public Par X0Y0_尾2_鱗左_鱗3;
+    	public ShapePart X0Y0_尾2_鱗左_鱗3;
 
-    	public Par X0Y0_尾2_鱗左_鱗4;
+    	public ShapePart X0Y0_尾2_鱗左_鱗4;
 
-    	public Par X0Y0_尾2_鱗右_鱗1;
+    	public ShapePart X0Y0_尾2_鱗右_鱗1;
 
-    	public Par X0Y0_尾2_鱗右_鱗2;
+    	public ShapePart X0Y0_尾2_鱗右_鱗2;
 
-    	public Par X0Y0_尾2_鱗右_鱗3;
+    	public ShapePart X0Y0_尾2_鱗右_鱗3;
 
-    	public Par X0Y0_尾2_鱗右_鱗4;
+    	public ShapePart X0Y0_尾2_鱗右_鱗4;
 
-    	public Par X0Y0_尾2_尾;
+    	public ShapePart X0Y0_尾2_尾;
 
-    	public Par X0Y0_尾1_鱗左_鱗1;
+    	public ShapePart X0Y0_尾1_鱗左_鱗1;
 
-    	public Par X0Y0_尾1_鱗左_鱗2;
+    	public ShapePart X0Y0_尾1_鱗左_鱗2;
 
-    	public Par X0Y0_尾1_鱗左_鱗3;
+    	public ShapePart X0Y0_尾1_鱗左_鱗3;
 
-    	public Par X0Y0_尾1_鱗左_鱗4;
+    	public ShapePart X0Y0_尾1_鱗左_鱗4;
 
-    	public Par X0Y0_尾1_鱗右_鱗1;
+    	public ShapePart X0Y0_尾1_鱗右_鱗1;
 
-    	public Par X0Y0_尾1_鱗右_鱗2;
+    	public ShapePart X0Y0_尾1_鱗右_鱗2;
 
-    	public Par X0Y0_尾1_鱗右_鱗3;
+    	public ShapePart X0Y0_尾1_鱗右_鱗3;
 
-    	public Par X0Y0_尾1_鱗右_鱗4;
+    	public ShapePart X0Y0_尾1_鱗右_鱗4;
 
-    	public Par X0Y0_尾1_尾;
+    	public ShapePart X0Y0_尾1_尾;
 
-    	public Par X0Y0_尾0_鱗左_鱗1;
+    	public ShapePart X0Y0_尾0_鱗左_鱗1;
 
-    	public Par X0Y0_尾0_鱗左_鱗2;
+    	public ShapePart X0Y0_尾0_鱗左_鱗2;
 
-    	public Par X0Y0_尾0_鱗左_鱗3;
+    	public ShapePart X0Y0_尾0_鱗左_鱗3;
 
-    	public Par X0Y0_尾0_鱗左_鱗4;
+    	public ShapePart X0Y0_尾0_鱗左_鱗4;
 
-    	public Par X0Y0_尾0_鱗右_鱗1;
+    	public ShapePart X0Y0_尾0_鱗右_鱗1;
 
-    	public Par X0Y0_尾0_鱗右_鱗2;
+    	public ShapePart X0Y0_尾0_鱗右_鱗2;
 
-    	public Par X0Y0_尾0_鱗右_鱗3;
+    	public ShapePart X0Y0_尾0_鱗右_鱗3;
 
-    	public Par X0Y0_尾0_鱗右_鱗4;
+    	public ShapePart X0Y0_尾0_鱗右_鱗4;
 
-    	public Par X0Y0_尾0_尾;
+    	public ShapePart X0Y0_尾0_尾;
 
     	public ColorD 尾33_鱗左_鱗1CD;
 
@@ -9954,7 +9954,7 @@ namespace SlaveMatrix
     		鎖2.Dispose();
     	}
 
-    	public override bool Is革(Par p)
+    	public override bool Is革(ShapePart p)
     	{
     		if (p != X0Y0_輪_革 && p != X0Y0_輪_金具1 && p != X0Y0_輪_金具2 && p != X0Y0_輪_金具3 && p != X0Y0_輪_金具左)
     		{
@@ -9963,7 +9963,7 @@ namespace SlaveMatrix
     		return true;
     	}
 
-    	public override IEnumerable<Par> Enum軸()
+    	public override IEnumerable<ShapePart> Enum軸()
     	{
     		yield return X0Y0_尾0_尾;
     		yield return X0Y0_尾1_尾;

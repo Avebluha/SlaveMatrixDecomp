@@ -4,7 +4,7 @@ namespace SlaveMatrix
 {
     public class ピアス : Ele
     {
-    	public Par X0Y0_ピアス;
+    	public ShapePart X0Y0_ピアス;
 
     	public ColorD ピアスCD;
 

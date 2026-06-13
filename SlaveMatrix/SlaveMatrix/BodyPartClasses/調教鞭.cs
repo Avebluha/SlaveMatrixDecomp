@@ -4,241 +4,241 @@ namespace SlaveMatrix
 {
     public class 調教鞭 : Ele
     {
-    	public Par X0Y0_先;
+    	public ShapePart X0Y0_先;
 
-    	public Par X0Y0_柄;
+    	public ShapePart X0Y0_柄;
 
-    	public Par X0Y0_線1;
+    	public ShapePart X0Y0_線1;
 
-    	public Par X0Y0_線2;
+    	public ShapePart X0Y0_線2;
 
-    	public Par X0Y0_線3;
+    	public ShapePart X0Y0_線3;
 
-    	public Par X0Y0_線4;
+    	public ShapePart X0Y0_線4;
 
-    	public Par X0Y0_線5;
+    	public ShapePart X0Y0_線5;
 
-    	public Par X0Y0_線6;
+    	public ShapePart X0Y0_線6;
 
-    	public Par X0Y0_線7;
+    	public ShapePart X0Y0_線7;
 
-    	public Par X0Y0_線8;
+    	public ShapePart X0Y0_線8;
 
-    	public Par X0Y0_紐;
+    	public ShapePart X0Y0_紐;
 
-    	public Par X0Y1_先;
+    	public ShapePart X0Y1_先;
 
-    	public Par X0Y1_柄;
+    	public ShapePart X0Y1_柄;
 
-    	public Par X0Y1_線1;
+    	public ShapePart X0Y1_線1;
 
-    	public Par X0Y1_線2;
+    	public ShapePart X0Y1_線2;
 
-    	public Par X0Y1_線3;
+    	public ShapePart X0Y1_線3;
 
-    	public Par X0Y1_線4;
+    	public ShapePart X0Y1_線4;
 
-    	public Par X0Y1_線5;
+    	public ShapePart X0Y1_線5;
 
-    	public Par X0Y1_線6;
+    	public ShapePart X0Y1_線6;
 
-    	public Par X0Y1_線7;
+    	public ShapePart X0Y1_線7;
 
-    	public Par X0Y1_線8;
+    	public ShapePart X0Y1_線8;
 
-    	public Par X0Y1_紐;
+    	public ShapePart X0Y1_紐;
 
-    	public Par X0Y2_先;
+    	public ShapePart X0Y2_先;
 
-    	public Par X0Y2_柄;
+    	public ShapePart X0Y2_柄;
 
-    	public Par X0Y2_線1;
+    	public ShapePart X0Y2_線1;
 
-    	public Par X0Y2_線2;
+    	public ShapePart X0Y2_線2;
 
-    	public Par X0Y2_線3;
+    	public ShapePart X0Y2_線3;
 
-    	public Par X0Y2_線4;
+    	public ShapePart X0Y2_線4;
 
-    	public Par X0Y2_線5;
+    	public ShapePart X0Y2_線5;
 
-    	public Par X0Y2_線6;
+    	public ShapePart X0Y2_線6;
 
-    	public Par X0Y2_線7;
+    	public ShapePart X0Y2_線7;
 
-    	public Par X0Y2_線8;
+    	public ShapePart X0Y2_線8;
 
-    	public Par X0Y2_紐;
+    	public ShapePart X0Y2_紐;
 
-    	public Par X0Y3_先;
+    	public ShapePart X0Y3_先;
 
-    	public Par X0Y3_柄;
+    	public ShapePart X0Y3_柄;
 
-    	public Par X0Y3_線1;
+    	public ShapePart X0Y3_線1;
 
-    	public Par X0Y3_線2;
+    	public ShapePart X0Y3_線2;
 
-    	public Par X0Y3_線3;
+    	public ShapePart X0Y3_線3;
 
-    	public Par X0Y3_線4;
+    	public ShapePart X0Y3_線4;
 
-    	public Par X0Y3_線5;
+    	public ShapePart X0Y3_線5;
 
-    	public Par X0Y3_線6;
+    	public ShapePart X0Y3_線6;
 
-    	public Par X0Y3_線7;
+    	public ShapePart X0Y3_線7;
 
-    	public Par X0Y3_線8;
+    	public ShapePart X0Y3_線8;
 
-    	public Par X0Y3_紐;
+    	public ShapePart X0Y3_紐;
 
-    	public Par X0Y4_先;
+    	public ShapePart X0Y4_先;
 
-    	public Par X0Y4_柄;
+    	public ShapePart X0Y4_柄;
 
-    	public Par X0Y4_線1;
+    	public ShapePart X0Y4_線1;
 
-    	public Par X0Y4_線2;
+    	public ShapePart X0Y4_線2;
 
-    	public Par X0Y4_線3;
+    	public ShapePart X0Y4_線3;
 
-    	public Par X0Y4_線4;
+    	public ShapePart X0Y4_線4;
 
-    	public Par X0Y4_線5;
+    	public ShapePart X0Y4_線5;
 
-    	public Par X0Y4_線6;
+    	public ShapePart X0Y4_線6;
 
-    	public Par X0Y4_線7;
+    	public ShapePart X0Y4_線7;
 
-    	public Par X0Y4_線8;
+    	public ShapePart X0Y4_線8;
 
-    	public Par X0Y4_紐;
+    	public ShapePart X0Y4_紐;
 
-    	public Par X1Y0_先;
+    	public ShapePart X1Y0_先;
 
-    	public Par X1Y0_柄;
+    	public ShapePart X1Y0_柄;
 
-    	public Par X1Y0_線1;
+    	public ShapePart X1Y0_線1;
 
-    	public Par X1Y0_線2;
+    	public ShapePart X1Y0_線2;
 
-    	public Par X1Y0_線3;
+    	public ShapePart X1Y0_線3;
 
-    	public Par X1Y0_線4;
+    	public ShapePart X1Y0_線4;
 
-    	public Par X1Y0_線5;
+    	public ShapePart X1Y0_線5;
 
-    	public Par X1Y0_線6;
+    	public ShapePart X1Y0_線6;
 
-    	public Par X1Y0_線7;
+    	public ShapePart X1Y0_線7;
 
-    	public Par X1Y0_線8;
+    	public ShapePart X1Y0_線8;
 
-    	public Par X1Y0_紐;
+    	public ShapePart X1Y0_紐;
 
-    	public Par X1Y0_鞭撃エフェクト1;
+    	public ShapePart X1Y0_鞭撃エフェクト1;
 
-    	public Par X1Y0_鞭撃エフェクト2;
+    	public ShapePart X1Y0_鞭撃エフェクト2;
 
-    	public Par X1Y1_先;
+    	public ShapePart X1Y1_先;
 
-    	public Par X1Y1_柄;
+    	public ShapePart X1Y1_柄;
 
-    	public Par X1Y1_線1;
+    	public ShapePart X1Y1_線1;
 
-    	public Par X1Y1_線2;
+    	public ShapePart X1Y1_線2;
 
-    	public Par X1Y1_線3;
+    	public ShapePart X1Y1_線3;
 
-    	public Par X1Y1_線4;
+    	public ShapePart X1Y1_線4;
 
-    	public Par X1Y1_線5;
+    	public ShapePart X1Y1_線5;
 
-    	public Par X1Y1_線6;
+    	public ShapePart X1Y1_線6;
 
-    	public Par X1Y1_線7;
+    	public ShapePart X1Y1_線7;
 
-    	public Par X1Y1_線8;
+    	public ShapePart X1Y1_線8;
 
-    	public Par X1Y1_紐;
+    	public ShapePart X1Y1_紐;
 
-    	public Par X1Y1_鞭撃エフェクト1;
+    	public ShapePart X1Y1_鞭撃エフェクト1;
 
-    	public Par X1Y1_鞭撃エフェクト2;
+    	public ShapePart X1Y1_鞭撃エフェクト2;
 
-    	public Par X1Y2_先;
+    	public ShapePart X1Y2_先;
 
-    	public Par X1Y2_柄;
+    	public ShapePart X1Y2_柄;
 
-    	public Par X1Y2_線1;
+    	public ShapePart X1Y2_線1;
 
-    	public Par X1Y2_線2;
+    	public ShapePart X1Y2_線2;
 
-    	public Par X1Y2_線3;
+    	public ShapePart X1Y2_線3;
 
-    	public Par X1Y2_線4;
+    	public ShapePart X1Y2_線4;
 
-    	public Par X1Y2_線5;
+    	public ShapePart X1Y2_線5;
 
-    	public Par X1Y2_線6;
+    	public ShapePart X1Y2_線6;
 
-    	public Par X1Y2_線7;
+    	public ShapePart X1Y2_線7;
 
-    	public Par X1Y2_線8;
+    	public ShapePart X1Y2_線8;
 
-    	public Par X1Y2_紐;
+    	public ShapePart X1Y2_紐;
 
-    	public Par X1Y2_鞭撃エフェクト1;
+    	public ShapePart X1Y2_鞭撃エフェクト1;
 
-    	public Par X1Y2_鞭撃エフェクト2;
+    	public ShapePart X1Y2_鞭撃エフェクト2;
 
-    	public Par X1Y3_先;
+    	public ShapePart X1Y3_先;
 
-    	public Par X1Y3_柄;
+    	public ShapePart X1Y3_柄;
 
-    	public Par X1Y3_線1;
+    	public ShapePart X1Y3_線1;
 
-    	public Par X1Y3_線2;
+    	public ShapePart X1Y3_線2;
 
-    	public Par X1Y3_線3;
+    	public ShapePart X1Y3_線3;
 
-    	public Par X1Y3_線4;
+    	public ShapePart X1Y3_線4;
 
-    	public Par X1Y3_線5;
+    	public ShapePart X1Y3_線5;
 
-    	public Par X1Y3_線6;
+    	public ShapePart X1Y3_線6;
 
-    	public Par X1Y3_線7;
+    	public ShapePart X1Y3_線7;
 
-    	public Par X1Y3_線8;
+    	public ShapePart X1Y3_線8;
 
-    	public Par X1Y3_紐;
+    	public ShapePart X1Y3_紐;
 
-    	public Par X1Y4_先;
+    	public ShapePart X1Y4_先;
 
-    	public Par X1Y4_柄;
+    	public ShapePart X1Y4_柄;
 
-    	public Par X1Y4_線1;
+    	public ShapePart X1Y4_線1;
 
-    	public Par X1Y4_線2;
+    	public ShapePart X1Y4_線2;
 
-    	public Par X1Y4_線3;
+    	public ShapePart X1Y4_線3;
 
-    	public Par X1Y4_線4;
+    	public ShapePart X1Y4_線4;
 
-    	public Par X1Y4_線5;
+    	public ShapePart X1Y4_線5;
 
-    	public Par X1Y4_線6;
+    	public ShapePart X1Y4_線6;
 
-    	public Par X1Y4_線7;
+    	public ShapePart X1Y4_線7;
 
-    	public Par X1Y4_線8;
+    	public ShapePart X1Y4_線8;
 
-    	public Par X1Y4_紐;
+    	public ShapePart X1Y4_紐;
 
-    	public Par X1Y4_鞭撃エフェクト1;
+    	public ShapePart X1Y4_鞭撃エフェクト1;
 
-    	public Par X1Y4_鞭撃エフェクト2;
+    	public ShapePart X1Y4_鞭撃エフェクト2;
 
     	public ColorD 先CD;
 

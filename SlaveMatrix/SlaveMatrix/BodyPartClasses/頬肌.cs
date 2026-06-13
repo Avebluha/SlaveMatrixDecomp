@@ -4,69 +4,69 @@ namespace SlaveMatrix
 {
     public class 頬肌 : Ele
     {
-    	public Par X0Y0_淫タトゥ_ハート_タトゥ左;
+    	public ShapePart X0Y0_淫タトゥ_ハート_タトゥ左;
 
-    	public Par X0Y0_淫タトゥ_ハート_タトゥ右;
+    	public ShapePart X0Y0_淫タトゥ_ハート_タトゥ右;
 
-    	public Par X0Y0_隈取_タトゥ1;
+    	public ShapePart X0Y0_隈取_タトゥ1;
 
-    	public Par X0Y0_隈取_タトゥ2;
+    	public ShapePart X0Y0_隈取_タトゥ2;
 
-    	public Par X0Y0_紋柄_紋1;
+    	public ShapePart X0Y0_紋柄_紋1;
 
-    	public Par X0Y0_紋柄_紋2;
+    	public ShapePart X0Y0_紋柄_紋2;
 
-    	public Par X0Y0_紋柄_紋3;
+    	public ShapePart X0Y0_紋柄_紋3;
 
-    	public Par X0Y0_傷_傷X;
+    	public ShapePart X0Y0_傷_傷X;
 
-    	public Par X0Y0_傷_傷I1;
+    	public ShapePart X0Y0_傷_傷I1;
 
-    	public Par X0Y0_傷_傷I2;
+    	public ShapePart X0Y0_傷_傷I2;
 
-    	public Par X0Y0_傷_傷I3;
+    	public ShapePart X0Y0_傷_傷I3;
 
-    	public Par X0Y0_蜘蛛_眼_基;
+    	public ShapePart X0Y0_蜘蛛_眼_基;
 
-    	public Par X0Y0_蜘蛛_眼_眼;
+    	public ShapePart X0Y0_蜘蛛_眼_眼;
 
-    	public Par X0Y0_蜘蛛_眼_ハイライト;
+    	public ShapePart X0Y0_蜘蛛_眼_ハイライト;
 
-    	public Par X0Y0_百足_眼1_基;
+    	public ShapePart X0Y0_百足_眼1_基;
 
-    	public Par X0Y0_百足_眼1_眼;
+    	public ShapePart X0Y0_百足_眼1_眼;
 
-    	public Par X0Y0_百足_眼1_ハイライト;
+    	public ShapePart X0Y0_百足_眼1_ハイライト;
 
-    	public Par X0Y0_百足_眼2_基;
+    	public ShapePart X0Y0_百足_眼2_基;
 
-    	public Par X0Y0_百足_眼2_眼;
+    	public ShapePart X0Y0_百足_眼2_眼;
 
-    	public Par X0Y0_百足_眼2_ハイライト;
+    	public ShapePart X0Y0_百足_眼2_ハイライト;
 
-    	public Par X0Y0_百足_眼3_基;
+    	public ShapePart X0Y0_百足_眼3_基;
 
-    	public Par X0Y0_百足_眼3_眼;
+    	public ShapePart X0Y0_百足_眼3_眼;
 
-    	public Par X0Y0_百足_眼3_ハイライト;
+    	public ShapePart X0Y0_百足_眼3_ハイライト;
 
-    	public Par X0Y0_獣性_獣毛;
+    	public ShapePart X0Y0_獣性_獣毛;
 
-    	public Par X0Y0_獣性_髭1;
+    	public ShapePart X0Y0_獣性_髭1;
 
-    	public Par X0Y0_獣性_髭2;
+    	public ShapePart X0Y0_獣性_髭2;
 
-    	public Par X0Y0_獣性_髭3;
+    	public ShapePart X0Y0_獣性_髭3;
 
-    	public Par X0Y0_竜性_鱗1;
+    	public ShapePart X0Y0_竜性_鱗1;
 
-    	public Par X0Y0_竜性_鱗2;
+    	public ShapePart X0Y0_竜性_鱗2;
 
-    	public Par X0Y0_竜性_鱗3;
+    	public ShapePart X0Y0_竜性_鱗3;
 
-    	public Par X0Y0_猟豹_タトゥ;
+    	public ShapePart X0Y0_猟豹_タトゥ;
 
-    	public Par X0Y0_牛柄_牛柄;
+    	public ShapePart X0Y0_牛柄_牛柄;
 
     	public ColorD 淫タトゥ_ハート_タトゥ左CD;
 

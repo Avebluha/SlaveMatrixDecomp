@@ -20,15 +20,15 @@ namespace _2DGAMELIB
     {
     	private Pars pars;
 
-    	private Par base_;
+    	private ShapePart base_;
 
-    	private Par frame1;
+    	private ShapePart frame1;
 
-    	private Par frame2;
+    	private ShapePart frame2;
 
-    	private Par gauge;
+    	private ShapePart gauge;
 
-    	private Par knob;
+    	private ShapePart knob;
 
     	private double val;
 
@@ -58,13 +58,13 @@ namespace _2DGAMELIB
 
     	public Pars Pars => pars;
 
-    	public Par Base => base_;
+    	public ShapePart Base => base_;
 
-    	public Par Frame1 => frame1;
+    	public ShapePart Frame1 => frame1;
 
-    	public Par Gauge => gauge;
+    	public ShapePart Gauge => gauge;
 
-    	public Par Knob => knob;
+    	public ShapePart Knob => knob;
 
     	public double Value
     	{
@@ -283,7 +283,7 @@ namespace _2DGAMELIB
     	private void ParSetting(string Name, ref Vector2D Position, double Size, double Width, double Height, double Margin, ref Color BackColor, bool knob)
     	{
     		pars = new Pars();
-    		base_ = new Par
+    		base_ = new ShapePart
     		{
     			Tag = Name + "_ベース",
     			InitializeOP = new Out[1] { Shas.GetSquare() },
@@ -297,7 +297,7 @@ namespace _2DGAMELIB
     		};
     		base_.BasePointBase = base_.OP.GetCenter();
     		pars.Add(base_.Tag, base_);
-    		frame1 = new Par
+    		frame1 = new ShapePart
     		{
     			Tag = Name + "_フレーム1",
     			InitializeOP = new Out[1] { Shas.GetSquare() },
@@ -312,7 +312,7 @@ namespace _2DGAMELIB
     		pars.Add(frame1.Tag, frame1);
     		if (Range == Range.MinusPlus)
     		{
-    			frame2 = new Par
+    			frame2 = new ShapePart
     			{
     				Tag = Name + "_フレーム2",
     				InitializeOP = new Out[1] { Shas.GetSquare() },
@@ -326,7 +326,7 @@ namespace _2DGAMELIB
     			frame2.BasePointBase = GetBasePoint2();
     			pars.Add(frame2.Tag, frame2);
     		}
-    		gauge = new Par
+    		gauge = new ShapePart
     		{
     			Tag = Name + "_ゲージ",
     			InitializeOP = new Out[1] { Shas.GetSquare() },
@@ -340,7 +340,7 @@ namespace _2DGAMELIB
     		pars.Add(gauge.Tag, gauge);
     		if (knob)
     		{
-    			this.knob = new Par
+    			this.knob = new ShapePart
     			{
     				Tag = Name + "_ノブ",
     				InitializeOP = new Out[1] { Shas.GetSquare() },

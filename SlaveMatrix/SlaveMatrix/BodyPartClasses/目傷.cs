@@ -4,25 +4,25 @@ namespace SlaveMatrix
 {
     public class 目傷 : Ele
     {
-    	public Par X0Y0_傷上;
+    	public ShapePart X0Y0_傷上;
 
-    	public Par X0Y0_傷下;
+    	public ShapePart X0Y0_傷下;
 
-    	public Par X0Y1_傷上;
+    	public ShapePart X0Y1_傷上;
 
-    	public Par X0Y1_傷下;
+    	public ShapePart X0Y1_傷下;
 
-    	public Par X0Y2_傷上;
+    	public ShapePart X0Y2_傷上;
 
-    	public Par X0Y2_傷下;
+    	public ShapePart X0Y2_傷下;
 
-    	public Par X0Y3_傷上;
+    	public ShapePart X0Y3_傷上;
 
-    	public Par X0Y3_傷下;
+    	public ShapePart X0Y3_傷下;
 
-    	public Par X0Y4_傷上;
+    	public ShapePart X0Y4_傷上;
 
-    	public Par X0Y4_傷下;
+    	public ShapePart X0Y4_傷下;
 
     	public ColorD 傷上CD;
 

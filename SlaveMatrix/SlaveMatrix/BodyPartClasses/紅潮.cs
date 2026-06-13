@@ -5,25 +5,25 @@ namespace SlaveMatrix
 {
     public class 紅潮 : Ele
     {
-    	public Par X0Y0_紅潮0;
+    	public ShapePart X0Y0_紅潮0;
 
-    	public Par X0Y0_紅潮1;
+    	public ShapePart X0Y0_紅潮1;
 
-    	public Par X0Y0_紅潮右;
+    	public ShapePart X0Y0_紅潮右;
 
-    	public Par X0Y0_紅潮左;
+    	public ShapePart X0Y0_紅潮左;
 
-    	public Par X0Y0_紅潮線左;
+    	public ShapePart X0Y0_紅潮線左;
 
-    	public Par X0Y0_紅潮線右;
+    	public ShapePart X0Y0_紅潮線右;
 
-    	public Par X0Y0_紅潮弱左;
+    	public ShapePart X0Y0_紅潮弱左;
 
-    	public Par X0Y0_紅潮弱右;
+    	public ShapePart X0Y0_紅潮弱右;
 
-    	public Par X0Y0_紅潮線弱左;
+    	public ShapePart X0Y0_紅潮線弱左;
 
-    	public Par X0Y0_紅潮線弱右;
+    	public ShapePart X0Y0_紅潮線弱右;
 
     	public ColorD 紅潮0CD;
 

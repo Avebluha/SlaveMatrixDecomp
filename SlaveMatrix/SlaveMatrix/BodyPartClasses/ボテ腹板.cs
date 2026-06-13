@@ -4,85 +4,85 @@ namespace SlaveMatrix
 {
     public class ボテ腹板 : Ele
     {
-    	public Par X0Y0_腹板4_腹板;
+    	public ShapePart X0Y0_腹板4_腹板;
 
-    	public Par X0Y0_腹板4_縦線;
+    	public ShapePart X0Y0_腹板4_縦線;
 
-    	public Par X0Y0_腹板3_腹板;
+    	public ShapePart X0Y0_腹板3_腹板;
 
-    	public Par X0Y0_腹板3_縦線;
+    	public ShapePart X0Y0_腹板3_縦線;
 
-    	public Par X0Y0_腹板2_腹板;
+    	public ShapePart X0Y0_腹板2_腹板;
 
-    	public Par X0Y0_腹板2_縦線;
+    	public ShapePart X0Y0_腹板2_縦線;
 
-    	public Par X0Y0_腹板1_腹板;
+    	public ShapePart X0Y0_腹板1_腹板;
 
-    	public Par X0Y0_腹板1_縦線;
+    	public ShapePart X0Y0_腹板1_縦線;
 
-    	public Par X0Y1_腹板4_腹板;
+    	public ShapePart X0Y1_腹板4_腹板;
 
-    	public Par X0Y1_腹板4_縦線;
+    	public ShapePart X0Y1_腹板4_縦線;
 
-    	public Par X0Y1_腹板3_腹板;
+    	public ShapePart X0Y1_腹板3_腹板;
 
-    	public Par X0Y1_腹板3_縦線;
+    	public ShapePart X0Y1_腹板3_縦線;
 
-    	public Par X0Y1_腹板2_腹板;
+    	public ShapePart X0Y1_腹板2_腹板;
 
-    	public Par X0Y1_腹板2_縦線;
+    	public ShapePart X0Y1_腹板2_縦線;
 
-    	public Par X0Y1_腹板1_腹板;
+    	public ShapePart X0Y1_腹板1_腹板;
 
-    	public Par X0Y1_腹板1_縦線;
+    	public ShapePart X0Y1_腹板1_縦線;
 
-    	public Par X0Y2_腹板4_腹板;
+    	public ShapePart X0Y2_腹板4_腹板;
 
-    	public Par X0Y2_腹板4_縦線;
+    	public ShapePart X0Y2_腹板4_縦線;
 
-    	public Par X0Y2_腹板3_腹板;
+    	public ShapePart X0Y2_腹板3_腹板;
 
-    	public Par X0Y2_腹板3_縦線;
+    	public ShapePart X0Y2_腹板3_縦線;
 
-    	public Par X0Y2_腹板2_腹板;
+    	public ShapePart X0Y2_腹板2_腹板;
 
-    	public Par X0Y2_腹板2_縦線;
+    	public ShapePart X0Y2_腹板2_縦線;
 
-    	public Par X0Y2_腹板1_腹板;
+    	public ShapePart X0Y2_腹板1_腹板;
 
-    	public Par X0Y2_腹板1_縦線;
+    	public ShapePart X0Y2_腹板1_縦線;
 
-    	public Par X0Y3_腹板4_腹板;
+    	public ShapePart X0Y3_腹板4_腹板;
 
-    	public Par X0Y3_腹板4_縦線;
+    	public ShapePart X0Y3_腹板4_縦線;
 
-    	public Par X0Y3_腹板3_腹板;
+    	public ShapePart X0Y3_腹板3_腹板;
 
-    	public Par X0Y3_腹板3_縦線;
+    	public ShapePart X0Y3_腹板3_縦線;
 
-    	public Par X0Y3_腹板2_腹板;
+    	public ShapePart X0Y3_腹板2_腹板;
 
-    	public Par X0Y3_腹板2_縦線;
+    	public ShapePart X0Y3_腹板2_縦線;
 
-    	public Par X0Y3_腹板1_腹板;
+    	public ShapePart X0Y3_腹板1_腹板;
 
-    	public Par X0Y3_腹板1_縦線;
+    	public ShapePart X0Y3_腹板1_縦線;
 
-    	public Par X0Y4_腹板4_腹板;
+    	public ShapePart X0Y4_腹板4_腹板;
 
-    	public Par X0Y4_腹板4_縦線;
+    	public ShapePart X0Y4_腹板4_縦線;
 
-    	public Par X0Y4_腹板3_腹板;
+    	public ShapePart X0Y4_腹板3_腹板;
 
-    	public Par X0Y4_腹板3_縦線;
+    	public ShapePart X0Y4_腹板3_縦線;
 
-    	public Par X0Y4_腹板2_腹板;
+    	public ShapePart X0Y4_腹板2_腹板;
 
-    	public Par X0Y4_腹板2_縦線;
+    	public ShapePart X0Y4_腹板2_縦線;
 
-    	public Par X0Y4_腹板1_腹板;
+    	public ShapePart X0Y4_腹板1_腹板;
 
-    	public Par X0Y4_腹板1_縦線;
+    	public ShapePart X0Y4_腹板1_縦線;
 
     	public ColorD 腹板4_腹板CD;
 

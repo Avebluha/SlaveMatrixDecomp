@@ -4,7 +4,7 @@ namespace SlaveMatrix
 {
     public class 目尻影 : Ele
     {
-    	public Par X0Y0_目尻影;
+    	public ShapePart X0Y0_目尻影;
 
     	public ColorD 目尻影CD;
 

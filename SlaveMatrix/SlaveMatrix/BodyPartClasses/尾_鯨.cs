@@ -6,221 +6,221 @@ namespace SlaveMatrix
 {
     public class 尾_鯨 : 尾
     {
-    	public Par X0Y0_尾33_尾;
+    	public ShapePart X0Y0_尾33_尾;
 
-    	public Par X0Y0_尾33_柄;
+    	public ShapePart X0Y0_尾33_柄;
 
-    	public Par X0Y0_尾33_縦影;
+    	public ShapePart X0Y0_尾33_縦影;
 
-    	public Par X0Y0_尾32_尾;
+    	public ShapePart X0Y0_尾32_尾;
 
-    	public Par X0Y0_尾32_柄;
+    	public ShapePart X0Y0_尾32_柄;
 
-    	public Par X0Y0_尾32_縦影;
+    	public ShapePart X0Y0_尾32_縦影;
 
-    	public Par X0Y0_尾31_尾;
+    	public ShapePart X0Y0_尾31_尾;
 
-    	public Par X0Y0_尾31_柄;
+    	public ShapePart X0Y0_尾31_柄;
 
-    	public Par X0Y0_尾31_縦影;
+    	public ShapePart X0Y0_尾31_縦影;
 
-    	public Par X0Y0_尾30_尾;
+    	public ShapePart X0Y0_尾30_尾;
 
-    	public Par X0Y0_尾30_柄;
+    	public ShapePart X0Y0_尾30_柄;
 
-    	public Par X0Y0_尾30_縦影;
+    	public ShapePart X0Y0_尾30_縦影;
 
-    	public Par X0Y0_尾29_尾;
+    	public ShapePart X0Y0_尾29_尾;
 
-    	public Par X0Y0_尾29_柄;
+    	public ShapePart X0Y0_尾29_柄;
 
-    	public Par X0Y0_尾29_縦影;
+    	public ShapePart X0Y0_尾29_縦影;
 
-    	public Par X0Y0_尾28_尾;
+    	public ShapePart X0Y0_尾28_尾;
 
-    	public Par X0Y0_尾28_柄;
+    	public ShapePart X0Y0_尾28_柄;
 
-    	public Par X0Y0_尾28_縦影;
+    	public ShapePart X0Y0_尾28_縦影;
 
-    	public Par X0Y0_尾27_尾;
+    	public ShapePart X0Y0_尾27_尾;
 
-    	public Par X0Y0_尾27_柄;
+    	public ShapePart X0Y0_尾27_柄;
 
-    	public Par X0Y0_尾27_縦影;
+    	public ShapePart X0Y0_尾27_縦影;
 
-    	public Par X0Y0_尾26_尾;
+    	public ShapePart X0Y0_尾26_尾;
 
-    	public Par X0Y0_尾26_柄;
+    	public ShapePart X0Y0_尾26_柄;
 
-    	public Par X0Y0_尾26_縦影;
+    	public ShapePart X0Y0_尾26_縦影;
 
-    	public Par X0Y0_尾25_尾;
+    	public ShapePart X0Y0_尾25_尾;
 
-    	public Par X0Y0_尾25_柄;
+    	public ShapePart X0Y0_尾25_柄;
 
-    	public Par X0Y0_尾25_縦影;
+    	public ShapePart X0Y0_尾25_縦影;
 
-    	public Par X0Y0_尾24_尾;
+    	public ShapePart X0Y0_尾24_尾;
 
-    	public Par X0Y0_尾24_柄;
+    	public ShapePart X0Y0_尾24_柄;
 
-    	public Par X0Y0_尾24_縦影;
+    	public ShapePart X0Y0_尾24_縦影;
 
-    	public Par X0Y0_尾23_尾;
+    	public ShapePart X0Y0_尾23_尾;
 
-    	public Par X0Y0_尾23_柄;
+    	public ShapePart X0Y0_尾23_柄;
 
-    	public Par X0Y0_尾23_縦影;
+    	public ShapePart X0Y0_尾23_縦影;
 
-    	public Par X0Y0_尾22_尾;
+    	public ShapePart X0Y0_尾22_尾;
 
-    	public Par X0Y0_尾22_柄;
+    	public ShapePart X0Y0_尾22_柄;
 
-    	public Par X0Y0_尾22_縦影;
+    	public ShapePart X0Y0_尾22_縦影;
 
-    	public Par X0Y0_尾21_尾;
+    	public ShapePart X0Y0_尾21_尾;
 
-    	public Par X0Y0_尾21_柄;
+    	public ShapePart X0Y0_尾21_柄;
 
-    	public Par X0Y0_尾21_縦影;
+    	public ShapePart X0Y0_尾21_縦影;
 
-    	public Par X0Y0_尾20_尾;
+    	public ShapePart X0Y0_尾20_尾;
 
-    	public Par X0Y0_尾20_柄;
+    	public ShapePart X0Y0_尾20_柄;
 
-    	public Par X0Y0_尾20_縦影;
+    	public ShapePart X0Y0_尾20_縦影;
 
-    	public Par X0Y0_尾19_尾;
+    	public ShapePart X0Y0_尾19_尾;
 
-    	public Par X0Y0_尾19_柄;
+    	public ShapePart X0Y0_尾19_柄;
 
-    	public Par X0Y0_尾19_縦影;
+    	public ShapePart X0Y0_尾19_縦影;
 
-    	public Par X0Y0_尾18_尾;
+    	public ShapePart X0Y0_尾18_尾;
 
-    	public Par X0Y0_尾18_柄;
+    	public ShapePart X0Y0_尾18_柄;
 
-    	public Par X0Y0_尾18_縦影;
+    	public ShapePart X0Y0_尾18_縦影;
 
-    	public Par X0Y0_尾17_尾;
+    	public ShapePart X0Y0_尾17_尾;
 
-    	public Par X0Y0_尾17_柄;
+    	public ShapePart X0Y0_尾17_柄;
 
-    	public Par X0Y0_尾17_縦影;
+    	public ShapePart X0Y0_尾17_縦影;
 
-    	public Par X0Y0_尾16_尾;
+    	public ShapePart X0Y0_尾16_尾;
 
-    	public Par X0Y0_尾16_柄;
+    	public ShapePart X0Y0_尾16_柄;
 
-    	public Par X0Y0_尾16_縦影;
+    	public ShapePart X0Y0_尾16_縦影;
 
-    	public Par X0Y0_尾15_尾;
+    	public ShapePart X0Y0_尾15_尾;
 
-    	public Par X0Y0_尾15_柄;
+    	public ShapePart X0Y0_尾15_柄;
 
-    	public Par X0Y0_尾15_縦影;
+    	public ShapePart X0Y0_尾15_縦影;
 
-    	public Par X0Y0_尾14_尾;
+    	public ShapePart X0Y0_尾14_尾;
 
-    	public Par X0Y0_尾14_柄;
+    	public ShapePart X0Y0_尾14_柄;
 
-    	public Par X0Y0_尾14_縦影;
+    	public ShapePart X0Y0_尾14_縦影;
 
-    	public Par X0Y0_尾13_尾;
+    	public ShapePart X0Y0_尾13_尾;
 
-    	public Par X0Y0_尾13_柄;
+    	public ShapePart X0Y0_尾13_柄;
 
-    	public Par X0Y0_尾13_縦影;
+    	public ShapePart X0Y0_尾13_縦影;
 
-    	public Par X0Y0_尾12_尾;
+    	public ShapePart X0Y0_尾12_尾;
 
-    	public Par X0Y0_尾12_柄;
+    	public ShapePart X0Y0_尾12_柄;
 
-    	public Par X0Y0_尾12_縦影;
+    	public ShapePart X0Y0_尾12_縦影;
 
-    	public Par X0Y0_尾11_尾;
+    	public ShapePart X0Y0_尾11_尾;
 
-    	public Par X0Y0_尾11_柄;
+    	public ShapePart X0Y0_尾11_柄;
 
-    	public Par X0Y0_尾11_縦影;
+    	public ShapePart X0Y0_尾11_縦影;
 
-    	public Par X0Y0_尾10_尾;
+    	public ShapePart X0Y0_尾10_尾;
 
-    	public Par X0Y0_尾10_柄;
+    	public ShapePart X0Y0_尾10_柄;
 
-    	public Par X0Y0_尾10_縦影;
+    	public ShapePart X0Y0_尾10_縦影;
 
-    	public Par X0Y0_尾9_尾;
+    	public ShapePart X0Y0_尾9_尾;
 
-    	public Par X0Y0_尾9_柄;
+    	public ShapePart X0Y0_尾9_柄;
 
-    	public Par X0Y0_尾9_縦影;
+    	public ShapePart X0Y0_尾9_縦影;
 
-    	public Par X0Y0_尾8_尾;
+    	public ShapePart X0Y0_尾8_尾;
 
-    	public Par X0Y0_尾8_柄;
+    	public ShapePart X0Y0_尾8_柄;
 
-    	public Par X0Y0_尾8_縦影;
+    	public ShapePart X0Y0_尾8_縦影;
 
-    	public Par X0Y0_尾7_尾;
+    	public ShapePart X0Y0_尾7_尾;
 
-    	public Par X0Y0_尾7_柄;
+    	public ShapePart X0Y0_尾7_柄;
 
-    	public Par X0Y0_尾7_縦影;
+    	public ShapePart X0Y0_尾7_縦影;
 
-    	public Par X0Y0_尾6_尾;
+    	public ShapePart X0Y0_尾6_尾;
 
-    	public Par X0Y0_尾6_柄;
+    	public ShapePart X0Y0_尾6_柄;
 
-    	public Par X0Y0_尾6_縦影;
+    	public ShapePart X0Y0_尾6_縦影;
 
-    	public Par X0Y0_尾5_尾;
+    	public ShapePart X0Y0_尾5_尾;
 
-    	public Par X0Y0_尾5_柄;
+    	public ShapePart X0Y0_尾5_柄;
 
-    	public Par X0Y0_尾5_縦影;
+    	public ShapePart X0Y0_尾5_縦影;
 
-    	public Par X0Y0_尾4_尾;
+    	public ShapePart X0Y0_尾4_尾;
 
-    	public Par X0Y0_尾4_柄;
+    	public ShapePart X0Y0_尾4_柄;
 
-    	public Par X0Y0_尾4_縦影;
+    	public ShapePart X0Y0_尾4_縦影;
 
-    	public Par X0Y0_尾3_尾;
+    	public ShapePart X0Y0_尾3_尾;
 
-    	public Par X0Y0_尾3_柄;
+    	public ShapePart X0Y0_尾3_柄;
 
-    	public Par X0Y0_尾3_縦影;
+    	public ShapePart X0Y0_尾3_縦影;
 
-    	public Par X0Y0_輪_革;
+    	public ShapePart X0Y0_輪_革;
 
-    	public Par X0Y0_輪_金具1;
+    	public ShapePart X0Y0_輪_金具1;
 
-    	public Par X0Y0_輪_金具2;
+    	public ShapePart X0Y0_輪_金具2;
 
-    	public Par X0Y0_輪_金具3;
+    	public ShapePart X0Y0_輪_金具3;
 
-    	public Par X0Y0_輪_金具左;
+    	public ShapePart X0Y0_輪_金具左;
 
-    	public Par X0Y0_輪_金具右;
+    	public ShapePart X0Y0_輪_金具右;
 
-    	public Par X0Y0_尾2_尾;
+    	public ShapePart X0Y0_尾2_尾;
 
-    	public Par X0Y0_尾2_柄;
+    	public ShapePart X0Y0_尾2_柄;
 
-    	public Par X0Y0_尾2_縦影;
+    	public ShapePart X0Y0_尾2_縦影;
 
-    	public Par X0Y0_尾1_尾;
+    	public ShapePart X0Y0_尾1_尾;
 
-    	public Par X0Y0_尾1_柄;
+    	public ShapePart X0Y0_尾1_柄;
 
-    	public Par X0Y0_尾1_縦影;
+    	public ShapePart X0Y0_尾1_縦影;
 
-    	public Par X0Y0_尾0_尾;
+    	public ShapePart X0Y0_尾0_尾;
 
-    	public Par X0Y0_尾0_柄;
+    	public ShapePart X0Y0_尾0_柄;
 
-    	public Par X0Y0_尾0_縦影;
+    	public ShapePart X0Y0_尾0_縦影;
 
     	public ColorD 尾33_尾CD;
 
@@ -796,7 +796,7 @@ namespace SlaveMatrix
 
     	public Ele[] 尾先_接続;
 
-    	private Par[] Pars;
+    	private ShapePart[] Pars;
 
     	private Vector2D[] mm;
 
@@ -3885,7 +3885,7 @@ namespace SlaveMatrix
     		}
     		base.配色指定 = 配色指定;
     		配色(体配色);
-    		Pars = new Par[34]
+    		Pars = new ShapePart[34]
     		{
     			X0Y0_尾33_尾, X0Y0_尾32_尾, X0Y0_尾31_尾, X0Y0_尾30_尾, X0Y0_尾29_尾, X0Y0_尾28_尾, X0Y0_尾27_尾, X0Y0_尾26_尾, X0Y0_尾25_尾, X0Y0_尾24_尾,
     			X0Y0_尾23_尾, X0Y0_尾22_尾, X0Y0_尾21_尾, X0Y0_尾20_尾, X0Y0_尾19_尾, X0Y0_尾18_尾, X0Y0_尾17_尾, X0Y0_尾16_尾, X0Y0_尾15_尾, X0Y0_尾14_尾,
@@ -4201,7 +4201,7 @@ namespace SlaveMatrix
     		X0Y0_尾14_尾.AngleBase = 0.0;
     	}
 
-    	public override bool Is革(Par p)
+    	public override bool Is革(ShapePart p)
     	{
     		if (p != X0Y0_輪_革 && p != X0Y0_輪_金具1 && p != X0Y0_輪_金具2 && p != X0Y0_輪_金具3 && p != X0Y0_輪_金具左)
     		{
@@ -4210,7 +4210,7 @@ namespace SlaveMatrix
     		return true;
     	}
 
-    	public override IEnumerable<Par> Enum軸()
+    	public override IEnumerable<ShapePart> Enum軸()
     	{
     		yield return X0Y0_尾0_尾;
     		yield return X0Y0_尾1_尾;

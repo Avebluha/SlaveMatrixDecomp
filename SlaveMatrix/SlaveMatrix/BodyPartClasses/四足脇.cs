@@ -5,9 +5,9 @@ namespace SlaveMatrix
 {
     public class 四足脇 : Ele
     {
-    	public Par X0Y0_脇;
+    	public ShapePart X0Y0_脇;
 
-    	public Par X0Y0_筋肉;
+    	public ShapePart X0Y0_筋肉;
 
     	public ColorD 脇CD;
 

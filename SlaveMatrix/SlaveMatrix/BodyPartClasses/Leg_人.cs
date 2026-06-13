@@ -5,797 +5,797 @@ namespace SlaveMatrix
 {
     public class Leg_人 : Leg
     {
-    	public Par X0Y0_Leg;
+    	public ShapePart X0Y0_Leg;
 
-    	public Par X0Y0_筋;
+    	public ShapePart X0Y0_筋;
 
-    	public Par X0Y0_淫タトゥ_足首_タトゥ;
+    	public ShapePart X0Y0_淫タトゥ_足首_タトゥ;
 
-    	public Par X0Y0_淫タトゥ_足首_ハート1_タトゥ左;
+    	public ShapePart X0Y0_淫タトゥ_足首_ハート1_タトゥ左;
 
-    	public Par X0Y0_淫タトゥ_足首_ハート1_タトゥ右;
+    	public ShapePart X0Y0_淫タトゥ_足首_ハート1_タトゥ右;
 
-    	public Par X0Y0_淫タトゥ_足首_ハート3_タトゥ左;
+    	public ShapePart X0Y0_淫タトゥ_足首_ハート3_タトゥ左;
 
-    	public Par X0Y0_淫タトゥ_足首_ハート3_タトゥ右;
+    	public ShapePart X0Y0_淫タトゥ_足首_ハート3_タトゥ右;
 
-    	public Par X0Y0_淫タトゥ_足首_ハート2_タトゥ左;
+    	public ShapePart X0Y0_淫タトゥ_足首_ハート2_タトゥ左;
 
-    	public Par X0Y0_淫タトゥ_足首_ハート2_タトゥ右;
+    	public ShapePart X0Y0_淫タトゥ_足首_ハート2_タトゥ右;
 
-    	public Par X0Y0_淫タトゥ_ハート_タトゥ左;
+    	public ShapePart X0Y0_淫タトゥ_ハート_タトゥ左;
 
-    	public Par X0Y0_淫タトゥ_ハート_タトゥ右;
+    	public ShapePart X0Y0_淫タトゥ_ハート_タトゥ右;
 
-    	public Par X0Y0_淫タトゥ_タトゥ左;
+    	public ShapePart X0Y0_淫タトゥ_タトゥ左;
 
-    	public Par X0Y0_淫タトゥ_タトゥ右;
+    	public ShapePart X0Y0_淫タトゥ_タトゥ右;
 
-    	public Par X0Y0_悪タトゥ_文字1_文字a_枠;
+    	public ShapePart X0Y0_悪タトゥ_文字1_文字a_枠;
 
-    	public Par X0Y0_悪タトゥ_文字1_文字a_文字タトゥ1;
+    	public ShapePart X0Y0_悪タトゥ_文字1_文字a_文字タトゥ1;
 
-    	public Par X0Y0_悪タトゥ_文字1_文字a_文字タトゥ2;
+    	public ShapePart X0Y0_悪タトゥ_文字1_文字a_文字タトゥ2;
 
-    	public Par X0Y0_悪タトゥ_文字1_文字b_枠;
+    	public ShapePart X0Y0_悪タトゥ_文字1_文字b_枠;
 
-    	public Par X0Y0_悪タトゥ_文字1_文字b_文字タトゥ1;
+    	public ShapePart X0Y0_悪タトゥ_文字1_文字b_文字タトゥ1;
 
-    	public Par X0Y0_悪タトゥ_文字1_文字b_文字タトゥ2;
+    	public ShapePart X0Y0_悪タトゥ_文字1_文字b_文字タトゥ2;
 
-    	public Par X0Y0_悪タトゥ_文字1_文字c_枠;
+    	public ShapePart X0Y0_悪タトゥ_文字1_文字c_枠;
 
-    	public Par X0Y0_悪タトゥ_文字1_文字c_文字タトゥ1;
+    	public ShapePart X0Y0_悪タトゥ_文字1_文字c_文字タトゥ1;
 
-    	public Par X0Y0_悪タトゥ_文字1_文字c_文字タトゥ2;
+    	public ShapePart X0Y0_悪タトゥ_文字1_文字c_文字タトゥ2;
 
-    	public Par X0Y0_悪タトゥ_文字1_文字d_枠;
+    	public ShapePart X0Y0_悪タトゥ_文字1_文字d_枠;
 
-    	public Par X0Y0_悪タトゥ_文字1_文字d_文字タトゥ1;
+    	public ShapePart X0Y0_悪タトゥ_文字1_文字d_文字タトゥ1;
 
-    	public Par X0Y0_悪タトゥ_文字1_文字d_文字タトゥ2;
+    	public ShapePart X0Y0_悪タトゥ_文字1_文字d_文字タトゥ2;
 
-    	public Par X0Y0_悪タトゥ_文字1_文字e_枠;
+    	public ShapePart X0Y0_悪タトゥ_文字1_文字e_枠;
 
-    	public Par X0Y0_悪タトゥ_文字1_文字e_文字タトゥ1;
+    	public ShapePart X0Y0_悪タトゥ_文字1_文字e_文字タトゥ1;
 
-    	public Par X0Y0_悪タトゥ_文字1_文字e_文字タトゥ2;
+    	public ShapePart X0Y0_悪タトゥ_文字1_文字e_文字タトゥ2;
 
-    	public Par X0Y0_悪タトゥ_文字1_文字e_文字タトゥ3;
+    	public ShapePart X0Y0_悪タトゥ_文字1_文字e_文字タトゥ3;
 
-    	public Par X0Y0_悪タトゥ_文字2_文字a_枠;
+    	public ShapePart X0Y0_悪タトゥ_文字2_文字a_枠;
 
-    	public Par X0Y0_悪タトゥ_文字2_文字a_文字タトゥ1;
+    	public ShapePart X0Y0_悪タトゥ_文字2_文字a_文字タトゥ1;
 
-    	public Par X0Y0_悪タトゥ_文字2_文字a_文字タトゥ2;
+    	public ShapePart X0Y0_悪タトゥ_文字2_文字a_文字タトゥ2;
 
-    	public Par X0Y0_悪タトゥ_文字2_文字b_枠;
+    	public ShapePart X0Y0_悪タトゥ_文字2_文字b_枠;
 
-    	public Par X0Y0_悪タトゥ_文字2_文字b_文字タトゥ1;
+    	public ShapePart X0Y0_悪タトゥ_文字2_文字b_文字タトゥ1;
 
-    	public Par X0Y0_悪タトゥ_文字2_文字b_文字タトゥ2;
+    	public ShapePart X0Y0_悪タトゥ_文字2_文字b_文字タトゥ2;
 
-    	public Par X0Y0_悪タトゥ_文字2_文字c_枠;
+    	public ShapePart X0Y0_悪タトゥ_文字2_文字c_枠;
 
-    	public Par X0Y0_悪タトゥ_文字2_文字c_文字タトゥ1;
+    	public ShapePart X0Y0_悪タトゥ_文字2_文字c_文字タトゥ1;
 
-    	public Par X0Y0_悪タトゥ_文字2_文字c_文字タトゥ2;
+    	public ShapePart X0Y0_悪タトゥ_文字2_文字c_文字タトゥ2;
 
-    	public Par X0Y0_悪タトゥ_文字2_文字d_枠;
+    	public ShapePart X0Y0_悪タトゥ_文字2_文字d_枠;
 
-    	public Par X0Y0_悪タトゥ_文字2_文字d_文字タトゥ1;
+    	public ShapePart X0Y0_悪タトゥ_文字2_文字d_文字タトゥ1;
 
-    	public Par X0Y0_悪タトゥ_文字2_文字d_文字タトゥ2;
+    	public ShapePart X0Y0_悪タトゥ_文字2_文字d_文字タトゥ2;
 
-    	public Par X0Y0_悪タトゥ_文字2_文字e_枠;
+    	public ShapePart X0Y0_悪タトゥ_文字2_文字e_枠;
 
-    	public Par X0Y0_悪タトゥ_文字2_文字e_文字タトゥ1;
+    	public ShapePart X0Y0_悪タトゥ_文字2_文字e_文字タトゥ1;
 
-    	public Par X0Y0_悪タトゥ_文字2_文字e_文字タトゥ2;
+    	public ShapePart X0Y0_悪タトゥ_文字2_文字e_文字タトゥ2;
 
-    	public Par X0Y0_悪タトゥ_文字2_文字e_文字タトゥ3;
+    	public ShapePart X0Y0_悪タトゥ_文字2_文字e_文字タトゥ3;
 
-    	public Par X0Y0_悪タトゥ_タトゥ1;
+    	public ShapePart X0Y0_悪タトゥ_タトゥ1;
 
-    	public Par X0Y0_悪タトゥ_タトゥ2;
+    	public ShapePart X0Y0_悪タトゥ_タトゥ2;
 
-    	public Par X0Y0_悪タトゥ_逆十字_逆十字1;
+    	public ShapePart X0Y0_悪タトゥ_逆十字_逆十字1;
 
-    	public Par X0Y0_悪タトゥ_逆十字_逆十字2;
+    	public ShapePart X0Y0_悪タトゥ_逆十字_逆十字2;
 
-    	public Par X0Y0_悪タトゥ_タトゥ左;
+    	public ShapePart X0Y0_悪タトゥ_タトゥ左;
 
-    	public Par X0Y0_悪タトゥ_タトゥ右;
+    	public ShapePart X0Y0_悪タトゥ_タトゥ右;
 
-    	public Par X0Y0_紋柄_紋1;
+    	public ShapePart X0Y0_紋柄_紋1;
 
-    	public Par X0Y0_紋柄_紋2;
+    	public ShapePart X0Y0_紋柄_紋2;
 
-    	public Par X0Y0_紋柄_紋3;
+    	public ShapePart X0Y0_紋柄_紋3;
 
-    	public Par X0Y0_紋柄_紋4;
+    	public ShapePart X0Y0_紋柄_紋4;
 
-    	public Par X0Y0_獣性_獣毛1;
+    	public ShapePart X0Y0_獣性_獣毛1;
 
-    	public Par X0Y0_獣性_獣毛2;
+    	public ShapePart X0Y0_獣性_獣毛2;
 
-    	public Par X0Y0_獣性_獣毛3;
+    	public ShapePart X0Y0_獣性_獣毛3;
 
-    	public Par X0Y0_獣性_獣毛4;
+    	public ShapePart X0Y0_獣性_獣毛4;
 
-    	public Par X0Y0_獣性_獣毛5;
+    	public ShapePart X0Y0_獣性_獣毛5;
 
-    	public Par X0Y0_竜性_鱗_鱗1;
+    	public ShapePart X0Y0_竜性_鱗_鱗1;
 
-    	public Par X0Y0_竜性_鱗_鱗2;
+    	public ShapePart X0Y0_竜性_鱗_鱗2;
 
-    	public Par X0Y0_竜性_鱗_鱗3;
+    	public ShapePart X0Y0_竜性_鱗_鱗3;
 
-    	public Par X0Y0_竜性_鱗_鱗4;
+    	public ShapePart X0Y0_竜性_鱗_鱗4;
 
-    	public Par X0Y0_竜性_鱗_鱗5;
+    	public ShapePart X0Y0_竜性_鱗_鱗5;
 
-    	public Par X0Y0_竜性_鱗_鱗6;
+    	public ShapePart X0Y0_竜性_鱗_鱗6;
 
-    	public Par X0Y0_竜性_鱗_鱗7;
+    	public ShapePart X0Y0_竜性_鱗_鱗7;
 
-    	public Par X0Y0_竜性_棘_棘1;
+    	public ShapePart X0Y0_竜性_棘_棘1;
 
-    	public Par X0Y0_竜性_棘_棘2;
+    	public ShapePart X0Y0_竜性_棘_棘2;
 
-    	public Par X0Y0_竜性_棘_棘3;
+    	public ShapePart X0Y0_竜性_棘_棘3;
 
-    	public Par X0Y0_竜性_棘_棘4;
+    	public ShapePart X0Y0_竜性_棘_棘4;
 
-    	public Par X0Y0_竜性_棘_棘5;
+    	public ShapePart X0Y0_竜性_棘_棘5;
 
-    	public Par X0Y0_竜性_棘_棘6;
+    	public ShapePart X0Y0_竜性_棘_棘6;
 
-    	public Par X0Y0_虫性_棘_棘1;
+    	public ShapePart X0Y0_虫性_棘_棘1;
 
-    	public Par X0Y0_虫性_棘_棘2;
+    	public ShapePart X0Y0_虫性_棘_棘2;
 
-    	public Par X0Y0_虫性_棘_棘3;
+    	public ShapePart X0Y0_虫性_棘_棘3;
 
-    	public Par X0Y0_虫性_膝;
+    	public ShapePart X0Y0_虫性_膝;
 
-    	public Par X0Y0_虫性_線;
+    	public ShapePart X0Y0_虫性_線;
 
-    	public Par X0Y0_傷X1;
+    	public ShapePart X0Y0_傷X1;
 
-    	public Par X0Y0_傷X2;
+    	public ShapePart X0Y0_傷X2;
 
-    	public Par X0Y0_傷I1;
+    	public ShapePart X0Y0_傷I1;
 
-    	public Par X0Y0_傷I2;
+    	public ShapePart X0Y0_傷I2;
 
-    	public Par X0Y0_傷I3;
+    	public ShapePart X0Y0_傷I3;
 
-    	public Par X0Y0_傷I4;
+    	public ShapePart X0Y0_傷I4;
 
-    	public Par X0Y0_傷I5;
+    	public ShapePart X0Y0_傷I5;
 
-    	public Par X0Y0_ハイライト1;
+    	public ShapePart X0Y0_ハイライト1;
 
-    	public Par X0Y0_ハイライト2;
+    	public ShapePart X0Y0_ハイライト2;
 
-    	public Par X0Y0_パンスト_パンスト;
+    	public ShapePart X0Y0_パンスト_パンスト;
 
-    	public Par X0Y0_パンスト_ハイライト1;
+    	public ShapePart X0Y0_パンスト_ハイライト1;
 
-    	public Par X0Y0_パンスト_ハイライト2;
+    	public ShapePart X0Y0_パンスト_ハイライト2;
 
-    	public Par X0Y0_ソックス_ソックス;
+    	public ShapePart X0Y0_ソックス_ソックス;
 
-    	public Par X0Y0_ソックス_ハイライト1;
+    	public ShapePart X0Y0_ソックス_ハイライト1;
 
-    	public Par X0Y0_ソックス_ハイライト2;
+    	public ShapePart X0Y0_ソックス_ハイライト2;
 
-    	public Par X0Y0_ブーツ_タン_タン;
+    	public ShapePart X0Y0_ブーツ_タン_タン;
 
-    	public Par X0Y0_ブーツ_タン_縁_縁1;
+    	public ShapePart X0Y0_ブーツ_タン_縁_縁1;
 
-    	public Par X0Y0_ブーツ_タン_縁_縁2;
+    	public ShapePart X0Y0_ブーツ_タン_縁_縁2;
 
-    	public Par X0Y0_ブーツ_ブーツ_ブーツ;
+    	public ShapePart X0Y0_ブーツ_ブーツ_ブーツ;
 
-    	public Par X0Y0_ブーツ_ブーツ_皺_皺1;
+    	public ShapePart X0Y0_ブーツ_ブーツ_皺_皺1;
 
-    	public Par X0Y0_ブーツ_ブーツ_皺_皺2;
+    	public ShapePart X0Y0_ブーツ_ブーツ_皺_皺2;
 
-    	public Par X0Y0_ブーツ_ブーツ_縁_縁1;
+    	public ShapePart X0Y0_ブーツ_ブーツ_縁_縁1;
 
-    	public Par X0Y0_ブーツ_ブーツ_縁_縁2;
+    	public ShapePart X0Y0_ブーツ_ブーツ_縁_縁2;
 
-    	public Par X0Y0_ブーツ_ブーツ_縁_縁3;
+    	public ShapePart X0Y0_ブーツ_ブーツ_縁_縁3;
 
-    	public Par X0Y0_ブーツ_ブーツ_縁_縁4;
+    	public ShapePart X0Y0_ブーツ_ブーツ_縁_縁4;
 
-    	public Par X0Y0_ブーツ_柄;
+    	public ShapePart X0Y0_ブーツ_柄;
 
-    	public Par X0Y0_ブーツ_紐_紐;
+    	public ShapePart X0Y0_ブーツ_紐_紐;
 
-    	public Par X0Y0_ブーツ_紐_紐1_紐下_金具上_金具;
+    	public ShapePart X0Y0_ブーツ_紐_紐1_紐下_金具上_金具;
 
-    	public Par X0Y0_ブーツ_紐_紐1_紐下_金具上_穴;
+    	public ShapePart X0Y0_ブーツ_紐_紐1_紐下_金具上_穴;
 
-    	public Par X0Y0_ブーツ_紐_紐1_紐下_紐;
+    	public ShapePart X0Y0_ブーツ_紐_紐1_紐下_紐;
 
-    	public Par X0Y0_ブーツ_紐_紐1_紐上_金具上_金具;
+    	public ShapePart X0Y0_ブーツ_紐_紐1_紐上_金具上_金具;
 
-    	public Par X0Y0_ブーツ_紐_紐1_紐上_金具上_穴;
+    	public ShapePart X0Y0_ブーツ_紐_紐1_紐上_金具上_穴;
 
-    	public Par X0Y0_ブーツ_紐_紐1_紐上_紐;
+    	public ShapePart X0Y0_ブーツ_紐_紐1_紐上_紐;
 
-    	public Par X0Y0_ブーツ_紐_紐2_紐下_金具上_金具;
+    	public ShapePart X0Y0_ブーツ_紐_紐2_紐下_金具上_金具;
 
-    	public Par X0Y0_ブーツ_紐_紐2_紐下_金具上_穴;
+    	public ShapePart X0Y0_ブーツ_紐_紐2_紐下_金具上_穴;
 
-    	public Par X0Y0_ブーツ_紐_紐2_紐下_紐;
+    	public ShapePart X0Y0_ブーツ_紐_紐2_紐下_紐;
 
-    	public Par X0Y0_ブーツ_紐_紐2_紐上_金具上_金具;
+    	public ShapePart X0Y0_ブーツ_紐_紐2_紐上_金具上_金具;
 
-    	public Par X0Y0_ブーツ_紐_紐2_紐上_金具上_穴;
+    	public ShapePart X0Y0_ブーツ_紐_紐2_紐上_金具上_穴;
 
-    	public Par X0Y0_ブーツ_紐_紐2_紐上_紐;
+    	public ShapePart X0Y0_ブーツ_紐_紐2_紐上_紐;
 
-    	public Par X0Y0_ブーツ_紐_紐3_紐下_金具上_金具;
+    	public ShapePart X0Y0_ブーツ_紐_紐3_紐下_金具上_金具;
 
-    	public Par X0Y0_ブーツ_紐_紐3_紐下_金具上_穴;
+    	public ShapePart X0Y0_ブーツ_紐_紐3_紐下_金具上_穴;
 
-    	public Par X0Y0_ブーツ_紐_紐3_紐下_紐;
+    	public ShapePart X0Y0_ブーツ_紐_紐3_紐下_紐;
 
-    	public Par X0Y0_ブーツ_紐_紐3_紐上_金具上_金具;
+    	public ShapePart X0Y0_ブーツ_紐_紐3_紐上_金具上_金具;
 
-    	public Par X0Y0_ブーツ_紐_紐3_紐上_金具上_穴;
+    	public ShapePart X0Y0_ブーツ_紐_紐3_紐上_金具上_穴;
 
-    	public Par X0Y0_ブーツ_紐_紐3_紐上_紐;
+    	public ShapePart X0Y0_ブーツ_紐_紐3_紐上_紐;
 
-    	public Par X0Y0_ブーツ_紐_紐4_紐下_金具上_金具;
+    	public ShapePart X0Y0_ブーツ_紐_紐4_紐下_金具上_金具;
 
-    	public Par X0Y0_ブーツ_紐_紐4_紐下_金具上_穴;
+    	public ShapePart X0Y0_ブーツ_紐_紐4_紐下_金具上_穴;
 
-    	public Par X0Y0_ブーツ_紐_紐4_紐下_紐;
+    	public ShapePart X0Y0_ブーツ_紐_紐4_紐下_紐;
 
-    	public Par X0Y0_ブーツ_紐_紐4_紐上_金具上_金具;
+    	public ShapePart X0Y0_ブーツ_紐_紐4_紐上_金具上_金具;
 
-    	public Par X0Y0_ブーツ_紐_紐4_紐上_金具上_穴;
+    	public ShapePart X0Y0_ブーツ_紐_紐4_紐上_金具上_穴;
 
-    	public Par X0Y0_ブーツ_紐_紐4_紐上_紐;
+    	public ShapePart X0Y0_ブーツ_紐_紐4_紐上_紐;
 
-    	public Par X0Y0_ブーツ_紐_紐5_紐下_金具上_金具;
+    	public ShapePart X0Y0_ブーツ_紐_紐5_紐下_金具上_金具;
 
-    	public Par X0Y0_ブーツ_紐_紐5_紐下_金具上_穴;
+    	public ShapePart X0Y0_ブーツ_紐_紐5_紐下_金具上_穴;
 
-    	public Par X0Y0_ブーツ_紐_紐5_紐下_紐;
+    	public ShapePart X0Y0_ブーツ_紐_紐5_紐下_紐;
 
-    	public Par X0Y0_ブーツ_紐_紐5_紐上_金具上_金具;
+    	public ShapePart X0Y0_ブーツ_紐_紐5_紐上_金具上_金具;
 
-    	public Par X0Y0_ブーツ_紐_紐5_紐上_金具上_穴;
+    	public ShapePart X0Y0_ブーツ_紐_紐5_紐上_金具上_穴;
 
-    	public Par X0Y0_ブーツ_紐_紐5_紐上_紐;
+    	public ShapePart X0Y0_ブーツ_紐_紐5_紐上_紐;
 
-    	public Par X0Y0_ブーツ_紐_紐6_紐下_金具上_金具;
+    	public ShapePart X0Y0_ブーツ_紐_紐6_紐下_金具上_金具;
 
-    	public Par X0Y0_ブーツ_紐_紐6_紐下_金具上_穴;
+    	public ShapePart X0Y0_ブーツ_紐_紐6_紐下_金具上_穴;
 
-    	public Par X0Y0_ブーツ_紐_紐6_紐下_紐;
+    	public ShapePart X0Y0_ブーツ_紐_紐6_紐下_紐;
 
-    	public Par X0Y0_ブーツ_紐_紐6_紐上_金具上_金具;
+    	public ShapePart X0Y0_ブーツ_紐_紐6_紐上_金具上_金具;
 
-    	public Par X0Y0_ブーツ_紐_紐6_紐上_金具上_穴;
+    	public ShapePart X0Y0_ブーツ_紐_紐6_紐上_金具上_穴;
 
-    	public Par X0Y0_ブーツ_紐_紐6_紐上_紐;
+    	public ShapePart X0Y0_ブーツ_紐_紐6_紐上_紐;
 
-    	public Par X0Y0_ブーツ_紐_紐7_紐下_金具上_金具;
+    	public ShapePart X0Y0_ブーツ_紐_紐7_紐下_金具上_金具;
 
-    	public Par X0Y0_ブーツ_紐_紐7_紐下_金具上_穴;
+    	public ShapePart X0Y0_ブーツ_紐_紐7_紐下_金具上_穴;
 
-    	public Par X0Y0_ブーツ_紐_紐7_紐下_紐;
+    	public ShapePart X0Y0_ブーツ_紐_紐7_紐下_紐;
 
-    	public Par X0Y0_ブーツ_紐_紐7_紐上_金具上_金具;
+    	public ShapePart X0Y0_ブーツ_紐_紐7_紐上_金具上_金具;
 
-    	public Par X0Y0_ブーツ_紐_紐7_紐上_金具上_穴;
+    	public ShapePart X0Y0_ブーツ_紐_紐7_紐上_金具上_穴;
 
-    	public Par X0Y0_ブーツ_紐_紐7_紐上_紐;
+    	public ShapePart X0Y0_ブーツ_紐_紐7_紐上_紐;
 
-    	public Par X0Y0_ブーツ_紐_紐8_紐下_金具上_金具;
+    	public ShapePart X0Y0_ブーツ_紐_紐8_紐下_金具上_金具;
 
-    	public Par X0Y0_ブーツ_紐_紐8_紐下_金具上_穴;
+    	public ShapePart X0Y0_ブーツ_紐_紐8_紐下_金具上_穴;
 
-    	public Par X0Y0_ブーツ_紐_紐8_紐下_紐;
+    	public ShapePart X0Y0_ブーツ_紐_紐8_紐下_紐;
 
-    	public Par X0Y0_ブーツ_紐_紐8_紐上_金具上_金具;
+    	public ShapePart X0Y0_ブーツ_紐_紐8_紐上_金具上_金具;
 
-    	public Par X0Y0_ブーツ_紐_紐8_紐上_金具上_穴;
+    	public ShapePart X0Y0_ブーツ_紐_紐8_紐上_金具上_穴;
 
-    	public Par X0Y0_ブーツ_紐_紐8_紐上_紐;
+    	public ShapePart X0Y0_ブーツ_紐_紐8_紐上_紐;
 
-    	public Par X0Y0_ブーツ_紐_紐9_紐下_金具上_金具;
+    	public ShapePart X0Y0_ブーツ_紐_紐9_紐下_金具上_金具;
 
-    	public Par X0Y0_ブーツ_紐_紐9_紐下_金具上_穴;
+    	public ShapePart X0Y0_ブーツ_紐_紐9_紐下_金具上_穴;
 
-    	public Par X0Y0_ブーツ_紐_紐9_紐下_紐;
+    	public ShapePart X0Y0_ブーツ_紐_紐9_紐下_紐;
 
-    	public Par X0Y0_ブーツ_紐_紐9_紐上_金具上_金具;
+    	public ShapePart X0Y0_ブーツ_紐_紐9_紐上_金具上_金具;
 
-    	public Par X0Y0_ブーツ_紐_紐9_紐上_金具上_穴;
+    	public ShapePart X0Y0_ブーツ_紐_紐9_紐上_金具上_穴;
 
-    	public Par X0Y0_ブーツ_紐_紐9_紐上_紐;
+    	public ShapePart X0Y0_ブーツ_紐_紐9_紐上_紐;
 
-    	public Par X0Y0_ブーツ_紐_紐10_紐下_金具上_金具;
+    	public ShapePart X0Y0_ブーツ_紐_紐10_紐下_金具上_金具;
 
-    	public Par X0Y0_ブーツ_紐_紐10_紐下_金具上_穴;
+    	public ShapePart X0Y0_ブーツ_紐_紐10_紐下_金具上_穴;
 
-    	public Par X0Y0_ブーツ_紐_紐10_紐下_紐;
+    	public ShapePart X0Y0_ブーツ_紐_紐10_紐下_紐;
 
-    	public Par X0Y0_ブーツ_紐_紐10_紐上_金具上_金具;
+    	public ShapePart X0Y0_ブーツ_紐_紐10_紐上_金具上_金具;
 
-    	public Par X0Y0_ブーツ_紐_紐10_紐上_金具上_穴;
+    	public ShapePart X0Y0_ブーツ_紐_紐10_紐上_金具上_穴;
 
-    	public Par X0Y0_ブーツ_紐_紐10_紐上_紐;
+    	public ShapePart X0Y0_ブーツ_紐_紐10_紐上_紐;
 
-    	public Par X0Y0_ブーツ_紐_紐11_紐下_金具上_金具;
+    	public ShapePart X0Y0_ブーツ_紐_紐11_紐下_金具上_金具;
 
-    	public Par X0Y0_ブーツ_紐_紐11_紐下_金具上_穴;
+    	public ShapePart X0Y0_ブーツ_紐_紐11_紐下_金具上_穴;
 
-    	public Par X0Y0_ブーツ_紐_紐11_紐下_紐;
+    	public ShapePart X0Y0_ブーツ_紐_紐11_紐下_紐;
 
-    	public Par X0Y0_ブーツ_紐_紐11_紐上_金具上_金具;
+    	public ShapePart X0Y0_ブーツ_紐_紐11_紐上_金具上_金具;
 
-    	public Par X0Y0_ブーツ_紐_紐11_紐上_金具上_穴;
+    	public ShapePart X0Y0_ブーツ_紐_紐11_紐上_金具上_穴;
 
-    	public Par X0Y0_ブーツ_紐_紐11_紐上_紐;
+    	public ShapePart X0Y0_ブーツ_紐_紐11_紐上_紐;
 
-    	public Par X0Y0_ブーツ_紐_結び_紐左_紐3;
+    	public ShapePart X0Y0_ブーツ_紐_結び_紐左_紐3;
 
-    	public Par X0Y0_ブーツ_紐_結び_紐左_紐2;
+    	public ShapePart X0Y0_ブーツ_紐_結び_紐左_紐2;
 
-    	public Par X0Y0_ブーツ_紐_結び_紐左_紐1;
+    	public ShapePart X0Y0_ブーツ_紐_結び_紐左_紐1;
 
-    	public Par X0Y0_ブーツ_紐_結び_紐右_紐3;
+    	public ShapePart X0Y0_ブーツ_紐_結び_紐右_紐3;
 
-    	public Par X0Y0_ブーツ_紐_結び_紐右_紐2;
+    	public ShapePart X0Y0_ブーツ_紐_結び_紐右_紐2;
 
-    	public Par X0Y0_ブーツ_紐_結び_紐右_紐1;
+    	public ShapePart X0Y0_ブーツ_紐_結び_紐右_紐1;
 
-    	public Par X0Y0_ブーツ_紐_結び_結び目;
+    	public ShapePart X0Y0_ブーツ_紐_結び_結び目;
 
-    	public Par X0Y0_アーマ_ベース;
+    	public ShapePart X0Y0_アーマ_ベース;
 
-    	public Par X0Y0_アーマ_脛当_脛当1;
+    	public ShapePart X0Y0_アーマ_脛当_脛当1;
 
-    	public Par X0Y0_アーマ_脛当_脛当2;
+    	public ShapePart X0Y0_アーマ_脛当_脛当2;
 
-    	public Par X0Y0_アーマ_膝当;
+    	public ShapePart X0Y0_アーマ_膝当;
 
-    	public Par X0Y0_アーマ_穴_穴1;
+    	public ShapePart X0Y0_アーマ_穴_穴1;
 
-    	public Par X0Y0_アーマ_穴_穴2;
+    	public ShapePart X0Y0_アーマ_穴_穴2;
 
-    	public Par X0Y0_アーマ_穴_穴3;
+    	public ShapePart X0Y0_アーマ_穴_穴3;
 
-    	public Par X0Y0_アーマ_穴_穴4;
+    	public ShapePart X0Y0_アーマ_穴_穴4;
 
-    	public Par X0Y0_脚輪上_革;
+    	public ShapePart X0Y0_脚輪上_革;
 
-    	public Par X0Y0_脚輪上_金具1;
+    	public ShapePart X0Y0_脚輪上_金具1;
 
-    	public Par X0Y0_脚輪上_金具2;
+    	public ShapePart X0Y0_脚輪上_金具2;
 
-    	public Par X0Y0_脚輪上_金具3;
+    	public ShapePart X0Y0_脚輪上_金具3;
 
-    	public Par X0Y0_脚輪上_金具左;
+    	public ShapePart X0Y0_脚輪上_金具左;
 
-    	public Par X0Y0_脚輪上_金具右;
+    	public ShapePart X0Y0_脚輪上_金具右;
 
-    	public Par X0Y0_脚輪下_革;
+    	public ShapePart X0Y0_脚輪下_革;
 
-    	public Par X0Y0_脚輪下_金具1;
+    	public ShapePart X0Y0_脚輪下_金具1;
 
-    	public Par X0Y0_脚輪下_金具2;
+    	public ShapePart X0Y0_脚輪下_金具2;
 
-    	public Par X0Y0_脚輪下_金具3;
+    	public ShapePart X0Y0_脚輪下_金具3;
 
-    	public Par X0Y0_脚輪下_金具左;
+    	public ShapePart X0Y0_脚輪下_金具左;
 
-    	public Par X0Y0_脚輪下_金具右;
+    	public ShapePart X0Y0_脚輪下_金具右;
 
-    	public Par X0Y1_Leg;
+    	public ShapePart X0Y1_Leg;
 
-    	public Par X0Y1_筋;
+    	public ShapePart X0Y1_筋;
 
-    	public Par X0Y1_淫タトゥ_足首_タトゥ;
+    	public ShapePart X0Y1_淫タトゥ_足首_タトゥ;
 
-    	public Par X0Y1_淫タトゥ_足首_ハート1_タトゥ左;
+    	public ShapePart X0Y1_淫タトゥ_足首_ハート1_タトゥ左;
 
-    	public Par X0Y1_淫タトゥ_足首_ハート1_タトゥ右;
+    	public ShapePart X0Y1_淫タトゥ_足首_ハート1_タトゥ右;
 
-    	public Par X0Y1_淫タトゥ_足首_ハート3_タトゥ左;
+    	public ShapePart X0Y1_淫タトゥ_足首_ハート3_タトゥ左;
 
-    	public Par X0Y1_淫タトゥ_足首_ハート3_タトゥ右;
+    	public ShapePart X0Y1_淫タトゥ_足首_ハート3_タトゥ右;
 
-    	public Par X0Y1_淫タトゥ_足首_ハート2_タトゥ左;
+    	public ShapePart X0Y1_淫タトゥ_足首_ハート2_タトゥ左;
 
-    	public Par X0Y1_淫タトゥ_足首_ハート2_タトゥ右;
+    	public ShapePart X0Y1_淫タトゥ_足首_ハート2_タトゥ右;
 
-    	public Par X0Y1_淫タトゥ_ハート_タトゥ左;
+    	public ShapePart X0Y1_淫タトゥ_ハート_タトゥ左;
 
-    	public Par X0Y1_淫タトゥ_ハート_タトゥ右;
+    	public ShapePart X0Y1_淫タトゥ_ハート_タトゥ右;
 
-    	public Par X0Y1_淫タトゥ_タトゥ左;
+    	public ShapePart X0Y1_淫タトゥ_タトゥ左;
 
-    	public Par X0Y1_淫タトゥ_タトゥ右;
+    	public ShapePart X0Y1_淫タトゥ_タトゥ右;
 
-    	public Par X0Y1_悪タトゥ_文字1_文字a_枠;
+    	public ShapePart X0Y1_悪タトゥ_文字1_文字a_枠;
 
-    	public Par X0Y1_悪タトゥ_文字1_文字a_文字タトゥ1;
+    	public ShapePart X0Y1_悪タトゥ_文字1_文字a_文字タトゥ1;
 
-    	public Par X0Y1_悪タトゥ_文字1_文字a_文字タトゥ2;
+    	public ShapePart X0Y1_悪タトゥ_文字1_文字a_文字タトゥ2;
 
-    	public Par X0Y1_悪タトゥ_文字1_文字b_枠;
+    	public ShapePart X0Y1_悪タトゥ_文字1_文字b_枠;
 
-    	public Par X0Y1_悪タトゥ_文字1_文字b_文字タトゥ1;
+    	public ShapePart X0Y1_悪タトゥ_文字1_文字b_文字タトゥ1;
 
-    	public Par X0Y1_悪タトゥ_文字1_文字b_文字タトゥ2;
+    	public ShapePart X0Y1_悪タトゥ_文字1_文字b_文字タトゥ2;
 
-    	public Par X0Y1_悪タトゥ_文字1_文字c_枠;
+    	public ShapePart X0Y1_悪タトゥ_文字1_文字c_枠;
 
-    	public Par X0Y1_悪タトゥ_文字1_文字c_文字タトゥ1;
+    	public ShapePart X0Y1_悪タトゥ_文字1_文字c_文字タトゥ1;
 
-    	public Par X0Y1_悪タトゥ_文字1_文字c_文字タトゥ2;
+    	public ShapePart X0Y1_悪タトゥ_文字1_文字c_文字タトゥ2;
 
-    	public Par X0Y1_悪タトゥ_文字1_文字d_枠;
+    	public ShapePart X0Y1_悪タトゥ_文字1_文字d_枠;
 
-    	public Par X0Y1_悪タトゥ_文字1_文字d_文字タトゥ1;
+    	public ShapePart X0Y1_悪タトゥ_文字1_文字d_文字タトゥ1;
 
-    	public Par X0Y1_悪タトゥ_文字1_文字d_文字タトゥ2;
+    	public ShapePart X0Y1_悪タトゥ_文字1_文字d_文字タトゥ2;
 
-    	public Par X0Y1_悪タトゥ_文字1_文字e_枠;
+    	public ShapePart X0Y1_悪タトゥ_文字1_文字e_枠;
 
-    	public Par X0Y1_悪タトゥ_文字1_文字e_文字タトゥ1;
+    	public ShapePart X0Y1_悪タトゥ_文字1_文字e_文字タトゥ1;
 
-    	public Par X0Y1_悪タトゥ_文字1_文字e_文字タトゥ2;
+    	public ShapePart X0Y1_悪タトゥ_文字1_文字e_文字タトゥ2;
 
-    	public Par X0Y1_悪タトゥ_文字1_文字e_文字タトゥ3;
+    	public ShapePart X0Y1_悪タトゥ_文字1_文字e_文字タトゥ3;
 
-    	public Par X0Y1_悪タトゥ_文字2_文字a_枠;
+    	public ShapePart X0Y1_悪タトゥ_文字2_文字a_枠;
 
-    	public Par X0Y1_悪タトゥ_文字2_文字a_文字タトゥ1;
+    	public ShapePart X0Y1_悪タトゥ_文字2_文字a_文字タトゥ1;
 
-    	public Par X0Y1_悪タトゥ_文字2_文字a_文字タトゥ2;
+    	public ShapePart X0Y1_悪タトゥ_文字2_文字a_文字タトゥ2;
 
-    	public Par X0Y1_悪タトゥ_文字2_文字b_枠;
+    	public ShapePart X0Y1_悪タトゥ_文字2_文字b_枠;
 
-    	public Par X0Y1_悪タトゥ_文字2_文字b_文字タトゥ1;
+    	public ShapePart X0Y1_悪タトゥ_文字2_文字b_文字タトゥ1;
 
-    	public Par X0Y1_悪タトゥ_文字2_文字b_文字タトゥ2;
+    	public ShapePart X0Y1_悪タトゥ_文字2_文字b_文字タトゥ2;
 
-    	public Par X0Y1_悪タトゥ_文字2_文字c_枠;
+    	public ShapePart X0Y1_悪タトゥ_文字2_文字c_枠;
 
-    	public Par X0Y1_悪タトゥ_文字2_文字c_文字タトゥ1;
+    	public ShapePart X0Y1_悪タトゥ_文字2_文字c_文字タトゥ1;
 
-    	public Par X0Y1_悪タトゥ_文字2_文字c_文字タトゥ2;
+    	public ShapePart X0Y1_悪タトゥ_文字2_文字c_文字タトゥ2;
 
-    	public Par X0Y1_悪タトゥ_文字2_文字d_枠;
+    	public ShapePart X0Y1_悪タトゥ_文字2_文字d_枠;
 
-    	public Par X0Y1_悪タトゥ_文字2_文字d_文字タトゥ1;
+    	public ShapePart X0Y1_悪タトゥ_文字2_文字d_文字タトゥ1;
 
-    	public Par X0Y1_悪タトゥ_文字2_文字d_文字タトゥ2;
+    	public ShapePart X0Y1_悪タトゥ_文字2_文字d_文字タトゥ2;
 
-    	public Par X0Y1_悪タトゥ_文字2_文字e_枠;
+    	public ShapePart X0Y1_悪タトゥ_文字2_文字e_枠;
 
-    	public Par X0Y1_悪タトゥ_文字2_文字e_文字タトゥ1;
+    	public ShapePart X0Y1_悪タトゥ_文字2_文字e_文字タトゥ1;
 
-    	public Par X0Y1_悪タトゥ_文字2_文字e_文字タトゥ2;
+    	public ShapePart X0Y1_悪タトゥ_文字2_文字e_文字タトゥ2;
 
-    	public Par X0Y1_悪タトゥ_文字2_文字e_文字タトゥ3;
+    	public ShapePart X0Y1_悪タトゥ_文字2_文字e_文字タトゥ3;
 
-    	public Par X0Y1_悪タトゥ_タトゥ1;
+    	public ShapePart X0Y1_悪タトゥ_タトゥ1;
 
-    	public Par X0Y1_悪タトゥ_タトゥ2;
+    	public ShapePart X0Y1_悪タトゥ_タトゥ2;
 
-    	public Par X0Y1_悪タトゥ_逆十字_逆十字1;
+    	public ShapePart X0Y1_悪タトゥ_逆十字_逆十字1;
 
-    	public Par X0Y1_悪タトゥ_逆十字_逆十字2;
+    	public ShapePart X0Y1_悪タトゥ_逆十字_逆十字2;
 
-    	public Par X0Y1_悪タトゥ_タトゥ左;
+    	public ShapePart X0Y1_悪タトゥ_タトゥ左;
 
-    	public Par X0Y1_悪タトゥ_タトゥ右;
+    	public ShapePart X0Y1_悪タトゥ_タトゥ右;
 
-    	public Par X0Y1_紋柄_紋1;
+    	public ShapePart X0Y1_紋柄_紋1;
 
-    	public Par X0Y1_紋柄_紋2;
+    	public ShapePart X0Y1_紋柄_紋2;
 
-    	public Par X0Y1_紋柄_紋3;
+    	public ShapePart X0Y1_紋柄_紋3;
 
-    	public Par X0Y1_紋柄_紋4;
+    	public ShapePart X0Y1_紋柄_紋4;
 
-    	public Par X0Y1_獣性_獣毛1;
+    	public ShapePart X0Y1_獣性_獣毛1;
 
-    	public Par X0Y1_獣性_獣毛2;
+    	public ShapePart X0Y1_獣性_獣毛2;
 
-    	public Par X0Y1_獣性_獣毛3;
+    	public ShapePart X0Y1_獣性_獣毛3;
 
-    	public Par X0Y1_獣性_獣毛4;
+    	public ShapePart X0Y1_獣性_獣毛4;
 
-    	public Par X0Y1_獣性_獣毛5;
+    	public ShapePart X0Y1_獣性_獣毛5;
 
-    	public Par X0Y1_竜性_鱗_鱗1;
+    	public ShapePart X0Y1_竜性_鱗_鱗1;
 
-    	public Par X0Y1_竜性_鱗_鱗2;
+    	public ShapePart X0Y1_竜性_鱗_鱗2;
 
-    	public Par X0Y1_竜性_鱗_鱗3;
+    	public ShapePart X0Y1_竜性_鱗_鱗3;
 
-    	public Par X0Y1_竜性_鱗_鱗4;
+    	public ShapePart X0Y1_竜性_鱗_鱗4;
 
-    	public Par X0Y1_竜性_鱗_鱗5;
+    	public ShapePart X0Y1_竜性_鱗_鱗5;
 
-    	public Par X0Y1_竜性_鱗_鱗6;
+    	public ShapePart X0Y1_竜性_鱗_鱗6;
 
-    	public Par X0Y1_竜性_鱗_鱗7;
+    	public ShapePart X0Y1_竜性_鱗_鱗7;
 
-    	public Par X0Y1_竜性_棘_棘1;
+    	public ShapePart X0Y1_竜性_棘_棘1;
 
-    	public Par X0Y1_竜性_棘_棘2;
+    	public ShapePart X0Y1_竜性_棘_棘2;
 
-    	public Par X0Y1_竜性_棘_棘3;
+    	public ShapePart X0Y1_竜性_棘_棘3;
 
-    	public Par X0Y1_竜性_棘_棘4;
+    	public ShapePart X0Y1_竜性_棘_棘4;
 
-    	public Par X0Y1_竜性_棘_棘5;
+    	public ShapePart X0Y1_竜性_棘_棘5;
 
-    	public Par X0Y1_竜性_棘_棘6;
+    	public ShapePart X0Y1_竜性_棘_棘6;
 
-    	public Par X0Y1_虫性_棘_棘1;
+    	public ShapePart X0Y1_虫性_棘_棘1;
 
-    	public Par X0Y1_虫性_棘_棘2;
+    	public ShapePart X0Y1_虫性_棘_棘2;
 
-    	public Par X0Y1_虫性_棘_棘3;
+    	public ShapePart X0Y1_虫性_棘_棘3;
 
-    	public Par X0Y1_虫性_膝;
+    	public ShapePart X0Y1_虫性_膝;
 
-    	public Par X0Y1_虫性_線;
+    	public ShapePart X0Y1_虫性_線;
 
-    	public Par X0Y1_傷X1;
+    	public ShapePart X0Y1_傷X1;
 
-    	public Par X0Y1_傷X2;
+    	public ShapePart X0Y1_傷X2;
 
-    	public Par X0Y1_傷I1;
+    	public ShapePart X0Y1_傷I1;
 
-    	public Par X0Y1_傷I2;
+    	public ShapePart X0Y1_傷I2;
 
-    	public Par X0Y1_傷I3;
+    	public ShapePart X0Y1_傷I3;
 
-    	public Par X0Y1_傷I4;
+    	public ShapePart X0Y1_傷I4;
 
-    	public Par X0Y1_傷I5;
+    	public ShapePart X0Y1_傷I5;
 
-    	public Par X0Y1_ハイライト1;
+    	public ShapePart X0Y1_ハイライト1;
 
-    	public Par X0Y1_ハイライト2;
+    	public ShapePart X0Y1_ハイライト2;
 
-    	public Par X0Y1_パンスト_パンスト;
+    	public ShapePart X0Y1_パンスト_パンスト;
 
-    	public Par X0Y1_パンスト_ハイライト1;
+    	public ShapePart X0Y1_パンスト_ハイライト1;
 
-    	public Par X0Y1_パンスト_ハイライト2;
+    	public ShapePart X0Y1_パンスト_ハイライト2;
 
-    	public Par X0Y1_ソックス_ソックス;
+    	public ShapePart X0Y1_ソックス_ソックス;
 
-    	public Par X0Y1_ソックス_ハイライト1;
+    	public ShapePart X0Y1_ソックス_ハイライト1;
 
-    	public Par X0Y1_ソックス_ハイライト2;
+    	public ShapePart X0Y1_ソックス_ハイライト2;
 
-    	public Par X0Y1_ブーツ_タン_タン;
+    	public ShapePart X0Y1_ブーツ_タン_タン;
 
-    	public Par X0Y1_ブーツ_タン_縁_縁1;
+    	public ShapePart X0Y1_ブーツ_タン_縁_縁1;
 
-    	public Par X0Y1_ブーツ_タン_縁_縁2;
+    	public ShapePart X0Y1_ブーツ_タン_縁_縁2;
 
-    	public Par X0Y1_ブーツ_ブーツ_ブーツ;
+    	public ShapePart X0Y1_ブーツ_ブーツ_ブーツ;
 
-    	public Par X0Y1_ブーツ_ブーツ_皺_皺1;
+    	public ShapePart X0Y1_ブーツ_ブーツ_皺_皺1;
 
-    	public Par X0Y1_ブーツ_ブーツ_皺_皺2;
+    	public ShapePart X0Y1_ブーツ_ブーツ_皺_皺2;
 
-    	public Par X0Y1_ブーツ_ブーツ_縁_縁1;
+    	public ShapePart X0Y1_ブーツ_ブーツ_縁_縁1;
 
-    	public Par X0Y1_ブーツ_ブーツ_縁_縁2;
+    	public ShapePart X0Y1_ブーツ_ブーツ_縁_縁2;
 
-    	public Par X0Y1_ブーツ_ブーツ_縁_縁3;
+    	public ShapePart X0Y1_ブーツ_ブーツ_縁_縁3;
 
-    	public Par X0Y1_ブーツ_ブーツ_縁_縁4;
+    	public ShapePart X0Y1_ブーツ_ブーツ_縁_縁4;
 
-    	public Par X0Y1_ブーツ_柄;
+    	public ShapePart X0Y1_ブーツ_柄;
 
-    	public Par X0Y1_ブーツ_紐_紐;
+    	public ShapePart X0Y1_ブーツ_紐_紐;
 
-    	public Par X0Y1_ブーツ_紐_紐1_紐下_金具上_金具;
+    	public ShapePart X0Y1_ブーツ_紐_紐1_紐下_金具上_金具;
 
-    	public Par X0Y1_ブーツ_紐_紐1_紐下_金具上_穴;
+    	public ShapePart X0Y1_ブーツ_紐_紐1_紐下_金具上_穴;
 
-    	public Par X0Y1_ブーツ_紐_紐1_紐下_紐;
+    	public ShapePart X0Y1_ブーツ_紐_紐1_紐下_紐;
 
-    	public Par X0Y1_ブーツ_紐_紐1_紐上_金具上_金具;
+    	public ShapePart X0Y1_ブーツ_紐_紐1_紐上_金具上_金具;
 
-    	public Par X0Y1_ブーツ_紐_紐1_紐上_金具上_穴;
+    	public ShapePart X0Y1_ブーツ_紐_紐1_紐上_金具上_穴;
 
-    	public Par X0Y1_ブーツ_紐_紐1_紐上_紐;
+    	public ShapePart X0Y1_ブーツ_紐_紐1_紐上_紐;
 
-    	public Par X0Y1_ブーツ_紐_紐2_紐下_金具上_金具;
+    	public ShapePart X0Y1_ブーツ_紐_紐2_紐下_金具上_金具;
 
-    	public Par X0Y1_ブーツ_紐_紐2_紐下_金具上_穴;
+    	public ShapePart X0Y1_ブーツ_紐_紐2_紐下_金具上_穴;
 
-    	public Par X0Y1_ブーツ_紐_紐2_紐下_紐;
+    	public ShapePart X0Y1_ブーツ_紐_紐2_紐下_紐;
 
-    	public Par X0Y1_ブーツ_紐_紐2_紐上_金具上_金具;
+    	public ShapePart X0Y1_ブーツ_紐_紐2_紐上_金具上_金具;
 
-    	public Par X0Y1_ブーツ_紐_紐2_紐上_金具上_穴;
+    	public ShapePart X0Y1_ブーツ_紐_紐2_紐上_金具上_穴;
 
-    	public Par X0Y1_ブーツ_紐_紐2_紐上_紐;
+    	public ShapePart X0Y1_ブーツ_紐_紐2_紐上_紐;
 
-    	public Par X0Y1_ブーツ_紐_紐3_紐下_金具上_金具;
+    	public ShapePart X0Y1_ブーツ_紐_紐3_紐下_金具上_金具;
 
-    	public Par X0Y1_ブーツ_紐_紐3_紐下_金具上_穴;
+    	public ShapePart X0Y1_ブーツ_紐_紐3_紐下_金具上_穴;
 
-    	public Par X0Y1_ブーツ_紐_紐3_紐下_紐;
+    	public ShapePart X0Y1_ブーツ_紐_紐3_紐下_紐;
 
-    	public Par X0Y1_ブーツ_紐_紐3_紐上_金具上_金具;
+    	public ShapePart X0Y1_ブーツ_紐_紐3_紐上_金具上_金具;
 
-    	public Par X0Y1_ブーツ_紐_紐3_紐上_金具上_穴;
+    	public ShapePart X0Y1_ブーツ_紐_紐3_紐上_金具上_穴;
 
-    	public Par X0Y1_ブーツ_紐_紐3_紐上_紐;
+    	public ShapePart X0Y1_ブーツ_紐_紐3_紐上_紐;
 
-    	public Par X0Y1_ブーツ_紐_紐4_紐下_金具上_金具;
+    	public ShapePart X0Y1_ブーツ_紐_紐4_紐下_金具上_金具;
 
-    	public Par X0Y1_ブーツ_紐_紐4_紐下_金具上_穴;
+    	public ShapePart X0Y1_ブーツ_紐_紐4_紐下_金具上_穴;
 
-    	public Par X0Y1_ブーツ_紐_紐4_紐下_紐;
+    	public ShapePart X0Y1_ブーツ_紐_紐4_紐下_紐;
 
-    	public Par X0Y1_ブーツ_紐_紐4_紐上_金具上_金具;
+    	public ShapePart X0Y1_ブーツ_紐_紐4_紐上_金具上_金具;
 
-    	public Par X0Y1_ブーツ_紐_紐4_紐上_金具上_穴;
+    	public ShapePart X0Y1_ブーツ_紐_紐4_紐上_金具上_穴;
 
-    	public Par X0Y1_ブーツ_紐_紐4_紐上_紐;
+    	public ShapePart X0Y1_ブーツ_紐_紐4_紐上_紐;
 
-    	public Par X0Y1_ブーツ_紐_紐5_紐下_金具上_金具;
+    	public ShapePart X0Y1_ブーツ_紐_紐5_紐下_金具上_金具;
 
-    	public Par X0Y1_ブーツ_紐_紐5_紐下_金具上_穴;
+    	public ShapePart X0Y1_ブーツ_紐_紐5_紐下_金具上_穴;
 
-    	public Par X0Y1_ブーツ_紐_紐5_紐下_紐;
+    	public ShapePart X0Y1_ブーツ_紐_紐5_紐下_紐;
 
-    	public Par X0Y1_ブーツ_紐_紐5_紐上_金具上_金具;
+    	public ShapePart X0Y1_ブーツ_紐_紐5_紐上_金具上_金具;
 
-    	public Par X0Y1_ブーツ_紐_紐5_紐上_金具上_穴;
+    	public ShapePart X0Y1_ブーツ_紐_紐5_紐上_金具上_穴;
 
-    	public Par X0Y1_ブーツ_紐_紐5_紐上_紐;
+    	public ShapePart X0Y1_ブーツ_紐_紐5_紐上_紐;
 
-    	public Par X0Y1_ブーツ_紐_紐6_紐下_金具上_金具;
+    	public ShapePart X0Y1_ブーツ_紐_紐6_紐下_金具上_金具;
 
-    	public Par X0Y1_ブーツ_紐_紐6_紐下_金具上_穴;
+    	public ShapePart X0Y1_ブーツ_紐_紐6_紐下_金具上_穴;
 
-    	public Par X0Y1_ブーツ_紐_紐6_紐下_紐;
+    	public ShapePart X0Y1_ブーツ_紐_紐6_紐下_紐;
 
-    	public Par X0Y1_ブーツ_紐_紐6_紐上_金具上_金具;
+    	public ShapePart X0Y1_ブーツ_紐_紐6_紐上_金具上_金具;
 
-    	public Par X0Y1_ブーツ_紐_紐6_紐上_金具上_穴;
+    	public ShapePart X0Y1_ブーツ_紐_紐6_紐上_金具上_穴;
 
-    	public Par X0Y1_ブーツ_紐_紐6_紐上_紐;
+    	public ShapePart X0Y1_ブーツ_紐_紐6_紐上_紐;
 
-    	public Par X0Y1_ブーツ_紐_紐7_紐下_金具上_金具;
+    	public ShapePart X0Y1_ブーツ_紐_紐7_紐下_金具上_金具;
 
-    	public Par X0Y1_ブーツ_紐_紐7_紐下_金具上_穴;
+    	public ShapePart X0Y1_ブーツ_紐_紐7_紐下_金具上_穴;
 
-    	public Par X0Y1_ブーツ_紐_紐7_紐下_紐;
+    	public ShapePart X0Y1_ブーツ_紐_紐7_紐下_紐;
 
-    	public Par X0Y1_ブーツ_紐_紐7_紐上_金具上_金具;
+    	public ShapePart X0Y1_ブーツ_紐_紐7_紐上_金具上_金具;
 
-    	public Par X0Y1_ブーツ_紐_紐7_紐上_金具上_穴;
+    	public ShapePart X0Y1_ブーツ_紐_紐7_紐上_金具上_穴;
 
-    	public Par X0Y1_ブーツ_紐_紐7_紐上_紐;
+    	public ShapePart X0Y1_ブーツ_紐_紐7_紐上_紐;
 
-    	public Par X0Y1_ブーツ_紐_紐8_紐下_金具上_金具;
+    	public ShapePart X0Y1_ブーツ_紐_紐8_紐下_金具上_金具;
 
-    	public Par X0Y1_ブーツ_紐_紐8_紐下_金具上_穴;
+    	public ShapePart X0Y1_ブーツ_紐_紐8_紐下_金具上_穴;
 
-    	public Par X0Y1_ブーツ_紐_紐8_紐下_紐;
+    	public ShapePart X0Y1_ブーツ_紐_紐8_紐下_紐;
 
-    	public Par X0Y1_ブーツ_紐_紐8_紐上_金具上_金具;
+    	public ShapePart X0Y1_ブーツ_紐_紐8_紐上_金具上_金具;
 
-    	public Par X0Y1_ブーツ_紐_紐8_紐上_金具上_穴;
+    	public ShapePart X0Y1_ブーツ_紐_紐8_紐上_金具上_穴;
 
-    	public Par X0Y1_ブーツ_紐_紐8_紐上_紐;
+    	public ShapePart X0Y1_ブーツ_紐_紐8_紐上_紐;
 
-    	public Par X0Y1_ブーツ_紐_紐9_紐下_金具上_金具;
+    	public ShapePart X0Y1_ブーツ_紐_紐9_紐下_金具上_金具;
 
-    	public Par X0Y1_ブーツ_紐_紐9_紐下_金具上_穴;
+    	public ShapePart X0Y1_ブーツ_紐_紐9_紐下_金具上_穴;
 
-    	public Par X0Y1_ブーツ_紐_紐9_紐下_紐;
+    	public ShapePart X0Y1_ブーツ_紐_紐9_紐下_紐;
 
-    	public Par X0Y1_ブーツ_紐_紐9_紐上_金具上_金具;
+    	public ShapePart X0Y1_ブーツ_紐_紐9_紐上_金具上_金具;
 
-    	public Par X0Y1_ブーツ_紐_紐9_紐上_金具上_穴;
+    	public ShapePart X0Y1_ブーツ_紐_紐9_紐上_金具上_穴;
 
-    	public Par X0Y1_ブーツ_紐_紐9_紐上_紐;
+    	public ShapePart X0Y1_ブーツ_紐_紐9_紐上_紐;
 
-    	public Par X0Y1_ブーツ_紐_紐10_紐下_金具上_金具;
+    	public ShapePart X0Y1_ブーツ_紐_紐10_紐下_金具上_金具;
 
-    	public Par X0Y1_ブーツ_紐_紐10_紐下_金具上_穴;
+    	public ShapePart X0Y1_ブーツ_紐_紐10_紐下_金具上_穴;
 
-    	public Par X0Y1_ブーツ_紐_紐10_紐下_紐;
+    	public ShapePart X0Y1_ブーツ_紐_紐10_紐下_紐;
 
-    	public Par X0Y1_ブーツ_紐_紐10_紐上_金具上_金具;
+    	public ShapePart X0Y1_ブーツ_紐_紐10_紐上_金具上_金具;
 
-    	public Par X0Y1_ブーツ_紐_紐10_紐上_金具上_穴;
+    	public ShapePart X0Y1_ブーツ_紐_紐10_紐上_金具上_穴;
 
-    	public Par X0Y1_ブーツ_紐_紐10_紐上_紐;
+    	public ShapePart X0Y1_ブーツ_紐_紐10_紐上_紐;
 
-    	public Par X0Y1_ブーツ_紐_紐11_紐下_金具上_金具;
+    	public ShapePart X0Y1_ブーツ_紐_紐11_紐下_金具上_金具;
 
-    	public Par X0Y1_ブーツ_紐_紐11_紐下_金具上_穴;
+    	public ShapePart X0Y1_ブーツ_紐_紐11_紐下_金具上_穴;
 
-    	public Par X0Y1_ブーツ_紐_紐11_紐下_紐;
+    	public ShapePart X0Y1_ブーツ_紐_紐11_紐下_紐;
 
-    	public Par X0Y1_ブーツ_紐_紐11_紐上_金具上_金具;
+    	public ShapePart X0Y1_ブーツ_紐_紐11_紐上_金具上_金具;
 
-    	public Par X0Y1_ブーツ_紐_紐11_紐上_金具上_穴;
+    	public ShapePart X0Y1_ブーツ_紐_紐11_紐上_金具上_穴;
 
-    	public Par X0Y1_ブーツ_紐_紐11_紐上_紐;
+    	public ShapePart X0Y1_ブーツ_紐_紐11_紐上_紐;
 
-    	public Par X0Y1_ブーツ_紐_結び_紐左_紐3;
+    	public ShapePart X0Y1_ブーツ_紐_結び_紐左_紐3;
 
-    	public Par X0Y1_ブーツ_紐_結び_紐左_紐2;
+    	public ShapePart X0Y1_ブーツ_紐_結び_紐左_紐2;
 
-    	public Par X0Y1_ブーツ_紐_結び_紐左_紐1;
+    	public ShapePart X0Y1_ブーツ_紐_結び_紐左_紐1;
 
-    	public Par X0Y1_ブーツ_紐_結び_紐右_紐3;
+    	public ShapePart X0Y1_ブーツ_紐_結び_紐右_紐3;
 
-    	public Par X0Y1_ブーツ_紐_結び_紐右_紐2;
+    	public ShapePart X0Y1_ブーツ_紐_結び_紐右_紐2;
 
-    	public Par X0Y1_ブーツ_紐_結び_紐右_紐1;
+    	public ShapePart X0Y1_ブーツ_紐_結び_紐右_紐1;
 
-    	public Par X0Y1_ブーツ_紐_結び_結び目;
+    	public ShapePart X0Y1_ブーツ_紐_結び_結び目;
 
-    	public Par X0Y1_アーマ_ベース;
+    	public ShapePart X0Y1_アーマ_ベース;
 
-    	public Par X0Y1_アーマ_脛当_脛当1;
+    	public ShapePart X0Y1_アーマ_脛当_脛当1;
 
-    	public Par X0Y1_アーマ_脛当_脛当2;
+    	public ShapePart X0Y1_アーマ_脛当_脛当2;
 
-    	public Par X0Y1_アーマ_膝当;
+    	public ShapePart X0Y1_アーマ_膝当;
 
-    	public Par X0Y1_アーマ_穴_穴1;
+    	public ShapePart X0Y1_アーマ_穴_穴1;
 
-    	public Par X0Y1_アーマ_穴_穴2;
+    	public ShapePart X0Y1_アーマ_穴_穴2;
 
-    	public Par X0Y1_アーマ_穴_穴3;
+    	public ShapePart X0Y1_アーマ_穴_穴3;
 
-    	public Par X0Y1_アーマ_穴_穴4;
+    	public ShapePart X0Y1_アーマ_穴_穴4;
 
-    	public Par X0Y1_脚輪上_革;
+    	public ShapePart X0Y1_脚輪上_革;
 
-    	public Par X0Y1_脚輪上_金具1;
+    	public ShapePart X0Y1_脚輪上_金具1;
 
-    	public Par X0Y1_脚輪上_金具2;
+    	public ShapePart X0Y1_脚輪上_金具2;
 
-    	public Par X0Y1_脚輪上_金具3;
+    	public ShapePart X0Y1_脚輪上_金具3;
 
-    	public Par X0Y1_脚輪上_金具左;
+    	public ShapePart X0Y1_脚輪上_金具左;
 
-    	public Par X0Y1_脚輪上_金具右;
+    	public ShapePart X0Y1_脚輪上_金具右;
 
-    	public Par X0Y1_脚輪下_革;
+    	public ShapePart X0Y1_脚輪下_革;
 
-    	public Par X0Y1_脚輪下_金具1;
+    	public ShapePart X0Y1_脚輪下_金具1;
 
-    	public Par X0Y1_脚輪下_金具2;
+    	public ShapePart X0Y1_脚輪下_金具2;
 
-    	public Par X0Y1_脚輪下_金具3;
+    	public ShapePart X0Y1_脚輪下_金具3;
 
-    	public Par X0Y1_脚輪下_金具左;
+    	public ShapePart X0Y1_脚輪下_金具左;
 
-    	public Par X0Y1_脚輪下_金具右;
+    	public ShapePart X0Y1_脚輪下_金具右;
 
     	public ColorD LegCD;
 
@@ -7495,7 +7495,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override bool Is布(Par p)
+    	public override bool Is布(ShapePart p)
     	{
     		if (p != X0Y0_パンスト_パンスト && p != X0Y0_パンスト_ハイライト1 && p != X0Y0_パンスト_ハイライト2 && p != X0Y0_ソックス_ソックス && p != X0Y0_ソックス_ハイライト1 && p != X0Y0_ソックス_ハイライト2 && p != X0Y1_パンスト_パンスト && p != X0Y1_パンスト_ハイライト1 && p != X0Y1_パンスト_ハイライト2 && p != X0Y1_ソックス_ソックス && p != X0Y1_ソックス_ハイライト1)
     		{
@@ -7504,7 +7504,7 @@ namespace SlaveMatrix
     		return true;
     	}
 
-    	public override bool Is革(Par p)
+    	public override bool Is革(ShapePart p)
     	{
     		if (p != X0Y0_ブーツ_タン_タン && p != X0Y0_ブーツ_タン_縁_縁1 && p != X0Y0_ブーツ_タン_縁_縁2 && p != X0Y0_ブーツ_ブーツ_ブーツ && p != X0Y0_ブーツ_ブーツ_皺_皺1 && p != X0Y0_ブーツ_ブーツ_皺_皺2 && p != X0Y0_ブーツ_ブーツ_縁_縁1 && p != X0Y0_ブーツ_ブーツ_縁_縁2 && p != X0Y0_ブーツ_ブーツ_縁_縁3 && p != X0Y0_ブーツ_ブーツ_縁_縁4 && p != X0Y0_ブーツ_柄 && p != X0Y0_ブーツ_紐_紐 && p != X0Y0_ブーツ_紐_紐1_紐下_金具上_金具 && p != X0Y0_ブーツ_紐_紐1_紐下_金具上_穴 && p != X0Y0_ブーツ_紐_紐1_紐下_紐 && p != X0Y0_ブーツ_紐_紐1_紐上_金具上_金具 && p != X0Y0_ブーツ_紐_紐1_紐上_金具上_穴 && p != X0Y0_ブーツ_紐_紐1_紐上_紐 && p != X0Y0_ブーツ_紐_紐2_紐下_金具上_金具 && p != X0Y0_ブーツ_紐_紐2_紐下_金具上_穴 && p != X0Y0_ブーツ_紐_紐2_紐下_紐 && p != X0Y0_ブーツ_紐_紐2_紐上_金具上_金具 && p != X0Y0_ブーツ_紐_紐2_紐上_金具上_穴 && p != X0Y0_ブーツ_紐_紐2_紐上_紐 && p != X0Y0_ブーツ_紐_紐3_紐下_金具上_金具 && p != X0Y0_ブーツ_紐_紐3_紐下_金具上_穴 && p != X0Y0_ブーツ_紐_紐3_紐下_紐 && p != X0Y0_ブーツ_紐_紐3_紐上_金具上_金具 && p != X0Y0_ブーツ_紐_紐3_紐上_金具上_穴 && p != X0Y0_ブーツ_紐_紐3_紐上_紐 && p != X0Y0_ブーツ_紐_紐4_紐下_金具上_金具 && p != X0Y0_ブーツ_紐_紐4_紐下_金具上_穴 && p != X0Y0_ブーツ_紐_紐4_紐下_紐 && p != X0Y0_ブーツ_紐_紐4_紐上_金具上_金具 && p != X0Y0_ブーツ_紐_紐4_紐上_金具上_穴 && p != X0Y0_ブーツ_紐_紐4_紐上_紐 && p != X0Y0_ブーツ_紐_紐5_紐下_金具上_金具 && p != X0Y0_ブーツ_紐_紐5_紐下_金具上_穴 && p != X0Y0_ブーツ_紐_紐5_紐下_紐 && p != X0Y0_ブーツ_紐_紐5_紐上_金具上_金具 && p != X0Y0_ブーツ_紐_紐5_紐上_金具上_穴 && p != X0Y0_ブーツ_紐_紐5_紐上_紐 && p != X0Y0_ブーツ_紐_紐6_紐下_金具上_金具 && p != X0Y0_ブーツ_紐_紐6_紐下_金具上_穴 && p != X0Y0_ブーツ_紐_紐6_紐下_紐 && p != X0Y0_ブーツ_紐_紐6_紐上_金具上_金具 && p != X0Y0_ブーツ_紐_紐6_紐上_金具上_穴 && p != X0Y0_ブーツ_紐_紐6_紐上_紐 && p != X0Y0_ブーツ_紐_紐7_紐下_金具上_金具 && p != X0Y0_ブーツ_紐_紐7_紐下_金具上_穴 && p != X0Y0_ブーツ_紐_紐7_紐下_紐 && p != X0Y0_ブーツ_紐_紐7_紐上_金具上_金具 && p != X0Y0_ブーツ_紐_紐7_紐上_金具上_穴 && p != X0Y0_ブーツ_紐_紐7_紐上_紐 && p != X0Y0_ブーツ_紐_紐8_紐下_金具上_金具 && p != X0Y0_ブーツ_紐_紐8_紐下_金具上_穴 && p != X0Y0_ブーツ_紐_紐8_紐下_紐 && p != X0Y0_ブーツ_紐_紐8_紐上_金具上_金具 && p != X0Y0_ブーツ_紐_紐8_紐上_金具上_穴 && p != X0Y0_ブーツ_紐_紐8_紐上_紐 && p != X0Y0_ブーツ_紐_紐9_紐下_金具上_金具 && p != X0Y0_ブーツ_紐_紐9_紐下_金具上_穴 && p != X0Y0_ブーツ_紐_紐9_紐下_紐 && p != X0Y0_ブーツ_紐_紐9_紐上_金具上_金具 && p != X0Y0_ブーツ_紐_紐9_紐上_金具上_穴 && p != X0Y0_ブーツ_紐_紐9_紐上_紐 && p != X0Y0_ブーツ_紐_紐10_紐下_金具上_金具 && p != X0Y0_ブーツ_紐_紐10_紐下_金具上_穴 && p != X0Y0_ブーツ_紐_紐10_紐下_紐 && p != X0Y0_ブーツ_紐_紐10_紐上_金具上_金具 && p != X0Y0_ブーツ_紐_紐10_紐上_金具上_穴 && p != X0Y0_ブーツ_紐_紐10_紐上_紐 && p != X0Y0_ブーツ_紐_紐11_紐下_金具上_金具 && p != X0Y0_ブーツ_紐_紐11_紐下_金具上_穴 && p != X0Y0_ブーツ_紐_紐11_紐下_紐 && p != X0Y0_ブーツ_紐_紐11_紐上_金具上_金具 && p != X0Y0_ブーツ_紐_紐11_紐上_金具上_穴 && p != X0Y0_ブーツ_紐_紐11_紐上_紐 && p != X0Y0_ブーツ_紐_結び_紐左_紐3 && p != X0Y0_ブーツ_紐_結び_紐左_紐2 && p != X0Y0_ブーツ_紐_結び_紐左_紐1 && p != X0Y0_ブーツ_紐_結び_紐右_紐3 && p != X0Y0_ブーツ_紐_結び_紐右_紐2 && p != X0Y0_ブーツ_紐_結び_紐右_紐1 && p != X0Y0_ブーツ_紐_結び_結び目 && p != X0Y0_脚輪上_革 && p != X0Y0_脚輪上_金具1 && p != X0Y0_脚輪上_金具2 && p != X0Y0_脚輪上_金具3 && p != X0Y0_脚輪上_金具左 && p != X0Y0_脚輪上_金具右 && p != X0Y0_脚輪下_革 && p != X0Y0_脚輪下_金具1 && p != X0Y0_脚輪下_金具2 && p != X0Y0_脚輪下_金具3 && p != X0Y0_脚輪下_金具左 && p != X0Y0_脚輪下_金具右 && p != X0Y1_ブーツ_タン_タン && p != X0Y1_ブーツ_タン_縁_縁1 && p != X0Y1_ブーツ_タン_縁_縁2 && p != X0Y1_ブーツ_ブーツ_ブーツ && p != X0Y1_ブーツ_ブーツ_皺_皺1 && p != X0Y1_ブーツ_ブーツ_皺_皺2 && p != X0Y1_ブーツ_ブーツ_縁_縁1 && p != X0Y1_ブーツ_ブーツ_縁_縁2 && p != X0Y1_ブーツ_ブーツ_縁_縁3 && p != X0Y1_ブーツ_ブーツ_縁_縁4 && p != X0Y1_ブーツ_柄 && p != X0Y1_ブーツ_紐_紐 && p != X0Y1_ブーツ_紐_紐1_紐下_金具上_金具 && p != X0Y1_ブーツ_紐_紐1_紐下_金具上_穴 && p != X0Y1_ブーツ_紐_紐1_紐下_紐 && p != X0Y1_ブーツ_紐_紐1_紐上_金具上_金具 && p != X0Y1_ブーツ_紐_紐1_紐上_金具上_穴 && p != X0Y1_ブーツ_紐_紐1_紐上_紐 && p != X0Y1_ブーツ_紐_紐2_紐下_金具上_金具 && p != X0Y1_ブーツ_紐_紐2_紐下_金具上_穴 && p != X0Y1_ブーツ_紐_紐2_紐下_紐 && p != X0Y1_ブーツ_紐_紐2_紐上_金具上_金具 && p != X0Y1_ブーツ_紐_紐2_紐上_金具上_穴 && p != X0Y1_ブーツ_紐_紐2_紐上_紐 && p != X0Y1_ブーツ_紐_紐3_紐下_金具上_金具 && p != X0Y1_ブーツ_紐_紐3_紐下_金具上_穴 && p != X0Y1_ブーツ_紐_紐3_紐下_紐 && p != X0Y1_ブーツ_紐_紐3_紐上_金具上_金具 && p != X0Y1_ブーツ_紐_紐3_紐上_金具上_穴 && p != X0Y1_ブーツ_紐_紐3_紐上_紐 && p != X0Y1_ブーツ_紐_紐4_紐下_金具上_金具 && p != X0Y1_ブーツ_紐_紐4_紐下_金具上_穴 && p != X0Y1_ブーツ_紐_紐4_紐下_紐 && p != X0Y1_ブーツ_紐_紐4_紐上_金具上_金具 && p != X0Y1_ブーツ_紐_紐4_紐上_金具上_穴 && p != X0Y1_ブーツ_紐_紐4_紐上_紐 && p != X0Y1_ブーツ_紐_紐5_紐下_金具上_金具 && p != X0Y1_ブーツ_紐_紐5_紐下_金具上_穴 && p != X0Y1_ブーツ_紐_紐5_紐下_紐 && p != X0Y1_ブーツ_紐_紐5_紐上_金具上_金具 && p != X0Y1_ブーツ_紐_紐5_紐上_金具上_穴 && p != X0Y1_ブーツ_紐_紐5_紐上_紐 && p != X0Y1_ブーツ_紐_紐6_紐下_金具上_金具 && p != X0Y1_ブーツ_紐_紐6_紐下_金具上_穴 && p != X0Y1_ブーツ_紐_紐6_紐下_紐 && p != X0Y1_ブーツ_紐_紐6_紐上_金具上_金具 && p != X0Y1_ブーツ_紐_紐6_紐上_金具上_穴 && p != X0Y1_ブーツ_紐_紐6_紐上_紐 && p != X0Y1_ブーツ_紐_紐7_紐下_金具上_金具 && p != X0Y1_ブーツ_紐_紐7_紐下_金具上_穴 && p != X0Y1_ブーツ_紐_紐7_紐下_紐 && p != X0Y1_ブーツ_紐_紐7_紐上_金具上_金具 && p != X0Y1_ブーツ_紐_紐7_紐上_金具上_穴 && p != X0Y1_ブーツ_紐_紐7_紐上_紐 && p != X0Y1_ブーツ_紐_紐8_紐下_金具上_金具 && p != X0Y1_ブーツ_紐_紐8_紐下_金具上_穴 && p != X0Y1_ブーツ_紐_紐8_紐下_紐 && p != X0Y1_ブーツ_紐_紐8_紐上_金具上_金具 && p != X0Y1_ブーツ_紐_紐8_紐上_金具上_穴 && p != X0Y1_ブーツ_紐_紐8_紐上_紐 && p != X0Y1_ブーツ_紐_紐9_紐下_金具上_金具 && p != X0Y1_ブーツ_紐_紐9_紐下_金具上_穴 && p != X0Y1_ブーツ_紐_紐9_紐下_紐 && p != X0Y1_ブーツ_紐_紐9_紐上_金具上_金具 && p != X0Y1_ブーツ_紐_紐9_紐上_金具上_穴 && p != X0Y1_ブーツ_紐_紐9_紐上_紐 && p != X0Y1_ブーツ_紐_紐10_紐下_金具上_金具 && p != X0Y1_ブーツ_紐_紐10_紐下_金具上_穴 && p != X0Y1_ブーツ_紐_紐10_紐下_紐 && p != X0Y1_ブーツ_紐_紐10_紐上_金具上_金具 && p != X0Y1_ブーツ_紐_紐10_紐上_金具上_穴 && p != X0Y1_ブーツ_紐_紐10_紐上_紐 && p != X0Y1_ブーツ_紐_紐11_紐下_金具上_金具 && p != X0Y1_ブーツ_紐_紐11_紐下_金具上_穴 && p != X0Y1_ブーツ_紐_紐11_紐下_紐 && p != X0Y1_ブーツ_紐_紐11_紐上_金具上_金具 && p != X0Y1_ブーツ_紐_紐11_紐上_金具上_穴 && p != X0Y1_ブーツ_紐_紐11_紐上_紐 && p != X0Y1_ブーツ_紐_結び_紐左_紐3 && p != X0Y1_ブーツ_紐_結び_紐左_紐2 && p != X0Y1_ブーツ_紐_結び_紐左_紐1 && p != X0Y1_ブーツ_紐_結び_紐右_紐3 && p != X0Y1_ブーツ_紐_結び_紐右_紐2 && p != X0Y1_ブーツ_紐_結び_紐右_紐1 && p != X0Y1_ブーツ_紐_結び_結び目 && p != X0Y1_脚輪上_革 && p != X0Y1_脚輪上_金具1 && p != X0Y1_脚輪上_金具2 && p != X0Y1_脚輪上_金具3 && p != X0Y1_脚輪上_金具左 && p != X0Y1_脚輪上_金具右 && p != X0Y1_脚輪下_革 && p != X0Y1_脚輪下_金具1 && p != X0Y1_脚輪下_金具2 && p != X0Y1_脚輪下_金具3 && p != X0Y1_脚輪下_金具左)
     		{
@@ -7513,7 +7513,7 @@ namespace SlaveMatrix
     		return true;
     	}
 
-    	public override bool Is鉄(Par p)
+    	public override bool Is鉄(ShapePart p)
     	{
     		if (p != X0Y0_アーマ_ベース && p != X0Y0_アーマ_脛当_脛当1 && p != X0Y0_アーマ_脛当_脛当2 && p != X0Y0_アーマ_膝当 && p != X0Y0_アーマ_穴_穴1 && p != X0Y0_アーマ_穴_穴2 && p != X0Y0_アーマ_穴_穴3 && p != X0Y0_アーマ_穴_穴4 && p != X0Y1_アーマ_ベース && p != X0Y1_アーマ_脛当_脛当1 && p != X0Y1_アーマ_脛当_脛当2 && p != X0Y1_アーマ_膝当 && p != X0Y1_アーマ_穴_穴1 && p != X0Y1_アーマ_穴_穴2 && p != X0Y1_アーマ_穴_穴3)
     		{

@@ -13,7 +13,7 @@ namespace SlaveMatrix
 
     	public void Sound(RenderArea Are, Vector2D p, string s, Font f, Color c, double d, bool b)
     	{
-    		ParT pt = new ParT
+    		ShapePartT pt = new ShapePartT
     		{
     			PositionBase = p,
     			Text = s,

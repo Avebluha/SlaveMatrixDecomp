@@ -5,103 +5,103 @@ namespace SlaveMatrix
 {
     public class Neck : Ele
     {
-    	public Par X0Y0_植性_蔦;
+    	public ShapePart X0Y0_植性_蔦;
 
-    	public Par X0Y0_植性_棘左上;
+    	public ShapePart X0Y0_植性_棘左上;
 
-    	public Par X0Y0_植性_棘左下;
+    	public ShapePart X0Y0_植性_棘左下;
 
-    	public Par X0Y0_植性_棘右上;
+    	public ShapePart X0Y0_植性_棘右上;
 
-    	public Par X0Y0_植性_棘右下;
+    	public ShapePart X0Y0_植性_棘右下;
 
-    	public Par X0Y0_Neck;
+    	public ShapePart X0Y0_Neck;
 
-    	public Par X0Y0_淫タトゥ_ハート_タトゥ左;
+    	public ShapePart X0Y0_淫タトゥ_ハート_タトゥ左;
 
-    	public Par X0Y0_淫タトゥ_ハート_タトゥ右;
+    	public ShapePart X0Y0_淫タトゥ_ハート_タトゥ右;
 
-    	public Par X0Y0_淫タトゥ_タトゥ左;
+    	public ShapePart X0Y0_淫タトゥ_タトゥ左;
 
-    	public Par X0Y0_淫タトゥ_タトゥ右;
+    	public ShapePart X0Y0_淫タトゥ_タトゥ右;
 
-    	public Par X0Y0_悪タトゥ_文字_文字a_枠;
+    	public ShapePart X0Y0_悪タトゥ_文字_文字a_枠;
 
-    	public Par X0Y0_悪タトゥ_文字_文字a_文字タトゥ1;
+    	public ShapePart X0Y0_悪タトゥ_文字_文字a_文字タトゥ1;
 
-    	public Par X0Y0_悪タトゥ_文字_文字a_文字タトゥ2;
+    	public ShapePart X0Y0_悪タトゥ_文字_文字a_文字タトゥ2;
 
-    	public Par X0Y0_悪タトゥ_文字_文字b_枠;
+    	public ShapePart X0Y0_悪タトゥ_文字_文字b_枠;
 
-    	public Par X0Y0_悪タトゥ_文字_文字b_文字タトゥ1;
+    	public ShapePart X0Y0_悪タトゥ_文字_文字b_文字タトゥ1;
 
-    	public Par X0Y0_悪タトゥ_文字_文字b_文字タトゥ2;
+    	public ShapePart X0Y0_悪タトゥ_文字_文字b_文字タトゥ2;
 
-    	public Par X0Y0_悪タトゥ_文字_文字c_枠;
+    	public ShapePart X0Y0_悪タトゥ_文字_文字c_枠;
 
-    	public Par X0Y0_悪タトゥ_文字_文字c_文字タトゥ1;
+    	public ShapePart X0Y0_悪タトゥ_文字_文字c_文字タトゥ1;
 
-    	public Par X0Y0_悪タトゥ_文字_文字c_文字タトゥ2;
+    	public ShapePart X0Y0_悪タトゥ_文字_文字c_文字タトゥ2;
 
-    	public Par X0Y0_悪タトゥ_文字_文字d_枠;
+    	public ShapePart X0Y0_悪タトゥ_文字_文字d_枠;
 
-    	public Par X0Y0_悪タトゥ_文字_文字d_文字タトゥ1;
+    	public ShapePart X0Y0_悪タトゥ_文字_文字d_文字タトゥ1;
 
-    	public Par X0Y0_悪タトゥ_文字_文字d_文字タトゥ2;
+    	public ShapePart X0Y0_悪タトゥ_文字_文字d_文字タトゥ2;
 
-    	public Par X0Y0_悪タトゥ_文字_文字e_枠;
+    	public ShapePart X0Y0_悪タトゥ_文字_文字e_枠;
 
-    	public Par X0Y0_悪タトゥ_文字_文字e_文字タトゥ1;
+    	public ShapePart X0Y0_悪タトゥ_文字_文字e_文字タトゥ1;
 
-    	public Par X0Y0_悪タトゥ_文字_文字e_文字タトゥ2;
+    	public ShapePart X0Y0_悪タトゥ_文字_文字e_文字タトゥ2;
 
-    	public Par X0Y0_悪タトゥ_文字_文字e_文字タトゥ3;
+    	public ShapePart X0Y0_悪タトゥ_文字_文字e_文字タトゥ3;
 
-    	public Par X0Y0_悪タトゥ_タトゥ;
+    	public ShapePart X0Y0_悪タトゥ_タトゥ;
 
-    	public Par X0Y0_竜性_鱗1;
+    	public ShapePart X0Y0_竜性_鱗1;
 
-    	public Par X0Y0_竜性_鱗2;
+    	public ShapePart X0Y0_竜性_鱗2;
 
-    	public Par X0Y0_竜性_鱗3;
+    	public ShapePart X0Y0_竜性_鱗3;
 
-    	public Par X0Y0_竜性_鱗4;
+    	public ShapePart X0Y0_竜性_鱗4;
 
-    	public Par X0Y0_竜性_鱗5;
+    	public ShapePart X0Y0_竜性_鱗5;
 
-    	public Par X0Y0_竜性_鱗6;
+    	public ShapePart X0Y0_竜性_鱗6;
 
-    	public Par X0Y0_虫性_蛇腹4;
+    	public ShapePart X0Y0_虫性_蛇腹4;
 
-    	public Par X0Y0_虫性_蛇腹3;
+    	public ShapePart X0Y0_虫性_蛇腹3;
 
-    	public Par X0Y0_虫性_蛇腹2;
+    	public ShapePart X0Y0_虫性_蛇腹2;
 
-    	public Par X0Y0_虫性_蛇腹1;
+    	public ShapePart X0Y0_虫性_蛇腹1;
 
-    	public Par X0Y0_ヴィオラ_左_襟;
+    	public ShapePart X0Y0_ヴィオラ_左_襟;
 
-    	public Par X0Y0_ヴィオラ_左_縁1;
+    	public ShapePart X0Y0_ヴィオラ_左_縁1;
 
-    	public Par X0Y0_ヴィオラ_左_縁2;
+    	public ShapePart X0Y0_ヴィオラ_左_縁2;
 
-    	public Par X0Y0_ヴィオラ_右_襟;
+    	public ShapePart X0Y0_ヴィオラ_右_襟;
 
-    	public Par X0Y0_ヴィオラ_右_縁1;
+    	public ShapePart X0Y0_ヴィオラ_右_縁1;
 
-    	public Par X0Y0_ヴィオラ_右_縁2;
+    	public ShapePart X0Y0_ヴィオラ_右_縁2;
 
-    	public Par X0Y0_首輪_革;
+    	public ShapePart X0Y0_首輪_革;
 
-    	public Par X0Y0_首輪_金具1;
+    	public ShapePart X0Y0_首輪_金具1;
 
-    	public Par X0Y0_首輪_金具2;
+    	public ShapePart X0Y0_首輪_金具2;
 
-    	public Par X0Y0_首輪_金具3;
+    	public ShapePart X0Y0_首輪_金具3;
 
-    	public Par X0Y0_首輪_金具左;
+    	public ShapePart X0Y0_首輪_金具左;
 
-    	public Par X0Y0_首輪_金具右;
+    	public ShapePart X0Y0_首輪_金具右;
 
     	public ColorD 植性_蔦CD;
 
@@ -1461,7 +1461,7 @@ namespace SlaveMatrix
     		鎖2.Dispose();
     	}
 
-    	public override bool Is布(Par p)
+    	public override bool Is布(ShapePart p)
     	{
     		if (p != X0Y0_ヴィオラ_左_襟 && p != X0Y0_ヴィオラ_左_縁1 && p != X0Y0_ヴィオラ_左_縁2 && p != X0Y0_ヴィオラ_右_襟 && p != X0Y0_ヴィオラ_右_縁1)
     		{
@@ -1470,7 +1470,7 @@ namespace SlaveMatrix
     		return true;
     	}
 
-    	public override bool Is革(Par p)
+    	public override bool Is革(ShapePart p)
     	{
     		if (p != X0Y0_首輪_革 && p != X0Y0_首輪_金具1 && p != X0Y0_首輪_金具2 && p != X0Y0_首輪_金具3 && p != X0Y0_首輪_金具左)
     		{

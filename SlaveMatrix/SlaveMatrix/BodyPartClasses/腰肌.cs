@@ -4,215 +4,215 @@ namespace SlaveMatrix
 {
     public class 腰肌 : Ele
     {
-    	public Par X0Y0_淫タトゥ_ハート_タトゥ左1;
+    	public ShapePart X0Y0_淫タトゥ_ハート_タトゥ左1;
 
-    	public Par X0Y0_淫タトゥ_ハート_タトゥ右1;
+    	public ShapePart X0Y0_淫タトゥ_ハート_タトゥ右1;
 
-    	public Par X0Y0_淫タトゥ_ハート_タトゥ左2;
+    	public ShapePart X0Y0_淫タトゥ_ハート_タトゥ左2;
 
-    	public Par X0Y0_淫タトゥ_ハート_タトゥ右2;
+    	public ShapePart X0Y0_淫タトゥ_ハート_タトゥ右2;
 
-    	public Par X0Y0_淫タトゥ_タトゥ1左;
+    	public ShapePart X0Y0_淫タトゥ_タトゥ1左;
 
-    	public Par X0Y0_淫タトゥ_タトゥ1右;
+    	public ShapePart X0Y0_淫タトゥ_タトゥ1右;
 
-    	public Par X0Y0_淫タトゥ_タトゥ2左;
+    	public ShapePart X0Y0_淫タトゥ_タトゥ2左;
 
-    	public Par X0Y0_淫タトゥ_タトゥ2右;
+    	public ShapePart X0Y0_淫タトゥ_タトゥ2右;
 
-    	public Par X0Y0_植タトゥ_タトゥ左;
+    	public ShapePart X0Y0_植タトゥ_タトゥ左;
 
-    	public Par X0Y0_植タトゥ_タトゥ右;
+    	public ShapePart X0Y0_植タトゥ_タトゥ右;
 
-    	public Par X0Y0_陰毛_ハート;
+    	public ShapePart X0Y0_陰毛_ハート;
 
-    	public Par X0Y0_獣性_獣毛;
+    	public ShapePart X0Y0_獣性_獣毛;
 
-    	public Par X0Y0_陰毛;
+    	public ShapePart X0Y0_陰毛;
 
-    	public Par X0Y0_竜性_鱗1;
+    	public ShapePart X0Y0_竜性_鱗1;
 
-    	public Par X0Y0_竜性_鱗2;
+    	public ShapePart X0Y0_竜性_鱗2;
 
-    	public Par X0Y0_竜性_鱗3;
+    	public ShapePart X0Y0_竜性_鱗3;
 
-    	public Par X0Y0_竜性_鱗4;
+    	public ShapePart X0Y0_竜性_鱗4;
 
-    	public Par X0Y0_虫性_腹板2_腹板;
+    	public ShapePart X0Y0_虫性_腹板2_腹板;
 
-    	public Par X0Y0_虫性_腹板2_縦線;
+    	public ShapePart X0Y0_虫性_腹板2_縦線;
 
-    	public Par X0Y0_虫性_腹板1_腹板;
+    	public ShapePart X0Y0_虫性_腹板1_腹板;
 
-    	public Par X0Y0_虫性_腹板1_縦線;
+    	public ShapePart X0Y0_虫性_腹板1_縦線;
 
-    	public Par X0Y1_淫タトゥ_ハート_タトゥ左1;
+    	public ShapePart X0Y1_淫タトゥ_ハート_タトゥ左1;
 
-    	public Par X0Y1_淫タトゥ_ハート_タトゥ右1;
+    	public ShapePart X0Y1_淫タトゥ_ハート_タトゥ右1;
 
-    	public Par X0Y1_淫タトゥ_ハート_タトゥ左2;
+    	public ShapePart X0Y1_淫タトゥ_ハート_タトゥ左2;
 
-    	public Par X0Y1_淫タトゥ_ハート_タトゥ右2;
+    	public ShapePart X0Y1_淫タトゥ_ハート_タトゥ右2;
 
-    	public Par X0Y1_淫タトゥ_タトゥ1左;
+    	public ShapePart X0Y1_淫タトゥ_タトゥ1左;
 
-    	public Par X0Y1_淫タトゥ_タトゥ1右;
+    	public ShapePart X0Y1_淫タトゥ_タトゥ1右;
 
-    	public Par X0Y1_淫タトゥ_タトゥ2左;
+    	public ShapePart X0Y1_淫タトゥ_タトゥ2左;
 
-    	public Par X0Y1_淫タトゥ_タトゥ2右;
+    	public ShapePart X0Y1_淫タトゥ_タトゥ2右;
 
-    	public Par X0Y1_植タトゥ_タトゥ左;
+    	public ShapePart X0Y1_植タトゥ_タトゥ左;
 
-    	public Par X0Y1_植タトゥ_タトゥ右;
+    	public ShapePart X0Y1_植タトゥ_タトゥ右;
 
-    	public Par X0Y1_陰毛_ハート;
+    	public ShapePart X0Y1_陰毛_ハート;
 
-    	public Par X0Y1_獣性_獣毛;
+    	public ShapePart X0Y1_獣性_獣毛;
 
-    	public Par X0Y1_陰毛;
+    	public ShapePart X0Y1_陰毛;
 
-    	public Par X0Y1_竜性_鱗1;
+    	public ShapePart X0Y1_竜性_鱗1;
 
-    	public Par X0Y1_竜性_鱗2;
+    	public ShapePart X0Y1_竜性_鱗2;
 
-    	public Par X0Y1_竜性_鱗3;
+    	public ShapePart X0Y1_竜性_鱗3;
 
-    	public Par X0Y1_竜性_鱗4;
+    	public ShapePart X0Y1_竜性_鱗4;
 
-    	public Par X0Y1_虫性_腹板2_腹板;
+    	public ShapePart X0Y1_虫性_腹板2_腹板;
 
-    	public Par X0Y1_虫性_腹板2_縦線;
+    	public ShapePart X0Y1_虫性_腹板2_縦線;
 
-    	public Par X0Y1_虫性_腹板1_腹板;
+    	public ShapePart X0Y1_虫性_腹板1_腹板;
 
-    	public Par X0Y1_虫性_腹板1_縦線;
+    	public ShapePart X0Y1_虫性_腹板1_縦線;
 
-    	public Par X0Y2_淫タトゥ_ハート_タトゥ左1;
+    	public ShapePart X0Y2_淫タトゥ_ハート_タトゥ左1;
 
-    	public Par X0Y2_淫タトゥ_ハート_タトゥ右1;
+    	public ShapePart X0Y2_淫タトゥ_ハート_タトゥ右1;
 
-    	public Par X0Y2_淫タトゥ_ハート_タトゥ左2;
+    	public ShapePart X0Y2_淫タトゥ_ハート_タトゥ左2;
 
-    	public Par X0Y2_淫タトゥ_ハート_タトゥ右2;
+    	public ShapePart X0Y2_淫タトゥ_ハート_タトゥ右2;
 
-    	public Par X0Y2_淫タトゥ_タトゥ1左;
+    	public ShapePart X0Y2_淫タトゥ_タトゥ1左;
 
-    	public Par X0Y2_淫タトゥ_タトゥ1右;
+    	public ShapePart X0Y2_淫タトゥ_タトゥ1右;
 
-    	public Par X0Y2_淫タトゥ_タトゥ2左;
+    	public ShapePart X0Y2_淫タトゥ_タトゥ2左;
 
-    	public Par X0Y2_淫タトゥ_タトゥ2右;
+    	public ShapePart X0Y2_淫タトゥ_タトゥ2右;
 
-    	public Par X0Y2_植タトゥ_タトゥ左;
+    	public ShapePart X0Y2_植タトゥ_タトゥ左;
 
-    	public Par X0Y2_植タトゥ_タトゥ右;
+    	public ShapePart X0Y2_植タトゥ_タトゥ右;
 
-    	public Par X0Y2_陰毛_ハート;
+    	public ShapePart X0Y2_陰毛_ハート;
 
-    	public Par X0Y2_獣性_獣毛;
+    	public ShapePart X0Y2_獣性_獣毛;
 
-    	public Par X0Y2_陰毛;
+    	public ShapePart X0Y2_陰毛;
 
-    	public Par X0Y2_竜性_鱗1;
+    	public ShapePart X0Y2_竜性_鱗1;
 
-    	public Par X0Y2_竜性_鱗2;
+    	public ShapePart X0Y2_竜性_鱗2;
 
-    	public Par X0Y2_竜性_鱗3;
+    	public ShapePart X0Y2_竜性_鱗3;
 
-    	public Par X0Y2_竜性_鱗4;
+    	public ShapePart X0Y2_竜性_鱗4;
 
-    	public Par X0Y2_虫性_腹板2_腹板;
+    	public ShapePart X0Y2_虫性_腹板2_腹板;
 
-    	public Par X0Y2_虫性_腹板2_縦線;
+    	public ShapePart X0Y2_虫性_腹板2_縦線;
 
-    	public Par X0Y2_虫性_腹板1_腹板;
+    	public ShapePart X0Y2_虫性_腹板1_腹板;
 
-    	public Par X0Y2_虫性_腹板1_縦線;
+    	public ShapePart X0Y2_虫性_腹板1_縦線;
 
-    	public Par X0Y3_淫タトゥ_ハート_タトゥ左1;
+    	public ShapePart X0Y3_淫タトゥ_ハート_タトゥ左1;
 
-    	public Par X0Y3_淫タトゥ_ハート_タトゥ右1;
+    	public ShapePart X0Y3_淫タトゥ_ハート_タトゥ右1;
 
-    	public Par X0Y3_淫タトゥ_ハート_タトゥ左2;
+    	public ShapePart X0Y3_淫タトゥ_ハート_タトゥ左2;
 
-    	public Par X0Y3_淫タトゥ_ハート_タトゥ右2;
+    	public ShapePart X0Y3_淫タトゥ_ハート_タトゥ右2;
 
-    	public Par X0Y3_淫タトゥ_タトゥ1左;
+    	public ShapePart X0Y3_淫タトゥ_タトゥ1左;
 
-    	public Par X0Y3_淫タトゥ_タトゥ1右;
+    	public ShapePart X0Y3_淫タトゥ_タトゥ1右;
 
-    	public Par X0Y3_淫タトゥ_タトゥ2左;
+    	public ShapePart X0Y3_淫タトゥ_タトゥ2左;
 
-    	public Par X0Y3_淫タトゥ_タトゥ2右;
+    	public ShapePart X0Y3_淫タトゥ_タトゥ2右;
 
-    	public Par X0Y3_植タトゥ_タトゥ左;
+    	public ShapePart X0Y3_植タトゥ_タトゥ左;
 
-    	public Par X0Y3_植タトゥ_タトゥ右;
+    	public ShapePart X0Y3_植タトゥ_タトゥ右;
 
-    	public Par X0Y3_陰毛_ハート;
+    	public ShapePart X0Y3_陰毛_ハート;
 
-    	public Par X0Y3_獣性_獣毛;
+    	public ShapePart X0Y3_獣性_獣毛;
 
-    	public Par X0Y3_陰毛;
+    	public ShapePart X0Y3_陰毛;
 
-    	public Par X0Y3_竜性_鱗1;
+    	public ShapePart X0Y3_竜性_鱗1;
 
-    	public Par X0Y3_竜性_鱗2;
+    	public ShapePart X0Y3_竜性_鱗2;
 
-    	public Par X0Y3_竜性_鱗3;
+    	public ShapePart X0Y3_竜性_鱗3;
 
-    	public Par X0Y3_竜性_鱗4;
+    	public ShapePart X0Y3_竜性_鱗4;
 
-    	public Par X0Y3_虫性_腹板2_腹板;
+    	public ShapePart X0Y3_虫性_腹板2_腹板;
 
-    	public Par X0Y3_虫性_腹板2_縦線;
+    	public ShapePart X0Y3_虫性_腹板2_縦線;
 
-    	public Par X0Y3_虫性_腹板1_腹板;
+    	public ShapePart X0Y3_虫性_腹板1_腹板;
 
-    	public Par X0Y3_虫性_腹板1_縦線;
+    	public ShapePart X0Y3_虫性_腹板1_縦線;
 
-    	public Par X0Y4_淫タトゥ_ハート_タトゥ左1;
+    	public ShapePart X0Y4_淫タトゥ_ハート_タトゥ左1;
 
-    	public Par X0Y4_淫タトゥ_ハート_タトゥ右1;
+    	public ShapePart X0Y4_淫タトゥ_ハート_タトゥ右1;
 
-    	public Par X0Y4_淫タトゥ_ハート_タトゥ左2;
+    	public ShapePart X0Y4_淫タトゥ_ハート_タトゥ左2;
 
-    	public Par X0Y4_淫タトゥ_ハート_タトゥ右2;
+    	public ShapePart X0Y4_淫タトゥ_ハート_タトゥ右2;
 
-    	public Par X0Y4_淫タトゥ_タトゥ1左;
+    	public ShapePart X0Y4_淫タトゥ_タトゥ1左;
 
-    	public Par X0Y4_淫タトゥ_タトゥ1右;
+    	public ShapePart X0Y4_淫タトゥ_タトゥ1右;
 
-    	public Par X0Y4_淫タトゥ_タトゥ2左;
+    	public ShapePart X0Y4_淫タトゥ_タトゥ2左;
 
-    	public Par X0Y4_淫タトゥ_タトゥ2右;
+    	public ShapePart X0Y4_淫タトゥ_タトゥ2右;
 
-    	public Par X0Y4_植タトゥ_タトゥ左;
+    	public ShapePart X0Y4_植タトゥ_タトゥ左;
 
-    	public Par X0Y4_植タトゥ_タトゥ右;
+    	public ShapePart X0Y4_植タトゥ_タトゥ右;
 
-    	public Par X0Y4_陰毛_ハート;
+    	public ShapePart X0Y4_陰毛_ハート;
 
-    	public Par X0Y4_獣性_獣毛;
+    	public ShapePart X0Y4_獣性_獣毛;
 
-    	public Par X0Y4_陰毛;
+    	public ShapePart X0Y4_陰毛;
 
-    	public Par X0Y4_竜性_鱗1;
+    	public ShapePart X0Y4_竜性_鱗1;
 
-    	public Par X0Y4_竜性_鱗2;
+    	public ShapePart X0Y4_竜性_鱗2;
 
-    	public Par X0Y4_竜性_鱗3;
+    	public ShapePart X0Y4_竜性_鱗3;
 
-    	public Par X0Y4_竜性_鱗4;
+    	public ShapePart X0Y4_竜性_鱗4;
 
-    	public Par X0Y4_虫性_腹板2_腹板;
+    	public ShapePart X0Y4_虫性_腹板2_腹板;
 
-    	public Par X0Y4_虫性_腹板2_縦線;
+    	public ShapePart X0Y4_虫性_腹板2_縦線;
 
-    	public Par X0Y4_虫性_腹板1_腹板;
+    	public ShapePart X0Y4_虫性_腹板1_腹板;
 
-    	public Par X0Y4_虫性_腹板1_縦線;
+    	public ShapePart X0Y4_虫性_腹板1_縦線;
 
     	public ColorD 淫タトゥ_ハート_タトゥ左1CD;
 

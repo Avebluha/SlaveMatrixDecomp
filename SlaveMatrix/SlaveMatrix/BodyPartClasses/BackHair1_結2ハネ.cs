@@ -4,19 +4,19 @@ namespace SlaveMatrix
 {
     public class BackHair1_結2ハネ : サイド
     {
-    	public Par X0Y0_髪基;
+    	public ShapePart X0Y0_髪基;
 
-    	public Par X0Y0_お下げ左_髪左根;
+    	public ShapePart X0Y0_お下げ左_髪左根;
 
-    	public Par X0Y0_お下げ左_髪左1;
+    	public ShapePart X0Y0_お下げ左_髪左1;
 
-    	public Par X0Y0_お下げ左_髪左2;
+    	public ShapePart X0Y0_お下げ左_髪左2;
 
-    	public Par X0Y0_お下げ右_髪右根;
+    	public ShapePart X0Y0_お下げ右_髪右根;
 
-    	public Par X0Y0_お下げ右_髪右1;
+    	public ShapePart X0Y0_お下げ右_髪右1;
 
-    	public Par X0Y0_お下げ右_髪右2;
+    	public ShapePart X0Y0_お下げ右_髪右2;
 
     	public ColorD 髪基CD;
 

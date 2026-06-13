@@ -5,685 +5,685 @@ namespace SlaveMatrix
 {
     public class 触手_軟 : 触手
     {
-    	public Par X0Y0_節1_節;
+    	public ShapePart X0Y0_節1_節;
 
-    	public Par X0Y0_節1_紋柄1;
+    	public ShapePart X0Y0_節1_紋柄1;
 
-    	public Par X0Y0_節1_紋柄2;
+    	public ShapePart X0Y0_節1_紋柄2;
 
-    	public Par X0Y0_節1_鎧;
+    	public ShapePart X0Y0_節1_鎧;
 
-    	public Par X0Y0_節1_吸盤1;
+    	public ShapePart X0Y0_節1_吸盤1;
 
-    	public Par X0Y0_節1_吸盤2;
+    	public ShapePart X0Y0_節1_吸盤2;
 
-    	public Par X0Y0_節1_吸盤3;
+    	public ShapePart X0Y0_節1_吸盤3;
 
-    	public Par X0Y0_節1_吸盤4;
+    	public ShapePart X0Y0_節1_吸盤4;
 
-    	public Par X0Y0_節2_節;
+    	public ShapePart X0Y0_節2_節;
 
-    	public Par X0Y0_節2_紋柄1;
+    	public ShapePart X0Y0_節2_紋柄1;
 
-    	public Par X0Y0_節2_紋柄2;
+    	public ShapePart X0Y0_節2_紋柄2;
 
-    	public Par X0Y0_節2_鎧;
+    	public ShapePart X0Y0_節2_鎧;
 
-    	public Par X0Y0_節2_吸盤1;
+    	public ShapePart X0Y0_節2_吸盤1;
 
-    	public Par X0Y0_節2_吸盤2;
+    	public ShapePart X0Y0_節2_吸盤2;
 
-    	public Par X0Y0_節2_吸盤3;
+    	public ShapePart X0Y0_節2_吸盤3;
 
-    	public Par X0Y0_節2_吸盤4;
+    	public ShapePart X0Y0_節2_吸盤4;
 
-    	public Par X0Y0_節3_節;
+    	public ShapePart X0Y0_節3_節;
 
-    	public Par X0Y0_節3_紋柄1;
+    	public ShapePart X0Y0_節3_紋柄1;
 
-    	public Par X0Y0_節3_紋柄2;
+    	public ShapePart X0Y0_節3_紋柄2;
 
-    	public Par X0Y0_節3_鎧;
+    	public ShapePart X0Y0_節3_鎧;
 
-    	public Par X0Y0_節3_吸盤1;
+    	public ShapePart X0Y0_節3_吸盤1;
 
-    	public Par X0Y0_節3_吸盤2;
+    	public ShapePart X0Y0_節3_吸盤2;
 
-    	public Par X0Y0_節3_吸盤3;
+    	public ShapePart X0Y0_節3_吸盤3;
 
-    	public Par X0Y0_節3_吸盤4;
+    	public ShapePart X0Y0_節3_吸盤4;
 
-    	public Par X0Y0_節4_節;
+    	public ShapePart X0Y0_節4_節;
 
-    	public Par X0Y0_節4_紋柄1;
+    	public ShapePart X0Y0_節4_紋柄1;
 
-    	public Par X0Y0_節4_紋柄2;
+    	public ShapePart X0Y0_節4_紋柄2;
 
-    	public Par X0Y0_節4_鎧;
+    	public ShapePart X0Y0_節4_鎧;
 
-    	public Par X0Y0_節4_吸盤1;
+    	public ShapePart X0Y0_節4_吸盤1;
 
-    	public Par X0Y0_節4_吸盤2;
+    	public ShapePart X0Y0_節4_吸盤2;
 
-    	public Par X0Y0_節4_吸盤3;
+    	public ShapePart X0Y0_節4_吸盤3;
 
-    	public Par X0Y0_節4_吸盤4;
+    	public ShapePart X0Y0_節4_吸盤4;
 
-    	public Par X0Y0_節5_節;
+    	public ShapePart X0Y0_節5_節;
 
-    	public Par X0Y0_節5_紋柄1;
+    	public ShapePart X0Y0_節5_紋柄1;
 
-    	public Par X0Y0_節5_紋柄2;
+    	public ShapePart X0Y0_節5_紋柄2;
 
-    	public Par X0Y0_節5_鎧;
+    	public ShapePart X0Y0_節5_鎧;
 
-    	public Par X0Y0_節5_吸盤1;
+    	public ShapePart X0Y0_節5_吸盤1;
 
-    	public Par X0Y0_節5_吸盤2;
+    	public ShapePart X0Y0_節5_吸盤2;
 
-    	public Par X0Y0_節5_吸盤3;
+    	public ShapePart X0Y0_節5_吸盤3;
 
-    	public Par X0Y0_節5_吸盤4;
+    	public ShapePart X0Y0_節5_吸盤4;
 
-    	public Par X0Y0_節6_節;
+    	public ShapePart X0Y0_節6_節;
 
-    	public Par X0Y0_節6_紋柄1;
+    	public ShapePart X0Y0_節6_紋柄1;
 
-    	public Par X0Y0_節6_紋柄2;
+    	public ShapePart X0Y0_節6_紋柄2;
 
-    	public Par X0Y0_節6_鎧;
+    	public ShapePart X0Y0_節6_鎧;
 
-    	public Par X0Y0_節6_吸盤1;
+    	public ShapePart X0Y0_節6_吸盤1;
 
-    	public Par X0Y0_節6_吸盤2;
+    	public ShapePart X0Y0_節6_吸盤2;
 
-    	public Par X0Y0_節6_吸盤3;
+    	public ShapePart X0Y0_節6_吸盤3;
 
-    	public Par X0Y0_節6_吸盤4;
+    	public ShapePart X0Y0_節6_吸盤4;
 
-    	public Par X0Y0_節7_節;
+    	public ShapePart X0Y0_節7_節;
 
-    	public Par X0Y0_節7_紋柄1;
+    	public ShapePart X0Y0_節7_紋柄1;
 
-    	public Par X0Y0_節7_紋柄2;
+    	public ShapePart X0Y0_節7_紋柄2;
 
-    	public Par X0Y0_節7_鎧;
+    	public ShapePart X0Y0_節7_鎧;
 
-    	public Par X0Y0_節7_吸盤1;
+    	public ShapePart X0Y0_節7_吸盤1;
 
-    	public Par X0Y0_節7_吸盤2;
+    	public ShapePart X0Y0_節7_吸盤2;
 
-    	public Par X0Y0_節7_吸盤3;
+    	public ShapePart X0Y0_節7_吸盤3;
 
-    	public Par X0Y0_節7_吸盤4;
+    	public ShapePart X0Y0_節7_吸盤4;
 
-    	public Par X0Y0_節8_節;
+    	public ShapePart X0Y0_節8_節;
 
-    	public Par X0Y0_節8_紋柄1;
+    	public ShapePart X0Y0_節8_紋柄1;
 
-    	public Par X0Y0_節8_紋柄2;
+    	public ShapePart X0Y0_節8_紋柄2;
 
-    	public Par X0Y0_節8_鎧;
+    	public ShapePart X0Y0_節8_鎧;
 
-    	public Par X0Y0_節8_吸盤1;
+    	public ShapePart X0Y0_節8_吸盤1;
 
-    	public Par X0Y0_節8_吸盤2;
+    	public ShapePart X0Y0_節8_吸盤2;
 
-    	public Par X0Y0_節8_吸盤3;
+    	public ShapePart X0Y0_節8_吸盤3;
 
-    	public Par X0Y0_節8_吸盤4;
+    	public ShapePart X0Y0_節8_吸盤4;
 
-    	public Par X0Y0_輪1_革;
+    	public ShapePart X0Y0_輪1_革;
 
-    	public Par X0Y0_輪1_金具1;
+    	public ShapePart X0Y0_輪1_金具1;
 
-    	public Par X0Y0_輪1_金具2;
+    	public ShapePart X0Y0_輪1_金具2;
 
-    	public Par X0Y0_輪1_金具3;
+    	public ShapePart X0Y0_輪1_金具3;
 
-    	public Par X0Y0_輪1_金具左;
+    	public ShapePart X0Y0_輪1_金具左;
 
-    	public Par X0Y0_輪1_金具右;
+    	public ShapePart X0Y0_輪1_金具右;
 
-    	public Par X0Y0_節9_節;
+    	public ShapePart X0Y0_節9_節;
 
-    	public Par X0Y0_節9_紋柄1;
+    	public ShapePart X0Y0_節9_紋柄1;
 
-    	public Par X0Y0_節9_紋柄2;
+    	public ShapePart X0Y0_節9_紋柄2;
 
-    	public Par X0Y0_節9_鎧;
+    	public ShapePart X0Y0_節9_鎧;
 
-    	public Par X0Y0_節9_吸盤1;
+    	public ShapePart X0Y0_節9_吸盤1;
 
-    	public Par X0Y0_節9_吸盤2;
+    	public ShapePart X0Y0_節9_吸盤2;
 
-    	public Par X0Y0_節9_吸盤3;
+    	public ShapePart X0Y0_節9_吸盤3;
 
-    	public Par X0Y0_節9_吸盤4;
+    	public ShapePart X0Y0_節9_吸盤4;
 
-    	public Par X0Y0_節10_節;
+    	public ShapePart X0Y0_節10_節;
 
-    	public Par X0Y0_節10_紋柄1;
+    	public ShapePart X0Y0_節10_紋柄1;
 
-    	public Par X0Y0_節10_紋柄2;
+    	public ShapePart X0Y0_節10_紋柄2;
 
-    	public Par X0Y0_節10_鎧;
+    	public ShapePart X0Y0_節10_鎧;
 
-    	public Par X0Y0_節10_吸盤1;
+    	public ShapePart X0Y0_節10_吸盤1;
 
-    	public Par X0Y0_節10_吸盤2;
+    	public ShapePart X0Y0_節10_吸盤2;
 
-    	public Par X0Y0_節10_吸盤3;
+    	public ShapePart X0Y0_節10_吸盤3;
 
-    	public Par X0Y0_節10_吸盤4;
+    	public ShapePart X0Y0_節10_吸盤4;
 
-    	public Par X0Y0_節11_節;
+    	public ShapePart X0Y0_節11_節;
 
-    	public Par X0Y0_節11_紋柄1;
+    	public ShapePart X0Y0_節11_紋柄1;
 
-    	public Par X0Y0_節11_紋柄2;
+    	public ShapePart X0Y0_節11_紋柄2;
 
-    	public Par X0Y0_節11_鎧;
+    	public ShapePart X0Y0_節11_鎧;
 
-    	public Par X0Y0_節11_吸盤1;
+    	public ShapePart X0Y0_節11_吸盤1;
 
-    	public Par X0Y0_節11_吸盤2;
+    	public ShapePart X0Y0_節11_吸盤2;
 
-    	public Par X0Y0_節11_吸盤3;
+    	public ShapePart X0Y0_節11_吸盤3;
 
-    	public Par X0Y0_節11_吸盤4;
+    	public ShapePart X0Y0_節11_吸盤4;
 
-    	public Par X0Y0_節12_節;
+    	public ShapePart X0Y0_節12_節;
 
-    	public Par X0Y0_節12_紋柄1;
+    	public ShapePart X0Y0_節12_紋柄1;
 
-    	public Par X0Y0_節12_紋柄2;
+    	public ShapePart X0Y0_節12_紋柄2;
 
-    	public Par X0Y0_節12_鎧;
+    	public ShapePart X0Y0_節12_鎧;
 
-    	public Par X0Y0_節12_吸盤1;
+    	public ShapePart X0Y0_節12_吸盤1;
 
-    	public Par X0Y0_節12_吸盤2;
+    	public ShapePart X0Y0_節12_吸盤2;
 
-    	public Par X0Y0_節12_吸盤3;
+    	public ShapePart X0Y0_節12_吸盤3;
 
-    	public Par X0Y0_節12_吸盤4;
+    	public ShapePart X0Y0_節12_吸盤4;
 
-    	public Par X0Y0_節13_節;
+    	public ShapePart X0Y0_節13_節;
 
-    	public Par X0Y0_節13_紋柄1;
+    	public ShapePart X0Y0_節13_紋柄1;
 
-    	public Par X0Y0_節13_紋柄2;
+    	public ShapePart X0Y0_節13_紋柄2;
 
-    	public Par X0Y0_節13_鎧;
+    	public ShapePart X0Y0_節13_鎧;
 
-    	public Par X0Y0_節13_吸盤1;
+    	public ShapePart X0Y0_節13_吸盤1;
 
-    	public Par X0Y0_節13_吸盤2;
+    	public ShapePart X0Y0_節13_吸盤2;
 
-    	public Par X0Y0_節13_吸盤3;
+    	public ShapePart X0Y0_節13_吸盤3;
 
-    	public Par X0Y0_節13_吸盤4;
+    	public ShapePart X0Y0_節13_吸盤4;
 
-    	public Par X0Y0_節14_節;
+    	public ShapePart X0Y0_節14_節;
 
-    	public Par X0Y0_節14_紋柄1;
+    	public ShapePart X0Y0_節14_紋柄1;
 
-    	public Par X0Y0_節14_紋柄2;
+    	public ShapePart X0Y0_節14_紋柄2;
 
-    	public Par X0Y0_節14_鎧;
+    	public ShapePart X0Y0_節14_鎧;
 
-    	public Par X0Y0_節14_吸盤1;
+    	public ShapePart X0Y0_節14_吸盤1;
 
-    	public Par X0Y0_節14_吸盤2;
+    	public ShapePart X0Y0_節14_吸盤2;
 
-    	public Par X0Y0_節14_吸盤3;
+    	public ShapePart X0Y0_節14_吸盤3;
 
-    	public Par X0Y0_節14_吸盤4;
+    	public ShapePart X0Y0_節14_吸盤4;
 
-    	public Par X0Y0_節15_節;
+    	public ShapePart X0Y0_節15_節;
 
-    	public Par X0Y0_節15_紋柄1;
+    	public ShapePart X0Y0_節15_紋柄1;
 
-    	public Par X0Y0_節15_紋柄2;
+    	public ShapePart X0Y0_節15_紋柄2;
 
-    	public Par X0Y0_節15_鎧;
+    	public ShapePart X0Y0_節15_鎧;
 
-    	public Par X0Y0_節15_吸盤1;
+    	public ShapePart X0Y0_節15_吸盤1;
 
-    	public Par X0Y0_節15_吸盤2;
+    	public ShapePart X0Y0_節15_吸盤2;
 
-    	public Par X0Y0_節15_吸盤3;
+    	public ShapePart X0Y0_節15_吸盤3;
 
-    	public Par X0Y0_節15_吸盤4;
+    	public ShapePart X0Y0_節15_吸盤4;
 
-    	public Par X0Y0_節16_節;
+    	public ShapePart X0Y0_節16_節;
 
-    	public Par X0Y0_節16_紋柄1;
+    	public ShapePart X0Y0_節16_紋柄1;
 
-    	public Par X0Y0_節16_紋柄2;
+    	public ShapePart X0Y0_節16_紋柄2;
 
-    	public Par X0Y0_節16_鎧;
+    	public ShapePart X0Y0_節16_鎧;
 
-    	public Par X0Y0_節16_吸盤1;
+    	public ShapePart X0Y0_節16_吸盤1;
 
-    	public Par X0Y0_節16_吸盤2;
+    	public ShapePart X0Y0_節16_吸盤2;
 
-    	public Par X0Y0_節16_吸盤3;
+    	public ShapePart X0Y0_節16_吸盤3;
 
-    	public Par X0Y0_節16_吸盤4;
+    	public ShapePart X0Y0_節16_吸盤4;
 
-    	public Par X0Y0_節17_節;
+    	public ShapePart X0Y0_節17_節;
 
-    	public Par X0Y0_節17_紋柄1;
+    	public ShapePart X0Y0_節17_紋柄1;
 
-    	public Par X0Y0_節17_紋柄2;
+    	public ShapePart X0Y0_節17_紋柄2;
 
-    	public Par X0Y0_節17_鎧;
+    	public ShapePart X0Y0_節17_鎧;
 
-    	public Par X0Y0_節17_吸盤1;
+    	public ShapePart X0Y0_節17_吸盤1;
 
-    	public Par X0Y0_節17_吸盤2;
+    	public ShapePart X0Y0_節17_吸盤2;
 
-    	public Par X0Y0_節17_吸盤3;
+    	public ShapePart X0Y0_節17_吸盤3;
 
-    	public Par X0Y0_節17_吸盤4;
+    	public ShapePart X0Y0_節17_吸盤4;
 
-    	public Par X0Y0_節18_節;
+    	public ShapePart X0Y0_節18_節;
 
-    	public Par X0Y0_節18_紋柄1;
+    	public ShapePart X0Y0_節18_紋柄1;
 
-    	public Par X0Y0_節18_紋柄2;
+    	public ShapePart X0Y0_節18_紋柄2;
 
-    	public Par X0Y0_節18_鎧;
+    	public ShapePart X0Y0_節18_鎧;
 
-    	public Par X0Y0_節18_吸盤1;
+    	public ShapePart X0Y0_節18_吸盤1;
 
-    	public Par X0Y0_節18_吸盤2;
+    	public ShapePart X0Y0_節18_吸盤2;
 
-    	public Par X0Y0_節18_吸盤3;
+    	public ShapePart X0Y0_節18_吸盤3;
 
-    	public Par X0Y0_節18_吸盤4;
+    	public ShapePart X0Y0_節18_吸盤4;
 
-    	public Par X0Y0_節19_節;
+    	public ShapePart X0Y0_節19_節;
 
-    	public Par X0Y0_節19_紋柄1;
+    	public ShapePart X0Y0_節19_紋柄1;
 
-    	public Par X0Y0_節19_紋柄2;
+    	public ShapePart X0Y0_節19_紋柄2;
 
-    	public Par X0Y0_節19_鎧;
+    	public ShapePart X0Y0_節19_鎧;
 
-    	public Par X0Y0_節19_吸盤1;
+    	public ShapePart X0Y0_節19_吸盤1;
 
-    	public Par X0Y0_節19_吸盤2;
+    	public ShapePart X0Y0_節19_吸盤2;
 
-    	public Par X0Y0_節19_吸盤3;
+    	public ShapePart X0Y0_節19_吸盤3;
 
-    	public Par X0Y0_節19_吸盤4;
+    	public ShapePart X0Y0_節19_吸盤4;
 
-    	public Par X0Y0_輪2_革;
+    	public ShapePart X0Y0_輪2_革;
 
-    	public Par X0Y0_輪2_金具1;
+    	public ShapePart X0Y0_輪2_金具1;
 
-    	public Par X0Y0_輪2_金具2;
+    	public ShapePart X0Y0_輪2_金具2;
 
-    	public Par X0Y0_輪2_金具3;
+    	public ShapePart X0Y0_輪2_金具3;
 
-    	public Par X0Y0_輪2_金具左;
+    	public ShapePart X0Y0_輪2_金具左;
 
-    	public Par X0Y0_輪2_金具右;
+    	public ShapePart X0Y0_輪2_金具右;
 
-    	public Par X0Y0_節20_節;
+    	public ShapePart X0Y0_節20_節;
 
-    	public Par X0Y0_節20_紋柄1;
+    	public ShapePart X0Y0_節20_紋柄1;
 
-    	public Par X0Y0_節20_紋柄2;
+    	public ShapePart X0Y0_節20_紋柄2;
 
-    	public Par X0Y0_節20_鎧;
+    	public ShapePart X0Y0_節20_鎧;
 
-    	public Par X0Y0_節20_吸盤1;
+    	public ShapePart X0Y0_節20_吸盤1;
 
-    	public Par X0Y0_節20_吸盤2;
+    	public ShapePart X0Y0_節20_吸盤2;
 
-    	public Par X0Y0_節20_吸盤3;
+    	public ShapePart X0Y0_節20_吸盤3;
 
-    	public Par X0Y0_節20_吸盤4;
+    	public ShapePart X0Y0_節20_吸盤4;
 
-    	public Par X0Y0_節21_節;
+    	public ShapePart X0Y0_節21_節;
 
-    	public Par X0Y0_節21_紋柄1;
+    	public ShapePart X0Y0_節21_紋柄1;
 
-    	public Par X0Y0_節21_紋柄2;
+    	public ShapePart X0Y0_節21_紋柄2;
 
-    	public Par X0Y0_節21_鎧;
+    	public ShapePart X0Y0_節21_鎧;
 
-    	public Par X0Y0_節21_吸盤1;
+    	public ShapePart X0Y0_節21_吸盤1;
 
-    	public Par X0Y0_節21_吸盤2;
+    	public ShapePart X0Y0_節21_吸盤2;
 
-    	public Par X0Y0_節21_吸盤3;
+    	public ShapePart X0Y0_節21_吸盤3;
 
-    	public Par X0Y0_節21_吸盤4;
+    	public ShapePart X0Y0_節21_吸盤4;
 
-    	public Par X0Y0_節22_節;
+    	public ShapePart X0Y0_節22_節;
 
-    	public Par X0Y0_節22_紋柄1;
+    	public ShapePart X0Y0_節22_紋柄1;
 
-    	public Par X0Y0_節22_紋柄2;
+    	public ShapePart X0Y0_節22_紋柄2;
 
-    	public Par X0Y0_節22_鎧;
+    	public ShapePart X0Y0_節22_鎧;
 
-    	public Par X0Y0_節22_吸盤1;
+    	public ShapePart X0Y0_節22_吸盤1;
 
-    	public Par X0Y0_節22_吸盤2;
+    	public ShapePart X0Y0_節22_吸盤2;
 
-    	public Par X0Y0_節22_吸盤3;
+    	public ShapePart X0Y0_節22_吸盤3;
 
-    	public Par X0Y0_節22_吸盤4;
+    	public ShapePart X0Y0_節22_吸盤4;
 
-    	public Par X0Y0_節23_節;
+    	public ShapePart X0Y0_節23_節;
 
-    	public Par X0Y0_節23_紋柄1;
+    	public ShapePart X0Y0_節23_紋柄1;
 
-    	public Par X0Y0_節23_紋柄2;
+    	public ShapePart X0Y0_節23_紋柄2;
 
-    	public Par X0Y0_節23_鎧;
+    	public ShapePart X0Y0_節23_鎧;
 
-    	public Par X0Y0_節23_吸盤1;
+    	public ShapePart X0Y0_節23_吸盤1;
 
-    	public Par X0Y0_節23_吸盤2;
+    	public ShapePart X0Y0_節23_吸盤2;
 
-    	public Par X0Y0_節23_吸盤3;
+    	public ShapePart X0Y0_節23_吸盤3;
 
-    	public Par X0Y0_節23_吸盤4;
+    	public ShapePart X0Y0_節23_吸盤4;
 
-    	public Par X0Y0_節24_節;
+    	public ShapePart X0Y0_節24_節;
 
-    	public Par X0Y0_節24_紋柄1;
+    	public ShapePart X0Y0_節24_紋柄1;
 
-    	public Par X0Y0_節24_紋柄2;
+    	public ShapePart X0Y0_節24_紋柄2;
 
-    	public Par X0Y0_節24_鎧;
+    	public ShapePart X0Y0_節24_鎧;
 
-    	public Par X0Y0_節24_吸盤1;
+    	public ShapePart X0Y0_節24_吸盤1;
 
-    	public Par X0Y0_節24_吸盤2;
+    	public ShapePart X0Y0_節24_吸盤2;
 
-    	public Par X0Y0_節24_吸盤3;
+    	public ShapePart X0Y0_節24_吸盤3;
 
-    	public Par X0Y0_節24_吸盤4;
+    	public ShapePart X0Y0_節24_吸盤4;
 
-    	public Par X0Y0_節25_節;
+    	public ShapePart X0Y0_節25_節;
 
-    	public Par X0Y0_節25_紋柄1;
+    	public ShapePart X0Y0_節25_紋柄1;
 
-    	public Par X0Y0_節25_紋柄2;
+    	public ShapePart X0Y0_節25_紋柄2;
 
-    	public Par X0Y0_節25_鎧;
+    	public ShapePart X0Y0_節25_鎧;
 
-    	public Par X0Y0_節25_吸盤1;
+    	public ShapePart X0Y0_節25_吸盤1;
 
-    	public Par X0Y0_節25_吸盤2;
+    	public ShapePart X0Y0_節25_吸盤2;
 
-    	public Par X0Y0_節25_吸盤3;
+    	public ShapePart X0Y0_節25_吸盤3;
 
-    	public Par X0Y0_節25_吸盤4;
+    	public ShapePart X0Y0_節25_吸盤4;
 
-    	public Par X0Y0_節26_節;
+    	public ShapePart X0Y0_節26_節;
 
-    	public Par X0Y0_節26_紋柄1;
+    	public ShapePart X0Y0_節26_紋柄1;
 
-    	public Par X0Y0_節26_紋柄2;
+    	public ShapePart X0Y0_節26_紋柄2;
 
-    	public Par X0Y0_節26_鎧;
+    	public ShapePart X0Y0_節26_鎧;
 
-    	public Par X0Y0_節26_吸盤1;
+    	public ShapePart X0Y0_節26_吸盤1;
 
-    	public Par X0Y0_節26_吸盤2;
+    	public ShapePart X0Y0_節26_吸盤2;
 
-    	public Par X0Y0_節26_吸盤3;
+    	public ShapePart X0Y0_節26_吸盤3;
 
-    	public Par X0Y0_節26_吸盤4;
+    	public ShapePart X0Y0_節26_吸盤4;
 
-    	public Par X0Y0_節27_節;
+    	public ShapePart X0Y0_節27_節;
 
-    	public Par X0Y0_節27_紋柄1;
+    	public ShapePart X0Y0_節27_紋柄1;
 
-    	public Par X0Y0_節27_紋柄2;
+    	public ShapePart X0Y0_節27_紋柄2;
 
-    	public Par X0Y0_節27_鎧;
+    	public ShapePart X0Y0_節27_鎧;
 
-    	public Par X0Y0_節27_吸盤1;
+    	public ShapePart X0Y0_節27_吸盤1;
 
-    	public Par X0Y0_節27_吸盤2;
+    	public ShapePart X0Y0_節27_吸盤2;
 
-    	public Par X0Y0_節27_吸盤3;
+    	public ShapePart X0Y0_節27_吸盤3;
 
-    	public Par X0Y0_節27_吸盤4;
+    	public ShapePart X0Y0_節27_吸盤4;
 
-    	public Par X0Y0_節28_節;
+    	public ShapePart X0Y0_節28_節;
 
-    	public Par X0Y0_節28_紋柄1;
+    	public ShapePart X0Y0_節28_紋柄1;
 
-    	public Par X0Y0_節28_紋柄2;
+    	public ShapePart X0Y0_節28_紋柄2;
 
-    	public Par X0Y0_節28_鎧;
+    	public ShapePart X0Y0_節28_鎧;
 
-    	public Par X0Y0_節28_吸盤1;
+    	public ShapePart X0Y0_節28_吸盤1;
 
-    	public Par X0Y0_節28_吸盤2;
+    	public ShapePart X0Y0_節28_吸盤2;
 
-    	public Par X0Y0_節28_吸盤3;
+    	public ShapePart X0Y0_節28_吸盤3;
 
-    	public Par X0Y0_節28_吸盤4;
+    	public ShapePart X0Y0_節28_吸盤4;
 
-    	public Par X0Y0_節29_節;
+    	public ShapePart X0Y0_節29_節;
 
-    	public Par X0Y0_節29_紋柄1;
+    	public ShapePart X0Y0_節29_紋柄1;
 
-    	public Par X0Y0_節29_紋柄2;
+    	public ShapePart X0Y0_節29_紋柄2;
 
-    	public Par X0Y0_節29_鎧;
+    	public ShapePart X0Y0_節29_鎧;
 
-    	public Par X0Y0_節29_吸盤1;
+    	public ShapePart X0Y0_節29_吸盤1;
 
-    	public Par X0Y0_節29_吸盤2;
+    	public ShapePart X0Y0_節29_吸盤2;
 
-    	public Par X0Y0_節29_吸盤3;
+    	public ShapePart X0Y0_節29_吸盤3;
 
-    	public Par X0Y0_節29_吸盤4;
+    	public ShapePart X0Y0_節29_吸盤4;
 
-    	public Par X0Y0_節30_節;
+    	public ShapePart X0Y0_節30_節;
 
-    	public Par X0Y0_節30_紋柄1;
+    	public ShapePart X0Y0_節30_紋柄1;
 
-    	public Par X0Y0_節30_紋柄2;
+    	public ShapePart X0Y0_節30_紋柄2;
 
-    	public Par X0Y0_節30_鎧;
+    	public ShapePart X0Y0_節30_鎧;
 
-    	public Par X0Y0_節30_吸盤1;
+    	public ShapePart X0Y0_節30_吸盤1;
 
-    	public Par X0Y0_節30_吸盤2;
+    	public ShapePart X0Y0_節30_吸盤2;
 
-    	public Par X0Y0_節30_吸盤3;
+    	public ShapePart X0Y0_節30_吸盤3;
 
-    	public Par X0Y0_節30_吸盤4;
+    	public ShapePart X0Y0_節30_吸盤4;
 
-    	public Par X0Y0_節31_節;
+    	public ShapePart X0Y0_節31_節;
 
-    	public Par X0Y0_節31_紋柄1;
+    	public ShapePart X0Y0_節31_紋柄1;
 
-    	public Par X0Y0_節31_紋柄2;
+    	public ShapePart X0Y0_節31_紋柄2;
 
-    	public Par X0Y0_節31_鎧;
+    	public ShapePart X0Y0_節31_鎧;
 
-    	public Par X0Y0_節31_吸盤1;
+    	public ShapePart X0Y0_節31_吸盤1;
 
-    	public Par X0Y0_節31_吸盤2;
+    	public ShapePart X0Y0_節31_吸盤2;
 
-    	public Par X0Y0_節31_吸盤3;
+    	public ShapePart X0Y0_節31_吸盤3;
 
-    	public Par X0Y0_節31_吸盤4;
+    	public ShapePart X0Y0_節31_吸盤4;
 
-    	public Par X0Y0_節32_節;
+    	public ShapePart X0Y0_節32_節;
 
-    	public Par X0Y0_節32_紋柄1;
+    	public ShapePart X0Y0_節32_紋柄1;
 
-    	public Par X0Y0_節32_紋柄2;
+    	public ShapePart X0Y0_節32_紋柄2;
 
-    	public Par X0Y0_節32_鎧;
+    	public ShapePart X0Y0_節32_鎧;
 
-    	public Par X0Y0_節32_吸盤1;
+    	public ShapePart X0Y0_節32_吸盤1;
 
-    	public Par X0Y0_節32_吸盤2;
+    	public ShapePart X0Y0_節32_吸盤2;
 
-    	public Par X0Y0_節32_吸盤3;
+    	public ShapePart X0Y0_節32_吸盤3;
 
-    	public Par X0Y0_節32_吸盤4;
+    	public ShapePart X0Y0_節32_吸盤4;
 
-    	public Par X0Y0_節33_節;
+    	public ShapePart X0Y0_節33_節;
 
-    	public Par X0Y0_節33_紋柄1;
+    	public ShapePart X0Y0_節33_紋柄1;
 
-    	public Par X0Y0_節33_紋柄2;
+    	public ShapePart X0Y0_節33_紋柄2;
 
-    	public Par X0Y0_節33_鎧;
+    	public ShapePart X0Y0_節33_鎧;
 
-    	public Par X0Y0_節33_吸盤1;
+    	public ShapePart X0Y0_節33_吸盤1;
 
-    	public Par X0Y0_節33_吸盤2;
+    	public ShapePart X0Y0_節33_吸盤2;
 
-    	public Par X0Y0_節33_吸盤3;
+    	public ShapePart X0Y0_節33_吸盤3;
 
-    	public Par X0Y0_節33_吸盤4;
+    	public ShapePart X0Y0_節33_吸盤4;
 
-    	public Par X0Y0_節34_節;
+    	public ShapePart X0Y0_節34_節;
 
-    	public Par X0Y0_節34_紋柄1;
+    	public ShapePart X0Y0_節34_紋柄1;
 
-    	public Par X0Y0_節34_紋柄2;
+    	public ShapePart X0Y0_節34_紋柄2;
 
-    	public Par X0Y0_節34_鎧;
+    	public ShapePart X0Y0_節34_鎧;
 
-    	public Par X0Y0_節34_吸盤1;
+    	public ShapePart X0Y0_節34_吸盤1;
 
-    	public Par X0Y0_節34_吸盤2;
+    	public ShapePart X0Y0_節34_吸盤2;
 
-    	public Par X0Y0_節34_吸盤3;
+    	public ShapePart X0Y0_節34_吸盤3;
 
-    	public Par X0Y0_節34_吸盤4;
+    	public ShapePart X0Y0_節34_吸盤4;
 
-    	public Par X0Y0_節35_節;
+    	public ShapePart X0Y0_節35_節;
 
-    	public Par X0Y0_節35_紋柄1;
+    	public ShapePart X0Y0_節35_紋柄1;
 
-    	public Par X0Y0_節35_紋柄2;
+    	public ShapePart X0Y0_節35_紋柄2;
 
-    	public Par X0Y0_節35_鎧;
+    	public ShapePart X0Y0_節35_鎧;
 
-    	public Par X0Y0_節35_吸盤1;
+    	public ShapePart X0Y0_節35_吸盤1;
 
-    	public Par X0Y0_節35_吸盤2;
+    	public ShapePart X0Y0_節35_吸盤2;
 
-    	public Par X0Y0_節35_吸盤3;
+    	public ShapePart X0Y0_節35_吸盤3;
 
-    	public Par X0Y0_節35_吸盤4;
+    	public ShapePart X0Y0_節35_吸盤4;
 
-    	public Par X0Y0_節36_節;
+    	public ShapePart X0Y0_節36_節;
 
-    	public Par X0Y0_節36_紋柄1;
+    	public ShapePart X0Y0_節36_紋柄1;
 
-    	public Par X0Y0_節36_紋柄2;
+    	public ShapePart X0Y0_節36_紋柄2;
 
-    	public Par X0Y0_節36_鎧;
+    	public ShapePart X0Y0_節36_鎧;
 
-    	public Par X0Y0_節36_吸盤1;
+    	public ShapePart X0Y0_節36_吸盤1;
 
-    	public Par X0Y0_節36_吸盤2;
+    	public ShapePart X0Y0_節36_吸盤2;
 
-    	public Par X0Y0_節36_吸盤3;
+    	public ShapePart X0Y0_節36_吸盤3;
 
-    	public Par X0Y0_節36_吸盤4;
+    	public ShapePart X0Y0_節36_吸盤4;
 
-    	public Par X0Y0_節37_節;
+    	public ShapePart X0Y0_節37_節;
 
-    	public Par X0Y0_節37_紋柄1;
+    	public ShapePart X0Y0_節37_紋柄1;
 
-    	public Par X0Y0_節37_紋柄2;
+    	public ShapePart X0Y0_節37_紋柄2;
 
-    	public Par X0Y0_節37_鎧;
+    	public ShapePart X0Y0_節37_鎧;
 
-    	public Par X0Y0_節37_吸盤1;
+    	public ShapePart X0Y0_節37_吸盤1;
 
-    	public Par X0Y0_節37_吸盤2;
+    	public ShapePart X0Y0_節37_吸盤2;
 
-    	public Par X0Y0_節37_吸盤3;
+    	public ShapePart X0Y0_節37_吸盤3;
 
-    	public Par X0Y0_節37_吸盤4;
+    	public ShapePart X0Y0_節37_吸盤4;
 
-    	public Par X0Y0_節38_節;
+    	public ShapePart X0Y0_節38_節;
 
-    	public Par X0Y0_節38_紋柄1;
+    	public ShapePart X0Y0_節38_紋柄1;
 
-    	public Par X0Y0_節38_紋柄2;
+    	public ShapePart X0Y0_節38_紋柄2;
 
-    	public Par X0Y0_節38_鎧;
+    	public ShapePart X0Y0_節38_鎧;
 
-    	public Par X0Y0_節38_吸盤1;
+    	public ShapePart X0Y0_節38_吸盤1;
 
-    	public Par X0Y0_節38_吸盤2;
+    	public ShapePart X0Y0_節38_吸盤2;
 
-    	public Par X0Y0_節38_吸盤3;
+    	public ShapePart X0Y0_節38_吸盤3;
 
-    	public Par X0Y0_節38_吸盤4;
+    	public ShapePart X0Y0_節38_吸盤4;
 
-    	public Par X0Y0_節39_節;
+    	public ShapePart X0Y0_節39_節;
 
-    	public Par X0Y0_節39_紋柄1;
+    	public ShapePart X0Y0_節39_紋柄1;
 
-    	public Par X0Y0_節39_紋柄2;
+    	public ShapePart X0Y0_節39_紋柄2;
 
-    	public Par X0Y0_節39_鎧;
+    	public ShapePart X0Y0_節39_鎧;
 
-    	public Par X0Y0_節39_吸盤1;
+    	public ShapePart X0Y0_節39_吸盤1;
 
-    	public Par X0Y0_節39_吸盤2;
+    	public ShapePart X0Y0_節39_吸盤2;
 
-    	public Par X0Y0_節39_吸盤3;
+    	public ShapePart X0Y0_節39_吸盤3;
 
-    	public Par X0Y0_節39_吸盤4;
+    	public ShapePart X0Y0_節39_吸盤4;
 
-    	public Par X0Y0_節40_節;
+    	public ShapePart X0Y0_節40_節;
 
-    	public Par X0Y0_節40_紋柄1;
+    	public ShapePart X0Y0_節40_紋柄1;
 
-    	public Par X0Y0_節40_紋柄2;
+    	public ShapePart X0Y0_節40_紋柄2;
 
-    	public Par X0Y0_節40_鎧;
+    	public ShapePart X0Y0_節40_鎧;
 
-    	public Par X0Y0_節40_吸盤1;
+    	public ShapePart X0Y0_節40_吸盤1;
 
-    	public Par X0Y0_節40_吸盤2;
+    	public ShapePart X0Y0_節40_吸盤2;
 
-    	public Par X0Y0_節40_吸盤3;
+    	public ShapePart X0Y0_節40_吸盤3;
 
-    	public Par X0Y0_節40_吸盤4;
+    	public ShapePart X0Y0_節40_吸盤4;
 
-    	public Par X0Y0_節41_節;
+    	public ShapePart X0Y0_節41_節;
 
-    	public Par X0Y0_節41_紋柄1;
+    	public ShapePart X0Y0_節41_紋柄1;
 
-    	public Par X0Y0_節41_紋柄2;
+    	public ShapePart X0Y0_節41_紋柄2;
 
-    	public Par X0Y0_節41_鎧;
+    	public ShapePart X0Y0_節41_鎧;
 
-    	public Par X0Y0_節41_吸盤1;
+    	public ShapePart X0Y0_節41_吸盤1;
 
-    	public Par X0Y0_節41_吸盤2;
+    	public ShapePart X0Y0_節41_吸盤2;
 
-    	public Par X0Y0_節41_吸盤3;
+    	public ShapePart X0Y0_節41_吸盤3;
 
-    	public Par X0Y0_節41_吸盤4;
+    	public ShapePart X0Y0_節41_吸盤4;
 
     	public ColorD 節1_節CD;
 
@@ -2053,7 +2053,7 @@ namespace SlaveMatrix
 
     	public 拘束鎖 鎖4;
 
-    	public Par[] Pars;
+    	public ShapePart[] Pars;
 
     	private Vector2D[] mm;
 
@@ -8054,7 +8054,7 @@ namespace SlaveMatrix
     		}
     		base.配色指定 = 配色指定;
     		配色(体配色);
-    		Pars = new Par[41]
+    		Pars = new ShapePart[41]
     		{
     			X0Y0_節1_節, X0Y0_節2_節, X0Y0_節3_節, X0Y0_節4_節, X0Y0_節5_節, X0Y0_節6_節, X0Y0_節7_節, X0Y0_節8_節, X0Y0_節9_節, X0Y0_節10_節,
     			X0Y0_節11_節, X0Y0_節12_節, X0Y0_節13_節, X0Y0_節14_節, X0Y0_節15_節, X0Y0_節16_節, X0Y0_節17_節, X0Y0_節18_節, X0Y0_節19_節, X0Y0_節20_節,
@@ -9051,7 +9051,7 @@ namespace SlaveMatrix
     		節1_吸盤4_表示 = false;
     	}
 
-    	public override bool Is革(Par p)
+    	public override bool Is革(ShapePart p)
     	{
     		if (p != X0Y0_輪1_革 && p != X0Y0_輪1_金具1 && p != X0Y0_輪1_金具2 && p != X0Y0_輪1_金具3 && p != X0Y0_輪1_金具左 && p != X0Y0_輪1_金具右 && p != X0Y0_輪2_革 && p != X0Y0_輪2_金具1 && p != X0Y0_輪2_金具2 && p != X0Y0_輪2_金具3 && p != X0Y0_輪2_金具左)
     		{
@@ -9060,7 +9060,7 @@ namespace SlaveMatrix
     		return true;
     	}
 
-    	public override IEnumerable<Par> Enum軸()
+    	public override IEnumerable<ShapePart> Enum軸()
     	{
     		yield return X0Y0_節1_節;
     		yield return X0Y0_節2_節;

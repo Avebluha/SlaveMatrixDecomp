@@ -4,7 +4,7 @@ namespace SlaveMatrix
 {
     public class 胸毛 : Ele
     {
-    	public Par X0Y0_獣性_胸毛;
+    	public ShapePart X0Y0_獣性_胸毛;
 
     	public ColorD 獣性_胸毛CD;
 

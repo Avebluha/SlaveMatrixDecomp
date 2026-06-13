@@ -4,33 +4,33 @@ namespace SlaveMatrix
 {
     public class SideHair_編み : SideHair
     {
-    	public Par X0Y0_髪;
+    	public ShapePart X0Y0_髪;
 
-    	public Par X0Y0_編節1_髪節;
+    	public ShapePart X0Y0_編節1_髪節;
 
-    	public Par X0Y0_編節1_髪編目;
+    	public ShapePart X0Y0_編節1_髪編目;
 
-    	public Par X0Y0_編節2_髪節;
+    	public ShapePart X0Y0_編節2_髪節;
 
-    	public Par X0Y0_編節2_髪編目;
+    	public ShapePart X0Y0_編節2_髪編目;
 
-    	public Par X0Y0_編節3_髪節;
+    	public ShapePart X0Y0_編節3_髪節;
 
-    	public Par X0Y0_編節3_髪編目;
+    	public ShapePart X0Y0_編節3_髪編目;
 
-    	public Par X0Y0_編節4_髪節;
+    	public ShapePart X0Y0_編節4_髪節;
 
-    	public Par X0Y0_編節4_髪編目;
+    	public ShapePart X0Y0_編節4_髪編目;
 
-    	public Par X0Y0_髪縛1;
+    	public ShapePart X0Y0_髪縛1;
 
-    	public Par X0Y0_髪縛2;
+    	public ShapePart X0Y0_髪縛2;
 
-    	public Par X0Y0_髪左;
+    	public ShapePart X0Y0_髪左;
 
-    	public Par X0Y0_髪右;
+    	public ShapePart X0Y0_髪右;
 
-    	public Par X0Y0_髪根;
+    	public ShapePart X0Y0_髪根;
 
     	public ColorD 髪CD;
 
@@ -510,7 +510,7 @@ namespace SlaveMatrix
     		Intensity = e.濃度;
     	}
 
-    	public override bool Is布(Par p)
+    	public override bool Is布(ShapePart p)
     	{
     		if (p != X0Y0_髪縛1)
     		{

@@ -4,9 +4,9 @@ namespace SlaveMatrix
 {
     public class キャップ2 : Ele
     {
-    	public Par X0Y0_根本;
+    	public ShapePart X0Y0_根本;
 
-    	public Par X0Y0_先端;
+    	public ShapePart X0Y0_先端;
 
     	public ColorD 根本CD;
 

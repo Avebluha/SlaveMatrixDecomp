@@ -5,89 +5,89 @@ namespace SlaveMatrix
 {
     public class 前翅_甲 : 前翅
     {
-    	public Par X0Y0_前翅_前翅軸_軸1;
+    	public ShapePart X0Y0_前翅_前翅軸_軸1;
 
-    	public Par X0Y0_前翅_前翅軸_軸2;
+    	public ShapePart X0Y0_前翅_前翅軸_軸2;
 
-    	public Par X0Y0_前翅_前翅軸_軸3;
+    	public ShapePart X0Y0_前翅_前翅軸_軸3;
 
-    	public Par X0Y0_前翅_前翅甲_甲2;
+    	public ShapePart X0Y0_前翅_前翅甲_甲2;
 
-    	public Par X0Y0_前翅_前翅甲_甲1;
+    	public ShapePart X0Y0_前翅_前翅甲_甲1;
 
-    	public Par X0Y0_前翅_前翅甲_紋1;
+    	public ShapePart X0Y0_前翅_前翅甲_紋1;
 
-    	public Par X0Y0_前翅_前翅甲_紋2;
+    	public ShapePart X0Y0_前翅_前翅甲_紋2;
 
-    	public Par X0Y0_前翅_前翅甲_紋3;
+    	public ShapePart X0Y0_前翅_前翅甲_紋3;
 
-    	public Par X0Y0_前翅_前翅甲_紋4;
+    	public ShapePart X0Y0_前翅_前翅甲_紋4;
 
-    	public Par X0Y0_前翅_前翅甲_紋5;
+    	public ShapePart X0Y0_前翅_前翅甲_紋5;
 
-    	public Par X0Y0_前翅_前翅甲_紋6;
+    	public ShapePart X0Y0_前翅_前翅甲_紋6;
 
-    	public Par X0Y0_前翅_前翅甲_紋7;
+    	public ShapePart X0Y0_前翅_前翅甲_紋7;
 
-    	public Par X0Y0_付根_付根0;
+    	public ShapePart X0Y0_付根_付根0;
 
-    	public Par X0Y0_付根_付根1;
+    	public ShapePart X0Y0_付根_付根1;
 
-    	public Par X0Y0_付根_付根2;
+    	public ShapePart X0Y0_付根_付根2;
 
-    	public Par X0Y0_甲付根;
+    	public ShapePart X0Y0_甲付根;
 
-    	public Par X0Y0_紋1;
+    	public ShapePart X0Y0_紋1;
 
-    	public Par X0Y0_紋2;
+    	public ShapePart X0Y0_紋2;
 
-    	public Par X0Y1_前翅_前翅軸_軸1;
+    	public ShapePart X0Y1_前翅_前翅軸_軸1;
 
-    	public Par X0Y1_前翅_前翅軸_軸2;
+    	public ShapePart X0Y1_前翅_前翅軸_軸2;
 
-    	public Par X0Y1_前翅_前翅軸_軸3;
+    	public ShapePart X0Y1_前翅_前翅軸_軸3;
 
-    	public Par X0Y1_前翅_前翅軸_罅線;
+    	public ShapePart X0Y1_前翅_前翅軸_罅線;
 
-    	public Par X0Y1_前翅_前翅甲_甲2;
+    	public ShapePart X0Y1_前翅_前翅甲_甲2;
 
-    	public Par X0Y1_前翅_前翅甲_甲1;
+    	public ShapePart X0Y1_前翅_前翅甲_甲1;
 
-    	public Par X0Y1_前翅_前翅甲_紋1;
+    	public ShapePart X0Y1_前翅_前翅甲_紋1;
 
-    	public Par X0Y1_前翅_前翅甲_紋2;
+    	public ShapePart X0Y1_前翅_前翅甲_紋2;
 
-    	public Par X0Y1_前翅_前翅甲_紋3;
+    	public ShapePart X0Y1_前翅_前翅甲_紋3;
 
-    	public Par X0Y1_前翅_前翅甲_紋4;
+    	public ShapePart X0Y1_前翅_前翅甲_紋4;
 
-    	public Par X0Y1_前翅_前翅甲_紋5;
+    	public ShapePart X0Y1_前翅_前翅甲_紋5;
 
-    	public Par X0Y1_前翅_前翅甲_紋6;
+    	public ShapePart X0Y1_前翅_前翅甲_紋6;
 
-    	public Par X0Y1_前翅_前翅甲_紋7;
+    	public ShapePart X0Y1_前翅_前翅甲_紋7;
 
-    	public Par X0Y1_前翅_前翅甲_罅線1;
+    	public ShapePart X0Y1_前翅_前翅甲_罅線1;
 
-    	public Par X0Y1_前翅_前翅甲_罅線2;
+    	public ShapePart X0Y1_前翅_前翅甲_罅線2;
 
-    	public Par X0Y1_付根_付根0;
+    	public ShapePart X0Y1_付根_付根0;
 
-    	public Par X0Y1_付根_付根1;
+    	public ShapePart X0Y1_付根_付根1;
 
-    	public Par X0Y1_付根_付根2;
+    	public ShapePart X0Y1_付根_付根2;
 
-    	public Par X0Y1_甲付根;
+    	public ShapePart X0Y1_甲付根;
 
-    	public Par X0Y1_紋1;
+    	public ShapePart X0Y1_紋1;
 
-    	public Par X0Y1_紋2;
+    	public ShapePart X0Y1_紋2;
 
-    	public Par X0Y1_欠け1;
+    	public ShapePart X0Y1_欠け1;
 
-    	public Par X0Y1_欠け2;
+    	public ShapePart X0Y1_欠け2;
 
-    	public Par X0Y1_欠け3;
+    	public ShapePart X0Y1_欠け3;
 
     	public ColorD 前翅_前翅軸_軸1CD;
 

@@ -8436,13 +8436,13 @@ namespace SlaveMatrix
     		触手2.SetAngle0();
     		if (angs.Length != 0)
     		{
-    			Par[] array = 触手2.Enum軸().ToArray();
+    			ShapePart[] array = 触手2.Enum軸().ToArray();
     			if (array.Length != 0)
     			{
     				int num = 0;
     				int num2 = array.Length / angs.Length;
     				double num3 = (double)array.Length * 0.1;
-    				foreach (Par item in array.Skip(1))
+    				foreach (ShapePart item in array.Skip(1))
     				{
     					item.AngleBase = (double)si * (angs[(num / num2).Limit(0, angs.Length)](num) / num3 + u2);
     					num++;
@@ -8486,13 +8486,13 @@ namespace SlaveMatrix
     		触手2.SetAngle0();
     		if (angs.Length != 0)
     		{
-    			Par[] array = 触手2.Enum軸().ToArray();
+    			ShapePart[] array = 触手2.Enum軸().ToArray();
     			if (array.Length != 0)
     			{
     				int num = 0;
     				int num2 = array.Length / angs.Length;
     				double num3 = (double)array.Length * 0.1;
-    				foreach (Par item in array.Skip(1))
+    				foreach (ShapePart item in array.Skip(1))
     				{
     					item.AngleBase = (double)si * ((0.0 - angs[(num / num2).Limit(0, angs.Length)](num)) / num3 + (0.0 - u2));
     					num++;
@@ -8593,7 +8593,7 @@ namespace SlaveMatrix
     	{
     		foreach (触手 item in Cha.Body.触手左)
     		{
-    			foreach (Par item2 in item.Enum軸())
+    			foreach (ShapePart item2 in item.Enum軸())
     			{
     				item2.AngleCont = a * RNG.XS.NextDouble();
     			}
@@ -8612,7 +8612,7 @@ namespace SlaveMatrix
     		}
     		foreach (触手 item3 in Cha.Body.触手右)
     		{
-    			foreach (Par item4 in item3.Enum軸())
+    			foreach (ShapePart item4 in item3.Enum軸())
     			{
     				item4.AngleCont = (0.0 - a) * RNG.XS.NextDouble();
     			}
@@ -8666,13 +8666,13 @@ namespace SlaveMatrix
     		触手_犬2.X0Y0_脚前_手_小指_指.AngleBase += 30.0 * 開指 + u5;
     		if (angs.Length != 0)
     		{
-    			Par[] array = 触手_犬2.Enum軸().ToArray();
+    			ShapePart[] array = 触手_犬2.Enum軸().ToArray();
     			if (array.Length != 0)
     			{
     				int num = 0;
     				int num2 = array.Length / angs.Length;
     				double num3 = (double)array.Length * 0.1;
-    				foreach (Par item in array.Skip(1))
+    				foreach (ShapePart item in array.Skip(1))
     				{
     					item.AngleBase += (0.0 - angs[(num / num2).Limit(0, angs.Length)](num)) / num3 + (0.0 - u7);
     					num++;
@@ -8755,7 +8755,7 @@ namespace SlaveMatrix
     			item.X0Y0_脚前_手_中指_指.AngleCont = a * RNG.XS.NextDouble();
     			item.X0Y0_脚前_手_薬指_指.AngleCont = a * RNG.XS.NextDouble();
     			item.X0Y0_脚前_手_小指_指.AngleCont = a * RNG.XS.NextDouble();
-    			foreach (Par item2 in item.Enum軸())
+    			foreach (ShapePart item2 in item.Enum軸())
     			{
     				item2.AngleCont = a * RNG.XS.NextDouble();
     			}
@@ -8786,7 +8786,7 @@ namespace SlaveMatrix
     			item3.X0Y0_脚前_手_中指_指.AngleCont = (0.0 - a) * RNG.XS.NextDouble();
     			item3.X0Y0_脚前_手_薬指_指.AngleCont = (0.0 - a) * RNG.XS.NextDouble();
     			item3.X0Y0_脚前_手_小指_指.AngleCont = (0.0 - a) * RNG.XS.NextDouble();
-    			foreach (Par item4 in item3.Enum軸())
+    			foreach (ShapePart item4 in item3.Enum軸())
     			{
     				item4.AngleCont = (0.0 - a) * RNG.XS.NextDouble();
     			}
@@ -8802,7 +8802,7 @@ namespace SlaveMatrix
     			return;
     		}
     		尾2.SetAngle0();
-    		Par[] array = 尾2.Enum軸().ToArray();
+    		ShapePart[] array = 尾2.Enum軸().ToArray();
     		double num = ((尾2 is 尾_蟲) ? 0.3 : 1.0);
     		if (angs.Length != 0 && array.Length != 0)
     		{
@@ -8814,7 +8814,7 @@ namespace SlaveMatrix
     			}
     			double num4 = (double)array.Length * 0.1;
     			double num5 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    			Par[] array2 = array;
+    			ShapePart[] array2 = array;
     			for (int i = 0; i < array2.Length; i++)
     			{
     				array2[i].AngleBase = ((double)s * angs[(num2 / num3).Limit(0, angs.Length)](num2) / num4 + num5) * num;
@@ -8832,7 +8832,7 @@ namespace SlaveMatrix
     		if (text.Contains("後髪0_肢系"))
     		{
     			double num6 = 1.0;
-    			foreach (Par item in array.Take(array.Length / 2))
+    			foreach (ShapePart item in array.Take(array.Length / 2))
     			{
     				item.AngleBase = item.AngleBase / num6 * num;
     				num6 += 1.0;
@@ -8899,7 +8899,7 @@ namespace SlaveMatrix
     		{
     			if (item.右)
     			{
-    				foreach (Par item2 in item.Enum軸())
+    				foreach (ShapePart item2 in item.Enum軸())
     				{
     					item2.AngleCont = (0.0 - a) * RNG.XS.NextDouble();
     				}
@@ -8914,7 +8914,7 @@ namespace SlaveMatrix
     				}
     				continue;
     			}
-    			foreach (Par item3 in item.Enum軸())
+    			foreach (ShapePart item3 in item.Enum軸())
     			{
     				item3.AngleCont = a * RNG.XS.NextDouble();
     			}
@@ -8958,14 +8958,14 @@ namespace SlaveMatrix
 
     	public static void 魚(this Character Cha, int s, params Func<int, double>[] angs)
     	{
-    		Par[] array = Cha.Body.魚.軸列挙().ToArray();
+    		ShapePart[] array = Cha.Body.魚.軸列挙().ToArray();
     		if (angs.Length != 0)
     		{
     			int num = 0;
     			int num2 = array.Length / angs.Length;
     			double num3 = (double)array.Length * 0.1;
     			double num4 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    			Par[] array2 = array;
+    			ShapePart[] array2 = array;
     			for (int i = 0; i < array2.Length; i++)
     			{
     				array2[i].AngleBase = (double)s * angs[(num / num2).Limit(0, angs.Length)](num) / num3 + num4;
@@ -9015,14 +9015,14 @@ namespace SlaveMatrix
 
     	public static void 鯨(this Character Cha, int s, params Func<int, double>[] angs)
     	{
-    		Par[] array = Cha.Body.鯨.軸列挙().ToArray();
+    		ShapePart[] array = Cha.Body.鯨.軸列挙().ToArray();
     		if (angs.Length != 0)
     		{
     			int num = 0;
     			int num2 = array.Length / angs.Length;
     			double num3 = (double)array.Length * 0.1;
     			double num4 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    			Par[] array2 = array;
+    			ShapePart[] array2 = array;
     			for (int i = 0; i < array2.Length; i++)
     			{
     				array2[i].AngleBase = (double)s * angs[(num / num2).Limit(0, angs.Length)](num) / num3 + num4;
@@ -9072,14 +9072,14 @@ namespace SlaveMatrix
 
     	public static void 蠍(this Character Cha, int s, params Func<int, double>[] angs)
     	{
-    		Par[] array = Cha.Body.蠍.軸列挙().ToArray();
+    		ShapePart[] array = Cha.Body.蠍.軸列挙().ToArray();
     		if (angs.Length != 0)
     		{
     			int num = 0;
     			int num2 = array.Length / angs.Length;
     			double num3 = (double)array.Length * 0.1;
     			double num4 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    			Par[] array2 = array;
+    			ShapePart[] array2 = array;
     			for (int i = 0; i < array2.Length; i++)
     			{
     				array2[i].AngleBase = (double)s * angs[(num / num2).Limit(0, angs.Length)](num) / num3 + num4;

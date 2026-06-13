@@ -5,231 +5,231 @@ namespace SlaveMatrix
 {
     public class UpperArm_人 : UpperArm
     {
-    	public Par X0Y0_筋肉上;
+    	public ShapePart X0Y0_筋肉上;
 
-    	public Par X0Y0_UpperArm;
+    	public ShapePart X0Y0_UpperArm;
 
-    	public Par X0Y0_筋肉下;
+    	public ShapePart X0Y0_筋肉下;
 
-    	public Par X0Y0_虫性_虫腕;
+    	public ShapePart X0Y0_虫性_虫腕;
 
-    	public Par X0Y0_虫性_筋肉下;
+    	public ShapePart X0Y0_虫性_筋肉下;
 
-    	public Par X0Y0_紋柄_紋1;
+    	public ShapePart X0Y0_紋柄_紋1;
 
-    	public Par X0Y0_紋柄_紋2;
+    	public ShapePart X0Y0_紋柄_紋2;
 
-    	public Par X0Y0_紋柄_紋3;
+    	public ShapePart X0Y0_紋柄_紋3;
 
-    	public Par X0Y0_紋柄_紋4;
+    	public ShapePart X0Y0_紋柄_紋4;
 
-    	public Par X0Y0_獣性_獣毛1;
+    	public ShapePart X0Y0_獣性_獣毛1;
 
-    	public Par X0Y0_獣性_獣毛2;
+    	public ShapePart X0Y0_獣性_獣毛2;
 
-    	public Par X0Y0_竜性_鱗4;
+    	public ShapePart X0Y0_竜性_鱗4;
 
-    	public Par X0Y0_竜性_鱗3;
+    	public ShapePart X0Y0_竜性_鱗3;
 
-    	public Par X0Y0_竜性_鱗2;
+    	public ShapePart X0Y0_竜性_鱗2;
 
-    	public Par X0Y0_竜性_鱗1;
+    	public ShapePart X0Y0_竜性_鱗1;
 
-    	public Par X0Y0_竜性_鱗5;
+    	public ShapePart X0Y0_竜性_鱗5;
 
-    	public Par X0Y0_淫タトゥ_ハート_タトゥ左;
+    	public ShapePart X0Y0_淫タトゥ_ハート_タトゥ左;
 
-    	public Par X0Y0_淫タトゥ_ハート_タトゥ右;
+    	public ShapePart X0Y0_淫タトゥ_ハート_タトゥ右;
 
-    	public Par X0Y0_淫タトゥ_タトゥ1;
+    	public ShapePart X0Y0_淫タトゥ_タトゥ1;
 
-    	public Par X0Y0_淫タトゥ_タトゥ2;
+    	public ShapePart X0Y0_淫タトゥ_タトゥ2;
 
-    	public Par X0Y0_淫タトゥ_タトゥ3;
+    	public ShapePart X0Y0_淫タトゥ_タトゥ3;
 
-    	public Par X0Y0_淫タトゥ_タトゥ4;
+    	public ShapePart X0Y0_淫タトゥ_タトゥ4;
 
-    	public Par X0Y0_悪タトゥ_通常_文字1_文字a_枠;
+    	public ShapePart X0Y0_悪タトゥ_通常_文字1_文字a_枠;
 
-    	public Par X0Y0_悪タトゥ_通常_文字1_文字a_文字タトゥ1;
+    	public ShapePart X0Y0_悪タトゥ_通常_文字1_文字a_文字タトゥ1;
 
-    	public Par X0Y0_悪タトゥ_通常_文字1_文字a_文字タトゥ2;
+    	public ShapePart X0Y0_悪タトゥ_通常_文字1_文字a_文字タトゥ2;
 
-    	public Par X0Y0_悪タトゥ_通常_文字1_文字b_枠;
+    	public ShapePart X0Y0_悪タトゥ_通常_文字1_文字b_枠;
 
-    	public Par X0Y0_悪タトゥ_通常_文字1_文字b_文字タトゥ1;
+    	public ShapePart X0Y0_悪タトゥ_通常_文字1_文字b_文字タトゥ1;
 
-    	public Par X0Y0_悪タトゥ_通常_文字1_文字b_文字タトゥ2;
+    	public ShapePart X0Y0_悪タトゥ_通常_文字1_文字b_文字タトゥ2;
 
-    	public Par X0Y0_悪タトゥ_通常_文字1_文字c_枠;
+    	public ShapePart X0Y0_悪タトゥ_通常_文字1_文字c_枠;
 
-    	public Par X0Y0_悪タトゥ_通常_文字1_文字c_文字タトゥ1;
+    	public ShapePart X0Y0_悪タトゥ_通常_文字1_文字c_文字タトゥ1;
 
-    	public Par X0Y0_悪タトゥ_通常_文字1_文字c_文字タトゥ2;
+    	public ShapePart X0Y0_悪タトゥ_通常_文字1_文字c_文字タトゥ2;
 
-    	public Par X0Y0_悪タトゥ_通常_文字1_文字d_枠;
+    	public ShapePart X0Y0_悪タトゥ_通常_文字1_文字d_枠;
 
-    	public Par X0Y0_悪タトゥ_通常_文字1_文字d_文字タトゥ1;
+    	public ShapePart X0Y0_悪タトゥ_通常_文字1_文字d_文字タトゥ1;
 
-    	public Par X0Y0_悪タトゥ_通常_文字1_文字d_文字タトゥ2;
+    	public ShapePart X0Y0_悪タトゥ_通常_文字1_文字d_文字タトゥ2;
 
-    	public Par X0Y0_悪タトゥ_通常_文字1_文字e_枠;
+    	public ShapePart X0Y0_悪タトゥ_通常_文字1_文字e_枠;
 
-    	public Par X0Y0_悪タトゥ_通常_文字1_文字e_文字タトゥ1;
+    	public ShapePart X0Y0_悪タトゥ_通常_文字1_文字e_文字タトゥ1;
 
-    	public Par X0Y0_悪タトゥ_通常_文字1_文字e_文字タトゥ2;
+    	public ShapePart X0Y0_悪タトゥ_通常_文字1_文字e_文字タトゥ2;
 
-    	public Par X0Y0_悪タトゥ_通常_文字1_文字e_文字タトゥ3;
+    	public ShapePart X0Y0_悪タトゥ_通常_文字1_文字e_文字タトゥ3;
 
-    	public Par X0Y0_悪タトゥ_通常_文字2_文字a_枠;
+    	public ShapePart X0Y0_悪タトゥ_通常_文字2_文字a_枠;
 
-    	public Par X0Y0_悪タトゥ_通常_文字2_文字a_文字タトゥ1;
+    	public ShapePart X0Y0_悪タトゥ_通常_文字2_文字a_文字タトゥ1;
 
-    	public Par X0Y0_悪タトゥ_通常_文字2_文字a_文字タトゥ2;
+    	public ShapePart X0Y0_悪タトゥ_通常_文字2_文字a_文字タトゥ2;
 
-    	public Par X0Y0_悪タトゥ_通常_文字2_文字b_枠;
+    	public ShapePart X0Y0_悪タトゥ_通常_文字2_文字b_枠;
 
-    	public Par X0Y0_悪タトゥ_通常_文字2_文字b_文字タトゥ1;
+    	public ShapePart X0Y0_悪タトゥ_通常_文字2_文字b_文字タトゥ1;
 
-    	public Par X0Y0_悪タトゥ_通常_文字2_文字b_文字タトゥ2;
+    	public ShapePart X0Y0_悪タトゥ_通常_文字2_文字b_文字タトゥ2;
 
-    	public Par X0Y0_悪タトゥ_通常_文字2_文字c_枠;
+    	public ShapePart X0Y0_悪タトゥ_通常_文字2_文字c_枠;
 
-    	public Par X0Y0_悪タトゥ_通常_文字2_文字c_文字タトゥ1;
+    	public ShapePart X0Y0_悪タトゥ_通常_文字2_文字c_文字タトゥ1;
 
-    	public Par X0Y0_悪タトゥ_通常_文字2_文字c_文字タトゥ2;
+    	public ShapePart X0Y0_悪タトゥ_通常_文字2_文字c_文字タトゥ2;
 
-    	public Par X0Y0_悪タトゥ_通常_文字2_文字d_枠;
+    	public ShapePart X0Y0_悪タトゥ_通常_文字2_文字d_枠;
 
-    	public Par X0Y0_悪タトゥ_通常_文字2_文字d_文字タトゥ1;
+    	public ShapePart X0Y0_悪タトゥ_通常_文字2_文字d_文字タトゥ1;
 
-    	public Par X0Y0_悪タトゥ_通常_文字2_文字d_文字タトゥ2;
+    	public ShapePart X0Y0_悪タトゥ_通常_文字2_文字d_文字タトゥ2;
 
-    	public Par X0Y0_悪タトゥ_通常_文字2_文字e_枠;
+    	public ShapePart X0Y0_悪タトゥ_通常_文字2_文字e_枠;
 
-    	public Par X0Y0_悪タトゥ_通常_文字2_文字e_文字タトゥ1;
+    	public ShapePart X0Y0_悪タトゥ_通常_文字2_文字e_文字タトゥ1;
 
-    	public Par X0Y0_悪タトゥ_通常_文字2_文字e_文字タトゥ2;
+    	public ShapePart X0Y0_悪タトゥ_通常_文字2_文字e_文字タトゥ2;
 
-    	public Par X0Y0_悪タトゥ_通常_文字2_文字e_文字タトゥ3;
+    	public ShapePart X0Y0_悪タトゥ_通常_文字2_文字e_文字タトゥ3;
 
-    	public Par X0Y0_悪タトゥ_通常_タトゥ1;
+    	public ShapePart X0Y0_悪タトゥ_通常_タトゥ1;
 
-    	public Par X0Y0_悪タトゥ_筋肉_文字1_文字a_枠;
+    	public ShapePart X0Y0_悪タトゥ_筋肉_文字1_文字a_枠;
 
-    	public Par X0Y0_悪タトゥ_筋肉_文字1_文字a_文字タトゥ1;
+    	public ShapePart X0Y0_悪タトゥ_筋肉_文字1_文字a_文字タトゥ1;
 
-    	public Par X0Y0_悪タトゥ_筋肉_文字1_文字a_文字タトゥ2;
+    	public ShapePart X0Y0_悪タトゥ_筋肉_文字1_文字a_文字タトゥ2;
 
-    	public Par X0Y0_悪タトゥ_筋肉_文字1_文字b_枠;
+    	public ShapePart X0Y0_悪タトゥ_筋肉_文字1_文字b_枠;
 
-    	public Par X0Y0_悪タトゥ_筋肉_文字1_文字b_文字タトゥ1;
+    	public ShapePart X0Y0_悪タトゥ_筋肉_文字1_文字b_文字タトゥ1;
 
-    	public Par X0Y0_悪タトゥ_筋肉_文字1_文字b_文字タトゥ2;
+    	public ShapePart X0Y0_悪タトゥ_筋肉_文字1_文字b_文字タトゥ2;
 
-    	public Par X0Y0_悪タトゥ_筋肉_文字1_文字c_枠;
+    	public ShapePart X0Y0_悪タトゥ_筋肉_文字1_文字c_枠;
 
-    	public Par X0Y0_悪タトゥ_筋肉_文字1_文字c_文字タトゥ1;
+    	public ShapePart X0Y0_悪タトゥ_筋肉_文字1_文字c_文字タトゥ1;
 
-    	public Par X0Y0_悪タトゥ_筋肉_文字1_文字c_文字タトゥ2;
+    	public ShapePart X0Y0_悪タトゥ_筋肉_文字1_文字c_文字タトゥ2;
 
-    	public Par X0Y0_悪タトゥ_筋肉_文字1_文字d_枠;
+    	public ShapePart X0Y0_悪タトゥ_筋肉_文字1_文字d_枠;
 
-    	public Par X0Y0_悪タトゥ_筋肉_文字1_文字d_文字タトゥ1;
+    	public ShapePart X0Y0_悪タトゥ_筋肉_文字1_文字d_文字タトゥ1;
 
-    	public Par X0Y0_悪タトゥ_筋肉_文字1_文字d_文字タトゥ2;
+    	public ShapePart X0Y0_悪タトゥ_筋肉_文字1_文字d_文字タトゥ2;
 
-    	public Par X0Y0_悪タトゥ_筋肉_文字1_文字e_枠;
+    	public ShapePart X0Y0_悪タトゥ_筋肉_文字1_文字e_枠;
 
-    	public Par X0Y0_悪タトゥ_筋肉_文字1_文字e_文字タトゥ1;
+    	public ShapePart X0Y0_悪タトゥ_筋肉_文字1_文字e_文字タトゥ1;
 
-    	public Par X0Y0_悪タトゥ_筋肉_文字1_文字e_文字タトゥ2;
+    	public ShapePart X0Y0_悪タトゥ_筋肉_文字1_文字e_文字タトゥ2;
 
-    	public Par X0Y0_悪タトゥ_筋肉_文字1_文字e_文字タトゥ3;
+    	public ShapePart X0Y0_悪タトゥ_筋肉_文字1_文字e_文字タトゥ3;
 
-    	public Par X0Y0_悪タトゥ_筋肉_文字2_文字a_枠;
+    	public ShapePart X0Y0_悪タトゥ_筋肉_文字2_文字a_枠;
 
-    	public Par X0Y0_悪タトゥ_筋肉_文字2_文字a_文字タトゥ1;
+    	public ShapePart X0Y0_悪タトゥ_筋肉_文字2_文字a_文字タトゥ1;
 
-    	public Par X0Y0_悪タトゥ_筋肉_文字2_文字a_文字タトゥ2;
+    	public ShapePart X0Y0_悪タトゥ_筋肉_文字2_文字a_文字タトゥ2;
 
-    	public Par X0Y0_悪タトゥ_筋肉_文字2_文字b_枠;
+    	public ShapePart X0Y0_悪タトゥ_筋肉_文字2_文字b_枠;
 
-    	public Par X0Y0_悪タトゥ_筋肉_文字2_文字b_文字タトゥ1;
+    	public ShapePart X0Y0_悪タトゥ_筋肉_文字2_文字b_文字タトゥ1;
 
-    	public Par X0Y0_悪タトゥ_筋肉_文字2_文字b_文字タトゥ2;
+    	public ShapePart X0Y0_悪タトゥ_筋肉_文字2_文字b_文字タトゥ2;
 
-    	public Par X0Y0_悪タトゥ_筋肉_文字2_文字c_枠;
+    	public ShapePart X0Y0_悪タトゥ_筋肉_文字2_文字c_枠;
 
-    	public Par X0Y0_悪タトゥ_筋肉_文字2_文字c_文字タトゥ1;
+    	public ShapePart X0Y0_悪タトゥ_筋肉_文字2_文字c_文字タトゥ1;
 
-    	public Par X0Y0_悪タトゥ_筋肉_文字2_文字c_文字タトゥ2;
+    	public ShapePart X0Y0_悪タトゥ_筋肉_文字2_文字c_文字タトゥ2;
 
-    	public Par X0Y0_悪タトゥ_筋肉_文字2_文字d_枠;
+    	public ShapePart X0Y0_悪タトゥ_筋肉_文字2_文字d_枠;
 
-    	public Par X0Y0_悪タトゥ_筋肉_文字2_文字d_文字タトゥ1;
+    	public ShapePart X0Y0_悪タトゥ_筋肉_文字2_文字d_文字タトゥ1;
 
-    	public Par X0Y0_悪タトゥ_筋肉_文字2_文字d_文字タトゥ2;
+    	public ShapePart X0Y0_悪タトゥ_筋肉_文字2_文字d_文字タトゥ2;
 
-    	public Par X0Y0_悪タトゥ_筋肉_文字2_文字e_枠;
+    	public ShapePart X0Y0_悪タトゥ_筋肉_文字2_文字e_枠;
 
-    	public Par X0Y0_悪タトゥ_筋肉_文字2_文字e_文字タトゥ1;
+    	public ShapePart X0Y0_悪タトゥ_筋肉_文字2_文字e_文字タトゥ1;
 
-    	public Par X0Y0_悪タトゥ_筋肉_文字2_文字e_文字タトゥ2;
+    	public ShapePart X0Y0_悪タトゥ_筋肉_文字2_文字e_文字タトゥ2;
 
-    	public Par X0Y0_悪タトゥ_筋肉_文字2_文字e_文字タトゥ3;
+    	public ShapePart X0Y0_悪タトゥ_筋肉_文字2_文字e_文字タトゥ3;
 
-    	public Par X0Y0_悪タトゥ_筋肉_タトゥ1;
+    	public ShapePart X0Y0_悪タトゥ_筋肉_タトゥ1;
 
-    	public Par X0Y0_悪タトゥ_タトゥ2;
+    	public ShapePart X0Y0_悪タトゥ_タトゥ2;
 
-    	public Par X0Y0_植タトゥ_タトゥ;
+    	public ShapePart X0Y0_植タトゥ_タトゥ;
 
-    	public Par X0Y0_植性_通常_葉3;
+    	public ShapePart X0Y0_植性_通常_葉3;
 
-    	public Par X0Y0_植性_通常_葉2;
+    	public ShapePart X0Y0_植性_通常_葉2;
 
-    	public Par X0Y0_植性_通常_葉1;
+    	public ShapePart X0Y0_植性_通常_葉1;
 
-    	public Par X0Y0_植性_欠損_葉3;
+    	public ShapePart X0Y0_植性_欠損_葉3;
 
-    	public Par X0Y0_植性_欠損_葉2;
+    	public ShapePart X0Y0_植性_欠損_葉2;
 
-    	public Par X0Y0_植性_欠損_葉1;
+    	public ShapePart X0Y0_植性_欠損_葉1;
 
-    	public Par X0Y0_傷X;
+    	public ShapePart X0Y0_傷X;
 
-    	public Par X0Y0_ハイライト_ハイライト1;
+    	public ShapePart X0Y0_ハイライト_ハイライト1;
 
-    	public Par X0Y0_ハイライト_ハイライト2;
+    	public ShapePart X0Y0_ハイライト_ハイライト2;
 
-    	public Par X0Y0_グローブ_通常_グローブ;
+    	public ShapePart X0Y0_グローブ_通常_グローブ;
 
-    	public Par X0Y0_グローブ_通常_縁;
+    	public ShapePart X0Y0_グローブ_通常_縁;
 
-    	public Par X0Y0_グローブ_筋肉_グローブ;
+    	public ShapePart X0Y0_グローブ_筋肉_グローブ;
 
-    	public Par X0Y0_グローブ_筋肉_縁;
+    	public ShapePart X0Y0_グローブ_筋肉_縁;
 
-    	public Par X0Y0_シャツ_袖1;
+    	public ShapePart X0Y0_シャツ_袖1;
 
-    	public Par X0Y0_シャツ_袖2;
+    	public ShapePart X0Y0_シャツ_袖2;
 
-    	public Par X0Y0_シャツ_縁;
+    	public ShapePart X0Y0_シャツ_縁;
 
-    	public Par X0Y0_ナース_袖1;
+    	public ShapePart X0Y0_ナース_袖1;
 
-    	public Par X0Y0_ナース_袖2;
+    	public ShapePart X0Y0_ナース_袖2;
 
-    	public Par X0Y0_ナース_縁;
+    	public ShapePart X0Y0_ナース_縁;
 
-    	public Par X0Y0_鎧_ベルト_ベルト1;
+    	public ShapePart X0Y0_鎧_ベルト_ベルト1;
 
-    	public Par X0Y0_鎧_ベルト_ベルト2;
+    	public ShapePart X0Y0_鎧_ベルト_ベルト2;
 
-    	public Par X0Y0_鎧_鎧_鎧1;
+    	public ShapePart X0Y0_鎧_鎧_鎧1;
 
-    	public Par X0Y0_鎧_鎧_鎧2;
+    	public ShapePart X0Y0_鎧_鎧_鎧2;
 
     	public ColorD 筋肉上CD;
 
@@ -4050,7 +4050,7 @@ namespace SlaveMatrix
     		Body.JoinPAall();
     	}
 
-    	public override bool Is布(Par p)
+    	public override bool Is布(ShapePart p)
     	{
     		if (p != X0Y0_グローブ_通常_グローブ && p != X0Y0_グローブ_通常_縁 && p != X0Y0_グローブ_筋肉_グローブ && p != X0Y0_グローブ_筋肉_縁 && p != X0Y0_シャツ_袖1 && p != X0Y0_シャツ_袖2 && p != X0Y0_シャツ_縁 && p != X0Y0_ナース_袖1 && p != X0Y0_ナース_袖2)
     		{
@@ -4059,7 +4059,7 @@ namespace SlaveMatrix
     		return true;
     	}
 
-    	public override bool Is鉄(Par p)
+    	public override bool Is鉄(ShapePart p)
     	{
     		if (p != X0Y0_鎧_ベルト_ベルト1 && p != X0Y0_鎧_ベルト_ベルト2 && p != X0Y0_鎧_鎧_鎧1)
     		{

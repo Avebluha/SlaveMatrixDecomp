@@ -4,17 +4,17 @@ namespace SlaveMatrix
 {
     public class 葉_心 : 葉
     {
-    	public Par X0Y0_通常_葉;
+    	public ShapePart X0Y0_通常_葉;
 
-    	public Par X0Y0_通常_葉脈;
+    	public ShapePart X0Y0_通常_葉脈;
 
-    	public Par X0Y1_欠損1_葉;
+    	public ShapePart X0Y1_欠損1_葉;
 
-    	public Par X0Y1_欠損1_葉脈;
+    	public ShapePart X0Y1_欠損1_葉脈;
 
-    	public Par X0Y2_欠損2_葉;
+    	public ShapePart X0Y2_欠損2_葉;
 
-    	public Par X0Y2_欠損2_葉脈;
+    	public ShapePart X0Y2_欠損2_葉脈;
 
     	public ColorD 葉CD;
 

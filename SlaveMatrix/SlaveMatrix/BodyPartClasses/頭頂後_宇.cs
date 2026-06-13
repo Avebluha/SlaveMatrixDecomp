@@ -4,19 +4,19 @@ namespace SlaveMatrix
 {
     public class 頭頂後_宇 : Ele
     {
-    	public Par X0Y0_頭部;
+    	public ShapePart X0Y0_頭部;
 
-    	public Par X0Y0_線_線左1;
+    	public ShapePart X0Y0_線_線左1;
 
-    	public Par X0Y0_線_線左2;
+    	public ShapePart X0Y0_線_線左2;
 
-    	public Par X0Y0_線_線左3;
+    	public ShapePart X0Y0_線_線左3;
 
-    	public Par X0Y0_線_線右1;
+    	public ShapePart X0Y0_線_線右1;
 
-    	public Par X0Y0_線_線右2;
+    	public ShapePart X0Y0_線_線右2;
 
-    	public Par X0Y0_線_線右3;
+    	public ShapePart X0Y0_線_線右3;
 
     	public ColorD 頭部CD;
 

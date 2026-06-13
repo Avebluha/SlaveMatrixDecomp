@@ -4,61 +4,61 @@ namespace SlaveMatrix
 {
     public class 射精 : Ele
     {
-    	public Par X0Y0_精液;
+    	public ShapePart X0Y0_精液;
 
-    	public Par X0Y1_精液;
+    	public ShapePart X0Y1_精液;
 
-    	public Par X0Y2_精液;
+    	public ShapePart X0Y2_精液;
 
-    	public Par X0Y3_精液;
+    	public ShapePart X0Y3_精液;
 
-    	public Par X0Y4_精液;
+    	public ShapePart X0Y4_精液;
 
-    	public Par X0Y5_精液;
+    	public ShapePart X0Y5_精液;
 
-    	public Par X0Y6_精液;
+    	public ShapePart X0Y6_精液;
 
-    	public Par X1Y0_精液;
+    	public ShapePart X1Y0_精液;
 
-    	public Par X1Y1_精液;
+    	public ShapePart X1Y1_精液;
 
-    	public Par X1Y2_精液;
+    	public ShapePart X1Y2_精液;
 
-    	public Par X1Y3_精液;
+    	public ShapePart X1Y3_精液;
 
-    	public Par X1Y4_精液;
+    	public ShapePart X1Y4_精液;
 
-    	public Par X1Y5_精液;
+    	public ShapePart X1Y5_精液;
 
-    	public Par X1Y6_精液;
+    	public ShapePart X1Y6_精液;
 
-    	public Par X1Y7_精液;
+    	public ShapePart X1Y7_精液;
 
-    	public Par X1Y8_精液掛け;
+    	public ShapePart X1Y8_精液掛け;
 
-    	public Par X1Y8_精液;
+    	public ShapePart X1Y8_精液;
 
-    	public Par X1Y9_精液掛け;
+    	public ShapePart X1Y9_精液掛け;
 
-    	public Par X1Y9_精液;
+    	public ShapePart X1Y9_精液;
 
-    	public Par X1Y10_精液掛け;
+    	public ShapePart X1Y10_精液掛け;
 
-    	public Par X1Y10_精液;
+    	public ShapePart X1Y10_精液;
 
-    	public Par X1Y11_精液掛け;
+    	public ShapePart X1Y11_精液掛け;
 
-    	public Par X1Y11_精液;
+    	public ShapePart X1Y11_精液;
 
-    	public Par X1Y12_精液掛け;
+    	public ShapePart X1Y12_精液掛け;
 
-    	public Par X1Y12_精液;
+    	public ShapePart X1Y12_精液;
 
-    	public Par X1Y13_精液掛け;
+    	public ShapePart X1Y13_精液掛け;
 
-    	public Par X1Y13_精液;
+    	public ShapePart X1Y13_精液;
 
-    	public Par X1Y14_精液;
+    	public ShapePart X1Y14_精液;
 
     	public ColorD 精液掛けCD;
 

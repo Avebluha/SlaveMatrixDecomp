@@ -28,7 +28,7 @@ namespace _2DGAMELIB
     	{
     		foreach (Lab value in labs.Values)
     		{
-    			Are.Draw(value.ParT);
+    			Are.Draw(value.ShapePartT);
     		}
     	}
 

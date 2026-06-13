@@ -4,15 +4,15 @@ namespace SlaveMatrix
 {
     public class 鼻水 : Ele
     {
-    	public Par X0Y0_鼻水;
+    	public ShapePart X0Y0_鼻水;
 
-    	public Par X0Y1_鼻水;
+    	public ShapePart X0Y1_鼻水;
 
-    	public Par X0Y2_鼻水;
+    	public ShapePart X0Y2_鼻水;
 
-    	public Par X0Y3_鼻水;
+    	public ShapePart X0Y3_鼻水;
 
-    	public Par X0Y4_鼻水;
+    	public ShapePart X0Y4_鼻水;
 
     	public ColorD 鼻水CD;
 

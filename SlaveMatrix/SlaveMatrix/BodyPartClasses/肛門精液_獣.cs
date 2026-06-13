@@ -4,17 +4,17 @@ namespace SlaveMatrix
 {
     public class 肛門精液_獣 : 肛門精液
     {
-    	public Par X0Y0_精液;
+    	public ShapePart X0Y0_精液;
 
-    	public Par X0Y1_精液;
+    	public ShapePart X0Y1_精液;
 
-    	public Par X0Y2_精液;
+    	public ShapePart X0Y2_精液;
 
-    	public Par X0Y3_精液;
+    	public ShapePart X0Y3_精液;
 
-    	public Par X0Y4_精液;
+    	public ShapePart X0Y4_精液;
 
-    	public Par X0Y5_精液;
+    	public ShapePart X0Y5_精液;
 
     	public ColorD 精液CD;
 

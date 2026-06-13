@@ -441,24 +441,24 @@ class Program
                 ExportParsToSvgInner(childPars, sb, foundJoints);
                 sb.AppendLine("</g>");
             }
-            else if (val is Par par)
+            else if (val is ShapePart par)
             {
                 ExportParToSvg(par, key, sb, foundJoints);
             }
         }
     }
 
-    static void ExportParToSvg(Par par, string name, StringBuilder sb, List<string> foundJoints)
+    static void ExportParToSvg(ShapePart ShapePart, string name, StringBuilder sb, List<string> foundJoints)
     {
-        if (!par.Dra) return;
+        if (!ShapePart.Dra) return;
 
-        var bx = par.BasePoint.X;
-        var by = par.BasePoint.Y;
-        var px = par.Position.X;
-        var py = par.Position.Y;
-        var angle = par.Angle;
-        var sx = par.Size * par.SizeX;
-        var sy = par.Size * par.SizeY;
+        var bx = ShapePart.BasePoint.X;
+        var by = ShapePart.BasePoint.Y;
+        var px = ShapePart.Position.X;
+        var py = ShapePart.Position.Y;
+        var angle = ShapePart.Angle;
+        var sx = ShapePart.Size * ShapePart.SizeX;
+        var sy = ShapePart.Size * ShapePart.SizeY;
 
         var hasTransform = System.Math.Abs(bx) > 0.001 || System.Math.Abs(by) > 0.001
             || System.Math.Abs(px) > 0.001 || System.Math.Abs(py) > 0.001
@@ -467,22 +467,22 @@ class Program
         if (hasTransform)
             sb.Append($"<g transform=\"translate({F(px)},{F(py)}) rotate({F(angle)}) scale({F(sx)},{F(sy)}) translate({F(-bx)},{F(-by)})\">");
 
-        foreach (var outObj in par.OP)
+        foreach (var outObj in ShapePart.OP)
         {
             var points = outObj.ps;
             if (points.Count < 2) continue;
 
-            var d = BuildSvgPath(points, outObj.Tension, par.Closed);
-            var fill = par.Closed ? "#cccccc" : "none";
+            var d = BuildSvgPath(points, outObj.Tension, ShapePart.Closed);
+            var fill = ShapePart.Closed ? "#cccccc" : "none";
             var stroke = outObj.Outline ? "#000000" : "none";
-            var sw_val = outObj.Outline ? System.Math.Max(par.PenWidth, 0.001) : 0.0;
+            var sw_val = outObj.Outline ? System.Math.Max(ShapePart.PenWidth, 0.001) : 0.0;
             sb.AppendLine($"<path d=\"{d}\" fill=\"{fill}\" stroke=\"{stroke}\" stroke-width=\"{F(sw_val)}\"/>");
         }
 
         if (hasTransform)
             sb.Append("</g>");
 
-        foreach (var joi in par.JP)
+        foreach (var joi in ShapePart.JP)
         {
             foundJoints.Add($"{F(joi.Joint.X)},{F(joi.Joint.Y)}");
         }
@@ -621,9 +621,9 @@ class Program
             var val = pars[key];
             if (val is Pars childPars)
                 result["Children"][key] = ExportPars(childPars);
-            else if (val is ParT parT)
+            else if (val is ShapePartT parT)
                 result["Children"][key] = ExportParT(parT);
-            else if (val is Par par)
+            else if (val is ShapePart par)
                 result["Children"][key] = ExportPar(par);
             else
                 result["Children"][key] = val?.ToString() ?? "null";
@@ -632,24 +632,24 @@ class Program
         return result;
     }
 
-    static JObject ExportPar(Par par)
+    static JObject ExportPar(ShapePart ShapePart)
     {
         var result = new JObject
         {
-            ["Tag"] = par.Tag ?? "",
-            ["Dra"] = par.Dra,
-            ["PenWidth"] = par.PenWidth,
-            ["Closed"] = par.Closed,
-            ["BasePoint"] = ExportVec(par.BasePoint),
-            ["Position"] = ExportVec(par.Position),
-            ["Angle"] = par.Angle,
-            ["Size"] = par.Size,
-            ["SizeX"] = par.SizeX,
-            ["SizeY"] = par.SizeY,
+            ["Tag"] = ShapePart.Tag ?? "",
+            ["Dra"] = ShapePart.Dra,
+            ["PenWidth"] = ShapePart.PenWidth,
+            ["Closed"] = ShapePart.Closed,
+            ["BasePoint"] = ExportVec(ShapePart.BasePoint),
+            ["Position"] = ExportVec(ShapePart.Position),
+            ["Angle"] = ShapePart.Angle,
+            ["Size"] = ShapePart.Size,
+            ["SizeX"] = ShapePart.SizeX,
+            ["SizeY"] = ShapePart.SizeY,
             ["Out"] = new JArray()
         };
 
-        foreach (var outObj in par.OP)
+        foreach (var outObj in ShapePart.OP)
         {
             var outJ = new JObject
             {
@@ -662,21 +662,21 @@ class Program
             ((JArray)result["Out"]).Add(outJ);
         }
 
-        if (par.JP.Count > 0)
+        if (ShapePart.JP.Count > 0)
         {
             result["Joints"] = new JArray();
-            foreach (var joi in par.JP)
+            foreach (var joi in ShapePart.JP)
                 ((JArray)result["Joints"]).Add(ExportVec(joi.Joint));
         }
 
         return result;
     }
 
-    static JObject ExportParT(ParT parT)
+    static JObject ExportParT(ShapePartT ShapePartT)
     {
-        var result = ExportPar(parT);
-        result["Text"] = parT.Text ?? "";
-        result["FontSize"] = parT.FontSize;
+        var result = ExportPar(ShapePartT);
+        result["Text"] = ShapePartT.Text ?? "";
+        result["FontSize"] = ShapePartT.FontSize;
         return result;
     }
 

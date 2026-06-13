@@ -33,10 +33,10 @@ namespace _2DGAMELIB
 
     	public int Index;
 
-    	public JointS(Difs Difs, Par Par, int Index)
+    	public JointS(Difs Difs, ShapePart ShapePart, int Index)
     	{
     		this.Difs = Difs;
-    		Path = Par.GetPath();
+    		Path = ShapePart.GetPath();
     		this.Index = Index;
     	}
     }

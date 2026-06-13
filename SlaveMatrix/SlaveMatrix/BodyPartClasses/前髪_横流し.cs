@@ -4,63 +4,63 @@ namespace SlaveMatrix
 {
     public class 前髪_横流し : 前髪
     {
-    	public Par X0Y0_髪基;
+    	public ShapePart X0Y0_髪基;
 
-    	public Par X0Y0_髪左1;
+    	public ShapePart X0Y0_髪左1;
 
-    	public Par X0Y0_髪左2;
+    	public ShapePart X0Y0_髪左2;
 
-    	public Par X0Y0_編み左_編節1_髪節;
+    	public ShapePart X0Y0_編み左_編節1_髪節;
 
-    	public Par X0Y0_編み左_編節1_髪編目;
+    	public ShapePart X0Y0_編み左_編節1_髪編目;
 
-    	public Par X0Y0_編み左_編節2_髪節;
+    	public ShapePart X0Y0_編み左_編節2_髪節;
 
-    	public Par X0Y0_編み左_編節2_髪編目;
+    	public ShapePart X0Y0_編み左_編節2_髪編目;
 
-    	public Par X0Y0_編み左_編節3_髪節;
+    	public ShapePart X0Y0_編み左_編節3_髪節;
 
-    	public Par X0Y0_編み左_編節3_髪編目;
+    	public ShapePart X0Y0_編み左_編節3_髪編目;
 
-    	public Par X0Y0_髪ハネ左;
+    	public ShapePart X0Y0_髪ハネ左;
 
-    	public Par X0Y0_髪右1;
+    	public ShapePart X0Y0_髪右1;
 
-    	public Par X0Y0_編み右_編節1_髪節;
+    	public ShapePart X0Y0_編み右_編節1_髪節;
 
-    	public Par X0Y0_編み右_編節1_髪編目;
+    	public ShapePart X0Y0_編み右_編節1_髪編目;
 
-    	public Par X0Y0_編み右_編節2_髪節;
+    	public ShapePart X0Y0_編み右_編節2_髪節;
 
-    	public Par X0Y0_編み右_編節2_髪編目;
+    	public ShapePart X0Y0_編み右_編節2_髪編目;
 
-    	public Par X0Y0_編み右_編節3_髪節;
+    	public ShapePart X0Y0_編み右_編節3_髪節;
 
-    	public Par X0Y0_編み右_編節3_髪編目;
+    	public ShapePart X0Y0_編み右_編節3_髪編目;
 
-    	public Par X0Y0_髪ハネ右;
+    	public ShapePart X0Y0_髪ハネ右;
 
-    	public Par X0Y0_髪右2;
+    	public ShapePart X0Y0_髪右2;
 
-    	public Par X0Y0_髪右3;
+    	public ShapePart X0Y0_髪右3;
 
-    	public Par X0Y0_髪右4;
+    	public ShapePart X0Y0_髪右4;
 
-    	public Par X0Y0_髪右5;
+    	public ShapePart X0Y0_髪右5;
 
-    	public Par X0Y0_髪左3;
+    	public ShapePart X0Y0_髪左3;
 
-    	public Par X0Y0_髪右6;
+    	public ShapePart X0Y0_髪右6;
 
-    	public Par X0Y0_ハイライト;
+    	public ShapePart X0Y0_ハイライト;
 
-    	public Par X0Y0_髪頭頂横左1;
+    	public ShapePart X0Y0_髪頭頂横左1;
 
-    	public Par X0Y0_髪頭頂横左2;
+    	public ShapePart X0Y0_髪頭頂横左2;
 
-    	public Par X0Y0_髪頭頂横右1;
+    	public ShapePart X0Y0_髪頭頂横右1;
 
-    	public Par X0Y0_髪頭頂横右2;
+    	public ShapePart X0Y0_髪頭頂横右2;
 
     	public ColorD 髪基CD;
 

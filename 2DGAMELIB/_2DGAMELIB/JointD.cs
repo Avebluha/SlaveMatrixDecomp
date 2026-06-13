@@ -14,7 +14,7 @@ namespace _2DGAMELIB
 
     	public Difs Difs1;
 
-    	public JointD(Difs Difs0, Par Par0, int Index, Difs Difs1)
+    	public JointD(Difs Difs0, ShapePart Par0, int Index, Difs Difs1)
     	{
     		this.Difs0 = Difs0;
     		Path0 = Par0.GetPath();

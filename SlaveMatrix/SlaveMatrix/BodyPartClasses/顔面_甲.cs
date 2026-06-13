@@ -5,45 +5,45 @@ namespace SlaveMatrix
 {
     public class 顔面_甲 : 顔面
     {
-    	public Par X0Y0_面額;
+    	public ShapePart X0Y0_面額;
 
-    	public Par X0Y0_面左下_面目;
+    	public ShapePart X0Y0_面左下_面目;
 
-    	public Par X0Y0_面左下_面;
+    	public ShapePart X0Y0_面左下_面;
 
-    	public Par X0Y0_面右下_面目;
+    	public ShapePart X0Y0_面右下_面目;
 
-    	public Par X0Y0_面右下_面;
+    	public ShapePart X0Y0_面右下_面;
 
-    	public Par X0Y0_面左外;
+    	public ShapePart X0Y0_面左外;
 
-    	public Par X0Y0_面右外;
+    	public ShapePart X0Y0_面右外;
 
-    	public Par X0Y0_面左上_面目;
+    	public ShapePart X0Y0_面左上_面目;
 
-    	public Par X0Y0_面左上_面;
+    	public ShapePart X0Y0_面左上_面;
 
-    	public Par X0Y0_面右上_面目;
+    	public ShapePart X0Y0_面右上_面目;
 
-    	public Par X0Y0_面右上_面;
+    	public ShapePart X0Y0_面右上_面;
 
-    	public Par X0Y0_面中0_面中;
+    	public ShapePart X0Y0_面中0_面中;
 
-    	public Par X0Y0_面中0_付根左_付根1;
+    	public ShapePart X0Y0_面中0_付根左_付根1;
 
-    	public Par X0Y0_面中0_付根左_付根2;
+    	public ShapePart X0Y0_面中0_付根左_付根2;
 
-    	public Par X0Y0_面中0_付根右_付根1;
+    	public ShapePart X0Y0_面中0_付根右_付根1;
 
-    	public Par X0Y0_面中0_付根右_付根2;
+    	public ShapePart X0Y0_面中0_付根右_付根2;
 
-    	public Par X0Y0_面中2_面中;
+    	public ShapePart X0Y0_面中2_面中;
 
-    	public Par X0Y0_面中2_面中下;
+    	public ShapePart X0Y0_面中2_面中下;
 
-    	public Par X0Y0_面中1_面中;
+    	public ShapePart X0Y0_面中1_面中;
 
-    	public Par X0Y0_面中1_面中下;
+    	public ShapePart X0Y0_面中1_面中下;
 
     	public ColorD 面額CD;
 

@@ -159,11 +159,11 @@ namespace _2DGAMELIB
     		}
     	}
 
-    	public IEnumerable<Par> EnumAllPar()
+    	public IEnumerable<ShapePart> EnumAllPar()
     	{
     		foreach (Pars item in parss)
     		{
-    			foreach (Par item2 in item.EnumAllPar())
+    			foreach (ShapePart item2 in item.EnumAllPar())
     			{
     				yield return item2;
     			}
@@ -211,9 +211,9 @@ namespace _2DGAMELIB
     		return list;
     	}
 
-    	public List<Par> GetHitPars(ref Color HitColor)
+    	public List<ShapePart> GetHitPars(ref Color HitColor)
     	{
-    		List<Par> list = new List<Par>();
+    		List<ShapePart> list = new List<ShapePart>();
     		foreach (Pars item in parss)
     		{
     			list.AddRange(item.GetHitPars(ref HitColor));

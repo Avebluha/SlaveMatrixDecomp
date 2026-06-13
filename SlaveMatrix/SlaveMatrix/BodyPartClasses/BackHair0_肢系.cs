@@ -6,7 +6,7 @@ namespace SlaveMatrix
 {
     public class BackHair0_肢系 : 下ろし
     {
-    	public Par X0Y0_髪基;
+    	public ShapePart X0Y0_髪基;
 
     	public ColorD 髪基CD;
 

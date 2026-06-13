@@ -5,23 +5,23 @@ namespace SlaveMatrix
 {
     public class 長物_蛇 : 半身
     {
-    	public Par X0Y0_Torso1_Torso;
+    	public ShapePart X0Y0_Torso1_Torso;
 
-    	public Par X0Y0_Torso1_鱗2;
+    	public ShapePart X0Y0_Torso1_鱗2;
 
-    	public Par X0Y0_Torso1_鱗右;
+    	public ShapePart X0Y0_Torso1_鱗右;
 
-    	public Par X0Y0_Torso1_鱗左;
+    	public ShapePart X0Y0_Torso1_鱗左;
 
-    	public Par X0Y0_Torso1_鱗1;
+    	public ShapePart X0Y0_Torso1_鱗1;
 
-    	public Par X0Y0_Torso1_鱗左2;
+    	public ShapePart X0Y0_Torso1_鱗左2;
 
-    	public Par X0Y0_Torso1_鱗右2;
+    	public ShapePart X0Y0_Torso1_鱗右2;
 
-    	public Par X0Y0_Torso1_鱗左1;
+    	public ShapePart X0Y0_Torso1_鱗左1;
 
-    	public Par X0Y0_Torso1_鱗右1;
+    	public ShapePart X0Y0_Torso1_鱗右1;
 
     	public ColorD Torso1_TorsoCD;
 

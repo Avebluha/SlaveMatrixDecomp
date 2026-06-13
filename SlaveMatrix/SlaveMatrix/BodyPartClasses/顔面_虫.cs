@@ -5,57 +5,57 @@ namespace SlaveMatrix
 {
     public class 顔面_虫 : 顔面
     {
-    	public Par X0Y0_面基;
+    	public ShapePart X0Y0_面基;
 
-    	public Par X0Y0_複眼左_複眼1;
+    	public ShapePart X0Y0_複眼左_複眼1;
 
-    	public Par X0Y0_複眼左_複眼2;
+    	public ShapePart X0Y0_複眼左_複眼2;
 
-    	public Par X0Y0_複眼左_ハイライト;
+    	public ShapePart X0Y0_複眼左_ハイライト;
 
-    	public Par X0Y0_複眼右_複眼1;
+    	public ShapePart X0Y0_複眼右_複眼1;
 
-    	public Par X0Y0_複眼右_複眼2;
+    	public ShapePart X0Y0_複眼右_複眼2;
 
-    	public Par X0Y0_複眼右_ハイライト;
+    	public ShapePart X0Y0_複眼右_ハイライト;
 
-    	public Par X0Y0_面下_面;
+    	public ShapePart X0Y0_面下_面;
 
-    	public Par X0Y0_面下_器官左上;
+    	public ShapePart X0Y0_面下_器官左上;
 
-    	public Par X0Y0_面下_器官左下;
+    	public ShapePart X0Y0_面下_器官左下;
 
-    	public Par X0Y0_面下_器官右上;
+    	public ShapePart X0Y0_面下_器官右上;
 
-    	public Par X0Y0_面下_器官右下;
+    	public ShapePart X0Y0_面下_器官右下;
 
-    	public Par X0Y0_面上;
+    	public ShapePart X0Y0_面上;
 
-    	public Par X0Y0_付根左_付根1;
+    	public ShapePart X0Y0_付根左_付根1;
 
-    	public Par X0Y0_付根左_付根2;
+    	public ShapePart X0Y0_付根左_付根2;
 
-    	public Par X0Y0_付根右_付根1;
+    	public ShapePart X0Y0_付根右_付根1;
 
-    	public Par X0Y0_付根右_付根2;
+    	public ShapePart X0Y0_付根右_付根2;
 
-    	public Par X0Y0_単眼_眼中_基;
+    	public ShapePart X0Y0_単眼_眼中_基;
 
-    	public Par X0Y0_単眼_眼中_眼;
+    	public ShapePart X0Y0_単眼_眼中_眼;
 
-    	public Par X0Y0_単眼_眼中_ハイライト;
+    	public ShapePart X0Y0_単眼_眼中_ハイライト;
 
-    	public Par X0Y0_単眼_眼左_基;
+    	public ShapePart X0Y0_単眼_眼左_基;
 
-    	public Par X0Y0_単眼_眼左_眼;
+    	public ShapePart X0Y0_単眼_眼左_眼;
 
-    	public Par X0Y0_単眼_眼左_ハイライト;
+    	public ShapePart X0Y0_単眼_眼左_ハイライト;
 
-    	public Par X0Y0_単眼_眼右_基;
+    	public ShapePart X0Y0_単眼_眼右_基;
 
-    	public Par X0Y0_単眼_眼右_眼;
+    	public ShapePart X0Y0_単眼_眼右_眼;
 
-    	public Par X0Y0_単眼_眼右_ハイライト;
+    	public ShapePart X0Y0_単眼_眼右_ハイライト;
 
     	public ColorD 面基CD;
 

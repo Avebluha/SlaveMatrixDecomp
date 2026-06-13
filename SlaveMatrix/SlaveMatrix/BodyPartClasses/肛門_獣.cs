@@ -5,11 +5,11 @@ namespace SlaveMatrix
 {
     public class 肛門_獣 : 肛門
     {
-    	public Par X0Y0_肛門3;
+    	public ShapePart X0Y0_肛門3;
 
-    	public Par X0Y0_肛門2;
+    	public ShapePart X0Y0_肛門2;
 
-    	public Par X0Y0_肛門1;
+    	public ShapePart X0Y0_肛門1;
 
     	public ColorD 肛門3CD;
 

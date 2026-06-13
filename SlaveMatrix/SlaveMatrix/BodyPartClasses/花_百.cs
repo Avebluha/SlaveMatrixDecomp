@@ -4,93 +4,93 @@ namespace SlaveMatrix
 {
     public class 花_百 : 花
     {
-    	public Par X0Y0_花_ユリ_通常_萼2;
+    	public ShapePart X0Y0_花_ユリ_通常_萼2;
 
-    	public Par X0Y0_花_ユリ_通常_萼3;
+    	public ShapePart X0Y0_花_ユリ_通常_萼3;
 
-    	public Par X0Y0_花_ユリ_通常_花弁1;
+    	public ShapePart X0Y0_花_ユリ_通常_花弁1;
 
-    	public Par X0Y0_花_ユリ_通常_蕊_雄蕊中後_葯;
+    	public ShapePart X0Y0_花_ユリ_通常_蕊_雄蕊中後_葯;
 
-    	public Par X0Y0_花_ユリ_通常_蕊_雄蕊中後_雄蕊;
+    	public ShapePart X0Y0_花_ユリ_通常_蕊_雄蕊中後_雄蕊;
 
-    	public Par X0Y0_花_ユリ_通常_蕊_雌蕊_雌蕊;
+    	public ShapePart X0Y0_花_ユリ_通常_蕊_雌蕊_雌蕊;
 
-    	public Par X0Y0_花_ユリ_通常_蕊_雌蕊_柱頭;
+    	public ShapePart X0Y0_花_ユリ_通常_蕊_雌蕊_柱頭;
 
-    	public Par X0Y0_花_ユリ_通常_蕊_雄蕊左2_葯;
+    	public ShapePart X0Y0_花_ユリ_通常_蕊_雄蕊左2_葯;
 
-    	public Par X0Y0_花_ユリ_通常_蕊_雄蕊左2_雄蕊;
+    	public ShapePart X0Y0_花_ユリ_通常_蕊_雄蕊左2_雄蕊;
 
-    	public Par X0Y0_花_ユリ_通常_蕊_雄蕊右2_葯;
+    	public ShapePart X0Y0_花_ユリ_通常_蕊_雄蕊右2_葯;
 
-    	public Par X0Y0_花_ユリ_通常_蕊_雄蕊右2_雄蕊;
+    	public ShapePart X0Y0_花_ユリ_通常_蕊_雄蕊右2_雄蕊;
 
-    	public Par X0Y0_花_ユリ_通常_蕊_雄蕊左1_雄蕊;
+    	public ShapePart X0Y0_花_ユリ_通常_蕊_雄蕊左1_雄蕊;
 
-    	public Par X0Y0_花_ユリ_通常_蕊_雄蕊左1_葯;
+    	public ShapePart X0Y0_花_ユリ_通常_蕊_雄蕊左1_葯;
 
-    	public Par X0Y0_花_ユリ_通常_蕊_雄蕊右1_雄蕊;
+    	public ShapePart X0Y0_花_ユリ_通常_蕊_雄蕊右1_雄蕊;
 
-    	public Par X0Y0_花_ユリ_通常_蕊_雄蕊右1_葯;
+    	public ShapePart X0Y0_花_ユリ_通常_蕊_雄蕊右1_葯;
 
-    	public Par X0Y0_花_ユリ_通常_蕊_雄蕊中前_雄蕊;
+    	public ShapePart X0Y0_花_ユリ_通常_蕊_雄蕊中前_雄蕊;
 
-    	public Par X0Y0_花_ユリ_通常_蕊_雄蕊中前_葯;
+    	public ShapePart X0Y0_花_ユリ_通常_蕊_雄蕊中前_葯;
 
-    	public Par X0Y0_花_ユリ_通常_花弁2;
+    	public ShapePart X0Y0_花_ユリ_通常_花弁2;
 
-    	public Par X0Y0_花_ユリ_通常_花弁3;
+    	public ShapePart X0Y0_花_ユリ_通常_花弁3;
 
-    	public Par X0Y0_花_ユリ_通常_萼1_萼2;
+    	public ShapePart X0Y0_花_ユリ_通常_萼1_萼2;
 
-    	public Par X0Y0_花_ユリ_通常_萼1_萼1;
+    	public ShapePart X0Y0_花_ユリ_通常_萼1_萼1;
 
-    	public Par X0Y0_花_ユリ_欠損_萼2;
+    	public ShapePart X0Y0_花_ユリ_欠損_萼2;
 
-    	public Par X0Y0_花_ユリ_欠損_萼3;
+    	public ShapePart X0Y0_花_ユリ_欠損_萼3;
 
-    	public Par X0Y0_花_ユリ_欠損_花弁1;
+    	public ShapePart X0Y0_花_ユリ_欠損_花弁1;
 
-    	public Par X0Y0_花_ユリ_欠損_蕊_雄蕊中後_葯;
+    	public ShapePart X0Y0_花_ユリ_欠損_蕊_雄蕊中後_葯;
 
-    	public Par X0Y0_花_ユリ_欠損_蕊_雄蕊中後_雄蕊;
+    	public ShapePart X0Y0_花_ユリ_欠損_蕊_雄蕊中後_雄蕊;
 
-    	public Par X0Y0_花_ユリ_欠損_蕊_雌蕊_雌蕊;
+    	public ShapePart X0Y0_花_ユリ_欠損_蕊_雌蕊_雌蕊;
 
-    	public Par X0Y0_花_ユリ_欠損_蕊_雌蕊_柱頭;
+    	public ShapePart X0Y0_花_ユリ_欠損_蕊_雌蕊_柱頭;
 
-    	public Par X0Y0_花_ユリ_欠損_蕊_雄蕊左2_葯;
+    	public ShapePart X0Y0_花_ユリ_欠損_蕊_雄蕊左2_葯;
 
-    	public Par X0Y0_花_ユリ_欠損_蕊_雄蕊左2_雄蕊;
+    	public ShapePart X0Y0_花_ユリ_欠損_蕊_雄蕊左2_雄蕊;
 
-    	public Par X0Y0_花_ユリ_欠損_蕊_雄蕊右2_葯;
+    	public ShapePart X0Y0_花_ユリ_欠損_蕊_雄蕊右2_葯;
 
-    	public Par X0Y0_花_ユリ_欠損_蕊_雄蕊右2_雄蕊;
+    	public ShapePart X0Y0_花_ユリ_欠損_蕊_雄蕊右2_雄蕊;
 
-    	public Par X0Y0_花_ユリ_欠損_蕊_雄蕊左1_雄蕊;
+    	public ShapePart X0Y0_花_ユリ_欠損_蕊_雄蕊左1_雄蕊;
 
-    	public Par X0Y0_花_ユリ_欠損_蕊_雄蕊左1_葯;
+    	public ShapePart X0Y0_花_ユリ_欠損_蕊_雄蕊左1_葯;
 
-    	public Par X0Y0_花_ユリ_欠損_蕊_雄蕊右1_雄蕊;
+    	public ShapePart X0Y0_花_ユリ_欠損_蕊_雄蕊右1_雄蕊;
 
-    	public Par X0Y0_花_ユリ_欠損_蕊_雄蕊右1_葯;
+    	public ShapePart X0Y0_花_ユリ_欠損_蕊_雄蕊右1_葯;
 
-    	public Par X0Y0_花_ユリ_欠損_蕊_雄蕊中前_雄蕊;
+    	public ShapePart X0Y0_花_ユリ_欠損_蕊_雄蕊中前_雄蕊;
 
-    	public Par X0Y0_花_ユリ_欠損_蕊_雄蕊中前_葯;
+    	public ShapePart X0Y0_花_ユリ_欠損_蕊_雄蕊中前_葯;
 
-    	public Par X0Y0_花_ユリ_欠損_花弁2;
+    	public ShapePart X0Y0_花_ユリ_欠損_花弁2;
 
-    	public Par X0Y0_花_ユリ_欠損_花弁3;
+    	public ShapePart X0Y0_花_ユリ_欠損_花弁3;
 
-    	public Par X0Y0_花_ユリ_欠損_萼1_萼2;
+    	public ShapePart X0Y0_花_ユリ_欠損_萼1_萼2;
 
-    	public Par X0Y0_花_ユリ_欠損_萼1_萼1;
+    	public ShapePart X0Y0_花_ユリ_欠損_萼1_萼1;
 
-    	public Par X0Y0_萼_通常_萼;
+    	public ShapePart X0Y0_萼_通常_萼;
 
-    	public Par X0Y0_萼_欠損_萼;
+    	public ShapePart X0Y0_萼_欠損_萼;
 
     	public ColorD 花_ユリ_萼2CD;
 

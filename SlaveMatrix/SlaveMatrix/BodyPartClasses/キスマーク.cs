@@ -4,7 +4,7 @@ namespace SlaveMatrix
 {
     public class キスマーク : Ele
     {
-    	public Par X0Y0_キスマーク;
+    	public ShapePart X0Y0_キスマーク;
 
     	public ColorD キスマークCD;
 

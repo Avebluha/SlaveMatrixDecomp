@@ -4,57 +4,57 @@ namespace SlaveMatrix
 {
     public class 花_薔 : 花
     {
-    	public Par X0Y0_花_バラ_通常_花弁2;
+    	public ShapePart X0Y0_花_バラ_通常_花弁2;
 
-    	public Par X0Y0_花_バラ_通常_花弁4;
+    	public ShapePart X0Y0_花_バラ_通常_花弁4;
 
-    	public Par X0Y0_花_バラ_通常_花弁3;
+    	public ShapePart X0Y0_花_バラ_通常_花弁3;
 
-    	public Par X0Y0_花_バラ_通常_花弁1;
+    	public ShapePart X0Y0_花_バラ_通常_花弁1;
 
-    	public Par X0Y0_花_バラ_通常_花弁5;
+    	public ShapePart X0Y0_花_バラ_通常_花弁5;
 
-    	public Par X0Y0_花_バラ_通常_花弁6;
+    	public ShapePart X0Y0_花_バラ_通常_花弁6;
 
-    	public Par X0Y0_花_バラ_通常_花弁8;
+    	public ShapePart X0Y0_花_バラ_通常_花弁8;
 
-    	public Par X0Y0_花_バラ_通常_花弁7;
+    	public ShapePart X0Y0_花_バラ_通常_花弁7;
 
-    	public Par X0Y0_花_バラ_通常_花弁9;
+    	public ShapePart X0Y0_花_バラ_通常_花弁9;
 
-    	public Par X0Y0_花_バラ_通常_花弁11;
+    	public ShapePart X0Y0_花_バラ_通常_花弁11;
 
-    	public Par X0Y0_花_バラ_通常_花弁10;
+    	public ShapePart X0Y0_花_バラ_通常_花弁10;
 
-    	public Par X0Y0_花_バラ_通常_花弁影;
+    	public ShapePart X0Y0_花_バラ_通常_花弁影;
 
-    	public Par X0Y0_花_バラ_欠損_花弁2;
+    	public ShapePart X0Y0_花_バラ_欠損_花弁2;
 
-    	public Par X0Y0_花_バラ_欠損_花弁4;
+    	public ShapePart X0Y0_花_バラ_欠損_花弁4;
 
-    	public Par X0Y0_花_バラ_欠損_花弁3;
+    	public ShapePart X0Y0_花_バラ_欠損_花弁3;
 
-    	public Par X0Y0_花_バラ_欠損_花弁1;
+    	public ShapePart X0Y0_花_バラ_欠損_花弁1;
 
-    	public Par X0Y0_花_バラ_欠損_花弁5;
+    	public ShapePart X0Y0_花_バラ_欠損_花弁5;
 
-    	public Par X0Y0_花_バラ_欠損_花弁6;
+    	public ShapePart X0Y0_花_バラ_欠損_花弁6;
 
-    	public Par X0Y0_花_バラ_欠損_花弁8;
+    	public ShapePart X0Y0_花_バラ_欠損_花弁8;
 
-    	public Par X0Y0_花_バラ_欠損_花弁7;
+    	public ShapePart X0Y0_花_バラ_欠損_花弁7;
 
-    	public Par X0Y0_花_バラ_欠損_花弁9;
+    	public ShapePart X0Y0_花_バラ_欠損_花弁9;
 
-    	public Par X0Y0_花_バラ_欠損_花弁11;
+    	public ShapePart X0Y0_花_バラ_欠損_花弁11;
 
-    	public Par X0Y0_花_バラ_欠損_花弁10;
+    	public ShapePart X0Y0_花_バラ_欠損_花弁10;
 
-    	public Par X0Y0_花_バラ_欠損_花弁影;
+    	public ShapePart X0Y0_花_バラ_欠損_花弁影;
 
-    	public Par X0Y0_萼_通常_萼;
+    	public ShapePart X0Y0_萼_通常_萼;
 
-    	public Par X0Y0_萼_欠損_萼;
+    	public ShapePart X0Y0_萼_欠損_萼;
 
     	public ColorD 花_バラ_花弁2CD;
 

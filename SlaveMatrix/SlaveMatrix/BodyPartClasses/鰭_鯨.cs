@@ -4,7 +4,7 @@ namespace SlaveMatrix
 {
     public class 鰭_鯨 : 鰭
     {
-    	public Par X0Y0_鰭;
+    	public ShapePart X0Y0_鰭;
 
     	public ColorD 鰭CD;
 

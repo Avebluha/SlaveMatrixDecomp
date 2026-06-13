@@ -19,7 +19,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public virtual IEnumerable<Par> Enum軸()
+    	public virtual IEnumerable<ShapePart> Enum軸()
     	{
     		yield break;
     	}

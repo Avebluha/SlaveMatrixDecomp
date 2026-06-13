@@ -19,7 +19,7 @@ namespace _2DGAMELIB
 
     	public Dictionary<Pars, Joints> pj;
 
-    	public Dictionary<Pars, Par> pr;
+    	public Dictionary<Pars, ShapePart> pr;
 
     	public int CountX => difs.Count;
 
@@ -214,7 +214,7 @@ namespace _2DGAMELIB
     	}
 
     	[JsonIgnore]
-    	public Par CurJoinRoot
+    	public ShapePart CurJoinRoot
     	{
     		get
     		{
@@ -228,12 +228,12 @@ namespace _2DGAMELIB
     	}
 
     	[JsonIgnore]
-    	public IEnumerable<Par> EnumJoinRoot => pr.Values;
-    	public IEnumerable<Par> EnumAllPar()
+    	public IEnumerable<ShapePart> EnumJoinRoot => pr.Values;
+    	public IEnumerable<ShapePart> EnumAllPar()
     	{
     		foreach (Dif dif in difs)
     		{
-    			foreach (Par item in dif.EnumAllPar())
+    			foreach (ShapePart item in dif.EnumAllPar())
     			{
     				yield return item;
     			}
@@ -294,26 +294,26 @@ namespace _2DGAMELIB
     		AreM.Draw(Current);
     	}
 
-    	private Par GetJoinRoot(Pars ps)
+    	private ShapePart GetJoinRoot(Pars ps)
     	{
-    		Par[] array = ps.EnumAllPar().ToArray();
+    		ShapePart[] array = ps.EnumAllPar().ToArray();
     		if (array.Length <= 1)
     		{
     			return array.FirstOrDefault();
     		}
-    		Par[] array2 = array;
-    		foreach (Par p0 in array2)
+    		ShapePart[] array2 = array;
+    		foreach (ShapePart p0 in array2)
     		{
     			Vector2D p = p0.Position;
-    			if (array.All((Par p1) => p0 == p1 || p1.JP.All((Joi j) => !(p1.ToGlobal(j.Joint).DistanceSquared(p) <= Join.IdentityDistance))))
+    			if (array.All((ShapePart p1) => p0 == p1 || p1.JP.All((Joi j) => !(p1.ToGlobal(j.Joint).DistanceSquared(p) <= Join.IdentityDistance))))
     			{
     				return p0;
     			}
     		}
-    		Par par = array.FirstOrDefault((Par e) => e.JP.Count > 0);
-    		if (par != null)
+    		ShapePart shapePart = array.FirstOrDefault((ShapePart e) => e.JP.Count > 0);
+    		if (shapePart != null)
     		{
-    			return par;
+    			return shapePart;
     		}
     		return array.First();
     	}
@@ -321,10 +321,10 @@ namespace _2DGAMELIB
     	public void SetJoints()
     	{
     		pj = new Dictionary<Pars, Joints>();
-    		pr = new Dictionary<Pars, Par>();
+    		pr = new Dictionary<Pars, ShapePart>();
     		foreach (Pars item in EnumAllPars())
     		{
-    			Par joinRoot = GetJoinRoot(item);
+    			ShapePart joinRoot = GetJoinRoot(item);
     			if (joinRoot != null)
     			{
     				pj.Add(item, joinRoot.GetJoints(item.EnumAllPar()));
@@ -359,9 +359,9 @@ namespace _2DGAMELIB
     		}
     	}
 
-    	public Par GetHitPar_(Color HitColor)
+    	public ShapePart GetHitPar_(Color HitColor)
     	{
-    		return difs.FirstOrDefault((Dif d) => d.IsHit(ref HitColor)).Parss.FirstOrDefault((Pars ps) => ps.IsHit(ref HitColor)).EnumAllPar().FirstOrDefault((Par e) => e.HitColor == HitColor);
+    		return difs.FirstOrDefault((Dif d) => d.IsHit(ref HitColor)).Parss.FirstOrDefault((Pars ps) => ps.IsHit(ref HitColor)).EnumAllPar().FirstOrDefault((ShapePart e) => e.HitColor == HitColor);
     	}
 
     	public bool IsHit(ref Color HitColor)

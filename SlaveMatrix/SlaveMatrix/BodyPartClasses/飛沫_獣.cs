@@ -4,115 +4,115 @@ namespace SlaveMatrix
 {
     public class 飛沫_獣 : 飛沫
     {
-    	public Par X0Y0_飛沫基;
+    	public ShapePart X0Y0_飛沫基;
 
-    	public Par X0Y0_雫1;
+    	public ShapePart X0Y0_雫1;
 
-    	public Par X0Y0_雫2;
+    	public ShapePart X0Y0_雫2;
 
-    	public Par X0Y0_雫3;
+    	public ShapePart X0Y0_雫3;
 
-    	public Par X0Y0_雫4;
+    	public ShapePart X0Y0_雫4;
 
-    	public Par X0Y0_雫5;
+    	public ShapePart X0Y0_雫5;
 
-    	public Par X0Y0_雫6;
+    	public ShapePart X0Y0_雫6;
 
-    	public Par X0Y0_雫7;
+    	public ShapePart X0Y0_雫7;
 
-    	public Par X0Y0_雫8;
+    	public ShapePart X0Y0_雫8;
 
-    	public Par X0Y0_雫9;
+    	public ShapePart X0Y0_雫9;
 
-    	public Par X0Y0_雫10;
+    	public ShapePart X0Y0_雫10;
 
-    	public Par X0Y1_飛沫基;
+    	public ShapePart X0Y1_飛沫基;
 
-    	public Par X0Y1_雫1;
+    	public ShapePart X0Y1_雫1;
 
-    	public Par X0Y1_雫2;
+    	public ShapePart X0Y1_雫2;
 
-    	public Par X0Y1_雫3;
+    	public ShapePart X0Y1_雫3;
 
-    	public Par X0Y1_雫4;
+    	public ShapePart X0Y1_雫4;
 
-    	public Par X0Y1_雫5;
+    	public ShapePart X0Y1_雫5;
 
-    	public Par X0Y1_雫6;
+    	public ShapePart X0Y1_雫6;
 
-    	public Par X0Y1_雫7;
+    	public ShapePart X0Y1_雫7;
 
-    	public Par X0Y1_雫8;
+    	public ShapePart X0Y1_雫8;
 
-    	public Par X0Y1_雫9;
+    	public ShapePart X0Y1_雫9;
 
-    	public Par X0Y1_雫10;
+    	public ShapePart X0Y1_雫10;
 
-    	public Par X0Y2_飛沫基;
+    	public ShapePart X0Y2_飛沫基;
 
-    	public Par X0Y2_雫1;
+    	public ShapePart X0Y2_雫1;
 
-    	public Par X0Y2_雫2;
+    	public ShapePart X0Y2_雫2;
 
-    	public Par X0Y2_雫3;
+    	public ShapePart X0Y2_雫3;
 
-    	public Par X0Y2_雫4;
+    	public ShapePart X0Y2_雫4;
 
-    	public Par X0Y2_雫5;
+    	public ShapePart X0Y2_雫5;
 
-    	public Par X0Y2_雫6;
+    	public ShapePart X0Y2_雫6;
 
-    	public Par X0Y2_雫7;
+    	public ShapePart X0Y2_雫7;
 
-    	public Par X0Y2_雫8;
+    	public ShapePart X0Y2_雫8;
 
-    	public Par X0Y2_雫9;
+    	public ShapePart X0Y2_雫9;
 
-    	public Par X0Y2_雫10;
+    	public ShapePart X0Y2_雫10;
 
-    	public Par X0Y3_飛沫基;
+    	public ShapePart X0Y3_飛沫基;
 
-    	public Par X0Y3_雫1;
+    	public ShapePart X0Y3_雫1;
 
-    	public Par X0Y3_雫2;
+    	public ShapePart X0Y3_雫2;
 
-    	public Par X0Y3_雫3;
+    	public ShapePart X0Y3_雫3;
 
-    	public Par X0Y3_雫4;
+    	public ShapePart X0Y3_雫4;
 
-    	public Par X0Y3_雫5;
+    	public ShapePart X0Y3_雫5;
 
-    	public Par X0Y3_雫6;
+    	public ShapePart X0Y3_雫6;
 
-    	public Par X0Y3_雫7;
+    	public ShapePart X0Y3_雫7;
 
-    	public Par X0Y3_雫8;
+    	public ShapePart X0Y3_雫8;
 
-    	public Par X0Y3_雫9;
+    	public ShapePart X0Y3_雫9;
 
-    	public Par X0Y3_雫10;
+    	public ShapePart X0Y3_雫10;
 
-    	public Par X0Y4_飛沫基;
+    	public ShapePart X0Y4_飛沫基;
 
-    	public Par X0Y4_雫1;
+    	public ShapePart X0Y4_雫1;
 
-    	public Par X0Y4_雫2;
+    	public ShapePart X0Y4_雫2;
 
-    	public Par X0Y4_雫3;
+    	public ShapePart X0Y4_雫3;
 
-    	public Par X0Y4_雫4;
+    	public ShapePart X0Y4_雫4;
 
-    	public Par X0Y4_雫5;
+    	public ShapePart X0Y4_雫5;
 
-    	public Par X0Y4_雫6;
+    	public ShapePart X0Y4_雫6;
 
-    	public Par X0Y4_雫7;
+    	public ShapePart X0Y4_雫7;
 
-    	public Par X0Y4_雫8;
+    	public ShapePart X0Y4_雫8;
 
-    	public Par X0Y4_雫9;
+    	public ShapePart X0Y4_雫9;
 
-    	public Par X0Y4_雫10;
+    	public ShapePart X0Y4_雫10;
 
     	public ColorD 飛沫基CD;
 

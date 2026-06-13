@@ -4,77 +4,77 @@ namespace SlaveMatrix
 {
     public class 胸肌 : Ele
     {
-    	public Par X0Y0_虫性_甲殻2;
+    	public ShapePart X0Y0_虫性_甲殻2;
 
-    	public Par X0Y0_虫性_甲殻1_甲殻;
+    	public ShapePart X0Y0_虫性_甲殻1_甲殻;
 
-    	public Par X0Y0_虫性_甲殻1_甲殻左;
+    	public ShapePart X0Y0_虫性_甲殻1_甲殻左;
 
-    	public Par X0Y0_虫性_甲殻1_甲殻右;
+    	public ShapePart X0Y0_虫性_甲殻1_甲殻右;
 
-    	public Par X0Y0_淫タトゥ_ハート_タトゥ左1;
+    	public ShapePart X0Y0_淫タトゥ_ハート_タトゥ左1;
 
-    	public Par X0Y0_淫タトゥ_ハート_タトゥ右1;
+    	public ShapePart X0Y0_淫タトゥ_ハート_タトゥ右1;
 
-    	public Par X0Y0_淫タトゥ_ハート_タトゥ左2;
+    	public ShapePart X0Y0_淫タトゥ_ハート_タトゥ左2;
 
-    	public Par X0Y0_淫タトゥ_ハート_タトゥ右2;
+    	public ShapePart X0Y0_淫タトゥ_ハート_タトゥ右2;
 
-    	public Par X0Y0_淫タトゥ_タトゥ左;
+    	public ShapePart X0Y0_淫タトゥ_タトゥ左;
 
-    	public Par X0Y0_淫タトゥ_タトゥ右;
+    	public ShapePart X0Y0_淫タトゥ_タトゥ右;
 
-    	public Par X0Y0_悪タトゥ_逆十字_逆十字1;
+    	public ShapePart X0Y0_悪タトゥ_逆十字_逆十字1;
 
-    	public Par X0Y0_悪タトゥ_逆十字_逆十字2;
+    	public ShapePart X0Y0_悪タトゥ_逆十字_逆十字2;
 
-    	public Par X0Y0_植タトゥ_タトゥ;
+    	public ShapePart X0Y0_植タトゥ_タトゥ;
 
-    	public Par X0Y0_隈取_タトゥ左;
+    	public ShapePart X0Y0_隈取_タトゥ左;
 
-    	public Par X0Y0_隈取_タトゥ右;
+    	public ShapePart X0Y0_隈取_タトゥ右;
 
-    	public Par X0Y0_蜘蛛_眼左1_基;
+    	public ShapePart X0Y0_蜘蛛_眼左1_基;
 
-    	public Par X0Y0_蜘蛛_眼左1_眼;
+    	public ShapePart X0Y0_蜘蛛_眼左1_眼;
 
-    	public Par X0Y0_蜘蛛_眼左1_ハイライト;
+    	public ShapePart X0Y0_蜘蛛_眼左1_ハイライト;
 
-    	public Par X0Y0_蜘蛛_眼左2_基;
+    	public ShapePart X0Y0_蜘蛛_眼左2_基;
 
-    	public Par X0Y0_蜘蛛_眼左2_眼;
+    	public ShapePart X0Y0_蜘蛛_眼左2_眼;
 
-    	public Par X0Y0_蜘蛛_眼左2_ハイライト;
+    	public ShapePart X0Y0_蜘蛛_眼左2_ハイライト;
 
-    	public Par X0Y0_蜘蛛_眼右1_基;
+    	public ShapePart X0Y0_蜘蛛_眼右1_基;
 
-    	public Par X0Y0_蜘蛛_眼右1_眼;
+    	public ShapePart X0Y0_蜘蛛_眼右1_眼;
 
-    	public Par X0Y0_蜘蛛_眼右1_ハイライト;
+    	public ShapePart X0Y0_蜘蛛_眼右1_ハイライト;
 
-    	public Par X0Y0_蜘蛛_眼右2_基;
+    	public ShapePart X0Y0_蜘蛛_眼右2_基;
 
-    	public Par X0Y0_蜘蛛_眼右2_眼;
+    	public ShapePart X0Y0_蜘蛛_眼右2_眼;
 
-    	public Par X0Y0_蜘蛛_眼右2_ハイライト;
+    	public ShapePart X0Y0_蜘蛛_眼右2_ハイライト;
 
-    	public Par X0Y0_竜性_鱗1;
+    	public ShapePart X0Y0_竜性_鱗1;
 
-    	public Par X0Y0_竜性_鱗2;
+    	public ShapePart X0Y0_竜性_鱗2;
 
-    	public Par X0Y0_竜性_鱗3;
+    	public ShapePart X0Y0_竜性_鱗3;
 
-    	public Par X0Y0_コア_コア2_基;
+    	public ShapePart X0Y0_コア_コア2_基;
 
-    	public Par X0Y0_コア_コア2_コア;
+    	public ShapePart X0Y0_コア_コア2_コア;
 
-    	public Par X0Y0_コア_コア2_ハイライト;
+    	public ShapePart X0Y0_コア_コア2_ハイライト;
 
-    	public Par X0Y0_コア_コア1_基;
+    	public ShapePart X0Y0_コア_コア1_基;
 
-    	public Par X0Y0_コア_コア1_コア;
+    	public ShapePart X0Y0_コア_コア1_コア;
 
-    	public Par X0Y0_コア_コア1_ハイライト;
+    	public ShapePart X0Y0_コア_コア1_ハイライト;
 
     	public ColorD 虫性_甲殻2CD;
 

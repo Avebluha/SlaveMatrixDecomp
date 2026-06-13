@@ -5,25 +5,25 @@ namespace SlaveMatrix
 {
     public class Torso_蛇 : 長胴 //Long torso?
     {
-    	public Par X0Y0_Torso_鱗;
+    	public ShapePart X0Y0_Torso_鱗;
 
-    	public Par X0Y0_Torso_鱗左;
+    	public ShapePart X0Y0_Torso_鱗左;
 
-    	public Par X0Y0_Torso_鱗右;
+    	public ShapePart X0Y0_Torso_鱗右;
 
-    	public Par X0Y0_Torso_Torso;
+    	public ShapePart X0Y0_Torso_Torso;
 
-    	public Par X0Y0_輪_革;
+    	public ShapePart X0Y0_輪_革;
 
-    	public Par X0Y0_輪_金具1;
+    	public ShapePart X0Y0_輪_金具1;
 
-    	public Par X0Y0_輪_金具2;
+    	public ShapePart X0Y0_輪_金具2;
 
-    	public Par X0Y0_輪_金具3;
+    	public ShapePart X0Y0_輪_金具3;
 
-    	public Par X0Y0_輪_金具左;
+    	public ShapePart X0Y0_輪_金具左;
 
-    	public Par X0Y0_輪_金具右;
+    	public ShapePart X0Y0_輪_金具右;
 
     	public ColorD Torso_鱗CD;
 
@@ -493,7 +493,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override bool Is革(Par p)
+    	public override bool Is革(ShapePart p)
     	{
     		if (p != X0Y0_輪_革 && p != X0Y0_輪_金具1 && p != X0Y0_輪_金具2 && p != X0Y0_輪_金具3 && p != X0Y0_輪_金具左)
     		{

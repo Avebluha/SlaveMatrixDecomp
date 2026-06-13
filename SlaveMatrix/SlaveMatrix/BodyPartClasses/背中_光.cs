@@ -4,9 +4,9 @@ namespace SlaveMatrix
 {
     public class 背中_光 : 背中
     {
-    	public Par X0Y0_後光左;
+    	public ShapePart X0Y0_後光左;
 
-    	public Par X0Y0_後光右;
+    	public ShapePart X0Y0_後光右;
 
     	public ColorD 後光CD;
 
@@ -14,7 +14,7 @@ namespace SlaveMatrix
 
     	public ColorP X0Y0_後光右CP;
 
-    	private Par[] Pars;
+    	private ShapePart[] Pars;
 
     	private Vector2D[] mm;
 
@@ -152,7 +152,7 @@ namespace SlaveMatrix
     		}
     		base.配色指定 = 配色指定;
     		配色(体配色);
-    		Pars = new Par[2] { X0Y0_後光左, X0Y0_後光右 };
+    		Pars = new ShapePart[2] { X0Y0_後光左, X0Y0_後光右 };
     		X0Y0_後光左CP = new ColorP(X0Y0_後光左, 後光CD, DisUnit, abj: true);
     		X0Y0_後光右CP = new ColorP(X0Y0_後光右, 後光CD, DisUnit, abj: true);
     		Intensity = e.濃度;

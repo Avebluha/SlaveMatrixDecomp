@@ -92,21 +92,21 @@ namespace _2DGAMELIB
     		return new Vector2D(Position.X - BasePoint.X * XRatio * Size, Position.Y - BasePoint.Y * YRatio * Size);
     	}
 
-    	public void Draw(Par Par)
+    	public void Draw(ShapePart ShapePart)
     	{
-            Par.Draw(displayUnitScale, displayGraphics);
+            ShapePart.Draw(displayUnitScale, displayGraphics);
             if (hitGraphics != null)
             {
-                Par.DrawH(hitUnitScale, hitGraphics);
+                ShapePart.DrawH(hitUnitScale, hitGraphics);
             }
     	}
 
-    	public void Draw(ParT ParT)
+    	public void Draw(ShapePartT ShapePartT)
     	{
-            ParT.Draw(displayUnitScale, displayGraphics);
+            ShapePartT.Draw(displayUnitScale, displayGraphics);
             if (hitGraphics != null)
             {
-                ParT.DrawH(hitUnitScale, hitGraphics);
+                ShapePartT.DrawH(hitUnitScale, hitGraphics);
             }
     	}
 

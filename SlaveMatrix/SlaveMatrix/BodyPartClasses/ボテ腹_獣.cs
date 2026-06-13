@@ -5,25 +5,25 @@ namespace SlaveMatrix
 {
     public class ボテ腹_獣 : ボテ腹
     {
-    	public Par X0Y0_腹;
+    	public ShapePart X0Y0_腹;
 
-    	public Par X0Y0_臍;
+    	public ShapePart X0Y0_臍;
 
-    	public Par X0Y1_腹;
+    	public ShapePart X0Y1_腹;
 
-    	public Par X0Y1_臍;
+    	public ShapePart X0Y1_臍;
 
-    	public Par X0Y2_腹;
+    	public ShapePart X0Y2_腹;
 
-    	public Par X0Y2_臍;
+    	public ShapePart X0Y2_臍;
 
-    	public Par X0Y3_腹;
+    	public ShapePart X0Y3_腹;
 
-    	public Par X0Y3_臍;
+    	public ShapePart X0Y3_臍;
 
-    	public Par X0Y4_腹;
+    	public ShapePart X0Y4_腹;
 
-    	public Par X0Y4_臍;
+    	public ShapePart X0Y4_臍;
 
     	public ColorD 腹CD;
 

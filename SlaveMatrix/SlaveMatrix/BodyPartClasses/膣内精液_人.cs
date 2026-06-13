@@ -4,11 +4,11 @@ namespace SlaveMatrix
 {
     public class 膣内精液_人 : 膣内精液
     {
-    	public Par X0Y0_精液;
+    	public ShapePart X0Y0_精液;
 
-    	public Par X0Y0_血液1;
+    	public ShapePart X0Y0_血液1;
 
-    	public Par X0Y0_血液2;
+    	public ShapePart X0Y0_血液2;
 
     	public ColorD 精液CD;
 

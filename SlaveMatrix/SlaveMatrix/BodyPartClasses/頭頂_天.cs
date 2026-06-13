@@ -4,9 +4,9 @@ namespace SlaveMatrix
 {
     public class 頭頂_天 : 頭頂
     {
-    	public Par X0Y0_天輪上;
+    	public ShapePart X0Y0_天輪上;
 
-    	public Par X0Y0_天輪下;
+    	public ShapePart X0Y0_天輪下;
 
     	public ColorD 天輪CD;
 
@@ -14,7 +14,7 @@ namespace SlaveMatrix
 
     	public ColorP X0Y0_天輪下CP;
 
-    	private Par[] Pars;
+    	private ShapePart[] Pars;
 
     	private Vector2D[] mm;
 
@@ -152,7 +152,7 @@ namespace SlaveMatrix
     		}
     		base.配色指定 = 配色指定;
     		配色(体配色);
-    		Pars = new Par[2] { X0Y0_天輪上, X0Y0_天輪下 };
+    		Pars = new ShapePart[2] { X0Y0_天輪上, X0Y0_天輪下 };
     		X0Y0_天輪上CP = new ColorP(X0Y0_天輪上, 天輪CD, DisUnit, abj: true);
     		X0Y0_天輪下CP = new ColorP(X0Y0_天輪下, 天輪CD, DisUnit, abj: true);
     		Intensity = e.濃度;

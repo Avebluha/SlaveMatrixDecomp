@@ -4,115 +4,115 @@ namespace SlaveMatrix
 {
     public class 断面_獣 : 断面
     {
-    	public Par X0Y0_膣基;
+    	public ShapePart X0Y0_膣基;
 
-    	public Par X0Y0_膣壁左;
+    	public ShapePart X0Y0_膣壁左;
 
-    	public Par X0Y0_膣壁右;
+    	public ShapePart X0Y0_膣壁右;
 
-    	public Par X0Y0_卵巣左;
+    	public ShapePart X0Y0_卵巣左;
 
-    	public Par X0Y0_卵管左;
+    	public ShapePart X0Y0_卵管左;
 
-    	public Par X0Y0_卵巣右;
+    	public ShapePart X0Y0_卵巣右;
 
-    	public Par X0Y0_卵管右;
+    	public ShapePart X0Y0_卵管右;
 
-    	public Par X0Y0_子宮;
+    	public ShapePart X0Y0_子宮;
 
-    	public Par X0Y0_子宮内;
+    	public ShapePart X0Y0_子宮内;
 
-    	public Par X0Y0_子宮口;
+    	public ShapePart X0Y0_子宮口;
 
-    	public Par X0Y0_精液;
+    	public ShapePart X0Y0_精液;
 
-    	public Par X0Y1_膣基;
+    	public ShapePart X0Y1_膣基;
 
-    	public Par X0Y1_膣壁左;
+    	public ShapePart X0Y1_膣壁左;
 
-    	public Par X0Y1_膣壁右;
+    	public ShapePart X0Y1_膣壁右;
 
-    	public Par X0Y1_卵巣左;
+    	public ShapePart X0Y1_卵巣左;
 
-    	public Par X0Y1_卵管左;
+    	public ShapePart X0Y1_卵管左;
 
-    	public Par X0Y1_卵巣右;
+    	public ShapePart X0Y1_卵巣右;
 
-    	public Par X0Y1_卵管右;
+    	public ShapePart X0Y1_卵管右;
 
-    	public Par X0Y1_子宮;
+    	public ShapePart X0Y1_子宮;
 
-    	public Par X0Y1_子宮内;
+    	public ShapePart X0Y1_子宮内;
 
-    	public Par X0Y1_子宮口;
+    	public ShapePart X0Y1_子宮口;
 
-    	public Par X0Y1_精液;
+    	public ShapePart X0Y1_精液;
 
-    	public Par X0Y2_膣基;
+    	public ShapePart X0Y2_膣基;
 
-    	public Par X0Y2_膣壁左;
+    	public ShapePart X0Y2_膣壁左;
 
-    	public Par X0Y2_膣壁右;
+    	public ShapePart X0Y2_膣壁右;
 
-    	public Par X0Y2_卵巣左;
+    	public ShapePart X0Y2_卵巣左;
 
-    	public Par X0Y2_卵管左;
+    	public ShapePart X0Y2_卵管左;
 
-    	public Par X0Y2_卵巣右;
+    	public ShapePart X0Y2_卵巣右;
 
-    	public Par X0Y2_卵管右;
+    	public ShapePart X0Y2_卵管右;
 
-    	public Par X0Y2_子宮;
+    	public ShapePart X0Y2_子宮;
 
-    	public Par X0Y2_子宮内;
+    	public ShapePart X0Y2_子宮内;
 
-    	public Par X0Y2_子宮口;
+    	public ShapePart X0Y2_子宮口;
 
-    	public Par X0Y2_精液;
+    	public ShapePart X0Y2_精液;
 
-    	public Par X0Y3_膣基;
+    	public ShapePart X0Y3_膣基;
 
-    	public Par X0Y3_膣壁左;
+    	public ShapePart X0Y3_膣壁左;
 
-    	public Par X0Y3_膣壁右;
+    	public ShapePart X0Y3_膣壁右;
 
-    	public Par X0Y3_卵巣左;
+    	public ShapePart X0Y3_卵巣左;
 
-    	public Par X0Y3_卵管左;
+    	public ShapePart X0Y3_卵管左;
 
-    	public Par X0Y3_卵巣右;
+    	public ShapePart X0Y3_卵巣右;
 
-    	public Par X0Y3_卵管右;
+    	public ShapePart X0Y3_卵管右;
 
-    	public Par X0Y3_子宮;
+    	public ShapePart X0Y3_子宮;
 
-    	public Par X0Y3_子宮内;
+    	public ShapePart X0Y3_子宮内;
 
-    	public Par X0Y3_子宮口;
+    	public ShapePart X0Y3_子宮口;
 
-    	public Par X0Y3_精液;
+    	public ShapePart X0Y3_精液;
 
-    	public Par X0Y4_膣基;
+    	public ShapePart X0Y4_膣基;
 
-    	public Par X0Y4_膣壁左;
+    	public ShapePart X0Y4_膣壁左;
 
-    	public Par X0Y4_膣壁右;
+    	public ShapePart X0Y4_膣壁右;
 
-    	public Par X0Y4_卵巣左;
+    	public ShapePart X0Y4_卵巣左;
 
-    	public Par X0Y4_卵管左;
+    	public ShapePart X0Y4_卵管左;
 
-    	public Par X0Y4_卵巣右;
+    	public ShapePart X0Y4_卵巣右;
 
-    	public Par X0Y4_卵管右;
+    	public ShapePart X0Y4_卵管右;
 
-    	public Par X0Y4_子宮;
+    	public ShapePart X0Y4_子宮;
 
-    	public Par X0Y4_子宮内;
+    	public ShapePart X0Y4_子宮内;
 
-    	public Par X0Y4_子宮口;
+    	public ShapePart X0Y4_子宮口;
 
-    	public Par X0Y4_精液;
+    	public ShapePart X0Y4_精液;
 
     	public ColorD 膣基CD;
 

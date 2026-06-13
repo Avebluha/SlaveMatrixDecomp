@@ -5,127 +5,127 @@ namespace SlaveMatrix
 {
     public class 尾_根 : 尾
     {
-    	public Par X0Y0_尾0_尾;
+    	public ShapePart X0Y0_尾0_尾;
 
-    	public Par X0Y0_尾0_線1;
+    	public ShapePart X0Y0_尾0_線1;
 
-    	public Par X0Y0_尾0_線2;
+    	public ShapePart X0Y0_尾0_線2;
 
-    	public Par X0Y0_尾1_尾;
+    	public ShapePart X0Y0_尾1_尾;
 
-    	public Par X0Y0_尾1_線1;
+    	public ShapePart X0Y0_尾1_線1;
 
-    	public Par X0Y0_尾1_線2;
+    	public ShapePart X0Y0_尾1_線2;
 
-    	public Par X0Y0_尾2_尾;
+    	public ShapePart X0Y0_尾2_尾;
 
-    	public Par X0Y0_尾2_線1;
+    	public ShapePart X0Y0_尾2_線1;
 
-    	public Par X0Y0_尾2_線2;
+    	public ShapePart X0Y0_尾2_線2;
 
-    	public Par X0Y0_尾3_尾;
+    	public ShapePart X0Y0_尾3_尾;
 
-    	public Par X0Y0_尾3_線1;
+    	public ShapePart X0Y0_尾3_線1;
 
-    	public Par X0Y0_尾3_線2;
+    	public ShapePart X0Y0_尾3_線2;
 
-    	public Par X0Y0_尾4_尾;
+    	public ShapePart X0Y0_尾4_尾;
 
-    	public Par X0Y0_尾4_線1;
+    	public ShapePart X0Y0_尾4_線1;
 
-    	public Par X0Y0_尾4_線2;
+    	public ShapePart X0Y0_尾4_線2;
 
-    	public Par X0Y0_尾5_尾;
+    	public ShapePart X0Y0_尾5_尾;
 
-    	public Par X0Y0_尾5_線1;
+    	public ShapePart X0Y0_尾5_線1;
 
-    	public Par X0Y0_尾5_線2;
+    	public ShapePart X0Y0_尾5_線2;
 
-    	public Par X0Y0_尾6_尾;
+    	public ShapePart X0Y0_尾6_尾;
 
-    	public Par X0Y0_尾6_線1;
+    	public ShapePart X0Y0_尾6_線1;
 
-    	public Par X0Y0_尾6_線2;
+    	public ShapePart X0Y0_尾6_線2;
 
-    	public Par X0Y0_尾7_尾;
+    	public ShapePart X0Y0_尾7_尾;
 
-    	public Par X0Y0_尾7_線1;
+    	public ShapePart X0Y0_尾7_線1;
 
-    	public Par X0Y0_尾7_線2;
+    	public ShapePart X0Y0_尾7_線2;
 
-    	public Par X0Y0_輪_革;
+    	public ShapePart X0Y0_輪_革;
 
-    	public Par X0Y0_輪_金具1;
+    	public ShapePart X0Y0_輪_金具1;
 
-    	public Par X0Y0_輪_金具2;
+    	public ShapePart X0Y0_輪_金具2;
 
-    	public Par X0Y0_輪_金具3;
+    	public ShapePart X0Y0_輪_金具3;
 
-    	public Par X0Y0_輪_金具左;
+    	public ShapePart X0Y0_輪_金具左;
 
-    	public Par X0Y0_輪_金具右;
+    	public ShapePart X0Y0_輪_金具右;
 
-    	public Par X0Y0_尾8_尾;
+    	public ShapePart X0Y0_尾8_尾;
 
-    	public Par X0Y0_尾8_線1;
+    	public ShapePart X0Y0_尾8_線1;
 
-    	public Par X0Y0_尾8_線2;
+    	public ShapePart X0Y0_尾8_線2;
 
-    	public Par X0Y0_尾9_尾;
+    	public ShapePart X0Y0_尾9_尾;
 
-    	public Par X0Y0_尾9_線1;
+    	public ShapePart X0Y0_尾9_線1;
 
-    	public Par X0Y0_尾9_線2;
+    	public ShapePart X0Y0_尾9_線2;
 
-    	public Par X0Y0_尾10_尾;
+    	public ShapePart X0Y0_尾10_尾;
 
-    	public Par X0Y0_尾10_線1;
+    	public ShapePart X0Y0_尾10_線1;
 
-    	public Par X0Y0_尾10_線2;
+    	public ShapePart X0Y0_尾10_線2;
 
-    	public Par X0Y0_尾11_尾;
+    	public ShapePart X0Y0_尾11_尾;
 
-    	public Par X0Y0_尾11_線1;
+    	public ShapePart X0Y0_尾11_線1;
 
-    	public Par X0Y0_尾11_線2;
+    	public ShapePart X0Y0_尾11_線2;
 
-    	public Par X0Y0_尾12_尾;
+    	public ShapePart X0Y0_尾12_尾;
 
-    	public Par X0Y0_尾12_線1;
+    	public ShapePart X0Y0_尾12_線1;
 
-    	public Par X0Y0_尾12_線2;
+    	public ShapePart X0Y0_尾12_線2;
 
-    	public Par X0Y0_尾13_尾;
+    	public ShapePart X0Y0_尾13_尾;
 
-    	public Par X0Y0_尾13_線1;
+    	public ShapePart X0Y0_尾13_線1;
 
-    	public Par X0Y0_尾13_線2;
+    	public ShapePart X0Y0_尾13_線2;
 
-    	public Par X0Y0_尾14_尾;
+    	public ShapePart X0Y0_尾14_尾;
 
-    	public Par X0Y0_尾14_線1;
+    	public ShapePart X0Y0_尾14_線1;
 
-    	public Par X0Y0_尾14_線2;
+    	public ShapePart X0Y0_尾14_線2;
 
-    	public Par X0Y0_尾15_尾;
+    	public ShapePart X0Y0_尾15_尾;
 
-    	public Par X0Y0_尾15_線1;
+    	public ShapePart X0Y0_尾15_線1;
 
-    	public Par X0Y0_尾15_線2;
+    	public ShapePart X0Y0_尾15_線2;
 
-    	public Par X0Y0_尾16_尾;
+    	public ShapePart X0Y0_尾16_尾;
 
-    	public Par X0Y0_尾16_線1;
+    	public ShapePart X0Y0_尾16_線1;
 
-    	public Par X0Y0_尾16_線2;
+    	public ShapePart X0Y0_尾16_線2;
 
-    	public Par X0Y0_尾17_尾;
+    	public ShapePart X0Y0_尾17_尾;
 
-    	public Par X0Y0_尾17_線1;
+    	public ShapePart X0Y0_尾17_線1;
 
-    	public Par X0Y0_尾17_線2;
+    	public ShapePart X0Y0_尾17_線2;
 
-    	public Par X0Y0_尾18;
+    	public ShapePart X0Y0_尾18;
 
     	public ColorD 尾0_尾CD;
 
@@ -375,7 +375,7 @@ namespace SlaveMatrix
 
     	public 拘束鎖 鎖2;
 
-    	public Par[] Pars;
+    	public ShapePart[] Pars;
 
     	private Vector2D[] mm;
 
@@ -1574,7 +1574,7 @@ namespace SlaveMatrix
     		}
     		base.配色指定 = 配色指定;
     		配色(体配色);
-    		Pars = new Par[19]
+    		Pars = new ShapePart[19]
     		{
     			X0Y0_尾0_尾, X0Y0_尾1_尾, X0Y0_尾2_尾, X0Y0_尾3_尾, X0Y0_尾4_尾, X0Y0_尾5_尾, X0Y0_尾6_尾, X0Y0_尾7_尾, X0Y0_尾8_尾, X0Y0_尾9_尾,
     			X0Y0_尾10_尾, X0Y0_尾11_尾, X0Y0_尾12_尾, X0Y0_尾13_尾, X0Y0_尾14_尾, X0Y0_尾15_尾, X0Y0_尾16_尾, X0Y0_尾17_尾, X0Y0_尾18
@@ -1751,7 +1751,7 @@ namespace SlaveMatrix
     		Body.JoinPAall();
     	}
 
-    	public override bool Is革(Par p)
+    	public override bool Is革(ShapePart p)
     	{
     		if (p != X0Y0_輪_革 && p != X0Y0_輪_金具1 && p != X0Y0_輪_金具2 && p != X0Y0_輪_金具3 && p != X0Y0_輪_金具左)
     		{
@@ -1760,7 +1760,7 @@ namespace SlaveMatrix
     		return true;
     	}
 
-    	public override IEnumerable<Par> Enum軸()
+    	public override IEnumerable<ShapePart> Enum軸()
     	{
     		yield return X0Y0_尾0_尾;
     		yield return X0Y0_尾1_尾;

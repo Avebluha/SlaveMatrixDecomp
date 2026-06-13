@@ -117,7 +117,7 @@ namespace SlaveMatrix
     		調鞭処理 調鞭処理2 = this;
     		調教鞭 鞭 = 調教UI.調教鞭;
     		bool l = false;
-    		Par p;
+    		ShapePart p;
     		Vector2D cp;
     		Color hc;
     		鞭撃モーション = new Motion(0.0, 1.0)
@@ -151,7 +151,7 @@ namespace SlaveMatrix
     				{
     					鞭.角度C = -100.0 * m.Value;
     				}
-    				p = 鞭.Body.Current.EnumAllPar().First((Par e) => e.Tag.Contains("先"));
+    				p = 鞭.Body.Current.EnumAllPar().First((ShapePart e) => e.Tag.Contains("先"));
     				cp = p.ToGlobal(p.JP[0].Joint);
     				hc = 調鞭処理2.Med.GetHitColor(調鞭処理2.Med.FromBasePosition(cp));
     				if (調教UI.Bod.IsHit(hc))

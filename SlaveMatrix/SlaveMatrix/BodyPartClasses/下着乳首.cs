@@ -4,11 +4,11 @@ namespace SlaveMatrix
 {
     public class 下着乳首 : Ele
     {
-    	public Par X0Y0_乳首;
+    	public ShapePart X0Y0_乳首;
 
-    	public Par X0Y0_染み2;
+    	public ShapePart X0Y0_染み2;
 
-    	public Par X0Y0_染み1;
+    	public ShapePart X0Y0_染み1;
 
     	public ColorD 乳首CD;
 
@@ -169,7 +169,7 @@ namespace SlaveMatrix
     		}
     		set
     		{
-    			foreach (Par item in Body.EnumAllPar())
+    			foreach (ShapePart item in Body.EnumAllPar())
     			{
     				item.SizeBase = value;
     			}

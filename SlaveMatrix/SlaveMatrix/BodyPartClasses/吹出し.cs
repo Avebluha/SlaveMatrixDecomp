@@ -4,7 +4,7 @@ namespace SlaveMatrix
 {
     public class 吹出し : Ele
     {
-    	public Par X0Y0_吹出し;
+    	public ShapePart X0Y0_吹出し;
 
     	public ColorD 吹出しCD;
 

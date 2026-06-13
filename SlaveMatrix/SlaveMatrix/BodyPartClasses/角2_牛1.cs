@@ -4,33 +4,33 @@ namespace SlaveMatrix
 {
     public class 角2_牛1 : 角2
     {
-    	public Par X0Y0_根;
+    	public ShapePart X0Y0_根;
 
-    	public Par X0Y0_凹1;
+    	public ShapePart X0Y0_凹1;
 
-    	public Par X0Y0_凹2;
+    	public ShapePart X0Y0_凹2;
 
-    	public Par X0Y0_凹3;
+    	public ShapePart X0Y0_凹3;
 
-    	public Par X0Y0_凹4;
+    	public ShapePart X0Y0_凹4;
 
-    	public Par X0Y0_凹5;
+    	public ShapePart X0Y0_凹5;
 
-    	public Par X0Y0_凹6;
+    	public ShapePart X0Y0_凹6;
 
-    	public Par X0Y0_凹7;
+    	public ShapePart X0Y0_凹7;
 
-    	public Par X0Y0_凹8;
+    	public ShapePart X0Y0_凹8;
 
-    	public Par X0Y0_線;
+    	public ShapePart X0Y0_線;
 
-    	public Par X0Y1_根;
+    	public ShapePart X0Y1_根;
 
-    	public Par X0Y1_凹1;
+    	public ShapePart X0Y1_凹1;
 
-    	public Par X0Y1_凹2;
+    	public ShapePart X0Y1_凹2;
 
-    	public Par X0Y1_凹3;
+    	public ShapePart X0Y1_凹3;
 
     	public ColorD 根CD;
 

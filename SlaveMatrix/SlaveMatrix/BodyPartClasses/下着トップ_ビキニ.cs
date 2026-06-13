@@ -4,31 +4,31 @@ namespace SlaveMatrix
 {
     public class 下着トップ_ビキニ : 下着トップ
     {
-    	public Par X0Y0_紐;
+    	public ShapePart X0Y0_紐;
 
-    	public Par X0Y0_カップ左_紐;
+    	public ShapePart X0Y0_カップ左_紐;
 
-    	public Par X0Y0_カップ左_カップ;
+    	public ShapePart X0Y0_カップ左_カップ;
 
-    	public Par X0Y0_カップ左_縁_縁1;
+    	public ShapePart X0Y0_カップ左_縁_縁1;
 
-    	public Par X0Y0_カップ左_縁_縁2;
+    	public ShapePart X0Y0_カップ左_縁_縁2;
 
-    	public Par X0Y0_カップ左_縁_縁3;
+    	public ShapePart X0Y0_カップ左_縁_縁3;
 
-    	public Par X0Y0_カップ左_縁_縁4;
+    	public ShapePart X0Y0_カップ左_縁_縁4;
 
-    	public Par X0Y0_カップ右_紐;
+    	public ShapePart X0Y0_カップ右_紐;
 
-    	public Par X0Y0_カップ右_カップ;
+    	public ShapePart X0Y0_カップ右_カップ;
 
-    	public Par X0Y0_カップ右_縁_縁1;
+    	public ShapePart X0Y0_カップ右_縁_縁1;
 
-    	public Par X0Y0_カップ右_縁_縁2;
+    	public ShapePart X0Y0_カップ右_縁_縁2;
 
-    	public Par X0Y0_カップ右_縁_縁3;
+    	public ShapePart X0Y0_カップ右_縁_縁3;
 
-    	public Par X0Y0_カップ右_縁_縁4;
+    	public ShapePart X0Y0_カップ右_縁_縁4;
 
     	public ColorD 紐CD;
 
@@ -561,7 +561,7 @@ namespace SlaveMatrix
     		Are.Draw(X0Y0_カップ右_縁_縁4);
     	}
 
-    	public override bool Is布(Par p)
+    	public override bool Is布(ShapePart p)
     	{
     		if (p != X0Y0_紐 && p != X0Y0_カップ左_紐 && p != X0Y0_カップ左_カップ && p != X0Y0_カップ左_縁_縁1 && p != X0Y0_カップ左_縁_縁2 && p != X0Y0_カップ左_縁_縁3 && p != X0Y0_カップ左_縁_縁4 && p != X0Y0_カップ右_紐 && p != X0Y0_カップ右_カップ && p != X0Y0_カップ右_縁_縁1 && p != X0Y0_カップ右_縁_縁2 && p != X0Y0_カップ右_縁_縁3)
     		{

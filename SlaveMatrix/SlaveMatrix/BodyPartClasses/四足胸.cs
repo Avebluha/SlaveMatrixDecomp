@@ -5,69 +5,69 @@ namespace SlaveMatrix
 {
     public class 四足胸 : 半身
     {
-    	public Par X0Y0_胸郭;
+    	public ShapePart X0Y0_胸郭;
 
-    	public Par X0Y0_筋肉_筋肉左;
+    	public ShapePart X0Y0_筋肉_筋肉左;
 
-    	public Par X0Y0_筋肉_筋肉右;
+    	public ShapePart X0Y0_筋肉_筋肉右;
 
-    	public Par X0Y0_筋肉_筋肉中;
+    	public ShapePart X0Y0_筋肉_筋肉中;
 
-    	public Par X0Y0_筋肉_筋肉左下;
+    	public ShapePart X0Y0_筋肉_筋肉左下;
 
-    	public Par X0Y0_筋肉_筋肉左中;
+    	public ShapePart X0Y0_筋肉_筋肉左中;
 
-    	public Par X0Y0_筋肉_筋肉左上;
+    	public ShapePart X0Y0_筋肉_筋肉左上;
 
-    	public Par X0Y0_筋肉_筋肉右下;
+    	public ShapePart X0Y0_筋肉_筋肉右下;
 
-    	public Par X0Y0_筋肉_筋肉右中;
+    	public ShapePart X0Y0_筋肉_筋肉右中;
 
-    	public Par X0Y0_筋肉_筋肉右上;
+    	public ShapePart X0Y0_筋肉_筋肉右上;
 
-    	public Par X0Y0_紋柄_紋左_紋1;
+    	public ShapePart X0Y0_紋柄_紋左_紋1;
 
-    	public Par X0Y0_紋柄_紋左_紋2;
+    	public ShapePart X0Y0_紋柄_紋左_紋2;
 
-    	public Par X0Y0_紋柄_紋左_紋3;
+    	public ShapePart X0Y0_紋柄_紋左_紋3;
 
-    	public Par X0Y0_紋柄_紋左_紋4;
+    	public ShapePart X0Y0_紋柄_紋左_紋4;
 
-    	public Par X0Y0_紋柄_紋右_紋1;
+    	public ShapePart X0Y0_紋柄_紋右_紋1;
 
-    	public Par X0Y0_紋柄_紋右_紋2;
+    	public ShapePart X0Y0_紋柄_紋右_紋2;
 
-    	public Par X0Y0_紋柄_紋右_紋3;
+    	public ShapePart X0Y0_紋柄_紋右_紋3;
 
-    	public Par X0Y0_紋柄_紋右_紋4;
+    	public ShapePart X0Y0_紋柄_紋右_紋4;
 
-    	public Par X0Y0_虎柄_虎左_虎1;
+    	public ShapePart X0Y0_虎柄_虎左_虎1;
 
-    	public Par X0Y0_虎柄_虎左_虎2;
+    	public ShapePart X0Y0_虎柄_虎左_虎2;
 
-    	public Par X0Y0_虎柄_虎右_虎1;
+    	public ShapePart X0Y0_虎柄_虎右_虎1;
 
-    	public Par X0Y0_虎柄_虎右_虎2;
+    	public ShapePart X0Y0_虎柄_虎右_虎2;
 
-    	public Par X0Y0_竜性_中_鱗左;
+    	public ShapePart X0Y0_竜性_中_鱗左;
 
-    	public Par X0Y0_竜性_中_鱗右;
+    	public ShapePart X0Y0_竜性_中_鱗右;
 
-    	public Par X0Y0_竜性_中_鱗1;
+    	public ShapePart X0Y0_竜性_中_鱗1;
 
-    	public Par X0Y0_竜性_中_鱗2;
+    	public ShapePart X0Y0_竜性_中_鱗2;
 
-    	public Par X0Y0_竜性_左_鱗1;
+    	public ShapePart X0Y0_竜性_左_鱗1;
 
-    	public Par X0Y0_竜性_左_鱗2;
+    	public ShapePart X0Y0_竜性_左_鱗2;
 
-    	public Par X0Y0_竜性_左_鱗3;
+    	public ShapePart X0Y0_竜性_左_鱗3;
 
-    	public Par X0Y0_竜性_右_鱗1;
+    	public ShapePart X0Y0_竜性_右_鱗1;
 
-    	public Par X0Y0_竜性_右_鱗2;
+    	public ShapePart X0Y0_竜性_右_鱗2;
 
-    	public Par X0Y0_竜性_右_鱗3;
+    	public ShapePart X0Y0_竜性_右_鱗3;
 
     	public ColorD 胸郭CD;
 

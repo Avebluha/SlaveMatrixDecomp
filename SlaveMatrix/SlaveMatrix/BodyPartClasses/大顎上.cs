@@ -4,15 +4,15 @@ namespace SlaveMatrix
 {
     public class 大顎上 : Ele
     {
-    	public Par X0Y0_甲殻;
+    	public ShapePart X0Y0_甲殻;
 
-    	public Par X0Y0_線左;
+    	public ShapePart X0Y0_線左;
 
-    	public Par X0Y0_線右;
+    	public ShapePart X0Y0_線右;
 
-    	public Par X0Y0_棘左;
+    	public ShapePart X0Y0_棘左;
 
-    	public Par X0Y0_棘右;
+    	public ShapePart X0Y0_棘右;
 
     	public ColorD 甲殻CD;
 

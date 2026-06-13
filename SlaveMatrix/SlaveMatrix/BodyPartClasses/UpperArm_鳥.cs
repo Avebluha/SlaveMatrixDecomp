@@ -5,25 +5,25 @@ namespace SlaveMatrix
 {
     public class UpperArm_鳥 : 翼UpperArm
     {
-    	public Par X0Y0_風切羽_羽3;
+    	public ShapePart X0Y0_風切羽_羽3;
 
-    	public Par X0Y0_風切羽_羽2;
+    	public ShapePart X0Y0_風切羽_羽2;
 
-    	public Par X0Y0_風切羽_羽1;
+    	public ShapePart X0Y0_風切羽_羽1;
 
-    	public Par X0Y0_羽毛;
+    	public ShapePart X0Y0_羽毛;
 
-    	public Par X0Y0_鳥翼UpperArm;
+    	public ShapePart X0Y0_鳥翼UpperArm;
 
-    	public Par X0Y0_小雨覆;
+    	public ShapePart X0Y0_小雨覆;
 
-    	public Par X0Y0_竜性_鱗1;
+    	public ShapePart X0Y0_竜性_鱗1;
 
-    	public Par X0Y0_竜性_鱗2;
+    	public ShapePart X0Y0_竜性_鱗2;
 
-    	public Par X0Y0_竜性_鱗3;
+    	public ShapePart X0Y0_竜性_鱗3;
 
-    	public Par X0Y0_竜性_鱗4;
+    	public ShapePart X0Y0_竜性_鱗4;
 
     	public ColorD 風切羽_羽3CD;
 

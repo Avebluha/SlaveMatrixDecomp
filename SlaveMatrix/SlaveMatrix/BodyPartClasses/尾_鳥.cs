@@ -5,53 +5,53 @@ namespace SlaveMatrix
 {
     public class 尾_鳥 : 尾
     {
-    	public Par X0Y0_尾0;
+    	public ShapePart X0Y0_尾0;
 
-    	public Par X0Y0_風切羽_左_羽1;
+    	public ShapePart X0Y0_風切羽_左_羽1;
 
-    	public Par X0Y0_風切羽_左_羽2;
+    	public ShapePart X0Y0_風切羽_左_羽2;
 
-    	public Par X0Y0_風切羽_左_羽3;
+    	public ShapePart X0Y0_風切羽_左_羽3;
 
-    	public Par X0Y0_風切羽_左_羽4;
+    	public ShapePart X0Y0_風切羽_左_羽4;
 
-    	public Par X0Y0_風切羽_左_羽5;
+    	public ShapePart X0Y0_風切羽_左_羽5;
 
-    	public Par X0Y0_風切羽_左_羽6;
+    	public ShapePart X0Y0_風切羽_左_羽6;
 
-    	public Par X0Y0_風切羽_右_羽1;
+    	public ShapePart X0Y0_風切羽_右_羽1;
 
-    	public Par X0Y0_風切羽_右_羽2;
+    	public ShapePart X0Y0_風切羽_右_羽2;
 
-    	public Par X0Y0_風切羽_右_羽3;
+    	public ShapePart X0Y0_風切羽_右_羽3;
 
-    	public Par X0Y0_風切羽_右_羽4;
+    	public ShapePart X0Y0_風切羽_右_羽4;
 
-    	public Par X0Y0_風切羽_右_羽5;
+    	public ShapePart X0Y0_風切羽_右_羽5;
 
-    	public Par X0Y0_風切羽_右_羽6;
+    	public ShapePart X0Y0_風切羽_右_羽6;
 
-    	public Par X0Y0_雨覆羽_左_羽1;
+    	public ShapePart X0Y0_雨覆羽_左_羽1;
 
-    	public Par X0Y0_雨覆羽_左_羽2;
+    	public ShapePart X0Y0_雨覆羽_左_羽2;
 
-    	public Par X0Y0_雨覆羽_左_羽3;
+    	public ShapePart X0Y0_雨覆羽_左_羽3;
 
-    	public Par X0Y0_雨覆羽_左_羽4;
+    	public ShapePart X0Y0_雨覆羽_左_羽4;
 
-    	public Par X0Y0_雨覆羽_左_羽5;
+    	public ShapePart X0Y0_雨覆羽_左_羽5;
 
-    	public Par X0Y0_雨覆羽_右_羽1;
+    	public ShapePart X0Y0_雨覆羽_右_羽1;
 
-    	public Par X0Y0_雨覆羽_右_羽2;
+    	public ShapePart X0Y0_雨覆羽_右_羽2;
 
-    	public Par X0Y0_雨覆羽_右_羽3;
+    	public ShapePart X0Y0_雨覆羽_右_羽3;
 
-    	public Par X0Y0_雨覆羽_右_羽4;
+    	public ShapePart X0Y0_雨覆羽_右_羽4;
 
-    	public Par X0Y0_雨覆羽_右_羽5;
+    	public ShapePart X0Y0_雨覆羽_右_羽5;
 
-    	public Par X0Y0_羽根;
+    	public ShapePart X0Y0_羽根;
 
     	public ColorD 尾0CD;
 
@@ -751,7 +751,7 @@ namespace SlaveMatrix
     		Body.JoinPAall();
     	}
 
-    	public override IEnumerable<Par> Enum軸()
+    	public override IEnumerable<ShapePart> Enum軸()
     	{
     		yield return X0Y0_尾0;
     	}

@@ -4,53 +4,53 @@ namespace SlaveMatrix
 {
     public class 呼気 : Ele
     {
-    	public Par X0Y0_呼気左1_呼気1;
+    	public ShapePart X0Y0_呼気左1_呼気1;
 
-    	public Par X0Y0_呼気左1_呼気2;
+    	public ShapePart X0Y0_呼気左1_呼気2;
 
-    	public Par X0Y0_呼気左2_呼気1;
+    	public ShapePart X0Y0_呼気左2_呼気1;
 
-    	public Par X0Y0_呼気左2_呼気2;
+    	public ShapePart X0Y0_呼気左2_呼気2;
 
-    	public Par X0Y0_呼気左3_呼気1;
+    	public ShapePart X0Y0_呼気左3_呼気1;
 
-    	public Par X0Y0_呼気左3_呼気2;
+    	public ShapePart X0Y0_呼気左3_呼気2;
 
-    	public Par X0Y0_呼気右1_呼気1;
+    	public ShapePart X0Y0_呼気右1_呼気1;
 
-    	public Par X0Y0_呼気右1_呼気2;
+    	public ShapePart X0Y0_呼気右1_呼気2;
 
-    	public Par X0Y0_呼気右2_呼気1;
+    	public ShapePart X0Y0_呼気右2_呼気1;
 
-    	public Par X0Y0_呼気右2_呼気2;
+    	public ShapePart X0Y0_呼気右2_呼気2;
 
-    	public Par X0Y0_呼気右3_呼気1;
+    	public ShapePart X0Y0_呼気右3_呼気1;
 
-    	public Par X0Y0_呼気右3_呼気2;
+    	public ShapePart X0Y0_呼気右3_呼気2;
 
-    	public Par X0Y1_呼気左1_呼気1;
+    	public ShapePart X0Y1_呼気左1_呼気1;
 
-    	public Par X0Y1_呼気左1_呼気2;
+    	public ShapePart X0Y1_呼気左1_呼気2;
 
-    	public Par X0Y1_呼気左2_呼気1;
+    	public ShapePart X0Y1_呼気左2_呼気1;
 
-    	public Par X0Y1_呼気左2_呼気2;
+    	public ShapePart X0Y1_呼気左2_呼気2;
 
-    	public Par X0Y1_呼気左3_呼気1;
+    	public ShapePart X0Y1_呼気左3_呼気1;
 
-    	public Par X0Y1_呼気左3_呼気2;
+    	public ShapePart X0Y1_呼気左3_呼気2;
 
-    	public Par X0Y1_呼気右1_呼気1;
+    	public ShapePart X0Y1_呼気右1_呼気1;
 
-    	public Par X0Y1_呼気右1_呼気2;
+    	public ShapePart X0Y1_呼気右1_呼気2;
 
-    	public Par X0Y1_呼気右2_呼気1;
+    	public ShapePart X0Y1_呼気右2_呼気1;
 
-    	public Par X0Y1_呼気右2_呼気2;
+    	public ShapePart X0Y1_呼気右2_呼気2;
 
-    	public Par X0Y1_呼気右3_呼気1;
+    	public ShapePart X0Y1_呼気右3_呼気1;
 
-    	public Par X0Y1_呼気右3_呼気2;
+    	public ShapePart X0Y1_呼気右3_呼気2;
 
     	public ColorD 呼気左1_呼気1CD;
 

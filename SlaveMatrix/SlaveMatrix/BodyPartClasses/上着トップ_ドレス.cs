@@ -4,51 +4,51 @@ namespace SlaveMatrix
 {
     public class 上着トップ_ドレス : 上着トップ
     {
-    	public Par X0Y0_服基;
+    	public ShapePart X0Y0_服基;
 
-    	public Par X0Y0_紐_紐1_紐下_紐;
+    	public ShapePart X0Y0_紐_紐1_紐下_紐;
 
-    	public Par X0Y0_紐_紐1_紐上_紐;
+    	public ShapePart X0Y0_紐_紐1_紐上_紐;
 
-    	public Par X0Y0_紐_紐2_紐下_紐;
+    	public ShapePart X0Y0_紐_紐2_紐下_紐;
 
-    	public Par X0Y0_紐_紐2_紐上_紐;
+    	public ShapePart X0Y0_紐_紐2_紐上_紐;
 
-    	public Par X0Y0_紐_紐3_紐下_紐;
+    	public ShapePart X0Y0_紐_紐3_紐下_紐;
 
-    	public Par X0Y0_紐_紐3_紐上_紐;
+    	public ShapePart X0Y0_紐_紐3_紐上_紐;
 
-    	public Par X0Y0_紐_紐4_紐下_紐;
+    	public ShapePart X0Y0_紐_紐4_紐下_紐;
 
-    	public Par X0Y0_紐_紐4_紐上_紐;
+    	public ShapePart X0Y0_紐_紐4_紐上_紐;
 
-    	public Par X0Y0_紐_紐5_紐下_紐;
+    	public ShapePart X0Y0_紐_紐5_紐下_紐;
 
-    	public Par X0Y0_紐_紐5_紐上_紐;
+    	public ShapePart X0Y0_紐_紐5_紐上_紐;
 
-    	public Par X0Y0_紐_紐6_紐下_紐;
+    	public ShapePart X0Y0_紐_紐6_紐下_紐;
 
-    	public Par X0Y0_紐_紐6_紐上_紐;
+    	public ShapePart X0Y0_紐_紐6_紐上_紐;
 
-    	public Par X0Y0_左_服;
+    	public ShapePart X0Y0_左_服;
 
-    	public Par X0Y0_左_柄_柄1;
+    	public ShapePart X0Y0_左_柄_柄1;
 
-    	public Par X0Y0_左_柄_柄2;
+    	public ShapePart X0Y0_左_柄_柄2;
 
-    	public Par X0Y0_左_バスト;
+    	public ShapePart X0Y0_左_バスト;
 
-    	public Par X0Y0_左_縁;
+    	public ShapePart X0Y0_左_縁;
 
-    	public Par X0Y0_右_服;
+    	public ShapePart X0Y0_右_服;
 
-    	public Par X0Y0_右_柄_柄1;
+    	public ShapePart X0Y0_右_柄_柄1;
 
-    	public Par X0Y0_右_柄_柄2;
+    	public ShapePart X0Y0_右_柄_柄2;
 
-    	public Par X0Y0_右_バスト;
+    	public ShapePart X0Y0_右_バスト;
 
-    	public Par X0Y0_右_縁;
+    	public ShapePart X0Y0_右_縁;
 
     	public ColorD 服基CD = new ColorD(ref Col.Empty, ref Color2.Empty);
 
@@ -844,7 +844,7 @@ namespace SlaveMatrix
     		Intensity = e.濃度;
     	}
 
-    	public override bool Is革(Par p)
+    	public override bool Is革(ShapePart p)
     	{
     		if (p != X0Y0_服基 && p != X0Y0_紐_紐1_紐下_紐 && p != X0Y0_紐_紐1_紐上_紐 && p != X0Y0_紐_紐2_紐下_紐 && p != X0Y0_紐_紐2_紐上_紐 && p != X0Y0_紐_紐3_紐下_紐 && p != X0Y0_紐_紐3_紐上_紐 && p != X0Y0_紐_紐4_紐下_紐 && p != X0Y0_紐_紐4_紐上_紐 && p != X0Y0_紐_紐5_紐下_紐 && p != X0Y0_紐_紐5_紐上_紐 && p != X0Y0_紐_紐6_紐下_紐 && p != X0Y0_紐_紐6_紐上_紐 && p != X0Y0_左_服 && p != X0Y0_左_柄_柄1 && p != X0Y0_左_柄_柄2 && p != X0Y0_左_バスト && p != X0Y0_左_縁 && p != X0Y0_右_服 && p != X0Y0_右_柄_柄1 && p != X0Y0_右_柄_柄2 && p != X0Y0_右_バスト)
     		{

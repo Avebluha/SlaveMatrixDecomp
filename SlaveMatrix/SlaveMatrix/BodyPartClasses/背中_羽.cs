@@ -4,9 +4,9 @@ namespace SlaveMatrix
 {
     public class 背中_羽 : 背中
     {
-    	public Par X0Y0_羽毛1;
+    	public ShapePart X0Y0_羽毛1;
 
-    	public Par X0Y0_羽毛2;
+    	public ShapePart X0Y0_羽毛2;
 
     	public ColorD 羽毛1CD;
 

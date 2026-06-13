@@ -4,15 +4,15 @@ namespace SlaveMatrix
 {
     public class 虫顎 : Ele
     {
-    	public Par X0Y0_顎;
+    	public ShapePart X0Y0_顎;
 
-    	public Par X0Y0_節;
+    	public ShapePart X0Y0_節;
 
-    	public Par X0Y0_牙_牙1;
+    	public ShapePart X0Y0_牙_牙1;
 
-    	public Par X0Y0_牙_牙2;
+    	public ShapePart X0Y0_牙_牙2;
 
-    	public Par X0Y0_牙_牙0;
+    	public ShapePart X0Y0_牙_牙0;
 
     	public ColorD 顎CD;
 

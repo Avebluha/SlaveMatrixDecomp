@@ -5,351 +5,351 @@ namespace SlaveMatrix
 {
     public class 触手_触 : 触手
     {
-    	public Par X0Y0_腕部_節1_節;
+    	public ShapePart X0Y0_腕部_節1_節;
 
-    	public Par X0Y0_腕部_節1_紋柄_紋柄1;
+    	public ShapePart X0Y0_腕部_節1_紋柄_紋柄1;
 
-    	public Par X0Y0_腕部_節1_紋柄_紋柄2;
+    	public ShapePart X0Y0_腕部_節1_紋柄_紋柄2;
 
-    	public Par X0Y0_腕部_節2_節;
+    	public ShapePart X0Y0_腕部_節2_節;
 
-    	public Par X0Y0_腕部_節2_紋柄_紋柄1;
+    	public ShapePart X0Y0_腕部_節2_紋柄_紋柄1;
 
-    	public Par X0Y0_腕部_節2_紋柄_紋柄2;
+    	public ShapePart X0Y0_腕部_節2_紋柄_紋柄2;
 
-    	public Par X0Y0_腕部_節3_節;
+    	public ShapePart X0Y0_腕部_節3_節;
 
-    	public Par X0Y0_腕部_節3_紋柄_紋柄1;
+    	public ShapePart X0Y0_腕部_節3_紋柄_紋柄1;
 
-    	public Par X0Y0_腕部_節3_紋柄_紋柄2;
+    	public ShapePart X0Y0_腕部_節3_紋柄_紋柄2;
 
-    	public Par X0Y0_腕部_節4_節;
+    	public ShapePart X0Y0_腕部_節4_節;
 
-    	public Par X0Y0_腕部_節4_紋柄_紋柄1;
+    	public ShapePart X0Y0_腕部_節4_紋柄_紋柄1;
 
-    	public Par X0Y0_腕部_節4_紋柄_紋柄2;
+    	public ShapePart X0Y0_腕部_節4_紋柄_紋柄2;
 
-    	public Par X0Y0_腕部_節5_節;
+    	public ShapePart X0Y0_腕部_節5_節;
 
-    	public Par X0Y0_腕部_節5_紋柄_紋柄1;
+    	public ShapePart X0Y0_腕部_節5_紋柄_紋柄1;
 
-    	public Par X0Y0_腕部_節5_紋柄_紋柄2;
+    	public ShapePart X0Y0_腕部_節5_紋柄_紋柄2;
 
-    	public Par X0Y0_腕部_節6_節;
+    	public ShapePart X0Y0_腕部_節6_節;
 
-    	public Par X0Y0_腕部_節6_紋柄_紋柄1;
+    	public ShapePart X0Y0_腕部_節6_紋柄_紋柄1;
 
-    	public Par X0Y0_腕部_節6_紋柄_紋柄2;
+    	public ShapePart X0Y0_腕部_節6_紋柄_紋柄2;
 
-    	public Par X0Y0_腕部_節7_節;
+    	public ShapePart X0Y0_腕部_節7_節;
 
-    	public Par X0Y0_腕部_節7_紋柄_紋柄1;
+    	public ShapePart X0Y0_腕部_節7_紋柄_紋柄1;
 
-    	public Par X0Y0_腕部_節7_紋柄_紋柄2;
+    	public ShapePart X0Y0_腕部_節7_紋柄_紋柄2;
 
-    	public Par X0Y0_腕部_節8_節;
+    	public ShapePart X0Y0_腕部_節8_節;
 
-    	public Par X0Y0_腕部_節8_紋柄_紋柄1;
+    	public ShapePart X0Y0_腕部_節8_紋柄_紋柄1;
 
-    	public Par X0Y0_腕部_節8_紋柄_紋柄2;
+    	public ShapePart X0Y0_腕部_節8_紋柄_紋柄2;
 
-    	public Par X0Y0_腕部_節9_節;
+    	public ShapePart X0Y0_腕部_節9_節;
 
-    	public Par X0Y0_腕部_節9_紋柄_紋柄1;
+    	public ShapePart X0Y0_腕部_節9_紋柄_紋柄1;
 
-    	public Par X0Y0_腕部_節9_紋柄_紋柄2;
+    	public ShapePart X0Y0_腕部_節9_紋柄_紋柄2;
 
-    	public Par X0Y0_腕部_節10_節;
+    	public ShapePart X0Y0_腕部_節10_節;
 
-    	public Par X0Y0_腕部_節10_紋柄_紋柄1;
+    	public ShapePart X0Y0_腕部_節10_紋柄_紋柄1;
 
-    	public Par X0Y0_腕部_節10_紋柄_紋柄2;
+    	public ShapePart X0Y0_腕部_節10_紋柄_紋柄2;
 
-    	public Par X0Y0_腕部_節11_節;
+    	public ShapePart X0Y0_腕部_節11_節;
 
-    	public Par X0Y0_腕部_節11_紋柄_紋柄1;
+    	public ShapePart X0Y0_腕部_節11_紋柄_紋柄1;
 
-    	public Par X0Y0_腕部_節11_紋柄_紋柄2;
+    	public ShapePart X0Y0_腕部_節11_紋柄_紋柄2;
 
-    	public Par X0Y0_腕部_節12_節;
+    	public ShapePart X0Y0_腕部_節12_節;
 
-    	public Par X0Y0_腕部_節12_紋柄_紋柄1;
+    	public ShapePart X0Y0_腕部_節12_紋柄_紋柄1;
 
-    	public Par X0Y0_腕部_節12_紋柄_紋柄2;
+    	public ShapePart X0Y0_腕部_節12_紋柄_紋柄2;
 
-    	public Par X0Y0_腕部_節13_節;
+    	public ShapePart X0Y0_腕部_節13_節;
 
-    	public Par X0Y0_腕部_節13_紋柄_紋柄1;
+    	public ShapePart X0Y0_腕部_節13_紋柄_紋柄1;
 
-    	public Par X0Y0_腕部_節13_紋柄_紋柄2;
+    	public ShapePart X0Y0_腕部_節13_紋柄_紋柄2;
 
-    	public Par X0Y0_腕部_節14_節;
+    	public ShapePart X0Y0_腕部_節14_節;
 
-    	public Par X0Y0_腕部_節14_紋柄_紋柄1;
+    	public ShapePart X0Y0_腕部_節14_紋柄_紋柄1;
 
-    	public Par X0Y0_腕部_節14_紋柄_紋柄2;
+    	public ShapePart X0Y0_腕部_節14_紋柄_紋柄2;
 
-    	public Par X0Y0_腕部_節15_節;
+    	public ShapePart X0Y0_腕部_節15_節;
 
-    	public Par X0Y0_腕部_節15_紋柄_紋柄1;
+    	public ShapePart X0Y0_腕部_節15_紋柄_紋柄1;
 
-    	public Par X0Y0_腕部_節15_紋柄_紋柄2;
+    	public ShapePart X0Y0_腕部_節15_紋柄_紋柄2;
 
-    	public Par X0Y0_腕部_輪1_革;
+    	public ShapePart X0Y0_腕部_輪1_革;
 
-    	public Par X0Y0_腕部_輪1_金具1;
+    	public ShapePart X0Y0_腕部_輪1_金具1;
 
-    	public Par X0Y0_腕部_輪1_金具2;
+    	public ShapePart X0Y0_腕部_輪1_金具2;
 
-    	public Par X0Y0_腕部_輪1_金具3;
+    	public ShapePart X0Y0_腕部_輪1_金具3;
 
-    	public Par X0Y0_腕部_輪1_金具左;
+    	public ShapePart X0Y0_腕部_輪1_金具左;
 
-    	public Par X0Y0_腕部_輪1_金具右;
+    	public ShapePart X0Y0_腕部_輪1_金具右;
 
-    	public Par X0Y0_腕部_節16_節;
+    	public ShapePart X0Y0_腕部_節16_節;
 
-    	public Par X0Y0_腕部_節16_紋柄_紋柄1;
+    	public ShapePart X0Y0_腕部_節16_紋柄_紋柄1;
 
-    	public Par X0Y0_腕部_節16_紋柄_紋柄2;
+    	public ShapePart X0Y0_腕部_節16_紋柄_紋柄2;
 
-    	public Par X0Y0_腕部_節17_節;
+    	public ShapePart X0Y0_腕部_節17_節;
 
-    	public Par X0Y0_腕部_節17_紋柄_紋柄1;
+    	public ShapePart X0Y0_腕部_節17_紋柄_紋柄1;
 
-    	public Par X0Y0_腕部_節17_紋柄_紋柄2;
+    	public ShapePart X0Y0_腕部_節17_紋柄_紋柄2;
 
-    	public Par X0Y0_腕部_節18_節;
+    	public ShapePart X0Y0_腕部_節18_節;
 
-    	public Par X0Y0_腕部_節18_紋柄_紋柄1;
+    	public ShapePart X0Y0_腕部_節18_紋柄_紋柄1;
 
-    	public Par X0Y0_腕部_節18_紋柄_紋柄2;
+    	public ShapePart X0Y0_腕部_節18_紋柄_紋柄2;
 
-    	public Par X0Y0_腕部_節19_節;
+    	public ShapePart X0Y0_腕部_節19_節;
 
-    	public Par X0Y0_腕部_節19_紋柄_紋柄1;
+    	public ShapePart X0Y0_腕部_節19_紋柄_紋柄1;
 
-    	public Par X0Y0_腕部_節19_紋柄_紋柄2;
+    	public ShapePart X0Y0_腕部_節19_紋柄_紋柄2;
 
-    	public Par X0Y0_腕部_節20_節;
+    	public ShapePart X0Y0_腕部_節20_節;
 
-    	public Par X0Y0_腕部_節20_紋柄_紋柄1;
+    	public ShapePart X0Y0_腕部_節20_紋柄_紋柄1;
 
-    	public Par X0Y0_腕部_節20_紋柄_紋柄2;
+    	public ShapePart X0Y0_腕部_節20_紋柄_紋柄2;
 
-    	public Par X0Y0_腕部_節21_節;
+    	public ShapePart X0Y0_腕部_節21_節;
 
-    	public Par X0Y0_腕部_節21_紋柄_紋柄1;
+    	public ShapePart X0Y0_腕部_節21_紋柄_紋柄1;
 
-    	public Par X0Y0_腕部_節21_紋柄_紋柄2;
+    	public ShapePart X0Y0_腕部_節21_紋柄_紋柄2;
 
-    	public Par X0Y0_腕部_節22_節;
+    	public ShapePart X0Y0_腕部_節22_節;
 
-    	public Par X0Y0_腕部_節22_紋柄_紋柄1;
+    	public ShapePart X0Y0_腕部_節22_紋柄_紋柄1;
 
-    	public Par X0Y0_腕部_節22_紋柄_紋柄2;
+    	public ShapePart X0Y0_腕部_節22_紋柄_紋柄2;
 
-    	public Par X0Y0_腕部_節23_節;
+    	public ShapePart X0Y0_腕部_節23_節;
 
-    	public Par X0Y0_腕部_節23_紋柄_紋柄1;
+    	public ShapePart X0Y0_腕部_節23_紋柄_紋柄1;
 
-    	public Par X0Y0_腕部_節23_紋柄_紋柄2;
+    	public ShapePart X0Y0_腕部_節23_紋柄_紋柄2;
 
-    	public Par X0Y0_腕部_節24_節;
+    	public ShapePart X0Y0_腕部_節24_節;
 
-    	public Par X0Y0_腕部_節24_紋柄_紋柄1;
+    	public ShapePart X0Y0_腕部_節24_紋柄_紋柄1;
 
-    	public Par X0Y0_腕部_節24_紋柄_紋柄2;
+    	public ShapePart X0Y0_腕部_節24_紋柄_紋柄2;
 
-    	public Par X0Y0_腕部_節25_節;
+    	public ShapePart X0Y0_腕部_節25_節;
 
-    	public Par X0Y0_腕部_節25_紋柄_紋柄1;
+    	public ShapePart X0Y0_腕部_節25_紋柄_紋柄1;
 
-    	public Par X0Y0_腕部_節25_紋柄_紋柄2;
+    	public ShapePart X0Y0_腕部_節25_紋柄_紋柄2;
 
-    	public Par X0Y0_手先_節1_節;
+    	public ShapePart X0Y0_手先_節1_節;
 
-    	public Par X0Y0_手先_節1_紋柄1;
+    	public ShapePart X0Y0_手先_節1_紋柄1;
 
-    	public Par X0Y0_手先_節1_紋柄2;
+    	public ShapePart X0Y0_手先_節1_紋柄2;
 
-    	public Par X0Y0_手先_節1_吸盤_吸盤1;
+    	public ShapePart X0Y0_手先_節1_吸盤_吸盤1;
 
-    	public Par X0Y0_手先_節1_吸盤_吸盤2;
+    	public ShapePart X0Y0_手先_節1_吸盤_吸盤2;
 
-    	public Par X0Y0_手先_節1_吸盤_吸盤3;
+    	public ShapePart X0Y0_手先_節1_吸盤_吸盤3;
 
-    	public Par X0Y0_手先_節1_吸盤_吸盤4;
+    	public ShapePart X0Y0_手先_節1_吸盤_吸盤4;
 
-    	public Par X0Y0_手先_節1_爪_爪2;
+    	public ShapePart X0Y0_手先_節1_爪_爪2;
 
-    	public Par X0Y0_手先_節1_爪_爪1;
+    	public ShapePart X0Y0_手先_節1_爪_爪1;
 
-    	public Par X0Y0_手先_輪2_革;
+    	public ShapePart X0Y0_手先_輪2_革;
 
-    	public Par X0Y0_手先_輪2_金具1;
+    	public ShapePart X0Y0_手先_輪2_金具1;
 
-    	public Par X0Y0_手先_輪2_金具2;
+    	public ShapePart X0Y0_手先_輪2_金具2;
 
-    	public Par X0Y0_手先_輪2_金具3;
+    	public ShapePart X0Y0_手先_輪2_金具3;
 
-    	public Par X0Y0_手先_輪2_金具左;
+    	public ShapePart X0Y0_手先_輪2_金具左;
 
-    	public Par X0Y0_手先_輪2_金具右;
+    	public ShapePart X0Y0_手先_輪2_金具右;
 
-    	public Par X0Y0_手先_節2_節;
+    	public ShapePart X0Y0_手先_節2_節;
 
-    	public Par X0Y0_手先_節2_紋柄1;
+    	public ShapePart X0Y0_手先_節2_紋柄1;
 
-    	public Par X0Y0_手先_節2_紋柄2;
+    	public ShapePart X0Y0_手先_節2_紋柄2;
 
-    	public Par X0Y0_手先_節2_吸盤_吸盤1;
+    	public ShapePart X0Y0_手先_節2_吸盤_吸盤1;
 
-    	public Par X0Y0_手先_節2_吸盤_吸盤2;
+    	public ShapePart X0Y0_手先_節2_吸盤_吸盤2;
 
-    	public Par X0Y0_手先_節2_吸盤_吸盤3;
+    	public ShapePart X0Y0_手先_節2_吸盤_吸盤3;
 
-    	public Par X0Y0_手先_節2_吸盤_吸盤4;
+    	public ShapePart X0Y0_手先_節2_吸盤_吸盤4;
 
-    	public Par X0Y0_手先_節2_爪_爪2;
+    	public ShapePart X0Y0_手先_節2_爪_爪2;
 
-    	public Par X0Y0_手先_節2_爪_爪1;
+    	public ShapePart X0Y0_手先_節2_爪_爪1;
 
-    	public Par X0Y0_手先_節3_節;
+    	public ShapePart X0Y0_手先_節3_節;
 
-    	public Par X0Y0_手先_節3_紋柄1;
+    	public ShapePart X0Y0_手先_節3_紋柄1;
 
-    	public Par X0Y0_手先_節3_紋柄2;
+    	public ShapePart X0Y0_手先_節3_紋柄2;
 
-    	public Par X0Y0_手先_節3_吸盤_吸盤1;
+    	public ShapePart X0Y0_手先_節3_吸盤_吸盤1;
 
-    	public Par X0Y0_手先_節3_吸盤_吸盤2;
+    	public ShapePart X0Y0_手先_節3_吸盤_吸盤2;
 
-    	public Par X0Y0_手先_節3_吸盤_吸盤3;
+    	public ShapePart X0Y0_手先_節3_吸盤_吸盤3;
 
-    	public Par X0Y0_手先_節3_吸盤_吸盤4;
+    	public ShapePart X0Y0_手先_節3_吸盤_吸盤4;
 
-    	public Par X0Y0_手先_節3_爪_爪2;
+    	public ShapePart X0Y0_手先_節3_爪_爪2;
 
-    	public Par X0Y0_手先_節3_爪_爪1;
+    	public ShapePart X0Y0_手先_節3_爪_爪1;
 
-    	public Par X0Y0_手先_節4_節;
+    	public ShapePart X0Y0_手先_節4_節;
 
-    	public Par X0Y0_手先_節4_紋柄1;
+    	public ShapePart X0Y0_手先_節4_紋柄1;
 
-    	public Par X0Y0_手先_節4_紋柄2;
+    	public ShapePart X0Y0_手先_節4_紋柄2;
 
-    	public Par X0Y0_手先_節4_吸盤_吸盤1;
+    	public ShapePart X0Y0_手先_節4_吸盤_吸盤1;
 
-    	public Par X0Y0_手先_節4_吸盤_吸盤2;
+    	public ShapePart X0Y0_手先_節4_吸盤_吸盤2;
 
-    	public Par X0Y0_手先_節4_吸盤_吸盤3;
+    	public ShapePart X0Y0_手先_節4_吸盤_吸盤3;
 
-    	public Par X0Y0_手先_節4_吸盤_吸盤4;
+    	public ShapePart X0Y0_手先_節4_吸盤_吸盤4;
 
-    	public Par X0Y0_手先_節4_爪_爪2;
+    	public ShapePart X0Y0_手先_節4_爪_爪2;
 
-    	public Par X0Y0_手先_節4_爪_爪1;
+    	public ShapePart X0Y0_手先_節4_爪_爪1;
 
-    	public Par X0Y0_手先_節5_節;
+    	public ShapePart X0Y0_手先_節5_節;
 
-    	public Par X0Y0_手先_節5_紋柄1;
+    	public ShapePart X0Y0_手先_節5_紋柄1;
 
-    	public Par X0Y0_手先_節5_紋柄2;
+    	public ShapePart X0Y0_手先_節5_紋柄2;
 
-    	public Par X0Y0_手先_節5_吸盤_吸盤1;
+    	public ShapePart X0Y0_手先_節5_吸盤_吸盤1;
 
-    	public Par X0Y0_手先_節5_吸盤_吸盤2;
+    	public ShapePart X0Y0_手先_節5_吸盤_吸盤2;
 
-    	public Par X0Y0_手先_節5_吸盤_吸盤3;
+    	public ShapePart X0Y0_手先_節5_吸盤_吸盤3;
 
-    	public Par X0Y0_手先_節5_吸盤_吸盤4;
+    	public ShapePart X0Y0_手先_節5_吸盤_吸盤4;
 
-    	public Par X0Y0_手先_節5_爪_爪2;
+    	public ShapePart X0Y0_手先_節5_爪_爪2;
 
-    	public Par X0Y0_手先_節5_爪_爪1;
+    	public ShapePart X0Y0_手先_節5_爪_爪1;
 
-    	public Par X0Y0_手先_節6_節;
+    	public ShapePart X0Y0_手先_節6_節;
 
-    	public Par X0Y0_手先_節6_紋柄1;
+    	public ShapePart X0Y0_手先_節6_紋柄1;
 
-    	public Par X0Y0_手先_節6_紋柄2;
+    	public ShapePart X0Y0_手先_節6_紋柄2;
 
-    	public Par X0Y0_手先_節6_吸盤_吸盤1;
+    	public ShapePart X0Y0_手先_節6_吸盤_吸盤1;
 
-    	public Par X0Y0_手先_節6_吸盤_吸盤2;
+    	public ShapePart X0Y0_手先_節6_吸盤_吸盤2;
 
-    	public Par X0Y0_手先_節6_吸盤_吸盤3;
+    	public ShapePart X0Y0_手先_節6_吸盤_吸盤3;
 
-    	public Par X0Y0_手先_節6_吸盤_吸盤4;
+    	public ShapePart X0Y0_手先_節6_吸盤_吸盤4;
 
-    	public Par X0Y0_手先_節6_爪_爪2;
+    	public ShapePart X0Y0_手先_節6_爪_爪2;
 
-    	public Par X0Y0_手先_節6_爪_爪1;
+    	public ShapePart X0Y0_手先_節6_爪_爪1;
 
-    	public Par X0Y0_手先_節7_節;
+    	public ShapePart X0Y0_手先_節7_節;
 
-    	public Par X0Y0_手先_節7_紋柄;
+    	public ShapePart X0Y0_手先_節7_紋柄;
 
-    	public Par X0Y0_手先_節7_吸盤_吸盤1;
+    	public ShapePart X0Y0_手先_節7_吸盤_吸盤1;
 
-    	public Par X0Y0_手先_節7_吸盤_吸盤2;
+    	public ShapePart X0Y0_手先_節7_吸盤_吸盤2;
 
-    	public Par X0Y0_手先_節7_吸盤_吸盤3;
+    	public ShapePart X0Y0_手先_節7_吸盤_吸盤3;
 
-    	public Par X0Y0_手先_節7_吸盤_吸盤4;
+    	public ShapePart X0Y0_手先_節7_吸盤_吸盤4;
 
-    	public Par X0Y0_手先_節7_爪_爪2;
+    	public ShapePart X0Y0_手先_節7_爪_爪2;
 
-    	public Par X0Y0_手先_節7_爪_爪1;
+    	public ShapePart X0Y0_手先_節7_爪_爪1;
 
-    	public Par X0Y0_手先_節8_節;
+    	public ShapePart X0Y0_手先_節8_節;
 
-    	public Par X0Y0_手先_節8_紋柄;
+    	public ShapePart X0Y0_手先_節8_紋柄;
 
-    	public Par X0Y0_手先_節8_吸盤_吸盤1;
+    	public ShapePart X0Y0_手先_節8_吸盤_吸盤1;
 
-    	public Par X0Y0_手先_節8_吸盤_吸盤2;
+    	public ShapePart X0Y0_手先_節8_吸盤_吸盤2;
 
-    	public Par X0Y0_手先_節8_吸盤_吸盤3;
+    	public ShapePart X0Y0_手先_節8_吸盤_吸盤3;
 
-    	public Par X0Y0_手先_節8_吸盤_吸盤4;
+    	public ShapePart X0Y0_手先_節8_吸盤_吸盤4;
 
-    	public Par X0Y0_手先_節8_爪_爪2;
+    	public ShapePart X0Y0_手先_節8_爪_爪2;
 
-    	public Par X0Y0_手先_節8_爪_爪1;
+    	public ShapePart X0Y0_手先_節8_爪_爪1;
 
-    	public Par X0Y0_手先_節9_節;
+    	public ShapePart X0Y0_手先_節9_節;
 
-    	public Par X0Y0_手先_節9_紋柄;
+    	public ShapePart X0Y0_手先_節9_紋柄;
 
-    	public Par X0Y0_手先_節9_吸盤_吸盤1;
+    	public ShapePart X0Y0_手先_節9_吸盤_吸盤1;
 
-    	public Par X0Y0_手先_節9_吸盤_吸盤2;
+    	public ShapePart X0Y0_手先_節9_吸盤_吸盤2;
 
-    	public Par X0Y0_手先_節9_吸盤_吸盤3;
+    	public ShapePart X0Y0_手先_節9_吸盤_吸盤3;
 
-    	public Par X0Y0_手先_節9_吸盤_吸盤4;
+    	public ShapePart X0Y0_手先_節9_吸盤_吸盤4;
 
-    	public Par X0Y0_手先_節9_爪_爪2;
+    	public ShapePart X0Y0_手先_節9_爪_爪2;
 
-    	public Par X0Y0_手先_節9_爪_爪1;
+    	public ShapePart X0Y0_手先_節9_爪_爪1;
 
-    	public Par X0Y0_手先_節10_節;
+    	public ShapePart X0Y0_手先_節10_節;
 
-    	public Par X0Y0_手先_節10_紋柄;
+    	public ShapePart X0Y0_手先_節10_紋柄;
 
-    	public Par X0Y0_手先_節10_吸盤_吸盤1;
+    	public ShapePart X0Y0_手先_節10_吸盤_吸盤1;
 
-    	public Par X0Y0_手先_節10_吸盤_吸盤2;
+    	public ShapePart X0Y0_手先_節10_吸盤_吸盤2;
 
-    	public Par X0Y0_手先_節10_吸盤_吸盤3;
+    	public ShapePart X0Y0_手先_節10_吸盤_吸盤3;
 
-    	public Par X0Y0_手先_節10_吸盤_吸盤4;
+    	public ShapePart X0Y0_手先_節10_吸盤_吸盤4;
 
-    	public Par X0Y0_手先_節10_爪_爪2;
+    	public ShapePart X0Y0_手先_節10_爪_爪2;
 
-    	public Par X0Y0_手先_節10_爪_爪1;
+    	public ShapePart X0Y0_手先_節10_爪_爪1;
 
     	public ColorD 腕部_節1_節CD;
 
@@ -1051,7 +1051,7 @@ namespace SlaveMatrix
 
     	public 拘束鎖 鎖4;
 
-    	public Par[] Pars;
+    	public ShapePart[] Pars;
 
     	private Vector2D[] mm;
 
@@ -4246,7 +4246,7 @@ namespace SlaveMatrix
     		}
     		base.配色指定 = 配色指定;
     		配色(体配色);
-    		Pars = new Par[35]
+    		Pars = new ShapePart[35]
     		{
     			X0Y0_腕部_節1_節, X0Y0_腕部_節2_節, X0Y0_腕部_節3_節, X0Y0_腕部_節4_節, X0Y0_腕部_節5_節, X0Y0_腕部_節6_節, X0Y0_腕部_節7_節, X0Y0_腕部_節8_節, X0Y0_腕部_節9_節, X0Y0_腕部_節10_節,
     			X0Y0_腕部_節11_節, X0Y0_腕部_節12_節, X0Y0_腕部_節13_節, X0Y0_腕部_節14_節, X0Y0_腕部_節15_節, X0Y0_腕部_節16_節, X0Y0_腕部_節17_節, X0Y0_腕部_節18_節, X0Y0_腕部_節19_節, X0Y0_腕部_節20_節,
@@ -4757,7 +4757,7 @@ namespace SlaveMatrix
     		Body.JoinPAall();
     	}
 
-    	public override bool Is革(Par p)
+    	public override bool Is革(ShapePart p)
     	{
     		if (p != X0Y0_腕部_輪1_革 && p != X0Y0_腕部_輪1_金具1 && p != X0Y0_腕部_輪1_金具2 && p != X0Y0_腕部_輪1_金具3 && p != X0Y0_腕部_輪1_金具左 && p != X0Y0_腕部_輪1_金具右 && p != X0Y0_手先_輪2_革 && p != X0Y0_手先_輪2_金具1 && p != X0Y0_手先_輪2_金具2 && p != X0Y0_手先_輪2_金具3 && p != X0Y0_手先_輪2_金具左)
     		{
@@ -4766,7 +4766,7 @@ namespace SlaveMatrix
     		return true;
     	}
 
-    	public override IEnumerable<Par> Enum軸()
+    	public override IEnumerable<ShapePart> Enum軸()
     	{
     		yield return X0Y0_腕部_節1_節;
     		yield return X0Y0_腕部_節2_節;

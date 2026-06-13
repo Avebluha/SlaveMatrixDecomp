@@ -366,9 +366,9 @@ namespace _2DGAMELIB
     		HitColors.Add(c);
     	}
 
-    	public void SetUniqueColor(IEnumerable<Par> ps)
+    	public void SetUniqueColor(IEnumerable<ShapePart> ps)
     	{
-    		foreach (Par p in ps)
+    		foreach (ShapePart p in ps)
     		{
     			p.HitColor = GetUniqueColor();
     		}
@@ -379,9 +379,9 @@ namespace _2DGAMELIB
     		HitColors.Remove(Color);
     	}
 
-    	public void RemUniqueColor(IEnumerable<Par> ps)
+    	public void RemUniqueColor(IEnumerable<ShapePart> ps)
     	{
-    		foreach (Par p in ps)
+    		foreach (ShapePart p in ps)
     		{
     			HitColors.Remove(p.HitColor);
     		}

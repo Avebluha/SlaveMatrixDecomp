@@ -6,11 +6,11 @@ namespace SlaveMatrix
 {
     public class 多足_蜘 : 半身
     {
-    	public Par X0Y0_Torso;
+    	public ShapePart X0Y0_Torso;
 
-    	public Par X0Y0_胸版;
+    	public ShapePart X0Y0_胸版;
 
-    	public Par X0Y0_柄;
+    	public ShapePart X0Y0_柄;
 
     	public ColorD TorsoCD;
 

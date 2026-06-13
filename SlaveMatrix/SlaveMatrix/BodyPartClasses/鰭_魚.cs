@@ -4,21 +4,21 @@ namespace SlaveMatrix
 {
     public class 鰭_魚 : 鰭
     {
-    	public Par X0Y0_鰭2_鰭膜;
+    	public ShapePart X0Y0_鰭2_鰭膜;
 
-    	public Par X0Y0_鰭2_鰭条;
+    	public ShapePart X0Y0_鰭2_鰭条;
 
-    	public Par X0Y0_鰭1_鰭膜;
+    	public ShapePart X0Y0_鰭1_鰭膜;
 
-    	public Par X0Y0_鰭1_鰭条;
+    	public ShapePart X0Y0_鰭1_鰭条;
 
-    	public Par X0Y1_鰭2_鰭膜;
+    	public ShapePart X0Y1_鰭2_鰭膜;
 
-    	public Par X0Y1_鰭2_鰭条;
+    	public ShapePart X0Y1_鰭2_鰭条;
 
-    	public Par X0Y1_鰭1_鰭膜;
+    	public ShapePart X0Y1_鰭1_鰭膜;
 
-    	public Par X0Y1_鰭1_鰭条;
+    	public ShapePart X0Y1_鰭1_鰭条;
 
     	public ColorD 鰭2_鰭膜CD;
 

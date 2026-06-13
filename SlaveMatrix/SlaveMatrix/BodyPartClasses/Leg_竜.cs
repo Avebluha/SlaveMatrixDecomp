@@ -5,57 +5,57 @@ namespace SlaveMatrix
 {
     public class Leg_竜 : 獣脚
     {
-    	public Par X0Y0_Leg;
+    	public ShapePart X0Y0_Leg;
 
-    	public Par X0Y0_竜性_鱗脹_鱗1;
+    	public ShapePart X0Y0_竜性_鱗脹_鱗1;
 
-    	public Par X0Y0_竜性_鱗脹_鱗2;
+    	public ShapePart X0Y0_竜性_鱗脹_鱗2;
 
-    	public Par X0Y0_竜性_鱗脹_鱗3;
+    	public ShapePart X0Y0_竜性_鱗脹_鱗3;
 
-    	public Par X0Y0_竜性_鱗脹_鱗4;
+    	public ShapePart X0Y0_竜性_鱗脹_鱗4;
 
-    	public Par X0Y0_竜性_鱗脹_鱗5;
+    	public ShapePart X0Y0_竜性_鱗脹_鱗5;
 
-    	public Par X0Y0_竜性_鱗脹_鱗6;
+    	public ShapePart X0Y0_竜性_鱗脹_鱗6;
 
-    	public Par X0Y0_竜性_鱗脹_鱗7;
+    	public ShapePart X0Y0_竜性_鱗脹_鱗7;
 
-    	public Par X0Y0_竜性_鱗脹_鱗8;
+    	public ShapePart X0Y0_竜性_鱗脹_鱗8;
 
-    	public Par X0Y0_竜性_鱗脛_鱗1;
+    	public ShapePart X0Y0_竜性_鱗脛_鱗1;
 
-    	public Par X0Y0_竜性_鱗脛_鱗2;
+    	public ShapePart X0Y0_竜性_鱗脛_鱗2;
 
-    	public Par X0Y0_竜性_鱗脛_鱗3;
+    	public ShapePart X0Y0_竜性_鱗脛_鱗3;
 
-    	public Par X0Y0_竜性_鱗脛_鱗4;
+    	public ShapePart X0Y0_竜性_鱗脛_鱗4;
 
-    	public Par X0Y0_竜性_鱗脛_鱗5;
+    	public ShapePart X0Y0_竜性_鱗脛_鱗5;
 
-    	public Par X0Y0_竜性_鱗脛_鱗6;
+    	public ShapePart X0Y0_竜性_鱗脛_鱗6;
 
-    	public Par X0Y0_竜性_鱗脛_鱗7;
+    	public ShapePart X0Y0_竜性_鱗脛_鱗7;
 
-    	public Par X0Y0_竜性_鱗脛_鱗8;
+    	public ShapePart X0Y0_竜性_鱗脛_鱗8;
 
-    	public Par X0Y0_竜性_鱗脛_鱗9;
+    	public ShapePart X0Y0_竜性_鱗脛_鱗9;
 
-    	public Par X0Y0_竜性_鱗脛_鱗10;
+    	public ShapePart X0Y0_竜性_鱗脛_鱗10;
 
-    	public Par X0Y0_筋;
+    	public ShapePart X0Y0_筋;
 
-    	public Par X0Y0_脚輪_革;
+    	public ShapePart X0Y0_脚輪_革;
 
-    	public Par X0Y0_脚輪_金具1;
+    	public ShapePart X0Y0_脚輪_金具1;
 
-    	public Par X0Y0_脚輪_金具2;
+    	public ShapePart X0Y0_脚輪_金具2;
 
-    	public Par X0Y0_脚輪_金具3;
+    	public ShapePart X0Y0_脚輪_金具3;
 
-    	public Par X0Y0_脚輪_金具左;
+    	public ShapePart X0Y0_脚輪_金具左;
 
-    	public Par X0Y0_脚輪_金具右;
+    	public ShapePart X0Y0_脚輪_金具右;
 
     	public ColorD LegCD;
 
@@ -812,7 +812,7 @@ namespace SlaveMatrix
     		Body.JoinPAall();
     	}
 
-    	public override bool Is革(Par p)
+    	public override bool Is革(ShapePart p)
     	{
     		if (p != X0Y0_脚輪_革 && p != X0Y0_脚輪_金具1 && p != X0Y0_脚輪_金具2 && p != X0Y0_脚輪_金具3 && p != X0Y0_脚輪_金具左)
     		{

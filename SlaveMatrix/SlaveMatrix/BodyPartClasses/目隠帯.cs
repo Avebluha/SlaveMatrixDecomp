@@ -4,49 +4,49 @@ namespace SlaveMatrix
 {
     public class 目隠帯 : Ele
     {
-    	public Par X0Y0_革;
+    	public ShapePart X0Y0_革;
 
-    	public Par X0Y0_丸金具上中;
+    	public ShapePart X0Y0_丸金具上中;
 
-    	public Par X0Y0_丸金具上左1;
+    	public ShapePart X0Y0_丸金具上左1;
 
-    	public Par X0Y0_丸金具上左2;
+    	public ShapePart X0Y0_丸金具上左2;
 
-    	public Par X0Y0_丸金具上左3;
+    	public ShapePart X0Y0_丸金具上左3;
 
-    	public Par X0Y0_丸金具上左4;
+    	public ShapePart X0Y0_丸金具上左4;
 
-    	public Par X0Y0_丸金具上左5;
+    	public ShapePart X0Y0_丸金具上左5;
 
-    	public Par X0Y0_丸金具上右1;
+    	public ShapePart X0Y0_丸金具上右1;
 
-    	public Par X0Y0_丸金具上右2;
+    	public ShapePart X0Y0_丸金具上右2;
 
-    	public Par X0Y0_丸金具上右3;
+    	public ShapePart X0Y0_丸金具上右3;
 
-    	public Par X0Y0_丸金具上右4;
+    	public ShapePart X0Y0_丸金具上右4;
 
-    	public Par X0Y0_丸金具上右5;
+    	public ShapePart X0Y0_丸金具上右5;
 
-    	public Par X0Y0_丸金具下左1;
+    	public ShapePart X0Y0_丸金具下左1;
 
-    	public Par X0Y0_丸金具下左2;
+    	public ShapePart X0Y0_丸金具下左2;
 
-    	public Par X0Y0_丸金具下左3;
+    	public ShapePart X0Y0_丸金具下左3;
 
-    	public Par X0Y0_丸金具下左4;
+    	public ShapePart X0Y0_丸金具下左4;
 
-    	public Par X0Y0_丸金具下左5;
+    	public ShapePart X0Y0_丸金具下左5;
 
-    	public Par X0Y0_丸金具下右1;
+    	public ShapePart X0Y0_丸金具下右1;
 
-    	public Par X0Y0_丸金具下右2;
+    	public ShapePart X0Y0_丸金具下右2;
 
-    	public Par X0Y0_丸金具下右3;
+    	public ShapePart X0Y0_丸金具下右3;
 
-    	public Par X0Y0_丸金具下右4;
+    	public ShapePart X0Y0_丸金具下右4;
 
-    	public Par X0Y0_丸金具下右5;
+    	public ShapePart X0Y0_丸金具下右5;
 
     	public ColorD 革CD;
 
@@ -631,7 +631,7 @@ namespace SlaveMatrix
     		Intensity = e.濃度;
     	}
 
-    	public override bool Is革(Par p)
+    	public override bool Is革(ShapePart p)
     	{
     		if (p != X0Y0_革 && p != X0Y0_丸金具上中 && p != X0Y0_丸金具上左1 && p != X0Y0_丸金具上左2 && p != X0Y0_丸金具上左3 && p != X0Y0_丸金具上左4 && p != X0Y0_丸金具上左5 && p != X0Y0_丸金具上右1 && p != X0Y0_丸金具上右2 && p != X0Y0_丸金具上右3 && p != X0Y0_丸金具上右4 && p != X0Y0_丸金具上右5 && p != X0Y0_丸金具下左1 && p != X0Y0_丸金具下左2 && p != X0Y0_丸金具下左3 && p != X0Y0_丸金具下左4 && p != X0Y0_丸金具下左5 && p != X0Y0_丸金具下右1 && p != X0Y0_丸金具下右2 && p != X0Y0_丸金具下右3 && p != X0Y0_丸金具下右4)
     		{

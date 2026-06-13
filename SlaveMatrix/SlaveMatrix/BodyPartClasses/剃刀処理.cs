@@ -13,7 +13,7 @@ namespace SlaveMatrix
 
     	private double a;
 
-    	private Par p;
+    	private ShapePart p;
 
     	public void 剃り()
     	{

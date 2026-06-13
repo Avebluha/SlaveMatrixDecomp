@@ -7,7 +7,7 @@ namespace _2DGAMELIB
 {
     // renders text
     [Serializable]
-    public class ParT : Par
+    public class ShapePartT : ShapePart
     {
     	[NonSerialized, JsonIgnore]
     	private Font font = new Font("", 1f);
@@ -178,36 +178,36 @@ namespace _2DGAMELIB
             EditTS = true;
         }
 
-    	public ParT()
+    	public ShapePartT()
     	{
     	}
 
-    	public ParT(ParT ParT)
+    	public ShapePartT(ShapePartT ShapePartT)
     	{
-    		CopyT(ParT);
+    		CopyT(ShapePartT);
     	}
 
-    	private void CopyT(ParT ParT)
+    	private void CopyT(ShapePartT ShapePartT)
     	{
-    		Copy(ParT);
+    		Copy(ShapePartT);
 
-    		fontSize = ParT.fontSize;
+    		fontSize = ShapePartT.fontSize;
 
-    		if (ParT.font != null)
-    			Font = ParT.font.Copy();
+    		if (ShapePartT.font != null)
+    			Font = ShapePartT.font.Copy();
 
-    		if (ParT.brusht != null)
-    			TextBrush = ParT.brusht.Copy();
+    		if (ShapePartT.brusht != null)
+    			TextBrush = ShapePartT.brusht.Copy();
 
-    		if (ParT.brushs != null)
-    			ShadBrush = ParT.brushs.Copy();
+    		if (ShapePartT.brushs != null)
+    			ShadBrush = ShapePartT.brushs.Copy();
 
-    		if (ParT.stringformat != null)
-    			StringFormat = ParT.stringformat.Copy();
+    		if (ShapePartT.stringformat != null)
+    			StringFormat = ShapePartT.stringformat.Copy();
 
-    		positionT = ParT.positionT;
-    		rectSize = ParT.rectSize;
-    		Text = ParT.Text;
+    		positionT = ShapePartT.positionT;
+    		rectSize = ShapePartT.rectSize;
+    		Text = ShapePartT.Text;
     	}
 
     	public new void Draw(double Unit, Graphics Graphics)

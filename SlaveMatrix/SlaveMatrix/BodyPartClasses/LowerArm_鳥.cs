@@ -5,123 +5,123 @@ namespace SlaveMatrix
 {
     public class LowerArm_鳥 : 翼LowerArm
     {
-    	public Par X0Y0_鳥翼LowerArm;
+    	public ShapePart X0Y0_鳥翼LowerArm;
 
-    	public Par X0Y0_風切羽_羽15;
+    	public ShapePart X0Y0_風切羽_羽15;
 
-    	public Par X0Y0_風切羽_羽14;
+    	public ShapePart X0Y0_風切羽_羽14;
 
-    	public Par X0Y0_風切羽_羽13;
+    	public ShapePart X0Y0_風切羽_羽13;
 
-    	public Par X0Y0_風切羽_羽12;
+    	public ShapePart X0Y0_風切羽_羽12;
 
-    	public Par X0Y0_風切羽_羽11;
+    	public ShapePart X0Y0_風切羽_羽11;
 
-    	public Par X0Y0_風切羽_羽10;
+    	public ShapePart X0Y0_風切羽_羽10;
 
-    	public Par X0Y0_風切羽_羽9;
+    	public ShapePart X0Y0_風切羽_羽9;
 
-    	public Par X0Y0_風切羽_羽8;
+    	public ShapePart X0Y0_風切羽_羽8;
 
-    	public Par X0Y0_風切羽_羽7;
+    	public ShapePart X0Y0_風切羽_羽7;
 
-    	public Par X0Y0_風切羽_羽6;
+    	public ShapePart X0Y0_風切羽_羽6;
 
-    	public Par X0Y0_風切羽_羽5;
+    	public ShapePart X0Y0_風切羽_羽5;
 
-    	public Par X0Y0_風切羽_羽4;
+    	public ShapePart X0Y0_風切羽_羽4;
 
-    	public Par X0Y0_風切羽_羽3;
+    	public ShapePart X0Y0_風切羽_羽3;
 
-    	public Par X0Y0_風切羽_羽2;
+    	public ShapePart X0Y0_風切羽_羽2;
 
-    	public Par X0Y0_風切羽_羽1;
+    	public ShapePart X0Y0_風切羽_羽1;
 
-    	public Par X0Y0_雨覆羽_羽14;
+    	public ShapePart X0Y0_雨覆羽_羽14;
 
-    	public Par X0Y0_雨覆羽_羽13;
+    	public ShapePart X0Y0_雨覆羽_羽13;
 
-    	public Par X0Y0_雨覆羽_羽12;
+    	public ShapePart X0Y0_雨覆羽_羽12;
 
-    	public Par X0Y0_雨覆羽_羽11;
+    	public ShapePart X0Y0_雨覆羽_羽11;
 
-    	public Par X0Y0_雨覆羽_羽10;
+    	public ShapePart X0Y0_雨覆羽_羽10;
 
-    	public Par X0Y0_雨覆羽_羽9;
+    	public ShapePart X0Y0_雨覆羽_羽9;
 
-    	public Par X0Y0_雨覆羽_羽8;
+    	public ShapePart X0Y0_雨覆羽_羽8;
 
-    	public Par X0Y0_雨覆羽_羽7;
+    	public ShapePart X0Y0_雨覆羽_羽7;
 
-    	public Par X0Y0_雨覆羽_羽6;
+    	public ShapePart X0Y0_雨覆羽_羽6;
 
-    	public Par X0Y0_雨覆羽_羽5;
+    	public ShapePart X0Y0_雨覆羽_羽5;
 
-    	public Par X0Y0_雨覆羽_羽4;
+    	public ShapePart X0Y0_雨覆羽_羽4;
 
-    	public Par X0Y0_雨覆羽_羽3;
+    	public ShapePart X0Y0_雨覆羽_羽3;
 
-    	public Par X0Y0_雨覆羽_羽2;
+    	public ShapePart X0Y0_雨覆羽_羽2;
 
-    	public Par X0Y0_雨覆羽_羽1;
+    	public ShapePart X0Y0_雨覆羽_羽1;
 
-    	public Par X0Y0_中雨覆羽_羽13;
+    	public ShapePart X0Y0_中雨覆羽_羽13;
 
-    	public Par X0Y0_中雨覆羽_羽12;
+    	public ShapePart X0Y0_中雨覆羽_羽12;
 
-    	public Par X0Y0_中雨覆羽_羽11;
+    	public ShapePart X0Y0_中雨覆羽_羽11;
 
-    	public Par X0Y0_中雨覆羽_羽10;
+    	public ShapePart X0Y0_中雨覆羽_羽10;
 
-    	public Par X0Y0_中雨覆羽_羽9;
+    	public ShapePart X0Y0_中雨覆羽_羽9;
 
-    	public Par X0Y0_中雨覆羽_羽8;
+    	public ShapePart X0Y0_中雨覆羽_羽8;
 
-    	public Par X0Y0_中雨覆羽_羽7;
+    	public ShapePart X0Y0_中雨覆羽_羽7;
 
-    	public Par X0Y0_中雨覆羽_羽6;
+    	public ShapePart X0Y0_中雨覆羽_羽6;
 
-    	public Par X0Y0_中雨覆羽_羽5;
+    	public ShapePart X0Y0_中雨覆羽_羽5;
 
-    	public Par X0Y0_中雨覆羽_羽4;
+    	public ShapePart X0Y0_中雨覆羽_羽4;
 
-    	public Par X0Y0_中雨覆羽_羽3;
+    	public ShapePart X0Y0_中雨覆羽_羽3;
 
-    	public Par X0Y0_中雨覆羽_羽2;
+    	public ShapePart X0Y0_中雨覆羽_羽2;
 
-    	public Par X0Y0_中雨覆羽_羽1;
+    	public ShapePart X0Y0_中雨覆羽_羽1;
 
-    	public Par X0Y0_小雨覆_小雨覆;
+    	public ShapePart X0Y0_小雨覆_小雨覆;
 
-    	public Par X0Y0_小雨覆_竜性_鱗1;
+    	public ShapePart X0Y0_小雨覆_竜性_鱗1;
 
-    	public Par X0Y0_小雨覆_竜性_鱗2;
+    	public ShapePart X0Y0_小雨覆_竜性_鱗2;
 
-    	public Par X0Y0_小雨覆_竜性_鱗3;
+    	public ShapePart X0Y0_小雨覆_竜性_鱗3;
 
-    	public Par X0Y0_小雨覆_竜性_鱗4;
+    	public ShapePart X0Y0_小雨覆_竜性_鱗4;
 
-    	public Par X0Y0_小雨覆_竜性_鱗5;
+    	public ShapePart X0Y0_小雨覆_竜性_鱗5;
 
-    	public Par X0Y0_小雨覆_竜性_鱗6;
+    	public ShapePart X0Y0_小雨覆_竜性_鱗6;
 
-    	public Par X0Y0_小雨覆_竜性_鱗7;
+    	public ShapePart X0Y0_小雨覆_竜性_鱗7;
 
-    	public Par X0Y0_小雨覆_竜性_鱗8;
+    	public ShapePart X0Y0_小雨覆_竜性_鱗8;
 
-    	public Par X0Y0_小雨覆_竜性_鱗9;
+    	public ShapePart X0Y0_小雨覆_竜性_鱗9;
 
-    	public Par X0Y0_腕輪_革;
+    	public ShapePart X0Y0_腕輪_革;
 
-    	public Par X0Y0_腕輪_金具1;
+    	public ShapePart X0Y0_腕輪_金具1;
 
-    	public Par X0Y0_腕輪_金具2;
+    	public ShapePart X0Y0_腕輪_金具2;
 
-    	public Par X0Y0_腕輪_金具3;
+    	public ShapePart X0Y0_腕輪_金具3;
 
-    	public Par X0Y0_腕輪_金具左;
+    	public ShapePart X0Y0_腕輪_金具左;
 
-    	public Par X0Y0_腕輪_金具右;
+    	public ShapePart X0Y0_腕輪_金具右;
 
     	public ColorD 鳥翼LowerArmCD;
 
@@ -2488,7 +2488,7 @@ namespace SlaveMatrix
     		鎖1.描画0(Are);
     	}
 
-    	public override bool Is革(Par p)
+    	public override bool Is革(ShapePart p)
     	{
     		if (p != X0Y0_腕輪_革 && p != X0Y0_腕輪_金具1 && p != X0Y0_腕輪_金具2 && p != X0Y0_腕輪_金具3 && p != X0Y0_腕輪_金具左)
     		{

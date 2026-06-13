@@ -4,23 +4,23 @@ namespace SlaveMatrix
 {
     public class 潮吹_小_人 : 潮吹_小
     {
-    	public Par X0Y0_雫;
+    	public ShapePart X0Y0_雫;
 
-    	public Par X0Y1_雫;
+    	public ShapePart X0Y1_雫;
 
-    	public Par X0Y2_雫;
+    	public ShapePart X0Y2_雫;
 
-    	public Par X0Y3_雫;
+    	public ShapePart X0Y3_雫;
 
-    	public Par X0Y4_雫;
+    	public ShapePart X0Y4_雫;
 
-    	public Par X0Y5_雫;
+    	public ShapePart X0Y5_雫;
 
-    	public Par X0Y6_雫;
+    	public ShapePart X0Y6_雫;
 
-    	public Par X0Y7_雫;
+    	public ShapePart X0Y7_雫;
 
-    	public Par X0Y8_雫;
+    	public ShapePart X0Y8_雫;
 
     	public ColorD 雫CD;
 

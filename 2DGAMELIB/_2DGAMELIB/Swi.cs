@@ -49,7 +49,7 @@ namespace _2DGAMELIB
     			}
     			i = 0;
     			{
-    				foreach (Par item in but.Pars.EnumAllPar())
+    				foreach (ShapePart item in but.Pars.EnumAllPar())
     				{
     					item.BrushColor = but.OverColors[i];
     					i++;
@@ -82,7 +82,7 @@ namespace _2DGAMELIB
     			});
     		}
     		j = 0;
-    		foreach (Par item2 in but.Pars.EnumAllPar())
+    		foreach (ShapePart item2 in but.Pars.EnumAllPar())
     		{
     			item2.BrushColor = but.OverColors[j];
     			j++;
@@ -120,7 +120,7 @@ namespace _2DGAMELIB
     			}
     			i = 0;
     			{
-    				foreach (Par item in but.Pars.EnumAllPar())
+    				foreach (ShapePart item in but.Pars.EnumAllPar())
     				{
     					item.BrushColor = but.BaseColors[i];
     					i++;
@@ -153,7 +153,7 @@ namespace _2DGAMELIB
     			});
     		}
     		j = 0;
-    		foreach (Par item2 in but.Pars.EnumAllPar())
+    		foreach (ShapePart item2 in but.Pars.EnumAllPar())
     		{
     			item2.BrushColor = but.BaseColors[j];
     			j++;

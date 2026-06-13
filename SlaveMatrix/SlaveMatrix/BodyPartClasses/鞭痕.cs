@@ -4,7 +4,7 @@ namespace SlaveMatrix
 {
     public class 鞭痕 : Ele
     {
-    	public Par X0Y0_鞭痕;
+    	public ShapePart X0Y0_鞭痕;
 
     	public ColorD 鞭痕CD;
 

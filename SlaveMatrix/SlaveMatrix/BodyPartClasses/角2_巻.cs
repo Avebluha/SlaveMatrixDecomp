@@ -4,47 +4,47 @@ namespace SlaveMatrix
 {
     public class 角2_巻 : 角2
     {
-    	public Par X0Y0_根_根;
+    	public ShapePart X0Y0_根_根;
 
-    	public Par X0Y0_根_凸6;
+    	public ShapePart X0Y0_根_凸6;
 
-    	public Par X0Y0_根_凸5;
+    	public ShapePart X0Y0_根_凸5;
 
-    	public Par X0Y0_根_凸4;
+    	public ShapePart X0Y0_根_凸4;
 
-    	public Par X0Y0_根_凸3;
+    	public ShapePart X0Y0_根_凸3;
 
-    	public Par X0Y0_根_凸2;
+    	public ShapePart X0Y0_根_凸2;
 
-    	public Par X0Y0_根_凸1;
+    	public ShapePart X0Y0_根_凸1;
 
-    	public Par X0Y0_先_先;
+    	public ShapePart X0Y0_先_先;
 
-    	public Par X0Y0_先_凸1;
+    	public ShapePart X0Y0_先_凸1;
 
-    	public Par X0Y0_先_凸2;
+    	public ShapePart X0Y0_先_凸2;
 
-    	public Par X0Y0_先_凸3;
+    	public ShapePart X0Y0_先_凸3;
 
-    	public Par X0Y0_先_凸4;
+    	public ShapePart X0Y0_先_凸4;
 
-    	public Par X0Y0_先_凸5;
+    	public ShapePart X0Y0_先_凸5;
 
-    	public Par X0Y1_根_根;
+    	public ShapePart X0Y1_根_根;
 
-    	public Par X0Y1_根_折線1;
+    	public ShapePart X0Y1_根_折線1;
 
-    	public Par X0Y1_根_折線2;
+    	public ShapePart X0Y1_根_折線2;
 
-    	public Par X0Y1_根_凸6;
+    	public ShapePart X0Y1_根_凸6;
 
-    	public Par X0Y1_根_凸4;
+    	public ShapePart X0Y1_根_凸4;
 
-    	public Par X0Y1_根_凸3;
+    	public ShapePart X0Y1_根_凸3;
 
-    	public Par X0Y1_根_凸2;
+    	public ShapePart X0Y1_根_凸2;
 
-    	public Par X0Y1_根_凸1;
+    	public ShapePart X0Y1_根_凸1;
 
     	public ColorD 根_根CD;
 

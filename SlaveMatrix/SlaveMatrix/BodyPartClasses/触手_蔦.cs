@@ -6,289 +6,289 @@ namespace SlaveMatrix
 {
     public class 触手_蔦 : 触手
     {
-    	public Par X0Y0_節1_節;
+    	public ShapePart X0Y0_節1_節;
 
-    	public Par X0Y0_節1_棘1;
+    	public ShapePart X0Y0_節1_棘1;
 
-    	public Par X0Y0_節1_棘2;
+    	public ShapePart X0Y0_節1_棘2;
 
-    	public Par X0Y0_節1_脈;
+    	public ShapePart X0Y0_節1_脈;
 
-    	public Par X0Y0_節2_節;
+    	public ShapePart X0Y0_節2_節;
 
-    	public Par X0Y0_節2_棘1;
+    	public ShapePart X0Y0_節2_棘1;
 
-    	public Par X0Y0_節2_棘2;
+    	public ShapePart X0Y0_節2_棘2;
 
-    	public Par X0Y0_節2_脈;
+    	public ShapePart X0Y0_節2_脈;
 
-    	public Par X0Y0_節3_節;
+    	public ShapePart X0Y0_節3_節;
 
-    	public Par X0Y0_節3_棘1;
+    	public ShapePart X0Y0_節3_棘1;
 
-    	public Par X0Y0_節3_棘2;
+    	public ShapePart X0Y0_節3_棘2;
 
-    	public Par X0Y0_節3_脈;
+    	public ShapePart X0Y0_節3_脈;
 
-    	public Par X0Y0_節4_節;
+    	public ShapePart X0Y0_節4_節;
 
-    	public Par X0Y0_節4_棘1;
+    	public ShapePart X0Y0_節4_棘1;
 
-    	public Par X0Y0_節4_棘2;
+    	public ShapePart X0Y0_節4_棘2;
 
-    	public Par X0Y0_節4_脈;
+    	public ShapePart X0Y0_節4_脈;
 
-    	public Par X0Y0_節5_節;
+    	public ShapePart X0Y0_節5_節;
 
-    	public Par X0Y0_節5_棘1;
+    	public ShapePart X0Y0_節5_棘1;
 
-    	public Par X0Y0_節5_棘2;
+    	public ShapePart X0Y0_節5_棘2;
 
-    	public Par X0Y0_節5_脈;
+    	public ShapePart X0Y0_節5_脈;
 
-    	public Par X0Y0_節6_節;
+    	public ShapePart X0Y0_節6_節;
 
-    	public Par X0Y0_節6_棘1;
+    	public ShapePart X0Y0_節6_棘1;
 
-    	public Par X0Y0_節6_棘2;
+    	public ShapePart X0Y0_節6_棘2;
 
-    	public Par X0Y0_節6_脈;
+    	public ShapePart X0Y0_節6_脈;
 
-    	public Par X0Y0_節7_節;
+    	public ShapePart X0Y0_節7_節;
 
-    	public Par X0Y0_節7_棘1;
+    	public ShapePart X0Y0_節7_棘1;
 
-    	public Par X0Y0_節7_棘2;
+    	public ShapePart X0Y0_節7_棘2;
 
-    	public Par X0Y0_節7_脈;
+    	public ShapePart X0Y0_節7_脈;
 
-    	public Par X0Y0_節8_節;
+    	public ShapePart X0Y0_節8_節;
 
-    	public Par X0Y0_節8_棘1;
+    	public ShapePart X0Y0_節8_棘1;
 
-    	public Par X0Y0_節8_棘2;
+    	public ShapePart X0Y0_節8_棘2;
 
-    	public Par X0Y0_節8_脈;
+    	public ShapePart X0Y0_節8_脈;
 
-    	public Par X0Y0_節9_節;
+    	public ShapePart X0Y0_節9_節;
 
-    	public Par X0Y0_節9_棘1;
+    	public ShapePart X0Y0_節9_棘1;
 
-    	public Par X0Y0_節9_棘2;
+    	public ShapePart X0Y0_節9_棘2;
 
-    	public Par X0Y0_節9_脈;
+    	public ShapePart X0Y0_節9_脈;
 
-    	public Par X0Y0_節10_節;
+    	public ShapePart X0Y0_節10_節;
 
-    	public Par X0Y0_節10_棘1;
+    	public ShapePart X0Y0_節10_棘1;
 
-    	public Par X0Y0_節10_棘2;
+    	public ShapePart X0Y0_節10_棘2;
 
-    	public Par X0Y0_節10_脈;
+    	public ShapePart X0Y0_節10_脈;
 
-    	public Par X0Y0_節11_節;
+    	public ShapePart X0Y0_節11_節;
 
-    	public Par X0Y0_節11_棘1;
+    	public ShapePart X0Y0_節11_棘1;
 
-    	public Par X0Y0_節11_棘2;
+    	public ShapePart X0Y0_節11_棘2;
 
-    	public Par X0Y0_節11_脈;
+    	public ShapePart X0Y0_節11_脈;
 
-    	public Par X0Y0_節12_節;
+    	public ShapePart X0Y0_節12_節;
 
-    	public Par X0Y0_節12_棘1;
+    	public ShapePart X0Y0_節12_棘1;
 
-    	public Par X0Y0_節12_棘2;
+    	public ShapePart X0Y0_節12_棘2;
 
-    	public Par X0Y0_節12_脈;
+    	public ShapePart X0Y0_節12_脈;
 
-    	public Par X0Y0_輪1_革;
+    	public ShapePart X0Y0_輪1_革;
 
-    	public Par X0Y0_輪1_金具1;
+    	public ShapePart X0Y0_輪1_金具1;
 
-    	public Par X0Y0_輪1_金具2;
+    	public ShapePart X0Y0_輪1_金具2;
 
-    	public Par X0Y0_輪1_金具3;
+    	public ShapePart X0Y0_輪1_金具3;
 
-    	public Par X0Y0_輪1_金具左;
+    	public ShapePart X0Y0_輪1_金具左;
 
-    	public Par X0Y0_輪1_金具右;
+    	public ShapePart X0Y0_輪1_金具右;
 
-    	public Par X0Y0_節13_節;
+    	public ShapePart X0Y0_節13_節;
 
-    	public Par X0Y0_節13_棘1;
+    	public ShapePart X0Y0_節13_棘1;
 
-    	public Par X0Y0_節13_棘2;
+    	public ShapePart X0Y0_節13_棘2;
 
-    	public Par X0Y0_節13_脈;
+    	public ShapePart X0Y0_節13_脈;
 
-    	public Par X0Y0_節14_節;
+    	public ShapePart X0Y0_節14_節;
 
-    	public Par X0Y0_節14_棘1;
+    	public ShapePart X0Y0_節14_棘1;
 
-    	public Par X0Y0_節14_棘2;
+    	public ShapePart X0Y0_節14_棘2;
 
-    	public Par X0Y0_節14_脈;
+    	public ShapePart X0Y0_節14_脈;
 
-    	public Par X0Y0_節15_節;
+    	public ShapePart X0Y0_節15_節;
 
-    	public Par X0Y0_節15_棘1;
+    	public ShapePart X0Y0_節15_棘1;
 
-    	public Par X0Y0_節15_棘2;
+    	public ShapePart X0Y0_節15_棘2;
 
-    	public Par X0Y0_節15_脈;
+    	public ShapePart X0Y0_節15_脈;
 
-    	public Par X0Y0_節16_節;
+    	public ShapePart X0Y0_節16_節;
 
-    	public Par X0Y0_節16_棘1;
+    	public ShapePart X0Y0_節16_棘1;
 
-    	public Par X0Y0_節16_棘2;
+    	public ShapePart X0Y0_節16_棘2;
 
-    	public Par X0Y0_節16_脈;
+    	public ShapePart X0Y0_節16_脈;
 
-    	public Par X0Y0_節17_節;
+    	public ShapePart X0Y0_節17_節;
 
-    	public Par X0Y0_節17_棘1;
+    	public ShapePart X0Y0_節17_棘1;
 
-    	public Par X0Y0_節17_棘2;
+    	public ShapePart X0Y0_節17_棘2;
 
-    	public Par X0Y0_節17_脈;
+    	public ShapePart X0Y0_節17_脈;
 
-    	public Par X0Y0_節18_節;
+    	public ShapePart X0Y0_節18_節;
 
-    	public Par X0Y0_節18_棘1;
+    	public ShapePart X0Y0_節18_棘1;
 
-    	public Par X0Y0_節18_棘2;
+    	public ShapePart X0Y0_節18_棘2;
 
-    	public Par X0Y0_節18_脈;
+    	public ShapePart X0Y0_節18_脈;
 
-    	public Par X0Y0_節19_節;
+    	public ShapePart X0Y0_節19_節;
 
-    	public Par X0Y0_節19_棘1;
+    	public ShapePart X0Y0_節19_棘1;
 
-    	public Par X0Y0_節19_棘2;
+    	public ShapePart X0Y0_節19_棘2;
 
-    	public Par X0Y0_節19_脈;
+    	public ShapePart X0Y0_節19_脈;
 
-    	public Par X0Y0_節20_節;
+    	public ShapePart X0Y0_節20_節;
 
-    	public Par X0Y0_節20_棘1;
+    	public ShapePart X0Y0_節20_棘1;
 
-    	public Par X0Y0_節20_棘2;
+    	public ShapePart X0Y0_節20_棘2;
 
-    	public Par X0Y0_節20_脈;
+    	public ShapePart X0Y0_節20_脈;
 
-    	public Par X0Y0_節21_節;
+    	public ShapePart X0Y0_節21_節;
 
-    	public Par X0Y0_節21_棘1;
+    	public ShapePart X0Y0_節21_棘1;
 
-    	public Par X0Y0_節21_棘2;
+    	public ShapePart X0Y0_節21_棘2;
 
-    	public Par X0Y0_節21_脈;
+    	public ShapePart X0Y0_節21_脈;
 
-    	public Par X0Y0_節22_節;
+    	public ShapePart X0Y0_節22_節;
 
-    	public Par X0Y0_節22_棘1;
+    	public ShapePart X0Y0_節22_棘1;
 
-    	public Par X0Y0_節22_棘2;
+    	public ShapePart X0Y0_節22_棘2;
 
-    	public Par X0Y0_節22_脈;
+    	public ShapePart X0Y0_節22_脈;
 
-    	public Par X0Y0_輪2_革;
+    	public ShapePart X0Y0_輪2_革;
 
-    	public Par X0Y0_輪2_金具1;
+    	public ShapePart X0Y0_輪2_金具1;
 
-    	public Par X0Y0_輪2_金具2;
+    	public ShapePart X0Y0_輪2_金具2;
 
-    	public Par X0Y0_輪2_金具3;
+    	public ShapePart X0Y0_輪2_金具3;
 
-    	public Par X0Y0_輪2_金具左;
+    	public ShapePart X0Y0_輪2_金具左;
 
-    	public Par X0Y0_輪2_金具右;
+    	public ShapePart X0Y0_輪2_金具右;
 
-    	public Par X0Y0_節23_節;
+    	public ShapePart X0Y0_節23_節;
 
-    	public Par X0Y0_節23_棘1;
+    	public ShapePart X0Y0_節23_棘1;
 
-    	public Par X0Y0_節23_棘2;
+    	public ShapePart X0Y0_節23_棘2;
 
-    	public Par X0Y0_節23_脈;
+    	public ShapePart X0Y0_節23_脈;
 
-    	public Par X0Y0_節24_節;
+    	public ShapePart X0Y0_節24_節;
 
-    	public Par X0Y0_節24_棘1;
+    	public ShapePart X0Y0_節24_棘1;
 
-    	public Par X0Y0_節24_棘2;
+    	public ShapePart X0Y0_節24_棘2;
 
-    	public Par X0Y0_節24_脈;
+    	public ShapePart X0Y0_節24_脈;
 
-    	public Par X0Y0_先端_下顎_顎;
+    	public ShapePart X0Y0_先端_下顎_顎;
 
-    	public Par X0Y0_先端_下顎_口内;
+    	public ShapePart X0Y0_先端_下顎_口内;
 
-    	public Par X0Y0_先端_下顎_棘12;
+    	public ShapePart X0Y0_先端_下顎_棘12;
 
-    	public Par X0Y0_先端_下顎_棘11;
+    	public ShapePart X0Y0_先端_下顎_棘11;
 
-    	public Par X0Y0_先端_下顎_棘10;
+    	public ShapePart X0Y0_先端_下顎_棘10;
 
-    	public Par X0Y0_先端_下顎_棘9;
+    	public ShapePart X0Y0_先端_下顎_棘9;
 
-    	public Par X0Y0_先端_下顎_棘8;
+    	public ShapePart X0Y0_先端_下顎_棘8;
 
-    	public Par X0Y0_先端_下顎_棘7;
+    	public ShapePart X0Y0_先端_下顎_棘7;
 
-    	public Par X0Y0_先端_下顎_脈1;
+    	public ShapePart X0Y0_先端_下顎_脈1;
 
-    	public Par X0Y0_先端_下顎_脈2;
+    	public ShapePart X0Y0_先端_下顎_脈2;
 
-    	public Par X0Y0_先端_下顎_脈3;
+    	public ShapePart X0Y0_先端_下顎_脈3;
 
-    	public Par X0Y0_先端_下顎_棘6;
+    	public ShapePart X0Y0_先端_下顎_棘6;
 
-    	public Par X0Y0_先端_下顎_棘5;
+    	public ShapePart X0Y0_先端_下顎_棘5;
 
-    	public Par X0Y0_先端_下顎_棘4;
+    	public ShapePart X0Y0_先端_下顎_棘4;
 
-    	public Par X0Y0_先端_下顎_棘3;
+    	public ShapePart X0Y0_先端_下顎_棘3;
 
-    	public Par X0Y0_先端_下顎_棘2;
+    	public ShapePart X0Y0_先端_下顎_棘2;
 
-    	public Par X0Y0_先端_下顎_棘1;
+    	public ShapePart X0Y0_先端_下顎_棘1;
 
-    	public Par X0Y0_先端_上顎_棘12;
+    	public ShapePart X0Y0_先端_上顎_棘12;
 
-    	public Par X0Y0_先端_上顎_棘11;
+    	public ShapePart X0Y0_先端_上顎_棘11;
 
-    	public Par X0Y0_先端_上顎_棘10;
+    	public ShapePart X0Y0_先端_上顎_棘10;
 
-    	public Par X0Y0_先端_上顎_棘9;
+    	public ShapePart X0Y0_先端_上顎_棘9;
 
-    	public Par X0Y0_先端_上顎_棘8;
+    	public ShapePart X0Y0_先端_上顎_棘8;
 
-    	public Par X0Y0_先端_上顎_棘7;
+    	public ShapePart X0Y0_先端_上顎_棘7;
 
-    	public Par X0Y0_先端_上顎_顎;
+    	public ShapePart X0Y0_先端_上顎_顎;
 
-    	public Par X0Y0_先端_上顎_脈1;
+    	public ShapePart X0Y0_先端_上顎_脈1;
 
-    	public Par X0Y0_先端_上顎_脈2;
+    	public ShapePart X0Y0_先端_上顎_脈2;
 
-    	public Par X0Y0_先端_上顎_脈3;
+    	public ShapePart X0Y0_先端_上顎_脈3;
 
-    	public Par X0Y0_先端_上顎_脈4;
+    	public ShapePart X0Y0_先端_上顎_脈4;
 
-    	public Par X0Y0_先端_輪_革;
+    	public ShapePart X0Y0_先端_輪_革;
 
-    	public Par X0Y0_先端_輪_金具1;
+    	public ShapePart X0Y0_先端_輪_金具1;
 
-    	public Par X0Y0_先端_輪_金具2;
+    	public ShapePart X0Y0_先端_輪_金具2;
 
-    	public Par X0Y0_先端_輪_金具3;
+    	public ShapePart X0Y0_先端_輪_金具3;
 
-    	public Par X0Y0_先端_輪_金具左;
+    	public ShapePart X0Y0_先端_輪_金具左;
 
-    	public Par X0Y0_先端_輪_金具右;
+    	public ShapePart X0Y0_先端_輪_金具右;
 
     	public ColorD 節1_節CD;
 
@@ -916,7 +916,7 @@ namespace SlaveMatrix
 
     	public Ele[] 先端_接続;
 
-    	public Par[] Pars;
+    	public ShapePart[] Pars;
 
     	private Vector2D[] mm;
 
@@ -3918,7 +3918,7 @@ namespace SlaveMatrix
     		}
     		base.配色指定 = 配色指定;
     		配色(体配色);
-    		Pars = new Par[26]
+    		Pars = new ShapePart[26]
     		{
     			X0Y0_節1_節, X0Y0_節2_節, X0Y0_節3_節, X0Y0_節4_節, X0Y0_節5_節, X0Y0_節6_節, X0Y0_節7_節, X0Y0_節8_節, X0Y0_節9_節, X0Y0_節10_節,
     			X0Y0_節11_節, X0Y0_節12_節, X0Y0_節13_節, X0Y0_節14_節, X0Y0_節15_節, X0Y0_節16_節, X0Y0_節17_節, X0Y0_節18_節, X0Y0_節19_節, X0Y0_節20_節,
@@ -4309,7 +4309,7 @@ namespace SlaveMatrix
     		Body.JoinPAall();
     	}
 
-    	public override bool Is革(Par p)
+    	public override bool Is革(ShapePart p)
     	{
     		if (p != X0Y0_輪1_革 && p != X0Y0_輪1_金具1 && p != X0Y0_輪1_金具2 && p != X0Y0_輪1_金具3 && p != X0Y0_輪1_金具左 && p != X0Y0_輪1_金具右 && p != X0Y0_輪2_革 && p != X0Y0_輪2_金具1 && p != X0Y0_輪2_金具2 && p != X0Y0_輪2_金具3 && p != X0Y0_輪2_金具左 && p != X0Y0_輪2_金具右 && p != X0Y0_先端_輪_革 && p != X0Y0_先端_輪_金具1 && p != X0Y0_先端_輪_金具2 && p != X0Y0_先端_輪_金具3 && p != X0Y0_先端_輪_金具左)
     		{
@@ -4318,7 +4318,7 @@ namespace SlaveMatrix
     		return true;
     	}
 
-    	public override IEnumerable<Par> Enum軸()
+    	public override IEnumerable<ShapePart> Enum軸()
     	{
     		yield return X0Y0_節1_節;
     		yield return X0Y0_節2_節;

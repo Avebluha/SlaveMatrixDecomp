@@ -30,9 +30,9 @@ namespace _2DGAMELIB
     				{
     					((Pars)value2).PositionSize = value;
     				}
-    				else if (value2 is Par)
+    				else if (value2 is ShapePart)
     				{
-    					((Par)value2).PositionSize = value;
+    					((ShapePart)value2).PositionSize = value;
     				}
     			}
     		}
@@ -48,9 +48,9 @@ namespace _2DGAMELIB
     				{
     					((Pars)value2).PositionVector = value;
     				}
-    				else if (value2 is Par)
+    				else if (value2 is ShapePart)
     				{
-    					((Par)value2).PositionVector = value;
+    					((ShapePart)value2).PositionVector = value;
     				}
     			}
     		}
@@ -66,9 +66,9 @@ namespace _2DGAMELIB
     				{
     					((Pars)value2).AngleBase = value;
     				}
-    				else if (value2 is Par)
+    				else if (value2 is ShapePart)
     				{
-    					((Par)value2).AngleBase = value;
+    					((ShapePart)value2).AngleBase = value;
     				}
     			}
     		}
@@ -84,9 +84,9 @@ namespace _2DGAMELIB
     				{
     					((Pars)value2).AngleCont = value;
     				}
-    				else if (value2 is Par)
+    				else if (value2 is ShapePart)
     				{
-    					((Par)value2).AngleCont = value;
+    					((ShapePart)value2).AngleCont = value;
     				}
     			}
     		}
@@ -102,9 +102,9 @@ namespace _2DGAMELIB
     				{
     					((Pars)value2).SizeBase = value;
     				}
-    				else if (value2 is Par)
+    				else if (value2 is ShapePart)
     				{
-    					((Par)value2).SizeBase = value;
+    					((ShapePart)value2).SizeBase = value;
     				}
     			}
     		}
@@ -120,9 +120,9 @@ namespace _2DGAMELIB
     				{
     					((Pars)value2).SizeCont = value;
     				}
-    				else if (value2 is Par)
+    				else if (value2 is ShapePart)
     				{
-    					((Par)value2).SizeCont = value;
+    					((ShapePart)value2).SizeCont = value;
     				}
     			}
     		}
@@ -138,9 +138,9 @@ namespace _2DGAMELIB
     				{
     					((Pars)value2).SizeXBase = value;
     				}
-    				else if (value2 is Par)
+    				else if (value2 is ShapePart)
     				{
-    					((Par)value2).SizeXBase = value;
+    					((ShapePart)value2).SizeXBase = value;
     				}
     			}
     		}
@@ -156,9 +156,9 @@ namespace _2DGAMELIB
     				{
     					((Pars)value2).SizeXCont = value;
     				}
-    				else if (value2 is Par)
+    				else if (value2 is ShapePart)
     				{
-    					((Par)value2).SizeXCont = value;
+    					((ShapePart)value2).SizeXCont = value;
     				}
     			}
     		}
@@ -174,9 +174,9 @@ namespace _2DGAMELIB
     				{
     					((Pars)value2).SizeYBase = value;
     				}
-    				else if (value2 is Par)
+    				else if (value2 is ShapePart)
     				{
-    					((Par)value2).SizeYBase = value;
+    					((ShapePart)value2).SizeYBase = value;
     				}
     			}
     		}
@@ -192,9 +192,9 @@ namespace _2DGAMELIB
     				{
     					((Pars)value2).SizeYCont = value;
     				}
-    				else if (value2 is Par)
+    				else if (value2 is ShapePart)
     				{
-    					((Par)value2).SizeYCont = value;
+    					((ShapePart)value2).SizeYCont = value;
     				}
     			}
     		}
@@ -210,9 +210,9 @@ namespace _2DGAMELIB
     				{
     					((Pars)value2).Dra = value;
     				}
-    				else if (value2 is Par)
+    				else if (value2 is ShapePart)
     				{
-    					((Par)value2).Dra = value;
+    					((ShapePart)value2).Dra = value;
     				}
     			}
     		}
@@ -228,9 +228,9 @@ namespace _2DGAMELIB
     				{
     					((Pars)value2).Hit = value;
     				}
-    				else if (value2 is Par)
+    				else if (value2 is ShapePart)
     				{
-    					((Par)value2).Hit = value;
+    					((ShapePart)value2).Hit = value;
     				}
     			}
     		}
@@ -270,16 +270,16 @@ namespace _2DGAMELIB
     		return pars.IndexOf(obj);
     	}
 
-    	public void Add(string Name, Par Par)
+    	public void Add(string Name, ShapePart ShapePart)
     	{
-    		Par.SetParent(this);
-    		pars.Add(Name, Par);
+    		ShapePart.SetParent(this);
+    		pars.Add(Name, ShapePart);
     	}
 
-    	public void Add(string Name, ParT ParT)
+    	public void Add(string Name, ShapePartT ShapePartT)
     	{
-    		ParT.SetParent(this);
-    		pars.Add(Name, ParT);
+    		ShapePartT.SetParent(this);
+    		pars.Add(Name, ShapePartT);
     	}
 
     	public void Add(string Name, Pars Pars)
@@ -301,31 +301,31 @@ namespace _2DGAMELIB
     		{
     			((Pars)obj).SetParent(null);
     		}
-    		else if (obj is ParT)
+    		else if (obj is ShapePartT)
     		{
-    			((ParT)obj).SetParent(null);
+    			((ShapePartT)obj).SetParent(null);
     		}
-    		else if (obj is Par)
+    		else if (obj is ShapePart)
     		{
-    			((Par)obj).SetParent(null);
+    			((ShapePart)obj).SetParent(null);
     		}
     		pars.Remove(Name);
     	}
 
-    	public IEnumerable<Par> EnumAllPar()
+    	public IEnumerable<ShapePart> EnumAllPar()
     	{
     		foreach (object value in pars.Values)
     		{
     			if (value is Pars)
     			{
-    				foreach (Par item in ((Pars)value).EnumAllPar())
+    				foreach (ShapePart item in ((Pars)value).EnumAllPar())
     				{
     					yield return item;
     				}
     			}
-    			else if (value is Par)
+    			else if (value is ShapePart)
     			{
-    				yield return (Par)value;
+    				yield return (ShapePart)value;
     			}
     		}
     	}
@@ -338,13 +338,13 @@ namespace _2DGAMELIB
     			{
     				((Pars)value).SetDefault();
     			}
-    			else if (value is ParT)
+    			else if (value is ShapePartT)
     			{
-    				((ParT)value).SetDefault();
+    				((ShapePartT)value).SetDefault();
     			}
-    			else if (value is Par)
+    			else if (value is ShapePart)
     			{
-    				((Par)value).SetDefault();
+    				((ShapePart)value).SetDefault();
     			}
     		}
     	}
@@ -353,16 +353,16 @@ namespace _2DGAMELIB
     	{
     	}
 
-    	public Pars(Par Par)
+    	public Pars(ShapePart ShapePart)
     	{
-    		Tag = Par.Tag;
-    		Add(Par.Tag, Par);
+    		Tag = ShapePart.Tag;
+    		Add(ShapePart.Tag, ShapePart);
     	}
 
-    	public Pars(ParT ParT)
+    	public Pars(ShapePartT ShapePartT)
     	{
-    		Tag = ParT.Tag;
-    		Add(ParT.Tag, ParT);
+    		Tag = ShapePartT.Tag;
+    		Add(ShapePartT.Tag, ShapePartT);
     	}
 
     	public Pars(Pars Pars)
@@ -380,13 +380,13 @@ namespace _2DGAMELIB
     			{
     				Add(key, ((Pars)obj).Clone());
     			}
-    			else if (obj is ParT)
+    			else if (obj is ShapePartT)
     			{
-    				Add(key, new ParT((ParT)obj));
+    				Add(key, new ShapePartT((ShapePartT)obj));
     			}
-    			else if (obj is Par)
+    			else if (obj is ShapePart)
     			{
-    				Add(key, new Par((Par)obj));
+    				Add(key, new ShapePart((ShapePart)obj));
     			}
     		}
     	}
@@ -402,13 +402,13 @@ namespace _2DGAMELIB
     			{
     				pars2.Add(key, ((Pars)obj).Clone());
     			}
-    			else if (obj is ParT)
+    			else if (obj is ShapePartT)
     			{
-    				pars2.Add(key, new ParT((ParT)obj));
+    				pars2.Add(key, new ShapePartT((ShapePartT)obj));
     			}
-    			else if (obj is Par)
+    			else if (obj is ShapePart)
     			{
-    				pars2.Add(key, new Par((Par)obj));
+    				pars2.Add(key, new ShapePart((ShapePart)obj));
     			}
     		}
     		return pars2;
@@ -422,13 +422,13 @@ namespace _2DGAMELIB
     			{
     				((Pars)value).Draw(Unit, Graphics);
     			}
-    			else if (value is ParT)
+    			else if (value is ShapePartT)
     			{
-    				((ParT)value).Draw(Unit, Graphics);
+    				((ShapePartT)value).Draw(Unit, Graphics);
     			}
-    			else if (value is Par)
+    			else if (value is ShapePart)
     			{
-    				((Par)value).Draw(Unit, Graphics);
+    				((ShapePart)value).Draw(Unit, Graphics);
     			}
     		}
     	}
@@ -441,9 +441,9 @@ namespace _2DGAMELIB
     			{
     				((Pars)value).DrawH(Unit, Graphics);
     			}
-    			else if (value is Par)
+    			else if (value is ShapePart)
     			{
-    				((Par)value).DrawH(Unit, Graphics);
+    				((ShapePart)value).DrawH(Unit, Graphics);
     			}
     		}
     	}
@@ -453,30 +453,30 @@ namespace _2DGAMELIB
     		List<string> list = new List<string>();
     		foreach (object value in pars.Values)
     		{
-    			Par par;
+    			ShapePart shapePart;
     			if (value is Pars)
     			{
     				list.AddRange(((Pars)value).GetHitTags(ref HitColor));
     			}
-    			else if (value is Par && (par = (Par)value).HitColor == HitColor)
+    			else if (value is ShapePart && (shapePart = (ShapePart)value).HitColor == HitColor)
     			{
-    				list.Add(par.Tag);
+    				list.Add(shapePart.Tag);
     			}
     		}
     		return list;
     	}
 
-    	public List<Par> GetHitPars(ref Color HitColor)
+    	public List<ShapePart> GetHitPars(ref Color HitColor)
     	{
-    		List<Par> list = new List<Par>();
+    		List<ShapePart> list = new List<ShapePart>();
     		foreach (object value in pars.Values)
     		{
-    			Par item;
+    			ShapePart item;
     			if (value is Pars)
     			{
     				list.AddRange(((Pars)value).GetHitPars(ref HitColor));
     			}
-    			else if (value is Par && (item = (Par)value).HitColor == HitColor)
+    			else if (value is ShapePart && (item = (ShapePart)value).HitColor == HitColor)
     			{
     				list.Add(item);
     			}
@@ -492,7 +492,7 @@ namespace _2DGAMELIB
     			{
     				return true;
     			}
-    			if (value is Par && ((Par)value).HitColor == HitColor)
+    			if (value is ShapePart && ((ShapePart)value).HitColor == HitColor)
     			{
     				return true;
     			}
@@ -500,19 +500,19 @@ namespace _2DGAMELIB
     		return false;
     	}
 
-    	public Par GetPar(List<int> Path)
+    	public ShapePart GetPar(List<int> Path)
     	{
     		return GetPar(0, Path);
     	}
 
-    	private Par GetPar(int l, List<int> Path)
+    	private ShapePart GetPar(int l, List<int> Path)
     	{
     		object obj = pars[Path[l]];
     		if (obj is Pars)
     		{
     			return ((Pars)obj).GetPar(l + 1, Path);
     		}
-    		return (Par)obj;
+    		return (ShapePart)obj;
     	}
 
     	public void ReverseX()
@@ -523,9 +523,9 @@ namespace _2DGAMELIB
     			{
     				((Pars)value).ReverseX();
     			}
-    			else if (value is Par)
+    			else if (value is ShapePart)
     			{
-    				((Par)value).ReverseX();
+    				((ShapePart)value).ReverseX();
     			}
     		}
     	}
@@ -538,9 +538,9 @@ namespace _2DGAMELIB
     			{
     				((Pars)value).ReverseY();
     			}
-    			else if (value is Par)
+    			else if (value is ShapePart)
     			{
-    				((Par)value).ReverseY();
+    				((ShapePart)value).ReverseY();
     			}
     		}
     	}
@@ -553,13 +553,13 @@ namespace _2DGAMELIB
     			{
     				((Pars)value).Dispose();
     			}
-    			else if (value is ParT)
+    			else if (value is ShapePartT)
     			{
-    				((ParT)value).Dispose();
+    				((ShapePartT)value).Dispose();
     			}
-    			else if (value is Par)
+    			else if (value is ShapePart)
     			{
-    				((Par)value).Dispose();
+    				((ShapePart)value).Dispose();
     			}
     		}
     	}
@@ -571,14 +571,14 @@ namespace _2DGAMELIB
     		return (Pars)obj;
     	}
 
-    	public static ParT ToParT(this object obj)
+    	public static ShapePartT ToParT(this object obj)
     	{
-    		return (ParT)obj;
+    		return (ShapePartT)obj;
     	}
 
-    	public static Par ToPar(this object obj)
+    	public static ShapePart ToPar(this object obj)
     	{
-    		return (Par)obj;
+    		return (ShapePart)obj;
     	}
 
     	public static Pen Copy(this Pen Pen)

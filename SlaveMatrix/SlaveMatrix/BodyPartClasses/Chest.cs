@@ -5,121 +5,121 @@ namespace SlaveMatrix
 {
     public class Chest : Ele
     {
-    	public Par X0Y0_胸郭;
+    	public ShapePart X0Y0_胸郭;
 
-    	public Par X0Y0_筋肉_筋肉左;
+    	public ShapePart X0Y0_筋肉_筋肉左;
 
-    	public Par X0Y0_筋肉_筋肉右;
+    	public ShapePart X0Y0_筋肉_筋肉右;
 
-    	public Par X0Y0_筋肉_筋肉中;
+    	public ShapePart X0Y0_筋肉_筋肉中;
 
-    	public Par X0Y0_筋肉_筋肉左下;
+    	public ShapePart X0Y0_筋肉_筋肉左下;
 
-    	public Par X0Y0_筋肉_筋肉左中;
+    	public ShapePart X0Y0_筋肉_筋肉左中;
 
-    	public Par X0Y0_筋肉_筋肉左上;
+    	public ShapePart X0Y0_筋肉_筋肉左上;
 
-    	public Par X0Y0_筋肉_筋肉右下;
+    	public ShapePart X0Y0_筋肉_筋肉右下;
 
-    	public Par X0Y0_筋肉_筋肉右中;
+    	public ShapePart X0Y0_筋肉_筋肉右中;
 
-    	public Par X0Y0_筋肉_筋肉右上;
+    	public ShapePart X0Y0_筋肉_筋肉右上;
 
-    	public Par X0Y0_紋柄_紋左_紋1;
+    	public ShapePart X0Y0_紋柄_紋左_紋1;
 
-    	public Par X0Y0_紋柄_紋左_紋2;
+    	public ShapePart X0Y0_紋柄_紋左_紋2;
 
-    	public Par X0Y0_紋柄_紋左_紋3;
+    	public ShapePart X0Y0_紋柄_紋左_紋3;
 
-    	public Par X0Y0_紋柄_紋左_紋4;
+    	public ShapePart X0Y0_紋柄_紋左_紋4;
 
-    	public Par X0Y0_紋柄_紋右_紋1;
+    	public ShapePart X0Y0_紋柄_紋右_紋1;
 
-    	public Par X0Y0_紋柄_紋右_紋2;
+    	public ShapePart X0Y0_紋柄_紋右_紋2;
 
-    	public Par X0Y0_紋柄_紋右_紋3;
+    	public ShapePart X0Y0_紋柄_紋右_紋3;
 
-    	public Par X0Y0_紋柄_紋右_紋4;
+    	public ShapePart X0Y0_紋柄_紋右_紋4;
 
-    	public Par X0Y0_淫タトゥ_タトゥ左;
+    	public ShapePart X0Y0_淫タトゥ_タトゥ左;
 
-    	public Par X0Y0_淫タトゥ_タトゥ右;
+    	public ShapePart X0Y0_淫タトゥ_タトゥ右;
 
-    	public Par X0Y0_悪タトゥ_タトゥ左1;
+    	public ShapePart X0Y0_悪タトゥ_タトゥ左1;
 
-    	public Par X0Y0_悪タトゥ_タトゥ左2;
+    	public ShapePart X0Y0_悪タトゥ_タトゥ左2;
 
-    	public Par X0Y0_悪タトゥ_タトゥ左3;
+    	public ShapePart X0Y0_悪タトゥ_タトゥ左3;
 
-    	public Par X0Y0_悪タトゥ_タトゥ右1;
+    	public ShapePart X0Y0_悪タトゥ_タトゥ右1;
 
-    	public Par X0Y0_悪タトゥ_タトゥ右2;
+    	public ShapePart X0Y0_悪タトゥ_タトゥ右2;
 
-    	public Par X0Y0_悪タトゥ_タトゥ右3;
+    	public ShapePart X0Y0_悪タトゥ_タトゥ右3;
 
-    	public Par X0Y0_植タトゥ_左_上_タトゥ1;
+    	public ShapePart X0Y0_植タトゥ_左_上_タトゥ1;
 
-    	public Par X0Y0_植タトゥ_左_上_タトゥ2;
+    	public ShapePart X0Y0_植タトゥ_左_上_タトゥ2;
 
-    	public Par X0Y0_植タトゥ_左_下_タトゥ1;
+    	public ShapePart X0Y0_植タトゥ_左_下_タトゥ1;
 
-    	public Par X0Y0_植タトゥ_左_下_タトゥ2;
+    	public ShapePart X0Y0_植タトゥ_左_下_タトゥ2;
 
-    	public Par X0Y0_植タトゥ_右_上_タトゥ1;
+    	public ShapePart X0Y0_植タトゥ_右_上_タトゥ1;
 
-    	public Par X0Y0_植タトゥ_右_上_タトゥ2;
+    	public ShapePart X0Y0_植タトゥ_右_上_タトゥ2;
 
-    	public Par X0Y0_植タトゥ_右_下_タトゥ1;
+    	public ShapePart X0Y0_植タトゥ_右_下_タトゥ1;
 
-    	public Par X0Y0_植タトゥ_右_下_タトゥ2;
+    	public ShapePart X0Y0_植タトゥ_右_下_タトゥ2;
 
-    	public Par X0Y0_獣性_獣毛左1;
+    	public ShapePart X0Y0_獣性_獣毛左1;
 
-    	public Par X0Y0_獣性_獣毛左2;
+    	public ShapePart X0Y0_獣性_獣毛左2;
 
-    	public Par X0Y0_獣性_獣毛右1;
+    	public ShapePart X0Y0_獣性_獣毛右1;
 
-    	public Par X0Y0_獣性_獣毛右2;
+    	public ShapePart X0Y0_獣性_獣毛右2;
 
-    	public Par X0Y0_竜性_左_鱗1;
+    	public ShapePart X0Y0_竜性_左_鱗1;
 
-    	public Par X0Y0_竜性_左_鱗2;
+    	public ShapePart X0Y0_竜性_左_鱗2;
 
-    	public Par X0Y0_竜性_左_鱗3;
+    	public ShapePart X0Y0_竜性_左_鱗3;
 
-    	public Par X0Y0_竜性_右_鱗1;
+    	public ShapePart X0Y0_竜性_右_鱗1;
 
-    	public Par X0Y0_竜性_右_鱗2;
+    	public ShapePart X0Y0_竜性_右_鱗2;
 
-    	public Par X0Y0_竜性_右_鱗3;
+    	public ShapePart X0Y0_竜性_右_鱗3;
 
-    	public Par X0Y0_虫性_甲殻左_甲殻2_甲殻;
+    	public ShapePart X0Y0_虫性_甲殻左_甲殻2_甲殻;
 
-    	public Par X0Y0_虫性_甲殻左_甲殻2_器官;
+    	public ShapePart X0Y0_虫性_甲殻左_甲殻2_器官;
 
-    	public Par X0Y0_虫性_甲殻左_甲殻1_甲殻;
+    	public ShapePart X0Y0_虫性_甲殻左_甲殻1_甲殻;
 
-    	public Par X0Y0_虫性_甲殻左_甲殻1_器官;
+    	public ShapePart X0Y0_虫性_甲殻左_甲殻1_器官;
 
-    	public Par X0Y0_虫性_甲殻右_甲殻2_甲殻;
+    	public ShapePart X0Y0_虫性_甲殻右_甲殻2_甲殻;
 
-    	public Par X0Y0_虫性_甲殻右_甲殻2_器官;
+    	public ShapePart X0Y0_虫性_甲殻右_甲殻2_器官;
 
-    	public Par X0Y0_虫性_甲殻右_甲殻1_甲殻;
+    	public ShapePart X0Y0_虫性_甲殻右_甲殻1_甲殻;
 
-    	public Par X0Y0_虫性_甲殻右_甲殻1_器官;
+    	public ShapePart X0Y0_虫性_甲殻右_甲殻1_器官;
 
-    	public Par X0Y0_傷X左;
+    	public ShapePart X0Y0_傷X左;
 
-    	public Par X0Y0_傷X右;
+    	public ShapePart X0Y0_傷X右;
 
-    	public Par X0Y0_ハイライト外左;
+    	public ShapePart X0Y0_ハイライト外左;
 
-    	public Par X0Y0_ハイライト外右;
+    	public ShapePart X0Y0_ハイライト外右;
 
-    	public Par X0Y0_ハイライト内左;
+    	public ShapePart X0Y0_ハイライト内左;
 
-    	public Par X0Y0_ハイライト内右;
+    	public ShapePart X0Y0_ハイライト内右;
 
     	public ColorD 胸郭CD;
 

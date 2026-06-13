@@ -4,9 +4,9 @@ namespace SlaveMatrix
 {
     public class SideHair_パツ : SideHair
     {
-    	public Par X0Y0_髪1;
+    	public ShapePart X0Y0_髪1;
 
-    	public Par X0Y0_髪2;
+    	public ShapePart X0Y0_髪2;
 
     	public ColorD 髪1CD;
 

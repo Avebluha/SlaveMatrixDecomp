@@ -4,63 +4,63 @@ namespace SlaveMatrix
 {
     public class 涙 : Ele
     {
-    	public Par X0Y0_涙0流れ0;
+    	public ShapePart X0Y0_涙0流れ0;
 
-    	public Par X0Y0_涙0;
+    	public ShapePart X0Y0_涙0;
 
-    	public Par X0Y0_涙1;
+    	public ShapePart X0Y0_涙1;
 
-    	public Par X0Y0_涙ハイライト;
+    	public ShapePart X0Y0_涙ハイライト;
 
-    	public Par X0Y1_涙0流れ0;
+    	public ShapePart X0Y1_涙0流れ0;
 
-    	public Par X0Y1_涙0流れ1;
+    	public ShapePart X0Y1_涙0流れ1;
 
-    	public Par X0Y1_涙0;
+    	public ShapePart X0Y1_涙0;
 
-    	public Par X0Y1_涙1;
+    	public ShapePart X0Y1_涙1;
 
-    	public Par X0Y1_涙ハイライト;
+    	public ShapePart X0Y1_涙ハイライト;
 
-    	public Par X0Y2_涙0流れ0;
+    	public ShapePart X0Y2_涙0流れ0;
 
-    	public Par X0Y2_涙0流れ1;
+    	public ShapePart X0Y2_涙0流れ1;
 
-    	public Par X0Y2_涙0;
+    	public ShapePart X0Y2_涙0;
 
-    	public Par X0Y2_涙1;
+    	public ShapePart X0Y2_涙1;
 
-    	public Par X0Y2_涙ハイライト;
+    	public ShapePart X0Y2_涙ハイライト;
 
-    	public Par X0Y3_涙0流れ0;
+    	public ShapePart X0Y3_涙0流れ0;
 
-    	public Par X0Y3_涙0流れ1;
+    	public ShapePart X0Y3_涙0流れ1;
 
-    	public Par X0Y3_涙0;
+    	public ShapePart X0Y3_涙0;
 
-    	public Par X0Y3_涙1;
+    	public ShapePart X0Y3_涙1;
 
-    	public Par X0Y3_涙ハイライト;
+    	public ShapePart X0Y3_涙ハイライト;
 
-    	public Par X0Y4_涙0流れ0;
+    	public ShapePart X0Y4_涙0流れ0;
 
-    	public Par X0Y4_涙0流れ1;
+    	public ShapePart X0Y4_涙0流れ1;
 
-    	public Par X0Y4_涙0;
+    	public ShapePart X0Y4_涙0;
 
-    	public Par X0Y4_涙1;
+    	public ShapePart X0Y4_涙1;
 
-    	public Par X0Y4_涙ハイライト;
+    	public ShapePart X0Y4_涙ハイライト;
 
-    	public Par X0Y5_涙0流れ0;
+    	public ShapePart X0Y5_涙0流れ0;
 
-    	public Par X0Y5_涙0流れ1;
+    	public ShapePart X0Y5_涙0流れ1;
 
-    	public Par X0Y5_涙0;
+    	public ShapePart X0Y5_涙0;
 
-    	public Par X0Y5_涙1;
+    	public ShapePart X0Y5_涙1;
 
-    	public Par X0Y5_涙ハイライト;
+    	public ShapePart X0Y5_涙ハイライト;
 
     	public ColorD 涙0流れ0CD;
 

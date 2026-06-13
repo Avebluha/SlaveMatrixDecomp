@@ -5,7 +5,7 @@ namespace SlaveMatrix
 {
     public class 鼻_人 : 鼻
     {
-    	public Par X0Y0_鼻;
+    	public ShapePart X0Y0_鼻;
 
     	public ColorD 鼻CD;
 

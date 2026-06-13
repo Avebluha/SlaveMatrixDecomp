@@ -5,127 +5,127 @@ namespace SlaveMatrix
 {
     public class 乳房 : Ele
     {
-    	public Par X0Y0_乳房;
+    	public ShapePart X0Y0_乳房;
 
-    	public Par X0Y0_乳輪;
+    	public ShapePart X0Y0_乳輪;
 
-    	public Par X0Y0_乳首;
+    	public ShapePart X0Y0_乳首;
 
-    	public Par X0Y0_淫タトゥ_タトゥ1;
+    	public ShapePart X0Y0_淫タトゥ_タトゥ1;
 
-    	public Par X0Y0_淫タトゥ_タトゥ2;
+    	public ShapePart X0Y0_淫タトゥ_タトゥ2;
 
-    	public Par X0Y0_淫タトゥ_タトゥ3;
+    	public ShapePart X0Y0_淫タトゥ_タトゥ3;
 
-    	public Par X0Y0_淫タトゥ_タトゥ4;
+    	public ShapePart X0Y0_淫タトゥ_タトゥ4;
 
-    	public Par X0Y0_ハイライト1;
+    	public ShapePart X0Y0_ハイライト1;
 
-    	public Par X0Y0_ハイライト2;
+    	public ShapePart X0Y0_ハイライト2;
 
-    	public Par X0Y0_傷X;
+    	public ShapePart X0Y0_傷X;
 
-    	public Par X0Y0_傷I1;
+    	public ShapePart X0Y0_傷I1;
 
-    	public Par X0Y0_傷I2;
+    	public ShapePart X0Y0_傷I2;
 
-    	public Par X0Y0_虫性_甲殻;
+    	public ShapePart X0Y0_虫性_甲殻;
 
-    	public Par X0Y1_乳房;
+    	public ShapePart X0Y1_乳房;
 
-    	public Par X0Y1_乳輪;
+    	public ShapePart X0Y1_乳輪;
 
-    	public Par X0Y1_乳首;
+    	public ShapePart X0Y1_乳首;
 
-    	public Par X0Y1_淫タトゥ_タトゥ1;
+    	public ShapePart X0Y1_淫タトゥ_タトゥ1;
 
-    	public Par X0Y1_淫タトゥ_タトゥ2;
+    	public ShapePart X0Y1_淫タトゥ_タトゥ2;
 
-    	public Par X0Y1_淫タトゥ_タトゥ3;
+    	public ShapePart X0Y1_淫タトゥ_タトゥ3;
 
-    	public Par X0Y1_淫タトゥ_タトゥ4;
+    	public ShapePart X0Y1_淫タトゥ_タトゥ4;
 
-    	public Par X0Y1_ハイライト1;
+    	public ShapePart X0Y1_ハイライト1;
 
-    	public Par X0Y1_ハイライト2;
+    	public ShapePart X0Y1_ハイライト2;
 
-    	public Par X0Y1_傷X;
+    	public ShapePart X0Y1_傷X;
 
-    	public Par X0Y1_傷I1;
+    	public ShapePart X0Y1_傷I1;
 
-    	public Par X0Y1_傷I2;
+    	public ShapePart X0Y1_傷I2;
 
-    	public Par X0Y1_虫性_甲殻;
+    	public ShapePart X0Y1_虫性_甲殻;
 
-    	public Par X0Y2_乳房;
+    	public ShapePart X0Y2_乳房;
 
-    	public Par X0Y2_乳輪;
+    	public ShapePart X0Y2_乳輪;
 
-    	public Par X0Y2_乳首;
+    	public ShapePart X0Y2_乳首;
 
-    	public Par X0Y2_淫タトゥ_タトゥ3;
+    	public ShapePart X0Y2_淫タトゥ_タトゥ3;
 
-    	public Par X0Y2_淫タトゥ_タトゥ4;
+    	public ShapePart X0Y2_淫タトゥ_タトゥ4;
 
-    	public Par X0Y2_ハイライト1;
+    	public ShapePart X0Y2_ハイライト1;
 
-    	public Par X0Y2_ハイライト2;
+    	public ShapePart X0Y2_ハイライト2;
 
-    	public Par X0Y2_傷X;
+    	public ShapePart X0Y2_傷X;
 
-    	public Par X0Y2_傷I1;
+    	public ShapePart X0Y2_傷I1;
 
-    	public Par X0Y2_傷I2;
+    	public ShapePart X0Y2_傷I2;
 
-    	public Par X0Y2_虫性_甲殻;
+    	public ShapePart X0Y2_虫性_甲殻;
 
-    	public Par X0Y3_乳房;
+    	public ShapePart X0Y3_乳房;
 
-    	public Par X0Y3_乳輪;
+    	public ShapePart X0Y3_乳輪;
 
-    	public Par X0Y3_乳首;
+    	public ShapePart X0Y3_乳首;
 
-    	public Par X0Y3_淫タトゥ_タトゥ1;
+    	public ShapePart X0Y3_淫タトゥ_タトゥ1;
 
-    	public Par X0Y3_淫タトゥ_タトゥ3;
+    	public ShapePart X0Y3_淫タトゥ_タトゥ3;
 
-    	public Par X0Y3_淫タトゥ_タトゥ4;
+    	public ShapePart X0Y3_淫タトゥ_タトゥ4;
 
-    	public Par X0Y3_ハイライト1;
+    	public ShapePart X0Y3_ハイライト1;
 
-    	public Par X0Y3_ハイライト2;
+    	public ShapePart X0Y3_ハイライト2;
 
-    	public Par X0Y3_傷X;
+    	public ShapePart X0Y3_傷X;
 
-    	public Par X0Y3_傷I1;
+    	public ShapePart X0Y3_傷I1;
 
-    	public Par X0Y3_傷I2;
+    	public ShapePart X0Y3_傷I2;
 
-    	public Par X0Y3_虫性_甲殻;
+    	public ShapePart X0Y3_虫性_甲殻;
 
-    	public Par X0Y4_乳房;
+    	public ShapePart X0Y4_乳房;
 
-    	public Par X0Y4_乳輪;
+    	public ShapePart X0Y4_乳輪;
 
-    	public Par X0Y4_乳首;
+    	public ShapePart X0Y4_乳首;
 
-    	public Par X0Y4_淫タトゥ_タトゥ1;
+    	public ShapePart X0Y4_淫タトゥ_タトゥ1;
 
-    	public Par X0Y4_淫タトゥ_タトゥ3;
+    	public ShapePart X0Y4_淫タトゥ_タトゥ3;
 
-    	public Par X0Y4_淫タトゥ_タトゥ4;
+    	public ShapePart X0Y4_淫タトゥ_タトゥ4;
 
-    	public Par X0Y4_ハイライト1;
+    	public ShapePart X0Y4_ハイライト1;
 
-    	public Par X0Y4_ハイライト2;
+    	public ShapePart X0Y4_ハイライト2;
 
-    	public Par X0Y4_傷X;
+    	public ShapePart X0Y4_傷X;
 
-    	public Par X0Y4_傷I1;
+    	public ShapePart X0Y4_傷I1;
 
-    	public Par X0Y4_傷I2;
+    	public ShapePart X0Y4_傷I2;
 
-    	public Par X0Y4_虫性_甲殻;
+    	public ShapePart X0Y4_虫性_甲殻;
 
     	public ColorD 乳房CD;
 
@@ -745,7 +745,7 @@ namespace SlaveMatrix
     		}
     		set
     		{
-    			foreach (Par item in Body.EnumAllPar())
+    			foreach (ShapePart item in Body.EnumAllPar())
     			{
     				item.SizeBase = value;
     			}
@@ -761,7 +761,7 @@ namespace SlaveMatrix
     		}
     		set
     		{
-    			foreach (Par item in Body.EnumAllPar())
+    			foreach (ShapePart item in Body.EnumAllPar())
     			{
     				item.SizeYBase = value;
     			}

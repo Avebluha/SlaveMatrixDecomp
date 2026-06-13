@@ -4,37 +4,37 @@ namespace SlaveMatrix
 {
     public class 手_蝙 : 翼手
     {
-    	public Par X0Y0_獣翼手;
+    	public ShapePart X0Y0_獣翼手;
 
-    	public Par X0Y0_小指_指1;
+    	public ShapePart X0Y0_小指_指1;
 
-    	public Par X0Y0_小指_指2;
+    	public ShapePart X0Y0_小指_指2;
 
-    	public Par X0Y0_小指_指3;
+    	public ShapePart X0Y0_小指_指3;
 
-    	public Par X0Y0_薬指_指1;
+    	public ShapePart X0Y0_薬指_指1;
 
-    	public Par X0Y0_薬指_指2;
+    	public ShapePart X0Y0_薬指_指2;
 
-    	public Par X0Y0_薬指_指3;
+    	public ShapePart X0Y0_薬指_指3;
 
-    	public Par X0Y0_中指_指1;
+    	public ShapePart X0Y0_中指_指1;
 
-    	public Par X0Y0_中指_指2;
+    	public ShapePart X0Y0_中指_指2;
 
-    	public Par X0Y0_中指_指3;
+    	public ShapePart X0Y0_中指_指3;
 
-    	public Par X0Y0_人指_指1;
+    	public ShapePart X0Y0_人指_指1;
 
-    	public Par X0Y0_人指_指2;
+    	public ShapePart X0Y0_人指_指2;
 
-    	public Par X0Y0_人指_指3;
+    	public ShapePart X0Y0_人指_指3;
 
-    	public Par X0Y0_親指_指1;
+    	public ShapePart X0Y0_親指_指1;
 
-    	public Par X0Y0_親指_指2;
+    	public ShapePart X0Y0_親指_指2;
 
-    	public Par X0Y0_親指_指3;
+    	public ShapePart X0Y0_親指_指3;
 
     	public 飛膜_先 飛膜;
 
@@ -104,15 +104,15 @@ namespace SlaveMatrix
 
     	public bool カーブ;
 
-    	public Par[] Pars1;
+    	public ShapePart[] Pars1;
 
-    	public Par[] Pars2;
+    	public ShapePart[] Pars2;
 
-    	public Par[] Pars3;
+    	public ShapePart[] Pars3;
 
-    	public Par[] Pars4;
+    	public ShapePart[] Pars4;
 
-    	public Par[] Pars5;
+    	public ShapePart[] Pars5;
 
     	private Vector2D[] mm;
 
@@ -817,23 +817,23 @@ namespace SlaveMatrix
     		base.配色指定 = 配色指定;
     		配色(体配色);
     		X0Y0_獣翼手CP = new ColorP(X0Y0_獣翼手, 獣翼手CD, DisUnit, abj: true);
-    		Pars1 = new Par[3] { X0Y0_小指_指1, X0Y0_小指_指2, X0Y0_小指_指3 };
+    		Pars1 = new ShapePart[3] { X0Y0_小指_指1, X0Y0_小指_指2, X0Y0_小指_指3 };
     		X0Y0_小指_指1CP = new ColorP(X0Y0_小指_指1, 小指_指1CD, DisUnit, abj: true);
     		X0Y0_小指_指2CP = new ColorP(X0Y0_小指_指2, 小指_指2CD, DisUnit, abj: true);
     		X0Y0_小指_指3CP = new ColorP(X0Y0_小指_指3, 小指_指3CD, DisUnit, abj: true);
-    		Pars2 = new Par[3] { X0Y0_薬指_指1, X0Y0_薬指_指2, X0Y0_薬指_指3 };
+    		Pars2 = new ShapePart[3] { X0Y0_薬指_指1, X0Y0_薬指_指2, X0Y0_薬指_指3 };
     		X0Y0_薬指_指1CP = new ColorP(X0Y0_薬指_指1, 薬指_指1CD, DisUnit, abj: true);
     		X0Y0_薬指_指2CP = new ColorP(X0Y0_薬指_指2, 薬指_指2CD, DisUnit, abj: true);
     		X0Y0_薬指_指3CP = new ColorP(X0Y0_薬指_指3, 薬指_指3CD, DisUnit, abj: true);
-    		Pars3 = new Par[3] { X0Y0_中指_指1, X0Y0_中指_指2, X0Y0_中指_指3 };
+    		Pars3 = new ShapePart[3] { X0Y0_中指_指1, X0Y0_中指_指2, X0Y0_中指_指3 };
     		X0Y0_中指_指1CP = new ColorP(X0Y0_中指_指1, 中指_指1CD, DisUnit, abj: true);
     		X0Y0_中指_指2CP = new ColorP(X0Y0_中指_指2, 中指_指2CD, DisUnit, abj: true);
     		X0Y0_中指_指3CP = new ColorP(X0Y0_中指_指3, 中指_指3CD, DisUnit, abj: true);
-    		Pars4 = new Par[3] { X0Y0_人指_指1, X0Y0_人指_指2, X0Y0_人指_指3 };
+    		Pars4 = new ShapePart[3] { X0Y0_人指_指1, X0Y0_人指_指2, X0Y0_人指_指3 };
     		X0Y0_人指_指1CP = new ColorP(X0Y0_人指_指1, 人指_指1CD, DisUnit, abj: true);
     		X0Y0_人指_指2CP = new ColorP(X0Y0_人指_指2, 人指_指2CD, DisUnit, abj: true);
     		X0Y0_人指_指3CP = new ColorP(X0Y0_人指_指3, 人指_指3CD, DisUnit, abj: true);
-    		Pars5 = new Par[2] { X0Y0_親指_指1, X0Y0_親指_指2 };
+    		Pars5 = new ShapePart[2] { X0Y0_親指_指1, X0Y0_親指_指2 };
     		X0Y0_親指_指1CP = new ColorP(X0Y0_親指_指1, 親指_指1CD, DisUnit, abj: true);
     		X0Y0_親指_指2CP = new ColorP(X0Y0_親指_指2, 親指_指2CD, DisUnit, abj: true);
     		X0Y0_親指_指3CP = new ColorP(X0Y0_親指_指3, 親指_指3CD, DisUnit, abj: true);

@@ -4,35 +4,35 @@ namespace SlaveMatrix
 {
     public class 下着トップ_チューブ : 下着トップ
     {
-    	public Par X0Y0_布_布左_布;
+    	public ShapePart X0Y0_布_布左_布;
 
-    	public Par X0Y0_布_布左_皺_皺1;
+    	public ShapePart X0Y0_布_布左_皺_皺1;
 
-    	public Par X0Y0_布_布左_皺_皺2;
+    	public ShapePart X0Y0_布_布左_皺_皺2;
 
-    	public Par X0Y0_布_布左_縁_縁1;
+    	public ShapePart X0Y0_布_布左_縁_縁1;
 
-    	public Par X0Y0_布_布左_縁_縁2;
+    	public ShapePart X0Y0_布_布左_縁_縁2;
 
-    	public Par X0Y0_布_布右_布;
+    	public ShapePart X0Y0_布_布右_布;
 
-    	public Par X0Y0_布_布右_皺_皺1;
+    	public ShapePart X0Y0_布_布右_皺_皺1;
 
-    	public Par X0Y0_布_布右_皺_皺2;
+    	public ShapePart X0Y0_布_布右_皺_皺2;
 
-    	public Par X0Y0_布_布右_縁_縁1;
+    	public ShapePart X0Y0_布_布右_縁_縁1;
 
-    	public Par X0Y0_布_布右_縁_縁2;
+    	public ShapePart X0Y0_布_布右_縁_縁2;
 
-    	public Par X0Y0_布_布;
+    	public ShapePart X0Y0_布_布;
 
-    	public Par X0Y0_皺_皺1;
+    	public ShapePart X0Y0_皺_皺1;
 
-    	public Par X0Y0_皺_皺2;
+    	public ShapePart X0Y0_皺_皺2;
 
-    	public Par X0Y0_縁_縁1;
+    	public ShapePart X0Y0_縁_縁1;
 
-    	public Par X0Y0_縁_縁2;
+    	public ShapePart X0Y0_縁_縁2;
 
     	public ColorD 布_布左_布CD;
 
@@ -665,7 +665,7 @@ namespace SlaveMatrix
     		Are.Draw(X0Y0_縁_縁2);
     	}
 
-    	public override bool Is布(Par p)
+    	public override bool Is布(ShapePart p)
     	{
     		if (p != X0Y0_布_布左_布 && p != X0Y0_布_布左_皺_皺1 && p != X0Y0_布_布左_皺_皺2 && p != X0Y0_布_布左_縁_縁1 && p != X0Y0_布_布左_縁_縁2 && p != X0Y0_布_布右_布 && p != X0Y0_布_布右_皺_皺1 && p != X0Y0_布_布右_皺_皺2 && p != X0Y0_布_布右_縁_縁1 && p != X0Y0_布_布右_縁_縁2 && p != X0Y0_布_布 && p != X0Y0_皺_皺1 && p != X0Y0_皺_皺2 && p != X0Y0_縁_縁1)
     		{

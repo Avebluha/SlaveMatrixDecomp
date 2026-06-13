@@ -14,6 +14,15 @@ namespace _2DGAMELIB
     {
         private static SerializableAttribute s = new SerializableAttribute();
 
+        private static readonly RemappedTypeBinder Binder = new RemappedTypeBinder()
+            .Add("_2DGAMELIB.Par", typeof(ShapePart))
+            .Add("_2DGAMELIB.ParT", typeof(ShapePartT));
+
+        private static BinaryFormatter NewFormatter()
+        {
+            return new BinaryFormatter { Binder = Binder };
+        }
+
         private static JsonSerializerSettings CreateSettings()
         {
             var settings = new JsonSerializerSettings
@@ -32,7 +41,7 @@ namespace _2DGAMELIB
 
         public static T DeepCopy<T>(this T Object)
         {
-            BinaryFormatter binaryFormatter = new BinaryFormatter();
+            BinaryFormatter binaryFormatter = NewFormatter();
             using MemoryStream memoryStream = new MemoryStream();
             binaryFormatter.Serialize(memoryStream, Object);
             memoryStream.Position = 0L;
@@ -42,32 +51,32 @@ namespace _2DGAMELIB
         public static byte[] ToSerialBytes<T>(this T Object)
         {
             using MemoryStream memoryStream = new MemoryStream();
-            new BinaryFormatter().Serialize(memoryStream, Object);
+            NewFormatter().Serialize(memoryStream, Object);
             return memoryStream.ToArray();
         }
 
         public static T ToDeserialObject<T>(this byte[] Bytes)
         {
             using MemoryStream serializationStream = new MemoryStream(Bytes);
-            return (T)new BinaryFormatter().Deserialize(serializationStream);
+            return (T)NewFormatter().Deserialize(serializationStream);
         }
 
         public static void Save<T>(this T Object, string Path)
         {
             using FileStream serializationStream = new FileStream(Path, FileMode.Create, FileAccess.Write);
-            new BinaryFormatter().Serialize(serializationStream, Object);
+            NewFormatter().Serialize(serializationStream, Object);
         }
 
         public static T Load<T>(this string Path)
         {
             using FileStream serializationStream = new FileStream(Path, FileMode.Open, FileAccess.Read);
-            return (T)new BinaryFormatter().Deserialize(serializationStream);
+            return (T)NewFormatter().Deserialize(serializationStream);
         }
 
         public static T Load<T>(this byte[] bd)
         {
             using MemoryStream serializationStream = new MemoryStream(bd);
-            return (T)new BinaryFormatter().Deserialize(serializationStream);
+            return (T)NewFormatter().Deserialize(serializationStream);
         }
 
         static Ser() { }

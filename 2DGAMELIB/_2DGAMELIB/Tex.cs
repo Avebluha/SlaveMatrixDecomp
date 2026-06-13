@@ -9,9 +9,9 @@ namespace _2DGAMELIB
     {
     	private Pars pars;
 
-    	private ParT parT;
+    	private ShapePartT _shapePartT;
 
-    	private Par feed;
+    	private ShapePart feed;
 
     	public int Space;
 
@@ -45,9 +45,9 @@ namespace _2DGAMELIB
 
     	public Pars Pars => pars;
 
-    	public ParT ParT => parT;
+    	public ShapePartT ShapePartT => _shapePartT;
 
-    	public Par Feed => feed;
+    	public ShapePart Feed => feed;
 
     	public string TextIm
     	{
@@ -68,9 +68,9 @@ namespace _2DGAMELIB
     			Max = text.Length;
     			Count = Max;
     			f1 = false;
-    			if (parT != null)
+    			if (_shapePartT != null)
     			{
-    				parT.Text = text;
+    				_shapePartT.Text = text;
     			}
     		}
     	}
@@ -113,14 +113,14 @@ namespace _2DGAMELIB
     	{
     		get
     		{
-    			return parT.PositionBase;
+    			return _shapePartT.PositionBase;
     		}
     		set
     		{
-    			parT.PositionBase = value;
+    			_shapePartT.PositionBase = value;
     			if (feed != null)
     			{
-    				feed.PositionBase = parT.ToGlobal(parT.OP[0].ps[2] * 0.95);
+    				feed.PositionBase = _shapePartT.ToGlobal(_shapePartT.OP[0].ps[2] * 0.95);
     			}
     		}
     	}
@@ -206,7 +206,7 @@ namespace _2DGAMELIB
     		pars = new Pars();
     		Out[] array = new Out[1] { Shas.GetSquare() };
     		array.OutlineFalse();
-    		parT = new ParT
+    		_shapePartT = new ShapePartT
     		{
     			Tag = Name,
     			InitializeOP = array,
@@ -220,24 +220,24 @@ namespace _2DGAMELIB
     			RectSize = new Vector2D(Width, Height),
     			Text = Text
     		};
-    		ParT.OP.ScalingX(ParT.BasePointBase, Width);
-    		ParT.OP.ScalingY(ParT.BasePointBase, Height);
+    		ShapePartT.OP.ScalingX(ShapePartT.BasePointBase, Width);
+    		ShapePartT.OP.ScalingY(ShapePartT.BasePointBase, Height);
     		if (ShadColor != Color.Empty)
     		{
-    			parT.ShadBrush = new SolidBrush(ShadColor);
+    			_shapePartT.ShadBrush = new SolidBrush(ShadColor);
     		}
-    		pars.Add(parT.Tag, parT);
+    		pars.Add(_shapePartT.Tag, _shapePartT);
     	}
 
     	private void SetFeed(string Name, double Size, ref Color FeedColor)
     	{
     		Out[] array = new Out[1] { Shas.GetTriangle() };
-    		feed = new Par
+    		feed = new ShapePart
     		{
     			Tag = Name + "_Feed",
     			InitializeOP = array,
     			BasePointBase = array.GetCenter(),
-    			PositionBase = parT.ToGlobal(parT.OP[0].ps[2] * 0.96),
+    			PositionBase = _shapePartT.ToGlobal(_shapePartT.OP[0].ps[2] * 0.96),
     			SizeBase = Size * 0.07,
     			SizeYBase = 0.9,
     			Closed = true,
@@ -251,11 +251,11 @@ namespace _2DGAMELIB
 
     	public void SetHitColor(ModeEventDispatcher Med)
     	{
-    		if (parT.HitColor != Color.Transparent)
+    		if (_shapePartT.HitColor != Color.Transparent)
     		{
-    			Med.RemUniqueColor(parT.HitColor);
+    			Med.RemUniqueColor(_shapePartT.HitColor);
     		}
-    		parT.HitColor = Med.GetUniqueColor();
+    		_shapePartT.HitColor = Med.GetUniqueColor();
     	}
 
     	public void Progression(FPS FPS)
@@ -266,10 +266,10 @@ namespace _2DGAMELIB
     			int num = (int)Count;
     			if (num <= Max)
     			{
-    				parT.Text = text.Substring(0, num);
+    				_shapePartT.Text = text.Substring(0, num);
     				return;
     			}
-    			parT.Text = text;
+    			_shapePartT.Text = text;
     			f1 = true;
     			if (feed != null)
     			{
@@ -292,7 +292,7 @@ namespace _2DGAMELIB
 
     	public bool Down(ref Color HitColor)
     	{
-    		if (parT.HitColor == HitColor)
+    		if (_shapePartT.HitColor == HitColor)
     		{
     			f2 = true;
     			if (!f1 && Speed == speed)
@@ -306,7 +306,7 @@ namespace _2DGAMELIB
 
     	public bool Up(ref Color HitColor)
     	{
-    		if (f1 && f2 && parT.HitColor == HitColor && Speed == speed)
+    		if (f1 && f2 && _shapePartT.HitColor == HitColor && Speed == speed)
     		{
     			f1 = false;
     			f2 = false;

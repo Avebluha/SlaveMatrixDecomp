@@ -50,9 +50,9 @@ namespace SlaveMatrix
     			sep.Sta.Xv = RNG.XS.NextDouble();
     			sep.Sta.右 = RNG.XS.NextBool();
     			sep.Ele = he;
-    			sep.Par = he.Body.GetHitPar_(hc);
-    			sep.Path = sep.Par.GetPath();
-    			sep.Pos = sep.Par.ToLocal(cp);
+    			sep.ShapePart = he.Body.GetHitPar_(hc);
+    			sep.Path = sep.ShapePart.GetPath();
+    			sep.Pos = sep.ShapePart.ToLocal(cp);
     			if (参照.ContainsKey(he))
     			{
     				参照[he].Add(sep.Sta);

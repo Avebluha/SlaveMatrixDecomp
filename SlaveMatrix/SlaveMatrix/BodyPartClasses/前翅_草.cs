@@ -4,53 +4,53 @@ namespace SlaveMatrix
 {
     public class 前翅_草 : 前翅
     {
-    	public Par X0Y0_前翅_前翅1;
+    	public ShapePart X0Y0_前翅_前翅1;
 
-    	public Par X0Y0_前翅_翅脈線1;
+    	public ShapePart X0Y0_前翅_翅脈線1;
 
-    	public Par X0Y0_前翅_翅脈線2;
+    	public ShapePart X0Y0_前翅_翅脈線2;
 
-    	public Par X0Y0_前翅_翅脈線3;
+    	public ShapePart X0Y0_前翅_翅脈線3;
 
-    	public Par X0Y0_前翅_翅脈線4;
+    	public ShapePart X0Y0_前翅_翅脈線4;
 
-    	public Par X0Y0_前翅_翅脈線5;
+    	public ShapePart X0Y0_前翅_翅脈線5;
 
-    	public Par X0Y0_前翅_翅脈線6;
+    	public ShapePart X0Y0_前翅_翅脈線6;
 
-    	public Par X0Y0_前翅_翅脈線7;
+    	public ShapePart X0Y0_前翅_翅脈線7;
 
-    	public Par X0Y0_前翅_翅脈線8;
+    	public ShapePart X0Y0_前翅_翅脈線8;
 
-    	public Par X0Y0_前翅_前翅2;
+    	public ShapePart X0Y0_前翅_前翅2;
 
-    	public Par X0Y0_前翅_紋1;
+    	public ShapePart X0Y0_前翅_紋1;
 
-    	public Par X0Y0_前翅_紋2;
+    	public ShapePart X0Y0_前翅_紋2;
 
-    	public Par X0Y1_前翅_前翅1;
+    	public ShapePart X0Y1_前翅_前翅1;
 
-    	public Par X0Y1_前翅_翅脈線1;
+    	public ShapePart X0Y1_前翅_翅脈線1;
 
-    	public Par X0Y1_前翅_翅脈線2;
+    	public ShapePart X0Y1_前翅_翅脈線2;
 
-    	public Par X0Y1_前翅_翅脈線3;
+    	public ShapePart X0Y1_前翅_翅脈線3;
 
-    	public Par X0Y1_前翅_翅脈線4;
+    	public ShapePart X0Y1_前翅_翅脈線4;
 
-    	public Par X0Y1_前翅_翅脈線5;
+    	public ShapePart X0Y1_前翅_翅脈線5;
 
-    	public Par X0Y1_前翅_翅脈線6;
+    	public ShapePart X0Y1_前翅_翅脈線6;
 
-    	public Par X0Y1_前翅_翅脈線7;
+    	public ShapePart X0Y1_前翅_翅脈線7;
 
-    	public Par X0Y1_前翅_翅脈線8;
+    	public ShapePart X0Y1_前翅_翅脈線8;
 
-    	public Par X0Y1_前翅_前翅2;
+    	public ShapePart X0Y1_前翅_前翅2;
 
-    	public Par X0Y1_前翅_紋1;
+    	public ShapePart X0Y1_前翅_紋1;
 
-    	public Par X0Y1_前翅_紋2;
+    	public ShapePart X0Y1_前翅_紋2;
 
     	public ColorD 前翅_前翅1CD;
 

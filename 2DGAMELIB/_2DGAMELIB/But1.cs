@@ -15,15 +15,15 @@ namespace _2DGAMELIB
 
     	public List<Color> TextColors = new List<Color>();
 
-    	public But1(ParT ParT, Action<But> Action)
-    		: base(ParT, Action)
+    	public But1(ShapePartT ShapePartT, Action<But> Action)
+    		: base(ShapePartT, Action)
     	{
     		Setting();
     	}
 
     	private void Setting()
     	{
-    		foreach (Par item in pars.EnumAllPar())
+    		foreach (ShapePart item in pars.EnumAllPar())
     		{
     			BaseColors.Add(item.BrushColor);
     			OverColors.Add(BaseColors.Last().FuncHSV(delegate(Hsv hsv)
@@ -45,7 +45,7 @@ namespace _2DGAMELIB
     		Over = delegate
     		{
     			int num4 = 0;
-    			foreach (Par item2 in pars.EnumAllPar())
+    			foreach (ShapePart item2 in pars.EnumAllPar())
     			{
     				item2.BrushColor = OverColors[num4];
     				if (item2.IsParT())
@@ -58,7 +58,7 @@ namespace _2DGAMELIB
     		Push = delegate
     		{
     			int num3 = 0;
-    			foreach (Par item3 in pars.EnumAllPar())
+    			foreach (ShapePart item3 in pars.EnumAllPar())
     			{
     				item3.BrushColor = PushColors[num3];
     				if (item3.IsParT())
@@ -71,7 +71,7 @@ namespace _2DGAMELIB
     		Release = delegate
     		{
     			int num2 = 0;
-    			foreach (Par item4 in pars.EnumAllPar())
+    			foreach (ShapePart item4 in pars.EnumAllPar())
     			{
     				item4.BrushColor = OverColors[num2];
     				if (item4.IsParT())
@@ -84,7 +84,7 @@ namespace _2DGAMELIB
     		Out = delegate
     		{
     			int num = 0;
-    			foreach (Par item5 in pars.EnumAllPar())
+    			foreach (ShapePart item5 in pars.EnumAllPar())
     			{
     				item5.BrushColor = BaseColors[num];
     				if (item5.IsParT())

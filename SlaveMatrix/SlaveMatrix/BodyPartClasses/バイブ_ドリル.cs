@@ -4,705 +4,705 @@ namespace SlaveMatrix
 {
     public class バイブ_ドリル : Ele
     {
-    	public Par X0Y0_ヘッド;
+    	public ShapePart X0Y0_ヘッド;
 
-    	public Par X0Y0_イボ1;
+    	public ShapePart X0Y0_イボ1;
 
-    	public Par X0Y0_イボ2;
+    	public ShapePart X0Y0_イボ2;
 
-    	public Par X0Y0_イボ3;
+    	public ShapePart X0Y0_イボ3;
 
-    	public Par X0Y0_イボ4;
+    	public ShapePart X0Y0_イボ4;
 
-    	public Par X0Y0_イボ5;
+    	public ShapePart X0Y0_イボ5;
 
-    	public Par X0Y0_イボ6;
+    	public ShapePart X0Y0_イボ6;
 
-    	public Par X0Y0_イボ7;
+    	public ShapePart X0Y0_イボ7;
 
-    	public Par X0Y0_イボ8;
+    	public ShapePart X0Y0_イボ8;
 
-    	public Par X0Y0_イボ9;
+    	public ShapePart X0Y0_イボ9;
 
-    	public Par X0Y0_イボ10;
+    	public ShapePart X0Y0_イボ10;
 
-    	public Par X0Y0_イボ11;
+    	public ShapePart X0Y0_イボ11;
 
-    	public Par X0Y0_イボ12;
+    	public ShapePart X0Y0_イボ12;
 
-    	public Par X0Y0_イボ13;
+    	public ShapePart X0Y0_イボ13;
 
-    	public Par X0Y0_イボ14;
+    	public ShapePart X0Y0_イボ14;
 
-    	public Par X0Y0_イボ15;
+    	public ShapePart X0Y0_イボ15;
 
-    	public Par X0Y0_イボ16;
+    	public ShapePart X0Y0_イボ16;
 
-    	public Par X0Y0_イボ17;
+    	public ShapePart X0Y0_イボ17;
 
-    	public Par X0Y0_イボ18;
+    	public ShapePart X0Y0_イボ18;
 
-    	public Par X0Y0_ユニット_ユニット;
+    	public ShapePart X0Y0_ユニット_ユニット;
 
-    	public Par X0Y0_ユニット_ユニット線上;
+    	public ShapePart X0Y0_ユニット_ユニット線上;
 
-    	public Par X0Y0_ユニット_ユニット線下;
+    	public ShapePart X0Y0_ユニット_ユニット線下;
 
-    	public Par X0Y0_ユニット_ボタン上;
+    	public ShapePart X0Y0_ユニット_ボタン上;
 
-    	public Par X0Y0_ユニット_ボタン下;
+    	public ShapePart X0Y0_ユニット_ボタン下;
 
-    	public Par X0Y0_ユニット_パワー根;
+    	public ShapePart X0Y0_ユニット_パワー根;
 
-    	public Par X0Y0_ユニット_パワー1;
+    	public ShapePart X0Y0_ユニット_パワー1;
 
-    	public Par X0Y0_ユニット_パワー2;
+    	public ShapePart X0Y0_ユニット_パワー2;
 
-    	public Par X0Y0_ユニット_パワー3;
+    	public ShapePart X0Y0_ユニット_パワー3;
 
-    	public Par X0Y0_ユニット_パワー4;
+    	public ShapePart X0Y0_ユニット_パワー4;
 
-    	public Par X0Y1_ヘッド;
+    	public ShapePart X0Y1_ヘッド;
 
-    	public Par X0Y1_イボ1;
+    	public ShapePart X0Y1_イボ1;
 
-    	public Par X0Y1_イボ2;
+    	public ShapePart X0Y1_イボ2;
 
-    	public Par X0Y1_イボ3;
+    	public ShapePart X0Y1_イボ3;
 
-    	public Par X0Y1_イボ4;
+    	public ShapePart X0Y1_イボ4;
 
-    	public Par X0Y1_イボ5;
+    	public ShapePart X0Y1_イボ5;
 
-    	public Par X0Y1_イボ6;
+    	public ShapePart X0Y1_イボ6;
 
-    	public Par X0Y1_イボ7;
+    	public ShapePart X0Y1_イボ7;
 
-    	public Par X0Y1_イボ8;
+    	public ShapePart X0Y1_イボ8;
 
-    	public Par X0Y1_イボ9;
+    	public ShapePart X0Y1_イボ9;
 
-    	public Par X0Y1_イボ10;
+    	public ShapePart X0Y1_イボ10;
 
-    	public Par X0Y1_イボ11;
+    	public ShapePart X0Y1_イボ11;
 
-    	public Par X0Y1_イボ12;
+    	public ShapePart X0Y1_イボ12;
 
-    	public Par X0Y1_イボ13;
+    	public ShapePart X0Y1_イボ13;
 
-    	public Par X0Y1_イボ14;
+    	public ShapePart X0Y1_イボ14;
 
-    	public Par X0Y1_イボ15;
+    	public ShapePart X0Y1_イボ15;
 
-    	public Par X0Y1_イボ16;
+    	public ShapePart X0Y1_イボ16;
 
-    	public Par X0Y1_イボ17;
+    	public ShapePart X0Y1_イボ17;
 
-    	public Par X0Y1_ユニット_ユニット;
+    	public ShapePart X0Y1_ユニット_ユニット;
 
-    	public Par X0Y1_ユニット_ユニット線上;
+    	public ShapePart X0Y1_ユニット_ユニット線上;
 
-    	public Par X0Y1_ユニット_ユニット線下;
+    	public ShapePart X0Y1_ユニット_ユニット線下;
 
-    	public Par X0Y1_ユニット_ボタン上;
+    	public ShapePart X0Y1_ユニット_ボタン上;
 
-    	public Par X0Y1_ユニット_ボタン下;
+    	public ShapePart X0Y1_ユニット_ボタン下;
 
-    	public Par X0Y1_ユニット_パワー根;
+    	public ShapePart X0Y1_ユニット_パワー根;
 
-    	public Par X0Y1_ユニット_パワー1;
+    	public ShapePart X0Y1_ユニット_パワー1;
 
-    	public Par X0Y1_ユニット_パワー2;
+    	public ShapePart X0Y1_ユニット_パワー2;
 
-    	public Par X0Y1_ユニット_パワー3;
+    	public ShapePart X0Y1_ユニット_パワー3;
 
-    	public Par X0Y1_ユニット_パワー4;
+    	public ShapePart X0Y1_ユニット_パワー4;
 
-    	public Par X0Y2_ヘッド;
+    	public ShapePart X0Y2_ヘッド;
 
-    	public Par X0Y2_イボ1;
+    	public ShapePart X0Y2_イボ1;
 
-    	public Par X0Y2_イボ2;
+    	public ShapePart X0Y2_イボ2;
 
-    	public Par X0Y2_イボ3;
+    	public ShapePart X0Y2_イボ3;
 
-    	public Par X0Y2_イボ4;
+    	public ShapePart X0Y2_イボ4;
 
-    	public Par X0Y2_イボ5;
+    	public ShapePart X0Y2_イボ5;
 
-    	public Par X0Y2_イボ6;
+    	public ShapePart X0Y2_イボ6;
 
-    	public Par X0Y2_イボ7;
+    	public ShapePart X0Y2_イボ7;
 
-    	public Par X0Y2_イボ8;
+    	public ShapePart X0Y2_イボ8;
 
-    	public Par X0Y2_イボ9;
+    	public ShapePart X0Y2_イボ9;
 
-    	public Par X0Y2_イボ10;
+    	public ShapePart X0Y2_イボ10;
 
-    	public Par X0Y2_イボ11;
+    	public ShapePart X0Y2_イボ11;
 
-    	public Par X0Y2_イボ12;
+    	public ShapePart X0Y2_イボ12;
 
-    	public Par X0Y2_ユニット_ユニット;
+    	public ShapePart X0Y2_ユニット_ユニット;
 
-    	public Par X0Y2_ユニット_ユニット線上;
+    	public ShapePart X0Y2_ユニット_ユニット線上;
 
-    	public Par X0Y2_ユニット_ユニット線下;
+    	public ShapePart X0Y2_ユニット_ユニット線下;
 
-    	public Par X0Y2_ユニット_ボタン上;
+    	public ShapePart X0Y2_ユニット_ボタン上;
 
-    	public Par X0Y2_ユニット_ボタン下;
+    	public ShapePart X0Y2_ユニット_ボタン下;
 
-    	public Par X0Y2_ユニット_パワー根;
+    	public ShapePart X0Y2_ユニット_パワー根;
 
-    	public Par X0Y2_ユニット_パワー1;
+    	public ShapePart X0Y2_ユニット_パワー1;
 
-    	public Par X0Y2_ユニット_パワー2;
+    	public ShapePart X0Y2_ユニット_パワー2;
 
-    	public Par X0Y2_ユニット_パワー3;
+    	public ShapePart X0Y2_ユニット_パワー3;
 
-    	public Par X0Y2_ユニット_パワー4;
+    	public ShapePart X0Y2_ユニット_パワー4;
 
-    	public Par X0Y3_ヘッド;
+    	public ShapePart X0Y3_ヘッド;
 
-    	public Par X0Y3_イボ1;
+    	public ShapePart X0Y3_イボ1;
 
-    	public Par X0Y3_イボ2;
+    	public ShapePart X0Y3_イボ2;
 
-    	public Par X0Y3_イボ3;
+    	public ShapePart X0Y3_イボ3;
 
-    	public Par X0Y3_イボ4;
+    	public ShapePart X0Y3_イボ4;
 
-    	public Par X0Y3_イボ5;
+    	public ShapePart X0Y3_イボ5;
 
-    	public Par X0Y3_イボ6;
+    	public ShapePart X0Y3_イボ6;
 
-    	public Par X0Y3_イボ7;
+    	public ShapePart X0Y3_イボ7;
 
-    	public Par X0Y3_ユニット_ユニット;
+    	public ShapePart X0Y3_ユニット_ユニット;
 
-    	public Par X0Y3_ユニット_ユニット線上;
+    	public ShapePart X0Y3_ユニット_ユニット線上;
 
-    	public Par X0Y3_ユニット_ユニット線下;
+    	public ShapePart X0Y3_ユニット_ユニット線下;
 
-    	public Par X0Y3_ユニット_ボタン上;
+    	public ShapePart X0Y3_ユニット_ボタン上;
 
-    	public Par X0Y3_ユニット_ボタン下;
+    	public ShapePart X0Y3_ユニット_ボタン下;
 
-    	public Par X0Y3_ユニット_パワー根;
+    	public ShapePart X0Y3_ユニット_パワー根;
 
-    	public Par X0Y3_ユニット_パワー1;
+    	public ShapePart X0Y3_ユニット_パワー1;
 
-    	public Par X0Y3_ユニット_パワー2;
+    	public ShapePart X0Y3_ユニット_パワー2;
 
-    	public Par X0Y3_ユニット_パワー3;
+    	public ShapePart X0Y3_ユニット_パワー3;
 
-    	public Par X0Y3_ユニット_パワー4;
+    	public ShapePart X0Y3_ユニット_パワー4;
 
-    	public Par X0Y4_ヘッド;
+    	public ShapePart X0Y4_ヘッド;
 
-    	public Par X0Y4_イボ1;
+    	public ShapePart X0Y4_イボ1;
 
-    	public Par X0Y4_イボ2;
+    	public ShapePart X0Y4_イボ2;
 
-    	public Par X0Y4_イボ3;
+    	public ShapePart X0Y4_イボ3;
 
-    	public Par X0Y4_ユニット_ユニット;
+    	public ShapePart X0Y4_ユニット_ユニット;
 
-    	public Par X0Y4_ユニット_ユニット線上;
+    	public ShapePart X0Y4_ユニット_ユニット線上;
 
-    	public Par X0Y4_ユニット_ユニット線下;
+    	public ShapePart X0Y4_ユニット_ユニット線下;
 
-    	public Par X0Y4_ユニット_ボタン上;
+    	public ShapePart X0Y4_ユニット_ボタン上;
 
-    	public Par X0Y4_ユニット_ボタン下;
+    	public ShapePart X0Y4_ユニット_ボタン下;
 
-    	public Par X0Y4_ユニット_パワー根;
+    	public ShapePart X0Y4_ユニット_パワー根;
 
-    	public Par X0Y4_ユニット_パワー1;
+    	public ShapePart X0Y4_ユニット_パワー1;
 
-    	public Par X0Y4_ユニット_パワー2;
+    	public ShapePart X0Y4_ユニット_パワー2;
 
-    	public Par X0Y4_ユニット_パワー3;
+    	public ShapePart X0Y4_ユニット_パワー3;
 
-    	public Par X0Y4_ユニット_パワー4;
+    	public ShapePart X0Y4_ユニット_パワー4;
 
-    	public Par X1Y0_ヘッド;
+    	public ShapePart X1Y0_ヘッド;
 
-    	public Par X1Y0_イボ1;
+    	public ShapePart X1Y0_イボ1;
 
-    	public Par X1Y0_イボ2;
+    	public ShapePart X1Y0_イボ2;
 
-    	public Par X1Y0_イボ3;
+    	public ShapePart X1Y0_イボ3;
 
-    	public Par X1Y0_イボ4;
+    	public ShapePart X1Y0_イボ4;
 
-    	public Par X1Y0_イボ5;
+    	public ShapePart X1Y0_イボ5;
 
-    	public Par X1Y0_イボ6;
+    	public ShapePart X1Y0_イボ6;
 
-    	public Par X1Y0_イボ7;
+    	public ShapePart X1Y0_イボ7;
 
-    	public Par X1Y0_イボ8;
+    	public ShapePart X1Y0_イボ8;
 
-    	public Par X1Y0_イボ9;
+    	public ShapePart X1Y0_イボ9;
 
-    	public Par X1Y0_イボ10;
+    	public ShapePart X1Y0_イボ10;
 
-    	public Par X1Y0_イボ11;
+    	public ShapePart X1Y0_イボ11;
 
-    	public Par X1Y0_イボ12;
+    	public ShapePart X1Y0_イボ12;
 
-    	public Par X1Y0_イボ13;
+    	public ShapePart X1Y0_イボ13;
 
-    	public Par X1Y0_イボ14;
+    	public ShapePart X1Y0_イボ14;
 
-    	public Par X1Y0_イボ15;
+    	public ShapePart X1Y0_イボ15;
 
-    	public Par X1Y0_イボ16;
+    	public ShapePart X1Y0_イボ16;
 
-    	public Par X1Y0_イボ17;
+    	public ShapePart X1Y0_イボ17;
 
-    	public Par X1Y0_イボ18;
+    	public ShapePart X1Y0_イボ18;
 
-    	public Par X1Y0_イボ19;
+    	public ShapePart X1Y0_イボ19;
 
-    	public Par X1Y0_ユニット_ユニット;
+    	public ShapePart X1Y0_ユニット_ユニット;
 
-    	public Par X1Y0_ユニット_ユニット線上;
+    	public ShapePart X1Y0_ユニット_ユニット線上;
 
-    	public Par X1Y0_ユニット_ユニット線下;
+    	public ShapePart X1Y0_ユニット_ユニット線下;
 
-    	public Par X1Y0_ユニット_ボタン上;
+    	public ShapePart X1Y0_ユニット_ボタン上;
 
-    	public Par X1Y0_ユニット_ボタン下;
+    	public ShapePart X1Y0_ユニット_ボタン下;
 
-    	public Par X1Y0_ユニット_パワー根;
+    	public ShapePart X1Y0_ユニット_パワー根;
 
-    	public Par X1Y0_ユニット_パワー1;
+    	public ShapePart X1Y0_ユニット_パワー1;
 
-    	public Par X1Y0_ユニット_パワー2;
+    	public ShapePart X1Y0_ユニット_パワー2;
 
-    	public Par X1Y0_ユニット_パワー3;
+    	public ShapePart X1Y0_ユニット_パワー3;
 
-    	public Par X1Y0_ユニット_パワー4;
+    	public ShapePart X1Y0_ユニット_パワー4;
 
-    	public Par X1Y1_ヘッド;
+    	public ShapePart X1Y1_ヘッド;
 
-    	public Par X1Y1_イボ1;
+    	public ShapePart X1Y1_イボ1;
 
-    	public Par X1Y1_イボ2;
+    	public ShapePart X1Y1_イボ2;
 
-    	public Par X1Y1_イボ3;
+    	public ShapePart X1Y1_イボ3;
 
-    	public Par X1Y1_イボ4;
+    	public ShapePart X1Y1_イボ4;
 
-    	public Par X1Y1_イボ5;
+    	public ShapePart X1Y1_イボ5;
 
-    	public Par X1Y1_イボ6;
+    	public ShapePart X1Y1_イボ6;
 
-    	public Par X1Y1_イボ7;
+    	public ShapePart X1Y1_イボ7;
 
-    	public Par X1Y1_イボ8;
+    	public ShapePart X1Y1_イボ8;
 
-    	public Par X1Y1_イボ9;
+    	public ShapePart X1Y1_イボ9;
 
-    	public Par X1Y1_イボ10;
+    	public ShapePart X1Y1_イボ10;
 
-    	public Par X1Y1_イボ11;
+    	public ShapePart X1Y1_イボ11;
 
-    	public Par X1Y1_イボ12;
+    	public ShapePart X1Y1_イボ12;
 
-    	public Par X1Y1_イボ13;
+    	public ShapePart X1Y1_イボ13;
 
-    	public Par X1Y1_イボ14;
+    	public ShapePart X1Y1_イボ14;
 
-    	public Par X1Y1_イボ15;
+    	public ShapePart X1Y1_イボ15;
 
-    	public Par X1Y1_イボ16;
+    	public ShapePart X1Y1_イボ16;
 
-    	public Par X1Y1_イボ17;
+    	public ShapePart X1Y1_イボ17;
 
-    	public Par X1Y1_ユニット_ユニット;
+    	public ShapePart X1Y1_ユニット_ユニット;
 
-    	public Par X1Y1_ユニット_ユニット線上;
+    	public ShapePart X1Y1_ユニット_ユニット線上;
 
-    	public Par X1Y1_ユニット_ユニット線下;
+    	public ShapePart X1Y1_ユニット_ユニット線下;
 
-    	public Par X1Y1_ユニット_ボタン上;
+    	public ShapePart X1Y1_ユニット_ボタン上;
 
-    	public Par X1Y1_ユニット_ボタン下;
+    	public ShapePart X1Y1_ユニット_ボタン下;
 
-    	public Par X1Y1_ユニット_パワー根;
+    	public ShapePart X1Y1_ユニット_パワー根;
 
-    	public Par X1Y1_ユニット_パワー1;
+    	public ShapePart X1Y1_ユニット_パワー1;
 
-    	public Par X1Y1_ユニット_パワー2;
+    	public ShapePart X1Y1_ユニット_パワー2;
 
-    	public Par X1Y1_ユニット_パワー3;
+    	public ShapePart X1Y1_ユニット_パワー3;
 
-    	public Par X1Y1_ユニット_パワー4;
+    	public ShapePart X1Y1_ユニット_パワー4;
 
-    	public Par X1Y2_ヘッド;
+    	public ShapePart X1Y2_ヘッド;
 
-    	public Par X1Y2_イボ1;
+    	public ShapePart X1Y2_イボ1;
 
-    	public Par X1Y2_イボ2;
+    	public ShapePart X1Y2_イボ2;
 
-    	public Par X1Y2_イボ3;
+    	public ShapePart X1Y2_イボ3;
 
-    	public Par X1Y2_イボ4;
+    	public ShapePart X1Y2_イボ4;
 
-    	public Par X1Y2_イボ5;
+    	public ShapePart X1Y2_イボ5;
 
-    	public Par X1Y2_イボ6;
+    	public ShapePart X1Y2_イボ6;
 
-    	public Par X1Y2_イボ7;
+    	public ShapePart X1Y2_イボ7;
 
-    	public Par X1Y2_イボ8;
+    	public ShapePart X1Y2_イボ8;
 
-    	public Par X1Y2_イボ9;
+    	public ShapePart X1Y2_イボ9;
 
-    	public Par X1Y2_イボ10;
+    	public ShapePart X1Y2_イボ10;
 
-    	public Par X1Y2_イボ11;
+    	public ShapePart X1Y2_イボ11;
 
-    	public Par X1Y2_イボ12;
+    	public ShapePart X1Y2_イボ12;
 
-    	public Par X1Y2_イボ13;
+    	public ShapePart X1Y2_イボ13;
 
-    	public Par X1Y2_ユニット_ユニット;
+    	public ShapePart X1Y2_ユニット_ユニット;
 
-    	public Par X1Y2_ユニット_ユニット線上;
+    	public ShapePart X1Y2_ユニット_ユニット線上;
 
-    	public Par X1Y2_ユニット_ユニット線下;
+    	public ShapePart X1Y2_ユニット_ユニット線下;
 
-    	public Par X1Y2_ユニット_ボタン上;
+    	public ShapePart X1Y2_ユニット_ボタン上;
 
-    	public Par X1Y2_ユニット_ボタン下;
+    	public ShapePart X1Y2_ユニット_ボタン下;
 
-    	public Par X1Y2_ユニット_パワー根;
+    	public ShapePart X1Y2_ユニット_パワー根;
 
-    	public Par X1Y2_ユニット_パワー1;
+    	public ShapePart X1Y2_ユニット_パワー1;
 
-    	public Par X1Y2_ユニット_パワー2;
+    	public ShapePart X1Y2_ユニット_パワー2;
 
-    	public Par X1Y2_ユニット_パワー3;
+    	public ShapePart X1Y2_ユニット_パワー3;
 
-    	public Par X1Y2_ユニット_パワー4;
+    	public ShapePart X1Y2_ユニット_パワー4;
 
-    	public Par X1Y3_ヘッド;
+    	public ShapePart X1Y3_ヘッド;
 
-    	public Par X1Y3_イボ1;
+    	public ShapePart X1Y3_イボ1;
 
-    	public Par X1Y3_イボ2;
+    	public ShapePart X1Y3_イボ2;
 
-    	public Par X1Y3_イボ3;
+    	public ShapePart X1Y3_イボ3;
 
-    	public Par X1Y3_イボ4;
+    	public ShapePart X1Y3_イボ4;
 
-    	public Par X1Y3_イボ5;
+    	public ShapePart X1Y3_イボ5;
 
-    	public Par X1Y3_イボ6;
+    	public ShapePart X1Y3_イボ6;
 
-    	public Par X1Y3_イボ7;
+    	public ShapePart X1Y3_イボ7;
 
-    	public Par X1Y3_イボ8;
+    	public ShapePart X1Y3_イボ8;
 
-    	public Par X1Y3_ユニット_ユニット;
+    	public ShapePart X1Y3_ユニット_ユニット;
 
-    	public Par X1Y3_ユニット_ユニット線上;
+    	public ShapePart X1Y3_ユニット_ユニット線上;
 
-    	public Par X1Y3_ユニット_ユニット線下;
+    	public ShapePart X1Y3_ユニット_ユニット線下;
 
-    	public Par X1Y3_ユニット_ボタン上;
+    	public ShapePart X1Y3_ユニット_ボタン上;
 
-    	public Par X1Y3_ユニット_ボタン下;
+    	public ShapePart X1Y3_ユニット_ボタン下;
 
-    	public Par X1Y3_ユニット_パワー根;
+    	public ShapePart X1Y3_ユニット_パワー根;
 
-    	public Par X1Y3_ユニット_パワー1;
+    	public ShapePart X1Y3_ユニット_パワー1;
 
-    	public Par X1Y3_ユニット_パワー2;
+    	public ShapePart X1Y3_ユニット_パワー2;
 
-    	public Par X1Y3_ユニット_パワー3;
+    	public ShapePart X1Y3_ユニット_パワー3;
 
-    	public Par X1Y3_ユニット_パワー4;
+    	public ShapePart X1Y3_ユニット_パワー4;
 
-    	public Par X1Y4_ヘッド;
+    	public ShapePart X1Y4_ヘッド;
 
-    	public Par X1Y4_イボ1;
+    	public ShapePart X1Y4_イボ1;
 
-    	public Par X1Y4_イボ2;
+    	public ShapePart X1Y4_イボ2;
 
-    	public Par X1Y4_イボ3;
+    	public ShapePart X1Y4_イボ3;
 
-    	public Par X1Y4_ユニット_ユニット;
+    	public ShapePart X1Y4_ユニット_ユニット;
 
-    	public Par X1Y4_ユニット_ユニット線上;
+    	public ShapePart X1Y4_ユニット_ユニット線上;
 
-    	public Par X1Y4_ユニット_ユニット線下;
+    	public ShapePart X1Y4_ユニット_ユニット線下;
 
-    	public Par X1Y4_ユニット_ボタン上;
+    	public ShapePart X1Y4_ユニット_ボタン上;
 
-    	public Par X1Y4_ユニット_ボタン下;
+    	public ShapePart X1Y4_ユニット_ボタン下;
 
-    	public Par X1Y4_ユニット_パワー根;
+    	public ShapePart X1Y4_ユニット_パワー根;
 
-    	public Par X1Y4_ユニット_パワー1;
+    	public ShapePart X1Y4_ユニット_パワー1;
 
-    	public Par X1Y4_ユニット_パワー2;
+    	public ShapePart X1Y4_ユニット_パワー2;
 
-    	public Par X1Y4_ユニット_パワー3;
+    	public ShapePart X1Y4_ユニット_パワー3;
 
-    	public Par X1Y4_ユニット_パワー4;
+    	public ShapePart X1Y4_ユニット_パワー4;
 
-    	public Par X2Y0_ヘッド;
+    	public ShapePart X2Y0_ヘッド;
 
-    	public Par X2Y0_イボ1;
+    	public ShapePart X2Y0_イボ1;
 
-    	public Par X2Y0_イボ2;
+    	public ShapePart X2Y0_イボ2;
 
-    	public Par X2Y0_イボ3;
+    	public ShapePart X2Y0_イボ3;
 
-    	public Par X2Y0_イボ4;
+    	public ShapePart X2Y0_イボ4;
 
-    	public Par X2Y0_イボ5;
+    	public ShapePart X2Y0_イボ5;
 
-    	public Par X2Y0_イボ6;
+    	public ShapePart X2Y0_イボ6;
 
-    	public Par X2Y0_イボ7;
+    	public ShapePart X2Y0_イボ7;
 
-    	public Par X2Y0_イボ8;
+    	public ShapePart X2Y0_イボ8;
 
-    	public Par X2Y0_イボ9;
+    	public ShapePart X2Y0_イボ9;
 
-    	public Par X2Y0_イボ10;
+    	public ShapePart X2Y0_イボ10;
 
-    	public Par X2Y0_イボ11;
+    	public ShapePart X2Y0_イボ11;
 
-    	public Par X2Y0_イボ12;
+    	public ShapePart X2Y0_イボ12;
 
-    	public Par X2Y0_イボ13;
+    	public ShapePart X2Y0_イボ13;
 
-    	public Par X2Y0_イボ14;
+    	public ShapePart X2Y0_イボ14;
 
-    	public Par X2Y0_イボ15;
+    	public ShapePart X2Y0_イボ15;
 
-    	public Par X2Y0_イボ16;
+    	public ShapePart X2Y0_イボ16;
 
-    	public Par X2Y0_イボ17;
+    	public ShapePart X2Y0_イボ17;
 
-    	public Par X2Y0_イボ18;
+    	public ShapePart X2Y0_イボ18;
 
-    	public Par X2Y0_イボ19;
+    	public ShapePart X2Y0_イボ19;
 
-    	public Par X2Y0_イボ20;
+    	public ShapePart X2Y0_イボ20;
 
-    	public Par X2Y0_イボ21;
+    	public ShapePart X2Y0_イボ21;
 
-    	public Par X2Y0_ユニット_ユニット;
+    	public ShapePart X2Y0_ユニット_ユニット;
 
-    	public Par X2Y0_ユニット_ユニット線上;
+    	public ShapePart X2Y0_ユニット_ユニット線上;
 
-    	public Par X2Y0_ユニット_ユニット線下;
+    	public ShapePart X2Y0_ユニット_ユニット線下;
 
-    	public Par X2Y0_ユニット_ボタン上;
+    	public ShapePart X2Y0_ユニット_ボタン上;
 
-    	public Par X2Y0_ユニット_ボタン下;
+    	public ShapePart X2Y0_ユニット_ボタン下;
 
-    	public Par X2Y0_ユニット_パワー根;
+    	public ShapePart X2Y0_ユニット_パワー根;
 
-    	public Par X2Y0_ユニット_パワー1;
+    	public ShapePart X2Y0_ユニット_パワー1;
 
-    	public Par X2Y0_ユニット_パワー2;
+    	public ShapePart X2Y0_ユニット_パワー2;
 
-    	public Par X2Y0_ユニット_パワー3;
+    	public ShapePart X2Y0_ユニット_パワー3;
 
-    	public Par X2Y0_ユニット_パワー4;
+    	public ShapePart X2Y0_ユニット_パワー4;
 
-    	public Par X2Y1_ヘッド;
+    	public ShapePart X2Y1_ヘッド;
 
-    	public Par X2Y1_イボ1;
+    	public ShapePart X2Y1_イボ1;
 
-    	public Par X2Y1_イボ2;
+    	public ShapePart X2Y1_イボ2;
 
-    	public Par X2Y1_イボ3;
+    	public ShapePart X2Y1_イボ3;
 
-    	public Par X2Y1_イボ4;
+    	public ShapePart X2Y1_イボ4;
 
-    	public Par X2Y1_イボ5;
+    	public ShapePart X2Y1_イボ5;
 
-    	public Par X2Y1_イボ6;
+    	public ShapePart X2Y1_イボ6;
 
-    	public Par X2Y1_イボ7;
+    	public ShapePart X2Y1_イボ7;
 
-    	public Par X2Y1_イボ8;
+    	public ShapePart X2Y1_イボ8;
 
-    	public Par X2Y1_イボ9;
+    	public ShapePart X2Y1_イボ9;
 
-    	public Par X2Y1_イボ10;
+    	public ShapePart X2Y1_イボ10;
 
-    	public Par X2Y1_イボ11;
+    	public ShapePart X2Y1_イボ11;
 
-    	public Par X2Y1_イボ12;
+    	public ShapePart X2Y1_イボ12;
 
-    	public Par X2Y1_イボ13;
+    	public ShapePart X2Y1_イボ13;
 
-    	public Par X2Y1_イボ14;
+    	public ShapePart X2Y1_イボ14;
 
-    	public Par X2Y1_イボ15;
+    	public ShapePart X2Y1_イボ15;
 
-    	public Par X2Y1_イボ16;
+    	public ShapePart X2Y1_イボ16;
 
-    	public Par X2Y1_イボ17;
+    	public ShapePart X2Y1_イボ17;
 
-    	public Par X2Y1_イボ18;
+    	public ShapePart X2Y1_イボ18;
 
-    	public Par X2Y1_イボ19;
+    	public ShapePart X2Y1_イボ19;
 
-    	public Par X2Y1_ユニット_ユニット;
+    	public ShapePart X2Y1_ユニット_ユニット;
 
-    	public Par X2Y1_ユニット_ユニット線上;
+    	public ShapePart X2Y1_ユニット_ユニット線上;
 
-    	public Par X2Y1_ユニット_ユニット線下;
+    	public ShapePart X2Y1_ユニット_ユニット線下;
 
-    	public Par X2Y1_ユニット_ボタン上;
+    	public ShapePart X2Y1_ユニット_ボタン上;
 
-    	public Par X2Y1_ユニット_ボタン下;
+    	public ShapePart X2Y1_ユニット_ボタン下;
 
-    	public Par X2Y1_ユニット_パワー根;
+    	public ShapePart X2Y1_ユニット_パワー根;
 
-    	public Par X2Y1_ユニット_パワー1;
+    	public ShapePart X2Y1_ユニット_パワー1;
 
-    	public Par X2Y1_ユニット_パワー2;
+    	public ShapePart X2Y1_ユニット_パワー2;
 
-    	public Par X2Y1_ユニット_パワー3;
+    	public ShapePart X2Y1_ユニット_パワー3;
 
-    	public Par X2Y1_ユニット_パワー4;
+    	public ShapePart X2Y1_ユニット_パワー4;
 
-    	public Par X2Y2_ヘッド;
+    	public ShapePart X2Y2_ヘッド;
 
-    	public Par X2Y2_イボ1;
+    	public ShapePart X2Y2_イボ1;
 
-    	public Par X2Y2_イボ2;
+    	public ShapePart X2Y2_イボ2;
 
-    	public Par X2Y2_イボ3;
+    	public ShapePart X2Y2_イボ3;
 
-    	public Par X2Y2_イボ4;
+    	public ShapePart X2Y2_イボ4;
 
-    	public Par X2Y2_イボ5;
+    	public ShapePart X2Y2_イボ5;
 
-    	public Par X2Y2_イボ6;
+    	public ShapePart X2Y2_イボ6;
 
-    	public Par X2Y2_イボ7;
+    	public ShapePart X2Y2_イボ7;
 
-    	public Par X2Y2_イボ8;
+    	public ShapePart X2Y2_イボ8;
 
-    	public Par X2Y2_イボ9;
+    	public ShapePart X2Y2_イボ9;
 
-    	public Par X2Y2_イボ10;
+    	public ShapePart X2Y2_イボ10;
 
-    	public Par X2Y2_イボ11;
+    	public ShapePart X2Y2_イボ11;
 
-    	public Par X2Y2_イボ12;
+    	public ShapePart X2Y2_イボ12;
 
-    	public Par X2Y2_イボ13;
+    	public ShapePart X2Y2_イボ13;
 
-    	public Par X2Y2_イボ14;
+    	public ShapePart X2Y2_イボ14;
 
-    	public Par X2Y2_ユニット_ユニット;
+    	public ShapePart X2Y2_ユニット_ユニット;
 
-    	public Par X2Y2_ユニット_ユニット線上;
+    	public ShapePart X2Y2_ユニット_ユニット線上;
 
-    	public Par X2Y2_ユニット_ユニット線下;
+    	public ShapePart X2Y2_ユニット_ユニット線下;
 
-    	public Par X2Y2_ユニット_ボタン上;
+    	public ShapePart X2Y2_ユニット_ボタン上;
 
-    	public Par X2Y2_ユニット_ボタン下;
+    	public ShapePart X2Y2_ユニット_ボタン下;
 
-    	public Par X2Y2_ユニット_パワー根;
+    	public ShapePart X2Y2_ユニット_パワー根;
 
-    	public Par X2Y2_ユニット_パワー1;
+    	public ShapePart X2Y2_ユニット_パワー1;
 
-    	public Par X2Y2_ユニット_パワー2;
+    	public ShapePart X2Y2_ユニット_パワー2;
 
-    	public Par X2Y2_ユニット_パワー3;
+    	public ShapePart X2Y2_ユニット_パワー3;
 
-    	public Par X2Y2_ユニット_パワー4;
+    	public ShapePart X2Y2_ユニット_パワー4;
 
-    	public Par X2Y3_ヘッド;
+    	public ShapePart X2Y3_ヘッド;
 
-    	public Par X2Y3_イボ1;
+    	public ShapePart X2Y3_イボ1;
 
-    	public Par X2Y3_イボ2;
+    	public ShapePart X2Y3_イボ2;
 
-    	public Par X2Y3_イボ3;
+    	public ShapePart X2Y3_イボ3;
 
-    	public Par X2Y3_イボ4;
+    	public ShapePart X2Y3_イボ4;
 
-    	public Par X2Y3_イボ5;
+    	public ShapePart X2Y3_イボ5;
 
-    	public Par X2Y3_イボ6;
+    	public ShapePart X2Y3_イボ6;
 
-    	public Par X2Y3_イボ7;
+    	public ShapePart X2Y3_イボ7;
 
-    	public Par X2Y3_イボ8;
+    	public ShapePart X2Y3_イボ8;
 
-    	public Par X2Y3_イボ9;
+    	public ShapePart X2Y3_イボ9;
 
-    	public Par X2Y3_イボ10;
+    	public ShapePart X2Y3_イボ10;
 
-    	public Par X2Y3_ユニット_ユニット;
+    	public ShapePart X2Y3_ユニット_ユニット;
 
-    	public Par X2Y3_ユニット_ユニット線上;
+    	public ShapePart X2Y3_ユニット_ユニット線上;
 
-    	public Par X2Y3_ユニット_ユニット線下;
+    	public ShapePart X2Y3_ユニット_ユニット線下;
 
-    	public Par X2Y3_ユニット_ボタン上;
+    	public ShapePart X2Y3_ユニット_ボタン上;
 
-    	public Par X2Y3_ユニット_ボタン下;
+    	public ShapePart X2Y3_ユニット_ボタン下;
 
-    	public Par X2Y3_ユニット_パワー根;
+    	public ShapePart X2Y3_ユニット_パワー根;
 
-    	public Par X2Y3_ユニット_パワー1;
+    	public ShapePart X2Y3_ユニット_パワー1;
 
-    	public Par X2Y3_ユニット_パワー2;
+    	public ShapePart X2Y3_ユニット_パワー2;
 
-    	public Par X2Y3_ユニット_パワー3;
+    	public ShapePart X2Y3_ユニット_パワー3;
 
-    	public Par X2Y3_ユニット_パワー4;
+    	public ShapePart X2Y3_ユニット_パワー4;
 
-    	public Par X2Y4_ヘッド;
+    	public ShapePart X2Y4_ヘッド;
 
-    	public Par X2Y4_イボ1;
+    	public ShapePart X2Y4_イボ1;
 
-    	public Par X2Y4_イボ2;
+    	public ShapePart X2Y4_イボ2;
 
-    	public Par X2Y4_イボ3;
+    	public ShapePart X2Y4_イボ3;
 
-    	public Par X2Y4_イボ4;
+    	public ShapePart X2Y4_イボ4;
 
-    	public Par X2Y4_ユニット_ユニット;
+    	public ShapePart X2Y4_ユニット_ユニット;
 
-    	public Par X2Y4_ユニット_ユニット線上;
+    	public ShapePart X2Y4_ユニット_ユニット線上;
 
-    	public Par X2Y4_ユニット_ユニット線下;
+    	public ShapePart X2Y4_ユニット_ユニット線下;
 
-    	public Par X2Y4_ユニット_ボタン上;
+    	public ShapePart X2Y4_ユニット_ボタン上;
 
-    	public Par X2Y4_ユニット_ボタン下;
+    	public ShapePart X2Y4_ユニット_ボタン下;
 
-    	public Par X2Y4_ユニット_パワー根;
+    	public ShapePart X2Y4_ユニット_パワー根;
 
-    	public Par X2Y4_ユニット_パワー1;
+    	public ShapePart X2Y4_ユニット_パワー1;
 
-    	public Par X2Y4_ユニット_パワー2;
+    	public ShapePart X2Y4_ユニット_パワー2;
 
-    	public Par X2Y4_ユニット_パワー3;
+    	public ShapePart X2Y4_ユニット_パワー3;
 
-    	public Par X2Y4_ユニット_パワー4;
+    	public ShapePart X2Y4_ユニット_パワー4;
 
     	public ColorD ヘッドCD;
 

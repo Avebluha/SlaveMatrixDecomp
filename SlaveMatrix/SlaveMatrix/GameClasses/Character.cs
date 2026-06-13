@@ -1333,8 +1333,8 @@ namespace SlaveMatrix
     		};
     		Motions.Add(ClimaxEnd.GetHashCode().ToString(), ClimaxEnd);
     		double savedHipValue = 0.0;
-    		Par pa = Body.Waist.Body.CurJoinRoot;
-    		Par pb = null;
+    		ShapePart pa = Body.Waist.Body.CurJoinRoot;
+    		ShapePart pb = null;
     		Vector2D vec = DataConsts.Vec2DZero;
     		Action 腰接続 = delegate
     		{

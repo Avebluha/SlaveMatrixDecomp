@@ -4,131 +4,131 @@ namespace SlaveMatrix
 {
     public class 鳳凰 : 尾
     {
-    	public Par X0Y0_羽_羽;
+    	public ShapePart X0Y0_羽_羽;
 
-    	public Par X0Y0_羽_紋1;
+    	public ShapePart X0Y0_羽_紋1;
 
-    	public Par X0Y0_羽_紋2;
+    	public ShapePart X0Y0_羽_紋2;
 
-    	public Par X0Y0_羽2_羽;
+    	public ShapePart X0Y0_羽2_羽;
 
-    	public Par X0Y0_羽2_紋1;
+    	public ShapePart X0Y0_羽2_紋1;
 
-    	public Par X0Y0_羽2_紋2;
+    	public ShapePart X0Y0_羽2_紋2;
 
-    	public Par X0Y0_羽3_羽;
+    	public ShapePart X0Y0_羽3_羽;
 
-    	public Par X0Y0_羽3_紋1;
+    	public ShapePart X0Y0_羽3_紋1;
 
-    	public Par X0Y0_羽3_紋2;
+    	public ShapePart X0Y0_羽3_紋2;
 
-    	public Par X0Y0_羽4_羽;
+    	public ShapePart X0Y0_羽4_羽;
 
-    	public Par X0Y0_羽4_紋1;
+    	public ShapePart X0Y0_羽4_紋1;
 
-    	public Par X0Y0_羽4_紋2;
+    	public ShapePart X0Y0_羽4_紋2;
 
-    	public Par X0Y0_羽5_羽;
+    	public ShapePart X0Y0_羽5_羽;
 
-    	public Par X0Y0_羽5_紋1;
+    	public ShapePart X0Y0_羽5_紋1;
 
-    	public Par X0Y0_羽5_紋2;
+    	public ShapePart X0Y0_羽5_紋2;
 
-    	public Par X0Y0_羽6_羽;
+    	public ShapePart X0Y0_羽6_羽;
 
-    	public Par X0Y0_羽6_紋1;
+    	public ShapePart X0Y0_羽6_紋1;
 
-    	public Par X0Y0_羽6_紋2;
+    	public ShapePart X0Y0_羽6_紋2;
 
-    	public Par X0Y0_羽7_羽;
+    	public ShapePart X0Y0_羽7_羽;
 
-    	public Par X0Y0_羽7_紋1;
+    	public ShapePart X0Y0_羽7_紋1;
 
-    	public Par X0Y0_羽7_紋2;
+    	public ShapePart X0Y0_羽7_紋2;
 
-    	public Par X0Y0_羽8_羽;
+    	public ShapePart X0Y0_羽8_羽;
 
-    	public Par X0Y0_羽8_紋1;
+    	public ShapePart X0Y0_羽8_紋1;
 
-    	public Par X0Y0_羽8_紋2;
+    	public ShapePart X0Y0_羽8_紋2;
 
-    	public Par X0Y0_羽9_羽;
+    	public ShapePart X0Y0_羽9_羽;
 
-    	public Par X0Y0_羽9_紋1;
+    	public ShapePart X0Y0_羽9_紋1;
 
-    	public Par X0Y0_羽9_紋2;
+    	public ShapePart X0Y0_羽9_紋2;
 
-    	public Par X0Y0_羽10_羽;
+    	public ShapePart X0Y0_羽10_羽;
 
-    	public Par X0Y0_羽10_紋1;
+    	public ShapePart X0Y0_羽10_紋1;
 
-    	public Par X0Y0_羽10_紋2;
+    	public ShapePart X0Y0_羽10_紋2;
 
-    	public Par X0Y0_羽11_羽;
+    	public ShapePart X0Y0_羽11_羽;
 
-    	public Par X0Y0_羽11_紋1;
+    	public ShapePart X0Y0_羽11_紋1;
 
-    	public Par X0Y0_羽11_紋2;
+    	public ShapePart X0Y0_羽11_紋2;
 
-    	public Par X0Y0_羽12_羽;
+    	public ShapePart X0Y0_羽12_羽;
 
-    	public Par X0Y0_羽12_紋1;
+    	public ShapePart X0Y0_羽12_紋1;
 
-    	public Par X0Y0_羽12_紋2;
+    	public ShapePart X0Y0_羽12_紋2;
 
-    	public Par X0Y0_羽13_羽;
+    	public ShapePart X0Y0_羽13_羽;
 
-    	public Par X0Y0_羽13_紋1;
+    	public ShapePart X0Y0_羽13_紋1;
 
-    	public Par X0Y0_羽13_紋2;
+    	public ShapePart X0Y0_羽13_紋2;
 
-    	public Par X0Y0_羽14_羽;
+    	public ShapePart X0Y0_羽14_羽;
 
-    	public Par X0Y0_羽14_紋1;
+    	public ShapePart X0Y0_羽14_紋1;
 
-    	public Par X0Y0_羽14_紋2;
+    	public ShapePart X0Y0_羽14_紋2;
 
-    	public Par X0Y0_羽15_羽;
+    	public ShapePart X0Y0_羽15_羽;
 
-    	public Par X0Y0_羽15_紋1;
+    	public ShapePart X0Y0_羽15_紋1;
 
-    	public Par X0Y0_羽15_紋2;
+    	public ShapePart X0Y0_羽15_紋2;
 
-    	public Par X0Y0_羽16_羽;
+    	public ShapePart X0Y0_羽16_羽;
 
-    	public Par X0Y0_羽16_紋1;
+    	public ShapePart X0Y0_羽16_紋1;
 
-    	public Par X0Y0_羽16_紋2;
+    	public ShapePart X0Y0_羽16_紋2;
 
-    	public Par X0Y0_羽17_羽;
+    	public ShapePart X0Y0_羽17_羽;
 
-    	public Par X0Y0_羽17_紋1;
+    	public ShapePart X0Y0_羽17_紋1;
 
-    	public Par X0Y0_羽17_紋2;
+    	public ShapePart X0Y0_羽17_紋2;
 
-    	public Par X0Y0_羽18_羽;
+    	public ShapePart X0Y0_羽18_羽;
 
-    	public Par X0Y0_羽18_紋1;
+    	public ShapePart X0Y0_羽18_紋1;
 
-    	public Par X0Y0_羽18_紋2;
+    	public ShapePart X0Y0_羽18_紋2;
 
-    	public Par X0Y0_羽19_羽;
+    	public ShapePart X0Y0_羽19_羽;
 
-    	public Par X0Y0_羽19_紋1;
+    	public ShapePart X0Y0_羽19_紋1;
 
-    	public Par X0Y0_羽19_紋2;
+    	public ShapePart X0Y0_羽19_紋2;
 
-    	public Par X0Y0_羽20_羽;
+    	public ShapePart X0Y0_羽20_羽;
 
-    	public Par X0Y0_羽20_紋1;
+    	public ShapePart X0Y0_羽20_紋1;
 
-    	public Par X0Y0_羽20_紋2;
+    	public ShapePart X0Y0_羽20_紋2;
 
-    	public Par X0Y0_羽21_羽;
+    	public ShapePart X0Y0_羽21_羽;
 
-    	public Par X0Y0_羽21_紋1;
+    	public ShapePart X0Y0_羽21_紋1;
 
-    	public Par X0Y0_羽21_紋2;
+    	public ShapePart X0Y0_羽21_紋2;
 
     	public ColorD 羽_羽CD;
 

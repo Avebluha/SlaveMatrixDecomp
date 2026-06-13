@@ -4,9 +4,9 @@ namespace SlaveMatrix
 {
     public class 顔ハイライト : Ele
     {
-    	public Par X0Y0_ハイライト1;
+    	public ShapePart X0Y0_ハイライト1;
 
-    	public Par X0Y0_ハイライト2;
+    	public ShapePart X0Y0_ハイライト2;
 
     	public ColorD ハイライト1CD;
 

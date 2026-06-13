@@ -4,41 +4,41 @@ namespace SlaveMatrix
 {
     public class 獣耳 : Ele
     {
-    	public Par X0Y0_獣耳外;
+    	public ShapePart X0Y0_獣耳外;
 
-    	public Par X0Y0_獣耳内;
+    	public ShapePart X0Y0_獣耳内;
 
-    	public Par X0Y0_耳毛;
+    	public ShapePart X0Y0_耳毛;
 
-    	public Par X0Y1_獣耳外;
+    	public ShapePart X0Y1_獣耳外;
 
-    	public Par X0Y1_獣耳内;
+    	public ShapePart X0Y1_獣耳内;
 
-    	public Par X0Y1_耳毛;
+    	public ShapePart X0Y1_耳毛;
 
-    	public Par X0Y2_獣耳外;
+    	public ShapePart X0Y2_獣耳外;
 
-    	public Par X0Y2_獣耳内;
+    	public ShapePart X0Y2_獣耳内;
 
-    	public Par X0Y2_耳毛;
+    	public ShapePart X0Y2_耳毛;
 
-    	public Par X1Y0_獣耳外;
+    	public ShapePart X1Y0_獣耳外;
 
-    	public Par X1Y0_獣耳内;
+    	public ShapePart X1Y0_獣耳内;
 
-    	public Par X1Y0_耳毛;
+    	public ShapePart X1Y0_耳毛;
 
-    	public Par X1Y1_獣耳外;
+    	public ShapePart X1Y1_獣耳外;
 
-    	public Par X1Y1_獣耳内;
+    	public ShapePart X1Y1_獣耳内;
 
-    	public Par X1Y1_耳毛;
+    	public ShapePart X1Y1_耳毛;
 
-    	public Par X1Y2_獣耳外;
+    	public ShapePart X1Y2_獣耳外;
 
-    	public Par X1Y2_獣耳内;
+    	public ShapePart X1Y2_獣耳内;
 
-    	public Par X1Y2_耳毛;
+    	public ShapePart X1Y2_耳毛;
 
     	public ColorD 獣耳外CD;
 

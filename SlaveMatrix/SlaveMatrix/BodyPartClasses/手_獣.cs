@@ -4,33 +4,33 @@ namespace SlaveMatrix
 {
     public class 手_獣 : 獣手
     {
-    	public Par X0Y0_手;
+    	public ShapePart X0Y0_手;
 
-    	public Par X0Y0_親指_指;
+    	public ShapePart X0Y0_親指_指;
 
-    	public Par X0Y0_親指_爪;
+    	public ShapePart X0Y0_親指_爪;
 
-    	public Par X0Y0_小指_指;
+    	public ShapePart X0Y0_小指_指;
 
-    	public Par X0Y0_小指_爪;
+    	public ShapePart X0Y0_小指_爪;
 
-    	public Par X0Y0_薬指_指;
+    	public ShapePart X0Y0_薬指_指;
 
-    	public Par X0Y0_薬指_爪;
+    	public ShapePart X0Y0_薬指_爪;
 
-    	public Par X0Y0_中指_指;
+    	public ShapePart X0Y0_中指_指;
 
-    	public Par X0Y0_中指_爪;
+    	public ShapePart X0Y0_中指_爪;
 
-    	public Par X0Y0_人指_指;
+    	public ShapePart X0Y0_人指_指;
 
-    	public Par X0Y0_人指_爪;
+    	public ShapePart X0Y0_人指_爪;
 
-    	public Par X0Y0_竜性_鱗3;
+    	public ShapePart X0Y0_竜性_鱗3;
 
-    	public Par X0Y0_竜性_鱗2;
+    	public ShapePart X0Y0_竜性_鱗2;
 
-    	public Par X0Y0_竜性_鱗1;
+    	public ShapePart X0Y0_竜性_鱗1;
 
     	public ColorD 手CD;
 

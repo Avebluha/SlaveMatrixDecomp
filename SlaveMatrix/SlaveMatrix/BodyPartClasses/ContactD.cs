@@ -8,6 +8,6 @@ namespace SlaveMatrix
 
     	public Ele e;
 
-    	public Par p;
+    	public ShapePart p;
     }
 }

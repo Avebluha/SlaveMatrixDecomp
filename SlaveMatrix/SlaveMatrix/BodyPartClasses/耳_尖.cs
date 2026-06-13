@@ -4,29 +4,29 @@ namespace SlaveMatrix
 {
     public class 耳_尖 : 耳
     {
-    	public Par X0Y0_耳;
+    	public ShapePart X0Y0_耳;
 
-    	public Par X0Y0_耳線;
+    	public ShapePart X0Y0_耳線;
 
-    	public Par X0Y1_耳;
+    	public ShapePart X0Y1_耳;
 
-    	public Par X0Y1_耳線;
+    	public ShapePart X0Y1_耳線;
 
-    	public Par X0Y2_耳;
+    	public ShapePart X0Y2_耳;
 
-    	public Par X0Y2_耳線;
+    	public ShapePart X0Y2_耳線;
 
-    	public Par X1Y0_耳;
+    	public ShapePart X1Y0_耳;
 
-    	public Par X1Y0_耳線;
+    	public ShapePart X1Y0_耳線;
 
-    	public Par X1Y1_耳;
+    	public ShapePart X1Y1_耳;
 
-    	public Par X1Y1_耳線;
+    	public ShapePart X1Y1_耳線;
 
-    	public Par X1Y2_耳;
+    	public ShapePart X1Y2_耳;
 
-    	public Par X1Y2_耳線;
+    	public ShapePart X1Y2_耳線;
 
     	public ColorD 耳CD;
 

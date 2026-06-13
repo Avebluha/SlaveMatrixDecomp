@@ -87,9 +87,9 @@ namespace SlaveMatrix
 
     	private double y0;
 
-    	private Par p0;
+    	private ShapePart p0;
 
-    	private Par py;
+    	private ShapePart py;
 
     	private Vector2D bp;
 
@@ -660,7 +660,7 @@ namespace SlaveMatrix
     			if (Bod.断面_表示)
     			{
     				Bod.性器.接続PA();
-    				対象.Ele.位置B = Bod.性器.Body.Current.EnumAllPar().First((Par p_) => p_.Tag.Contains("膣口")).Position;
+    				対象.Ele.位置B = Bod.性器.Body.Current.EnumAllPar().First((ShapePart p_) => p_.Tag.Contains("膣口")).Position;
     				p0 = 対象.Ele.Body.pr[対象.Ele.Body[対象.Ele.Body.IndexX][0]];
     				py = 対象.Ele.Body.pr[対象.Ele.Body[対象.Ele.Body.IndexX][dy]];
     				if (pn)
@@ -1517,7 +1517,7 @@ namespace SlaveMatrix
     					if (v)
     					{
     						対象.Ele.位置C = p.MulX(0.5);
-    						対象.Ele.Body.Current.EnumAllPar().First((Par e) => e.Tag.Contains("ヘッド")).PositionCont = p;
+    						対象.Ele.Body.Current.EnumAllPar().First((ShapePart e) => e.Tag.Contains("ヘッド")).PositionCont = p;
     					}
     					else
     					{
@@ -1557,7 +1557,7 @@ namespace SlaveMatrix
     				OnEnd = delegate(Motion m)
     				{
     					m.ResetValue();
-    					foreach (Par item in 対象.Ele.Body.EnumAllPar())
+    					foreach (ShapePart item in 対象.Ele.Body.EnumAllPar())
     					{
     						item.PositionCont = DataConsts.Vec2DZero;
     					}

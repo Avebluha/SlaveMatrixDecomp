@@ -5,45 +5,45 @@ namespace SlaveMatrix
 {
     public class LowerArm_蝙 : 翼LowerArm
     {
-    	public Par X0Y0_獣翼LowerArm;
+    	public ShapePart X0Y0_獣翼LowerArm;
 
-    	public Par X0Y0_竜性_鱗1;
+    	public ShapePart X0Y0_竜性_鱗1;
 
-    	public Par X0Y0_竜性_鱗2;
+    	public ShapePart X0Y0_竜性_鱗2;
 
-    	public Par X0Y0_竜性_鱗3;
+    	public ShapePart X0Y0_竜性_鱗3;
 
-    	public Par X0Y0_竜性_鱗4;
+    	public ShapePart X0Y0_竜性_鱗4;
 
-    	public Par X0Y0_竜性_鱗5;
+    	public ShapePart X0Y0_竜性_鱗5;
 
-    	public Par X0Y0_竜性_鱗6;
+    	public ShapePart X0Y0_竜性_鱗6;
 
-    	public Par X0Y0_竜性_鱗7;
+    	public ShapePart X0Y0_竜性_鱗7;
 
-    	public Par X0Y0_竜性_鱗8;
+    	public ShapePart X0Y0_竜性_鱗8;
 
-    	public Par X0Y0_竜性_鱗9;
+    	public ShapePart X0Y0_竜性_鱗9;
 
-    	public Par X0Y0_竜性_鱗10;
+    	public ShapePart X0Y0_竜性_鱗10;
 
-    	public Par X0Y0_竜性_鱗11;
+    	public ShapePart X0Y0_竜性_鱗11;
 
-    	public Par X0Y0_竜性_鱗12;
+    	public ShapePart X0Y0_竜性_鱗12;
 
-    	public Par X0Y0_竜性_鱗13;
+    	public ShapePart X0Y0_竜性_鱗13;
 
-    	public Par X0Y0_腕輪_革;
+    	public ShapePart X0Y0_腕輪_革;
 
-    	public Par X0Y0_腕輪_金具1;
+    	public ShapePart X0Y0_腕輪_金具1;
 
-    	public Par X0Y0_腕輪_金具2;
+    	public ShapePart X0Y0_腕輪_金具2;
 
-    	public Par X0Y0_腕輪_金具3;
+    	public ShapePart X0Y0_腕輪_金具3;
 
-    	public Par X0Y0_腕輪_金具左;
+    	public ShapePart X0Y0_腕輪_金具左;
 
-    	public Par X0Y0_腕輪_金具右;
+    	public ShapePart X0Y0_腕輪_金具右;
 
     	public ColorD 獣翼LowerArmCD;
 
@@ -737,7 +737,7 @@ namespace SlaveMatrix
     		鎖1.描画0(Are);
     	}
 
-    	public override bool Is革(Par p)
+    	public override bool Is革(ShapePart p)
     	{
     		if (p != X0Y0_腕輪_革 && p != X0Y0_腕輪_金具1 && p != X0Y0_腕輪_金具2 && p != X0Y0_腕輪_金具3 && p != X0Y0_腕輪_金具左)
     		{

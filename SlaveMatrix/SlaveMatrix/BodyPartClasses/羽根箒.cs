@@ -4,19 +4,19 @@ namespace SlaveMatrix
 {
     public class 羽根箒 : Ele
     {
-    	public Par X0Y0_羽根1;
+    	public ShapePart X0Y0_羽根1;
 
-    	public Par X0Y0_羽根2;
+    	public ShapePart X0Y0_羽根2;
 
-    	public Par X0Y0_羽根3;
+    	public ShapePart X0Y0_羽根3;
 
-    	public Par X0Y0_羽根4;
+    	public ShapePart X0Y0_羽根4;
 
-    	public Par X0Y0_羽根5;
+    	public ShapePart X0Y0_羽根5;
 
-    	public Par X0Y0_羽根;
+    	public ShapePart X0Y0_羽根;
 
-    	public Par X0Y0_柄;
+    	public ShapePart X0Y0_柄;
 
     	public ColorD 羽根1CD;
 

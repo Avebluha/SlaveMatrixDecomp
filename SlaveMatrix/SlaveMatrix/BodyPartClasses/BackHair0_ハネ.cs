@@ -4,29 +4,29 @@ namespace SlaveMatrix
 {
     public class 後髪0_ハネ : 下ろし
     {
-    	public Par X0Y0_髪基;
+    	public ShapePart X0Y0_髪基;
 
-    	public Par X0Y0_髪中;
+    	public ShapePart X0Y0_髪中;
 
-    	public Par X0Y0_髪左1;
+    	public ShapePart X0Y0_髪左1;
 
-    	public Par X0Y0_髪左2;
+    	public ShapePart X0Y0_髪左2;
 
-    	public Par X0Y0_髪左3;
+    	public ShapePart X0Y0_髪左3;
 
-    	public Par X0Y0_髪左4;
+    	public ShapePart X0Y0_髪左4;
 
-    	public Par X0Y0_髪左5;
+    	public ShapePart X0Y0_髪左5;
 
-    	public Par X0Y0_髪右1;
+    	public ShapePart X0Y0_髪右1;
 
-    	public Par X0Y0_髪右2;
+    	public ShapePart X0Y0_髪右2;
 
-    	public Par X0Y0_髪右3;
+    	public ShapePart X0Y0_髪右3;
 
-    	public Par X0Y0_髪右4;
+    	public ShapePart X0Y0_髪右4;
 
-    	public Par X0Y0_髪右5;
+    	public ShapePart X0Y0_髪右5;
 
     	public ColorD 髪基CD;
 

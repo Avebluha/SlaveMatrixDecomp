@@ -4,77 +4,77 @@ namespace SlaveMatrix
 {
     public class 背中_甲 : 背中
     {
-    	public Par X0Y0_左_甲羅1;
+    	public ShapePart X0Y0_左_甲羅1;
 
-    	public Par X0Y0_左_甲羅2;
+    	public ShapePart X0Y0_左_甲羅2;
 
-    	public Par X0Y0_左_鱗_鱗12;
+    	public ShapePart X0Y0_左_鱗_鱗12;
 
-    	public Par X0Y0_左_鱗_鱗11;
+    	public ShapePart X0Y0_左_鱗_鱗11;
 
-    	public Par X0Y0_左_鱗_鱗10;
+    	public ShapePart X0Y0_左_鱗_鱗10;
 
-    	public Par X0Y0_左_鱗_鱗9;
+    	public ShapePart X0Y0_左_鱗_鱗9;
 
-    	public Par X0Y0_左_鱗_鱗8;
+    	public ShapePart X0Y0_左_鱗_鱗8;
 
-    	public Par X0Y0_左_鱗_鱗7;
+    	public ShapePart X0Y0_左_鱗_鱗7;
 
-    	public Par X0Y0_左_鱗_鱗6;
+    	public ShapePart X0Y0_左_鱗_鱗6;
 
-    	public Par X0Y0_左_鱗_鱗5;
+    	public ShapePart X0Y0_左_鱗_鱗5;
 
-    	public Par X0Y0_左_鱗_鱗4;
+    	public ShapePart X0Y0_左_鱗_鱗4;
 
-    	public Par X0Y0_左_鱗_鱗3;
+    	public ShapePart X0Y0_左_鱗_鱗3;
 
-    	public Par X0Y0_左_鱗_鱗2;
+    	public ShapePart X0Y0_左_鱗_鱗2;
 
-    	public Par X0Y0_左_鱗_鱗1;
+    	public ShapePart X0Y0_左_鱗_鱗1;
 
-    	public Par X0Y0_左_側甲_側甲4;
+    	public ShapePart X0Y0_左_側甲_側甲4;
 
-    	public Par X0Y0_左_側甲_側甲3;
+    	public ShapePart X0Y0_左_側甲_側甲3;
 
-    	public Par X0Y0_左_側甲_側甲2;
+    	public ShapePart X0Y0_左_側甲_側甲2;
 
-    	public Par X0Y0_左_側甲_側甲1;
+    	public ShapePart X0Y0_左_側甲_側甲1;
 
-    	public Par X0Y0_右_甲羅1;
+    	public ShapePart X0Y0_右_甲羅1;
 
-    	public Par X0Y0_右_甲羅2;
+    	public ShapePart X0Y0_右_甲羅2;
 
-    	public Par X0Y0_右_鱗_鱗12;
+    	public ShapePart X0Y0_右_鱗_鱗12;
 
-    	public Par X0Y0_右_鱗_鱗11;
+    	public ShapePart X0Y0_右_鱗_鱗11;
 
-    	public Par X0Y0_右_鱗_鱗10;
+    	public ShapePart X0Y0_右_鱗_鱗10;
 
-    	public Par X0Y0_右_鱗_鱗9;
+    	public ShapePart X0Y0_右_鱗_鱗9;
 
-    	public Par X0Y0_右_鱗_鱗8;
+    	public ShapePart X0Y0_右_鱗_鱗8;
 
-    	public Par X0Y0_右_鱗_鱗7;
+    	public ShapePart X0Y0_右_鱗_鱗7;
 
-    	public Par X0Y0_右_鱗_鱗6;
+    	public ShapePart X0Y0_右_鱗_鱗6;
 
-    	public Par X0Y0_右_鱗_鱗5;
+    	public ShapePart X0Y0_右_鱗_鱗5;
 
-    	public Par X0Y0_右_鱗_鱗4;
+    	public ShapePart X0Y0_右_鱗_鱗4;
 
-    	public Par X0Y0_右_鱗_鱗3;
+    	public ShapePart X0Y0_右_鱗_鱗3;
 
-    	public Par X0Y0_右_鱗_鱗2;
+    	public ShapePart X0Y0_右_鱗_鱗2;
 
-    	public Par X0Y0_右_鱗_鱗1;
+    	public ShapePart X0Y0_右_鱗_鱗1;
 
-    	public Par X0Y0_右_側甲_側甲4;
+    	public ShapePart X0Y0_右_側甲_側甲4;
 
-    	public Par X0Y0_右_側甲_側甲3;
+    	public ShapePart X0Y0_右_側甲_側甲3;
 
-    	public Par X0Y0_右_側甲_側甲2;
+    	public ShapePart X0Y0_右_側甲_側甲2;
 
-    	public Par X0Y0_右_側甲_側甲1;
+    	public ShapePart X0Y0_右_側甲_側甲1;
 
     	public ColorD 左_甲羅1CD;
 

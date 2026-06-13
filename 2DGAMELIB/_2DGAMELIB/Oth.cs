@@ -64,13 +64,13 @@ namespace _2DGAMELIB
     		};
     	}
 
-    	private static void GetMinMaxX(Par Par, ref double MinX, ref double MaxX)
+    	private static void GetMinMaxX(ShapePart ShapePart, ref double MinX, ref double MaxX)
     	{
-    		foreach (Out item in Par.OP)
+    		foreach (Out item in ShapePart.OP)
     		{
     			foreach (Vector2D p in item.ps)
     			{
-    				Vector2D vector2D = Par.ToGlobal(p);
+    				Vector2D vector2D = ShapePart.ToGlobal(p);
     				if (MinX > vector2D.X)
     				{
     					MinX = vector2D.X;
@@ -83,13 +83,13 @@ namespace _2DGAMELIB
     		}
     	}
 
-    	private static void GetMinMaxY(Par Par, ref double MinY, ref double MaxY)
+    	private static void GetMinMaxY(ShapePart ShapePart, ref double MinY, ref double MaxY)
     	{
-    		foreach (Out item in Par.OP)
+    		foreach (Out item in ShapePart.OP)
     		{
     			foreach (Vector2D p in item.ps)
     			{
-    				Vector2D vector2D = Par.ToGlobal(p);
+    				Vector2D vector2D = ShapePart.ToGlobal(p);
     				if (MinY > vector2D.Y)
     				{
     					MinY = vector2D.Y;
@@ -102,7 +102,7 @@ namespace _2DGAMELIB
     		}
     	}
 
-    	private static void GetMinMaxY(Par[] Pars, ref double MinY, ref double MaxY)
+    	private static void GetMinMaxY(ShapePart[] Pars, ref double MinY, ref double MaxY)
     	{
     		for (int i = 0; i < Pars.Length; i++)
     		{
@@ -110,50 +110,50 @@ namespace _2DGAMELIB
     		}
     	}
 
-    	public static void GetMiX_MaX(this Par Par, out Vector2D[] MM)
+    	public static void GetMiX_MaX(this ShapePart ShapePart, out Vector2D[] MM)
     	{
-    		Vector2D vector2D = Par.ToGlobal(Par.OP.First().ps.First());
+    		Vector2D vector2D = ShapePart.ToGlobal(ShapePart.OP.First().ps.First());
     		MM = new Vector2D[2];
     		MM[0].X = vector2D.X;
     		MM[1].X = vector2D.X;
-    		GetMinMaxX(Par, ref MM[0].X, ref MM[1].X);
+    		GetMinMaxX(ShapePart, ref MM[0].X, ref MM[1].X);
     	}
 
-    	public static void GetMaX_MiX(this Par Par, out Vector2D[] MM)
+    	public static void GetMaX_MiX(this ShapePart ShapePart, out Vector2D[] MM)
     	{
-    		Vector2D vector2D = Par.ToGlobal(Par.OP.First().ps.First());
+    		Vector2D vector2D = ShapePart.ToGlobal(ShapePart.OP.First().ps.First());
     		MM = new Vector2D[2];
     		MM[0].X = vector2D.X;
     		MM[1].X = vector2D.X;
-    		GetMinMaxX(Par, ref MM[1].X, ref MM[0].X);
+    		GetMinMaxX(ShapePart, ref MM[1].X, ref MM[0].X);
     	}
 
-    	public static void GetMiY_MaY(this Par Par, out Vector2D[] MM)
+    	public static void GetMiY_MaY(this ShapePart ShapePart, out Vector2D[] MM)
     	{
-    		Vector2D vector2D = Par.ToGlobal(Par.OP.First().ps.First());
+    		Vector2D vector2D = ShapePart.ToGlobal(ShapePart.OP.First().ps.First());
     		MM = new Vector2D[2];
     		MM[0].Y = vector2D.Y;
     		MM[1].Y = vector2D.Y;
-    		GetMinMaxY(Par, ref MM[0].Y, ref MM[1].Y);
+    		GetMinMaxY(ShapePart, ref MM[0].Y, ref MM[1].Y);
     	}
 
-    	public static void GetMiY_MaY(this Par[] Pars, out Vector2D[] MM)
+    	public static void GetMiY_MaY(this ShapePart[] Pars, out Vector2D[] MM)
     	{
-    		Par par = Pars.First();
-    		Vector2D vector2D = par.ToGlobal(par.OP.First().ps.First());
+    		ShapePart shapePart = Pars.First();
+    		Vector2D vector2D = shapePart.ToGlobal(shapePart.OP.First().ps.First());
     		MM = new Vector2D[2];
     		MM[0].Y = vector2D.Y;
     		MM[1].Y = vector2D.Y;
     		GetMinMaxY(Pars, ref MM[0].Y, ref MM[1].Y);
     	}
 
-    	public static void GetMaY_MiY(this Par Par, out Vector2D[] MM)
+    	public static void GetMaY_MiY(this ShapePart ShapePart, out Vector2D[] MM)
     	{
-    		Vector2D vector2D = Par.ToGlobal(Par.OP.First().ps.First());
+    		Vector2D vector2D = ShapePart.ToGlobal(ShapePart.OP.First().ps.First());
     		MM = new Vector2D[2];
     		MM[0].Y = vector2D.Y;
     		MM[1].Y = vector2D.Y;
-    		GetMinMaxY(Par, ref MM[1].Y, ref MM[0].Y);
+    		GetMinMaxY(ShapePart, ref MM[1].Y, ref MM[0].Y);
     	}
 
 public static Obj ObjLoad(this byte[] bd)

@@ -5,667 +5,667 @@ namespace SlaveMatrix
 {
     public class 手_人 : 手
     {
-    	public Par X0Y0_グローブ_グローブ;
+    	public ShapePart X0Y0_グローブ_グローブ;
 
-    	public Par X0Y0_グローブ_縁1;
+    	public ShapePart X0Y0_グローブ_縁1;
 
-    	public Par X0Y0_グローブ_縁2;
+    	public ShapePart X0Y0_グローブ_縁2;
 
-    	public Par X0Y0_獣性_獣毛;
+    	public ShapePart X0Y0_獣性_獣毛;
 
-    	public Par X0Y0_手;
+    	public ShapePart X0Y0_手;
 
-    	public Par X0Y0_獣性_肉球;
+    	public ShapePart X0Y0_獣性_肉球;
 
-    	public Par X0Y0_人指_人指1;
+    	public ShapePart X0Y0_人指_人指1;
 
-    	public Par X0Y0_人指_人指3;
+    	public ShapePart X0Y0_人指_人指3;
 
-    	public Par X0Y0_人指_人指2;
+    	public ShapePart X0Y0_人指_人指2;
 
-    	public Par X0Y0_人指_水掻;
+    	public ShapePart X0Y0_人指_水掻;
 
-    	public Par X0Y0_中指_中指1;
+    	public ShapePart X0Y0_中指_中指1;
 
-    	public Par X0Y0_中指_中指3;
+    	public ShapePart X0Y0_中指_中指3;
 
-    	public Par X0Y0_中指_中指2;
+    	public ShapePart X0Y0_中指_中指2;
 
-    	public Par X0Y0_中指_水掻;
+    	public ShapePart X0Y0_中指_水掻;
 
-    	public Par X0Y0_薬指_薬指1;
+    	public ShapePart X0Y0_薬指_薬指1;
 
-    	public Par X0Y0_薬指_薬指3;
+    	public ShapePart X0Y0_薬指_薬指3;
 
-    	public Par X0Y0_薬指_薬指2;
+    	public ShapePart X0Y0_薬指_薬指2;
 
-    	public Par X0Y0_薬指_水掻;
+    	public ShapePart X0Y0_薬指_水掻;
 
-    	public Par X0Y0_小指_小指1;
+    	public ShapePart X0Y0_小指_小指1;
 
-    	public Par X0Y0_小指_小指3;
+    	public ShapePart X0Y0_小指_小指3;
 
-    	public Par X0Y0_小指_小指2;
+    	public ShapePart X0Y0_小指_小指2;
 
-    	public Par X0Y0_親指_水掻;
+    	public ShapePart X0Y0_親指_水掻;
 
-    	public Par X0Y0_親指_親指1;
+    	public ShapePart X0Y0_親指_親指1;
 
-    	public Par X0Y0_親指_獣性_肉球;
+    	public ShapePart X0Y0_親指_獣性_肉球;
 
-    	public Par X0Y0_親指_親指2;
+    	public ShapePart X0Y0_親指_親指2;
 
-    	public Par X0Y0_親指_親指3;
+    	public ShapePart X0Y0_親指_親指3;
 
-    	public Par X0Y1_親指_親指3;
+    	public ShapePart X0Y1_親指_親指3;
 
-    	public Par X0Y1_親指_親指2;
+    	public ShapePart X0Y1_親指_親指2;
 
-    	public Par X0Y1_親指_親指1;
+    	public ShapePart X0Y1_親指_親指1;
 
-    	public Par X0Y1_親指_水掻;
+    	public ShapePart X0Y1_親指_水掻;
 
-    	public Par X0Y1_人指_人指3;
+    	public ShapePart X0Y1_人指_人指3;
 
-    	public Par X0Y1_人指_人指2;
+    	public ShapePart X0Y1_人指_人指2;
 
-    	public Par X0Y1_人指_人指1;
+    	public ShapePart X0Y1_人指_人指1;
 
-    	public Par X0Y1_人指_水掻;
+    	public ShapePart X0Y1_人指_水掻;
 
-    	public Par X0Y1_中指_中指3;
+    	public ShapePart X0Y1_中指_中指3;
 
-    	public Par X0Y1_中指_中指2;
+    	public ShapePart X0Y1_中指_中指2;
 
-    	public Par X0Y1_中指_中指1;
+    	public ShapePart X0Y1_中指_中指1;
 
-    	public Par X0Y1_中指_水掻;
+    	public ShapePart X0Y1_中指_水掻;
 
-    	public Par X0Y1_薬指_薬指3;
+    	public ShapePart X0Y1_薬指_薬指3;
 
-    	public Par X0Y1_薬指_薬指2;
+    	public ShapePart X0Y1_薬指_薬指2;
 
-    	public Par X0Y1_薬指_薬指1;
+    	public ShapePart X0Y1_薬指_薬指1;
 
-    	public Par X0Y1_薬指_水掻;
+    	public ShapePart X0Y1_薬指_水掻;
 
-    	public Par X0Y1_小指_小指3;
+    	public ShapePart X0Y1_小指_小指3;
 
-    	public Par X0Y1_小指_小指2;
+    	public ShapePart X0Y1_小指_小指2;
 
-    	public Par X0Y1_小指_小指1;
+    	public ShapePart X0Y1_小指_小指1;
 
-    	public Par X0Y1_手;
+    	public ShapePart X0Y1_手;
 
-    	public Par X0Y1_獣性_獣毛;
+    	public ShapePart X0Y1_獣性_獣毛;
 
-    	public Par X0Y1_竜性_鱗1;
+    	public ShapePart X0Y1_竜性_鱗1;
 
-    	public Par X0Y1_竜性_鱗2;
+    	public ShapePart X0Y1_竜性_鱗2;
 
-    	public Par X0Y1_竜性_鱗3;
+    	public ShapePart X0Y1_竜性_鱗3;
 
-    	public Par X0Y1_悪タトゥ_五芒星_円1;
+    	public ShapePart X0Y1_悪タトゥ_五芒星_円1;
 
-    	public Par X0Y1_悪タトゥ_五芒星_円2;
+    	public ShapePart X0Y1_悪タトゥ_五芒星_円2;
 
-    	public Par X0Y1_悪タトゥ_五芒星_星;
+    	public ShapePart X0Y1_悪タトゥ_五芒星_星;
 
-    	public Par X0Y1_悪タトゥ_五芒星_五角形;
+    	public ShapePart X0Y1_悪タトゥ_五芒星_五角形;
 
-    	public Par X0Y1_グローブ_グローブ;
+    	public ShapePart X0Y1_グローブ_グローブ;
 
-    	public Par X0Y1_グローブ_縁1;
+    	public ShapePart X0Y1_グローブ_縁1;
 
-    	public Par X0Y1_グローブ_縁2;
+    	public ShapePart X0Y1_グローブ_縁2;
 
-    	public Par X0Y2_親指_親指3;
+    	public ShapePart X0Y2_親指_親指3;
 
-    	public Par X0Y2_親指_親指2;
+    	public ShapePart X0Y2_親指_親指2;
 
-    	public Par X0Y2_親指_親指1;
+    	public ShapePart X0Y2_親指_親指1;
 
-    	public Par X0Y2_親指_水掻;
+    	public ShapePart X0Y2_親指_水掻;
 
-    	public Par X0Y2_人指_人指3;
+    	public ShapePart X0Y2_人指_人指3;
 
-    	public Par X0Y2_人指_人指2;
+    	public ShapePart X0Y2_人指_人指2;
 
-    	public Par X0Y2_人指_人指1;
+    	public ShapePart X0Y2_人指_人指1;
 
-    	public Par X0Y2_人指_水掻;
+    	public ShapePart X0Y2_人指_水掻;
 
-    	public Par X0Y2_中指_中指3;
+    	public ShapePart X0Y2_中指_中指3;
 
-    	public Par X0Y2_中指_中指2;
+    	public ShapePart X0Y2_中指_中指2;
 
-    	public Par X0Y2_中指_中指1;
+    	public ShapePart X0Y2_中指_中指1;
 
-    	public Par X0Y2_中指_水掻;
+    	public ShapePart X0Y2_中指_水掻;
 
-    	public Par X0Y2_薬指_薬指3;
+    	public ShapePart X0Y2_薬指_薬指3;
 
-    	public Par X0Y2_薬指_薬指2;
+    	public ShapePart X0Y2_薬指_薬指2;
 
-    	public Par X0Y2_薬指_薬指1;
+    	public ShapePart X0Y2_薬指_薬指1;
 
-    	public Par X0Y2_薬指_水掻;
+    	public ShapePart X0Y2_薬指_水掻;
 
-    	public Par X0Y2_小指_小指3;
+    	public ShapePart X0Y2_小指_小指3;
 
-    	public Par X0Y2_小指_小指2;
+    	public ShapePart X0Y2_小指_小指2;
 
-    	public Par X0Y2_小指_小指1;
+    	public ShapePart X0Y2_小指_小指1;
 
-    	public Par X0Y2_手;
+    	public ShapePart X0Y2_手;
 
-    	public Par X0Y2_獣性_獣毛;
+    	public ShapePart X0Y2_獣性_獣毛;
 
-    	public Par X0Y2_竜性_鱗1;
+    	public ShapePart X0Y2_竜性_鱗1;
 
-    	public Par X0Y2_竜性_鱗2;
+    	public ShapePart X0Y2_竜性_鱗2;
 
-    	public Par X0Y2_竜性_鱗3;
+    	public ShapePart X0Y2_竜性_鱗3;
 
-    	public Par X0Y2_悪タトゥ_五芒星_円1;
+    	public ShapePart X0Y2_悪タトゥ_五芒星_円1;
 
-    	public Par X0Y2_悪タトゥ_五芒星_円2;
+    	public ShapePart X0Y2_悪タトゥ_五芒星_円2;
 
-    	public Par X0Y2_悪タトゥ_五芒星_星;
+    	public ShapePart X0Y2_悪タトゥ_五芒星_星;
 
-    	public Par X0Y2_悪タトゥ_五芒星_五角形;
+    	public ShapePart X0Y2_悪タトゥ_五芒星_五角形;
 
-    	public Par X0Y2_グローブ_グローブ;
+    	public ShapePart X0Y2_グローブ_グローブ;
 
-    	public Par X0Y2_グローブ_縁1;
+    	public ShapePart X0Y2_グローブ_縁1;
 
-    	public Par X0Y2_グローブ_縁2;
+    	public ShapePart X0Y2_グローブ_縁2;
 
-    	public Par X0Y3_親指_親指1;
+    	public ShapePart X0Y3_親指_親指1;
 
-    	public Par X0Y3_親指_親指2;
+    	public ShapePart X0Y3_親指_親指2;
 
-    	public Par X0Y3_親指_親指3;
+    	public ShapePart X0Y3_親指_親指3;
 
-    	public Par X0Y3_親指_水掻;
+    	public ShapePart X0Y3_親指_水掻;
 
-    	public Par X0Y3_人指_人指3;
+    	public ShapePart X0Y3_人指_人指3;
 
-    	public Par X0Y3_人指_人指2;
+    	public ShapePart X0Y3_人指_人指2;
 
-    	public Par X0Y3_人指_人指1;
+    	public ShapePart X0Y3_人指_人指1;
 
-    	public Par X0Y3_人指_水掻;
+    	public ShapePart X0Y3_人指_水掻;
 
-    	public Par X0Y3_中指_中指3;
+    	public ShapePart X0Y3_中指_中指3;
 
-    	public Par X0Y3_中指_中指2;
+    	public ShapePart X0Y3_中指_中指2;
 
-    	public Par X0Y3_中指_中指1;
+    	public ShapePart X0Y3_中指_中指1;
 
-    	public Par X0Y3_中指_水掻;
+    	public ShapePart X0Y3_中指_水掻;
 
-    	public Par X0Y3_薬指_薬指3;
+    	public ShapePart X0Y3_薬指_薬指3;
 
-    	public Par X0Y3_薬指_薬指2;
+    	public ShapePart X0Y3_薬指_薬指2;
 
-    	public Par X0Y3_薬指_薬指1;
+    	public ShapePart X0Y3_薬指_薬指1;
 
-    	public Par X0Y3_薬指_水掻;
+    	public ShapePart X0Y3_薬指_水掻;
 
-    	public Par X0Y3_小指_小指3;
+    	public ShapePart X0Y3_小指_小指3;
 
-    	public Par X0Y3_小指_小指2;
+    	public ShapePart X0Y3_小指_小指2;
 
-    	public Par X0Y3_小指_小指1;
+    	public ShapePart X0Y3_小指_小指1;
 
-    	public Par X0Y3_手;
+    	public ShapePart X0Y3_手;
 
-    	public Par X0Y3_獣性_獣毛;
+    	public ShapePart X0Y3_獣性_獣毛;
 
-    	public Par X0Y3_竜性_鱗1;
+    	public ShapePart X0Y3_竜性_鱗1;
 
-    	public Par X0Y3_竜性_鱗2;
+    	public ShapePart X0Y3_竜性_鱗2;
 
-    	public Par X0Y3_竜性_鱗3;
+    	public ShapePart X0Y3_竜性_鱗3;
 
-    	public Par X0Y3_悪タトゥ_五芒星_円1;
+    	public ShapePart X0Y3_悪タトゥ_五芒星_円1;
 
-    	public Par X0Y3_悪タトゥ_五芒星_円2;
+    	public ShapePart X0Y3_悪タトゥ_五芒星_円2;
 
-    	public Par X0Y3_悪タトゥ_五芒星_星;
+    	public ShapePart X0Y3_悪タトゥ_五芒星_星;
 
-    	public Par X0Y3_悪タトゥ_五芒星_五角形;
+    	public ShapePart X0Y3_悪タトゥ_五芒星_五角形;
 
-    	public Par X0Y3_グローブ_グローブ;
+    	public ShapePart X0Y3_グローブ_グローブ;
 
-    	public Par X0Y3_グローブ_縁1;
+    	public ShapePart X0Y3_グローブ_縁1;
 
-    	public Par X0Y3_グローブ_縁2;
+    	public ShapePart X0Y3_グローブ_縁2;
 
-    	public Par X0Y4_親指_親指3;
+    	public ShapePart X0Y4_親指_親指3;
 
-    	public Par X0Y4_親指_親指2;
+    	public ShapePart X0Y4_親指_親指2;
 
-    	public Par X0Y4_親指_親指1;
+    	public ShapePart X0Y4_親指_親指1;
 
-    	public Par X0Y4_親指_水掻;
+    	public ShapePart X0Y4_親指_水掻;
 
-    	public Par X0Y4_人指_人指3;
+    	public ShapePart X0Y4_人指_人指3;
 
-    	public Par X0Y4_人指_人指2;
+    	public ShapePart X0Y4_人指_人指2;
 
-    	public Par X0Y4_人指_人指1;
+    	public ShapePart X0Y4_人指_人指1;
 
-    	public Par X0Y4_人指_水掻;
+    	public ShapePart X0Y4_人指_水掻;
 
-    	public Par X0Y4_小指_小指3;
+    	public ShapePart X0Y4_小指_小指3;
 
-    	public Par X0Y4_小指_小指2;
+    	public ShapePart X0Y4_小指_小指2;
 
-    	public Par X0Y4_小指_小指1;
+    	public ShapePart X0Y4_小指_小指1;
 
-    	public Par X0Y4_中指_中指3;
+    	public ShapePart X0Y4_中指_中指3;
 
-    	public Par X0Y4_中指_中指2;
+    	public ShapePart X0Y4_中指_中指2;
 
-    	public Par X0Y4_中指_中指1;
+    	public ShapePart X0Y4_中指_中指1;
 
-    	public Par X0Y4_中指_水掻;
+    	public ShapePart X0Y4_中指_水掻;
 
-    	public Par X0Y4_薬指_薬指3;
+    	public ShapePart X0Y4_薬指_薬指3;
 
-    	public Par X0Y4_薬指_薬指2;
+    	public ShapePart X0Y4_薬指_薬指2;
 
-    	public Par X0Y4_薬指_薬指1;
+    	public ShapePart X0Y4_薬指_薬指1;
 
-    	public Par X0Y4_薬指_水掻;
+    	public ShapePart X0Y4_薬指_水掻;
 
-    	public Par X0Y4_手;
+    	public ShapePart X0Y4_手;
 
-    	public Par X0Y4_獣性_獣毛;
+    	public ShapePart X0Y4_獣性_獣毛;
 
-    	public Par X0Y4_竜性_鱗1;
+    	public ShapePart X0Y4_竜性_鱗1;
 
-    	public Par X0Y4_竜性_鱗2;
+    	public ShapePart X0Y4_竜性_鱗2;
 
-    	public Par X0Y4_竜性_鱗3;
+    	public ShapePart X0Y4_竜性_鱗3;
 
-    	public Par X0Y4_悪タトゥ_五芒星_円1;
+    	public ShapePart X0Y4_悪タトゥ_五芒星_円1;
 
-    	public Par X0Y4_悪タトゥ_五芒星_円2;
+    	public ShapePart X0Y4_悪タトゥ_五芒星_円2;
 
-    	public Par X0Y4_悪タトゥ_五芒星_星;
+    	public ShapePart X0Y4_悪タトゥ_五芒星_星;
 
-    	public Par X0Y4_悪タトゥ_五芒星_五角形;
+    	public ShapePart X0Y4_悪タトゥ_五芒星_五角形;
 
-    	public Par X0Y4_グローブ_グローブ;
+    	public ShapePart X0Y4_グローブ_グローブ;
 
-    	public Par X0Y4_グローブ_縁1;
+    	public ShapePart X0Y4_グローブ_縁1;
 
-    	public Par X0Y4_グローブ_縁2;
+    	public ShapePart X0Y4_グローブ_縁2;
 
-    	public Par X0Y5_親指_親指1;
+    	public ShapePart X0Y5_親指_親指1;
 
-    	public Par X0Y5_親指_親指2;
+    	public ShapePart X0Y5_親指_親指2;
 
-    	public Par X0Y5_親指_親指3;
+    	public ShapePart X0Y5_親指_親指3;
 
-    	public Par X0Y5_親指_水掻;
+    	public ShapePart X0Y5_親指_水掻;
 
-    	public Par X0Y5_人指_人指3;
+    	public ShapePart X0Y5_人指_人指3;
 
-    	public Par X0Y5_人指_人指2;
+    	public ShapePart X0Y5_人指_人指2;
 
-    	public Par X0Y5_人指_人指1;
+    	public ShapePart X0Y5_人指_人指1;
 
-    	public Par X0Y5_人指_水掻;
+    	public ShapePart X0Y5_人指_水掻;
 
-    	public Par X0Y5_中指_中指3;
+    	public ShapePart X0Y5_中指_中指3;
 
-    	public Par X0Y5_中指_中指2;
+    	public ShapePart X0Y5_中指_中指2;
 
-    	public Par X0Y5_中指_中指1;
+    	public ShapePart X0Y5_中指_中指1;
 
-    	public Par X0Y5_中指_水掻;
+    	public ShapePart X0Y5_中指_水掻;
 
-    	public Par X0Y5_薬指_薬指3;
+    	public ShapePart X0Y5_薬指_薬指3;
 
-    	public Par X0Y5_薬指_薬指2;
+    	public ShapePart X0Y5_薬指_薬指2;
 
-    	public Par X0Y5_薬指_薬指1;
+    	public ShapePart X0Y5_薬指_薬指1;
 
-    	public Par X0Y5_薬指_水掻;
+    	public ShapePart X0Y5_薬指_水掻;
 
-    	public Par X0Y5_小指_小指3;
+    	public ShapePart X0Y5_小指_小指3;
 
-    	public Par X0Y5_小指_小指2;
+    	public ShapePart X0Y5_小指_小指2;
 
-    	public Par X0Y5_小指_小指1;
+    	public ShapePart X0Y5_小指_小指1;
 
-    	public Par X0Y5_手;
+    	public ShapePart X0Y5_手;
 
-    	public Par X0Y5_獣性_獣毛;
+    	public ShapePart X0Y5_獣性_獣毛;
 
-    	public Par X0Y5_竜性_鱗1;
+    	public ShapePart X0Y5_竜性_鱗1;
 
-    	public Par X0Y5_竜性_鱗2;
+    	public ShapePart X0Y5_竜性_鱗2;
 
-    	public Par X0Y5_竜性_鱗3;
+    	public ShapePart X0Y5_竜性_鱗3;
 
-    	public Par X0Y5_悪タトゥ_五芒星_円1;
+    	public ShapePart X0Y5_悪タトゥ_五芒星_円1;
 
-    	public Par X0Y5_悪タトゥ_五芒星_円2;
+    	public ShapePart X0Y5_悪タトゥ_五芒星_円2;
 
-    	public Par X0Y5_悪タトゥ_五芒星_星;
+    	public ShapePart X0Y5_悪タトゥ_五芒星_星;
 
-    	public Par X0Y5_悪タトゥ_五芒星_五角形;
+    	public ShapePart X0Y5_悪タトゥ_五芒星_五角形;
 
-    	public Par X0Y5_グローブ_グローブ;
+    	public ShapePart X0Y5_グローブ_グローブ;
 
-    	public Par X0Y5_グローブ_縁1;
+    	public ShapePart X0Y5_グローブ_縁1;
 
-    	public Par X0Y5_グローブ_縁2;
+    	public ShapePart X0Y5_グローブ_縁2;
 
-    	public Par X0Y6_小指_小指3;
+    	public ShapePart X0Y6_小指_小指3;
 
-    	public Par X0Y6_小指_小指2;
+    	public ShapePart X0Y6_小指_小指2;
 
-    	public Par X0Y6_小指_小指1;
+    	public ShapePart X0Y6_小指_小指1;
 
-    	public Par X0Y6_薬指_水掻;
+    	public ShapePart X0Y6_薬指_水掻;
 
-    	public Par X0Y6_薬指_薬指3;
+    	public ShapePart X0Y6_薬指_薬指3;
 
-    	public Par X0Y6_薬指_薬指2;
+    	public ShapePart X0Y6_薬指_薬指2;
 
-    	public Par X0Y6_薬指_薬指1;
+    	public ShapePart X0Y6_薬指_薬指1;
 
-    	public Par X0Y6_中指_水掻;
+    	public ShapePart X0Y6_中指_水掻;
 
-    	public Par X0Y6_中指_中指3;
+    	public ShapePart X0Y6_中指_中指3;
 
-    	public Par X0Y6_中指_中指2;
+    	public ShapePart X0Y6_中指_中指2;
 
-    	public Par X0Y6_中指_中指1;
+    	public ShapePart X0Y6_中指_中指1;
 
-    	public Par X0Y6_人指_水掻;
+    	public ShapePart X0Y6_人指_水掻;
 
-    	public Par X0Y6_人指_人指3;
+    	public ShapePart X0Y6_人指_人指3;
 
-    	public Par X0Y6_人指_人指2;
+    	public ShapePart X0Y6_人指_人指2;
 
-    	public Par X0Y6_人指_人指1;
+    	public ShapePart X0Y6_人指_人指1;
 
-    	public Par X0Y6_親指_親指3;
+    	public ShapePart X0Y6_親指_親指3;
 
-    	public Par X0Y6_親指_親指2;
+    	public ShapePart X0Y6_親指_親指2;
 
-    	public Par X0Y6_親指_親指1;
+    	public ShapePart X0Y6_親指_親指1;
 
-    	public Par X0Y6_親指_水掻;
+    	public ShapePart X0Y6_親指_水掻;
 
-    	public Par X0Y6_手;
+    	public ShapePart X0Y6_手;
 
-    	public Par X0Y6_獣性_獣毛;
+    	public ShapePart X0Y6_獣性_獣毛;
 
-    	public Par X0Y6_竜性_鱗1;
+    	public ShapePart X0Y6_竜性_鱗1;
 
-    	public Par X0Y6_竜性_鱗2;
+    	public ShapePart X0Y6_竜性_鱗2;
 
-    	public Par X0Y6_竜性_鱗3;
+    	public ShapePart X0Y6_竜性_鱗3;
 
-    	public Par X0Y6_悪タトゥ_五芒星_円1;
+    	public ShapePart X0Y6_悪タトゥ_五芒星_円1;
 
-    	public Par X0Y6_悪タトゥ_五芒星_円2;
+    	public ShapePart X0Y6_悪タトゥ_五芒星_円2;
 
-    	public Par X0Y6_悪タトゥ_五芒星_星;
+    	public ShapePart X0Y6_悪タトゥ_五芒星_星;
 
-    	public Par X0Y6_悪タトゥ_五芒星_五角形;
+    	public ShapePart X0Y6_悪タトゥ_五芒星_五角形;
 
-    	public Par X0Y6_グローブ_グローブ;
+    	public ShapePart X0Y6_グローブ_グローブ;
 
-    	public Par X0Y6_グローブ_縁1;
+    	public ShapePart X0Y6_グローブ_縁1;
 
-    	public Par X0Y6_グローブ_縁2;
+    	public ShapePart X0Y6_グローブ_縁2;
 
-    	public Par X0Y7_親指_親指1;
+    	public ShapePart X0Y7_親指_親指1;
 
-    	public Par X0Y7_親指_親指2;
+    	public ShapePart X0Y7_親指_親指2;
 
-    	public Par X0Y7_親指_親指3;
+    	public ShapePart X0Y7_親指_親指3;
 
-    	public Par X0Y7_親指_水掻;
+    	public ShapePart X0Y7_親指_水掻;
 
-    	public Par X0Y7_手;
+    	public ShapePart X0Y7_手;
 
-    	public Par X0Y7_人指_人指3;
+    	public ShapePart X0Y7_人指_人指3;
 
-    	public Par X0Y7_人指_人指2;
+    	public ShapePart X0Y7_人指_人指2;
 
-    	public Par X0Y7_人指_人指1;
+    	public ShapePart X0Y7_人指_人指1;
 
-    	public Par X0Y7_人指_水掻;
+    	public ShapePart X0Y7_人指_水掻;
 
-    	public Par X0Y7_中指_中指3;
+    	public ShapePart X0Y7_中指_中指3;
 
-    	public Par X0Y7_中指_中指2;
+    	public ShapePart X0Y7_中指_中指2;
 
-    	public Par X0Y7_中指_中指1;
+    	public ShapePart X0Y7_中指_中指1;
 
-    	public Par X0Y7_中指_水掻;
+    	public ShapePart X0Y7_中指_水掻;
 
-    	public Par X0Y7_小指_小指3;
+    	public ShapePart X0Y7_小指_小指3;
 
-    	public Par X0Y7_小指_小指2;
+    	public ShapePart X0Y7_小指_小指2;
 
-    	public Par X0Y7_小指_小指1;
+    	public ShapePart X0Y7_小指_小指1;
 
-    	public Par X0Y7_薬指_薬指3;
+    	public ShapePart X0Y7_薬指_薬指3;
 
-    	public Par X0Y7_薬指_薬指2;
+    	public ShapePart X0Y7_薬指_薬指2;
 
-    	public Par X0Y7_薬指_薬指1;
+    	public ShapePart X0Y7_薬指_薬指1;
 
-    	public Par X0Y7_薬指_水掻;
+    	public ShapePart X0Y7_薬指_水掻;
 
-    	public Par X0Y7_獣性_獣毛;
+    	public ShapePart X0Y7_獣性_獣毛;
 
-    	public Par X0Y7_竜性_鱗1;
+    	public ShapePart X0Y7_竜性_鱗1;
 
-    	public Par X0Y7_竜性_鱗2;
+    	public ShapePart X0Y7_竜性_鱗2;
 
-    	public Par X0Y7_竜性_鱗3;
+    	public ShapePart X0Y7_竜性_鱗3;
 
-    	public Par X0Y7_悪タトゥ_五芒星_円1;
+    	public ShapePart X0Y7_悪タトゥ_五芒星_円1;
 
-    	public Par X0Y7_悪タトゥ_五芒星_円2;
+    	public ShapePart X0Y7_悪タトゥ_五芒星_円2;
 
-    	public Par X0Y7_悪タトゥ_五芒星_星;
+    	public ShapePart X0Y7_悪タトゥ_五芒星_星;
 
-    	public Par X0Y7_悪タトゥ_五芒星_五角形;
+    	public ShapePart X0Y7_悪タトゥ_五芒星_五角形;
 
-    	public Par X0Y7_グローブ_グローブ;
+    	public ShapePart X0Y7_グローブ_グローブ;
 
-    	public Par X0Y7_グローブ_縁1;
+    	public ShapePart X0Y7_グローブ_縁1;
 
-    	public Par X0Y7_グローブ_縁2;
+    	public ShapePart X0Y7_グローブ_縁2;
 
-    	public Par X0Y8_親指_親指3;
+    	public ShapePart X0Y8_親指_親指3;
 
-    	public Par X0Y8_親指_親指2;
+    	public ShapePart X0Y8_親指_親指2;
 
-    	public Par X0Y8_親指_親指1;
+    	public ShapePart X0Y8_親指_親指1;
 
-    	public Par X0Y8_親指_水掻;
+    	public ShapePart X0Y8_親指_水掻;
 
-    	public Par X0Y8_人指_人指3;
+    	public ShapePart X0Y8_人指_人指3;
 
-    	public Par X0Y8_人指_人指2;
+    	public ShapePart X0Y8_人指_人指2;
 
-    	public Par X0Y8_人指_人指1;
+    	public ShapePart X0Y8_人指_人指1;
 
-    	public Par X0Y8_人指_水掻;
+    	public ShapePart X0Y8_人指_水掻;
 
-    	public Par X0Y8_中指_中指3;
+    	public ShapePart X0Y8_中指_中指3;
 
-    	public Par X0Y8_中指_中指2;
+    	public ShapePart X0Y8_中指_中指2;
 
-    	public Par X0Y8_中指_中指1;
+    	public ShapePart X0Y8_中指_中指1;
 
-    	public Par X0Y8_中指_水掻;
+    	public ShapePart X0Y8_中指_水掻;
 
-    	public Par X0Y8_薬指_薬指3;
+    	public ShapePart X0Y8_薬指_薬指3;
 
-    	public Par X0Y8_薬指_薬指2;
+    	public ShapePart X0Y8_薬指_薬指2;
 
-    	public Par X0Y8_薬指_薬指1;
+    	public ShapePart X0Y8_薬指_薬指1;
 
-    	public Par X0Y8_薬指_水掻;
+    	public ShapePart X0Y8_薬指_水掻;
 
-    	public Par X0Y8_小指_小指3;
+    	public ShapePart X0Y8_小指_小指3;
 
-    	public Par X0Y8_小指_小指2;
+    	public ShapePart X0Y8_小指_小指2;
 
-    	public Par X0Y8_小指_小指1;
+    	public ShapePart X0Y8_小指_小指1;
 
-    	public Par X0Y8_手;
+    	public ShapePart X0Y8_手;
 
-    	public Par X0Y8_獣性_獣毛;
+    	public ShapePart X0Y8_獣性_獣毛;
 
-    	public Par X0Y8_竜性_鱗1;
+    	public ShapePart X0Y8_竜性_鱗1;
 
-    	public Par X0Y8_竜性_鱗2;
+    	public ShapePart X0Y8_竜性_鱗2;
 
-    	public Par X0Y8_竜性_鱗3;
+    	public ShapePart X0Y8_竜性_鱗3;
 
-    	public Par X0Y8_悪タトゥ_五芒星_円1;
+    	public ShapePart X0Y8_悪タトゥ_五芒星_円1;
 
-    	public Par X0Y8_悪タトゥ_五芒星_円2;
+    	public ShapePart X0Y8_悪タトゥ_五芒星_円2;
 
-    	public Par X0Y8_悪タトゥ_五芒星_星;
+    	public ShapePart X0Y8_悪タトゥ_五芒星_星;
 
-    	public Par X0Y8_悪タトゥ_五芒星_五角形;
+    	public ShapePart X0Y8_悪タトゥ_五芒星_五角形;
 
-    	public Par X0Y8_グローブ_グローブ;
+    	public ShapePart X0Y8_グローブ_グローブ;
 
-    	public Par X0Y8_グローブ_縁1;
+    	public ShapePart X0Y8_グローブ_縁1;
 
-    	public Par X0Y8_グローブ_縁2;
+    	public ShapePart X0Y8_グローブ_縁2;
 
-    	public Par X0Y9_グローブ_グローブ;
+    	public ShapePart X0Y9_グローブ_グローブ;
 
-    	public Par X0Y9_グローブ_縁1;
+    	public ShapePart X0Y9_グローブ_縁1;
 
-    	public Par X0Y9_グローブ_縁2;
+    	public ShapePart X0Y9_グローブ_縁2;
 
-    	public Par X0Y9_獣性_獣毛;
+    	public ShapePart X0Y9_獣性_獣毛;
 
-    	public Par X0Y9_手;
+    	public ShapePart X0Y9_手;
 
-    	public Par X0Y9_獣肉球;
+    	public ShapePart X0Y9_獣肉球;
 
-    	public Par X0Y9_人指_人指1;
+    	public ShapePart X0Y9_人指_人指1;
 
-    	public Par X0Y9_人指_人指3;
+    	public ShapePart X0Y9_人指_人指3;
 
-    	public Par X0Y9_人指_人指2;
+    	public ShapePart X0Y9_人指_人指2;
 
-    	public Par X0Y9_人指_水掻;
+    	public ShapePart X0Y9_人指_水掻;
 
-    	public Par X0Y9_中指_中指1;
+    	public ShapePart X0Y9_中指_中指1;
 
-    	public Par X0Y9_中指_中指3;
+    	public ShapePart X0Y9_中指_中指3;
 
-    	public Par X0Y9_中指_中指2;
+    	public ShapePart X0Y9_中指_中指2;
 
-    	public Par X0Y9_中指_水掻;
+    	public ShapePart X0Y9_中指_水掻;
 
-    	public Par X0Y9_薬指_薬指1;
+    	public ShapePart X0Y9_薬指_薬指1;
 
-    	public Par X0Y9_薬指_薬指3;
+    	public ShapePart X0Y9_薬指_薬指3;
 
-    	public Par X0Y9_薬指_薬指2;
+    	public ShapePart X0Y9_薬指_薬指2;
 
-    	public Par X0Y9_薬指_水掻;
+    	public ShapePart X0Y9_薬指_水掻;
 
-    	public Par X0Y9_小指_小指1;
+    	public ShapePart X0Y9_小指_小指1;
 
-    	public Par X0Y9_小指_小指3;
+    	public ShapePart X0Y9_小指_小指3;
 
-    	public Par X0Y9_小指_小指2;
+    	public ShapePart X0Y9_小指_小指2;
 
-    	public Par X0Y9_親指_水掻;
+    	public ShapePart X0Y9_親指_水掻;
 
-    	public Par X0Y9_親指_親指1;
+    	public ShapePart X0Y9_親指_親指1;
 
-    	public Par X0Y9_親指_獣肉球;
+    	public ShapePart X0Y9_親指_獣肉球;
 
-    	public Par X0Y9_親指_親指2;
+    	public ShapePart X0Y9_親指_親指2;
 
-    	public Par X0Y9_親指_親指3;
+    	public ShapePart X0Y9_親指_親指3;
 
-    	public Par X0Y10_親指_親指3;
+    	public ShapePart X0Y10_親指_親指3;
 
-    	public Par X0Y10_親指_親指2;
+    	public ShapePart X0Y10_親指_親指2;
 
-    	public Par X0Y10_親指_親指1;
+    	public ShapePart X0Y10_親指_親指1;
 
-    	public Par X0Y10_親指_水掻;
+    	public ShapePart X0Y10_親指_水掻;
 
-    	public Par X0Y10_人指_人指3;
+    	public ShapePart X0Y10_人指_人指3;
 
-    	public Par X0Y10_人指_人指2;
+    	public ShapePart X0Y10_人指_人指2;
 
-    	public Par X0Y10_人指_人指1;
+    	public ShapePart X0Y10_人指_人指1;
 
-    	public Par X0Y10_人指_水掻;
+    	public ShapePart X0Y10_人指_水掻;
 
-    	public Par X0Y10_小指_小指3;
+    	public ShapePart X0Y10_小指_小指3;
 
-    	public Par X0Y10_小指_小指2;
+    	public ShapePart X0Y10_小指_小指2;
 
-    	public Par X0Y10_小指_小指1;
+    	public ShapePart X0Y10_小指_小指1;
 
-    	public Par X0Y10_中指_中指3;
+    	public ShapePart X0Y10_中指_中指3;
 
-    	public Par X0Y10_中指_中指2;
+    	public ShapePart X0Y10_中指_中指2;
 
-    	public Par X0Y10_中指_中指1;
+    	public ShapePart X0Y10_中指_中指1;
 
-    	public Par X0Y10_中指_水掻;
+    	public ShapePart X0Y10_中指_水掻;
 
-    	public Par X0Y10_薬指_薬指3;
+    	public ShapePart X0Y10_薬指_薬指3;
 
-    	public Par X0Y10_薬指_薬指2;
+    	public ShapePart X0Y10_薬指_薬指2;
 
-    	public Par X0Y10_薬指_薬指1;
+    	public ShapePart X0Y10_薬指_薬指1;
 
-    	public Par X0Y10_薬指_水掻;
+    	public ShapePart X0Y10_薬指_水掻;
 
-    	public Par X0Y10_手;
+    	public ShapePart X0Y10_手;
 
-    	public Par X0Y10_獣性_獣毛;
+    	public ShapePart X0Y10_獣性_獣毛;
 
-    	public Par X0Y10_竜性_鱗1;
+    	public ShapePart X0Y10_竜性_鱗1;
 
-    	public Par X0Y10_竜性_鱗2;
+    	public ShapePart X0Y10_竜性_鱗2;
 
-    	public Par X0Y10_竜性_鱗3;
+    	public ShapePart X0Y10_竜性_鱗3;
 
-    	public Par X0Y10_悪タトゥ_五芒星_円1;
+    	public ShapePart X0Y10_悪タトゥ_五芒星_円1;
 
-    	public Par X0Y10_悪タトゥ_五芒星_円2;
+    	public ShapePart X0Y10_悪タトゥ_五芒星_円2;
 
-    	public Par X0Y10_悪タトゥ_五芒星_星;
+    	public ShapePart X0Y10_悪タトゥ_五芒星_星;
 
-    	public Par X0Y10_悪タトゥ_五芒星_五角形;
+    	public ShapePart X0Y10_悪タトゥ_五芒星_五角形;
 
-    	public Par X0Y10_グローブ_グローブ;
+    	public ShapePart X0Y10_グローブ_グローブ;
 
-    	public Par X0Y10_グローブ_縁1;
+    	public ShapePart X0Y10_グローブ_縁1;
 
-    	public Par X0Y10_グローブ_縁2;
+    	public ShapePart X0Y10_グローブ_縁2;
 
     	public ColorD グローブ_グローブCD;
 
@@ -4127,7 +4127,7 @@ namespace SlaveMatrix
 
     	public void 獣性()
     	{
-    		foreach (Par item in Body.EnumAllPar())
+    		foreach (ShapePart item in Body.EnumAllPar())
     		{
     			item.OP.ExpansionXY(item.OP.GetCenter(), 0.001);
     			item.SizeBase *= 1.2;
@@ -4136,7 +4136,7 @@ namespace SlaveMatrix
 
     	public void 竜性()
     	{
-    		foreach (Par item in Body.EnumAllPar())
+    		foreach (ShapePart item in Body.EnumAllPar())
     		{
     			if (item.Tag.Contains("鱗"))
     			{
@@ -4168,7 +4168,7 @@ namespace SlaveMatrix
     		X0Y10_親指_親指1.OP[(!右) ? 4 : 0].Outline = true;
     	}
 
-    	public override bool Is布(Par p)
+    	public override bool Is布(ShapePart p)
     	{
     		if (p != X0Y0_グローブ_グローブ && p != X0Y0_グローブ_縁1 && p != X0Y0_グローブ_縁2 && p != X0Y1_グローブ_グローブ && p != X0Y1_グローブ_縁1 && p != X0Y1_グローブ_縁2 && p != X0Y2_グローブ_グローブ && p != X0Y2_グローブ_縁1 && p != X0Y2_グローブ_縁2 && p != X0Y3_グローブ_グローブ && p != X0Y3_グローブ_縁1 && p != X0Y3_グローブ_縁2 && p != X0Y4_グローブ_グローブ && p != X0Y4_グローブ_縁1 && p != X0Y4_グローブ_縁2 && p != X0Y5_グローブ_グローブ && p != X0Y5_グローブ_縁1 && p != X0Y5_グローブ_縁2 && p != X0Y6_グローブ_グローブ && p != X0Y6_グローブ_縁1 && p != X0Y6_グローブ_縁2 && p != X0Y7_グローブ_グローブ && p != X0Y7_グローブ_縁1 && p != X0Y7_グローブ_縁2 && p != X0Y8_グローブ_グローブ && p != X0Y8_グローブ_縁1 && p != X0Y8_グローブ_縁2 && p != X0Y9_グローブ_グローブ && p != X0Y9_グローブ_縁1 && p != X0Y9_グローブ_縁2 && p != X0Y10_グローブ_グローブ && p != X0Y10_グローブ_縁1)
     		{

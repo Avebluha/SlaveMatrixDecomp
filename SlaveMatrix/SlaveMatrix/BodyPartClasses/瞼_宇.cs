@@ -5,35 +5,35 @@ namespace SlaveMatrix
 {
     public class 瞼_宇 : 双瞼
     {
-    	public Par X0Y0_目;
+    	public ShapePart X0Y0_目;
 
-    	public Par X0Y0_ハイライト;
+    	public ShapePart X0Y0_ハイライト;
 
-    	public Par X0Y0_瞬膜;
+    	public ShapePart X0Y0_瞬膜;
 
-    	public Par X0Y1_目;
+    	public ShapePart X0Y1_目;
 
-    	public Par X0Y1_ハイライト;
+    	public ShapePart X0Y1_ハイライト;
 
-    	public Par X0Y1_瞬膜;
+    	public ShapePart X0Y1_瞬膜;
 
-    	public Par X0Y2_目;
+    	public ShapePart X0Y2_目;
 
-    	public Par X0Y2_ハイライト;
+    	public ShapePart X0Y2_ハイライト;
 
-    	public Par X0Y2_瞬膜;
+    	public ShapePart X0Y2_瞬膜;
 
-    	public Par X0Y3_目;
+    	public ShapePart X0Y3_目;
 
-    	public Par X0Y3_ハイライト;
+    	public ShapePart X0Y3_ハイライト;
 
-    	public Par X0Y3_瞬膜;
+    	public ShapePart X0Y3_瞬膜;
 
-    	public Par X0Y4_目;
+    	public ShapePart X0Y4_目;
 
-    	public Par X0Y4_ハイライト;
+    	public ShapePart X0Y4_ハイライト;
 
-    	public Par X0Y4_瞬膜;
+    	public ShapePart X0Y4_瞬膜;
 
     	public ColorD 目CD;
 

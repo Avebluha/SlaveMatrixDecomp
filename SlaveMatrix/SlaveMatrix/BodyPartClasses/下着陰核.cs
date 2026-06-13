@@ -4,7 +4,7 @@ namespace SlaveMatrix
 {
     public class 下着陰核 : Ele
     {
-    	public Par X0Y0_陰核;
+    	public ShapePart X0Y0_陰核;
 
     	public ColorD 陰核CD;
 

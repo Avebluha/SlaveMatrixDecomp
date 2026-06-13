@@ -4,149 +4,149 @@ namespace SlaveMatrix
 {
     public class 後翅_羽 : 後翅
     {
-    	public Par X0Y0_後翅_後翅;
+    	public ShapePart X0Y0_後翅_後翅;
 
-    	public Par X0Y0_後翅_翅脈1;
+    	public ShapePart X0Y0_後翅_翅脈1;
 
-    	public Par X0Y0_後翅_翅脈2;
+    	public ShapePart X0Y0_後翅_翅脈2;
 
-    	public Par X0Y0_後翅_翅脈線1;
+    	public ShapePart X0Y0_後翅_翅脈線1;
 
-    	public Par X0Y0_後翅_翅脈線2;
+    	public ShapePart X0Y0_後翅_翅脈線2;
 
-    	public Par X0Y0_後翅_翅脈線3;
+    	public ShapePart X0Y0_後翅_翅脈線3;
 
-    	public Par X0Y0_後翅_翅脈線4;
+    	public ShapePart X0Y0_後翅_翅脈線4;
 
-    	public Par X0Y0_後翅_翅脈線5;
+    	public ShapePart X0Y0_後翅_翅脈線5;
 
-    	public Par X0Y0_後翅_翅脈線6;
+    	public ShapePart X0Y0_後翅_翅脈線6;
 
-    	public Par X0Y0_後翅_翅脈縦線1;
+    	public ShapePart X0Y0_後翅_翅脈縦線1;
 
-    	public Par X0Y0_後翅_翅脈縦線2;
+    	public ShapePart X0Y0_後翅_翅脈縦線2;
 
-    	public Par X0Y0_後翅_翅脈縦線3;
+    	public ShapePart X0Y0_後翅_翅脈縦線3;
 
-    	public Par X0Y0_後翅_翅脈縦線4;
+    	public ShapePart X0Y0_後翅_翅脈縦線4;
 
-    	public Par X0Y0_後翅_翅脈縦線5;
+    	public ShapePart X0Y0_後翅_翅脈縦線5;
 
-    	public Par X0Y0_後翅_翅脈縦線6;
+    	public ShapePart X0Y0_後翅_翅脈縦線6;
 
-    	public Par X0Y0_後翅_翅脈縦線7;
+    	public ShapePart X0Y0_後翅_翅脈縦線7;
 
-    	public Par X0Y0_後翅_翅脈縦線8;
+    	public ShapePart X0Y0_後翅_翅脈縦線8;
 
-    	public Par X0Y0_後翅_翅脈縦線9;
+    	public ShapePart X0Y0_後翅_翅脈縦線9;
 
-    	public Par X0Y0_後翅_翅脈縦線10;
+    	public ShapePart X0Y0_後翅_翅脈縦線10;
 
-    	public Par X0Y0_後翅_翅脈縦線11;
+    	public ShapePart X0Y0_後翅_翅脈縦線11;
 
-    	public Par X0Y0_後翅_翅脈縦線12;
+    	public ShapePart X0Y0_後翅_翅脈縦線12;
 
-    	public Par X0Y0_後翅_翅脈縦線13;
+    	public ShapePart X0Y0_後翅_翅脈縦線13;
 
-    	public Par X0Y0_後翅_翅脈縦線14;
+    	public ShapePart X0Y0_後翅_翅脈縦線14;
 
-    	public Par X0Y0_後翅_翅脈縦線15;
+    	public ShapePart X0Y0_後翅_翅脈縦線15;
 
-    	public Par X0Y0_後翅_翅脈縦線16;
+    	public ShapePart X0Y0_後翅_翅脈縦線16;
 
-    	public Par X0Y0_後翅_翅脈縦線17;
+    	public ShapePart X0Y0_後翅_翅脈縦線17;
 
-    	public Par X0Y0_後翅_翅脈網1_翅脈網線1;
+    	public ShapePart X0Y0_後翅_翅脈網1_翅脈網線1;
 
-    	public Par X0Y0_後翅_翅脈網1_翅脈網線2;
+    	public ShapePart X0Y0_後翅_翅脈網1_翅脈網線2;
 
-    	public Par X0Y0_後翅_翅脈網1_翅脈網線3;
+    	public ShapePart X0Y0_後翅_翅脈網1_翅脈網線3;
 
-    	public Par X0Y0_後翅_翅脈網2_翅脈網線1;
+    	public ShapePart X0Y0_後翅_翅脈網2_翅脈網線1;
 
-    	public Par X0Y0_後翅_翅脈網2_翅脈網線2;
+    	public ShapePart X0Y0_後翅_翅脈網2_翅脈網線2;
 
-    	public Par X0Y0_後翅_翅脈網2_翅脈網線3;
+    	public ShapePart X0Y0_後翅_翅脈網2_翅脈網線3;
 
-    	public Par X0Y0_後翅_翅脈網3_翅脈網線1;
+    	public ShapePart X0Y0_後翅_翅脈網3_翅脈網線1;
 
-    	public Par X0Y0_後翅_翅脈網3_翅脈網線2;
+    	public ShapePart X0Y0_後翅_翅脈網3_翅脈網線2;
 
-    	public Par X0Y0_後翅_翅脈網4_翅脈網線1;
+    	public ShapePart X0Y0_後翅_翅脈網4_翅脈網線1;
 
-    	public Par X0Y0_後翅_翅脈網4_翅脈網線2;
+    	public ShapePart X0Y0_後翅_翅脈網4_翅脈網線2;
 
-    	public Par X0Y1_後翅_後翅;
+    	public ShapePart X0Y1_後翅_後翅;
 
-    	public Par X0Y1_後翅_翅脈1;
+    	public ShapePart X0Y1_後翅_翅脈1;
 
-    	public Par X0Y1_後翅_翅脈2;
+    	public ShapePart X0Y1_後翅_翅脈2;
 
-    	public Par X0Y1_後翅_翅脈線1;
+    	public ShapePart X0Y1_後翅_翅脈線1;
 
-    	public Par X0Y1_後翅_翅脈線2;
+    	public ShapePart X0Y1_後翅_翅脈線2;
 
-    	public Par X0Y1_後翅_翅脈線3;
+    	public ShapePart X0Y1_後翅_翅脈線3;
 
-    	public Par X0Y1_後翅_翅脈線4;
+    	public ShapePart X0Y1_後翅_翅脈線4;
 
-    	public Par X0Y1_後翅_翅脈線5;
+    	public ShapePart X0Y1_後翅_翅脈線5;
 
-    	public Par X0Y1_後翅_翅脈線6;
+    	public ShapePart X0Y1_後翅_翅脈線6;
 
-    	public Par X0Y1_後翅_翅脈縦線1;
+    	public ShapePart X0Y1_後翅_翅脈縦線1;
 
-    	public Par X0Y1_後翅_翅脈縦線2;
+    	public ShapePart X0Y1_後翅_翅脈縦線2;
 
-    	public Par X0Y1_後翅_翅脈縦線3;
+    	public ShapePart X0Y1_後翅_翅脈縦線3;
 
-    	public Par X0Y1_後翅_翅脈縦線4;
+    	public ShapePart X0Y1_後翅_翅脈縦線4;
 
-    	public Par X0Y1_後翅_翅脈縦線5;
+    	public ShapePart X0Y1_後翅_翅脈縦線5;
 
-    	public Par X0Y1_後翅_翅脈縦線6;
+    	public ShapePart X0Y1_後翅_翅脈縦線6;
 
-    	public Par X0Y1_後翅_翅脈縦線7;
+    	public ShapePart X0Y1_後翅_翅脈縦線7;
 
-    	public Par X0Y1_後翅_翅脈縦線8;
+    	public ShapePart X0Y1_後翅_翅脈縦線8;
 
-    	public Par X0Y1_後翅_翅脈縦線9;
+    	public ShapePart X0Y1_後翅_翅脈縦線9;
 
-    	public Par X0Y1_後翅_翅脈縦線10;
+    	public ShapePart X0Y1_後翅_翅脈縦線10;
 
-    	public Par X0Y1_後翅_翅脈縦線11;
+    	public ShapePart X0Y1_後翅_翅脈縦線11;
 
-    	public Par X0Y1_後翅_翅脈縦線12;
+    	public ShapePart X0Y1_後翅_翅脈縦線12;
 
-    	public Par X0Y1_後翅_翅脈縦線13;
+    	public ShapePart X0Y1_後翅_翅脈縦線13;
 
-    	public Par X0Y1_後翅_翅脈縦線14;
+    	public ShapePart X0Y1_後翅_翅脈縦線14;
 
-    	public Par X0Y1_後翅_翅脈縦線15;
+    	public ShapePart X0Y1_後翅_翅脈縦線15;
 
-    	public Par X0Y1_後翅_翅脈縦線16;
+    	public ShapePart X0Y1_後翅_翅脈縦線16;
 
-    	public Par X0Y1_後翅_翅脈縦線17;
+    	public ShapePart X0Y1_後翅_翅脈縦線17;
 
-    	public Par X0Y1_後翅_翅脈網1_翅脈網線1;
+    	public ShapePart X0Y1_後翅_翅脈網1_翅脈網線1;
 
-    	public Par X0Y1_後翅_翅脈網1_翅脈網線2;
+    	public ShapePart X0Y1_後翅_翅脈網1_翅脈網線2;
 
-    	public Par X0Y1_後翅_翅脈網1_翅脈網線3;
+    	public ShapePart X0Y1_後翅_翅脈網1_翅脈網線3;
 
-    	public Par X0Y1_後翅_翅脈網2_翅脈網線1;
+    	public ShapePart X0Y1_後翅_翅脈網2_翅脈網線1;
 
-    	public Par X0Y1_後翅_翅脈網2_翅脈網線2;
+    	public ShapePart X0Y1_後翅_翅脈網2_翅脈網線2;
 
-    	public Par X0Y1_後翅_翅脈網2_翅脈網線3;
+    	public ShapePart X0Y1_後翅_翅脈網2_翅脈網線3;
 
-    	public Par X0Y1_後翅_翅脈網3_翅脈網線1;
+    	public ShapePart X0Y1_後翅_翅脈網3_翅脈網線1;
 
-    	public Par X0Y1_後翅_翅脈網3_翅脈網線2;
+    	public ShapePart X0Y1_後翅_翅脈網3_翅脈網線2;
 
-    	public Par X0Y1_後翅_翅脈網4_翅脈網線1;
+    	public ShapePart X0Y1_後翅_翅脈網4_翅脈網線1;
 
-    	public Par X0Y1_後翅_翅脈網4_翅脈網線2;
+    	public ShapePart X0Y1_後翅_翅脈網4_翅脈網線2;
 
     	public ColorD 後翅_後翅CD;
 

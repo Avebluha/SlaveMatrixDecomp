@@ -4,117 +4,117 @@ namespace SlaveMatrix
 {
     public class 足_竜 : 獣足
     {
-    	public Par X0Y0_足;
+    	public ShapePart X0Y0_足;
 
-    	public Par X0Y0_竜性_鱗足_鱗6;
+    	public ShapePart X0Y0_竜性_鱗足_鱗6;
 
-    	public Par X0Y0_竜性_鱗足_鱗5;
+    	public ShapePart X0Y0_竜性_鱗足_鱗5;
 
-    	public Par X0Y0_竜性_鱗足_鱗4;
+    	public ShapePart X0Y0_竜性_鱗足_鱗4;
 
-    	public Par X0Y0_竜性_鱗足_鱗3;
+    	public ShapePart X0Y0_竜性_鱗足_鱗3;
 
-    	public Par X0Y0_竜性_鱗足_鱗2;
+    	public ShapePart X0Y0_竜性_鱗足_鱗2;
 
-    	public Par X0Y0_竜性_鱗足_鱗1;
+    	public ShapePart X0Y0_竜性_鱗足_鱗1;
 
-    	public Par X0Y0_竜性_鱗踵_鱗1;
+    	public ShapePart X0Y0_竜性_鱗踵_鱗1;
 
-    	public Par X0Y0_竜性_鱗踵_鱗2;
+    	public ShapePart X0Y0_竜性_鱗踵_鱗2;
 
-    	public Par X0Y0_竜性_鱗踵_鱗3;
+    	public ShapePart X0Y0_竜性_鱗踵_鱗3;
 
-    	public Par X0Y0_竜性_鱗甲_鱗11;
+    	public ShapePart X0Y0_竜性_鱗甲_鱗11;
 
-    	public Par X0Y0_竜性_鱗甲_鱗10;
+    	public ShapePart X0Y0_竜性_鱗甲_鱗10;
 
-    	public Par X0Y0_竜性_鱗甲_鱗9;
+    	public ShapePart X0Y0_竜性_鱗甲_鱗9;
 
-    	public Par X0Y0_竜性_鱗甲_鱗8;
+    	public ShapePart X0Y0_竜性_鱗甲_鱗8;
 
-    	public Par X0Y0_竜性_鱗甲_鱗7;
+    	public ShapePart X0Y0_竜性_鱗甲_鱗7;
 
-    	public Par X0Y0_竜性_鱗甲_鱗6;
+    	public ShapePart X0Y0_竜性_鱗甲_鱗6;
 
-    	public Par X0Y0_竜性_鱗甲_鱗5;
+    	public ShapePart X0Y0_竜性_鱗甲_鱗5;
 
-    	public Par X0Y0_竜性_鱗甲_鱗4;
+    	public ShapePart X0Y0_竜性_鱗甲_鱗4;
 
-    	public Par X0Y0_竜性_鱗甲_鱗3;
+    	public ShapePart X0Y0_竜性_鱗甲_鱗3;
 
-    	public Par X0Y0_竜性_鱗甲_鱗2;
+    	public ShapePart X0Y0_竜性_鱗甲_鱗2;
 
-    	public Par X0Y0_竜性_鱗甲_鱗1;
+    	public ShapePart X0Y0_竜性_鱗甲_鱗1;
 
-    	public Par X0Y0_薬指_指;
+    	public ShapePart X0Y0_薬指_指;
 
-    	public Par X0Y0_薬指_爪;
+    	public ShapePart X0Y0_薬指_爪;
 
-    	public Par X0Y0_薬指_竜性_鱗_下_鱗1;
+    	public ShapePart X0Y0_薬指_竜性_鱗_下_鱗1;
 
-    	public Par X0Y0_薬指_竜性_鱗_下_鱗2;
+    	public ShapePart X0Y0_薬指_竜性_鱗_下_鱗2;
 
-    	public Par X0Y0_薬指_竜性_鱗_上_鱗1;
+    	public ShapePart X0Y0_薬指_竜性_鱗_上_鱗1;
 
-    	public Par X0Y0_薬指_竜性_鱗_上_鱗2;
+    	public ShapePart X0Y0_薬指_竜性_鱗_上_鱗2;
 
-    	public Par X0Y0_薬指_竜性_鱗_上_鱗3;
+    	public ShapePart X0Y0_薬指_竜性_鱗_上_鱗3;
 
-    	public Par X0Y0_中指_指;
+    	public ShapePart X0Y0_中指_指;
 
-    	public Par X0Y0_中指_爪;
+    	public ShapePart X0Y0_中指_爪;
 
-    	public Par X0Y0_中指_竜性_鱗_下_鱗1;
+    	public ShapePart X0Y0_中指_竜性_鱗_下_鱗1;
 
-    	public Par X0Y0_中指_竜性_鱗_下_鱗2;
+    	public ShapePart X0Y0_中指_竜性_鱗_下_鱗2;
 
-    	public Par X0Y0_中指_竜性_鱗_上_鱗1;
+    	public ShapePart X0Y0_中指_竜性_鱗_上_鱗1;
 
-    	public Par X0Y0_中指_竜性_鱗_上_鱗2;
+    	public ShapePart X0Y0_中指_竜性_鱗_上_鱗2;
 
-    	public Par X0Y0_中指_竜性_鱗_上_鱗3;
+    	public ShapePart X0Y0_中指_竜性_鱗_上_鱗3;
 
-    	public Par X0Y0_人指_指;
+    	public ShapePart X0Y0_人指_指;
 
-    	public Par X0Y0_人指_爪;
+    	public ShapePart X0Y0_人指_爪;
 
-    	public Par X0Y0_人指_竜性_鱗_下_鱗1;
+    	public ShapePart X0Y0_人指_竜性_鱗_下_鱗1;
 
-    	public Par X0Y0_人指_竜性_鱗_下_鱗2;
+    	public ShapePart X0Y0_人指_竜性_鱗_下_鱗2;
 
-    	public Par X0Y0_人指_竜性_鱗_上_鱗1;
+    	public ShapePart X0Y0_人指_竜性_鱗_上_鱗1;
 
-    	public Par X0Y0_人指_竜性_鱗_上_鱗2;
+    	public ShapePart X0Y0_人指_竜性_鱗_上_鱗2;
 
-    	public Par X0Y0_人指_竜性_鱗_上_鱗3;
+    	public ShapePart X0Y0_人指_竜性_鱗_上_鱗3;
 
-    	public Par X0Y0_親指_指;
+    	public ShapePart X0Y0_親指_指;
 
-    	public Par X0Y0_親指_爪;
+    	public ShapePart X0Y0_親指_爪;
 
-    	public Par X0Y0_親指_竜性_鱗_下_鱗1;
+    	public ShapePart X0Y0_親指_竜性_鱗_下_鱗1;
 
-    	public Par X0Y0_親指_竜性_鱗_下_鱗2;
+    	public ShapePart X0Y0_親指_竜性_鱗_下_鱗2;
 
-    	public Par X0Y0_親指_竜性_鱗_上_鱗1;
+    	public ShapePart X0Y0_親指_竜性_鱗_上_鱗1;
 
-    	public Par X0Y0_親指_竜性_鱗_上_鱗2;
+    	public ShapePart X0Y0_親指_竜性_鱗_上_鱗2;
 
-    	public Par X0Y0_親指_竜性_鱗_上_鱗3;
+    	public ShapePart X0Y0_親指_竜性_鱗_上_鱗3;
 
-    	public Par X0Y0_筋;
+    	public ShapePart X0Y0_筋;
 
-    	public Par X0Y0_脚輪_革;
+    	public ShapePart X0Y0_脚輪_革;
 
-    	public Par X0Y0_脚輪_金具1;
+    	public ShapePart X0Y0_脚輪_金具1;
 
-    	public Par X0Y0_脚輪_金具2;
+    	public ShapePart X0Y0_脚輪_金具2;
 
-    	public Par X0Y0_脚輪_金具3;
+    	public ShapePart X0Y0_脚輪_金具3;
 
-    	public Par X0Y0_脚輪_金具左;
+    	public ShapePart X0Y0_脚輪_金具左;
 
-    	public Par X0Y0_脚輪_金具右;
+    	public ShapePart X0Y0_脚輪_金具右;
 
     	public ColorD 足CD;
 

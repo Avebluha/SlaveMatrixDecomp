@@ -6,7 +6,7 @@ namespace SlaveMatrix
 {
     public struct ryps
     {
-        public Par r;
+        public ShapePart r;
 
         public Vector2D c;
 

@@ -6,81 +6,81 @@ namespace SlaveMatrix
 {
     public class 単足_植 : 半身
     {
-    	public Par X0Y0_幹上;
+    	public ShapePart X0Y0_幹上;
 
-    	public Par X0Y0_幹下;
+    	public ShapePart X0Y0_幹下;
 
-    	public Par X0Y0_葉左;
+    	public ShapePart X0Y0_葉左;
 
-    	public Par X0Y0_葉右;
+    	public ShapePart X0Y0_葉右;
 
-    	public Par X0Y0_脈上1;
+    	public ShapePart X0Y0_脈上1;
 
-    	public Par X0Y0_脈上2;
+    	public ShapePart X0Y0_脈上2;
 
-    	public Par X0Y0_脈下1;
+    	public ShapePart X0Y0_脈下1;
 
-    	public Par X0Y0_脈下2;
+    	public ShapePart X0Y0_脈下2;
 
-    	public Par X0Y0_虫食_左_虫食1;
+    	public ShapePart X0Y0_虫食_左_虫食1;
 
-    	public Par X0Y0_虫食_左_虫食2;
+    	public ShapePart X0Y0_虫食_左_虫食2;
 
-    	public Par X0Y0_虫食_左_虫食3;
+    	public ShapePart X0Y0_虫食_左_虫食3;
 
-    	public Par X0Y0_虫食_左_虫食4;
+    	public ShapePart X0Y0_虫食_左_虫食4;
 
-    	public Par X0Y0_虫食_左_虫食5;
+    	public ShapePart X0Y0_虫食_左_虫食5;
 
-    	public Par X0Y0_虫食_左_虫食6;
+    	public ShapePart X0Y0_虫食_左_虫食6;
 
-    	public Par X0Y0_虫食_左_虫食7;
+    	public ShapePart X0Y0_虫食_左_虫食7;
 
-    	public Par X0Y0_虫食_左_虫食8;
+    	public ShapePart X0Y0_虫食_左_虫食8;
 
-    	public Par X0Y0_虫食_左_虫食9;
+    	public ShapePart X0Y0_虫食_左_虫食9;
 
-    	public Par X0Y0_虫食_左_虫食10;
+    	public ShapePart X0Y0_虫食_左_虫食10;
 
-    	public Par X0Y0_虫食_左_虫食11;
+    	public ShapePart X0Y0_虫食_左_虫食11;
 
-    	public Par X0Y0_虫食_左_虫食12;
+    	public ShapePart X0Y0_虫食_左_虫食12;
 
-    	public Par X0Y0_虫食_右_虫食1;
+    	public ShapePart X0Y0_虫食_右_虫食1;
 
-    	public Par X0Y0_虫食_右_虫食2;
+    	public ShapePart X0Y0_虫食_右_虫食2;
 
-    	public Par X0Y0_虫食_右_虫食3;
+    	public ShapePart X0Y0_虫食_右_虫食3;
 
-    	public Par X0Y0_虫食_右_虫食4;
+    	public ShapePart X0Y0_虫食_右_虫食4;
 
-    	public Par X0Y0_虫食_右_虫食5;
+    	public ShapePart X0Y0_虫食_右_虫食5;
 
-    	public Par X0Y0_虫食_右_虫食6;
+    	public ShapePart X0Y0_虫食_右_虫食6;
 
-    	public Par X0Y0_虫食_右_虫食7;
+    	public ShapePart X0Y0_虫食_右_虫食7;
 
-    	public Par X0Y0_虫食_右_虫食8;
+    	public ShapePart X0Y0_虫食_右_虫食8;
 
-    	public Par X0Y0_虫食_右_虫食9;
+    	public ShapePart X0Y0_虫食_右_虫食9;
 
-    	public Par X0Y0_虫食_右_虫食10;
+    	public ShapePart X0Y0_虫食_右_虫食10;
 
-    	public Par X0Y0_虫食_右_虫食11;
+    	public ShapePart X0Y0_虫食_右_虫食11;
 
-    	public Par X0Y0_虫食_右_虫食12;
+    	public ShapePart X0Y0_虫食_右_虫食12;
 
-    	public Par X0Y0_脚輪_革;
+    	public ShapePart X0Y0_脚輪_革;
 
-    	public Par X0Y0_脚輪_金具1;
+    	public ShapePart X0Y0_脚輪_金具1;
 
-    	public Par X0Y0_脚輪_金具2;
+    	public ShapePart X0Y0_脚輪_金具2;
 
-    	public Par X0Y0_脚輪_金具3;
+    	public ShapePart X0Y0_脚輪_金具3;
 
-    	public Par X0Y0_脚輪_金具左;
+    	public ShapePart X0Y0_脚輪_金具左;
 
-    	public Par X0Y0_脚輪_金具右;
+    	public ShapePart X0Y0_脚輪_金具右;
 
     	public ColorD 幹上CD;
 
@@ -1174,7 +1174,7 @@ namespace SlaveMatrix
     		鎖2.描画0(Are);
     	}
 
-    	public override bool Is革(Par p)
+    	public override bool Is革(ShapePart p)
     	{
     		if (p != X0Y0_脚輪_革 && p != X0Y0_脚輪_金具1 && p != X0Y0_脚輪_金具2 && p != X0Y0_脚輪_金具3 && p != X0Y0_脚輪_金具左)
     		{

@@ -4,41 +4,41 @@ namespace SlaveMatrix
 {
     public class 染み_獣 : 染み
     {
-    	public Par X0Y0_潮1;
+    	public ShapePart X0Y0_潮1;
 
-    	public Par X0Y0_潮2;
+    	public ShapePart X0Y0_潮2;
 
-    	public Par X0Y0_潮3;
+    	public ShapePart X0Y0_潮3;
 
-    	public Par X0Y0_尿1;
+    	public ShapePart X0Y0_尿1;
 
-    	public Par X0Y0_尿2;
+    	public ShapePart X0Y0_尿2;
 
-    	public Par X0Y0_汗;
+    	public ShapePart X0Y0_汗;
 
-    	public Par X0Y0_湯気_湯気左1_湯気1;
+    	public ShapePart X0Y0_湯気_湯気左1_湯気1;
 
-    	public Par X0Y0_湯気_湯気左1_湯気2;
+    	public ShapePart X0Y0_湯気_湯気左1_湯気2;
 
-    	public Par X0Y0_湯気_湯気左2_湯気1;
+    	public ShapePart X0Y0_湯気_湯気左2_湯気1;
 
-    	public Par X0Y0_湯気_湯気左2_湯気2;
+    	public ShapePart X0Y0_湯気_湯気左2_湯気2;
 
-    	public Par X0Y0_湯気_湯気左3_湯気1;
+    	public ShapePart X0Y0_湯気_湯気左3_湯気1;
 
-    	public Par X0Y0_湯気_湯気左3_湯気2;
+    	public ShapePart X0Y0_湯気_湯気左3_湯気2;
 
-    	public Par X0Y0_湯気_湯気右1_湯気1;
+    	public ShapePart X0Y0_湯気_湯気右1_湯気1;
 
-    	public Par X0Y0_湯気_湯気右1_湯気2;
+    	public ShapePart X0Y0_湯気_湯気右1_湯気2;
 
-    	public Par X0Y0_湯気_湯気右2_湯気1;
+    	public ShapePart X0Y0_湯気_湯気右2_湯気1;
 
-    	public Par X0Y0_湯気_湯気右2_湯気2;
+    	public ShapePart X0Y0_湯気_湯気右2_湯気2;
 
-    	public Par X0Y0_湯気_湯気右3_湯気1;
+    	public ShapePart X0Y0_湯気_湯気右3_湯気1;
 
-    	public Par X0Y0_湯気_湯気右3_湯気2;
+    	public ShapePart X0Y0_湯気_湯気右3_湯気2;
 
     	public ColorD 潮1CD;
 

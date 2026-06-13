@@ -4,69 +4,69 @@ namespace SlaveMatrix
 {
     public class 単足_粘 : 半身
     {
-    	public Par X0Y0_粘液0;
+    	public ShapePart X0Y0_粘液0;
 
-    	public Par X0Y0_粘液1;
+    	public ShapePart X0Y0_粘液1;
 
-    	public Par X0Y0_粘液2_粘液;
+    	public ShapePart X0Y0_粘液2_粘液;
 
-    	public Par X0Y0_粘液2_ハイライト左;
+    	public ShapePart X0Y0_粘液2_ハイライト左;
 
-    	public Par X0Y0_粘液2_ハイライト右;
+    	public ShapePart X0Y0_粘液2_ハイライト右;
 
-    	public Par X0Y0_粘液2_ハイライト下1;
+    	public ShapePart X0Y0_粘液2_ハイライト下1;
 
-    	public Par X0Y0_粘液2_ハイライト下2;
+    	public ShapePart X0Y0_粘液2_ハイライト下2;
 
-    	public Par X0Y0_粘液3_粘液;
+    	public ShapePart X0Y0_粘液3_粘液;
 
-    	public Par X0Y0_粘液3_ハイライト左上;
+    	public ShapePart X0Y0_粘液3_ハイライト左上;
 
-    	public Par X0Y0_粘液3_ハイライト右上;
+    	public ShapePart X0Y0_粘液3_ハイライト右上;
 
-    	public Par X0Y0_粘液3_ハイライト左下1;
+    	public ShapePart X0Y0_粘液3_ハイライト左下1;
 
-    	public Par X0Y0_粘液3_ハイライト左下2;
+    	public ShapePart X0Y0_粘液3_ハイライト左下2;
 
-    	public Par X0Y0_粘液3_ハイライト右下1;
+    	public ShapePart X0Y0_粘液3_ハイライト右下1;
 
-    	public Par X0Y0_粘液3_ハイライト右下2;
+    	public ShapePart X0Y0_粘液3_ハイライト右下2;
 
-    	public Par X0Y0_粘液3_ハイライト下1;
+    	public ShapePart X0Y0_粘液3_ハイライト下1;
 
-    	public Par X0Y0_粘液3_ハイライト下2;
+    	public ShapePart X0Y0_粘液3_ハイライト下2;
 
-    	public Par X0Y0_粘液4_粘液;
+    	public ShapePart X0Y0_粘液4_粘液;
 
-    	public Par X0Y0_粘液4_ハイライト上1;
+    	public ShapePart X0Y0_粘液4_ハイライト上1;
 
-    	public Par X0Y0_粘液4_ハイライト上2;
+    	public ShapePart X0Y0_粘液4_ハイライト上2;
 
-    	public Par X0Y0_粘液4_ハイライト下1;
+    	public ShapePart X0Y0_粘液4_ハイライト下1;
 
-    	public Par X0Y0_粘液4_ハイライト下2;
+    	public ShapePart X0Y0_粘液4_ハイライト下2;
 
-    	public Par X0Y0_粘液下左_粘液;
+    	public ShapePart X0Y0_粘液下左_粘液;
 
-    	public Par X0Y0_粘液下左_ハイライト1;
+    	public ShapePart X0Y0_粘液下左_ハイライト1;
 
-    	public Par X0Y0_粘液下左_ハイライト2;
+    	public ShapePart X0Y0_粘液下左_ハイライト2;
 
-    	public Par X0Y0_粘液下右_粘液;
+    	public ShapePart X0Y0_粘液下右_粘液;
 
-    	public Par X0Y0_粘液下右_ハイライト1;
+    	public ShapePart X0Y0_粘液下右_ハイライト1;
 
-    	public Par X0Y0_粘液下右_ハイライト2;
+    	public ShapePart X0Y0_粘液下右_ハイライト2;
 
-    	public Par X0Y0_粘液上左_粘液;
+    	public ShapePart X0Y0_粘液上左_粘液;
 
-    	public Par X0Y0_粘液上左_ハイライト;
+    	public ShapePart X0Y0_粘液上左_ハイライト;
 
-    	public Par X0Y0_粘液上右_粘液;
+    	public ShapePart X0Y0_粘液上右_粘液;
 
-    	public Par X0Y0_粘液上右_ハイライト;
+    	public ShapePart X0Y0_粘液上右_ハイライト;
 
-    	public Par X0Y0_ハイライト;
+    	public ShapePart X0Y0_ハイライト;
 
     	public ColorD 粘液0CD;
 

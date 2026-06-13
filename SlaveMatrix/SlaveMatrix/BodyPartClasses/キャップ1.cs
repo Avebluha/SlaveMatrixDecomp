@@ -4,9 +4,9 @@ namespace SlaveMatrix
 {
     public class キャップ1 : Ele
     {
-    	public Par X0Y0_根本;
+    	public ShapePart X0Y0_根本;
 
-    	public Par X0Y0_先端;
+    	public ShapePart X0Y0_先端;
 
     	public ColorD 根本CD;
 
@@ -164,7 +164,7 @@ namespace SlaveMatrix
     		X0Y0_先端CP = new ColorP(X0Y0_先端, 先端CD, DisUnit, abj: true);
     		Intensity = e.濃度;
     		Vector2D local = X0Y0_根本.OP[0].ps[2];
-    		foreach (Par item in Body.EnumJoinRoot)
+    		foreach (ShapePart item in Body.EnumJoinRoot)
     		{
     			item.BasePointBase = item.ToLocal(X0Y0_根本.ToGlobal(local));
     		}

@@ -4,37 +4,37 @@ namespace SlaveMatrix
 {
     public class 虫鎌 : Ele
     {
-    	public Par X0Y0_虫鎌節;
+    	public ShapePart X0Y0_虫鎌節;
 
-    	public Par X0Y0_虫棘1;
+    	public ShapePart X0Y0_虫棘1;
 
-    	public Par X0Y0_虫棘2;
+    	public ShapePart X0Y0_虫棘2;
 
-    	public Par X0Y0_虫棘3;
+    	public ShapePart X0Y0_虫棘3;
 
-    	public Par X0Y0_虫棘4;
+    	public ShapePart X0Y0_虫棘4;
 
-    	public Par X0Y0_虫鎌1;
+    	public ShapePart X0Y0_虫鎌1;
 
-    	public Par X0Y0_虫鎌2;
+    	public ShapePart X0Y0_虫鎌2;
 
-    	public Par X0Y0_虫鎌3;
+    	public ShapePart X0Y0_虫鎌3;
 
-    	public Par X0Y0_虫孔1;
+    	public ShapePart X0Y0_虫孔1;
 
-    	public Par X0Y0_虫孔2;
+    	public ShapePart X0Y0_虫孔2;
 
-    	public Par X0Y0_輪_革;
+    	public ShapePart X0Y0_輪_革;
 
-    	public Par X0Y0_輪_金具1;
+    	public ShapePart X0Y0_輪_金具1;
 
-    	public Par X0Y0_輪_金具2;
+    	public ShapePart X0Y0_輪_金具2;
 
-    	public Par X0Y0_輪_金具3;
+    	public ShapePart X0Y0_輪_金具3;
 
-    	public Par X0Y0_輪_金具左;
+    	public ShapePart X0Y0_輪_金具左;
 
-    	public Par X0Y0_輪_金具右;
+    	public ShapePart X0Y0_輪_金具右;
 
     	public ColorD 虫鎌節CD;
 
@@ -540,7 +540,7 @@ namespace SlaveMatrix
     		Body.JoinPAall();
     	}
 
-    	public override bool Is革(Par p)
+    	public override bool Is革(ShapePart p)
     	{
     		if (p != X0Y0_輪_革 && p != X0Y0_輪_金具1 && p != X0Y0_輪_金具2 && p != X0Y0_輪_金具3 && p != X0Y0_輪_金具左)
     		{

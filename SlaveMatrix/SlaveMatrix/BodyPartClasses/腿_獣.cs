@@ -5,13 +5,13 @@ namespace SlaveMatrix
 {
     public class 腿_獣 : 獣腿
     {
-    	public Par X0Y0_腿;
+    	public ShapePart X0Y0_腿;
 
-    	public Par X0Y0_筋;
+    	public ShapePart X0Y0_筋;
 
-    	public Par X0Y0_虎柄_虎1;
+    	public ShapePart X0Y0_虎柄_虎1;
 
-    	public Par X0Y0_虎柄_虎2;
+    	public ShapePart X0Y0_虎柄_虎2;
 
     	public ColorD 腿CD;
 
