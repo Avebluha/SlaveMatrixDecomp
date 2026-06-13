@@ -75,6 +75,16 @@ namespace _2DGAMELIB
             ["ボテ腹板"] = "PregnantBellyPlate",
             ["固定帯"] = "FixingBelt",
             ["紅潮"] = "Blush",
+            ["肛門"] = "Anus",
+            ["肛門精液垂れ"] = "AnusSemenDrip",
+            ["膣基"] = "VaginaBase",
+            ["膣内精液"] = "InternalSemen",
+            ["性器"] = "Genitals",
+            ["性器精液垂れ"] = "GenitalsSemenDrip",
+            ["射精"] = "Ejaculation",
+            ["放尿"] = "Urination",
+            ["噴乳左"] = "LactationLeft",
+            ["潮吹"] = "Squirting",
         };
 
         public static void MigrateKeys(this Obj obj)

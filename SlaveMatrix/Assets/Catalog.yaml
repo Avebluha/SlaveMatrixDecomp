@@ -11,10 +11,10 @@ parts:
   path: Parts/Torso/
 - id: Chest
   path: Parts/Chest/
-- id: 膣基
-  path: Parts/膣基/
-- id: 膣内精液
-  path: Parts/膣内精液/
+- id: VaginaBase
+  path: Parts/VaginaBase/
+- id: InternalSemen
+  path: Parts/InternalSemen/
 - id: 断面
   path: Parts/断面/
 - id: PregnantBelly
@@ -27,8 +27,8 @@ parts:
   path: Parts/TorsoPlate/
 - id: TorsoSkin
   path: Parts/TorsoSkin/
-- id: 肛門
-  path: Parts/肛門/
+- id: Anus
+  path: Parts/Anus/
 - id: FixingBelt
   path: Parts/FixingBelt/
 - id: Neck
@@ -109,8 +109,8 @@ parts:
   path: Parts/EyebrowLeft/
 - id: 青筋左
   path: Parts/青筋左/
-- id: 噴乳左
-  path: Parts/噴乳左/
+- id: LactationLeft
+  path: Parts/LactationLeft/
 - id: キャップ左
   path: Parts/キャップ左/
 - id: 下着乳首左
@@ -131,8 +131,8 @@ parts:
   path: Parts/上着トップ/
 - id: 帽子
   path: Parts/帽子/
-- id: 肛門精液垂れ
-  path: Parts/肛門精液垂れ/
+- id: AnusSemenDrip
+  path: Parts/AnusSemenDrip/
 - id: Cough
   path: Parts/Cough/
 - id: Breath
@@ -265,18 +265,18 @@ parts:
   path: Parts/Horn/
 - id: 背中
   path: Parts/背中/
-- id: 性器
-  path: Parts/性器/
+- id: Genitals
+  path: Parts/Genitals/
 - id: 四足性器
   path: Parts/四足性器/
 - id: 飛沫
   path: Parts/飛沫/
-- id: 潮吹
-  path: Parts/潮吹/
-- id: 放尿
-  path: Parts/放尿/
-- id: 性器精液垂れ
-  path: Parts/性器精液垂れ/
+- id: Squirting
+  path: Parts/Squirting/
+- id: Urination
+  path: Parts/Urination/
+- id: GenitalsSemenDrip
+  path: Parts/GenitalsSemenDrip/
 - id: 四足飛沫
   path: Parts/四足飛沫/
 - id: 四足潮吹
@@ -301,8 +301,8 @@ parts:
   path: Parts/汚れ/
 - id: 押し付け
   path: Parts/押し付け/
-- id: 射精
-  path: Parts/射精/
+- id: Ejaculation
+  path: Parts/Ejaculation/
 - id: ペニス
   path: Parts/ペニス/
 - id: ハンド
