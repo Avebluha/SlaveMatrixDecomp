@@ -1,0 +1,46 @@
+id: Pantyhose
+original_key: パンスト
+resource: 胴体
+morph_x: 1
+morph_y: 5
+variants:
+- x: 0
+  y: 0
+  file: x0y0.svg
+- x: 0
+  y: 1
+  file: x0y1.svg
+- x: 0
+  y: 2
+  file: x0y2.svg
+- x: 0
+  y: 3
+  file: x0y3.svg
+- x: 0
+  y: 4
+  file: x0y4.svg
+fields:
+- name: パンスト
+- name: ウエストテープ
+- name: センターシーム
+joints:
+- position: [
+  0.5000000000000001,
+  0.48046623087434376
+]
+- position: [
+  0.5000000000000001,
+  0.4797974233488578
+]
+- position: [
+  0.5000000000000001,
+  0.47912861582337185
+]
+- position: [
+  0.5000000000000001,
+  0.4792778694192512
+]
+- position: [
+  0.5000000000000001,
+  0.4794271230151306
+]

@@ -1,0 +1,27 @@
+id: Hat
+original_key: 帽子
+resource: 胴体
+morph_x: 1
+morph_y: 1
+variants:
+- x: 0
+  y: 0
+  file: x0y0.svg
+fields:
+- name: ナース帽
+- name: 十字
+- name: 留具左
+- name: 留具右
+joints:
+- position: [
+  0.09500000000000001,
+  0.08657209822414329
+]
+- position: [
+  0.12373035553587274,
+  0.09752459310192672
+]
+- position: [
+  0.06626964446412721,
+  0.09752459310192672
+]

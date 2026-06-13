@@ -1,6 +1,6 @@
 parts:
-- id: 上着ボトム後
-  path: Parts/上着ボトム後/
+- id: JacketBottomBack
+  path: Parts/JacketBottomBack/
 - id: BackHair1
   path: Parts/BackHair1/
 - id: BackHair0
@@ -89,8 +89,8 @@ parts:
   path: Parts/DroolLeft/
 - id: DroolMouthGashLeft
   path: Parts/DroolMouthGashLeft/
-- id: 玉口枷
-  path: Parts/玉口枷/
+- id: BallGag
+  path: Parts/BallGag/
 - id: ChestPlate
   path: Parts/ChestPlate/
 - id: ChestSkin
@@ -111,36 +111,36 @@ parts:
   path: Parts/青筋左/
 - id: LactationLeft
   path: Parts/LactationLeft/
-- id: キャップ左
-  path: Parts/キャップ左/
-- id: 下着乳首左
-  path: Parts/下着乳首左/
-- id: 下着ボトム
-  path: Parts/下着ボトム/
-- id: 下着陰核
-  path: Parts/下着陰核/
-- id: パンスト
-  path: Parts/パンスト/
-- id: 下着トップ
-  path: Parts/下着トップ/
-- id: 上着ボトム前
-  path: Parts/上着ボトム前/
-- id: 上着ミドル
-  path: Parts/上着ミドル/
-- id: 上着トップ
-  path: Parts/上着トップ/
-- id: 帽子
-  path: Parts/帽子/
+- id: CapLeft
+  path: Parts/CapLeft/
+- id: UnderwearNippleLeft
+  path: Parts/UnderwearNippleLeft/
+- id: UnderwearBottom
+  path: Parts/UnderwearBottom/
+- id: UnderwearClitoris
+  path: Parts/UnderwearClitoris/
+- id: Pantyhose
+  path: Parts/Pantyhose/
+- id: UnderwearTop
+  path: Parts/UnderwearTop/
+- id: JacketBottomFront
+  path: Parts/JacketBottomFront/
+- id: JacketMid
+  path: Parts/JacketMid/
+- id: JacketTop
+  path: Parts/JacketTop/
+- id: Hat
+  path: Parts/Hat/
 - id: AnusSemenDrip
   path: Parts/AnusSemenDrip/
 - id: Cough
   path: Parts/Cough/
 - id: Breath
   path: Parts/Breath/
-- id: 留具後
-  path: Parts/留具後/
-- id: 留具前
-  path: Parts/留具前/
+- id: FastenerBack
+  path: Parts/FastenerBack/
+- id: FastenerFront
+  path: Parts/FastenerFront/
 - id: 意思表示
   path: Parts/意思表示/
 - id: 反応
@@ -287,8 +287,8 @@ parts:
   path: Parts/四足性器精液垂れ/
 - id: ピアス
   path: Parts/ピアス/
-- id: キャップ中
-  path: Parts/キャップ中/
+- id: CapMid
+  path: Parts/CapMid/
 - id: キスマーク
   path: Parts/キスマーク/
 - id: 鞭痕
@@ -299,8 +299,8 @@ parts:
   path: Parts/ぶっかけ/
 - id: 汚れ
   path: Parts/汚れ/
-- id: 押し付け
-  path: Parts/押し付け/
+- id: Pressing
+  path: Parts/Pressing/
 - id: Ejaculation
   path: Parts/Ejaculation/
 - id: ペニス
@@ -333,10 +333,10 @@ parts:
   path: Parts/染み/
 - id: 四足染み
   path: Parts/四足染み/
-- id: 拘束具上
-  path: Parts/拘束具上/
-- id: 拘束具下
-  path: Parts/拘束具下/
+- id: RestraintUpper
+  path: Parts/RestraintUpper/
+- id: RestraintLower
+  path: Parts/RestraintLower/
 - id: 衝撃
   path: Parts/衝撃/
 - id: 流血大
@@ -347,5 +347,5 @@ parts:
   path: Parts/流血小/
 - id: 鎖
   path: Parts/鎖/
-- id: 拘束鎖
-  path: Parts/拘束鎖/
+- id: RestraintChain
+  path: Parts/RestraintChain/
