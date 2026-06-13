@@ -1,5 +1,6 @@
 using System.Linq;
 using _2DGAMELIB;
+using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
@@ -7055,7 +7056,7 @@ namespace SlaveMatrix
 
     	public override void 描画0(RenderArea Are)
     	{
-    		if (Body.IndexY == 0)
+    		if (Body.GetIndexY() == 0)
     		{
     			Are.Draw(X0Y0_Leg);
     			Are.Draw(X0Y0_筋);
@@ -7255,7 +7256,7 @@ namespace SlaveMatrix
 
     	public void 外描画(RenderArea Are)
     	{
-    		if (Body.IndexY == 0)
+    		if (Body.GetIndexY() == 0)
     		{
     			Are.Draw(X0Y0_ブーツ_タン_タン);
     			Are.Draw(X0Y0_ブーツ_タン_縁_縁1);
@@ -7479,19 +7480,19 @@ namespace SlaveMatrix
 
     	public void 虫性()
     	{
-    		X0Y0_Leg.OP[(!右) ? 6 : 0].Outline = true;
-    		X0Y1_Leg.OP[(!右) ? 6 : 0].Outline = true;
+    		X0Y0_Leg.GetOP()[(!右) ? 6 : 0].Outline = true;
+    		X0Y1_Leg.GetOP()[(!右) ? 6 : 0].Outline = true;
     	}
 
     	public void 開脚(腿_人 腿)
     	{
-    		if (腿.Body.IndexY == 0 || 腿.Body.IndexY == 4)
+    		if (腿.Body.GetIndexY() == 0 || 腿.Body.GetIndexY() == 4)
     		{
-    			Body.IndexY = 0;
+    			Body.SetIndexY(0);
     		}
-    		else if (腿.Body.IndexY == 1 || 腿.Body.IndexY == 2 || 腿.Body.IndexY == 3)
+    		else if (腿.Body.GetIndexY() == 1 || 腿.Body.GetIndexY() == 2 || 腿.Body.GetIndexY() == 3)
     		{
-    			Body.IndexY = 1;
+    			Body.SetIndexY(1);
     		}
     	}
 
@@ -7524,7 +7525,7 @@ namespace SlaveMatrix
 
     	public override void 色更新()
     	{
-    		if (Body.IndexY == 0)
+    		if (Body.GetIndexY() == 0)
     		{
     			X0Y0_LegCP.Update();
     			X0Y0_筋CP.Update();

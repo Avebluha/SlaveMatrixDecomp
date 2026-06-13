@@ -1,4 +1,5 @@
 using _2DGAMELIB;
+using SlaveMatrix.GameClasses;
 using System.Linq;
 
 namespace SlaveMatrix

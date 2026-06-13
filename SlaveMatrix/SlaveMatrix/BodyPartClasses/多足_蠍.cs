@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using _2DGAMELIB;
+using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
@@ -941,8 +942,8 @@ namespace SlaveMatrix
     		set
     		{
     			くぱぁ_ = value;
-    			X0Y0_生殖口蓋左.AngleBase = 18.0 * くぱぁ_;
-    			X0Y0_生殖口蓋右.AngleBase = -18.0 * くぱぁ_;
+    			X0Y0_生殖口蓋左.SetAngleBase(18.0 * くぱぁ_);
+    			X0Y0_生殖口蓋右.SetAngleBase(-18.0 * くぱぁ_);
     		}
     	}
 
@@ -1296,23 +1297,23 @@ namespace SlaveMatrix
     	public override void SetAngle0()
     	{
     		double num = (右 ? (-1.0) : 1.0);
-    		X0Y0_基節_基節左0.AngleBase = num * 39.0;
-    		X0Y0_基節_基節左1.AngleBase = num * 22.0;
-    		X0Y0_基節_基節左2.AngleBase = num * -11.0;
-    		X0Y0_基節_基節左3.AngleBase = num * -36.0;
-    		X0Y0_基節_基節左4.AngleBase = num * -45.0;
-    		X0Y0_基節_基節右0.AngleBase = num * -39.0;
-    		X0Y0_基節_基節右1.AngleBase = num * -22.0;
-    		X0Y0_基節_基節右2.AngleBase = num * 11.0;
-    		X0Y0_基節_基節右3.AngleBase = num * 36.0;
-    		X0Y0_基節_基節右4.AngleBase = num * 45.0;
+    		X0Y0_基節_基節左0.SetAngleBase(num * 39.0);
+    		X0Y0_基節_基節左1.SetAngleBase(num * 22.0);
+    		X0Y0_基節_基節左2.SetAngleBase(num * -11.0);
+    		X0Y0_基節_基節左3.SetAngleBase(num * -36.0);
+    		X0Y0_基節_基節左4.SetAngleBase(num * -45.0);
+    		X0Y0_基節_基節右0.SetAngleBase(num * -39.0);
+    		X0Y0_基節_基節右1.SetAngleBase(num * -22.0);
+    		X0Y0_基節_基節右2.SetAngleBase(num * 11.0);
+    		X0Y0_基節_基節右3.SetAngleBase(num * 36.0);
+    		X0Y0_基節_基節右4.SetAngleBase(num * 45.0);
     		double maxAngle = 10.0;
-    		X0Y0_前腹_腹節7_節0.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_前腹_腹節6_節0.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_前腹_腹節5_節0.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_前腹_腹節4_節0.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_前腹_腹節3_節0.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_前腹_腹節2_節0.AngleBase = maxAngle.GetRanAngle();
+    		X0Y0_前腹_腹節7_節0.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_前腹_腹節6_節0.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_前腹_腹節5_節0.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_前腹_腹節4_節0.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_前腹_腹節3_節0.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_前腹_腹節2_節0.SetAngleBase(maxAngle.GetRanAngle());
     		Body.JoinPAall();
     	}
 

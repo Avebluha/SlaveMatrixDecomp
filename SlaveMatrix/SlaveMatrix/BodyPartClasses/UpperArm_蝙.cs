@@ -1,6 +1,7 @@
 using System;
 using System.Linq;
 using _2DGAMELIB;
+using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
@@ -238,7 +239,7 @@ namespace SlaveMatrix
     		{
     			double num = value.Inverse();
     			double num2 = (右 ? (-1.0) : 1.0);
-    			X0Y0_獣翼UpperArm.AngleCont = num2 * -68.0 * num;
+    			X0Y0_獣翼UpperArm.SetAngleCont(num2 * -68.0 * num);
     		}
     	}
 
@@ -246,12 +247,12 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return X0Y0_獣翼UpperArm.OP[右 ? 3 : 0].Outline;
+    			return X0Y0_獣翼UpperArm.GetOP()[右 ? 3 : 0].Outline;
     		}
     		set
     		{
-    			X0Y0_獣翼UpperArm.OP[右 ? 3 : 0].Outline = value;
-    			X0Y0_獣翼UpperArm.OP[(!右) ? 1 : 2].Outline = value;
+    			X0Y0_獣翼UpperArm.GetOP()[右 ? 3 : 0].Outline = value;
+    			X0Y0_獣翼UpperArm.GetOP()[(!右) ? 1 : 2].Outline = value;
     		}
     	}
 
@@ -497,11 +498,11 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return X0Y0_獣翼UpperArm.OP[(!右) ? 1 : 2].Outline;
+    			return X0Y0_獣翼UpperArm.GetOP()[(!右) ? 1 : 2].Outline;
     		}
     		set
     		{
-    			X0Y0_獣翼UpperArm.OP[(!右) ? 1 : 2].Outline = value;
+    			X0Y0_獣翼UpperArm.GetOP()[(!右) ? 1 : 2].Outline = value;
     		}
     	}
 
@@ -594,7 +595,7 @@ namespace SlaveMatrix
     	public override void SetAngle0()
     	{
     		double num = (右 ? (-1.0) : 1.0);
-    		X0Y0_獣翼UpperArm.AngleBase = num * 0.0;
+    		X0Y0_獣翼UpperArm.SetAngleBase(num * 0.0);
     		Body.JoinPAall();
     	}
 
@@ -611,7 +612,7 @@ namespace SlaveMatrix
 
     	public Vector2D Get飛膜接続点()
     	{
-    		return X0Y0_獣翼UpperArm.ToGlobal(右 ? X0Y0_獣翼UpperArm.OP[0].ps[1] : X0Y0_獣翼UpperArm.OP[3].ps[4]);
+    		return X0Y0_獣翼UpperArm.ToGlobal(右 ? X0Y0_獣翼UpperArm.GetOP()[0].ps[1] : X0Y0_獣翼UpperArm.GetOP()[3].ps[4]);
     	}
 
     	public override void 色更新()

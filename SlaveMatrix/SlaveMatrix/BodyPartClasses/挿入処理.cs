@@ -231,7 +231,7 @@ namespace SlaveMatrix
     			if (Bod.断面_表示)
     			{
     				dv = (dv + value).Clamp(0.0, 1.0);
-    				dy = ((dv >= 1.0) ? (対象.Ele.Body.CountY - 1) : ((int)((double)対象.Ele.Body.CountY * dv)));
+    				dy = ((dv >= 1.0) ? (対象.Ele.Body.GetCountY() - 1) : ((int)((double)対象.Ele.Body.GetCountY() * dv)));
     				if (対象.Ele is バイブ_アナル)
     				{
     					dy = dy.Limit(0, Bod.Is獣 ? A断面獣最大i : A断面人最大i);
@@ -660,31 +660,31 @@ namespace SlaveMatrix
     			if (Bod.断面_表示)
     			{
     				Bod.性器.接続PA();
-    				対象.Ele.位置B = Bod.性器.Body.Current.EnumAllPar().First((Par p_) => p_.Tag.Contains("膣口")).Position;
-    				p0 = 対象.Ele.Body.pr[対象.Ele.Body[対象.Ele.Body.IndexX][0]];
-    				py = 対象.Ele.Body.pr[対象.Ele.Body[対象.Ele.Body.IndexX][dy]];
+    				対象.Ele.位置B = Bod.性器.Body.GetCurrent().EnumAllPar().First((Par p_) => p_.Tag.Contains("膣口")).GetPosition();
+    				p0 = 対象.Ele.Body.pr[対象.Ele.Body[対象.Ele.Body.GetIndexX()][0]];
+    				py = 対象.Ele.Body.pr[対象.Ele.Body[対象.Ele.Body.GetIndexX()][dy]];
     				if (pn)
     				{
-    					bp = py.PositionBase;
-    					py.PositionBase = 対象.Ele.位置B;
-    					y0 = py.ToGlobal(py.OP[0].ps[psi]).Y;
-    					py.PositionBase = bp;
+    					bp = py.GetPositionBase();
+    					py.SetPositionBase(対象.Ele.位置B);
+    					y0 = py.ToGlobal(py.GetOP()[0].ps[psi]).Y;
+    					py.SetPositionBase(bp);
     				}
     				else
     				{
-    					y0 = py.ToGlobal(py.OP[0].ps[psi]).Y;
+    					y0 = py.ToGlobal(py.GetOP()[0].ps[psi]).Y;
     				}
-    				対象.Ele.位置B = 対象.Ele.位置B.AddY(p0.BasePointBase.Y - py.BasePointBase.Y);
+    				対象.Ele.位置B = 対象.Ele.位置B.AddY(p0.GetBasePointBase().Y - py.GetBasePointBase().Y);
     				if (pn)
     				{
-    					bp = p0.PositionBase;
-    					p0.PositionBase = 対象.Ele.位置B;
-    					対象.Ele.位置B = 対象.Ele.位置B.AddY(y0 - p0.ToGlobal(p0.OP[0].ps[psi]).Y);
-    					p0.PositionBase = bp;
+    					bp = p0.GetPositionBase();
+    					p0.SetPositionBase(対象.Ele.位置B);
+    					対象.Ele.位置B = 対象.Ele.位置B.AddY(y0 - p0.ToGlobal(p0.GetOP()[0].ps[psi]).Y);
+    					p0.SetPositionBase(bp);
     				}
     				else
     				{
-    					対象.Ele.位置B = 対象.Ele.位置B.AddY(y0 - p0.ToGlobal(p0.OP[0].ps[psi]).Y);
+    					対象.Ele.位置B = 対象.Ele.位置B.AddY(y0 - p0.ToGlobal(p0.GetOP()[0].ps[psi]).Y);
     				}
     			}
     			else
@@ -869,7 +869,7 @@ namespace SlaveMatrix
     			対象.Ele.Yi = 0;
     			Bod.性器.Xi = 3;
     			dv = v;
-    			dy = ((dv >= 1.0) ? (対象.Ele.Body.CountY - 1) : ((int)((double)対象.Ele.Body.CountY * dv)));
+    			dy = ((dv >= 1.0) ? (対象.Ele.Body.GetCountY() - 1) : ((int)((double)対象.Ele.Body.GetCountY() * dv)));
     			if (対象.Ele is バイブ_アナル)
     			{
     				dy = dy.Limit(0, Bod.Is獣 ? A断面獣最大i : A断面人最大i);
@@ -1517,7 +1517,7 @@ namespace SlaveMatrix
     					if (v)
     					{
     						対象.Ele.位置C = p.MulX(0.5);
-    						対象.Ele.Body.Current.EnumAllPar().First((Par e) => e.Tag.Contains("ヘッド")).PositionCont = p;
+    						対象.Ele.Body.GetCurrent().EnumAllPar().First((Par e) => e.Tag.Contains("ヘッド")).SetPositionCont(p);
     					}
     					else
     					{
@@ -1559,7 +1559,7 @@ namespace SlaveMatrix
     					m.ResetValue();
     					foreach (Par item in 対象.Ele.Body.EnumAllPar())
     					{
-    						item.PositionCont = Dat.Vec2DZero;
+    						item.SetPositionCont(Dat.Vec2DZero);
     					}
     					挿入処理2.Bod.断面.位置C = Dat.Vec2DZero;
     				}
@@ -1675,12 +1675,12 @@ namespace SlaveMatrix
     		押し付け = 振動機能 || 対象.Ele is ペニス;
     		A断面獣最大i = 5;
     		A断面人最大i = A断面獣最大i - 1;
-    		double num = 1.0 / (double)調教UI.アナル.Body.CountY;
+    		double num = 1.0 / (double)調教UI.アナル.Body.GetCountY();
     		A通常獣最大v = num * (double)(A断面獣最大i - 1);
     		A通常人最大v = num * (double)(A断面人最大i - 1);
     		P断面獣最大i = 11;
     		P断面人最大i = P断面獣最大i - 1;
-    		double num2 = 1.0 / (double)調教UI.パール.Body.CountY;
+    		double num2 = 1.0 / (double)調教UI.パール.Body.GetCountY();
     		P通常獣最大v = num2 * (double)(P断面獣最大i - 1);
     		P通常人最大v = num2 * (double)(P断面人最大i - 1);
     		psi = ((対象.Ele is ロータ) ? 2 : 0);
@@ -1717,8 +1717,8 @@ namespace SlaveMatrix
     	{
     		base.Cha = Cha;
     		Bod = Cha.Body;
-    		性器単位v = 1.0 / (double)Bod.性器.Body.CountY;
-    		断面単位v = 1.0 / (double)Bod.断面.Body.CountY;
+    		性器単位v = 1.0 / (double)Bod.性器.Body.GetCountY();
+    		断面単位v = 1.0 / (double)Bod.断面.Body.GetCountY();
     		断面単位v2 = 断面単位v * 2.0;
     		断面単位v3 = 断面単位v * 3.0;
     	}

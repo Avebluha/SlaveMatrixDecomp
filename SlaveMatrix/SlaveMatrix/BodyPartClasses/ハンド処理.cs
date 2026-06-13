@@ -859,8 +859,8 @@ namespace SlaveMatrix
     			調教UI.Set_乳首(調教UI.ハンド左, 右: false);
     			調教UI.押し(ref cd);
     			乳繰りモード(ref cd);
-    			調教UI.ハンド右.Yi = (調教UI.ハンド右.Yi + dt.Sign() * 2).Clamp(0, 調教UI.ハンド右.Body.CountY);
-    			調教UI.ハンド左.Yi = (調教UI.ハンド左.Yi - dt.Sign() * 2).Clamp(0, 調教UI.ハンド左.Body.CountY);
+    			調教UI.ハンド右.Yi = (調教UI.ハンド右.Yi + dt.Sign() * 2).Clamp(0, 調教UI.ハンド右.Body.GetCountY());
+    			調教UI.ハンド左.Yi = (調教UI.ハンド左.Yi - dt.Sign() * 2).Clamp(0, 調教UI.ハンド左.Body.GetCountY());
     			乳繰りsi();
     			調教UI.乳首演出();
     		}

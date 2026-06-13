@@ -1,5 +1,6 @@
 using System.Linq;
 using _2DGAMELIB;
+using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
@@ -592,20 +593,20 @@ namespace SlaveMatrix
     		Intensity = e.濃度;
     		AreM = new AreM(Med.Unit, 3.0, 7.0, 0.07, Med.DisQuality, Med.HitAccuracy, 0.45);
     		AreM.BasePoint = new Vector2D(0.5, 0.1);
-    		X0Y0_陰嚢.BasePointBase = X0Y0_陰嚢.ToLocal(X0Y0_陰茎.ToGlobal(X0Y0_陰茎.JP[3].Joint));
-    		X0Y1_陰嚢.BasePointBase = X0Y1_陰嚢.ToLocal(X0Y1_陰茎.ToGlobal(X0Y1_陰茎.JP[3].Joint));
-    		X0Y2_陰嚢.BasePointBase = X0Y2_陰嚢.ToLocal(X0Y2_陰茎.ToGlobal(X0Y2_陰茎.JP[3].Joint));
-    		X0Y3_陰嚢.BasePointBase = X0Y3_陰嚢.ToLocal(X0Y3_陰茎.ToGlobal(X0Y3_陰茎.JP[3].Joint));
-    		X0Y4_陰嚢.BasePointBase = X0Y4_陰嚢.ToLocal(X0Y4_陰茎.ToGlobal(X0Y4_陰茎.JP[3].Joint));
-    		X1Y0_陰嚢.BasePointBase = X1Y0_陰嚢.ToLocal(X1Y0_陰茎.ToGlobal(X1Y0_陰茎.JP[3].Joint));
-    		X1Y1_陰嚢.BasePointBase = X1Y1_陰嚢.ToLocal(X1Y1_陰茎.ToGlobal(X1Y1_陰茎.JP[3].Joint));
-    		X1Y2_陰嚢.BasePointBase = X1Y2_陰嚢.ToLocal(X1Y2_陰茎.ToGlobal(X1Y2_陰茎.JP[2].Joint));
-    		X1Y3_陰嚢.BasePointBase = X1Y3_陰嚢.ToLocal(X1Y3_陰茎.ToGlobal(X1Y3_陰茎.JP[2].Joint));
-    		X1Y4_陰嚢.BasePointBase = X1Y4_陰嚢.ToLocal(X1Y4_陰茎.ToGlobal(X1Y4_陰茎.JP[2].Joint));
+    		X0Y0_陰嚢.SetBasePointBase(X0Y0_陰嚢.ToLocal(X0Y0_陰茎.ToGlobal(X0Y0_陰茎.GetJP()[3].Joint)));
+    		X0Y1_陰嚢.SetBasePointBase(X0Y1_陰嚢.ToLocal(X0Y1_陰茎.ToGlobal(X0Y1_陰茎.GetJP()[3].Joint)));
+    		X0Y2_陰嚢.SetBasePointBase(X0Y2_陰嚢.ToLocal(X0Y2_陰茎.ToGlobal(X0Y2_陰茎.GetJP()[3].Joint)));
+    		X0Y3_陰嚢.SetBasePointBase(X0Y3_陰嚢.ToLocal(X0Y3_陰茎.ToGlobal(X0Y3_陰茎.GetJP()[3].Joint)));
+    		X0Y4_陰嚢.SetBasePointBase(X0Y4_陰嚢.ToLocal(X0Y4_陰茎.ToGlobal(X0Y4_陰茎.GetJP()[3].Joint)));
+    		X1Y0_陰嚢.SetBasePointBase(X1Y0_陰嚢.ToLocal(X1Y0_陰茎.ToGlobal(X1Y0_陰茎.GetJP()[3].Joint)));
+    		X1Y1_陰嚢.SetBasePointBase(X1Y1_陰嚢.ToLocal(X1Y1_陰茎.ToGlobal(X1Y1_陰茎.GetJP()[3].Joint)));
+    		X1Y2_陰嚢.SetBasePointBase(X1Y2_陰嚢.ToLocal(X1Y2_陰茎.ToGlobal(X1Y2_陰茎.GetJP()[2].Joint)));
+    		X1Y3_陰嚢.SetBasePointBase(X1Y3_陰嚢.ToLocal(X1Y3_陰茎.ToGlobal(X1Y3_陰茎.GetJP()[2].Joint)));
+    		X1Y4_陰嚢.SetBasePointBase(X1Y4_陰嚢.ToLocal(X1Y4_陰茎.ToGlobal(X1Y4_陰茎.GetJP()[2].Joint)));
     		Vector2D position = AreM.GetPosition(ref AreM.BasePoint);
     		foreach (Par item in Body.EnumJoinRoot)
     		{
-    			item.PositionBase = position;
+    			item.SetPositionBase(position);
     		}
     		Body.JoinPAall();
     		尺度B *= 1.07;
@@ -627,9 +628,9 @@ namespace SlaveMatrix
 
     	public override void 色更新()
     	{
-    		if (Body.IndexX == 0)
+    		if (Body.GetIndexX() == 0)
     		{
-    			switch (Body.IndexY)
+    			switch (Body.GetIndexY())
     			{
     			case 0:
     				X0Y0_陰嚢CP.Update();
@@ -670,7 +671,7 @@ namespace SlaveMatrix
     		}
     		else
     		{
-    			switch (Body.IndexY)
+    			switch (Body.GetIndexY())
     			{
     			case 0:
     				X1Y0_陰嚢CP.Update();

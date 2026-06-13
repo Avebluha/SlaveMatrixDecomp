@@ -736,10 +736,10 @@ namespace SlaveMatrix
     		set
     		{
     			double num = 0.9 + 0.2 * value;
-    			X0Y0_髪左4.SizeYBase *= num;
-    			X0Y0_髪左5.SizeYBase *= num;
-    			X0Y0_髪右4.SizeYBase *= num;
-    			X0Y0_髪右5.SizeYBase *= num;
+    			X0Y0_髪左4.SetSizeYBase(X0Y0_髪左4.GetSizeYBase() * num);
+    			X0Y0_髪左5.SetSizeYBase(X0Y0_髪左5.GetSizeYBase() * num);
+    			X0Y0_髪右4.SetSizeYBase(X0Y0_髪右4.GetSizeYBase() * num);
+    			X0Y0_髪右5.SetSizeYBase(X0Y0_髪右5.GetSizeYBase() * num);
     		}
     	}
 

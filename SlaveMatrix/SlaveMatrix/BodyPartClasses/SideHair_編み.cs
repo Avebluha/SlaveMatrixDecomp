@@ -361,14 +361,14 @@ namespace SlaveMatrix
     		set
     		{
     			double num = 0.8 + 0.3 * value;
-    			X0Y0_編節1_髪節.SizeYBase *= num;
-    			X0Y0_編節1_髪編目.SizeYBase *= num;
-    			X0Y0_編節2_髪節.SizeYBase *= num;
-    			X0Y0_編節2_髪編目.SizeYBase *= num;
-    			X0Y0_編節3_髪節.SizeYBase *= num;
-    			X0Y0_編節3_髪編目.SizeYBase *= num;
-    			X0Y0_編節4_髪節.SizeYBase *= num;
-    			X0Y0_編節4_髪編目.SizeYBase *= num;
+    			X0Y0_編節1_髪節.SetSizeYBase(X0Y0_編節1_髪節.GetSizeYBase() * num);
+    			X0Y0_編節1_髪編目.SetSizeYBase(X0Y0_編節1_髪編目.GetSizeYBase() * num);
+    			X0Y0_編節2_髪節.SetSizeYBase(X0Y0_編節2_髪節.GetSizeYBase() * num);
+    			X0Y0_編節2_髪編目.SetSizeYBase(X0Y0_編節2_髪編目.GetSizeYBase() * num);
+    			X0Y0_編節3_髪節.SetSizeYBase(X0Y0_編節3_髪節.GetSizeYBase() * num);
+    			X0Y0_編節3_髪編目.SetSizeYBase(X0Y0_編節3_髪編目.GetSizeYBase() * num);
+    			X0Y0_編節4_髪節.SetSizeYBase(X0Y0_編節4_髪節.GetSizeYBase() * num);
+    			X0Y0_編節4_髪編目.SetSizeYBase(X0Y0_編節4_髪編目.GetSizeYBase() * num);
     		}
     	}
 
@@ -377,9 +377,9 @@ namespace SlaveMatrix
     		set
     		{
     			double num = 0.8 + 0.3 * value;
-    			X0Y0_髪左.SizeYBase *= num;
-    			X0Y0_髪右.SizeYBase *= num;
-    			X0Y0_髪根.SizeYBase *= num;
+    			X0Y0_髪左.SetSizeYBase(X0Y0_髪左.GetSizeYBase() * num);
+    			X0Y0_髪右.SetSizeYBase(X0Y0_髪右.GetSizeYBase() * num);
+    			X0Y0_髪根.SetSizeYBase(X0Y0_髪根.GetSizeYBase() * num);
     		}
     	}
 
@@ -388,19 +388,19 @@ namespace SlaveMatrix
     		set
     		{
     			double num = 1.0 + 0.5 * value;
-    			X0Y0_編節1_髪節.SizeXBase *= num;
-    			X0Y0_編節1_髪編目.SizeXBase *= num;
-    			X0Y0_編節2_髪節.SizeXBase *= num;
-    			X0Y0_編節2_髪編目.SizeXBase *= num;
-    			X0Y0_編節3_髪節.SizeXBase *= num;
-    			X0Y0_編節3_髪編目.SizeXBase *= num;
-    			X0Y0_編節4_髪節.SizeXBase *= num;
-    			X0Y0_編節4_髪編目.SizeXBase *= num;
-    			X0Y0_髪縛1.SizeXBase *= num;
-    			X0Y0_髪縛2.SizeXBase *= num;
-    			X0Y0_髪左.SizeXBase *= num;
-    			X0Y0_髪右.SizeXBase *= num;
-    			X0Y0_髪根.SizeXBase *= num;
+    			X0Y0_編節1_髪節.SetSizeXBase(X0Y0_編節1_髪節.GetSizeXBase() * num);
+    			X0Y0_編節1_髪編目.SetSizeXBase(X0Y0_編節1_髪編目.GetSizeXBase() * num);
+    			X0Y0_編節2_髪節.SetSizeXBase(X0Y0_編節2_髪節.GetSizeXBase() * num);
+    			X0Y0_編節2_髪編目.SetSizeXBase(X0Y0_編節2_髪編目.GetSizeXBase() * num);
+    			X0Y0_編節3_髪節.SetSizeXBase(X0Y0_編節3_髪節.GetSizeXBase() * num);
+    			X0Y0_編節3_髪編目.SetSizeXBase(X0Y0_編節3_髪編目.GetSizeXBase() * num);
+    			X0Y0_編節4_髪節.SetSizeXBase(X0Y0_編節4_髪節.GetSizeXBase() * num);
+    			X0Y0_編節4_髪編目.SetSizeXBase(X0Y0_編節4_髪編目.GetSizeXBase() * num);
+    			X0Y0_髪縛1.SetSizeXBase(X0Y0_髪縛1.GetSizeXBase() * num);
+    			X0Y0_髪縛2.SetSizeXBase(X0Y0_髪縛2.GetSizeXBase() * num);
+    			X0Y0_髪左.SetSizeXBase(X0Y0_髪左.GetSizeXBase() * num);
+    			X0Y0_髪右.SetSizeXBase(X0Y0_髪右.GetSizeXBase() * num);
+    			X0Y0_髪根.SetSizeXBase(X0Y0_髪根.GetSizeXBase() * num);
     		}
     	}
 
@@ -409,8 +409,8 @@ namespace SlaveMatrix
     		set
     		{
     			double num = (右 ? (-1.0) : 1.0);
-    			X0Y0_髪左.AngleBase = num * 3.0 * value;
-    			X0Y0_髪右.AngleBase = num * -3.0 * value;
+    			X0Y0_髪左.SetAngleBase(num * 3.0 * value);
+    			X0Y0_髪右.SetAngleBase(num * -3.0 * value);
     		}
     	}
 

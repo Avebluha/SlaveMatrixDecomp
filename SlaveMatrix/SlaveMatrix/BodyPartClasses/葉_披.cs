@@ -41,7 +41,7 @@ namespace SlaveMatrix
     		set
     		{
     			欠損_ = value;
-    			Body.IndexY = (欠損_ ? RNG.XS.NextM(1, 2) : 0);
+    			Body.SetIndexY((欠損_ ? RNG.XS.NextM(1, 2) : 0));
     		}
     	}
 
@@ -73,12 +73,12 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return Body.IndexY;
+    			return Body.GetIndexY();
     		}
     		set
     		{
-    			Body.IndexY = value;
-    			欠損_ = Body.IndexY > 0;
+    			Body.SetIndexY(value);
+    			欠損_ = Body.GetIndexY() > 0;
     		}
     	}
 
@@ -205,12 +205,12 @@ namespace SlaveMatrix
 
     	public override void 色更新()
     	{
-    		if (Body.IndexY == 0)
+    		if (Body.GetIndexY() == 0)
     		{
     			X0Y0_通常_葉CP.Update();
     			X0Y0_通常_葉脈CP.Update();
     		}
-    		else if (Body.IndexY == 1)
+    		else if (Body.GetIndexY() == 1)
     		{
     			X0Y1_欠損1_葉CP.Update();
     			X0Y1_欠損1_葉脈CP.Update();

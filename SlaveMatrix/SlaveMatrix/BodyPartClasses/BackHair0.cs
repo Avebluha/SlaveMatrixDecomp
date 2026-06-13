@@ -1,3 +1,5 @@
+using SlaveMatrix.GameClasses;
+
 namespace SlaveMatrix
 {
     public class BackHair0 : Ele

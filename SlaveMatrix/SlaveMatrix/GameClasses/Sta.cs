@@ -10,6 +10,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using _2DGAMELIB;
+using SlaveMatrix.GameClasses;
 using SlaveMatrix.Properties;
 
 namespace SlaveMatrix
@@ -526,9 +527,9 @@ namespace SlaveMatrix
     		タイル.SetJoints();
     		foreach (Par item in タイル.EnumAllPar())
     		{
-    			item.BrushColor = Col.DarkGray;
+    			item.SetBrushColor(Col.DarkGray);
     			item.GetAlpha(out var ret);
-    			item.PenColor = Color.FromArgb(ret / 2, Col.Black);
+    			item.SetPenColor(Color.FromArgb(ret / 2, Col.Black));
     			item.Hit = false;
     		}
     	}

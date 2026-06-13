@@ -2283,17 +2283,17 @@ namespace SlaveMatrix
     	public override void SetAngle0()
     	{
     		double num = (右 ? (-1.0) : 1.0);
-    		X0Y0_足.AngleBase = num * -25.0;
-    		X0Y0_足首.AngleBase = num * -19.0;
-    		X0Y0_薬指_指3.AngleBase = num * -15.0;
-    		X0Y0_薬指_指2.AngleBase = num * -15.0;
-    		X0Y0_薬指_指1.AngleBase = num * -1.0;
-    		X0Y0_中指_指3.AngleBase = num * -15.0;
-    		X0Y0_中指_指2.AngleBase = num * -16.0;
-    		X0Y0_中指_指1.AngleBase = num * 21.0;
-    		X0Y0_人指_指2.AngleBase = num * -13.0;
-    		X0Y0_人指_指1.AngleBase = num * 41.0;
-    		X0Y0_親指_指1.AngleBase = num * 43.0;
+    		X0Y0_足.SetAngleBase(num * -25.0);
+    		X0Y0_足首.SetAngleBase(num * -19.0);
+    		X0Y0_薬指_指3.SetAngleBase(num * -15.0);
+    		X0Y0_薬指_指2.SetAngleBase(num * -15.0);
+    		X0Y0_薬指_指1.SetAngleBase(num * -1.0);
+    		X0Y0_中指_指3.SetAngleBase(num * -15.0);
+    		X0Y0_中指_指2.SetAngleBase(num * -16.0);
+    		X0Y0_中指_指1.SetAngleBase(num * 21.0);
+    		X0Y0_人指_指2.SetAngleBase(num * -13.0);
+    		X0Y0_人指_指1.SetAngleBase(num * 41.0);
+    		X0Y0_親指_指1.SetAngleBase(num * 43.0);
     		Body.JoinPAall();
     	}
 

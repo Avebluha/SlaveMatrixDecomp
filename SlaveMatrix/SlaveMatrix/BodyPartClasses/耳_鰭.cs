@@ -183,7 +183,7 @@ namespace SlaveMatrix
     		set
     		{
     			欠損_ = value;
-    			Body.IndexX = (欠損_ ? 1 : 0);
+    			Body.SetIndexX((欠損_ ? 1 : 0));
     		}
     	}
 
@@ -536,9 +536,9 @@ namespace SlaveMatrix
 
     	public override void 色更新()
     	{
-    		if (Body.IndexX == 0)
+    		if (Body.GetIndexX() == 0)
     		{
-    			switch (Body.IndexY)
+    			switch (Body.GetIndexY())
     			{
     			case 0:
     				Pars1.GetMiY_MaY(out mm);
@@ -571,7 +571,7 @@ namespace SlaveMatrix
     		}
     		else
     		{
-    			switch (Body.IndexY)
+    			switch (Body.GetIndexY())
     			{
     			case 0:
     				Pars4.GetMiY_MaY(out mm);

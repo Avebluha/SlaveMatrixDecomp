@@ -1,5 +1,6 @@
 using System.Linq;
 using _2DGAMELIB;
+using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
@@ -3373,15 +3374,15 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return X0Y0_UpperArm.OP[(!右) ? 1 : 2].Outline;
+    			return X0Y0_UpperArm.GetOP()[(!右) ? 1 : 2].Outline;
     		}
     		set
     		{
-    			X0Y0_UpperArm.OP[(!右) ? 1 : 2].Outline = value;
-    			X0Y0_虫性_虫腕.OP[右 ? 1 : 4].Outline = value;
-    			X0Y0_獣性_獣毛1.OP[右 ? 3 : 7].Outline = value;
-    			X0Y0_グローブ_通常_グローブ.OP[(!右) ? 1 : 2].Outline = value;
-    			X0Y0_グローブ_筋肉_グローブ.OP[(!右) ? 1 : 2].Outline = value;
+    			X0Y0_UpperArm.GetOP()[(!右) ? 1 : 2].Outline = value;
+    			X0Y0_虫性_虫腕.GetOP()[右 ? 1 : 4].Outline = value;
+    			X0Y0_獣性_獣毛1.GetOP()[右 ? 3 : 7].Outline = value;
+    			X0Y0_グローブ_通常_グローブ.GetOP()[(!右) ? 1 : 2].Outline = value;
+    			X0Y0_グローブ_筋肉_グローブ.GetOP()[(!右) ? 1 : 2].Outline = value;
     		}
     	}
 
@@ -4045,7 +4046,7 @@ namespace SlaveMatrix
     	public override void SetRestraintAngle()
     	{
     		double num = (右 ? (-1.0) : 1.0);
-    		X0Y0_UpperArm.AngleBase = num * -30.0;
+    		X0Y0_UpperArm.SetAngleBase(num * -30.0);
     		尺度XC = 0.95;
     		Body.JoinPAall();
     	}

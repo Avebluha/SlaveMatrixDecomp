@@ -1,4 +1,5 @@
 using _2DGAMELIB;
+using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
@@ -1042,26 +1043,26 @@ namespace SlaveMatrix
     		set
     		{
     			double num = 0.9 + 0.55 * value;
-    			X0Y0_瞼上.PenWidth *= num;
-    			X0Y1_瞼上.PenWidth *= num;
-    			X0Y2_瞼上.PenWidth *= num;
-    			X0Y3_瞼上.PenWidth *= num;
-    			X0Y4_瞼上.PenWidth *= num;
-    			X1Y0_瞼上.PenWidth *= num;
-    			X1Y1_瞼上.PenWidth *= num;
-    			X1Y2_瞼上.PenWidth *= num;
-    			X1Y3_瞼上.PenWidth *= num;
-    			X1Y4_瞼上.PenWidth *= num;
-    			X0Y0_瞼下.PenWidth *= num;
-    			X0Y1_瞼下.PenWidth *= num;
-    			X0Y2_瞼下.PenWidth *= num;
-    			X0Y3_瞼下.PenWidth *= num;
-    			X0Y4_瞼下.PenWidth *= num;
-    			X1Y0_瞼下.PenWidth *= num;
-    			X1Y1_瞼下.PenWidth *= num;
-    			X1Y2_瞼下.PenWidth *= num;
-    			X1Y3_瞼下.PenWidth *= num;
-    			X1Y4_瞼下.PenWidth *= num;
+    			X0Y0_瞼上.SetPenWidth(X0Y0_瞼上.GetPenWidth() * num);
+    			X0Y1_瞼上.SetPenWidth(X0Y1_瞼上.GetPenWidth() * num);
+    			X0Y2_瞼上.SetPenWidth(X0Y2_瞼上.GetPenWidth() * num);
+    			X0Y3_瞼上.SetPenWidth(X0Y3_瞼上.GetPenWidth() * num);
+    			X0Y4_瞼上.SetPenWidth(X0Y4_瞼上.GetPenWidth() * num);
+    			X1Y0_瞼上.SetPenWidth(X1Y0_瞼上.GetPenWidth() * num);
+    			X1Y1_瞼上.SetPenWidth(X1Y1_瞼上.GetPenWidth() * num);
+    			X1Y2_瞼上.SetPenWidth(X1Y2_瞼上.GetPenWidth() * num);
+    			X1Y3_瞼上.SetPenWidth(X1Y3_瞼上.GetPenWidth() * num);
+    			X1Y4_瞼上.SetPenWidth(X1Y4_瞼上.GetPenWidth() * num);
+    			X0Y0_瞼下.SetPenWidth(X0Y0_瞼下.GetPenWidth() * num);
+    			X0Y1_瞼下.SetPenWidth(X0Y1_瞼下.GetPenWidth() * num);
+    			X0Y2_瞼下.SetPenWidth(X0Y2_瞼下.GetPenWidth() * num);
+    			X0Y3_瞼下.SetPenWidth(X0Y3_瞼下.GetPenWidth() * num);
+    			X0Y4_瞼下.SetPenWidth(X0Y4_瞼下.GetPenWidth() * num);
+    			X1Y0_瞼下.SetPenWidth(X1Y0_瞼下.GetPenWidth() * num);
+    			X1Y1_瞼下.SetPenWidth(X1Y1_瞼下.GetPenWidth() * num);
+    			X1Y2_瞼下.SetPenWidth(X1Y2_瞼下.GetPenWidth() * num);
+    			X1Y3_瞼下.SetPenWidth(X1Y3_瞼下.GetPenWidth() * num);
+    			X1Y4_瞼下.SetPenWidth(X1Y4_瞼下.GetPenWidth() * num);
     		}
     	}
 
@@ -1261,9 +1262,9 @@ namespace SlaveMatrix
     			double rate = 0.98 + 0.06 * サイズ_;
     			foreach (Par item in Body.EnumAllPar())
     			{
-    				Vector2D center = item.OP.GetCenter();
-    				item.OP.ScalingXY(center, rate);
-    				item.JP.ScalingXY(center, rate);
+    				Vector2D center = item.GetOP().GetCenter();
+    				item.GetOP().ScalingXY(center, rate);
+    				item.GetJP().ScalingXY(center, rate);
     			}
     		}
     	}
@@ -1606,16 +1607,16 @@ namespace SlaveMatrix
     	{
     		double num = 0.0;
     		double num2 = 1.5;
-    		Vector2D value = p.BasePointBase + (p.OP[0].ps[0] - p.BasePointBase) * (num + (num2 - num) * d);
-    		p.OP[2].ps[2] = value;
-    		p.OP[0].ps[0] = value;
+    		Vector2D value = p.GetBasePointBase() + (p.GetOP()[0].ps[0] - p.GetBasePointBase()) * (num + (num2 - num) * d);
+    		p.GetOP()[2].ps[2] = value;
+    		p.GetOP()[0].ps[0] = value;
     	}
 
     	public override void 色更新()
     	{
-    		if (Body.IndexX == 0)
+    		if (Body.GetIndexX() == 0)
     		{
-    			switch (Body.IndexY)
+    			switch (Body.GetIndexY())
     			{
     			case 0:
     				X0Y0_瞼下CP.Update();
@@ -1696,7 +1697,7 @@ namespace SlaveMatrix
     		}
     		else
     		{
-    			switch (Body.IndexY)
+    			switch (Body.GetIndexY())
     			{
     			case 0:
     				X1Y0_瞼下CP.Update();
@@ -1779,9 +1780,9 @@ namespace SlaveMatrix
 
     	public override void 色更新(Vector2D[] mm)
     	{
-    		if (Body.IndexX == 0)
+    		if (Body.GetIndexX() == 0)
     		{
-    			switch (Body.IndexY)
+    			switch (Body.GetIndexY())
     			{
     			case 0:
     				X0Y0_瞼下CP.Update(mm);
@@ -1862,7 +1863,7 @@ namespace SlaveMatrix
     		}
     		else
     		{
-    			switch (Body.IndexY)
+    			switch (Body.GetIndexY())
     			{
     			case 0:
     				X1Y0_瞼下CP.Update(mm);

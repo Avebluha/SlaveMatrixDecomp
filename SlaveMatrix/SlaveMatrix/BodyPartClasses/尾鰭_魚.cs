@@ -163,7 +163,7 @@ namespace SlaveMatrix
     		set
     		{
     			欠損_ = value;
-    			Body.IndexY = (欠損_ ? 1 : 0);
+    			Body.SetIndexY((欠損_ ? 1 : 0));
     		}
     	}
 
@@ -474,14 +474,14 @@ namespace SlaveMatrix
     		{
     			double num = value.Inverse();
     			double num2 = (右 ? (-1.0) : 1.0);
-    			X0Y0_鰭左2_鰭膜.AngleCont = num2 * -35.0 * num;
-    			X0Y0_鰭右2_鰭膜.AngleCont = num2 * 35.0 * num;
-    			X0Y0_鰭左1_鰭膜.AngleCont = num2 * -15.0 * num;
-    			X0Y0_鰭右1_鰭膜.AngleCont = num2 * 15.0 * num;
-    			X0Y1_鰭左2_鰭膜.AngleCont = num2 * -35.0 * num;
-    			X0Y1_鰭右2_鰭膜.AngleCont = num2 * 35.0 * num;
-    			X0Y1_鰭左1_鰭膜.AngleCont = num2 * -15.0 * num;
-    			X0Y1_鰭右1_鰭膜.AngleCont = num2 * 15.0 * num;
+    			X0Y0_鰭左2_鰭膜.SetAngleCont(num2 * -35.0 * num);
+    			X0Y0_鰭右2_鰭膜.SetAngleCont(num2 * 35.0 * num);
+    			X0Y0_鰭左1_鰭膜.SetAngleCont(num2 * -15.0 * num);
+    			X0Y0_鰭右1_鰭膜.SetAngleCont(num2 * 15.0 * num);
+    			X0Y1_鰭左2_鰭膜.SetAngleCont(num2 * -35.0 * num);
+    			X0Y1_鰭右2_鰭膜.SetAngleCont(num2 * 35.0 * num);
+    			X0Y1_鰭左1_鰭膜.SetAngleCont(num2 * -15.0 * num);
+    			X0Y1_鰭右1_鰭膜.SetAngleCont(num2 * 15.0 * num);
     		}
     	}
 
@@ -619,20 +619,20 @@ namespace SlaveMatrix
     	public override void SetAngle0()
     	{
     		double num = (右 ? (-1.0) : 1.0);
-    		X0Y0_鰭左2_鰭膜.AngleBase = num * 35.0;
-    		X0Y0_鰭右2_鰭膜.AngleBase = num * -35.0;
-    		X0Y0_鰭左1_鰭膜.AngleBase = num * 9.0;
-    		X0Y0_鰭右1_鰭膜.AngleBase = num * -9.0;
-    		X0Y1_鰭左2_鰭膜.AngleBase = num * 35.0;
-    		X0Y1_鰭右2_鰭膜.AngleBase = num * -35.0;
-    		X0Y1_鰭左1_鰭膜.AngleBase = num * 9.0;
-    		X0Y1_鰭右1_鰭膜.AngleBase = num * -9.0;
+    		X0Y0_鰭左2_鰭膜.SetAngleBase(num * 35.0);
+    		X0Y0_鰭右2_鰭膜.SetAngleBase(num * -35.0);
+    		X0Y0_鰭左1_鰭膜.SetAngleBase(num * 9.0);
+    		X0Y0_鰭右1_鰭膜.SetAngleBase(num * -9.0);
+    		X0Y1_鰭左2_鰭膜.SetAngleBase(num * 35.0);
+    		X0Y1_鰭右2_鰭膜.SetAngleBase(num * -35.0);
+    		X0Y1_鰭左1_鰭膜.SetAngleBase(num * 9.0);
+    		X0Y1_鰭右1_鰭膜.SetAngleBase(num * -9.0);
     		Body.JoinPAall();
     	}
 
     	public override void 色更新()
     	{
-    		if (Body.IndexY == 0)
+    		if (Body.GetIndexY() == 0)
     		{
     			X0Y0_鰭左2_鰭膜CP.Update();
     			X0Y0_鰭左2_鰭条CP.Update();

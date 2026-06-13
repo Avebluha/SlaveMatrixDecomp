@@ -1100,12 +1100,12 @@ namespace SlaveMatrix
     	{
     		_ = 右;
     		double maxAngle = 20.0;
-    		X0Y0_節1_尾.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_節2_尾.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_節3_尾.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_節4_尾.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_節5_尾.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_針_尾針.AngleBase = maxAngle.GetRanAngle();
+    		X0Y0_節1_尾.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_節2_尾.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_節3_尾.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_節4_尾.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_節5_尾.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_針_尾針.SetAngleBase(maxAngle.GetRanAngle());
     		Body.JoinPAall();
     	}
 

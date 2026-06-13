@@ -113,7 +113,7 @@ namespace SlaveMatrix
     		set
     		{
     			欠損_ = value;
-    			Body.IndexY = (欠損_ ? 1 : 0);
+    			Body.SetIndexY((欠損_ ? 1 : 0));
     		}
     	}
 
@@ -339,13 +339,13 @@ namespace SlaveMatrix
     		{
     			double num = value.Inverse();
     			double num2 = (右 ? (-1.0) : 1.0);
-    			X0Y0_後翅_後翅根_後翅.AngleCont = num2 * -77.0 * num;
-    			X0Y0_後翅_後翅先_後翅.AngleCont = num2 * -180.0 * num;
-    			X0Y1_後翅_後翅根_後翅.AngleCont = num2 * -77.0 * num;
-    			X0Y1_後翅_後翅先_後翅.AngleCont = num2 * -180.0 * num;
+    			X0Y0_後翅_後翅根_後翅.SetAngleCont(num2 * -77.0 * num);
+    			X0Y0_後翅_後翅先_後翅.SetAngleCont(num2 * -180.0 * num);
+    			X0Y1_後翅_後翅根_後翅.SetAngleCont(num2 * -77.0 * num);
+    			X0Y1_後翅_後翅先_後翅.SetAngleCont(num2 * -180.0 * num);
     			foreach (Par item in Body.EnumAllPar())
     			{
-    				item.SizeCont = 0.35 + 0.65 * value;
+    				item.SetSizeCont(0.35 + 0.65 * value);
     			}
     		}
     	}
@@ -454,14 +454,14 @@ namespace SlaveMatrix
     	public override void SetAngle0()
     	{
     		double num = (右 ? (-1.0) : 1.0);
-    		X0Y0_後翅_後翅根_後翅.AngleBase = num * 0.0;
-    		X0Y1_後翅_後翅根_後翅.AngleBase = num * 0.0;
+    		X0Y0_後翅_後翅根_後翅.SetAngleBase(num * 0.0);
+    		X0Y1_後翅_後翅根_後翅.SetAngleBase(num * 0.0);
     		Body.JoinPAall();
     	}
 
     	public override void 色更新()
     	{
-    		if (Body.IndexY == 0)
+    		if (Body.GetIndexY() == 0)
     		{
     			X0Y0_後翅_後翅根_後翅CP.Update();
     			X0Y0_後翅_後翅根_翅脈1CP.Update();

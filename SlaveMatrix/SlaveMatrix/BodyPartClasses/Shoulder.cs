@@ -1,5 +1,6 @@
 using System.Linq;
 using _2DGAMELIB;
+using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
@@ -99,10 +100,10 @@ namespace SlaveMatrix
     		{
     			筋肉_ = value;
     			脇_筋肉_表示 = 筋肉_;
-    			X0Y0_脇_脇.OP.ExpansionXY(X0Y0_脇_脇.OP.GetCenter(), 0.0005);
-    			X0Y0_脇_脇.JP.ExpansionXY(X0Y0_脇_脇.JP.GetCenter(), 0.0005);
-    			X0Y0_Shoulder_Shoulder.OP.ExpansionXY(X0Y0_Shoulder_Shoulder.OP.GetCenter(), 0.0005);
-    			X0Y0_Shoulder_Shoulder.JP.ExpansionXY(X0Y0_Shoulder_Shoulder.JP.GetCenter(), 0.0005);
+    			X0Y0_脇_脇.GetOP().ExpansionXY(X0Y0_脇_脇.GetOP().GetCenter(), 0.0005);
+    			X0Y0_脇_脇.GetJP().ExpansionXY(X0Y0_脇_脇.GetJP().GetCenter(), 0.0005);
+    			X0Y0_Shoulder_Shoulder.GetOP().ExpansionXY(X0Y0_Shoulder_Shoulder.GetOP().GetCenter(), 0.0005);
+    			X0Y0_Shoulder_Shoulder.GetJP().ExpansionXY(X0Y0_Shoulder_Shoulder.GetJP().GetCenter(), 0.0005);
     		}
     	}
 
@@ -395,7 +396,7 @@ namespace SlaveMatrix
     		X0Y0_Shoulder_シャツCP = new ColorP(X0Y0_Shoulder_シャツ, Shoulder_シャツCD, DisUnit, abj: true);
     		X0Y0_Shoulder_ナースCP = new ColorP(X0Y0_Shoulder_ナース, Shoulder_ナースCD, DisUnit, abj: true);
     		Intensity = e.濃度;
-    		X0Y0_脇_脇.BasePointBase = X0Y0_脇_脇.BasePointBase.AddY(-0.001);
+    		X0Y0_脇_脇.SetBasePointBase(X0Y0_脇_脇.GetBasePointBase().AddY(-0.001));
     	}
 
     	public void 脇描画(RenderArea Are)

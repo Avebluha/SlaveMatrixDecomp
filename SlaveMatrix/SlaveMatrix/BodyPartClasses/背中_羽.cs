@@ -162,8 +162,8 @@ namespace SlaveMatrix
 
     	public void 毛()
     	{
-    		X0Y0_羽毛1.OP.SetTension(0f);
-    		X0Y0_羽毛2.OP.SetTension(0f);
+    		X0Y0_羽毛1.GetOP().SetTension(0f);
+    		X0Y0_羽毛2.GetOP().SetTension(0f);
     	}
 
     	public override void 色更新()

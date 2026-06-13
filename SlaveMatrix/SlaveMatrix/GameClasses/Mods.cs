@@ -20,20 +20,20 @@ namespace SlaveMatrix
         public static But1 Button(ModeEventDispatcher med, RenderArea buffer, string text, Vector2D pos, Action<But> on_click) {
 
             ParT parT = new ParT();
-            parT.Font = new Font("MS Gothic", 0.1f);
-            parT.PositionBase = buffer.GetPosition(pos);
+            parT.SetFont(new Font("MS Gothic", 0.1f));
+            parT.SetPositionBase(buffer.GetPosition(pos));
             parT.Text = text;
-            parT.FontSize = 0.14;
-            parT.SizeBase = 0.05;
-            parT.OP.AddRange(new Out[1] { Shas.GetSquare() });
-            parT.OP.ScalingXY(parT.OP.GetCenter(), 0.87, 0.23);
-            parT.Closed = true;
-            parT.TextColor = Col.White;
-            parT.BrushColor = Color.FromArgb(160, Col.Black);
-            parT.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-            parT.HitColor = med.GetUniqueColor();
-            parT.StringFormat.Alignment = StringAlignment.Center;
-            parT.StringFormat.LineAlignment = StringAlignment.Center;
+            parT.SetFontSize(0.14);
+            parT.SetSizeBase(0.05);
+            parT.GetOP().AddRange(new Out[1] { Shas.GetSquare() });
+            parT.GetOP().ScalingXY(parT.GetOP().GetCenter(), 0.87, 0.23);
+            parT.SetClosed(true);
+            parT.SetTextColor(Col.White);
+            parT.SetBrushColor(Color.FromArgb(160, Col.Black));
+            parT.SetShadBrush(new SolidBrush(Color.FromArgb(64, Col.Black)));
+            parT.SetHitColor(med.GetUniqueColor());
+            parT.GetStringFormat().Alignment = StringAlignment.Center;
+            parT.GetStringFormat().LineAlignment = StringAlignment.Center;
 
             /*
             ParT parT = new ParT();
@@ -77,21 +77,21 @@ namespace SlaveMatrix
         //rhombus shaped buttons
         public static But1 Button2(ModeEventDispatcher med, RenderArea buffer, string text, Vector2D pos, Action<But> on_click) {
             ParT parT = new ParT();
-            parT.Font = new Font("MS Gothic", 0.1f);
-            parT.PositionBase = buffer.GetPosition(pos);
+            parT.SetFont(new Font("MS Gothic", 0.1f));
+            parT.SetPositionBase(buffer.GetPosition(pos));
             parT.Text = text;
-            parT.FontSize = 0.15;
-            parT.SizeBase = 0.05;
-            parT.OP.AddRange(new Out[1] { Shas.GetSquare() });
-            parT.OP.ScalingY(parT.OP.GetCenter(), 0.47);
-            parT.OP.Rotation(parT.OP.GetCenter(), -26.0);
-            parT.Closed = true;
-            parT.TextColor = Col.White;
-            parT.BrushColor = Color.FromArgb(160, Col.Black);
-            parT.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-            parT.HitColor = med.GetUniqueColor();
-            parT.StringFormat.Alignment = StringAlignment.Center;
-            parT.StringFormat.LineAlignment = StringAlignment.Center;
+            parT.SetFontSize(0.15);
+            parT.SetSizeBase(0.05);
+            parT.GetOP().AddRange(new Out[1] { Shas.GetSquare() });
+            parT.GetOP().ScalingY(parT.GetOP().GetCenter(), 0.47);
+            parT.GetOP().Rotation(parT.GetOP().GetCenter(), -26.0);
+            parT.SetClosed(true);
+            parT.SetTextColor(Col.White);
+            parT.SetBrushColor(Color.FromArgb(160, Col.Black));
+            parT.SetShadBrush(new SolidBrush(Color.FromArgb(64, Col.Black)));
+            parT.SetHitColor(med.GetUniqueColor());
+            parT.GetStringFormat().Alignment = StringAlignment.Center;
+            parT.GetStringFormat().LineAlignment = StringAlignment.Center;
 
             return new But1(parT, on_click);
         }
@@ -383,7 +383,7 @@ namespace SlaveMatrix
     		npl = new Lab(
                 DrawBuffer, 
                 "ラベル1", 
-                new Vector2D(ip.MaiB.Position.X, 0.026), 
+                new Vector2D(ip.MaiB.GetPosition().X, 0.026), 
                 0.1, 
                 1.5, 
                 new Font("MS Gothic", 1f), 
@@ -391,7 +391,7 @@ namespace SlaveMatrix
                 "No Slave", 
                 Col.White, 
                 Col.Black, 
-                ip.MaiB.BrushColor, 
+                ip.MaiB.GetBrushColor(), 
                 Col.Black
             );
 
@@ -1136,7 +1136,7 @@ namespace SlaveMatrix
 
     	public static void Player説明(ref Color hc, Action Reset)
     	{
-    		if (dbs["プレイヤー"].Pars.Values.First().ToPar().HitColor == hc)
+    		if (dbs["プレイヤー"].Pars.Values.First().ToPar().GetHitColor() == hc)
     		{
     			ip.SubInfoIm = GameText.プレイヤーの遺伝情報を設定します + "(-" + 10000000uL.ToString("#,0") + ")";
     		}
@@ -1551,7 +1551,7 @@ namespace SlaveMatrix
                             }
                             dbs.Move(ref hc);
                             bs.Move(ref hc);
-                            if (bs["ボタン7"].Pars.Values.First().ToPar().HitColor == hc)
+                            if (bs["ボタン7"].Pars.Values.First().ToPar().GetHitColor() == hc)
                             {
                                 ip.SubInfoIm = GameText.奴隷をランダムに選択します;
                             }
@@ -1606,7 +1606,7 @@ namespace SlaveMatrix
                         ip.Up(ref HitColor);
                         //Sounds.OPBGM.Stop();
                         //Sounds.日常BGM.Play();
-                        npl.ParT.PositionBase = new Vector2D(Player.UI.ステート.Position.X, 0.026);
+                        npl.ParT.SetPositionBase(new Vector2D(Player.UI.ステート.Position.X, 0.026));
                     }
                 },
                 Draw = delegate (FPS FPS)
@@ -2015,7 +2015,7 @@ namespace SlaveMatrix
     			{
     				foreach (But item in lv.bs.EnumBut)
     				{
-    					item.Pars.Values.First().ToParT().PenColor = lv初期縁色;
+    					item.Pars.Values.First().ToParT().SetPenColor(lv初期縁色);
     				}
     			};
     			Action<Unit> SetUI = delegate(Unit u)
@@ -2077,7 +2077,7 @@ namespace SlaveMatrix
     						e.act = delegate(But b)
     						{
     							lv縁色初期化();
-    							b.Pars.Values.First().ToParT().PenColor = Color.Red;
+    							b.Pars.Values.First().ToParT().SetPenColor(Color.Red);
     							Sta.GameData.TrainingTarget = null;
     							if (TrainingTarget != null)
     							{
@@ -2093,7 +2093,7 @@ namespace SlaveMatrix
     						e.act = delegate(But b)
     						{
     							lv縁色初期化();
-    							b.Pars.Values.First().ToParT().PenColor = Color.Red;
+    							b.Pars.Values.First().ToParT().SetPenColor(Color.Red);
     							Sta.GameData.TrainingTarget = u;
     							bs["子"].Action(bs["子"]);
     							if (ip.Mai2Show)
@@ -2124,7 +2124,7 @@ namespace SlaveMatrix
                 {
                     foreach (But item2 in bs.EnumBut.Skip(1).Take(3))
                     {
-                        item2.Pars.Values.First().ToParT().PenColor = bs初期縁色;
+                        item2.Pars.Values.First().ToParT().SetPenColor(bs初期縁色);
                     }
                 };
                 Color f初期縁色 = Col.Black;
@@ -2132,13 +2132,13 @@ namespace SlaveMatrix
                 {
                     foreach (But item3 in bs.EnumBut.Skip(10))
                     {
-                        item3.Pars.Values.First().ToParT().PenColor = f初期縁色;
+                        item3.Pars.Values.First().ToParT().SetPenColor(f初期縁色);
                     }
                 };
                 Action<But, int> 階層選択 = delegate (But b, int o)
                 {
                     f縁色初期化();
-                    b.Pars.Values.First().ToParT().PenColor = Color.Red;
+                    b.Pars.Values.First().ToParT().SetPenColor(Color.Red);
                     set(o);
                 };
                 Action 部屋選択 = delegate
@@ -2146,7 +2146,7 @@ namespace SlaveMatrix
                     lv縁色初期化();
                     if (Sta.GameData.TrainingTarget != null && f == Sta.GameData.TrainingTarget.階層位置 * 15)
                     {
-                        lv.bs[Sta.GameData.TrainingTarget.RoomNumber.ToString()].Pars.Values.First().ToParT().PenColor = Color.Red;
+                        lv.bs[Sta.GameData.TrainingTarget.RoomNumber.ToString()].Pars.Values.First().ToParT().SetPenColor(Color.Red);
                     }
                 };
 
@@ -2221,7 +2221,7 @@ namespace SlaveMatrix
                             {
                                 dbs.Move(ref hc);
                                 bs.Move(ref hc);
-                                if (bs["胸施術"].Pars.Values.First().ToPar().HitColor == hc && !(ip.SubInfoIm == GameText.胸の甲殻を切除しました) && !(ip.SubInfoIm == GameText.所持金が足りません))
+                                if (bs["胸施術"].Pars.Values.First().ToPar().GetHitColor() == hc && !(ip.SubInfoIm == GameText.胸の甲殻を切除しました) && !(ip.SubInfoIm == GameText.所持金が足りません))
                                 {
                                     ip.SubInfoIm = GameText.胸の甲殻を切除します + "(-" + 胸施術価格.ToString("#,0") + ")";
                                 }
@@ -2231,7 +2231,7 @@ namespace SlaveMatrix
                                 }
                                 if (TrainingTarget != null)
                                 {
-                                    if (bs["股施術"].Pars.Values.First().ToPar().HitColor == hc && !(ip.SubInfoIm == GameText.股の + (TrainingTarget.Body.Is蛇 ? GameText.鱗 : GameText.甲殻) + GameText.を切除しました) && !(ip.SubInfoIm == GameText.所持金が足りません))
+                                    if (bs["股施術"].Pars.Values.First().ToPar().GetHitColor() == hc && !(ip.SubInfoIm == GameText.股の + (TrainingTarget.Body.Is蛇 ? GameText.鱗 : GameText.甲殻) + GameText.を切除しました) && !(ip.SubInfoIm == GameText.所持金が足りません))
                                     {
                                         ip.SubInfoIm = GameText.股の + (TrainingTarget.Body.Is蛇 ? GameText.鱗 : GameText.甲殻) + GameText.を切除します + "(-" + 股施術価格.ToString("#,0") + ")";
                                     }
@@ -2240,7 +2240,7 @@ namespace SlaveMatrix
                                         si.Set(bre: false);
                                     }
                                 }
-                                if (bs["淫紋"].Pars.Values.First().ToPar().HitColor == hc && !(ip.SubInfoIm == GameText.淫紋を刻みました) && !(ip.SubInfoIm == GameText.所持金が足りません))
+                                if (bs["淫紋"].Pars.Values.First().ToPar().GetHitColor() == hc && !(ip.SubInfoIm == GameText.淫紋を刻みました) && !(ip.SubInfoIm == GameText.所持金が足りません))
                                 {
                                     ip.SubInfoIm = GameText.淫紋を刻みます + "(-" + 淫紋価格.ToString("#,0") + ")";
                                 }
@@ -2248,7 +2248,7 @@ namespace SlaveMatrix
                                 {
                                     si.Set(bre: false);
                                 }
-                                if (bs["衣装"].Pars.Values.First().ToPar().HitColor == hc && !(ip.SubInfoIm == GameText.衣装を変更しました) && !(ip.SubInfoIm == GameText.所持金が足りません))
+                                if (bs["衣装"].Pars.Values.First().ToPar().GetHitColor() == hc && !(ip.SubInfoIm == GameText.衣装を変更しました) && !(ip.SubInfoIm == GameText.所持金が足りません))
                                 {
                                     ip.SubInfoIm = GameText.衣装を変更します + "(-" + 衣装変更価格.ToString("#,0") + ")";
                                 }
@@ -2256,7 +2256,7 @@ namespace SlaveMatrix
                                 {
                                     si.Set(bre: false);
                                 }
-                                if (bs["保守"].Pars.Values.First().ToPar().HitColor == hc && !(ip.SubInfoIm == GameText.奴隷を保守対象に設定しました) && !(ip.SubInfoIm == GameText.奴隷の保守設定を解除しました))
+                                if (bs["保守"].Pars.Values.First().ToPar().GetHitColor() == hc && !(ip.SubInfoIm == GameText.奴隷を保守対象に設定しました) && !(ip.SubInfoIm == GameText.奴隷の保守設定を解除しました))
                                 {
                                     ip.SubInfoIm = GameText.奴隷の保守設定を切り替えます;
                                 }
@@ -2264,7 +2264,7 @@ namespace SlaveMatrix
                                 {
                                     si.Set(bre: false);
                                 }
-                                if (bs["一般労働"].Pars.Values.First().ToPar().HitColor == hc && !(ip.SubInfoIm == GameText.奴隷を一般労働に設定しました) && !(ip.SubInfoIm == GameText.奴隷の一般労働を解除しました))
+                                if (bs["一般労働"].Pars.Values.First().ToPar().GetHitColor() == hc && !(ip.SubInfoIm == GameText.奴隷を一般労働に設定しました) && !(ip.SubInfoIm == GameText.奴隷の一般労働を解除しました))
                                 {
                                     ip.SubInfoIm = GameText.奴隷の一般労働設定を切り替えます;
                                 }
@@ -2272,7 +2272,7 @@ namespace SlaveMatrix
                                 {
                                     si.Set(bre: false);
                                 }
-                                if (bs["娼婦労働"].Pars.Values.First().ToPar().HitColor == hc && !(ip.SubInfoIm == GameText.奴隷を娼婦労働に設定しました) && !(ip.SubInfoIm == GameText.奴隷の娼婦労働を解除しました))
+                                if (bs["娼婦労働"].Pars.Values.First().ToPar().GetHitColor() == hc && !(ip.SubInfoIm == GameText.奴隷を娼婦労働に設定しました) && !(ip.SubInfoIm == GameText.奴隷の娼婦労働を解除しました))
                                 {
                                     ip.SubInfoIm = GameText.奴隷の娼婦労働設定を切り替えます;
                                 }
@@ -2280,7 +2280,7 @@ namespace SlaveMatrix
                                 {
                                     si.Set(bre: false);
                                 }
-                                if (bs["売却"].Pars.Values.First().ToPar().HitColor == hc)
+                                if (bs["売却"].Pars.Values.First().ToPar().GetHitColor() == hc)
                                 {
                                     ip.SubInfoIm = GameText.奴隷を売却します;
                                 }
@@ -2288,7 +2288,7 @@ namespace SlaveMatrix
                                 {
                                     si.Set(bre: false);
                                 }
-                                if (bs["全一般"].Pars.Values.First().ToPar().HitColor == hc && !(ip.SubInfoIm == GameText.労働可能な全ての奴隷に一般労働を設定しました))
+                                if (bs["全一般"].Pars.Values.First().ToPar().GetHitColor() == hc && !(ip.SubInfoIm == GameText.労働可能な全ての奴隷に一般労働を設定しました))
                                 {
                                     ip.SubInfoIm = GameText.労働可能な全ての奴隷を働かせます;
                                 }
@@ -2296,7 +2296,7 @@ namespace SlaveMatrix
                                 {
                                     si.Set(bre: false);
                                 }
-                                if (bs["全娼婦"].Pars.Values.First().ToPar().HitColor == hc && !(ip.SubInfoIm == GameText.労働可能な全ての奴隷に娼婦労働を設定しました))
+                                if (bs["全娼婦"].Pars.Values.First().ToPar().GetHitColor() == hc && !(ip.SubInfoIm == GameText.労働可能な全ての奴隷に娼婦労働を設定しました))
                                 {
                                     ip.SubInfoIm = GameText.労働可能な全ての奴隷を娼婦として働かせます;
                                 }
@@ -2304,7 +2304,7 @@ namespace SlaveMatrix
                                 {
                                     si.Set(bre: false);
                                 }
-                                if (bs["全解除"].Pars.Values.First().ToPar().HitColor == hc && !(ip.SubInfoIm == GameText.労働中の全ての奴隷の労働を解除しました))
+                                if (bs["全解除"].Pars.Values.First().ToPar().GetHitColor() == hc && !(ip.SubInfoIm == GameText.労働中の全ての奴隷の労働を解除しました))
                                 {
                                     ip.SubInfoIm = GameText.全ての奴隷の労働を解除します;
                                 }
@@ -2312,7 +2312,7 @@ namespace SlaveMatrix
                                 {
                                     si.Set(bre: false);
                                 }
-                                if (bs["全売却"].Pars.Values.First().ToPar().HitColor == hc && !ip.SubInfoIm.StartsWith(GameText.保守以外の全ての奴隷を売却しました) && !(ip.SubInfoIm == GameText.全売却をキャンセルしました))
+                                if (bs["全売却"].Pars.Values.First().ToPar().GetHitColor() == hc && !ip.SubInfoIm.StartsWith(GameText.保守以外の全ての奴隷を売却しました) && !(ip.SubInfoIm == GameText.全売却をキャンセルしました))
                                 {
                                     ip.SubInfoIm = GameText.保守以外の全ての奴隷を売却します;
                                 }
@@ -2350,7 +2350,7 @@ namespace SlaveMatrix
                         int num2 = 0;
                         using (IEnumerator<But> enumerator2 = bs.EnumBut.Skip(12).GetEnumerator())
                         {
-                            while (enumerator2.MoveNext() && !(enumerator2.Current.Pars.Values.First().ToParT().PenColor == Color.Red))
+                            while (enumerator2.MoveNext() && !(enumerator2.Current.Pars.Values.First().ToParT().GetPenColor() == Color.Red))
                             {
                                 num2++;
                             }
@@ -2358,7 +2358,7 @@ namespace SlaveMatrix
                         int num3 = 0;
                         using (IEnumerator<But> enumerator2 = lv.bs.EnumBut.GetEnumerator())
                         {
-                            while (enumerator2.MoveNext() && !(enumerator2.Current.Pars.Values.First().ToParT().PenColor == Color.Red))
+                            while (enumerator2.MoveNext() && !(enumerator2.Current.Pars.Values.First().ToParT().GetPenColor() == Color.Red))
                             {
                                 num3++;
                             }
@@ -2420,7 +2420,7 @@ namespace SlaveMatrix
                                 But but = bs["ボタン" + (Sta.GameData.TrainingTarget.階層位置 + 1)];
                                 but.Action(but);
                                 lv縁色初期化();
-                                lv.bs[Sta.GameData.TrainingTarget.RoomNumber.ToString()].Pars.Values.First().ToParT().PenColor = Color.Red;
+                                lv.bs[Sta.GameData.TrainingTarget.RoomNumber.ToString()].Pars.Values.First().ToParT().SetPenColor(Color.Red);
                                 bs["子"].Action(bs["子"]);
                             }
                             else
@@ -2431,7 +2431,7 @@ namespace SlaveMatrix
                                 int num = 0;
                                 using (IEnumerator<But> enumerator = lv.bs.EnumBut.GetEnumerator())
                                 {
-                                    while (enumerator.MoveNext() && !(enumerator.Current.Pars.Values.First().ToParT().PenColor == Color.Red))
+                                    while (enumerator.MoveNext() && !(enumerator.Current.Pars.Values.First().ToParT().GetPenColor() == Color.Red))
                                     {
                                         num++;
                                     }
@@ -2443,11 +2443,11 @@ namespace SlaveMatrix
                             si.Set(bre: false);
                             if (Sta.BigWindow)
                             {
-                                npl.ParT.PositionBase = new Vector2D(0.095, 0.035);
+                                npl.ParT.SetPositionBase(new Vector2D(0.095, 0.035));
                             }
                             else
                             {
-                                npl.ParT.PositionBase = new Vector2D(ip.MaiB.Position.X, 0.026);
+                                npl.ParT.SetPositionBase(new Vector2D(ip.MaiB.GetPosition().X, 0.026));
                             }
                         }
                     },
@@ -2465,7 +2465,7 @@ namespace SlaveMatrix
                 bs.Add("ボタン0", MyUI.Button2(Med, DrawBuffer, GameText.戻る, new Vector2D(0.85, 0.02), delegate
                 {
                     ////Sounds.操作.Play();
-                    if (Sta.GameData.TrainingTarget != null && bs["子"].Pars.Values.First().ToParT().PenColor != Color.Red)
+                    if (Sta.GameData.TrainingTarget != null && bs["子"].Pars.Values.First().ToParT().GetPenColor() != Color.Red)
                     {
                         SetTrainingTarget(Med, Sta.GameData.TrainingTarget);
                         SetUI(Sta.GameData.TrainingTarget);
@@ -2482,7 +2482,7 @@ namespace SlaveMatrix
     					////Sounds.操作.Play();
     				}
     				bs縁色初期化();
-    				b.Pars.Values.First().ToParT().PenColor = Color.Red;
+    				b.Pars.Values.First().ToParT().SetPenColor(Color.Red);
     				if (Sta.GameData.TrainingTarget != null)
     				{
     					if (TrainingTarget == null || TrainingTarget.CharacterData != Sta.GameData.TrainingTarget.ChaD)
@@ -2501,7 +2501,7 @@ namespace SlaveMatrix
     			{
     				////Sounds.操作.Play();
     				bs縁色初期化();
-    				b.Pars.Values.First().ToParT().PenColor = Color.Red;
+    				b.Pars.Values.First().ToParT().SetPenColor(Color.Red);
     				if (Sta.GameData.TrainingTarget != null)
     				{
     					if (TrainingTarget != null)
@@ -2545,7 +2545,7 @@ namespace SlaveMatrix
     			{
     				////Sounds.操作.Play();
     				bs縁色初期化();
-    				b.Pars.Values.First().ToParT().PenColor = Color.Red;
+    				b.Pars.Values.First().ToParT().SetPenColor(Color.Red);
     				if (Sta.GameData.TrainingTarget != null)
     				{
     					if (TrainingTarget != null)
@@ -2822,21 +2822,21 @@ namespace SlaveMatrix
 
 
     			ParT parT13 = new ParT();
-    			parT13.Font = new Font("MS Gothic", 0.1f);
-    			parT13.PositionBase = DrawBuffer.GetPosition(0.03, 0.03);
+    			parT13.SetFont(new Font("MS Gothic", 0.1f));
+    			parT13.SetPositionBase(DrawBuffer.GetPosition(0.03, 0.03));
     			parT13.Text = "1F";
-    			parT13.FontSize = 0.15;
-    			parT13.SizeBase = 0.05;
-    			parT13.OP.AddRange(new Out[1] { Shas.GetSquare() });
-    			parT13.BasePointBase = parT13.OP.GetCenter();
-    			parT13.OP.ScalingXY(parT13.BasePointBase, 0.3);
-    			parT13.Closed = true;
-    			parT13.TextColor = Col.White;
-    			parT13.BrushColor = Color.FromArgb(160, Col.Black);
-    			parT13.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    			parT13.StringFormat.Alignment = StringAlignment.Center;
-    			parT13.StringFormat.LineAlignment = StringAlignment.Center;
-    			parT13.PenColor = Color.Red;
+    			parT13.SetFontSize(0.15);
+    			parT13.SetSizeBase(0.05);
+    			parT13.GetOP().AddRange(new Out[1] { Shas.GetSquare() });
+    			parT13.SetBasePointBase(parT13.GetOP().GetCenter());
+    			parT13.GetOP().ScalingXY(parT13.GetBasePointBase(), 0.3);
+    			parT13.SetClosed(true);
+    			parT13.SetTextColor(Col.White);
+    			parT13.SetBrushColor(Color.FromArgb(160, Col.Black));
+    			parT13.SetShadBrush(new SolidBrush(Color.FromArgb(64, Col.Black)));
+    			parT13.GetStringFormat().Alignment = StringAlignment.Center;
+    			parT13.GetStringFormat().LineAlignment = StringAlignment.Center;
+    			parT13.SetPenColor(Color.Red);
     			bs.Add("ボタン1", new But1(parT13, delegate(But b)
     			{
     				if (d)
@@ -2849,20 +2849,20 @@ namespace SlaveMatrix
 
 
     			ParT parT14 = new ParT();
-    			parT14.Font = new Font("MS Gothic", 0.1f);
-    			parT14.PositionBase = DrawBuffer.GetPosition(0.07, 0.03);
+    			parT14.SetFont(new Font("MS Gothic", 0.1f));
+    			parT14.SetPositionBase(DrawBuffer.GetPosition(0.07, 0.03));
     			parT14.Text = "2F";
-    			parT14.FontSize = 0.15;
-    			parT14.SizeBase = 0.05;
-    			parT14.OP.AddRange(new Out[1] { Shas.GetSquare() });
-    			parT14.BasePointBase = parT14.OP.GetCenter();
-    			parT14.OP.ScalingXY(parT14.BasePointBase, 0.3);
-    			parT14.Closed = true;
-    			parT14.TextColor = Col.White;
-    			parT14.BrushColor = Color.FromArgb(160, Col.Black);
-    			parT14.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    			parT14.StringFormat.Alignment = StringAlignment.Center;
-    			parT14.StringFormat.LineAlignment = StringAlignment.Center;
+    			parT14.SetFontSize(0.15);
+    			parT14.SetSizeBase(0.05);
+    			parT14.GetOP().AddRange(new Out[1] { Shas.GetSquare() });
+    			parT14.SetBasePointBase(parT14.GetOP().GetCenter());
+    			parT14.GetOP().ScalingXY(parT14.GetBasePointBase(), 0.3);
+    			parT14.SetClosed(true);
+    			parT14.SetTextColor(Col.White);
+    			parT14.SetBrushColor(Color.FromArgb(160, Col.Black));
+    			parT14.SetShadBrush(new SolidBrush(Color.FromArgb(64, Col.Black)));
+    			parT14.GetStringFormat().Alignment = StringAlignment.Center;
+    			parT14.GetStringFormat().LineAlignment = StringAlignment.Center;
     			bs.Add("ボタン2", new But1(parT14, delegate(But b)
     			{
     				if (d)
@@ -2873,20 +2873,20 @@ namespace SlaveMatrix
     				部屋選択();
     			}));
     			ParT parT15 = new ParT();
-    			parT15.Font = new Font("MS Gothic", 0.1f);
-    			parT15.PositionBase = DrawBuffer.GetPosition(0.11, 0.03);
+    			parT15.SetFont(new Font("MS Gothic", 0.1f));
+    			parT15.SetPositionBase(DrawBuffer.GetPosition(0.11, 0.03));
     			parT15.Text = "3F";
-    			parT15.FontSize = 0.15;
-    			parT15.SizeBase = 0.05;
-    			parT15.OP.AddRange(new Out[1] { Shas.GetSquare() });
-    			parT15.BasePointBase = parT15.OP.GetCenter();
-    			parT15.OP.ScalingXY(parT15.BasePointBase, 0.3);
-    			parT15.Closed = true;
-    			parT15.TextColor = Col.White;
-    			parT15.BrushColor = Color.FromArgb(160, Col.Black);
-    			parT15.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    			parT15.StringFormat.Alignment = StringAlignment.Center;
-    			parT15.StringFormat.LineAlignment = StringAlignment.Center;
+    			parT15.SetFontSize(0.15);
+    			parT15.SetSizeBase(0.05);
+    			parT15.GetOP().AddRange(new Out[1] { Shas.GetSquare() });
+    			parT15.SetBasePointBase(parT15.GetOP().GetCenter());
+    			parT15.GetOP().ScalingXY(parT15.GetBasePointBase(), 0.3);
+    			parT15.SetClosed(true);
+    			parT15.SetTextColor(Col.White);
+    			parT15.SetBrushColor(Color.FromArgb(160, Col.Black));
+    			parT15.SetShadBrush(new SolidBrush(Color.FromArgb(64, Col.Black)));
+    			parT15.GetStringFormat().Alignment = StringAlignment.Center;
+    			parT15.GetStringFormat().LineAlignment = StringAlignment.Center;
     			bs.Add("ボタン3", new But1(parT15, delegate(But b)
     			{
     				if (d)
@@ -2897,20 +2897,20 @@ namespace SlaveMatrix
     				部屋選択();
     			}));
     			ParT parT16 = new ParT();
-    			parT16.Font = new Font("MS Gothic", 0.1f);
-    			parT16.PositionBase = DrawBuffer.GetPosition(0.15, 0.03);
+    			parT16.SetFont(new Font("MS Gothic", 0.1f));
+    			parT16.SetPositionBase(DrawBuffer.GetPosition(0.15, 0.03));
     			parT16.Text = "4F";
-    			parT16.FontSize = 0.15;
-    			parT16.SizeBase = 0.05;
-    			parT16.OP.AddRange(new Out[1] { Shas.GetSquare() });
-    			parT16.BasePointBase = parT16.OP.GetCenter();
-    			parT16.OP.ScalingXY(parT16.BasePointBase, 0.3);
-    			parT16.Closed = true;
-    			parT16.TextColor = Col.White;
-    			parT16.BrushColor = Color.FromArgb(160, Col.Black);
-    			parT16.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    			parT16.StringFormat.Alignment = StringAlignment.Center;
-    			parT16.StringFormat.LineAlignment = StringAlignment.Center;
+    			parT16.SetFontSize(0.15);
+    			parT16.SetSizeBase(0.05);
+    			parT16.GetOP().AddRange(new Out[1] { Shas.GetSquare() });
+    			parT16.SetBasePointBase(parT16.GetOP().GetCenter());
+    			parT16.GetOP().ScalingXY(parT16.GetBasePointBase(), 0.3);
+    			parT16.SetClosed(true);
+    			parT16.SetTextColor(Col.White);
+    			parT16.SetBrushColor(Color.FromArgb(160, Col.Black));
+    			parT16.SetShadBrush(new SolidBrush(Color.FromArgb(64, Col.Black)));
+    			parT16.GetStringFormat().Alignment = StringAlignment.Center;
+    			parT16.GetStringFormat().LineAlignment = StringAlignment.Center;
     			bs.Add("ボタン4", new But1(parT16, delegate(But b)
     			{
     				if (d)
@@ -2921,20 +2921,20 @@ namespace SlaveMatrix
     				部屋選択();
     			}));
     			ParT parT17 = new ParT();
-    			parT17.Font = new Font("MS Gothic", 0.1f);
-    			parT17.PositionBase = DrawBuffer.GetPosition(0.19, 0.03);
+    			parT17.SetFont(new Font("MS Gothic", 0.1f));
+    			parT17.SetPositionBase(DrawBuffer.GetPosition(0.19, 0.03));
     			parT17.Text = "5F";
-    			parT17.FontSize = 0.15;
-    			parT17.SizeBase = 0.05;
-    			parT17.OP.AddRange(new Out[1] { Shas.GetSquare() });
-    			parT17.BasePointBase = parT17.OP.GetCenter();
-    			parT17.OP.ScalingXY(parT17.BasePointBase, 0.3);
-    			parT17.Closed = true;
-    			parT17.TextColor = Col.White;
-    			parT17.BrushColor = Color.FromArgb(160, Col.Black);
-    			parT17.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    			parT17.StringFormat.Alignment = StringAlignment.Center;
-    			parT17.StringFormat.LineAlignment = StringAlignment.Center;
+    			parT17.SetFontSize(0.15);
+    			parT17.SetSizeBase(0.05);
+    			parT17.GetOP().AddRange(new Out[1] { Shas.GetSquare() });
+    			parT17.SetBasePointBase(parT17.GetOP().GetCenter());
+    			parT17.GetOP().ScalingXY(parT17.GetBasePointBase(), 0.3);
+    			parT17.SetClosed(true);
+    			parT17.SetTextColor(Col.White);
+    			parT17.SetBrushColor(Color.FromArgb(160, Col.Black));
+    			parT17.SetShadBrush(new SolidBrush(Color.FromArgb(64, Col.Black)));
+    			parT17.GetStringFormat().Alignment = StringAlignment.Center;
+    			parT17.GetStringFormat().LineAlignment = StringAlignment.Center;
     			bs.Add("ボタン5", new But1(parT17, delegate(But b)
     			{
     				if (d)
@@ -2945,20 +2945,20 @@ namespace SlaveMatrix
     				部屋選択();
     			}));
     			ParT parT18 = new ParT();
-    			parT18.Font = new Font("MS Gothic", 0.1f);
-    			parT18.PositionBase = DrawBuffer.GetPosition(0.23, 0.03);
+    			parT18.SetFont(new Font("MS Gothic", 0.1f));
+    			parT18.SetPositionBase(DrawBuffer.GetPosition(0.23, 0.03));
     			parT18.Text = "6F";
-    			parT18.FontSize = 0.15;
-    			parT18.SizeBase = 0.05;
-    			parT18.OP.AddRange(new Out[1] { Shas.GetSquare() });
-    			parT18.BasePointBase = parT18.OP.GetCenter();
-    			parT18.OP.ScalingXY(parT18.BasePointBase, 0.3);
-    			parT18.Closed = true;
-    			parT18.TextColor = Col.White;
-    			parT18.BrushColor = Color.FromArgb(160, Col.Black);
-    			parT18.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    			parT18.StringFormat.Alignment = StringAlignment.Center;
-    			parT18.StringFormat.LineAlignment = StringAlignment.Center;
+    			parT18.SetFontSize(0.15);
+    			parT18.SetSizeBase(0.05);
+    			parT18.GetOP().AddRange(new Out[1] { Shas.GetSquare() });
+    			parT18.SetBasePointBase(parT18.GetOP().GetCenter());
+    			parT18.GetOP().ScalingXY(parT18.GetBasePointBase(), 0.3);
+    			parT18.SetClosed(true);
+    			parT18.SetTextColor(Col.White);
+    			parT18.SetBrushColor(Color.FromArgb(160, Col.Black));
+    			parT18.SetShadBrush(new SolidBrush(Color.FromArgb(64, Col.Black)));
+    			parT18.GetStringFormat().Alignment = StringAlignment.Center;
+    			parT18.GetStringFormat().LineAlignment = StringAlignment.Center;
     			bs.Add("ボタン6", new But1(parT18, delegate(But b)
     			{
     				if (d)
@@ -2969,20 +2969,20 @@ namespace SlaveMatrix
     				部屋選択();
     			}));
     			ParT parT19 = new ParT();
-    			parT19.Font = new Font("MS Gothic", 0.1f);
-    			parT19.PositionBase = DrawBuffer.GetPosition(0.27, 0.03);
+    			parT19.SetFont(new Font("MS Gothic", 0.1f));
+    			parT19.SetPositionBase(DrawBuffer.GetPosition(0.27, 0.03));
     			parT19.Text = "7F";
-    			parT19.FontSize = 0.15;
-    			parT19.SizeBase = 0.05;
-    			parT19.OP.AddRange(new Out[1] { Shas.GetSquare() });
-    			parT19.BasePointBase = parT19.OP.GetCenter();
-    			parT19.OP.ScalingXY(parT19.BasePointBase, 0.3);
-    			parT19.Closed = true;
-    			parT19.TextColor = Col.White;
-    			parT19.BrushColor = Color.FromArgb(160, Col.Black);
-    			parT19.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    			parT19.StringFormat.Alignment = StringAlignment.Center;
-    			parT19.StringFormat.LineAlignment = StringAlignment.Center;
+    			parT19.SetFontSize(0.15);
+    			parT19.SetSizeBase(0.05);
+    			parT19.GetOP().AddRange(new Out[1] { Shas.GetSquare() });
+    			parT19.SetBasePointBase(parT19.GetOP().GetCenter());
+    			parT19.GetOP().ScalingXY(parT19.GetBasePointBase(), 0.3);
+    			parT19.SetClosed(true);
+    			parT19.SetTextColor(Col.White);
+    			parT19.SetBrushColor(Color.FromArgb(160, Col.Black));
+    			parT19.SetShadBrush(new SolidBrush(Color.FromArgb(64, Col.Black)));
+    			parT19.GetStringFormat().Alignment = StringAlignment.Center;
+    			parT19.GetStringFormat().LineAlignment = StringAlignment.Center;
     			bs.Add("ボタン7", new But1(parT19, delegate(But b)
     			{
     				if (d)
@@ -2993,20 +2993,20 @@ namespace SlaveMatrix
     				部屋選択();
     			}));
     			ParT parT20 = new ParT();
-    			parT20.Font = new Font("MS Gothic", 0.1f);
-    			parT20.PositionBase = DrawBuffer.GetPosition(0.31, 0.03);
+    			parT20.SetFont(new Font("MS Gothic", 0.1f));
+    			parT20.SetPositionBase(DrawBuffer.GetPosition(0.31, 0.03));
     			parT20.Text = "8F";
-    			parT20.FontSize = 0.15;
-    			parT20.SizeBase = 0.05;
-    			parT20.OP.AddRange(new Out[1] { Shas.GetSquare() });
-    			parT20.BasePointBase = parT20.OP.GetCenter();
-    			parT20.OP.ScalingXY(parT20.BasePointBase, 0.3);
-    			parT20.Closed = true;
-    			parT20.TextColor = Col.White;
-    			parT20.BrushColor = Color.FromArgb(160, Col.Black);
-    			parT20.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    			parT20.StringFormat.Alignment = StringAlignment.Center;
-    			parT20.StringFormat.LineAlignment = StringAlignment.Center;
+    			parT20.SetFontSize(0.15);
+    			parT20.SetSizeBase(0.05);
+    			parT20.GetOP().AddRange(new Out[1] { Shas.GetSquare() });
+    			parT20.SetBasePointBase(parT20.GetOP().GetCenter());
+    			parT20.GetOP().ScalingXY(parT20.GetBasePointBase(), 0.3);
+    			parT20.SetClosed(true);
+    			parT20.SetTextColor(Col.White);
+    			parT20.SetBrushColor(Color.FromArgb(160, Col.Black));
+    			parT20.SetShadBrush(new SolidBrush(Color.FromArgb(64, Col.Black)));
+    			parT20.GetStringFormat().Alignment = StringAlignment.Center;
+    			parT20.GetStringFormat().LineAlignment = StringAlignment.Center;
     			bs.Add("ボタン8", new But1(parT20, delegate(But b)
     			{
     				if (d)
@@ -3017,20 +3017,20 @@ namespace SlaveMatrix
     				部屋選択();
     			}));
     			ParT parT21 = new ParT();
-    			parT21.Font = new Font("MS Gothic", 0.1f);
-    			parT21.PositionBase = DrawBuffer.GetPosition(0.35, 0.03);
+    			parT21.SetFont(new Font("MS Gothic", 0.1f));
+    			parT21.SetPositionBase(DrawBuffer.GetPosition(0.35, 0.03));
     			parT21.Text = "9F";
-    			parT21.FontSize = 0.15;
-    			parT21.SizeBase = 0.05;
-    			parT21.OP.AddRange(new Out[1] { Shas.GetSquare() });
-    			parT21.BasePointBase = parT21.OP.GetCenter();
-    			parT21.OP.ScalingXY(parT21.BasePointBase, 0.3);
-    			parT21.Closed = true;
-    			parT21.TextColor = Col.White;
-    			parT21.BrushColor = Color.FromArgb(160, Col.Black);
-    			parT21.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    			parT21.StringFormat.Alignment = StringAlignment.Center;
-    			parT21.StringFormat.LineAlignment = StringAlignment.Center;
+    			parT21.SetFontSize(0.15);
+    			parT21.SetSizeBase(0.05);
+    			parT21.GetOP().AddRange(new Out[1] { Shas.GetSquare() });
+    			parT21.SetBasePointBase(parT21.GetOP().GetCenter());
+    			parT21.GetOP().ScalingXY(parT21.GetBasePointBase(), 0.3);
+    			parT21.SetClosed(true);
+    			parT21.SetTextColor(Col.White);
+    			parT21.SetBrushColor(Color.FromArgb(160, Col.Black));
+    			parT21.SetShadBrush(new SolidBrush(Color.FromArgb(64, Col.Black)));
+    			parT21.GetStringFormat().Alignment = StringAlignment.Center;
+    			parT21.GetStringFormat().LineAlignment = StringAlignment.Center;
     			bs.Add("ボタン9", new But1(parT21, delegate(But b)
     			{
     				if (d)
@@ -3307,7 +3307,7 @@ namespace SlaveMatrix
     	{
     		Character 祝福 = null;
     		bool d = false;
-    		Lab l = new Lab(DrawBuffer, "ラベル1", new Vector2D(ip.MaiB.Position.X, 0.026), 0.1, 1.0, new Font("MS Gothic", 1f), 0.085, "No blessing", Col.White, Col.Black, ip.MaiB.BrushColor, Col.Black);
+    		Lab l = new Lab(DrawBuffer, "ラベル1", new Vector2D(ip.MaiB.GetPosition().X, 0.026), 0.1, 1.0, new Font("MS Gothic", 1f), 0.085, "No blessing", Col.White, Col.Black, ip.MaiB.GetBrushColor(), Col.Black);
     		Buts bs = new Buts();
     		Action 祝福なし = delegate
     		{
@@ -3331,10 +3331,10 @@ namespace SlaveMatrix
     		}));
     		Action<Buts> rs1 = delegate(Buts bs_)
     		{
-    			Color penColor = bs_["ボタン0"].Pars.Values.First().ToParT().PenColor;
+    			Color penColor = bs_["ボタン0"].Pars.Values.First().ToParT().GetPenColor();
     			foreach (But item in bs_.EnumBut.Skip(1))
     			{
-    				item.Pars.Values.First().ToParT().PenColor = penColor;
+    				item.Pars.Values.First().ToParT().SetPenColor(penColor);
     			}
     		};
 
@@ -3345,7 +3345,7 @@ namespace SlaveMatrix
     				//Sounds.操作.Play();
     			}
     			rs1(bs);
-    			bu.Pars.Values.First().ToParT().PenColor = Color.Red;
+    			bu.Pars.Values.First().ToParT().SetPenColor(Color.Red);
     			if (Sta.GameData.祝福 != null)
     			{
     				l.Text = Sta.GameData.祝福.Name;
@@ -3385,7 +3385,7 @@ namespace SlaveMatrix
     		{
     			//Sounds.操作.Play();
     			rs1(bs);
-    			bu.Pars.Values.First().ToParT().PenColor = Color.Red;
+    			bu.Pars.Values.First().ToParT().SetPenColor(Color.Red);
     			if (Sta.GameData.祝福 != null)
     			{
     				l.Text = GameText.親形質1;
@@ -3425,7 +3425,7 @@ namespace SlaveMatrix
     		{
     			//Sounds.操作.Play();
     			rs1(bs);
-    			bu.Pars.Values.First().ToParT().PenColor = Color.Red;
+    			bu.Pars.Values.First().ToParT().SetPenColor(Color.Red);
     			if (Sta.GameData.祝福 != null)
     			{
     				l.Text = GameText.親形質2;
@@ -3639,20 +3639,20 @@ namespace SlaveMatrix
     		Module mod = new Module();
     		Buts bs = new Buts();
     		ParT parT = new ParT();
-    		parT.Font = new Font("MS Gothic", 0.1f);
-    		parT.PositionBase = DrawBuffer.GetPosition(0.85, 0.02);
+    		parT.SetFont(new Font("MS Gothic", 0.1f));
+    		parT.SetPositionBase(DrawBuffer.GetPosition(0.85, 0.02));
     		parT.Text = GameText.戻る;
-    		parT.FontSize = 0.15;
-    		parT.SizeBase = 0.05;
-    		parT.OP.AddRange(new Out[1] { Shas.GetSquare() });
-    		parT.OP.ScalingY(parT.OP.GetCenter(), 0.47);
-    		parT.OP.Rotation(parT.OP.GetCenter(), -26.0);
-    		parT.Closed = true;
-    		parT.TextColor = Col.White;
-    		parT.BrushColor = Color.FromArgb(160, Col.Black);
-    		parT.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    		parT.StringFormat.Alignment = StringAlignment.Center;
-    		parT.StringFormat.LineAlignment = StringAlignment.Center;
+    		parT.SetFontSize(0.15);
+    		parT.SetSizeBase(0.05);
+    		parT.GetOP().AddRange(new Out[1] { Shas.GetSquare() });
+    		parT.GetOP().ScalingY(parT.GetOP().GetCenter(), 0.47);
+    		parT.GetOP().Rotation(parT.GetOP().GetCenter(), -26.0);
+    		parT.SetClosed(true);
+    		parT.SetTextColor(Col.White);
+    		parT.SetBrushColor(Color.FromArgb(160, Col.Black));
+    		parT.SetShadBrush(new SolidBrush(Color.FromArgb(64, Col.Black)));
+    		parT.GetStringFormat().Alignment = StringAlignment.Center;
+    		parT.GetStringFormat().LineAlignment = StringAlignment.Center;
     		bs.Add("ボタン0", new But1(parT, delegate
     		{
     			//Sounds.操作.Play();
@@ -3662,60 +3662,60 @@ namespace SlaveMatrix
     			}
     		}));
     		ParT parT2 = new ParT();
-    		parT2.Font = new Font("MS Gothic", 0.1f);
-    		parT2.PositionBase = DrawBuffer.GetPosition(0.85, 0.1);
+    		parT2.SetFont(new Font("MS Gothic", 0.1f));
+    		parT2.SetPositionBase(DrawBuffer.GetPosition(0.85, 0.1));
     		parT2.Text = GameText.借金;
-    		parT2.FontSize = 0.15;
-    		parT2.SizeBase = 0.05;
-    		parT2.OP.AddRange(new Out[1] { Shas.GetSquare() });
-    		parT2.OP.ScalingY(parT2.OP.GetCenter(), 0.47);
-    		parT2.OP.Rotation(parT2.OP.GetCenter(), -26.0);
-    		parT2.Closed = true;
-    		parT2.TextColor = Col.White;
-    		parT2.BrushColor = Color.FromArgb(160, Col.Black);
-    		parT2.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    		parT2.StringFormat.Alignment = StringAlignment.Center;
-    		parT2.StringFormat.LineAlignment = StringAlignment.Center;
+    		parT2.SetFontSize(0.15);
+    		parT2.SetSizeBase(0.05);
+    		parT2.GetOP().AddRange(new Out[1] { Shas.GetSquare() });
+    		parT2.GetOP().ScalingY(parT2.GetOP().GetCenter(), 0.47);
+    		parT2.GetOP().Rotation(parT2.GetOP().GetCenter(), -26.0);
+    		parT2.SetClosed(true);
+    		parT2.SetTextColor(Col.White);
+    		parT2.SetBrushColor(Color.FromArgb(160, Col.Black));
+    		parT2.SetShadBrush(new SolidBrush(Color.FromArgb(64, Col.Black)));
+    		parT2.GetStringFormat().Alignment = StringAlignment.Center;
+    		parT2.GetStringFormat().LineAlignment = StringAlignment.Center;
     		bs.Add("ボタン1", new But1(parT2, delegate
     		{
     			//Sounds.操作.Play();
     			Med.Mode = "Debt";
     		}));
     		ParT parT3 = new ParT();
-    		parT3.Font = new Font("MS Gothic", 0.1f);
-    		parT3.PositionBase = DrawBuffer.GetPosition(0.85, 0.18);
+    		parT3.SetFont(new Font("MS Gothic", 0.1f));
+    		parT3.SetPositionBase(DrawBuffer.GetPosition(0.85, 0.18));
     		parT3.Text = GameText.購入;
-    		parT3.FontSize = 0.15;
-    		parT3.SizeBase = 0.05;
-    		parT3.OP.AddRange(new Out[1] { Shas.GetSquare() });
-    		parT3.OP.ScalingY(parT3.OP.GetCenter(), 0.47);
-    		parT3.OP.Rotation(parT3.OP.GetCenter(), -26.0);
-    		parT3.Closed = true;
-    		parT3.TextColor = Col.White;
-    		parT3.BrushColor = Color.FromArgb(160, Col.Black);
-    		parT3.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    		parT3.StringFormat.Alignment = StringAlignment.Center;
-    		parT3.StringFormat.LineAlignment = StringAlignment.Center;
+    		parT3.SetFontSize(0.15);
+    		parT3.SetSizeBase(0.05);
+    		parT3.GetOP().AddRange(new Out[1] { Shas.GetSquare() });
+    		parT3.GetOP().ScalingY(parT3.GetOP().GetCenter(), 0.47);
+    		parT3.GetOP().Rotation(parT3.GetOP().GetCenter(), -26.0);
+    		parT3.SetClosed(true);
+    		parT3.SetTextColor(Col.White);
+    		parT3.SetBrushColor(Color.FromArgb(160, Col.Black));
+    		parT3.SetShadBrush(new SolidBrush(Color.FromArgb(64, Col.Black)));
+    		parT3.GetStringFormat().Alignment = StringAlignment.Center;
+    		parT3.GetStringFormat().LineAlignment = StringAlignment.Center;
     		bs.Add("ボタン2", new But1(parT3, delegate
     		{
     			//Sounds.操作.Play();
     			Med.Mode = "SlaveShop";
     		}));
     		ParT parT4 = new ParT();
-    		parT4.Font = new Font("MS Gothic", 0.1f);
-    		parT4.PositionBase = DrawBuffer.GetPosition(0.85, 0.58);
+    		parT4.SetFont(new Font("MS Gothic", 0.1f));
+    		parT4.SetPositionBase(DrawBuffer.GetPosition(0.85, 0.58));
     		parT4.Text = GameText.祝福;
-    		parT4.FontSize = 0.15;
-    		parT4.SizeBase = 0.05;
-    		parT4.OP.AddRange(new Out[1] { Shas.GetSquare() });
-    		parT4.OP.ScalingY(parT4.OP.GetCenter(), 0.47);
-    		parT4.OP.Rotation(parT4.OP.GetCenter(), -26.0);
-    		parT4.Closed = true;
-    		parT4.TextColor = Col.White;
-    		parT4.BrushColor = Color.FromArgb(160, Col.Black);
-    		parT4.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    		parT4.StringFormat.Alignment = StringAlignment.Center;
-    		parT4.StringFormat.LineAlignment = StringAlignment.Center;
+    		parT4.SetFontSize(0.15);
+    		parT4.SetSizeBase(0.05);
+    		parT4.GetOP().AddRange(new Out[1] { Shas.GetSquare() });
+    		parT4.GetOP().ScalingY(parT4.GetOP().GetCenter(), 0.47);
+    		parT4.GetOP().Rotation(parT4.GetOP().GetCenter(), -26.0);
+    		parT4.SetClosed(true);
+    		parT4.SetTextColor(Col.White);
+    		parT4.SetBrushColor(Color.FromArgb(160, Col.Black));
+    		parT4.SetShadBrush(new SolidBrush(Color.FromArgb(64, Col.Black)));
+    		parT4.GetStringFormat().Alignment = StringAlignment.Center;
+    		parT4.GetStringFormat().LineAlignment = StringAlignment.Center;
     		bs.Add("ボタン3", new But1(parT4, delegate
     		{
     			//Sounds.操作.Play();
@@ -3912,19 +3912,19 @@ namespace SlaveMatrix
     		}));
 
     		ParT parT2 = new ParT();
-    		parT2.Font = new Font("MS Gothic", 0.1f);
-    		parT2.PositionBase = position + DrawBuffer.GetPosition(0.0, 0.0);
+    		parT2.SetFont(new Font("MS Gothic", 0.1f));
+    		parT2.SetPositionBase(position + DrawBuffer.GetPosition(0.0, 0.0));
     		parT2.Text = "c";
-    		parT2.FontSize = 0.15;
-    		parT2.SizeBase = 0.07;
-    		parT2.OP.AddRange(new Out[1] { Shas.GetSquare() });
-    		parT2.OP.ScalingXY(parT2.OP.GetCenter(), 0.3, 0.3);
-    		parT2.Closed = true;
-    		parT2.TextColor = Col.White;
-    		parT2.BrushColor = Color.FromArgb(160, Col.Black);
-    		parT2.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    		parT2.StringFormat.Alignment = StringAlignment.Center;
-    		parT2.StringFormat.LineAlignment = StringAlignment.Center;
+    		parT2.SetFontSize(0.15);
+    		parT2.SetSizeBase(0.07);
+    		parT2.GetOP().AddRange(new Out[1] { Shas.GetSquare() });
+    		parT2.GetOP().ScalingXY(parT2.GetOP().GetCenter(), 0.3, 0.3);
+    		parT2.SetClosed(true);
+    		parT2.SetTextColor(Col.White);
+    		parT2.SetBrushColor(Color.FromArgb(160, Col.Black));
+    		parT2.SetShadBrush(new SolidBrush(Color.FromArgb(64, Col.Black)));
+    		parT2.GetStringFormat().Alignment = StringAlignment.Center;
+    		parT2.GetStringFormat().LineAlignment = StringAlignment.Center;
     		bs.Add("nc", new But1(parT2, delegate
     		{
     			//Sounds.操作.Play();
@@ -3932,19 +3932,19 @@ namespace SlaveMatrix
     		}));
 
     		ParT parT3 = new ParT();
-    		parT3.Font = new Font("MS Gothic", 0.1f);
-    		parT3.PositionBase = position + DrawBuffer.GetPosition(0.06, 0.0);
+    		parT3.SetFont(new Font("MS Gothic", 0.1f));
+    		parT3.SetPositionBase(position + DrawBuffer.GetPosition(0.06, 0.0));
     		parT3.Text = "m";
-    		parT3.FontSize = 0.15;
-    		parT3.SizeBase = 0.07;
-    		parT3.OP.AddRange(new Out[1] { Shas.GetSquare() });
-    		parT3.OP.ScalingXY(parT3.OP.GetCenter(), 0.3, 0.3);
-    		parT3.Closed = true;
-    		parT3.TextColor = Col.White;
-    		parT3.BrushColor = Color.FromArgb(160, Col.Black);
-    		parT3.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    		parT3.StringFormat.Alignment = StringAlignment.Center;
-    		parT3.StringFormat.LineAlignment = StringAlignment.Center;
+    		parT3.SetFontSize(0.15);
+    		parT3.SetSizeBase(0.07);
+    		parT3.GetOP().AddRange(new Out[1] { Shas.GetSquare() });
+    		parT3.GetOP().ScalingXY(parT3.GetOP().GetCenter(), 0.3, 0.3);
+    		parT3.SetClosed(true);
+    		parT3.SetTextColor(Col.White);
+    		parT3.SetBrushColor(Color.FromArgb(160, Col.Black));
+    		parT3.SetShadBrush(new SolidBrush(Color.FromArgb(64, Col.Black)));
+    		parT3.GetStringFormat().Alignment = StringAlignment.Center;
+    		parT3.GetStringFormat().LineAlignment = StringAlignment.Center;
     		bs.Add("nm", new But1(parT3, delegate
     		{
     			//Sounds.操作.Play();
@@ -3961,19 +3961,19 @@ namespace SlaveMatrix
     		};
 
     		ParT parT4 = new ParT();
-    		parT4.Font = new Font("MS Gothic", 0.1f);
-    		parT4.PositionBase = position + DrawBuffer.GetPosition(0.0, 0.07);
+    		parT4.SetFont(new Font("MS Gothic", 0.1f));
+    		parT4.SetPositionBase(position + DrawBuffer.GetPosition(0.0, 0.07));
     		parT4.Text = "7";
-    		parT4.FontSize = 0.15;
-    		parT4.SizeBase = 0.07;
-    		parT4.OP.AddRange(new Out[1] { Shas.GetSquare() });
-    		parT4.OP.ScalingXY(parT4.OP.GetCenter(), 0.3, 0.3);
-    		parT4.Closed = true;
-    		parT4.TextColor = Col.White;
-    		parT4.BrushColor = Color.FromArgb(160, Col.Black);
-    		parT4.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    		parT4.StringFormat.Alignment = StringAlignment.Center;
-    		parT4.StringFormat.LineAlignment = StringAlignment.Center;
+    		parT4.SetFontSize(0.15);
+    		parT4.SetSizeBase(0.07);
+    		parT4.GetOP().AddRange(new Out[1] { Shas.GetSquare() });
+    		parT4.GetOP().ScalingXY(parT4.GetOP().GetCenter(), 0.3, 0.3);
+    		parT4.SetClosed(true);
+    		parT4.SetTextColor(Col.White);
+    		parT4.SetBrushColor(Color.FromArgb(160, Col.Black));
+    		parT4.SetShadBrush(new SolidBrush(Color.FromArgb(64, Col.Black)));
+    		parT4.GetStringFormat().Alignment = StringAlignment.Center;
+    		parT4.GetStringFormat().LineAlignment = StringAlignment.Center;
     		bs.Add("n7", new But1(parT4, delegate
     		{
     			//Sounds.操作.Play();
@@ -3981,19 +3981,19 @@ namespace SlaveMatrix
     		}));
 
     		ParT parT5 = new ParT();
-    		parT5.Font = new Font("MS Gothic", 0.1f);
-    		parT5.PositionBase = position + DrawBuffer.GetPosition(0.06, 0.07);
+    		parT5.SetFont(new Font("MS Gothic", 0.1f));
+    		parT5.SetPositionBase(position + DrawBuffer.GetPosition(0.06, 0.07));
     		parT5.Text = "8";
-    		parT5.FontSize = 0.15;
-    		parT5.SizeBase = 0.07;
-    		parT5.OP.AddRange(new Out[1] { Shas.GetSquare() });
-    		parT5.OP.ScalingXY(parT5.OP.GetCenter(), 0.3, 0.3);
-    		parT5.Closed = true;
-    		parT5.TextColor = Col.White;
-    		parT5.BrushColor = Color.FromArgb(160, Col.Black);
-    		parT5.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    		parT5.StringFormat.Alignment = StringAlignment.Center;
-    		parT5.StringFormat.LineAlignment = StringAlignment.Center;
+    		parT5.SetFontSize(0.15);
+    		parT5.SetSizeBase(0.07);
+    		parT5.GetOP().AddRange(new Out[1] { Shas.GetSquare() });
+    		parT5.GetOP().ScalingXY(parT5.GetOP().GetCenter(), 0.3, 0.3);
+    		parT5.SetClosed(true);
+    		parT5.SetTextColor(Col.White);
+    		parT5.SetBrushColor(Color.FromArgb(160, Col.Black));
+    		parT5.SetShadBrush(new SolidBrush(Color.FromArgb(64, Col.Black)));
+    		parT5.GetStringFormat().Alignment = StringAlignment.Center;
+    		parT5.GetStringFormat().LineAlignment = StringAlignment.Center;
     		bs.Add("n8", new But1(parT5, delegate
     		{
     			//Sounds.操作.Play();
@@ -4001,19 +4001,19 @@ namespace SlaveMatrix
     		}));
 
     		ParT parT6 = new ParT();
-    		parT6.Font = new Font("MS Gothic", 0.1f);
-    		parT6.PositionBase = position + DrawBuffer.GetPosition(0.12, 0.07);
+    		parT6.SetFont(new Font("MS Gothic", 0.1f));
+    		parT6.SetPositionBase(position + DrawBuffer.GetPosition(0.12, 0.07));
     		parT6.Text = "9";
-    		parT6.FontSize = 0.15;
-    		parT6.SizeBase = 0.07;
-    		parT6.OP.AddRange(new Out[1] { Shas.GetSquare() });
-    		parT6.OP.ScalingXY(parT6.OP.GetCenter(), 0.3, 0.3);
-    		parT6.Closed = true;
-    		parT6.TextColor = Col.White;
-    		parT6.BrushColor = Color.FromArgb(160, Col.Black);
-    		parT6.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    		parT6.StringFormat.Alignment = StringAlignment.Center;
-    		parT6.StringFormat.LineAlignment = StringAlignment.Center;
+    		parT6.SetFontSize(0.15);
+    		parT6.SetSizeBase(0.07);
+    		parT6.GetOP().AddRange(new Out[1] { Shas.GetSquare() });
+    		parT6.GetOP().ScalingXY(parT6.GetOP().GetCenter(), 0.3, 0.3);
+    		parT6.SetClosed(true);
+    		parT6.SetTextColor(Col.White);
+    		parT6.SetBrushColor(Color.FromArgb(160, Col.Black));
+    		parT6.SetShadBrush(new SolidBrush(Color.FromArgb(64, Col.Black)));
+    		parT6.GetStringFormat().Alignment = StringAlignment.Center;
+    		parT6.GetStringFormat().LineAlignment = StringAlignment.Center;
     		bs.Add("n9", new But1(parT6, delegate
     		{
     			//Sounds.操作.Play();
@@ -4021,19 +4021,19 @@ namespace SlaveMatrix
     		}));
 
     		ParT parT7 = new ParT();
-    		parT7.Font = new Font("MS Gothic", 0.1f);
-    		parT7.PositionBase = position + DrawBuffer.GetPosition(0.0, 0.14);
+    		parT7.SetFont(new Font("MS Gothic", 0.1f));
+    		parT7.SetPositionBase(position + DrawBuffer.GetPosition(0.0, 0.14));
     		parT7.Text = "4";
-    		parT7.FontSize = 0.15;
-    		parT7.SizeBase = 0.07;
-    		parT7.OP.AddRange(new Out[1] { Shas.GetSquare() });
-    		parT7.OP.ScalingXY(parT7.OP.GetCenter(), 0.3, 0.3);
-    		parT7.Closed = true;
-    		parT7.TextColor = Col.White;
-    		parT7.BrushColor = Color.FromArgb(160, Col.Black);
-    		parT7.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    		parT7.StringFormat.Alignment = StringAlignment.Center;
-    		parT7.StringFormat.LineAlignment = StringAlignment.Center;
+    		parT7.SetFontSize(0.15);
+    		parT7.SetSizeBase(0.07);
+    		parT7.GetOP().AddRange(new Out[1] { Shas.GetSquare() });
+    		parT7.GetOP().ScalingXY(parT7.GetOP().GetCenter(), 0.3, 0.3);
+    		parT7.SetClosed(true);
+    		parT7.SetTextColor(Col.White);
+    		parT7.SetBrushColor(Color.FromArgb(160, Col.Black));
+    		parT7.SetShadBrush(new SolidBrush(Color.FromArgb(64, Col.Black)));
+    		parT7.GetStringFormat().Alignment = StringAlignment.Center;
+    		parT7.GetStringFormat().LineAlignment = StringAlignment.Center;
     		bs.Add("n4", new But1(parT7, delegate
     		{
     			//Sounds.操作.Play();
@@ -4041,19 +4041,19 @@ namespace SlaveMatrix
     		}));
 
     		ParT parT8 = new ParT();
-    		parT8.Font = new Font("MS Gothic", 0.1f);
-    		parT8.PositionBase = position + DrawBuffer.GetPosition(0.06, 0.14);
+    		parT8.SetFont(new Font("MS Gothic", 0.1f));
+    		parT8.SetPositionBase(position + DrawBuffer.GetPosition(0.06, 0.14));
     		parT8.Text = "5";
-    		parT8.FontSize = 0.15;
-    		parT8.SizeBase = 0.07;
-    		parT8.OP.AddRange(new Out[1] { Shas.GetSquare() });
-    		parT8.OP.ScalingXY(parT8.OP.GetCenter(), 0.3, 0.3);
-    		parT8.Closed = true;
-    		parT8.TextColor = Col.White;
-    		parT8.BrushColor = Color.FromArgb(160, Col.Black);
-    		parT8.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    		parT8.StringFormat.Alignment = StringAlignment.Center;
-    		parT8.StringFormat.LineAlignment = StringAlignment.Center;
+    		parT8.SetFontSize(0.15);
+    		parT8.SetSizeBase(0.07);
+    		parT8.GetOP().AddRange(new Out[1] { Shas.GetSquare() });
+    		parT8.GetOP().ScalingXY(parT8.GetOP().GetCenter(), 0.3, 0.3);
+    		parT8.SetClosed(true);
+    		parT8.SetTextColor(Col.White);
+    		parT8.SetBrushColor(Color.FromArgb(160, Col.Black));
+    		parT8.SetShadBrush(new SolidBrush(Color.FromArgb(64, Col.Black)));
+    		parT8.GetStringFormat().Alignment = StringAlignment.Center;
+    		parT8.GetStringFormat().LineAlignment = StringAlignment.Center;
     		bs.Add("n5", new But1(parT8, delegate
     		{
     			//Sounds.操作.Play();
@@ -4061,19 +4061,19 @@ namespace SlaveMatrix
     		}));
 
     		ParT parT9 = new ParT();
-    		parT9.Font = new Font("MS Gothic", 0.1f);
-    		parT9.PositionBase = position + DrawBuffer.GetPosition(0.12, 0.14);
+    		parT9.SetFont(new Font("MS Gothic", 0.1f));
+    		parT9.SetPositionBase(position + DrawBuffer.GetPosition(0.12, 0.14));
     		parT9.Text = "6";
-    		parT9.FontSize = 0.15;
-    		parT9.SizeBase = 0.07;
-    		parT9.OP.AddRange(new Out[1] { Shas.GetSquare() });
-    		parT9.OP.ScalingXY(parT9.OP.GetCenter(), 0.3, 0.3);
-    		parT9.Closed = true;
-    		parT9.TextColor = Col.White;
-    		parT9.BrushColor = Color.FromArgb(160, Col.Black);
-    		parT9.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    		parT9.StringFormat.Alignment = StringAlignment.Center;
-    		parT9.StringFormat.LineAlignment = StringAlignment.Center;
+    		parT9.SetFontSize(0.15);
+    		parT9.SetSizeBase(0.07);
+    		parT9.GetOP().AddRange(new Out[1] { Shas.GetSquare() });
+    		parT9.GetOP().ScalingXY(parT9.GetOP().GetCenter(), 0.3, 0.3);
+    		parT9.SetClosed(true);
+    		parT9.SetTextColor(Col.White);
+    		parT9.SetBrushColor(Color.FromArgb(160, Col.Black));
+    		parT9.SetShadBrush(new SolidBrush(Color.FromArgb(64, Col.Black)));
+    		parT9.GetStringFormat().Alignment = StringAlignment.Center;
+    		parT9.GetStringFormat().LineAlignment = StringAlignment.Center;
     		bs.Add("n6", new But1(parT9, delegate
     		{
     			//Sounds.操作.Play();
@@ -4081,19 +4081,19 @@ namespace SlaveMatrix
     		}));
 
     		ParT parT10 = new ParT();
-    		parT10.Font = new Font("MS Gothic", 0.1f);
-    		parT10.PositionBase = position + DrawBuffer.GetPosition(0.0, 0.21);
+    		parT10.SetFont(new Font("MS Gothic", 0.1f));
+    		parT10.SetPositionBase(position + DrawBuffer.GetPosition(0.0, 0.21));
     		parT10.Text = "1";
-    		parT10.FontSize = 0.15;
-    		parT10.SizeBase = 0.07;
-    		parT10.OP.AddRange(new Out[1] { Shas.GetSquare() });
-    		parT10.OP.ScalingXY(parT10.OP.GetCenter(), 0.3, 0.3);
-    		parT10.Closed = true;
-    		parT10.TextColor = Col.White;
-    		parT10.BrushColor = Color.FromArgb(160, Col.Black);
-    		parT10.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    		parT10.StringFormat.Alignment = StringAlignment.Center;
-    		parT10.StringFormat.LineAlignment = StringAlignment.Center;
+    		parT10.SetFontSize(0.15);
+    		parT10.SetSizeBase(0.07);
+    		parT10.GetOP().AddRange(new Out[1] { Shas.GetSquare() });
+    		parT10.GetOP().ScalingXY(parT10.GetOP().GetCenter(), 0.3, 0.3);
+    		parT10.SetClosed(true);
+    		parT10.SetTextColor(Col.White);
+    		parT10.SetBrushColor(Color.FromArgb(160, Col.Black));
+    		parT10.SetShadBrush(new SolidBrush(Color.FromArgb(64, Col.Black)));
+    		parT10.GetStringFormat().Alignment = StringAlignment.Center;
+    		parT10.GetStringFormat().LineAlignment = StringAlignment.Center;
     		bs.Add("n1", new But1(parT10, delegate
     		{
     			//Sounds.操作.Play();
@@ -4101,19 +4101,19 @@ namespace SlaveMatrix
     		}));
 
     		ParT parT11 = new ParT();
-    		parT11.Font = new Font("MS Gothic", 0.1f);
-    		parT11.PositionBase = position + DrawBuffer.GetPosition(0.06, 0.21);
+    		parT11.SetFont(new Font("MS Gothic", 0.1f));
+    		parT11.SetPositionBase(position + DrawBuffer.GetPosition(0.06, 0.21));
     		parT11.Text = "2";
-    		parT11.FontSize = 0.15;
-    		parT11.SizeBase = 0.07;
-    		parT11.OP.AddRange(new Out[1] { Shas.GetSquare() });
-    		parT11.OP.ScalingXY(parT11.OP.GetCenter(), 0.3, 0.3);
-    		parT11.Closed = true;
-    		parT11.TextColor = Col.White;
-    		parT11.BrushColor = Color.FromArgb(160, Col.Black);
-    		parT11.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    		parT11.StringFormat.Alignment = StringAlignment.Center;
-    		parT11.StringFormat.LineAlignment = StringAlignment.Center;
+    		parT11.SetFontSize(0.15);
+    		parT11.SetSizeBase(0.07);
+    		parT11.GetOP().AddRange(new Out[1] { Shas.GetSquare() });
+    		parT11.GetOP().ScalingXY(parT11.GetOP().GetCenter(), 0.3, 0.3);
+    		parT11.SetClosed(true);
+    		parT11.SetTextColor(Col.White);
+    		parT11.SetBrushColor(Color.FromArgb(160, Col.Black));
+    		parT11.SetShadBrush(new SolidBrush(Color.FromArgb(64, Col.Black)));
+    		parT11.GetStringFormat().Alignment = StringAlignment.Center;
+    		parT11.GetStringFormat().LineAlignment = StringAlignment.Center;
     		bs.Add("n2", new But1(parT11, delegate
     		{
     			//Sounds.操作.Play();
@@ -4121,19 +4121,19 @@ namespace SlaveMatrix
     		}));
 
     		ParT parT12 = new ParT();
-    		parT12.Font = new Font("MS Gothic", 0.1f);
-    		parT12.PositionBase = position + DrawBuffer.GetPosition(0.12, 0.21);
+    		parT12.SetFont(new Font("MS Gothic", 0.1f));
+    		parT12.SetPositionBase(position + DrawBuffer.GetPosition(0.12, 0.21));
     		parT12.Text = "3";
-    		parT12.FontSize = 0.15;
-    		parT12.SizeBase = 0.07;
-    		parT12.OP.AddRange(new Out[1] { Shas.GetSquare() });
-    		parT12.OP.ScalingXY(parT12.OP.GetCenter(), 0.3, 0.3);
-    		parT12.Closed = true;
-    		parT12.TextColor = Col.White;
-    		parT12.BrushColor = Color.FromArgb(160, Col.Black);
-    		parT12.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    		parT12.StringFormat.Alignment = StringAlignment.Center;
-    		parT12.StringFormat.LineAlignment = StringAlignment.Center;
+    		parT12.SetFontSize(0.15);
+    		parT12.SetSizeBase(0.07);
+    		parT12.GetOP().AddRange(new Out[1] { Shas.GetSquare() });
+    		parT12.GetOP().ScalingXY(parT12.GetOP().GetCenter(), 0.3, 0.3);
+    		parT12.SetClosed(true);
+    		parT12.SetTextColor(Col.White);
+    		parT12.SetBrushColor(Color.FromArgb(160, Col.Black));
+    		parT12.SetShadBrush(new SolidBrush(Color.FromArgb(64, Col.Black)));
+    		parT12.GetStringFormat().Alignment = StringAlignment.Center;
+    		parT12.GetStringFormat().LineAlignment = StringAlignment.Center;
     		bs.Add("n3", new But1(parT12, delegate
     		{
     			//Sounds.操作.Play();
@@ -4141,19 +4141,19 @@ namespace SlaveMatrix
     		}));
 
     		ParT parT13 = new ParT();
-    		parT13.Font = new Font("MS Gothic", 0.1f);
-    		parT13.PositionBase = position + DrawBuffer.GetPosition(0.0, 0.28);
+    		parT13.SetFont(new Font("MS Gothic", 0.1f));
+    		parT13.SetPositionBase(position + DrawBuffer.GetPosition(0.0, 0.28));
     		parT13.Text = "0";
-    		parT13.FontSize = 0.15;
-    		parT13.SizeBase = 0.07;
-    		parT13.OP.AddRange(new Out[1] { Shas.GetSquare() });
-    		parT13.OP.ScalingXY(parT13.OP.GetCenter(), 0.3, 0.3);
-    		parT13.Closed = true;
-    		parT13.TextColor = Col.White;
-    		parT13.BrushColor = Color.FromArgb(160, Col.Black);
-    		parT13.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    		parT13.StringFormat.Alignment = StringAlignment.Center;
-    		parT13.StringFormat.LineAlignment = StringAlignment.Center;
+    		parT13.SetFontSize(0.15);
+    		parT13.SetSizeBase(0.07);
+    		parT13.GetOP().AddRange(new Out[1] { Shas.GetSquare() });
+    		parT13.GetOP().ScalingXY(parT13.GetOP().GetCenter(), 0.3, 0.3);
+    		parT13.SetClosed(true);
+    		parT13.SetTextColor(Col.White);
+    		parT13.SetBrushColor(Color.FromArgb(160, Col.Black));
+    		parT13.SetShadBrush(new SolidBrush(Color.FromArgb(64, Col.Black)));
+    		parT13.GetStringFormat().Alignment = StringAlignment.Center;
+    		parT13.GetStringFormat().LineAlignment = StringAlignment.Center;
     		bs.Add("n0", new But1(parT13, delegate
     		{
     			//Sounds.操作.Play();
@@ -4161,19 +4161,19 @@ namespace SlaveMatrix
     		}));
 
     		ParT parT14 = new ParT();
-    		parT14.Font = new Font("MS Gothic", 0.1f);
-    		parT14.PositionBase = position + DrawBuffer.GetPosition(0.12, 0.28);
+    		parT14.SetFont(new Font("MS Gothic", 0.1f));
+    		parT14.SetPositionBase(position + DrawBuffer.GetPosition(0.12, 0.28));
     		parT14.Text = GameText.借;
-    		parT14.FontSize = 0.15;
-    		parT14.SizeBase = 0.07;
-    		parT14.OP.AddRange(new Out[1] { Shas.GetSquare() });
-    		parT14.OP.ScalingXY(parT14.OP.GetCenter(), 0.3, 0.3);
-    		parT14.Closed = true;
-    		parT14.TextColor = Col.White;
-    		parT14.BrushColor = Color.FromArgb(160, Col.Black);
-    		parT14.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    		parT14.StringFormat.Alignment = StringAlignment.Center;
-    		parT14.StringFormat.LineAlignment = StringAlignment.Center;
+    		parT14.SetFontSize(0.15);
+    		parT14.SetSizeBase(0.07);
+    		parT14.GetOP().AddRange(new Out[1] { Shas.GetSquare() });
+    		parT14.GetOP().ScalingXY(parT14.GetOP().GetCenter(), 0.3, 0.3);
+    		parT14.SetClosed(true);
+    		parT14.SetTextColor(Col.White);
+    		parT14.SetBrushColor(Color.FromArgb(160, Col.Black));
+    		parT14.SetShadBrush(new SolidBrush(Color.FromArgb(64, Col.Black)));
+    		parT14.GetStringFormat().Alignment = StringAlignment.Center;
+    		parT14.GetStringFormat().LineAlignment = StringAlignment.Center;
     		bs.Add("nb", new But1(parT14, delegate
     		{
     			if (Sta.GameData.日借金可能額 != 0)
@@ -4208,19 +4208,19 @@ namespace SlaveMatrix
     		}));
 
     		ParT parT15 = new ParT();
-    		parT15.Font = new Font("MS Gothic", 0.1f);
-    		parT15.PositionBase = position + DrawBuffer.GetPosition(0.06, 0.28);
+    		parT15.SetFont(new Font("MS Gothic", 0.1f));
+    		parT15.SetPositionBase(position + DrawBuffer.GetPosition(0.06, 0.28));
     		parT15.Text = GameText.返;
-    		parT15.FontSize = 0.15;
-    		parT15.SizeBase = 0.07;
-    		parT15.OP.AddRange(new Out[1] { Shas.GetSquare() });
-    		parT15.OP.ScalingXY(parT15.OP.GetCenter(), 0.3, 0.3);
-    		parT15.Closed = true;
-    		parT15.TextColor = Col.White;
-    		parT15.BrushColor = Color.FromArgb(160, Col.Black);
-    		parT15.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    		parT15.StringFormat.Alignment = StringAlignment.Center;
-    		parT15.StringFormat.LineAlignment = StringAlignment.Center;
+    		parT15.SetFontSize(0.15);
+    		parT15.SetSizeBase(0.07);
+    		parT15.GetOP().AddRange(new Out[1] { Shas.GetSquare() });
+    		parT15.GetOP().ScalingXY(parT15.GetOP().GetCenter(), 0.3, 0.3);
+    		parT15.SetClosed(true);
+    		parT15.SetTextColor(Col.White);
+    		parT15.SetBrushColor(Color.FromArgb(160, Col.Black));
+    		parT15.SetShadBrush(new SolidBrush(Color.FromArgb(64, Col.Black)));
+    		parT15.GetStringFormat().Alignment = StringAlignment.Center;
+    		parT15.GetStringFormat().LineAlignment = StringAlignment.Center;
     		bs.Add("nr", new But1(parT15, delegate
     		{
     			if (Sta.GameData.所持金 != 0)
@@ -4418,20 +4418,20 @@ namespace SlaveMatrix
     		Generator g = null;
     		Buts bs = new Buts();
     		ParT parT = new ParT();
-    		parT.Font = new Font("MS Gothic", 0.1f);
-    		parT.PositionBase = DrawBuffer.GetPosition(0.85, 0.02);
+    		parT.SetFont(new Font("MS Gothic", 0.1f));
+    		parT.SetPositionBase(DrawBuffer.GetPosition(0.85, 0.02));
     		parT.Text = GameText.戻る;
-    		parT.FontSize = 0.15;
-    		parT.SizeBase = 0.05;
-    		parT.OP.AddRange(new Out[1] { Shas.GetSquare() });
-    		parT.OP.ScalingY(parT.OP.GetCenter(), 0.47);
-    		parT.OP.Rotation(parT.OP.GetCenter(), -26.0);
-    		parT.Closed = true;
-    		parT.TextColor = Col.White;
-    		parT.BrushColor = Color.FromArgb(160, Col.Black);
-    		parT.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    		parT.StringFormat.Alignment = StringAlignment.Center;
-    		parT.StringFormat.LineAlignment = StringAlignment.Center;
+    		parT.SetFontSize(0.15);
+    		parT.SetSizeBase(0.05);
+    		parT.GetOP().AddRange(new Out[1] { Shas.GetSquare() });
+    		parT.GetOP().ScalingY(parT.GetOP().GetCenter(), 0.47);
+    		parT.GetOP().Rotation(parT.GetOP().GetCenter(), -26.0);
+    		parT.SetClosed(true);
+    		parT.SetTextColor(Col.White);
+    		parT.SetBrushColor(Color.FromArgb(160, Col.Black));
+    		parT.SetShadBrush(new SolidBrush(Color.FromArgb(64, Col.Black)));
+    		parT.GetStringFormat().Alignment = StringAlignment.Center;
+    		parT.GetStringFormat().LineAlignment = StringAlignment.Center;
     		bs.Add("ボタン0", new But1(parT, delegate
     		{
     			//Sounds.操作.Play();
@@ -4445,41 +4445,41 @@ namespace SlaveMatrix
     			}
     		}));
     		ParT parT2 = new ParT();
-    		parT2.Font = new Font("MS Gothic", 0.1f);
-    		parT2.PositionBase = DrawBuffer.GetPosition(0.85, 0.1);
+    		parT2.SetFont(new Font("MS Gothic", 0.1f));
+    		parT2.SetPositionBase(DrawBuffer.GetPosition(0.85, 0.1));
     		parT2.Text = GameText.奴隷;
-    		parT2.FontSize = 0.15;
-    		parT2.SizeBase = 0.05;
-    		parT2.OP.AddRange(new Out[1] { Shas.GetSquare() });
-    		parT2.OP.ScalingY(parT2.OP.GetCenter(), 0.47);
-    		parT2.OP.Rotation(parT2.OP.GetCenter(), -26.0);
-    		parT2.Closed = true;
-    		parT2.TextColor = Col.White;
-    		parT2.BrushColor = Color.FromArgb(160, Col.Black);
-    		parT2.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    		parT2.StringFormat.Alignment = StringAlignment.Center;
-    		parT2.StringFormat.LineAlignment = StringAlignment.Center;
-    		parT2.PenColor = Color.Red;
+    		parT2.SetFontSize(0.15);
+    		parT2.SetSizeBase(0.05);
+    		parT2.GetOP().AddRange(new Out[1] { Shas.GetSquare() });
+    		parT2.GetOP().ScalingY(parT2.GetOP().GetCenter(), 0.47);
+    		parT2.GetOP().Rotation(parT2.GetOP().GetCenter(), -26.0);
+    		parT2.SetClosed(true);
+    		parT2.SetTextColor(Col.White);
+    		parT2.SetBrushColor(Color.FromArgb(160, Col.Black));
+    		parT2.SetShadBrush(new SolidBrush(Color.FromArgb(64, Col.Black)));
+    		parT2.GetStringFormat().Alignment = StringAlignment.Center;
+    		parT2.GetStringFormat().LineAlignment = StringAlignment.Center;
+    		parT2.SetPenColor(Color.Red);
     		bs.Add("ボタン1", new But1(parT2, delegate
     		{
     			//Sounds.操作.Play();
     			Med.Mode = "SlaveShop";
     		}));
     		ParT parT3 = new ParT();
-    		parT3.Font = new Font("MS Gothic", 0.1f);
-    		parT3.PositionBase = DrawBuffer.GetPosition(0.85, 0.18);
+    		parT3.SetFont(new Font("MS Gothic", 0.1f));
+    		parT3.SetPositionBase(DrawBuffer.GetPosition(0.85, 0.18));
     		parT3.Text = GameText.道具;
-    		parT3.FontSize = 0.15;
-    		parT3.SizeBase = 0.05;
-    		parT3.OP.AddRange(new Out[1] { Shas.GetSquare() });
-    		parT3.OP.ScalingY(parT3.OP.GetCenter(), 0.47);
-    		parT3.OP.Rotation(parT3.OP.GetCenter(), -26.0);
-    		parT3.Closed = true;
-    		parT3.TextColor = Col.White;
-    		parT3.BrushColor = Color.FromArgb(160, Col.Black);
-    		parT3.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    		parT3.StringFormat.Alignment = StringAlignment.Center;
-    		parT3.StringFormat.LineAlignment = StringAlignment.Center;
+    		parT3.SetFontSize(0.15);
+    		parT3.SetSizeBase(0.05);
+    		parT3.GetOP().AddRange(new Out[1] { Shas.GetSquare() });
+    		parT3.GetOP().ScalingY(parT3.GetOP().GetCenter(), 0.47);
+    		parT3.GetOP().Rotation(parT3.GetOP().GetCenter(), -26.0);
+    		parT3.SetClosed(true);
+    		parT3.SetTextColor(Col.White);
+    		parT3.SetBrushColor(Color.FromArgb(160, Col.Black));
+    		parT3.SetShadBrush(new SolidBrush(Color.FromArgb(64, Col.Black)));
+    		parT3.GetStringFormat().Alignment = StringAlignment.Center;
+    		parT3.GetStringFormat().LineAlignment = StringAlignment.Center;
     		bs.Add("ボタン2", new But1(parT3, delegate
     		{
     			//Sounds.操作.Play();
@@ -4490,26 +4490,26 @@ namespace SlaveMatrix
     		{
     			foreach (But item in bs.EnumBut.Skip(3).Take(10))
     			{
-    				item.Pars.Values.First().ToParT().PenColor = bs初期縁色;
+    				item.Pars.Values.First().ToParT().SetPenColor(bs初期縁色);
     			}
     		};
     		double num = 0.7;
     		double num2 = -0.03;
     		ParT parT4 = new ParT();
-    		parT4.Font = new Font("MS Gothic", 0.1f);
-    		parT4.PositionBase = DrawBuffer.GetPosition(0.01, num2 + 0.02 * num);
+    		parT4.SetFont(new Font("MS Gothic", 0.1f));
+    		parT4.SetPositionBase(DrawBuffer.GetPosition(0.01, num2 + 0.02 * num));
     		parT4.Text = GameText.ランダム;
-    		parT4.FontSize = 0.15;
-    		parT4.SizeBase = 0.05;
-    		parT4.OP.AddRange(new Out[1] { Shas.GetSquare() });
-    		parT4.OP.ScalingY(parT4.OP.GetCenter(), 0.5 * num);
-    		parT4.Closed = true;
-    		parT4.TextColor = Col.White;
-    		parT4.BrushColor = Color.FromArgb(160, Col.Black);
-    		parT4.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    		parT4.StringFormat.Alignment = StringAlignment.Center;
-    		parT4.StringFormat.LineAlignment = StringAlignment.Center;
-    		parT4.PenColor = Color.Red;
+    		parT4.SetFontSize(0.15);
+    		parT4.SetSizeBase(0.05);
+    		parT4.GetOP().AddRange(new Out[1] { Shas.GetSquare() });
+    		parT4.GetOP().ScalingY(parT4.GetOP().GetCenter(), 0.5 * num);
+    		parT4.SetClosed(true);
+    		parT4.SetTextColor(Col.White);
+    		parT4.SetBrushColor(Color.FromArgb(160, Col.Black));
+    		parT4.SetShadBrush(new SolidBrush(Color.FromArgb(64, Col.Black)));
+    		parT4.GetStringFormat().Alignment = StringAlignment.Center;
+    		parT4.GetStringFormat().LineAlignment = StringAlignment.Center;
+    		parT4.SetPenColor(Color.Red);
     		bs.Add("対象0", new But1(parT4, delegate(But bu)
     		{
     			if (d)
@@ -4518,201 +4518,201 @@ namespace SlaveMatrix
     			}
     			d = true;
     			bs縁色初期化();
-    			bu.Pars.Values.First().ToParT().PenColor = Color.Red;
+    			bu.Pars.Values.First().ToParT().SetPenColor(Color.Red);
     			Reload();
     		}));
     		ParT parT5 = new ParT();
-    		parT5.Font = new Font("MS Gothic", 0.1f);
-    		parT5.PositionBase = DrawBuffer.GetPosition(0.01, num2 + 0.1 * num);
+    		parT5.SetFont(new Font("MS Gothic", 0.1f));
+    		parT5.SetPositionBase(DrawBuffer.GetPosition(0.01, num2 + 0.1 * num));
     		parT5.Text = GameText.鳥系;
-    		parT5.FontSize = 0.15;
-    		parT5.SizeBase = 0.05;
-    		parT5.OP.AddRange(new Out[1] { Shas.GetSquare() });
-    		parT5.OP.ScalingY(parT5.OP.GetCenter(), 0.5 * num);
-    		parT5.Closed = true;
-    		parT5.TextColor = Col.White;
-    		parT5.BrushColor = Color.FromArgb(160, Col.Black);
-    		parT5.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    		parT5.StringFormat.Alignment = StringAlignment.Center;
-    		parT5.StringFormat.LineAlignment = StringAlignment.Center;
+    		parT5.SetFontSize(0.15);
+    		parT5.SetSizeBase(0.05);
+    		parT5.GetOP().AddRange(new Out[1] { Shas.GetSquare() });
+    		parT5.GetOP().ScalingY(parT5.GetOP().GetCenter(), 0.5 * num);
+    		parT5.SetClosed(true);
+    		parT5.SetTextColor(Col.White);
+    		parT5.SetBrushColor(Color.FromArgb(160, Col.Black));
+    		parT5.SetShadBrush(new SolidBrush(Color.FromArgb(64, Col.Black)));
+    		parT5.GetStringFormat().Alignment = StringAlignment.Center;
+    		parT5.GetStringFormat().LineAlignment = StringAlignment.Center;
     		bs.Add("対象1", new But1(parT5, delegate(But bu)
     		{
     			//Sounds.操作.Play();
     			bs縁色初期化();
-    			bu.Pars.Values.First().ToParT().PenColor = Color.Red;
+    			bu.Pars.Values.First().ToParT().SetPenColor(Color.Red);
     			Reload();
     		}));
     		ParT parT6 = new ParT();
-    		parT6.Font = new Font("MS Gothic", 0.1f);
-    		parT6.PositionBase = DrawBuffer.GetPosition(0.01, num2 + 0.18 * num);
+    		parT6.SetFont(new Font("MS Gothic", 0.1f));
+    		parT6.SetPositionBase(DrawBuffer.GetPosition(0.01, num2 + 0.18 * num));
     		parT6.Text = GameText.蛇系;
-    		parT6.FontSize = 0.15;
-    		parT6.SizeBase = 0.05;
-    		parT6.OP.AddRange(new Out[1] { Shas.GetSquare() });
-    		parT6.OP.ScalingY(parT6.OP.GetCenter(), 0.5 * num);
-    		parT6.Closed = true;
-    		parT6.TextColor = Col.White;
-    		parT6.BrushColor = Color.FromArgb(160, Col.Black);
-    		parT6.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    		parT6.StringFormat.Alignment = StringAlignment.Center;
-    		parT6.StringFormat.LineAlignment = StringAlignment.Center;
+    		parT6.SetFontSize(0.15);
+    		parT6.SetSizeBase(0.05);
+    		parT6.GetOP().AddRange(new Out[1] { Shas.GetSquare() });
+    		parT6.GetOP().ScalingY(parT6.GetOP().GetCenter(), 0.5 * num);
+    		parT6.SetClosed(true);
+    		parT6.SetTextColor(Col.White);
+    		parT6.SetBrushColor(Color.FromArgb(160, Col.Black));
+    		parT6.SetShadBrush(new SolidBrush(Color.FromArgb(64, Col.Black)));
+    		parT6.GetStringFormat().Alignment = StringAlignment.Center;
+    		parT6.GetStringFormat().LineAlignment = StringAlignment.Center;
     		bs.Add("対象2", new But1(parT6, delegate(But bu)
     		{
     			//Sounds.操作.Play();
     			bs縁色初期化();
-    			bu.Pars.Values.First().ToParT().PenColor = Color.Red;
+    			bu.Pars.Values.First().ToParT().SetPenColor(Color.Red);
     			Reload();
     		}));
     		ParT parT7 = new ParT();
-    		parT7.Font = new Font("MS Gothic", 0.1f);
-    		parT7.PositionBase = DrawBuffer.GetPosition(0.01, num2 + 0.26 * num);
+    		parT7.SetFont(new Font("MS Gothic", 0.1f));
+    		parT7.SetPositionBase(DrawBuffer.GetPosition(0.01, num2 + 0.26 * num));
     		parT7.Text = GameText.獣系;
-    		parT7.FontSize = 0.15;
-    		parT7.SizeBase = 0.05;
-    		parT7.OP.AddRange(new Out[1] { Shas.GetSquare() });
-    		parT7.OP.ScalingY(parT7.OP.GetCenter(), 0.5 * num);
-    		parT7.Closed = true;
-    		parT7.TextColor = Col.White;
-    		parT7.BrushColor = Color.FromArgb(160, Col.Black);
-    		parT7.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    		parT7.StringFormat.Alignment = StringAlignment.Center;
-    		parT7.StringFormat.LineAlignment = StringAlignment.Center;
+    		parT7.SetFontSize(0.15);
+    		parT7.SetSizeBase(0.05);
+    		parT7.GetOP().AddRange(new Out[1] { Shas.GetSquare() });
+    		parT7.GetOP().ScalingY(parT7.GetOP().GetCenter(), 0.5 * num);
+    		parT7.SetClosed(true);
+    		parT7.SetTextColor(Col.White);
+    		parT7.SetBrushColor(Color.FromArgb(160, Col.Black));
+    		parT7.SetShadBrush(new SolidBrush(Color.FromArgb(64, Col.Black)));
+    		parT7.GetStringFormat().Alignment = StringAlignment.Center;
+    		parT7.GetStringFormat().LineAlignment = StringAlignment.Center;
     		bs.Add("対象3", new But1(parT7, delegate(But bu)
     		{
     			//Sounds.操作.Play();
     			bs縁色初期化();
-    			bu.Pars.Values.First().ToParT().PenColor = Color.Red;
+    			bu.Pars.Values.First().ToParT().SetPenColor(Color.Red);
     			Reload();
     		}));
     		ParT parT8 = new ParT();
-    		parT8.Font = new Font("MS Gothic", 0.1f);
-    		parT8.PositionBase = DrawBuffer.GetPosition(0.01, num2 + 0.34 * num);
+    		parT8.SetFont(new Font("MS Gothic", 0.1f));
+    		parT8.SetPositionBase(DrawBuffer.GetPosition(0.01, num2 + 0.34 * num));
     		parT8.Text = GameText.水系;
-    		parT8.FontSize = 0.15;
-    		parT8.SizeBase = 0.05;
-    		parT8.OP.AddRange(new Out[1] { Shas.GetSquare() });
-    		parT8.OP.ScalingY(parT8.OP.GetCenter(), 0.5 * num);
-    		parT8.Closed = true;
-    		parT8.TextColor = Col.White;
-    		parT8.BrushColor = Color.FromArgb(160, Col.Black);
-    		parT8.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    		parT8.StringFormat.Alignment = StringAlignment.Center;
-    		parT8.StringFormat.LineAlignment = StringAlignment.Center;
+    		parT8.SetFontSize(0.15);
+    		parT8.SetSizeBase(0.05);
+    		parT8.GetOP().AddRange(new Out[1] { Shas.GetSquare() });
+    		parT8.GetOP().ScalingY(parT8.GetOP().GetCenter(), 0.5 * num);
+    		parT8.SetClosed(true);
+    		parT8.SetTextColor(Col.White);
+    		parT8.SetBrushColor(Color.FromArgb(160, Col.Black));
+    		parT8.SetShadBrush(new SolidBrush(Color.FromArgb(64, Col.Black)));
+    		parT8.GetStringFormat().Alignment = StringAlignment.Center;
+    		parT8.GetStringFormat().LineAlignment = StringAlignment.Center;
     		bs.Add("対象4", new But1(parT8, delegate(But bu)
     		{
     			//Sounds.操作.Play();
     			bs縁色初期化();
-    			bu.Pars.Values.First().ToParT().PenColor = Color.Red;
+    			bu.Pars.Values.First().ToParT().SetPenColor(Color.Red);
     			Reload();
     		}));
     		ParT parT9 = new ParT();
-    		parT9.Font = new Font("MS Gothic", 0.1f);
-    		parT9.PositionBase = DrawBuffer.GetPosition(0.01, num2 + 0.42 * num);
+    		parT9.SetFont(new Font("MS Gothic", 0.1f));
+    		parT9.SetPositionBase(DrawBuffer.GetPosition(0.01, num2 + 0.42 * num));
     		parT9.Text = GameText.虫系;
-    		parT9.FontSize = 0.15;
-    		parT9.SizeBase = 0.05;
-    		parT9.OP.AddRange(new Out[1] { Shas.GetSquare() });
-    		parT9.OP.ScalingY(parT9.OP.GetCenter(), 0.5 * num);
-    		parT9.Closed = true;
-    		parT9.TextColor = Col.White;
-    		parT9.BrushColor = Color.FromArgb(160, Col.Black);
-    		parT9.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    		parT9.StringFormat.Alignment = StringAlignment.Center;
-    		parT9.StringFormat.LineAlignment = StringAlignment.Center;
+    		parT9.SetFontSize(0.15);
+    		parT9.SetSizeBase(0.05);
+    		parT9.GetOP().AddRange(new Out[1] { Shas.GetSquare() });
+    		parT9.GetOP().ScalingY(parT9.GetOP().GetCenter(), 0.5 * num);
+    		parT9.SetClosed(true);
+    		parT9.SetTextColor(Col.White);
+    		parT9.SetBrushColor(Color.FromArgb(160, Col.Black));
+    		parT9.SetShadBrush(new SolidBrush(Color.FromArgb(64, Col.Black)));
+    		parT9.GetStringFormat().Alignment = StringAlignment.Center;
+    		parT9.GetStringFormat().LineAlignment = StringAlignment.Center;
     		bs.Add("対象5", new But1(parT9, delegate(But bu)
     		{
     			//Sounds.操作.Play();
     			bs縁色初期化();
-    			bu.Pars.Values.First().ToParT().PenColor = Color.Red;
+    			bu.Pars.Values.First().ToParT().SetPenColor(Color.Red);
     			Reload();
     		}));
     		ParT parT10 = new ParT();
-    		parT10.Font = new Font("MS Gothic", 0.1f);
-    		parT10.PositionBase = DrawBuffer.GetPosition(0.01, num2 + 0.5 * num);
+    		parT10.SetFont(new Font("MS Gothic", 0.1f));
+    		parT10.SetPositionBase(DrawBuffer.GetPosition(0.01, num2 + 0.5 * num));
     		parT10.Text = GameText.人型;
-    		parT10.FontSize = 0.15;
-    		parT10.SizeBase = 0.05;
-    		parT10.OP.AddRange(new Out[1] { Shas.GetSquare() });
-    		parT10.OP.ScalingY(parT10.OP.GetCenter(), 0.5 * num);
-    		parT10.Closed = true;
-    		parT10.TextColor = Col.White;
-    		parT10.BrushColor = Color.FromArgb(160, Col.Black);
-    		parT10.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    		parT10.StringFormat.Alignment = StringAlignment.Center;
-    		parT10.StringFormat.LineAlignment = StringAlignment.Center;
+    		parT10.SetFontSize(0.15);
+    		parT10.SetSizeBase(0.05);
+    		parT10.GetOP().AddRange(new Out[1] { Shas.GetSquare() });
+    		parT10.GetOP().ScalingY(parT10.GetOP().GetCenter(), 0.5 * num);
+    		parT10.SetClosed(true);
+    		parT10.SetTextColor(Col.White);
+    		parT10.SetBrushColor(Color.FromArgb(160, Col.Black));
+    		parT10.SetShadBrush(new SolidBrush(Color.FromArgb(64, Col.Black)));
+    		parT10.GetStringFormat().Alignment = StringAlignment.Center;
+    		parT10.GetStringFormat().LineAlignment = StringAlignment.Center;
     		bs.Add("対象6", new But1(parT10, delegate(But bu)
     		{
     			//Sounds.操作.Play();
     			bs縁色初期化();
-    			bu.Pars.Values.First().ToParT().PenColor = Color.Red;
+    			bu.Pars.Values.First().ToParT().SetPenColor(Color.Red);
     			Reload();
     		}));
     		ParT parT11 = new ParT();
-    		parT11.Font = new Font("MS Gothic", 0.1f);
-    		parT11.PositionBase = DrawBuffer.GetPosition(0.01, num2 + 0.58 * num);
+    		parT11.SetFont(new Font("MS Gothic", 0.1f));
+    		parT11.SetPositionBase(DrawBuffer.GetPosition(0.01, num2 + 0.58 * num));
     		parT11.Text = GameText.幻獣;
-    		parT11.FontSize = 0.15;
-    		parT11.SizeBase = 0.05;
-    		parT11.OP.AddRange(new Out[1] { Shas.GetSquare() });
-    		parT11.OP.ScalingY(parT11.OP.GetCenter(), 0.5 * num);
-    		parT11.Closed = true;
-    		parT11.TextColor = Col.White;
-    		parT11.BrushColor = Color.FromArgb(160, Col.Black);
-    		parT11.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    		parT11.StringFormat.Alignment = StringAlignment.Center;
-    		parT11.StringFormat.LineAlignment = StringAlignment.Center;
+    		parT11.SetFontSize(0.15);
+    		parT11.SetSizeBase(0.05);
+    		parT11.GetOP().AddRange(new Out[1] { Shas.GetSquare() });
+    		parT11.GetOP().ScalingY(parT11.GetOP().GetCenter(), 0.5 * num);
+    		parT11.SetClosed(true);
+    		parT11.SetTextColor(Col.White);
+    		parT11.SetBrushColor(Color.FromArgb(160, Col.Black));
+    		parT11.SetShadBrush(new SolidBrush(Color.FromArgb(64, Col.Black)));
+    		parT11.GetStringFormat().Alignment = StringAlignment.Center;
+    		parT11.GetStringFormat().LineAlignment = StringAlignment.Center;
     		bs.Add("対象7", new But1(parT11, delegate(But bu)
     		{
     			//Sounds.操作.Play();
     			bs縁色初期化();
-    			bu.Pars.Values.First().ToParT().PenColor = Color.Red;
+    			bu.Pars.Values.First().ToParT().SetPenColor(Color.Red);
     			Reload();
     		}));
     		ParT parT12 = new ParT();
-    		parT12.Font = new Font("MS Gothic", 0.1f);
-    		parT12.PositionBase = DrawBuffer.GetPosition(0.01, num2 + 0.66 * num);
+    		parT12.SetFont(new Font("MS Gothic", 0.1f));
+    		parT12.SetPositionBase(DrawBuffer.GetPosition(0.01, num2 + 0.66 * num));
     		parT12.Text = GameText.魔獣;
-    		parT12.FontSize = 0.15;
-    		parT12.SizeBase = 0.05;
-    		parT12.OP.AddRange(new Out[1] { Shas.GetSquare() });
-    		parT12.OP.ScalingY(parT12.OP.GetCenter(), 0.5 * num);
-    		parT12.Closed = true;
-    		parT12.TextColor = Col.White;
-    		parT12.BrushColor = Color.FromArgb(160, Col.Black);
-    		parT12.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    		parT12.StringFormat.Alignment = StringAlignment.Center;
-    		parT12.StringFormat.LineAlignment = StringAlignment.Center;
+    		parT12.SetFontSize(0.15);
+    		parT12.SetSizeBase(0.05);
+    		parT12.GetOP().AddRange(new Out[1] { Shas.GetSquare() });
+    		parT12.GetOP().ScalingY(parT12.GetOP().GetCenter(), 0.5 * num);
+    		parT12.SetClosed(true);
+    		parT12.SetTextColor(Col.White);
+    		parT12.SetBrushColor(Color.FromArgb(160, Col.Black));
+    		parT12.SetShadBrush(new SolidBrush(Color.FromArgb(64, Col.Black)));
+    		parT12.GetStringFormat().Alignment = StringAlignment.Center;
+    		parT12.GetStringFormat().LineAlignment = StringAlignment.Center;
     		bs.Add("対象8", new But1(parT12, delegate(But bu)
     		{
     			//Sounds.操作.Play();
     			bs縁色初期化();
-    			bu.Pars.Values.First().ToParT().PenColor = Color.Red;
+    			bu.Pars.Values.First().ToParT().SetPenColor(Color.Red);
     			Reload();
     		}));
     		ParT parT13 = new ParT();
-    		parT13.Font = new Font("MS Gothic", 0.1f);
-    		parT13.PositionBase = DrawBuffer.GetPosition(0.01, num2 + 0.74 * num);
+    		parT13.SetFont(new Font("MS Gothic", 0.1f));
+    		parT13.SetPositionBase(DrawBuffer.GetPosition(0.01, num2 + 0.74 * num));
     		parT13.Text = GameText.竜系;
-    		parT13.FontSize = 0.15;
-    		parT13.SizeBase = 0.05;
-    		parT13.OP.AddRange(new Out[1] { Shas.GetSquare() });
-    		parT13.OP.ScalingY(parT13.OP.GetCenter(), 0.5 * num);
-    		parT13.Closed = true;
-    		parT13.TextColor = Col.White;
-    		parT13.BrushColor = Color.FromArgb(160, Col.Black);
-    		parT13.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    		parT13.StringFormat.Alignment = StringAlignment.Center;
-    		parT13.StringFormat.LineAlignment = StringAlignment.Center;
+    		parT13.SetFontSize(0.15);
+    		parT13.SetSizeBase(0.05);
+    		parT13.GetOP().AddRange(new Out[1] { Shas.GetSquare() });
+    		parT13.GetOP().ScalingY(parT13.GetOP().GetCenter(), 0.5 * num);
+    		parT13.SetClosed(true);
+    		parT13.SetTextColor(Col.White);
+    		parT13.SetBrushColor(Color.FromArgb(160, Col.Black));
+    		parT13.SetShadBrush(new SolidBrush(Color.FromArgb(64, Col.Black)));
+    		parT13.GetStringFormat().Alignment = StringAlignment.Center;
+    		parT13.GetStringFormat().LineAlignment = StringAlignment.Center;
     		bs.Add("対象9", new But1(parT13, delegate(But bu)
     		{
     			//Sounds.操作.Play();
     			bs縁色初期化();
-    			bu.Pars.Values.First().ToParT().PenColor = Color.Red;
+    			bu.Pars.Values.First().ToParT().SetPenColor(Color.Red);
     			Reload();
     		}));
     		Action SetGen = delegate
     		{
-    			if (bs["対象0"].Pars.Values.First().ToParT().PenColor == Color.Red)
+    			if (bs["対象0"].Pars.Values.First().ToParT().GetPenColor() == Color.Red)
     			{
     				if ((Sta.GameData.鳥系.Count != 0 && Sta.GameData.系統開放[0]) || (Sta.GameData.蛇系.Count != 0 && Sta.GameData.系統開放[1]) || (Sta.GameData.獣系.Count != 0 && Sta.GameData.系統開放[2]) || (Sta.GameData.水系.Count != 0 && Sta.GameData.系統開放[3]) || (Sta.GameData.虫系.Count != 0 && Sta.GameData.系統開放[4]) || (Sta.GameData.人型.Count != 0 && Sta.GameData.系統開放[5]) || (Sta.GameData.幻獣.Count != 0 && Sta.GameData.系統開放[6]) || (Sta.GameData.魔獣.Count != 0 && Sta.GameData.系統開放[7]) || (Sta.GameData.竜系.Count != 0 && Sta.GameData.系統開放[8]))
     				{
@@ -4785,39 +4785,39 @@ namespace SlaveMatrix
     					}
     				}
     			}
-    			else if (bs["対象1"].Pars.Values.First().ToParT().PenColor == Color.Red)
+    			else if (bs["対象1"].Pars.Values.First().ToParT().GetPenColor() == Color.Red)
     			{
     				g = Sta.GameData.鳥系;
     			}
-    			else if (bs["対象2"].Pars.Values.First().ToParT().PenColor == Color.Red)
+    			else if (bs["対象2"].Pars.Values.First().ToParT().GetPenColor() == Color.Red)
     			{
     				g = Sta.GameData.蛇系;
     			}
-    			else if (bs["対象3"].Pars.Values.First().ToParT().PenColor == Color.Red)
+    			else if (bs["対象3"].Pars.Values.First().ToParT().GetPenColor() == Color.Red)
     			{
     				g = Sta.GameData.獣系;
     			}
-    			else if (bs["対象4"].Pars.Values.First().ToParT().PenColor == Color.Red)
+    			else if (bs["対象4"].Pars.Values.First().ToParT().GetPenColor() == Color.Red)
     			{
     				g = Sta.GameData.水系;
     			}
-    			else if (bs["対象5"].Pars.Values.First().ToParT().PenColor == Color.Red)
+    			else if (bs["対象5"].Pars.Values.First().ToParT().GetPenColor() == Color.Red)
     			{
     				g = Sta.GameData.虫系;
     			}
-    			else if (bs["対象6"].Pars.Values.First().ToParT().PenColor == Color.Red)
+    			else if (bs["対象6"].Pars.Values.First().ToParT().GetPenColor() == Color.Red)
     			{
     				g = Sta.GameData.人型;
     			}
-    			else if (bs["対象7"].Pars.Values.First().ToParT().PenColor == Color.Red)
+    			else if (bs["対象7"].Pars.Values.First().ToParT().GetPenColor() == Color.Red)
     			{
     				g = Sta.GameData.幻獣;
     			}
-    			else if (bs["対象8"].Pars.Values.First().ToParT().PenColor == Color.Red)
+    			else if (bs["対象8"].Pars.Values.First().ToParT().GetPenColor() == Color.Red)
     			{
     				g = Sta.GameData.魔獣;
     			}
-    			else if (bs["対象9"].Pars.Values.First().ToParT().PenColor == Color.Red)
+    			else if (bs["対象9"].Pars.Values.First().ToParT().GetPenColor() == Color.Red)
     			{
     				g = Sta.GameData.竜系;
     			}
@@ -4846,19 +4846,19 @@ namespace SlaveMatrix
     			}
     		};
     		ParT parT14 = new ParT();
-    		parT14.Font = new Font("MS Gothic", 0.1f);
-    		parT14.PositionBase = DrawBuffer.GetPosition(0.01, num2 + 0.9 * num);
+    		parT14.SetFont(new Font("MS Gothic", 0.1f));
+    		parT14.SetPositionBase(DrawBuffer.GetPosition(0.01, num2 + 0.9 * num));
     		parT14.Text = GameText.チェンジ;
-    		parT14.FontSize = 0.15;
-    		parT14.SizeBase = 0.05;
-    		parT14.OP.AddRange(new Out[1] { Shas.GetSquare() });
-    		parT14.OP.ScalingY(parT14.OP.GetCenter(), 0.5 * num);
-    		parT14.Closed = true;
-    		parT14.TextColor = Col.White;
-    		parT14.BrushColor = Color.FromArgb(160, Col.Black);
-    		parT14.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    		parT14.StringFormat.Alignment = StringAlignment.Center;
-    		parT14.StringFormat.LineAlignment = StringAlignment.Center;
+    		parT14.SetFontSize(0.15);
+    		parT14.SetSizeBase(0.05);
+    		parT14.GetOP().AddRange(new Out[1] { Shas.GetSquare() });
+    		parT14.GetOP().ScalingY(parT14.GetOP().GetCenter(), 0.5 * num);
+    		parT14.SetClosed(true);
+    		parT14.SetTextColor(Col.White);
+    		parT14.SetBrushColor(Color.FromArgb(160, Col.Black));
+    		parT14.SetShadBrush(new SolidBrush(Color.FromArgb(64, Col.Black)));
+    		parT14.GetStringFormat().Alignment = StringAlignment.Center;
+    		parT14.GetStringFormat().LineAlignment = StringAlignment.Center;
     		bs.Add("変更", new But1(parT14, delegate
     		{
     			if (!ip.Mai.TextIm.StartsWith(GameText.売り切れです))
@@ -4872,19 +4872,19 @@ namespace SlaveMatrix
     			Reload();
     		}));
     		ParT parT15 = new ParT();
-    		parT15.Font = new Font("MS Gothic", 0.1f);
-    		parT15.PositionBase = DrawBuffer.GetPosition(0.01, num2 + 0.98 * num);
+    		parT15.SetFont(new Font("MS Gothic", 0.1f));
+    		parT15.SetPositionBase(DrawBuffer.GetPosition(0.01, num2 + 0.98 * num));
     		parT15.Text = GameText.購入;
-    		parT15.FontSize = 0.15;
-    		parT15.SizeBase = 0.05;
-    		parT15.OP.AddRange(new Out[1] { Shas.GetSquare() });
-    		parT15.OP.ScalingY(parT15.OP.GetCenter(), 0.5 * num);
-    		parT15.Closed = true;
-    		parT15.TextColor = Col.White;
-    		parT15.BrushColor = Color.FromArgb(160, Col.Black);
-    		parT15.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    		parT15.StringFormat.Alignment = StringAlignment.Center;
-    		parT15.StringFormat.LineAlignment = StringAlignment.Center;
+    		parT15.SetFontSize(0.15);
+    		parT15.SetSizeBase(0.05);
+    		parT15.GetOP().AddRange(new Out[1] { Shas.GetSquare() });
+    		parT15.GetOP().ScalingY(parT15.GetOP().GetCenter(), 0.5 * num);
+    		parT15.SetClosed(true);
+    		parT15.SetTextColor(Col.White);
+    		parT15.SetBrushColor(Color.FromArgb(160, Col.Black));
+    		parT15.SetShadBrush(new SolidBrush(Color.FromArgb(64, Col.Black)));
+    		parT15.GetStringFormat().Alignment = StringAlignment.Center;
+    		parT15.GetStringFormat().LineAlignment = StringAlignment.Center;
     		ulong 買値;
     		bs.Add("購入", new But1(parT15, delegate
     		{
@@ -5010,7 +5010,7 @@ namespace SlaveMatrix
     			int num3 = 0;
     			using (IEnumerator<But> enumerator = bs.EnumBut.Skip(3).Take(10).GetEnumerator())
     			{
-    				while (enumerator.MoveNext() && !(enumerator.Current.Pars.Values.First().ToParT().PenColor == Color.Red))
+    				while (enumerator.MoveNext() && !(enumerator.Current.Pars.Values.First().ToParT().GetPenColor() == Color.Red))
     				{
     					num3++;
     				}
@@ -5094,7 +5094,7 @@ namespace SlaveMatrix
     		{
     			d = false;
     			bs縁色初期化();
-    			bs["対象0"].Pars.Values.First().ToParT().PenColor = Color.Red;
+    			bs["対象0"].Pars.Values.First().ToParT().SetPenColor(Color.Red);
     		};
     		return mod;
     	}
@@ -5307,63 +5307,63 @@ namespace SlaveMatrix
     					dbs.Move(ref hc);
     					bs.Move(ref hc);
     					lv.Move(ref hc);
-    					if (lv.bs["0"].Pars.Values.First().ToPar().HitColor == hc)
+    					if (lv.bs["0"].Pars.Values.First().ToPar().GetHitColor() == hc)
     					{
     						ip.TextIm = GameText.ペニスを模したバイブ + "\r\n" + GameText.刺激は控えめ;
     					}
-    					if (lv.bs["1"].Pars.Values.First().ToPar().HitColor == hc)
+    					if (lv.bs["1"].Pars.Values.First().ToPar().GetHitColor() == hc)
     					{
     						ip.TextIm = GameText.一般的なバイブ + "\r\n" + GameText.ディルドバイブより刺激が強い;
     					}
-    					if (lv.bs["2"].Pars.Values.First().ToPar().HitColor == hc)
+    					if (lv.bs["2"].Pars.Values.First().ToPar().GetHitColor() == hc)
     					{
     						ip.TextIm = GameText.振動と回転の2つの刺激をもたらすバイブ;
     					}
-    					if (lv.bs["3"].Pars.Values.First().ToPar().HitColor == hc)
+    					if (lv.bs["3"].Pars.Values.First().ToPar().GetHitColor() == hc)
     					{
     						ip.TextIm = GameText.強力な振動のバイブ + "\r\n" + GameText.刺激が強い;
     					}
-    					if (lv.bs["4"].Pars.Values.First().ToPar().HitColor == hc)
+    					if (lv.bs["4"].Pars.Values.First().ToPar().GetHitColor() == hc)
     					{
     						ip.TextIm = GameText.アナルの調教に適したバイブ;
     					}
-    					if (lv.bs["5"].Pars.Values.First().ToPar().HitColor == hc)
+    					if (lv.bs["5"].Pars.Values.First().ToPar().GetHitColor() == hc)
     					{
     						ip.TextIm = GameText.痛みを与えるための道具;
     					}
-    					if (lv.bs["6"].Pars.Values.First().ToPar().HitColor == hc)
+    					if (lv.bs["6"].Pars.Values.First().ToPar().GetHitColor() == hc)
     					{
     						ip.TextIm = GameText.緊張を解きほぐすために利用する;
     					}
-    					if (lv.bs["7"].Pars.Values.First().ToPar().HitColor == hc)
+    					if (lv.bs["7"].Pars.Values.First().ToPar().GetHitColor() == hc)
     					{
     						ip.TextIm = GameText.陰毛を剃ることが出来る;
     					}
-    					if (lv.bs["8"].Pars.Values.First().ToPar().HitColor == hc)
+    					if (lv.bs["8"].Pars.Values.First().ToPar().GetHitColor() == hc)
     					{
     						ip.TextIm = GameText.吸着振動するキャップ;
     					}
-    					if (lv.bs["9"].Pars.Values.First().ToPar().HitColor == hc)
+    					if (lv.bs["9"].Pars.Values.First().ToPar().GetHitColor() == hc)
     					{
     						ip.TextIm = GameText.刺激の弱いバイブの一種;
     					}
-    					if (lv.bs["10"].Pars.Values.First().ToPar().HitColor == hc)
+    					if (lv.bs["10"].Pars.Values.First().ToPar().GetHitColor() == hc)
     					{
     						ip.TextIm = GameText.アナルの調教に適した道具;
     					}
-    					if (lv.bs["11"].Pars.Values.First().ToPar().HitColor == hc)
+    					if (lv.bs["11"].Pars.Values.First().ToPar().GetHitColor() == hc)
     					{
     						ip.TextIm = GameText.奴隷の視界を遮るための道具;
     					}
-    					if (lv.bs["12"].Pars.Values.First().ToPar().HitColor == hc)
+    					if (lv.bs["12"].Pars.Values.First().ToPar().GetHitColor() == hc)
     					{
     						ip.TextIm = GameText.奴隷の口をふさぐための道具;
     					}
-    					if (lv.bs["13"].Pars.Values.First().ToPar().HitColor == hc)
+    					if (lv.bs["13"].Pars.Values.First().ToPar().GetHitColor() == hc)
     					{
     						ip.TextIm = GameText.写真を撮影することが出来る;
     					}
-    					if (lv.bs["14"].Pars.Values.First().ToPar().HitColor == hc)
+    					if (lv.bs["14"].Pars.Values.First().ToPar().GetHitColor() == hc)
     					{
     						ip.TextIm = GameText.フロアを増設し収容できる奴隷の数を増やす;
     					}
@@ -5587,84 +5587,84 @@ namespace SlaveMatrix
     			}
     		});
     		Labs ls = new Labs(Med, DrawBuffer);
-    		ls.Add("ラベル0", DrawBuffer.GetPosition(new Vector2D(num2 + 0.19, num3 - 0.1)), 0.1, 2.5, new Font("MS Gothic", 1f), 0.085, " ", Col.White, Col.Black, ip.MaiB.BrushColor, Col.Black, Input: false);
-    		ls.Add("ラベル1", DrawBuffer.GetPosition(new Vector2D(num2 + 0.19, num3 + num * 0.0 + 0.005)), 0.1, 1.0, new Font("MS Gothic", 1f), 0.085, GameText.肌の色, Col.White, Col.Black, ip.MaiB.BrushColor, Col.Black, Input: false);
-    		ls.Add("ラベル2", DrawBuffer.GetPosition(new Vector2D(num2 + 0.19, num3 + num * 0.0 + 0.045)), 0.1, 1.0, new Font("MS Gothic", 1f), 0.085, "H:", Col.White, Col.Black, ip.MaiB.BrushColor, Col.Black, Input: false);
-    		ls.Add("ラベル3", DrawBuffer.GetPosition(new Vector2D(num2 + 0.19, num3 + num * 0.0 + 0.086)), 0.1, 1.0, new Font("MS Gothic", 1f), 0.085, "S:", Col.White, Col.Black, ip.MaiB.BrushColor, Col.Black, Input: false);
-    		ls.Add("ラベル4", DrawBuffer.GetPosition(new Vector2D(num2 + 0.19, num3 + num * 0.0 + 0.127)), 0.1, 1.0, new Font("MS Gothic", 1f), 0.085, "V:", Col.White, Col.Black, ip.MaiB.BrushColor, Col.Black, Input: false);
-    		ls.Add("ラベル5", DrawBuffer.GetPosition(new Vector2D(num2 + 0.19, num3 + num * 1.0 + 0.005)), 0.1, 1.0, new Font("MS Gothic", 1f), 0.085, GameText.髪の色, Col.White, Col.Black, ip.MaiB.BrushColor, Col.Black, Input: false);
-    		ls.Add("ラベル6", DrawBuffer.GetPosition(new Vector2D(num2 + 0.19, num3 + num * 1.0 + 0.045)), 0.1, 1.0, new Font("MS Gothic", 1f), 0.085, "H:", Col.White, Col.Black, ip.MaiB.BrushColor, Col.Black, Input: false);
-    		ls.Add("ラベル7", DrawBuffer.GetPosition(new Vector2D(num2 + 0.19, num3 + num * 1.0 + 0.086)), 0.1, 1.0, new Font("MS Gothic", 1f), 0.085, "S:", Col.White, Col.Black, ip.MaiB.BrushColor, Col.Black, Input: false);
-    		ls.Add("ラベル8", DrawBuffer.GetPosition(new Vector2D(num2 + 0.19, num3 + num * 1.0 + 0.127)), 0.1, 1.0, new Font("MS Gothic", 1f), 0.085, "V:", Col.White, Col.Black, ip.MaiB.BrushColor, Col.Black, Input: false);
-    		ls.Add("ラベル9", DrawBuffer.GetPosition(new Vector2D(num2 + 0.19, num3 + num * 2.0 + 0.005)), 0.1, 1.0, new Font("MS Gothic", 1f), 0.085, GameText.瞳の色, Col.White, Col.Black, ip.MaiB.BrushColor, Col.Black, Input: false);
-    		ls.Add("ラベル10", DrawBuffer.GetPosition(new Vector2D(num2 + 0.19, num3 + num * 2.0 + 0.045)), 0.1, 1.0, new Font("MS Gothic", 1f), 0.085, "H:", Col.White, Col.Black, ip.MaiB.BrushColor, Col.Black, Input: false);
-    		ls.Add("ラベル11", DrawBuffer.GetPosition(new Vector2D(num2 + 0.19, num3 + num * 2.0 + 0.086)), 0.1, 1.0, new Font("MS Gothic", 1f), 0.085, "S:", Col.White, Col.Black, ip.MaiB.BrushColor, Col.Black, Input: false);
-    		ls.Add("ラベル12", DrawBuffer.GetPosition(new Vector2D(num2 + 0.19, num3 + num * 2.0 + 0.127)), 0.1, 1.0, new Font("MS Gothic", 1f), 0.085, "V:", Col.White, Col.Black, ip.MaiB.BrushColor, Col.Black, Input: false);
-    		ls.Add("ラベル13", DrawBuffer.GetPosition(new Vector2D(num2 + 0.19, num3 + num * 3.0 + 0.005)), 0.1, 1.0, new Font("MS Gothic", 1f), 0.085, GameText.体格, Col.White, Col.Black, ip.MaiB.BrushColor, Col.Black, Input: false);
-    		ls.Add("ラベル14", DrawBuffer.GetPosition(new Vector2D(num2 + 0.19, num3 + num * 3.0 + 0.045)), 0.1, 1.0, new Font("MS Gothic", 1f), 0.085, "H:", Col.White, Col.Black, ip.MaiB.BrushColor, Col.Black, Input: false);
-    		ls.Add("ラベル15", DrawBuffer.GetPosition(new Vector2D(num2 + 0.19, num3 + num * 3.0 + 0.086)), 0.1, 1.0, new Font("MS Gothic", 1f), 0.085, "W:", Col.White, Col.Black, ip.MaiB.BrushColor, Col.Black, Input: false);
+    		ls.Add("ラベル0", DrawBuffer.GetPosition(new Vector2D(num2 + 0.19, num3 - 0.1)), 0.1, 2.5, new Font("MS Gothic", 1f), 0.085, " ", Col.White, Col.Black, ip.MaiB.GetBrushColor(), Col.Black, Input: false);
+    		ls.Add("ラベル1", DrawBuffer.GetPosition(new Vector2D(num2 + 0.19, num3 + num * 0.0 + 0.005)), 0.1, 1.0, new Font("MS Gothic", 1f), 0.085, GameText.肌の色, Col.White, Col.Black, ip.MaiB.GetBrushColor(), Col.Black, Input: false);
+    		ls.Add("ラベル2", DrawBuffer.GetPosition(new Vector2D(num2 + 0.19, num3 + num * 0.0 + 0.045)), 0.1, 1.0, new Font("MS Gothic", 1f), 0.085, "H:", Col.White, Col.Black, ip.MaiB.GetBrushColor(), Col.Black, Input: false);
+    		ls.Add("ラベル3", DrawBuffer.GetPosition(new Vector2D(num2 + 0.19, num3 + num * 0.0 + 0.086)), 0.1, 1.0, new Font("MS Gothic", 1f), 0.085, "S:", Col.White, Col.Black, ip.MaiB.GetBrushColor(), Col.Black, Input: false);
+    		ls.Add("ラベル4", DrawBuffer.GetPosition(new Vector2D(num2 + 0.19, num3 + num * 0.0 + 0.127)), 0.1, 1.0, new Font("MS Gothic", 1f), 0.085, "V:", Col.White, Col.Black, ip.MaiB.GetBrushColor(), Col.Black, Input: false);
+    		ls.Add("ラベル5", DrawBuffer.GetPosition(new Vector2D(num2 + 0.19, num3 + num * 1.0 + 0.005)), 0.1, 1.0, new Font("MS Gothic", 1f), 0.085, GameText.髪の色, Col.White, Col.Black, ip.MaiB.GetBrushColor(), Col.Black, Input: false);
+    		ls.Add("ラベル6", DrawBuffer.GetPosition(new Vector2D(num2 + 0.19, num3 + num * 1.0 + 0.045)), 0.1, 1.0, new Font("MS Gothic", 1f), 0.085, "H:", Col.White, Col.Black, ip.MaiB.GetBrushColor(), Col.Black, Input: false);
+    		ls.Add("ラベル7", DrawBuffer.GetPosition(new Vector2D(num2 + 0.19, num3 + num * 1.0 + 0.086)), 0.1, 1.0, new Font("MS Gothic", 1f), 0.085, "S:", Col.White, Col.Black, ip.MaiB.GetBrushColor(), Col.Black, Input: false);
+    		ls.Add("ラベル8", DrawBuffer.GetPosition(new Vector2D(num2 + 0.19, num3 + num * 1.0 + 0.127)), 0.1, 1.0, new Font("MS Gothic", 1f), 0.085, "V:", Col.White, Col.Black, ip.MaiB.GetBrushColor(), Col.Black, Input: false);
+    		ls.Add("ラベル9", DrawBuffer.GetPosition(new Vector2D(num2 + 0.19, num3 + num * 2.0 + 0.005)), 0.1, 1.0, new Font("MS Gothic", 1f), 0.085, GameText.瞳の色, Col.White, Col.Black, ip.MaiB.GetBrushColor(), Col.Black, Input: false);
+    		ls.Add("ラベル10", DrawBuffer.GetPosition(new Vector2D(num2 + 0.19, num3 + num * 2.0 + 0.045)), 0.1, 1.0, new Font("MS Gothic", 1f), 0.085, "H:", Col.White, Col.Black, ip.MaiB.GetBrushColor(), Col.Black, Input: false);
+    		ls.Add("ラベル11", DrawBuffer.GetPosition(new Vector2D(num2 + 0.19, num3 + num * 2.0 + 0.086)), 0.1, 1.0, new Font("MS Gothic", 1f), 0.085, "S:", Col.White, Col.Black, ip.MaiB.GetBrushColor(), Col.Black, Input: false);
+    		ls.Add("ラベル12", DrawBuffer.GetPosition(new Vector2D(num2 + 0.19, num3 + num * 2.0 + 0.127)), 0.1, 1.0, new Font("MS Gothic", 1f), 0.085, "V:", Col.White, Col.Black, ip.MaiB.GetBrushColor(), Col.Black, Input: false);
+    		ls.Add("ラベル13", DrawBuffer.GetPosition(new Vector2D(num2 + 0.19, num3 + num * 3.0 + 0.005)), 0.1, 1.0, new Font("MS Gothic", 1f), 0.085, GameText.体格, Col.White, Col.Black, ip.MaiB.GetBrushColor(), Col.Black, Input: false);
+    		ls.Add("ラベル14", DrawBuffer.GetPosition(new Vector2D(num2 + 0.19, num3 + num * 3.0 + 0.045)), 0.1, 1.0, new Font("MS Gothic", 1f), 0.085, "H:", Col.White, Col.Black, ip.MaiB.GetBrushColor(), Col.Black, Input: false);
+    		ls.Add("ラベル15", DrawBuffer.GetPosition(new Vector2D(num2 + 0.19, num3 + num * 3.0 + 0.086)), 0.1, 1.0, new Font("MS Gothic", 1f), 0.085, "W:", Col.White, Col.Black, ip.MaiB.GetBrushColor(), Col.Black, Input: false);
     		Gau H肌 = new Gau("H肌", DrawBuffer.GetPosition(new Vector2D(num2 + 0.532, num3 + num * 0.0 + 0.06)), DrawBuffer.Size, 0.6, 0.03, 0.02, Open.Rig, _2DGAMELIB.Range.ZeroOne, DrawBuffer.DisplayUnitScale, Color.Transparent, Color.Transparent, Color.Transparent, Color.Transparent, Col.Black, Knob: true);
-    		H肌.Gauge.PenColor = Col.White;
-    		H肌.Frame1.PenColor = Col.White;
-    		H肌.Knob.PenColor = Col.White;
-    		H肌.Knob.HitColor = Med.GetUniqueColor();
+    		H肌.Gauge.SetPenColor(Col.White);
+    		H肌.Frame1.SetPenColor(Col.White);
+    		H肌.Knob.SetPenColor(Col.White);
+    		H肌.Knob.SetHitColor(Med.GetUniqueColor());
     		Gau S肌 = new Gau("S肌", DrawBuffer.GetPosition(new Vector2D(num2 + 0.532, num3 + num * 0.0 + 0.1)), DrawBuffer.Size, 0.6, 0.03, 0.02, Open.Rig, _2DGAMELIB.Range.ZeroOne, DrawBuffer.DisplayUnitScale, Color.Transparent, Color.Transparent, Color.Transparent, Color.Transparent, Col.Black, Knob: true);
-    		S肌.Gauge.PenColor = Col.White;
-    		S肌.Frame1.PenColor = Col.White;
-    		S肌.Knob.PenColor = Col.White;
-    		S肌.Knob.HitColor = Med.GetUniqueColor();
+    		S肌.Gauge.SetPenColor(Col.White);
+    		S肌.Frame1.SetPenColor(Col.White);
+    		S肌.Knob.SetPenColor(Col.White);
+    		S肌.Knob.SetHitColor(Med.GetUniqueColor());
     		Gau V肌 = new Gau("V肌", DrawBuffer.GetPosition(new Vector2D(num2 + 0.532, num3 + num * 0.0 + 0.14)), DrawBuffer.Size, 0.6, 0.03, 0.02, Open.Rig, _2DGAMELIB.Range.ZeroOne, DrawBuffer.DisplayUnitScale, Color.Transparent, Color.Transparent, Color.Transparent, Color.Transparent, Col.Black, Knob: true);
-    		V肌.Gauge.PenColor = Col.White;
-    		V肌.Frame1.PenColor = Col.White;
-    		V肌.Knob.PenColor = Col.White;
-    		V肌.Knob.HitColor = Med.GetUniqueColor();
+    		V肌.Gauge.SetPenColor(Col.White);
+    		V肌.Frame1.SetPenColor(Col.White);
+    		V肌.Knob.SetPenColor(Col.White);
+    		V肌.Knob.SetHitColor(Med.GetUniqueColor());
     		Gau H髪 = new Gau("H髪", DrawBuffer.GetPosition(new Vector2D(num2 + 0.532, num3 + num * 1.0 + 0.06)), DrawBuffer.Size, 0.6, 0.03, 0.02, Open.Rig, _2DGAMELIB.Range.ZeroOne, DrawBuffer.DisplayUnitScale, Color.Transparent, Color.Transparent, Color.Transparent, Color.Transparent, Col.Black, Knob: true);
-    		H髪.Gauge.PenColor = Col.White;
-    		H髪.Frame1.PenColor = Col.White;
-    		H髪.Knob.PenColor = Col.White;
-    		H髪.Knob.HitColor = Med.GetUniqueColor();
+    		H髪.Gauge.SetPenColor(Col.White);
+    		H髪.Frame1.SetPenColor(Col.White);
+    		H髪.Knob.SetPenColor(Col.White);
+    		H髪.Knob.SetHitColor(Med.GetUniqueColor());
     		Gau S髪 = new Gau("S髪", DrawBuffer.GetPosition(new Vector2D(num2 + 0.532, num3 + num * 1.0 + 0.1)), DrawBuffer.Size, 0.6, 0.03, 0.02, Open.Rig, _2DGAMELIB.Range.ZeroOne, DrawBuffer.DisplayUnitScale, Color.Transparent, Color.Transparent, Color.Transparent, Color.Transparent, Col.Black, Knob: true);
-    		S髪.Gauge.PenColor = Col.White;
-    		S髪.Frame1.PenColor = Col.White;
-    		S髪.Knob.PenColor = Col.White;
-    		S髪.Knob.HitColor = Med.GetUniqueColor();
+    		S髪.Gauge.SetPenColor(Col.White);
+    		S髪.Frame1.SetPenColor(Col.White);
+    		S髪.Knob.SetPenColor(Col.White);
+    		S髪.Knob.SetHitColor(Med.GetUniqueColor());
     		Gau V髪 = new Gau("V髪", DrawBuffer.GetPosition(new Vector2D(num2 + 0.532, num3 + num * 1.0 + 0.14)), DrawBuffer.Size, 0.6, 0.03, 0.02, Open.Rig, _2DGAMELIB.Range.ZeroOne, DrawBuffer.DisplayUnitScale, Color.Transparent, Color.Transparent, Color.Transparent, Color.Transparent, Col.Black, Knob: true);
-    		V髪.Gauge.PenColor = Col.White;
-    		V髪.Frame1.PenColor = Col.White;
-    		V髪.Knob.PenColor = Col.White;
-    		V髪.Knob.HitColor = Med.GetUniqueColor();
+    		V髪.Gauge.SetPenColor(Col.White);
+    		V髪.Frame1.SetPenColor(Col.White);
+    		V髪.Knob.SetPenColor(Col.White);
+    		V髪.Knob.SetHitColor(Med.GetUniqueColor());
     		Gau H瞳 = new Gau("H瞳", DrawBuffer.GetPosition(new Vector2D(num2 + 0.532, num3 + num * 2.0 + 0.06)), DrawBuffer.Size, 0.6, 0.03, 0.02, Open.Rig, _2DGAMELIB.Range.ZeroOne, DrawBuffer.DisplayUnitScale, Color.Transparent, Color.Transparent, Color.Transparent, Color.Transparent, Col.Black, Knob: true);
-    		H瞳.Gauge.PenColor = Col.White;
-    		H瞳.Frame1.PenColor = Col.White;
-    		H瞳.Knob.PenColor = Col.White;
-    		H瞳.Knob.HitColor = Med.GetUniqueColor();
+    		H瞳.Gauge.SetPenColor(Col.White);
+    		H瞳.Frame1.SetPenColor(Col.White);
+    		H瞳.Knob.SetPenColor(Col.White);
+    		H瞳.Knob.SetHitColor(Med.GetUniqueColor());
     		Gau S瞳 = new Gau("S瞳", DrawBuffer.GetPosition(new Vector2D(num2 + 0.532, num3 + num * 2.0 + 0.1)), DrawBuffer.Size, 0.6, 0.03, 0.02, Open.Rig, _2DGAMELIB.Range.ZeroOne, DrawBuffer.DisplayUnitScale, Color.Transparent, Color.Transparent, Color.Transparent, Color.Transparent, Col.Black, Knob: true);
-    		S瞳.Gauge.PenColor = Col.White;
-    		S瞳.Frame1.PenColor = Col.White;
-    		S瞳.Knob.PenColor = Col.White;
-    		S瞳.Knob.HitColor = Med.GetUniqueColor();
+    		S瞳.Gauge.SetPenColor(Col.White);
+    		S瞳.Frame1.SetPenColor(Col.White);
+    		S瞳.Knob.SetPenColor(Col.White);
+    		S瞳.Knob.SetHitColor(Med.GetUniqueColor());
     		Gau V瞳 = new Gau("V瞳", DrawBuffer.GetPosition(new Vector2D(num2 + 0.532, num3 + num * 2.0 + 0.14)), DrawBuffer.Size, 0.6, 0.03, 0.02, Open.Rig, _2DGAMELIB.Range.ZeroOne, DrawBuffer.DisplayUnitScale, Color.Transparent, Color.Transparent, Color.Transparent, Color.Transparent, Col.Black, Knob: true);
-    		V瞳.Gauge.PenColor = Col.White;
-    		V瞳.Frame1.PenColor = Col.White;
-    		V瞳.Knob.PenColor = Col.White;
-    		V瞳.Knob.HitColor = Med.GetUniqueColor();
+    		V瞳.Gauge.SetPenColor(Col.White);
+    		V瞳.Frame1.SetPenColor(Col.White);
+    		V瞳.Knob.SetPenColor(Col.White);
+    		V瞳.Knob.SetHitColor(Med.GetUniqueColor());
     		Gau 身長 = new Gau("身長", DrawBuffer.GetPosition(new Vector2D(num2 + 0.532, num3 + num * 3.0 + 0.06)), DrawBuffer.Size, 0.6, 0.03, 0.02, Open.Rig, _2DGAMELIB.Range.ZeroOne, DrawBuffer.DisplayUnitScale, Color.Transparent, Color.Transparent, Color.Transparent, Color.Transparent, Col.Black, Knob: true);
-    		身長.Gauge.PenColor = Col.White;
-    		身長.Frame1.PenColor = Col.White;
-    		身長.Knob.PenColor = Col.White;
-    		身長.Knob.HitColor = Med.GetUniqueColor();
+    		身長.Gauge.SetPenColor(Col.White);
+    		身長.Frame1.SetPenColor(Col.White);
+    		身長.Knob.SetPenColor(Col.White);
+    		身長.Knob.SetHitColor(Med.GetUniqueColor());
     		Gau 体重 = new Gau("体重", DrawBuffer.GetPosition(new Vector2D(num2 + 0.532, num3 + num * 3.0 + 0.1)), DrawBuffer.Size, 0.6, 0.03, 0.02, Open.Rig, _2DGAMELIB.Range.ZeroOne, DrawBuffer.DisplayUnitScale, Color.Transparent, Color.Transparent, Color.Transparent, Color.Transparent, Col.Black, Knob: true);
-    		体重.Gauge.PenColor = Col.White;
-    		体重.Frame1.PenColor = Col.White;
-    		体重.Knob.PenColor = Col.White;
-    		体重.Knob.HitColor = Med.GetUniqueColor();
+    		体重.Gauge.SetPenColor(Col.White);
+    		体重.Frame1.SetPenColor(Col.White);
+    		体重.Knob.SetPenColor(Col.White);
+    		体重.Knob.SetHitColor(Med.GetUniqueColor());
     		Hsv hsv = HSV.ToHSV(ref Sta.GameData.色.肌色);
     		H肌.Value = (double)hsv.H / 360.0;
     		S肌.Value = (double)hsv.S / 255.0;
     		V肌.Value = (double)hsv.V / 255.0;
-    		H肌.Base.BrushColor = Sta.GameData.色.肌色;
-    		S肌.Base.BrushColor = Sta.GameData.色.肌色;
-    		V肌.Base.BrushColor = Sta.GameData.色.肌色;
+    		H肌.Base.SetBrushColor(Sta.GameData.色.肌色);
+    		S肌.Base.SetBrushColor(Sta.GameData.色.肌色);
+    		V肌.Base.SetBrushColor(Sta.GameData.色.肌色);
     		ls["ラベル2"].Text = "H:" + hsv.H;
     		ls["ラベル3"].Text = "S:" + hsv.S;
     		ls["ラベル4"].Text = "V:" + hsv.V;
@@ -5672,9 +5672,9 @@ namespace SlaveMatrix
     		H髪.Value = (double)hsv.H / 360.0;
     		S髪.Value = (double)hsv.S / 255.0;
     		V髪.Value = (double)hsv.V / 255.0;
-    		H髪.Base.BrushColor = Sta.GameData.色.髪色;
-    		S髪.Base.BrushColor = Sta.GameData.色.髪色;
-    		V髪.Base.BrushColor = Sta.GameData.色.髪色;
+    		H髪.Base.SetBrushColor(Sta.GameData.色.髪色);
+    		S髪.Base.SetBrushColor(Sta.GameData.色.髪色);
+    		V髪.Base.SetBrushColor(Sta.GameData.色.髪色);
     		ls["ラベル6"].Text = "H:" + hsv.H;
     		ls["ラベル7"].Text = "S:" + hsv.S;
     		ls["ラベル8"].Text = "V:" + hsv.V;
@@ -5682,9 +5682,9 @@ namespace SlaveMatrix
     		H瞳.Value = (double)hsv.H / 360.0;
     		S瞳.Value = (double)hsv.S / 255.0;
     		V瞳.Value = (double)hsv.V / 255.0;
-    		H瞳.Base.BrushColor = Sta.GameData.色.瞳色;
-    		S瞳.Base.BrushColor = Sta.GameData.色.瞳色;
-    		V瞳.Base.BrushColor = Sta.GameData.色.瞳色;
+    		H瞳.Base.SetBrushColor(Sta.GameData.色.瞳色);
+    		S瞳.Base.SetBrushColor(Sta.GameData.色.瞳色);
+    		V瞳.Base.SetBrushColor(Sta.GameData.色.瞳色);
     		ls["ラベル10"].Text = "H:" + hsv.H;
     		ls["ラベル11"].Text = "S:" + hsv.S;
     		ls["ラベル12"].Text = "V:" + hsv.V;
@@ -5742,9 +5742,9 @@ namespace SlaveMatrix
     				s = (int)(255.0 * S肌.Value);
     				v = (int)(255.0 * V肌.Value);
     				HSV.ToRGB(h, s, v, out Sta.GameData.色.肌色);
-    				H肌.Base.BrushColor = Sta.GameData.色.肌色;
-    				S肌.Base.BrushColor = Sta.GameData.色.肌色;
-    				V肌.Base.BrushColor = Sta.GameData.色.肌色;
+    				H肌.Base.SetBrushColor(Sta.GameData.色.肌色);
+    				S肌.Base.SetBrushColor(Sta.GameData.色.肌色);
+    				V肌.Base.SetBrushColor(Sta.GameData.色.肌色);
     				ls["ラベル2"].Text = "H:" + h;
     				ls["ラベル3"].Text = "S:" + s;
     				ls["ラベル4"].Text = "V:" + v;
@@ -5755,9 +5755,9 @@ namespace SlaveMatrix
     				s = (int)(255.0 * S髪.Value);
     				v = (int)(255.0 * V髪.Value);
     				HSV.ToRGB(h, s, v, out Sta.GameData.色.髪色);
-    				H髪.Base.BrushColor = Sta.GameData.色.髪色;
-    				S髪.Base.BrushColor = Sta.GameData.色.髪色;
-    				V髪.Base.BrushColor = Sta.GameData.色.髪色;
+    				H髪.Base.SetBrushColor(Sta.GameData.色.髪色);
+    				S髪.Base.SetBrushColor(Sta.GameData.色.髪色);
+    				V髪.Base.SetBrushColor(Sta.GameData.色.髪色);
     				ls["ラベル6"].Text = "H:" + h;
     				ls["ラベル7"].Text = "S:" + s;
     				ls["ラベル8"].Text = "V:" + v;
@@ -5768,9 +5768,9 @@ namespace SlaveMatrix
     				s = (int)(255.0 * S瞳.Value);
     				v = (int)(255.0 * V瞳.Value);
     				HSV.ToRGB(h, s, v, out Sta.GameData.色.瞳色);
-    				H瞳.Base.BrushColor = Sta.GameData.色.瞳色;
-    				S瞳.Base.BrushColor = Sta.GameData.色.瞳色;
-    				V瞳.Base.BrushColor = Sta.GameData.色.瞳色;
+    				H瞳.Base.SetBrushColor(Sta.GameData.色.瞳色);
+    				S瞳.Base.SetBrushColor(Sta.GameData.色.瞳色);
+    				V瞳.Base.SetBrushColor(Sta.GameData.色.瞳色);
     				ls["ラベル10"].Text = "H:" + h;
     				ls["ラベル11"].Text = "S:" + s;
     				ls["ラベル12"].Text = "V:" + v;
@@ -5806,9 +5806,9 @@ namespace SlaveMatrix
     			H肌.Value = (double)hsv.H / 360.0;
     			S肌.Value = (double)hsv.S / 255.0;
     			V肌.Value = (double)hsv.V / 255.0;
-    			H肌.Base.BrushColor = Sta.GameData.色.肌色;
-    			S肌.Base.BrushColor = Sta.GameData.色.肌色;
-    			V肌.Base.BrushColor = Sta.GameData.色.肌色;
+    			H肌.Base.SetBrushColor(Sta.GameData.色.肌色);
+    			S肌.Base.SetBrushColor(Sta.GameData.色.肌色);
+    			V肌.Base.SetBrushColor(Sta.GameData.色.肌色);
     			ls["ラベル2"].Text = "H:" + hsv.H;
     			ls["ラベル3"].Text = "S:" + hsv.S;
     			ls["ラベル4"].Text = "V:" + hsv.V;
@@ -5816,9 +5816,9 @@ namespace SlaveMatrix
     			H髪.Value = (double)hsv.H / 360.0;
     			S髪.Value = (double)hsv.S / 255.0;
     			V髪.Value = (double)hsv.V / 255.0;
-    			H髪.Base.BrushColor = Sta.GameData.色.髪色;
-    			S髪.Base.BrushColor = Sta.GameData.色.髪色;
-    			V髪.Base.BrushColor = Sta.GameData.色.髪色;
+    			H髪.Base.SetBrushColor(Sta.GameData.色.髪色);
+    			S髪.Base.SetBrushColor(Sta.GameData.色.髪色);
+    			V髪.Base.SetBrushColor(Sta.GameData.色.髪色);
     			ls["ラベル6"].Text = "H:" + hsv.H;
     			ls["ラベル7"].Text = "S:" + hsv.S;
     			ls["ラベル8"].Text = "V:" + hsv.V;
@@ -5826,9 +5826,9 @@ namespace SlaveMatrix
     			H瞳.Value = (double)hsv.H / 360.0;
     			S瞳.Value = (double)hsv.S / 255.0;
     			V瞳.Value = (double)hsv.V / 255.0;
-    			H瞳.Base.BrushColor = Sta.GameData.色.瞳色;
-    			S瞳.Base.BrushColor = Sta.GameData.色.瞳色;
-    			V瞳.Base.BrushColor = Sta.GameData.色.瞳色;
+    			H瞳.Base.SetBrushColor(Sta.GameData.色.瞳色);
+    			S瞳.Base.SetBrushColor(Sta.GameData.色.瞳色);
+    			V瞳.Base.SetBrushColor(Sta.GameData.色.瞳色);
     			ls["ラベル10"].Text = "H:" + hsv.H;
     			ls["ラベル11"].Text = "S:" + hsv.S;
     			ls["ラベル12"].Text = "V:" + hsv.V;

@@ -715,9 +715,9 @@ namespace SlaveMatrix
     		set
     		{
     			double num = 0.9 + 0.2 * value;
-    			X0Y0_髪左3.SizeYBase *= num;
-    			X0Y0_髪右3.SizeYBase *= num;
-    			X0Y0_髪右4.SizeYBase *= num;
+    			X0Y0_髪左3.SetSizeYBase(X0Y0_髪左3.GetSizeYBase() * num);
+    			X0Y0_髪右3.SetSizeYBase(X0Y0_髪右3.GetSizeYBase() * num);
+    			X0Y0_髪右4.SetSizeYBase(X0Y0_髪右4.GetSizeYBase() * num);
     		}
     	}
 

@@ -1,4 +1,5 @@
 using _2DGAMELIB;
+using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
@@ -202,14 +203,14 @@ namespace SlaveMatrix
     		X0Y2_眉間CP = new ColorP(X0Y2_眉間, 眉間CD, DisUnit, abj: false);
     		Intensity = e.濃度;
     		int num = (右 ? 1 : (-1));
-    		X0Y0_眉.BasePointBase = X0Y0_眉.BasePointBase.AddX((double)num * 0.0009);
-    		X0Y1_眉.BasePointBase = X0Y1_眉.BasePointBase.AddX((double)num * 0.0009);
-    		X0Y2_眉.BasePointBase = X0Y2_眉.BasePointBase.AddX((double)num * 0.0009);
+    		X0Y0_眉.SetBasePointBase(X0Y0_眉.GetBasePointBase().AddX((double)num * 0.0009));
+    		X0Y1_眉.SetBasePointBase(X0Y1_眉.GetBasePointBase().AddX((double)num * 0.0009));
+    		X0Y2_眉.SetBasePointBase(X0Y2_眉.GetBasePointBase().AddX((double)num * 0.0009));
     	}
 
     	public override void 色更新()
     	{
-    		switch (Body.IndexY)
+    		switch (Body.GetIndexY())
     		{
     		case 0:
     			X0Y0_眉CP.Update();

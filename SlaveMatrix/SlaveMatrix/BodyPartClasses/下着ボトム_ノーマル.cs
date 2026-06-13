@@ -3462,16 +3462,16 @@ namespace SlaveMatrix
     		Intensity = e.濃度;
     		尺度YB = 0.95;
     		double y = 0.0005;
-    		X0Y0_下地.BasePointBase = X0Y0_下地.BasePointBase.AddY(y);
-    		X0Y1_下地.BasePointBase = X0Y1_下地.BasePointBase.AddY(y);
-    		X0Y2_下地.BasePointBase = X0Y2_下地.BasePointBase.AddY(y);
-    		X0Y3_下地.BasePointBase = X0Y3_下地.BasePointBase.AddY(y);
-    		X0Y4_下地.BasePointBase = X0Y4_下地.BasePointBase.AddY(y);
+    		X0Y0_下地.SetBasePointBase(X0Y0_下地.GetBasePointBase().AddY(y));
+    		X0Y1_下地.SetBasePointBase(X0Y1_下地.GetBasePointBase().AddY(y));
+    		X0Y2_下地.SetBasePointBase(X0Y2_下地.GetBasePointBase().AddY(y));
+    		X0Y3_下地.SetBasePointBase(X0Y3_下地.GetBasePointBase().AddY(y));
+    		X0Y4_下地.SetBasePointBase(X0Y4_下地.GetBasePointBase().AddY(y));
     	}
 
     	public override void 描画0(RenderArea Are)
     	{
-    		switch (Body.IndexY)
+    		switch (Body.GetIndexY())
     		{
     		case 0:
     			Are.Draw(X0Y0_紐左);
@@ -3498,7 +3498,7 @@ namespace SlaveMatrix
 
     	public override void 描画1(RenderArea Are)
     	{
-    		switch (Body.IndexY)
+    		switch (Body.GetIndexY())
     		{
     		case 0:
     			Are.Draw(X0Y0_下地);
@@ -3774,7 +3774,7 @@ namespace SlaveMatrix
 
     	public override void 色更新()
     	{
-    		switch (Body.IndexY)
+    		switch (Body.GetIndexY())
     		{
     		case 0:
     			X0Y0_紐左CP.Update();

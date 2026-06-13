@@ -50,7 +50,7 @@ namespace SlaveMatrix
     				Sta.タイル.SizeBase = 0.7;
     				Sta.タイル.JoinRoot.ValueY = Yv[c];
     				Sta.タイル.AngleBase = An[c];
-    				Sta.タイル.JoinRoot.CurJoinRoot.PositionBase = Are.GetPosition(new Vector2D(o.X + (double)x * r / Are.XRatio, o.Y + (double)y * r / Are.YRatio));
+    				Sta.タイル.JoinRoot.GetCurJoinRoot().SetPositionBase(Are.GetPosition(new Vector2D(o.X + (double)x * r / Are.XRatio, o.Y + (double)y * r / Are.YRatio)));
     				Sta.タイル.JoinPA();
     				Sta.タイル.Draw(Are);
     				c++;

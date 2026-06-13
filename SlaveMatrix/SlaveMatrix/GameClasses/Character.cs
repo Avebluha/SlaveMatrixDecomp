@@ -512,9 +512,9 @@ namespace SlaveMatrix
 
             double 尺度C = Body.Chest.尺度C;
     		Body.Chest.尺度C = 0.99;
-    		double num = Body.Chest.X0Y0_胸郭.ToGlobal(Body.Chest.X0Y0_胸郭.JP[0].Joint).Y;
+    		double num = Body.Chest.X0Y0_胸郭.ToGlobal(Body.Chest.X0Y0_胸郭.GetJP()[0].Joint).Y;
     		Body.Chest.尺度C = 1.01;
-    		double num2 = Body.Chest.X0Y0_胸郭.ToGlobal(Body.Chest.X0Y0_胸郭.JP[0].Joint).Y;
+    		double num2 = Body.Chest.X0Y0_胸郭.ToGlobal(Body.Chest.X0Y0_胸郭.GetJP()[0].Joint).Y;
     		Body.Chest.尺度C = 尺度C;
     		y = num2 - num;
     		Breathing = new Motion(0.0, 1.0)
@@ -1333,13 +1333,13 @@ namespace SlaveMatrix
     		};
     		Motions.Add(ClimaxEnd.GetHashCode().ToString(), ClimaxEnd);
     		double savedHipValue = 0.0;
-    		Par pa = Body.Waist.Body.CurJoinRoot;
+    		Par pa = Body.Waist.Body.GetCurJoinRoot();
     		Par pb = null;
     		Vector2D vec = Dat.Vec2DZero;
     		Action 腰接続 = delegate
     		{
-    			pb = cha.Body.Waist.Body.CurJoinRoot;
-    			vec = pb.ToGlobal(pb.JP[5].Joint) - pa.ToGlobal(pa.JP[5].Joint);
+    			pb = cha.Body.Waist.Body.GetCurJoinRoot();
+    			vec = pb.ToGlobal(pb.GetJP()[5].Joint) - pa.ToGlobal(pa.GetJP()[5].Joint);
 
                 ApplyContParts(vec);
     		};

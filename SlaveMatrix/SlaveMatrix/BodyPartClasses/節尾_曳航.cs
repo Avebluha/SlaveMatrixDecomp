@@ -448,11 +448,11 @@ namespace SlaveMatrix
     	public override void SetAngle0()
     	{
     		double num = (右 ? (-1.0) : 1.0);
-    		X0Y0_前腿節.AngleBase = num * 2.0;
-    		X0Y0_腿節.AngleBase = num * 5.0;
-    		X0Y0_脛節.AngleBase = num * -6.0;
-    		X0Y0_付節1.AngleBase = num * -2.0;
-    		X0Y0_付節2.AngleBase = num * 0.0;
+    		X0Y0_前腿節.SetAngleBase(num * 2.0);
+    		X0Y0_腿節.SetAngleBase(num * 5.0);
+    		X0Y0_脛節.SetAngleBase(num * -6.0);
+    		X0Y0_付節1.SetAngleBase(num * -2.0);
+    		X0Y0_付節2.SetAngleBase(num * 0.0);
     		Body.JoinPAall();
     	}
 

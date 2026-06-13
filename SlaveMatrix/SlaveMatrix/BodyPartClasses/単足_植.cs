@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using _2DGAMELIB;
+using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
@@ -1163,7 +1164,7 @@ namespace SlaveMatrix
     	public override void SetAngle0()
     	{
     		_ = 右;
-    		X0Y0_幹下.AngleBase = 10.0.GetRanAngle();
+    		X0Y0_幹下.SetAngleBase(10.0.GetRanAngle());
     		Body.JoinPAall();
     	}
 

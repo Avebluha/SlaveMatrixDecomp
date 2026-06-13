@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
 using _2DGAMELIB;
+using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
@@ -21,7 +22,7 @@ namespace SlaveMatrix
     			{
     				if (stum.Sta.表示)
     				{
-    					p = stum.Ele.Body.Current.GetPar(stum.Path);
+    					p = stum.Ele.Body.GetCurrent().GetPar(stum.Path);
     					stum.Sta.位置B = p.ToGlobal(stum.Pos);
     					stum.Sta.色更新();
     					stum.Sta.Body.Draw(Are);

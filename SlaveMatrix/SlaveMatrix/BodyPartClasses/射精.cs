@@ -1,4 +1,5 @@
 using _2DGAMELIB;
+using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
@@ -382,9 +383,9 @@ namespace SlaveMatrix
 
     	public override void 色更新()
     	{
-    		if (Body.IndexX == 0)
+    		if (Body.GetIndexX() == 0)
     		{
-    			switch (Body.IndexY)
+    			switch (Body.GetIndexY())
     			{
     			case 0:
     				X0Y0_精液CP.Update();
@@ -410,7 +411,7 @@ namespace SlaveMatrix
     			}
     			return;
     		}
-    		switch (Body.IndexY)
+    		switch (Body.GetIndexY())
     		{
     		case 0:
     			X1Y0_精液CP.Update();

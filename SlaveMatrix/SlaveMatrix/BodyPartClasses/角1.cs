@@ -1,3 +1,5 @@
+using SlaveMatrix.GameClasses;
+
 namespace SlaveMatrix
 {
     public class 角1 : Ele

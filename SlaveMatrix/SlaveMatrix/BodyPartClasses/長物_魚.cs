@@ -1,4 +1,5 @@
 using _2DGAMELIB;
+using SlaveMatrix.GameClasses;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -1738,19 +1739,19 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return X0Y0_Torso6_Torso.OP[右 ? 2 : 3].Outline;
+    			return X0Y0_Torso6_Torso.GetOP()[右 ? 2 : 3].Outline;
     		}
     		set
     		{
-    			X0Y0_Torso6_Torso.OP[右 ? 2 : 3].Outline = value;
-    			X0Y0_Torso5_Torso.OP[右 ? 2 : 3].Outline = value;
-    			X0Y0_Torso4_Torso.OP[右 ? 2 : 3].Outline = value;
-    			X0Y0_Torso3_Torso.OP[右 ? 2 : 3].Outline = value;
-    			X0Y0_Torso2_Torso.OP[右 ? 2 : 3].Outline = value;
-    			X0Y0_Torso1_Torso2.OP[右 ? 2 : 3].Outline = value;
-    			X0Y0_Torso1_Torso1.OP[(!右) ? 1 : 2].Outline = value;
-    			X0Y0_Torso1_Torso1.OP[右 ? 1 : 2].Outline = value;
-    			X0Y0_Torso1_Torso1.OP[(!右) ? 3 : 0].Outline = value;
+    			X0Y0_Torso6_Torso.GetOP()[右 ? 2 : 3].Outline = value;
+    			X0Y0_Torso5_Torso.GetOP()[右 ? 2 : 3].Outline = value;
+    			X0Y0_Torso4_Torso.GetOP()[右 ? 2 : 3].Outline = value;
+    			X0Y0_Torso3_Torso.GetOP()[右 ? 2 : 3].Outline = value;
+    			X0Y0_Torso2_Torso.GetOP()[右 ? 2 : 3].Outline = value;
+    			X0Y0_Torso1_Torso2.GetOP()[右 ? 2 : 3].Outline = value;
+    			X0Y0_Torso1_Torso1.GetOP()[(!右) ? 1 : 2].Outline = value;
+    			X0Y0_Torso1_Torso1.GetOP()[右 ? 1 : 2].Outline = value;
+    			X0Y0_Torso1_Torso1.GetOP()[(!右) ? 3 : 0].Outline = value;
     		}
     	}
 
@@ -2537,10 +2538,10 @@ namespace SlaveMatrix
     	{
     		_ = 右;
     		double maxAngle = 25.0;
-    		X0Y0_Torso6_Torso.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_Torso5_Torso.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_Torso4_Torso.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_Torso3_Torso.AngleBase = maxAngle.GetRanAngle();
+    		X0Y0_Torso6_Torso.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_Torso5_Torso.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_Torso4_Torso.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_Torso3_Torso.SetAngleBase(maxAngle.GetRanAngle());
     		Body.JoinPAall();
     	}
 

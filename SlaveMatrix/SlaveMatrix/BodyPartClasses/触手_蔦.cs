@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using _2DGAMELIB;
+using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
@@ -4248,64 +4249,64 @@ namespace SlaveMatrix
     	{
     		double num = (右 ? (-1.0) : 1.0);
     		double maxAngle = 25.0;
-    		X0Y0_節1_節.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_節2_節.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_節3_節.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_節4_節.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_節5_節.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_節6_節.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_節7_節.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_節8_節.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_節9_節.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_節10_節.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_節11_節.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_節12_節.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_節13_節.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_節14_節.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_節15_節.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_節16_節.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_節17_節.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_節18_節.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_節19_節.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_節20_節.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_節21_節.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_節22_節.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_節23_節.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_節24_節.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_先端_上顎_顎.AngleBase = num * (double)RNG.XS.NextM(15);
-    		X0Y0_先端_下顎_顎.AngleBase = num * (0.0 - X0Y0_先端_上顎_顎.AngleBase);
+    		X0Y0_節1_節.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_節2_節.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_節3_節.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_節4_節.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_節5_節.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_節6_節.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_節7_節.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_節8_節.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_節9_節.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_節10_節.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_節11_節.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_節12_節.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_節13_節.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_節14_節.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_節15_節.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_節16_節.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_節17_節.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_節18_節.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_節19_節.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_節20_節.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_節21_節.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_節22_節.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_節23_節.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_節24_節.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_先端_上顎_顎.SetAngleBase(num * (double)RNG.XS.NextM(15));
+    		X0Y0_先端_下顎_顎.SetAngleBase(num * (0.0 - X0Y0_先端_上顎_顎.GetAngleBase()));
     		Body.JoinPAall();
     	}
 
     	public void Set角度(触手_蔦 蔦)
     	{
     		double num = (右 ? (-1.0) : 1.0);
-    		X0Y0_節1_節.AngleBase = num * 蔦.X0Y0_節1_節.AngleBase;
-    		X0Y0_節2_節.AngleBase = num * 蔦.X0Y0_節2_節.AngleBase;
-    		X0Y0_節3_節.AngleBase = num * 蔦.X0Y0_節3_節.AngleBase;
-    		X0Y0_節4_節.AngleBase = num * 蔦.X0Y0_節4_節.AngleBase;
-    		X0Y0_節5_節.AngleBase = num * 蔦.X0Y0_節5_節.AngleBase;
-    		X0Y0_節6_節.AngleBase = num * 蔦.X0Y0_節6_節.AngleBase;
-    		X0Y0_節7_節.AngleBase = num * 蔦.X0Y0_節7_節.AngleBase;
-    		X0Y0_節8_節.AngleBase = num * 蔦.X0Y0_節8_節.AngleBase;
-    		X0Y0_節9_節.AngleBase = num * 蔦.X0Y0_節9_節.AngleBase;
-    		X0Y0_節10_節.AngleBase = num * 蔦.X0Y0_節10_節.AngleBase;
-    		X0Y0_節11_節.AngleBase = num * 蔦.X0Y0_節11_節.AngleBase;
-    		X0Y0_節12_節.AngleBase = num * 蔦.X0Y0_節12_節.AngleBase;
-    		X0Y0_節13_節.AngleBase = num * 蔦.X0Y0_節13_節.AngleBase;
-    		X0Y0_節14_節.AngleBase = num * 蔦.X0Y0_節14_節.AngleBase;
-    		X0Y0_節15_節.AngleBase = num * 蔦.X0Y0_節15_節.AngleBase;
-    		X0Y0_節16_節.AngleBase = num * 蔦.X0Y0_節16_節.AngleBase;
-    		X0Y0_節17_節.AngleBase = num * 蔦.X0Y0_節17_節.AngleBase;
-    		X0Y0_節18_節.AngleBase = num * 蔦.X0Y0_節18_節.AngleBase;
-    		X0Y0_節19_節.AngleBase = num * 蔦.X0Y0_節19_節.AngleBase;
-    		X0Y0_節20_節.AngleBase = num * 蔦.X0Y0_節20_節.AngleBase;
-    		X0Y0_節21_節.AngleBase = num * 蔦.X0Y0_節21_節.AngleBase;
-    		X0Y0_節22_節.AngleBase = num * 蔦.X0Y0_節22_節.AngleBase;
-    		X0Y0_節23_節.AngleBase = num * 蔦.X0Y0_節23_節.AngleBase;
-    		X0Y0_節24_節.AngleBase = num * 蔦.X0Y0_節24_節.AngleBase;
-    		X0Y0_先端_上顎_顎.AngleBase = num * 蔦.X0Y0_先端_上顎_顎.AngleBase;
-    		X0Y0_先端_下顎_顎.AngleBase = num * 蔦.X0Y0_先端_下顎_顎.AngleBase;
+    		X0Y0_節1_節.SetAngleBase(num * 蔦.X0Y0_節1_節.GetAngleBase());
+    		X0Y0_節2_節.SetAngleBase(num * 蔦.X0Y0_節2_節.GetAngleBase());
+    		X0Y0_節3_節.SetAngleBase(num * 蔦.X0Y0_節3_節.GetAngleBase());
+    		X0Y0_節4_節.SetAngleBase(num * 蔦.X0Y0_節4_節.GetAngleBase());
+    		X0Y0_節5_節.SetAngleBase(num * 蔦.X0Y0_節5_節.GetAngleBase());
+    		X0Y0_節6_節.SetAngleBase(num * 蔦.X0Y0_節6_節.GetAngleBase());
+    		X0Y0_節7_節.SetAngleBase(num * 蔦.X0Y0_節7_節.GetAngleBase());
+    		X0Y0_節8_節.SetAngleBase(num * 蔦.X0Y0_節8_節.GetAngleBase());
+    		X0Y0_節9_節.SetAngleBase(num * 蔦.X0Y0_節9_節.GetAngleBase());
+    		X0Y0_節10_節.SetAngleBase(num * 蔦.X0Y0_節10_節.GetAngleBase());
+    		X0Y0_節11_節.SetAngleBase(num * 蔦.X0Y0_節11_節.GetAngleBase());
+    		X0Y0_節12_節.SetAngleBase(num * 蔦.X0Y0_節12_節.GetAngleBase());
+    		X0Y0_節13_節.SetAngleBase(num * 蔦.X0Y0_節13_節.GetAngleBase());
+    		X0Y0_節14_節.SetAngleBase(num * 蔦.X0Y0_節14_節.GetAngleBase());
+    		X0Y0_節15_節.SetAngleBase(num * 蔦.X0Y0_節15_節.GetAngleBase());
+    		X0Y0_節16_節.SetAngleBase(num * 蔦.X0Y0_節16_節.GetAngleBase());
+    		X0Y0_節17_節.SetAngleBase(num * 蔦.X0Y0_節17_節.GetAngleBase());
+    		X0Y0_節18_節.SetAngleBase(num * 蔦.X0Y0_節18_節.GetAngleBase());
+    		X0Y0_節19_節.SetAngleBase(num * 蔦.X0Y0_節19_節.GetAngleBase());
+    		X0Y0_節20_節.SetAngleBase(num * 蔦.X0Y0_節20_節.GetAngleBase());
+    		X0Y0_節21_節.SetAngleBase(num * 蔦.X0Y0_節21_節.GetAngleBase());
+    		X0Y0_節22_節.SetAngleBase(num * 蔦.X0Y0_節22_節.GetAngleBase());
+    		X0Y0_節23_節.SetAngleBase(num * 蔦.X0Y0_節23_節.GetAngleBase());
+    		X0Y0_節24_節.SetAngleBase(num * 蔦.X0Y0_節24_節.GetAngleBase());
+    		X0Y0_先端_上顎_顎.SetAngleBase(num * 蔦.X0Y0_先端_上顎_顎.GetAngleBase());
+    		X0Y0_先端_下顎_顎.SetAngleBase(num * 蔦.X0Y0_先端_下顎_顎.GetAngleBase());
     		Body.JoinPAall();
     	}
 

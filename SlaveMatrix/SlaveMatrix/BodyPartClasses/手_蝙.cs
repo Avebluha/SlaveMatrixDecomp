@@ -438,22 +438,22 @@ namespace SlaveMatrix
     		{
     			double num = value.Inverse();
     			double num2 = (右 ? (-1.0) : 1.0);
-    			X0Y0_獣翼手.AngleCont = num2 * -74.0 * num;
-    			X0Y0_小指_指1.AngleCont = num2 * 10.0 * num;
-    			X0Y0_小指_指2.AngleCont = num2 * 0.0 * num;
-    			X0Y0_小指_指3.AngleCont = num2 * -1.0 * num;
-    			X0Y0_薬指_指1.AngleCont = num2 * -38.0 * num;
-    			X0Y0_薬指_指2.AngleCont = num2 * 2.0 * num;
-    			X0Y0_薬指_指3.AngleCont = num2 * 4.0 * num;
-    			X0Y0_中指_指1.AngleCont = num2 * -63.0 * num;
-    			X0Y0_中指_指2.AngleCont = num2 * -20.0 * num;
-    			X0Y0_中指_指3.AngleCont = num2 * 12.0 * num;
-    			X0Y0_人指_指1.AngleCont = num2 * -83.0 * num;
-    			X0Y0_人指_指2.AngleCont = num2 * 9.0 * num;
-    			X0Y0_人指_指3.AngleCont = num2 * 4.0 * num;
-    			X0Y0_親指_指1.AngleCont = num2 * -10.0 * num;
-    			X0Y0_親指_指2.AngleCont = num2 * -22.0 * num;
-    			X0Y0_親指_指3.AngleCont = num2 * -45.0 * num;
+    			X0Y0_獣翼手.SetAngleCont(num2 * -74.0 * num);
+    			X0Y0_小指_指1.SetAngleCont(num2 * 10.0 * num);
+    			X0Y0_小指_指2.SetAngleCont(num2 * 0.0 * num);
+    			X0Y0_小指_指3.SetAngleCont(num2 * -1.0 * num);
+    			X0Y0_薬指_指1.SetAngleCont(num2 * -38.0 * num);
+    			X0Y0_薬指_指2.SetAngleCont(num2 * 2.0 * num);
+    			X0Y0_薬指_指3.SetAngleCont(num2 * 4.0 * num);
+    			X0Y0_中指_指1.SetAngleCont(num2 * -63.0 * num);
+    			X0Y0_中指_指2.SetAngleCont(num2 * -20.0 * num);
+    			X0Y0_中指_指3.SetAngleCont(num2 * 12.0 * num);
+    			X0Y0_人指_指1.SetAngleCont(num2 * -83.0 * num);
+    			X0Y0_人指_指2.SetAngleCont(num2 * 9.0 * num);
+    			X0Y0_人指_指3.SetAngleCont(num2 * 4.0 * num);
+    			X0Y0_親指_指1.SetAngleCont(num2 * -10.0 * num);
+    			X0Y0_親指_指2.SetAngleCont(num2 * -22.0 * num);
+    			X0Y0_親指_指3.SetAngleCont(num2 * -45.0 * num);
     		}
     	}
 
@@ -461,12 +461,12 @@ namespace SlaveMatrix
     	{
     		set
     		{
-    			X0Y0_小指_指1.SizeXBase *= 1.0 - 0.4 * value;
-    			X0Y0_小指_指2.SizeXBase *= 1.0 - 0.4 * value;
-    			X0Y0_小指_指3.SizeXBase *= 1.0 - 0.4 * value;
-    			X0Y0_薬指_指1.SizeXBase *= 1.0 - 0.25 * value;
-    			X0Y0_薬指_指2.SizeXBase *= 1.0 - 0.25 * value;
-    			X0Y0_薬指_指3.SizeXBase *= 1.0 - 0.25 * value;
+    			X0Y0_小指_指1.SetSizeXBase(X0Y0_小指_指1.GetSizeXBase() * (1.0 - 0.4 * value));
+    			X0Y0_小指_指2.SetSizeXBase(X0Y0_小指_指2.GetSizeXBase() * (1.0 - 0.4 * value));
+    			X0Y0_小指_指3.SetSizeXBase(X0Y0_小指_指3.GetSizeXBase() * (1.0 - 0.4 * value));
+    			X0Y0_薬指_指1.SetSizeXBase(X0Y0_薬指_指1.GetSizeXBase() * (1.0 - 0.25 * value));
+    			X0Y0_薬指_指2.SetSizeXBase(X0Y0_薬指_指2.GetSizeXBase() * (1.0 - 0.25 * value));
+    			X0Y0_薬指_指3.SetSizeXBase(X0Y0_薬指_指3.GetSizeXBase() * (1.0 - 0.25 * value));
     		}
     	}
 
@@ -474,23 +474,23 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return X0Y0_獣翼手.OP[(!右) ? 1 : 5].Outline;
+    			return X0Y0_獣翼手.GetOP()[(!右) ? 1 : 5].Outline;
     		}
     		set
     		{
-    			X0Y0_獣翼手.OP[(!右) ? 1 : 5].Outline = value;
-    			X0Y0_小指_指1.OP[(!右) ? 3 : 0].Outline = value;
-    			X0Y0_小指_指2.OP[(!右) ? 3 : 0].Outline = value;
-    			X0Y0_小指_指3.OP[(!右) ? 2 : 0].Outline = value;
-    			X0Y0_薬指_指1.OP[(!右) ? 3 : 0].Outline = value;
-    			X0Y0_薬指_指2.OP[(!右) ? 3 : 0].Outline = value;
-    			X0Y0_薬指_指3.OP[(!右) ? 2 : 0].Outline = value;
-    			X0Y0_中指_指1.OP[(!右) ? 3 : 0].Outline = value;
-    			X0Y0_中指_指2.OP[(!右) ? 3 : 0].Outline = value;
-    			X0Y0_中指_指3.OP[(!右) ? 2 : 0].Outline = value;
-    			X0Y0_人指_指1.OP[(!右) ? 3 : 0].Outline = value;
-    			X0Y0_人指_指2.OP[(!右) ? 3 : 0].Outline = value;
-    			X0Y0_人指_指3.OP[(!右) ? 2 : 0].Outline = value;
+    			X0Y0_獣翼手.GetOP()[(!右) ? 1 : 5].Outline = value;
+    			X0Y0_小指_指1.GetOP()[(!右) ? 3 : 0].Outline = value;
+    			X0Y0_小指_指2.GetOP()[(!右) ? 3 : 0].Outline = value;
+    			X0Y0_小指_指3.GetOP()[(!右) ? 2 : 0].Outline = value;
+    			X0Y0_薬指_指1.GetOP()[(!右) ? 3 : 0].Outline = value;
+    			X0Y0_薬指_指2.GetOP()[(!右) ? 3 : 0].Outline = value;
+    			X0Y0_薬指_指3.GetOP()[(!右) ? 2 : 0].Outline = value;
+    			X0Y0_中指_指1.GetOP()[(!右) ? 3 : 0].Outline = value;
+    			X0Y0_中指_指2.GetOP()[(!右) ? 3 : 0].Outline = value;
+    			X0Y0_中指_指3.GetOP()[(!右) ? 2 : 0].Outline = value;
+    			X0Y0_人指_指1.GetOP()[(!右) ? 3 : 0].Outline = value;
+    			X0Y0_人指_指2.GetOP()[(!右) ? 3 : 0].Outline = value;
+    			X0Y0_人指_指3.GetOP()[(!右) ? 2 : 0].Outline = value;
     		}
     	}
 
@@ -844,22 +844,22 @@ namespace SlaveMatrix
     	public override void SetAngle0()
     	{
     		double num = (右 ? (-1.0) : 1.0);
-    		X0Y0_獣翼手.AngleBase = num * -31.0000000000001;
-    		X0Y0_小指_指1.AngleBase = num * -79.3474786285473;
-    		X0Y0_小指_指2.AngleBase = num * -6.63284583292149;
-    		X0Y0_小指_指3.AngleBase = num * -5.51444226587368;
-    		X0Y0_薬指_指1.AngleBase = num * -29.8986006733114;
-    		X0Y0_薬指_指2.AngleBase = num * -9.09381595653455;
-    		X0Y0_薬指_指3.AngleBase = num * -15.3232033633539;
-    		X0Y0_中指_指1.AngleBase = num * -2.25244077487218;
-    		X0Y0_中指_指2.AngleBase = num * -349.728279240711;
-    		X0Y0_中指_指3.AngleBase = num * 330.298790583483;
-    		X0Y0_人指_指1.AngleBase = num * -340.637781414332;
-    		X0Y0_人指_指2.AngleBase = num * -14.7669119107363;
-    		X0Y0_人指_指3.AngleBase = num * 347.37149883769;
-    		X0Y0_親指_指1.AngleBase = num * -257.575894274218;
-    		X0Y0_親指_指2.AngleBase = num * 328.764949390357;
-    		X0Y0_親指_指3.AngleBase = num * 15.8109448838614;
+    		X0Y0_獣翼手.SetAngleBase(num * -31.0000000000001);
+    		X0Y0_小指_指1.SetAngleBase(num * -79.3474786285473);
+    		X0Y0_小指_指2.SetAngleBase(num * -6.63284583292149);
+    		X0Y0_小指_指3.SetAngleBase(num * -5.51444226587368);
+    		X0Y0_薬指_指1.SetAngleBase(num * -29.8986006733114);
+    		X0Y0_薬指_指2.SetAngleBase(num * -9.09381595653455);
+    		X0Y0_薬指_指3.SetAngleBase(num * -15.3232033633539);
+    		X0Y0_中指_指1.SetAngleBase(num * -2.25244077487218);
+    		X0Y0_中指_指2.SetAngleBase(num * -349.728279240711);
+    		X0Y0_中指_指3.SetAngleBase(num * 330.298790583483);
+    		X0Y0_人指_指1.SetAngleBase(num * -340.637781414332);
+    		X0Y0_人指_指2.SetAngleBase(num * -14.7669119107363);
+    		X0Y0_人指_指3.SetAngleBase(num * 347.37149883769);
+    		X0Y0_親指_指1.SetAngleBase(num * -257.575894274218);
+    		X0Y0_親指_指2.SetAngleBase(num * 328.764949390357);
+    		X0Y0_親指_指3.SetAngleBase(num * 15.8109448838614);
     		Body.JoinPAall();
     	}
 

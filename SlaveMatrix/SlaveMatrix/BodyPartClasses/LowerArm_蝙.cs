@@ -1,5 +1,6 @@
 using System.Linq;
 using _2DGAMELIB;
+using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
@@ -524,7 +525,7 @@ namespace SlaveMatrix
     		{
     			double num = value.Inverse();
     			double num2 = (右 ? (-1.0) : 1.0);
-    			X0Y0_獣翼LowerArm.AngleCont = num2 * 120.0 * num;
+    			X0Y0_獣翼LowerArm.SetAngleCont(num2 * 120.0 * num);
     		}
     	}
 
@@ -532,11 +533,11 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return X0Y0_獣翼LowerArm.OP[(!右) ? 1 : 2].Outline;
+    			return X0Y0_獣翼LowerArm.GetOP()[(!右) ? 1 : 2].Outline;
     		}
     		set
     		{
-    			X0Y0_獣翼LowerArm.OP[(!右) ? 1 : 2].Outline = value;
+    			X0Y0_獣翼LowerArm.GetOP()[(!右) ? 1 : 2].Outline = value;
     		}
     	}
 
@@ -544,11 +545,11 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return X0Y0_獣翼LowerArm.OP[右 ? 3 : 0].Outline;
+    			return X0Y0_獣翼LowerArm.GetOP()[右 ? 3 : 0].Outline;
     		}
     		set
     		{
-    			X0Y0_獣翼LowerArm.OP[右 ? 3 : 0].Outline = value;
+    			X0Y0_獣翼LowerArm.GetOP()[右 ? 3 : 0].Outline = value;
     		}
     	}
 
@@ -704,7 +705,7 @@ namespace SlaveMatrix
     	public override void SetAngle0()
     	{
     		double num = (右 ? (-1.0) : 1.0);
-    		X0Y0_獣翼LowerArm.AngleBase = num * -322.0;
+    		X0Y0_獣翼LowerArm.SetAngleBase(num * -322.0);
     		Body.JoinPAall();
     	}
 

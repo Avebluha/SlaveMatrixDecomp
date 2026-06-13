@@ -1,4 +1,5 @@
 using _2DGAMELIB;
+using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
@@ -5207,28 +5208,28 @@ namespace SlaveMatrix
     		Intensity = e.濃度;
     		尺度B *= 1.1;
     		double y = 0.0015;
-    		X6Y0_手.BasePointBase = X6Y0_手.ToLocal(X6Y0_人指.ToGlobal(X6Y0_人指.JP[0].Joint.AddY(y)));
-    		X6Y1_手.BasePointBase = X6Y1_手.ToLocal(X6Y1_人指.ToGlobal(X6Y1_人指.JP[0].Joint.AddY(y)));
-    		X6Y2_手.BasePointBase = X6Y2_手.ToLocal(X6Y2_人指.ToGlobal(X6Y2_人指.JP[0].Joint.AddY(y)));
-    		X6Y3_手.BasePointBase = X6Y3_手.ToLocal(X6Y3_人指.ToGlobal(X6Y3_人指.JP[0].Joint.AddY(y)));
-    		X6Y4_手.BasePointBase = X6Y4_手.ToLocal(X6Y4_人指.ToGlobal(X6Y4_人指.JP[0].Joint.AddY(y)));
-    		X7Y0_手.BasePointBase = X7Y0_手.ToLocal(X7Y0_人指.ToGlobal(X7Y0_人指.JP[0].Joint.AddY(y)));
-    		X7Y1_手.BasePointBase = X7Y1_手.ToLocal(X7Y1_人指.ToGlobal(X7Y1_人指.JP[0].Joint.AddY(y)));
-    		X7Y2_手.BasePointBase = X7Y2_手.ToLocal(X7Y2_人指.ToGlobal(X7Y2_人指.JP[0].Joint.AddY(y)));
-    		X7Y3_手.BasePointBase = X7Y3_手.ToLocal(X7Y3_人指.ToGlobal(X7Y3_人指.JP[0].Joint.AddY(y)));
-    		X7Y4_手.BasePointBase = X7Y4_手.ToLocal(X7Y4_人指.ToGlobal(X7Y4_人指.JP[0].Joint.AddY(y)));
-    		X8Y0_手.BasePointBase = X8Y0_手.ToLocal(X8Y0_中指.ToGlobal(X8Y0_中指.JP[0].Joint));
-    		X8Y1_手.BasePointBase = X8Y1_手.ToLocal(X8Y1_中指.ToGlobal(X8Y1_中指.JP[0].Joint));
-    		X8Y2_手.BasePointBase = X8Y2_手.ToLocal(X8Y2_中指.ToGlobal(X8Y2_中指.JP[0].Joint));
-    		X8Y3_手.BasePointBase = X8Y3_手.ToLocal(X8Y3_中指.ToGlobal(X8Y3_中指.JP[0].Joint));
-    		X8Y4_手.BasePointBase = X8Y4_手.ToLocal(X8Y4_中指.ToGlobal(X8Y4_中指.JP[0].Joint));
+    		X6Y0_手.SetBasePointBase(X6Y0_手.ToLocal(X6Y0_人指.ToGlobal(X6Y0_人指.GetJP()[0].Joint.AddY(y))));
+    		X6Y1_手.SetBasePointBase(X6Y1_手.ToLocal(X6Y1_人指.ToGlobal(X6Y1_人指.GetJP()[0].Joint.AddY(y))));
+    		X6Y2_手.SetBasePointBase(X6Y2_手.ToLocal(X6Y2_人指.ToGlobal(X6Y2_人指.GetJP()[0].Joint.AddY(y))));
+    		X6Y3_手.SetBasePointBase(X6Y3_手.ToLocal(X6Y3_人指.ToGlobal(X6Y3_人指.GetJP()[0].Joint.AddY(y))));
+    		X6Y4_手.SetBasePointBase(X6Y4_手.ToLocal(X6Y4_人指.ToGlobal(X6Y4_人指.GetJP()[0].Joint.AddY(y))));
+    		X7Y0_手.SetBasePointBase(X7Y0_手.ToLocal(X7Y0_人指.ToGlobal(X7Y0_人指.GetJP()[0].Joint.AddY(y))));
+    		X7Y1_手.SetBasePointBase(X7Y1_手.ToLocal(X7Y1_人指.ToGlobal(X7Y1_人指.GetJP()[0].Joint.AddY(y))));
+    		X7Y2_手.SetBasePointBase(X7Y2_手.ToLocal(X7Y2_人指.ToGlobal(X7Y2_人指.GetJP()[0].Joint.AddY(y))));
+    		X7Y3_手.SetBasePointBase(X7Y3_手.ToLocal(X7Y3_人指.ToGlobal(X7Y3_人指.GetJP()[0].Joint.AddY(y))));
+    		X7Y4_手.SetBasePointBase(X7Y4_手.ToLocal(X7Y4_人指.ToGlobal(X7Y4_人指.GetJP()[0].Joint.AddY(y))));
+    		X8Y0_手.SetBasePointBase(X8Y0_手.ToLocal(X8Y0_中指.ToGlobal(X8Y0_中指.GetJP()[0].Joint)));
+    		X8Y1_手.SetBasePointBase(X8Y1_手.ToLocal(X8Y1_中指.ToGlobal(X8Y1_中指.GetJP()[0].Joint)));
+    		X8Y2_手.SetBasePointBase(X8Y2_手.ToLocal(X8Y2_中指.ToGlobal(X8Y2_中指.GetJP()[0].Joint)));
+    		X8Y3_手.SetBasePointBase(X8Y3_手.ToLocal(X8Y3_中指.ToGlobal(X8Y3_中指.GetJP()[0].Joint)));
+    		X8Y4_手.SetBasePointBase(X8Y4_手.ToLocal(X8Y4_中指.ToGlobal(X8Y4_中指.GetJP()[0].Joint)));
     		尺度B = 1.075;
     		Body.JoinPAall();
     	}
 
     	public override void 描画0(RenderArea Are)
     	{
-    		switch (Body.IndexX)
+    		switch (Body.GetIndexX())
     		{
     		case 0:
     			Are.Draw(X0Y0_親指);
@@ -5265,7 +5266,7 @@ namespace SlaveMatrix
     			Are.Draw(X1Y0_呪印_鎖3);
     			break;
     		case 2:
-    			switch (Body.IndexY)
+    			switch (Body.GetIndexY())
     			{
     			case 0:
     				Are.Draw(X2Y0_親指);
@@ -5389,7 +5390,7 @@ namespace SlaveMatrix
     			Are.Draw(X4Y0_呪印_鎖3);
     			break;
     		case 5:
-    			switch (Body.IndexY)
+    			switch (Body.GetIndexY())
     			{
     			case 0:
     				Are.Draw(X5Y0_親指);
@@ -5479,7 +5480,7 @@ namespace SlaveMatrix
     			}
     			break;
     		case 6:
-    			switch (Body.IndexY)
+    			switch (Body.GetIndexY())
     			{
     			case 0:
     				Are.Draw(X6Y0_人指);
@@ -5499,7 +5500,7 @@ namespace SlaveMatrix
     			}
     			break;
     		case 7:
-    			switch (Body.IndexY)
+    			switch (Body.GetIndexY())
     			{
     			case 0:
     				Are.Draw(X7Y0_人指);
@@ -5519,7 +5520,7 @@ namespace SlaveMatrix
     			}
     			break;
     		case 8:
-    			switch (Body.IndexY)
+    			switch (Body.GetIndexY())
     			{
     			case 0:
     				Are.Draw(X8Y0_薬指);
@@ -5544,7 +5545,7 @@ namespace SlaveMatrix
     			}
     			break;
     		case 9:
-    			switch (Body.IndexY)
+    			switch (Body.GetIndexY())
     			{
     			case 0:
     				Are.Draw(X9Y0_手);
@@ -5589,7 +5590,7 @@ namespace SlaveMatrix
     			}
     			break;
     		case 10:
-    			switch (Body.IndexY)
+    			switch (Body.GetIndexY())
     			{
     			case 0:
     				Are.Draw(X10Y0_親指);
@@ -5726,7 +5727,7 @@ namespace SlaveMatrix
     			Are.Draw(X13Y0_呪印_鎖3);
     			break;
     		default:
-    			switch (Body.IndexY)
+    			switch (Body.GetIndexY())
     			{
     			case 0:
     				Are.Draw(X14Y0_親指);
@@ -5786,10 +5787,10 @@ namespace SlaveMatrix
 
     	public override void 描画1(RenderArea Are)
     	{
-    		switch (Body.IndexX)
+    		switch (Body.GetIndexX())
     		{
     		case 6:
-    			switch (Body.IndexY)
+    			switch (Body.GetIndexY())
     			{
     			case 0:
     				Are.Draw(X6Y0_親指);
@@ -5874,7 +5875,7 @@ namespace SlaveMatrix
     			}
     			break;
     		case 7:
-    			switch (Body.IndexY)
+    			switch (Body.GetIndexY())
     			{
     			case 0:
     				Are.Draw(X7Y0_小指);
@@ -5959,7 +5960,7 @@ namespace SlaveMatrix
     			}
     			break;
     		case 8:
-    			switch (Body.IndexY)
+    			switch (Body.GetIndexY())
     			{
     			case 0:
     				Are.Draw(X8Y0_手);
@@ -5998,7 +5999,7 @@ namespace SlaveMatrix
 
     	public override void 色更新()
     	{
-    		switch (Body.IndexX)
+    		switch (Body.GetIndexX())
     		{
     		case 0:
     			X0Y0_親指CP.Update();
@@ -6035,7 +6036,7 @@ namespace SlaveMatrix
     			X1Y0_呪印_鎖3CP.Update();
     			break;
     		case 2:
-    			switch (Body.IndexY)
+    			switch (Body.GetIndexY())
     			{
     			case 0:
     				X2Y0_親指CP.Update();
@@ -6159,7 +6160,7 @@ namespace SlaveMatrix
     			X4Y0_呪印_鎖3CP.Update();
     			break;
     		case 5:
-    			switch (Body.IndexY)
+    			switch (Body.GetIndexY())
     			{
     			case 0:
     				X5Y0_親指CP.Update();
@@ -6249,7 +6250,7 @@ namespace SlaveMatrix
     			}
     			break;
     		case 6:
-    			switch (Body.IndexY)
+    			switch (Body.GetIndexY())
     			{
     			case 0:
     				X6Y0Pars.GetMiY_MaY(out mm);
@@ -6344,7 +6345,7 @@ namespace SlaveMatrix
     			}
     			break;
     		case 7:
-    			switch (Body.IndexY)
+    			switch (Body.GetIndexY())
     			{
     			case 0:
     				X7Y0Pars.GetMiY_MaY(out mm);
@@ -6439,7 +6440,7 @@ namespace SlaveMatrix
     			}
     			break;
     		case 8:
-    			switch (Body.IndexY)
+    			switch (Body.GetIndexY())
     			{
     			case 0:
     				X8Y0_手CP.Update();
@@ -6484,7 +6485,7 @@ namespace SlaveMatrix
     			}
     			break;
     		case 9:
-    			switch (Body.IndexY)
+    			switch (Body.GetIndexY())
     			{
     			case 0:
     				X9Y0_手CP.Update();
@@ -6529,7 +6530,7 @@ namespace SlaveMatrix
     			}
     			break;
     		case 10:
-    			switch (Body.IndexY)
+    			switch (Body.GetIndexY())
     			{
     			case 0:
     				X10Y0_親指CP.Update();
@@ -6666,7 +6667,7 @@ namespace SlaveMatrix
     			X13Y0_呪印_鎖3CP.Update();
     			break;
     		default:
-    			switch (Body.IndexY)
+    			switch (Body.GetIndexY())
     			{
     			case 0:
     				X14Y0_親指CP.Update();

@@ -81,29 +81,29 @@ namespace _2DGAMELIB
     		}
     	}
 
-    	private Vector2D TL1 => frame1.OP[0].ps[0];
+    	private Vector2D TL1 => frame1.GetOP()[0].ps[0];
 
-    	private Vector2D TR1 => frame1.OP[0].ps[1];
+    	private Vector2D TR1 => frame1.GetOP()[0].ps[1];
 
-    	private Vector2D BR1 => frame1.OP[0].ps[2];
+    	private Vector2D BR1 => frame1.GetOP()[0].ps[2];
 
-    	private Vector2D BL1 => frame1.OP[0].ps[3];
+    	private Vector2D BL1 => frame1.GetOP()[0].ps[3];
 
-    	private Vector2D TL2 => frame2.OP[0].ps[0];
+    	private Vector2D TL2 => frame2.GetOP()[0].ps[0];
 
-    	private Vector2D TR2 => frame2.OP[0].ps[1];
+    	private Vector2D TR2 => frame2.GetOP()[0].ps[1];
 
-    	private Vector2D BR2 => frame2.OP[0].ps[2];
+    	private Vector2D BR2 => frame2.GetOP()[0].ps[2];
 
-    	private Vector2D BL2 => frame2.OP[0].ps[3];
+    	private Vector2D BL2 => frame2.GetOP()[0].ps[3];
 
-    	private Vector2D TLG => gauge.OP[0].ps[0];
+    	private Vector2D TLG => gauge.GetOP()[0].ps[0];
 
-    	private Vector2D TRG => gauge.OP[0].ps[1];
+    	private Vector2D TRG => gauge.GetOP()[0].ps[1];
 
-    	private Vector2D BRG => gauge.OP[0].ps[2];
+    	private Vector2D BRG => gauge.GetOP()[0].ps[2];
 
-    	private Vector2D BLG => gauge.OP[0].ps[3];
+    	private Vector2D BLG => gauge.GetOP()[0].ps[3];
 
     	private void SetLimit()
     	{
@@ -133,15 +133,15 @@ namespace _2DGAMELIB
     	{
     		if (Open == Open.Top || Open == Open.Bot)
     		{
-    			gauge.SizeYCont = val;
+    			gauge.SetSizeYCont(val);
     		}
     		else if (Open == Open.Lef || Open == Open.Rig)
     		{
-    			gauge.SizeXCont = val;
+    			gauge.SetSizeXCont(val);
     		}
     		if (knob != null)
     		{
-    			knob.PositionBase = GetKnobPosition();
+    			knob.SetPositionBase(GetKnobPosition());
     		}
     	}
 
@@ -161,7 +161,7 @@ namespace _2DGAMELIB
     				return (TR1 + BR1) * 0.5;
     			}
     		}
-    		return frame1.OP.GetCenter();
+    		return frame1.GetOP().GetCenter();
     	}
 
     	private Vector2D GetBasePoint2()
@@ -180,7 +180,7 @@ namespace _2DGAMELIB
     				return (TL2 + BL2) * 0.5;
     			}
     		}
-    		return frame2.OP.GetCenter();
+    		return frame2.GetOP().GetCenter();
     	}
 
     	private Vector2D GetBasePoint()
@@ -199,7 +199,7 @@ namespace _2DGAMELIB
     				return (TRG + BRG) * 0.5;
     			}
     		}
-    		return frame1.BasePoint;
+    		return frame1.GetBasePoint();
     	}
 
     	private double GetWidthMag()
@@ -286,71 +286,82 @@ namespace _2DGAMELIB
     		base_ = new Par
     		{
     			Tag = Name + "_ベース",
-    			InitializeOP = new Out[1] { Shas.GetSquare() },
-    			PositionBase = Position,
-    			SizeBase = Size,
-    			SizeXBase = Width,
-    			SizeYBase = Height,
-    			Closed = true,
-    			Pen = null,
-    			BrushColor = BackColor
     		};
-    		base_.BasePointBase = base_.OP.GetCenter();
+
+			base_.SetInitializeOP(new Out[1] { Shas.GetSquare() });
+    		base_.SetPositionBase(Position);
+    		base_.SetSizeBase(Size);
+    		base_.SetSizeXBase(Width);
+    		base_.SetSizeYBase(Height);
+    		base_.SetClosed(true);
+    		base_.SetPen(null);
+    		base_.SetBrushColor(BackColor);
+
+
+    		base_.SetBasePointBase(base_.GetOP().GetCenter());
     		pars.Add(base_.Tag, base_);
     		frame1 = new Par
     		{
     			Tag = Name + "_フレーム1",
-    			InitializeOP = new Out[1] { Shas.GetSquare() },
-    			PositionBase = Position,
-    			SizeBase = Size,
-    			SizeXBase = Width * GetWidthMag(),
-    			SizeYBase = Height * GetHeightMag(),
-    			Closed = true,
-    			Brush = null
     		};
-    		frame1.BasePointBase = GetBasePoint1();
+
+			frame1.SetInitializeOP(new Out[1] { Shas.GetSquare() });
+    		frame1.SetPositionBase(Position);
+    		frame1.SetSizeBase(Size);
+    		frame1.SetSizeXBase(Width * GetWidthMag());
+    		frame1.SetSizeYBase(Height * GetHeightMag());
+    		frame1.SetClosed(true);
+    		frame1.SetBrush(null);
+
+
+
+    		frame1.SetBasePointBase(GetBasePoint1());
     		pars.Add(frame1.Tag, frame1);
     		if (Range == Range.MinusPlus)
     		{
     			frame2 = new Par
     			{
     				Tag = Name + "_フレーム2",
-    				InitializeOP = new Out[1] { Shas.GetSquare() },
-    				PositionBase = Position,
-    				SizeBase = Size,
-    				SizeXBase = Width * GetWidthMag(),
-    				SizeYBase = Height * GetHeightMag(),
-    				Closed = true,
-    				Brush = null
     			};
-    			frame2.BasePointBase = GetBasePoint2();
+
+				frame2.SetInitializeOP(new Out[1] { Shas.GetSquare() });
+    			frame2.SetPositionBase(Position);
+    			frame2.SetSizeBase(Size);
+    			frame2.SetSizeXBase(Width * GetWidthMag());
+    			frame2.SetSizeYBase(Height * GetHeightMag());
+    			frame2.SetClosed(true);
+    			frame2.SetBrush(null);
+    			frame2.SetBasePointBase(GetBasePoint2());
     			pars.Add(frame2.Tag, frame2);
     		}
     		gauge = new Par
     		{
     			Tag = Name + "_ゲージ",
-    			InitializeOP = new Out[1] { Shas.GetSquare() },
-    			PositionBase = GetGaugePosition(),
-    			SizeBase = Size,
-    			SizeXBase = Width * GetWidthMag() * GetGaugeWidthMag(Margin),
-    			SizeYBase = Height * GetHeightMag() * GetGaugeHeightMag(Margin),
-    			Closed = true
     		};
-    		gauge.BasePointBase = GetBasePoint();
+			gauge.SetInitializeOP(new Out[1] { Shas.GetSquare() });
+    		gauge.SetPositionBase(GetGaugePosition());
+    		gauge.SetSizeBase(Size);
+    		gauge.SetSizeXBase(Width * GetWidthMag() * GetGaugeWidthMag(Margin));
+    		gauge.SetSizeYBase(Height * GetHeightMag() * GetGaugeHeightMag(Margin));
+    		gauge.SetClosed(true);
+
+
+    		gauge.SetBasePointBase(GetBasePoint());
     		pars.Add(gauge.Tag, gauge);
     		if (knob)
     		{
     			this.knob = new Par
     			{
     				Tag = Name + "_ノブ",
-    				InitializeOP = new Out[1] { Shas.GetSquare() },
-    				SizeBase = Size,
-    				SizeXBase = GetKnobWidthMag(Width),
-    				SizeYBase = GetKnobHeightMag(Height),
-    				Closed = true,
-    				BrushColor = Color.FromArgb(128, Color.White)
     			};
-    			this.knob.BasePointBase = this.knob.OP.GetCenter();
+				    
+				this.knob.SetInitializeOP(new Out[1] { Shas.GetSquare() });
+    			this.knob.SetSizeBase(Size);
+    			this.knob.SetSizeXBase(GetKnobWidthMag(Width));
+    			this.knob.SetSizeYBase(GetKnobHeightMag(Height));
+    			this.knob.SetClosed(true);
+    			this.knob.SetBrushColor(Color.FromArgb(128, Color.White));
+    			this.knob.SetBasePointBase(this.knob.GetOP().GetCenter());
     			pars.Add(this.knob.Tag, this.knob);
     		}
     	}
@@ -474,10 +485,10 @@ namespace _2DGAMELIB
     	{
     		return Open switch
     		{
-    			Open.Top => (0.0 - gauge.SizeY) * gauge.Size, 
-    			Open.Bot => gauge.SizeY * gauge.Size, 
-    			Open.Rig => gauge.SizeX * gauge.Size, 
-    			Open.Lef => (0.0 - gauge.SizeX) * gauge.Size, 
+    			Open.Top => (0.0 - gauge.GetSizeY()) * gauge.GetSize(), 
+    			Open.Bot => gauge.GetSizeY() * gauge.GetSize(), 
+    			Open.Rig => gauge.GetSizeX() * gauge.GetSize(), 
+    			Open.Lef => (0.0 - gauge.GetSizeX()) * gauge.GetSize(), 
     			_ => 0.0, 
     		};
     	}
@@ -507,7 +518,7 @@ namespace _2DGAMELIB
 
     	public bool Down(ref Color HitColor, ref Vector2D CursorPosition)
     	{
-    		if (knob != null && knob.HitColor == HitColor)
+    		if (knob != null && knob.GetHitColor() == HitColor)
     		{
     			Grip = true;
     			op = CursorPosition;

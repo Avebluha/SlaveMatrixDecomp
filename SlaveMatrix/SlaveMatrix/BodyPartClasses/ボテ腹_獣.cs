@@ -1,5 +1,6 @@
 using System.Linq;
 using _2DGAMELIB;
+using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
@@ -236,28 +237,28 @@ namespace SlaveMatrix
     		X0Y4_臍CP = new ColorP(X0Y4_臍, 臍CD, DisUnit, abj: false);
     		Intensity = e.濃度;
     		double num = 1.0;
-    		X0Y0_臍.BasePointBase = new Vector2D(X0Y0_臍.BasePointBase.X, 0.360579157918298);
-    		X0Y1_臍.BasePointBase = new Vector2D(X0Y1_臍.BasePointBase.X, 0.360579157918298);
-    		X0Y2_臍.BasePointBase = new Vector2D(X0Y2_臍.BasePointBase.X, 0.360579157918298);
-    		X0Y3_臍.BasePointBase = new Vector2D(X0Y3_臍.BasePointBase.X, 0.360579157918298);
-    		X0Y4_臍.BasePointBase = new Vector2D(X0Y4_臍.BasePointBase.X, 0.360579157918298);
+    		X0Y0_臍.SetBasePointBase(new Vector2D(X0Y0_臍.GetBasePointBase().X, 0.360579157918298));
+    		X0Y1_臍.SetBasePointBase(new Vector2D(X0Y1_臍.GetBasePointBase().X, 0.360579157918298));
+    		X0Y2_臍.SetBasePointBase(new Vector2D(X0Y2_臍.GetBasePointBase().X, 0.360579157918298));
+    		X0Y3_臍.SetBasePointBase(new Vector2D(X0Y3_臍.GetBasePointBase().X, 0.360579157918298));
+    		X0Y4_臍.SetBasePointBase(new Vector2D(X0Y4_臍.GetBasePointBase().X, 0.360579157918298));
     		num = 1.5;
-    		X0Y0_臍.SizeBase *= num;
-    		X0Y1_臍.SizeBase *= num;
-    		X0Y2_臍.SizeBase *= num;
-    		X0Y3_臍.SizeBase *= num;
-    		X0Y4_臍.SizeBase *= num;
+    		X0Y0_臍.SetSizeBase(X0Y0_臍.GetSizeBase() * num);
+    		X0Y1_臍.SetSizeBase(X0Y1_臍.GetSizeBase() * num);
+    		X0Y2_臍.SetSizeBase(X0Y2_臍.GetSizeBase() * num);
+    		X0Y3_臍.SetSizeBase(X0Y3_臍.GetSizeBase() * num);
+    		X0Y4_臍.SetSizeBase(X0Y4_臍.GetSizeBase() * num);
     		num = 0.6;
-    		X0Y0_臍.SizeXBase *= num;
-    		X0Y1_臍.SizeXBase *= num;
-    		X0Y2_臍.SizeXBase *= num;
-    		X0Y3_臍.SizeXBase *= num;
-    		X0Y4_臍.SizeXBase *= num;
+    		X0Y0_臍.SetSizeXBase(X0Y0_臍.GetSizeXBase() * num);
+    		X0Y1_臍.SetSizeXBase(X0Y1_臍.GetSizeXBase() * num);
+    		X0Y2_臍.SetSizeXBase(X0Y2_臍.GetSizeXBase() * num);
+    		X0Y3_臍.SetSizeXBase(X0Y3_臍.GetSizeXBase() * num);
+    		X0Y4_臍.SetSizeXBase(X0Y4_臍.GetSizeXBase() * num);
     	}
 
     	public override void 色更新()
     	{
-    		switch (Body.IndexY)
+    		switch (Body.GetIndexY())
     		{
     		case 0:
     			X0Y0_腹CP.Update();

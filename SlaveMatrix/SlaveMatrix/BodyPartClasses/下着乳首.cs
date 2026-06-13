@@ -1,4 +1,5 @@
 using _2DGAMELIB;
+using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
@@ -165,13 +166,13 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return Body.CurJoinRoot.SizeBase;
+    			return Body.GetCurJoinRoot().GetSizeBase();
     		}
     		set
     		{
     			foreach (Par item in Body.EnumAllPar())
     			{
-    				item.SizeBase = value;
+    				item.SetSizeBase(value);
     			}
     			Body.JoinP();
     		}

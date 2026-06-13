@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Drawing;
 using _2DGAMELIB;
+using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
@@ -289,7 +290,7 @@ namespace SlaveMatrix
     			{
     				if (キャップ中着 && (cd.e is キャップ1 || cd.c == ContactType.Nucleus))
     				{
-    					調教UI.ハンド右.Body.IndexX = 5;
+    					調教UI.ハンド右.Body.SetIndexX(5);
     					調教UI.Set_キャップ中(調教UI.ハンド右);
     					切替時(キャップ中);
     				}
@@ -298,22 +299,22 @@ namespace SlaveMatrix
     					調教UI.ハンド右CM.Show = false;
     					調教UI.ハンド左表示 = true;
     					調教UI.ハンド左.位置B = cp;
-    					調教UI.ハンド左.Body.IndexX = 5;
+    					調教UI.ハンド左.Body.SetIndexX(5);
     					調教UI.Set_キャップ左(調教UI.ハンド左);
     					切替時(キャップ左);
     				}
     				else if (キャップ右着 && (cd.e is キャップ2 || cd.c == ContactType.Milk) && cd.e.右)
     				{
-    					調教UI.ハンド右.Body.IndexX = 5;
+    					調教UI.ハンド右.Body.SetIndexX(5);
     					調教UI.Set_キャップ右(調教UI.ハンド右);
     					切替時(キャップ右);
     				}
-    				else if (cd.c != ContactType.Milk && (キャップ中着 || キャップ左着 || キャップ右着) && (調教UI.ハンド右.Body.IndexX == 5 || 調教UI.ハンド左.Body.IndexX == 5))
+    				else if (cd.c != ContactType.Milk && (キャップ中着 || キャップ左着 || キャップ右着) && (調教UI.ハンド右.Body.GetIndexX() == 5 || 調教UI.ハンド左.Body.GetIndexX() == 5))
     				{
     					調教UI.ハンド左表示 = false;
     					調教UI.ハンド右CM.Show = true;
-    					調教UI.ハンド右.Body.IndexX = 0;
-    					調教UI.ハンド左.Body.IndexX = 0;
+    					調教UI.ハンド右.Body.SetIndexX(0);
+    					調教UI.ハンド左.Body.SetIndexX(0);
     				}
     			}
     		}

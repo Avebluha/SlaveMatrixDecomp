@@ -1659,27 +1659,27 @@ namespace SlaveMatrix
     	{
     		_ = 右;
     		double maxAngle = 25.0;
-    		X0Y0_羽_羽.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_羽2_羽.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_羽3_羽.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_羽4_羽.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_羽5_羽.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_羽6_羽.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_羽7_羽.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_羽8_羽.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_羽9_羽.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_羽10_羽.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_羽11_羽.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_羽12_羽.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_羽13_羽.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_羽14_羽.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_羽15_羽.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_羽16_羽.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_羽17_羽.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_羽18_羽.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_羽19_羽.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_羽20_羽.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_羽21_羽.AngleBase = maxAngle.GetRanAngle();
+    		X0Y0_羽_羽.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_羽2_羽.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_羽3_羽.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_羽4_羽.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_羽5_羽.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_羽6_羽.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_羽7_羽.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_羽8_羽.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_羽9_羽.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_羽10_羽.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_羽11_羽.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_羽12_羽.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_羽13_羽.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_羽14_羽.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_羽15_羽.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_羽16_羽.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_羽17_羽.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_羽18_羽.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_羽19_羽.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_羽20_羽.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_羽21_羽.SetAngleBase(maxAngle.GetRanAngle());
     		Body.JoinPAall();
     	}
 

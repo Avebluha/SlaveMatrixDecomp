@@ -1,4 +1,5 @@
 using _2DGAMELIB;
+using SlaveMatrix.GameClasses;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -5352,24 +5353,24 @@ namespace SlaveMatrix
     	{
     		set
     		{
-    			X0Y0_上顎頭部後_頭1.OP[右 ? 1 : 2].Outline = value;
-    			X0Y0_下顎頭部後_頭1.OP[(!右) ? 1 : 2].Outline = value;
-    			X0Y0_頭_下顎_頭部_前_頭8.OP[(!右) ? 1 : 2].Outline = value;
-    			X0Y0_頭_下顎_頭部_前_頭7.OP[(!右) ? 1 : 2].Outline = value;
-    			X0Y0_頭_下顎_頭部_前_頭6.OP[(!右) ? 1 : 2].Outline = value;
-    			X0Y0_頭_下顎_頭部_前_頭5.OP[(!右) ? 3 : 0].Outline = value;
-    			X0Y0_頭_下顎_頭部_前_頭4.OP[右 ? 2 : 2].Outline = value;
-    			X0Y0_頭_下顎_頭部_前_頭3.OP[右 ? 2 : 2].Outline = value;
-    			X0Y0_頭_下顎_頭部_前_頭2.OP[右 ? 2 : 2].Outline = value;
-    			X0Y0_頭_下顎_頭部_前_頭1.OP[右 ? 2 : 2].Outline = value;
-    			X0Y0_頭_上顎_頭部_前_頭8.OP[右 ? 1 : 2].Outline = value;
-    			X0Y0_頭_上顎_頭部_前_頭7.OP[右 ? 1 : 2].Outline = value;
-    			X0Y0_頭_上顎_頭部_前_頭6.OP[右 ? 1 : 2].Outline = value;
-    			X0Y0_頭_上顎_頭部_前_頭5.OP[右 ? 3 : 0].Outline = value;
-    			X0Y0_頭_上顎_頭部_前_頭4.OP[右 ? 2 : 2].Outline = value;
-    			X0Y0_頭_上顎_頭部_前_頭3.OP[右 ? 2 : 2].Outline = value;
-    			X0Y0_頭_上顎_頭部_前_頭2.OP[右 ? 2 : 2].Outline = value;
-    			X0Y0_頭_上顎_頭部_前_頭1.OP[右 ? 2 : 2].Outline = value;
+    			X0Y0_上顎頭部後_頭1.GetOP()[右 ? 1 : 2].Outline = value;
+    			X0Y0_下顎頭部後_頭1.GetOP()[(!右) ? 1 : 2].Outline = value;
+    			X0Y0_頭_下顎_頭部_前_頭8.GetOP()[(!右) ? 1 : 2].Outline = value;
+    			X0Y0_頭_下顎_頭部_前_頭7.GetOP()[(!右) ? 1 : 2].Outline = value;
+    			X0Y0_頭_下顎_頭部_前_頭6.GetOP()[(!右) ? 1 : 2].Outline = value;
+    			X0Y0_頭_下顎_頭部_前_頭5.GetOP()[(!右) ? 3 : 0].Outline = value;
+    			X0Y0_頭_下顎_頭部_前_頭4.GetOP()[右 ? 2 : 2].Outline = value;
+    			X0Y0_頭_下顎_頭部_前_頭3.GetOP()[右 ? 2 : 2].Outline = value;
+    			X0Y0_頭_下顎_頭部_前_頭2.GetOP()[右 ? 2 : 2].Outline = value;
+    			X0Y0_頭_下顎_頭部_前_頭1.GetOP()[右 ? 2 : 2].Outline = value;
+    			X0Y0_頭_上顎_頭部_前_頭8.GetOP()[右 ? 1 : 2].Outline = value;
+    			X0Y0_頭_上顎_頭部_前_頭7.GetOP()[右 ? 1 : 2].Outline = value;
+    			X0Y0_頭_上顎_頭部_前_頭6.GetOP()[右 ? 1 : 2].Outline = value;
+    			X0Y0_頭_上顎_頭部_前_頭5.GetOP()[右 ? 3 : 0].Outline = value;
+    			X0Y0_頭_上顎_頭部_前_頭4.GetOP()[右 ? 2 : 2].Outline = value;
+    			X0Y0_頭_上顎_頭部_前_頭3.GetOP()[右 ? 2 : 2].Outline = value;
+    			X0Y0_頭_上顎_頭部_前_頭2.GetOP()[右 ? 2 : 2].Outline = value;
+    			X0Y0_頭_上顎_頭部_前_頭1.GetOP()[右 ? 2 : 2].Outline = value;
     		}
     	}
 
@@ -7415,51 +7416,51 @@ namespace SlaveMatrix
     	public override void SetAngle0()
     	{
     		double num = (右 ? (-1.0) : 1.0);
-    		X0Y0_脚後_UpperArm.AngleBase = num * -125.0;
-    		X0Y0_脚後_LowerArm.AngleBase = num * 8.0;
-    		X0Y0_脚後_手_手.AngleBase = num * 36.0;
-    		X0Y0_脚後_手_小指_指.AngleBase = num * 19.0;
-    		X0Y0_脚後_手_小指_爪.AngleBase = 0.0;
-    		X0Y0_脚後_手_薬指_指.AngleBase = num * 19.0;
-    		X0Y0_脚後_手_薬指_爪.AngleBase = 0.0;
-    		X0Y0_脚後_手_中指_指.AngleBase = num * 19.0;
-    		X0Y0_脚後_手_中指_爪.AngleBase = 0.0;
-    		X0Y0_脚後_手_人指_指.AngleBase = num * 19.0;
-    		X0Y0_脚後_手_人指_爪.AngleBase = 0.0;
-    		X0Y0_脚後_手_親指_爪.AngleBase = num * -18.0;
-    		X0Y0_Torso_節1_Torso.AngleBase = num * -55.0;
-    		X0Y0_Torso_節2_Torso.AngleBase = num * 7.0;
-    		X0Y0_Torso_節3_Torso.AngleBase = num * 7.0;
-    		X0Y0_Torso_節4_Torso.AngleBase = num * 7.0;
-    		X0Y0_Torso_節5_Torso.AngleBase = num * 7.0;
-    		X0Y0_Torso_節6_Torso.AngleBase = num * 7.0;
-    		X0Y0_Torso_節7_Torso.AngleBase = num * 10.0;
-    		X0Y0_Torso_節8_Torso.AngleBase = num * 10.0;
-    		X0Y0_Torso_節9_Torso.AngleBase = num * 10.0;
-    		X0Y0_Torso_節10_Torso.AngleBase = num * 20.0;
-    		X0Y0_Torso_節11_Torso.AngleBase = num * 15.0;
-    		X0Y0_Torso_節12_Torso.AngleBase = num * 15.0;
-    		X0Y0_Torso_節13_Torso.AngleBase = num * 15.0;
-    		X0Y0_Torso_節14_Torso.AngleBase = num * -2.0;
-    		X0Y0_Torso_節15_Torso.AngleBase = num * -2.0;
-    		X0Y0_Torso_節16_Torso.AngleBase = num * -2.0;
-    		X0Y0_Torso_節17_Torso.AngleBase = num * -5.0;
-    		X0Y0_Torso_節18_Torso.AngleBase = num * -25.0;
-    		X0Y0_頭_口膜_口膜1.AngleBase = num * -35.0;
-    		X0Y0_頭_下顎_眼下_眼下.AngleBase = 0.0;
-    		X0Y0_頭_上顎_眼下_眼下.AngleBase = 0.0;
-    		X0Y0_脚前_UpperArm.AngleBase = num * -105.0;
-    		X0Y0_脚前_LowerArm.AngleBase = num * 8.0;
-    		X0Y0_脚前_手_親指_爪.AngleBase = num * -18.0;
-    		X0Y0_脚前_手_手.AngleBase = num * 36.0;
-    		X0Y0_脚前_手_人指_指.AngleBase = num * 19.0;
-    		X0Y0_脚前_手_人指_爪.AngleBase = 0.0;
-    		X0Y0_脚前_手_中指_指.AngleBase = num * 19.0;
-    		X0Y0_脚前_手_中指_爪.AngleBase = 0.0;
-    		X0Y0_脚前_手_薬指_指.AngleBase = num * 19.0;
-    		X0Y0_脚前_手_薬指_爪.AngleBase = 0.0;
-    		X0Y0_脚前_手_小指_指.AngleBase = num * 19.0;
-    		X0Y0_脚前_手_小指_爪.AngleBase = 0.0;
+    		X0Y0_脚後_UpperArm.SetAngleBase(num * -125.0);
+    		X0Y0_脚後_LowerArm.SetAngleBase(num * 8.0);
+    		X0Y0_脚後_手_手.SetAngleBase(num * 36.0);
+    		X0Y0_脚後_手_小指_指.SetAngleBase(num * 19.0);
+    		X0Y0_脚後_手_小指_爪.SetAngleBase(0.0);
+    		X0Y0_脚後_手_薬指_指.SetAngleBase(num * 19.0);
+    		X0Y0_脚後_手_薬指_爪.SetAngleBase(0.0);
+    		X0Y0_脚後_手_中指_指.SetAngleBase(num * 19.0);
+    		X0Y0_脚後_手_中指_爪.SetAngleBase(0.0);
+    		X0Y0_脚後_手_人指_指.SetAngleBase(num * 19.0);
+    		X0Y0_脚後_手_人指_爪.SetAngleBase(0.0);
+    		X0Y0_脚後_手_親指_爪.SetAngleBase(num * -18.0);
+    		X0Y0_Torso_節1_Torso.SetAngleBase(num * -55.0);
+    		X0Y0_Torso_節2_Torso.SetAngleBase(num * 7.0);
+    		X0Y0_Torso_節3_Torso.SetAngleBase(num * 7.0);
+    		X0Y0_Torso_節4_Torso.SetAngleBase(num * 7.0);
+    		X0Y0_Torso_節5_Torso.SetAngleBase(num * 7.0);
+    		X0Y0_Torso_節6_Torso.SetAngleBase(num * 7.0);
+    		X0Y0_Torso_節7_Torso.SetAngleBase(num * 10.0);
+    		X0Y0_Torso_節8_Torso.SetAngleBase(num * 10.0);
+    		X0Y0_Torso_節9_Torso.SetAngleBase(num * 10.0);
+    		X0Y0_Torso_節10_Torso.SetAngleBase(num * 20.0);
+    		X0Y0_Torso_節11_Torso.SetAngleBase(num * 15.0);
+    		X0Y0_Torso_節12_Torso.SetAngleBase(num * 15.0);
+    		X0Y0_Torso_節13_Torso.SetAngleBase(num * 15.0);
+    		X0Y0_Torso_節14_Torso.SetAngleBase(num * -2.0);
+    		X0Y0_Torso_節15_Torso.SetAngleBase(num * -2.0);
+    		X0Y0_Torso_節16_Torso.SetAngleBase(num * -2.0);
+    		X0Y0_Torso_節17_Torso.SetAngleBase(num * -5.0);
+    		X0Y0_Torso_節18_Torso.SetAngleBase(num * -25.0);
+    		X0Y0_頭_口膜_口膜1.SetAngleBase(num * -35.0);
+    		X0Y0_頭_下顎_眼下_眼下.SetAngleBase(0.0);
+    		X0Y0_頭_上顎_眼下_眼下.SetAngleBase(0.0);
+    		X0Y0_脚前_UpperArm.SetAngleBase(num * -105.0);
+    		X0Y0_脚前_LowerArm.SetAngleBase(num * 8.0);
+    		X0Y0_脚前_手_親指_爪.SetAngleBase(num * -18.0);
+    		X0Y0_脚前_手_手.SetAngleBase(num * 36.0);
+    		X0Y0_脚前_手_人指_指.SetAngleBase(num * 19.0);
+    		X0Y0_脚前_手_人指_爪.SetAngleBase(0.0);
+    		X0Y0_脚前_手_中指_指.SetAngleBase(num * 19.0);
+    		X0Y0_脚前_手_中指_爪.SetAngleBase(0.0);
+    		X0Y0_脚前_手_薬指_指.SetAngleBase(num * 19.0);
+    		X0Y0_脚前_手_薬指_爪.SetAngleBase(0.0);
+    		X0Y0_脚前_手_小指_指.SetAngleBase(num * 19.0);
+    		X0Y0_脚前_手_小指_爪.SetAngleBase(0.0);
     		Body.JoinPAall();
     	}
 

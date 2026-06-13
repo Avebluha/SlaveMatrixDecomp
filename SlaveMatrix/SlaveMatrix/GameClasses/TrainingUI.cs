@@ -5,6 +5,7 @@ using System.Drawing.Imaging;
 using System.IO;
 using System.Linq;
 using _2DGAMELIB;
+using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
@@ -162,7 +163,7 @@ namespace SlaveMatrix
     		get
     		{
     			Par x0Y0_羽根 = 羽根箒.X0Y0_羽根1;
-    			return Med.GetHitColor(Med.FromBasePosition(x0Y0_羽根.ToGlobal(x0Y0_羽根.JP[1].Joint)));
+    			return Med.GetHitColor(Med.FromBasePosition(x0Y0_羽根.ToGlobal(x0Y0_羽根.GetJP()[1].Joint)));
     		}
     	}
 
@@ -492,19 +493,19 @@ namespace SlaveMatrix
     		switch (ロータ.Yi)
     		{
     		case 0:
-    			t.位置B = ロータ.X0Y0_ロータ.ToGlobal_nc(ロータ.X0Y0_ロータ.JP[1].Joint.AddY(0.004));
+    			t.位置B = ロータ.X0Y0_ロータ.ToGlobal_nc(ロータ.X0Y0_ロータ.GetJP()[1].Joint.AddY(0.004));
     			break;
     		case 1:
-    			t.位置B = ロータ.X0Y1_ロータ.ToGlobal_nc(ロータ.X0Y1_ロータ.JP[1].Joint.AddY(0.004));
+    			t.位置B = ロータ.X0Y1_ロータ.ToGlobal_nc(ロータ.X0Y1_ロータ.GetJP()[1].Joint.AddY(0.004));
     			break;
     		case 2:
-    			t.位置B = ロータ.X0Y2_ロータ.ToGlobal_nc(ロータ.X0Y2_ロータ.JP[1].Joint.AddY(0.004));
+    			t.位置B = ロータ.X0Y2_ロータ.ToGlobal_nc(ロータ.X0Y2_ロータ.GetJP()[1].Joint.AddY(0.004));
     			break;
     		case 3:
-    			t.位置B = ロータ.X0Y3_ロータ.ToGlobal_nc(ロータ.X0Y3_ロータ.JP[0].Joint.AddY(0.004));
+    			t.位置B = ロータ.X0Y3_ロータ.ToGlobal_nc(ロータ.X0Y3_ロータ.GetJP()[0].Joint.AddY(0.004));
     			break;
     		default:
-    			t.位置B = ロータ.X0Y4_ロータ.ToGlobal_nc(ロータ.X0Y4_ロータ.JP[0].Joint.AddY(0.004));
+    			t.位置B = ロータ.X0Y4_ロータ.ToGlobal_nc(ロータ.X0Y4_ロータ.GetJP()[0].Joint.AddY(0.004));
     			break;
     		}
     	}
@@ -514,19 +515,19 @@ namespace SlaveMatrix
     		switch (コモン.Yi)
     		{
     		case 0:
-    			t.位置B = コモン.X0Y0_ユニット_ユニット.ToGlobal_nc(コモン.X0Y0_ユニット_ユニット.JP[6].Joint);
+    			t.位置B = コモン.X0Y0_ユニット_ユニット.ToGlobal_nc(コモン.X0Y0_ユニット_ユニット.GetJP()[6].Joint);
     			break;
     		case 1:
-    			t.位置B = コモン.X0Y1_ユニット_ユニット.ToGlobal_nc(コモン.X0Y1_ユニット_ユニット.JP[6].Joint);
+    			t.位置B = コモン.X0Y1_ユニット_ユニット.ToGlobal_nc(コモン.X0Y1_ユニット_ユニット.GetJP()[6].Joint);
     			break;
     		case 2:
-    			t.位置B = コモン.X0Y2_ユニット_ユニット.ToGlobal_nc(コモン.X0Y2_ユニット_ユニット.JP[6].Joint);
+    			t.位置B = コモン.X0Y2_ユニット_ユニット.ToGlobal_nc(コモン.X0Y2_ユニット_ユニット.GetJP()[6].Joint);
     			break;
     		case 3:
-    			t.位置B = コモン.X0Y3_ユニット_ユニット.ToGlobal_nc(コモン.X0Y3_ユニット_ユニット.JP[6].Joint);
+    			t.位置B = コモン.X0Y3_ユニット_ユニット.ToGlobal_nc(コモン.X0Y3_ユニット_ユニット.GetJP()[6].Joint);
     			break;
     		default:
-    			t.位置B = コモン.X0Y4_ユニット_ユニット.ToGlobal_nc(コモン.X0Y4_ユニット_ユニット.JP[6].Joint);
+    			t.位置B = コモン.X0Y4_ユニット_ユニット.ToGlobal_nc(コモン.X0Y4_ユニット_ユニット.GetJP()[6].Joint);
     			break;
     		}
     	}
@@ -536,19 +537,19 @@ namespace SlaveMatrix
     		switch (ディル.Yi)
     		{
     		case 0:
-    			t.位置B = ディル.X0Y0_ユニット_ユニット.ToGlobal_nc(ディル.X0Y0_ユニット_ユニット.JP[6].Joint);
+    			t.位置B = ディル.X0Y0_ユニット_ユニット.ToGlobal_nc(ディル.X0Y0_ユニット_ユニット.GetJP()[6].Joint);
     			break;
     		case 1:
-    			t.位置B = ディル.X0Y1_ユニット_ユニット.ToGlobal_nc(ディル.X0Y1_ユニット_ユニット.JP[6].Joint);
+    			t.位置B = ディル.X0Y1_ユニット_ユニット.ToGlobal_nc(ディル.X0Y1_ユニット_ユニット.GetJP()[6].Joint);
     			break;
     		case 2:
-    			t.位置B = ディル.X0Y2_ユニット_ユニット.ToGlobal_nc(ディル.X0Y2_ユニット_ユニット.JP[6].Joint);
+    			t.位置B = ディル.X0Y2_ユニット_ユニット.ToGlobal_nc(ディル.X0Y2_ユニット_ユニット.GetJP()[6].Joint);
     			break;
     		case 3:
-    			t.位置B = ディル.X0Y3_ユニット_ユニット.ToGlobal_nc(ディル.X0Y3_ユニット_ユニット.JP[6].Joint);
+    			t.位置B = ディル.X0Y3_ユニット_ユニット.ToGlobal_nc(ディル.X0Y3_ユニット_ユニット.GetJP()[6].Joint);
     			break;
     		default:
-    			t.位置B = ディル.X0Y4_ユニット_ユニット.ToGlobal_nc(ディル.X0Y4_ユニット_ユニット.JP[6].Joint);
+    			t.位置B = ディル.X0Y4_ユニット_ユニット.ToGlobal_nc(ディル.X0Y4_ユニット_ユニット.GetJP()[6].Joint);
     			break;
     		}
     	}
@@ -558,19 +559,19 @@ namespace SlaveMatrix
     		switch (アナル.Yi)
     		{
     		case 0:
-    			t.位置B = アナル.X0Y0_ユニット_ユニット.ToGlobal_nc(アナル.X0Y0_ユニット_ユニット.JP[6].Joint);
+    			t.位置B = アナル.X0Y0_ユニット_ユニット.ToGlobal_nc(アナル.X0Y0_ユニット_ユニット.GetJP()[6].Joint);
     			break;
     		case 1:
-    			t.位置B = アナル.X0Y1_ユニット_ユニット.ToGlobal_nc(アナル.X0Y1_ユニット_ユニット.JP[6].Joint);
+    			t.位置B = アナル.X0Y1_ユニット_ユニット.ToGlobal_nc(アナル.X0Y1_ユニット_ユニット.GetJP()[6].Joint);
     			break;
     		case 2:
-    			t.位置B = アナル.X0Y2_ユニット_ユニット.ToGlobal_nc(アナル.X0Y2_ユニット_ユニット.JP[6].Joint);
+    			t.位置B = アナル.X0Y2_ユニット_ユニット.ToGlobal_nc(アナル.X0Y2_ユニット_ユニット.GetJP()[6].Joint);
     			break;
     		case 3:
-    			t.位置B = アナル.X0Y3_ユニット_ユニット.ToGlobal_nc(アナル.X0Y3_ユニット_ユニット.JP[6].Joint);
+    			t.位置B = アナル.X0Y3_ユニット_ユニット.ToGlobal_nc(アナル.X0Y3_ユニット_ユニット.GetJP()[6].Joint);
     			break;
     		default:
-    			t.位置B = アナル.X0Y4_ユニット_ユニット.ToGlobal_nc(アナル.X0Y4_ユニット_ユニット.JP[6].Joint);
+    			t.位置B = アナル.X0Y4_ユニット_ユニット.ToGlobal_nc(アナル.X0Y4_ユニット_ユニット.GetJP()[6].Joint);
     			break;
     		}
     	}
@@ -580,19 +581,19 @@ namespace SlaveMatrix
     		switch (デンマ.Yi)
     		{
     		case 0:
-    			t.位置B = デンマ.X0Y0_ユニット_ユニット.ToGlobal_nc(デンマ.X0Y0_ユニット_ユニット.JP[6].Joint);
+    			t.位置B = デンマ.X0Y0_ユニット_ユニット.ToGlobal_nc(デンマ.X0Y0_ユニット_ユニット.GetJP()[6].Joint);
     			break;
     		case 1:
-    			t.位置B = デンマ.X0Y1_ユニット_ユニット.ToGlobal_nc(デンマ.X0Y1_ユニット_ユニット.JP[6].Joint);
+    			t.位置B = デンマ.X0Y1_ユニット_ユニット.ToGlobal_nc(デンマ.X0Y1_ユニット_ユニット.GetJP()[6].Joint);
     			break;
     		case 2:
-    			t.位置B = デンマ.X0Y2_ユニット_ユニット.ToGlobal_nc(デンマ.X0Y2_ユニット_ユニット.JP[6].Joint);
+    			t.位置B = デンマ.X0Y2_ユニット_ユニット.ToGlobal_nc(デンマ.X0Y2_ユニット_ユニット.GetJP()[6].Joint);
     			break;
     		case 3:
-    			t.位置B = デンマ.X0Y3_ユニット_ユニット.ToGlobal_nc(デンマ.X0Y3_ユニット_ユニット.JP[6].Joint);
+    			t.位置B = デンマ.X0Y3_ユニット_ユニット.ToGlobal_nc(デンマ.X0Y3_ユニット_ユニット.GetJP()[6].Joint);
     			break;
     		default:
-    			t.位置B = デンマ.X0Y4_ユニット_ユニット.ToGlobal_nc(デンマ.X0Y4_ユニット_ユニット.JP[6].Joint);
+    			t.位置B = デンマ.X0Y4_ユニット_ユニット.ToGlobal_nc(デンマ.X0Y4_ユニット_ユニット.GetJP()[6].Joint);
     			break;
     		}
     	}
@@ -605,19 +606,19 @@ namespace SlaveMatrix
     			switch (ドリル.Yi)
     			{
     			case 0:
-    				t.位置B = ドリル.X0Y0_ユニット_ユニット.ToGlobal_nc(ドリル.X0Y0_ユニット_ユニット.JP[6].Joint);
+    				t.位置B = ドリル.X0Y0_ユニット_ユニット.ToGlobal_nc(ドリル.X0Y0_ユニット_ユニット.GetJP()[6].Joint);
     				break;
     			case 1:
-    				t.位置B = ドリル.X0Y1_ユニット_ユニット.ToGlobal_nc(ドリル.X0Y1_ユニット_ユニット.JP[6].Joint);
+    				t.位置B = ドリル.X0Y1_ユニット_ユニット.ToGlobal_nc(ドリル.X0Y1_ユニット_ユニット.GetJP()[6].Joint);
     				break;
     			case 2:
-    				t.位置B = ドリル.X0Y2_ユニット_ユニット.ToGlobal_nc(ドリル.X0Y2_ユニット_ユニット.JP[6].Joint);
+    				t.位置B = ドリル.X0Y2_ユニット_ユニット.ToGlobal_nc(ドリル.X0Y2_ユニット_ユニット.GetJP()[6].Joint);
     				break;
     			case 3:
-    				t.位置B = ドリル.X0Y3_ユニット_ユニット.ToGlobal_nc(ドリル.X0Y3_ユニット_ユニット.JP[6].Joint);
+    				t.位置B = ドリル.X0Y3_ユニット_ユニット.ToGlobal_nc(ドリル.X0Y3_ユニット_ユニット.GetJP()[6].Joint);
     				break;
     			default:
-    				t.位置B = ドリル.X0Y4_ユニット_ユニット.ToGlobal_nc(ドリル.X0Y4_ユニット_ユニット.JP[6].Joint);
+    				t.位置B = ドリル.X0Y4_ユニット_ユニット.ToGlobal_nc(ドリル.X0Y4_ユニット_ユニット.GetJP()[6].Joint);
     				break;
     			}
     			break;
@@ -625,19 +626,19 @@ namespace SlaveMatrix
     			switch (ドリル.Yi)
     			{
     			case 0:
-    				t.位置B = ドリル.X1Y0_ユニット_ユニット.ToGlobal_nc(ドリル.X1Y0_ユニット_ユニット.JP[6].Joint);
+    				t.位置B = ドリル.X1Y0_ユニット_ユニット.ToGlobal_nc(ドリル.X1Y0_ユニット_ユニット.GetJP()[6].Joint);
     				break;
     			case 1:
-    				t.位置B = ドリル.X1Y1_ユニット_ユニット.ToGlobal_nc(ドリル.X1Y1_ユニット_ユニット.JP[6].Joint);
+    				t.位置B = ドリル.X1Y1_ユニット_ユニット.ToGlobal_nc(ドリル.X1Y1_ユニット_ユニット.GetJP()[6].Joint);
     				break;
     			case 2:
-    				t.位置B = ドリル.X1Y2_ユニット_ユニット.ToGlobal_nc(ドリル.X1Y2_ユニット_ユニット.JP[6].Joint);
+    				t.位置B = ドリル.X1Y2_ユニット_ユニット.ToGlobal_nc(ドリル.X1Y2_ユニット_ユニット.GetJP()[6].Joint);
     				break;
     			case 3:
-    				t.位置B = ドリル.X1Y3_ユニット_ユニット.ToGlobal_nc(ドリル.X1Y3_ユニット_ユニット.JP[6].Joint);
+    				t.位置B = ドリル.X1Y3_ユニット_ユニット.ToGlobal_nc(ドリル.X1Y3_ユニット_ユニット.GetJP()[6].Joint);
     				break;
     			default:
-    				t.位置B = ドリル.X1Y4_ユニット_ユニット.ToGlobal_nc(ドリル.X1Y4_ユニット_ユニット.JP[6].Joint);
+    				t.位置B = ドリル.X1Y4_ユニット_ユニット.ToGlobal_nc(ドリル.X1Y4_ユニット_ユニット.GetJP()[6].Joint);
     				break;
     			}
     			break;
@@ -645,19 +646,19 @@ namespace SlaveMatrix
     			switch (ドリル.Yi)
     			{
     			case 0:
-    				t.位置B = ドリル.X2Y0_ユニット_ユニット.ToGlobal_nc(ドリル.X2Y0_ユニット_ユニット.JP[6].Joint);
+    				t.位置B = ドリル.X2Y0_ユニット_ユニット.ToGlobal_nc(ドリル.X2Y0_ユニット_ユニット.GetJP()[6].Joint);
     				break;
     			case 1:
-    				t.位置B = ドリル.X2Y1_ユニット_ユニット.ToGlobal_nc(ドリル.X2Y1_ユニット_ユニット.JP[6].Joint);
+    				t.位置B = ドリル.X2Y1_ユニット_ユニット.ToGlobal_nc(ドリル.X2Y1_ユニット_ユニット.GetJP()[6].Joint);
     				break;
     			case 2:
-    				t.位置B = ドリル.X2Y2_ユニット_ユニット.ToGlobal_nc(ドリル.X2Y2_ユニット_ユニット.JP[6].Joint);
+    				t.位置B = ドリル.X2Y2_ユニット_ユニット.ToGlobal_nc(ドリル.X2Y2_ユニット_ユニット.GetJP()[6].Joint);
     				break;
     			case 3:
-    				t.位置B = ドリル.X2Y3_ユニット_ユニット.ToGlobal_nc(ドリル.X2Y3_ユニット_ユニット.JP[6].Joint);
+    				t.位置B = ドリル.X2Y3_ユニット_ユニット.ToGlobal_nc(ドリル.X2Y3_ユニット_ユニット.GetJP()[6].Joint);
     				break;
     			default:
-    				t.位置B = ドリル.X2Y4_ユニット_ユニット.ToGlobal_nc(ドリル.X2Y4_ユニット_ユニット.JP[6].Joint);
+    				t.位置B = ドリル.X2Y4_ユニット_ユニット.ToGlobal_nc(ドリル.X2Y4_ユニット_ユニット.GetJP()[6].Joint);
     				break;
     			}
     			break;
@@ -669,63 +670,63 @@ namespace SlaveMatrix
     		switch (パール.Yi)
     		{
     		case 0:
-    			t.位置B = パール.X0Y0_輪下.ToGlobal_nc(パール.X0Y0_輪下.JP[0].Joint);
+    			t.位置B = パール.X0Y0_輪下.ToGlobal_nc(パール.X0Y0_輪下.GetJP()[0].Joint);
     			break;
     		case 1:
-    			t.位置B = パール.X0Y1_輪下.ToGlobal_nc(パール.X0Y1_輪下.JP[0].Joint);
+    			t.位置B = パール.X0Y1_輪下.ToGlobal_nc(パール.X0Y1_輪下.GetJP()[0].Joint);
     			break;
     		case 2:
-    			t.位置B = パール.X0Y2_輪下.ToGlobal_nc(パール.X0Y2_輪下.JP[0].Joint);
+    			t.位置B = パール.X0Y2_輪下.ToGlobal_nc(パール.X0Y2_輪下.GetJP()[0].Joint);
     			break;
     		case 3:
-    			t.位置B = パール.X0Y3_輪下.ToGlobal_nc(パール.X0Y3_輪下.JP[0].Joint);
+    			t.位置B = パール.X0Y3_輪下.ToGlobal_nc(パール.X0Y3_輪下.GetJP()[0].Joint);
     			break;
     		case 4:
-    			t.位置B = パール.X0Y4_輪下.ToGlobal_nc(パール.X0Y4_輪下.JP[0].Joint);
+    			t.位置B = パール.X0Y4_輪下.ToGlobal_nc(パール.X0Y4_輪下.GetJP()[0].Joint);
     			break;
     		case 5:
-    			t.位置B = パール.X0Y5_輪下.ToGlobal_nc(パール.X0Y5_輪下.JP[0].Joint);
+    			t.位置B = パール.X0Y5_輪下.ToGlobal_nc(パール.X0Y5_輪下.GetJP()[0].Joint);
     			break;
     		case 6:
-    			t.位置B = パール.X0Y6_輪下.ToGlobal_nc(パール.X0Y6_輪下.JP[0].Joint);
+    			t.位置B = パール.X0Y6_輪下.ToGlobal_nc(パール.X0Y6_輪下.GetJP()[0].Joint);
     			break;
     		case 7:
-    			t.位置B = パール.X0Y7_輪下.ToGlobal_nc(パール.X0Y7_輪下.JP[0].Joint);
+    			t.位置B = パール.X0Y7_輪下.ToGlobal_nc(パール.X0Y7_輪下.GetJP()[0].Joint);
     			break;
     		case 8:
-    			t.位置B = パール.X0Y8_輪下.ToGlobal_nc(パール.X0Y8_輪下.JP[0].Joint);
+    			t.位置B = パール.X0Y8_輪下.ToGlobal_nc(パール.X0Y8_輪下.GetJP()[0].Joint);
     			break;
     		case 9:
-    			t.位置B = パール.X0Y9_輪下.ToGlobal_nc(パール.X0Y9_輪下.JP[0].Joint);
+    			t.位置B = パール.X0Y9_輪下.ToGlobal_nc(パール.X0Y9_輪下.GetJP()[0].Joint);
     			break;
     		case 10:
-    			t.位置B = パール.X0Y10_輪下.ToGlobal_nc(パール.X0Y10_輪下.JP[0].Joint);
+    			t.位置B = パール.X0Y10_輪下.ToGlobal_nc(パール.X0Y10_輪下.GetJP()[0].Joint);
     			break;
     		case 11:
-    			t.位置B = パール.X0Y11_輪下.ToGlobal_nc(パール.X0Y11_輪下.JP[0].Joint);
+    			t.位置B = パール.X0Y11_輪下.ToGlobal_nc(パール.X0Y11_輪下.GetJP()[0].Joint);
     			break;
     		case 12:
-    			t.位置B = パール.X0Y12_輪下.ToGlobal_nc(パール.X0Y12_輪下.JP[0].Joint);
+    			t.位置B = パール.X0Y12_輪下.ToGlobal_nc(パール.X0Y12_輪下.GetJP()[0].Joint);
     			break;
     		case 13:
-    			t.位置B = パール.X0Y13_輪下.ToGlobal_nc(パール.X0Y13_輪下.JP[0].Joint);
+    			t.位置B = パール.X0Y13_輪下.ToGlobal_nc(パール.X0Y13_輪下.GetJP()[0].Joint);
     			break;
     		case 14:
-    			t.位置B = パール.X0Y14_輪下.ToGlobal_nc(パール.X0Y14_輪下.JP[0].Joint);
+    			t.位置B = パール.X0Y14_輪下.ToGlobal_nc(パール.X0Y14_輪下.GetJP()[0].Joint);
     			break;
     		case 15:
-    			t.位置B = パール.X0Y15_輪下.ToGlobal_nc(パール.X0Y15_輪下.JP[0].Joint);
+    			t.位置B = パール.X0Y15_輪下.ToGlobal_nc(パール.X0Y15_輪下.GetJP()[0].Joint);
     			break;
     		default:
-    			t.位置B = パール.X0Y16_輪下.ToGlobal_nc(パール.X0Y16_輪下.JP[0].Joint);
+    			t.位置B = パール.X0Y16_輪下.ToGlobal_nc(パール.X0Y16_輪下.GetJP()[0].Joint);
     			break;
     		}
     	}
 
     	private void Set_羽根箒(Ele t)
     	{
-    		t.位置B = 羽根箒.X0Y0_柄.ToGlobal_nc(羽根箒.X0Y0_柄.JP[1].Joint);
-    		t.角度C = 羽根箒.X0Y0_柄.Angle;
+    		t.位置B = 羽根箒.X0Y0_柄.ToGlobal_nc(羽根箒.X0Y0_柄.GetJP()[1].Joint);
+    		t.角度C = 羽根箒.X0Y0_柄.GetAngle();
     	}
 
     	private void Set_調教鞭(Ele t)
@@ -736,83 +737,83 @@ namespace SlaveMatrix
     			switch (調教鞭.Yi)
     			{
     			case 0:
-    				t.位置B = 調教鞭.X0Y0_柄.ToGlobal_nc(調教鞭.X0Y0_柄.JP[1].Joint);
-    				t.角度C = 調教鞭.X0Y0_柄.Angle;
+    				t.位置B = 調教鞭.X0Y0_柄.ToGlobal_nc(調教鞭.X0Y0_柄.GetJP()[1].Joint);
+    				t.角度C = 調教鞭.X0Y0_柄.GetAngle();
     				break;
     			case 1:
-    				t.位置B = 調教鞭.X0Y1_柄.ToGlobal_nc(調教鞭.X0Y1_柄.JP[1].Joint);
-    				t.角度C = 調教鞭.X0Y1_柄.Angle;
+    				t.位置B = 調教鞭.X0Y1_柄.ToGlobal_nc(調教鞭.X0Y1_柄.GetJP()[1].Joint);
+    				t.角度C = 調教鞭.X0Y1_柄.GetAngle();
     				break;
     			case 2:
-    				t.位置B = 調教鞭.X0Y2_柄.ToGlobal_nc(調教鞭.X0Y2_柄.JP[1].Joint);
-    				t.角度C = 調教鞭.X0Y2_柄.Angle;
+    				t.位置B = 調教鞭.X0Y2_柄.ToGlobal_nc(調教鞭.X0Y2_柄.GetJP()[1].Joint);
+    				t.角度C = 調教鞭.X0Y2_柄.GetAngle();
     				break;
     			case 3:
-    				t.位置B = 調教鞭.X0Y3_柄.ToGlobal_nc(調教鞭.X0Y3_柄.JP[1].Joint);
-    				t.角度C = 調教鞭.X0Y3_柄.Angle;
+    				t.位置B = 調教鞭.X0Y3_柄.ToGlobal_nc(調教鞭.X0Y3_柄.GetJP()[1].Joint);
+    				t.角度C = 調教鞭.X0Y3_柄.GetAngle();
     				break;
     			default:
-    				t.位置B = 調教鞭.X0Y4_柄.ToGlobal_nc(調教鞭.X0Y4_柄.JP[1].Joint);
-    				t.角度C = 調教鞭.X0Y4_柄.Angle;
+    				t.位置B = 調教鞭.X0Y4_柄.ToGlobal_nc(調教鞭.X0Y4_柄.GetJP()[1].Joint);
+    				t.角度C = 調教鞭.X0Y4_柄.GetAngle();
     				break;
     			}
     		}
     		else if (調教鞭.Yi == 0)
     		{
-    			t.位置B = 調教鞭.X1Y0_柄.ToGlobal_nc(調教鞭.X1Y0_柄.JP[1].Joint);
-    			t.角度C = (double)((調教鞭.Xi != 0) ? num : 0) + 調教鞭.X0Y0_柄.Angle;
+    			t.位置B = 調教鞭.X1Y0_柄.ToGlobal_nc(調教鞭.X1Y0_柄.GetJP()[1].Joint);
+    			t.角度C = (double)((調教鞭.Xi != 0) ? num : 0) + 調教鞭.X0Y0_柄.GetAngle();
     		}
     		else
     		{
-    			t.位置B = 調教鞭.X1Y4_柄.ToGlobal_nc(調教鞭.X1Y4_柄.JP[1].Joint);
-    			t.角度C = (double)((調教鞭.Xi != 0) ? (-num) : 0) + 調教鞭.X0Y4_柄.Angle;
+    			t.位置B = 調教鞭.X1Y4_柄.ToGlobal_nc(調教鞭.X1Y4_柄.GetJP()[1].Joint);
+    			t.角度C = (double)((調教鞭.Xi != 0) ? (-num) : 0) + 調教鞭.X0Y4_柄.GetAngle();
     		}
     	}
 
     	private void Set_T剃刀(Ele t)
     	{
-    		t.位置B = T剃刀.X0Y0_グリップ_グリップ4.ToGlobal_nc(T剃刀.X0Y0_グリップ_グリップ4.JP[0].Joint);
-    		t.角度C = T剃刀.X0Y0_グリップ_グリップ4.Angle;
+    		t.位置B = T剃刀.X0Y0_グリップ_グリップ4.ToGlobal_nc(T剃刀.X0Y0_グリップ_グリップ4.GetJP()[0].Joint);
+    		t.角度C = T剃刀.X0Y0_グリップ_グリップ4.GetAngle();
     	}
 
     	public void Set_キャップ1(Ele t)
     	{
-    		t.位置B = キャップ1.X0Y0_先端.ToGlobal_nc(キャップ1.X0Y0_先端.JP[0].Joint);
+    		t.位置B = キャップ1.X0Y0_先端.ToGlobal_nc(キャップ1.X0Y0_先端.GetJP()[0].Joint);
     	}
 
     	public void Set_キャップ2(Ele t)
     	{
-    		t.位置B = キャップ2.X0Y0_先端.ToGlobal_nc(キャップ2.X0Y0_先端.JP[0].Joint);
+    		t.位置B = キャップ2.X0Y0_先端.ToGlobal_nc(キャップ2.X0Y0_先端.GetJP()[0].Joint);
     	}
 
     	public void Set_キャップ3(Ele t)
     	{
-    		t.位置B = キャップ3.X0Y0_先端.ToGlobal_nc(キャップ3.X0Y0_先端.JP[0].Joint);
+    		t.位置B = キャップ3.X0Y0_先端.ToGlobal_nc(キャップ3.X0Y0_先端.GetJP()[0].Joint);
     	}
 
     	public void Set_キャップ左(Ele t)
     	{
     		キャップ2 キャップ2左 = Bod.キャップ2左;
-    		t.位置B = キャップ2左.X0Y0_先端.ToGlobal_nc(キャップ2左.X0Y0_先端.JP[0].Joint);
+    		t.位置B = キャップ2左.X0Y0_先端.ToGlobal_nc(キャップ2左.X0Y0_先端.GetJP()[0].Joint);
     	}
 
     	public void Set_キャップ右(Ele t)
     	{
     		キャップ2 キャップ2右 = Bod.キャップ2右;
-    		t.位置B = キャップ2右.X0Y0_先端.ToGlobal_nc(キャップ2右.X0Y0_先端.JP[0].Joint);
+    		t.位置B = キャップ2右.X0Y0_先端.ToGlobal_nc(キャップ2右.X0Y0_先端.GetJP()[0].Joint);
     	}
 
     	public void Set_キャップ中(Ele t)
     	{
     		キャップ1 キャップ3 = Bod.キャップ1;
-    		t.位置B = キャップ3.X0Y0_先端.ToGlobal_nc(キャップ3.X0Y0_先端.JP[0].Joint);
+    		t.位置B = キャップ3.X0Y0_先端.ToGlobal_nc(キャップ3.X0Y0_先端.GetJP()[0].Joint);
     	}
 
     	public void Set_口(Ele t)
     	{
-    		Par par = Bod.口.Body.Current.EnumAllPar().First((Par e) => e.Tag == "口");
+    		Par par = Bod.口.Body.GetCurrent().EnumAllPar().First((Par e) => e.Tag == "口");
     		Bod.口.接続PA();
-    		t.位置B = par.Position;
+    		t.位置B = par.GetPosition();
     	}
 
     	public void Set_乳首(Ele t, bool 右)
@@ -822,19 +823,19 @@ namespace SlaveMatrix
     		switch (乳房2.Yi)
     		{
     		case 0:
-    			t.位置B = 乳房2.X0Y0_乳首.ToGlobal_nc(乳房2.X0Y0_乳首.JP[0].Joint);
+    			t.位置B = 乳房2.X0Y0_乳首.ToGlobal_nc(乳房2.X0Y0_乳首.GetJP()[0].Joint);
     			break;
     		case 1:
-    			t.位置B = 乳房2.X0Y1_乳首.ToGlobal_nc(乳房2.X0Y1_乳首.JP[0].Joint);
+    			t.位置B = 乳房2.X0Y1_乳首.ToGlobal_nc(乳房2.X0Y1_乳首.GetJP()[0].Joint);
     			break;
     		case 2:
-    			t.位置B = 乳房2.X0Y2_乳首.ToGlobal_nc(乳房2.X0Y2_乳首.JP[0].Joint);
+    			t.位置B = 乳房2.X0Y2_乳首.ToGlobal_nc(乳房2.X0Y2_乳首.GetJP()[0].Joint);
     			break;
     		case 3:
-    			t.位置B = 乳房2.X0Y3_乳首.ToGlobal_nc(乳房2.X0Y3_乳首.JP[0].Joint);
+    			t.位置B = 乳房2.X0Y3_乳首.ToGlobal_nc(乳房2.X0Y3_乳首.GetJP()[0].Joint);
     			break;
     		default:
-    			t.位置B = 乳房2.X0Y4_乳首.ToGlobal_nc(乳房2.X0Y4_乳首.JP[0].Joint);
+    			t.位置B = 乳房2.X0Y4_乳首.ToGlobal_nc(乳房2.X0Y4_乳首.GetJP()[0].Joint);
     			break;
     		}
     	}
@@ -846,35 +847,35 @@ namespace SlaveMatrix
     		switch (乳房2.Yi)
     		{
     		case 0:
-    			t.位置B = 乳房2.X0Y0_乳房.ToGlobal_nc(乳房2.X0Y0_乳房.OP.GetCenter());
+    			t.位置B = 乳房2.X0Y0_乳房.ToGlobal_nc(乳房2.X0Y0_乳房.GetOP().GetCenter());
     			break;
     		case 1:
-    			t.位置B = 乳房2.X0Y1_乳房.ToGlobal_nc(乳房2.X0Y1_乳房.OP.GetCenter());
+    			t.位置B = 乳房2.X0Y1_乳房.ToGlobal_nc(乳房2.X0Y1_乳房.GetOP().GetCenter());
     			break;
     		case 2:
-    			t.位置B = 乳房2.X0Y2_乳房.ToGlobal_nc(乳房2.X0Y2_乳房.OP.GetCenter());
+    			t.位置B = 乳房2.X0Y2_乳房.ToGlobal_nc(乳房2.X0Y2_乳房.GetOP().GetCenter());
     			break;
     		case 3:
-    			t.位置B = 乳房2.X0Y3_乳房.ToGlobal_nc(乳房2.X0Y3_乳房.OP.GetCenter());
+    			t.位置B = 乳房2.X0Y3_乳房.ToGlobal_nc(乳房2.X0Y3_乳房.GetOP().GetCenter());
     			break;
     		default:
-    			t.位置B = 乳房2.X0Y4_乳房.ToGlobal_nc(乳房2.X0Y4_乳房.OP.GetCenter());
+    			t.位置B = 乳房2.X0Y4_乳房.ToGlobal_nc(乳房2.X0Y4_乳房.GetOP().GetCenter());
     			break;
     		}
     	}
 
     	public void Set_陰核(Ele t)
     	{
-    		Par par = Bod.性器.Body.Current.EnumAllPar().First((Par e) => e.Tag == "陰核");
+    		Par par = Bod.性器.Body.GetCurrent().EnumAllPar().First((Par e) => e.Tag == "陰核");
     		Bod.性器.接続PA();
-    		t.位置B = par.Position;
+    		t.位置B = par.GetPosition();
     	}
 
     	public void Set_膣口(Ele t)
     	{
-    		Par par = Bod.性器.Body.Current.EnumAllPar().First((Par e) => e.Tag == "膣口");
+    		Par par = Bod.性器.Body.GetCurrent().EnumAllPar().First((Par e) => e.Tag == "膣口");
     		Bod.性器.接続PA();
-    		t.位置B = par.Position;
+    		t.位置B = par.GetPosition();
     	}
 
     	public void Set_肛門(Ele t)
@@ -886,20 +887,20 @@ namespace SlaveMatrix
     	public void Set_出糸(Ele t)
     	{
     		Bod.蜘尾.接続PA();
-    		t.位置B = Bod.蜘尾.X0Y0_出糸突起後_出糸突起基.Position;
+    		t.位置B = Bod.蜘尾.X0Y0_出糸突起後_出糸突起基.GetPosition();
     	}
 
     	public void Set_くぱぁ(Ele t, bool 右)
     	{
-    		Par par = (Bod.Is獣 ? Bod.Waist_獣.Body.Current.EnumAllPar().First((Par e) => e.Tag == "股") : Bod.Waist.Body.Current.EnumAllPar().First((Par e) => e.Tag == "股"));
+    		Par par = (Bod.Is獣 ? Bod.Waist_獣.Body.GetCurrent().EnumAllPar().First((Par e) => e.Tag == "股") : Bod.Waist.Body.GetCurrent().EnumAllPar().First((Par e) => e.Tag == "股"));
     		Bod.Waist.接続PA();
     		if (右)
     		{
-    			t.位置B = par.Position.AddXY(0.018, 0.002);
+    			t.位置B = par.GetPosition().AddXY(0.018, 0.002);
     		}
     		else
     		{
-    			t.位置B = par.Position.AddXY(-0.018, 0.002);
+    			t.位置B = par.GetPosition().AddXY(-0.018, 0.002);
     		}
     	}
 
@@ -1865,35 +1866,35 @@ namespace SlaveMatrix
     		{
     			ip.SubInfoIm = ((hcm == ペニスCM || hcm == マウスCM || hcm == ハンド右CM) ? ("LCl:" + GameText.選択) : ("LCl:" + GameText.持つ));
     		}
-    		if (拘束具.Pars.Values.First().ToPar().HitColor == hc)
+    		if (拘束具.Pars.Values.First().ToPar().GetHitColor() == hc)
     		{
     			ip.SubInfoIm = GameText.拘束状態を切換えます;
     		}
-    		if (目隠帯.Pars.Values.First().ToPar().HitColor == hc)
+    		if (目隠帯.Pars.Values.First().ToPar().GetHitColor() == hc)
     		{
     			ip.SubInfoIm = GameText.目隠状態を切換えます;
     		}
-    		if (玉口枷.Pars.Values.First().ToPar().HitColor == hc)
+    		if (玉口枷.Pars.Values.First().ToPar().GetHitColor() == hc)
     		{
     			ip.SubInfoIm = GameText.口枷状態を切換えます;
     		}
-    		if (断面.Pars.Values.First().ToPar().HitColor == hc)
+    		if (断面.Pars.Values.First().ToPar().GetHitColor() == hc)
     		{
     			ip.SubInfoIm = GameText.断面表示を切換えます;
     		}
-    		if (媚薬.Pars.Values.First().ToPar().HitColor == hc)
+    		if (媚薬.Pars.Values.First().ToPar().GetHitColor() == hc)
     		{
     			ip.SubInfoIm = GameText.発情状態になります + "(-" + 媚薬投与価格.ToString("#,0") + ")";
     		}
-    		if (SlaveStamina.Pars.Values.First().ToPar().HitColor == hc)
+    		if (SlaveStamina.Pars.Values.First().ToPar().GetHitColor() == hc)
     		{
     			ip.SubInfoIm = "Reset slave's stamina";
     		}
-    		if (PlayerStamina.Pars.Values.First().ToPar().HitColor == hc)
+    		if (PlayerStamina.Pars.Values.First().ToPar().GetHitColor() == hc)
     		{
     			ip.SubInfoIm = "Reset player's stamina";
     		}
-    		if (撮影.Pars.Values.First().ToPar().HitColor == hc && ip.SubInfoIm != GameText.撮影しました + "\r\n" + GameText.写真はPhotoフォルダに保存されます)
+    		if (撮影.Pars.Values.First().ToPar().GetHitColor() == hc && ip.SubInfoIm != GameText.撮影しました + "\r\n" + GameText.写真はPhotoフォルダに保存されます)
     		{
     			ip.SubInfoIm = GameText.撮影を行います;
     		}
@@ -2161,38 +2162,38 @@ namespace SlaveMatrix
     			射精.SetHitFalse();
     			ParT parT = new ParT();
     			parT.Text = GameText.調教終了;
-    			parT.SizeBase = 0.095;
-    			parT.Font = new Font("MS Gothic", 1f);
-    			parT.FontSize = 0.07;
+    			parT.SetSizeBase(0.095);
+    			parT.SetFont(new Font("MS Gothic", 1f));
+    			parT.SetFontSize(0.07);
     			parT.SetStringRectOutline(Are.UnitScale, Are.DisplayGraphics);
-    			parT.RectSize = new Vector2D(parT.OP[0].ps[1].X, parT.OP[0].ps[2].Y);
-    			parT.OP.ScalingY(parT.BasePointBase, 0.9);
-    			parT.Closed = true;
-    			parT.TextColor = Col.Black;
-    			parT.BrushColor = Color.FromArgb(160, Col.Black);
-    			parT.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    			parT.HitColor = Med.GetUniqueColor();
-    			parT.StringFormat.Alignment = StringAlignment.Center;
-    			parT.StringFormat.LineAlignment = StringAlignment.Center;
-    			parT.PositionBase = Are.GetPosition(1.0 - (parT.OP[0].ps[1].X * parT.SizeBase / Are.LocalWidth + 0.005), 1.0 - parT.OP[0].ps[2].Y * parT.SizeBase / Are.LocalHeight).AddY(-0.001);
-    			parT.PositionBase = new Vector2D(ip.SubB.PositionBase.X, parT.PositionBase.Y);
+    			parT.SetRectSize(new Vector2D(parT.GetOP()[0].ps[1].X, parT.GetOP()[0].ps[2].Y));
+    			parT.GetOP().ScalingY(parT.GetBasePointBase(), 0.9);
+    			parT.SetClosed(true);
+    			parT.SetTextColor(Col.Black);
+    			parT.SetBrushColor(Color.FromArgb(160, Col.Black));
+    			parT.SetShadBrush(new SolidBrush(Color.FromArgb(64, Col.Black)));
+    			parT.SetHitColor(Med.GetUniqueColor());
+    			parT.GetStringFormat().Alignment = StringAlignment.Center;
+    			parT.GetStringFormat().LineAlignment = StringAlignment.Center;
+    			parT.SetPositionBase(Are.GetPosition(1.0 - (parT.GetOP()[0].ps[1].X * parT.GetSizeBase() / Are.LocalWidth + 0.005), 1.0 - parT.GetOP()[0].ps[2].Y * parT.GetSizeBase() / Are.LocalHeight).AddY(-0.001));
+    			parT.SetPositionBase(new Vector2D(ip.SubB.GetPositionBase().X, parT.GetPositionBase().Y));
     			調教終了 = new But1(parT, null);
     			ParT parT2 = new ParT();
     			parT2.Text = GameText.拘束;
-    			parT2.SizeBase = 0.095;
-    			parT2.Font = new Font("MS Gothic", 1f);
-    			parT2.FontSize = 0.07;
+    			parT2.SetSizeBase(0.095);
+    			parT2.SetFont(new Font("MS Gothic", 1f));
+    			parT2.SetFontSize(0.07);
     			parT2.SetStringRectOutline(Are.UnitScale, Are.DisplayGraphics);
-    			parT2.RectSize = new Vector2D(parT2.OP[0].ps[1].X, parT2.OP[0].ps[2].Y);
-    			parT2.OP.ScalingY(parT2.BasePointBase, 0.9);
-    			parT2.Closed = true;
-    			parT2.TextColor = Col.Black;
-    			parT2.BrushColor = Color.FromArgb(160, Col.Black);
-    			parT2.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    			parT2.HitColor = Med.GetUniqueColor();
-    			parT2.StringFormat.Alignment = StringAlignment.Center;
-    			parT2.StringFormat.LineAlignment = StringAlignment.Center;
-    			parT2.PositionBase = Are.GetPosition(0.08, 0.7);
+    			parT2.SetRectSize(new Vector2D(parT2.GetOP()[0].ps[1].X, parT2.GetOP()[0].ps[2].Y));
+    			parT2.GetOP().ScalingY(parT2.GetBasePointBase(), 0.9);
+    			parT2.SetClosed(true);
+    			parT2.SetTextColor(Col.Black);
+    			parT2.SetBrushColor(Color.FromArgb(160, Col.Black));
+    			parT2.SetShadBrush(new SolidBrush(Color.FromArgb(64, Col.Black)));
+    			parT2.SetHitColor(Med.GetUniqueColor());
+    			parT2.GetStringFormat().Alignment = StringAlignment.Center;
+    			parT2.GetStringFormat().LineAlignment = StringAlignment.Center;
+    			parT2.SetPositionBase(Are.GetPosition(0.08, 0.7));
     			拘束具 = new But1(parT2, delegate(But a)
     			{
     				if (調教UI2.拘束具sw.Flag)
@@ -2211,20 +2212,20 @@ namespace SlaveMatrix
     			});
     			ParT parT3 = new ParT();
     			parT3.Text = GameText.目隠;
-    			parT3.SizeBase = 0.095;
-    			parT3.Font = new Font("MS Gothic", 1f);
-    			parT3.FontSize = 0.07;
+    			parT3.SetSizeBase(0.095);
+    			parT3.SetFont(new Font("MS Gothic", 1f));
+    			parT3.SetFontSize(0.07);
     			parT3.SetStringRectOutline(Are.UnitScale, Are.DisplayGraphics);
-    			parT3.RectSize = new Vector2D(parT3.OP[0].ps[1].X, parT3.OP[0].ps[2].Y);
-    			parT3.OP.ScalingY(parT3.BasePointBase, 0.9);
-    			parT3.Closed = true;
-    			parT3.TextColor = Col.Black;
-    			parT3.BrushColor = Color.FromArgb(160, Col.Black);
-    			parT3.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    			parT3.HitColor = Med.GetUniqueColor();
-    			parT3.StringFormat.Alignment = StringAlignment.Center;
-    			parT3.StringFormat.LineAlignment = StringAlignment.Center;
-    			parT3.PositionBase = parT2.PositionBase.AddY(0.015);
+    			parT3.SetRectSize(new Vector2D(parT3.GetOP()[0].ps[1].X, parT3.GetOP()[0].ps[2].Y));
+    			parT3.GetOP().ScalingY(parT3.GetBasePointBase(), 0.9);
+    			parT3.SetClosed(true);
+    			parT3.SetTextColor(Col.Black);
+    			parT3.SetBrushColor(Color.FromArgb(160, Col.Black));
+    			parT3.SetShadBrush(new SolidBrush(Color.FromArgb(64, Col.Black)));
+    			parT3.SetHitColor(Med.GetUniqueColor());
+    			parT3.GetStringFormat().Alignment = StringAlignment.Center;
+    			parT3.GetStringFormat().LineAlignment = StringAlignment.Center;
+    			parT3.SetPositionBase(parT2.GetPositionBase().AddY(0.015));
     			目隠帯 = new But1(parT3, delegate(But a)
     			{
     				調教UI2.目隠帯sw.OnOff(a);
@@ -2234,20 +2235,20 @@ namespace SlaveMatrix
     			});
     			ParT parT4 = new ParT();
     			parT4.Text = GameText.口枷;
-    			parT4.SizeBase = 0.095;
-    			parT4.Font = new Font("MS Gothic", 1f);
-    			parT4.FontSize = 0.07;
+    			parT4.SetSizeBase(0.095);
+    			parT4.SetFont(new Font("MS Gothic", 1f));
+    			parT4.SetFontSize(0.07);
     			parT4.SetStringRectOutline(Are.UnitScale, Are.DisplayGraphics);
-    			parT4.RectSize = new Vector2D(parT4.OP[0].ps[1].X, parT4.OP[0].ps[2].Y);
-    			parT4.OP.ScalingY(parT4.BasePointBase, 0.9);
-    			parT4.Closed = true;
-    			parT4.TextColor = Col.Black;
-    			parT4.BrushColor = Color.FromArgb(160, Col.Black);
-    			parT4.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    			parT4.HitColor = Med.GetUniqueColor();
-    			parT4.StringFormat.Alignment = StringAlignment.Center;
-    			parT4.StringFormat.LineAlignment = StringAlignment.Center;
-    			parT4.PositionBase = parT3.PositionBase.AddY(0.015);
+    			parT4.SetRectSize(new Vector2D(parT4.GetOP()[0].ps[1].X, parT4.GetOP()[0].ps[2].Y));
+    			parT4.GetOP().ScalingY(parT4.GetBasePointBase(), 0.9);
+    			parT4.SetClosed(true);
+    			parT4.SetTextColor(Col.Black);
+    			parT4.SetBrushColor(Color.FromArgb(160, Col.Black));
+    			parT4.SetShadBrush(new SolidBrush(Color.FromArgb(64, Col.Black)));
+    			parT4.SetHitColor(Med.GetUniqueColor());
+    			parT4.GetStringFormat().Alignment = StringAlignment.Center;
+    			parT4.GetStringFormat().LineAlignment = StringAlignment.Center;
+    			parT4.SetPositionBase(parT3.GetPositionBase().AddY(0.015));
     			玉口枷 = new But1(parT4, delegate(But a)
     			{
     				調教UI2.玉口枷sw.OnOff(a);
@@ -2257,20 +2258,20 @@ namespace SlaveMatrix
     			});
     			ParT parT5 = new ParT();
     			parT5.Text = GameText.断面;
-    			parT5.SizeBase = 0.095;
-    			parT5.Font = new Font("MS Gothic", 1f);
-    			parT5.FontSize = 0.07;
+    			parT5.SetSizeBase(0.095);
+    			parT5.SetFont(new Font("MS Gothic", 1f));
+    			parT5.SetFontSize(0.07);
     			parT5.SetStringRectOutline(Are.UnitScale, Are.DisplayGraphics);
-    			parT5.RectSize = new Vector2D(parT5.OP[0].ps[1].X, parT5.OP[0].ps[2].Y);
-    			parT5.OP.ScalingY(parT5.BasePointBase, 0.9);
-    			parT5.Closed = true;
-    			parT5.TextColor = Col.Black;
-    			parT5.BrushColor = Color.FromArgb(160, Col.Black);
-    			parT5.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    			parT5.HitColor = Med.GetUniqueColor();
-    			parT5.StringFormat.Alignment = StringAlignment.Center;
-    			parT5.StringFormat.LineAlignment = StringAlignment.Center;
-    			parT5.PositionBase = parT4.PositionBase.AddY(0.015);
+    			parT5.SetRectSize(new Vector2D(parT5.GetOP()[0].ps[1].X, parT5.GetOP()[0].ps[2].Y));
+    			parT5.GetOP().ScalingY(parT5.GetBasePointBase(), 0.9);
+    			parT5.SetClosed(true);
+    			parT5.SetTextColor(Col.Black);
+    			parT5.SetBrushColor(Color.FromArgb(160, Col.Black));
+    			parT5.SetShadBrush(new SolidBrush(Color.FromArgb(64, Col.Black)));
+    			parT5.SetHitColor(Med.GetUniqueColor());
+    			parT5.GetStringFormat().Alignment = StringAlignment.Center;
+    			parT5.GetStringFormat().LineAlignment = StringAlignment.Center;
+    			parT5.SetPositionBase(parT4.GetPositionBase().AddY(0.015));
     			断面 = new But1(parT5, delegate(But a)
     			{
     				double v = 0.0;
@@ -2363,20 +2364,20 @@ namespace SlaveMatrix
     			});
     			ParT parT6 = new ParT();
     			parT6.Text = GameText.媚薬;
-    			parT6.SizeBase = 0.095;
-    			parT6.Font = new Font("MS Gothic", 1f);
-    			parT6.FontSize = 0.07;
+    			parT6.SetSizeBase(0.095);
+    			parT6.SetFont(new Font("MS Gothic", 1f));
+    			parT6.SetFontSize(0.07);
     			parT6.SetStringRectOutline(Are.UnitScale, Are.DisplayGraphics);
-    			parT6.RectSize = new Vector2D(parT6.OP[0].ps[1].X, parT6.OP[0].ps[2].Y);
-    			parT6.OP.ScalingY(parT6.BasePointBase, 0.9);
-    			parT6.Closed = true;
-    			parT6.TextColor = Col.Black;
-    			parT6.BrushColor = Color.FromArgb(160, Col.Black);
-    			parT6.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    			parT6.HitColor = Med.GetUniqueColor();
-    			parT6.StringFormat.Alignment = StringAlignment.Center;
-    			parT6.StringFormat.LineAlignment = StringAlignment.Center;
-    			parT6.PositionBase = parT5.PositionBase.AddY(0.015);
+    			parT6.SetRectSize(new Vector2D(parT6.GetOP()[0].ps[1].X, parT6.GetOP()[0].ps[2].Y));
+    			parT6.GetOP().ScalingY(parT6.GetBasePointBase(), 0.9);
+    			parT6.SetClosed(true);
+    			parT6.SetTextColor(Col.Black);
+    			parT6.SetBrushColor(Color.FromArgb(160, Col.Black));
+    			parT6.SetShadBrush(new SolidBrush(Color.FromArgb(64, Col.Black)));
+    			parT6.SetHitColor(Med.GetUniqueColor());
+    			parT6.GetStringFormat().Alignment = StringAlignment.Center;
+    			parT6.GetStringFormat().LineAlignment = StringAlignment.Center;
+    			parT6.SetPositionBase(parT5.GetPositionBase().AddY(0.015));
     			媚薬 = new But1(parT6, delegate
     			{
     				if (Sta.GameData.所持金 < 調教UI2.媚薬投与価格)
@@ -2398,20 +2399,20 @@ namespace SlaveMatrix
     			StaminaButtons(Are, Med, ip);
     			ParT parT7 = new ParT();
     			parT7.Text = GameText.撮影;
-    			parT7.SizeBase = 0.095;
-    			parT7.Font = new Font("MS Gothic", 1f);
-    			parT7.FontSize = 0.07;
+    			parT7.SetSizeBase(0.095);
+    			parT7.SetFont(new Font("MS Gothic", 1f));
+    			parT7.SetFontSize(0.07);
     			parT7.SetStringRectOutline(Are.UnitScale, Are.DisplayGraphics);
-    			parT7.RectSize = new Vector2D(parT7.OP[0].ps[1].X, parT7.OP[0].ps[2].Y);
-    			parT7.OP.ScalingY(parT7.BasePointBase, 0.9);
-    			parT7.Closed = true;
-    			parT7.TextColor = Col.Black;
-    			parT7.BrushColor = Color.FromArgb(160, Col.Black);
-    			parT7.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    			parT7.HitColor = Med.GetUniqueColor();
-    			parT7.StringFormat.Alignment = StringAlignment.Center;
-    			parT7.StringFormat.LineAlignment = StringAlignment.Center;
-    			parT7.PositionBase = parT6.PositionBase.AddY(0.015);
+    			parT7.SetRectSize(new Vector2D(parT7.GetOP()[0].ps[1].X, parT7.GetOP()[0].ps[2].Y));
+    			parT7.GetOP().ScalingY(parT7.GetBasePointBase(), 0.9);
+    			parT7.SetClosed(true);
+    			parT7.SetTextColor(Col.Black);
+    			parT7.SetBrushColor(Color.FromArgb(160, Col.Black));
+    			parT7.SetShadBrush(new SolidBrush(Color.FromArgb(64, Col.Black)));
+    			parT7.SetHitColor(Med.GetUniqueColor());
+    			parT7.GetStringFormat().Alignment = StringAlignment.Center;
+    			parT7.GetStringFormat().LineAlignment = StringAlignment.Center;
+    			parT7.SetPositionBase(parT6.GetPositionBase().AddY(0.015));
     			string Path = "Photo";
     			Film = new RenderArea(Med, Hit: false);
     			撮影 = new But1(parT7, delegate
@@ -2469,50 +2470,50 @@ namespace SlaveMatrix
     			});
     			int alpha = 200;
     			体力sゲージ = new Gau("体力", Are.GetPosition(new Vector2D(0.025, 0.5)), Are.Size, 0.025, Are.YRatio * 0.98, 0.02, Open.Top, _2DGAMELIB.Range.ZeroOne, disUnit, Color.FromArgb(alpha, Color.Red), Color.Yellow, Color.FromArgb(alpha, Color.Gray), Color.FromArgb(alpha, Color.Gray), Color.FromArgb(alpha, Col.Black), Knob: false);
-    			体力sゲージ.Frame1.Pen = null;
+    			体力sゲージ.Frame1.SetPen(null);
     			絶頂sゲージ = new Gau("絶頂", Are.GetPosition(new Vector2D(0.060000000000000005, 0.5)), Are.Size, 0.01, Are.YRatio * 0.98, 0.02, Open.Top, _2DGAMELIB.Range.ZeroOne, disUnit, Color.FromArgb(alpha, Color.DeepPink), Col.White, Color.FromArgb(alpha, Color.Gray), Color.FromArgb(alpha, Color.Gray), Color.Transparent, Knob: false);
-    			絶頂sゲージ.Frame1.Pen = null;
-    			絶頂sゲージ.Gauge.Pen = null;
+    			絶頂sゲージ.Frame1.SetPen(null);
+    			絶頂sゲージ.Gauge.SetPen(null);
     			興奮sゲージ = new Gau("興奮", Are.GetPosition(new Vector2D(0.060000000000000005, 0.5)), Are.Size, 0.025, Are.YRatio * 0.98, 0.02, Open.Top, _2DGAMELIB.Range.ZeroOne, disUnit, Color.FromArgb(180, Col.White), Color.FromArgb(180, Color.Red), Color.FromArgb(alpha, Color.Gray), Color.FromArgb(alpha, Color.Gray), Color.FromArgb(alpha, Col.Black), Knob: false);
-    			興奮sゲージ.Frame1.Pen = null;
-    			興奮sゲージ.Gauge.Pen = null;
+    			興奮sゲージ.Frame1.SetPen(null);
+    			興奮sゲージ.Gauge.SetPen(null);
     			精力mゲージ = new Gau("精力", Are.GetPosition(new Vector2D(0.025.Inverse(), 0.5)), Are.Size, 0.025, Are.YRatio * 0.98, 0.02, Open.Top, _2DGAMELIB.Range.ZeroOne, disUnit, Color.FromArgb(alpha, Col.Yellow.Add(180, 0, 0)), Col.Red.Add(180, 0, 0), Color.FromArgb(alpha, Color.Gray), Color.FromArgb(alpha, Color.Gray), Color.FromArgb(alpha, Col.Black), Knob: false);
-    			精力mゲージ.Frame1.Pen = null;
+    			精力mゲージ.Frame1.SetPen(null);
     			射精mゲージ = new Gau("射精", Are.GetPosition(new Vector2D(0.060000000000000005.Inverse(), 0.5)), Are.Size, 0.01, Are.YRatio * 0.98, 0.02, Open.Top, _2DGAMELIB.Range.ZeroOne, disUnit, Color.FromArgb(alpha, Col.DeepPink.Add(180, 0, 0)), Col.White.Add(180, 0, 0), Color.FromArgb(alpha, Color.Gray), Color.FromArgb(alpha, Color.Gray), Color.Transparent, Knob: false);
-    			射精mゲージ.Frame1.Pen = null;
-    			射精mゲージ.Gauge.Pen = null;
+    			射精mゲージ.Frame1.SetPen(null);
+    			射精mゲージ.Gauge.SetPen(null);
     			興奮mゲージ = new Gau("興奮", Are.GetPosition(new Vector2D(0.060000000000000005.Inverse(), 0.5)), Are.Size, 0.025, Are.YRatio * 0.98, 0.02, Open.Top, _2DGAMELIB.Range.ZeroOne, disUnit, Color.FromArgb(180, Col.White), Color.FromArgb(180, Color.Red), Color.FromArgb(alpha, Color.Gray), Color.FromArgb(alpha, Color.Gray), Color.FromArgb(alpha, Col.Black), Knob: false);
-    			興奮mゲージ.Frame1.Pen = null;
-    			興奮mゲージ.Gauge.Pen = null;
+    			興奮mゲージ.Frame1.SetPen(null);
+    			興奮mゲージ.Gauge.SetPen(null);
     			Color c = Med.GetUniqueColor();
     			foreach (Par item in 体力sゲージ.Pars.EnumAllPar())
     			{
-    				item.HitColor = c;
+    				item.SetHitColor(c);
     			}
     			Med.GetUniqueColor(out c);
     			foreach (Par item2 in 絶頂sゲージ.Pars.EnumAllPar())
     			{
-    				item2.HitColor = c;
+    				item2.SetHitColor(c);
     			}
     			Med.GetUniqueColor(out c);
     			foreach (Par item3 in 興奮sゲージ.Pars.EnumAllPar())
     			{
-    				item3.HitColor = c;
+    				item3.SetHitColor(c);
     			}
     			Med.GetUniqueColor(out c);
     			foreach (Par item4 in 精力mゲージ.Pars.EnumAllPar())
     			{
-    				item4.HitColor = c;
+    				item4.SetHitColor(c);
     			}
     			Med.GetUniqueColor(out c);
     			foreach (Par item5 in 射精mゲージ.Pars.EnumAllPar())
     			{
-    				item5.HitColor = c;
+    				item5.SetHitColor(c);
     			}
     			Med.GetUniqueColor(out c);
     			foreach (Par item6 in 興奮mゲージ.Pars.EnumAllPar())
     			{
-    				item6.HitColor = c;
+    				item6.SetHitColor(c);
     			}
     			体力sゲージ.Value = 1.0;
     			絶頂sゲージ.Value = 0.0;
@@ -3069,20 +3070,20 @@ namespace SlaveMatrix
     		}
     		ParT parT = new ParT();
     		parT.Text = "SlaveStamina";
-    		parT.SizeBase = 0.095;
-    		parT.Font = new Font("MS Gothic", 1f);
-    		parT.FontSize = 0.07;
+    		parT.SetSizeBase(0.095);
+    		parT.SetFont(new Font("MS Gothic", 1f));
+    		parT.SetFontSize(0.07);
     		parT.SetStringRectOutline(Are.UnitScale, Are.DisplayGraphics);
-    		parT.RectSize = new Vector2D(parT.OP[0].ps[1].X, parT.OP[0].ps[2].Y);
-    		parT.OP.ScalingY(parT.BasePointBase, 0.9);
-    		parT.Closed = true;
-    		parT.TextColor = Col.Black;
-    		parT.BrushColor = Color.FromArgb(160, Col.Black);
-    		parT.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    		parT.HitColor = Med.GetUniqueColor();
-    		parT.StringFormat.Alignment = StringAlignment.Center;
-    		parT.StringFormat.LineAlignment = StringAlignment.Center;
-    		parT.PositionBase = Are.GetPosition(x, y);
+    		parT.SetRectSize(new Vector2D(parT.GetOP()[0].ps[1].X, parT.GetOP()[0].ps[2].Y));
+    		parT.GetOP().ScalingY(parT.GetBasePointBase(), 0.9);
+    		parT.SetClosed(true);
+    		parT.SetTextColor(Col.Black);
+    		parT.SetBrushColor(Color.FromArgb(160, Col.Black));
+    		parT.SetShadBrush(new SolidBrush(Color.FromArgb(64, Col.Black)));
+    		parT.SetHitColor(Med.GetUniqueColor());
+    		parT.GetStringFormat().Alignment = StringAlignment.Center;
+    		parT.GetStringFormat().LineAlignment = StringAlignment.Center;
+    		parT.SetPositionBase(Are.GetPosition(x, y));
     		SlaveStamina = new But1(parT, delegate
     		{
     			//Sounds.操作.Play();
@@ -3091,20 +3092,20 @@ namespace SlaveMatrix
     		});
     		ParT parT2 = new ParT();
     		parT2.Text = "PlayerStamina";
-    		parT2.SizeBase = 0.095;
-    		parT2.Font = new Font("MS Gothic", 1f);
-    		parT2.FontSize = 0.07;
+    		parT2.SetSizeBase(0.095);
+    		parT2.SetFont(new Font("MS Gothic", 1f));
+    		parT2.SetFontSize(0.07);
     		parT2.SetStringRectOutline(Are.UnitScale, Are.DisplayGraphics);
-    		parT2.RectSize = new Vector2D(parT2.OP[0].ps[1].X, parT2.OP[0].ps[2].Y);
-    		parT2.OP.ScalingY(parT2.BasePointBase, 0.9);
-    		parT2.Closed = true;
-    		parT2.TextColor = Col.Black;
-    		parT2.BrushColor = Color.FromArgb(160, Col.Black);
-    		parT2.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
-    		parT2.HitColor = Med.GetUniqueColor();
-    		parT2.StringFormat.Alignment = StringAlignment.Center;
-    		parT2.StringFormat.LineAlignment = StringAlignment.Center;
-    		parT2.PositionBase = parT.PositionBase.AddY(0.015);
+    		parT2.SetRectSize(new Vector2D(parT2.GetOP()[0].ps[1].X, parT2.GetOP()[0].ps[2].Y));
+    		parT2.GetOP().ScalingY(parT2.GetBasePointBase(), 0.9);
+    		parT2.SetClosed(true);
+    		parT2.SetTextColor(Col.Black);
+    		parT2.SetBrushColor(Color.FromArgb(160, Col.Black));
+    		parT2.SetShadBrush(new SolidBrush(Color.FromArgb(64, Col.Black)));
+    		parT2.SetHitColor(Med.GetUniqueColor());
+    		parT2.GetStringFormat().Alignment = StringAlignment.Center;
+    		parT2.GetStringFormat().LineAlignment = StringAlignment.Center;
+    		parT2.SetPositionBase(parT.GetPositionBase().AddY(0.015));
     		PlayerStamina = new But1(parT2, delegate
     		{
     			//Sounds.操作.Play();

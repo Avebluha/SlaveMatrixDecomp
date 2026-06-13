@@ -1,4 +1,5 @@
 using _2DGAMELIB;
+using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
@@ -23,7 +24,7 @@ namespace SlaveMatrix
     		set
     		{
     			欠損_ = value;
-    			Body.IndexY = (欠損_ ? 1 : 0);
+    			Body.SetIndexY((欠損_ ? 1 : 0));
     		}
     	}
 
@@ -94,12 +95,12 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return X0Y0_飛膜.OP[右 ? 5 : 3].Outline;
+    			return X0Y0_飛膜.GetOP()[右 ? 5 : 3].Outline;
     		}
     		set
     		{
-    			X0Y0_飛膜.OP[右 ? 5 : 3].Outline = value;
-    			X0Y1_飛膜.OP[右 ? 39 : 3].Outline = value;
+    			X0Y0_飛膜.GetOP()[右 ? 5 : 3].Outline = value;
+    			X0Y1_飛膜.GetOP()[右 ? 39 : 3].Outline = value;
     		}
     	}
 
@@ -122,7 +123,7 @@ namespace SlaveMatrix
 
     	public void 接続(UpperArm_蝙 UpperArm, LowerArm_蝙 LowerArm, 手_蝙 手, bool カーブ)
     	{
-    		if (Body.IndexY == 0)
+    		if (Body.GetIndexY() == 0)
     		{
     			if (右 || 反転X_ || 反転Y_)
     			{
@@ -145,262 +146,262 @@ namespace SlaveMatrix
 
     	private void 通常接続左(UpperArm_蝙 UpperArm, LowerArm_蝙 LowerArm, 手_蝙 手, bool カーブ)
     	{
-    		Vector2D value = X0Y0_飛膜.ToLocal(手.X0Y0_人指_指3.Position);
-    		Vector2D vector2D = X0Y0_飛膜.ToLocal(手.X0Y0_親指_指1.Position);
-    		X0Y0_飛膜.OP[0].ps[0] = value;
-    		X0Y0_飛膜.OP[0].ps[2] = X0Y0_飛膜.ToLocal(手.X0Y0_人指_指2.Position);
-    		X0Y0_飛膜.OP[0].ps[1] = (X0Y0_飛膜.OP[0].ps[0] + X0Y0_飛膜.OP[0].ps[2]) * 0.5;
-    		X0Y0_飛膜.OP[1].ps[0] = X0Y0_飛膜.OP[0].ps[2];
-    		X0Y0_飛膜.OP[1].ps[2] = X0Y0_飛膜.ToLocal(手.X0Y0_親指_指2.Position);
-    		X0Y0_飛膜.OP[1].ps[1] = (X0Y0_飛膜.OP[1].ps[0] + X0Y0_飛膜.OP[1].ps[2]) * 0.5;
-    		X0Y0_飛膜.OP[1].ps[1] += (vector2D - X0Y0_飛膜.OP[1].ps[1]) * 0.3;
-    		X0Y0_飛膜.OP[2].ps[0] = X0Y0_飛膜.OP[1].ps[2];
+    		Vector2D value = X0Y0_飛膜.ToLocal(手.X0Y0_人指_指3.GetPosition());
+    		Vector2D vector2D = X0Y0_飛膜.ToLocal(手.X0Y0_親指_指1.GetPosition());
+    		X0Y0_飛膜.GetOP()[0].ps[0] = value;
+    		X0Y0_飛膜.GetOP()[0].ps[2] = X0Y0_飛膜.ToLocal(手.X0Y0_人指_指2.GetPosition());
+    		X0Y0_飛膜.GetOP()[0].ps[1] = (X0Y0_飛膜.GetOP()[0].ps[0] + X0Y0_飛膜.GetOP()[0].ps[2]) * 0.5;
+    		X0Y0_飛膜.GetOP()[1].ps[0] = X0Y0_飛膜.GetOP()[0].ps[2];
+    		X0Y0_飛膜.GetOP()[1].ps[2] = X0Y0_飛膜.ToLocal(手.X0Y0_親指_指2.GetPosition());
+    		X0Y0_飛膜.GetOP()[1].ps[1] = (X0Y0_飛膜.GetOP()[1].ps[0] + X0Y0_飛膜.GetOP()[1].ps[2]) * 0.5;
+    		X0Y0_飛膜.GetOP()[1].ps[1] += (vector2D - X0Y0_飛膜.GetOP()[1].ps[1]) * 0.3;
+    		X0Y0_飛膜.GetOP()[2].ps[0] = X0Y0_飛膜.GetOP()[1].ps[2];
     		if (UpperArm == null)
     		{
     			if (LowerArm == null)
     			{
-    				X0Y0_飛膜.OP[2].ps[3] = X0Y0_飛膜.ToLocal(手.X0Y0_獣翼手.Position);
+    				X0Y0_飛膜.GetOP()[2].ps[3] = X0Y0_飛膜.ToLocal(手.X0Y0_獣翼手.GetPosition());
     			}
     			else
     			{
-    				X0Y0_飛膜.OP[2].ps[3] = X0Y0_飛膜.ToLocal(LowerArm.X0Y0_獣翼LowerArm.Position);
+    				X0Y0_飛膜.GetOP()[2].ps[3] = X0Y0_飛膜.ToLocal(LowerArm.X0Y0_獣翼LowerArm.GetPosition());
     			}
-    			Vector2D vector2D2 = (X0Y0_飛膜.OP[2].ps[0] + X0Y0_飛膜.OP[2].ps[3]) * 0.5;
-    			X0Y0_飛膜.OP[2].ps[1] = vector2D2 + (X0Y0_飛膜.OP[2].ps[0] - X0Y0_飛膜.OP[2].ps[3]) * 0.8;
-    			X0Y0_飛膜.OP[2].ps[2] = vector2D2 + (X0Y0_飛膜.OP[2].ps[0] - X0Y0_飛膜.OP[2].ps[3]) * 0.4;
-    			X0Y0_飛膜.OP[2].ps[1] += (vector2D - X0Y0_飛膜.OP[2].ps[1]) * 0.3;
-    			X0Y0_飛膜.OP[2].ps[2] += (vector2D - X0Y0_飛膜.OP[2].ps[2]) * 0.3;
+    			Vector2D vector2D2 = (X0Y0_飛膜.GetOP()[2].ps[0] + X0Y0_飛膜.GetOP()[2].ps[3]) * 0.5;
+    			X0Y0_飛膜.GetOP()[2].ps[1] = vector2D2 + (X0Y0_飛膜.GetOP()[2].ps[0] - X0Y0_飛膜.GetOP()[2].ps[3]) * 0.8;
+    			X0Y0_飛膜.GetOP()[2].ps[2] = vector2D2 + (X0Y0_飛膜.GetOP()[2].ps[0] - X0Y0_飛膜.GetOP()[2].ps[3]) * 0.4;
+    			X0Y0_飛膜.GetOP()[2].ps[1] += (vector2D - X0Y0_飛膜.GetOP()[2].ps[1]) * 0.3;
+    			X0Y0_飛膜.GetOP()[2].ps[2] += (vector2D - X0Y0_飛膜.GetOP()[2].ps[2]) * 0.3;
     		}
     		else
     		{
     			if (UpperArm.ConnectionType == ConnectionInfo.Shoulder_UpperArm_接続)
     			{
-    				X0Y0_飛膜.OP[2].ps[3] = X0Y0_飛膜.ToLocal(UpperArm.X0Y0_獣翼UpperArm.ToGlobal(UpperArm.X0Y0_獣翼UpperArm.OP[3].ps[1]));
+    				X0Y0_飛膜.GetOP()[2].ps[3] = X0Y0_飛膜.ToLocal(UpperArm.X0Y0_獣翼UpperArm.ToGlobal(UpperArm.X0Y0_獣翼UpperArm.GetOP()[3].ps[1]));
     			}
     			else
     			{
-    				X0Y0_飛膜.OP[2].ps[3] = X0Y0_飛膜.ToLocal(UpperArm.X0Y0_獣翼UpperArm.ToGlobal(UpperArm.X0Y0_獣翼UpperArm.OP[3].ps[1].AddY(0.003)));
+    				X0Y0_飛膜.GetOP()[2].ps[3] = X0Y0_飛膜.ToLocal(UpperArm.X0Y0_獣翼UpperArm.ToGlobal(UpperArm.X0Y0_獣翼UpperArm.GetOP()[3].ps[1].AddY(0.003)));
     			}
-    			Vector2D vector2D3 = (X0Y0_飛膜.OP[2].ps[0] + X0Y0_飛膜.OP[2].ps[3]) * 0.5;
-    			X0Y0_飛膜.OP[2].ps[1] = (X0Y0_飛膜.OP[2].ps[0] + vector2D3) * 0.5;
-    			X0Y0_飛膜.OP[2].ps[2] = (vector2D3 + X0Y0_飛膜.OP[2].ps[3]) * 0.5;
+    			Vector2D vector2D3 = (X0Y0_飛膜.GetOP()[2].ps[0] + X0Y0_飛膜.GetOP()[2].ps[3]) * 0.5;
+    			X0Y0_飛膜.GetOP()[2].ps[1] = (X0Y0_飛膜.GetOP()[2].ps[0] + vector2D3) * 0.5;
+    			X0Y0_飛膜.GetOP()[2].ps[2] = (vector2D3 + X0Y0_飛膜.GetOP()[2].ps[3]) * 0.5;
     		}
     		if (LowerArm == null)
     		{
-    			Vector2D vector2D4 = X0Y0_飛膜.ToLocal(手.X0Y0_獣翼手.Position);
-    			X0Y0_飛膜.OP[2].ps[1] += (vector2D4 - X0Y0_飛膜.OP[2].ps[1]) * 0.3;
-    			X0Y0_飛膜.OP[2].ps[2] += (vector2D4 - X0Y0_飛膜.OP[2].ps[2]) * 0.3;
+    			Vector2D vector2D4 = X0Y0_飛膜.ToLocal(手.X0Y0_獣翼手.GetPosition());
+    			X0Y0_飛膜.GetOP()[2].ps[1] += (vector2D4 - X0Y0_飛膜.GetOP()[2].ps[1]) * 0.3;
+    			X0Y0_飛膜.GetOP()[2].ps[2] += (vector2D4 - X0Y0_飛膜.GetOP()[2].ps[2]) * 0.3;
     		}
     		else
     		{
-    			Vector2D vector2D5 = X0Y0_飛膜.ToLocal(LowerArm.X0Y0_獣翼LowerArm.Position);
-    			X0Y0_飛膜.OP[2].ps[1] += (vector2D5 - X0Y0_飛膜.OP[2].ps[1]) * 0.3;
-    			X0Y0_飛膜.OP[2].ps[2] += (vector2D5 - X0Y0_飛膜.OP[2].ps[2]) * 0.3;
+    			Vector2D vector2D5 = X0Y0_飛膜.ToLocal(LowerArm.X0Y0_獣翼LowerArm.GetPosition());
+    			X0Y0_飛膜.GetOP()[2].ps[1] += (vector2D5 - X0Y0_飛膜.GetOP()[2].ps[1]) * 0.3;
+    			X0Y0_飛膜.GetOP()[2].ps[2] += (vector2D5 - X0Y0_飛膜.GetOP()[2].ps[2]) * 0.3;
     		}
     		if (UpperArm.ConnectionType != ConnectionInfo.Shoulder_UpperArm_接続)
     		{
-    			X0Y0_飛膜.OP[3].ps[0] = X0Y0_飛膜.OP[2].ps[3];
+    			X0Y0_飛膜.GetOP()[3].ps[0] = X0Y0_飛膜.GetOP()[2].ps[3];
     		}
     		else
     		{
-    			X0Y0_飛膜.OP[3].ps[0] = X0Y0_飛膜.OP[2].ps[3].AddY(0.05);
+    			X0Y0_飛膜.GetOP()[3].ps[0] = X0Y0_飛膜.GetOP()[2].ps[3].AddY(0.05);
     		}
-    		X0Y0_飛膜.OP[3].ps[2] = X0Y0_飛膜.ToLocal(手.X0Y0_小指_指3.ToGlobal(手.X0Y0_小指_指3.OP[0].ps[0]));
-    		X0Y0_飛膜.OP[3].ps[1] = (X0Y0_飛膜.OP[3].ps[0] + X0Y0_飛膜.OP[3].ps[2]) * 0.5;
-    		X0Y0_飛膜.OP[3].ps[1] += (X0Y0_飛膜.ToLocal(手.X0Y0_人指_指1.Position) - X0Y0_飛膜.OP[3].ps[1]) * 0.07;
+    		X0Y0_飛膜.GetOP()[3].ps[2] = X0Y0_飛膜.ToLocal(手.X0Y0_小指_指3.ToGlobal(手.X0Y0_小指_指3.GetOP()[0].ps[0]));
+    		X0Y0_飛膜.GetOP()[3].ps[1] = (X0Y0_飛膜.GetOP()[3].ps[0] + X0Y0_飛膜.GetOP()[3].ps[2]) * 0.5;
+    		X0Y0_飛膜.GetOP()[3].ps[1] += (X0Y0_飛膜.ToLocal(手.X0Y0_人指_指1.GetPosition()) - X0Y0_飛膜.GetOP()[3].ps[1]) * 0.07;
     		if (カーブ)
     		{
-    			X0Y0_飛膜.OP[3].ps[1] = (X0Y0_飛膜.OP[3].ps[0] + X0Y0_飛膜.OP[3].ps[2]) * 0.5;
-    			X0Y0_飛膜.OP[3].ps[1] += (X0Y0_飛膜.ToLocal(手.X0Y0_小指_指1.ToGlobal(手.X0Y0_小指_指1.JP[0].Joint)) - X0Y0_飛膜.OP[3].ps[1]) * 0.4;
+    			X0Y0_飛膜.GetOP()[3].ps[1] = (X0Y0_飛膜.GetOP()[3].ps[0] + X0Y0_飛膜.GetOP()[3].ps[2]) * 0.5;
+    			X0Y0_飛膜.GetOP()[3].ps[1] += (X0Y0_飛膜.ToLocal(手.X0Y0_小指_指1.ToGlobal(手.X0Y0_小指_指1.GetJP()[0].Joint)) - X0Y0_飛膜.GetOP()[3].ps[1]) * 0.4;
     		}
-    		X0Y0_飛膜.OP[4].ps[0] = X0Y0_飛膜.OP[3].ps[2];
-    		X0Y0_飛膜.OP[4].ps[2] = X0Y0_飛膜.ToLocal(手.X0Y0_薬指_指3.ToGlobal(手.X0Y0_薬指_指3.OP[0].ps[0]));
-    		X0Y0_飛膜.OP[4].ps[1] = (X0Y0_飛膜.OP[4].ps[0] + X0Y0_飛膜.OP[4].ps[2]) * 0.5;
-    		X0Y0_飛膜.OP[4].ps[1] += (X0Y0_飛膜.ToLocal(手.X0Y0_薬指_指1.Position) - X0Y0_飛膜.OP[4].ps[1]) * 0.08;
-    		X0Y0_飛膜.OP[5].ps[0] = X0Y0_飛膜.OP[4].ps[2];
-    		X0Y0_飛膜.OP[5].ps[2] = X0Y0_飛膜.ToLocal(手.X0Y0_中指_指3.ToGlobal(手.X0Y0_中指_指3.OP[0].ps[0]));
-    		X0Y0_飛膜.OP[5].ps[1] = (X0Y0_飛膜.OP[5].ps[0] + X0Y0_飛膜.OP[5].ps[2]) * 0.5;
-    		X0Y0_飛膜.OP[5].ps[1] += (X0Y0_飛膜.ToLocal(手.X0Y0_中指_指1.Position) - X0Y0_飛膜.OP[5].ps[1]) * 0.07;
-    		X0Y0_飛膜.OP[6].ps[0] = X0Y0_飛膜.OP[5].ps[2];
-    		X0Y0_飛膜.OP[6].ps[2] = X0Y0_飛膜.ToLocal(手.X0Y0_中指_指3.Position);
-    		X0Y0_飛膜.OP[6].ps[1] = X0Y0_飛膜.ToLocal(手.X0Y0_中指_指3.ToGlobal(手.X0Y0_中指_指3.OP[0].ps[1]));
-    		X0Y0_飛膜.OP[7].ps[0] = X0Y0_飛膜.OP[6].ps[2];
-    		X0Y0_飛膜.OP[7].ps[2] = X0Y0_飛膜.ToLocal(手.X0Y0_人指_指3.ToGlobal(手.X0Y0_人指_指3.OP[0].ps[0]));
-    		X0Y0_飛膜.OP[7].ps[1] = (X0Y0_飛膜.OP[7].ps[0] + X0Y0_飛膜.OP[7].ps[2]) * 0.5;
-    		X0Y0_飛膜.OP[7].ps[1] += (X0Y0_飛膜.ToLocal(手.X0Y0_人指_指1.Position) - X0Y0_飛膜.OP[7].ps[1]) * 0.08;
-    		X0Y0_飛膜.OP[8].ps[0] = X0Y0_飛膜.OP[7].ps[2];
-    		X0Y0_飛膜.OP[8].ps[2] = value;
-    		X0Y0_飛膜.OP[8].ps[1] = X0Y0_飛膜.ToLocal(手.X0Y0_人指_指3.ToGlobal(手.X0Y0_人指_指3.OP[0].ps[1]));
+    		X0Y0_飛膜.GetOP()[4].ps[0] = X0Y0_飛膜.GetOP()[3].ps[2];
+    		X0Y0_飛膜.GetOP()[4].ps[2] = X0Y0_飛膜.ToLocal(手.X0Y0_薬指_指3.ToGlobal(手.X0Y0_薬指_指3.GetOP()[0].ps[0]));
+    		X0Y0_飛膜.GetOP()[4].ps[1] = (X0Y0_飛膜.GetOP()[4].ps[0] + X0Y0_飛膜.GetOP()[4].ps[2]) * 0.5;
+    		X0Y0_飛膜.GetOP()[4].ps[1] += (X0Y0_飛膜.ToLocal(手.X0Y0_薬指_指1.GetPosition()) - X0Y0_飛膜.GetOP()[4].ps[1]) * 0.08;
+    		X0Y0_飛膜.GetOP()[5].ps[0] = X0Y0_飛膜.GetOP()[4].ps[2];
+    		X0Y0_飛膜.GetOP()[5].ps[2] = X0Y0_飛膜.ToLocal(手.X0Y0_中指_指3.ToGlobal(手.X0Y0_中指_指3.GetOP()[0].ps[0]));
+    		X0Y0_飛膜.GetOP()[5].ps[1] = (X0Y0_飛膜.GetOP()[5].ps[0] + X0Y0_飛膜.GetOP()[5].ps[2]) * 0.5;
+    		X0Y0_飛膜.GetOP()[5].ps[1] += (X0Y0_飛膜.ToLocal(手.X0Y0_中指_指1.GetPosition()) - X0Y0_飛膜.GetOP()[5].ps[1]) * 0.07;
+    		X0Y0_飛膜.GetOP()[6].ps[0] = X0Y0_飛膜.GetOP()[5].ps[2];
+    		X0Y0_飛膜.GetOP()[6].ps[2] = X0Y0_飛膜.ToLocal(手.X0Y0_中指_指3.GetPosition());
+    		X0Y0_飛膜.GetOP()[6].ps[1] = X0Y0_飛膜.ToLocal(手.X0Y0_中指_指3.ToGlobal(手.X0Y0_中指_指3.GetOP()[0].ps[1]));
+    		X0Y0_飛膜.GetOP()[7].ps[0] = X0Y0_飛膜.GetOP()[6].ps[2];
+    		X0Y0_飛膜.GetOP()[7].ps[2] = X0Y0_飛膜.ToLocal(手.X0Y0_人指_指3.ToGlobal(手.X0Y0_人指_指3.GetOP()[0].ps[0]));
+    		X0Y0_飛膜.GetOP()[7].ps[1] = (X0Y0_飛膜.GetOP()[7].ps[0] + X0Y0_飛膜.GetOP()[7].ps[2]) * 0.5;
+    		X0Y0_飛膜.GetOP()[7].ps[1] += (X0Y0_飛膜.ToLocal(手.X0Y0_人指_指1.GetPosition()) - X0Y0_飛膜.GetOP()[7].ps[1]) * 0.08;
+    		X0Y0_飛膜.GetOP()[8].ps[0] = X0Y0_飛膜.GetOP()[7].ps[2];
+    		X0Y0_飛膜.GetOP()[8].ps[2] = value;
+    		X0Y0_飛膜.GetOP()[8].ps[1] = X0Y0_飛膜.ToLocal(手.X0Y0_人指_指3.ToGlobal(手.X0Y0_人指_指3.GetOP()[0].ps[1]));
     	}
 
     	private void 通常接続右(UpperArm_蝙 UpperArm, LowerArm_蝙 LowerArm, 手_蝙 手, bool カーブ)
     	{
-    		Vector2D value = X0Y0_飛膜.ToLocal(手.X0Y0_人指_指3.Position);
-    		Vector2D vector2D = X0Y0_飛膜.ToLocal(手.X0Y0_親指_指1.Position);
-    		X0Y0_飛膜.OP[8].ps[2] = value;
-    		X0Y0_飛膜.OP[8].ps[0] = X0Y0_飛膜.ToLocal(手.X0Y0_人指_指2.Position);
-    		X0Y0_飛膜.OP[8].ps[1] = (X0Y0_飛膜.OP[8].ps[2] + X0Y0_飛膜.OP[8].ps[0]) * 0.5;
-    		X0Y0_飛膜.OP[7].ps[2] = X0Y0_飛膜.OP[8].ps[0];
-    		X0Y0_飛膜.OP[7].ps[0] = X0Y0_飛膜.ToLocal(手.X0Y0_親指_指2.Position);
-    		X0Y0_飛膜.OP[7].ps[1] = (X0Y0_飛膜.OP[7].ps[2] + X0Y0_飛膜.OP[7].ps[0]) * 0.5;
-    		X0Y0_飛膜.OP[7].ps[1] += (vector2D - X0Y0_飛膜.OP[7].ps[1]) * 0.3;
-    		X0Y0_飛膜.OP[6].ps[3] = X0Y0_飛膜.OP[7].ps[0];
+    		Vector2D value = X0Y0_飛膜.ToLocal(手.X0Y0_人指_指3.GetPosition());
+    		Vector2D vector2D = X0Y0_飛膜.ToLocal(手.X0Y0_親指_指1.GetPosition());
+    		X0Y0_飛膜.GetOP()[8].ps[2] = value;
+    		X0Y0_飛膜.GetOP()[8].ps[0] = X0Y0_飛膜.ToLocal(手.X0Y0_人指_指2.GetPosition());
+    		X0Y0_飛膜.GetOP()[8].ps[1] = (X0Y0_飛膜.GetOP()[8].ps[2] + X0Y0_飛膜.GetOP()[8].ps[0]) * 0.5;
+    		X0Y0_飛膜.GetOP()[7].ps[2] = X0Y0_飛膜.GetOP()[8].ps[0];
+    		X0Y0_飛膜.GetOP()[7].ps[0] = X0Y0_飛膜.ToLocal(手.X0Y0_親指_指2.GetPosition());
+    		X0Y0_飛膜.GetOP()[7].ps[1] = (X0Y0_飛膜.GetOP()[7].ps[2] + X0Y0_飛膜.GetOP()[7].ps[0]) * 0.5;
+    		X0Y0_飛膜.GetOP()[7].ps[1] += (vector2D - X0Y0_飛膜.GetOP()[7].ps[1]) * 0.3;
+    		X0Y0_飛膜.GetOP()[6].ps[3] = X0Y0_飛膜.GetOP()[7].ps[0];
     		if (UpperArm == null)
     		{
     			if (LowerArm == null)
     			{
-    				X0Y0_飛膜.OP[6].ps[0] = X0Y0_飛膜.ToLocal(手.X0Y0_獣翼手.Position);
+    				X0Y0_飛膜.GetOP()[6].ps[0] = X0Y0_飛膜.ToLocal(手.X0Y0_獣翼手.GetPosition());
     			}
     			else
     			{
-    				X0Y0_飛膜.OP[6].ps[0] = X0Y0_飛膜.ToLocal(LowerArm.X0Y0_獣翼LowerArm.Position);
+    				X0Y0_飛膜.GetOP()[6].ps[0] = X0Y0_飛膜.ToLocal(LowerArm.X0Y0_獣翼LowerArm.GetPosition());
     			}
-    			Vector2D vector2D2 = (X0Y0_飛膜.OP[6].ps[3] + X0Y0_飛膜.OP[6].ps[0]) * 0.5;
-    			X0Y0_飛膜.OP[6].ps[2] = vector2D2 + (X0Y0_飛膜.OP[6].ps[3] - X0Y0_飛膜.OP[6].ps[0]) * 0.8;
-    			X0Y0_飛膜.OP[6].ps[1] = vector2D2 + (X0Y0_飛膜.OP[6].ps[3] - X0Y0_飛膜.OP[6].ps[0]) * 0.4;
-    			X0Y0_飛膜.OP[6].ps[2] += (vector2D - X0Y0_飛膜.OP[6].ps[2]) * 0.3;
-    			X0Y0_飛膜.OP[6].ps[1] += (vector2D - X0Y0_飛膜.OP[6].ps[1]) * 0.3;
+    			Vector2D vector2D2 = (X0Y0_飛膜.GetOP()[6].ps[3] + X0Y0_飛膜.GetOP()[6].ps[0]) * 0.5;
+    			X0Y0_飛膜.GetOP()[6].ps[2] = vector2D2 + (X0Y0_飛膜.GetOP()[6].ps[3] - X0Y0_飛膜.GetOP()[6].ps[0]) * 0.8;
+    			X0Y0_飛膜.GetOP()[6].ps[1] = vector2D2 + (X0Y0_飛膜.GetOP()[6].ps[3] - X0Y0_飛膜.GetOP()[6].ps[0]) * 0.4;
+    			X0Y0_飛膜.GetOP()[6].ps[2] += (vector2D - X0Y0_飛膜.GetOP()[6].ps[2]) * 0.3;
+    			X0Y0_飛膜.GetOP()[6].ps[1] += (vector2D - X0Y0_飛膜.GetOP()[6].ps[1]) * 0.3;
     		}
     		else
     		{
     			if (UpperArm.ConnectionType == ConnectionInfo.Shoulder_UpperArm_接続)
     			{
-    				X0Y0_飛膜.OP[6].ps[0] = X0Y0_飛膜.ToLocal(UpperArm.X0Y0_獣翼UpperArm.ToGlobal(UpperArm.X0Y0_獣翼UpperArm.OP[0].ps[4]));
+    				X0Y0_飛膜.GetOP()[6].ps[0] = X0Y0_飛膜.ToLocal(UpperArm.X0Y0_獣翼UpperArm.ToGlobal(UpperArm.X0Y0_獣翼UpperArm.GetOP()[0].ps[4]));
     			}
     			else
     			{
-    				X0Y0_飛膜.OP[6].ps[0] = X0Y0_飛膜.ToLocal(UpperArm.X0Y0_獣翼UpperArm.ToGlobal(UpperArm.X0Y0_獣翼UpperArm.OP[0].ps[4].AddY(0.003)));
+    				X0Y0_飛膜.GetOP()[6].ps[0] = X0Y0_飛膜.ToLocal(UpperArm.X0Y0_獣翼UpperArm.ToGlobal(UpperArm.X0Y0_獣翼UpperArm.GetOP()[0].ps[4].AddY(0.003)));
     			}
-    			Vector2D vector2D3 = (X0Y0_飛膜.OP[6].ps[3] + X0Y0_飛膜.OP[6].ps[0]) * 0.5;
-    			X0Y0_飛膜.OP[6].ps[2] = (X0Y0_飛膜.OP[6].ps[3] + vector2D3) * 0.5;
-    			X0Y0_飛膜.OP[6].ps[1] = (vector2D3 + X0Y0_飛膜.OP[6].ps[0]) * 0.5;
+    			Vector2D vector2D3 = (X0Y0_飛膜.GetOP()[6].ps[3] + X0Y0_飛膜.GetOP()[6].ps[0]) * 0.5;
+    			X0Y0_飛膜.GetOP()[6].ps[2] = (X0Y0_飛膜.GetOP()[6].ps[3] + vector2D3) * 0.5;
+    			X0Y0_飛膜.GetOP()[6].ps[1] = (vector2D3 + X0Y0_飛膜.GetOP()[6].ps[0]) * 0.5;
     		}
     		if (LowerArm == null)
     		{
-    			Vector2D vector2D4 = X0Y0_飛膜.ToLocal(手.X0Y0_獣翼手.Position);
-    			X0Y0_飛膜.OP[6].ps[2] += (vector2D4 - X0Y0_飛膜.OP[6].ps[2]) * 0.3;
-    			X0Y0_飛膜.OP[6].ps[1] += (vector2D4 - X0Y0_飛膜.OP[6].ps[1]) * 0.3;
+    			Vector2D vector2D4 = X0Y0_飛膜.ToLocal(手.X0Y0_獣翼手.GetPosition());
+    			X0Y0_飛膜.GetOP()[6].ps[2] += (vector2D4 - X0Y0_飛膜.GetOP()[6].ps[2]) * 0.3;
+    			X0Y0_飛膜.GetOP()[6].ps[1] += (vector2D4 - X0Y0_飛膜.GetOP()[6].ps[1]) * 0.3;
     		}
     		else
     		{
-    			Vector2D vector2D5 = X0Y0_飛膜.ToLocal(LowerArm.X0Y0_獣翼LowerArm.Position);
-    			X0Y0_飛膜.OP[6].ps[2] += (vector2D5 - X0Y0_飛膜.OP[6].ps[2]) * 0.3;
-    			X0Y0_飛膜.OP[6].ps[1] += (vector2D5 - X0Y0_飛膜.OP[6].ps[1]) * 0.3;
+    			Vector2D vector2D5 = X0Y0_飛膜.ToLocal(LowerArm.X0Y0_獣翼LowerArm.GetPosition());
+    			X0Y0_飛膜.GetOP()[6].ps[2] += (vector2D5 - X0Y0_飛膜.GetOP()[6].ps[2]) * 0.3;
+    			X0Y0_飛膜.GetOP()[6].ps[1] += (vector2D5 - X0Y0_飛膜.GetOP()[6].ps[1]) * 0.3;
     		}
     		if (UpperArm.ConnectionType != ConnectionInfo.Shoulder_UpperArm_接続)
     		{
-    			X0Y0_飛膜.OP[5].ps[2] = X0Y0_飛膜.OP[6].ps[0];
+    			X0Y0_飛膜.GetOP()[5].ps[2] = X0Y0_飛膜.GetOP()[6].ps[0];
     		}
     		else
     		{
-    			X0Y0_飛膜.OP[5].ps[2] = X0Y0_飛膜.OP[6].ps[0].AddY(0.05);
+    			X0Y0_飛膜.GetOP()[5].ps[2] = X0Y0_飛膜.GetOP()[6].ps[0].AddY(0.05);
     		}
-    		X0Y0_飛膜.OP[5].ps[0] = X0Y0_飛膜.ToLocal(手.X0Y0_小指_指3.ToGlobal(手.X0Y0_小指_指3.OP[2].ps[2]));
-    		X0Y0_飛膜.OP[5].ps[1] = (X0Y0_飛膜.OP[5].ps[2] + X0Y0_飛膜.OP[5].ps[0]) * 0.5;
-    		X0Y0_飛膜.OP[5].ps[1] += (X0Y0_飛膜.ToLocal(手.X0Y0_人指_指1.Position) - X0Y0_飛膜.OP[5].ps[1]) * 0.07;
+    		X0Y0_飛膜.GetOP()[5].ps[0] = X0Y0_飛膜.ToLocal(手.X0Y0_小指_指3.ToGlobal(手.X0Y0_小指_指3.GetOP()[2].ps[2]));
+    		X0Y0_飛膜.GetOP()[5].ps[1] = (X0Y0_飛膜.GetOP()[5].ps[2] + X0Y0_飛膜.GetOP()[5].ps[0]) * 0.5;
+    		X0Y0_飛膜.GetOP()[5].ps[1] += (X0Y0_飛膜.ToLocal(手.X0Y0_人指_指1.GetPosition()) - X0Y0_飛膜.GetOP()[5].ps[1]) * 0.07;
     		if (カーブ)
     		{
-    			X0Y0_飛膜.OP[5].ps[1] = (X0Y0_飛膜.OP[5].ps[2] + X0Y0_飛膜.OP[5].ps[0]) * 0.5;
-    			X0Y0_飛膜.OP[5].ps[1] += (X0Y0_飛膜.ToLocal(手.X0Y0_小指_指1.ToGlobal(手.X0Y0_小指_指1.JP[0].Joint)) - X0Y0_飛膜.OP[5].ps[1]) * 0.4;
+    			X0Y0_飛膜.GetOP()[5].ps[1] = (X0Y0_飛膜.GetOP()[5].ps[2] + X0Y0_飛膜.GetOP()[5].ps[0]) * 0.5;
+    			X0Y0_飛膜.GetOP()[5].ps[1] += (X0Y0_飛膜.ToLocal(手.X0Y0_小指_指1.ToGlobal(手.X0Y0_小指_指1.GetJP()[0].Joint)) - X0Y0_飛膜.GetOP()[5].ps[1]) * 0.4;
     		}
-    		X0Y0_飛膜.OP[4].ps[2] = X0Y0_飛膜.OP[5].ps[0];
-    		X0Y0_飛膜.OP[4].ps[0] = X0Y0_飛膜.ToLocal(手.X0Y0_薬指_指3.ToGlobal(手.X0Y0_薬指_指3.OP[2].ps[2]));
-    		X0Y0_飛膜.OP[4].ps[1] = (X0Y0_飛膜.OP[4].ps[2] + X0Y0_飛膜.OP[4].ps[0]) * 0.5;
-    		X0Y0_飛膜.OP[4].ps[1] += (X0Y0_飛膜.ToLocal(手.X0Y0_薬指_指1.Position) - X0Y0_飛膜.OP[4].ps[1]) * 0.08;
-    		X0Y0_飛膜.OP[3].ps[2] = X0Y0_飛膜.OP[4].ps[0];
-    		X0Y0_飛膜.OP[3].ps[0] = X0Y0_飛膜.ToLocal(手.X0Y0_中指_指3.ToGlobal(手.X0Y0_中指_指3.OP[2].ps[2]));
-    		X0Y0_飛膜.OP[3].ps[1] = (X0Y0_飛膜.OP[3].ps[2] + X0Y0_飛膜.OP[3].ps[0]) * 0.5;
-    		X0Y0_飛膜.OP[3].ps[1] += (X0Y0_飛膜.ToLocal(手.X0Y0_中指_指1.Position) - X0Y0_飛膜.OP[3].ps[1]) * 0.07;
-    		X0Y0_飛膜.OP[2].ps[2] = X0Y0_飛膜.OP[3].ps[0];
-    		X0Y0_飛膜.OP[2].ps[0] = X0Y0_飛膜.ToLocal(手.X0Y0_中指_指3.Position);
-    		X0Y0_飛膜.OP[2].ps[1] = X0Y0_飛膜.ToLocal(手.X0Y0_中指_指3.ToGlobal(手.X0Y0_中指_指3.OP[2].ps[1]));
-    		X0Y0_飛膜.OP[1].ps[2] = X0Y0_飛膜.OP[2].ps[0];
-    		X0Y0_飛膜.OP[1].ps[0] = X0Y0_飛膜.ToLocal(手.X0Y0_人指_指3.ToGlobal(手.X0Y0_人指_指3.OP[2].ps[2]));
-    		X0Y0_飛膜.OP[1].ps[1] = (X0Y0_飛膜.OP[1].ps[2] + X0Y0_飛膜.OP[1].ps[0]) * 0.5;
-    		X0Y0_飛膜.OP[1].ps[1] += (X0Y0_飛膜.ToLocal(手.X0Y0_人指_指1.Position) - X0Y0_飛膜.OP[1].ps[1]) * 0.08;
-    		X0Y0_飛膜.OP[0].ps[2] = X0Y0_飛膜.OP[1].ps[0];
-    		X0Y0_飛膜.OP[0].ps[0] = value;
-    		X0Y0_飛膜.OP[0].ps[1] = X0Y0_飛膜.ToLocal(手.X0Y0_人指_指3.ToGlobal(手.X0Y0_人指_指3.OP[2].ps[1]));
+    		X0Y0_飛膜.GetOP()[4].ps[2] = X0Y0_飛膜.GetOP()[5].ps[0];
+    		X0Y0_飛膜.GetOP()[4].ps[0] = X0Y0_飛膜.ToLocal(手.X0Y0_薬指_指3.ToGlobal(手.X0Y0_薬指_指3.GetOP()[2].ps[2]));
+    		X0Y0_飛膜.GetOP()[4].ps[1] = (X0Y0_飛膜.GetOP()[4].ps[2] + X0Y0_飛膜.GetOP()[4].ps[0]) * 0.5;
+    		X0Y0_飛膜.GetOP()[4].ps[1] += (X0Y0_飛膜.ToLocal(手.X0Y0_薬指_指1.GetPosition()) - X0Y0_飛膜.GetOP()[4].ps[1]) * 0.08;
+    		X0Y0_飛膜.GetOP()[3].ps[2] = X0Y0_飛膜.GetOP()[4].ps[0];
+    		X0Y0_飛膜.GetOP()[3].ps[0] = X0Y0_飛膜.ToLocal(手.X0Y0_中指_指3.ToGlobal(手.X0Y0_中指_指3.GetOP()[2].ps[2]));
+    		X0Y0_飛膜.GetOP()[3].ps[1] = (X0Y0_飛膜.GetOP()[3].ps[2] + X0Y0_飛膜.GetOP()[3].ps[0]) * 0.5;
+    		X0Y0_飛膜.GetOP()[3].ps[1] += (X0Y0_飛膜.ToLocal(手.X0Y0_中指_指1.GetPosition()) - X0Y0_飛膜.GetOP()[3].ps[1]) * 0.07;
+    		X0Y0_飛膜.GetOP()[2].ps[2] = X0Y0_飛膜.GetOP()[3].ps[0];
+    		X0Y0_飛膜.GetOP()[2].ps[0] = X0Y0_飛膜.ToLocal(手.X0Y0_中指_指3.GetPosition());
+    		X0Y0_飛膜.GetOP()[2].ps[1] = X0Y0_飛膜.ToLocal(手.X0Y0_中指_指3.ToGlobal(手.X0Y0_中指_指3.GetOP()[2].ps[1]));
+    		X0Y0_飛膜.GetOP()[1].ps[2] = X0Y0_飛膜.GetOP()[2].ps[0];
+    		X0Y0_飛膜.GetOP()[1].ps[0] = X0Y0_飛膜.ToLocal(手.X0Y0_人指_指3.ToGlobal(手.X0Y0_人指_指3.GetOP()[2].ps[2]));
+    		X0Y0_飛膜.GetOP()[1].ps[1] = (X0Y0_飛膜.GetOP()[1].ps[2] + X0Y0_飛膜.GetOP()[1].ps[0]) * 0.5;
+    		X0Y0_飛膜.GetOP()[1].ps[1] += (X0Y0_飛膜.ToLocal(手.X0Y0_人指_指1.GetPosition()) - X0Y0_飛膜.GetOP()[1].ps[1]) * 0.08;
+    		X0Y0_飛膜.GetOP()[0].ps[2] = X0Y0_飛膜.GetOP()[1].ps[0];
+    		X0Y0_飛膜.GetOP()[0].ps[0] = value;
+    		X0Y0_飛膜.GetOP()[0].ps[1] = X0Y0_飛膜.ToLocal(手.X0Y0_人指_指3.ToGlobal(手.X0Y0_人指_指3.GetOP()[2].ps[1]));
     	}
 
     	private void 欠損接続左(UpperArm_蝙 UpperArm, LowerArm_蝙 LowerArm, 手_蝙 手, bool カーブ)
     	{
-    		Vector2D value = X0Y1_飛膜.ToLocal(手.X0Y0_人指_指3.Position);
-    		Vector2D vector2D = X0Y1_飛膜.ToLocal(手.X0Y0_親指_指1.Position);
-    		X0Y1_飛膜.OP[0].ps[0] = value;
-    		X0Y1_飛膜.OP[0].ps[2] = X0Y1_飛膜.ToLocal(手.X0Y0_人指_指2.Position);
-    		X0Y1_飛膜.OP[0].ps[1] = (X0Y1_飛膜.OP[0].ps[0] + X0Y1_飛膜.OP[0].ps[2]) * 0.5;
-    		X0Y1_飛膜.OP[1].ps[0] = X0Y1_飛膜.OP[0].ps[2];
-    		X0Y1_飛膜.OP[1].ps[2] = X0Y1_飛膜.ToLocal(手.X0Y0_親指_指2.Position);
-    		X0Y1_飛膜.OP[1].ps[1] = (X0Y1_飛膜.OP[1].ps[0] + X0Y1_飛膜.OP[1].ps[2]) * 0.5;
-    		X0Y1_飛膜.OP[1].ps[1] += (vector2D - X0Y1_飛膜.OP[1].ps[1]) * 0.3;
-    		X0Y1_飛膜.OP[2].ps[0] = X0Y1_飛膜.OP[1].ps[2];
+    		Vector2D value = X0Y1_飛膜.ToLocal(手.X0Y0_人指_指3.GetPosition());
+    		Vector2D vector2D = X0Y1_飛膜.ToLocal(手.X0Y0_親指_指1.GetPosition());
+    		X0Y1_飛膜.GetOP()[0].ps[0] = value;
+    		X0Y1_飛膜.GetOP()[0].ps[2] = X0Y1_飛膜.ToLocal(手.X0Y0_人指_指2.GetPosition());
+    		X0Y1_飛膜.GetOP()[0].ps[1] = (X0Y1_飛膜.GetOP()[0].ps[0] + X0Y1_飛膜.GetOP()[0].ps[2]) * 0.5;
+    		X0Y1_飛膜.GetOP()[1].ps[0] = X0Y1_飛膜.GetOP()[0].ps[2];
+    		X0Y1_飛膜.GetOP()[1].ps[2] = X0Y1_飛膜.ToLocal(手.X0Y0_親指_指2.GetPosition());
+    		X0Y1_飛膜.GetOP()[1].ps[1] = (X0Y1_飛膜.GetOP()[1].ps[0] + X0Y1_飛膜.GetOP()[1].ps[2]) * 0.5;
+    		X0Y1_飛膜.GetOP()[1].ps[1] += (vector2D - X0Y1_飛膜.GetOP()[1].ps[1]) * 0.3;
+    		X0Y1_飛膜.GetOP()[2].ps[0] = X0Y1_飛膜.GetOP()[1].ps[2];
     		if (UpperArm == null)
     		{
     			if (LowerArm == null)
     			{
-    				X0Y1_飛膜.OP[2].ps[3] = X0Y1_飛膜.ToLocal(手.X0Y0_獣翼手.Position);
+    				X0Y1_飛膜.GetOP()[2].ps[3] = X0Y1_飛膜.ToLocal(手.X0Y0_獣翼手.GetPosition());
     			}
     			else
     			{
-    				X0Y1_飛膜.OP[2].ps[3] = X0Y1_飛膜.ToLocal(LowerArm.X0Y0_獣翼LowerArm.Position);
+    				X0Y1_飛膜.GetOP()[2].ps[3] = X0Y1_飛膜.ToLocal(LowerArm.X0Y0_獣翼LowerArm.GetPosition());
     			}
-    			Vector2D vector2D2 = (X0Y1_飛膜.OP[2].ps[0] + X0Y1_飛膜.OP[2].ps[3]) * 0.5;
-    			X0Y1_飛膜.OP[2].ps[1] = vector2D2 + (X0Y1_飛膜.OP[2].ps[0] - X0Y1_飛膜.OP[2].ps[3]) * 0.8;
-    			X0Y1_飛膜.OP[2].ps[2] = vector2D2 + (X0Y1_飛膜.OP[2].ps[0] - X0Y1_飛膜.OP[2].ps[3]) * 0.4;
-    			X0Y1_飛膜.OP[2].ps[1] += (vector2D - X0Y1_飛膜.OP[2].ps[1]) * 0.3;
-    			X0Y1_飛膜.OP[2].ps[2] += (vector2D - X0Y1_飛膜.OP[2].ps[2]) * 0.3;
+    			Vector2D vector2D2 = (X0Y1_飛膜.GetOP()[2].ps[0] + X0Y1_飛膜.GetOP()[2].ps[3]) * 0.5;
+    			X0Y1_飛膜.GetOP()[2].ps[1] = vector2D2 + (X0Y1_飛膜.GetOP()[2].ps[0] - X0Y1_飛膜.GetOP()[2].ps[3]) * 0.8;
+    			X0Y1_飛膜.GetOP()[2].ps[2] = vector2D2 + (X0Y1_飛膜.GetOP()[2].ps[0] - X0Y1_飛膜.GetOP()[2].ps[3]) * 0.4;
+    			X0Y1_飛膜.GetOP()[2].ps[1] += (vector2D - X0Y1_飛膜.GetOP()[2].ps[1]) * 0.3;
+    			X0Y1_飛膜.GetOP()[2].ps[2] += (vector2D - X0Y1_飛膜.GetOP()[2].ps[2]) * 0.3;
     		}
     		else
     		{
     			if (UpperArm.ConnectionType == ConnectionInfo.Shoulder_UpperArm_接続)
     			{
-    				X0Y1_飛膜.OP[2].ps[3] = X0Y0_飛膜.ToLocal(UpperArm.X0Y0_獣翼UpperArm.ToGlobal(UpperArm.X0Y0_獣翼UpperArm.OP[3].ps[1]));
+    				X0Y1_飛膜.GetOP()[2].ps[3] = X0Y0_飛膜.ToLocal(UpperArm.X0Y0_獣翼UpperArm.ToGlobal(UpperArm.X0Y0_獣翼UpperArm.GetOP()[3].ps[1]));
     			}
     			else
     			{
-    				X0Y1_飛膜.OP[2].ps[3] = X0Y0_飛膜.ToLocal(UpperArm.X0Y0_獣翼UpperArm.ToGlobal(UpperArm.X0Y0_獣翼UpperArm.OP[3].ps[1].AddY(0.003)));
+    				X0Y1_飛膜.GetOP()[2].ps[3] = X0Y0_飛膜.ToLocal(UpperArm.X0Y0_獣翼UpperArm.ToGlobal(UpperArm.X0Y0_獣翼UpperArm.GetOP()[3].ps[1].AddY(0.003)));
     			}
-    			Vector2D vector2D3 = (X0Y1_飛膜.OP[2].ps[0] + X0Y1_飛膜.OP[2].ps[3]) * 0.5;
-    			X0Y1_飛膜.OP[2].ps[1] = (X0Y1_飛膜.OP[2].ps[0] + vector2D3) * 0.5;
-    			X0Y1_飛膜.OP[2].ps[2] = (vector2D3 + X0Y1_飛膜.OP[2].ps[3]) * 0.5;
+    			Vector2D vector2D3 = (X0Y1_飛膜.GetOP()[2].ps[0] + X0Y1_飛膜.GetOP()[2].ps[3]) * 0.5;
+    			X0Y1_飛膜.GetOP()[2].ps[1] = (X0Y1_飛膜.GetOP()[2].ps[0] + vector2D3) * 0.5;
+    			X0Y1_飛膜.GetOP()[2].ps[2] = (vector2D3 + X0Y1_飛膜.GetOP()[2].ps[3]) * 0.5;
     		}
     		if (LowerArm == null)
     		{
-    			Vector2D vector2D4 = X0Y1_飛膜.ToLocal(手.X0Y0_獣翼手.Position);
-    			X0Y1_飛膜.OP[2].ps[1] += (vector2D4 - X0Y1_飛膜.OP[2].ps[1]) * 0.3;
-    			X0Y1_飛膜.OP[2].ps[2] += (vector2D4 - X0Y1_飛膜.OP[2].ps[2]) * 0.3;
+    			Vector2D vector2D4 = X0Y1_飛膜.ToLocal(手.X0Y0_獣翼手.GetPosition());
+    			X0Y1_飛膜.GetOP()[2].ps[1] += (vector2D4 - X0Y1_飛膜.GetOP()[2].ps[1]) * 0.3;
+    			X0Y1_飛膜.GetOP()[2].ps[2] += (vector2D4 - X0Y1_飛膜.GetOP()[2].ps[2]) * 0.3;
     		}
     		else
     		{
-    			Vector2D vector2D5 = X0Y1_飛膜.ToLocal(LowerArm.X0Y0_獣翼LowerArm.Position);
-    			X0Y1_飛膜.OP[2].ps[1] += (vector2D5 - X0Y1_飛膜.OP[2].ps[1]) * 0.3;
-    			X0Y1_飛膜.OP[2].ps[2] += (vector2D5 - X0Y1_飛膜.OP[2].ps[2]) * 0.3;
+    			Vector2D vector2D5 = X0Y1_飛膜.ToLocal(LowerArm.X0Y0_獣翼LowerArm.GetPosition());
+    			X0Y1_飛膜.GetOP()[2].ps[1] += (vector2D5 - X0Y1_飛膜.GetOP()[2].ps[1]) * 0.3;
+    			X0Y1_飛膜.GetOP()[2].ps[2] += (vector2D5 - X0Y1_飛膜.GetOP()[2].ps[2]) * 0.3;
     		}
     		if (UpperArm.ConnectionType != ConnectionInfo.Shoulder_UpperArm_接続)
     		{
-    			X0Y1_飛膜.OP[3].ps[0] = X0Y1_飛膜.OP[2].ps[3];
+    			X0Y1_飛膜.GetOP()[3].ps[0] = X0Y1_飛膜.GetOP()[2].ps[3];
     		}
     		else
     		{
-    			X0Y1_飛膜.OP[3].ps[0] = X0Y1_飛膜.OP[2].ps[3].AddY(0.05);
+    			X0Y1_飛膜.GetOP()[3].ps[0] = X0Y1_飛膜.GetOP()[2].ps[3].AddY(0.05);
     		}
-    		X0Y1_飛膜.OP[3].ps[2] = X0Y1_飛膜.ToLocal(手.X0Y0_小指_指3.ToGlobal(手.X0Y0_小指_指3.OP[0].ps[0]));
-    		X0Y1_飛膜.OP[3].ps[1] = (X0Y1_飛膜.OP[3].ps[0] + X0Y1_飛膜.OP[3].ps[2]) * 0.5;
-    		X0Y1_飛膜.OP[3].ps[1] += (X0Y1_飛膜.ToLocal(手.X0Y0_小指_指3.Position) - X0Y1_飛膜.OP[3].ps[1]) * 0.85;
+    		X0Y1_飛膜.GetOP()[3].ps[2] = X0Y1_飛膜.ToLocal(手.X0Y0_小指_指3.ToGlobal(手.X0Y0_小指_指3.GetOP()[0].ps[0]));
+    		X0Y1_飛膜.GetOP()[3].ps[1] = (X0Y1_飛膜.GetOP()[3].ps[0] + X0Y1_飛膜.GetOP()[3].ps[2]) * 0.5;
+    		X0Y1_飛膜.GetOP()[3].ps[1] += (X0Y1_飛膜.ToLocal(手.X0Y0_小指_指3.GetPosition()) - X0Y1_飛膜.GetOP()[3].ps[1]) * 0.85;
     		if (カーブ)
     		{
-    			X0Y1_飛膜.OP[3].ps[1] = (X0Y1_飛膜.OP[3].ps[0] + X0Y1_飛膜.OP[3].ps[2]) * 0.5;
-    			X0Y1_飛膜.OP[3].ps[1] += (X0Y1_飛膜.ToLocal(手.X0Y0_小指_指1.ToGlobal(手.X0Y0_小指_指1.JP[0].Joint)) - X0Y1_飛膜.OP[3].ps[1]) * 0.3;
+    			X0Y1_飛膜.GetOP()[3].ps[1] = (X0Y1_飛膜.GetOP()[3].ps[0] + X0Y1_飛膜.GetOP()[3].ps[2]) * 0.5;
+    			X0Y1_飛膜.GetOP()[3].ps[1] += (X0Y1_飛膜.ToLocal(手.X0Y0_小指_指1.ToGlobal(手.X0Y0_小指_指1.GetJP()[0].Joint)) - X0Y1_飛膜.GetOP()[3].ps[1]) * 0.3;
     		}
-    		Vector2D vector2D6 = X0Y1_飛膜.OP[3].ps[2];
-    		Vector2D vector2D7 = X0Y1_飛膜.ToLocal(手.X0Y0_薬指_指3.ToGlobal(手.X0Y0_薬指_指3.OP[0].ps[0]));
+    		Vector2D vector2D6 = X0Y1_飛膜.GetOP()[3].ps[2];
+    		Vector2D vector2D7 = X0Y1_飛膜.ToLocal(手.X0Y0_薬指_指3.ToGlobal(手.X0Y0_薬指_指3.GetOP()[0].ps[0]));
     		Vector2D vector2D8 = (vector2D6 + vector2D7) * 0.5;
     		double num = vector2D6.DistanceSquared(vector2D7);
-    		Vector2D vector2D9 = (X0Y1_飛膜.OP[4].ps[0] + X0Y1_飛膜.OP[19].ps[2]) * 0.5;
-    		double num2 = X0Y1_飛膜.OP[4].ps[0].DistanceSquared(X0Y1_飛膜.OP[19].ps[2]);
-    		Vector2D v = X0Y1_飛膜.OP[11].ps[2] - vector2D9;
-    		Vector2D v2 = X0Y1_飛膜.ToLocal(手.X0Y0_人指_指2.Position) - vector2D8;
+    		Vector2D vector2D9 = (X0Y1_飛膜.GetOP()[4].ps[0] + X0Y1_飛膜.GetOP()[19].ps[2]) * 0.5;
+    		double num2 = X0Y1_飛膜.GetOP()[4].ps[0].DistanceSquared(X0Y1_飛膜.GetOP()[19].ps[2]);
+    		Vector2D v = X0Y1_飛膜.GetOP()[11].ps[2] - vector2D9;
+    		Vector2D v2 = X0Y1_飛膜.ToLocal(手.X0Y0_人指_指2.GetPosition()) - vector2D8;
     		double num3 = v.Angle02π(Dat.Vec2DUnitY);
     		MatrixD transform = num3.RotationZ();
     		MatrixD transform2 = (v.Angle02π(v2) - num3).RotationZ();
@@ -410,23 +411,23 @@ namespace SlaveMatrix
     		for (int i = 0; i < 16; i++)
     		{
     			int index = i + 4;
-    			for (int j = 0; j < X0Y1_飛膜.OP[index].ps.Count; j++)
+    			for (int j = 0; j < X0Y1_飛膜.GetOP()[index].ps.Count; j++)
     			{
-    				Vector2D coord = X0Y1_飛膜.OP[index].ps[j].TransformCoordinateBP(vector2D9, transform);
+    				Vector2D coord = X0Y1_飛膜.GetOP()[index].ps[j].TransformCoordinateBP(vector2D9, transform);
     				coord.X = coord.X * num4 + num5;
-    				X0Y1_飛膜.OP[index].ps[j] = coord.TransformCoordinateBP(vector2D9, transform2) + vector2D10;
+    				X0Y1_飛膜.GetOP()[index].ps[j] = coord.TransformCoordinateBP(vector2D9, transform2) + vector2D10;
     			}
     		}
-    		X0Y1_飛膜.OP[4].ps[0] = vector2D6;
-    		X0Y1_飛膜.OP[19].ps[2] = vector2D7;
-    		vector2D6 = X0Y1_飛膜.OP[19].ps[2];
-    		vector2D7 = X0Y1_飛膜.ToLocal(手.X0Y0_中指_指3.ToGlobal(手.X0Y0_中指_指3.OP[0].ps[0]));
+    		X0Y1_飛膜.GetOP()[4].ps[0] = vector2D6;
+    		X0Y1_飛膜.GetOP()[19].ps[2] = vector2D7;
+    		vector2D6 = X0Y1_飛膜.GetOP()[19].ps[2];
+    		vector2D7 = X0Y1_飛膜.ToLocal(手.X0Y0_中指_指3.ToGlobal(手.X0Y0_中指_指3.GetOP()[0].ps[0]));
     		vector2D8 = (vector2D6 + vector2D7) * 0.5;
     		double num6 = vector2D6.DistanceSquared(vector2D7);
-    		vector2D9 = (X0Y1_飛膜.OP[20].ps[0] + X0Y1_飛膜.OP[39].ps[2]) * 0.5;
-    		num2 = X0Y1_飛膜.OP[20].ps[0].DistanceSquared(X0Y1_飛膜.OP[39].ps[2]);
-    		Vector2D v3 = X0Y1_飛膜.OP[29].ps[2] - vector2D9;
-    		v2 = X0Y1_飛膜.ToLocal(手.X0Y0_中指_指2.Position) - vector2D8;
+    		vector2D9 = (X0Y1_飛膜.GetOP()[20].ps[0] + X0Y1_飛膜.GetOP()[39].ps[2]) * 0.5;
+    		num2 = X0Y1_飛膜.GetOP()[20].ps[0].DistanceSquared(X0Y1_飛膜.GetOP()[39].ps[2]);
+    		Vector2D v3 = X0Y1_飛膜.GetOP()[29].ps[2] - vector2D9;
+    		v2 = X0Y1_飛膜.ToLocal(手.X0Y0_中指_指2.GetPosition()) - vector2D8;
     		num3 = v3.Angle02π(Dat.Vec2DUnitY);
     		transform = num3.RotationZ();
     		transform2 = (v3.Angle02π(v2) - num3).RotationZ();
@@ -436,105 +437,105 @@ namespace SlaveMatrix
     		for (int k = 0; k < 20; k++)
     		{
     			int index = k + 20;
-    			for (int l = 0; l < X0Y1_飛膜.OP[index].ps.Count; l++)
+    			for (int l = 0; l < X0Y1_飛膜.GetOP()[index].ps.Count; l++)
     			{
-    				Vector2D coord = X0Y1_飛膜.OP[index].ps[l].TransformCoordinateBP(vector2D9, transform);
+    				Vector2D coord = X0Y1_飛膜.GetOP()[index].ps[l].TransformCoordinateBP(vector2D9, transform);
     				coord.X = coord.X * num4 + num5;
-    				X0Y1_飛膜.OP[index].ps[l] = coord.TransformCoordinateBP(vector2D9, transform2) + vector2D10;
+    				X0Y1_飛膜.GetOP()[index].ps[l] = coord.TransformCoordinateBP(vector2D9, transform2) + vector2D10;
     			}
     		}
-    		X0Y1_飛膜.OP[20].ps[0] = vector2D6;
-    		X0Y1_飛膜.OP[39].ps[2] = vector2D7;
-    		X0Y1_飛膜.OP[40].ps[0] = vector2D7;
-    		X0Y1_飛膜.OP[40].ps[2] = X0Y1_飛膜.ToLocal(手.X0Y0_中指_指3.Position);
-    		X0Y1_飛膜.OP[40].ps[1] = X0Y1_飛膜.ToLocal(手.X0Y0_中指_指3.ToGlobal(手.X0Y0_中指_指3.OP[0].ps[1]));
-    		X0Y1_飛膜.OP[41].ps[0] = X0Y1_飛膜.OP[40].ps[2];
-    		X0Y1_飛膜.OP[41].ps[2] = X0Y1_飛膜.ToLocal(手.X0Y0_人指_指3.ToGlobal(手.X0Y0_人指_指3.OP[0].ps[0]));
-    		X0Y1_飛膜.OP[41].ps[1] = (X0Y1_飛膜.OP[41].ps[0] + X0Y1_飛膜.OP[41].ps[2]) * 0.5;
-    		X0Y1_飛膜.OP[41].ps[1] += (X0Y1_飛膜.ToLocal(手.X0Y0_人指_指1.Position) - X0Y1_飛膜.OP[41].ps[1]) * 0.08;
-    		X0Y1_飛膜.OP[42].ps[0] = X0Y1_飛膜.OP[41].ps[2];
-    		X0Y1_飛膜.OP[42].ps[2] = value;
-    		X0Y1_飛膜.OP[42].ps[1] = X0Y1_飛膜.ToLocal(手.X0Y0_人指_指3.ToGlobal(手.X0Y0_人指_指3.OP[0].ps[1]));
+    		X0Y1_飛膜.GetOP()[20].ps[0] = vector2D6;
+    		X0Y1_飛膜.GetOP()[39].ps[2] = vector2D7;
+    		X0Y1_飛膜.GetOP()[40].ps[0] = vector2D7;
+    		X0Y1_飛膜.GetOP()[40].ps[2] = X0Y1_飛膜.ToLocal(手.X0Y0_中指_指3.GetPosition());
+    		X0Y1_飛膜.GetOP()[40].ps[1] = X0Y1_飛膜.ToLocal(手.X0Y0_中指_指3.ToGlobal(手.X0Y0_中指_指3.GetOP()[0].ps[1]));
+    		X0Y1_飛膜.GetOP()[41].ps[0] = X0Y1_飛膜.GetOP()[40].ps[2];
+    		X0Y1_飛膜.GetOP()[41].ps[2] = X0Y1_飛膜.ToLocal(手.X0Y0_人指_指3.ToGlobal(手.X0Y0_人指_指3.GetOP()[0].ps[0]));
+    		X0Y1_飛膜.GetOP()[41].ps[1] = (X0Y1_飛膜.GetOP()[41].ps[0] + X0Y1_飛膜.GetOP()[41].ps[2]) * 0.5;
+    		X0Y1_飛膜.GetOP()[41].ps[1] += (X0Y1_飛膜.ToLocal(手.X0Y0_人指_指1.GetPosition()) - X0Y1_飛膜.GetOP()[41].ps[1]) * 0.08;
+    		X0Y1_飛膜.GetOP()[42].ps[0] = X0Y1_飛膜.GetOP()[41].ps[2];
+    		X0Y1_飛膜.GetOP()[42].ps[2] = value;
+    		X0Y1_飛膜.GetOP()[42].ps[1] = X0Y1_飛膜.ToLocal(手.X0Y0_人指_指3.ToGlobal(手.X0Y0_人指_指3.GetOP()[0].ps[1]));
     	}
 
     	private void 欠損接続右(UpperArm_蝙 UpperArm, LowerArm_蝙 LowerArm, 手_蝙 手, bool カーブ)
     	{
-    		Vector2D value = X0Y1_飛膜.ToLocal(手.X0Y0_人指_指3.Position);
-    		Vector2D vector2D = X0Y1_飛膜.ToLocal(手.X0Y0_親指_指1.Position);
-    		X0Y1_飛膜.OP[42].ps[2] = value;
-    		X0Y1_飛膜.OP[42].ps[0] = X0Y1_飛膜.ToLocal(手.X0Y0_人指_指2.Position);
-    		X0Y1_飛膜.OP[42].ps[1] = (X0Y1_飛膜.OP[42].ps[2] + X0Y1_飛膜.OP[42].ps[0]) * 0.5;
-    		X0Y1_飛膜.OP[41].ps[2] = X0Y1_飛膜.OP[42].ps[0];
-    		X0Y1_飛膜.OP[41].ps[0] = X0Y1_飛膜.ToLocal(手.X0Y0_親指_指2.Position);
-    		X0Y1_飛膜.OP[41].ps[1] = (X0Y1_飛膜.OP[41].ps[2] + X0Y1_飛膜.OP[41].ps[0]) * 0.5;
-    		X0Y1_飛膜.OP[41].ps[1] += (vector2D - X0Y1_飛膜.OP[41].ps[1]) * 0.3;
-    		X0Y1_飛膜.OP[40].ps[3] = X0Y1_飛膜.OP[41].ps[0];
+    		Vector2D value = X0Y1_飛膜.ToLocal(手.X0Y0_人指_指3.GetPosition());
+    		Vector2D vector2D = X0Y1_飛膜.ToLocal(手.X0Y0_親指_指1.GetPosition());
+    		X0Y1_飛膜.GetOP()[42].ps[2] = value;
+    		X0Y1_飛膜.GetOP()[42].ps[0] = X0Y1_飛膜.ToLocal(手.X0Y0_人指_指2.GetPosition());
+    		X0Y1_飛膜.GetOP()[42].ps[1] = (X0Y1_飛膜.GetOP()[42].ps[2] + X0Y1_飛膜.GetOP()[42].ps[0]) * 0.5;
+    		X0Y1_飛膜.GetOP()[41].ps[2] = X0Y1_飛膜.GetOP()[42].ps[0];
+    		X0Y1_飛膜.GetOP()[41].ps[0] = X0Y1_飛膜.ToLocal(手.X0Y0_親指_指2.GetPosition());
+    		X0Y1_飛膜.GetOP()[41].ps[1] = (X0Y1_飛膜.GetOP()[41].ps[2] + X0Y1_飛膜.GetOP()[41].ps[0]) * 0.5;
+    		X0Y1_飛膜.GetOP()[41].ps[1] += (vector2D - X0Y1_飛膜.GetOP()[41].ps[1]) * 0.3;
+    		X0Y1_飛膜.GetOP()[40].ps[3] = X0Y1_飛膜.GetOP()[41].ps[0];
     		if (UpperArm == null)
     		{
     			if (LowerArm == null)
     			{
-    				X0Y1_飛膜.OP[40].ps[0] = X0Y1_飛膜.ToLocal(手.X0Y0_獣翼手.Position);
+    				X0Y1_飛膜.GetOP()[40].ps[0] = X0Y1_飛膜.ToLocal(手.X0Y0_獣翼手.GetPosition());
     			}
     			else
     			{
-    				X0Y1_飛膜.OP[40].ps[0] = X0Y1_飛膜.ToLocal(LowerArm.X0Y0_獣翼LowerArm.Position);
+    				X0Y1_飛膜.GetOP()[40].ps[0] = X0Y1_飛膜.ToLocal(LowerArm.X0Y0_獣翼LowerArm.GetPosition());
     			}
-    			Vector2D vector2D2 = (X0Y1_飛膜.OP[40].ps[3] + X0Y1_飛膜.OP[40].ps[0]) * 0.5;
-    			X0Y1_飛膜.OP[40].ps[2] = vector2D2 + (X0Y1_飛膜.OP[40].ps[3] - X0Y1_飛膜.OP[40].ps[0]) * 0.8;
-    			X0Y1_飛膜.OP[40].ps[1] = vector2D2 + (X0Y1_飛膜.OP[40].ps[3] - X0Y1_飛膜.OP[40].ps[0]) * 0.4;
-    			X0Y1_飛膜.OP[40].ps[2] += (vector2D - X0Y1_飛膜.OP[40].ps[2]) * 0.3;
-    			X0Y1_飛膜.OP[40].ps[1] += (vector2D - X0Y1_飛膜.OP[40].ps[1]) * 0.3;
+    			Vector2D vector2D2 = (X0Y1_飛膜.GetOP()[40].ps[3] + X0Y1_飛膜.GetOP()[40].ps[0]) * 0.5;
+    			X0Y1_飛膜.GetOP()[40].ps[2] = vector2D2 + (X0Y1_飛膜.GetOP()[40].ps[3] - X0Y1_飛膜.GetOP()[40].ps[0]) * 0.8;
+    			X0Y1_飛膜.GetOP()[40].ps[1] = vector2D2 + (X0Y1_飛膜.GetOP()[40].ps[3] - X0Y1_飛膜.GetOP()[40].ps[0]) * 0.4;
+    			X0Y1_飛膜.GetOP()[40].ps[2] += (vector2D - X0Y1_飛膜.GetOP()[40].ps[2]) * 0.3;
+    			X0Y1_飛膜.GetOP()[40].ps[1] += (vector2D - X0Y1_飛膜.GetOP()[40].ps[1]) * 0.3;
     		}
     		else
     		{
     			if (UpperArm.ConnectionType == ConnectionInfo.Shoulder_UpperArm_接続)
     			{
-    				X0Y1_飛膜.OP[40].ps[0] = X0Y0_飛膜.ToLocal(UpperArm.X0Y0_獣翼UpperArm.ToGlobal(UpperArm.X0Y0_獣翼UpperArm.OP[0].ps[4]));
+    				X0Y1_飛膜.GetOP()[40].ps[0] = X0Y0_飛膜.ToLocal(UpperArm.X0Y0_獣翼UpperArm.ToGlobal(UpperArm.X0Y0_獣翼UpperArm.GetOP()[0].ps[4]));
     			}
     			else
     			{
-    				X0Y1_飛膜.OP[40].ps[0] = X0Y0_飛膜.ToLocal(UpperArm.X0Y0_獣翼UpperArm.ToGlobal(UpperArm.X0Y0_獣翼UpperArm.OP[0].ps[4].AddY(0.003)));
+    				X0Y1_飛膜.GetOP()[40].ps[0] = X0Y0_飛膜.ToLocal(UpperArm.X0Y0_獣翼UpperArm.ToGlobal(UpperArm.X0Y0_獣翼UpperArm.GetOP()[0].ps[4].AddY(0.003)));
     			}
-    			Vector2D vector2D3 = (X0Y1_飛膜.OP[40].ps[3] + X0Y1_飛膜.OP[40].ps[0]) * 0.5;
-    			X0Y1_飛膜.OP[40].ps[2] = (X0Y1_飛膜.OP[40].ps[3] + vector2D3) * 0.5;
-    			X0Y1_飛膜.OP[40].ps[1] = (vector2D3 + X0Y1_飛膜.OP[40].ps[0]) * 0.5;
+    			Vector2D vector2D3 = (X0Y1_飛膜.GetOP()[40].ps[3] + X0Y1_飛膜.GetOP()[40].ps[0]) * 0.5;
+    			X0Y1_飛膜.GetOP()[40].ps[2] = (X0Y1_飛膜.GetOP()[40].ps[3] + vector2D3) * 0.5;
+    			X0Y1_飛膜.GetOP()[40].ps[1] = (vector2D3 + X0Y1_飛膜.GetOP()[40].ps[0]) * 0.5;
     		}
     		if (LowerArm == null)
     		{
-    			Vector2D vector2D4 = X0Y1_飛膜.ToLocal(手.X0Y0_獣翼手.Position);
-    			X0Y1_飛膜.OP[40].ps[2] += (vector2D4 - X0Y1_飛膜.OP[40].ps[2]) * 0.3;
-    			X0Y1_飛膜.OP[40].ps[1] += (vector2D4 - X0Y1_飛膜.OP[40].ps[1]) * 0.3;
+    			Vector2D vector2D4 = X0Y1_飛膜.ToLocal(手.X0Y0_獣翼手.GetPosition());
+    			X0Y1_飛膜.GetOP()[40].ps[2] += (vector2D4 - X0Y1_飛膜.GetOP()[40].ps[2]) * 0.3;
+    			X0Y1_飛膜.GetOP()[40].ps[1] += (vector2D4 - X0Y1_飛膜.GetOP()[40].ps[1]) * 0.3;
     		}
     		else
     		{
-    			Vector2D vector2D5 = X0Y1_飛膜.ToLocal(LowerArm.X0Y0_獣翼LowerArm.Position);
-    			X0Y1_飛膜.OP[40].ps[2] += (vector2D5 - X0Y1_飛膜.OP[40].ps[2]) * 0.3;
-    			X0Y1_飛膜.OP[40].ps[1] += (vector2D5 - X0Y1_飛膜.OP[40].ps[1]) * 0.3;
+    			Vector2D vector2D5 = X0Y1_飛膜.ToLocal(LowerArm.X0Y0_獣翼LowerArm.GetPosition());
+    			X0Y1_飛膜.GetOP()[40].ps[2] += (vector2D5 - X0Y1_飛膜.GetOP()[40].ps[2]) * 0.3;
+    			X0Y1_飛膜.GetOP()[40].ps[1] += (vector2D5 - X0Y1_飛膜.GetOP()[40].ps[1]) * 0.3;
     		}
     		if (UpperArm.ConnectionType != ConnectionInfo.Shoulder_UpperArm_接続)
     		{
-    			X0Y1_飛膜.OP[39].ps[2] = X0Y1_飛膜.OP[40].ps[0];
+    			X0Y1_飛膜.GetOP()[39].ps[2] = X0Y1_飛膜.GetOP()[40].ps[0];
     		}
     		else
     		{
-    			X0Y1_飛膜.OP[39].ps[2] = X0Y1_飛膜.OP[40].ps[0].AddY(0.05);
+    			X0Y1_飛膜.GetOP()[39].ps[2] = X0Y1_飛膜.GetOP()[40].ps[0].AddY(0.05);
     		}
-    		X0Y1_飛膜.OP[39].ps[0] = X0Y1_飛膜.ToLocal(手.X0Y0_小指_指3.ToGlobal(手.X0Y0_小指_指3.OP[2].ps[2]));
-    		X0Y1_飛膜.OP[39].ps[1] = (X0Y1_飛膜.OP[39].ps[2] + X0Y1_飛膜.OP[39].ps[0]) * 0.5;
-    		X0Y1_飛膜.OP[39].ps[1] += (X0Y1_飛膜.ToLocal(手.X0Y0_小指_指3.Position) - X0Y1_飛膜.OP[39].ps[1]) * 0.85;
+    		X0Y1_飛膜.GetOP()[39].ps[0] = X0Y1_飛膜.ToLocal(手.X0Y0_小指_指3.ToGlobal(手.X0Y0_小指_指3.GetOP()[2].ps[2]));
+    		X0Y1_飛膜.GetOP()[39].ps[1] = (X0Y1_飛膜.GetOP()[39].ps[2] + X0Y1_飛膜.GetOP()[39].ps[0]) * 0.5;
+    		X0Y1_飛膜.GetOP()[39].ps[1] += (X0Y1_飛膜.ToLocal(手.X0Y0_小指_指3.GetPosition()) - X0Y1_飛膜.GetOP()[39].ps[1]) * 0.85;
     		if (カーブ)
     		{
-    			X0Y1_飛膜.OP[39].ps[1] = (X0Y1_飛膜.OP[39].ps[2] + X0Y1_飛膜.OP[39].ps[0]) * 0.5;
-    			X0Y1_飛膜.OP[39].ps[1] += (X0Y1_飛膜.ToLocal(手.X0Y0_小指_指1.ToGlobal(手.X0Y0_小指_指1.JP[0].Joint)) - X0Y1_飛膜.OP[39].ps[1]) * 0.3;
+    			X0Y1_飛膜.GetOP()[39].ps[1] = (X0Y1_飛膜.GetOP()[39].ps[2] + X0Y1_飛膜.GetOP()[39].ps[0]) * 0.5;
+    			X0Y1_飛膜.GetOP()[39].ps[1] += (X0Y1_飛膜.ToLocal(手.X0Y0_小指_指1.ToGlobal(手.X0Y0_小指_指1.GetJP()[0].Joint)) - X0Y1_飛膜.GetOP()[39].ps[1]) * 0.3;
     		}
-    		Vector2D vector2D6 = X0Y1_飛膜.OP[39].ps[0];
-    		Vector2D vector2D7 = X0Y1_飛膜.ToLocal(手.X0Y0_薬指_指3.ToGlobal(手.X0Y0_薬指_指3.OP[2].ps[2]));
+    		Vector2D vector2D6 = X0Y1_飛膜.GetOP()[39].ps[0];
+    		Vector2D vector2D7 = X0Y1_飛膜.ToLocal(手.X0Y0_薬指_指3.ToGlobal(手.X0Y0_薬指_指3.GetOP()[2].ps[2]));
     		Vector2D vector2D8 = (vector2D6 + vector2D7) * 0.5;
     		double num = vector2D6.DistanceSquared(vector2D7);
-    		Vector2D vector2D9 = (X0Y1_飛膜.OP[38].ps[2] + X0Y1_飛膜.OP[23].ps[0]) * 0.5;
-    		double num2 = X0Y1_飛膜.OP[38].ps[2].DistanceSquared(X0Y1_飛膜.OP[23].ps[0]);
-    		Vector2D v = X0Y1_飛膜.OP[31].ps[0] - vector2D9;
-    		Vector2D v2 = X0Y1_飛膜.ToLocal(手.X0Y0_人指_指2.Position) - vector2D8;
+    		Vector2D vector2D9 = (X0Y1_飛膜.GetOP()[38].ps[2] + X0Y1_飛膜.GetOP()[23].ps[0]) * 0.5;
+    		double num2 = X0Y1_飛膜.GetOP()[38].ps[2].DistanceSquared(X0Y1_飛膜.GetOP()[23].ps[0]);
+    		Vector2D v = X0Y1_飛膜.GetOP()[31].ps[0] - vector2D9;
+    		Vector2D v2 = X0Y1_飛膜.ToLocal(手.X0Y0_人指_指2.GetPosition()) - vector2D8;
     		double num3 = v.Angle02π(Dat.Vec2DUnitY);
     		MatrixD transform = num3.RotationZ();
     		MatrixD transform2 = (v.Angle02π(v2) - num3).RotationZ();
@@ -544,23 +545,23 @@ namespace SlaveMatrix
     		for (int i = 0; i < 16; i++)
     		{
     			int index = 42 - (i + 4);
-    			for (int j = 0; j < X0Y1_飛膜.OP[index].ps.Count; j++)
+    			for (int j = 0; j < X0Y1_飛膜.GetOP()[index].ps.Count; j++)
     			{
-    				Vector2D coord = X0Y1_飛膜.OP[index].ps[j].TransformCoordinateBP(vector2D9, transform);
+    				Vector2D coord = X0Y1_飛膜.GetOP()[index].ps[j].TransformCoordinateBP(vector2D9, transform);
     				coord.X = coord.X * num4 + num5;
-    				X0Y1_飛膜.OP[index].ps[j] = coord.TransformCoordinateBP(vector2D9, transform2) + vector2D10;
+    				X0Y1_飛膜.GetOP()[index].ps[j] = coord.TransformCoordinateBP(vector2D9, transform2) + vector2D10;
     			}
     		}
-    		X0Y1_飛膜.OP[38].ps[2] = vector2D6;
-    		X0Y1_飛膜.OP[23].ps[0] = vector2D7;
-    		vector2D6 = X0Y1_飛膜.OP[23].ps[0];
-    		vector2D7 = X0Y1_飛膜.ToLocal(手.X0Y0_中指_指3.ToGlobal(手.X0Y0_中指_指3.OP[2].ps[2]));
+    		X0Y1_飛膜.GetOP()[38].ps[2] = vector2D6;
+    		X0Y1_飛膜.GetOP()[23].ps[0] = vector2D7;
+    		vector2D6 = X0Y1_飛膜.GetOP()[23].ps[0];
+    		vector2D7 = X0Y1_飛膜.ToLocal(手.X0Y0_中指_指3.ToGlobal(手.X0Y0_中指_指3.GetOP()[2].ps[2]));
     		vector2D8 = (vector2D6 + vector2D7) * 0.5;
     		double num6 = vector2D6.DistanceSquared(vector2D7);
-    		vector2D9 = (X0Y1_飛膜.OP[22].ps[2] + X0Y1_飛膜.OP[3].ps[0]) * 0.5;
-    		num2 = X0Y1_飛膜.OP[22].ps[2].DistanceSquared(X0Y1_飛膜.OP[3].ps[0]);
-    		Vector2D v3 = X0Y1_飛膜.OP[13].ps[0] - vector2D9;
-    		v2 = X0Y1_飛膜.ToLocal(手.X0Y0_中指_指2.Position) - vector2D8;
+    		vector2D9 = (X0Y1_飛膜.GetOP()[22].ps[2] + X0Y1_飛膜.GetOP()[3].ps[0]) * 0.5;
+    		num2 = X0Y1_飛膜.GetOP()[22].ps[2].DistanceSquared(X0Y1_飛膜.GetOP()[3].ps[0]);
+    		Vector2D v3 = X0Y1_飛膜.GetOP()[13].ps[0] - vector2D9;
+    		v2 = X0Y1_飛膜.ToLocal(手.X0Y0_中指_指2.GetPosition()) - vector2D8;
     		num3 = v3.Angle02π(Dat.Vec2DUnitY);
     		transform = num3.RotationZ();
     		transform2 = (v3.Angle02π(v2) - num3).RotationZ();
@@ -570,30 +571,30 @@ namespace SlaveMatrix
     		for (int k = 0; k < 20; k++)
     		{
     			int index = 42 - (k + 20);
-    			for (int l = 0; l < X0Y1_飛膜.OP[index].ps.Count; l++)
+    			for (int l = 0; l < X0Y1_飛膜.GetOP()[index].ps.Count; l++)
     			{
-    				Vector2D coord = X0Y1_飛膜.OP[index].ps[l].TransformCoordinateBP(vector2D9, transform);
+    				Vector2D coord = X0Y1_飛膜.GetOP()[index].ps[l].TransformCoordinateBP(vector2D9, transform);
     				coord.X = coord.X * num4 + num5;
-    				X0Y1_飛膜.OP[index].ps[l] = coord.TransformCoordinateBP(vector2D9, transform2) + vector2D10;
+    				X0Y1_飛膜.GetOP()[index].ps[l] = coord.TransformCoordinateBP(vector2D9, transform2) + vector2D10;
     			}
     		}
-    		X0Y1_飛膜.OP[22].ps[2] = vector2D6;
-    		X0Y1_飛膜.OP[3].ps[0] = vector2D7;
-    		X0Y1_飛膜.OP[2].ps[2] = vector2D7;
-    		X0Y1_飛膜.OP[2].ps[0] = X0Y1_飛膜.ToLocal(手.X0Y0_中指_指3.Position);
-    		X0Y1_飛膜.OP[2].ps[1] = X0Y1_飛膜.ToLocal(手.X0Y0_中指_指3.ToGlobal(手.X0Y0_中指_指3.OP[2].ps[1]));
-    		X0Y1_飛膜.OP[1].ps[2] = X0Y1_飛膜.OP[2].ps[0];
-    		X0Y1_飛膜.OP[1].ps[0] = X0Y1_飛膜.ToLocal(手.X0Y0_人指_指3.ToGlobal(手.X0Y0_人指_指3.OP[2].ps[2]));
-    		X0Y1_飛膜.OP[1].ps[1] = (X0Y1_飛膜.OP[1].ps[2] + X0Y1_飛膜.OP[1].ps[0]) * 0.5;
-    		X0Y1_飛膜.OP[1].ps[1] += (X0Y1_飛膜.ToLocal(手.X0Y0_人指_指1.Position) - X0Y1_飛膜.OP[1].ps[1]) * 0.08;
-    		X0Y1_飛膜.OP[0].ps[2] = X0Y1_飛膜.OP[1].ps[0];
-    		X0Y1_飛膜.OP[0].ps[0] = value;
-    		X0Y1_飛膜.OP[0].ps[1] = X0Y1_飛膜.ToLocal(手.X0Y0_人指_指3.ToGlobal(手.X0Y0_人指_指3.OP[2].ps[1]));
+    		X0Y1_飛膜.GetOP()[22].ps[2] = vector2D6;
+    		X0Y1_飛膜.GetOP()[3].ps[0] = vector2D7;
+    		X0Y1_飛膜.GetOP()[2].ps[2] = vector2D7;
+    		X0Y1_飛膜.GetOP()[2].ps[0] = X0Y1_飛膜.ToLocal(手.X0Y0_中指_指3.GetPosition());
+    		X0Y1_飛膜.GetOP()[2].ps[1] = X0Y1_飛膜.ToLocal(手.X0Y0_中指_指3.ToGlobal(手.X0Y0_中指_指3.GetOP()[2].ps[1]));
+    		X0Y1_飛膜.GetOP()[1].ps[2] = X0Y1_飛膜.GetOP()[2].ps[0];
+    		X0Y1_飛膜.GetOP()[1].ps[0] = X0Y1_飛膜.ToLocal(手.X0Y0_人指_指3.ToGlobal(手.X0Y0_人指_指3.GetOP()[2].ps[2]));
+    		X0Y1_飛膜.GetOP()[1].ps[1] = (X0Y1_飛膜.GetOP()[1].ps[2] + X0Y1_飛膜.GetOP()[1].ps[0]) * 0.5;
+    		X0Y1_飛膜.GetOP()[1].ps[1] += (X0Y1_飛膜.ToLocal(手.X0Y0_人指_指1.GetPosition()) - X0Y1_飛膜.GetOP()[1].ps[1]) * 0.08;
+    		X0Y1_飛膜.GetOP()[0].ps[2] = X0Y1_飛膜.GetOP()[1].ps[0];
+    		X0Y1_飛膜.GetOP()[0].ps[0] = value;
+    		X0Y1_飛膜.GetOP()[0].ps[1] = X0Y1_飛膜.ToLocal(手.X0Y0_人指_指3.ToGlobal(手.X0Y0_人指_指3.GetOP()[2].ps[1]));
     	}
 
     	public override void 色更新()
     	{
-    		if (Body.IndexY == 0)
+    		if (Body.GetIndexY() == 0)
     		{
     			X0Y0_飛膜CP.Update();
     		}
@@ -605,7 +606,7 @@ namespace SlaveMatrix
 
     	public override void 色更新(Vector2D[] mm)
     	{
-    		if (Body.IndexY == 0)
+    		if (Body.GetIndexY() == 0)
     		{
     			X0Y0_飛膜CP.Update(mm);
     		}

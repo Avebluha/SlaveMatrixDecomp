@@ -474,7 +474,7 @@ namespace SlaveMatrix
 
     	public override void 描画0(RenderArea Are)
     	{
-    		if (Body.IndexY == 0)
+    		if (Body.GetIndexY() == 0)
     		{
     			Are.Draw(X0Y0_帯);
     			Are.Draw(X0Y0_巻);
@@ -495,7 +495,7 @@ namespace SlaveMatrix
 
     	public void 前(RenderArea Are)
     	{
-    		if (Body.IndexY == 0)
+    		if (Body.GetIndexY() == 0)
     		{
     			Are.Draw(X0Y0_前掛_前掛1);
     			Are.Draw(X0Y0_前掛_前掛2);
@@ -517,7 +517,7 @@ namespace SlaveMatrix
 
     	public override void 色更新()
     	{
-    		if (Body.IndexY == 0)
+    		if (Body.GetIndexY() == 0)
     		{
     			X0Y0_帯CP.Update();
     			X0Y0_巻CP.Update();

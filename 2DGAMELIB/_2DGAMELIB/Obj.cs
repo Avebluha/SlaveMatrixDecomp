@@ -9,8 +9,6 @@ namespace _2DGAMELIB
     [Serializable]
     public class Obj
     {
-    	public string Tag = "";
-
     	public OrderedDictionary<string, Difs> Difss = new OrderedDictionary<string, Difs>();
 
     	private Difs r;
@@ -18,8 +16,6 @@ namespace _2DGAMELIB
     	private JointsD jsd;
 
     	public IEnumerable<string> Keys => Difss.Keys;
-
-    	public IEnumerable<Difs> Values => Difss.Values;
 
     	public Difs this[string Name]
     	{
@@ -33,58 +29,13 @@ namespace _2DGAMELIB
     		}
     	}
 
-    	public Difs this[int Index]
-    	{
-    		get
-    		{
-    			return Difss[Index];
-    		}
-    		set
-    		{
-    			Difss[Index] = value;
-    		}
-    	}
-
-    	public double PositionSize
-    	{
-    		set
-    		{
-    			foreach (Difs value2 in Difss.Values)
-    			{
-    				value2.PositionSize = value;
-    			}
-    		}
-    	}
-
-    	public Vector2D PositionVector
-    	{
-    		set
-    		{
-    			foreach (Difs value2 in Difss.Values)
-    			{
-    				value2.PositionVector = value;
-    			}
-    		}
-    	}
-
     	public double AngleBase
     	{
     		set
     		{
     			foreach (Difs value2 in Difss.Values)
     			{
-    				value2.AngleBase = value;
-    			}
-    		}
-    	}
-
-    	public double AngleCont
-    	{
-    		set
-    		{
-    			foreach (Difs value2 in Difss.Values)
-    			{
-    				value2.AngleCont = value;
+    				value2.SetAngleBase(value);
     			}
     		}
     	}
@@ -95,84 +46,7 @@ namespace _2DGAMELIB
     		{
     			foreach (Difs value2 in Difss.Values)
     			{
-    				value2.SizeBase = value;
-    			}
-    		}
-    	}
-
-    	public double SizeCont
-    	{
-    		set
-    		{
-    			foreach (Difs value2 in Difss.Values)
-    			{
-    				value2.SizeCont = value;
-    			}
-    		}
-    	}
-
-    	public double SizeXBase
-    	{
-    		set
-    		{
-    			foreach (Difs value2 in Difss.Values)
-    			{
-    				value2.SizeXBase = value;
-    			}
-    		}
-    	}
-
-    	public double SizeXCont
-    	{
-    		set
-    		{
-    			foreach (Difs value2 in Difss.Values)
-    			{
-    				value2.SizeXCont = value;
-    			}
-    		}
-    	}
-
-    	public double SizeYBase
-    	{
-    		set
-    		{
-    			foreach (Difs value2 in Difss.Values)
-    			{
-    				value2.SizeYBase = value;
-    			}
-    		}
-    	}
-
-    	public double SizeYCont
-    	{
-    		set
-    		{
-    			foreach (Difs value2 in Difss.Values)
-    			{
-    				value2.SizeYCont = value;
-    			}
-    		}
-    	}
-
-    	public bool Dra
-    	{
-    		set
-    		{
-    			foreach (Difs value2 in Difss.Values)
-    			{
-    				value2.Dra = value;
-    			}
-    		}
-    	}
-
-    	public bool Hit
-    	{
-    		set
-    		{
-    			foreach (Difs value2 in Difss.Values)
-    			{
-    				value2.Hit = value;
+    				value2.SetSizeBase(value);
     			}
     		}
     	}
@@ -227,8 +101,8 @@ namespace _2DGAMELIB
     		{
     			if (difs.EnumJoinRoot.All(delegate(Par p0)
     			{
-    				p = p0.Position;
-    				return pa.All((Par p1) => p0 == p1 || p1.JP.All((Joi j) => !(p1.ToGlobal(j.Joint).DistanceSquared(p) <= Join.IdentityDistance)));
+    				p = p0.GetPosition();
+    				return pa.All((Par p1) => p0 == p1 || p1.GetJP().All((Joi j) => !(p1.ToGlobal(j.Joint).DistanceSquared(p) <= Join.IdentityDistance)));
     			}))
     			{
     				return difs;

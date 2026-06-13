@@ -573,28 +573,28 @@ namespace SlaveMatrix
     		{
     			double num = value.Inverse();
     			double num2 = (右 ? (-1.0) : 1.0);
-    			X0Y0_風切羽_左_羽1.AngleCont = num2 * -12.0 * num;
-    			X0Y0_風切羽_左_羽2.AngleCont = num2 * -22.0 * num;
-    			X0Y0_風切羽_左_羽3.AngleCont = num2 * -32.0 * num;
-    			X0Y0_風切羽_左_羽4.AngleCont = num2 * -42.0 * num;
-    			X0Y0_風切羽_左_羽5.AngleCont = num2 * -52.0 * num;
-    			X0Y0_風切羽_左_羽6.AngleCont = num2 * -62.0 * num;
-    			X0Y0_風切羽_右_羽1.AngleCont = num2 * 12.0 * num;
-    			X0Y0_風切羽_右_羽2.AngleCont = num2 * 22.0 * num;
-    			X0Y0_風切羽_右_羽3.AngleCont = num2 * 32.0 * num;
-    			X0Y0_風切羽_右_羽4.AngleCont = num2 * 42.0 * num;
-    			X0Y0_風切羽_右_羽5.AngleCont = num2 * 52.0 * num;
-    			X0Y0_風切羽_右_羽6.AngleCont = num2 * 62.0 * num;
-    			X0Y0_雨覆羽_左_羽1.AngleCont = num2 * -12.0 * num;
-    			X0Y0_雨覆羽_左_羽2.AngleCont = num2 * -32.0 * num;
-    			X0Y0_雨覆羽_左_羽3.AngleCont = num2 * -42.0 * num;
-    			X0Y0_雨覆羽_左_羽4.AngleCont = num2 * -52.0 * num;
-    			X0Y0_雨覆羽_左_羽5.AngleCont = num2 * -62.0 * num;
-    			X0Y0_雨覆羽_右_羽1.AngleCont = num2 * 12.0 * num;
-    			X0Y0_雨覆羽_右_羽2.AngleCont = num2 * 32.0 * num;
-    			X0Y0_雨覆羽_右_羽3.AngleCont = num2 * 42.0 * num;
-    			X0Y0_雨覆羽_右_羽4.AngleCont = num2 * 52.0 * num;
-    			X0Y0_雨覆羽_右_羽5.AngleCont = num2 * 62.0 * num;
+    			X0Y0_風切羽_左_羽1.SetAngleCont(num2 * -12.0 * num);
+    			X0Y0_風切羽_左_羽2.SetAngleCont(num2 * -22.0 * num);
+    			X0Y0_風切羽_左_羽3.SetAngleCont(num2 * -32.0 * num);
+    			X0Y0_風切羽_左_羽4.SetAngleCont(num2 * -42.0 * num);
+    			X0Y0_風切羽_左_羽5.SetAngleCont(num2 * -52.0 * num);
+    			X0Y0_風切羽_左_羽6.SetAngleCont(num2 * -62.0 * num);
+    			X0Y0_風切羽_右_羽1.SetAngleCont(num2 * 12.0 * num);
+    			X0Y0_風切羽_右_羽2.SetAngleCont(num2 * 22.0 * num);
+    			X0Y0_風切羽_右_羽3.SetAngleCont(num2 * 32.0 * num);
+    			X0Y0_風切羽_右_羽4.SetAngleCont(num2 * 42.0 * num);
+    			X0Y0_風切羽_右_羽5.SetAngleCont(num2 * 52.0 * num);
+    			X0Y0_風切羽_右_羽6.SetAngleCont(num2 * 62.0 * num);
+    			X0Y0_雨覆羽_左_羽1.SetAngleCont(num2 * -12.0 * num);
+    			X0Y0_雨覆羽_左_羽2.SetAngleCont(num2 * -32.0 * num);
+    			X0Y0_雨覆羽_左_羽3.SetAngleCont(num2 * -42.0 * num);
+    			X0Y0_雨覆羽_左_羽4.SetAngleCont(num2 * -52.0 * num);
+    			X0Y0_雨覆羽_左_羽5.SetAngleCont(num2 * -62.0 * num);
+    			X0Y0_雨覆羽_右_羽1.SetAngleCont(num2 * 12.0 * num);
+    			X0Y0_雨覆羽_右_羽2.SetAngleCont(num2 * 32.0 * num);
+    			X0Y0_雨覆羽_右_羽3.SetAngleCont(num2 * 42.0 * num);
+    			X0Y0_雨覆羽_右_羽4.SetAngleCont(num2 * 52.0 * num);
+    			X0Y0_雨覆羽_右_羽5.SetAngleCont(num2 * 62.0 * num);
     		}
     	}
 
@@ -726,28 +726,28 @@ namespace SlaveMatrix
     	public override void SetAngle0()
     	{
     		double num = (右 ? (-1.0) : 1.0);
-    		X0Y0_風切羽_左_羽1.AngleBase = num * 12.0;
-    		X0Y0_風切羽_左_羽2.AngleBase = num * 22.0;
-    		X0Y0_風切羽_左_羽3.AngleBase = num * 32.0;
-    		X0Y0_風切羽_左_羽4.AngleBase = num * 42.0;
-    		X0Y0_風切羽_左_羽5.AngleBase = num * 52.0;
-    		X0Y0_風切羽_左_羽6.AngleBase = num * 62.0;
-    		X0Y0_風切羽_右_羽1.AngleBase = num * -12.0;
-    		X0Y0_風切羽_右_羽2.AngleBase = num * -22.0;
-    		X0Y0_風切羽_右_羽3.AngleBase = num * -32.0;
-    		X0Y0_風切羽_右_羽4.AngleBase = num * -42.0;
-    		X0Y0_風切羽_右_羽5.AngleBase = num * -52.0;
-    		X0Y0_風切羽_右_羽6.AngleBase = num * -62.0;
-    		X0Y0_雨覆羽_左_羽1.AngleBase = num * 0.0;
-    		X0Y0_雨覆羽_左_羽2.AngleBase = num * 32.0;
-    		X0Y0_雨覆羽_左_羽3.AngleBase = num * 42.0;
-    		X0Y0_雨覆羽_左_羽4.AngleBase = num * 52.0;
-    		X0Y0_雨覆羽_左_羽5.AngleBase = num * 62.0;
-    		X0Y0_雨覆羽_右_羽1.AngleBase = num * 0.0;
-    		X0Y0_雨覆羽_右_羽2.AngleBase = num * -32.0;
-    		X0Y0_雨覆羽_右_羽3.AngleBase = num * -42.0;
-    		X0Y0_雨覆羽_右_羽4.AngleBase = num * -52.0;
-    		X0Y0_雨覆羽_右_羽5.AngleBase = num * -62.0;
+    		X0Y0_風切羽_左_羽1.SetAngleBase(num * 12.0);
+    		X0Y0_風切羽_左_羽2.SetAngleBase(num * 22.0);
+    		X0Y0_風切羽_左_羽3.SetAngleBase(num * 32.0);
+    		X0Y0_風切羽_左_羽4.SetAngleBase(num * 42.0);
+    		X0Y0_風切羽_左_羽5.SetAngleBase(num * 52.0);
+    		X0Y0_風切羽_左_羽6.SetAngleBase(num * 62.0);
+    		X0Y0_風切羽_右_羽1.SetAngleBase(num * -12.0);
+    		X0Y0_風切羽_右_羽2.SetAngleBase(num * -22.0);
+    		X0Y0_風切羽_右_羽3.SetAngleBase(num * -32.0);
+    		X0Y0_風切羽_右_羽4.SetAngleBase(num * -42.0);
+    		X0Y0_風切羽_右_羽5.SetAngleBase(num * -52.0);
+    		X0Y0_風切羽_右_羽6.SetAngleBase(num * -62.0);
+    		X0Y0_雨覆羽_左_羽1.SetAngleBase(num * 0.0);
+    		X0Y0_雨覆羽_左_羽2.SetAngleBase(num * 32.0);
+    		X0Y0_雨覆羽_左_羽3.SetAngleBase(num * 42.0);
+    		X0Y0_雨覆羽_左_羽4.SetAngleBase(num * 52.0);
+    		X0Y0_雨覆羽_左_羽5.SetAngleBase(num * 62.0);
+    		X0Y0_雨覆羽_右_羽1.SetAngleBase(num * 0.0);
+    		X0Y0_雨覆羽_右_羽2.SetAngleBase(num * -32.0);
+    		X0Y0_雨覆羽_右_羽3.SetAngleBase(num * -42.0);
+    		X0Y0_雨覆羽_右_羽4.SetAngleBase(num * -52.0);
+    		X0Y0_雨覆羽_右_羽5.SetAngleBase(num * -62.0);
     		Body.JoinPAall();
     	}
 

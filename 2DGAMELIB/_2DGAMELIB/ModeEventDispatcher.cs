@@ -370,7 +370,7 @@ namespace _2DGAMELIB
     	{
     		foreach (Par p in ps)
     		{
-    			p.HitColor = GetUniqueColor();
+    			p.SetHitColor(GetUniqueColor());
     		}
     	}
 
@@ -383,7 +383,7 @@ namespace _2DGAMELIB
     	{
     		foreach (Par p in ps)
     		{
-    			HitColors.Remove(p.HitColor);
+    			HitColors.Remove(p.GetHitColor());
     		}
     	}
 

@@ -1,5 +1,6 @@
 using System.Linq;
 using _2DGAMELIB;
+using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
@@ -808,7 +809,7 @@ namespace SlaveMatrix
     	public override void SetAngle0()
     	{
     		double num = (右 ? (-1.0) : 1.0);
-    		X0Y0_Leg.AngleBase = num * -136.0;
+    		X0Y0_Leg.SetAngleBase(num * -136.0);
     		Body.JoinPAall();
     	}
 

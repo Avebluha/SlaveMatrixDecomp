@@ -1,4 +1,5 @@
 using _2DGAMELIB;
+using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
@@ -583,10 +584,10 @@ namespace SlaveMatrix
     		X0Y0_グリップ_グリップ14CP = new ColorP(X0Y0_グリップ_グリップ14, グリップ_グリップ14CD, DisUnit, abj: true);
     		X0Y0_グリップ_グリップ15CP = new ColorP(X0Y0_グリップ_グリップ15, グリップ_グリップ15CD, DisUnit, abj: true);
     		Intensity = e.濃度;
-    		Vector2D local = X0Y0_刃_刃1.OP[0].ps[1];
+    		Vector2D local = X0Y0_刃_刃1.GetOP()[0].ps[1];
     		foreach (Par item in Body.EnumJoinRoot)
     		{
-    			item.BasePointBase = item.ToLocal(X0Y0_刃_刃1.ToGlobal(local));
+    			item.SetBasePointBase(item.ToLocal(X0Y0_刃_刃1.ToGlobal(local)));
     		}
     		尺度B = 1.08;
     		Body.JoinPAall();

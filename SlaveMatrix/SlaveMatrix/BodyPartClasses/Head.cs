@@ -1,4 +1,5 @@
 using _2DGAMELIB;
+using SlaveMatrix.GameClasses;
 using System.Linq;
 
 namespace SlaveMatrix
@@ -952,18 +953,18 @@ namespace SlaveMatrix
     		set
     		{
     			double y = 0.9975 + 0.004 * value.Inverse();
-    			X0Y0_Head.JP[0].Joint = X0Y0_Head.JP[0].Joint.MulY(y);
-    			X0Y0_Head.JP[1].Joint = X0Y0_Head.JP[1].Joint.MulY(y);
-    			X0Y0_Head.JP[2].Joint = X0Y0_Head.JP[2].Joint.MulY(y);
-    			X0Y0_Head.JP[8].Joint = X0Y0_Head.JP[8].Joint.MulY(y);
-    			X0Y0_Head.JP[9].Joint = X0Y0_Head.JP[9].Joint.MulY(y);
-    			X0Y0_Head.JP[12].Joint = X0Y0_Head.JP[12].Joint.MulY(y);
-    			X0Y0_Head.JP[13].Joint = X0Y0_Head.JP[13].Joint.MulY(y);
-    			X0Y0_Head.JP[14].Joint = X0Y0_Head.JP[14].Joint.MulY(y);
-    			X0Y0_Head.JP[10].Joint = X0Y0_Head.JP[10].Joint.MulY(y);
-    			X0Y0_Head.JP[11].Joint = X0Y0_Head.JP[11].Joint.MulY(y);
-    			X0Y0_Head.JP[15].Joint = X0Y0_Head.JP[15].Joint.MulY(y);
-    			X0Y0_Head.JP[16].Joint = X0Y0_Head.JP[16].Joint.MulY(y);
+    			X0Y0_Head.GetJP()[0].Joint = X0Y0_Head.GetJP()[0].Joint.MulY(y);
+    			X0Y0_Head.GetJP()[1].Joint = X0Y0_Head.GetJP()[1].Joint.MulY(y);
+    			X0Y0_Head.GetJP()[2].Joint = X0Y0_Head.GetJP()[2].Joint.MulY(y);
+    			X0Y0_Head.GetJP()[8].Joint = X0Y0_Head.GetJP()[8].Joint.MulY(y);
+    			X0Y0_Head.GetJP()[9].Joint = X0Y0_Head.GetJP()[9].Joint.MulY(y);
+    			X0Y0_Head.GetJP()[12].Joint = X0Y0_Head.GetJP()[12].Joint.MulY(y);
+    			X0Y0_Head.GetJP()[13].Joint = X0Y0_Head.GetJP()[13].Joint.MulY(y);
+    			X0Y0_Head.GetJP()[14].Joint = X0Y0_Head.GetJP()[14].Joint.MulY(y);
+    			X0Y0_Head.GetJP()[10].Joint = X0Y0_Head.GetJP()[10].Joint.MulY(y);
+    			X0Y0_Head.GetJP()[11].Joint = X0Y0_Head.GetJP()[11].Joint.MulY(y);
+    			X0Y0_Head.GetJP()[15].Joint = X0Y0_Head.GetJP()[15].Joint.MulY(y);
+    			X0Y0_Head.GetJP()[16].Joint = X0Y0_Head.GetJP()[16].Joint.MulY(y);
     		}
     	}
 
@@ -972,10 +973,10 @@ namespace SlaveMatrix
     		set
     		{
     			double num = 0.0007 * value;
-    			X0Y0_Head.JP[1].Joint = X0Y0_Head.JP[1].Joint.AddX(0.0 - num);
-    			X0Y0_Head.JP[2].Joint = X0Y0_Head.JP[2].Joint.AddX(num);
-    			X0Y0_Head.JP[15].Joint = X0Y0_Head.JP[15].Joint.AddX(0.0 - num);
-    			X0Y0_Head.JP[16].Joint = X0Y0_Head.JP[16].Joint.AddX(num);
+    			X0Y0_Head.GetJP()[1].Joint = X0Y0_Head.GetJP()[1].Joint.AddX(0.0 - num);
+    			X0Y0_Head.GetJP()[2].Joint = X0Y0_Head.GetJP()[2].Joint.AddX(num);
+    			X0Y0_Head.GetJP()[15].Joint = X0Y0_Head.GetJP()[15].Joint.AddX(0.0 - num);
+    			X0Y0_Head.GetJP()[16].Joint = X0Y0_Head.GetJP()[16].Joint.AddX(num);
     		}
     	}
 
@@ -984,8 +985,8 @@ namespace SlaveMatrix
     		set
     		{
     			double num = 0.001 * value;
-    			X0Y0_Head.JP[8].Joint = X0Y0_Head.JP[8].Joint.AddX(0.0 - num);
-    			X0Y0_Head.JP[9].Joint = X0Y0_Head.JP[9].Joint.AddX(num);
+    			X0Y0_Head.GetJP()[8].Joint = X0Y0_Head.GetJP()[8].Joint.AddX(0.0 - num);
+    			X0Y0_Head.GetJP()[9].Joint = X0Y0_Head.GetJP()[9].Joint.AddX(num);
     		}
     	}
 
@@ -1456,8 +1457,8 @@ namespace SlaveMatrix
     		X0Y0_馬柄_馬柄CP = new ColorP(X0Y0_馬柄_馬柄, 馬柄_馬柄CD, DisUnit, abj: true);
     		X0Y0_虫性_顎下CP = new ColorP(X0Y0_虫性_顎下, 虫性_顎下CD, DisUnit, abj: true);
     		Intensity = e.濃度;
-    		X0Y0_Head.JP[8].Joint = X0Y0_Head.JP[8].Joint.AddX(-0.00012);
-    		X0Y0_Head.JP[9].Joint = X0Y0_Head.JP[9].Joint.AddX(0.00012);
+    		X0Y0_Head.GetJP()[8].Joint = X0Y0_Head.GetJP()[8].Joint.AddX(-0.00012);
+    		X0Y0_Head.GetJP()[9].Joint = X0Y0_Head.GetJP()[9].Joint.AddX(0.00012);
     	}
 
     	public override void 描画0(RenderArea Are)
@@ -1517,14 +1518,14 @@ namespace SlaveMatrix
     		double y = 0.0003 * Rate;
     		Par par = Sta.胴体["Head"][0][0]["頭"].ToPar();
     		Par x0Y0_頭 = X0Y0_Head;
-    		x0Y0_頭.OP[0].ps[3] = par.OP[0].ps[3].AddY(y);
-    		x0Y0_頭.OP[0].ps[4] = par.OP[0].ps[4].AddY(y);
-    		x0Y0_頭.OP[1].ps[0] = par.OP[1].ps[0].AddY(y);
-    		x0Y0_頭.OP[1].ps[1] = par.OP[1].ps[1].AddY(y);
-    		x0Y0_頭.OP[1].ps[2] = par.OP[1].ps[2].AddY(y);
-    		x0Y0_頭.OP[1].ps[3] = par.OP[1].ps[3].AddY(y);
-    		x0Y0_頭.OP[2].ps[0] = par.OP[2].ps[0].AddY(y);
-    		x0Y0_頭.OP[2].ps[1] = par.OP[2].ps[1].AddY(y);
+    		x0Y0_頭.GetOP()[0].ps[3] = par.GetOP()[0].ps[3].AddY(y);
+    		x0Y0_頭.GetOP()[0].ps[4] = par.GetOP()[0].ps[4].AddY(y);
+    		x0Y0_頭.GetOP()[1].ps[0] = par.GetOP()[1].ps[0].AddY(y);
+    		x0Y0_頭.GetOP()[1].ps[1] = par.GetOP()[1].ps[1].AddY(y);
+    		x0Y0_頭.GetOP()[1].ps[2] = par.GetOP()[1].ps[2].AddY(y);
+    		x0Y0_頭.GetOP()[1].ps[3] = par.GetOP()[1].ps[3].AddY(y);
+    		x0Y0_頭.GetOP()[2].ps[0] = par.GetOP()[2].ps[0].AddY(y);
+    		x0Y0_頭.GetOP()[2].ps[1] = par.GetOP()[2].ps[1].AddY(y);
     	}
 
     	public void 開顎(口 口)

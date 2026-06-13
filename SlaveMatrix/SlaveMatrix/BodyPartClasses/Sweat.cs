@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using _2DGAMELIB;
+using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
@@ -60,7 +61,7 @@ namespace SlaveMatrix
     				if (汗.Intensity != 0.0)
     				{
     					tp = ryps2.r.ToGlobal(local);
-    					汗.Body.CurJoinRoot.PositionBase = tp + (ryps2.r.ToGlobal(ryps2.c) - tp) * 位置[this.i];
+    					汗.Body.GetCurJoinRoot().SetPositionBase(tp + (ryps2.r.ToGlobal(ryps2.c) - tp) * 位置[this.i]);
     					汗.Body.JoinPA();
     					汗.色更新();
     					汗.Body.Draw(Are);
@@ -206,9 +207,9 @@ namespace SlaveMatrix
     		foreach (Ele item in Cha.Body.Elements.Where((Ele e) => 汗対象.Contains(e.GetType().ToString())))
     		{
     			ryps = default(ryps);
-    			ryps.r = item.Body.CurJoinRoot;
-    			ryps.c = ryps.r.OP.GetCenter();
-    			ryps.ps = (from p in ryps.r.OP.EnumPoints()
+    			ryps.r = item.Body.GetCurJoinRoot();
+    			ryps.c = ryps.r.GetOP().GetCenter();
+    			ryps.ps = (from p in ryps.r.GetOP().EnumPoints()
     				where ryps.c.Y > p.Y
     				select p).ToArray();
     			list.Add(ryps);

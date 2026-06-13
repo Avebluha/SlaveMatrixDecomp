@@ -1,4 +1,5 @@
 using _2DGAMELIB;
+using SlaveMatrix.GameClasses;
 using System.Linq;
 
 namespace SlaveMatrix
@@ -633,17 +634,8 @@ namespace SlaveMatrix
     	public override void SetAngle0()
     	{
     		_ = 右;
-    		X0Y0_Torso_Torso.AngleBase = 20.0.GetRanAngle();
+    		X0Y0_Torso_Torso.SetAngleBase(20.0.GetRanAngle());
     		Body.JoinPAall();
-    	}
-
-    	public override bool Is革(Par p)
-    	{
-    		if (p != X0Y0_輪_革 && p != X0Y0_輪_金具1 && p != X0Y0_輪_金具2 && p != X0Y0_輪_金具3 && p != X0Y0_輪_金具左)
-    		{
-    			return p == X0Y0_輪_金具右;
-    		}
-    		return true;
     	}
 
     	public override void 色更新()

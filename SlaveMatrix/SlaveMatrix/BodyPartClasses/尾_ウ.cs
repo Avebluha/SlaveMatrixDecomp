@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using _2DGAMELIB;
+using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
@@ -4256,27 +4257,27 @@ namespace SlaveMatrix
     	{
     		_ = 右;
     		double maxAngle = 20.0;
-    		X0Y0_尾20_尾.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_尾19_尾.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_尾18_尾.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_尾17_尾.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_尾16_尾.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_尾15_尾.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_尾14_尾.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_尾13_尾.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_尾12_尾.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_尾11_尾.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_尾10_尾.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_尾9_尾.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_尾8_尾.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_尾7_尾.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_尾6_尾.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_尾5_尾.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_尾4_尾.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_尾3_尾.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_尾2_尾.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_尾1_尾.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_尾0_尾.AngleBase = maxAngle.GetRanAngle();
+    		X0Y0_尾20_尾.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_尾19_尾.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_尾18_尾.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_尾17_尾.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_尾16_尾.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_尾15_尾.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_尾14_尾.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_尾13_尾.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_尾12_尾.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_尾11_尾.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_尾10_尾.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_尾9_尾.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_尾8_尾.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_尾7_尾.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_尾6_尾.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_尾5_尾.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_尾4_尾.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_尾3_尾.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_尾2_尾.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_尾1_尾.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_尾0_尾.SetAngleBase(maxAngle.GetRanAngle());
     		Body.JoinPAall();
     		if (尾先_接続 != null)
     		{
@@ -4286,7 +4287,7 @@ namespace SlaveMatrix
 
     	public override void Set尾先角度()
     	{
-    		X0Y0_尾20_尾.AngleBase = 0.0;
+    		X0Y0_尾20_尾.SetAngleBase(0.0);
     	}
 
     	public override bool Is革(Par p)

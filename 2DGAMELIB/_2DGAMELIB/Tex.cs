@@ -59,10 +59,10 @@ namespace _2DGAMELIB
     		{
     			if (feed != null)
     			{
-    				a0 = feed.BrushColor.A;
-    				a1 = feed.PenColor.A;
-    				feed.BrushColor = Color.FromArgb(0, feed.BrushColor);
-    				feed.PenColor = Color.FromArgb(0, feed.PenColor);
+    				a0 = feed.GetBrushColor().A;
+    				a1 = feed.GetPenColor().A;
+    				feed.SetBrushColor(Color.FromArgb(0, feed.GetBrushColor()));
+    				feed.SetPenColor(Color.FromArgb(0, feed.GetPenColor()));
     			}
     			text = new string(' ', Space) + value;
     			Max = text.Length;
@@ -85,10 +85,10 @@ namespace _2DGAMELIB
     		{
     			if (feed != null)
     			{
-    				a0 = feed.BrushColor.A;
-    				a1 = feed.PenColor.A;
-    				feed.BrushColor = Color.FromArgb(0, feed.BrushColor);
-    				feed.PenColor = Color.FromArgb(0, feed.PenColor);
+    				a0 = feed.GetBrushColor().A;
+    				a1 = feed.GetPenColor().A;
+    				feed.SetBrushColor(Color.FromArgb(0, feed.GetBrushColor()));
+    				feed.SetPenColor(Color.FromArgb(0, feed.GetPenColor()));
     			}
     			text = new string(' ', Space) + value;
     			Max = text.Length;
@@ -113,14 +113,14 @@ namespace _2DGAMELIB
     	{
     		get
     		{
-    			return parT.PositionBase;
+    			return parT.GetPositionBase();
     		}
     		set
     		{
-    			parT.PositionBase = value;
+    			parT.SetPositionBase(value);
     			if (feed != null)
     			{
-    				feed.PositionBase = parT.ToGlobal(parT.OP[0].ps[2] * 0.95);
+    				feed.SetPositionBase(parT.ToGlobal(parT.GetOP()[0].ps[2] * 0.95));
     			}
     		}
     	}
@@ -209,22 +209,23 @@ namespace _2DGAMELIB
     		parT = new ParT
     		{
     			Tag = Name,
-    			InitializeOP = array,
-    			PositionBase = Position,
-    			SizeBase = Size,
-    			Closed = true,
-    			BrushColor = BackColor,
-    			Font = Font,
-    			FontSize = TextSize,
-    			TextColor = TextColor,
-    			RectSize = new Vector2D(Width, Height),
     			Text = Text
     		};
-    		ParT.OP.ScalingX(ParT.BasePointBase, Width);
-    		ParT.OP.ScalingY(ParT.BasePointBase, Height);
+
+			parT.SetFont(Font);
+    		parT.SetFontSize(TextSize);
+    		parT.SetTextColor(TextColor);
+    		parT.SetRectSize(new Vector2D(Width, Height));
+			parT.SetInitializeOP(array);
+    		parT.SetPositionBase(Position);
+    		parT.SetSizeBase(Size);
+    		parT.SetClosed(true);
+    		parT.SetBrushColor(BackColor);
+    		ParT.GetOP().ScalingX(ParT.GetBasePointBase(), Width);
+    		ParT.GetOP().ScalingY(ParT.GetBasePointBase(), Height);
     		if (ShadColor != Color.Empty)
     		{
-    			parT.ShadBrush = new SolidBrush(ShadColor);
+    			parT.SetShadBrush(new SolidBrush(ShadColor));
     		}
     		pars.Add(parT.Tag, parT);
     	}
@@ -235,27 +236,28 @@ namespace _2DGAMELIB
     		feed = new Par
     		{
     			Tag = Name + "_Feed",
-    			InitializeOP = array,
-    			BasePointBase = array.GetCenter(),
-    			PositionBase = parT.ToGlobal(parT.OP[0].ps[2] * 0.96),
-    			SizeBase = Size * 0.07,
-    			SizeYBase = 0.9,
-    			Closed = true,
-    			PenColor = Color.FromArgb(0, Color.Black),
-    			BrushColor = Color.FromArgb(0, FeedColor),
     			Hit = false
     		};
-    		feed.OP.ReverseY(feed.BasePointBase);
+    		feed.SetInitializeOP(array);
+    		feed.SetBasePointBase(array.GetCenter());
+    		feed.SetPositionBase(parT.ToGlobal(parT.GetOP()[0].ps[2] * 0.96));
+    		feed.SetSizeBase(Size * 0.07);
+    		feed.SetSizeYBase(0.9);
+    		feed.SetClosed(true);
+    		feed.SetPenColor(Color.FromArgb(0, Color.Black));
+    		feed.SetBrushColor(Color.FromArgb(0, FeedColor));
+
+    		feed.GetOP().ReverseY(feed.GetBasePointBase());
     		pars.Add(feed.Tag, feed);
     	}
 
     	public void SetHitColor(ModeEventDispatcher Med)
     	{
-    		if (parT.HitColor != Color.Transparent)
+    		if (parT.GetHitColor() != Color.Transparent)
     		{
-    			Med.RemUniqueColor(parT.HitColor);
+    			Med.RemUniqueColor(parT.GetHitColor());
     		}
-    		parT.HitColor = Med.GetUniqueColor();
+    		parT.SetHitColor(Med.GetUniqueColor());
     	}
 
     	public void Progression(FPS FPS)
@@ -273,8 +275,8 @@ namespace _2DGAMELIB
     			f1 = true;
     			if (feed != null)
     			{
-    				feed.BrushColor = Color.FromArgb(a0, feed.BrushColor);
-    				feed.PenColor = Color.FromArgb(a1, feed.PenColor);
+    				feed.SetBrushColor(Color.FromArgb(a0, feed.GetBrushColor()));
+    				feed.SetPenColor(Color.FromArgb(a1, feed.GetPenColor()));
     			}
     			if (Done != null)
     			{
@@ -285,14 +287,14 @@ namespace _2DGAMELIB
     		else if (feed != null && feed.Dra)
     		{
     			mv.GetValue(FPS);
-    			feed.BrushColor = Color.FromArgb((int)mv.Value, feed.BrushColor);
-    			feed.PenColor = Color.FromArgb(feed.BrushColor.A, feed.PenColor);
+    			feed.SetBrushColor(Color.FromArgb((int)mv.Value, feed.GetBrushColor()));
+    			feed.SetPenColor(Color.FromArgb(feed.GetBrushColor().A, feed.GetPenColor()));
     		}
     	}
 
     	public bool Down(ref Color HitColor)
     	{
-    		if (parT.HitColor == HitColor)
+    		if (parT.GetHitColor() == HitColor)
     		{
     			f2 = true;
     			if (!f1 && Speed == speed)
@@ -306,14 +308,14 @@ namespace _2DGAMELIB
 
     	public bool Up(ref Color HitColor)
     	{
-    		if (f1 && f2 && parT.HitColor == HitColor && Speed == speed)
+    		if (f1 && f2 && parT.GetHitColor() == HitColor && Speed == speed)
     		{
     			f1 = false;
     			f2 = false;
     			if (feed != null)
     			{
-    				feed.BrushColor = Color.FromArgb(0, feed.BrushColor);
-    				feed.PenColor = Color.FromArgb(feed.BrushColor.A, feed.PenColor);
+    				feed.SetBrushColor(Color.FromArgb(0, feed.GetBrushColor()));
+    				feed.SetPenColor(Color.FromArgb(feed.GetBrushColor().A, feed.GetPenColor()));
     				mv.ResetValue();
     			}
     			Action(this);

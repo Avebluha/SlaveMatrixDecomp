@@ -1,4 +1,5 @@
 using _2DGAMELIB;
+using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
@@ -1306,23 +1307,23 @@ namespace SlaveMatrix
     		X0Y16_輪上境界CP = new ColorP(X0Y16_輪上境界, 輪上境界CD, DisUnit, abj: true);
     		X0Y16_輪下CP = new ColorP(X0Y16_輪下, 輪下CD, DisUnit, abj: true);
     		Intensity = e.濃度;
-    		X0Y0_輪下.BasePointBase = X0Y0_輪下.ToLocal(X0Y0_玉境界.ToGlobal(X0Y0_玉境界.JP[0].Joint));
-    		X0Y1_輪下.BasePointBase = X0Y1_輪下.ToLocal(X0Y1_玉境界.ToGlobal(X0Y1_玉境界.JP[0].Joint));
-    		X0Y2_輪下.BasePointBase = X0Y2_輪下.ToLocal(X0Y2_玉境界.ToGlobal(X0Y2_玉境界.JP[0].Joint));
-    		X0Y3_輪下.BasePointBase = X0Y3_輪下.ToLocal(X0Y3_玉境界.ToGlobal(X0Y3_玉境界.JP[0].Joint));
-    		X0Y4_輪下.BasePointBase = X0Y4_輪下.ToLocal(X0Y4_玉境界.ToGlobal(X0Y4_玉境界.JP[0].Joint));
-    		X0Y5_輪下.BasePointBase = X0Y5_輪下.ToLocal(X0Y5_玉境界.ToGlobal(X0Y5_玉境界.JP[0].Joint));
-    		X0Y6_輪下.BasePointBase = X0Y6_輪下.ToLocal(X0Y6_玉境界.ToGlobal(X0Y6_玉境界.JP[0].Joint));
-    		X0Y7_輪下.BasePointBase = X0Y7_輪下.ToLocal(X0Y7_玉境界.ToGlobal(X0Y7_玉境界.JP[0].Joint));
-    		X0Y8_輪下.BasePointBase = X0Y8_輪下.ToLocal(X0Y8_玉境界.ToGlobal(X0Y8_玉境界.JP[0].Joint));
-    		X0Y9_輪下.BasePointBase = X0Y9_輪下.ToLocal(X0Y9_玉境界.ToGlobal(X0Y9_玉境界.JP[0].Joint));
-    		X0Y10_輪下.BasePointBase = X0Y10_輪下.ToLocal(X0Y10_玉境界.ToGlobal(X0Y10_玉境界.JP[0].Joint));
-    		X0Y11_輪下.BasePointBase = X0Y11_輪下.ToLocal(X0Y11_玉境界.ToGlobal(X0Y11_玉境界.JP[0].Joint));
-    		X0Y12_輪下.BasePointBase = X0Y12_輪下.ToLocal(X0Y12_玉境界.ToGlobal(X0Y12_玉境界.JP[0].Joint));
-    		X0Y13_輪下.BasePointBase = X0Y13_輪下.ToLocal(X0Y13_玉境界.ToGlobal(X0Y13_玉境界.JP[0].Joint));
-    		X0Y14_輪下.BasePointBase = X0Y14_輪下.ToLocal(X0Y14_玉境界.ToGlobal(X0Y14_玉境界.JP[0].Joint));
-    		X0Y15_輪下.BasePointBase = X0Y15_輪下.ToLocal(X0Y15_玉境界.ToGlobal(X0Y15_玉境界.JP[0].Joint));
-    		X0Y16_輪下.BasePointBase = X0Y16_輪下.ToLocal(X0Y16_輪上境界.ToGlobal(X0Y16_輪上境界.JP[0].Joint));
+    		X0Y0_輪下.SetBasePointBase(X0Y0_輪下.ToLocal(X0Y0_玉境界.ToGlobal(X0Y0_玉境界.GetJP()[0].Joint)));
+    		X0Y1_輪下.SetBasePointBase(X0Y1_輪下.ToLocal(X0Y1_玉境界.ToGlobal(X0Y1_玉境界.GetJP()[0].Joint)));
+    		X0Y2_輪下.SetBasePointBase(X0Y2_輪下.ToLocal(X0Y2_玉境界.ToGlobal(X0Y2_玉境界.GetJP()[0].Joint)));
+    		X0Y3_輪下.SetBasePointBase(X0Y3_輪下.ToLocal(X0Y3_玉境界.ToGlobal(X0Y3_玉境界.GetJP()[0].Joint)));
+    		X0Y4_輪下.SetBasePointBase(X0Y4_輪下.ToLocal(X0Y4_玉境界.ToGlobal(X0Y4_玉境界.GetJP()[0].Joint)));
+    		X0Y5_輪下.SetBasePointBase(X0Y5_輪下.ToLocal(X0Y5_玉境界.ToGlobal(X0Y5_玉境界.GetJP()[0].Joint)));
+    		X0Y6_輪下.SetBasePointBase(X0Y6_輪下.ToLocal(X0Y6_玉境界.ToGlobal(X0Y6_玉境界.GetJP()[0].Joint)));
+    		X0Y7_輪下.SetBasePointBase(X0Y7_輪下.ToLocal(X0Y7_玉境界.ToGlobal(X0Y7_玉境界.GetJP()[0].Joint)));
+    		X0Y8_輪下.SetBasePointBase(X0Y8_輪下.ToLocal(X0Y8_玉境界.ToGlobal(X0Y8_玉境界.GetJP()[0].Joint)));
+    		X0Y9_輪下.SetBasePointBase(X0Y9_輪下.ToLocal(X0Y9_玉境界.ToGlobal(X0Y9_玉境界.GetJP()[0].Joint)));
+    		X0Y10_輪下.SetBasePointBase(X0Y10_輪下.ToLocal(X0Y10_玉境界.ToGlobal(X0Y10_玉境界.GetJP()[0].Joint)));
+    		X0Y11_輪下.SetBasePointBase(X0Y11_輪下.ToLocal(X0Y11_玉境界.ToGlobal(X0Y11_玉境界.GetJP()[0].Joint)));
+    		X0Y12_輪下.SetBasePointBase(X0Y12_輪下.ToLocal(X0Y12_玉境界.ToGlobal(X0Y12_玉境界.GetJP()[0].Joint)));
+    		X0Y13_輪下.SetBasePointBase(X0Y13_輪下.ToLocal(X0Y13_玉境界.ToGlobal(X0Y13_玉境界.GetJP()[0].Joint)));
+    		X0Y14_輪下.SetBasePointBase(X0Y14_輪下.ToLocal(X0Y14_玉境界.ToGlobal(X0Y14_玉境界.GetJP()[0].Joint)));
+    		X0Y15_輪下.SetBasePointBase(X0Y15_輪下.ToLocal(X0Y15_玉境界.ToGlobal(X0Y15_玉境界.GetJP()[0].Joint)));
+    		X0Y16_輪下.SetBasePointBase(X0Y16_輪下.ToLocal(X0Y16_輪上境界.ToGlobal(X0Y16_輪上境界.GetJP()[0].Joint)));
     		尺度B *= 1.07;
     		尺度B = 1.08;
     		Body.JoinPAall();
@@ -1330,7 +1331,7 @@ namespace SlaveMatrix
 
     	public override void 色更新()
     	{
-    		switch (Body.IndexY)
+    		switch (Body.GetIndexY())
     		{
     		case 0:
     			X0Y0_軸CP.Update();

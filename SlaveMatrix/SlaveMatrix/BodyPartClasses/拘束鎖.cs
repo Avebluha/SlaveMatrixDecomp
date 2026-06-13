@@ -1,5 +1,6 @@
 using System.Linq;
 using _2DGAMELIB;
+using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
@@ -291,14 +292,14 @@ namespace SlaveMatrix
 
     	public void SetSize()
     	{
-    		Par par = 接続根.Difs0.Current.GetPar(接続根.Path0);
-    		if (par.JP.Count <= 0)
+    		Par par = 接続根.Difs0.GetCurrent().GetPar(接続根.Path0);
+    		if (par.GetJP().Count <= 0)
     		{
     			return;
     		}
     		int num = 0;
     		Vector2D vec2DZero = Dat.Vec2DZero;
-    		foreach (Out item in par.OP)
+    		foreach (Out item in par.GetOP())
     		{
     			foreach (Vector2D item2 in item.ps.Skip(1).Take(item.ps.Count - 2))
     			{
@@ -306,7 +307,7 @@ namespace SlaveMatrix
     				num++;
     			}
     		}
-    		par.JP[0] = new Joi(vec2DZero / num);
+    		par.GetJP()[0] = new Joi(vec2DZero / num);
     		接続P();
     		尺度B = (par.GetArea() / X0Y0_鎖1.GetArea()).Sqrt() * 1.2;
     	}

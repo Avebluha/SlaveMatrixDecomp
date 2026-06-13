@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using _2DGAMELIB;
+using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
@@ -112,7 +113,7 @@ namespace SlaveMatrix
     		set
     		{
     			double num = 0.7 + 0.3 * value;
-    			X0Y0_髪基.SizeYBase *= num;
+    			X0Y0_髪基.SetSizeYBase(X0Y0_髪基.GetSizeYBase() * num);
     		}
     	}
 
@@ -323,8 +324,8 @@ namespace SlaveMatrix
 
     	public void スライム()
     	{
-    		X0Y0_髪基.OP[右 ? 1 : 0].Outline = false;
-    		X0Y0_髪基.OP[(!右) ? 1 : 0].Outline = false;
+    		X0Y0_髪基.GetOP()[右 ? 1 : 0].Outline = false;
+    		X0Y0_髪基.GetOP()[(!右) ? 1 : 0].Outline = false;
     	}
 
     	public override void 色更新()

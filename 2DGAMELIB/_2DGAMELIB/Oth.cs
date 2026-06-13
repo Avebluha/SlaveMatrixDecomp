@@ -9,10 +9,6 @@ namespace _2DGAMELIB
 {
     public static class Oth
     {
-    	private static double s1;
-
-    	private static double s0;
-
     	public static Color Reverse(this Color c)
     	{
     		return Color.FromArgb(c.A, 255 - c.R, 255 - c.G, 255 - c.B);
@@ -50,7 +46,7 @@ namespace _2DGAMELIB
 
     	public static LinearGradientBrush GetLGB(double Unit, Vector2D[] MM, Color Color1, Color Color2)
     	{
-    		return new LinearGradientBrush((MM[0] * Unit * s0).ToPointF(), (MM[1] * Unit * s1).ToPointF(), Color1, Color2)
+    		return new LinearGradientBrush((MM[0] * Unit * 1.01.Reciprocal()).ToPointF(), (MM[1] * Unit * 1.01).ToPointF(), Color1, Color2)
     		{
     			GammaCorrection = true
     		};
@@ -58,7 +54,7 @@ namespace _2DGAMELIB
 
     	public static LinearGradientBrush GetLGB(double Unit, Vector2D[] MM, ref Color Color1, ref Color Color2)
     	{
-    		return new LinearGradientBrush((MM[0] * Unit * s0).ToPointF(), (MM[1] * Unit * s1).ToPointF(), Color1, Color2)
+    		return new LinearGradientBrush((MM[0] * Unit * 1.01.Reciprocal()).ToPointF(), (MM[1] * Unit * 1.01).ToPointF(), Color1, Color2)
     		{
     			GammaCorrection = true
     		};
@@ -66,7 +62,7 @@ namespace _2DGAMELIB
 
     	private static void GetMinMaxX(Par Par, ref double MinX, ref double MaxX)
     	{
-    		foreach (Out item in Par.OP)
+    		foreach (Out item in Par.GetOP())
     		{
     			foreach (Vector2D p in item.ps)
     			{
@@ -85,7 +81,7 @@ namespace _2DGAMELIB
 
     	private static void GetMinMaxY(Par Par, ref double MinY, ref double MaxY)
     	{
-    		foreach (Out item in Par.OP)
+    		foreach (Out item in Par.GetOP())
     		{
     			foreach (Vector2D p in item.ps)
     			{
@@ -112,7 +108,7 @@ namespace _2DGAMELIB
 
     	public static void GetMiX_MaX(this Par Par, out Vector2D[] MM)
     	{
-    		Vector2D vector2D = Par.ToGlobal(Par.OP.First().ps.First());
+    		Vector2D vector2D = Par.ToGlobal(Par.GetOP().First().ps.First());
     		MM = new Vector2D[2];
     		MM[0].X = vector2D.X;
     		MM[1].X = vector2D.X;
@@ -121,7 +117,7 @@ namespace _2DGAMELIB
 
     	public static void GetMaX_MiX(this Par Par, out Vector2D[] MM)
     	{
-    		Vector2D vector2D = Par.ToGlobal(Par.OP.First().ps.First());
+    		Vector2D vector2D = Par.ToGlobal(Par.GetOP().First().ps.First());
     		MM = new Vector2D[2];
     		MM[0].X = vector2D.X;
     		MM[1].X = vector2D.X;
@@ -130,7 +126,7 @@ namespace _2DGAMELIB
 
     	public static void GetMiY_MaY(this Par Par, out Vector2D[] MM)
     	{
-    		Vector2D vector2D = Par.ToGlobal(Par.OP.First().ps.First());
+    		Vector2D vector2D = Par.ToGlobal(Par.GetOP().First().ps.First());
     		MM = new Vector2D[2];
     		MM[0].Y = vector2D.Y;
     		MM[1].Y = vector2D.Y;
@@ -140,7 +136,7 @@ namespace _2DGAMELIB
     	public static void GetMiY_MaY(this Par[] Pars, out Vector2D[] MM)
     	{
     		Par par = Pars.First();
-    		Vector2D vector2D = par.ToGlobal(par.OP.First().ps.First());
+    		Vector2D vector2D = par.ToGlobal(par.GetOP().First().ps.First());
     		MM = new Vector2D[2];
     		MM[0].Y = vector2D.Y;
     		MM[1].Y = vector2D.Y;
@@ -149,7 +145,7 @@ namespace _2DGAMELIB
 
     	public static void GetMaY_MiY(this Par Par, out Vector2D[] MM)
     	{
-    		Vector2D vector2D = Par.ToGlobal(Par.OP.First().ps.First());
+    		Vector2D vector2D = Par.ToGlobal(Par.GetOP().First().ps.First());
     		MM = new Vector2D[2];
     		MM[0].Y = vector2D.Y;
     		MM[1].Y = vector2D.Y;
@@ -186,7 +182,7 @@ namespace _2DGAMELIB
 
     	public static Encoding GetEncoding(this byte[] Bytes)
     	{
-    		byte[] array = null;
+    		byte[] array;
     		if (Bytes.Length > 4000)
     		{
     			array = new byte[4000];
@@ -339,8 +335,6 @@ namespace _2DGAMELIB
 
     	static Oth()
     	{
-    		s1 = 1.01;
-    		s0 = s1.Reciprocal();
     	}
 
     	public static void SaveExMod<T>(this T Obj, string Path)

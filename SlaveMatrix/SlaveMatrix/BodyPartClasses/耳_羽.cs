@@ -143,7 +143,7 @@ namespace SlaveMatrix
     		set
     		{
     			欠損_ = value;
-    			Body.IndexX = (欠損_ ? 1 : 0);
+    			Body.SetIndexX((欠損_ ? 1 : 0));
     		}
     	}
 
@@ -435,32 +435,32 @@ namespace SlaveMatrix
     	public override void SetAngle0()
     	{
     		double num = (右 ? (-1.0) : 1.0);
-    		X0Y0_耳.AngleBase = num * -314.0;
-    		X0Y0_羽1.AngleBase = num * -31.0;
-    		X0Y0_羽2.AngleBase = num * 291.0;
-    		X0Y1_耳.AngleBase = num * -333.0;
-    		X0Y1_羽1.AngleBase = num * -20.9999999999999;
-    		X0Y1_羽2.AngleBase = num * 313.0;
-    		X0Y2_耳.AngleBase = num * 0.0;
-    		X0Y2_羽1.AngleBase = num * -2.49999999999986;
-    		X0Y2_羽2.AngleBase = num * -16.0000000000001;
-    		X1Y0_耳.AngleBase = num * -314.0;
-    		X1Y0_羽1.AngleBase = num * -31.0;
-    		X1Y0_羽2.AngleBase = num * 291.0;
-    		X1Y1_耳.AngleBase = num * -333.0;
-    		X1Y1_羽1.AngleBase = num * -20.9999999999999;
-    		X1Y1_羽2.AngleBase = num * 313.0;
-    		X1Y2_耳.AngleBase = num * 0.0;
-    		X1Y2_羽1.AngleBase = num * -2.49999999999986;
-    		X1Y2_羽2.AngleBase = num * -16.0000000000001;
+    		X0Y0_耳.SetAngleBase(num * -314.0);
+    		X0Y0_羽1.SetAngleBase(num * -31.0);
+    		X0Y0_羽2.SetAngleBase(num * 291.0);
+    		X0Y1_耳.SetAngleBase(num * -333.0);
+    		X0Y1_羽1.SetAngleBase(num * -20.9999999999999);
+    		X0Y1_羽2.SetAngleBase(num * 313.0);
+    		X0Y2_耳.SetAngleBase(num * 0.0);
+    		X0Y2_羽1.SetAngleBase(num * -2.49999999999986);
+    		X0Y2_羽2.SetAngleBase(num * -16.0000000000001);
+    		X1Y0_耳.SetAngleBase(num * -314.0);
+    		X1Y0_羽1.SetAngleBase(num * -31.0);
+    		X1Y0_羽2.SetAngleBase(num * 291.0);
+    		X1Y1_耳.SetAngleBase(num * -333.0);
+    		X1Y1_羽1.SetAngleBase(num * -20.9999999999999);
+    		X1Y1_羽2.SetAngleBase(num * 313.0);
+    		X1Y2_耳.SetAngleBase(num * 0.0);
+    		X1Y2_羽1.SetAngleBase(num * -2.49999999999986);
+    		X1Y2_羽2.SetAngleBase(num * -16.0000000000001);
     		Body.JoinPAall();
     	}
 
     	public override void 色更新()
     	{
-    		if (Body.IndexX == 0)
+    		if (Body.GetIndexX() == 0)
     		{
-    			switch (Body.IndexY)
+    			switch (Body.GetIndexY())
     			{
     			case 0:
     				X0Y0_羽2CP.Update();
@@ -487,7 +487,7 @@ namespace SlaveMatrix
     		}
     		else
     		{
-    			switch (Body.IndexY)
+    			switch (Body.GetIndexY())
     			{
     			case 0:
     				X1Y0_羽2CP.Update();

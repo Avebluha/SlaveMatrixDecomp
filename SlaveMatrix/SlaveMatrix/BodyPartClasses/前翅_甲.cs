@@ -1,5 +1,6 @@
 using System.Linq;
 using _2DGAMELIB;
+using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
@@ -236,7 +237,7 @@ namespace SlaveMatrix
     		set
     		{
     			欠損_ = value;
-    			Body.IndexY = (欠損_ ? 1 : 0);
+    			Body.SetIndexY((欠損_ ? 1 : 0));
     		}
     	}
 
@@ -688,18 +689,18 @@ namespace SlaveMatrix
     		{
     			double num = value.Inverse();
     			double num2 = (右 ? (-1.0) : 1.0);
-    			X0Y0_前翅_前翅軸_軸1.AngleCont = num2 * -95.0 * num;
-    			X0Y0_前翅_前翅軸_軸2.AngleCont = num2 * -28.0 * num;
-    			X0Y0_前翅_前翅軸_軸3.AngleCont = num2 * -178.0 * num;
-    			X0Y0_前翅_前翅甲_甲1.AngleCont = num2 * -45.0 * num;
-    			X0Y0_甲付根.AngleCont = num2 * 6.0 * num;
-    			X0Y0_前翅_前翅軸_軸3.SizeXCont = 0.7 + 0.3 * value;
-    			X0Y1_前翅_前翅軸_軸1.AngleCont = num2 * -95.0 * num;
-    			X0Y1_前翅_前翅軸_軸2.AngleCont = num2 * -28.0 * num;
-    			X0Y1_前翅_前翅軸_軸3.AngleCont = num2 * -178.0 * num;
-    			X0Y1_前翅_前翅甲_甲1.AngleCont = num2 * -45.0 * num;
-    			X0Y1_甲付根.AngleCont = num2 * 6.0 * num;
-    			X0Y1_前翅_前翅軸_軸3.SizeXCont = 0.7 + 0.3 * value;
+    			X0Y0_前翅_前翅軸_軸1.SetAngleCont(num2 * -95.0 * num);
+    			X0Y0_前翅_前翅軸_軸2.SetAngleCont(num2 * -28.0 * num);
+    			X0Y0_前翅_前翅軸_軸3.SetAngleCont(num2 * -178.0 * num);
+    			X0Y0_前翅_前翅甲_甲1.SetAngleCont(num2 * -45.0 * num);
+    			X0Y0_甲付根.SetAngleCont(num2 * 6.0 * num);
+    			X0Y0_前翅_前翅軸_軸3.SetSizeXCont(0.7 + 0.3 * value);
+    			X0Y1_前翅_前翅軸_軸1.SetAngleCont(num2 * -95.0 * num);
+    			X0Y1_前翅_前翅軸_軸2.SetAngleCont(num2 * -28.0 * num);
+    			X0Y1_前翅_前翅軸_軸3.SetAngleCont(num2 * -178.0 * num);
+    			X0Y1_前翅_前翅甲_甲1.SetAngleCont(num2 * -45.0 * num);
+    			X0Y1_甲付根.SetAngleCont(num2 * 6.0 * num);
+    			X0Y1_前翅_前翅軸_軸3.SetSizeXCont(0.7 + 0.3 * value);
     		}
     	}
 
@@ -910,24 +911,24 @@ namespace SlaveMatrix
     	public override void SetAngle0()
     	{
     		double num = (右 ? (-1.0) : 1.0);
-    		X0Y0_付根_付根0.AngleBase = num * 21.0;
-    		X0Y1_付根_付根0.AngleBase = num * 21.0;
-    		X0Y0_前翅_前翅軸_軸1.AngleBase = num * 18.0;
-    		X0Y1_前翅_前翅軸_軸1.AngleBase = num * 18.0;
-    		X0Y0_前翅_前翅軸_軸2.AngleBase = num * -24.0;
-    		X0Y1_前翅_前翅軸_軸2.AngleBase = num * -24.0;
-    		X0Y0_前翅_前翅軸_軸3.AngleBase = num * 13.0;
-    		X0Y1_前翅_前翅軸_軸3.AngleBase = num * 13.0;
-    		X0Y0_前翅_前翅甲_甲1.AngleBase = num * -4.0;
-    		X0Y1_前翅_前翅甲_甲1.AngleBase = num * -4.0;
-    		X0Y0_甲付根.AngleBase = num * 5.0;
-    		X0Y1_甲付根.AngleBase = num * 5.0;
+    		X0Y0_付根_付根0.SetAngleBase(num * 21.0);
+    		X0Y1_付根_付根0.SetAngleBase(num * 21.0);
+    		X0Y0_前翅_前翅軸_軸1.SetAngleBase(num * 18.0);
+    		X0Y1_前翅_前翅軸_軸1.SetAngleBase(num * 18.0);
+    		X0Y0_前翅_前翅軸_軸2.SetAngleBase(num * -24.0);
+    		X0Y1_前翅_前翅軸_軸2.SetAngleBase(num * -24.0);
+    		X0Y0_前翅_前翅軸_軸3.SetAngleBase(num * 13.0);
+    		X0Y1_前翅_前翅軸_軸3.SetAngleBase(num * 13.0);
+    		X0Y0_前翅_前翅甲_甲1.SetAngleBase(num * -4.0);
+    		X0Y1_前翅_前翅甲_甲1.SetAngleBase(num * -4.0);
+    		X0Y0_甲付根.SetAngleBase(num * 5.0);
+    		X0Y1_甲付根.SetAngleBase(num * 5.0);
     		Body.JoinPAall();
     	}
 
     	public override void 色更新()
     	{
-    		if (Body.IndexY == 0)
+    		if (Body.GetIndexY() == 0)
     		{
     			X0Y0_前翅_前翅軸_軸1CP.Update();
     			X0Y0_前翅_前翅軸_軸2CP.Update();

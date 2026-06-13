@@ -320,7 +320,7 @@ namespace SlaveMatrix
     				調教UI.押し(ref cd);
     			}
     			調教UI.マウス.Xi = 3;
-    			調教UI.マウス.Yi = (調教UI.マウス.Yi - dt.Sign() * 2).Clamp(0, 調教UI.マウス.Body.CountY);
+    			調教UI.マウス.Yi = (調教UI.マウス.Yi - dt.Sign() * 2).Clamp(0, 調教UI.マウス.Body.GetCountY());
     			if (cd.c == ContactType.Mouth)
     			{
     				対象.Ele.Intensity = 0.5;
@@ -365,7 +365,7 @@ namespace SlaveMatrix
     					マウス処理2.対象.Ele.尺度C = s * d;
     				}
     				マウス処理2.対象.Ele.位置C = Oth.GetRandomVector() * d * 0.0005;
-    				調教UI.マウス.X2Y0_舌.PositionCont = Oth.GetRandomVector() * d * 0.001;
+    				調教UI.マウス.X2Y0_舌.SetPositionCont(Oth.GetRandomVector() * d * 0.001);
     				if (sw.IsRunning)
     				{
     					if (sw.ElapsedMilliseconds > 250)
@@ -413,7 +413,7 @@ namespace SlaveMatrix
     				m.ResetValue();
     				マウス処理2.対象.Ele.尺度C = 1.0;
     				マウス処理2.対象.Ele.位置C = Dat.Vec2DZero;
-    				調教UI.マウス.X2Y0_舌.PositionCont = Dat.Vec2DZero;
+    				調教UI.マウス.X2Y0_舌.SetPositionCont(Dat.Vec2DZero);
     			}
     		};
     		調教UI.Mots.Add(キスモーション.GetHashCode().ToString(), キスモーション);

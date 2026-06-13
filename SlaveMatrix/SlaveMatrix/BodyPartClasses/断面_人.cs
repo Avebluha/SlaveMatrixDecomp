@@ -573,46 +573,46 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return X0Y0_膣基.SizeYCont;
+    			return X0Y0_膣基.GetSizeYCont();
     		}
     		set
     		{
-    			X0Y0_膣基.SizeYCont = value;
-    			X0Y0_膣壁左.SizeYCont = value;
-    			X0Y0_膣壁右.SizeYCont = value;
-    			X0Y1_膣基.SizeYCont = value;
-    			X0Y1_膣壁左.SizeYCont = value;
-    			X0Y1_膣壁右.SizeYCont = value;
-    			X0Y2_膣基.SizeYCont = value;
-    			X0Y2_膣壁左.SizeYCont = value;
-    			X0Y2_膣壁右.SizeYCont = value;
-    			X0Y3_膣基.SizeYCont = value;
-    			X0Y3_膣壁左.SizeYCont = value;
-    			X0Y3_膣壁右.SizeYCont = value;
-    			X0Y4_膣基.SizeYCont = value;
-    			X0Y4_膣壁左.SizeYCont = value;
-    			X0Y4_膣壁右.SizeYCont = value;
+    			X0Y0_膣基.SetSizeYCont(value);
+    			X0Y0_膣壁左.SetSizeYCont(value);
+    			X0Y0_膣壁右.SetSizeYCont(value);
+    			X0Y1_膣基.SetSizeYCont(value);
+    			X0Y1_膣壁左.SetSizeYCont(value);
+    			X0Y1_膣壁右.SetSizeYCont(value);
+    			X0Y2_膣基.SetSizeYCont(value);
+    			X0Y2_膣壁左.SetSizeYCont(value);
+    			X0Y2_膣壁右.SetSizeYCont(value);
+    			X0Y3_膣基.SetSizeYCont(value);
+    			X0Y3_膣壁左.SetSizeYCont(value);
+    			X0Y3_膣壁右.SetSizeYCont(value);
+    			X0Y4_膣基.SetSizeYCont(value);
+    			X0Y4_膣壁左.SetSizeYCont(value);
+    			X0Y4_膣壁右.SetSizeYCont(value);
     			double sizeYCont = value.Reciprocal();
-    			X0Y0_子宮.SizeYCont = sizeYCont;
-    			X0Y0_子宮内.SizeYCont = sizeYCont;
-    			X0Y0_子宮口.SizeYCont = sizeYCont;
-    			X0Y0_精液.SizeYCont = sizeYCont;
-    			X0Y1_子宮.SizeYCont = sizeYCont;
-    			X0Y1_子宮内.SizeYCont = sizeYCont;
-    			X0Y1_子宮口.SizeYCont = sizeYCont;
-    			X0Y1_精液.SizeYCont = sizeYCont;
-    			X0Y2_子宮.SizeYCont = sizeYCont;
-    			X0Y2_子宮内.SizeYCont = sizeYCont;
-    			X0Y2_子宮口.SizeYCont = sizeYCont;
-    			X0Y2_精液.SizeYCont = sizeYCont;
-    			X0Y3_子宮.SizeYCont = sizeYCont;
-    			X0Y3_子宮内.SizeYCont = sizeYCont;
-    			X0Y3_子宮口.SizeYCont = sizeYCont;
-    			X0Y3_精液.SizeYCont = sizeYCont;
-    			X0Y4_子宮.SizeYCont = sizeYCont;
-    			X0Y4_子宮内.SizeYCont = sizeYCont;
-    			X0Y4_子宮口.SizeYCont = sizeYCont;
-    			X0Y4_精液.SizeYCont = sizeYCont;
+    			X0Y0_子宮.SetSizeYCont(sizeYCont);
+    			X0Y0_子宮内.SetSizeYCont(sizeYCont);
+    			X0Y0_子宮口.SetSizeYCont(sizeYCont);
+    			X0Y0_精液.SetSizeYCont(sizeYCont);
+    			X0Y1_子宮.SetSizeYCont(sizeYCont);
+    			X0Y1_子宮内.SetSizeYCont(sizeYCont);
+    			X0Y1_子宮口.SetSizeYCont(sizeYCont);
+    			X0Y1_精液.SetSizeYCont(sizeYCont);
+    			X0Y2_子宮.SetSizeYCont(sizeYCont);
+    			X0Y2_子宮内.SetSizeYCont(sizeYCont);
+    			X0Y2_子宮口.SetSizeYCont(sizeYCont);
+    			X0Y2_精液.SetSizeYCont(sizeYCont);
+    			X0Y3_子宮.SetSizeYCont(sizeYCont);
+    			X0Y3_子宮内.SetSizeYCont(sizeYCont);
+    			X0Y3_子宮口.SetSizeYCont(sizeYCont);
+    			X0Y3_精液.SetSizeYCont(sizeYCont);
+    			X0Y4_子宮.SetSizeYCont(sizeYCont);
+    			X0Y4_子宮内.SetSizeYCont(sizeYCont);
+    			X0Y4_子宮口.SetSizeYCont(sizeYCont);
+    			X0Y4_精液.SetSizeYCont(sizeYCont);
     		}
     	}
 
@@ -786,7 +786,7 @@ namespace SlaveMatrix
 
     	public override void 色更新()
     	{
-    		switch (Body.IndexY)
+    		switch (Body.GetIndexY())
     		{
     		case 0:
     			X0Y0_膣基CP.Update();

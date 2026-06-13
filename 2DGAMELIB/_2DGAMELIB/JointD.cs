@@ -29,13 +29,13 @@ namespace _2DGAMELIB
 
     	public void JoinP()
     	{
-    		Difs0.Current.GetPar(Path0).SetJointP(Index, Difs1.CurJoinRoot);
+    		Difs0.GetCurrent().GetPar(Path0).SetJointP(Index, Difs1.GetCurJoinRoot());
     		Difs1.JoinPA();
     	}
 
     	public void JoinPA()
     	{
-    		Difs0.Current.GetPar(Path0).SetJointPA(Index, Difs1.CurJoinRoot);
+    		Difs0.GetCurrent().GetPar(Path0).SetJointPA(Index, Difs1.GetCurJoinRoot());
     		Difs1.JoinPA();
     	}
 

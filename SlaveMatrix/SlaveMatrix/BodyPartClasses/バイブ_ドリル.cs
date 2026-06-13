@@ -1,4 +1,5 @@
 using _2DGAMELIB;
+using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
@@ -3442,21 +3443,21 @@ namespace SlaveMatrix
     		X2Y4_ユニット_パワー3CP = new ColorP(X2Y4_ユニット_パワー3, ユニット_パワー3CD, DisUnit, abj: true);
     		X2Y4_ユニット_パワー4CP = new ColorP(X2Y4_ユニット_パワー4, ユニット_パワー4CD, DisUnit, abj: true);
     		Intensity = e.濃度;
-    		X0Y0_ユニット_ユニット.BasePointBase = X0Y0_ユニット_ユニット.ToLocal(X0Y0_ヘッド.ToGlobal(X0Y0_ヘッド.JP[18].Joint));
-    		X0Y1_ユニット_ユニット.BasePointBase = X0Y1_ユニット_ユニット.ToLocal(X0Y1_ヘッド.ToGlobal(X0Y1_ヘッド.JP[17].Joint));
-    		X0Y2_ユニット_ユニット.BasePointBase = X0Y2_ユニット_ユニット.ToLocal(X0Y2_ヘッド.ToGlobal(X0Y2_ヘッド.JP[12].Joint));
-    		X0Y3_ユニット_ユニット.BasePointBase = X0Y3_ユニット_ユニット.ToLocal(X0Y3_ヘッド.ToGlobal(X0Y3_ヘッド.JP[7].Joint));
-    		X0Y4_ユニット_ユニット.BasePointBase = X0Y4_ユニット_ユニット.ToLocal(X0Y4_ヘッド.ToGlobal(X0Y4_ヘッド.JP[3].Joint));
-    		X1Y0_ユニット_ユニット.BasePointBase = X1Y0_ユニット_ユニット.ToLocal(X1Y0_ヘッド.ToGlobal(X1Y0_ヘッド.JP[19].Joint));
-    		X1Y1_ユニット_ユニット.BasePointBase = X1Y1_ユニット_ユニット.ToLocal(X1Y1_ヘッド.ToGlobal(X1Y1_ヘッド.JP[17].Joint));
-    		X1Y2_ユニット_ユニット.BasePointBase = X1Y2_ユニット_ユニット.ToLocal(X1Y2_ヘッド.ToGlobal(X1Y2_ヘッド.JP[13].Joint));
-    		X1Y3_ユニット_ユニット.BasePointBase = X1Y3_ユニット_ユニット.ToLocal(X1Y3_ヘッド.ToGlobal(X1Y3_ヘッド.JP[8].Joint));
-    		X1Y4_ユニット_ユニット.BasePointBase = X1Y4_ユニット_ユニット.ToLocal(X1Y4_ヘッド.ToGlobal(X1Y4_ヘッド.JP[3].Joint));
-    		X2Y0_ユニット_ユニット.BasePointBase = X2Y0_ユニット_ユニット.ToLocal(X2Y0_ヘッド.ToGlobal(X2Y0_ヘッド.JP[21].Joint));
-    		X2Y1_ユニット_ユニット.BasePointBase = X2Y1_ユニット_ユニット.ToLocal(X2Y1_ヘッド.ToGlobal(X2Y1_ヘッド.JP[19].Joint));
-    		X2Y2_ユニット_ユニット.BasePointBase = X2Y2_ユニット_ユニット.ToLocal(X2Y2_ヘッド.ToGlobal(X2Y2_ヘッド.JP[14].Joint));
-    		X2Y3_ユニット_ユニット.BasePointBase = X2Y3_ユニット_ユニット.ToLocal(X2Y3_ヘッド.ToGlobal(X2Y3_ヘッド.JP[10].Joint));
-    		X2Y4_ユニット_ユニット.BasePointBase = X2Y4_ユニット_ユニット.ToLocal(X2Y4_ヘッド.ToGlobal(X2Y4_ヘッド.JP[4].Joint));
+    		X0Y0_ユニット_ユニット.SetBasePointBase(X0Y0_ユニット_ユニット.ToLocal(X0Y0_ヘッド.ToGlobal(X0Y0_ヘッド.GetJP()[18].Joint)));
+    		X0Y1_ユニット_ユニット.SetBasePointBase(X0Y1_ユニット_ユニット.ToLocal(X0Y1_ヘッド.ToGlobal(X0Y1_ヘッド.GetJP()[17].Joint)));
+    		X0Y2_ユニット_ユニット.SetBasePointBase(X0Y2_ユニット_ユニット.ToLocal(X0Y2_ヘッド.ToGlobal(X0Y2_ヘッド.GetJP()[12].Joint)));
+    		X0Y3_ユニット_ユニット.SetBasePointBase(X0Y3_ユニット_ユニット.ToLocal(X0Y3_ヘッド.ToGlobal(X0Y3_ヘッド.GetJP()[7].Joint)));
+    		X0Y4_ユニット_ユニット.SetBasePointBase(X0Y4_ユニット_ユニット.ToLocal(X0Y4_ヘッド.ToGlobal(X0Y4_ヘッド.GetJP()[3].Joint)));
+    		X1Y0_ユニット_ユニット.SetBasePointBase(X1Y0_ユニット_ユニット.ToLocal(X1Y0_ヘッド.ToGlobal(X1Y0_ヘッド.GetJP()[19].Joint)));
+    		X1Y1_ユニット_ユニット.SetBasePointBase(X1Y1_ユニット_ユニット.ToLocal(X1Y1_ヘッド.ToGlobal(X1Y1_ヘッド.GetJP()[17].Joint)));
+    		X1Y2_ユニット_ユニット.SetBasePointBase(X1Y2_ユニット_ユニット.ToLocal(X1Y2_ヘッド.ToGlobal(X1Y2_ヘッド.GetJP()[13].Joint)));
+    		X1Y3_ユニット_ユニット.SetBasePointBase(X1Y3_ユニット_ユニット.ToLocal(X1Y3_ヘッド.ToGlobal(X1Y3_ヘッド.GetJP()[8].Joint)));
+    		X1Y4_ユニット_ユニット.SetBasePointBase(X1Y4_ユニット_ユニット.ToLocal(X1Y4_ヘッド.ToGlobal(X1Y4_ヘッド.GetJP()[3].Joint)));
+    		X2Y0_ユニット_ユニット.SetBasePointBase(X2Y0_ユニット_ユニット.ToLocal(X2Y0_ヘッド.ToGlobal(X2Y0_ヘッド.GetJP()[21].Joint)));
+    		X2Y1_ユニット_ユニット.SetBasePointBase(X2Y1_ユニット_ユニット.ToLocal(X2Y1_ヘッド.ToGlobal(X2Y1_ヘッド.GetJP()[19].Joint)));
+    		X2Y2_ユニット_ユニット.SetBasePointBase(X2Y2_ユニット_ユニット.ToLocal(X2Y2_ヘッド.ToGlobal(X2Y2_ヘッド.GetJP()[14].Joint)));
+    		X2Y3_ユニット_ユニット.SetBasePointBase(X2Y3_ユニット_ユニット.ToLocal(X2Y3_ヘッド.ToGlobal(X2Y3_ヘッド.GetJP()[10].Joint)));
+    		X2Y4_ユニット_ユニット.SetBasePointBase(X2Y4_ユニット_ユニット.ToLocal(X2Y4_ヘッド.ToGlobal(X2Y4_ヘッド.GetJP()[4].Joint)));
     		尺度B *= 1.07;
     		尺度B = 1.08;
     		Body.JoinPAall();
@@ -3464,10 +3465,10 @@ namespace SlaveMatrix
 
     	public override void 色更新()
     	{
-    		switch (Body.IndexX)
+    		switch (Body.GetIndexX())
     		{
     		case 0:
-    			switch (Body.IndexY)
+    			switch (Body.GetIndexY())
     			{
     			case 0:
     				X0Y0_ヘッドCP.Update();
@@ -3594,7 +3595,7 @@ namespace SlaveMatrix
     			}
     			return;
     		case 1:
-    			switch (Body.IndexY)
+    			switch (Body.GetIndexY())
     			{
     			case 0:
     				X1Y0_ヘッドCP.Update();
@@ -3724,7 +3725,7 @@ namespace SlaveMatrix
     			}
     			return;
     		}
-    		switch (Body.IndexY)
+    		switch (Body.GetIndexY())
     		{
     		case 0:
     			X2Y0_ヘッドCP.Update();

@@ -1,4 +1,5 @@
 using _2DGAMELIB;
+using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
@@ -875,11 +876,11 @@ namespace SlaveMatrix
     		X0Y4_ユニット_パワー3CP = new ColorP(X0Y4_ユニット_パワー3, ユニット_パワー3CD, DisUnit, abj: true);
     		X0Y4_ユニット_パワー4CP = new ColorP(X0Y4_ユニット_パワー4, ユニット_パワー4CD, DisUnit, abj: true);
     		Intensity = e.濃度;
-    		X0Y0_ユニット_ユニット.BasePointBase = X0Y0_ユニット_ユニット.ToLocal(X0Y0_ヘッド.ToGlobal(X0Y0_ヘッド.JP[3].Joint));
-    		X0Y1_ユニット_ユニット.BasePointBase = X0Y1_ユニット_ユニット.ToLocal(X0Y1_ヘッド.ToGlobal(X0Y1_ヘッド.JP[3].Joint));
-    		X0Y2_ユニット_ユニット.BasePointBase = X0Y2_ユニット_ユニット.ToLocal(X0Y2_ヘッド.ToGlobal(X0Y2_ヘッド.JP[2].Joint));
-    		X0Y3_ユニット_ユニット.BasePointBase = X0Y3_ユニット_ユニット.ToLocal(X0Y3_ヘッド.ToGlobal(X0Y3_ヘッド.JP[2].Joint));
-    		X0Y4_ユニット_ユニット.BasePointBase = X0Y4_ユニット_ユニット.ToLocal(X0Y4_ヘッド.ToGlobal(X0Y4_ヘッド.JP[2].Joint));
+    		X0Y0_ユニット_ユニット.SetBasePointBase(X0Y0_ユニット_ユニット.ToLocal(X0Y0_ヘッド.ToGlobal(X0Y0_ヘッド.GetJP()[3].Joint)));
+    		X0Y1_ユニット_ユニット.SetBasePointBase(X0Y1_ユニット_ユニット.ToLocal(X0Y1_ヘッド.ToGlobal(X0Y1_ヘッド.GetJP()[3].Joint)));
+    		X0Y2_ユニット_ユニット.SetBasePointBase(X0Y2_ユニット_ユニット.ToLocal(X0Y2_ヘッド.ToGlobal(X0Y2_ヘッド.GetJP()[2].Joint)));
+    		X0Y3_ユニット_ユニット.SetBasePointBase(X0Y3_ユニット_ユニット.ToLocal(X0Y3_ヘッド.ToGlobal(X0Y3_ヘッド.GetJP()[2].Joint)));
+    		X0Y4_ユニット_ユニット.SetBasePointBase(X0Y4_ユニット_ユニット.ToLocal(X0Y4_ヘッド.ToGlobal(X0Y4_ヘッド.GetJP()[2].Joint)));
     		尺度B *= 1.07;
     		尺度B = 1.08;
     		Body.JoinPAall();
@@ -887,7 +888,7 @@ namespace SlaveMatrix
 
     	public override void 色更新()
     	{
-    		switch (Body.IndexY)
+    		switch (Body.GetIndexY())
     		{
     		case 0:
     			X0Y0_ヘッドCP.Update();

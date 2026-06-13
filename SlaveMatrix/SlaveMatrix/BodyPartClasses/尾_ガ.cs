@@ -2689,17 +2689,17 @@ namespace SlaveMatrix
     	{
     		_ = 右;
     		double maxAngle = 20.0;
-    		X0Y0_尾.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_尾9_尾.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_尾8_尾.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_尾7_尾.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_尾6_尾.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_尾5_尾.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_尾4_尾.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_尾3_尾.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_尾2_尾.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_尾1_尾.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_尾0_尾.AngleBase = maxAngle.GetRanAngle();
+    		X0Y0_尾.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_尾9_尾.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_尾8_尾.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_尾7_尾.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_尾6_尾.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_尾5_尾.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_尾4_尾.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_尾3_尾.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_尾2_尾.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_尾1_尾.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_尾0_尾.SetAngleBase(maxAngle.GetRanAngle());
     		Body.JoinPAall();
     	}
 

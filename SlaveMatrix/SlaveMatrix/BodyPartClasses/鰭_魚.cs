@@ -53,7 +53,7 @@ namespace SlaveMatrix
     		set
     		{
     			欠損_ = value;
-    			Body.IndexY = (欠損_ ? 1 : 0);
+    			Body.SetIndexY((欠損_ ? 1 : 0));
     		}
     	}
 
@@ -243,20 +243,20 @@ namespace SlaveMatrix
     	public override void SetAngle0()
     	{
     		double num = (右 ? (-1.0) : 1.0);
-    		X0Y0_鰭2_鰭膜.AngleBase = num * -25.0;
-    		X0Y0_鰭2_鰭条.AngleBase = 0.0;
-    		X0Y0_鰭1_鰭膜.AngleBase = 0.0;
-    		X0Y0_鰭1_鰭条.AngleBase = 0.0;
-    		X0Y1_鰭2_鰭膜.AngleBase = num * -25.0;
-    		X0Y1_鰭2_鰭条.AngleBase = 0.0;
-    		X0Y1_鰭1_鰭膜.AngleBase = 0.0;
-    		X0Y1_鰭1_鰭条.AngleBase = 0.0;
+    		X0Y0_鰭2_鰭膜.SetAngleBase(num * -25.0);
+    		X0Y0_鰭2_鰭条.SetAngleBase(0.0);
+    		X0Y0_鰭1_鰭膜.SetAngleBase(0.0);
+    		X0Y0_鰭1_鰭条.SetAngleBase(0.0);
+    		X0Y1_鰭2_鰭膜.SetAngleBase(num * -25.0);
+    		X0Y1_鰭2_鰭条.SetAngleBase(0.0);
+    		X0Y1_鰭1_鰭膜.SetAngleBase(0.0);
+    		X0Y1_鰭1_鰭条.SetAngleBase(0.0);
     		Body.JoinPAall();
     	}
 
     	public override void 色更新()
     	{
-    		if (Body.IndexY == 0)
+    		if (Body.GetIndexY() == 0)
     		{
     			X0Y0_鰭2_鰭膜CP.Update();
     			X0Y0_鰭2_鰭条CP.Update();

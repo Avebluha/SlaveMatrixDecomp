@@ -1,4 +1,5 @@
 using _2DGAMELIB;
+using SlaveMatrix.GameClasses;
 using System.Linq;
 
 namespace SlaveMatrix
@@ -274,11 +275,11 @@ namespace SlaveMatrix
     		{
     			if (sb == 0.0)
     			{
-    				sb = X0Y0_Torso1_鱗左.SizeXBase;
+    				sb = X0Y0_Torso1_鱗左.GetSizeXBase();
     			}
     			くぱぁ_ = value;
-    			X0Y0_Torso1_鱗左.SizeXBase = sb * (1.0 - 0.35 * くぱぁ_);
-    			X0Y0_Torso1_鱗右.SizeXBase = sb * (1.0 - 0.35 * くぱぁ_);
+    			X0Y0_Torso1_鱗左.SetSizeXBase(sb * (1.0 - 0.35 * くぱぁ_));
+    			X0Y0_Torso1_鱗右.SetSizeXBase(sb * (1.0 - 0.35 * くぱぁ_));
     		}
     	}
 

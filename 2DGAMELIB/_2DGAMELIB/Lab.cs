@@ -57,62 +57,61 @@ namespace _2DGAMELIB
 
     		parT = new ParT
     		{
-    			InitializeOP = array,
-    			BasePointBase = array[0].ps[0],
-    			PositionBase = Position,
-    			SizeBase = Size,
-    			Closed = true,
-
-
                 Tag = Name,
-                BrushColor = BackColor,
-    			PenColor = FramColor,
-    			Font = Font,
-    			FontSize = TextSize,
-    			TextColor = TextColor,
     			Text = "A"
     		};
 
+    		parT.SetFont(Font);
+    		parT.SetFontSize(TextSize);
+    		parT.SetTextColor(TextColor);
+			parT.SetInitializeOP(array);
+    		parT.SetBasePointBase(array[0].ps[0]);
+    		parT.SetPositionBase(Position);
+    		parT.SetSizeBase(Size);
+    		parT.SetClosed(true);
+            parT.SetBrushColor(BackColor);
+    		parT.SetPenColor(FramColor);
+
     		if (ShadColor != Color.Empty)
     		{
-    			parT.ShadBrush = new SolidBrush(ShadColor);
+    			parT.SetShadBrush(new SolidBrush(ShadColor));
     		}
 
 
     		SetRect();
-    		Min = parT.RectSize.Y;
+    		Min = parT.GetRectSize().Y;
     		SetText(Text);
     	}
 
     	public void SetHitColor(ModeEventDispatcher Med)
     	{
-    		if (parT.HitColor != Color.Transparent)
+    		if (parT.GetHitColor() != Color.Transparent)
     		{
-    			Med.RemUniqueColor(parT.HitColor);
+    			Med.RemUniqueColor(parT.GetHitColor());
     		}
-    		parT.HitColor = Med.GetUniqueColor();
+    		parT.SetHitColor(Med.GetUniqueColor());
     	}
 
     	private void SetRect()
     	{
     		if (!string.IsNullOrEmpty(parT.Text))
     		{
-    			parT.RectSize = new Vector2D(Width, 10.0);
+    			parT.SetRectSize(new Vector2D(Width, 10.0));
     			Vector2D_2 stringRect = parT.GetStringRect(Are.DisplayUnitScale, Are.DisplayGraphics);
     			double x = ((stringRect.v2.X > Min) ? stringRect.v2.X : Min) + 0.07;
-    			parT.RectSize = new Vector2D(x, stringRect.v2.Y);
+    			parT.SetRectSize(new Vector2D(x, stringRect.v2.Y));
     		}
     		else
     		{
     			double x2 = Min + 0.07;
-    			parT.RectSize = new Vector2D(x2, Min);
+    			parT.SetRectSize(new Vector2D(x2, Min));
     		}
 
 
-    		parT.OP[0].ps[0] = new Vector2D(0.0, 0.0);
-    		parT.OP[0].ps[1] = new Vector2D(parT.RectSize.X, 0.0);
-    		parT.OP[0].ps[2] = new Vector2D(parT.RectSize.X, parT.RectSize.Y);
-    		parT.OP[0].ps[3] = new Vector2D(0.0, parT.RectSize.Y);
+    		parT.GetOP()[0].ps[0] = new Vector2D(0.0, 0.0);
+    		parT.GetOP()[0].ps[1] = new Vector2D(parT.GetRectSize().X, 0.0);
+    		parT.GetOP()[0].ps[2] = new Vector2D(parT.GetRectSize().X, parT.GetRectSize().Y);
+    		parT.GetOP()[0].ps[3] = new Vector2D(0.0, parT.GetRectSize().Y);
     	}
 
     	public void Dispose()

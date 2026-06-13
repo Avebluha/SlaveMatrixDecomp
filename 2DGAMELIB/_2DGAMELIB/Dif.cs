@@ -27,139 +27,31 @@ namespace _2DGAMELIB
     		}
     	}
 
-    	public double PositionSize
-    	{
-    		set
-    		{
-    			foreach (Pars item in parss)
-    			{
-    				item.PositionSize = value;
-    			}
-    		}
-    	}
+        public void SetAngleBase(double value)
+        {
+            foreach (Pars item in parss)
+            {
+                item.SetAngleBase(value);
+            }
+        }
 
-    	public Vector2D PositionVector
-    	{
-    		set
-    		{
-    			foreach (Pars item in parss)
-    			{
-    				item.PositionVector = value;
-    			}
-    		}
-    	}
+        public void SetSizeBase(double value)
+        {
+            foreach (Pars item in parss)
+            {
+                item.SetSizeBase(value);
+            }
+        }
 
-    	public double AngleBase
-    	{
-    		set
-    		{
-    			foreach (Pars item in parss)
-    			{
-    				item.AngleBase = value;
-    			}
-    		}
-    	}
+        public void SetSizeYCont(double value)
+        {
+            foreach (Pars item in parss)
+            {
+                item.SetSizeYCont(value);
+            }
+        }
 
-    	public double AngleCont
-    	{
-    		set
-    		{
-    			foreach (Pars item in parss)
-    			{
-    				item.AngleCont = value;
-    			}
-    		}
-    	}
-
-    	public double SizeBase
-    	{
-    		set
-    		{
-    			foreach (Pars item in parss)
-    			{
-    				item.SizeBase = value;
-    			}
-    		}
-    	}
-
-    	public double SizeCont
-    	{
-    		set
-    		{
-    			foreach (Pars item in parss)
-    			{
-    				item.SizeCont = value;
-    			}
-    		}
-    	}
-
-    	public double SizeXBase
-    	{
-    		set
-    		{
-    			foreach (Pars item in parss)
-    			{
-    				item.SizeXBase = value;
-    			}
-    		}
-    	}
-
-    	public double SizeXCont
-    	{
-    		set
-    		{
-    			foreach (Pars item in parss)
-    			{
-    				item.SizeXCont = value;
-    			}
-    		}
-    	}
-
-    	public double SizeYBase
-    	{
-    		set
-    		{
-    			foreach (Pars item in parss)
-    			{
-    				item.SizeYBase = value;
-    			}
-    		}
-    	}
-
-    	public double SizeYCont
-    	{
-    		set
-    		{
-    			foreach (Pars item in parss)
-    			{
-    				item.SizeYCont = value;
-    			}
-    		}
-    	}
-
-    	public bool Dra
-    	{
-    		set
-    		{
-    			foreach (Pars item in parss)
-    			{
-    				item.Dra = value;
-    			}
-    		}
-    	}
-
-    	public bool Hit
-    	{
-    		set
-    		{
-    			foreach (Pars item in parss)
-    			{
-    				item.Hit = value;
-    			}
-    		}
-    	}
-
-    	public IEnumerable<Par> EnumAllPar()
+        public IEnumerable<Par> EnumAllPar()
     	{
     		foreach (Pars item in parss)
     		{
@@ -199,26 +91,6 @@ namespace _2DGAMELIB
     	public void Add(Pars Pars)
     	{
     		parss.Add(Pars);
-    	}
-
-    	public List<string> GetHitTags(ref Color HitColor)
-    	{
-    		List<string> list = new List<string>();
-    		foreach (Pars item in parss)
-    		{
-    			list.AddRange(item.GetHitTags(ref HitColor));
-    		}
-    		return list;
-    	}
-
-    	public List<Par> GetHitPars(ref Color HitColor)
-    	{
-    		List<Par> list = new List<Par>();
-    		foreach (Pars item in parss)
-    		{
-    			list.AddRange(item.GetHitPars(ref HitColor));
-    		}
-    		return list;
     	}
 
     	public bool IsHit(ref Color HitColor)
