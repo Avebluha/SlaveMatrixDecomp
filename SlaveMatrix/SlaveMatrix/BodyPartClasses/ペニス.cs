@@ -3,7 +3,7 @@ using _2DGAMELIB;
 
 namespace SlaveMatrix
 {
-    public class ペニス : Ele
+    public class ペニス : Element
     {
     	public ShapePart X0Y0_陰嚢;
 
@@ -201,7 +201,7 @@ namespace SlaveMatrix
 
     	public ColorP X1Y4_血管下CP;
 
-    	public Ele[] 尿道_接続;
+    	public Element[] 尿道_接続;
 
     	public override bool 欠損
     	{
@@ -531,8 +531,8 @@ namespace SlaveMatrix
     		}
     		if (e.尿道_接続.Count > 0)
     		{
-    			Ele f;
-    			尿道_接続 = e.尿道_接続.Select(delegate(EleD g)
+    			Element f;
+    			尿道_接続 = e.尿道_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = ペニス2;

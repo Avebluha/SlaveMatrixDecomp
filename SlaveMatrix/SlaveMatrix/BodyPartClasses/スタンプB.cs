@@ -21,7 +21,7 @@ namespace SlaveMatrix
     			{
     				if (stum.Sta.表示)
     				{
-    					p = stum.Ele.Body.Current.GetPar(stum.Path);
+    					p = stum.Element.Body.Current.GetPar(stum.Path);
     					stum.Sta.位置B = p.ToGlobal(stum.Pos);
     					stum.Sta.色更新();
     					stum.Sta.Body.Draw(Are);
@@ -33,7 +33,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public void Add(Vector2D cp, Color hc, Dictionary<Ele, List<Ele>> 参照)
+    	public void Add(Vector2D cp, Color hc, Dictionary<Element, List<Element>> 参照)
     	{
     		he = Bod.GetHitEle(hc);
     		if (チェック2(he))
@@ -45,11 +45,11 @@ namespace SlaveMatrix
     				sep.Sta.Dispose();
     			}
     			sep = default(sep);
-    			sep.Sta = EleD.GetEle(Are.DisplayUnitScale, Med, Sta.GameData.配色);
+    			sep.Sta = ElementData.GetEle(Are.DisplayUnitScale, Med, Sta.GameData.配色);
     			sep.Sta.SetHitFalse();
     			sep.Sta.Xv = RNG.XS.NextDouble();
     			sep.Sta.右 = RNG.XS.NextBool();
-    			sep.Ele = he;
+    			sep.Element = he;
     			sep.ShapePart = he.Body.GetHitPar_(hc);
     			sep.Path = sep.ShapePart.GetPath();
     			sep.Pos = sep.ShapePart.ToLocal(cp);
@@ -59,17 +59,17 @@ namespace SlaveMatrix
     			}
     			else
     			{
-    				参照[he] = new List<Ele> { sep.Sta };
+    				参照[he] = new List<Element> { sep.Sta };
     			}
     			sta.Add(sep);
     			ぶっかけ垂れ.Start();
     		}
     	}
 
-    	public スタンプB(ModeEventDispatcher Med, RenderArea Are, Character Cha, Body Bod, EleD EleD, Motions Mots)
-    		: base(Med, Are, Cha, Bod, EleD)
+    	public スタンプB(ModeEventDispatcher Med, RenderArea Are, Character Cha, Body Bod, ElementData ElementData, Motions Mots)
+    		: base(Med, Are, Cha, Bod, ElementData)
     	{
-    		Ele e = null;
+    		Element e = null;
     		ぶっかけ垂れ = new Motion(0.0, 1.0)
     		{
     			BaseSpeed = 1.0,
@@ -93,7 +93,7 @@ namespace SlaveMatrix
     			{
     			}
     		};
-    		Mots.Add(EleD.GetHashCode().ToString(), ぶっかけ垂れ);
+    		Mots.Add(ElementData.GetHashCode().ToString(), ぶっかけ垂れ);
     	}
     }
 }

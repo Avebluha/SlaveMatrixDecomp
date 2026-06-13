@@ -2,7 +2,7 @@ using _2DGAMELIB;
 
 namespace SlaveMatrix
 {
-    public class ハンド : Ele
+    public class ハンド : Element
     {
     	public ShapePart X0Y0_親指;
 

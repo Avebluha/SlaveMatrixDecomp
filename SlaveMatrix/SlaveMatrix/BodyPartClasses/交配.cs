@@ -1653,7 +1653,7 @@ namespace SlaveMatrix
     				bool flag = false;
     				bool flag2 = false;
     				bool flag3 = false;
-    				foreach (EleD item8 in d.EnumEleD())
+    				foreach (ElementData item8 in d.EnumEleD())
     				{
     					if (!flag && item8 is 双目D)
     					{
@@ -1719,7 +1719,7 @@ namespace SlaveMatrix
     			bool flag4 = false;
     			bool flag5 = false;
     			bool flag6 = false;
-    			foreach (EleD item9 in d.EnumEleD())
+    			foreach (ElementData item9 in d.EnumEleD())
     			{
     				if (!flag4 && item9 is 双目D)
     				{
@@ -1871,27 +1871,27 @@ namespace SlaveMatrix
     		TorsoD2.肥大 = Waist.肥大;
     		if (RNG.XS.NextBool())
     		{
-    			EleD eleD = SlaveMatrix.GameClasses._Con.Get後髪0R();
-    			基髪D2.後髪接続(eleD);
-    			eleD.AlignR();
-    			if (eleD is BackHair0_肢系D && 変異率.Lot())
+    			ElementData elementData = SlaveMatrix.GameClasses._Con.Get後髪0R();
+    			基髪D2.後髪接続(elementData);
+    			elementData.AlignR();
+    			if (elementData is BackHair0_肢系D && 変異率.Lot())
     			{
-    				eleD.接続(母方, 父方, i, ConnectionInfo.BackHair0_肢系_左2_接続, 要素構成, 接続構成, 変異率, 原種モード);
-    				eleD.接続(母方, 父方, i, ConnectionInfo.BackHair0_肢系_左3_接続, 要素構成, 接続構成, 変異率, 原種モード);
-    				eleD.接続(母方, 父方, i, ConnectionInfo.BackHair0_肢系_左4_接続, 要素構成, 接続構成, 変異率, 原種モード);
-    				eleD.接続(母方, 父方, i, ConnectionInfo.BackHair0_肢系_左5_接続, 要素構成, 接続構成, 変異率, 原種モード);
+    				elementData.接続(母方, 父方, i, ConnectionInfo.BackHair0_肢系_左2_接続, 要素構成, 接続構成, 変異率, 原種モード);
+    				elementData.接続(母方, 父方, i, ConnectionInfo.BackHair0_肢系_左3_接続, 要素構成, 接続構成, 変異率, 原種モード);
+    				elementData.接続(母方, 父方, i, ConnectionInfo.BackHair0_肢系_左4_接続, 要素構成, 接続構成, 変異率, 原種モード);
+    				elementData.接続(母方, 父方, i, ConnectionInfo.BackHair0_肢系_左5_接続, 要素構成, 接続構成, 変異率, 原種モード);
     			}
-    			if ((eleD is BackHair0_ジグD || eleD is BackHair0_ハネD || eleD is BackHair0_パツD || eleD is BackHair0_カルD || eleD is BackHair0_肢系D) && RNG.XS.NextBool())
+    			if ((elementData is BackHair0_ジグD || elementData is BackHair0_ハネD || elementData is BackHair0_パツD || elementData is BackHair0_カルD || elementData is BackHair0_肢系D) && RNG.XS.NextBool())
     			{
-    				EleD e2 = SlaveMatrix.GameClasses._Con.Get後髪1R();
+    				ElementData e2 = SlaveMatrix.GameClasses._Con.Get後髪1R();
     				基髪D2.後髪接続(e2);
     				e2.AlignR();
     			}
-    			EleD eleD2 = SlaveMatrix.GameClasses._Con.Get横髪R(右: false);
+    			ElementData eleD2 = SlaveMatrix.GameClasses._Con.Get横髪R(右: false);
     			基髪D2.横髪左接続(eleD2);
     			eleD2.AlignR();
     			基髪D2.横髪右接続(eleD2.Get逆());
-    			EleD e3 = SlaveMatrix.GameClasses._Con.Get前髪R();
+    			ElementData e3 = SlaveMatrix.GameClasses._Con.Get前髪R();
     			基髪D2.前髪接続(e3);
     			e3.AlignR();
     		}
@@ -2172,12 +2172,12 @@ namespace SlaveMatrix
     		}
     		else
     		{
-    			EleD eleD3 = Mix<背中D>(母方, 父方, i, 原種モード);
+    			ElementData eleD3 = Mix<背中D>(母方, 父方, i, 原種モード);
     			string t;
     			if (eleD3 != null)
     			{
     				t = eleD3.GetType().ToString();
-    				if (!ChestD2.背中_接続.Any((EleD e) => e.GetType().ToString() == t) && RNG.XS.NextBool())
+    				if (!ChestD2.背中_接続.Any((ElementData e) => e.GetType().ToString() == t) && RNG.XS.NextBool())
     				{
     					ChestD2.背中接続(eleD3);
     				}
@@ -2186,7 +2186,7 @@ namespace SlaveMatrix
     			if (eleD3 != null)
     			{
     				t = eleD3.GetType().ToString();
-    				if (!ChestD2.背中_接続.Any((EleD e) => e.GetType().ToString() == t) && RNG.XS.NextBool())
+    				if (!ChestD2.背中_接続.Any((ElementData e) => e.GetType().ToString() == t) && RNG.XS.NextBool())
     				{
     					ChestD2.背中接続(eleD3);
     				}
@@ -2195,7 +2195,7 @@ namespace SlaveMatrix
     			if (eleD3 != null)
     			{
     				t = eleD3.GetType().ToString();
-    				if (!ChestD2.背中_接続.Any((EleD e) => e.GetType().ToString() == t) && RNG.XS.NextBool())
+    				if (!ChestD2.背中_接続.Any((ElementData e) => e.GetType().ToString() == t) && RNG.XS.NextBool())
     				{
     					ChestD2.背中接続(eleD3);
     				}
@@ -2214,17 +2214,17 @@ namespace SlaveMatrix
     				長物_魚D2.接続(母方, 父方, i, ConnectionInfo.長物_魚_尾_接続, 要素構成, 接続構成, 変異率, 原種モード);
     				if (長物_魚D2.尾_接続.Count > 0)
     				{
-    					foreach (EleD item in 長物_魚D2.尾_接続)
+    					foreach (ElementData item in 長物_魚D2.尾_接続)
     					{
     						item.AlignR();
     					}
     				}
     				double 尺度B2 = 長物_魚D2.尺度B;
-    				foreach (EleD item2 in 長物_魚D2.左0_接続)
+    				foreach (ElementData item2 in 長物_魚D2.左0_接続)
     				{
     					item2.尺度B = 尺度B2;
     				}
-    				foreach (EleD item3 in 長物_魚D2.右0_接続)
+    				foreach (ElementData item3 in 長物_魚D2.右0_接続)
     				{
     					item3.尺度B = 尺度B2;
     				}
@@ -2234,11 +2234,11 @@ namespace SlaveMatrix
     				尺度B2 *= 0.9;
     				尺度B2 *= 0.9;
     				尺度B2 *= 0.9;
-    				foreach (EleD item4 in 長物_魚D2.左6_接続)
+    				foreach (ElementData item4 in 長物_魚D2.左6_接続)
     				{
     					item4.尺度B = 尺度B2;
     				}
-    				foreach (EleD item5 in 長物_魚D2.右6_接続)
+    				foreach (ElementData item5 in 長物_魚D2.右6_接続)
     				{
     					item5.尺度B = 尺度B2;
     				}
@@ -2283,7 +2283,7 @@ namespace SlaveMatrix
     				鯨.接続(母方, 父方, i, ConnectionInfo.長物_鯨_尾_接続, 要素構成, 接続構成, 変異率, 原種モード);
     				if (鯨.尾_接続.Count > 0)
     				{
-    					foreach (EleD item6 in 鯨.尾_接続)
+    					foreach (ElementData item6 in 鯨.尾_接続)
     					{
     						item6.AlignR();
     					}
@@ -2293,11 +2293,11 @@ namespace SlaveMatrix
     					e.柄 = 鯨.柄;
     				});
     				double 尺度B3 = 鯨.尺度B;
-    				foreach (EleD item7 in 鯨.左0_接続)
+    				foreach (ElementData item7 in 鯨.左0_接続)
     				{
     					item7.尺度B = 尺度B3;
     				}
-    				foreach (EleD item8 in 鯨.右0_接続)
+    				foreach (ElementData item8 in 鯨.右0_接続)
     				{
     					item8.尺度B = 尺度B3;
     				}
@@ -2307,11 +2307,11 @@ namespace SlaveMatrix
     				尺度B3 *= 0.9;
     				尺度B3 *= 0.9;
     				尺度B3 *= 0.9;
-    				foreach (EleD item9 in 鯨.左6_接続)
+    				foreach (ElementData item9 in 鯨.左6_接続)
     				{
     					item9.尺度B = 尺度B3;
     				}
-    				foreach (EleD item10 in 鯨.右6_接続)
+    				foreach (ElementData item10 in 鯨.右6_接続)
     				{
     					item10.尺度B = 尺度B3;
     				}
@@ -2359,8 +2359,8 @@ namespace SlaveMatrix
     					長胴D 長胴D2 = (長胴D)Torso_蛇D2.Copy();
     					長物_蛇D2.胴接続(Torso_蛇D2);
     					int num11 = 2;
-    					int num12 = 母方.EnumEleD().Count((EleD e) => e is 長胴D);
-    					int num13 = 父方.EnumEleD().Count((EleD e) => e is 長胴D);
+    					int num12 = 母方.EnumEleD().Count((ElementData e) => e is 長胴D);
+    					int num13 = 父方.EnumEleD().Count((ElementData e) => e is 長胴D);
     					num11 = (RNG.XS.NextBool() ? ((int)((double)(num12 + num13) * 0.5)) : ((!RNG.XS.NextBool()) ? num13 : num12));
     					num11 = (num11 + RNG.XS.NextSign() * RNG.XS.Next(4)).Clamp(0, 50);
     					for (int l = 0; l < num11; l++)
@@ -2456,8 +2456,8 @@ namespace SlaveMatrix
     					長胴D 長胴D3 = (長胴D)Torso_蟲D2.Copy();
     					長物_蟲D2.胴接続(Torso_蟲D2);
     					int num19 = 2;
-    					int num20 = 母方.EnumEleD().Count((EleD e) => e is 長胴D);
-    					int num21 = 父方.EnumEleD().Count((EleD e) => e is 長胴D);
+    					int num20 = 母方.EnumEleD().Count((ElementData e) => e is 長胴D);
+    					int num21 = 父方.EnumEleD().Count((ElementData e) => e is 長胴D);
     					num19 = (RNG.XS.NextBool() ? ((int)((double)(num20 + num21) * 0.5)) : ((!RNG.XS.NextBool()) ? num21 : num20));
     					num19 = (num19 + RNG.XS.NextSign() * RNG.XS.Next(4)).Clamp(0, 50);
     					for (int m = 0; m < num19; m++)
@@ -2471,8 +2471,8 @@ namespace SlaveMatrix
     					長物_蟲D2.接続(母方, 父方, i, ConnectionInfo.長物_蟲_Torso_接続, 要素構成, 接続構成, 変異率, 原種モード);
     				}
     				長物_蟲D2.AlignC();
-    				Waist.翼左_接続.RemoveAll((EleD e) => e is 四足脇D);
-    				Waist.翼右_接続.RemoveAll((EleD e) => e is 四足脇D);
+    				Waist.翼左_接続.RemoveAll((ElementData e) => e is 四足脇D);
+    				Waist.翼右_接続.RemoveAll((ElementData e) => e is 四足脇D);
     			}
     			else if (半身 is 四足胸D)
     			{
@@ -2575,8 +2575,8 @@ namespace SlaveMatrix
     				四足胸D2.接続(母方, 父方, i, ConnectionInfo.四足胸_背中_接続, 要素構成, 接続構成, 変異率, 原種モード);
     				四足腰D2.接続(母方, 父方, i, ConnectionInfo.四足腰_腿左_接続, 要素構成, 接続構成, 変異率, 原種モード);
     				四足腰D2.接続(母方, 父方, i, ConnectionInfo.四足腰_尾_接続, 要素構成, 接続構成, 変異率, 原種モード);
-    				Waist.翼左_接続.RemoveAll((EleD e) => e is 四足脇D);
-    				Waist.翼右_接続.RemoveAll((EleD e) => e is 四足脇D);
+    				Waist.翼左_接続.RemoveAll((ElementData e) => e is 四足脇D);
+    				Waist.翼右_接続.RemoveAll((ElementData e) => e is 四足脇D);
     			}
     			else if (半身 is 多足_蛸D)
     			{
@@ -2650,7 +2650,7 @@ namespace SlaveMatrix
     				bool 柄1_表示 = eleD5?.柄1_表示 ?? false;
     				bool 柄2_表示 = eleD5?.柄2_表示 ?? false;
     				bool 爪 = eleD5?.爪 ?? false;
-    				foreach (EleD item12 in 多足_蜘D2.触肢左_接続)
+    				foreach (ElementData item12 in 多足_蜘D2.触肢左_接続)
     				{
     					if (item12 is 節尾_鋏D || item12 is 大顎D)
     					{
@@ -2661,7 +2661,7 @@ namespace SlaveMatrix
     						item12.反転Y = false;
     					}
     				}
-    				foreach (EleD item13 in 多足_蜘D2.触肢右_接続)
+    				foreach (ElementData item13 in 多足_蜘D2.触肢右_接続)
     				{
     					if (item13 is 節尾_鋏D || item13 is 大顎D)
     					{
@@ -2672,7 +2672,7 @@ namespace SlaveMatrix
     						item13.反転Y = false;
     					}
     				}
-    				foreach (EleD item14 in 多足_蜘D2.節足左1_接続)
+    				foreach (ElementData item14 in 多足_蜘D2.節足左1_接続)
     				{
     					if (item14 is 節足_足蜘D)
     					{
@@ -2691,7 +2691,7 @@ namespace SlaveMatrix
     						item14.反転Y = false;
     					}
     				}
-    				foreach (EleD item15 in 多足_蜘D2.節足右1_接続)
+    				foreach (ElementData item15 in 多足_蜘D2.節足右1_接続)
     				{
     					if (item15 is 節足_足蜘D)
     					{
@@ -2710,7 +2710,7 @@ namespace SlaveMatrix
     						item15.反転Y = false;
     					}
     				}
-    				foreach (EleD item16 in 多足_蜘D2.節足左2_接続)
+    				foreach (ElementData item16 in 多足_蜘D2.節足左2_接続)
     				{
     					if (item16 is 節足_足蜘D)
     					{
@@ -2729,7 +2729,7 @@ namespace SlaveMatrix
     						item16.反転Y = false;
     					}
     				}
-    				foreach (EleD item17 in 多足_蜘D2.節足右2_接続)
+    				foreach (ElementData item17 in 多足_蜘D2.節足右2_接続)
     				{
     					if (item17 is 節足_足蜘D)
     					{
@@ -2749,7 +2749,7 @@ namespace SlaveMatrix
     					}
     				}
     				bool 反転Y = 多足_蜘D2.節足左3_接続.Count > 0 && 多足_蜘D2.節足左3_接続.First().反転Y;
-    				foreach (EleD item18 in 多足_蜘D2.節足左3_接続)
+    				foreach (ElementData item18 in 多足_蜘D2.節足左3_接続)
     				{
     					if (item18 is 節足_足蜘D)
     					{
@@ -2768,7 +2768,7 @@ namespace SlaveMatrix
     						item18.反転Y = 反転Y;
     					}
     				}
-    				foreach (EleD item19 in 多足_蜘D2.節足右3_接続)
+    				foreach (ElementData item19 in 多足_蜘D2.節足右3_接続)
     				{
     					if (item19 is 節足_足蜘D)
     					{
@@ -2787,7 +2787,7 @@ namespace SlaveMatrix
     						item19.反転Y = 反転Y;
     					}
     				}
-    				foreach (EleD item20 in 多足_蜘D2.節足左4_接続)
+    				foreach (ElementData item20 in 多足_蜘D2.節足左4_接続)
     				{
     					if (item20 is 節足_足蜘D)
     					{
@@ -2806,7 +2806,7 @@ namespace SlaveMatrix
     						item20.反転Y = 反転Y;
     					}
     				}
-    				foreach (EleD item21 in 多足_蜘D2.節足右4_接続)
+    				foreach (ElementData item21 in 多足_蜘D2.節足右4_接続)
     				{
     					if (item21 is 節足_足蜘D)
     					{
@@ -2825,8 +2825,8 @@ namespace SlaveMatrix
     						item21.反転Y = 反転Y;
     					}
     				}
-    				Waist.翼左_接続.RemoveAll((EleD e) => e is 四足脇D);
-    				Waist.翼右_接続.RemoveAll((EleD e) => e is 四足脇D);
+    				Waist.翼左_接続.RemoveAll((ElementData e) => e is 四足脇D);
+    				Waist.翼右_接続.RemoveAll((ElementData e) => e is 四足脇D);
     			}
     			else if (半身 is 多足_蠍D)
     			{
@@ -2841,7 +2841,7 @@ namespace SlaveMatrix
     				節足_足蠍D eleD6 = 多足_蠍D2.節足左1_接続.GetEleD<節足_足蠍D>();
     				bool 柄1_表示2 = eleD6?.柄1_表示 ?? false;
     				bool 爪2 = eleD6?.爪 ?? false;
-    				foreach (EleD item22 in 多足_蠍D2.触肢左_接続)
+    				foreach (ElementData item22 in 多足_蠍D2.触肢左_接続)
     				{
     					if (item22 is 節尾_鋏D || item22 is 大顎D)
     					{
@@ -2852,7 +2852,7 @@ namespace SlaveMatrix
     						item22.反転Y = false;
     					}
     				}
-    				foreach (EleD item23 in 多足_蠍D2.触肢右_接続)
+    				foreach (ElementData item23 in 多足_蠍D2.触肢右_接続)
     				{
     					if (item23 is 節尾_鋏D || item23 is 大顎D)
     					{
@@ -2863,7 +2863,7 @@ namespace SlaveMatrix
     						item23.反転Y = false;
     					}
     				}
-    				foreach (EleD item24 in 多足_蠍D2.節足左1_接続)
+    				foreach (ElementData item24 in 多足_蠍D2.節足左1_接続)
     				{
     					if (item24 is 節足_足蠍D)
     					{
@@ -2876,7 +2876,7 @@ namespace SlaveMatrix
     						item24.反転Y = true;
     					}
     				}
-    				foreach (EleD item25 in 多足_蠍D2.節足右1_接続)
+    				foreach (ElementData item25 in 多足_蠍D2.節足右1_接続)
     				{
     					if (item25 is 節足_足蠍D)
     					{
@@ -2889,7 +2889,7 @@ namespace SlaveMatrix
     						item25.反転Y = true;
     					}
     				}
-    				foreach (EleD item26 in 多足_蠍D2.節足左2_接続)
+    				foreach (ElementData item26 in 多足_蠍D2.節足左2_接続)
     				{
     					if (item26 is 節足_足蠍D)
     					{
@@ -2902,7 +2902,7 @@ namespace SlaveMatrix
     						item26.反転Y = true;
     					}
     				}
-    				foreach (EleD item27 in 多足_蠍D2.節足右2_接続)
+    				foreach (ElementData item27 in 多足_蠍D2.節足右2_接続)
     				{
     					if (item27 is 節足_足蠍D)
     					{
@@ -2915,7 +2915,7 @@ namespace SlaveMatrix
     						item27.反転Y = true;
     					}
     				}
-    				foreach (EleD item28 in 多足_蠍D2.節足左3_接続)
+    				foreach (ElementData item28 in 多足_蠍D2.節足左3_接続)
     				{
     					if (item28 is 節足_足蠍D)
     					{
@@ -2928,7 +2928,7 @@ namespace SlaveMatrix
     						item28.反転Y = true;
     					}
     				}
-    				foreach (EleD item29 in 多足_蠍D2.節足右3_接続)
+    				foreach (ElementData item29 in 多足_蠍D2.節足右3_接続)
     				{
     					if (item29 is 節足_足蠍D)
     					{
@@ -2941,7 +2941,7 @@ namespace SlaveMatrix
     						item29.反転Y = true;
     					}
     				}
-    				foreach (EleD item30 in 多足_蠍D2.節足左4_接続)
+    				foreach (ElementData item30 in 多足_蠍D2.節足左4_接続)
     				{
     					if (item30 is 節足_足蠍D)
     					{
@@ -2954,7 +2954,7 @@ namespace SlaveMatrix
     						item30.反転Y = true;
     					}
     				}
-    				foreach (EleD item31 in 多足_蠍D2.節足右4_接続)
+    				foreach (ElementData item31 in 多足_蠍D2.節足右4_接続)
     				{
     					if (item31 is 節足_足蠍D)
     					{
@@ -2967,8 +2967,8 @@ namespace SlaveMatrix
     						item31.反転Y = true;
     					}
     				}
-    				Waist.翼左_接続.RemoveAll((EleD e) => e is 四足脇D);
-    				Waist.翼右_接続.RemoveAll((EleD e) => e is 四足脇D);
+    				Waist.翼左_接続.RemoveAll((ElementData e) => e is 四足脇D);
+    				Waist.翼右_接続.RemoveAll((ElementData e) => e is 四足脇D);
     			}
     			else if (半身 is 単足_植D)
     			{
@@ -3090,7 +3090,7 @@ namespace SlaveMatrix
     		}
     		bool flag3 = false;
     		顔面D 顔面D2 = null;
-    		foreach (EleD item32 in Waist.EnumEleD())
+    		foreach (ElementData item32 in Waist.EnumEleD())
     		{
     			if (顔面D2 == null && item32 is 顔面D)
     			{
@@ -3104,299 +3104,299 @@ namespace SlaveMatrix
     				{
     					num *= 0.9;
     				}
-    				foreach (EleD item33 in 尾_魚D2.左1_接続)
+    				foreach (ElementData item33 in 尾_魚D2.左1_接続)
     				{
     					item33.尺度B = num;
     				}
-    				foreach (EleD item34 in 尾_魚D2.右1_接続)
+    				foreach (ElementData item34 in 尾_魚D2.右1_接続)
     				{
     					item34.尺度B = num;
     				}
     				num *= 0.9;
-    				foreach (EleD item35 in 尾_魚D2.左2_接続)
+    				foreach (ElementData item35 in 尾_魚D2.左2_接続)
     				{
     					item35.尺度B = num;
     				}
-    				foreach (EleD item36 in 尾_魚D2.右2_接続)
+    				foreach (ElementData item36 in 尾_魚D2.右2_接続)
     				{
     					item36.尺度B = num;
     				}
     				num *= 0.9;
-    				foreach (EleD item37 in 尾_魚D2.左3_接続)
+    				foreach (ElementData item37 in 尾_魚D2.左3_接続)
     				{
     					item37.尺度B = num;
     				}
-    				foreach (EleD item38 in 尾_魚D2.右3_接続)
+    				foreach (ElementData item38 in 尾_魚D2.右3_接続)
     				{
     					item38.尺度B = num;
     				}
     				num *= 0.9;
-    				foreach (EleD item39 in 尾_魚D2.左4_接続)
+    				foreach (ElementData item39 in 尾_魚D2.左4_接続)
     				{
     					item39.尺度B = num;
     				}
-    				foreach (EleD item40 in 尾_魚D2.右4_接続)
+    				foreach (ElementData item40 in 尾_魚D2.右4_接続)
     				{
     					item40.尺度B = num;
     				}
     				num *= 0.9;
-    				foreach (EleD item41 in 尾_魚D2.左5_接続)
+    				foreach (ElementData item41 in 尾_魚D2.左5_接続)
     				{
     					item41.尺度B = num;
     				}
-    				foreach (EleD item42 in 尾_魚D2.右5_接続)
+    				foreach (ElementData item42 in 尾_魚D2.右5_接続)
     				{
     					item42.尺度B = num;
     				}
     				num *= 0.9;
-    				foreach (EleD item43 in 尾_魚D2.左6_接続)
+    				foreach (ElementData item43 in 尾_魚D2.左6_接続)
     				{
     					item43.尺度B = num;
     				}
-    				foreach (EleD item44 in 尾_魚D2.右6_接続)
+    				foreach (ElementData item44 in 尾_魚D2.右6_接続)
     				{
     					item44.尺度B = num;
     				}
     				num *= 0.9;
-    				foreach (EleD item45 in 尾_魚D2.左7_接続)
+    				foreach (ElementData item45 in 尾_魚D2.左7_接続)
     				{
     					item45.尺度B = num;
     				}
-    				foreach (EleD item46 in 尾_魚D2.右7_接続)
+    				foreach (ElementData item46 in 尾_魚D2.右7_接続)
     				{
     					item46.尺度B = num;
     				}
     				num *= 0.9;
-    				foreach (EleD item47 in 尾_魚D2.左8_接続)
+    				foreach (ElementData item47 in 尾_魚D2.左8_接続)
     				{
     					item47.尺度B = num;
     				}
-    				foreach (EleD item48 in 尾_魚D2.右8_接続)
+    				foreach (ElementData item48 in 尾_魚D2.右8_接続)
     				{
     					item48.尺度B = num;
     				}
     				num *= 0.9;
-    				foreach (EleD item49 in 尾_魚D2.左9_接続)
+    				foreach (ElementData item49 in 尾_魚D2.左9_接続)
     				{
     					item49.尺度B = num;
     				}
-    				foreach (EleD item50 in 尾_魚D2.右9_接続)
+    				foreach (ElementData item50 in 尾_魚D2.右9_接続)
     				{
     					item50.尺度B = num;
     				}
     				num *= 0.9;
-    				foreach (EleD item51 in 尾_魚D2.左10_接続)
+    				foreach (ElementData item51 in 尾_魚D2.左10_接続)
     				{
     					item51.尺度B = num;
     				}
-    				foreach (EleD item52 in 尾_魚D2.右10_接続)
+    				foreach (ElementData item52 in 尾_魚D2.右10_接続)
     				{
     					item52.尺度B = num;
     				}
     				num *= 0.9;
-    				foreach (EleD item53 in 尾_魚D2.左11_接続)
+    				foreach (ElementData item53 in 尾_魚D2.左11_接続)
     				{
     					item53.尺度B = num;
     				}
-    				foreach (EleD item54 in 尾_魚D2.右11_接続)
+    				foreach (ElementData item54 in 尾_魚D2.右11_接続)
     				{
     					item54.尺度B = num;
     				}
     				num *= 0.9;
-    				foreach (EleD item55 in 尾_魚D2.左12_接続)
+    				foreach (ElementData item55 in 尾_魚D2.左12_接続)
     				{
     					item55.尺度B = num;
     				}
-    				foreach (EleD item56 in 尾_魚D2.右12_接続)
+    				foreach (ElementData item56 in 尾_魚D2.右12_接続)
     				{
     					item56.尺度B = num;
     				}
     				num *= 0.9;
-    				foreach (EleD item57 in 尾_魚D2.左13_接続)
+    				foreach (ElementData item57 in 尾_魚D2.左13_接続)
     				{
     					item57.尺度B = num;
     				}
-    				foreach (EleD item58 in 尾_魚D2.右13_接続)
+    				foreach (ElementData item58 in 尾_魚D2.右13_接続)
     				{
     					item58.尺度B = num;
     				}
     				num *= 0.9;
-    				foreach (EleD item59 in 尾_魚D2.左14_接続)
+    				foreach (ElementData item59 in 尾_魚D2.左14_接続)
     				{
     					item59.尺度B = num;
     				}
-    				foreach (EleD item60 in 尾_魚D2.右14_接続)
+    				foreach (ElementData item60 in 尾_魚D2.右14_接続)
     				{
     					item60.尺度B = num;
     				}
     				num *= 0.9;
-    				foreach (EleD item61 in 尾_魚D2.左15_接続)
+    				foreach (ElementData item61 in 尾_魚D2.左15_接続)
     				{
     					item61.尺度B = num;
     				}
-    				foreach (EleD item62 in 尾_魚D2.右15_接続)
+    				foreach (ElementData item62 in 尾_魚D2.右15_接続)
     				{
     					item62.尺度B = num;
     				}
     				num *= 0.9;
-    				foreach (EleD item63 in 尾_魚D2.左16_接続)
+    				foreach (ElementData item63 in 尾_魚D2.左16_接続)
     				{
     					item63.尺度B = num;
     				}
-    				foreach (EleD item64 in 尾_魚D2.右16_接続)
+    				foreach (ElementData item64 in 尾_魚D2.右16_接続)
     				{
     					item64.尺度B = num;
     				}
     				num *= 0.9;
-    				foreach (EleD item65 in 尾_魚D2.左17_接続)
+    				foreach (ElementData item65 in 尾_魚D2.左17_接続)
     				{
     					item65.尺度B = num;
     				}
-    				foreach (EleD item66 in 尾_魚D2.右17_接続)
+    				foreach (ElementData item66 in 尾_魚D2.右17_接続)
     				{
     					item66.尺度B = num;
     				}
     				num *= 0.9;
-    				foreach (EleD item67 in 尾_魚D2.左18_接続)
+    				foreach (ElementData item67 in 尾_魚D2.左18_接続)
     				{
     					item67.尺度B = num;
     				}
-    				foreach (EleD item68 in 尾_魚D2.右18_接続)
+    				foreach (ElementData item68 in 尾_魚D2.右18_接続)
     				{
     					item68.尺度B = num;
     				}
     				num *= 0.9;
-    				foreach (EleD item69 in 尾_魚D2.左19_接続)
+    				foreach (ElementData item69 in 尾_魚D2.左19_接続)
     				{
     					item69.尺度B = num;
     				}
-    				foreach (EleD item70 in 尾_魚D2.右19_接続)
+    				foreach (ElementData item70 in 尾_魚D2.右19_接続)
     				{
     					item70.尺度B = num;
     				}
     				num *= 0.9;
-    				foreach (EleD item71 in 尾_魚D2.左20_接続)
+    				foreach (ElementData item71 in 尾_魚D2.左20_接続)
     				{
     					item71.尺度B = num;
     				}
-    				foreach (EleD item72 in 尾_魚D2.右20_接続)
+    				foreach (ElementData item72 in 尾_魚D2.右20_接続)
     				{
     					item72.尺度B = num;
     				}
     				num *= 0.9;
-    				foreach (EleD item73 in 尾_魚D2.左21_接続)
+    				foreach (ElementData item73 in 尾_魚D2.左21_接続)
     				{
     					item73.尺度B = num;
     				}
-    				foreach (EleD item74 in 尾_魚D2.右21_接続)
+    				foreach (ElementData item74 in 尾_魚D2.右21_接続)
     				{
     					item74.尺度B = num;
     				}
     				num *= 0.9;
-    				foreach (EleD item75 in 尾_魚D2.左22_接続)
+    				foreach (ElementData item75 in 尾_魚D2.左22_接続)
     				{
     					item75.尺度B = num;
     				}
-    				foreach (EleD item76 in 尾_魚D2.右22_接続)
+    				foreach (ElementData item76 in 尾_魚D2.右22_接続)
     				{
     					item76.尺度B = num;
     				}
     				num *= 0.9;
-    				foreach (EleD item77 in 尾_魚D2.左23_接続)
+    				foreach (ElementData item77 in 尾_魚D2.左23_接続)
     				{
     					item77.尺度B = num;
     				}
-    				foreach (EleD item78 in 尾_魚D2.右23_接続)
+    				foreach (ElementData item78 in 尾_魚D2.右23_接続)
     				{
     					item78.尺度B = num;
     				}
     				num *= 0.9;
-    				foreach (EleD item79 in 尾_魚D2.左24_接続)
+    				foreach (ElementData item79 in 尾_魚D2.左24_接続)
     				{
     					item79.尺度B = num;
     				}
-    				foreach (EleD item80 in 尾_魚D2.右24_接続)
+    				foreach (ElementData item80 in 尾_魚D2.右24_接続)
     				{
     					item80.尺度B = num;
     				}
     				num *= 0.9;
-    				foreach (EleD item81 in 尾_魚D2.左25_接続)
+    				foreach (ElementData item81 in 尾_魚D2.左25_接続)
     				{
     					item81.尺度B = num;
     				}
-    				foreach (EleD item82 in 尾_魚D2.右25_接続)
+    				foreach (ElementData item82 in 尾_魚D2.右25_接続)
     				{
     					item82.尺度B = num;
     				}
     				num *= 0.9;
-    				foreach (EleD item83 in 尾_魚D2.左27_接続)
+    				foreach (ElementData item83 in 尾_魚D2.左27_接続)
     				{
     					item83.尺度B = num;
     				}
-    				foreach (EleD item84 in 尾_魚D2.右27_接続)
+    				foreach (ElementData item84 in 尾_魚D2.右27_接続)
     				{
     					item84.尺度B = num;
     				}
     				num *= 0.9;
-    				foreach (EleD item85 in 尾_魚D2.左28_接続)
+    				foreach (ElementData item85 in 尾_魚D2.左28_接続)
     				{
     					item85.尺度B = num;
     				}
-    				foreach (EleD item86 in 尾_魚D2.右28_接続)
+    				foreach (ElementData item86 in 尾_魚D2.右28_接続)
     				{
     					item86.尺度B = num;
     				}
     				num *= 0.9;
-    				foreach (EleD item87 in 尾_魚D2.左29_接続)
+    				foreach (ElementData item87 in 尾_魚D2.左29_接続)
     				{
     					item87.尺度B = num;
     				}
-    				foreach (EleD item88 in 尾_魚D2.右29_接続)
+    				foreach (ElementData item88 in 尾_魚D2.右29_接続)
     				{
     					item88.尺度B = num;
     				}
     				num *= 0.9;
-    				foreach (EleD item89 in 尾_魚D2.左30_接続)
+    				foreach (ElementData item89 in 尾_魚D2.左30_接続)
     				{
     					item89.尺度B = num;
     				}
-    				foreach (EleD item90 in 尾_魚D2.右30_接続)
+    				foreach (ElementData item90 in 尾_魚D2.右30_接続)
     				{
     					item90.尺度B = num;
     				}
     				num *= 0.9;
-    				foreach (EleD item91 in 尾_魚D2.左31_接続)
+    				foreach (ElementData item91 in 尾_魚D2.左31_接続)
     				{
     					item91.尺度B = num;
     				}
-    				foreach (EleD item92 in 尾_魚D2.右31_接続)
+    				foreach (ElementData item92 in 尾_魚D2.右31_接続)
     				{
     					item92.尺度B = num;
     				}
     				num *= 0.9;
-    				foreach (EleD item93 in 尾_魚D2.左32_接続)
+    				foreach (ElementData item93 in 尾_魚D2.左32_接続)
     				{
     					item93.尺度B = num;
     				}
-    				foreach (EleD item94 in 尾_魚D2.右32_接続)
+    				foreach (ElementData item94 in 尾_魚D2.右32_接続)
     				{
     					item94.尺度B = num;
     				}
     				num *= 0.9;
-    				foreach (EleD item95 in 尾_魚D2.左33_接続)
+    				foreach (ElementData item95 in 尾_魚D2.左33_接続)
     				{
     					item95.尺度B = num;
     				}
-    				foreach (EleD item96 in 尾_魚D2.右33_接続)
+    				foreach (ElementData item96 in 尾_魚D2.右33_接続)
     				{
     					item96.尺度B = num;
     				}
     				num *= 0.9;
-    				foreach (EleD item97 in 尾_魚D2.左34_接続)
+    				foreach (ElementData item97 in 尾_魚D2.左34_接続)
     				{
     					item97.尺度B = num;
     				}
-    				foreach (EleD item98 in 尾_魚D2.右34_接続)
+    				foreach (ElementData item98 in 尾_魚D2.右34_接続)
     				{
     					item98.尺度B = num;
     				}
@@ -3421,299 +3421,299 @@ namespace SlaveMatrix
     				{
     					num2 *= 0.9;
     				}
-    				foreach (EleD item99 in 尾_鯨D2.左1_接続)
+    				foreach (ElementData item99 in 尾_鯨D2.左1_接続)
     				{
     					item99.尺度B = num2;
     				}
-    				foreach (EleD item100 in 尾_鯨D2.右1_接続)
+    				foreach (ElementData item100 in 尾_鯨D2.右1_接続)
     				{
     					item100.尺度B = num2;
     				}
     				num2 *= 0.9;
-    				foreach (EleD item101 in 尾_鯨D2.左2_接続)
+    				foreach (ElementData item101 in 尾_鯨D2.左2_接続)
     				{
     					item101.尺度B = num2;
     				}
-    				foreach (EleD item102 in 尾_鯨D2.右2_接続)
+    				foreach (ElementData item102 in 尾_鯨D2.右2_接続)
     				{
     					item102.尺度B = num2;
     				}
     				num2 *= 0.9;
-    				foreach (EleD item103 in 尾_鯨D2.左3_接続)
+    				foreach (ElementData item103 in 尾_鯨D2.左3_接続)
     				{
     					item103.尺度B = num2;
     				}
-    				foreach (EleD item104 in 尾_鯨D2.右3_接続)
+    				foreach (ElementData item104 in 尾_鯨D2.右3_接続)
     				{
     					item104.尺度B = num2;
     				}
     				num2 *= 0.9;
-    				foreach (EleD item105 in 尾_鯨D2.左4_接続)
+    				foreach (ElementData item105 in 尾_鯨D2.左4_接続)
     				{
     					item105.尺度B = num2;
     				}
-    				foreach (EleD item106 in 尾_鯨D2.右4_接続)
+    				foreach (ElementData item106 in 尾_鯨D2.右4_接続)
     				{
     					item106.尺度B = num2;
     				}
     				num2 *= 0.9;
-    				foreach (EleD item107 in 尾_鯨D2.左5_接続)
+    				foreach (ElementData item107 in 尾_鯨D2.左5_接続)
     				{
     					item107.尺度B = num2;
     				}
-    				foreach (EleD item108 in 尾_鯨D2.右5_接続)
+    				foreach (ElementData item108 in 尾_鯨D2.右5_接続)
     				{
     					item108.尺度B = num2;
     				}
     				num2 *= 0.9;
-    				foreach (EleD item109 in 尾_鯨D2.左6_接続)
+    				foreach (ElementData item109 in 尾_鯨D2.左6_接続)
     				{
     					item109.尺度B = num2;
     				}
-    				foreach (EleD item110 in 尾_鯨D2.右6_接続)
+    				foreach (ElementData item110 in 尾_鯨D2.右6_接続)
     				{
     					item110.尺度B = num2;
     				}
     				num2 *= 0.9;
-    				foreach (EleD item111 in 尾_鯨D2.左7_接続)
+    				foreach (ElementData item111 in 尾_鯨D2.左7_接続)
     				{
     					item111.尺度B = num2;
     				}
-    				foreach (EleD item112 in 尾_鯨D2.右7_接続)
+    				foreach (ElementData item112 in 尾_鯨D2.右7_接続)
     				{
     					item112.尺度B = num2;
     				}
     				num2 *= 0.9;
-    				foreach (EleD item113 in 尾_鯨D2.左8_接続)
+    				foreach (ElementData item113 in 尾_鯨D2.左8_接続)
     				{
     					item113.尺度B = num2;
     				}
-    				foreach (EleD item114 in 尾_鯨D2.右8_接続)
+    				foreach (ElementData item114 in 尾_鯨D2.右8_接続)
     				{
     					item114.尺度B = num2;
     				}
     				num2 *= 0.9;
-    				foreach (EleD item115 in 尾_鯨D2.左9_接続)
+    				foreach (ElementData item115 in 尾_鯨D2.左9_接続)
     				{
     					item115.尺度B = num2;
     				}
-    				foreach (EleD item116 in 尾_鯨D2.右9_接続)
+    				foreach (ElementData item116 in 尾_鯨D2.右9_接続)
     				{
     					item116.尺度B = num2;
     				}
     				num2 *= 0.9;
-    				foreach (EleD item117 in 尾_鯨D2.左10_接続)
+    				foreach (ElementData item117 in 尾_鯨D2.左10_接続)
     				{
     					item117.尺度B = num2;
     				}
-    				foreach (EleD item118 in 尾_鯨D2.右10_接続)
+    				foreach (ElementData item118 in 尾_鯨D2.右10_接続)
     				{
     					item118.尺度B = num2;
     				}
     				num2 *= 0.9;
-    				foreach (EleD item119 in 尾_鯨D2.左11_接続)
+    				foreach (ElementData item119 in 尾_鯨D2.左11_接続)
     				{
     					item119.尺度B = num2;
     				}
-    				foreach (EleD item120 in 尾_鯨D2.右11_接続)
+    				foreach (ElementData item120 in 尾_鯨D2.右11_接続)
     				{
     					item120.尺度B = num2;
     				}
     				num2 *= 0.9;
-    				foreach (EleD item121 in 尾_鯨D2.左12_接続)
+    				foreach (ElementData item121 in 尾_鯨D2.左12_接続)
     				{
     					item121.尺度B = num2;
     				}
-    				foreach (EleD item122 in 尾_鯨D2.右12_接続)
+    				foreach (ElementData item122 in 尾_鯨D2.右12_接続)
     				{
     					item122.尺度B = num2;
     				}
     				num2 *= 0.9;
-    				foreach (EleD item123 in 尾_鯨D2.左13_接続)
+    				foreach (ElementData item123 in 尾_鯨D2.左13_接続)
     				{
     					item123.尺度B = num2;
     				}
-    				foreach (EleD item124 in 尾_鯨D2.右13_接続)
+    				foreach (ElementData item124 in 尾_鯨D2.右13_接続)
     				{
     					item124.尺度B = num2;
     				}
     				num2 *= 0.9;
-    				foreach (EleD item125 in 尾_鯨D2.左14_接続)
+    				foreach (ElementData item125 in 尾_鯨D2.左14_接続)
     				{
     					item125.尺度B = num2;
     				}
-    				foreach (EleD item126 in 尾_鯨D2.右14_接続)
+    				foreach (ElementData item126 in 尾_鯨D2.右14_接続)
     				{
     					item126.尺度B = num2;
     				}
     				num2 *= 0.9;
-    				foreach (EleD item127 in 尾_鯨D2.左15_接続)
+    				foreach (ElementData item127 in 尾_鯨D2.左15_接続)
     				{
     					item127.尺度B = num2;
     				}
-    				foreach (EleD item128 in 尾_鯨D2.右15_接続)
+    				foreach (ElementData item128 in 尾_鯨D2.右15_接続)
     				{
     					item128.尺度B = num2;
     				}
     				num2 *= 0.9;
-    				foreach (EleD item129 in 尾_鯨D2.左16_接続)
+    				foreach (ElementData item129 in 尾_鯨D2.左16_接続)
     				{
     					item129.尺度B = num2;
     				}
-    				foreach (EleD item130 in 尾_鯨D2.右16_接続)
+    				foreach (ElementData item130 in 尾_鯨D2.右16_接続)
     				{
     					item130.尺度B = num2;
     				}
     				num2 *= 0.9;
-    				foreach (EleD item131 in 尾_鯨D2.左17_接続)
+    				foreach (ElementData item131 in 尾_鯨D2.左17_接続)
     				{
     					item131.尺度B = num2;
     				}
-    				foreach (EleD item132 in 尾_鯨D2.右17_接続)
+    				foreach (ElementData item132 in 尾_鯨D2.右17_接続)
     				{
     					item132.尺度B = num2;
     				}
     				num2 *= 0.9;
-    				foreach (EleD item133 in 尾_鯨D2.左18_接続)
+    				foreach (ElementData item133 in 尾_鯨D2.左18_接続)
     				{
     					item133.尺度B = num2;
     				}
-    				foreach (EleD item134 in 尾_鯨D2.右18_接続)
+    				foreach (ElementData item134 in 尾_鯨D2.右18_接続)
     				{
     					item134.尺度B = num2;
     				}
     				num2 *= 0.9;
-    				foreach (EleD item135 in 尾_鯨D2.左19_接続)
+    				foreach (ElementData item135 in 尾_鯨D2.左19_接続)
     				{
     					item135.尺度B = num2;
     				}
-    				foreach (EleD item136 in 尾_鯨D2.右19_接続)
+    				foreach (ElementData item136 in 尾_鯨D2.右19_接続)
     				{
     					item136.尺度B = num2;
     				}
     				num2 *= 0.9;
-    				foreach (EleD item137 in 尾_鯨D2.左20_接続)
+    				foreach (ElementData item137 in 尾_鯨D2.左20_接続)
     				{
     					item137.尺度B = num2;
     				}
-    				foreach (EleD item138 in 尾_鯨D2.右20_接続)
+    				foreach (ElementData item138 in 尾_鯨D2.右20_接続)
     				{
     					item138.尺度B = num2;
     				}
     				num2 *= 0.9;
-    				foreach (EleD item139 in 尾_鯨D2.左21_接続)
+    				foreach (ElementData item139 in 尾_鯨D2.左21_接続)
     				{
     					item139.尺度B = num2;
     				}
-    				foreach (EleD item140 in 尾_鯨D2.右21_接続)
+    				foreach (ElementData item140 in 尾_鯨D2.右21_接続)
     				{
     					item140.尺度B = num2;
     				}
     				num2 *= 0.9;
-    				foreach (EleD item141 in 尾_鯨D2.左22_接続)
+    				foreach (ElementData item141 in 尾_鯨D2.左22_接続)
     				{
     					item141.尺度B = num2;
     				}
-    				foreach (EleD item142 in 尾_鯨D2.右22_接続)
+    				foreach (ElementData item142 in 尾_鯨D2.右22_接続)
     				{
     					item142.尺度B = num2;
     				}
     				num2 *= 0.9;
-    				foreach (EleD item143 in 尾_鯨D2.左23_接続)
+    				foreach (ElementData item143 in 尾_鯨D2.左23_接続)
     				{
     					item143.尺度B = num2;
     				}
-    				foreach (EleD item144 in 尾_鯨D2.右23_接続)
+    				foreach (ElementData item144 in 尾_鯨D2.右23_接続)
     				{
     					item144.尺度B = num2;
     				}
     				num2 *= 0.9;
-    				foreach (EleD item145 in 尾_鯨D2.左24_接続)
+    				foreach (ElementData item145 in 尾_鯨D2.左24_接続)
     				{
     					item145.尺度B = num2;
     				}
-    				foreach (EleD item146 in 尾_鯨D2.右24_接続)
+    				foreach (ElementData item146 in 尾_鯨D2.右24_接続)
     				{
     					item146.尺度B = num2;
     				}
     				num2 *= 0.9;
-    				foreach (EleD item147 in 尾_鯨D2.左25_接続)
+    				foreach (ElementData item147 in 尾_鯨D2.左25_接続)
     				{
     					item147.尺度B = num2;
     				}
-    				foreach (EleD item148 in 尾_鯨D2.右25_接続)
+    				foreach (ElementData item148 in 尾_鯨D2.右25_接続)
     				{
     					item148.尺度B = num2;
     				}
     				num2 *= 0.9;
-    				foreach (EleD item149 in 尾_鯨D2.左27_接続)
+    				foreach (ElementData item149 in 尾_鯨D2.左27_接続)
     				{
     					item149.尺度B = num2;
     				}
-    				foreach (EleD item150 in 尾_鯨D2.右27_接続)
+    				foreach (ElementData item150 in 尾_鯨D2.右27_接続)
     				{
     					item150.尺度B = num2;
     				}
     				num2 *= 0.9;
-    				foreach (EleD item151 in 尾_鯨D2.左28_接続)
+    				foreach (ElementData item151 in 尾_鯨D2.左28_接続)
     				{
     					item151.尺度B = num2;
     				}
-    				foreach (EleD item152 in 尾_鯨D2.右28_接続)
+    				foreach (ElementData item152 in 尾_鯨D2.右28_接続)
     				{
     					item152.尺度B = num2;
     				}
     				num2 *= 0.9;
-    				foreach (EleD item153 in 尾_鯨D2.左29_接続)
+    				foreach (ElementData item153 in 尾_鯨D2.左29_接続)
     				{
     					item153.尺度B = num2;
     				}
-    				foreach (EleD item154 in 尾_鯨D2.右29_接続)
+    				foreach (ElementData item154 in 尾_鯨D2.右29_接続)
     				{
     					item154.尺度B = num2;
     				}
     				num2 *= 0.9;
-    				foreach (EleD item155 in 尾_鯨D2.左30_接続)
+    				foreach (ElementData item155 in 尾_鯨D2.左30_接続)
     				{
     					item155.尺度B = num2;
     				}
-    				foreach (EleD item156 in 尾_鯨D2.右30_接続)
+    				foreach (ElementData item156 in 尾_鯨D2.右30_接続)
     				{
     					item156.尺度B = num2;
     				}
     				num2 *= 0.9;
-    				foreach (EleD item157 in 尾_鯨D2.左31_接続)
+    				foreach (ElementData item157 in 尾_鯨D2.左31_接続)
     				{
     					item157.尺度B = num2;
     				}
-    				foreach (EleD item158 in 尾_鯨D2.右31_接続)
+    				foreach (ElementData item158 in 尾_鯨D2.右31_接続)
     				{
     					item158.尺度B = num2;
     				}
     				num2 *= 0.9;
-    				foreach (EleD item159 in 尾_鯨D2.左32_接続)
+    				foreach (ElementData item159 in 尾_鯨D2.左32_接続)
     				{
     					item159.尺度B = num2;
     				}
-    				foreach (EleD item160 in 尾_鯨D2.右32_接続)
+    				foreach (ElementData item160 in 尾_鯨D2.右32_接続)
     				{
     					item160.尺度B = num2;
     				}
     				num2 *= 0.9;
-    				foreach (EleD item161 in 尾_鯨D2.左33_接続)
+    				foreach (ElementData item161 in 尾_鯨D2.左33_接続)
     				{
     					item161.尺度B = num2;
     				}
-    				foreach (EleD item162 in 尾_鯨D2.右33_接続)
+    				foreach (ElementData item162 in 尾_鯨D2.右33_接続)
     				{
     					item162.尺度B = num2;
     				}
     				num2 *= 0.9;
-    				foreach (EleD item163 in 尾_鯨D2.左34_接続)
+    				foreach (ElementData item163 in 尾_鯨D2.左34_接続)
     				{
     					item163.尺度B = num2;
     				}
-    				foreach (EleD item164 in 尾_鯨D2.右34_接続)
+    				foreach (ElementData item164 in 尾_鯨D2.右34_接続)
     				{
     					item164.尺度B = num2;
     				}
@@ -3722,47 +3722,47 @@ namespace SlaveMatrix
     			{
     				触手_蔦D 触手_蔦D2 = (触手_蔦D)item32;
     				double 尺度B = 触手_蔦D2.尺度B;
-    				foreach (EleD item165 in 触手_蔦D2.節3_接続)
+    				foreach (ElementData item165 in 触手_蔦D2.節3_接続)
     				{
     					item165.尺度B = 尺度B;
     				}
     				尺度B *= SpeciesDefaults.葉倍率;
-    				foreach (EleD item166 in 触手_蔦D2.節5_接続)
+    				foreach (ElementData item166 in 触手_蔦D2.節5_接続)
     				{
     					item166.尺度B = 尺度B;
     				}
     				尺度B *= SpeciesDefaults.葉倍率;
-    				foreach (EleD item167 in 触手_蔦D2.節7_接続)
+    				foreach (ElementData item167 in 触手_蔦D2.節7_接続)
     				{
     					item167.尺度B = 尺度B;
     				}
     				尺度B *= SpeciesDefaults.葉倍率;
-    				foreach (EleD item168 in 触手_蔦D2.節9_接続)
+    				foreach (ElementData item168 in 触手_蔦D2.節9_接続)
     				{
     					item168.尺度B = 尺度B;
     				}
     				尺度B *= SpeciesDefaults.葉倍率;
-    				foreach (EleD item169 in 触手_蔦D2.節11_接続)
+    				foreach (ElementData item169 in 触手_蔦D2.節11_接続)
     				{
     					item169.尺度B = 尺度B;
     				}
     				尺度B *= SpeciesDefaults.葉倍率;
-    				foreach (EleD item170 in 触手_蔦D2.節13_接続)
+    				foreach (ElementData item170 in 触手_蔦D2.節13_接続)
     				{
     					item170.尺度B = 尺度B;
     				}
     				尺度B *= SpeciesDefaults.葉倍率;
-    				foreach (EleD item171 in 触手_蔦D2.節15_接続)
+    				foreach (ElementData item171 in 触手_蔦D2.節15_接続)
     				{
     					item171.尺度B = 尺度B;
     				}
     				尺度B *= SpeciesDefaults.葉倍率;
-    				foreach (EleD item172 in 触手_蔦D2.節17_接続)
+    				foreach (ElementData item172 in 触手_蔦D2.節17_接続)
     				{
     					item172.尺度B = 尺度B;
     				}
     				尺度B *= SpeciesDefaults.葉倍率;
-    				foreach (EleD item173 in 触手_蔦D2.節19_接続)
+    				foreach (ElementData item173 in 触手_蔦D2.節19_接続)
     				{
     					item173.尺度B = 尺度B;
     				}
@@ -3917,39 +3917,39 @@ namespace SlaveMatrix
     		{
     			if (RNG.XS.NextBool())
     			{
-    				HeadD2.触覚左_接続.RemoveAll((EleD e) => e is 触覚D);
-    				HeadD2.触覚右_接続.RemoveAll((EleD e) => e is 触覚D);
+    				HeadD2.触覚左_接続.RemoveAll((ElementData e) => e is 触覚D);
+    				HeadD2.触覚右_接続.RemoveAll((ElementData e) => e is 触覚D);
     			}
     			else
     			{
-    				基髪D2.頭頂左_接続.RemoveAll((EleD e) => e is 触覚D);
-    				基髪D2.頭頂右_接続.RemoveAll((EleD e) => e is 触覚D);
+    				基髪D2.頭頂左_接続.RemoveAll((ElementData e) => e is 触覚D);
+    				基髪D2.頭頂右_接続.RemoveAll((ElementData e) => e is 触覚D);
     			}
     		}
     		else if (flag12 && !flag13 && flag14)
     		{
     			if (RNG.XS.NextBool())
     			{
-    				顔面D2.触覚左_接続.RemoveAll((EleD e) => e is 触覚D);
-    				顔面D2.触覚右_接続.RemoveAll((EleD e) => e is 触覚D);
+    				顔面D2.触覚左_接続.RemoveAll((ElementData e) => e is 触覚D);
+    				顔面D2.触覚右_接続.RemoveAll((ElementData e) => e is 触覚D);
     			}
     			else
     			{
-    				基髪D2.頭頂左_接続.RemoveAll((EleD e) => e is 触覚D);
-    				基髪D2.頭頂右_接続.RemoveAll((EleD e) => e is 触覚D);
+    				基髪D2.頭頂左_接続.RemoveAll((ElementData e) => e is 触覚D);
+    				基髪D2.頭頂右_接続.RemoveAll((ElementData e) => e is 触覚D);
     			}
     		}
     		else if (flag12 && flag13 && !flag14)
     		{
     			if (RNG.XS.NextBool())
     			{
-    				顔面D2.触覚左_接続.RemoveAll((EleD e) => e is 触覚D);
-    				顔面D2.触覚右_接続.RemoveAll((EleD e) => e is 触覚D);
+    				顔面D2.触覚左_接続.RemoveAll((ElementData e) => e is 触覚D);
+    				顔面D2.触覚右_接続.RemoveAll((ElementData e) => e is 触覚D);
     			}
     			else
     			{
-    				HeadD2.触覚左_接続.RemoveAll((EleD e) => e is 触覚D);
-    				HeadD2.触覚右_接続.RemoveAll((EleD e) => e is 触覚D);
+    				HeadD2.触覚左_接続.RemoveAll((ElementData e) => e is 触覚D);
+    				HeadD2.触覚右_接続.RemoveAll((ElementData e) => e is 触覚D);
     			}
     		}
     		else if (flag12 && flag13 && flag14)
@@ -3957,22 +3957,22 @@ namespace SlaveMatrix
     			switch (RNG.XS.Next(2))
     			{
     			case 0:
-    				HeadD2.触覚左_接続.RemoveAll((EleD e) => e is 触覚D);
-    				HeadD2.触覚右_接続.RemoveAll((EleD e) => e is 触覚D);
-    				基髪D2.頭頂左_接続.RemoveAll((EleD e) => e is 触覚D);
-    				基髪D2.頭頂右_接続.RemoveAll((EleD e) => e is 触覚D);
+    				HeadD2.触覚左_接続.RemoveAll((ElementData e) => e is 触覚D);
+    				HeadD2.触覚右_接続.RemoveAll((ElementData e) => e is 触覚D);
+    				基髪D2.頭頂左_接続.RemoveAll((ElementData e) => e is 触覚D);
+    				基髪D2.頭頂右_接続.RemoveAll((ElementData e) => e is 触覚D);
     				break;
     			case 1:
-    				顔面D2.触覚左_接続.RemoveAll((EleD e) => e is 触覚D);
-    				顔面D2.触覚右_接続.RemoveAll((EleD e) => e is 触覚D);
-    				基髪D2.頭頂左_接続.RemoveAll((EleD e) => e is 触覚D);
-    				基髪D2.頭頂右_接続.RemoveAll((EleD e) => e is 触覚D);
+    				顔面D2.触覚左_接続.RemoveAll((ElementData e) => e is 触覚D);
+    				顔面D2.触覚右_接続.RemoveAll((ElementData e) => e is 触覚D);
+    				基髪D2.頭頂左_接続.RemoveAll((ElementData e) => e is 触覚D);
+    				基髪D2.頭頂右_接続.RemoveAll((ElementData e) => e is 触覚D);
     				break;
     			case 2:
-    				顔面D2.触覚左_接続.RemoveAll((EleD e) => e is 触覚D);
-    				顔面D2.触覚右_接続.RemoveAll((EleD e) => e is 触覚D);
-    				HeadD2.触覚左_接続.RemoveAll((EleD e) => e is 触覚D);
-    				HeadD2.触覚右_接続.RemoveAll((EleD e) => e is 触覚D);
+    				顔面D2.触覚左_接続.RemoveAll((ElementData e) => e is 触覚D);
+    				顔面D2.触覚右_接続.RemoveAll((ElementData e) => e is 触覚D);
+    				HeadD2.触覚左_接続.RemoveAll((ElementData e) => e is 触覚D);
+    				HeadD2.触覚右_接続.RemoveAll((ElementData e) => e is 触覚D);
     				break;
     			}
     		}
@@ -3986,8 +3986,8 @@ namespace SlaveMatrix
     			{
     				顔面D2.触覚右接続(eleD9);
     			}
-    			HeadD2.触覚左_接続.RemoveAll((EleD e) => e is 触覚D);
-    			HeadD2.触覚右_接続.RemoveAll((EleD e) => e is 触覚D);
+    			HeadD2.触覚左_接続.RemoveAll((ElementData e) => e is 触覚D);
+    			HeadD2.触覚右_接続.RemoveAll((ElementData e) => e is 触覚D);
     		}
     		if (腰肌.陰毛_表示 && 腰肌.獣性_獣毛_表示)
     		{
@@ -4086,19 +4086,19 @@ namespace SlaveMatrix
     		return Waist;
     	}
 
-    	public static EleD GetEleD(this IEnumerable<EleD> src, Type t)
+    	public static ElementData GetEleD(this IEnumerable<ElementData> src, Type t)
     	{
-    		return src?.FirstOrDefault((EleD e) => e.GetType().IsAssignableFrom(t));
+    		return src?.FirstOrDefault((ElementData e) => e.GetType().IsAssignableFrom(t));
     	}
 
-    	public static EleD GetEleD(this IEnumerable<EleD> src, bool 右, Type t)
+    	public static ElementData GetEleD(this IEnumerable<ElementData> src, bool 右, Type t)
     	{
-    		return src?.FirstOrDefault((EleD e) => e.GetType().IsAssignableFrom(t) && e.右 == 右);
+    		return src?.FirstOrDefault((ElementData e) => e.GetType().IsAssignableFrom(t) && e.右 == 右);
     	}
 
-    	public static EleD GetEleD(this IEnumerable<EleD> src, Func<EleD, bool> con, Type t)
+    	public static ElementData GetEleD(this IEnumerable<ElementData> src, Func<ElementData, bool> con, Type t)
     	{
-    		return src?.FirstOrDefault((EleD e) => e.GetType().IsAssignableFrom(t) && con(e));
+    		return src?.FirstOrDefault((ElementData e) => e.GetType().IsAssignableFrom(t) && con(e));
     	}
 
     	private static void Dou<T>(this T e)
@@ -4163,10 +4163,10 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private static T Sub<T>(T e0, T e1) where T : EleD
+    	private static T Sub<T>(T e0, T e1) where T : ElementData
     	{
     		object obj = e0.GetType().GetConstructor(bi, Type.DefaultBinder, t0, null).Invoke(null);
-    		EleD eleD = e0.Copy_以下無();
+    		ElementData elementData = e0.Copy_以下無();
     		Type type = e1.GetType();
     		FieldInfo[] fields = e0.GetType().GetFields();
     		foreach (FieldInfo fieldInfo in fields)
@@ -4178,17 +4178,17 @@ namespace SlaveMatrix
     				{
     					bool num = (bool)fieldInfo.GetValue(e0);
     					bool flag = num;
-    					fieldInfo.SetValue(eleD, (num && (bool)field.GetValue(e1)) ? fieldInfo.GetValue(obj) : ((object)flag));
+    					fieldInfo.SetValue(elementData, (num && (bool)field.GetValue(e1)) ? fieldInfo.GetValue(obj) : ((object)flag));
     				}
     			}
     		}
-    		return (T)eleD;
+    		return (T)elementData;
     	}
 
-    	private static T Syn<T>(T e0, T e1) where T : EleD
+    	private static T Syn<T>(T e0, T e1) where T : ElementData
     	{
     		e0.GetType().GetConstructor(bi, Type.DefaultBinder, t0, null).Invoke(null);
-    		EleD eleD = e0.Copy_以下無();
+    		ElementData elementData = e0.Copy_以下無();
     		Type type = e1.GetType();
     		FieldInfo[] fields = e0.GetType().GetFields();
     		foreach (FieldInfo fieldInfo in fields)
@@ -4198,14 +4198,14 @@ namespace SlaveMatrix
     				FieldInfo field = type.GetField(fieldInfo.Name);
     				if (field != null && field.FieldType.ToString() == Sta.bt)
     				{
-    					fieldInfo.SetValue(eleD, (bool)fieldInfo.GetValue(e0) || (bool)field.GetValue(e1));
+    					fieldInfo.SetValue(elementData, (bool)fieldInfo.GetValue(e0) || (bool)field.GetValue(e1));
     				}
     			}
     		}
-    		return (T)eleD;
+    		return (T)elementData;
     	}
 
-    	private static T Mix<T>(T 母, T 父, int i, bool 原種モード) where T : EleD
+    	private static T Mix<T>(T 母, T 父, int i, bool 原種モード) where T : ElementData
     	{
     		T val = null;
     		if (母 == null && 父 != null)
@@ -4282,7 +4282,7 @@ namespace SlaveMatrix
     		return val;
     	}
 
-    	private static T Mix<T>(WaistD 母方, WaistD 父方, int i, bool 原種モード) where T : EleD
+    	private static T Mix<T>(WaistD 母方, WaistD 父方, int i, bool 原種モード) where T : ElementData
     	{
     		T eleD = (from e in 母方.EnumEleD()
     			orderby RNG.XS.Next()
@@ -4293,7 +4293,7 @@ namespace SlaveMatrix
     		return Mix(eleD, eleD2, i, 原種モード);
     	}
 
-    	private static T Mix<T>(WaistD 母方, WaistD 父方, bool 右, int i, bool 原種モード) where T : EleD
+    	private static T Mix<T>(WaistD 母方, WaistD 父方, bool 右, int i, bool 原種モード) where T : ElementData
     	{
     		T eleD = (from e in 母方.EnumEleD()
     			orderby RNG.XS.Next()
@@ -4304,7 +4304,7 @@ namespace SlaveMatrix
     		return Mix(eleD, eleD2, i, 原種モード);
     	}
 
-    	private static T Mix<T>(WaistD 母方, WaistD 父方, Func<T, bool> con, int i, bool 原種モード) where T : EleD
+    	private static T Mix<T>(WaistD 母方, WaistD 父方, Func<T, bool> con, int i, bool 原種モード) where T : ElementData
     	{
     		T eleD = (from e in 母方.EnumEleD()
     			orderby RNG.XS.Next()
@@ -4315,40 +4315,40 @@ namespace SlaveMatrix
     		return Mix(eleD, eleD2, i, 原種モード);
     	}
 
-    	private static EleD Mix(WaistD 母方, WaistD 父方, int i, Type t, bool 原種モード)
+    	private static ElementData Mix(WaistD 母方, WaistD 父方, int i, Type t, bool 原種モード)
     	{
-    		EleD eleD = (from e in 母方.EnumEleD()
+    		ElementData elementData = (from e in 母方.EnumEleD()
     			orderby RNG.XS.Next()
     			select e).GetEleD(t);
-    		EleD eleD2 = (from e in 父方.EnumEleD()
+    		ElementData eleD2 = (from e in 父方.EnumEleD()
     			orderby RNG.XS.Next()
     			select e).GetEleD(t);
-    		return Mix(eleD, eleD2, i, 原種モード);
+    		return Mix(elementData, eleD2, i, 原種モード);
     	}
 
-    	private static EleD Mix(WaistD 母方, WaistD 父方, bool 右, int i, Type t, bool 原種モード)
+    	private static ElementData Mix(WaistD 母方, WaistD 父方, bool 右, int i, Type t, bool 原種モード)
     	{
-    		EleD eleD = (from e in 母方.EnumEleD()
+    		ElementData elementData = (from e in 母方.EnumEleD()
     			orderby RNG.XS.Next()
     			select e).GetEleD(右, t);
-    		EleD eleD2 = (from e in 父方.EnumEleD()
+    		ElementData eleD2 = (from e in 父方.EnumEleD()
     			orderby RNG.XS.Next()
     			select e).GetEleD(右, t);
-    		return Mix(eleD, eleD2, i, 原種モード);
+    		return Mix(elementData, eleD2, i, 原種モード);
     	}
 
-    	private static EleD Mix(WaistD 母方, WaistD 父方, Func<EleD, bool> con, int i, Type t, bool 原種モード)
+    	private static ElementData Mix(WaistD 母方, WaistD 父方, Func<ElementData, bool> con, int i, Type t, bool 原種モード)
     	{
-    		EleD eleD = (from e in 母方.EnumEleD()
+    		ElementData elementData = (from e in 母方.EnumEleD()
     			orderby RNG.XS.Next()
     			select e).GetEleD(con, t);
-    		EleD eleD2 = (from e in 父方.EnumEleD()
+    		ElementData eleD2 = (from e in 父方.EnumEleD()
     			orderby RNG.XS.Next()
     			select e).GetEleD(con, t);
-    		return Mix(eleD, eleD2, i, 原種モード);
+    		return Mix(elementData, eleD2, i, 原種モード);
     	}
 
-    	public static void AlignR(this EleD e)
+    	public static void AlignR(this ElementData e)
     	{
     		if (e == null)
     		{
@@ -4364,13 +4364,13 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public static void AlignC(this EleD e)
+    	public static void AlignC(this ElementData e)
     	{
     		if (e == null)
     		{
     			return;
     		}
-    		foreach (EleD item in e.EnumEleD())
+    		foreach (ElementData item in e.EnumEleD())
     		{
     			FieldInfo[] fields = Sta.EleDt.GetFields();
     			foreach (FieldInfo fieldInfo in fields)
@@ -4386,7 +4386,7 @@ namespace SlaveMatrix
     	private static Dictionary<ConnectionInfo, List<Type>> Get接続構成(WaistD 母方, WaistD 父方)
     	{
     		Dictionary<ConnectionInfo, List<Type>> dictionary = new Dictionary<ConnectionInfo, List<Type>>();
-    		foreach (EleD item in 母方.EnumEleD().Concat(父方.EnumEleD()))
+    		foreach (ElementData item in 母方.EnumEleD().Concat(父方.EnumEleD()))
     		{
     			Type type = item.GetType();
     			if (!(item is 長胴D) && 接続範囲.ContainsKey(item.接続情報) && 接続範囲[item.接続情報].Contains(type.ToString()))
@@ -4409,7 +4409,7 @@ namespace SlaveMatrix
     			select e.GetType()).ToArray();
     	}
 
-    	public static void 接続(this EleD e, WaistD 母方, WaistD 父方, int i, ConnectionInfo 接続, Type[] 要素構成, Dictionary<ConnectionInfo, List<Type>> 接続構成, double 変異率, bool 原種モード)
+    	public static void 接続(this ElementData e, WaistD 母方, WaistD 父方, int i, ConnectionInfo 接続, Type[] 要素構成, Dictionary<ConnectionInfo, List<Type>> 接続構成, double 変異率, bool 原種モード)
     	{
     		string text = 接続.ToString();
     		if (text.Contains("左"))
@@ -4417,7 +4417,7 @@ namespace SlaveMatrix
     			ConnectionInfo 接続情報2 = 接続;
     			ConnectionInfo 接続情報3 = text.Replace("左", "右").To接続情報();
     			{
-    				foreach (EleD item in Enum接続肢(母方, 父方, 右: false, i, 接続, 要素構成, 接続構成, 変異率, 原種モード))
+    				foreach (ElementData item in Enum接続肢(母方, 父方, 右: false, i, 接続, 要素構成, 接続構成, 変異率, 原種モード))
     				{
     					if (item != null)
     					{
@@ -4432,7 +4432,7 @@ namespace SlaveMatrix
     		{
     			return;
     		}
-    		foreach (EleD item2 in Enum接続肢(母方, 父方, 右: false, i, 接続, 要素構成, 接続構成, 変異率, 原種モード).Reverse())
+    		foreach (ElementData item2 in Enum接続肢(母方, 父方, 右: false, i, 接続, 要素構成, 接続構成, 変異率, 原種モード).Reverse())
     		{
     			if (item2 != null)
     			{
@@ -4441,7 +4441,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public static IEnumerable<EleD> Enum接続肢(WaistD 母方, WaistD 父方, bool 右, int i, ConnectionInfo 接続, Type[] 要素構成, Dictionary<ConnectionInfo, List<Type>> 接続構成, double 変異率, bool 原種モード)
+    	public static IEnumerable<ElementData> Enum接続肢(WaistD 母方, WaistD 父方, bool 右, int i, ConnectionInfo 接続, Type[] 要素構成, Dictionary<ConnectionInfo, List<Type>> 接続構成, double 変異率, bool 原種モード)
     	{
     		double l = (接続.接続数(母方, 父方) + 接続.接続数(母方, 父方) + 接続.接続数(母方, 父方)) / 3;
     		double num = 1.0 / ((double)接続構成.Count * 0.5);
@@ -4481,7 +4481,7 @@ namespace SlaveMatrix
     		}
     		for (int j = 0; (double)j < l; j++)
     		{
-    			EleD e = Get接続肢(母方, 父方, 右, i, 接続, 要素構成, 接続構成, 変異率, j, 原種モード);
+    			ElementData e = Get接続肢(母方, 父方, 右, i, 接続, 要素構成, 接続構成, 変異率, j, 原種モード);
     			if (e != null)
     			{
     				yield return e;
@@ -4497,54 +4497,54 @@ namespace SlaveMatrix
     	{
     		if (接続範囲.ContainsKey(接続情報))
     		{
-    			IEnumerable<EleD> source = from e in 母方.EnumEleD().Concat(父方.EnumEleD())
+    			IEnumerable<ElementData> source = from e in 母方.EnumEleD().Concat(父方.EnumEleD())
     				where e.Enum接続情報().Contains(接続情報)
     				select e;
     			int num = source.Count();
     			if (num != 0)
     			{
-    				return source.ElementAt(RNG.XS.Next(num)).Get接続(接続情報).Count((EleD e) => 接続範囲[接続情報].Contains(e.GetType().ToString()));
+    				return source.ElementAt(RNG.XS.Next(num)).Get接続(接続情報).Count((ElementData e) => 接続範囲[接続情報].Contains(e.GetType().ToString()));
     			}
     			return 1;
     		}
     		return 0;
     	}
 
-    	public static EleD Get接続肢(WaistD 母方, WaistD 父方, bool 右, int i, ConnectionInfo 接続, Type[] 要素構成, Dictionary<ConnectionInfo, List<Type>> 接続構成, double 変異率, int j, bool 原種モード)
+    	public static ElementData Get接続肢(WaistD 母方, WaistD 父方, bool 右, int i, ConnectionInfo 接続, Type[] 要素構成, Dictionary<ConnectionInfo, List<Type>> 接続構成, double 変異率, int j, bool 原種モード)
     	{
-    		EleD eleD = Get要素(母方, 父方, 右, i, 接続, 要素構成, 接続構成, 変異率, j, 原種モード);
-    		if (eleD != null)
+    		ElementData elementData = Get要素(母方, 父方, 右, i, 接続, 要素構成, 接続構成, 変異率, j, 原種モード);
+    		if (elementData != null)
     		{
-    			foreach (ConnectionInfo item in eleD.Enum接続情報())
+    			foreach (ConnectionInfo item in elementData.Enum接続情報())
     			{
     				string text = item.ToString();
     				if (text.Contains("左"))
     				{
     					ConnectionInfo 接続情報2 = item;
     					ConnectionInfo 接続情報3 = text.Replace("左", "右").To接続情報();
-    					foreach (EleD item2 in Enum接続肢(母方, 父方, 右: false, i, item, 要素構成, 接続構成, 変異率, 原種モード))
+    					foreach (ElementData item2 in Enum接続肢(母方, 父方, 右: false, i, item, 要素構成, 接続構成, 変異率, 原種モード))
     					{
     						if (item2 != null)
     						{
-    							eleD.接続(接続情報2, item2);
-    							eleD.接続(接続情報3, item2.Get逆());
+    							elementData.接続(接続情報2, item2);
+    							elementData.接続(接続情報3, item2.Get逆());
     						}
     					}
     				}
     				else if (!text.Contains("右"))
     				{
-    					EleD eleD2 = Get接続肢(母方, 父方, 右, i, item, 要素構成, 接続構成, 変異率, j, 原種モード);
+    					ElementData eleD2 = Get接続肢(母方, 父方, 右, i, item, 要素構成, 接続構成, 変異率, j, 原種モード);
     					if (eleD2 != null)
     					{
-    						eleD.接続(item, eleD2);
+    						elementData.接続(item, eleD2);
     					}
     				}
     			}
     		}
-    		return eleD;
+    		return elementData;
     	}
 
-    	public static EleD Get要素(WaistD 母方, WaistD 父方, bool 右, int i, ConnectionInfo 接続, Type[] 要素構成, Dictionary<ConnectionInfo, List<Type>> 接続構成, double 変異率, int j, bool 原種モード)
+    	public static ElementData Get要素(WaistD 母方, WaistD 父方, bool 右, int i, ConnectionInfo 接続, Type[] 要素構成, Dictionary<ConnectionInfo, List<Type>> 接続構成, double 変異率, int j, bool 原種モード)
     	{
     		if (!原種モード && 変異率.Lot())
     		{
@@ -4553,7 +4553,7 @@ namespace SlaveMatrix
     		return Get要素0(母方, 父方, 右, i, 接続, 接続構成, j, 原種モード);
     	}
 
-    	public static EleD Get要素1(WaistD 母方, WaistD 父方, bool 右, int i, ConnectionInfo 接続, Type[] 要素構成, int j, bool 原種モード)
+    	public static ElementData Get要素1(WaistD 母方, WaistD 父方, bool 右, int i, ConnectionInfo 接続, Type[] 要素構成, int j, bool 原種モード)
     	{
     		if (接続範囲.ContainsKey(接続))
     		{
@@ -4571,7 +4571,7 @@ namespace SlaveMatrix
     		return null;
     	}
 
-    	public static EleD Get要素0(WaistD 母方, WaistD 父方, bool 右, int i, ConnectionInfo 接続, Dictionary<ConnectionInfo, List<Type>> 接続構成, int j, bool 原種モード)
+    	public static ElementData Get要素0(WaistD 母方, WaistD 父方, bool 右, int i, ConnectionInfo 接続, Dictionary<ConnectionInfo, List<Type>> 接続構成, int j, bool 原種モード)
     	{
     		if (接続構成.ContainsKey(接続))
     		{
@@ -4749,7 +4749,7 @@ namespace SlaveMatrix
     		unit.Name = unit.Race;
     		unit.種族情報 = 母方.種族情報.Mix(父方.種族情報);
     		unit.妊娠進行期間 = (母方.妊娠進行期間 + 父方.妊娠進行期間) / 2;
-    		foreach (EleD item in unit.ChaD.body_tree.EnumEleD())
+    		foreach (ElementData item in unit.ChaD.body_tree.EnumEleD())
     		{
     			item.SetValuesD("傷", false);
     			item.欠損 = false;

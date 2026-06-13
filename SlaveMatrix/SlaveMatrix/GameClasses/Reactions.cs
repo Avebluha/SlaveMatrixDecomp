@@ -2805,8 +2805,8 @@ namespace SlaveMatrix
 
     	public static void SetInitialAngle(this Character Cha)
     	{
-    		Ele[] Elements = Cha.Body.Elements;
-    		foreach (Ele obj in Elements)
+    		Element[] Elements = Cha.Body.Elements;
+    		foreach (Element obj in Elements)
     		{
     			obj.AngleAll = 0.0;
     			obj.SetAngle0();
@@ -2815,13 +2815,13 @@ namespace SlaveMatrix
 
     	public static void SetSymmetry(this Character Cha)
     	{
-    		Ele[] Elements = Cha.Body.Elements;
+    		Element[] Elements = Cha.Body.Elements;
     		try
     		{
-    			List<Ele> list = new List<Ele>();
-    			List<Ele> list2 = new List<Ele>();
-    			Ele[] array = Elements;
-    			foreach (Ele ele in array)
+    			List<Element> list = new List<Element>();
+    			List<Element> list2 = new List<Element>();
+    			Element[] array = Elements;
+    			foreach (Element ele in array)
     			{
     				string text = ele.ConnectionType.ToString();
     				if (!(ele is 尾_鳥) && !ele.ConnectionType.Is左右無し())
@@ -2836,8 +2836,8 @@ namespace SlaveMatrix
     					}
     				}
     			}
-    			list.Sort((Ele x, Ele y) => x.ConnectionType.ToString().CompareTo(y.ConnectionType.ToString()));
-    			list2.Sort((Ele x, Ele y) => x.ConnectionType.ToString().CompareTo(y.ConnectionType.ToString()));
+    			list.Sort((Element x, Element y) => x.ConnectionType.ToString().CompareTo(y.ConnectionType.ToString()));
+    			list2.Sort((Element x, Element y) => x.ConnectionType.ToString().CompareTo(y.ConnectionType.ToString()));
     			if (list.Count <= list2.Count)
     			{
     				for (int j = 0; j < list.Count; j++)
@@ -2855,7 +2855,7 @@ namespace SlaveMatrix
     			list.Clear();
     			list2.Clear();
     			array = Elements;
-    			foreach (Ele ele2 in array)
+    			foreach (Element ele2 in array)
     			{
     				string text = ele2.ConnectionType.ToString();
     				if (!(ele2 is 尾_鳥) && !ele2.ConnectionType.Is左右無し())
@@ -2870,8 +2870,8 @@ namespace SlaveMatrix
     					}
     				}
     			}
-    			list.Sort((Ele x, Ele y) => x.ToString().CompareTo(y.ToString()));
-    			list2.Sort((Ele x, Ele y) => x.ToString().CompareTo(y.ToString()));
+    			list.Sort((Element x, Element y) => x.ToString().CompareTo(y.ToString()));
+    			list2.Sort((Element x, Element y) => x.ToString().CompareTo(y.ToString()));
     			if (list.Count <= list2.Count)
     			{
     				for (int j = 0; j < list.Count; j++)
@@ -2892,13 +2892,13 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public static void 重複角度処理(this Ele e)
+    	public static void 重複角度処理(this Element e)
     	{
     		int num = -1;
     		int num2 = 0;
     		bool flag = true;
     		string text = e.GetType().ToString();
-    		foreach (Ele item in e.Par.EnumConnectionType(e.ConnectionType))
+    		foreach (Element item in e.Par.EnumConnectionType(e.ConnectionType))
     		{
     			if (!(item.GetType().ToString() == text))
     			{
@@ -4440,8 +4440,8 @@ namespace SlaveMatrix
     				腕人2.LowerArm.鎖1.反転Y = LowerArm反転Y;
     				if (腕人2.LowerArm.虫鎌_接続 != null)
     				{
-    					Ele[] 虫鎌_接続 = 腕人2.LowerArm.虫鎌_接続;
-    					foreach (Ele obj in 虫鎌_接続)
+    					Element[] 虫鎌_接続 = 腕人2.LowerArm.虫鎌_接続;
+    					foreach (Element obj in 虫鎌_接続)
     					{
     						obj.尺度XC = LowerArm尺度XC;
     						obj.尺度C = LowerArm尺度C;
@@ -4529,8 +4529,8 @@ namespace SlaveMatrix
     				腕人2.LowerArm.鎖1.反転Y = LowerArm反転Y;
     				if (腕人2.LowerArm.虫鎌_接続 != null)
     				{
-    					Ele[] 虫鎌_接続 = 腕人2.LowerArm.虫鎌_接続;
-    					foreach (Ele obj in 虫鎌_接続)
+    					Element[] 虫鎌_接続 = 腕人2.LowerArm.虫鎌_接続;
+    					foreach (Element obj in 虫鎌_接続)
     					{
     						obj.尺度XC = LowerArm尺度XC;
     						obj.尺度C = LowerArm尺度C;

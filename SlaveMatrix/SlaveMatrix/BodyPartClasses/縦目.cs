@@ -3,7 +3,7 @@ using _2DGAMELIB;
 
 namespace SlaveMatrix
 {
-    public class 縦目 : Ele
+    public class 縦目 : Element
     {
     	public ShapePart X0Y0_白目;
 
@@ -41,7 +41,7 @@ namespace SlaveMatrix
 
     	public ColorP X0Y0_黒目_ハイライト下CP;
 
-    	public Ele[] 瞼_接続;
+    	public Element[] 瞼_接続;
 
     	public override bool 欠損
     	{
@@ -281,8 +281,8 @@ namespace SlaveMatrix
     		}
     		if (e.瞼_接続.Count > 0)
     		{
-    			Ele f;
-    			瞼_接続 = e.瞼_接続.Select(delegate(EleD g)
+    			Element f;
+    			瞼_接続 = e.瞼_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 縦目2;

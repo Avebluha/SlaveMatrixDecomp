@@ -4,7 +4,7 @@ using _2DGAMELIB;
 namespace SlaveMatrix
 {
     [Serializable]
-    public class 胸毛D : EleD
+    public class 胸毛D : ElementData
     {
     	public bool 獣性_胸毛_表示;
 
@@ -13,7 +13,7 @@ namespace SlaveMatrix
     		ThisType = GetType();
     	}
 
-    	public override Ele GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
+    	public override Element GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
     	{
     		return new 胸毛(DisUnit, 配色指定, 体配色, Med, this);
     	}

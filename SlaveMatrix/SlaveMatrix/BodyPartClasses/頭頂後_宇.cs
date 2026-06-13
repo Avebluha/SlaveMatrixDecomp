@@ -2,7 +2,7 @@ using _2DGAMELIB;
 
 namespace SlaveMatrix
 {
-    public class 頭頂後_宇 : Ele
+    public class 頭頂後_宇 : Element
     {
     	public ShapePart X0Y0_頭部;
 

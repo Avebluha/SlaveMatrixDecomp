@@ -10,14 +10,14 @@ namespace SlaveMatrix
 
     	public static void AdjustScale(this WaistD Waist, HeadD 頭)
     	{
-    		foreach (EleD item in 頭.EnumEleD())
+    		foreach (ElementData item in 頭.EnumEleD())
     		{
     			if (!(item is 後髪0D) && !(item is BackHair1D) && !(item is SideHairD) && !(item is 前髪D))
     			{
     				item.尺度B *= 0.98;
     			}
     		}
-    		foreach (EleD item2 in Waist.EnumEleD())
+    		foreach (ElementData item2 in Waist.EnumEleD())
     		{
     			item2.尺度B *= 1.065;
     		}
@@ -129,7 +129,7 @@ namespace SlaveMatrix
     		頭D2.Set鼻R();
     		頭D2.Set口人();
     		頭D2.Set舌短();
-    		EleD eleD2 = new 獣耳D
+    		ElementData eleD2 = new 獣耳D
     		{
     			尺度B = 1.2
     		};
@@ -504,7 +504,7 @@ namespace SlaveMatrix
     		頭D2.Set口人();
     		頭D2.Set舌短();
     		頭D2.Set耳獣();
-    		EleD eleD2 = RNG.XS.Next(4) switch
+    		ElementData eleD2 = RNG.XS.Next(4) switch
     		{
     			0 => new 角2_牛1D(), 
     			1 => new 角2_牛2D(), 
@@ -574,7 +574,7 @@ namespace SlaveMatrix
     		頭D2.Set口人();
     		頭D2.Set舌短();
     		頭D2.Set耳獣();
-    		EleD eleD2 = RNG.XS.Next(4) switch
+    		ElementData eleD2 = RNG.XS.Next(4) switch
     		{
     			0 => new 角2_山1D(), 
     			1 => new 角2_山2D(), 
@@ -757,9 +757,9 @@ namespace SlaveMatrix
     		{
     			長物_魚D 長物_魚D2 = new 長物_魚D();
     			WaistD2.半身接続(長物_魚D2);
-    			EleD eleD = new 鰭_魚D();
-    			長物_魚D2.左0接続(eleD);
-    			長物_魚D2.右0接続(eleD.Get逆());
+    			ElementData elementData = new 鰭_魚D();
+    			長物_魚D2.左0接続(elementData);
+    			長物_魚D2.右0接続(elementData.Get逆());
     			尾_魚D 尾_魚D2 = new 尾_魚D();
     			長物_魚D2.尾接続(尾_魚D2);
     			尾_魚D2.尾先接続(new 尾鰭_魚D());
@@ -773,9 +773,9 @@ namespace SlaveMatrix
     				長物_蛇D2.くぱぁ = 1.0;
     				長物_蛇D2.ガード = false;
     			}
-    			EleD eleD = new 鰭_魚D();
-    			長物_蛇D2.左接続(eleD);
-    			長物_蛇D2.右接続(eleD.Get逆());
+    			ElementData elementData = new 鰭_魚D();
+    			長物_蛇D2.左接続(elementData);
+    			長物_蛇D2.右接続(elementData.Get逆());
     			Torso_蛇D Torso_蛇D2 = new Torso_蛇D();
     			長物_蛇D2.胴接続(Torso_蛇D2);
     			尾_ヘD 尾_ヘD2 = new 尾_ヘD();
@@ -811,9 +811,9 @@ namespace SlaveMatrix
     		obj2.肩右接続(ShoulderD2.Get逆());
     		長物_鯨D 長物_鯨D2 = new 長物_鯨D();
     		obj.半身接続(長物_鯨D2);
-    		EleD eleD = new 鰭_豚D();
-    		長物_鯨D2.左0接続(eleD);
-    		長物_鯨D2.右0接続(eleD.Get逆());
+    		ElementData elementData = new 鰭_豚D();
+    		長物_鯨D2.左0接続(elementData);
+    		長物_鯨D2.右0接続(elementData.Get逆());
     		尾_鯨D 尾_鯨D2 = new 尾_鯨D();
     		長物_鯨D2.尾接続(尾_鯨D2);
     		尾_鯨D2.尾先接続(new 尾鰭_鯨D());
@@ -952,7 +952,7 @@ namespace SlaveMatrix
     		頭D2.Set口裂();
     		頭D2.Set舌長();
     		頭D2.Set耳鰭();
-    		EleD eleD2 = RNG.XS.Next(4) switch
+    		ElementData eleD2 = RNG.XS.Next(4) switch
     		{
     			0 => new 角2_牛1D(), 
     			1 => new 角2_牛2D(), 
@@ -1028,9 +1028,9 @@ namespace SlaveMatrix
     		obj.肩右接続(ShoulderD2.Get逆());
     		if (RNG.XS.NextBool())
     		{
-    			EleD eleD = new 虫顎D();
-    			頭D2.頬左接続(eleD);
-    			頭D2.頬右接続(eleD.Get逆());
+    			ElementData elementData = new 虫顎D();
+    			頭D2.頬左接続(elementData);
+    			頭D2.頬右接続(elementData.Get逆());
     		}
     		多足_蜘D 多足_蜘D2 = new 多足_蜘D();
     		WaistD2.半身接続(多足_蜘D2);
@@ -1040,10 +1040,10 @@ namespace SlaveMatrix
     		触肢_肢蜘D 触肢_肢蜘D2 = new 触肢_肢蜘D();
     		節足_足蜘D 節足_足蜘D2 = new 節足_足蜘D();
     		節足_足蜘D2.爪 = b;
-    		EleD eleD2 = 節足_足蜘D2.Copy();
-    		EleD eleD3 = 節足_足蜘D2.Copy();
+    		ElementData eleD2 = 節足_足蜘D2.Copy();
+    		ElementData eleD3 = 節足_足蜘D2.Copy();
     		eleD3.反転Y = !尾_蜘D2.出糸;
-    		EleD eleD4 = 節足_足蜘D2.Copy();
+    		ElementData eleD4 = 節足_足蜘D2.Copy();
     		eleD4.反転Y = eleD3.反転Y;
     		多足_蜘D2.触肢左接続(触肢_肢蜘D2);
     		多足_蜘D2.節足左1接続(節足_足蜘D2);
@@ -1098,9 +1098,9 @@ namespace SlaveMatrix
     		}
     		if (RNG.XS.NextBool())
     		{
-    			EleD eleD = new 虫顎D();
-    			頭D2.頬左接続(eleD);
-    			頭D2.頬右接続(eleD.Get逆());
+    			ElementData elementData = new 虫顎D();
+    			頭D2.頬左接続(elementData);
+    			頭D2.頬右接続(elementData.Get逆());
     		}
     		手_人D e = new 手_人D();
     		LowerArm_人D LowerArm_人D2 = new LowerArm_人D();
@@ -1120,9 +1120,9 @@ namespace SlaveMatrix
     		触肢_肢蠍D 触肢_肢蠍D2 = new 触肢_肢蠍D();
     		節足_足蠍D 節足_足蠍D2 = new 節足_足蠍D();
     		節足_足蠍D2.爪 = RNG.XS.NextBool();
-    		EleD eleD2 = 節足_足蠍D2.Copy();
-    		EleD eleD3 = 節足_足蠍D2.Copy();
-    		EleD eleD4 = 節足_足蠍D2.Copy();
+    		ElementData eleD2 = 節足_足蠍D2.Copy();
+    		ElementData eleD3 = 節足_足蠍D2.Copy();
+    		ElementData eleD4 = 節足_足蠍D2.Copy();
     		多足_蠍D2.触肢左接続(触肢_肢蠍D2);
     		多足_蠍D2.節足左1接続(節足_足蠍D2);
     		多足_蠍D2.節足左2接続(eleD2);
@@ -1135,9 +1135,9 @@ namespace SlaveMatrix
     		多足_蠍D2.節足右4接続(eleD4.Get逆());
     		if (RNG.XS.NextBool())
     		{
-    			EleD eleD = new 触覚_蠍D();
-    			多足_蠍D2.櫛状板左接続(eleD);
-    			多足_蠍D2.櫛状板右接続(eleD.Get逆());
+    			ElementData elementData = new 触覚_蠍D();
+    			多足_蠍D2.櫛状板左接続(elementData);
+    			多足_蠍D2.櫛状板右接続(elementData.Get逆());
     		}
     		多足_蠍D2.尾接続(new 尾_蠍D());
     		WaistD2.EnumEleD().SetValuesD("タトゥ", true);
@@ -1183,7 +1183,7 @@ namespace SlaveMatrix
     		頭D2.Set舌短();
     		頭D2.Set耳尖();
     		頭D2.額接続(new 角1_虫D());
-    		EleD eleD2 = new 角2_虫D();
+    		ElementData eleD2 = new 角2_虫D();
     		eleD2.SetValuesD("棘", true);
     		eleD.頭頂左接続(eleD2);
     		eleD.頭頂右接続(eleD2.Get逆());
@@ -1259,7 +1259,7 @@ namespace SlaveMatrix
     		obj3.肩左接続(ShoulderD2);
     		obj3.肩右接続(ShoulderD2.Get逆());
     		植D 植D2 = new 植D();
-    		EleD eleD2 = SlaveMatrix.GameClasses._Con.Get花R(右: false);
+    		ElementData eleD2 = SlaveMatrix.GameClasses._Con.Get花R(右: false);
     		植D2.花接続(eleD2);
     		bool flag = RNG.XS.NextBool();
     		if (eleD2 is 花_百D)
@@ -1289,7 +1289,7 @@ namespace SlaveMatrix
     			先端表示 = RNG.XS.NextBool()
     		};
     		触手_蔦D2.SetValuesD("棘", RNG.XS.NextBool());
-    		EleD eleD3 = (flag ? ((葉D)new 葉_披D()) : ((葉D)new 葉_心D()));
+    		ElementData eleD3 = (flag ? ((葉D)new 葉_披D()) : ((葉D)new 葉_心D()));
     		eleD3.尺度B *= 1.2;
     		触手_蔦D2.節3接続(eleD3);
     		eleD3.尺度B *= 葉倍率;
@@ -1309,7 +1309,7 @@ namespace SlaveMatrix
     		eleD3.尺度B *= 葉倍率;
     		触手_蔦D2.節19接続(eleD3 = eleD3.Copy());
     		eleD3.尺度B *= 葉倍率;
-    		EleD eleD4 = 触手_蔦D2.Copy();
+    		ElementData eleD4 = 触手_蔦D2.Copy();
     		obj2.翼左接続(触手_蔦D2);
     		obj2.翼右接続(触手_蔦D2.Get逆());
     		obj.翼左接続(eleD4);
@@ -1319,7 +1319,7 @@ namespace SlaveMatrix
     		obj.腿右接続(腿_人D2.Get逆());
     		単足_植D 単足_植D2 = new 単足_植D();
     		obj.半身接続(単足_植D2);
-    		EleD eleD5 = new 尾_根D();
+    		ElementData eleD5 = new 尾_根D();
     		単足_植D2.根外左接続(eleD5);
     		単足_植D2.根外右接続(eleD5.Copy());
     		単足_植D2.根内左接続(eleD5.Copy());
@@ -1358,7 +1358,7 @@ namespace SlaveMatrix
     		頭D2.Set口人();
     		頭D2.Set舌短();
     		頭D2.Set耳長();
-    		EleD eleD2 = RNG.XS.Next(5) switch
+    		ElementData eleD2 = RNG.XS.Next(5) switch
     		{
     			0 => new 角2_山2D
     			{
@@ -1441,7 +1441,7 @@ namespace SlaveMatrix
     		{
     			頭D2.Set耳長();
     		}
-    		EleD eleD2 = RNG.XS.Next(8) switch
+    		ElementData eleD2 = RNG.XS.Next(8) switch
     		{
     			0 => new 角2_山1D(), 
     			1 => new 角2_山2D(), 
@@ -1597,7 +1597,7 @@ namespace SlaveMatrix
     		頭D2.Set鼻R();
     		頭D2.Set口人();
     		頭D2.Set舌短();
-    		EleD eleD2 = new 獣耳D();
+    		ElementData eleD2 = new 獣耳D();
     		eleD.頭頂左接続(eleD2);
     		eleD.頭頂右接続(eleD2.Get逆());
     		手_人D e = new 手_人D();
@@ -1648,7 +1648,7 @@ namespace SlaveMatrix
     		頭D2.Set鼻R();
     		頭D2.Set口人();
     		頭D2.Set舌短();
-    		EleD eleD2 = new 獣耳D
+    		ElementData eleD2 = new 獣耳D
     		{
     			尺度YB = 1.2
     		};
@@ -1701,7 +1701,7 @@ namespace SlaveMatrix
     		頭D2.Set鼻R();
     		頭D2.Set口人();
     		頭D2.Set舌短();
-    		EleD eleD2 = new 獣耳D();
+    		ElementData eleD2 = new 獣耳D();
     		eleD.頭頂左接続(eleD2);
     		eleD.頭頂右接続(eleD2.Get逆());
     		手_人D e = new 手_人D();
@@ -1763,17 +1763,17 @@ namespace SlaveMatrix
     		腿_人D2.Leg接続(Leg_人D2);
     		WaistD2.腿左接続(腿_人D2);
     		WaistD2.腿右接続(腿_人D2.Get逆());
-    		EleD eleD;
+    		ElementData elementData;
     		if (RNG.XS.Next(2) == 0)
     		{
-    			eleD = new 尾_ヘD();
-    			eleD.尺度B = 0.6;
+    			elementData = new 尾_ヘD();
+    			elementData.尺度B = 0.6;
     		}
     		else
     		{
-    			eleD = new 尾_龍D();
+    			elementData = new 尾_龍D();
     		}
-    		WaistD2.尾接続(eleD);
+    		WaistD2.尾接続(elementData);
     		WaistD2.EnumEleD().SetValuesD("竜性", true);
     		WaistD2.EnumEleD().SetValuesD<LowerArm_人D>("棘", false);
     		WaistD2.EnumEleD().SetValuesD<LowerArm_人D>("肘2", false);
@@ -1803,7 +1803,7 @@ namespace SlaveMatrix
     		頭D2.Set鼻人();
     		頭D2.Set口人();
     		頭D2.Set舌短();
-    		EleD e;
+    		ElementData e;
     		if (RNG.XS.NextBool())
     		{
     			e = ((RNG.XS.Next(2) != 0) ? ((角1D)new 角1_鬼D()) : ((角1D)new 角1_一D()));
@@ -1916,7 +1916,7 @@ namespace SlaveMatrix
     		頭D2.Set鼻人();
     		頭D2.Set口R();
     		頭D2.Set舌短();
-    		EleD e;
+    		ElementData e;
     		if (RNG.XS.NextBool())
     		{
     			e = ((RNG.XS.Next(2) != 0) ? ((角1D)new 角1_鬼D()) : ((角1D)new 角1_一D()));
@@ -2031,7 +2031,7 @@ namespace SlaveMatrix
     		頭D2.Set鼻人();
     		頭D2.Set口R();
     		頭D2.Set舌短();
-    		EleD e;
+    		ElementData e;
     		if (RNG.XS.NextBool())
     		{
     			e = ((RNG.XS.Next(2) != 0) ? ((角1D)new 角1_鬼D()) : ((角1D)new 角1_一D()));
@@ -2124,7 +2124,7 @@ namespace SlaveMatrix
     		頭D2.Set鼻人();
     		頭D2.Set口R();
     		頭D2.Set舌短();
-    		EleD e;
+    		ElementData e;
     		if (RNG.XS.NextBool())
     		{
     			e = ((RNG.XS.Next(2) != 0) ? ((角1D)new 角1_鬼D()) : ((角1D)new 角1_一D()));
@@ -2234,7 +2234,7 @@ namespace SlaveMatrix
     		頭D2.Set舌長();
     		頭D2.Set耳鰭();
     		頭D2.Set耳尖();
-    		EleD e;
+    		ElementData e;
     		if (RNG.XS.NextBool())
     		{
     			e = ((RNG.XS.Next(2) != 0) ? ((角1D)new 角1_鬼D()) : ((角1D)new 角1_一D()));
@@ -2282,7 +2282,7 @@ namespace SlaveMatrix
     		頭D2.Set口裂();
     		頭D2.Set舌短();
     		頭D2.Set耳人();
-    		EleD eleD2 = RNG.XS.Next(5) switch
+    		ElementData eleD2 = RNG.XS.Next(5) switch
     		{
     			0 => new 角2_山1D(), 
     			1 => new 角2_山2D(), 
@@ -2358,7 +2358,7 @@ namespace SlaveMatrix
     		頭D2.Set舌長();
     		頭D2.Set耳鰭();
     		頭D2.Set耳尖();
-    		EleD eleD2 = new 角2_山2D();
+    		ElementData eleD2 = new 角2_山2D();
     		eleD.頭頂左接続(eleD2);
     		eleD.頭頂右接続(eleD2.Get逆());
     		長物_蛇D 長物_蛇D2 = new 長物_蛇D();
@@ -2474,7 +2474,7 @@ namespace SlaveMatrix
     			break;
     		}
     		植D 植D2 = new 植D();
-    		EleD eleD2 = SlaveMatrix.GameClasses._Con.Get花R(右: false);
+    		ElementData eleD2 = SlaveMatrix.GameClasses._Con.Get花R(右: false);
     		植D2.花接続(eleD2);
     		bool flag = RNG.XS.NextBool();
     		if (eleD2 is 花_百D)
@@ -2510,7 +2510,7 @@ namespace SlaveMatrix
     		ChestD2.肩右接続(ShoulderD2.Get逆());
     		if (b1)
     		{
-    			EleD eleD3 = new 前翅_羽D
+    			ElementData eleD3 = new 前翅_羽D
     			{
     				尺度B = 0.9
     			};
@@ -2525,7 +2525,7 @@ namespace SlaveMatrix
     		}
     		else
     		{
-    			EleD eleD3 = new 前翅_蝶D
+    			ElementData eleD3 = new 前翅_蝶D
     			{
     				尺度B = 0.9,
     				水青 = b2
@@ -2544,20 +2544,20 @@ namespace SlaveMatrix
     		{
     			if (b1)
     			{
-    				EleD eleD3 = new 触覚_線D();
+    				ElementData eleD3 = new 触覚_線D();
     				eleD3.尺度YB = 0.4;
     				頭D2.触覚左接続(eleD3);
     				頭D2.触覚右接続(eleD3.Get逆());
     			}
     			else if (b2)
     			{
-    				EleD eleD3 = new 触覚_蛾D();
+    				ElementData eleD3 = new 触覚_蛾D();
     				頭D2.触覚左接続(eleD3);
     				頭D2.触覚右接続(eleD3.Get逆());
     			}
     			else
     			{
-    				EleD eleD3 = new 触覚_蝶D();
+    				ElementData eleD3 = new 触覚_蝶D();
     				頭D2.触覚左接続(eleD3);
     				頭D2.触覚右接続(eleD3.Get逆());
     			}
@@ -2593,7 +2593,7 @@ namespace SlaveMatrix
     		{
     			頭D2 = 首D2.Set頭R();
     			基髪D eleD = 頭D2.EnumEleD().GetEleD<基髪D>();
-    			EleD eleD2 = new 角2_鬼D();
+    			ElementData eleD2 = new 角2_鬼D();
     			eleD.頭頂左接続(eleD2);
     			eleD.頭頂右接続(eleD2.Get逆());
     		}
@@ -3146,7 +3146,7 @@ namespace SlaveMatrix
     		頭D2.Set口人();
     		頭D2.Set舌短();
     		頭D2.Set耳獣();
-    		EleD eleD2 = new 角2_山2D
+    		ElementData eleD2 = new 角2_山2D
     		{
     			尺度YB = 1.5
     		};
@@ -3431,7 +3431,7 @@ namespace SlaveMatrix
     		頭D2.Set鼻R();
     		頭D2.Set口人();
     		頭D2.Set舌短();
-    		EleD eleD2 = new 獣耳D();
+    		ElementData eleD2 = new 獣耳D();
     		eleD.頭頂左接続(eleD2);
     		eleD.頭頂右接続(eleD2.Get逆());
     		eleD2 = RNG.XS.Next(3) switch
@@ -3506,7 +3506,7 @@ namespace SlaveMatrix
     		頭D2.Set耳人();
     		if (b)
     		{
-    			EleD e2 = (RNG.XS.NextBool() ? ((尾D)new 尾_牛D()) : ((尾D)new 尾_蛇D()));
+    			ElementData e2 = (RNG.XS.NextBool() ? ((尾D)new 尾_牛D()) : ((尾D)new 尾_蛇D()));
     			WaistD2.尾接続(e2);
     			ChestD2.背中接続(new 背中_羽D
     			{
@@ -3586,7 +3586,7 @@ namespace SlaveMatrix
     			腿_獣D3.Leg接続(Leg_獣D3);
     			四足腰D2.腿左接続(腿_獣D3);
     			四足腰D2.腿右接続(腿_獣D3.Get逆());
-    			EleD e2 = (RNG.XS.NextBool() ? ((尾D)new 尾_牛D()) : ((尾D)new 尾_蛇D()));
+    			ElementData e2 = (RNG.XS.NextBool() ? ((尾D)new 尾_牛D()) : ((尾D)new 尾_蛇D()));
     			四足腰D2.尾接続(e2);
     			四足胴D2.SetValuesD("獣毛", true);
     			四足胸D2.肌_接続.SetValuesD<胸毛D>("表示", true);
@@ -3613,7 +3613,7 @@ namespace SlaveMatrix
     		頭D2.Set鼻R();
     		頭D2.Set口人();
     		頭D2.Set舌短();
-    		EleD eleD2 = new 獣耳D();
+    		ElementData eleD2 = new 獣耳D();
     		eleD.頭頂左接続(eleD2);
     		eleD.頭頂右接続(eleD2.Get逆());
     		手_人D e = new 手_人D();
@@ -3678,7 +3678,7 @@ namespace SlaveMatrix
     		頭D2.Set鼻R();
     		頭D2.Set口人();
     		頭D2.Set舌短();
-    		EleD eleD2 = new 獣耳D();
+    		ElementData eleD2 = new 獣耳D();
     		eleD.頭頂左接続(eleD2);
     		eleD.頭頂右接続(eleD2.Get逆());
     		手_人D e = new 手_人D();
@@ -3754,7 +3754,7 @@ namespace SlaveMatrix
     		頭D2.Set鼻R();
     		頭D2.Set口人();
     		頭D2.Set舌短();
-    		EleD eleD2 = new 獣耳D();
+    		ElementData eleD2 = new 獣耳D();
     		eleD.頭頂左接続(eleD2);
     		eleD.頭頂右接続(eleD2.Get逆());
     		手_人D e = new 手_人D();
@@ -3818,7 +3818,7 @@ namespace SlaveMatrix
     		頭D2.Set鼻R();
     		頭D2.Set口人();
     		頭D2.Set舌短();
-    		EleD eleD2 = new 獣耳D();
+    		ElementData eleD2 = new 獣耳D();
     		eleD.頭頂左接続(eleD2);
     		eleD.頭頂右接続(eleD2.Get逆());
     		手_人D e = new 手_人D();
@@ -3896,16 +3896,16 @@ namespace SlaveMatrix
     		頭D2.Set口R();
     		頭D2.Set舌短();
     		頭D2.Set耳尖();
-    		EleD eleD = new 虫顎D();
-    		頭D2.頬左接続(eleD);
-    		頭D2.頬右接続(eleD.Get逆());
+    		ElementData elementData = new 虫顎D();
+    		頭D2.頬左接続(elementData);
+    		頭D2.頬右接続(elementData.Get逆());
     		顔面_虫D 顔面_虫D2 = new 顔面_虫D();
-    		eleD = new 触覚_線D
+    		elementData = new 触覚_線D
     		{
     			尺度YB = 0.4
     		};
-    		顔面_虫D2.触覚左接続(eleD);
-    		顔面_虫D2.触覚右接続(eleD.Get逆());
+    		顔面_虫D2.触覚左接続(elementData);
+    		顔面_虫D2.触覚右接続(elementData.Get逆());
     		頭D2.顔面接続(顔面_虫D2);
     		手_人D e = new 手_人D();
     		LowerArm_人D LowerArm_人D2 = new LowerArm_人D();
@@ -3918,12 +3918,12 @@ namespace SlaveMatrix
     		obj2.肩右接続(ShoulderD2.Get逆());
     		obj2.肩左接続(ShoulderD2.Copy());
     		obj2.肩右接続(ShoulderD2.Get逆());
-    		eleD = new 前翅_羽D();
-    		obj2.翼上左接続(eleD);
-    		obj2.翼上右接続(eleD.Get逆());
-    		eleD = new 後翅_羽D();
-    		obj2.翼下左接続(eleD);
-    		obj2.翼下右接続(eleD.Get逆());
+    		elementData = new 前翅_羽D();
+    		obj2.翼上左接続(elementData);
+    		obj2.翼上右接続(elementData.Get逆());
+    		elementData = new 後翅_羽D();
+    		obj2.翼下左接続(elementData);
+    		obj2.翼下右接続(elementData.Get逆());
     		足_人D e2 = new 足_人D();
     		Leg_人D Leg_人D2 = new Leg_人D();
     		Leg_人D2.足接続(e2);
@@ -3931,8 +3931,8 @@ namespace SlaveMatrix
     		腿_人D2.Leg接続(Leg_人D2);
     		obj.腿左接続(腿_人D2);
     		obj.腿右接続(腿_人D2.Get逆());
-    		eleD = new 尾_竜D();
-    		obj.尾接続(eleD);
+    		elementData = new 尾_竜D();
+    		obj.尾接続(elementData);
     		obj.EnumEleD().SetValuesD("虫性", true);
     		obj.EnumEleD().SetValuesD("虫手", true);
     		obj.EnumEleD().SetValuesD("虫足", true);
@@ -3960,13 +3960,13 @@ namespace SlaveMatrix
     		頭D2.Set舌短();
     		頭D2.Set耳尖();
     		頭D2.額接続(new 角1_虫D());
-    		EleD eleD = new 虫顎D();
-    		頭D2.頬左接続(eleD);
-    		頭D2.頬右接続(eleD.Get逆());
+    		ElementData elementData = new 虫顎D();
+    		頭D2.頬左接続(elementData);
+    		頭D2.頬右接続(elementData.Get逆());
     		顔面_甲D 顔面_甲D2 = new 顔面_甲D();
-    		eleD = new 触覚_甲D();
-    		顔面_甲D2.触覚左接続(eleD);
-    		顔面_甲D2.触覚右接続(eleD.Get逆());
+    		elementData = new 触覚_甲D();
+    		顔面_甲D2.触覚左接続(elementData);
+    		顔面_甲D2.触覚右接続(elementData.Get逆());
     		頭D2.顔面接続(顔面_甲D2);
     		手_人D e = new 手_人D();
     		LowerArm_人D LowerArm_人D2 = new LowerArm_人D();
@@ -3979,13 +3979,13 @@ namespace SlaveMatrix
     		obj2.肩右接続(ShoulderD2.Get逆());
     		obj2.肩左接続(ShoulderD2.Copy());
     		obj2.肩右接続(ShoulderD2.Get逆());
-    		eleD = new 後翅_甲D();
-    		obj2.翼上左接続(eleD);
-    		obj2.翼上右接続(eleD.Get逆());
-    		eleD = new 前翅_甲D();
-    		eleD.SetValuesD("紋", RNG.XS.NextBool());
-    		obj2.翼上左接続(eleD);
-    		obj2.翼上右接続(eleD.Get逆());
+    		elementData = new 後翅_甲D();
+    		obj2.翼上左接続(elementData);
+    		obj2.翼上右接続(elementData.Get逆());
+    		elementData = new 前翅_甲D();
+    		elementData.SetValuesD("紋", RNG.XS.NextBool());
+    		obj2.翼上左接続(elementData);
+    		obj2.翼上右接続(elementData.Get逆());
     		足_人D e2 = new 足_人D();
     		Leg_人D Leg_人D2 = new Leg_人D();
     		Leg_人D2.足接続(e2);
@@ -4021,18 +4021,18 @@ namespace SlaveMatrix
     		頭D2.Set口人();
     		頭D2.Set舌短();
     		頭D2.Set耳尖();
-    		EleD eleD = new 耳_尖D();
-    		頭D2.耳左接続(eleD);
-    		頭D2.耳右接続(eleD.Get逆());
+    		ElementData elementData = new 耳_尖D();
+    		頭D2.耳左接続(elementData);
+    		頭D2.耳右接続(elementData.Get逆());
     		大顎基D 大顎基D2 = new 大顎基D();
-    		eleD = new 大顎D();
-    		大顎基D2.顎左接続(eleD);
-    		大顎基D2.顎右接続(eleD.Get逆());
+    		elementData = new 大顎D();
+    		大顎基D2.顎左接続(elementData);
+    		大顎基D2.顎右接続(elementData.Get逆());
     		頭D2.大顎基接続(大顎基D2);
     		顔面_甲D 顔面_甲D2 = new 顔面_甲D();
-    		eleD = new 触覚_甲D();
-    		顔面_甲D2.触覚左接続(eleD);
-    		顔面_甲D2.触覚右接続(eleD.Get逆());
+    		elementData = new 触覚_甲D();
+    		顔面_甲D2.触覚左接続(elementData);
+    		顔面_甲D2.触覚右接続(elementData.Get逆());
     		頭D2.顔面接続(顔面_甲D2);
     		手_人D e = new 手_人D();
     		LowerArm_人D LowerArm_人D2 = new LowerArm_人D();
@@ -4045,13 +4045,13 @@ namespace SlaveMatrix
     		obj2.肩右接続(ShoulderD2.Get逆());
     		obj2.肩左接続(ShoulderD2.Copy());
     		obj2.肩右接続(ShoulderD2.Get逆());
-    		eleD = new 後翅_甲D();
-    		obj2.翼上左接続(eleD);
-    		obj2.翼上右接続(eleD.Get逆());
-    		eleD = new 前翅_甲D();
-    		eleD.SetValuesD("紋", RNG.XS.NextBool());
-    		obj2.翼上左接続(eleD);
-    		obj2.翼上右接続(eleD.Get逆());
+    		elementData = new 後翅_甲D();
+    		obj2.翼上左接続(elementData);
+    		obj2.翼上右接続(elementData.Get逆());
+    		elementData = new 前翅_甲D();
+    		elementData.SetValuesD("紋", RNG.XS.NextBool());
+    		obj2.翼上左接続(elementData);
+    		obj2.翼上右接続(elementData.Get逆());
     		足_人D e2 = new 足_人D();
     		Leg_人D Leg_人D2 = new Leg_人D();
     		Leg_人D2.足接続(e2);
@@ -4087,13 +4087,13 @@ namespace SlaveMatrix
     		頭D2.Set口R();
     		頭D2.Set舌短();
     		頭D2.Set耳尖();
-    		EleD eleD = new 虫顎D();
-    		頭D2.頬左接続(eleD);
-    		頭D2.頬右接続(eleD.Get逆());
+    		ElementData elementData = new 虫顎D();
+    		頭D2.頬左接続(elementData);
+    		頭D2.頬右接続(elementData.Get逆());
     		顔面_虫D 顔面_虫D2 = new 顔面_虫D();
-    		eleD = new 触覚_線D();
-    		顔面_虫D2.触覚左接続(eleD);
-    		顔面_虫D2.触覚右接続(eleD.Get逆());
+    		elementData = new 触覚_線D();
+    		顔面_虫D2.触覚左接続(elementData);
+    		顔面_虫D2.触覚右接続(elementData.Get逆());
     		頭D2.顔面接続(顔面_虫D2);
     		手_人D e = new 手_人D();
     		LowerArm_人D LowerArm_人D2 = new LowerArm_人D();
@@ -4105,13 +4105,13 @@ namespace SlaveMatrix
     		LowerArm_人D2.虫鎌接続(new 虫鎌D());
     		obj3.肩左接続(ShoulderD2);
     		obj3.肩右接続(ShoulderD2.Get逆());
-    		eleD = new 前翅_草D();
-    		eleD.SetValuesD("紋", RNG.XS.NextBool());
-    		obj2.翼左接続(eleD);
-    		obj2.翼右接続(eleD.Get逆());
-    		eleD = new 後翅_草D();
-    		obj2.翼左接続(eleD);
-    		obj2.翼右接続(eleD.Get逆());
+    		elementData = new 前翅_草D();
+    		elementData.SetValuesD("紋", RNG.XS.NextBool());
+    		obj2.翼左接続(elementData);
+    		obj2.翼右接続(elementData.Get逆());
+    		elementData = new 後翅_草D();
+    		obj2.翼左接続(elementData);
+    		obj2.翼右接続(elementData.Get逆());
     		足_人D e2 = new 足_人D();
     		Leg_人D Leg_人D2 = new Leg_人D();
     		Leg_人D2.足接続(e2);
@@ -4119,8 +4119,8 @@ namespace SlaveMatrix
     		腿_人D2.Leg接続(Leg_人D2);
     		obj.腿左接続(腿_人D2);
     		obj.腿右接続(腿_人D2.Get逆());
-    		eleD = new 尾_虫D();
-    		obj.尾接続(eleD);
+    		elementData = new 尾_虫D();
+    		obj.尾接続(elementData);
     		obj.EnumEleD().SetValuesD("虫性", true);
     		obj.EnumEleD().SetValuesD("虫手", true);
     		obj.EnumEleD().SetValuesD("虫足", true);
@@ -4206,7 +4206,7 @@ namespace SlaveMatrix
     		HeadD 頭D2 = ChestD2.SetNeck().Set頭R();
     		基髪D eleD = 頭D2.EnumEleD().GetEleD<基髪D>();
     		BackHair0_肢系D 後髪0_肢系D2 = new BackHair0_肢系D();
-    		EleD eleD2 = new 尾_蛇D();
+    		ElementData eleD2 = new 尾_蛇D();
     		後髪0_肢系D2.左5接続(eleD2);
     		後髪0_肢系D2.左4接続(eleD2.Copy());
     		後髪0_肢系D2.左3接続(eleD2.Copy());
@@ -4296,7 +4296,7 @@ namespace SlaveMatrix
     			.Set頭R();
     		基髪D eleD = 頭D2.EnumEleD().GetEleD<基髪D>();
     		BackHair0_肢系D 後髪0_肢系D2 = new BackHair0_肢系D();
-    		EleD eleD2 = new 尾_蛇D();
+    		ElementData eleD2 = new 尾_蛇D();
     		後髪0_肢系D2.左5接続(eleD2);
     		後髪0_肢系D2.左4接続(eleD2.Copy());
     		後髪0_肢系D2.左3接続(eleD2.Copy());
@@ -4352,7 +4352,7 @@ namespace SlaveMatrix
     		頭D2.Set舌長();
     		頭D2.Set耳人();
     		頭D2.額接続(new 角1_虫D());
-    		EleD eleD2 = new 角2_虫D();
+    		ElementData eleD2 = new 角2_虫D();
     		eleD.頭頂左接続(eleD2);
     		eleD.頭頂右接続(eleD2.Get逆());
     		顔面_甲D e = new 顔面_甲D();
@@ -4412,7 +4412,7 @@ namespace SlaveMatrix
     		WaistD2.腿右接続(腿_人D2.Get逆());
     		if (RNG.XS.NextBool())
     		{
-    			EleD e3 = new 尾_短D();
+    			ElementData e3 = new 尾_短D();
     			WaistD2.尾接続(e3);
     		}
     		WaistD2.EnumEleD().SetValuesD("腹板", true);
@@ -4438,24 +4438,24 @@ namespace SlaveMatrix
     		頭D2.Set口R();
     		頭D2.Set舌短();
     		頭D2.Set耳人();
-    		EleD eleD;
+    		ElementData elementData;
     		if (RNG.XS.NextBool())
     		{
-    			eleD = new 虫顎D
+    			elementData = new 虫顎D
     			{
     				尺度B = 1.1
     			};
-    			頭D2.頬左接続(eleD);
-    			頭D2.頬右接続(eleD.Get逆());
+    			頭D2.頬左接続(elementData);
+    			頭D2.頬右接続(elementData.Get逆());
     		}
     		if (RNG.XS.NextBool())
     		{
-    			eleD = new 触覚_節D
+    			elementData = new 触覚_節D
     			{
     				尺度B = 1.4
     			};
-    			頭D2.触覚左接続(eleD);
-    			頭D2.触覚右接続(eleD.Get逆());
+    			頭D2.触覚左接続(elementData);
+    			頭D2.触覚右接続(elementData.Get逆());
     		}
     		手_人D e = new 手_人D();
     		LowerArm_人D LowerArm_人D2 = new LowerArm_人D();
@@ -4475,33 +4475,33 @@ namespace SlaveMatrix
     		}
     		長物_蟲D 長物_蟲D2 = new 長物_蟲D();
     		WaistD2.半身接続(長物_蟲D2);
-    		eleD = new 節足_足百D();
-    		長物_蟲D2.左0接続(eleD);
-    		長物_蟲D2.右0接続(eleD.Get逆());
-    		長物_蟲D2.左1接続(eleD.Copy());
-    		長物_蟲D2.右1接続(eleD.Get逆());
+    		elementData = new 節足_足百D();
+    		長物_蟲D2.左0接続(elementData);
+    		長物_蟲D2.右0接続(elementData.Get逆());
+    		長物_蟲D2.左1接続(elementData.Copy());
+    		長物_蟲D2.右1接続(elementData.Get逆());
     		Torso_蟲D Torso_蟲D2 = new Torso_蟲D();
     		長物_蟲D2.胴接続(Torso_蟲D2);
-    		Torso_蟲D2.左接続(eleD.Copy());
-    		Torso_蟲D2.右接続(eleD.Get逆());
+    		Torso_蟲D2.左接続(elementData.Copy());
+    		Torso_蟲D2.右接続(elementData.Get逆());
     		for (int i = 0; i < 21; i++)
     		{
     			Torso_蟲D2.Torso接続(Torso_蟲D2 = new Torso_蟲D());
-    			Torso_蟲D2.左接続(eleD.Copy());
-    			Torso_蟲D2.右接続(eleD.Get逆());
+    			Torso_蟲D2.左接続(elementData.Copy());
+    			Torso_蟲D2.右接続(elementData.Get逆());
     		}
     		尾_蟲D 尾_蟲D2 = new 尾_蟲D();
     		節尾_曳航D 節尾_曳航D2 = new 節尾_曳航D();
-    		尾_蟲D2.左1接続(eleD.Copy());
-    		尾_蟲D2.右1接続(eleD.Get逆());
-    		尾_蟲D2.左2接続(eleD.Copy());
-    		尾_蟲D2.右2接続(eleD.Get逆());
-    		尾_蟲D2.左3接続(eleD.Copy());
-    		尾_蟲D2.右3接続(eleD.Get逆());
-    		尾_蟲D2.左4接続(eleD.Copy());
-    		尾_蟲D2.右4接続(eleD.Get逆());
-    		尾_蟲D2.左5接続(eleD.Copy());
-    		尾_蟲D2.右5接続(eleD.Get逆());
+    		尾_蟲D2.左1接続(elementData.Copy());
+    		尾_蟲D2.右1接続(elementData.Get逆());
+    		尾_蟲D2.左2接続(elementData.Copy());
+    		尾_蟲D2.右2接続(elementData.Get逆());
+    		尾_蟲D2.左3接続(elementData.Copy());
+    		尾_蟲D2.右3接続(elementData.Get逆());
+    		尾_蟲D2.左4接続(elementData.Copy());
+    		尾_蟲D2.右4接続(elementData.Get逆());
+    		尾_蟲D2.左5接続(elementData.Copy());
+    		尾_蟲D2.右5接続(elementData.Get逆());
     		尾_蟲D2.尾左接続(節尾_曳航D2);
     		尾_蟲D2.尾右接続(節尾_曳航D2.Get逆());
     		Torso_蟲D2.Torso接続(尾_蟲D2);
@@ -4524,7 +4524,7 @@ namespace SlaveMatrix
     		頭D2.Set鼻人();
     		頭D2.Set口人();
     		頭D2.Set舌短();
-    		EleD eleD2 = new 獣耳D
+    		ElementData eleD2 = new 獣耳D
     		{
     			尺度B = 1.1,
     			尺度YB = 1.2
@@ -4711,7 +4711,7 @@ namespace SlaveMatrix
     		頭D2.Set舌短();
     		頭D2.Set耳獣();
     		頭D2.額接続(SlaveMatrix.GameClasses._Con.Get縦眼R());
-    		EleD eleD2 = new 角2_牛2D();
+    		ElementData eleD2 = new 角2_牛2D();
     		eleD.頭頂左接続(eleD2);
     		eleD.頭頂右接続(eleD2.Get逆());
     		手_人D e = new 手_人D();
@@ -4771,7 +4771,7 @@ namespace SlaveMatrix
     		頭D2.Set口人();
     		頭D2.Set舌短();
     		頭D2.Set耳獣();
-    		EleD eleD2 = RNG.XS.Next(4) switch
+    		ElementData eleD2 = RNG.XS.Next(4) switch
     		{
     			0 => new 角2_牛1D(), 
     			1 => new 角2_牛2D(), 
@@ -4989,9 +4989,9 @@ namespace SlaveMatrix
     		chest_description.肩左接続(shoulder_description);
     		chest_description.肩右接続(shoulder_description.Get逆());
 
-    		EleD eleD = new 角2_牛4D();
-    		hair_description.頭頂左接続(eleD);
-    		hair_description.頭頂右接続(eleD.Get逆());
+    		ElementData elementData = new 角2_牛4D();
+    		hair_description.頭頂左接続(elementData);
+    		hair_description.頭頂右接続(elementData.Get逆());
 
     		植D 植D2 = new 植D();
     		花_薔D 花_薔D2 = new 花_薔D();
@@ -5031,7 +5031,7 @@ namespace SlaveMatrix
     		};
 
     		触手_蔦D2.SetValuesD("棘", true);
-    		EleD eleD2 = new 葉_披D();
+    		ElementData eleD2 = new 葉_披D();
     		eleD2.尺度B *= 1.25;
     		触手_蔦D2.節3接続(eleD2 = eleD2.Copy());
     		eleD2.尺度B *= 葉倍率;
@@ -5051,7 +5051,7 @@ namespace SlaveMatrix
     		eleD2.尺度B *= 葉倍率;
     		触手_蔦D2.節19接続(eleD2 = eleD2.Copy());
     		eleD2.尺度B *= 葉倍率;
-    		EleD eleD3 = 触手_蔦D2.Copy();
+    		ElementData eleD3 = 触手_蔦D2.Copy();
 
     		body_description.翼左接続(触手_蔦D2);
     		body_description.翼右接続(触手_蔦D2.Get逆());

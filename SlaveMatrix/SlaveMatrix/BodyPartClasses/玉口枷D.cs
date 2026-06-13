@@ -4,7 +4,7 @@ using _2DGAMELIB;
 namespace SlaveMatrix
 {
     [Serializable]
-    public class 玉口枷D : EleD
+    public class 玉口枷D : ElementData
     {
     	public bool 金具左上_表示;
 
@@ -59,7 +59,7 @@ namespace SlaveMatrix
     		ThisType = GetType();
     	}
 
-    	public override Ele GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
+    	public override Element GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
     	{
     		return new 玉口枷(DisUnit, 配色指定, 体配色, Med, this);
     	}

@@ -4,7 +4,7 @@ using _2DGAMELIB;
 namespace SlaveMatrix
 {
     [Serializable]
-    public class 調教鞭D : EleD
+    public class 調教鞭D : ElementData
     {
     	public bool 先_表示 = true;
 
@@ -37,7 +37,7 @@ namespace SlaveMatrix
     		ThisType = GetType();
     	}
 
-    	public override Ele GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
+    	public override Element GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
     	{
     		return new 調教鞭(DisUnit, 配色指定, 体配色, Med, this);
     	}

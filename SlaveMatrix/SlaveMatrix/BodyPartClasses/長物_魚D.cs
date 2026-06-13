@@ -175,147 +175,147 @@ namespace SlaveMatrix
 
     	public bool 鎖表示;
 
-    	public List<EleD> 左0_接続 = new List<EleD>();
+    	public List<ElementData> 左0_接続 = new List<ElementData>();
 
-    	public List<EleD> 右0_接続 = new List<EleD>();
+    	public List<ElementData> 右0_接続 = new List<ElementData>();
 
-    	public List<EleD> 左1_接続 = new List<EleD>();
+    	public List<ElementData> 左1_接続 = new List<ElementData>();
 
-    	public List<EleD> 右1_接続 = new List<EleD>();
+    	public List<ElementData> 右1_接続 = new List<ElementData>();
 
-    	public List<EleD> 左2_接続 = new List<EleD>();
+    	public List<ElementData> 左2_接続 = new List<ElementData>();
 
-    	public List<EleD> 右2_接続 = new List<EleD>();
+    	public List<ElementData> 右2_接続 = new List<ElementData>();
 
-    	public List<EleD> 左3_接続 = new List<EleD>();
+    	public List<ElementData> 左3_接続 = new List<ElementData>();
 
-    	public List<EleD> 右3_接続 = new List<EleD>();
+    	public List<ElementData> 右3_接続 = new List<ElementData>();
 
-    	public List<EleD> 左4_接続 = new List<EleD>();
+    	public List<ElementData> 左4_接続 = new List<ElementData>();
 
-    	public List<EleD> 右4_接続 = new List<EleD>();
+    	public List<ElementData> 右4_接続 = new List<ElementData>();
 
-    	public List<EleD> 左5_接続 = new List<EleD>();
+    	public List<ElementData> 左5_接続 = new List<ElementData>();
 
-    	public List<EleD> 右5_接続 = new List<EleD>();
+    	public List<ElementData> 右5_接続 = new List<ElementData>();
 
-    	public List<EleD> 左6_接続 = new List<EleD>();
+    	public List<ElementData> 左6_接続 = new List<ElementData>();
 
-    	public List<EleD> 右6_接続 = new List<EleD>();
+    	public List<ElementData> 右6_接続 = new List<ElementData>();
 
-    	public List<EleD> 尾_接続 = new List<EleD>();
+    	public List<ElementData> 尾_接続 = new List<ElementData>();
 
     	public 長物_魚D()
     	{
     		ThisType = GetType();
     	}
 
-    	public void 左0接続(EleD e)
+    	public void 左0接続(ElementData e)
     	{
     		左0_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.長物_魚_左0_接続;
     	}
 
-    	public void 右0接続(EleD e)
+    	public void 右0接続(ElementData e)
     	{
     		右0_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.長物_魚_右0_接続;
     	}
 
-    	public void 左1接続(EleD e)
+    	public void 左1接続(ElementData e)
     	{
     		左1_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.長物_魚_左1_接続;
     	}
 
-    	public void 右1接続(EleD e)
+    	public void 右1接続(ElementData e)
     	{
     		右1_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.長物_魚_右1_接続;
     	}
 
-    	public void 左2接続(EleD e)
+    	public void 左2接続(ElementData e)
     	{
     		左2_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.長物_魚_左2_接続;
     	}
 
-    	public void 右2接続(EleD e)
+    	public void 右2接続(ElementData e)
     	{
     		右2_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.長物_魚_右2_接続;
     	}
 
-    	public void 左3接続(EleD e)
+    	public void 左3接続(ElementData e)
     	{
     		左3_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.長物_魚_左3_接続;
     	}
 
-    	public void 右3接続(EleD e)
+    	public void 右3接続(ElementData e)
     	{
     		右3_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.長物_魚_右3_接続;
     	}
 
-    	public void 左4接続(EleD e)
+    	public void 左4接続(ElementData e)
     	{
     		左4_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.長物_魚_左4_接続;
     	}
 
-    	public void 右4接続(EleD e)
+    	public void 右4接続(ElementData e)
     	{
     		右4_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.長物_魚_右4_接続;
     	}
 
-    	public void 左5接続(EleD e)
+    	public void 左5接続(ElementData e)
     	{
     		左5_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.長物_魚_左5_接続;
     	}
 
-    	public void 右5接続(EleD e)
+    	public void 右5接続(ElementData e)
     	{
     		右5_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.長物_魚_右5_接続;
     	}
 
-    	public void 左6接続(EleD e)
+    	public void 左6接続(ElementData e)
     	{
     		左6_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.長物_魚_左6_接続;
     	}
 
-    	public void 右6接続(EleD e)
+    	public void 右6接続(ElementData e)
     	{
     		右6_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.長物_魚_右6_接続;
     	}
 
-    	public void 尾接続(EleD e)
+    	public void 尾接続(ElementData e)
     	{
     		尾_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.長物_魚_尾_接続;
     	}
 
-    	public override Ele GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
+    	public override Element GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
     	{
     		return new 長物_魚(DisUnit, 配色指定, 体配色, Med, this);
     	}

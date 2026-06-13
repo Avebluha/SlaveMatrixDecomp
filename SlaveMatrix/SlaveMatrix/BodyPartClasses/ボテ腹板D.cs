@@ -4,7 +4,7 @@ using _2DGAMELIB;
 namespace SlaveMatrix
 {
     [Serializable]
-    public class ボテ腹板D : EleD
+    public class ボテ腹板D : ElementData
     {
     	public bool 腹板4_腹板_表示;
 
@@ -27,7 +27,7 @@ namespace SlaveMatrix
     		ThisType = GetType();
     	}
 
-    	public override Ele GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
+    	public override Element GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
     	{
     		return new ボテ腹板(DisUnit, 配色指定, 体配色, Med, this);
     	}

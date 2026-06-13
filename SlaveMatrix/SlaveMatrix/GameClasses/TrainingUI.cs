@@ -8,7 +8,7 @@ using _2DGAMELIB;
 
 namespace SlaveMatrix
 {
-    public class TrainingUI : Ele
+    public class TrainingUI : Element
     {
     	private ulong 媚薬投与価格 = 10000000uL;
 
@@ -259,7 +259,7 @@ namespace SlaveMatrix
     			focus = value;
     			focus.StaShow = false;
     			focus.使用状態 = UsageStatus.InUse;
-    			focus.Ele.Intensity = 1.0;
+    			focus.Element.Intensity = 1.0;
     			if (focus == 羽根箒CM)
     			{
     				羽根箒.角度B = -90.0;
@@ -482,12 +482,12 @@ namespace SlaveMatrix
     		パール挿入.SetPosition();
     	}
 
-    	private void Set_ペニス(Ele t)
+    	private void Set_ペニス(Element t)
     	{
     		t.位置B = ペニス.AreM.Position;
     	}
 
-    	private void Set_ロータ(Ele t)
+    	private void Set_ロータ(Element t)
     	{
     		switch (ロータ.Yi)
     		{
@@ -509,7 +509,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void Set_コモン(Ele t)
+    	private void Set_コモン(Element t)
     	{
     		switch (コモン.Yi)
     		{
@@ -531,7 +531,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void Set_ディル(Ele t)
+    	private void Set_ディル(Element t)
     	{
     		switch (ディル.Yi)
     		{
@@ -553,7 +553,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void Set_アナル(Ele t)
+    	private void Set_アナル(Element t)
     	{
     		switch (アナル.Yi)
     		{
@@ -575,7 +575,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void Set_デンマ(Ele t)
+    	private void Set_デンマ(Element t)
     	{
     		switch (デンマ.Yi)
     		{
@@ -597,7 +597,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void Set_ドリル(Ele t)
+    	private void Set_ドリル(Element t)
     	{
     		switch (ドリル.Xi)
     		{
@@ -664,7 +664,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void Set_パール(Ele t)
+    	private void Set_パール(Element t)
     	{
     		switch (パール.Yi)
     		{
@@ -722,13 +722,13 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void Set_羽根箒(Ele t)
+    	private void Set_羽根箒(Element t)
     	{
     		t.位置B = 羽根箒.X0Y0_柄.ToGlobal_nc(羽根箒.X0Y0_柄.JP[1].Joint);
     		t.角度C = 羽根箒.X0Y0_柄.Angle;
     	}
 
-    	private void Set_調教鞭(Ele t)
+    	private void Set_調教鞭(Element t)
     	{
     		int num = -45;
     		if (調教鞭.Xi == 0)
@@ -769,53 +769,53 @@ namespace SlaveMatrix
     		}
     	}
 
-    	private void Set_T剃刀(Ele t)
+    	private void Set_T剃刀(Element t)
     	{
     		t.位置B = T剃刀.X0Y0_グリップ_グリップ4.ToGlobal_nc(T剃刀.X0Y0_グリップ_グリップ4.JP[0].Joint);
     		t.角度C = T剃刀.X0Y0_グリップ_グリップ4.Angle;
     	}
 
-    	public void Set_キャップ1(Ele t)
+    	public void Set_キャップ1(Element t)
     	{
     		t.位置B = キャップ1.X0Y0_先端.ToGlobal_nc(キャップ1.X0Y0_先端.JP[0].Joint);
     	}
 
-    	public void Set_キャップ2(Ele t)
+    	public void Set_キャップ2(Element t)
     	{
     		t.位置B = キャップ2.X0Y0_先端.ToGlobal_nc(キャップ2.X0Y0_先端.JP[0].Joint);
     	}
 
-    	public void Set_キャップ3(Ele t)
+    	public void Set_キャップ3(Element t)
     	{
     		t.位置B = キャップ3.X0Y0_先端.ToGlobal_nc(キャップ3.X0Y0_先端.JP[0].Joint);
     	}
 
-    	public void Set_キャップ左(Ele t)
+    	public void Set_キャップ左(Element t)
     	{
     		キャップ2 キャップ2左 = Bod.キャップ2左;
     		t.位置B = キャップ2左.X0Y0_先端.ToGlobal_nc(キャップ2左.X0Y0_先端.JP[0].Joint);
     	}
 
-    	public void Set_キャップ右(Ele t)
+    	public void Set_キャップ右(Element t)
     	{
     		キャップ2 キャップ2右 = Bod.キャップ2右;
     		t.位置B = キャップ2右.X0Y0_先端.ToGlobal_nc(キャップ2右.X0Y0_先端.JP[0].Joint);
     	}
 
-    	public void Set_キャップ中(Ele t)
+    	public void Set_キャップ中(Element t)
     	{
     		キャップ1 キャップ3 = Bod.キャップ1;
     		t.位置B = キャップ3.X0Y0_先端.ToGlobal_nc(キャップ3.X0Y0_先端.JP[0].Joint);
     	}
 
-    	public void Set_口(Ele t)
+    	public void Set_口(Element t)
     	{
     		ShapePart shapePart = Bod.口.Body.Current.EnumAllPar().First((ShapePart e) => e.Tag == "口");
     		Bod.口.接続PA();
     		t.位置B = shapePart.Position;
     	}
 
-    	public void Set_乳首(Ele t, bool 右)
+    	public void Set_乳首(Element t, bool 右)
     	{
     		乳房 乳房2 = (右 ? Bod.乳房右 : Bod.乳房左);
     		乳房2.接続PA();
@@ -839,7 +839,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public void Set_乳房(Ele t, bool 右)
+    	public void Set_乳房(Element t, bool 右)
     	{
     		乳房 乳房2 = (右 ? Bod.乳房右 : Bod.乳房左);
     		乳房2.接続PA();
@@ -863,33 +863,33 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public void Set_陰核(Ele t)
+    	public void Set_陰核(Element t)
     	{
     		ShapePart shapePart = Bod.性器.Body.Current.EnumAllPar().First((ShapePart e) => e.Tag == "陰核");
     		Bod.性器.接続PA();
     		t.位置B = shapePart.Position;
     	}
 
-    	public void Set_膣口(Ele t)
+    	public void Set_膣口(Element t)
     	{
     		ShapePart shapePart = Bod.性器.Body.Current.EnumAllPar().First((ShapePart e) => e.Tag == "膣口");
     		Bod.性器.接続PA();
     		t.位置B = shapePart.Position;
     	}
 
-    	public void Set_肛門(Ele t)
+    	public void Set_肛門(Element t)
     	{
     		Bod.肛門.接続PA();
     		t.位置B = Bod.肛門.位置;
     	}
 
-    	public void Set_出糸(Ele t)
+    	public void Set_出糸(Element t)
     	{
     		Bod.蜘尾.接続PA();
     		t.位置B = Bod.蜘尾.X0Y0_出糸突起後_出糸突起基.Position;
     	}
 
-    	public void Set_くぱぁ(Ele t, bool 右)
+    	public void Set_くぱぁ(Element t, bool 右)
     	{
     		ShapePart shapePart = (Bod.Is獣 ? Bod.Waist_獣.Body.Current.EnumAllPar().First((ShapePart e) => e.Tag == "股") : Bod.Waist.Body.Current.EnumAllPar().First((ShapePart e) => e.Tag == "股"));
     		Bod.Waist.接続PA();
@@ -1054,19 +1054,19 @@ namespace SlaveMatrix
     		放し();
     		focus.StaShow = true;
     		focus.使用状態 = UsageStatus.Standby;
-    		focus.Ele.Xi = 0;
-    		focus.Ele.Yi = 0;
-    		focus.Ele.位置B = focus.bp;
-    		focus.Ele.位置C = DataConsts.Vec2DZero;
-    		focus.Ele.角度B = 0.0;
-    		focus.Ele.角度C = 0.0;
-    		focus.Ele.右 = false;
+    		focus.Element.Xi = 0;
+    		focus.Element.Yi = 0;
+    		focus.Element.位置B = focus.bp;
+    		focus.Element.位置C = DataConsts.Vec2DZero;
+    		focus.Element.角度B = 0.0;
+    		focus.Element.角度C = 0.0;
+    		focus.Element.右 = false;
     		if (focus == 調教鞭CM)
     		{
     			調教鞭.Yi = 2;
-    			focus.Ele.角度C = 0.0;
+    			focus.Element.角度C = 0.0;
     		}
-    		focus.Ele.Body.JoinPAall();
+    		focus.Element.Body.JoinPAall();
     	}
 
     	public void Set持ち手()
@@ -1338,7 +1338,7 @@ namespace SlaveMatrix
 
     	public void 通常放し()
     	{
-    		focus.Ele.Intensity = 0.5;
+    		focus.Element.Intensity = 0.5;
     		Focus = ハンド右CM;
     		if (Med.Mode == "Training")
     		{
@@ -1455,7 +1455,7 @@ namespace SlaveMatrix
     			SubFocus.Add(パール挿入);
     			パールCM.使用状態 = UsageStatus.Attach;
     		}
-    		Focus.Ele.SetHitTrue();
+    		Focus.Element.SetHitTrue();
     		Focus_nr = ハンド右CM;
             
             //~~TODO~~ fix?
@@ -1508,7 +1508,7 @@ namespace SlaveMatrix
     	{
     		if (IsHitCha(ref cd) || focus == 羽根箒CM || focus == 調教鞭CM)
     		{
-    			focus.Ele.尺度C = 1.0;
+    			focus.Element.尺度C = 1.0;
     			if (持ち手 || ペニス処理.Isパイズリ)
     			{
     				ハンド右.尺度C = 1.0;
@@ -1522,7 +1522,7 @@ namespace SlaveMatrix
     	{
     		if (!Is挿入)
     		{
-    			focus.Ele.尺度C = 1.09;
+    			focus.Element.尺度C = 1.09;
     			if (持ち手 || ペニス処理.Isパイズリ)
     			{
     				ハンド右.尺度C = 1.09;
@@ -1628,37 +1628,37 @@ namespace SlaveMatrix
     		}
     		if (!Is挿入 && !ペニス処理.Isパイズリ && !マウス処理.Is吸付 && !コキ)
     		{
-    			Focus.Ele.位置B = cp;
+    			Focus.Element.位置B = cp;
     		}
     		if (IsTool = X < cp.X && cp.Y < Y && mb != MouseButtons.Left && !Isモード)
     		{
     			Med.CursorShow();
-    			if (focus.Ele.Intensity == 1.0)
+    			if (focus.Element.Intensity == 1.0)
     			{
-    				Focus.Ele.Intensity = 0.2;
+    				Focus.Element.Intensity = 0.2;
     			}
     			In持ち手();
     			Color hc_ = hc;
     			hcm = (from e in EnumCM()
     				where e.使用状態 == UsageStatus.Standby
-    				select e).FirstOrDefault((CM e) => e.Ele.Body.IsHit(ref hc_));
+    				select e).FirstOrDefault((CM e) => e.Element.Body.IsHit(ref hc_));
     			if (hcm != null)
     			{
     				foreach (CM item in from e in EnumCM()
     					where e.使用状態 == UsageStatus.Standby
     					select e)
     				{
-    					item.Ele.Intensity = 0.5;
+    					item.Element.Intensity = 0.5;
     				}
-    				hcm.Ele.Intensity = 1.0;
+    				hcm.Element.Intensity = 1.0;
     			}
     			else
     			{
     				foreach (CM item2 in from e in EnumCM()
-    					where e.使用状態 == UsageStatus.Standby && e.Ele.Intensity == 1.0
+    					where e.使用状態 == UsageStatus.Standby && e.Element.Intensity == 1.0
     					select e)
     				{
-    					item2.Ele.Intensity = 0.5;
+    					item2.Element.Intensity = 0.5;
     				}
     			}
     		}
@@ -1672,16 +1672,16 @@ namespace SlaveMatrix
     			{
     				Med.CursorHide();
     			}
-    			if (focus.Ele.Intensity == 0.2)
+    			if (focus.Element.Intensity == 0.2)
     			{
-    				Focus.Ele.Intensity = 1.0;
+    				Focus.Element.Intensity = 1.0;
     			}
     			Out持ち手();
     			foreach (CM item3 in from e in EnumCM()
-    				where e.使用状態 == UsageStatus.Standby && e.Ele.Intensity == 1.0
+    				where e.使用状態 == UsageStatus.Standby && e.Element.Intensity == 1.0
     				select e)
     			{
-    				item3.Ele.Intensity = 0.5;
+    				item3.Element.Intensity = 0.5;
     			}
     			if (!Isモード)
     			{
@@ -1719,7 +1719,7 @@ namespace SlaveMatrix
     			bool flag = true;
     			foreach (挿入処理 item4 in SubFocus)
     			{
-    				if (flag = item4.対象.Ele.Body.IsHit(ref hc))
+    				if (flag = item4.対象.Element.Body.IsHit(ref hc))
     				{
     					if (item4.対象 == ロータCM)
     					{
@@ -1916,13 +1916,13 @@ namespace SlaveMatrix
     			Color hc_ = hc;
     			CM cM = (from e in EnumCM()
     				where e.使用状態 == UsageStatus.Standby
-    				select e).FirstOrDefault((CM e) => e.Ele.Body.IsHit(ref hc_));
+    				select e).FirstOrDefault((CM e) => e.Element.Body.IsHit(ref hc_));
     			if (cM != null)
     			{
-    				Focus.Ele.Intensity = 0.5;
+    				Focus.Element.Intensity = 0.5;
     				Focus = cM;
-    				Focus.Ele.Intensity = 0.2;
-    				Focus.Ele.位置B = Med.CursorPosition;
+    				Focus.Element.Intensity = 0.2;
+    				Focus.Element.位置B = Med.CursorPosition;
     				Set持ち手();
     				if (持ち手)
     				{

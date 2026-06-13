@@ -2,7 +2,7 @@ using _2DGAMELIB;
 
 namespace SlaveMatrix
 {
-    public class 噴乳 : Ele
+    public class 噴乳 : Element
     {
     	public ShapePart X0Y0_母乳垂れ1;
 

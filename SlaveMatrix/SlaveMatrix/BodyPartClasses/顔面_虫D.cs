@@ -65,21 +65,21 @@ namespace SlaveMatrix
     		ThisType = GetType();
     	}
 
-    	public override void 触覚左接続(EleD e)
+    	public override void 触覚左接続(ElementData e)
     	{
     		触覚左_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.顔面_虫_触覚左_接続;
     	}
 
-    	public override void 触覚右接続(EleD e)
+    	public override void 触覚右接続(ElementData e)
     	{
     		触覚右_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.顔面_虫_触覚右_接続;
     	}
 
-    	public override Ele GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
+    	public override Element GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
     	{
     		return new 顔面_虫(DisUnit, 配色指定, 体配色, Med, this);
     	}

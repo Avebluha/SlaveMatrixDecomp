@@ -2,7 +2,7 @@ using _2DGAMELIB;
 
 namespace SlaveMatrix
 {
-    public class 胴腹板 : Ele
+    public class 胴腹板 : Element
     {
     	public ShapePart X0Y0_虫性_腹板;
 

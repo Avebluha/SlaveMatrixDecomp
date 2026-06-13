@@ -2,7 +2,7 @@ using _2DGAMELIB;
 
 namespace SlaveMatrix
 {
-    public class 角2 : Ele
+    public class 角2 : Element
     {
     	public override double 肥大
     	{

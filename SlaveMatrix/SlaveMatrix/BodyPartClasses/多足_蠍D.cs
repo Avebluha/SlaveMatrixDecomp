@@ -89,45 +89,45 @@ namespace SlaveMatrix
 
     	public double くぱぁ;
 
-    	public List<EleD> 触肢左_接続 = new List<EleD>();
+    	public List<ElementData> 触肢左_接続 = new List<ElementData>();
 
-    	public List<EleD> 節足左1_接続 = new List<EleD>();
+    	public List<ElementData> 節足左1_接続 = new List<ElementData>();
 
-    	public List<EleD> 節足左2_接続 = new List<EleD>();
+    	public List<ElementData> 節足左2_接続 = new List<ElementData>();
 
-    	public List<EleD> 節足左3_接続 = new List<EleD>();
+    	public List<ElementData> 節足左3_接続 = new List<ElementData>();
 
-    	public List<EleD> 節足左4_接続 = new List<EleD>();
+    	public List<ElementData> 節足左4_接続 = new List<ElementData>();
 
-    	public List<EleD> 触肢右_接続 = new List<EleD>();
+    	public List<ElementData> 触肢右_接続 = new List<ElementData>();
 
-    	public List<EleD> 節足右1_接続 = new List<EleD>();
+    	public List<ElementData> 節足右1_接続 = new List<ElementData>();
 
-    	public List<EleD> 節足右2_接続 = new List<EleD>();
+    	public List<ElementData> 節足右2_接続 = new List<ElementData>();
 
-    	public List<EleD> 節足右3_接続 = new List<EleD>();
+    	public List<ElementData> 節足右3_接続 = new List<ElementData>();
 
-    	public List<EleD> 節足右4_接続 = new List<EleD>();
+    	public List<ElementData> 節足右4_接続 = new List<ElementData>();
 
-    	public List<EleD> 櫛状板左_接続 = new List<EleD>();
+    	public List<ElementData> 櫛状板左_接続 = new List<ElementData>();
 
-    	public List<EleD> 櫛状板右_接続 = new List<EleD>();
+    	public List<ElementData> 櫛状板右_接続 = new List<ElementData>();
 
-    	public List<EleD> 尾_接続 = new List<EleD>();
+    	public List<ElementData> 尾_接続 = new List<ElementData>();
 
     	public 多足_蠍D()
     	{
     		ThisType = GetType();
     	}
 
-    	public void 触肢左接続(EleD e)
+    	public void 触肢左接続(ElementData e)
     	{
     		触肢左_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.多足_蠍_触肢左_接続;
     	}
 
-    	public void 節足左1接続(EleD e)
+    	public void 節足左1接続(ElementData e)
     	{
     		節足左1_接続.Add(e);
     		e.Par = this;
@@ -136,13 +136,13 @@ namespace SlaveMatrix
     		{
     			return;
     		}
-    		foreach (EleD item in e.EnumEleD())
+    		foreach (ElementData item in e.EnumEleD())
     		{
     			item.尺度XB = 1.0;
     		}
     	}
 
-    	public void 節足左2接続(EleD e)
+    	public void 節足左2接続(ElementData e)
     	{
     		節足左2_接続.Add(e);
     		e.Par = this;
@@ -151,13 +151,13 @@ namespace SlaveMatrix
     		{
     			return;
     		}
-    		foreach (EleD item in e.EnumEleD())
+    		foreach (ElementData item in e.EnumEleD())
     		{
     			item.尺度XB = 1.05;
     		}
     	}
 
-    	public void 節足左3接続(EleD e)
+    	public void 節足左3接続(ElementData e)
     	{
     		節足左3_接続.Add(e);
     		e.Par = this;
@@ -166,13 +166,13 @@ namespace SlaveMatrix
     		{
     			return;
     		}
-    		foreach (EleD item in e.EnumEleD())
+    		foreach (ElementData item in e.EnumEleD())
     		{
     			item.尺度XB = 1.1;
     		}
     	}
 
-    	public void 節足左4接続(EleD e)
+    	public void 節足左4接続(ElementData e)
     	{
     		節足左4_接続.Add(e);
     		e.Par = this;
@@ -181,20 +181,20 @@ namespace SlaveMatrix
     		{
     			return;
     		}
-    		foreach (EleD item in e.EnumEleD())
+    		foreach (ElementData item in e.EnumEleD())
     		{
     			item.尺度XB = 1.15;
     		}
     	}
 
-    	public void 触肢右接続(EleD e)
+    	public void 触肢右接続(ElementData e)
     	{
     		触肢右_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.多足_蠍_触肢右_接続;
     	}
 
-    	public void 節足右1接続(EleD e)
+    	public void 節足右1接続(ElementData e)
     	{
     		節足右1_接続.Add(e);
     		e.Par = this;
@@ -203,13 +203,13 @@ namespace SlaveMatrix
     		{
     			return;
     		}
-    		foreach (EleD item in e.EnumEleD())
+    		foreach (ElementData item in e.EnumEleD())
     		{
     			item.尺度XB = 1.0;
     		}
     	}
 
-    	public void 節足右2接続(EleD e)
+    	public void 節足右2接続(ElementData e)
     	{
     		節足右2_接続.Add(e);
     		e.Par = this;
@@ -218,13 +218,13 @@ namespace SlaveMatrix
     		{
     			return;
     		}
-    		foreach (EleD item in e.EnumEleD())
+    		foreach (ElementData item in e.EnumEleD())
     		{
     			item.尺度XB = 1.05;
     		}
     	}
 
-    	public void 節足右3接続(EleD e)
+    	public void 節足右3接続(ElementData e)
     	{
     		節足右3_接続.Add(e);
     		e.Par = this;
@@ -233,13 +233,13 @@ namespace SlaveMatrix
     		{
     			return;
     		}
-    		foreach (EleD item in e.EnumEleD())
+    		foreach (ElementData item in e.EnumEleD())
     		{
     			item.尺度XB = 1.1;
     		}
     	}
 
-    	public void 節足右4接続(EleD e)
+    	public void 節足右4接続(ElementData e)
     	{
     		節足右4_接続.Add(e);
     		e.Par = this;
@@ -248,38 +248,38 @@ namespace SlaveMatrix
     		{
     			return;
     		}
-    		foreach (EleD item in e.EnumEleD())
+    		foreach (ElementData item in e.EnumEleD())
     		{
     			item.尺度XB = 1.15;
     		}
     	}
 
-    	public void 櫛状板左接続(EleD e)
+    	public void 櫛状板左接続(ElementData e)
     	{
     		櫛状板左_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.多足_蠍_櫛状板左_接続;
     	}
 
-    	public void 櫛状板右接続(EleD e)
+    	public void 櫛状板右接続(ElementData e)
     	{
     		櫛状板右_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.多足_蠍_櫛状板右_接続;
     	}
 
-    	public void 尾接続(EleD e)
+    	public void 尾接続(ElementData e)
     	{
     		尾_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.多足_蠍_尾_接続;
-    		foreach (EleD item in e.EnumEleD())
+    		foreach (ElementData item in e.EnumEleD())
     		{
     			item.尺度B = 1.3;
     		}
     	}
 
-    	public override Ele GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
+    	public override Element GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
     	{
     		return new 多足_蠍(DisUnit, 配色指定, 体配色, Med, this);
     	}

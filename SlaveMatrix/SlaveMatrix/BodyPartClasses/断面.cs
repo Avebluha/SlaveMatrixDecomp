@@ -1,6 +1,6 @@
 namespace SlaveMatrix
 {
-    public class 断面 : Ele
+    public class 断面 : Element
     {
     	public virtual double 精液濃度 { get; set; }
 

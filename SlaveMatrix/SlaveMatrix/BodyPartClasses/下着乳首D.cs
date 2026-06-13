@@ -4,7 +4,7 @@ using _2DGAMELIB;
 namespace SlaveMatrix
 {
     [Serializable]
-    public class 下着乳首D : EleD
+    public class 下着乳首D : ElementData
     {
     	public bool 乳首_表示 = true;
 
@@ -23,7 +23,7 @@ namespace SlaveMatrix
     		ThisType = GetType();
     	}
 
-    	public override Ele GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
+    	public override Element GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
     	{
     		return new 下着乳首(DisUnit, 配色指定, 体配色, Med, this);
     	}

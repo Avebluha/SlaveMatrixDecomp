@@ -1,6 +1,6 @@
 namespace SlaveMatrix
 {
-    public class 性器精液 : Ele
+    public class 性器精液 : Element
     {
     	public override double 肥大
     	{

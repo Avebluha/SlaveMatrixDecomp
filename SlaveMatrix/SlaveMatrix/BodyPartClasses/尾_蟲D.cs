@@ -143,120 +143,120 @@ namespace SlaveMatrix
 
     	public bool 鎖表示;
 
-    	public List<EleD> 左1_接続 = new List<EleD>();
+    	public List<ElementData> 左1_接続 = new List<ElementData>();
 
-    	public List<EleD> 右1_接続 = new List<EleD>();
+    	public List<ElementData> 右1_接続 = new List<ElementData>();
 
-    	public List<EleD> 左2_接続 = new List<EleD>();
+    	public List<ElementData> 左2_接続 = new List<ElementData>();
 
-    	public List<EleD> 右2_接続 = new List<EleD>();
+    	public List<ElementData> 右2_接続 = new List<ElementData>();
 
-    	public List<EleD> 左3_接続 = new List<EleD>();
+    	public List<ElementData> 左3_接続 = new List<ElementData>();
 
-    	public List<EleD> 右3_接続 = new List<EleD>();
+    	public List<ElementData> 右3_接続 = new List<ElementData>();
 
-    	public List<EleD> 左4_接続 = new List<EleD>();
+    	public List<ElementData> 左4_接続 = new List<ElementData>();
 
-    	public List<EleD> 右4_接続 = new List<EleD>();
+    	public List<ElementData> 右4_接続 = new List<ElementData>();
 
-    	public List<EleD> 左5_接続 = new List<EleD>();
+    	public List<ElementData> 左5_接続 = new List<ElementData>();
 
-    	public List<EleD> 右5_接続 = new List<EleD>();
+    	public List<ElementData> 右5_接続 = new List<ElementData>();
 
-    	public List<EleD> 尾左_接続 = new List<EleD>();
+    	public List<ElementData> 尾左_接続 = new List<ElementData>();
 
-    	public List<EleD> 尾右_接続 = new List<EleD>();
+    	public List<ElementData> 尾右_接続 = new List<ElementData>();
 
     	public 尾_蟲D()
     	{
     		ThisType = GetType();
     	}
 
-    	public void 左1接続(EleD e)
+    	public void 左1接続(ElementData e)
     	{
     		左1_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.尾_蟲_左1_接続;
     	}
 
-    	public void 右1接続(EleD e)
+    	public void 右1接続(ElementData e)
     	{
     		右1_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.尾_蟲_右1_接続;
     	}
 
-    	public void 左2接続(EleD e)
+    	public void 左2接続(ElementData e)
     	{
     		左2_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.尾_蟲_左2_接続;
     	}
 
-    	public void 右2接続(EleD e)
+    	public void 右2接続(ElementData e)
     	{
     		右2_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.尾_蟲_右2_接続;
     	}
 
-    	public void 左3接続(EleD e)
+    	public void 左3接続(ElementData e)
     	{
     		左3_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.尾_蟲_左3_接続;
     	}
 
-    	public void 右3接続(EleD e)
+    	public void 右3接続(ElementData e)
     	{
     		右3_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.尾_蟲_右3_接続;
     	}
 
-    	public void 左4接続(EleD e)
+    	public void 左4接続(ElementData e)
     	{
     		左4_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.尾_蟲_左4_接続;
     	}
 
-    	public void 右4接続(EleD e)
+    	public void 右4接続(ElementData e)
     	{
     		右4_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.尾_蟲_右4_接続;
     	}
 
-    	public void 左5接続(EleD e)
+    	public void 左5接続(ElementData e)
     	{
     		左5_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.尾_蟲_左5_接続;
     	}
 
-    	public void 右5接続(EleD e)
+    	public void 右5接続(ElementData e)
     	{
     		右5_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.尾_蟲_右5_接続;
     	}
 
-    	public void 尾左接続(EleD e)
+    	public void 尾左接続(ElementData e)
     	{
     		尾左_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.尾_蟲_尾左_接続;
     	}
 
-    	public void 尾右接続(EleD e)
+    	public void 尾右接続(ElementData e)
     	{
     		尾右_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.尾_蟲_尾右_接続;
     	}
 
-    	public override Ele GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
+    	public override Element GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
     	{
     		return new 尾_蟲(DisUnit, 配色指定, 体配色, Med, this);
     	}

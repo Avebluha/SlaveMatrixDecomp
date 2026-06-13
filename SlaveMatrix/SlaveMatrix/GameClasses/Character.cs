@@ -13,10 +13,10 @@ namespace SlaveMatrix
     {
         private sealed class BodyPartRef
         {
-            public EleI EI;
+            public ElementInstance EI;
             public bool Heavy;
 
-            public BodyPartRef(EleI ei, bool heavy)
+            public BodyPartRef(ElementInstance ei, bool heavy)
             {
                 this.EI = ei;
                 this.Heavy = heavy;
@@ -1678,7 +1678,7 @@ namespace SlaveMatrix
     		};
     		Motions.Add(Swallow.GetHashCode().ToString(), Swallow);
     		Motions.Drive(Med.FPSF);
-    		Med.SetUniqueColor(Body.Elements.Select((Ele e) => e.Body.EnumAllPar()).JoinEnum());
+    		Med.SetUniqueColor(Body.Elements.Select((Element e) => e.Body.EnumAllPar()).JoinEnum());
     		汗掻き = new Sweat(Med, Are, this, Motions);
     		汗かき = 汗掻き.汗かき;
     		Body.汗掻き = 汗掻き;
@@ -1696,7 +1696,7 @@ namespace SlaveMatrix
     	{
     		Body.Dispose();
     		汗掻き.Dispose();
-    		ModeEventDispatcher.RemUniqueColor(Body.Elements.Select((Ele e) => e.Body.EnumAllPar()).JoinEnum());
+    		ModeEventDispatcher.RemUniqueColor(Body.Elements.Select((Element e) => e.Body.EnumAllPar()).JoinEnum());
     	}
 
     	public void Set衣装(IEnumerable<object> 衣装)

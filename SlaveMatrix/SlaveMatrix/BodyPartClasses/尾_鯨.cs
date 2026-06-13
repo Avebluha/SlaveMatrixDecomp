@@ -658,143 +658,143 @@ namespace SlaveMatrix
 
     	public 拘束鎖 鎖2;
 
-    	public Ele[] 左1_接続;
+    	public Element[] 左1_接続;
 
-    	public Ele[] 右1_接続;
+    	public Element[] 右1_接続;
 
-    	public Ele[] 左2_接続;
+    	public Element[] 左2_接続;
 
-    	public Ele[] 右2_接続;
+    	public Element[] 右2_接続;
 
-    	public Ele[] 左3_接続;
+    	public Element[] 左3_接続;
 
-    	public Ele[] 右3_接続;
+    	public Element[] 右3_接続;
 
-    	public Ele[] 左4_接続;
+    	public Element[] 左4_接続;
 
-    	public Ele[] 右4_接続;
+    	public Element[] 右4_接続;
 
-    	public Ele[] 左5_接続;
+    	public Element[] 左5_接続;
 
-    	public Ele[] 右5_接続;
+    	public Element[] 右5_接続;
 
-    	public Ele[] 左6_接続;
+    	public Element[] 左6_接続;
 
-    	public Ele[] 右6_接続;
+    	public Element[] 右6_接続;
 
-    	public Ele[] 左7_接続;
+    	public Element[] 左7_接続;
 
-    	public Ele[] 右7_接続;
+    	public Element[] 右7_接続;
 
-    	public Ele[] 左8_接続;
+    	public Element[] 左8_接続;
 
-    	public Ele[] 右8_接続;
+    	public Element[] 右8_接続;
 
-    	public Ele[] 左9_接続;
+    	public Element[] 左9_接続;
 
-    	public Ele[] 右9_接続;
+    	public Element[] 右9_接続;
 
-    	public Ele[] 左10_接続;
+    	public Element[] 左10_接続;
 
-    	public Ele[] 右10_接続;
+    	public Element[] 右10_接続;
 
-    	public Ele[] 左11_接続;
+    	public Element[] 左11_接続;
 
-    	public Ele[] 右11_接続;
+    	public Element[] 右11_接続;
 
-    	public Ele[] 左12_接続;
+    	public Element[] 左12_接続;
 
-    	public Ele[] 右12_接続;
+    	public Element[] 右12_接続;
 
-    	public Ele[] 左13_接続;
+    	public Element[] 左13_接続;
 
-    	public Ele[] 右13_接続;
+    	public Element[] 右13_接続;
 
-    	public Ele[] 左14_接続;
+    	public Element[] 左14_接続;
 
-    	public Ele[] 右14_接続;
+    	public Element[] 右14_接続;
 
-    	public Ele[] 左15_接続;
+    	public Element[] 左15_接続;
 
-    	public Ele[] 右15_接続;
+    	public Element[] 右15_接続;
 
-    	public Ele[] 左16_接続;
+    	public Element[] 左16_接続;
 
-    	public Ele[] 右16_接続;
+    	public Element[] 右16_接続;
 
-    	public Ele[] 左17_接続;
+    	public Element[] 左17_接続;
 
-    	public Ele[] 右17_接続;
+    	public Element[] 右17_接続;
 
-    	public Ele[] 左18_接続;
+    	public Element[] 左18_接続;
 
-    	public Ele[] 右18_接続;
+    	public Element[] 右18_接続;
 
-    	public Ele[] 左19_接続;
+    	public Element[] 左19_接続;
 
-    	public Ele[] 右19_接続;
+    	public Element[] 右19_接続;
 
-    	public Ele[] 左20_接続;
+    	public Element[] 左20_接続;
 
-    	public Ele[] 右20_接続;
+    	public Element[] 右20_接続;
 
-    	public Ele[] 左21_接続;
+    	public Element[] 左21_接続;
 
-    	public Ele[] 右21_接続;
+    	public Element[] 右21_接続;
 
-    	public Ele[] 左22_接続;
+    	public Element[] 左22_接続;
 
-    	public Ele[] 右22_接続;
+    	public Element[] 右22_接続;
 
-    	public Ele[] 左23_接続;
+    	public Element[] 左23_接続;
 
-    	public Ele[] 右23_接続;
+    	public Element[] 右23_接続;
 
-    	public Ele[] 左24_接続;
+    	public Element[] 左24_接続;
 
-    	public Ele[] 右24_接続;
+    	public Element[] 右24_接続;
 
-    	public Ele[] 左25_接続;
+    	public Element[] 左25_接続;
 
-    	public Ele[] 右25_接続;
+    	public Element[] 右25_接続;
 
-    	public Ele[] 左26_接続;
+    	public Element[] 左26_接続;
 
-    	public Ele[] 右26_接続;
+    	public Element[] 右26_接続;
 
-    	public Ele[] 左27_接続;
+    	public Element[] 左27_接続;
 
-    	public Ele[] 右27_接続;
+    	public Element[] 右27_接続;
 
-    	public Ele[] 左28_接続;
+    	public Element[] 左28_接続;
 
-    	public Ele[] 右28_接続;
+    	public Element[] 右28_接続;
 
-    	public Ele[] 左29_接続;
+    	public Element[] 左29_接続;
 
-    	public Ele[] 右29_接続;
+    	public Element[] 右29_接続;
 
-    	public Ele[] 左30_接続;
+    	public Element[] 左30_接続;
 
-    	public Ele[] 右30_接続;
+    	public Element[] 右30_接続;
 
-    	public Ele[] 左31_接続;
+    	public Element[] 左31_接続;
 
-    	public Ele[] 右31_接続;
+    	public Element[] 右31_接続;
 
-    	public Ele[] 左32_接続;
+    	public Element[] 左32_接続;
 
-    	public Ele[] 右32_接続;
+    	public Element[] 右32_接続;
 
-    	public Ele[] 左33_接続;
+    	public Element[] 左33_接続;
 
-    	public Ele[] 右33_接続;
+    	public Element[] 右33_接続;
 
-    	public Ele[] 左34_接続;
+    	public Element[] 左34_接続;
 
-    	public Ele[] 右34_接続;
+    	public Element[] 右34_接続;
 
-    	public Ele[] 尾先_接続;
+    	public Element[] 尾先_接続;
 
     	private ShapePart[] Pars;
 
@@ -3123,10 +3123,10 @@ namespace SlaveMatrix
     		{
     			表示 = false;
     		}
-    		Ele f;
+    		Element f;
     		if (e.左1_接続.Count > 0)
     		{
-    			左1_接続 = e.左1_接続.Select(delegate(EleD g)
+    			左1_接続 = e.左1_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 尾_鯨2;
@@ -3137,7 +3137,7 @@ namespace SlaveMatrix
     		}
     		if (e.右1_接続.Count > 0)
     		{
-    			右1_接続 = e.右1_接続.Select(delegate(EleD g)
+    			右1_接続 = e.右1_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 尾_鯨2;
@@ -3148,7 +3148,7 @@ namespace SlaveMatrix
     		}
     		if (e.左2_接続.Count > 0)
     		{
-    			左2_接続 = e.左2_接続.Select(delegate(EleD g)
+    			左2_接続 = e.左2_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 尾_鯨2;
@@ -3159,7 +3159,7 @@ namespace SlaveMatrix
     		}
     		if (e.右2_接続.Count > 0)
     		{
-    			右2_接続 = e.右2_接続.Select(delegate(EleD g)
+    			右2_接続 = e.右2_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 尾_鯨2;
@@ -3170,7 +3170,7 @@ namespace SlaveMatrix
     		}
     		if (e.左3_接続.Count > 0)
     		{
-    			左3_接続 = e.左3_接続.Select(delegate(EleD g)
+    			左3_接続 = e.左3_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 尾_鯨2;
@@ -3181,7 +3181,7 @@ namespace SlaveMatrix
     		}
     		if (e.右3_接続.Count > 0)
     		{
-    			右3_接続 = e.右3_接続.Select(delegate(EleD g)
+    			右3_接続 = e.右3_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 尾_鯨2;
@@ -3192,7 +3192,7 @@ namespace SlaveMatrix
     		}
     		if (e.左4_接続.Count > 0)
     		{
-    			左4_接続 = e.左4_接続.Select(delegate(EleD g)
+    			左4_接続 = e.左4_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 尾_鯨2;
@@ -3203,7 +3203,7 @@ namespace SlaveMatrix
     		}
     		if (e.右4_接続.Count > 0)
     		{
-    			右4_接続 = e.右4_接続.Select(delegate(EleD g)
+    			右4_接続 = e.右4_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 尾_鯨2;
@@ -3214,7 +3214,7 @@ namespace SlaveMatrix
     		}
     		if (e.左5_接続.Count > 0)
     		{
-    			左5_接続 = e.左5_接続.Select(delegate(EleD g)
+    			左5_接続 = e.左5_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 尾_鯨2;
@@ -3225,7 +3225,7 @@ namespace SlaveMatrix
     		}
     		if (e.右5_接続.Count > 0)
     		{
-    			右5_接続 = e.右5_接続.Select(delegate(EleD g)
+    			右5_接続 = e.右5_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 尾_鯨2;
@@ -3236,7 +3236,7 @@ namespace SlaveMatrix
     		}
     		if (e.左6_接続.Count > 0)
     		{
-    			左6_接続 = e.左6_接続.Select(delegate(EleD g)
+    			左6_接続 = e.左6_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 尾_鯨2;
@@ -3247,7 +3247,7 @@ namespace SlaveMatrix
     		}
     		if (e.右6_接続.Count > 0)
     		{
-    			右6_接続 = e.右6_接続.Select(delegate(EleD g)
+    			右6_接続 = e.右6_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 尾_鯨2;
@@ -3258,7 +3258,7 @@ namespace SlaveMatrix
     		}
     		if (e.左7_接続.Count > 0)
     		{
-    			左7_接続 = e.左7_接続.Select(delegate(EleD g)
+    			左7_接続 = e.左7_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 尾_鯨2;
@@ -3269,7 +3269,7 @@ namespace SlaveMatrix
     		}
     		if (e.右7_接続.Count > 0)
     		{
-    			右7_接続 = e.右7_接続.Select(delegate(EleD g)
+    			右7_接続 = e.右7_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 尾_鯨2;
@@ -3280,7 +3280,7 @@ namespace SlaveMatrix
     		}
     		if (e.左8_接続.Count > 0)
     		{
-    			左8_接続 = e.左8_接続.Select(delegate(EleD g)
+    			左8_接続 = e.左8_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 尾_鯨2;
@@ -3291,7 +3291,7 @@ namespace SlaveMatrix
     		}
     		if (e.右8_接続.Count > 0)
     		{
-    			右8_接続 = e.右8_接続.Select(delegate(EleD g)
+    			右8_接続 = e.右8_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 尾_鯨2;
@@ -3302,7 +3302,7 @@ namespace SlaveMatrix
     		}
     		if (e.左9_接続.Count > 0)
     		{
-    			左9_接続 = e.左9_接続.Select(delegate(EleD g)
+    			左9_接続 = e.左9_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 尾_鯨2;
@@ -3313,7 +3313,7 @@ namespace SlaveMatrix
     		}
     		if (e.右9_接続.Count > 0)
     		{
-    			右9_接続 = e.右9_接続.Select(delegate(EleD g)
+    			右9_接続 = e.右9_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 尾_鯨2;
@@ -3324,7 +3324,7 @@ namespace SlaveMatrix
     		}
     		if (e.左10_接続.Count > 0)
     		{
-    			左10_接続 = e.左10_接続.Select(delegate(EleD g)
+    			左10_接続 = e.左10_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 尾_鯨2;
@@ -3335,7 +3335,7 @@ namespace SlaveMatrix
     		}
     		if (e.右10_接続.Count > 0)
     		{
-    			右10_接続 = e.右10_接続.Select(delegate(EleD g)
+    			右10_接続 = e.右10_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 尾_鯨2;
@@ -3346,7 +3346,7 @@ namespace SlaveMatrix
     		}
     		if (e.左11_接続.Count > 0)
     		{
-    			左11_接続 = e.左11_接続.Select(delegate(EleD g)
+    			左11_接続 = e.左11_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 尾_鯨2;
@@ -3357,7 +3357,7 @@ namespace SlaveMatrix
     		}
     		if (e.右11_接続.Count > 0)
     		{
-    			右11_接続 = e.右11_接続.Select(delegate(EleD g)
+    			右11_接続 = e.右11_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 尾_鯨2;
@@ -3368,7 +3368,7 @@ namespace SlaveMatrix
     		}
     		if (e.左12_接続.Count > 0)
     		{
-    			左12_接続 = e.左12_接続.Select(delegate(EleD g)
+    			左12_接続 = e.左12_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 尾_鯨2;
@@ -3379,7 +3379,7 @@ namespace SlaveMatrix
     		}
     		if (e.右12_接続.Count > 0)
     		{
-    			右12_接続 = e.右12_接続.Select(delegate(EleD g)
+    			右12_接続 = e.右12_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 尾_鯨2;
@@ -3390,7 +3390,7 @@ namespace SlaveMatrix
     		}
     		if (e.左13_接続.Count > 0)
     		{
-    			左13_接続 = e.左13_接続.Select(delegate(EleD g)
+    			左13_接続 = e.左13_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 尾_鯨2;
@@ -3401,7 +3401,7 @@ namespace SlaveMatrix
     		}
     		if (e.右13_接続.Count > 0)
     		{
-    			右13_接続 = e.右13_接続.Select(delegate(EleD g)
+    			右13_接続 = e.右13_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 尾_鯨2;
@@ -3412,7 +3412,7 @@ namespace SlaveMatrix
     		}
     		if (e.左14_接続.Count > 0)
     		{
-    			左14_接続 = e.左14_接続.Select(delegate(EleD g)
+    			左14_接続 = e.左14_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 尾_鯨2;
@@ -3423,7 +3423,7 @@ namespace SlaveMatrix
     		}
     		if (e.右14_接続.Count > 0)
     		{
-    			右14_接続 = e.右14_接続.Select(delegate(EleD g)
+    			右14_接続 = e.右14_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 尾_鯨2;
@@ -3434,7 +3434,7 @@ namespace SlaveMatrix
     		}
     		if (e.左15_接続.Count > 0)
     		{
-    			左15_接続 = e.左15_接続.Select(delegate(EleD g)
+    			左15_接続 = e.左15_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 尾_鯨2;
@@ -3445,7 +3445,7 @@ namespace SlaveMatrix
     		}
     		if (e.右15_接続.Count > 0)
     		{
-    			右15_接続 = e.右15_接続.Select(delegate(EleD g)
+    			右15_接続 = e.右15_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 尾_鯨2;
@@ -3456,7 +3456,7 @@ namespace SlaveMatrix
     		}
     		if (e.左16_接続.Count > 0)
     		{
-    			左16_接続 = e.左16_接続.Select(delegate(EleD g)
+    			左16_接続 = e.左16_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 尾_鯨2;
@@ -3467,7 +3467,7 @@ namespace SlaveMatrix
     		}
     		if (e.右16_接続.Count > 0)
     		{
-    			右16_接続 = e.右16_接続.Select(delegate(EleD g)
+    			右16_接続 = e.右16_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 尾_鯨2;
@@ -3478,7 +3478,7 @@ namespace SlaveMatrix
     		}
     		if (e.左17_接続.Count > 0)
     		{
-    			左17_接続 = e.左17_接続.Select(delegate(EleD g)
+    			左17_接続 = e.左17_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 尾_鯨2;
@@ -3489,7 +3489,7 @@ namespace SlaveMatrix
     		}
     		if (e.右17_接続.Count > 0)
     		{
-    			右17_接続 = e.右17_接続.Select(delegate(EleD g)
+    			右17_接続 = e.右17_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 尾_鯨2;
@@ -3500,7 +3500,7 @@ namespace SlaveMatrix
     		}
     		if (e.左18_接続.Count > 0)
     		{
-    			左18_接続 = e.左18_接続.Select(delegate(EleD g)
+    			左18_接続 = e.左18_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 尾_鯨2;
@@ -3511,7 +3511,7 @@ namespace SlaveMatrix
     		}
     		if (e.右18_接続.Count > 0)
     		{
-    			右18_接続 = e.右18_接続.Select(delegate(EleD g)
+    			右18_接続 = e.右18_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 尾_鯨2;
@@ -3522,7 +3522,7 @@ namespace SlaveMatrix
     		}
     		if (e.左19_接続.Count > 0)
     		{
-    			左19_接続 = e.左19_接続.Select(delegate(EleD g)
+    			左19_接続 = e.左19_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 尾_鯨2;
@@ -3533,7 +3533,7 @@ namespace SlaveMatrix
     		}
     		if (e.右19_接続.Count > 0)
     		{
-    			右19_接続 = e.右19_接続.Select(delegate(EleD g)
+    			右19_接続 = e.右19_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 尾_鯨2;
@@ -3544,7 +3544,7 @@ namespace SlaveMatrix
     		}
     		if (e.左20_接続.Count > 0)
     		{
-    			左20_接続 = e.左20_接続.Select(delegate(EleD g)
+    			左20_接続 = e.左20_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 尾_鯨2;
@@ -3555,7 +3555,7 @@ namespace SlaveMatrix
     		}
     		if (e.右20_接続.Count > 0)
     		{
-    			右20_接続 = e.右20_接続.Select(delegate(EleD g)
+    			右20_接続 = e.右20_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 尾_鯨2;
@@ -3566,7 +3566,7 @@ namespace SlaveMatrix
     		}
     		if (e.左21_接続.Count > 0)
     		{
-    			左21_接続 = e.左21_接続.Select(delegate(EleD g)
+    			左21_接続 = e.左21_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 尾_鯨2;
@@ -3577,7 +3577,7 @@ namespace SlaveMatrix
     		}
     		if (e.右21_接続.Count > 0)
     		{
-    			右21_接続 = e.右21_接続.Select(delegate(EleD g)
+    			右21_接続 = e.右21_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 尾_鯨2;
@@ -3588,7 +3588,7 @@ namespace SlaveMatrix
     		}
     		if (e.左22_接続.Count > 0)
     		{
-    			左22_接続 = e.左22_接続.Select(delegate(EleD g)
+    			左22_接続 = e.左22_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 尾_鯨2;
@@ -3599,7 +3599,7 @@ namespace SlaveMatrix
     		}
     		if (e.右22_接続.Count > 0)
     		{
-    			右22_接続 = e.右22_接続.Select(delegate(EleD g)
+    			右22_接続 = e.右22_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 尾_鯨2;
@@ -3610,7 +3610,7 @@ namespace SlaveMatrix
     		}
     		if (e.左23_接続.Count > 0)
     		{
-    			左23_接続 = e.左23_接続.Select(delegate(EleD g)
+    			左23_接続 = e.左23_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 尾_鯨2;
@@ -3621,7 +3621,7 @@ namespace SlaveMatrix
     		}
     		if (e.右23_接続.Count > 0)
     		{
-    			右23_接続 = e.右23_接続.Select(delegate(EleD g)
+    			右23_接続 = e.右23_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 尾_鯨2;
@@ -3632,7 +3632,7 @@ namespace SlaveMatrix
     		}
     		if (e.左24_接続.Count > 0)
     		{
-    			左24_接続 = e.左24_接続.Select(delegate(EleD g)
+    			左24_接続 = e.左24_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 尾_鯨2;
@@ -3643,7 +3643,7 @@ namespace SlaveMatrix
     		}
     		if (e.右24_接続.Count > 0)
     		{
-    			右24_接続 = e.右24_接続.Select(delegate(EleD g)
+    			右24_接続 = e.右24_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 尾_鯨2;
@@ -3654,7 +3654,7 @@ namespace SlaveMatrix
     		}
     		if (e.左25_接続.Count > 0)
     		{
-    			左25_接続 = e.左25_接続.Select(delegate(EleD g)
+    			左25_接続 = e.左25_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 尾_鯨2;
@@ -3665,7 +3665,7 @@ namespace SlaveMatrix
     		}
     		if (e.右25_接続.Count > 0)
     		{
-    			右25_接続 = e.右25_接続.Select(delegate(EleD g)
+    			右25_接続 = e.右25_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 尾_鯨2;
@@ -3676,7 +3676,7 @@ namespace SlaveMatrix
     		}
     		if (e.左26_接続.Count > 0)
     		{
-    			左26_接続 = e.左26_接続.Select(delegate(EleD g)
+    			左26_接続 = e.左26_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 尾_鯨2;
@@ -3687,7 +3687,7 @@ namespace SlaveMatrix
     		}
     		if (e.右26_接続.Count > 0)
     		{
-    			右26_接続 = e.右26_接続.Select(delegate(EleD g)
+    			右26_接続 = e.右26_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 尾_鯨2;
@@ -3698,7 +3698,7 @@ namespace SlaveMatrix
     		}
     		if (e.左27_接続.Count > 0)
     		{
-    			左27_接続 = e.左27_接続.Select(delegate(EleD g)
+    			左27_接続 = e.左27_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 尾_鯨2;
@@ -3709,7 +3709,7 @@ namespace SlaveMatrix
     		}
     		if (e.右27_接続.Count > 0)
     		{
-    			右27_接続 = e.右27_接続.Select(delegate(EleD g)
+    			右27_接続 = e.右27_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 尾_鯨2;
@@ -3720,7 +3720,7 @@ namespace SlaveMatrix
     		}
     		if (e.左28_接続.Count > 0)
     		{
-    			左28_接続 = e.左28_接続.Select(delegate(EleD g)
+    			左28_接続 = e.左28_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 尾_鯨2;
@@ -3731,7 +3731,7 @@ namespace SlaveMatrix
     		}
     		if (e.右28_接続.Count > 0)
     		{
-    			右28_接続 = e.右28_接続.Select(delegate(EleD g)
+    			右28_接続 = e.右28_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 尾_鯨2;
@@ -3742,7 +3742,7 @@ namespace SlaveMatrix
     		}
     		if (e.左29_接続.Count > 0)
     		{
-    			左29_接続 = e.左29_接続.Select(delegate(EleD g)
+    			左29_接続 = e.左29_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 尾_鯨2;
@@ -3753,7 +3753,7 @@ namespace SlaveMatrix
     		}
     		if (e.右29_接続.Count > 0)
     		{
-    			右29_接続 = e.右29_接続.Select(delegate(EleD g)
+    			右29_接続 = e.右29_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 尾_鯨2;
@@ -3764,7 +3764,7 @@ namespace SlaveMatrix
     		}
     		if (e.左30_接続.Count > 0)
     		{
-    			左30_接続 = e.左30_接続.Select(delegate(EleD g)
+    			左30_接続 = e.左30_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 尾_鯨2;
@@ -3775,7 +3775,7 @@ namespace SlaveMatrix
     		}
     		if (e.右30_接続.Count > 0)
     		{
-    			右30_接続 = e.右30_接続.Select(delegate(EleD g)
+    			右30_接続 = e.右30_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 尾_鯨2;
@@ -3786,7 +3786,7 @@ namespace SlaveMatrix
     		}
     		if (e.左31_接続.Count > 0)
     		{
-    			左31_接続 = e.左31_接続.Select(delegate(EleD g)
+    			左31_接続 = e.左31_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 尾_鯨2;
@@ -3797,7 +3797,7 @@ namespace SlaveMatrix
     		}
     		if (e.右31_接続.Count > 0)
     		{
-    			右31_接続 = e.右31_接続.Select(delegate(EleD g)
+    			右31_接続 = e.右31_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 尾_鯨2;
@@ -3808,7 +3808,7 @@ namespace SlaveMatrix
     		}
     		if (e.左32_接続.Count > 0)
     		{
-    			左32_接続 = e.左32_接続.Select(delegate(EleD g)
+    			左32_接続 = e.左32_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 尾_鯨2;
@@ -3819,7 +3819,7 @@ namespace SlaveMatrix
     		}
     		if (e.右32_接続.Count > 0)
     		{
-    			右32_接続 = e.右32_接続.Select(delegate(EleD g)
+    			右32_接続 = e.右32_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 尾_鯨2;
@@ -3830,7 +3830,7 @@ namespace SlaveMatrix
     		}
     		if (e.左33_接続.Count > 0)
     		{
-    			左33_接続 = e.左33_接続.Select(delegate(EleD g)
+    			左33_接続 = e.左33_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 尾_鯨2;
@@ -3841,7 +3841,7 @@ namespace SlaveMatrix
     		}
     		if (e.右33_接続.Count > 0)
     		{
-    			右33_接続 = e.右33_接続.Select(delegate(EleD g)
+    			右33_接続 = e.右33_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 尾_鯨2;
@@ -3852,7 +3852,7 @@ namespace SlaveMatrix
     		}
     		if (e.左34_接続.Count > 0)
     		{
-    			左34_接続 = e.左34_接続.Select(delegate(EleD g)
+    			左34_接続 = e.左34_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 尾_鯨2;
@@ -3863,7 +3863,7 @@ namespace SlaveMatrix
     		}
     		if (e.右34_接続.Count > 0)
     		{
-    			右34_接続 = e.右34_接続.Select(delegate(EleD g)
+    			右34_接続 = e.右34_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 尾_鯨2;
@@ -3874,7 +3874,7 @@ namespace SlaveMatrix
     		}
     		if (e.尾先_接続.Count > 0)
     		{
-    			尾先_接続 = e.尾先_接続.Select(delegate(EleD g)
+    			尾先_接続 = e.尾先_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 尾_鯨2;

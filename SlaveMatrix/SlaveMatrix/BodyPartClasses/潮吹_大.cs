@@ -1,6 +1,6 @@
 namespace SlaveMatrix
 {
-    public class 潮吹_大 : Ele
+    public class 潮吹_大 : Element
     {
     }
 }

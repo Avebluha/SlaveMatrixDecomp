@@ -70,10 +70,10 @@ namespace SlaveMatrix
     				調教UI.放し();
     			}
     		}
-    		if (!対象.Ele.右 && cp.X < xc)
+    		if (!対象.Element.右 && cp.X < xc)
     		{
-    			対象.Ele.右 = !対象.Ele.右;
-    			対象.Ele.Body.JoinPA();
+    			対象.Element.右 = !対象.Element.右;
+    			対象.Element.Body.JoinPA();
     			ハンド右.X11Y0_小指.ReverseX();
     			ハンド右.X11Y0_薬指.ReverseX();
     			ハンド右.X11Y0_中指.ReverseX();
@@ -90,10 +90,10 @@ namespace SlaveMatrix
     			ハンド右.X11Y0_呪印_鎖3.ReverseX();
     			ハンド右.Body.JoinPA();
     		}
-    		else if (対象.Ele.右 && cp.X > xc)
+    		else if (対象.Element.右 && cp.X > xc)
     		{
-    			対象.Ele.右 = !対象.Ele.右;
-    			対象.Ele.Body.JoinPA();
+    			対象.Element.右 = !対象.Element.右;
+    			対象.Element.Body.JoinPA();
     			ハンド右.X11Y0_小指.ReverseX();
     			ハンド右.X11Y0_薬指.ReverseX();
     			ハンド右.X11Y0_中指.ReverseX();
@@ -142,7 +142,7 @@ namespace SlaveMatrix
     		{
     			Is擽り = false;
     			擽りモーション.End();
-    			if (対象.Ele.右)
+    			if (対象.Element.右)
     			{
     				ハンド右.X11Y0_小指.ReverseX();
     				ハンド右.X11Y0_薬指.ReverseX();
@@ -222,7 +222,7 @@ namespace SlaveMatrix
     			},
     			OnUpdate = delegate(Motion m)
     			{
-    				羽根箒.Ele.角度C = 10.0 * m.Value;
+    				羽根箒.Element.角度C = 10.0 * m.Value;
     				hc = 調教UI.羽根箒先端hc;
     				調教UI.Action(羽箒処理2.Cha.GetContact(ref hc).c, ActionType.Tickle, CurrentState.Continue, ToolType.羽根箒, 0, 羽箒処理2.強さ, 機械: false, 射精: false);
     				Player.奴体力消費小();
@@ -237,7 +237,7 @@ namespace SlaveMatrix
     			OnEnd = delegate(Motion m)
     			{
     				m.ResetValue();
-    				羽根箒.Ele.角度C = 0.0;
+    				羽根箒.Element.角度C = 0.0;
     			}
     		};
     		調教UI.Mots.Add(擽りモーション.GetHashCode().ToString(), 擽りモーション);

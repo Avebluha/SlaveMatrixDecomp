@@ -2,7 +2,7 @@ using _2DGAMELIB;
 
 namespace SlaveMatrix
 {
-    public class 衝撃 : Ele
+    public class 衝撃 : Element
     {
     	public ShapePart X0Y0_衝撃;
 

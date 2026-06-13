@@ -6,7 +6,7 @@ namespace SlaveMatrix
     {
     	private TrainingUI 調教UI;
 
-    	public Ele Ele;
+    	public Element Element;
 
     	private UsageStatus v;
 
@@ -33,20 +33,20 @@ namespace SlaveMatrix
     			v = value;
     			if (v == UsageStatus.InUse)
     			{
-    				Ele.SetHitFalse();
+    				Element.SetHitFalse();
     			}
     			else
     			{
-    				Ele.SetHitTrue();
+    				Element.SetHitTrue();
     			}
     		}
     	}
 
-    	public CM(ModeEventDispatcher Med, TrainingUI 調教UI, Ele Ele)
+    	public CM(ModeEventDispatcher Med, TrainingUI 調教UI, Element Element)
     	{
     		this.調教UI = 調教UI;
-    		this.Ele = Ele;
-    		foreach (ShapePart item in Ele.Body.EnumAllPar())
+    		this.Element = Element;
+    		foreach (ShapePart item in Element.Body.EnumAllPar())
     		{
     			item.HitColor = Med.GetUniqueColor();
     		}
@@ -54,9 +54,9 @@ namespace SlaveMatrix
 
     	public void Reset()
     	{
-    		Ele.Xi = 0;
-    		Ele.Yi = 0;
-    		Ele.Intensity = 0.5;
+    		Element.Xi = 0;
+    		Element.Yi = 0;
+    		Element.Intensity = 0.5;
     		使用状態 = UsageStatus.Standby;
     		Under = false;
     		描画Show = true;
@@ -70,10 +70,10 @@ namespace SlaveMatrix
     	{
     		if (Show && Under && 描画Show)
     		{
-    			Ele.Body.JoinPA();
-    			Ele.色更新();
+    			Element.Body.JoinPA();
+    			Element.色更新();
     			調教UI.持ち手下描画();
-    			Ele.描画0(Are);
+    			Element.描画0(Are);
     		}
     	}
 
@@ -81,7 +81,7 @@ namespace SlaveMatrix
     	{
     		if (Show && Under && 描画Show)
     		{
-    			Ele.描画1(Are);
+    			Element.描画1(Are);
     			調教UI.持ち手上描画();
     		}
     	}
@@ -90,9 +90,9 @@ namespace SlaveMatrix
     	{
     		if (Show && Under && 描画Show)
     		{
-    			Ele.Body.JoinPA();
-    			Ele.色更新();
-    			Ele.描画0(Are);
+    			Element.Body.JoinPA();
+    			Element.色更新();
+    			Element.描画0(Are);
     		}
     	}
 
@@ -100,7 +100,7 @@ namespace SlaveMatrix
     	{
     		if (Show && Under && 描画Show)
     		{
-    			Ele.描画1(Are);
+    			Element.描画1(Are);
     		}
     	}
 
@@ -108,10 +108,10 @@ namespace SlaveMatrix
     	{
     		if (Show && !Under && StaShow)
     		{
-    			Ele.Body.JoinPA();
-    			Ele.色更新();
-    			Ele.描画0(Are);
-    			Ele.描画1(Are);
+    			Element.Body.JoinPA();
+    			Element.色更新();
+    			Element.描画0(Are);
+    			Element.描画1(Are);
     		}
     	}
 
@@ -120,10 +120,10 @@ namespace SlaveMatrix
     		if (Show && !Under && DraShow)
     		{
     			調教UI.持ち手下描画();
-    			Ele.Body.JoinPA();
-    			Ele.色更新();
-    			Ele.描画0(Are);
-    			Ele.描画1(Are);
+    			Element.Body.JoinPA();
+    			Element.色更新();
+    			Element.描画0(Are);
+    			Element.描画1(Are);
     			調教UI.持ち手上描画();
     		}
     	}
@@ -132,10 +132,10 @@ namespace SlaveMatrix
     	{
     		if (Show && !Under && DraShow)
     		{
-    			Ele.Body.JoinPA();
-    			Ele.色更新();
-    			Ele.描画0(Are);
-    			Ele.描画1(Are);
+    			Element.Body.JoinPA();
+    			Element.色更新();
+    			Element.描画0(Are);
+    			Element.描画1(Are);
     		}
     	}
     }

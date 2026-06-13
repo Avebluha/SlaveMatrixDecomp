@@ -13,21 +13,21 @@ namespace SlaveMatrix
     		ThisType = GetType();
     	}
 
-    	public override void 鼻水左接続(EleD e)
+    	public override void 鼻水左接続(ElementData e)
     	{
     		鼻水左_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.鼻_獣_鼻水左_接続;
     	}
 
-    	public override void 鼻水右接続(EleD e)
+    	public override void 鼻水右接続(ElementData e)
     	{
     		鼻水右_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.鼻_獣_鼻水右_接続;
     	}
 
-    	public override Ele GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
+    	public override Element GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
     	{
     		return new 鼻_獣(DisUnit, 配色指定, 体配色, Med, this);
     	}

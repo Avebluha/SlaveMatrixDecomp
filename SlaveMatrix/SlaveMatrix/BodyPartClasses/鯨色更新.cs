@@ -32,7 +32,7 @@ namespace SlaveMatrix
     		尾.色更新(鯨m);
     	}
 
-    	public bool Contains(Ele e)
+    	public bool Contains(Element e)
     	{
     		if (長物 != e)
     		{

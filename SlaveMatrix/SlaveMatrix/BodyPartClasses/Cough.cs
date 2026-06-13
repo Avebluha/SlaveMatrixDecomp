@@ -2,7 +2,7 @@ using _2DGAMELIB;
 
 namespace SlaveMatrix
 {
-    public class Cough : Ele
+    public class Cough : Element
     {
     	public ShapePart X0Y0_咳基;
 

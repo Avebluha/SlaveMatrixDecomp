@@ -1680,19 +1680,19 @@ namespace SlaveMatrix
 
     	public 拘束鎖 鎖5;
 
-    	public Ele[] Head_接続;
+    	public Element[] Head_接続;
 
-    	public Ele[] UpperArm左_接続;
+    	public Element[] UpperArm左_接続;
 
-    	public Ele[] UpperArm右_接続;
+    	public Element[] UpperArm右_接続;
 
-    	public Ele[] LowerArm左_接続;
+    	public Element[] LowerArm左_接続;
 
-    	public Ele[] LowerArm右_接続;
+    	public Element[] LowerArm右_接続;
 
-    	public Ele[] 手左_接続;
+    	public Element[] 手左_接続;
 
-    	public Ele[] 手右_接続;
+    	public Element[] 手右_接続;
 
     	public override bool 欠損
     	{
@@ -6745,10 +6745,10 @@ namespace SlaveMatrix
     		{
     			表示 = false;
     		}
-    		Ele f;
+    		Element f;
     		if (e.Head_接続.Count > 0)
     		{
-    			Head_接続 = e.Head_接続.Select(delegate(EleD g)
+    			Head_接続 = e.Head_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 触手_犬2;
@@ -6759,7 +6759,7 @@ namespace SlaveMatrix
     		}
     		if (e.UpperArm左_接続.Count > 0)
     		{
-    			UpperArm左_接続 = e.UpperArm左_接続.Select(delegate(EleD g)
+    			UpperArm左_接続 = e.UpperArm左_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 触手_犬2;
@@ -6770,7 +6770,7 @@ namespace SlaveMatrix
     		}
     		if (e.UpperArm右_接続.Count > 0)
     		{
-    			UpperArm右_接続 = e.UpperArm右_接続.Select(delegate(EleD g)
+    			UpperArm右_接続 = e.UpperArm右_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 触手_犬2;
@@ -6781,7 +6781,7 @@ namespace SlaveMatrix
     		}
     		if (e.LowerArm左_接続.Count > 0)
     		{
-    			LowerArm左_接続 = e.LowerArm左_接続.Select(delegate(EleD g)
+    			LowerArm左_接続 = e.LowerArm左_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 触手_犬2;
@@ -6792,7 +6792,7 @@ namespace SlaveMatrix
     		}
     		if (e.LowerArm右_接続.Count > 0)
     		{
-    			LowerArm右_接続 = e.LowerArm右_接続.Select(delegate(EleD g)
+    			LowerArm右_接続 = e.LowerArm右_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 触手_犬2;
@@ -6803,7 +6803,7 @@ namespace SlaveMatrix
     		}
     		if (e.手左_接続.Count > 0)
     		{
-    			手左_接続 = e.手左_接続.Select(delegate(EleD g)
+    			手左_接続 = e.手左_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 触手_犬2;
@@ -6814,7 +6814,7 @@ namespace SlaveMatrix
     		}
     		if (e.手右_接続.Count > 0)
     		{
-    			手右_接続 = e.手右_接続.Select(delegate(EleD g)
+    			手右_接続 = e.手右_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 触手_犬2;

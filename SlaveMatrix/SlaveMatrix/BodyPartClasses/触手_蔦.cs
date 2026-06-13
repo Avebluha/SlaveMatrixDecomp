@@ -866,55 +866,55 @@ namespace SlaveMatrix
 
     	public 拘束鎖 鎖4;
 
-    	public Ele[] 節1_接続;
+    	public Element[] 節1_接続;
 
-    	public Ele[] 節2_接続;
+    	public Element[] 節2_接続;
 
-    	public Ele[] 節3_接続;
+    	public Element[] 節3_接続;
 
-    	public Ele[] 節4_接続;
+    	public Element[] 節4_接続;
 
-    	public Ele[] 節5_接続;
+    	public Element[] 節5_接続;
 
-    	public Ele[] 節6_接続;
+    	public Element[] 節6_接続;
 
-    	public Ele[] 節7_接続;
+    	public Element[] 節7_接続;
 
-    	public Ele[] 節8_接続;
+    	public Element[] 節8_接続;
 
-    	public Ele[] 節9_接続;
+    	public Element[] 節9_接続;
 
-    	public Ele[] 節10_接続;
+    	public Element[] 節10_接続;
 
-    	public Ele[] 節11_接続;
+    	public Element[] 節11_接続;
 
-    	public Ele[] 節12_接続;
+    	public Element[] 節12_接続;
 
-    	public Ele[] 節13_接続;
+    	public Element[] 節13_接続;
 
-    	public Ele[] 節14_接続;
+    	public Element[] 節14_接続;
 
-    	public Ele[] 節15_接続;
+    	public Element[] 節15_接続;
 
-    	public Ele[] 節16_接続;
+    	public Element[] 節16_接続;
 
-    	public Ele[] 節17_接続;
+    	public Element[] 節17_接続;
 
-    	public Ele[] 節18_接続;
+    	public Element[] 節18_接続;
 
-    	public Ele[] 節19_接続;
+    	public Element[] 節19_接続;
 
-    	public Ele[] 節20_接続;
+    	public Element[] 節20_接続;
 
-    	public Ele[] 節21_接続;
+    	public Element[] 節21_接続;
 
-    	public Ele[] 節22_接続;
+    	public Element[] 節22_接続;
 
-    	public Ele[] 節23_接続;
+    	public Element[] 節23_接続;
 
-    	public Ele[] 節24_接続;
+    	public Element[] 節24_接続;
 
-    	public Ele[] 先端_接続;
+    	public Element[] 先端_接続;
 
     	public ShapePart[] Pars;
 
@@ -3640,10 +3640,10 @@ namespace SlaveMatrix
     		{
     			表示 = false;
     		}
-    		Ele f;
+    		Element f;
     		if (e.節1_接続.Count > 0)
     		{
-    			節1_接続 = e.節1_接続.Select(delegate(EleD g)
+    			節1_接続 = e.節1_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 触手_蔦2;
@@ -3654,7 +3654,7 @@ namespace SlaveMatrix
     		}
     		if (e.節2_接続.Count > 0)
     		{
-    			節2_接続 = e.節2_接続.Select(delegate(EleD g)
+    			節2_接続 = e.節2_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 触手_蔦2;
@@ -3665,7 +3665,7 @@ namespace SlaveMatrix
     		}
     		if (e.節3_接続.Count > 0)
     		{
-    			節3_接続 = e.節3_接続.Select(delegate(EleD g)
+    			節3_接続 = e.節3_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 触手_蔦2;
@@ -3676,7 +3676,7 @@ namespace SlaveMatrix
     		}
     		if (e.節4_接続.Count > 0)
     		{
-    			節4_接続 = e.節4_接続.Select(delegate(EleD g)
+    			節4_接続 = e.節4_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 触手_蔦2;
@@ -3687,7 +3687,7 @@ namespace SlaveMatrix
     		}
     		if (e.節5_接続.Count > 0)
     		{
-    			節5_接続 = e.節5_接続.Select(delegate(EleD g)
+    			節5_接続 = e.節5_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 触手_蔦2;
@@ -3698,7 +3698,7 @@ namespace SlaveMatrix
     		}
     		if (e.節6_接続.Count > 0)
     		{
-    			節6_接続 = e.節6_接続.Select(delegate(EleD g)
+    			節6_接続 = e.節6_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 触手_蔦2;
@@ -3709,7 +3709,7 @@ namespace SlaveMatrix
     		}
     		if (e.節7_接続.Count > 0)
     		{
-    			節7_接続 = e.節7_接続.Select(delegate(EleD g)
+    			節7_接続 = e.節7_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 触手_蔦2;
@@ -3720,7 +3720,7 @@ namespace SlaveMatrix
     		}
     		if (e.節8_接続.Count > 0)
     		{
-    			節8_接続 = e.節8_接続.Select(delegate(EleD g)
+    			節8_接続 = e.節8_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 触手_蔦2;
@@ -3731,7 +3731,7 @@ namespace SlaveMatrix
     		}
     		if (e.節9_接続.Count > 0)
     		{
-    			節9_接続 = e.節9_接続.Select(delegate(EleD g)
+    			節9_接続 = e.節9_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 触手_蔦2;
@@ -3742,7 +3742,7 @@ namespace SlaveMatrix
     		}
     		if (e.節10_接続.Count > 0)
     		{
-    			節10_接続 = e.節10_接続.Select(delegate(EleD g)
+    			節10_接続 = e.節10_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 触手_蔦2;
@@ -3753,7 +3753,7 @@ namespace SlaveMatrix
     		}
     		if (e.節11_接続.Count > 0)
     		{
-    			節11_接続 = e.節11_接続.Select(delegate(EleD g)
+    			節11_接続 = e.節11_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 触手_蔦2;
@@ -3764,7 +3764,7 @@ namespace SlaveMatrix
     		}
     		if (e.節12_接続.Count > 0)
     		{
-    			節12_接続 = e.節12_接続.Select(delegate(EleD g)
+    			節12_接続 = e.節12_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 触手_蔦2;
@@ -3775,7 +3775,7 @@ namespace SlaveMatrix
     		}
     		if (e.節13_接続.Count > 0)
     		{
-    			節13_接続 = e.節13_接続.Select(delegate(EleD g)
+    			節13_接続 = e.節13_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 触手_蔦2;
@@ -3786,7 +3786,7 @@ namespace SlaveMatrix
     		}
     		if (e.節14_接続.Count > 0)
     		{
-    			節14_接続 = e.節14_接続.Select(delegate(EleD g)
+    			節14_接続 = e.節14_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 触手_蔦2;
@@ -3797,7 +3797,7 @@ namespace SlaveMatrix
     		}
     		if (e.節15_接続.Count > 0)
     		{
-    			節15_接続 = e.節15_接続.Select(delegate(EleD g)
+    			節15_接続 = e.節15_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 触手_蔦2;
@@ -3808,7 +3808,7 @@ namespace SlaveMatrix
     		}
     		if (e.節16_接続.Count > 0)
     		{
-    			節16_接続 = e.節16_接続.Select(delegate(EleD g)
+    			節16_接続 = e.節16_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 触手_蔦2;
@@ -3819,7 +3819,7 @@ namespace SlaveMatrix
     		}
     		if (e.節17_接続.Count > 0)
     		{
-    			節17_接続 = e.節17_接続.Select(delegate(EleD g)
+    			節17_接続 = e.節17_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 触手_蔦2;
@@ -3830,7 +3830,7 @@ namespace SlaveMatrix
     		}
     		if (e.節18_接続.Count > 0)
     		{
-    			節18_接続 = e.節18_接続.Select(delegate(EleD g)
+    			節18_接続 = e.節18_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 触手_蔦2;
@@ -3841,7 +3841,7 @@ namespace SlaveMatrix
     		}
     		if (e.節19_接続.Count > 0)
     		{
-    			節19_接続 = e.節19_接続.Select(delegate(EleD g)
+    			節19_接続 = e.節19_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 触手_蔦2;
@@ -3852,7 +3852,7 @@ namespace SlaveMatrix
     		}
     		if (e.節20_接続.Count > 0)
     		{
-    			節20_接続 = e.節20_接続.Select(delegate(EleD g)
+    			節20_接続 = e.節20_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 触手_蔦2;
@@ -3863,7 +3863,7 @@ namespace SlaveMatrix
     		}
     		if (e.節21_接続.Count > 0)
     		{
-    			節21_接続 = e.節21_接続.Select(delegate(EleD g)
+    			節21_接続 = e.節21_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 触手_蔦2;
@@ -3874,7 +3874,7 @@ namespace SlaveMatrix
     		}
     		if (e.節22_接続.Count > 0)
     		{
-    			節22_接続 = e.節22_接続.Select(delegate(EleD g)
+    			節22_接続 = e.節22_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 触手_蔦2;
@@ -3885,7 +3885,7 @@ namespace SlaveMatrix
     		}
     		if (e.節23_接続.Count > 0)
     		{
-    			節23_接続 = e.節23_接続.Select(delegate(EleD g)
+    			節23_接続 = e.節23_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 触手_蔦2;
@@ -3896,7 +3896,7 @@ namespace SlaveMatrix
     		}
     		if (e.節24_接続.Count > 0)
     		{
-    			節24_接続 = e.節24_接続.Select(delegate(EleD g)
+    			節24_接続 = e.節24_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 触手_蔦2;
@@ -3907,7 +3907,7 @@ namespace SlaveMatrix
     		}
     		if (e.先端_接続.Count > 0)
     		{
-    			先端_接続 = e.先端_接続.Select(delegate(EleD g)
+    			先端_接続 = e.先端_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 触手_蔦2;

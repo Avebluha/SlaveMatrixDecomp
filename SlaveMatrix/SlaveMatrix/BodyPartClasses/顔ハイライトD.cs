@@ -4,7 +4,7 @@ using _2DGAMELIB;
 namespace SlaveMatrix
 {
     [Serializable]
-    public class 顔ハイライトD : EleD
+    public class 顔ハイライトD : ElementData
     {
     	public bool ハイライト1_表示;
 
@@ -15,7 +15,7 @@ namespace SlaveMatrix
     		ThisType = GetType();
     	}
 
-    	public override Ele GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
+    	public override Element GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
     	{
     		return new 顔ハイライト(DisUnit, 配色指定, 体配色, Med, this);
     	}

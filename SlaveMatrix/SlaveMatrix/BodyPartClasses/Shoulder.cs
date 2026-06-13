@@ -3,7 +3,7 @@ using _2DGAMELIB;
 
 namespace SlaveMatrix
 {
-    public class Shoulder : Ele
+    public class Shoulder : Element
     {
     	public ShapePart X0Y0_脇_脇;
 
@@ -75,7 +75,7 @@ namespace SlaveMatrix
 
     	public スタンプW 鞭痕;
 
-    	public Ele[] UpperArm_接続;
+    	public Element[] UpperArm_接続;
 
     	public override bool 欠損
     	{
@@ -371,8 +371,8 @@ namespace SlaveMatrix
     		}
     		if (e.UpperArm_接続.Count > 0)
     		{
-    			Ele f;
-    			UpperArm_接続 = e.UpperArm_接続.Select(delegate(EleD g)
+    			Element f;
+    			UpperArm_接続 = e.UpperArm_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = Shoulder2;

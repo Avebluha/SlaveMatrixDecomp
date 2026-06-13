@@ -945,10 +945,10 @@ namespace SlaveMatrix
     		{
     			表示 = false;
     		}
-    		Ele f;
+    		Element f;
     		if (e.触覚左_接続.Count > 0)
     		{
-    			触覚左_接続 = e.触覚左_接続.Select(delegate(EleD g)
+    			触覚左_接続 = e.触覚左_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 顔面_蟲2;
@@ -959,7 +959,7 @@ namespace SlaveMatrix
     		}
     		if (e.触覚右_接続.Count > 0)
     		{
-    			触覚右_接続 = e.触覚右_接続.Select(delegate(EleD g)
+    			触覚右_接続 = e.触覚右_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 顔面_蟲2;

@@ -132,10 +132,10 @@ namespace SlaveMatrix
     		{
     			表示 = false;
     		}
-    		Ele f;
+    		Element f;
     		if (e.鼻水左_接続.Count > 0)
     		{
-    			鼻水左_接続 = e.鼻水左_接続.Select(delegate(EleD g)
+    			鼻水左_接続 = e.鼻水左_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 鼻_獣2;
@@ -146,7 +146,7 @@ namespace SlaveMatrix
     		}
     		if (e.鼻水右_接続.Count > 0)
     		{
-    			鼻水右_接続 = e.鼻水右_接続.Select(delegate(EleD g)
+    			鼻水右_接続 = e.鼻水右_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 鼻_獣2;

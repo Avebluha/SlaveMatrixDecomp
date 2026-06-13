@@ -3,7 +3,7 @@ using _2DGAMELIB;
 
 namespace SlaveMatrix
 {
-    public class Neck : Ele
+    public class Neck : Element
     {
     	public ShapePart X0Y0_植性_蔦;
 
@@ -307,7 +307,7 @@ namespace SlaveMatrix
 
     	public スタンプW 鞭痕;
 
-    	public Ele[] Head_接続;
+    	public Element[] Head_接続;
 
     	public override bool 欠損
     	{
@@ -1325,8 +1325,8 @@ namespace SlaveMatrix
     		}
     		if (e.Head_接続.Count > 0)
     		{
-    			Ele f;
-    			Head_接続 = e.Head_接続.Select(delegate(EleD g)
+    			Element f;
+    			Head_接続 = e.Head_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = Neck2;

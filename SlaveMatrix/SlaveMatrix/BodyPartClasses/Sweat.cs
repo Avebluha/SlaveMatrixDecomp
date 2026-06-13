@@ -26,7 +26,7 @@ namespace SlaveMatrix
 
     	private ryps[] 対象;
 
-    	private List<Ele> 全体 = new List<Ele>();
+    	private List<Element> 全体 = new List<Element>();
 
     	private List<double> 位置 = new List<double>();
 
@@ -38,7 +38,7 @@ namespace SlaveMatrix
 
     	private int i;
 
-    	private Ele 汗;
+    	private Element 汗;
 
     	private Vector2D tp;
 
@@ -72,8 +72,8 @@ namespace SlaveMatrix
 
     	public Sweat(ModeEventDispatcher Med, RenderArea Are, Character Cha, Motions Mots)
     	{
-    		Ele[] es = null;
-    		Ele n = null;
+    		Element[] es = null;
+    		Element n = null;
     		bool re = false;
     		汗かき = new Motion(0.0, 1.0)
     		{
@@ -82,8 +82,8 @@ namespace SlaveMatrix
     			{
     				if (汗だし)
     				{
-    					es = 全体.Where((Ele e) => e.Intensity != 0.0).ToArray();
-    					Ele[] array5 = es;
+    					es = 全体.Where((Element e) => e.Intensity != 0.0).ToArray();
+    					Element[] array5 = es;
     					for (int num3 = 0; num3 < array5.Length; num3++)
     					{
     						array5[num3].Intensity = 0.0;
@@ -94,7 +94,7 @@ namespace SlaveMatrix
     			{
     				if (汗だし)
     				{
-    					Ele[] array4 = es;
+    					Element[] array4 = es;
     					for (int num2 = 0; num2 < array4.Length; num2++)
     					{
     						array4[num2].Intensity = m.Value;
@@ -113,14 +113,14 @@ namespace SlaveMatrix
     			{
     				if (汗だし)
     				{
-    					Ele[] array3 = es;
+    					Element[] array3 = es;
     					for (int l = 0; l < array3.Length; l++)
     					{
     						array3[l].Intensity = 1.0;
     					}
     					m.ResetValue();
     					汗だし = false;
-    					es = 全体.Where((Ele e) => e.Intensity != 0.0).ToArray();
+    					es = 全体.Where((Element e) => e.Intensity != 0.0).ToArray();
     					n = es[RNG.XS.Next(es.Length)];
     				}
     				else
@@ -134,12 +134,12 @@ namespace SlaveMatrix
     				{
     					n.Yv = 0.0;
     					n.Intensity = 0.0;
-    					es = 全体.Where((Ele e) => e.Intensity != 0.0).ToArray();
+    					es = 全体.Where((Element e) => e.Intensity != 0.0).ToArray();
     					if (es.Length != 0)
     					{
     						n = es[RNG.XS.Next(es.Length)];
     					}
-    					es = 全体.Where((Ele e) => e.Intensity == 0.0).ToArray();
+    					es = 全体.Where((Element e) => e.Intensity == 0.0).ToArray();
     					if (es.Length != 0)
     					{
     						es[RNG.XS.Next(es.Length)].Intensity = 1.0;
@@ -154,9 +154,9 @@ namespace SlaveMatrix
     				{
     					n.Yv = 0.0;
     					n.Intensity = 0.0;
-    					es = 全体.Where((Ele e) => e.Intensity != 0.0).ToArray();
+    					es = 全体.Where((Element e) => e.Intensity != 0.0).ToArray();
     					n = es[RNG.XS.Next(es.Length)];
-    					es = 全体.Where((Ele e) => e.Intensity == 0.0).ToArray();
+    					es = 全体.Where((Element e) => e.Intensity == 0.0).ToArray();
     					es[RNG.XS.Next(es.Length)].Intensity = 1.0;
     					re = false;
     					m.ResetValue();
@@ -170,11 +170,11 @@ namespace SlaveMatrix
     			BaseSpeed = 1.0,
     			OnStart = delegate
     			{
-    				es = 全体.Where((Ele e) => e.Intensity != 0.0).ToArray();
+    				es = 全体.Where((Element e) => e.Intensity != 0.0).ToArray();
     			},
     			OnUpdate = delegate(Motion m)
     			{
-    				Ele[] array2 = es;
+    				Element[] array2 = es;
     				for (int k = 0; k < array2.Length; k++)
     				{
     					array2[k].Intensity = m.Value.Inverse();
@@ -184,7 +184,7 @@ namespace SlaveMatrix
     			{
     				m.End();
     				m.ResetValue();
-    				Ele[] array = es;
+    				Element[] array = es;
     				for (int j = 0; j < array.Length; j++)
     				{
     					array[j].Intensity = 1.0;
@@ -203,7 +203,7 @@ namespace SlaveMatrix
     		int num = 0;
     		汗D e2 = new 汗D();
     		ryps ryps;
-    		foreach (Ele item in Cha.Body.Elements.Where((Ele e) => 汗対象.Contains(e.GetType().ToString())))
+    		foreach (Element item in Cha.Body.Elements.Where((Element e) => 汗対象.Contains(e.GetType().ToString())))
     		{
     			ryps = default(ryps);
     			ryps.r = item.Body.CurJoinRoot;
@@ -234,7 +234,7 @@ namespace SlaveMatrix
 
     	public void Dispose()
     	{
-    		foreach (Ele item in 全体)
+    		foreach (Element item in 全体)
     		{
     			item.Dispose();
     		}

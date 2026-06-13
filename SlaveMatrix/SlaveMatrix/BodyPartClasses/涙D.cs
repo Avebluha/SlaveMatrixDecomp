@@ -4,7 +4,7 @@ using _2DGAMELIB;
 namespace SlaveMatrix
 {
     [Serializable]
-    public class 涙D : EleD
+    public class 涙D : ElementData
     {
     	public bool 涙0流れ0_表示;
 
@@ -21,7 +21,7 @@ namespace SlaveMatrix
     		ThisType = GetType();
     	}
 
-    	public override Ele GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
+    	public override Element GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
     	{
     		return new 涙(DisUnit, 配色指定, 体配色, Med, this);
     	}

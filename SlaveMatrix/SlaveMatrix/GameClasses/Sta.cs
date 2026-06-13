@@ -558,39 +558,39 @@ namespace SlaveMatrix
     		return MaxAngle * RNG.XS.NextDouble() * (double)(RNG.XS.NextBool() ? 1 : (-1));
     	}
 
-    	public static T GetEleD<T>(this IEnumerable<EleD> src) where T : EleD
+    	public static T GetEleD<T>(this IEnumerable<ElementData> src) where T : ElementData
     	{
     		if (src == null)
     		{
     			return null;
     		}
-    		return (T)src.FirstOrDefault((EleD e) => e is T);
+    		return (T)src.FirstOrDefault((ElementData e) => e is T);
     	}
 
-    	public static T GetEleD<T>(this IEnumerable<EleD> src, bool 右) where T : EleD
+    	public static T GetEleD<T>(this IEnumerable<ElementData> src, bool 右) where T : ElementData
     	{
     		if (src == null)
     		{
     			return null;
     		}
-    		return (T)src.FirstOrDefault((EleD e) => e is T && e.右 == 右);
+    		return (T)src.FirstOrDefault((ElementData e) => e is T && e.右 == 右);
     	}
 
-    	public static T GetEleD<T>(this IEnumerable<EleD> src, Func<T, bool> con) where T : EleD
+    	public static T GetEleD<T>(this IEnumerable<ElementData> src, Func<T, bool> con) where T : ElementData
     	{
     		if (src == null)
     		{
     			return null;
     		}
-    		return (T)src.FirstOrDefault((EleD e) => e is T && con((T)e));
+    		return (T)src.FirstOrDefault((ElementData e) => e is T && con((T)e));
     	}
 
-    	public static IEnumerable<T> GetEleDs<T>(this IEnumerable<EleD> src) where T : EleD
+    	public static IEnumerable<T> GetEleDs<T>(this IEnumerable<ElementData> src) where T : ElementData
     	{
-    		return src?.Where((EleD e) => e is T).Cast<T>();
+    		return src?.Where((ElementData e) => e is T).Cast<T>();
     	}
 
-    	public static void SetEleD<T>(this IEnumerable<EleD> src, Action<T> a) where T : EleD
+    	public static void SetEleD<T>(this IEnumerable<ElementData> src, Action<T> a) where T : ElementData
     	{
     		T eleD = src.GetEleD<T>();
     		if (eleD != null)
@@ -599,7 +599,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public static void SetEleDs<T>(this IEnumerable<EleD> src, Action<T> a) where T : EleD
+    	public static void SetEleDs<T>(this IEnumerable<ElementData> src, Action<T> a) where T : ElementData
     	{
     		if (src == null)
     		{
@@ -611,12 +611,12 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public static bool IsEleD<T>(this IEnumerable<EleD> src) where T : EleD
+    	public static bool IsEleD<T>(this IEnumerable<ElementData> src) where T : ElementData
     	{
     		return src.GetEleD<T>() != null;
     	}
 
-    	public static void SetValuesD(this EleD e, string s, object value)
+    	public static void SetValuesD(this ElementData e, string s, object value)
     	{
     		if (e == null)
     		{
@@ -633,14 +633,14 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public static void SetValuesD(this IEnumerable<EleD> src, string s, object value)
+    	public static void SetValuesD(this IEnumerable<ElementData> src, string s, object value)
     	{
     		if (src == null)
     		{
     			return;
     		}
     		string text = value.GetType().ToString();
-    		foreach (EleD item in src)
+    		foreach (ElementData item in src)
     		{
     			FieldInfo[] fields = item.GetType().GetFields();
     			foreach (FieldInfo fieldInfo in fields)
@@ -653,7 +653,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public static void SetValuesD<T>(this IEnumerable<EleD> src, string s, object value) where T : EleD
+    	public static void SetValuesD<T>(this IEnumerable<ElementData> src, string s, object value) where T : ElementData
     	{
     		if (src == null)
     		{
@@ -673,30 +673,30 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public static T GetEle<T>(this IEnumerable<Ele> src) where T : Ele
+    	public static T GetEle<T>(this IEnumerable<Element> src) where T : Element
     	{
     		if (src == null)
     		{
     			return null;
     		}
-    		return (T)src.FirstOrDefault((Ele e) => e is T);
+    		return (T)src.FirstOrDefault((Element e) => e is T);
     	}
 
-    	public static T GetEle<T>(this IEnumerable<Ele> src, bool 右) where T : Ele
+    	public static T GetEle<T>(this IEnumerable<Element> src, bool 右) where T : Element
     	{
     		if (src == null)
     		{
     			return null;
     		}
-    		return (T)src.FirstOrDefault((Ele e) => e is T && e.右 == 右);
+    		return (T)src.FirstOrDefault((Element e) => e is T && e.右 == 右);
     	}
 
-    	public static IEnumerable<T> GetEles<T>(this IEnumerable<Ele> src) where T : Ele
+    	public static IEnumerable<T> GetEles<T>(this IEnumerable<Element> src) where T : Element
     	{
-    		return src?.Where((Ele e) => e is T).Cast<T>();
+    		return src?.Where((Element e) => e is T).Cast<T>();
     	}
 
-    	public static void SetEle<T>(this IEnumerable<Ele> src, Action<T> a) where T : Ele
+    	public static void SetEle<T>(this IEnumerable<Element> src, Action<T> a) where T : Element
     	{
     		T ele = src.GetEle<T>();
     		if (ele != null)
@@ -705,7 +705,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public static void SetEles<T>(this IEnumerable<Ele> src, Action<T> a) where T : Ele
+    	public static void SetEles<T>(this IEnumerable<Element> src, Action<T> a) where T : Element
     	{
     		if (src == null)
     		{
@@ -717,12 +717,12 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public static bool IsEle<T>(this IEnumerable<Ele> src) where T : Ele
+    	public static bool IsEle<T>(this IEnumerable<Element> src) where T : Element
     	{
     		return src.GetEle<T>() != null;
     	}
 
-    	public static void SetValues(this Ele e, string s, object value)
+    	public static void SetValues(this Element e, string s, object value)
     	{
     		if (e == null)
     		{
@@ -739,14 +739,14 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public static void SetValues(this IEnumerable<Ele> src, string s, object value)
+    	public static void SetValues(this IEnumerable<Element> src, string s, object value)
     	{
     		if (src == null)
     		{
     			return;
     		}
     		string text = value.GetType().ToString();
-    		foreach (Ele item in src)
+    		foreach (Element item in src)
     		{
     			PropertyInfo[] properties = item.GetType().GetProperties();
     			foreach (PropertyInfo propertyInfo in properties)
@@ -759,17 +759,17 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public static void 描画0(this IEnumerable<Ele> es, RenderArea Are)
+    	public static void 描画0(this IEnumerable<Element> es, RenderArea Are)
     	{
-    		foreach (Ele e in es)
+    		foreach (Element e in es)
     		{
     			e.描画0(Are);
     		}
     	}
 
-    	public static void 描画1(this IEnumerable<Ele> es, RenderArea Are)
+    	public static void 描画1(this IEnumerable<Element> es, RenderArea Are)
     	{
-    		foreach (Ele e in es)
+    		foreach (Element e in es)
     		{
     			e.描画1(Are);
     		}
@@ -786,9 +786,9 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public static void 配色T(this Ele ele, int i, string s, ref Color2 c1, ref Color2 c2)
+    	public static void 配色T(this Element Element, int i, string s, ref Color2 c1, ref Color2 c2)
     	{
-    		Type type = ele.GetType();
+    		Type type = Element.GetType();
     		string ft = typeof(ColorD).ToString();
     		int num = 0;
     		foreach (FieldInfo item in from e in type.GetFields()
@@ -797,11 +797,11 @@ namespace SlaveMatrix
     		{
     			if (num % 2 == i)
     			{
-    				item.SetValue(ele, new ColorD(ref Col.Black, ref c1));
+    				item.SetValue(Element, new ColorD(ref Col.Black, ref c1));
     			}
     			else
     			{
-    				item.SetValue(ele, new ColorD(ref Col.Black, ref c2));
+    				item.SetValue(Element, new ColorD(ref Col.Black, ref c2));
     			}
     			num++;
     		}
@@ -826,7 +826,7 @@ namespace SlaveMatrix
     		return Color.FromArgb((int)(255.0 * num4), (int)(((double)(int)Cs.R * num2 + (double)(int)Cd.R * num3 * num) / num4), (int)(((double)(int)Cs.G * num2 + (double)(int)Cd.G * num3 * num) / num4), (int)(((double)(int)Cs.B * num2 + (double)(int)Cd.B * num3 * num) / num4));
     	}
 
-    	public static void SetHitFalse(this Ele e)
+    	public static void SetHitFalse(this Element e)
     	{
     		foreach (ShapePart item in e.Body.EnumAllPar())
     		{
@@ -834,7 +834,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public static void SetHitTrue(this Ele e)
+    	public static void SetHitTrue(this Element e)
     	{
     		foreach (ShapePart item in e.Body.EnumAllPar())
     		{
@@ -1165,8 +1165,8 @@ namespace SlaveMatrix
             //タイル = Serializer.UnJson<BodyTemplate>("C:\\Users\\dave\\Documents\\タイル.json");
 
             MaxAre = 0.0584246154149664;
-    		Elet = typeof(Ele);
-    		EleDt = typeof(EleD);
+    		Elet = typeof(Element);
+    		EleDt = typeof(ElementData);
     		ChestType = typeof(Chest);
     		ShoulderType = typeof(Shoulder);
     		TorsoType = typeof(Torso);
@@ -1311,8 +1311,8 @@ namespace SlaveMatrix
     		獣耳Dt = typeof(獣耳D);
     		植Dt = typeof(植D);
     		拘束鎖t = typeof(拘束鎖).ToString();
-    		lt = typeof(List<EleD>).ToString();
-    		at = typeof(Ele[]).ToString();
+    		lt = typeof(List<ElementData>).ToString();
+    		at = typeof(Element[]).ToString();
     		cdt = typeof(ColorD).ToString();
     		cpt = typeof(ColorP).ToString();
     		Bodt = typeof(Body);

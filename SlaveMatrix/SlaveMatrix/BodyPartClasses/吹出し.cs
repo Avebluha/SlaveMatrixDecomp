@@ -2,7 +2,7 @@ using _2DGAMELIB;
 
 namespace SlaveMatrix
 {
-    public class 吹出し : Ele
+    public class 吹出し : Element
     {
     	public ShapePart X0Y0_吹出し;
 
@@ -10,7 +10,7 @@ namespace SlaveMatrix
 
     	public ColorP X0Y0_吹出しCP;
 
-    	public Ele[] 吹出し_接続;
+    	public Element[] 吹出し_接続;
 
     	public override bool 欠損
     	{

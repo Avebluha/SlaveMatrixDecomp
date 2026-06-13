@@ -5,7 +5,7 @@ using _2DGAMELIB;
 namespace SlaveMatrix
 {
     [Serializable]
-    public class 植D : EleD
+    public class 植D : ElementData
     {
     	public bool 披針葉4_通常_葉_表示 = true;
 
@@ -109,21 +109,21 @@ namespace SlaveMatrix
 
     	public bool 心臓葉3_葉脈_表示 = true;
 
-    	public List<EleD> 花_接続 = new List<EleD>();
+    	public List<ElementData> 花_接続 = new List<ElementData>();
 
     	public 植D()
     	{
     		ThisType = GetType();
     	}
 
-    	public void 花接続(EleD e)
+    	public void 花接続(ElementData e)
     	{
     		花_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.植_花_接続;
     	}
 
-    	public override Ele GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
+    	public override Element GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
     	{
     		return new 植(DisUnit, 配色指定, 体配色, Med, this);
     	}

@@ -11,7 +11,7 @@ namespace SlaveMatrix
 
     	public ColorP X0Y0_髪CP;
 
-    	public Ele[] 肢_接続;
+    	public Element[] 肢_接続;
 
     	public override bool 欠損
     	{
@@ -134,8 +134,8 @@ namespace SlaveMatrix
     		}
     		if (e.肢_接続.Count > 0)
     		{
-    			Ele f;
-    			肢_接続 = e.肢_接続.Select(delegate(EleD g)
+    			Element f;
+    			肢_接続 = e.肢_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 横髪_肢系2;

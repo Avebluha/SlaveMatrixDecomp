@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace SlaveMatrix
 {
-    public class Head : Ele
+    public class Head : Element
     {
     	public ShapePart X0Y0_Head;
 
@@ -245,49 +245,49 @@ namespace SlaveMatrix
 
     	public ColorP X0Y0_虫性_顎下CP;
 
-    	public Ele[] 基髪_接続;
+    	public Element[] 基髪_接続;
 
-    	public Ele[] 目左_接続;
+    	public Element[] 目左_接続;
 
-    	public Ele[] 目右_接続;
+    	public Element[] 目右_接続;
 
-    	public Ele[] 鼻_接続;
+    	public Element[] 鼻_接続;
 
-    	public Ele[] 口_接続;
+    	public Element[] 口_接続;
 
-    	public Ele[] 頬左_接続;
+    	public Element[] 頬左_接続;
 
-    	public Ele[] 頬右_接続;
+    	public Element[] 頬右_接続;
 
-    	public Ele[] 額_接続;
+    	public Element[] 額_接続;
 
-    	public Ele[] 眉左_接続;
+    	public Element[] 眉左_接続;
 
-    	public Ele[] 眉右_接続;
+    	public Element[] 眉右_接続;
 
-    	public Ele[] 耳左_接続;
+    	public Element[] 耳左_接続;
 
-    	public Ele[] 耳右_接続;
+    	public Element[] 耳右_接続;
 
-    	public Ele[] 鼻肌_接続;
+    	public Element[] 鼻肌_接続;
 
-    	public Ele[] 単眼目_接続;
+    	public Element[] 単眼目_接続;
 
-    	public Ele[] 単眼眉_接続;
+    	public Element[] 単眼眉_接続;
 
-    	public Ele[] 大顎基_接続;
+    	public Element[] 大顎基_接続;
 
-    	public Ele[] 顔面_接続;
+    	public Element[] 顔面_接続;
 
-    	public Ele[] 頭頂_接続;
+    	public Element[] 頭頂_接続;
 
-    	public Ele[] 頬肌左_接続;
+    	public Element[] 頬肌左_接続;
 
-    	public Ele[] 頬肌右_接続;
+    	public Element[] 頬肌右_接続;
 
-    	public Ele[] 触覚左_接続;
+    	public Element[] 触覚左_接続;
 
-    	public Ele[] 触覚右_接続;
+    	public Element[] 触覚右_接続;
 
     	public override bool 欠損
     	{
@@ -1170,10 +1170,10 @@ namespace SlaveMatrix
     		{
     			表示 = false;
     		}
-    		Ele f;
+    		Element f;
     		if (e.基髪_接続.Count > 0)
     		{
-    			基髪_接続 = e.基髪_接続.Select(delegate(EleD g)
+    			基髪_接続 = e.基髪_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 頭2;
@@ -1184,7 +1184,7 @@ namespace SlaveMatrix
     		}
     		if (e.目左_接続.Count > 0)
     		{
-    			目左_接続 = e.目左_接続.Select(delegate(EleD g)
+    			目左_接続 = e.目左_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 頭2;
@@ -1195,7 +1195,7 @@ namespace SlaveMatrix
     		}
     		if (e.目右_接続.Count > 0)
     		{
-    			目右_接続 = e.目右_接続.Select(delegate(EleD g)
+    			目右_接続 = e.目右_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 頭2;
@@ -1206,7 +1206,7 @@ namespace SlaveMatrix
     		}
     		if (e.鼻_接続.Count > 0)
     		{
-    			鼻_接続 = e.鼻_接続.Select(delegate(EleD g)
+    			鼻_接続 = e.鼻_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 頭2;
@@ -1217,7 +1217,7 @@ namespace SlaveMatrix
     		}
     		if (e.口_接続.Count > 0)
     		{
-    			口_接続 = e.口_接続.Select(delegate(EleD g)
+    			口_接続 = e.口_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 頭2;
@@ -1228,7 +1228,7 @@ namespace SlaveMatrix
     		}
     		if (e.頬左_接続.Count > 0)
     		{
-    			頬左_接続 = e.頬左_接続.Select(delegate(EleD g)
+    			頬左_接続 = e.頬左_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 頭2;
@@ -1239,7 +1239,7 @@ namespace SlaveMatrix
     		}
     		if (e.頬右_接続.Count > 0)
     		{
-    			頬右_接続 = e.頬右_接続.Select(delegate(EleD g)
+    			頬右_接続 = e.頬右_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 頭2;
@@ -1250,7 +1250,7 @@ namespace SlaveMatrix
     		}
     		if (e.額_接続.Count > 0)
     		{
-    			額_接続 = e.額_接続.Select(delegate(EleD g)
+    			額_接続 = e.額_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 頭2;
@@ -1261,7 +1261,7 @@ namespace SlaveMatrix
     		}
     		if (e.眉左_接続.Count > 0)
     		{
-    			眉左_接続 = e.眉左_接続.Select(delegate(EleD g)
+    			眉左_接続 = e.眉左_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 頭2;
@@ -1272,7 +1272,7 @@ namespace SlaveMatrix
     		}
     		if (e.眉右_接続.Count > 0)
     		{
-    			眉右_接続 = e.眉右_接続.Select(delegate(EleD g)
+    			眉右_接続 = e.眉右_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 頭2;
@@ -1283,7 +1283,7 @@ namespace SlaveMatrix
     		}
     		if (e.耳左_接続.Count > 0)
     		{
-    			耳左_接続 = e.耳左_接続.Select(delegate(EleD g)
+    			耳左_接続 = e.耳左_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 頭2;
@@ -1294,7 +1294,7 @@ namespace SlaveMatrix
     		}
     		if (e.耳右_接続.Count > 0)
     		{
-    			耳右_接続 = e.耳右_接続.Select(delegate(EleD g)
+    			耳右_接続 = e.耳右_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 頭2;
@@ -1305,7 +1305,7 @@ namespace SlaveMatrix
     		}
     		if (e.鼻肌_接続.Count > 0)
     		{
-    			鼻肌_接続 = e.鼻肌_接続.Select(delegate(EleD g)
+    			鼻肌_接続 = e.鼻肌_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 頭2;
@@ -1316,7 +1316,7 @@ namespace SlaveMatrix
     		}
     		if (e.単眼目_接続.Count > 0)
     		{
-    			単眼目_接続 = e.単眼目_接続.Select(delegate(EleD g)
+    			単眼目_接続 = e.単眼目_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 頭2;
@@ -1327,7 +1327,7 @@ namespace SlaveMatrix
     		}
     		if (e.単眼眉_接続.Count > 0)
     		{
-    			単眼眉_接続 = e.単眼眉_接続.Select(delegate(EleD g)
+    			単眼眉_接続 = e.単眼眉_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 頭2;
@@ -1338,7 +1338,7 @@ namespace SlaveMatrix
     		}
     		if (e.大顎基_接続.Count > 0)
     		{
-    			大顎基_接続 = e.大顎基_接続.Select(delegate(EleD g)
+    			大顎基_接続 = e.大顎基_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 頭2;
@@ -1349,7 +1349,7 @@ namespace SlaveMatrix
     		}
     		if (e.顔面_接続.Count > 0)
     		{
-    			顔面_接続 = e.顔面_接続.Select(delegate(EleD g)
+    			顔面_接続 = e.顔面_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 頭2;
@@ -1360,7 +1360,7 @@ namespace SlaveMatrix
     		}
     		if (e.頭頂_接続.Count > 0)
     		{
-    			頭頂_接続 = e.頭頂_接続.Select(delegate(EleD g)
+    			頭頂_接続 = e.頭頂_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 頭2;
@@ -1371,7 +1371,7 @@ namespace SlaveMatrix
     		}
     		if (e.頬肌左_接続.Count > 0)
     		{
-    			頬肌左_接続 = e.頬肌左_接続.Select(delegate(EleD g)
+    			頬肌左_接続 = e.頬肌左_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 頭2;
@@ -1382,7 +1382,7 @@ namespace SlaveMatrix
     		}
     		if (e.頬肌右_接続.Count > 0)
     		{
-    			頬肌右_接続 = e.頬肌右_接続.Select(delegate(EleD g)
+    			頬肌右_接続 = e.頬肌右_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 頭2;
@@ -1393,7 +1393,7 @@ namespace SlaveMatrix
     		}
     		if (e.触覚左_接続.Count > 0)
     		{
-    			触覚左_接続 = e.触覚左_接続.Select(delegate(EleD g)
+    			触覚左_接続 = e.触覚左_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 頭2;
@@ -1404,7 +1404,7 @@ namespace SlaveMatrix
     		}
     		if (e.触覚右_接続.Count > 0)
     		{
-    			触覚右_接続 = e.触覚右_接続.Select(delegate(EleD g)
+    			触覚右_接続 = e.触覚右_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 頭2;

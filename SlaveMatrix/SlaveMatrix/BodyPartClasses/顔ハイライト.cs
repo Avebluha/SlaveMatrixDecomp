@@ -2,7 +2,7 @@ using _2DGAMELIB;
 
 namespace SlaveMatrix
 {
-    public class 顔ハイライト : Ele
+    public class 顔ハイライト : Element
     {
     	public ShapePart X0Y0_ハイライト1;
 

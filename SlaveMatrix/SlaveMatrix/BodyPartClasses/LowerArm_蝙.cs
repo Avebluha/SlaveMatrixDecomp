@@ -127,7 +127,7 @@ namespace SlaveMatrix
 
     	public 拘束鎖 鎖1;
 
-    	public Ele[] 腕輪_接続;
+    	public Element[] 腕輪_接続;
 
     	public override bool 欠損
     	{
@@ -643,10 +643,10 @@ namespace SlaveMatrix
     		{
     			表示 = false;
     		}
-    		Ele f;
+    		Element f;
     		if (e.手_接続.Count > 0)
     		{
-    			手_接続 = e.手_接続.Select(delegate(EleD g)
+    			手_接続 = e.手_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = LowerArm_蝙2;
@@ -657,7 +657,7 @@ namespace SlaveMatrix
     		}
     		if (e.腕輪_接続.Count > 0)
     		{
-    			腕輪_接続 = e.腕輪_接続.Select(delegate(EleD g)
+    			腕輪_接続 = e.腕輪_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = LowerArm_蝙2;

@@ -5,7 +5,7 @@ using _2DGAMELIB;
 namespace SlaveMatrix
 {
     [Serializable]
-    public class TorsoD : EleD
+    public class TorsoD : ElementData
     {
     	public bool Torso_表示 = true;
 
@@ -27,34 +27,34 @@ namespace SlaveMatrix
 
     	public double 筋肉濃度 = 1.0;
 
-    	public List<EleD> Chest_接続 = new List<EleD>();
+    	public List<ElementData> Chest_接続 = new List<ElementData>();
 
-    	public List<EleD> 肌_接続 = new List<EleD>();
+    	public List<ElementData> 肌_接続 = new List<ElementData>();
 
-    	public List<EleD> 翼左_接続 = new List<EleD>();
+    	public List<ElementData> 翼左_接続 = new List<ElementData>();
 
-    	public List<EleD> 翼右_接続 = new List<EleD>();
+    	public List<ElementData> 翼右_接続 = new List<ElementData>();
 
     	public TorsoD()
     	{
     		ThisType = GetType();
     	}
 
-    	public void 胴接続(EleD e)
+    	public void 胴接続(ElementData e)
     	{
     		Chest_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.Torso_Chest_接続;
     	}
 
-    	public void 肌接続(EleD e)
+    	public void 肌接続(ElementData e)
     	{
     		肌_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.Torso_肌_接続;
     	}
 
-    	public void 翼左接続(EleD e)
+    	public void 翼左接続(ElementData e)
     	{
     		翼左_接続.Add(e);
     		e.Par = this;
@@ -63,13 +63,13 @@ namespace SlaveMatrix
     		{
     			return;
     		}
-    		foreach (EleD item in e.EnumEleD())
+    		foreach (ElementData item in e.EnumEleD())
     		{
     			item.尺度B = 1.0;
     		}
     	}
 
-    	public void 翼右接続(EleD e)
+    	public void 翼右接続(ElementData e)
     	{
     		翼右_接続.Add(e);
     		e.Par = this;
@@ -78,13 +78,13 @@ namespace SlaveMatrix
     		{
     			return;
     		}
-    		foreach (EleD item in e.EnumEleD())
+    		foreach (ElementData item in e.EnumEleD())
     		{
     			item.尺度B = 1.0;
     		}
     	}
 
-    	public override Ele GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
+    	public override Element GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
     	{
     		return new Torso(DisUnit, 配色指定, 体配色, Med, this);
     	}

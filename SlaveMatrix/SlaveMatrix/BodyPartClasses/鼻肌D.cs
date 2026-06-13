@@ -4,7 +4,7 @@ using _2DGAMELIB;
 namespace SlaveMatrix
 {
     [Serializable]
-    public class 鼻肌D : EleD
+    public class 鼻肌D : ElementData
     {
     	public bool 紋柄_紋左_紋1_表示;
 
@@ -35,7 +35,7 @@ namespace SlaveMatrix
     		ThisType = GetType();
     	}
 
-    	public override Ele GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
+    	public override Element GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
     	{
     		return new 鼻肌(DisUnit, 配色指定, 体配色, Med, this);
     	}

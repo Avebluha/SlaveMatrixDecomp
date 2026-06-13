@@ -3,7 +3,7 @@ using _2DGAMELIB;
 
 namespace SlaveMatrix
 {
-    public class ロータ : Ele
+    public class ロータ : Element
     {
     	public ShapePart X0Y0_ロータ;
 

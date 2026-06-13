@@ -2,13 +2,13 @@ using _2DGAMELIB;
 
 namespace SlaveMatrix
 {
-    public class 顔面 : Ele
+    public class 顔面 : Element
     {
     	private double 展開;
 
-    	public Ele[] 触覚左_接続;
+    	public Element[] 触覚左_接続;
 
-    	public Ele[] 触覚右_接続;
+    	public Element[] 触覚右_接続;
 
     	public double 展開0
     	{

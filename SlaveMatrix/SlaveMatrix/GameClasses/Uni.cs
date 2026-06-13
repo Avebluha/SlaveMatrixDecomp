@@ -260,9 +260,9 @@ namespace SlaveMatrix
     		return obj;
     	}
 
-    	public static EleD[] 人口D()
+    	public static ElementData[] 人口D()
     	{
-    		return new EleD[6]
+    		return new ElementData[6]
     		{
     			new 口_通常D(),
     			new 涎_通常D(),
@@ -276,9 +276,9 @@ namespace SlaveMatrix
     		};
     	}
 
-    	public static EleD[] 裂口D()
+    	public static ElementData[] 裂口D()
     	{
-    		return new EleD[6]
+    		return new ElementData[6]
     		{
     			new 口_裂けD(),
     			new 涎_裂けD(),

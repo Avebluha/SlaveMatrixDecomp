@@ -57,39 +57,39 @@ namespace SlaveMatrix
 
     	public double 展開;
 
-    	public List<EleD> 軸1_接続 = new List<EleD>();
+    	public List<ElementData> 軸1_接続 = new List<ElementData>();
 
-    	public List<EleD> 軸2_接続 = new List<EleD>();
+    	public List<ElementData> 軸2_接続 = new List<ElementData>();
 
-    	public List<EleD> 軸3_接続 = new List<EleD>();
+    	public List<ElementData> 軸3_接続 = new List<ElementData>();
 
     	public 前翅_甲D()
     	{
     		ThisType = GetType();
     	}
 
-    	public void 軸1接続(EleD e)
+    	public void 軸1接続(ElementData e)
     	{
     		軸1_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.前翅_甲_軸1_接続;
     	}
 
-    	public void 軸2接続(EleD e)
+    	public void 軸2接続(ElementData e)
     	{
     		軸2_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.前翅_甲_軸2_接続;
     	}
 
-    	public void 軸3接続(EleD e)
+    	public void 軸3接続(ElementData e)
     	{
     		軸3_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.前翅_甲_軸3_接続;
     	}
 
-    	public override Ele GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
+    	public override Element GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
     	{
     		return new 前翅_甲(DisUnit, 配色指定, 体配色, Med, this);
     	}

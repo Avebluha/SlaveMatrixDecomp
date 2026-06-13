@@ -88,88 +88,88 @@ namespace SlaveMatrix
 
     	public bool 鎖表示;
 
-    	public List<EleD> 根外左_接続 = new List<EleD>();
+    	public List<ElementData> 根外左_接続 = new List<ElementData>();
 
-    	public List<EleD> 根内左_接続 = new List<EleD>();
+    	public List<ElementData> 根内左_接続 = new List<ElementData>();
 
-    	public List<EleD> 根中央_接続 = new List<EleD>();
+    	public List<ElementData> 根中央_接続 = new List<ElementData>();
 
-    	public List<EleD> 根内右_接続 = new List<EleD>();
+    	public List<ElementData> 根内右_接続 = new List<ElementData>();
 
-    	public List<EleD> 根外右_接続 = new List<EleD>();
+    	public List<ElementData> 根外右_接続 = new List<ElementData>();
 
     	public 単足_植D()
     	{
     		ThisType = GetType();
     	}
 
-    	public void 根外左接続(EleD e)
+    	public void 根外左接続(ElementData e)
     	{
     		根外左_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.単足_植_根外左_接続;
     	}
 
-    	public void 根内左接続(EleD e)
+    	public void 根内左接続(ElementData e)
     	{
     		根内左_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.単足_植_根内左_接続;
     	}
 
-    	public void 根中央接続(EleD e)
+    	public void 根中央接続(ElementData e)
     	{
     		根中央_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.単足_植_根中央_接続;
     	}
 
-    	public void 根内右接続(EleD e)
+    	public void 根内右接続(ElementData e)
     	{
     		根内右_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.単足_植_根内右_接続;
     	}
 
-    	public void 根外右接続(EleD e)
+    	public void 根外右接続(ElementData e)
     	{
     		根外右_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.単足_植_根外右_接続;
     	}
 
-    	public override Ele GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
+    	public override Element GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
     	{
     		return new 単足_植(DisUnit, 配色指定, 体配色, Med, this);
     	}
 
-    	public override IEnumerable<EleD> EnumEleD()
+    	public override IEnumerable<ElementData> EnumEleD()
     	{
     		yield return this;
     		if (根外左_接続 != null)
     		{
-    			foreach (EleD item in 根外左_接続.Select((EleD e) => e.EnumEleD()).JoinEnum())
+    			foreach (ElementData item in 根外左_接続.Select((ElementData e) => e.EnumEleD()).JoinEnum())
     			{
     				yield return item;
     			}
     		}
     		if (根外右_接続 != null)
     		{
-    			foreach (EleD item2 in 根外右_接続.Select((EleD e) => e.EnumEleD()).JoinEnum())
+    			foreach (ElementData item2 in 根外右_接続.Select((ElementData e) => e.EnumEleD()).JoinEnum())
     			{
     				yield return item2;
     			}
     		}
     		if (根内左_接続 != null)
     		{
-    			foreach (EleD item3 in 根内左_接続.Select((EleD e) => e.EnumEleD()).JoinEnum())
+    			foreach (ElementData item3 in 根内左_接続.Select((ElementData e) => e.EnumEleD()).JoinEnum())
     			{
     				yield return item3;
     			}
     		}
     		if (根内右_接続 != null)
     		{
-    			foreach (EleD item4 in 根内右_接続.Select((EleD e) => e.EnumEleD()).JoinEnum())
+    			foreach (ElementData item4 in 根内右_接続.Select((ElementData e) => e.EnumEleD()).JoinEnum())
     			{
     				yield return item4;
     			}
@@ -178,7 +178,7 @@ namespace SlaveMatrix
     		{
     			yield break;
     		}
-    		foreach (EleD item5 in 根中央_接続.Select((EleD e) => e.EnumEleD()).JoinEnum())
+    		foreach (ElementData item5 in 根中央_接続.Select((ElementData e) => e.EnumEleD()).JoinEnum())
     		{
     			yield return item5;
     		}

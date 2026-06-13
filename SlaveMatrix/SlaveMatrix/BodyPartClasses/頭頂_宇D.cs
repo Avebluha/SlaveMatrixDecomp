@@ -171,21 +171,21 @@ namespace SlaveMatrix
 
     	public bool 鱗;
 
-    	public List<EleD> 頭部後_接続 = new List<EleD>();
+    	public List<ElementData> 頭部後_接続 = new List<ElementData>();
 
     	public 頭頂_宇D()
     	{
     		ThisType = GetType();
     	}
 
-    	public void 頭部後接続(EleD e)
+    	public void 頭部後接続(ElementData e)
     	{
     		頭部後_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.頭頂_宇_頭部後_接続;
     	}
 
-    	public override Ele GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
+    	public override Element GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
     	{
     		return new 頭頂_宇(DisUnit, 配色指定, 体配色, Med, this);
     	}

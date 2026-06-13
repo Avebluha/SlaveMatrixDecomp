@@ -110,7 +110,7 @@ namespace SlaveMatrix
 
     	private bool 出糸_;
 
-    	public Ele[] 出糸_接続;
+    	public Element[] 出糸_接続;
 
     	private Vector2D[] mm;
 
@@ -530,8 +530,8 @@ namespace SlaveMatrix
     		}
     		if (e.出糸_接続.Count > 0)
     		{
-    			Ele f;
-    			出糸_接続 = e.出糸_接続.Select(delegate(EleD g)
+    			Element f;
+    			出糸_接続 = e.出糸_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 尾_蜘2;

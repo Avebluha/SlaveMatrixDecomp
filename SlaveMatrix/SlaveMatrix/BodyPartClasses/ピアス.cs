@@ -2,7 +2,7 @@ using _2DGAMELIB;
 
 namespace SlaveMatrix
 {
-    public class ピアス : Ele
+    public class ピアス : Element
     {
     	public ShapePart X0Y0_ピアス;
 

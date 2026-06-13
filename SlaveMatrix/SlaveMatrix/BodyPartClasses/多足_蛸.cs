@@ -11,13 +11,13 @@ namespace SlaveMatrix
 
     	public ColorP X0Y0_TorsoCP;
 
-    	public Ele[] 軟体外左_接続;
+    	public Element[] 軟体外左_接続;
 
-    	public Ele[] 軟体外右_接続;
+    	public Element[] 軟体外右_接続;
 
-    	public Ele[] 軟体内左_接続;
+    	public Element[] 軟体内左_接続;
 
-    	public Ele[] 軟体内右_接続;
+    	public Element[] 軟体内右_接続;
 
     	public override bool 欠損
     	{
@@ -144,10 +144,10 @@ namespace SlaveMatrix
     		{
     			表示 = false;
     		}
-    		Ele f;
+    		Element f;
     		if (e.軟体外左_接続.Count > 0)
     		{
-    			軟体外左_接続 = e.軟体外左_接続.Select(delegate(EleD g)
+    			軟体外左_接続 = e.軟体外左_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 多足_蛸2;
@@ -158,7 +158,7 @@ namespace SlaveMatrix
     		}
     		if (e.軟体外右_接続.Count > 0)
     		{
-    			軟体外右_接続 = e.軟体外右_接続.Select(delegate(EleD g)
+    			軟体外右_接続 = e.軟体外右_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 多足_蛸2;
@@ -169,7 +169,7 @@ namespace SlaveMatrix
     		}
     		if (e.軟体内左_接続.Count > 0)
     		{
-    			軟体内左_接続 = e.軟体内左_接続.Select(delegate(EleD g)
+    			軟体内左_接続 = e.軟体内左_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 多足_蛸2;
@@ -180,7 +180,7 @@ namespace SlaveMatrix
     		}
     		if (e.軟体内右_接続.Count > 0)
     		{
-    			軟体内右_接続 = e.軟体内右_接続.Select(delegate(EleD g)
+    			軟体内右_接続 = e.軟体内右_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 多足_蛸2;

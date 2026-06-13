@@ -5,7 +5,7 @@ namespace SlaveMatrix
 {
     public class スタンプK : Stamp
     {
-    	private Ele Par;
+    	private Element Par;
 
     	public override void Draw(RenderArea Are)
     	{
@@ -17,7 +17,7 @@ namespace SlaveMatrix
     			}
     			foreach (sep stum in sta)
     			{
-    				p = stum.Ele.Body.Current.GetPar(stum.Path);
+    				p = stum.Element.Body.Current.GetPar(stum.Path);
     				stum.Sta.角度B = p.AngleBase - stum.ShapePart.AngleBase;
     				stum.Sta.位置B = p.ToGlobal(stum.Pos);
     				stum.Sta.色更新();
@@ -29,7 +29,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public キスマーク Add(Vector2D cp, Color hc, Ele he)
+    	public キスマーク Add(Vector2D cp, Color hc, Element he)
     	{
     		if (チェック1(he) && he == Par)
     		{
@@ -44,9 +44,9 @@ namespace SlaveMatrix
     					sep.Sta.Dispose();
     				}
     				sep = default(sep);
-    				sep.Sta = EleD.GetEle(Are.DisplayUnitScale, Med, Cha.ColorSet);
+    				sep.Sta = ElementData.GetEle(Are.DisplayUnitScale, Med, Cha.ColorSet);
     				sep.Sta.SetHitFalse();
-    				sep.Ele = he;
+    				sep.Element = he;
     				sep.ShapePart = p;
     				sep.Path = sep.ShapePart.GetPath();
     				sep.Pos = sep.ShapePart.ToLocal(cp);
@@ -57,8 +57,8 @@ namespace SlaveMatrix
     		return null;
     	}
 
-    	public スタンプK(ModeEventDispatcher Med, RenderArea Are, Character Cha, Body Bod, EleD EleD, Ele Par)
-    		: base(Med, Are, Cha, Bod, EleD)
+    	public スタンプK(ModeEventDispatcher Med, RenderArea Are, Character Cha, Body Bod, ElementData ElementData, Element Par)
+    		: base(Med, Are, Cha, Bod, ElementData)
     	{
     		this.Par = Par;
     	}

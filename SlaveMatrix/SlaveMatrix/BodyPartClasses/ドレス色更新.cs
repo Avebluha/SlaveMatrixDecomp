@@ -38,7 +38,7 @@ namespace SlaveMatrix
     		ミドル.色更新(ドレスm, 縁左m, 縁右m);
     	}
 
-    	public bool Contains(Ele e)
+    	public bool Contains(Element e)
     	{
     		if (トップ != e)
     		{

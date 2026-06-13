@@ -4,7 +4,7 @@ using _2DGAMELIB;
 
 namespace SlaveMatrix
 {
-    public class EleI : IDisposable
+    public class ElementInstance : IDisposable
     {
     	public Vector2D Position = DataConsts.Vec2DZero;
 
@@ -16,18 +16,18 @@ namespace SlaveMatrix
 
     	public Action<RenderArea> 描画処理;
 
-    	public HashSet<Ele> ElesH;
+    	public HashSet<Element> ElesH;
 
 
-    	public void AddRange(IEnumerable<Ele> es)
+    	public void AddRange(IEnumerable<Element> es)
     	{
-    		foreach (Ele e in es)
+    		foreach (Element e in es)
     		{
     			ElesH.Add(e);
     		}
     	}
 
-    	public bool IsUpdate(Ele e)
+    	public bool IsUpdate(Element e)
     	{
     		if (Updatef)
     		{
@@ -36,10 +36,10 @@ namespace SlaveMatrix
     		return false;
     	}
 
-    	public EleI(ModeEventDispatcher Med)
+    	public ElementInstance(ModeEventDispatcher Med)
     	{
     		Lay = new RenderArea(Med.Unit, Med.Base.XRatio, Med.Base.YRatio, Med.Base.Size + 0.0025, Med.DisQuality, Med.HitAccuracy);
-    		ElesH = new HashSet<Ele>();
+    		ElesH = new HashSet<Element>();
     	}
 
     	public void 描画(RenderArea Are)

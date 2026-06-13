@@ -105,15 +105,15 @@ namespace SlaveMatrix
 
     	public 拘束鎖 鎖2;
 
-    	public Ele[] 左0_接続;
+    	public Element[] 左0_接続;
 
-    	public Ele[] 右0_接続;
+    	public Element[] 右0_接続;
 
-    	public Ele[] 左1_接続;
+    	public Element[] 左1_接続;
 
-    	public Ele[] 右1_接続;
+    	public Element[] 右1_接続;
 
-    	public Ele[] Torso_接続;
+    	public Element[] Torso_接続;
 
     	public override bool 欠損
     	{
@@ -599,10 +599,10 @@ namespace SlaveMatrix
     		{
     			表示 = false;
     		}
-    		Ele f;
+    		Element f;
     		if (e.左0_接続.Count > 0)
     		{
-    			左0_接続 = e.左0_接続.Select(delegate(EleD g)
+    			左0_接続 = e.左0_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 長物_蟲2;
@@ -613,7 +613,7 @@ namespace SlaveMatrix
     		}
     		if (e.右0_接続.Count > 0)
     		{
-    			右0_接続 = e.右0_接続.Select(delegate(EleD g)
+    			右0_接続 = e.右0_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 長物_蟲2;
@@ -624,7 +624,7 @@ namespace SlaveMatrix
     		}
     		if (e.左1_接続.Count > 0)
     		{
-    			左1_接続 = e.左1_接続.Select(delegate(EleD g)
+    			左1_接続 = e.左1_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 長物_蟲2;
@@ -635,7 +635,7 @@ namespace SlaveMatrix
     		}
     		if (e.右1_接続.Count > 0)
     		{
-    			右1_接続 = e.右1_接続.Select(delegate(EleD g)
+    			右1_接続 = e.右1_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 長物_蟲2;
@@ -646,7 +646,7 @@ namespace SlaveMatrix
     		}
     		if (e.Torso_接続.Count > 0)
     		{
-    			Torso_接続 = e.Torso_接続.Select(delegate(EleD g)
+    			Torso_接続 = e.Torso_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 長物_蟲2;

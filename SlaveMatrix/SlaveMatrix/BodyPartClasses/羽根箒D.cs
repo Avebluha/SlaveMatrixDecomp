@@ -4,7 +4,7 @@ using _2DGAMELIB;
 namespace SlaveMatrix
 {
     [Serializable]
-    public class 羽根箒D : EleD
+    public class 羽根箒D : ElementData
     {
     	public bool 羽根1_表示 = true;
 
@@ -25,7 +25,7 @@ namespace SlaveMatrix
     		ThisType = GetType();
     	}
 
-    	public override Ele GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
+    	public override Element GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
     	{
     		return new 羽根箒(DisUnit, 配色指定, 体配色, Med, this);
     	}

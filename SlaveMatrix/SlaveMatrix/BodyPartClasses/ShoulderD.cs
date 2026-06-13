@@ -5,7 +5,7 @@ using _2DGAMELIB;
 namespace SlaveMatrix
 {
     [Serializable]
-    public class ShoulderD : EleD
+    public class ShoulderD : ElementData
     {
     	public bool 脇_脇_表示 = true;
 
@@ -29,21 +29,21 @@ namespace SlaveMatrix
 
     	public bool Shoulder_ナース_表示;
 
-    	public List<EleD> UpperArm_接続 = new List<EleD>();
+    	public List<ElementData> UpperArm_接続 = new List<ElementData>();
 
     	public ShoulderD()
     	{
     		ThisType = GetType();
     	}
 
-    	public void UpperArm接続(EleD e)
+    	public void UpperArm接続(ElementData e)
     	{
     		UpperArm_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.Shoulder_UpperArm_接続;
     	}
 
-    	public override Ele GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
+    	public override Element GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
     	{
     		return new Shoulder(DisUnit, 配色指定, 体配色, Med, this);
     	}

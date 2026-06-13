@@ -33,14 +33,14 @@ namespace SlaveMatrix
     		ThisType = GetType();
     	}
 
-    	public override void LowerArm接続(EleD e)
+    	public override void LowerArm接続(ElementData e)
     	{
     		LowerArm_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.UpperArm_蝙_LowerArm_接続;
     	}
 
-    	public override Ele GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
+    	public override Element GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
     	{
     		return new UpperArm_蝙(DisUnit, 配色指定, 体配色, Med, this);
     	}

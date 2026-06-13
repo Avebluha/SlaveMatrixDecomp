@@ -2,7 +2,7 @@ using _2DGAMELIB;
 
 namespace SlaveMatrix
 {
-    public class キャップ1 : Ele
+    public class キャップ1 : Element
     {
     	public ShapePart X0Y0_根本;
 

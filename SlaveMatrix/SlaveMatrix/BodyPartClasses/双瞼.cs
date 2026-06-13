@@ -1,6 +1,6 @@
 namespace SlaveMatrix
 {
-    public class 双瞼 : Ele
+    public class 双瞼 : Element
     {
     	public override double 肥大
     	{

@@ -8,9 +8,9 @@ using System.Runtime.Serialization;
 namespace SlaveMatrix
 {
     [Serializable]
-    public class EleD
+    public class ElementData
     {
-    	public EleD Par;
+    	public ElementData Par;
 
     	public ConnectionInfo 接続情報;
 
@@ -87,12 +87,12 @@ namespace SlaveMatrix
         [OnDeserialized]
         private void OnDeserialized(StreamingContext _) => ThisType = GetType();
 
-        public virtual Ele GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
+        public virtual Element GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
     	{
     		return null;
     	}
 
-    	public virtual Ele GetEle(double DisUnit, ModeEventDispatcher Med, 主人公配色 体配色)
+    	public virtual Element GetEle(double DisUnit, ModeEventDispatcher Med, 主人公配色 体配色)
     	{
     		return null;
     	}
@@ -111,21 +111,21 @@ namespace SlaveMatrix
     		return flag;
     	}
 
-    	public virtual IEnumerable<EleD> EnumEleD()
+    	public virtual IEnumerable<ElementData> EnumEleD()
     	{
     		yield return this;
     		foreach (FieldInfo item in from e in ThisType.GetFields()
     			where e.FieldType.ToString() == Sta.lt
     			select e)
     		{
-    			List<EleD> list = (List<EleD>)item.GetValue(this);
+    			List<ElementData> list = (List<ElementData>)item.GetValue(this);
     			if (list == null)
     			{
     				continue;
     			}
-    			foreach (EleD item2 in list)
+    			foreach (ElementData item2 in list)
     			{
-    				foreach (EleD item3 in item2.EnumEleD())
+    				foreach (ElementData item3 in item2.EnumEleD())
     				{
     					yield return item3;
     				}
@@ -133,19 +133,19 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public EleD Copy()
+    	public ElementData Copy()
     	{
-    		EleD r = (EleD)Activator.CreateInstance(ThisType);
+    		ElementData r = (ElementData)Activator.CreateInstance(ThisType);
     		FieldInfo[] fields = ThisType.GetFields();
-    		EleD ec;
+    		ElementData ec;
     		foreach (FieldInfo fieldInfo in fields)
     		{
     			if (fieldInfo.FieldType.ToString() == Sta.lt)
     			{
-    				List<EleD> list = (List<EleD>)fieldInfo.GetValue(this);
+    				List<ElementData> list = (List<ElementData>)fieldInfo.GetValue(this);
     				if (list != null)
     				{
-    					fieldInfo.SetValue(r, list.Select(delegate(EleD e)
+    					fieldInfo.SetValue(r, list.Select(delegate(ElementData e)
     					{
     						ec = e.Copy();
     						ec.Par = r;
@@ -161,30 +161,30 @@ namespace SlaveMatrix
     		return r;
     	}
 
-    	public EleD Copy_以下無()
+    	public ElementData Copy_以下無()
     	{
-    		EleD eleD = (EleD)Activator.CreateInstance(ThisType);
+    		ElementData elementData = (ElementData)Activator.CreateInstance(ThisType);
     		FieldInfo[] fields = ThisType.GetFields();
     		foreach (FieldInfo fieldInfo in fields)
     		{
     			if (!fieldInfo.Name.Contains("_接続"))
     			{
-    				fieldInfo.SetValue(eleD, fieldInfo.GetValue(this));
+    				fieldInfo.SetValue(elementData, fieldInfo.GetValue(this));
     			}
     		}
-    		return eleD;
+    		return elementData;
     	}
 
-    	public EleD Get逆()
+    	public ElementData Get逆()
     	{
-    		EleD eleD = Copy();
-    		foreach (EleD item in eleD.EnumEleD())
+    		ElementData elementData = Copy();
+    		foreach (ElementData item in elementData.EnumEleD())
     		{
     			item.右 = !item.右;
     			item.角度B = 0.0 - item.角度B;
     			item.角度C = 0.0 - item.角度C;
     		}
-    		return eleD;
+    		return elementData;
     	}
 
     	public IEnumerable<ConnectionInfo> Enum接続情報()
@@ -200,18 +200,18 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public void 接続(ConnectionInfo 接続情報, EleD ed)
+    	public void 接続(ConnectionInfo 接続情報, ElementData ed)
     	{
     		string text = ThisType.Name.Remove(ThisType.Name.Length - 1);
             var methodName = 接続情報.ToString().Remove(0, text.Length).Replace("_", "");
             MethodInfo method = ThisType.GetMethod(接続情報.ToString().Remove(0, text.Length).Replace("_", ""));
-    		object[] parameters = new EleD[1] { ed };
+    		object[] parameters = new ElementData[1] { ed };
     		method.Invoke(this, parameters);
     	}
 
-    	public List<EleD> Get接続(ConnectionInfo 接続情報)
+    	public List<ElementData> Get接続(ConnectionInfo 接続情報)
     	{
-    		return (List<EleD>)ThisType.GetField(接続情報.ToString().Remove(0, ThisType.Name.Length)).GetValue(this);
+    		return (List<ElementData>)ThisType.GetField(接続情報.ToString().Remove(0, ThisType.Name.Length)).GetValue(this);
     	}
     }
 }

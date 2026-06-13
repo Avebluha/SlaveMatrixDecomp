@@ -52,7 +52,7 @@ namespace SlaveMatrix
     		return this;
     	}
 
-    	public override Ele GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
+    	public override Element GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
     	{
     		return new BackHair1_編結(DisUnit, 配色指定, 体配色, Med, this);
     	}

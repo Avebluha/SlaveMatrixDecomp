@@ -2,7 +2,7 @@ using _2DGAMELIB;
 
 namespace SlaveMatrix
 {
-    public class 下着陰核 : Ele
+    public class 下着陰核 : Element
     {
     	public ShapePart X0Y0_陰核;
 

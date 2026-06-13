@@ -118,8 +118,8 @@ namespace SlaveMatrix
     		if (Med.Mode == "Training")
     		{
                 //~~TODO~~ fix?
-                //Cursor.Position = Med.BaseControlC.PointToScreen(Med.FromBasePosition(対象.Ele.位置B));
-                Med.CursorPosition = Med.FromBasePosition(対象.Ele.位置B);
+                //Cursor.Position = Med.BaseControlC.PointToScreen(Med.FromBasePosition(対象.Element.位置B));
+                Med.CursorPosition = Med.FromBasePosition(対象.Element.位置B);
 
             }
     		バスト初期化.Start();
@@ -168,8 +168,8 @@ namespace SlaveMatrix
     		if (Med.Mode == "Training")
     		{
                 //~~TODO~~ fix?
-                //Cursor.Position = Med.BaseControlC.PointToScreen(Med.FromBasePosition(対象.Ele.位置B));
-                Med.CursorPosition = Med.FromBasePosition(対象.Ele.位置B);
+                //Cursor.Position = Med.BaseControlC.PointToScreen(Med.FromBasePosition(対象.Element.位置B));
+                Med.CursorPosition = Med.FromBasePosition(対象.Element.位置B);
 
             }
     		バスト初期化.Start();
@@ -207,8 +207,8 @@ namespace SlaveMatrix
     		Addvl(ref 陰核位置);
     		核捏ね初 = true;
             //~~TODO~~ fix?
-            //Cursor.Position = Med.BaseControlC.PointToScreen(Med.FromBasePosition(対象.Ele.位置B));
-            Med.CursorPosition = Med.FromBasePosition(対象.Ele.位置B);
+            //Cursor.Position = Med.BaseControlC.PointToScreen(Med.FromBasePosition(対象.Element.位置B));
+            Med.CursorPosition = Med.FromBasePosition(対象.Element.位置B);
 
 
             核捏ねsi2();
@@ -224,8 +224,8 @@ namespace SlaveMatrix
     		if (Med.Mode == "Training")
     		{
                 //~~TODO~~ fix?
-                //Cursor.Position = Med.BaseControlC.PointToScreen(Med.FromBasePosition(対象.Ele.位置B));
-                Med.CursorPosition = Med.FromBasePosition(対象.Ele.位置B);
+                //Cursor.Position = Med.BaseControlC.PointToScreen(Med.FromBasePosition(対象.Element.位置B));
+                Med.CursorPosition = Med.FromBasePosition(対象.Element.位置B);
 
             }
     	}
@@ -269,8 +269,8 @@ namespace SlaveMatrix
     		if (Med.Mode == "Training")
     		{
                 //~~TODO~~ fix?
-                //Cursor.Position = Med.BaseControlC.PointToScreen(Med.FromBasePosition(対象.Ele.位置B));
-                Med.CursorPosition = Med.FromBasePosition(対象.Ele.位置B);
+                //Cursor.Position = Med.BaseControlC.PointToScreen(Med.FromBasePosition(対象.Element.位置B));
+                Med.CursorPosition = Med.FromBasePosition(対象.Element.位置B);
 
             }
     		if (cd.c == ContactType.Crotch)
@@ -368,7 +368,7 @@ namespace SlaveMatrix
     			調教UI.ハンド右.位置B = coord.TransformCoordinateBP(陰核位置, num2.RotationZ());
     			Bod.ピアス.位置C = (調教UI.ハンド右.位置B - Bod.ピアス.位置B) * 0.3;
     		}
-    		対象.Ele.角度C = (100.0 * num).Clamp(-5.0, 5.0);
+    		対象.Element.角度C = (100.0 * num).Clamp(-5.0, 5.0);
     	}
 
     	private bool Is撫で()
@@ -495,7 +495,7 @@ namespace SlaveMatrix
     				if (調教UI.IsHitCha(ref cd))
     				{
     					調教UI.押し(ref cd);
-    					対象.Ele.角度C = (100.0 * x).Clamp(-45.0, 45.0);
+    					対象.Element.角度C = (100.0 * x).Clamp(-45.0, 45.0);
     					調教UI.Action(cd.c, ActionType.Contact, CurrentState.Continue, ToolType.Hand, 0, 1, 機械: false, 射精: false);
     					Player.奴体力消費小();
     					Player.主精力消費小();
@@ -505,7 +505,7 @@ namespace SlaveMatrix
     					調教UI.Action(cd.c, ActionType.Contact, CurrentState.Continue, ToolType.Hand, 0, 1, 機械: false, 射精: false);
     					Player.奴体力消費小();
     					Player.主精力消費小();
-    					対象.Ele.角度C = 0.0;
+    					対象.Element.角度C = 0.0;
     					調教UI.放し();
     				}
     				体撫でsi2();
@@ -616,7 +616,7 @@ namespace SlaveMatrix
     			調教UI.ハンド右.Yi = 0;
     			体撫でsi1();
     		}
-    		else if (調教UI.ハンド右CM.Ele.Xi == 2 || 調教UI.ハンド右CM.Ele.Xi == 3 || 調教UI.ハンド右CM.Ele.Xi == 5 || 調教UI.ハンド右CM.Ele.Xi == 6 || 調教UI.ハンド右CM.Ele.Xi == 7 || 調教UI.ハンド右CM.Ele.Xi == 8 || 調教UI.ハンド右CM.Ele.Xi == 10)
+    		else if (調教UI.ハンド右CM.Element.Xi == 2 || 調教UI.ハンド右CM.Element.Xi == 3 || 調教UI.ハンド右CM.Element.Xi == 5 || 調教UI.ハンド右CM.Element.Xi == 6 || 調教UI.ハンド右CM.Element.Xi == 7 || 調教UI.ハンド右CM.Element.Xi == 8 || 調教UI.ハンド右CM.Element.Xi == 10)
     		{
     			調教UI.ハンド左表示 = false;
     			調教UI.ハンド右CM.Show = true;
@@ -730,9 +730,9 @@ namespace SlaveMatrix
     					切り替え = false;
     					return;
     				}
-    				調教UI.Focus.Ele.Intensity = 0.5;
+    				調教UI.Focus.Element.Intensity = 0.5;
     				調教UI.Focus = 調教UI.ペニスCM;
-    				調教UI.ペニスCM.Ele.位置B = cp;
+    				調教UI.ペニスCM.Element.位置B = cp;
     				調教UI.ペニス処理.選択 = true;
     				調教UI.ペニス処理.Move(ref mb, ref cp, ref hc, ref cd);
     			}
@@ -751,9 +751,9 @@ namespace SlaveMatrix
     				切り替え = false;
     				return;
     			}
-    			調教UI.Focus.Ele.Intensity = 0.5;
+    			調教UI.Focus.Element.Intensity = 0.5;
     			調教UI.Focus = 調教UI.マウスCM;
-    			調教UI.マウスCM.Ele.位置B = cp;
+    			調教UI.マウスCM.Element.位置B = cp;
     			調教UI.マウス処理.Move(ref mb, ref cp, ref hc, ref cd);
     		}
     	}

@@ -503,11 +503,11 @@ namespace SlaveMatrix
 
     	private double くぱぁ_;
 
-    	public Ele[] 陰核_接続;
+    	public Element[] 陰核_接続;
 
-    	public Ele[] 尿道_接続;
+    	public Element[] 尿道_接続;
 
-    	public Ele[] 膣口_接続;
+    	public Element[] 膣口_接続;
 
     	public override bool 欠損
     	{
@@ -1077,10 +1077,10 @@ namespace SlaveMatrix
     		{
     			表示 = false;
     		}
-    		Ele f;
+    		Element f;
     		if (e.陰核_接続.Count > 0)
     		{
-    			陰核_接続 = e.陰核_接続.Select(delegate(EleD g)
+    			陰核_接続 = e.陰核_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 性器_人2;
@@ -1091,7 +1091,7 @@ namespace SlaveMatrix
     		}
     		if (e.尿道_接続.Count > 0)
     		{
-    			尿道_接続 = e.尿道_接続.Select(delegate(EleD g)
+    			尿道_接続 = e.尿道_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 性器_人2;
@@ -1102,7 +1102,7 @@ namespace SlaveMatrix
     		}
     		if (e.膣口_接続.Count > 0)
     		{
-    			膣口_接続 = e.膣口_接続.Select(delegate(EleD g)
+    			膣口_接続 = e.膣口_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 性器_人2;

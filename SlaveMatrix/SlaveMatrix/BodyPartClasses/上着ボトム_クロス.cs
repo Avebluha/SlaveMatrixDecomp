@@ -175,7 +175,7 @@ namespace SlaveMatrix
 
     	public ColorP X0Y1_右_皺6CP;
 
-    	public Ele[] 上着ボトム後_接続;
+    	public Element[] 上着ボトム後_接続;
 
     	public override bool 欠損
     	{
@@ -751,8 +751,8 @@ namespace SlaveMatrix
     		}
     		if (e.上着ボトム後_接続.Count > 0)
     		{
-    			Ele f;
-    			上着ボトム後_接続 = e.上着ボトム後_接続.Select(delegate(EleD g)
+    			Element f;
+    			上着ボトム後_接続 = e.上着ボトム後_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 上着ボトム_クロス2;

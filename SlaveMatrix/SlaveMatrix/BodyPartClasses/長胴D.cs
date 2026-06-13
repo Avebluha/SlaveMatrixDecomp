@@ -4,23 +4,23 @@ using System.Collections.Generic;
 namespace SlaveMatrix
 {
     [Serializable]
-    public class 長胴D : EleD
+    public class 長胴D : ElementData
     {
-    	public List<EleD> 左_接続 = new List<EleD>();
+    	public List<ElementData> 左_接続 = new List<ElementData>();
 
-    	public List<EleD> 右_接続 = new List<EleD>();
+    	public List<ElementData> 右_接続 = new List<ElementData>();
 
-    	public List<EleD> Torso_接続 = new List<EleD>();
+    	public List<ElementData> Torso_接続 = new List<ElementData>();
 
-    	public virtual void 左接続(EleD e)
+    	public virtual void 左接続(ElementData e)
     	{
     	}
 
-    	public virtual void 右接続(EleD e)
+    	public virtual void 右接続(ElementData e)
     	{
     	}
 
-    	public virtual void Torso接続(EleD e)
+    	public virtual void Torso接続(ElementData e)
     	{
     	}
     }

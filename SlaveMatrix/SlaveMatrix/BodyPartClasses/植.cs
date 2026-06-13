@@ -3,7 +3,7 @@ using _2DGAMELIB;
 
 namespace SlaveMatrix
 {
-    public class 植 : Ele
+    public class 植 : Element
     {
     	public ShapePart X0Y0_披針葉4_通常_葉;
 
@@ -167,7 +167,7 @@ namespace SlaveMatrix
 
     	public ColorP X0Y0_心臓葉3_欠損_葉脈CP;
 
-    	public Ele[] 花_接続;
+    	public Element[] 花_接続;
 
     	public override bool 欠損
     	{
@@ -1317,8 +1317,8 @@ namespace SlaveMatrix
     		}
     		if (e.花_接続.Count > 0)
     		{
-    			Ele f;
-    			花_接続 = e.花_接続.Select(delegate(EleD g)
+    			Element f;
+    			花_接続 = e.花_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 植2;

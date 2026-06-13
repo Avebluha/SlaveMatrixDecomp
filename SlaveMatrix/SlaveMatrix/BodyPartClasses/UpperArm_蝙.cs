@@ -568,8 +568,8 @@ namespace SlaveMatrix
     		}
     		if (e.LowerArm_接続.Count > 0)
     		{
-    			Ele f;
-    			LowerArm_接続 = e.LowerArm_接続.Select(delegate(EleD g)
+    			Element f;
+    			LowerArm_接続 = e.LowerArm_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = UpperArm_蝙2;

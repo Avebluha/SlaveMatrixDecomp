@@ -2,7 +2,7 @@ using _2DGAMELIB;
 
 namespace SlaveMatrix
 {
-    public class キスマーク : Ele
+    public class キスマーク : Element
     {
     	public ShapePart X0Y0_キスマーク;
 

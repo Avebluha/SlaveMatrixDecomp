@@ -7,9 +7,9 @@ namespace SlaveMatrix
 {
     public struct sep
     {
-        public Ele Sta;
+        public Element Sta;
 
-        public Ele Ele;
+        public Element Element;
 
         public ShapePart ShapePart;
 
@@ -29,7 +29,7 @@ namespace SlaveMatrix
 
     	public Body Bod;
 
-    	protected EleD EleD;
+    	protected ElementData ElementData;
 
     	protected List<sep> sta = new List<sep>();
 
@@ -39,7 +39,7 @@ namespace SlaveMatrix
 
     	protected Color2 c2;
 
-    	protected Ele he;
+    	protected Element he;
 
     	protected sep sep;
 
@@ -55,13 +55,13 @@ namespace SlaveMatrix
     	{
     	}
 
-    	public Stamp(ModeEventDispatcher Med, RenderArea Are, Character Cha, Body Bod, EleD EleD)
+    	public Stamp(ModeEventDispatcher Med, RenderArea Are, Character Cha, Body Bod, ElementData ElementData)
     	{
     		this.Med = Med;
     		this.Are = Are;
     		this.Cha = Cha;
     		this.Bod = Bod;
-    		this.EleD = EleD;
+    		this.ElementData = ElementData;
     	}
 
     	public virtual void Dispose()
@@ -83,7 +83,7 @@ namespace SlaveMatrix
 
     	public void LegClear()
     	{
-    		sep[] array = sta.Where((sep e) => e.Ele is 腿_人 || e.Ele is Leg_人 || e.Ele is 足_人).ToArray();
+    		sep[] array = sta.Where((sep e) => e.Element is 腿_人 || e.Element is Leg_人 || e.Element is 足_人).ToArray();
     		for (int i = 0; i < array.Length; i++)
     		{
     			sep item = array[i];
@@ -92,7 +92,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool チェック1(Ele e)
+    	public bool チェック1(Element e)
     	{
     		if (e != null && !(e is 性器) && !(e is 肛門))
     		{
@@ -101,7 +101,7 @@ namespace SlaveMatrix
     		return false;
     	}
 
-    	public bool チェック2(Ele e)
+    	public bool チェック2(Element e)
     	{
     		if (e != null && !(e is 手_人) && !(e is 性器) && !(e is 肛門))
     		{

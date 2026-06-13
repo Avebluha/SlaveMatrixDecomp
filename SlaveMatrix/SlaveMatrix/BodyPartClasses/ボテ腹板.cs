@@ -2,7 +2,7 @@ using _2DGAMELIB;
 
 namespace SlaveMatrix
 {
-    public class ボテ腹板 : Ele
+    public class ボテ腹板 : Element
     {
     	public ShapePart X0Y0_腹板4_腹板;
 

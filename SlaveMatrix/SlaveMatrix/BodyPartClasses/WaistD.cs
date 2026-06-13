@@ -5,7 +5,7 @@ using _2DGAMELIB;
 namespace SlaveMatrix
 {
     [Serializable]
-    public class WaistD : EleD
+    public class WaistD : ElementData
     {
     	public bool Waist_表示 = true;
 
@@ -109,41 +109,41 @@ namespace SlaveMatrix
 
     	public bool スライム;
 
-    	public List<EleD> Torso_接続 = new List<EleD>();
+    	public List<ElementData> Torso_接続 = new List<ElementData>();
 
-    	public List<EleD> 腿左_接続 = new List<EleD>();
+    	public List<ElementData> 腿左_接続 = new List<ElementData>();
 
-    	public List<EleD> 腿右_接続 = new List<EleD>();
+    	public List<ElementData> 腿右_接続 = new List<ElementData>();
 
-    	public List<EleD> 膣基_接続 = new List<EleD>();
+    	public List<ElementData> 膣基_接続 = new List<ElementData>();
 
-    	public List<EleD> 肛門_接続 = new List<EleD>();
+    	public List<ElementData> 肛門_接続 = new List<ElementData>();
 
-    	public List<EleD> 尾_接続 = new List<EleD>();
+    	public List<ElementData> 尾_接続 = new List<ElementData>();
 
-    	public List<EleD> 半身_接続 = new List<EleD>();
+    	public List<ElementData> 半身_接続 = new List<ElementData>();
 
-    	public List<EleD> 上着_接続 = new List<EleD>();
+    	public List<ElementData> 上着_接続 = new List<ElementData>();
 
-    	public List<EleD> 肌_接続 = new List<EleD>();
+    	public List<ElementData> 肌_接続 = new List<ElementData>();
 
-    	public List<EleD> 翼左_接続 = new List<EleD>();
+    	public List<ElementData> 翼左_接続 = new List<ElementData>();
 
-    	public List<EleD> 翼右_接続 = new List<EleD>();
+    	public List<ElementData> 翼右_接続 = new List<ElementData>();
 
     	public WaistD()
     	{
     		ThisType = GetType();
     	}
 
-    	public void 胴接続(EleD e)
+    	public void 胴接続(ElementData e)
     	{
     		Torso_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.Waist_Torso_接続;
     	}
 
-    	public void 腿左接続(EleD e)
+    	public void 腿左接続(ElementData e)
     	{
     		腿左_接続.Add(e);
     		e.Par = this;
@@ -152,13 +152,13 @@ namespace SlaveMatrix
     		{
     			return;
     		}
-    		foreach (EleD item in e.EnumEleD())
+    		foreach (ElementData item in e.EnumEleD())
     		{
     			item.尺度B = 0.9;
     		}
     	}
 
-    	public void 腿右接続(EleD e)
+    	public void 腿右接続(ElementData e)
     	{
     		腿右_接続.Add(e);
     		e.Par = this;
@@ -167,67 +167,67 @@ namespace SlaveMatrix
     		{
     			return;
     		}
-    		foreach (EleD item in e.EnumEleD())
+    		foreach (ElementData item in e.EnumEleD())
     		{
     			item.尺度B = 0.9;
     		}
     	}
 
-    	public void 膣基接続(EleD e)
+    	public void 膣基接続(ElementData e)
     	{
     		膣基_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.Waist_膣基_接続;
     	}
 
-    	public void 肛門接続(EleD e)
+    	public void 肛門接続(ElementData e)
     	{
     		肛門_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.Waist_肛門_接続;
     	}
 
-    	public void 尾接続(EleD e)
+    	public void 尾接続(ElementData e)
     	{
     		尾_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.Waist_尾_接続;
     		if (e is 尾_ヘD || e is 尾_ウD || e is 尾_ガD || e is 尾_蟲D)
     		{
-    			foreach (EleD item in e.EnumEleD())
+    			foreach (ElementData item in e.EnumEleD())
     			{
     				item.尺度B = 0.6;
     			}
     			return;
     		}
-    		foreach (EleD item2 in e.EnumEleD())
+    		foreach (ElementData item2 in e.EnumEleD())
     		{
     			item2.尺度B = 1.0;
     		}
     	}
 
-    	public void 半身接続(EleD e)
+    	public void 半身接続(ElementData e)
     	{
     		半身_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.Waist_半身_接続;
     	}
 
-    	public void 上着接続(EleD e)
+    	public void 上着接続(ElementData e)
     	{
     		上着_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.Waist_上着_接続;
     	}
 
-    	public void 肌接続(EleD e)
+    	public void 肌接続(ElementData e)
     	{
     		肌_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.Waist_肌_接続;
     	}
 
-    	public void 翼左接続(EleD e)
+    	public void 翼左接続(ElementData e)
     	{
     		翼左_接続.Add(e);
     		e.Par = this;
@@ -236,13 +236,13 @@ namespace SlaveMatrix
     		{
     			return;
     		}
-    		foreach (EleD item in e.EnumEleD())
+    		foreach (ElementData item in e.EnumEleD())
     		{
     			item.尺度B = 1.0;
     		}
     	}
 
-    	public void 翼右接続(EleD e)
+    	public void 翼右接続(ElementData e)
     	{
     		翼右_接続.Add(e);
     		e.Par = this;
@@ -251,13 +251,13 @@ namespace SlaveMatrix
     		{
     			return;
     		}
-    		foreach (EleD item in e.EnumEleD())
+    		foreach (ElementData item in e.EnumEleD())
     		{
     			item.尺度B = 1.0;
     		}
     	}
 
-    	public override Ele GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
+    	public override Element GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
     	{
     		return new Waist(DisUnit, 配色指定, 体配色, Med, this);
     	}

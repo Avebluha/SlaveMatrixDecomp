@@ -221,11 +221,11 @@ namespace SlaveMatrix
 
     	public ColorP X0Y1_欠け3CP;
 
-    	public Ele[] 軸1_接続;
+    	public Element[] 軸1_接続;
 
-    	public Ele[] 軸2_接続;
+    	public Element[] 軸2_接続;
 
-    	public Ele[] 軸3_接続;
+    	public Element[] 軸3_接続;
 
     	public override bool 欠損
     	{
@@ -826,10 +826,10 @@ namespace SlaveMatrix
     		{
     			表示 = false;
     		}
-    		Ele f;
+    		Element f;
     		if (e.軸1_接続.Count > 0)
     		{
-    			軸1_接続 = e.軸1_接続.Select(delegate(EleD g)
+    			軸1_接続 = e.軸1_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 前翅_甲2;
@@ -840,7 +840,7 @@ namespace SlaveMatrix
     		}
     		if (e.軸2_接続.Count > 0)
     		{
-    			軸2_接続 = e.軸2_接続.Select(delegate(EleD g)
+    			軸2_接続 = e.軸2_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 前翅_甲2;
@@ -851,7 +851,7 @@ namespace SlaveMatrix
     		}
     		if (e.軸3_接続.Count > 0)
     		{
-    			軸3_接続 = e.軸3_接続.Select(delegate(EleD g)
+    			軸3_接続 = e.軸3_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 前翅_甲2;

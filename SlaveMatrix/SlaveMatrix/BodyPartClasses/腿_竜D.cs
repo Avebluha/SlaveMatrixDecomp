@@ -35,14 +35,14 @@ namespace SlaveMatrix
     		ThisType = GetType();
     	}
 
-    	public override void Leg接続(EleD e)
+    	public override void Leg接続(ElementData e)
     	{
     		Leg_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.腿_竜_Leg_接続;
     	}
 
-    	public override Ele GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
+    	public override Element GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
     	{
     		return new 腿_竜(DisUnit, 配色指定, 体配色, Med, this);
     	}

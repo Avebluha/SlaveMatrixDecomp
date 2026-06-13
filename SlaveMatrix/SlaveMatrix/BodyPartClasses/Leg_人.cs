@@ -1993,9 +1993,9 @@ namespace SlaveMatrix
 
     	public スタンプW 鞭痕;
 
-    	public Ele[] 脚輪下_接続;
+    	public Element[] 脚輪下_接続;
 
-    	public Ele[] 脚輪上_接続;
+    	public Element[] 脚輪上_接続;
 
     	public override bool 欠損
     	{
@@ -6594,10 +6594,10 @@ namespace SlaveMatrix
     		{
     			表示 = false;
     		}
-    		Ele f;
+    		Element f;
     		if (e.足_接続.Count > 0)
     		{
-    			足_接続 = e.足_接続.Select(delegate(EleD g)
+    			足_接続 = e.足_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = Leg_人2;
@@ -6608,7 +6608,7 @@ namespace SlaveMatrix
     		}
     		if (e.脚輪下_接続.Count > 0)
     		{
-    			脚輪下_接続 = e.脚輪下_接続.Select(delegate(EleD g)
+    			脚輪下_接続 = e.脚輪下_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = Leg_人2;
@@ -6619,7 +6619,7 @@ namespace SlaveMatrix
     		}
     		if (e.脚輪上_接続.Count > 0)
     		{
-    			脚輪上_接続 = e.脚輪上_接続.Select(delegate(EleD g)
+    			脚輪上_接続 = e.脚輪上_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = Leg_人2;

@@ -6,7 +6,7 @@ namespace SlaveMatrix
     {
     	public ContactType c;
 
-    	public Ele e;
+    	public Element e;
 
     	public ShapePart p;
     }

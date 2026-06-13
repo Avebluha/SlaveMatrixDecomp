@@ -1,6 +1,6 @@
 namespace SlaveMatrix
 {
-    public class 節 : Ele
+    public class 節 : Element
     {
     }
 }

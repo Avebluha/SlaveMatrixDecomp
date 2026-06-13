@@ -35,28 +35,28 @@ namespace SlaveMatrix
     		ThisType = GetType();
     	}
 
-    	public override void 左接続(EleD e)
+    	public override void 左接続(ElementData e)
     	{
     		左_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.Torso_蛇_左_接続;
     	}
 
-    	public override void 右接続(EleD e)
+    	public override void 右接続(ElementData e)
     	{
     		右_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.Torso_蛇_右_接続;
     	}
 
-    	public override void Torso接続(EleD e)
+    	public override void Torso接続(ElementData e)
     	{
     		Torso_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.Torso_蛇_Torso_接続;
     	}
 
-    	public override Ele GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
+    	public override Element GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
     	{
     		return new Torso_蛇(DisUnit, 配色指定, 体配色, Med, this);
     	}

@@ -493,7 +493,7 @@ namespace SlaveMatrix
 
     	private bool 鱗_;
 
-    	public Ele[] 頭部後_接続;
+    	public Element[] 頭部後_接続;
 
     	public override bool 欠損
     	{
@@ -2080,8 +2080,8 @@ namespace SlaveMatrix
     		}
     		if (e.頭部後_接続.Count > 0)
     		{
-    			Ele f;
-    			頭部後_接続 = e.頭部後_接続.Select(delegate(EleD g)
+    			Element f;
+    			頭部後_接続 = e.頭部後_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 頭頂_宇2;

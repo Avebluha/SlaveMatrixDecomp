@@ -439,37 +439,37 @@ namespace SlaveMatrix
 
     	public bool 鎖表示;
 
-    	public List<EleD> 脚輪下_接続 = new List<EleD>();
+    	public List<ElementData> 脚輪下_接続 = new List<ElementData>();
 
-    	public List<EleD> 脚輪上_接続 = new List<EleD>();
+    	public List<ElementData> 脚輪上_接続 = new List<ElementData>();
 
     	public Leg_人D()
     	{
     		ThisType = GetType();
     	}
 
-    	public override void 足接続(EleD e)
+    	public override void 足接続(ElementData e)
     	{
     		足_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.Leg_人_足_接続;
     	}
 
-    	public void 脚輪下接続(EleD e)
+    	public void 脚輪下接続(ElementData e)
     	{
     		脚輪下_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.Leg_人_脚輪下_接続;
     	}
 
-    	public void 脚輪上接続(EleD e)
+    	public void 脚輪上接続(ElementData e)
     	{
     		脚輪上_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.Leg_人_脚輪上_接続;
     	}
 
-    	public override Ele GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
+    	public override Element GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
     	{
     		return new Leg_人(DisUnit, 配色指定, 体配色, Med, this);
     	}

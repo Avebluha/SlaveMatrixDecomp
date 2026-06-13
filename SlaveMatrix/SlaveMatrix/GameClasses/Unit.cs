@@ -289,13 +289,13 @@ namespace SlaveMatrix
     				bool flag = false;
     				while (!flag)
     				{
-    					foreach (EleD item in ChaD.body_tree.EnumEleD())
+    					foreach (ElementData item in ChaD.body_tree.EnumEleD())
     					{
     						flag |= item.傷物処理();
     					}
     				}
     				{
-    					foreach (EleD item2 in ChaD.body_tree.EnumEleD())
+    					foreach (ElementData item2 in ChaD.body_tree.EnumEleD())
     					{
     						item2.欠損 = 0.3.Lot();
     					}
@@ -306,7 +306,7 @@ namespace SlaveMatrix
     			{
     				ChaD.body_color.血統.Remove(GameText.傷物);
     			}
-    			foreach (EleD item3 in ChaD.body_tree.EnumEleD())
+    			foreach (ElementData item3 in ChaD.body_tree.EnumEleD())
     			{
     				item3.SetValuesD("傷", false);
     				item3.欠損 = false;
@@ -951,7 +951,7 @@ namespace SlaveMatrix
 
     	public void Set構成特性()
     	{
-    		EleD[] array = ChaD.body_tree.EnumEleD().ToArray();
+    		ElementData[] array = ChaD.body_tree.EnumEleD().ToArray();
     		int num = 0;
     		int num2 = 0;
     		int num3 = 0;
@@ -961,8 +961,8 @@ namespace SlaveMatrix
     		胸肌D 胸肌D2 = null;
     		胸肌D 胸肌D3 = null;
     		Is増殖可 = false;
-    		EleD[] array2 = array;
-    		foreach (EleD eleD in array2)
+    		ElementData[] array2 = array;
+    		foreach (ElementData eleD in array2)
     		{
     			if (eleD is 手_人D)
     			{

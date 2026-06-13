@@ -18,7 +18,7 @@ namespace SlaveMatrix
 
     	public CM キャップ3;
 
-    	private Dictionary<Ele, CM> キャップ = new Dictionary<Ele, CM>();
+    	private Dictionary<Element, CM> キャップ = new Dictionary<Element, CM>();
 
     	private キャップ情報 キャップ着;
 
@@ -128,7 +128,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public void 吸着(Ele 対象)
+    	public void 吸着(Element 対象)
     	{
     		調教UI.擬音キュー.Enqueue(delegate(RenderArea a)
     		{
@@ -136,7 +136,7 @@ namespace SlaveMatrix
     		});
     	}
 
-    	public void 吸脱(Ele 対象)
+    	public void 吸脱(Element 対象)
     	{
     		調教UI.擬音キュー.Enqueue(delegate(RenderArea a)
     		{
@@ -144,7 +144,7 @@ namespace SlaveMatrix
     		});
     	}
 
-    	public void 振動(Ele 対象)
+    	public void 振動(Element 対象)
     	{
     		if ((対象 is キャップ1 && CP中.GetFlag(0.2)) || (対象 is キャップ2 && !対象.右 && CP左.GetFlag(0.2)) || (対象 is キャップ2 && 対象.右 && CP右.GetFlag(0.2)))
     		{
@@ -254,7 +254,7 @@ namespace SlaveMatrix
     			キャップ3.Show = false;
     			キャップ3.使用状態 = UsageStatus.Attach;
     		}
-    		調教UI.Focus.Ele.位置B = p;
+    		調教UI.Focus.Element.位置B = p;
     		if (!ハンドf)
     		{
     			調教UI.Set持ち手();
@@ -273,7 +273,7 @@ namespace SlaveMatrix
     				キャップ[Bod.キャップ1].DraShow = true;
     				キャップ[Bod.キャップ1].StaShow = true;
     				キャップ[Bod.キャップ1].描画Show = true;
-    				キャップ[Bod.キャップ1].Ele.Intensity = 0.5;
+    				キャップ[Bod.キャップ1].Element.Intensity = 0.5;
     				キャップ[Bod.キャップ1].使用状態 = UsageStatus.Standby;
     				キャップ.Remove(Bod.キャップ1);
     			}
@@ -376,7 +376,7 @@ namespace SlaveMatrix
 
     	public void Down(ref MouseButtons mb, ref Vector2D cp, ref Vector2D op, ref Color hc, ref ContactD cd)
     	{
-    		if (調教UI.Focus.Ele.Intensity == 1.0)
+    		if (調教UI.Focus.Element.Intensity == 1.0)
     		{
     			if (ハンドf)
     			{
@@ -419,7 +419,7 @@ namespace SlaveMatrix
     						キャップ[Bod.キャップ1].DraShow = true;
     						キャップ[Bod.キャップ1].StaShow = true;
     						キャップ[Bod.キャップ1].描画Show = true;
-    						キャップ[Bod.キャップ1].Ele.Intensity = 0.5;
+    						キャップ[Bod.キャップ1].Element.Intensity = 0.5;
     						キャップ[Bod.キャップ1].使用状態 = UsageStatus.Standby;
     						キャップ.Remove(Bod.キャップ1);
     						キャップ中着 = false;
@@ -459,7 +459,7 @@ namespace SlaveMatrix
     						キャップ[Bod.キャップ2左].DraShow = true;
     						キャップ[Bod.キャップ2左].StaShow = true;
     						キャップ[Bod.キャップ2左].描画Show = true;
-    						キャップ[Bod.キャップ2左].Ele.Intensity = 0.5;
+    						キャップ[Bod.キャップ2左].Element.Intensity = 0.5;
     						キャップ[Bod.キャップ2左].使用状態 = UsageStatus.Standby;
     						キャップ.Remove(Bod.キャップ2左);
     						キャップ左着 = false;
@@ -503,7 +503,7 @@ namespace SlaveMatrix
     						キャップ[Bod.キャップ2右].DraShow = true;
     						キャップ[Bod.キャップ2右].StaShow = true;
     						キャップ[Bod.キャップ2右].描画Show = true;
-    						キャップ[Bod.キャップ2右].Ele.Intensity = 0.5;
+    						キャップ[Bod.キャップ2右].Element.Intensity = 0.5;
     						キャップ[Bod.キャップ2右].使用状態 = UsageStatus.Standby;
     						キャップ.Remove(Bod.キャップ2右);
     						キャップ右着 = false;
@@ -700,19 +700,19 @@ namespace SlaveMatrix
     		キャップ1.DraShow = true;
     		キャップ1.StaShow = true;
     		キャップ1.描画Show = true;
-    		キャップ1.Ele.Intensity = 0.5;
+    		キャップ1.Element.Intensity = 0.5;
     		キャップ1.使用状態 = UsageStatus.Standby;
     		キャップ2.Show = true;
     		キャップ2.DraShow = true;
     		キャップ2.StaShow = true;
     		キャップ2.描画Show = true;
-    		キャップ2.Ele.Intensity = 0.5;
+    		キャップ2.Element.Intensity = 0.5;
     		キャップ2.使用状態 = UsageStatus.Standby;
     		キャップ3.Show = true;
     		キャップ3.DraShow = true;
     		キャップ3.StaShow = true;
     		キャップ3.描画Show = true;
-    		キャップ3.Ele.Intensity = 0.5;
+    		キャップ3.Element.Intensity = 0.5;
     		キャップ3.使用状態 = UsageStatus.Standby;
     		base.Reset();
     		CP中.Reset();

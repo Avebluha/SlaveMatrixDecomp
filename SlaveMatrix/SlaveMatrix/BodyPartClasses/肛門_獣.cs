@@ -23,7 +23,7 @@ namespace SlaveMatrix
 
     	public ColorP X0Y0_肛門1CP;
 
-    	public Ele[] 肛門精液_接続;
+    	public Element[] 肛門精液_接続;
 
     	public override bool 欠損
     	{
@@ -175,8 +175,8 @@ namespace SlaveMatrix
     		}
     		if (e.肛門精液_接続.Count > 0)
     		{
-    			Ele f;
-    			肛門精液_接続 = e.肛門精液_接続.Select(delegate(EleD g)
+    			Element f;
+    			肛門精液_接続 = e.肛門精液_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 肛門_獣2;

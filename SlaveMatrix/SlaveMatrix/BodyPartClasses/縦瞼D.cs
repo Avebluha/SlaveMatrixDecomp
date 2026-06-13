@@ -4,7 +4,7 @@ using _2DGAMELIB;
 namespace SlaveMatrix
 {
     [Serializable]
-    public class 縦瞼D : EleD
+    public class 縦瞼D : ElementData
     {
     	public bool 瞼左_瞼_表示 = true;
 
@@ -48,7 +48,7 @@ namespace SlaveMatrix
     		return this;
     	}
 
-    	public override Ele GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
+    	public override Element GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
     	{
     		return new 縦瞼(DisUnit, 配色指定, 体配色, Med, this);
     	}

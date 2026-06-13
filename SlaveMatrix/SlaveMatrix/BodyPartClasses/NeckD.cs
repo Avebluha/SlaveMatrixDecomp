@@ -5,7 +5,7 @@ using _2DGAMELIB;
 namespace SlaveMatrix
 {
     [Serializable]
-    public class NeckD : EleD
+    public class NeckD : ElementData
     {
     	public bool 植性_蔦_表示;
 
@@ -113,21 +113,21 @@ namespace SlaveMatrix
 
     	public bool 鎖表示;
 
-    	public List<EleD> Head_接続 = new List<EleD>();
+    	public List<ElementData> Head_接続 = new List<ElementData>();
 
     	public NeckD()
     	{
     		ThisType = GetType();
     	}
 
-    	public void 頭接続(EleD e)
+    	public void 頭接続(ElementData e)
     	{
     		Head_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.Neck_Head_接続;
     	}
 
-    	public override Ele GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
+    	public override Element GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
     	{
     		return new Neck(DisUnit, 配色指定, 体配色, Med, this);
     	}

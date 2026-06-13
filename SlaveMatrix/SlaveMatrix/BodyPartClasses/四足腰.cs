@@ -3,7 +3,7 @@ using _2DGAMELIB;
 
 namespace SlaveMatrix
 {
-    public class 四足腰 : Ele
+    public class 四足腰 : Element
     {
     	public ShapePart X0Y0_Waist;
 
@@ -621,25 +621,25 @@ namespace SlaveMatrix
 
     	public ColorP X0Y4_竜性_右_鱗2CP;
 
-    	public Ele[] 腿左_接続;
+    	public Element[] 腿左_接続;
 
-    	public Ele[] 腿右_接続;
+    	public Element[] 腿右_接続;
 
-    	public Ele[] 膣基_接続;
+    	public Element[] 膣基_接続;
 
-    	public Ele[] 肛門_接続;
+    	public Element[] 肛門_接続;
 
-    	public Ele[] 尾_接続;
+    	public Element[] 尾_接続;
 
-    	public Ele[] 半身_接続;
+    	public Element[] 半身_接続;
 
-    	public Ele[] 上着_接続;
+    	public Element[] 上着_接続;
 
-    	public Ele[] 肌_接続;
+    	public Element[] 肌_接続;
 
-    	public Ele[] 翼左_接続;
+    	public Element[] 翼左_接続;
 
-    	public Ele[] 翼右_接続;
+    	public Element[] 翼右_接続;
 
     	public override bool 欠損
     	{
@@ -1642,10 +1642,10 @@ namespace SlaveMatrix
     		{
     			表示 = false;
     		}
-    		Ele f;
+    		Element f;
     		if (e.腿左_接続.Count > 0)
     		{
-    			腿左_接続 = e.腿左_接続.Select(delegate(EleD g)
+    			腿左_接続 = e.腿左_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 四足腰2;
@@ -1656,7 +1656,7 @@ namespace SlaveMatrix
     		}
     		if (e.腿右_接続.Count > 0)
     		{
-    			腿右_接続 = e.腿右_接続.Select(delegate(EleD g)
+    			腿右_接続 = e.腿右_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 四足腰2;
@@ -1667,7 +1667,7 @@ namespace SlaveMatrix
     		}
     		if (e.膣基_接続.Count > 0)
     		{
-    			膣基_接続 = e.膣基_接続.Select(delegate(EleD g)
+    			膣基_接続 = e.膣基_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 四足腰2;
@@ -1678,7 +1678,7 @@ namespace SlaveMatrix
     		}
     		if (e.肛門_接続.Count > 0)
     		{
-    			肛門_接続 = e.肛門_接続.Select(delegate(EleD g)
+    			肛門_接続 = e.肛門_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 四足腰2;
@@ -1689,7 +1689,7 @@ namespace SlaveMatrix
     		}
     		if (e.尾_接続.Count > 0)
     		{
-    			尾_接続 = e.尾_接続.Select(delegate(EleD g)
+    			尾_接続 = e.尾_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 四足腰2;
@@ -1700,7 +1700,7 @@ namespace SlaveMatrix
     		}
     		if (e.半身_接続.Count > 0)
     		{
-    			半身_接続 = e.半身_接続.Select(delegate(EleD g)
+    			半身_接続 = e.半身_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 四足腰2;
@@ -1711,7 +1711,7 @@ namespace SlaveMatrix
     		}
     		if (e.上着_接続.Count > 0)
     		{
-    			上着_接続 = e.上着_接続.Select(delegate(EleD g)
+    			上着_接続 = e.上着_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 四足腰2;
@@ -1722,7 +1722,7 @@ namespace SlaveMatrix
     		}
     		if (e.肌_接続.Count > 0)
     		{
-    			肌_接続 = e.肌_接続.Select(delegate(EleD g)
+    			肌_接続 = e.肌_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 四足腰2;
@@ -1733,7 +1733,7 @@ namespace SlaveMatrix
     		}
     		if (e.翼左_接続.Count > 0)
     		{
-    			翼左_接続 = e.翼左_接続.Select(delegate(EleD g)
+    			翼左_接続 = e.翼左_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 四足腰2;
@@ -1744,7 +1744,7 @@ namespace SlaveMatrix
     		}
     		if (e.翼右_接続.Count > 0)
     		{
-    			翼右_接続 = e.翼右_接続.Select(delegate(EleD g)
+    			翼右_接続 = e.翼右_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 四足腰2;

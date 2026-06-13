@@ -6,9 +6,9 @@ using _2DGAMELIB;
 
 namespace SlaveMatrix
 {
-    public class Ele : IDisposable
+    public class Element : IDisposable
     {
-    	public Ele Par;
+    	public Element Par;
 
     	public ConnectionInfo ConnectionType;
 
@@ -1000,7 +1000,7 @@ namespace SlaveMatrix
     		角度B = 0.0;
     	}
 
-    	public void SetAngle(Ele e)
+    	public void SetAngle(Element e)
     	{
     		foreach (var item in Body.EnumAllPar().Zip(e.Body.EnumAllPar(), (ShapePart a0, ShapePart a1) => new { a0, a1 }))
     		{
@@ -1013,22 +1013,22 @@ namespace SlaveMatrix
     	{
     	}
 
-    	public virtual IEnumerable<Ele> EnumEle()
+    	public virtual IEnumerable<Element> EnumEle()
     	{
     		yield return this;
     		foreach (FieldInfo item in from e in ThisType.GetFields()
     			where e.FieldType.ToString() == Sta.at
     			select e)
     		{
-    			Ele[] array = (Ele[])item.GetValue(this);
+    			Element[] array = (Element[])item.GetValue(this);
     			if (array == null)
     			{
     				continue;
     			}
-    			Ele[] array2 = array;
-    			foreach (Ele ele in array2)
+    			Element[] array2 = array;
+    			foreach (Element ele in array2)
     			{
-    				foreach (Ele item2 in ele.EnumEle())
+    				foreach (Element item2 in ele.EnumEle())
     				{
     					yield return item2;
     				}
@@ -1036,12 +1036,12 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public IEnumerable<Ele> EnumConnectionType(ConnectionInfo 接続情報)
+    	public IEnumerable<Element> EnumConnectionType(ConnectionInfo 接続情報)
     	{
-    		Ele[] array = (Ele[])ThisType.GetField(接続情報.ToString().Remove(0, ThisType.Name.Length + 1)).GetValue(this);
+    		Element[] array = (Element[])ThisType.GetField(接続情報.ToString().Remove(0, ThisType.Name.Length + 1)).GetValue(this);
     		if (array != null)
     		{
-    			Ele[] array2 = array;
+    			Element[] array2 = array;
     			for (int i = 0; i < array2.Length; i++)
     			{
     				yield return array2[i];

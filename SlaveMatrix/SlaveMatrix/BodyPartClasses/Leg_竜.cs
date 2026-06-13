@@ -747,8 +747,8 @@ namespace SlaveMatrix
     		}
     		if (e.足_接続.Count > 0)
     		{
-    			Ele f;
-    			足_接続 = e.足_接続.Select(delegate(EleD g)
+    			Element f;
+    			足_接続 = e.足_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = Leg_竜2;

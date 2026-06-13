@@ -3,7 +3,7 @@ using _2DGAMELIB;
 
 namespace SlaveMatrix
 {
-    public class 触手 : Ele
+    public class 触手 : Element
     {
     	public virtual IEnumerable<ShapePart> Enum軸()
     	{

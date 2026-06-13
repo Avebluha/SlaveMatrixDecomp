@@ -1,6 +1,6 @@
 namespace SlaveMatrix
 {
-    public class 前翅 : Ele
+    public class 前翅 : Element
     {
     }
 }

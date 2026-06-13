@@ -1,6 +1,6 @@
 namespace SlaveMatrix
 {
-    public class BackHair1 : Ele
+    public class BackHair1 : Element
     {
     	public override double 肥大
     	{

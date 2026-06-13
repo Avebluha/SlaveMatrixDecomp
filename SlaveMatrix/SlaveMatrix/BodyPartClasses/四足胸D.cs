@@ -73,131 +73,131 @@ namespace SlaveMatrix
 
     	public double 筋肉濃度 = 1.0;
 
-    	public List<EleD> 脇左_接続 = new List<EleD>();
+    	public List<ElementData> 脇左_接続 = new List<ElementData>();
 
-    	public List<EleD> 脇右_接続 = new List<EleD>();
+    	public List<ElementData> 脇右_接続 = new List<ElementData>();
 
-    	public List<EleD> Torso_接続 = new List<EleD>();
+    	public List<ElementData> Torso_接続 = new List<ElementData>();
 
-    	public List<EleD> 胸左_接続 = new List<EleD>();
+    	public List<ElementData> 胸左_接続 = new List<ElementData>();
 
-    	public List<EleD> 胸右_接続 = new List<EleD>();
+    	public List<ElementData> 胸右_接続 = new List<ElementData>();
 
-    	public List<EleD> 肌_接続 = new List<EleD>();
+    	public List<ElementData> 肌_接続 = new List<ElementData>();
 
-    	public List<EleD> 翼上左_接続 = new List<EleD>();
+    	public List<ElementData> 翼上左_接続 = new List<ElementData>();
 
-    	public List<EleD> 翼上右_接続 = new List<EleD>();
+    	public List<ElementData> 翼上右_接続 = new List<ElementData>();
 
-    	public List<EleD> 翼下左_接続 = new List<EleD>();
+    	public List<ElementData> 翼下左_接続 = new List<ElementData>();
 
-    	public List<EleD> 翼下右_接続 = new List<EleD>();
+    	public List<ElementData> 翼下右_接続 = new List<ElementData>();
 
-    	public List<EleD> 背中_接続 = new List<EleD>();
+    	public List<ElementData> 背中_接続 = new List<ElementData>();
 
     	public 四足胸D()
     	{
     		ThisType = GetType();
     	}
 
-    	public void 脇左接続(EleD e)
+    	public void 脇左接続(ElementData e)
     	{
     		脇左_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.四足胸_脇左_接続;
     	}
 
-    	public void 脇右接続(EleD e)
+    	public void 脇右接続(ElementData e)
     	{
     		脇右_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.四足胸_脇右_接続;
     	}
 
-    	public void 胴接続(EleD e)
+    	public void 胴接続(ElementData e)
     	{
     		Torso_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.四足胸_Torso_接続;
     	}
 
-    	public void 胸左接続(EleD e)
+    	public void 胸左接続(ElementData e)
     	{
     		胸左_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.四足胸_胸左_接続;
     	}
 
-    	public void 胸右接続(EleD e)
+    	public void 胸右接続(ElementData e)
     	{
     		胸右_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.四足胸_胸右_接続;
     	}
 
-    	public void 肌接続(EleD e)
+    	public void 肌接続(ElementData e)
     	{
     		肌_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.四足胸_肌_接続;
     	}
 
-    	public void 翼上左接続(EleD e)
+    	public void 翼上左接続(ElementData e)
     	{
     		翼上左_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.四足胸_翼上左_接続;
-    		foreach (EleD item in e.EnumEleD())
+    		foreach (ElementData item in e.EnumEleD())
     		{
     			item.尺度B = 1.1;
     		}
     	}
 
-    	public void 翼上右接続(EleD e)
+    	public void 翼上右接続(ElementData e)
     	{
     		翼上右_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.四足胸_翼上右_接続;
-    		foreach (EleD item in e.EnumEleD())
+    		foreach (ElementData item in e.EnumEleD())
     		{
     			item.尺度B = 1.1;
     		}
     	}
 
-    	public void 翼下左接続(EleD e)
+    	public void 翼下左接続(ElementData e)
     	{
     		翼下左_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.四足胸_翼下左_接続;
-    		foreach (EleD item in e.EnumEleD())
+    		foreach (ElementData item in e.EnumEleD())
     		{
     			item.尺度B = 1.1;
     		}
     	}
 
-    	public void 翼下右接続(EleD e)
+    	public void 翼下右接続(ElementData e)
     	{
     		翼下右_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.四足胸_翼下右_接続;
-    		foreach (EleD item in e.EnumEleD())
+    		foreach (ElementData item in e.EnumEleD())
     		{
     			item.尺度B = 1.1;
     		}
     	}
 
-    	public void 背中接続(EleD e)
+    	public void 背中接続(ElementData e)
     	{
     		背中_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.四足胸_背中_接続;
-    		foreach (EleD item in e.EnumEleD())
+    		foreach (ElementData item in e.EnumEleD())
     		{
     			item.尺度B = 1.1;
     		}
     	}
 
-    	public override Ele GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
+    	public override Element GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
     	{
     		return new 四足胸(DisUnit, 配色指定, 体配色, Med, this);
     	}

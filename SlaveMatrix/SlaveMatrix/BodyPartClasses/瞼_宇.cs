@@ -71,7 +71,7 @@ namespace SlaveMatrix
 
     	public ColorP X0Y4_瞬膜CP;
 
-    	public Ele[] 涙_接続;
+    	public Element[] 涙_接続;
 
     	public override bool 欠損
     	{
@@ -264,8 +264,8 @@ namespace SlaveMatrix
     		}
     		if (e.涙_接続.Count > 0)
     		{
-    			Ele f;
-    			涙_接続 = e.涙_接続.Select(delegate(EleD g)
+    			Element f;
+    			涙_接続 = e.涙_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 瞼_宇2;

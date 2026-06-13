@@ -1574,7 +1574,7 @@ namespace SlaveMatrix
 
     	public 拘束鎖 鎖4;
 
-    	public Ele[] 尾先_接続;
+    	public Element[] 尾先_接続;
 
     	public override bool 欠損
     	{
@@ -6327,8 +6327,8 @@ namespace SlaveMatrix
     		}
     		if (e.尾先_接続.Count > 0)
     		{
-    			Ele f;
-    			尾先_接続 = e.尾先_接続.Select(delegate(EleD g)
+    			Element f;
+    			尾先_接続 = e.尾先_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 尾_ヘ2;

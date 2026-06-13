@@ -2286,8 +2286,8 @@ namespace SlaveMatrix
     		}
     		if (e.手_接続.Count > 0)
     		{
-    			Ele f;
-    			手_接続 = e.手_接続.Select(delegate(EleD g)
+    			Element f;
+    			手_接続 = e.手_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = LowerArm_鳥2;

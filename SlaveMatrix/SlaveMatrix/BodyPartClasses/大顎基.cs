@@ -3,7 +3,7 @@ using _2DGAMELIB;
 
 namespace SlaveMatrix
 {
-    public class 大顎基 : Ele
+    public class 大顎基 : Element
     {
     	public ShapePart X0Y0_甲殻下;
 
@@ -13,9 +13,9 @@ namespace SlaveMatrix
 
     	public ColorP X0Y0_甲殻下CP;
 
-    	public Ele[] 顎左_接続;
+    	public Element[] 顎左_接続;
 
-    	public Ele[] 顎右_接続;
+    	public Element[] 顎右_接続;
 
     	public override bool 欠損
     	{
@@ -165,7 +165,7 @@ namespace SlaveMatrix
     		set
     		{
     			位置C = new Vector2D(位置C.X, -0.013 * value);
-    			foreach (Ele item in EnumEle())
+    			foreach (Element item in EnumEle())
     			{
     				item.尺度YC = 1.0 - 0.05 * value;
     			}
@@ -451,10 +451,10 @@ namespace SlaveMatrix
     		{
     			表示 = false;
     		}
-    		Ele f;
+    		Element f;
     		if (e.顎左_接続.Count > 0)
     		{
-    			顎左_接続 = e.顎左_接続.Select(delegate(EleD g)
+    			顎左_接続 = e.顎左_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 大顎基2;
@@ -465,7 +465,7 @@ namespace SlaveMatrix
     		}
     		if (e.顎右_接続.Count > 0)
     		{
-    			顎右_接続 = e.顎右_接続.Select(delegate(EleD g)
+    			顎右_接続 = e.顎右_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 大顎基2;

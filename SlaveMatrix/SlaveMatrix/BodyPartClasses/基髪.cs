@@ -3,7 +3,7 @@ using _2DGAMELIB;
 
 namespace SlaveMatrix
 {
-    public class 基髪 : Ele
+    public class 基髪 : Element
     {
     	public ShapePart X0Y0_髪;
 
@@ -11,17 +11,17 @@ namespace SlaveMatrix
 
     	public ColorP X0Y0_髪CP;
 
-    	public Ele[] 頭頂左_接続;
+    	public Element[] 頭頂左_接続;
 
-    	public Ele[] 頭頂右_接続;
+    	public Element[] 頭頂右_接続;
 
-    	public Ele[] 横髪左_接続;
+    	public Element[] 横髪左_接続;
 
-    	public Ele[] 横髪右_接続;
+    	public Element[] 横髪右_接続;
 
-    	public Ele[] 前髪_接続;
+    	public Element[] 前髪_接続;
 
-    	public Ele[] 後髪_接続;
+    	public Element[] 後髪_接続;
 
     	public override bool 欠損
     	{
@@ -161,10 +161,10 @@ namespace SlaveMatrix
     		{
     			表示 = false;
     		}
-    		Ele f;
+    		Element f;
     		if (e.頭頂左_接続.Count > 0)
     		{
-    			頭頂左_接続 = e.頭頂左_接続.Select(delegate(EleD g)
+    			頭頂左_接続 = e.頭頂左_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 基髪2;
@@ -175,7 +175,7 @@ namespace SlaveMatrix
     		}
     		if (e.頭頂右_接続.Count > 0)
     		{
-    			頭頂右_接続 = e.頭頂右_接続.Select(delegate(EleD g)
+    			頭頂右_接続 = e.頭頂右_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 基髪2;
@@ -186,7 +186,7 @@ namespace SlaveMatrix
     		}
     		if (e.横髪左_接続.Count > 0)
     		{
-    			横髪左_接続 = e.横髪左_接続.Select(delegate(EleD g)
+    			横髪左_接続 = e.横髪左_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 基髪2;
@@ -197,7 +197,7 @@ namespace SlaveMatrix
     		}
     		if (e.横髪右_接続.Count > 0)
     		{
-    			横髪右_接続 = e.横髪右_接続.Select(delegate(EleD g)
+    			横髪右_接続 = e.横髪右_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 基髪2;
@@ -208,7 +208,7 @@ namespace SlaveMatrix
     		}
     		if (e.前髪_接続.Count > 0)
     		{
-    			前髪_接続 = e.前髪_接続.Select(delegate(EleD g)
+    			前髪_接続 = e.前髪_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 基髪2;
@@ -219,7 +219,7 @@ namespace SlaveMatrix
     		}
     		if (e.後髪_接続.Count > 0)
     		{
-    			後髪_接続 = e.後髪_接続.Select(delegate(EleD g)
+    			後髪_接続 = e.後髪_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 基髪2;

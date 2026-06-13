@@ -2,7 +2,7 @@ using _2DGAMELIB;
 
 namespace SlaveMatrix
 {
-    public class 胸毛 : Ele
+    public class 胸毛 : Element
     {
     	public ShapePart X0Y0_獣性_胸毛;
 

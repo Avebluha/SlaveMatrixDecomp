@@ -253,7 +253,7 @@ namespace SlaveMatrix
     				Bod.乳房右.Yv = 0.2 + 0.4 * d;
     				vc.Y = -0.002 * d;
     				Bod.胸毛_人.位置C = vc;
-    				対象.Ele.角度C = (100.0 * x).Clamp(-5.0, 5.0);
+    				対象.Element.角度C = (100.0 * x).Clamp(-5.0, 5.0);
     				if (yi != Bod.乳房左.Yi && Bod.乳房左.Yi == 1)
     				{
     					Bod.胸左右前後 = !Bod.胸左右前後;
@@ -441,7 +441,7 @@ namespace SlaveMatrix
     				if (!調教UI.ハンド挿入.Is挿入)
     				{
     					持ち手 = false;
-    					調教UI.Focus.Ele.Intensity = 0.5;
+    					調教UI.Focus.Element.Intensity = 0.5;
     					調教UI.Focus = 調教UI.ハンド右CM;
     					調教UI.ハンド右.位置B = cp;
     					調教UI.ハンド処理.切り替え = true;
@@ -456,9 +456,9 @@ namespace SlaveMatrix
     		else if (mb == MouseButtons.Middle && !手コキ.Run && !パイズリ.Run && !足コキ.Run && !Isモード && !調教UI.マウス挿入.Is挿入)
     		{
     			持ち手 = false;
-    			調教UI.Focus.Ele.Intensity = 0.5;
+    			調教UI.Focus.Element.Intensity = 0.5;
     			調教UI.Focus = 調教UI.マウスCM;
-    			調教UI.マウスCM.Ele.位置B = cp;
+    			調教UI.マウスCM.Element.位置B = cp;
     			調教UI.マウス処理.切り替え = true;
     			調教UI.マウス処理.Move(ref mb, ref cp, ref hc, ref cd);
     		}
@@ -484,8 +484,8 @@ namespace SlaveMatrix
     				パイズリ.End();
     			}
                 //~~TODO~~ fix?
-                //Cursor.Position = Med.BaseControlC.PointToScreen(Med.FromBasePosition(対象.Ele.位置B));
-                Med.CursorPosition = Med.FromBasePosition(対象.Ele.位置B);
+                //Cursor.Position = Med.BaseControlC.PointToScreen(Med.FromBasePosition(対象.Element.位置B));
+                Med.CursorPosition = Med.FromBasePosition(対象.Element.位置B);
 
 
                 調教UI.ハンド処理.バスト初期化.Start();
@@ -494,7 +494,7 @@ namespace SlaveMatrix
     			調教UI.ハンド左表示 = false;
     			調教UI.ハンド右.位置C = DataConsts.Vec2DZero;
     			調教UI.ハンド左.位置C = DataConsts.Vec2DZero;
-    			対象.Ele.角度C = 0.0;
+    			対象.Element.角度C = 0.0;
     			持ち手 = false;
     			Isパイズリ = false;
     			調教UI.放し();
@@ -548,19 +548,19 @@ namespace SlaveMatrix
     	{
     		ペニス処理 ペニス処理2 = this;
     		double d = 調教UI.ペニス.X0Y4_陰嚢.BasePointBase.Y - 調教UI.ペニス.X0Y0_陰嚢.BasePointBase.Y;
-    		Vector2D v = new Vector2D(対象.Ele.位置C.X, d);
+    		Vector2D v = new Vector2D(対象.Element.位置C.X, d);
     		チンピク = new Motion(0.0, 1.0)
     		{
     			BaseSpeed = 4.0,
     			OnStart = delegate
     			{
-    				ペニス処理2.対象.Ele.Yi = 0;
+    				ペニス処理2.対象.Element.Yi = 0;
     			},
     			OnUpdate = delegate(Motion m)
     			{
-    				ペニス処理2.対象.Ele.Yv = m.Value;
+    				ペニス処理2.対象.Element.Yv = m.Value;
     				v.Y = d * m.Value;
-    				ペニス処理2.対象.Ele.位置C = v;
+    				ペニス処理2.対象.Element.位置C = v;
     			},
     			OnReach = delegate
     			{
@@ -572,8 +572,8 @@ namespace SlaveMatrix
     			OnEnd = delegate(Motion m)
     			{
     				m.ResetValue();
-    				ペニス処理2.対象.Ele.Yi = 0;
-    				ペニス処理2.対象.Ele.位置C = DataConsts.Vec2DZero;
+    				ペニス処理2.対象.Element.Yi = 0;
+    				ペニス処理2.対象.Element.位置C = DataConsts.Vec2DZero;
     			}
     		};
     		調教UI.Mots.Add(チンピク.GetHashCode().ToString(), チンピク);
@@ -639,7 +639,7 @@ namespace SlaveMatrix
     			},
     			OnEnd = delegate(Motion m)
     			{
-    				ペニス処理2.対象.Ele.尺度XC = 1.0;
+    				ペニス処理2.対象.Element.尺度XC = 1.0;
     				調教UI.ペニス.位置C = DataConsts.Vec2DZero;
     				調教UI.射精.位置C = DataConsts.Vec2DZero;
     				m.ResetValue();
@@ -765,7 +765,7 @@ namespace SlaveMatrix
     					ペニス処理2.LowerArm.尺度XC = LowerArmXC * (0.9 + 0.1 * m.Value.Inverse());
     					if (ペニス処理2.LowerArm.虫鎌_接続 != null)
     					{
-    						Ele[] 虫鎌_接続2 = ペニス処理2.LowerArm.虫鎌_接続;
+    						Element[] 虫鎌_接続2 = ペニス処理2.LowerArm.虫鎌_接続;
     						for (int j = 0; j < 虫鎌_接続2.Length; j++)
     						{
     							虫鎌_接続2[j].尺度XC = ペニス処理2.LowerArm.尺度XC;
@@ -904,7 +904,7 @@ namespace SlaveMatrix
     					ペニス処理2.LowerArm左.尺度XC = LowerArmXC + 0.2 * vl;
     					if (ペニス処理2.LowerArm左.虫鎌_接続 != null)
     					{
-    						Ele[] 虫鎌_接続 = ペニス処理2.LowerArm左.虫鎌_接続;
+    						Element[] 虫鎌_接続 = ペニス処理2.LowerArm左.虫鎌_接続;
     						for (int i = 0; i < 虫鎌_接続.Length; i++)
     						{
     							虫鎌_接続[i].尺度XC = ペニス処理2.LowerArm左.尺度XC;
@@ -925,7 +925,7 @@ namespace SlaveMatrix
     					ペニス処理2.LowerArm右.尺度XC = LowerArmXC + 0.2 * vr;
     					if (ペニス処理2.LowerArm右.虫鎌_接続 != null)
     					{
-    						Ele[] 虫鎌_接続 = ペニス処理2.LowerArm右.虫鎌_接続;
+    						Element[] 虫鎌_接続 = ペニス処理2.LowerArm右.虫鎌_接続;
     						for (int i = 0; i < 虫鎌_接続.Length; i++)
     						{
     							虫鎌_接続[i].尺度XC = ペニス処理2.LowerArm右.尺度XC;

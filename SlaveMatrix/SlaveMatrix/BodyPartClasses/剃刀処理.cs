@@ -21,7 +21,7 @@ namespace SlaveMatrix
     		{
     			調教UI.擬音キュー.Enqueue(delegate(RenderArea a)
     			{
-    				調教UI.擬音.Sound(a, 対象.Ele.位置.GetAreaPoint(0.01), Sta.剃り.GetVal(Cha.CharacterData.現陰毛, RNG.XS.NextDouble()), new Font("MS Gothic", 1f), Col.Black, 0.1 + 0.1 * RNG.XS.NextDouble(), b: true);
+    				調教UI.擬音.Sound(a, 対象.Element.位置.GetAreaPoint(0.01), Sta.剃り.GetVal(Cha.CharacterData.現陰毛, RNG.XS.NextDouble()), new Font("MS Gothic", 1f), Col.Black, 0.1 + 0.1 * RNG.XS.NextDouble(), b: true);
     			});
     		}
     	}
@@ -82,7 +82,7 @@ namespace SlaveMatrix
     				a = 0.0 - v.Angle02π(-DataConsts.Vec2DUnitY).ToDegree();
     				if (!double.IsNaN(a))
     				{
-    					対象.Ele.角度C = a;
+    					対象.Element.角度C = a;
     				}
     				調教UI.Action(cd.c, ActionType.Shaving, CurrentState.Continue, ToolType.Ｔ剃刀, 0, 1, 機械: false, 射精: false);
     				Player.奴体力消費小();
@@ -98,7 +98,7 @@ namespace SlaveMatrix
     				調教UI.Action(cd.c, ActionType.Shaving, CurrentState.End, ToolType.Ｔ剃刀, 0, 1, 機械: false, 射精: false);
     				Player.奴体力消費小();
     				Player.主精力消費小();
-    				対象.Ele.角度C = 0.0;
+    				対象.Element.角度C = 0.0;
     				調教UI.放し();
     			}
     			押し当て時();
@@ -137,7 +137,7 @@ namespace SlaveMatrix
     		else if (mb == MouseButtons.Right && !Is剃り)
     		{
     			Is剃り = false;
-    			対象.Ele.角度C = 0.0;
+    			対象.Element.角度C = 0.0;
     			調教UI.通常放し();
     		}
     	}
@@ -150,7 +150,7 @@ namespace SlaveMatrix
     			Player.奴体力消費小();
     			Player.主精力消費小();
     			調教UI.放し();
-    			対象.Ele.角度C = 0.0;
+    			対象.Element.角度C = 0.0;
     			Is剃り = false;
     			移動時(ref hc);
     		}

@@ -301,237 +301,237 @@ namespace SlaveMatrix
 
     	public bool 鎖表示;
 
-    	public List<EleD> 節1_接続 = new List<EleD>();
+    	public List<ElementData> 節1_接続 = new List<ElementData>();
 
-    	public List<EleD> 節2_接続 = new List<EleD>();
+    	public List<ElementData> 節2_接続 = new List<ElementData>();
 
-    	public List<EleD> 節3_接続 = new List<EleD>();
+    	public List<ElementData> 節3_接続 = new List<ElementData>();
 
-    	public List<EleD> 節4_接続 = new List<EleD>();
+    	public List<ElementData> 節4_接続 = new List<ElementData>();
 
-    	public List<EleD> 節5_接続 = new List<EleD>();
+    	public List<ElementData> 節5_接続 = new List<ElementData>();
 
-    	public List<EleD> 節6_接続 = new List<EleD>();
+    	public List<ElementData> 節6_接続 = new List<ElementData>();
 
-    	public List<EleD> 節7_接続 = new List<EleD>();
+    	public List<ElementData> 節7_接続 = new List<ElementData>();
 
-    	public List<EleD> 節8_接続 = new List<EleD>();
+    	public List<ElementData> 節8_接続 = new List<ElementData>();
 
-    	public List<EleD> 節9_接続 = new List<EleD>();
+    	public List<ElementData> 節9_接続 = new List<ElementData>();
 
-    	public List<EleD> 節10_接続 = new List<EleD>();
+    	public List<ElementData> 節10_接続 = new List<ElementData>();
 
-    	public List<EleD> 節11_接続 = new List<EleD>();
+    	public List<ElementData> 節11_接続 = new List<ElementData>();
 
-    	public List<EleD> 節12_接続 = new List<EleD>();
+    	public List<ElementData> 節12_接続 = new List<ElementData>();
 
-    	public List<EleD> 節13_接続 = new List<EleD>();
+    	public List<ElementData> 節13_接続 = new List<ElementData>();
 
-    	public List<EleD> 節14_接続 = new List<EleD>();
+    	public List<ElementData> 節14_接続 = new List<ElementData>();
 
-    	public List<EleD> 節15_接続 = new List<EleD>();
+    	public List<ElementData> 節15_接続 = new List<ElementData>();
 
-    	public List<EleD> 節16_接続 = new List<EleD>();
+    	public List<ElementData> 節16_接続 = new List<ElementData>();
 
-    	public List<EleD> 節17_接続 = new List<EleD>();
+    	public List<ElementData> 節17_接続 = new List<ElementData>();
 
-    	public List<EleD> 節18_接続 = new List<EleD>();
+    	public List<ElementData> 節18_接続 = new List<ElementData>();
 
-    	public List<EleD> 節19_接続 = new List<EleD>();
+    	public List<ElementData> 節19_接続 = new List<ElementData>();
 
-    	public List<EleD> 節20_接続 = new List<EleD>();
+    	public List<ElementData> 節20_接続 = new List<ElementData>();
 
-    	public List<EleD> 節21_接続 = new List<EleD>();
+    	public List<ElementData> 節21_接続 = new List<ElementData>();
 
-    	public List<EleD> 節22_接続 = new List<EleD>();
+    	public List<ElementData> 節22_接続 = new List<ElementData>();
 
-    	public List<EleD> 節23_接続 = new List<EleD>();
+    	public List<ElementData> 節23_接続 = new List<ElementData>();
 
-    	public List<EleD> 節24_接続 = new List<EleD>();
+    	public List<ElementData> 節24_接続 = new List<ElementData>();
 
-    	public List<EleD> 先端_接続 = new List<EleD>();
+    	public List<ElementData> 先端_接続 = new List<ElementData>();
 
     	public 触手_蔦D()
     	{
     		ThisType = GetType();
     	}
 
-    	public void 節1接続(EleD e)
+    	public void 節1接続(ElementData e)
     	{
     		節1_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.触手_蔦_節1_接続;
     	}
 
-    	public void 節2接続(EleD e)
+    	public void 節2接続(ElementData e)
     	{
     		節2_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.触手_蔦_節2_接続;
     	}
 
-    	public void 節3接続(EleD e)
+    	public void 節3接続(ElementData e)
     	{
     		節3_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.触手_蔦_節3_接続;
     	}
 
-    	public void 節4接続(EleD e)
+    	public void 節4接続(ElementData e)
     	{
     		節4_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.触手_蔦_節4_接続;
     	}
 
-    	public void 節5接続(EleD e)
+    	public void 節5接続(ElementData e)
     	{
     		節5_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.触手_蔦_節5_接続;
     	}
 
-    	public void 節6接続(EleD e)
+    	public void 節6接続(ElementData e)
     	{
     		節6_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.触手_蔦_節6_接続;
     	}
 
-    	public void 節7接続(EleD e)
+    	public void 節7接続(ElementData e)
     	{
     		節7_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.触手_蔦_節7_接続;
     	}
 
-    	public void 節8接続(EleD e)
+    	public void 節8接続(ElementData e)
     	{
     		節8_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.触手_蔦_節8_接続;
     	}
 
-    	public void 節9接続(EleD e)
+    	public void 節9接続(ElementData e)
     	{
     		節9_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.触手_蔦_節9_接続;
     	}
 
-    	public void 節10接続(EleD e)
+    	public void 節10接続(ElementData e)
     	{
     		節10_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.触手_蔦_節10_接続;
     	}
 
-    	public void 節11接続(EleD e)
+    	public void 節11接続(ElementData e)
     	{
     		節11_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.触手_蔦_節11_接続;
     	}
 
-    	public void 節12接続(EleD e)
+    	public void 節12接続(ElementData e)
     	{
     		節12_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.触手_蔦_節12_接続;
     	}
 
-    	public void 節13接続(EleD e)
+    	public void 節13接続(ElementData e)
     	{
     		節13_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.触手_蔦_節13_接続;
     	}
 
-    	public void 節14接続(EleD e)
+    	public void 節14接続(ElementData e)
     	{
     		節14_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.触手_蔦_節14_接続;
     	}
 
-    	public void 節15接続(EleD e)
+    	public void 節15接続(ElementData e)
     	{
     		節15_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.触手_蔦_節15_接続;
     	}
 
-    	public void 節16接続(EleD e)
+    	public void 節16接続(ElementData e)
     	{
     		節16_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.触手_蔦_節16_接続;
     	}
 
-    	public void 節17接続(EleD e)
+    	public void 節17接続(ElementData e)
     	{
     		節17_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.触手_蔦_節17_接続;
     	}
 
-    	public void 節18接続(EleD e)
+    	public void 節18接続(ElementData e)
     	{
     		節18_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.触手_蔦_節18_接続;
     	}
 
-    	public void 節19接続(EleD e)
+    	public void 節19接続(ElementData e)
     	{
     		節19_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.触手_蔦_節19_接続;
     	}
 
-    	public void 節20接続(EleD e)
+    	public void 節20接続(ElementData e)
     	{
     		節20_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.触手_蔦_節20_接続;
     	}
 
-    	public void 節21接続(EleD e)
+    	public void 節21接続(ElementData e)
     	{
     		節21_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.触手_蔦_節21_接続;
     	}
 
-    	public void 節22接続(EleD e)
+    	public void 節22接続(ElementData e)
     	{
     		節22_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.触手_蔦_節22_接続;
     	}
 
-    	public void 節23接続(EleD e)
+    	public void 節23接続(ElementData e)
     	{
     		節23_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.触手_蔦_節23_接続;
     	}
 
-    	public void 節24接続(EleD e)
+    	public void 節24接続(ElementData e)
     	{
     		節24_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.触手_蔦_節24_接続;
     	}
 
-    	public void 先端接続(EleD e)
+    	public void 先端接続(ElementData e)
     	{
     		先端_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.触手_蔦_先端_接続;
     	}
 
-    	public override Ele GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
+    	public override Element GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
     	{
     		return new 触手_蔦(DisUnit, 配色指定, 体配色, Med, this);
     	}

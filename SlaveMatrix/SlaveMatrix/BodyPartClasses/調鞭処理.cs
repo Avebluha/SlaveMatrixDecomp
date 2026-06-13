@@ -26,7 +26,7 @@ namespace SlaveMatrix
     	{
     		調教UI.擬音キュー.Enqueue(delegate(RenderArea a)
     		{
-    			調教UI.擬音.Sound(a, 対象.Ele.位置.GetAreaPoint(0.05), Sta.鞭振.GetVal(強さ_, 1.0), new Font("MS Gothic", 1f), Col.White, 0.2 + 0.2 * 強さ_, b: true);
+    			調教UI.擬音.Sound(a, 対象.Element.位置.GetAreaPoint(0.05), Sta.鞭振.GetVal(強さ_, 1.0), new Font("MS Gothic", 1f), Col.White, 0.2 + 0.2 * 強さ_, b: true);
     		});
     	}
 
@@ -54,10 +54,10 @@ namespace SlaveMatrix
     			v = cp;
     			x = (o.X - v.X).Sign();
     			o = v;
-    			対象.Ele.角度C = 0.0;
-    			対象.Ele.Xi = 0;
-    			対象.Ele.Yi = (対象.Ele.Yi + x).Limit(0, 対象.Ele.Body.CountY);
-    			対象.Ele.Body.JoinPA();
+    			対象.Element.角度C = 0.0;
+    			対象.Element.Xi = 0;
+    			対象.Element.Yi = (対象.Element.Yi + x).Limit(0, 対象.Element.Body.CountY);
+    			対象.Element.Body.JoinPA();
     			移動時();
     		}
     	}
