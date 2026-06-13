@@ -805,12 +805,12 @@ namespace SlaveMatrix
     	public 単足_粘(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 単足_粘D e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif();
-    		dif.Tag = "粘";
-    		dif.Add(new PartGroup(Sta.半身["単足"][0][1]));
+    		MorphVariant morphVariant = new MorphVariant();
+    		morphVariant.Tag = "粘";
+    		morphVariant.Add(new PartGroup(Sta.半身["単足"][0][1]));
     		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_粘液0 = partGroup["粘液0"].ToPar();
     		X0Y0_粘液1 = partGroup["粘液1"].ToPar();

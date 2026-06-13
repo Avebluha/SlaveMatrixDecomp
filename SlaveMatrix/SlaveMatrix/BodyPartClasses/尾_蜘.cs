@@ -451,12 +451,12 @@ namespace SlaveMatrix
     	{
     		尾_蜘 尾_蜘2 = this;
     		ThisType = GetType();
-    		Dif dif = new Dif();
-    		dif.Tag = "蜘尾";
-    		dif.Add(new PartGroup(Sta.尻尾["尾"][0][11]));
+    		MorphVariant morphVariant = new MorphVariant();
+    		morphVariant.Tag = "蜘尾";
+    		morphVariant.Add(new PartGroup(Sta.尻尾["尾"][0][11]));
     		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_尾0 = partGroup["尾0"].ToPar();
     		X0Y0_柄0 = partGroup["柄0"].ToPar();

@@ -903,10 +903,10 @@ namespace SlaveMatrix
     	public 前翅_羽(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 前翅_羽D e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif(Sta.肢左["前翅"][1]);
+    		MorphVariant morphVariant = new MorphVariant(Sta.肢左["前翅"][1]);
     		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
     		PartGroup partGroup = Body[0][0]["前翅"].ToPars();
     		X0Y0_前翅_前翅 = partGroup["前翅"].ToPar();
     		X0Y0_前翅_翅脈1 = partGroup["翅脈1"].ToPar();

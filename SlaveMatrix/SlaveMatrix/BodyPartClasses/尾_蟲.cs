@@ -1550,12 +1550,12 @@ namespace SlaveMatrix
     	{
     		尾_蟲 尾_蟲2 = this;
     		ThisType = GetType();
-    		Dif dif = new Dif();
-    		dif.Tag = "蟲尾";
-    		dif.Add(new PartGroup(Sta.尻尾["尾"][0][21]));
+    		MorphVariant morphVariant = new MorphVariant();
+    		morphVariant.Tag = "蟲尾";
+    		morphVariant.Add(new PartGroup(Sta.尻尾["尾"][0][21]));
     		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
     		PartGroup partGroup = Body[0][0];
     		PartGroup pars2 = partGroup["尾5"].ToPars();
     		X0Y0_尾5_背板 = pars2["背板"].ToPar();

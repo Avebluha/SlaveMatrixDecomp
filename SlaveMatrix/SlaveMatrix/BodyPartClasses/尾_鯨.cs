@@ -2830,12 +2830,12 @@ namespace SlaveMatrix
     	{
     		尾_鯨 尾_鯨2 = this;
     		ThisType = GetType();
-    		Dif dif = new Dif();
-    		dif.Tag = "鯨尾";
-    		dif.Add(new PartGroup(Sta.尻尾["尾"][0][20]));
+    		MorphVariant morphVariant = new MorphVariant();
+    		morphVariant.Tag = "鯨尾";
+    		morphVariant.Add(new PartGroup(Sta.尻尾["尾"][0][20]));
     		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
     		PartGroup partGroup = Body[0][0];
     		PartGroup pars2 = partGroup["尾33"].ToPars();
     		X0Y0_尾33_尾 = pars2["尾"].ToPar();

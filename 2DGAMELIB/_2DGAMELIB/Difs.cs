@@ -15,7 +15,7 @@ namespace _2DGAMELIB
 
     	public double ValueY;
 
-    	private List<Dif> difs = new List<Dif>();
+    	private List<MorphVariant> difs = new List<MorphVariant>();
 
     	public Dictionary<PartGroup, Joints> pj;
 
@@ -67,7 +67,7 @@ namespace _2DGAMELIB
     		}
     	}
 
-    	public Dif this[int Index]
+    	public MorphVariant this[int Index]
     	{
     		get
     		{
@@ -85,7 +85,7 @@ namespace _2DGAMELIB
     	{
     		set
     		{
-    			foreach (Dif dif in difs)
+    			foreach (MorphVariant dif in difs)
     			{
     				dif.PositionSize = value;
     			}
@@ -96,7 +96,7 @@ namespace _2DGAMELIB
     	{
     		set
     		{
-    			foreach (Dif dif in difs)
+    			foreach (MorphVariant dif in difs)
     			{
     				dif.PositionVector = value;
     			}
@@ -107,7 +107,7 @@ namespace _2DGAMELIB
     	{
     		set
     		{
-    			foreach (Dif dif in difs)
+    			foreach (MorphVariant dif in difs)
     			{
     				dif.AngleBase = value;
     			}
@@ -118,7 +118,7 @@ namespace _2DGAMELIB
     	{
     		set
     		{
-    			foreach (Dif dif in difs)
+    			foreach (MorphVariant dif in difs)
     			{
     				dif.AngleCont = value;
     			}
@@ -129,7 +129,7 @@ namespace _2DGAMELIB
     	{
     		set
     		{
-    			foreach (Dif dif in difs)
+    			foreach (MorphVariant dif in difs)
     			{
     				dif.SizeBase = value;
     			}
@@ -140,7 +140,7 @@ namespace _2DGAMELIB
     	{
     		set
     		{
-    			foreach (Dif dif in difs)
+    			foreach (MorphVariant dif in difs)
     			{
     				dif.SizeCont = value;
     			}
@@ -151,7 +151,7 @@ namespace _2DGAMELIB
     	{
     		set
     		{
-    			foreach (Dif dif in difs)
+    			foreach (MorphVariant dif in difs)
     			{
     				dif.SizeXBase = value;
     			}
@@ -162,7 +162,7 @@ namespace _2DGAMELIB
     	{
     		set
     		{
-    			foreach (Dif dif in difs)
+    			foreach (MorphVariant dif in difs)
     			{
     				dif.SizeXCont = value;
     			}
@@ -173,7 +173,7 @@ namespace _2DGAMELIB
     	{
     		set
     		{
-    			foreach (Dif dif in difs)
+    			foreach (MorphVariant dif in difs)
     			{
     				dif.SizeYBase = value;
     			}
@@ -184,7 +184,7 @@ namespace _2DGAMELIB
     	{
     		set
     		{
-    			foreach (Dif dif in difs)
+    			foreach (MorphVariant dif in difs)
     			{
     				dif.SizeYCont = value;
     			}
@@ -195,7 +195,7 @@ namespace _2DGAMELIB
     	{
     		set
     		{
-    			foreach (Dif dif in difs)
+    			foreach (MorphVariant dif in difs)
     			{
     				dif.Dra = value;
     			}
@@ -206,7 +206,7 @@ namespace _2DGAMELIB
     	{
     		set
     		{
-    			foreach (Dif dif in difs)
+    			foreach (MorphVariant dif in difs)
     			{
     				dif.Hit = value;
     			}
@@ -231,7 +231,7 @@ namespace _2DGAMELIB
     	public IEnumerable<ShapePart> EnumJoinRoot => pr.Values;
     	public IEnumerable<ShapePart> EnumAllPar()
     	{
-    		foreach (Dif dif in difs)
+    		foreach (MorphVariant dif in difs)
     		{
     			foreach (ShapePart item in dif.EnumAllPar())
     			{
@@ -242,7 +242,7 @@ namespace _2DGAMELIB
 
     	public IEnumerable<PartGroup> EnumAllPars()
     	{
-    		foreach (Dif dif in difs)
+    		foreach (MorphVariant dif in difs)
     		{
     			foreach (PartGroup item in dif.Parss)
     			{
@@ -253,7 +253,7 @@ namespace _2DGAMELIB
 
     	public void SetDefault()
     	{
-    		foreach (Dif dif in difs)
+    		foreach (MorphVariant dif in difs)
     		{
     			dif.SetDefault();
     		}
@@ -273,15 +273,15 @@ namespace _2DGAMELIB
     		Tag = Difs.Tag;
     		ValueX = Difs.ValueX;
     		ValueY = Difs.ValueY;
-    		foreach (Dif dif in Difs.difs)
+    		foreach (MorphVariant dif in Difs.difs)
     		{
-    			difs.Add(new Dif(dif));
+    			difs.Add(new MorphVariant(dif));
     		}
     	}
 
-    	public void Add(Dif Dif)
+    	public void Add(MorphVariant MorphVariant)
     	{
-    		difs.Add(Dif);
+    		difs.Add(MorphVariant);
     	}
 
 
@@ -361,12 +361,12 @@ namespace _2DGAMELIB
 
     	public ShapePart GetHitPar_(Color HitColor)
     	{
-    		return difs.FirstOrDefault((Dif d) => d.IsHit(ref HitColor)).Parss.FirstOrDefault((PartGroup ps) => ps.IsHit(ref HitColor)).EnumAllPar().FirstOrDefault((ShapePart e) => e.HitColor == HitColor);
+    		return difs.FirstOrDefault((MorphVariant d) => d.IsHit(ref HitColor)).Parss.FirstOrDefault((PartGroup ps) => ps.IsHit(ref HitColor)).EnumAllPar().FirstOrDefault((ShapePart e) => e.HitColor == HitColor);
     	}
 
     	public bool IsHit(ref Color HitColor)
     	{
-    		foreach (Dif dif in difs)
+    		foreach (MorphVariant dif in difs)
     		{
     			if (dif.IsHit(ref HitColor))
     			{
@@ -379,7 +379,7 @@ namespace _2DGAMELIB
     	public void ReverseX()
     	{
     		SetJoints();
-    		foreach (Dif dif in difs)
+    		foreach (MorphVariant dif in difs)
     		{
     			dif.ReverseX();
     		}
@@ -389,7 +389,7 @@ namespace _2DGAMELIB
     	public void ReverseY()
     	{
     		SetJoints();
-    		foreach (Dif dif in difs)
+    		foreach (MorphVariant dif in difs)
     		{
     			dif.ReverseY();
     		}
@@ -398,7 +398,7 @@ namespace _2DGAMELIB
 
     	public void Dispose()
     	{
-    		foreach (Dif dif in difs)
+    		foreach (MorphVariant dif in difs)
     		{
     			dif.Dispose();
     		}

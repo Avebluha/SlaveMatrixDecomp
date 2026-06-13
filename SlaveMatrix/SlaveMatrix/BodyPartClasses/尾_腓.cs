@@ -5096,12 +5096,12 @@ namespace SlaveMatrix
     	public 尾_腓(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 尾_腓D e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif();
-    		dif.Tag = "腓尾";
-    		dif.Add(new PartGroup(Sta.尻尾["尾"][0][14]));
+    		MorphVariant morphVariant = new MorphVariant();
+    		morphVariant.Tag = "腓尾";
+    		morphVariant.Add(new PartGroup(Sta.尻尾["尾"][0][14]));
     		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
     		PartGroup partGroup = Body[0][0];
     		PartGroup pars2 = partGroup["尾1"].ToPars();
     		X0Y0_尾1_根 = pars2["根"].ToPar();

@@ -1279,12 +1279,12 @@ namespace SlaveMatrix
     	public 足_竜(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 足_竜D e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif();
-    		dif.Tag = "竜";
-    		dif.Add(new PartGroup(Sta.脚左["四足足"][3][0]));
+    		MorphVariant morphVariant = new MorphVariant();
+    		morphVariant.Tag = "竜";
+    		morphVariant.Add(new PartGroup(Sta.脚左["四足足"][3][0]));
     		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_足 = partGroup["足"].ToPar();
     		PartGroup pars2 = partGroup["鱗足"].ToPars();

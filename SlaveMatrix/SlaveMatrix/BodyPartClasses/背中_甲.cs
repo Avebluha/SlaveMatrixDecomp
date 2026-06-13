@@ -857,12 +857,12 @@ namespace SlaveMatrix
     	public 背中_甲(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 背中_甲D e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif();
-    		dif.Tag = "甲羅";
-    		dif.Add(new PartGroup(Sta.肢中["背中"][0][1]));
+    		MorphVariant morphVariant = new MorphVariant();
+    		morphVariant.Tag = "甲羅";
+    		morphVariant.Add(new PartGroup(Sta.肢中["背中"][0][1]));
     		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
     		PartGroup partGroup = Body[0][0];
     		PartGroup pars2 = partGroup["左"].ToPars();
     		X0Y0_左_甲羅1 = pars2["甲羅1"].ToPar();

@@ -1787,10 +1787,10 @@ namespace SlaveMatrix
     	public 下着ボトム_マイクロ(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 下着ボトム_マイクロD e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif(Sta.胴体["下着ボトム"][1]);
+    		MorphVariant morphVariant = new MorphVariant(Sta.胴体["下着ボトム"][1]);
     		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_紐左 = partGroup["紐左"].ToPar();
     		X0Y0_紐右 = partGroup["紐右"].ToPar();

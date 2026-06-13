@@ -2302,10 +2302,10 @@ namespace SlaveMatrix
     	public 下着トップ_ブラ(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 下着トップ_ブラD e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif(Sta.胴体["下着トップ"][0]);
+    		MorphVariant morphVariant = new MorphVariant(Sta.胴体["下着トップ"][0]);
     		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
     		PartGroup partGroup = Body[0][0];
     		PartGroup pars2 = partGroup["バンド"].ToPars();
     		X0Y0_バンド_バンド = pars2["バンド"].ToPar();

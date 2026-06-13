@@ -449,12 +449,12 @@ namespace SlaveMatrix
     	public 舌_長(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 舌_長D e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif();
-    		dif.Tag = "長";
-    		dif.Add(new PartGroup(Sta.胴体["舌"][0][1]));
+    		MorphVariant morphVariant = new MorphVariant();
+    		morphVariant.Tag = "長";
+    		morphVariant.Add(new PartGroup(Sta.胴体["舌"][0][1]));
     		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_舌1 = partGroup["舌1"].ToPar();
     		X0Y0_舌2 = partGroup["舌2"].ToPar();

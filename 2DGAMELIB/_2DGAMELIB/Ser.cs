@@ -19,7 +19,8 @@ namespace _2DGAMELIB
             .Add("_2DGAMELIB.ParT", typeof(ShapePartT))
             .Add("_2DGAMELIB.Pars", typeof(PartGroup))
             .Add("_2DGAMELIB.Out", typeof(CurveOutline))
-            .Add("_2DGAMELIB.Joi", typeof(JointPoint));
+            .Add("_2DGAMELIB.Joi", typeof(JointPoint))
+            .Add("_2DGAMELIB.Dif", typeof(MorphVariant));
 
         private static BinaryFormatter NewFormatter()
         {

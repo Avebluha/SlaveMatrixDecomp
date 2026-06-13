@@ -713,10 +713,10 @@ namespace SlaveMatrix
     	{
     		前翅_甲 前翅_甲2 = this;
     		ThisType = GetType();
-    		Dif dif = new Dif(Sta.肢左["前翅"][0]);
+    		MorphVariant morphVariant = new MorphVariant(Sta.肢左["前翅"][0]);
     		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
     		PartGroup partGroup = Body[0][0];
     		PartGroup pars2 = partGroup["前翅"].ToPars();
     		PartGroup pars3 = pars2["前翅軸"].ToPars();

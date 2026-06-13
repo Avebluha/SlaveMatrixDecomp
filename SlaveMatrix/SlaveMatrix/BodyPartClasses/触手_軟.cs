@@ -7281,12 +7281,12 @@ namespace SlaveMatrix
     	public 触手_軟(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 触手_軟D e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif();
-    		dif.Tag = "軟体";
-    		dif.Add(new PartGroup(Sta.肢左["触手"][0][0]));
+    		MorphVariant morphVariant = new MorphVariant();
+    		morphVariant.Tag = "軟体";
+    		morphVariant.Add(new PartGroup(Sta.肢左["触手"][0][0]));
     		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
     		PartGroup partGroup = Body[0][0];
     		PartGroup pars2 = partGroup["節1"].ToPars();
     		X0Y0_節1_節 = pars2["節"].ToPar();

@@ -6063,12 +6063,12 @@ namespace SlaveMatrix
     	{
     		触手_犬 触手_犬2 = this;
     		ThisType = GetType();
-    		Dif dif = new Dif();
-    		dif.Tag = "スキュラ";
-    		dif.Add(new PartGroup(Sta.肢左["触手"][0][2]));
+    		MorphVariant morphVariant = new MorphVariant();
+    		morphVariant.Tag = "スキュラ";
+    		morphVariant.Add(new PartGroup(Sta.肢左["触手"][0][2]));
     		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
     		PartGroup partGroup = Body[0][0];
     		PartGroup pars2 = partGroup["脚後"].ToPars();
     		PartGroup pars3 = pars2["鰭"].ToPars();

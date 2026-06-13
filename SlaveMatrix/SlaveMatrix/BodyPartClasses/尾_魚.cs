@@ -7399,12 +7399,12 @@ namespace SlaveMatrix
     	{
     		尾_魚 尾_魚2 = this;
     		ThisType = GetType();
-    		Dif dif = new Dif();
-    		dif.Tag = "魚尾";
-    		dif.Add(new PartGroup(Sta.尻尾["尾"][0][19]));
+    		MorphVariant morphVariant = new MorphVariant();
+    		morphVariant.Tag = "魚尾";
+    		morphVariant.Add(new PartGroup(Sta.尻尾["尾"][0][19]));
     		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
     		PartGroup partGroup = Body[0][0];
     		PartGroup pars2 = partGroup["尾33"].ToPars();
     		PartGroup pars3 = pars2["鱗左"].ToPars();

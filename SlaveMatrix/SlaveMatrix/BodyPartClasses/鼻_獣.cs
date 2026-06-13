@@ -92,12 +92,12 @@ namespace SlaveMatrix
     	{
     		鼻_獣 鼻_獣2 = this;
     		ThisType = GetType();
-    		Dif dif = new Dif();
-    		dif.Tag = "獣";
-    		dif.Add(new PartGroup(Sta.胴体["鼻"][0][1]));
+    		MorphVariant morphVariant = new MorphVariant();
+    		morphVariant.Tag = "獣";
+    		morphVariant.Add(new PartGroup(Sta.胴体["鼻"][0][1]));
     		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_鼻 = partGroup["鼻"].ToPar();
     		Body.SetJoints();

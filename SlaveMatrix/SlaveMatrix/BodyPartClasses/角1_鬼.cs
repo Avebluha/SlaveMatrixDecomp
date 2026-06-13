@@ -252,10 +252,10 @@ namespace SlaveMatrix
     	public 角1_鬼(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 角1_鬼D e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif(Sta.肢中["角"][1]);
+    		MorphVariant morphVariant = new MorphVariant(Sta.肢中["角"][1]);
     		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_根 = partGroup["根"].ToPar();
     		X0Y0_線1 = partGroup["線1"].ToPar();

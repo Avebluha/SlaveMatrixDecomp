@@ -144,12 +144,12 @@ namespace SlaveMatrix
     	public SideHair_パツ(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, SideHair_パツD e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif();
-    		dif.Tag = "パツ";
-    		dif.Add(new PartGroup(Sta.胴体["横髪左"][0][2]));
+    		MorphVariant morphVariant = new MorphVariant();
+    		morphVariant.Tag = "パツ";
+    		morphVariant.Add(new PartGroup(Sta.胴体["横髪左"][0][2]));
     		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_髪1 = partGroup["髪1"].ToPar();
     		X0Y0_髪2 = partGroup["髪2"].ToPar();

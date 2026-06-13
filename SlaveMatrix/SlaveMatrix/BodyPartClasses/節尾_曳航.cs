@@ -337,12 +337,12 @@ namespace SlaveMatrix
     	public 節尾_曳航(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 節尾_曳航D e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif();
-    		dif.Tag = "曳航肢";
-    		dif.Add(new PartGroup(Sta.肢左["節足"][0][5]));
+    		MorphVariant morphVariant = new MorphVariant();
+    		morphVariant.Tag = "曳航肢";
+    		morphVariant.Add(new PartGroup(Sta.肢左["節足"][0][5]));
     		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_前腿節 = partGroup["前腿節"].ToPar();
     		X0Y0_腿節 = partGroup["腿節"].ToPar();

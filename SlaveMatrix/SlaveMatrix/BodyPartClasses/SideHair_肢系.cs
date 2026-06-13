@@ -92,12 +92,12 @@ namespace SlaveMatrix
     	{
     		SideHair_肢系 横髪_肢系2 = this;
     		ThisType = GetType();
-    		Dif dif = new Dif();
-    		dif.Tag = "肢系";
-    		dif.Add(new PartGroup(Sta.胴体["横髪左"][0][5]));
+    		MorphVariant morphVariant = new MorphVariant();
+    		morphVariant.Tag = "肢系";
+    		morphVariant.Add(new PartGroup(Sta.胴体["横髪左"][0][5]));
     		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_髪 = partGroup["髪"].ToPar();
     		Body.SetJoints();

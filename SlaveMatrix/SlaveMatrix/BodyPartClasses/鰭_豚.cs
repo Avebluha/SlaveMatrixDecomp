@@ -86,12 +86,12 @@ namespace SlaveMatrix
     	public 鰭_豚(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 鰭_豚D e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif();
-    		dif.Tag = "豚鰭";
-    		dif.Add(new PartGroup(Sta.肢左["鰭"][1][0]));
+    		MorphVariant morphVariant = new MorphVariant();
+    		morphVariant.Tag = "豚鰭";
+    		morphVariant.Add(new PartGroup(Sta.肢左["鰭"][1][0]));
     		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_鰭 = partGroup["鰭"].ToPar();
     		Xasix = false;

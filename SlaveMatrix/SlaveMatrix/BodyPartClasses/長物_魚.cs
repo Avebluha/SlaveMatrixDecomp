@@ -1896,12 +1896,12 @@ namespace SlaveMatrix
     	{
     		長物_魚 長物_魚2 = this;
     		ThisType = GetType();
-    		Dif dif = new Dif();
-    		dif.Tag = "魚";
-    		dif.Add(new PartGroup(Sta.半身["長物"][0][0]));
+    		MorphVariant morphVariant = new MorphVariant();
+    		morphVariant.Tag = "魚";
+    		morphVariant.Add(new PartGroup(Sta.半身["長物"][0][0]));
     		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
     		PartGroup partGroup = Body[0][0];
     		PartGroup pars2 = partGroup["胴6"].ToPars();
     		PartGroup pars3 = pars2["鱗左"].ToPars();

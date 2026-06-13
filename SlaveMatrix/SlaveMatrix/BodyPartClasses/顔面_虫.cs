@@ -639,10 +639,10 @@ namespace SlaveMatrix
     	{
     		顔面_虫 顔面_虫2 = this;
     		ThisType = GetType();
-    		Dif dif = new Dif(Sta.肢中["顔面"][1]);
+    		MorphVariant morphVariant = new MorphVariant(Sta.肢中["顔面"][1]);
     		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_面基 = partGroup["面基"].ToPar();
     		PartGroup pars2 = partGroup["複眼左"].ToPars();

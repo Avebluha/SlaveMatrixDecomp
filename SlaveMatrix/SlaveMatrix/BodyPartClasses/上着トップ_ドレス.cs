@@ -697,10 +697,10 @@ namespace SlaveMatrix
     	public 上着トップ_ドレス(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 上着トップ_ドレスD e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif(Sta.胴体["上着トップ"][2]);
+    		MorphVariant morphVariant = new MorphVariant(Sta.胴体["上着トップ"][2]);
     		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_服基 = partGroup["服基"].ToPar();
     		PartGroup pars2 = partGroup["紐"].ToPars();

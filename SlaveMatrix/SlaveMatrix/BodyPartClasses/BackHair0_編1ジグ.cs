@@ -601,12 +601,12 @@ namespace SlaveMatrix
     	public BackHair0_編1ジグ(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 後髪0_編1ジグD e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif();
-    		dif.Tag = "編み1ジグ";
-    		dif.Add(new PartGroup(Sta.胴体["BackHair0"][0][12]));
+    		MorphVariant morphVariant = new MorphVariant();
+    		morphVariant.Tag = "編み1ジグ";
+    		morphVariant.Add(new PartGroup(Sta.胴体["BackHair0"][0][12]));
     		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_髪基 = partGroup["髪基"].ToPar();
     		PartGroup pars2 = partGroup["お下げ"].ToPars();

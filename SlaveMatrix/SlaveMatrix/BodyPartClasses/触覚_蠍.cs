@@ -485,12 +485,12 @@ namespace SlaveMatrix
     	public 触覚_蠍(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 触覚_蠍D e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif();
-    		dif.Tag = "蠍";
-    		dif.Add(new PartGroup(Sta.肢左["触覚"][0][5]));
+    		MorphVariant morphVariant = new MorphVariant();
+    		morphVariant.Tag = "蠍";
+    		morphVariant.Add(new PartGroup(Sta.肢左["触覚"][0][5]));
     		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
     		PartGroup partGroup = Body[0][0];
     		PartGroup pars2 = partGroup["櫛状板1"].ToPars();
     		X0Y0_櫛状版1_櫛状版1 = pars2["櫛状板1"].ToPar();

@@ -284,12 +284,12 @@ namespace SlaveMatrix
     	public BackHair1_結1パツ(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, BackHair1_結1パツD e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif();
-    		dif.Tag = "結い1パツ";
-    		dif.Add(new PartGroup(Sta.胴体["BackHair1"][0][2]));
+    		MorphVariant morphVariant = new MorphVariant();
+    		morphVariant.Tag = "結い1パツ";
+    		morphVariant.Add(new PartGroup(Sta.胴体["BackHair1"][0][2]));
     		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_髪基 = partGroup["髪基"].ToPar();
     		PartGroup pars2 = partGroup["お下げ"].ToPars();

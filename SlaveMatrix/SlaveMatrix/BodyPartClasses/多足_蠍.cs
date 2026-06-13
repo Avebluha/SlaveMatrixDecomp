@@ -976,12 +976,12 @@ namespace SlaveMatrix
     	{
     		多足_蠍 多足_蠍2 = this;
     		ThisType = GetType();
-    		Dif dif = new Dif();
-    		dif.Tag = "蠍";
-    		dif.Add(new PartGroup(Sta.半身["多足"][0][2]));
+    		MorphVariant morphVariant = new MorphVariant();
+    		morphVariant.Tag = "蠍";
+    		morphVariant.Add(new PartGroup(Sta.半身["多足"][0][2]));
     		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
     		PartGroup partGroup = Body[0][0];
     		PartGroup pars2 = partGroup["前腹"].ToPars();
     		PartGroup pars3 = pars2["腹節7"].ToPars();

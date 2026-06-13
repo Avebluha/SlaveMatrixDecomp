@@ -300,10 +300,10 @@ namespace SlaveMatrix
     	public 角2_牛1(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 角2_牛1D e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif(Sta.肢左["角"][4]);
+    		MorphVariant morphVariant = new MorphVariant(Sta.肢左["角"][4]);
     		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_根 = partGroup["根"].ToPar();
     		X0Y0_凹1 = partGroup["凹1"].ToPar();

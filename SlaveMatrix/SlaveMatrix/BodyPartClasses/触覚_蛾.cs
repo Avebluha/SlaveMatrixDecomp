@@ -3237,12 +3237,12 @@ namespace SlaveMatrix
     	public 触覚_蛾(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 触覚_蛾D e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif();
-    		dif.Tag = "蛾";
-    		dif.Add(new PartGroup(Sta.肢左["触覚"][0][4]));
+    		MorphVariant morphVariant = new MorphVariant();
+    		morphVariant.Tag = "蛾";
+    		morphVariant.Add(new PartGroup(Sta.肢左["触覚"][0][4]));
     		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
     		PartGroup partGroup = Body[0][0];
     		PartGroup pars2 = partGroup["節1"].ToPars();
     		X0Y0_節1_節 = pars2["節"].ToPar();

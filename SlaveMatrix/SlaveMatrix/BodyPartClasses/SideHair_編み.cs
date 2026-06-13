@@ -417,12 +417,12 @@ namespace SlaveMatrix
     	public SideHair_編み(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, SideHair_編みD e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif();
-    		dif.Tag = "編み";
-    		dif.Add(new PartGroup(Sta.胴体["横髪左"][0][4]));
+    		MorphVariant morphVariant = new MorphVariant();
+    		morphVariant.Tag = "編み";
+    		morphVariant.Add(new PartGroup(Sta.胴体["横髪左"][0][4]));
     		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_髪 = partGroup["髪"].ToPar();
     		PartGroup pars2 = partGroup["編節1"].ToPars();

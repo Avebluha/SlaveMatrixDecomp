@@ -3774,12 +3774,12 @@ namespace SlaveMatrix
     	public 触手_触(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 触手_触D e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif();
-    		dif.Tag = "触腕";
-    		dif.Add(new PartGroup(Sta.肢左["触手"][0][1]));
+    		MorphVariant morphVariant = new MorphVariant();
+    		morphVariant.Tag = "触腕";
+    		morphVariant.Add(new PartGroup(Sta.肢左["触手"][0][1]));
     		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
     		PartGroup partGroup = Body[0][0];
     		PartGroup pars2 = partGroup["腕部"].ToPars();
     		PartGroup pars3 = pars2["節1"].ToPars();

@@ -1285,10 +1285,10 @@ namespace SlaveMatrix
     	public 後翅_草(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 後翅_草D e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif(Sta.肢左["後翅"][3]);
+    		MorphVariant morphVariant = new MorphVariant(Sta.肢左["後翅"][3]);
     		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
     		PartGroup partGroup = Body[0][0]["後翅"].ToPars();
     		PartGroup pars2 = partGroup["後翅1"].ToPars();
     		X0Y0_後翅_後翅1_後翅 = pars2["後翅"].ToPar();

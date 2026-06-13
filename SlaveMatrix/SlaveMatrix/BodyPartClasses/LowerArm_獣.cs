@@ -456,10 +456,10 @@ namespace SlaveMatrix
     	{
     		LowerArm_獣 LowerArm_獣2 = this;
     		ThisType = GetType();
-    		Dif dif = new Dif(Sta.腕左["四足LowerArm"][0]);
+    		MorphVariant morphVariant = new MorphVariant(Sta.腕左["四足LowerArm"][0]);
     		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_LowerArm = partGroup["下腕"].ToPar();
     		PartGroup pars2 = partGroup["筋肉"].ToPars();

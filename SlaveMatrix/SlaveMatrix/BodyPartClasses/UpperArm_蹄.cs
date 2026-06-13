@@ -146,10 +146,10 @@ namespace SlaveMatrix
     	{
     		UpperArm_蹄 UpperArm_蹄2 = this;
     		ThisType = GetType();
-    		Dif dif = new Dif(Sta.腕左["四足UpperArm"][1]);
+    		MorphVariant morphVariant = new MorphVariant(Sta.腕左["四足UpperArm"][1]);
     		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_筋肉上 = partGroup["筋肉上"].ToPar();
     		X0Y0_UpperArm = partGroup["上腕"].ToPar();

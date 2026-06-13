@@ -107,12 +107,12 @@ namespace SlaveMatrix
     	public 背中_羽(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 背中_羽D e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif();
-    		dif.Tag = "羽毛";
-    		dif.Add(new PartGroup(Sta.肢中["背中"][0][0]));
+    		MorphVariant morphVariant = new MorphVariant();
+    		morphVariant.Tag = "羽毛";
+    		morphVariant.Add(new PartGroup(Sta.肢中["背中"][0][0]));
     		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_羽毛1 = partGroup["羽毛1"].ToPar();
     		X0Y0_羽毛2 = partGroup["羽毛2"].ToPar();

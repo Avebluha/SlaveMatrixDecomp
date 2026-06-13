@@ -646,10 +646,10 @@ namespace SlaveMatrix
     	{
     		上着ボトム_クロス 上着ボトム_クロス2 = this;
     		ThisType = GetType();
-    		Dif dif = new Dif(Sta.胴体["上着ボトム前"][0]);
+    		MorphVariant morphVariant = new MorphVariant(Sta.胴体["上着ボトム前"][0]);
     		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
     		PartGroup partGroup = Body[0][0];
     		PartGroup pars2 = partGroup["中"].ToPars();
     		X0Y0_中_下地 = pars2["下地"].ToPar();

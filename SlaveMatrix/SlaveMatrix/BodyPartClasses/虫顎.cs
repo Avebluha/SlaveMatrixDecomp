@@ -170,10 +170,10 @@ namespace SlaveMatrix
     	public 虫顎(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 虫顎D e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif(Sta.肢左["虫顎"][0]);
+    		MorphVariant morphVariant = new MorphVariant(Sta.肢左["虫顎"][0]);
     		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_顎 = partGroup["顎"].ToPar();
     		X0Y0_節 = partGroup["節"].ToPar();

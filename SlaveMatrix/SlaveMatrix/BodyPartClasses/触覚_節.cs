@@ -612,12 +612,12 @@ namespace SlaveMatrix
     	public 触覚_節(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 触覚_節D e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif();
-    		dif.Tag = "節";
-    		dif.Add(new PartGroup(Sta.肢左["触覚"][0][1]));
+    		MorphVariant morphVariant = new MorphVariant();
+    		morphVariant.Tag = "節";
+    		morphVariant.Add(new PartGroup(Sta.肢左["触覚"][0][1]));
     		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_節1 = partGroup["節1"].ToPar();
     		X0Y0_節2 = partGroup["節2"].ToPar();

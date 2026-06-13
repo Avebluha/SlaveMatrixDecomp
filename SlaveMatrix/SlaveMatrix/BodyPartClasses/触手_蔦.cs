@@ -3283,12 +3283,12 @@ namespace SlaveMatrix
     	{
     		触手_蔦 触手_蔦2 = this;
     		ThisType = GetType();
-    		Dif dif = new Dif();
-    		dif.Tag = "蔦";
-    		dif.Add(new PartGroup(Sta.肢左["触手"][0][3]));
+    		MorphVariant morphVariant = new MorphVariant();
+    		morphVariant.Tag = "蔦";
+    		morphVariant.Add(new PartGroup(Sta.肢左["触手"][0][3]));
     		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
     		PartGroup partGroup = Body[0][0];
     		PartGroup pars2 = partGroup["節1"].ToPars();
     		X0Y0_節1_節 = pars2["節"].ToPar();

@@ -1859,12 +1859,12 @@ namespace SlaveMatrix
     	{
     		頭頂_宇 頭頂_宇2 = this;
     		ThisType = GetType();
-    		Dif dif = new Dif();
-    		dif.Tag = "エイリアン";
-    		dif.Add(new PartGroup(Sta.肢中["頭部前"][0][0]));
+    		MorphVariant morphVariant = new MorphVariant();
+    		morphVariant.Tag = "エイリアン";
+    		morphVariant.Add(new PartGroup(Sta.肢中["頭部前"][0][0]));
     		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_頭部 = partGroup["頭部"].ToPar();
     		PartGroup pars2 = partGroup["頭頂部"].ToPars();

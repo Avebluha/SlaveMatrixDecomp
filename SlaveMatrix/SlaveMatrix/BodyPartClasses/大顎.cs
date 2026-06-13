@@ -429,10 +429,10 @@ namespace SlaveMatrix
     	public 大顎(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 大顎D e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif(Sta.肢左["虫顎"][1]);
+    		MorphVariant morphVariant = new MorphVariant(Sta.肢左["虫顎"][1]);
     		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
     		PartGroup partGroup = Body[0][0];
     		PartGroup pars2 = partGroup["刺"].ToPars();
     		X0Y0_棘_棘1 = pars2["刺1"].ToPar();

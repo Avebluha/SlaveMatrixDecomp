@@ -5,7 +5,7 @@ using System.Drawing;
 namespace _2DGAMELIB
 {
     [Serializable]
-    public class Dif
+    public class MorphVariant
     {
     	public string Tag = "";
 
@@ -178,19 +178,19 @@ namespace _2DGAMELIB
     		}
     	}
 
-    	public Dif()
+    	public MorphVariant()
     	{
     	}
 
-    	public Dif(Dif Dif)
+    	public MorphVariant(MorphVariant MorphVariant)
     	{
-    		Copy(Dif);
+    		Copy(MorphVariant);
     	}
 
-    	private void Copy(Dif Dif)
+    	private void Copy(MorphVariant MorphVariant)
     	{
-    		Tag = Dif.Tag;
-    		foreach (PartGroup item in Dif.parss)
+    		Tag = MorphVariant.Tag;
+    		foreach (PartGroup item in MorphVariant.parss)
     		{
     			parss.Add(new PartGroup(item));
     		}

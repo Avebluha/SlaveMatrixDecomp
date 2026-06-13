@@ -322,12 +322,12 @@ namespace SlaveMatrix
     	public 尾_狐(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 尾_狐D e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif();
-    		dif.Tag = "狐尾";
-    		dif.Add(new PartGroup(Sta.尻尾["尾"][0][2]));
+    		MorphVariant morphVariant = new MorphVariant();
+    		morphVariant.Tag = "狐尾";
+    		morphVariant.Add(new PartGroup(Sta.尻尾["尾"][0][2]));
     		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_尾0 = partGroup["尾0"].ToPar();
     		X0Y0_尾1 = partGroup["尾1"].ToPar();

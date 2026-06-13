@@ -823,10 +823,10 @@ namespace SlaveMatrix
     	{
     		顔面_蟲 顔面_蟲2 = this;
     		ThisType = GetType();
-    		Dif dif = new Dif(Sta.肢中["顔面"][2]);
+    		MorphVariant morphVariant = new MorphVariant(Sta.肢中["顔面"][2]);
     		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_面 = partGroup["面"].ToPar();
     		PartGroup pars2 = partGroup["眼左"].ToPars();

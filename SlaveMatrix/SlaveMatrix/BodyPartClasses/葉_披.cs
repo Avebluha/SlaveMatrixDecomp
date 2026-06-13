@@ -145,10 +145,10 @@ namespace SlaveMatrix
     	public 葉_披(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 葉_披D e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif(Sta.肢左["葉"][0]);
+    		MorphVariant morphVariant = new MorphVariant(Sta.肢左["葉"][0]);
     		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_通常_葉 = partGroup["葉"].ToPar();
     		X0Y0_通常_葉脈 = partGroup["葉脈"].ToPar();

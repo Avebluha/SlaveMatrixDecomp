@@ -927,12 +927,12 @@ namespace SlaveMatrix
     	{
     		単足_植 単足_植2 = this;
     		ThisType = GetType();
-    		Dif dif = new Dif();
-    		dif.Tag = "植";
-    		dif.Add(new PartGroup(Sta.半身["単足"][0][0]));
+    		MorphVariant morphVariant = new MorphVariant();
+    		morphVariant.Tag = "植";
+    		morphVariant.Add(new PartGroup(Sta.半身["単足"][0][0]));
     		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_幹上 = partGroup["幹上"].ToPar();
     		X0Y0_幹下 = partGroup["幹下"].ToPar();

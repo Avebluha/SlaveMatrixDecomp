@@ -108,12 +108,12 @@ namespace SlaveMatrix
     	public 頭頂_天(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 頭頂_天D e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif();
-    		dif.Tag = "天輪";
-    		dif.Add(new PartGroup(Sta.肢中["頭部前"][0][2]));
+    		MorphVariant morphVariant = new MorphVariant();
+    		morphVariant.Tag = "天輪";
+    		morphVariant.Add(new PartGroup(Sta.肢中["頭部前"][0][2]));
     		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_天輪上 = partGroup["天輪上"].ToPar();
     		X0Y0_天輪下 = partGroup["天輪下"].ToPar();

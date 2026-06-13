@@ -174,12 +174,12 @@ namespace SlaveMatrix
     	public 舌_短(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 舌_短D e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif();
-    		dif.Tag = "短";
-    		dif.Add(new PartGroup(Sta.胴体["舌"][0][0]));
+    		MorphVariant morphVariant = new MorphVariant();
+    		morphVariant.Tag = "短";
+    		morphVariant.Add(new PartGroup(Sta.胴体["舌"][0][0]));
     		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_舌1 = partGroup["舌1"].ToPar();
     		X0Y0_舌2 = partGroup["舌2"].ToPar();

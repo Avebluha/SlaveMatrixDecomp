@@ -324,10 +324,10 @@ namespace SlaveMatrix
     	public 上着ミドル_ドレス(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 上着ミドル_ドレスD e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif(Sta.胴体["上着ミドル"][2]);
+    		MorphVariant morphVariant = new MorphVariant(Sta.胴体["上着ミドル"][2]);
     		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_服 = partGroup["服"].ToPar();
     		PartGroup pars2 = partGroup["縁"].ToPars();

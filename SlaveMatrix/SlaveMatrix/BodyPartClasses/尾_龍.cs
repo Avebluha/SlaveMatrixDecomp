@@ -1250,12 +1250,12 @@ namespace SlaveMatrix
     	public 尾_龍(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 尾_龍D e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif();
-    		dif.Tag = "龍尾";
-    		dif.Add(new PartGroup(Sta.尻尾["尾"][0][5]));
+    		MorphVariant morphVariant = new MorphVariant();
+    		morphVariant.Tag = "龍尾";
+    		morphVariant.Add(new PartGroup(Sta.尻尾["尾"][0][5]));
     		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_尾40 = partGroup["尾40"].ToPar();
     		X0Y0_尾39 = partGroup["尾39"].ToPar();

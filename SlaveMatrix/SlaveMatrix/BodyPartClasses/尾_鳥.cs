@@ -601,12 +601,12 @@ namespace SlaveMatrix
     	public 尾_鳥(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 尾_鳥D e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif();
-    		dif.Tag = "鳥尾";
-    		dif.Add(new PartGroup(Sta.尻尾["尾"][0][9]));
+    		MorphVariant morphVariant = new MorphVariant();
+    		morphVariant.Tag = "鳥尾";
+    		morphVariant.Add(new PartGroup(Sta.尻尾["尾"][0][9]));
     		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_尾0 = partGroup["尾0"].ToPar();
     		PartGroup pars2 = partGroup["風切羽"].ToPars();

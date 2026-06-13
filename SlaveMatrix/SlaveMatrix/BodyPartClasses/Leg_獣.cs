@@ -275,10 +275,10 @@ namespace SlaveMatrix
     	{
     		Leg_獣 Leg_獣2 = this;
     		ThisType = GetType();
-    		Dif dif = new Dif(Sta.脚左["四足脚"][0]);
+    		MorphVariant morphVariant = new MorphVariant(Sta.脚左["四足脚"][0]);
     		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_Leg = partGroup["脚"].ToPar();
     		X0Y0_筋 = partGroup["筋"].ToPar();

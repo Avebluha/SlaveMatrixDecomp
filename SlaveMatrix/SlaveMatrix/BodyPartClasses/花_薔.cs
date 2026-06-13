@@ -915,12 +915,12 @@ namespace SlaveMatrix
     		PartGroup pars2 = Sta.肢左["植"][0][0];
     		partGroup.Add("バラ", new PartGroup(pars2["花"].ToPars()["バラ"].ToPars()));
     		partGroup.Add("萼", new PartGroup(pars2["萼"].ToPars()));
-    		Dif dif = new Dif();
-    		dif.Tag = "花";
-    		dif.Add(new PartGroup(partGroup));
+    		MorphVariant morphVariant = new MorphVariant();
+    		morphVariant.Tag = "花";
+    		morphVariant.Add(new PartGroup(partGroup));
     		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
     		PartGroup pars3 = Body[0][0];
     		PartGroup pars4 = pars3["バラ"].ToPars();
     		PartGroup pars5 = pars4["通常"].ToPars();

@@ -879,12 +879,12 @@ namespace SlaveMatrix
     	{
     		長物_鯨 長物_鯨2 = this;
     		ThisType = GetType();
-    		Dif dif = new Dif();
-    		dif.Tag = "鯨";
-    		dif.Add(new PartGroup(Sta.半身["長物"][0][1]));
+    		MorphVariant morphVariant = new MorphVariant();
+    		morphVariant.Tag = "鯨";
+    		morphVariant.Add(new PartGroup(Sta.半身["長物"][0][1]));
     		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
     		PartGroup partGroup = Body[0][0];
     		PartGroup pars2 = partGroup["胴6"].ToPars();
     		X0Y0_Torso6_Torso = pars2["胴"].ToPar();

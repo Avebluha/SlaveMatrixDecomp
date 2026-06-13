@@ -144,12 +144,12 @@ namespace SlaveMatrix
     	public SideHair_ハネ(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, SideHair_ハネD e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif();
-    		dif.Tag = "ハネ";
-    		dif.Add(new PartGroup(Sta.胴体["横髪左"][0][1]));
+    		MorphVariant morphVariant = new MorphVariant();
+    		morphVariant.Tag = "ハネ";
+    		morphVariant.Add(new PartGroup(Sta.胴体["横髪左"][0][1]));
     		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_髪1 = partGroup["髪1"].ToPar();
     		X0Y0_髪2 = partGroup["髪2"].ToPar();

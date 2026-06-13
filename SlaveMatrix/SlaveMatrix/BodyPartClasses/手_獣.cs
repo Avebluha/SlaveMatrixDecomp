@@ -359,12 +359,12 @@ namespace SlaveMatrix
     	public 手_獣(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 手_獣D e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif();
-    		dif.Tag = "獣";
-    		dif.Add(new PartGroup(Sta.腕左["四足手"][0][0]));
+    		MorphVariant morphVariant = new MorphVariant();
+    		morphVariant.Tag = "獣";
+    		morphVariant.Add(new PartGroup(Sta.腕左["四足手"][0][0]));
     		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_手 = partGroup["手"].ToPar();
     		PartGroup pars2 = partGroup["親指"].ToPars();

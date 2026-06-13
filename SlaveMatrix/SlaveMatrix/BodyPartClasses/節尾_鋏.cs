@@ -316,12 +316,12 @@ namespace SlaveMatrix
     	public 節尾_鋏(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 節尾_鋏D e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif();
-    		dif.Tag = "鋏";
-    		dif.Add(new PartGroup(Sta.肢左["節足"][0][6]));
+    		MorphVariant morphVariant = new MorphVariant();
+    		morphVariant.Tag = "鋏";
+    		morphVariant.Add(new PartGroup(Sta.肢左["節足"][0][6]));
     		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_牙 = partGroup["牙"].ToPar();
     		PartGroup pars2 = partGroup["輪"].ToPars();

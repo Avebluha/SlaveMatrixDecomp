@@ -308,12 +308,12 @@ namespace SlaveMatrix
     		PartGroup partGroup = new PartGroup();
     		partGroup.Tag = "蛇";
     		partGroup.Add(new PartGroup(Sta.半身["長物"][0][2]["胴1"].ToPars()));
-    		Dif dif = new Dif();
-    		dif.Tag = partGroup.Tag;
-    		dif.Add(partGroup);
+    		MorphVariant morphVariant = new MorphVariant();
+    		morphVariant.Tag = partGroup.Tag;
+    		morphVariant.Add(partGroup);
     		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
     		PartGroup pars2 = Body[0][0]["胴1"].ToPars();
     		X0Y0_Torso1_Torso = pars2["胴"].ToPar();
     		X0Y0_Torso1_鱗2 = pars2["鱗2"].ToPar();

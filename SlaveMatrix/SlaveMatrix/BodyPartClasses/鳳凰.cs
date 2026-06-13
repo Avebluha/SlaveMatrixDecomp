@@ -1402,12 +1402,12 @@ namespace SlaveMatrix
     	public 鳳凰(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 鳳凰D e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif();
-    		dif.Tag = "鳳凰";
-    		dif.Add(new PartGroup(Sta.肢中["尾"][2][0]));
+    		MorphVariant morphVariant = new MorphVariant();
+    		morphVariant.Tag = "鳳凰";
+    		morphVariant.Add(new PartGroup(Sta.肢中["尾"][2][0]));
     		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
     		PartGroup partGroup = Body[0][0];
     		PartGroup pars2 = partGroup["羽"].ToPars();
     		X0Y0_羽_羽 = pars2["羽"].ToPar();

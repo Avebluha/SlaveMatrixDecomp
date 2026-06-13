@@ -481,12 +481,12 @@ namespace SlaveMatrix
     		partGroup.Tag = "蟲";
     		partGroup.Add(new PartGroup(Sta.半身["長物"][0][3]["胴4"].ToPars()));
     		partGroup.Add(new PartGroup(Sta.半身["長物"][0][3]["輪2"].ToPars()));
-    		Dif dif = new Dif();
-    		dif.Tag = partGroup.Tag;
-    		dif.Add(partGroup);
+    		MorphVariant morphVariant = new MorphVariant();
+    		morphVariant.Tag = partGroup.Tag;
+    		morphVariant.Add(partGroup);
     		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
     		PartGroup pars2 = Body[0][0];
     		PartGroup pars3 = pars2["胴4"].ToPars();
     		X0Y0_Torso_背板 = pars3["背板"].ToPar();

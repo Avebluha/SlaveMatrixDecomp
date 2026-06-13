@@ -221,8 +221,8 @@ namespace SlaveMatrix
     		ThisType = GetType();
     		Body = new Difs();
     		Body.Tag = "獣";
-    		Body.Add(new Dif(Sta.肢左["耳"][10]));
-    		Body.Add(new Dif(Sta.肢左["耳"][11]));
+    		Body.Add(new MorphVariant(Sta.肢左["耳"][10]));
+    		Body.Add(new MorphVariant(Sta.肢左["耳"][11]));
     		PartGroup partGroup = Body[0][0];
     		X0Y0_耳 = partGroup["耳"].ToPar();
     		X0Y0_耳線1 = partGroup["耳線1"].ToPar();

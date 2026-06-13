@@ -5726,12 +5726,12 @@ namespace SlaveMatrix
     	{
     		尾_ヘ 尾_ヘ2 = this;
     		ThisType = GetType();
-    		Dif dif = new Dif();
-    		dif.Tag = "ヘビ";
-    		dif.Add(new PartGroup(Sta.尻尾["尾"][0][16]));
+    		MorphVariant morphVariant = new MorphVariant();
+    		morphVariant.Tag = "ヘビ";
+    		morphVariant.Add(new PartGroup(Sta.尻尾["尾"][0][16]));
     		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
     		PartGroup partGroup = Body[0][0];
     		PartGroup pars2 = partGroup["尾35"].ToPars();
     		X0Y0_尾35_尾 = pars2["尾"].ToPar();

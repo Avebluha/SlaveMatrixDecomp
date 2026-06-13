@@ -209,12 +209,12 @@ namespace SlaveMatrix
     	public 頭頂_皿(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 頭頂_皿D e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif();
-    		dif.Tag = "皿";
-    		dif.Add(new PartGroup(Sta.肢中["頭部前"][0][1]));
+    		MorphVariant morphVariant = new MorphVariant();
+    		morphVariant.Tag = "皿";
+    		morphVariant.Add(new PartGroup(Sta.肢中["頭部前"][0][1]));
     		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_皿1 = partGroup["皿1"].ToPar();
     		X0Y0_皿2 = partGroup["皿2"].ToPar();

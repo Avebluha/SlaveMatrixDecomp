@@ -535,10 +535,10 @@ namespace SlaveMatrix
     	public 下着トップ_チューブ(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 下着トップ_チューブD e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif(Sta.胴体["下着トップ"][3]);
+    		MorphVariant morphVariant = new MorphVariant(Sta.胴体["下着トップ"][3]);
     		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
     		PartGroup partGroup = Body[0][0];
     		PartGroup pars2 = partGroup["布"].ToPars();
     		PartGroup pars3 = pars2["布左"].ToPars();

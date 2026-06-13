@@ -110,10 +110,10 @@ namespace SlaveMatrix
     	public ぶっかけ_小(double DisUnit, 配色指定 配色指定, 主人公配色 体配色, ModeEventDispatcher Med, ぶっかけ_小D e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif(Sta.スタンプ["ぶっかけ"][0]);
+    		MorphVariant morphVariant = new MorphVariant(Sta.スタンプ["ぶっかけ"][0]);
     		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_精液 = partGroup["精液"].ToPar();
     		partGroup = Body[0][1];

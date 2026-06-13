@@ -1167,12 +1167,12 @@ namespace SlaveMatrix
     		PartGroup partGroup = new PartGroup(Sta.肢左["植"][0][0]);
     		partGroup.Remove("花");
     		partGroup.Remove("萼");
-    		Dif dif = new Dif();
-    		dif.Tag = "植";
-    		dif.Add(partGroup);
+    		MorphVariant morphVariant = new MorphVariant();
+    		morphVariant.Tag = "植";
+    		morphVariant.Add(partGroup);
     		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
     		PartGroup pars2 = Body[0][0];
     		PartGroup pars3 = pars2["通常葉4"].ToPars();
     		PartGroup pars4 = pars3["通常"].ToPars();

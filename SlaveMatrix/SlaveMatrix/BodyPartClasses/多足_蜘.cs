@@ -175,12 +175,12 @@ namespace SlaveMatrix
     	{
     		多足_蜘 多足_蜘2 = this;
     		ThisType = GetType();
-    		Dif dif = new Dif();
-    		dif.Tag = "蜘";
-    		dif.Add(new PartGroup(Sta.半身["多足"][0][1]));
+    		MorphVariant morphVariant = new MorphVariant();
+    		morphVariant.Tag = "蜘";
+    		morphVariant.Add(new PartGroup(Sta.半身["多足"][0][1]));
     		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_Torso = partGroup["Torso"].ToPar();
     		X0Y0_胸版 = partGroup["胸版"].ToPar();

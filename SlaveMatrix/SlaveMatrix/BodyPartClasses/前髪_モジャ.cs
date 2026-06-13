@@ -815,12 +815,12 @@ namespace SlaveMatrix
     	public 前髪_モジャ(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 前髪_モジャD e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif();
-    		dif.Tag = "モジャ";
-    		dif.Add(new PartGroup(Sta.胴体["前髪"][0][3]));
+    		MorphVariant morphVariant = new MorphVariant();
+    		morphVariant.Tag = "モジャ";
+    		morphVariant.Add(new PartGroup(Sta.胴体["前髪"][0][3]));
     		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_髪左1 = partGroup["髪左1"].ToPar();
     		X0Y0_髪左2 = partGroup["髪左2"].ToPar();

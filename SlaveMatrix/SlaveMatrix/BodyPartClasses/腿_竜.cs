@@ -322,10 +322,10 @@ namespace SlaveMatrix
     	{
     		腿_竜 腿_竜2 = this;
     		ThisType = GetType();
-    		Dif dif = new Dif(Sta.脚左["四足腿"][3]);
+    		MorphVariant morphVariant = new MorphVariant(Sta.脚左["四足腿"][3]);
     		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_腿 = partGroup["腿"].ToPar();
     		PartGroup pars2 = partGroup["鱗下"].ToPars();

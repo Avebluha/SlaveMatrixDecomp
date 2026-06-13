@@ -509,10 +509,10 @@ namespace SlaveMatrix
     	{
     		顔面_甲 顔面_甲2 = this;
     		ThisType = GetType();
-    		Dif dif = new Dif(Sta.肢中["顔面"][0]);
+    		MorphVariant morphVariant = new MorphVariant(Sta.肢中["顔面"][0]);
     		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_面額 = partGroup["面額"].ToPar();
     		PartGroup pars2 = partGroup["面左下"].ToPars();
