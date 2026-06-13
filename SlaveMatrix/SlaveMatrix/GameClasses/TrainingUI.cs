@@ -101,10 +101,10 @@ namespace SlaveMatrix
         public ButtonBase SlaveStamina;
         public ButtonBase PlayerStamina;
 
-        private Swi 拘束具sw = new Swi(Color.OrangeRed);
-    	private Swi 目隠帯sw = new Swi(Color.OrangeRed);
-    	private Swi 玉口枷sw = new Swi(Color.OrangeRed);
-    	private Swi 断面sw = new Swi(Color.OrangeRed);
+        private ScreenSwitch 拘束具sw = new ScreenSwitch(Color.OrangeRed);
+    	private ScreenSwitch 目隠帯sw = new ScreenSwitch(Color.OrangeRed);
+    	private ScreenSwitch 玉口枷sw = new ScreenSwitch(Color.OrangeRed);
+    	private ScreenSwitch 断面sw = new ScreenSwitch(Color.OrangeRed);
 
     	public Gau 体力sゲージ;
     	public Gau 絶頂sゲージ;

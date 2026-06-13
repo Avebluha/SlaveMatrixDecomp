@@ -3,7 +3,7 @@ using System.Drawing;
 
 namespace _2DGAMELIB
 {
-    public class Swi
+    public class ScreenSwitch
     {
     	private bool flag;
 
@@ -13,7 +13,7 @@ namespace _2DGAMELIB
 
     	public bool Flag => flag;
 
-    	public Swi(Color OnColor)
+    	public ScreenSwitch(Color OnColor)
     	{
     		this.OnColor = OnColor;
     	}

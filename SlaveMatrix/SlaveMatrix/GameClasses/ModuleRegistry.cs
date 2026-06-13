@@ -2000,9 +2000,9 @@ namespace SlaveMatrix
     			uint 衣装変更価格 = 10000000u;
     			bool d = false;
     			ButtonMap bs = new ButtonMap();
-    			Swi 保守sw = new Swi(Color.DarkRed);
-    			Swi 一般sw = new Swi(Color.DarkRed);
-    			Swi 娼婦sw = new Swi(Color.DarkRed);
+    			ScreenSwitch 保守sw = new ScreenSwitch(Color.DarkRed);
+    			ScreenSwitch 一般sw = new ScreenSwitch(Color.DarkRed);
+    			ScreenSwitch 娼婦sw = new ScreenSwitch(Color.DarkRed);
     			int i = 0;
     			int f = 0;
 
