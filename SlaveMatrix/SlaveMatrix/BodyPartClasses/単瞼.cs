@@ -1952,7 +1952,7 @@ namespace SlaveMatrix
     	{
     		瞼下CD = new ColorD(ref 体配色.睫毛.Col1, ref 体配色.人肌O);
     		瞼上CD = new ColorD(ref 体配色.睫毛.Col1, ref 体配色.人肌O);
-    		二重CD = new ColorD(ref Col.Black, ref 体配色.人肌O);
+    		二重CD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌O);
     		睫毛上上左CD = new ColorD(ref 体配色.睫毛.Col1, ref 体配色.睫毛);
     		睫毛上中左CD = new ColorD(ref 体配色.睫毛.Col1, ref 体配色.睫毛);
     		睫毛上下左CD = new ColorD(ref 体配色.睫毛.Col1, ref 体配色.睫毛);

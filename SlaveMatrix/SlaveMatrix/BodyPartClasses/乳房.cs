@@ -1177,19 +1177,19 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		乳房CD = new ColorD(ref Col.Black, ref 体配色.人肌O);
-    		乳輪CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
+    		乳房CD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌O);
+    		乳輪CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
     		乳首CD = new ColorD(ref 体配色.粘膜線, ref 体配色.粘膜);
-    		淫タトゥ_タトゥ1CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_タトゥ2CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_タトゥ3CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_タトゥ4CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		ハイライト1CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
-    		ハイライト2CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
-    		傷XCD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		傷I1CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		傷I2CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		虫性_甲殻CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
+    		淫タトゥ_タトゥ1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_タトゥ2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_タトゥ3CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_タトゥ4CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		ハイライト1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		ハイライト2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		傷XCD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		傷I1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		傷I2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		虫性_甲殻CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
     	}
     }
 }

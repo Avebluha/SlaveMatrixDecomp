@@ -46,7 +46,7 @@ namespace SlaveMatrix
     		吹出し = new 吹出し(Are.DisplayUnitScale);
     		吹出し.SetHitFalse();
     		吹出し.右 = 右;
-    		吹出し.吹出しCD.色 = new Color2(ref BackColor, ref Col.Empty);
+    		吹出し.吹出しCD.色 = new Color2(ref BackColor, ref ColorHelper.Empty);
     		吹出し.X0Y0_吹出しCP.Setting();
     		double num = 1.35;
     		double num2 = 0.75;
@@ -106,7 +106,7 @@ namespace SlaveMatrix
     		吹出し = new 吹出し(Are.DisplayUnitScale);
     		吹出し.SetHitFalse();
     		吹出し.右 = 右;
-    		吹出し.吹出しCD.色 = new Color2(ref BackColor, ref Col.Empty);
+    		吹出し.吹出しCD.色 = new Color2(ref BackColor, ref ColorHelper.Empty);
     		吹出し.X0Y0_吹出しCP.Setting();
     		double num = 1.35;
     		double num2 = 0.75;

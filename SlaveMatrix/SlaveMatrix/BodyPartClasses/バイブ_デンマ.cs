@@ -1142,27 +1142,27 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		Col.GetGrad(ref Col.DarkGray, out var ret);
-    		ヘッドCD = new ColorD(ref Col.Black, ref ret);
-    		ヘッド線1CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		ヘッド線2CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		ヘッド線3CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		ヘッド線4CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		Col.GetGrad(ref Col.White, out ret);
-    		拡張ユニットCD = new ColorD(ref Col.Black, ref ret);
-    		Col.GetGrad(ref Col.LightGreen, out ret);
-    		拡張ユニット色CD = new ColorD(ref Col.Black, ref ret);
-    		Col.GetGrad(ref Col.Silver, out ret);
-    		ユニット_ユニットCD = new ColorD(ref Col.Black, ref ret);
-    		ユニット_ユニット線上CD = new ColorD(ref Col.Black, ref ret);
-    		ユニット_ユニット線下CD = new ColorD(ref Col.Black, ref ret);
-    		ユニット_ボタン上CD = new ColorD(ref Col.Black, ref ret);
-    		ユニット_ボタン下CD = new ColorD(ref Col.Black, ref ret);
-    		ユニット_パワー根CD = new ColorD(ref Col.Black, ref ret);
-    		ユニット_パワー1CD = new ColorD(ref Col.Black, ref ret);
-    		ユニット_パワー2CD = new ColorD(ref Col.Black, ref ret);
-    		ユニット_パワー3CD = new ColorD(ref Col.Black, ref ret);
-    		ユニット_パワー4CD = new ColorD(ref Col.Black, ref ret);
+    		ColorHelper.GetGrad(ref ColorHelper.DarkGray, out var ret);
+    		ヘッドCD = new ColorD(ref ColorHelper.Black, ref ret);
+    		ヘッド線1CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		ヘッド線2CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		ヘッド線3CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		ヘッド線4CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		ColorHelper.GetGrad(ref ColorHelper.White, out ret);
+    		拡張ユニットCD = new ColorD(ref ColorHelper.Black, ref ret);
+    		ColorHelper.GetGrad(ref ColorHelper.LightGreen, out ret);
+    		拡張ユニット色CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		ColorHelper.GetGrad(ref ColorHelper.Silver, out ret);
+    		ユニット_ユニットCD = new ColorD(ref ColorHelper.Black, ref ret);
+    		ユニット_ユニット線上CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		ユニット_ユニット線下CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		ユニット_ボタン上CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		ユニット_ボタン下CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		ユニット_パワー根CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		ユニット_パワー1CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		ユニット_パワー2CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		ユニット_パワー3CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		ユニット_パワー4CD = new ColorD(ref ColorHelper.Black, ref ret);
     	}
     }
 }

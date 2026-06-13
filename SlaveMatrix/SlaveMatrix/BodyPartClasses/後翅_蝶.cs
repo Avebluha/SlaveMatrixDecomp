@@ -878,27 +878,27 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		後翅_後翅CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		後翅_水青_柄CD = new ColorD(ref Col.Empty, ref 体配色.柄O);
-    		後翅_水青_紋1CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		後翅_水青_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		後翅_水青_紋3CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		後翅_揚羽_柄1CD = new ColorD(ref Col.Black, ref 体配色.柄O);
-    		後翅_揚羽_柄2CD = new ColorD(ref Col.Black, ref 体配色.柄O);
-    		後翅_揚羽_柄3CD = new ColorD(ref Col.Black, ref 体配色.柄O);
-    		後翅_揚羽_柄4CD = new ColorD(ref Col.Black, ref 体配色.柄O);
-    		後翅_揚羽_柄5CD = new ColorD(ref Col.Black, ref 体配色.柄O);
-    		後翅_揚羽_柄6CD = new ColorD(ref Col.Black, ref 体配色.柄O);
-    		後翅_揚羽_柄7CD = new ColorD(ref Col.Black, ref 体配色.柄O);
-    		後翅_揚羽_柄8CD = new ColorD(ref Col.Black, ref 体配色.柄O);
-    		後翅_揚羽_柄9CD = new ColorD(ref Col.Black, ref 体配色.柄O);
-    		後翅_揚羽_柄10CD = new ColorD(ref Col.Black, ref 体配色.柄O);
-    		後翅_揚羽_紋1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		後翅_揚羽_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		後翅_揚羽_紋3CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		後翅_揚羽_紋4CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		後翅_揚羽_紋5CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		後翅_揚羽_紋6CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
+    		後翅_後翅CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		後翅_水青_柄CD = new ColorD(ref ColorHelper.Empty, ref 体配色.柄O);
+    		後翅_水青_紋1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		後翅_水青_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		後翅_水青_紋3CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		後翅_揚羽_柄1CD = new ColorD(ref ColorHelper.Black, ref 体配色.柄O);
+    		後翅_揚羽_柄2CD = new ColorD(ref ColorHelper.Black, ref 体配色.柄O);
+    		後翅_揚羽_柄3CD = new ColorD(ref ColorHelper.Black, ref 体配色.柄O);
+    		後翅_揚羽_柄4CD = new ColorD(ref ColorHelper.Black, ref 体配色.柄O);
+    		後翅_揚羽_柄5CD = new ColorD(ref ColorHelper.Black, ref 体配色.柄O);
+    		後翅_揚羽_柄6CD = new ColorD(ref ColorHelper.Black, ref 体配色.柄O);
+    		後翅_揚羽_柄7CD = new ColorD(ref ColorHelper.Black, ref 体配色.柄O);
+    		後翅_揚羽_柄8CD = new ColorD(ref ColorHelper.Black, ref 体配色.柄O);
+    		後翅_揚羽_柄9CD = new ColorD(ref ColorHelper.Black, ref 体配色.柄O);
+    		後翅_揚羽_柄10CD = new ColorD(ref ColorHelper.Black, ref 体配色.柄O);
+    		後翅_揚羽_紋1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		後翅_揚羽_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		後翅_揚羽_紋3CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		後翅_揚羽_紋4CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		後翅_揚羽_紋5CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		後翅_揚羽_紋6CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
     	}
     }
 }

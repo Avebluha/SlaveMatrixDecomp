@@ -914,18 +914,18 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		尾10CD = new ColorD(ref Col.Black, ref 体配色.甲0R);
-    		針CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		尾9CD = new ColorD(ref Col.Black, ref 体配色.甲0R);
-    		尾8CD = new ColorD(ref Col.Black, ref 体配色.甲0R);
-    		尾7CD = new ColorD(ref Col.Black, ref 体配色.甲0R);
-    		尾6CD = new ColorD(ref Col.Black, ref 体配色.甲0R);
-    		尾5CD = new ColorD(ref Col.Black, ref 体配色.甲0R);
-    		尾4CD = new ColorD(ref Col.Black, ref 体配色.甲0R);
-    		尾3CD = new ColorD(ref Col.Black, ref 体配色.甲0R);
-    		尾2CD = new ColorD(ref Col.Black, ref 体配色.甲0R);
-    		尾1CD = new ColorD(ref Col.Black, ref 体配色.甲0R);
-    		尾0CD = new ColorD(ref Col.Black, ref 体配色.甲0R);
+    		尾10CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0R);
+    		針CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		尾9CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0R);
+    		尾8CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0R);
+    		尾7CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0R);
+    		尾6CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0R);
+    		尾5CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0R);
+    		尾4CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0R);
+    		尾3CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0R);
+    		尾2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0R);
+    		尾1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0R);
+    		尾0CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0R);
     		輪1_革CD = new ColorD();
     		輪1_金具1CD = new ColorD();
     		輪1_金具2CD = new ColorD();
@@ -943,7 +943,7 @@ namespace SlaveMatrix
     	private void 配色T0(BodyColorSet 体配色)
     	{
     		this.配色T(0, "尾", ref 体配色.甲0R, ref 体配色.刺青R);
-    		針CD = new ColorD(ref Col.Black, ref 体配色.体0O);
+    		針CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
     		輪1_革CD = new ColorD();
     		輪1_金具1CD = new ColorD();
     		輪1_金具2CD = new ColorD();
@@ -961,7 +961,7 @@ namespace SlaveMatrix
     	private void 配色T1(BodyColorSet 体配色)
     	{
     		this.配色T(1, "尾", ref 体配色.甲0R, ref 体配色.刺青R);
-    		針CD = new ColorD(ref Col.Black, ref 体配色.体0O);
+    		針CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
     		輪1_革CD = new ColorD();
     		輪1_金具1CD = new ColorD();
     		輪1_金具2CD = new ColorD();

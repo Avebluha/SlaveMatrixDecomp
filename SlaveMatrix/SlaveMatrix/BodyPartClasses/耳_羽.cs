@@ -535,29 +535,29 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		羽2CD = new ColorD(ref Col.Black, ref 体配色.羽0O);
-    		羽1CD = new ColorD(ref Col.Black, ref 体配色.羽0O);
-    		耳CD = new ColorD(ref Col.Black, ref 体配色.羽0O);
-    		耳線1CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		耳線2CD = new ColorD(ref Col.Black, ref Color2.Empty);
+    		羽2CD = new ColorD(ref ColorHelper.Black, ref 体配色.羽0O);
+    		羽1CD = new ColorD(ref ColorHelper.Black, ref 体配色.羽0O);
+    		耳CD = new ColorD(ref ColorHelper.Black, ref 体配色.羽0O);
+    		耳線1CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		耳線2CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
     	}
 
     	private void 配色T0(BodyColorSet 体配色)
     	{
-    		羽2CD = new ColorD(ref Col.Black, ref 体配色.羽0O);
-    		羽1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		耳CD = new ColorD(ref Col.Black, ref 体配色.羽0O);
-    		耳線1CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		耳線2CD = new ColorD(ref Col.Black, ref Color2.Empty);
+    		羽2CD = new ColorD(ref ColorHelper.Black, ref 体配色.羽0O);
+    		羽1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		耳CD = new ColorD(ref ColorHelper.Black, ref 体配色.羽0O);
+    		耳線1CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		耳線2CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
     	}
 
     	private void 配色T1(BodyColorSet 体配色)
     	{
-    		羽2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		羽1CD = new ColorD(ref Col.Black, ref 体配色.羽0O);
-    		耳CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		耳線1CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		耳線2CD = new ColorD(ref Col.Black, ref Color2.Empty);
+    		羽2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		羽1CD = new ColorD(ref ColorHelper.Black, ref 体配色.羽0O);
+    		耳CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		耳線1CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		耳線2CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
     	}
     }
 }

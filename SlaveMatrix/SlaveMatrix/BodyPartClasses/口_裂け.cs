@@ -735,12 +735,12 @@ namespace SlaveMatrix
     		X0Y1_口紅下_口紅CP = new ColorP(X0Y1_口紅下_口紅, 口紅下_口紅CD, DisUnit, abj: true);
     		X0Y1_口紅下_ハイライトCP = new ColorP(X0Y1_口紅下_ハイライト, 口紅下_ハイライトCD, DisUnit, abj: true);
     		X0Y2_口CP = new ColorP(X0Y2_口, 歯CD, DisUnit, abj: true);
-    		X0Y2_歯CP = new ColorP(X0Y2_歯, new ColorD(ref Col.Black, ref Color2.Empty), DisUnit, abj: true);
+    		X0Y2_歯CP = new ColorP(X0Y2_歯, new ColorD(ref ColorHelper.Black, ref Color2.Empty), DisUnit, abj: true);
     		X0Y2_口紅上CP = new ColorP(X0Y2_口紅上, 口紅上CD, DisUnit, abj: true);
     		X0Y2_口紅下_口紅CP = new ColorP(X0Y2_口紅下_口紅, 口紅下_口紅CD, DisUnit, abj: true);
     		X0Y2_口紅下_ハイライトCP = new ColorP(X0Y2_口紅下_ハイライト, 口紅下_ハイライトCD, DisUnit, abj: true);
     		X0Y3_口CP = new ColorP(X0Y3_口, 歯CD, DisUnit, abj: true);
-    		X0Y3_歯CP = new ColorP(X0Y3_歯, new ColorD(ref Col.Black, ref Color2.Empty), DisUnit, abj: true);
+    		X0Y3_歯CP = new ColorP(X0Y3_歯, new ColorD(ref ColorHelper.Black, ref Color2.Empty), DisUnit, abj: true);
     		X0Y3_口紅上CP = new ColorP(X0Y3_口紅上, 口紅上CD, DisUnit, abj: true);
     		X0Y3_口紅下_口紅CP = new ColorP(X0Y3_口紅下_口紅, 口紅下_口紅CD, DisUnit, abj: true);
     		X0Y3_口紅下_ハイライトCP = new ColorP(X0Y3_口紅下_ハイライト, 口紅下_ハイライトCD, DisUnit, abj: true);
@@ -759,12 +759,12 @@ namespace SlaveMatrix
     		X0Y6_口紅下_口紅CP = new ColorP(X0Y6_口紅下_口紅, 口紅下_口紅CD, DisUnit, abj: true);
     		X0Y6_口紅下_ハイライトCP = new ColorP(X0Y6_口紅下_ハイライト, 口紅下_ハイライトCD, DisUnit, abj: true);
     		X0Y7_口CP = new ColorP(X0Y7_口, 歯CD, DisUnit, abj: true);
-    		X0Y7_歯CP = new ColorP(X0Y7_歯, new ColorD(ref Col.Black, ref Color2.Empty), DisUnit, abj: true);
+    		X0Y7_歯CP = new ColorP(X0Y7_歯, new ColorD(ref ColorHelper.Black, ref Color2.Empty), DisUnit, abj: true);
     		X0Y7_口紅上CP = new ColorP(X0Y7_口紅上, 口紅上CD, DisUnit, abj: true);
     		X0Y7_口紅下_口紅CP = new ColorP(X0Y7_口紅下_口紅, 口紅下_口紅CD, DisUnit, abj: true);
     		X0Y7_口紅下_ハイライトCP = new ColorP(X0Y7_口紅下_ハイライト, 口紅下_ハイライトCD, DisUnit, abj: true);
     		X0Y8_口CP = new ColorP(X0Y8_口, 歯CD, DisUnit, abj: true);
-    		X0Y8_歯CP = new ColorP(X0Y8_歯, new ColorD(ref Col.Black, ref Color2.Empty), DisUnit, abj: true);
+    		X0Y8_歯CP = new ColorP(X0Y8_歯, new ColorD(ref ColorHelper.Black, ref Color2.Empty), DisUnit, abj: true);
     		X0Y8_口紅上CP = new ColorP(X0Y8_口紅上, 口紅上CD, DisUnit, abj: true);
     		X0Y8_口紅下_口紅CP = new ColorP(X0Y8_口紅下_口紅, 口紅下_口紅CD, DisUnit, abj: true);
     		X0Y8_口紅下_ハイライトCP = new ColorP(X0Y8_口紅下_ハイライト, 口紅下_ハイライトCD, DisUnit, abj: true);
@@ -918,11 +918,11 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		口CD = new ColorD(ref Col.Black, ref 体配色.粘膜);
-    		歯CD = new ColorD(ref Col.Black, ref 体配色.歯);
-    		口紅上CD = new ColorD(ref Col.Empty, ref 体配色.口紅);
-    		口紅下_口紅CD = new ColorD(ref Col.Empty, ref 体配色.口紅);
-    		口紅下_ハイライトCD = new ColorD(ref Col.Empty, ref 体配色.ハイライト);
+    		口CD = new ColorD(ref ColorHelper.Black, ref 体配色.粘膜);
+    		歯CD = new ColorD(ref ColorHelper.Black, ref 体配色.歯);
+    		口紅上CD = new ColorD(ref ColorHelper.Empty, ref 体配色.口紅);
+    		口紅下_口紅CD = new ColorD(ref ColorHelper.Empty, ref 体配色.口紅);
+    		口紅下_ハイライトCD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト);
     	}
     }
 }

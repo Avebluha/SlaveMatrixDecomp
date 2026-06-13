@@ -929,7 +929,7 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		髪基CD = new ColorD(ref Col.Empty, ref Color2.Empty);
+    		髪基CD = new ColorD(ref ColorHelper.Empty, ref Color2.Empty);
     		髪左1CD = new ColorD(ref 体配色.髪線, ref 体配色.髪O);
     		髪左2CD = new ColorD(ref 体配色.髪線, ref 体配色.髪O);
     		編み左_編節1_髪節CD = new ColorD(ref 体配色.髪線, ref 体配色.髪O);
@@ -939,7 +939,7 @@ namespace SlaveMatrix
     		編み左_編節3_髪節CD = new ColorD(ref 体配色.髪線, ref 体配色.髪O);
     		編み左_編節3_髪編目CD = new ColorD(ref 体配色.髪線, ref 体配色.髪O);
     		髪ハネ左CD = new ColorD(ref 体配色.髪線, ref 体配色.髪O);
-    		ハイライト左CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
+    		ハイライト左CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
     		髪右1CD = new ColorD(ref 体配色.髪線, ref 体配色.髪O);
     		髪右2CD = new ColorD(ref 体配色.髪線, ref 体配色.髪O);
     		編み右_編節1_髪節CD = new ColorD(ref 体配色.髪線, ref 体配色.髪O);
@@ -949,7 +949,7 @@ namespace SlaveMatrix
     		編み右_編節3_髪節CD = new ColorD(ref 体配色.髪線, ref 体配色.髪O);
     		編み右_編節3_髪編目CD = new ColorD(ref 体配色.髪線, ref 体配色.髪O);
     		髪ハネ右CD = new ColorD(ref 体配色.髪線, ref 体配色.髪O);
-    		ハイライト右CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
+    		ハイライト右CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
     		髪左根1CD = new ColorD(ref 体配色.髪線, ref 体配色.髪O);
     		髪左根2CD = new ColorD(ref 体配色.髪線, ref 体配色.髪O);
     		髪左3CD = new ColorD(ref 体配色.髪線, ref 体配色.髪O);

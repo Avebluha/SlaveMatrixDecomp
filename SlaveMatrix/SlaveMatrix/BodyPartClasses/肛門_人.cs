@@ -207,7 +207,7 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		肛門3CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
+    		肛門3CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
     		肛門2CD = new ColorD(ref 体配色.粘膜線, ref 体配色.粘膜);
     		肛門1CD = new ColorD(ref 体配色.粘膜線, ref 体配色.粘膜穴);
     	}

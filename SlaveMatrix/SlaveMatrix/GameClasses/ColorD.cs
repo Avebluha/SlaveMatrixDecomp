@@ -77,8 +77,8 @@ namespace SlaveMatrix
 
     	public ColorD()
     	{
-    		線 = Col.Black;
-    		色 = new Color2(ref Col.White, ref Col.DarkGray);
+    		線 = ColorHelper.Black;
+    		色 = new Color2(ref ColorHelper.White, ref ColorHelper.DarkGray);
     	}
     }
 }

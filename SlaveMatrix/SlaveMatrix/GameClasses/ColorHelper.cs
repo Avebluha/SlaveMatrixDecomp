@@ -3,7 +3,7 @@ using _2DGAMELIB;
 
 namespace SlaveMatrix
 {
-    public static class Col
+    public static class ColorHelper
     {
     	public static Color Empty = Color.Empty;
 

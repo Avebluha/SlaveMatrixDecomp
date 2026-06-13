@@ -689,14 +689,14 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		Torso_背板CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		Torso_節CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		Torso_胸板CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		Torso_TorsoCD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		Torso_瘤左2CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		Torso_瘤左1CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		Torso_瘤右2CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		Torso_瘤右1CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
+    		Torso_背板CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		Torso_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		Torso_胸板CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		Torso_TorsoCD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		Torso_瘤左2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		Torso_瘤左1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		Torso_瘤右2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		Torso_瘤右1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
     		輪_革CD = new ColorD();
     		輪_金具1CD = new ColorD();
     		輪_金具2CD = new ColorD();
@@ -707,14 +707,14 @@ namespace SlaveMatrix
 
     	private void 配色T0(BodyColorSet 体配色)
     	{
-    		Torso_背板CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		Torso_節CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		Torso_胸板CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		Torso_TorsoCD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		Torso_瘤左2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		Torso_瘤左1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		Torso_瘤右2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		Torso_瘤右1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		Torso_背板CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		Torso_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		Torso_胸板CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		Torso_TorsoCD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		Torso_瘤左2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		Torso_瘤左1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		Torso_瘤右2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		Torso_瘤右1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
     		輪_革CD = new ColorD();
     		輪_金具1CD = new ColorD();
     		輪_金具2CD = new ColorD();
@@ -725,14 +725,14 @@ namespace SlaveMatrix
 
     	private void 配色T1(BodyColorSet 体配色)
     	{
-    		Torso_背板CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		Torso_節CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		Torso_胸板CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		Torso_TorsoCD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		Torso_瘤左2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		Torso_瘤左1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		Torso_瘤右2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		Torso_瘤右1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		Torso_背板CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		Torso_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		Torso_胸板CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		Torso_TorsoCD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		Torso_瘤左2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		Torso_瘤左1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		Torso_瘤右2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		Torso_瘤右1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
     		輪_革CD = new ColorD();
     		輪_金具1CD = new ColorD();
     		輪_金具2CD = new ColorD();

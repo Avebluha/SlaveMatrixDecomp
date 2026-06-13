@@ -1543,16 +1543,16 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		植性_蔦CD = new ColorD(ref Col.Black, ref 体配色.植0O);
-    		植性_棘左上CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		植性_棘左下CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		植性_棘右上CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		植性_棘右下CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		NeckCD = new ColorD(ref Col.Black, ref 体配色.人肌O);
-    		淫タトゥ_ハート_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_ハート_タトゥ右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_タトゥ右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
+    		植性_蔦CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0O);
+    		植性_棘左上CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		植性_棘左下CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		植性_棘右上CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		植性_棘右下CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		NeckCD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌O);
+    		淫タトゥ_ハート_タトゥ左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_ハート_タトゥ右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_タトゥ左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_タトゥ右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
     		悪タトゥ_文字_文字a_枠CD = new ColorD(ref 体配色.刺青.Col1, ref Color2.Empty);
     		悪タトゥ_文字_文字a_文字タトゥ1CD = new ColorD(ref 体配色.刺青.Col1, ref 体配色.刺青);
     		悪タトゥ_文字_文字a_文字タトゥ2CD = new ColorD(ref 体配色.刺青.Col1, ref 体配色.刺青);
@@ -1569,17 +1569,17 @@ namespace SlaveMatrix
     		悪タトゥ_文字_文字e_文字タトゥ1CD = new ColorD(ref 体配色.刺青.Col1, ref 体配色.刺青);
     		悪タトゥ_文字_文字e_文字タトゥ2CD = new ColorD(ref 体配色.刺青.Col1, ref 体配色.刺青);
     		悪タトゥ_文字_文字e_文字タトゥ3CD = new ColorD(ref 体配色.刺青.Col1, ref 体配色.刺青);
-    		悪タトゥ_タトゥCD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		竜性_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗5CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗6CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		虫性_蛇腹4CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		虫性_蛇腹3CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		虫性_蛇腹2CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		虫性_蛇腹1CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
+    		悪タトゥ_タトゥCD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		竜性_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗5CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗6CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		虫性_蛇腹4CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		虫性_蛇腹3CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		虫性_蛇腹2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		虫性_蛇腹1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
     		ヴィオラ_左_襟CD = new ColorD();
     		ヴィオラ_左_縁1CD = new ColorD();
     		ヴィオラ_左_縁2CD = new ColorD();

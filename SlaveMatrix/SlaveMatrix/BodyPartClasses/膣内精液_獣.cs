@@ -203,8 +203,8 @@ namespace SlaveMatrix
     	private void 配色N0(BodyColorSet 体配色)
     	{
     		精液CD = new ColorD();
-    		血液1CD = new ColorD(ref Col.Empty, ref 体配色.血液O);
-    		血液2CD = new ColorD(ref Col.Empty, ref 体配色.血液O);
+    		血液1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.血液O);
+    		血液2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.血液O);
     	}
 
     	public void 精液配色(主人公配色 配色)

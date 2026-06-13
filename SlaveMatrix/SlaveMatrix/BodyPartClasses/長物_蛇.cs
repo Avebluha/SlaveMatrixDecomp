@@ -476,41 +476,41 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		Torso1_TorsoCD = new ColorD(ref Col.Empty, ref Color2.Empty);
-    		Torso1_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		Torso1_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		Torso1_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		Torso1_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		Torso1_鱗左2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		Torso1_鱗右2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		Torso1_鱗左1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		Torso1_鱗右1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		Torso1_TorsoCD = new ColorD(ref ColorHelper.Empty, ref Color2.Empty);
+    		Torso1_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		Torso1_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		Torso1_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		Torso1_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		Torso1_鱗左2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		Torso1_鱗右2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		Torso1_鱗左1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		Torso1_鱗右1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
     	}
 
     	private void 配色T0(BodyColorSet 体配色)
     	{
-    		Torso1_TorsoCD = new ColorD(ref Col.Empty, ref Color2.Empty);
-    		Torso1_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		Torso1_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		Torso1_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		Torso1_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		Torso1_鱗左2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		Torso1_鱗右2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		Torso1_鱗左1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		Torso1_鱗右1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		Torso1_TorsoCD = new ColorD(ref ColorHelper.Empty, ref Color2.Empty);
+    		Torso1_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		Torso1_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		Torso1_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		Torso1_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		Torso1_鱗左2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		Torso1_鱗右2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		Torso1_鱗左1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		Torso1_鱗右1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
     	}
 
     	private void 配色T1(BodyColorSet 体配色)
     	{
-    		Torso1_TorsoCD = new ColorD(ref Col.Empty, ref Color2.Empty);
-    		Torso1_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		Torso1_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		Torso1_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		Torso1_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		Torso1_鱗左2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		Torso1_鱗右2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		Torso1_鱗左1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		Torso1_鱗右1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		Torso1_TorsoCD = new ColorD(ref ColorHelper.Empty, ref Color2.Empty);
+    		Torso1_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		Torso1_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		Torso1_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		Torso1_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		Torso1_鱗左2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		Torso1_鱗右2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		Torso1_鱗左1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		Torso1_鱗右1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
     	}
     }
 }

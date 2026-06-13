@@ -497,56 +497,56 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		手CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		親指_指CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		親指_爪CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		小指_指CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		小指_爪CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		薬指_指CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		薬指_爪CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		中指_指CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		中指_爪CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		人指_指CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		人指_爪CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		竜性_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		手CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		親指_指CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		親指_爪CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		小指_指CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		小指_爪CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		薬指_指CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		薬指_爪CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		中指_指CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		中指_爪CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		人指_指CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		人指_爪CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		竜性_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
     	}
 
     	private void 配色T0(BodyColorSet 体配色)
     	{
-    		手CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		親指_指CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		親指_爪CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		小指_指CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		小指_爪CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		薬指_指CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		薬指_爪CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		中指_指CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		中指_爪CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		人指_指CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		人指_爪CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		竜性_鱗3CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		竜性_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_鱗1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		手CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		親指_指CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		親指_爪CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		小指_指CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		小指_爪CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		薬指_指CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		薬指_爪CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		中指_指CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		中指_爪CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		人指_指CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		人指_爪CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		竜性_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		竜性_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
     	}
 
     	private void 配色T1(BodyColorSet 体配色)
     	{
-    		手CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		親指_指CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		親指_爪CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		小指_指CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		小指_爪CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		薬指_指CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		薬指_爪CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		中指_指CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		中指_爪CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		人指_指CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		人指_爪CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		竜性_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_鱗2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		竜性_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		手CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		親指_指CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		親指_爪CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		小指_指CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		小指_爪CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		薬指_指CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		薬指_爪CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		中指_指CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		中指_爪CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		人指_指CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		人指_爪CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		竜性_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		竜性_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
     	}
     }
 }

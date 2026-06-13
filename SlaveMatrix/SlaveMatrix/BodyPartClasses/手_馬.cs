@@ -447,10 +447,10 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		指0CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
+    		指0CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
     		筋CD = new ColorD(ref 体配色.薄線, ref 体配色.毛0O);
-    		蹄CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		指1CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
+    		蹄CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		指1CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
     		腕輪_革CD = new ColorD();
     		腕輪_金具1CD = new ColorD();
     		腕輪_金具2CD = new ColorD();

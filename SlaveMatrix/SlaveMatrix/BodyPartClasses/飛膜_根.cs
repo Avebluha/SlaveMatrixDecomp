@@ -370,17 +370,17 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		飛膜CD = new ColorD(ref Col.Black, ref 体配色.膜R);
+    		飛膜CD = new ColorD(ref ColorHelper.Black, ref 体配色.膜R);
     	}
 
     	private void 配色T0(BodyColorSet 体配色)
     	{
-    		飛膜CD = new ColorD(ref Col.Black, ref 体配色.刺青R);
+    		飛膜CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青R);
     	}
 
     	private void 配色T1(BodyColorSet 体配色)
     	{
-    		飛膜CD = new ColorD(ref Col.Black, ref 体配色.刺青R);
+    		飛膜CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青R);
     	}
     }
 }

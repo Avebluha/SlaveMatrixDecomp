@@ -6,7 +6,7 @@ namespace SlaveMatrix
 {
 
     //race weighting/value information
-    public static class Def
+    public static class RacialDefinitions
     {
     	public static Dictionary<string, RaceInformation> race_information = new Dictionary<string, RaceInformation>
     	{

@@ -930,22 +930,22 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		獣翼手CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		小指_指1CD = new ColorD(ref Col.Black, ref 体配色.毛0R);
-    		小指_指2CD = new ColorD(ref Col.Black, ref 体配色.毛0R);
-    		小指_指3CD = new ColorD(ref Col.Black, ref 体配色.毛0R);
-    		薬指_指1CD = new ColorD(ref Col.Black, ref 体配色.毛0R);
-    		薬指_指2CD = new ColorD(ref Col.Black, ref 体配色.毛0R);
-    		薬指_指3CD = new ColorD(ref Col.Black, ref 体配色.毛0R);
-    		中指_指1CD = new ColorD(ref Col.Black, ref 体配色.毛0R);
-    		中指_指2CD = new ColorD(ref Col.Black, ref 体配色.毛0R);
-    		中指_指3CD = new ColorD(ref Col.Black, ref 体配色.毛0R);
-    		人指_指1CD = new ColorD(ref Col.Black, ref 体配色.毛0R);
-    		人指_指2CD = new ColorD(ref Col.Black, ref 体配色.毛0R);
-    		人指_指3CD = new ColorD(ref Col.Black, ref 体配色.毛0R);
-    		親指_指1CD = new ColorD(ref Col.Black, ref 体配色.毛0R);
-    		親指_指2CD = new ColorD(ref Col.Black, ref 体配色.毛0R);
-    		親指_指3CD = new ColorD(ref Col.Black, ref 体配色.爪O);
+    		獣翼手CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		小指_指1CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0R);
+    		小指_指2CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0R);
+    		小指_指3CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0R);
+    		薬指_指1CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0R);
+    		薬指_指2CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0R);
+    		薬指_指3CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0R);
+    		中指_指1CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0R);
+    		中指_指2CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0R);
+    		中指_指3CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0R);
+    		人指_指1CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0R);
+    		人指_指2CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0R);
+    		人指_指3CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0R);
+    		親指_指1CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0R);
+    		親指_指2CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0R);
+    		親指_指3CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
     	}
     }
 }

@@ -607,7 +607,7 @@ namespace SlaveMatrix
     		{
     			調教UI.擬音キュー.Enqueue(delegate(RenderArea a)
     			{
-    				調教UI.擬音.Sound(a, 対象.Element.位置.GetAreaPoint(0.04), Sta.振動.GetVal(1.0, 1.0), new Font("MS Gothic", 1f), Col.Black, 0.1 + 0.1 * base.強度, b: true);
+    				調教UI.擬音.Sound(a, 対象.Element.位置.GetAreaPoint(0.04), Sta.振動.GetVal(1.0, 1.0), new Font("MS Gothic", 1f), ColorHelper.Black, 0.1 + 0.1 * base.強度, b: true);
     			});
     		}
     	}

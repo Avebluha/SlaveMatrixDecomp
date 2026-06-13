@@ -1000,7 +1000,7 @@ namespace SlaveMatrix
     	private void 配色N0(BodyColorSet 体配色)
     	{
     		瞼CD = new ColorD(ref 体配色.睫毛.Col1, ref 体配色.人肌O);
-    		二重CD = new ColorD(ref Col.Black, ref 体配色.人肌O);
+    		二重CD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌O);
     		睫毛_睫毛3CD = new ColorD(ref 体配色.睫毛.Col1, ref 体配色.睫毛);
     		睫毛_睫毛4CD = new ColorD(ref 体配色.睫毛.Col1, ref 体配色.睫毛);
     		睫毛_睫毛1CD = new ColorD(ref 体配色.睫毛.Col1, ref 体配色.睫毛);

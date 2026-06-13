@@ -144,7 +144,7 @@ namespace SlaveMatrix
 
     	public void 配色(Color2 配色)
     	{
-    		陰核CD.線 = Col.Empty;
+    		陰核CD.線 = ColorHelper.Empty;
     		陰核CD.色 = 配色;
     		X0Y0_陰核CP.Setting();
     	}

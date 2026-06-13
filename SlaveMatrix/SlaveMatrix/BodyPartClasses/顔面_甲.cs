@@ -675,26 +675,26 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		面額CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		面左下_面目CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		面左下_面CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
+    		面額CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		面左下_面目CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		面左下_面CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
     		面右下_面目CD = 面左下_面目CD;
-    		面右下_面CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		面左外CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		面右外CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
+    		面右下_面CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		面左外CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		面右外CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
     		面左上_面目CD = 面左下_面目CD;
-    		面左上_面CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
+    		面左上_面CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
     		面右上_面目CD = 面左下_面目CD;
-    		面右上_面CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		面中0_面中CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		面中0_付根左_付根1CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		面中0_付根左_付根2CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		面中0_付根右_付根1CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		面中0_付根右_付根2CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		面中2_面中CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		面中2_面中下CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		面中1_面中CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		面中1_面中下CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
+    		面右上_面CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		面中0_面中CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		面中0_付根左_付根1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		面中0_付根左_付根2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		面中0_付根右_付根1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		面中0_付根右_付根2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		面中2_面中CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		面中2_面中下CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		面中1_面中CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		面中1_面中下CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
     	}
     }
 }

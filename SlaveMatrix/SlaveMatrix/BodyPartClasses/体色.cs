@@ -16,9 +16,9 @@ namespace SlaveMatrix
 
     	public Color 眉 = Color.Orange;
 
-    	public Color 睫 = Col.Black;
+    	public Color 睫 = ColorHelper.Black;
 
-    	public Color 髭 = Col.White;
+    	public Color 髭 = ColorHelper.White;
 
     	public Color 体0 = Color.Orange;
 
@@ -26,11 +26,11 @@ namespace SlaveMatrix
 
     	public Color 毛0 = Color.Orange;
 
-    	public Color 毛1 = Col.White;
+    	public Color 毛1 = ColorHelper.White;
 
     	public Color 羽0 = Color.Orange;
 
-    	public Color 羽1 = Col.White;
+    	public Color 羽1 = ColorHelper.White;
 
     	public Color 鱗0 = Color.OrangeRed;
 
@@ -46,7 +46,7 @@ namespace SlaveMatrix
 
     	public Color 薔 = Color.Red;
 
-    	public Color 百 = Col.White;
+    	public Color 百 = ColorHelper.White;
 
     	public Color 柄 = Color.Brown;
 
@@ -54,7 +54,7 @@ namespace SlaveMatrix
 
     	public Color 人肌 = Color.FromArgb(255, 255, 207, 169);
 
-    	public Color 粘膜 = Col.Empty;
+    	public Color 粘膜 = ColorHelper.Empty;
 
     	public Color 目左 = Color.Yellow;
 
@@ -66,15 +66,15 @@ namespace SlaveMatrix
 
     	public Color 頬目右 = Color.Yellow;
 
-    	public Color 白部 = Col.White;
+    	public Color 白部 = ColorHelper.White;
 
-    	public Color 歯 = Col.White;
+    	public Color 歯 = ColorHelper.White;
 
-    	public Color 爪 = Col.White;
+    	public Color 爪 = ColorHelper.White;
 
-    	public Color 角0 = Col.White;
+    	public Color 角0 = ColorHelper.White;
 
-    	public Color 角1 = Col.White;
+    	public Color 角1 = ColorHelper.White;
 
     	public Color 膜 = Color.OrangeRed;
 
@@ -90,13 +90,13 @@ namespace SlaveMatrix
 
     	public Color 後光 = Color.Yellow;
 
-    	public Color 口紅 = Col.Empty;
+    	public Color 口紅 = ColorHelper.Empty;
 
-    	public Color 刺青 = Col.Black;
+    	public Color 刺青 = ColorHelper.Black;
 
     	public Color 尿 = Color.Gold;
 
-    	public Color 体液 = Col.White;
+    	public Color 体液 = ColorHelper.White;
 
     	public Color 母乳 = Color.PapayaWhip;
 
@@ -124,52 +124,52 @@ namespace SlaveMatrix
     			HSV.ToRGB(num + RNG.XS.Next(5), RNG.XS.NextM(0, 223), RNG.XS.NextM(128, 255), out var ret);
     			item.SetValue(this, ret);
     		}
-    		Col.GetRandomColor(out 目左);
+    		ColorHelper.GetRandomColor(out 目左);
     		目右 = 目左;
     		縦目 = 目左;
     		頬目左 = 目左;
     		頬目右 = 目左;
     		眉 = 髪;
     		毛0 = 眉;
-    		睫 = Col.Black;
+    		睫 = ColorHelper.Black;
     		Hsv hsv;
     		if (b0)
     		{
-    			Col.GetSkinColor(out 人肌);
+    			ColorHelper.GetSkinColor(out 人肌);
     			血 = Color.FromArgb(255, 184, 6, 18);
     		}
     		else
     		{
-    			Col.GetRandomSkinColor(out 人肌);
+    			ColorHelper.GetRandomSkinColor(out 人肌);
     			hsv = new Hsv(ref 人肌);
     			hsv.H = num;
     			hsv.GetColor(out 人肌);
     			血 = Color.Empty;
     		}
-    		粘膜 = Col.Empty;
+    		粘膜 = ColorHelper.Empty;
     		if (b0)
     		{
-    			白部 = Col.White;
+    			白部 = ColorHelper.White;
     		}
     		else if (0.1.Lot())
     		{
-    			白部 = Col.Black;
+    			白部 = ColorHelper.Black;
     		}
     		else
     		{
-    			白部 = Col.White;
+    			白部 = ColorHelper.White;
     		}
     		歯 = Color.PapayaWhip;
-    		爪 = (RNG.XS.NextBool() ? Color.PapayaWhip : Col.Black);
+    		爪 = (RNG.XS.NextBool() ? Color.PapayaWhip : ColorHelper.Black);
     		角0 = Color.LightGray;
-    		角1 = Col.DarkGray;
-    		口紅 = Col.Empty;
+    		角1 = ColorHelper.DarkGray;
+    		口紅 = ColorHelper.Empty;
     		刺青 = Color.FromArgb(255 - 人肌.R, 255 - 人肌.G, 255 - 人肌.B);
     		hsv = new Hsv(ref 刺青);
     		hsv.S = 255;
     		hsv.GetColor(out 刺青);
     		後光 = Color.Yellow;
-    		体液 = Col.White;
+    		体液 = ColorHelper.White;
     		母乳 = Color.PapayaWhip;
     		尿 = Color.Gold;
     		紋 = 刺青;

@@ -331,12 +331,12 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		白目CD = new ColorD(ref Col.Empty, ref 体配色.白部O);
-    		黒目_黒目CD = new ColorD(ref Col.Black, ref 体配色.縦目O);
-    		黒目_瞳孔CD = new ColorD(ref Col.Black, ref 体配色.瞳孔);
-    		黒目_ハートCD = new ColorD(ref Col.Empty, ref 体配色.ハートO);
-    		黒目_ハイライト上CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト);
-    		黒目_ハイライト下CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト);
+    		白目CD = new ColorD(ref ColorHelper.Empty, ref 体配色.白部O);
+    		黒目_黒目CD = new ColorD(ref ColorHelper.Black, ref 体配色.縦目O);
+    		黒目_瞳孔CD = new ColorD(ref ColorHelper.Black, ref 体配色.瞳孔);
+    		黒目_ハートCD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハートO);
+    		黒目_ハイライト上CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト);
+    		黒目_ハイライト下CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト);
     	}
     }
 }

@@ -984,30 +984,30 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		前翅_前翅軸_軸1CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		前翅_前翅軸_軸2CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		前翅_前翅軸_軸3CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		前翅_前翅軸_罅線CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		前翅_前翅甲_甲2CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		前翅_前翅甲_甲1CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		前翅_前翅甲_紋1CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		前翅_前翅甲_紋2CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		前翅_前翅甲_紋3CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		前翅_前翅甲_紋4CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		前翅_前翅甲_紋5CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		前翅_前翅甲_紋6CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		前翅_前翅甲_紋7CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		前翅_前翅甲_罅線1CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		前翅_前翅甲_罅線2CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		付根_付根0CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		付根_付根1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		付根_付根2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		甲付根CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		紋1CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		紋2CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		欠け1CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		欠け2CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		欠け3CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
+    		前翅_前翅軸_軸1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		前翅_前翅軸_軸2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		前翅_前翅軸_軸3CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		前翅_前翅軸_罅線CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		前翅_前翅甲_甲2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		前翅_前翅甲_甲1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		前翅_前翅甲_紋1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		前翅_前翅甲_紋2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		前翅_前翅甲_紋3CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		前翅_前翅甲_紋4CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		前翅_前翅甲_紋5CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		前翅_前翅甲_紋6CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		前翅_前翅甲_紋7CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		前翅_前翅甲_罅線1CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		前翅_前翅甲_罅線2CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		付根_付根0CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		付根_付根1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		付根_付根2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		甲付根CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		紋1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		紋2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		欠け1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		欠け2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		欠け3CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
     	}
     }
 }

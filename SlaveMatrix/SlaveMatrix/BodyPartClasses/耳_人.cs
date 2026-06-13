@@ -202,8 +202,8 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		耳CD = new ColorD(ref Col.Black, ref 体配色.人肌O);
-    		耳線CD = new ColorD(ref Col.Black, ref Color2.Empty);
+    		耳CD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌O);
+    		耳線CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
     	}
     }
 }

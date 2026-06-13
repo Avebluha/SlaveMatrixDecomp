@@ -652,16 +652,16 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		転節CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		腿節CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		柄1CD = new ColorD(ref Col.Black, ref 体配色.柄O);
-    		膝節CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		脛節CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		蹠節CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		跗節1CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		跗節2CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		爪_爪1CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		爪_爪2CD = new ColorD(ref Col.Black, ref 体配色.爪O);
+    		転節CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		腿節CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		柄1CD = new ColorD(ref ColorHelper.Black, ref 体配色.柄O);
+    		膝節CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		脛節CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		蹠節CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		跗節1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		跗節2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		爪_爪1CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		爪_爪2CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
     		輪_革CD = new ColorD();
     		輪_金具1CD = new ColorD();
     		輪_金具2CD = new ColorD();
@@ -672,16 +672,16 @@ namespace SlaveMatrix
 
     	private void 配色T0(BodyColorSet 体配色)
     	{
-    		転節CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		腿節CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		柄1CD = new ColorD(ref Col.Black, ref 体配色.柄O);
-    		膝節CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		脛節CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		蹠節CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		跗節1CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		跗節2CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		爪_爪1CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		爪_爪2CD = new ColorD(ref Col.Black, ref 体配色.爪O);
+    		転節CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		腿節CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		柄1CD = new ColorD(ref ColorHelper.Black, ref 体配色.柄O);
+    		膝節CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		脛節CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		蹠節CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		跗節1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		跗節2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		爪_爪1CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		爪_爪2CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
     		輪_革CD = new ColorD();
     		輪_金具1CD = new ColorD();
     		輪_金具2CD = new ColorD();
@@ -692,16 +692,16 @@ namespace SlaveMatrix
 
     	private void 配色T1(BodyColorSet 体配色)
     	{
-    		転節CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		腿節CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		柄1CD = new ColorD(ref Col.Black, ref 体配色.柄O);
-    		膝節CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		脛節CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		蹠節CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		跗節1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		跗節2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		爪_爪1CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		爪_爪2CD = new ColorD(ref Col.Black, ref 体配色.爪O);
+    		転節CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		腿節CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		柄1CD = new ColorD(ref ColorHelper.Black, ref 体配色.柄O);
+    		膝節CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		脛節CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		蹠節CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		跗節1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		跗節2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		爪_爪1CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		爪_爪2CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
     		輪_革CD = new ColorD();
     		輪_金具1CD = new ColorD();
     		輪_金具2CD = new ColorD();

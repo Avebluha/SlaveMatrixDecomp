@@ -521,47 +521,47 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		根CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		刺_棘1CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		刺_棘2CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		刺_棘3CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
+    		根CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		刺_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		刺_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		刺_棘3CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
     		輪_革CD = new ColorD();
     		輪_金具1CD = new ColorD();
     		輪_金具2CD = new ColorD();
     		輪_金具3CD = new ColorD();
     		輪_金具左CD = new ColorD();
     		輪_金具右CD = new ColorD();
-    		折線CD = new ColorD(ref Col.Black, ref Color2.Empty);
+    		折線CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
     	}
 
     	private void 配色T0(BodyColorSet 体配色)
     	{
-    		根CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		刺_棘1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		刺_棘2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		刺_棘3CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		根CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		刺_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		刺_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		刺_棘3CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
     		輪_革CD = new ColorD();
     		輪_金具1CD = new ColorD();
     		輪_金具2CD = new ColorD();
     		輪_金具3CD = new ColorD();
     		輪_金具左CD = new ColorD();
     		輪_金具右CD = new ColorD();
-    		折線CD = new ColorD(ref Col.Black, ref Color2.Empty);
+    		折線CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
     	}
 
     	private void 配色T1(BodyColorSet 体配色)
     	{
-    		根CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		刺_棘1CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		刺_棘2CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		刺_棘3CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
+    		根CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		刺_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		刺_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		刺_棘3CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
     		輪_革CD = new ColorD();
     		輪_金具1CD = new ColorD();
     		輪_金具2CD = new ColorD();
     		輪_金具3CD = new ColorD();
     		輪_金具左CD = new ColorD();
     		輪_金具右CD = new ColorD();
-    		折線CD = new ColorD(ref Col.Black, ref Color2.Empty);
+    		折線CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
     	}
 
     	public void 輪配色(拘束具色 配色)

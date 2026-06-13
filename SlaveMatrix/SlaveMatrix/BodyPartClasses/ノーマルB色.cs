@@ -29,17 +29,17 @@ namespace SlaveMatrix
     	public void SetDefault()
     	{
     		生地 = Color.DarkRed;
-    		リボン = Col.Black;
-    		柄 = Col.Black;
+    		リボン = ColorHelper.Black;
+    		柄 = ColorHelper.Black;
     		縁 = Color.DarkRed;
-    		紐 = Col.Black;
+    		紐 = ColorHelper.Black;
     		SetColor2();
     	}
 
     	public void SetRandom()
     	{
-    		Col.GetRandomClothesColor(out 生地);
-    		Col.GetRandomClothesColor(out リボン);
+    		ColorHelper.GetRandomClothesColor(out 生地);
+    		ColorHelper.GetRandomClothesColor(out リボン);
     		柄 = リボン;
     		縁 = 生地;
     		紐 = リボン;
@@ -48,25 +48,25 @@ namespace SlaveMatrix
 
     	public void SetColor2()
     	{
-    		Col.GetGrad(ref 生地, out 生地色);
-    		Col.GetGrad(ref リボン, out リボン色);
-    		Col.GetGrad(ref 柄, out 柄色);
-    		Col.GetGrad(ref 縁, out 縁色);
-    		Col.GetGrad(ref 紐, out 紐色);
+    		ColorHelper.GetGrad(ref 生地, out 生地色);
+    		ColorHelper.GetGrad(ref リボン, out リボン色);
+    		ColorHelper.GetGrad(ref 柄, out 柄色);
+    		ColorHelper.GetGrad(ref 縁, out 縁色);
+    		ColorHelper.GetGrad(ref 紐, out 紐色);
     	}
 
     	public void Setビキニ()
     	{
     		生地 = Color.DarkRed;
-    		リボン = Col.White;
-    		柄 = Col.White;
-    		縁 = Col.White;
-    		紐 = Col.White;
-    		Col.GetGrad(ref 生地, out 生地色);
-    		Col.GetGrad(ref リボン, out リボン色);
-    		Col.GetGrad(ref 柄, out 柄色);
-    		Col.GetGrad(ref 縁, out 縁色);
-    		Col.GetGrad(ref 紐, out 紐色);
+    		リボン = ColorHelper.White;
+    		柄 = ColorHelper.White;
+    		縁 = ColorHelper.White;
+    		紐 = ColorHelper.White;
+    		ColorHelper.GetGrad(ref 生地, out 生地色);
+    		ColorHelper.GetGrad(ref リボン, out リボン色);
+    		ColorHelper.GetGrad(ref 柄, out 柄色);
+    		ColorHelper.GetGrad(ref 縁, out 縁色);
+    		ColorHelper.GetGrad(ref 紐, out 紐色);
     	}
     }
 }

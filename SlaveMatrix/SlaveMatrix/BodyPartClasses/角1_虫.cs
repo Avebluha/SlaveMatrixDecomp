@@ -406,38 +406,38 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		根CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		器官左_器官1CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		器官左_器官2CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		器官右_器官1CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		器官右_器官2CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		線CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		折線1CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		折線2CD = new ColorD(ref Col.Black, ref Color2.Empty);
+    		根CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		器官左_器官1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		器官左_器官2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		器官右_器官1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		器官右_器官2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		線CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		折線1CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		折線2CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
     	}
 
     	private void 配色T0(BodyColorSet 体配色)
     	{
-    		根CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		器官左_器官1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		器官左_器官2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		器官右_器官1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		器官右_器官2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		線CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		折線1CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		折線2CD = new ColorD(ref Col.Black, ref Color2.Empty);
+    		根CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		器官左_器官1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		器官左_器官2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		器官右_器官1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		器官右_器官2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		線CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		折線1CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		折線2CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
     	}
 
     	private void 配色T1(BodyColorSet 体配色)
     	{
-    		根CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		器官左_器官1CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		器官左_器官2CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		器官右_器官1CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		器官右_器官2CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		線CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		折線1CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		折線2CD = new ColorD(ref Col.Black, ref Color2.Empty);
+    		根CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		器官左_器官1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		器官左_器官2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		器官右_器官1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		器官右_器官2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		線CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		折線1CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		折線2CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
     	}
     }
 }

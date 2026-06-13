@@ -863,13 +863,13 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		膣基CD = new ColorD(ref Col.Empty, ref Color2.Empty);
-    		Col.Alpha(ref 体配色.粘膜, 160, out var ret);
+    		膣基CD = new ColorD(ref ColorHelper.Empty, ref Color2.Empty);
+    		ColorHelper.Alpha(ref 体配色.粘膜, 160, out var ret);
     		膣壁左CD = new ColorD(ref 体配色.粘膜線, ref ret);
     		膣壁右CD = new ColorD(ref 体配色.粘膜線, ref 膣壁左CD.c2);
-    		卵巣左CD = new ColorD(ref Col.Black, ref 体配色.白部O);
+    		卵巣左CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
     		卵管左CD = new ColorD(ref 体配色.粘膜線, ref 膣壁左CD.c2);
-    		卵巣右CD = new ColorD(ref Col.Black, ref 体配色.白部O);
+    		卵巣右CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
     		卵管右CD = new ColorD(ref 体配色.粘膜線, ref 膣壁左CD.c2);
     		子宮CD = new ColorD(ref 体配色.粘膜線, ref 膣壁左CD.c2);
     		子宮内CD = new ColorD(ref 体配色.粘膜線, ref 膣壁左CD.c2);

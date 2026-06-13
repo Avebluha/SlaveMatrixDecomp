@@ -557,44 +557,44 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		風切羽_羽3CD = new ColorD(ref Col.Black, ref 体配色.羽1O);
-    		風切羽_羽2CD = new ColorD(ref Col.Black, ref 体配色.羽1O);
-    		風切羽_羽1CD = new ColorD(ref Col.Black, ref 体配色.羽1O);
-    		羽毛CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		鳥翼UpperArmCD = new ColorD(ref Col.Black, ref 体配色.人肌O);
-    		小雨覆CD = new ColorD(ref Col.Black, ref 体配色.羽0O);
-    		竜性_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		風切羽_羽3CD = new ColorD(ref ColorHelper.Black, ref 体配色.羽1O);
+    		風切羽_羽2CD = new ColorD(ref ColorHelper.Black, ref 体配色.羽1O);
+    		風切羽_羽1CD = new ColorD(ref ColorHelper.Black, ref 体配色.羽1O);
+    		羽毛CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		鳥翼UpperArmCD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌O);
+    		小雨覆CD = new ColorD(ref ColorHelper.Black, ref 体配色.羽0O);
+    		竜性_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
     	}
 
     	private void 配色T0(BodyColorSet 体配色)
     	{
-    		風切羽_羽3CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		風切羽_羽2CD = new ColorD(ref Col.Black, ref 体配色.羽1O);
-    		風切羽_羽1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		羽毛CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		鳥翼UpperArmCD = new ColorD(ref Col.Black, ref 体配色.人肌O);
-    		小雨覆CD = new ColorD(ref Col.Black, ref 体配色.羽0O);
-    		竜性_鱗1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		竜性_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_鱗3CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		竜性_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		風切羽_羽3CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		風切羽_羽2CD = new ColorD(ref ColorHelper.Black, ref 体配色.羽1O);
+    		風切羽_羽1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		羽毛CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		鳥翼UpperArmCD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌O);
+    		小雨覆CD = new ColorD(ref ColorHelper.Black, ref 体配色.羽0O);
+    		竜性_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		竜性_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		竜性_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
     	}
 
     	private void 配色T1(BodyColorSet 体配色)
     	{
-    		風切羽_羽3CD = new ColorD(ref Col.Black, ref 体配色.羽1O);
-    		風切羽_羽2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		風切羽_羽1CD = new ColorD(ref Col.Black, ref 体配色.羽1O);
-    		羽毛CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		鳥翼UpperArmCD = new ColorD(ref Col.Black, ref 体配色.人肌O);
-    		小雨覆CD = new ColorD(ref Col.Black, ref 体配色.羽0O);
-    		竜性_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_鱗2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		竜性_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_鱗4CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		風切羽_羽3CD = new ColorD(ref ColorHelper.Black, ref 体配色.羽1O);
+    		風切羽_羽2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		風切羽_羽1CD = new ColorD(ref ColorHelper.Black, ref 体配色.羽1O);
+    		羽毛CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		鳥翼UpperArmCD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌O);
+    		小雨覆CD = new ColorD(ref ColorHelper.Black, ref 体配色.羽0O);
+    		竜性_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		竜性_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
     	}
     }
 }

@@ -349,7 +349,7 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		髪基CD = new ColorD(ref Col.Empty, ref Color2.Empty);
+    		髪基CD = new ColorD(ref ColorHelper.Empty, ref Color2.Empty);
     		お下げ左_髪左根CD = new ColorD(ref 体配色.髪線, ref 体配色.髪O);
     		お下げ左_髪左1CD = new ColorD(ref 体配色.髪線, ref 体配色.髪O);
     		お下げ左_髪左2CD = new ColorD(ref 体配色.髪線, ref 体配色.髪O);

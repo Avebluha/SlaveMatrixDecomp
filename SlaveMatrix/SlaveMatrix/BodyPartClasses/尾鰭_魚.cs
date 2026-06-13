@@ -677,21 +677,21 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		鰭左2_鰭膜CD = new ColorD(ref Col.Black, ref 体配色.膜O);
-    		鰭左2_鰭条CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		鰭右2_鰭膜CD = new ColorD(ref Col.Black, ref 体配色.膜O);
-    		鰭右2_鰭条CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		鰭左1_鰭膜CD = new ColorD(ref Col.Black, ref 体配色.膜O);
-    		鰭左1_鰭条CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		鰭右1_鰭膜CD = new ColorD(ref Col.Black, ref 体配色.膜O);
-    		鰭右1_鰭条CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		尾_尾CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		尾_鱗右3CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		尾_鱗左3CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		尾_鱗右2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		尾_鱗左2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		尾_鱗右1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		尾_鱗左1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		鰭左2_鰭膜CD = new ColorD(ref ColorHelper.Black, ref 体配色.膜O);
+    		鰭左2_鰭条CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		鰭右2_鰭膜CD = new ColorD(ref ColorHelper.Black, ref 体配色.膜O);
+    		鰭右2_鰭条CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		鰭左1_鰭膜CD = new ColorD(ref ColorHelper.Black, ref 体配色.膜O);
+    		鰭左1_鰭条CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		鰭右1_鰭膜CD = new ColorD(ref ColorHelper.Black, ref 体配色.膜O);
+    		鰭右1_鰭条CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		尾_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		尾_鱗右3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		尾_鱗左3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		尾_鱗右2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		尾_鱗左2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		尾_鱗右1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		尾_鱗左1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
     	}
     }
 }

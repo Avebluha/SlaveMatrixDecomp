@@ -1164,7 +1164,7 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		胸郭CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
+    		胸郭CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
     		筋肉_筋肉左CD = new ColorD(ref 体配色.薄線, ref 体配色.毛0O);
     		筋肉_筋肉右CD = new ColorD(ref 体配色.薄線, ref 体配色.毛0O);
     		筋肉_筋肉中CD = new ColorD(ref 体配色.薄線, ref 体配色.毛0O);
@@ -1174,28 +1174,28 @@ namespace SlaveMatrix
     		筋肉_筋肉右下CD = new ColorD(ref 体配色.薄線, ref 体配色.毛0O);
     		筋肉_筋肉右中CD = new ColorD(ref 体配色.薄線, ref 体配色.毛0O);
     		筋肉_筋肉右上CD = new ColorD(ref 体配色.薄線, ref 体配色.毛0O);
-    		紋柄_紋左_紋1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		紋柄_紋左_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		紋柄_紋左_紋3CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		紋柄_紋左_紋4CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		紋柄_紋右_紋1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		紋柄_紋右_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		紋柄_紋右_紋3CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		紋柄_紋右_紋4CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		虎柄_虎左_虎1CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		虎柄_虎左_虎2CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		虎柄_虎右_虎1CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		虎柄_虎右_虎2CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		竜性_中_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_中_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_中_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_中_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_左_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_左_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_左_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_右_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_右_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_右_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		紋柄_紋左_紋1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		紋柄_紋左_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		紋柄_紋左_紋3CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		紋柄_紋左_紋4CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		紋柄_紋右_紋1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		紋柄_紋右_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		紋柄_紋右_紋3CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		紋柄_紋右_紋4CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		虎柄_虎左_虎1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		虎柄_虎左_虎2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		虎柄_虎右_虎1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		虎柄_虎右_虎2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		竜性_中_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_中_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_中_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_中_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_左_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_左_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_左_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_右_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_右_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_右_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
     	}
     }
 }

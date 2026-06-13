@@ -242,10 +242,10 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		腿CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
+    		腿CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
     		筋CD = new ColorD(ref 体配色.薄線, ref 体配色.毛0O);
-    		虎柄_虎1CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		虎柄_虎2CD = new ColorD(ref Col.Black, ref 体配色.刺青);
+    		虎柄_虎1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		虎柄_虎2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
     	}
     }
 }

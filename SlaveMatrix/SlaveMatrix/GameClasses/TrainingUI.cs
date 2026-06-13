@@ -411,7 +411,7 @@ namespace SlaveMatrix
     		{
     			擬音キュー.Enqueue(delegate(RenderArea a)
     			{
-    				擬音.Sound(a, Bod.尿道位置.GetAreaPoint(0.04), Sta.放尿.GetVal(Player.変化V_放尿, Player.変化V_固有値乱数), new Font("MS Gothic", 1f), Col.Black, 0.2 + 0.2 * RNG.XS.NextDouble() * Player.変化V_放尿, b: true);
+    				擬音.Sound(a, Bod.尿道位置.GetAreaPoint(0.04), Sta.放尿.GetVal(Player.変化V_放尿, Player.変化V_固有値乱数), new Font("MS Gothic", 1f), ColorHelper.Black, 0.2 + 0.2 * RNG.XS.NextDouble() * Player.変化V_放尿, b: true);
     			});
     		}
     	}
@@ -2168,9 +2168,9 @@ namespace SlaveMatrix
     			shapePartT.RectSize = new Vector2D(shapePartT.OP[0].ps[1].X, shapePartT.OP[0].ps[2].Y);
     			shapePartT.OP.ScalingY(shapePartT.BasePointBase, 0.9);
     			shapePartT.Closed = true;
-    			shapePartT.TextColor = Col.Black;
-    			shapePartT.BrushColor = Color.FromArgb(160, Col.Black);
-    			shapePartT.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
+    			shapePartT.TextColor = ColorHelper.Black;
+    			shapePartT.BrushColor = Color.FromArgb(160, ColorHelper.Black);
+    			shapePartT.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
     			shapePartT.HitColor = Med.GetUniqueColor();
     			shapePartT.StringFormat.Alignment = StringAlignment.Center;
     			shapePartT.StringFormat.LineAlignment = StringAlignment.Center;
@@ -2186,9 +2186,9 @@ namespace SlaveMatrix
     			shapePartT2.RectSize = new Vector2D(shapePartT2.OP[0].ps[1].X, shapePartT2.OP[0].ps[2].Y);
     			shapePartT2.OP.ScalingY(shapePartT2.BasePointBase, 0.9);
     			shapePartT2.Closed = true;
-    			shapePartT2.TextColor = Col.Black;
-    			shapePartT2.BrushColor = Color.FromArgb(160, Col.Black);
-    			shapePartT2.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
+    			shapePartT2.TextColor = ColorHelper.Black;
+    			shapePartT2.BrushColor = Color.FromArgb(160, ColorHelper.Black);
+    			shapePartT2.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
     			shapePartT2.HitColor = Med.GetUniqueColor();
     			shapePartT2.StringFormat.Alignment = StringAlignment.Center;
     			shapePartT2.StringFormat.LineAlignment = StringAlignment.Center;
@@ -2218,9 +2218,9 @@ namespace SlaveMatrix
     			shapePartT3.RectSize = new Vector2D(shapePartT3.OP[0].ps[1].X, shapePartT3.OP[0].ps[2].Y);
     			shapePartT3.OP.ScalingY(shapePartT3.BasePointBase, 0.9);
     			shapePartT3.Closed = true;
-    			shapePartT3.TextColor = Col.Black;
-    			shapePartT3.BrushColor = Color.FromArgb(160, Col.Black);
-    			shapePartT3.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
+    			shapePartT3.TextColor = ColorHelper.Black;
+    			shapePartT3.BrushColor = Color.FromArgb(160, ColorHelper.Black);
+    			shapePartT3.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
     			shapePartT3.HitColor = Med.GetUniqueColor();
     			shapePartT3.StringFormat.Alignment = StringAlignment.Center;
     			shapePartT3.StringFormat.LineAlignment = StringAlignment.Center;
@@ -2241,9 +2241,9 @@ namespace SlaveMatrix
     			shapePartT4.RectSize = new Vector2D(shapePartT4.OP[0].ps[1].X, shapePartT4.OP[0].ps[2].Y);
     			shapePartT4.OP.ScalingY(shapePartT4.BasePointBase, 0.9);
     			shapePartT4.Closed = true;
-    			shapePartT4.TextColor = Col.Black;
-    			shapePartT4.BrushColor = Color.FromArgb(160, Col.Black);
-    			shapePartT4.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
+    			shapePartT4.TextColor = ColorHelper.Black;
+    			shapePartT4.BrushColor = Color.FromArgb(160, ColorHelper.Black);
+    			shapePartT4.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
     			shapePartT4.HitColor = Med.GetUniqueColor();
     			shapePartT4.StringFormat.Alignment = StringAlignment.Center;
     			shapePartT4.StringFormat.LineAlignment = StringAlignment.Center;
@@ -2264,9 +2264,9 @@ namespace SlaveMatrix
     			shapePartT5.RectSize = new Vector2D(shapePartT5.OP[0].ps[1].X, shapePartT5.OP[0].ps[2].Y);
     			shapePartT5.OP.ScalingY(shapePartT5.BasePointBase, 0.9);
     			shapePartT5.Closed = true;
-    			shapePartT5.TextColor = Col.Black;
-    			shapePartT5.BrushColor = Color.FromArgb(160, Col.Black);
-    			shapePartT5.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
+    			shapePartT5.TextColor = ColorHelper.Black;
+    			shapePartT5.BrushColor = Color.FromArgb(160, ColorHelper.Black);
+    			shapePartT5.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
     			shapePartT5.HitColor = Med.GetUniqueColor();
     			shapePartT5.StringFormat.Alignment = StringAlignment.Center;
     			shapePartT5.StringFormat.LineAlignment = StringAlignment.Center;
@@ -2370,9 +2370,9 @@ namespace SlaveMatrix
     			shapePartT6.RectSize = new Vector2D(shapePartT6.OP[0].ps[1].X, shapePartT6.OP[0].ps[2].Y);
     			shapePartT6.OP.ScalingY(shapePartT6.BasePointBase, 0.9);
     			shapePartT6.Closed = true;
-    			shapePartT6.TextColor = Col.Black;
-    			shapePartT6.BrushColor = Color.FromArgb(160, Col.Black);
-    			shapePartT6.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
+    			shapePartT6.TextColor = ColorHelper.Black;
+    			shapePartT6.BrushColor = Color.FromArgb(160, ColorHelper.Black);
+    			shapePartT6.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
     			shapePartT6.HitColor = Med.GetUniqueColor();
     			shapePartT6.StringFormat.Alignment = StringAlignment.Center;
     			shapePartT6.StringFormat.LineAlignment = StringAlignment.Center;
@@ -2405,9 +2405,9 @@ namespace SlaveMatrix
     			shapePartT7.RectSize = new Vector2D(shapePartT7.OP[0].ps[1].X, shapePartT7.OP[0].ps[2].Y);
     			shapePartT7.OP.ScalingY(shapePartT7.BasePointBase, 0.9);
     			shapePartT7.Closed = true;
-    			shapePartT7.TextColor = Col.Black;
-    			shapePartT7.BrushColor = Color.FromArgb(160, Col.Black);
-    			shapePartT7.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
+    			shapePartT7.TextColor = ColorHelper.Black;
+    			shapePartT7.BrushColor = Color.FromArgb(160, ColorHelper.Black);
+    			shapePartT7.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
     			shapePartT7.HitColor = Med.GetUniqueColor();
     			shapePartT7.StringFormat.Alignment = StringAlignment.Center;
     			shapePartT7.StringFormat.LineAlignment = StringAlignment.Center;
@@ -2468,20 +2468,20 @@ namespace SlaveMatrix
     				}
     			});
     			int alpha = 200;
-    			体力sゲージ = new Gau("体力", Are.GetPosition(new Vector2D(0.025, 0.5)), Are.Size, 0.025, Are.YRatio * 0.98, 0.02, Open.Top, _2DGAMELIB.Range.ZeroOne, disUnit, Color.FromArgb(alpha, Color.Red), Color.Yellow, Color.FromArgb(alpha, Color.Gray), Color.FromArgb(alpha, Color.Gray), Color.FromArgb(alpha, Col.Black), Knob: false);
+    			体力sゲージ = new Gau("体力", Are.GetPosition(new Vector2D(0.025, 0.5)), Are.Size, 0.025, Are.YRatio * 0.98, 0.02, Open.Top, _2DGAMELIB.Range.ZeroOne, disUnit, Color.FromArgb(alpha, Color.Red), Color.Yellow, Color.FromArgb(alpha, Color.Gray), Color.FromArgb(alpha, Color.Gray), Color.FromArgb(alpha, ColorHelper.Black), Knob: false);
     			体力sゲージ.Frame1.Pen = null;
-    			絶頂sゲージ = new Gau("絶頂", Are.GetPosition(new Vector2D(0.060000000000000005, 0.5)), Are.Size, 0.01, Are.YRatio * 0.98, 0.02, Open.Top, _2DGAMELIB.Range.ZeroOne, disUnit, Color.FromArgb(alpha, Color.DeepPink), Col.White, Color.FromArgb(alpha, Color.Gray), Color.FromArgb(alpha, Color.Gray), Color.Transparent, Knob: false);
+    			絶頂sゲージ = new Gau("絶頂", Are.GetPosition(new Vector2D(0.060000000000000005, 0.5)), Are.Size, 0.01, Are.YRatio * 0.98, 0.02, Open.Top, _2DGAMELIB.Range.ZeroOne, disUnit, Color.FromArgb(alpha, Color.DeepPink), ColorHelper.White, Color.FromArgb(alpha, Color.Gray), Color.FromArgb(alpha, Color.Gray), Color.Transparent, Knob: false);
     			絶頂sゲージ.Frame1.Pen = null;
     			絶頂sゲージ.Gauge.Pen = null;
-    			興奮sゲージ = new Gau("興奮", Are.GetPosition(new Vector2D(0.060000000000000005, 0.5)), Are.Size, 0.025, Are.YRatio * 0.98, 0.02, Open.Top, _2DGAMELIB.Range.ZeroOne, disUnit, Color.FromArgb(180, Col.White), Color.FromArgb(180, Color.Red), Color.FromArgb(alpha, Color.Gray), Color.FromArgb(alpha, Color.Gray), Color.FromArgb(alpha, Col.Black), Knob: false);
+    			興奮sゲージ = new Gau("興奮", Are.GetPosition(new Vector2D(0.060000000000000005, 0.5)), Are.Size, 0.025, Are.YRatio * 0.98, 0.02, Open.Top, _2DGAMELIB.Range.ZeroOne, disUnit, Color.FromArgb(180, ColorHelper.White), Color.FromArgb(180, Color.Red), Color.FromArgb(alpha, Color.Gray), Color.FromArgb(alpha, Color.Gray), Color.FromArgb(alpha, ColorHelper.Black), Knob: false);
     			興奮sゲージ.Frame1.Pen = null;
     			興奮sゲージ.Gauge.Pen = null;
-    			精力mゲージ = new Gau("精力", Are.GetPosition(new Vector2D(0.025.Inverse(), 0.5)), Are.Size, 0.025, Are.YRatio * 0.98, 0.02, Open.Top, _2DGAMELIB.Range.ZeroOne, disUnit, Color.FromArgb(alpha, Col.Yellow.Add(180, 0, 0)), Col.Red.Add(180, 0, 0), Color.FromArgb(alpha, Color.Gray), Color.FromArgb(alpha, Color.Gray), Color.FromArgb(alpha, Col.Black), Knob: false);
+    			精力mゲージ = new Gau("精力", Are.GetPosition(new Vector2D(0.025.Inverse(), 0.5)), Are.Size, 0.025, Are.YRatio * 0.98, 0.02, Open.Top, _2DGAMELIB.Range.ZeroOne, disUnit, Color.FromArgb(alpha, ColorHelper.Yellow.Add(180, 0, 0)), ColorHelper.Red.Add(180, 0, 0), Color.FromArgb(alpha, Color.Gray), Color.FromArgb(alpha, Color.Gray), Color.FromArgb(alpha, ColorHelper.Black), Knob: false);
     			精力mゲージ.Frame1.Pen = null;
-    			射精mゲージ = new Gau("射精", Are.GetPosition(new Vector2D(0.060000000000000005.Inverse(), 0.5)), Are.Size, 0.01, Are.YRatio * 0.98, 0.02, Open.Top, _2DGAMELIB.Range.ZeroOne, disUnit, Color.FromArgb(alpha, Col.DeepPink.Add(180, 0, 0)), Col.White.Add(180, 0, 0), Color.FromArgb(alpha, Color.Gray), Color.FromArgb(alpha, Color.Gray), Color.Transparent, Knob: false);
+    			射精mゲージ = new Gau("射精", Are.GetPosition(new Vector2D(0.060000000000000005.Inverse(), 0.5)), Are.Size, 0.01, Are.YRatio * 0.98, 0.02, Open.Top, _2DGAMELIB.Range.ZeroOne, disUnit, Color.FromArgb(alpha, ColorHelper.DeepPink.Add(180, 0, 0)), ColorHelper.White.Add(180, 0, 0), Color.FromArgb(alpha, Color.Gray), Color.FromArgb(alpha, Color.Gray), Color.Transparent, Knob: false);
     			射精mゲージ.Frame1.Pen = null;
     			射精mゲージ.Gauge.Pen = null;
-    			興奮mゲージ = new Gau("興奮", Are.GetPosition(new Vector2D(0.060000000000000005.Inverse(), 0.5)), Are.Size, 0.025, Are.YRatio * 0.98, 0.02, Open.Top, _2DGAMELIB.Range.ZeroOne, disUnit, Color.FromArgb(180, Col.White), Color.FromArgb(180, Color.Red), Color.FromArgb(alpha, Color.Gray), Color.FromArgb(alpha, Color.Gray), Color.FromArgb(alpha, Col.Black), Knob: false);
+    			興奮mゲージ = new Gau("興奮", Are.GetPosition(new Vector2D(0.060000000000000005.Inverse(), 0.5)), Are.Size, 0.025, Are.YRatio * 0.98, 0.02, Open.Top, _2DGAMELIB.Range.ZeroOne, disUnit, Color.FromArgb(180, ColorHelper.White), Color.FromArgb(180, Color.Red), Color.FromArgb(alpha, Color.Gray), Color.FromArgb(alpha, Color.Gray), Color.FromArgb(alpha, ColorHelper.Black), Knob: false);
     			興奮mゲージ.Frame1.Pen = null;
     			興奮mゲージ.Gauge.Pen = null;
     			Color c = Med.GetUniqueColor();
@@ -3053,9 +3053,9 @@ namespace SlaveMatrix
     		{
     			width = 0.75;
     		}
-    		ステート = new Tex("Tex", new Vector2D(Are.GetPosition(0.08, 0.7).X, 0.1), 0.1, width, 1.15, new Font("MS Gothic", 1f), 0.07, 0, "", Col.White, Col.Black, Color.FromArgb(160, Col.Black), 15.0);
-    		InfoBox = new Tex("Info", new Vector2D(num, 0.005), 0.1, 0.9, 0.85, new Font("MS Gothic", 1f), 0.07, 0, "", Col.White, Col.Transparent, Color.FromArgb(15, Col.DarkMagenta), 100.0);
-    		SensitivityBox = new Tex("Sens", new Vector2D(num + 0.02, 0.08), 0.1, 0.6, 1.99, new Font("MS Gothic", 1f), 0.057, 0, "", Col.White, Col.Transparent, Color.FromArgb(5, Col.DarkMagenta), 100.0);
+    		ステート = new Tex("Tex", new Vector2D(Are.GetPosition(0.08, 0.7).X, 0.1), 0.1, width, 1.15, new Font("MS Gothic", 1f), 0.07, 0, "", ColorHelper.White, ColorHelper.Black, Color.FromArgb(160, ColorHelper.Black), 15.0);
+    		InfoBox = new Tex("Info", new Vector2D(num, 0.005), 0.1, 0.9, 0.85, new Font("MS Gothic", 1f), 0.07, 0, "", ColorHelper.White, ColorHelper.Transparent, Color.FromArgb(15, ColorHelper.DarkMagenta), 100.0);
+    		SensitivityBox = new Tex("Sens", new Vector2D(num + 0.02, 0.08), 0.1, 0.6, 1.99, new Font("MS Gothic", 1f), 0.057, 0, "", ColorHelper.White, ColorHelper.Transparent, Color.FromArgb(5, ColorHelper.DarkMagenta), 100.0);
     	}
 
     	public void StaminaButtons(RenderArea Are, ModeEventDispatcher Med, InfoPanel ip)
@@ -3076,9 +3076,9 @@ namespace SlaveMatrix
     		shapePartT.RectSize = new Vector2D(shapePartT.OP[0].ps[1].X, shapePartT.OP[0].ps[2].Y);
     		shapePartT.OP.ScalingY(shapePartT.BasePointBase, 0.9);
     		shapePartT.Closed = true;
-    		shapePartT.TextColor = Col.Black;
-    		shapePartT.BrushColor = Color.FromArgb(160, Col.Black);
-    		shapePartT.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
+    		shapePartT.TextColor = ColorHelper.Black;
+    		shapePartT.BrushColor = Color.FromArgb(160, ColorHelper.Black);
+    		shapePartT.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
     		shapePartT.HitColor = Med.GetUniqueColor();
     		shapePartT.StringFormat.Alignment = StringAlignment.Center;
     		shapePartT.StringFormat.LineAlignment = StringAlignment.Center;
@@ -3098,9 +3098,9 @@ namespace SlaveMatrix
     		shapePartT2.RectSize = new Vector2D(shapePartT2.OP[0].ps[1].X, shapePartT2.OP[0].ps[2].Y);
     		shapePartT2.OP.ScalingY(shapePartT2.BasePointBase, 0.9);
     		shapePartT2.Closed = true;
-    		shapePartT2.TextColor = Col.Black;
-    		shapePartT2.BrushColor = Color.FromArgb(160, Col.Black);
-    		shapePartT2.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
+    		shapePartT2.TextColor = ColorHelper.Black;
+    		shapePartT2.BrushColor = Color.FromArgb(160, ColorHelper.Black);
+    		shapePartT2.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
     		shapePartT2.HitColor = Med.GetUniqueColor();
     		shapePartT2.StringFormat.Alignment = StringAlignment.Center;
     		shapePartT2.StringFormat.LineAlignment = StringAlignment.Center;

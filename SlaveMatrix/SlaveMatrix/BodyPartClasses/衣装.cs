@@ -92,9 +92,9 @@ namespace SlaveMatrix
 
     	public static IEnumerable<object> Getビキニ(CharacterData c, bool t)
     	{
-    		Col.GetRandomClothesColor(out var c0);
-    		Col.GetRandomClothesColor(out var c1);
-    		Col.GetRandomClothesColor(out var c2);
+    		ColorHelper.GetRandomClothesColor(out var c0);
+    		ColorHelper.GetRandomClothesColor(out var c1);
+    		ColorHelper.GetRandomClothesColor(out var c2);
     		bool e = RNG.XS.NextBool();
     		if (RNG.XS.NextBool())
     		{
@@ -186,12 +186,12 @@ namespace SlaveMatrix
 
     	public static IEnumerable<object> Getランジェリー(CharacterData c, bool t, bool a)
     	{
-    		Col.GetRandomClothesColor(a ? RNG.XS.Next(32, 256) : 255, out var c0);
-    		Col.GetRandomClothesColor(a ? RNG.XS.Next(32, 256) : 255, out var c1);
-    		Col.GetRandomClothesColor(a ? RNG.XS.Next(32, 256) : 255, out var c2);
-    		Col.GetRandomClothesColor(a ? RNG.XS.Next(32, 256) : 255, out var c3);
-    		Col.GetRandomClothesColor(a ? RNG.XS.Next(32, 256) : 255, out var c4);
-    		Col.GetRandomClothesColor(a ? RNG.XS.Next(32, 256) : 255, out var c5);
+    		ColorHelper.GetRandomClothesColor(a ? RNG.XS.Next(32, 256) : 255, out var c0);
+    		ColorHelper.GetRandomClothesColor(a ? RNG.XS.Next(32, 256) : 255, out var c1);
+    		ColorHelper.GetRandomClothesColor(a ? RNG.XS.Next(32, 256) : 255, out var c2);
+    		ColorHelper.GetRandomClothesColor(a ? RNG.XS.Next(32, 256) : 255, out var c3);
+    		ColorHelper.GetRandomClothesColor(a ? RNG.XS.Next(32, 256) : 255, out var c4);
+    		ColorHelper.GetRandomClothesColor(a ? RNG.XS.Next(32, 256) : 255, out var c5);
     		if (t)
     		{
     			下着T_ブラ情報 @default = 下着T_ブラ情報.GetDefault();
@@ -275,7 +275,7 @@ namespace SlaveMatrix
     				上着B_前掛け情報 default2 = 上着B_前掛け情報.GetDefault();
     				default2.色.生地 = ドレス首.色.生地;
     				default2.色.縁 = ドレス首.色.縁;
-    				default2.色.紐 = Col.Black;
+    				default2.色.紐 = ColorHelper.Black;
     				default2.色.SetColor2();
     				yield return default2;
     			}
@@ -284,7 +284,7 @@ namespace SlaveMatrix
     				上着B_クロス情報 default3 = 上着B_クロス情報.GetDefault();
     				default3.中 = false;
     				default3.色.生地1 = ドレス首.色.生地;
-    				default3.色.生地2 = Col.Black;
+    				default3.色.生地2 = ColorHelper.Black;
     				default3.色.SetColor2();
     				yield return default3;
     			}
@@ -299,11 +299,11 @@ namespace SlaveMatrix
 
     	public static IEnumerable<object> Getヴィオラ服1(CharacterData c)
     	{
-    		Col.GetRandomClothesColor(out var c0);
-    		Col.GetRandomClothesColor(out var c1);
-    		Col.GetRandomClothesColor(out var c2);
-    		Col.GetRandomClothesColor(out var c3);
-    		Col.GetRandomClothesColor(out var c4);
+    		ColorHelper.GetRandomClothesColor(out var c0);
+    		ColorHelper.GetRandomClothesColor(out var c1);
+    		ColorHelper.GetRandomClothesColor(out var c2);
+    		ColorHelper.GetRandomClothesColor(out var c3);
+    		ColorHelper.GetRandomClothesColor(out var c4);
     		ドレス首情報 @default = ドレス首情報.GetDefault();
     		@default.色.生地 = c0;
     		@default.色.縁 = c2;
@@ -365,22 +365,22 @@ namespace SlaveMatrix
 
     	public static IEnumerable<object> Get奴隷服(CharacterData c, bool b, bool r, bool a)
     	{
-    		Color c0 = Col.Empty;
-    		Color c1 = Col.Empty;
-    		Color c2 = Col.Empty;
+    		Color c0 = ColorHelper.Empty;
+    		Color c1 = ColorHelper.Empty;
+    		Color c2 = ColorHelper.Empty;
     		if (r)
     		{
-    			Col.GetRandomClothesColor(a ? RNG.XS.Next(32, 256) : 255, out c0);
-    			Col.GetRandomClothesColor(a ? RNG.XS.Next(32, 256) : 255, out c1);
-    			Col.GetRandomClothesColor(a ? RNG.XS.Next(32, 256) : 255, out c2);
+    			ColorHelper.GetRandomClothesColor(a ? RNG.XS.Next(32, 256) : 255, out c0);
+    			ColorHelper.GetRandomClothesColor(a ? RNG.XS.Next(32, 256) : 255, out c1);
+    			ColorHelper.GetRandomClothesColor(a ? RNG.XS.Next(32, 256) : 255, out c2);
     		}
     		if (b && c.Is下着ボトム条件())
     		{
     			if (r && RNG.XS.NextBool())
     			{
-    				Col.GetRandomClothesColor(a ? RNG.XS.Next(32, 256) : 255, out var ret);
-    				Col.GetRandomClothesColor(a ? RNG.XS.Next(32, 256) : 255, out var ret2);
-    				Col.GetRandomClothesColor(a ? RNG.XS.Next(32, 256) : 255, out var ret3);
+    				ColorHelper.GetRandomClothesColor(a ? RNG.XS.Next(32, 256) : 255, out var ret);
+    				ColorHelper.GetRandomClothesColor(a ? RNG.XS.Next(32, 256) : 255, out var ret2);
+    				ColorHelper.GetRandomClothesColor(a ? RNG.XS.Next(32, 256) : 255, out var ret3);
     				下着B_ノーマル情報 下着B_ノーマル情報2 = ((!c.Is紐付き条件()) ? 下着B_ノーマル情報.Getランジェリー() : 下着B_ノーマル情報.Getランジェリー紐付き());
     				下着B_ノーマル情報2.色.生地 = c0;
     				下着B_ノーマル情報2.色.縁 = c2;

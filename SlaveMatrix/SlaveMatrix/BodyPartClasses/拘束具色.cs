@@ -16,22 +16,22 @@ namespace SlaveMatrix
 
     	public void SetDefault()
     	{
-    		革部 = Col.Black;
+    		革部 = ColorHelper.Black;
     		金具 = Color.Gray;
     		SetColor2();
     	}
 
     	public void SetRandom()
     	{
-    		Col.GetRandomClothesColor(out 革部);
-    		Col.GetRandomClothesColor(out 金具);
+    		ColorHelper.GetRandomClothesColor(out 革部);
+    		ColorHelper.GetRandomClothesColor(out 金具);
     		SetColor2();
     	}
 
     	public void SetColor2()
     	{
-    		Col.GetGrad(ref 革部, out 革部色);
-    		Col.GetMetal(ref 金具, out 金具色);
+    		ColorHelper.GetGrad(ref 革部, out 革部色);
+    		ColorHelper.GetMetal(ref 金具, out 金具色);
     	}
     }
 }

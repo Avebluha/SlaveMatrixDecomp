@@ -1425,23 +1425,23 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		Color2 色 = new Color2(ref Col.Black, ref Col.Empty);
-    		先CD = new ColorD(ref Col.Black, ref 色);
-    		紐CD = new ColorD(ref Col.Black, ref 色);
+    		Color2 色 = new Color2(ref ColorHelper.Black, ref ColorHelper.Empty);
+    		先CD = new ColorD(ref ColorHelper.Black, ref 色);
+    		紐CD = new ColorD(ref ColorHelper.Black, ref 色);
     		柄CD = new ColorD();
-    		柄CD.線 = Col.Black;
-    		柄CD.色 = new Color2(ref Col.DimGray, ref Col.Black);
-    		線1CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		線2CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		線3CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		線4CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		線5CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		線6CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		線7CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		線8CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		Col.GetGrad(ref Col.Silver, out 色);
-    		鞭撃エフェクト1CD = new ColorD(ref Col.Empty, ref 色);
-    		鞭撃エフェクト2CD = new ColorD(ref Col.Empty, ref 色);
+    		柄CD.線 = ColorHelper.Black;
+    		柄CD.色 = new Color2(ref ColorHelper.DimGray, ref ColorHelper.Black);
+    		線1CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		線2CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		線3CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		線4CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		線5CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		線6CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		線7CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		線8CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		ColorHelper.GetGrad(ref ColorHelper.Silver, out 色);
+    		鞭撃エフェクト1CD = new ColorD(ref ColorHelper.Empty, ref 色);
+    		鞭撃エフェクト2CD = new ColorD(ref ColorHelper.Empty, ref 色);
     	}
     }
 }

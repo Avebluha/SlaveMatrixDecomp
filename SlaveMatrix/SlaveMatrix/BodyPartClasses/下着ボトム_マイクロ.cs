@@ -2739,8 +2739,8 @@ namespace SlaveMatrix
     		ヴィオラ_金具左_金具2CD = new ColorD();
     		ヴィオラ_金具右_金具1CD = new ColorD();
     		ヴィオラ_金具右_金具2CD = new ColorD();
-    		染み_染み2CD = new ColorD(ref Col.Empty, ref 体配色.染み);
-    		染み_染み1CD = new ColorD(ref Col.Empty, ref 体配色.染み);
+    		染み_染み2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.染み);
+    		染み_染み1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.染み);
     	}
 
     	public void 配色(マイクロB色 配色)

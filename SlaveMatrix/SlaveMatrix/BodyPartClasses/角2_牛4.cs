@@ -458,47 +458,47 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		根CD = new ColorD(ref Col.Black, ref 体配色.角0O);
-    		凹1CD = new ColorD(ref Col.Black, ref 体配色.角1O);
-    		凹2CD = new ColorD(ref Col.Black, ref 体配色.角1O);
-    		凹3CD = new ColorD(ref Col.Black, ref 体配色.角1O);
-    		凹4CD = new ColorD(ref Col.Black, ref 体配色.角1O);
-    		凹5CD = new ColorD(ref Col.Black, ref 体配色.角1O);
-    		凹6CD = new ColorD(ref Col.Black, ref 体配色.角1O);
-    		凹7CD = new ColorD(ref Col.Black, ref 体配色.角1O);
-    		線CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		折線1CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		折線2CD = new ColorD(ref Col.Black, ref Color2.Empty);
+    		根CD = new ColorD(ref ColorHelper.Black, ref 体配色.角0O);
+    		凹1CD = new ColorD(ref ColorHelper.Black, ref 体配色.角1O);
+    		凹2CD = new ColorD(ref ColorHelper.Black, ref 体配色.角1O);
+    		凹3CD = new ColorD(ref ColorHelper.Black, ref 体配色.角1O);
+    		凹4CD = new ColorD(ref ColorHelper.Black, ref 体配色.角1O);
+    		凹5CD = new ColorD(ref ColorHelper.Black, ref 体配色.角1O);
+    		凹6CD = new ColorD(ref ColorHelper.Black, ref 体配色.角1O);
+    		凹7CD = new ColorD(ref ColorHelper.Black, ref 体配色.角1O);
+    		線CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		折線1CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		折線2CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
     	}
 
     	private void 配色T0(BodyColorSet 体配色)
     	{
-    		根CD = new ColorD(ref Col.Black, ref 体配色.角0O);
-    		凹1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		凹2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		凹3CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		凹4CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		凹5CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		凹6CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		凹7CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		線CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		折線1CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		折線2CD = new ColorD(ref Col.Black, ref Color2.Empty);
+    		根CD = new ColorD(ref ColorHelper.Black, ref 体配色.角0O);
+    		凹1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		凹2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		凹3CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		凹4CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		凹5CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		凹6CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		凹7CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		線CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		折線1CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		折線2CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
     	}
 
     	private void 配色T1(BodyColorSet 体配色)
     	{
-    		根CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		凹1CD = new ColorD(ref Col.Black, ref 体配色.角1O);
-    		凹2CD = new ColorD(ref Col.Black, ref 体配色.角1O);
-    		凹3CD = new ColorD(ref Col.Black, ref 体配色.角1O);
-    		凹4CD = new ColorD(ref Col.Black, ref 体配色.角1O);
-    		凹5CD = new ColorD(ref Col.Black, ref 体配色.角1O);
-    		凹6CD = new ColorD(ref Col.Black, ref 体配色.角1O);
-    		凹7CD = new ColorD(ref Col.Black, ref 体配色.角1O);
-    		線CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		折線1CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		折線2CD = new ColorD(ref Col.Black, ref Color2.Empty);
+    		根CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		凹1CD = new ColorD(ref ColorHelper.Black, ref 体配色.角1O);
+    		凹2CD = new ColorD(ref ColorHelper.Black, ref 体配色.角1O);
+    		凹3CD = new ColorD(ref ColorHelper.Black, ref 体配色.角1O);
+    		凹4CD = new ColorD(ref ColorHelper.Black, ref 体配色.角1O);
+    		凹5CD = new ColorD(ref ColorHelper.Black, ref 体配色.角1O);
+    		凹6CD = new ColorD(ref ColorHelper.Black, ref 体配色.角1O);
+    		凹7CD = new ColorD(ref ColorHelper.Black, ref 体配色.角1O);
+    		線CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		折線1CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		折線2CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
     	}
     }
 }

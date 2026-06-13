@@ -290,17 +290,17 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		Col.GetGrad(ref Col.White, out var ret);
-    		羽根1CD = new ColorD(ref Col.Black, ref ret);
-    		羽根2CD = new ColorD(ref Col.Black, ref ret);
-    		羽根3CD = new ColorD(ref Col.Black, ref ret);
-    		羽根4CD = new ColorD(ref Col.Black, ref ret);
-    		羽根5CD = new ColorD(ref Col.Black, ref ret);
-    		Col.GetGrad(ref Col.White, out ret);
-    		羽根CD = new ColorD(ref Col.Black, ref ret);
+    		ColorHelper.GetGrad(ref ColorHelper.White, out var ret);
+    		羽根1CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		羽根2CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		羽根3CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		羽根4CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		羽根5CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		ColorHelper.GetGrad(ref ColorHelper.White, out ret);
+    		羽根CD = new ColorD(ref ColorHelper.Black, ref ret);
     		柄CD = new ColorD();
-    		柄CD.線 = Col.Black;
-    		柄CD.色 = new Color2(ref Col.Black, ref Col.Empty);
+    		柄CD.線 = ColorHelper.Black;
+    		柄CD.色 = new Color2(ref ColorHelper.Black, ref ColorHelper.Empty);
     	}
     }
 }

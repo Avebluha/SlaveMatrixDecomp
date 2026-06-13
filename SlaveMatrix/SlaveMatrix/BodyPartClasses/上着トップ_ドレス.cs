@@ -50,7 +50,7 @@ namespace SlaveMatrix
 
     	public ShapePart X0Y0_右_縁;
 
-    	public ColorD 服基CD = new ColorD(ref Col.Empty, ref Color2.Empty);
+    	public ColorD 服基CD = new ColorD(ref ColorHelper.Empty, ref Color2.Empty);
 
     	public ColorD 紐_紐1_紐下_紐CD;
 
@@ -914,7 +914,7 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		服基CD = new ColorD(ref Col.Empty, ref Color2.Empty);
+    		服基CD = new ColorD(ref ColorHelper.Empty, ref Color2.Empty);
     		紐_紐1_紐下_紐CD = new ColorD();
     		紐_紐1_紐上_紐CD = new ColorD();
     		紐_紐2_紐下_紐CD = new ColorD();

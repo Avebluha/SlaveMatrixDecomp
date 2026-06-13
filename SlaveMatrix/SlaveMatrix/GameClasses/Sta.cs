@@ -526,9 +526,9 @@ namespace SlaveMatrix
     		タイル.SetJoints();
     		foreach (ShapePart item in タイル.EnumAllPar())
     		{
-    			item.BrushColor = Col.DarkGray;
+    			item.BrushColor = ColorHelper.DarkGray;
     			item.GetAlpha(out var ret);
-    			item.PenColor = Color.FromArgb(ret / 2, Col.Black);
+    			item.PenColor = Color.FromArgb(ret / 2, ColorHelper.Black);
     			item.Hit = false;
     		}
     	}
@@ -797,11 +797,11 @@ namespace SlaveMatrix
     		{
     			if (num % 2 == i)
     			{
-    				item.SetValue(Element, new ColorD(ref Col.Black, ref c1));
+    				item.SetValue(Element, new ColorD(ref ColorHelper.Black, ref c1));
     			}
     			else
     			{
-    				item.SetValue(Element, new ColorD(ref Col.Black, ref c2));
+    				item.SetValue(Element, new ColorD(ref ColorHelper.Black, ref c2));
     			}
     			num++;
     		}

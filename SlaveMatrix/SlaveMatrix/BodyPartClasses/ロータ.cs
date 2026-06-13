@@ -304,11 +304,11 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		Col.GetGrad(ref Col.Violet, out var ret);
-    		ロータCD = new ColorD(ref Col.Black, ref ret);
-    		ロータ線CD = new ColorD(ref Col.Black, ref ret);
+    		ColorHelper.GetGrad(ref ColorHelper.Violet, out var ret);
+    		ロータCD = new ColorD(ref ColorHelper.Black, ref ret);
+    		ロータ線CD = new ColorD(ref ColorHelper.Black, ref ret);
     		ret.Col2 = Color.FromArgb(0, ret.Col2);
-    		コードCD = new ColorD(ref Col.Black, ref ret);
+    		コードCD = new ColorD(ref ColorHelper.Black, ref ret);
     	}
     }
 }

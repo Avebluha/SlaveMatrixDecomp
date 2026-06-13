@@ -23,15 +23,15 @@ namespace SlaveMatrix
 
     	public void SetRandom()
     	{
-    		Col.GetRandomClothesColor(out 髪留1);
+    		ColorHelper.GetRandomClothesColor(out 髪留1);
     		髪留2 = 髪留1;
     		SetColor2();
     	}
 
     	public void SetColor2()
     	{
-    		Col.GetGrad(ref 髪留1, out 髪留1色);
-    		Col.GetGrad(ref 髪留2, out 髪留2色);
+    		ColorHelper.GetGrad(ref 髪留1, out 髪留1色);
+    		ColorHelper.GetGrad(ref 髪留2, out 髪留2色);
     	}
     }
 }

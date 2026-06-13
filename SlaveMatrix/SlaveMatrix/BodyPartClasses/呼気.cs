@@ -555,18 +555,18 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		呼気左1_呼気1CD = new ColorD(ref Col.Empty, ref 体配色.呼気);
-    		呼気左1_呼気2CD = new ColorD(ref Col.Empty, ref 体配色.呼気);
-    		呼気左2_呼気1CD = new ColorD(ref Col.Empty, ref 体配色.呼気);
-    		呼気左2_呼気2CD = new ColorD(ref Col.Empty, ref 体配色.呼気);
-    		呼気左3_呼気1CD = new ColorD(ref Col.Empty, ref 体配色.呼気);
-    		呼気左3_呼気2CD = new ColorD(ref Col.Empty, ref 体配色.呼気);
-    		呼気右1_呼気1CD = new ColorD(ref Col.Empty, ref 体配色.呼気);
-    		呼気右1_呼気2CD = new ColorD(ref Col.Empty, ref 体配色.呼気);
-    		呼気右2_呼気1CD = new ColorD(ref Col.Empty, ref 体配色.呼気);
-    		呼気右2_呼気2CD = new ColorD(ref Col.Empty, ref 体配色.呼気);
-    		呼気右3_呼気1CD = new ColorD(ref Col.Empty, ref 体配色.呼気);
-    		呼気右3_呼気2CD = new ColorD(ref Col.Empty, ref 体配色.呼気);
+    		呼気左1_呼気1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.呼気);
+    		呼気左1_呼気2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.呼気);
+    		呼気左2_呼気1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.呼気);
+    		呼気左2_呼気2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.呼気);
+    		呼気左3_呼気1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.呼気);
+    		呼気左3_呼気2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.呼気);
+    		呼気右1_呼気1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.呼気);
+    		呼気右1_呼気2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.呼気);
+    		呼気右2_呼気1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.呼気);
+    		呼気右2_呼気2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.呼気);
+    		呼気右3_呼気1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.呼気);
+    		呼気右3_呼気2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.呼気);
     	}
     }
 }

@@ -511,7 +511,7 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		甲殻下CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
+    		甲殻下CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
     	}
     }
 }

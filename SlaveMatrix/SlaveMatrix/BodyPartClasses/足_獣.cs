@@ -770,23 +770,23 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		足CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
+    		足CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
     		筋CD = new ColorD(ref 体配色.薄線, ref 体配色.毛0O);
-    		小指_指CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		小指_爪CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		小指_肉球CD = new ColorD(ref Col.Black, ref 体配色.人肌O);
-    		薬指_指CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		薬指_爪CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		薬指_肉球CD = new ColorD(ref Col.Black, ref 体配色.人肌O);
-    		中指_指CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		中指_爪CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		中指_肉球CD = new ColorD(ref Col.Black, ref 体配色.人肌O);
-    		人指_指CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		人指_爪CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		人指_肉球CD = new ColorD(ref Col.Black, ref 体配色.人肌O);
-    		肉球_肉球左CD = new ColorD(ref Col.Black, ref 体配色.人肌O);
-    		肉球_肉球中CD = new ColorD(ref Col.Black, ref 体配色.人肌O);
-    		肉球_肉球右CD = new ColorD(ref Col.Black, ref 体配色.人肌O);
+    		小指_指CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		小指_爪CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		小指_肉球CD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌O);
+    		薬指_指CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		薬指_爪CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		薬指_肉球CD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌O);
+    		中指_指CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		中指_爪CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		中指_肉球CD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌O);
+    		人指_指CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		人指_爪CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		人指_肉球CD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌O);
+    		肉球_肉球左CD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌O);
+    		肉球_肉球中CD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌O);
+    		肉球_肉球右CD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌O);
     		脚輪_革CD = new ColorD();
     		脚輪_金具1CD = new ColorD();
     		脚輪_金具2CD = new ColorD();

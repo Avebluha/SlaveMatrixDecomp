@@ -264,29 +264,29 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		顎CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		牙_牙1CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		牙_牙2CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		牙_牙0CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
+    		顎CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		牙_牙1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		牙_牙2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		牙_牙0CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
     	}
 
     	private void 配色T0(BodyColorSet 体配色)
     	{
-    		顎CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		牙_牙1CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		牙_牙2CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		牙_牙0CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		顎CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		牙_牙1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		牙_牙2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		牙_牙0CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
     	}
 
     	private void 配色T1(BodyColorSet 体配色)
     	{
-    		顎CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		節CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		牙_牙1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		牙_牙2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		牙_牙0CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
+    		顎CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		節CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		牙_牙1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		牙_牙2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		牙_牙0CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
     	}
     }
 }

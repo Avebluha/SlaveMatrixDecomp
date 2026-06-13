@@ -590,16 +590,16 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		虫鎌節CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		虫棘1CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		虫棘2CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		虫棘3CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		虫棘4CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		虫鎌1CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		虫鎌2CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		虫鎌3CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		虫孔1CD = new ColorD(ref Col.Black, ref 体配色.甲1R);
-    		虫孔2CD = new ColorD(ref Col.Black, ref 体配色.甲1R);
+    		虫鎌節CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		虫棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		虫棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		虫棘3CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		虫棘4CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		虫鎌1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		虫鎌2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		虫鎌3CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		虫孔1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1R);
+    		虫孔2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1R);
     		輪_革CD = new ColorD();
     		輪_金具1CD = new ColorD();
     		輪_金具2CD = new ColorD();
@@ -610,16 +610,16 @@ namespace SlaveMatrix
 
     	private void 配色T0(BodyColorSet 体配色)
     	{
-    		虫鎌節CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		虫棘1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		虫棘2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		虫棘3CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		虫棘4CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		虫鎌1CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		虫鎌2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		虫鎌3CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		虫孔1CD = new ColorD(ref Col.Black, ref 体配色.刺青R);
-    		虫孔2CD = new ColorD(ref Col.Black, ref 体配色.刺青R);
+    		虫鎌節CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		虫棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		虫棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		虫棘3CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		虫棘4CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		虫鎌1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		虫鎌2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		虫鎌3CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		虫孔1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青R);
+    		虫孔2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青R);
     		輪_革CD = new ColorD();
     		輪_金具1CD = new ColorD();
     		輪_金具2CD = new ColorD();
@@ -630,16 +630,16 @@ namespace SlaveMatrix
 
     	private void 配色T1(BodyColorSet 体配色)
     	{
-    		虫鎌節CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		虫棘1CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		虫棘2CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		虫棘3CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		虫棘4CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		虫鎌1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		虫鎌2CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		虫鎌3CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		虫孔1CD = new ColorD(ref Col.Black, ref 体配色.甲1R);
-    		虫孔2CD = new ColorD(ref Col.Black, ref 体配色.甲1R);
+    		虫鎌節CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		虫棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		虫棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		虫棘3CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		虫棘4CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		虫鎌1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		虫鎌2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		虫鎌3CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		虫孔1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1R);
+    		虫孔2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1R);
     		輪_革CD = new ColorD();
     		輪_金具1CD = new ColorD();
     		輪_金具2CD = new ColorD();

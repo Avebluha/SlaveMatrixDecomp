@@ -44,26 +44,26 @@ namespace SlaveMatrix
 
     	public void SetDefault()
     	{
-    		Col.Add(ref Col.DarkGreen, 0, 0, -50, out 生地1);
-    		Col.Add(ref Col.Indigo, 0, 0, -50, out 生地2);
+    		ColorHelper.Add(ref ColorHelper.DarkGreen, 0, 0, -50, out 生地1);
+    		ColorHelper.Add(ref ColorHelper.Indigo, 0, 0, -50, out 生地2);
     		縁 = Color.Gold;
     		柄 = Color.Gold;
-    		紐 = Col.Black;
+    		紐 = ColorHelper.Black;
     		金具 = Color.Gray;
-    		穴 = Col.Black;
-    		靴底 = Col.Black;
-    		踵 = Col.Black;
+    		穴 = ColorHelper.Black;
+    		靴底 = ColorHelper.Black;
+    		踵 = ColorHelper.Black;
     		SetColor2();
     	}
 
     	public void SetRandom()
     	{
-    		Col.GetRandomClothesColor(out 生地1);
-    		Col.GetRandomClothesColor(out 生地2);
-    		Col.GetRandomClothesColor(out 縁);
+    		ColorHelper.GetRandomClothesColor(out 生地1);
+    		ColorHelper.GetRandomClothesColor(out 生地2);
+    		ColorHelper.GetRandomClothesColor(out 縁);
     		柄 = 縁;
-    		Col.GetRandomClothesColor(out 紐);
-    		Col.GetRandomClothesColor(out 金具);
+    		ColorHelper.GetRandomClothesColor(out 紐);
+    		ColorHelper.GetRandomClothesColor(out 金具);
     		穴 = 紐;
     		靴底 = 紐;
     		踵 = 紐;
@@ -72,15 +72,15 @@ namespace SlaveMatrix
 
     	public void SetColor2()
     	{
-    		Col.GetGrad(ref 生地1, out 生地1色);
-    		Col.GetGrad(ref 生地2, out 生地2色);
-    		Col.GetGrad(ref 縁, out 縁色);
-    		Col.GetGrad(ref 柄, out 柄色);
-    		Col.GetGrad(ref 紐, out 紐色);
-    		Col.GetMetal(ref 金具, out 金具色);
-    		Col.GetGrad(ref 穴, out 穴色);
-    		Col.GetGrad(ref 靴底, out 靴底色);
-    		Col.GetGrad(ref 踵, out 踵色);
+    		ColorHelper.GetGrad(ref 生地1, out 生地1色);
+    		ColorHelper.GetGrad(ref 生地2, out 生地2色);
+    		ColorHelper.GetGrad(ref 縁, out 縁色);
+    		ColorHelper.GetGrad(ref 柄, out 柄色);
+    		ColorHelper.GetGrad(ref 紐, out 紐色);
+    		ColorHelper.GetMetal(ref 金具, out 金具色);
+    		ColorHelper.GetGrad(ref 穴, out 穴色);
+    		ColorHelper.GetGrad(ref 靴底, out 靴底色);
+    		ColorHelper.GetGrad(ref 踵, out 踵色);
     	}
     }
 }

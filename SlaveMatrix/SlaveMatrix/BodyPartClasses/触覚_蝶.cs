@@ -1126,41 +1126,41 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		節1CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節2CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節3CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節4CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節5CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節6CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節7CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節8CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節9CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節10CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節11CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節12CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節13CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節14CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節15CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節16CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節17CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節18CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節19CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節20CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節21CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節22CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節23CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節24CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節25CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節26CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節27CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節28CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節29CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節30CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節31CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節32CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節33CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節34CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節35CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
+    		節1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節3CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節4CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節5CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節6CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節7CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節8CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節9CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節10CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節11CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節12CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節13CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節14CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節15CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節16CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節17CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節18CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節19CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節20CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節21CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節22CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節23CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節24CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節25CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節26CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節27CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節28CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節29CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節30CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節31CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節32CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節33CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節34CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節35CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
     	}
 
     	private void 配色T0(BodyColorSet 体配色)

@@ -436,15 +436,15 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		TorsoCD = new ColorD(ref Col.Black, ref 体配色.人肌R);
+    		TorsoCD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌R);
     		筋肉_筋肉左CD = new ColorD(ref 体配色.薄線, ref 体配色.人肌O);
     		筋肉_筋肉右CD = new ColorD(ref 体配色.薄線, ref 体配色.人肌O);
-    		獣性_獣毛左CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		獣性_獣毛右CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		植タトゥ_左_タトゥ2CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		植タトゥ_左_タトゥ1CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		植タトゥ_右_タトゥ2CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		植タトゥ_右_タトゥ1CD = new ColorD(ref Col.Black, ref 体配色.刺青);
+    		獣性_獣毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		獣性_獣毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		植タトゥ_左_タトゥ2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		植タトゥ_左_タトゥ1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		植タトゥ_右_タトゥ2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		植タトゥ_右_タトゥ1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
     	}
     }
 }

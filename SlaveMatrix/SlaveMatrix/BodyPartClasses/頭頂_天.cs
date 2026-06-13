@@ -172,7 +172,7 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		天輪CD = new ColorD(ref Col.Empty, ref 体配色.後光O);
+    		天輪CD = new ColorD(ref ColorHelper.Empty, ref 体配色.後光O);
     	}
     }
 }

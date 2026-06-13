@@ -173,7 +173,7 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		鼻CD = new ColorD(ref Col.Black, ref Color2.Empty);
+    		鼻CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
     	}
     }
 }

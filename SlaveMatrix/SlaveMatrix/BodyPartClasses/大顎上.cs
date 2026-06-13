@@ -204,11 +204,11 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		甲殻CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		線左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		線右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		刺左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		刺右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
+    		甲殻CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		線左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		線右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		刺左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		刺右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
     	}
     }
 }

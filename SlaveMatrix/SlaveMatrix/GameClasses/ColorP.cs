@@ -44,7 +44,7 @@ namespace SlaveMatrix
     		ShapePart.Brush = new SolidBrush(Color.LightGray);
     		u0 = Unit * 0.99009900990099;
     		u1 = Unit * 1.01;
-    		if (ColorD.線 == Col.Empty)
+    		if (ColorD.線 == ColorHelper.Empty)
     		{
     			ShapePart.Pen = null;
     			p = delegate
@@ -64,7 +64,7 @@ namespace SlaveMatrix
     			};
     			UpdateLine();
     		}
-    		if (ColorD.色.Col1 == Col.Empty)
+    		if (ColorD.色.Col1 == ColorHelper.Empty)
     		{
     			ShapePart.Brush = null;
     			b = delegate
@@ -73,7 +73,7 @@ namespace SlaveMatrix
     		}
     		else
     		{
-    			if (ColorD.色.Col2 == Col.Empty)
+    			if (ColorD.色.Col2 == ColorHelper.Empty)
     			{
     				b = delegate
     				{

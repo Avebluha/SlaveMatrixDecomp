@@ -597,24 +597,24 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		潮1CD = new ColorD(ref Col.Empty, ref 体配色.染み);
-    		潮2CD = new ColorD(ref Col.Empty, ref 体配色.染み);
-    		潮3CD = new ColorD(ref Col.Empty, ref 体配色.染み);
-    		尿1CD = new ColorD(ref Col.Empty, ref 体配色.染み);
-    		尿2CD = new ColorD(ref Col.Empty, ref 体配色.染み);
-    		汗CD = new ColorD(ref Col.Empty, ref 体配色.染み);
-    		湯気_湯気左1_湯気1CD = new ColorD(ref Col.Empty, ref 体配色.呼気);
-    		湯気_湯気左1_湯気2CD = new ColorD(ref Col.Empty, ref 体配色.呼気);
-    		湯気_湯気左2_湯気1CD = new ColorD(ref Col.Empty, ref 体配色.呼気);
-    		湯気_湯気左2_湯気2CD = new ColorD(ref Col.Empty, ref 体配色.呼気);
-    		湯気_湯気左3_湯気1CD = new ColorD(ref Col.Empty, ref 体配色.呼気);
-    		湯気_湯気左3_湯気2CD = new ColorD(ref Col.Empty, ref 体配色.呼気);
-    		湯気_湯気右1_湯気1CD = new ColorD(ref Col.Empty, ref 体配色.呼気);
-    		湯気_湯気右1_湯気2CD = new ColorD(ref Col.Empty, ref 体配色.呼気);
-    		湯気_湯気右2_湯気1CD = new ColorD(ref Col.Empty, ref 体配色.呼気);
-    		湯気_湯気右2_湯気2CD = new ColorD(ref Col.Empty, ref 体配色.呼気);
-    		湯気_湯気右3_湯気1CD = new ColorD(ref Col.Empty, ref 体配色.呼気);
-    		湯気_湯気右3_湯気2CD = new ColorD(ref Col.Empty, ref 体配色.呼気);
+    		潮1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.染み);
+    		潮2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.染み);
+    		潮3CD = new ColorD(ref ColorHelper.Empty, ref 体配色.染み);
+    		尿1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.染み);
+    		尿2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.染み);
+    		汗CD = new ColorD(ref ColorHelper.Empty, ref 体配色.染み);
+    		湯気_湯気左1_湯気1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.呼気);
+    		湯気_湯気左1_湯気2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.呼気);
+    		湯気_湯気左2_湯気1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.呼気);
+    		湯気_湯気左2_湯気2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.呼気);
+    		湯気_湯気左3_湯気1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.呼気);
+    		湯気_湯気左3_湯気2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.呼気);
+    		湯気_湯気右1_湯気1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.呼気);
+    		湯気_湯気右1_湯気2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.呼気);
+    		湯気_湯気右2_湯気1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.呼気);
+    		湯気_湯気右2_湯気2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.呼気);
+    		湯気_湯気右3_湯気1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.呼気);
+    		湯気_湯気右3_湯気2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.呼気);
     	}
     }
 }

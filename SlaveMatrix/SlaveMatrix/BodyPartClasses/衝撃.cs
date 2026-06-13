@@ -140,8 +140,8 @@ namespace SlaveMatrix
     	private void 配色N0(BodyColorSet 体配色)
     	{
     		衝撃CD = new ColorD();
-    		衝撃CD.線 = Col.Empty;
-    		衝撃CD.色 = new Color2(ref Col.White, ref Col.Empty);
+    		衝撃CD.線 = ColorHelper.Empty;
+    		衝撃CD.色 = new Color2(ref ColorHelper.White, ref ColorHelper.Empty);
     	}
     }
 }

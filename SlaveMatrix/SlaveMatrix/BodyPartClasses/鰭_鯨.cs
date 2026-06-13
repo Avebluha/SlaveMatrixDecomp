@@ -152,7 +152,7 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		鰭CD = new ColorD(ref Col.Black, ref 体配色.体0O);
+    		鰭CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
     	}
     }
 }

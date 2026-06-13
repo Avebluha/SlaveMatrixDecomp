@@ -313,12 +313,12 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		尾0CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		尾1CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		尾2CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		尾3CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		尾4CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		尾5CD = new ColorD(ref Col.Black, ref 体配色.体0O);
+    		尾0CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		尾1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		尾2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		尾3CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		尾4CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		尾5CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
     	}
 
     	private void 配色T0(BodyColorSet 体配色)

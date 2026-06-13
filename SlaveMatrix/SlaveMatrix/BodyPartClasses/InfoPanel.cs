@@ -159,10 +159,10 @@ namespace SlaveMatrix
     		MaiB.OP.ScalingX(MaiB.BasePointBase, num3);
     		MaiB.OP.ScalingY(MaiB.BasePointBase, num4);
     		MaiB.Closed = true;
-    		MaiB.BrushColor = Color.FromArgb(160, Col.Black);
+    		MaiB.BrushColor = Color.FromArgb(160, ColorHelper.Black);
     		MaiB.Hit = false;
     		MaiB.JP.Add(new JointPoint(MaiB.OP.GetCenter()));
-    		Mai = new Tex("Tex1", vector2D, num2, num3 * 0.98, num4 * 0.91, new Font("MS Gothic", 1f), 0.08, 0, " ", Col.White, Col.Black, Color.Transparent, 19.0, Col.White, delegate(Tex sp)
+    		Mai = new Tex("Tex1", vector2D, num2, num3 * 0.98, num4 * 0.91, new Font("MS Gothic", 1f), 0.08, 0, " ", ColorHelper.White, ColorHelper.Black, Color.Transparent, 19.0, ColorHelper.White, delegate(Tex sp)
     		{
     			sp.Text = sp.Text;
     		});
@@ -178,10 +178,10 @@ namespace SlaveMatrix
     		Mai2B.OP.ScalingX(Mai2B.BasePointBase, num3);
     		Mai2B.OP.ScalingY(Mai2B.BasePointBase, num5);
     		Mai2B.Closed = true;
-    		Mai2B.BrushColor = Color.FromArgb(160, Col.Black);
+    		Mai2B.BrushColor = Color.FromArgb(160, ColorHelper.Black);
     		Mai2B.Hit = false;
     		Mai2B.JP.Add(new JointPoint(Mai2B.OP.GetCenter()));
-    		Mai2 = new Tex("Tex3", vector2D, num2, num3 * 0.98, num5 * 0.97, new Font("MS Gothic", 1f), 0.08, 0, " ", Col.White, Col.Black, Color.Transparent, 19.0, Col.White, delegate(Tex sp)
+    		Mai2 = new Tex("Tex3", vector2D, num2, num3 * 0.98, num5 * 0.97, new Font("MS Gothic", 1f), 0.08, 0, " ", ColorHelper.White, ColorHelper.Black, Color.Transparent, 19.0, ColorHelper.White, delegate(Tex sp)
     		{
     			sp.Text = sp.Text;
     		});
@@ -198,13 +198,13 @@ namespace SlaveMatrix
     		SubB.OP.ScalingX(SubB.BasePointBase, num3);
     		SubB.OP.ScalingY(SubB.BasePointBase, num4);
     		SubB.Closed = true;
-    		SubB.BrushColor = Color.FromArgb(160, Col.Black);
+    		SubB.BrushColor = Color.FromArgb(160, ColorHelper.Black);
     		SubB.Hit = false;
     		SubB.JP.Add(new JointPoint(SubB.OP.GetCenter()));
-    		Sub = new Tex("Tex4", vector2D, num2 * 1.01, num3 * 0.98, num4 * 0.91, new Font("MS Gothic", 1f), 0.07, 0, " ", Col.White, Col.Black, Color.Transparent, 15.0);
+    		Sub = new Tex("Tex4", vector2D, num2 * 1.01, num3 * 0.98, num4 * 0.91, new Font("MS Gothic", 1f), 0.07, 0, " ", ColorHelper.White, ColorHelper.Black, Color.Transparent, 15.0);
     		Sub.ShapePartT.BasePointBase = Sub.ShapePartT.OP.GetCenter().MulY(y);
     		Sub.Position = SubB.ToGlobal(SubB.JP[0].Joint);
-    		SubInnfo_l = new Lab(Are, "SubInfo", vector2D, num2, 1.0, new Font("MS Gothic", 1f), 0.07, "Sub Info.", Col.White, Col.Black, Color.FromArgb(160, Col.Black), Col.Empty);
+    		SubInnfo_l = new Lab(Are, "SubInfo", vector2D, num2, 1.0, new Font("MS Gothic", 1f), 0.07, "Sub Info.", ColorHelper.White, ColorHelper.Black, Color.FromArgb(160, ColorHelper.Black), ColorHelper.Empty);
     		SubInnfo_l.ShapePartT.PositionBase = SubInnfo_l.ShapePartT.PositionBase.AddY((0.0 - SubInnfo_l.ShapePartT.OP[0].ps[3].Y) * SubInnfo_l.ShapePartT.SizeBase);
     		Sub2B = new ShapePart();
     		Sub2B.BasePointBase = DataConsts.Vec2DZero;
@@ -214,10 +214,10 @@ namespace SlaveMatrix
     		Sub2B.OP.ScalingX(Sub2B.BasePointBase, num3);
     		Sub2B.OP.ScalingY(Sub2B.BasePointBase, num4);
     		Sub2B.Closed = true;
-    		Sub2B.BrushColor = Color.FromArgb(160, Col.Black);
+    		Sub2B.BrushColor = Color.FromArgb(160, ColorHelper.Black);
     		Sub2B.Hit = false;
     		Sub2B.JP.Add(new JointPoint(SubB.OP.GetCenter()));
-    		Sub2 = new Tex("Tex3", Sub2B.PositionBase, num2 * 1.01, num3 * 0.98, num4 * 0.91, new Font("MS Gothic", 1f), 0.07, 0, "", Col.White, Col.Black, Color.Transparent, 15.0);
+    		Sub2 = new Tex("Tex3", Sub2B.PositionBase, num2 * 1.01, num3 * 0.98, num4 * 0.91, new Font("MS Gothic", 1f), 0.07, 0, "", ColorHelper.White, ColorHelper.Black, Color.Transparent, 15.0);
     		Sub2.ShapePartT.BasePointBase = Sub2.ShapePartT.OP.GetCenter().MulY(y);
     		Sub2.Position = Sub2B.ToGlobal(Sub2B.JP[0].Joint);
     		yp = new ShapePartT();
@@ -230,9 +230,9 @@ namespace SlaveMatrix
     		yp.OP.ScalingY(yp.BasePointBase, 0.9);
     		yp.OP.OutlineFalse();
     		yp.Closed = true;
-    		yp.TextColor = Col.White;
-    		yp.BrushColor = Color.FromArgb(0, Col.Black);
-    		yp.ShadBrush = new SolidBrush(Col.Black);
+    		yp.TextColor = ColorHelper.White;
+    		yp.BrushColor = Color.FromArgb(0, ColorHelper.Black);
+    		yp.ShadBrush = new SolidBrush(ColorHelper.Black);
     		yp.StringFormat.Alignment = StringAlignment.Center;
     		yp.StringFormat.LineAlignment = StringAlignment.Center;
     		yp.PositionBase = new Vector2D(MaiB.Position.X + 0.001, MaiB.Position.Y);
@@ -250,9 +250,9 @@ namespace SlaveMatrix
     		np.OP.ScalingY(np.BasePointBase, 0.9);
     		np.OP.OutlineFalse();
     		np.Closed = true;
-    		np.TextColor = Col.White;
-    		np.BrushColor = Color.FromArgb(0, Col.Black);
-    		np.ShadBrush = new SolidBrush(Col.Black);
+    		np.TextColor = ColorHelper.White;
+    		np.BrushColor = Color.FromArgb(0, ColorHelper.Black);
+    		np.ShadBrush = new SolidBrush(ColorHelper.Black);
     		np.StringFormat.Alignment = StringAlignment.Center;
     		np.StringFormat.LineAlignment = StringAlignment.Center;
     		np.PositionBase = new Vector2D(MaiB.Position.X + 0.001, MaiB.Position.Y);

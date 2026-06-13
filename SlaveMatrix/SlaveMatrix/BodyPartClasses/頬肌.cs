@@ -970,38 +970,38 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		淫タトゥ_ハート_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_ハート_タトゥ右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		隈取_タトゥ1CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		隈取_タトゥ2CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		紋柄_紋1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		紋柄_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		紋柄_紋3CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		傷_傷XCD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		傷_傷I1CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		傷_傷I2CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		傷_傷I3CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		蜘蛛_眼_基CD = new ColorD(ref Col.Black, ref 体配色.眼2O);
-    		蜘蛛_眼_眼CD = new ColorD(ref Col.Black, ref 体配色.眼2O);
-    		蜘蛛_眼_ハイライトCD = new ColorD(ref Col.Empty, ref 体配色.ハイライト);
-    		百足_眼1_基CD = new ColorD(ref Col.Black, ref 体配色.眼1O);
-    		百足_眼1_眼CD = new ColorD(ref Col.Black, ref 体配色.眼1O);
-    		百足_眼1_ハイライトCD = new ColorD(ref Col.Empty, ref 体配色.ハイライト);
-    		百足_眼2_基CD = new ColorD(ref Col.Black, ref 体配色.眼1O);
-    		百足_眼2_眼CD = new ColorD(ref Col.Black, ref 体配色.眼1O);
-    		百足_眼2_ハイライトCD = new ColorD(ref Col.Empty, ref 体配色.ハイライト);
-    		百足_眼3_基CD = new ColorD(ref Col.Black, ref 体配色.眼1O);
-    		百足_眼3_眼CD = new ColorD(ref Col.Black, ref 体配色.眼1O);
-    		百足_眼3_ハイライトCD = new ColorD(ref Col.Empty, ref 体配色.ハイライト);
-    		獣性_獣毛CD = new ColorD(ref Col.Empty, ref 体配色.毛0O);
-    		獣性_髭1CD = new ColorD(ref Col.Empty, ref 体配色.髭O);
-    		獣性_髭2CD = new ColorD(ref Col.Empty, ref 体配色.髭O);
-    		獣性_髭3CD = new ColorD(ref Col.Empty, ref 体配色.髭O);
-    		竜性_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		猟豹_タトゥCD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		牛柄_牛柄CD = new ColorD(ref Col.Empty, ref 体配色.柄O);
+    		淫タトゥ_ハート_タトゥ左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_ハート_タトゥ右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		隈取_タトゥ1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		隈取_タトゥ2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		紋柄_紋1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		紋柄_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		紋柄_紋3CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		傷_傷XCD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		傷_傷I1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		傷_傷I2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		傷_傷I3CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		蜘蛛_眼_基CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼2O);
+    		蜘蛛_眼_眼CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼2O);
+    		蜘蛛_眼_ハイライトCD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト);
+    		百足_眼1_基CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼1O);
+    		百足_眼1_眼CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼1O);
+    		百足_眼1_ハイライトCD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト);
+    		百足_眼2_基CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼1O);
+    		百足_眼2_眼CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼1O);
+    		百足_眼2_ハイライトCD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト);
+    		百足_眼3_基CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼1O);
+    		百足_眼3_眼CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼1O);
+    		百足_眼3_ハイライトCD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト);
+    		獣性_獣毛CD = new ColorD(ref ColorHelper.Empty, ref 体配色.毛0O);
+    		獣性_髭1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.髭O);
+    		獣性_髭2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.髭O);
+    		獣性_髭3CD = new ColorD(ref ColorHelper.Empty, ref 体配色.髭O);
+    		竜性_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		猟豹_タトゥCD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		牛柄_牛柄CD = new ColorD(ref ColorHelper.Empty, ref 体配色.柄O);
     	}
     }
 }

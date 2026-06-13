@@ -589,7 +589,7 @@ namespace SlaveMatrix
     		Trained = false;
     		着衣番号 = 8;
     		着衣 = 衣装.Getヴィオラ服0(ChaD).ToArray();
-    		RaceInformation 種族情報2 = Def.race_information[Race];
+    		RaceInformation 種族情報2 = RacialDefinitions.race_information[Race];
     		種族情報 = new RaceInformation(種族情報2.希少, 種族情報2.需要, 種族情報2.危険, ((int)((double)(種族情報2.一般 + 1) * ChaD.固有値)).Clamp(1, 9), ((int)((double)(種族情報2.娼婦 + 1) * ChaD.固有値)).Clamp(1, 9));
     		Set種族特性();
     		Set構成特性();

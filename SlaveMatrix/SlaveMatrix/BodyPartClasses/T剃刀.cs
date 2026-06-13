@@ -624,29 +624,29 @@ namespace SlaveMatrix
     	private void 配色N0(BodyColorSet 体配色)
     	{
     		ヘッドCD = new ColorD();
-    		ヘッドCD.線 = Col.Black;
-    		ヘッドCD.色 = new Color2(ref Col.Black, ref Col.Empty);
-    		Col.GetGrad(ref Col.DarkGray, out var ret);
-    		刃_刃1CD = new ColorD(ref Col.Black, ref ret);
-    		刃_刃2CD = new ColorD(ref Col.Black, ref ret);
-    		NeckCD = new ColorD(ref Col.Black, ref ret);
-    		ret = new Color2(ref Col.DimGray, ref Col.Black);
-    		グリップ_グリップ0CD = new ColorD(ref Col.Black, ref ret);
-    		グリップ_グリップ1CD = new ColorD(ref Col.Black, ref ret);
-    		グリップ_グリップ2CD = new ColorD(ref Col.Black, ref ret);
-    		グリップ_グリップ3CD = new ColorD(ref Col.Black, ref ret);
-    		グリップ_グリップ4CD = new ColorD(ref Col.Black, ref ret);
-    		グリップ_グリップ5CD = new ColorD(ref Col.Black, ref ret);
-    		グリップ_グリップ6CD = new ColorD(ref Col.Black, ref ret);
-    		グリップ_グリップ7CD = new ColorD(ref Col.Black, ref ret);
-    		グリップ_グリップ8CD = new ColorD(ref Col.Black, ref ret);
-    		グリップ_グリップ9CD = new ColorD(ref Col.Black, ref ret);
-    		グリップ_グリップ10CD = new ColorD(ref Col.Black, ref ret);
-    		グリップ_グリップ11CD = new ColorD(ref Col.Black, ref ret);
-    		グリップ_グリップ12CD = new ColorD(ref Col.Black, ref ret);
-    		グリップ_グリップ13CD = new ColorD(ref Col.Black, ref ret);
-    		グリップ_グリップ14CD = new ColorD(ref Col.Black, ref ret);
-    		グリップ_グリップ15CD = new ColorD(ref Col.Black, ref ret);
+    		ヘッドCD.線 = ColorHelper.Black;
+    		ヘッドCD.色 = new Color2(ref ColorHelper.Black, ref ColorHelper.Empty);
+    		ColorHelper.GetGrad(ref ColorHelper.DarkGray, out var ret);
+    		刃_刃1CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		刃_刃2CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		NeckCD = new ColorD(ref ColorHelper.Black, ref ret);
+    		ret = new Color2(ref ColorHelper.DimGray, ref ColorHelper.Black);
+    		グリップ_グリップ0CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		グリップ_グリップ1CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		グリップ_グリップ2CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		グリップ_グリップ3CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		グリップ_グリップ4CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		グリップ_グリップ5CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		グリップ_グリップ6CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		グリップ_グリップ7CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		グリップ_グリップ8CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		グリップ_グリップ9CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		グリップ_グリップ10CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		グリップ_グリップ11CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		グリップ_グリップ12CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		グリップ_グリップ13CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		グリップ_グリップ14CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		グリップ_グリップ15CD = new ColorD(ref ColorHelper.Black, ref ret);
     	}
     }
 }

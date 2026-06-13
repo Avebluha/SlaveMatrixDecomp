@@ -640,14 +640,14 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		腹板4_腹板CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		腹板4_縦線CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		腹板3_腹板CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		腹板3_縦線CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		腹板2_腹板CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		腹板2_縦線CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		腹板1_腹板CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		腹板1_縦線CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
+    		腹板4_腹板CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		腹板4_縦線CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		腹板3_腹板CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		腹板3_縦線CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		腹板2_腹板CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		腹板2_縦線CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		腹板1_腹板CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		腹板1_縦線CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
     	}
     }
 }

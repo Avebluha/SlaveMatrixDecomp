@@ -397,40 +397,40 @@ namespace SlaveMatrix
     	private void 配色N0(BodyColorSet 体配色)
     	{
     		筋肉上CD = new ColorD(ref 体配色.薄線, ref 体配色.毛0O);
-    		UpperArmCD = new ColorD(ref Col.Black, ref 体配色.毛0O);
+    		UpperArmCD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
     		筋肉下CD = new ColorD(ref 体配色.薄線, ref 体配色.毛0O);
-    		虎柄_虎1CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		虎柄_虎2CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		竜性_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		虎柄_虎1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		虎柄_虎2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		竜性_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
     	}
 
     	private void 配色T0(BodyColorSet 体配色)
     	{
     		筋肉上CD = new ColorD(ref 体配色.薄線, ref 体配色.毛0O);
-    		UpperArmCD = new ColorD(ref Col.Black, ref 体配色.毛0O);
+    		UpperArmCD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
     		筋肉下CD = new ColorD(ref 体配色.薄線, ref 体配色.毛0O);
-    		虎柄_虎1CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		虎柄_虎2CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		竜性_鱗4CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		竜性_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_鱗2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		竜性_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		虎柄_虎1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		虎柄_虎2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		竜性_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		竜性_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		竜性_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
     	}
 
     	private void 配色T1(BodyColorSet 体配色)
     	{
     		筋肉上CD = new ColorD(ref 体配色.薄線, ref 体配色.毛0O);
-    		UpperArmCD = new ColorD(ref Col.Black, ref 体配色.毛0O);
+    		UpperArmCD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
     		筋肉下CD = new ColorD(ref 体配色.薄線, ref 体配色.毛0O);
-    		虎柄_虎1CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		虎柄_虎2CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		竜性_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_鱗3CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		竜性_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_鱗1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		虎柄_虎1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		虎柄_虎2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		竜性_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		竜性_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
     	}
     }
 }

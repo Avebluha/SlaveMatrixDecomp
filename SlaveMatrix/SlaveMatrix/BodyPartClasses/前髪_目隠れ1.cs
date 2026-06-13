@@ -927,8 +927,8 @@ namespace SlaveMatrix
     		髪右5CD = new ColorD(ref 体配色.髪線, ref 体配色.髪O);
     		髪右6CD = new ColorD(ref 体配色.髪線, ref 体配色.髪O);
     		髪右7CD = new ColorD(ref 体配色.髪線, ref 体配色.髪O);
-    		ハイライト左CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
-    		ハイライト右CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
+    		ハイライト左CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		ハイライト右CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
     	}
     }
 }

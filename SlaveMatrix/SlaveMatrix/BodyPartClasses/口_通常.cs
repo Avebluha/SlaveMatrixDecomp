@@ -1183,15 +1183,15 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		口CD = new ColorD(ref Col.Black, ref 体配色.粘膜);
-    		歯CD = new ColorD(ref Col.Black, ref 体配色.歯);
-    		頬左CD = new ColorD(ref Col.Empty, ref 体配色.肌濃);
-    		頬右CD = new ColorD(ref Col.Empty, ref 体配色.肌濃);
-    		口紅上CD = new ColorD(ref Col.Empty, ref 体配色.口紅);
-    		牙左CD = new ColorD(ref Col.Black, ref 体配色.歯);
-    		牙右CD = new ColorD(ref Col.Black, ref 体配色.歯);
-    		口紅下_口紅CD = new ColorD(ref Col.Empty, ref 体配色.口紅);
-    		口紅下_ハイライトCD = new ColorD(ref Col.Empty, ref 体配色.ハイライト);
+    		口CD = new ColorD(ref ColorHelper.Black, ref 体配色.粘膜);
+    		歯CD = new ColorD(ref ColorHelper.Black, ref 体配色.歯);
+    		頬左CD = new ColorD(ref ColorHelper.Empty, ref 体配色.肌濃);
+    		頬右CD = new ColorD(ref ColorHelper.Empty, ref 体配色.肌濃);
+    		口紅上CD = new ColorD(ref ColorHelper.Empty, ref 体配色.口紅);
+    		牙左CD = new ColorD(ref ColorHelper.Black, ref 体配色.歯);
+    		牙右CD = new ColorD(ref ColorHelper.Black, ref 体配色.歯);
+    		口紅下_口紅CD = new ColorD(ref ColorHelper.Empty, ref 体配色.口紅);
+    		口紅下_ハイライトCD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト);
     	}
     }
 }

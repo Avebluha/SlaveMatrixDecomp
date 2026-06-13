@@ -608,59 +608,59 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		根_根CD = new ColorD(ref Col.Black, ref 体配色.角0O);
-    		根_凸6CD = new ColorD(ref Col.Black, ref 体配色.角1O);
-    		根_凸5CD = new ColorD(ref Col.Black, ref 体配色.角1O);
-    		根_凸4CD = new ColorD(ref Col.Black, ref 体配色.角1O);
-    		根_凸3CD = new ColorD(ref Col.Black, ref 体配色.角1O);
-    		根_凸2CD = new ColorD(ref Col.Black, ref 体配色.角1O);
-    		根_凸1CD = new ColorD(ref Col.Black, ref 体配色.角1O);
-    		先_先CD = new ColorD(ref Col.Black, ref 体配色.角0O);
-    		先_凸1CD = new ColorD(ref Col.Black, ref 体配色.角1O);
-    		先_凸2CD = new ColorD(ref Col.Black, ref 体配色.角1O);
-    		先_凸3CD = new ColorD(ref Col.Black, ref 体配色.角1O);
-    		先_凸4CD = new ColorD(ref Col.Black, ref 体配色.角1O);
-    		先_凸5CD = new ColorD(ref Col.Black, ref 体配色.角1O);
-    		根_折線1CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		根_折線2CD = new ColorD(ref Col.Black, ref Color2.Empty);
+    		根_根CD = new ColorD(ref ColorHelper.Black, ref 体配色.角0O);
+    		根_凸6CD = new ColorD(ref ColorHelper.Black, ref 体配色.角1O);
+    		根_凸5CD = new ColorD(ref ColorHelper.Black, ref 体配色.角1O);
+    		根_凸4CD = new ColorD(ref ColorHelper.Black, ref 体配色.角1O);
+    		根_凸3CD = new ColorD(ref ColorHelper.Black, ref 体配色.角1O);
+    		根_凸2CD = new ColorD(ref ColorHelper.Black, ref 体配色.角1O);
+    		根_凸1CD = new ColorD(ref ColorHelper.Black, ref 体配色.角1O);
+    		先_先CD = new ColorD(ref ColorHelper.Black, ref 体配色.角0O);
+    		先_凸1CD = new ColorD(ref ColorHelper.Black, ref 体配色.角1O);
+    		先_凸2CD = new ColorD(ref ColorHelper.Black, ref 体配色.角1O);
+    		先_凸3CD = new ColorD(ref ColorHelper.Black, ref 体配色.角1O);
+    		先_凸4CD = new ColorD(ref ColorHelper.Black, ref 体配色.角1O);
+    		先_凸5CD = new ColorD(ref ColorHelper.Black, ref 体配色.角1O);
+    		根_折線1CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		根_折線2CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
     	}
 
     	private void 配色T0(BodyColorSet 体配色)
     	{
-    		根_根CD = new ColorD(ref Col.Black, ref 体配色.角0O);
-    		根_凸6CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		根_凸5CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		根_凸4CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		根_凸3CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		根_凸2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		根_凸1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		先_先CD = new ColorD(ref Col.Black, ref 体配色.角0O);
-    		先_凸1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		先_凸2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		先_凸3CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		先_凸4CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		先_凸5CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		根_折線1CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		根_折線2CD = new ColorD(ref Col.Black, ref Color2.Empty);
+    		根_根CD = new ColorD(ref ColorHelper.Black, ref 体配色.角0O);
+    		根_凸6CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		根_凸5CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		根_凸4CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		根_凸3CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		根_凸2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		根_凸1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		先_先CD = new ColorD(ref ColorHelper.Black, ref 体配色.角0O);
+    		先_凸1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		先_凸2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		先_凸3CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		先_凸4CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		先_凸5CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		根_折線1CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		根_折線2CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
     	}
 
     	private void 配色T1(BodyColorSet 体配色)
     	{
-    		根_根CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		根_凸6CD = new ColorD(ref Col.Black, ref 体配色.角1O);
-    		根_凸5CD = new ColorD(ref Col.Black, ref 体配色.角1O);
-    		根_凸4CD = new ColorD(ref Col.Black, ref 体配色.角1O);
-    		根_凸3CD = new ColorD(ref Col.Black, ref 体配色.角1O);
-    		根_凸2CD = new ColorD(ref Col.Black, ref 体配色.角1O);
-    		根_凸1CD = new ColorD(ref Col.Black, ref 体配色.角1O);
-    		先_先CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		先_凸1CD = new ColorD(ref Col.Black, ref 体配色.角1O);
-    		先_凸2CD = new ColorD(ref Col.Black, ref 体配色.角1O);
-    		先_凸3CD = new ColorD(ref Col.Black, ref 体配色.角1O);
-    		先_凸4CD = new ColorD(ref Col.Black, ref 体配色.角1O);
-    		先_凸5CD = new ColorD(ref Col.Black, ref 体配色.角1O);
-    		根_折線1CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		根_折線2CD = new ColorD(ref Col.Black, ref Color2.Empty);
+    		根_根CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		根_凸6CD = new ColorD(ref ColorHelper.Black, ref 体配色.角1O);
+    		根_凸5CD = new ColorD(ref ColorHelper.Black, ref 体配色.角1O);
+    		根_凸4CD = new ColorD(ref ColorHelper.Black, ref 体配色.角1O);
+    		根_凸3CD = new ColorD(ref ColorHelper.Black, ref 体配色.角1O);
+    		根_凸2CD = new ColorD(ref ColorHelper.Black, ref 体配色.角1O);
+    		根_凸1CD = new ColorD(ref ColorHelper.Black, ref 体配色.角1O);
+    		先_先CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		先_凸1CD = new ColorD(ref ColorHelper.Black, ref 体配色.角1O);
+    		先_凸2CD = new ColorD(ref ColorHelper.Black, ref 体配色.角1O);
+    		先_凸3CD = new ColorD(ref ColorHelper.Black, ref 体配色.角1O);
+    		先_凸4CD = new ColorD(ref ColorHelper.Black, ref 体配色.角1O);
+    		先_凸5CD = new ColorD(ref ColorHelper.Black, ref 体配色.角1O);
+    		根_折線1CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		根_折線2CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
     	}
     }
 }

@@ -975,22 +975,22 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		Color2 色 = new Color2(ref Col.DimGray, ref Col.Black);
-    		ヘッドCD = new ColorD(ref Col.Black, ref 色);
-    		血管1CD = new ColorD(ref Col.Black, ref 色);
-    		血管2CD = new ColorD(ref Col.Black, ref 色);
-    		亀頭CD = new ColorD(ref Col.Black, ref 色);
-    		Col.GetGrad(ref Col.Silver, out 色);
-    		ユニット_ユニットCD = new ColorD(ref Col.Black, ref 色);
-    		ユニット_ユニット線上CD = new ColorD(ref Col.Black, ref 色);
-    		ユニット_ユニット線下CD = new ColorD(ref Col.Black, ref 色);
-    		ユニット_ボタン上CD = new ColorD(ref Col.Black, ref 色);
-    		ユニット_ボタン下CD = new ColorD(ref Col.Black, ref 色);
-    		ユニット_パワー根CD = new ColorD(ref Col.Black, ref 色);
-    		ユニット_パワー1CD = new ColorD(ref Col.Black, ref 色);
-    		ユニット_パワー2CD = new ColorD(ref Col.Black, ref 色);
-    		ユニット_パワー3CD = new ColorD(ref Col.Black, ref 色);
-    		ユニット_パワー4CD = new ColorD(ref Col.Black, ref 色);
+    		Color2 色 = new Color2(ref ColorHelper.DimGray, ref ColorHelper.Black);
+    		ヘッドCD = new ColorD(ref ColorHelper.Black, ref 色);
+    		血管1CD = new ColorD(ref ColorHelper.Black, ref 色);
+    		血管2CD = new ColorD(ref ColorHelper.Black, ref 色);
+    		亀頭CD = new ColorD(ref ColorHelper.Black, ref 色);
+    		ColorHelper.GetGrad(ref ColorHelper.Silver, out 色);
+    		ユニット_ユニットCD = new ColorD(ref ColorHelper.Black, ref 色);
+    		ユニット_ユニット線上CD = new ColorD(ref ColorHelper.Black, ref 色);
+    		ユニット_ユニット線下CD = new ColorD(ref ColorHelper.Black, ref 色);
+    		ユニット_ボタン上CD = new ColorD(ref ColorHelper.Black, ref 色);
+    		ユニット_ボタン下CD = new ColorD(ref ColorHelper.Black, ref 色);
+    		ユニット_パワー根CD = new ColorD(ref ColorHelper.Black, ref 色);
+    		ユニット_パワー1CD = new ColorD(ref ColorHelper.Black, ref 色);
+    		ユニット_パワー2CD = new ColorD(ref ColorHelper.Black, ref 色);
+    		ユニット_パワー3CD = new ColorD(ref ColorHelper.Black, ref 色);
+    		ユニット_パワー4CD = new ColorD(ref ColorHelper.Black, ref 色);
     	}
     }
 }

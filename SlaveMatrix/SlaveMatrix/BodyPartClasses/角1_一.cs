@@ -509,7 +509,7 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		根CD = new ColorD(ref Col.Black, ref 体配色.角0O);
+    		根CD = new ColorD(ref ColorHelper.Black, ref 体配色.角0O);
     		線1CD = new ColorD(ref 体配色.角1O.Col2, ref Color2.Empty);
     		線2CD = new ColorD(ref 体配色.角1O.Col2, ref Color2.Empty);
     		線3CD = new ColorD(ref 体配色.角1O.Col2, ref Color2.Empty);
@@ -520,13 +520,13 @@ namespace SlaveMatrix
     		線8CD = new ColorD(ref 体配色.角1O.Col2, ref Color2.Empty);
     		線9CD = new ColorD(ref 体配色.角1O.Col2, ref Color2.Empty);
     		線10CD = new ColorD(ref 体配色.角1O.Col2, ref Color2.Empty);
-    		折線1CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		折線2CD = new ColorD(ref Col.Black, ref Color2.Empty);
+    		折線1CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		折線2CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
     	}
 
     	private void 配色T0(BodyColorSet 体配色)
     	{
-    		根CD = new ColorD(ref Col.Black, ref 体配色.角0O);
+    		根CD = new ColorD(ref ColorHelper.Black, ref 体配色.角0O);
     		線1CD = new ColorD(ref 体配色.刺青O.Col2, ref Color2.Empty);
     		線2CD = new ColorD(ref 体配色.刺青O.Col2, ref Color2.Empty);
     		線3CD = new ColorD(ref 体配色.刺青O.Col2, ref Color2.Empty);
@@ -537,13 +537,13 @@ namespace SlaveMatrix
     		線8CD = new ColorD(ref 体配色.刺青O.Col2, ref Color2.Empty);
     		線9CD = new ColorD(ref 体配色.刺青O.Col2, ref Color2.Empty);
     		線10CD = new ColorD(ref 体配色.刺青O.Col2, ref Color2.Empty);
-    		折線1CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		折線2CD = new ColorD(ref Col.Black, ref Color2.Empty);
+    		折線1CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		折線2CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
     	}
 
     	private void 配色T1(BodyColorSet 体配色)
     	{
-    		根CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		根CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
     		線1CD = new ColorD(ref 体配色.角1O.Col2, ref Color2.Empty);
     		線2CD = new ColorD(ref 体配色.角1O.Col2, ref Color2.Empty);
     		線3CD = new ColorD(ref 体配色.角1O.Col2, ref Color2.Empty);
@@ -554,8 +554,8 @@ namespace SlaveMatrix
     		線8CD = new ColorD(ref 体配色.角1O.Col2, ref Color2.Empty);
     		線9CD = new ColorD(ref 体配色.角1O.Col2, ref Color2.Empty);
     		線10CD = new ColorD(ref 体配色.角1O.Col2, ref Color2.Empty);
-    		折線1CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		折線2CD = new ColorD(ref Col.Black, ref Color2.Empty);
+    		折線1CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		折線2CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
     	}
     }
 }

@@ -93,7 +93,7 @@ namespace SlaveMatrix
     		unit.Race = 種族;
     		unit.Name = 種族;
     		unit.妊娠進行期間 = 妊娠進行期間;
-    		RaceInformation 種族情報2 = Def.race_information[種族];
+    		RaceInformation 種族情報2 = RacialDefinitions.race_information[種族];
     		unit.種族情報 = new RaceInformation(種族情報2.希少, 種族情報2.需要, 種族情報2.危険, ((int)((double)(種族情報2.一般 + 1) * unit.ChaD.固有値)).Clamp(1, 9), ((int)((double)(種族情報2.娼婦 + 1) * unit.ChaD.固有値)).Clamp(1, 9));
     		unit.Set原種素質();
     		unit.Set種族特性();
@@ -129,7 +129,7 @@ namespace SlaveMatrix
     		unit.Race = GameText.ヒューマン;
     		unit.Name = unit.Race;
     		unit.妊娠進行期間 = 2;
-    		unit.種族情報 = Def.race_information[unit.Race];
+    		unit.種族情報 = RacialDefinitions.race_information[unit.Race];
     		腰肌D eleD = unit.ChaD.body_tree.肌_接続.GetEleD<腰肌D>();
     		unit.Hairless = (!eleD.陰毛_表示 && !eleD.獣性_獣毛_表示) || unit.ChaD.最陰毛濃度 == 0.0;
     		unit.Mother = unit;

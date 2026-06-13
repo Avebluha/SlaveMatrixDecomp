@@ -321,11 +321,11 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		TorsoCD = new ColorD(ref Col.Black, ref 体配色.毛0R);
+    		TorsoCD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0R);
     		筋肉_筋肉左CD = new ColorD(ref 体配色.薄線, ref 体配色.毛0O);
     		筋肉_筋肉右CD = new ColorD(ref 体配色.薄線, ref 体配色.毛0O);
-    		獣性_獣毛左CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		獣性_獣毛右CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
+    		獣性_獣毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		獣性_獣毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
     	}
     }
 }

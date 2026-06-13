@@ -231,7 +231,7 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		LowerArmCD = new ColorD(ref Col.Black, ref 体配色.毛0O);
+    		LowerArmCD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
     		筋肉_筋肉下CD = new ColorD(ref 体配色.薄線, ref 体配色.毛0O);
     		筋肉_筋肉上CD = new ColorD(ref 体配色.薄線, ref 体配色.毛0O);
     	}

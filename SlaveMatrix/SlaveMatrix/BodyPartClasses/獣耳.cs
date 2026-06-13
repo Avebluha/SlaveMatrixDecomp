@@ -380,23 +380,23 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		獣耳外CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		獣耳内CD = new ColorD(ref Col.Black, ref 体配色.人肌R);
-    		耳毛CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
+    		獣耳外CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		獣耳内CD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌R);
+    		耳毛CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
     	}
 
     	private void 配色T0(BodyColorSet 体配色)
     	{
-    		獣耳外CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		獣耳内CD = new ColorD(ref Col.Black, ref 体配色.人肌R);
-    		耳毛CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
+    		獣耳外CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		獣耳内CD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌R);
+    		耳毛CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
     	}
 
     	private void 配色T1(BodyColorSet 体配色)
     	{
-    		獣耳外CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		獣耳内CD = new ColorD(ref Col.Black, ref 体配色.人肌R);
-    		耳毛CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
+    		獣耳外CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		獣耳内CD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌R);
+    		耳毛CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
     	}
     }
 }

@@ -279,10 +279,10 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		鰭2_鰭膜CD = new ColorD(ref Col.Black, ref 体配色.膜O);
-    		鰭2_鰭条CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		鰭1_鰭膜CD = new ColorD(ref Col.Black, ref 体配色.膜O);
-    		鰭1_鰭条CD = new ColorD(ref Col.Black, ref 体配色.爪O);
+    		鰭2_鰭膜CD = new ColorD(ref ColorHelper.Black, ref 体配色.膜O);
+    		鰭2_鰭条CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		鰭1_鰭膜CD = new ColorD(ref ColorHelper.Black, ref 体配色.膜O);
+    		鰭1_鰭条CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
     	}
     }
 }

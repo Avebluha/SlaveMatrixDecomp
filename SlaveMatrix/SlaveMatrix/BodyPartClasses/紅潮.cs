@@ -507,15 +507,15 @@ namespace SlaveMatrix
     	{
     		Color Col = Color.FromArgb((int)((double)(int)体配色.紅潮.Col1.A * 0.7), 体配色.紅潮.Col1);
     		紅潮0CD = new ColorD();
-    		紅潮0CD.線 = SlaveMatrix.Col.Empty;
-    		紅潮0CD.色 = new Color2(ref Col, ref SlaveMatrix.Col.Empty);
-    		紅潮1CD = new ColorD(ref SlaveMatrix.Col.Empty, ref 体配色.紅潮);
-    		紅潮右CD = new ColorD(ref SlaveMatrix.Col.Empty, ref 体配色.紅潮);
-    		紅潮左CD = new ColorD(ref SlaveMatrix.Col.Empty, ref 体配色.紅潮);
+    		紅潮0CD.線 = SlaveMatrix.ColorHelper.Empty;
+    		紅潮0CD.色 = new Color2(ref Col, ref SlaveMatrix.ColorHelper.Empty);
+    		紅潮1CD = new ColorD(ref SlaveMatrix.ColorHelper.Empty, ref 体配色.紅潮);
+    		紅潮右CD = new ColorD(ref SlaveMatrix.ColorHelper.Empty, ref 体配色.紅潮);
+    		紅潮左CD = new ColorD(ref SlaveMatrix.ColorHelper.Empty, ref 体配色.紅潮);
     		紅潮線左CD = new ColorD(ref 体配色.紅潮線, ref 体配色.紅潮);
     		紅潮線右CD = new ColorD(ref 体配色.紅潮線, ref 体配色.紅潮);
-    		紅潮弱左CD = new ColorD(ref SlaveMatrix.Col.Empty, ref 体配色.紅潮);
-    		紅潮弱右CD = new ColorD(ref SlaveMatrix.Col.Empty, ref 体配色.紅潮);
+    		紅潮弱左CD = new ColorD(ref SlaveMatrix.ColorHelper.Empty, ref 体配色.紅潮);
+    		紅潮弱右CD = new ColorD(ref SlaveMatrix.ColorHelper.Empty, ref 体配色.紅潮);
     		紅潮線弱左CD = new ColorD(ref 体配色.紅潮線, ref 体配色.紅潮);
     		紅潮線弱右CD = new ColorD(ref 体配色.紅潮線, ref 体配色.紅潮);
     	}

@@ -1018,7 +1018,7 @@ namespace SlaveMatrix
     		髪ハネ左CD = new ColorD(ref 体配色.髪線, ref 体配色.髪O);
     		髪左4CD = new ColorD(ref 体配色.髪線, ref 体配色.髪O);
     		髪左5CD = new ColorD(ref 体配色.髪線, ref 体配色.髪O);
-    		ハイライト左CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
+    		ハイライト左CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
     		髪頭頂横左1CD = new ColorD(ref 体配色.髪線, ref 体配色.髪O);
     		髪頭頂横左2CD = new ColorD(ref 体配色.髪線, ref 体配色.髪O);
     		髪右1CD = new ColorD(ref 体配色.髪線, ref 体配色.髪O);
@@ -1034,7 +1034,7 @@ namespace SlaveMatrix
     		髪右4CD = new ColorD(ref 体配色.髪線, ref 体配色.髪O);
     		髪右5CD = new ColorD(ref 体配色.髪線, ref 体配色.髪O);
     		髪中央CD = new ColorD(ref 体配色.髪線, ref 体配色.髪O);
-    		ハイライト右CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
+    		ハイライト右CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
     		髪頭頂横右1CD = new ColorD(ref 体配色.髪線, ref 体配色.髪O);
     		髪頭頂横右2CD = new ColorD(ref 体配色.髪線, ref 体配色.髪O);
     	}

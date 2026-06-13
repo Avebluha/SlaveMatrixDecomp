@@ -783,11 +783,11 @@ namespace SlaveMatrix
     		布_布右_縁_縁1CD = new ColorD();
     		布_布右_縁_縁2CD = new ColorD();
     		カップ右_布CD = new ColorD();
-    		カップ右_皺CD = new ColorD(ref Col.Black, ref Color2.Empty);
+    		カップ右_皺CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
     		カップ右_縁_縁1CD = new ColorD();
     		カップ右_縁_縁2CD = new ColorD();
     		カップ左_布CD = new ColorD();
-    		カップ左_皺CD = new ColorD(ref Col.Black, ref Color2.Empty);
+    		カップ左_皺CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
     		カップ左_縁_縁1CD = new ColorD();
     		カップ左_縁_縁2CD = new ColorD();
     	}

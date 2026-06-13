@@ -265,12 +265,12 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		植タトゥ_タトゥ花左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		植タトゥ_タトゥ花右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		植タトゥ_タトゥ花CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		植タトゥ_タトゥ茎CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		植タトゥ_タトゥ葉左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		植タトゥ_タトゥ葉右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
+    		植タトゥ_タトゥ花左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		植タトゥ_タトゥ花右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		植タトゥ_タトゥ花CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		植タトゥ_タトゥ茎CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		植タトゥ_タトゥ葉左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		植タトゥ_タトゥ葉右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
     	}
     }
 }

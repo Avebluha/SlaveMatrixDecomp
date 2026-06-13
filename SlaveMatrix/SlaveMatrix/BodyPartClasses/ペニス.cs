@@ -720,7 +720,7 @@ namespace SlaveMatrix
     		血管上CD = new ColorD(ref 体配色.肌線, ref 体配色.肌色);
     		亀頭CD = new ColorD();
     		亀頭CD.線 = 体配色.粘線;
-    		亀頭CD.色 = new Color2(ref 体配色.粘膜.Col2, ref Col.Empty);
+    		亀頭CD.色 = new Color2(ref 体配色.粘膜.Col2, ref ColorHelper.Empty);
     	}
 
     	public void 再配色(主人公配色 体配色)
@@ -734,7 +734,7 @@ namespace SlaveMatrix
     		血管上CD.線 = 体配色.粘線;
     		血管上CD.色 = 体配色.肌色;
     		亀頭CD.線 = 体配色.粘線;
-    		亀頭CD.色 = new Color2(ref 体配色.粘膜.Col2, ref Col.Empty);
+    		亀頭CD.色 = new Color2(ref 体配色.粘膜.Col2, ref ColorHelper.Empty);
     	}
     }
 }

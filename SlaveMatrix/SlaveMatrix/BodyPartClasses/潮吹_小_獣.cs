@@ -243,7 +243,7 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		雫CD = new ColorD(ref Col.Empty, ref 体配色.体液);
+    		雫CD = new ColorD(ref ColorHelper.Empty, ref 体配色.体液);
     	}
     }
 }

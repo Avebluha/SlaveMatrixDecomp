@@ -511,12 +511,12 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		咳基CD = new ColorD(ref Col.Empty, ref Color2.Empty);
-    		雫1CD = new ColorD(ref Col.Empty, ref 体配色.体液);
-    		雫2CD = new ColorD(ref Col.Empty, ref 体配色.体液);
-    		雫3CD = new ColorD(ref Col.Empty, ref 体配色.体液);
-    		雫4CD = new ColorD(ref Col.Empty, ref 体配色.体液);
-    		雫5CD = new ColorD(ref Col.Empty, ref 体配色.体液);
+    		咳基CD = new ColorD(ref ColorHelper.Empty, ref Color2.Empty);
+    		雫1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.体液);
+    		雫2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.体液);
+    		雫3CD = new ColorD(ref ColorHelper.Empty, ref 体配色.体液);
+    		雫4CD = new ColorD(ref ColorHelper.Empty, ref 体配色.体液);
+    		雫5CD = new ColorD(ref ColorHelper.Empty, ref 体配色.体液);
     	}
     }
 }

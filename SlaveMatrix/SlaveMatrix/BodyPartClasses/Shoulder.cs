@@ -462,15 +462,15 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		脇_脇CD = new ColorD(ref Col.Black, ref 体配色.人肌R);
-    		脇_筋肉CD = new ColorD(ref Col.Black, ref 体配色.人肌R);
-    		Shoulder_ShoulderCD = new ColorD(ref Col.Black, ref 体配色.人肌O);
-    		Shoulder_虫性_甲殻1CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		Shoulder_虫性_甲殻2CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		Shoulder_傷I1CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		Shoulder_傷I2CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		Shoulder_傷I3CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		Shoulder_傷I4CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
+    		脇_脇CD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌R);
+    		脇_筋肉CD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌R);
+    		Shoulder_ShoulderCD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌O);
+    		Shoulder_虫性_甲殻1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		Shoulder_虫性_甲殻2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		Shoulder_傷I1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		Shoulder_傷I2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		Shoulder_傷I3CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		Shoulder_傷I4CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
     		Shoulder_シャツCD = new ColorD();
     		Shoulder_ナースCD = new ColorD();
     	}

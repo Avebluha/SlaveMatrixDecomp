@@ -996,40 +996,40 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		Col.Alpha(ref 体配色.人肌O, 128, out var ret);
-    		粘液0CD = new ColorD(ref Col.Empty, ref ret);
-    		粘液1CD = new ColorD(ref Col.Empty, ref ret);
-    		粘液2_粘液CD = new ColorD(ref Col.Empty, ref ret);
-    		粘液2_ハイライト左CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
-    		粘液2_ハイライト右CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
-    		粘液2_ハイライト下1CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
-    		粘液2_ハイライト下2CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
-    		粘液3_粘液CD = new ColorD(ref Col.Empty, ref ret);
-    		粘液3_ハイライト左上CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
-    		粘液3_ハイライト右上CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
-    		粘液3_ハイライト左下1CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
-    		粘液3_ハイライト左下2CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
-    		粘液3_ハイライト右下1CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
-    		粘液3_ハイライト右下2CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
-    		粘液3_ハイライト下1CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
-    		粘液3_ハイライト下2CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
-    		粘液4_粘液CD = new ColorD(ref Col.Empty, ref ret);
-    		粘液4_ハイライト上1CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
-    		粘液4_ハイライト上2CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
-    		粘液4_ハイライト下1CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
-    		粘液4_ハイライト下2CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
+    		ColorHelper.Alpha(ref 体配色.人肌O, 128, out var ret);
+    		粘液0CD = new ColorD(ref ColorHelper.Empty, ref ret);
+    		粘液1CD = new ColorD(ref ColorHelper.Empty, ref ret);
+    		粘液2_粘液CD = new ColorD(ref ColorHelper.Empty, ref ret);
+    		粘液2_ハイライト左CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		粘液2_ハイライト右CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		粘液2_ハイライト下1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		粘液2_ハイライト下2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		粘液3_粘液CD = new ColorD(ref ColorHelper.Empty, ref ret);
+    		粘液3_ハイライト左上CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		粘液3_ハイライト右上CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		粘液3_ハイライト左下1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		粘液3_ハイライト左下2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		粘液3_ハイライト右下1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		粘液3_ハイライト右下2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		粘液3_ハイライト下1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		粘液3_ハイライト下2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		粘液4_粘液CD = new ColorD(ref ColorHelper.Empty, ref ret);
+    		粘液4_ハイライト上1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		粘液4_ハイライト上2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		粘液4_ハイライト下1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		粘液4_ハイライト下2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
     		ret.GetRep(out ret);
-    		粘液下左_粘液CD = new ColorD(ref Col.Empty, ref ret);
-    		粘液下左_ハイライト1CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
-    		粘液下左_ハイライト2CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
-    		粘液下右_粘液CD = new ColorD(ref Col.Empty, ref ret);
-    		粘液下右_ハイライト1CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
-    		粘液下右_ハイライト2CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
-    		粘液上左_粘液CD = new ColorD(ref Col.Empty, ref ret);
-    		粘液上左_ハイライトCD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
-    		粘液上右_粘液CD = new ColorD(ref Col.Empty, ref ret);
-    		粘液上右_ハイライトCD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
-    		ハイライトCD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
+    		粘液下左_粘液CD = new ColorD(ref ColorHelper.Empty, ref ret);
+    		粘液下左_ハイライト1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		粘液下左_ハイライト2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		粘液下右_粘液CD = new ColorD(ref ColorHelper.Empty, ref ret);
+    		粘液下右_ハイライト1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		粘液下右_ハイライト2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		粘液上左_粘液CD = new ColorD(ref ColorHelper.Empty, ref ret);
+    		粘液上左_ハイライトCD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		粘液上右_粘液CD = new ColorD(ref ColorHelper.Empty, ref ret);
+    		粘液上右_ハイライトCD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		ハイライトCD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
     	}
     }
 }

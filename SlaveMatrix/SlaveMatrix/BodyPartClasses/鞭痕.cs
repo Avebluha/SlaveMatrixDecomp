@@ -139,7 +139,7 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		鞭痕CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
+    		鞭痕CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
     	}
     }
 }

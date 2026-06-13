@@ -267,8 +267,8 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		傷上CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		傷下CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
+    		傷上CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		傷下CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
     	}
     }
 }

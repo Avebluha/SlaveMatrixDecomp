@@ -541,10 +541,10 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		Torso_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		Torso_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		Torso_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		Torso_TorsoCD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		Torso_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		Torso_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		Torso_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		Torso_TorsoCD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
     		輪_革CD = new ColorD();
     		輪_金具1CD = new ColorD();
     		輪_金具2CD = new ColorD();
@@ -555,10 +555,10 @@ namespace SlaveMatrix
 
     	private void 配色T0(BodyColorSet 体配色)
     	{
-    		Torso_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		Torso_鱗左CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		Torso_鱗右CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		Torso_TorsoCD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		Torso_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		Torso_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		Torso_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		Torso_TorsoCD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
     		輪_革CD = new ColorD();
     		輪_金具1CD = new ColorD();
     		輪_金具2CD = new ColorD();
@@ -569,10 +569,10 @@ namespace SlaveMatrix
 
     	private void 配色T1(BodyColorSet 体配色)
     	{
-    		Torso_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		Torso_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		Torso_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		Torso_TorsoCD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		Torso_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		Torso_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		Torso_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		Torso_TorsoCD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
     		輪_革CD = new ColorD();
     		輪_金具1CD = new ColorD();
     		輪_金具2CD = new ColorD();

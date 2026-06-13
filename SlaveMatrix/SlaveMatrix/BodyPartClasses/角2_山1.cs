@@ -417,41 +417,41 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		根CD = new ColorD(ref Col.Black, ref 体配色.角0O);
-    		凸1CD = new ColorD(ref Col.Black, ref 体配色.角1O);
-    		凸2CD = new ColorD(ref Col.Black, ref 体配色.角1O);
-    		凸3CD = new ColorD(ref Col.Black, ref 体配色.角1O);
-    		凸4CD = new ColorD(ref Col.Black, ref 体配色.角1O);
-    		凸5CD = new ColorD(ref Col.Black, ref 体配色.角1O);
-    		凸6CD = new ColorD(ref Col.Black, ref 体配色.角1O);
-    		凸7CD = new ColorD(ref Col.Black, ref 体配色.角1O);
-    		折線CD = new ColorD(ref Col.Black, ref Color2.Empty);
+    		根CD = new ColorD(ref ColorHelper.Black, ref 体配色.角0O);
+    		凸1CD = new ColorD(ref ColorHelper.Black, ref 体配色.角1O);
+    		凸2CD = new ColorD(ref ColorHelper.Black, ref 体配色.角1O);
+    		凸3CD = new ColorD(ref ColorHelper.Black, ref 体配色.角1O);
+    		凸4CD = new ColorD(ref ColorHelper.Black, ref 体配色.角1O);
+    		凸5CD = new ColorD(ref ColorHelper.Black, ref 体配色.角1O);
+    		凸6CD = new ColorD(ref ColorHelper.Black, ref 体配色.角1O);
+    		凸7CD = new ColorD(ref ColorHelper.Black, ref 体配色.角1O);
+    		折線CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
     	}
 
     	private void 配色T0(BodyColorSet 体配色)
     	{
-    		根CD = new ColorD(ref Col.Black, ref 体配色.角0O);
-    		凸1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		凸2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		凸3CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		凸4CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		凸5CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		凸6CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		凸7CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		折線CD = new ColorD(ref Col.Black, ref Color2.Empty);
+    		根CD = new ColorD(ref ColorHelper.Black, ref 体配色.角0O);
+    		凸1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		凸2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		凸3CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		凸4CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		凸5CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		凸6CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		凸7CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		折線CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
     	}
 
     	private void 配色T1(BodyColorSet 体配色)
     	{
-    		根CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		凸1CD = new ColorD(ref Col.Black, ref 体配色.角1O);
-    		凸2CD = new ColorD(ref Col.Black, ref 体配色.角1O);
-    		凸3CD = new ColorD(ref Col.Black, ref 体配色.角1O);
-    		凸4CD = new ColorD(ref Col.Black, ref 体配色.角1O);
-    		凸5CD = new ColorD(ref Col.Black, ref 体配色.角1O);
-    		凸6CD = new ColorD(ref Col.Black, ref 体配色.角1O);
-    		凸7CD = new ColorD(ref Col.Black, ref 体配色.角1O);
-    		折線CD = new ColorD(ref Col.Black, ref Color2.Empty);
+    		根CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		凸1CD = new ColorD(ref ColorHelper.Black, ref 体配色.角1O);
+    		凸2CD = new ColorD(ref ColorHelper.Black, ref 体配色.角1O);
+    		凸3CD = new ColorD(ref ColorHelper.Black, ref 体配色.角1O);
+    		凸4CD = new ColorD(ref ColorHelper.Black, ref 体配色.角1O);
+    		凸5CD = new ColorD(ref ColorHelper.Black, ref 体配色.角1O);
+    		凸6CD = new ColorD(ref ColorHelper.Black, ref 体配色.角1O);
+    		凸7CD = new ColorD(ref ColorHelper.Black, ref 体配色.角1O);
+    		折線CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
     	}
     }
 }

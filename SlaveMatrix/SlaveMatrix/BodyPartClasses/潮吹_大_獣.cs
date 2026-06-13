@@ -2183,27 +2183,27 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		潮吹基CD = new ColorD(ref Col.Empty, ref Color2.Empty);
-    		雫1CD = new ColorD(ref Col.Empty, ref 体配色.体液);
-    		雫2CD = new ColorD(ref Col.Empty, ref 体配色.体液);
-    		雫3CD = new ColorD(ref Col.Empty, ref 体配色.体液);
-    		雫4CD = new ColorD(ref Col.Empty, ref 体配色.体液);
-    		雫5CD = new ColorD(ref Col.Empty, ref 体配色.体液);
-    		雫6CD = new ColorD(ref Col.Empty, ref 体配色.体液);
-    		雫7CD = new ColorD(ref Col.Empty, ref 体配色.体液);
-    		雫8CD = new ColorD(ref Col.Empty, ref 体配色.体液);
-    		雫9CD = new ColorD(ref Col.Empty, ref 体配色.体液);
-    		雫10CD = new ColorD(ref Col.Empty, ref 体配色.体液);
-    		雫11CD = new ColorD(ref Col.Empty, ref 体配色.体液);
-    		雫12CD = new ColorD(ref Col.Empty, ref 体配色.体液);
-    		雫13CD = new ColorD(ref Col.Empty, ref 体配色.体液);
-    		雫14CD = new ColorD(ref Col.Empty, ref 体配色.体液);
-    		雫15CD = new ColorD(ref Col.Empty, ref 体配色.体液);
-    		雫16CD = new ColorD(ref Col.Empty, ref 体配色.体液);
-    		雫17CD = new ColorD(ref Col.Empty, ref 体配色.体液);
-    		雫18CD = new ColorD(ref Col.Empty, ref 体配色.体液);
-    		雫19CD = new ColorD(ref Col.Empty, ref 体配色.体液);
-    		雫20CD = new ColorD(ref Col.Empty, ref 体配色.体液);
+    		潮吹基CD = new ColorD(ref ColorHelper.Empty, ref Color2.Empty);
+    		雫1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.体液);
+    		雫2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.体液);
+    		雫3CD = new ColorD(ref ColorHelper.Empty, ref 体配色.体液);
+    		雫4CD = new ColorD(ref ColorHelper.Empty, ref 体配色.体液);
+    		雫5CD = new ColorD(ref ColorHelper.Empty, ref 体配色.体液);
+    		雫6CD = new ColorD(ref ColorHelper.Empty, ref 体配色.体液);
+    		雫7CD = new ColorD(ref ColorHelper.Empty, ref 体配色.体液);
+    		雫8CD = new ColorD(ref ColorHelper.Empty, ref 体配色.体液);
+    		雫9CD = new ColorD(ref ColorHelper.Empty, ref 体配色.体液);
+    		雫10CD = new ColorD(ref ColorHelper.Empty, ref 体配色.体液);
+    		雫11CD = new ColorD(ref ColorHelper.Empty, ref 体配色.体液);
+    		雫12CD = new ColorD(ref ColorHelper.Empty, ref 体配色.体液);
+    		雫13CD = new ColorD(ref ColorHelper.Empty, ref 体配色.体液);
+    		雫14CD = new ColorD(ref ColorHelper.Empty, ref 体配色.体液);
+    		雫15CD = new ColorD(ref ColorHelper.Empty, ref 体配色.体液);
+    		雫16CD = new ColorD(ref ColorHelper.Empty, ref 体配色.体液);
+    		雫17CD = new ColorD(ref ColorHelper.Empty, ref 体配色.体液);
+    		雫18CD = new ColorD(ref ColorHelper.Empty, ref 体配色.体液);
+    		雫19CD = new ColorD(ref ColorHelper.Empty, ref 体配色.体液);
+    		雫20CD = new ColorD(ref ColorHelper.Empty, ref 体配色.体液);
     	}
     }
 }

@@ -1797,80 +1797,80 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		花_ユリ_萼2CD = new ColorD(ref Col.Black, ref 体配色.百O);
-    		花_ユリ_萼3CD = new ColorD(ref Col.Black, ref 体配色.百O);
-    		花_ユリ_花弁1CD = new ColorD(ref Col.Black, ref 体配色.百O);
-    		花_ユリ_蕊_雄蕊中後_葯CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		花_ユリ_蕊_雄蕊中後_雄蕊CD = new ColorD(ref Col.Black, ref 体配色.百O);
-    		花_ユリ_蕊_雌蕊_雌蕊CD = new ColorD(ref Col.Black, ref 体配色.植0O);
-    		花_ユリ_蕊_雌蕊_柱頭CD = new ColorD(ref Col.Black, ref 体配色.植0O);
-    		花_ユリ_蕊_雄蕊左2_葯CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		花_ユリ_蕊_雄蕊左2_雄蕊CD = new ColorD(ref Col.Black, ref 体配色.百O);
-    		花_ユリ_蕊_雄蕊右2_葯CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		花_ユリ_蕊_雄蕊右2_雄蕊CD = new ColorD(ref Col.Black, ref 体配色.百O);
-    		花_ユリ_蕊_雄蕊左1_雄蕊CD = new ColorD(ref Col.Black, ref 体配色.百O);
-    		花_ユリ_蕊_雄蕊左1_葯CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		花_ユリ_蕊_雄蕊右1_雄蕊CD = new ColorD(ref Col.Black, ref 体配色.百O);
-    		花_ユリ_蕊_雄蕊右1_葯CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		花_ユリ_蕊_雄蕊中前_雄蕊CD = new ColorD(ref Col.Black, ref 体配色.百O);
-    		花_ユリ_蕊_雄蕊中前_葯CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		花_ユリ_花弁2CD = new ColorD(ref Col.Black, ref 体配色.百O);
-    		花_ユリ_花弁3CD = new ColorD(ref Col.Black, ref 体配色.百O);
-    		花_ユリ_萼1_萼2CD = new ColorD(ref Col.Black, ref 体配色.百O);
-    		花_ユリ_萼1_萼1CD = new ColorD(ref Col.Black, ref 体配色.百O);
-    		萼_萼CD = new ColorD(ref Col.Black, ref 体配色.植1O);
+    		花_ユリ_萼2CD = new ColorD(ref ColorHelper.Black, ref 体配色.百O);
+    		花_ユリ_萼3CD = new ColorD(ref ColorHelper.Black, ref 体配色.百O);
+    		花_ユリ_花弁1CD = new ColorD(ref ColorHelper.Black, ref 体配色.百O);
+    		花_ユリ_蕊_雄蕊中後_葯CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		花_ユリ_蕊_雄蕊中後_雄蕊CD = new ColorD(ref ColorHelper.Black, ref 体配色.百O);
+    		花_ユリ_蕊_雌蕊_雌蕊CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0O);
+    		花_ユリ_蕊_雌蕊_柱頭CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0O);
+    		花_ユリ_蕊_雄蕊左2_葯CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		花_ユリ_蕊_雄蕊左2_雄蕊CD = new ColorD(ref ColorHelper.Black, ref 体配色.百O);
+    		花_ユリ_蕊_雄蕊右2_葯CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		花_ユリ_蕊_雄蕊右2_雄蕊CD = new ColorD(ref ColorHelper.Black, ref 体配色.百O);
+    		花_ユリ_蕊_雄蕊左1_雄蕊CD = new ColorD(ref ColorHelper.Black, ref 体配色.百O);
+    		花_ユリ_蕊_雄蕊左1_葯CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		花_ユリ_蕊_雄蕊右1_雄蕊CD = new ColorD(ref ColorHelper.Black, ref 体配色.百O);
+    		花_ユリ_蕊_雄蕊右1_葯CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		花_ユリ_蕊_雄蕊中前_雄蕊CD = new ColorD(ref ColorHelper.Black, ref 体配色.百O);
+    		花_ユリ_蕊_雄蕊中前_葯CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		花_ユリ_花弁2CD = new ColorD(ref ColorHelper.Black, ref 体配色.百O);
+    		花_ユリ_花弁3CD = new ColorD(ref ColorHelper.Black, ref 体配色.百O);
+    		花_ユリ_萼1_萼2CD = new ColorD(ref ColorHelper.Black, ref 体配色.百O);
+    		花_ユリ_萼1_萼1CD = new ColorD(ref ColorHelper.Black, ref 体配色.百O);
+    		萼_萼CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
     	}
 
     	private void 配色T0(BodyColorSet 体配色)
     	{
-    		花_ユリ_萼2CD = new ColorD(ref Col.Black, ref 体配色.百O);
-    		花_ユリ_萼3CD = new ColorD(ref Col.Black, ref 体配色.百O);
-    		花_ユリ_花弁1CD = new ColorD(ref Col.Black, ref 体配色.百O);
-    		花_ユリ_蕊_雄蕊中後_葯CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		花_ユリ_蕊_雄蕊中後_雄蕊CD = new ColorD(ref Col.Black, ref 体配色.百O);
-    		花_ユリ_蕊_雌蕊_雌蕊CD = new ColorD(ref Col.Black, ref 体配色.植0O);
-    		花_ユリ_蕊_雌蕊_柱頭CD = new ColorD(ref Col.Black, ref 体配色.植0O);
-    		花_ユリ_蕊_雄蕊左2_葯CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		花_ユリ_蕊_雄蕊左2_雄蕊CD = new ColorD(ref Col.Black, ref 体配色.百O);
-    		花_ユリ_蕊_雄蕊右2_葯CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		花_ユリ_蕊_雄蕊右2_雄蕊CD = new ColorD(ref Col.Black, ref 体配色.百O);
-    		花_ユリ_蕊_雄蕊左1_雄蕊CD = new ColorD(ref Col.Black, ref 体配色.百O);
-    		花_ユリ_蕊_雄蕊左1_葯CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		花_ユリ_蕊_雄蕊右1_雄蕊CD = new ColorD(ref Col.Black, ref 体配色.百O);
-    		花_ユリ_蕊_雄蕊右1_葯CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		花_ユリ_蕊_雄蕊中前_雄蕊CD = new ColorD(ref Col.Black, ref 体配色.百O);
-    		花_ユリ_蕊_雄蕊中前_葯CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		花_ユリ_花弁2CD = new ColorD(ref Col.Black, ref 体配色.百O);
-    		花_ユリ_花弁3CD = new ColorD(ref Col.Black, ref 体配色.百O);
-    		花_ユリ_萼1_萼2CD = new ColorD(ref Col.Black, ref 体配色.百O);
-    		花_ユリ_萼1_萼1CD = new ColorD(ref Col.Black, ref 体配色.百O);
-    		萼_萼CD = new ColorD(ref Col.Black, ref 体配色.植1O);
+    		花_ユリ_萼2CD = new ColorD(ref ColorHelper.Black, ref 体配色.百O);
+    		花_ユリ_萼3CD = new ColorD(ref ColorHelper.Black, ref 体配色.百O);
+    		花_ユリ_花弁1CD = new ColorD(ref ColorHelper.Black, ref 体配色.百O);
+    		花_ユリ_蕊_雄蕊中後_葯CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		花_ユリ_蕊_雄蕊中後_雄蕊CD = new ColorD(ref ColorHelper.Black, ref 体配色.百O);
+    		花_ユリ_蕊_雌蕊_雌蕊CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0O);
+    		花_ユリ_蕊_雌蕊_柱頭CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0O);
+    		花_ユリ_蕊_雄蕊左2_葯CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		花_ユリ_蕊_雄蕊左2_雄蕊CD = new ColorD(ref ColorHelper.Black, ref 体配色.百O);
+    		花_ユリ_蕊_雄蕊右2_葯CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		花_ユリ_蕊_雄蕊右2_雄蕊CD = new ColorD(ref ColorHelper.Black, ref 体配色.百O);
+    		花_ユリ_蕊_雄蕊左1_雄蕊CD = new ColorD(ref ColorHelper.Black, ref 体配色.百O);
+    		花_ユリ_蕊_雄蕊左1_葯CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		花_ユリ_蕊_雄蕊右1_雄蕊CD = new ColorD(ref ColorHelper.Black, ref 体配色.百O);
+    		花_ユリ_蕊_雄蕊右1_葯CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		花_ユリ_蕊_雄蕊中前_雄蕊CD = new ColorD(ref ColorHelper.Black, ref 体配色.百O);
+    		花_ユリ_蕊_雄蕊中前_葯CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		花_ユリ_花弁2CD = new ColorD(ref ColorHelper.Black, ref 体配色.百O);
+    		花_ユリ_花弁3CD = new ColorD(ref ColorHelper.Black, ref 体配色.百O);
+    		花_ユリ_萼1_萼2CD = new ColorD(ref ColorHelper.Black, ref 体配色.百O);
+    		花_ユリ_萼1_萼1CD = new ColorD(ref ColorHelper.Black, ref 体配色.百O);
+    		萼_萼CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
     	}
 
     	private void 配色T1(BodyColorSet 体配色)
     	{
-    		花_ユリ_萼2CD = new ColorD(ref Col.Black, ref 体配色.百O);
-    		花_ユリ_萼3CD = new ColorD(ref Col.Black, ref 体配色.百O);
-    		花_ユリ_花弁1CD = new ColorD(ref Col.Black, ref 体配色.百O);
-    		花_ユリ_蕊_雄蕊中後_葯CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		花_ユリ_蕊_雄蕊中後_雄蕊CD = new ColorD(ref Col.Black, ref 体配色.百O);
-    		花_ユリ_蕊_雌蕊_雌蕊CD = new ColorD(ref Col.Black, ref 体配色.植0O);
-    		花_ユリ_蕊_雌蕊_柱頭CD = new ColorD(ref Col.Black, ref 体配色.植0O);
-    		花_ユリ_蕊_雄蕊左2_葯CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		花_ユリ_蕊_雄蕊左2_雄蕊CD = new ColorD(ref Col.Black, ref 体配色.百O);
-    		花_ユリ_蕊_雄蕊右2_葯CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		花_ユリ_蕊_雄蕊右2_雄蕊CD = new ColorD(ref Col.Black, ref 体配色.百O);
-    		花_ユリ_蕊_雄蕊左1_雄蕊CD = new ColorD(ref Col.Black, ref 体配色.百O);
-    		花_ユリ_蕊_雄蕊左1_葯CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		花_ユリ_蕊_雄蕊右1_雄蕊CD = new ColorD(ref Col.Black, ref 体配色.百O);
-    		花_ユリ_蕊_雄蕊右1_葯CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		花_ユリ_蕊_雄蕊中前_雄蕊CD = new ColorD(ref Col.Black, ref 体配色.百O);
-    		花_ユリ_蕊_雄蕊中前_葯CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		花_ユリ_花弁2CD = new ColorD(ref Col.Black, ref 体配色.百O);
-    		花_ユリ_花弁3CD = new ColorD(ref Col.Black, ref 体配色.百O);
-    		花_ユリ_萼1_萼2CD = new ColorD(ref Col.Black, ref 体配色.百O);
-    		花_ユリ_萼1_萼1CD = new ColorD(ref Col.Black, ref 体配色.百O);
-    		萼_萼CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		花_ユリ_萼2CD = new ColorD(ref ColorHelper.Black, ref 体配色.百O);
+    		花_ユリ_萼3CD = new ColorD(ref ColorHelper.Black, ref 体配色.百O);
+    		花_ユリ_花弁1CD = new ColorD(ref ColorHelper.Black, ref 体配色.百O);
+    		花_ユリ_蕊_雄蕊中後_葯CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		花_ユリ_蕊_雄蕊中後_雄蕊CD = new ColorD(ref ColorHelper.Black, ref 体配色.百O);
+    		花_ユリ_蕊_雌蕊_雌蕊CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0O);
+    		花_ユリ_蕊_雌蕊_柱頭CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0O);
+    		花_ユリ_蕊_雄蕊左2_葯CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		花_ユリ_蕊_雄蕊左2_雄蕊CD = new ColorD(ref ColorHelper.Black, ref 体配色.百O);
+    		花_ユリ_蕊_雄蕊右2_葯CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		花_ユリ_蕊_雄蕊右2_雄蕊CD = new ColorD(ref ColorHelper.Black, ref 体配色.百O);
+    		花_ユリ_蕊_雄蕊左1_雄蕊CD = new ColorD(ref ColorHelper.Black, ref 体配色.百O);
+    		花_ユリ_蕊_雄蕊左1_葯CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		花_ユリ_蕊_雄蕊右1_雄蕊CD = new ColorD(ref ColorHelper.Black, ref 体配色.百O);
+    		花_ユリ_蕊_雄蕊右1_葯CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		花_ユリ_蕊_雄蕊中前_雄蕊CD = new ColorD(ref ColorHelper.Black, ref 体配色.百O);
+    		花_ユリ_蕊_雄蕊中前_葯CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		花_ユリ_花弁2CD = new ColorD(ref ColorHelper.Black, ref 体配色.百O);
+    		花_ユリ_花弁3CD = new ColorD(ref ColorHelper.Black, ref 体配色.百O);
+    		花_ユリ_萼1_萼2CD = new ColorD(ref ColorHelper.Black, ref 体配色.百O);
+    		花_ユリ_萼1_萼1CD = new ColorD(ref ColorHelper.Black, ref 体配色.百O);
+    		萼_萼CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
     	}
     }
 }

@@ -289,12 +289,12 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		皿1CD = new ColorD(ref Col.Black, ref 体配色.歯);
-    		皿2CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		甲殻_甲殻4CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		甲殻_甲殻3CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		甲殻_甲殻2CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		甲殻_甲殻1CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
+    		皿1CD = new ColorD(ref ColorHelper.Black, ref 体配色.歯);
+    		皿2CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		甲殻_甲殻4CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		甲殻_甲殻3CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		甲殻_甲殻2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		甲殻_甲殻1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
     	}
     }
 }

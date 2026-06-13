@@ -265,8 +265,8 @@ namespace SlaveMatrix
     	private void 配色N0(BodyColorSet 体配色)
     	{
     		下地CD = new ColorD();
-    		染み_染み2CD = new ColorD(ref Col.Empty, ref 体配色.染み);
-    		染み_染み1CD = new ColorD(ref Col.Empty, ref 体配色.染み);
+    		染み_染み2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.染み);
+    		染み_染み1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.染み);
     	}
 
     	public void 配色(クロスB色 配色)

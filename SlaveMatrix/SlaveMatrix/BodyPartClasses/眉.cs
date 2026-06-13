@@ -232,7 +232,7 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		眉CD = new ColorD(ref Col.Black, ref 体配色.眉O);
+    		眉CD = new ColorD(ref ColorHelper.Black, ref 体配色.眉O);
     		眉間CD = new ColorD(ref 体配色.薄線, ref 体配色.人肌O);
     	}
     }

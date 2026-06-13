@@ -948,26 +948,26 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		尾0CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		尾1CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		尾2CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		尾3CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		尾4CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		尾5CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		尾6CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		尾7CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		尾8CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		尾9CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		尾10CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		尾11CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		尾12CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		尾13CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		尾14CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		尾15CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		尾16CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		尾17CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		先端_先CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		先端_尾CD = new ColorD(ref Col.Black, ref 体配色.体0O);
+    		尾0CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		尾1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		尾2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		尾3CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		尾4CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		尾5CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		尾6CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		尾7CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		尾8CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		尾9CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		尾10CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		尾11CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		尾12CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		尾13CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		尾14CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		尾15CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		尾16CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		尾17CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		先端_先CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		先端_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
     		輪_革CD = new ColorD();
     		輪_金具1CD = new ColorD();
     		輪_金具2CD = new ColorD();
@@ -979,7 +979,7 @@ namespace SlaveMatrix
     	private void 配色T0(BodyColorSet 体配色)
     	{
     		this.配色T(0, "尾", ref 体配色.体0O, ref 体配色.刺青O);
-    		先端_先CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		先端_先CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
     		輪_革CD = new ColorD();
     		輪_金具1CD = new ColorD();
     		輪_金具2CD = new ColorD();
@@ -991,7 +991,7 @@ namespace SlaveMatrix
     	private void 配色T1(BodyColorSet 体配色)
     	{
     		this.配色T(1, "尾", ref 体配色.体0O, ref 体配色.刺青O);
-    		先端_先CD = new ColorD(ref Col.Black, ref 体配色.体0O);
+    		先端_先CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
     		輪_革CD = new ColorD();
     		輪_金具1CD = new ColorD();
     		輪_金具2CD = new ColorD();

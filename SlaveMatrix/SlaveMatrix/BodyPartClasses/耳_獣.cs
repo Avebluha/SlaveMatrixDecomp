@@ -370,9 +370,9 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		耳CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		耳線1CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		耳線2CD = new ColorD(ref Col.Black, ref Color2.Empty);
+    		耳CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		耳線1CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		耳線2CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
     	}
     }
 }

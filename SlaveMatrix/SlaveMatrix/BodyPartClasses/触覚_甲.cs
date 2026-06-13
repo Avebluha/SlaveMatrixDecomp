@@ -452,17 +452,17 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		節0CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節1CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節2CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節3CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節4CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節5CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節6CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節7CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節8CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節9CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節10CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
+    		節0CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節3CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節4CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節5CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節6CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節7CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節8CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節9CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節10CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
     	}
 
     	private void 配色T0(BodyColorSet 体配色)

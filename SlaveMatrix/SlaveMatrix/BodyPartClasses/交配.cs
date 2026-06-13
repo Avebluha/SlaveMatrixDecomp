@@ -1561,12 +1561,12 @@ namespace SlaveMatrix
     					select e)
     				{
     					Color color = (Color)item5.GetValue(体色2);
-    					if (color != Col.Empty)
+    					if (color != ColorHelper.Empty)
     					{
     						if (item5.Name == "人肌")
     						{
     							color = Color.FromArgb(color.A, 255, 255, 255);
-    							Col.GetLimitSkin(ref color, out color);
+    							ColorHelper.GetLimitSkin(ref color, out color);
     							item5.SetValue(体色2, color);
     						}
     						else if (item5.Name.Contains("目") || item5.Name.Contains("眼") || item5.Name.Contains("秘石") || item5.Name.Contains("コア"))
@@ -1591,12 +1591,12 @@ namespace SlaveMatrix
     					select e)
     				{
     					Color color = (Color)item6.GetValue(体色2);
-    					if (color != Col.Empty)
+    					if (color != ColorHelper.Empty)
     					{
     						if (item6.Name == "人肌")
     						{
     							color = Color.FromArgb(color.A, 0, 0, 0);
-    							Col.GetLimitSkin(ref color, out color);
+    							ColorHelper.GetLimitSkin(ref color, out color);
     							item6.SetValue(体色2, color);
     						}
     						else if (item6.Name.Contains("目") || item6.Name.Contains("眼") || item6.Name.Contains("秘石") || item6.Name.Contains("コア"))
@@ -1625,18 +1625,18 @@ namespace SlaveMatrix
     					select e)
     				{
     					Color color = (Color)item7.GetValue(体色2);
-    					if (color != Col.Empty)
+    					if (color != ColorHelper.Empty)
     					{
     						if (item7.Name == "人肌")
     						{
     							color = Color.FromArgb(color.A, GetVal(color.R, num), GetVal(color.G, num2), GetVal(color.B, num3));
-    							Col.GetLimitSkin(ref color, out color);
+    							ColorHelper.GetLimitSkin(ref color, out color);
     							item7.SetValue(体色2, color);
     						}
     						else
     						{
     							color = Color.FromArgb(color.A, GetVal(color.R, num), GetVal(color.G, num2), GetVal(color.B, num3));
-    							Col.GetLimit(ref color, out color);
+    							ColorHelper.GetLimit(ref color, out color);
     							item7.SetValue(体色2, color);
     						}
     					}

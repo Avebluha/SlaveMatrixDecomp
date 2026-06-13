@@ -1499,19 +1499,19 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		Col.GetGrad(ref Col.Pink, out var ret);
-    		軸CD = new ColorD(ref Col.Black, ref ret);
-    		玉境界CD = new ColorD(ref Col.Black, ref ret);
-    		玉1CD = new ColorD(ref Col.Black, ref ret);
-    		玉2CD = new ColorD(ref Col.Black, ref ret);
-    		玉3CD = new ColorD(ref Col.Black, ref ret);
-    		玉4CD = new ColorD(ref Col.Black, ref ret);
-    		玉5CD = new ColorD(ref Col.Black, ref ret);
-    		玉6CD = new ColorD(ref Col.Black, ref ret);
-    		玉7CD = new ColorD(ref Col.Black, ref ret);
-    		輪上CD = new ColorD(ref Col.Black, ref ret);
-    		輪上境界CD = new ColorD(ref Col.Black, ref ret);
-    		輪下CD = new ColorD(ref Col.Black, ref ret);
+    		ColorHelper.GetGrad(ref ColorHelper.Pink, out var ret);
+    		軸CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		玉境界CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		玉1CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		玉2CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		玉3CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		玉4CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		玉5CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		玉6CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		玉7CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		輪上CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		輪上境界CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		輪下CD = new ColorD(ref ColorHelper.Black, ref ret);
     	}
     }
 }

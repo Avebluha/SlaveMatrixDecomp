@@ -207,14 +207,14 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		脇CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		筋肉CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
+    		脇CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		筋肉CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
     	}
 
     	private void 配色H0(BodyColorSet 体配色)
     	{
-    		脇CD = new ColorD(ref Col.Black, ref 体配色.柄O);
-    		筋肉CD = new ColorD(ref Col.Black, ref 体配色.柄O);
+    		脇CD = new ColorD(ref ColorHelper.Black, ref 体配色.柄O);
+    		筋肉CD = new ColorD(ref ColorHelper.Black, ref 体配色.柄O);
     	}
     }
 }

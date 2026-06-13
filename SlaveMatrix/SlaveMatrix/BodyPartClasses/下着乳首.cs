@@ -246,13 +246,13 @@ namespace SlaveMatrix
     	private void 配色N0(BodyColorSet 体配色)
     	{
     		乳首CD = new ColorD();
-    		染み2CD = new ColorD(ref Col.Empty, ref 体配色.染み);
-    		染み1CD = new ColorD(ref Col.Empty, ref 体配色.染み);
+    		染み2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.染み);
+    		染み1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.染み);
     	}
 
     	public void 配色(Color2 配色)
     	{
-    		乳首CD.線 = Col.Black;
+    		乳首CD.線 = ColorHelper.Black;
     		乳首CD.色 = 配色;
     		X0Y0_乳首CP.Setting();
     	}

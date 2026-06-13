@@ -140,7 +140,7 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		Col.Alpha(ref 体配色.粘膜, 160, out var ret);
+    		ColorHelper.Alpha(ref 体配色.粘膜, 160, out var ret);
     		膣基CD = new ColorD(ref 体配色.粘膜線, ref ret);
     	}
     }

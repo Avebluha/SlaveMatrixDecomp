@@ -4106,8 +4106,8 @@ namespace SlaveMatrix
     		結び紐右_結び目CD = new ColorD();
     		リボン_リボンCD = new ColorD();
     		リボン_結び目CD = new ColorD();
-    		染み_染み2CD = new ColorD(ref Col.Empty, ref 体配色.染み);
-    		染み_染み1CD = new ColorD(ref Col.Empty, ref 体配色.染み);
+    		染み_染み2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.染み);
+    		染み_染み1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.染み);
     	}
 
     	public void 配色(ノーマルB色 配色)

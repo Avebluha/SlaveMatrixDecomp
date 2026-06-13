@@ -496,17 +496,17 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		Col.Alpha(ref 体配色.甲1O, 128, out var ret);
-    		後翅_後翅根_後翅CD = new ColorD(ref Col.Black, ref ret);
-    		後翅_後翅根_翅脈1CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		後翅_後翅根_翅脈2CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		後翅_後翅根_翅脈3CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		後翅_後翅根_翅脈4CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		後翅_後翅先_後翅CD = new ColorD(ref Col.Black, ref 後翅_後翅根_後翅CD.c2);
-    		後翅_後翅先_翅脈1CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		後翅_後翅先_翅脈2CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		後翅_後翅先_翅脈3CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		後翅_後翅先_翅脈4CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
+    		ColorHelper.Alpha(ref 体配色.甲1O, 128, out var ret);
+    		後翅_後翅根_後翅CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		後翅_後翅根_翅脈1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		後翅_後翅根_翅脈2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		後翅_後翅根_翅脈3CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		後翅_後翅根_翅脈4CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		後翅_後翅先_後翅CD = new ColorD(ref ColorHelper.Black, ref 後翅_後翅根_後翅CD.c2);
+    		後翅_後翅先_翅脈1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		後翅_後翅先_翅脈2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		後翅_後翅先_翅脈3CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		後翅_後翅先_翅脈4CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
     	}
     }
 }

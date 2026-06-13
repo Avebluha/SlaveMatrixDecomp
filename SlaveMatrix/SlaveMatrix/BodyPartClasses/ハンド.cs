@@ -6731,54 +6731,54 @@ namespace SlaveMatrix
 
     	private void 配色N0(主人公配色 体配色)
     	{
-    		親指CD = new ColorD(ref Col.Black, ref 体配色.肌色);
-    		手CD = new ColorD(ref Col.Black, ref 体配色.肌色);
-    		小指CD = new ColorD(ref Col.Black, ref 体配色.肌色);
-    		薬指CD = new ColorD(ref Col.Black, ref 体配色.肌色);
-    		中指CD = new ColorD(ref Col.Black, ref 体配色.肌色);
-    		人指CD = new ColorD(ref Col.Black, ref 体配色.肌色);
-    		呪印_輪1_輪外CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		呪印_輪1_輪内CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		呪印_輪2_輪外CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		呪印_輪2_輪内CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		呪印_輪3_輪外CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		呪印_輪3_輪内CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		呪印_鎖1CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		呪印_鎖2CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		呪印_鎖3CD = new ColorD(ref Col.Black, ref 体配色.刺青);
+    		親指CD = new ColorD(ref ColorHelper.Black, ref 体配色.肌色);
+    		手CD = new ColorD(ref ColorHelper.Black, ref 体配色.肌色);
+    		小指CD = new ColorD(ref ColorHelper.Black, ref 体配色.肌色);
+    		薬指CD = new ColorD(ref ColorHelper.Black, ref 体配色.肌色);
+    		中指CD = new ColorD(ref ColorHelper.Black, ref 体配色.肌色);
+    		人指CD = new ColorD(ref ColorHelper.Black, ref 体配色.肌色);
+    		呪印_輪1_輪外CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		呪印_輪1_輪内CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		呪印_輪2_輪外CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		呪印_輪2_輪内CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		呪印_輪3_輪外CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		呪印_輪3_輪内CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		呪印_鎖1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		呪印_鎖2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		呪印_鎖3CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
     	}
 
     	public void 再配色(主人公配色 体配色)
     	{
-    		親指CD.線 = Col.Black;
+    		親指CD.線 = ColorHelper.Black;
     		親指CD.色 = 体配色.肌色;
-    		手CD.線 = Col.Black;
+    		手CD.線 = ColorHelper.Black;
     		手CD.色 = 体配色.肌色;
-    		小指CD.線 = Col.Black;
+    		小指CD.線 = ColorHelper.Black;
     		小指CD.色 = 体配色.肌色;
-    		薬指CD.線 = Col.Black;
+    		薬指CD.線 = ColorHelper.Black;
     		薬指CD.色 = 体配色.肌色;
-    		中指CD.線 = Col.Black;
+    		中指CD.線 = ColorHelper.Black;
     		中指CD.色 = 体配色.肌色;
-    		人指CD.線 = Col.Black;
+    		人指CD.線 = ColorHelper.Black;
     		人指CD.色 = 体配色.肌色;
-    		呪印_輪1_輪外CD.線 = Col.Black;
+    		呪印_輪1_輪外CD.線 = ColorHelper.Black;
     		呪印_輪1_輪外CD.色 = 体配色.刺青;
-    		呪印_輪1_輪内CD.線 = Col.Black;
+    		呪印_輪1_輪内CD.線 = ColorHelper.Black;
     		呪印_輪1_輪内CD.色 = 体配色.刺青;
-    		呪印_輪2_輪外CD.線 = Col.Black;
+    		呪印_輪2_輪外CD.線 = ColorHelper.Black;
     		呪印_輪2_輪外CD.色 = 体配色.刺青;
-    		呪印_輪2_輪内CD.線 = Col.Black;
+    		呪印_輪2_輪内CD.線 = ColorHelper.Black;
     		呪印_輪2_輪内CD.色 = 体配色.刺青;
-    		呪印_輪3_輪外CD.線 = Col.Black;
+    		呪印_輪3_輪外CD.線 = ColorHelper.Black;
     		呪印_輪3_輪外CD.色 = 体配色.刺青;
-    		呪印_輪3_輪内CD.線 = Col.Black;
+    		呪印_輪3_輪内CD.線 = ColorHelper.Black;
     		呪印_輪3_輪内CD.色 = 体配色.刺青;
-    		呪印_鎖1CD.線 = Col.Black;
+    		呪印_鎖1CD.線 = ColorHelper.Black;
     		呪印_鎖1CD.色 = 体配色.刺青;
-    		呪印_鎖2CD.線 = Col.Black;
+    		呪印_鎖2CD.線 = ColorHelper.Black;
     		呪印_鎖2CD.色 = 体配色.刺青;
-    		呪印_鎖3CD.線 = Col.Black;
+    		呪印_鎖3CD.線 = ColorHelper.Black;
     		呪印_鎖3CD.色 = 体配色.刺青;
     		X0Y0_親指CP.Setting();
     		X0Y0_手CP.Setting();

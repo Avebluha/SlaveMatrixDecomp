@@ -28,9 +28,9 @@ namespace SlaveMatrix
             shapePartT.OP.AddRange(new CurveOutline[1] { ShapeHelper.GetSquare() });
             shapePartT.OP.ScalingXY(shapePartT.OP.GetCenter(), 0.87, 0.23);
             shapePartT.Closed = true;
-            shapePartT.TextColor = Col.White;
-            shapePartT.BrushColor = Color.FromArgb(160, Col.Black);
-            shapePartT.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
+            shapePartT.TextColor = ColorHelper.White;
+            shapePartT.BrushColor = Color.FromArgb(160, ColorHelper.Black);
+            shapePartT.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
             shapePartT.HitColor = med.GetUniqueColor();
             shapePartT.StringFormat.Alignment = StringAlignment.Center;
             shapePartT.StringFormat.LineAlignment = StringAlignment.Center;
@@ -45,9 +45,9 @@ namespace SlaveMatrix
             shapePartT.OP.AddRange(new CurveOutline[1] { ShapeHelper.Get正方形() });
             shapePartT.OP.ScalingY(shapePartT.OP.GetCenter(), 0.47);
             shapePartT.Closed = true;
-            shapePartT.TextColor = Col.White;
-            shapePartT.BrushColor = Color.FromArgb(160, Col.Black);
-            shapePartT.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
+            shapePartT.TextColor = ColorHelper.White;
+            shapePartT.BrushColor = Color.FromArgb(160, ColorHelper.Black);
+            shapePartT.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
             shapePartT.HitColor = Med.GetUniqueColor(); //still not sure what this is for...
             shapePartT.StringFormat.Alignment = StringAlignment.Center;
             shapePartT.StringFormat.LineAlignment = StringAlignment.Center;
@@ -63,9 +63,9 @@ namespace SlaveMatrix
             shapePartT4.OP.AddRange(new CurveOutline[1] { ShapeHelper.Get正方形() });
             shapePartT4.OP.ScalingXY(shapePartT4.OP.GetCenter(), 0.87, 0.23);
             shapePartT4.Closed = true;
-            shapePartT4.TextColor = Col.White; 
-            shapePartT4.BrushColor = Color.FromArgb(160, Col.Black);
-            shapePartT4.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
+            shapePartT4.TextColor = ColorHelper.White; 
+            shapePartT4.BrushColor = Color.FromArgb(160, ColorHelper.Black);
+            shapePartT4.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
             shapePartT4.HitColor = Med.GetUniqueColor(); // what are you for?
             shapePartT4.StringFormat.Alignment = StringAlignment.Center;
             shapePartT4.StringFormat.LineAlignment = StringAlignment.Center;
@@ -86,9 +86,9 @@ namespace SlaveMatrix
             shapePartT.OP.ScalingY(shapePartT.OP.GetCenter(), 0.47);
             shapePartT.OP.Rotation(shapePartT.OP.GetCenter(), -26.0);
             shapePartT.Closed = true;
-            shapePartT.TextColor = Col.White;
-            shapePartT.BrushColor = Color.FromArgb(160, Col.Black);
-            shapePartT.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
+            shapePartT.TextColor = ColorHelper.White;
+            shapePartT.BrushColor = Color.FromArgb(160, ColorHelper.Black);
+            shapePartT.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
             shapePartT.HitColor = med.GetUniqueColor();
             shapePartT.StringFormat.Alignment = StringAlignment.Center;
             shapePartT.StringFormat.LineAlignment = StringAlignment.Center;
@@ -103,10 +103,10 @@ namespace SlaveMatrix
                 0.25,
                 new Font("MS Gothic", 1f),
                 0.09,
-                Col.White,
-                Col.Empty,
-                Col.Empty,
-                Col.Empty,
+                ColorHelper.White,
+                ColorHelper.Empty,
+                ColorHelper.Empty,
+                ColorHelper.Empty,
                 acts
             );
         }
@@ -121,10 +121,10 @@ namespace SlaveMatrix
                     new Font("", 1f),
                     0.07,
                     text,
-                    Col.White,
-                    Col.Empty,
-                    Col.Empty,
-                    Col.Empty
+                    ColorHelper.White,
+                    ColorHelper.Empty,
+                    ColorHelper.Empty,
+                    ColorHelper.Empty
             );
         }
     }
@@ -213,7 +213,7 @@ namespace SlaveMatrix
     		DrawBuffer = new RenderArea(Med, Hit: true);
 
     		BlackBackground = new RenderArea(Med, Hit: true);
-    		BlackBackground.Clear(Col.Black);
+    		BlackBackground.Clear(ColorHelper.Black);
 
     		BasementBackground = new RenderArea(Med, Hit: true);
     		BasementBackground.DisplayGraphics.DrawImage(new Bitmap(new MemoryStream(Resources.dangeon01_ex2)), BasementBackground.DisplayLayer.GetRect());
@@ -227,10 +227,10 @@ namespace SlaveMatrix
                 0.25, 
                 new Font("MS Gothic", 1f), 
                 0.11, 
-                Col.White,
-                Col.Empty, 
-                Col.Black,
-                Col.Empty,
+                ColorHelper.White,
+                ColorHelper.Empty, 
+                ColorHelper.Black,
+                ColorHelper.Empty,
                 Enumerable.Repeat(new TA(new string('A', 15), delegate{}), 10).ToArray()
             );
     		SaveData.SetHitColor(Med);
@@ -283,7 +283,7 @@ namespace SlaveMatrix
                     //TODO fix?
                     //Sounds.操作.Play();
     				Med.Mode = "Title";
-    				Color HitColor4 = Col.Empty;
+    				Color HitColor4 = ColorHelper.Empty;
     				dbs.Move(ref HitColor4);
     				ip.選択肢表示 = false;
     			};
@@ -293,7 +293,7 @@ namespace SlaveMatrix
                     //Sounds.操作.Play();
     				ip.TextIm = tb;
     				ip.MaiShow = sb;
-    				Color HitColor3 = Col.Empty;
+    				Color HitColor3 = ColorHelper.Empty;
     				dbs.Move(ref HitColor3);
     				ip.選択肢表示 = false;
     			};
@@ -314,7 +314,7 @@ namespace SlaveMatrix
     			SaveData.bs["0"].Dra = false;
     			save = true;
     			SetSLlv(Med);
-    			Color HitColor2 = Col.Empty;
+    			Color HitColor2 = ColorHelper.Empty;
     			SaveData.Move(ref HitColor2);
     			SDShow = true;
     			ip.SubInfoIm = "RCl:" + GameText.戻る;
@@ -334,7 +334,7 @@ namespace SlaveMatrix
     			save = false;
     			title = false;
     			SetSLlv(Med);
-    			Color HitColor = Col.Empty;
+    			Color HitColor = ColorHelper.Empty;
     			SaveData.Move(ref HitColor);
     			SDShow = true;
     			ip.SubInfoIm = "RCl:" + GameText.戻る;
@@ -352,12 +352,12 @@ namespace SlaveMatrix
                 new Font("MS Gothic", 1f), 
                 0.08, 
                 " ", 
-                Col.White, 
-                Col.Black, 
-                Color.FromArgb(160, Col.Black), 
+                ColorHelper.White, 
+                ColorHelper.Black, 
+                Color.FromArgb(160, ColorHelper.Black), 
                 19.0, 
                 Dis: false, 
-                Col.White, 
+                ColorHelper.White, 
                 delegate{}
             );
     		ViolaTextBubble.SetHitColor(Med);
@@ -369,9 +369,9 @@ namespace SlaveMatrix
                 new Font("MS Gothic", 1f), 
                 0.08, 
                 " ", 
-                Col.White, 
-                Col.Black, 
-                Color.FromArgb(160, Col.Black), 
+                ColorHelper.White, 
+                ColorHelper.Black, 
+                Color.FromArgb(160, ColorHelper.Black), 
                 19.0, 
                 Dis: true
             );
@@ -389,10 +389,10 @@ namespace SlaveMatrix
                 new Font("MS Gothic", 1f), 
                 0.085, 
                 "No Slave", 
-                Col.White, 
-                Col.Black, 
+                ColorHelper.White, 
+                ColorHelper.Black, 
                 ip.MaiB.BrushColor, 
-                Col.Black
+                ColorHelper.Black
             );
 
             return new Dictionary<string, Module>
@@ -1170,7 +1170,7 @@ namespace SlaveMatrix
     		{
     			Setting = delegate
     			{
-    				DrawBuffer.Clear(Col.Black);
+    				DrawBuffer.Clear(ColorHelper.Black);
     				DrawBuffer.Draw(label.ShapePartT);
     				Med.SceneFader.DrawStart(BlackBackground);
     				Med.SceneFader.DrawEnd(DrawBuffer);
@@ -1290,7 +1290,7 @@ namespace SlaveMatrix
                     ip.SubShow = true;
                     ip.Sub2Show = false;
                     ll = false;
-                    DrawBuffer.Clear(Col.Black);
+                    DrawBuffer.Clear(ColorHelper.Black);
                     DrawBuffer.Draw(label.ShapePartT);
                     Med.SceneFader.DrawStart(BlackBackground);
                     Med.SceneFader.DrawEnd(DrawBuffer);
@@ -1459,10 +1459,10 @@ namespace SlaveMatrix
 
             メインフォーム描画 = delegate (RenderArea a, FPS FPS)
             {
-                Med.HitGraphics.Clear(Col.Transparent);
+                Med.HitGraphics.Clear(ColorHelper.Transparent);
                 if (a.HitGraphics != null)
                 {
-                    a.HitGraphics.Clear(Col.Transparent);
+                    a.HitGraphics.Clear(ColorHelper.Transparent);
                 }
                 a.Draw(BasementBackground);
                 if (TrainingTarget != null)
@@ -1602,7 +1602,7 @@ namespace SlaveMatrix
                         bs["ボタン6"].Dra = !Sta.GameData.初事務所フラグ;
                         bs["ボタン7"].Dra = !Sta.GameData.初事務所フラグ && Sta.GameData.Slaves.Count((Unit e) => e != null) > 0;
                         si.Set(bre: false);
-                        Color HitColor = Col.Empty;
+                        Color HitColor = ColorHelper.Empty;
                         ip.Up(ref HitColor);
                         //Sounds.OPBGM.Stop();
                         //Sounds.日常BGM.Play();
@@ -1681,10 +1681,10 @@ namespace SlaveMatrix
             調教描画 = delegate (RenderArea a, FPS FPS)
             {
                 Player.UI.Mots.Drive(FPS);
-                Med.HitGraphics.Clear(Col.Transparent);
+                Med.HitGraphics.Clear(ColorHelper.Transparent);
                 if (a.HitGraphics != null)
                 {
-                    a.HitGraphics.Clear(Col.Transparent);
+                    a.HitGraphics.Clear(ColorHelper.Transparent);
                 }
                 a.Draw(TrainingBackground);
                 TrainingTarget.Draw(a, FPS);
@@ -1810,10 +1810,10 @@ namespace SlaveMatrix
     	{
     		中継描画 = delegate(RenderArea a, FPS FPS)
     		{
-    			Med.HitGraphics.Clear(Col.Transparent);
+    			Med.HitGraphics.Clear(ColorHelper.Transparent);
     			if (a.HitGraphics != null)
     			{
-    				a.HitGraphics.Clear(Col.Transparent);
+    				a.HitGraphics.Clear(ColorHelper.Transparent);
     			}
     			a.Draw(BlackBackground);
     			ip.Draw(a, FPS);
@@ -1913,7 +1913,7 @@ namespace SlaveMatrix
                     ip.SubShow = true;
                     ip.Sub2Show = false;
                     Med.CursorShow();
-                    Color HitColor = Col.Empty;
+                    Color HitColor = ColorHelper.Empty;
                     Player.UI.調教終了.Up(ref HitColor);
                     Player.Result1();
                     if (Player.UI.強制拘束)
@@ -2010,7 +2010,7 @@ namespace SlaveMatrix
                     Enumerable.Repeat(new TA("No Slave".PadLeft(15, ' '), delegate { }), 15).ToArray()
                 );
 
-    			Color lv初期縁色 = Col.Black;
+    			Color lv初期縁色 = ColorHelper.Black;
     			Action lv縁色初期化 = delegate
     			{
     				foreach (But item in lv.bs.EnumBut)
@@ -2119,7 +2119,7 @@ namespace SlaveMatrix
     			};
     			lv.SetHitColor(Med);
 
-                Color bs初期縁色 = Col.Black;
+                Color bs初期縁色 = ColorHelper.Black;
                 Action bs縁色初期化 = delegate
                 {
                     foreach (But item2 in bs.EnumBut.Skip(1).Take(3))
@@ -2127,7 +2127,7 @@ namespace SlaveMatrix
                         item2.PartGroup.Values.First().ToParT().PenColor = bs初期縁色;
                     }
                 };
-                Color f初期縁色 = Col.Black;
+                Color f初期縁色 = ColorHelper.Black;
                 Action f縁色初期化 = delegate
                 {
                     foreach (But item3 in bs.EnumBut.Skip(10))
@@ -2704,7 +2704,7 @@ namespace SlaveMatrix
     				}
     				ip.選択yAct = delegate
     				{
-    					Color HitColor4 = Col.Empty;
+    					Color HitColor4 = ColorHelper.Empty;
     					bs.Move(ref HitColor4);
     					ulong price = Sta.GameData.TrainingTarget.GetPrice();
     					Sta.GameData.所持金 = Sta.GameData.所持金.overflow_add(price);
@@ -2741,7 +2741,7 @@ namespace SlaveMatrix
     				ip.選択nAct = delegate
     				{
     					//Sounds.操作.Play();
-    					Color HitColor3 = Col.Empty;
+    					Color HitColor3 = ColorHelper.Empty;
     					bs.Move(ref HitColor3);
     					ip.Mai2Show = false;
     					if (Sta.GameData.TrainingTarget == null)
@@ -2767,7 +2767,7 @@ namespace SlaveMatrix
     				ip.TextIm = GameText.保守以外の全ての奴隷を売却しますか;
     				ip.選択yAct = delegate
     				{
-    					Color HitColor2 = Col.Empty;
+    					Color HitColor2 = ColorHelper.Empty;
     					bs.Move(ref HitColor2);
     					ip.Mai2Show = false;
     					Sta.GameData.所持金 = Sta.GameData.所持金.overflow_add(p);
@@ -2810,7 +2810,7 @@ namespace SlaveMatrix
     				ip.選択nAct = delegate
     				{
     					//Sounds.操作.Play();
-    					Color HitColor = Col.Empty;
+    					Color HitColor = ColorHelper.Empty;
     					bs.Move(ref HitColor);
     					ip.Mai2Show = false;
     					ip.TextIm = tb;
@@ -2831,9 +2831,9 @@ namespace SlaveMatrix
     			shapePartT13.BasePointBase = shapePartT13.OP.GetCenter();
     			shapePartT13.OP.ScalingXY(shapePartT13.BasePointBase, 0.3);
     			shapePartT13.Closed = true;
-    			shapePartT13.TextColor = Col.White;
-    			shapePartT13.BrushColor = Color.FromArgb(160, Col.Black);
-    			shapePartT13.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
+    			shapePartT13.TextColor = ColorHelper.White;
+    			shapePartT13.BrushColor = Color.FromArgb(160, ColorHelper.Black);
+    			shapePartT13.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
     			shapePartT13.StringFormat.Alignment = StringAlignment.Center;
     			shapePartT13.StringFormat.LineAlignment = StringAlignment.Center;
     			shapePartT13.PenColor = Color.Red;
@@ -2858,9 +2858,9 @@ namespace SlaveMatrix
     			shapePartT14.BasePointBase = shapePartT14.OP.GetCenter();
     			shapePartT14.OP.ScalingXY(shapePartT14.BasePointBase, 0.3);
     			shapePartT14.Closed = true;
-    			shapePartT14.TextColor = Col.White;
-    			shapePartT14.BrushColor = Color.FromArgb(160, Col.Black);
-    			shapePartT14.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
+    			shapePartT14.TextColor = ColorHelper.White;
+    			shapePartT14.BrushColor = Color.FromArgb(160, ColorHelper.Black);
+    			shapePartT14.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
     			shapePartT14.StringFormat.Alignment = StringAlignment.Center;
     			shapePartT14.StringFormat.LineAlignment = StringAlignment.Center;
     			bs.Add("ボタン2", new But1(shapePartT14, delegate(But b)
@@ -2882,9 +2882,9 @@ namespace SlaveMatrix
     			shapePartT15.BasePointBase = shapePartT15.OP.GetCenter();
     			shapePartT15.OP.ScalingXY(shapePartT15.BasePointBase, 0.3);
     			shapePartT15.Closed = true;
-    			shapePartT15.TextColor = Col.White;
-    			shapePartT15.BrushColor = Color.FromArgb(160, Col.Black);
-    			shapePartT15.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
+    			shapePartT15.TextColor = ColorHelper.White;
+    			shapePartT15.BrushColor = Color.FromArgb(160, ColorHelper.Black);
+    			shapePartT15.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
     			shapePartT15.StringFormat.Alignment = StringAlignment.Center;
     			shapePartT15.StringFormat.LineAlignment = StringAlignment.Center;
     			bs.Add("ボタン3", new But1(shapePartT15, delegate(But b)
@@ -2906,9 +2906,9 @@ namespace SlaveMatrix
     			shapePartT16.BasePointBase = shapePartT16.OP.GetCenter();
     			shapePartT16.OP.ScalingXY(shapePartT16.BasePointBase, 0.3);
     			shapePartT16.Closed = true;
-    			shapePartT16.TextColor = Col.White;
-    			shapePartT16.BrushColor = Color.FromArgb(160, Col.Black);
-    			shapePartT16.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
+    			shapePartT16.TextColor = ColorHelper.White;
+    			shapePartT16.BrushColor = Color.FromArgb(160, ColorHelper.Black);
+    			shapePartT16.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
     			shapePartT16.StringFormat.Alignment = StringAlignment.Center;
     			shapePartT16.StringFormat.LineAlignment = StringAlignment.Center;
     			bs.Add("ボタン4", new But1(shapePartT16, delegate(But b)
@@ -2930,9 +2930,9 @@ namespace SlaveMatrix
     			shapePartT17.BasePointBase = shapePartT17.OP.GetCenter();
     			shapePartT17.OP.ScalingXY(shapePartT17.BasePointBase, 0.3);
     			shapePartT17.Closed = true;
-    			shapePartT17.TextColor = Col.White;
-    			shapePartT17.BrushColor = Color.FromArgb(160, Col.Black);
-    			shapePartT17.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
+    			shapePartT17.TextColor = ColorHelper.White;
+    			shapePartT17.BrushColor = Color.FromArgb(160, ColorHelper.Black);
+    			shapePartT17.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
     			shapePartT17.StringFormat.Alignment = StringAlignment.Center;
     			shapePartT17.StringFormat.LineAlignment = StringAlignment.Center;
     			bs.Add("ボタン5", new But1(shapePartT17, delegate(But b)
@@ -2954,9 +2954,9 @@ namespace SlaveMatrix
     			shapePartT18.BasePointBase = shapePartT18.OP.GetCenter();
     			shapePartT18.OP.ScalingXY(shapePartT18.BasePointBase, 0.3);
     			shapePartT18.Closed = true;
-    			shapePartT18.TextColor = Col.White;
-    			shapePartT18.BrushColor = Color.FromArgb(160, Col.Black);
-    			shapePartT18.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
+    			shapePartT18.TextColor = ColorHelper.White;
+    			shapePartT18.BrushColor = Color.FromArgb(160, ColorHelper.Black);
+    			shapePartT18.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
     			shapePartT18.StringFormat.Alignment = StringAlignment.Center;
     			shapePartT18.StringFormat.LineAlignment = StringAlignment.Center;
     			bs.Add("ボタン6", new But1(shapePartT18, delegate(But b)
@@ -2978,9 +2978,9 @@ namespace SlaveMatrix
     			shapePartT19.BasePointBase = shapePartT19.OP.GetCenter();
     			shapePartT19.OP.ScalingXY(shapePartT19.BasePointBase, 0.3);
     			shapePartT19.Closed = true;
-    			shapePartT19.TextColor = Col.White;
-    			shapePartT19.BrushColor = Color.FromArgb(160, Col.Black);
-    			shapePartT19.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
+    			shapePartT19.TextColor = ColorHelper.White;
+    			shapePartT19.BrushColor = Color.FromArgb(160, ColorHelper.Black);
+    			shapePartT19.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
     			shapePartT19.StringFormat.Alignment = StringAlignment.Center;
     			shapePartT19.StringFormat.LineAlignment = StringAlignment.Center;
     			bs.Add("ボタン7", new But1(shapePartT19, delegate(But b)
@@ -3002,9 +3002,9 @@ namespace SlaveMatrix
     			shapePartT20.BasePointBase = shapePartT20.OP.GetCenter();
     			shapePartT20.OP.ScalingXY(shapePartT20.BasePointBase, 0.3);
     			shapePartT20.Closed = true;
-    			shapePartT20.TextColor = Col.White;
-    			shapePartT20.BrushColor = Color.FromArgb(160, Col.Black);
-    			shapePartT20.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
+    			shapePartT20.TextColor = ColorHelper.White;
+    			shapePartT20.BrushColor = Color.FromArgb(160, ColorHelper.Black);
+    			shapePartT20.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
     			shapePartT20.StringFormat.Alignment = StringAlignment.Center;
     			shapePartT20.StringFormat.LineAlignment = StringAlignment.Center;
     			bs.Add("ボタン8", new But1(shapePartT20, delegate(But b)
@@ -3026,9 +3026,9 @@ namespace SlaveMatrix
     			shapePartT21.BasePointBase = shapePartT21.OP.GetCenter();
     			shapePartT21.OP.ScalingXY(shapePartT21.BasePointBase, 0.3);
     			shapePartT21.Closed = true;
-    			shapePartT21.TextColor = Col.White;
-    			shapePartT21.BrushColor = Color.FromArgb(160, Col.Black);
-    			shapePartT21.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
+    			shapePartT21.TextColor = ColorHelper.White;
+    			shapePartT21.BrushColor = Color.FromArgb(160, ColorHelper.Black);
+    			shapePartT21.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
     			shapePartT21.StringFormat.Alignment = StringAlignment.Center;
     			shapePartT21.StringFormat.LineAlignment = StringAlignment.Center;
     			bs.Add("ボタン9", new But1(shapePartT21, delegate(But b)
@@ -3266,10 +3266,10 @@ namespace SlaveMatrix
 
                 対象描画 = delegate (RenderArea a, FPS FPS)
                 {
-                    Med.HitGraphics.Clear(Col.Transparent);
+                    Med.HitGraphics.Clear(ColorHelper.Transparent);
                     if (a.HitGraphics != null)
                     {
-                        a.HitGraphics.Clear(Col.Transparent);
+                        a.HitGraphics.Clear(ColorHelper.Transparent);
                     }
                     a.Draw(BasementBackground);
                     if (TrainingTarget != null)
@@ -3307,7 +3307,7 @@ namespace SlaveMatrix
     	{
     		Character 祝福 = null;
     		bool d = false;
-    		Lab l = new Lab(DrawBuffer, "ラベル1", new Vector2D(ip.MaiB.Position.X, 0.026), 0.1, 1.0, new Font("MS Gothic", 1f), 0.085, "No blessing", Col.White, Col.Black, ip.MaiB.BrushColor, Col.Black);
+    		Lab l = new Lab(DrawBuffer, "ラベル1", new Vector2D(ip.MaiB.Position.X, 0.026), 0.1, 1.0, new Font("MS Gothic", 1f), 0.085, "No blessing", ColorHelper.White, ColorHelper.Black, ip.MaiB.BrushColor, ColorHelper.Black);
     		ButtonMap bs = new ButtonMap();
     		Action 祝福なし = delegate
     		{
@@ -3485,10 +3485,10 @@ namespace SlaveMatrix
 
             DrawBlessing = delegate (RenderArea a, FPS FPS)
             {
-                Med.HitGraphics.Clear(Col.Transparent);
+                Med.HitGraphics.Clear(ColorHelper.Transparent);
                 if (a.HitGraphics != null)
                 {
-                    a.HitGraphics.Clear(Col.Transparent);
+                    a.HitGraphics.Clear(ColorHelper.Transparent);
                 }
                 a.Draw(BasementBackground);
                 if (祝福 != null)
@@ -3648,9 +3648,9 @@ namespace SlaveMatrix
     		shapePartT.OP.ScalingY(shapePartT.OP.GetCenter(), 0.47);
     		shapePartT.OP.Rotation(shapePartT.OP.GetCenter(), -26.0);
     		shapePartT.Closed = true;
-    		shapePartT.TextColor = Col.White;
-    		shapePartT.BrushColor = Color.FromArgb(160, Col.Black);
-    		shapePartT.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
+    		shapePartT.TextColor = ColorHelper.White;
+    		shapePartT.BrushColor = Color.FromArgb(160, ColorHelper.Black);
+    		shapePartT.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
     		shapePartT.StringFormat.Alignment = StringAlignment.Center;
     		shapePartT.StringFormat.LineAlignment = StringAlignment.Center;
     		bs.Add("ボタン0", new But1(shapePartT, delegate
@@ -3671,9 +3671,9 @@ namespace SlaveMatrix
     		shapePartT2.OP.ScalingY(shapePartT2.OP.GetCenter(), 0.47);
     		shapePartT2.OP.Rotation(shapePartT2.OP.GetCenter(), -26.0);
     		shapePartT2.Closed = true;
-    		shapePartT2.TextColor = Col.White;
-    		shapePartT2.BrushColor = Color.FromArgb(160, Col.Black);
-    		shapePartT2.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
+    		shapePartT2.TextColor = ColorHelper.White;
+    		shapePartT2.BrushColor = Color.FromArgb(160, ColorHelper.Black);
+    		shapePartT2.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
     		shapePartT2.StringFormat.Alignment = StringAlignment.Center;
     		shapePartT2.StringFormat.LineAlignment = StringAlignment.Center;
     		bs.Add("ボタン1", new But1(shapePartT2, delegate
@@ -3691,9 +3691,9 @@ namespace SlaveMatrix
     		shapePartT3.OP.ScalingY(shapePartT3.OP.GetCenter(), 0.47);
     		shapePartT3.OP.Rotation(shapePartT3.OP.GetCenter(), -26.0);
     		shapePartT3.Closed = true;
-    		shapePartT3.TextColor = Col.White;
-    		shapePartT3.BrushColor = Color.FromArgb(160, Col.Black);
-    		shapePartT3.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
+    		shapePartT3.TextColor = ColorHelper.White;
+    		shapePartT3.BrushColor = Color.FromArgb(160, ColorHelper.Black);
+    		shapePartT3.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
     		shapePartT3.StringFormat.Alignment = StringAlignment.Center;
     		shapePartT3.StringFormat.LineAlignment = StringAlignment.Center;
     		bs.Add("ボタン2", new But1(shapePartT3, delegate
@@ -3711,9 +3711,9 @@ namespace SlaveMatrix
     		shapePartT4.OP.ScalingY(shapePartT4.OP.GetCenter(), 0.47);
     		shapePartT4.OP.Rotation(shapePartT4.OP.GetCenter(), -26.0);
     		shapePartT4.Closed = true;
-    		shapePartT4.TextColor = Col.White;
-    		shapePartT4.BrushColor = Color.FromArgb(160, Col.Black);
-    		shapePartT4.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
+    		shapePartT4.TextColor = ColorHelper.White;
+    		shapePartT4.BrushColor = Color.FromArgb(160, ColorHelper.Black);
+    		shapePartT4.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
     		shapePartT4.StringFormat.Alignment = StringAlignment.Center;
     		shapePartT4.StringFormat.LineAlignment = StringAlignment.Center;
     		bs.Add("ボタン3", new But1(shapePartT4, delegate
@@ -3874,7 +3874,7 @@ namespace SlaveMatrix
     		{
     			if (a.HitGraphics != null)
     			{
-    				a.HitGraphics.Clear(Col.Transparent);
+    				a.HitGraphics.Clear(ColorHelper.Transparent);
     			}
     			a.Draw(OfficeBackground);
     			Viola.Draw(a, FPS);
@@ -3920,9 +3920,9 @@ namespace SlaveMatrix
     		shapePartT2.OP.AddRange(new CurveOutline[1] { ShapeHelper.GetSquare() });
     		shapePartT2.OP.ScalingXY(shapePartT2.OP.GetCenter(), 0.3, 0.3);
     		shapePartT2.Closed = true;
-    		shapePartT2.TextColor = Col.White;
-    		shapePartT2.BrushColor = Color.FromArgb(160, Col.Black);
-    		shapePartT2.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
+    		shapePartT2.TextColor = ColorHelper.White;
+    		shapePartT2.BrushColor = Color.FromArgb(160, ColorHelper.Black);
+    		shapePartT2.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
     		shapePartT2.StringFormat.Alignment = StringAlignment.Center;
     		shapePartT2.StringFormat.LineAlignment = StringAlignment.Center;
     		bs.Add("nc", new But1(shapePartT2, delegate
@@ -3940,9 +3940,9 @@ namespace SlaveMatrix
     		shapePartT3.OP.AddRange(new CurveOutline[1] { ShapeHelper.GetSquare() });
     		shapePartT3.OP.ScalingXY(shapePartT3.OP.GetCenter(), 0.3, 0.3);
     		shapePartT3.Closed = true;
-    		shapePartT3.TextColor = Col.White;
-    		shapePartT3.BrushColor = Color.FromArgb(160, Col.Black);
-    		shapePartT3.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
+    		shapePartT3.TextColor = ColorHelper.White;
+    		shapePartT3.BrushColor = Color.FromArgb(160, ColorHelper.Black);
+    		shapePartT3.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
     		shapePartT3.StringFormat.Alignment = StringAlignment.Center;
     		shapePartT3.StringFormat.LineAlignment = StringAlignment.Center;
     		bs.Add("nm", new But1(shapePartT3, delegate
@@ -3969,9 +3969,9 @@ namespace SlaveMatrix
     		shapePartT4.OP.AddRange(new CurveOutline[1] { ShapeHelper.GetSquare() });
     		shapePartT4.OP.ScalingXY(shapePartT4.OP.GetCenter(), 0.3, 0.3);
     		shapePartT4.Closed = true;
-    		shapePartT4.TextColor = Col.White;
-    		shapePartT4.BrushColor = Color.FromArgb(160, Col.Black);
-    		shapePartT4.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
+    		shapePartT4.TextColor = ColorHelper.White;
+    		shapePartT4.BrushColor = Color.FromArgb(160, ColorHelper.Black);
+    		shapePartT4.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
     		shapePartT4.StringFormat.Alignment = StringAlignment.Center;
     		shapePartT4.StringFormat.LineAlignment = StringAlignment.Center;
     		bs.Add("n7", new But1(shapePartT4, delegate
@@ -3989,9 +3989,9 @@ namespace SlaveMatrix
     		shapePartT5.OP.AddRange(new CurveOutline[1] { ShapeHelper.GetSquare() });
     		shapePartT5.OP.ScalingXY(shapePartT5.OP.GetCenter(), 0.3, 0.3);
     		shapePartT5.Closed = true;
-    		shapePartT5.TextColor = Col.White;
-    		shapePartT5.BrushColor = Color.FromArgb(160, Col.Black);
-    		shapePartT5.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
+    		shapePartT5.TextColor = ColorHelper.White;
+    		shapePartT5.BrushColor = Color.FromArgb(160, ColorHelper.Black);
+    		shapePartT5.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
     		shapePartT5.StringFormat.Alignment = StringAlignment.Center;
     		shapePartT5.StringFormat.LineAlignment = StringAlignment.Center;
     		bs.Add("n8", new But1(shapePartT5, delegate
@@ -4009,9 +4009,9 @@ namespace SlaveMatrix
     		shapePartT6.OP.AddRange(new CurveOutline[1] { ShapeHelper.GetSquare() });
     		shapePartT6.OP.ScalingXY(shapePartT6.OP.GetCenter(), 0.3, 0.3);
     		shapePartT6.Closed = true;
-    		shapePartT6.TextColor = Col.White;
-    		shapePartT6.BrushColor = Color.FromArgb(160, Col.Black);
-    		shapePartT6.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
+    		shapePartT6.TextColor = ColorHelper.White;
+    		shapePartT6.BrushColor = Color.FromArgb(160, ColorHelper.Black);
+    		shapePartT6.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
     		shapePartT6.StringFormat.Alignment = StringAlignment.Center;
     		shapePartT6.StringFormat.LineAlignment = StringAlignment.Center;
     		bs.Add("n9", new But1(shapePartT6, delegate
@@ -4029,9 +4029,9 @@ namespace SlaveMatrix
     		shapePartT7.OP.AddRange(new CurveOutline[1] { ShapeHelper.GetSquare() });
     		shapePartT7.OP.ScalingXY(shapePartT7.OP.GetCenter(), 0.3, 0.3);
     		shapePartT7.Closed = true;
-    		shapePartT7.TextColor = Col.White;
-    		shapePartT7.BrushColor = Color.FromArgb(160, Col.Black);
-    		shapePartT7.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
+    		shapePartT7.TextColor = ColorHelper.White;
+    		shapePartT7.BrushColor = Color.FromArgb(160, ColorHelper.Black);
+    		shapePartT7.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
     		shapePartT7.StringFormat.Alignment = StringAlignment.Center;
     		shapePartT7.StringFormat.LineAlignment = StringAlignment.Center;
     		bs.Add("n4", new But1(shapePartT7, delegate
@@ -4049,9 +4049,9 @@ namespace SlaveMatrix
     		shapePartT8.OP.AddRange(new CurveOutline[1] { ShapeHelper.GetSquare() });
     		shapePartT8.OP.ScalingXY(shapePartT8.OP.GetCenter(), 0.3, 0.3);
     		shapePartT8.Closed = true;
-    		shapePartT8.TextColor = Col.White;
-    		shapePartT8.BrushColor = Color.FromArgb(160, Col.Black);
-    		shapePartT8.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
+    		shapePartT8.TextColor = ColorHelper.White;
+    		shapePartT8.BrushColor = Color.FromArgb(160, ColorHelper.Black);
+    		shapePartT8.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
     		shapePartT8.StringFormat.Alignment = StringAlignment.Center;
     		shapePartT8.StringFormat.LineAlignment = StringAlignment.Center;
     		bs.Add("n5", new But1(shapePartT8, delegate
@@ -4069,9 +4069,9 @@ namespace SlaveMatrix
     		shapePartT9.OP.AddRange(new CurveOutline[1] { ShapeHelper.GetSquare() });
     		shapePartT9.OP.ScalingXY(shapePartT9.OP.GetCenter(), 0.3, 0.3);
     		shapePartT9.Closed = true;
-    		shapePartT9.TextColor = Col.White;
-    		shapePartT9.BrushColor = Color.FromArgb(160, Col.Black);
-    		shapePartT9.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
+    		shapePartT9.TextColor = ColorHelper.White;
+    		shapePartT9.BrushColor = Color.FromArgb(160, ColorHelper.Black);
+    		shapePartT9.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
     		shapePartT9.StringFormat.Alignment = StringAlignment.Center;
     		shapePartT9.StringFormat.LineAlignment = StringAlignment.Center;
     		bs.Add("n6", new But1(shapePartT9, delegate
@@ -4089,9 +4089,9 @@ namespace SlaveMatrix
     		shapePartT10.OP.AddRange(new CurveOutline[1] { ShapeHelper.GetSquare() });
     		shapePartT10.OP.ScalingXY(shapePartT10.OP.GetCenter(), 0.3, 0.3);
     		shapePartT10.Closed = true;
-    		shapePartT10.TextColor = Col.White;
-    		shapePartT10.BrushColor = Color.FromArgb(160, Col.Black);
-    		shapePartT10.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
+    		shapePartT10.TextColor = ColorHelper.White;
+    		shapePartT10.BrushColor = Color.FromArgb(160, ColorHelper.Black);
+    		shapePartT10.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
     		shapePartT10.StringFormat.Alignment = StringAlignment.Center;
     		shapePartT10.StringFormat.LineAlignment = StringAlignment.Center;
     		bs.Add("n1", new But1(shapePartT10, delegate
@@ -4109,9 +4109,9 @@ namespace SlaveMatrix
     		shapePartT11.OP.AddRange(new CurveOutline[1] { ShapeHelper.GetSquare() });
     		shapePartT11.OP.ScalingXY(shapePartT11.OP.GetCenter(), 0.3, 0.3);
     		shapePartT11.Closed = true;
-    		shapePartT11.TextColor = Col.White;
-    		shapePartT11.BrushColor = Color.FromArgb(160, Col.Black);
-    		shapePartT11.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
+    		shapePartT11.TextColor = ColorHelper.White;
+    		shapePartT11.BrushColor = Color.FromArgb(160, ColorHelper.Black);
+    		shapePartT11.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
     		shapePartT11.StringFormat.Alignment = StringAlignment.Center;
     		shapePartT11.StringFormat.LineAlignment = StringAlignment.Center;
     		bs.Add("n2", new But1(shapePartT11, delegate
@@ -4129,9 +4129,9 @@ namespace SlaveMatrix
     		shapePartT12.OP.AddRange(new CurveOutline[1] { ShapeHelper.GetSquare() });
     		shapePartT12.OP.ScalingXY(shapePartT12.OP.GetCenter(), 0.3, 0.3);
     		shapePartT12.Closed = true;
-    		shapePartT12.TextColor = Col.White;
-    		shapePartT12.BrushColor = Color.FromArgb(160, Col.Black);
-    		shapePartT12.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
+    		shapePartT12.TextColor = ColorHelper.White;
+    		shapePartT12.BrushColor = Color.FromArgb(160, ColorHelper.Black);
+    		shapePartT12.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
     		shapePartT12.StringFormat.Alignment = StringAlignment.Center;
     		shapePartT12.StringFormat.LineAlignment = StringAlignment.Center;
     		bs.Add("n3", new But1(shapePartT12, delegate
@@ -4149,9 +4149,9 @@ namespace SlaveMatrix
     		shapePartT13.OP.AddRange(new CurveOutline[1] { ShapeHelper.GetSquare() });
     		shapePartT13.OP.ScalingXY(shapePartT13.OP.GetCenter(), 0.3, 0.3);
     		shapePartT13.Closed = true;
-    		shapePartT13.TextColor = Col.White;
-    		shapePartT13.BrushColor = Color.FromArgb(160, Col.Black);
-    		shapePartT13.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
+    		shapePartT13.TextColor = ColorHelper.White;
+    		shapePartT13.BrushColor = Color.FromArgb(160, ColorHelper.Black);
+    		shapePartT13.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
     		shapePartT13.StringFormat.Alignment = StringAlignment.Center;
     		shapePartT13.StringFormat.LineAlignment = StringAlignment.Center;
     		bs.Add("n0", new But1(shapePartT13, delegate
@@ -4169,9 +4169,9 @@ namespace SlaveMatrix
     		shapePartT14.OP.AddRange(new CurveOutline[1] { ShapeHelper.GetSquare() });
     		shapePartT14.OP.ScalingXY(shapePartT14.OP.GetCenter(), 0.3, 0.3);
     		shapePartT14.Closed = true;
-    		shapePartT14.TextColor = Col.White;
-    		shapePartT14.BrushColor = Color.FromArgb(160, Col.Black);
-    		shapePartT14.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
+    		shapePartT14.TextColor = ColorHelper.White;
+    		shapePartT14.BrushColor = Color.FromArgb(160, ColorHelper.Black);
+    		shapePartT14.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
     		shapePartT14.StringFormat.Alignment = StringAlignment.Center;
     		shapePartT14.StringFormat.LineAlignment = StringAlignment.Center;
     		bs.Add("nb", new But1(shapePartT14, delegate
@@ -4216,9 +4216,9 @@ namespace SlaveMatrix
     		shapePartT15.OP.AddRange(new CurveOutline[1] { ShapeHelper.GetSquare() });
     		shapePartT15.OP.ScalingXY(shapePartT15.OP.GetCenter(), 0.3, 0.3);
     		shapePartT15.Closed = true;
-    		shapePartT15.TextColor = Col.White;
-    		shapePartT15.BrushColor = Color.FromArgb(160, Col.Black);
-    		shapePartT15.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
+    		shapePartT15.TextColor = ColorHelper.White;
+    		shapePartT15.BrushColor = Color.FromArgb(160, ColorHelper.Black);
+    		shapePartT15.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
     		shapePartT15.StringFormat.Alignment = StringAlignment.Center;
     		shapePartT15.StringFormat.LineAlignment = StringAlignment.Center;
     		bs.Add("nr", new But1(shapePartT15, delegate
@@ -4380,10 +4380,10 @@ namespace SlaveMatrix
     		};
     		DrawDebt = delegate(RenderArea a, FPS FPS)
     		{
-    			Med.HitGraphics.Clear(Col.Transparent);
+    			Med.HitGraphics.Clear(ColorHelper.Transparent);
     			if (a.HitGraphics != null)
     			{
-    				a.HitGraphics.Clear(Col.Transparent);
+    				a.HitGraphics.Clear(ColorHelper.Transparent);
     			}
     			a.Draw(OfficeBackground);
     			Viola.Draw(a, FPS);
@@ -4427,9 +4427,9 @@ namespace SlaveMatrix
     		shapePartT.OP.ScalingY(shapePartT.OP.GetCenter(), 0.47);
     		shapePartT.OP.Rotation(shapePartT.OP.GetCenter(), -26.0);
     		shapePartT.Closed = true;
-    		shapePartT.TextColor = Col.White;
-    		shapePartT.BrushColor = Color.FromArgb(160, Col.Black);
-    		shapePartT.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
+    		shapePartT.TextColor = ColorHelper.White;
+    		shapePartT.BrushColor = Color.FromArgb(160, ColorHelper.Black);
+    		shapePartT.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
     		shapePartT.StringFormat.Alignment = StringAlignment.Center;
     		shapePartT.StringFormat.LineAlignment = StringAlignment.Center;
     		bs.Add("ボタン0", new But1(shapePartT, delegate
@@ -4454,9 +4454,9 @@ namespace SlaveMatrix
     		shapePartT2.OP.ScalingY(shapePartT2.OP.GetCenter(), 0.47);
     		shapePartT2.OP.Rotation(shapePartT2.OP.GetCenter(), -26.0);
     		shapePartT2.Closed = true;
-    		shapePartT2.TextColor = Col.White;
-    		shapePartT2.BrushColor = Color.FromArgb(160, Col.Black);
-    		shapePartT2.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
+    		shapePartT2.TextColor = ColorHelper.White;
+    		shapePartT2.BrushColor = Color.FromArgb(160, ColorHelper.Black);
+    		shapePartT2.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
     		shapePartT2.StringFormat.Alignment = StringAlignment.Center;
     		shapePartT2.StringFormat.LineAlignment = StringAlignment.Center;
     		shapePartT2.PenColor = Color.Red;
@@ -4475,9 +4475,9 @@ namespace SlaveMatrix
     		shapePartT3.OP.ScalingY(shapePartT3.OP.GetCenter(), 0.47);
     		shapePartT3.OP.Rotation(shapePartT3.OP.GetCenter(), -26.0);
     		shapePartT3.Closed = true;
-    		shapePartT3.TextColor = Col.White;
-    		shapePartT3.BrushColor = Color.FromArgb(160, Col.Black);
-    		shapePartT3.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
+    		shapePartT3.TextColor = ColorHelper.White;
+    		shapePartT3.BrushColor = Color.FromArgb(160, ColorHelper.Black);
+    		shapePartT3.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
     		shapePartT3.StringFormat.Alignment = StringAlignment.Center;
     		shapePartT3.StringFormat.LineAlignment = StringAlignment.Center;
     		bs.Add("ボタン2", new But1(shapePartT3, delegate
@@ -4485,7 +4485,7 @@ namespace SlaveMatrix
     			//Sounds.操作.Play();
     			Med.Mode = "ToolShop";
     		}));
-    		Color bs初期縁色 = Col.Black;
+    		Color bs初期縁色 = ColorHelper.Black;
     		Action bs縁色初期化 = delegate
     		{
     			foreach (But item in bs.EnumBut.Skip(3).Take(10))
@@ -4504,9 +4504,9 @@ namespace SlaveMatrix
     		shapePartT4.OP.AddRange(new CurveOutline[1] { ShapeHelper.GetSquare() });
     		shapePartT4.OP.ScalingY(shapePartT4.OP.GetCenter(), 0.5 * num);
     		shapePartT4.Closed = true;
-    		shapePartT4.TextColor = Col.White;
-    		shapePartT4.BrushColor = Color.FromArgb(160, Col.Black);
-    		shapePartT4.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
+    		shapePartT4.TextColor = ColorHelper.White;
+    		shapePartT4.BrushColor = Color.FromArgb(160, ColorHelper.Black);
+    		shapePartT4.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
     		shapePartT4.StringFormat.Alignment = StringAlignment.Center;
     		shapePartT4.StringFormat.LineAlignment = StringAlignment.Center;
     		shapePartT4.PenColor = Color.Red;
@@ -4530,9 +4530,9 @@ namespace SlaveMatrix
     		shapePartT5.OP.AddRange(new CurveOutline[1] { ShapeHelper.GetSquare() });
     		shapePartT5.OP.ScalingY(shapePartT5.OP.GetCenter(), 0.5 * num);
     		shapePartT5.Closed = true;
-    		shapePartT5.TextColor = Col.White;
-    		shapePartT5.BrushColor = Color.FromArgb(160, Col.Black);
-    		shapePartT5.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
+    		shapePartT5.TextColor = ColorHelper.White;
+    		shapePartT5.BrushColor = Color.FromArgb(160, ColorHelper.Black);
+    		shapePartT5.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
     		shapePartT5.StringFormat.Alignment = StringAlignment.Center;
     		shapePartT5.StringFormat.LineAlignment = StringAlignment.Center;
     		bs.Add("対象1", new But1(shapePartT5, delegate(But bu)
@@ -4551,9 +4551,9 @@ namespace SlaveMatrix
     		shapePartT6.OP.AddRange(new CurveOutline[1] { ShapeHelper.GetSquare() });
     		shapePartT6.OP.ScalingY(shapePartT6.OP.GetCenter(), 0.5 * num);
     		shapePartT6.Closed = true;
-    		shapePartT6.TextColor = Col.White;
-    		shapePartT6.BrushColor = Color.FromArgb(160, Col.Black);
-    		shapePartT6.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
+    		shapePartT6.TextColor = ColorHelper.White;
+    		shapePartT6.BrushColor = Color.FromArgb(160, ColorHelper.Black);
+    		shapePartT6.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
     		shapePartT6.StringFormat.Alignment = StringAlignment.Center;
     		shapePartT6.StringFormat.LineAlignment = StringAlignment.Center;
     		bs.Add("対象2", new But1(shapePartT6, delegate(But bu)
@@ -4572,9 +4572,9 @@ namespace SlaveMatrix
     		shapePartT7.OP.AddRange(new CurveOutline[1] { ShapeHelper.GetSquare() });
     		shapePartT7.OP.ScalingY(shapePartT7.OP.GetCenter(), 0.5 * num);
     		shapePartT7.Closed = true;
-    		shapePartT7.TextColor = Col.White;
-    		shapePartT7.BrushColor = Color.FromArgb(160, Col.Black);
-    		shapePartT7.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
+    		shapePartT7.TextColor = ColorHelper.White;
+    		shapePartT7.BrushColor = Color.FromArgb(160, ColorHelper.Black);
+    		shapePartT7.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
     		shapePartT7.StringFormat.Alignment = StringAlignment.Center;
     		shapePartT7.StringFormat.LineAlignment = StringAlignment.Center;
     		bs.Add("対象3", new But1(shapePartT7, delegate(But bu)
@@ -4593,9 +4593,9 @@ namespace SlaveMatrix
     		shapePartT8.OP.AddRange(new CurveOutline[1] { ShapeHelper.GetSquare() });
     		shapePartT8.OP.ScalingY(shapePartT8.OP.GetCenter(), 0.5 * num);
     		shapePartT8.Closed = true;
-    		shapePartT8.TextColor = Col.White;
-    		shapePartT8.BrushColor = Color.FromArgb(160, Col.Black);
-    		shapePartT8.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
+    		shapePartT8.TextColor = ColorHelper.White;
+    		shapePartT8.BrushColor = Color.FromArgb(160, ColorHelper.Black);
+    		shapePartT8.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
     		shapePartT8.StringFormat.Alignment = StringAlignment.Center;
     		shapePartT8.StringFormat.LineAlignment = StringAlignment.Center;
     		bs.Add("対象4", new But1(shapePartT8, delegate(But bu)
@@ -4614,9 +4614,9 @@ namespace SlaveMatrix
     		shapePartT9.OP.AddRange(new CurveOutline[1] { ShapeHelper.GetSquare() });
     		shapePartT9.OP.ScalingY(shapePartT9.OP.GetCenter(), 0.5 * num);
     		shapePartT9.Closed = true;
-    		shapePartT9.TextColor = Col.White;
-    		shapePartT9.BrushColor = Color.FromArgb(160, Col.Black);
-    		shapePartT9.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
+    		shapePartT9.TextColor = ColorHelper.White;
+    		shapePartT9.BrushColor = Color.FromArgb(160, ColorHelper.Black);
+    		shapePartT9.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
     		shapePartT9.StringFormat.Alignment = StringAlignment.Center;
     		shapePartT9.StringFormat.LineAlignment = StringAlignment.Center;
     		bs.Add("対象5", new But1(shapePartT9, delegate(But bu)
@@ -4635,9 +4635,9 @@ namespace SlaveMatrix
     		shapePartT10.OP.AddRange(new CurveOutline[1] { ShapeHelper.GetSquare() });
     		shapePartT10.OP.ScalingY(shapePartT10.OP.GetCenter(), 0.5 * num);
     		shapePartT10.Closed = true;
-    		shapePartT10.TextColor = Col.White;
-    		shapePartT10.BrushColor = Color.FromArgb(160, Col.Black);
-    		shapePartT10.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
+    		shapePartT10.TextColor = ColorHelper.White;
+    		shapePartT10.BrushColor = Color.FromArgb(160, ColorHelper.Black);
+    		shapePartT10.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
     		shapePartT10.StringFormat.Alignment = StringAlignment.Center;
     		shapePartT10.StringFormat.LineAlignment = StringAlignment.Center;
     		bs.Add("対象6", new But1(shapePartT10, delegate(But bu)
@@ -4656,9 +4656,9 @@ namespace SlaveMatrix
     		shapePartT11.OP.AddRange(new CurveOutline[1] { ShapeHelper.GetSquare() });
     		shapePartT11.OP.ScalingY(shapePartT11.OP.GetCenter(), 0.5 * num);
     		shapePartT11.Closed = true;
-    		shapePartT11.TextColor = Col.White;
-    		shapePartT11.BrushColor = Color.FromArgb(160, Col.Black);
-    		shapePartT11.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
+    		shapePartT11.TextColor = ColorHelper.White;
+    		shapePartT11.BrushColor = Color.FromArgb(160, ColorHelper.Black);
+    		shapePartT11.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
     		shapePartT11.StringFormat.Alignment = StringAlignment.Center;
     		shapePartT11.StringFormat.LineAlignment = StringAlignment.Center;
     		bs.Add("対象7", new But1(shapePartT11, delegate(But bu)
@@ -4677,9 +4677,9 @@ namespace SlaveMatrix
     		shapePartT12.OP.AddRange(new CurveOutline[1] { ShapeHelper.GetSquare() });
     		shapePartT12.OP.ScalingY(shapePartT12.OP.GetCenter(), 0.5 * num);
     		shapePartT12.Closed = true;
-    		shapePartT12.TextColor = Col.White;
-    		shapePartT12.BrushColor = Color.FromArgb(160, Col.Black);
-    		shapePartT12.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
+    		shapePartT12.TextColor = ColorHelper.White;
+    		shapePartT12.BrushColor = Color.FromArgb(160, ColorHelper.Black);
+    		shapePartT12.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
     		shapePartT12.StringFormat.Alignment = StringAlignment.Center;
     		shapePartT12.StringFormat.LineAlignment = StringAlignment.Center;
     		bs.Add("対象8", new But1(shapePartT12, delegate(But bu)
@@ -4698,9 +4698,9 @@ namespace SlaveMatrix
     		shapePartT13.OP.AddRange(new CurveOutline[1] { ShapeHelper.GetSquare() });
     		shapePartT13.OP.ScalingY(shapePartT13.OP.GetCenter(), 0.5 * num);
     		shapePartT13.Closed = true;
-    		shapePartT13.TextColor = Col.White;
-    		shapePartT13.BrushColor = Color.FromArgb(160, Col.Black);
-    		shapePartT13.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
+    		shapePartT13.TextColor = ColorHelper.White;
+    		shapePartT13.BrushColor = Color.FromArgb(160, ColorHelper.Black);
+    		shapePartT13.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
     		shapePartT13.StringFormat.Alignment = StringAlignment.Center;
     		shapePartT13.StringFormat.LineAlignment = StringAlignment.Center;
     		bs.Add("対象9", new But1(shapePartT13, delegate(But bu)
@@ -4854,9 +4854,9 @@ namespace SlaveMatrix
     		shapePartT14.OP.AddRange(new CurveOutline[1] { ShapeHelper.GetSquare() });
     		shapePartT14.OP.ScalingY(shapePartT14.OP.GetCenter(), 0.5 * num);
     		shapePartT14.Closed = true;
-    		shapePartT14.TextColor = Col.White;
-    		shapePartT14.BrushColor = Color.FromArgb(160, Col.Black);
-    		shapePartT14.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
+    		shapePartT14.TextColor = ColorHelper.White;
+    		shapePartT14.BrushColor = Color.FromArgb(160, ColorHelper.Black);
+    		shapePartT14.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
     		shapePartT14.StringFormat.Alignment = StringAlignment.Center;
     		shapePartT14.StringFormat.LineAlignment = StringAlignment.Center;
     		bs.Add("変更", new But1(shapePartT14, delegate
@@ -4880,9 +4880,9 @@ namespace SlaveMatrix
     		shapePartT15.OP.AddRange(new CurveOutline[1] { ShapeHelper.GetSquare() });
     		shapePartT15.OP.ScalingY(shapePartT15.OP.GetCenter(), 0.5 * num);
     		shapePartT15.Closed = true;
-    		shapePartT15.TextColor = Col.White;
-    		shapePartT15.BrushColor = Color.FromArgb(160, Col.Black);
-    		shapePartT15.ShadBrush = new SolidBrush(Color.FromArgb(64, Col.Black));
+    		shapePartT15.TextColor = ColorHelper.White;
+    		shapePartT15.BrushColor = Color.FromArgb(160, ColorHelper.Black);
+    		shapePartT15.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
     		shapePartT15.StringFormat.Alignment = StringAlignment.Center;
     		shapePartT15.StringFormat.LineAlignment = StringAlignment.Center;
     		ulong 買値;
@@ -5059,10 +5059,10 @@ namespace SlaveMatrix
     		};
     		DrawSlaveShop = delegate(RenderArea a, FPS FPS)
     		{
-    			Med.HitGraphics.Clear(Col.Transparent);
+    			Med.HitGraphics.Clear(ColorHelper.Transparent);
     			if (a.HitGraphics != null)
     			{
-    				a.HitGraphics.Clear(Col.Transparent);
+    				a.HitGraphics.Clear(ColorHelper.Transparent);
     			}
     			a.Draw(OfficeBackground);
     			if (u != null)
@@ -5157,7 +5157,7 @@ namespace SlaveMatrix
     		};
     		
             
-            lv = new ListView(DrawBuffer, DrawBuffer.GetPosition(0.01, 0.03), 0.5, new Font("MS Gothic", 1f), 0.07, Col.White, Col.Empty, Color.FromArgb(160, Col.Black), Col.Black, new TA(GameText.ﾃﾞｨﾙﾄﾞﾊﾞｲﾌﾞ + " 35,000,000", delegate(But b)
+            lv = new ListView(DrawBuffer, DrawBuffer.GetPosition(0.01, 0.03), 0.5, new Font("MS Gothic", 1f), 0.07, ColorHelper.White, ColorHelper.Empty, Color.FromArgb(160, ColorHelper.Black), ColorHelper.Black, new TA(GameText.ﾃﾞｨﾙﾄﾞﾊﾞｲﾌﾞ + " 35,000,000", delegate(But b)
     		{
     			buy(b, 0, 35000000uL);
     		}), new TA(GameText.ﾉｰﾏﾙﾊﾞｲﾌﾞ + "   40,000,000", delegate(But b)
@@ -5426,10 +5426,10 @@ namespace SlaveMatrix
     		};
     		DrawToolShop = delegate(RenderArea a, FPS FPS)
     		{
-    			Med.HitGraphics.Clear(Col.Transparent);
+    			Med.HitGraphics.Clear(ColorHelper.Transparent);
     			if (a.HitGraphics != null)
     			{
-    				a.HitGraphics.Clear(Col.Transparent);
+    				a.HitGraphics.Clear(ColorHelper.Transparent);
     			}
     			a.Draw(OfficeBackground);
     			lv.Draw(a);
@@ -5519,10 +5519,10 @@ namespace SlaveMatrix
     			{
     				TrainingTarget.Motions.Drive(FPS);
     			}
-    			Med.HitGraphics.Clear(Col.Transparent);
+    			Med.HitGraphics.Clear(ColorHelper.Transparent);
     			if (a.HitGraphics != null)
     			{
-    				a.HitGraphics.Clear(Col.Transparent);
+    				a.HitGraphics.Clear(ColorHelper.Transparent);
     			}
     			a.Draw(BlackBackground);
     			ip.Draw(a, FPS);
@@ -5587,76 +5587,76 @@ namespace SlaveMatrix
     			}
     		});
     		LabelMap ls = new LabelMap(Med, DrawBuffer);
-    		ls.Add("ラベル0", DrawBuffer.GetPosition(new Vector2D(num2 + 0.19, num3 - 0.1)), 0.1, 2.5, new Font("MS Gothic", 1f), 0.085, " ", Col.White, Col.Black, ip.MaiB.BrushColor, Col.Black, Input: false);
-    		ls.Add("ラベル1", DrawBuffer.GetPosition(new Vector2D(num2 + 0.19, num3 + num * 0.0 + 0.005)), 0.1, 1.0, new Font("MS Gothic", 1f), 0.085, GameText.肌の色, Col.White, Col.Black, ip.MaiB.BrushColor, Col.Black, Input: false);
-    		ls.Add("ラベル2", DrawBuffer.GetPosition(new Vector2D(num2 + 0.19, num3 + num * 0.0 + 0.045)), 0.1, 1.0, new Font("MS Gothic", 1f), 0.085, "H:", Col.White, Col.Black, ip.MaiB.BrushColor, Col.Black, Input: false);
-    		ls.Add("ラベル3", DrawBuffer.GetPosition(new Vector2D(num2 + 0.19, num3 + num * 0.0 + 0.086)), 0.1, 1.0, new Font("MS Gothic", 1f), 0.085, "S:", Col.White, Col.Black, ip.MaiB.BrushColor, Col.Black, Input: false);
-    		ls.Add("ラベル4", DrawBuffer.GetPosition(new Vector2D(num2 + 0.19, num3 + num * 0.0 + 0.127)), 0.1, 1.0, new Font("MS Gothic", 1f), 0.085, "V:", Col.White, Col.Black, ip.MaiB.BrushColor, Col.Black, Input: false);
-    		ls.Add("ラベル5", DrawBuffer.GetPosition(new Vector2D(num2 + 0.19, num3 + num * 1.0 + 0.005)), 0.1, 1.0, new Font("MS Gothic", 1f), 0.085, GameText.髪の色, Col.White, Col.Black, ip.MaiB.BrushColor, Col.Black, Input: false);
-    		ls.Add("ラベル6", DrawBuffer.GetPosition(new Vector2D(num2 + 0.19, num3 + num * 1.0 + 0.045)), 0.1, 1.0, new Font("MS Gothic", 1f), 0.085, "H:", Col.White, Col.Black, ip.MaiB.BrushColor, Col.Black, Input: false);
-    		ls.Add("ラベル7", DrawBuffer.GetPosition(new Vector2D(num2 + 0.19, num3 + num * 1.0 + 0.086)), 0.1, 1.0, new Font("MS Gothic", 1f), 0.085, "S:", Col.White, Col.Black, ip.MaiB.BrushColor, Col.Black, Input: false);
-    		ls.Add("ラベル8", DrawBuffer.GetPosition(new Vector2D(num2 + 0.19, num3 + num * 1.0 + 0.127)), 0.1, 1.0, new Font("MS Gothic", 1f), 0.085, "V:", Col.White, Col.Black, ip.MaiB.BrushColor, Col.Black, Input: false);
-    		ls.Add("ラベル9", DrawBuffer.GetPosition(new Vector2D(num2 + 0.19, num3 + num * 2.0 + 0.005)), 0.1, 1.0, new Font("MS Gothic", 1f), 0.085, GameText.瞳の色, Col.White, Col.Black, ip.MaiB.BrushColor, Col.Black, Input: false);
-    		ls.Add("ラベル10", DrawBuffer.GetPosition(new Vector2D(num2 + 0.19, num3 + num * 2.0 + 0.045)), 0.1, 1.0, new Font("MS Gothic", 1f), 0.085, "H:", Col.White, Col.Black, ip.MaiB.BrushColor, Col.Black, Input: false);
-    		ls.Add("ラベル11", DrawBuffer.GetPosition(new Vector2D(num2 + 0.19, num3 + num * 2.0 + 0.086)), 0.1, 1.0, new Font("MS Gothic", 1f), 0.085, "S:", Col.White, Col.Black, ip.MaiB.BrushColor, Col.Black, Input: false);
-    		ls.Add("ラベル12", DrawBuffer.GetPosition(new Vector2D(num2 + 0.19, num3 + num * 2.0 + 0.127)), 0.1, 1.0, new Font("MS Gothic", 1f), 0.085, "V:", Col.White, Col.Black, ip.MaiB.BrushColor, Col.Black, Input: false);
-    		ls.Add("ラベル13", DrawBuffer.GetPosition(new Vector2D(num2 + 0.19, num3 + num * 3.0 + 0.005)), 0.1, 1.0, new Font("MS Gothic", 1f), 0.085, GameText.体格, Col.White, Col.Black, ip.MaiB.BrushColor, Col.Black, Input: false);
-    		ls.Add("ラベル14", DrawBuffer.GetPosition(new Vector2D(num2 + 0.19, num3 + num * 3.0 + 0.045)), 0.1, 1.0, new Font("MS Gothic", 1f), 0.085, "H:", Col.White, Col.Black, ip.MaiB.BrushColor, Col.Black, Input: false);
-    		ls.Add("ラベル15", DrawBuffer.GetPosition(new Vector2D(num2 + 0.19, num3 + num * 3.0 + 0.086)), 0.1, 1.0, new Font("MS Gothic", 1f), 0.085, "W:", Col.White, Col.Black, ip.MaiB.BrushColor, Col.Black, Input: false);
-    		Gau H肌 = new Gau("H肌", DrawBuffer.GetPosition(new Vector2D(num2 + 0.532, num3 + num * 0.0 + 0.06)), DrawBuffer.Size, 0.6, 0.03, 0.02, Open.Rig, _2DGAMELIB.Range.ZeroOne, DrawBuffer.DisplayUnitScale, Color.Transparent, Color.Transparent, Color.Transparent, Color.Transparent, Col.Black, Knob: true);
-    		H肌.Gauge.PenColor = Col.White;
-    		H肌.Frame1.PenColor = Col.White;
-    		H肌.Knob.PenColor = Col.White;
+    		ls.Add("ラベル0", DrawBuffer.GetPosition(new Vector2D(num2 + 0.19, num3 - 0.1)), 0.1, 2.5, new Font("MS Gothic", 1f), 0.085, " ", ColorHelper.White, ColorHelper.Black, ip.MaiB.BrushColor, ColorHelper.Black, Input: false);
+    		ls.Add("ラベル1", DrawBuffer.GetPosition(new Vector2D(num2 + 0.19, num3 + num * 0.0 + 0.005)), 0.1, 1.0, new Font("MS Gothic", 1f), 0.085, GameText.肌の色, ColorHelper.White, ColorHelper.Black, ip.MaiB.BrushColor, ColorHelper.Black, Input: false);
+    		ls.Add("ラベル2", DrawBuffer.GetPosition(new Vector2D(num2 + 0.19, num3 + num * 0.0 + 0.045)), 0.1, 1.0, new Font("MS Gothic", 1f), 0.085, "H:", ColorHelper.White, ColorHelper.Black, ip.MaiB.BrushColor, ColorHelper.Black, Input: false);
+    		ls.Add("ラベル3", DrawBuffer.GetPosition(new Vector2D(num2 + 0.19, num3 + num * 0.0 + 0.086)), 0.1, 1.0, new Font("MS Gothic", 1f), 0.085, "S:", ColorHelper.White, ColorHelper.Black, ip.MaiB.BrushColor, ColorHelper.Black, Input: false);
+    		ls.Add("ラベル4", DrawBuffer.GetPosition(new Vector2D(num2 + 0.19, num3 + num * 0.0 + 0.127)), 0.1, 1.0, new Font("MS Gothic", 1f), 0.085, "V:", ColorHelper.White, ColorHelper.Black, ip.MaiB.BrushColor, ColorHelper.Black, Input: false);
+    		ls.Add("ラベル5", DrawBuffer.GetPosition(new Vector2D(num2 + 0.19, num3 + num * 1.0 + 0.005)), 0.1, 1.0, new Font("MS Gothic", 1f), 0.085, GameText.髪の色, ColorHelper.White, ColorHelper.Black, ip.MaiB.BrushColor, ColorHelper.Black, Input: false);
+    		ls.Add("ラベル6", DrawBuffer.GetPosition(new Vector2D(num2 + 0.19, num3 + num * 1.0 + 0.045)), 0.1, 1.0, new Font("MS Gothic", 1f), 0.085, "H:", ColorHelper.White, ColorHelper.Black, ip.MaiB.BrushColor, ColorHelper.Black, Input: false);
+    		ls.Add("ラベル7", DrawBuffer.GetPosition(new Vector2D(num2 + 0.19, num3 + num * 1.0 + 0.086)), 0.1, 1.0, new Font("MS Gothic", 1f), 0.085, "S:", ColorHelper.White, ColorHelper.Black, ip.MaiB.BrushColor, ColorHelper.Black, Input: false);
+    		ls.Add("ラベル8", DrawBuffer.GetPosition(new Vector2D(num2 + 0.19, num3 + num * 1.0 + 0.127)), 0.1, 1.0, new Font("MS Gothic", 1f), 0.085, "V:", ColorHelper.White, ColorHelper.Black, ip.MaiB.BrushColor, ColorHelper.Black, Input: false);
+    		ls.Add("ラベル9", DrawBuffer.GetPosition(new Vector2D(num2 + 0.19, num3 + num * 2.0 + 0.005)), 0.1, 1.0, new Font("MS Gothic", 1f), 0.085, GameText.瞳の色, ColorHelper.White, ColorHelper.Black, ip.MaiB.BrushColor, ColorHelper.Black, Input: false);
+    		ls.Add("ラベル10", DrawBuffer.GetPosition(new Vector2D(num2 + 0.19, num3 + num * 2.0 + 0.045)), 0.1, 1.0, new Font("MS Gothic", 1f), 0.085, "H:", ColorHelper.White, ColorHelper.Black, ip.MaiB.BrushColor, ColorHelper.Black, Input: false);
+    		ls.Add("ラベル11", DrawBuffer.GetPosition(new Vector2D(num2 + 0.19, num3 + num * 2.0 + 0.086)), 0.1, 1.0, new Font("MS Gothic", 1f), 0.085, "S:", ColorHelper.White, ColorHelper.Black, ip.MaiB.BrushColor, ColorHelper.Black, Input: false);
+    		ls.Add("ラベル12", DrawBuffer.GetPosition(new Vector2D(num2 + 0.19, num3 + num * 2.0 + 0.127)), 0.1, 1.0, new Font("MS Gothic", 1f), 0.085, "V:", ColorHelper.White, ColorHelper.Black, ip.MaiB.BrushColor, ColorHelper.Black, Input: false);
+    		ls.Add("ラベル13", DrawBuffer.GetPosition(new Vector2D(num2 + 0.19, num3 + num * 3.0 + 0.005)), 0.1, 1.0, new Font("MS Gothic", 1f), 0.085, GameText.体格, ColorHelper.White, ColorHelper.Black, ip.MaiB.BrushColor, ColorHelper.Black, Input: false);
+    		ls.Add("ラベル14", DrawBuffer.GetPosition(new Vector2D(num2 + 0.19, num3 + num * 3.0 + 0.045)), 0.1, 1.0, new Font("MS Gothic", 1f), 0.085, "H:", ColorHelper.White, ColorHelper.Black, ip.MaiB.BrushColor, ColorHelper.Black, Input: false);
+    		ls.Add("ラベル15", DrawBuffer.GetPosition(new Vector2D(num2 + 0.19, num3 + num * 3.0 + 0.086)), 0.1, 1.0, new Font("MS Gothic", 1f), 0.085, "W:", ColorHelper.White, ColorHelper.Black, ip.MaiB.BrushColor, ColorHelper.Black, Input: false);
+    		Gau H肌 = new Gau("H肌", DrawBuffer.GetPosition(new Vector2D(num2 + 0.532, num3 + num * 0.0 + 0.06)), DrawBuffer.Size, 0.6, 0.03, 0.02, Open.Rig, _2DGAMELIB.Range.ZeroOne, DrawBuffer.DisplayUnitScale, Color.Transparent, Color.Transparent, Color.Transparent, Color.Transparent, ColorHelper.Black, Knob: true);
+    		H肌.Gauge.PenColor = ColorHelper.White;
+    		H肌.Frame1.PenColor = ColorHelper.White;
+    		H肌.Knob.PenColor = ColorHelper.White;
     		H肌.Knob.HitColor = Med.GetUniqueColor();
-    		Gau S肌 = new Gau("S肌", DrawBuffer.GetPosition(new Vector2D(num2 + 0.532, num3 + num * 0.0 + 0.1)), DrawBuffer.Size, 0.6, 0.03, 0.02, Open.Rig, _2DGAMELIB.Range.ZeroOne, DrawBuffer.DisplayUnitScale, Color.Transparent, Color.Transparent, Color.Transparent, Color.Transparent, Col.Black, Knob: true);
-    		S肌.Gauge.PenColor = Col.White;
-    		S肌.Frame1.PenColor = Col.White;
-    		S肌.Knob.PenColor = Col.White;
+    		Gau S肌 = new Gau("S肌", DrawBuffer.GetPosition(new Vector2D(num2 + 0.532, num3 + num * 0.0 + 0.1)), DrawBuffer.Size, 0.6, 0.03, 0.02, Open.Rig, _2DGAMELIB.Range.ZeroOne, DrawBuffer.DisplayUnitScale, Color.Transparent, Color.Transparent, Color.Transparent, Color.Transparent, ColorHelper.Black, Knob: true);
+    		S肌.Gauge.PenColor = ColorHelper.White;
+    		S肌.Frame1.PenColor = ColorHelper.White;
+    		S肌.Knob.PenColor = ColorHelper.White;
     		S肌.Knob.HitColor = Med.GetUniqueColor();
-    		Gau V肌 = new Gau("V肌", DrawBuffer.GetPosition(new Vector2D(num2 + 0.532, num3 + num * 0.0 + 0.14)), DrawBuffer.Size, 0.6, 0.03, 0.02, Open.Rig, _2DGAMELIB.Range.ZeroOne, DrawBuffer.DisplayUnitScale, Color.Transparent, Color.Transparent, Color.Transparent, Color.Transparent, Col.Black, Knob: true);
-    		V肌.Gauge.PenColor = Col.White;
-    		V肌.Frame1.PenColor = Col.White;
-    		V肌.Knob.PenColor = Col.White;
+    		Gau V肌 = new Gau("V肌", DrawBuffer.GetPosition(new Vector2D(num2 + 0.532, num3 + num * 0.0 + 0.14)), DrawBuffer.Size, 0.6, 0.03, 0.02, Open.Rig, _2DGAMELIB.Range.ZeroOne, DrawBuffer.DisplayUnitScale, Color.Transparent, Color.Transparent, Color.Transparent, Color.Transparent, ColorHelper.Black, Knob: true);
+    		V肌.Gauge.PenColor = ColorHelper.White;
+    		V肌.Frame1.PenColor = ColorHelper.White;
+    		V肌.Knob.PenColor = ColorHelper.White;
     		V肌.Knob.HitColor = Med.GetUniqueColor();
-    		Gau H髪 = new Gau("H髪", DrawBuffer.GetPosition(new Vector2D(num2 + 0.532, num3 + num * 1.0 + 0.06)), DrawBuffer.Size, 0.6, 0.03, 0.02, Open.Rig, _2DGAMELIB.Range.ZeroOne, DrawBuffer.DisplayUnitScale, Color.Transparent, Color.Transparent, Color.Transparent, Color.Transparent, Col.Black, Knob: true);
-    		H髪.Gauge.PenColor = Col.White;
-    		H髪.Frame1.PenColor = Col.White;
-    		H髪.Knob.PenColor = Col.White;
+    		Gau H髪 = new Gau("H髪", DrawBuffer.GetPosition(new Vector2D(num2 + 0.532, num3 + num * 1.0 + 0.06)), DrawBuffer.Size, 0.6, 0.03, 0.02, Open.Rig, _2DGAMELIB.Range.ZeroOne, DrawBuffer.DisplayUnitScale, Color.Transparent, Color.Transparent, Color.Transparent, Color.Transparent, ColorHelper.Black, Knob: true);
+    		H髪.Gauge.PenColor = ColorHelper.White;
+    		H髪.Frame1.PenColor = ColorHelper.White;
+    		H髪.Knob.PenColor = ColorHelper.White;
     		H髪.Knob.HitColor = Med.GetUniqueColor();
-    		Gau S髪 = new Gau("S髪", DrawBuffer.GetPosition(new Vector2D(num2 + 0.532, num3 + num * 1.0 + 0.1)), DrawBuffer.Size, 0.6, 0.03, 0.02, Open.Rig, _2DGAMELIB.Range.ZeroOne, DrawBuffer.DisplayUnitScale, Color.Transparent, Color.Transparent, Color.Transparent, Color.Transparent, Col.Black, Knob: true);
-    		S髪.Gauge.PenColor = Col.White;
-    		S髪.Frame1.PenColor = Col.White;
-    		S髪.Knob.PenColor = Col.White;
+    		Gau S髪 = new Gau("S髪", DrawBuffer.GetPosition(new Vector2D(num2 + 0.532, num3 + num * 1.0 + 0.1)), DrawBuffer.Size, 0.6, 0.03, 0.02, Open.Rig, _2DGAMELIB.Range.ZeroOne, DrawBuffer.DisplayUnitScale, Color.Transparent, Color.Transparent, Color.Transparent, Color.Transparent, ColorHelper.Black, Knob: true);
+    		S髪.Gauge.PenColor = ColorHelper.White;
+    		S髪.Frame1.PenColor = ColorHelper.White;
+    		S髪.Knob.PenColor = ColorHelper.White;
     		S髪.Knob.HitColor = Med.GetUniqueColor();
-    		Gau V髪 = new Gau("V髪", DrawBuffer.GetPosition(new Vector2D(num2 + 0.532, num3 + num * 1.0 + 0.14)), DrawBuffer.Size, 0.6, 0.03, 0.02, Open.Rig, _2DGAMELIB.Range.ZeroOne, DrawBuffer.DisplayUnitScale, Color.Transparent, Color.Transparent, Color.Transparent, Color.Transparent, Col.Black, Knob: true);
-    		V髪.Gauge.PenColor = Col.White;
-    		V髪.Frame1.PenColor = Col.White;
-    		V髪.Knob.PenColor = Col.White;
+    		Gau V髪 = new Gau("V髪", DrawBuffer.GetPosition(new Vector2D(num2 + 0.532, num3 + num * 1.0 + 0.14)), DrawBuffer.Size, 0.6, 0.03, 0.02, Open.Rig, _2DGAMELIB.Range.ZeroOne, DrawBuffer.DisplayUnitScale, Color.Transparent, Color.Transparent, Color.Transparent, Color.Transparent, ColorHelper.Black, Knob: true);
+    		V髪.Gauge.PenColor = ColorHelper.White;
+    		V髪.Frame1.PenColor = ColorHelper.White;
+    		V髪.Knob.PenColor = ColorHelper.White;
     		V髪.Knob.HitColor = Med.GetUniqueColor();
-    		Gau H瞳 = new Gau("H瞳", DrawBuffer.GetPosition(new Vector2D(num2 + 0.532, num3 + num * 2.0 + 0.06)), DrawBuffer.Size, 0.6, 0.03, 0.02, Open.Rig, _2DGAMELIB.Range.ZeroOne, DrawBuffer.DisplayUnitScale, Color.Transparent, Color.Transparent, Color.Transparent, Color.Transparent, Col.Black, Knob: true);
-    		H瞳.Gauge.PenColor = Col.White;
-    		H瞳.Frame1.PenColor = Col.White;
-    		H瞳.Knob.PenColor = Col.White;
+    		Gau H瞳 = new Gau("H瞳", DrawBuffer.GetPosition(new Vector2D(num2 + 0.532, num3 + num * 2.0 + 0.06)), DrawBuffer.Size, 0.6, 0.03, 0.02, Open.Rig, _2DGAMELIB.Range.ZeroOne, DrawBuffer.DisplayUnitScale, Color.Transparent, Color.Transparent, Color.Transparent, Color.Transparent, ColorHelper.Black, Knob: true);
+    		H瞳.Gauge.PenColor = ColorHelper.White;
+    		H瞳.Frame1.PenColor = ColorHelper.White;
+    		H瞳.Knob.PenColor = ColorHelper.White;
     		H瞳.Knob.HitColor = Med.GetUniqueColor();
-    		Gau S瞳 = new Gau("S瞳", DrawBuffer.GetPosition(new Vector2D(num2 + 0.532, num3 + num * 2.0 + 0.1)), DrawBuffer.Size, 0.6, 0.03, 0.02, Open.Rig, _2DGAMELIB.Range.ZeroOne, DrawBuffer.DisplayUnitScale, Color.Transparent, Color.Transparent, Color.Transparent, Color.Transparent, Col.Black, Knob: true);
-    		S瞳.Gauge.PenColor = Col.White;
-    		S瞳.Frame1.PenColor = Col.White;
-    		S瞳.Knob.PenColor = Col.White;
+    		Gau S瞳 = new Gau("S瞳", DrawBuffer.GetPosition(new Vector2D(num2 + 0.532, num3 + num * 2.0 + 0.1)), DrawBuffer.Size, 0.6, 0.03, 0.02, Open.Rig, _2DGAMELIB.Range.ZeroOne, DrawBuffer.DisplayUnitScale, Color.Transparent, Color.Transparent, Color.Transparent, Color.Transparent, ColorHelper.Black, Knob: true);
+    		S瞳.Gauge.PenColor = ColorHelper.White;
+    		S瞳.Frame1.PenColor = ColorHelper.White;
+    		S瞳.Knob.PenColor = ColorHelper.White;
     		S瞳.Knob.HitColor = Med.GetUniqueColor();
-    		Gau V瞳 = new Gau("V瞳", DrawBuffer.GetPosition(new Vector2D(num2 + 0.532, num3 + num * 2.0 + 0.14)), DrawBuffer.Size, 0.6, 0.03, 0.02, Open.Rig, _2DGAMELIB.Range.ZeroOne, DrawBuffer.DisplayUnitScale, Color.Transparent, Color.Transparent, Color.Transparent, Color.Transparent, Col.Black, Knob: true);
-    		V瞳.Gauge.PenColor = Col.White;
-    		V瞳.Frame1.PenColor = Col.White;
-    		V瞳.Knob.PenColor = Col.White;
+    		Gau V瞳 = new Gau("V瞳", DrawBuffer.GetPosition(new Vector2D(num2 + 0.532, num3 + num * 2.0 + 0.14)), DrawBuffer.Size, 0.6, 0.03, 0.02, Open.Rig, _2DGAMELIB.Range.ZeroOne, DrawBuffer.DisplayUnitScale, Color.Transparent, Color.Transparent, Color.Transparent, Color.Transparent, ColorHelper.Black, Knob: true);
+    		V瞳.Gauge.PenColor = ColorHelper.White;
+    		V瞳.Frame1.PenColor = ColorHelper.White;
+    		V瞳.Knob.PenColor = ColorHelper.White;
     		V瞳.Knob.HitColor = Med.GetUniqueColor();
-    		Gau 身長 = new Gau("身長", DrawBuffer.GetPosition(new Vector2D(num2 + 0.532, num3 + num * 3.0 + 0.06)), DrawBuffer.Size, 0.6, 0.03, 0.02, Open.Rig, _2DGAMELIB.Range.ZeroOne, DrawBuffer.DisplayUnitScale, Color.Transparent, Color.Transparent, Color.Transparent, Color.Transparent, Col.Black, Knob: true);
-    		身長.Gauge.PenColor = Col.White;
-    		身長.Frame1.PenColor = Col.White;
-    		身長.Knob.PenColor = Col.White;
+    		Gau 身長 = new Gau("身長", DrawBuffer.GetPosition(new Vector2D(num2 + 0.532, num3 + num * 3.0 + 0.06)), DrawBuffer.Size, 0.6, 0.03, 0.02, Open.Rig, _2DGAMELIB.Range.ZeroOne, DrawBuffer.DisplayUnitScale, Color.Transparent, Color.Transparent, Color.Transparent, Color.Transparent, ColorHelper.Black, Knob: true);
+    		身長.Gauge.PenColor = ColorHelper.White;
+    		身長.Frame1.PenColor = ColorHelper.White;
+    		身長.Knob.PenColor = ColorHelper.White;
     		身長.Knob.HitColor = Med.GetUniqueColor();
-    		Gau 体重 = new Gau("体重", DrawBuffer.GetPosition(new Vector2D(num2 + 0.532, num3 + num * 3.0 + 0.1)), DrawBuffer.Size, 0.6, 0.03, 0.02, Open.Rig, _2DGAMELIB.Range.ZeroOne, DrawBuffer.DisplayUnitScale, Color.Transparent, Color.Transparent, Color.Transparent, Color.Transparent, Col.Black, Knob: true);
-    		体重.Gauge.PenColor = Col.White;
-    		体重.Frame1.PenColor = Col.White;
-    		体重.Knob.PenColor = Col.White;
+    		Gau 体重 = new Gau("体重", DrawBuffer.GetPosition(new Vector2D(num2 + 0.532, num3 + num * 3.0 + 0.1)), DrawBuffer.Size, 0.6, 0.03, 0.02, Open.Rig, _2DGAMELIB.Range.ZeroOne, DrawBuffer.DisplayUnitScale, Color.Transparent, Color.Transparent, Color.Transparent, Color.Transparent, ColorHelper.Black, Knob: true);
+    		体重.Gauge.PenColor = ColorHelper.White;
+    		体重.Frame1.PenColor = ColorHelper.White;
+    		体重.Knob.PenColor = ColorHelper.White;
     		体重.Knob.HitColor = Med.GetUniqueColor();
     		Hsv hsv = HSV.ToHSV(ref Sta.GameData.色.肌色);
     		H肌.Value = (double)hsv.H / 360.0;
@@ -5839,10 +5839,10 @@ namespace SlaveMatrix
     		};
     		PlayerInformationSliders = delegate(RenderArea a, FPS FPS)
     		{
-    			Med.HitGraphics.Clear(Col.Transparent);
+    			Med.HitGraphics.Clear(ColorHelper.Transparent);
     			if (a.HitGraphics != null)
     			{
-    				a.HitGraphics.Clear(Col.Transparent);
+    				a.HitGraphics.Clear(ColorHelper.Transparent);
     			}
     			a.Draw(BlackBackground);
     			ls.Draw(a);
@@ -5938,7 +5938,7 @@ namespace SlaveMatrix
     		{
     			if (a.HitGraphics != null)
     			{
-    				a.HitGraphics.Clear(Col.Transparent);
+    				a.HitGraphics.Clear(ColorHelper.Transparent);
     			}
     			a.Draw(BlackBackground);
     			dbs.Draw(a);
@@ -6356,7 +6356,7 @@ namespace SlaveMatrix
     		{
     			if (a.HitGraphics != null)
     			{
-    				a.HitGraphics.Clear(Col.Transparent);
+    				a.HitGraphics.Clear(ColorHelper.Transparent);
     			}
     			a.Draw(BasementBackground);
     			Viola.Draw(a, FPS);
@@ -6663,7 +6663,7 @@ namespace SlaveMatrix
     		{
     			if (a.HitGraphics != null)
     			{
-    				a.HitGraphics.Clear(Col.Transparent);
+    				a.HitGraphics.Clear(ColorHelper.Transparent);
     			}
     			a.Draw(OfficeBackground);
     			Viola.Draw(a, FPS);
@@ -6771,7 +6771,7 @@ namespace SlaveMatrix
     		{
     			if (a.HitGraphics != null)
     			{
-    				a.HitGraphics.Clear(Col.Transparent);
+    				a.HitGraphics.Clear(ColorHelper.Transparent);
     			}
     			a.Draw(OfficeBackground);
     			Viola.Draw(a, FPS);
@@ -7354,7 +7354,7 @@ namespace SlaveMatrix
                         SaveData.bs["0"].Dra = false;
                         save = true;
                         SetJSLlv(med);
-                        Color HitColor = Col.Empty;
+                        Color HitColor = ColorHelper.Empty;
                         SaveData.Move(ref HitColor);
                         SDShow = true;
                         ip.SubInfoIm = "RCl:" + GameText.戻る;
@@ -7385,7 +7385,7 @@ namespace SlaveMatrix
                         save = false;
                         title = false;
                         SetJSLlv(med);
-                        Color HitColor = Col.Empty;
+                        Color HitColor = ColorHelper.Empty;
                         SaveData.Move(ref HitColor);
                         SDShow = true;
                         ip.SubInfoIm = "RCl:" + GameText.戻る;

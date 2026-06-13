@@ -655,13 +655,13 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		腹CD = new ColorD(ref Col.Black, ref 体配色.人肌O);
-    		ハイライトCD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
+    		腹CD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌O);
+    		ハイライトCD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
     		臍CD = new ColorD(ref 体配色.薄線, ref 体配色.人肌O);
-    		ハイライト左1CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
-    		ハイライト左2CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2R);
-    		ハイライト右1CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
-    		ハイライト右2CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2R);
+    		ハイライト左1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		ハイライト左2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2R);
+    		ハイライト右1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		ハイライト右2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2R);
     	}
     }
 }

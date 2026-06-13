@@ -554,19 +554,19 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		Col.Alpha(ref 体配色.体0O, 128, out var ret);
-    		前翅_前翅1CD = new ColorD(ref Col.Black, ref ret);
-    		前翅_翅脈線1CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		前翅_翅脈線2CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		前翅_翅脈線3CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		前翅_翅脈線4CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		前翅_翅脈線5CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		前翅_翅脈線6CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		前翅_翅脈線7CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		前翅_翅脈線8CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		前翅_前翅2CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		前翅_紋1CD = new ColorD(ref Col.Black, ref 体配色.紋R);
-    		前翅_紋2CD = new ColorD(ref Col.Black, ref 体配色.紋R);
+    		ColorHelper.Alpha(ref 体配色.体0O, 128, out var ret);
+    		前翅_前翅1CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		前翅_翅脈線1CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		前翅_翅脈線2CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		前翅_翅脈線3CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		前翅_翅脈線4CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		前翅_翅脈線5CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		前翅_翅脈線6CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		前翅_翅脈線7CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		前翅_翅脈線8CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		前翅_前翅2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		前翅_紋1CD = new ColorD(ref ColorHelper.Black, ref 体配色.紋R);
+    		前翅_紋2CD = new ColorD(ref ColorHelper.Black, ref 体配色.紋R);
     	}
     }
 }

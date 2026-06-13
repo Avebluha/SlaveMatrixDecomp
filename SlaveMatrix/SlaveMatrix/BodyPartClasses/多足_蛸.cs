@@ -221,17 +221,17 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		TorsoCD = new ColorD(ref Col.Black, ref 体配色.体0O);
+    		TorsoCD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
     	}
 
     	private void 配色T0(BodyColorSet 体配色)
     	{
-    		TorsoCD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		TorsoCD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
     	}
 
     	private void 配色T1(BodyColorSet 体配色)
     	{
-    		TorsoCD = new ColorD(ref Col.Black, ref 体配色.体0O);
+    		TorsoCD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
     	}
     }
 }

@@ -96,8 +96,8 @@ namespace SlaveMatrix
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		吹出しCD = new ColorD();
-    		吹出しCD.線 = Col.Black;
-    		吹出しCD.色 = new Color2(ref Col.White, ref Col.Empty);
+    		吹出しCD.線 = ColorHelper.Black;
+    		吹出しCD.色 = new Color2(ref ColorHelper.White, ref ColorHelper.Empty);
     		X0Y0_吹出しCP = new ColorP(X0Y0_吹出し, 吹出しCD, DisUnit, abj: true);
     		X0Y0_吹出し.BasePointBase = X0Y0_吹出し.BasePointBase.AddX(-0.015);
     	}

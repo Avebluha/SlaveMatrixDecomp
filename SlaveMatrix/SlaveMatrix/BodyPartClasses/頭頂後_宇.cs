@@ -295,13 +295,13 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		頭部CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		線_線左1CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		線_線左2CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		線_線左3CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		線_線右1CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		線_線右2CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		線_線右3CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
+    		頭部CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		線_線左1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		線_線左2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		線_線左3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		線_線右1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		線_線右2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		線_線右3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
     	}
     }
 }

@@ -1383,7 +1383,7 @@ namespace SlaveMatrix
     		set
     		{
     			体紅潮_ = value;
-    			Col.Alpha(ref Cha.CharacterData.body_color.粘膜, (int)(24.0 * 体紅潮_), out var ret);
+    			ColorHelper.Alpha(ref Cha.CharacterData.body_color.粘膜, (int)(24.0 * 体紅潮_), out var ret);
     			Set人肌色(Cha.CharacterData.body_color.人肌.BlendP1(ret));
     		}
     	}
@@ -9630,7 +9630,7 @@ namespace SlaveMatrix
     	{
     		Color col = 頭.HeadCD.色.Col1;
     		Color col2 = 頭.HeadCD.色.Col2;
-    		Col.GetSkinGrad(ref c, out var ret);
+    		ColorHelper.GetSkinGrad(ref c, out var ret);
     		ret.Col1 = col;
     		ret.GetRep(out var ret2);
     		foreach (Element item in EnumAllEle())

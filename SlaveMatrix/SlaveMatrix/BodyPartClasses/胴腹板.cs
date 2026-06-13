@@ -165,8 +165,8 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		虫性_腹板CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		虫性_縦線CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
+    		虫性_腹板CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		虫性_縦線CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
     	}
     }
 }

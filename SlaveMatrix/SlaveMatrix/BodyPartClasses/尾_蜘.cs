@@ -616,65 +616,65 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		尾0CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		柄0CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		柄左1CD = new ColorD(ref Col.Black, ref 体配色.柄O);
-    		柄左2CD = new ColorD(ref Col.Black, ref 体配色.柄O);
-    		柄右1CD = new ColorD(ref Col.Black, ref 体配色.柄O);
-    		柄右2CD = new ColorD(ref Col.Black, ref 体配色.柄O);
-    		出糸突起後_出糸突起基CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		出糸突起後_出糸突起中CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		出糸突起後_出糸突起左CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		出糸突起後_出糸突起右CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		出糸突起左_出糸突起1CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		出糸突起左_出糸突起2CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		出糸突起右_出糸突起1CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		出糸突起右_出糸突起2CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		出糸突起前_出糸突起左CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		出糸突起前_出糸突起右CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		付根線CD = new ColorD(ref Col.Black, ref Color2.Empty);
+    		尾0CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		柄0CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		柄左1CD = new ColorD(ref ColorHelper.Black, ref 体配色.柄O);
+    		柄左2CD = new ColorD(ref ColorHelper.Black, ref 体配色.柄O);
+    		柄右1CD = new ColorD(ref ColorHelper.Black, ref 体配色.柄O);
+    		柄右2CD = new ColorD(ref ColorHelper.Black, ref 体配色.柄O);
+    		出糸突起後_出糸突起基CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		出糸突起後_出糸突起中CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		出糸突起後_出糸突起左CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		出糸突起後_出糸突起右CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		出糸突起左_出糸突起1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		出糸突起左_出糸突起2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		出糸突起右_出糸突起1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		出糸突起右_出糸突起2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		出糸突起前_出糸突起左CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		出糸突起前_出糸突起右CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		付根線CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
     	}
 
     	private void 配色T0(BodyColorSet 体配色)
     	{
-    		尾0CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		柄0CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		柄左1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		柄左2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		柄右1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		柄右2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		出糸突起後_出糸突起基CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		出糸突起後_出糸突起中CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		出糸突起後_出糸突起左CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		出糸突起後_出糸突起右CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		出糸突起左_出糸突起1CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		出糸突起左_出糸突起2CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		出糸突起右_出糸突起1CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		出糸突起右_出糸突起2CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		出糸突起前_出糸突起左CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		出糸突起前_出糸突起右CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		付根線CD = new ColorD(ref Col.Black, ref Color2.Empty);
+    		尾0CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		柄0CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		柄左1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		柄左2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		柄右1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		柄右2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		出糸突起後_出糸突起基CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		出糸突起後_出糸突起中CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		出糸突起後_出糸突起左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		出糸突起後_出糸突起右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		出糸突起左_出糸突起1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		出糸突起左_出糸突起2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		出糸突起右_出糸突起1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		出糸突起右_出糸突起2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		出糸突起前_出糸突起左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		出糸突起前_出糸突起右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		付根線CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
     	}
 
     	private void 配色T1(BodyColorSet 体配色)
     	{
-    		尾0CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		柄0CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		柄左1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		柄左2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		柄右1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		柄右2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		出糸突起後_出糸突起基CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		出糸突起後_出糸突起中CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		出糸突起後_出糸突起左CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		出糸突起後_出糸突起右CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		出糸突起左_出糸突起1CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		出糸突起左_出糸突起2CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		出糸突起右_出糸突起1CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		出糸突起右_出糸突起2CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		出糸突起前_出糸突起左CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		出糸突起前_出糸突起右CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		付根線CD = new ColorD(ref Col.Black, ref Color2.Empty);
+    		尾0CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		柄0CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		柄左1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		柄左2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		柄右1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		柄右2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		出糸突起後_出糸突起基CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		出糸突起後_出糸突起中CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		出糸突起後_出糸突起左CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		出糸突起後_出糸突起右CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		出糸突起左_出糸突起1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		出糸突起左_出糸突起2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		出糸突起右_出糸突起1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		出糸突起右_出糸突起2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		出糸突起前_出糸突起左CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		出糸突起前_出糸突起右CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		付根線CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
     	}
     }
 }

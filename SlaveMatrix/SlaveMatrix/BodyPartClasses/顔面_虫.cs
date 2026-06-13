@@ -829,32 +829,32 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		面基CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		複眼左_複眼1CD = new ColorD(ref Col.Black, ref 体配色.眼0O);
-    		複眼左_複眼2CD = new ColorD(ref Col.Black, ref 体配色.眼0O);
-    		複眼左_ハイライトCD = new ColorD(ref Col.Empty, ref 体配色.ハイライト);
-    		複眼右_複眼1CD = new ColorD(ref Col.Black, ref 体配色.眼0O);
-    		複眼右_複眼2CD = new ColorD(ref Col.Black, ref 体配色.眼0O);
-    		複眼右_ハイライトCD = new ColorD(ref Col.Empty, ref 体配色.ハイライト);
-    		面下_面CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		面下_器官左上CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		面下_器官左下CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		面下_器官右上CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		面下_器官右下CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		面上CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		付根左_付根1CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		付根左_付根2CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		付根右_付根1CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		付根右_付根2CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		単眼_眼中_基CD = new ColorD(ref Col.Black, ref 体配色.眼1O);
-    		単眼_眼中_眼CD = new ColorD(ref Col.Black, ref 体配色.眼1O);
-    		単眼_眼中_ハイライトCD = new ColorD(ref Col.Empty, ref 体配色.ハイライト);
-    		単眼_眼左_基CD = new ColorD(ref Col.Black, ref 体配色.眼1O);
-    		単眼_眼左_眼CD = new ColorD(ref Col.Black, ref 体配色.眼1O);
-    		単眼_眼左_ハイライトCD = new ColorD(ref Col.Empty, ref 体配色.ハイライト);
-    		単眼_眼右_基CD = new ColorD(ref Col.Black, ref 体配色.眼1O);
-    		単眼_眼右_眼CD = new ColorD(ref Col.Black, ref 体配色.眼1O);
-    		単眼_眼右_ハイライトCD = new ColorD(ref Col.Empty, ref 体配色.ハイライト);
+    		面基CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		複眼左_複眼1CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼0O);
+    		複眼左_複眼2CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼0O);
+    		複眼左_ハイライトCD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト);
+    		複眼右_複眼1CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼0O);
+    		複眼右_複眼2CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼0O);
+    		複眼右_ハイライトCD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト);
+    		面下_面CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		面下_器官左上CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		面下_器官左下CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		面下_器官右上CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		面下_器官右下CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		面上CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		付根左_付根1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		付根左_付根2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		付根右_付根1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		付根右_付根2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		単眼_眼中_基CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼1O);
+    		単眼_眼中_眼CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼1O);
+    		単眼_眼中_ハイライトCD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト);
+    		単眼_眼左_基CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼1O);
+    		単眼_眼左_眼CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼1O);
+    		単眼_眼左_ハイライトCD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト);
+    		単眼_眼右_基CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼1O);
+    		単眼_眼右_眼CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼1O);
+    		単眼_眼右_ハイライトCD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト);
     	}
     }
 }

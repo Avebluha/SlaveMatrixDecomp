@@ -243,20 +243,20 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		葉CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		葉脈CD = new ColorD(ref Col.Black, ref 体配色.植0O);
+    		葉CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		葉脈CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0O);
     	}
 
     	private void 配色T1(BodyColorSet 体配色)
     	{
-    		葉CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		葉脈CD = new ColorD(ref Col.Black, ref 体配色.植0O);
+    		葉CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		葉脈CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0O);
     	}
 
     	private void 配色T0(BodyColorSet 体配色)
     	{
-    		葉CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		葉脈CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		葉CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		葉脈CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
     	}
     }
 }
