@@ -29,7 +29,7 @@ namespace _2DGAMELIB
 
     	public string Tag = "";
 
-    	protected List<Out> op = new List<Out>();
+    	protected List<CurveOutline> op = new List<CurveOutline>();
 
     	protected List<Joi> jp = new List<Joi>();
 
@@ -149,7 +149,7 @@ namespace _2DGAMELIB
 
     	public PartGroup Parent => parent;
 
-    	public List<Out> OP
+    	public List<CurveOutline> OP
     	{
     		get
     		{
@@ -165,7 +165,7 @@ namespace _2DGAMELIB
     		}
     	}
 
-    	public IEnumerable<Out> InitializeOP
+    	public IEnumerable<CurveOutline> InitializeOP
     	{
     		set
     		{
@@ -583,10 +583,10 @@ namespace _2DGAMELIB
     	protected void Copy(ShapePart ShapePart)
     	{
     		Tag = ShapePart.Tag;
-    		op = new List<Out>(ShapePart.op.Count);
+    		op = new List<CurveOutline>(ShapePart.op.Count);
     		for (int i = 0; i < ShapePart.op.Count; i++)
     		{
-    			op.Add(new Out(ShapePart.op[i]));
+    			op.Add(new CurveOutline(ShapePart.op[i]));
     		}
     		jp = new List<Joi>(ShapePart.jp.Count);
     		for (int j = 0; j < ShapePart.jp.Count; j++)
@@ -665,7 +665,7 @@ namespace _2DGAMELIB
 
             Path.Reset();
     		OutlinePath.Reset();
-    		foreach (Out item in op)
+    		foreach (CurveOutline item in op)
     		{
     			points = new PointF[item.ps.Count];
     			for (int i = 0; i < item.ps.Count; i++)
@@ -766,7 +766,7 @@ namespace _2DGAMELIB
     		gph.Reset();
     		if (Closed)
     		{
-    			foreach (Out item in op)
+    			foreach (CurveOutline item in op)
     			{
     				psh = new PointF[item.ps.Count];
     				for (int i = 0; i < item.ps.Count; i++)
@@ -784,7 +784,7 @@ namespace _2DGAMELIB
     			return;
     		}
 
-    		foreach (Out item2 in op)
+    		foreach (CurveOutline item2 in op)
     		{
     			psh = new PointF[item2.ps.Count];
     			for (int j = 0; j < item2.ps.Count; j++)

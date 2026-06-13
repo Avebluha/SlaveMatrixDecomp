@@ -38,27 +38,27 @@ namespace _2DGAMELIB
     		return Point;
     	}
 
-    	public static void SetTension(this IEnumerable<Out> Out, float Tension)
+    	public static void SetTension(this IEnumerable<CurveOutline> Out, float Tension)
     	{
-    		foreach (Out item in Out)
+    		foreach (CurveOutline item in Out)
     		{
     			item.Tension = Tension;
     		}
     	}
 
-    	public static void OutlineFalse(this IEnumerable<Out> Out)
+    	public static void OutlineFalse(this IEnumerable<CurveOutline> Out)
     	{
-    		foreach (Out item in Out)
+    		foreach (CurveOutline item in Out)
     		{
     			item.Outline = false;
     		}
     	}
 
-    	public static Vector2D GetCenter(this IEnumerable<Out> Out)
+    	public static Vector2D GetCenter(this IEnumerable<CurveOutline> Out)
     	{
     		double num = 0.0;
     		Vector2D vec2DZero = DataConsts.Vec2DZero;
-    		foreach (Out item in Out)
+    		foreach (CurveOutline item in Out)
     		{
     			foreach (Vector2D p in item.ps)
     			{
@@ -81,10 +81,10 @@ namespace _2DGAMELIB
     		return vec2DZero / num;
     	}
 
-    	public static void Rotation(this IEnumerable<Out> Out, Vector2D BP, double Angle)
+    	public static void Rotation(this IEnumerable<CurveOutline> Out, Vector2D BP, double Angle)
     	{
     		MatrixD transform = Angle.ToRadian().RotationZ();
-    		foreach (Out item in Out)
+    		foreach (CurveOutline item in Out)
     		{
     			for (int i = 0; i < item.ps.Count; i++)
     			{
@@ -93,10 +93,10 @@ namespace _2DGAMELIB
     		}
     	}
 
-    	public static void ScalingX(this IEnumerable<Out> Out, Vector2D BP, double Rate)
+    	public static void ScalingX(this IEnumerable<CurveOutline> Out, Vector2D BP, double Rate)
     	{
     		double num = BP.X - BP.X * Rate;
-    		foreach (Out item in Out)
+    		foreach (CurveOutline item in Out)
     		{
     			for (int i = 0; i < item.ps.Count; i++)
     			{
@@ -107,10 +107,10 @@ namespace _2DGAMELIB
     		}
     	}
 
-    	public static void ScalingX(this IEnumerable<Out> Out, ref Vector2D BP, double Rate)
+    	public static void ScalingX(this IEnumerable<CurveOutline> Out, ref Vector2D BP, double Rate)
     	{
     		double num = BP.X - BP.X * Rate;
-    		foreach (Out item in Out)
+    		foreach (CurveOutline item in Out)
     		{
     			for (int i = 0; i < item.ps.Count; i++)
     			{
@@ -121,10 +121,10 @@ namespace _2DGAMELIB
     		}
     	}
 
-    	public static void ScalingY(this IEnumerable<Out> Out, Vector2D BP, double Rate)
+    	public static void ScalingY(this IEnumerable<CurveOutline> Out, Vector2D BP, double Rate)
     	{
     		double num = BP.Y - BP.Y * Rate;
-    		foreach (Out item in Out)
+    		foreach (CurveOutline item in Out)
     		{
     			for (int i = 0; i < item.ps.Count; i++)
     			{
@@ -135,10 +135,10 @@ namespace _2DGAMELIB
     		}
     	}
 
-    	public static void ScalingY(this IEnumerable<Out> Out, ref Vector2D BP, double Rate)
+    	public static void ScalingY(this IEnumerable<CurveOutline> Out, ref Vector2D BP, double Rate)
     	{
     		double num = BP.Y - BP.Y * Rate;
-    		foreach (Out item in Out)
+    		foreach (CurveOutline item in Out)
     		{
     			for (int i = 0; i < item.ps.Count; i++)
     			{
@@ -149,12 +149,12 @@ namespace _2DGAMELIB
     		}
     	}
 
-    	public static void ScalingXY(this IEnumerable<Out> Out, Vector2D BP, double Rate)
+    	public static void ScalingXY(this IEnumerable<CurveOutline> Out, Vector2D BP, double Rate)
     	{
     		Vector2D vector2D = default(Vector2D);
     		vector2D.X = BP.X - BP.X * Rate;
     		vector2D.Y = BP.Y - BP.Y * Rate;
-    		foreach (Out item in Out)
+    		foreach (CurveOutline item in Out)
     		{
     			for (int i = 0; i < item.ps.Count; i++)
     			{
@@ -166,12 +166,12 @@ namespace _2DGAMELIB
     		}
     	}
 
-    	public static void ScalingXY(this IEnumerable<Out> Out, ref Vector2D BP, double Rate)
+    	public static void ScalingXY(this IEnumerable<CurveOutline> Out, ref Vector2D BP, double Rate)
     	{
     		Vector2D vector2D = default(Vector2D);
     		vector2D.X = BP.X - BP.X * Rate;
     		vector2D.Y = BP.Y - BP.Y * Rate;
-    		foreach (Out item in Out)
+    		foreach (CurveOutline item in Out)
     		{
     			for (int i = 0; i < item.ps.Count; i++)
     			{
@@ -183,12 +183,12 @@ namespace _2DGAMELIB
     		}
     	}
 
-    	public static void ScalingXY(this IEnumerable<Out> Out, Vector2D BP, double X, double Y)
+    	public static void ScalingXY(this IEnumerable<CurveOutline> Out, Vector2D BP, double X, double Y)
     	{
     		Vector2D vector2D = default(Vector2D);
     		vector2D.X = BP.X - BP.X * X;
     		vector2D.Y = BP.Y - BP.Y * Y;
-    		foreach (Out item in Out)
+    		foreach (CurveOutline item in Out)
     		{
     			for (int i = 0; i < item.ps.Count; i++)
     			{
@@ -260,10 +260,10 @@ namespace _2DGAMELIB
     		}
     	}
 
-    	public static void ReverseX(this List<Out> Out, ref Vector2D BP)
+    	public static void ReverseX(this List<CurveOutline> Out, ref Vector2D BP)
     	{
     		double num = BP.X - (1.0 - BP.X);
-    		foreach (Out item in Out)
+    		foreach (CurveOutline item in Out)
     		{
     			for (int i = 0; i < item.ps.Count; i++)
     			{
@@ -276,10 +276,10 @@ namespace _2DGAMELIB
     		Out.Reverse();
     	}
 
-    	public static void ReverseY(this List<Out> Out, Vector2D BP)
+    	public static void ReverseY(this List<CurveOutline> Out, Vector2D BP)
     	{
     		double num = BP.Y - (1.0 - BP.Y);
-    		foreach (Out item in Out)
+    		foreach (CurveOutline item in Out)
     		{
     			for (int i = 0; i < item.ps.Count; i++)
     			{
@@ -292,10 +292,10 @@ namespace _2DGAMELIB
     		Out.Reverse();
     	}
 
-    	public static void ReverseY(this List<Out> Out, ref Vector2D BP)
+    	public static void ReverseY(this List<CurveOutline> Out, ref Vector2D BP)
     	{
     		double num = BP.Y - (1.0 - BP.Y);
-    		foreach (Out item in Out)
+    		foreach (CurveOutline item in Out)
     		{
     			for (int i = 0; i < item.ps.Count; i++)
     			{
@@ -326,9 +326,9 @@ namespace _2DGAMELIB
     		}
     	}
 
-    	public static void ExpansionX(this List<Out> Out, Vector2D BP, double Rate)
+    	public static void ExpansionX(this List<CurveOutline> Out, Vector2D BP, double Rate)
     	{
-    		foreach (Out item in Out)
+    		foreach (CurveOutline item in Out)
     		{
     			for (int i = 0; i < item.ps.Count; i++)
     			{
@@ -339,9 +339,9 @@ namespace _2DGAMELIB
     		}
     	}
 
-    	public static void ExpansionX(this List<Out> Out, ref Vector2D BP, double Rate)
+    	public static void ExpansionX(this List<CurveOutline> Out, ref Vector2D BP, double Rate)
     	{
-    		foreach (Out item in Out)
+    		foreach (CurveOutline item in Out)
     		{
     			for (int i = 0; i < item.ps.Count; i++)
     			{
@@ -352,9 +352,9 @@ namespace _2DGAMELIB
     		}
     	}
 
-    	public static void ExpansionY(this List<Out> Out, Vector2D BP, double Rate)
+    	public static void ExpansionY(this List<CurveOutline> Out, Vector2D BP, double Rate)
     	{
-    		foreach (Out item in Out)
+    		foreach (CurveOutline item in Out)
     		{
     			for (int i = 0; i < item.ps.Count; i++)
     			{
@@ -365,9 +365,9 @@ namespace _2DGAMELIB
     		}
     	}
 
-    	public static void ExpansionY(this List<Out> Out, ref Vector2D BP, double Rate)
+    	public static void ExpansionY(this List<CurveOutline> Out, ref Vector2D BP, double Rate)
     	{
-    		foreach (Out item in Out)
+    		foreach (CurveOutline item in Out)
     		{
     			for (int i = 0; i < item.ps.Count; i++)
     			{
@@ -378,9 +378,9 @@ namespace _2DGAMELIB
     		}
     	}
 
-    	public static void ExpansionXY(this List<Out> Out, Vector2D BP, double Rate)
+    	public static void ExpansionXY(this List<CurveOutline> Out, Vector2D BP, double Rate)
     	{
-    		foreach (Out item in Out)
+    		foreach (CurveOutline item in Out)
     		{
     			for (int i = 0; i < item.ps.Count; i++)
     			{
@@ -389,9 +389,9 @@ namespace _2DGAMELIB
     		}
     	}
 
-    	public static void ExpansionXY(this List<Out> Out, ref Vector2D BP, double Rate)
+    	public static void ExpansionXY(this List<CurveOutline> Out, ref Vector2D BP, double Rate)
     	{
-    		foreach (Out item in Out)
+    		foreach (CurveOutline item in Out)
     		{
     			for (int i = 0; i < item.ps.Count; i++)
     			{
@@ -436,10 +436,10 @@ namespace _2DGAMELIB
     		}
     	}
 
-    	public static IEnumerable<Vector2D> EnumPoints(this IEnumerable<Out> Out)
+    	public static IEnumerable<Vector2D> EnumPoints(this IEnumerable<CurveOutline> Out)
     	{
     		HashSet<Vector2D> hs = new HashSet<Vector2D>();
-    		foreach (Out item in Out)
+    		foreach (CurveOutline item in Out)
     		{
     			foreach (Vector2D p in item.ps)
     			{
@@ -452,7 +452,7 @@ namespace _2DGAMELIB
     		}
     	}
 
-    	public static Out GetTriangle()
+    	public static CurveOutline GetTriangle()
     	{
 
             MatrixD m120 = 120.0.ToRadian().RotationZ();
@@ -464,16 +464,16 @@ namespace _2DGAMELIB
             Vector2D TP3 = Math.TransformCoordinateBP(TP1, new Vector2D(0.5, 0.5), m240);
 
 
-    		return new Out
+    		return new CurveOutline
     		{
     			Tension = 0f,
     			ps = { TP1, TP2, TP3 }
     		};
     	}
 
-    	public static Out GetSquare()
+    	public static CurveOutline GetSquare()
     	{
-    		return new Out
+    		return new CurveOutline
     		{
     			Tension = 0f,
     			ps = {

@@ -48,7 +48,7 @@ namespace _2DGAMELIB
     		this.Are = Are;
     		this.Width = Width;
 
-    		Out[] array = new Out[1] { Shas.GetSquare() };
+    		CurveOutline[] array = new CurveOutline[1] { Shas.GetSquare() };
     		if (FramColor == Color.Empty || FramColor == Color.Transparent)
     		{
     			array.OutlineFalse();

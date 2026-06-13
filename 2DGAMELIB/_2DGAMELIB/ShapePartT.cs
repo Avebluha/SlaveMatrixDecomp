@@ -365,18 +365,18 @@ namespace _2DGAMELIB
     	{
     		Vector2D[] stringRectPoints = GetStringRectPoints(Unit, Graphics);
 
-    		Out @out = new Out { Tension = 0f };
+    		CurveOutline curveOutline = new CurveOutline { Tension = 0f };
     		Vector2D vector2D = DataConsts.Vec2DZero - stringRectPoints[0];
 
     		double x = 0.05;
     		double num = 0.025;
 
-    		@out.ps.Add(stringRectPoints[0].AddY(-num) + vector2D);
-    		@out.ps.Add(stringRectPoints[1].AddXY(x, -num) + vector2D);
-    		@out.ps.Add(stringRectPoints[2].AddXY(x, num) + vector2D);
-    		@out.ps.Add(stringRectPoints[3].AddY(num) + vector2D);
+    		curveOutline.ps.Add(stringRectPoints[0].AddY(-num) + vector2D);
+    		curveOutline.ps.Add(stringRectPoints[1].AddXY(x, -num) + vector2D);
+    		curveOutline.ps.Add(stringRectPoints[2].AddXY(x, num) + vector2D);
+    		curveOutline.ps.Add(stringRectPoints[3].AddY(num) + vector2D);
 
-    		base.OP.Add(@out);
+    		base.OP.Add(curveOutline);
     	}
     	public new void Dispose()
     	{

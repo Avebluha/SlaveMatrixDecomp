@@ -25,7 +25,7 @@ namespace SlaveMatrix
             shapePartT.Text = text;
             shapePartT.FontSize = 0.14;
             shapePartT.SizeBase = 0.05;
-            shapePartT.OP.AddRange(new Out[1] { Shas.GetSquare() });
+            shapePartT.OP.AddRange(new CurveOutline[1] { Shas.GetSquare() });
             shapePartT.OP.ScalingXY(shapePartT.OP.GetCenter(), 0.87, 0.23);
             shapePartT.Closed = true;
             shapePartT.TextColor = Col.White;
@@ -42,7 +42,7 @@ namespace SlaveMatrix
             shapePartT.Text = GameText.完了;
             shapePartT.FontSize = 0.15;
             shapePartT.SizeBase = 0.05;
-            shapePartT.OP.AddRange(new Out[1] { Shas.Get正方形() });
+            shapePartT.OP.AddRange(new CurveOutline[1] { Shas.Get正方形() });
             shapePartT.OP.ScalingY(shapePartT.OP.GetCenter(), 0.47);
             shapePartT.Closed = true;
             shapePartT.TextColor = Col.White;
@@ -60,7 +60,7 @@ namespace SlaveMatrix
             shapePartT4.Text = "Load";
             shapePartT4.FontSize = 0.14;
             shapePartT4.SizeBase = 0.05;
-            shapePartT4.OP.AddRange(new Out[1] { Shas.Get正方形() });
+            shapePartT4.OP.AddRange(new CurveOutline[1] { Shas.Get正方形() });
             shapePartT4.OP.ScalingXY(shapePartT4.OP.GetCenter(), 0.87, 0.23);
             shapePartT4.Closed = true;
             shapePartT4.TextColor = Col.White; 
@@ -82,7 +82,7 @@ namespace SlaveMatrix
             shapePartT.Text = text;
             shapePartT.FontSize = 0.15;
             shapePartT.SizeBase = 0.05;
-            shapePartT.OP.AddRange(new Out[1] { Shas.GetSquare() });
+            shapePartT.OP.AddRange(new CurveOutline[1] { Shas.GetSquare() });
             shapePartT.OP.ScalingY(shapePartT.OP.GetCenter(), 0.47);
             shapePartT.OP.Rotation(shapePartT.OP.GetCenter(), -26.0);
             shapePartT.Closed = true;
@@ -2827,7 +2827,7 @@ namespace SlaveMatrix
     			shapePartT13.Text = "1F";
     			shapePartT13.FontSize = 0.15;
     			shapePartT13.SizeBase = 0.05;
-    			shapePartT13.OP.AddRange(new Out[1] { Shas.GetSquare() });
+    			shapePartT13.OP.AddRange(new CurveOutline[1] { Shas.GetSquare() });
     			shapePartT13.BasePointBase = shapePartT13.OP.GetCenter();
     			shapePartT13.OP.ScalingXY(shapePartT13.BasePointBase, 0.3);
     			shapePartT13.Closed = true;
@@ -2854,7 +2854,7 @@ namespace SlaveMatrix
     			shapePartT14.Text = "2F";
     			shapePartT14.FontSize = 0.15;
     			shapePartT14.SizeBase = 0.05;
-    			shapePartT14.OP.AddRange(new Out[1] { Shas.GetSquare() });
+    			shapePartT14.OP.AddRange(new CurveOutline[1] { Shas.GetSquare() });
     			shapePartT14.BasePointBase = shapePartT14.OP.GetCenter();
     			shapePartT14.OP.ScalingXY(shapePartT14.BasePointBase, 0.3);
     			shapePartT14.Closed = true;
@@ -2878,7 +2878,7 @@ namespace SlaveMatrix
     			shapePartT15.Text = "3F";
     			shapePartT15.FontSize = 0.15;
     			shapePartT15.SizeBase = 0.05;
-    			shapePartT15.OP.AddRange(new Out[1] { Shas.GetSquare() });
+    			shapePartT15.OP.AddRange(new CurveOutline[1] { Shas.GetSquare() });
     			shapePartT15.BasePointBase = shapePartT15.OP.GetCenter();
     			shapePartT15.OP.ScalingXY(shapePartT15.BasePointBase, 0.3);
     			shapePartT15.Closed = true;
@@ -2902,7 +2902,7 @@ namespace SlaveMatrix
     			shapePartT16.Text = "4F";
     			shapePartT16.FontSize = 0.15;
     			shapePartT16.SizeBase = 0.05;
-    			shapePartT16.OP.AddRange(new Out[1] { Shas.GetSquare() });
+    			shapePartT16.OP.AddRange(new CurveOutline[1] { Shas.GetSquare() });
     			shapePartT16.BasePointBase = shapePartT16.OP.GetCenter();
     			shapePartT16.OP.ScalingXY(shapePartT16.BasePointBase, 0.3);
     			shapePartT16.Closed = true;
@@ -2926,7 +2926,7 @@ namespace SlaveMatrix
     			shapePartT17.Text = "5F";
     			shapePartT17.FontSize = 0.15;
     			shapePartT17.SizeBase = 0.05;
-    			shapePartT17.OP.AddRange(new Out[1] { Shas.GetSquare() });
+    			shapePartT17.OP.AddRange(new CurveOutline[1] { Shas.GetSquare() });
     			shapePartT17.BasePointBase = shapePartT17.OP.GetCenter();
     			shapePartT17.OP.ScalingXY(shapePartT17.BasePointBase, 0.3);
     			shapePartT17.Closed = true;
@@ -2950,7 +2950,7 @@ namespace SlaveMatrix
     			shapePartT18.Text = "6F";
     			shapePartT18.FontSize = 0.15;
     			shapePartT18.SizeBase = 0.05;
-    			shapePartT18.OP.AddRange(new Out[1] { Shas.GetSquare() });
+    			shapePartT18.OP.AddRange(new CurveOutline[1] { Shas.GetSquare() });
     			shapePartT18.BasePointBase = shapePartT18.OP.GetCenter();
     			shapePartT18.OP.ScalingXY(shapePartT18.BasePointBase, 0.3);
     			shapePartT18.Closed = true;
@@ -2974,7 +2974,7 @@ namespace SlaveMatrix
     			shapePartT19.Text = "7F";
     			shapePartT19.FontSize = 0.15;
     			shapePartT19.SizeBase = 0.05;
-    			shapePartT19.OP.AddRange(new Out[1] { Shas.GetSquare() });
+    			shapePartT19.OP.AddRange(new CurveOutline[1] { Shas.GetSquare() });
     			shapePartT19.BasePointBase = shapePartT19.OP.GetCenter();
     			shapePartT19.OP.ScalingXY(shapePartT19.BasePointBase, 0.3);
     			shapePartT19.Closed = true;
@@ -2998,7 +2998,7 @@ namespace SlaveMatrix
     			shapePartT20.Text = "8F";
     			shapePartT20.FontSize = 0.15;
     			shapePartT20.SizeBase = 0.05;
-    			shapePartT20.OP.AddRange(new Out[1] { Shas.GetSquare() });
+    			shapePartT20.OP.AddRange(new CurveOutline[1] { Shas.GetSquare() });
     			shapePartT20.BasePointBase = shapePartT20.OP.GetCenter();
     			shapePartT20.OP.ScalingXY(shapePartT20.BasePointBase, 0.3);
     			shapePartT20.Closed = true;
@@ -3022,7 +3022,7 @@ namespace SlaveMatrix
     			shapePartT21.Text = "9F";
     			shapePartT21.FontSize = 0.15;
     			shapePartT21.SizeBase = 0.05;
-    			shapePartT21.OP.AddRange(new Out[1] { Shas.GetSquare() });
+    			shapePartT21.OP.AddRange(new CurveOutline[1] { Shas.GetSquare() });
     			shapePartT21.BasePointBase = shapePartT21.OP.GetCenter();
     			shapePartT21.OP.ScalingXY(shapePartT21.BasePointBase, 0.3);
     			shapePartT21.Closed = true;
@@ -3644,7 +3644,7 @@ namespace SlaveMatrix
     		shapePartT.Text = GameText.戻る;
     		shapePartT.FontSize = 0.15;
     		shapePartT.SizeBase = 0.05;
-    		shapePartT.OP.AddRange(new Out[1] { Shas.GetSquare() });
+    		shapePartT.OP.AddRange(new CurveOutline[1] { Shas.GetSquare() });
     		shapePartT.OP.ScalingY(shapePartT.OP.GetCenter(), 0.47);
     		shapePartT.OP.Rotation(shapePartT.OP.GetCenter(), -26.0);
     		shapePartT.Closed = true;
@@ -3667,7 +3667,7 @@ namespace SlaveMatrix
     		shapePartT2.Text = GameText.借金;
     		shapePartT2.FontSize = 0.15;
     		shapePartT2.SizeBase = 0.05;
-    		shapePartT2.OP.AddRange(new Out[1] { Shas.GetSquare() });
+    		shapePartT2.OP.AddRange(new CurveOutline[1] { Shas.GetSquare() });
     		shapePartT2.OP.ScalingY(shapePartT2.OP.GetCenter(), 0.47);
     		shapePartT2.OP.Rotation(shapePartT2.OP.GetCenter(), -26.0);
     		shapePartT2.Closed = true;
@@ -3687,7 +3687,7 @@ namespace SlaveMatrix
     		shapePartT3.Text = GameText.購入;
     		shapePartT3.FontSize = 0.15;
     		shapePartT3.SizeBase = 0.05;
-    		shapePartT3.OP.AddRange(new Out[1] { Shas.GetSquare() });
+    		shapePartT3.OP.AddRange(new CurveOutline[1] { Shas.GetSquare() });
     		shapePartT3.OP.ScalingY(shapePartT3.OP.GetCenter(), 0.47);
     		shapePartT3.OP.Rotation(shapePartT3.OP.GetCenter(), -26.0);
     		shapePartT3.Closed = true;
@@ -3707,7 +3707,7 @@ namespace SlaveMatrix
     		shapePartT4.Text = GameText.祝福;
     		shapePartT4.FontSize = 0.15;
     		shapePartT4.SizeBase = 0.05;
-    		shapePartT4.OP.AddRange(new Out[1] { Shas.GetSquare() });
+    		shapePartT4.OP.AddRange(new CurveOutline[1] { Shas.GetSquare() });
     		shapePartT4.OP.ScalingY(shapePartT4.OP.GetCenter(), 0.47);
     		shapePartT4.OP.Rotation(shapePartT4.OP.GetCenter(), -26.0);
     		shapePartT4.Closed = true;
@@ -3917,7 +3917,7 @@ namespace SlaveMatrix
     		shapePartT2.Text = "c";
     		shapePartT2.FontSize = 0.15;
     		shapePartT2.SizeBase = 0.07;
-    		shapePartT2.OP.AddRange(new Out[1] { Shas.GetSquare() });
+    		shapePartT2.OP.AddRange(new CurveOutline[1] { Shas.GetSquare() });
     		shapePartT2.OP.ScalingXY(shapePartT2.OP.GetCenter(), 0.3, 0.3);
     		shapePartT2.Closed = true;
     		shapePartT2.TextColor = Col.White;
@@ -3937,7 +3937,7 @@ namespace SlaveMatrix
     		shapePartT3.Text = "m";
     		shapePartT3.FontSize = 0.15;
     		shapePartT3.SizeBase = 0.07;
-    		shapePartT3.OP.AddRange(new Out[1] { Shas.GetSquare() });
+    		shapePartT3.OP.AddRange(new CurveOutline[1] { Shas.GetSquare() });
     		shapePartT3.OP.ScalingXY(shapePartT3.OP.GetCenter(), 0.3, 0.3);
     		shapePartT3.Closed = true;
     		shapePartT3.TextColor = Col.White;
@@ -3966,7 +3966,7 @@ namespace SlaveMatrix
     		shapePartT4.Text = "7";
     		shapePartT4.FontSize = 0.15;
     		shapePartT4.SizeBase = 0.07;
-    		shapePartT4.OP.AddRange(new Out[1] { Shas.GetSquare() });
+    		shapePartT4.OP.AddRange(new CurveOutline[1] { Shas.GetSquare() });
     		shapePartT4.OP.ScalingXY(shapePartT4.OP.GetCenter(), 0.3, 0.3);
     		shapePartT4.Closed = true;
     		shapePartT4.TextColor = Col.White;
@@ -3986,7 +3986,7 @@ namespace SlaveMatrix
     		shapePartT5.Text = "8";
     		shapePartT5.FontSize = 0.15;
     		shapePartT5.SizeBase = 0.07;
-    		shapePartT5.OP.AddRange(new Out[1] { Shas.GetSquare() });
+    		shapePartT5.OP.AddRange(new CurveOutline[1] { Shas.GetSquare() });
     		shapePartT5.OP.ScalingXY(shapePartT5.OP.GetCenter(), 0.3, 0.3);
     		shapePartT5.Closed = true;
     		shapePartT5.TextColor = Col.White;
@@ -4006,7 +4006,7 @@ namespace SlaveMatrix
     		shapePartT6.Text = "9";
     		shapePartT6.FontSize = 0.15;
     		shapePartT6.SizeBase = 0.07;
-    		shapePartT6.OP.AddRange(new Out[1] { Shas.GetSquare() });
+    		shapePartT6.OP.AddRange(new CurveOutline[1] { Shas.GetSquare() });
     		shapePartT6.OP.ScalingXY(shapePartT6.OP.GetCenter(), 0.3, 0.3);
     		shapePartT6.Closed = true;
     		shapePartT6.TextColor = Col.White;
@@ -4026,7 +4026,7 @@ namespace SlaveMatrix
     		shapePartT7.Text = "4";
     		shapePartT7.FontSize = 0.15;
     		shapePartT7.SizeBase = 0.07;
-    		shapePartT7.OP.AddRange(new Out[1] { Shas.GetSquare() });
+    		shapePartT7.OP.AddRange(new CurveOutline[1] { Shas.GetSquare() });
     		shapePartT7.OP.ScalingXY(shapePartT7.OP.GetCenter(), 0.3, 0.3);
     		shapePartT7.Closed = true;
     		shapePartT7.TextColor = Col.White;
@@ -4046,7 +4046,7 @@ namespace SlaveMatrix
     		shapePartT8.Text = "5";
     		shapePartT8.FontSize = 0.15;
     		shapePartT8.SizeBase = 0.07;
-    		shapePartT8.OP.AddRange(new Out[1] { Shas.GetSquare() });
+    		shapePartT8.OP.AddRange(new CurveOutline[1] { Shas.GetSquare() });
     		shapePartT8.OP.ScalingXY(shapePartT8.OP.GetCenter(), 0.3, 0.3);
     		shapePartT8.Closed = true;
     		shapePartT8.TextColor = Col.White;
@@ -4066,7 +4066,7 @@ namespace SlaveMatrix
     		shapePartT9.Text = "6";
     		shapePartT9.FontSize = 0.15;
     		shapePartT9.SizeBase = 0.07;
-    		shapePartT9.OP.AddRange(new Out[1] { Shas.GetSquare() });
+    		shapePartT9.OP.AddRange(new CurveOutline[1] { Shas.GetSquare() });
     		shapePartT9.OP.ScalingXY(shapePartT9.OP.GetCenter(), 0.3, 0.3);
     		shapePartT9.Closed = true;
     		shapePartT9.TextColor = Col.White;
@@ -4086,7 +4086,7 @@ namespace SlaveMatrix
     		shapePartT10.Text = "1";
     		shapePartT10.FontSize = 0.15;
     		shapePartT10.SizeBase = 0.07;
-    		shapePartT10.OP.AddRange(new Out[1] { Shas.GetSquare() });
+    		shapePartT10.OP.AddRange(new CurveOutline[1] { Shas.GetSquare() });
     		shapePartT10.OP.ScalingXY(shapePartT10.OP.GetCenter(), 0.3, 0.3);
     		shapePartT10.Closed = true;
     		shapePartT10.TextColor = Col.White;
@@ -4106,7 +4106,7 @@ namespace SlaveMatrix
     		shapePartT11.Text = "2";
     		shapePartT11.FontSize = 0.15;
     		shapePartT11.SizeBase = 0.07;
-    		shapePartT11.OP.AddRange(new Out[1] { Shas.GetSquare() });
+    		shapePartT11.OP.AddRange(new CurveOutline[1] { Shas.GetSquare() });
     		shapePartT11.OP.ScalingXY(shapePartT11.OP.GetCenter(), 0.3, 0.3);
     		shapePartT11.Closed = true;
     		shapePartT11.TextColor = Col.White;
@@ -4126,7 +4126,7 @@ namespace SlaveMatrix
     		shapePartT12.Text = "3";
     		shapePartT12.FontSize = 0.15;
     		shapePartT12.SizeBase = 0.07;
-    		shapePartT12.OP.AddRange(new Out[1] { Shas.GetSquare() });
+    		shapePartT12.OP.AddRange(new CurveOutline[1] { Shas.GetSquare() });
     		shapePartT12.OP.ScalingXY(shapePartT12.OP.GetCenter(), 0.3, 0.3);
     		shapePartT12.Closed = true;
     		shapePartT12.TextColor = Col.White;
@@ -4146,7 +4146,7 @@ namespace SlaveMatrix
     		shapePartT13.Text = "0";
     		shapePartT13.FontSize = 0.15;
     		shapePartT13.SizeBase = 0.07;
-    		shapePartT13.OP.AddRange(new Out[1] { Shas.GetSquare() });
+    		shapePartT13.OP.AddRange(new CurveOutline[1] { Shas.GetSquare() });
     		shapePartT13.OP.ScalingXY(shapePartT13.OP.GetCenter(), 0.3, 0.3);
     		shapePartT13.Closed = true;
     		shapePartT13.TextColor = Col.White;
@@ -4166,7 +4166,7 @@ namespace SlaveMatrix
     		shapePartT14.Text = GameText.借;
     		shapePartT14.FontSize = 0.15;
     		shapePartT14.SizeBase = 0.07;
-    		shapePartT14.OP.AddRange(new Out[1] { Shas.GetSquare() });
+    		shapePartT14.OP.AddRange(new CurveOutline[1] { Shas.GetSquare() });
     		shapePartT14.OP.ScalingXY(shapePartT14.OP.GetCenter(), 0.3, 0.3);
     		shapePartT14.Closed = true;
     		shapePartT14.TextColor = Col.White;
@@ -4213,7 +4213,7 @@ namespace SlaveMatrix
     		shapePartT15.Text = GameText.返;
     		shapePartT15.FontSize = 0.15;
     		shapePartT15.SizeBase = 0.07;
-    		shapePartT15.OP.AddRange(new Out[1] { Shas.GetSquare() });
+    		shapePartT15.OP.AddRange(new CurveOutline[1] { Shas.GetSquare() });
     		shapePartT15.OP.ScalingXY(shapePartT15.OP.GetCenter(), 0.3, 0.3);
     		shapePartT15.Closed = true;
     		shapePartT15.TextColor = Col.White;
@@ -4423,7 +4423,7 @@ namespace SlaveMatrix
     		shapePartT.Text = GameText.戻る;
     		shapePartT.FontSize = 0.15;
     		shapePartT.SizeBase = 0.05;
-    		shapePartT.OP.AddRange(new Out[1] { Shas.GetSquare() });
+    		shapePartT.OP.AddRange(new CurveOutline[1] { Shas.GetSquare() });
     		shapePartT.OP.ScalingY(shapePartT.OP.GetCenter(), 0.47);
     		shapePartT.OP.Rotation(shapePartT.OP.GetCenter(), -26.0);
     		shapePartT.Closed = true;
@@ -4450,7 +4450,7 @@ namespace SlaveMatrix
     		shapePartT2.Text = GameText.奴隷;
     		shapePartT2.FontSize = 0.15;
     		shapePartT2.SizeBase = 0.05;
-    		shapePartT2.OP.AddRange(new Out[1] { Shas.GetSquare() });
+    		shapePartT2.OP.AddRange(new CurveOutline[1] { Shas.GetSquare() });
     		shapePartT2.OP.ScalingY(shapePartT2.OP.GetCenter(), 0.47);
     		shapePartT2.OP.Rotation(shapePartT2.OP.GetCenter(), -26.0);
     		shapePartT2.Closed = true;
@@ -4471,7 +4471,7 @@ namespace SlaveMatrix
     		shapePartT3.Text = GameText.道具;
     		shapePartT3.FontSize = 0.15;
     		shapePartT3.SizeBase = 0.05;
-    		shapePartT3.OP.AddRange(new Out[1] { Shas.GetSquare() });
+    		shapePartT3.OP.AddRange(new CurveOutline[1] { Shas.GetSquare() });
     		shapePartT3.OP.ScalingY(shapePartT3.OP.GetCenter(), 0.47);
     		shapePartT3.OP.Rotation(shapePartT3.OP.GetCenter(), -26.0);
     		shapePartT3.Closed = true;
@@ -4501,7 +4501,7 @@ namespace SlaveMatrix
     		shapePartT4.Text = GameText.ランダム;
     		shapePartT4.FontSize = 0.15;
     		shapePartT4.SizeBase = 0.05;
-    		shapePartT4.OP.AddRange(new Out[1] { Shas.GetSquare() });
+    		shapePartT4.OP.AddRange(new CurveOutline[1] { Shas.GetSquare() });
     		shapePartT4.OP.ScalingY(shapePartT4.OP.GetCenter(), 0.5 * num);
     		shapePartT4.Closed = true;
     		shapePartT4.TextColor = Col.White;
@@ -4527,7 +4527,7 @@ namespace SlaveMatrix
     		shapePartT5.Text = GameText.鳥系;
     		shapePartT5.FontSize = 0.15;
     		shapePartT5.SizeBase = 0.05;
-    		shapePartT5.OP.AddRange(new Out[1] { Shas.GetSquare() });
+    		shapePartT5.OP.AddRange(new CurveOutline[1] { Shas.GetSquare() });
     		shapePartT5.OP.ScalingY(shapePartT5.OP.GetCenter(), 0.5 * num);
     		shapePartT5.Closed = true;
     		shapePartT5.TextColor = Col.White;
@@ -4548,7 +4548,7 @@ namespace SlaveMatrix
     		shapePartT6.Text = GameText.蛇系;
     		shapePartT6.FontSize = 0.15;
     		shapePartT6.SizeBase = 0.05;
-    		shapePartT6.OP.AddRange(new Out[1] { Shas.GetSquare() });
+    		shapePartT6.OP.AddRange(new CurveOutline[1] { Shas.GetSquare() });
     		shapePartT6.OP.ScalingY(shapePartT6.OP.GetCenter(), 0.5 * num);
     		shapePartT6.Closed = true;
     		shapePartT6.TextColor = Col.White;
@@ -4569,7 +4569,7 @@ namespace SlaveMatrix
     		shapePartT7.Text = GameText.獣系;
     		shapePartT7.FontSize = 0.15;
     		shapePartT7.SizeBase = 0.05;
-    		shapePartT7.OP.AddRange(new Out[1] { Shas.GetSquare() });
+    		shapePartT7.OP.AddRange(new CurveOutline[1] { Shas.GetSquare() });
     		shapePartT7.OP.ScalingY(shapePartT7.OP.GetCenter(), 0.5 * num);
     		shapePartT7.Closed = true;
     		shapePartT7.TextColor = Col.White;
@@ -4590,7 +4590,7 @@ namespace SlaveMatrix
     		shapePartT8.Text = GameText.水系;
     		shapePartT8.FontSize = 0.15;
     		shapePartT8.SizeBase = 0.05;
-    		shapePartT8.OP.AddRange(new Out[1] { Shas.GetSquare() });
+    		shapePartT8.OP.AddRange(new CurveOutline[1] { Shas.GetSquare() });
     		shapePartT8.OP.ScalingY(shapePartT8.OP.GetCenter(), 0.5 * num);
     		shapePartT8.Closed = true;
     		shapePartT8.TextColor = Col.White;
@@ -4611,7 +4611,7 @@ namespace SlaveMatrix
     		shapePartT9.Text = GameText.虫系;
     		shapePartT9.FontSize = 0.15;
     		shapePartT9.SizeBase = 0.05;
-    		shapePartT9.OP.AddRange(new Out[1] { Shas.GetSquare() });
+    		shapePartT9.OP.AddRange(new CurveOutline[1] { Shas.GetSquare() });
     		shapePartT9.OP.ScalingY(shapePartT9.OP.GetCenter(), 0.5 * num);
     		shapePartT9.Closed = true;
     		shapePartT9.TextColor = Col.White;
@@ -4632,7 +4632,7 @@ namespace SlaveMatrix
     		shapePartT10.Text = GameText.人型;
     		shapePartT10.FontSize = 0.15;
     		shapePartT10.SizeBase = 0.05;
-    		shapePartT10.OP.AddRange(new Out[1] { Shas.GetSquare() });
+    		shapePartT10.OP.AddRange(new CurveOutline[1] { Shas.GetSquare() });
     		shapePartT10.OP.ScalingY(shapePartT10.OP.GetCenter(), 0.5 * num);
     		shapePartT10.Closed = true;
     		shapePartT10.TextColor = Col.White;
@@ -4653,7 +4653,7 @@ namespace SlaveMatrix
     		shapePartT11.Text = GameText.幻獣;
     		shapePartT11.FontSize = 0.15;
     		shapePartT11.SizeBase = 0.05;
-    		shapePartT11.OP.AddRange(new Out[1] { Shas.GetSquare() });
+    		shapePartT11.OP.AddRange(new CurveOutline[1] { Shas.GetSquare() });
     		shapePartT11.OP.ScalingY(shapePartT11.OP.GetCenter(), 0.5 * num);
     		shapePartT11.Closed = true;
     		shapePartT11.TextColor = Col.White;
@@ -4674,7 +4674,7 @@ namespace SlaveMatrix
     		shapePartT12.Text = GameText.魔獣;
     		shapePartT12.FontSize = 0.15;
     		shapePartT12.SizeBase = 0.05;
-    		shapePartT12.OP.AddRange(new Out[1] { Shas.GetSquare() });
+    		shapePartT12.OP.AddRange(new CurveOutline[1] { Shas.GetSquare() });
     		shapePartT12.OP.ScalingY(shapePartT12.OP.GetCenter(), 0.5 * num);
     		shapePartT12.Closed = true;
     		shapePartT12.TextColor = Col.White;
@@ -4695,7 +4695,7 @@ namespace SlaveMatrix
     		shapePartT13.Text = GameText.竜系;
     		shapePartT13.FontSize = 0.15;
     		shapePartT13.SizeBase = 0.05;
-    		shapePartT13.OP.AddRange(new Out[1] { Shas.GetSquare() });
+    		shapePartT13.OP.AddRange(new CurveOutline[1] { Shas.GetSquare() });
     		shapePartT13.OP.ScalingY(shapePartT13.OP.GetCenter(), 0.5 * num);
     		shapePartT13.Closed = true;
     		shapePartT13.TextColor = Col.White;
@@ -4851,7 +4851,7 @@ namespace SlaveMatrix
     		shapePartT14.Text = GameText.チェンジ;
     		shapePartT14.FontSize = 0.15;
     		shapePartT14.SizeBase = 0.05;
-    		shapePartT14.OP.AddRange(new Out[1] { Shas.GetSquare() });
+    		shapePartT14.OP.AddRange(new CurveOutline[1] { Shas.GetSquare() });
     		shapePartT14.OP.ScalingY(shapePartT14.OP.GetCenter(), 0.5 * num);
     		shapePartT14.Closed = true;
     		shapePartT14.TextColor = Col.White;
@@ -4877,7 +4877,7 @@ namespace SlaveMatrix
     		shapePartT15.Text = GameText.購入;
     		shapePartT15.FontSize = 0.15;
     		shapePartT15.SizeBase = 0.05;
-    		shapePartT15.OP.AddRange(new Out[1] { Shas.GetSquare() });
+    		shapePartT15.OP.AddRange(new CurveOutline[1] { Shas.GetSquare() });
     		shapePartT15.OP.ScalingY(shapePartT15.OP.GetCenter(), 0.5 * num);
     		shapePartT15.Closed = true;
     		shapePartT15.TextColor = Col.White;

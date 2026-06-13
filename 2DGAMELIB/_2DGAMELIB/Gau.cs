@@ -286,7 +286,7 @@ namespace _2DGAMELIB
     		base_ = new ShapePart
     		{
     			Tag = Name + "_ベース",
-    			InitializeOP = new Out[1] { Shas.GetSquare() },
+    			InitializeOP = new CurveOutline[1] { Shas.GetSquare() },
     			PositionBase = Position,
     			SizeBase = Size,
     			SizeXBase = Width,
@@ -300,7 +300,7 @@ namespace _2DGAMELIB
     		frame1 = new ShapePart
     		{
     			Tag = Name + "_フレーム1",
-    			InitializeOP = new Out[1] { Shas.GetSquare() },
+    			InitializeOP = new CurveOutline[1] { Shas.GetSquare() },
     			PositionBase = Position,
     			SizeBase = Size,
     			SizeXBase = Width * GetWidthMag(),
@@ -315,7 +315,7 @@ namespace _2DGAMELIB
     			frame2 = new ShapePart
     			{
     				Tag = Name + "_フレーム2",
-    				InitializeOP = new Out[1] { Shas.GetSquare() },
+    				InitializeOP = new CurveOutline[1] { Shas.GetSquare() },
     				PositionBase = Position,
     				SizeBase = Size,
     				SizeXBase = Width * GetWidthMag(),
@@ -329,7 +329,7 @@ namespace _2DGAMELIB
     		gauge = new ShapePart
     		{
     			Tag = Name + "_ゲージ",
-    			InitializeOP = new Out[1] { Shas.GetSquare() },
+    			InitializeOP = new CurveOutline[1] { Shas.GetSquare() },
     			PositionBase = GetGaugePosition(),
     			SizeBase = Size,
     			SizeXBase = Width * GetWidthMag() * GetGaugeWidthMag(Margin),
@@ -343,7 +343,7 @@ namespace _2DGAMELIB
     			this.knob = new ShapePart
     			{
     				Tag = Name + "_ノブ",
-    				InitializeOP = new Out[1] { Shas.GetSquare() },
+    				InitializeOP = new CurveOutline[1] { Shas.GetSquare() },
     				SizeBase = Size,
     				SizeXBase = GetKnobWidthMag(Width),
     				SizeYBase = GetKnobHeightMag(Height),

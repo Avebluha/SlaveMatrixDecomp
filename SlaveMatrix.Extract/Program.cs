@@ -646,7 +646,7 @@ class Program
             ["Size"] = ShapePart.Size,
             ["SizeX"] = ShapePart.SizeX,
             ["SizeY"] = ShapePart.SizeY,
-            ["Out"] = new JArray()
+            ["CurveOutline"] = new JArray()
         };
 
         foreach (var outObj in ShapePart.OP)
@@ -659,7 +659,7 @@ class Program
             };
             foreach (var pt in outObj.ps)
                 ((JArray)outJ["Points"]).Add(ExportVec(pt));
-            ((JArray)result["Out"]).Add(outJ);
+            ((JArray)result["CurveOutline"]).Add(outJ);
         }
 
         if (ShapePart.JP.Count > 0)

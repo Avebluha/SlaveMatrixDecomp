@@ -66,7 +66,7 @@ namespace _2DGAMELIB
 
     	private static void GetMinMaxX(ShapePart ShapePart, ref double MinX, ref double MaxX)
     	{
-    		foreach (Out item in ShapePart.OP)
+    		foreach (CurveOutline item in ShapePart.OP)
     		{
     			foreach (Vector2D p in item.ps)
     			{
@@ -85,7 +85,7 @@ namespace _2DGAMELIB
 
     	private static void GetMinMaxY(ShapePart ShapePart, ref double MinY, ref double MaxY)
     	{
-    		foreach (Out item in ShapePart.OP)
+    		foreach (CurveOutline item in ShapePart.OP)
     		{
     			foreach (Vector2D p in item.ps)
     			{

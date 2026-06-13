@@ -17,7 +17,8 @@ namespace _2DGAMELIB
         private static readonly RemappedTypeBinder Binder = new RemappedTypeBinder()
             .Add("_2DGAMELIB.Par", typeof(ShapePart))
             .Add("_2DGAMELIB.ParT", typeof(ShapePartT))
-            .Add("_2DGAMELIB.Pars", typeof(PartGroup));
+            .Add("_2DGAMELIB.Pars", typeof(PartGroup))
+            .Add("_2DGAMELIB.Out", typeof(CurveOutline));
 
         private static BinaryFormatter NewFormatter()
         {
