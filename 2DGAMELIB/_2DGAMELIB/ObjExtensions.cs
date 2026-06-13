@@ -31,19 +31,19 @@ namespace _2DGAMELIB
             ["四足下腕"] = "四足LowerArm",
         };
 
-        public static void MigrateKeys(this Obj obj)
+        public static void MigrateKeys(this BodyTemplate BodyTemplate)
         {
             var newDict = new OrderedDictionary<string, VariantGrid>();
 
-            foreach (var key in obj.Keys)
+            foreach (var key in BodyTemplate.Keys)
             {
                 var newKey = KeyMap.TryGetValue(key, out var mapped) ? mapped : key;
-                var difs = obj.Difss[key];
+                var difs = BodyTemplate.Difss[key];
 
                 newDict.Add(newKey, difs);
             }
 
-            obj.Difss = newDict;
+            BodyTemplate.Difss = newDict;
         }
 
     }

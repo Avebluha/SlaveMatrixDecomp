@@ -16,33 +16,33 @@ namespace SlaveMatrix
 {
     public static class Sta
     {
-    	public static Obj 胴体; //胴体
+    	public static BodyTemplate 胴体; //胴体
 
-        public static Obj 肩左;
+        public static BodyTemplate 肩左;
 
-    	public static Obj 腕左;
+    	public static BodyTemplate 腕左;
 
-    	public static Obj 脚左;
+    	public static BodyTemplate 脚左;
 
-    	public static Obj 尻尾;
+    	public static BodyTemplate 尻尾;
 
-    	public static Obj 半身;
+    	public static BodyTemplate 半身;
 
-    	public static Obj 肢左;
+    	public static BodyTemplate 肢左;
 
-    	public static Obj 肢中;
+    	public static BodyTemplate 肢中;
 
-    	public static Obj 性器;
+    	public static BodyTemplate 性器;
 
-    	public static Obj 性器付;
+    	public static BodyTemplate 性器付;
 
-    	public static Obj スタンプ;
+    	public static BodyTemplate スタンプ;
 
-    	public static Obj カーソル;
+    	public static BodyTemplate カーソル;
 
-    	public static Obj その他;
+    	public static BodyTemplate その他;
 
-    	public static Obj タイル;
+    	public static BodyTemplate タイル;
 
     	public static double MaxAre;
 
@@ -1090,14 +1090,14 @@ namespace SlaveMatrix
 
             //胴体.SaveExMod("C:\\Users\\adel4\\Documents\\胴体");
             //Ser.ToJson(胴体, "C:\\Users\\adel4\\Documents\\胴体.json");
-            //胴体 = Ser.UnJson<Obj>("C:\\Users\\adel4\\Documents\\胴体.json");
+            //胴体 = Ser.UnJson<BodyTemplate>("C:\\Users\\adel4\\Documents\\胴体.json");
 
             obj = Resources.肩左.ObjLoad();
             obj.MigrateKeys();
             肩左 = obj;
             //肩左.SaveExMod("C:\\Users\\dave\\Documents\\肩左");
             //Ser.ToJson(肩左, "C:\\Users\\dave\\Documents\\肩左.json");
-            //肩左 = Ser.UnJson<Obj>("C:\\Users\\dave\\Documents\\肩左.json");
+            //肩左 = Ser.UnJson<BodyTemplate>("C:\\Users\\dave\\Documents\\肩左.json");
 
 
             obj = Resources.腕左.ObjLoad();
@@ -1105,64 +1105,64 @@ namespace SlaveMatrix
             腕左 = obj;
             //腕左.SaveExMod("C:\\Users\\dave\\Documents\\腕左");
             //Ser.ToJson(腕左, "C:\\Users\\dave\\Documents\\腕左.json");
-            //腕左 = Ser.UnJson<Obj>("C:\\Users\\dave\\Documents\\腕左.json");
+            //腕左 = Ser.UnJson<BodyTemplate>("C:\\Users\\dave\\Documents\\腕左.json");
 
             obj = Resources.脚左.ObjLoad();
             obj.MigrateKeys();
             脚左 = obj;
             //脚左.SaveExMod("C:\\Users\\dave\\Documents\\脚左");
             //Ser.ToJson(脚左, "C:\\Users\\dave\\Documents\\脚左.json");
-            //脚左 = Ser.UnJson<Obj>("C:\\Users\\dave\\Documents\\脚左.json");
+            //脚左 = Ser.UnJson<BodyTemplate>("C:\\Users\\dave\\Documents\\脚左.json");
 
             尻尾 = Resources.尻尾.ObjLoad();
             //尻尾.SaveExMod("C:\\Users\\dave\\Documents\\尻尾");
             //Ser.ToJson(尻尾, "C:\\Users\\dave\\Documents\\尻尾.json");
-            //尻尾 = Ser.UnJson<Obj>("C:\\Users\\dave\\Documents\\尻尾.json");
+            //尻尾 = Ser.UnJson<BodyTemplate>("C:\\Users\\dave\\Documents\\尻尾.json");
 
             半身 = Resources.半身.ObjLoad();
             //半身.SaveExMod("C:\\Users\\dave\\Documents\\半身");
             //Ser.ToJson(半身, "C:\\Users\\dave\\Documents\\半身.json");
-            //半身 = Ser.UnJson<Obj>("C:\\Users\\dave\\Documents\\半身.json");
+            //半身 = Ser.UnJson<BodyTemplate>("C:\\Users\\dave\\Documents\\半身.json");
 
             肢左 = Resources.肢左.ObjLoad();
             //肢左.SaveExMod("C:\\Users\\dave\\Documents\\肢左");
             //Ser.ToJson(肢左, "C:\\Users\\dave\\Documents\\肢左.json");
-            //肢左 = Ser.UnJson<Obj>("C:\\Users\\dave\\Documents\\肢左.json");
+            //肢左 = Ser.UnJson<BodyTemplate>("C:\\Users\\dave\\Documents\\肢左.json");
 
             肢中 = Resources.肢中.ObjLoad();
             //肢中.SaveExMod("C:\\Users\\dave\\Documents\\肢中");
             //Ser.ToJson(肢中, "C:\\Users\\dave\\Documents\\肢中.json");
-            //肢中 = Ser.UnJson<Obj>("C:\\Users\\dave\\Documents\\肢中.json");
+            //肢中 = Ser.UnJson<BodyTemplate>("C:\\Users\\dave\\Documents\\肢中.json");
 
             性器 = Resources.性器.ObjLoad();
             //性器.SaveExMod("C:\\Users\\dave\\Documents\\性器");
             //Ser.ToJson(性器, "C:\\Users\\dave\\Documents\\性器.json");
-            //性器 = Ser.UnJson<Obj>("C:\\Users\\dave\\Documents\\性器.json");
+            //性器 = Ser.UnJson<BodyTemplate>("C:\\Users\\dave\\Documents\\性器.json");
 
             性器付 = Resources.性器付.ObjLoad();
             //性器付.SaveExMod("C:\\Users\\dave\\Documents\\性器付");
             //Ser.ToJson(性器付, "C:\\Users\\dave\\Documents\\性器付.json");
-            //性器付 = Ser.UnJson<Obj>("C:\\Users\\dave\\Documents\\性器付.json");
+            //性器付 = Ser.UnJson<BodyTemplate>("C:\\Users\\dave\\Documents\\性器付.json");
 
             スタンプ = Resources.スタンプ.ObjLoad();
             //スタンプ.SaveExMod("C:\\Users\\dave\\Documents\\スタンプ");
             //Ser.ToJson(スタンプ, "C:\\Users\\dave\\Documents\\スタンプ.json");
-            //スタンプ = Ser.UnJson<Obj>("C:\\Users\\dave\\Documents\\スタンプ.json");
+            //スタンプ = Ser.UnJson<BodyTemplate>("C:\\Users\\dave\\Documents\\スタンプ.json");
 
             カーソル = Resources.カーソル.ObjLoad();
             //カーソル.SaveExMod("C:\\Users\\dave\\Documents\\カーソル");
             //Ser.ToJson(カーソル, "C:\\Users\\dave\\Documents\\カーソル.json");
-            //カーソル = Ser.UnJson<Obj>("C:\\Users\\dave\\Documents\\カーソル.json");
+            //カーソル = Ser.UnJson<BodyTemplate>("C:\\Users\\dave\\Documents\\カーソル.json");
 
             その他 = Resources.その他.ObjLoad();
             //その他.SaveExMod("C:\\Users\\dave\\Documents\\その他");
             //Ser.ToJson(その他, "C:\\Users\\dave\\Documents\\その他.json");
-            //その他 = Ser.UnJson<Obj>("C:\\Users\\dave\\Documents\\その他.json");
+            //その他 = Ser.UnJson<BodyTemplate>("C:\\Users\\dave\\Documents\\その他.json");
 
             タイル = Resources.タイル.ObjLoad();
             //タイル.SaveExMod("C:\\Users\\dave\\Documents\\タイル");
             //Ser.ToJson(タイル, "C:\\Users\\dave\\Documents\\タイル.json");
-            //タイル = Ser.UnJson<Obj>("C:\\Users\\dave\\Documents\\タイル.json");
+            //タイル = Ser.UnJson<BodyTemplate>("C:\\Users\\dave\\Documents\\タイル.json");
 
             MaxAre = 0.0584246154149664;
     		Elet = typeof(Ele);

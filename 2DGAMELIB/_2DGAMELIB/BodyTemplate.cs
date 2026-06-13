@@ -7,7 +7,7 @@ using System.IO;
 namespace _2DGAMELIB
 {
     [Serializable]
-    public class Obj
+    public class BodyTemplate
     {
     	public string Tag = "";
 
@@ -189,7 +189,7 @@ namespace _2DGAMELIB
     		}
     	}
 
-    	public Obj SetDefaultR()
+    	public BodyTemplate SetDefaultR()
     	{
     		foreach (VariantGrid value in Difss.Values)
     		{
@@ -198,7 +198,7 @@ namespace _2DGAMELIB
     		return this;
     	}
 
-    	public Obj()
+    	public BodyTemplate()
     	{
     	}
 

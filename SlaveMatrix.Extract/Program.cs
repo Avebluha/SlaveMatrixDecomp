@@ -239,7 +239,7 @@ class Program
         foreach (var (name, data) in resources)
         {
             Console.Write($"Loading {name}... ");
-            Obj? obj;
+            BodyTemplate? obj;
             try
             {
                 obj = data.ObjLoadRaw();
@@ -558,12 +558,12 @@ class Program
         return result;
     }
 
-    static JObject ExportObj(Obj obj)
+    static JObject ExportObj(BodyTemplate BodyTemplate)
     {
-        var keys = obj.Difss.Keys.Cast<string>().ToList();
+        var keys = BodyTemplate.Difss.Keys.Cast<string>().ToList();
         var result = new JObject
         {
-            ["Tag"] = obj.Tag ?? "",
+            ["Tag"] = BodyTemplate.Tag ?? "",
             ["KeyCount"] = keys.Count,
             ["Keys"] = JArray.FromObject(keys),
             ["Difss"] = new JObject()
@@ -571,7 +571,7 @@ class Program
 
         foreach (var key in keys)
         {
-            result["Difss"][key] = ExportDifs(obj.Difss[key]);
+            result["Difss"][key] = ExportDifs(BodyTemplate.Difss[key]);
         }
 
         return result;

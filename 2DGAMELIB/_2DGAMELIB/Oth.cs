@@ -156,16 +156,16 @@ namespace _2DGAMELIB
     		GetMinMaxY(ShapePart, ref MM[1].Y, ref MM[0].Y);
     	}
 
-public static Obj ObjLoad(this byte[] bd)
+public static BodyTemplate ObjLoad(this byte[] bd)
         {
-            return bd.Load<byte[]>().ToDeserialObject<Obj>().SetDefaultR();
+            return bd.Load<byte[]>().ToDeserialObject<BodyTemplate>().SetDefaultR();
         }
 
-        public static Obj? ObjLoadRaw(this byte[] bd)
+        public static BodyTemplate? ObjLoadRaw(this byte[] bd)
         {
             try
             {
-                return bd.Load<byte[]>().ToDeserialObject<Obj>();
+                return bd.Load<byte[]>().ToDeserialObject<BodyTemplate>();
             }
             catch
             {
