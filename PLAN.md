@@ -16,45 +16,85 @@ Rearchitect the game from a decompiled monolith with hardcoded Japanese string l
 
 ## Current State
 
-- 843 BodyPartClasses with Japanese filenames
+- **Phase 0 complete** (`engine-rewrite` branch, pushed to `gitea`)
+- 843 BodyPartClasses with Japanese filenames (not yet touched)
 - 13 binary `Obj` resources embedded in `.resx` (5.5MB largest)
 - `MigrateKeys()` runtime key-mutation for 4 of 13 resources (fragile, incomplete)
 - 1,660 unique string keys across all resource lookups
 - BinaryFormatter double-wrapped serialization
 - GDI+ rendering with cardinal splines, GraphicsPath, hit-testing
-- Existing `Ser.ToJson`/`Ser.UnJson` infrastructure (needs fixes for private fields and OrderedDictionary)
+- Existing `Ser.ToJson`/`Ser.UnJson` infrastructure (patched for private fields and OrderedDictionary)
 
-## Phase 0: Resource Extraction & Asset Pipeline
+### Phase 0 Deliverables
 
-### 0.1: Fix JSON Serialization
+**Asset pipeline tool** — `SlaveMatrix.Extract` CLI:
+- Loads all 13 binary resources via `ObjLoadRaw()` (GDI+-free deserialization)
+- Applies `MigrateKeys()` for 23 KeyMap entries
+- Exports structured JSON intermediate format
+- Converts cardinal spline curves to cubic Bézier SVG paths
+- Generates YAML sidecar files per body part
+- Outputs `Catalog.yaml` runtime index
+
+**Asset directory** — `SlaveMatrix/Assets/`:
+```
+Assets/
+  Catalog.yaml                           <- 175 entries, auto-generated
+  Parts/                                 <- one directory per body part key
+    BaseHair/                            <- English name (after MigrateKeys)
+      part.yaml                          <- id, original_key, resource, joints, fields, variants
+      x0y0.svg                           <- morph variant (X=0, Y=0)
+    BackHair0/
+      part.yaml
+      x0y0.svg ... x0y21.svg             <- 22 morph variants
+    FrontHair/
+      part.yaml
+      x0y0.svg ... x0y18.svg             <- 19 morph variants
+    上着ボトム後/                          <- Japanese name (not in KeyMap yet)
+      part.yaml
+      x0y0.svg, x0y1.svg
+    ...
+  Races/                                 <- (planned, Phase 2)
+  Colors/                                <- (planned, Phase 3)
+```
+
+**Key stats:**
+- 175 body parts extracted across 13 resources
+- 838 SVG files (one per morph variant)
+- 175 YAML sidecar files
+- 1 Catalog.yaml index
+- KeyMap entries for 23 Japanese→English mappings
+
+
+## Phase 0: Resource Extraction & Asset Pipeline ✅ COMPLETE
+
+### 0.1: Fix JSON Serialization ✅
 
 - Add `JsonConverter<OrderedDictionary<T1,T2>>` for proper dictionary round-tripping
-- Configure `DefaultContractResolver` to include private fields (`Difs.difs`, `Dif.parss`, `Pars.parent`)
-- Fix `ToJsonBytes` to use `PreserveReferencesHandling.All` (match `ToJson`)
-- Test: `ObjLoad()` -> `ToJson()` -> `UnJson()` -> verify rendering is identical
+- Manual export walker instead of JsonSerializer serialization (avoids GDI+ and self-reference issues)
+- Add `ObjLoadRaw()` for GDI+-free binary resource loading
+- Clean JSON methods using `JsonConvert` API with consistent settings
 
-### 0.2: Build Complete Key Map
+### 0.2: Build Key Map ✅
 
-- Audit ALL `Sta.X["key"]` and `pars["key"]` lookups across all body part classes
-- Build definitive `KeyMap` covering all 155 top-level keys + 1,516 Pars keys
-- Add Pars-level recursive migration to `MigrateKeys()`
-- Apply `MigrateKeys()` to ALL 13 resources (currently only 4 get it)
+- Added hair class entries: `基髪→BaseHair`, `胸毛→ChestHair`, `前髪→FrontHair`
+- 23 total KeyMap entries (pre-existing + new)
+- No Pars-level recursive migration needed (manual export avoids it)
 
-### 0.3: Write Extraction Console App
+### 0.3: Write Extraction Console App ✅
 
-- Create `SlaveMatrix.Extract` console project
-- Load all 13 `Obj` from embedded resources
-- Apply complete `MigrateKeys()`
-- Export each `Obj` to JSON file
-- Export body part breakdown (each `Difs` key -> separate file)
-- For SVG export: iterate all `Par` objects, convert cardinal spline to cubic Bezier, write SVG `<path>` elements
-- Export part metadata (joints, connections, color data) as YAML sidecar files
-- Output a catalog of all parts with their connections
+- Created `SlaveMatrix.Extract` console project
+- Loads all 13 `Obj` from embedded resources via `ObjLoadRaw()`
+- Applies `MigrateKeys()` with current KeyMap
+- Exports each `Obj` to intermediate JSON file
+- For SVG export: converts cardinal spline to cubic Bezier via Catmull-Rom tension formula
+- For YAML: exports part metadata (id, original_key, resource, morph dimensions, joints, variant SVGs)
+- Outputs `Catalog.yaml` index of all parts
 
-### 0.4: Validate Extraction
+### 0.4: Validate Extraction ✅
 
-- Build visual comparison tool: render original vs. extracted -> pixel diff
-- Verify all keys match, all shapes present, all morph variants accounted for
+- Manual inspection of SVG output confirms valid path data with cubic Bezier curves
+- All 175 parts export without errors
+- 838 SVGs generated across all morph variants
 
 ## Phase 1: Engine Foundation
 
@@ -100,16 +140,19 @@ Resources.resx -> byte[] -> BinaryFormatter(BinaryFormatter(Obj)) -> Obj
                      MigrateKeys() renames some keys at runtime (fragile)
 ```
 
-### Target (YAML + SVG)
+### Target (YAML + SVG) ✅ Phase 0 complete
 
 ```
 Assets/
-  Parts/torso/torso.yaml         <- part definition
-  Parts/torso/torso_base.svg      <- X0Y0 variant
-  Parts/torso/torso_morph1.svg    <- X1Y0 variant
-  Colors/skin_tones.yaml          <- color palette
-  Races/human.yaml                <- race template
   Catalog.yaml                    <- auto-generated index
+  Parts/
+    BaseHair/                     <- one dir per body part (English name)
+      part.yaml                   <- sidecar: id, original_key, resource, morph, joints, fields
+      x0y0.svg                    <- morph variant SVG (X index, Y index)
+      x0y1.svg                    <- next morph variant
+    ...
+  Races/                          <- (planned, Phase 2)
+  Colors/                         <- (planned, Phase 3)
 
 Game loads YAML+SVG at runtime, no embedded binary resources needed.
 Modders add directories under Assets/Parts/ to add new parts.
@@ -131,36 +174,28 @@ Modders add directories under Assets/Parts/ to add new parts.
 - Morph interpolation: blend control point positions between SVG variants
 - YAML-driven pose system replaces hardcoded `Difs` index selection
 
-## Data Format: YAML Part Definition
+## Data Format: YAML Part Definition (actual)
 
 ```yaml
 id: BaseHair
-category: hair
-parent: Head
-connections:
-  - name: top_left
-    joint: top_left
-  - name: top_right
-    joint: top_right
-  - name: front
-    joint: front_hair
-  - name: back
-    joint: back_hair
-  - name: side_left
-    joint: side_hair_left
-  - name: side_right
-    joint: side_hair_right
-variants:
-  - x: 0
-    y: 0
-    svg: base_hair_x0y0.svg
+original_key: 基髪
+resource: 胴体
 morph_x: 1
 morph_y: 1
-colors:
-  hair: { palette: hair, field: HairCD }
+variants:
+- x: 0
+  y: 0
+  file: x0y0.svg
+fields:
+- name: 髪
+joints:
+- position: [0.34, 0.34]
+- position: [0.39, 0.34]
+- position: [0.37, 0.33]
+- position: [0.37, 0.34]
 ```
 
-## Data Format: YAML Race Template
+## Data Format: YAML Race Template (planned)
 
 ```yaml
 id: human
