@@ -619,7 +619,7 @@ namespace SlaveMatrix
     						item.SizeXCont = xc;
     					}
     				}
-    				調教UI.ペニス.位置C = Oth.GetRandomVector() * 0.001;
+    				調教UI.ペニス.位置C = GeometryUtils.GetRandomVector() * 0.001;
     				調教UI.射精.位置C = 調教UI.ペニス.位置C;
     			},
     			OnReach = delegate(Motion m)
@@ -678,7 +678,7 @@ namespace SlaveMatrix
     					if (調教UI.射精.Yv >= 0.65 && 調教UI.Focus == ペニス)
     					{
     						p = 調教UI.射精.Body.Current.EnumAllPar().First();
-    						cp = p.ToGlobal(p.OP.GetCenter() + Oth.GetRandomVector() * 0.0025);
+    						cp = p.ToGlobal(p.OP.GetCenter() + GeometryUtils.GetRandomVector() * 0.0025);
     						hc = ペニス処理2.Med.GetHitColor(ペニス処理2.Med.FromBasePosition(cp));
     						ペニス処理2.Bod.Addぶっかけ(cp, hc);
     						調教UI.Action(c = ペニス処理2.Cha.GetContact(ref hc).c, ActionType.Contact, CurrentState.Start, ToolType.Penis, 0, 1, 機械: false, 射精: true);

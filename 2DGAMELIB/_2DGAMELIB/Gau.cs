@@ -367,44 +367,44 @@ namespace _2DGAMELIB
     		case Open.Top:
     		{
     			frame1.GetMiY_MaY(out var MM7);
-    			PlusBrush = Oth.GetLGB(Unit, MM7, ref PlusColor2, ref PlusColor1);
+    			PlusBrush = GeometryUtils.GetLGB(Unit, MM7, ref PlusColor2, ref PlusColor1);
     			if (Range == Range.MinusPlus)
     			{
     				frame2.GetMiY_MaY(out var MM8);
-    				MinusBrush = Oth.GetLGB(Unit, MM8, ref MinusColor1, ref MinusColor2);
+    				MinusBrush = GeometryUtils.GetLGB(Unit, MM8, ref MinusColor1, ref MinusColor2);
     			}
     			break;
     		}
     		case Open.Bot:
     		{
     			frame1.GetMaY_MiY(out var MM3);
-    			PlusBrush = Oth.GetLGB(Unit, MM3, ref PlusColor2, ref PlusColor1);
+    			PlusBrush = GeometryUtils.GetLGB(Unit, MM3, ref PlusColor2, ref PlusColor1);
     			if (Range == Range.MinusPlus)
     			{
     				frame2.GetMaY_MiY(out var MM4);
-    				MinusBrush = Oth.GetLGB(Unit, MM4, ref MinusColor1, ref MinusColor2);
+    				MinusBrush = GeometryUtils.GetLGB(Unit, MM4, ref MinusColor1, ref MinusColor2);
     			}
     			break;
     		}
     		case Open.Rig:
     		{
     			frame1.GetMaX_MiX(out var MM5);
-    			PlusBrush = Oth.GetLGB(Unit, MM5, ref PlusColor2, ref PlusColor1);
+    			PlusBrush = GeometryUtils.GetLGB(Unit, MM5, ref PlusColor2, ref PlusColor1);
     			if (Range == Range.MinusPlus)
     			{
     				frame2.GetMaX_MiX(out var MM6);
-    				MinusBrush = Oth.GetLGB(Unit, MM6, ref MinusColor1, ref MinusColor2);
+    				MinusBrush = GeometryUtils.GetLGB(Unit, MM6, ref MinusColor1, ref MinusColor2);
     			}
     			break;
     		}
     		case Open.Lef:
     		{
     			frame1.GetMiX_MaX(out var MM);
-    			PlusBrush = Oth.GetLGB(Unit, MM, ref PlusColor2, ref PlusColor1);
+    			PlusBrush = GeometryUtils.GetLGB(Unit, MM, ref PlusColor2, ref PlusColor1);
     			if (Range == Range.MinusPlus)
     			{
     				frame2.GetMiX_MaX(out var MM2);
-    				MinusBrush = Oth.GetLGB(Unit, MM2, ref MinusColor1, ref MinusColor2);
+    				MinusBrush = GeometryUtils.GetLGB(Unit, MM2, ref MinusColor1, ref MinusColor2);
     			}
     			break;
     		}
@@ -419,12 +419,12 @@ namespace _2DGAMELIB
     		{
     			PlusBrush.Dispose();
     			frame1.GetMiY_MaY(out var MM7);
-    			PlusBrush = Oth.GetLGB(Unit, MM7, Color.FromArgb((int)(255.0 * Alpha), PlusColor2), Color.FromArgb((int)(255.0 * Alpha), PlusColor1));
+    			PlusBrush = GeometryUtils.GetLGB(Unit, MM7, Color.FromArgb((int)(255.0 * Alpha), PlusColor2), Color.FromArgb((int)(255.0 * Alpha), PlusColor1));
     			if (Range == Range.MinusPlus)
     			{
     				MinusBrush.Dispose();
     				frame2.GetMiY_MaY(out var MM8);
-    				MinusBrush = Oth.GetLGB(Unit, MM8, Color.FromArgb((int)(255.0 * Alpha), MinusColor1), Color.FromArgb((int)(255.0 * Alpha), MinusColor2));
+    				MinusBrush = GeometryUtils.GetLGB(Unit, MM8, Color.FromArgb((int)(255.0 * Alpha), MinusColor1), Color.FromArgb((int)(255.0 * Alpha), MinusColor2));
     			}
     			break;
     		}
@@ -432,12 +432,12 @@ namespace _2DGAMELIB
     		{
     			PlusBrush.Dispose();
     			frame1.GetMaY_MiY(out var MM3);
-    			PlusBrush = Oth.GetLGB(Unit, MM3, Color.FromArgb((int)(255.0 * Alpha), PlusColor2), Color.FromArgb((int)(255.0 * Alpha), PlusColor1));
+    			PlusBrush = GeometryUtils.GetLGB(Unit, MM3, Color.FromArgb((int)(255.0 * Alpha), PlusColor2), Color.FromArgb((int)(255.0 * Alpha), PlusColor1));
     			if (Range == Range.MinusPlus)
     			{
     				MinusBrush.Dispose();
     				frame2.GetMaY_MiY(out var MM4);
-    				MinusBrush = Oth.GetLGB(Unit, MM4, Color.FromArgb((int)(255.0 * Alpha), MinusColor1), Color.FromArgb((int)(255.0 * Alpha), MinusColor2));
+    				MinusBrush = GeometryUtils.GetLGB(Unit, MM4, Color.FromArgb((int)(255.0 * Alpha), MinusColor1), Color.FromArgb((int)(255.0 * Alpha), MinusColor2));
     			}
     			break;
     		}
@@ -445,12 +445,12 @@ namespace _2DGAMELIB
     		{
     			PlusBrush.Dispose();
     			frame1.GetMaX_MiX(out var MM5);
-    			PlusBrush = Oth.GetLGB(Unit, MM5, Color.FromArgb((int)(255.0 * Alpha), PlusColor2), Color.FromArgb((int)(255.0 * Alpha), PlusColor1));
+    			PlusBrush = GeometryUtils.GetLGB(Unit, MM5, Color.FromArgb((int)(255.0 * Alpha), PlusColor2), Color.FromArgb((int)(255.0 * Alpha), PlusColor1));
     			if (Range == Range.MinusPlus)
     			{
     				MinusBrush.Dispose();
     				frame2.GetMaX_MiX(out var MM6);
-    				MinusBrush = Oth.GetLGB(Unit, MM6, Color.FromArgb((int)(255.0 * Alpha), MinusColor1), Color.FromArgb((int)(255.0 * Alpha), MinusColor2));
+    				MinusBrush = GeometryUtils.GetLGB(Unit, MM6, Color.FromArgb((int)(255.0 * Alpha), MinusColor1), Color.FromArgb((int)(255.0 * Alpha), MinusColor2));
     			}
     			break;
     		}
@@ -458,12 +458,12 @@ namespace _2DGAMELIB
     		{
     			PlusBrush.Dispose();
     			frame1.GetMiX_MaX(out var MM);
-    			PlusBrush = Oth.GetLGB(Unit, MM, Color.FromArgb((int)(255.0 * Alpha), PlusColor2), Color.FromArgb((int)(255.0 * Alpha), PlusColor1));
+    			PlusBrush = GeometryUtils.GetLGB(Unit, MM, Color.FromArgb((int)(255.0 * Alpha), PlusColor2), Color.FromArgb((int)(255.0 * Alpha), PlusColor1));
     			if (Range == Range.MinusPlus)
     			{
     				MinusBrush.Dispose();
     				frame2.GetMiX_MaX(out var MM2);
-    				MinusBrush = Oth.GetLGB(Unit, MM2, Color.FromArgb((int)(255.0 * Alpha), MinusColor1), Color.FromArgb((int)(255.0 * Alpha), MinusColor2));
+    				MinusBrush = GeometryUtils.GetLGB(Unit, MM2, Color.FromArgb((int)(255.0 * Alpha), MinusColor1), Color.FromArgb((int)(255.0 * Alpha), MinusColor2));
     			}
     			break;
     		}

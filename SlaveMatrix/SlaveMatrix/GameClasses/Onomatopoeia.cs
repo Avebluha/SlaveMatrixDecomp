@@ -36,7 +36,7 @@ namespace SlaveMatrix
     		{
     			if (b)
     			{
-    				pt.PositionCont = Oth.GetRandomVector() * 0.0025 * d;
+    				pt.PositionCont = GeometryUtils.GetRandomVector() * 0.0025 * d;
     			}
     			pt.TextColor = Color.FromArgb((int)((double)(int)pt.TextColor.A * m.Value.Inverse()), pt.TextColor);
     			Are.DisplayGraphics.TextRenderingHint = TextRenderingHint.AntiAlias;

@@ -364,8 +364,8 @@ namespace SlaveMatrix
     					d = m.Value.Inverse();
     					マウス処理2.対象.Element.尺度C = s * d;
     				}
-    				マウス処理2.対象.Element.位置C = Oth.GetRandomVector() * d * 0.0005;
-    				調教UI.マウス.X2Y0_舌.PositionCont = Oth.GetRandomVector() * d * 0.001;
+    				マウス処理2.対象.Element.位置C = GeometryUtils.GetRandomVector() * d * 0.0005;
+    				調教UI.マウス.X2Y0_舌.PositionCont = GeometryUtils.GetRandomVector() * d * 0.001;
     				if (sw.IsRunning)
     				{
     					if (sw.ElapsedMilliseconds > 250)

@@ -2031,7 +2031,7 @@ namespace SlaveMatrix
     		switch (c.CharacterData.Emotion)
     		{
     		case EmotionType.none:
-    			switch (Oth.GetRandomIndex(c.否定_(), c.屈辱_(), c.羞恥_(), c.受容_(), c.欲望_(), c.興奮_(), c.余裕_(), c.幸福_(), c.喜悦_(), c.淫乱_(), c.其他_()))
+    			switch (GeometryUtils.GetRandomIndex(c.否定_(), c.屈辱_(), c.羞恥_(), c.受容_(), c.欲望_(), c.興奮_(), c.余裕_(), c.幸福_(), c.喜悦_(), c.淫乱_(), c.其他_()))
     			{
     			case 0:
     				c.CharacterData.Emotion = EmotionType.Denial;
@@ -2069,7 +2069,7 @@ namespace SlaveMatrix
     			}
     			break;
     		case EmotionType.Denial:
-    			switch (Oth.GetRandomIndex(c.否定_(), c.屈辱_(), c.羞恥_(), c.喜悦_()))
+    			switch (GeometryUtils.GetRandomIndex(c.否定_(), c.屈辱_(), c.羞恥_(), c.喜悦_()))
     			{
     			case 0:
     				c.CharacterData.Emotion = EmotionType.Denial;
@@ -2086,7 +2086,7 @@ namespace SlaveMatrix
     			}
     			break;
     		case EmotionType.Humiliation:
-    			switch (Oth.GetRandomIndex(c.否定_(), c.屈辱_(), c.羞恥_(), c.興奮_()))
+    			switch (GeometryUtils.GetRandomIndex(c.否定_(), c.屈辱_(), c.羞恥_(), c.興奮_()))
     			{
     			case 0:
     				c.CharacterData.Emotion = EmotionType.Denial;
@@ -2103,7 +2103,7 @@ namespace SlaveMatrix
     			}
     			break;
     		case EmotionType.Shame:
-    			switch (Oth.GetRandomIndex(c.屈辱_(), c.羞恥_(), c.興奮_()))
+    			switch (GeometryUtils.GetRandomIndex(c.屈辱_(), c.羞恥_(), c.興奮_()))
     			{
     			case 0:
     				c.CharacterData.Emotion = EmotionType.Humiliation;
@@ -2117,7 +2117,7 @@ namespace SlaveMatrix
     			}
     			break;
     		case EmotionType.Acceptance:
-    			switch (Oth.GetRandomIndex(c.羞恥_(), c.受容_(), c.欲望_(), c.興奮_(), c.余裕_()))
+    			switch (GeometryUtils.GetRandomIndex(c.羞恥_(), c.受容_(), c.欲望_(), c.興奮_(), c.余裕_()))
     			{
     			case 0:
     				c.CharacterData.Emotion = EmotionType.Shame;
@@ -2137,7 +2137,7 @@ namespace SlaveMatrix
     			}
     			break;
     		case EmotionType.Desire:
-    			switch (Oth.GetRandomIndex(c.受容_(), c.欲望_(), c.興奮_(), c.喜悦_(), c.淫乱_()))
+    			switch (GeometryUtils.GetRandomIndex(c.受容_(), c.欲望_(), c.興奮_(), c.喜悦_(), c.淫乱_()))
     			{
     			case 0:
     				c.CharacterData.Emotion = EmotionType.Acceptance;
@@ -2157,7 +2157,7 @@ namespace SlaveMatrix
     			}
     			break;
     		case EmotionType.Excitement:
-    			switch (Oth.GetRandomIndex(c.羞恥_(), c.欲望_(), c.興奮_(), c.喜悦_(), c.淫乱_()))
+    			switch (GeometryUtils.GetRandomIndex(c.羞恥_(), c.欲望_(), c.興奮_(), c.喜悦_(), c.淫乱_()))
     			{
     			case 0:
     				c.CharacterData.Emotion = EmotionType.Shame;
@@ -2177,7 +2177,7 @@ namespace SlaveMatrix
     			}
     			break;
     		case EmotionType.余裕:
-    			switch (Oth.GetRandomIndex(c.受容_(), c.欲望_(), c.興奮_(), c.余裕_(), c.幸福_()))
+    			switch (GeometryUtils.GetRandomIndex(c.受容_(), c.欲望_(), c.興奮_(), c.余裕_(), c.幸福_()))
     			{
     			case 0:
     				c.CharacterData.Emotion = EmotionType.Acceptance;
@@ -2197,7 +2197,7 @@ namespace SlaveMatrix
     			}
     			break;
     		case EmotionType.Happiness:
-    			switch (Oth.GetRandomIndex(c.受容_(), c.欲望_(), c.余裕_(), c.幸福_(), c.喜悦_()))
+    			switch (GeometryUtils.GetRandomIndex(c.受容_(), c.欲望_(), c.余裕_(), c.幸福_(), c.喜悦_()))
     			{
     			case 0:
     				c.CharacterData.Emotion = EmotionType.Acceptance;
@@ -2217,7 +2217,7 @@ namespace SlaveMatrix
     			}
     			break;
     		case EmotionType.Joy:
-    			switch (Oth.GetRandomIndex(c.羞恥_(), c.受容_(), c.欲望_(), c.興奮_(), c.幸福_(), c.喜悦_(), c.淫乱_()))
+    			switch (GeometryUtils.GetRandomIndex(c.羞恥_(), c.受容_(), c.欲望_(), c.興奮_(), c.幸福_(), c.喜悦_(), c.淫乱_()))
     			{
     			case 0:
     				c.CharacterData.Emotion = EmotionType.Shame;
@@ -2243,7 +2243,7 @@ namespace SlaveMatrix
     			}
     			break;
     		case EmotionType.Lewd:
-    			switch (Oth.GetRandomIndex(c.屈辱_(), c.羞恥_(), c.欲望_(), c.興奮_(), c.幸福_(), c.喜悦_(), c.淫乱_()))
+    			switch (GeometryUtils.GetRandomIndex(c.屈辱_(), c.羞恥_(), c.欲望_(), c.興奮_(), c.幸福_(), c.喜悦_(), c.淫乱_()))
     			{
     			case 0:
     				c.CharacterData.Emotion = EmotionType.Humiliation;
@@ -2269,7 +2269,7 @@ namespace SlaveMatrix
     			}
     			break;
     		case EmotionType.Other:
-    			switch (Oth.GetRandomIndex(c.羞恥_(), c.受容_(), c.余裕_(), c.幸福_(), c.其他_()))
+    			switch (GeometryUtils.GetRandomIndex(c.羞恥_(), c.受容_(), c.余裕_(), c.幸福_(), c.其他_()))
     			{
     			case 0:
     				c.CharacterData.Emotion = EmotionType.Shame;
@@ -2331,7 +2331,7 @@ namespace SlaveMatrix
     		if (Virgin && CurrentActionType == ActionType.Insertion && (CurrentToolType == ToolType.Penis || CurrentToolType == ToolType.Dildo || CurrentToolType == ToolType.Vibrator || CurrentToolType == ToolType.Drill || CurrentToolType == ToolType.デンマ || CurrentToolType == ToolType.AnalVibrator) && CurrentContactType == ContactType.Vagina && 挿入Lvn > 2)
     		{
     			Reaction2();
-    			Cha.Body.Waist.位置B += Oth.GetRandomVector() * 0.0004;
+    			Cha.Body.Waist.位置B += GeometryUtils.GetRandomVector() * 0.0004;
     			Cha.Body.HipMotionValue = RNG.XS.NextDouble();
     			switch (RNG.XS.Next(2))
     			{
@@ -2393,7 +2393,7 @@ namespace SlaveMatrix
     	public static void Reaction1()
     	{
     		Reaction2();
-    		Cha.Body.Waist.位置B += Oth.GetRandomVector() * 0.0004;
+    		Cha.Body.Waist.位置B += GeometryUtils.GetRandomVector() * 0.0004;
     		Cha.Body.HipMotionValue = RNG.XS.NextDouble();
     		Cha.Emotion();
     		Cha.UpdateExpression();
@@ -2503,7 +2503,7 @@ namespace SlaveMatrix
     		else
     		{
     			double num2 = (Tension + Pride) * 0.5;
-    			num = 1 + Oth.GetRandomIndex((Shame + Tension + Training + Pride) / 4.0, (Sensitivity + Affection + Lust) / 3.0 - num2, (Sensitivity + Excitement + Affection + Lust + Training) / 5.0 - num2);
+    			num = 1 + GeometryUtils.GetRandomIndex((Shame + Tension + Training + Pride) / 4.0, (Sensitivity + Affection + Lust) / 3.0 - num2, (Sensitivity + Excitement + Affection + Lust + Training) / 5.0 - num2);
     		}
     		string text = "";
     		if (Cha.Body.口i == 4 || Cha.Body.口i == 10 || Cha.Body.口i == 11)
@@ -2529,7 +2529,7 @@ namespace SlaveMatrix
 
     	public static string 語尾(this string s)
     	{
-    		switch (Oth.GetRandomIndex((Shame + Tension) * 0.5, Cha.苦痛条件() ? 1.0 : ((Sensitivity + Excitement + Lust) / 3.0), (Affection + Lust) * 0.4 - Pride))
+    		switch (GeometryUtils.GetRandomIndex((Shame + Tension) * 0.5, Cha.苦痛条件() ? 1.0 : ((Sensitivity + Excitement + Lust) / 3.0), (Affection + Lust) * 0.4 - Pride))
     		{
     		case 0:
     			return s + Sta.end[(!RNG.XS.NextBool()) ? 1u : 0u];

@@ -897,7 +897,7 @@ namespace SlaveMatrix
     		{
     			array[i] = count - (num - i).Abs();
     		}
-    		num = Oth.GetRandomIndex(array);
+    		num = GeometryUtils.GetRandomIndex(array);
     		int num2 = ((int)((double)t[num].Length * v2)).Limit(0, t[num].Length);
     		return t[num][num2];
     	}

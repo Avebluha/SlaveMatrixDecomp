@@ -7,7 +7,7 @@ using System.Text;
 
 namespace _2DGAMELIB
 {
-    public static class Oth
+    public static class GeometryUtils
     {
     	private static double s1;
 
@@ -349,7 +349,7 @@ public static BodyTemplate ObjLoad(this byte[] bd)
     		return string.Join(Separator, strs);
     	}
 
-    	static Oth()
+    	static GeometryUtils()
     	{
     		s1 = 1.01;
     		s0 = s1.Reciprocal();

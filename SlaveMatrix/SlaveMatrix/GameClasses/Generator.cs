@@ -104,7 +104,7 @@ namespace SlaveMatrix
 
     	public static Unit 娼婦労働妊娠父方()
     	{
-    		switch (Oth.GetRandomIndex(7.0, 5.0, 3.0, 1.0))
+    		switch (GeometryUtils.GetRandomIndex(7.0, 5.0, 3.0, 1.0))
     		{
     		case 0:
     			return Generate(SpeciesDefaults.Getヒューマン(), SpeciesDefaults.Getヒューマン(), 2, GameText.ヒューマン);
@@ -139,7 +139,7 @@ namespace SlaveMatrix
 
     	protected Unit GetBird()
     	{
-    		return Oth.GetRandomIndex(GameText.ハーピー.GetRareWeight(), GameText.ハルピュイア.GetRareWeight(), GameText.フェニックス.GetRareWeight()) switch
+    		return GeometryUtils.GetRandomIndex(GameText.ハーピー.GetRareWeight(), GameText.ハルピュイア.GetRareWeight(), GameText.フェニックス.GetRareWeight()) switch
     		{
     			0 => Generate(SpeciesDefaults.GetHarpy(), SpeciesDefaults.GetHarpy(), 2, GameText.ハーピー), 
     			1 => Generate(SpeciesDefaults.Getハルピュイア(), SpeciesDefaults.Getハルピュイア(), 2, GameText.ハルピュイア), 
@@ -150,7 +150,7 @@ namespace SlaveMatrix
 
     	protected Unit GetSnake()
     	{
-    		return Oth.GetRandomIndex(GameText.ラミア.GetRareWeight(), GameText.ヒュドラ.GetRareWeight(), GameText.エキドナ.GetRareWeight(), GameText.ウロボロス.GetRareWeight()) switch
+    		return GeometryUtils.GetRandomIndex(GameText.ラミア.GetRareWeight(), GameText.ヒュドラ.GetRareWeight(), GameText.エキドナ.GetRareWeight(), GameText.ウロボロス.GetRareWeight()) switch
     		{
     			0 => Generate(SpeciesDefaults.Getラミア(), SpeciesDefaults.Getラミア(), 2, GameText.ラミア), 
     			1 => Generate(SpeciesDefaults.Getヒュドラ(), SpeciesDefaults.Getヒュドラ(), 3, GameText.ヒュドラ), 
@@ -162,7 +162,7 @@ namespace SlaveMatrix
 
     	protected Unit GetBeast()
     	{
-    		return Oth.GetRandomIndex(GameText.ウェアキャット.GetRareWeight(), GameText.ウェアウルフ.GetRareWeight(), GameText.ウェアフォックス.GetRareWeight(), GameText.ミノタウロス.GetRareWeight(), GameText.アフール.GetRareWeight(), GameText.オノケンタウレ.GetRareWeight(), GameText.ヒッポケンタウレ.GetRareWeight(), GameText.ブケンタウレ.GetRareWeight(), GameText.カプラケンタウレ.GetRareWeight(), GameText.レオントケンタウレ.GetRareWeight(), GameText.ティグリスケンタウレ.GetRareWeight(), GameText.パンテーラケンタウレ.GetRareWeight(), GameText.チータケンタウレ.GetRareWeight()) switch
+    		return GeometryUtils.GetRandomIndex(GameText.ウェアキャット.GetRareWeight(), GameText.ウェアウルフ.GetRareWeight(), GameText.ウェアフォックス.GetRareWeight(), GameText.ミノタウロス.GetRareWeight(), GameText.アフール.GetRareWeight(), GameText.オノケンタウレ.GetRareWeight(), GameText.ヒッポケンタウレ.GetRareWeight(), GameText.ブケンタウレ.GetRareWeight(), GameText.カプラケンタウレ.GetRareWeight(), GameText.レオントケンタウレ.GetRareWeight(), GameText.ティグリスケンタウレ.GetRareWeight(), GameText.パンテーラケンタウレ.GetRareWeight(), GameText.チータケンタウレ.GetRareWeight()) switch
     		{
     			0 => Generate(SpeciesDefaults.Getウェアキャット(), SpeciesDefaults.Getウェアキャット(), 2, GameText.ウェアキャット), 
     			1 => Generate(SpeciesDefaults.Getウェアウルフ(), SpeciesDefaults.Getウェアウルフ(), 2, GameText.ウェアウルフ), 
@@ -183,7 +183,7 @@ namespace SlaveMatrix
 
     	protected Unit GetAquatic()
     	{
-    		switch (Oth.GetRandomIndex(GameText.カッパ.GetRareWeight(), GameText.マーメイド.GetRareWeight(), GameText.オールドマーメイド.GetRareWeight(), GameText.ドルフィンマーメイド.GetRareWeight(), GameText.イクテュオケンタウレ.GetRareWeight(), GameText.デルピヌスケンタウレ.GetRareWeight(), GameText.シーラミア.GetRareWeight(), GameText.セイレーン.GetRareWeight(), GameText.スキュラ.GetRareWeight(), GameText.カリュブディス.GetRareWeight(), GameText.クラーケン.GetRareWeight(), GameText.オールドスキュラ.GetRareWeight()))
+    		switch (GeometryUtils.GetRandomIndex(GameText.カッパ.GetRareWeight(), GameText.マーメイド.GetRareWeight(), GameText.オールドマーメイド.GetRareWeight(), GameText.ドルフィンマーメイド.GetRareWeight(), GameText.イクテュオケンタウレ.GetRareWeight(), GameText.デルピヌスケンタウレ.GetRareWeight(), GameText.シーラミア.GetRareWeight(), GameText.セイレーン.GetRareWeight(), GameText.スキュラ.GetRareWeight(), GameText.カリュブディス.GetRareWeight(), GameText.クラーケン.GetRareWeight(), GameText.オールドスキュラ.GetRareWeight()))
     		{
     		case 0:
     			return Generate(SpeciesDefaults.Getカッパ(), SpeciesDefaults.Getカッパ(), 2, GameText.カッパ);
@@ -225,7 +225,7 @@ namespace SlaveMatrix
 
     	protected Unit GetInsect()
     	{
-    		switch (Oth.GetRandomIndex(GameText.ウェアマンティス.GetRareWeight(), GameText.ウェアドラゴンフライ.GetRareWeight(), GameText.ウェアビートル.GetRareWeight(), GameText.ウェアスタッグビートル.GetRareWeight(), GameText.アラクネ.GetRareWeight(), GameText.ギルタブリル.GetRareWeight(), GameText.ギルタブルル.GetRareWeight(), GameText.ムカデジョウロウ.GetRareWeight(), GameText.サンドワーム.GetRareWeight(), GameText.フェアリー.GetRareWeight()))
+    		switch (GeometryUtils.GetRandomIndex(GameText.ウェアマンティス.GetRareWeight(), GameText.ウェアドラゴンフライ.GetRareWeight(), GameText.ウェアビートル.GetRareWeight(), GameText.ウェアスタッグビートル.GetRareWeight(), GameText.アラクネ.GetRareWeight(), GameText.ギルタブリル.GetRareWeight(), GameText.ギルタブルル.GetRareWeight(), GameText.ムカデジョウロウ.GetRareWeight(), GameText.サンドワーム.GetRareWeight(), GameText.フェアリー.GetRareWeight()))
     		{
     		case 0:
     			return Generate(SpeciesDefaults.Getウェアマンティス(), SpeciesDefaults.Getウェアマンティス(), 1, GameText.ウェアマンティス);
@@ -261,7 +261,7 @@ namespace SlaveMatrix
 
     	protected Unit GetHumanoid()
     	{
-    		switch (Oth.GetRandomIndex(GameText.リリン.GetRareWeight(), GameText.エルフ.GetRareWeight(), GameText.ドワーフ.GetRareWeight(), GameText.オーグリス.GetRareWeight(), GameText.サイクロプス.GetRareWeight(), GameText.デビル.GetRareWeight(), GameText.エンジェル.GetRareWeight(), GameText.サキュバス.GetRareWeight(), GameText.アルラウネ.GetRareWeight(), GameText.スライム.GetRareWeight(), GameText.エイリアン.GetRareWeight()))
+    		switch (GeometryUtils.GetRandomIndex(GameText.リリン.GetRareWeight(), GameText.エルフ.GetRareWeight(), GameText.ドワーフ.GetRareWeight(), GameText.オーグリス.GetRareWeight(), GameText.サイクロプス.GetRareWeight(), GameText.デビル.GetRareWeight(), GameText.エンジェル.GetRareWeight(), GameText.サキュバス.GetRareWeight(), GameText.アルラウネ.GetRareWeight(), GameText.スライム.GetRareWeight(), GameText.エイリアン.GetRareWeight()))
     		{
     		case 0:
     			return Generate(SpeciesDefaults.Getリリン(), SpeciesDefaults.Getリリン(), 2, GameText.リリン);
@@ -298,7 +298,7 @@ namespace SlaveMatrix
 
     	protected Unit Get幻獣()
     	{
-    		return Oth.GetRandomIndex(GameText.カーバンクル.GetRareWeight(), GameText.ペガサス.GetRareWeight(), GameText.ユニコーン.GetRareWeight(), GameText.バイコーン.GetRareWeight(), GameText.アリコーン.GetRareWeight(), GameText.グリフォン.GetRareWeight(), GameText.モノケロス.GetRareWeight(), GameText.ヒッポグリフ.GetRareWeight()) switch
+    		return GeometryUtils.GetRandomIndex(GameText.カーバンクル.GetRareWeight(), GameText.ペガサス.GetRareWeight(), GameText.ユニコーン.GetRareWeight(), GameText.バイコーン.GetRareWeight(), GameText.アリコーン.GetRareWeight(), GameText.グリフォン.GetRareWeight(), GameText.モノケロス.GetRareWeight(), GameText.ヒッポグリフ.GetRareWeight()) switch
     		{
     			0 => Generate(SpeciesDefaults.Getカーバンクル(), SpeciesDefaults.Getカーバンクル(), 2, GameText.カーバンクル), 
     			1 => Generate(SpeciesDefaults.Getペガサス(), SpeciesDefaults.Getペガサス(), 3, GameText.ペガサス), 
@@ -314,7 +314,7 @@ namespace SlaveMatrix
 
     	protected Unit Get魔獣()
     	{
-    		switch (Oth.GetRandomIndex(GameText.キマイラ.GetRareWeight(), GameText.スフィンクス.GetRareWeight(), GameText.カトブレパス.GetRareWeight(), GameText.バジリスク.GetRareWeight(), GameText.コカトリス.GetRareWeight(), GameText.ゴルゴン.GetRareWeight()))
+    		switch (GeometryUtils.GetRandomIndex(GameText.キマイラ.GetRareWeight(), GameText.スフィンクス.GetRareWeight(), GameText.カトブレパス.GetRareWeight(), GameText.バジリスク.GetRareWeight(), GameText.コカトリス.GetRareWeight(), GameText.ゴルゴン.GetRareWeight()))
     		{
     		case 0:
     			return Generate(SpeciesDefaults.Getキマイラ(), SpeciesDefaults.Getキマイラ(), 3, GameText.キマイラ);
@@ -338,7 +338,7 @@ namespace SlaveMatrix
 
     	protected Unit GetDragon()
     	{
-    		return Oth.GetRandomIndex(GameText.リザードマン.GetRareWeight(), GameText.ドラゴニュート.GetRareWeight(), GameText.ワーム.GetRareWeight(), GameText.リュウ.GetRareWeight(), GameText.ワイバーン.GetRareWeight(), GameText.ドラコケンタウレ.GetRareWeight(), GameText.ドラゴン.GetRareWeight()) switch
+    		return GeometryUtils.GetRandomIndex(GameText.リザードマン.GetRareWeight(), GameText.ドラゴニュート.GetRareWeight(), GameText.ワーム.GetRareWeight(), GameText.リュウ.GetRareWeight(), GameText.ワイバーン.GetRareWeight(), GameText.ドラコケンタウレ.GetRareWeight(), GameText.ドラゴン.GetRareWeight()) switch
     		{
     			0 => Generate(SpeciesDefaults.Getリザードマン(), SpeciesDefaults.Getリザードマン(), 2, GameText.リザードマン), 
     			1 => Generate(SpeciesDefaults.Getドラゴニュート(), SpeciesDefaults.Getドラゴニュート(), 3, GameText.ドラゴニュート), 

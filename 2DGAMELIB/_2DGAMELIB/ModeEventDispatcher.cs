@@ -347,10 +347,10 @@ namespace _2DGAMELIB
         //hit color stuff
         public Color GetUniqueColor()
     	{
-    		Oth.GetRandomColor(out var ret);
+    		GeometryUtils.GetRandomColor(out var ret);
     		while (HitColors.Contains(ret))
     		{
-    			Oth.GetRandomColor(out ret);
+    			GeometryUtils.GetRandomColor(out ret);
     		}
     		HitColors.Add(ret);
     		return ret;
@@ -358,10 +358,10 @@ namespace _2DGAMELIB
 
     	public void GetUniqueColor(out Color c)
     	{
-    		Oth.GetRandomColor(out c);
+    		GeometryUtils.GetRandomColor(out c);
     		while (HitColors.Contains(c))
     		{
-    			Oth.GetRandomColor(out c);
+    			GeometryUtils.GetRandomColor(out c);
     		}
     		HitColors.Add(c);
     	}

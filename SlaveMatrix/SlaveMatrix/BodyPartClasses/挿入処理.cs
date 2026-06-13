@@ -430,7 +430,7 @@ namespace SlaveMatrix
     	{
     		if ((0.1 * Player.肛挿入度 * Player.Tension.Inverse()).Lot())
     		{
-    			switch (Oth.GetRandomIndex(4.0, 4.0, 1.0, 1.0))
+    			switch (GeometryUtils.GetRandomIndex(4.0, 4.0, 1.0, 1.0))
     			{
     			case 0:
     				//Sounds.挿抜前3.Play();

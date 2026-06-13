@@ -1468,7 +1468,7 @@ namespace SlaveMatrix
     				Color c4 = (Color)item2.GetValue(父方);
     				if (!c3.IsEmpty && !c4.IsEmpty)
     				{
-    					item2.SetValue(体色2, Oth.GetInter(ref c3, ref c4));
+    					item2.SetValue(体色2, GeometryUtils.GetInter(ref c3, ref c4));
     				}
     				else
     				{
@@ -1485,7 +1485,7 @@ namespace SlaveMatrix
     				Color c6 = (Color)item3.GetValue(父方);
     				if (!c5.IsEmpty && !c6.IsEmpty)
     				{
-    					item3.SetValue(体色2, Oth.GetInter(ref c5, ref c6));
+    					item3.SetValue(体色2, GeometryUtils.GetInter(ref c5, ref c6));
     				}
     				else
     				{
@@ -1502,7 +1502,7 @@ namespace SlaveMatrix
     				Color c2 = (Color)item4.GetValue(父方);
     				if (!c.IsEmpty && !c2.IsEmpty)
     				{
-    					item4.SetValue(体色2, Oth.GetInter(ref c, ref c2));
+    					item4.SetValue(体色2, GeometryUtils.GetInter(ref c, ref c2));
     				}
     				else
     				{
@@ -1549,7 +1549,7 @@ namespace SlaveMatrix
     		{
     			double[] obj = new double[4] { 1.0, 2.0, 8.0, 0.0 };
     			obj[3] = 500.0 * ((Sta.GameData.祝福 != null && Sta.GameData.祝福.Race == GameText.カーバンクル) ? 0.5 : 1.0);
-    			switch (Oth.GetRandomIndex(obj))
+    			switch (GeometryUtils.GetRandomIndex(obj))
     			{
     			case 0:
     				if (体色2.血統.Contains(GameText.アルビノ))
@@ -1690,13 +1690,13 @@ namespace SlaveMatrix
     					体色2.目左 = 体色2.目右;
     					break;
     				case 2:
-    					Oth.GetInter(ref 体色2.目左, ref 体色2.目右, out 体色2.縦目);
+    					GeometryUtils.GetInter(ref 体色2.目左, ref 体色2.目右, out 体色2.縦目);
     					体色2.頬目左 = 体色2.目左;
     					体色2.頬目右 = 体色2.目左;
     					体色2.目右 = 体色2.目左;
     					break;
     				case 3:
-    					Oth.GetInter(ref 体色2.目左, ref 体色2.目右, out 体色2.縦目);
+    					GeometryUtils.GetInter(ref 体色2.目左, ref 体色2.目右, out 体色2.縦目);
     					体色2.頬目左 = 体色2.目右;
     					体色2.頬目右 = 体色2.目右;
     					体色2.目左 = 体色2.目右;
@@ -1756,13 +1756,13 @@ namespace SlaveMatrix
     				体色2.目左 = 体色2.目右;
     				break;
     			case 2:
-    				Oth.GetInter(ref 体色2.目左, ref 体色2.目右, out 体色2.縦目);
+    				GeometryUtils.GetInter(ref 体色2.目左, ref 体色2.目右, out 体色2.縦目);
     				体色2.頬目左 = 体色2.目左;
     				体色2.頬目右 = 体色2.目左;
     				体色2.目右 = 体色2.目左;
     				break;
     			case 3:
-    				Oth.GetInter(ref 体色2.目左, ref 体色2.目右, out 体色2.縦目);
+    				GeometryUtils.GetInter(ref 体色2.目左, ref 体色2.目右, out 体色2.縦目);
     				体色2.頬目左 = 体色2.目右;
     				体色2.頬目右 = 体色2.目右;
     				体色2.目左 = 体色2.目右;
