@@ -18,6 +18,189 @@ class Program
     static string AssetsDir = Path.Combine(ProjectRoot, "SlaveMatrix", "Assets");
     static string OutputDir;
 
+    // Complete translation map for extraction output.
+    // Separate from the runtime KeyMap in ObjExtensions — the runtime map only
+    // contains entries that match the old game code's string lookups.
+    static readonly Dictionary<string, string> EnglishNameMap = new()
+    {
+        ["咳"] = "Cough",
+        ["腰"] = "Waist",
+        ["胴"] = "Torso",
+        ["首"] = "Neck",
+        ["頭"] = "Head",
+        ["後髪0"] = "BackHair0",
+        ["後髪1"] = "BackHair1",
+        ["横髪"] = "SideHair",
+        ["脚"] = "Leg",
+        ["腕"] = "Arm",
+        ["肩"] = "Shoulder",
+        ["胸"] = "Chest",
+        ["下腕"] = "LowerArm",
+        ["上腕"] = "UpperArm",
+        ["鳥翼上腕"] = "鳥翼UpperArm",
+        ["獣翼上腕"] = "獣翼UpperArm",
+        ["四足上腕"] = "四足UpperArm",
+        ["鳥翼下腕"] = "鳥翼LowerArm",
+        ["獣翼下腕"] = "獣翼LowerArm",
+        ["四足下腕"] = "四足LowerArm",
+        ["基髪"] = "BaseHair",
+        ["胸毛"] = "ChestHair",
+        ["前髪"] = "FrontHair",
+        ["眉左"] = "EyebrowLeft",
+        ["額目"] = "ForeheadEye",
+        ["額瞼"] = "ForeheadEyelid",
+        ["顔ハイライト左"] = "FaceHighlightLeft",
+        ["顔面"] = "Face",
+        ["魔性中瞼左"] = "DemonicMidEyelidLeft",
+        ["魔性強瞼左"] = "DemonicStrongEyelidLeft",
+        ["魔性弱瞼左"] = "DemonicWeakEyelidLeft",
+        ["単眼目"] = "MonoEye",
+        ["単眼眉"] = "MonoEyebrow",
+        ["単眼瞼"] = "MonoEyelid",
+        ["単足"] = "MonoLeg",
+        ["獣性瞼左"] = "BestialEyelidLeft",
+        ["目傷左"] = "EyeScarLeft",
+        ["目尻影左"] = "EyeCornerShadowLeft",
+        ["目左"] = "EyeLeft",
+        ["目隠帯"] = "Blindfold",
+        ["頬目左"] = "CheekEyeLeft",
+        ["頬瞼左"] = "CheekEyelidLeft",
+        ["頬肌左"] = "CheekSkinLeft",
+        ["口"] = "Mouth",
+        ["舌"] = "Tongue",
+        ["涎左"] = "DroolLeft",
+        ["涎口裂け左"] = "DroolMouthGashLeft",
+        ["呼気"] = "Breath",
+        ["吹出し"] = "SpeechBubble",
+        ["鼻"] = "Nose",
+        ["鼻水左"] = "NoseDripLeft",
+        ["鼻肌"] = "NoseSkin",
+        ["耳"] = "Ear",
+        ["獣耳"] = "BeastEar",
+        ["角"] = "Horn",
+        ["胸郭"] = "Chest",
+        ["胸郭肌"] = "ChestSkin",
+        ["胸郭腹板"] = "ChestPlate",
+        ["胸左"] = "LeftBreast",
+        ["胴肌"] = "TorsoSkin",
+        ["胴腹板"] = "TorsoPlate",
+        ["腰肌"] = "WaistSkin",
+        ["ボテ腹"] = "PregnantBelly",
+        ["ボテ腹板"] = "PregnantBellyPlate",
+        ["固定帯"] = "FixingBelt",
+        ["紅潮"] = "Blush",
+        ["肛門"] = "Anus",
+        ["肛門精液垂れ"] = "AnusSemenDrip",
+        ["膣基"] = "VaginaBase",
+        ["膣内精液"] = "InternalSemen",
+        ["性器"] = "Genitals",
+        ["性器精液垂れ"] = "GenitalsSemenDrip",
+        ["射精"] = "Ejaculation",
+        ["放尿"] = "Urination",
+        ["噴乳左"] = "LactationLeft",
+        ["潮吹"] = "Squirting",
+        ["尾"] = "Tail",
+        ["背中"] = "Back",
+        ["手"] = "Hand",
+        ["足"] = "Foot",
+        ["腿"] = "Thigh",
+        ["前翅"] = "Forewing",
+        ["後翅"] = "Hindwing",
+        ["触手"] = "Tentacle",
+        ["触覚"] = "Antenna",
+        ["節足"] = "SegmentLeg",
+        ["虫鎌"] = "InsectScythe",
+        ["虫顎"] = "InsectJaw",
+        ["植"] = "Plant",
+        ["葉"] = "Leaf",
+        ["羽根箒"] = "FeatherDuster",
+        ["飛沫"] = "Splash",
+        ["飛膜先"] = "MembraneTip",
+        ["飛膜根"] = "MembraneBase",
+        ["上着トップ"] = "JacketTop",
+        ["上着ミドル"] = "JacketMid",
+        ["上着ボトム前"] = "JacketBottomFront",
+        ["上着ボトム後"] = "JacketBottomBack",
+        ["下着トップ"] = "UnderwearTop",
+        ["下着ボトム"] = "UnderwearBottom",
+        ["下着乳首左"] = "UnderwearNippleLeft",
+        ["下着陰核"] = "UnderwearClitoris",
+        ["帽子"] = "Hat",
+        ["パンスト"] = "Pantyhose",
+        ["キャップ左"] = "CapLeft",
+        ["キャップ中"] = "CapMid",
+        ["玉口枷"] = "BallGag",
+        ["留具前"] = "FastenerFront",
+        ["留具後"] = "FastenerBack",
+        ["拘束具上"] = "RestraintUpper",
+        ["拘束具下"] = "RestraintLower",
+        ["拘束鎖"] = "RestraintChain",
+        ["押し付け"] = "Pressing",
+        ["コモン"] = "CommonCursor",
+        ["ハンド"] = "HandCursor",
+        ["ペニス"] = "PenisCursor",
+        ["アナル"] = "AnalCursor",
+        ["マウス"] = "MouthCursor",
+        ["ディル"] = "DildoCursor",
+        ["デンマ"] = "VibratorCursor",
+        ["ドリル"] = "DrillCursor",
+        ["パール"] = "PearlCursor",
+        ["ロータ"] = "RotoCursor",
+        ["T字剃刀"] = "TRazorCursor",
+        ["ぶっかけ"] = "Bukkake",
+        ["キスマーク"] = "KissMark",
+        ["汗"] = "Sweat",
+        ["汚れ"] = "Stain",
+        ["流血中"] = "BleedingMid",
+        ["流血大"] = "BleedingLarge",
+        ["流血小"] = "BleedingSmall",
+        ["鞭痕"] = "WhipMark",
+        ["横髪左"] = "SideHairLeft",
+        ["涙左"] = "TearLeft",
+        ["青筋左"] = "VeinLeft",
+        ["頭部前"] = "Forehead",
+        ["頭部後"] = "BackOfHead",
+        ["鰭"] = "Fin",
+        ["獣翼手"] = "BeastWingHand",
+        ["鳥翼手"] = "BirdWingHand",
+        ["エイリアン目左"] = "AlienEyeLeft",
+        ["ピアス"] = "Piercing",
+        ["反応"] = "Reaction",
+        ["多足"] = "MultiLeg",
+        ["大顎上"] = "MandibleUpper",
+        ["大顎基"] = "MandibleBase",
+        ["意思表示"] = "Expression",
+        ["断面"] = "CrossSection",
+        ["染み"] = "Spot",
+        ["長物"] = "Phallus",
+        ["調教鞭"] = "Whip",
+        ["衝撃"] = "Impact",
+        ["鎖"] = "Chain",
+        ["四足ボテ腹"] = "QuadrupedPregnantBelly",
+        ["四足固定帯"] = "QuadrupedFixingBelt",
+        ["四足性器"] = "QuadrupedGenitals",
+        ["四足性器精液垂れ"] = "QuadrupedGenitalsSemenDrip",
+        ["四足手"] = "QuadrupedHand",
+        ["四足放尿"] = "QuadrupedUrination",
+        ["四足断面"] = "QuadrupedCrossSection",
+        ["四足染み"] = "QuadrupedSpot",
+        ["四足潮吹"] = "QuadrupedSquirting",
+        ["四足留具前"] = "QuadrupedFastenerFront",
+        ["四足留具後"] = "QuadrupedFastenerBack",
+        ["四足肛門"] = "QuadrupedAnus",
+        ["四足肛門精液垂れ"] = "QuadrupedAnusSemenDrip",
+        ["四足胴"] = "QuadrupedTorso",
+        ["四足胸郭"] = "QuadrupedChest",
+        ["四足脇"] = "QuadrupedSide",
+        ["四足脚"] = "QuadrupedLeg",
+        ["四足腰"] = "QuadrupedWaist",
+        ["四足腿"] = "QuadrupedThigh",
+        ["四足膣内精液"] = "QuadrupedInternalSemen",
+        ["四足膣基"] = "QuadrupedVaginaBase",
+        ["四足足"] = "QuadrupedFoot",
+        ["四足飛沫"] = "QuadrupedSplash",
+    };
+
     static void Main(string[] args)
     {
         Console.WriteLine("SlaveMatrix Asset Extractor");
@@ -66,6 +249,8 @@ class Program
             catch (Exception ex) { Console.WriteLine($"FAILED: {ex.Message}"); continue; }
 
             Console.Write("  Applying MigrateKeys... ");
+            // Capture original keys before migration for original_key tracking
+            var origKeys = obj.Difss.Keys.Cast<string>().ToList();
             obj.MigrateKeys();
             Console.WriteLine("OK");
 
@@ -77,17 +262,20 @@ class Program
 
             foreach (var key in keys)
             {
+                // Use extraction EnglishNameMap for directory naming
+                var engKey = EnglishNameMap.TryGetValue(key, out var mapped) ? mapped : key;
                 var difs = obj.Difss[key];
-                var partDir = Path.Combine(partsDir, SanitizeName(key));
+                var partDir = Path.Combine(partsDir, SanitizeName(engKey));
                 Directory.CreateDirectory(partDir);
 
                 var foundJoints = new List<string>();
-                var originalTag = jsonObj["Difss"]?[key]?["Tag"]?.ToString() ?? key;
+                // original_key: the pre-migration Japanese key
+                var originalKey = origKeys.Contains(key) ? key : origKeys.FirstOrDefault(ok => EnglishNameMap.GetValueOrDefault(ok, ok) == engKey) ?? key;
 
                 var partEntry = new JObject
                 {
-                    ["id"] = key,
-                    ["original_key"] = originalTag,
+                    ["id"] = engKey,
+                    ["original_key"] = originalKey,
                     ["resource"] = name,
                     ["morph_x"] = difs.CountX,
                     ["morph_y"] = difs.CountY,
@@ -145,8 +333,8 @@ class Program
 
                 catalogParts.Add(new JObject
                 {
-                    ["id"] = key,
-                    ["path"] = $"Parts/{SanitizeName(key)}/"
+                    ["id"] = engKey,
+                    ["path"] = $"Parts/{SanitizeName(engKey)}/"
                 });
             }
 
