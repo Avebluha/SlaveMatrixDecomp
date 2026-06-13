@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace _2DGAMELIB
 {
-    public class Buts
+    public class ButtonMap
     {
     	private OrderedDictionary<string, But> buts = new OrderedDictionary<string, But>();
 

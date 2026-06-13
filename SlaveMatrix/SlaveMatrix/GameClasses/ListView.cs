@@ -27,7 +27,7 @@ namespace SlaveMatrix
 
     	private ShapePartT[] pt;
 
-    	public Buts bs;
+    	public ButtonMap bs;
 
     	private double Space;
 
@@ -75,7 +75,7 @@ namespace SlaveMatrix
     		this.Are = Are;
     		this.Space = Space;
     		pt = new ShapePartT[acts.Length];
-    		bs = new Buts();
+    		bs = new ButtonMap();
     		for (int i = 0; i < acts.Length; i++)
     		{
     			pt[i] = new ShapePartT();

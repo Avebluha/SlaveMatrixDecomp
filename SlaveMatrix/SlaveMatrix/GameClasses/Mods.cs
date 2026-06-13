@@ -137,7 +137,7 @@ namespace SlaveMatrix
     	private static SubInfo si;
     	private static ListView SaveData;
     	private static InfoPanel ip;
-    	private static Buts dbs;
+    	private static ButtonMap dbs;
         private static Lab npl;
         public static TextBubble ViolaTextBubble;
         public static TextBubble SlaveTextBubble;
@@ -236,7 +236,7 @@ namespace SlaveMatrix
     		SaveData.SetHitColor(Med);
 
 
-    		dbs = new Buts();
+    		dbs = new ButtonMap();
 
 
 
@@ -1393,7 +1393,7 @@ namespace SlaveMatrix
 
     	public static Module MainForm(ModeEventDispatcher Med)
     	{
-    		Buts bs = new Buts();
+    		ButtonMap bs = new ButtonMap();
 
     		bs.Add("ボタン1", MyUI.Button2(Med, DrawBuffer, GameText.事務所, new Vector2D(0.85, 0.02), delegate
     		{
@@ -1999,7 +1999,7 @@ namespace SlaveMatrix
     			uint 淫紋価格 = 10000000u;
     			uint 衣装変更価格 = 10000000u;
     			bool d = false;
-    			Buts bs = new Buts();
+    			ButtonMap bs = new ButtonMap();
     			Swi 保守sw = new Swi(Color.DarkRed);
     			Swi 一般sw = new Swi(Color.DarkRed);
     			Swi 娼婦sw = new Swi(Color.DarkRed);
@@ -3308,7 +3308,7 @@ namespace SlaveMatrix
     		Character 祝福 = null;
     		bool d = false;
     		Lab l = new Lab(DrawBuffer, "ラベル1", new Vector2D(ip.MaiB.Position.X, 0.026), 0.1, 1.0, new Font("MS Gothic", 1f), 0.085, "No blessing", Col.White, Col.Black, ip.MaiB.BrushColor, Col.Black);
-    		Buts bs = new Buts();
+    		ButtonMap bs = new ButtonMap();
     		Action 祝福なし = delegate
     		{
     			bs["子"].Dra = false;
@@ -3329,7 +3329,7 @@ namespace SlaveMatrix
     			//Sounds.操作.Play();
     			Med.Mode = "メインフォーム";
     		}));
-    		Action<Buts> rs1 = delegate(Buts bs_)
+    		Action<ButtonMap> rs1 = delegate(ButtonMap bs_)
     		{
     			Color penColor = bs_["ボタン0"].PartGroup.Values.First().ToParT().PenColor;
     			foreach (But item in bs_.EnumBut.Skip(1))
@@ -3637,7 +3637,7 @@ namespace SlaveMatrix
     	public static Module Office(ModeEventDispatcher Med)
     	{
     		Module mod = new Module();
-    		Buts bs = new Buts();
+    		ButtonMap bs = new ButtonMap();
     		ShapePartT shapePartT = new ShapePartT();
     		shapePartT.Font = new Font("MS Gothic", 0.1f);
     		shapePartT.PositionBase = DrawBuffer.GetPosition(0.85, 0.02);
@@ -3903,7 +3903,7 @@ namespace SlaveMatrix
     	{
     		Module mod = new Module();
     		Vector2D position = DrawBuffer.GetPosition(0.15, 0.37);
-    		Buts bs = new Buts();
+    		ButtonMap bs = new ButtonMap();
 
     		bs.Add("ボタン0", MyUI.Button2(Med, DrawBuffer, GameText.戻る, new Vector2D(0.85, 0.02), delegate
     		{
@@ -4416,7 +4416,7 @@ namespace SlaveMatrix
     		Action Reload = null;
     		Unit u = null;
     		Generator g = null;
-    		Buts bs = new Buts();
+    		ButtonMap bs = new ButtonMap();
     		ShapePartT shapePartT = new ShapePartT();
     		shapePartT.Font = new Font("MS Gothic", 0.1f);
     		shapePartT.PositionBase = DrawBuffer.GetPosition(0.85, 0.02);
@@ -5102,7 +5102,7 @@ namespace SlaveMatrix
     	public static Module ToolShop(ModeEventDispatcher Med)
     	{
     		Module mod = new Module();
-    		Buts bs = new Buts();
+    		ButtonMap bs = new ButtonMap();
 
     		bs.Add("ボタン0", MyUI.Button2(Med, DrawBuffer, GameText.戻る, new Vector2D(0.85, 0.02), delegate
     		{
