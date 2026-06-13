@@ -15,8 +15,8 @@ parts:
   path: Parts/VaginaBase/
 - id: InternalSemen
   path: Parts/InternalSemen/
-- id: 断面
-  path: Parts/断面/
+- id: CrossSection
+  path: Parts/CrossSection/
 - id: PregnantBelly
   path: Parts/PregnantBelly/
 - id: WaistSkin
@@ -51,8 +51,8 @@ parts:
   path: Parts/DemonicStrongEyelidLeft/
 - id: BestialEyelidLeft
   path: Parts/BestialEyelidLeft/
-- id: エイリアン目左
-  path: Parts/エイリアン目左/
+- id: AlienEyeLeft
+  path: Parts/AlienEyeLeft/
 - id: NoseSkin
   path: Parts/NoseSkin/
 - id: EyeScarLeft
@@ -73,8 +73,8 @@ parts:
   path: Parts/EyeCornerShadowLeft/
 - id: FaceHighlightLeft
   path: Parts/FaceHighlightLeft/
-- id: 涙左
-  path: Parts/涙左/
+- id: TearLeft
+  path: Parts/TearLeft/
 - id: Blindfold
   path: Parts/Blindfold/
 - id: NoseDripLeft
@@ -99,16 +99,16 @@ parts:
   path: Parts/LeftBreast/
 - id: ChestHair
   path: Parts/ChestHair/
-- id: 横髪左
-  path: Parts/横髪左/
+- id: SideHairLeft
+  path: Parts/SideHairLeft/
 - id: FrontHair
   path: Parts/FrontHair/
 - id: MonoEyebrow
   path: Parts/MonoEyebrow/
 - id: EyebrowLeft
   path: Parts/EyebrowLeft/
-- id: 青筋左
-  path: Parts/青筋左/
+- id: VeinLeft
+  path: Parts/VeinLeft/
 - id: LactationLeft
   path: Parts/LactationLeft/
 - id: CapLeft
@@ -141,16 +141,16 @@ parts:
   path: Parts/FastenerBack/
 - id: FastenerFront
   path: Parts/FastenerFront/
-- id: 意思表示
-  path: Parts/意思表示/
-- id: 反応
-  path: Parts/反応/
+- id: Expression
+  path: Parts/Expression/
+- id: Reaction
+  path: Parts/Reaction/
 - id: SpeechBubble
   path: Parts/SpeechBubble/
 - id: Shoulder
   path: Parts/Shoulder/
-- id: 四足脇
-  path: Parts/四足脇/
+- id: QuadrupedSide
+  path: Parts/QuadrupedSide/
 - id: UpperArm
   path: Parts/UpperArm/
 - id: LowerArm
@@ -161,8 +161,8 @@ parts:
   path: Parts/鳥翼UpperArm/
 - id: 鳥翼LowerArm
   path: Parts/鳥翼LowerArm/
-- id: 鳥翼手
-  path: Parts/鳥翼手/
+- id: BirdWingHand
+  path: Parts/BirdWingHand/
 - id: MembraneBase
   path: Parts/MembraneBase/
 - id: MembraneTip
@@ -171,60 +171,60 @@ parts:
   path: Parts/獣翼UpperArm/
 - id: 獣翼LowerArm
   path: Parts/獣翼LowerArm/
-- id: 獣翼手
-  path: Parts/獣翼手/
+- id: BeastWingHand
+  path: Parts/BeastWingHand/
 - id: 四足UpperArm
   path: Parts/四足UpperArm/
 - id: 四足LowerArm
   path: Parts/四足LowerArm/
-- id: 四足手
-  path: Parts/四足手/
+- id: QuadrupedHand
+  path: Parts/QuadrupedHand/
 - id: Thigh
   path: Parts/Thigh/
 - id: Leg
   path: Parts/Leg/
 - id: Foot
   path: Parts/Foot/
-- id: 四足腿
-  path: Parts/四足腿/
-- id: 四足脚
-  path: Parts/四足脚/
-- id: 四足足
-  path: Parts/四足足/
+- id: QuadrupedThigh
+  path: Parts/QuadrupedThigh/
+- id: QuadrupedLeg
+  path: Parts/QuadrupedLeg/
+- id: QuadrupedFoot
+  path: Parts/QuadrupedFoot/
 - id: Tail
   path: Parts/Tail/
-- id: 長物
-  path: Parts/長物/
-- id: 四足腰
-  path: Parts/四足腰/
-- id: 四足胴
-  path: Parts/四足胴/
-- id: 四足胸郭
-  path: Parts/四足胸郭/
-- id: 四足膣基
-  path: Parts/四足膣基/
-- id: 四足膣内精液
-  path: Parts/四足膣内精液/
-- id: 四足断面
-  path: Parts/四足断面/
-- id: 四足ボテ腹
-  path: Parts/四足ボテ腹/
-- id: 四足肛門
-  path: Parts/四足肛門/
-- id: 四足固定帯
-  path: Parts/四足固定帯/
-- id: 多足
-  path: Parts/多足/
+- id: Phallus
+  path: Parts/Phallus/
+- id: QuadrupedWaist
+  path: Parts/QuadrupedWaist/
+- id: QuadrupedTorso
+  path: Parts/QuadrupedTorso/
+- id: QuadrupedChest
+  path: Parts/QuadrupedChest/
+- id: QuadrupedVaginaBase
+  path: Parts/QuadrupedVaginaBase/
+- id: QuadrupedInternalSemen
+  path: Parts/QuadrupedInternalSemen/
+- id: QuadrupedCrossSection
+  path: Parts/QuadrupedCrossSection/
+- id: QuadrupedPregnantBelly
+  path: Parts/QuadrupedPregnantBelly/
+- id: QuadrupedAnus
+  path: Parts/QuadrupedAnus/
+- id: QuadrupedFixingBelt
+  path: Parts/QuadrupedFixingBelt/
+- id: MultiLeg
+  path: Parts/MultiLeg/
 - id: MonoLeg
   path: Parts/MonoLeg/
-- id: 四足留具後
-  path: Parts/四足留具後/
-- id: 四足留具前
-  path: Parts/四足留具前/
-- id: 四足肛門精液垂れ
-  path: Parts/四足肛門精液垂れ/
-- id: 鰭
-  path: Parts/鰭/
+- id: QuadrupedFastenerBack
+  path: Parts/QuadrupedFastenerBack/
+- id: QuadrupedFastenerFront
+  path: Parts/QuadrupedFastenerFront/
+- id: QuadrupedAnusSemenDrip
+  path: Parts/QuadrupedAnusSemenDrip/
+- id: Fin
+  path: Parts/Fin/
 - id: Leaf
   path: Parts/Leaf/
 - id: Horn
@@ -251,14 +251,14 @@ parts:
   path: Parts/Tentacle/
 - id: Tail
   path: Parts/Tail/
-- id: 頭部後
-  path: Parts/頭部後/
-- id: 頭部前
-  path: Parts/頭部前/
-- id: 大顎基
-  path: Parts/大顎基/
-- id: 大顎上
-  path: Parts/大顎上/
+- id: BackOfHead
+  path: Parts/BackOfHead/
+- id: Forehead
+  path: Parts/Forehead/
+- id: MandibleBase
+  path: Parts/MandibleBase/
+- id: MandibleUpper
+  path: Parts/MandibleUpper/
 - id: Face
   path: Parts/Face/
 - id: Horn
@@ -267,8 +267,8 @@ parts:
   path: Parts/Back/
 - id: Genitals
   path: Parts/Genitals/
-- id: 四足性器
-  path: Parts/四足性器/
+- id: QuadrupedGenitals
+  path: Parts/QuadrupedGenitals/
 - id: Splash
   path: Parts/Splash/
 - id: Squirting
@@ -277,16 +277,16 @@ parts:
   path: Parts/Urination/
 - id: GenitalsSemenDrip
   path: Parts/GenitalsSemenDrip/
-- id: 四足飛沫
-  path: Parts/四足飛沫/
-- id: 四足潮吹
-  path: Parts/四足潮吹/
-- id: 四足放尿
-  path: Parts/四足放尿/
-- id: 四足性器精液垂れ
-  path: Parts/四足性器精液垂れ/
-- id: ピアス
-  path: Parts/ピアス/
+- id: QuadrupedSplash
+  path: Parts/QuadrupedSplash/
+- id: QuadrupedSquirting
+  path: Parts/QuadrupedSquirting/
+- id: QuadrupedUrination
+  path: Parts/QuadrupedUrination/
+- id: QuadrupedGenitalsSemenDrip
+  path: Parts/QuadrupedGenitalsSemenDrip/
+- id: Piercing
+  path: Parts/Piercing/
 - id: CapMid
   path: Parts/CapMid/
 - id: KissMark
@@ -325,14 +325,14 @@ parts:
   path: Parts/PearlCursor/
 - id: FeatherDuster
   path: Parts/FeatherDuster/
-- id: 調教鞭
-  path: Parts/調教鞭/
+- id: Whip
+  path: Parts/Whip/
 - id: TRazorCursor
   path: Parts/TRazorCursor/
-- id: 染み
-  path: Parts/染み/
-- id: 四足染み
-  path: Parts/四足染み/
+- id: Spot
+  path: Parts/Spot/
+- id: QuadrupedSpot
+  path: Parts/QuadrupedSpot/
 - id: RestraintUpper
   path: Parts/RestraintUpper/
 - id: RestraintLower

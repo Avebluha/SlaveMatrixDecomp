@@ -1,0 +1,34 @@
+id: Fin
+original_key: 鰭
+resource: 肢左
+morph_x: 2
+morph_y: 2
+variants:
+- x: 0
+  y: 0
+  file: x0y0.svg
+- x: 0
+  y: 1
+  file: x0y1.svg
+- x: 1
+  y: 0
+  file: x1y0.svg
+- x: 1
+  y: 1
+  file: x1y1.svg
+fields:
+- name: 鰭2
+- name: 鰭1
+joints:
+- position: [
+  -0.029220695985322773,
+  -0.004369601514097196
+]
+- position: [
+  0.0041140349756728905,
+  0.015700328990153806
+]
+- position: [
+  0.009875482766327808,
+  0.017795459169753315
+]
