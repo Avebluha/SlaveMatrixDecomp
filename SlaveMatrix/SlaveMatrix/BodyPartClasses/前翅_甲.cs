@@ -713,7 +713,7 @@ namespace SlaveMatrix
     	{
     		前翅_甲 前翅_甲2 = this;
     		ThisType = GetType();
-    		MorphVariant morphVariant = new MorphVariant(Sta.肢左["前翅"][0]);
+    		MorphVariant morphVariant = new MorphVariant(GlobalState.肢左["前翅"][0]);
     		Body = new VariantGrid();
     		Body.Tag = morphVariant.Tag;
     		Body.Add(morphVariant);

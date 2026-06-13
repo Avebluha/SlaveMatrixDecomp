@@ -116,12 +116,12 @@ namespace SlaveMatrix
 
     	public 体色(bool b0)
     	{
-    		int num = RNG.XS.Next(360);
+    		int num = Rng.XS.Next(360);
     		foreach (FieldInfo item in from e in GetType().GetFields()
-    			where e.FieldType.ToString() == Sta.ct
+    			where e.FieldType.ToString() == GlobalState.ct
     			select e)
     		{
-    			HSV.ToRGB(num + RNG.XS.Next(5), RNG.XS.NextM(0, 223), RNG.XS.NextM(128, 255), out var ret);
+    			HSV.ToRGB(num + Rng.XS.Next(5), Rng.XS.NextM(0, 223), Rng.XS.NextM(128, 255), out var ret);
     			item.SetValue(this, ret);
     		}
     		ColorHelper.GetRandomColor(out 目左);
@@ -160,7 +160,7 @@ namespace SlaveMatrix
     			白部 = ColorHelper.White;
     		}
     		歯 = Color.PapayaWhip;
-    		爪 = (RNG.XS.NextBool() ? Color.PapayaWhip : ColorHelper.Black);
+    		爪 = (Rng.XS.NextBool() ? Color.PapayaWhip : ColorHelper.Black);
     		角0 = Color.LightGray;
     		角1 = ColorHelper.DarkGray;
     		口紅 = ColorHelper.Empty;

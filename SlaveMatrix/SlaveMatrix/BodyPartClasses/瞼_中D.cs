@@ -35,20 +35,20 @@ namespace SlaveMatrix
 
     	public 瞼_中D SetRandom()
     	{
-    		サイズ = RNG.XS.NextDouble();
-    		サイズX = RNG.XS.NextDouble();
-    		サイズY = RNG.XS.NextDouble();
-    		二重_表示 = RNG.XS.NextBool();
-    		睫毛_睫毛3_表示 = RNG.XS.NextBool();
-    		睫毛_睫毛4_表示 = RNG.XS.NextBool();
-    		睫毛_睫毛1_表示 = RNG.XS.NextBool();
-    		睫毛_睫毛2_表示 = RNG.XS.NextBool();
-    		外線 = RNG.XS.NextDouble();
-    		睫毛_睫毛3_長さ = RNG.XS.NextDouble();
-    		睫毛_睫毛4_長さ = RNG.XS.NextDouble();
-    		睫毛_睫毛1_長さ = RNG.XS.NextDouble();
-    		睫毛_睫毛2_長さ = RNG.XS.NextDouble();
-    		傾き = RNG.XS.NextDouble();
+    		サイズ = Rng.XS.NextDouble();
+    		サイズX = Rng.XS.NextDouble();
+    		サイズY = Rng.XS.NextDouble();
+    		二重_表示 = Rng.XS.NextBool();
+    		睫毛_睫毛3_表示 = Rng.XS.NextBool();
+    		睫毛_睫毛4_表示 = Rng.XS.NextBool();
+    		睫毛_睫毛1_表示 = Rng.XS.NextBool();
+    		睫毛_睫毛2_表示 = Rng.XS.NextBool();
+    		外線 = Rng.XS.NextDouble();
+    		睫毛_睫毛3_長さ = Rng.XS.NextDouble();
+    		睫毛_睫毛4_長さ = Rng.XS.NextDouble();
+    		睫毛_睫毛1_長さ = Rng.XS.NextDouble();
+    		睫毛_睫毛2_長さ = Rng.XS.NextDouble();
+    		傾き = Rng.XS.NextDouble();
     		return this;
     	}
 

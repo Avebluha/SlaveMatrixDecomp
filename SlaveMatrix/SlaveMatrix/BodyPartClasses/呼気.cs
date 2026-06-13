@@ -403,7 +403,7 @@ namespace SlaveMatrix
     	public 呼気(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 呼気D e)
     	{
     		ThisType = GetType();
-    		Body = new VariantGrid(Sta.胴体["呼気"]);
+    		Body = new VariantGrid(GlobalState.胴体["呼気"]);
     		PartGroup partGroup = Body[0][0];
     		PartGroup pars2 = partGroup["呼気左1"].ToPars();
     		X0Y0_呼気左1_呼気1 = pars2["呼気1"].ToPar();

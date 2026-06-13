@@ -180,7 +180,7 @@ namespace SlaveMatrix
     	public 下着乳首(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 下着乳首D e)
     	{
     		ThisType = GetType();
-    		Body = new VariantGrid(Sta.胴体["下着乳首左"]);
+    		Body = new VariantGrid(GlobalState.胴体["下着乳首左"]);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_乳首 = partGroup["乳首"].ToPar();
     		X0Y0_染み2 = partGroup["染み2"].ToPar();

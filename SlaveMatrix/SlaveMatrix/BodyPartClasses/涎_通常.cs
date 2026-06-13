@@ -110,7 +110,7 @@ namespace SlaveMatrix
     	public 涎_通常(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 涎_通常D e)
     	{
     		ThisType = GetType();
-    		Body = new VariantGrid(Sta.胴体["涎左"]);
+    		Body = new VariantGrid(GlobalState.胴体["涎左"]);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_涎 = partGroup["涎"].ToPar();
     		partGroup = Body[0][1];

@@ -332,8 +332,8 @@ namespace SlaveMatrix
     		ThisType = GetType();
     		PartGroup partGroup = new PartGroup();
     		partGroup.Tag = "蛇";
-    		partGroup.Add(new PartGroup(Sta.半身["長物"][0][2]["胴2"].ToPars()));
-    		partGroup.Add(new PartGroup(Sta.半身["長物"][0][2]["輪1"].ToPars()));
+    		partGroup.Add(new PartGroup(GlobalState.半身["長物"][0][2]["胴2"].ToPars()));
+    		partGroup.Add(new PartGroup(GlobalState.半身["長物"][0][2]["輪1"].ToPars()));
     		MorphVariant morphVariant = new MorphVariant();
     		morphVariant.Tag = partGroup.Tag;
     		morphVariant.Add(partGroup);

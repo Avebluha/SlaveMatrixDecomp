@@ -134,7 +134,7 @@ namespace SlaveMatrix
     	{
     		肛門_獣 肛門_獣2 = this;
     		ThisType = GetType();
-    		Body = new VariantGrid(Sta.半身["四足肛門"]);
+    		Body = new VariantGrid(GlobalState.半身["四足肛門"]);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_肛門3 = partGroup["肛門3"].ToPar();
     		X0Y0_肛門2 = partGroup["肛門2"].ToPar();

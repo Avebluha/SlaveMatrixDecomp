@@ -1017,7 +1017,7 @@ namespace SlaveMatrix
     	{
     		yield return this;
     		foreach (FieldInfo item in from e in ThisType.GetFields()
-    			where e.FieldType.ToString() == Sta.at
+    			where e.FieldType.ToString() == GlobalState.at
     			select e)
     		{
     			Element[] array = (Element[])item.GetValue(this);
@@ -1052,7 +1052,7 @@ namespace SlaveMatrix
     	public ColorP GetParOfColorP(ShapePart p)
     	{
     		return (from e in ThisType.GetFields()
-    			where e.FieldType.ToString() == Sta.cpt
+    			where e.FieldType.ToString() == GlobalState.cpt
     			select e.GetValue(this)).Cast<ColorP>().FirstOrDefault((ColorP e) => e.ShapePart == p);
     	}
 

@@ -1164,7 +1164,7 @@ namespace SlaveMatrix
     	{
     		植 植2 = this;
     		ThisType = GetType();
-    		PartGroup partGroup = new PartGroup(Sta.肢左["植"][0][0]);
+    		PartGroup partGroup = new PartGroup(GlobalState.肢左["植"][0][0]);
     		partGroup.Remove("花");
     		partGroup.Remove("萼");
     		MorphVariant morphVariant = new MorphVariant();

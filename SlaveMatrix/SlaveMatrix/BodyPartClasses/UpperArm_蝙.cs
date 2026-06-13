@@ -513,7 +513,7 @@ namespace SlaveMatrix
     		飛膜 = new 飛膜_根(DisUnit, 配色指定, 体配色);
     		飛膜.Par = this;
     		ThisType = GetType();
-    		Body = new VariantGrid(Sta.腕左["獣翼UpperArm"]);
+    		Body = new VariantGrid(GlobalState.腕左["獣翼UpperArm"]);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_獣翼UpperArm = partGroup["獣翼上腕"].ToPar();
     		PartGroup pars2 = partGroup["鱗"].ToPars();

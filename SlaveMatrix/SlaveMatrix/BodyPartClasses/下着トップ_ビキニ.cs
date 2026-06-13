@@ -447,7 +447,7 @@ namespace SlaveMatrix
     	public 下着トップ_ビキニ(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 下着トップ_ビキニD e)
     	{
     		ThisType = GetType();
-    		MorphVariant morphVariant = new MorphVariant(Sta.胴体["下着トップ"][1]);
+    		MorphVariant morphVariant = new MorphVariant(GlobalState.胴体["下着トップ"][1]);
     		Body = new VariantGrid();
     		Body.Tag = morphVariant.Tag;
     		Body.Add(morphVariant);

@@ -557,7 +557,7 @@ namespace SlaveMatrix
     	public 飛沫_人(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 飛沫_人D e)
     	{
     		ThisType = GetType();
-    		Body = new VariantGrid(Sta.性器付["飛沫"]);
+    		Body = new VariantGrid(GlobalState.性器付["飛沫"]);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_飛沫基 = partGroup["飛沫基"].ToPar();
     		X0Y0_雫1 = partGroup["雫1"].ToPar();

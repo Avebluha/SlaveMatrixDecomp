@@ -86,7 +86,7 @@ namespace SlaveMatrix
     	public 膣基_人(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 膣基_人D e)
     	{
     		ThisType = GetType();
-    		Body = new VariantGrid(Sta.胴体["膣基"]);
+    		Body = new VariantGrid(GlobalState.胴体["膣基"]);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_膣基 = partGroup["膣基"].ToPar();
     		Body.SetJoints();

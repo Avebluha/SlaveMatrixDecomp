@@ -527,7 +527,7 @@ namespace SlaveMatrix
     	public 目隠帯(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 目隠帯D e)
     	{
     		ThisType = GetType();
-    		Body = new VariantGrid(Sta.胴体["目隠帯"]);
+    		Body = new VariantGrid(GlobalState.胴体["目隠帯"]);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_革 = partGroup["革"].ToPar();
     		X0Y0_丸金具上中 = partGroup["丸金具上中"].ToPar();

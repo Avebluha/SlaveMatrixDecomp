@@ -15,7 +15,7 @@ namespace SlaveMatrix
 
     	public 単眼眉D SetRandom()
     	{
-    		サイズY = RNG.XS.NextDouble();
+    		サイズY = Rng.XS.NextDouble();
     		return this;
     	}
 

@@ -1328,7 +1328,7 @@ namespace SlaveMatrix
     		ThisType = GetType();
     		MorphVariant morphVariant = new MorphVariant();
     		morphVariant.Tag = "線";
-    		morphVariant.Add(new PartGroup(Sta.肢左["触覚"][0][0]));
+    		morphVariant.Add(new PartGroup(GlobalState.肢左["触覚"][0][0]));
     		Body = new VariantGrid();
     		Body.Tag = morphVariant.Tag;
     		Body.Add(morphVariant);

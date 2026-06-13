@@ -429,7 +429,7 @@ namespace SlaveMatrix
     	public 大顎(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 大顎D e)
     	{
     		ThisType = GetType();
-    		MorphVariant morphVariant = new MorphVariant(Sta.肢左["虫顎"][1]);
+    		MorphVariant morphVariant = new MorphVariant(GlobalState.肢左["虫顎"][1]);
     		Body = new VariantGrid();
     		Body.Tag = morphVariant.Tag;
     		Body.Add(morphVariant);

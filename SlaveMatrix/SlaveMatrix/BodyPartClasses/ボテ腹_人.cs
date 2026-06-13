@@ -422,7 +422,7 @@ namespace SlaveMatrix
     	{
     		ボテ腹_人 ボテ腹_人2 = this;
     		ThisType = GetType();
-    		Body = new VariantGrid(Sta.胴体["ボテ腹"]);
+    		Body = new VariantGrid(GlobalState.胴体["ボテ腹"]);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_腹 = partGroup["腹"].ToPar();
     		X0Y0_ハイライト = partGroup["ハイライト"].ToPar();

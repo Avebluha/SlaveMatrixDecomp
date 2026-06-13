@@ -995,7 +995,7 @@ namespace SlaveMatrix
     	public パール(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, パールD e)
     	{
     		ThisType = GetType();
-    		Body = new VariantGrid(Sta.カーソル["パール"]);
+    		Body = new VariantGrid(GlobalState.カーソル["パール"]);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_軸 = partGroup["軸"].ToPar();
     		X0Y0_玉境界 = partGroup["玉境界"].ToPar();

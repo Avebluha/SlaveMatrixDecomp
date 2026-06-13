@@ -535,7 +535,7 @@ namespace SlaveMatrix
     	public 下着トップ_チューブ(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 下着トップ_チューブD e)
     	{
     		ThisType = GetType();
-    		MorphVariant morphVariant = new MorphVariant(Sta.胴体["下着トップ"][3]);
+    		MorphVariant morphVariant = new MorphVariant(GlobalState.胴体["下着トップ"][3]);
     		Body = new VariantGrid();
     		Body.Tag = morphVariant.Tag;
     		Body.Add(morphVariant);

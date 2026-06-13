@@ -821,7 +821,7 @@ namespace SlaveMatrix
     	public 胸肌(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 胸肌D e)
     	{
     		ThisType = GetType();
-    		Body = new VariantGrid(Sta.胴体["胸郭肌"]);
+    		Body = new VariantGrid(GlobalState.胴体["胸郭肌"]);
     		PartGroup partGroup = Body[0][0];
     		PartGroup pars2 = partGroup["甲殻"].ToPars();
     		X0Y0_虫性_甲殻2 = pars2["甲殻2"].ToPar();

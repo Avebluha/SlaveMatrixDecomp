@@ -219,7 +219,7 @@ namespace SlaveMatrix
     	public 獣耳(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 獣耳D e)
     	{
     		ThisType = GetType();
-    		Body = new VariantGrid(Sta.肢左["獣耳"]);
+    		Body = new VariantGrid(GlobalState.肢左["獣耳"]);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_獣耳外 = partGroup["獣耳外"].ToPar();
     		X0Y0_獣耳内 = partGroup["獣耳内"].ToPar();

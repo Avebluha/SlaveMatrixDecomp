@@ -47,8 +47,8 @@ namespace SlaveMatrix
 
     	public BackHair1_編結D SetRandom()
     	{
-    		毛量 = RNG.XS.NextDouble();
-    		高さ = RNG.XS.NextDouble();
+    		毛量 = Rng.XS.NextDouble();
+    		高さ = Rng.XS.NextDouble();
     		return this;
     	}
 

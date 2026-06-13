@@ -110,7 +110,7 @@ namespace SlaveMatrix
     	public ぶっかけ_小(double DisUnit, 配色指定 配色指定, 主人公配色 体配色, ModeEventDispatcher Med, ぶっかけ_小D e)
     	{
     		ThisType = GetType();
-    		MorphVariant morphVariant = new MorphVariant(Sta.スタンプ["ぶっかけ"][0]);
+    		MorphVariant morphVariant = new MorphVariant(GlobalState.スタンプ["ぶっかけ"][0]);
     		Body = new VariantGrid();
     		Body.Tag = morphVariant.Tag;
     		Body.Add(morphVariant);

@@ -212,7 +212,7 @@ namespace SlaveMatrix
     	public 羽根箒(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 羽根箒D e)
     	{
     		ThisType = GetType();
-    		Body = new VariantGrid(Sta.カーソル["羽根箒"]);
+    		Body = new VariantGrid(GlobalState.カーソル["羽根箒"]);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_羽根1 = partGroup["羽根1"].ToPar();
     		X0Y0_羽根2 = partGroup["羽根2"].ToPar();

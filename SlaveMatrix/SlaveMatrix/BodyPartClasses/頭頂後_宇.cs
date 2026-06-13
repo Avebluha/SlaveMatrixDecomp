@@ -214,7 +214,7 @@ namespace SlaveMatrix
     		ThisType = GetType();
     		MorphVariant morphVariant = new MorphVariant();
     		morphVariant.Tag = "エイリアン";
-    		morphVariant.Add(new PartGroup(Sta.肢中["頭部後"][0][0]));
+    		morphVariant.Add(new PartGroup(GlobalState.肢中["頭部後"][0][0]));
     		Body = new VariantGrid();
     		Body.Tag = morphVariant.Tag;
     		Body.Add(morphVariant);

@@ -98,7 +98,7 @@ namespace SlaveMatrix
     		unit.Set原種素質();
     		unit.Set種族特性();
     		unit.Set構成特性();
-    		unit.Price = (ulong)((double)unit.GetPrice() * ((Sta.GameData.祝福 == Sta.GameData.ヴィオラ) ? 0.6 : 1.0));
+    		unit.Price = (ulong)((double)unit.GetPrice() * ((GlobalState.GameData.祝福 == GlobalState.GameData.ヴィオラ) ? 0.6 : 1.0));
     		return unit;
     	}
 
@@ -110,7 +110,7 @@ namespace SlaveMatrix
     			return Generate(SpeciesDefaults.Getヒューマン(), SpeciesDefaults.Getヒューマン(), 2, GameText.ヒューマン);
     		case 1:
     		{
-    			bool b = RNG.XS.NextBool();
+    			bool b = Rng.XS.NextBool();
     			return Generate(SpeciesDefaults.Getオーグリス(b), SpeciesDefaults.Getオーグリス(b), 2, GameText.オーグリス);
     		}
     		case 2:
@@ -195,7 +195,7 @@ namespace SlaveMatrix
     			return Generate(SpeciesDefaults.Getドルフィンマーメイド(), SpeciesDefaults.Getドルフィンマーメイド(), 2, GameText.ドルフィンマーメイド);
     		case 4:
     		{
-    			bool b = RNG.XS.NextBool();
+    			bool b = Rng.XS.NextBool();
     			return Generate(SpeciesDefaults.Getイクテュオケンタウレ(b), SpeciesDefaults.Getイクテュオケンタウレ(b), 3, GameText.イクテュオケンタウレ);
     		}
     		case 5:
@@ -204,7 +204,7 @@ namespace SlaveMatrix
     			return Generate(SpeciesDefaults.Getシーラミア(), SpeciesDefaults.Getシーラミア(), 2, GameText.シーラミア);
     		case 7:
     		{
-    			int num = RNG.XS.Next(3);
+    			int num = Rng.XS.Next(3);
     			return Generate(SpeciesDefaults.Getセイレーン(num), SpeciesDefaults.Getセイレーン(num), 2, GameText.セイレーン);
     		}
     		case 8:
@@ -215,7 +215,7 @@ namespace SlaveMatrix
     			return Generate(SpeciesDefaults.Getクラーケン(), SpeciesDefaults.Getクラーケン(), 3, GameText.クラーケン);
     		case 11:
     		{
-    			bool b = RNG.XS.NextBool();
+    			bool b = Rng.XS.NextBool();
     			return Generate(SpeciesDefaults.Getオールドスキュラ(b), SpeciesDefaults.Getオールドスキュラ(b), 4, GameText.オールドスキュラ);
     		}
     		default:
@@ -237,7 +237,7 @@ namespace SlaveMatrix
     			return Generate(SpeciesDefaults.Getウェアスタッグビートル(), SpeciesDefaults.Getウェアスタッグビートル(), 1, GameText.ウェアスタッグビートル);
     		case 4:
     		{
-    			bool b = RNG.XS.NextBool();
+    			bool b = Rng.XS.NextBool();
     			return Generate(SpeciesDefaults.Getアラクネ(b), SpeciesDefaults.Getアラクネ(b), 2, GameText.アラクネ);
     		}
     		case 5:
@@ -250,8 +250,8 @@ namespace SlaveMatrix
     			return Generate(SpeciesDefaults.Getサンドワーム(), SpeciesDefaults.Getサンドワーム(), 2, GameText.サンドワーム);
     		case 9:
     		{
-    			bool b = RNG.XS.NextBool();
-    			bool b2 = RNG.XS.NextBool();
+    			bool b = Rng.XS.NextBool();
+    			bool b2 = Rng.XS.NextBool();
     			return Generate(SpeciesDefaults.Getフェアリー(b, b2), SpeciesDefaults.Getフェアリー(b, b2), 1, GameText.フェアリー);
     		}
     		default:
@@ -271,7 +271,7 @@ namespace SlaveMatrix
     			return Generate(SpeciesDefaults.Getドワーフ(), SpeciesDefaults.Getドワーフ(), 2, GameText.ドワーフ);
     		case 3:
     		{
-    			bool b = RNG.XS.NextBool();
+    			bool b = Rng.XS.NextBool();
     			return Generate(SpeciesDefaults.Getオーグリス(b), SpeciesDefaults.Getオーグリス(b), 2, GameText.オーグリス);
     		}
     		case 4:
@@ -280,7 +280,7 @@ namespace SlaveMatrix
     			return Generate(SpeciesDefaults.Getデビル(), SpeciesDefaults.Getデビル(), 2, GameText.デビル);
     		case 6:
     		{
-    			bool b = RNG.XS.NextBool();
+    			bool b = Rng.XS.NextBool();
     			return Generate(SpeciesDefaults.Getエンジェル(b), SpeciesDefaults.Getエンジェル(b), 2, GameText.エンジェル);
     		}
     		case 7:
@@ -320,7 +320,7 @@ namespace SlaveMatrix
     			return Generate(SpeciesDefaults.Getキマイラ(), SpeciesDefaults.Getキマイラ(), 3, GameText.キマイラ);
     		case 1:
     		{
-    			bool b = RNG.XS.NextBool();
+    			bool b = Rng.XS.NextBool();
     			return Generate(SpeciesDefaults.Getスフィンクス(b), SpeciesDefaults.Getスフィンクス(b), 3, GameText.スフィンクス);
     		}
     		case 2:
@@ -360,7 +360,7 @@ namespace SlaveMatrix
     		for (int i = 0; i < Capacity; i++)
     			a[i] = gen();
     		/*
-    		Parallel.For(0, Capacity, Sta.po3, delegate(int i)
+    		Parallel.For(0, Capacity, GlobalState.po3, delegate(int i)
     		{
     			a[i] = g();
     		});*/
@@ -377,7 +377,7 @@ namespace SlaveMatrix
     		for (int i = 0; i < Capacity; i++)
     			a[i] = gen();
     		/*
-    		Parallel.For(0, Capacity, Sta.po3, delegate(int i)
+    		Parallel.For(0, Capacity, GlobalState.po3, delegate(int i)
     		{
     			a[i] = g();
     		});*/

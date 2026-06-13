@@ -180,11 +180,11 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return Sta.GameData.精力;
+    			return GlobalState.GameData.精力;
     		}
     		set
     		{
-    			Sta.GameData.精力 = value;
+    			GlobalState.GameData.精力 = value;
     		}
     	}
 
@@ -192,12 +192,12 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return Sta.GameData.射精;
+    			return GlobalState.GameData.射精;
     		}
     		set
     		{
-    			Sta.GameData.射精 = value;
-    			Sta.GameData.射精 = Sta.GameData.射精.Clamp(0.0, 1.0);
+    			GlobalState.GameData.射精 = value;
+    			GlobalState.GameData.射精 = GlobalState.GameData.射精.Clamp(0.0, 1.0);
     		}
     	}
 
@@ -205,12 +205,12 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return Sta.GameData.興奮;
+    			return GlobalState.GameData.興奮;
     		}
     		set
     		{
-    			Sta.GameData.興奮 = value;
-    			Sta.GameData.興奮 = Sta.GameData.興奮.Clamp(0.0, 1.0);
+    			GlobalState.GameData.興奮 = value;
+    			GlobalState.GameData.興奮 = GlobalState.GameData.興奮.Clamp(0.0, 1.0);
     		}
     	}
 
@@ -218,11 +218,11 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return Sta.GameData.調教力;
+    			return GlobalState.GameData.調教力;
     		}
     		set
     		{
-    			Sta.GameData.調教力 = value;
+    			GlobalState.GameData.調教力 = value;
     		}
     	}
 
@@ -230,11 +230,11 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return Sta.GameData.TrainingTarget.ChaD.Stamina;
+    			return GlobalState.GameData.TrainingTarget.ChaD.Stamina;
     		}
     		set
     		{
-    			Sta.GameData.TrainingTarget.ChaD.Stamina = value;
+    			GlobalState.GameData.TrainingTarget.ChaD.Stamina = value;
     		}
     	}
 
@@ -242,12 +242,12 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return Sta.GameData.TrainingTarget.ChaD.Sensitivity;
+    			return GlobalState.GameData.TrainingTarget.ChaD.Sensitivity;
     		}
     		set
     		{
-    			Sta.GameData.TrainingTarget.ChaD.Sensitivity = value;
-    			Sta.GameData.TrainingTarget.ChaD.Sensitivity = Sta.GameData.TrainingTarget.ChaD.Sensitivity.Clamp(0.0, 1.0);
+    			GlobalState.GameData.TrainingTarget.ChaD.Sensitivity = value;
+    			GlobalState.GameData.TrainingTarget.ChaD.Sensitivity = GlobalState.GameData.TrainingTarget.ChaD.Sensitivity.Clamp(0.0, 1.0);
     		}
     	}
 
@@ -255,12 +255,12 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return Sta.GameData.TrainingTarget.ChaD.Excitement;
+    			return GlobalState.GameData.TrainingTarget.ChaD.Excitement;
     		}
     		set
     		{
-    			Sta.GameData.TrainingTarget.ChaD.Excitement = value;
-    			Sta.GameData.TrainingTarget.ChaD.Excitement = Sta.GameData.TrainingTarget.ChaD.Excitement.Clamp(0.0, 1.0);
+    			GlobalState.GameData.TrainingTarget.ChaD.Excitement = value;
+    			GlobalState.GameData.TrainingTarget.ChaD.Excitement = GlobalState.GameData.TrainingTarget.ChaD.Excitement.Clamp(0.0, 1.0);
     		}
     	}
 
@@ -268,11 +268,11 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return Sta.GameData.TrainingTarget.ChaD.Wetness;
+    			return GlobalState.GameData.TrainingTarget.ChaD.Wetness;
     		}
     		set
     		{
-    			Sta.GameData.TrainingTarget.ChaD.Wetness = value;
+    			GlobalState.GameData.TrainingTarget.ChaD.Wetness = value;
     		}
     	}
 
@@ -280,11 +280,11 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return Sta.GameData.TrainingTarget.ChaD.Tension;
+    			return GlobalState.GameData.TrainingTarget.ChaD.Tension;
     		}
     		set
     		{
-    			Sta.GameData.TrainingTarget.ChaD.Tension = value;
+    			GlobalState.GameData.TrainingTarget.ChaD.Tension = value;
     		}
     	}
 
@@ -292,11 +292,11 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return Sta.GameData.TrainingTarget.ChaD.Shyness;
+    			return GlobalState.GameData.TrainingTarget.ChaD.Shyness;
     		}
     		set
     		{
-    			Sta.GameData.TrainingTarget.ChaD.Shyness = value;
+    			GlobalState.GameData.TrainingTarget.ChaD.Shyness = value;
     		}
     	}
 
@@ -304,11 +304,11 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return Sta.GameData.TrainingTarget.ChaD.Pride;
+    			return GlobalState.GameData.TrainingTarget.ChaD.Pride;
     		}
     		set
     		{
-    			Sta.GameData.TrainingTarget.ChaD.Pride = value;
+    			GlobalState.GameData.TrainingTarget.ChaD.Pride = value;
     		}
     	}
 
@@ -316,11 +316,11 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return Sta.GameData.TrainingTarget.ChaD.Lust;
+    			return GlobalState.GameData.TrainingTarget.ChaD.Lust;
     		}
     		set
     		{
-    			Sta.GameData.TrainingTarget.ChaD.Lust = value;
+    			GlobalState.GameData.TrainingTarget.ChaD.Lust = value;
     		}
     	}
 
@@ -328,11 +328,11 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return Sta.GameData.TrainingTarget.ChaD.Affection;
+    			return GlobalState.GameData.TrainingTarget.ChaD.Affection;
     		}
     		set
     		{
-    			Sta.GameData.TrainingTarget.ChaD.Affection = value;
+    			GlobalState.GameData.TrainingTarget.ChaD.Affection = value;
     		}
     	}
 
@@ -340,11 +340,11 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return Sta.GameData.TrainingTarget.ChaD.Taming;
+    			return GlobalState.GameData.TrainingTarget.ChaD.Taming;
     		}
     		set
     		{
-    			Sta.GameData.TrainingTarget.ChaD.Taming = value;
+    			GlobalState.GameData.TrainingTarget.ChaD.Taming = value;
     		}
     	}
 
@@ -352,11 +352,11 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return Sta.GameData.TrainingTarget.ChaD.SkillL;
+    			return GlobalState.GameData.TrainingTarget.ChaD.SkillL;
     		}
     		set
     		{
-    			Sta.GameData.TrainingTarget.ChaD.SkillL = value;
+    			GlobalState.GameData.TrainingTarget.ChaD.SkillL = value;
     		}
     	}
 
@@ -364,11 +364,11 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return Sta.GameData.TrainingTarget.ChaD.Sesnsitivities;
+    			return GlobalState.GameData.TrainingTarget.ChaD.Sesnsitivities;
     		}
     		set
     		{
-    			Sta.GameData.TrainingTarget.ChaD.Sesnsitivities = value;
+    			GlobalState.GameData.TrainingTarget.ChaD.Sesnsitivities = value;
     		}
     	}
 
@@ -376,11 +376,11 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return Sta.GameData.TrainingTarget.ChaD.現陰毛;
+    			return GlobalState.GameData.TrainingTarget.ChaD.現陰毛;
     		}
     		set
     		{
-    			Sta.GameData.TrainingTarget.ChaD.現陰毛 = value;
+    			GlobalState.GameData.TrainingTarget.ChaD.現陰毛 = value;
     		}
     	}
 
@@ -388,11 +388,11 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return Sta.GameData.TrainingTarget.ChaD.放尿経験値;
+    			return GlobalState.GameData.TrainingTarget.ChaD.放尿経験値;
     		}
     		set
     		{
-    			Sta.GameData.TrainingTarget.ChaD.放尿経験値 = value;
+    			GlobalState.GameData.TrainingTarget.ChaD.放尿経験値 = value;
     		}
     	}
 
@@ -404,7 +404,7 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			if (!強制終了 && Sta.GameData.TrainingTarget != null && Cha != null)
+    			if (!強制終了 && GlobalState.GameData.TrainingTarget != null && Cha != null)
     			{
     				return Cha.ModeEventDispatcher.Mode == "Training";
     			}
@@ -414,11 +414,11 @@ namespace SlaveMatrix
 
     	public static double 調教力影響値 => 0.1 + 0.9 * 調教力;
 
-    	public static double 技巧度影響値 => 0.3 + 0.7 * (SkillL / Sta.GameData.TrainingTarget.MaxSkillL);
+    	public static double 技巧度影響値 => 0.3 + 0.7 * (SkillL / GlobalState.GameData.TrainingTarget.MaxSkillL);
 
-    	public static double 主消費影響値 => (主人a + 調教力影響値.Inverse()) * 0.5 * ((Sta.GameData.祝福 != null) ? Sta.GameData.祝福.消耗乗算値 : 1.0);
+    	public static double 主消費影響値 => (主人a + 調教力影響値.Inverse()) * 0.5 * ((GlobalState.GameData.祝福 != null) ? GlobalState.GameData.祝福.消耗乗算値 : 1.0);
 
-    	public static double 奴消費影響値 => 調教力.Inverse() * 強靭0_7w * 傷物1_2w * 調教済0_9w * Sta.GameData.TrainingTarget.消耗乗算値;
+    	public static double 奴消費影響値 => 調教力.Inverse() * 強靭0_7w * 傷物1_2w * 調教済0_9w * GlobalState.GameData.TrainingTarget.消耗乗算値;
 
     	public static double 主射精値 => (PlayerSensitivity + PlayerExcitement) / 2.0;
 
@@ -483,7 +483,7 @@ namespace SlaveMatrix
     		{
     			if (パイズリRun || フェラRun)
     			{
-    				return 1.0 - 0.5 * (SkillL / Sta.GameData.TrainingTarget.MaxSkillL);
+    				return 1.0 - 0.5 * (SkillL / GlobalState.GameData.TrainingTarget.MaxSkillL);
     			}
     			return 1.0;
     		}
@@ -760,7 +760,7 @@ namespace SlaveMatrix
     		{
     			if (Cha.Body.Is最前手人 && 奉仕0)
     			{
-    				return SkillL > 0.1 * Sta.GameData.TrainingTarget.MaxSkillL;
+    				return SkillL > 0.1 * GlobalState.GameData.TrainingTarget.MaxSkillL;
     			}
     			return false;
     		}
@@ -772,7 +772,7 @@ namespace SlaveMatrix
     		{
     			if (奉仕0)
     			{
-    				return SkillL > 0.2 * Sta.GameData.TrainingTarget.MaxSkillL;
+    				return SkillL > 0.2 * GlobalState.GameData.TrainingTarget.MaxSkillL;
     			}
     			return false;
     		}
@@ -784,7 +784,7 @@ namespace SlaveMatrix
     		{
     			if (Cha.Body.Is最前手人 && 奉仕0)
     			{
-    				return SkillL > 0.2 * Sta.GameData.TrainingTarget.MaxSkillL;
+    				return SkillL > 0.2 * GlobalState.GameData.TrainingTarget.MaxSkillL;
     			}
     			return false;
     		}
@@ -796,7 +796,7 @@ namespace SlaveMatrix
     		{
     			if (Cha.Body.Is最前手人 && 奉仕0)
     			{
-    				return SkillL > 0.4 * Sta.GameData.TrainingTarget.MaxSkillL;
+    				return SkillL > 0.4 * GlobalState.GameData.TrainingTarget.MaxSkillL;
     			}
     			return false;
     		}
@@ -808,7 +808,7 @@ namespace SlaveMatrix
     		{
     			if (Cha.Body.Is最前手人 && 奉仕0)
     			{
-    				return SkillL > 0.6 * Sta.GameData.TrainingTarget.MaxSkillL;
+    				return SkillL > 0.6 * GlobalState.GameData.TrainingTarget.MaxSkillL;
     			}
     			return false;
     		}
@@ -820,7 +820,7 @@ namespace SlaveMatrix
     		{
     			if (奉仕1 && !Cha.Body.玉口枷_表示)
     			{
-    				return SkillL > 0.15 * Sta.GameData.TrainingTarget.MaxSkillL;
+    				return SkillL > 0.15 * GlobalState.GameData.TrainingTarget.MaxSkillL;
     			}
     			return false;
     		}
@@ -830,7 +830,7 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			if (!絶頂中 && 奉仕1 && !Cha.Body.玉口枷_表示 && SkillL > 0.5 * Sta.GameData.TrainingTarget.MaxSkillL)
+    			if (!絶頂中 && 奉仕1 && !Cha.Body.玉口枷_表示 && SkillL > 0.5 * GlobalState.GameData.TrainingTarget.MaxSkillL)
     			{
     				return CurrentToolType == ToolType.Penis;
     			}
@@ -838,7 +838,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public static double 口挿入度 => (0.05 + 部位感度[ContactType.Mouth] * Tension.Inverse() * (SkillL / Sta.GameData.TrainingTarget.MaxSkillL)).Sqrt();
+    	public static double 口挿入度 => (0.05 + 部位感度[ContactType.Mouth] * Tension.Inverse() * (SkillL / GlobalState.GameData.TrainingTarget.MaxSkillL)).Sqrt();
 
     	public static double 膣挿入度 => (0.05 + 部位感度[ContactType.Vagina] * Tension.Inverse() * Wetness).Sqrt();
 
@@ -878,7 +878,7 @@ namespace SlaveMatrix
 
     	public static double 変化V_糸 => 糸挿入度;
 
-    	public static double 変化V_固有値乱数 => Cha.CharacterData.固有値 * RNG.XS.NextDouble();
+    	public static double 変化V_固有値乱数 => Cha.CharacterData.固有値 * Rng.XS.NextDouble();
 
     	public static double 無毛1_5w
     	{
@@ -1014,23 +1014,23 @@ namespace SlaveMatrix
 
     	public static void RecoverPlayerStamina()
     	{
-    		PlayerStamina = (PlayerStamina + (0.05 + PlayerStamina * RNG.XS.NextDouble())).Clamp(0.0, 1.0);
+    		PlayerStamina = (PlayerStamina + (0.05 + PlayerStamina * Rng.XS.NextDouble())).Clamp(0.0, 1.0);
     	}
 
     	public static void RecoverStamina(this Unit u)
     	{
-    		u.ChaD.Stamina = (u.ChaD.Stamina + (0.05 + u.ChaD.Stamina * RNG.XS.NextDouble())).Clamp(0.0, 1.0);
+    		u.ChaD.Stamina = (u.ChaD.Stamina + (0.05 + u.ChaD.Stamina * Rng.XS.NextDouble())).Clamp(0.0, 1.0);
     	}
 
     	public static void 体力消費(this Unit u)
     	{
-    		u.ChaD.Stamina = (u.ChaD.Stamina - 0.5 * RNG.XS.NextDouble() * u.消耗乗算値).Clamp(0.0, 1.0);
+    		u.ChaD.Stamina = (u.ChaD.Stamina - 0.5 * Rng.XS.NextDouble() * u.消耗乗算値).Clamp(0.0, 1.0);
     	}
 
     	public static void SetState()
     	{
-    		Sensitivity = (1.0 * Pride.Inverse() * Lust * Affection * RNG.XS.NextDouble()).Clamp(0.0, 1.0);
-    		Excitement = (1.0 * Pride.Inverse() * Lust * Affection * RNG.XS.NextDouble()).Clamp(0.0, 1.0);
+    		Sensitivity = (1.0 * Pride.Inverse() * Lust * Affection * Rng.XS.NextDouble()).Clamp(0.0, 1.0);
+    		Excitement = (1.0 * Pride.Inverse() * Lust * Affection * Rng.XS.NextDouble()).Clamp(0.0, 1.0);
     		Wetness = (2.0 * Pride.Inverse() * Lust * Affection).Clamp(0.0, 1.0);
     		Tension = (2.0 * Pride * Lust.Inverse() * Affection.Inverse()).Clamp(0.0, 1.0);
     		Shame = (1.0 * Pride.Inverse() * Affection).Clamp(0.0, 1.0);
@@ -1038,10 +1038,10 @@ namespace SlaveMatrix
 
     	public static void SetStateTraining()
     	{
-    		if (Sta.GameData.TrainingTarget != null && Cha != null)
+    		if (GlobalState.GameData.TrainingTarget != null && Cha != null)
     		{
     			RecoverPlayerStamina();
-    			Sta.GameData.TrainingTarget.RecoverStamina();
+    			GlobalState.GameData.TrainingTarget.RecoverStamina();
     			PlayerSensitivity = 0.0;
     			PlayerExcitement = 0.0;
     			SetState();
@@ -1051,13 +1051,13 @@ namespace SlaveMatrix
     			PreTrainingTraining = Training;
     			PreTrainingSkillL = SkillL;
     			調教前調教力 = 調教力;
-    			Hairless = Sta.GameData.TrainingTarget.Hairless;
-    			Virgin = Sta.GameData.TrainingTarget.Virgin;
-    			発情 = Sta.GameData.TrainingTarget.発情フラグ;
-    			Pregnant = Sta.GameData.TrainingTarget.Pregnant;
-    			Muscular = Sta.GameData.TrainingTarget.Muscular;
-    			Scars = Sta.GameData.TrainingTarget.Scars;
-    			Trained = Sta.GameData.TrainingTarget.Trained;
+    			Hairless = GlobalState.GameData.TrainingTarget.Hairless;
+    			Virgin = GlobalState.GameData.TrainingTarget.Virgin;
+    			発情 = GlobalState.GameData.TrainingTarget.発情フラグ;
+    			Pregnant = GlobalState.GameData.TrainingTarget.Pregnant;
+    			Muscular = GlobalState.GameData.TrainingTarget.Muscular;
+    			Scars = GlobalState.GameData.TrainingTarget.Scars;
+    			Trained = GlobalState.GameData.TrainingTarget.Trained;
     			絶頂回数 = 0;
     			初回 = true;
     			反応度 = 1.0;
@@ -1200,7 +1200,7 @@ namespace SlaveMatrix
     		{
     			if (Cha.Body.Is双眉)
     			{
-    				Cha.両眉_0(RNG.XS.NextBool(), RNG.XS.NextM(3, 4), RNG.XS.NextM(3, 4));
+    				Cha.両眉_0(Rng.XS.NextBool(), Rng.XS.NextM(3, 4), Rng.XS.NextM(3, 4));
     			}
     			if (Cha.Body.Is単眉)
     			{
@@ -1248,7 +1248,7 @@ namespace SlaveMatrix
     		{
     			if (Cha.Body.Is双眉)
     			{
-    				Cha.両眉_0(RNG.XS.NextBool(), RNG.XS.NextM(3, 4), RNG.XS.NextM(3, 4));
+    				Cha.両眉_0(Rng.XS.NextBool(), Rng.XS.NextM(3, 4), Rng.XS.NextM(3, 4));
     			}
     			if (Cha.Body.Is単眉)
     			{
@@ -1294,7 +1294,7 @@ namespace SlaveMatrix
     				Cha.額目_上転();
     			}
     		}
-    		if (RNG.XS.NextBool())
+    		if (Rng.XS.NextBool())
     		{
     			if (0.1.Lot())
     			{
@@ -1359,7 +1359,7 @@ namespace SlaveMatrix
     		{
     			if (Cha.Body.Is双眉)
     			{
-    				Cha.両眉_0(RNG.XS.NextBool(), RNG.XS.NextM(3, 4), RNG.XS.NextM(3, 4));
+    				Cha.両眉_0(Rng.XS.NextBool(), Rng.XS.NextM(3, 4), Rng.XS.NextM(3, 4));
     			}
     			if (Cha.Body.Is単眉)
     			{
@@ -1381,7 +1381,7 @@ namespace SlaveMatrix
     			{
     				Cha.Urination.Start();
     				放尿率 = (放尿率 - 0.1).Clamp(0.0, 1.0);
-    				放尿経験値 = (放尿経験値 + 0.03 * RNG.XS.NextDouble()).Clamp(0.0, 1.0);
+    				放尿経験値 = (放尿経験値 + 0.03 * Rng.XS.NextDouble()).Clamp(0.0, 1.0);
     			}
     			発声();
     		}
@@ -1405,7 +1405,7 @@ namespace SlaveMatrix
 
     	public static void 射精直前処理()
     	{
-    		if (射精中 || !(PlayerSensitivity > 0.85) || (CurrentActionType != ActionType.手コ && CurrentActionType != ActionType.パイ) || !(Lust > 0.6) || !(SkillL > 0.5 * Sta.GameData.TrainingTarget.MaxSkillL))
+    		if (射精中 || !(PlayerSensitivity > 0.85) || (CurrentActionType != ActionType.手コ && CurrentActionType != ActionType.パイ) || !(Lust > 0.6) || !(SkillL > 0.5 * GlobalState.GameData.TrainingTarget.MaxSkillL))
     		{
     			return;
     		}
@@ -1459,7 +1459,7 @@ namespace SlaveMatrix
     		{
     			絶頂技巧度計算();
     		}
-    		if ((CurrentActionType != ActionType.手コ && CurrentActionType != ActionType.パイ) || !(Lust > 0.6) || !(SkillL > 0.5 * Sta.GameData.TrainingTarget.MaxSkillL))
+    		if ((CurrentActionType != ActionType.手コ && CurrentActionType != ActionType.パイ) || !(Lust > 0.6) || !(SkillL > 0.5 * GlobalState.GameData.TrainingTarget.MaxSkillL))
     		{
     			return;
     		}
@@ -1517,9 +1517,9 @@ namespace SlaveMatrix
     			}
     			欲望度計算();
     			情愛度計算();
-    			if (CurrentContactType == ContactType.Vagina && !Sta.GameData.TrainingTarget.Pregnant)
+    			if (CurrentContactType == ContactType.Vagina && !GlobalState.GameData.TrainingTarget.Pregnant)
     			{
-    				Sta.GameData.TrainingTarget.Pregnant = (0.04 * 調教力 + 0.01 * 発情1_5w * ((Sta.GameData.TrainingTarget.Race == GameText.エキドナ) ? 2.0 : 1.0)).Lot();
+    				GlobalState.GameData.TrainingTarget.Pregnant = (0.04 * 調教力 + 0.01 * 発情1_5w * ((GlobalState.GameData.TrainingTarget.Race == GameText.エキドナ) ? 2.0 : 1.0)).Lot();
     			}
     		}
     	}
@@ -1632,7 +1632,7 @@ namespace SlaveMatrix
 
     	public static void 主回復()
     	{
-    		PlayerStamina = (PlayerStamina + ((Sta.GameData.祝福 != null) ? Sta.GameData.祝福.回復値 : 0.0)).Clamp(0.0, 1.0);
+    		PlayerStamina = (PlayerStamina + ((GlobalState.GameData.祝福 != null) ? GlobalState.GameData.祝福.回復値 : 0.0)).Clamp(0.0, 1.0);
     	}
 
     	public static void 主感度加算()
@@ -1672,7 +1672,7 @@ namespace SlaveMatrix
 
     	public static void 回復()
     	{
-    		Stamina = (Stamina + Sta.GameData.TrainingTarget.回復値).Clamp(0.0, 1.0);
+    		Stamina = (Stamina + GlobalState.GameData.TrainingTarget.回復値).Clamp(0.0, 1.0);
     	}
 
     	public static void 慣れ計算()
@@ -1797,13 +1797,13 @@ namespace SlaveMatrix
     		double num2 = 0.4 - num;
     		if (CurrentActionType == ActionType.くぱ)
     		{
-    			Shame = (Shame + (num + num2 * 奴隷a * 羞恥値 * 調教力影響値 * RNG.XS.NextDouble())).Clamp(0.0, 1.0);
+    			Shame = (Shame + (num + num2 * 奴隷a * 羞恥値 * 調教力影響値 * Rng.XS.NextDouble())).Clamp(0.0, 1.0);
     		}
     		else if (CurrentActionType == ActionType.Shaving)
     		{
     			Shame = (Shame + (num + num2 * 奴隷a * 羞恥値 * 調教力影響値 * 現陰毛 * 4.0)).Clamp(0.0, 1.0);
     		}
-    		Shame = (Shame + (num + num2 * 奴隷a * 羞恥値 * 調教力影響値 * RNG.XS.NextDouble())).Clamp(0.0, 1.0);
+    		Shame = (Shame + (num + num2 * 奴隷a * 羞恥値 * 調教力影響値 * Rng.XS.NextDouble())).Clamp(0.0, 1.0);
     	}
 
     	public static void 調教力計算()
@@ -1852,7 +1852,7 @@ namespace SlaveMatrix
     		{
     			Training = (Training + 0.5 * 奴隷a * 調教力影響値 * 傷物1_2w * 拘束具補正増 * 玉口枷補正増).Clamp(0.0, 1.0);
     		}
-    		if ((0.1 * RNG.XS.NextDouble() * Cha.CharacterData.固有値).Lot())
+    		if ((0.1 * Rng.XS.NextDouble() * Cha.CharacterData.固有値).Lot())
     		{
     			Training = (Training + 0.2 * 奴隷a * 調教力影響値 * 傷物1_2w * 拘束具補正増 * 玉口枷補正増).Clamp(0.0, 1.0);
     		}
@@ -1867,7 +1867,7 @@ namespace SlaveMatrix
     	{
     		if ((CurrentActionType == ActionType.Insertion && CurrentToolType == ToolType.Penis) || CurrentActionType == ActionType.パイ || CurrentActionType == ActionType.手コ || CurrentActionType == ActionType.足コ)
     		{
-    			SkillL = (SkillL + 0.0035 * 主人a * 調教力影響値).Clamp(0.0, Sta.GameData.TrainingTarget.MaxSkillL);
+    			SkillL = (SkillL + 0.0035 * 主人a * 調教力影響値).Clamp(0.0, GlobalState.GameData.TrainingTarget.MaxSkillL);
     		}
     	}
 
@@ -1875,7 +1875,7 @@ namespace SlaveMatrix
     	{
     		if (CurrentContactType != 0)
     		{
-    			部位感度[CurrentContactType] = (部位感度[CurrentContactType] + 0.03 * 奴隷a * 感度興奮差 * 調教力影響値 * 発情1_5w * 調教済1_1w * RNG.XS.NextDouble()).Clamp(0.0, 1.0);
+    			部位感度[CurrentContactType] = (部位感度[CurrentContactType] + 0.03 * 奴隷a * 感度興奮差 * 調教力影響値 * 発情1_5w * 調教済1_1w * Rng.XS.NextDouble()).Clamp(0.0, 1.0);
     		}
     		if (Cha.Body.玉口枷_表示 && 部位感度.ContainsKey(ContactType.Mouth))
     		{
@@ -1885,35 +1885,35 @@ namespace SlaveMatrix
 
     	public static void 絶頂抵抗値計算()
     	{
-    		Pride = (Pride - 0.04 * 奴隷a * 感度興奮差 * 調教力影響値 * 処女0_8w * 発情1_5w * RNG.XS.NextDouble()).Clamp(0.0, 1.0);
+    		Pride = (Pride - 0.04 * 奴隷a * 感度興奮差 * 調教力影響値 * 処女0_8w * 発情1_5w * Rng.XS.NextDouble()).Clamp(0.0, 1.0);
     	}
 
     	public static void 絶頂欲望度計算()
     	{
-    		Lust = (Lust + 0.015 * 奴隷a * 感度興奮差 * 調教力影響値 * 処女0_8w * 発情1_5w * 調教済1_1w * 目隠帯補正増 * RNG.XS.NextDouble()).Clamp(0.0, 1.0);
+    		Lust = (Lust + 0.015 * 奴隷a * 感度興奮差 * 調教力影響値 * 処女0_8w * 発情1_5w * 調教済1_1w * 目隠帯補正増 * Rng.XS.NextDouble()).Clamp(0.0, 1.0);
     	}
 
     	public static void 絶頂情愛度計算()
     	{
-    		Affection = (Affection + 0.03 * 奴隷a * 感度興奮差 * 調教力影響値 * 処女1_5w * 発情1_5w * 傷物1_2w * 調教済1_1w * 拘束具補正減 * 目隠帯補正減 * 玉口枷補正減 * RNG.XS.NextDouble()).Clamp(0.0, 1.0);
+    		Affection = (Affection + 0.03 * 奴隷a * 感度興奮差 * 調教力影響値 * 処女1_5w * 発情1_5w * 傷物1_2w * 調教済1_1w * 拘束具補正減 * 目隠帯補正減 * 玉口枷補正減 * Rng.XS.NextDouble()).Clamp(0.0, 1.0);
     	}
 
     	public static void 絶頂卑屈度計算()
     	{
-    		Training = (Training + 0.001 * 奴隷a * 感度興奮差 * 調教力影響値 * 傷物1_2w * 拘束具補正増 * 玉口枷補正増 * RNG.XS.NextDouble()).Clamp(0.0, 1.0);
+    		Training = (Training + 0.001 * 奴隷a * 感度興奮差 * 調教力影響値 * 傷物1_2w * 拘束具補正増 * 玉口枷補正増 * Rng.XS.NextDouble()).Clamp(0.0, 1.0);
     	}
 
     	public static void 絶頂技巧度計算()
     	{
     		if ((CurrentActionType == ActionType.Insertion && CurrentToolType == ToolType.Penis) || CurrentActionType == ActionType.パイ || CurrentActionType == ActionType.手コ || CurrentActionType == ActionType.足コ)
     		{
-    			SkillL = (SkillL + 0.007 * 主人a * 主感度興奮差 * 調教力影響値 * RNG.XS.NextDouble()).Clamp(0.0, Sta.GameData.TrainingTarget.MaxSkillL);
+    			SkillL = (SkillL + 0.007 * 主人a * 主感度興奮差 * 調教力影響値 * Rng.XS.NextDouble()).Clamp(0.0, GlobalState.GameData.TrainingTarget.MaxSkillL);
     		}
     	}
 
     	public static void 表示ステート更新()
     	{
-    		if (Sta.GameData.TrainingTarget == null)
+    		if (GlobalState.GameData.TrainingTarget == null)
     		{
     			return;
     		}
@@ -2332,8 +2332,8 @@ namespace SlaveMatrix
     		{
     			Reaction2();
     			Cha.Body.Waist.位置B += GeometryUtils.GetRandomVector() * 0.0004;
-    			Cha.Body.HipMotionValue = RNG.XS.NextDouble();
-    			switch (RNG.XS.Next(2))
+    			Cha.Body.HipMotionValue = Rng.XS.NextDouble();
+    			switch (Rng.XS.Next(2))
     			{
     			case 0:
     				Cha.CharacterData.Emotion = EmotionType.Humiliation;
@@ -2345,8 +2345,8 @@ namespace SlaveMatrix
     			Cha.SetInitialExpression();
     			Cha.UpdatePosture();
     			Virgin = false;
-    			Sta.GameData.TrainingTarget.Virgin = false;
-    			UI.発音(Cha.Body.膣口位置.GetAreaPoint(0.04), Sta.処女喪失, Color.Red, 0.3, b: true);
+    			GlobalState.GameData.TrainingTarget.Virgin = false;
+    			UI.発音(Cha.Body.膣口位置.GetAreaPoint(0.04), GlobalState.処女喪失, Color.Red, 0.3, b: true);
     			Cha.Body.処女喪失 = true;
     			if (Cha.Body.断面_表示)
     			{
@@ -2380,7 +2380,7 @@ namespace SlaveMatrix
     			WaitingState1();
     			初回 = true;
     			反応度 = 1.0;
-    			if (CurrentActionType == ActionType.Insertion && CurrentContactType == ContactType.Mouth && SkillL < 0.5 * Sta.GameData.TrainingTarget.MaxSkillL && Reactions.Tongue.Contains(Cha.Body.口i) && ((CurrentToolType == ToolType.Hand && 手口) || CurrentToolType == ToolType.Penis || CurrentToolType == ToolType.Dildo || CurrentToolType == ToolType.Vibrator || CurrentToolType == ToolType.Drill || CurrentToolType == ToolType.デンマ || CurrentToolType == ToolType.AnalVibrator) && (SkillL.Inverse() * 0.8).Lot())
+    			if (CurrentActionType == ActionType.Insertion && CurrentContactType == ContactType.Mouth && SkillL < 0.5 * GlobalState.GameData.TrainingTarget.MaxSkillL && Reactions.Tongue.Contains(Cha.Body.口i) && ((CurrentToolType == ToolType.Hand && 手口) || CurrentToolType == ToolType.Penis || CurrentToolType == ToolType.Dildo || CurrentToolType == ToolType.Vibrator || CurrentToolType == ToolType.Drill || CurrentToolType == ToolType.デンマ || CurrentToolType == ToolType.AnalVibrator) && (SkillL.Inverse() * 0.8).Lot())
     			{
     				Cha.Cough.Start();
     				return;
@@ -2394,7 +2394,7 @@ namespace SlaveMatrix
     	{
     		Reaction2();
     		Cha.Body.Waist.位置B += GeometryUtils.GetRandomVector() * 0.0004;
-    		Cha.Body.HipMotionValue = RNG.XS.NextDouble();
+    		Cha.Body.HipMotionValue = Rng.XS.NextDouble();
     		Cha.Emotion();
     		Cha.UpdateExpression();
     		Cha.UpdatePosture();
@@ -2471,19 +2471,19 @@ namespace SlaveMatrix
     		{
     			Cha.Splash.Start();
     		}
-    		if (Sta.GameData.TrainingTarget.妊娠状態変数 > 2 && !Cha.Body.乳房左.虫性_甲殻_表示 && (CurrentActionType == ActionType.乳捏 || CurrentActionType == ActionType.パイ || ((double)Sta.GameData.TrainingTarget.妊娠状態変数 * 0.1).Lot()))
+    		if (GlobalState.GameData.TrainingTarget.妊娠状態変数 > 2 && !Cha.Body.乳房左.虫性_甲殻_表示 && (CurrentActionType == ActionType.乳捏 || CurrentActionType == ActionType.パイ || ((double)GlobalState.GameData.TrainingTarget.妊娠状態変数 * 0.1).Lot()))
     		{
     			Cha.MilkSpray.Start();
     		}
-    		if (!Cha.膣ヒク.Run && (CurrentContactType == ContactType.Crotch || CurrentContactType == ContactType.Sex || CurrentContactType == ContactType.Nucleus || CurrentContactType == ContactType.Vagina || RNG.XS.NextBool()) && 部位感度[ContactType.Vagina] > 0.4)
+    		if (!Cha.膣ヒク.Run && (CurrentContactType == ContactType.Crotch || CurrentContactType == ContactType.Sex || CurrentContactType == ContactType.Nucleus || CurrentContactType == ContactType.Vagina || Rng.XS.NextBool()) && 部位感度[ContactType.Vagina] > 0.4)
     		{
     			Cha.膣ヒク.Start();
     		}
-    		if (!Cha.肛ヒク.Run && (CurrentContactType == ContactType.Anal || CurrentContactType == ContactType.Vagina || RNG.XS.NextBool()) && 部位感度[ContactType.Anal] > 0.4)
+    		if (!Cha.肛ヒク.Run && (CurrentContactType == ContactType.Anal || CurrentContactType == ContactType.Vagina || Rng.XS.NextBool()) && 部位感度[ContactType.Anal] > 0.4)
     		{
     			Cha.肛ヒク.Start();
     		}
-    		if (!Cha.糸ヒク.Run && (CurrentContactType == ContactType.Thread || RNG.XS.NextBool()))
+    		if (!Cha.糸ヒク.Run && (CurrentContactType == ContactType.Thread || Rng.XS.NextBool()))
     		{
     			Cha.糸ヒク.Start();
     		}
@@ -2508,12 +2508,12 @@ namespace SlaveMatrix
     		string text = "";
     		if (Cha.Body.口i == 4 || Cha.Body.口i == 10 || Cha.Body.口i == 11)
     		{
-    			string[][] n = Sta.n;
-    			text = n[num][RNG.XS.Next(n[num].Length)];
+    			string[][] n = GlobalState.n;
+    			text = n[num][Rng.XS.Next(n[num].Length)];
     		}
     		else if (Cha.Body.玉口枷_表示)
     		{
-    			text = Sta.o[3][RNG.XS.Next(Sta.o[3].Length)];
+    			text = GlobalState.o[3][Rng.XS.Next(GlobalState.o[3].Length)];
     		}
     		else
     		{
@@ -2522,7 +2522,7 @@ namespace SlaveMatrix
     			{
     				n = GetRandomTable();
     			}
-    			while (n[num].Length < 1 || string.IsNullOrWhiteSpace(text = n[num][RNG.XS.Next(n[num].Length)]));
+    			while (n[num].Length < 1 || string.IsNullOrWhiteSpace(text = n[num][Rng.XS.Next(n[num].Length)]));
     		}
     		UI.発音(Cha.Body.口腔位置.GetAreaPoint(0.05), text.語尾() + " ", Color.Pink, 0.3 + 0.1 * Excitement, b: true);
     	}
@@ -2532,30 +2532,30 @@ namespace SlaveMatrix
     		switch (GeometryUtils.GetRandomIndex((Shame + Tension) * 0.5, Cha.苦痛条件() ? 1.0 : ((Sensitivity + Excitement + Lust) / 3.0), (Affection + Lust) * 0.4 - Pride))
     		{
     		case 0:
-    			return s + Sta.end[(!RNG.XS.NextBool()) ? 1u : 0u];
+    			return s + GlobalState.end[(!Rng.XS.NextBool()) ? 1u : 0u];
     		case 1:
-    			if (s.EndsWith(Sta.end[2]))
+    			if (s.EndsWith(GlobalState.end[2]))
     			{
-    				return s + Sta.end[3];
+    				return s + GlobalState.end[3];
     			}
-    			return s + Sta.end[RNG.XS.NextBool() ? 2 : 3];
+    			return s + GlobalState.end[Rng.XS.NextBool() ? 2 : 3];
     		case 2:
-    			return s + Sta.end[4];
+    			return s + GlobalState.end[4];
     		default:
-    			return s + Sta.end[0];
+    			return s + GlobalState.end[0];
     		}
     	}
 
     	public static string[][] GetRandomTable()
     	{
-    		return RNG.XS.Next(6) switch
+    		return Rng.XS.Next(6) switch
     		{
-    			0 => Sta.a, 
-    			1 => Sta.i, 
-    			2 => Sta.u, 
-    			3 => Sta.e, 
-    			4 => Sta.o, 
-    			5 => Sta.n, 
+    			0 => GlobalState.a, 
+    			1 => GlobalState.i, 
+    			2 => GlobalState.u, 
+    			3 => GlobalState.e, 
+    			4 => GlobalState.o, 
+    			5 => GlobalState.n, 
     			_ => null, 
     		};
     	}
@@ -2608,11 +2608,11 @@ namespace SlaveMatrix
 
     	public static void ModBox()
     	{
-    		if (Sta.GameData.TrainingTarget == null)
+    		if (GlobalState.GameData.TrainingTarget == null)
     		{
     			return;
     		}
-    		CharacterData chaD = Sta.GameData.TrainingTarget.ChaD;
+    		CharacterData chaD = GlobalState.GameData.TrainingTarget.ChaD;
     		List<string> list = new List<string>();
     		foreach (KeyValuePair<ContactType, double> item in chaD.Sesnsitivities)
     		{
@@ -2630,11 +2630,11 @@ namespace SlaveMatrix
 
     	public static void SensBox()
     	{
-    		if (Sta.GameData.TrainingTarget == null)
+    		if (GlobalState.GameData.TrainingTarget == null)
     		{
     			return;
     		}
-    		CharacterData chaD = Sta.GameData.TrainingTarget.ChaD;
+    		CharacterData chaD = GlobalState.GameData.TrainingTarget.ChaD;
     		UI.SensitivityBox.TextIm = "Sensitivities:\r\n";
     		foreach (KeyValuePair<ContactType, double> item in chaD.Sesnsitivities)
     		{

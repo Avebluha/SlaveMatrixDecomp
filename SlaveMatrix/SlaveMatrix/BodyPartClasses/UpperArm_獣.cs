@@ -272,7 +272,7 @@ namespace SlaveMatrix
     	{
     		UpperArm_獣 UpperArm_獣2 = this;
     		ThisType = GetType();
-    		MorphVariant morphVariant = new MorphVariant(Sta.腕左["四足UpperArm"][0]);
+    		MorphVariant morphVariant = new MorphVariant(GlobalState.腕左["四足UpperArm"][0]);
     		Body = new VariantGrid();
     		Body.Tag = morphVariant.Tag;
     		Body.Add(morphVariant);

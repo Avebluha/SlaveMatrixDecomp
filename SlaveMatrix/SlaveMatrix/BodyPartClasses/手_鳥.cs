@@ -2067,7 +2067,7 @@ namespace SlaveMatrix
     	public 手_鳥(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 手_鳥D e)
     	{
     		ThisType = GetType();
-    		Body = new VariantGrid(Sta.腕左["鳥翼手"]);
+    		Body = new VariantGrid(GlobalState.腕左["鳥翼手"]);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_鳥翼手 = partGroup["鳥翼手"].ToPar();
     		PartGroup pars2 = partGroup["風切羽"].ToPars();

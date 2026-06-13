@@ -116,7 +116,7 @@ namespace SlaveMatrix
     	public 肛門精液_人(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 肛門精液_人D e)
     	{
     		ThisType = GetType();
-    		Body = new VariantGrid(Sta.胴体["肛門精液垂れ"]);
+    		Body = new VariantGrid(GlobalState.胴体["肛門精液垂れ"]);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_精液 = partGroup["精液"].ToPar();
     		partGroup = Body[0][1];

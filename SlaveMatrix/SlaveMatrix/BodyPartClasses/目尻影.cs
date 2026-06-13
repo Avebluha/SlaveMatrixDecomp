@@ -86,7 +86,7 @@ namespace SlaveMatrix
     	public 目尻影(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 目尻影D e)
     	{
     		ThisType = GetType();
-    		Body = new VariantGrid(Sta.胴体["目尻影左"]);
+    		Body = new VariantGrid(GlobalState.胴体["目尻影左"]);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_目尻影 = partGroup["目尻影"].ToPar();
     		Body.SetJoints();

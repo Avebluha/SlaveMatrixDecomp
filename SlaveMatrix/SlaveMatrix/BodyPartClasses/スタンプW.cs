@@ -46,7 +46,7 @@ namespace SlaveMatrix
     				sep = default(sep);
     				sep.Sta = ElementData.GetEle(Are.DisplayUnitScale, Med, Cha.ColorSet);
     				sep.Sta.SetHitFalse();
-    				sep.Sta.角度C = 45.0 * (double)(RNG.XS.NextBool() ? 1 : (-1)) * RNG.XS.NextDouble();
+    				sep.Sta.角度C = 45.0 * (double)(Rng.XS.NextBool() ? 1 : (-1)) * Rng.XS.NextDouble();
     				sep.Element = he;
     				sep.ShapePart = p;
     				sep.Path = sep.ShapePart.GetPath();

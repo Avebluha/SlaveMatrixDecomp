@@ -619,7 +619,7 @@ namespace SlaveMatrix
     	public 断面_獣(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 断面_獣D e)
     	{
     		ThisType = GetType();
-    		Body = new VariantGrid(Sta.半身["四足断面"]);
+    		Body = new VariantGrid(GlobalState.半身["四足断面"]);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_膣基 = partGroup["膣基"].ToPar();
     		X0Y0_膣壁左 = partGroup["膣壁左"].ToPar();

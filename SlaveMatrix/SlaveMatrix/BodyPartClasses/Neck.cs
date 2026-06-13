@@ -1173,7 +1173,7 @@ namespace SlaveMatrix
     	{
     		Neck Neck2 = this;
     		ThisType = GetType();
-    		Body = new VariantGrid(Sta.胴体["Neck"]);
+    		Body = new VariantGrid(GlobalState.胴体["Neck"]);
     		PartGroup partGroup = Body[0][0];
     		PartGroup pars2 = partGroup["植性"].ToPars();
     		X0Y0_植性_蔦 = pars2["蔦"].ToPar();

@@ -333,7 +333,7 @@ namespace SlaveMatrix
     	public 角2_山2(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 角2_山2D e)
     	{
     		ThisType = GetType();
-    		MorphVariant morphVariant = new MorphVariant(Sta.肢左["角"][1]);
+    		MorphVariant morphVariant = new MorphVariant(GlobalState.肢左["角"][1]);
     		Body = new VariantGrid();
     		Body.Tag = morphVariant.Tag;
     		Body.Add(morphVariant);

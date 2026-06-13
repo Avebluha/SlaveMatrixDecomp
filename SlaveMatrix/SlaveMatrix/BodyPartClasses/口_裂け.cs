@@ -586,7 +586,7 @@ namespace SlaveMatrix
     	public 口_裂け(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 口_裂けD e)
     	{
     		ThisType = GetType();
-    		MorphVariant morphVariant = new MorphVariant(Sta.胴体["口"][1]);
+    		MorphVariant morphVariant = new MorphVariant(GlobalState.胴体["口"][1]);
     		Body = new VariantGrid();
     		Body.Tag = morphVariant.Tag;
     		Body.Add(morphVariant);

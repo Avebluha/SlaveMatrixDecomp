@@ -45,10 +45,10 @@ namespace SlaveMatrix
     				sep.Sta.Dispose();
     			}
     			sep = default(sep);
-    			sep.Sta = ElementData.GetEle(Are.DisplayUnitScale, Med, Sta.GameData.配色);
+    			sep.Sta = ElementData.GetEle(Are.DisplayUnitScale, Med, GlobalState.GameData.配色);
     			sep.Sta.SetHitFalse();
-    			sep.Sta.Xv = RNG.XS.NextDouble();
-    			sep.Sta.右 = RNG.XS.NextBool();
+    			sep.Sta.Xv = Rng.XS.NextDouble();
+    			sep.Sta.右 = Rng.XS.NextBool();
     			sep.Element = he;
     			sep.ShapePart = he.Body.GetHitPar_(hc);
     			sep.Path = sep.ShapePart.GetPath();
@@ -76,7 +76,7 @@ namespace SlaveMatrix
     			OnStart = delegate(Motion m)
     			{
     				e = sta.Last().Sta;
-    				m.Max = RNG.XS.NextDouble();
+    				m.Max = Rng.XS.NextDouble();
     			},
     			OnUpdate = delegate(Motion m)
     			{

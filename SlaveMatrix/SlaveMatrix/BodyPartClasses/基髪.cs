@@ -126,7 +126,7 @@ namespace SlaveMatrix
     	{
     		基髪 基髪2 = this;
     		ThisType = GetType();
-    		Body = new VariantGrid(Sta.胴体["基髪"]);
+    		Body = new VariantGrid(GlobalState.胴体["基髪"]);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_髪 = partGroup["髪"].ToPar();
     		Body.SetJoints();

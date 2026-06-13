@@ -126,7 +126,7 @@ namespace SlaveMatrix
     	{
     		四足脇 四足脇2 = this;
     		ThisType = GetType();
-    		Body = new VariantGrid(Sta.肩左["四足脇"]);
+    		Body = new VariantGrid(GlobalState.肩左["四足脇"]);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_脇 = partGroup["脇"].ToPar();
     		X0Y0_筋肉 = partGroup["筋肉"].ToPar();

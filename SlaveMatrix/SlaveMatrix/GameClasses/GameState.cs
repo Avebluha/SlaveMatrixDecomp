@@ -157,7 +157,7 @@ namespace SlaveMatrix
     				break;
     			}
     		}
-    		if (Sta.AutoSort)
+    		if (GlobalState.AutoSort)
     		{
     			Array.Sort(Slaves, (Unit e1, Unit e2) => (e1 != null) ? ((e2 != null) ? e1.Race.CompareTo(e2.Race) : int.MinValue) : int.MaxValue);
     		}
@@ -178,7 +178,7 @@ namespace SlaveMatrix
     	{
     		Refresh = true;
     		/*
-    		Parallel.ForEach(Gen, Sta.po3, delegate(Generator g)
+    		Parallel.ForEach(Gen, GlobalState.po3, delegate(Generator g)
     		{
     			g.Refresh(3);
     		});*/
@@ -284,321 +284,321 @@ namespace SlaveMatrix
     		{
     			{
     				GameText.サキュバス,
-    				NextNormal(RNG.XS, ModuleRegistry.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.バイコーン,
-    				NextNormal(RNG.XS, ModuleRegistry.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.ドワーフ,
-    				NextNormal(RNG.XS, ModuleRegistry.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.アルラウネ,
-    				NextNormal(RNG.XS, ModuleRegistry.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.スキュラ,
-    				NextNormal(RNG.XS, ModuleRegistry.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.アラクネ,
-    				NextNormal(RNG.XS, ModuleRegistry.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.ユニコーン,
-    				NextNormal(RNG.XS, ModuleRegistry.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.エキドナ,
-    				NextNormal(RNG.XS, ModuleRegistry.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.ムカデジョウロウ,
-    				NextNormal(RNG.XS, ModuleRegistry.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.オールドスキュラ,
-    				NextNormal(RNG.XS, ModuleRegistry.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.ドラゴニュート,
-    				NextNormal(RNG.XS, ModuleRegistry.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.カッパ,
-    				NextNormal(RNG.XS, ModuleRegistry.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.エルフ,
-    				NextNormal(RNG.XS, ModuleRegistry.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.リザードマン,
-    				NextNormal(RNG.XS, ModuleRegistry.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.オーグリス,
-    				NextNormal(RNG.XS, ModuleRegistry.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.デビル,
-    				NextNormal(RNG.XS, ModuleRegistry.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.オールドマーメイド,
-    				NextNormal(RNG.XS, ModuleRegistry.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.ラミア,
-    				NextNormal(RNG.XS, ModuleRegistry.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.シーラミア,
-    				NextNormal(RNG.XS, ModuleRegistry.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.サイクロプス,
-    				NextNormal(RNG.XS, ModuleRegistry.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.ミノタウロス,
-    				NextNormal(RNG.XS, ModuleRegistry.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.エイリアン,
-    				NextNormal(RNG.XS, ModuleRegistry.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.ゴルゴン,
-    				NextNormal(RNG.XS, ModuleRegistry.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.ギルタブリル,
-    				NextNormal(RNG.XS, ModuleRegistry.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.ウロボロス,
-    				NextNormal(RNG.XS, ModuleRegistry.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.フェニックス,
-    				NextNormal(RNG.XS, ModuleRegistry.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.ドラゴン,
-    				NextNormal(RNG.XS, ModuleRegistry.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.リュウ,
-    				NextNormal(RNG.XS, ModuleRegistry.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.リリン,
-    				NextNormal(RNG.XS, ModuleRegistry.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.セイレーン,
-    				NextNormal(RNG.XS, ModuleRegistry.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.ハルピュイア,
-    				NextNormal(RNG.XS, ModuleRegistry.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.オノケンタウレ,
-    				NextNormal(RNG.XS, ModuleRegistry.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.カプラケンタウレ,
-    				NextNormal(RNG.XS, ModuleRegistry.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.チータケンタウレ,
-    				NextNormal(RNG.XS, ModuleRegistry.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.エンジェル,
-    				NextNormal(RNG.XS, ModuleRegistry.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.マーメイド,
-    				NextNormal(RNG.XS, ModuleRegistry.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.ドルフィンマーメイド,
-    				NextNormal(RNG.XS, ModuleRegistry.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.ウェアキャット,
-    				NextNormal(RNG.XS, ModuleRegistry.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.ウェアウルフ,
-    				NextNormal(RNG.XS, ModuleRegistry.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.ウェアフォックス,
-    				NextNormal(RNG.XS, ModuleRegistry.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.ヒュドラ,
-    				NextNormal(RNG.XS, ModuleRegistry.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.クラーケン,
-    				NextNormal(RNG.XS, ModuleRegistry.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.ヒッポケンタウレ,
-    				NextNormal(RNG.XS, ModuleRegistry.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.ブケンタウレ,
-    				NextNormal(RNG.XS, ModuleRegistry.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.レオントケンタウレ,
-    				NextNormal(RNG.XS, ModuleRegistry.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.ティグリスケンタウレ,
-    				NextNormal(RNG.XS, ModuleRegistry.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.パンテーラケンタウレ,
-    				NextNormal(RNG.XS, ModuleRegistry.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.イクテュオケンタウレ,
-    				NextNormal(RNG.XS, ModuleRegistry.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.デルピヌスケンタウレ,
-    				NextNormal(RNG.XS, ModuleRegistry.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.ギルタブルル,
-    				NextNormal(RNG.XS, ModuleRegistry.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.スフィンクス,
-    				NextNormal(RNG.XS, ModuleRegistry.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.ペガサス,
-    				NextNormal(RNG.XS, ModuleRegistry.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.アリコーン,
-    				NextNormal(RNG.XS, ModuleRegistry.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.キマイラ,
-    				NextNormal(RNG.XS, ModuleRegistry.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.グリフォン,
-    				NextNormal(RNG.XS, ModuleRegistry.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.ヒッポグリフ,
-    				NextNormal(RNG.XS, ModuleRegistry.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.モノケロス,
-    				NextNormal(RNG.XS, ModuleRegistry.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.カリュブディス,
-    				NextNormal(RNG.XS, ModuleRegistry.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.ドラコケンタウレ,
-    				NextNormal(RNG.XS, ModuleRegistry.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.カーバンクル,
-    				NextNormal(RNG.XS, ModuleRegistry.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.スライム,
-    				NextNormal(RNG.XS, ModuleRegistry.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.フェアリー,
-    				NextNormal(RNG.XS, ModuleRegistry.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.ハーピー,
-    				NextNormal(RNG.XS, ModuleRegistry.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.アフール,
-    				NextNormal(RNG.XS, ModuleRegistry.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.ウェアマンティス,
-    				NextNormal(RNG.XS, ModuleRegistry.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.ウェアドラゴンフライ,
-    				NextNormal(RNG.XS, ModuleRegistry.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.カトブレパス,
-    				NextNormal(RNG.XS, ModuleRegistry.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.バジリスク,
-    				NextNormal(RNG.XS, ModuleRegistry.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.コカトリス,
-    				NextNormal(RNG.XS, ModuleRegistry.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.ワーム,
-    				NextNormal(RNG.XS, ModuleRegistry.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.ワイバーン,
-    				NextNormal(RNG.XS, ModuleRegistry.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.ウェアビートル,
-    				NextNormal(RNG.XS, ModuleRegistry.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.ウェアスタッグビートル,
-    				NextNormal(RNG.XS, ModuleRegistry.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.サンドワーム,
-    				NextNormal(RNG.XS, ModuleRegistry.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.ヴィオランテ,
-    				NextNormal(RNG.XS, ModuleRegistry.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.ヒューマン,
-    				NextNormal(RNG.XS, ModuleRegistry.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.ミックス,
-    				NextNormal(RNG.XS, ModuleRegistry.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			}
     		};
     	}
 
     	public void 需給更新()
     	{
-    		string[] array = Sta.GameData.需給.Keys.ToArray();
+    		string[] array = GlobalState.GameData.需給.Keys.ToArray();
     		foreach (string key in array)
     		{
-    			Sta.GameData.需給[key] = NextNormal(RNG.XS, ModuleRegistry.DemandMax);
+    			GlobalState.GameData.需給[key] = NextNormal(Rng.XS, ModuleRegistry.DemandMax);
     		}
     	}
 

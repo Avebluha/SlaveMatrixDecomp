@@ -14,7 +14,9 @@ using SlaveMatrix.Properties;
 
 namespace SlaveMatrix
 {
-    public static class Sta
+	// We now have GlobalState and GameState. I should probably find better names.
+	// TODO: Find better name for this and GameState.
+    public static class GlobalState
     {
     	public static BodyTemplate 胴体; //胴体
 
@@ -555,7 +557,7 @@ namespace SlaveMatrix
 
     	public static double GetRanAngle(this double MaxAngle)
     	{
-    		return MaxAngle * RNG.XS.NextDouble() * (double)(RNG.XS.NextBool() ? 1 : (-1));
+    		return MaxAngle * Rng.XS.NextDouble() * (double)(Rng.XS.NextBool() ? 1 : (-1));
     	}
 
     	public static T GetEleD<T>(this IEnumerable<ElementData> src) where T : ElementData
@@ -958,15 +960,15 @@ namespace SlaveMatrix
     		double num5 = Base.Y + num;
     		double num6 = num3 - num2;
     		double num7 = num5 - num4;
-    		return RNG.XS.Next(7) switch
+    		return Rng.XS.Next(7) switch
     		{
-    			0 => new Vector2D(RNG.XS.NextDouble(num2 - num6, num2), RNG.XS.NextDouble(num4, num5)), 
-    			1 => new Vector2D(RNG.XS.NextDouble(num2 - num6, num2), RNG.XS.NextDouble(num4, num5)), 
-    			2 => new Vector2D(RNG.XS.NextDouble(num2 - num6, num2), RNG.XS.NextDouble(num5, num5 + num7)), 
-    			3 => new Vector2D(RNG.XS.NextDouble(num2, num3), RNG.XS.NextDouble(num5, num5 + num7)), 
-    			4 => new Vector2D(RNG.XS.NextDouble(num3, num3 + num6), RNG.XS.NextDouble(num5, num5 + num7)), 
-    			5 => new Vector2D(RNG.XS.NextDouble(num3, num3 + num6), RNG.XS.NextDouble(num4, num5)), 
-    			6 => new Vector2D(RNG.XS.NextDouble(num3, num3 + num6), RNG.XS.NextDouble(num4, num5)), 
+    			0 => new Vector2D(Rng.XS.NextDouble(num2 - num6, num2), Rng.XS.NextDouble(num4, num5)), 
+    			1 => new Vector2D(Rng.XS.NextDouble(num2 - num6, num2), Rng.XS.NextDouble(num4, num5)), 
+    			2 => new Vector2D(Rng.XS.NextDouble(num2 - num6, num2), Rng.XS.NextDouble(num5, num5 + num7)), 
+    			3 => new Vector2D(Rng.XS.NextDouble(num2, num3), Rng.XS.NextDouble(num5, num5 + num7)), 
+    			4 => new Vector2D(Rng.XS.NextDouble(num3, num3 + num6), Rng.XS.NextDouble(num5, num5 + num7)), 
+    			5 => new Vector2D(Rng.XS.NextDouble(num3, num3 + num6), Rng.XS.NextDouble(num4, num5)), 
+    			6 => new Vector2D(Rng.XS.NextDouble(num3, num3 + num6), Rng.XS.NextDouble(num4, num5)), 
     			_ => DataConsts.Vec2DZero, 
     		};
     	}
@@ -980,15 +982,15 @@ namespace SlaveMatrix
     		double num5 = Base.Y + num;
     		double num6 = num3 - num2;
     		double num7 = num5 - num4;
-    		return RNG.XS.Next(7) switch
+    		return Rng.XS.Next(7) switch
     		{
-    			0 => new Vector2D(RNG.XS.NextDouble(num2 - num6, num2), RNG.XS.NextDouble(num4, num5)), 
-    			1 => new Vector2D(RNG.XS.NextDouble(num2 - num6, num2), RNG.XS.NextDouble(num4, num5)), 
-    			2 => new Vector2D(RNG.XS.NextDouble(num2 - num6, num2), RNG.XS.NextDouble(num5, num5 + num7)), 
-    			3 => new Vector2D(RNG.XS.NextDouble(num2, num3), RNG.XS.NextDouble(num5, num5 + num7)), 
-    			4 => new Vector2D(RNG.XS.NextDouble(num3, num3 + num6), RNG.XS.NextDouble(num5, num5 + num7)), 
-    			5 => new Vector2D(RNG.XS.NextDouble(num3, num3 + num6), RNG.XS.NextDouble(num4, num5)), 
-    			6 => new Vector2D(RNG.XS.NextDouble(num3, num3 + num6), RNG.XS.NextDouble(num4, num5)), 
+    			0 => new Vector2D(Rng.XS.NextDouble(num2 - num6, num2), Rng.XS.NextDouble(num4, num5)), 
+    			1 => new Vector2D(Rng.XS.NextDouble(num2 - num6, num2), Rng.XS.NextDouble(num4, num5)), 
+    			2 => new Vector2D(Rng.XS.NextDouble(num2 - num6, num2), Rng.XS.NextDouble(num5, num5 + num7)), 
+    			3 => new Vector2D(Rng.XS.NextDouble(num2, num3), Rng.XS.NextDouble(num5, num5 + num7)), 
+    			4 => new Vector2D(Rng.XS.NextDouble(num3, num3 + num6), Rng.XS.NextDouble(num5, num5 + num7)), 
+    			5 => new Vector2D(Rng.XS.NextDouble(num3, num3 + num6), Rng.XS.NextDouble(num4, num5)), 
+    			6 => new Vector2D(Rng.XS.NextDouble(num3, num3 + num6), Rng.XS.NextDouble(num4, num5)), 
     			_ => DataConsts.Vec2DZero, 
     		};
     	}
@@ -1082,7 +1084,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	static Sta()
+    	static GlobalState()
     	{
             var obj = Resources.胴体.ObjLoad();
             obj.MigrateKeys();

@@ -121,7 +121,7 @@ namespace SlaveMatrix
     	public キャップ1(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, キャップ1D e)
     	{
     		ThisType = GetType();
-    		Body = new VariantGrid(Sta.性器付["キャップ中"]);
+    		Body = new VariantGrid(GlobalState.性器付["キャップ中"]);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_根本 = partGroup["根本"].ToPar();
     		X0Y0_先端 = partGroup["先端"].ToPar();

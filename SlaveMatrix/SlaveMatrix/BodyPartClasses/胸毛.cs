@@ -86,7 +86,7 @@ namespace SlaveMatrix
     	public 胸毛(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 胸毛D e)
     	{
     		ThisType = GetType();
-    		Body = new VariantGrid(Sta.胴体["胸毛"]);
+    		Body = new VariantGrid(GlobalState.胴体["胸毛"]);
     		PartGroup partGroup = Body[0][0]["獣性"].ToPars();
     		X0Y0_獣性_胸毛 = partGroup["胸毛"].ToPar();
     		Body.SetJoints();

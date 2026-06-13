@@ -323,8 +323,8 @@ namespace SlaveMatrix
     		ThisType = GetType();
     		Body = new VariantGrid();
     		Body.Tag = "羽";
-    		Body.Add(new MorphVariant(Sta.肢左["耳"][8]));
-    		Body.Add(new MorphVariant(Sta.肢左["耳"][9]));
+    		Body.Add(new MorphVariant(GlobalState.肢左["耳"][8]));
+    		Body.Add(new MorphVariant(GlobalState.肢左["耳"][9]));
     		PartGroup partGroup = Body[0][0];
     		X0Y0_羽2 = partGroup["羽2"].ToPar();
     		X0Y0_羽1 = partGroup["羽1"].ToPar();

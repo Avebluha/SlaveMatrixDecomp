@@ -60,7 +60,7 @@ namespace SlaveMatrix
     	{
     		調教UI.擬音キュー.Enqueue(delegate(RenderArea a)
     		{
-    			調教UI.擬音.Sound(a, Bod.膣口位置.GetAreaPoint(0.01), Sta.くぱ.GetVal(Player.変化V_膣, Player.変化V_固有値乱数), new Font("MS Gothic", 1f), Color.DeepPink.S(Player.変化V_膣.Clamp(0.5, 1.0)), 0.2 + 0.2 * RNG.XS.NextDouble() * Player.変化V_膣, b: true);
+    			調教UI.擬音.Sound(a, Bod.膣口位置.GetAreaPoint(0.01), GlobalState.くぱ.GetVal(Player.変化V_膣, Player.変化V_固有値乱数), new Font("MS Gothic", 1f), Color.DeepPink.S(Player.変化V_膣.Clamp(0.5, 1.0)), 0.2 + 0.2 * Rng.XS.NextDouble() * Player.変化V_膣, b: true);
     		});
     	}
 
@@ -83,7 +83,7 @@ namespace SlaveMatrix
 
     	private void 乳繰りsi()
     	{
-    		if (Sta.GameData.ガイド)
+    		if (GlobalState.GameData.ガイド)
     		{
     			ip.SubInfoIm = GameText.乳首 + "\r\nLDo:" + GameText.摘む + "\r\nWh:" + GameText.繰る;
     		}
@@ -131,7 +131,7 @@ namespace SlaveMatrix
 
     	private void 乳摘みsi()
     	{
-    		if (Sta.GameData.ガイド)
+    		if (GlobalState.GameData.ガイド)
     		{
     			ip.SubInfoIm = GameText.乳首 + "\r\nMo:" + GameText.動かす + "\r\nLUp:" + GameText.放す;
     		}
@@ -181,7 +181,7 @@ namespace SlaveMatrix
 
     	private void 乳捏ねsi1()
     	{
-    		if (Sta.GameData.ガイド)
+    		if (GlobalState.GameData.ガイド)
     		{
     			ip.SubInfoIm = GameText.乳房 + "\r\nLDo:" + GameText.掴む;
     		}
@@ -189,7 +189,7 @@ namespace SlaveMatrix
 
     	private void 乳捏ねsi2()
     	{
-    		if (Sta.GameData.ガイド)
+    		if (GlobalState.GameData.ガイド)
     		{
     			ip.SubInfoIm = GameText.乳房 + "\r\nMo:" + GameText.捏ねる + "\r\nLUp:" + GameText.放す;
     		}
@@ -232,7 +232,7 @@ namespace SlaveMatrix
 
     	private void 核捏ねsi1()
     	{
-    		if (Sta.GameData.ガイド)
+    		if (GlobalState.GameData.ガイド)
     		{
     			ip.SubInfoIm = GameText.陰核 + "\r\nLDo:" + GameText.触れる;
     		}
@@ -240,7 +240,7 @@ namespace SlaveMatrix
 
     	private void 核捏ねsi2()
     	{
-    		if (Sta.GameData.ガイド)
+    		if (GlobalState.GameData.ガイド)
     		{
     			ip.SubInfoIm = GameText.陰核 + "\r\nMo:" + GameText.捏ねる + "\r\nLUp:" + GameText.離す;
     		}
@@ -281,7 +281,7 @@ namespace SlaveMatrix
 
     	private void くぱぁsi1()
     	{
-    		if (Sta.GameData.ガイド)
+    		if (GlobalState.GameData.ガイド)
     		{
     			ip.SubInfoIm = GameText.陰唇 + "\r\nLDo:" + GameText.広げる;
     		}
@@ -289,7 +289,7 @@ namespace SlaveMatrix
 
     	private void くぱぁsi2()
     	{
-    		if (Sta.GameData.ガイド)
+    		if (GlobalState.GameData.ガイド)
     		{
     			ip.SubInfoIm = GameText.陰唇 + "\r\nLUp:" + GameText.やめる;
     		}
@@ -314,7 +314,7 @@ namespace SlaveMatrix
 
     	private void 体撫でsi1()
     	{
-    		if (Sta.GameData.ガイド)
+    		if (GlobalState.GameData.ガイド)
     		{
     			ip.SubInfoIm = "LDo:" + GameText.触れる;
     		}
@@ -322,7 +322,7 @@ namespace SlaveMatrix
 
     	private void 体撫でsi2()
     	{
-    		if (Sta.GameData.ガイド)
+    		if (GlobalState.GameData.ガイド)
     		{
     			ip.SubInfoIm = "Mo:" + GameText.撫でる + "\r\nLUp:" + GameText.離す;
     		}
@@ -628,7 +628,7 @@ namespace SlaveMatrix
     			調教UI.ハンド左.Xi = 0;
     			調教UI.ハンド左.Yi = 0;
     			乳繰り解除();
-    			if (Sta.GameData.ガイド)
+    			if (GlobalState.GameData.ガイド)
     			{
     				ip.SubInfoIm = si();
     			}
@@ -688,7 +688,7 @@ namespace SlaveMatrix
     				Player.奴体力消費小();
     				Player.主精力消費小();
     				くぱ();
-    				if (RNG.XS.NextBool())
+    				if (Rng.XS.NextBool())
     				{
     					調教UI.陰核演出();
     				}
@@ -817,7 +817,7 @@ namespace SlaveMatrix
     			Player.主精力消費小();
     			体撫で解除();
     			調教UI.放し();
-    			if (Sta.GameData.ガイド)
+    			if (GlobalState.GameData.ガイド)
     			{
     				if (調教UI.IsHitCha(ref cd))
     				{

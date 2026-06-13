@@ -141,13 +141,13 @@ namespace SlaveMatrix
     	{
     		調教UI.擬音キュー.Enqueue(delegate(RenderArea a)
     		{
-    			調教UI.擬音.Sound(a, Sta.GetAreaPoint(ref 調教UI.ペニス.AreM.Position, 0.02), Sta.射精.GetVal(Player.変化V_射精, 1.0), new Font("MS Gothic", 1f), Color.White, 0.2 + 0.2 * RNG.XS.NextDouble() * Player.変化V_射精, b: true);
+    			調教UI.擬音.Sound(a, GlobalState.GetAreaPoint(ref 調教UI.ペニス.AreM.Position, 0.02), GlobalState.射精.GetVal(Player.変化V_射精, 1.0), new Font("MS Gothic", 1f), Color.White, 0.2 + 0.2 * Rng.XS.NextDouble() * Player.変化V_射精, b: true);
     		});
     	}
 
     	private void パイズリ時()
     	{
-    		if (Sta.GameData.ガイド)
+    		if (GlobalState.GameData.ガイド)
     		{
     			if (Isパイズリ他動)
     			{
@@ -162,7 +162,7 @@ namespace SlaveMatrix
 
     	private void 胸オーバー時()
     	{
-    		if (Sta.GameData.ガイド)
+    		if (GlobalState.GameData.ガイド)
     		{
     			if (Isパイズリ他動)
     			{
@@ -177,7 +177,7 @@ namespace SlaveMatrix
 
     	private void コキ時()
     	{
-    		if (Sta.GameData.ガイド)
+    		if (GlobalState.GameData.ガイド)
     		{
     			ip.SubInfoIm = "LDo:" + GameText.やめさせる;
     		}
@@ -185,7 +185,7 @@ namespace SlaveMatrix
 
     	private void 手オーバー時()
     	{
-    		if (Sta.GameData.ガイド)
+    		if (GlobalState.GameData.ガイド)
     		{
     			ip.SubInfoIm = "LDo:" + GameText.手コキ;
     		}
@@ -193,7 +193,7 @@ namespace SlaveMatrix
 
     	private void 足オーバー時()
     	{
-    		if (Sta.GameData.ガイド)
+    		if (GlobalState.GameData.ガイド)
     		{
     			ip.SubInfoIm = "LDo:" + GameText.足コキ;
     		}
@@ -201,7 +201,7 @@ namespace SlaveMatrix
 
     	private void 扱き時()
     	{
-    		if (Sta.GameData.ガイド)
+    		if (GlobalState.GameData.ガイド)
     		{
     			InfoPanel obj = ip;
     			obj.SubInfoIm = obj.SubInfoIm + "\r\nWh:" + GameText.扱く;
@@ -288,7 +288,7 @@ namespace SlaveMatrix
     		else
     		{
     			調教UI.ペニス挿入.Move(ref mb, ref cp, ref hc, ref cd);
-    			if (Sta.GameData.ガイド)
+    			if (GlobalState.GameData.ガイド)
     			{
     				if (string.IsNullOrWhiteSpace(ip.SubInfoIm))
     				{
@@ -323,7 +323,7 @@ namespace SlaveMatrix
     				{
     					パイズリ.Start();
     				}
-    				Isパイズリ相互 = Player.パイズリ3 && RNG.XS.NextBool();
+    				Isパイズリ相互 = Player.パイズリ3 && Rng.XS.NextBool();
     				Isパイズリ = true;
     				調教UI.ペニス.位置B = Bod.胸部位置;
     				d = 0.0;
@@ -502,7 +502,7 @@ namespace SlaveMatrix
     			return;
     		}
     		調教UI.ペニス挿入.Up(ref mb, ref cp, ref hc, ref cd);
-    		if (Sta.GameData.ガイド)
+    		if (GlobalState.GameData.ガイド)
     		{
     			if (string.IsNullOrWhiteSpace(ip.SubInfoIm))
     			{
@@ -829,14 +829,14 @@ namespace SlaveMatrix
     				ペニス処理2.Bod.頬濃度 = 0.0;
     				ペニス処理2.Bod.口.Yi = 13;
     				ペニス処理2.Bod.舌_表示 = true;
-    				s = RNG.XS.NextSign();
+    				s = Rng.XS.NextSign();
     				調教UI.Action(ContactType.Mouth, ActionType.Insertion, CurrentState.Start, ToolType.Penis, 0, 1, 機械: false, 射精: false);
     				Player.奴体力消費小();
     				Player.主精力消費小();
     			},
     			OnUpdate = delegate(Motion m)
     			{
-    				t = ペニス処理2.Cha.CharacterData.SkillL / Sta.GameData.TrainingTarget.MaxSkillL * 0.4;
+    				t = ペニス処理2.Cha.CharacterData.SkillL / GlobalState.GameData.TrainingTarget.MaxSkillL * 0.4;
     				d1 = m.Value.Sin() * 調教UI.ペニス.Yv.Inverse() * t;
     				d2 = m.Value * 調教UI.ペニス.Yv * t;
     				ペニス処理2.Bod.頬濃度 = d1;
@@ -851,7 +851,7 @@ namespace SlaveMatrix
     			},
     			OnLoop = delegate
     			{
-    				s = RNG.XS.NextSign();
+    				s = Rng.XS.NextSign();
     			},
     			OnEnd = delegate(Motion m)
     			{
@@ -884,7 +884,7 @@ namespace SlaveMatrix
     					LowerArmXC = ペニス処理2.LowerArm左.尺度XC;
     				}
     				vc = DataConsts.Vec2DZero;
-    				sb = RNG.XS.NextBool();
+    				sb = Rng.XS.NextBool();
     				s = (sb ? (-1.0) : 1.0);
     				調教UI.Action(ContactType.Chest, ActionType.パイ, CurrentState.Start, ToolType.Penis, 0, 1, 機械: false, 射精: false);
     				Player.主精力消費小();

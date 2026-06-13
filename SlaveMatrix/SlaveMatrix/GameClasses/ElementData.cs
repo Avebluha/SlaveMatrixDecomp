@@ -115,7 +115,7 @@ namespace SlaveMatrix
     	{
     		yield return this;
     		foreach (FieldInfo item in from e in ThisType.GetFields()
-    			where e.FieldType.ToString() == Sta.lt
+    			where e.FieldType.ToString() == GlobalState.lt
     			select e)
     		{
     			List<ElementData> list = (List<ElementData>)item.GetValue(this);
@@ -140,7 +140,7 @@ namespace SlaveMatrix
     		ElementData ec;
     		foreach (FieldInfo fieldInfo in fields)
     		{
-    			if (fieldInfo.FieldType.ToString() == Sta.lt)
+    			if (fieldInfo.FieldType.ToString() == GlobalState.lt)
     			{
     				List<ElementData> list = (List<ElementData>)fieldInfo.GetValue(this);
     				if (list != null)

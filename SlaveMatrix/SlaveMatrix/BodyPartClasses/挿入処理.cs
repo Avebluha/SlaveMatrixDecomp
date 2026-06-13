@@ -398,7 +398,7 @@ namespace SlaveMatrix
     	{
     		if ((0.1 * Player.口挿入度).Lot())
     		{
-    			switch (RNG.XS.Next(2))
+    			switch (Rng.XS.Next(2))
     			{
     			case 0:
     				//Sounds.挿抜口1.Play();
@@ -414,7 +414,7 @@ namespace SlaveMatrix
     	{
     		if ((0.1 * Player.膣挿入度 * Player.Tension.Inverse()).Lot())
     		{
-    			switch (RNG.XS.Next(2))
+    			switch (Rng.XS.Next(2))
     			{
     			case 0:
     				//Sounds.挿抜前1.Play();
@@ -452,7 +452,7 @@ namespace SlaveMatrix
     	{
     		if ((0.1 * Player.糸挿入度 * Player.Tension.Inverse()).Lot())
     		{
-    			switch (RNG.XS.Next(2))
+    			switch (Rng.XS.Next(2))
     			{
     			case 0:
     				//Sounds.挿抜糸1.Play();
@@ -475,7 +475,7 @@ namespace SlaveMatrix
     		{
     			調教UI.擬音キュー.Enqueue(delegate(RenderArea a)
     			{
-    				調教UI.擬音.Sound(a, Bod.口腔位置.GetAreaPoint(0.05), Sta.口挿.GetVal(clip(Player.変化V_口), Player.変化V_固有値乱数), new Font("MS Gothic", 1f), Color.HotPink.S(Player.変化V_口.Clamp(0.5, 1.0)), 0.2 + 0.2 * RNG.XS.NextDouble() * Player.変化V_口, b: true);
+    				調教UI.擬音.Sound(a, Bod.口腔位置.GetAreaPoint(0.05), GlobalState.口挿.GetVal(clip(Player.変化V_口), Player.変化V_固有値乱数), new Font("MS Gothic", 1f), Color.HotPink.S(Player.変化V_口.Clamp(0.5, 1.0)), 0.2 + 0.2 * Rng.XS.NextDouble() * Player.変化V_口, b: true);
     			});
     		}
     	}
@@ -486,7 +486,7 @@ namespace SlaveMatrix
     		{
     			調教UI.擬音キュー.Enqueue(delegate(RenderArea a)
     			{
-    				調教UI.擬音.Sound(a, Bod.口腔位置.GetAreaPoint(0.05), Sta.口中.GetVal(clip(Player.変化V_口), Player.変化V_固有値乱数), new Font("MS Gothic", 1f), Color.HotPink.S(Player.変化V_口.Clamp(0.5, 1.0)), 0.2 + 0.2 * RNG.XS.NextDouble() * Player.変化V_口, b: true);
+    				調教UI.擬音.Sound(a, Bod.口腔位置.GetAreaPoint(0.05), GlobalState.口中.GetVal(clip(Player.変化V_口), Player.変化V_固有値乱数), new Font("MS Gothic", 1f), Color.HotPink.S(Player.変化V_口.Clamp(0.5, 1.0)), 0.2 + 0.2 * Rng.XS.NextDouble() * Player.変化V_口, b: true);
     			});
     		}
     	}
@@ -497,7 +497,7 @@ namespace SlaveMatrix
     		{
     			調教UI.擬音キュー.Enqueue(delegate(RenderArea a)
     			{
-    				調教UI.擬音.Sound(a, Bod.口腔位置.GetAreaPoint(0.05), Sta.口抜.GetVal(clip(Player.変化V_口), Player.変化V_固有値乱数), new Font("MS Gothic", 1f), Color.HotPink.S(Player.変化V_口.Clamp(0.5, 1.0)), 0.2 + 0.2 * RNG.XS.NextDouble() * Player.変化V_口, b: true);
+    				調教UI.擬音.Sound(a, Bod.口腔位置.GetAreaPoint(0.05), GlobalState.口抜.GetVal(clip(Player.変化V_口), Player.変化V_固有値乱数), new Font("MS Gothic", 1f), Color.HotPink.S(Player.変化V_口.Clamp(0.5, 1.0)), 0.2 + 0.2 * Rng.XS.NextDouble() * Player.変化V_口, b: true);
     			});
     		}
     	}
@@ -508,7 +508,7 @@ namespace SlaveMatrix
     		{
     			調教UI.擬音キュー.Enqueue(delegate(RenderArea a)
     			{
-    				調教UI.擬音.Sound(a, Bod.膣口位置.GetAreaPoint(0.04), Sta.膣挿.GetVal(clip(Player.変化V_膣), Player.変化V_固有値乱数), new Font("MS Gothic", 1f), Color.DeepPink.S(Player.変化V_膣.Clamp(0.5, 1.0)), 0.2 + 0.2 * RNG.XS.NextDouble() * Player.変化V_膣, b: true);
+    				調教UI.擬音.Sound(a, Bod.膣口位置.GetAreaPoint(0.04), GlobalState.膣挿.GetVal(clip(Player.変化V_膣), Player.変化V_固有値乱数), new Font("MS Gothic", 1f), Color.DeepPink.S(Player.変化V_膣.Clamp(0.5, 1.0)), 0.2 + 0.2 * Rng.XS.NextDouble() * Player.変化V_膣, b: true);
     			});
     		}
     	}
@@ -519,7 +519,7 @@ namespace SlaveMatrix
     		{
     			調教UI.擬音キュー.Enqueue(delegate(RenderArea a)
     			{
-    				調教UI.擬音.Sound(a, Bod.膣口位置.GetAreaPoint(0.04), Sta.膣中.GetVal(clip(Player.変化V_膣), Player.変化V_固有値乱数), new Font("MS Gothic", 1f), Color.DeepPink.S(Player.変化V_膣.Clamp(0.5, 1.0)), 0.2 + 0.2 * RNG.XS.NextDouble() * Player.変化V_膣, b: true);
+    				調教UI.擬音.Sound(a, Bod.膣口位置.GetAreaPoint(0.04), GlobalState.膣中.GetVal(clip(Player.変化V_膣), Player.変化V_固有値乱数), new Font("MS Gothic", 1f), Color.DeepPink.S(Player.変化V_膣.Clamp(0.5, 1.0)), 0.2 + 0.2 * Rng.XS.NextDouble() * Player.変化V_膣, b: true);
     			});
     		}
     	}
@@ -530,7 +530,7 @@ namespace SlaveMatrix
     		{
     			調教UI.擬音キュー.Enqueue(delegate(RenderArea a)
     			{
-    				調教UI.擬音.Sound(a, Bod.膣口位置.GetAreaPoint(0.04), Sta.膣抜.GetVal(clip(Player.変化V_膣), Player.変化V_固有値乱数), new Font("MS Gothic", 1f), Color.DeepPink.S(Player.変化V_膣.Clamp(0.5, 1.0)), 0.2 + 0.2 * RNG.XS.NextDouble() * Player.変化V_膣, b: true);
+    				調教UI.擬音.Sound(a, Bod.膣口位置.GetAreaPoint(0.04), GlobalState.膣抜.GetVal(clip(Player.変化V_膣), Player.変化V_固有値乱数), new Font("MS Gothic", 1f), Color.DeepPink.S(Player.変化V_膣.Clamp(0.5, 1.0)), 0.2 + 0.2 * Rng.XS.NextDouble() * Player.変化V_膣, b: true);
     			});
     		}
     	}
@@ -541,7 +541,7 @@ namespace SlaveMatrix
     		{
     			調教UI.擬音キュー.Enqueue(delegate(RenderArea a)
     			{
-    				調教UI.擬音.Sound(a, Bod.肛門位置.GetAreaPoint(0.04), Sta.肛挿.GetVal(clip(Player.変化V_肛), Player.変化V_固有値乱数), new Font("MS Gothic", 1f), Color.Coral.S(Player.変化V_肛.Clamp(0.5, 1.0)), 0.2 + 0.2 * RNG.XS.NextDouble() * Player.変化V_肛, b: true);
+    				調教UI.擬音.Sound(a, Bod.肛門位置.GetAreaPoint(0.04), GlobalState.肛挿.GetVal(clip(Player.変化V_肛), Player.変化V_固有値乱数), new Font("MS Gothic", 1f), Color.Coral.S(Player.変化V_肛.Clamp(0.5, 1.0)), 0.2 + 0.2 * Rng.XS.NextDouble() * Player.変化V_肛, b: true);
     			});
     		}
     	}
@@ -552,7 +552,7 @@ namespace SlaveMatrix
     		{
     			調教UI.擬音キュー.Enqueue(delegate(RenderArea a)
     			{
-    				調教UI.擬音.Sound(a, Bod.肛門位置.GetAreaPoint(0.04), Sta.肛中.GetVal(clip(Player.変化V_肛), Player.変化V_固有値乱数), new Font("MS Gothic", 1f), Color.Coral.S(Player.変化V_肛.Clamp(0.5, 1.0)), 0.2 + 0.2 * RNG.XS.NextDouble() * Player.変化V_肛, b: true);
+    				調教UI.擬音.Sound(a, Bod.肛門位置.GetAreaPoint(0.04), GlobalState.肛中.GetVal(clip(Player.変化V_肛), Player.変化V_固有値乱数), new Font("MS Gothic", 1f), Color.Coral.S(Player.変化V_肛.Clamp(0.5, 1.0)), 0.2 + 0.2 * Rng.XS.NextDouble() * Player.変化V_肛, b: true);
     			});
     		}
     	}
@@ -563,7 +563,7 @@ namespace SlaveMatrix
     		{
     			調教UI.擬音キュー.Enqueue(delegate(RenderArea a)
     			{
-    				調教UI.擬音.Sound(a, Bod.肛門位置.GetAreaPoint(0.04), Sta.肛抜.GetVal(clip(Player.変化V_肛), Player.変化V_固有値乱数), new Font("MS Gothic", 1f), Color.Coral.S(Player.変化V_肛.Clamp(0.5, 1.0)), 0.2 + 0.2 * RNG.XS.NextDouble() * Player.変化V_肛, b: true);
+    				調教UI.擬音.Sound(a, Bod.肛門位置.GetAreaPoint(0.04), GlobalState.肛抜.GetVal(clip(Player.変化V_肛), Player.変化V_固有値乱数), new Font("MS Gothic", 1f), Color.Coral.S(Player.変化V_肛.Clamp(0.5, 1.0)), 0.2 + 0.2 * Rng.XS.NextDouble() * Player.変化V_肛, b: true);
     			});
     		}
     	}
@@ -574,7 +574,7 @@ namespace SlaveMatrix
     		{
     			調教UI.擬音キュー.Enqueue(delegate(RenderArea a)
     			{
-    				調教UI.擬音.Sound(a, Bod.出糸位置.GetAreaPoint(0.04), Sta.糸挿.GetVal(clip(Player.変化V_糸), Player.変化V_固有値乱数), new Font("MS Gothic", 1f), Color.MediumOrchid.S(Player.変化V_糸.Clamp(0.5, 1.0)), 0.2 + 0.2 * RNG.XS.NextDouble() * Player.変化V_糸, b: true);
+    				調教UI.擬音.Sound(a, Bod.出糸位置.GetAreaPoint(0.04), GlobalState.糸挿.GetVal(clip(Player.変化V_糸), Player.変化V_固有値乱数), new Font("MS Gothic", 1f), Color.MediumOrchid.S(Player.変化V_糸.Clamp(0.5, 1.0)), 0.2 + 0.2 * Rng.XS.NextDouble() * Player.変化V_糸, b: true);
     			});
     		}
     	}
@@ -585,7 +585,7 @@ namespace SlaveMatrix
     		{
     			調教UI.擬音キュー.Enqueue(delegate(RenderArea a)
     			{
-    				調教UI.擬音.Sound(a, Bod.出糸位置.GetAreaPoint(0.04), Sta.糸中.GetVal(clip(Player.変化V_糸), Player.変化V_固有値乱数), new Font("MS Gothic", 1f), Color.MediumOrchid.S(Player.変化V_糸.Clamp(0.5, 1.0)), 0.2 + 0.2 * RNG.XS.NextDouble() * Player.変化V_糸, b: true);
+    				調教UI.擬音.Sound(a, Bod.出糸位置.GetAreaPoint(0.04), GlobalState.糸中.GetVal(clip(Player.変化V_糸), Player.変化V_固有値乱数), new Font("MS Gothic", 1f), Color.MediumOrchid.S(Player.変化V_糸.Clamp(0.5, 1.0)), 0.2 + 0.2 * Rng.XS.NextDouble() * Player.変化V_糸, b: true);
     			});
     		}
     	}
@@ -596,7 +596,7 @@ namespace SlaveMatrix
     		{
     			調教UI.擬音キュー.Enqueue(delegate(RenderArea a)
     			{
-    				調教UI.擬音.Sound(a, Bod.出糸位置.GetAreaPoint(0.04), Sta.糸抜.GetVal(clip(Player.変化V_糸), Player.変化V_固有値乱数), new Font("MS Gothic", 1f), Color.MediumOrchid.S(Player.変化V_糸.Clamp(0.5, 1.0)), 0.2 + 0.2 * RNG.XS.NextDouble() * Player.変化V_糸, b: true);
+    				調教UI.擬音.Sound(a, Bod.出糸位置.GetAreaPoint(0.04), GlobalState.糸抜.GetVal(clip(Player.変化V_糸), Player.変化V_固有値乱数), new Font("MS Gothic", 1f), Color.MediumOrchid.S(Player.変化V_糸.Clamp(0.5, 1.0)), 0.2 + 0.2 * Rng.XS.NextDouble() * Player.変化V_糸, b: true);
     			});
     		}
     	}
@@ -607,7 +607,7 @@ namespace SlaveMatrix
     		{
     			調教UI.擬音キュー.Enqueue(delegate(RenderArea a)
     			{
-    				調教UI.擬音.Sound(a, 対象.Element.位置.GetAreaPoint(0.04), Sta.振動.GetVal(1.0, 1.0), new Font("MS Gothic", 1f), ColorHelper.Black, 0.1 + 0.1 * base.強度, b: true);
+    				調教UI.擬音.Sound(a, 対象.Element.位置.GetAreaPoint(0.04), GlobalState.振動.GetVal(1.0, 1.0), new Font("MS Gothic", 1f), ColorHelper.Black, 0.1 + 0.1 * base.強度, b: true);
     			});
     		}
     	}
@@ -777,7 +777,7 @@ namespace SlaveMatrix
 
     	private void 挿入中1(string str)
     	{
-    		if (!Sta.GameData.ガイド)
+    		if (!GlobalState.GameData.ガイド)
     		{
     			return;
     		}
@@ -814,7 +814,7 @@ namespace SlaveMatrix
 
     	private void 待機時1()
     	{
-    		if (Sta.GameData.ガイド)
+    		if (GlobalState.GameData.ガイド)
     		{
     			if (振動機能)
     			{
@@ -833,7 +833,7 @@ namespace SlaveMatrix
 
     	private void 押付時(ref ContactD cd)
     	{
-    		if (Sta.GameData.ガイド)
+    		if (GlobalState.GameData.ガイド)
     		{
     			if (振動機能)
     			{
@@ -856,7 +856,7 @@ namespace SlaveMatrix
 
     	private void 挿入時(string str)
     	{
-    		if (Sta.GameData.ガイド)
+    		if (GlobalState.GameData.ガイド)
     		{
     			ip.SubInfoIm = str + "\r\nLDo&Mo↑:" + GameText.挿入;
     		}
@@ -997,7 +997,7 @@ namespace SlaveMatrix
     							}
     							if (調教UI.ペニス処理.中出し)
     							{
-    								if (Cha.CharacterData.SkillL > 0.5 * Sta.GameData.TrainingTarget.MaxSkillL && Cha.CharacterData.Affection > 0.6 && Cha.CharacterData.Lust > 0.5)
+    								if (Cha.CharacterData.SkillL > 0.5 * GlobalState.GameData.TrainingTarget.MaxSkillL && Cha.CharacterData.Affection > 0.6 && Cha.CharacterData.Lust > 0.5)
     								{
     									Cha.Swallow.Start();
     								}
@@ -1344,7 +1344,7 @@ namespace SlaveMatrix
     			}
     			if (Is挿入)
     			{
-    				if (Sta.GameData.ガイド)
+    				if (GlobalState.GameData.ガイド)
     				{
     					if (Is口)
     					{
@@ -1438,13 +1438,13 @@ namespace SlaveMatrix
     		{
     			回転モーション.BaseSpeed = 10.0 * base.強度;
     		}
-    		if (!Sta.GameData.ガイド)
+    		if (!GlobalState.GameData.ガイド)
     		{
     			ip.SubInfoIm = "Wh:" + GameText.強さL + 強さ;
     		}
     		else if (Is挿入)
     		{
-    			if (Sta.GameData.ガイド)
+    			if (GlobalState.GameData.ガイド)
     			{
     				if (挿入箇所 == ContactType.Mouth)
     				{

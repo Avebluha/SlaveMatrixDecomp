@@ -67,11 +67,11 @@ namespace SlaveMatrix
 
     	public BackHair0_編1カルD SetRandom()
     	{
-    		髪長0 = RNG.XS.NextDouble();
-    		髪長1 = RNG.XS.NextDouble();
-    		毛量 = RNG.XS.NextDouble();
-    		広がり = RNG.XS.NextDouble();
-    		右 = RNG.XS.NextBool();
+    		髪長0 = Rng.XS.NextDouble();
+    		髪長1 = Rng.XS.NextDouble();
+    		毛量 = Rng.XS.NextDouble();
+    		広がり = Rng.XS.NextDouble();
+    		右 = Rng.XS.NextBool();
     		return this;
     	}
 

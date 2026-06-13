@@ -110,7 +110,7 @@ namespace SlaveMatrix
     		ThisType = GetType();
     		MorphVariant morphVariant = new MorphVariant();
     		morphVariant.Tag = "後光";
-    		morphVariant.Add(new PartGroup(Sta.肢中["背中"][0][2]));
+    		morphVariant.Add(new PartGroup(GlobalState.肢中["背中"][0][2]));
     		Body = new VariantGrid();
     		Body.Tag = morphVariant.Tag;
     		Body.Add(morphVariant);

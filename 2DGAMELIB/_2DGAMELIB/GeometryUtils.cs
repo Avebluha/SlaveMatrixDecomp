@@ -20,7 +20,7 @@ namespace _2DGAMELIB
 
     	public static void GetRandomColor(out Color ret)
     	{
-    		ret = Color.FromArgb(255, RNG.XS.Next(256), RNG.XS.Next(256), RNG.XS.Next(256));
+    		ret = Color.FromArgb(255, Rng.XS.Next(256), Rng.XS.Next(256), Rng.XS.Next(256));
     	}
 
     	public static Color GetInter(ref Color c1, ref Color c2)
@@ -35,7 +35,7 @@ namespace _2DGAMELIB
 
     	public static Vector2D GetRandomVector()
     	{
-    		return new Vector2D(RNG.XS.NextDouble() * (double)(RNG.XS.NextBool() ? 1 : (-1)), RNG.XS.NextDouble() * (double)(RNG.XS.NextBool() ? 1 : (-1)));
+    		return new Vector2D(Rng.XS.NextDouble() * (double)(Rng.XS.NextBool() ? 1 : (-1)), Rng.XS.NextDouble() * (double)(Rng.XS.NextBool() ? 1 : (-1)));
     	}
 
     	public static Color FuncHSV(this Color Color, Func<Hsv, Hsv> Func)
@@ -176,13 +176,13 @@ public static BodyTemplate ObjLoad(this byte[] bd)
 
         public static bool Lot(this double p)
     	{
-    		return RNG.XS.NextDouble() < p;
+    		return Rng.XS.NextDouble() < p;
     	}
 
     	public static int GetRandomIndex(params double[] WeightTable)
     	{
     		double les = WeightTable.Sum();
-    		double num = RNG.XS.NextDouble(les);
+    		double num = Rng.XS.NextDouble(les);
     		int result = -1;
     		for (int i = 0; i < WeightTable.Length; i++)
     		{

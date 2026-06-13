@@ -318,7 +318,7 @@ namespace SlaveMatrix
 
     	public static double GetRareWeight(this string 種族)
     	{
-    		return 1.0 / Math.Pow(race_information[種族].希少 - ((Sta.GameData.祝福 != null && Sta.GameData.祝福.Race == GameText.カーバンクル) ? (race_information[種族].希少 / 2) : 0), 2.0);
+    		return 1.0 / Math.Pow(race_information[種族].希少 - ((GlobalState.GameData.祝福 != null && GlobalState.GameData.祝福.Race == GameText.カーバンクル) ? (race_information[種族].希少 / 2) : 0), 2.0);
     	}
 
     	public static double GetRutinohWeight(this string ルチノー)

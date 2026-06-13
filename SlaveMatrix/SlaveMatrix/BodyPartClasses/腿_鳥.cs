@@ -112,7 +112,7 @@ namespace SlaveMatrix
     	{
     		腿_鳥 腿_鳥2 = this;
     		ThisType = GetType();
-    		MorphVariant morphVariant = new MorphVariant(Sta.脚左["四足腿"][2]);
+    		MorphVariant morphVariant = new MorphVariant(GlobalState.脚左["四足腿"][2]);
     		Body = new VariantGrid();
     		Body.Tag = morphVariant.Tag;
     		Body.Add(morphVariant);

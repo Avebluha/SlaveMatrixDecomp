@@ -639,7 +639,7 @@ namespace SlaveMatrix
     	{
     		顔面_虫 顔面_虫2 = this;
     		ThisType = GetType();
-    		MorphVariant morphVariant = new MorphVariant(Sta.肢中["顔面"][1]);
+    		MorphVariant morphVariant = new MorphVariant(GlobalState.肢中["顔面"][1]);
     		Body = new VariantGrid();
     		Body.Tag = morphVariant.Tag;
     		Body.Add(morphVariant);

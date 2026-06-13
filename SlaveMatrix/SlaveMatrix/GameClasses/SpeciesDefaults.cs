@@ -28,7 +28,7 @@ namespace SlaveMatrix
     		腰肌D eleD = Waist.肌_接続.GetEleD<腰肌D>();
     		if (eleD.獣性_獣毛_表示)
     		{
-    			if (RNG.XS.NextBool())
+    			if (Rng.XS.NextBool())
     			{
     				eleD.獣性_獣毛_表示 = false;
     				eleD.陰毛_表示 = true;
@@ -57,7 +57,7 @@ namespace SlaveMatrix
     		頭D2.Set鼻人();
     		頭D2.Set口人();
     		頭D2.Set舌短();
-    		switch (RNG.XS.Next(4))
+    		switch (Rng.XS.Next(4))
     		{
     		case 0:
     			頭D2.Set耳人();
@@ -74,7 +74,7 @@ namespace SlaveMatrix
     		}
     		手_鳥D 手_鳥D2 = new 手_鳥D
     		{
-    			シャープ = RNG.XS.NextDouble()
+    			シャープ = Rng.XS.NextDouble()
     		};
     		LowerArm_鳥D LowerArm_鳥D2 = new LowerArm_鳥D
     		{
@@ -104,19 +104,19 @@ namespace SlaveMatrix
     		WaistD2.EnumEleD().SetValuesD<頬肌D>("髭", false);
     		if (flag)
     		{
-    			WaistD2.EnumEleD().SetValuesD<胸毛D>("表示", RNG.XS.NextBool());
+    			WaistD2.EnumEleD().SetValuesD<胸毛D>("表示", Rng.XS.NextBool());
     		}
     		else
     		{
     			WaistD2.EnumEleD().SetValuesD<胸毛D>("表示", false);
     		}
     		WaistD2.EnumEleD().SetValuesD<腰肌D>("獣性", true);
-    		WaistD2.EnumEleD().SetValuesD("肥大", RNG.XS.NextDouble());
+    		WaistD2.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
     		WaistD2.EnumEleD().SetValuesD("身長", 頭D2.目高);
-    		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
+    		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + Rng.XS.NextDouble(0.8));
     		WaistD2.SetLowerHair();
     		WaistD2.AdjustScale(頭D2);
-    		return new CharacterData(WaistD2, new 体色(RNG.XS.NextBool()));
+    		return new CharacterData(WaistD2, new 体色(Rng.XS.NextBool()));
     	}
 
     	public static CharacterData Getアフール()
@@ -154,11 +154,11 @@ namespace SlaveMatrix
     		obj.尾接続(new 尾_悪D());
     		obj.EnumEleD().SetValuesD("獣性", true);
     		obj.EnumEleD().SetValuesD<頬肌D>("髭", false);
-    		obj.EnumEleD().SetValuesD<胸毛D>("表示", RNG.XS.NextBool());
+    		obj.EnumEleD().SetValuesD<胸毛D>("表示", Rng.XS.NextBool());
     		obj.EnumEleD().SetValuesD<口_通常D>("牙", true);
-    		obj.EnumEleD().SetValuesD("肥大", RNG.XS.NextDouble());
+    		obj.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
     		obj.EnumEleD().SetValuesD("身長", 頭D2.目高);
-    		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
+    		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + Rng.XS.NextDouble(0.8));
     		obj.SetLowerHair();
     		obj.AdjustScale(頭D2);
     		return new CharacterData(obj, new 体色(b0: false));
@@ -174,7 +174,7 @@ namespace SlaveMatrix
     		頭D2.Set鼻人();
     		頭D2.Set口人();
     		頭D2.Set舌短();
-    		if (RNG.XS.NextBool())
+    		if (Rng.XS.NextBool())
     		{
     			頭D2.Set耳人();
     		}
@@ -213,12 +213,12 @@ namespace SlaveMatrix
     		obj.EnumEleD().SetValuesD("柄", false);
     		obj.EnumEleD().SetValuesD("紋柄", true);
     		obj.EnumEleD().SetValuesD<鼻肌D>("紋柄", false);
-    		obj.EnumEleD().SetValuesD("肥大", RNG.XS.NextDouble());
+    		obj.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
     		obj.EnumEleD().SetValuesD("身長", 頭D2.目高);
-    		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
+    		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + Rng.XS.NextDouble(0.8));
     		obj.SetLowerHair();
     		obj.AdjustScale(頭D2);
-    		return new CharacterData(obj, new 体色(RNG.XS.NextBool()));
+    		return new CharacterData(obj, new 体色(Rng.XS.NextBool()));
     	}
 
     	public static CharacterData GetPhoenix()
@@ -234,7 +234,7 @@ namespace SlaveMatrix
     		頭D2.Set耳羽();
     		手_鳥D 手_鳥D2 = new 手_鳥D
     		{
-    			シャープ = RNG.XS.NextDouble()
+    			シャープ = Rng.XS.NextDouble()
     		};
     		LowerArm_鳥D LowerArm_鳥D2 = new LowerArm_鳥D
     		{
@@ -273,9 +273,9 @@ namespace SlaveMatrix
     		obj.SetValuesD("悪", true);
     		obj.EnumEleD().SetValuesD("植", true);
     		obj.EnumEleD().SetValuesD<足_鳥D>("竜性", true);
-    		obj.EnumEleD().SetValuesD("肥大", RNG.XS.NextDouble());
+    		obj.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
     		obj.EnumEleD().SetValuesD("身長", 頭D2.目高);
-    		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
+    		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + Rng.XS.NextDouble(0.8));
     		obj.SetLowerHair();
     		obj.AdjustScale(頭D2);
     		return new CharacterData(obj, new 体色(b0: false));
@@ -291,7 +291,7 @@ namespace SlaveMatrix
     		頭D2.Set鼻人();
     		頭D2.Set口人();
     		頭D2.Set舌長();
-    		if (RNG.XS.NextBool())
+    		if (Rng.XS.NextBool())
     		{
     			頭D2.Set耳人();
     		}
@@ -321,12 +321,12 @@ namespace SlaveMatrix
     		Torso_蛇D2.Torso接続(new 尾_ヘD());
     		WaistD2.EnumEleD().SetValuesD<口_通常D>("牙", true);
     		WaistD2.EnumEleD().SetValuesD<舌_長D>("股舌表示", true);
-    		WaistD2.EnumEleD().SetValuesD("肥大", RNG.XS.NextDouble());
+    		WaistD2.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
     		WaistD2.EnumEleD().SetValuesD("身長", 頭D2.目高);
-    		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
+    		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + Rng.XS.NextDouble(0.8));
     		WaistD2.SetLowerHair();
     		WaistD2.AdjustScale(頭D2);
-    		return new CharacterData(WaistD2, new 体色(RNG.XS.NextBool()));
+    		return new CharacterData(WaistD2, new 体色(Rng.XS.NextBool()));
     	}
 
     	public static CharacterData Getシーラミア()
@@ -351,7 +351,7 @@ namespace SlaveMatrix
     		obj.肩右接続(ShoulderD2.Get逆());
     		長物_蛇D 長物_蛇D2 = new 長物_蛇D();
     		WaistD2.半身接続(長物_蛇D2);
-    		if (RNG.XS.NextBool())
+    		if (Rng.XS.NextBool())
     		{
     			長物_蛇D2.くぱぁ = 1.0;
     			長物_蛇D2.ガード = false;
@@ -365,11 +365,11 @@ namespace SlaveMatrix
     		胴_蛇D2.Torso接続(new 尾_ウD());
     		WaistD2.EnumEleD().SetValuesD<口_通常D>("牙", true);
     		WaistD2.EnumEleD().SetValuesD<舌_長D>("股舌表示", true);
-    		WaistD2.EnumEleD().SetValuesD("肥大", RNG.XS.NextDouble());
+    		WaistD2.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
     		WaistD2.EnumEleD().SetValuesD("身長", 頭D2.目高);
-    		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
+    		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + Rng.XS.NextDouble(0.8));
     		WaistD2.AdjustScale(頭D2);
-    		return new CharacterData(WaistD2, new 体色(RNG.XS.NextBool()));
+    		return new CharacterData(WaistD2, new 体色(Rng.XS.NextBool()));
     	}
 
     	public static CharacterData Getオノケンタウレ()
@@ -419,12 +419,12 @@ namespace SlaveMatrix
     		obj.EnumEleD().SetValuesD<肛門_人D>("表示", false);
     		obj.EnumEleD().SetValuesD<腰肌D>("獣性", true);
     		四足腰D2.EnumEleD().SetValuesD<腰肌D>("獣性", false);
-    		obj.EnumEleD().SetValuesD("肥大", RNG.XS.NextDouble());
+    		obj.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
     		obj.EnumEleD().SetValuesD("身長", 0.0);
-    		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
+    		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + Rng.XS.NextDouble(0.8));
     		obj.SetLowerHair();
     		obj.AdjustScale(頭D2);
-    		return new CharacterData(obj, new 体色(RNG.XS.NextBool()));
+    		return new CharacterData(obj, new 体色(Rng.XS.NextBool()));
     	}
 
     	public static CharacterData Getヒッポケンタウレ()
@@ -437,7 +437,7 @@ namespace SlaveMatrix
     		頭D2.Set鼻人();
     		頭D2.Set口人();
     		頭D2.Set舌短();
-    		if (RNG.XS.Next(2) == 0)
+    		if (Rng.XS.Next(2) == 0)
     		{
     			頭D2.Set耳人();
     		}
@@ -477,20 +477,20 @@ namespace SlaveMatrix
     		四足腰D2.腿左接続(腿_蹄D2);
     		四足腰D2.腿右接続(腿_蹄D2.Get逆());
     		四足腰D2.尾接続(new 尾_馬D());
-    		if (RNG.XS.NextBool())
+    		if (Rng.XS.NextBool())
     		{
-    			WaistD2.EnumEleD().SetValuesD<HeadD>("馬", RNG.XS.NextBool());
+    			WaistD2.EnumEleD().SetValuesD<HeadD>("馬", Rng.XS.NextBool());
     		}
     		WaistD2.EnumEleD().SetValuesD<性器_人D>("表示", false);
     		WaistD2.EnumEleD().SetValuesD<肛門_人D>("表示", false);
     		WaistD2.EnumEleD().SetValuesD<腰肌D>("獣性", true);
     		四足腰D2.EnumEleD().SetValuesD<腰肌D>("獣性", false);
-    		WaistD2.EnumEleD().SetValuesD("肥大", RNG.XS.NextDouble());
+    		WaistD2.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
     		WaistD2.EnumEleD().SetValuesD("身長", 頭D2.目高);
-    		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
+    		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + Rng.XS.NextDouble(0.8));
     		WaistD2.SetLowerHair();
     		WaistD2.AdjustScale(頭D2);
-    		return new CharacterData(WaistD2, new 体色(RNG.XS.NextBool()));
+    		return new CharacterData(WaistD2, new 体色(Rng.XS.NextBool()));
     	}
 
     	public static CharacterData Getブケンタウレ()
@@ -504,7 +504,7 @@ namespace SlaveMatrix
     		頭D2.Set口人();
     		頭D2.Set舌短();
     		頭D2.Set耳獣();
-    		ElementData eleD2 = RNG.XS.Next(4) switch
+    		ElementData eleD2 = Rng.XS.Next(4) switch
     		{
     			0 => new 角2_牛1D(), 
     			1 => new 角2_牛2D(), 
@@ -545,7 +545,7 @@ namespace SlaveMatrix
     		四足腰D2.腿左接続(腿_蹄D2);
     		四足腰D2.腿右接続(腿_蹄D2.Get逆());
     		四足腰D2.尾接続(new 尾_牛D());
-    		if (RNG.XS.NextBool())
+    		if (Rng.XS.NextBool())
     		{
     			WaistD2.EnumEleD().SetValuesD<頬肌D>("牛", true);
     			WaistD2.EnumEleD().SetValuesD<四足脇D>("配色指定", 配色指定.H0);
@@ -555,12 +555,12 @@ namespace SlaveMatrix
     		WaistD2.EnumEleD().SetValuesD<腰肌D>("獣性", true);
     		四足腰D2.EnumEleD().SetValuesD<腰肌D>("獣性", false);
     		WaistD2.EnumEleD().SetValuesD("バスト", 1.0);
-    		WaistD2.EnumEleD().SetValuesD("肥大", RNG.XS.NextDouble());
+    		WaistD2.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
     		WaistD2.EnumEleD().SetValuesD("身長", 頭D2.目高);
-    		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
+    		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + Rng.XS.NextDouble(0.8));
     		WaistD2.SetLowerHair();
     		WaistD2.AdjustScale(頭D2);
-    		return new CharacterData(WaistD2, new 体色(RNG.XS.NextBool()));
+    		return new CharacterData(WaistD2, new 体色(Rng.XS.NextBool()));
     	}
 
     	public static CharacterData Getカプラケンタウレ()
@@ -574,7 +574,7 @@ namespace SlaveMatrix
     		頭D2.Set口人();
     		頭D2.Set舌短();
     		頭D2.Set耳獣();
-    		ElementData eleD2 = RNG.XS.Next(4) switch
+    		ElementData eleD2 = Rng.XS.Next(4) switch
     		{
     			0 => new 角2_山1D(), 
     			1 => new 角2_山2D(), 
@@ -624,13 +624,13 @@ namespace SlaveMatrix
     		WaistD2.EnumEleD().SetValuesD<腰肌D>("獣毛", true);
     		WaistD2.EnumEleD().SetValuesD<性器_人D>("表示", false);
     		WaistD2.EnumEleD().SetValuesD<肛門_人D>("表示", false);
-    		WaistD2.EnumEleD().SetValuesD<双目D>("蛸目", RNG.XS.NextBool());
-    		WaistD2.EnumEleD().SetValuesD("肥大", RNG.XS.NextDouble());
+    		WaistD2.EnumEleD().SetValuesD<双目D>("蛸目", Rng.XS.NextBool());
+    		WaistD2.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
     		WaistD2.EnumEleD().SetValuesD("身長", 頭D2.目高);
-    		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
+    		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + Rng.XS.NextDouble(0.8));
     		WaistD2.SetLowerHair();
     		WaistD2.AdjustScale(頭D2);
-    		return new CharacterData(WaistD2, new 体色(RNG.XS.NextBool()));
+    		return new CharacterData(WaistD2, new 体色(Rng.XS.NextBool()));
     	}
 
     	public static CharacterData Getマーメイド()
@@ -658,11 +658,11 @@ namespace SlaveMatrix
     		尾_魚D 尾_魚D2 = new 尾_魚D();
     		長物_魚D2.尾接続(尾_魚D2);
     		尾_魚D2.尾先接続(new 尾鰭_魚D());
-    		obj.EnumEleD().SetValuesD("肥大", RNG.XS.NextDouble());
+    		obj.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
     		obj.EnumEleD().SetValuesD("身長", 頭D2.目高);
-    		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
+    		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + Rng.XS.NextDouble(0.8));
     		obj.AdjustScale(頭D2);
-    		return new CharacterData(obj, new 体色(RNG.XS.NextBool()));
+    		return new CharacterData(obj, new 体色(Rng.XS.NextBool()));
     	}
 
     	public static CharacterData Getドルフィンマーメイド()
@@ -690,11 +690,11 @@ namespace SlaveMatrix
     		尾_鯨D 尾_鯨D2 = new 尾_鯨D();
     		長物_鯨D2.尾接続(尾_鯨D2);
     		尾_鯨D2.尾先接続(new 尾鰭_鯨D());
-    		obj.EnumEleD().SetValuesD("肥大", RNG.XS.NextDouble());
+    		obj.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
     		obj.EnumEleD().SetValuesD("身長", 頭D2.目高);
-    		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
+    		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + Rng.XS.NextDouble(0.8));
     		obj.AdjustScale(頭D2);
-    		return new CharacterData(obj, new 体色(RNG.XS.NextBool()));
+    		return new CharacterData(obj, new 体色(Rng.XS.NextBool()));
     	}
 
     	public static CharacterData Getオールドマーメイド()
@@ -726,11 +726,11 @@ namespace SlaveMatrix
     		尾_魚D2.尾先接続(new 尾鰭_魚D());
     		obj.腿左接続(尾_魚D2);
     		obj.腿右接続(尾_魚D2.Get逆());
-    		obj.EnumEleD().SetValuesD("肥大", RNG.XS.NextDouble());
+    		obj.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
     		obj.EnumEleD().SetValuesD("身長", 頭D2.目高);
-    		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
+    		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + Rng.XS.NextDouble(0.8));
     		obj.AdjustScale(頭D2);
-    		return new CharacterData(obj, new 体色(RNG.XS.NextBool()));
+    		return new CharacterData(obj, new 体色(Rng.XS.NextBool()));
     	}
 
     	public static CharacterData Getイクテュオケンタウレ(bool b)
@@ -768,7 +768,7 @@ namespace SlaveMatrix
     		{
     			長物_蛇D 長物_蛇D2 = new 長物_蛇D();
     			WaistD2.半身接続(長物_蛇D2);
-    			if (RNG.XS.NextBool())
+    			if (Rng.XS.NextBool())
     			{
     				長物_蛇D2.くぱぁ = 1.0;
     				長物_蛇D2.ガード = false;
@@ -782,11 +782,11 @@ namespace SlaveMatrix
     			Torso_蛇D2.Torso接続(尾_ヘD2);
     			尾_ヘD2.尾先接続(new 尾鰭_魚D());
     		}
-    		WaistD2.EnumEleD().SetValuesD("肥大", RNG.XS.NextDouble());
+    		WaistD2.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
     		WaistD2.EnumEleD().SetValuesD("身長", 頭D2.目高);
-    		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
+    		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + Rng.XS.NextDouble(0.8));
     		WaistD2.AdjustScale(頭D2);
-    		return new CharacterData(WaistD2, new 体色(RNG.XS.NextBool()));
+    		return new CharacterData(WaistD2, new 体色(Rng.XS.NextBool()));
     	}
 
     	public static CharacterData Getデルピヌスケンタウレ()
@@ -818,11 +818,11 @@ namespace SlaveMatrix
     		長物_鯨D2.尾接続(尾_鯨D2);
     		尾_鯨D2.尾先接続(new 尾鰭_鯨D());
     		obj.EnumEleD().SetValuesD<頬肌D>("豹", true);
-    		obj.EnumEleD().SetValuesD("肥大", RNG.XS.NextDouble());
+    		obj.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
     		obj.EnumEleD().SetValuesD("身長", 頭D2.目高);
-    		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
+    		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + Rng.XS.NextDouble(0.8));
     		obj.AdjustScale(頭D2);
-    		return new CharacterData(obj, new 体色(RNG.XS.NextBool()));
+    		return new CharacterData(obj, new 体色(Rng.XS.NextBool()));
     	}
 
     	public static CharacterData Getスキュラ()
@@ -835,7 +835,7 @@ namespace SlaveMatrix
     		頭D2.Set鼻人();
     		頭D2.Set口人();
     		頭D2.Set舌短();
-    		if (RNG.XS.NextBool())
+    		if (Rng.XS.NextBool())
     		{
     			頭D2.Set耳尖();
     		}
@@ -862,7 +862,7 @@ namespace SlaveMatrix
     		{
     			前足 = true
     		};
-    		if (RNG.XS.NextBool())
+    		if (Rng.XS.NextBool())
     		{
     			触手_軟D2.SetValuesD("鎧", true);
     			触手_軟D3.SetValuesD("鎧", true);
@@ -875,19 +875,19 @@ namespace SlaveMatrix
     		多足_蛸D2.軟体外右接続(触手_軟D3.Get逆());
     		多足_蛸D2.軟体外左接続(触手_軟D3.Copy());
     		多足_蛸D2.軟体外右接続(触手_軟D3.Get逆());
-    		if (RNG.XS.NextBool())
+    		if (Rng.XS.NextBool())
     		{
     			WaistD2.EnumEleD().SetValuesD("紋柄", true);
     		}
-    		if (RNG.XS.NextBool())
+    		if (Rng.XS.NextBool())
     		{
     			WaistD2.EnumEleD().SetValuesD<鼻肌D>("紋柄", false);
     		}
-    		WaistD2.EnumEleD().SetValuesD("肥大", RNG.XS.NextDouble());
+    		WaistD2.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
     		WaistD2.EnumEleD().SetValuesD("身長", 頭D2.目高);
-    		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
+    		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + Rng.XS.NextDouble(0.8));
     		WaistD2.AdjustScale(頭D2);
-    		return new CharacterData(WaistD2, new 体色(RNG.XS.NextBool()));
+    		return new CharacterData(WaistD2, new 体色(Rng.XS.NextBool()));
     	}
 
     	public static CharacterData Getオールドスキュラ(bool b)
@@ -900,7 +900,7 @@ namespace SlaveMatrix
     		頭D2.Set鼻人();
     		頭D2.Set口人();
     		頭D2.Set舌短();
-    		if (RNG.XS.NextBool())
+    		if (Rng.XS.NextBool())
     		{
     			頭D2.Set耳尖();
     		}
@@ -921,7 +921,7 @@ namespace SlaveMatrix
     		触手_犬D2.SetValuesD("Leg", b);
     		if (b)
     		{
-    			触手_犬D2.SetValuesD("鰭", RNG.XS.NextBool());
+    			触手_犬D2.SetValuesD("鰭", Rng.XS.NextBool());
     		}
     		obj.腿左接続(触手_犬D2.Copy());
     		obj.腿右接続(触手_犬D2.Get逆());
@@ -934,11 +934,11 @@ namespace SlaveMatrix
     		尾_魚D 尾_魚D2 = new 尾_魚D();
     		長物_魚D2.尾接続(尾_魚D2);
     		尾_魚D2.尾先接続(new 尾鰭_魚D());
-    		obj.EnumEleD().SetValuesD("肥大", RNG.XS.NextDouble());
+    		obj.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
     		obj.EnumEleD().SetValuesD("身長", 頭D2.目高);
-    		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
+    		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + Rng.XS.NextDouble(0.8));
     		obj.AdjustScale(頭D2);
-    		return new CharacterData(obj, new 体色(RNG.XS.NextBool()));
+    		return new CharacterData(obj, new 体色(Rng.XS.NextBool()));
     	}
 
     	public static CharacterData Getカリュブディス()
@@ -952,7 +952,7 @@ namespace SlaveMatrix
     		頭D2.Set口裂();
     		頭D2.Set舌長();
     		頭D2.Set耳鰭();
-    		ElementData eleD2 = RNG.XS.Next(4) switch
+    		ElementData eleD2 = Rng.XS.Next(4) switch
     		{
     			0 => new 角2_牛1D(), 
     			1 => new 角2_牛2D(), 
@@ -994,7 +994,7 @@ namespace SlaveMatrix
     		WaistD2.EnumEleD().SetValuesD<手_人D>("配色", 配色指定.S0);
     		WaistD2.EnumEleD().SetValuesD("肥大", 1.0);
     		WaistD2.EnumEleD().SetValuesD("身長", 頭D2.目高);
-    		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
+    		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + Rng.XS.NextDouble(0.8));
     		WaistD2.AdjustScale(頭D2);
     		return new CharacterData(WaistD2, new 体色(b0: false));
     	}
@@ -1009,7 +1009,7 @@ namespace SlaveMatrix
     		頭D2.Set鼻人();
     		頭D2.Set口人();
     		頭D2.Set舌短();
-    		if (RNG.XS.NextBool())
+    		if (Rng.XS.NextBool())
     		{
     			頭D2.Set耳尖();
     		}
@@ -1026,7 +1026,7 @@ namespace SlaveMatrix
     		ShoulderD2.UpperArm接続(UpperArm_人D2);
     		obj.肩左接続(ShoulderD2);
     		obj.肩右接続(ShoulderD2.Get逆());
-    		if (RNG.XS.NextBool())
+    		if (Rng.XS.NextBool())
     		{
     			ElementData elementData = new 虫顎D();
     			頭D2.頬左接続(elementData);
@@ -1035,7 +1035,7 @@ namespace SlaveMatrix
     		多足_蜘D 多足_蜘D2 = new 多足_蜘D();
     		WaistD2.半身接続(多足_蜘D2);
     		尾_蜘D 尾_蜘D2 = new 尾_蜘D();
-    		尾_蜘D2.出糸 = RNG.XS.NextBool();
+    		尾_蜘D2.出糸 = Rng.XS.NextBool();
     		多足_蜘D2.尾接続(尾_蜘D2);
     		触肢_肢蜘D 触肢_肢蜘D2 = new 触肢_肢蜘D();
     		節足_足蜘D 節足_足蜘D2 = new 節足_足蜘D();
@@ -1055,27 +1055,27 @@ namespace SlaveMatrix
     		多足_蜘D2.節足右2接続(eleD2.Get逆());
     		多足_蜘D2.節足右3接続(eleD3.Get逆());
     		多足_蜘D2.節足右4接続(eleD4.Get逆());
-    		if (RNG.XS.NextBool())
+    		if (Rng.XS.NextBool())
     		{
     			WaistD2.EnumEleD().SetValuesD<口_通常D>("牙", true);
     		}
-    		if (RNG.XS.NextBool())
+    		if (Rng.XS.NextBool())
     		{
     			多足_蜘D2.EnumEleD().SetValuesD("柄", true);
     		}
-    		WaistD2.EnumEleD().SetValuesD<HeadD>("蜘", 頭D2.頬左_接続.IsEleD<虫顎D>() || RNG.XS.NextBool());
-    		WaistD2.EnumEleD().SetValuesD<頬肌D>("蜘", RNG.XS.NextBool());
-    		WaistD2.EnumEleD().SetValuesD<胸肌D>("蜘", RNG.XS.NextBool());
+    		WaistD2.EnumEleD().SetValuesD<HeadD>("蜘", 頭D2.頬左_接続.IsEleD<虫顎D>() || Rng.XS.NextBool());
+    		WaistD2.EnumEleD().SetValuesD<頬肌D>("蜘", Rng.XS.NextBool());
+    		WaistD2.EnumEleD().SetValuesD<胸肌D>("蜘", Rng.XS.NextBool());
     		if (頭D2.頬左_接続.IsEleD<虫顎D>())
     		{
     			WaistD2.EnumEleD().SetValuesD<頬肌D>("蜘", false);
     		}
-    		WaistD2.EnumEleD().SetValuesD("肥大", RNG.XS.NextDouble());
+    		WaistD2.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
     		WaistD2.EnumEleD().SetValuesD("身長", 頭D2.目高);
-    		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
+    		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + Rng.XS.NextDouble(0.8));
     		WaistD2.SetLowerHair();
     		WaistD2.AdjustScale(頭D2);
-    		return new CharacterData(WaistD2, new 体色(RNG.XS.NextBool()));
+    		return new CharacterData(WaistD2, new 体色(Rng.XS.NextBool()));
     	}
 
     	public static CharacterData Getギルタブリル()
@@ -1088,7 +1088,7 @@ namespace SlaveMatrix
     		頭D2.Set鼻人();
     		頭D2.Set口人();
     		頭D2.Set舌短();
-    		if (RNG.XS.NextBool())
+    		if (Rng.XS.NextBool())
     		{
     			頭D2.Set耳尖();
     		}
@@ -1096,7 +1096,7 @@ namespace SlaveMatrix
     		{
     			頭D2.Set耳人();
     		}
-    		if (RNG.XS.NextBool())
+    		if (Rng.XS.NextBool())
     		{
     			ElementData elementData = new 虫顎D();
     			頭D2.頬左接続(elementData);
@@ -1113,13 +1113,13 @@ namespace SlaveMatrix
     		obj.肩右接続(ShoulderD2.Get逆());
     		多足_蠍D 多足_蠍D2 = new 多足_蠍D();
     		WaistD2.半身接続(多足_蠍D2);
-    		多足_蠍D2.前腹_腹節3_節線_表示 = RNG.XS.NextBool();
+    		多足_蠍D2.前腹_腹節3_節線_表示 = Rng.XS.NextBool();
     		多足_蠍D2.前腹_腹節4_節線_表示 = 多足_蠍D2.前腹_腹節3_節線_表示;
     		多足_蠍D2.前腹_腹節5_節線_表示 = 多足_蠍D2.前腹_腹節3_節線_表示;
     		多足_蠍D2.前腹_腹節6_節線_表示 = 多足_蠍D2.前腹_腹節3_節線_表示;
     		触肢_肢蠍D 触肢_肢蠍D2 = new 触肢_肢蠍D();
     		節足_足蠍D 節足_足蠍D2 = new 節足_足蠍D();
-    		節足_足蠍D2.爪 = RNG.XS.NextBool();
+    		節足_足蠍D2.爪 = Rng.XS.NextBool();
     		ElementData eleD2 = 節足_足蠍D2.Copy();
     		ElementData eleD3 = 節足_足蠍D2.Copy();
     		ElementData eleD4 = 節足_足蠍D2.Copy();
@@ -1133,7 +1133,7 @@ namespace SlaveMatrix
     		多足_蠍D2.節足右2接続(eleD2.Get逆());
     		多足_蠍D2.節足右3接続(eleD3.Get逆());
     		多足_蠍D2.節足右4接続(eleD4.Get逆());
-    		if (RNG.XS.NextBool())
+    		if (Rng.XS.NextBool())
     		{
     			ElementData elementData = new 触覚_蠍D();
     			多足_蠍D2.櫛状板左接続(elementData);
@@ -1148,26 +1148,26 @@ namespace SlaveMatrix
     		WaistD2.EnumEleD().SetValuesD<頬肌D>("タトゥ", false);
     		WaistD2.EnumEleD().SetValuesD<ChestD>("植", false);
     		WaistD2.EnumEleD().SetValuesD<手_人D>("悪", false);
-    		if (RNG.XS.NextBool())
+    		if (Rng.XS.NextBool())
     		{
     			WaistD2.EnumEleD().SetValuesD<口_通常D>("牙", true);
     		}
-    		if (RNG.XS.NextBool())
+    		if (Rng.XS.NextBool())
     		{
     			多足_蠍D2.EnumEleD().SetValuesD("柄", true);
     		}
-    		WaistD2.EnumEleD().SetValuesD<HeadD>("蜘", 頭D2.頬左_接続.IsEleD<虫顎D>() || RNG.XS.NextBool());
-    		WaistD2.EnumEleD().SetValuesD<頬肌D>("蜘", RNG.XS.NextBool());
+    		WaistD2.EnumEleD().SetValuesD<HeadD>("蜘", 頭D2.頬左_接続.IsEleD<虫顎D>() || Rng.XS.NextBool());
+    		WaistD2.EnumEleD().SetValuesD<頬肌D>("蜘", Rng.XS.NextBool());
     		if (頭D2.頬左_接続.IsEleD<虫顎D>())
     		{
     			WaistD2.EnumEleD().SetValuesD<頬肌D>("蜘", false);
     		}
-    		WaistD2.EnumEleD().SetValuesD("肥大", RNG.XS.NextDouble());
+    		WaistD2.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
     		WaistD2.EnumEleD().SetValuesD("身長", 頭D2.目高);
-    		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
+    		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + Rng.XS.NextDouble(0.8));
     		WaistD2.SetLowerHair();
     		WaistD2.AdjustScale(頭D2);
-    		return new CharacterData(WaistD2, new 体色(RNG.XS.NextBool()));
+    		return new CharacterData(WaistD2, new 体色(Rng.XS.NextBool()));
     	}
 
     	public static CharacterData Getギルタブルル()
@@ -1198,7 +1198,7 @@ namespace SlaveMatrix
     		ShoulderD2.UpperArm接続(UpperArm_人D2);
     		ChestD2.肩左接続(ShoulderD2);
     		ChestD2.肩右接続(ShoulderD2.Get逆());
-    		if (RNG.XS.NextBool())
+    		if (Rng.XS.NextBool())
     		{
     			手_鳥D e3 = new 手_鳥D();
     			LowerArm_鳥D LowerArm_鳥D2 = new LowerArm_鳥D();
@@ -1229,9 +1229,9 @@ namespace SlaveMatrix
     		obj.EnumEleD().SetValuesD<HeadD>("顎下", true);
     		obj.EnumEleD().SetValuesD<WaistD>("獣", true);
     		obj.EnumEleD().SetValuesD<腰肌D>("獣", true);
-    		obj.EnumEleD().SetValuesD("肥大", RNG.XS.NextDouble());
+    		obj.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
     		obj.EnumEleD().SetValuesD("身長", 頭D2.目高);
-    		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
+    		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + Rng.XS.NextDouble(0.8));
     		obj.SetLowerHair();
     		obj.AdjustScale(頭D2);
     		return new CharacterData(obj, new 体色(b0: false));
@@ -1261,7 +1261,7 @@ namespace SlaveMatrix
     		植D 植D2 = new 植D();
     		ElementData eleD2 = SlaveMatrix.GameClasses._Con.Get花R(右: false);
     		植D2.花接続(eleD2);
-    		bool flag = RNG.XS.NextBool();
+    		bool flag = Rng.XS.NextBool();
     		if (eleD2 is 花_百D)
     		{
     			((花_百D)eleD2).萼_萼_表示 = !flag;
@@ -1286,9 +1286,9 @@ namespace SlaveMatrix
     		eleD.頭頂右接続(植D2.Get逆());
     		触手_蔦D 触手_蔦D2 = new 触手_蔦D
     		{
-    			先端表示 = RNG.XS.NextBool()
+    			先端表示 = Rng.XS.NextBool()
     		};
-    		触手_蔦D2.SetValuesD("棘", RNG.XS.NextBool());
+    		触手_蔦D2.SetValuesD("棘", Rng.XS.NextBool());
     		ElementData eleD3 = (flag ? ((葉D)new 葉_披D()) : ((葉D)new 葉_心D()));
     		eleD3.尺度B *= 1.2;
     		触手_蔦D2.節3接続(eleD3);
@@ -1338,9 +1338,9 @@ namespace SlaveMatrix
     		obj.EnumEleD().SetValuesD<頬肌D>("隈取", false);
     		obj.EnumEleD().SetValuesD<腿_人D>("悪", true);
     		obj.EnumEleD().SetValuesD<腿_人D>("葉1", false);
-    		obj.EnumEleD().SetValuesD("肥大", RNG.XS.NextDouble());
+    		obj.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
     		obj.EnumEleD().SetValuesD("身長", 頭D2.目高);
-    		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
+    		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + Rng.XS.NextDouble(0.8));
     		obj.SetLowerHair();
     		obj.AdjustScale(頭D2);
     		return new CharacterData(obj, new 体色(b0: false));
@@ -1358,7 +1358,7 @@ namespace SlaveMatrix
     		頭D2.Set口人();
     		頭D2.Set舌短();
     		頭D2.Set耳長();
-    		ElementData eleD2 = RNG.XS.Next(5) switch
+    		ElementData eleD2 = Rng.XS.Next(5) switch
     		{
     			0 => new 角2_山2D
     			{
@@ -1412,12 +1412,12 @@ namespace SlaveMatrix
     		WaistD2.尾接続(new 尾_淫D());
     		WaistD2.EnumEleD().SetValuesD("淫", true);
     		WaistD2.EnumEleD().SetValuesD<ChestD>("植", true);
-    		WaistD2.EnumEleD().SetValuesD("肥大", RNG.XS.NextDouble());
+    		WaistD2.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
     		WaistD2.EnumEleD().SetValuesD("身長", 頭D2.目高);
-    		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
+    		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + Rng.XS.NextDouble(0.8));
     		WaistD2.SetLowerHair();
     		WaistD2.AdjustScale(頭D2);
-    		return new CharacterData(WaistD2, new 体色(RNG.XS.NextBool()))
+    		return new CharacterData(WaistD2, new 体色(Rng.XS.NextBool()))
     		{
     			現陰毛 = 0.0
     		};
@@ -1433,7 +1433,7 @@ namespace SlaveMatrix
     		頭D2.Set鼻人();
     		頭D2.Set口R();
     		頭D2.Set舌短();
-    		if (RNG.XS.NextBool())
+    		if (Rng.XS.NextBool())
     		{
     			頭D2.Set耳尖();
     		}
@@ -1441,7 +1441,7 @@ namespace SlaveMatrix
     		{
     			頭D2.Set耳長();
     		}
-    		ElementData eleD2 = RNG.XS.Next(8) switch
+    		ElementData eleD2 = Rng.XS.Next(8) switch
     		{
     			0 => new 角2_山1D(), 
     			1 => new 角2_山2D(), 
@@ -1463,11 +1463,11 @@ namespace SlaveMatrix
     		ShoulderD2.UpperArm接続(UpperArm_人D2);
     		ChestD2.肩左接続(ShoulderD2);
     		ChestD2.肩右接続(ShoulderD2.Get逆());
-    		if (RNG.XS.NextBool())
+    		if (Rng.XS.NextBool())
     		{
     			手_蝙D e2 = new 手_蝙D
     			{
-    				シャープ = RNG.XS.NextDouble()
+    				シャープ = Rng.XS.NextDouble()
     			};
     			LowerArm_蝙D LowerArm_蝙D2 = new LowerArm_蝙D();
     			LowerArm_蝙D2.手接続(e2);
@@ -1486,7 +1486,7 @@ namespace SlaveMatrix
     			ChestD2.翼上左接続(UpperArm_鳥D2);
     			ChestD2.翼上右接続(UpperArm_鳥D2.Get逆());
     		}
-    		if (RNG.XS.NextBool())
+    		if (Rng.XS.NextBool())
     		{
     			足_人D e4 = new 足_人D();
     			Leg_人D Leg_人D2 = new Leg_人D();
@@ -1508,7 +1508,7 @@ namespace SlaveMatrix
     			WaistD2.EnumEleD().SetValuesD<腰肌D>("獣性", true);
     			WaistD2.EnumEleD().SetValuesD<頬肌D>("髭", false);
     		}
-    		WaistD2.尾接続(RNG.XS.NextM(4) switch
+    		WaistD2.尾接続(Rng.XS.NextM(4) switch
     		{
     			0 => new 尾_犬D(), 
     			1 => new 尾_馬D(), 
@@ -1517,9 +1517,9 @@ namespace SlaveMatrix
     		});
     		WaistD2.EnumEleD().SetValuesD("悪", true);
     		WaistD2.EnumEleD().SetValuesD<口_通常D>("牙", true);
-    		WaistD2.EnumEleD().SetValuesD("肥大", RNG.XS.NextDouble());
+    		WaistD2.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
     		WaistD2.EnumEleD().SetValuesD("身長", 頭D2.目高);
-    		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
+    		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + Rng.XS.NextDouble(0.8));
     		WaistD2.SetLowerHair();
     		WaistD2.AdjustScale(頭D2);
     		return new CharacterData(WaistD2, new 体色(b0: false));
@@ -1555,7 +1555,7 @@ namespace SlaveMatrix
     		ChestD2.肩右接続(ShoulderD2.Get逆());
     		手_鳥D 手_鳥D2 = new 手_鳥D
     		{
-    			シャープ = RNG.XS.NextDouble()
+    			シャープ = Rng.XS.NextDouble()
     		};
     		LowerArm_鳥D LowerArm_鳥D2 = new LowerArm_鳥D
     		{
@@ -1567,7 +1567,7 @@ namespace SlaveMatrix
     			シャープ = LowerArm_鳥D2.シャープ
     		};
     		UpperArm_鳥D2.LowerArm接続(LowerArm_鳥D2);
-    		for (int i = 0; i < RNG.XS.Next(2) + 1; i++)
+    		for (int i = 0; i < Rng.XS.Next(2) + 1; i++)
     		{
     			ChestD2.翼上左接続(UpperArm_鳥D2.Copy());
     			ChestD2.翼上右接続(UpperArm_鳥D2.Get逆());
@@ -1579,12 +1579,12 @@ namespace SlaveMatrix
     		腿_人D2.Leg接続(Leg_人D2);
     		WaistD2.腿左接続(腿_人D2);
     		WaistD2.腿右接続(腿_人D2.Get逆());
-    		WaistD2.EnumEleD().SetValuesD("肥大", RNG.XS.NextDouble());
+    		WaistD2.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
     		WaistD2.EnumEleD().SetValuesD("身長", 頭D2.目高);
-    		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
+    		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + Rng.XS.NextDouble(0.8));
     		WaistD2.SetLowerHair();
     		WaistD2.AdjustScale(頭D2);
-    		return new CharacterData(WaistD2, new 体色(RNG.XS.NextBool()));
+    		return new CharacterData(WaistD2, new 体色(Rng.XS.NextBool()));
     	}
 
     	public static CharacterData Getウェアキャット()
@@ -1630,12 +1630,12 @@ namespace SlaveMatrix
     		obj.EnumEleD().SetValuesD<手_人D>("配色指定", 配色指定.B0);
     		obj.EnumEleD().SetValuesD<Leg_人D>("配色指定", 配色指定.B0);
     		obj.EnumEleD().SetValuesD<足_人D>("配色指定", 配色指定.B0);
-    		obj.EnumEleD().SetValuesD("肥大", RNG.XS.NextDouble());
+    		obj.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
     		obj.EnumEleD().SetValuesD("身長", 頭D2.目高);
-    		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
+    		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + Rng.XS.NextDouble(0.8));
     		obj.SetLowerHair();
     		obj.AdjustScale(頭D2);
-    		return new CharacterData(obj, new 体色(RNG.XS.NextBool()));
+    		return new CharacterData(obj, new 体色(Rng.XS.NextBool()));
     	}
 
     	public static CharacterData Getウェアフォックス()
@@ -1683,12 +1683,12 @@ namespace SlaveMatrix
     		obj.EnumEleD().SetValuesD<手_人D>("配色指定", 配色指定.B0);
     		obj.EnumEleD().SetValuesD<Leg_人D>("配色指定", 配色指定.B0);
     		obj.EnumEleD().SetValuesD<足_人D>("配色指定", 配色指定.B0);
-    		obj.EnumEleD().SetValuesD("肥大", RNG.XS.NextDouble());
+    		obj.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
     		obj.EnumEleD().SetValuesD("身長", 頭D2.目高);
-    		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
+    		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + Rng.XS.NextDouble(0.8));
     		obj.SetLowerHair();
     		obj.AdjustScale(頭D2);
-    		return new CharacterData(obj, new 体色(RNG.XS.NextBool()));
+    		return new CharacterData(obj, new 体色(Rng.XS.NextBool()));
     	}
 
     	public static CharacterData Getウェアウルフ()
@@ -1728,12 +1728,12 @@ namespace SlaveMatrix
     		obj.EnumEleD().SetValuesD<手_人D>("配色指定", 配色指定.B0);
     		obj.EnumEleD().SetValuesD<Leg_人D>("配色指定", 配色指定.B0);
     		obj.EnumEleD().SetValuesD<足_人D>("配色指定", 配色指定.B0);
-    		obj.EnumEleD().SetValuesD("肥大", RNG.XS.NextDouble());
+    		obj.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
     		obj.EnumEleD().SetValuesD("身長", 頭D2.目高);
-    		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
+    		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + Rng.XS.NextDouble(0.8));
     		obj.SetLowerHair();
     		obj.AdjustScale(頭D2);
-    		return new CharacterData(obj, new 体色(RNG.XS.NextBool()));
+    		return new CharacterData(obj, new 体色(Rng.XS.NextBool()));
     	}
 
     	public static CharacterData Getリザードマン()
@@ -1764,7 +1764,7 @@ namespace SlaveMatrix
     		WaistD2.腿左接続(腿_人D2);
     		WaistD2.腿右接続(腿_人D2.Get逆());
     		ElementData elementData;
-    		if (RNG.XS.Next(2) == 0)
+    		if (Rng.XS.Next(2) == 0)
     		{
     			elementData = new 尾_ヘD();
     			elementData.尺度B = 0.6;
@@ -1785,12 +1785,12 @@ namespace SlaveMatrix
     		WaistD2.EnumEleD().SetValuesD<Leg_人D>("棘", false);
     		WaistD2.EnumEleD().SetValuesD<双目D>("猫目", true);
     		WaistD2.EnumEleD().SetValuesD<口_通常D>("牙", true);
-    		WaistD2.EnumEleD().SetValuesD("肥大", RNG.XS.NextDouble());
+    		WaistD2.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
     		WaistD2.EnumEleD().SetValuesD("身長", 頭D2.目高);
-    		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
+    		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + Rng.XS.NextDouble(0.8));
     		WaistD2.SetLowerHair();
     		WaistD2.AdjustScale(頭D2);
-    		return new CharacterData(WaistD2, new 体色(RNG.XS.NextBool()));
+    		return new CharacterData(WaistD2, new 体色(Rng.XS.NextBool()));
     	}
 
     	public static CharacterData Getドラゴニュート()
@@ -1804,12 +1804,12 @@ namespace SlaveMatrix
     		頭D2.Set口人();
     		頭D2.Set舌短();
     		ElementData e;
-    		if (RNG.XS.NextBool())
+    		if (Rng.XS.NextBool())
     		{
-    			e = ((RNG.XS.Next(2) != 0) ? ((角1D)new 角1_鬼D()) : ((角1D)new 角1_一D()));
+    			e = ((Rng.XS.Next(2) != 0) ? ((角1D)new 角1_鬼D()) : ((角1D)new 角1_一D()));
     			頭D2.額接続(e);
     		}
-    		e = RNG.XS.Next(8) switch
+    		e = Rng.XS.Next(8) switch
     		{
     			0 => new 角2_山1D(), 
     			1 => new 角2_山2D(), 
@@ -1831,13 +1831,13 @@ namespace SlaveMatrix
     		ShoulderD2.UpperArm接続(UpperArm_人D2);
     		ChestD2.肩左接続(ShoulderD2);
     		ChestD2.肩右接続(ShoulderD2.Get逆());
-    		if (RNG.XS.NextBool())
+    		if (Rng.XS.NextBool())
     		{
-    			if (RNG.XS.NextBool())
+    			if (Rng.XS.NextBool())
     			{
     				手_蝙D e3 = new 手_蝙D
     				{
-    					シャープ = RNG.XS.NextDouble()
+    					シャープ = Rng.XS.NextDouble()
     				};
     				LowerArm_蝙D LowerArm_蝙D2 = new LowerArm_蝙D();
     				LowerArm_蝙D2.手接続(e3);
@@ -1851,7 +1851,7 @@ namespace SlaveMatrix
     			{
     				手_鳥D 手_鳥D2 = new 手_鳥D
     				{
-    					シャープ = RNG.XS.NextDouble()
+    					シャープ = Rng.XS.NextDouble()
     				};
     				LowerArm_鳥D LowerArm_鳥D2 = new LowerArm_鳥D
     				{
@@ -1879,7 +1879,7 @@ namespace SlaveMatrix
     		腿_人D2.Leg接続(Leg_人D2);
     		WaistD2.腿左接続(腿_人D2);
     		WaistD2.腿右接続(腿_人D2.Get逆());
-    		switch (RNG.XS.Next(3))
+    		switch (Rng.XS.Next(3))
     		{
     		case 0:
     			e = new 尾_ヘD();
@@ -1896,14 +1896,14 @@ namespace SlaveMatrix
     		WaistD2.EnumEleD().SetValuesD("竜性", true);
     		WaistD2.EnumEleD().SetValuesD<手_人D>("竜性", false);
     		WaistD2.EnumEleD().SetValuesD<手_人D>("鱗", true);
-    		WaistD2.EnumEleD().SetValuesD<双目D>("猫目", RNG.XS.NextBool());
+    		WaistD2.EnumEleD().SetValuesD<双目D>("猫目", Rng.XS.NextBool());
     		WaistD2.EnumEleD().SetValuesD<口_通常D>("牙", true);
-    		WaistD2.EnumEleD().SetValuesD("肥大", RNG.XS.NextDouble());
+    		WaistD2.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
     		WaistD2.EnumEleD().SetValuesD("身長", 頭D2.目高);
-    		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
+    		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + Rng.XS.NextDouble(0.8));
     		WaistD2.SetLowerHair();
     		WaistD2.AdjustScale(頭D2);
-    		return new CharacterData(WaistD2, new 体色(RNG.XS.NextBool()));
+    		return new CharacterData(WaistD2, new 体色(Rng.XS.NextBool()));
     	}
 
     	public static CharacterData Getドラゴン()
@@ -1917,12 +1917,12 @@ namespace SlaveMatrix
     		頭D2.Set口R();
     		頭D2.Set舌短();
     		ElementData e;
-    		if (RNG.XS.NextBool())
+    		if (Rng.XS.NextBool())
     		{
-    			e = ((RNG.XS.Next(2) != 0) ? ((角1D)new 角1_鬼D()) : ((角1D)new 角1_一D()));
+    			e = ((Rng.XS.Next(2) != 0) ? ((角1D)new 角1_鬼D()) : ((角1D)new 角1_一D()));
     			頭D2.額接続(e);
     		}
-    		e = RNG.XS.Next(8) switch
+    		e = Rng.XS.Next(8) switch
     		{
     			0 => new 角2_山1D(), 
     			1 => new 角2_山2D(), 
@@ -1950,7 +1950,7 @@ namespace SlaveMatrix
     		四足胸D2.胴接続(四足胴D2);
     		四足腰D 四足腰D2 = Uni.四足腰();
     		四足胴D2.腰接続(四足腰D2);
-    		if (RNG.XS.NextBool())
+    		if (Rng.XS.NextBool())
     		{
     			手_蝙D e3 = new 手_蝙D();
     			LowerArm_蝙D LowerArm_蝙D2 = new LowerArm_蝙D();
@@ -1989,7 +1989,7 @@ namespace SlaveMatrix
     		腿_竜D2.Leg接続(Leg_竜D2);
     		四足腰D2.腿左接続(腿_竜D2);
     		四足腰D2.腿右接続(腿_竜D2.Get逆());
-    		switch (RNG.XS.Next(5))
+    		switch (Rng.XS.Next(5))
     		{
     		case 0:
     			e = new 尾_ヘD();
@@ -2013,9 +2013,9 @@ namespace SlaveMatrix
     		WaistD2.EnumEleD().SetValuesD<口_通常D>("牙", true);
     		WaistD2.EnumEleD().SetValuesD<性器_人D>("表示", false);
     		WaistD2.EnumEleD().SetValuesD<肛門_人D>("表示", false);
-    		WaistD2.EnumEleD().SetValuesD("肥大", RNG.XS.NextDouble());
+    		WaistD2.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
     		WaistD2.EnumEleD().SetValuesD("身長", 頭D2.目高);
-    		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
+    		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + Rng.XS.NextDouble(0.8));
     		WaistD2.SetLowerHair();
     		WaistD2.AdjustScale(頭D2);
     		return new CharacterData(WaistD2, new 体色(b0: false));
@@ -2032,12 +2032,12 @@ namespace SlaveMatrix
     		頭D2.Set口R();
     		頭D2.Set舌短();
     		ElementData e;
-    		if (RNG.XS.NextBool())
+    		if (Rng.XS.NextBool())
     		{
-    			e = ((RNG.XS.Next(2) != 0) ? ((角1D)new 角1_鬼D()) : ((角1D)new 角1_一D()));
+    			e = ((Rng.XS.Next(2) != 0) ? ((角1D)new 角1_鬼D()) : ((角1D)new 角1_一D()));
     			頭D2.額接続(e);
     		}
-    		e = RNG.XS.Next(8) switch
+    		e = Rng.XS.Next(8) switch
     		{
     			0 => new 角2_山1D(), 
     			1 => new 角2_山2D(), 
@@ -2082,7 +2082,7 @@ namespace SlaveMatrix
     		腿_竜D2.Leg接続(Leg_竜D2);
     		四足腰D2.腿左接続(腿_竜D2);
     		四足腰D2.腿右接続(腿_竜D2.Get逆());
-    		switch (RNG.XS.Next(5))
+    		switch (Rng.XS.Next(5))
     		{
     		case 0:
     			e = new 尾_ヘD();
@@ -2106,12 +2106,12 @@ namespace SlaveMatrix
     		WaistD2.EnumEleD().SetValuesD<口_通常D>("牙", true);
     		WaistD2.EnumEleD().SetValuesD<性器_人D>("表示", false);
     		WaistD2.EnumEleD().SetValuesD<肛門_人D>("表示", false);
-    		WaistD2.EnumEleD().SetValuesD("肥大", RNG.XS.NextDouble());
+    		WaistD2.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
     		WaistD2.EnumEleD().SetValuesD("身長", 頭D2.目高);
-    		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
+    		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + Rng.XS.NextDouble(0.8));
     		WaistD2.SetLowerHair();
     		WaistD2.AdjustScale(頭D2);
-    		return new CharacterData(WaistD2, new 体色(RNG.XS.NextBool()));
+    		return new CharacterData(WaistD2, new 体色(Rng.XS.NextBool()));
     	}
 
     	public static CharacterData Getワイバーン()
@@ -2125,12 +2125,12 @@ namespace SlaveMatrix
     		頭D2.Set口R();
     		頭D2.Set舌短();
     		ElementData e;
-    		if (RNG.XS.NextBool())
+    		if (Rng.XS.NextBool())
     		{
-    			e = ((RNG.XS.Next(2) != 0) ? ((角1D)new 角1_鬼D()) : ((角1D)new 角1_一D()));
+    			e = ((Rng.XS.Next(2) != 0) ? ((角1D)new 角1_鬼D()) : ((角1D)new 角1_一D()));
     			頭D2.額接続(e);
     		}
-    		e = RNG.XS.Next(6) switch
+    		e = Rng.XS.Next(6) switch
     		{
     			0 => new 角2_山1D(), 
     			1 => new 角2_山2D(), 
@@ -2141,7 +2141,7 @@ namespace SlaveMatrix
     		};
     		eleD.頭頂左接続(e);
     		eleD.頭頂右接続(e.Get逆());
-    		if (RNG.XS.NextBool())
+    		if (Rng.XS.NextBool())
     		{
     			手_蝙D e2 = new 手_蝙D
     			{
@@ -2194,7 +2194,7 @@ namespace SlaveMatrix
     		腿_竜D2.Leg接続(Leg_竜D2);
     		WaistD2.腿左接続(腿_竜D2);
     		WaistD2.腿右接続(腿_竜D2.Get逆());
-    		WaistD2.尾接続(RNG.XS.Next(5) switch
+    		WaistD2.尾接続(Rng.XS.Next(5) switch
     		{
     			0 => new 尾_ヘD
     			{
@@ -2214,9 +2214,9 @@ namespace SlaveMatrix
     		WaistD2.EnumEleD().SetValuesD("竜性", true);
     		WaistD2.EnumEleD().SetValuesD<双目D>("猫目", true);
     		WaistD2.EnumEleD().SetValuesD<口_通常D>("牙", true);
-    		WaistD2.EnumEleD().SetValuesD("肥大", RNG.XS.NextDouble());
+    		WaistD2.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
     		WaistD2.EnumEleD().SetValuesD("身長", 頭D2.目高);
-    		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
+    		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + Rng.XS.NextDouble(0.8));
     		WaistD2.SetLowerHair();
     		WaistD2.AdjustScale(頭D2);
     		return new CharacterData(WaistD2, new 体色(b0: false));
@@ -2235,12 +2235,12 @@ namespace SlaveMatrix
     		頭D2.Set耳鰭();
     		頭D2.Set耳尖();
     		ElementData e;
-    		if (RNG.XS.NextBool())
+    		if (Rng.XS.NextBool())
     		{
-    			e = ((RNG.XS.Next(2) != 0) ? ((角1D)new 角1_鬼D()) : ((角1D)new 角1_一D()));
+    			e = ((Rng.XS.Next(2) != 0) ? ((角1D)new 角1_鬼D()) : ((角1D)new 角1_一D()));
     			頭D2.額接続(e);
     		}
-    		e = RNG.XS.Next(5) switch
+    		e = Rng.XS.Next(5) switch
     		{
     			0 => new 角2_山1D(), 
     			1 => new 角2_山2D(), 
@@ -2261,11 +2261,11 @@ namespace SlaveMatrix
     		Torso_蛇D2.Torso接続(new 尾_ヘD());
     		WaistD2.EnumEleD().SetValuesD("竜性", true);
     		WaistD2.EnumEleD().SetValuesD<腰肌D>("竜性", false);
-    		WaistD2.EnumEleD().SetValuesD<双目D>("猫目", RNG.XS.NextBool());
+    		WaistD2.EnumEleD().SetValuesD<双目D>("猫目", Rng.XS.NextBool());
     		WaistD2.EnumEleD().SetValuesD<舌_長D>("股舌表示", true);
-    		WaistD2.EnumEleD().SetValuesD("肥大", RNG.XS.NextDouble());
+    		WaistD2.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
     		WaistD2.EnumEleD().SetValuesD("身長", 頭D2.目高);
-    		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
+    		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + Rng.XS.NextDouble(0.8));
     		WaistD2.SetLowerHair();
     		WaistD2.AdjustScale(頭D2);
     		return new CharacterData(WaistD2, new 体色(b0: false));
@@ -2282,7 +2282,7 @@ namespace SlaveMatrix
     		頭D2.Set口裂();
     		頭D2.Set舌短();
     		頭D2.Set耳人();
-    		ElementData eleD2 = RNG.XS.Next(5) switch
+    		ElementData eleD2 = Rng.XS.Next(5) switch
     		{
     			0 => new 角2_山1D(), 
     			1 => new 角2_山2D(), 
@@ -2303,7 +2303,7 @@ namespace SlaveMatrix
     		頭D2.大顎基接続(大顎基D2);
     		顔面_蟲D e = new 顔面_蟲D();
     		頭D2.顔面接続(e);
-    		if (RNG.XS.NextBool())
+    		if (Rng.XS.NextBool())
     		{
     			eleD2 = new 虫顎D
     			{
@@ -2333,15 +2333,15 @@ namespace SlaveMatrix
     			胴_蟲D2.Torso接続(胴_蟲D2 = new Torso_蟲D());
     		}
     		尾_蟲D 尾_蟲D2 = new 尾_蟲D();
-    		節D 節D2 = (RNG.XS.NextBool() ? ((節尾D)new 節尾_曳航D()) : ((節尾D)new 節尾_鋏D()));
+    		節D 節D2 = (Rng.XS.NextBool() ? ((節尾D)new 節尾_曳航D()) : ((節尾D)new 節尾_鋏D()));
     		尾_蟲D2.尾左接続(節D2);
     		尾_蟲D2.尾右接続(節D2.Get逆());
     		胴_蟲D2.Torso接続(尾_蟲D2);
     		WaistD2.EnumEleD().SetValuesD("虫性", true);
     		WaistD2.EnumEleD().SetValuesD("配色", 配色指定.C0);
-    		WaistD2.EnumEleD().SetValuesD("肥大", RNG.XS.NextDouble());
+    		WaistD2.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
     		WaistD2.EnumEleD().SetValuesD("身長", 頭D2.目高);
-    		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
+    		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + Rng.XS.NextDouble(0.8));
     		WaistD2.AdjustScale(頭D2);
     		return new CharacterData(WaistD2, new 体色(b0: false));
     	}
@@ -2400,9 +2400,9 @@ namespace SlaveMatrix
     		WaistD2.EnumEleD().SetValuesD("竜性", true);
     		WaistD2.EnumEleD().SetValuesD<腰肌D>("竜性", false);
     		WaistD2.EnumEleD().SetValuesD<双目D>("猫目", true);
-    		WaistD2.EnumEleD().SetValuesD("肥大", RNG.XS.NextDouble());
+    		WaistD2.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
     		WaistD2.EnumEleD().SetValuesD("身長", 頭D2.目高);
-    		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
+    		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + Rng.XS.NextDouble(0.8));
     		WaistD2.SetLowerHair();
     		WaistD2.AdjustScale(頭D2);
     		return new CharacterData(WaistD2, new 体色(b0: false));
@@ -2441,12 +2441,12 @@ namespace SlaveMatrix
     		obj.EnumEleD().SetValuesD("コア", false);
     		obj.EnumEleD().SetValuesD("秘石", false);
     		obj.EnumEleD().SetValuesD<双目D>("ハイライト下", false);
-    		obj.EnumEleD().SetValuesD("コア1", RNG.XS.NextBool());
-    		obj.EnumEleD().SetValuesD("コア2", RNG.XS.NextBool());
+    		obj.EnumEleD().SetValuesD("コア1", Rng.XS.NextBool());
+    		obj.EnumEleD().SetValuesD("コア2", Rng.XS.NextBool());
     		obj.EnumEleD().SetValuesD<双目D>("瞳孔", false);
-    		obj.EnumEleD().SetValuesD("肥大", RNG.XS.NextDouble());
+    		obj.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
     		obj.EnumEleD().SetValuesD("身長", 頭D2.目高);
-    		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
+    		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + Rng.XS.NextDouble(0.8));
     		obj.AdjustScale(頭D2);
     		return new CharacterData(obj, new 体色(b0: false));
     	}
@@ -2461,7 +2461,7 @@ namespace SlaveMatrix
     		頭D2.Set鼻人();
     		頭D2.Set口人();
     		頭D2.Set舌短();
-    		switch (RNG.XS.Next(3))
+    		switch (Rng.XS.Next(3))
     		{
     		case 0:
     			頭D2.Set耳人();
@@ -2476,7 +2476,7 @@ namespace SlaveMatrix
     		植D 植D2 = new 植D();
     		ElementData eleD2 = SlaveMatrix.GameClasses._Con.Get花R(右: false);
     		植D2.花接続(eleD2);
-    		bool flag = RNG.XS.NextBool();
+    		bool flag = Rng.XS.NextBool();
     		if (eleD2 is 花_百D)
     		{
     			((花_百D)eleD2).萼_萼_表示 = !flag;
@@ -2540,7 +2540,7 @@ namespace SlaveMatrix
     			ChestD2.翼下左接続(eleD3);
     			ChestD2.翼下右接続(eleD3.Get逆());
     		}
-    		if (RNG.XS.NextBool())
+    		if (Rng.XS.NextBool())
     		{
     			if (b1)
     			{
@@ -2571,10 +2571,10 @@ namespace SlaveMatrix
     		WaistD2.腿右接続(腿_人D2.Get逆());
     		WaistD2.EnumEleD().SetValuesD("肥大", 0.0);
     		WaistD2.EnumEleD().SetValuesD("身長", 0.0);
-    		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
+    		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + Rng.XS.NextDouble(0.8));
     		WaistD2.SetLowerHair();
     		WaistD2.AdjustScale(頭D2);
-    		return new CharacterData(WaistD2, new 体色(RNG.XS.NextBool()));
+    		return new CharacterData(WaistD2, new 体色(Rng.XS.NextBool()));
     	}
 
     	public static CharacterData Getオーグリス(bool b)
@@ -2601,7 +2601,7 @@ namespace SlaveMatrix
     		頭D2.Set鼻人();
     		頭D2.Set口人();
     		頭D2.Set舌短();
-    		if (RNG.XS.NextBool())
+    		if (Rng.XS.NextBool())
     		{
     			頭D2.Set耳人();
     		}
@@ -2625,7 +2625,7 @@ namespace SlaveMatrix
     		腿_人D2.Leg接続(Leg_人D2);
     		WaistD2.腿左接続(腿_人D2);
     		WaistD2.腿右接続(腿_人D2.Get逆());
-    		if (RNG.XS.NextBool())
+    		if (Rng.XS.NextBool())
     		{
     			WaistD2.EnumEleD().SetValuesD("隈取", true);
     			頭D2.隈取_タトゥ_表示 = false;
@@ -2640,12 +2640,12 @@ namespace SlaveMatrix
     			WaistD2.EnumEleD().SetValuesD<Leg_人D>("足首", false);
     		}
     		WaistD2.EnumEleD().SetValuesD<口_通常D>("牙", true);
-    		WaistD2.EnumEleD().SetValuesD("肥大", RNG.XS.NextDouble());
+    		WaistD2.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
     		WaistD2.EnumEleD().SetValuesD("身長", 頭D2.目高);
-    		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
+    		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + Rng.XS.NextDouble(0.8));
     		WaistD2.SetLowerHair();
     		WaistD2.AdjustScale(頭D2);
-    		return new CharacterData(WaistD2, new 体色(RNG.XS.NextBool()));
+    		return new CharacterData(WaistD2, new 体色(Rng.XS.NextBool()));
     	}
 
     	public static CharacterData Getサイクロプス()
@@ -2658,7 +2658,7 @@ namespace SlaveMatrix
     		頭D2.Set鼻人();
     		頭D2.Set口人();
     		頭D2.Set舌短();
-    		if (RNG.XS.NextBool())
+    		if (Rng.XS.NextBool())
     		{
     			頭D2.Set耳人();
     		}
@@ -2682,12 +2682,12 @@ namespace SlaveMatrix
     		腿_人D2.Leg接続(Leg_人D2);
     		obj.腿左接続(腿_人D2);
     		obj.腿右接続(腿_人D2.Get逆());
-    		obj.EnumEleD().SetValuesD("肥大", RNG.XS.NextDouble());
+    		obj.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
     		obj.EnumEleD().SetValuesD("身長", 1.0);
-    		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
+    		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + Rng.XS.NextDouble(0.8));
     		obj.SetLowerHair();
     		obj.AdjustScale(頭D2);
-    		return new CharacterData(obj, new 体色(RNG.XS.NextBool()));
+    		return new CharacterData(obj, new 体色(Rng.XS.NextBool()));
     	}
 
     	public static CharacterData Getエイリアン()
@@ -2737,14 +2737,14 @@ namespace SlaveMatrix
     		WaistD2.EnumEleD().SetValuesD<HeadD>("虫性", false);
     		WaistD2.EnumEleD().SetValuesD<ChestD>("器官", false);
     		WaistD2.EnumEleD().SetValuesD<手_人D>("宇手", true);
-    		if (RNG.XS.NextBool())
+    		if (Rng.XS.NextBool())
     		{
     			WaistD2.EnumEleD().SetValuesD("紋柄", true);
     		}
     		WaistD2.EnumEleD().SetValuesD("吸盤", false);
-    		WaistD2.EnumEleD().SetValuesD("肥大", RNG.XS.NextDouble());
+    		WaistD2.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
     		WaistD2.EnumEleD().SetValuesD("身長", 頭D2.目高);
-    		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
+    		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + Rng.XS.NextDouble(0.8));
     		WaistD2.AdjustScale(頭D2);
     		return new CharacterData(WaistD2, new 体色(b0: false));
     	}
@@ -2780,7 +2780,7 @@ namespace SlaveMatrix
     			前足 = true
     		};
     		触手_触D 触手_触D2 = new 触手_触D();
-    		触手_触D2.SetValuesD("爪", RNG.XS.NextBool());
+    		触手_触D2.SetValuesD("爪", Rng.XS.NextBool());
     		多足_蛸D2.軟体内左接続(触手_軟D2.Copy());
     		多足_蛸D2.軟体内右接続(触手_軟D2.Get逆());
     		多足_蛸D2.軟体内左接続(触手_触D2.Copy());
@@ -2791,15 +2791,15 @@ namespace SlaveMatrix
     		多足_蛸D2.軟体外右接続(触手_軟D3.Get逆());
     		多足_蛸D2.軟体外左接続(触手_軟D3.Copy());
     		多足_蛸D2.軟体外右接続(触手_軟D3.Get逆());
-    		if (RNG.XS.NextBool())
+    		if (Rng.XS.NextBool())
     		{
     			WaistD2.EnumEleD().SetValuesD("紋柄", true);
-    			多足_蛸D2.EnumEleD().SetValuesD<触手_触D>("柄", RNG.XS.NextBool());
+    			多足_蛸D2.EnumEleD().SetValuesD<触手_触D>("柄", Rng.XS.NextBool());
     		}
-    		WaistD2.EnumEleD().SetValuesD<双目D>("蛸目", RNG.XS.NextBool());
-    		WaistD2.EnumEleD().SetValuesD("肥大", RNG.XS.NextDouble());
+    		WaistD2.EnumEleD().SetValuesD<双目D>("蛸目", Rng.XS.NextBool());
+    		WaistD2.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
     		WaistD2.EnumEleD().SetValuesD("身長", 頭D2.目高);
-    		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
+    		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + Rng.XS.NextDouble(0.8));
     		WaistD2.AdjustScale(頭D2);
     		return new CharacterData(WaistD2, new 体色(b0: false));
     	}
@@ -2819,7 +2819,7 @@ namespace SlaveMatrix
     		{
     		case 0:
     		{
-    			if (RNG.XS.NextBool())
+    			if (Rng.XS.NextBool())
     			{
     				手_人D e4 = new 手_人D();
     				LowerArm_人D LowerArm_人D4 = new LowerArm_人D();
@@ -2930,12 +2930,12 @@ namespace SlaveMatrix
     		}
     		}
     		WaistD2.EnumEleD().SetValuesD<口_通常D>("牙", true);
-    		WaistD2.EnumEleD().SetValuesD("肥大", RNG.XS.NextDouble());
+    		WaistD2.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
     		WaistD2.EnumEleD().SetValuesD("身長", 頭D2.目高);
-    		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
+    		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + Rng.XS.NextDouble(0.8));
     		WaistD2.SetLowerHair();
     		WaistD2.AdjustScale(頭D2);
-    		return new CharacterData(WaistD2, new 体色(RNG.XS.NextBool()));
+    		return new CharacterData(WaistD2, new 体色(Rng.XS.NextBool()));
     	}
 
     	public static CharacterData Getユニコーン()
@@ -2982,17 +2982,17 @@ namespace SlaveMatrix
     		四足腰D2.腿左接続(腿_蹄D2);
     		四足腰D2.腿右接続(腿_蹄D2.Get逆());
     		四足腰D2.尾接続(new 尾_馬D());
-    		obj.EnumEleD().SetValuesD<HeadD>("馬", RNG.XS.NextBool());
+    		obj.EnumEleD().SetValuesD<HeadD>("馬", Rng.XS.NextBool());
     		obj.EnumEleD().SetValuesD<性器_人D>("表示", false);
     		obj.EnumEleD().SetValuesD<肛門_人D>("表示", false);
     		obj.EnumEleD().SetValuesD<腰肌D>("獣性", true);
     		四足腰D2.EnumEleD().SetValuesD<腰肌D>("獣性", false);
-    		obj.EnumEleD().SetValuesD("肥大", RNG.XS.NextDouble());
+    		obj.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
     		obj.EnumEleD().SetValuesD("身長", 頭D2.目高);
-    		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
+    		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + Rng.XS.NextDouble(0.8));
     		obj.SetLowerHair();
     		obj.AdjustScale(頭D2);
-    		return new CharacterData(obj, new 体色(RNG.XS.NextBool()));
+    		return new CharacterData(obj, new 体色(Rng.XS.NextBool()));
     	}
 
     	public static CharacterData Getモノケロス()
@@ -3054,9 +3054,9 @@ namespace SlaveMatrix
     		obj.EnumEleD().SetValuesD<性器_人D>("表示", false);
     		obj.EnumEleD().SetValuesD<肛門_人D>("表示", false);
     		obj.EnumEleD().SetValuesD<腰肌D>("獣性", true);
-    		obj.EnumEleD().SetValuesD("肥大", RNG.XS.NextDouble());
+    		obj.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
     		obj.EnumEleD().SetValuesD("身長", 頭D2.目高);
-    		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
+    		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + Rng.XS.NextDouble(0.8));
     		obj.SetLowerHair();
     		obj.AdjustScale(頭D2);
     		return new CharacterData(obj, new 体色(b0: false));
@@ -3091,7 +3091,7 @@ namespace SlaveMatrix
     		四足胴D2.腰接続(四足腰D2);
     		手_鳥D 手_鳥D2 = new 手_鳥D
     		{
-    			シャープ = RNG.XS.NextDouble()
+    			シャープ = Rng.XS.NextDouble()
     		};
     		LowerArm_鳥D LowerArm_鳥D2 = new LowerArm_鳥D
     		{
@@ -3122,14 +3122,14 @@ namespace SlaveMatrix
     		四足腰D2.腿左接続(腿_蹄D2);
     		四足腰D2.腿右接続(腿_蹄D2.Get逆());
     		四足腰D2.尾接続(new 尾_馬D());
-    		obj.EnumEleD().SetValuesD<HeadD>("馬", RNG.XS.NextBool());
+    		obj.EnumEleD().SetValuesD<HeadD>("馬", Rng.XS.NextBool());
     		obj.EnumEleD().SetValuesD<性器_人D>("表示", false);
     		obj.EnumEleD().SetValuesD<肛門_人D>("表示", false);
     		obj.EnumEleD().SetValuesD<腰肌D>("獣性", true);
     		四足腰D2.EnumEleD().SetValuesD<腰肌D>("獣性", false);
-    		obj.EnumEleD().SetValuesD("肥大", RNG.XS.NextDouble());
+    		obj.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
     		obj.EnumEleD().SetValuesD("身長", 頭D2.目高);
-    		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
+    		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + Rng.XS.NextDouble(0.8));
     		obj.SetLowerHair();
     		obj.AdjustScale(頭D2);
     		return new CharacterData(obj, new 体色(b0: false));
@@ -3184,15 +3184,15 @@ namespace SlaveMatrix
     		四足腰D2.腿左接続(腿_蹄D2);
     		四足腰D2.腿右接続(腿_蹄D2.Get逆());
     		四足腰D2.尾接続(new 尾_馬D());
-    		obj.EnumEleD().SetValuesD<HeadD>("馬", RNG.XS.NextBool());
+    		obj.EnumEleD().SetValuesD<HeadD>("馬", Rng.XS.NextBool());
     		ChestD2.肌_接続.SetValuesD("胸毛", true);
     		obj.EnumEleD().SetValuesD<性器_人D>("表示", false);
     		obj.EnumEleD().SetValuesD<肛門_人D>("表示", false);
     		obj.EnumEleD().SetValuesD<腰肌D>("獣性", true);
     		四足腰D2.EnumEleD().SetValuesD<腰肌D>("獣性", false);
-    		obj.EnumEleD().SetValuesD("肥大", RNG.XS.NextDouble());
+    		obj.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
     		obj.EnumEleD().SetValuesD("身長", 頭D2.目高);
-    		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
+    		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + Rng.XS.NextDouble(0.8));
     		obj.SetLowerHair();
     		obj.AdjustScale(頭D2);
     		return new CharacterData(obj, new 体色(b0: false));
@@ -3226,7 +3226,7 @@ namespace SlaveMatrix
     		四足胴D2.腰接続(四足腰D2);
     		手_鳥D 手_鳥D2 = new 手_鳥D
     		{
-    			シャープ = RNG.XS.NextDouble()
+    			シャープ = Rng.XS.NextDouble()
     		};
     		LowerArm_鳥D LowerArm_鳥D2 = new LowerArm_鳥D
     		{
@@ -3257,17 +3257,17 @@ namespace SlaveMatrix
     		四足腰D2.腿左接続(腿_蹄D2);
     		四足腰D2.腿右接続(腿_蹄D2.Get逆());
     		四足腰D2.尾接続(new 尾_馬D());
-    		obj.EnumEleD().SetValuesD<HeadD>("馬", RNG.XS.NextBool());
+    		obj.EnumEleD().SetValuesD<HeadD>("馬", Rng.XS.NextBool());
     		obj.EnumEleD().SetValuesD<性器_人D>("表示", false);
     		obj.EnumEleD().SetValuesD<肛門_人D>("表示", false);
     		obj.EnumEleD().SetValuesD<腰肌D>("獣性", true);
     		四足腰D2.EnumEleD().SetValuesD<腰肌D>("獣性", false);
-    		obj.EnumEleD().SetValuesD("肥大", RNG.XS.NextDouble());
+    		obj.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
     		obj.EnumEleD().SetValuesD("身長", 頭D2.目高);
-    		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
+    		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + Rng.XS.NextDouble(0.8));
     		obj.SetLowerHair();
     		obj.AdjustScale(頭D2);
-    		return new CharacterData(obj, new 体色(RNG.XS.NextBool()));
+    		return new CharacterData(obj, new 体色(Rng.XS.NextBool()));
     	}
 
     	public static CharacterData Getグリフォン()
@@ -3305,7 +3305,7 @@ namespace SlaveMatrix
     		LowerArm_鳥D2.手接続(手_鳥D2);
     		UpperArm_鳥D UpperArm_鳥D2 = new UpperArm_鳥D();
     		UpperArm_鳥D2.LowerArm接続(LowerArm_鳥D2);
-    		if (RNG.XS.NextBool())
+    		if (Rng.XS.NextBool())
     		{
     			手_鳥D2.シャープ = 1.0;
     			LowerArm_鳥D2.シャープ = 1.0;
@@ -3335,9 +3335,9 @@ namespace SlaveMatrix
     		obj.EnumEleD().SetValuesD<胸毛D>("表示", true);
     		obj.EnumEleD().SetValuesD<性器_人D>("表示", false);
     		obj.EnumEleD().SetValuesD<肛門_人D>("表示", false);
-    		obj.EnumEleD().SetValuesD("肥大", RNG.XS.NextDouble());
+    		obj.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
     		obj.EnumEleD().SetValuesD("身長", 頭D2.目高);
-    		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
+    		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + Rng.XS.NextDouble(0.8));
     		obj.SetLowerHair();
     		obj.AdjustScale(頭D2);
     		return new CharacterData(obj, new 体色(b0: false));
@@ -3378,7 +3378,7 @@ namespace SlaveMatrix
     		LowerArm_鳥D2.手接続(手_鳥D2);
     		UpperArm_鳥D UpperArm_鳥D2 = new UpperArm_鳥D();
     		UpperArm_鳥D2.LowerArm接続(LowerArm_鳥D2);
-    		if (RNG.XS.NextBool())
+    		if (Rng.XS.NextBool())
     		{
     			手_鳥D2.シャープ = 1.0;
     			LowerArm_鳥D2.シャープ = 1.0;
@@ -3405,7 +3405,7 @@ namespace SlaveMatrix
     		四足腰D2.腿左接続(腿_蹄D2);
     		四足腰D2.腿右接続(腿_蹄D2.Get逆());
     		四足腰D2.尾接続(new 尾_馬D());
-    		obj.EnumEleD().SetValuesD<HeadD>("馬", RNG.XS.NextBool());
+    		obj.EnumEleD().SetValuesD<HeadD>("馬", Rng.XS.NextBool());
     		四足胴D2.SetValuesD("獣毛", true);
     		obj.EnumEleD().SetValuesD<腰肌D>("獣毛", true);
     		obj.EnumEleD().SetValuesD<胸毛D>("表示", true);
@@ -3413,9 +3413,9 @@ namespace SlaveMatrix
     		obj.EnumEleD().SetValuesD<肛門_人D>("表示", false);
     		四足胴D2.SetValuesD("獣性", false);
     		四足腰D2.EnumEleD().SetValuesD<腰肌D>("獣性", false);
-    		obj.EnumEleD().SetValuesD("肥大", RNG.XS.NextDouble());
+    		obj.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
     		obj.EnumEleD().SetValuesD("身長", 頭D2.目高);
-    		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
+    		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + Rng.XS.NextDouble(0.8));
     		obj.SetLowerHair();
     		obj.AdjustScale(頭D2);
     		return new CharacterData(obj, new 体色(b0: false));
@@ -3434,7 +3434,7 @@ namespace SlaveMatrix
     		ElementData eleD2 = new 獣耳D();
     		eleD.頭頂左接続(eleD2);
     		eleD.頭頂右接続(eleD2.Get逆());
-    		eleD2 = RNG.XS.Next(3) switch
+    		eleD2 = Rng.XS.Next(3) switch
     		{
     			0 => new 角2_山1D(), 
     			1 => new 角2_山2D(), 
@@ -3484,9 +3484,9 @@ namespace SlaveMatrix
     		WaistD2.EnumEleD().SetValuesD<口_通常D>("牙", true);
     		WaistD2.EnumEleD().SetValuesD<性器_人D>("表示", false);
     		WaistD2.EnumEleD().SetValuesD<肛門_人D>("表示", false);
-    		WaistD2.EnumEleD().SetValuesD("肥大", RNG.XS.NextDouble());
+    		WaistD2.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
     		WaistD2.EnumEleD().SetValuesD("身長", 頭D2.目高);
-    		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
+    		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + Rng.XS.NextDouble(0.8));
     		WaistD2.SetLowerHair();
     		WaistD2.AdjustScale(頭D2);
     		return new CharacterData(WaistD2, new 体色(b0: false));
@@ -3506,7 +3506,7 @@ namespace SlaveMatrix
     		頭D2.Set耳人();
     		if (b)
     		{
-    			ElementData e2 = (RNG.XS.NextBool() ? ((尾D)new 尾_牛D()) : ((尾D)new 尾_蛇D()));
+    			ElementData e2 = (Rng.XS.NextBool() ? ((尾D)new 尾_牛D()) : ((尾D)new 尾_蛇D()));
     			WaistD2.尾接続(e2);
     			ChestD2.背中接続(new 背中_羽D
     			{
@@ -3586,7 +3586,7 @@ namespace SlaveMatrix
     			腿_獣D3.Leg接続(Leg_獣D3);
     			四足腰D2.腿左接続(腿_獣D3);
     			四足腰D2.腿右接続(腿_獣D3.Get逆());
-    			ElementData e2 = (RNG.XS.NextBool() ? ((尾D)new 尾_牛D()) : ((尾D)new 尾_蛇D()));
+    			ElementData e2 = (Rng.XS.NextBool() ? ((尾D)new 尾_牛D()) : ((尾D)new 尾_蛇D()));
     			四足腰D2.尾接続(e2);
     			四足胴D2.SetValuesD("獣毛", true);
     			四足胸D2.肌_接続.SetValuesD<胸毛D>("表示", true);
@@ -3595,12 +3595,12 @@ namespace SlaveMatrix
     		}
     		WaistD2.EnumEleD().SetValuesD<口_通常D>("牙", true);
     		WaistD2.EnumEleD().SetValuesD<腰肌D>("獣性", true);
-    		WaistD2.EnumEleD().SetValuesD("肥大", RNG.XS.NextDouble());
+    		WaistD2.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
     		WaistD2.EnumEleD().SetValuesD("身長", 頭D2.目高);
-    		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
+    		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + Rng.XS.NextDouble(0.8));
     		WaistD2.SetLowerHair();
     		WaistD2.AdjustScale(頭D2);
-    		return new CharacterData(WaistD2, new 体色(RNG.XS.NextBool()));
+    		return new CharacterData(WaistD2, new 体色(Rng.XS.NextBool()));
     	}
 
     	public static CharacterData Getレオントケンタウレ()
@@ -3660,12 +3660,12 @@ namespace SlaveMatrix
     		obj.EnumEleD().SetValuesD<口_通常D>("牙", true);
     		obj.EnumEleD().SetValuesD<性器_人D>("表示", false);
     		obj.EnumEleD().SetValuesD<肛門_人D>("表示", false);
-    		obj.EnumEleD().SetValuesD("肥大", RNG.XS.NextDouble());
+    		obj.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
     		obj.EnumEleD().SetValuesD("身長", 頭D2.目高);
-    		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
+    		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + Rng.XS.NextDouble(0.8));
     		obj.SetLowerHair();
     		obj.AdjustScale(頭D2);
-    		return new CharacterData(obj, new 体色(RNG.XS.NextBool()));
+    		return new CharacterData(obj, new 体色(Rng.XS.NextBool()));
     	}
 
     	public static CharacterData Getティグリスケンタウレ()
@@ -3716,7 +3716,7 @@ namespace SlaveMatrix
     		WaistD2.EnumEleD().SetValuesD("獣性", true);
     		WaistD2.EnumEleD().SetValuesD<LowerArm_人D>("配色指定", 配色指定.B0);
     		WaistD2.EnumEleD().SetValuesD<手_人D>("配色指定", 配色指定.B0);
-    		if (RNG.XS.NextBool())
+    		if (Rng.XS.NextBool())
     		{
     			WaistD2.EnumEleD().SetValuesD<獣耳D>("配色指定", 配色指定.T0);
     			WaistD2.EnumEleD().SetValuesD<尾_猫D>("配色指定", 配色指定.T0);
@@ -3736,12 +3736,12 @@ namespace SlaveMatrix
     		WaistD2.EnumEleD().SetValuesD<口_通常D>("牙", true);
     		WaistD2.EnumEleD().SetValuesD<性器_人D>("表示", false);
     		WaistD2.EnumEleD().SetValuesD<肛門_人D>("表示", false);
-    		WaistD2.EnumEleD().SetValuesD("肥大", RNG.XS.NextDouble());
+    		WaistD2.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
     		WaistD2.EnumEleD().SetValuesD("身長", 頭D2.目高);
-    		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
+    		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + Rng.XS.NextDouble(0.8));
     		WaistD2.SetLowerHair();
     		WaistD2.AdjustScale(頭D2);
-    		return new CharacterData(WaistD2, new 体色(RNG.XS.NextBool()));
+    		return new CharacterData(WaistD2, new 体色(Rng.XS.NextBool()));
     	}
 
     	public static CharacterData Getパンテーラケンタウレ()
@@ -3800,12 +3800,12 @@ namespace SlaveMatrix
     		obj.EnumEleD().SetValuesD<口_通常D>("牙", true);
     		obj.EnumEleD().SetValuesD<性器_人D>("表示", false);
     		obj.EnumEleD().SetValuesD<肛門_人D>("表示", false);
-    		obj.EnumEleD().SetValuesD("肥大", RNG.XS.NextDouble());
+    		obj.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
     		obj.EnumEleD().SetValuesD("身長", 頭D2.目高);
-    		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
+    		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + Rng.XS.NextDouble(0.8));
     		obj.SetLowerHair();
     		obj.AdjustScale(頭D2);
-    		return new CharacterData(obj, new 体色(RNG.XS.NextBool()));
+    		return new CharacterData(obj, new 体色(Rng.XS.NextBool()));
     	}
 
     	public static CharacterData Getチータケンタウレ()
@@ -3877,12 +3877,12 @@ namespace SlaveMatrix
     		obj.EnumEleD().SetValuesD<口_通常D>("牙", true);
     		obj.EnumEleD().SetValuesD<性器_人D>("表示", false);
     		obj.EnumEleD().SetValuesD<肛門_人D>("表示", false);
-    		obj.EnumEleD().SetValuesD("肥大", RNG.XS.NextDouble());
+    		obj.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
     		obj.EnumEleD().SetValuesD("身長", 頭D2.目高);
-    		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
+    		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + Rng.XS.NextDouble(0.8));
     		obj.SetLowerHair();
     		obj.AdjustScale(頭D2);
-    		return new CharacterData(obj, new 体色(RNG.XS.NextBool()));
+    		return new CharacterData(obj, new 体色(Rng.XS.NextBool()));
     	}
 
     	public static CharacterData Getウェアドラゴンフライ()
@@ -3941,9 +3941,9 @@ namespace SlaveMatrix
     		obj.EnumEleD().SetValuesD<足_人D>("鱗", true);
     		obj.EnumEleD().SetValuesD("配色", 配色指定.C0);
     		obj.EnumEleD().SetValuesD<双目D>("瞳孔", false);
-    		obj.EnumEleD().SetValuesD("肥大", RNG.XS.NextDouble());
+    		obj.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
     		obj.EnumEleD().SetValuesD("身長", 頭D2.目高);
-    		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
+    		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + Rng.XS.NextDouble(0.8));
     		obj.AdjustScale(頭D2);
     		return new CharacterData(obj, new 体色(b0: false));
     	}
@@ -3983,7 +3983,7 @@ namespace SlaveMatrix
     		obj2.翼上左接続(elementData);
     		obj2.翼上右接続(elementData.Get逆());
     		elementData = new 前翅_甲D();
-    		elementData.SetValuesD("紋", RNG.XS.NextBool());
+    		elementData.SetValuesD("紋", Rng.XS.NextBool());
     		obj2.翼上左接続(elementData);
     		obj2.翼上右接続(elementData.Get逆());
     		足_人D e2 = new 足_人D();
@@ -4003,9 +4003,9 @@ namespace SlaveMatrix
     		obj.EnumEleD().SetValuesD("棘3", false);
     		obj.EnumEleD().SetValuesD("棘4", false);
     		obj.EnumEleD().SetValuesD<双目D>("瞳孔", false);
-    		obj.EnumEleD().SetValuesD("肥大", RNG.XS.NextDouble());
+    		obj.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
     		obj.EnumEleD().SetValuesD("身長", 頭D2.目高);
-    		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
+    		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + Rng.XS.NextDouble(0.8));
     		obj.AdjustScale(頭D2);
     		return new CharacterData(obj, new 体色(b0: false));
     	}
@@ -4049,7 +4049,7 @@ namespace SlaveMatrix
     		obj2.翼上左接続(elementData);
     		obj2.翼上右接続(elementData.Get逆());
     		elementData = new 前翅_甲D();
-    		elementData.SetValuesD("紋", RNG.XS.NextBool());
+    		elementData.SetValuesD("紋", Rng.XS.NextBool());
     		obj2.翼上左接続(elementData);
     		obj2.翼上右接続(elementData.Get逆());
     		足_人D e2 = new 足_人D();
@@ -4068,9 +4068,9 @@ namespace SlaveMatrix
     		obj.EnumEleD().SetValuesD("配色", 配色指定.C0);
     		obj.EnumEleD().SetValuesD<Leg_人D>("棘", false);
     		obj.EnumEleD().SetValuesD<双目D>("瞳孔", false);
-    		obj.EnumEleD().SetValuesD("肥大", RNG.XS.NextDouble());
+    		obj.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
     		obj.EnumEleD().SetValuesD("身長", 頭D2.目高);
-    		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
+    		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + Rng.XS.NextDouble(0.8));
     		obj.AdjustScale(頭D2);
     		return new CharacterData(obj, new 体色(b0: false));
     	}
@@ -4106,7 +4106,7 @@ namespace SlaveMatrix
     		obj3.肩左接続(ShoulderD2);
     		obj3.肩右接続(ShoulderD2.Get逆());
     		elementData = new 前翅_草D();
-    		elementData.SetValuesD("紋", RNG.XS.NextBool());
+    		elementData.SetValuesD("紋", Rng.XS.NextBool());
     		obj2.翼左接続(elementData);
     		obj2.翼右接続(elementData.Get逆());
     		elementData = new 後翅_草D();
@@ -4130,9 +4130,9 @@ namespace SlaveMatrix
     		obj.EnumEleD().SetValuesD<Leg_人D>("棘2", false);
     		obj.EnumEleD().SetValuesD<Leg_人D>("棘3", false);
     		obj.EnumEleD().SetValuesD<双目D>("瞳孔", false);
-    		obj.EnumEleD().SetValuesD("肥大", RNG.XS.NextDouble());
+    		obj.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
     		obj.EnumEleD().SetValuesD("身長", 頭D2.目高);
-    		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
+    		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + Rng.XS.NextDouble(0.8));
     		obj.AdjustScale(頭D2);
     		return new CharacterData(obj, new 体色(b0: false));
     	}
@@ -4147,7 +4147,7 @@ namespace SlaveMatrix
     		頭D2.Set鼻人();
     		頭D2.Set口人();
     		頭D2.Set舌長();
-    		if (RNG.XS.NextBool())
+    		if (Rng.XS.NextBool())
     		{
     			頭D2.Set耳人();
     		}
@@ -4166,7 +4166,7 @@ namespace SlaveMatrix
     		obj.肩右接続(ShoulderD2.Get逆());
     		手_鳥D 手_鳥D2 = new 手_鳥D
     		{
-    			シャープ = RNG.XS.NextDouble()
+    			シャープ = Rng.XS.NextDouble()
     		};
     		LowerArm_鳥D LowerArm_鳥D2 = new LowerArm_鳥D
     		{
@@ -4188,12 +4188,12 @@ namespace SlaveMatrix
     		{
     			Torso_蛇D2.Torso接続(Torso_蛇D2 = new Torso_蛇D());
     		}
-    		Torso_蛇D2.Torso接続(RNG.XS.NextBool() ? ((尾D)new 尾_ヘD()) : ((尾D)new 尾_ガD()));
+    		Torso_蛇D2.Torso接続(Rng.XS.NextBool() ? ((尾D)new 尾_ヘD()) : ((尾D)new 尾_ガD()));
     		WaistD2.EnumEleD().SetValuesD<口_通常D>("牙", true);
     		WaistD2.EnumEleD().SetValuesD<舌_長D>("股舌表示", true);
-    		WaistD2.EnumEleD().SetValuesD("肥大", RNG.XS.NextDouble());
+    		WaistD2.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
     		WaistD2.EnumEleD().SetValuesD("身長", 頭D2.目高);
-    		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
+    		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + Rng.XS.NextDouble(0.8));
     		WaistD2.SetLowerHair();
     		WaistD2.AdjustScale(頭D2);
     		return new CharacterData(WaistD2, new 体色(b0: false));
@@ -4228,7 +4228,7 @@ namespace SlaveMatrix
     		eleD2 = SlaveMatrix.GameClasses._Con.Get頬眼R(右: false);
     		頭D2.頬肌左接続(eleD2);
     		頭D2.頬肌右接続(eleD2.Get逆());
-    		eleD2 = RNG.XS.Next(3) switch
+    		eleD2 = Rng.XS.Next(3) switch
     		{
     			0 => new 角2_牛1D(), 
     			1 => new 角2_牛4D(), 
@@ -4253,7 +4253,7 @@ namespace SlaveMatrix
     		四足胴D2.腰接続(四足腰D2);
     		手_鳥D 手_鳥D2 = new 手_鳥D
     		{
-    			シャープ = RNG.XS.NextDouble()
+    			シャープ = Rng.XS.NextDouble()
     		};
     		LowerArm_鳥D LowerArm_鳥D2 = new LowerArm_鳥D
     		{
@@ -4281,9 +4281,9 @@ namespace SlaveMatrix
     		WaistD2.EnumEleD().SetValuesD<手_人D>("配色", 配色指定.S0);
     		WaistD2.EnumEleD().SetValuesD<性器_人D>("表示", false);
     		WaistD2.EnumEleD().SetValuesD<肛門_人D>("表示", false);
-    		WaistD2.EnumEleD().SetValuesD("肥大", RNG.XS.NextDouble());
+    		WaistD2.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
     		WaistD2.EnumEleD().SetValuesD("身長", 頭D2.目高);
-    		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
+    		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + Rng.XS.NextDouble(0.8));
     		WaistD2.SetLowerHair();
     		WaistD2.AdjustScale(頭D2);
     		return new CharacterData(WaistD2, new 体色(b0: false));
@@ -4332,9 +4332,9 @@ namespace SlaveMatrix
     		WaistD2.EnumEleD().SetValuesD("竜性", true);
     		WaistD2.EnumEleD().SetValuesD<腰肌D>("竜性", false);
     		WaistD2.EnumEleD().SetValuesD<舌_長D>("股舌表示", true);
-    		WaistD2.EnumEleD().SetValuesD("肥大", RNG.XS.NextDouble());
+    		WaistD2.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
     		WaistD2.EnumEleD().SetValuesD("身長", 頭D2.目高);
-    		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
+    		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + Rng.XS.NextDouble(0.8));
     		WaistD2.SetLowerHair();
     		WaistD2.AdjustScale(頭D2);
     		return new CharacterData(WaistD2, new 体色(b0: false));
@@ -4370,9 +4370,9 @@ namespace SlaveMatrix
     		WaistD2.EnumEleD().SetValuesD<腰肌D>("竜性", false);
     		WaistD2.EnumEleD().SetValuesD("コア1", true);
     		WaistD2.EnumEleD().SetValuesD<舌_長D>("股舌表示", true);
-    		WaistD2.EnumEleD().SetValuesD("肥大", RNG.XS.NextDouble());
+    		WaistD2.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
     		WaistD2.EnumEleD().SetValuesD("身長", 頭D2.目高);
-    		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
+    		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + Rng.XS.NextDouble(0.8));
     		WaistD2.SetLowerHair();
     		WaistD2.AdjustScale(頭D2);
     		return new CharacterData(WaistD2, new 体色(b0: false));
@@ -4401,7 +4401,7 @@ namespace SlaveMatrix
     		頭D2.頭頂接続(new 頭頂_皿D());
     		obj.背中接続(new 背中_甲D
     		{
-    			縁側角 = RNG.XS.NextDouble()
+    			縁側角 = Rng.XS.NextDouble()
     		});
     		足_人D e2 = new 足_人D();
     		Leg_人D Leg_人D2 = new Leg_人D();
@@ -4410,7 +4410,7 @@ namespace SlaveMatrix
     		腿_人D2.Leg接続(Leg_人D2);
     		WaistD2.腿左接続(腿_人D2);
     		WaistD2.腿右接続(腿_人D2.Get逆());
-    		if (RNG.XS.NextBool())
+    		if (Rng.XS.NextBool())
     		{
     			ElementData e3 = new 尾_短D();
     			WaistD2.尾接続(e3);
@@ -4420,9 +4420,9 @@ namespace SlaveMatrix
     		WaistD2.EnumEleD().SetValuesD<胴腹板D>("表示", true);
     		WaistD2.EnumEleD().SetValuesD<ボテ腹板D>("表示", false);
     		WaistD2.EnumEleD().SetValuesD("水掻", true);
-    		WaistD2.EnumEleD().SetValuesD("肥大", RNG.XS.NextDouble());
+    		WaistD2.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
     		WaistD2.EnumEleD().SetValuesD("身長", 頭D2.目高);
-    		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
+    		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + Rng.XS.NextDouble(0.8));
     		WaistD2.AdjustScale(頭D2);
     		return new CharacterData(WaistD2, new 体色(b0: false));
     	}
@@ -4439,7 +4439,7 @@ namespace SlaveMatrix
     		頭D2.Set舌短();
     		頭D2.Set耳人();
     		ElementData elementData;
-    		if (RNG.XS.NextBool())
+    		if (Rng.XS.NextBool())
     		{
     			elementData = new 虫顎D
     			{
@@ -4448,7 +4448,7 @@ namespace SlaveMatrix
     			頭D2.頬左接続(elementData);
     			頭D2.頬右接続(elementData.Get逆());
     		}
-    		if (RNG.XS.NextBool())
+    		if (Rng.XS.NextBool())
     		{
     			elementData = new 触覚_節D
     			{
@@ -4466,7 +4466,7 @@ namespace SlaveMatrix
     		ShoulderD2.UpperArm接続(UpperArm_人D2);
     		ChestD2.肩左接続(ShoulderD2);
     		ChestD2.肩右接続(ShoulderD2.Get逆());
-    		if (RNG.XS.NextBool())
+    		if (Rng.XS.NextBool())
     		{
     			ChestD2.肩左接続(ShoulderD2.Copy());
     			ChestD2.肩右接続(ShoulderD2.Get逆());
@@ -4506,12 +4506,12 @@ namespace SlaveMatrix
     		尾_蟲D2.尾右接続(節尾_曳航D2.Get逆());
     		Torso_蟲D2.Torso接続(尾_蟲D2);
     		WaistD2.EnumEleD().SetValuesD<口_通常D>("牙", true);
-    		WaistD2.EnumEleD().SetValuesD("肥大", RNG.XS.NextDouble());
+    		WaistD2.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
     		WaistD2.EnumEleD().SetValuesD("身長", 頭D2.目高);
-    		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
+    		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + Rng.XS.NextDouble(0.8));
     		WaistD2.SetLowerHair();
     		WaistD2.AdjustScale(頭D2);
-    		return new CharacterData(WaistD2, new 体色(RNG.XS.NextBool()));
+    		return new CharacterData(WaistD2, new 体色(Rng.XS.NextBool()));
     	}
 
     	public static CharacterData Getカーバンクル()
@@ -4558,9 +4558,9 @@ namespace SlaveMatrix
     		WaistD2.EnumEleD().SetValuesD<手_人D>("配色指定", 配色指定.B0);
     		WaistD2.EnumEleD().SetValuesD<頬肌D>("髭", 頭D2.鼻_接続.IsEleD<鼻_獣D>());
     		WaistD2.EnumEleD().SetValuesD<口_通常D>("牙", true);
-    		WaistD2.EnumEleD().SetValuesD("肥大", RNG.XS.NextDouble());
+    		WaistD2.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
     		WaistD2.EnumEleD().SetValuesD("身長", 頭D2.目高);
-    		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
+    		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + Rng.XS.NextDouble(0.8));
     		WaistD2.SetLowerHair();
     		WaistD2.AdjustScale(頭D2);
     		return new CharacterData(WaistD2, new 体色(b0: false));
@@ -4586,7 +4586,7 @@ namespace SlaveMatrix
     		頭D2.額接続(new 角1_虫D());
     		手_鳥D 手_鳥D2 = new 手_鳥D
     		{
-    			シャープ = RNG.XS.NextDouble()
+    			シャープ = Rng.XS.NextDouble()
     		};
     		LowerArm_鳥D LowerArm_鳥D2 = new LowerArm_鳥D
     		{
@@ -4628,9 +4628,9 @@ namespace SlaveMatrix
     		WaistD2.EnumEleD().SetValuesD("竜性", true);
     		WaistD2.EnumEleD().SetValuesD<腰肌D>("竜性", false);
     		WaistD2.EnumEleD().SetValuesD<口_通常D>("牙", true);
-    		WaistD2.EnumEleD().SetValuesD("肥大", RNG.XS.NextDouble());
+    		WaistD2.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
     		WaistD2.EnumEleD().SetValuesD("身長", 頭D2.目高);
-    		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
+    		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + Rng.XS.NextDouble(0.8));
     		WaistD2.SetLowerHair();
     		WaistD2.AdjustScale(頭D2);
     		return new CharacterData(WaistD2, new 体色(b0: false));
@@ -4689,9 +4689,9 @@ namespace SlaveMatrix
     		WaistD2.EnumEleD().SetValuesD<腰肌D>("竜性", false);
     		WaistD2.EnumEleD().SetValuesD<頬肌D>("髭", false);
     		WaistD2.EnumEleD().SetValuesD<口_通常D>("牙", true);
-    		WaistD2.EnumEleD().SetValuesD("肥大", RNG.XS.NextDouble());
+    		WaistD2.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
     		WaistD2.EnumEleD().SetValuesD("身長", 頭D2.目高);
-    		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
+    		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + Rng.XS.NextDouble(0.8));
     		WaistD2.SetLowerHair();
     		WaistD2.AdjustScale(頭D2);
     		return new CharacterData(WaistD2, new 体色(b0: false));
@@ -4752,9 +4752,9 @@ namespace SlaveMatrix
     		obj.EnumEleD().SetValuesD<性器_人D>("表示", false);
     		obj.EnumEleD().SetValuesD<肛門_人D>("表示", false);
     		obj.EnumEleD().SetValuesD<手_人D>("肉球", false);
-    		obj.EnumEleD().SetValuesD("肥大", RNG.XS.NextDouble());
+    		obj.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
     		obj.EnumEleD().SetValuesD("身長", 頭D2.目高);
-    		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
+    		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + Rng.XS.NextDouble(0.8));
     		obj.SetLowerHair();
     		obj.AdjustScale(頭D2);
     		return new CharacterData(obj, new 体色(b0: false));
@@ -4771,7 +4771,7 @@ namespace SlaveMatrix
     		頭D2.Set口人();
     		頭D2.Set舌短();
     		頭D2.Set耳獣();
-    		ElementData eleD2 = RNG.XS.Next(4) switch
+    		ElementData eleD2 = Rng.XS.Next(4) switch
     		{
     			0 => new 角2_牛1D(), 
     			1 => new 角2_牛2D(), 
@@ -4805,12 +4805,12 @@ namespace SlaveMatrix
     		WaistD2.EnumEleD().SetValuesD<Leg_人D>("配色指定", 配色指定.B0);
     		WaistD2.EnumEleD().SetValuesD<足_人D>("配色指定", 配色指定.B0);
     		WaistD2.EnumEleD().SetValuesD("バスト", 1.0);
-    		WaistD2.EnumEleD().SetValuesD("肥大", RNG.XS.NextDouble());
+    		WaistD2.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
     		WaistD2.EnumEleD().SetValuesD("身長", 頭D2.目高);
-    		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
+    		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + Rng.XS.NextDouble(0.8));
     		WaistD2.SetLowerHair();
     		WaistD2.AdjustScale(頭D2);
-    		return new CharacterData(WaistD2, new 体色(RNG.XS.NextBool()));
+    		return new CharacterData(WaistD2, new 体色(Rng.XS.NextBool()));
     	}
 
     	public static CharacterData Getリリン()
@@ -4840,12 +4840,12 @@ namespace SlaveMatrix
     		腿_人D2.Leg接続(Leg_人D2);
     		obj.腿左接続(腿_人D2);
     		obj.腿右接続(腿_人D2.Get逆());
-    		obj.EnumEleD().SetValuesD("肥大", RNG.XS.NextDouble());
+    		obj.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
     		obj.EnumEleD().SetValuesD("身長", 頭D2.目高);
-    		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
+    		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + Rng.XS.NextDouble(0.8));
     		obj.SetLowerHair();
     		obj.AdjustScale(頭D2);
-    		return new CharacterData(obj, new 体色(RNG.XS.NextBool()));
+    		return new CharacterData(obj, new 体色(Rng.XS.NextBool()));
     	}
 
     	public static CharacterData Getエルフ()
@@ -4875,9 +4875,9 @@ namespace SlaveMatrix
     		腿_人D2.Leg接続(Leg_人D2);
     		obj.腿左接続(腿_人D2);
     		obj.腿右接続(腿_人D2.Get逆());
-    		obj.EnumEleD().SetValuesD("肥大", RNG.XS.NextDouble());
+    		obj.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
     		obj.EnumEleD().SetValuesD("身長", 1.0);
-    		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
+    		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + Rng.XS.NextDouble(0.8));
     		obj.SetLowerHair();
     		obj.AdjustScale(頭D2);
     		return new CharacterData(obj, new 体色(b0: true));
@@ -4912,7 +4912,7 @@ namespace SlaveMatrix
     		obj.腿右接続(腿_人D2.Get逆());
     		obj.EnumEleD().SetValuesD("肥大", 1.0);
     		obj.EnumEleD().SetValuesD("身長", 0.0);
-    		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + RNG.XS.NextDouble(0.8));
+    		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + Rng.XS.NextDouble(0.8));
     		obj.SetLowerHair();
     		obj.AdjustScale(頭D2);
     		return new CharacterData(obj, new 体色(b0: true));
@@ -5133,8 +5133,8 @@ namespace SlaveMatrix
     		腿_人D2.Leg接続(Leg_人D2);
     		obj.腿左接続(腿_人D2);
     		obj.腿右接続(腿_人D2.Get逆());
-    		obj.EnumEleD().SetValuesD("肥大", RNG.XS.NextDouble());
-    		obj.EnumEleD().SetValuesD("身長", RNG.XS.NextDouble());
+    		obj.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
+    		obj.EnumEleD().SetValuesD("身長", Rng.XS.NextDouble());
     		obj.EnumEleD().SetValuesD("鋭爪", 0.0);
     		obj.SetLowerHair();
     		obj.AdjustScale(頭D2);
@@ -5168,23 +5168,23 @@ namespace SlaveMatrix
     		腿_人D2.Leg接続(Leg_人D2);
     		obj.腿左接続(腿_人D2);
     		obj.腿右接続(腿_人D2.Get逆());
-    		obj.EnumEleD().SetValuesD("肥大", Sta.GameData.体重);
-    		obj.EnumEleD().SetValuesD("身長", Sta.GameData.身長);
+    		obj.EnumEleD().SetValuesD("肥大", GlobalState.GameData.体重);
+    		obj.EnumEleD().SetValuesD("身長", GlobalState.GameData.身長);
     		obj.EnumEleD().SetValuesD("鋭爪", 0.0);
     		obj.肌_接続.GetEleD<腰肌D>().陰毛_表示 = true;
     		obj.AdjustScale(頭D2);
     		return new CharacterData(obj, new 体色(b0: true)
     		{
-    			目左 = Sta.GameData.色.瞳色,
-    			目右 = Sta.GameData.色.瞳色,
-    			縦目 = Sta.GameData.色.瞳色,
-    			頬目左 = Sta.GameData.色.瞳色,
-    			頬目右 = Sta.GameData.色.瞳色,
-    			髪 = Sta.GameData.色.髪色,
-    			眉 = Sta.GameData.色.髪色,
-    			毛0 = Sta.GameData.色.髪色,
-    			睫 = Sta.GameData.色.髪色,
-    			人肌 = Sta.GameData.色.肌色,
+    			目左 = GlobalState.GameData.色.瞳色,
+    			目右 = GlobalState.GameData.色.瞳色,
+    			縦目 = GlobalState.GameData.色.瞳色,
+    			頬目左 = GlobalState.GameData.色.瞳色,
+    			頬目右 = GlobalState.GameData.色.瞳色,
+    			髪 = GlobalState.GameData.色.髪色,
+    			眉 = GlobalState.GameData.色.髪色,
+    			毛0 = GlobalState.GameData.色.髪色,
+    			睫 = GlobalState.GameData.色.髪色,
+    			人肌 = GlobalState.GameData.色.肌色,
     			爪 = Color.PapayaWhip
     		});
     	}

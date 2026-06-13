@@ -18,10 +18,10 @@ namespace SlaveMatrix
     {
     	private HashSet<string> 汗対象 = new HashSet<string>
     	{
-    		Sta.ChestType.ToString(),
-    		Sta.TorsoType.ToString(),
-    		Sta.ShoulderType.ToString(),
-    		Sta.WaistType.ToString()
+    		GlobalState.ChestType.ToString(),
+    		GlobalState.TorsoType.ToString(),
+    		GlobalState.ShoulderType.ToString(),
+    		GlobalState.WaistType.ToString()
     	};
 
     	private ryps[] 対象;
@@ -121,7 +121,7 @@ namespace SlaveMatrix
     					m.ResetValue();
     					汗だし = false;
     					es = 全体.Where((Element e) => e.Intensity != 0.0).ToArray();
-    					n = es[RNG.XS.Next(es.Length)];
+    					n = es[Rng.XS.Next(es.Length)];
     				}
     				else
     				{
@@ -137,12 +137,12 @@ namespace SlaveMatrix
     					es = 全体.Where((Element e) => e.Intensity != 0.0).ToArray();
     					if (es.Length != 0)
     					{
-    						n = es[RNG.XS.Next(es.Length)];
+    						n = es[Rng.XS.Next(es.Length)];
     					}
     					es = 全体.Where((Element e) => e.Intensity == 0.0).ToArray();
     					if (es.Length != 0)
     					{
-    						es[RNG.XS.Next(es.Length)].Intensity = 1.0;
+    						es[Rng.XS.Next(es.Length)].Intensity = 1.0;
     					}
     					re = false;
     					m.ResetValue();
@@ -155,9 +155,9 @@ namespace SlaveMatrix
     					n.Yv = 0.0;
     					n.Intensity = 0.0;
     					es = 全体.Where((Element e) => e.Intensity != 0.0).ToArray();
-    					n = es[RNG.XS.Next(es.Length)];
+    					n = es[Rng.XS.Next(es.Length)];
     					es = 全体.Where((Element e) => e.Intensity == 0.0).ToArray();
-    					es[RNG.XS.Next(es.Length)].Intensity = 1.0;
+    					es[Rng.XS.Next(es.Length)].Intensity = 1.0;
     					re = false;
     					m.ResetValue();
     					汗ひき.Start();
@@ -218,7 +218,7 @@ namespace SlaveMatrix
     				_ = ref ps[i];
     				汗 = new 汗(Are.DisplayUnitScale, 配色指定.N0, Cha.ColorSet, Med, e2);
     				汗.SetHitFalse();
-    				汗.Intensity = ((RNG.XS.NextDouble() < 0.2) ? 1.0 : 0.0);
+    				汗.Intensity = ((Rng.XS.NextDouble() < 0.2) ? 1.0 : 0.0);
     				位置.Add(num switch
     				{
     					1 => 0.5, 

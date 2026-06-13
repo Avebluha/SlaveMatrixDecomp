@@ -929,7 +929,7 @@ namespace SlaveMatrix
     		ThisType = GetType();
     		MorphVariant morphVariant = new MorphVariant();
     		morphVariant.Tag = "植";
-    		morphVariant.Add(new PartGroup(Sta.半身["単足"][0][0]));
+    		morphVariant.Add(new PartGroup(GlobalState.半身["単足"][0][0]));
     		Body = new VariantGrid();
     		Body.Tag = morphVariant.Tag;
     		Body.Add(morphVariant);

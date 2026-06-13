@@ -369,7 +369,7 @@ namespace SlaveMatrix
     	public 角1_一(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 角1_一D e)
     	{
     		ThisType = GetType();
-    		MorphVariant morphVariant = new MorphVariant(Sta.肢中["角"][0]);
+    		MorphVariant morphVariant = new MorphVariant(GlobalState.肢中["角"][0]);
     		Body = new VariantGrid();
     		Body.Tag = morphVariant.Tag;
     		Body.Add(morphVariant);

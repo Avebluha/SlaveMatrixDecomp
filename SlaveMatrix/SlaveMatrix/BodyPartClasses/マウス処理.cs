@@ -38,13 +38,13 @@ namespace SlaveMatrix
     	{
     		調教UI.擬音キュー.Enqueue(delegate(RenderArea a)
     		{
-    			調教UI.擬音.Sound(a, 対象.Element.位置.GetAreaPoint(0.01), Sta.吸引.GetVal(1.0, RNG.XS.NextDouble()), new Font("MS Gothic", 1f), ColorHelper.Black, 0.2, b: true);
+    			調教UI.擬音.Sound(a, 対象.Element.位置.GetAreaPoint(0.01), GlobalState.吸引.GetVal(1.0, Rng.XS.NextDouble()), new Font("MS Gothic", 1f), ColorHelper.Black, 0.2, b: true);
     		});
     	}
 
     	private void オーバー時(string str, ref ContactD cd)
     	{
-    		if (Sta.GameData.ガイド)
+    		if (GlobalState.GameData.ガイド)
     		{
     			ip.SubInfoIm = (調教UI.IsHitCha(ref cd) ? (str + "LDo:" + GameText.吸引 + "\r\nWh:" + GameText.舐る + "\r\n") : si());
     		}
@@ -52,7 +52,7 @@ namespace SlaveMatrix
 
     	private void 吸引時(string str)
     	{
-    		if (Sta.GameData.ガイド)
+    		if (GlobalState.GameData.ガイド)
     		{
     			ip.SubInfoIm = str + "LUp:" + GameText.開放;
     		}
@@ -99,7 +99,7 @@ namespace SlaveMatrix
     				{
     					舐め解除(ref cd);
     				}
-    				else if (Sta.GameData.ガイド)
+    				else if (GlobalState.GameData.ガイド)
     				{
     					ip.SubInfoIm = "Wh:" + GameText.舐る;
     				}
@@ -191,7 +191,7 @@ namespace SlaveMatrix
     				else if (cd.c == ContactType.Mouth)
     				{
     					対象.Element.Intensity = 0.5;
-    					対象.Element.角度C = (double)RNG.XS.NextSign() * 45.0;
+    					対象.Element.角度C = (double)Rng.XS.NextSign() * 45.0;
     					調教UI.Set_口(対象.Element);
     					吸引時(GameText.口腔 + "\r\n");
     					調教UI.口腔演出();
@@ -397,7 +397,7 @@ namespace SlaveMatrix
     				Player.主精力消費小();
     				if (マウス処理2.Bod.LeftMilkSpray.母乳垂れ1_表示 && マウス処理2.箇所.c == ContactType.Milk && マウス処理2.Cha.MilkSpray.Run)
     				{
-    					Sta.GameData.精力 = (Sta.GameData.精力 + 0.02 * RNG.XS.NextDouble()).Clamp(0.0, 1.0);
+    					GlobalState.GameData.精力 = (GlobalState.GameData.精力 + 0.02 * Rng.XS.NextDouble()).Clamp(0.0, 1.0);
     				}
     			},
     			OnReach = delegate(Motion m)

@@ -164,8 +164,8 @@ namespace SlaveMatrix
 
     	public BackHair0_肢系D SetRandom()
     	{
-    		髪長0 = RNG.XS.NextDouble();
-    		右 = RNG.XS.NextBool();
+    		髪長0 = Rng.XS.NextDouble();
+    		右 = Rng.XS.NextBool();
     		return this;
     	}
 

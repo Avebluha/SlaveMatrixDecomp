@@ -3798,7 +3798,7 @@ namespace SlaveMatrix
     	public ハンド(double DisUnit, 配色指定 配色指定, 主人公配色 体配色, ModeEventDispatcher Med, ハンドD e)
     	{
     		ThisType = GetType();
-    		Body = new VariantGrid(Sta.カーソル["ハンド"]);
+    		Body = new VariantGrid(GlobalState.カーソル["ハンド"]);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_親指 = partGroup["親指"].ToPar();
     		X0Y0_手 = partGroup["手"].ToPar();

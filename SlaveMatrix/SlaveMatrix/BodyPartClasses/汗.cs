@@ -167,7 +167,7 @@ namespace SlaveMatrix
     	public 汗(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 汗D e)
     	{
     		ThisType = GetType();
-    		Body = new VariantGrid(Sta.スタンプ["汗"]);
+    		Body = new VariantGrid(GlobalState.スタンプ["汗"]);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_汗0 = partGroup["汗0"].ToPar();
     		X0Y0_汗1 = partGroup["汗1"].ToPar();

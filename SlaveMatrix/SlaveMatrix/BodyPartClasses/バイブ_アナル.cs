@@ -560,7 +560,7 @@ namespace SlaveMatrix
     	public バイブ_アナル(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, バイブ_アナルD e)
     	{
     		ThisType = GetType();
-    		Body = new VariantGrid(Sta.カーソル["アナル"]);
+    		Body = new VariantGrid(GlobalState.カーソル["アナル"]);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_ヘッド = partGroup["ヘッド"].ToPar();
     		PartGroup pars2 = partGroup["ユニット"].ToPars();

@@ -509,7 +509,7 @@ namespace SlaveMatrix
     	{
     		顔面_甲 顔面_甲2 = this;
     		ThisType = GetType();
-    		MorphVariant morphVariant = new MorphVariant(Sta.肢中["顔面"][0]);
+    		MorphVariant morphVariant = new MorphVariant(GlobalState.肢中["顔面"][0]);
     		Body = new VariantGrid();
     		Body.Tag = morphVariant.Tag;
     		Body.Add(morphVariant);

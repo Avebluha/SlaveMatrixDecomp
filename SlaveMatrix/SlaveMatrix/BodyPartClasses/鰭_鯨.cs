@@ -88,7 +88,7 @@ namespace SlaveMatrix
     		ThisType = GetType();
     		MorphVariant morphVariant = new MorphVariant();
     		morphVariant.Tag = "鯨鰭";
-    		morphVariant.Add(new PartGroup(Sta.肢左["鰭"][1][1]));
+    		morphVariant.Add(new PartGroup(GlobalState.肢左["鰭"][1][1]));
     		Body = new VariantGrid();
     		Body.Tag = morphVariant.Tag;
     		Body.Add(morphVariant);

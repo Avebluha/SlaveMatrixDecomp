@@ -73,7 +73,7 @@ namespace SlaveMatrix
 
     	public static void GetAlpha(this ShapePart p, out int ret)
     	{
-    		ret = (int)(100.0 + (double)abj * 255.0 * (p.GetArea() / Sta.MaxAre));
+    		ret = (int)(100.0 + (double)abj * 255.0 * (p.GetArea() / GlobalState.MaxAre));
     		ret = ((ret > 160) ? 160 : ret);
     	}
 
@@ -150,22 +150,22 @@ namespace SlaveMatrix
 
     	public static void GetRandomColor(out Color ret)
     	{
-    		HSV.ToRGB(RNG.XS.NextM(359), RNG.XS.NextM(0, 223), RNG.XS.NextM(128, 255), out ret);
+    		HSV.ToRGB(Rng.XS.NextM(359), Rng.XS.NextM(0, 223), Rng.XS.NextM(128, 255), out ret);
     	}
 
     	public static void GetRandomSkinColor(out Color ret)
     	{
-    		HSV.ToRGB(RNG.XS.NextM(359), 100, 200, out ret);
+    		HSV.ToRGB(Rng.XS.NextM(359), 100, 200, out ret);
     	}
 
     	public static void GetRandomClothesColor(out Color ret)
     	{
-    		HSV.ToRGB(RNG.XS.NextM(359), RNG.XS.NextM(0, 255), RNG.XS.NextM(0, 255), out ret);
+    		HSV.ToRGB(Rng.XS.NextM(359), Rng.XS.NextM(0, 255), Rng.XS.NextM(0, 255), out ret);
     	}
 
     	public static void GetRandomClothesColor(int a, out Color ret)
     	{
-    		HSV.ToRGB(RNG.XS.NextM(359), RNG.XS.NextM(0, 255), RNG.XS.NextM(0, 255), a, out ret);
+    		HSV.ToRGB(Rng.XS.NextM(359), Rng.XS.NextM(0, 255), Rng.XS.NextM(0, 255), a, out ret);
     	}
 
     	public static void GetLimit(ref Color c, out Color ret)
@@ -186,7 +186,7 @@ namespace SlaveMatrix
 
     	public static void GetSkinColor(out Color ret)
     	{
-    		HSV.ToRGB(RNG.XS.Next(15, 40), RNG.XS.Next(34, 163), RNG.XS.Next(100, 247), out ret);
+    		HSV.ToRGB(Rng.XS.Next(15, 40), Rng.XS.Next(34, 163), Rng.XS.Next(100, 247), out ret);
     	}
     }
 }

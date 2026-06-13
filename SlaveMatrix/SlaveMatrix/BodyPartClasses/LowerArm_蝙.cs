@@ -564,7 +564,7 @@ namespace SlaveMatrix
     	{
     		LowerArm_蝙 LowerArm_蝙2 = this;
     		ThisType = GetType();
-    		Body = new VariantGrid(Sta.腕左["獣翼LowerArm"]);
+    		Body = new VariantGrid(GlobalState.腕左["獣翼LowerArm"]);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_獣翼LowerArm = partGroup["獣翼下腕"].ToPar();
     		PartGroup pars2 = partGroup["鱗"].ToPars();

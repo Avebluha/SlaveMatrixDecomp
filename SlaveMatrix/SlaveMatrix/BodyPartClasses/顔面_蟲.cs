@@ -823,7 +823,7 @@ namespace SlaveMatrix
     	{
     		顔面_蟲 顔面_蟲2 = this;
     		ThisType = GetType();
-    		MorphVariant morphVariant = new MorphVariant(Sta.肢中["顔面"][2]);
+    		MorphVariant morphVariant = new MorphVariant(GlobalState.肢中["顔面"][2]);
     		Body = new VariantGrid();
     		Body.Tag = morphVariant.Tag;
     		Body.Add(morphVariant);

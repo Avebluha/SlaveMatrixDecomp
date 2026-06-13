@@ -12,168 +12,168 @@ namespace SlaveMatrix
     {
     	private static HashSet<string> 頭頂 = new HashSet<string>
     	{
-    		Sta.頭頂_宇Dt.ToString(),
-    		Sta.頭頂_皿Dt.ToString(),
-    		Sta.頭頂_天Dt.ToString()
+    		GlobalState.頭頂_宇Dt.ToString(),
+    		GlobalState.頭頂_皿Dt.ToString(),
+    		GlobalState.頭頂_天Dt.ToString()
     	};
 
     	private static HashSet<string> 額 = new HashSet<string>
     	{
-    		Sta.角1_一Dt.ToString(),
-    		Sta.角1_鬼Dt.ToString(),
-    		Sta.角1_虫Dt.ToString()
+    		GlobalState.角1_一Dt.ToString(),
+    		GlobalState.角1_鬼Dt.ToString(),
+    		GlobalState.角1_虫Dt.ToString()
     	};
 
     	private static HashSet<string> 側頭 = new HashSet<string>
     	{
-    		Sta.角1_鬼Dt.ToString(),
-    		Sta.角2_山1Dt.ToString(),
-    		Sta.角2_山2Dt.ToString(),
-    		Sta.角2_山3Dt.ToString(),
-    		Sta.角2_巻Dt.ToString(),
-    		Sta.角2_牛1Dt.ToString(),
-    		Sta.角2_牛2Dt.ToString(),
-    		Sta.角2_牛3Dt.ToString(),
-    		Sta.角2_牛4Dt.ToString(),
-    		Sta.角2_鬼Dt.ToString(),
-    		Sta.角2_虫Dt.ToString(),
-    		Sta.触覚_線Dt.ToString(),
-    		Sta.触覚_節Dt.ToString(),
-    		Sta.触覚_甲Dt.ToString(),
-    		Sta.触覚_蝶Dt.ToString(),
-    		Sta.触覚_蛾Dt.ToString(),
-    		Sta.UpperArm_鳥Dt.ToString(),
-    		Sta.UpperArm_蝙Dt.ToString(),
-    		Sta.獣耳Dt.ToString(),
-    		Sta.植Dt.ToString()
+    		GlobalState.角1_鬼Dt.ToString(),
+    		GlobalState.角2_山1Dt.ToString(),
+    		GlobalState.角2_山2Dt.ToString(),
+    		GlobalState.角2_山3Dt.ToString(),
+    		GlobalState.角2_巻Dt.ToString(),
+    		GlobalState.角2_牛1Dt.ToString(),
+    		GlobalState.角2_牛2Dt.ToString(),
+    		GlobalState.角2_牛3Dt.ToString(),
+    		GlobalState.角2_牛4Dt.ToString(),
+    		GlobalState.角2_鬼Dt.ToString(),
+    		GlobalState.角2_虫Dt.ToString(),
+    		GlobalState.触覚_線Dt.ToString(),
+    		GlobalState.触覚_節Dt.ToString(),
+    		GlobalState.触覚_甲Dt.ToString(),
+    		GlobalState.触覚_蝶Dt.ToString(),
+    		GlobalState.触覚_蛾Dt.ToString(),
+    		GlobalState.UpperArm_鳥Dt.ToString(),
+    		GlobalState.UpperArm_蝙Dt.ToString(),
+    		GlobalState.獣耳Dt.ToString(),
+    		GlobalState.植Dt.ToString()
     	};
 
     	private static HashSet<string> 触覚 = new HashSet<string>
     	{
-    		Sta.触覚_線Dt.ToString(),
-    		Sta.触覚_節Dt.ToString(),
-    		Sta.触覚_甲Dt.ToString(),
-    		Sta.触覚_蝶Dt.ToString(),
-    		Sta.触覚_蛾Dt.ToString()
+    		GlobalState.触覚_線Dt.ToString(),
+    		GlobalState.触覚_節Dt.ToString(),
+    		GlobalState.触覚_甲Dt.ToString(),
+    		GlobalState.触覚_蝶Dt.ToString(),
+    		GlobalState.触覚_蛾Dt.ToString()
     	};
 
     	private static HashSet<string> 耳 = new HashSet<string>
     	{
-    		Sta.耳_人Dt.ToString(),
-    		Sta.耳_尖Dt.ToString(),
-    		Sta.耳_長Dt.ToString(),
-    		Sta.耳_鰭Dt.ToString(),
-    		Sta.耳_羽Dt.ToString(),
-    		Sta.耳_獣Dt.ToString()
+    		GlobalState.耳_人Dt.ToString(),
+    		GlobalState.耳_尖Dt.ToString(),
+    		GlobalState.耳_長Dt.ToString(),
+    		GlobalState.耳_鰭Dt.ToString(),
+    		GlobalState.耳_羽Dt.ToString(),
+    		GlobalState.耳_獣Dt.ToString()
     	};
 
-    	private static HashSet<string> 頬 = new HashSet<string> { Sta.虫顎Dt.ToString() };
+    	private static HashSet<string> 頬 = new HashSet<string> { GlobalState.虫顎Dt.ToString() };
 
     	private static HashSet<string> 後髪 = new HashSet<string>
     	{
-    		Sta.尾_龍Dt.ToString(),
-    		Sta.尾_竜Dt.ToString(),
-    		Sta.尾_悪Dt.ToString(),
-    		Sta.尾_淫Dt.ToString(),
-    		Sta.尾_虫Dt.ToString(),
-    		Sta.尾_蠍Dt.ToString(),
-    		Sta.尾_蛇Dt.ToString(),
-    		Sta.尾_腓Dt.ToString(),
-    		Sta.尾_根Dt.ToString(),
-    		Sta.節尾_曳航Dt.ToString(),
-    		Sta.触手_軟Dt.ToString(),
-    		Sta.触手_触Dt.ToString(),
-    		Sta.触手_蔦Dt.ToString(),
-    		Sta.鳳凰Dt.ToString()
+    		GlobalState.尾_龍Dt.ToString(),
+    		GlobalState.尾_竜Dt.ToString(),
+    		GlobalState.尾_悪Dt.ToString(),
+    		GlobalState.尾_淫Dt.ToString(),
+    		GlobalState.尾_虫Dt.ToString(),
+    		GlobalState.尾_蠍Dt.ToString(),
+    		GlobalState.尾_蛇Dt.ToString(),
+    		GlobalState.尾_腓Dt.ToString(),
+    		GlobalState.尾_根Dt.ToString(),
+    		GlobalState.節尾_曳航Dt.ToString(),
+    		GlobalState.触手_軟Dt.ToString(),
+    		GlobalState.触手_触Dt.ToString(),
+    		GlobalState.触手_蔦Dt.ToString(),
+    		GlobalState.鳳凰Dt.ToString()
     	};
 
-    	private static HashSet<string> 肩人 = new HashSet<string> { Sta.ShoulderDType.ToString() };
+    	private static HashSet<string> 肩人 = new HashSet<string> { GlobalState.ShoulderDType.ToString() };
 
     	private static HashSet<string> 胸翼上人 = new HashSet<string>
     	{
-    		Sta.前翅_甲Dt.ToString(),
-    		Sta.前翅_羽Dt.ToString(),
-    		Sta.前翅_蝶Dt.ToString(),
-    		Sta.前翅_草Dt.ToString(),
-    		Sta.後翅_甲Dt.ToString(),
-    		Sta.後翅_草Dt.ToString(),
-    		Sta.UpperArm_鳥Dt.ToString(),
-    		Sta.UpperArm_蝙Dt.ToString()
+    		GlobalState.前翅_甲Dt.ToString(),
+    		GlobalState.前翅_羽Dt.ToString(),
+    		GlobalState.前翅_蝶Dt.ToString(),
+    		GlobalState.前翅_草Dt.ToString(),
+    		GlobalState.後翅_甲Dt.ToString(),
+    		GlobalState.後翅_草Dt.ToString(),
+    		GlobalState.UpperArm_鳥Dt.ToString(),
+    		GlobalState.UpperArm_蝙Dt.ToString()
     	};
 
     	private static HashSet<string> 胸翼下人 = new HashSet<string>
     	{
-    		Sta.後翅_羽Dt.ToString(),
-    		Sta.後翅_蝶Dt.ToString()
+    		GlobalState.後翅_羽Dt.ToString(),
+    		GlobalState.後翅_蝶Dt.ToString()
     	};
 
     	private static HashSet<string> 胴翼人 = new HashSet<string>
     	{
-    		Sta.尾_蠍Dt.ToString(),
-    		Sta.前翅_甲Dt.ToString(),
-    		Sta.前翅_羽Dt.ToString(),
-    		Sta.前翅_蝶Dt.ToString(),
-    		Sta.前翅_草Dt.ToString(),
-    		Sta.後翅_甲Dt.ToString(),
-    		Sta.後翅_草Dt.ToString(),
-    		Sta.触肢_肢蜘Dt.ToString(),
-    		Sta.触肢_肢蠍Dt.ToString(),
-    		Sta.節足_足蜘Dt.ToString(),
-    		Sta.節足_足蠍Dt.ToString(),
-    		Sta.節足_足百Dt.ToString(),
-    		Sta.節尾_曳航Dt.ToString(),
-    		Sta.触手_軟Dt.ToString(),
-    		Sta.触手_触Dt.ToString(),
-    		Sta.触手_蔦Dt.ToString(),
-    		Sta.UpperArm_鳥Dt.ToString(),
-    		Sta.UpperArm_蝙Dt.ToString()
+    		GlobalState.尾_蠍Dt.ToString(),
+    		GlobalState.前翅_甲Dt.ToString(),
+    		GlobalState.前翅_羽Dt.ToString(),
+    		GlobalState.前翅_蝶Dt.ToString(),
+    		GlobalState.前翅_草Dt.ToString(),
+    		GlobalState.後翅_甲Dt.ToString(),
+    		GlobalState.後翅_草Dt.ToString(),
+    		GlobalState.触肢_肢蜘Dt.ToString(),
+    		GlobalState.触肢_肢蠍Dt.ToString(),
+    		GlobalState.節足_足蜘Dt.ToString(),
+    		GlobalState.節足_足蠍Dt.ToString(),
+    		GlobalState.節足_足百Dt.ToString(),
+    		GlobalState.節尾_曳航Dt.ToString(),
+    		GlobalState.触手_軟Dt.ToString(),
+    		GlobalState.触手_触Dt.ToString(),
+    		GlobalState.触手_蔦Dt.ToString(),
+    		GlobalState.UpperArm_鳥Dt.ToString(),
+    		GlobalState.UpperArm_蝙Dt.ToString()
     	};
 
     	private static HashSet<string> 腰翼人 = new HashSet<string>
     	{
-    		Sta.後翅_羽Dt.ToString(),
-    		Sta.後翅_蝶Dt.ToString(),
-    		Sta.触肢_肢蜘Dt.ToString(),
-    		Sta.触肢_肢蠍Dt.ToString(),
-    		Sta.節足_足蜘Dt.ToString(),
-    		Sta.節足_足蠍Dt.ToString(),
-    		Sta.節足_足百Dt.ToString(),
-    		Sta.節尾_曳航Dt.ToString(),
-    		Sta.触手_軟Dt.ToString(),
-    		Sta.触手_触Dt.ToString(),
-    		Sta.触手_蔦Dt.ToString(),
-    		Sta.四足脇Dt.ToString()
+    		GlobalState.後翅_羽Dt.ToString(),
+    		GlobalState.後翅_蝶Dt.ToString(),
+    		GlobalState.触肢_肢蜘Dt.ToString(),
+    		GlobalState.触肢_肢蠍Dt.ToString(),
+    		GlobalState.節足_足蜘Dt.ToString(),
+    		GlobalState.節足_足蠍Dt.ToString(),
+    		GlobalState.節足_足百Dt.ToString(),
+    		GlobalState.節尾_曳航Dt.ToString(),
+    		GlobalState.触手_軟Dt.ToString(),
+    		GlobalState.触手_触Dt.ToString(),
+    		GlobalState.触手_蔦Dt.ToString(),
+    		GlobalState.四足脇Dt.ToString()
     	};
 
     	private static HashSet<string> 腿人 = new HashSet<string>
     	{
-    		Sta.尾_魚Dt.ToString(),
-    		Sta.触手_犬Dt.ToString(),
-    		Sta.腿_人Dt.ToString(),
-    		Sta.腿_獣Dt.ToString(),
-    		Sta.腿_蹄Dt.ToString(),
-    		Sta.腿_鳥Dt.ToString(),
-    		Sta.腿_竜Dt.ToString()
+    		GlobalState.尾_魚Dt.ToString(),
+    		GlobalState.触手_犬Dt.ToString(),
+    		GlobalState.腿_人Dt.ToString(),
+    		GlobalState.腿_獣Dt.ToString(),
+    		GlobalState.腿_蹄Dt.ToString(),
+    		GlobalState.腿_鳥Dt.ToString(),
+    		GlobalState.腿_竜Dt.ToString()
     	};
 
-    	private static HashSet<string> 肩獣 = new HashSet<string> { Sta.四足脇Dt.ToString() };
+    	private static HashSet<string> 肩獣 = new HashSet<string> { GlobalState.四足脇Dt.ToString() };
 
     	private static HashSet<string> 胸翼上獣 = new HashSet<string>
     	{
-    		Sta.前翅_甲Dt.ToString(),
-    		Sta.前翅_羽Dt.ToString(),
-    		Sta.前翅_蝶Dt.ToString(),
-    		Sta.前翅_草Dt.ToString(),
-    		Sta.後翅_甲Dt.ToString(),
-    		Sta.後翅_草Dt.ToString(),
-    		Sta.UpperArm_鳥Dt.ToString(),
-    		Sta.UpperArm_蝙Dt.ToString()
+    		GlobalState.前翅_甲Dt.ToString(),
+    		GlobalState.前翅_羽Dt.ToString(),
+    		GlobalState.前翅_蝶Dt.ToString(),
+    		GlobalState.前翅_草Dt.ToString(),
+    		GlobalState.後翅_甲Dt.ToString(),
+    		GlobalState.後翅_草Dt.ToString(),
+    		GlobalState.UpperArm_鳥Dt.ToString(),
+    		GlobalState.UpperArm_蝙Dt.ToString()
     	};
 
     	private static HashSet<string> 胸翼下獣 = new HashSet<string>
     	{
-    		Sta.後翅_羽Dt.ToString(),
-    		Sta.後翅_蝶Dt.ToString()
+    		GlobalState.後翅_羽Dt.ToString(),
+    		GlobalState.後翅_蝶Dt.ToString()
     	};
 
     	private static HashSet<string> 胴翼獣 = new HashSet<string>();
@@ -182,507 +182,507 @@ namespace SlaveMatrix
 
     	private static HashSet<string> 腿獣 = new HashSet<string>
     	{
-    		Sta.腿_獣Dt.ToString(),
-    		Sta.腿_蹄Dt.ToString(),
-    		Sta.腿_鳥Dt.ToString(),
-    		Sta.腿_竜Dt.ToString()
+    		GlobalState.腿_獣Dt.ToString(),
+    		GlobalState.腿_蹄Dt.ToString(),
+    		GlobalState.腿_鳥Dt.ToString(),
+    		GlobalState.腿_竜Dt.ToString()
     	};
 
     	private static HashSet<string> 蛸外 = new HashSet<string>
     	{
-    		Sta.尾_魚Dt.ToString(),
-    		Sta.触手_軟Dt.ToString(),
-    		Sta.触手_触Dt.ToString(),
-    		Sta.触手_犬Dt.ToString()
+    		GlobalState.尾_魚Dt.ToString(),
+    		GlobalState.触手_軟Dt.ToString(),
+    		GlobalState.触手_触Dt.ToString(),
+    		GlobalState.触手_犬Dt.ToString()
     	};
 
     	private static HashSet<string> 蛸内 = new HashSet<string>
     	{
-    		Sta.尾_魚Dt.ToString(),
-    		Sta.節尾_曳航Dt.ToString(),
-    		Sta.節尾_鋏Dt.ToString(),
-    		Sta.触手_軟Dt.ToString(),
-    		Sta.触手_触Dt.ToString(),
-    		Sta.触手_犬Dt.ToString()
+    		GlobalState.尾_魚Dt.ToString(),
+    		GlobalState.節尾_曳航Dt.ToString(),
+    		GlobalState.節尾_鋏Dt.ToString(),
+    		GlobalState.触手_軟Dt.ToString(),
+    		GlobalState.触手_触Dt.ToString(),
+    		GlobalState.触手_犬Dt.ToString()
     	};
 
     	private static HashSet<string> 蜘触肢 = new HashSet<string>
     	{
-    		Sta.触肢_肢蜘Dt.ToString(),
-    		Sta.触肢_肢蠍Dt.ToString(),
-    		Sta.節足_足蠍Dt.ToString(),
-    		Sta.節足_足百Dt.ToString(),
-    		Sta.節尾_曳航Dt.ToString(),
-    		Sta.節尾_鋏Dt.ToString()
+    		GlobalState.触肢_肢蜘Dt.ToString(),
+    		GlobalState.触肢_肢蠍Dt.ToString(),
+    		GlobalState.節足_足蠍Dt.ToString(),
+    		GlobalState.節足_足百Dt.ToString(),
+    		GlobalState.節尾_曳航Dt.ToString(),
+    		GlobalState.節尾_鋏Dt.ToString()
     	};
 
     	private static HashSet<string> 蜘節足1 = new HashSet<string>
     	{
-    		Sta.節足_足蜘Dt.ToString(),
-    		Sta.節足_足蠍Dt.ToString(),
-    		Sta.節足_足百Dt.ToString()
+    		GlobalState.節足_足蜘Dt.ToString(),
+    		GlobalState.節足_足蠍Dt.ToString(),
+    		GlobalState.節足_足百Dt.ToString()
     	};
 
     	private static HashSet<string> 蜘節足2 = new HashSet<string>
     	{
-    		Sta.節足_足蜘Dt.ToString(),
-    		Sta.節足_足蠍Dt.ToString(),
-    		Sta.節足_足百Dt.ToString()
+    		GlobalState.節足_足蜘Dt.ToString(),
+    		GlobalState.節足_足蠍Dt.ToString(),
+    		GlobalState.節足_足百Dt.ToString()
     	};
 
     	private static HashSet<string> 蜘節足3 = new HashSet<string>
     	{
-    		Sta.節足_足蜘Dt.ToString(),
-    		Sta.節足_足蠍Dt.ToString(),
-    		Sta.節足_足百Dt.ToString()
+    		GlobalState.節足_足蜘Dt.ToString(),
+    		GlobalState.節足_足蠍Dt.ToString(),
+    		GlobalState.節足_足百Dt.ToString()
     	};
 
     	private static HashSet<string> 蜘節足4 = new HashSet<string>
     	{
-    		Sta.節足_足蜘Dt.ToString(),
-    		Sta.節足_足蠍Dt.ToString(),
-    		Sta.節足_足百Dt.ToString()
+    		GlobalState.節足_足蜘Dt.ToString(),
+    		GlobalState.節足_足蠍Dt.ToString(),
+    		GlobalState.節足_足百Dt.ToString()
     	};
 
     	private static HashSet<string> 蠍触肢 = new HashSet<string>
     	{
-    		Sta.触肢_肢蜘Dt.ToString(),
-    		Sta.触肢_肢蠍Dt.ToString(),
-    		Sta.節足_足蜘Dt.ToString(),
-    		Sta.節足_足百Dt.ToString(),
-    		Sta.節尾_曳航Dt.ToString(),
-    		Sta.節尾_鋏Dt.ToString()
+    		GlobalState.触肢_肢蜘Dt.ToString(),
+    		GlobalState.触肢_肢蠍Dt.ToString(),
+    		GlobalState.節足_足蜘Dt.ToString(),
+    		GlobalState.節足_足百Dt.ToString(),
+    		GlobalState.節尾_曳航Dt.ToString(),
+    		GlobalState.節尾_鋏Dt.ToString()
     	};
 
     	private static HashSet<string> 蠍節足1 = new HashSet<string>
     	{
-    		Sta.節足_足蜘Dt.ToString(),
-    		Sta.節足_足蠍Dt.ToString(),
-    		Sta.節足_足百Dt.ToString()
+    		GlobalState.節足_足蜘Dt.ToString(),
+    		GlobalState.節足_足蠍Dt.ToString(),
+    		GlobalState.節足_足百Dt.ToString()
     	};
 
     	private static HashSet<string> 蠍節足2 = new HashSet<string>
     	{
-    		Sta.節足_足蜘Dt.ToString(),
-    		Sta.節足_足蠍Dt.ToString(),
-    		Sta.節足_足百Dt.ToString()
+    		GlobalState.節足_足蜘Dt.ToString(),
+    		GlobalState.節足_足蠍Dt.ToString(),
+    		GlobalState.節足_足百Dt.ToString()
     	};
 
     	private static HashSet<string> 蠍節足3 = new HashSet<string>
     	{
-    		Sta.節足_足蜘Dt.ToString(),
-    		Sta.節足_足蠍Dt.ToString(),
-    		Sta.節足_足百Dt.ToString()
+    		GlobalState.節足_足蜘Dt.ToString(),
+    		GlobalState.節足_足蠍Dt.ToString(),
+    		GlobalState.節足_足百Dt.ToString()
     	};
 
     	private static HashSet<string> 蠍節足4 = new HashSet<string>
     	{
-    		Sta.節足_足蜘Dt.ToString(),
-    		Sta.節足_足蠍Dt.ToString(),
-    		Sta.節足_足百Dt.ToString()
+    		GlobalState.節足_足蜘Dt.ToString(),
+    		GlobalState.節足_足蠍Dt.ToString(),
+    		GlobalState.節足_足百Dt.ToString()
     	};
 
     	private static HashSet<string> 蠍櫛状板 = new HashSet<string>
     	{
-    		Sta.触覚_蠍Dt.ToString(),
-    		Sta.鰭_魚Dt.ToString(),
-    		Sta.鰭_豚Dt.ToString(),
-    		Sta.鰭_鯨Dt.ToString(),
-    		Sta.節尾_曳航Dt.ToString()
+    		GlobalState.触覚_蠍Dt.ToString(),
+    		GlobalState.鰭_魚Dt.ToString(),
+    		GlobalState.鰭_豚Dt.ToString(),
+    		GlobalState.鰭_鯨Dt.ToString(),
+    		GlobalState.節尾_曳航Dt.ToString()
     	};
 
     	private static HashSet<string> 植外 = new HashSet<string>
     	{
-    		Sta.尾_猫Dt.ToString(),
-    		Sta.尾_悪Dt.ToString(),
-    		Sta.尾_淫Dt.ToString(),
-    		Sta.尾_根Dt.ToString(),
-    		Sta.節尾_曳航Dt.ToString()
+    		GlobalState.尾_猫Dt.ToString(),
+    		GlobalState.尾_悪Dt.ToString(),
+    		GlobalState.尾_淫Dt.ToString(),
+    		GlobalState.尾_根Dt.ToString(),
+    		GlobalState.節尾_曳航Dt.ToString()
     	};
 
     	private static HashSet<string> 植内 = new HashSet<string>
     	{
-    		Sta.尾_猫Dt.ToString(),
-    		Sta.尾_悪Dt.ToString(),
-    		Sta.尾_淫Dt.ToString(),
-    		Sta.尾_根Dt.ToString(),
-    		Sta.節尾_曳航Dt.ToString()
+    		GlobalState.尾_猫Dt.ToString(),
+    		GlobalState.尾_悪Dt.ToString(),
+    		GlobalState.尾_淫Dt.ToString(),
+    		GlobalState.尾_根Dt.ToString(),
+    		GlobalState.節尾_曳航Dt.ToString()
     	};
 
     	private static HashSet<string> 魚 = new HashSet<string>
     	{
-    		Sta.鰭_魚Dt.ToString(),
-    		Sta.鰭_豚Dt.ToString(),
-    		Sta.鰭_鯨Dt.ToString()
+    		GlobalState.鰭_魚Dt.ToString(),
+    		GlobalState.鰭_豚Dt.ToString(),
+    		GlobalState.鰭_鯨Dt.ToString()
     	};
 
     	private static HashSet<string> 鯨 = new HashSet<string>
     	{
-    		Sta.鰭_魚Dt.ToString(),
-    		Sta.鰭_豚Dt.ToString(),
-    		Sta.鰭_鯨Dt.ToString()
+    		GlobalState.鰭_魚Dt.ToString(),
+    		GlobalState.鰭_豚Dt.ToString(),
+    		GlobalState.鰭_鯨Dt.ToString()
     	};
 
     	private static HashSet<string> 蛇 = new HashSet<string>
     	{
-    		Sta.鰭_魚Dt.ToString(),
-    		Sta.鰭_豚Dt.ToString(),
-    		Sta.鰭_鯨Dt.ToString(),
-    		Sta.節足_足蜘Dt.ToString(),
-    		Sta.節足_足蠍Dt.ToString(),
-    		Sta.節足_足百Dt.ToString(),
-    		Sta.腿_竜Dt.ToString()
+    		GlobalState.鰭_魚Dt.ToString(),
+    		GlobalState.鰭_豚Dt.ToString(),
+    		GlobalState.鰭_鯨Dt.ToString(),
+    		GlobalState.節足_足蜘Dt.ToString(),
+    		GlobalState.節足_足蠍Dt.ToString(),
+    		GlobalState.節足_足百Dt.ToString(),
+    		GlobalState.腿_竜Dt.ToString()
     	};
 
     	private static HashSet<string> 蟲 = new HashSet<string>
     	{
-    		Sta.鰭_魚Dt.ToString(),
-    		Sta.鰭_豚Dt.ToString(),
-    		Sta.鰭_鯨Dt.ToString(),
-    		Sta.節足_足蜘Dt.ToString(),
-    		Sta.節足_足蠍Dt.ToString(),
-    		Sta.節足_足百Dt.ToString()
+    		GlobalState.鰭_魚Dt.ToString(),
+    		GlobalState.鰭_豚Dt.ToString(),
+    		GlobalState.鰭_鯨Dt.ToString(),
+    		GlobalState.節足_足蜘Dt.ToString(),
+    		GlobalState.節足_足蠍Dt.ToString(),
+    		GlobalState.節足_足百Dt.ToString()
     	};
 
-    	private static HashSet<string> 蟲尾 = new HashSet<string> { Sta.節足_足百Dt.ToString() };
+    	private static HashSet<string> 蟲尾 = new HashSet<string> { GlobalState.節足_足百Dt.ToString() };
 
     	private static HashSet<string> 蟲尾先 = new HashSet<string>
     	{
-    		Sta.節尾_曳航Dt.ToString(),
-    		Sta.節尾_鋏Dt.ToString(),
-    		Sta.鳳凰Dt.ToString(),
-    		Sta.大顎Dt.ToString()
+    		GlobalState.節尾_曳航Dt.ToString(),
+    		GlobalState.節尾_鋏Dt.ToString(),
+    		GlobalState.鳳凰Dt.ToString(),
+    		GlobalState.大顎Dt.ToString()
     	};
 
     	private static HashSet<string> 触覚甲 = new HashSet<string>
     	{
-    		Sta.触覚_線Dt.ToString(),
-    		Sta.触覚_節Dt.ToString(),
-    		Sta.触覚_甲Dt.ToString(),
-    		Sta.触覚_蝶Dt.ToString(),
-    		Sta.触覚_蛾Dt.ToString()
+    		GlobalState.触覚_線Dt.ToString(),
+    		GlobalState.触覚_節Dt.ToString(),
+    		GlobalState.触覚_甲Dt.ToString(),
+    		GlobalState.触覚_蝶Dt.ToString(),
+    		GlobalState.触覚_蛾Dt.ToString()
     	};
 
     	private static HashSet<string> 触覚虫 = new HashSet<string>
     	{
-    		Sta.触覚_線Dt.ToString(),
-    		Sta.触覚_節Dt.ToString(),
-    		Sta.触覚_甲Dt.ToString(),
-    		Sta.触覚_蝶Dt.ToString(),
-    		Sta.触覚_蛾Dt.ToString()
+    		GlobalState.触覚_線Dt.ToString(),
+    		GlobalState.触覚_節Dt.ToString(),
+    		GlobalState.触覚_甲Dt.ToString(),
+    		GlobalState.触覚_蝶Dt.ToString(),
+    		GlobalState.触覚_蛾Dt.ToString()
     	};
 
     	private static HashSet<string> 触覚蟲 = new HashSet<string>
     	{
-    		Sta.触覚_線Dt.ToString(),
-    		Sta.触覚_節Dt.ToString(),
-    		Sta.触覚_甲Dt.ToString(),
-    		Sta.触覚_蝶Dt.ToString(),
-    		Sta.触覚_蛾Dt.ToString()
+    		GlobalState.触覚_線Dt.ToString(),
+    		GlobalState.触覚_節Dt.ToString(),
+    		GlobalState.触覚_甲Dt.ToString(),
+    		GlobalState.触覚_蝶Dt.ToString(),
+    		GlobalState.触覚_蛾Dt.ToString()
     	};
 
     	private static HashSet<string> 背中人 = new HashSet<string>
     	{
-    		Sta.背中_羽Dt.ToString(),
-    		Sta.背中_甲Dt.ToString(),
-    		Sta.背中_光Dt.ToString()
+    		GlobalState.背中_羽Dt.ToString(),
+    		GlobalState.背中_甲Dt.ToString(),
+    		GlobalState.背中_光Dt.ToString()
     	};
 
-    	private static HashSet<string> 背中獣 = new HashSet<string> { Sta.背中_羽Dt.ToString() };
+    	private static HashSet<string> 背中獣 = new HashSet<string> { GlobalState.背中_羽Dt.ToString() };
 
     	private static HashSet<string> 尾人 = new HashSet<string>
     	{
-    		Sta.尾_猫Dt.ToString(),
-    		Sta.尾_犬Dt.ToString(),
-    		Sta.尾_狐Dt.ToString(),
-    		Sta.尾_馬Dt.ToString(),
-    		Sta.尾_牛Dt.ToString(),
-    		Sta.尾_龍Dt.ToString(),
-    		Sta.尾_竜Dt.ToString(),
-    		Sta.尾_悪Dt.ToString(),
-    		Sta.尾_淫Dt.ToString(),
-    		Sta.尾_鳥Dt.ToString(),
-    		Sta.尾_虫Dt.ToString(),
-    		Sta.尾_蜘Dt.ToString(),
-    		Sta.尾_蠍Dt.ToString(),
-    		Sta.尾_蛇Dt.ToString(),
-    		Sta.尾_腓Dt.ToString(),
-    		Sta.尾_短Dt.ToString(),
-    		Sta.尾_ヘDt.ToString(),
-    		Sta.尾_ガDt.ToString(),
-    		Sta.尾_ウDt.ToString(),
-    		Sta.尾_魚Dt.ToString(),
-    		Sta.尾_鯨Dt.ToString(),
-    		Sta.尾_蟲Dt.ToString(),
-    		Sta.尾_根Dt.ToString(),
-    		Sta.鳳凰Dt.ToString()
+    		GlobalState.尾_猫Dt.ToString(),
+    		GlobalState.尾_犬Dt.ToString(),
+    		GlobalState.尾_狐Dt.ToString(),
+    		GlobalState.尾_馬Dt.ToString(),
+    		GlobalState.尾_牛Dt.ToString(),
+    		GlobalState.尾_龍Dt.ToString(),
+    		GlobalState.尾_竜Dt.ToString(),
+    		GlobalState.尾_悪Dt.ToString(),
+    		GlobalState.尾_淫Dt.ToString(),
+    		GlobalState.尾_鳥Dt.ToString(),
+    		GlobalState.尾_虫Dt.ToString(),
+    		GlobalState.尾_蜘Dt.ToString(),
+    		GlobalState.尾_蠍Dt.ToString(),
+    		GlobalState.尾_蛇Dt.ToString(),
+    		GlobalState.尾_腓Dt.ToString(),
+    		GlobalState.尾_短Dt.ToString(),
+    		GlobalState.尾_ヘDt.ToString(),
+    		GlobalState.尾_ガDt.ToString(),
+    		GlobalState.尾_ウDt.ToString(),
+    		GlobalState.尾_魚Dt.ToString(),
+    		GlobalState.尾_鯨Dt.ToString(),
+    		GlobalState.尾_蟲Dt.ToString(),
+    		GlobalState.尾_根Dt.ToString(),
+    		GlobalState.鳳凰Dt.ToString()
     	};
 
     	private static HashSet<string> 尾獣 = new HashSet<string>
     	{
-    		Sta.尾_猫Dt.ToString(),
-    		Sta.尾_犬Dt.ToString(),
-    		Sta.尾_狐Dt.ToString(),
-    		Sta.尾_馬Dt.ToString(),
-    		Sta.尾_牛Dt.ToString(),
-    		Sta.尾_龍Dt.ToString(),
-    		Sta.尾_竜Dt.ToString(),
-    		Sta.尾_悪Dt.ToString(),
-    		Sta.尾_淫Dt.ToString(),
-    		Sta.尾_鳥Dt.ToString(),
-    		Sta.尾_虫Dt.ToString(),
-    		Sta.尾_蜘Dt.ToString(),
-    		Sta.尾_蠍Dt.ToString(),
-    		Sta.尾_蛇Dt.ToString(),
-    		Sta.尾_腓Dt.ToString(),
-    		Sta.尾_短Dt.ToString(),
-    		Sta.尾_ヘDt.ToString(),
-    		Sta.尾_ガDt.ToString(),
-    		Sta.尾_ウDt.ToString(),
-    		Sta.尾_魚Dt.ToString(),
-    		Sta.尾_鯨Dt.ToString(),
-    		Sta.尾_蟲Dt.ToString(),
-    		Sta.尾_根Dt.ToString(),
-    		Sta.鳳凰Dt.ToString()
+    		GlobalState.尾_猫Dt.ToString(),
+    		GlobalState.尾_犬Dt.ToString(),
+    		GlobalState.尾_狐Dt.ToString(),
+    		GlobalState.尾_馬Dt.ToString(),
+    		GlobalState.尾_牛Dt.ToString(),
+    		GlobalState.尾_龍Dt.ToString(),
+    		GlobalState.尾_竜Dt.ToString(),
+    		GlobalState.尾_悪Dt.ToString(),
+    		GlobalState.尾_淫Dt.ToString(),
+    		GlobalState.尾_鳥Dt.ToString(),
+    		GlobalState.尾_虫Dt.ToString(),
+    		GlobalState.尾_蜘Dt.ToString(),
+    		GlobalState.尾_蠍Dt.ToString(),
+    		GlobalState.尾_蛇Dt.ToString(),
+    		GlobalState.尾_腓Dt.ToString(),
+    		GlobalState.尾_短Dt.ToString(),
+    		GlobalState.尾_ヘDt.ToString(),
+    		GlobalState.尾_ガDt.ToString(),
+    		GlobalState.尾_ウDt.ToString(),
+    		GlobalState.尾_魚Dt.ToString(),
+    		GlobalState.尾_鯨Dt.ToString(),
+    		GlobalState.尾_蟲Dt.ToString(),
+    		GlobalState.尾_根Dt.ToString(),
+    		GlobalState.鳳凰Dt.ToString()
     	};
 
     	private static HashSet<string> 尾蜘 = new HashSet<string>
     	{
-    		Sta.尾_猫Dt.ToString(),
-    		Sta.尾_犬Dt.ToString(),
-    		Sta.尾_狐Dt.ToString(),
-    		Sta.尾_馬Dt.ToString(),
-    		Sta.尾_牛Dt.ToString(),
-    		Sta.尾_龍Dt.ToString(),
-    		Sta.尾_竜Dt.ToString(),
-    		Sta.尾_悪Dt.ToString(),
-    		Sta.尾_淫Dt.ToString(),
-    		Sta.尾_鳥Dt.ToString(),
-    		Sta.尾_虫Dt.ToString(),
-    		Sta.尾_蜘Dt.ToString(),
-    		Sta.尾_蠍Dt.ToString(),
-    		Sta.尾_蛇Dt.ToString(),
-    		Sta.尾_腓Dt.ToString(),
-    		Sta.尾_短Dt.ToString(),
-    		Sta.尾_ヘDt.ToString(),
-    		Sta.尾_ガDt.ToString(),
-    		Sta.尾_ウDt.ToString(),
-    		Sta.尾_魚Dt.ToString(),
-    		Sta.尾_鯨Dt.ToString(),
-    		Sta.尾_蟲Dt.ToString(),
-    		Sta.尾_根Dt.ToString()
+    		GlobalState.尾_猫Dt.ToString(),
+    		GlobalState.尾_犬Dt.ToString(),
+    		GlobalState.尾_狐Dt.ToString(),
+    		GlobalState.尾_馬Dt.ToString(),
+    		GlobalState.尾_牛Dt.ToString(),
+    		GlobalState.尾_龍Dt.ToString(),
+    		GlobalState.尾_竜Dt.ToString(),
+    		GlobalState.尾_悪Dt.ToString(),
+    		GlobalState.尾_淫Dt.ToString(),
+    		GlobalState.尾_鳥Dt.ToString(),
+    		GlobalState.尾_虫Dt.ToString(),
+    		GlobalState.尾_蜘Dt.ToString(),
+    		GlobalState.尾_蠍Dt.ToString(),
+    		GlobalState.尾_蛇Dt.ToString(),
+    		GlobalState.尾_腓Dt.ToString(),
+    		GlobalState.尾_短Dt.ToString(),
+    		GlobalState.尾_ヘDt.ToString(),
+    		GlobalState.尾_ガDt.ToString(),
+    		GlobalState.尾_ウDt.ToString(),
+    		GlobalState.尾_魚Dt.ToString(),
+    		GlobalState.尾_鯨Dt.ToString(),
+    		GlobalState.尾_蟲Dt.ToString(),
+    		GlobalState.尾_根Dt.ToString()
     	};
 
     	private static HashSet<string> 尾蠍 = new HashSet<string>
     	{
-    		Sta.尾_猫Dt.ToString(),
-    		Sta.尾_犬Dt.ToString(),
-    		Sta.尾_狐Dt.ToString(),
-    		Sta.尾_馬Dt.ToString(),
-    		Sta.尾_牛Dt.ToString(),
-    		Sta.尾_龍Dt.ToString(),
-    		Sta.尾_竜Dt.ToString(),
-    		Sta.尾_悪Dt.ToString(),
-    		Sta.尾_淫Dt.ToString(),
-    		Sta.尾_鳥Dt.ToString(),
-    		Sta.尾_虫Dt.ToString(),
-    		Sta.尾_蜘Dt.ToString(),
-    		Sta.尾_蠍Dt.ToString(),
-    		Sta.尾_蛇Dt.ToString(),
-    		Sta.尾_腓Dt.ToString(),
-    		Sta.尾_短Dt.ToString(),
-    		Sta.尾_ヘDt.ToString(),
-    		Sta.尾_ガDt.ToString(),
-    		Sta.尾_ウDt.ToString(),
-    		Sta.尾_魚Dt.ToString(),
-    		Sta.尾_鯨Dt.ToString(),
-    		Sta.尾_蟲Dt.ToString(),
-    		Sta.尾_根Dt.ToString()
+    		GlobalState.尾_猫Dt.ToString(),
+    		GlobalState.尾_犬Dt.ToString(),
+    		GlobalState.尾_狐Dt.ToString(),
+    		GlobalState.尾_馬Dt.ToString(),
+    		GlobalState.尾_牛Dt.ToString(),
+    		GlobalState.尾_龍Dt.ToString(),
+    		GlobalState.尾_竜Dt.ToString(),
+    		GlobalState.尾_悪Dt.ToString(),
+    		GlobalState.尾_淫Dt.ToString(),
+    		GlobalState.尾_鳥Dt.ToString(),
+    		GlobalState.尾_虫Dt.ToString(),
+    		GlobalState.尾_蜘Dt.ToString(),
+    		GlobalState.尾_蠍Dt.ToString(),
+    		GlobalState.尾_蛇Dt.ToString(),
+    		GlobalState.尾_腓Dt.ToString(),
+    		GlobalState.尾_短Dt.ToString(),
+    		GlobalState.尾_ヘDt.ToString(),
+    		GlobalState.尾_ガDt.ToString(),
+    		GlobalState.尾_ウDt.ToString(),
+    		GlobalState.尾_魚Dt.ToString(),
+    		GlobalState.尾_鯨Dt.ToString(),
+    		GlobalState.尾_蟲Dt.ToString(),
+    		GlobalState.尾_根Dt.ToString()
     	};
 
     	private static HashSet<string> 尾魚 = new HashSet<string>
     	{
-    		Sta.尾_龍Dt.ToString(),
-    		Sta.尾_竜Dt.ToString(),
-    		Sta.尾_鳥Dt.ToString(),
-    		Sta.尾_虫Dt.ToString(),
-    		Sta.尾_蜘Dt.ToString(),
-    		Sta.尾_魚Dt.ToString(),
-    		Sta.尾_鯨Dt.ToString()
+    		GlobalState.尾_龍Dt.ToString(),
+    		GlobalState.尾_竜Dt.ToString(),
+    		GlobalState.尾_鳥Dt.ToString(),
+    		GlobalState.尾_虫Dt.ToString(),
+    		GlobalState.尾_蜘Dt.ToString(),
+    		GlobalState.尾_魚Dt.ToString(),
+    		GlobalState.尾_鯨Dt.ToString()
     	};
 
-    	private static HashSet<string> 尾鯨 = new HashSet<string> { Sta.尾_鯨Dt.ToString() };
+    	private static HashSet<string> 尾鯨 = new HashSet<string> { GlobalState.尾_鯨Dt.ToString() };
 
     	private static HashSet<string> 尾蛇 = new HashSet<string>
     	{
-    		Sta.尾_ヘDt.ToString(),
-    		Sta.尾_ガDt.ToString(),
-    		Sta.尾_ウDt.ToString(),
-    		Sta.尾_蟲Dt.ToString()
+    		GlobalState.尾_ヘDt.ToString(),
+    		GlobalState.尾_ガDt.ToString(),
+    		GlobalState.尾_ウDt.ToString(),
+    		GlobalState.尾_蟲Dt.ToString()
     	};
 
     	private static HashSet<string> 尾蟲 = new HashSet<string>
     	{
-    		Sta.尾_ヘDt.ToString(),
-    		Sta.尾_ガDt.ToString(),
-    		Sta.尾_ウDt.ToString(),
-    		Sta.尾_蟲Dt.ToString()
+    		GlobalState.尾_ヘDt.ToString(),
+    		GlobalState.尾_ガDt.ToString(),
+    		GlobalState.尾_ウDt.ToString(),
+    		GlobalState.尾_蟲Dt.ToString()
     	};
 
     	private static HashSet<string> 根中 = new HashSet<string>
     	{
-    		Sta.尾_猫Dt.ToString(),
-    		Sta.尾_悪Dt.ToString(),
-    		Sta.尾_淫Dt.ToString(),
-    		Sta.尾_根Dt.ToString()
+    		GlobalState.尾_猫Dt.ToString(),
+    		GlobalState.尾_悪Dt.ToString(),
+    		GlobalState.尾_淫Dt.ToString(),
+    		GlobalState.尾_根Dt.ToString()
     	};
 
     	private static HashSet<string> 尾先ヘ = new HashSet<string>
     	{
-    		Sta.尾鰭_魚Dt.ToString(),
-    		Sta.尾鰭_鯨Dt.ToString()
+    		GlobalState.尾鰭_魚Dt.ToString(),
+    		GlobalState.尾鰭_鯨Dt.ToString()
     	};
 
     	private static HashSet<string> 尾先ウ = new HashSet<string>
     	{
-    		Sta.尾鰭_魚Dt.ToString(),
-    		Sta.尾鰭_鯨Dt.ToString()
+    		GlobalState.尾鰭_魚Dt.ToString(),
+    		GlobalState.尾鰭_鯨Dt.ToString()
     	};
 
     	private static HashSet<string> 尾先魚 = new HashSet<string>
     	{
-    		Sta.尾鰭_魚Dt.ToString(),
-    		Sta.尾鰭_鯨Dt.ToString()
+    		GlobalState.尾鰭_魚Dt.ToString(),
+    		GlobalState.尾鰭_鯨Dt.ToString()
     	};
 
     	private static HashSet<string> 尾先鯨 = new HashSet<string>
     	{
-    		Sta.尾鰭_魚Dt.ToString(),
-    		Sta.尾鰭_鯨Dt.ToString()
+    		GlobalState.尾鰭_魚Dt.ToString(),
+    		GlobalState.尾鰭_鯨Dt.ToString()
     	};
 
-    	private static HashSet<string> 頭頂後 = new HashSet<string> { Sta.頭頂後_宇Dt.ToString() };
+    	private static HashSet<string> 頭頂後 = new HashSet<string> { GlobalState.頭頂後_宇Dt.ToString() };
 
     	private static HashSet<string> UpperArm人 = new HashSet<string>
     	{
-    		Sta.鰭_魚Dt.ToString(),
-    		Sta.鰭_豚Dt.ToString(),
-    		Sta.鰭_鯨Dt.ToString(),
-    		Sta.触肢_肢蠍Dt.ToString(),
-    		Sta.UpperArm_人Dt.ToString(),
-    		Sta.UpperArm_鳥Dt.ToString(),
-    		Sta.UpperArm_蝙Dt.ToString()
+    		GlobalState.鰭_魚Dt.ToString(),
+    		GlobalState.鰭_豚Dt.ToString(),
+    		GlobalState.鰭_鯨Dt.ToString(),
+    		GlobalState.触肢_肢蠍Dt.ToString(),
+    		GlobalState.UpperArm_人Dt.ToString(),
+    		GlobalState.UpperArm_鳥Dt.ToString(),
+    		GlobalState.UpperArm_蝙Dt.ToString()
     	};
 
     	private static HashSet<string> UpperArm獣 = new HashSet<string>
     	{
-    		Sta.触肢_肢蠍Dt.ToString(),
-    		Sta.UpperArm_獣Dt.ToString(),
-    		Sta.UpperArm_蹄Dt.ToString(),
-    		Sta.Leg_鳥Dt.ToString(),
-    		Sta.Leg_竜Dt.ToString()
+    		GlobalState.触肢_肢蠍Dt.ToString(),
+    		GlobalState.UpperArm_獣Dt.ToString(),
+    		GlobalState.UpperArm_蹄Dt.ToString(),
+    		GlobalState.Leg_鳥Dt.ToString(),
+    		GlobalState.Leg_竜Dt.ToString()
     	};
 
     	private static HashSet<string> LowerArm人 = new HashSet<string>
     	{
-    		Sta.LowerArm_人Dt.ToString(),
-    		Sta.LowerArm_獣Dt.ToString()
+    		GlobalState.LowerArm_人Dt.ToString(),
+    		GlobalState.LowerArm_獣Dt.ToString()
     	};
 
-    	private static HashSet<string> LowerArm鳥 = new HashSet<string> { Sta.LowerArm_鳥Dt.ToString() };
+    	private static HashSet<string> LowerArm鳥 = new HashSet<string> { GlobalState.LowerArm_鳥Dt.ToString() };
 
-    	private static HashSet<string> LowerArm蝙 = new HashSet<string> { Sta.LowerArm_蝙Dt.ToString() };
+    	private static HashSet<string> LowerArm蝙 = new HashSet<string> { GlobalState.LowerArm_蝙Dt.ToString() };
 
-    	private static HashSet<string> LowerArm獣 = new HashSet<string> { Sta.LowerArm_獣Dt.ToString() };
+    	private static HashSet<string> LowerArm獣 = new HashSet<string> { GlobalState.LowerArm_獣Dt.ToString() };
 
-    	private static HashSet<string> LowerArm蹄 = new HashSet<string> { Sta.LowerArm_蹄Dt.ToString() };
+    	private static HashSet<string> LowerArm蹄 = new HashSet<string> { GlobalState.LowerArm_蹄Dt.ToString() };
 
-    	private static HashSet<string> 手人 = new HashSet<string> { Sta.手_人Dt.ToString() };
+    	private static HashSet<string> 手人 = new HashSet<string> { GlobalState.手_人Dt.ToString() };
 
-    	private static HashSet<string> 手鳥 = new HashSet<string> { Sta.手_鳥Dt.ToString() };
+    	private static HashSet<string> 手鳥 = new HashSet<string> { GlobalState.手_鳥Dt.ToString() };
 
-    	private static HashSet<string> 手蝙 = new HashSet<string> { Sta.手_蝙Dt.ToString() };
+    	private static HashSet<string> 手蝙 = new HashSet<string> { GlobalState.手_蝙Dt.ToString() };
 
-    	private static HashSet<string> 手獣 = new HashSet<string> { Sta.手_獣Dt.ToString() };
+    	private static HashSet<string> 手獣 = new HashSet<string> { GlobalState.手_獣Dt.ToString() };
 
     	private static HashSet<string> 手蹄 = new HashSet<string>
     	{
-    		Sta.手_馬Dt.ToString(),
-    		Sta.手_牛Dt.ToString()
+    		GlobalState.手_馬Dt.ToString(),
+    		GlobalState.手_牛Dt.ToString()
     	};
 
-    	private static HashSet<string> 虫鎌 = new HashSet<string> { Sta.虫鎌Dt.ToString() };
+    	private static HashSet<string> 虫鎌 = new HashSet<string> { GlobalState.虫鎌Dt.ToString() };
 
-    	private static HashSet<string> 脚人 = new HashSet<string> { Sta.Leg_人Dt.ToString() };
+    	private static HashSet<string> 脚人 = new HashSet<string> { GlobalState.Leg_人Dt.ToString() };
 
     	private static HashSet<string> 脚獣 = new HashSet<string>
     	{
-    		Sta.Leg_獣Dt.ToString(),
-    		Sta.Leg_蹄Dt.ToString(),
-    		Sta.Leg_鳥Dt.ToString(),
-    		Sta.Leg_竜Dt.ToString()
+    		GlobalState.Leg_獣Dt.ToString(),
+    		GlobalState.Leg_蹄Dt.ToString(),
+    		GlobalState.Leg_鳥Dt.ToString(),
+    		GlobalState.Leg_竜Dt.ToString()
     	};
 
     	private static HashSet<string> 脚蹄 = new HashSet<string>
     	{
-    		Sta.Leg_獣Dt.ToString(),
-    		Sta.Leg_蹄Dt.ToString(),
-    		Sta.Leg_鳥Dt.ToString(),
-    		Sta.Leg_竜Dt.ToString()
+    		GlobalState.Leg_獣Dt.ToString(),
+    		GlobalState.Leg_蹄Dt.ToString(),
+    		GlobalState.Leg_鳥Dt.ToString(),
+    		GlobalState.Leg_竜Dt.ToString()
     	};
 
     	private static HashSet<string> 脚鳥 = new HashSet<string>
     	{
-    		Sta.Leg_獣Dt.ToString(),
-    		Sta.Leg_蹄Dt.ToString(),
-    		Sta.Leg_鳥Dt.ToString(),
-    		Sta.Leg_竜Dt.ToString()
+    		GlobalState.Leg_獣Dt.ToString(),
+    		GlobalState.Leg_蹄Dt.ToString(),
+    		GlobalState.Leg_鳥Dt.ToString(),
+    		GlobalState.Leg_竜Dt.ToString()
     	};
 
     	private static HashSet<string> 脚竜 = new HashSet<string>
     	{
-    		Sta.Leg_獣Dt.ToString(),
-    		Sta.Leg_蹄Dt.ToString(),
-    		Sta.Leg_鳥Dt.ToString(),
-    		Sta.Leg_竜Dt.ToString()
+    		GlobalState.Leg_獣Dt.ToString(),
+    		GlobalState.Leg_蹄Dt.ToString(),
+    		GlobalState.Leg_鳥Dt.ToString(),
+    		GlobalState.Leg_竜Dt.ToString()
     	};
 
-    	private static HashSet<string> 足人 = new HashSet<string> { Sta.足_人Dt.ToString() };
+    	private static HashSet<string> 足人 = new HashSet<string> { GlobalState.足_人Dt.ToString() };
 
     	private static HashSet<string> 足獣 = new HashSet<string>
     	{
-    		Sta.足_獣Dt.ToString(),
-    		Sta.足_馬Dt.ToString(),
-    		Sta.足_牛Dt.ToString(),
-    		Sta.足_鳥Dt.ToString(),
-    		Sta.足_竜Dt.ToString()
+    		GlobalState.足_獣Dt.ToString(),
+    		GlobalState.足_馬Dt.ToString(),
+    		GlobalState.足_牛Dt.ToString(),
+    		GlobalState.足_鳥Dt.ToString(),
+    		GlobalState.足_竜Dt.ToString()
     	};
 
     	private static HashSet<string> 足蹄 = new HashSet<string>
     	{
-    		Sta.足_獣Dt.ToString(),
-    		Sta.足_馬Dt.ToString(),
-    		Sta.足_牛Dt.ToString(),
-    		Sta.足_鳥Dt.ToString(),
-    		Sta.足_竜Dt.ToString()
+    		GlobalState.足_獣Dt.ToString(),
+    		GlobalState.足_馬Dt.ToString(),
+    		GlobalState.足_牛Dt.ToString(),
+    		GlobalState.足_鳥Dt.ToString(),
+    		GlobalState.足_竜Dt.ToString()
     	};
 
     	private static HashSet<string> 足鳥 = new HashSet<string>
     	{
-    		Sta.足_獣Dt.ToString(),
-    		Sta.足_馬Dt.ToString(),
-    		Sta.足_牛Dt.ToString(),
-    		Sta.足_鳥Dt.ToString(),
-    		Sta.足_竜Dt.ToString()
+    		GlobalState.足_獣Dt.ToString(),
+    		GlobalState.足_馬Dt.ToString(),
+    		GlobalState.足_牛Dt.ToString(),
+    		GlobalState.足_鳥Dt.ToString(),
+    		GlobalState.足_竜Dt.ToString()
     	};
 
     	private static HashSet<string> 足竜 = new HashSet<string>
     	{
-    		Sta.足_獣Dt.ToString(),
-    		Sta.足_馬Dt.ToString(),
-    		Sta.足_牛Dt.ToString(),
-    		Sta.足_鳥Dt.ToString(),
-    		Sta.足_竜Dt.ToString()
+    		GlobalState.足_獣Dt.ToString(),
+    		GlobalState.足_馬Dt.ToString(),
+    		GlobalState.足_牛Dt.ToString(),
+    		GlobalState.足_鳥Dt.ToString(),
+    		GlobalState.足_竜Dt.ToString()
     	};
 
     	private static HashSet<string> 前翅甲軸1 = new HashSet<string>();
@@ -701,27 +701,27 @@ namespace SlaveMatrix
 
     	private static HashSet<string> 蔦 = new HashSet<string>
     	{
-    		Sta.葉_披Dt.ToString(),
-    		Sta.葉_心Dt.ToString()
+    		GlobalState.葉_披Dt.ToString(),
+    		GlobalState.葉_心Dt.ToString()
     	};
 
-    	private static HashSet<string> 蔦先 = new HashSet<string> { Sta.虫鎌Dt.ToString() };
+    	private static HashSet<string> 蔦先 = new HashSet<string> { GlobalState.虫鎌Dt.ToString() };
 
     	private static HashSet<string> 顔面 = new HashSet<string>
     	{
-    		Sta.顔面_甲Dt.ToString(),
-    		Sta.顔面_虫Dt.ToString(),
-    		Sta.顔面_蟲Dt.ToString()
+    		GlobalState.顔面_甲Dt.ToString(),
+    		GlobalState.顔面_虫Dt.ToString(),
+    		GlobalState.顔面_蟲Dt.ToString()
     	};
 
-    	private static HashSet<string> 大顎基 = new HashSet<string> { Sta.大顎基Dt.ToString() };
+    	private static HashSet<string> 大顎基 = new HashSet<string> { GlobalState.大顎基Dt.ToString() };
 
-    	private static HashSet<string> 大顎 = new HashSet<string> { Sta.大顎Dt.ToString() };
+    	private static HashSet<string> 大顎 = new HashSet<string> { GlobalState.大顎Dt.ToString() };
 
     	private static HashSet<string> 花 = new HashSet<string>
     	{
-    		Sta.花_薔Dt.ToString(),
-    		Sta.花_百Dt.ToString()
+    		GlobalState.花_薔Dt.ToString(),
+    		GlobalState.花_百Dt.ToString()
     	};
 
     	public static Dictionary<ConnectionInfo, HashSet<string>> 接続範囲 = new Dictionary<ConnectionInfo, HashSet<string>>
@@ -1449,19 +1449,19 @@ namespace SlaveMatrix
     	private static 体色 Mix(体色 母方, 体色 父方, double 変異率, WaistD d)
     	{
     		体色 体色2 = new 体色();
-    		switch (RNG.XS.Next(4))
+    		switch (Rng.XS.Next(4))
     		{
     		case 0:
     			foreach (FieldInfo item in from e in 体色t.GetFields()
-    				where e.FieldType.ToString() == Sta.ct
+    				where e.FieldType.ToString() == GlobalState.ct
     				select e)
     			{
-    				item.SetValue(体色2, RNG.XS.NextBool() ? item.GetValue(母方) : item.GetValue(父方));
+    				item.SetValue(体色2, Rng.XS.NextBool() ? item.GetValue(母方) : item.GetValue(父方));
     			}
     			break;
     		case 1:
     			foreach (FieldInfo item2 in from e in 体色t.GetFields()
-    				where e.FieldType.ToString() == Sta.ct
+    				where e.FieldType.ToString() == GlobalState.ct
     				select e)
     			{
     				Color c3 = (Color)item2.GetValue(母方);
@@ -1478,7 +1478,7 @@ namespace SlaveMatrix
     			break;
     		case 2:
     			foreach (FieldInfo item3 in from e in 体色t.GetFields()
-    				where e.FieldType.ToString() == Sta.ct
+    				where e.FieldType.ToString() == GlobalState.ct
     				select e)
     			{
     				Color c5 = (Color)item3.GetValue(母方);
@@ -1495,7 +1495,7 @@ namespace SlaveMatrix
     			break;
     		default:
     			foreach (FieldInfo item4 in from e in 体色t.GetFields()
-    				where e.FieldType.ToString() == Sta.ct
+    				where e.FieldType.ToString() == GlobalState.ct
     				select e)
     			{
     				Color c = (Color)item4.GetValue(母方);
@@ -1506,7 +1506,7 @@ namespace SlaveMatrix
     				}
     				else
     				{
-    					item4.SetValue(体色2, RNG.XS.NextBool() ? c : c2);
+    					item4.SetValue(体色2, Rng.XS.NextBool() ? c : c2);
     				}
     			}
     			break;
@@ -1541,14 +1541,14 @@ namespace SlaveMatrix
     				}
     				else
     				{
-    					体色2.血統.Add(RNG.XS.NextBool() ? text : text2);
+    					体色2.血統.Add(Rng.XS.NextBool() ? text : text2);
     				}
     			}
     		}
     		if (変異率.Lot())
     		{
     			double[] obj = new double[4] { 1.0, 2.0, 8.0, 0.0 };
-    			obj[3] = 500.0 * ((Sta.GameData.祝福 != null && Sta.GameData.祝福.Race == GameText.カーバンクル) ? 0.5 : 1.0);
+    			obj[3] = 500.0 * ((GlobalState.GameData.祝福 != null && GlobalState.GameData.祝福.Race == GameText.カーバンクル) ? 0.5 : 1.0);
     			switch (GeometryUtils.GetRandomIndex(obj))
     			{
     			case 0:
@@ -1557,7 +1557,7 @@ namespace SlaveMatrix
     					break;
     				}
     				foreach (FieldInfo item5 in from e in 体色t.GetFields()
-    					where 体色.変異色.Contains(e.Name) && e.FieldType.ToString() == Sta.ct
+    					where 体色.変異色.Contains(e.Name) && e.FieldType.ToString() == GlobalState.ct
     					select e)
     				{
     					Color color = (Color)item5.GetValue(体色2);
@@ -1587,7 +1587,7 @@ namespace SlaveMatrix
     					break;
     				}
     				foreach (FieldInfo item6 in from e in 体色t.GetFields()
-    					where 体色.変異色.Contains(e.Name) && e.FieldType.ToString() == Sta.ct
+    					where 体色.変異色.Contains(e.Name) && e.FieldType.ToString() == GlobalState.ct
     					select e)
     				{
     					Color color = (Color)item6.GetValue(体色2);
@@ -1617,11 +1617,11 @@ namespace SlaveMatrix
     				{
     					break;
     				}
-    				int num = RNG.XS.Next(3);
-    				int num2 = RNG.XS.Next(3);
-    				int num3 = RNG.XS.Next(3);
+    				int num = Rng.XS.Next(3);
+    				int num2 = Rng.XS.Next(3);
+    				int num3 = Rng.XS.Next(3);
     				foreach (FieldInfo item7 in from e in 体色t.GetFields()
-    					where 体色.変異色.Contains(e.Name) && e.FieldType.ToString() == Sta.ct
+    					where 体色.変異色.Contains(e.Name) && e.FieldType.ToString() == GlobalState.ct
     					select e)
     				{
     					Color color = (Color)item7.GetValue(体色2);
@@ -1675,7 +1675,7 @@ namespace SlaveMatrix
     			}
     			else
     			{
-    				switch (RNG.XS.Next(6))
+    				switch (Rng.XS.Next(6))
     				{
     				case 0:
     					体色2.縦目 = 体色2.目左;
@@ -1741,7 +1741,7 @@ namespace SlaveMatrix
     		}
     		else
     		{
-    			switch (RNG.XS.Next(6))
+    			switch (Rng.XS.Next(6))
     			{
     			case 0:
     				体色2.縦目 = 体色2.目左;
@@ -1794,7 +1794,7 @@ namespace SlaveMatrix
 
     	private static WaistD Mix(WaistD 母方, WaistD 父方, double 変異率, bool 原種モード)
     	{
-    		int i = (原種モード ? RNG.XS.Next(3) : RNG.XS.Next(7));
+    		int i = (原種モード ? Rng.XS.Next(3) : Rng.XS.Next(7));
     		Dictionary<ConnectionInfo, List<Type>> 接続構成 = Get接続構成(母方, 父方);
     		Type[] 要素構成 = Get要素構成(母方, 父方);
     		HeadD HeadD2 = Mix<HeadD>(母方, 父方, i, 原種モード);
@@ -1869,7 +1869,7 @@ namespace SlaveMatrix
     		Waist.AlignC();
     		Waist.胴接続(TorsoD2);
     		TorsoD2.肥大 = Waist.肥大;
-    		if (RNG.XS.NextBool())
+    		if (Rng.XS.NextBool())
     		{
     			ElementData elementData = SlaveMatrix.GameClasses._Con.Get後髪0R();
     			基髪D2.後髪接続(elementData);
@@ -1881,7 +1881,7 @@ namespace SlaveMatrix
     				elementData.接続(母方, 父方, i, ConnectionInfo.BackHair0_肢系_左4_接続, 要素構成, 接続構成, 変異率, 原種モード);
     				elementData.接続(母方, 父方, i, ConnectionInfo.BackHair0_肢系_左5_接続, 要素構成, 接続構成, 変異率, 原種モード);
     			}
-    			if ((elementData is BackHair0_ジグD || elementData is BackHair0_ハネD || elementData is BackHair0_パツD || elementData is BackHair0_カルD || elementData is BackHair0_肢系D) && RNG.XS.NextBool())
+    			if ((elementData is BackHair0_ジグD || elementData is BackHair0_ハネD || elementData is BackHair0_パツD || elementData is BackHair0_カルD || elementData is BackHair0_肢系D) && Rng.XS.NextBool())
     			{
     				ElementData e2 = SlaveMatrix.GameClasses._Con.Get後髪1R();
     				基髪D2.後髪接続(e2);
@@ -1909,7 +1909,7 @@ namespace SlaveMatrix
     					後髪0D2.接続(母方, 父方, i, ConnectionInfo.BackHair0_肢系_左4_接続, 要素構成, 接続構成, 変異率, 原種モード);
     					後髪0D2.接続(母方, 父方, i, ConnectionInfo.BackHair0_肢系_左5_接続, 要素構成, 接続構成, 変異率, 原種モード);
     				}
-    				if ((後髪0D2 is BackHair0_ジグD || 後髪0D2 is BackHair0_ハネD || 後髪0D2 is BackHair0_パツD || 後髪0D2 is BackHair0_カルD || 後髪0D2 is BackHair0_肢系D) && RNG.XS.NextBool())
+    				if ((後髪0D2 is BackHair0_ジグD || 後髪0D2 is BackHair0_ハネD || 後髪0D2 is BackHair0_パツD || 後髪0D2 is BackHair0_カルD || 後髪0D2 is BackHair0_肢系D) && Rng.XS.NextBool())
     				{
     					BackHair1D 後髪1D2 = Mix<BackHair1D>(母方, 父方, i, 原種モード);
     					if (後髪1D2 != null)
@@ -1919,7 +1919,7 @@ namespace SlaveMatrix
     					}
     				}
     			}
-    			else if (RNG.XS.NextBool())
+    			else if (Rng.XS.NextBool())
     			{
     				BackHair1D 後髪1D3 = Mix<BackHair1D>(母方, 父方, i, 原種モード);
     				if (後髪1D3 != null)
@@ -1952,7 +1952,7 @@ namespace SlaveMatrix
     		}
     		if (flag && flag2)
     		{
-    			if (RNG.XS.NextBool())
+    			if (Rng.XS.NextBool())
     			{
     				双目D2 = Mix<双目D>(母方, 父方, 右: false, i, 原種モード);
     				双瞼D 双瞼D2 = Mix<双瞼D>(母方, 父方, 右: false, i, 原種モード);
@@ -2177,7 +2177,7 @@ namespace SlaveMatrix
     			if (eleD3 != null)
     			{
     				t = eleD3.GetType().ToString();
-    				if (!ChestD2.背中_接続.Any((ElementData e) => e.GetType().ToString() == t) && RNG.XS.NextBool())
+    				if (!ChestD2.背中_接続.Any((ElementData e) => e.GetType().ToString() == t) && Rng.XS.NextBool())
     				{
     					ChestD2.背中接続(eleD3);
     				}
@@ -2186,7 +2186,7 @@ namespace SlaveMatrix
     			if (eleD3 != null)
     			{
     				t = eleD3.GetType().ToString();
-    				if (!ChestD2.背中_接続.Any((ElementData e) => e.GetType().ToString() == t) && RNG.XS.NextBool())
+    				if (!ChestD2.背中_接続.Any((ElementData e) => e.GetType().ToString() == t) && Rng.XS.NextBool())
     				{
     					ChestD2.背中接続(eleD3);
     				}
@@ -2195,7 +2195,7 @@ namespace SlaveMatrix
     			if (eleD3 != null)
     			{
     				t = eleD3.GetType().ToString();
-    				if (!ChestD2.背中_接続.Any((ElementData e) => e.GetType().ToString() == t) && RNG.XS.NextBool())
+    				if (!ChestD2.背中_接続.Any((ElementData e) => e.GetType().ToString() == t) && Rng.XS.NextBool())
     				{
     					ChestD2.背中接続(eleD3);
     				}
@@ -2361,8 +2361,8 @@ namespace SlaveMatrix
     					int num11 = 2;
     					int num12 = 母方.EnumEleD().Count((ElementData e) => e is 長胴D);
     					int num13 = 父方.EnumEleD().Count((ElementData e) => e is 長胴D);
-    					num11 = (RNG.XS.NextBool() ? ((int)((double)(num12 + num13) * 0.5)) : ((!RNG.XS.NextBool()) ? num13 : num12));
-    					num11 = (num11 + RNG.XS.NextSign() * RNG.XS.Next(4)).Clamp(0, 50);
+    					num11 = (Rng.XS.NextBool() ? ((int)((double)(num12 + num13) * 0.5)) : ((!Rng.XS.NextBool()) ? num13 : num12));
+    					num11 = (num11 + Rng.XS.NextSign() * Rng.XS.Next(4)).Clamp(0, 50);
     					for (int l = 0; l < num11; l++)
     					{
     						Torso_蛇D2.Torso接続(Torso_蛇D2 = (Torso_蛇D)長胴D2.Copy());
@@ -2458,8 +2458,8 @@ namespace SlaveMatrix
     					int num19 = 2;
     					int num20 = 母方.EnumEleD().Count((ElementData e) => e is 長胴D);
     					int num21 = 父方.EnumEleD().Count((ElementData e) => e is 長胴D);
-    					num19 = (RNG.XS.NextBool() ? ((int)((double)(num20 + num21) * 0.5)) : ((!RNG.XS.NextBool()) ? num21 : num20));
-    					num19 = (num19 + RNG.XS.NextSign() * RNG.XS.Next(4)).Clamp(0, 50);
+    					num19 = (Rng.XS.NextBool() ? ((int)((double)(num20 + num21) * 0.5)) : ((!Rng.XS.NextBool()) ? num21 : num20));
+    					num19 = (num19 + Rng.XS.NextSign() * Rng.XS.Next(4)).Clamp(0, 50);
     					for (int m = 0; m < num19; m++)
     					{
     						Torso_蟲D2.Torso接続(Torso_蟲D2 = (Torso_蟲D)長胴D3.Copy());
@@ -2547,7 +2547,7 @@ namespace SlaveMatrix
     					四足腰D2.肥大 = Waist.肥大;
     					if ((腰肌D2.淫タトゥ_ハート_タトゥ右1_表示 || 腰肌D2.淫タトゥ_ハート_タトゥ右2_表示 || 腰肌D2.淫タトゥ_ハート_タトゥ左1_表示 || 腰肌D2.淫タトゥ_ハート_タトゥ左2_表示) && (腰肌D2.植タトゥ_タトゥ左_表示 || 腰肌D2.植タトゥ_タトゥ右_表示))
     					{
-    						if (RNG.XS.NextBool())
+    						if (Rng.XS.NextBool())
     						{
     							腰肌D2.淫タトゥ_ハート_タトゥ右1_表示 = true;
     							腰肌D2.淫タトゥ_ハート_タトゥ右2_表示 = true;
@@ -3067,7 +3067,7 @@ namespace SlaveMatrix
     		};
     		if (半身 != null)
     		{
-    			if (原種モード || RNG.XS.NextBool() || 半身 is 単足_植D || 半身 is 単足_粘D)
+    			if (原種モード || Rng.XS.NextBool() || 半身 is 単足_植D || 半身 is 単足_粘D)
     			{
     				action();
     			}
@@ -3795,7 +3795,7 @@ namespace SlaveMatrix
     		}
     		if (HeadD2.額_接続.Count > 1)
     		{
-    			HeadD2.額_接続.Remove(HeadD2.額_接続[RNG.XS.Next(HeadD2.額_接続.Count)]);
+    			HeadD2.額_接続.Remove(HeadD2.額_接続[Rng.XS.Next(HeadD2.額_接続.Count)]);
     		}
     		bool flag4 = false;
     		flag4 |= 胸腹板D2.虫性_腹板_表示;
@@ -3808,7 +3808,7 @@ namespace SlaveMatrix
     		flag5 = flag5 && flag4;
     		if (flag5)
     		{
-    			flag5 = RNG.XS.NextBool();
+    			flag5 = Rng.XS.NextBool();
     		}
     		胸腹板D2.虫性_腹板_表示 = flag4;
     		胸腹板D2.虫性_縦線_表示 = flag5;
@@ -3818,7 +3818,7 @@ namespace SlaveMatrix
     		腰肌.虫性_腹板2_腹板_表示 = flag4;
     		腰肌.虫性_腹板1_縦線_表示 = flag5;
     		腰肌.虫性_腹板2_縦線_表示 = flag5;
-    		if (RNG.XS.NextBool())
+    		if (Rng.XS.NextBool())
     		{
     			bool flag6 = false;
     			bool flag7 = true;
@@ -3859,9 +3859,9 @@ namespace SlaveMatrix
     				flag7 &= 単目D2.黒目_瞳孔_表示;
     				flag8 |= 単目D2.猫目;
     			}
-    			bool flag9 = RNG.XS.NextBool();
-    			bool flag10 = RNG.XS.NextBool();
-    			bool flag11 = RNG.XS.NextBool();
+    			bool flag9 = Rng.XS.NextBool();
+    			bool flag10 = Rng.XS.NextBool();
+    			bool flag11 = Rng.XS.NextBool();
     			if (双目D2 != null)
     			{
     				双目D2.蛸目 = (flag9 ? flag6 : 双目D2.蛸目);
@@ -3915,7 +3915,7 @@ namespace SlaveMatrix
     		bool flag14 = 基髪D2.頭頂左_接続.IsEleD<触覚D>();
     		if (!flag12 && flag13 && flag14)
     		{
-    			if (RNG.XS.NextBool())
+    			if (Rng.XS.NextBool())
     			{
     				HeadD2.触覚左_接続.RemoveAll((ElementData e) => e is 触覚D);
     				HeadD2.触覚右_接続.RemoveAll((ElementData e) => e is 触覚D);
@@ -3928,7 +3928,7 @@ namespace SlaveMatrix
     		}
     		else if (flag12 && !flag13 && flag14)
     		{
-    			if (RNG.XS.NextBool())
+    			if (Rng.XS.NextBool())
     			{
     				顔面D2.触覚左_接続.RemoveAll((ElementData e) => e is 触覚D);
     				顔面D2.触覚右_接続.RemoveAll((ElementData e) => e is 触覚D);
@@ -3941,7 +3941,7 @@ namespace SlaveMatrix
     		}
     		else if (flag12 && flag13 && !flag14)
     		{
-    			if (RNG.XS.NextBool())
+    			if (Rng.XS.NextBool())
     			{
     				顔面D2.触覚左_接続.RemoveAll((ElementData e) => e is 触覚D);
     				顔面D2.触覚右_接続.RemoveAll((ElementData e) => e is 触覚D);
@@ -3954,7 +3954,7 @@ namespace SlaveMatrix
     		}
     		else if (flag12 && flag13 && flag14)
     		{
-    			switch (RNG.XS.Next(2))
+    			switch (Rng.XS.Next(2))
     			{
     			case 0:
     				HeadD2.触覚左_接続.RemoveAll((ElementData e) => e is 触覚D);
@@ -3991,7 +3991,7 @@ namespace SlaveMatrix
     		}
     		if (腰肌.陰毛_表示 && 腰肌.獣性_獣毛_表示)
     		{
-    			if (RNG.XS.NextBool())
+    			if (Rng.XS.NextBool())
     			{
     				腰肌.陰毛_表示 = false;
     			}
@@ -4002,7 +4002,7 @@ namespace SlaveMatrix
     		}
     		if (縦瞼D2 != null)
     		{
-    			if (RNG.XS.NextBool())
+    			if (Rng.XS.NextBool())
     			{
     				縦瞼D2.瞼左_睫毛1_表示 = 縦瞼D2.瞼右_睫毛1_表示;
     				縦瞼D2.瞼左_睫毛2_表示 = 縦瞼D2.瞼右_睫毛2_表示;
@@ -4012,7 +4012,7 @@ namespace SlaveMatrix
     				縦瞼D2.瞼右_睫毛1_表示 = 縦瞼D2.瞼左_睫毛1_表示;
     				縦瞼D2.瞼右_睫毛2_表示 = 縦瞼D2.瞼左_睫毛2_表示;
     			}
-    			if (RNG.XS.NextBool())
+    			if (Rng.XS.NextBool())
     			{
     				縦瞼D2.瞼左_睫毛1_長さ = 縦瞼D2.瞼右_睫毛1_長さ;
     				縦瞼D2.瞼左_睫毛2_長さ = 縦瞼D2.瞼右_睫毛2_長さ;
@@ -4025,7 +4025,7 @@ namespace SlaveMatrix
     		}
     		if (単瞼D2 != null)
     		{
-    			if (RNG.XS.NextBool())
+    			if (Rng.XS.NextBool())
     			{
     				単瞼D2.睫毛上上左_表示 = 単瞼D2.睫毛上上右_表示;
     				単瞼D2.睫毛上中左_表示 = 単瞼D2.睫毛上中右_表示;
@@ -4041,7 +4041,7 @@ namespace SlaveMatrix
     				単瞼D2.睫毛下上右_表示 = 単瞼D2.睫毛下上左_表示;
     				単瞼D2.睫毛下下右_表示 = 単瞼D2.睫毛下下左_表示;
     			}
-    			if (RNG.XS.NextBool())
+    			if (Rng.XS.NextBool())
     			{
     				単瞼D2.睫毛上上左_長さ = 単瞼D2.睫毛上上右_長さ;
     				単瞼D2.睫毛上中左_長さ = 単瞼D2.睫毛上中右_長さ;
@@ -4060,7 +4060,7 @@ namespace SlaveMatrix
     		}
     		if ((腰肌.淫タトゥ_ハート_タトゥ右1_表示 || 腰肌.淫タトゥ_ハート_タトゥ右2_表示 || 腰肌.淫タトゥ_ハート_タトゥ左1_表示 || 腰肌.淫タトゥ_ハート_タトゥ左2_表示) && (腰肌.植タトゥ_タトゥ左_表示 || 腰肌.植タトゥ_タトゥ右_表示))
     		{
-    			if (RNG.XS.NextBool())
+    			if (Rng.XS.NextBool())
     			{
     				腰肌.淫タトゥ_ハート_タトゥ右1_表示 = true;
     				腰肌.淫タトゥ_ハート_タトゥ右2_表示 = true;
@@ -4106,9 +4106,9 @@ namespace SlaveMatrix
     		FieldInfo[] fields = e.GetType().GetFields();
     		foreach (FieldInfo fieldInfo in fields)
     		{
-    			if (fieldInfo.FieldType.ToString() == Sta.dt && 実数対象.Contains(fieldInfo.Name))
+    			if (fieldInfo.FieldType.ToString() == GlobalState.dt && 実数対象.Contains(fieldInfo.Name))
     			{
-    				fieldInfo.SetValue(e, ((double)fieldInfo.GetValue(e) + (double)RNG.XS.NextSign() * RNG.XS.NextDouble(0.15)).Clamp(0.0, 1.0));
+    				fieldInfo.SetValue(e, ((double)fieldInfo.GetValue(e) + (double)Rng.XS.NextSign() * Rng.XS.NextDouble(0.15)).Clamp(0.0, 1.0));
     			}
     		}
     	}
@@ -4116,7 +4116,7 @@ namespace SlaveMatrix
     	private static void Dou<T>(this T e0, T e1)
     	{
     		FieldInfo[] fields;
-    		switch (RNG.XS.Next(3))
+    		switch (Rng.XS.Next(3))
     		{
     		case 0:
     		{
@@ -4124,12 +4124,12 @@ namespace SlaveMatrix
     			fields = e0.GetType().GetFields();
     			foreach (FieldInfo fieldInfo in fields)
     			{
-    				if (fieldInfo.FieldType.ToString() == Sta.dt && 実数対象.Contains(fieldInfo.Name))
+    				if (fieldInfo.FieldType.ToString() == GlobalState.dt && 実数対象.Contains(fieldInfo.Name))
     				{
     					FieldInfo field = type.GetField(fieldInfo.Name);
-    					if (field != null && field.FieldType.ToString() == Sta.dt)
+    					if (field != null && field.FieldType.ToString() == GlobalState.dt)
     					{
-    						fieldInfo.SetValue(e0, RNG.XS.NextBool() ? fieldInfo.GetValue(e0) : field.GetValue(e1));
+    						fieldInfo.SetValue(e0, Rng.XS.NextBool() ? fieldInfo.GetValue(e0) : field.GetValue(e1));
     					}
     				}
     			}
@@ -4141,10 +4141,10 @@ namespace SlaveMatrix
     			fields = e0.GetType().GetFields();
     			foreach (FieldInfo fieldInfo2 in fields)
     			{
-    				if (fieldInfo2.FieldType.ToString() == Sta.dt && 実数対象.Contains(fieldInfo2.Name))
+    				if (fieldInfo2.FieldType.ToString() == GlobalState.dt && 実数対象.Contains(fieldInfo2.Name))
     				{
     					FieldInfo field2 = type2.GetField(fieldInfo2.Name);
-    					if (field2 != null && field2.FieldType.ToString() == Sta.dt)
+    					if (field2 != null && field2.FieldType.ToString() == GlobalState.dt)
     					{
     						fieldInfo2.SetValue(e0, ((double)fieldInfo2.GetValue(e0) + (double)field2.GetValue(e1)) * 0.5);
     					}
@@ -4156,9 +4156,9 @@ namespace SlaveMatrix
     		fields = e0.GetType().GetFields();
     		foreach (FieldInfo fieldInfo3 in fields)
     		{
-    			if (fieldInfo3.FieldType.ToString() == Sta.dt && 実数対象.Contains(fieldInfo3.Name))
+    			if (fieldInfo3.FieldType.ToString() == GlobalState.dt && 実数対象.Contains(fieldInfo3.Name))
     			{
-    				fieldInfo3.SetValue(e0, ((double)fieldInfo3.GetValue(e0) + (double)RNG.XS.NextSign() * RNG.XS.NextDouble(0.15)).Clamp(0.0, 1.0));
+    				fieldInfo3.SetValue(e0, ((double)fieldInfo3.GetValue(e0) + (double)Rng.XS.NextSign() * Rng.XS.NextDouble(0.15)).Clamp(0.0, 1.0));
     			}
     		}
     	}
@@ -4174,7 +4174,7 @@ namespace SlaveMatrix
     			if (fieldInfo.Name.EndsWith("_表示"))
     			{
     				FieldInfo field = type.GetField(fieldInfo.Name);
-    				if (field != null && field.FieldType.ToString() == Sta.bt)
+    				if (field != null && field.FieldType.ToString() == GlobalState.bt)
     				{
     					bool num = (bool)fieldInfo.GetValue(e0);
     					bool flag = num;
@@ -4196,7 +4196,7 @@ namespace SlaveMatrix
     			if (fieldInfo.Name.EndsWith("_表示"))
     			{
     				FieldInfo field = type.GetField(fieldInfo.Name);
-    				if (field != null && field.FieldType.ToString() == Sta.bt)
+    				if (field != null && field.FieldType.ToString() == GlobalState.bt)
     				{
     					fieldInfo.SetValue(elementData, (bool)fieldInfo.GetValue(e0) || (bool)field.GetValue(e1));
     				}
@@ -4234,7 +4234,7 @@ namespace SlaveMatrix
     					break;
     				default:
     				{
-    					bool flag = RNG.XS.NextBool();
+    					bool flag = Rng.XS.NextBool();
     					val = (T)(flag ? 母 : 父).Copy_以下無();
     					val.Dou(flag ? 父 : 母);
     					break;
@@ -4271,7 +4271,7 @@ namespace SlaveMatrix
     					break;
     				default:
     				{
-    					bool flag2 = RNG.XS.NextBool();
+    					bool flag2 = Rng.XS.NextBool();
     					val = (T)(flag2 ? 母 : 父).Copy_以下無();
     					val.Dou(flag2 ? 父 : 母);
     					break;
@@ -4285,10 +4285,10 @@ namespace SlaveMatrix
     	private static T Mix<T>(WaistD 母方, WaistD 父方, int i, bool 原種モード) where T : ElementData
     	{
     		T eleD = (from e in 母方.EnumEleD()
-    			orderby RNG.XS.Next()
+    			orderby Rng.XS.Next()
     			select e).GetEleD<T>();
     		T eleD2 = (from e in 父方.EnumEleD()
-    			orderby RNG.XS.Next()
+    			orderby Rng.XS.Next()
     			select e).GetEleD<T>();
     		return Mix(eleD, eleD2, i, 原種モード);
     	}
@@ -4296,10 +4296,10 @@ namespace SlaveMatrix
     	private static T Mix<T>(WaistD 母方, WaistD 父方, bool 右, int i, bool 原種モード) where T : ElementData
     	{
     		T eleD = (from e in 母方.EnumEleD()
-    			orderby RNG.XS.Next()
+    			orderby Rng.XS.Next()
     			select e).GetEleD<T>(右);
     		T eleD2 = (from e in 父方.EnumEleD()
-    			orderby RNG.XS.Next()
+    			orderby Rng.XS.Next()
     			select e).GetEleD<T>(右);
     		return Mix(eleD, eleD2, i, 原種モード);
     	}
@@ -4307,10 +4307,10 @@ namespace SlaveMatrix
     	private static T Mix<T>(WaistD 母方, WaistD 父方, Func<T, bool> con, int i, bool 原種モード) where T : ElementData
     	{
     		T eleD = (from e in 母方.EnumEleD()
-    			orderby RNG.XS.Next()
+    			orderby Rng.XS.Next()
     			select e).GetEleD(con);
     		T eleD2 = (from e in 父方.EnumEleD()
-    			orderby RNG.XS.Next()
+    			orderby Rng.XS.Next()
     			select e).GetEleD(con);
     		return Mix(eleD, eleD2, i, 原種モード);
     	}
@@ -4318,10 +4318,10 @@ namespace SlaveMatrix
     	private static ElementData Mix(WaistD 母方, WaistD 父方, int i, Type t, bool 原種モード)
     	{
     		ElementData elementData = (from e in 母方.EnumEleD()
-    			orderby RNG.XS.Next()
+    			orderby Rng.XS.Next()
     			select e).GetEleD(t);
     		ElementData eleD2 = (from e in 父方.EnumEleD()
-    			orderby RNG.XS.Next()
+    			orderby Rng.XS.Next()
     			select e).GetEleD(t);
     		return Mix(elementData, eleD2, i, 原種モード);
     	}
@@ -4329,10 +4329,10 @@ namespace SlaveMatrix
     	private static ElementData Mix(WaistD 母方, WaistD 父方, bool 右, int i, Type t, bool 原種モード)
     	{
     		ElementData elementData = (from e in 母方.EnumEleD()
-    			orderby RNG.XS.Next()
+    			orderby Rng.XS.Next()
     			select e).GetEleD(右, t);
     		ElementData eleD2 = (from e in 父方.EnumEleD()
-    			orderby RNG.XS.Next()
+    			orderby Rng.XS.Next()
     			select e).GetEleD(右, t);
     		return Mix(elementData, eleD2, i, 原種モード);
     	}
@@ -4340,10 +4340,10 @@ namespace SlaveMatrix
     	private static ElementData Mix(WaistD 母方, WaistD 父方, Func<ElementData, bool> con, int i, Type t, bool 原種モード)
     	{
     		ElementData elementData = (from e in 母方.EnumEleD()
-    			orderby RNG.XS.Next()
+    			orderby Rng.XS.Next()
     			select e).GetEleD(con, t);
     		ElementData eleD2 = (from e in 父方.EnumEleD()
-    			orderby RNG.XS.Next()
+    			orderby Rng.XS.Next()
     			select e).GetEleD(con, t);
     		return Mix(elementData, eleD2, i, 原種モード);
     	}
@@ -4354,10 +4354,10 @@ namespace SlaveMatrix
     		{
     			return;
     		}
-    		FieldInfo[] fields = Sta.EleDt.GetFields();
+    		FieldInfo[] fields = GlobalState.EleDt.GetFields();
     		foreach (FieldInfo fieldInfo in fields)
     		{
-    			if (fieldInfo.FieldType.ToString() == Sta.dt)
+    			if (fieldInfo.FieldType.ToString() == GlobalState.dt)
     			{
     				fieldInfo.SetValue(e, fieldInfo.GetValue(e.Par));
     			}
@@ -4372,10 +4372,10 @@ namespace SlaveMatrix
     		}
     		foreach (ElementData item in e.EnumEleD())
     		{
-    			FieldInfo[] fields = Sta.EleDt.GetFields();
+    			FieldInfo[] fields = GlobalState.EleDt.GetFields();
     			foreach (FieldInfo fieldInfo in fields)
     			{
-    				if (fieldInfo.FieldType.ToString() == Sta.dt)
+    				if (fieldInfo.FieldType.ToString() == GlobalState.dt)
     				{
     					fieldInfo.SetValue(item, fieldInfo.GetValue(e));
     				}
@@ -4452,7 +4452,7 @@ namespace SlaveMatrix
     			{
     				if (num.Lot())
     				{
-    					l += (double)(int)(3.0 * 変異率 * RNG.XS.NextDouble());
+    					l += (double)(int)(3.0 * 変異率 * Rng.XS.NextDouble());
     				}
     				if (l > 3.0)
     				{
@@ -4463,7 +4463,7 @@ namespace SlaveMatrix
     			{
     				if (num.Lot())
     				{
-    					l += (double)(int)(9.0 * 変異率 * RNG.XS.NextDouble());
+    					l += (double)(int)(9.0 * 変異率 * Rng.XS.NextDouble());
     				}
     				if (l > 9.0)
     				{
@@ -4503,7 +4503,7 @@ namespace SlaveMatrix
     			int num = source.Count();
     			if (num != 0)
     			{
-    				return source.ElementAt(RNG.XS.Next(num)).Get接続(接続情報).Count((ElementData e) => 接続範囲[接続情報].Contains(e.GetType().ToString()));
+    				return source.ElementAt(Rng.XS.Next(num)).Get接続(接続情報).Count((ElementData e) => 接続範囲[接続情報].Contains(e.GetType().ToString()));
     			}
     			return 1;
     		}
@@ -4565,7 +4565,7 @@ namespace SlaveMatrix
     			}
     			if (num > 0)
     			{
-    				return Mix(母方, 父方, 右, i, source.ElementAt(RNG.XS.Next(num)), 原種モード);
+    				return Mix(母方, 父方, 右, i, source.ElementAt(Rng.XS.Next(num)), 原種モード);
     			}
     		}
     		return null;
@@ -4583,7 +4583,7 @@ namespace SlaveMatrix
     			}
     			if (count > 0)
     			{
-    				return Mix(母方, 父方, 右, i, list[RNG.XS.Next(count)], 原種モード);
+    				return Mix(母方, 父方, 右, i, list[Rng.XS.Next(count)], 原種モード);
     			}
     		}
     		return null;
@@ -4723,12 +4723,12 @@ namespace SlaveMatrix
 
     	private static double Mix(double 母方, double 父方, double max)
     	{
-    		return RNG.XS.Next(4) switch
+    		return Rng.XS.Next(4) switch
     		{
-    			0 => (母方 + (double)RNG.XS.NextSign() * RNG.XS.NextDouble(0.15)).Clamp(0.0, max), 
-    			1 => (父方 + (double)RNG.XS.NextSign() * RNG.XS.NextDouble(0.15)).Clamp(0.0, max), 
-    			2 => ((母方 + 父方) * 0.5 + (double)RNG.XS.NextSign() * RNG.XS.NextDouble(0.15)).Clamp(0.0, max), 
-    			_ => RNG.XS.NextDouble(max), 
+    			0 => (母方 + (double)Rng.XS.NextSign() * Rng.XS.NextDouble(0.15)).Clamp(0.0, max), 
+    			1 => (父方 + (double)Rng.XS.NextSign() * Rng.XS.NextDouble(0.15)).Clamp(0.0, max), 
+    			2 => ((母方 + 父方) * 0.5 + (double)Rng.XS.NextSign() * Rng.XS.NextDouble(0.15)).Clamp(0.0, max), 
+    			_ => Rng.XS.NextDouble(max), 
     		};
     	}
 
@@ -4767,12 +4767,12 @@ namespace SlaveMatrix
 
     	private static int Mix(int 母方, int 父方, int max)
     	{
-    		return RNG.XS.Next(4) switch
+    		return Rng.XS.Next(4) switch
     		{
-    			0 => (母方 + RNG.XS.NextSign()).Clamp(1, max), 
-    			1 => (父方 + RNG.XS.NextSign()).Clamp(1, max), 
-    			2 => ((母方 + 父方) / 2 + RNG.XS.NextSign()).Clamp(1, max), 
-    			_ => RNG.XS.NextM(max).Clamp(1, max), 
+    			0 => (母方 + Rng.XS.NextSign()).Clamp(1, max), 
+    			1 => (父方 + Rng.XS.NextSign()).Clamp(1, max), 
+    			2 => ((母方 + 父方) / 2 + Rng.XS.NextSign()).Clamp(1, max), 
+    			_ => Rng.XS.NextM(max).Clamp(1, max), 
     		};
     	}
     }

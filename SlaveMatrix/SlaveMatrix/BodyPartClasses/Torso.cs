@@ -292,7 +292,7 @@ namespace SlaveMatrix
     		Torso Torso2 = this;
     		ThisType = GetType();
             //This had no Torso (胴体)
-            Body = new VariantGrid(Sta.胴体["Torso"]);
+            Body = new VariantGrid(GlobalState.胴体["Torso"]);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_Torso = partGroup["胴"].ToPar();
     		PartGroup pars2 = partGroup["筋肉"].ToPars();

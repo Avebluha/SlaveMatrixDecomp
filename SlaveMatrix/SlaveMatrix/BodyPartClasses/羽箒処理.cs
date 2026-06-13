@@ -25,7 +25,7 @@ namespace SlaveMatrix
 
     	private void 移動時()
     	{
-    		if (Sta.GameData.ガイド)
+    		if (GlobalState.GameData.ガイド)
     		{
     			if (Is擽り)
     			{
@@ -130,7 +130,7 @@ namespace SlaveMatrix
     			調教UI.押し(ref cd);
     			擽りモーション.Start();
     			Is擽り = true;
-    			if (Sta.GameData.ガイド)
+    			if (GlobalState.GameData.ガイド)
     			{
     				ip.SubInfoIm = 擽り時();
     			}
@@ -161,7 +161,7 @@ namespace SlaveMatrix
     				ハンド右.Body.JoinPA();
     			}
     			調教UI.通常放し();
-    			if (Sta.GameData.ガイド)
+    			if (GlobalState.GameData.ガイド)
     			{
     				ip.SubInfoIm = " ";
     			}
@@ -179,7 +179,7 @@ namespace SlaveMatrix
     			擽りモーション.End();
     			調教UI.放し();
     			Is擽り = false;
-    			if (Sta.GameData.ガイド)
+    			if (GlobalState.GameData.ガイド)
     			{
     				ip.SubInfoIm = 待機時();
     			}
@@ -196,7 +196,7 @@ namespace SlaveMatrix
     		{
     			強さ = (強さ + dt.Sign()).Clamp(1, 3);
     			擽りモーション.BaseSpeed = 10.0 * base.強度;
-    			if (!Sta.GameData.ガイド)
+    			if (!GlobalState.GameData.ガイド)
     			{
     				ip.SubInfoIm = "Wh:" + GameText.強さL + 強さ;
     			}

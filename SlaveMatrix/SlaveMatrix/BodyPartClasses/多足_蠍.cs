@@ -978,7 +978,7 @@ namespace SlaveMatrix
     		ThisType = GetType();
     		MorphVariant morphVariant = new MorphVariant();
     		morphVariant.Tag = "蠍";
-    		morphVariant.Add(new PartGroup(Sta.半身["多足"][0][2]));
+    		morphVariant.Add(new PartGroup(GlobalState.半身["多足"][0][2]));
     		Body = new VariantGrid();
     		Body.Tag = morphVariant.Tag;
     		Body.Add(morphVariant);

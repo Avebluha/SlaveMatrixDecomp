@@ -332,7 +332,7 @@ namespace SlaveMatrix
     	public マウス(double DisUnit, 配色指定 配色指定, 主人公配色 体配色, ModeEventDispatcher Med, マウスD e)
     	{
     		ThisType = GetType();
-    		Body = new VariantGrid(Sta.カーソル["マウス"]);
+    		Body = new VariantGrid(GlobalState.カーソル["マウス"]);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_上唇 = partGroup["上唇"].ToPar();
     		X0Y0_下唇 = partGroup["下唇"].ToPar();

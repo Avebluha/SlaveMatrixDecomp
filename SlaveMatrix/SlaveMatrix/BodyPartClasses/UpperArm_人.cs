@@ -3447,7 +3447,7 @@ namespace SlaveMatrix
     	{
     		UpperArm_人 UpperArm_人2 = this;
     		ThisType = GetType();
-    		Body = new VariantGrid(Sta.腕左["UpperArm"]);
+    		Body = new VariantGrid(GlobalState.腕左["UpperArm"]);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_筋肉上 = partGroup["筋肉上"].ToPar();
     		X0Y0_UpperArm = partGroup["上腕"].ToPar();

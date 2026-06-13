@@ -78,7 +78,7 @@ namespace SlaveMatrix.GameClasses
                 BaseSpeed = 3.0,
                 OnStart = delegate
                 {
-                    useLeftNose = RNG.XS.NextBool();
+                    useLeftNose = Rng.XS.NextBool();
 
                     if (!CanUpdateSingleDrip(body.LeftNoseDrip, body.RightNoseDrip))
                         return;
@@ -142,7 +142,7 @@ namespace SlaveMatrix.GameClasses
                 BaseSpeed = 3.0,
                 OnStart = delegate
                 {
-                    useLeftDrool = RNG.XS.NextBool();
+                    useLeftDrool = Rng.XS.NextBool();
 
                     if (!CanUpdateSingleDrip(body.LeftDrool, body.RightDrool))
                         return;
@@ -205,7 +205,7 @@ namespace SlaveMatrix.GameClasses
                 {
                     body.Splash.Yv = 0.0;
                     body.Splash.表示 = true;
-                    body.Splash.右 = RNG.XS.NextBool();
+                    body.Splash.右 = Rng.XS.NextBool();
                 },
                 OnUpdate = delegate (Motion m)
                 {

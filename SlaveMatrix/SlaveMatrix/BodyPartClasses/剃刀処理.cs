@@ -21,14 +21,14 @@ namespace SlaveMatrix
     		{
     			調教UI.擬音キュー.Enqueue(delegate(RenderArea a)
     			{
-    				調教UI.擬音.Sound(a, 対象.Element.位置.GetAreaPoint(0.01), Sta.剃り.GetVal(Cha.CharacterData.現陰毛, RNG.XS.NextDouble()), new Font("MS Gothic", 1f), ColorHelper.Black, 0.1 + 0.1 * RNG.XS.NextDouble(), b: true);
+    				調教UI.擬音.Sound(a, 対象.Element.位置.GetAreaPoint(0.01), GlobalState.剃り.GetVal(Cha.CharacterData.現陰毛, Rng.XS.NextDouble()), new Font("MS Gothic", 1f), ColorHelper.Black, 0.1 + 0.1 * Rng.XS.NextDouble(), b: true);
     			});
     		}
     	}
 
     	private void 待機時()
     	{
-    		if (Sta.GameData.ガイド)
+    		if (GlobalState.GameData.ガイド)
     		{
     			ip.SubInfoIm = "RCl:" + GameText.放す;
     		}
@@ -36,7 +36,7 @@ namespace SlaveMatrix
 
     	private void 押し当て時()
     	{
-    		if (Sta.GameData.ガイド)
+    		if (GlobalState.GameData.ガイド)
     		{
     			ip.SubInfoIm = "LUp:" + GameText.離す + "\r\nMo:" + GameText.剃る;
     		}
@@ -44,7 +44,7 @@ namespace SlaveMatrix
 
     	private void オーバー時()
     	{
-    		if (Sta.GameData.ガイド)
+    		if (GlobalState.GameData.ガイド)
     		{
     			ip.SubInfoIm = "LDo:" + GameText.当てる;
     		}

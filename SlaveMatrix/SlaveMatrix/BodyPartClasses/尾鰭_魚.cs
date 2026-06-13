@@ -488,7 +488,7 @@ namespace SlaveMatrix
     	public 尾鰭_魚(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 尾鰭_魚D e)
     	{
     		ThisType = GetType();
-    		MorphVariant morphVariant = new MorphVariant(Sta.肢中["尾"][0]);
+    		MorphVariant morphVariant = new MorphVariant(GlobalState.肢中["尾"][0]);
     		Body = new VariantGrid();
     		Body.Tag = morphVariant.Tag;
     		Body.Add(morphVariant);

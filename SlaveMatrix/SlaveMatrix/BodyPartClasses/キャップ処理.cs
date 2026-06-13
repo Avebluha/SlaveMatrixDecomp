@@ -132,7 +132,7 @@ namespace SlaveMatrix
     	{
     		調教UI.擬音キュー.Enqueue(delegate(RenderArea a)
     		{
-    			調教UI.擬音.Sound(a, 対象.位置.GetAreaPoint(0.01), Sta.吸着.GetVal(1.0, 1.0), new Font("MS Gothic", 1f), ColorHelper.Black, 0.2, b: true);
+    			調教UI.擬音.Sound(a, 対象.位置.GetAreaPoint(0.01), GlobalState.吸着.GetVal(1.0, 1.0), new Font("MS Gothic", 1f), ColorHelper.Black, 0.2, b: true);
     		});
     	}
 
@@ -140,7 +140,7 @@ namespace SlaveMatrix
     	{
     		調教UI.擬音キュー.Enqueue(delegate(RenderArea a)
     		{
-    			調教UI.擬音.Sound(a, 対象.位置.GetAreaPoint(0.01), Sta.吸脱.GetVal(1.0, 1.0), new Font("MS Gothic", 1f), ColorHelper.Black, 0.2, b: true);
+    			調教UI.擬音.Sound(a, 対象.位置.GetAreaPoint(0.01), GlobalState.吸脱.GetVal(1.0, 1.0), new Font("MS Gothic", 1f), ColorHelper.Black, 0.2, b: true);
     		});
     	}
 
@@ -150,7 +150,7 @@ namespace SlaveMatrix
     		{
     			調教UI.擬音キュー.Enqueue(delegate(RenderArea a)
     			{
-    				調教UI.擬音.Sound(a, 対象.位置.GetAreaPoint(0.02), Sta.振動.GetVal(1.0, 1.0), new Font("MS Gothic", 1f), ColorHelper.Black, 0.15, b: true);
+    				調教UI.擬音.Sound(a, 対象.位置.GetAreaPoint(0.02), GlobalState.振動.GetVal(1.0, 1.0), new Font("MS Gothic", 1f), ColorHelper.Black, 0.15, b: true);
     			});
     		}
     	}
@@ -172,7 +172,7 @@ namespace SlaveMatrix
 
     	private void 切替時(bool 対象)
     	{
-    		if (Sta.GameData.ガイド)
+    		if (GlobalState.GameData.ガイド)
     		{
     			ip.SubInfoIm = "MCl:" + (対象 ? GameText.停止 : GameText.作動) + "\r\nLCl:" + GameText.外す;
     		}
@@ -180,7 +180,7 @@ namespace SlaveMatrix
 
     	private void 装着時()
     	{
-    		if (Sta.GameData.ガイド)
+    		if (GlobalState.GameData.ガイド)
     		{
     			ip.SubInfoIm = "LCl:" + GameText.装着;
     		}
@@ -188,7 +188,7 @@ namespace SlaveMatrix
 
     	private void 待機時()
     	{
-    		if (Sta.GameData.ガイド)
+    		if (GlobalState.GameData.ガイド)
     		{
     			if (ハンドf)
     			{

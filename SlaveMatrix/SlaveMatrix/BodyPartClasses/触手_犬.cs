@@ -6065,7 +6065,7 @@ namespace SlaveMatrix
     		ThisType = GetType();
     		MorphVariant morphVariant = new MorphVariant();
     		morphVariant.Tag = "スキュラ";
-    		morphVariant.Add(new PartGroup(Sta.肢左["触手"][0][2]));
+    		morphVariant.Add(new PartGroup(GlobalState.肢左["触手"][0][2]));
     		Body = new VariantGrid();
     		Body.Tag = morphVariant.Tag;
     		Body.Add(morphVariant);

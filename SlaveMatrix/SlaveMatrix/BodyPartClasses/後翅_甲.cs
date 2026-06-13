@@ -353,7 +353,7 @@ namespace SlaveMatrix
     	public 後翅_甲(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 後翅_甲D e)
     	{
     		ThisType = GetType();
-    		MorphVariant morphVariant = new MorphVariant(Sta.肢左["後翅"][0]);
+    		MorphVariant morphVariant = new MorphVariant(GlobalState.肢左["後翅"][0]);
     		Body = new VariantGrid();
     		Body.Tag = morphVariant.Tag;
     		Body.Add(morphVariant);

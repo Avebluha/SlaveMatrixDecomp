@@ -298,7 +298,7 @@ namespace SlaveMatrix
 
     	public HeadD SetRandom()
     	{
-    		目高 = RNG.XS.NextDouble();
+    		目高 = Rng.XS.NextDouble();
     		return this;
     	}
 

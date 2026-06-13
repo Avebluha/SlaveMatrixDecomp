@@ -79,12 +79,12 @@ namespace SlaveMatrix
 
     	public 前髪_上げ片D SetRandom()
     	{
-    		髪ハネ左_表示 = RNG.XS.NextBool();
+    		髪ハネ左_表示 = Rng.XS.NextBool();
     		髪ハネ右_表示 = 髪ハネ左_表示;
-    		編み左表示 = RNG.XS.NextBool();
+    		編み左表示 = Rng.XS.NextBool();
     		編み右表示 = 編み左表示;
-    		髪長 = RNG.XS.NextDouble();
-    		右 = RNG.XS.NextBool();
+    		髪長 = Rng.XS.NextDouble();
+    		右 = Rng.XS.NextBool();
     		return this;
     	}
 

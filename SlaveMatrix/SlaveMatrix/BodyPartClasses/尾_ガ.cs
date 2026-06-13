@@ -2197,7 +2197,7 @@ namespace SlaveMatrix
     		ThisType = GetType();
     		MorphVariant morphVariant = new MorphVariant();
     		morphVariant.Tag = "ガラ";
-    		morphVariant.Add(new PartGroup(Sta.尻尾["尾"][0][17]));
+    		morphVariant.Add(new PartGroup(GlobalState.尻尾["尾"][0][17]));
     		Body = new VariantGrid();
     		Body.Tag = morphVariant.Tag;
     		Body.Add(morphVariant);

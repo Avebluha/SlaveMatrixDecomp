@@ -2829,7 +2829,7 @@ namespace SlaveMatrix
     	{
     		腿_人 腿_人2 = this;
     		ThisType = GetType();
-    		Body = new VariantGrid(Sta.脚左["腿"]);
+    		Body = new VariantGrid(GlobalState.脚左["腿"]);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_腿 = partGroup["腿"].ToPar();
     		X0Y0_筋 = partGroup["筋"].ToPar();

@@ -383,7 +383,7 @@ namespace SlaveMatrix
     		ThisType = GetType();
     		MorphVariant morphVariant = new MorphVariant();
     		morphVariant.Tag = "パツ";
-    		morphVariant.Add(new PartGroup(Sta.胴体["BackHair0"][0][2]));
+    		morphVariant.Add(new PartGroup(GlobalState.胴体["BackHair0"][0][2]));
     		Body = new VariantGrid();
     		Body.Tag = morphVariant.Tag;
     		Body.Add(morphVariant);

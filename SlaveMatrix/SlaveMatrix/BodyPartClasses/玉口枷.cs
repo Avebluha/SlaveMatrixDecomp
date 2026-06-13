@@ -569,7 +569,7 @@ namespace SlaveMatrix
     	public 玉口枷(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 玉口枷D e)
     	{
     		ThisType = GetType();
-    		Body = new VariantGrid(Sta.胴体["玉口枷"]);
+    		Body = new VariantGrid(GlobalState.胴体["玉口枷"]);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_金具左上 = partGroup["金具左上"].ToPar();
     		X0Y0_金具左下 = partGroup["金具左下"].ToPar();

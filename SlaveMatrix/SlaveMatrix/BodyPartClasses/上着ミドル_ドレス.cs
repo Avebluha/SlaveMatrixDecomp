@@ -324,7 +324,7 @@ namespace SlaveMatrix
     	public 上着ミドル_ドレス(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 上着ミドル_ドレスD e)
     	{
     		ThisType = GetType();
-    		MorphVariant morphVariant = new MorphVariant(Sta.胴体["上着ミドル"][2]);
+    		MorphVariant morphVariant = new MorphVariant(GlobalState.胴体["上着ミドル"][2]);
     		Body = new VariantGrid();
     		Body.Tag = morphVariant.Tag;
     		Body.Add(morphVariant);

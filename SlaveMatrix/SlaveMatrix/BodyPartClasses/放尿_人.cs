@@ -545,7 +545,7 @@ namespace SlaveMatrix
     	public 放尿_人(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 放尿_人D e)
     	{
     		ThisType = GetType();
-    		Body = new VariantGrid(Sta.性器付["放尿"]);
+    		Body = new VariantGrid(GlobalState.性器付["放尿"]);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_尿 = partGroup["尿"].ToPar();
     		X0Y0_尿散り1 = partGroup["尿散り1"].ToPar();

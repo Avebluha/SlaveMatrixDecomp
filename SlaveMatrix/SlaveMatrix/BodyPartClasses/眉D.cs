@@ -17,7 +17,7 @@ namespace SlaveMatrix
 
     	public 眉D SetRandom()
     	{
-    		サイズY = RNG.XS.NextDouble();
+    		サイズY = Rng.XS.NextDouble();
     		return this;
     	}
 

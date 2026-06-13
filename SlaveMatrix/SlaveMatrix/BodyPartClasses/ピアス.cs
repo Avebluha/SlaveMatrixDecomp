@@ -100,7 +100,7 @@ namespace SlaveMatrix
     	public ピアス(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, ピアスD e)
     	{
     		ThisType = GetType();
-    		Body = new VariantGrid(Sta.性器付["ピアス"]);
+    		Body = new VariantGrid(GlobalState.性器付["ピアス"]);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_ピアス = partGroup["ピアス"].ToPar();
     		Body.SetJoints();

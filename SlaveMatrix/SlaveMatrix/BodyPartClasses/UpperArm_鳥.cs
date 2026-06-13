@@ -404,7 +404,7 @@ namespace SlaveMatrix
     	{
     		UpperArm_鳥 UpperArm_鳥2 = this;
     		ThisType = GetType();
-    		Body = new VariantGrid(Sta.腕左["鳥翼UpperArm"]);
+    		Body = new VariantGrid(GlobalState.腕左["鳥翼UpperArm"]);
     		PartGroup partGroup = Body[0][0];
     		PartGroup pars2 = partGroup["風切羽"].ToPars();
     		X0Y0_風切羽_羽3 = pars2["羽3"].ToPar();

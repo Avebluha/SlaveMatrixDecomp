@@ -410,7 +410,7 @@ namespace SlaveMatrix
     		大顎上 = new 大顎上(DisUnit, 配色指定, 体配色);
     		大顎上.Par = this;
     		ThisType = GetType();
-    		Body = new VariantGrid(Sta.肢中["大顎基"]);
+    		Body = new VariantGrid(GlobalState.肢中["大顎基"]);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_甲殻下 = partGroup["甲殻下"].ToPar();
     		大顎上.接続(大顎上_接続点);

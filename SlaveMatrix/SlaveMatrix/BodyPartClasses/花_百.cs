@@ -1497,7 +1497,7 @@ namespace SlaveMatrix
     		ThisType = GetType();
     		PartGroup partGroup = new PartGroup();
     		partGroup.Tag = "ユリ";
-    		PartGroup pars2 = Sta.肢左["植"][0][0];
+    		PartGroup pars2 = GlobalState.肢左["植"][0][0];
     		partGroup.Add("ユリ", new PartGroup(pars2["花"].ToPars()["ユリ"].ToPars()));
     		partGroup.Add("萼", new PartGroup(pars2["萼"].ToPars()));
     		MorphVariant morphVariant = new MorphVariant();

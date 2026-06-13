@@ -2712,7 +2712,7 @@ namespace SlaveMatrix
     	public 下着ボトム_ノーマル(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 下着ボトム_ノーマルD e)
     	{
     		ThisType = GetType();
-    		MorphVariant morphVariant = new MorphVariant(Sta.胴体["下着ボトム"][0]);
+    		MorphVariant morphVariant = new MorphVariant(GlobalState.胴体["下着ボトム"][0]);
     		Body = new VariantGrid();
     		Body.Tag = morphVariant.Tag;
     		Body.Add(morphVariant);

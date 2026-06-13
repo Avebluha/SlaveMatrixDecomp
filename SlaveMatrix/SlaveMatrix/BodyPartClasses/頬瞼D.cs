@@ -37,17 +37,17 @@ namespace SlaveMatrix
 
     	public 頬瞼D SetRandom()
     	{
-    		サイズY = RNG.XS.NextDouble();
-    		瞼左_睫毛1_表示 = RNG.XS.NextBool();
-    		瞼左_睫毛2_表示 = RNG.XS.NextBool();
-    		瞼右_睫毛1_表示 = RNG.XS.NextBool();
-    		瞼右_睫毛2_表示 = RNG.XS.NextBool();
-    		外線 = RNG.XS.NextDouble();
-    		瞼左_睫毛1_長さ = RNG.XS.NextDouble();
-    		瞼左_睫毛2_長さ = RNG.XS.NextDouble();
-    		瞼右_睫毛1_長さ = RNG.XS.NextDouble();
-    		瞼右_睫毛2_長さ = RNG.XS.NextDouble();
-    		傾き = RNG.XS.NextDouble();
+    		サイズY = Rng.XS.NextDouble();
+    		瞼左_睫毛1_表示 = Rng.XS.NextBool();
+    		瞼左_睫毛2_表示 = Rng.XS.NextBool();
+    		瞼右_睫毛1_表示 = Rng.XS.NextBool();
+    		瞼右_睫毛2_表示 = Rng.XS.NextBool();
+    		外線 = Rng.XS.NextDouble();
+    		瞼左_睫毛1_長さ = Rng.XS.NextDouble();
+    		瞼左_睫毛2_長さ = Rng.XS.NextDouble();
+    		瞼右_睫毛1_長さ = Rng.XS.NextDouble();
+    		瞼右_睫毛2_長さ = Rng.XS.NextDouble();
+    		傾き = Rng.XS.NextDouble();
     		return this;
     	}
 

@@ -122,8 +122,8 @@ namespace SlaveMatrix
     		ThisType = GetType();
     		Body = new VariantGrid();
     		Body.Tag = "通";
-    		Body.Add(new MorphVariant(Sta.肢左["耳"][0]));
-    		Body.Add(new MorphVariant(Sta.肢左["耳"][1]));
+    		Body.Add(new MorphVariant(GlobalState.肢左["耳"][0]));
+    		Body.Add(new MorphVariant(GlobalState.肢左["耳"][1]));
     		PartGroup partGroup = Body[0][0];
     		X0Y0_耳 = partGroup["耳"].ToPar();
     		X0Y0_耳線 = partGroup["耳線"].ToPar();

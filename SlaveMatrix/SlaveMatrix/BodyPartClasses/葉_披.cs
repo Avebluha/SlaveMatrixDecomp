@@ -41,7 +41,7 @@ namespace SlaveMatrix
     		set
     		{
     			欠損_ = value;
-    			Body.IndexY = (欠損_ ? RNG.XS.NextM(1, 2) : 0);
+    			Body.IndexY = (欠損_ ? Rng.XS.NextM(1, 2) : 0);
     		}
     	}
 
@@ -145,7 +145,7 @@ namespace SlaveMatrix
     	public 葉_披(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 葉_披D e)
     	{
     		ThisType = GetType();
-    		MorphVariant morphVariant = new MorphVariant(Sta.肢左["葉"][0]);
+    		MorphVariant morphVariant = new MorphVariant(GlobalState.肢左["葉"][0]);
     		Body = new VariantGrid();
     		Body.Tag = morphVariant.Tag;
     		Body.Add(morphVariant);

@@ -29,10 +29,10 @@ namespace SlaveMatrix
 
     	public 瞼_宇D SetRandom()
     	{
-    		サイズ = RNG.XS.NextDouble();
-    		サイズX = RNG.XS.NextDouble();
-    		サイズY = RNG.XS.NextDouble();
-    		傾き = RNG.XS.NextDouble();
+    		サイズ = Rng.XS.NextDouble();
+    		サイズX = Rng.XS.NextDouble();
+    		サイズY = Rng.XS.NextDouble();
+    		傾き = Rng.XS.NextDouble();
     		return this;
     	}
 

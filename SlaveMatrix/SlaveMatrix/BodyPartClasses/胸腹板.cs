@@ -107,7 +107,7 @@ namespace SlaveMatrix
     	public 胸腹板(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 胸腹板D e)
     	{
     		ThisType = GetType();
-    		Body = new VariantGrid(Sta.胴体["胸郭腹板"]);
+    		Body = new VariantGrid(GlobalState.胴体["胸郭腹板"]);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_虫性_腹板 = partGroup["腹板"].ToPar();
     		X0Y0_虫性_縦線 = partGroup["縦線"].ToPar();

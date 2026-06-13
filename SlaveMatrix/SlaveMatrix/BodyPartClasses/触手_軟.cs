@@ -7283,7 +7283,7 @@ namespace SlaveMatrix
     		ThisType = GetType();
     		MorphVariant morphVariant = new MorphVariant();
     		morphVariant.Tag = "軟体";
-    		morphVariant.Add(new PartGroup(Sta.肢左["触手"][0][0]));
+    		morphVariant.Add(new PartGroup(GlobalState.肢左["触手"][0][0]));
     		Body = new VariantGrid();
     		Body.Tag = morphVariant.Tag;
     		Body.Add(morphVariant);

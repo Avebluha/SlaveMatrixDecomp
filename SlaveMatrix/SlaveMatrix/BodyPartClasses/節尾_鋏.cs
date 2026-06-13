@@ -318,7 +318,7 @@ namespace SlaveMatrix
     		ThisType = GetType();
     		MorphVariant morphVariant = new MorphVariant();
     		morphVariant.Tag = "鋏";
-    		morphVariant.Add(new PartGroup(Sta.肢左["節足"][0][6]));
+    		morphVariant.Add(new PartGroup(GlobalState.肢左["節足"][0][6]));
     		Body = new VariantGrid();
     		Body.Tag = morphVariant.Tag;
     		Body.Add(morphVariant);

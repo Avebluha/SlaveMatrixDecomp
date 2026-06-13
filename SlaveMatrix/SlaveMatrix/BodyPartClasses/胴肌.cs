@@ -191,7 +191,7 @@ namespace SlaveMatrix
     	public 胴肌(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 胴肌D e)
     	{
     		ThisType = GetType();
-    		Body = new VariantGrid(Sta.胴体["胴肌"]);
+    		Body = new VariantGrid(GlobalState.胴体["胴肌"]);
     		PartGroup partGroup = Body[0][0]["植タトゥ"].ToPars();
     		X0Y0_植タトゥ_タトゥ花左 = partGroup["タトゥ花左"].ToPar();
     		X0Y0_植タトゥ_タトゥ花右 = partGroup["タトゥ花右"].ToPar();

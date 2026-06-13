@@ -203,10 +203,10 @@ namespace SlaveMatrix
 
     	public static Dictionary<string, Module> GetMods(ModeEventDispatcher Med)
     	{
-    		Sta.LoadConfig();
-    		Sta.タイル準備();
-    		Sta.Set擬音();
-    		Sta.Set喘ぎ();
+    		GlobalState.LoadConfig();
+    		GlobalState.タイル準備();
+    		GlobalState.Set擬音();
+    		GlobalState.Set喘ぎ();
 
             //setup buffers
     		drawArea = new RenderArea(Med, Hit: false);
@@ -241,13 +241,13 @@ namespace SlaveMatrix
 
 
     		double y = 0.9075;
-    		if (Sta.BigWindow)
+    		if (GlobalState.BigWindow)
     		{
     			y = 0.932;
     		}
             
             double x = 0.699;
-            if (Sta.BigWindow)
+            if (GlobalState.BigWindow)
             {
                 x = 0.77;
             }
@@ -255,7 +255,7 @@ namespace SlaveMatrix
 
             dbs.Add("プレイヤー", MyUI.Button(Med, DrawBuffer, "Player", new Vector2D(-0.001, y), delegate
     		{
-    			if (Sta.GameData.所持金 < 10000000)
+    			if (GlobalState.GameData.所持金 < 10000000)
     			{
     				ip.SubInfoIm = GameText.所持金が足りません;
     			}
@@ -263,7 +263,7 @@ namespace SlaveMatrix
     			{
                     //TODO fix?
                     //Sounds.精算.Play();
-    				Sta.GameData.所持金 -= 10000000uL;
+    				GlobalState.GameData.所持金 -= 10000000uL;
     				ip.UpdateSub2();
 
     				//note: removed 50ms timeout -- could add back with mot...
@@ -302,7 +302,7 @@ namespace SlaveMatrix
 
 
             x = 0.895;
-            if (Sta.BigWindow)
+            if (GlobalState.BigWindow)
             {
                 x = 0.92;
             }
@@ -322,7 +322,7 @@ namespace SlaveMatrix
 
 
             x = 0.797;
-            if (Sta.BigWindow)
+            if (GlobalState.BigWindow)
             {
                 x = 0.845;
             }
@@ -574,15 +574,15 @@ namespace SlaveMatrix
 
         public static void SetDemandMaximum()
     	{
-    		if (Sta.GameData.RepaymentStage == 0)
+    		if (GlobalState.GameData.RepaymentStage == 0)
     		{
     			DemandMax = 88.0;
     		}
-    		else if (Sta.GameData.RepaymentStage == 1)
+    		else if (GlobalState.GameData.RepaymentStage == 1)
     		{
     			DemandMax = 99.0;
     		}
-    		else if (Sta.GameData.RepaymentStage == 2)
+    		else if (GlobalState.GameData.RepaymentStage == 2)
     		{
     			DemandMax = 110.0;
     		}
@@ -604,7 +604,7 @@ namespace SlaveMatrix
     	private static IEnumerable<TA> sllv(ModeEventDispatcher Med)
     	{
     		int j = 0;
-    		string[] array = Sta.SDPaths();
+    		string[] array = GlobalState.SDPaths();
     		foreach (string text in array)
     		{
     			string path = text;
@@ -628,14 +628,14 @@ namespace SlaveMatrix
 
     	private static void AutoSave()
     	{
-    		string s = Path.Combine(Sta.SavePath, "0： ");
-    		foreach (string item in from e in Directory.EnumerateFiles(Sta.SavePath)
+    		string s = Path.Combine(GlobalState.SavePath, "0： ");
+    		foreach (string item in from e in Directory.EnumerateFiles(GlobalState.SavePath)
     			where e.StartsWith(s)
     			select e)
             {
                 System.IO.File.Delete(item);
             }
-    		Sta.GDSave(0);
+    		GlobalState.GDSave(0);
     	}
 
     	private static void Save(string Path, int i, ModeEventDispatcher Med)
@@ -646,10 +646,10 @@ namespace SlaveMatrix
     		{
                 System.IO.File.Delete(Path);
     		}
-    		Sta.GDSave(i);
+    		GlobalState.GDSave(i);
     		SetSLlv(Med);
     		SDShow = false;
-    		ip.SubInfoIm = i + ": " + Sta.GameData.GetSaveDateString() + "\r\n" + GameText.セーブしました;
+    		ip.SubInfoIm = i + ": " + GlobalState.GameData.GetSaveDateString() + "\r\n" + GameText.セーブしました;
     		//Med.InvokeL(Sounds.完了.Play);
     	}
 
@@ -657,10 +657,10 @@ namespace SlaveMatrix
     	{
     		ip.SubInfoIm = GameText.ロード中です + "\r\n" + GameText.しばらくお待ちください;
 		
-    		Sta.GameData = Path.LoadExMod<GameState>();
+    		GlobalState.GameData = Path.LoadExMod<GameState>();
     		Character d = Viola;
-    		Viola = new Character(Med, DrawBuffer, Sta.GameData.ヴィオラ.ChaD);
-    		Viola.Set衣装(Sta.GameData.ヴィオラ.着衣);
+    		Viola = new Character(Med, DrawBuffer, GlobalState.GameData.ヴィオラ.ChaD);
+    		Viola.Set衣装(GlobalState.GameData.ヴィオラ.着衣);
     		ViolaTextBubble.接続(Viola.Body.頭.口_接続点);
     		
     		Initialize();
@@ -681,14 +681,14 @@ namespace SlaveMatrix
     		else
     		{
     			Med.Mode = "メインフォーム";
-    			ip.SubInfoIm = i + ": " + Sta.GameData.GetSaveDateString() + "\r\n" + GameText.ロードしました;
+    			ip.SubInfoIm = i + ": " + GlobalState.GameData.GetSaveDateString() + "\r\n" + GameText.ロードしました;
     		}
     		SetDemandMaximum();
-    		if (Sta.GameData.Slaves.Length < MaxRoomNumber)
+    		if (GlobalState.GameData.Slaves.Length < MaxRoomNumber)
     		{
     			Unit[] array = new Unit[MaxRoomNumber];
-    			Array.Copy(Sta.GameData.Slaves, array, Sta.GameData.Slaves.Length);
-    			Sta.GameData.Slaves = array;
+    			Array.Copy(GlobalState.GameData.Slaves, array, GlobalState.GameData.Slaves.Length);
+    			GlobalState.GameData.Slaves = array;
     		}
     		//Med.InvokeL(Sounds.完了.Play);
     		
@@ -702,7 +702,7 @@ namespace SlaveMatrix
         private static IEnumerable<TA> jsllv(ModeEventDispatcher med)
         {
             int k = 0;
-            string[] array = Sta.JSDPaths();
+            string[] array = GlobalState.JSDPaths();
             foreach (string text in array)
             {
                 string path = text;
@@ -732,33 +732,33 @@ namespace SlaveMatrix
             {
                 System.IO.File.Delete(Path);
             }
-            Sta.GDSaveJson(i);
+            GlobalState.GDSaveJson(i);
             SetJSLlv(med);
             SDShow = false;
-            ip.SubInfoIm = i + ": " + Sta.GameData.GetSaveDateString() + "\r\n" + GameText.セーブしました;
+            ip.SubInfoIm = i + ": " + GlobalState.GameData.GetSaveDateString() + "\r\n" + GameText.セーブしました;
             //Sounds.完了.Play();
         }
         private static void JsonLoad(string Path, int i, ModeEventDispatcher med)
         {
             ip.SubInfoIm = GameText.ロード中です + "\r\n" + GameText.しばらくお待ちください;
 
-            Sta.DontScar = true;
-            if (Sta.TranslateJson)
+            GlobalState.DontScar = true;
+            if (GlobalState.TranslateJson)
             {
-                string text = Sta.CurrentDirectory + "temp.json";
-                string contents = Sta.Translate(Path, 1);
+                string text = GlobalState.CurrentDirectory + "temp.json";
+                string contents = GlobalState.Translate(Path, 1);
                 File.WriteAllText(text, contents);
-                Sta.GameData = Serializer.UnJson<GameState>(text);
+                GlobalState.GameData = Serializer.UnJson<GameState>(text);
                 System.IO.File.Delete(text);
             }
             else
             {
-                Sta.GameData = Serializer.UnJson<GameState>(Path);
+                GlobalState.GameData = Serializer.UnJson<GameState>(Path);
             }
-            Sta.DontScar = false;
+            GlobalState.DontScar = false;
             Character d = Viola;
-            Viola = new Character(med, DrawBuffer, Sta.GameData.ヴィオラ.ChaD);
-            Viola.Set衣装(Sta.GameData.ヴィオラ.着衣);
+            Viola = new Character(med, DrawBuffer, GlobalState.GameData.ヴィオラ.ChaD);
+            Viola.Set衣装(GlobalState.GameData.ヴィオラ.着衣);
             ViolaTextBubble.接続(Viola.Body.頭.口_接続点);
             
             Initialize();
@@ -779,23 +779,23 @@ namespace SlaveMatrix
             else
             {
                 med.Mode = "メインフォーム";
-                ip.SubInfoIm = i + ": " + Sta.GameData.GetSaveDateString() + "\r\n" + GameText.ロードしました;
+                ip.SubInfoIm = i + ": " + GlobalState.GameData.GetSaveDateString() + "\r\n" + GameText.ロードしました;
             }
             SetDemandMaximum();
-            if (Sta.GameData.Slaves.Length < MaxRoomNumber)
+            if (GlobalState.GameData.Slaves.Length < MaxRoomNumber)
             {
                 Unit[] array = new Unit[MaxRoomNumber];
-                Array.Copy(Sta.GameData.Slaves, array, Sta.GameData.Slaves.Length);
-                Sta.GameData.Slaves = array;
+                Array.Copy(GlobalState.GameData.Slaves, array, GlobalState.GameData.Slaves.Length);
+                GlobalState.GameData.Slaves = array;
             }
-            Sta.GameData.Gen = new Generator[9];
-            Sta.GameData.GenInstance();
+            GlobalState.GameData.Gen = new Generator[9];
+            GlobalState.GameData.GenInstance();
             //Sounds.完了.Play();
         }
 
         private static void Initialize()
     	{
-            Sta.GameData.Refresh = false;
+            GlobalState.GameData.Refresh = false;
             対象UI初期化();
     		奴隷UI初期化();
     	}
@@ -807,19 +807,19 @@ namespace SlaveMatrix
     	}
         public static void Setnpl(Unit u)
         {
-            npl.Text = GameText.収容番号 + u.Number + "\r\n" + (Sta.AlwaysUseName ? u.Name : (u.Trained ? u.Name : u.Race));
+            npl.Text = GameText.収容番号 + u.Number + "\r\n" + (GlobalState.AlwaysUseName ? u.Name : (u.Trained ? u.Name : u.Race));
         }
 
         public static void EndDay()
     	{
     		Player.RecoverPlayerStamina();
-    		Sta.GameData.日借金額 = 0uL;
+    		GlobalState.GameData.日借金額 = 0uL;
     		労働利益 = 0uL;
     		日利益額 = 0uL;
-    		日利子額 = Sta.GameData.利子額;
+    		日利子額 = GlobalState.GameData.利子額;
     		DayEndLog = new string[MaxRoomNumber];
     		int num = 0;
-    		Unit[] Slaves = Sta.GameData.Slaves;
+    		Unit[] Slaves = GlobalState.GameData.Slaves;
     		foreach (Unit unit in Slaves)
     		{
     			if (unit != null)
@@ -828,7 +828,7 @@ namespace SlaveMatrix
     				unit.RecoverStamina();
     				unit.ChaD.現陰毛 = (unit.ChaD.現陰毛 + 0.05).Clamp(0.0, 1.0);
     				int num2 = ((unit.妊娠進行期間 <= 0) ? 1 : unit.妊娠進行期間);
-    				bool flag = Sta.GameData.日数 % (ulong)(num2 * 2) == 0;
+    				bool flag = GlobalState.GameData.日数 % (ulong)(num2 * 2) == 0;
     				if (unit.発情フラグ && flag && !unit.ChaD.タトゥ)
     				{
     					unit.発情フラグ = false;
@@ -846,7 +846,7 @@ namespace SlaveMatrix
     							DayLog(GameText.収容番号 + unit.Number + "/" + unit.Name + GameText.が妊娠しました + ((unit.Laboror || unit.Prostitute) ? ("\r\n" + GameText.労働が解除されます) : ""), num);
     							unit.非妊娠 = false;
     						}
-    						if (unchecked(Sta.GameData.日数 % (ulong)num2) == 0L)
+    						if (unchecked(GlobalState.GameData.日数 % (ulong)num2) == 0L)
     						{
     							if (unit.妊娠状態変数 == 4)
     							{
@@ -854,7 +854,7 @@ namespace SlaveMatrix
     								unit.体力消費();
     								unit.体力消費();
     								DayLog(GameText.収容番号 + unit.Number + "/" + unit.Name + GameText.が出産しました, num);
-    								if (Sta.GameData.Is地下室一杯())
+    								if (GlobalState.GameData.Is地下室一杯())
     								{
     									ulong price = unit.Child.GetPrice();
     									DayLog(GameText.収容できないので子は売却されます + "+" + price.ToString("#,0"), num);
@@ -870,7 +870,7 @@ namespace SlaveMatrix
     								else
     								{
     									DayLog(GameText.子を奴隷として収容します, num);
-    									Sta.GameData.Add地下室(unit.Child);
+    									GlobalState.GameData.Add地下室(unit.Child);
     								}
     								unit.Child = null;
     								unit.妊娠状態変数 = -1;
@@ -894,7 +894,7 @@ namespace SlaveMatrix
     						unit.体力消費();
     						unit.体力消費();
     						DayLog(GameText.収容番号 + unit.Number + "/" + unit.Name + GameText.が増殖しました, num);
-    						if (Sta.GameData.Is地下室一杯())
+    						if (GlobalState.GameData.Is地下室一杯())
     						{
     							ulong price2 = unit.GetPrice();
     							DayLog(GameText.収容できないので子は売却されます + "+" + price2.ToString("#,0"), num);
@@ -910,7 +910,7 @@ namespace SlaveMatrix
     						else
     						{
     							DayLog(GameText.子を奴隷として収容します, num);
-    							Sta.GameData.Add地下室(unit.DeepCopy().増殖時Reset());
+    							GlobalState.GameData.Add地下室(unit.DeepCopy().増殖時Reset());
     						}
     					}
     					if (unit.非妊娠)
@@ -947,15 +947,15 @@ namespace SlaveMatrix
     			{
     				日利益額 = 9999999999999uL;
     			}
-    			Sta.GameData.新日 = true;
+    			GlobalState.GameData.新日 = true;
     		}
     	}
     	public static bool PassTime(ModeEventDispatcher Med)
     	{
-    		bool flag = Sta.GameData.時間帯 == GameText.夜;
+    		bool flag = GlobalState.GameData.時間帯 == GameText.夜;
             Player.RecoverPlayerStamina();
 
-            foreach (Unit u in Sta.GameData.Slaves)
+            foreach (Unit u in GlobalState.GameData.Slaves)
             {
                 if (u != null)
                 {
@@ -985,7 +985,7 @@ namespace SlaveMatrix
             }
             if (flag)
     		{
-    			Sta.GameData.Refresh = false;
+    			GlobalState.GameData.Refresh = false;
 
                 EndDay();
                 AutoSave();
@@ -994,7 +994,7 @@ namespace SlaveMatrix
     		}
     		else
     		{
-    			Sta.GameData.時間進行();
+    			GlobalState.GameData.時間進行();
     		}
     		return flag;
     	}        
@@ -1009,13 +1009,13 @@ namespace SlaveMatrix
 
     	public static void 妊娠状態反映()
     	{
-    		if (Sta.GameData.TrainingTarget.妊娠状態変数 > -1)
+    		if (GlobalState.GameData.TrainingTarget.妊娠状態変数 > -1)
     		{
-    			TrainingTarget.Body.ボテ腹i = Sta.GameData.TrainingTarget.妊娠状態変数;
+    			TrainingTarget.Body.ボテ腹i = GlobalState.GameData.TrainingTarget.妊娠状態変数;
     			TrainingTarget.Body.ボテ腹_表示 = true;
     			if (!TrainingTarget.Body.Is獣)
     			{
-    				TrainingTarget.Body.ボテ腹_人.ハイライト表示 = Sta.GameData.TrainingTarget.妊娠状態変数 > 2;
+    				TrainingTarget.Body.ボテ腹_人.ハイライト表示 = GlobalState.GameData.TrainingTarget.妊娠状態変数 > 2;
     			}
     		}
     		else
@@ -1039,7 +1039,7 @@ namespace SlaveMatrix
     		TrainingTarget.Emotion();
     		TrainingTarget.UpdateExpression();
     		TrainingTarget.口修正();
-    		if (Sta.GameData.TrainingTarget.Trained)
+    		if (GlobalState.GameData.TrainingTarget.Trained)
     		{
     			TrainingTarget.Body.拘束具_表示 = false;
     			TrainingTarget.Body.首輪_表示 = true;
@@ -1050,21 +1050,21 @@ namespace SlaveMatrix
     			TrainingTarget.Body.拘束具_表示 = true;
     			TrainingTarget.Set拘束姿勢();
     		}
-    		if (Sta.GameData.TrainingTarget.ChaD.胸施術)
+    		if (GlobalState.GameData.TrainingTarget.ChaD.胸施術)
     		{
     			TrainingTarget.Body.胸施術();
     		}
-    		if (Sta.GameData.TrainingTarget.ChaD.股施術)
+    		if (GlobalState.GameData.TrainingTarget.ChaD.股施術)
     		{
     			TrainingTarget.Body.股施術();
     		}
-    		if (Sta.GameData.TrainingTarget.ChaD.タトゥ)
+    		if (GlobalState.GameData.TrainingTarget.ChaD.タトゥ)
     		{
     			TrainingTarget.Body.タトゥ();
     		}
-    		if (Sta.GameData.TrainingTarget.着衣 != null)
+    		if (GlobalState.GameData.TrainingTarget.着衣 != null)
     		{
-    			TrainingTarget.Set衣装(Sta.GameData.TrainingTarget.着衣);
+    			TrainingTarget.Set衣装(GlobalState.GameData.TrainingTarget.着衣);
     		}
     		TrainingTarget.Body.Join();
     		TrainingTarget.Body.Update();
@@ -1072,15 +1072,15 @@ namespace SlaveMatrix
 
     	public static void SetTrainingTarget(ModeEventDispatcher Med, Unit u)
     	{
-    		Sta.GameData.TrainingTarget = u;
+    		GlobalState.GameData.TrainingTarget = u;
     		if (TrainingTarget != null)
     		{
     			TrainingTarget.Dispose();
     		}
-    		TrainingTarget = new Character(Med, DrawBuffer, Sta.GameData.TrainingTarget.ChaD);
+    		TrainingTarget = new Character(Med, DrawBuffer, GlobalState.GameData.TrainingTarget.ChaD);
     		SlaveTextBubble.接続(TrainingTarget.Body.頭.口_接続点);
     		Setnpl(u);
-    		double d = ((u.Trained && Sta.MoveInsectMask) ? 1.0 : 0.0);
+    		double d = ((u.Trained && GlobalState.MoveInsectMask) ? 1.0 : 0.0);
     		if (TrainingTarget.Body.Is顔面)
     		{
     			TrainingTarget.Body.頭.顔面_接続.SetEle(delegate(顔面 顔面)
@@ -1121,7 +1121,7 @@ namespace SlaveMatrix
     		TrainingTarget.SetInitialExpression();
     		TrainingTarget.Emotion();
     		TrainingTarget.UpdateExpression();
-    		if (Sta.GameData.TrainingTarget.Trained)
+    		if (GlobalState.GameData.TrainingTarget.Trained)
     		{
     			TrainingTarget.Set基本姿勢();
     		}
@@ -1255,7 +1255,7 @@ namespace SlaveMatrix
     			new TA("Start", delegate
     			{
     				////Sounds.操作.Play();
-    				Sta.GameData.SetDefault();
+    				GlobalState.GameData.SetDefault();
 
     				Viola?.Dispose();
     				TrainingTarget?.Dispose();
@@ -1430,12 +1430,12 @@ namespace SlaveMatrix
     		bs.Add("ボタン7", MyUI.Button2(Med, DrawBuffer, GameText.チェンジ, new Vector2D(0.85, 0.58), delegate
     		{
     			Unit unit = null;
-    			unit = ((Sta.GameData.TrainingTarget == null) ? (from e in Sta.GameData.Slaves
+    			unit = ((GlobalState.GameData.TrainingTarget == null) ? (from e in GlobalState.GameData.Slaves
     				where e != null
-    				orderby RNG.XS.Next()
-    				select e).First() : (from e in Sta.GameData.Slaves
-    				where e != null && e != Sta.GameData.TrainingTarget
-    				orderby RNG.XS.Next()
+    				orderby Rng.XS.Next()
+    				select e).First() : (from e in GlobalState.GameData.Slaves
+    				where e != null && e != GlobalState.GameData.TrainingTarget
+    				orderby Rng.XS.Next()
     				select e).FirstOrDefault());
     			if (unit != null)
     			{
@@ -1590,17 +1590,17 @@ namespace SlaveMatrix
                         ip.Mai2Show = false;
                         ip.SubShow = true;
                         ip.Sub2Show = true;
-                        Player.UI.ステート描画 = Sta.GameData.心眼;
-                        if (TrainingTarget == null && Sta.GameData.TrainingTarget != null)
+                        Player.UI.ステート描画 = GlobalState.GameData.心眼;
+                        if (TrainingTarget == null && GlobalState.GameData.TrainingTarget != null)
                         {
-                            SetTrainingTarget(Med, Sta.GameData.TrainingTarget);
+                            SetTrainingTarget(Med, GlobalState.GameData.TrainingTarget);
                         }
-                        bs["ボタン2"].Dra = Sta.GameData.TrainingTarget != null;
-                        bs["ボタン3"].Dra = !Sta.GameData.初事務所フラグ && Sta.GameData.Slaves.Count((Unit e) => e != null) > 0;
-                        bs["ボタン4"].Dra = !Sta.GameData.初事務所フラグ;
-                        bs["ボタン5"].Dra = !Sta.GameData.初事務所フラグ;
-                        bs["ボタン6"].Dra = !Sta.GameData.初事務所フラグ;
-                        bs["ボタン7"].Dra = !Sta.GameData.初事務所フラグ && Sta.GameData.Slaves.Count((Unit e) => e != null) > 0;
+                        bs["ボタン2"].Dra = GlobalState.GameData.TrainingTarget != null;
+                        bs["ボタン3"].Dra = !GlobalState.GameData.初事務所フラグ && GlobalState.GameData.Slaves.Count((Unit e) => e != null) > 0;
+                        bs["ボタン4"].Dra = !GlobalState.GameData.初事務所フラグ;
+                        bs["ボタン5"].Dra = !GlobalState.GameData.初事務所フラグ;
+                        bs["ボタン6"].Dra = !GlobalState.GameData.初事務所フラグ;
+                        bs["ボタン7"].Dra = !GlobalState.GameData.初事務所フラグ && GlobalState.GameData.Slaves.Count((Unit e) => e != null) > 0;
                         si.Set(bre: false);
                         Color HitColor = ColorHelper.Empty;
                         ip.Up(ref HitColor);
@@ -1729,22 +1729,22 @@ namespace SlaveMatrix
                     ip.SubShow = true;
                     ip.Sub2Show = false;
                     Med.CursorHide();
-                    Player.UI.ディルCM.Show = Sta.GameData.PurchasedTools[0];
-                    Player.UI.コモンCM.Show = Sta.GameData.PurchasedTools[1];
-                    Player.UI.ドリルCM.Show = Sta.GameData.PurchasedTools[2];
-                    Player.UI.デンマCM.Show = Sta.GameData.PurchasedTools[3];
-                    Player.UI.アナルCM.Show = Sta.GameData.PurchasedTools[4];
-                    Player.UI.調教鞭CM.Show = Sta.GameData.PurchasedTools[5];
-                    Player.UI.羽根箒CM.Show = Sta.GameData.PurchasedTools[6];
-                    Player.UI.T剃刀CM.Show = Sta.GameData.PurchasedTools[7];
-                    Player.UI.キャップ1CharacterElement.Show = Sta.GameData.PurchasedTools[8];
-                    Player.UI.キャップ2CharacterElement.Show = Sta.GameData.PurchasedTools[8];
-                    Player.UI.キャップ3CharacterElement.Show = Sta.GameData.PurchasedTools[8];
-                    Player.UI.ロータCM.Show = Sta.GameData.PurchasedTools[9];
-                    Player.UI.パールCM.Show = Sta.GameData.PurchasedTools[10];
-                    Player.UI.目隠帯.Dra = Sta.GameData.PurchasedTools[11];
-                    Player.UI.玉口枷.Dra = Sta.GameData.PurchasedTools[12];
-                    Player.UI.撮影.Dra = Sta.GameData.PurchasedTools[13];
+                    Player.UI.ディルCM.Show = GlobalState.GameData.PurchasedTools[0];
+                    Player.UI.コモンCM.Show = GlobalState.GameData.PurchasedTools[1];
+                    Player.UI.ドリルCM.Show = GlobalState.GameData.PurchasedTools[2];
+                    Player.UI.デンマCM.Show = GlobalState.GameData.PurchasedTools[3];
+                    Player.UI.アナルCM.Show = GlobalState.GameData.PurchasedTools[4];
+                    Player.UI.調教鞭CM.Show = GlobalState.GameData.PurchasedTools[5];
+                    Player.UI.羽根箒CM.Show = GlobalState.GameData.PurchasedTools[6];
+                    Player.UI.T剃刀CM.Show = GlobalState.GameData.PurchasedTools[7];
+                    Player.UI.キャップ1CharacterElement.Show = GlobalState.GameData.PurchasedTools[8];
+                    Player.UI.キャップ2CharacterElement.Show = GlobalState.GameData.PurchasedTools[8];
+                    Player.UI.キャップ3CharacterElement.Show = GlobalState.GameData.PurchasedTools[8];
+                    Player.UI.ロータCM.Show = GlobalState.GameData.PurchasedTools[9];
+                    Player.UI.パールCM.Show = GlobalState.GameData.PurchasedTools[10];
+                    Player.UI.目隠帯.Dra = GlobalState.GameData.PurchasedTools[11];
+                    Player.UI.玉口枷.Dra = GlobalState.GameData.PurchasedTools[12];
+                    Player.UI.撮影.Dra = GlobalState.GameData.PurchasedTools[13];
                     Player.表示ステート更新();
                     Player.ModBox();
                     Player.SensBox();
@@ -1761,8 +1761,8 @@ namespace SlaveMatrix
                     SlaveTextBubble.接続();
                     TrainingTarget.Body.汗染み濃度 = 1.0;
                     調教済みチェック = true;
-                    TrainingTargetTrained = Sta.GameData.TrainingTarget.Trained;
-                    if (調教完了 = Sta.GameData.TrainingTarget.IsTrained())
+                    TrainingTargetTrained = GlobalState.GameData.TrainingTarget.Trained;
+                    if (調教完了 = GlobalState.GameData.TrainingTarget.IsTrained())
                     {
                         調教完了表情();
                     }
@@ -1838,7 +1838,7 @@ namespace SlaveMatrix
                     {
                         TrainingTarget.Body.脱衣();
                     }
-                    Player.UI.SetTarget(Sta.GameData.TrainingTarget, TrainingTarget);
+                    Player.UI.SetTarget(GlobalState.GameData.TrainingTarget, TrainingTarget);
                     Player.SetStateTraining();
                     Player.表示ステート更新();
                     Player.ModBox();
@@ -1871,9 +1871,9 @@ namespace SlaveMatrix
                     {
                         Player.Result2();
                         Result2 = true;
-                        b1 = Sta.GameData.TrainingTarget.Pregnant && Sta.GameData.TrainingTarget.非妊娠;
-                        b2 = !TrainingTargetTrained && Sta.GameData.TrainingTarget.Trained;
-                        b3 = Sta.GameData.TrainingTarget.Trained && Sta.GameData.祝福 == null;
+                        b1 = GlobalState.GameData.TrainingTarget.Pregnant && GlobalState.GameData.TrainingTarget.非妊娠;
+                        b2 = !TrainingTargetTrained && GlobalState.GameData.TrainingTarget.Trained;
+                        b3 = GlobalState.GameData.TrainingTarget.Trained && GlobalState.GameData.祝福 == null;
                         Result3 = !(b1 || b2 || b3);
                     }
                     else if (!Result3)
@@ -1882,19 +1882,19 @@ namespace SlaveMatrix
                         if (b1)
                         {
                             InfoPanel 情報パネル2 = ip;
-                            情報パネル2.TextIm = 情報パネル2.TextIm + GameText.収容番号 + Sta.GameData.TrainingTarget.Number + "/" + Sta.GameData.TrainingTarget.Name + GameText.が妊娠しました + ((Sta.GameData.TrainingTarget.Laboror || Sta.GameData.TrainingTarget.Prostitute) ? ("\r\n" + GameText.労働が解除されます) : "") + "\r\n";
-                            Sta.GameData.TrainingTarget.非妊娠 = false;
+                            情報パネル2.TextIm = 情報パネル2.TextIm + GameText.収容番号 + GlobalState.GameData.TrainingTarget.Number + "/" + GlobalState.GameData.TrainingTarget.Name + GameText.が妊娠しました + ((GlobalState.GameData.TrainingTarget.Laboror || GlobalState.GameData.TrainingTarget.Prostitute) ? ("\r\n" + GameText.労働が解除されます) : "") + "\r\n";
+                            GlobalState.GameData.TrainingTarget.非妊娠 = false;
                         }
                         if (b2)
                         {
                             InfoPanel 情報パネル2 = ip;
-                            情報パネル2.TextIm = 情報パネル2.TextIm + GameText.収容番号 + Sta.GameData.TrainingTarget.Number + "/" + Sta.GameData.TrainingTarget.Name + GameText.の調教が完了しました + "\r\n";
+                            情報パネル2.TextIm = 情報パネル2.TextIm + GameText.収容番号 + GlobalState.GameData.TrainingTarget.Number + "/" + GlobalState.GameData.TrainingTarget.Name + GameText.の調教が完了しました + "\r\n";
                         }
                         if (b3)
                         {
-                            Sta.GameData.祝福 = Sta.GameData.TrainingTarget;
+                            GlobalState.GameData.祝福 = GlobalState.GameData.TrainingTarget;
                             InfoPanel 情報パネル2 = ip;
-                            情報パネル2.TextIm = 情報パネル2.TextIm + GameText.収容番号 + Sta.GameData.TrainingTarget.Number + "/" + Sta.GameData.TrainingTarget.Name + GameText.から祝福を受けました;
+                            情報パネル2.TextIm = 情報パネル2.TextIm + GameText.収容番号 + GlobalState.GameData.TrainingTarget.Number + "/" + GlobalState.GameData.TrainingTarget.Name + GameText.から祝福を受けました;
                             //Sounds.祝福.Play();
                         }
                         Result3 = true;
@@ -1918,9 +1918,9 @@ namespace SlaveMatrix
                     Player.Result1();
                     if (Player.UI.強制拘束)
                     {
-                        Sta.GameData.拘束具 = Player.UI.拘束bu;
+                        GlobalState.GameData.拘束具 = Player.UI.拘束bu;
                     }
-                    Sta.GameData.TrainingTarget.発情フラグ = Player.UI.発情bu;
+                    GlobalState.GameData.TrainingTarget.発情フラグ = Player.UI.発情bu;
                     Player.調教終了時();
                     TrainingTarget.Climax.End();
                     TrainingTarget.BodySway.End();
@@ -1950,7 +1950,7 @@ namespace SlaveMatrix
                     TrainingTarget.AnalCumDrip.End();
                     TrainingTarget.ThreadCumDrip.End();
                     TrainingTarget.Body.SetWaist();
-                    if (Sta.GameData.TrainingTarget.Trained)
+                    if (GlobalState.GameData.TrainingTarget.Trained)
                     {
                         TrainingTarget.Body.拘束具_表示 = false;
                         TrainingTarget.Body.首輪_表示 = true;
@@ -1965,7 +1965,7 @@ namespace SlaveMatrix
                     TrainingTarget.SetInitialExpression();
                     TrainingTarget.口修正();
                     TrainingTarget.舌_無し();
-                    TrainingTarget.Set衣装(Sta.GameData.TrainingTarget.着衣);
+                    TrainingTarget.Set衣装(GlobalState.GameData.TrainingTarget.着衣);
                     Player.SetState();
                     Player.表示ステート更新();
                     Player.ModBox();
@@ -1978,10 +1978,10 @@ namespace SlaveMatrix
                     Result2 = false;
                     Result3 = false;
                     si.Set(bre: false);
-                    Sta.GameData.目隠帯 = false;
-                    Sta.GameData.玉口枷 = false;
-                    Sta.GameData.拘束具 = false;
-                    Sta.GameData.断面 = false;
+                    GlobalState.GameData.目隠帯 = false;
+                    GlobalState.GameData.玉口枷 = false;
+                    GlobalState.GameData.拘束具 = false;
+                    GlobalState.GameData.断面 = false;
                 },
                 Draw = delegate (FpsCounter FPS)
                 {
@@ -2023,10 +2023,10 @@ namespace SlaveMatrix
     				if (u != null)
     				{
     					ip.TextIm = u.GetStatus();
-    					bs["MoveRoomDown"].Dra = Sta.MoveButton;
-    					bs["MoveRoomUp"].Dra = Sta.MoveButton;
-    					bs["MoveFloorDown"].Dra = Sta.MoveButton;
-    					bs["MoveFloorUp"].Dra = Sta.MoveButton;
+    					bs["MoveRoomDown"].Dra = GlobalState.MoveButton;
+    					bs["MoveRoomUp"].Dra = GlobalState.MoveButton;
+    					bs["MoveFloorDown"].Dra = GlobalState.MoveButton;
+    					bs["MoveFloorUp"].Dra = GlobalState.MoveButton;
     					bs["子"].Dra = true;
     					bs["親形質1"].Dra = true;
     					bs["親形質2"].Dra = true;
@@ -2037,10 +2037,10 @@ namespace SlaveMatrix
     					bs["一般労働"].Dra = u.非妊娠 && u.Trained;
     					bs["娼婦労働"].Dra = u.非妊娠 && u.Trained;
     					bs["売却"].Dra = !u.保守;
-    					bs["胸施術"].Dra = Sta.GameData.施術 && !u.ChaD.胸施術 && u.ChaD.Is胸甲殻();
-    					bs["股施術"].Dra = Sta.GameData.施術 && !u.ChaD.股施術 && u.ChaD.Is股防御();
-    					bs["淫紋"].Dra = Sta.GameData.淫紋 && u.Trained && !u.ChaD.タトゥ && !u.ChaD.Isタトゥ();
-    					bs["衣装"].Dra = Sta.GameData.衣装 && u.Trained;
+    					bs["胸施術"].Dra = GlobalState.GameData.施術 && !u.ChaD.胸施術 && u.ChaD.Is胸甲殻();
+    					bs["股施術"].Dra = GlobalState.GameData.施術 && !u.ChaD.股施術 && u.ChaD.Is股防御();
+    					bs["淫紋"].Dra = GlobalState.GameData.淫紋 && u.Trained && !u.ChaD.タトゥ && !u.ChaD.Isタトゥ();
+    					bs["衣装"].Dra = GlobalState.GameData.衣装 && u.Trained;
     				}
     				else
     				{
@@ -2070,7 +2070,7 @@ namespace SlaveMatrix
     				{
     				}), 15).Select(delegate(TA e)
     				{
-    					Unit u = Sta.GameData.Slaves[n + i];
+    					Unit u = GlobalState.GameData.Slaves[n + i];
     					if (u == null)
     					{
     						e.Text = "No Slave";
@@ -2078,7 +2078,7 @@ namespace SlaveMatrix
     						{
     							lv縁色初期化();
     							b.PartGroup.Values.First().ToParT().PenColor = Color.Red;
-    							Sta.GameData.TrainingTarget = null;
+    							GlobalState.GameData.TrainingTarget = null;
     							if (TrainingTarget != null)
     							{
     								TrainingTarget.Dispose();
@@ -2094,11 +2094,11 @@ namespace SlaveMatrix
     						{
     							lv縁色初期化();
     							b.PartGroup.Values.First().ToParT().PenColor = Color.Red;
-    							Sta.GameData.TrainingTarget = u;
+    							GlobalState.GameData.TrainingTarget = u;
     							bs["子"].Action(bs["子"]);
     							if (ip.Mai2Show)
     							{
-    								if (Sta.GameData.TrainingTarget == null)
+    								if (GlobalState.GameData.TrainingTarget == null)
     								{
     									ip.Mai2Im = " ";
     									ip.選択肢表示 = false;
@@ -2144,9 +2144,9 @@ namespace SlaveMatrix
                 Action 部屋選択 = delegate
                 {
                     lv縁色初期化();
-                    if (Sta.GameData.TrainingTarget != null && f == Sta.GameData.TrainingTarget.階層位置 * 15)
+                    if (GlobalState.GameData.TrainingTarget != null && f == GlobalState.GameData.TrainingTarget.階層位置 * 15)
                     {
-                        lv.bs[Sta.GameData.TrainingTarget.RoomNumber.ToString()].PartGroup.Values.First().ToParT().PenColor = Color.Red;
+                        lv.bs[GlobalState.GameData.TrainingTarget.RoomNumber.ToString()].PartGroup.Values.First().ToParT().PenColor = Color.Red;
                     }
                 };
 
@@ -2371,7 +2371,7 @@ namespace SlaveMatrix
                             but3.Action(but3);
                             num4 = 14;
                         }
-                        else if (num4 > 14 && num2 < Sta.GameData.フロア数 - 1)
+                        else if (num4 > 14 && num2 < GlobalState.GameData.フロア数 - 1)
                         {
                             ButtonBase but4 = bs["ボタン" + (num2 + 2)];
                             but4.Action(but4);
@@ -2382,7 +2382,7 @@ namespace SlaveMatrix
                         but5.Action(but5);
                         if (ip.Mai2Show)
                         {
-                            if (Sta.GameData.TrainingTarget == null)
+                            if (GlobalState.GameData.TrainingTarget == null)
                             {
                                 ip.Mai2Im = " ";
                                 ip.選択肢表示 = false;
@@ -2403,7 +2403,7 @@ namespace SlaveMatrix
                             {
                                 bs["ボタン" + j].Dra = false;
                             }
-                            for (int k = 1; k <= Sta.GameData.フロア数; k++)
+                            for (int k = 1; k <= GlobalState.GameData.フロア数; k++)
                             {
                                 bs["ボタン" + k].Dra = true;
                             }
@@ -2415,12 +2415,12 @@ namespace SlaveMatrix
                             ip.Sub2Show = true;
                             d = false;
                             Player.UI.ステート描画 = false;
-                            if (Sta.GameData.TrainingTarget != null)
+                            if (GlobalState.GameData.TrainingTarget != null)
                             {
-                                ButtonBase buttonBase = bs["ボタン" + (Sta.GameData.TrainingTarget.階層位置 + 1)];
+                                ButtonBase buttonBase = bs["ボタン" + (GlobalState.GameData.TrainingTarget.階層位置 + 1)];
                                 buttonBase.Action(buttonBase);
                                 lv縁色初期化();
-                                lv.bs[Sta.GameData.TrainingTarget.RoomNumber.ToString()].PartGroup.Values.First().ToParT().PenColor = Color.Red;
+                                lv.bs[GlobalState.GameData.TrainingTarget.RoomNumber.ToString()].PartGroup.Values.First().ToParT().PenColor = Color.Red;
                                 bs["子"].Action(bs["子"]);
                             }
                             else
@@ -2441,7 +2441,7 @@ namespace SlaveMatrix
                             }
                             d = true;
                             si.Set(bre: false);
-                            if (Sta.BigWindow)
+                            if (GlobalState.BigWindow)
                             {
                                 npl.ShapePartT.PositionBase = new Vector2D(0.095, 0.035);
                             }
@@ -2465,10 +2465,10 @@ namespace SlaveMatrix
                 bs.Add("ボタン0", MyUI.Button2(Med, DrawBuffer, GameText.戻る, new Vector2D(0.85, 0.02), delegate
                 {
                     ////Sounds.操作.Play();
-                    if (Sta.GameData.TrainingTarget != null && bs["子"].PartGroup.Values.First().ToParT().PenColor != Color.Red)
+                    if (GlobalState.GameData.TrainingTarget != null && bs["子"].PartGroup.Values.First().ToParT().PenColor != Color.Red)
                     {
-                        SetTrainingTarget(Med, Sta.GameData.TrainingTarget);
-                        SetUI(Sta.GameData.TrainingTarget);
+                        SetTrainingTarget(Med, GlobalState.GameData.TrainingTarget);
+                        SetUI(GlobalState.GameData.TrainingTarget);
                     }
                     Med.Mode = "メインフォーム";
                 }));
@@ -2483,17 +2483,17 @@ namespace SlaveMatrix
     				}
     				bs縁色初期化();
     				b.PartGroup.Values.First().ToParT().PenColor = Color.Red;
-    				if (Sta.GameData.TrainingTarget != null)
+    				if (GlobalState.GameData.TrainingTarget != null)
     				{
-    					if (TrainingTarget == null || TrainingTarget.CharacterData != Sta.GameData.TrainingTarget.ChaD)
+    					if (TrainingTarget == null || TrainingTarget.CharacterData != GlobalState.GameData.TrainingTarget.ChaD)
     					{
-    						SetTrainingTarget(Med, Sta.GameData.TrainingTarget);
+    						SetTrainingTarget(Med, GlobalState.GameData.TrainingTarget);
     					}
-    					SetUI(Sta.GameData.TrainingTarget);
-    					bs["胸施術"].Dra = Sta.GameData.施術 && !Sta.GameData.TrainingTarget.ChaD.胸施術 && Sta.GameData.TrainingTarget.ChaD.Is胸甲殻();
-    					bs["股施術"].Dra = Sta.GameData.施術 && !Sta.GameData.TrainingTarget.ChaD.股施術 && Sta.GameData.TrainingTarget.ChaD.Is股防御();
-    					bs["淫紋"].Dra = Sta.GameData.淫紋 && Sta.GameData.TrainingTarget.Trained && !Sta.GameData.TrainingTarget.ChaD.タトゥ && !Sta.GameData.TrainingTarget.ChaD.Isタトゥ();
-    					bs["衣装"].Dra = Sta.GameData.衣装 && Sta.GameData.TrainingTarget.Trained;
+    					SetUI(GlobalState.GameData.TrainingTarget);
+    					bs["胸施術"].Dra = GlobalState.GameData.施術 && !GlobalState.GameData.TrainingTarget.ChaD.胸施術 && GlobalState.GameData.TrainingTarget.ChaD.Is胸甲殻();
+    					bs["股施術"].Dra = GlobalState.GameData.施術 && !GlobalState.GameData.TrainingTarget.ChaD.股施術 && GlobalState.GameData.TrainingTarget.ChaD.Is股防御();
+    					bs["淫紋"].Dra = GlobalState.GameData.淫紋 && GlobalState.GameData.TrainingTarget.Trained && !GlobalState.GameData.TrainingTarget.ChaD.タトゥ && !GlobalState.GameData.TrainingTarget.ChaD.Isタトゥ();
+    					bs["衣装"].Dra = GlobalState.GameData.衣装 && GlobalState.GameData.TrainingTarget.Trained;
     				}
     			}));
 
@@ -2502,13 +2502,13 @@ namespace SlaveMatrix
     				////Sounds.操作.Play();
     				bs縁色初期化();
     				b.PartGroup.Values.First().ToParT().PenColor = Color.Red;
-    				if (Sta.GameData.TrainingTarget != null)
+    				if (GlobalState.GameData.TrainingTarget != null)
     				{
     					if (TrainingTarget != null)
     					{
     						TrainingTarget.Dispose();
     					}
-    					TrainingTarget = new Character(Med, DrawBuffer, Sta.GameData.TrainingTarget.Mother.ChaD);
+    					TrainingTarget = new Character(Med, DrawBuffer, GlobalState.GameData.TrainingTarget.Mother.ChaD);
     					if (TrainingTarget.Body.IsDualEyes)
     					{
     						TrainingTarget.両目_見つめ();
@@ -2525,15 +2525,15 @@ namespace SlaveMatrix
     					{
     						TrainingTarget.額目_見つめ();
     					}
-    					if (Sta.GameData.TrainingTarget.Mother.Race == GameText.ヴィオランテ)
+    					if (GlobalState.GameData.TrainingTarget.Mother.Race == GameText.ヴィオランテ)
     					{
     						TrainingTarget.両瞼_卑();
     						TrainingTarget.両瞼_半1();
     					}
     					TrainingTarget.口_閉笑();
     					TrainingTarget.Set基本姿勢();
-    					npl.Text = GameText.収容番号 + Sta.GameData.TrainingTarget.Number + "\r\n" + GameText.親形質1;
-    					ip.TextIm = Sta.GameData.TrainingTarget.Mother.GetStatus();
+    					npl.Text = GameText.収容番号 + GlobalState.GameData.TrainingTarget.Number + "\r\n" + GameText.親形質1;
+    					ip.TextIm = GlobalState.GameData.TrainingTarget.Mother.GetStatus();
     					bs["胸施術"].Dra = false;
     					bs["股施術"].Dra = false;
     					bs["淫紋"].Dra = false;
@@ -2546,13 +2546,13 @@ namespace SlaveMatrix
     				////Sounds.操作.Play();
     				bs縁色初期化();
     				b.PartGroup.Values.First().ToParT().PenColor = Color.Red;
-    				if (Sta.GameData.TrainingTarget != null)
+    				if (GlobalState.GameData.TrainingTarget != null)
     				{
     					if (TrainingTarget != null)
     					{
     						TrainingTarget.Dispose();
     					}
-    					TrainingTarget = new Character(Med, DrawBuffer, Sta.GameData.TrainingTarget.Father.ChaD);
+    					TrainingTarget = new Character(Med, DrawBuffer, GlobalState.GameData.TrainingTarget.Father.ChaD);
     					if (TrainingTarget.Body.IsDualEyes)
     					{
     						TrainingTarget.両目_見つめ();
@@ -2569,15 +2569,15 @@ namespace SlaveMatrix
     					{
     						TrainingTarget.額目_見つめ();
     					}
-    					if (Sta.GameData.TrainingTarget.Father.Race == GameText.ヴィオランテ)
+    					if (GlobalState.GameData.TrainingTarget.Father.Race == GameText.ヴィオランテ)
     					{
     						TrainingTarget.両瞼_卑();
     						TrainingTarget.両瞼_半1();
     					}
     					TrainingTarget.口_閉笑();
     					TrainingTarget.Set基本姿勢();
-    					npl.Text = GameText.収容番号 + Sta.GameData.TrainingTarget.Number + "\r\n" + GameText.親形質2;
-    					ip.TextIm = Sta.GameData.TrainingTarget.Father.GetStatus();
+    					npl.Text = GameText.収容番号 + GlobalState.GameData.TrainingTarget.Number + "\r\n" + GameText.親形質2;
+    					ip.TextIm = GlobalState.GameData.TrainingTarget.Father.GetStatus();
     					bs["胸施術"].Dra = false;
     					bs["股施術"].Dra = false;
     					bs["淫紋"].Dra = false;
@@ -2588,56 +2588,56 @@ namespace SlaveMatrix
     			bs.Add("保守", MyUI.Button2(Med, DrawBuffer, GameText.保守, new Vector2D(0.85, 0.34), delegate(ButtonBase b)
     			{
     				////Sounds.操作.Play();
-    				if (Sta.GameData.TrainingTarget != null)
+    				if (GlobalState.GameData.TrainingTarget != null)
     				{
     					保守sw.OnOff(b);
-    					Sta.GameData.TrainingTarget.保守 = 保守sw.Flag;
-    					bs["売却"].Dra = !Sta.GameData.TrainingTarget.保守;
-    					ip.SubInfoIm = (Sta.GameData.TrainingTarget.保守 ? GameText.奴隷を保守対象に設定しました : GameText.奴隷の保守設定を解除しました);
+    					GlobalState.GameData.TrainingTarget.保守 = 保守sw.Flag;
+    					bs["売却"].Dra = !GlobalState.GameData.TrainingTarget.保守;
+    					ip.SubInfoIm = (GlobalState.GameData.TrainingTarget.保守 ? GameText.奴隷を保守対象に設定しました : GameText.奴隷の保守設定を解除しました);
     				}
     			}));
 
     			bs.Add("一般労働", MyUI.Button2(Med, DrawBuffer, GameText.一般労働, new Vector2D(0.85, 0.42), delegate(ButtonBase b)
     			{
     				////Sounds.操作.Play();
-    				if (Sta.GameData.TrainingTarget != null)
+    				if (GlobalState.GameData.TrainingTarget != null)
     				{
     					一般sw.OnOff(b);
-    					Sta.GameData.TrainingTarget.Laboror = 一般sw.Flag;
+    					GlobalState.GameData.TrainingTarget.Laboror = 一般sw.Flag;
     					if (一般sw.Flag && 娼婦sw.Flag)
     					{
     						娼婦sw.SetFlag(bs["娼婦労働"], On: false);
     					}
-    					Sta.GameData.TrainingTarget.Prostitute = 娼婦sw.Flag;
-    					ip.SubInfoIm = (Sta.GameData.TrainingTarget.Laboror ? GameText.奴隷を一般労働に設定しました : GameText.奴隷の一般労働を解除しました);
+    					GlobalState.GameData.TrainingTarget.Prostitute = 娼婦sw.Flag;
+    					ip.SubInfoIm = (GlobalState.GameData.TrainingTarget.Laboror ? GameText.奴隷を一般労働に設定しました : GameText.奴隷の一般労働を解除しました);
     				}
     			}));
 
     			bs.Add("娼婦労働", MyUI.Button2(Med, DrawBuffer, GameText.娼婦労働, new Vector2D(0.85, 0.5), delegate (ButtonBase b)
     			{
     				////Sounds.操作.Play();
-    				if (Sta.GameData.TrainingTarget != null)
+    				if (GlobalState.GameData.TrainingTarget != null)
     				{
     					娼婦sw.OnOff(b);
-    					Sta.GameData.TrainingTarget.Prostitute = 娼婦sw.Flag;
+    					GlobalState.GameData.TrainingTarget.Prostitute = 娼婦sw.Flag;
     					if (娼婦sw.Flag && 一般sw.Flag)
     					{
     						一般sw.SetFlag(bs["一般労働"], On: false);
     					}
-    					Sta.GameData.TrainingTarget.Laboror = 一般sw.Flag;
-    					ip.SubInfoIm = (Sta.GameData.TrainingTarget.Prostitute ? GameText.奴隷を娼婦労働に設定しました : GameText.奴隷の娼婦労働を解除しました);
+    					GlobalState.GameData.TrainingTarget.Laboror = 一般sw.Flag;
+    					ip.SubInfoIm = (GlobalState.GameData.TrainingTarget.Prostitute ? GameText.奴隷を娼婦労働に設定しました : GameText.奴隷の娼婦労働を解除しました);
     				}
     			}));
     			
                 bs.Add("全一般", MyUI.Button2(Med, DrawBuffer, GameText.全一般, new Vector2D(0.75, 0.405), delegate
     			{
     				////Sounds.操作.Play();
-    				if (Sta.GameData.TrainingTarget != null)
+    				if (GlobalState.GameData.TrainingTarget != null)
     				{
     					一般sw.SetFlag(bs["一般労働"], On: true);
     					娼婦sw.SetFlag(bs["娼婦労働"], On: false);
     				}
-    				Unit[] 地下室3 = Sta.GameData.Slaves;
+    				Unit[] 地下室3 = GlobalState.GameData.Slaves;
     				foreach (Unit unit3 in 地下室3)
     				{
     					if (unit3 != null && unit3.Trained && unit3.非妊娠)
@@ -2652,12 +2652,12 @@ namespace SlaveMatrix
     			bs.Add("全娼婦", MyUI.Button2(Med, DrawBuffer, GameText.全娼婦, new Vector2D(0.75, 0.485), delegate
     			{
     				////Sounds.操作.Play();
-    				if (Sta.GameData.TrainingTarget != null)
+    				if (GlobalState.GameData.TrainingTarget != null)
     				{
     					一般sw.SetFlag(bs["一般労働"], On: false);
     					娼婦sw.SetFlag(bs["娼婦労働"], On: true);
     				}
-    				Unit[] 地下室2 = Sta.GameData.Slaves;
+    				Unit[] 地下室2 = GlobalState.GameData.Slaves;
     				foreach (Unit unit2 in 地下室2)
     				{
     					if (unit2 != null && unit2.Trained && unit2.非妊娠)
@@ -2672,12 +2672,12 @@ namespace SlaveMatrix
     			bs.Add("全解除", MyUI.Button2(Med, DrawBuffer, GameText.全解除, new Vector2D(0.75, 0.565), delegate
     			{
     				////Sounds.操作.Play();
-    				if (Sta.GameData.TrainingTarget != null)
+    				if (GlobalState.GameData.TrainingTarget != null)
     				{
     					一般sw.SetFlag(bs["一般労働"], On: false);
     					娼婦sw.SetFlag(bs["娼婦労働"], On: false);
     				}
-    				Unit[] 地下室 = Sta.GameData.Slaves;
+    				Unit[] 地下室 = GlobalState.GameData.Slaves;
     				foreach (Unit unit in 地下室)
     				{
     					if (unit != null && unit.Trained)
@@ -2696,9 +2696,9 @@ namespace SlaveMatrix
                         //TODO fix?
                         ////Sounds.操作.Play();
     				}
-    				ip.Mai2Im = Sta.GameData.TrainingTarget.GetPriceInfo();
+    				ip.Mai2Im = GlobalState.GameData.TrainingTarget.GetPriceInfo();
     				ip.Mai2Show = true;
-    				if (!Sta.GameData.TrainingTarget.保守)
+    				if (!GlobalState.GameData.TrainingTarget.保守)
     				{
     					ip.TextIm = GameText.売却しますか;
     				}
@@ -2706,27 +2706,27 @@ namespace SlaveMatrix
     				{
     					Color HitColor4 = ColorHelper.Empty;
     					bs.Move(ref HitColor4);
-    					ulong price = Sta.GameData.TrainingTarget.GetPrice();
-    					Sta.GameData.所持金 = Sta.GameData.所持金.overflow_add(price);
+    					ulong price = GlobalState.GameData.TrainingTarget.GetPrice();
+    					GlobalState.GameData.所持金 = GlobalState.GameData.所持金.overflow_add(price);
     					//Sounds.精算.Play();
     					ip.UpdateSub2();
-    					for (int m = 0; m < Sta.GameData.Slaves.Length; m++)
+    					for (int m = 0; m < GlobalState.GameData.Slaves.Length; m++)
     					{
-    						if (Sta.GameData.Slaves[m] == Sta.GameData.TrainingTarget)
+    						if (GlobalState.GameData.Slaves[m] == GlobalState.GameData.TrainingTarget)
     						{
-    							Sta.GameData.Slaves[m] = null;
+    							GlobalState.GameData.Slaves[m] = null;
     							break;
     						}
     					}
-    					Sta.GameData.地下室詰め();
+    					GlobalState.GameData.地下室詰め();
     					set(f);
-    					ip.SubInfoIm = GameText.収容番号 + Sta.GameData.TrainingTarget.Number + GameText.を売却しました + " \r\n+" + price.ToString("#,0");
+    					ip.SubInfoIm = GameText.収容番号 + GlobalState.GameData.TrainingTarget.Number + GameText.を売却しました + " \r\n+" + price.ToString("#,0");
     					d = false;
-    					ButtonBase but8 = bs["ボタン" + (Sta.GameData.TrainingTarget.階層位置 + 1)];
+    					ButtonBase but8 = bs["ボタン" + (GlobalState.GameData.TrainingTarget.階層位置 + 1)];
     					but8.Action(but8);
-    					ButtonBase but9 = lv.bs.EnumBut.ToArray()[Sta.GameData.TrainingTarget.RoomNumber];
+    					ButtonBase but9 = lv.bs.EnumBut.ToArray()[GlobalState.GameData.TrainingTarget.RoomNumber];
     					but9.Action(but9);
-    					if (Sta.GameData.TrainingTarget == null)
+    					if (GlobalState.GameData.TrainingTarget == null)
     					{
     						ip.Mai2Im = " ";
     						ip.選択肢表示 = false;
@@ -2744,25 +2744,25 @@ namespace SlaveMatrix
     					Color HitColor3 = ColorHelper.Empty;
     					bs.Move(ref HitColor3);
     					ip.Mai2Show = false;
-    					if (Sta.GameData.TrainingTarget == null)
+    					if (GlobalState.GameData.TrainingTarget == null)
     					{
     						ip.TextIm = " ";
     					}
     					else
     					{
-    						ip.TextIm = Sta.GameData.TrainingTarget.GetStatus();
+    						ip.TextIm = GlobalState.GameData.TrainingTarget.GetStatus();
     					}
     					ip.SubInfoIm = GameText.売却をキャンセルしました;
     					ip.選択肢表示 = false;
     				};
-    				ip.選択肢表示 = !Sta.GameData.TrainingTarget.保守;
+    				ip.選択肢表示 = !GlobalState.GameData.TrainingTarget.保守;
     			}));
 
     			bs.Add("全売却", MyUI.Button2(Med, DrawBuffer, GameText.全売却, new Vector2D(0.75, 0.645), delegate
     			{
     				//Sounds.操作.Play();
     				string tb = ip.TextIm;
-    				ip.Mai2Im = Sta.GameData.GetPriceInfo(out var p);
+    				ip.Mai2Im = GlobalState.GameData.GetPriceInfo(out var p);
     				ip.Mai2Show = true;
     				ip.TextIm = GameText.保守以外の全ての奴隷を売却しますか;
     				ip.選択yAct = delegate
@@ -2770,36 +2770,36 @@ namespace SlaveMatrix
     					Color HitColor2 = ColorHelper.Empty;
     					bs.Move(ref HitColor2);
     					ip.Mai2Show = false;
-    					Sta.GameData.所持金 = Sta.GameData.所持金.overflow_add(p);
+    					GlobalState.GameData.所持金 = GlobalState.GameData.所持金.overflow_add(p);
                         //TODO fix?
                         ////Sounds.精算.Play();
     					ip.UpdateSub2();
-    					for (int l = 0; l < Sta.GameData.Slaves.Length; l++)
+    					for (int l = 0; l < GlobalState.GameData.Slaves.Length; l++)
     					{
-    						if (Sta.GameData.Slaves[l] != null && !Sta.GameData.Slaves[l].保守)
+    						if (GlobalState.GameData.Slaves[l] != null && !GlobalState.GameData.Slaves[l].保守)
     						{
-    							Sta.GameData.Slaves[l] = null;
+    							GlobalState.GameData.Slaves[l] = null;
     						}
     					}
-    					Sta.GameData.地下室詰め();
+    					GlobalState.GameData.地下室詰め();
     					set(f);
     					d = false;
-    					if (Sta.GameData.TrainingTarget != null)
+    					if (GlobalState.GameData.TrainingTarget != null)
     					{
-    						if (!Sta.GameData.TrainingTarget.保守)
+    						if (!GlobalState.GameData.TrainingTarget.保守)
     						{
-    							ButtonBase but6 = bs["ボタン" + (Sta.GameData.TrainingTarget.階層位置 + 1)];
+    							ButtonBase but6 = bs["ボタン" + (GlobalState.GameData.TrainingTarget.階層位置 + 1)];
     							but6.Action(but6);
-    							ButtonBase but7 = lv.bs.EnumBut.ToArray()[Sta.GameData.TrainingTarget.RoomNumber];
+    							ButtonBase but7 = lv.bs.EnumBut.ToArray()[GlobalState.GameData.TrainingTarget.RoomNumber];
     							but7.Action(but7);
     						}
-    						else if (Sta.AlwaysUseName)
+    						else if (GlobalState.AlwaysUseName)
     						{
-                                npl.Text = GameText.収容番号 + Sta.GameData.TrainingTarget.Number + "\r\n" + Sta.GameData.TrainingTarget.Name;
+                                npl.Text = GameText.収容番号 + GlobalState.GameData.TrainingTarget.Number + "\r\n" + GlobalState.GameData.TrainingTarget.Name;
                             }
     						else
     						{
-    							npl.Text = GameText.収容番号 + Sta.GameData.TrainingTarget.Number + (Sta.GameData.TrainingTarget.Trained ? ("\r\n" + Sta.GameData.TrainingTarget.Name) : Sta.GameData.TrainingTarget.Race);
+    							npl.Text = GameText.収容番号 + GlobalState.GameData.TrainingTarget.Number + (GlobalState.GameData.TrainingTarget.Trained ? ("\r\n" + GlobalState.GameData.TrainingTarget.Name) : GlobalState.GameData.TrainingTarget.Race);
     						}
     					}
     					ip.SubInfoIm = GameText.保守以外の全ての奴隷を売却しました + " \r\n+" + p.ToString("#,0");
@@ -3047,30 +3047,30 @@ namespace SlaveMatrix
     			//parT22.OP.Rotation(shapePartT8.OP.GetCenter(), -26.0);
     			bs.Add("胸施術", MyUI.Button2(Med, DrawBuffer, GameText.胸施術, new Vector2D(0.75, 0.085), delegate
     			{
-    				if (Sta.GameData.所持金 < 胸施術価格)
+    				if (GlobalState.GameData.所持金 < 胸施術価格)
     				{
     					//Sounds.操作.Play();
     					ip.SubInfoIm = GameText.所持金が足りません;
     				}
     				else
     				{
-    					Sta.GameData.所持金 -= 胸施術価格;
+    					GlobalState.GameData.所持金 -= 胸施術価格;
                         //TODO fix?
                         ////Sounds.精算.Play();
     					ip.UpdateSub2();
-    					Sta.GameData.TrainingTarget.ChaD.胸施術 = true;
+    					GlobalState.GameData.TrainingTarget.ChaD.胸施術 = true;
     					TrainingTarget.Body.胸施術();
-    					if (Sta.GameData.TrainingTarget.着衣 != null)
+    					if (GlobalState.GameData.TrainingTarget.着衣 != null)
     					{
-    						TrainingTarget.Set衣装(Sta.GameData.TrainingTarget.着衣);
+    						TrainingTarget.Set衣装(GlobalState.GameData.TrainingTarget.着衣);
     					}
-    					Sta.GameData.TrainingTarget.体力消費();
+    					GlobalState.GameData.TrainingTarget.体力消費();
     					bs["胸施術"].Dra = false;
     					ip.SubInfoIm = GameText.胸の甲殻を切除しました;
     					TrainingTarget.SetInitialExpression();
     					TrainingTarget.Emotion();
     					TrainingTarget.UpdateExpression();
-    					if (Sta.GameData.TrainingTarget.Trained)
+    					if (GlobalState.GameData.TrainingTarget.Trained)
     					{
     						TrainingTarget.Body.拘束具_表示 = false;
     						TrainingTarget.Body.首輪_表示 = true;
@@ -3089,29 +3089,29 @@ namespace SlaveMatrix
     			//parT23.OP.Rotation(shapePartT8.OP.GetCenter(), -26.0);
     			bs.Add("股施術", MyUI.Button2(Med, DrawBuffer, GameText.股施術, new Vector2D(0.75, 0.165), delegate
     			{
-    				if (Sta.GameData.所持金 < 股施術価格)
+    				if (GlobalState.GameData.所持金 < 股施術価格)
     				{
     					//Sounds.操作.Play();
     					ip.SubInfoIm = GameText.所持金が足りません;
     				}
     				else
     				{
-    					Sta.GameData.所持金 -= 股施術価格;
+    					GlobalState.GameData.所持金 -= 股施術価格;
     					//Sounds.精算.Play();
     					ip.UpdateSub2();
-    					Sta.GameData.TrainingTarget.ChaD.股施術 = true;
+    					GlobalState.GameData.TrainingTarget.ChaD.股施術 = true;
     					TrainingTarget.Body.股施術();
-    					if (Sta.GameData.TrainingTarget.着衣 != null)
+    					if (GlobalState.GameData.TrainingTarget.着衣 != null)
     					{
-    						TrainingTarget.Set衣装(Sta.GameData.TrainingTarget.着衣);
+    						TrainingTarget.Set衣装(GlobalState.GameData.TrainingTarget.着衣);
     					}
-    					Sta.GameData.TrainingTarget.体力消費();
+    					GlobalState.GameData.TrainingTarget.体力消費();
     					bs["股施術"].Dra = false;
     					ip.SubInfoIm = GameText.股の + (TrainingTarget.Body.Is蠍 ? GameText.甲殻 : GameText.鱗) + GameText.を切除しました;
     					TrainingTarget.SetInitialExpression();
     					TrainingTarget.Emotion();
     					TrainingTarget.UpdateExpression();
-    					if (Sta.GameData.TrainingTarget.Trained)
+    					if (GlobalState.GameData.TrainingTarget.Trained)
     					{
     						TrainingTarget.Body.拘束具_表示 = false;
     						TrainingTarget.Body.首輪_表示 = true;
@@ -3129,26 +3129,26 @@ namespace SlaveMatrix
     			//parT24.OP.Rotation(shapePartT8.OP.GetCenter(), -26.0);
     			bs.Add("淫紋", MyUI.Button2(Med, DrawBuffer, GameText.淫紋, new Vector2D(0.75, 0.245), delegate
     			{
-    				if (Sta.GameData.所持金 < 淫紋価格)
+    				if (GlobalState.GameData.所持金 < 淫紋価格)
     				{
     					//Sounds.操作.Play();
     					ip.SubInfoIm = GameText.所持金が足りません;
     				}
     				else
     				{
-    					Sta.GameData.所持金 -= 淫紋価格;
+    					GlobalState.GameData.所持金 -= 淫紋価格;
     					//Sounds.精算.Play();
     					ip.UpdateSub2();
-    					Sta.GameData.TrainingTarget.ChaD.タトゥ = true;
+    					GlobalState.GameData.TrainingTarget.ChaD.タトゥ = true;
     					TrainingTarget.Body.タトゥ();
-    					Sta.GameData.TrainingTarget.発情フラグ = true;
-    					Sta.GameData.TrainingTarget.体力消費();
+    					GlobalState.GameData.TrainingTarget.発情フラグ = true;
+    					GlobalState.GameData.TrainingTarget.体力消費();
     					bs["淫紋"].Dra = false;
     					ip.SubInfoIm = GameText.淫紋を刻みました;
     					TrainingTarget.SetInitialExpression();
     					TrainingTarget.Emotion();
     					TrainingTarget.UpdateExpression();
-    					if (Sta.GameData.TrainingTarget.Trained)
+    					if (GlobalState.GameData.TrainingTarget.Trained)
     					{
     						TrainingTarget.Body.拘束具_表示 = false;
     						TrainingTarget.Body.首輪_表示 = true;
@@ -3170,7 +3170,7 @@ namespace SlaveMatrix
     			//parT25.OP.Rotation(shapePartT9.OP.GetCenter(), -26.0);
     			bs.Add("衣装", MyUI.Button2(Med, DrawBuffer, GameText.衣装, new Vector2D(0.75, 0.325), delegate
     			{
-    				if (Sta.GameData.所持金 < 衣装変更価格)
+    				if (GlobalState.GameData.所持金 < 衣装変更価格)
     				{
                         //TODO fix?
                         ////Sounds.操作.Play();
@@ -3178,17 +3178,17 @@ namespace SlaveMatrix
     				}
     				else
     				{
-    					Sta.GameData.所持金 -= 衣装変更価格;
+    					GlobalState.GameData.所持金 -= 衣装変更価格;
                         //TODO fix?
                         ////Sounds.精算.Play();
     					ip.UpdateSub2();
-    					Sta.GameData.TrainingTarget.Change衣装();
-    					TrainingTarget.Set衣装(Sta.GameData.TrainingTarget.着衣);
+    					GlobalState.GameData.TrainingTarget.Change衣装();
+    					TrainingTarget.Set衣装(GlobalState.GameData.TrainingTarget.着衣);
     					ip.SubInfoIm = GameText.衣装を変更しました;
     					TrainingTarget.SetInitialExpression();
     					TrainingTarget.Emotion();
     					TrainingTarget.UpdateExpression();
-    					if (Sta.GameData.TrainingTarget.Trained)
+    					if (GlobalState.GameData.TrainingTarget.Trained)
     					{
     						TrainingTarget.Body.拘束具_表示 = false;
     						TrainingTarget.Body.首輪_表示 = true;
@@ -3202,63 +3202,63 @@ namespace SlaveMatrix
     				}
     			}));
 
-                bs.Add("MoveRoomDown", MyUI.Button(Med, DrawBuffer, "Room ▼", Sta.BigWindow ? new Vector2D(0.146, 0.14) : new Vector2D(0.195, 0.1625), delegate
+                bs.Add("MoveRoomDown", MyUI.Button(Med, DrawBuffer, "Room ▼", GlobalState.BigWindow ? new Vector2D(0.146, 0.14) : new Vector2D(0.195, 0.1625), delegate
                     {
                         //Sounds.操作.Play();
                         MoveRoomDown();
                         mod.Setting();
-                        if (Sta.AlwaysUseName)
+                        if (GlobalState.AlwaysUseName)
                         {
-                            npl.Text = GameText.収容番号 + Sta.GameData.TrainingTarget.Number + "\r\n" + Sta.GameData.TrainingTarget.Name;
+                            npl.Text = GameText.収容番号 + GlobalState.GameData.TrainingTarget.Number + "\r\n" + GlobalState.GameData.TrainingTarget.Name;
                         }
                         else
                         {
-                            npl.Text = GameText.収容番号 + Sta.GameData.TrainingTarget.Number + (Sta.GameData.TrainingTarget.Trained ? ("\r\n" + Sta.GameData.TrainingTarget.Name) : ("\r\n" + Sta.GameData.TrainingTarget.Race));
+                            npl.Text = GameText.収容番号 + GlobalState.GameData.TrainingTarget.Number + (GlobalState.GameData.TrainingTarget.Trained ? ("\r\n" + GlobalState.GameData.TrainingTarget.Name) : ("\r\n" + GlobalState.GameData.TrainingTarget.Race));
                         }
                     }));
 
-                bs.Add("MoveRoomUp", MyUI.Button(Med, DrawBuffer, "Room ▲", Sta.BigWindow ? new Vector2D(0.146, 0.11) : new Vector2D(0.195, 0.12), delegate
+                bs.Add("MoveRoomUp", MyUI.Button(Med, DrawBuffer, "Room ▲", GlobalState.BigWindow ? new Vector2D(0.146, 0.11) : new Vector2D(0.195, 0.12), delegate
                     {
                         //Sounds.操作.Play();
                         MoveRoomUp();
                         mod.Setting();
-                        if (Sta.AlwaysUseName)
+                        if (GlobalState.AlwaysUseName)
                         {
-                            npl.Text = GameText.収容番号 + Sta.GameData.TrainingTarget.Number + "\r\n" + Sta.GameData.TrainingTarget.Name;
+                            npl.Text = GameText.収容番号 + GlobalState.GameData.TrainingTarget.Number + "\r\n" + GlobalState.GameData.TrainingTarget.Name;
                         }
                         else
                         {
-                            npl.Text = GameText.収容番号 + Sta.GameData.TrainingTarget.Number + (Sta.GameData.TrainingTarget.Trained ? ("\r\n" + Sta.GameData.TrainingTarget.Name) : ("\r\n" + Sta.GameData.TrainingTarget.Race));
+                            npl.Text = GameText.収容番号 + GlobalState.GameData.TrainingTarget.Number + (GlobalState.GameData.TrainingTarget.Trained ? ("\r\n" + GlobalState.GameData.TrainingTarget.Name) : ("\r\n" + GlobalState.GameData.TrainingTarget.Race));
                         }
                     }));
                 
-                bs.Add("MoveFloorDown", MyUI.Button(Med, DrawBuffer, "Floor ▼", Sta.BigWindow ? new Vector2D(0.146, 0.2) : new Vector2D(0.195, 0.2475), delegate
+                bs.Add("MoveFloorDown", MyUI.Button(Med, DrawBuffer, "Floor ▼", GlobalState.BigWindow ? new Vector2D(0.146, 0.2) : new Vector2D(0.195, 0.2475), delegate
                     {
                         //Sounds.操作.Play();
                         MoveFloorDown();
                         mod.Setting();
-                        if (Sta.AlwaysUseName)
+                        if (GlobalState.AlwaysUseName)
                         {
-                            npl.Text = GameText.収容番号 + Sta.GameData.TrainingTarget.Number + "\r\n" + Sta.GameData.TrainingTarget.Name;
+                            npl.Text = GameText.収容番号 + GlobalState.GameData.TrainingTarget.Number + "\r\n" + GlobalState.GameData.TrainingTarget.Name;
                         }
                         else
                         {
-                            npl.Text = GameText.収容番号 + Sta.GameData.TrainingTarget.Number + (Sta.GameData.TrainingTarget.Trained ? ("\r\n" + Sta.GameData.TrainingTarget.Name) : ("\r\n" + Sta.GameData.TrainingTarget.Race));
+                            npl.Text = GameText.収容番号 + GlobalState.GameData.TrainingTarget.Number + (GlobalState.GameData.TrainingTarget.Trained ? ("\r\n" + GlobalState.GameData.TrainingTarget.Name) : ("\r\n" + GlobalState.GameData.TrainingTarget.Race));
                         }
                     }));
 
-                bs.Add("MoveFloorUp", MyUI.Button(Med, DrawBuffer, "Floor ▲", Sta.BigWindow ? new Vector2D(0.146, 0.17) : new Vector2D(0.195, 0.205), delegate
+                bs.Add("MoveFloorUp", MyUI.Button(Med, DrawBuffer, "Floor ▲", GlobalState.BigWindow ? new Vector2D(0.146, 0.17) : new Vector2D(0.195, 0.205), delegate
                     {
                         //Sounds.操作.Play();
                         MoveFloorUp();
                         mod.Setting();
-                        if (Sta.AlwaysUseName)
+                        if (GlobalState.AlwaysUseName)
                         {
-                            npl.Text = GameText.収容番号 + Sta.GameData.TrainingTarget.Number + "\r\n" + Sta.GameData.TrainingTarget.Name;
+                            npl.Text = GameText.収容番号 + GlobalState.GameData.TrainingTarget.Number + "\r\n" + GlobalState.GameData.TrainingTarget.Name;
                         }
                         else
                         {
-                            npl.Text = GameText.収容番号 + Sta.GameData.TrainingTarget.Number + (Sta.GameData.TrainingTarget.Trained ? ("\r\n" + Sta.GameData.TrainingTarget.Name) : ("\r\n" + Sta.GameData.TrainingTarget.Race));
+                            npl.Text = GameText.収容番号 + GlobalState.GameData.TrainingTarget.Number + (GlobalState.GameData.TrainingTarget.Trained ? ("\r\n" + GlobalState.GameData.TrainingTarget.Name) : ("\r\n" + GlobalState.GameData.TrainingTarget.Race));
                         }
                     }));
 
@@ -3346,15 +3346,15 @@ namespace SlaveMatrix
     			}
     			rs1(bs);
     			bu.PartGroup.Values.First().ToParT().PenColor = Color.Red;
-    			if (Sta.GameData.祝福 != null)
+    			if (GlobalState.GameData.祝福 != null)
     			{
-    				l.Text = Sta.GameData.祝福.Name;
-    				ip.TextIm = Sta.GameData.祝福.GetStatus();
+    				l.Text = GlobalState.GameData.祝福.Name;
+    				ip.TextIm = GlobalState.GameData.祝福.GetStatus();
     				if (祝福 != null)
     				{
     					祝福.Dispose();
     				}
-    				祝福 = new Character(Med, DrawBuffer, Sta.GameData.祝福.ChaD);
+    				祝福 = new Character(Med, DrawBuffer, GlobalState.GameData.祝福.ChaD);
     				if (祝福.Body.IsDualEyes)
     				{
     					祝福.両目_見つめ();
@@ -3371,7 +3371,7 @@ namespace SlaveMatrix
     				{
     					祝福.額目_見つめ();
     				}
-    				if (Sta.GameData.祝福.Race == GameText.ヴィオランテ)
+    				if (GlobalState.GameData.祝福.Race == GameText.ヴィオランテ)
     				{
     					祝福.両瞼_卑();
     					祝福.両瞼_半1();
@@ -3386,15 +3386,15 @@ namespace SlaveMatrix
     			//Sounds.操作.Play();
     			rs1(bs);
     			bu.PartGroup.Values.First().ToParT().PenColor = Color.Red;
-    			if (Sta.GameData.祝福 != null)
+    			if (GlobalState.GameData.祝福 != null)
     			{
     				l.Text = GameText.親形質1;
-    				ip.TextIm = Sta.GameData.祝福.Mother.GetStatus();
+    				ip.TextIm = GlobalState.GameData.祝福.Mother.GetStatus();
     				if (祝福 != null)
     				{
     					祝福.Dispose();
     				}
-    				祝福 = new Character(Med, DrawBuffer, Sta.GameData.祝福.Mother.ChaD);
+    				祝福 = new Character(Med, DrawBuffer, GlobalState.GameData.祝福.Mother.ChaD);
     				if (祝福.Body.IsDualEyes)
     				{
     					祝福.両目_見つめ();
@@ -3411,7 +3411,7 @@ namespace SlaveMatrix
     				{
     					祝福.額目_見つめ();
     				}
-    				if (Sta.GameData.祝福.Mother.Race == GameText.ヴィオランテ)
+    				if (GlobalState.GameData.祝福.Mother.Race == GameText.ヴィオランテ)
     				{
     					祝福.両瞼_卑();
     					祝福.両瞼_半1();
@@ -3426,15 +3426,15 @@ namespace SlaveMatrix
     			//Sounds.操作.Play();
     			rs1(bs);
     			bu.PartGroup.Values.First().ToParT().PenColor = Color.Red;
-    			if (Sta.GameData.祝福 != null)
+    			if (GlobalState.GameData.祝福 != null)
     			{
     				l.Text = GameText.親形質2;
-    				ip.TextIm = Sta.GameData.祝福.Father.GetStatus();
+    				ip.TextIm = GlobalState.GameData.祝福.Father.GetStatus();
     				if (祝福 != null)
     				{
     					祝福.Dispose();
     				}
-    				祝福 = new Character(Med, DrawBuffer, Sta.GameData.祝福.Father.ChaD);
+    				祝福 = new Character(Med, DrawBuffer, GlobalState.GameData.祝福.Father.ChaD);
     				if (祝福.Body.IsDualEyes)
     				{
     					祝福.両目_見つめ();
@@ -3451,7 +3451,7 @@ namespace SlaveMatrix
     				{
     					祝福.額目_見つめ();
     				}
-    				if (Sta.GameData.祝福.Father.Race == GameText.ヴィオランテ)
+    				if (GlobalState.GameData.祝福.Father.Race == GameText.ヴィオランテ)
     				{
     					祝福.両瞼_卑();
     					祝福.両瞼_半1();
@@ -3465,7 +3465,7 @@ namespace SlaveMatrix
     		{
                 //TODO fix?
                 //Sounds.解除.Play();
-    			Sta.GameData.祝福 = null;
+    			GlobalState.GameData.祝福 = null;
     			祝福なし();
     			ip.SubInfoIm = GameText.祝福を解除しました;
     		}));
@@ -3473,9 +3473,9 @@ namespace SlaveMatrix
     		bs.SetHitColor(Med);
     		Action subinfo = delegate
     		{
-    			if (Sta.GameData.祝福 != null)
+    			if (GlobalState.GameData.祝福 != null)
     			{
-    				ip.SubInfoIm = Sta.GameData.祝福.Name + GameText.から祝福を受けています;
+    				ip.SubInfoIm = GlobalState.GameData.祝福.Name + GameText.から祝福を受けています;
     			}
     			else
     			{
@@ -3600,7 +3600,7 @@ namespace SlaveMatrix
                         ip.Mai2Show = false;
                         ip.SubShow = true;
                         ip.Sub2Show = true;
-                        if (Sta.GameData.祝福 != null)
+                        if (GlobalState.GameData.祝福 != null)
                         {
                             bs["子"].Dra = true;
                             bs["親形質1"].Dra = true;
@@ -3819,12 +3819,12 @@ namespace SlaveMatrix
     				ip.SubShow = true;
     				ip.Sub2Show = true;
     				ViolaTextBubble.TextBlock.Feed.Dra = false;
-    				bs["ボタン1"].Dra = !Sta.GameData.初事務所フラグ;
-    				bs["ボタン3"].Dra = Sta.GameData.RepaymentStage == 3;
+    				bs["ボタン1"].Dra = !GlobalState.GameData.初事務所フラグ;
+    				bs["ボタン3"].Dra = GlobalState.GameData.RepaymentStage == 3;
     				Viola.両目_見つめ();
     				Viola.表情_基本0();
     				Viola.Set基本姿勢();
-    				if (Sta.GameData.初事務所フラグ)
+    				if (GlobalState.GameData.初事務所フラグ)
     				{
     					Viola.表情_不敵1();
     					ViolaText.Set();
@@ -3834,36 +3834,36 @@ namespace SlaveMatrix
     					ViolaText.Set();
     				}
     				si.Set(bre: false);
-    				if (Sta.GameData.RepaymentStage < 3)
+    				if (GlobalState.GameData.RepaymentStage < 3)
     				{
-    					if (Sta.GameData.RepaymentStage == 0 && Sta.GameData.借金 < 単位返済段階額 * 2)
+    					if (GlobalState.GameData.RepaymentStage == 0 && GlobalState.GameData.借金 < 単位返済段階額 * 2)
     					{
-    						Sta.GameData.RepaymentStage = 1;
-    						Sta.GameData.系統開放[2] = true;
-    						Sta.GameData.系統開放[3] = true;
-    						Sta.GameData.心眼 = true;
+    						GlobalState.GameData.RepaymentStage = 1;
+    						GlobalState.GameData.系統開放[2] = true;
+    						GlobalState.GameData.系統開放[3] = true;
+    						GlobalState.GameData.心眼 = true;
     						Med.SwitchMode("RepaymentEvent1", DrawBuffer, 返済イベント描画);
     						SetDemandMaximum();
     					}
-    					else if (Sta.GameData.RepaymentStage == 1 && Sta.GameData.借金 < 単位返済段階額)
+    					else if (GlobalState.GameData.RepaymentStage == 1 && GlobalState.GameData.借金 < 単位返済段階額)
     					{
-    						Sta.GameData.RepaymentStage = 2;
-    						Sta.GameData.系統開放[4] = true;
-    						Sta.GameData.系統開放[5] = true;
-    						Sta.GameData.媚薬 = true;
-    						Sta.GameData.施術 = true;
-    						Sta.GameData.淫紋 = true;
-    						Sta.GameData.衣装 = true;
+    						GlobalState.GameData.RepaymentStage = 2;
+    						GlobalState.GameData.系統開放[4] = true;
+    						GlobalState.GameData.系統開放[5] = true;
+    						GlobalState.GameData.媚薬 = true;
+    						GlobalState.GameData.施術 = true;
+    						GlobalState.GameData.淫紋 = true;
+    						GlobalState.GameData.衣装 = true;
     						Med.SwitchMode("RepaymentEvent2", DrawBuffer, 返済イベント描画);
     						SetDemandMaximum();
     					}
-    					else if (Sta.GameData.RepaymentStage == 2 && Sta.GameData.借金 == 0L)
+    					else if (GlobalState.GameData.RepaymentStage == 2 && GlobalState.GameData.借金 == 0L)
     					{
-    						Sta.GameData.RepaymentStage = 3;
-    						Sta.GameData.系統開放[6] = true;
-    						Sta.GameData.系統開放[7] = true;
-    						Sta.GameData.系統開放[8] = true;
-    						Sta.GameData.ヴィオラ服 = true;
+    						GlobalState.GameData.RepaymentStage = 3;
+    						GlobalState.GameData.系統開放[6] = true;
+    						GlobalState.GameData.系統開放[7] = true;
+    						GlobalState.GameData.系統開放[8] = true;
+    						GlobalState.GameData.ヴィオラ服 = true;
     						Med.SwitchMode("RepaymentEvent3", DrawBuffer, 返済イベント描画);
     						SetDemandMaximum();
     					}
@@ -4176,20 +4176,20 @@ namespace SlaveMatrix
     		shapePartT14.StringFormat.LineAlignment = StringAlignment.Center;
     		bs.Add("nb", new Button(shapePartT14, delegate
     		{
-    			if (Sta.GameData.日借金可能額 != 0)
+    			if (GlobalState.GameData.日借金可能額 != 0)
     			{
     				ulong num3 = ulong.Parse(ip.Text, NumberStyles.AllowThousands);
     				if (num3 != 0)
     				{
-    					if (num3 > Sta.GameData.日借金可能額)
+    					if (num3 > GlobalState.GameData.日借金可能額)
     					{
-    						num3 = Sta.GameData.日借金可能額;
+    						num3 = GlobalState.GameData.日借金可能額;
     						ip.SubInfo = GameText.借金可能額以上は無視されます;
     					}
-    					Sta.GameData.日借金額 += num3;
-    					Sta.GameData.所持金 = Sta.GameData.所持金.overflow_add(num3);
-    					Sta.GameData.借金 = Sta.GameData.借金.overflow_add(num3);
-    					bs["nr"].Dra = Sta.GameData.借金 != 0;
+    					GlobalState.GameData.日借金額 += num3;
+    					GlobalState.GameData.所持金 = GlobalState.GameData.所持金.overflow_add(num3);
+    					GlobalState.GameData.借金 = GlobalState.GameData.借金.overflow_add(num3);
+    					bs["nr"].Dra = GlobalState.GameData.借金 != 0;
     					ip.TextIm = "0";
     					//Sounds.精算.Play();
     					ip.UpdateSub2();
@@ -4223,28 +4223,28 @@ namespace SlaveMatrix
     		shapePartT15.StringFormat.LineAlignment = StringAlignment.Center;
     		bs.Add("nr", new Button(shapePartT15, delegate
     		{
-    			if (Sta.GameData.所持金 != 0)
+    			if (GlobalState.GameData.所持金 != 0)
     			{
     				ulong num2 = ulong.Parse(ip.Text, NumberStyles.AllowThousands);
     				if (num2 != 0)
     				{
-    					if (num2 > Sta.GameData.所持金)
+    					if (num2 > GlobalState.GameData.所持金)
     					{
-    						num2 = Sta.GameData.所持金;
+    						num2 = GlobalState.GameData.所持金;
     						ip.SubInfo = GameText.返済可能額以上は無視されます;
     					}
-    					if (num2 > Sta.GameData.借金)
+    					if (num2 > GlobalState.GameData.借金)
     					{
-    						Sta.GameData.所持金 = Sta.GameData.所持金.underflow_subtract(Sta.GameData.借金);
-    						Sta.GameData.借金 = 0uL;
+    						GlobalState.GameData.所持金 = GlobalState.GameData.所持金.underflow_subtract(GlobalState.GameData.借金);
+    						GlobalState.GameData.借金 = 0uL;
     						ip.SubInfo = GameText.返済可能額以上は無視されます;
     					}
     					else
     					{
-    						Sta.GameData.所持金 = Sta.GameData.所持金.underflow_subtract(num2);
-    						Sta.GameData.借金 = Sta.GameData.借金.underflow_subtract(num2);
+    						GlobalState.GameData.所持金 = GlobalState.GameData.所持金.underflow_subtract(num2);
+    						GlobalState.GameData.借金 = GlobalState.GameData.借金.underflow_subtract(num2);
     					}
-    					bs["nr"].Dra = Sta.GameData.借金 != 0;
+    					bs["nr"].Dra = GlobalState.GameData.借金 != 0;
     					ip.TextIm = "0";
     					//Sounds.精算.Play();
     					ip.UpdateSub2();
@@ -4374,8 +4374,8 @@ namespace SlaveMatrix
     				Viola.SetSymmetry();
     				ViolaText.Set();
     				si.Set(bre: false);
-    				bs["nr"].Dra = Sta.GameData.借金 != 0;
-    				//bs["nr"].Dra = Sta.GameData.借金 != 0;
+    				bs["nr"].Dra = GlobalState.GameData.借金 != 0;
+    				//bs["nr"].Dra = GlobalState.GameData.借金 != 0;
     			}
     		};
     		DrawDebt = delegate(RenderArea a, FpsCounter FPS)
@@ -4435,7 +4435,7 @@ namespace SlaveMatrix
     		bs.Add("ボタン0", new Button(shapePartT, delegate
     		{
     			//Sounds.操作.Play();
-    			if (Sta.GameData.初事務所フラグ)
+    			if (GlobalState.GameData.初事務所フラグ)
     			{
     				Med.SwitchMode("初事務所", DrawBuffer, 初事務所描画);
     			}
@@ -4714,38 +4714,38 @@ namespace SlaveMatrix
     		{
     			if (bs["対象0"].PartGroup.Values.First().ToParT().PenColor == Color.Red)
     			{
-    				if ((Sta.GameData.鳥系.Count != 0 && Sta.GameData.系統開放[0]) || (Sta.GameData.蛇系.Count != 0 && Sta.GameData.系統開放[1]) || (Sta.GameData.獣系.Count != 0 && Sta.GameData.系統開放[2]) || (Sta.GameData.水系.Count != 0 && Sta.GameData.系統開放[3]) || (Sta.GameData.虫系.Count != 0 && Sta.GameData.系統開放[4]) || (Sta.GameData.人型.Count != 0 && Sta.GameData.系統開放[5]) || (Sta.GameData.幻獣.Count != 0 && Sta.GameData.系統開放[6]) || (Sta.GameData.魔獣.Count != 0 && Sta.GameData.系統開放[7]) || (Sta.GameData.竜系.Count != 0 && Sta.GameData.系統開放[8]))
+    				if ((GlobalState.GameData.鳥系.Count != 0 && GlobalState.GameData.系統開放[0]) || (GlobalState.GameData.蛇系.Count != 0 && GlobalState.GameData.系統開放[1]) || (GlobalState.GameData.獣系.Count != 0 && GlobalState.GameData.系統開放[2]) || (GlobalState.GameData.水系.Count != 0 && GlobalState.GameData.系統開放[3]) || (GlobalState.GameData.虫系.Count != 0 && GlobalState.GameData.系統開放[4]) || (GlobalState.GameData.人型.Count != 0 && GlobalState.GameData.系統開放[5]) || (GlobalState.GameData.幻獣.Count != 0 && GlobalState.GameData.系統開放[6]) || (GlobalState.GameData.魔獣.Count != 0 && GlobalState.GameData.系統開放[7]) || (GlobalState.GameData.竜系.Count != 0 && GlobalState.GameData.系統開放[8]))
     				{
     					do
     					{
-    						switch (RNG.XS.Next(Sta.GameData.系統開放.Count((bool e) => e)))
+    						switch (Rng.XS.Next(GlobalState.GameData.系統開放.Count((bool e) => e)))
     						{
     						case 0:
-    							g = Sta.GameData.鳥系;
+    							g = GlobalState.GameData.鳥系;
     							break;
     						case 1:
-    							g = Sta.GameData.蛇系;
+    							g = GlobalState.GameData.蛇系;
     							break;
     						case 2:
-    							g = Sta.GameData.獣系;
+    							g = GlobalState.GameData.獣系;
     							break;
     						case 3:
-    							g = Sta.GameData.水系;
+    							g = GlobalState.GameData.水系;
     							break;
     						case 4:
-    							g = Sta.GameData.虫系;
+    							g = GlobalState.GameData.虫系;
     							break;
     						case 5:
-    							g = Sta.GameData.人型;
+    							g = GlobalState.GameData.人型;
     							break;
     						case 6:
-    							g = Sta.GameData.幻獣;
+    							g = GlobalState.GameData.幻獣;
     							break;
     						case 7:
-    							g = Sta.GameData.魔獣;
+    							g = GlobalState.GameData.魔獣;
     							break;
     						case 8:
-    							g = Sta.GameData.竜系;
+    							g = GlobalState.GameData.竜系;
     							break;
     						}
     					}
@@ -4753,73 +4753,73 @@ namespace SlaveMatrix
     				}
     				else
     				{
-    					switch (RNG.XS.Next(Sta.GameData.系統開放.Count((bool e) => e)))
+    					switch (Rng.XS.Next(GlobalState.GameData.系統開放.Count((bool e) => e)))
     					{
     					case 0:
-    						g = Sta.GameData.鳥系;
+    						g = GlobalState.GameData.鳥系;
     						break;
     					case 1:
-    						g = Sta.GameData.蛇系;
+    						g = GlobalState.GameData.蛇系;
     						break;
     					case 2:
-    						g = Sta.GameData.獣系;
+    						g = GlobalState.GameData.獣系;
     						break;
     					case 3:
-    						g = Sta.GameData.水系;
+    						g = GlobalState.GameData.水系;
     						break;
     					case 4:
-    						g = Sta.GameData.虫系;
+    						g = GlobalState.GameData.虫系;
     						break;
     					case 5:
-    						g = Sta.GameData.人型;
+    						g = GlobalState.GameData.人型;
     						break;
     					case 6:
-    						g = Sta.GameData.幻獣;
+    						g = GlobalState.GameData.幻獣;
     						break;
     					case 7:
-    						g = Sta.GameData.魔獣;
+    						g = GlobalState.GameData.魔獣;
     						break;
     					case 8:
-    						g = Sta.GameData.竜系;
+    						g = GlobalState.GameData.竜系;
     						break;
     					}
     				}
     			}
     			else if (bs["対象1"].PartGroup.Values.First().ToParT().PenColor == Color.Red)
     			{
-    				g = Sta.GameData.鳥系;
+    				g = GlobalState.GameData.鳥系;
     			}
     			else if (bs["対象2"].PartGroup.Values.First().ToParT().PenColor == Color.Red)
     			{
-    				g = Sta.GameData.蛇系;
+    				g = GlobalState.GameData.蛇系;
     			}
     			else if (bs["対象3"].PartGroup.Values.First().ToParT().PenColor == Color.Red)
     			{
-    				g = Sta.GameData.獣系;
+    				g = GlobalState.GameData.獣系;
     			}
     			else if (bs["対象4"].PartGroup.Values.First().ToParT().PenColor == Color.Red)
     			{
-    				g = Sta.GameData.水系;
+    				g = GlobalState.GameData.水系;
     			}
     			else if (bs["対象5"].PartGroup.Values.First().ToParT().PenColor == Color.Red)
     			{
-    				g = Sta.GameData.虫系;
+    				g = GlobalState.GameData.虫系;
     			}
     			else if (bs["対象6"].PartGroup.Values.First().ToParT().PenColor == Color.Red)
     			{
-    				g = Sta.GameData.人型;
+    				g = GlobalState.GameData.人型;
     			}
     			else if (bs["対象7"].PartGroup.Values.First().ToParT().PenColor == Color.Red)
     			{
-    				g = Sta.GameData.幻獣;
+    				g = GlobalState.GameData.幻獣;
     			}
     			else if (bs["対象8"].PartGroup.Values.First().ToParT().PenColor == Color.Red)
     			{
-    				g = Sta.GameData.魔獣;
+    				g = GlobalState.GameData.魔獣;
     			}
     			else if (bs["対象9"].PartGroup.Values.First().ToParT().PenColor == Color.Red)
     			{
-    				g = Sta.GameData.竜系;
+    				g = GlobalState.GameData.竜系;
     			}
     		};
     		Reload = delegate
@@ -4888,7 +4888,7 @@ namespace SlaveMatrix
     		ulong 買値;
     		bs.Add("購入", new Button(shapePartT15, delegate
     		{
-    			if (Sta.GameData.Is地下室一杯())
+    			if (GlobalState.GameData.Is地下室一杯())
     			{
                     //TODO fix?
                     //Sounds.操作.Play();
@@ -4900,7 +4900,7 @@ namespace SlaveMatrix
                     //Sounds.操作.Play();
     				ip.Mai.TextIm = GameText.売り切れです;
     			}
-    			else if (Sta.GameData.所持金 < (買値 = (ulong)((double)u.GetPrice() * ((Sta.GameData.祝福 == Sta.GameData.ヴィオラ) ? 0.6 : 1.0))))
+    			else if (GlobalState.GameData.所持金 < (買値 = (ulong)((double)u.GetPrice() * ((GlobalState.GameData.祝福 == GlobalState.GameData.ヴィオラ) ? 0.6 : 1.0))))
     			{
                     //TODO fix?
                     //Sounds.操作.Play();
@@ -4909,11 +4909,11 @@ namespace SlaveMatrix
     			else
     			{
     				u.Price = 買値;
-    				Sta.GameData.所持金 -= 買値;
+    				GlobalState.GameData.所持金 -= 買値;
                     //TODO fix?
                     ////Sounds.精算.Play();
     				ip.UpdateSub2();
-    				Sta.GameData.Add地下室(g.GetCharacter());
+    				GlobalState.GameData.Add地下室(g.GetCharacter());
     				Reload();
     			}
     		}));
@@ -5015,7 +5015,7 @@ namespace SlaveMatrix
     					num3++;
     				}
     			}
-    			int num4 = Sta.GameData.系統開放.Count((bool e) => e) + 1;
+    			int num4 = GlobalState.GameData.系統開放.Count((bool e) => e) + 1;
     			int num5 = num3 - dt.Sign();
     			if (num5 < 0)
     			{
@@ -5035,23 +5035,23 @@ namespace SlaveMatrix
     				ip.Mai2Show = false;
     				ip.SubShow = true;
     				ip.Sub2Show = true;
-    				bs["対象1"].Dra = Sta.GameData.系統開放[0];
-    				bs["対象2"].Dra = Sta.GameData.系統開放[1];
-    				bs["対象3"].Dra = Sta.GameData.系統開放[2];
-    				bs["対象4"].Dra = Sta.GameData.系統開放[3];
-    				bs["対象5"].Dra = Sta.GameData.系統開放[4];
-    				bs["対象6"].Dra = Sta.GameData.系統開放[5];
-    				bs["対象7"].Dra = Sta.GameData.系統開放[6];
-    				bs["対象8"].Dra = Sta.GameData.系統開放[7];
-    				bs["対象9"].Dra = Sta.GameData.系統開放[8];
-    				if (Sta.RefreshStoreEveryTime)
+    				bs["対象1"].Dra = GlobalState.GameData.系統開放[0];
+    				bs["対象2"].Dra = GlobalState.GameData.系統開放[1];
+    				bs["対象3"].Dra = GlobalState.GameData.系統開放[2];
+    				bs["対象4"].Dra = GlobalState.GameData.系統開放[3];
+    				bs["対象5"].Dra = GlobalState.GameData.系統開放[4];
+    				bs["対象6"].Dra = GlobalState.GameData.系統開放[5];
+    				bs["対象7"].Dra = GlobalState.GameData.系統開放[6];
+    				bs["対象8"].Dra = GlobalState.GameData.系統開放[7];
+    				bs["対象9"].Dra = GlobalState.GameData.系統開放[8];
+    				if (GlobalState.RefreshStoreEveryTime)
     				{
-    					Sta.GameData.新日 = true;
+    					GlobalState.GameData.新日 = true;
     				}
-    				if (Sta.GameData.新日)
+    				if (GlobalState.GameData.新日)
     				{
-    					Sta.GameData.GenRefresh();
-    					Sta.GameData.新日 = false;
+    					GlobalState.GameData.GenRefresh();
+    					GlobalState.GameData.新日 = false;
     				}
     				Reload();
     				si.Set(bre: false);
@@ -5107,7 +5107,7 @@ namespace SlaveMatrix
     		bs.Add("ボタン0", MyUI.Button2(Med, DrawBuffer, GameText.戻る, new Vector2D(0.85, 0.02), delegate
     		{
     			//Sounds.操作.Play();
-    			if (Sta.GameData.初事務所フラグ)
+    			if (GlobalState.GameData.初事務所フラグ)
     			{
     				Med.SwitchMode("初事務所", DrawBuffer, 初事務所描画);
     			}
@@ -5135,11 +5135,11 @@ namespace SlaveMatrix
     		ListView lv = null;
     		Action<ButtonBase, int, ulong> buy = delegate(ButtonBase ButtonBase, int ind, ulong pri)
     		{
-    			if (Sta.GameData.所持金 >= pri)
+    			if (GlobalState.GameData.所持金 >= pri)
     			{
     				ButtonBase.Dra = false;
-    				Sta.GameData.PurchasedTools[ind] = true;
-    				Sta.GameData.所持金 -= pri;
+    				GlobalState.GameData.PurchasedTools[ind] = true;
+    				GlobalState.GameData.所持金 -= pri;
     				//Sounds.精算.Play();
     				ip.UpdateSub2();
     				ip.TextIm = " ";
@@ -5202,14 +5202,14 @@ namespace SlaveMatrix
     		}), new TA(GameText.ﾌﾛｱ増設 + "    300,000,000", delegate(ButtonBase b)
     		{
     			ulong num = 300000000uL;
-    			if (Sta.GameData.所持金 >= num)
+    			if (GlobalState.GameData.所持金 >= num)
     			{
-    				Sta.GameData.フロア数++;
-    				if (Sta.GameData.フロア数 == 9)
+    				GlobalState.GameData.フロア数++;
+    				if (GlobalState.GameData.フロア数 == 9)
     				{
     					b.Dra = false;
     				}
-    				Sta.GameData.所持金 -= num;
+    				GlobalState.GameData.所持金 -= num;
     				//Sounds.精算.Play();
     				ip.UpdateSub2();
     				ip.TextIm = " ";
@@ -5398,22 +5398,22 @@ namespace SlaveMatrix
     				ip.Mai2Show = false;
     				ip.SubShow = true;
     				ip.Sub2Show = true;
-    				lv.bs["0"].Dra = !Sta.GameData.PurchasedTools[0];
-    				lv.bs["1"].Dra = !Sta.GameData.PurchasedTools[1];
-    				lv.bs["2"].Dra = !Sta.GameData.PurchasedTools[2];
-    				lv.bs["3"].Dra = !Sta.GameData.PurchasedTools[3];
-    				lv.bs["4"].Dra = !Sta.GameData.PurchasedTools[4];
-    				lv.bs["5"].Dra = !Sta.GameData.PurchasedTools[5];
-    				lv.bs["6"].Dra = !Sta.GameData.PurchasedTools[6];
-    				lv.bs["7"].Dra = !Sta.GameData.PurchasedTools[7];
-    				lv.bs["8"].Dra = !Sta.GameData.PurchasedTools[8];
-    				lv.bs["9"].Dra = !Sta.GameData.PurchasedTools[9];
-    				lv.bs["10"].Dra = !Sta.GameData.PurchasedTools[10];
-    				lv.bs["11"].Dra = !Sta.GameData.PurchasedTools[11];
-    				lv.bs["12"].Dra = !Sta.GameData.PurchasedTools[12];
-    				lv.bs["13"].Dra = !Sta.GameData.PurchasedTools[13];
-    				lv.bs["14"].Dra = Sta.GameData.フロア数 < 9;
-    				if (Sta.GameData.PurchasedTools.All((bool e) => e) && Sta.GameData.フロア数 == 9)
+    				lv.bs["0"].Dra = !GlobalState.GameData.PurchasedTools[0];
+    				lv.bs["1"].Dra = !GlobalState.GameData.PurchasedTools[1];
+    				lv.bs["2"].Dra = !GlobalState.GameData.PurchasedTools[2];
+    				lv.bs["3"].Dra = !GlobalState.GameData.PurchasedTools[3];
+    				lv.bs["4"].Dra = !GlobalState.GameData.PurchasedTools[4];
+    				lv.bs["5"].Dra = !GlobalState.GameData.PurchasedTools[5];
+    				lv.bs["6"].Dra = !GlobalState.GameData.PurchasedTools[6];
+    				lv.bs["7"].Dra = !GlobalState.GameData.PurchasedTools[7];
+    				lv.bs["8"].Dra = !GlobalState.GameData.PurchasedTools[8];
+    				lv.bs["9"].Dra = !GlobalState.GameData.PurchasedTools[9];
+    				lv.bs["10"].Dra = !GlobalState.GameData.PurchasedTools[10];
+    				lv.bs["11"].Dra = !GlobalState.GameData.PurchasedTools[11];
+    				lv.bs["12"].Dra = !GlobalState.GameData.PurchasedTools[12];
+    				lv.bs["13"].Dra = !GlobalState.GameData.PurchasedTools[13];
+    				lv.bs["14"].Dra = GlobalState.GameData.フロア数 < 9;
+    				if (GlobalState.GameData.PurchasedTools.All((bool e) => e) && GlobalState.GameData.フロア数 == 9)
     				{
     					ip.TextIm = GameText.売り切れです;
     				}
@@ -5460,25 +5460,25 @@ namespace SlaveMatrix
     		{
     			Down = delegate
     			{
-    				Sta.GameData.時間進行();
+    				GlobalState.GameData.時間進行();
     				if (日利益額 != 0 || 日利子額 != 0)
     				{
     					if (日利益額 != 0)
     					{
-    						Sta.GameData.所持金 = Sta.GameData.所持金.overflow_add(日利益額);
+    						GlobalState.GameData.所持金 = GlobalState.GameData.所持金.overflow_add(日利益額);
     					}
     					if (日利子額 != 0)
     					{
-    						Sta.GameData.借金 = Sta.GameData.借金.overflow_add(日利子額);
+    						GlobalState.GameData.借金 = GlobalState.GameData.借金.overflow_add(日利子額);
     					}
     					//Sounds.精算.Play();
     					ip.UpdateSub2();
     				}
-    				if (Sta.GameData.日数 >= 10)
+    				if (GlobalState.GameData.日数 >= 10)
     				{
-    					Sta.GameData.利子 = 0.002;
+    					GlobalState.GameData.利子 = 0.002;
     				}
-    				Sta.GameData.需給更新();
+    				GlobalState.GameData.需給更新();
     				Med.SwitchMode("メインフォーム", DrawBuffer, メインフォーム描画);
     			},
     			Up = delegate
@@ -5505,7 +5505,7 @@ namespace SlaveMatrix
     					where !string.IsNullOrWhiteSpace(e)
     					select e.Substring(0, e.Length - 2)).Join("\r\n") + ((労働利益 != 0) ? ("\r\n" + GameText.労働利益 + " + " + 労働利益.ToString("#,0")) : "");
     				ip.TextIm = ((日利益額 != 0) ? (GameText.利益 + " + " + 日利益額.ToString("#,0") + "\r\n") : "") + ((日利子額 != 0) ? (GameText.利子 + " + " + 日利子額.ToString("#,0") + "\r\n") : "") + ">> Next days.";
-    				if (TrainingTarget != null && Sta.GameData.TrainingTarget != null)
+    				if (TrainingTarget != null && GlobalState.GameData.TrainingTarget != null)
     				{
     					InitializeTrainingTarget();
     					妊娠状態反映();
@@ -5546,12 +5546,12 @@ namespace SlaveMatrix
     		double num3 = 0.15;
     		Button 完了 = MyUI.Button(Med, DrawBuffer, GameText.完了, new Vector2D(num2 + 0.19, num3 + 0.72), delegate
     		{
-    			Sta.GameData.配色 = new 主人公配色(Sta.GameData.色);
-    			Player.UI.ハンド右.再配色(Sta.GameData.配色);
-    			Player.UI.ハンド左.再配色(Sta.GameData.配色);
-    			Player.UI.ペニス.再配色(Sta.GameData.配色);
-    			Player.UI.マウス.再配色(Sta.GameData.配色);
-    			Sta.GameData.プレーヤー = Generator.プレーヤー();
+    			GlobalState.GameData.配色 = new 主人公配色(GlobalState.GameData.色);
+    			Player.UI.ハンド右.再配色(GlobalState.GameData.配色);
+    			Player.UI.ハンド左.再配色(GlobalState.GameData.配色);
+    			Player.UI.ペニス.再配色(GlobalState.GameData.配色);
+    			Player.UI.マウス.再配色(GlobalState.GameData.配色);
+    			GlobalState.GameData.プレーヤー = Generator.プレーヤー();
     			//Sounds.完了.Play();
     			if (start)
     			{
@@ -5658,38 +5658,38 @@ namespace SlaveMatrix
     		体重.Frame1.PenColor = ColorHelper.White;
     		体重.Knob.PenColor = ColorHelper.White;
     		体重.Knob.HitColor = Med.GetUniqueColor();
-    		Hsv hsv = HSV.ToHSV(ref Sta.GameData.色.肌色);
+    		Hsv hsv = HSV.ToHSV(ref GlobalState.GameData.色.肌色);
     		H肌.Value = (double)hsv.H / 360.0;
     		S肌.Value = (double)hsv.S / 255.0;
     		V肌.Value = (double)hsv.V / 255.0;
-    		H肌.Base.BrushColor = Sta.GameData.色.肌色;
-    		S肌.Base.BrushColor = Sta.GameData.色.肌色;
-    		V肌.Base.BrushColor = Sta.GameData.色.肌色;
+    		H肌.Base.BrushColor = GlobalState.GameData.色.肌色;
+    		S肌.Base.BrushColor = GlobalState.GameData.色.肌色;
+    		V肌.Base.BrushColor = GlobalState.GameData.色.肌色;
     		ls["ラベル2"].Text = "H:" + hsv.H;
     		ls["ラベル3"].Text = "S:" + hsv.S;
     		ls["ラベル4"].Text = "V:" + hsv.V;
-    		hsv = HSV.ToHSV(ref Sta.GameData.色.髪色);
+    		hsv = HSV.ToHSV(ref GlobalState.GameData.色.髪色);
     		H髪.Value = (double)hsv.H / 360.0;
     		S髪.Value = (double)hsv.S / 255.0;
     		V髪.Value = (double)hsv.V / 255.0;
-    		H髪.Base.BrushColor = Sta.GameData.色.髪色;
-    		S髪.Base.BrushColor = Sta.GameData.色.髪色;
-    		V髪.Base.BrushColor = Sta.GameData.色.髪色;
+    		H髪.Base.BrushColor = GlobalState.GameData.色.髪色;
+    		S髪.Base.BrushColor = GlobalState.GameData.色.髪色;
+    		V髪.Base.BrushColor = GlobalState.GameData.色.髪色;
     		ls["ラベル6"].Text = "H:" + hsv.H;
     		ls["ラベル7"].Text = "S:" + hsv.S;
     		ls["ラベル8"].Text = "V:" + hsv.V;
-    		hsv = HSV.ToHSV(ref Sta.GameData.色.瞳色);
+    		hsv = HSV.ToHSV(ref GlobalState.GameData.色.瞳色);
     		H瞳.Value = (double)hsv.H / 360.0;
     		S瞳.Value = (double)hsv.S / 255.0;
     		V瞳.Value = (double)hsv.V / 255.0;
-    		H瞳.Base.BrushColor = Sta.GameData.色.瞳色;
-    		S瞳.Base.BrushColor = Sta.GameData.色.瞳色;
-    		V瞳.Base.BrushColor = Sta.GameData.色.瞳色;
+    		H瞳.Base.BrushColor = GlobalState.GameData.色.瞳色;
+    		S瞳.Base.BrushColor = GlobalState.GameData.色.瞳色;
+    		V瞳.Base.BrushColor = GlobalState.GameData.色.瞳色;
     		ls["ラベル10"].Text = "H:" + hsv.H;
     		ls["ラベル11"].Text = "S:" + hsv.S;
     		ls["ラベル12"].Text = "V:" + hsv.V;
-    		身長.Value = Sta.GameData.身長;
-    		体重.Value = Sta.GameData.体重;
+    		身長.Value = GlobalState.GameData.身長;
+    		体重.Value = GlobalState.GameData.体重;
     		ls["ラベル14"].Text = "H:" + $"{身長.Value:0.00}";
     		ls["ラベル15"].Text = "W:" + $"{体重.Value:0.00}";
     		mod.Down = delegate(MouseButtons mb, Vector2D cp, Color hc)
@@ -5741,10 +5741,10 @@ namespace SlaveMatrix
     				h = (int)(360.0 * H肌.Value);
     				s = (int)(255.0 * S肌.Value);
     				v = (int)(255.0 * V肌.Value);
-    				HSV.ToRGB(h, s, v, out Sta.GameData.色.肌色);
-    				H肌.Base.BrushColor = Sta.GameData.色.肌色;
-    				S肌.Base.BrushColor = Sta.GameData.色.肌色;
-    				V肌.Base.BrushColor = Sta.GameData.色.肌色;
+    				HSV.ToRGB(h, s, v, out GlobalState.GameData.色.肌色);
+    				H肌.Base.BrushColor = GlobalState.GameData.色.肌色;
+    				S肌.Base.BrushColor = GlobalState.GameData.色.肌色;
+    				V肌.Base.BrushColor = GlobalState.GameData.色.肌色;
     				ls["ラベル2"].Text = "H:" + h;
     				ls["ラベル3"].Text = "S:" + s;
     				ls["ラベル4"].Text = "V:" + v;
@@ -5754,10 +5754,10 @@ namespace SlaveMatrix
     				h = (int)(360.0 * H髪.Value);
     				s = (int)(255.0 * S髪.Value);
     				v = (int)(255.0 * V髪.Value);
-    				HSV.ToRGB(h, s, v, out Sta.GameData.色.髪色);
-    				H髪.Base.BrushColor = Sta.GameData.色.髪色;
-    				S髪.Base.BrushColor = Sta.GameData.色.髪色;
-    				V髪.Base.BrushColor = Sta.GameData.色.髪色;
+    				HSV.ToRGB(h, s, v, out GlobalState.GameData.色.髪色);
+    				H髪.Base.BrushColor = GlobalState.GameData.色.髪色;
+    				S髪.Base.BrushColor = GlobalState.GameData.色.髪色;
+    				V髪.Base.BrushColor = GlobalState.GameData.色.髪色;
     				ls["ラベル6"].Text = "H:" + h;
     				ls["ラベル7"].Text = "S:" + s;
     				ls["ラベル8"].Text = "V:" + v;
@@ -5767,10 +5767,10 @@ namespace SlaveMatrix
     				h = (int)(360.0 * H瞳.Value);
     				s = (int)(255.0 * S瞳.Value);
     				v = (int)(255.0 * V瞳.Value);
-    				HSV.ToRGB(h, s, v, out Sta.GameData.色.瞳色);
-    				H瞳.Base.BrushColor = Sta.GameData.色.瞳色;
-    				S瞳.Base.BrushColor = Sta.GameData.色.瞳色;
-    				V瞳.Base.BrushColor = Sta.GameData.色.瞳色;
+    				HSV.ToRGB(h, s, v, out GlobalState.GameData.色.瞳色);
+    				H瞳.Base.BrushColor = GlobalState.GameData.色.瞳色;
+    				S瞳.Base.BrushColor = GlobalState.GameData.色.瞳色;
+    				V瞳.Base.BrushColor = GlobalState.GameData.色.瞳色;
     				ls["ラベル10"].Text = "H:" + h;
     				ls["ラベル11"].Text = "S:" + s;
     				ls["ラベル12"].Text = "V:" + v;
@@ -5802,38 +5802,38 @@ namespace SlaveMatrix
     		mod.Setting = delegate
     		{
     			ls["ラベル0"].Text = GameText.プレイヤーの遺伝情報を設定してください + (start ? ("(" + GameText.後から変更できます + ")") : "");
-    			hsv = HSV.ToHSV(ref Sta.GameData.色.肌色);
+    			hsv = HSV.ToHSV(ref GlobalState.GameData.色.肌色);
     			H肌.Value = (double)hsv.H / 360.0;
     			S肌.Value = (double)hsv.S / 255.0;
     			V肌.Value = (double)hsv.V / 255.0;
-    			H肌.Base.BrushColor = Sta.GameData.色.肌色;
-    			S肌.Base.BrushColor = Sta.GameData.色.肌色;
-    			V肌.Base.BrushColor = Sta.GameData.色.肌色;
+    			H肌.Base.BrushColor = GlobalState.GameData.色.肌色;
+    			S肌.Base.BrushColor = GlobalState.GameData.色.肌色;
+    			V肌.Base.BrushColor = GlobalState.GameData.色.肌色;
     			ls["ラベル2"].Text = "H:" + hsv.H;
     			ls["ラベル3"].Text = "S:" + hsv.S;
     			ls["ラベル4"].Text = "V:" + hsv.V;
-    			hsv = HSV.ToHSV(ref Sta.GameData.色.髪色);
+    			hsv = HSV.ToHSV(ref GlobalState.GameData.色.髪色);
     			H髪.Value = (double)hsv.H / 360.0;
     			S髪.Value = (double)hsv.S / 255.0;
     			V髪.Value = (double)hsv.V / 255.0;
-    			H髪.Base.BrushColor = Sta.GameData.色.髪色;
-    			S髪.Base.BrushColor = Sta.GameData.色.髪色;
-    			V髪.Base.BrushColor = Sta.GameData.色.髪色;
+    			H髪.Base.BrushColor = GlobalState.GameData.色.髪色;
+    			S髪.Base.BrushColor = GlobalState.GameData.色.髪色;
+    			V髪.Base.BrushColor = GlobalState.GameData.色.髪色;
     			ls["ラベル6"].Text = "H:" + hsv.H;
     			ls["ラベル7"].Text = "S:" + hsv.S;
     			ls["ラベル8"].Text = "V:" + hsv.V;
-    			hsv = HSV.ToHSV(ref Sta.GameData.色.瞳色);
+    			hsv = HSV.ToHSV(ref GlobalState.GameData.色.瞳色);
     			H瞳.Value = (double)hsv.H / 360.0;
     			S瞳.Value = (double)hsv.S / 255.0;
     			V瞳.Value = (double)hsv.V / 255.0;
-    			H瞳.Base.BrushColor = Sta.GameData.色.瞳色;
-    			S瞳.Base.BrushColor = Sta.GameData.色.瞳色;
-    			V瞳.Base.BrushColor = Sta.GameData.色.瞳色;
+    			H瞳.Base.BrushColor = GlobalState.GameData.色.瞳色;
+    			S瞳.Base.BrushColor = GlobalState.GameData.色.瞳色;
+    			V瞳.Base.BrushColor = GlobalState.GameData.色.瞳色;
     			ls["ラベル10"].Text = "H:" + hsv.H;
     			ls["ラベル11"].Text = "S:" + hsv.S;
     			ls["ラベル12"].Text = "V:" + hsv.V;
-    			身長.Value = Sta.GameData.身長;
-    			体重.Value = Sta.GameData.体重;
+    			身長.Value = GlobalState.GameData.身長;
+    			体重.Value = GlobalState.GameData.体重;
     			ls["ラベル14"].Text = "H:" + $"{身長.Value:0.00}";
     			ls["ラベル15"].Text = "W:" + $"{体重.Value:0.00}";
     		};
@@ -6085,7 +6085,7 @@ namespace SlaveMatrix
     				ViolaTextBubble.TextBlock.Done = delegate
     				{
     					//Sounds.精算.Play();
-    					Sta.GameData.借金 = 5000000000uL;
+    					GlobalState.GameData.借金 = 5000000000uL;
     					ip.UpdateSub2();
     				};
     				Viola.表情_不敵0眉上();
@@ -6109,7 +6109,7 @@ namespace SlaveMatrix
     				ViolaTextBubble.TextBlock.Done = delegate
     				{
     					//Sounds.精算.Play();
-    					Sta.GameData.借金 = 5000000000uL;
+    					GlobalState.GameData.借金 = 5000000000uL;
     					ip.UpdateSub2();
     				};
     				Viola.表情_素1();
@@ -6184,10 +6184,10 @@ namespace SlaveMatrix
     		{
     			ip.Mai.Feed.Dra = false;
     			//Sounds.日常BGM.Play();
-    			Sta.GameData.ヴィオラ = new Unit();
-    			Sta.GameData.ヴィオラ.SetViola(Med, DrawBuffer);
-    			Viola = new Character(Med, DrawBuffer, Sta.GameData.ヴィオラ.ChaD);
-    			Viola.Set衣装(Sta.GameData.ヴィオラ.着衣);
+    			GlobalState.GameData.ヴィオラ = new Unit();
+    			GlobalState.GameData.ヴィオラ.SetViola(Med, DrawBuffer);
+    			Viola = new Character(Med, DrawBuffer, GlobalState.GameData.ヴィオラ.ChaD);
+    			Viola.Set衣装(GlobalState.GameData.ヴィオラ.着衣);
     			ViolaTextBubble.接続(Viola.Body.頭.口_接続点);
     			i = 0;
     			wi = 0;
@@ -6432,7 +6432,7 @@ namespace SlaveMatrix
     			"",
     			GameText.お金がなければ借りればいいじゃない,
     			GameText.借金と返済は事務所つまりここで出来るわ,
-    			GameText.借金には1日 + Sta.GameData.利子 * 100.0 + GameText.の利子がつくわよ + "  \r\n" + GameText.良心的よねうふふ,
+    			GameText.借金には1日 + GlobalState.GameData.利子 * 100.0 + GameText.の利子がつくわよ + "  \r\n" + GameText.良心的よねうふふ,
     			GameText.そうそう言い忘れていたけどあなたは調教師として必要な拘束術が使えるようになっているはずよ,
     			"",
     			GameText.点6,
@@ -6532,7 +6532,7 @@ namespace SlaveMatrix
     						ip.SubInfo = GameText.あなたの鎖は弾け飛ぶ;
     						ViolaTextBubble.Text = GameText.あらあら今ので利子が上がってしまったわうふふ;
     						ViolaTextBubble.TextBlock.Feed.Dra = true;
-    						Sta.GameData.利子 *= 2.0;
+    						GlobalState.GameData.利子 *= 2.0;
     					};
     					ViolaTextBubble.TextBlock.Feed.Dra = false;
     					Viola.Body.拘束具_表示 = true;
@@ -6617,7 +6617,7 @@ namespace SlaveMatrix
     					}
     					else
     					{
-    						Sta.GameData.初事務所フラグ = false;
+    						GlobalState.GameData.初事務所フラグ = false;
     						Med.SwitchMode("Office", DrawBuffer, DrawOffice);
     					}
     				}
@@ -7109,7 +7109,7 @@ namespace SlaveMatrix
     					}
     					else
     					{
-    						Sta.GameData.初事務所フラグ = false;
+    						GlobalState.GameData.初事務所フラグ = false;
     						Med.SwitchMode("Office", DrawBuffer, DrawOffice);
     					}
     				}
@@ -7280,7 +7280,7 @@ namespace SlaveMatrix
     			ViolaTextBubble.Text = tsc[i];
     			ip.Text = tsp[i];
     			ip.SubInfo = sub[i];
-    			Sta.GameData.祝福 = Sta.GameData.ヴィオラ;
+    			GlobalState.GameData.祝福 = GlobalState.GameData.ヴィオラ;
     		};
     		mod.Draw = delegate(FpsCounter FPS)
     		{
@@ -7313,11 +7313,11 @@ namespace SlaveMatrix
         //buttons added by the other guy
     	public static void NewButtons(ModeEventDispatcher med)
     	{
-    		if (Sta.SensesButton)
+    		if (GlobalState.SensesButton)
     		{
                 double x = 0.6;
                 double y = 0.9075;
-                if (Sta.BigWindow)
+                if (GlobalState.BigWindow)
                 {
                     x = 0.695;
                     y = 0.932;
@@ -7326,24 +7326,24 @@ namespace SlaveMatrix
                 dbs.Add("Senses", MyUI.Button(med, DrawBuffer, "Senses", new Vector2D(x, y), delegate
                 {
                     //Sounds.操作.Play();
-                    Sta.ShowSenses = !Sta.ShowSenses;
+                    GlobalState.ShowSenses = !GlobalState.ShowSenses;
                 }));
             }
-    		if (Sta.JsonButton)
+    		if (GlobalState.JsonButton)
     		{
                 {
                     double x = 0.6;
                     double y = 0.9075;
-                    if (Sta.BigWindow)
+                    if (GlobalState.BigWindow)
                     {
                         x = 0.695;
                         y = 0.932;
-                        if (Sta.SensesButton)
+                        if (GlobalState.SensesButton)
                         {
                             x = 0.62;
                         }
                     }
-                    if (!Sta.BigWindow && Sta.SensesButton)
+                    if (!GlobalState.BigWindow && GlobalState.SensesButton)
                     {
                         x = 0.5;
                     }
@@ -7364,16 +7364,16 @@ namespace SlaveMatrix
                 {
                     double y = 0.9075;
                     double x = 0.5;
-                    if (Sta.BigWindow)
+                    if (GlobalState.BigWindow)
                     {
                         x = 0.62;
                         y = 0.932;
-                        if (Sta.SensesButton)
+                        if (GlobalState.SensesButton)
                         {
                             x = 0.545;
                         }
                     }
-                    if (!Sta.BigWindow && Sta.SensesButton)
+                    if (!GlobalState.BigWindow && GlobalState.SensesButton)
                     {
                         x = 0.4;
                     }
@@ -7397,13 +7397,13 @@ namespace SlaveMatrix
         //room buttons or smthn?
     	public static void MoveRoomDown()
     	{
-    		if (Sta.GameData.TrainingTarget != null)
+    		if (GlobalState.GameData.TrainingTarget != null)
     		{
-    			int num = int.Parse(Sta.GameData.TrainingTarget.Number) - 1;
-    			if (Sta.GameData.Slaves[num + 1] != null)
+    			int num = int.Parse(GlobalState.GameData.TrainingTarget.Number) - 1;
+    			if (GlobalState.GameData.Slaves[num + 1] != null)
     			{
-    				Unit unit = Sta.GameData.Slaves[num];
-    				Unit unit2 = Sta.GameData.Slaves[num + 1];
+    				Unit unit = GlobalState.GameData.Slaves[num];
+    				Unit unit2 = GlobalState.GameData.Slaves[num + 1];
     				int[] array = new int[3]
     				{
     					int.Parse(unit.Number),
@@ -7416,22 +7416,22 @@ namespace SlaveMatrix
     				unit2.Number = array[0].ToString().PadLeft(3, '0');
     				unit2.階層位置 = array[1];
     				unit2.RoomNumber = array[2];
-    				Sta.GameData.Slaves[num] = unit2;
-    				Sta.GameData.Slaves[num + 1] = unit;
-    				Sta.GameData.TrainingTarget = Sta.GameData.Slaves[num + 1];
+    				GlobalState.GameData.Slaves[num] = unit2;
+    				GlobalState.GameData.Slaves[num + 1] = unit;
+    				GlobalState.GameData.TrainingTarget = GlobalState.GameData.Slaves[num + 1];
     			}
     		}
     	}
 
     	public static void MoveRoomUp()
     	{
-    		if (Sta.GameData.TrainingTarget != null)
+    		if (GlobalState.GameData.TrainingTarget != null)
     		{
-    			int num = int.Parse(Sta.GameData.TrainingTarget.Number) - 1;
-    			if (num != 0 && Sta.GameData.Slaves[num - 1] != null)
+    			int num = int.Parse(GlobalState.GameData.TrainingTarget.Number) - 1;
+    			if (num != 0 && GlobalState.GameData.Slaves[num - 1] != null)
     			{
-    				Unit unit = Sta.GameData.Slaves[num];
-    				Unit unit2 = Sta.GameData.Slaves[num - 1];
+    				Unit unit = GlobalState.GameData.Slaves[num];
+    				Unit unit2 = GlobalState.GameData.Slaves[num - 1];
     				int[] array = new int[3]
     				{
     					int.Parse(unit.Number),
@@ -7444,28 +7444,28 @@ namespace SlaveMatrix
     				unit2.Number = array[0].ToString().PadLeft(3, '0');
     				unit2.階層位置 = array[1];
     				unit2.RoomNumber = array[2];
-    				Sta.GameData.Slaves[num] = unit2;
-    				Sta.GameData.Slaves[num - 1] = unit;
-    				Sta.GameData.TrainingTarget = Sta.GameData.Slaves[num - 1];
+    				GlobalState.GameData.Slaves[num] = unit2;
+    				GlobalState.GameData.Slaves[num - 1] = unit;
+    				GlobalState.GameData.TrainingTarget = GlobalState.GameData.Slaves[num - 1];
     			}
     		}
     	}
 
     	public static void MoveFloorDown()
     	{
-    		if (Sta.GameData.TrainingTarget == null)
+    		if (GlobalState.GameData.TrainingTarget == null)
     		{
     			return;
     		}
     		for (int i = 0; i < 15; i++)
     		{
-    			int num = int.Parse(Sta.GameData.TrainingTarget.Number) - 1;
-    			if (Sta.GameData.Slaves[num + 1] == null)
+    			int num = int.Parse(GlobalState.GameData.TrainingTarget.Number) - 1;
+    			if (GlobalState.GameData.Slaves[num + 1] == null)
     			{
     				break;
     			}
-    			Unit unit = Sta.GameData.Slaves[num];
-    			Unit unit2 = Sta.GameData.Slaves[num + 1];
+    			Unit unit = GlobalState.GameData.Slaves[num];
+    			Unit unit2 = GlobalState.GameData.Slaves[num + 1];
     			int[] array = new int[3]
     			{
     				int.Parse(unit.Number),
@@ -7478,27 +7478,27 @@ namespace SlaveMatrix
     			unit2.Number = array[0].ToString().PadLeft(3, '0');
     			unit2.階層位置 = array[1];
     			unit2.RoomNumber = array[2];
-    			Sta.GameData.Slaves[num] = unit2;
-    			Sta.GameData.Slaves[num + 1] = unit;
-    			Sta.GameData.TrainingTarget = Sta.GameData.Slaves[num + 1];
+    			GlobalState.GameData.Slaves[num] = unit2;
+    			GlobalState.GameData.Slaves[num + 1] = unit;
+    			GlobalState.GameData.TrainingTarget = GlobalState.GameData.Slaves[num + 1];
     		}
     	}
 
     	public static void MoveFloorUp()
     	{
-    		if (Sta.GameData.TrainingTarget == null)
+    		if (GlobalState.GameData.TrainingTarget == null)
     		{
     			return;
     		}
     		for (int i = 0; i < 15; i++)
     		{
-    			int num = int.Parse(Sta.GameData.TrainingTarget.Number) - 1;
-    			if (num == 0 || Sta.GameData.Slaves[num - 1] == null)
+    			int num = int.Parse(GlobalState.GameData.TrainingTarget.Number) - 1;
+    			if (num == 0 || GlobalState.GameData.Slaves[num - 1] == null)
     			{
     				break;
     			}
-    			Unit unit = Sta.GameData.Slaves[num];
-    			Unit unit2 = Sta.GameData.Slaves[num - 1];
+    			Unit unit = GlobalState.GameData.Slaves[num];
+    			Unit unit2 = GlobalState.GameData.Slaves[num - 1];
     			int[] array = new int[3]
     			{
     				int.Parse(unit.Number),
@@ -7511,9 +7511,9 @@ namespace SlaveMatrix
     			unit2.Number = array[0].ToString().PadLeft(3, '0');
     			unit2.階層位置 = array[1];
     			unit2.RoomNumber = array[2];
-    			Sta.GameData.Slaves[num] = unit2;
-    			Sta.GameData.Slaves[num - 1] = unit;
-    			Sta.GameData.TrainingTarget = Sta.GameData.Slaves[num - 1];
+    			GlobalState.GameData.Slaves[num] = unit2;
+    			GlobalState.GameData.Slaves[num - 1] = unit;
+    			GlobalState.GameData.TrainingTarget = GlobalState.GameData.Slaves[num - 1];
     		}
     	}
     }

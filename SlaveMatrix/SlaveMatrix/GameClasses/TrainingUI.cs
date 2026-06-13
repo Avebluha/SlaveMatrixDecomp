@@ -241,7 +241,7 @@ namespace SlaveMatrix
     		{
     			FocusReset();
     			Focus_nr = value;
-    			if (Med.Mode == "Training" && Cha != null && Cha.CharacterData.Lust > 0.5 && RNG.XS.NextBool())
+    			if (Med.Mode == "Training" && Cha != null && Cha.CharacterData.Lust > 0.5 && Rng.XS.NextBool())
     			{
     				Cha.EyeTracking.Start();
     			}
@@ -401,7 +401,7 @@ namespace SlaveMatrix
     	{
     		擬音キュー.Enqueue(delegate(RenderArea a)
     		{
-    			擬音.Sound(a, Bod.尿道位置.GetAreaPoint(0.04), Sta.潮吹.GetVal(Player.変化V_潮吹, Player.変化V_固有値乱数), new Font("MS Gothic", 1f), Color.Azure, 0.2 + 0.2 * RNG.XS.NextDouble() * Player.変化V_潮吹, b: true);
+    			擬音.Sound(a, Bod.尿道位置.GetAreaPoint(0.04), GlobalState.潮吹.GetVal(Player.変化V_潮吹, Player.変化V_固有値乱数), new Font("MS Gothic", 1f), Color.Azure, 0.2 + 0.2 * Rng.XS.NextDouble() * Player.変化V_潮吹, b: true);
     		});
     	}
 
@@ -411,7 +411,7 @@ namespace SlaveMatrix
     		{
     			擬音キュー.Enqueue(delegate(RenderArea a)
     			{
-    				擬音.Sound(a, Bod.尿道位置.GetAreaPoint(0.04), Sta.放尿.GetVal(Player.変化V_放尿, Player.変化V_固有値乱数), new Font("MS Gothic", 1f), ColorHelper.Black, 0.2 + 0.2 * RNG.XS.NextDouble() * Player.変化V_放尿, b: true);
+    				擬音.Sound(a, Bod.尿道位置.GetAreaPoint(0.04), GlobalState.放尿.GetVal(Player.変化V_放尿, Player.変化V_固有値乱数), new Font("MS Gothic", 1f), ColorHelper.Black, 0.2 + 0.2 * Rng.XS.NextDouble() * Player.変化V_放尿, b: true);
     			});
     		}
     	}
@@ -1772,7 +1772,7 @@ namespace SlaveMatrix
     						ハンド右.Xi = 11;
     					}
     					ef = item4;
-    					if (Sta.GameData.ガイド)
+    					if (GlobalState.GameData.ガイド)
     					{
     						ip.SubInfoIm = ((item4.対象 == ペニスCM) ? ("LCl:" + GameText.選択) : ("LCl:" + GameText.持つ));
     					}
@@ -1861,7 +1861,7 @@ namespace SlaveMatrix
     			}
     		}
     		SetIs膣i肛f();
-    		if (Sta.GameData.ガイド && IsTool && hcm != null)
+    		if (GlobalState.GameData.ガイド && IsTool && hcm != null)
     		{
     			ip.SubInfoIm = ((hcm == ペニスCM || hcm == マウスCM || hcm == ハンド右CM) ? ("LCl:" + GameText.選択) : ("LCl:" + GameText.持つ));
     		}
@@ -2047,17 +2047,17 @@ namespace SlaveMatrix
     			this.Are = Are;
     			double disUnit = Are.DisplayUnitScale;
     			this.ip = ip;
-    			ペニスCM = new CharacterElement(Med, this, ペニス = new ペニス(disUnit, 配色指定.N0, Sta.GameData.配色, Med, new ペニスD
+    			ペニスCM = new CharacterElement(Med, this, ペニス = new ペニス(disUnit, 配色指定.N0, GlobalState.GameData.配色, Med, new ペニスD
     			{
     				濃度 = 0.5,
     				尺度C = 1.09
     			}));
-    			マウスCM = new CharacterElement(Med, this, マウス = new マウス(disUnit, 配色指定.N0, Sta.GameData.配色, Med, new マウスD
+    			マウスCM = new CharacterElement(Med, this, マウス = new マウス(disUnit, 配色指定.N0, GlobalState.GameData.配色, Med, new マウスD
     			{
     				濃度 = 0.5,
     				尺度C = 1.09
     			}));
-    			ハンド右CM = new CharacterElement(Med, this, ハンド右 = new ハンド(disUnit, 配色指定.N0, Sta.GameData.配色, Med, new ハンドD
+    			ハンド右CM = new CharacterElement(Med, this, ハンド右 = new ハンド(disUnit, 配色指定.N0, GlobalState.GameData.配色, Med, new ハンドD
     			{
     				尺度C = 1.09,
     				呪印_輪1_輪外_表示 = false,
@@ -2070,7 +2070,7 @@ namespace SlaveMatrix
     				呪印_鎖2_表示 = false,
     				呪印_鎖3_表示 = false
     			}));
-    			ハンド左CM = new CharacterElement(Med, this, ハンド左 = new ハンド(disUnit, 配色指定.N0, Sta.GameData.配色, Med, new ハンドD
+    			ハンド左CM = new CharacterElement(Med, this, ハンド左 = new ハンド(disUnit, 配色指定.N0, GlobalState.GameData.配色, Med, new ハンドD
     			{
     				尺度C = 1.09,
     				呪印_輪1_輪外_表示 = false,
@@ -2153,7 +2153,7 @@ namespace SlaveMatrix
     			羽箒処理 = new 羽箒処理(this, 羽根箒CM);
     			剃刀処理 = new 剃刀処理(this, T剃刀CM);
     			調鞭処理 = new 調鞭処理(this, 調教鞭CM);
-    			射精 = new 射精(disUnit, 配色指定.N0, Sta.GameData.配色, Med, new 射精D
+    			射精 = new 射精(disUnit, 配色指定.N0, GlobalState.GameData.配色, Med, new 射精D
     			{
     				表示 = false,
     				位置C = new Vector2D(0.0, 0.001)
@@ -2204,8 +2204,8 @@ namespace SlaveMatrix
     					//Sounds.変更1.Play();
     				}
     				調教UI2.拘束具sw.OnOff(a);
-    				Sta.GameData.拘束具 = 調教UI2.拘束具sw.Flag;
-    				調教UI2.Bod.拘束具_表示 = Sta.GameData.拘束具;
+    				GlobalState.GameData.拘束具 = 調教UI2.拘束具sw.Flag;
+    				調教UI2.Bod.拘束具_表示 = GlobalState.GameData.拘束具;
     				調教UI2.Bod.首輪_表示 = true;
     				Player.Reaction1();
     			});
@@ -2228,8 +2228,8 @@ namespace SlaveMatrix
     			目隠帯 = new Button(shapePartT3, delegate(ButtonBase a)
     			{
     				調教UI2.目隠帯sw.OnOff(a);
-    				Sta.GameData.目隠帯 = 調教UI2.目隠帯sw.Flag;
-    				調教UI2.Bod.目隠帯_表示 = Sta.GameData.目隠帯;
+    				GlobalState.GameData.目隠帯 = 調教UI2.目隠帯sw.Flag;
+    				調教UI2.Bod.目隠帯_表示 = GlobalState.GameData.目隠帯;
     				Player.Reaction1();
     			});
     			ShapePartT shapePartT4 = new ShapePartT();
@@ -2251,8 +2251,8 @@ namespace SlaveMatrix
     			玉口枷 = new Button(shapePartT4, delegate(ButtonBase a)
     			{
     				調教UI2.玉口枷sw.OnOff(a);
-    				Sta.GameData.玉口枷 = 調教UI2.玉口枷sw.Flag;
-    				調教UI2.Bod.玉口枷_表示 = Sta.GameData.玉口枷;
+    				GlobalState.GameData.玉口枷 = 調教UI2.玉口枷sw.Flag;
+    				調教UI2.Bod.玉口枷_表示 = GlobalState.GameData.玉口枷;
     				Player.Reaction1();
     			});
     			ShapePartT shapePartT5 = new ShapePartT();
@@ -2315,10 +2315,10 @@ namespace SlaveMatrix
     					v = 調教UI2.パール挿入.Insert;
     				}
     				調教UI2.断面sw.OnOff(a);
-    				Sta.GameData.断面 = 調教UI2.断面sw.Flag;
+    				GlobalState.GameData.断面 = 調教UI2.断面sw.Flag;
     				if (!調教UI2.Bod.Is粘)
     				{
-    					調教UI2.Bod.断面_表示 = Sta.GameData.断面;
+    					調教UI2.Bod.断面_表示 = GlobalState.GameData.断面;
     				}
     				if (調教UI2.ペニス挿入.Is膣)
     				{
@@ -2379,17 +2379,17 @@ namespace SlaveMatrix
     			shapePartT6.PositionBase = shapePartT5.PositionBase.AddY(0.015);
     			媚薬 = new Button(shapePartT6, delegate
     			{
-    				if (Sta.GameData.所持金 < 調教UI2.媚薬投与価格)
+    				if (GlobalState.GameData.所持金 < 調教UI2.媚薬投与価格)
     				{
     					ip.SubInfoIm = GameText.所持金が足りません;
     				}
     				else
     				{
-    					Sta.GameData.所持金 -= 調教UI2.媚薬投与価格;
+    					GlobalState.GameData.所持金 -= 調教UI2.媚薬投与価格;
                         //TODO fix?
                         //Sounds.精算.Play();
     					ip.UpdateSub2();
-    					Sta.GameData.TrainingTarget.発情フラグ = true;
+    					GlobalState.GameData.TrainingTarget.発情フラグ = true;
     					ip.SubInfoIm = GameText.媚薬を打ち込んだ;
     					Player.Reaction1();
     					調教UI2.媚薬.Dra = false;
@@ -2427,7 +2427,7 @@ namespace SlaveMatrix
     				Font font = new Font("MS Gothic", (float)(10.0));
     				float x = 350f;
     				float y = 365f;
-    				if (Sta.BigWindow)
+    				if (GlobalState.BigWindow)
     				{
     					x = 525f;
     					y = 500f;
@@ -2442,7 +2442,7 @@ namespace SlaveMatrix
     				}
     				調教UI2.Film.DisplayLayer.Save(System.IO.Path.Combine(Path, now.ToString("yyyy_MM_dd_HH_mm_ss") + ".png"), ImageFormat.Png);
     				ip.SubInfoIm = GameText.撮影しました + "\r\n" + GameText.写真はPhotoフォルダに保存されます;
-    				if (Sta.GameData.TrainingTarget.Trained && !調教UI2.Cha.Body.Is拘束 && 調教UI2.Cha.Body.Is腕人 && !Sta.GameData.TrainingTarget.ChaD.撮影ピース経験)
+    				if (GlobalState.GameData.TrainingTarget.Trained && !調教UI2.Cha.Body.Is拘束 && 調教UI2.Cha.Body.Is腕人 && !GlobalState.GameData.TrainingTarget.ChaD.撮影ピース経験)
     				{
     					ip.Text = GameText.愛想が悪い + "\r\n" + GameText.ダブルピースさせますか;
     					ip.Mai.Done = delegate
@@ -2450,7 +2450,7 @@ namespace SlaveMatrix
     						ip.選択yAct = delegate
     						{
     							//Sounds.操作.Play();
-    							Sta.GameData.TrainingTarget.ChaD.撮影ピース経験 = true;
+    							GlobalState.GameData.TrainingTarget.ChaD.撮影ピース経験 = true;
     							調教UI2.Cha.Setダブルピース();
     							調教UI2.Cha.Body.Update();
     							ip.選択肢表示 = false;
@@ -2649,30 +2649,30 @@ namespace SlaveMatrix
     		キャップ処理.CP中.Reset();
     		キャップ処理.CP左.Reset();
     		キャップ処理.CP右.Reset();
-    		発情bu = Sta.GameData.TrainingTarget.発情フラグ;
+    		発情bu = GlobalState.GameData.TrainingTarget.発情フラグ;
     		強制拘束 = false;
-    		拘束bu = Sta.GameData.拘束具;
+    		拘束bu = GlobalState.GameData.拘束具;
     		if (!Unit.Trained)
     		{
-    			Sta.GameData.拘束具 = true;
+    			GlobalState.GameData.拘束具 = true;
     			強制拘束 = true;
     		}
-    		拘束具sw.SetFlag(拘束具, Sta.GameData.拘束具);
-    		Bod.拘束具_表示 = Sta.GameData.拘束具;
-    		目隠帯sw.SetFlag(目隠帯, Sta.GameData.目隠帯);
-    		Bod.目隠帯_表示 = Sta.GameData.目隠帯;
-    		玉口枷sw.SetFlag(玉口枷, Sta.GameData.玉口枷);
-    		Bod.玉口枷_表示 = Sta.GameData.玉口枷;
-    		断面sw.SetFlag(断面, Sta.GameData.断面);
+    		拘束具sw.SetFlag(拘束具, GlobalState.GameData.拘束具);
+    		Bod.拘束具_表示 = GlobalState.GameData.拘束具;
+    		目隠帯sw.SetFlag(目隠帯, GlobalState.GameData.目隠帯);
+    		Bod.目隠帯_表示 = GlobalState.GameData.目隠帯;
+    		玉口枷sw.SetFlag(玉口枷, GlobalState.GameData.玉口枷);
+    		Bod.玉口枷_表示 = GlobalState.GameData.玉口枷;
+    		断面sw.SetFlag(断面, GlobalState.GameData.断面);
     		if (!Bod.Is粘)
     		{
-    			Bod.断面_表示 = Sta.GameData.断面;
+    			Bod.断面_表示 = GlobalState.GameData.断面;
     		}
-    		断面.Dra = Sta.GameData.心眼;
-    		媚薬.Dra = Sta.GameData.媚薬 && !Cha.CharacterData.タトゥ;
+    		断面.Dra = GlobalState.GameData.心眼;
+    		媚薬.Dra = GlobalState.GameData.媚薬 && !Cha.CharacterData.タトゥ;
     		拘束具.Dra = Unit.Trained;
-    		SlaveStamina.Dra = Sta.StaminaButton;
-    		PlayerStamina.Dra = Sta.StaminaButton;
+    		SlaveStamina.Dra = GlobalState.StaminaButton;
+    		PlayerStamina.Dra = GlobalState.StaminaButton;
     	}
 
     	public void Reset()
@@ -2968,7 +2968,7 @@ namespace SlaveMatrix
     		{
     			Are.Draw(ステート.PartGroup);
     		}
-    		if (Sta.ShowSenses)
+    		if (GlobalState.ShowSenses)
     		{
     			Are.Draw(InfoBox.PartGroup);
     			Are.Draw(SensitivityBox.PartGroup);
@@ -2986,7 +2986,7 @@ namespace SlaveMatrix
     		{
     			Are.Draw(ステート.PartGroup);
     		}
-    		if (Sta.ShowSenses)
+    		if (GlobalState.ShowSenses)
     		{
     			Are.Draw(InfoBox.PartGroup);
     			Are.Draw(SensitivityBox.PartGroup);
@@ -3045,11 +3045,11 @@ namespace SlaveMatrix
     	{
     		double num = 0.31;
     		double width = 0.7;
-    		if (Sta.BigWindow)
+    		if (GlobalState.BigWindow)
     		{
     			num += 0.14;
     		}
-    		if (Sta.FixInfo)
+    		if (GlobalState.FixInfo)
     		{
     			width = 0.75;
     		}
@@ -3062,7 +3062,7 @@ namespace SlaveMatrix
     	{
     		double x = 0.08;
     		double y = 0.1;
-    		if (Sta.BigWindow)
+    		if (GlobalState.BigWindow)
     		{
     			x = 0.08;
     			y = 0.1;
@@ -3087,7 +3087,7 @@ namespace SlaveMatrix
     		{
     			//Sounds.操作.Play();
     			ip.UpdateSub2();
-    			Sta.GameData.TrainingTarget.ChaD.Stamina = 1.0;
+    			GlobalState.GameData.TrainingTarget.ChaD.Stamina = 1.0;
     		});
     		ShapePartT shapePartT2 = new ShapePartT();
     		shapePartT2.Text = "PlayerStamina";
@@ -3109,7 +3109,7 @@ namespace SlaveMatrix
     		{
     			//Sounds.操作.Play();
     			ip.UpdateSub2();
-    			Sta.GameData.精力 = 1.0;
+    			GlobalState.GameData.精力 = 1.0;
     		});
     	}
     }

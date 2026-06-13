@@ -443,7 +443,7 @@ namespace SlaveMatrix
     	public 虫鎌(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 虫鎌D e)
     	{
     		ThisType = GetType();
-    		Body = new VariantGrid(Sta.肢左["虫鎌"]);
+    		Body = new VariantGrid(GlobalState.肢左["虫鎌"]);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_虫鎌節 = partGroup["虫鎌節"].ToPar();
     		X0Y0_虫棘1 = partGroup["虫棘1"].ToPar();

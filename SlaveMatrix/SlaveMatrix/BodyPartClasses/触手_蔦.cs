@@ -3285,7 +3285,7 @@ namespace SlaveMatrix
     		ThisType = GetType();
     		MorphVariant morphVariant = new MorphVariant();
     		morphVariant.Tag = "蔦";
-    		morphVariant.Add(new PartGroup(Sta.肢左["触手"][0][3]));
+    		morphVariant.Add(new PartGroup(GlobalState.肢左["触手"][0][3]));
     		Body = new VariantGrid();
     		Body.Tag = morphVariant.Tag;
     		Body.Add(morphVariant);
@@ -4272,7 +4272,7 @@ namespace SlaveMatrix
     		X0Y0_節22_節.AngleBase = maxAngle.GetRanAngle();
     		X0Y0_節23_節.AngleBase = maxAngle.GetRanAngle();
     		X0Y0_節24_節.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_先端_上顎_顎.AngleBase = num * (double)RNG.XS.NextM(15);
+    		X0Y0_先端_上顎_顎.AngleBase = num * (double)Rng.XS.NextM(15);
     		X0Y0_先端_下顎_顎.AngleBase = num * (0.0 - X0Y0_先端_上顎_顎.AngleBase);
     		Body.JoinPAall();
     	}

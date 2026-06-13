@@ -509,7 +509,7 @@ namespace SlaveMatrix
     	public 瞼_獣(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 瞼_獣D e)
     	{
     		ThisType = GetType();
-    		Body = new VariantGrid(Sta.胴体["獣性瞼左"]);
+    		Body = new VariantGrid(GlobalState.胴体["獣性瞼左"]);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_瞼 = partGroup["瞼"].ToPar();
     		X0Y0_二重 = partGroup["二重"].ToPar();

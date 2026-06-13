@@ -1482,18 +1482,18 @@ namespace SlaveMatrix
     		{
     			if (value != 0.0)
     			{
-    				蜘尾.X0Y0_出糸突起後_出糸突起中.SizeYCont = 0.8 + 0.2 * RNG.XS.NextDouble();
+    				蜘尾.X0Y0_出糸突起後_出糸突起中.SizeYCont = 0.8 + 0.2 * Rng.XS.NextDouble();
     			}
     			else
     			{
     				蜘尾.X0Y0_出糸突起後_出糸突起中.SizeYCont = 1.0;
     			}
-    			蜘尾.X0Y0_出糸突起後_出糸突起左.AngleCont = value * RNG.XS.NextDouble();
-    			蜘尾.X0Y0_出糸突起後_出糸突起右.AngleCont = (0.0 - value) * RNG.XS.NextDouble();
-    			蜘尾.X0Y0_出糸突起左_出糸突起1.AngleCont = value * RNG.XS.NextDouble();
-    			蜘尾.X0Y0_出糸突起右_出糸突起1.AngleCont = (0.0 - value) * RNG.XS.NextDouble();
-    			蜘尾.X0Y0_出糸突起前_出糸突起左.AngleCont = value * RNG.XS.NextDouble();
-    			蜘尾.X0Y0_出糸突起前_出糸突起右.AngleCont = (0.0 - value) * RNG.XS.NextDouble();
+    			蜘尾.X0Y0_出糸突起後_出糸突起左.AngleCont = value * Rng.XS.NextDouble();
+    			蜘尾.X0Y0_出糸突起後_出糸突起右.AngleCont = (0.0 - value) * Rng.XS.NextDouble();
+    			蜘尾.X0Y0_出糸突起左_出糸突起1.AngleCont = value * Rng.XS.NextDouble();
+    			蜘尾.X0Y0_出糸突起右_出糸突起1.AngleCont = (0.0 - value) * Rng.XS.NextDouble();
+    			蜘尾.X0Y0_出糸突起前_出糸突起左.AngleCont = value * Rng.XS.NextDouble();
+    			蜘尾.X0Y0_出糸突起前_出糸突起右.AngleCont = (0.0 - value) * Rng.XS.NextDouble();
     			if (Is髪 && EI髪.ElesH.Contains(蜘尾))
     			{
     				EI髪.Updatef = true;
@@ -2830,7 +2830,7 @@ namespace SlaveMatrix
     			}
     			else
     			{
-    				Set拘束具 = Sta.拘束具初期化;
+    				Set拘束具 = GlobalState.拘束具初期化;
     			}
     		}
     	}
@@ -2850,7 +2850,7 @@ namespace SlaveMatrix
     			}
     			else
     			{
-    				Set目隠帯 = Sta.目隠帯初期化;
+    				Set目隠帯 = GlobalState.目隠帯初期化;
     			}
     		}
     	}
@@ -2871,7 +2871,7 @@ namespace SlaveMatrix
     			}
     			else
     			{
-    				Set玉口枷 = Sta.玉口枷初期化;
+    				Set玉口枷 = GlobalState.玉口枷初期化;
     			}
     		}
     	}
@@ -2892,7 +2892,7 @@ namespace SlaveMatrix
     			}
     			else
     			{
-    				拘束具情報 拘束具初期化 = Sta.拘束具初期化;
+    				拘束具情報 拘束具初期化 = GlobalState.拘束具初期化;
     				Neck.拘束 = 拘束具初期化.表示;
     				Neck.首輪配色(拘束具初期化.色);
     			}
@@ -2964,7 +2964,7 @@ namespace SlaveMatrix
     			FieldInfo[] fields = current_element.ThisType.GetFields();
     			foreach (FieldInfo fieldInfo in fields)
     			{
-    				if (fieldInfo.FieldType.ToString() == Sta.拘束鎖t)
+    				if (fieldInfo.FieldType.ToString() == GlobalState.拘束鎖t)
     				{
     					((拘束鎖)fieldInfo.GetValue(current_element)).SetSize();
     				}
@@ -5298,12 +5298,12 @@ namespace SlaveMatrix
     			Urination = 放尿_獣;
     			肛門 = 肛門_獣;
     			AnalCum = 肛門精液_獣;
-    			膣内精液_獣.精液配色(Sta.GameData.配色);
+    			膣内精液_獣.精液配色(GlobalState.GameData.配色);
     			膣内精液_獣.精液濃度 = 0.0;
-    			断面_獣.精液配色(Sta.GameData.配色);
+    			断面_獣.精液配色(GlobalState.GameData.配色);
     			断面_獣.精液濃度 = 0.0;
-    			性器精液_獣.精液配色(Sta.GameData.配色);
-    			肛門精液_獣.精液配色(Sta.GameData.配色);
+    			性器精液_獣.精液配色(GlobalState.GameData.配色);
+    			肛門精液_獣.精液配色(GlobalState.GameData.配色);
     			染み_獣 = new 染み_獣(disUnit, 配色指定.N0, Cha.ColorSet, Med, new 染み_獣D());
     			染み_獣.サイズ = Elements.Sum((Element e) => e.サイズ) / (double)Elements.Length;
     			染み_獣.Intensity = 0.0;
@@ -5341,12 +5341,12 @@ namespace SlaveMatrix
     			Urination = 放尿_人;
     			肛門 = 肛門_人;
     			AnalCum = 肛門精液_人;
-    			膣内精液_人.精液配色(Sta.GameData.配色);
+    			膣内精液_人.精液配色(GlobalState.GameData.配色);
     			膣内精液_人.精液濃度 = 0.0;
-    			断面_人.精液配色(Sta.GameData.配色);
+    			断面_人.精液配色(GlobalState.GameData.配色);
     			断面_人.精液濃度 = 0.0;
-    			性器精液_人.精液配色(Sta.GameData.配色);
-    			肛門精液_人.精液配色(Sta.GameData.配色);
+    			性器精液_人.精液配色(GlobalState.GameData.配色);
+    			肛門精液_人.精液配色(GlobalState.GameData.配色);
     			Vector2D positionCont4 = new Vector2D(0.0, 0.006);
     			染み_人.X0Y0_湯気_湯気左1_湯気2.PositionCont = positionCont4;
     			染み_人.X0Y0_湯気_湯気左2_湯気2.PositionCont = positionCont4;
@@ -5372,7 +5372,7 @@ namespace SlaveMatrix
     		肛門y = 肛門.尺度YB;
     		肛門v = 肛門.尺度B;
     		口i = 0;
-    		MouthCum.精液配色(Sta.GameData.配色);
+    		MouthCum.精液配色(GlobalState.GameData.配色);
     		頬濃度 = 0.3;
     		下着B_ノーマル.染み濃度 = 0.0;
     		下着B_マイクロ.染み濃度 = 0.0;
@@ -5380,7 +5380,7 @@ namespace SlaveMatrix
     		if (Is蜘尾 = 蜘尾 != null)
     		{
     			ThreadCum = new 性器精液_人(disUnit, 配色指定.N0, Cha.ColorSet, Med, new 性器精液_人D());
-    			ThreadCum.精液配色(Sta.GameData.配色);
+    			ThreadCum.精液配色(GlobalState.GameData.配色);
     			ThreadCum.接続(蜘尾.出糸_接続点);
     		}
     		頬濃度 = 0.0;
@@ -8327,7 +8327,7 @@ namespace SlaveMatrix
     				}
     				bod.Waist.描画0(are);
     				bod.Waist.描画1(are);
-    				if (!Sta.GameData.断面)
+    				if (!GlobalState.GameData.断面)
     				{
     					bod.肛門_人.描画0(are);
     					bod.肛門精液_人.描画0(are);
@@ -8471,7 +8471,7 @@ namespace SlaveMatrix
     				{
     					bod.EI腕前.描画(are);
     				}
-    				if (Sta.GameData.断面)
+    				if (GlobalState.GameData.断面)
     				{
     					bod.肛門_人.描画0(are);
     					bod.肛門精液_人.描画0(are);
@@ -9519,7 +9519,7 @@ namespace SlaveMatrix
 
     	public void Addぶっかけ(Vector2D cp, Color hc)
     	{
-    		if (RNG.XS.NextBool())
+    		if (Rng.XS.NextBool())
     		{
     			ぶっかけ小.Add(cp, hc, ぶっかけr);
     		}
@@ -9636,7 +9636,7 @@ namespace SlaveMatrix
     		foreach (Element item in EnumAllEle())
     		{
     			foreach (FieldInfo item2 in from f in item.GetType().GetFields()
-    				where f.FieldType.ToString() == Sta.cdt
+    				where f.FieldType.ToString() == GlobalState.cdt
     				select f)
     			{
     				ColorD colorD = (ColorD)item2.GetValue(item);
@@ -9851,7 +9851,7 @@ namespace SlaveMatrix
     	{
     		Type type = e.GetType();
     		foreach (FieldInfo item in from e_ in i.GetType().GetFields()
-    			where e_.FieldType.ToString() == Sta.bt
+    			where e_.FieldType.ToString() == GlobalState.bt
     			select e_)
     		{
     			type.GetProperty(item.Name).SetValue(e, item.GetValue(i), null);
@@ -9860,28 +9860,28 @@ namespace SlaveMatrix
 
     	public void 脱衣()
     	{
-    		Set後髪髪留 = Sta.髪留2初期化;
-    		Set横髪髪留 = Sta.髪留2初期化;
-    		Set玉口枷 = Sta.玉口枷初期化;
-    		Set目隠帯 = Sta.目隠帯初期化;
-    		Setピアス = Sta.ピアス初期化;
-    		Setピアス左 = Sta.ピアス初期化;
-    		Setピアス右 = Sta.ピアス初期化;
-    		Setキャップ1 = Sta.キャップ初期化;
-    		Setキャップ2左 = Sta.キャップ初期化;
-    		Setキャップ2右 = Sta.キャップ初期化;
-    		Setドレス首 = Sta.ドレス首初期化;
-    		Set下着T_チューブ = Sta.下着T_チューブ初期化;
-    		Set下着T_クロス = Sta.下着T_クロス初期化;
-    		Set下着T_ビキニ = Sta.下着T_ビキニ初期化;
-    		Set下着T_マイクロ = Sta.下着T_マイクロ初期化;
-    		Set下着T_ブラ = Sta.下着T_ブラ初期化;
-    		Set下着B_ノーマル = Sta.下着B_ノーマル初期化;
-    		Set下着B_マイクロ = Sta.下着B_マイクロ初期化;
-    		Setドレス = Sta.ドレス初期化;
-    		Set上着B_クロス = Sta.上着B_クロス初期化;
-    		Set上着B_前掛け = Sta.上着B_前掛け初期化;
-    		Setブーツ = Sta.ブーツ初期化;
+    		Set後髪髪留 = GlobalState.髪留2初期化;
+    		Set横髪髪留 = GlobalState.髪留2初期化;
+    		Set玉口枷 = GlobalState.玉口枷初期化;
+    		Set目隠帯 = GlobalState.目隠帯初期化;
+    		Setピアス = GlobalState.ピアス初期化;
+    		Setピアス左 = GlobalState.ピアス初期化;
+    		Setピアス右 = GlobalState.ピアス初期化;
+    		Setキャップ1 = GlobalState.キャップ初期化;
+    		Setキャップ2左 = GlobalState.キャップ初期化;
+    		Setキャップ2右 = GlobalState.キャップ初期化;
+    		Setドレス首 = GlobalState.ドレス首初期化;
+    		Set下着T_チューブ = GlobalState.下着T_チューブ初期化;
+    		Set下着T_クロス = GlobalState.下着T_クロス初期化;
+    		Set下着T_ビキニ = GlobalState.下着T_ビキニ初期化;
+    		Set下着T_マイクロ = GlobalState.下着T_マイクロ初期化;
+    		Set下着T_ブラ = GlobalState.下着T_ブラ初期化;
+    		Set下着B_ノーマル = GlobalState.下着B_ノーマル初期化;
+    		Set下着B_マイクロ = GlobalState.下着B_マイクロ初期化;
+    		Setドレス = GlobalState.ドレス初期化;
+    		Set上着B_クロス = GlobalState.上着B_クロス初期化;
+    		Set上着B_前掛け = GlobalState.上着B_前掛け初期化;
+    		Setブーツ = GlobalState.ブーツ初期化;
     	}
 
     	public void 胸施術()

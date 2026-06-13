@@ -170,7 +170,7 @@ namespace SlaveMatrix
     	public 大顎上(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色)
     	{
     		ThisType = GetType();
-    		Body = new VariantGrid(Sta.肢中["大顎上"]);
+    		Body = new VariantGrid(GlobalState.肢中["大顎上"]);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_甲殻 = partGroup["甲殻"].ToPar();
     		X0Y0_線左 = partGroup["線左"].ToPar();

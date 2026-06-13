@@ -308,7 +308,7 @@ namespace SlaveMatrix
     	public 鼻肌(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 鼻肌D e)
     	{
     		ThisType = GetType();
-    		Body = new VariantGrid(Sta.胴体["鼻肌"]);
+    		Body = new VariantGrid(GlobalState.胴体["鼻肌"]);
     		PartGroup partGroup = Body[0][0];
     		PartGroup pars2 = partGroup["紋柄"].ToPars();
     		PartGroup pars3 = pars2["紋左"].ToPars();

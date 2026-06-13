@@ -1086,7 +1086,7 @@ namespace SlaveMatrix
     		ThisType = GetType();
     		MorphVariant morphVariant = new MorphVariant();
     		morphVariant.Tag = "編み2ジグ";
-    		morphVariant.Add(new PartGroup(Sta.胴体["BackHair0"][0][16]));
+    		morphVariant.Add(new PartGroup(GlobalState.胴体["BackHair0"][0][16]));
     		Body = new VariantGrid();
     		Body.Tag = morphVariant.Tag;
     		Body.Add(morphVariant);
@@ -1285,7 +1285,7 @@ namespace SlaveMatrix
     	public override void SetAngle0()
     	{
     		double num = (右 ? (-1.0) : 1.0);
-    		double num2 = 2.5 + 2.5 * RNG.XS.NextDouble();
+    		double num2 = 2.5 + 2.5 * Rng.XS.NextDouble();
     		X0Y0_お下げ左_編節1_髪節.AngleBase = num * num2;
     		X0Y0_お下げ左_編節2_髪節.AngleBase = num * num2;
     		X0Y0_お下げ左_編節3_髪節.AngleBase = num * num2;

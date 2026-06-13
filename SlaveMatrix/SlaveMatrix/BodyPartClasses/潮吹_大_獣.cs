@@ -1514,7 +1514,7 @@ namespace SlaveMatrix
     	public 潮吹_大_獣(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 潮吹_大_獣D e)
     	{
     		ThisType = GetType();
-    		MorphVariant morphVariant = new MorphVariant(Sta.性器付["四足潮吹"][1]);
+    		MorphVariant morphVariant = new MorphVariant(GlobalState.性器付["四足潮吹"][1]);
     		Body = new VariantGrid();
     		Body.Tag = morphVariant.Tag;
     		Body.Add(morphVariant);

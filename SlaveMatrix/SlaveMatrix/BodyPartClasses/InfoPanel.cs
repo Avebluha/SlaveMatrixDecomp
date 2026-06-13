@@ -275,7 +275,7 @@ namespace SlaveMatrix
 
     	public void UpdateSub2()
     	{
-    		Sub2.TextIm = GameText.所持金 + "\r\n" + Sta.GameData.所持金.ToString("#,0") + "\r\n" + GameText.借金 + "\r\n" + Sta.GameData.借金.ToString("#,0") + "\r\n" + Sta.GameData.日数 + GameText.日目 + "/" + Sta.GameData.時間帯;
+    		Sub2.TextIm = GameText.所持金 + "\r\n" + GlobalState.GameData.所持金.ToString("#,0") + "\r\n" + GameText.借金 + "\r\n" + GlobalState.GameData.借金.ToString("#,0") + "\r\n" + GlobalState.GameData.日数 + GameText.日目 + "/" + GlobalState.GameData.時間帯;
     	}
 
     	private void SetButPos()

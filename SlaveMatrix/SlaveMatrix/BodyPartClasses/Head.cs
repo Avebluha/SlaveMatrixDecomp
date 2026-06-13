@@ -1037,7 +1037,7 @@ namespace SlaveMatrix
     	{
     		Head 頭2 = this;
     		ThisType = GetType();
-    		Body = new VariantGrid(Sta.胴体["Head"]);
+    		Body = new VariantGrid(GlobalState.胴体["Head"]);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_Head = partGroup["頭"].ToPar();
     		PartGroup pars2 = partGroup["悪タトゥ"].ToPars();
@@ -1515,7 +1515,7 @@ namespace SlaveMatrix
     	private void 開顎(double Rate)
     	{
     		double y = 0.0003 * Rate;
-    		ShapePart shapePart = Sta.胴体["Head"][0][0]["頭"].ToPar();
+    		ShapePart shapePart = GlobalState.胴体["Head"][0][0]["頭"].ToPar();
     		ShapePart x0Y0_頭 = X0Y0_Head;
     		x0Y0_頭.OP[0].ps[3] = shapePart.OP[0].ps[3].AddY(y);
     		x0Y0_頭.OP[0].ps[4] = shapePart.OP[0].ps[4].AddY(y);

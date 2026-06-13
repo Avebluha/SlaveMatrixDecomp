@@ -25,10 +25,10 @@ namespace SlaveMatrix
 
     	public SideHair_ジグD SetRandom()
     	{
-    		髪長1 = RNG.XS.NextDouble();
-    		髪長2 = RNG.XS.NextDouble();
-    		毛量 = RNG.XS.NextDouble();
-    		広がり = RNG.XS.NextDouble();
+    		髪長1 = Rng.XS.NextDouble();
+    		髪長2 = Rng.XS.NextDouble();
+    		毛量 = Rng.XS.NextDouble();
+    		広がり = Rng.XS.NextDouble();
     		髪長1 = 1.0;
     		髪長2 = 1.0;
     		return this;

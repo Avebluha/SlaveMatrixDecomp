@@ -443,7 +443,7 @@ namespace SlaveMatrix
     	public 染み_人(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 染み_人D e)
     	{
     		ThisType = GetType();
-    		Body = new VariantGrid(Sta.その他["染み"]);
+    		Body = new VariantGrid(GlobalState.その他["染み"]);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_潮1 = partGroup["潮1"].ToPar();
     		X0Y0_潮2 = partGroup["潮2"].ToPar();

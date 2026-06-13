@@ -134,7 +134,7 @@ namespace SlaveMatrix
     	public 潮吹_小_人(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 潮吹_小_人D e)
     	{
     		ThisType = GetType();
-    		MorphVariant morphVariant = new MorphVariant(Sta.性器付["潮吹"][0]);
+    		MorphVariant morphVariant = new MorphVariant(GlobalState.性器付["潮吹"][0]);
     		Body = new VariantGrid();
     		Body.Tag = morphVariant.Tag;
     		Body.Add(morphVariant);

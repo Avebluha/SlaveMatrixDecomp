@@ -107,7 +107,7 @@ namespace SlaveMatrix
     	public 鎖(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 鎖D e)
     	{
     		ThisType = GetType();
-    		Body = new VariantGrid(Sta.その他["鎖"]);
+    		Body = new VariantGrid(GlobalState.その他["鎖"]);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_鎖2 = partGroup["鎖2"].ToPar();
     		X0Y0_鎖1 = partGroup["鎖1"].ToPar();

@@ -372,7 +372,7 @@ namespace SlaveMatrix
     	public 上着ボトム_前掛け(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 上着ボトム_前掛けD e)
     	{
     		ThisType = GetType();
-    		MorphVariant morphVariant = new MorphVariant(Sta.胴体["上着ボトム前"][1]);
+    		MorphVariant morphVariant = new MorphVariant(GlobalState.胴体["上着ボトム前"][1]);
     		Body = new VariantGrid();
     		Body.Tag = morphVariant.Tag;
     		Body.Add(morphVariant);
