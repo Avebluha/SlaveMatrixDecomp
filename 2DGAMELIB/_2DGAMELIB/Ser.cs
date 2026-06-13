@@ -22,7 +22,8 @@ namespace _2DGAMELIB
             .Add("_2DGAMELIB.Joi", typeof(JointPoint))
             .Add("_2DGAMELIB.Dif", typeof(MorphVariant))
             .Add("_2DGAMELIB.Difs", typeof(VariantGrid))
-            .Add("_2DGAMELIB.Obj", typeof(BodyTemplate));
+            .Add("_2DGAMELIB.Obj", typeof(BodyTemplate))
+            .Add("_2DGAMELIB.Sce", typeof(SceneFader));
 
         private static BinaryFormatter NewFormatter()
         {

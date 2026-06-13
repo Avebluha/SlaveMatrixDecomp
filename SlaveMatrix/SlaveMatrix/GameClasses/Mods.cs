@@ -556,8 +556,8 @@ namespace SlaveMatrix
     	{
     		Med.Mode = Mode;
     		描画(drawArea, Med.FPSF);
-    		Med.Sce.DrawStart(Are);
-    		Med.Sce.DrawEnd(drawArea);
+    		Med.SceneFader.DrawStart(Are);
+    		Med.SceneFader.DrawEnd(drawArea);
     		fade_in = true;
     	}
 
@@ -565,8 +565,8 @@ namespace SlaveMatrix
         {
             調教描画(drawArea, Med.FPSF);
             Color col = Color.FromArgb(128, Color.White);
-            Med.Sce.ClearStart(ref col);
-            Med.Sce.DrawEnd(drawArea);
+            Med.SceneFader.ClearStart(ref col);
+            Med.SceneFader.DrawEnd(drawArea);
             fade_in = true;
         }
 
@@ -1172,8 +1172,8 @@ namespace SlaveMatrix
     			{
     				DrawBuffer.Clear(Col.Black);
     				DrawBuffer.Draw(label.ShapePartT);
-    				Med.Sce.DrawStart(BlackBackground);
-    				Med.Sce.DrawEnd(DrawBuffer);
+    				Med.SceneFader.DrawStart(BlackBackground);
+    				Med.SceneFader.DrawEnd(DrawBuffer);
     				v = 0.0;
     				fadeIn = true;
     				fadeOut = false;
@@ -1218,8 +1218,8 @@ namespace SlaveMatrix
     							mv.ResetValue();
     							Med.Draw(DrawBuffer);
     							fadeOut = true;
-    							Med.Sce.DrawStart(DrawBuffer);
-    							Med.Sce.DrawEnd(BlackBackground);
+    							Med.SceneFader.DrawStart(DrawBuffer);
+    							Med.SceneFader.DrawEnd(BlackBackground);
     						}
     					}
     				}
@@ -1292,8 +1292,8 @@ namespace SlaveMatrix
                     ll = false;
                     DrawBuffer.Clear(Col.Black);
                     DrawBuffer.Draw(label.ShapePartT);
-                    Med.Sce.DrawStart(BlackBackground);
-                    Med.Sce.DrawEnd(DrawBuffer);
+                    Med.SceneFader.DrawStart(BlackBackground);
+                    Med.SceneFader.DrawEnd(DrawBuffer);
                     v = 0.0;
                     b1 = true;
                     mv.ResetValue();

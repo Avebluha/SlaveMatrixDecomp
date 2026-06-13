@@ -5,7 +5,7 @@ namespace _2DGAMELIB
 {
 
     //Basically used to animate switching between two static images
-    public class Sce
+    public class SceneFader
     {
     	private Bitmap Start;
     	private Graphics GS;
@@ -23,7 +23,7 @@ namespace _2DGAMELIB
 
     	private ImageAttributes ia = new ImageAttributes();
 
-    	public Sce(int Width, int Height)
+    	public SceneFader(int Width, int Height)
     	{
     		w = Width;
     		h = Height;

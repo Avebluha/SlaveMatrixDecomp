@@ -29,7 +29,7 @@ namespace _2DGAMELIB
         public Bitmap Hit;
         public Graphics HitGraphics;
 
-        public Sce Sce;
+        public SceneFader SceneFader;
         public FPS FPSF = new FPS(60.0);
 
         private Size BaseSize = Size.Empty;
@@ -84,12 +84,12 @@ namespace _2DGAMELIB
 
     	public void FadeIn(double Rate)
     	{
-    		Sce.TransformAlpha(DisplayGraphics, Rate);
+    		SceneFader.TransformAlpha(DisplayGraphics, Rate);
     	}
 
     	public void FadeOut(double Rate)
     	{
-    		Sce.TransD(DisplayGraphics, Rate);
+    		SceneFader.TransD(DisplayGraphics, Rate);
     	}
 
     	public void InitializeModes(string Mode, Func<ModeEventDispatcher, Dictionary<string, Module>> GetModes)
@@ -121,7 +121,7 @@ namespace _2DGAMELIB
 
             WidthM = Hit.Width - 1;
     		HeightM = Hit.Height - 1;
-    		Sce = new Sce(BaseSize.Width, BaseSize.Height);
+    		SceneFader = new SceneFader(BaseSize.Width, BaseSize.Height);
     		Modes = GetModes(this);
 
 
