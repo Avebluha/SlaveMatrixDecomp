@@ -5,14 +5,13 @@ using _2DGAMELIB;
 
 namespace SlaveMatrix
 {
-    //Text Actions
-    public struct TA
+    public struct TextAction
     {
         public string Text;
 
         public Action<ButtonBase> act;
 
-        public TA(string Text, Action<ButtonBase> act)
+        public TextAction(string Text, Action<ButtonBase> act)
         {
             this.Text = Text;
             this.act = act;
@@ -35,12 +34,12 @@ namespace SlaveMatrix
 
     	private Vector2D p;
 
-    	public IEnumerable<TA> Acts
+    	public IEnumerable<TextAction> Acts
     	{
     		set
     		{
     			int num = 0;
-    			foreach (TA item in value)
+    			foreach (TextAction item in value)
     			{
     				pt[num].Text = item.Text;
     				bs[num.ToString()].Action = item.act;
@@ -70,7 +69,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public ListView(RenderArea Are, Vector2D Position, double Space, Font Font, double TextSize, Color TextColor, Color ShadColor, Color BackColor, Color FramColor, params TA[] acts)
+    	public ListView(RenderArea Are, Vector2D Position, double Space, Font Font, double TextSize, Color TextColor, Color ShadColor, Color BackColor, Color FramColor, params TextAction[] acts)
     	{
     		this.Are = Are;
     		this.Space = Space;

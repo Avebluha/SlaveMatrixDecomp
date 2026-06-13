@@ -96,7 +96,7 @@ namespace SlaveMatrix
             return new Button(shapePartT, on_click);
         }
 
-        public static ListView Select(RenderArea buffer, Vector2D pos, params TA[] acts) {
+        public static ListView Select(RenderArea buffer, Vector2D pos, params TextAction[] acts) {
             return new ListView(
                 buffer,
                 buffer.GetPosition(pos),
@@ -231,7 +231,7 @@ namespace SlaveMatrix
                 ColorHelper.Empty, 
                 ColorHelper.Black,
                 ColorHelper.Empty,
-                Enumerable.Repeat(new TA(new string('A', 15), delegate{}), 10).ToArray()
+                Enumerable.Repeat(new TextAction(new string('A', 15), delegate{}), 10).ToArray()
             );
     		SaveData.SetHitColor(Med);
 
@@ -601,7 +601,7 @@ namespace SlaveMatrix
     		SaveData.Acts = sllv(Med);
     	}
 
-    	private static IEnumerable<TA> sllv(ModeEventDispatcher Med)
+    	private static IEnumerable<TextAction> sllv(ModeEventDispatcher Med)
     	{
     		int j = 0;
     		string[] array = GlobalState.SDPaths();
@@ -610,7 +610,7 @@ namespace SlaveMatrix
     			string path = text;
     			int i = j;
     			bool f = path == null;
-    			yield return new TA(f ? (i + ": No data") : Path.GetFileNameWithoutExtension(path).Replace("：", ":").Replace("_", "/"), delegate
+    			yield return new TextAction(f ? (i + ": No data") : Path.GetFileNameWithoutExtension(path).Replace("：", ":").Replace("_", "/"), delegate
     			{
     				//////Sounds.操作.Play();
     				if (save)
@@ -699,7 +699,7 @@ namespace SlaveMatrix
             SaveData.Acts = jsllv(med);
         }
 
-        private static IEnumerable<TA> jsllv(ModeEventDispatcher med)
+        private static IEnumerable<TextAction> jsllv(ModeEventDispatcher med)
         {
             int k = 0;
             string[] array = GlobalState.JSDPaths();
@@ -708,7 +708,7 @@ namespace SlaveMatrix
                 string path = text;
                 int i = k;
                 bool f = path == null;
-                yield return new TA(f ? (i + ": No data") : Path.GetFileNameWithoutExtension(path).Replace("：", ":").Replace("_", "/"), delegate
+                yield return new TextAction(f ? (i + ": No data") : Path.GetFileNameWithoutExtension(path).Replace("：", ":").Replace("_", "/"), delegate
                 {
                     //Sounds.操作.Play();
                     if (save)
@@ -1252,7 +1252,7 @@ namespace SlaveMatrix
             ListView listView = MyUI.Select(
                 DrawBuffer,
                 new Vector2D(0.45, 0.5),
-    			new TA("Start", delegate
+    			new TextAction("Start", delegate
     			{
     				////Sounds.操作.Play();
     				GlobalState.GameData.SetDefault();
@@ -1266,7 +1266,7 @@ namespace SlaveMatrix
     				SetDemandMaximum();
     				Med.SwitchMode("PlayerInformation", DrawBuffer, PlayerInformationSliders);
     			}),
-    			new TA("Load", delegate
+    			new TextAction("Load", delegate
     			{
     				////Sounds.操作.Play();
     				SaveData.bs["0"].Dra = true;
@@ -2007,7 +2007,7 @@ namespace SlaveMatrix
     			int f = 0;
 
                 ListView lv = MyUI.Select(DrawBuffer, new Vector2D(0.01, 0.08),
-                    Enumerable.Repeat(new TA("No Slave".PadLeft(15, ' '), delegate { }), 15).ToArray()
+                    Enumerable.Repeat(new TextAction("No Slave".PadLeft(15, ' '), delegate { }), 15).ToArray()
                 );
 
     			Color lv初期縁色 = ColorHelper.Black;
@@ -2066,9 +2066,9 @@ namespace SlaveMatrix
     			Action<int> set = delegate(int n)
     			{
     				i = 0;
-    				lv.Acts = Enumerable.Repeat(new TA("", delegate
+    				lv.Acts = Enumerable.Repeat(new TextAction("", delegate
     				{
-    				}), 15).Select(delegate(TA e)
+    				}), 15).Select(delegate(TextAction e)
     				{
     					Unit u = GlobalState.GameData.Slaves[n + i];
     					if (u == null)
@@ -5157,49 +5157,49 @@ namespace SlaveMatrix
     		};
     		
             
-            lv = new ListView(DrawBuffer, DrawBuffer.GetPosition(0.01, 0.03), 0.5, new Font("MS Gothic", 1f), 0.07, ColorHelper.White, ColorHelper.Empty, Color.FromArgb(160, ColorHelper.Black), ColorHelper.Black, new TA(GameText.ﾃﾞｨﾙﾄﾞﾊﾞｲﾌﾞ + " 35,000,000", delegate(ButtonBase b)
+            lv = new ListView(DrawBuffer, DrawBuffer.GetPosition(0.01, 0.03), 0.5, new Font("MS Gothic", 1f), 0.07, ColorHelper.White, ColorHelper.Empty, Color.FromArgb(160, ColorHelper.Black), ColorHelper.Black, new TextAction(GameText.ﾃﾞｨﾙﾄﾞﾊﾞｲﾌﾞ + " 35,000,000", delegate(ButtonBase b)
     		{
     			buy(b, 0, 35000000uL);
-    		}), new TA(GameText.ﾉｰﾏﾙﾊﾞｲﾌﾞ + "   40,000,000", delegate(ButtonBase b)
+    		}), new TextAction(GameText.ﾉｰﾏﾙﾊﾞｲﾌﾞ + "   40,000,000", delegate(ButtonBase b)
     		{
     			buy(b, 1, 40000000uL);
-    		}), new TA(GameText.ﾄﾞﾘﾙﾊﾞｲﾌﾞ + "   60,000,000", delegate(ButtonBase b)
+    		}), new TextAction(GameText.ﾄﾞﾘﾙﾊﾞｲﾌﾞ + "   60,000,000", delegate(ButtonBase b)
     		{
     			buy(b, 2, 60000000uL);
-    		}), new TA(GameText.ﾃﾞﾝﾏﾊﾞｲﾌﾞ + "   50,000,000", delegate(ButtonBase b)
+    		}), new TextAction(GameText.ﾃﾞﾝﾏﾊﾞｲﾌﾞ + "   50,000,000", delegate(ButtonBase b)
     		{
     			buy(b, 3, 50000000uL);
-    		}), new TA(GameText.ｱﾅﾙﾊﾞｲﾌﾞ + "    45,000,000", delegate(ButtonBase b)
+    		}), new TextAction(GameText.ｱﾅﾙﾊﾞｲﾌﾞ + "    45,000,000", delegate(ButtonBase b)
     		{
     			buy(b, 4, 45000000uL);
-    		}), new TA(GameText.調教鞭 + "      30,000,000", delegate(ButtonBase b)
+    		}), new TextAction(GameText.調教鞭 + "      30,000,000", delegate(ButtonBase b)
     		{
     			buy(b, 5, 30000000uL);
-    		}), new TA(GameText.羽根箒 + "      20,000,000", delegate(ButtonBase b)
+    		}), new TextAction(GameText.羽根箒 + "      20,000,000", delegate(ButtonBase b)
     		{
     			buy(b, 6, 20000000uL);
-    		}), new TA(GameText.T字剃刀 + "     20,000,000", delegate(ButtonBase b)
+    		}), new TextAction(GameText.T字剃刀 + "     20,000,000", delegate(ButtonBase b)
     		{
     			buy(b, 7, 20000000uL);
-    		}), new TA(GameText.振動ｷｬｯﾌﾟ + "   30,000,000", delegate(ButtonBase b)
+    		}), new TextAction(GameText.振動ｷｬｯﾌﾟ + "   30,000,000", delegate(ButtonBase b)
     		{
     			buy(b, 8, 30000000uL);
-    		}), new TA(GameText.ﾋﾟﾝｸﾛｰﾀ + "     20,000,000", delegate(ButtonBase b)
+    		}), new TextAction(GameText.ﾋﾟﾝｸﾛｰﾀ + "     20,000,000", delegate(ButtonBase b)
     		{
     			buy(b, 9, 20000000uL);
-    		}), new TA(GameText.ｱﾅﾙﾊﾟｰﾙ + "     20,000,000", delegate(ButtonBase b)
+    		}), new TextAction(GameText.ｱﾅﾙﾊﾟｰﾙ + "     20,000,000", delegate(ButtonBase b)
     		{
     			buy(b, 10, 20000000uL);
-    		}), new TA(GameText.目隠帯 + "      25,000,000", delegate(ButtonBase b)
+    		}), new TextAction(GameText.目隠帯 + "      25,000,000", delegate(ButtonBase b)
     		{
     			buy(b, 11, 25000000uL);
-    		}), new TA(GameText.玉口枷 + "      20,000,000", delegate(ButtonBase b)
+    		}), new TextAction(GameText.玉口枷 + "      20,000,000", delegate(ButtonBase b)
     		{
     			buy(b, 12, 20000000uL);
-    		}), new TA(GameText.カメラ + "     100,000,000", delegate(ButtonBase b)
+    		}), new TextAction(GameText.カメラ + "     100,000,000", delegate(ButtonBase b)
     		{
     			buy(b, 13, 100000000uL);
-    		}), new TA(GameText.ﾌﾛｱ増設 + "    300,000,000", delegate(ButtonBase b)
+    		}), new TextAction(GameText.ﾌﾛｱ増設 + "    300,000,000", delegate(ButtonBase b)
     		{
     			ulong num = 300000000uL;
     			if (GlobalState.GameData.所持金 >= num)
