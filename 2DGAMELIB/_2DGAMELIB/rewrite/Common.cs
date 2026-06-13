@@ -195,17 +195,17 @@ namespace _2DGAMELIB
 
         public static Vector2D TransformCoordinateBP(this Vector2D coord, Vector2D BasePoint, MatrixD transform)
         {
-            Vec.Subtract(ref coord, ref BasePoint, out coord);
+            VectorMath.Subtract(ref coord, ref BasePoint, out coord);
             TransformCoordinate(ref coord, ref transform, out var result);
-            Vec.Add(ref result, ref BasePoint, out result);
+            VectorMath.Add(ref result, ref BasePoint, out result);
             return result;
         }
 
         public static Vector2D TransformCoordinateBP(ref Vector2D coord, ref Vector2D BasePoint, ref MatrixD transform)
         {
-            Vec.Subtract(ref coord, ref BasePoint, out var r);
+            VectorMath.Subtract(ref coord, ref BasePoint, out var r);
             TransformCoordinate(ref r, ref transform, out var result);
-            Vec.Add(ref result, ref BasePoint, out result);
+            VectorMath.Add(ref result, ref BasePoint, out result);
             return result;
         }
     }

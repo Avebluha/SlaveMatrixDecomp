@@ -1,5 +1,6 @@
 using System;
 using System.Globalization;
+using System.Runtime.CompilerServices;
 
 namespace _2DGAMELIB
 {
@@ -21,17 +22,19 @@ namespace _2DGAMELIB
     		X = x;
     		Y = y;
     	}
-
+		[MethodImpl(MethodImplOptions.AggressiveInlining)]
     	public double Length()
     	{
     		return System.Math.Sqrt(X * X + Y * Y);
     	}
-
+	    
+		[MethodImpl(MethodImplOptions.AggressiveInlining)]
     	public double LengthSquared()
     	{
     		return X * X + Y * Y;
     	}
-
+	    
+		[MethodImpl(MethodImplOptions.AggressiveInlining)]
     	public void Normalize()
     	{
     		double num = Length();

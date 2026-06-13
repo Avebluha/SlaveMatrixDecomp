@@ -3,7 +3,7 @@ using System.Globalization;
 
 namespace _2DGAMELIB
 {
-    public static class Qua
+    public static class Quaternion
     {
         public static QuaternionD RotationZQ(this double angle)
         {
@@ -29,14 +29,13 @@ namespace _2DGAMELIB
 
         public static Vector2D TransformCoordinateBP(this Vector2D coord, Vector2D BasePoint, QuaternionD rotation)
         {
-            Vec.Subtract(ref coord, ref BasePoint, out coord);
+            VectorMath.Subtract(ref coord, ref BasePoint, out coord);
             TransformCoordinate(ref coord, ref rotation, out var result);
-            Vec.Add(ref result, ref BasePoint, out result);
+            VectorMath.Add(ref result, ref BasePoint, out result);
             return result;
         }
     }
-
-
+    
     //used in a total of 1 places
     [Serializable]
     public struct QuaternionD

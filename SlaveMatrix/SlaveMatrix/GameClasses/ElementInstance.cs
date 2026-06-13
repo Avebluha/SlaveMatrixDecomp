@@ -44,7 +44,7 @@ namespace SlaveMatrix
 
     	public void 描画(RenderArea Are)
     	{
-    		Vec.Add(ref Position, ref PositionCont, out Lay.Position);
+    		VectorMath.Add(ref Position, ref PositionCont, out Lay.Position);
     		Are.Draw(Lay);
     	}
 
