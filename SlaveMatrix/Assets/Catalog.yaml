@@ -53,8 +53,8 @@ parts:
   path: Parts/BestialEyelidLeft/
 - id: エイリアン目左
   path: Parts/エイリアン目左/
-- id: 鼻肌
-  path: Parts/鼻肌/
+- id: NoseSkin
+  path: Parts/NoseSkin/
 - id: EyeScarLeft
   path: Parts/EyeScarLeft/
 - id: CheekSkinLeft
@@ -77,10 +77,10 @@ parts:
   path: Parts/涙左/
 - id: Blindfold
   path: Parts/Blindfold/
-- id: 鼻水左
-  path: Parts/鼻水左/
-- id: 鼻
-  path: Parts/鼻/
+- id: NoseDripLeft
+  path: Parts/NoseDripLeft/
+- id: Nose
+  path: Parts/Nose/
 - id: Mouth
   path: Parts/Mouth/
 - id: Tongue
@@ -227,14 +227,14 @@ parts:
   path: Parts/鰭/
 - id: 葉
   path: Parts/葉/
-- id: 角
-  path: Parts/角/
-- id: 耳
-  path: Parts/耳/
+- id: Horn
+  path: Parts/Horn/
+- id: Ear
+  path: Parts/Ear/
 - id: 植
   path: Parts/植/
-- id: 獣耳
-  path: Parts/獣耳/
+- id: BeastEar
+  path: Parts/BeastEar/
 - id: 虫顎
   path: Parts/虫顎/
 - id: 触覚
@@ -261,8 +261,8 @@ parts:
   path: Parts/大顎上/
 - id: Face
   path: Parts/Face/
-- id: 角
-  path: Parts/角/
+- id: Horn
+  path: Parts/Horn/
 - id: 背中
   path: Parts/背中/
 - id: 性器
