@@ -41,7 +41,7 @@ namespace _2DGAMELIB
             };
             settings.Converters.Add(new OrderedDictionaryConverter<string, VariantGrid>());
             settings.Converters.Add(new OrderedDictionaryConverter<string, object>());
-            settings.Converters.Add(new OrderedDictionaryConverter<string, But>());
+            settings.Converters.Add(new OrderedDictionaryConverter<string, ButtonBase>());
             settings.Converters.Add(new OrderedDictionaryConverter<string, Lab>());
             return settings;
         }

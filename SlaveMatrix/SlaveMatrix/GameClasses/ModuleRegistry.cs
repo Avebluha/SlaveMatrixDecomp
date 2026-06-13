@@ -17,7 +17,7 @@ namespace SlaveMatrix
     public static class MyUI
     {
         //normal rectangular buttons
-        public static But1 Button(ModeEventDispatcher med, RenderArea buffer, string text, Vector2D pos, Action<But> on_click) {
+        public static Button Button(ModeEventDispatcher med, RenderArea buffer, string text, Vector2D pos, Action<ButtonBase> on_click) {
 
             ShapePartT shapePartT = new ShapePartT();
             shapePartT.Font = new Font("MS Gothic", 0.1f);
@@ -71,11 +71,11 @@ namespace SlaveMatrix
             shapePartT4.StringFormat.LineAlignment = StringAlignment.Center;
             */
 
-            return new But1(shapePartT, on_click);
+            return new Button(shapePartT, on_click);
         }
 
         //rhombus shaped buttons
-        public static But1 Button2(ModeEventDispatcher med, RenderArea buffer, string text, Vector2D pos, Action<But> on_click) {
+        public static Button Button2(ModeEventDispatcher med, RenderArea buffer, string text, Vector2D pos, Action<ButtonBase> on_click) {
             ShapePartT shapePartT = new ShapePartT();
             shapePartT.Font = new Font("MS Gothic", 0.1f);
             shapePartT.PositionBase = buffer.GetPosition(pos);
@@ -93,7 +93,7 @@ namespace SlaveMatrix
             shapePartT.StringFormat.Alignment = StringAlignment.Center;
             shapePartT.StringFormat.LineAlignment = StringAlignment.Center;
 
-            return new But1(shapePartT, on_click);
+            return new Button(shapePartT, on_click);
         }
 
         public static ListView Select(RenderArea buffer, Vector2D pos, params TA[] acts) {
@@ -2013,7 +2013,7 @@ namespace SlaveMatrix
     			Color lv初期縁色 = ColorHelper.Black;
     			Action lv縁色初期化 = delegate
     			{
-    				foreach (But item in lv.bs.EnumBut)
+    				foreach (ButtonBase item in lv.bs.EnumBut)
     				{
     					item.PartGroup.Values.First().ToParT().PenColor = lv初期縁色;
     				}
@@ -2074,7 +2074,7 @@ namespace SlaveMatrix
     					if (u == null)
     					{
     						e.Text = "No Slave";
-    						e.act = delegate(But b)
+    						e.act = delegate(ButtonBase b)
     						{
     							lv縁色初期化();
     							b.PartGroup.Values.First().ToParT().PenColor = Color.Red;
@@ -2090,7 +2090,7 @@ namespace SlaveMatrix
     					else
     					{
     						e.Text = GameText.収容番号 + u.Number;
-    						e.act = delegate(But b)
+    						e.act = delegate(ButtonBase b)
     						{
     							lv縁色初期化();
     							b.PartGroup.Values.First().ToParT().PenColor = Color.Red;
@@ -2122,7 +2122,7 @@ namespace SlaveMatrix
                 Color bs初期縁色 = ColorHelper.Black;
                 Action bs縁色初期化 = delegate
                 {
-                    foreach (But item2 in bs.EnumBut.Skip(1).Take(3))
+                    foreach (ButtonBase item2 in bs.EnumBut.Skip(1).Take(3))
                     {
                         item2.PartGroup.Values.First().ToParT().PenColor = bs初期縁色;
                     }
@@ -2130,12 +2130,12 @@ namespace SlaveMatrix
                 Color f初期縁色 = ColorHelper.Black;
                 Action f縁色初期化 = delegate
                 {
-                    foreach (But item3 in bs.EnumBut.Skip(10))
+                    foreach (ButtonBase item3 in bs.EnumBut.Skip(10))
                     {
                         item3.PartGroup.Values.First().ToParT().PenColor = f初期縁色;
                     }
                 };
-                Action<But, int> 階層選択 = delegate (But b, int o)
+                Action<ButtonBase, int> 階層選択 = delegate (ButtonBase b, int o)
                 {
                     f縁色初期化();
                     b.PartGroup.Values.First().ToParT().PenColor = Color.Red;
@@ -2348,7 +2348,7 @@ namespace SlaveMatrix
                     Wheel = delegate (MouseButtons mb, Vector2D cp, int dt, Color hc)
                     {
                         int num2 = 0;
-                        using (IEnumerator<But> enumerator2 = bs.EnumBut.Skip(12).GetEnumerator())
+                        using (IEnumerator<ButtonBase> enumerator2 = bs.EnumBut.Skip(12).GetEnumerator())
                         {
                             while (enumerator2.MoveNext() && !(enumerator2.Current.PartGroup.Values.First().ToParT().PenColor == Color.Red))
                             {
@@ -2356,7 +2356,7 @@ namespace SlaveMatrix
                             }
                         }
                         int num3 = 0;
-                        using (IEnumerator<But> enumerator2 = lv.bs.EnumBut.GetEnumerator())
+                        using (IEnumerator<ButtonBase> enumerator2 = lv.bs.EnumBut.GetEnumerator())
                         {
                             while (enumerator2.MoveNext() && !(enumerator2.Current.PartGroup.Values.First().ToParT().PenColor == Color.Red))
                             {
@@ -2367,18 +2367,18 @@ namespace SlaveMatrix
                         d = false;
                         if (num4 < 0 && num2 > 0)
                         {
-                            But but3 = bs["ボタン" + num2];
+                            ButtonBase but3 = bs["ボタン" + num2];
                             but3.Action(but3);
                             num4 = 14;
                         }
                         else if (num4 > 14 && num2 < Sta.GameData.フロア数 - 1)
                         {
-                            But but4 = bs["ボタン" + (num2 + 2)];
+                            ButtonBase but4 = bs["ボタン" + (num2 + 2)];
                             but4.Action(but4);
                             num4 = 0;
                         }
                         d = true;
-                        But but5 = lv.bs[num4.Limit(0, 15).ToString()];
+                        ButtonBase but5 = lv.bs[num4.Limit(0, 15).ToString()];
                         but5.Action(but5);
                         if (ip.Mai2Show)
                         {
@@ -2417,8 +2417,8 @@ namespace SlaveMatrix
                             Player.UI.ステート描画 = false;
                             if (Sta.GameData.TrainingTarget != null)
                             {
-                                But but = bs["ボタン" + (Sta.GameData.TrainingTarget.階層位置 + 1)];
-                                but.Action(but);
+                                ButtonBase buttonBase = bs["ボタン" + (Sta.GameData.TrainingTarget.階層位置 + 1)];
+                                buttonBase.Action(buttonBase);
                                 lv縁色初期化();
                                 lv.bs[Sta.GameData.TrainingTarget.RoomNumber.ToString()].PartGroup.Values.First().ToParT().PenColor = Color.Red;
                                 bs["子"].Action(bs["子"]);
@@ -2429,14 +2429,14 @@ namespace SlaveMatrix
                                 階層選択(bs["ボタン" + (f / 15 + 1)], f);
                                 SetUI(null);
                                 int num = 0;
-                                using (IEnumerator<But> enumerator = lv.bs.EnumBut.GetEnumerator())
+                                using (IEnumerator<ButtonBase> enumerator = lv.bs.EnumBut.GetEnumerator())
                                 {
                                     while (enumerator.MoveNext() && !(enumerator.Current.PartGroup.Values.First().ToParT().PenColor == Color.Red))
                                     {
                                         num++;
                                     }
                                 }
-                                But but2 = lv.bs[num.Limit(0, 15).ToString()];
+                                ButtonBase but2 = lv.bs[num.Limit(0, 15).ToString()];
                                 but2.Action(but2);
                             }
                             d = true;
@@ -2475,7 +2475,7 @@ namespace SlaveMatrix
 
                 //TODO colors?
                 //shapePartT2.PenColor = Color.Red;
-                bs.Add("子", MyUI.Button2(Med, DrawBuffer, GameText.子, new Vector2D(0.85, 0.1), delegate (But b)
+                bs.Add("子", MyUI.Button2(Med, DrawBuffer, GameText.子, new Vector2D(0.85, 0.1), delegate (ButtonBase b)
     			{
     				if (d)
     				{
@@ -2497,7 +2497,7 @@ namespace SlaveMatrix
     				}
     			}));
 
-    			bs.Add("親形質1", MyUI.Button2(Med, DrawBuffer, GameText.親形質1, new Vector2D(0.85, 0.18), delegate(But b)
+    			bs.Add("親形質1", MyUI.Button2(Med, DrawBuffer, GameText.親形質1, new Vector2D(0.85, 0.18), delegate(ButtonBase b)
     			{
     				////Sounds.操作.Play();
     				bs縁色初期化();
@@ -2541,7 +2541,7 @@ namespace SlaveMatrix
     				}
     			}));
 
-    			bs.Add("親形質2", MyUI.Button2(Med, DrawBuffer, GameText.親形質2, new Vector2D(0.85, 0.26), delegate(But b)
+    			bs.Add("親形質2", MyUI.Button2(Med, DrawBuffer, GameText.親形質2, new Vector2D(0.85, 0.26), delegate(ButtonBase b)
     			{
     				////Sounds.操作.Play();
     				bs縁色初期化();
@@ -2585,7 +2585,7 @@ namespace SlaveMatrix
     				}
     			}));
 
-    			bs.Add("保守", MyUI.Button2(Med, DrawBuffer, GameText.保守, new Vector2D(0.85, 0.34), delegate(But b)
+    			bs.Add("保守", MyUI.Button2(Med, DrawBuffer, GameText.保守, new Vector2D(0.85, 0.34), delegate(ButtonBase b)
     			{
     				////Sounds.操作.Play();
     				if (Sta.GameData.TrainingTarget != null)
@@ -2597,7 +2597,7 @@ namespace SlaveMatrix
     				}
     			}));
 
-    			bs.Add("一般労働", MyUI.Button2(Med, DrawBuffer, GameText.一般労働, new Vector2D(0.85, 0.42), delegate(But b)
+    			bs.Add("一般労働", MyUI.Button2(Med, DrawBuffer, GameText.一般労働, new Vector2D(0.85, 0.42), delegate(ButtonBase b)
     			{
     				////Sounds.操作.Play();
     				if (Sta.GameData.TrainingTarget != null)
@@ -2613,7 +2613,7 @@ namespace SlaveMatrix
     				}
     			}));
 
-    			bs.Add("娼婦労働", MyUI.Button2(Med, DrawBuffer, GameText.娼婦労働, new Vector2D(0.85, 0.5), delegate (But b)
+    			bs.Add("娼婦労働", MyUI.Button2(Med, DrawBuffer, GameText.娼婦労働, new Vector2D(0.85, 0.5), delegate (ButtonBase b)
     			{
     				////Sounds.操作.Play();
     				if (Sta.GameData.TrainingTarget != null)
@@ -2722,9 +2722,9 @@ namespace SlaveMatrix
     					set(f);
     					ip.SubInfoIm = GameText.収容番号 + Sta.GameData.TrainingTarget.Number + GameText.を売却しました + " \r\n+" + price.ToString("#,0");
     					d = false;
-    					But but8 = bs["ボタン" + (Sta.GameData.TrainingTarget.階層位置 + 1)];
+    					ButtonBase but8 = bs["ボタン" + (Sta.GameData.TrainingTarget.階層位置 + 1)];
     					but8.Action(but8);
-    					But but9 = lv.bs.EnumBut.ToArray()[Sta.GameData.TrainingTarget.RoomNumber];
+    					ButtonBase but9 = lv.bs.EnumBut.ToArray()[Sta.GameData.TrainingTarget.RoomNumber];
     					but9.Action(but9);
     					if (Sta.GameData.TrainingTarget == null)
     					{
@@ -2788,9 +2788,9 @@ namespace SlaveMatrix
     					{
     						if (!Sta.GameData.TrainingTarget.保守)
     						{
-    							But but6 = bs["ボタン" + (Sta.GameData.TrainingTarget.階層位置 + 1)];
+    							ButtonBase but6 = bs["ボタン" + (Sta.GameData.TrainingTarget.階層位置 + 1)];
     							but6.Action(but6);
-    							But but7 = lv.bs.EnumBut.ToArray()[Sta.GameData.TrainingTarget.RoomNumber];
+    							ButtonBase but7 = lv.bs.EnumBut.ToArray()[Sta.GameData.TrainingTarget.RoomNumber];
     							but7.Action(but7);
     						}
     						else if (Sta.AlwaysUseName)
@@ -2837,7 +2837,7 @@ namespace SlaveMatrix
     			shapePartT13.StringFormat.Alignment = StringAlignment.Center;
     			shapePartT13.StringFormat.LineAlignment = StringAlignment.Center;
     			shapePartT13.PenColor = Color.Red;
-    			bs.Add("ボタン1", new But1(shapePartT13, delegate(But b)
+    			bs.Add("ボタン1", new Button(shapePartT13, delegate(ButtonBase b)
     			{
     				if (d)
     				{
@@ -2863,7 +2863,7 @@ namespace SlaveMatrix
     			shapePartT14.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
     			shapePartT14.StringFormat.Alignment = StringAlignment.Center;
     			shapePartT14.StringFormat.LineAlignment = StringAlignment.Center;
-    			bs.Add("ボタン2", new But1(shapePartT14, delegate(But b)
+    			bs.Add("ボタン2", new Button(shapePartT14, delegate(ButtonBase b)
     			{
     				if (d)
     				{
@@ -2887,7 +2887,7 @@ namespace SlaveMatrix
     			shapePartT15.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
     			shapePartT15.StringFormat.Alignment = StringAlignment.Center;
     			shapePartT15.StringFormat.LineAlignment = StringAlignment.Center;
-    			bs.Add("ボタン3", new But1(shapePartT15, delegate(But b)
+    			bs.Add("ボタン3", new Button(shapePartT15, delegate(ButtonBase b)
     			{
     				if (d)
     				{
@@ -2911,7 +2911,7 @@ namespace SlaveMatrix
     			shapePartT16.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
     			shapePartT16.StringFormat.Alignment = StringAlignment.Center;
     			shapePartT16.StringFormat.LineAlignment = StringAlignment.Center;
-    			bs.Add("ボタン4", new But1(shapePartT16, delegate(But b)
+    			bs.Add("ボタン4", new Button(shapePartT16, delegate(ButtonBase b)
     			{
     				if (d)
     				{
@@ -2935,7 +2935,7 @@ namespace SlaveMatrix
     			shapePartT17.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
     			shapePartT17.StringFormat.Alignment = StringAlignment.Center;
     			shapePartT17.StringFormat.LineAlignment = StringAlignment.Center;
-    			bs.Add("ボタン5", new But1(shapePartT17, delegate(But b)
+    			bs.Add("ボタン5", new Button(shapePartT17, delegate(ButtonBase b)
     			{
     				if (d)
     				{
@@ -2959,7 +2959,7 @@ namespace SlaveMatrix
     			shapePartT18.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
     			shapePartT18.StringFormat.Alignment = StringAlignment.Center;
     			shapePartT18.StringFormat.LineAlignment = StringAlignment.Center;
-    			bs.Add("ボタン6", new But1(shapePartT18, delegate(But b)
+    			bs.Add("ボタン6", new Button(shapePartT18, delegate(ButtonBase b)
     			{
     				if (d)
     				{
@@ -2983,7 +2983,7 @@ namespace SlaveMatrix
     			shapePartT19.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
     			shapePartT19.StringFormat.Alignment = StringAlignment.Center;
     			shapePartT19.StringFormat.LineAlignment = StringAlignment.Center;
-    			bs.Add("ボタン7", new But1(shapePartT19, delegate(But b)
+    			bs.Add("ボタン7", new Button(shapePartT19, delegate(ButtonBase b)
     			{
     				if (d)
     				{
@@ -3007,7 +3007,7 @@ namespace SlaveMatrix
     			shapePartT20.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
     			shapePartT20.StringFormat.Alignment = StringAlignment.Center;
     			shapePartT20.StringFormat.LineAlignment = StringAlignment.Center;
-    			bs.Add("ボタン8", new But1(shapePartT20, delegate(But b)
+    			bs.Add("ボタン8", new Button(shapePartT20, delegate(ButtonBase b)
     			{
     				if (d)
     				{
@@ -3031,7 +3031,7 @@ namespace SlaveMatrix
     			shapePartT21.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
     			shapePartT21.StringFormat.Alignment = StringAlignment.Center;
     			shapePartT21.StringFormat.LineAlignment = StringAlignment.Center;
-    			bs.Add("ボタン9", new But1(shapePartT21, delegate(But b)
+    			bs.Add("ボタン9", new Button(shapePartT21, delegate(ButtonBase b)
     			{
     				if (d)
     				{
@@ -3332,13 +3332,13 @@ namespace SlaveMatrix
     		Action<ButtonMap> rs1 = delegate(ButtonMap bs_)
     		{
     			Color penColor = bs_["ボタン0"].PartGroup.Values.First().ToParT().PenColor;
-    			foreach (But item in bs_.EnumBut.Skip(1))
+    			foreach (ButtonBase item in bs_.EnumBut.Skip(1))
     			{
     				item.PartGroup.Values.First().ToParT().PenColor = penColor;
     			}
     		};
 
-    		bs.Add("子", MyUI.Button2(Med, DrawBuffer, GameText.子, new Vector2D(0.85, 0.1), delegate(But bu)
+    		bs.Add("子", MyUI.Button2(Med, DrawBuffer, GameText.子, new Vector2D(0.85, 0.1), delegate(ButtonBase bu)
     		{
     			if (d)
     			{
@@ -3381,7 +3381,7 @@ namespace SlaveMatrix
     			}
     		}));
 
-    		bs.Add("親形質1", MyUI.Button2(Med, DrawBuffer, GameText.親形質1, new Vector2D(0.85, 0.18), delegate(But bu)
+    		bs.Add("親形質1", MyUI.Button2(Med, DrawBuffer, GameText.親形質1, new Vector2D(0.85, 0.18), delegate(ButtonBase bu)
     		{
     			//Sounds.操作.Play();
     			rs1(bs);
@@ -3421,7 +3421,7 @@ namespace SlaveMatrix
     			}
     		}));
 
-    		bs.Add("親形質2", MyUI.Button2(Med, DrawBuffer, GameText.親形質2, new Vector2D(0.85, 0.26), delegate(But bu)
+    		bs.Add("親形質2", MyUI.Button2(Med, DrawBuffer, GameText.親形質2, new Vector2D(0.85, 0.26), delegate(ButtonBase bu)
     		{
     			//Sounds.操作.Play();
     			rs1(bs);
@@ -3653,7 +3653,7 @@ namespace SlaveMatrix
     		shapePartT.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
     		shapePartT.StringFormat.Alignment = StringAlignment.Center;
     		shapePartT.StringFormat.LineAlignment = StringAlignment.Center;
-    		bs.Add("ボタン0", new But1(shapePartT, delegate
+    		bs.Add("ボタン0", new Button(shapePartT, delegate
     		{
     			//Sounds.操作.Play();
     			if (!PassTime(Med))
@@ -3676,7 +3676,7 @@ namespace SlaveMatrix
     		shapePartT2.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
     		shapePartT2.StringFormat.Alignment = StringAlignment.Center;
     		shapePartT2.StringFormat.LineAlignment = StringAlignment.Center;
-    		bs.Add("ボタン1", new But1(shapePartT2, delegate
+    		bs.Add("ボタン1", new Button(shapePartT2, delegate
     		{
     			//Sounds.操作.Play();
     			Med.Mode = "Debt";
@@ -3696,7 +3696,7 @@ namespace SlaveMatrix
     		shapePartT3.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
     		shapePartT3.StringFormat.Alignment = StringAlignment.Center;
     		shapePartT3.StringFormat.LineAlignment = StringAlignment.Center;
-    		bs.Add("ボタン2", new But1(shapePartT3, delegate
+    		bs.Add("ボタン2", new Button(shapePartT3, delegate
     		{
     			//Sounds.操作.Play();
     			Med.Mode = "SlaveShop";
@@ -3716,7 +3716,7 @@ namespace SlaveMatrix
     		shapePartT4.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
     		shapePartT4.StringFormat.Alignment = StringAlignment.Center;
     		shapePartT4.StringFormat.LineAlignment = StringAlignment.Center;
-    		bs.Add("ボタン3", new But1(shapePartT4, delegate
+    		bs.Add("ボタン3", new Button(shapePartT4, delegate
     		{
     			//Sounds.操作.Play();
     			Med.SwitchMode("ViolaBlessing", DrawBuffer, 返済イベント描画);
@@ -3925,7 +3925,7 @@ namespace SlaveMatrix
     		shapePartT2.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
     		shapePartT2.StringFormat.Alignment = StringAlignment.Center;
     		shapePartT2.StringFormat.LineAlignment = StringAlignment.Center;
-    		bs.Add("nc", new But1(shapePartT2, delegate
+    		bs.Add("nc", new Button(shapePartT2, delegate
     		{
     			//Sounds.操作.Play();
     			ip.TextIm = "0";
@@ -3945,7 +3945,7 @@ namespace SlaveMatrix
     		shapePartT3.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
     		shapePartT3.StringFormat.Alignment = StringAlignment.Center;
     		shapePartT3.StringFormat.LineAlignment = StringAlignment.Center;
-    		bs.Add("nm", new But1(shapePartT3, delegate
+    		bs.Add("nm", new Button(shapePartT3, delegate
     		{
     			//Sounds.操作.Play();
     			ip.TextIm = 9999999999999uL.ToString("#,0");
@@ -3974,7 +3974,7 @@ namespace SlaveMatrix
     		shapePartT4.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
     		shapePartT4.StringFormat.Alignment = StringAlignment.Center;
     		shapePartT4.StringFormat.LineAlignment = StringAlignment.Center;
-    		bs.Add("n7", new But1(shapePartT4, delegate
+    		bs.Add("n7", new Button(shapePartT4, delegate
     		{
     			//Sounds.操作.Play();
     			SetNum("7");
@@ -3994,7 +3994,7 @@ namespace SlaveMatrix
     		shapePartT5.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
     		shapePartT5.StringFormat.Alignment = StringAlignment.Center;
     		shapePartT5.StringFormat.LineAlignment = StringAlignment.Center;
-    		bs.Add("n8", new But1(shapePartT5, delegate
+    		bs.Add("n8", new Button(shapePartT5, delegate
     		{
     			//Sounds.操作.Play();
     			SetNum("8");
@@ -4014,7 +4014,7 @@ namespace SlaveMatrix
     		shapePartT6.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
     		shapePartT6.StringFormat.Alignment = StringAlignment.Center;
     		shapePartT6.StringFormat.LineAlignment = StringAlignment.Center;
-    		bs.Add("n9", new But1(shapePartT6, delegate
+    		bs.Add("n9", new Button(shapePartT6, delegate
     		{
     			//Sounds.操作.Play();
     			SetNum("9");
@@ -4034,7 +4034,7 @@ namespace SlaveMatrix
     		shapePartT7.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
     		shapePartT7.StringFormat.Alignment = StringAlignment.Center;
     		shapePartT7.StringFormat.LineAlignment = StringAlignment.Center;
-    		bs.Add("n4", new But1(shapePartT7, delegate
+    		bs.Add("n4", new Button(shapePartT7, delegate
     		{
     			//Sounds.操作.Play();
     			SetNum("4");
@@ -4054,7 +4054,7 @@ namespace SlaveMatrix
     		shapePartT8.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
     		shapePartT8.StringFormat.Alignment = StringAlignment.Center;
     		shapePartT8.StringFormat.LineAlignment = StringAlignment.Center;
-    		bs.Add("n5", new But1(shapePartT8, delegate
+    		bs.Add("n5", new Button(shapePartT8, delegate
     		{
     			//Sounds.操作.Play();
     			SetNum("5");
@@ -4074,7 +4074,7 @@ namespace SlaveMatrix
     		shapePartT9.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
     		shapePartT9.StringFormat.Alignment = StringAlignment.Center;
     		shapePartT9.StringFormat.LineAlignment = StringAlignment.Center;
-    		bs.Add("n6", new But1(shapePartT9, delegate
+    		bs.Add("n6", new Button(shapePartT9, delegate
     		{
     			//Sounds.操作.Play();
     			SetNum("6");
@@ -4094,7 +4094,7 @@ namespace SlaveMatrix
     		shapePartT10.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
     		shapePartT10.StringFormat.Alignment = StringAlignment.Center;
     		shapePartT10.StringFormat.LineAlignment = StringAlignment.Center;
-    		bs.Add("n1", new But1(shapePartT10, delegate
+    		bs.Add("n1", new Button(shapePartT10, delegate
     		{
     			//Sounds.操作.Play();
     			SetNum("1");
@@ -4114,7 +4114,7 @@ namespace SlaveMatrix
     		shapePartT11.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
     		shapePartT11.StringFormat.Alignment = StringAlignment.Center;
     		shapePartT11.StringFormat.LineAlignment = StringAlignment.Center;
-    		bs.Add("n2", new But1(shapePartT11, delegate
+    		bs.Add("n2", new Button(shapePartT11, delegate
     		{
     			//Sounds.操作.Play();
     			SetNum("2");
@@ -4134,7 +4134,7 @@ namespace SlaveMatrix
     		shapePartT12.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
     		shapePartT12.StringFormat.Alignment = StringAlignment.Center;
     		shapePartT12.StringFormat.LineAlignment = StringAlignment.Center;
-    		bs.Add("n3", new But1(shapePartT12, delegate
+    		bs.Add("n3", new Button(shapePartT12, delegate
     		{
     			//Sounds.操作.Play();
     			SetNum("3");
@@ -4154,7 +4154,7 @@ namespace SlaveMatrix
     		shapePartT13.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
     		shapePartT13.StringFormat.Alignment = StringAlignment.Center;
     		shapePartT13.StringFormat.LineAlignment = StringAlignment.Center;
-    		bs.Add("n0", new But1(shapePartT13, delegate
+    		bs.Add("n0", new Button(shapePartT13, delegate
     		{
     			//Sounds.操作.Play();
     			SetNum("0");
@@ -4174,7 +4174,7 @@ namespace SlaveMatrix
     		shapePartT14.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
     		shapePartT14.StringFormat.Alignment = StringAlignment.Center;
     		shapePartT14.StringFormat.LineAlignment = StringAlignment.Center;
-    		bs.Add("nb", new But1(shapePartT14, delegate
+    		bs.Add("nb", new Button(shapePartT14, delegate
     		{
     			if (Sta.GameData.日借金可能額 != 0)
     			{
@@ -4221,7 +4221,7 @@ namespace SlaveMatrix
     		shapePartT15.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
     		shapePartT15.StringFormat.Alignment = StringAlignment.Center;
     		shapePartT15.StringFormat.LineAlignment = StringAlignment.Center;
-    		bs.Add("nr", new But1(shapePartT15, delegate
+    		bs.Add("nr", new Button(shapePartT15, delegate
     		{
     			if (Sta.GameData.所持金 != 0)
     			{
@@ -4432,7 +4432,7 @@ namespace SlaveMatrix
     		shapePartT.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
     		shapePartT.StringFormat.Alignment = StringAlignment.Center;
     		shapePartT.StringFormat.LineAlignment = StringAlignment.Center;
-    		bs.Add("ボタン0", new But1(shapePartT, delegate
+    		bs.Add("ボタン0", new Button(shapePartT, delegate
     		{
     			//Sounds.操作.Play();
     			if (Sta.GameData.初事務所フラグ)
@@ -4460,7 +4460,7 @@ namespace SlaveMatrix
     		shapePartT2.StringFormat.Alignment = StringAlignment.Center;
     		shapePartT2.StringFormat.LineAlignment = StringAlignment.Center;
     		shapePartT2.PenColor = Color.Red;
-    		bs.Add("ボタン1", new But1(shapePartT2, delegate
+    		bs.Add("ボタン1", new Button(shapePartT2, delegate
     		{
     			//Sounds.操作.Play();
     			Med.Mode = "SlaveShop";
@@ -4480,7 +4480,7 @@ namespace SlaveMatrix
     		shapePartT3.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
     		shapePartT3.StringFormat.Alignment = StringAlignment.Center;
     		shapePartT3.StringFormat.LineAlignment = StringAlignment.Center;
-    		bs.Add("ボタン2", new But1(shapePartT3, delegate
+    		bs.Add("ボタン2", new Button(shapePartT3, delegate
     		{
     			//Sounds.操作.Play();
     			Med.Mode = "ToolShop";
@@ -4488,7 +4488,7 @@ namespace SlaveMatrix
     		Color bs初期縁色 = ColorHelper.Black;
     		Action bs縁色初期化 = delegate
     		{
-    			foreach (But item in bs.EnumBut.Skip(3).Take(10))
+    			foreach (ButtonBase item in bs.EnumBut.Skip(3).Take(10))
     			{
     				item.PartGroup.Values.First().ToParT().PenColor = bs初期縁色;
     			}
@@ -4510,7 +4510,7 @@ namespace SlaveMatrix
     		shapePartT4.StringFormat.Alignment = StringAlignment.Center;
     		shapePartT4.StringFormat.LineAlignment = StringAlignment.Center;
     		shapePartT4.PenColor = Color.Red;
-    		bs.Add("対象0", new But1(shapePartT4, delegate(But bu)
+    		bs.Add("対象0", new Button(shapePartT4, delegate(ButtonBase bu)
     		{
     			if (d)
     			{
@@ -4535,7 +4535,7 @@ namespace SlaveMatrix
     		shapePartT5.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
     		shapePartT5.StringFormat.Alignment = StringAlignment.Center;
     		shapePartT5.StringFormat.LineAlignment = StringAlignment.Center;
-    		bs.Add("対象1", new But1(shapePartT5, delegate(But bu)
+    		bs.Add("対象1", new Button(shapePartT5, delegate(ButtonBase bu)
     		{
     			//Sounds.操作.Play();
     			bs縁色初期化();
@@ -4556,7 +4556,7 @@ namespace SlaveMatrix
     		shapePartT6.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
     		shapePartT6.StringFormat.Alignment = StringAlignment.Center;
     		shapePartT6.StringFormat.LineAlignment = StringAlignment.Center;
-    		bs.Add("対象2", new But1(shapePartT6, delegate(But bu)
+    		bs.Add("対象2", new Button(shapePartT6, delegate(ButtonBase bu)
     		{
     			//Sounds.操作.Play();
     			bs縁色初期化();
@@ -4577,7 +4577,7 @@ namespace SlaveMatrix
     		shapePartT7.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
     		shapePartT7.StringFormat.Alignment = StringAlignment.Center;
     		shapePartT7.StringFormat.LineAlignment = StringAlignment.Center;
-    		bs.Add("対象3", new But1(shapePartT7, delegate(But bu)
+    		bs.Add("対象3", new Button(shapePartT7, delegate(ButtonBase bu)
     		{
     			//Sounds.操作.Play();
     			bs縁色初期化();
@@ -4598,7 +4598,7 @@ namespace SlaveMatrix
     		shapePartT8.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
     		shapePartT8.StringFormat.Alignment = StringAlignment.Center;
     		shapePartT8.StringFormat.LineAlignment = StringAlignment.Center;
-    		bs.Add("対象4", new But1(shapePartT8, delegate(But bu)
+    		bs.Add("対象4", new Button(shapePartT8, delegate(ButtonBase bu)
     		{
     			//Sounds.操作.Play();
     			bs縁色初期化();
@@ -4619,7 +4619,7 @@ namespace SlaveMatrix
     		shapePartT9.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
     		shapePartT9.StringFormat.Alignment = StringAlignment.Center;
     		shapePartT9.StringFormat.LineAlignment = StringAlignment.Center;
-    		bs.Add("対象5", new But1(shapePartT9, delegate(But bu)
+    		bs.Add("対象5", new Button(shapePartT9, delegate(ButtonBase bu)
     		{
     			//Sounds.操作.Play();
     			bs縁色初期化();
@@ -4640,7 +4640,7 @@ namespace SlaveMatrix
     		shapePartT10.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
     		shapePartT10.StringFormat.Alignment = StringAlignment.Center;
     		shapePartT10.StringFormat.LineAlignment = StringAlignment.Center;
-    		bs.Add("対象6", new But1(shapePartT10, delegate(But bu)
+    		bs.Add("対象6", new Button(shapePartT10, delegate(ButtonBase bu)
     		{
     			//Sounds.操作.Play();
     			bs縁色初期化();
@@ -4661,7 +4661,7 @@ namespace SlaveMatrix
     		shapePartT11.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
     		shapePartT11.StringFormat.Alignment = StringAlignment.Center;
     		shapePartT11.StringFormat.LineAlignment = StringAlignment.Center;
-    		bs.Add("対象7", new But1(shapePartT11, delegate(But bu)
+    		bs.Add("対象7", new Button(shapePartT11, delegate(ButtonBase bu)
     		{
     			//Sounds.操作.Play();
     			bs縁色初期化();
@@ -4682,7 +4682,7 @@ namespace SlaveMatrix
     		shapePartT12.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
     		shapePartT12.StringFormat.Alignment = StringAlignment.Center;
     		shapePartT12.StringFormat.LineAlignment = StringAlignment.Center;
-    		bs.Add("対象8", new But1(shapePartT12, delegate(But bu)
+    		bs.Add("対象8", new Button(shapePartT12, delegate(ButtonBase bu)
     		{
     			//Sounds.操作.Play();
     			bs縁色初期化();
@@ -4703,7 +4703,7 @@ namespace SlaveMatrix
     		shapePartT13.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
     		shapePartT13.StringFormat.Alignment = StringAlignment.Center;
     		shapePartT13.StringFormat.LineAlignment = StringAlignment.Center;
-    		bs.Add("対象9", new But1(shapePartT13, delegate(But bu)
+    		bs.Add("対象9", new Button(shapePartT13, delegate(ButtonBase bu)
     		{
     			//Sounds.操作.Play();
     			bs縁色初期化();
@@ -4859,7 +4859,7 @@ namespace SlaveMatrix
     		shapePartT14.ShadBrush = new SolidBrush(Color.FromArgb(64, ColorHelper.Black));
     		shapePartT14.StringFormat.Alignment = StringAlignment.Center;
     		shapePartT14.StringFormat.LineAlignment = StringAlignment.Center;
-    		bs.Add("変更", new But1(shapePartT14, delegate
+    		bs.Add("変更", new Button(shapePartT14, delegate
     		{
     			if (!ip.Mai.TextIm.StartsWith(GameText.売り切れです))
     			{
@@ -4886,7 +4886,7 @@ namespace SlaveMatrix
     		shapePartT15.StringFormat.Alignment = StringAlignment.Center;
     		shapePartT15.StringFormat.LineAlignment = StringAlignment.Center;
     		ulong 買値;
-    		bs.Add("購入", new But1(shapePartT15, delegate
+    		bs.Add("購入", new Button(shapePartT15, delegate
     		{
     			if (Sta.GameData.Is地下室一杯())
     			{
@@ -5008,7 +5008,7 @@ namespace SlaveMatrix
     		mod.Wheel = delegate(MouseButtons mb, Vector2D cp, int dt, Color hc)
     		{
     			int num3 = 0;
-    			using (IEnumerator<But> enumerator = bs.EnumBut.Skip(3).Take(10).GetEnumerator())
+    			using (IEnumerator<ButtonBase> enumerator = bs.EnumBut.Skip(3).Take(10).GetEnumerator())
     			{
     				while (enumerator.MoveNext() && !(enumerator.Current.PartGroup.Values.First().ToParT().PenColor == Color.Red))
     				{
@@ -5022,8 +5022,8 @@ namespace SlaveMatrix
     				num5 = num4 - 1;
     			}
     			num5 %= num4;
-    			But but = bs["対象" + num5];
-    			but.Action(but);
+    			ButtonBase buttonBase = bs["対象" + num5];
+    			buttonBase.Action(buttonBase);
     		};
     		mod.Setting = delegate
     		{
@@ -5133,17 +5133,17 @@ namespace SlaveMatrix
     		bs.SetHitColor(Med);
 
     		ListView lv = null;
-    		Action<But, int, ulong> buy = delegate(But but, int ind, ulong pri)
+    		Action<ButtonBase, int, ulong> buy = delegate(ButtonBase ButtonBase, int ind, ulong pri)
     		{
     			if (Sta.GameData.所持金 >= pri)
     			{
-    				but.Dra = false;
+    				ButtonBase.Dra = false;
     				Sta.GameData.PurchasedTools[ind] = true;
     				Sta.GameData.所持金 -= pri;
     				//Sounds.精算.Play();
     				ip.UpdateSub2();
     				ip.TextIm = " ";
-    				if (!lv.bs.EnumBut.Any((But e) => e.Dra))
+    				if (!lv.bs.EnumBut.Any((ButtonBase e) => e.Dra))
     				{
     					ip.SubInfo = GameText.買える物は何も無い;
     					ip.TextIm = GameText.売り切れです;
@@ -5157,49 +5157,49 @@ namespace SlaveMatrix
     		};
     		
             
-            lv = new ListView(DrawBuffer, DrawBuffer.GetPosition(0.01, 0.03), 0.5, new Font("MS Gothic", 1f), 0.07, ColorHelper.White, ColorHelper.Empty, Color.FromArgb(160, ColorHelper.Black), ColorHelper.Black, new TA(GameText.ﾃﾞｨﾙﾄﾞﾊﾞｲﾌﾞ + " 35,000,000", delegate(But b)
+            lv = new ListView(DrawBuffer, DrawBuffer.GetPosition(0.01, 0.03), 0.5, new Font("MS Gothic", 1f), 0.07, ColorHelper.White, ColorHelper.Empty, Color.FromArgb(160, ColorHelper.Black), ColorHelper.Black, new TA(GameText.ﾃﾞｨﾙﾄﾞﾊﾞｲﾌﾞ + " 35,000,000", delegate(ButtonBase b)
     		{
     			buy(b, 0, 35000000uL);
-    		}), new TA(GameText.ﾉｰﾏﾙﾊﾞｲﾌﾞ + "   40,000,000", delegate(But b)
+    		}), new TA(GameText.ﾉｰﾏﾙﾊﾞｲﾌﾞ + "   40,000,000", delegate(ButtonBase b)
     		{
     			buy(b, 1, 40000000uL);
-    		}), new TA(GameText.ﾄﾞﾘﾙﾊﾞｲﾌﾞ + "   60,000,000", delegate(But b)
+    		}), new TA(GameText.ﾄﾞﾘﾙﾊﾞｲﾌﾞ + "   60,000,000", delegate(ButtonBase b)
     		{
     			buy(b, 2, 60000000uL);
-    		}), new TA(GameText.ﾃﾞﾝﾏﾊﾞｲﾌﾞ + "   50,000,000", delegate(But b)
+    		}), new TA(GameText.ﾃﾞﾝﾏﾊﾞｲﾌﾞ + "   50,000,000", delegate(ButtonBase b)
     		{
     			buy(b, 3, 50000000uL);
-    		}), new TA(GameText.ｱﾅﾙﾊﾞｲﾌﾞ + "    45,000,000", delegate(But b)
+    		}), new TA(GameText.ｱﾅﾙﾊﾞｲﾌﾞ + "    45,000,000", delegate(ButtonBase b)
     		{
     			buy(b, 4, 45000000uL);
-    		}), new TA(GameText.調教鞭 + "      30,000,000", delegate(But b)
+    		}), new TA(GameText.調教鞭 + "      30,000,000", delegate(ButtonBase b)
     		{
     			buy(b, 5, 30000000uL);
-    		}), new TA(GameText.羽根箒 + "      20,000,000", delegate(But b)
+    		}), new TA(GameText.羽根箒 + "      20,000,000", delegate(ButtonBase b)
     		{
     			buy(b, 6, 20000000uL);
-    		}), new TA(GameText.T字剃刀 + "     20,000,000", delegate(But b)
+    		}), new TA(GameText.T字剃刀 + "     20,000,000", delegate(ButtonBase b)
     		{
     			buy(b, 7, 20000000uL);
-    		}), new TA(GameText.振動ｷｬｯﾌﾟ + "   30,000,000", delegate(But b)
+    		}), new TA(GameText.振動ｷｬｯﾌﾟ + "   30,000,000", delegate(ButtonBase b)
     		{
     			buy(b, 8, 30000000uL);
-    		}), new TA(GameText.ﾋﾟﾝｸﾛｰﾀ + "     20,000,000", delegate(But b)
+    		}), new TA(GameText.ﾋﾟﾝｸﾛｰﾀ + "     20,000,000", delegate(ButtonBase b)
     		{
     			buy(b, 9, 20000000uL);
-    		}), new TA(GameText.ｱﾅﾙﾊﾟｰﾙ + "     20,000,000", delegate(But b)
+    		}), new TA(GameText.ｱﾅﾙﾊﾟｰﾙ + "     20,000,000", delegate(ButtonBase b)
     		{
     			buy(b, 10, 20000000uL);
-    		}), new TA(GameText.目隠帯 + "      25,000,000", delegate(But b)
+    		}), new TA(GameText.目隠帯 + "      25,000,000", delegate(ButtonBase b)
     		{
     			buy(b, 11, 25000000uL);
-    		}), new TA(GameText.玉口枷 + "      20,000,000", delegate(But b)
+    		}), new TA(GameText.玉口枷 + "      20,000,000", delegate(ButtonBase b)
     		{
     			buy(b, 12, 20000000uL);
-    		}), new TA(GameText.カメラ + "     100,000,000", delegate(But b)
+    		}), new TA(GameText.カメラ + "     100,000,000", delegate(ButtonBase b)
     		{
     			buy(b, 13, 100000000uL);
-    		}), new TA(GameText.ﾌﾛｱ増設 + "    300,000,000", delegate(But b)
+    		}), new TA(GameText.ﾌﾛｱ増設 + "    300,000,000", delegate(ButtonBase b)
     		{
     			ulong num = 300000000uL;
     			if (Sta.GameData.所持金 >= num)
@@ -5213,7 +5213,7 @@ namespace SlaveMatrix
     				//Sounds.精算.Play();
     				ip.UpdateSub2();
     				ip.TextIm = " ";
-    				if (!lv.bs.EnumBut.Any((But e) => e.Dra))
+    				if (!lv.bs.EnumBut.Any((ButtonBase e) => e.Dra))
     				{
     					ip.SubInfo = GameText.買える物は何も無い;
     					ip.TextIm = GameText.売り切れです;
@@ -5230,7 +5230,7 @@ namespace SlaveMatrix
 
     		Action subinfo = delegate
     		{
-    			if (lv.bs.EnumBut.Any((But e) => e.Dra))
+    			if (lv.bs.EnumBut.Any((ButtonBase e) => e.Dra))
     			{
     				ip.SubInfo = GameText.ふざけた値段だ;
     			}
@@ -5544,7 +5544,7 @@ namespace SlaveMatrix
     		double num = 0.2;
     		double num2 = 0.039;
     		double num3 = 0.15;
-    		But1 完了 = MyUI.Button(Med, DrawBuffer, GameText.完了, new Vector2D(num2 + 0.19, num3 + 0.72), delegate
+    		Button 完了 = MyUI.Button(Med, DrawBuffer, GameText.完了, new Vector2D(num2 + 0.19, num3 + 0.72), delegate
     		{
     			Sta.GameData.配色 = new 主人公配色(Sta.GameData.色);
     			Player.UI.ハンド右.再配色(Sta.GameData.配色);

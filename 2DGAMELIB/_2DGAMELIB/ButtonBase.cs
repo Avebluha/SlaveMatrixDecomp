@@ -3,7 +3,7 @@ using System.Drawing;
 
 namespace _2DGAMELIB
 {
-    public class But
+    public class ButtonBase
     {
     	private bool dra = true;
 
@@ -11,23 +11,23 @@ namespace _2DGAMELIB
 
     	protected PartGroup partGroup;
 
-    	protected Action<But> Over = delegate
+    	protected Action<ButtonBase> Over = delegate
     	{
     	};
 
-    	protected Action<But> Push = delegate
+    	protected Action<ButtonBase> Push = delegate
     	{
     	};
 
-    	protected Action<But> Release = delegate
+    	protected Action<ButtonBase> Release = delegate
     	{
     	};
 
-    	protected Action<But> Out = delegate
+    	protected Action<ButtonBase> Out = delegate
     	{
     	};
 
-    	public Action<But> Action = delegate
+    	public Action<ButtonBase> Action = delegate
     	{
     	};
 
@@ -50,7 +50,7 @@ namespace _2DGAMELIB
 
     	public PartGroup PartGroup => partGroup;
 
-    	public But(ShapePartT ShapePartT, Action<But> Action)
+    	public ButtonBase(ShapePartT ShapePartT, Action<ButtonBase> Action)
     	{
 		    partGroup = new PartGroup(ShapePartT);
     		this.Action = Action;

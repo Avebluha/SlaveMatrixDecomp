@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace _2DGAMELIB
 {
-    public class But1 : But
+    public class Button : ButtonBase
     {
     	public List<Color> BaseColors = new List<Color>();
 
@@ -15,7 +15,7 @@ namespace _2DGAMELIB
 
     	public List<Color> TextColors = new List<Color>();
 
-    	public But1(ShapePartT ShapePartT, Action<But> Action)
+    	public Button(ShapePartT ShapePartT, Action<ButtonBase> Action)
     		: base(ShapePartT, Action)
     	{
     		Setting();

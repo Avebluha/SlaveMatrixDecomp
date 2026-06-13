@@ -10,9 +10,9 @@ namespace SlaveMatrix
     {
         public string Text;
 
-        public Action<But> act;
+        public Action<ButtonBase> act;
 
-        public TA(string Text, Action<But> act)
+        public TA(string Text, Action<ButtonBase> act)
         {
             this.Text = Text;
             this.act = act;
@@ -93,7 +93,7 @@ namespace SlaveMatrix
     			}
     			pt[i].BrushColor = BackColor;
     			pt[i].PenColor = FramColor;
-    			bs.Add(i.ToString(), new But1(pt[i], acts[i].act));
+    			bs.Add(i.ToString(), new Button(pt[i], acts[i].act));
     		}
     		this.Position = Position;
     		LocalHeight = Are.LocalHeight;

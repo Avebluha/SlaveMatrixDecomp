@@ -6,20 +6,20 @@ namespace _2DGAMELIB
 {
     public class ButtonMap
     {
-    	private OrderedDictionary<string, But> buts = new OrderedDictionary<string, But>();
+    	private OrderedDictionary<string, ButtonBase> buts = new OrderedDictionary<string, ButtonBase>();
 
-    	public But this[string Name] => buts[Name];
+    	public ButtonBase this[string Name] => buts[Name];
 
-    	public IEnumerable<But> EnumBut => buts.Values;
+    	public IEnumerable<ButtonBase> EnumBut => buts.Values;
 
-    	public void Add(string Name, But But)
+    	public void Add(string Name, ButtonBase ButtonBase)
     	{
-    		buts.Add(Name, But);
+    		buts.Add(Name, ButtonBase);
     	}
 
     	public void Down(ref Color HitColor)
     	{
-    		using IEnumerator<But> enumerator = buts.Values.GetEnumerator();
+    		using IEnumerator<ButtonBase> enumerator = buts.Values.GetEnumerator();
     		while (enumerator.MoveNext() && !enumerator.Current.Down(ref HitColor))
     		{
     		}
@@ -27,7 +27,7 @@ namespace _2DGAMELIB
 
     	public void Up(ref Color HitColor)
     	{
-    		using IEnumerator<But> enumerator = buts.Values.GetEnumerator();
+    		using IEnumerator<ButtonBase> enumerator = buts.Values.GetEnumerator();
     		while (enumerator.MoveNext() && !enumerator.Current.Up(ref HitColor))
     		{
     		}
@@ -35,7 +35,7 @@ namespace _2DGAMELIB
 
     	public void Move(ref Color HitColor)
     	{
-    		foreach (But value in buts.Values)
+    		foreach (ButtonBase value in buts.Values)
     		{
     			value.Move(ref HitColor);
     		}
@@ -43,7 +43,7 @@ namespace _2DGAMELIB
 
     	public void Leave()
     	{
-    		using IEnumerator<But> enumerator = buts.Values.GetEnumerator();
+    		using IEnumerator<ButtonBase> enumerator = buts.Values.GetEnumerator();
     		while (enumerator.MoveNext() && !enumerator.Current.Leave())
     		{
     		}
@@ -51,7 +51,7 @@ namespace _2DGAMELIB
 
     	public void SetHitColor(ModeEventDispatcher Med)
     	{
-    		foreach (But item in EnumBut)
+    		foreach (ButtonBase item in EnumBut)
     		{
     			item.SetHitColor(Med);
     		}
@@ -59,7 +59,7 @@ namespace _2DGAMELIB
 
     	public void Draw(RenderArea Are)
     	{
-    		foreach (But value in buts.Values)
+    		foreach (ButtonBase value in buts.Values)
     		{
     			value.Draw(Are);
     		}
@@ -67,7 +67,7 @@ namespace _2DGAMELIB
 
     	public void Dispose()
     	{
-    		foreach (But value in buts.Values)
+    		foreach (ButtonBase value in buts.Values)
     		{
     			value.Dispose();
     		}

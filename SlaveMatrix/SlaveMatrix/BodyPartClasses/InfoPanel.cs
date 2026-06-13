@@ -41,9 +41,9 @@ namespace SlaveMatrix
 
     	private ShapePartT np;
 
-    	public But1 yb;
+    	public Button yb;
 
-    	public But1 nb;
+    	public Button nb;
 
     	public string TextIm
     	{
@@ -119,22 +119,22 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public Action<But> 選択yAct
+    	public Action<ButtonBase> 選択yAct
     	{
     		set
     		{
-    			yb.Action = delegate(But a)
+    			yb.Action = delegate(ButtonBase a)
     			{
     				value(a);
     			};
     		}
     	}
 
-    	public Action<But> 選択nAct
+    	public Action<ButtonBase> 選択nAct
     	{
     		set
     		{
-    			nb.Action = delegate(But a)
+    			nb.Action = delegate(ButtonBase a)
     			{
     				value(a);
     			};
@@ -237,7 +237,7 @@ namespace SlaveMatrix
     		yp.StringFormat.LineAlignment = StringAlignment.Center;
     		yp.PositionBase = new Vector2D(MaiB.Position.X + 0.001, MaiB.Position.Y);
     		yp.Dra = false;
-    		yb = new But1(yp, delegate
+    		yb = new Button(yp, delegate
     		{
     		});
     		np = new ShapePartT();
@@ -257,7 +257,7 @@ namespace SlaveMatrix
     		np.StringFormat.LineAlignment = StringAlignment.Center;
     		np.PositionBase = new Vector2D(MaiB.Position.X + 0.001, MaiB.Position.Y);
     		np.Dra = false;
-    		nb = new But1(np, delegate
+    		nb = new Button(np, delegate
     		{
     		});
     	}

@@ -18,9 +18,9 @@ namespace _2DGAMELIB
     		this.OnColor = OnColor;
     	}
 
-    	public void OnOff(But But)
+    	public void OnOff(ButtonBase ButtonBase)
     	{
-    		But1 but = (But1)But;
+    		Button but = (Button)ButtonBase;
     		if (!flag)
     		{
     			flag = true;
@@ -89,9 +89,9 @@ namespace _2DGAMELIB
     		}
     	}
 
-    	public void SetFlag(But But, bool On)
+    	public void SetFlag(ButtonBase ButtonBase, bool On)
     	{
-    		But1 but = (But1)But;
+    		Button but = (Button)ButtonBase;
     		if (On)
     		{
     			flag = true;

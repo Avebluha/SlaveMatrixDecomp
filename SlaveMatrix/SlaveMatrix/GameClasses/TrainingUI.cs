@@ -91,15 +91,15 @@ namespace SlaveMatrix
 
 
         //ui elements
-        public But 調教終了;
-    	public But 拘束具;
-    	public But 目隠帯;
-    	public But 玉口枷;
-    	public But 断面;
-    	public But 媚薬;
-    	public But 撮影;
-        public But SlaveStamina;
-        public But PlayerStamina;
+        public ButtonBase 調教終了;
+    	public ButtonBase 拘束具;
+    	public ButtonBase 目隠帯;
+    	public ButtonBase 玉口枷;
+    	public ButtonBase 断面;
+    	public ButtonBase 媚薬;
+    	public ButtonBase 撮影;
+        public ButtonBase SlaveStamina;
+        public ButtonBase PlayerStamina;
 
         private Swi 拘束具sw = new Swi(Color.OrangeRed);
     	private Swi 目隠帯sw = new Swi(Color.OrangeRed);
@@ -2176,7 +2176,7 @@ namespace SlaveMatrix
     			shapePartT.StringFormat.LineAlignment = StringAlignment.Center;
     			shapePartT.PositionBase = Are.GetPosition(1.0 - (shapePartT.OP[0].ps[1].X * shapePartT.SizeBase / Are.LocalWidth + 0.005), 1.0 - shapePartT.OP[0].ps[2].Y * shapePartT.SizeBase / Are.LocalHeight).AddY(-0.001);
     			shapePartT.PositionBase = new Vector2D(ip.SubB.PositionBase.X, shapePartT.PositionBase.Y);
-    			調教終了 = new But1(shapePartT, null);
+    			調教終了 = new Button(shapePartT, null);
     			ShapePartT shapePartT2 = new ShapePartT();
     			shapePartT2.Text = GameText.拘束;
     			shapePartT2.SizeBase = 0.095;
@@ -2193,7 +2193,7 @@ namespace SlaveMatrix
     			shapePartT2.StringFormat.Alignment = StringAlignment.Center;
     			shapePartT2.StringFormat.LineAlignment = StringAlignment.Center;
     			shapePartT2.PositionBase = Are.GetPosition(0.08, 0.7);
-    			拘束具 = new But1(shapePartT2, delegate(But a)
+    			拘束具 = new Button(shapePartT2, delegate(ButtonBase a)
     			{
     				if (調教UI2.拘束具sw.Flag)
     				{
@@ -2225,7 +2225,7 @@ namespace SlaveMatrix
     			shapePartT3.StringFormat.Alignment = StringAlignment.Center;
     			shapePartT3.StringFormat.LineAlignment = StringAlignment.Center;
     			shapePartT3.PositionBase = shapePartT2.PositionBase.AddY(0.015);
-    			目隠帯 = new But1(shapePartT3, delegate(But a)
+    			目隠帯 = new Button(shapePartT3, delegate(ButtonBase a)
     			{
     				調教UI2.目隠帯sw.OnOff(a);
     				Sta.GameData.目隠帯 = 調教UI2.目隠帯sw.Flag;
@@ -2248,7 +2248,7 @@ namespace SlaveMatrix
     			shapePartT4.StringFormat.Alignment = StringAlignment.Center;
     			shapePartT4.StringFormat.LineAlignment = StringAlignment.Center;
     			shapePartT4.PositionBase = shapePartT3.PositionBase.AddY(0.015);
-    			玉口枷 = new But1(shapePartT4, delegate(But a)
+    			玉口枷 = new Button(shapePartT4, delegate(ButtonBase a)
     			{
     				調教UI2.玉口枷sw.OnOff(a);
     				Sta.GameData.玉口枷 = 調教UI2.玉口枷sw.Flag;
@@ -2271,7 +2271,7 @@ namespace SlaveMatrix
     			shapePartT5.StringFormat.Alignment = StringAlignment.Center;
     			shapePartT5.StringFormat.LineAlignment = StringAlignment.Center;
     			shapePartT5.PositionBase = shapePartT4.PositionBase.AddY(0.015);
-    			断面 = new But1(shapePartT5, delegate(But a)
+    			断面 = new Button(shapePartT5, delegate(ButtonBase a)
     			{
     				double v = 0.0;
     				if (調教UI2.ペニス挿入.Is膣)
@@ -2377,7 +2377,7 @@ namespace SlaveMatrix
     			shapePartT6.StringFormat.Alignment = StringAlignment.Center;
     			shapePartT6.StringFormat.LineAlignment = StringAlignment.Center;
     			shapePartT6.PositionBase = shapePartT5.PositionBase.AddY(0.015);
-    			媚薬 = new But1(shapePartT6, delegate
+    			媚薬 = new Button(shapePartT6, delegate
     			{
     				if (Sta.GameData.所持金 < 調教UI2.媚薬投与価格)
     				{
@@ -2414,7 +2414,7 @@ namespace SlaveMatrix
     			shapePartT7.PositionBase = shapePartT6.PositionBase.AddY(0.015);
     			string Path = "Photo";
     			Film = new RenderArea(Med, Hit: false);
-    			撮影 = new But1(shapePartT7, delegate
+    			撮影 = new Button(shapePartT7, delegate
     			{
     				//Sounds.撮影.Play();
     				Med.flash();
@@ -3083,7 +3083,7 @@ namespace SlaveMatrix
     		shapePartT.StringFormat.Alignment = StringAlignment.Center;
     		shapePartT.StringFormat.LineAlignment = StringAlignment.Center;
     		shapePartT.PositionBase = Are.GetPosition(x, y);
-    		SlaveStamina = new But1(shapePartT, delegate
+    		SlaveStamina = new Button(shapePartT, delegate
     		{
     			//Sounds.操作.Play();
     			ip.UpdateSub2();
@@ -3105,7 +3105,7 @@ namespace SlaveMatrix
     		shapePartT2.StringFormat.Alignment = StringAlignment.Center;
     		shapePartT2.StringFormat.LineAlignment = StringAlignment.Center;
     		shapePartT2.PositionBase = shapePartT.PositionBase.AddY(0.015);
-    		PlayerStamina = new But1(shapePartT2, delegate
+    		PlayerStamina = new Button(shapePartT2, delegate
     		{
     			//Sounds.操作.Play();
     			ip.UpdateSub2();
