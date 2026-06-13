@@ -85,6 +85,11 @@ namespace _2DGAMELIB
             ["放尿"] = "Urination",
             ["噴乳左"] = "LactationLeft",
             ["潮吹"] = "Squirting",
+            ["尾"] = "Tail",
+            ["背中"] = "Back",
+            ["手"] = "Hand",
+            ["足"] = "Foot",
+            ["腿"] = "Thigh",
         };
 
         public static void MigrateKeys(this Obj obj)

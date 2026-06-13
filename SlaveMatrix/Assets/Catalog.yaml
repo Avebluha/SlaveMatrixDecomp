@@ -155,8 +155,8 @@ parts:
   path: Parts/UpperArm/
 - id: LowerArm
   path: Parts/LowerArm/
-- id: 手
-  path: Parts/手/
+- id: Hand
+  path: Parts/Hand/
 - id: 鳥翼UpperArm
   path: Parts/鳥翼UpperArm/
 - id: 鳥翼LowerArm
@@ -179,20 +179,20 @@ parts:
   path: Parts/四足LowerArm/
 - id: 四足手
   path: Parts/四足手/
-- id: 腿
-  path: Parts/腿/
+- id: Thigh
+  path: Parts/Thigh/
 - id: Leg
   path: Parts/Leg/
-- id: 足
-  path: Parts/足/
+- id: Foot
+  path: Parts/Foot/
 - id: 四足腿
   path: Parts/四足腿/
 - id: 四足脚
   path: Parts/四足脚/
 - id: 四足足
   path: Parts/四足足/
-- id: 尾
-  path: Parts/尾/
+- id: Tail
+  path: Parts/Tail/
 - id: 長物
   path: Parts/長物/
 - id: 四足腰
@@ -249,8 +249,8 @@ parts:
   path: Parts/節足/
 - id: 触手
   path: Parts/触手/
-- id: 尾
-  path: Parts/尾/
+- id: Tail
+  path: Parts/Tail/
 - id: 頭部後
   path: Parts/頭部後/
 - id: 頭部前
@@ -263,8 +263,8 @@ parts:
   path: Parts/Face/
 - id: Horn
   path: Parts/Horn/
-- id: 背中
-  path: Parts/背中/
+- id: Back
+  path: Parts/Back/
 - id: Genitals
   path: Parts/Genitals/
 - id: 四足性器
