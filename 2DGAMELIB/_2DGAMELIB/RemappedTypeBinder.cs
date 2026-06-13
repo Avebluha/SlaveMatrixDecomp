@@ -1,7 +1,7 @@
 using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Runtime.Serialization;
-using System.Text;
 
 namespace _2DGAMELIB
 {
@@ -9,6 +9,12 @@ namespace _2DGAMELIB
     {
         private readonly Dictionary<string, Type> _typeOnlyMap = new();
         private readonly Dictionary<string, (string AssemblyName, Type Type)> _fullMap = new();
+        private static readonly ConcurrentDictionary<string, Type> _additionalMappings = new();
+
+        public static void RegisterMapping(string oldTypeName, Type newType)
+        {
+            _additionalMappings[oldTypeName] = newType;
+        }
 
         public RemappedTypeBinder Add(string oldTypeName, Type newType)
         {
@@ -32,6 +38,9 @@ namespace _2DGAMELIB
 
             if (_typeOnlyMap.TryGetValue(typeName, out var type))
                 return type;
+
+            if (_additionalMappings.TryGetValue(typeName, out var extra))
+                return extra;
 
             var fullName = typeName;
             if (!string.IsNullOrEmpty(assemblyName))
@@ -90,11 +99,16 @@ namespace _2DGAMELIB
             var inner = typeName.Substring(bracketStart, bracketEnd - bracketStart + 1);
 
             // Replace mapped old type names (longest first to avoid partial prefix matches)
-            var sortedKeys = new List<string>(_typeOnlyMap.Keys);
-            sortedKeys.Sort((a, b) => b.Length.CompareTo(a.Length));
-            foreach (var old in sortedKeys)
+            var allKeys = new List<string>(_typeOnlyMap.Keys);
+            allKeys.AddRange(_additionalMappings.Keys);
+            allKeys.Sort((a, b) => b.Length.CompareTo(a.Length));
+            foreach (var old in allKeys)
             {
-                var rep = _typeOnlyMap[old].FullName;
+                Type repType;
+                if (!_typeOnlyMap.TryGetValue(old, out repType))
+                    _additionalMappings.TryGetValue(old, out repType);
+                if (repType == null) continue;
+                var rep = repType.FullName;
                 inner = inner.Replace(old + ",", rep + ",");
                 inner = inner.Replace(old + "]", rep + "]");
             }

@@ -9,6 +9,9 @@ namespace SlaveMatrix
         static Program()
         {
             AppContext.SetSwitch("System.Drawing.EnableUnixSupport", true);
+            RemappedTypeBinder.RegisterMapping("SlaveMatrix.Ele", typeof(Element));
+            RemappedTypeBinder.RegisterMapping("SlaveMatrix.EleD", typeof(ElementData));
+            RemappedTypeBinder.RegisterMapping("SlaveMatrix.EleI", typeof(ElementInstance));
         }
 
     	[STAThread]
