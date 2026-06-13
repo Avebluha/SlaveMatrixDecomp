@@ -968,7 +968,7 @@ namespace SlaveMatrix
     	public 調教鞭(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 調教鞭D e)
     	{
     		ThisType = GetType();
-    		Body = new Difs(Sta.カーソル["調教鞭"]);
+    		Body = new VariantGrid(Sta.カーソル["調教鞭"]);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_先 = partGroup["先"].ToPar();
     		X0Y0_柄 = partGroup["柄"].ToPar();

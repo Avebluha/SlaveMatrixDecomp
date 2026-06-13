@@ -62,39 +62,44 @@ namespace _2DGAMELIB
 
         private string RemapTypeArgs(string typeName)
         {
-            var sb = new StringBuilder(typeName.Length);
-            int i = 0;
-            while (i < typeName.Length)
+            // Find the generic arguments section: the outermost [...] containing [args]
+            int outerStart = typeName.LastIndexOf('`');
+            if (outerStart < 0) return typeName;
+
+            int bracketStart = -1;
+            for (int i = outerStart + 1; i < typeName.Length; i++)
             {
-                int start = typeName.IndexOf('[', i);
-                if (start < 0 || start + 1 >= typeName.Length || typeName[start + 1] != '[')
+                if (typeName[i] == '[')
                 {
-                    sb.Append(typeName, i, typeName.Length - i);
+                    bracketStart = i;
                     break;
                 }
+            }
+            if (bracketStart < 0) return typeName;
 
-                sb.Append(typeName, i, start - i);
+            int depth = 0;
+            int bracketEnd = -1;
+            for (int i = bracketStart; i < typeName.Length; i++)
+            {
+                if (typeName[i] == '[') depth++;
+                else if (typeName[i] == ']') depth--;
+                if (depth == 0) { bracketEnd = i; break; }
+            }
+            if (bracketEnd < 0) return typeName;
 
-                int end = typeName.IndexOf("]]", start);
-                if (end < 0)
-                {
-                    sb.Append(typeName, start, typeName.Length - start);
-                    break;
-                }
+            var inner = typeName.Substring(bracketStart, bracketEnd - bracketStart + 1);
 
-                var argFull = typeName.Substring(start + 2, end - start - 2);
-                var comma = argFull.IndexOf(',');
-                var argTypeName = comma >= 0 ? argFull.Substring(0, comma).Trim() : argFull.Trim();
-
-                if (_typeOnlyMap.TryGetValue(argTypeName, out var mapped))
-                    argFull = mapped.FullName + (comma >= 0 ? argFull.Substring(comma) : "");
-
-                sb.Append("[[").Append(argFull).Append("]]");
-
-                i = end + 2;
+            // Replace mapped old type names (longest first to avoid partial prefix matches)
+            var sortedKeys = new List<string>(_typeOnlyMap.Keys);
+            sortedKeys.Sort((a, b) => b.Length.CompareTo(a.Length));
+            foreach (var old in sortedKeys)
+            {
+                var rep = _typeOnlyMap[old].FullName;
+                inner = inner.Replace(old + ",", rep + ",");
+                inner = inner.Replace(old + "]", rep + "]");
             }
 
-            return sb.ToString();
+            return typeName.Substring(0, bracketStart) + inner + typeName.Substring(bracketEnd + 1);
         }
     }
 }

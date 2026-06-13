@@ -255,7 +255,7 @@ namespace SlaveMatrix
     	public 拘束鎖(double DisUnit, bool 右, 配色指定 配色指定, BodyColorSet 体配色, bool Xasix)
     	{
     		ThisType = GetType();
-    		Body = new Difs(Sta.その他["拘束鎖"]);
+    		Body = new VariantGrid(Sta.その他["拘束鎖"]);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_鎖2 = partGroup["鎖2"].ToPar();
     		X0Y0_鎖1 = partGroup["鎖1"].ToPar();

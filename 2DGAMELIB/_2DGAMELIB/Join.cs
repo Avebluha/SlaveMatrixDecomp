@@ -94,16 +94,16 @@ namespace _2DGAMELIB
     		}
     	}
 
-    	public static JointsD GetJointsD(this Difs JoinRoot, IEnumerable<Difs> EnumDifs)
+    	public static JointsD GetJointsD(this VariantGrid JoinRoot, IEnumerable<VariantGrid> EnumDifs)
     	{
     		JointsD jointsD = new JointsD();
     		List<int> list = new List<int>();
-    		List<Difs> list2 = EnumDifs.ToList();
+    		List<VariantGrid> list2 = EnumDifs.ToList();
     		foreach (ShapePart item in JoinRoot.EnumAllPar())
     		{
     			int num = 0;
     			list.Clear();
-    			foreach (Difs item2 in list2)
+    			foreach (VariantGrid item2 in list2)
     			{
     				if (JoinRoot != item2)
     				{
@@ -141,7 +141,7 @@ namespace _2DGAMELIB
     		return jointsD;
     	}
 
-    	private static void GetJointsD(List<Difs> dl, JointsD jsd, List<int> del)
+    	private static void GetJointsD(List<VariantGrid> dl, JointsD jsd, List<int> del)
     	{
     		int num = -1;
     		int num2 = 0;
@@ -150,14 +150,14 @@ namespace _2DGAMELIB
     			num = jsd.Joins.Count;
     			for (int i = num2; i < num; i++)
     			{
-    				Difs difs = jsd.Joins[i].Difs1;
-    				foreach (ShapePart item in difs.EnumAllPar())
+    				VariantGrid variantGrid = jsd.Joins[i].Difs1;
+    				foreach (ShapePart item in variantGrid.EnumAllPar())
     				{
     					int num3 = 0;
     					del.Clear();
-    					foreach (Difs item2 in dl)
+    					foreach (VariantGrid item2 in dl)
     					{
-    						if (difs != item2)
+    						if (variantGrid != item2)
     						{
     							int num4 = 0;
     							foreach (JointPoint item3 in item.JP)
@@ -167,7 +167,7 @@ namespace _2DGAMELIB
     								{
     									if (v.DistanceSquared(item4.Position) <= IdentityDistance)
     									{
-    										jsd.Joins.Add(new JointD(difs, item, num4, item2));
+    										jsd.Joins.Add(new JointD(variantGrid, item, num4, item2));
     										if (!del.Contains(num3))
     										{
     											del.Add(num3);

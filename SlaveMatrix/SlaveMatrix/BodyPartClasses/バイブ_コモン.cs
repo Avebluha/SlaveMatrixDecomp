@@ -974,7 +974,7 @@ namespace SlaveMatrix
     	public バイブ_コモン(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, バイブ_コモンD e)
     	{
     		ThisType = GetType();
-    		Body = new Difs(Sta.カーソル["コモン"]);
+    		Body = new VariantGrid(Sta.カーソル["コモン"]);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_ヘッド = partGroup["ヘッド"].ToPar();
     		X0Y0_イボ1 = partGroup["イボ1"].ToPar();

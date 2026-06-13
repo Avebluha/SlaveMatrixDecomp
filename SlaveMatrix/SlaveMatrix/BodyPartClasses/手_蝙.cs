@@ -737,7 +737,7 @@ namespace SlaveMatrix
     		飛膜 = new 飛膜_先(DisUnit, 配色指定, 体配色);
     		飛膜.Par = this;
     		ThisType = GetType();
-    		Body = new Difs(Sta.腕左["獣翼手"]);
+    		Body = new VariantGrid(Sta.腕左["獣翼手"]);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_獣翼手 = partGroup["獣翼手"].ToPar();
     		PartGroup pars2 = partGroup["小指"].ToPars();

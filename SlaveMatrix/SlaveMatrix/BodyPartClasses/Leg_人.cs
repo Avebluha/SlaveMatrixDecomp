@@ -5757,7 +5757,7 @@ namespace SlaveMatrix
     		Leg_人 Leg_人2 = this;
     		ThisType = GetType();
             //Leg but if renamed to Leg it broke game
-    		Body = new Difs(Sta.脚左["Leg"]);
+    		Body = new VariantGrid(Sta.脚左["Leg"]);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_Leg = partGroup["脚"].ToPar();
     		X0Y0_筋 = partGroup["筋"].ToPar();

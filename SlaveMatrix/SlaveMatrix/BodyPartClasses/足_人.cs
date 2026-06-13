@@ -3172,7 +3172,7 @@ namespace SlaveMatrix
     	public 足_人(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 足_人D e)
     	{
     		ThisType = GetType();
-    		Body = new Difs(Sta.脚左["足"]);
+    		Body = new VariantGrid(Sta.脚左["足"]);
     		PartGroup partGroup = Body[0][0];
     		PartGroup pars2 = partGroup["ヒール0"].ToPars();
     		X0Y0_ヒール0_靴底 = pars2["靴底"].ToPar();

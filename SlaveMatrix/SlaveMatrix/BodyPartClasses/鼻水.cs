@@ -124,7 +124,7 @@ namespace SlaveMatrix
     	public 鼻水(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 鼻水D e)
     	{
     		ThisType = GetType();
-    		Body = new Difs(Sta.胴体["鼻水左"]);
+    		Body = new VariantGrid(Sta.胴体["鼻水左"]);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_鼻水 = partGroup["鼻水"].ToPar();
     		partGroup = Body[0][1];

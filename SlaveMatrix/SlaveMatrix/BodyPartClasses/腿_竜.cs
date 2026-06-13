@@ -323,7 +323,7 @@ namespace SlaveMatrix
     		腿_竜 腿_竜2 = this;
     		ThisType = GetType();
     		MorphVariant morphVariant = new MorphVariant(Sta.脚左["四足腿"][3]);
-    		Body = new Difs();
+    		Body = new VariantGrid();
     		Body.Tag = morphVariant.Tag;
     		Body.Add(morphVariant);
     		PartGroup partGroup = Body[0][0];

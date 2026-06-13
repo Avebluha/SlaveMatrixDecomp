@@ -358,7 +358,7 @@ namespace SlaveMatrix
     		MorphVariant morphVariant = new MorphVariant();
     		morphVariant.Tag = "牛";
     		morphVariant.Add(new PartGroup(Sta.腕左["四足手"][1][1]));
-    		Body = new Difs();
+    		Body = new VariantGrid();
     		Body.Tag = morphVariant.Tag;
     		Body.Add(morphVariant);
     		PartGroup partGroup = Body[0][0];

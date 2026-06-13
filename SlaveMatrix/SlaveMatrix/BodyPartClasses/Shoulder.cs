@@ -311,7 +311,7 @@ namespace SlaveMatrix
     	{
     		Shoulder Shoulder2 = this;
     		ThisType = GetType();
-    		Body = new Difs(Sta.肩左["Shoulder"]);
+    		Body = new VariantGrid(Sta.肩左["Shoulder"]);
     		PartGroup partGroup = Body[0][0];
     		PartGroup pars2 = partGroup["脇"].ToPars();
     		X0Y0_脇_脇 = pars2["脇"].ToPar();

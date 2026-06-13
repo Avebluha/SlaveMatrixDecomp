@@ -347,7 +347,7 @@ namespace SlaveMatrix
     	public 噴乳(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 噴乳D e)
     	{
     		ThisType = GetType();
-    		Body = new Difs(Sta.胴体["噴乳左"]);
+    		Body = new VariantGrid(Sta.胴体["噴乳左"]);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_母乳垂れ1 = partGroup["母乳垂れ1"].ToPar();
     		X0Y0_母乳垂れ2 = partGroup["母乳垂れ2"].ToPar();

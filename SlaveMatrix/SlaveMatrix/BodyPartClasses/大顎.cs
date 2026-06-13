@@ -430,7 +430,7 @@ namespace SlaveMatrix
     	{
     		ThisType = GetType();
     		MorphVariant morphVariant = new MorphVariant(Sta.肢左["虫顎"][1]);
-    		Body = new Difs();
+    		Body = new VariantGrid();
     		Body.Tag = morphVariant.Tag;
     		Body.Add(morphVariant);
     		PartGroup partGroup = Body[0][0];

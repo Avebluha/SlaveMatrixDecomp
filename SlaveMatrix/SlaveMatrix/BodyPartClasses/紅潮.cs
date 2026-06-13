@@ -406,7 +406,7 @@ namespace SlaveMatrix
     	public 紅潮(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 紅潮D e)
     	{
     		ThisType = GetType();
-    		Body = new Difs(Sta.胴体["紅潮"]);
+    		Body = new VariantGrid(Sta.胴体["紅潮"]);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_紅潮0 = partGroup["紅潮0"].ToPar();
     		X0Y0_紅潮1 = partGroup["紅潮1"].ToPar();

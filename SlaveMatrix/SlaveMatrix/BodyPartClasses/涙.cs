@@ -328,7 +328,7 @@ namespace SlaveMatrix
     	public 涙(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 涙D e)
     	{
     		ThisType = GetType();
-    		Body = new Difs(Sta.胴体["涙左"]);
+    		Body = new VariantGrid(Sta.胴体["涙左"]);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_涙0流れ0 = partGroup["涙0流れ0"].ToPar();
     		X0Y0_涙0 = partGroup["涙0"].ToPar();

@@ -2801,7 +2801,7 @@ namespace SlaveMatrix
     	public 手_人(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 手_人D e)
     	{
     		ThisType = GetType();
-    		Body = new Difs(Sta.腕左["手"]);
+    		Body = new VariantGrid(Sta.腕左["手"]);
     		PartGroup partGroup = Body[0][0];
     		PartGroup pars2 = partGroup["グローブ"].ToPars();
     		X0Y0_グローブ_グローブ = pars2["グローブ"].ToPar();

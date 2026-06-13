@@ -140,7 +140,7 @@ namespace SlaveMatrix
     	public 膣内精液_獣(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 膣内精液_獣D e)
     	{
     		ThisType = GetType();
-    		Body = new Difs(Sta.半身["四足膣内精液"]);
+    		Body = new VariantGrid(Sta.半身["四足膣内精液"]);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_精液 = partGroup["精液"].ToPar();
     		X0Y0_血液1 = partGroup["血液1"].ToPar();

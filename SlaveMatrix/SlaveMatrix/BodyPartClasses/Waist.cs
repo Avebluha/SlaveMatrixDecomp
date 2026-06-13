@@ -2155,7 +2155,7 @@ namespace SlaveMatrix
     	{
     		Waist Waist2 = this;
     		ThisType = GetType();
-    		Body = new Difs(Sta.胴体["Waist"]);
+    		Body = new VariantGrid(Sta.胴体["Waist"]);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_Waist = partGroup["腰"].ToPar();
     		X0Y0_股 = partGroup["股"].ToPar();

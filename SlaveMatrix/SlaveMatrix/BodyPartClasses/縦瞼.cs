@@ -415,7 +415,7 @@ namespace SlaveMatrix
     	public 縦瞼(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 縦瞼D e)
     	{
     		ThisType = GetType();
-    		Body = new Difs(Sta.胴体["額瞼"]);
+    		Body = new VariantGrid(Sta.胴体["額瞼"]);
     		PartGroup partGroup = Body[0][0];
     		PartGroup pars2 = partGroup["瞼左"].ToPars();
     		X0Y0_瞼左_瞼 = pars2["瞼"].ToPar();

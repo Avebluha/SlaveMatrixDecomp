@@ -225,7 +225,7 @@ namespace SlaveMatrix
     	{
     		双目 双目2 = this;
     		ThisType = GetType();
-    		Body = new Difs(Sta.胴体["目左"]);
+    		Body = new VariantGrid(Sta.胴体["目左"]);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_白目 = partGroup["白目"].ToPar();
     		PartGroup pars2 = partGroup["黒目"].ToPars();

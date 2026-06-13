@@ -384,7 +384,7 @@ namespace SlaveMatrix
     		MorphVariant morphVariant = new MorphVariant();
     		morphVariant.Tag = "ハネ";
     		morphVariant.Add(new PartGroup(Sta.胴体["BackHair0"][0][1]));
-    		Body = new Difs();
+    		Body = new VariantGrid();
     		Body.Tag = morphVariant.Tag;
     		Body.Add(morphVariant);
     		PartGroup partGroup = Body[0][0];

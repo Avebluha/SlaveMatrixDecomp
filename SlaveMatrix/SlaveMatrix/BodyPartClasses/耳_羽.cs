@@ -321,7 +321,7 @@ namespace SlaveMatrix
     	public 耳_羽(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 耳_羽D e)
     	{
     		ThisType = GetType();
-    		Body = new Difs();
+    		Body = new VariantGrid();
     		Body.Tag = "羽";
     		Body.Add(new MorphVariant(Sta.肢左["耳"][8]));
     		Body.Add(new MorphVariant(Sta.肢左["耳"][9]));

@@ -619,7 +619,7 @@ namespace SlaveMatrix
     	public 断面_人(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 断面_人D e)
     	{
     		ThisType = GetType();
-    		Body = new Difs(Sta.胴体["断面"]);
+    		Body = new VariantGrid(Sta.胴体["断面"]);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_膣基 = partGroup["膣基"].ToPar();
     		X0Y0_膣壁左 = partGroup["膣壁左"].ToPar();

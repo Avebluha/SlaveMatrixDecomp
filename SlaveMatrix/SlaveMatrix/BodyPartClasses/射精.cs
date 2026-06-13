@@ -263,7 +263,7 @@ namespace SlaveMatrix
     	public 射精(double DisUnit, 配色指定 配色指定, 主人公配色 体配色, ModeEventDispatcher Med, 射精D e)
     	{
     		ThisType = GetType();
-    		Body = new Difs(Sta.カーソル["射精"]);
+    		Body = new VariantGrid(Sta.カーソル["射精"]);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_精液 = partGroup["精液"].ToPar();
     		partGroup = Body[0][1];

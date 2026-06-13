@@ -33,7 +33,7 @@ namespace _2DGAMELIB
 
         public static void MigrateKeys(this Obj obj)
         {
-            var newDict = new OrderedDictionary<string, Difs>();
+            var newDict = new OrderedDictionary<string, VariantGrid>();
 
             foreach (var key in obj.Keys)
             {

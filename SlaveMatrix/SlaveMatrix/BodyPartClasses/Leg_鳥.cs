@@ -276,7 +276,7 @@ namespace SlaveMatrix
     		Leg_鳥 Leg_鳥2 = this;
     		ThisType = GetType();
     		MorphVariant morphVariant = new MorphVariant(Sta.脚左["四足脚"][2]);
-    		Body = new Difs();
+    		Body = new VariantGrid();
     		Body.Tag = morphVariant.Tag;
     		Body.Add(morphVariant);
     		PartGroup partGroup = Body[0][0];

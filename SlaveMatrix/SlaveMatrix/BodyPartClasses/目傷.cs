@@ -169,7 +169,7 @@ namespace SlaveMatrix
     	public 目傷(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 目傷D e)
     	{
     		ThisType = GetType();
-    		Body = new Difs(Sta.胴体["目傷左"]);
+    		Body = new VariantGrid(Sta.胴体["目傷左"]);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_傷上 = partGroup["傷上"].ToPar();
     		X0Y0_傷下 = partGroup["傷下"].ToPar();

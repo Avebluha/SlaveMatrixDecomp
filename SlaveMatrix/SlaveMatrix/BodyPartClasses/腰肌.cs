@@ -1010,7 +1010,7 @@ namespace SlaveMatrix
     	public 腰肌(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 腰肌D e)
     	{
     		ThisType = GetType();
-    		Body = new Difs(Sta.胴体["腰肌"]);
+    		Body = new VariantGrid(Sta.胴体["腰肌"]);
     		PartGroup partGroup = Body[0][0];
     		PartGroup pars2 = partGroup["淫タトゥ"].ToPars();
     		PartGroup pars3 = pars2["ハート"].ToPars();

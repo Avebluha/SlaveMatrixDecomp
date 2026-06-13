@@ -683,7 +683,7 @@ namespace SlaveMatrix
     	public バイブ_ディル(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, バイブ_ディルD e)
     	{
     		ThisType = GetType();
-    		Body = new Difs(Sta.カーソル["ディル"]);
+    		Body = new VariantGrid(Sta.カーソル["ディル"]);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_ヘッド = partGroup["ヘッド"].ToPar();
     		X0Y0_血管1 = partGroup["血管1"].ToPar();

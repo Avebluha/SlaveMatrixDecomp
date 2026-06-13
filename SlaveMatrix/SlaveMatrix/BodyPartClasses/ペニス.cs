@@ -436,7 +436,7 @@ namespace SlaveMatrix
     	{
     		ペニス ペニス2 = this;
     		ThisType = GetType();
-    		Body = new Difs(Sta.カーソル["ペニス"]);
+    		Body = new VariantGrid(Sta.カーソル["ペニス"]);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_陰嚢 = partGroup["陰嚢"].ToPar();
     		X0Y0_陰茎 = partGroup["陰茎"].ToPar();

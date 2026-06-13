@@ -206,7 +206,7 @@ namespace SlaveMatrix
     	{
     		瞼_宇 瞼_宇2 = this;
     		ThisType = GetType();
-    		Body = new Difs(Sta.胴体["エイリアン目左"]);
+    		Body = new VariantGrid(Sta.胴体["エイリアン目左"]);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_目 = partGroup["目"].ToPar();
     		X0Y0_ハイライト = partGroup["ハイライト"].ToPar();

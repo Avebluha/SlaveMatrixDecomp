@@ -135,7 +135,7 @@ namespace SlaveMatrix
     	{
     		ThisType = GetType();
     		MorphVariant morphVariant = new MorphVariant(Sta.性器付["四足潮吹"][0]);
-    		Body = new Difs();
+    		Body = new VariantGrid();
     		Body.Tag = morphVariant.Tag;
     		Body.Add(morphVariant);
     		PartGroup partGroup = Body[0][0];

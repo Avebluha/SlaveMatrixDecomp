@@ -20,7 +20,8 @@ namespace _2DGAMELIB
             .Add("_2DGAMELIB.Pars", typeof(PartGroup))
             .Add("_2DGAMELIB.Out", typeof(CurveOutline))
             .Add("_2DGAMELIB.Joi", typeof(JointPoint))
-            .Add("_2DGAMELIB.Dif", typeof(MorphVariant));
+            .Add("_2DGAMELIB.Dif", typeof(MorphVariant))
+            .Add("_2DGAMELIB.Difs", typeof(VariantGrid));
 
         private static BinaryFormatter NewFormatter()
         {
@@ -36,7 +37,7 @@ namespace _2DGAMELIB
                 Formatting = Newtonsoft.Json.Formatting.Indented,
                 NullValueHandling = NullValueHandling.Ignore
             };
-            settings.Converters.Add(new OrderedDictionaryConverter<string, Difs>());
+            settings.Converters.Add(new OrderedDictionaryConverter<string, VariantGrid>());
             settings.Converters.Add(new OrderedDictionaryConverter<string, object>());
             settings.Converters.Add(new OrderedDictionaryConverter<string, But>());
             settings.Converters.Add(new OrderedDictionaryConverter<string, Lab>());

@@ -86,7 +86,7 @@ namespace SlaveMatrix
     	public 鞭痕(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 鞭痕D e)
     	{
     		ThisType = GetType();
-    		Body = new Difs(Sta.スタンプ["鞭痕"]);
+    		Body = new VariantGrid(Sta.スタンプ["鞭痕"]);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_鞭痕 = partGroup["鞭痕"].ToPar();
     		Body.SetJoints();

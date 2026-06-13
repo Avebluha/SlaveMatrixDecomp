@@ -1037,7 +1037,7 @@ namespace SlaveMatrix
     	{
     		Head 頭2 = this;
     		ThisType = GetType();
-    		Body = new Difs(Sta.胴体["Head"]);
+    		Body = new VariantGrid(Sta.胴体["Head"]);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_Head = partGroup["頭"].ToPar();
     		PartGroup pars2 = partGroup["悪タトゥ"].ToPars();

@@ -587,7 +587,7 @@ namespace SlaveMatrix
     	{
     		ThisType = GetType();
     		MorphVariant morphVariant = new MorphVariant(Sta.胴体["口"][1]);
-    		Body = new Difs();
+    		Body = new VariantGrid();
     		Body.Tag = morphVariant.Tag;
     		Body.Add(morphVariant);
     		PartGroup partGroup = Body[0][0];

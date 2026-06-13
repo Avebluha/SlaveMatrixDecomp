@@ -12,7 +12,7 @@ namespace SlaveMatrix
 
     	public ConnectionInfo ConnectionType;
 
-    	public Difs Body; //本体
+    	public VariantGrid Body; //本体
 
         public static double 肥大mi1 = -5E-07;
 

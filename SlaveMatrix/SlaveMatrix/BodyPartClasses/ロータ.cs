@@ -189,7 +189,7 @@ namespace SlaveMatrix
     	public ロータ(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, ロータD e)
     	{
     		ThisType = GetType();
-    		Body = new Difs(Sta.カーソル["ロータ"]);
+    		Body = new VariantGrid(Sta.カーソル["ロータ"]);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_ロータ = partGroup["ロータ"].ToPar();
     		X0Y0_ロータ線 = partGroup["ロータ線"].ToPar();

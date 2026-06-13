@@ -106,7 +106,7 @@ namespace SlaveMatrix
     	public 飛膜_先(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色)
     	{
     		ThisType = GetType();
-    		Body = new Difs(Sta.腕左["飛膜先"]);
+    		Body = new VariantGrid(Sta.腕左["飛膜先"]);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_飛膜 = partGroup["飛膜"].ToPar();
     		partGroup = Body[0][1];

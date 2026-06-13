@@ -86,7 +86,7 @@ namespace SlaveMatrix
     	public 下着陰核(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 下着陰核D e)
     	{
     		ThisType = GetType();
-    		Body = new Difs(Sta.胴体["下着陰核"]);
+    		Body = new VariantGrid(Sta.胴体["下着陰核"]);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_陰核 = partGroup["陰核"].ToPar();
     		Body.SetJoints();

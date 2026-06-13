@@ -895,7 +895,7 @@ namespace SlaveMatrix
     	{
     		性器_獣 性器_獣2 = this;
     		ThisType = GetType();
-    		Body = new Difs(Sta.性器["四足性器"]);
+    		Body = new VariantGrid(Sta.性器["四足性器"]);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_小陰唇 = partGroup["小陰唇"].ToPar();
     		X0Y0_性器基 = partGroup["性器基"].ToPar();

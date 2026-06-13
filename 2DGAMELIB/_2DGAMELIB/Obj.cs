@@ -11,17 +11,17 @@ namespace _2DGAMELIB
     {
     	public string Tag = "";
 
-    	public OrderedDictionary<string, Difs> Difss = new OrderedDictionary<string, Difs>();
+    	public OrderedDictionary<string, VariantGrid> Difss = new OrderedDictionary<string, VariantGrid>();
 
-    	private Difs r;
+    	private VariantGrid r;
 
     	private JointsD jsd;
 
     	public IEnumerable<string> Keys => Difss.Keys;
 
-    	public IEnumerable<Difs> Values => Difss.Values;
+    	public IEnumerable<VariantGrid> Values => Difss.Values;
 
-    	public Difs this[string Name]
+    	public VariantGrid this[string Name]
     	{
     		get
     		{
@@ -33,7 +33,7 @@ namespace _2DGAMELIB
     		}
     	}
 
-    	public Difs this[int Index]
+    	public VariantGrid this[int Index]
     	{
     		get
     		{
@@ -49,7 +49,7 @@ namespace _2DGAMELIB
     	{
     		set
     		{
-    			foreach (Difs value2 in Difss.Values)
+    			foreach (VariantGrid value2 in Difss.Values)
     			{
     				value2.PositionSize = value;
     			}
@@ -60,7 +60,7 @@ namespace _2DGAMELIB
     	{
     		set
     		{
-    			foreach (Difs value2 in Difss.Values)
+    			foreach (VariantGrid value2 in Difss.Values)
     			{
     				value2.PositionVector = value;
     			}
@@ -71,7 +71,7 @@ namespace _2DGAMELIB
     	{
     		set
     		{
-    			foreach (Difs value2 in Difss.Values)
+    			foreach (VariantGrid value2 in Difss.Values)
     			{
     				value2.AngleBase = value;
     			}
@@ -82,7 +82,7 @@ namespace _2DGAMELIB
     	{
     		set
     		{
-    			foreach (Difs value2 in Difss.Values)
+    			foreach (VariantGrid value2 in Difss.Values)
     			{
     				value2.AngleCont = value;
     			}
@@ -93,7 +93,7 @@ namespace _2DGAMELIB
     	{
     		set
     		{
-    			foreach (Difs value2 in Difss.Values)
+    			foreach (VariantGrid value2 in Difss.Values)
     			{
     				value2.SizeBase = value;
     			}
@@ -104,7 +104,7 @@ namespace _2DGAMELIB
     	{
     		set
     		{
-    			foreach (Difs value2 in Difss.Values)
+    			foreach (VariantGrid value2 in Difss.Values)
     			{
     				value2.SizeCont = value;
     			}
@@ -115,7 +115,7 @@ namespace _2DGAMELIB
     	{
     		set
     		{
-    			foreach (Difs value2 in Difss.Values)
+    			foreach (VariantGrid value2 in Difss.Values)
     			{
     				value2.SizeXBase = value;
     			}
@@ -126,7 +126,7 @@ namespace _2DGAMELIB
     	{
     		set
     		{
-    			foreach (Difs value2 in Difss.Values)
+    			foreach (VariantGrid value2 in Difss.Values)
     			{
     				value2.SizeXCont = value;
     			}
@@ -137,7 +137,7 @@ namespace _2DGAMELIB
     	{
     		set
     		{
-    			foreach (Difs value2 in Difss.Values)
+    			foreach (VariantGrid value2 in Difss.Values)
     			{
     				value2.SizeYBase = value;
     			}
@@ -148,7 +148,7 @@ namespace _2DGAMELIB
     	{
     		set
     		{
-    			foreach (Difs value2 in Difss.Values)
+    			foreach (VariantGrid value2 in Difss.Values)
     			{
     				value2.SizeYCont = value;
     			}
@@ -159,7 +159,7 @@ namespace _2DGAMELIB
     	{
     		set
     		{
-    			foreach (Difs value2 in Difss.Values)
+    			foreach (VariantGrid value2 in Difss.Values)
     			{
     				value2.Dra = value;
     			}
@@ -170,17 +170,17 @@ namespace _2DGAMELIB
     	{
     		set
     		{
-    			foreach (Difs value2 in Difss.Values)
+    			foreach (VariantGrid value2 in Difss.Values)
     			{
     				value2.Hit = value;
     			}
     		}
     	}
 
-    	public Difs JoinRoot => r;
+    	public VariantGrid JoinRoot => r;
     	public IEnumerable<ShapePart> EnumAllPar()
     	{
-    		foreach (Difs value in Difss.Values)
+    		foreach (VariantGrid value in Difss.Values)
     		{
     			foreach (ShapePart item in value.EnumAllPar())
     			{
@@ -191,7 +191,7 @@ namespace _2DGAMELIB
 
     	public Obj SetDefaultR()
     	{
-    		foreach (Difs value in Difss.Values)
+    		foreach (VariantGrid value in Difss.Values)
     		{
     			value.SetDefault();
     		}
@@ -206,24 +206,24 @@ namespace _2DGAMELIB
 
     	public void Draw(RenderArea Are)
     	{
-    		foreach (Difs value in Difss.Values)
+    		foreach (VariantGrid value in Difss.Values)
     		{
     			value.Draw(Are);
     		}
     	}
 
 
-    	private Difs GetJoinRootDifs()
+    	private VariantGrid GetJoinRootDifs()
     	{
-    		Difs[] array = Difss.Values.ToArray();
+    		VariantGrid[] array = Difss.Values.ToArray();
     		if (array.Length <= 1)
     		{
     			return array.FirstOrDefault();
     		}
     		ShapePart[] pa = EnumAllPar().ToArray();
-    		Difs[] array2 = array;
+    		VariantGrid[] array2 = array;
     		Vector2D p;
-    		foreach (Difs difs in array2)
+    		foreach (VariantGrid difs in array2)
     		{
     			if (difs.EnumJoinRoot.All(delegate(ShapePart p0)
     			{
@@ -239,8 +239,8 @@ namespace _2DGAMELIB
 
     	public void SetJoints()
     	{
-    		Difs[] array = Difss.Values.ToArray();
-    		Difs[] array2 = array;
+    		VariantGrid[] array = Difss.Values.ToArray();
+    		VariantGrid[] array2 = array;
     		for (int i = 0; i < array2.Length; i++)
     		{
     			array2[i].SetJoints();
@@ -265,7 +265,7 @@ namespace _2DGAMELIB
  
     	public void Dispose()
     	{
-    		foreach (Difs value in Difss.Values)
+    		foreach (VariantGrid value in Difss.Values)
     		{
     			value.Dispose();
     		}

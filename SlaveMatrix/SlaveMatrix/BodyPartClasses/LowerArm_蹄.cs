@@ -147,7 +147,7 @@ namespace SlaveMatrix
     		LowerArm_蹄 LowerArm_蹄2 = this;
     		ThisType = GetType();
     		MorphVariant morphVariant = new MorphVariant(Sta.腕左["四足LowerArm"][1]);
-    		Body = new Difs();
+    		Body = new VariantGrid();
     		Body.Tag = morphVariant.Tag;
     		Body.Add(morphVariant);
     		PartGroup partGroup = Body[0][0];

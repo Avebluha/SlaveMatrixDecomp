@@ -27,15 +27,15 @@ namespace _2DGAMELIB
     [Serializable]
     public class JointS
     {
-    	public Difs Difs;
+    	public VariantGrid VariantGrid;
 
     	public List<int> Path;
 
     	public int Index;
 
-    	public JointS(Difs Difs, ShapePart ShapePart, int Index)
+    	public JointS(VariantGrid VariantGrid, ShapePart ShapePart, int Index)
     	{
-    		this.Difs = Difs;
+    		this.VariantGrid = VariantGrid;
     		Path = ShapePart.GetPath();
     		this.Index = Index;
     	}

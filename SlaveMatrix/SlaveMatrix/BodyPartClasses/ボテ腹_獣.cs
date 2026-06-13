@@ -161,7 +161,7 @@ namespace SlaveMatrix
     	{
     		ボテ腹_獣 ボテ腹_獣2 = this;
     		ThisType = GetType();
-    		Body = new Difs(Sta.半身["四足ボテ腹"]);
+    		Body = new VariantGrid(Sta.半身["四足ボテ腹"]);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_腹 = partGroup["腹"].ToPar();
     		X0Y0_臍 = partGroup["臍"].ToPar();

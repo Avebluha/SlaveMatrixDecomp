@@ -107,7 +107,7 @@ namespace SlaveMatrix
     	public 顔ハイライト(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 顔ハイライトD e)
     	{
     		ThisType = GetType();
-    		Body = new Difs(Sta.胴体["顔ハイライト左"]);
+    		Body = new VariantGrid(Sta.胴体["顔ハイライト左"]);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_ハイライト1 = partGroup["ハイライト1"].ToPar();
     		X0Y0_ハイライト2 = partGroup["ハイライト2"].ToPar();

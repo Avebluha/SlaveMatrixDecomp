@@ -1271,7 +1271,7 @@ namespace SlaveMatrix
     	public 単瞼(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 単瞼D e)
     	{
     		ThisType = GetType();
-    		Body = new Difs(Sta.胴体["単眼瞼"]);
+    		Body = new VariantGrid(Sta.胴体["単眼瞼"]);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_瞼下 = partGroup["瞼下"].ToPar();
     		X0Y0_瞼上 = partGroup["瞼上"].ToPar();

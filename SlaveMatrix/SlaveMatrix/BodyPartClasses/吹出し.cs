@@ -90,7 +90,7 @@ namespace SlaveMatrix
     	public 吹出し(double DisUnit)
     	{
     		ThisType = GetType();
-    		Body = new Difs(Sta.胴体["吹出し"]);
+    		Body = new VariantGrid(Sta.胴体["吹出し"]);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_吹出し = partGroup["吹出し"].ToPar();
     		Body.SetJoints();

@@ -203,7 +203,7 @@ namespace SlaveMatrix
     	{
     		四足胴 四足胴2 = this;
     		ThisType = GetType();
-    		Body = new Difs(Sta.半身["四足胴"]);
+    		Body = new VariantGrid(Sta.半身["四足胴"]);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_Torso = partGroup["胴"].ToPar();
     		PartGroup pars2 = partGroup["筋肉"].ToPars();

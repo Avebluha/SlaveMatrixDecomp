@@ -7,7 +7,7 @@ using Newtonsoft.Json;
 namespace _2DGAMELIB
 {
     [Serializable]
-    public class Difs
+    public class VariantGrid
     {
     	public string Tag = "";
 
@@ -259,21 +259,21 @@ namespace _2DGAMELIB
     		}
     	}
 
-    	public Difs()
+    	public VariantGrid()
     	{
     	}
 
-    	public Difs(Difs Difs)
+    	public VariantGrid(VariantGrid VariantGrid)
     	{
-    		Copy(Difs);
+    		Copy(VariantGrid);
     	}
 
-    	private void Copy(Difs Difs)
+    	private void Copy(VariantGrid VariantGrid)
     	{
-    		Tag = Difs.Tag;
-    		ValueX = Difs.ValueX;
-    		ValueY = Difs.ValueY;
-    		foreach (MorphVariant dif in Difs.difs)
+    		Tag = VariantGrid.Tag;
+    		ValueX = VariantGrid.ValueX;
+    		ValueY = VariantGrid.ValueY;
+    		foreach (MorphVariant dif in VariantGrid.difs)
     		{
     			difs.Add(new MorphVariant(dif));
     		}

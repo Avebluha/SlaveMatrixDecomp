@@ -219,7 +219,7 @@ namespace SlaveMatrix
     	public 耳_獣(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 耳_獣D e)
     	{
     		ThisType = GetType();
-    		Body = new Difs();
+    		Body = new VariantGrid();
     		Body.Tag = "獣";
     		Body.Add(new MorphVariant(Sta.肢左["耳"][10]));
     		Body.Add(new MorphVariant(Sta.肢左["耳"][11]));

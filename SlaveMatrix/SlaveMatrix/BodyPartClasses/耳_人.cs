@@ -120,7 +120,7 @@ namespace SlaveMatrix
     	public 耳_人(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 耳_人D e)
     	{
     		ThisType = GetType();
-    		Body = new Difs();
+    		Body = new VariantGrid();
     		Body.Tag = "通";
     		Body.Add(new MorphVariant(Sta.肢左["耳"][0]));
     		Body.Add(new MorphVariant(Sta.肢左["耳"][1]));

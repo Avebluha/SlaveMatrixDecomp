@@ -806,7 +806,7 @@ namespace SlaveMatrix
     	public バイブ_デンマ(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, バイブ_デンマD e)
     	{
     		ThisType = GetType();
-    		Body = new Difs(Sta.カーソル["デンマ"]);
+    		Body = new VariantGrid(Sta.カーソル["デンマ"]);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_ヘッド = partGroup["ヘッド"].ToPar();
     		X0Y0_ヘッド線1 = partGroup["ヘッド線1"].ToPar();

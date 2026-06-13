@@ -86,7 +86,7 @@ namespace SlaveMatrix
     	public 衝撃(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 衝撃D e)
     	{
     		ThisType = GetType();
-    		Body = new Difs(Sta.その他["衝撃"]);
+    		Body = new VariantGrid(Sta.その他["衝撃"]);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_衝撃 = partGroup["衝撃"].ToPar();
     		Body.SetJoints();

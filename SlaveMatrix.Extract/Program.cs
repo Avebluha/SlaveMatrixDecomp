@@ -577,24 +577,24 @@ class Program
         return result;
     }
 
-    static JObject ExportDifs(Difs difs)
+    static JObject ExportDifs(VariantGrid VariantGrid)
     {
-        int xCount = difs.CountX;
-        int yCount = difs.CountY;
+        int xCount = VariantGrid.CountX;
+        int yCount = VariantGrid.CountY;
 
         var result = new JObject
         {
-            ["Tag"] = difs.Tag ?? "",
-            ["ValueX"] = difs.ValueX,
-            ["ValueY"] = difs.ValueY,
+            ["Tag"] = VariantGrid.Tag ?? "",
+            ["ValueX"] = VariantGrid.ValueX,
+            ["ValueY"] = VariantGrid.ValueY,
             ["CountX"] = xCount,
             ["CountY"] = yCount,
-            ["Difs"] = new JArray()
+            ["VariantGrid"] = new JArray()
         };
 
         for (int x = 0; x < xCount; x++)
         {
-            var dif = difs[x];
+            var dif = VariantGrid[x];
             var difArr = new JArray();
 
             for (int y = 0; y < dif.Count; y++)
@@ -602,7 +602,7 @@ class Program
                 difArr.Add(ExportPars(dif[y]));
             }
 
-            ((JArray)result["Difs"]).Add(difArr);
+            ((JArray)result["VariantGrid"]).Add(difArr);
         }
 
         return result;

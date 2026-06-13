@@ -86,7 +86,7 @@ namespace SlaveMatrix
     	public キスマーク(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, キスマークD e)
     	{
     		ThisType = GetType();
-    		Body = new Difs(Sta.スタンプ["キスマーク"]);
+    		Body = new VariantGrid(Sta.スタンプ["キスマーク"]);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_キスマーク = partGroup["キスマーク"].ToPar();
     		Body.SetJoints();

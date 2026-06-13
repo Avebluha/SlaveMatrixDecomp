@@ -349,7 +349,7 @@ namespace SlaveMatrix
     	public Cough(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 咳D e)
     	{
     		ThisType = GetType();
-    		Body = new Difs(Sta.胴体["Cough"]);
+    		Body = new VariantGrid(Sta.胴体["Cough"]);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_咳基 = partGroup["咳基"].ToPar();
     		X0Y0_雫1 = partGroup["雫1"].ToPar();

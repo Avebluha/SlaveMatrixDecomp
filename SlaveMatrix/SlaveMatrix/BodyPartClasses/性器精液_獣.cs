@@ -231,7 +231,7 @@ namespace SlaveMatrix
     	public 性器精液_獣(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 性器精液_獣D e)
     	{
     		ThisType = GetType();
-    		Body = new Difs(Sta.性器付["四足性器精液垂れ"]);
+    		Body = new VariantGrid(Sta.性器付["四足性器精液垂れ"]);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_精液 = partGroup["精液"].ToPar();
     		X0Y0_血液1 = partGroup["血液1"].ToPar();
