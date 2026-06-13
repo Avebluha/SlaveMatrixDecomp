@@ -1,9 +1,8 @@
-2DGAMELIB/obj/
-SlaveMatrix/obj/
-2DGAMELIB/bin/
-SlaveMatrix/bin/
+**/bin/
+**/obj/
 .vs/
 .idea/
 Config.ini
 game_folder/save/*
 /game_folder/save
+extracted/
