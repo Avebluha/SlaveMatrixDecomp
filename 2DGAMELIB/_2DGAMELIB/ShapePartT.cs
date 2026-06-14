@@ -254,7 +254,7 @@ namespace _2DGAMELIB
             }
         }
 
-    	public Vector2D_2 GetStringRect(double Unit, Graphics Graphics)
+    	public double[] GetStringRect(double Unit, Graphics Graphics)
     	{
     		double num = Unit * base.GetSize();
 
@@ -264,7 +264,6 @@ namespace _2DGAMELIB
                 EditF = false;
     			EditTS = false;
     		}
-
     		CharacterRange[] crr = new CharacterRange[]{
 				new CharacterRange(0, Text.Length)
 			};
@@ -281,17 +280,20 @@ namespace _2DGAMELIB
                 .MeasureCharacterRanges(Text ?? string.Empty,  font, layoutRect, stringformat)[0]
                 .GetBounds(Graphics);
 
-            return new Vector2D_2(
-                new Vector2D(bounds.X / num, bounds.Y / num),
-                new Vector2D(bounds.Width / num, bounds.Height / num));
+            return new double[4]{
+                bounds.X / num, 
+                bounds.Y / num,
+                bounds.Width / num, 
+                bounds.Height / num
+            };
         }
 
         public Vector2D[] GetStringRectPoints(double Unit, Graphics Graphics)
     	{
-            Vector2D_2 stringRect = GetStringRect(Unit, Graphics);
+            double[] stringRect = GetStringRect(Unit, Graphics);
 
-            Vector2D pos = stringRect.v1;
-            Vector2D size = stringRect.v2;
+            Vector2D pos = new Vector2D(stringRect[0], stringRect[1]);
+            Vector2D size = new Vector2D(stringRect[2], stringRect[3]);
 
             size.X *= 1.07f;
 

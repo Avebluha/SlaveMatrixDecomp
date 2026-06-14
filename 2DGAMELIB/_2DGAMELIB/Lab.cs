@@ -97,16 +97,15 @@ namespace _2DGAMELIB
     		if (!string.IsNullOrEmpty(_shapePartT.Text))
     		{
     			_shapePartT.SetRectSize(new Vector2D(Width, 10.0));
-    			Vector2D_2 stringRect = _shapePartT.GetStringRect(Are.DisplayUnitScale, Are.DisplayGraphics);
-    			double x = ((stringRect.v2.X > Min) ? stringRect.v2.X : Min) + 0.07;
-    			_shapePartT.SetRectSize(new Vector2D(x, stringRect.v2.Y));
+    			double[] stringRect = _shapePartT.GetStringRect(Are.DisplayUnitScale, Are.DisplayGraphics);
+    			double x = ((stringRect[2] > Min) ? stringRect[2] : Min) + 0.07;
+    			_shapePartT.SetRectSize(new Vector2D(x, stringRect[3]));
     		}
     		else
     		{
     			double x2 = Min + 0.07;
     			_shapePartT.SetRectSize(new Vector2D(x2, Min));
     		}
-
 
     		_shapePartT.GetOP()[0].ps[0] = new Vector2D(0.0, 0.0);
     		_shapePartT.GetOP()[0].ps[1] = new Vector2D(_shapePartT.GetRectSize().X, 0.0);

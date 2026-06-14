@@ -280,7 +280,8 @@ namespace SlaveMatrix
 
     	private void SetButPos()
     	{
-    		yp.SetPositionBase(new Vector2D(yp.GetPositionBase().X, Mai.ShapePartT.ToGlobal(Mai.ShapePartT.GetStringRect(Are.UnitScale, Are.DisplayGraphics).v2).Y + 0.0025));
+			double[] rect = Mai.ShapePartT.GetStringRect(Are.UnitScale, Are.DisplayGraphics);
+    		yp.SetPositionBase(new Vector2D(yp.GetPositionBase().X, Mai.ShapePartT.ToGlobal(new Vector2D(rect[2], rect[3])).Y + 0.0025));
     		np.SetPositionBase(new Vector2D(np.GetPositionBase().X, yp.ToGlobal(yp.GetOP().Last().ps.Last()).Y + 0.0025));
     	}
 
