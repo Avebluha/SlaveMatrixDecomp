@@ -7,8 +7,10 @@ using System.IO;
 namespace _2DGAMELIB
 {
     [Serializable]
-    public class BodyTemplate
+    public class BodyTemplate 
     {
+	    public string Tag = ""; // I didn't remove this, but it has been removed on merging my changes? What? - REDCODE 
+	    
     	public OrderedDictionary<string, VariantGrid> Difss = new OrderedDictionary<string, VariantGrid>();
 
     	private VariantGrid r;
