@@ -7,7 +7,7 @@ namespace SlaveMatrix.GameClasses
         public static ChestD GetChestR()
         {
             ChestD obj = Uni.Chest();
-            Sta.SetValuesD(value: RNG.XS.NextDouble(), src: obj.EnumEleD(), s: "バスト");
+            GlobalState.SetValuesD(value: Rng.XS.NextDouble(), src: obj.EnumEleD(), s: "バスト");
             return obj;
         }
 
@@ -15,15 +15,15 @@ namespace SlaveMatrix.GameClasses
         {
             HeadD obj = Uni.頭().SetRandom();
             基髪D 基髪D2 = (基髪D)obj.基髪_接続[0];
-            EleD eleD = Get後髪0R();
-            基髪D2.後髪接続(eleD);
-            if ((eleD is BackHair0_ジグD || eleD is BackHair0_ハネD || eleD is BackHair0_パツD || eleD is BackHair0_カルD || eleD is BackHair0_肢系D) && RNG.XS.NextBool())
+            ElementData elementData = Get後髪0R();
+            基髪D2.後髪接続(elementData);
+            if ((elementData is BackHair0_ジグD || elementData is BackHair0_ハネD || elementData is BackHair0_パツD || elementData is BackHair0_カルD || elementData is BackHair0_肢系D) && Rng.XS.NextBool())
             {
                 基髪D2.後髪接続(Get後髪1R());
             }
-            eleD = Get横髪R(右: false);
-            基髪D2.横髪左接続(eleD);
-            基髪D2.横髪右接続(eleD.Get逆());
+            elementData = Get横髪R(右: false);
+            基髪D2.横髪左接続(elementData);
+            基髪D2.横髪右接続(elementData.Get逆());
             基髪D2.前髪接続(Get前髪R());
             return obj;
         }
@@ -32,22 +32,22 @@ namespace SlaveMatrix.GameClasses
         {
             HeadD obj = Uni.頭().SetRandom();
             基髪D 基髪D2 = (基髪D)obj.基髪_接続[0];
-            EleD eleD = Get後髪0R();
-            基髪D2.後髪接続(eleD);
-            if ((eleD is BackHair0_ジグD || eleD is BackHair0_ハネD || eleD is BackHair0_パツD || eleD is BackHair0_カルD || eleD is BackHair0_肢系D) && RNG.XS.NextBool())
+            ElementData elementData = Get後髪0R();
+            基髪D2.後髪接続(elementData);
+            if ((elementData is BackHair0_ジグD || elementData is BackHair0_ハネD || elementData is BackHair0_パツD || elementData is BackHair0_カルD || elementData is BackHair0_肢系D) && Rng.XS.NextBool())
             {
                 基髪D2.後髪接続(Get後髪1R());
             }
-            eleD = Get横髪R(右: false);
-            基髪D2.横髪左接続(eleD);
-            基髪D2.横髪右接続(eleD.Get逆());
+            elementData = Get横髪R(右: false);
+            基髪D2.横髪左接続(elementData);
+            基髪D2.横髪右接続(elementData.Get逆());
             基髪D2.前髪接続(Get前髪R1());
             return obj;
         }
 
         public static 双目D Get双眼R(bool 右)
         {
-            switch (RNG.XS.NextM(3))
+            switch (Rng.XS.NextM(3))
             {
                 case 0:
                     {
@@ -116,27 +116,27 @@ namespace SlaveMatrix.GameClasses
             return obj;
         }
 
-        public static EleD Get鼻R()
+        public static ElementData Get鼻R()
         {
-            if (RNG.XS.NextM(1) == 0)
+            if (Rng.XS.NextM(1) == 0)
             {
                 return Uni.人鼻D();
             }
             return Uni.獣鼻D();
         }
 
-        public static EleD[] Get口R()
+        public static ElementData[] Get口R()
         {
-            if (RNG.XS.NextM(1) == 0)
+            if (Rng.XS.NextM(1) == 0)
             {
                 return Uni.人口D();
             }
             return Uni.裂口D();
         }
 
-        public static EleD Get後髪0R()
+        public static ElementData Get後髪0R()
         {
-            return RNG.XS.NextM(20) switch
+            return Rng.XS.NextM(20) switch
             {
                 0 => new BackHair0_ジグD().SetRandom(),
                 1 => new BackHair0_ハネD().SetRandom(),
@@ -162,9 +162,9 @@ namespace SlaveMatrix.GameClasses
             };
         }
 
-        public static EleD Get後髪1R()
+        public static ElementData Get後髪1R()
         {
-            return RNG.XS.NextM(8) switch
+            return Rng.XS.NextM(8) switch
             {
                 0 => new BackHair1_結1ジグD().SetRandom(),
                 1 => new BackHair1_結1ハネD().SetRandom(),
@@ -178,9 +178,9 @@ namespace SlaveMatrix.GameClasses
             };
         }
 
-        public static EleD Get横髪R(bool 右)
+        public static ElementData Get横髪R(bool 右)
         {
-            return RNG.XS.NextM(5) switch
+            return Rng.XS.NextM(5) switch
             {
                 0 => new SideHair_ジグD
                 {
@@ -209,9 +209,9 @@ namespace SlaveMatrix.GameClasses
             };
         }
 
-        public static EleD Get前髪R()
+        public static ElementData Get前髪R()
         {
-            return RNG.XS.NextM(18) switch
+            return Rng.XS.NextM(18) switch
             {
                 0 => new 前髪_ジグD().SetRandom(),
                 1 => new 前髪_ジグ中寄D().SetRandom(),
@@ -235,9 +235,9 @@ namespace SlaveMatrix.GameClasses
             };
         }
 
-        public static EleD Get前髪R1()
+        public static ElementData Get前髪R1()
         {
-            return RNG.XS.NextM(12) switch
+            return Rng.XS.NextM(12) switch
             {
                 0 => new 前髪_ジグ分けD().SetRandom(),
                 1 => new 前髪_横流しD().SetRandom(),
@@ -254,9 +254,9 @@ namespace SlaveMatrix.GameClasses
             };
         }
 
-        public static EleD Get花R(bool 右)
+        public static ElementData Get花R(bool 右)
         {
-            if (RNG.XS.NextM(1) == 0)
+            if (Rng.XS.NextM(1) == 0)
             {
                 return new 花_薔D
                 {
@@ -354,8 +354,8 @@ namespace SlaveMatrix.GameClasses
 
         public static void Set口R(this HeadD 頭)
         {
-            EleD[] array = Get口R();
-            foreach (EleD e in array)
+            ElementData[] array = Get口R();
+            foreach (ElementData e in array)
             {
                 頭.口接続(e);
             }
@@ -363,8 +363,8 @@ namespace SlaveMatrix.GameClasses
 
         public static void Set口人(this HeadD 頭)
         {
-            EleD[] array = Uni.人口D();
-            foreach (EleD e in array)
+            ElementData[] array = Uni.人口D();
+            foreach (ElementData e in array)
             {
                 頭.口接続(e);
             }
@@ -372,8 +372,8 @@ namespace SlaveMatrix.GameClasses
 
         public static void Set口裂(this HeadD 頭)
         {
-            EleD[] array = Uni.裂口D();
-            foreach (EleD e in array)
+            ElementData[] array = Uni.裂口D();
+            foreach (ElementData e in array)
             {
                 頭.口接続(e);
             }

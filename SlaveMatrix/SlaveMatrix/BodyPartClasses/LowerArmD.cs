@@ -4,11 +4,11 @@ using System.Collections.Generic;
 namespace SlaveMatrix
 {
     [Serializable]
-    public class LowerArmD : EleD
+    public class LowerArmD : ElementData
     {
-    	public List<EleD> 手_接続 = new List<EleD>();
+    	public List<ElementData> 手_接続 = new List<ElementData>();
 
-    	public virtual void 手接続(EleD e)
+    	public virtual void 手接続(ElementData e)
     	{
     	}
     }

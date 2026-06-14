@@ -27,7 +27,7 @@ namespace SlaveMatrix
     	{
     		if (!c.body_tree.半身_接続.IsEleD<単足_植D>())
     		{
-    			return RNG.XS.NextBool();
+    			return Rng.XS.NextBool();
     		}
     		return true;
     	}
@@ -39,7 +39,7 @@ namespace SlaveMatrix
     			腿_人D eleD;
     			if (!c.body_tree.半身_接続.IsEleD<長物_魚D>() && !c.body_tree.半身_接続.IsEleD<長物_鯨D>() && !c.body_tree.半身_接続.IsEleD<長物_蛇D>() && !c.body_tree.半身_接続.IsEleD<長物_蟲D>() && !c.body_tree.半身_接続.IsEleD<多足_蛸D>() && !c.body_tree.半身_接続.IsEleD<多足_蜘D>() && !c.body_tree.半身_接続.IsEleD<単足_粘D>() && !c.body_tree.腿左_接続.IsEleD<尾_魚D>() && !c.body_tree.腿左_接続.IsEleD<触手_犬D>() && ((eleD = c.body_tree.腿左_接続.GetEleD<腿_人D>()) == null || (!eleD.植性_葉1_表示 && !eleD.植性_葉2_表示 && !eleD.植性_葉3_表示)))
     			{
-    				return RNG.XS.NextBool();
+    				return Rng.XS.NextBool();
     			}
     			return true;
     		}
@@ -55,7 +55,7 @@ namespace SlaveMatrix
     	{
     		髪留2情報 @default = 髪留2情報.GetDefault();
     		髪留2情報 横髪 = 髪留2情報.GetDefault();
-    		switch (RNG.XS.Next(3))
+    		switch (Rng.XS.Next(3))
     		{
     		case 0:
     			@default.髪留左.色.SetRandom();
@@ -92,11 +92,11 @@ namespace SlaveMatrix
 
     	public static IEnumerable<object> Getビキニ(CharacterData c, bool t)
     	{
-    		Col.GetRandomClothesColor(out var c0);
-    		Col.GetRandomClothesColor(out var c1);
-    		Col.GetRandomClothesColor(out var c2);
-    		bool e = RNG.XS.NextBool();
-    		if (RNG.XS.NextBool())
+    		ColorHelper.GetRandomClothesColor(out var c0);
+    		ColorHelper.GetRandomClothesColor(out var c1);
+    		ColorHelper.GetRandomClothesColor(out var c2);
+    		bool e = Rng.XS.NextBool();
+    		if (Rng.XS.NextBool())
     		{
     			if (t)
     			{
@@ -186,12 +186,12 @@ namespace SlaveMatrix
 
     	public static IEnumerable<object> Getランジェリー(CharacterData c, bool t, bool a)
     	{
-    		Col.GetRandomClothesColor(a ? RNG.XS.Next(32, 256) : 255, out var c0);
-    		Col.GetRandomClothesColor(a ? RNG.XS.Next(32, 256) : 255, out var c1);
-    		Col.GetRandomClothesColor(a ? RNG.XS.Next(32, 256) : 255, out var c2);
-    		Col.GetRandomClothesColor(a ? RNG.XS.Next(32, 256) : 255, out var c3);
-    		Col.GetRandomClothesColor(a ? RNG.XS.Next(32, 256) : 255, out var c4);
-    		Col.GetRandomClothesColor(a ? RNG.XS.Next(32, 256) : 255, out var c5);
+    		ColorHelper.GetRandomClothesColor(a ? Rng.XS.Next(32, 256) : 255, out var c0);
+    		ColorHelper.GetRandomClothesColor(a ? Rng.XS.Next(32, 256) : 255, out var c1);
+    		ColorHelper.GetRandomClothesColor(a ? Rng.XS.Next(32, 256) : 255, out var c2);
+    		ColorHelper.GetRandomClothesColor(a ? Rng.XS.Next(32, 256) : 255, out var c3);
+    		ColorHelper.GetRandomClothesColor(a ? Rng.XS.Next(32, 256) : 255, out var c4);
+    		ColorHelper.GetRandomClothesColor(a ? Rng.XS.Next(32, 256) : 255, out var c5);
     		if (t)
     		{
     			下着T_ブラ情報 @default = 下着T_ブラ情報.GetDefault();
@@ -241,7 +241,7 @@ namespace SlaveMatrix
     	public static IEnumerable<object> Getピアス(CharacterData c)
     	{
     		ピアス情報 ピアス中 = ピアス情報.GetDefault();
-    		ピアス中.色.ピアス = (RNG.XS.NextBool() ? Color.Gold : Color.Silver);
+    		ピアス中.色.ピアス = (Rng.XS.NextBool() ? Color.Gold : Color.Silver);
     		ピアス中.色.SetColor2();
     		yield return ピアス中;
     		ピアス情報 @default = ピアス情報.GetDefault();
@@ -275,7 +275,7 @@ namespace SlaveMatrix
     				上着B_前掛け情報 default2 = 上着B_前掛け情報.GetDefault();
     				default2.色.生地 = ドレス首.色.生地;
     				default2.色.縁 = ドレス首.色.縁;
-    				default2.色.紐 = Col.Black;
+    				default2.色.紐 = ColorHelper.Black;
     				default2.色.SetColor2();
     				yield return default2;
     			}
@@ -284,7 +284,7 @@ namespace SlaveMatrix
     				上着B_クロス情報 default3 = 上着B_クロス情報.GetDefault();
     				default3.中 = false;
     				default3.色.生地1 = ドレス首.色.生地;
-    				default3.色.生地2 = Col.Black;
+    				default3.色.生地2 = ColorHelper.Black;
     				default3.色.SetColor2();
     				yield return default3;
     			}
@@ -299,11 +299,11 @@ namespace SlaveMatrix
 
     	public static IEnumerable<object> Getヴィオラ服1(CharacterData c)
     	{
-    		Col.GetRandomClothesColor(out var c0);
-    		Col.GetRandomClothesColor(out var c1);
-    		Col.GetRandomClothesColor(out var c2);
-    		Col.GetRandomClothesColor(out var c3);
-    		Col.GetRandomClothesColor(out var c4);
+    		ColorHelper.GetRandomClothesColor(out var c0);
+    		ColorHelper.GetRandomClothesColor(out var c1);
+    		ColorHelper.GetRandomClothesColor(out var c2);
+    		ColorHelper.GetRandomClothesColor(out var c3);
+    		ColorHelper.GetRandomClothesColor(out var c4);
     		ドレス首情報 @default = ドレス首情報.GetDefault();
     		@default.色.生地 = c0;
     		@default.色.縁 = c2;
@@ -365,22 +365,22 @@ namespace SlaveMatrix
 
     	public static IEnumerable<object> Get奴隷服(CharacterData c, bool b, bool r, bool a)
     	{
-    		Color c0 = Col.Empty;
-    		Color c1 = Col.Empty;
-    		Color c2 = Col.Empty;
+    		Color c0 = ColorHelper.Empty;
+    		Color c1 = ColorHelper.Empty;
+    		Color c2 = ColorHelper.Empty;
     		if (r)
     		{
-    			Col.GetRandomClothesColor(a ? RNG.XS.Next(32, 256) : 255, out c0);
-    			Col.GetRandomClothesColor(a ? RNG.XS.Next(32, 256) : 255, out c1);
-    			Col.GetRandomClothesColor(a ? RNG.XS.Next(32, 256) : 255, out c2);
+    			ColorHelper.GetRandomClothesColor(a ? Rng.XS.Next(32, 256) : 255, out c0);
+    			ColorHelper.GetRandomClothesColor(a ? Rng.XS.Next(32, 256) : 255, out c1);
+    			ColorHelper.GetRandomClothesColor(a ? Rng.XS.Next(32, 256) : 255, out c2);
     		}
     		if (b && c.Is下着ボトム条件())
     		{
-    			if (r && RNG.XS.NextBool())
+    			if (r && Rng.XS.NextBool())
     			{
-    				Col.GetRandomClothesColor(a ? RNG.XS.Next(32, 256) : 255, out var ret);
-    				Col.GetRandomClothesColor(a ? RNG.XS.Next(32, 256) : 255, out var ret2);
-    				Col.GetRandomClothesColor(a ? RNG.XS.Next(32, 256) : 255, out var ret3);
+    				ColorHelper.GetRandomClothesColor(a ? Rng.XS.Next(32, 256) : 255, out var ret);
+    				ColorHelper.GetRandomClothesColor(a ? Rng.XS.Next(32, 256) : 255, out var ret2);
+    				ColorHelper.GetRandomClothesColor(a ? Rng.XS.Next(32, 256) : 255, out var ret3);
     				下着B_ノーマル情報 下着B_ノーマル情報2 = ((!c.Is紐付き条件()) ? 下着B_ノーマル情報.Getランジェリー() : 下着B_ノーマル情報.Getランジェリー紐付き());
     				下着B_ノーマル情報2.色.生地 = c0;
     				下着B_ノーマル情報2.色.縁 = c2;
@@ -410,7 +410,7 @@ namespace SlaveMatrix
     				yield return 下着B_ノーマル情報3;
     			}
     		}
-    		if (RNG.XS.NextBool())
+    		if (Rng.XS.NextBool())
     		{
     			下着T_クロス情報 @default = 下着T_クロス情報.GetDefault();
     			if (r)
@@ -424,7 +424,7 @@ namespace SlaveMatrix
     		else
     		{
     			下着T_チューブ情報 default2 = 下着T_チューブ情報.GetDefault();
-    			default2.縁 = RNG.XS.NextBool();
+    			default2.縁 = Rng.XS.NextBool();
     			if (r)
     			{
     				default2.色.生地 = c0;
@@ -481,11 +481,11 @@ namespace SlaveMatrix
     	public static Unit Change衣装(this Unit u)
     	{
     		int num = 0;
-    		if (Sta.GameData.ヴィオラ服)
+    		if (GlobalState.GameData.ヴィオラ服)
     		{
     			do
     			{
-    				num = RNG.XS.Next(10);
+    				num = Rng.XS.Next(10);
     			}
     			while (u.着衣番号 == num);
     		}
@@ -493,7 +493,7 @@ namespace SlaveMatrix
     		{
     			do
     			{
-    				num = RNG.XS.Next(8);
+    				num = Rng.XS.Next(8);
     			}
     			while (u.着衣番号 == num);
     		}

@@ -4,9 +4,9 @@ using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
-    public class 尾 : Ele
+    public class 尾 : Element
     {
-    	public virtual IEnumerable<Par> Enum軸()
+    	public virtual IEnumerable<ShapePart> Enum軸()
     	{
     		yield break;
     	}

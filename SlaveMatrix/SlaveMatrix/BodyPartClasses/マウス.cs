@@ -3,81 +3,81 @@ using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
-    public class マウス : Ele
+    public class マウス : Element
     {
-    	public Par X0Y0_上唇;
+    	public ShapePart X0Y0_上唇;
 
-    	public Par X0Y0_下唇;
+    	public ShapePart X0Y0_下唇;
 
-    	public Par X1Y0_上唇;
+    	public ShapePart X1Y0_上唇;
 
-    	public Par X1Y0_下唇;
+    	public ShapePart X1Y0_下唇;
 
-    	public Par X2Y0_舌;
+    	public ShapePart X2Y0_舌;
 
-    	public Par X2Y0_上唇;
+    	public ShapePart X2Y0_上唇;
 
-    	public Par X2Y0_下唇;
+    	public ShapePart X2Y0_下唇;
 
-    	public Par X3Y0_舌;
+    	public ShapePart X3Y0_舌;
 
-    	public Par X3Y0_上唇;
+    	public ShapePart X3Y0_上唇;
 
-    	public Par X3Y0_下唇;
+    	public ShapePart X3Y0_下唇;
 
-    	public Par X3Y1_舌;
+    	public ShapePart X3Y1_舌;
 
-    	public Par X3Y1_上唇;
+    	public ShapePart X3Y1_上唇;
 
-    	public Par X3Y1_下唇;
+    	public ShapePart X3Y1_下唇;
 
-    	public Par X3Y2_舌;
+    	public ShapePart X3Y2_舌;
 
-    	public Par X3Y2_上唇;
+    	public ShapePart X3Y2_上唇;
 
-    	public Par X3Y2_下唇;
+    	public ShapePart X3Y2_下唇;
 
-    	public Par X3Y3_舌;
+    	public ShapePart X3Y3_舌;
 
-    	public Par X3Y3_上唇;
+    	public ShapePart X3Y3_上唇;
 
-    	public Par X3Y3_下唇;
+    	public ShapePart X3Y3_下唇;
 
-    	public Par X3Y4_舌;
+    	public ShapePart X3Y4_舌;
 
-    	public Par X3Y4_上唇;
+    	public ShapePart X3Y4_上唇;
 
-    	public Par X3Y4_下唇;
+    	public ShapePart X3Y4_下唇;
 
-    	public Par X4Y0_舌;
+    	public ShapePart X4Y0_舌;
 
-    	public Par X4Y0_上唇;
+    	public ShapePart X4Y0_上唇;
 
-    	public Par X4Y0_下唇;
+    	public ShapePart X4Y0_下唇;
 
-    	public Par X4Y1_舌;
+    	public ShapePart X4Y1_舌;
 
-    	public Par X4Y1_上唇;
+    	public ShapePart X4Y1_上唇;
 
-    	public Par X4Y1_下唇;
+    	public ShapePart X4Y1_下唇;
 
-    	public Par X4Y2_舌;
+    	public ShapePart X4Y2_舌;
 
-    	public Par X4Y2_上唇;
+    	public ShapePart X4Y2_上唇;
 
-    	public Par X4Y2_下唇;
+    	public ShapePart X4Y2_下唇;
 
-    	public Par X4Y3_舌;
+    	public ShapePart X4Y3_舌;
 
-    	public Par X4Y3_上唇;
+    	public ShapePart X4Y3_上唇;
 
-    	public Par X4Y3_下唇;
+    	public ShapePart X4Y3_下唇;
 
-    	public Par X4Y4_舌;
+    	public ShapePart X4Y4_舌;
 
-    	public Par X4Y4_上唇;
+    	public ShapePart X4Y4_上唇;
 
-    	public Par X4Y4_下唇;
+    	public ShapePart X4Y4_下唇;
 
     	public ColorD 舌CD;
 
@@ -333,57 +333,57 @@ namespace SlaveMatrix
     	public マウス(double DisUnit, 配色指定 配色指定, 主人公配色 体配色, ModeEventDispatcher Med, マウスD e)
     	{
     		ThisType = GetType();
-    		Body = new Difs(Sta.カーソル["マウス"]);
-    		Pars pars = Body[0][0];
-    		X0Y0_上唇 = pars["上唇"].ToPar();
-    		X0Y0_下唇 = pars["下唇"].ToPar();
-    		pars = Body[1][0];
-    		X1Y0_上唇 = pars["上唇"].ToPar();
-    		X1Y0_下唇 = pars["下唇"].ToPar();
-    		pars = Body[2][0];
-    		X2Y0_舌 = pars["舌"].ToPar();
-    		X2Y0_上唇 = pars["上唇"].ToPar();
-    		X2Y0_下唇 = pars["下唇"].ToPar();
-    		pars = Body[3][0];
-    		X3Y0_舌 = pars["舌"].ToPar();
-    		X3Y0_上唇 = pars["上唇"].ToPar();
-    		X3Y0_下唇 = pars["下唇"].ToPar();
-    		pars = Body[3][1];
-    		X3Y1_舌 = pars["舌"].ToPar();
-    		X3Y1_上唇 = pars["上唇"].ToPar();
-    		X3Y1_下唇 = pars["下唇"].ToPar();
-    		pars = Body[3][2];
-    		X3Y2_舌 = pars["舌"].ToPar();
-    		X3Y2_上唇 = pars["上唇"].ToPar();
-    		X3Y2_下唇 = pars["下唇"].ToPar();
-    		pars = Body[3][3];
-    		X3Y3_舌 = pars["舌"].ToPar();
-    		X3Y3_上唇 = pars["上唇"].ToPar();
-    		X3Y3_下唇 = pars["下唇"].ToPar();
-    		pars = Body[3][4];
-    		X3Y4_舌 = pars["舌"].ToPar();
-    		X3Y4_上唇 = pars["上唇"].ToPar();
-    		X3Y4_下唇 = pars["下唇"].ToPar();
-    		pars = Body[4][0];
-    		X4Y0_舌 = pars["舌"].ToPar();
-    		X4Y0_上唇 = pars["上唇"].ToPar();
-    		X4Y0_下唇 = pars["下唇"].ToPar();
-    		pars = Body[4][1];
-    		X4Y1_舌 = pars["舌"].ToPar();
-    		X4Y1_上唇 = pars["上唇"].ToPar();
-    		X4Y1_下唇 = pars["下唇"].ToPar();
-    		pars = Body[4][2];
-    		X4Y2_舌 = pars["舌"].ToPar();
-    		X4Y2_上唇 = pars["上唇"].ToPar();
-    		X4Y2_下唇 = pars["下唇"].ToPar();
-    		pars = Body[4][3];
-    		X4Y3_舌 = pars["舌"].ToPar();
-    		X4Y3_上唇 = pars["上唇"].ToPar();
-    		X4Y3_下唇 = pars["下唇"].ToPar();
-    		pars = Body[4][4];
-    		X4Y4_舌 = pars["舌"].ToPar();
-    		X4Y4_上唇 = pars["上唇"].ToPar();
-    		X4Y4_下唇 = pars["下唇"].ToPar();
+    		Body = new VariantGrid(GlobalState.カーソル["マウス"]);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_上唇 = partGroup["上唇"].ToPar();
+    		X0Y0_下唇 = partGroup["下唇"].ToPar();
+    		partGroup = Body[1][0];
+    		X1Y0_上唇 = partGroup["上唇"].ToPar();
+    		X1Y0_下唇 = partGroup["下唇"].ToPar();
+    		partGroup = Body[2][0];
+    		X2Y0_舌 = partGroup["舌"].ToPar();
+    		X2Y0_上唇 = partGroup["上唇"].ToPar();
+    		X2Y0_下唇 = partGroup["下唇"].ToPar();
+    		partGroup = Body[3][0];
+    		X3Y0_舌 = partGroup["舌"].ToPar();
+    		X3Y0_上唇 = partGroup["上唇"].ToPar();
+    		X3Y0_下唇 = partGroup["下唇"].ToPar();
+    		partGroup = Body[3][1];
+    		X3Y1_舌 = partGroup["舌"].ToPar();
+    		X3Y1_上唇 = partGroup["上唇"].ToPar();
+    		X3Y1_下唇 = partGroup["下唇"].ToPar();
+    		partGroup = Body[3][2];
+    		X3Y2_舌 = partGroup["舌"].ToPar();
+    		X3Y2_上唇 = partGroup["上唇"].ToPar();
+    		X3Y2_下唇 = partGroup["下唇"].ToPar();
+    		partGroup = Body[3][3];
+    		X3Y3_舌 = partGroup["舌"].ToPar();
+    		X3Y3_上唇 = partGroup["上唇"].ToPar();
+    		X3Y3_下唇 = partGroup["下唇"].ToPar();
+    		partGroup = Body[3][4];
+    		X3Y4_舌 = partGroup["舌"].ToPar();
+    		X3Y4_上唇 = partGroup["上唇"].ToPar();
+    		X3Y4_下唇 = partGroup["下唇"].ToPar();
+    		partGroup = Body[4][0];
+    		X4Y0_舌 = partGroup["舌"].ToPar();
+    		X4Y0_上唇 = partGroup["上唇"].ToPar();
+    		X4Y0_下唇 = partGroup["下唇"].ToPar();
+    		partGroup = Body[4][1];
+    		X4Y1_舌 = partGroup["舌"].ToPar();
+    		X4Y1_上唇 = partGroup["上唇"].ToPar();
+    		X4Y1_下唇 = partGroup["下唇"].ToPar();
+    		partGroup = Body[4][2];
+    		X4Y2_舌 = partGroup["舌"].ToPar();
+    		X4Y2_上唇 = partGroup["上唇"].ToPar();
+    		X4Y2_下唇 = partGroup["下唇"].ToPar();
+    		partGroup = Body[4][3];
+    		X4Y3_舌 = partGroup["舌"].ToPar();
+    		X4Y3_上唇 = partGroup["上唇"].ToPar();
+    		X4Y3_下唇 = partGroup["下唇"].ToPar();
+    		partGroup = Body[4][4];
+    		X4Y4_舌 = partGroup["舌"].ToPar();
+    		X4Y4_上唇 = partGroup["上唇"].ToPar();
+    		X4Y4_下唇 = partGroup["下唇"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;

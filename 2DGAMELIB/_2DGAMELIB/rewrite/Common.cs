@@ -196,17 +196,17 @@ namespace _2DGAMELIB
 
         public static Vector2D TransformCoordinateBP(this Vector2D coord, Vector2D BasePoint, MatrixD transform)
         {
-            Vec.Subtract(ref coord, ref BasePoint, out coord);
+            VectorMath.Subtract(ref coord, ref BasePoint, out coord);
             TransformCoordinate(ref coord, ref transform, out var result);
-            Vec.Add(ref result, ref BasePoint, out result);
+            VectorMath.Add(ref result, ref BasePoint, out result);
             return result;
         }
 
         public static Vector2D TransformCoordinateBP(ref Vector2D coord, ref Vector2D BasePoint, ref MatrixD transform)
         {
-            Vec.Subtract(ref coord, ref BasePoint, out var r);
+            VectorMath.Subtract(ref coord, ref BasePoint, out var r);
             TransformCoordinate(ref r, ref transform, out var result);
-            Vec.Add(ref result, ref BasePoint, out result);
+            VectorMath.Add(ref result, ref BasePoint, out result);
             return result;
         }
 
@@ -214,20 +214,20 @@ namespace _2DGAMELIB
 
 
 
-
-        public static Pars ToPars(this object obj)
+ /*
+        public static PartGroup ToPars(this object obj)
     	{
-    		return (Pars)obj;
+    		return (PartGroup)obj;
     	}
 
-    	public static ParT ToParT(this object obj)
+    	public static ShapePartT ToParT(this object obj)
     	{
-    		return (ParT)obj;
+    		return (ShapePartT)obj;
     	}
 
-    	public static Par ToPar(this object obj)
+    	public static ShapePart ToPar(this object obj)
     	{
-    		return (Par)obj;
+    		return (ShapePart)obj;
     	}
 
     	public static Pen Copy(this Pen Pen)
@@ -299,5 +299,7 @@ namespace _2DGAMELIB
     	{
     		return new StringFormat(StringFormat);
     	}
+
+        */
     }
 }

@@ -4,41 +4,41 @@ namespace SlaveMatrix
 {
     public class 性器精液_獣 : 性器精液
     {
-    	public Par X0Y0_精液;
+    	public ShapePart X0Y0_精液;
 
-    	public Par X0Y0_血液1;
+    	public ShapePart X0Y0_血液1;
 
-    	public Par X0Y0_血液2;
+    	public ShapePart X0Y0_血液2;
 
-    	public Par X0Y1_精液;
+    	public ShapePart X0Y1_精液;
 
-    	public Par X0Y1_血液1;
+    	public ShapePart X0Y1_血液1;
 
-    	public Par X0Y1_血液2;
+    	public ShapePart X0Y1_血液2;
 
-    	public Par X0Y2_精液;
+    	public ShapePart X0Y2_精液;
 
-    	public Par X0Y2_血液1;
+    	public ShapePart X0Y2_血液1;
 
-    	public Par X0Y2_血液2;
+    	public ShapePart X0Y2_血液2;
 
-    	public Par X0Y3_精液;
+    	public ShapePart X0Y3_精液;
 
-    	public Par X0Y3_血液1;
+    	public ShapePart X0Y3_血液1;
 
-    	public Par X0Y3_血液2;
+    	public ShapePart X0Y3_血液2;
 
-    	public Par X0Y4_精液;
+    	public ShapePart X0Y4_精液;
 
-    	public Par X0Y4_血液1;
+    	public ShapePart X0Y4_血液1;
 
-    	public Par X0Y4_血液2;
+    	public ShapePart X0Y4_血液2;
 
-    	public Par X0Y5_精液;
+    	public ShapePart X0Y5_精液;
 
-    	public Par X0Y5_血液1;
+    	public ShapePart X0Y5_血液1;
 
-    	public Par X0Y5_血液2;
+    	public ShapePart X0Y5_血液2;
 
     	public ColorD 精液CD;
 
@@ -231,31 +231,31 @@ namespace SlaveMatrix
     	public 性器精液_獣(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 性器精液_獣D e)
     	{
     		ThisType = GetType();
-    		Body = new Difs(Sta.性器付["四足性器精液垂れ"]);
-    		Pars pars = Body[0][0];
-    		X0Y0_精液 = pars["精液"].ToPar();
-    		X0Y0_血液1 = pars["血液1"].ToPar();
-    		X0Y0_血液2 = pars["血液2"].ToPar();
-    		pars = Body[0][1];
-    		X0Y1_精液 = pars["精液"].ToPar();
-    		X0Y1_血液1 = pars["血液1"].ToPar();
-    		X0Y1_血液2 = pars["血液2"].ToPar();
-    		pars = Body[0][2];
-    		X0Y2_精液 = pars["精液"].ToPar();
-    		X0Y2_血液1 = pars["血液1"].ToPar();
-    		X0Y2_血液2 = pars["血液2"].ToPar();
-    		pars = Body[0][3];
-    		X0Y3_精液 = pars["精液"].ToPar();
-    		X0Y3_血液1 = pars["血液1"].ToPar();
-    		X0Y3_血液2 = pars["血液2"].ToPar();
-    		pars = Body[0][4];
-    		X0Y4_精液 = pars["精液"].ToPar();
-    		X0Y4_血液1 = pars["血液1"].ToPar();
-    		X0Y4_血液2 = pars["血液2"].ToPar();
-    		pars = Body[0][5];
-    		X0Y5_精液 = pars["精液"].ToPar();
-    		X0Y5_血液1 = pars["血液1"].ToPar();
-    		X0Y5_血液2 = pars["血液2"].ToPar();
+    		Body = new VariantGrid(GlobalState.性器付["四足性器精液垂れ"]);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_精液 = partGroup["精液"].ToPar();
+    		X0Y0_血液1 = partGroup["血液1"].ToPar();
+    		X0Y0_血液2 = partGroup["血液2"].ToPar();
+    		partGroup = Body[0][1];
+    		X0Y1_精液 = partGroup["精液"].ToPar();
+    		X0Y1_血液1 = partGroup["血液1"].ToPar();
+    		X0Y1_血液2 = partGroup["血液2"].ToPar();
+    		partGroup = Body[0][2];
+    		X0Y2_精液 = partGroup["精液"].ToPar();
+    		X0Y2_血液1 = partGroup["血液1"].ToPar();
+    		X0Y2_血液2 = partGroup["血液2"].ToPar();
+    		partGroup = Body[0][3];
+    		X0Y3_精液 = partGroup["精液"].ToPar();
+    		X0Y3_血液1 = partGroup["血液1"].ToPar();
+    		X0Y3_血液2 = partGroup["血液2"].ToPar();
+    		partGroup = Body[0][4];
+    		X0Y4_精液 = partGroup["精液"].ToPar();
+    		X0Y4_血液1 = partGroup["血液1"].ToPar();
+    		X0Y4_血液2 = partGroup["血液2"].ToPar();
+    		partGroup = Body[0][5];
+    		X0Y5_精液 = partGroup["精液"].ToPar();
+    		X0Y5_血液1 = partGroup["血液1"].ToPar();
+    		X0Y5_血液2 = partGroup["血液2"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;
@@ -358,8 +358,8 @@ namespace SlaveMatrix
     	private void 配色N0(BodyColorSet 体配色)
     	{
     		精液CD = new ColorD();
-    		血液1CD = new ColorD(ref Col.Empty, ref 体配色.血液O);
-    		血液2CD = new ColorD(ref Col.Empty, ref 体配色.血液O);
+    		血液1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.血液O);
+    		血液2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.血液O);
     	}
 
     	public void 精液配色(主人公配色 配色)

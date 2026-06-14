@@ -10,7 +10,7 @@ namespace SlaveMatrix
 
     	public Color Col2;
 
-    	public static Color2 Empty = new Color2(ref Col.Empty, ref Col.Empty);
+    	public static Color2 Empty = new Color2(ref ColorHelper.Empty, ref ColorHelper.Empty);
 
     	public Color2(ref Color Col1, ref Color Col2)
     	{

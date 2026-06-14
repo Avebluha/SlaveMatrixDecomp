@@ -13,7 +13,7 @@ namespace SlaveMatrix
 
     	public void Sound(RenderArea Are, Vector2D p, string s, Font f, Color c, double d, bool b)
     	{
-    		ParT pt = new ParT
+    		ShapePartT pt = new ShapePartT
     		{
     			Text = s,
     			Hit = false
@@ -38,7 +38,7 @@ namespace SlaveMatrix
     		{
     			if (b)
     			{
-    				pt.SetPositionCont(Oth.GetRandomVector() * 0.0025 * d);
+    				pt.SetPositionCont(GeometryUtils.GetRandomVector() * 0.0025 * d);
     			}
     			pt.SetTextColor(Color.FromArgb((int)((double)(int)pt.GetTextColor().A * m.Value.Inverse()), pt.GetTextColor()));
     			Are.DisplayGraphics.TextRenderingHint = TextRenderingHint.AntiAlias;
@@ -59,7 +59,7 @@ namespace SlaveMatrix
     		mot.Start();
     	}
 
-    	public void Draw(FPS FPS)
+    	public void Draw(FpsCounter FPS)
     	{
     		ms.Drive(FPS);
     		foreach (string item in del)

@@ -4,43 +4,43 @@ namespace SlaveMatrix
 {
     public class 上着ボトム_前掛け : 上着ボトム
     {
-    	public Par X0Y0_帯;
+    	public ShapePart X0Y0_帯;
 
-    	public Par X0Y0_巻;
+    	public ShapePart X0Y0_巻;
 
-    	public Par X0Y0_縁後_縁左;
+    	public ShapePart X0Y0_縁後_縁左;
 
-    	public Par X0Y0_縁後_縁右;
+    	public ShapePart X0Y0_縁後_縁右;
 
-    	public Par X0Y0_前掛_前掛1;
+    	public ShapePart X0Y0_前掛_前掛1;
 
-    	public Par X0Y0_前掛_前掛2;
+    	public ShapePart X0Y0_前掛_前掛2;
 
-    	public Par X0Y0_前掛_前掛3;
+    	public ShapePart X0Y0_前掛_前掛3;
 
-    	public Par X0Y0_縁前_縁左;
+    	public ShapePart X0Y0_縁前_縁左;
 
-    	public Par X0Y0_縁前_縁右;
+    	public ShapePart X0Y0_縁前_縁右;
 
-    	public Par X0Y0_縁前_縁中;
+    	public ShapePart X0Y0_縁前_縁中;
 
-    	public Par X0Y1_帯;
+    	public ShapePart X0Y1_帯;
 
-    	public Par X0Y1_巻;
+    	public ShapePart X0Y1_巻;
 
-    	public Par X0Y1_縁後_縁左;
+    	public ShapePart X0Y1_縁後_縁左;
 
-    	public Par X0Y1_縁後_縁右;
+    	public ShapePart X0Y1_縁後_縁右;
 
-    	public Par X0Y1_前掛_前掛1;
+    	public ShapePart X0Y1_前掛_前掛1;
 
-    	public Par X0Y1_前掛_前掛2;
+    	public ShapePart X0Y1_前掛_前掛2;
 
-    	public Par X0Y1_縁前_縁左;
+    	public ShapePart X0Y1_縁前_縁左;
 
-    	public Par X0Y1_縁前_縁右;
+    	public ShapePart X0Y1_縁前_縁右;
 
-    	public Par X0Y1_縁前_縁中;
+    	public ShapePart X0Y1_縁前_縁中;
 
     	public ColorD 帯CD;
 
@@ -372,34 +372,34 @@ namespace SlaveMatrix
     	public 上着ボトム_前掛け(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 上着ボトム_前掛けD e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif(Sta.胴体["上着ボトム前"][1]);
-    		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		X0Y0_帯 = pars["帯"].ToPar();
-    		X0Y0_巻 = pars["巻"].ToPar();
-    		Pars pars2 = pars["縁後"].ToPars();
+    		MorphVariant morphVariant = new MorphVariant(GlobalState.胴体["上着ボトム前"][1]);
+    		Body = new VariantGrid();
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_帯 = partGroup["帯"].ToPar();
+    		X0Y0_巻 = partGroup["巻"].ToPar();
+    		PartGroup pars2 = partGroup["縁後"].ToPars();
     		X0Y0_縁後_縁左 = pars2["縁左"].ToPar();
     		X0Y0_縁後_縁右 = pars2["縁右"].ToPar();
-    		pars2 = pars["前掛"].ToPars();
+    		pars2 = partGroup["前掛"].ToPars();
     		X0Y0_前掛_前掛1 = pars2["前掛1"].ToPar();
     		X0Y0_前掛_前掛2 = pars2["前掛2"].ToPar();
     		X0Y0_前掛_前掛3 = pars2["前掛3"].ToPar();
-    		pars2 = pars["縁前"].ToPars();
+    		pars2 = partGroup["縁前"].ToPars();
     		X0Y0_縁前_縁左 = pars2["縁左"].ToPar();
     		X0Y0_縁前_縁右 = pars2["縁右"].ToPar();
     		X0Y0_縁前_縁中 = pars2["縁中"].ToPar();
-    		pars = Body[0][1];
-    		X0Y1_帯 = pars["帯"].ToPar();
-    		X0Y1_巻 = pars["巻"].ToPar();
-    		pars2 = pars["縁後"].ToPars();
+    		partGroup = Body[0][1];
+    		X0Y1_帯 = partGroup["帯"].ToPar();
+    		X0Y1_巻 = partGroup["巻"].ToPar();
+    		pars2 = partGroup["縁後"].ToPars();
     		X0Y1_縁後_縁左 = pars2["縁左"].ToPar();
     		X0Y1_縁後_縁右 = pars2["縁右"].ToPar();
-    		pars2 = pars["前掛"].ToPars();
+    		pars2 = partGroup["前掛"].ToPars();
     		X0Y1_前掛_前掛1 = pars2["前掛1"].ToPar();
     		X0Y1_前掛_前掛2 = pars2["前掛2"].ToPar();
-    		pars2 = pars["縁前"].ToPars();
+    		pars2 = partGroup["縁前"].ToPars();
     		X0Y1_縁前_縁左 = pars2["縁左"].ToPar();
     		X0Y1_縁前_縁右 = pars2["縁右"].ToPar();
     		X0Y1_縁前_縁中 = pars2["縁中"].ToPar();
@@ -506,7 +506,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override bool Is布(Par p)
+    	public override bool Is布(ShapePart p)
     	{
     		if (p != X0Y0_帯 && p != X0Y0_巻 && p != X0Y0_縁後_縁左 && p != X0Y0_縁後_縁右 && p != X0Y0_前掛_前掛1 && p != X0Y0_前掛_前掛2 && p != X0Y0_前掛_前掛3 && p != X0Y0_縁前_縁左 && p != X0Y0_縁前_縁右 && p != X0Y0_縁前_縁中 && p != X0Y1_帯 && p != X0Y1_巻 && p != X0Y1_縁後_縁左 && p != X0Y1_縁後_縁右 && p != X0Y1_前掛_前掛1 && p != X0Y1_前掛_前掛2 && p != X0Y1_縁前_縁左 && p != X0Y1_縁前_縁右)
     		{

@@ -4,65 +4,65 @@ namespace SlaveMatrix
 {
     public class 尾鰭_魚 : 尾鰭
     {
-    	public Par X0Y0_鰭左2_鰭膜;
+    	public ShapePart X0Y0_鰭左2_鰭膜;
 
-    	public Par X0Y0_鰭左2_鰭条;
+    	public ShapePart X0Y0_鰭左2_鰭条;
 
-    	public Par X0Y0_鰭右2_鰭膜;
+    	public ShapePart X0Y0_鰭右2_鰭膜;
 
-    	public Par X0Y0_鰭右2_鰭条;
+    	public ShapePart X0Y0_鰭右2_鰭条;
 
-    	public Par X0Y0_鰭左1_鰭膜;
+    	public ShapePart X0Y0_鰭左1_鰭膜;
 
-    	public Par X0Y0_鰭左1_鰭条;
+    	public ShapePart X0Y0_鰭左1_鰭条;
 
-    	public Par X0Y0_鰭右1_鰭膜;
+    	public ShapePart X0Y0_鰭右1_鰭膜;
 
-    	public Par X0Y0_鰭右1_鰭条;
+    	public ShapePart X0Y0_鰭右1_鰭条;
 
-    	public Par X0Y0_尾_尾;
+    	public ShapePart X0Y0_尾_尾;
 
-    	public Par X0Y0_尾_鱗右3;
+    	public ShapePart X0Y0_尾_鱗右3;
 
-    	public Par X0Y0_尾_鱗左3;
+    	public ShapePart X0Y0_尾_鱗左3;
 
-    	public Par X0Y0_尾_鱗右2;
+    	public ShapePart X0Y0_尾_鱗右2;
 
-    	public Par X0Y0_尾_鱗左2;
+    	public ShapePart X0Y0_尾_鱗左2;
 
-    	public Par X0Y0_尾_鱗右1;
+    	public ShapePart X0Y0_尾_鱗右1;
 
-    	public Par X0Y0_尾_鱗左1;
+    	public ShapePart X0Y0_尾_鱗左1;
 
-    	public Par X0Y1_鰭左2_鰭膜;
+    	public ShapePart X0Y1_鰭左2_鰭膜;
 
-    	public Par X0Y1_鰭左2_鰭条;
+    	public ShapePart X0Y1_鰭左2_鰭条;
 
-    	public Par X0Y1_鰭右2_鰭膜;
+    	public ShapePart X0Y1_鰭右2_鰭膜;
 
-    	public Par X0Y1_鰭右2_鰭条;
+    	public ShapePart X0Y1_鰭右2_鰭条;
 
-    	public Par X0Y1_鰭左1_鰭膜;
+    	public ShapePart X0Y1_鰭左1_鰭膜;
 
-    	public Par X0Y1_鰭左1_鰭条;
+    	public ShapePart X0Y1_鰭左1_鰭条;
 
-    	public Par X0Y1_鰭右1_鰭膜;
+    	public ShapePart X0Y1_鰭右1_鰭膜;
 
-    	public Par X0Y1_鰭右1_鰭条;
+    	public ShapePart X0Y1_鰭右1_鰭条;
 
-    	public Par X0Y1_尾_尾;
+    	public ShapePart X0Y1_尾_尾;
 
-    	public Par X0Y1_尾_鱗右3;
+    	public ShapePart X0Y1_尾_鱗右3;
 
-    	public Par X0Y1_尾_鱗左3;
+    	public ShapePart X0Y1_尾_鱗左3;
 
-    	public Par X0Y1_尾_鱗右2;
+    	public ShapePart X0Y1_尾_鱗右2;
 
-    	public Par X0Y1_尾_鱗左2;
+    	public ShapePart X0Y1_尾_鱗左2;
 
-    	public Par X0Y1_尾_鱗右1;
+    	public ShapePart X0Y1_尾_鱗右1;
 
-    	public Par X0Y1_尾_鱗左1;
+    	public ShapePart X0Y1_尾_鱗左1;
 
     	public ColorD 鰭左2_鰭膜CD;
 
@@ -488,24 +488,24 @@ namespace SlaveMatrix
     	public 尾鰭_魚(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 尾鰭_魚D e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif(Sta.肢中["尾"][0]);
-    		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		Pars pars2 = pars["鰭左2"].ToPars();
+    		MorphVariant morphVariant = new MorphVariant(GlobalState.肢中["尾"][0]);
+    		Body = new VariantGrid();
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
+    		PartGroup partGroup = Body[0][0];
+    		PartGroup pars2 = partGroup["鰭左2"].ToPars();
     		X0Y0_鰭左2_鰭膜 = pars2["鰭膜"].ToPar();
     		X0Y0_鰭左2_鰭条 = pars2["鰭条"].ToPar();
-    		pars2 = pars["鰭右2"].ToPars();
+    		pars2 = partGroup["鰭右2"].ToPars();
     		X0Y0_鰭右2_鰭膜 = pars2["鰭膜"].ToPar();
     		X0Y0_鰭右2_鰭条 = pars2["鰭条"].ToPar();
-    		pars2 = pars["鰭左1"].ToPars();
+    		pars2 = partGroup["鰭左1"].ToPars();
     		X0Y0_鰭左1_鰭膜 = pars2["鰭膜"].ToPar();
     		X0Y0_鰭左1_鰭条 = pars2["鰭条"].ToPar();
-    		pars2 = pars["鰭右1"].ToPars();
+    		pars2 = partGroup["鰭右1"].ToPars();
     		X0Y0_鰭右1_鰭膜 = pars2["鰭膜"].ToPar();
     		X0Y0_鰭右1_鰭条 = pars2["鰭条"].ToPar();
-    		pars2 = pars["尾"].ToPars();
+    		pars2 = partGroup["尾"].ToPars();
     		X0Y0_尾_尾 = pars2["尾"].ToPar();
     		X0Y0_尾_鱗右3 = pars2["鱗右3"].ToPar();
     		X0Y0_尾_鱗左3 = pars2["鱗左3"].ToPar();
@@ -513,7 +513,7 @@ namespace SlaveMatrix
     		X0Y0_尾_鱗左2 = pars2["鱗左2"].ToPar();
     		X0Y0_尾_鱗右1 = pars2["鱗右1"].ToPar();
     		X0Y0_尾_鱗左1 = pars2["鱗左1"].ToPar();
-    		Pars pars3 = Body[0][1];
+    		PartGroup pars3 = Body[0][1];
     		pars2 = pars3["鰭左2"].ToPars();
     		X0Y1_鰭左2_鰭膜 = pars2["鰭膜"].ToPar();
     		X0Y1_鰭左2_鰭条 = pars2["鰭条"].ToPar();
@@ -677,21 +677,21 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		鰭左2_鰭膜CD = new ColorD(ref Col.Black, ref 体配色.膜O);
-    		鰭左2_鰭条CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		鰭右2_鰭膜CD = new ColorD(ref Col.Black, ref 体配色.膜O);
-    		鰭右2_鰭条CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		鰭左1_鰭膜CD = new ColorD(ref Col.Black, ref 体配色.膜O);
-    		鰭左1_鰭条CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		鰭右1_鰭膜CD = new ColorD(ref Col.Black, ref 体配色.膜O);
-    		鰭右1_鰭条CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		尾_尾CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		尾_鱗右3CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		尾_鱗左3CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		尾_鱗右2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		尾_鱗左2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		尾_鱗右1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		尾_鱗左1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		鰭左2_鰭膜CD = new ColorD(ref ColorHelper.Black, ref 体配色.膜O);
+    		鰭左2_鰭条CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		鰭右2_鰭膜CD = new ColorD(ref ColorHelper.Black, ref 体配色.膜O);
+    		鰭右2_鰭条CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		鰭左1_鰭膜CD = new ColorD(ref ColorHelper.Black, ref 体配色.膜O);
+    		鰭左1_鰭条CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		鰭右1_鰭膜CD = new ColorD(ref ColorHelper.Black, ref 体配色.膜O);
+    		鰭右1_鰭条CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		尾_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		尾_鱗右3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		尾_鱗左3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		尾_鱗右2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		尾_鱗左2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		尾_鱗右1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		尾_鱗左1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
     	}
     }
 }

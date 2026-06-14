@@ -4,37 +4,37 @@ namespace SlaveMatrix
 {
     public class 手_蝙 : 翼手
     {
-    	public Par X0Y0_獣翼手;
+    	public ShapePart X0Y0_獣翼手;
 
-    	public Par X0Y0_小指_指1;
+    	public ShapePart X0Y0_小指_指1;
 
-    	public Par X0Y0_小指_指2;
+    	public ShapePart X0Y0_小指_指2;
 
-    	public Par X0Y0_小指_指3;
+    	public ShapePart X0Y0_小指_指3;
 
-    	public Par X0Y0_薬指_指1;
+    	public ShapePart X0Y0_薬指_指1;
 
-    	public Par X0Y0_薬指_指2;
+    	public ShapePart X0Y0_薬指_指2;
 
-    	public Par X0Y0_薬指_指3;
+    	public ShapePart X0Y0_薬指_指3;
 
-    	public Par X0Y0_中指_指1;
+    	public ShapePart X0Y0_中指_指1;
 
-    	public Par X0Y0_中指_指2;
+    	public ShapePart X0Y0_中指_指2;
 
-    	public Par X0Y0_中指_指3;
+    	public ShapePart X0Y0_中指_指3;
 
-    	public Par X0Y0_人指_指1;
+    	public ShapePart X0Y0_人指_指1;
 
-    	public Par X0Y0_人指_指2;
+    	public ShapePart X0Y0_人指_指2;
 
-    	public Par X0Y0_人指_指3;
+    	public ShapePart X0Y0_人指_指3;
 
-    	public Par X0Y0_親指_指1;
+    	public ShapePart X0Y0_親指_指1;
 
-    	public Par X0Y0_親指_指2;
+    	public ShapePart X0Y0_親指_指2;
 
-    	public Par X0Y0_親指_指3;
+    	public ShapePart X0Y0_親指_指3;
 
     	public 飛膜_先 飛膜;
 
@@ -104,15 +104,15 @@ namespace SlaveMatrix
 
     	public bool カーブ;
 
-    	public Par[] Pars1;
+    	public ShapePart[] Pars1;
 
-    	public Par[] Pars2;
+    	public ShapePart[] Pars2;
 
-    	public Par[] Pars3;
+    	public ShapePart[] Pars3;
 
-    	public Par[] Pars4;
+    	public ShapePart[] Pars4;
 
-    	public Par[] Pars5;
+    	public ShapePart[] Pars5;
 
     	private Vector2D[] mm;
 
@@ -737,26 +737,26 @@ namespace SlaveMatrix
     		飛膜 = new 飛膜_先(DisUnit, 配色指定, 体配色);
     		飛膜.Par = this;
     		ThisType = GetType();
-    		Body = new Difs(Sta.腕左["獣翼手"]);
-    		Pars pars = Body[0][0];
-    		X0Y0_獣翼手 = pars["獣翼手"].ToPar();
-    		Pars pars2 = pars["小指"].ToPars();
+    		Body = new VariantGrid(GlobalState.腕左["獣翼手"]);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_獣翼手 = partGroup["獣翼手"].ToPar();
+    		PartGroup pars2 = partGroup["小指"].ToPars();
     		X0Y0_小指_指1 = pars2["指1"].ToPar();
     		X0Y0_小指_指2 = pars2["指2"].ToPar();
     		X0Y0_小指_指3 = pars2["指3"].ToPar();
-    		pars2 = pars["薬指"].ToPars();
+    		pars2 = partGroup["薬指"].ToPars();
     		X0Y0_薬指_指1 = pars2["指1"].ToPar();
     		X0Y0_薬指_指2 = pars2["指2"].ToPar();
     		X0Y0_薬指_指3 = pars2["指3"].ToPar();
-    		pars2 = pars["中指"].ToPars();
+    		pars2 = partGroup["中指"].ToPars();
     		X0Y0_中指_指1 = pars2["指1"].ToPar();
     		X0Y0_中指_指2 = pars2["指2"].ToPar();
     		X0Y0_中指_指3 = pars2["指3"].ToPar();
-    		pars2 = pars["人指"].ToPars();
+    		pars2 = partGroup["人指"].ToPars();
     		X0Y0_人指_指1 = pars2["指1"].ToPar();
     		X0Y0_人指_指2 = pars2["指2"].ToPar();
     		X0Y0_人指_指3 = pars2["指3"].ToPar();
-    		pars2 = pars["親指"].ToPars();
+    		pars2 = partGroup["親指"].ToPars();
     		X0Y0_親指_指1 = pars2["指1"].ToPar();
     		X0Y0_親指_指2 = pars2["指2"].ToPar();
     		X0Y0_親指_指3 = pars2["指3"].ToPar();
@@ -817,23 +817,23 @@ namespace SlaveMatrix
     		base.配色指定 = 配色指定;
     		配色(体配色);
     		X0Y0_獣翼手CP = new ColorP(X0Y0_獣翼手, 獣翼手CD, DisUnit, abj: true);
-    		Pars1 = new Par[3] { X0Y0_小指_指1, X0Y0_小指_指2, X0Y0_小指_指3 };
+    		Pars1 = new ShapePart[3] { X0Y0_小指_指1, X0Y0_小指_指2, X0Y0_小指_指3 };
     		X0Y0_小指_指1CP = new ColorP(X0Y0_小指_指1, 小指_指1CD, DisUnit, abj: true);
     		X0Y0_小指_指2CP = new ColorP(X0Y0_小指_指2, 小指_指2CD, DisUnit, abj: true);
     		X0Y0_小指_指3CP = new ColorP(X0Y0_小指_指3, 小指_指3CD, DisUnit, abj: true);
-    		Pars2 = new Par[3] { X0Y0_薬指_指1, X0Y0_薬指_指2, X0Y0_薬指_指3 };
+    		Pars2 = new ShapePart[3] { X0Y0_薬指_指1, X0Y0_薬指_指2, X0Y0_薬指_指3 };
     		X0Y0_薬指_指1CP = new ColorP(X0Y0_薬指_指1, 薬指_指1CD, DisUnit, abj: true);
     		X0Y0_薬指_指2CP = new ColorP(X0Y0_薬指_指2, 薬指_指2CD, DisUnit, abj: true);
     		X0Y0_薬指_指3CP = new ColorP(X0Y0_薬指_指3, 薬指_指3CD, DisUnit, abj: true);
-    		Pars3 = new Par[3] { X0Y0_中指_指1, X0Y0_中指_指2, X0Y0_中指_指3 };
+    		Pars3 = new ShapePart[3] { X0Y0_中指_指1, X0Y0_中指_指2, X0Y0_中指_指3 };
     		X0Y0_中指_指1CP = new ColorP(X0Y0_中指_指1, 中指_指1CD, DisUnit, abj: true);
     		X0Y0_中指_指2CP = new ColorP(X0Y0_中指_指2, 中指_指2CD, DisUnit, abj: true);
     		X0Y0_中指_指3CP = new ColorP(X0Y0_中指_指3, 中指_指3CD, DisUnit, abj: true);
-    		Pars4 = new Par[3] { X0Y0_人指_指1, X0Y0_人指_指2, X0Y0_人指_指3 };
+    		Pars4 = new ShapePart[3] { X0Y0_人指_指1, X0Y0_人指_指2, X0Y0_人指_指3 };
     		X0Y0_人指_指1CP = new ColorP(X0Y0_人指_指1, 人指_指1CD, DisUnit, abj: true);
     		X0Y0_人指_指2CP = new ColorP(X0Y0_人指_指2, 人指_指2CD, DisUnit, abj: true);
     		X0Y0_人指_指3CP = new ColorP(X0Y0_人指_指3, 人指_指3CD, DisUnit, abj: true);
-    		Pars5 = new Par[2] { X0Y0_親指_指1, X0Y0_親指_指2 };
+    		Pars5 = new ShapePart[2] { X0Y0_親指_指1, X0Y0_親指_指2 };
     		X0Y0_親指_指1CP = new ColorP(X0Y0_親指_指1, 親指_指1CD, DisUnit, abj: true);
     		X0Y0_親指_指2CP = new ColorP(X0Y0_親指_指2, 親指_指2CD, DisUnit, abj: true);
     		X0Y0_親指_指3CP = new ColorP(X0Y0_親指_指3, 親指_指3CD, DisUnit, abj: true);
@@ -930,22 +930,22 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		獣翼手CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		小指_指1CD = new ColorD(ref Col.Black, ref 体配色.毛0R);
-    		小指_指2CD = new ColorD(ref Col.Black, ref 体配色.毛0R);
-    		小指_指3CD = new ColorD(ref Col.Black, ref 体配色.毛0R);
-    		薬指_指1CD = new ColorD(ref Col.Black, ref 体配色.毛0R);
-    		薬指_指2CD = new ColorD(ref Col.Black, ref 体配色.毛0R);
-    		薬指_指3CD = new ColorD(ref Col.Black, ref 体配色.毛0R);
-    		中指_指1CD = new ColorD(ref Col.Black, ref 体配色.毛0R);
-    		中指_指2CD = new ColorD(ref Col.Black, ref 体配色.毛0R);
-    		中指_指3CD = new ColorD(ref Col.Black, ref 体配色.毛0R);
-    		人指_指1CD = new ColorD(ref Col.Black, ref 体配色.毛0R);
-    		人指_指2CD = new ColorD(ref Col.Black, ref 体配色.毛0R);
-    		人指_指3CD = new ColorD(ref Col.Black, ref 体配色.毛0R);
-    		親指_指1CD = new ColorD(ref Col.Black, ref 体配色.毛0R);
-    		親指_指2CD = new ColorD(ref Col.Black, ref 体配色.毛0R);
-    		親指_指3CD = new ColorD(ref Col.Black, ref 体配色.爪O);
+    		獣翼手CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		小指_指1CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0R);
+    		小指_指2CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0R);
+    		小指_指3CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0R);
+    		薬指_指1CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0R);
+    		薬指_指2CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0R);
+    		薬指_指3CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0R);
+    		中指_指1CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0R);
+    		中指_指2CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0R);
+    		中指_指3CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0R);
+    		人指_指1CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0R);
+    		人指_指2CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0R);
+    		人指_指3CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0R);
+    		親指_指1CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0R);
+    		親指_指2CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0R);
+    		親指_指3CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
     	}
     }
 }

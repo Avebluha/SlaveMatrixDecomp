@@ -7,33 +7,33 @@ namespace SlaveMatrix
 {
     public class BackHair0_肢系 : 下ろし
     {
-    	public Par X0Y0_髪基;
+    	public ShapePart X0Y0_髪基;
 
     	public ColorD 髪基CD;
 
     	public ColorP X0Y0_髪基CP;
 
-    	public Ele[] 左5_接続;
+    	public Element[] 左5_接続;
 
-    	public Ele[] 左4_接続;
+    	public Element[] 左4_接続;
 
-    	public Ele[] 左3_接続;
+    	public Element[] 左3_接続;
 
-    	public Ele[] 左2_接続;
+    	public Element[] 左2_接続;
 
-    	public Ele[] 左1_接続;
+    	public Element[] 左1_接続;
 
-    	public Ele[] 中央_接続;
+    	public Element[] 中央_接続;
 
-    	public Ele[] 右1_接続;
+    	public Element[] 右1_接続;
 
-    	public Ele[] 右2_接続;
+    	public Element[] 右2_接続;
 
-    	public Ele[] 右3_接続;
+    	public Element[] 右3_接続;
 
-    	public Ele[] 右4_接続;
+    	public Element[] 右4_接続;
 
-    	public Ele[] 右5_接続;
+    	public Element[] 右5_接続;
 
     	public override bool 欠損
     	{
@@ -143,14 +143,14 @@ namespace SlaveMatrix
     	{
     		BackHair0_肢系 後髪0_肢系2 = this;
     		ThisType = GetType();
-    		Dif dif = new Dif();
-    		dif.Tag = "肢系";
-    		dif.Add(new Pars(Sta.胴体["BackHair0"][0][21]));
-    		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		X0Y0_髪基 = pars["髪基"].ToPar();
+    		MorphVariant morphVariant = new MorphVariant();
+    		morphVariant.Tag = "肢系";
+    		morphVariant.Add(new PartGroup(GlobalState.胴体["BackHair0"][0][21]));
+    		Body = new VariantGrid();
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_髪基 = partGroup["髪基"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;
@@ -188,10 +188,10 @@ namespace SlaveMatrix
     		{
     			表示 = false;
     		}
-    		Ele f;
+    		Element f;
     		if (e.左5_接続.Count > 0)
     		{
-    			左5_接続 = e.左5_接続.Select(delegate(EleD g)
+    			左5_接続 = e.左5_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 後髪0_肢系2;
@@ -202,7 +202,7 @@ namespace SlaveMatrix
     		}
     		if (e.左4_接続.Count > 0)
     		{
-    			左4_接続 = e.左4_接続.Select(delegate(EleD g)
+    			左4_接続 = e.左4_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 後髪0_肢系2;
@@ -213,7 +213,7 @@ namespace SlaveMatrix
     		}
     		if (e.左3_接続.Count > 0)
     		{
-    			左3_接続 = e.左3_接続.Select(delegate(EleD g)
+    			左3_接続 = e.左3_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 後髪0_肢系2;
@@ -224,7 +224,7 @@ namespace SlaveMatrix
     		}
     		if (e.左2_接続.Count > 0)
     		{
-    			左2_接続 = e.左2_接続.Select(delegate(EleD g)
+    			左2_接続 = e.左2_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 後髪0_肢系2;
@@ -235,7 +235,7 @@ namespace SlaveMatrix
     		}
     		if (e.左1_接続.Count > 0)
     		{
-    			左1_接続 = e.左1_接続.Select(delegate(EleD g)
+    			左1_接続 = e.左1_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 後髪0_肢系2;
@@ -246,7 +246,7 @@ namespace SlaveMatrix
     		}
     		if (e.中央_接続.Count > 0)
     		{
-    			中央_接続 = e.中央_接続.Select(delegate(EleD g)
+    			中央_接続 = e.中央_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 後髪0_肢系2;
@@ -257,7 +257,7 @@ namespace SlaveMatrix
     		}
     		if (e.右1_接続.Count > 0)
     		{
-    			右1_接続 = e.右1_接続.Select(delegate(EleD g)
+    			右1_接続 = e.右1_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 後髪0_肢系2;
@@ -268,7 +268,7 @@ namespace SlaveMatrix
     		}
     		if (e.右2_接続.Count > 0)
     		{
-    			右2_接続 = e.右2_接続.Select(delegate(EleD g)
+    			右2_接続 = e.右2_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 後髪0_肢系2;
@@ -279,7 +279,7 @@ namespace SlaveMatrix
     		}
     		if (e.右3_接続.Count > 0)
     		{
-    			右3_接続 = e.右3_接続.Select(delegate(EleD g)
+    			右3_接続 = e.右3_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 後髪0_肢系2;
@@ -290,7 +290,7 @@ namespace SlaveMatrix
     		}
     		if (e.右4_接続.Count > 0)
     		{
-    			右4_接続 = e.右4_接続.Select(delegate(EleD g)
+    			右4_接続 = e.右4_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 後髪0_肢系2;
@@ -301,7 +301,7 @@ namespace SlaveMatrix
     		}
     		if (e.右5_接続.Count > 0)
     		{
-    			右5_接続 = e.右5_接続.Select(delegate(EleD g)
+    			右5_接続 = e.右5_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 後髪0_肢系2;
@@ -343,75 +343,75 @@ namespace SlaveMatrix
     		髪基CD = new ColorD(ref 体配色.髪線, ref 体配色.髪O);
     	}
 
-    	public override IEnumerable<Ele> EnumEle()
+    	public override IEnumerable<Element> EnumEle()
     	{
     		yield return this;
     		if (中央_接続 != null)
     		{
-    			foreach (Ele item in 中央_接続.Select((Ele e) => e.EnumEle()).JoinEnum())
+    			foreach (Element item in 中央_接続.Select((Element e) => e.EnumEle()).JoinEnum())
     			{
     				yield return item;
     			}
     		}
     		if (左1_接続 != null)
     		{
-    			foreach (Ele item2 in 左1_接続.Select((Ele e) => e.EnumEle()).JoinEnum())
+    			foreach (Element item2 in 左1_接続.Select((Element e) => e.EnumEle()).JoinEnum())
     			{
     				yield return item2;
     			}
     		}
     		if (右1_接続 != null)
     		{
-    			foreach (Ele item3 in 右1_接続.Select((Ele e) => e.EnumEle()).JoinEnum())
+    			foreach (Element item3 in 右1_接続.Select((Element e) => e.EnumEle()).JoinEnum())
     			{
     				yield return item3;
     			}
     		}
     		if (左2_接続 != null)
     		{
-    			foreach (Ele item4 in 左2_接続.Select((Ele e) => e.EnumEle()).JoinEnum())
+    			foreach (Element item4 in 左2_接続.Select((Element e) => e.EnumEle()).JoinEnum())
     			{
     				yield return item4;
     			}
     		}
     		if (右2_接続 != null)
     		{
-    			foreach (Ele item5 in 右2_接続.Select((Ele e) => e.EnumEle()).JoinEnum())
+    			foreach (Element item5 in 右2_接続.Select((Element e) => e.EnumEle()).JoinEnum())
     			{
     				yield return item5;
     			}
     		}
     		if (左3_接続 != null)
     		{
-    			foreach (Ele item6 in 左3_接続.Select((Ele e) => e.EnumEle()).JoinEnum())
+    			foreach (Element item6 in 左3_接続.Select((Element e) => e.EnumEle()).JoinEnum())
     			{
     				yield return item6;
     			}
     		}
     		if (右3_接続 != null)
     		{
-    			foreach (Ele item7 in 右3_接続.Select((Ele e) => e.EnumEle()).JoinEnum())
+    			foreach (Element item7 in 右3_接続.Select((Element e) => e.EnumEle()).JoinEnum())
     			{
     				yield return item7;
     			}
     		}
     		if (左4_接続 != null)
     		{
-    			foreach (Ele item8 in 左4_接続.Select((Ele e) => e.EnumEle()).JoinEnum())
+    			foreach (Element item8 in 左4_接続.Select((Element e) => e.EnumEle()).JoinEnum())
     			{
     				yield return item8;
     			}
     		}
     		if (右4_接続 != null)
     		{
-    			foreach (Ele item9 in 右4_接続.Select((Ele e) => e.EnumEle()).JoinEnum())
+    			foreach (Element item9 in 右4_接続.Select((Element e) => e.EnumEle()).JoinEnum())
     			{
     				yield return item9;
     			}
     		}
     		if (左5_接続 != null)
     		{
-    			foreach (Ele item10 in 左5_接続.Select((Ele e) => e.EnumEle()).JoinEnum())
+    			foreach (Element item10 in 左5_接続.Select((Element e) => e.EnumEle()).JoinEnum())
     			{
     				yield return item10;
     			}
@@ -420,7 +420,7 @@ namespace SlaveMatrix
     		{
     			yield break;
     		}
-    		foreach (Ele item11 in 右5_接続.Select((Ele e) => e.EnumEle()).JoinEnum())
+    		foreach (Element item11 in 右5_接続.Select((Element e) => e.EnumEle()).JoinEnum())
     		{
     			yield return item11;
     		}

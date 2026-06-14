@@ -4,39 +4,39 @@ namespace SlaveMatrix
 {
     public class 舌_長 : 舌
     {
-    	public Par X0Y0_舌1;
+    	public ShapePart X0Y0_舌1;
 
-    	public Par X0Y0_舌2;
+    	public ShapePart X0Y0_舌2;
 
-    	public Par X0Y0_舌3;
+    	public ShapePart X0Y0_舌3;
 
-    	public Par X0Y0_舌4;
+    	public ShapePart X0Y0_舌4;
 
-    	public Par X0Y0_舌5;
+    	public ShapePart X0Y0_舌5;
 
-    	public Par X0Y0_舌股左_舌1;
+    	public ShapePart X0Y0_舌股左_舌1;
 
-    	public Par X0Y0_舌股左_舌2;
+    	public ShapePart X0Y0_舌股左_舌2;
 
-    	public Par X0Y0_舌股左_舌3;
+    	public ShapePart X0Y0_舌股左_舌3;
 
-    	public Par X0Y0_舌股左_舌4;
+    	public ShapePart X0Y0_舌股左_舌4;
 
-    	public Par X0Y0_舌股左_舌5;
+    	public ShapePart X0Y0_舌股左_舌5;
 
-    	public Par X0Y0_舌股左_舌6;
+    	public ShapePart X0Y0_舌股左_舌6;
 
-    	public Par X0Y0_舌股右_舌1;
+    	public ShapePart X0Y0_舌股右_舌1;
 
-    	public Par X0Y0_舌股右_舌2;
+    	public ShapePart X0Y0_舌股右_舌2;
 
-    	public Par X0Y0_舌股右_舌3;
+    	public ShapePart X0Y0_舌股右_舌3;
 
-    	public Par X0Y0_舌股右_舌4;
+    	public ShapePart X0Y0_舌股右_舌4;
 
-    	public Par X0Y0_舌股右_舌5;
+    	public ShapePart X0Y0_舌股右_舌5;
 
-    	public Par X0Y0_舌股右_舌6;
+    	public ShapePart X0Y0_舌股右_舌6;
 
     	public ColorD 舌1CD;
 
@@ -106,7 +106,7 @@ namespace SlaveMatrix
 
     	public ColorP X0Y0_舌股右_舌6CP;
 
-    	public Par[] Pars;
+    	public ShapePart[] Pars;
 
     	private Vector2D[] mm;
 
@@ -449,26 +449,26 @@ namespace SlaveMatrix
     	public 舌_長(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 舌_長D e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif();
-    		dif.Tag = "長";
-    		dif.Add(new Pars(Sta.胴体["舌"][0][1]));
-    		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		X0Y0_舌1 = pars["舌1"].ToPar();
-    		X0Y0_舌2 = pars["舌2"].ToPar();
-    		X0Y0_舌3 = pars["舌3"].ToPar();
-    		X0Y0_舌4 = pars["舌4"].ToPar();
-    		X0Y0_舌5 = pars["舌5"].ToPar();
-    		Pars pars2 = pars["舌股左"].ToPars();
+    		MorphVariant morphVariant = new MorphVariant();
+    		morphVariant.Tag = "長";
+    		morphVariant.Add(new PartGroup(GlobalState.胴体["舌"][0][1]));
+    		Body = new VariantGrid();
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_舌1 = partGroup["舌1"].ToPar();
+    		X0Y0_舌2 = partGroup["舌2"].ToPar();
+    		X0Y0_舌3 = partGroup["舌3"].ToPar();
+    		X0Y0_舌4 = partGroup["舌4"].ToPar();
+    		X0Y0_舌5 = partGroup["舌5"].ToPar();
+    		PartGroup pars2 = partGroup["舌股左"].ToPars();
     		X0Y0_舌股左_舌1 = pars2["舌1"].ToPar();
     		X0Y0_舌股左_舌2 = pars2["舌2"].ToPar();
     		X0Y0_舌股左_舌3 = pars2["舌3"].ToPar();
     		X0Y0_舌股左_舌4 = pars2["舌4"].ToPar();
     		X0Y0_舌股左_舌5 = pars2["舌5"].ToPar();
     		X0Y0_舌股左_舌6 = pars2["舌6"].ToPar();
-    		pars2 = pars["舌股右"].ToPars();
+    		pars2 = partGroup["舌股右"].ToPars();
     		X0Y0_舌股右_舌1 = pars2["舌1"].ToPar();
     		X0Y0_舌股右_舌2 = pars2["舌2"].ToPar();
     		X0Y0_舌股右_舌3 = pars2["舌3"].ToPar();
@@ -526,7 +526,7 @@ namespace SlaveMatrix
     		}
     		base.配色指定 = 配色指定;
     		配色(体配色);
-    		Pars = new Par[17]
+    		Pars = new ShapePart[17]
     		{
     			X0Y0_舌1, X0Y0_舌2, X0Y0_舌3, X0Y0_舌4, X0Y0_舌5, X0Y0_舌股左_舌1, X0Y0_舌股左_舌2, X0Y0_舌股左_舌3, X0Y0_舌股左_舌4, X0Y0_舌股左_舌5,
     			X0Y0_舌股左_舌6, X0Y0_舌股右_舌1, X0Y0_舌股右_舌2, X0Y0_舌股右_舌3, X0Y0_舌股右_舌4, X0Y0_舌股右_舌5, X0Y0_舌股右_舌6

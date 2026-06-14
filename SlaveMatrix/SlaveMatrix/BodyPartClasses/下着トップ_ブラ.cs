@@ -4,167 +4,167 @@ namespace SlaveMatrix
 {
     public class 下着トップ_ブラ : 下着トップ
     {
-    	public Par X0Y0_バンド_バンド;
+    	public ShapePart X0Y0_バンド_バンド;
 
-    	public Par X0Y0_バンド_縁_下;
+    	public ShapePart X0Y0_バンド_縁_下;
 
-    	public Par X0Y0_バンド_縁_上;
+    	public ShapePart X0Y0_バンド_縁_上;
 
-    	public Par X0Y0_バンド_縁_左;
+    	public ShapePart X0Y0_バンド_縁_左;
 
-    	public Par X0Y0_バンド_縁_右;
+    	public ShapePart X0Y0_バンド_縁_右;
 
-    	public Par X0Y0_カップ左_紐;
+    	public ShapePart X0Y0_カップ左_紐;
 
-    	public Par X0Y0_カップ左_ジャスター_ジャスター1;
+    	public ShapePart X0Y0_カップ左_ジャスター_ジャスター1;
 
-    	public Par X0Y0_カップ左_ジャスター_ジャスター2;
+    	public ShapePart X0Y0_カップ左_ジャスター_ジャスター2;
 
-    	public Par X0Y0_カップ左_ジャスター_ジャスター3;
+    	public ShapePart X0Y0_カップ左_ジャスター_ジャスター3;
 
-    	public Par X0Y0_カップ左_ジャスター_ジャスター4;
+    	public ShapePart X0Y0_カップ左_ジャスター_ジャスター4;
 
-    	public Par X0Y0_カップ左_カップ2;
+    	public ShapePart X0Y0_カップ左_カップ2;
 
-    	public Par X0Y0_カップ左_レース_レース1;
+    	public ShapePart X0Y0_カップ左_レース_レース1;
 
-    	public Par X0Y0_カップ左_レース_レース2;
+    	public ShapePart X0Y0_カップ左_レース_レース2;
 
-    	public Par X0Y0_カップ左_レース_レース3;
+    	public ShapePart X0Y0_カップ左_レース_レース3;
 
-    	public Par X0Y0_カップ左_レース_レース4;
+    	public ShapePart X0Y0_カップ左_レース_レース4;
 
-    	public Par X0Y0_カップ左_レース_レース5;
+    	public ShapePart X0Y0_カップ左_レース_レース5;
 
-    	public Par X0Y0_カップ左_レース_レース6;
+    	public ShapePart X0Y0_カップ左_レース_レース6;
 
-    	public Par X0Y0_カップ左_レース_レース7;
+    	public ShapePart X0Y0_カップ左_レース_レース7;
 
-    	public Par X0Y0_カップ左_レース_レース8;
+    	public ShapePart X0Y0_カップ左_レース_レース8;
 
-    	public Par X0Y0_カップ左_レース_レース9;
+    	public ShapePart X0Y0_カップ左_レース_レース9;
 
-    	public Par X0Y0_カップ左_レース_レース10;
+    	public ShapePart X0Y0_カップ左_レース_レース10;
 
-    	public Par X0Y0_カップ左_レース_レース11;
+    	public ShapePart X0Y0_カップ左_レース_レース11;
 
-    	public Par X0Y0_カップ左_レース_レース12;
+    	public ShapePart X0Y0_カップ左_レース_レース12;
 
-    	public Par X0Y0_カップ左_カップ1;
+    	public ShapePart X0Y0_カップ左_カップ1;
 
-    	public Par X0Y0_カップ左_柄_柄1_柄1;
+    	public ShapePart X0Y0_カップ左_柄_柄1_柄1;
 
-    	public Par X0Y0_カップ左_柄_柄1_柄2;
+    	public ShapePart X0Y0_カップ左_柄_柄1_柄2;
 
-    	public Par X0Y0_カップ左_柄_柄2_柄1;
+    	public ShapePart X0Y0_カップ左_柄_柄2_柄1;
 
-    	public Par X0Y0_カップ左_柄_柄2_柄2;
+    	public ShapePart X0Y0_カップ左_柄_柄2_柄2;
 
-    	public Par X0Y0_カップ左_柄_柄3_柄1;
+    	public ShapePart X0Y0_カップ左_柄_柄3_柄1;
 
-    	public Par X0Y0_カップ左_柄_柄3_柄2;
+    	public ShapePart X0Y0_カップ左_柄_柄3_柄2;
 
-    	public Par X0Y0_カップ左_柄_柄4_柄1;
+    	public ShapePart X0Y0_カップ左_柄_柄4_柄1;
 
-    	public Par X0Y0_カップ左_柄_柄4_柄2;
+    	public ShapePart X0Y0_カップ左_柄_柄4_柄2;
 
-    	public Par X0Y0_カップ左_柄_柄5_柄1;
+    	public ShapePart X0Y0_カップ左_柄_柄5_柄1;
 
-    	public Par X0Y0_カップ左_柄_柄5_柄2;
+    	public ShapePart X0Y0_カップ左_柄_柄5_柄2;
 
-    	public Par X0Y0_カップ左_柄_柄6_柄1;
+    	public ShapePart X0Y0_カップ左_柄_柄6_柄1;
 
-    	public Par X0Y0_カップ左_柄_柄6_柄2;
+    	public ShapePart X0Y0_カップ左_柄_柄6_柄2;
 
-    	public Par X0Y0_カップ左_柄_柄7_柄1;
+    	public ShapePart X0Y0_カップ左_柄_柄7_柄1;
 
-    	public Par X0Y0_カップ左_柄_柄7_柄2;
+    	public ShapePart X0Y0_カップ左_柄_柄7_柄2;
 
-    	public Par X0Y0_カップ左_縁_縁1;
+    	public ShapePart X0Y0_カップ左_縁_縁1;
 
-    	public Par X0Y0_カップ左_縁_縁2;
+    	public ShapePart X0Y0_カップ左_縁_縁2;
 
-    	public Par X0Y0_カップ左_縁_縁3;
+    	public ShapePart X0Y0_カップ左_縁_縁3;
 
-    	public Par X0Y0_カップ左_縁_縁4;
+    	public ShapePart X0Y0_カップ左_縁_縁4;
 
-    	public Par X0Y0_カップ右_紐;
+    	public ShapePart X0Y0_カップ右_紐;
 
-    	public Par X0Y0_カップ右_ジャスター_ジャスター1;
+    	public ShapePart X0Y0_カップ右_ジャスター_ジャスター1;
 
-    	public Par X0Y0_カップ右_ジャスター_ジャスター2;
+    	public ShapePart X0Y0_カップ右_ジャスター_ジャスター2;
 
-    	public Par X0Y0_カップ右_ジャスター_ジャスター3;
+    	public ShapePart X0Y0_カップ右_ジャスター_ジャスター3;
 
-    	public Par X0Y0_カップ右_ジャスター_ジャスター4;
+    	public ShapePart X0Y0_カップ右_ジャスター_ジャスター4;
 
-    	public Par X0Y0_カップ右_カップ2;
+    	public ShapePart X0Y0_カップ右_カップ2;
 
-    	public Par X0Y0_カップ右_レース_レース1;
+    	public ShapePart X0Y0_カップ右_レース_レース1;
 
-    	public Par X0Y0_カップ右_レース_レース2;
+    	public ShapePart X0Y0_カップ右_レース_レース2;
 
-    	public Par X0Y0_カップ右_レース_レース3;
+    	public ShapePart X0Y0_カップ右_レース_レース3;
 
-    	public Par X0Y0_カップ右_レース_レース4;
+    	public ShapePart X0Y0_カップ右_レース_レース4;
 
-    	public Par X0Y0_カップ右_レース_レース5;
+    	public ShapePart X0Y0_カップ右_レース_レース5;
 
-    	public Par X0Y0_カップ右_レース_レース6;
+    	public ShapePart X0Y0_カップ右_レース_レース6;
 
-    	public Par X0Y0_カップ右_レース_レース7;
+    	public ShapePart X0Y0_カップ右_レース_レース7;
 
-    	public Par X0Y0_カップ右_レース_レース8;
+    	public ShapePart X0Y0_カップ右_レース_レース8;
 
-    	public Par X0Y0_カップ右_レース_レース9;
+    	public ShapePart X0Y0_カップ右_レース_レース9;
 
-    	public Par X0Y0_カップ右_レース_レース10;
+    	public ShapePart X0Y0_カップ右_レース_レース10;
 
-    	public Par X0Y0_カップ右_レース_レース11;
+    	public ShapePart X0Y0_カップ右_レース_レース11;
 
-    	public Par X0Y0_カップ右_レース_レース12;
+    	public ShapePart X0Y0_カップ右_レース_レース12;
 
-    	public Par X0Y0_カップ右_カップ1;
+    	public ShapePart X0Y0_カップ右_カップ1;
 
-    	public Par X0Y0_カップ右_柄_柄1_柄1;
+    	public ShapePart X0Y0_カップ右_柄_柄1_柄1;
 
-    	public Par X0Y0_カップ右_柄_柄1_柄2;
+    	public ShapePart X0Y0_カップ右_柄_柄1_柄2;
 
-    	public Par X0Y0_カップ右_柄_柄2_柄1;
+    	public ShapePart X0Y0_カップ右_柄_柄2_柄1;
 
-    	public Par X0Y0_カップ右_柄_柄2_柄2;
+    	public ShapePart X0Y0_カップ右_柄_柄2_柄2;
 
-    	public Par X0Y0_カップ右_柄_柄3_柄1;
+    	public ShapePart X0Y0_カップ右_柄_柄3_柄1;
 
-    	public Par X0Y0_カップ右_柄_柄3_柄2;
+    	public ShapePart X0Y0_カップ右_柄_柄3_柄2;
 
-    	public Par X0Y0_カップ右_柄_柄4_柄1;
+    	public ShapePart X0Y0_カップ右_柄_柄4_柄1;
 
-    	public Par X0Y0_カップ右_柄_柄4_柄2;
+    	public ShapePart X0Y0_カップ右_柄_柄4_柄2;
 
-    	public Par X0Y0_カップ右_柄_柄5_柄1;
+    	public ShapePart X0Y0_カップ右_柄_柄5_柄1;
 
-    	public Par X0Y0_カップ右_柄_柄5_柄2;
+    	public ShapePart X0Y0_カップ右_柄_柄5_柄2;
 
-    	public Par X0Y0_カップ右_柄_柄6_柄1;
+    	public ShapePart X0Y0_カップ右_柄_柄6_柄1;
 
-    	public Par X0Y0_カップ右_柄_柄6_柄2;
+    	public ShapePart X0Y0_カップ右_柄_柄6_柄2;
 
-    	public Par X0Y0_カップ右_柄_柄7_柄1;
+    	public ShapePart X0Y0_カップ右_柄_柄7_柄1;
 
-    	public Par X0Y0_カップ右_柄_柄7_柄2;
+    	public ShapePart X0Y0_カップ右_柄_柄7_柄2;
 
-    	public Par X0Y0_カップ右_縁_縁1;
+    	public ShapePart X0Y0_カップ右_縁_縁1;
 
-    	public Par X0Y0_カップ右_縁_縁2;
+    	public ShapePart X0Y0_カップ右_縁_縁2;
 
-    	public Par X0Y0_カップ右_縁_縁3;
+    	public ShapePart X0Y0_カップ右_縁_縁3;
 
-    	public Par X0Y0_カップ右_縁_縁4;
+    	public ShapePart X0Y0_カップ右_縁_縁4;
 
-    	public Par X0Y0_リボン_リボン;
+    	public ShapePart X0Y0_リボン_リボン;
 
-    	public Par X0Y0_リボン_結び目;
+    	public ShapePart X0Y0_リボン_結び目;
 
     	public ColorD バンド_バンドCD;
 
@@ -2302,19 +2302,19 @@ namespace SlaveMatrix
     	public 下着トップ_ブラ(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 下着トップ_ブラD e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif(Sta.胴体["下着トップ"][0]);
-    		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		Pars pars2 = pars["バンド"].ToPars();
+    		MorphVariant morphVariant = new MorphVariant(GlobalState.胴体["下着トップ"][0]);
+    		Body = new VariantGrid();
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
+    		PartGroup partGroup = Body[0][0];
+    		PartGroup pars2 = partGroup["バンド"].ToPars();
     		X0Y0_バンド_バンド = pars2["バンド"].ToPar();
-    		Pars pars3 = pars2["縁"].ToPars();
+    		PartGroup pars3 = pars2["縁"].ToPars();
     		X0Y0_バンド_縁_下 = pars3["下"].ToPar();
     		X0Y0_バンド_縁_上 = pars3["上"].ToPar();
     		X0Y0_バンド_縁_左 = pars3["左"].ToPar();
     		X0Y0_バンド_縁_右 = pars3["右"].ToPar();
-    		pars2 = pars["カップ左"].ToPars();
+    		pars2 = partGroup["カップ左"].ToPars();
     		X0Y0_カップ左_紐 = pars2["紐"].ToPar();
     		pars3 = pars2["ジャスター"].ToPars();
     		X0Y0_カップ左_ジャスター_ジャスター1 = pars3["ジャスター1"].ToPar();
@@ -2337,7 +2337,7 @@ namespace SlaveMatrix
     		X0Y0_カップ左_レース_レース12 = pars3["レース12"].ToPar();
     		X0Y0_カップ左_カップ1 = pars2["カップ1"].ToPar();
     		pars3 = pars2["柄"].ToPars();
-    		Pars pars4 = pars3["柄1"].ToPars();
+    		PartGroup pars4 = pars3["柄1"].ToPars();
     		X0Y0_カップ左_柄_柄1_柄1 = pars4["柄1"].ToPar();
     		X0Y0_カップ左_柄_柄1_柄2 = pars4["柄2"].ToPar();
     		pars4 = pars3["柄2"].ToPars();
@@ -2363,7 +2363,7 @@ namespace SlaveMatrix
     		X0Y0_カップ左_縁_縁2 = pars3["縁2"].ToPar();
     		X0Y0_カップ左_縁_縁3 = pars3["縁3"].ToPar();
     		X0Y0_カップ左_縁_縁4 = pars3["縁4"].ToPar();
-    		pars2 = pars["カップ右"].ToPars();
+    		pars2 = partGroup["カップ右"].ToPars();
     		X0Y0_カップ右_紐 = pars2["紐"].ToPar();
     		pars3 = pars2["ジャスター"].ToPars();
     		X0Y0_カップ右_ジャスター_ジャスター1 = pars3["ジャスター1"].ToPar();
@@ -2412,7 +2412,7 @@ namespace SlaveMatrix
     		X0Y0_カップ右_縁_縁2 = pars3["縁2"].ToPar();
     		X0Y0_カップ右_縁_縁3 = pars3["縁3"].ToPar();
     		X0Y0_カップ右_縁_縁4 = pars3["縁4"].ToPar();
-    		pars2 = pars["リボン"].ToPars();
+    		pars2 = partGroup["リボン"].ToPars();
     		X0Y0_リボン_リボン = pars2["リボン"].ToPar();
     		X0Y0_リボン_結び目 = pars2["結び目"].ToPar();
     		Body.SetJoints();
@@ -2732,7 +2732,7 @@ namespace SlaveMatrix
     		Are.Draw(X0Y0_リボン_結び目);
     	}
 
-    	public override bool Is布(Par p)
+    	public override bool Is布(ShapePart p)
     	{
     		if (p != X0Y0_バンド_バンド && p != X0Y0_バンド_縁_下 && p != X0Y0_バンド_縁_上 && p != X0Y0_バンド_縁_左 && p != X0Y0_バンド_縁_右 && p != X0Y0_カップ左_紐 && p != X0Y0_カップ左_ジャスター_ジャスター1 && p != X0Y0_カップ左_ジャスター_ジャスター2 && p != X0Y0_カップ左_ジャスター_ジャスター3 && p != X0Y0_カップ左_ジャスター_ジャスター4 && p != X0Y0_カップ左_カップ2 && p != X0Y0_カップ左_レース_レース1 && p != X0Y0_カップ左_レース_レース2 && p != X0Y0_カップ左_レース_レース3 && p != X0Y0_カップ左_レース_レース4 && p != X0Y0_カップ左_レース_レース5 && p != X0Y0_カップ左_レース_レース6 && p != X0Y0_カップ左_レース_レース7 && p != X0Y0_カップ左_レース_レース8 && p != X0Y0_カップ左_レース_レース9 && p != X0Y0_カップ左_レース_レース10 && p != X0Y0_カップ左_レース_レース11 && p != X0Y0_カップ左_レース_レース12 && p != X0Y0_カップ左_カップ1 && p != X0Y0_カップ左_柄_柄1_柄1 && p != X0Y0_カップ左_柄_柄1_柄2 && p != X0Y0_カップ左_柄_柄2_柄1 && p != X0Y0_カップ左_柄_柄2_柄2 && p != X0Y0_カップ左_柄_柄3_柄1 && p != X0Y0_カップ左_柄_柄3_柄2 && p != X0Y0_カップ左_柄_柄4_柄1 && p != X0Y0_カップ左_柄_柄4_柄2 && p != X0Y0_カップ左_柄_柄5_柄1 && p != X0Y0_カップ左_柄_柄5_柄2 && p != X0Y0_カップ左_柄_柄6_柄1 && p != X0Y0_カップ左_柄_柄6_柄2 && p != X0Y0_カップ左_柄_柄7_柄1 && p != X0Y0_カップ左_柄_柄7_柄2 && p != X0Y0_カップ左_縁_縁1 && p != X0Y0_カップ左_縁_縁2 && p != X0Y0_カップ左_縁_縁3 && p != X0Y0_カップ左_縁_縁4 && p != X0Y0_カップ右_紐 && p != X0Y0_カップ右_ジャスター_ジャスター1 && p != X0Y0_カップ右_ジャスター_ジャスター2 && p != X0Y0_カップ右_ジャスター_ジャスター3 && p != X0Y0_カップ右_ジャスター_ジャスター4 && p != X0Y0_カップ右_カップ2 && p != X0Y0_カップ右_レース_レース1 && p != X0Y0_カップ右_レース_レース2 && p != X0Y0_カップ右_レース_レース3 && p != X0Y0_カップ右_レース_レース4 && p != X0Y0_カップ右_レース_レース5 && p != X0Y0_カップ右_レース_レース6 && p != X0Y0_カップ右_レース_レース7 && p != X0Y0_カップ右_レース_レース8 && p != X0Y0_カップ右_レース_レース9 && p != X0Y0_カップ右_レース_レース10 && p != X0Y0_カップ右_レース_レース11 && p != X0Y0_カップ右_レース_レース12 && p != X0Y0_カップ右_カップ1 && p != X0Y0_カップ右_柄_柄1_柄1 && p != X0Y0_カップ右_柄_柄1_柄2 && p != X0Y0_カップ右_柄_柄2_柄1 && p != X0Y0_カップ右_柄_柄2_柄2 && p != X0Y0_カップ右_柄_柄3_柄1 && p != X0Y0_カップ右_柄_柄3_柄2 && p != X0Y0_カップ右_柄_柄4_柄1 && p != X0Y0_カップ右_柄_柄4_柄2 && p != X0Y0_カップ右_柄_柄5_柄1 && p != X0Y0_カップ右_柄_柄5_柄2 && p != X0Y0_カップ右_柄_柄6_柄1 && p != X0Y0_カップ右_柄_柄6_柄2 && p != X0Y0_カップ右_柄_柄7_柄1 && p != X0Y0_カップ右_柄_柄7_柄2 && p != X0Y0_カップ右_縁_縁1 && p != X0Y0_カップ右_縁_縁2 && p != X0Y0_カップ右_縁_縁3 && p != X0Y0_カップ右_縁_縁4 && p != X0Y0_リボン_リボン)
     		{

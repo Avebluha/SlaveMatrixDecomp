@@ -3,139 +3,139 @@ using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
-    public class バイブ_ディル : Ele
+    public class バイブ_ディル : Element
     {
-    	public Par X0Y0_ヘッド;
+    	public ShapePart X0Y0_ヘッド;
 
-    	public Par X0Y0_血管1;
+    	public ShapePart X0Y0_血管1;
 
-    	public Par X0Y0_血管2;
+    	public ShapePart X0Y0_血管2;
 
-    	public Par X0Y0_亀頭;
+    	public ShapePart X0Y0_亀頭;
 
-    	public Par X0Y0_ユニット_ユニット;
+    	public ShapePart X0Y0_ユニット_ユニット;
 
-    	public Par X0Y0_ユニット_ユニット線上;
+    	public ShapePart X0Y0_ユニット_ユニット線上;
 
-    	public Par X0Y0_ユニット_ユニット線下;
+    	public ShapePart X0Y0_ユニット_ユニット線下;
 
-    	public Par X0Y0_ユニット_ボタン上;
+    	public ShapePart X0Y0_ユニット_ボタン上;
 
-    	public Par X0Y0_ユニット_ボタン下;
+    	public ShapePart X0Y0_ユニット_ボタン下;
 
-    	public Par X0Y0_ユニット_パワー根;
+    	public ShapePart X0Y0_ユニット_パワー根;
 
-    	public Par X0Y0_ユニット_パワー1;
+    	public ShapePart X0Y0_ユニット_パワー1;
 
-    	public Par X0Y0_ユニット_パワー2;
+    	public ShapePart X0Y0_ユニット_パワー2;
 
-    	public Par X0Y0_ユニット_パワー3;
+    	public ShapePart X0Y0_ユニット_パワー3;
 
-    	public Par X0Y0_ユニット_パワー4;
+    	public ShapePart X0Y0_ユニット_パワー4;
 
-    	public Par X0Y1_ヘッド;
+    	public ShapePart X0Y1_ヘッド;
 
-    	public Par X0Y1_血管1;
+    	public ShapePart X0Y1_血管1;
 
-    	public Par X0Y1_血管2;
+    	public ShapePart X0Y1_血管2;
 
-    	public Par X0Y1_亀頭;
+    	public ShapePart X0Y1_亀頭;
 
-    	public Par X0Y1_ユニット_ユニット;
+    	public ShapePart X0Y1_ユニット_ユニット;
 
-    	public Par X0Y1_ユニット_ユニット線上;
+    	public ShapePart X0Y1_ユニット_ユニット線上;
 
-    	public Par X0Y1_ユニット_ユニット線下;
+    	public ShapePart X0Y1_ユニット_ユニット線下;
 
-    	public Par X0Y1_ユニット_ボタン上;
+    	public ShapePart X0Y1_ユニット_ボタン上;
 
-    	public Par X0Y1_ユニット_ボタン下;
+    	public ShapePart X0Y1_ユニット_ボタン下;
 
-    	public Par X0Y1_ユニット_パワー根;
+    	public ShapePart X0Y1_ユニット_パワー根;
 
-    	public Par X0Y1_ユニット_パワー1;
+    	public ShapePart X0Y1_ユニット_パワー1;
 
-    	public Par X0Y1_ユニット_パワー2;
+    	public ShapePart X0Y1_ユニット_パワー2;
 
-    	public Par X0Y1_ユニット_パワー3;
+    	public ShapePart X0Y1_ユニット_パワー3;
 
-    	public Par X0Y1_ユニット_パワー4;
+    	public ShapePart X0Y1_ユニット_パワー4;
 
-    	public Par X0Y2_ヘッド;
+    	public ShapePart X0Y2_ヘッド;
 
-    	public Par X0Y2_血管1;
+    	public ShapePart X0Y2_血管1;
 
-    	public Par X0Y2_血管2;
+    	public ShapePart X0Y2_血管2;
 
-    	public Par X0Y2_ユニット_ユニット;
+    	public ShapePart X0Y2_ユニット_ユニット;
 
-    	public Par X0Y2_ユニット_ユニット線上;
+    	public ShapePart X0Y2_ユニット_ユニット線上;
 
-    	public Par X0Y2_ユニット_ユニット線下;
+    	public ShapePart X0Y2_ユニット_ユニット線下;
 
-    	public Par X0Y2_ユニット_ボタン上;
+    	public ShapePart X0Y2_ユニット_ボタン上;
 
-    	public Par X0Y2_ユニット_ボタン下;
+    	public ShapePart X0Y2_ユニット_ボタン下;
 
-    	public Par X0Y2_ユニット_パワー根;
+    	public ShapePart X0Y2_ユニット_パワー根;
 
-    	public Par X0Y2_ユニット_パワー1;
+    	public ShapePart X0Y2_ユニット_パワー1;
 
-    	public Par X0Y2_ユニット_パワー2;
+    	public ShapePart X0Y2_ユニット_パワー2;
 
-    	public Par X0Y2_ユニット_パワー3;
+    	public ShapePart X0Y2_ユニット_パワー3;
 
-    	public Par X0Y2_ユニット_パワー4;
+    	public ShapePart X0Y2_ユニット_パワー4;
 
-    	public Par X0Y3_ヘッド;
+    	public ShapePart X0Y3_ヘッド;
 
-    	public Par X0Y3_血管1;
+    	public ShapePart X0Y3_血管1;
 
-    	public Par X0Y3_血管2;
+    	public ShapePart X0Y3_血管2;
 
-    	public Par X0Y3_ユニット_ユニット;
+    	public ShapePart X0Y3_ユニット_ユニット;
 
-    	public Par X0Y3_ユニット_ユニット線上;
+    	public ShapePart X0Y3_ユニット_ユニット線上;
 
-    	public Par X0Y3_ユニット_ユニット線下;
+    	public ShapePart X0Y3_ユニット_ユニット線下;
 
-    	public Par X0Y3_ユニット_ボタン上;
+    	public ShapePart X0Y3_ユニット_ボタン上;
 
-    	public Par X0Y3_ユニット_ボタン下;
+    	public ShapePart X0Y3_ユニット_ボタン下;
 
-    	public Par X0Y3_ユニット_パワー根;
+    	public ShapePart X0Y3_ユニット_パワー根;
 
-    	public Par X0Y3_ユニット_パワー1;
+    	public ShapePart X0Y3_ユニット_パワー1;
 
-    	public Par X0Y3_ユニット_パワー2;
+    	public ShapePart X0Y3_ユニット_パワー2;
 
-    	public Par X0Y3_ユニット_パワー3;
+    	public ShapePart X0Y3_ユニット_パワー3;
 
-    	public Par X0Y3_ユニット_パワー4;
+    	public ShapePart X0Y3_ユニット_パワー4;
 
-    	public Par X0Y4_ヘッド;
+    	public ShapePart X0Y4_ヘッド;
 
-    	public Par X0Y4_血管;
+    	public ShapePart X0Y4_血管;
 
-    	public Par X0Y4_ユニット_ユニット;
+    	public ShapePart X0Y4_ユニット_ユニット;
 
-    	public Par X0Y4_ユニット_ユニット線上;
+    	public ShapePart X0Y4_ユニット_ユニット線上;
 
-    	public Par X0Y4_ユニット_ユニット線下;
+    	public ShapePart X0Y4_ユニット_ユニット線下;
 
-    	public Par X0Y4_ユニット_ボタン上;
+    	public ShapePart X0Y4_ユニット_ボタン上;
 
-    	public Par X0Y4_ユニット_ボタン下;
+    	public ShapePart X0Y4_ユニット_ボタン下;
 
-    	public Par X0Y4_ユニット_パワー根;
+    	public ShapePart X0Y4_ユニット_パワー根;
 
-    	public Par X0Y4_ユニット_パワー1;
+    	public ShapePart X0Y4_ユニット_パワー1;
 
-    	public Par X0Y4_ユニット_パワー2;
+    	public ShapePart X0Y4_ユニット_パワー2;
 
-    	public Par X0Y4_ユニット_パワー3;
+    	public ShapePart X0Y4_ユニット_パワー3;
 
-    	public Par X0Y4_ユニット_パワー4;
+    	public ShapePart X0Y4_ユニット_パワー4;
 
     	public ColorD ヘッドCD;
 
@@ -684,13 +684,13 @@ namespace SlaveMatrix
     	public バイブ_ディル(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, バイブ_ディルD e)
     	{
     		ThisType = GetType();
-    		Body = new Difs(Sta.カーソル["ディル"]);
-    		Pars pars = Body[0][0];
-    		X0Y0_ヘッド = pars["ヘッド"].ToPar();
-    		X0Y0_血管1 = pars["血管1"].ToPar();
-    		X0Y0_血管2 = pars["血管2"].ToPar();
-    		X0Y0_亀頭 = pars["亀頭"].ToPar();
-    		Pars pars2 = pars["ユニット"].ToPars();
+    		Body = new VariantGrid(GlobalState.カーソル["ディル"]);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_ヘッド = partGroup["ヘッド"].ToPar();
+    		X0Y0_血管1 = partGroup["血管1"].ToPar();
+    		X0Y0_血管2 = partGroup["血管2"].ToPar();
+    		X0Y0_亀頭 = partGroup["亀頭"].ToPar();
+    		PartGroup pars2 = partGroup["ユニット"].ToPars();
     		X0Y0_ユニット_ユニット = pars2["ユニット"].ToPar();
     		X0Y0_ユニット_ユニット線上 = pars2["ユニット線上"].ToPar();
     		X0Y0_ユニット_ユニット線下 = pars2["ユニット線下"].ToPar();
@@ -701,12 +701,12 @@ namespace SlaveMatrix
     		X0Y0_ユニット_パワー2 = pars2["パワー2"].ToPar();
     		X0Y0_ユニット_パワー3 = pars2["パワー3"].ToPar();
     		X0Y0_ユニット_パワー4 = pars2["パワー4"].ToPar();
-    		pars = Body[0][1];
-    		X0Y1_ヘッド = pars["ヘッド"].ToPar();
-    		X0Y1_血管1 = pars["血管1"].ToPar();
-    		X0Y1_血管2 = pars["血管2"].ToPar();
-    		X0Y1_亀頭 = pars["亀頭"].ToPar();
-    		pars2 = pars["ユニット"].ToPars();
+    		partGroup = Body[0][1];
+    		X0Y1_ヘッド = partGroup["ヘッド"].ToPar();
+    		X0Y1_血管1 = partGroup["血管1"].ToPar();
+    		X0Y1_血管2 = partGroup["血管2"].ToPar();
+    		X0Y1_亀頭 = partGroup["亀頭"].ToPar();
+    		pars2 = partGroup["ユニット"].ToPars();
     		X0Y1_ユニット_ユニット = pars2["ユニット"].ToPar();
     		X0Y1_ユニット_ユニット線上 = pars2["ユニット線上"].ToPar();
     		X0Y1_ユニット_ユニット線下 = pars2["ユニット線下"].ToPar();
@@ -717,11 +717,11 @@ namespace SlaveMatrix
     		X0Y1_ユニット_パワー2 = pars2["パワー2"].ToPar();
     		X0Y1_ユニット_パワー3 = pars2["パワー3"].ToPar();
     		X0Y1_ユニット_パワー4 = pars2["パワー4"].ToPar();
-    		pars = Body[0][2];
-    		X0Y2_ヘッド = pars["ヘッド"].ToPar();
-    		X0Y2_血管1 = pars["血管1"].ToPar();
-    		X0Y2_血管2 = pars["血管2"].ToPar();
-    		pars2 = pars["ユニット"].ToPars();
+    		partGroup = Body[0][2];
+    		X0Y2_ヘッド = partGroup["ヘッド"].ToPar();
+    		X0Y2_血管1 = partGroup["血管1"].ToPar();
+    		X0Y2_血管2 = partGroup["血管2"].ToPar();
+    		pars2 = partGroup["ユニット"].ToPars();
     		X0Y2_ユニット_ユニット = pars2["ユニット"].ToPar();
     		X0Y2_ユニット_ユニット線上 = pars2["ユニット線上"].ToPar();
     		X0Y2_ユニット_ユニット線下 = pars2["ユニット線下"].ToPar();
@@ -732,11 +732,11 @@ namespace SlaveMatrix
     		X0Y2_ユニット_パワー2 = pars2["パワー2"].ToPar();
     		X0Y2_ユニット_パワー3 = pars2["パワー3"].ToPar();
     		X0Y2_ユニット_パワー4 = pars2["パワー4"].ToPar();
-    		pars = Body[0][3];
-    		X0Y3_ヘッド = pars["ヘッド"].ToPar();
-    		X0Y3_血管1 = pars["血管1"].ToPar();
-    		X0Y3_血管2 = pars["血管2"].ToPar();
-    		pars2 = pars["ユニット"].ToPars();
+    		partGroup = Body[0][3];
+    		X0Y3_ヘッド = partGroup["ヘッド"].ToPar();
+    		X0Y3_血管1 = partGroup["血管1"].ToPar();
+    		X0Y3_血管2 = partGroup["血管2"].ToPar();
+    		pars2 = partGroup["ユニット"].ToPars();
     		X0Y3_ユニット_ユニット = pars2["ユニット"].ToPar();
     		X0Y3_ユニット_ユニット線上 = pars2["ユニット線上"].ToPar();
     		X0Y3_ユニット_ユニット線下 = pars2["ユニット線下"].ToPar();
@@ -747,10 +747,10 @@ namespace SlaveMatrix
     		X0Y3_ユニット_パワー2 = pars2["パワー2"].ToPar();
     		X0Y3_ユニット_パワー3 = pars2["パワー3"].ToPar();
     		X0Y3_ユニット_パワー4 = pars2["パワー4"].ToPar();
-    		pars = Body[0][4];
-    		X0Y4_ヘッド = pars["ヘッド"].ToPar();
-    		X0Y4_血管 = pars["血管"].ToPar();
-    		pars2 = pars["ユニット"].ToPars();
+    		partGroup = Body[0][4];
+    		X0Y4_ヘッド = partGroup["ヘッド"].ToPar();
+    		X0Y4_血管 = partGroup["血管"].ToPar();
+    		pars2 = partGroup["ユニット"].ToPars();
     		X0Y4_ユニット_ユニット = pars2["ユニット"].ToPar();
     		X0Y4_ユニット_ユニット線上 = pars2["ユニット線上"].ToPar();
     		X0Y4_ユニット_ユニット線下 = pars2["ユニット線下"].ToPar();
@@ -976,22 +976,22 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		Color2 色 = new Color2(ref Col.DimGray, ref Col.Black);
-    		ヘッドCD = new ColorD(ref Col.Black, ref 色);
-    		血管1CD = new ColorD(ref Col.Black, ref 色);
-    		血管2CD = new ColorD(ref Col.Black, ref 色);
-    		亀頭CD = new ColorD(ref Col.Black, ref 色);
-    		Col.GetGrad(ref Col.Silver, out 色);
-    		ユニット_ユニットCD = new ColorD(ref Col.Black, ref 色);
-    		ユニット_ユニット線上CD = new ColorD(ref Col.Black, ref 色);
-    		ユニット_ユニット線下CD = new ColorD(ref Col.Black, ref 色);
-    		ユニット_ボタン上CD = new ColorD(ref Col.Black, ref 色);
-    		ユニット_ボタン下CD = new ColorD(ref Col.Black, ref 色);
-    		ユニット_パワー根CD = new ColorD(ref Col.Black, ref 色);
-    		ユニット_パワー1CD = new ColorD(ref Col.Black, ref 色);
-    		ユニット_パワー2CD = new ColorD(ref Col.Black, ref 色);
-    		ユニット_パワー3CD = new ColorD(ref Col.Black, ref 色);
-    		ユニット_パワー4CD = new ColorD(ref Col.Black, ref 色);
+    		Color2 色 = new Color2(ref ColorHelper.DimGray, ref ColorHelper.Black);
+    		ヘッドCD = new ColorD(ref ColorHelper.Black, ref 色);
+    		血管1CD = new ColorD(ref ColorHelper.Black, ref 色);
+    		血管2CD = new ColorD(ref ColorHelper.Black, ref 色);
+    		亀頭CD = new ColorD(ref ColorHelper.Black, ref 色);
+    		ColorHelper.GetGrad(ref ColorHelper.Silver, out 色);
+    		ユニット_ユニットCD = new ColorD(ref ColorHelper.Black, ref 色);
+    		ユニット_ユニット線上CD = new ColorD(ref ColorHelper.Black, ref 色);
+    		ユニット_ユニット線下CD = new ColorD(ref ColorHelper.Black, ref 色);
+    		ユニット_ボタン上CD = new ColorD(ref ColorHelper.Black, ref 色);
+    		ユニット_ボタン下CD = new ColorD(ref ColorHelper.Black, ref 色);
+    		ユニット_パワー根CD = new ColorD(ref ColorHelper.Black, ref 色);
+    		ユニット_パワー1CD = new ColorD(ref ColorHelper.Black, ref 色);
+    		ユニット_パワー2CD = new ColorD(ref ColorHelper.Black, ref 色);
+    		ユニット_パワー3CD = new ColorD(ref ColorHelper.Black, ref 色);
+    		ユニット_パワー4CD = new ColorD(ref ColorHelper.Black, ref 色);
     	}
     }
 }

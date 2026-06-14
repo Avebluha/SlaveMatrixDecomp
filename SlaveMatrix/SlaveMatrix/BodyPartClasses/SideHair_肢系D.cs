@@ -10,26 +10,26 @@ namespace SlaveMatrix
     {
     	public bool 髪_表示 = true;
 
-    	public List<EleD> 肢_接続 = new List<EleD>();
+    	public List<ElementData> 肢_接続 = new List<ElementData>();
 
     	public SideHair_肢系D()
     	{
     		ThisType = GetType();
     	}
 
-    	public void 肢接続(EleD e)
+    	public void 肢接続(ElementData e)
     	{
     		肢_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.SideHair_肢系_肢_接続;
     	}
 
-    	public EleD SetRandom()
+    	public ElementData SetRandom()
     	{
     		return this;
     	}
 
-    	public override Ele GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
+    	public override Element GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
     	{
     		return new SideHair_肢系(DisUnit, 配色指定, 体配色, Med, this);
     	}

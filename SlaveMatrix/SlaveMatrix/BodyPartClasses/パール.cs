@@ -3,253 +3,253 @@ using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
-    public class パール : Ele
+    public class パール : Element
     {
-    	public Par X0Y0_軸;
+    	public ShapePart X0Y0_軸;
 
-    	public Par X0Y0_玉境界;
+    	public ShapePart X0Y0_玉境界;
 
-    	public Par X0Y0_玉1;
+    	public ShapePart X0Y0_玉1;
 
-    	public Par X0Y0_玉2;
+    	public ShapePart X0Y0_玉2;
 
-    	public Par X0Y0_玉3;
+    	public ShapePart X0Y0_玉3;
 
-    	public Par X0Y0_玉4;
+    	public ShapePart X0Y0_玉4;
 
-    	public Par X0Y0_玉5;
+    	public ShapePart X0Y0_玉5;
 
-    	public Par X0Y0_玉6;
+    	public ShapePart X0Y0_玉6;
 
-    	public Par X0Y0_玉7;
+    	public ShapePart X0Y0_玉7;
 
-    	public Par X0Y0_輪上;
+    	public ShapePart X0Y0_輪上;
 
-    	public Par X0Y0_輪下;
+    	public ShapePart X0Y0_輪下;
 
-    	public Par X0Y1_軸;
+    	public ShapePart X0Y1_軸;
 
-    	public Par X0Y1_玉境界;
+    	public ShapePart X0Y1_玉境界;
 
-    	public Par X0Y1_玉1;
+    	public ShapePart X0Y1_玉1;
 
-    	public Par X0Y1_玉2;
+    	public ShapePart X0Y1_玉2;
 
-    	public Par X0Y1_玉3;
+    	public ShapePart X0Y1_玉3;
 
-    	public Par X0Y1_玉4;
+    	public ShapePart X0Y1_玉4;
 
-    	public Par X0Y1_玉5;
+    	public ShapePart X0Y1_玉5;
 
-    	public Par X0Y1_玉6;
+    	public ShapePart X0Y1_玉6;
 
-    	public Par X0Y1_玉7;
+    	public ShapePart X0Y1_玉7;
 
-    	public Par X0Y1_輪上;
+    	public ShapePart X0Y1_輪上;
 
-    	public Par X0Y1_輪下;
+    	public ShapePart X0Y1_輪下;
 
-    	public Par X0Y2_軸;
+    	public ShapePart X0Y2_軸;
 
-    	public Par X0Y2_玉境界;
+    	public ShapePart X0Y2_玉境界;
 
-    	public Par X0Y2_玉1;
+    	public ShapePart X0Y2_玉1;
 
-    	public Par X0Y2_玉2;
+    	public ShapePart X0Y2_玉2;
 
-    	public Par X0Y2_玉3;
+    	public ShapePart X0Y2_玉3;
 
-    	public Par X0Y2_玉4;
+    	public ShapePart X0Y2_玉4;
 
-    	public Par X0Y2_玉5;
+    	public ShapePart X0Y2_玉5;
 
-    	public Par X0Y2_玉6;
+    	public ShapePart X0Y2_玉6;
 
-    	public Par X0Y2_輪上;
+    	public ShapePart X0Y2_輪上;
 
-    	public Par X0Y2_輪下;
+    	public ShapePart X0Y2_輪下;
 
-    	public Par X0Y3_軸;
+    	public ShapePart X0Y3_軸;
 
-    	public Par X0Y3_玉境界;
+    	public ShapePart X0Y3_玉境界;
 
-    	public Par X0Y3_玉1;
+    	public ShapePart X0Y3_玉1;
 
-    	public Par X0Y3_玉2;
+    	public ShapePart X0Y3_玉2;
 
-    	public Par X0Y3_玉3;
+    	public ShapePart X0Y3_玉3;
 
-    	public Par X0Y3_玉4;
+    	public ShapePart X0Y3_玉4;
 
-    	public Par X0Y3_玉5;
+    	public ShapePart X0Y3_玉5;
 
-    	public Par X0Y3_玉6;
+    	public ShapePart X0Y3_玉6;
 
-    	public Par X0Y3_輪上;
+    	public ShapePart X0Y3_輪上;
 
-    	public Par X0Y3_輪下;
+    	public ShapePart X0Y3_輪下;
 
-    	public Par X0Y4_軸;
+    	public ShapePart X0Y4_軸;
 
-    	public Par X0Y4_玉境界;
+    	public ShapePart X0Y4_玉境界;
 
-    	public Par X0Y4_玉1;
+    	public ShapePart X0Y4_玉1;
 
-    	public Par X0Y4_玉2;
+    	public ShapePart X0Y4_玉2;
 
-    	public Par X0Y4_玉3;
+    	public ShapePart X0Y4_玉3;
 
-    	public Par X0Y4_玉4;
+    	public ShapePart X0Y4_玉4;
 
-    	public Par X0Y4_玉5;
+    	public ShapePart X0Y4_玉5;
 
-    	public Par X0Y4_輪上;
+    	public ShapePart X0Y4_輪上;
 
-    	public Par X0Y4_輪下;
+    	public ShapePart X0Y4_輪下;
 
-    	public Par X0Y5_軸;
+    	public ShapePart X0Y5_軸;
 
-    	public Par X0Y5_玉境界;
+    	public ShapePart X0Y5_玉境界;
 
-    	public Par X0Y5_玉1;
+    	public ShapePart X0Y5_玉1;
 
-    	public Par X0Y5_玉2;
+    	public ShapePart X0Y5_玉2;
 
-    	public Par X0Y5_玉3;
+    	public ShapePart X0Y5_玉3;
 
-    	public Par X0Y5_玉4;
+    	public ShapePart X0Y5_玉4;
 
-    	public Par X0Y5_玉5;
+    	public ShapePart X0Y5_玉5;
 
-    	public Par X0Y5_輪上;
+    	public ShapePart X0Y5_輪上;
 
-    	public Par X0Y5_輪下;
+    	public ShapePart X0Y5_輪下;
 
-    	public Par X0Y6_軸;
+    	public ShapePart X0Y6_軸;
 
-    	public Par X0Y6_玉境界;
+    	public ShapePart X0Y6_玉境界;
 
-    	public Par X0Y6_玉1;
+    	public ShapePart X0Y6_玉1;
 
-    	public Par X0Y6_玉2;
+    	public ShapePart X0Y6_玉2;
 
-    	public Par X0Y6_玉3;
+    	public ShapePart X0Y6_玉3;
 
-    	public Par X0Y6_玉4;
+    	public ShapePart X0Y6_玉4;
 
-    	public Par X0Y6_輪上;
+    	public ShapePart X0Y6_輪上;
 
-    	public Par X0Y6_輪下;
+    	public ShapePart X0Y6_輪下;
 
-    	public Par X0Y7_軸;
+    	public ShapePart X0Y7_軸;
 
-    	public Par X0Y7_玉境界;
+    	public ShapePart X0Y7_玉境界;
 
-    	public Par X0Y7_玉1;
+    	public ShapePart X0Y7_玉1;
 
-    	public Par X0Y7_玉2;
+    	public ShapePart X0Y7_玉2;
 
-    	public Par X0Y7_玉3;
+    	public ShapePart X0Y7_玉3;
 
-    	public Par X0Y7_玉4;
+    	public ShapePart X0Y7_玉4;
 
-    	public Par X0Y7_輪上;
+    	public ShapePart X0Y7_輪上;
 
-    	public Par X0Y7_輪下;
+    	public ShapePart X0Y7_輪下;
 
-    	public Par X0Y8_軸;
+    	public ShapePart X0Y8_軸;
 
-    	public Par X0Y8_玉境界;
+    	public ShapePart X0Y8_玉境界;
 
-    	public Par X0Y8_玉1;
+    	public ShapePart X0Y8_玉1;
 
-    	public Par X0Y8_玉2;
+    	public ShapePart X0Y8_玉2;
 
-    	public Par X0Y8_玉3;
+    	public ShapePart X0Y8_玉3;
 
-    	public Par X0Y8_輪上;
+    	public ShapePart X0Y8_輪上;
 
-    	public Par X0Y8_輪下;
+    	public ShapePart X0Y8_輪下;
 
-    	public Par X0Y9_軸;
+    	public ShapePart X0Y9_軸;
 
-    	public Par X0Y9_玉境界;
+    	public ShapePart X0Y9_玉境界;
 
-    	public Par X0Y9_玉1;
+    	public ShapePart X0Y9_玉1;
 
-    	public Par X0Y9_玉2;
+    	public ShapePart X0Y9_玉2;
 
-    	public Par X0Y9_玉3;
+    	public ShapePart X0Y9_玉3;
 
-    	public Par X0Y9_輪上;
+    	public ShapePart X0Y9_輪上;
 
-    	public Par X0Y9_輪下;
+    	public ShapePart X0Y9_輪下;
 
-    	public Par X0Y10_軸;
+    	public ShapePart X0Y10_軸;
 
-    	public Par X0Y10_玉境界;
+    	public ShapePart X0Y10_玉境界;
 
-    	public Par X0Y10_玉1;
+    	public ShapePart X0Y10_玉1;
 
-    	public Par X0Y10_玉2;
+    	public ShapePart X0Y10_玉2;
 
-    	public Par X0Y10_輪上;
+    	public ShapePart X0Y10_輪上;
 
-    	public Par X0Y10_輪下;
+    	public ShapePart X0Y10_輪下;
 
-    	public Par X0Y11_軸;
+    	public ShapePart X0Y11_軸;
 
-    	public Par X0Y11_玉境界;
+    	public ShapePart X0Y11_玉境界;
 
-    	public Par X0Y11_玉1;
+    	public ShapePart X0Y11_玉1;
 
-    	public Par X0Y11_玉2;
+    	public ShapePart X0Y11_玉2;
 
-    	public Par X0Y11_輪上;
+    	public ShapePart X0Y11_輪上;
 
-    	public Par X0Y11_輪下;
+    	public ShapePart X0Y11_輪下;
 
-    	public Par X0Y12_軸;
+    	public ShapePart X0Y12_軸;
 
-    	public Par X0Y12_玉境界;
+    	public ShapePart X0Y12_玉境界;
 
-    	public Par X0Y12_玉;
+    	public ShapePart X0Y12_玉;
 
-    	public Par X0Y12_輪上;
+    	public ShapePart X0Y12_輪上;
 
-    	public Par X0Y12_輪下;
+    	public ShapePart X0Y12_輪下;
 
-    	public Par X0Y13_軸;
+    	public ShapePart X0Y13_軸;
 
-    	public Par X0Y13_玉境界;
+    	public ShapePart X0Y13_玉境界;
 
-    	public Par X0Y13_玉;
+    	public ShapePart X0Y13_玉;
 
-    	public Par X0Y13_輪上;
+    	public ShapePart X0Y13_輪上;
 
-    	public Par X0Y13_輪下;
+    	public ShapePart X0Y13_輪下;
 
-    	public Par X0Y14_軸;
+    	public ShapePart X0Y14_軸;
 
-    	public Par X0Y14_玉境界;
+    	public ShapePart X0Y14_玉境界;
 
-    	public Par X0Y14_輪上;
+    	public ShapePart X0Y14_輪上;
 
-    	public Par X0Y14_輪下;
+    	public ShapePart X0Y14_輪下;
 
-    	public Par X0Y15_軸;
+    	public ShapePart X0Y15_軸;
 
-    	public Par X0Y15_玉境界;
+    	public ShapePart X0Y15_玉境界;
 
-    	public Par X0Y15_輪上;
+    	public ShapePart X0Y15_輪上;
 
-    	public Par X0Y15_輪下;
+    	public ShapePart X0Y15_輪下;
 
-    	public Par X0Y16_軸;
+    	public ShapePart X0Y16_軸;
 
-    	public Par X0Y16_輪上境界;
+    	public ShapePart X0Y16_輪上境界;
 
-    	public Par X0Y16_輪下;
+    	public ShapePart X0Y16_輪下;
 
     	public ColorD 軸CD;
 
@@ -996,147 +996,147 @@ namespace SlaveMatrix
     	public パール(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, パールD e)
     	{
     		ThisType = GetType();
-    		Body = new Difs(Sta.カーソル["パール"]);
-    		Pars pars = Body[0][0];
-    		X0Y0_軸 = pars["軸"].ToPar();
-    		X0Y0_玉境界 = pars["玉境界"].ToPar();
-    		X0Y0_玉1 = pars["玉1"].ToPar();
-    		X0Y0_玉2 = pars["玉2"].ToPar();
-    		X0Y0_玉3 = pars["玉3"].ToPar();
-    		X0Y0_玉4 = pars["玉4"].ToPar();
-    		X0Y0_玉5 = pars["玉5"].ToPar();
-    		X0Y0_玉6 = pars["玉6"].ToPar();
-    		X0Y0_玉7 = pars["玉7"].ToPar();
-    		X0Y0_輪上 = pars["輪上"].ToPar();
-    		X0Y0_輪下 = pars["輪下"].ToPar();
-    		pars = Body[0][1];
-    		X0Y1_軸 = pars["軸"].ToPar();
-    		X0Y1_玉境界 = pars["玉境界"].ToPar();
-    		X0Y1_玉1 = pars["玉1"].ToPar();
-    		X0Y1_玉2 = pars["玉2"].ToPar();
-    		X0Y1_玉3 = pars["玉3"].ToPar();
-    		X0Y1_玉4 = pars["玉4"].ToPar();
-    		X0Y1_玉5 = pars["玉5"].ToPar();
-    		X0Y1_玉6 = pars["玉6"].ToPar();
-    		X0Y1_玉7 = pars["玉7"].ToPar();
-    		X0Y1_輪上 = pars["輪上"].ToPar();
-    		X0Y1_輪下 = pars["輪下"].ToPar();
-    		pars = Body[0][2];
-    		X0Y2_軸 = pars["軸"].ToPar();
-    		X0Y2_玉境界 = pars["玉境界"].ToPar();
-    		X0Y2_玉1 = pars["玉1"].ToPar();
-    		X0Y2_玉2 = pars["玉2"].ToPar();
-    		X0Y2_玉3 = pars["玉3"].ToPar();
-    		X0Y2_玉4 = pars["玉4"].ToPar();
-    		X0Y2_玉5 = pars["玉5"].ToPar();
-    		X0Y2_玉6 = pars["玉6"].ToPar();
-    		X0Y2_輪上 = pars["輪上"].ToPar();
-    		X0Y2_輪下 = pars["輪下"].ToPar();
-    		pars = Body[0][3];
-    		X0Y3_軸 = pars["軸"].ToPar();
-    		X0Y3_玉境界 = pars["玉境界"].ToPar();
-    		X0Y3_玉1 = pars["玉1"].ToPar();
-    		X0Y3_玉2 = pars["玉2"].ToPar();
-    		X0Y3_玉3 = pars["玉3"].ToPar();
-    		X0Y3_玉4 = pars["玉4"].ToPar();
-    		X0Y3_玉5 = pars["玉5"].ToPar();
-    		X0Y3_玉6 = pars["玉6"].ToPar();
-    		X0Y3_輪上 = pars["輪上"].ToPar();
-    		X0Y3_輪下 = pars["輪下"].ToPar();
-    		pars = Body[0][4];
-    		X0Y4_軸 = pars["軸"].ToPar();
-    		X0Y4_玉境界 = pars["玉境界"].ToPar();
-    		X0Y4_玉1 = pars["玉1"].ToPar();
-    		X0Y4_玉2 = pars["玉2"].ToPar();
-    		X0Y4_玉3 = pars["玉3"].ToPar();
-    		X0Y4_玉4 = pars["玉4"].ToPar();
-    		X0Y4_玉5 = pars["玉5"].ToPar();
-    		X0Y4_輪上 = pars["輪上"].ToPar();
-    		X0Y4_輪下 = pars["輪下"].ToPar();
-    		pars = Body[0][5];
-    		X0Y5_軸 = pars["軸"].ToPar();
-    		X0Y5_玉境界 = pars["玉境界"].ToPar();
-    		X0Y5_玉1 = pars["玉1"].ToPar();
-    		X0Y5_玉2 = pars["玉2"].ToPar();
-    		X0Y5_玉3 = pars["玉3"].ToPar();
-    		X0Y5_玉4 = pars["玉4"].ToPar();
-    		X0Y5_玉5 = pars["玉5"].ToPar();
-    		X0Y5_輪上 = pars["輪上"].ToPar();
-    		X0Y5_輪下 = pars["輪下"].ToPar();
-    		pars = Body[0][6];
-    		X0Y6_軸 = pars["軸"].ToPar();
-    		X0Y6_玉境界 = pars["玉境界"].ToPar();
-    		X0Y6_玉1 = pars["玉1"].ToPar();
-    		X0Y6_玉2 = pars["玉2"].ToPar();
-    		X0Y6_玉3 = pars["玉3"].ToPar();
-    		X0Y6_玉4 = pars["玉4"].ToPar();
-    		X0Y6_輪上 = pars["輪上"].ToPar();
-    		X0Y6_輪下 = pars["輪下"].ToPar();
-    		pars = Body[0][7];
-    		X0Y7_軸 = pars["軸"].ToPar();
-    		X0Y7_玉境界 = pars["玉境界"].ToPar();
-    		X0Y7_玉1 = pars["玉1"].ToPar();
-    		X0Y7_玉2 = pars["玉2"].ToPar();
-    		X0Y7_玉3 = pars["玉3"].ToPar();
-    		X0Y7_玉4 = pars["玉4"].ToPar();
-    		X0Y7_輪上 = pars["輪上"].ToPar();
-    		X0Y7_輪下 = pars["輪下"].ToPar();
-    		pars = Body[0][8];
-    		X0Y8_軸 = pars["軸"].ToPar();
-    		X0Y8_玉境界 = pars["玉境界"].ToPar();
-    		X0Y8_玉1 = pars["玉1"].ToPar();
-    		X0Y8_玉2 = pars["玉2"].ToPar();
-    		X0Y8_玉3 = pars["玉3"].ToPar();
-    		X0Y8_輪上 = pars["輪上"].ToPar();
-    		X0Y8_輪下 = pars["輪下"].ToPar();
-    		pars = Body[0][9];
-    		X0Y9_軸 = pars["軸"].ToPar();
-    		X0Y9_玉境界 = pars["玉境界"].ToPar();
-    		X0Y9_玉1 = pars["玉1"].ToPar();
-    		X0Y9_玉2 = pars["玉2"].ToPar();
-    		X0Y9_玉3 = pars["玉3"].ToPar();
-    		X0Y9_輪上 = pars["輪上"].ToPar();
-    		X0Y9_輪下 = pars["輪下"].ToPar();
-    		pars = Body[0][10];
-    		X0Y10_軸 = pars["軸"].ToPar();
-    		X0Y10_玉境界 = pars["玉境界"].ToPar();
-    		X0Y10_玉1 = pars["玉1"].ToPar();
-    		X0Y10_玉2 = pars["玉2"].ToPar();
-    		X0Y10_輪上 = pars["輪上"].ToPar();
-    		X0Y10_輪下 = pars["輪下"].ToPar();
-    		pars = Body[0][11];
-    		X0Y11_軸 = pars["軸"].ToPar();
-    		X0Y11_玉境界 = pars["玉境界"].ToPar();
-    		X0Y11_玉1 = pars["玉1"].ToPar();
-    		X0Y11_玉2 = pars["玉2"].ToPar();
-    		X0Y11_輪上 = pars["輪上"].ToPar();
-    		X0Y11_輪下 = pars["輪下"].ToPar();
-    		pars = Body[0][12];
-    		X0Y12_軸 = pars["軸"].ToPar();
-    		X0Y12_玉境界 = pars["玉境界"].ToPar();
-    		X0Y12_玉 = pars["玉"].ToPar();
-    		X0Y12_輪上 = pars["輪上"].ToPar();
-    		X0Y12_輪下 = pars["輪下"].ToPar();
-    		pars = Body[0][13];
-    		X0Y13_軸 = pars["軸"].ToPar();
-    		X0Y13_玉境界 = pars["玉境界"].ToPar();
-    		X0Y13_玉 = pars["玉"].ToPar();
-    		X0Y13_輪上 = pars["輪上"].ToPar();
-    		X0Y13_輪下 = pars["輪下"].ToPar();
-    		pars = Body[0][14];
-    		X0Y14_軸 = pars["軸"].ToPar();
-    		X0Y14_玉境界 = pars["玉境界"].ToPar();
-    		X0Y14_輪上 = pars["輪上"].ToPar();
-    		X0Y14_輪下 = pars["輪下"].ToPar();
-    		pars = Body[0][15];
-    		X0Y15_軸 = pars["軸"].ToPar();
-    		X0Y15_玉境界 = pars["玉境界"].ToPar();
-    		X0Y15_輪上 = pars["輪上"].ToPar();
-    		X0Y15_輪下 = pars["輪下"].ToPar();
-    		pars = Body[0][16];
-    		X0Y16_軸 = pars["軸"].ToPar();
-    		X0Y16_輪上境界 = pars["輪上境界"].ToPar();
-    		X0Y16_輪下 = pars["輪下"].ToPar();
+    		Body = new VariantGrid(GlobalState.カーソル["パール"]);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_軸 = partGroup["軸"].ToPar();
+    		X0Y0_玉境界 = partGroup["玉境界"].ToPar();
+    		X0Y0_玉1 = partGroup["玉1"].ToPar();
+    		X0Y0_玉2 = partGroup["玉2"].ToPar();
+    		X0Y0_玉3 = partGroup["玉3"].ToPar();
+    		X0Y0_玉4 = partGroup["玉4"].ToPar();
+    		X0Y0_玉5 = partGroup["玉5"].ToPar();
+    		X0Y0_玉6 = partGroup["玉6"].ToPar();
+    		X0Y0_玉7 = partGroup["玉7"].ToPar();
+    		X0Y0_輪上 = partGroup["輪上"].ToPar();
+    		X0Y0_輪下 = partGroup["輪下"].ToPar();
+    		partGroup = Body[0][1];
+    		X0Y1_軸 = partGroup["軸"].ToPar();
+    		X0Y1_玉境界 = partGroup["玉境界"].ToPar();
+    		X0Y1_玉1 = partGroup["玉1"].ToPar();
+    		X0Y1_玉2 = partGroup["玉2"].ToPar();
+    		X0Y1_玉3 = partGroup["玉3"].ToPar();
+    		X0Y1_玉4 = partGroup["玉4"].ToPar();
+    		X0Y1_玉5 = partGroup["玉5"].ToPar();
+    		X0Y1_玉6 = partGroup["玉6"].ToPar();
+    		X0Y1_玉7 = partGroup["玉7"].ToPar();
+    		X0Y1_輪上 = partGroup["輪上"].ToPar();
+    		X0Y1_輪下 = partGroup["輪下"].ToPar();
+    		partGroup = Body[0][2];
+    		X0Y2_軸 = partGroup["軸"].ToPar();
+    		X0Y2_玉境界 = partGroup["玉境界"].ToPar();
+    		X0Y2_玉1 = partGroup["玉1"].ToPar();
+    		X0Y2_玉2 = partGroup["玉2"].ToPar();
+    		X0Y2_玉3 = partGroup["玉3"].ToPar();
+    		X0Y2_玉4 = partGroup["玉4"].ToPar();
+    		X0Y2_玉5 = partGroup["玉5"].ToPar();
+    		X0Y2_玉6 = partGroup["玉6"].ToPar();
+    		X0Y2_輪上 = partGroup["輪上"].ToPar();
+    		X0Y2_輪下 = partGroup["輪下"].ToPar();
+    		partGroup = Body[0][3];
+    		X0Y3_軸 = partGroup["軸"].ToPar();
+    		X0Y3_玉境界 = partGroup["玉境界"].ToPar();
+    		X0Y3_玉1 = partGroup["玉1"].ToPar();
+    		X0Y3_玉2 = partGroup["玉2"].ToPar();
+    		X0Y3_玉3 = partGroup["玉3"].ToPar();
+    		X0Y3_玉4 = partGroup["玉4"].ToPar();
+    		X0Y3_玉5 = partGroup["玉5"].ToPar();
+    		X0Y3_玉6 = partGroup["玉6"].ToPar();
+    		X0Y3_輪上 = partGroup["輪上"].ToPar();
+    		X0Y3_輪下 = partGroup["輪下"].ToPar();
+    		partGroup = Body[0][4];
+    		X0Y4_軸 = partGroup["軸"].ToPar();
+    		X0Y4_玉境界 = partGroup["玉境界"].ToPar();
+    		X0Y4_玉1 = partGroup["玉1"].ToPar();
+    		X0Y4_玉2 = partGroup["玉2"].ToPar();
+    		X0Y4_玉3 = partGroup["玉3"].ToPar();
+    		X0Y4_玉4 = partGroup["玉4"].ToPar();
+    		X0Y4_玉5 = partGroup["玉5"].ToPar();
+    		X0Y4_輪上 = partGroup["輪上"].ToPar();
+    		X0Y4_輪下 = partGroup["輪下"].ToPar();
+    		partGroup = Body[0][5];
+    		X0Y5_軸 = partGroup["軸"].ToPar();
+    		X0Y5_玉境界 = partGroup["玉境界"].ToPar();
+    		X0Y5_玉1 = partGroup["玉1"].ToPar();
+    		X0Y5_玉2 = partGroup["玉2"].ToPar();
+    		X0Y5_玉3 = partGroup["玉3"].ToPar();
+    		X0Y5_玉4 = partGroup["玉4"].ToPar();
+    		X0Y5_玉5 = partGroup["玉5"].ToPar();
+    		X0Y5_輪上 = partGroup["輪上"].ToPar();
+    		X0Y5_輪下 = partGroup["輪下"].ToPar();
+    		partGroup = Body[0][6];
+    		X0Y6_軸 = partGroup["軸"].ToPar();
+    		X0Y6_玉境界 = partGroup["玉境界"].ToPar();
+    		X0Y6_玉1 = partGroup["玉1"].ToPar();
+    		X0Y6_玉2 = partGroup["玉2"].ToPar();
+    		X0Y6_玉3 = partGroup["玉3"].ToPar();
+    		X0Y6_玉4 = partGroup["玉4"].ToPar();
+    		X0Y6_輪上 = partGroup["輪上"].ToPar();
+    		X0Y6_輪下 = partGroup["輪下"].ToPar();
+    		partGroup = Body[0][7];
+    		X0Y7_軸 = partGroup["軸"].ToPar();
+    		X0Y7_玉境界 = partGroup["玉境界"].ToPar();
+    		X0Y7_玉1 = partGroup["玉1"].ToPar();
+    		X0Y7_玉2 = partGroup["玉2"].ToPar();
+    		X0Y7_玉3 = partGroup["玉3"].ToPar();
+    		X0Y7_玉4 = partGroup["玉4"].ToPar();
+    		X0Y7_輪上 = partGroup["輪上"].ToPar();
+    		X0Y7_輪下 = partGroup["輪下"].ToPar();
+    		partGroup = Body[0][8];
+    		X0Y8_軸 = partGroup["軸"].ToPar();
+    		X0Y8_玉境界 = partGroup["玉境界"].ToPar();
+    		X0Y8_玉1 = partGroup["玉1"].ToPar();
+    		X0Y8_玉2 = partGroup["玉2"].ToPar();
+    		X0Y8_玉3 = partGroup["玉3"].ToPar();
+    		X0Y8_輪上 = partGroup["輪上"].ToPar();
+    		X0Y8_輪下 = partGroup["輪下"].ToPar();
+    		partGroup = Body[0][9];
+    		X0Y9_軸 = partGroup["軸"].ToPar();
+    		X0Y9_玉境界 = partGroup["玉境界"].ToPar();
+    		X0Y9_玉1 = partGroup["玉1"].ToPar();
+    		X0Y9_玉2 = partGroup["玉2"].ToPar();
+    		X0Y9_玉3 = partGroup["玉3"].ToPar();
+    		X0Y9_輪上 = partGroup["輪上"].ToPar();
+    		X0Y9_輪下 = partGroup["輪下"].ToPar();
+    		partGroup = Body[0][10];
+    		X0Y10_軸 = partGroup["軸"].ToPar();
+    		X0Y10_玉境界 = partGroup["玉境界"].ToPar();
+    		X0Y10_玉1 = partGroup["玉1"].ToPar();
+    		X0Y10_玉2 = partGroup["玉2"].ToPar();
+    		X0Y10_輪上 = partGroup["輪上"].ToPar();
+    		X0Y10_輪下 = partGroup["輪下"].ToPar();
+    		partGroup = Body[0][11];
+    		X0Y11_軸 = partGroup["軸"].ToPar();
+    		X0Y11_玉境界 = partGroup["玉境界"].ToPar();
+    		X0Y11_玉1 = partGroup["玉1"].ToPar();
+    		X0Y11_玉2 = partGroup["玉2"].ToPar();
+    		X0Y11_輪上 = partGroup["輪上"].ToPar();
+    		X0Y11_輪下 = partGroup["輪下"].ToPar();
+    		partGroup = Body[0][12];
+    		X0Y12_軸 = partGroup["軸"].ToPar();
+    		X0Y12_玉境界 = partGroup["玉境界"].ToPar();
+    		X0Y12_玉 = partGroup["玉"].ToPar();
+    		X0Y12_輪上 = partGroup["輪上"].ToPar();
+    		X0Y12_輪下 = partGroup["輪下"].ToPar();
+    		partGroup = Body[0][13];
+    		X0Y13_軸 = partGroup["軸"].ToPar();
+    		X0Y13_玉境界 = partGroup["玉境界"].ToPar();
+    		X0Y13_玉 = partGroup["玉"].ToPar();
+    		X0Y13_輪上 = partGroup["輪上"].ToPar();
+    		X0Y13_輪下 = partGroup["輪下"].ToPar();
+    		partGroup = Body[0][14];
+    		X0Y14_軸 = partGroup["軸"].ToPar();
+    		X0Y14_玉境界 = partGroup["玉境界"].ToPar();
+    		X0Y14_輪上 = partGroup["輪上"].ToPar();
+    		X0Y14_輪下 = partGroup["輪下"].ToPar();
+    		partGroup = Body[0][15];
+    		X0Y15_軸 = partGroup["軸"].ToPar();
+    		X0Y15_玉境界 = partGroup["玉境界"].ToPar();
+    		X0Y15_輪上 = partGroup["輪上"].ToPar();
+    		X0Y15_輪下 = partGroup["輪下"].ToPar();
+    		partGroup = Body[0][16];
+    		X0Y16_軸 = partGroup["軸"].ToPar();
+    		X0Y16_輪上境界 = partGroup["輪上境界"].ToPar();
+    		X0Y16_輪下 = partGroup["輪下"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;
@@ -1500,19 +1500,19 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		Col.GetGrad(ref Col.Pink, out var ret);
-    		軸CD = new ColorD(ref Col.Black, ref ret);
-    		玉境界CD = new ColorD(ref Col.Black, ref ret);
-    		玉1CD = new ColorD(ref Col.Black, ref ret);
-    		玉2CD = new ColorD(ref Col.Black, ref ret);
-    		玉3CD = new ColorD(ref Col.Black, ref ret);
-    		玉4CD = new ColorD(ref Col.Black, ref ret);
-    		玉5CD = new ColorD(ref Col.Black, ref ret);
-    		玉6CD = new ColorD(ref Col.Black, ref ret);
-    		玉7CD = new ColorD(ref Col.Black, ref ret);
-    		輪上CD = new ColorD(ref Col.Black, ref ret);
-    		輪上境界CD = new ColorD(ref Col.Black, ref ret);
-    		輪下CD = new ColorD(ref Col.Black, ref ret);
+    		ColorHelper.GetGrad(ref ColorHelper.Pink, out var ret);
+    		軸CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		玉境界CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		玉1CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		玉2CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		玉3CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		玉4CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		玉5CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		玉6CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		玉7CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		輪上CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		輪上境界CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		輪下CD = new ColorD(ref ColorHelper.Black, ref ret);
     	}
     }
 }

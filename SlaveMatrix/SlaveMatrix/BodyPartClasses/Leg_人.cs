@@ -6,797 +6,797 @@ namespace SlaveMatrix
 {
     public class Leg_人 : Leg
     {
-    	public Par X0Y0_Leg;
+    	public ShapePart X0Y0_Leg;
 
-    	public Par X0Y0_筋;
+    	public ShapePart X0Y0_筋;
 
-    	public Par X0Y0_淫タトゥ_足首_タトゥ;
+    	public ShapePart X0Y0_淫タトゥ_足首_タトゥ;
 
-    	public Par X0Y0_淫タトゥ_足首_ハート1_タトゥ左;
+    	public ShapePart X0Y0_淫タトゥ_足首_ハート1_タトゥ左;
 
-    	public Par X0Y0_淫タトゥ_足首_ハート1_タトゥ右;
+    	public ShapePart X0Y0_淫タトゥ_足首_ハート1_タトゥ右;
 
-    	public Par X0Y0_淫タトゥ_足首_ハート3_タトゥ左;
+    	public ShapePart X0Y0_淫タトゥ_足首_ハート3_タトゥ左;
 
-    	public Par X0Y0_淫タトゥ_足首_ハート3_タトゥ右;
+    	public ShapePart X0Y0_淫タトゥ_足首_ハート3_タトゥ右;
 
-    	public Par X0Y0_淫タトゥ_足首_ハート2_タトゥ左;
+    	public ShapePart X0Y0_淫タトゥ_足首_ハート2_タトゥ左;
 
-    	public Par X0Y0_淫タトゥ_足首_ハート2_タトゥ右;
+    	public ShapePart X0Y0_淫タトゥ_足首_ハート2_タトゥ右;
 
-    	public Par X0Y0_淫タトゥ_ハート_タトゥ左;
+    	public ShapePart X0Y0_淫タトゥ_ハート_タトゥ左;
 
-    	public Par X0Y0_淫タトゥ_ハート_タトゥ右;
+    	public ShapePart X0Y0_淫タトゥ_ハート_タトゥ右;
 
-    	public Par X0Y0_淫タトゥ_タトゥ左;
+    	public ShapePart X0Y0_淫タトゥ_タトゥ左;
 
-    	public Par X0Y0_淫タトゥ_タトゥ右;
+    	public ShapePart X0Y0_淫タトゥ_タトゥ右;
 
-    	public Par X0Y0_悪タトゥ_文字1_文字a_枠;
+    	public ShapePart X0Y0_悪タトゥ_文字1_文字a_枠;
 
-    	public Par X0Y0_悪タトゥ_文字1_文字a_文字タトゥ1;
+    	public ShapePart X0Y0_悪タトゥ_文字1_文字a_文字タトゥ1;
 
-    	public Par X0Y0_悪タトゥ_文字1_文字a_文字タトゥ2;
+    	public ShapePart X0Y0_悪タトゥ_文字1_文字a_文字タトゥ2;
 
-    	public Par X0Y0_悪タトゥ_文字1_文字b_枠;
+    	public ShapePart X0Y0_悪タトゥ_文字1_文字b_枠;
 
-    	public Par X0Y0_悪タトゥ_文字1_文字b_文字タトゥ1;
+    	public ShapePart X0Y0_悪タトゥ_文字1_文字b_文字タトゥ1;
 
-    	public Par X0Y0_悪タトゥ_文字1_文字b_文字タトゥ2;
+    	public ShapePart X0Y0_悪タトゥ_文字1_文字b_文字タトゥ2;
 
-    	public Par X0Y0_悪タトゥ_文字1_文字c_枠;
+    	public ShapePart X0Y0_悪タトゥ_文字1_文字c_枠;
 
-    	public Par X0Y0_悪タトゥ_文字1_文字c_文字タトゥ1;
+    	public ShapePart X0Y0_悪タトゥ_文字1_文字c_文字タトゥ1;
 
-    	public Par X0Y0_悪タトゥ_文字1_文字c_文字タトゥ2;
+    	public ShapePart X0Y0_悪タトゥ_文字1_文字c_文字タトゥ2;
 
-    	public Par X0Y0_悪タトゥ_文字1_文字d_枠;
+    	public ShapePart X0Y0_悪タトゥ_文字1_文字d_枠;
 
-    	public Par X0Y0_悪タトゥ_文字1_文字d_文字タトゥ1;
+    	public ShapePart X0Y0_悪タトゥ_文字1_文字d_文字タトゥ1;
 
-    	public Par X0Y0_悪タトゥ_文字1_文字d_文字タトゥ2;
+    	public ShapePart X0Y0_悪タトゥ_文字1_文字d_文字タトゥ2;
 
-    	public Par X0Y0_悪タトゥ_文字1_文字e_枠;
+    	public ShapePart X0Y0_悪タトゥ_文字1_文字e_枠;
 
-    	public Par X0Y0_悪タトゥ_文字1_文字e_文字タトゥ1;
+    	public ShapePart X0Y0_悪タトゥ_文字1_文字e_文字タトゥ1;
 
-    	public Par X0Y0_悪タトゥ_文字1_文字e_文字タトゥ2;
+    	public ShapePart X0Y0_悪タトゥ_文字1_文字e_文字タトゥ2;
 
-    	public Par X0Y0_悪タトゥ_文字1_文字e_文字タトゥ3;
+    	public ShapePart X0Y0_悪タトゥ_文字1_文字e_文字タトゥ3;
 
-    	public Par X0Y0_悪タトゥ_文字2_文字a_枠;
+    	public ShapePart X0Y0_悪タトゥ_文字2_文字a_枠;
 
-    	public Par X0Y0_悪タトゥ_文字2_文字a_文字タトゥ1;
+    	public ShapePart X0Y0_悪タトゥ_文字2_文字a_文字タトゥ1;
 
-    	public Par X0Y0_悪タトゥ_文字2_文字a_文字タトゥ2;
+    	public ShapePart X0Y0_悪タトゥ_文字2_文字a_文字タトゥ2;
 
-    	public Par X0Y0_悪タトゥ_文字2_文字b_枠;
+    	public ShapePart X0Y0_悪タトゥ_文字2_文字b_枠;
 
-    	public Par X0Y0_悪タトゥ_文字2_文字b_文字タトゥ1;
+    	public ShapePart X0Y0_悪タトゥ_文字2_文字b_文字タトゥ1;
 
-    	public Par X0Y0_悪タトゥ_文字2_文字b_文字タトゥ2;
+    	public ShapePart X0Y0_悪タトゥ_文字2_文字b_文字タトゥ2;
 
-    	public Par X0Y0_悪タトゥ_文字2_文字c_枠;
+    	public ShapePart X0Y0_悪タトゥ_文字2_文字c_枠;
 
-    	public Par X0Y0_悪タトゥ_文字2_文字c_文字タトゥ1;
+    	public ShapePart X0Y0_悪タトゥ_文字2_文字c_文字タトゥ1;
 
-    	public Par X0Y0_悪タトゥ_文字2_文字c_文字タトゥ2;
+    	public ShapePart X0Y0_悪タトゥ_文字2_文字c_文字タトゥ2;
 
-    	public Par X0Y0_悪タトゥ_文字2_文字d_枠;
+    	public ShapePart X0Y0_悪タトゥ_文字2_文字d_枠;
 
-    	public Par X0Y0_悪タトゥ_文字2_文字d_文字タトゥ1;
+    	public ShapePart X0Y0_悪タトゥ_文字2_文字d_文字タトゥ1;
 
-    	public Par X0Y0_悪タトゥ_文字2_文字d_文字タトゥ2;
+    	public ShapePart X0Y0_悪タトゥ_文字2_文字d_文字タトゥ2;
 
-    	public Par X0Y0_悪タトゥ_文字2_文字e_枠;
+    	public ShapePart X0Y0_悪タトゥ_文字2_文字e_枠;
 
-    	public Par X0Y0_悪タトゥ_文字2_文字e_文字タトゥ1;
+    	public ShapePart X0Y0_悪タトゥ_文字2_文字e_文字タトゥ1;
 
-    	public Par X0Y0_悪タトゥ_文字2_文字e_文字タトゥ2;
+    	public ShapePart X0Y0_悪タトゥ_文字2_文字e_文字タトゥ2;
 
-    	public Par X0Y0_悪タトゥ_文字2_文字e_文字タトゥ3;
+    	public ShapePart X0Y0_悪タトゥ_文字2_文字e_文字タトゥ3;
 
-    	public Par X0Y0_悪タトゥ_タトゥ1;
+    	public ShapePart X0Y0_悪タトゥ_タトゥ1;
 
-    	public Par X0Y0_悪タトゥ_タトゥ2;
+    	public ShapePart X0Y0_悪タトゥ_タトゥ2;
 
-    	public Par X0Y0_悪タトゥ_逆十字_逆十字1;
+    	public ShapePart X0Y0_悪タトゥ_逆十字_逆十字1;
 
-    	public Par X0Y0_悪タトゥ_逆十字_逆十字2;
+    	public ShapePart X0Y0_悪タトゥ_逆十字_逆十字2;
 
-    	public Par X0Y0_悪タトゥ_タトゥ左;
+    	public ShapePart X0Y0_悪タトゥ_タトゥ左;
 
-    	public Par X0Y0_悪タトゥ_タトゥ右;
+    	public ShapePart X0Y0_悪タトゥ_タトゥ右;
 
-    	public Par X0Y0_紋柄_紋1;
+    	public ShapePart X0Y0_紋柄_紋1;
 
-    	public Par X0Y0_紋柄_紋2;
+    	public ShapePart X0Y0_紋柄_紋2;
 
-    	public Par X0Y0_紋柄_紋3;
+    	public ShapePart X0Y0_紋柄_紋3;
 
-    	public Par X0Y0_紋柄_紋4;
+    	public ShapePart X0Y0_紋柄_紋4;
 
-    	public Par X0Y0_獣性_獣毛1;
+    	public ShapePart X0Y0_獣性_獣毛1;
 
-    	public Par X0Y0_獣性_獣毛2;
+    	public ShapePart X0Y0_獣性_獣毛2;
 
-    	public Par X0Y0_獣性_獣毛3;
+    	public ShapePart X0Y0_獣性_獣毛3;
 
-    	public Par X0Y0_獣性_獣毛4;
+    	public ShapePart X0Y0_獣性_獣毛4;
 
-    	public Par X0Y0_獣性_獣毛5;
+    	public ShapePart X0Y0_獣性_獣毛5;
 
-    	public Par X0Y0_竜性_鱗_鱗1;
+    	public ShapePart X0Y0_竜性_鱗_鱗1;
 
-    	public Par X0Y0_竜性_鱗_鱗2;
+    	public ShapePart X0Y0_竜性_鱗_鱗2;
 
-    	public Par X0Y0_竜性_鱗_鱗3;
+    	public ShapePart X0Y0_竜性_鱗_鱗3;
 
-    	public Par X0Y0_竜性_鱗_鱗4;
+    	public ShapePart X0Y0_竜性_鱗_鱗4;
 
-    	public Par X0Y0_竜性_鱗_鱗5;
+    	public ShapePart X0Y0_竜性_鱗_鱗5;
 
-    	public Par X0Y0_竜性_鱗_鱗6;
+    	public ShapePart X0Y0_竜性_鱗_鱗6;
 
-    	public Par X0Y0_竜性_鱗_鱗7;
+    	public ShapePart X0Y0_竜性_鱗_鱗7;
 
-    	public Par X0Y0_竜性_棘_棘1;
+    	public ShapePart X0Y0_竜性_棘_棘1;
 
-    	public Par X0Y0_竜性_棘_棘2;
+    	public ShapePart X0Y0_竜性_棘_棘2;
 
-    	public Par X0Y0_竜性_棘_棘3;
+    	public ShapePart X0Y0_竜性_棘_棘3;
 
-    	public Par X0Y0_竜性_棘_棘4;
+    	public ShapePart X0Y0_竜性_棘_棘4;
 
-    	public Par X0Y0_竜性_棘_棘5;
+    	public ShapePart X0Y0_竜性_棘_棘5;
 
-    	public Par X0Y0_竜性_棘_棘6;
+    	public ShapePart X0Y0_竜性_棘_棘6;
 
-    	public Par X0Y0_虫性_棘_棘1;
+    	public ShapePart X0Y0_虫性_棘_棘1;
 
-    	public Par X0Y0_虫性_棘_棘2;
+    	public ShapePart X0Y0_虫性_棘_棘2;
 
-    	public Par X0Y0_虫性_棘_棘3;
+    	public ShapePart X0Y0_虫性_棘_棘3;
 
-    	public Par X0Y0_虫性_膝;
+    	public ShapePart X0Y0_虫性_膝;
 
-    	public Par X0Y0_虫性_線;
+    	public ShapePart X0Y0_虫性_線;
 
-    	public Par X0Y0_傷X1;
+    	public ShapePart X0Y0_傷X1;
 
-    	public Par X0Y0_傷X2;
+    	public ShapePart X0Y0_傷X2;
 
-    	public Par X0Y0_傷I1;
+    	public ShapePart X0Y0_傷I1;
 
-    	public Par X0Y0_傷I2;
+    	public ShapePart X0Y0_傷I2;
 
-    	public Par X0Y0_傷I3;
+    	public ShapePart X0Y0_傷I3;
 
-    	public Par X0Y0_傷I4;
+    	public ShapePart X0Y0_傷I4;
 
-    	public Par X0Y0_傷I5;
+    	public ShapePart X0Y0_傷I5;
 
-    	public Par X0Y0_ハイライト1;
+    	public ShapePart X0Y0_ハイライト1;
 
-    	public Par X0Y0_ハイライト2;
+    	public ShapePart X0Y0_ハイライト2;
 
-    	public Par X0Y0_パンスト_パンスト;
+    	public ShapePart X0Y0_パンスト_パンスト;
 
-    	public Par X0Y0_パンスト_ハイライト1;
+    	public ShapePart X0Y0_パンスト_ハイライト1;
 
-    	public Par X0Y0_パンスト_ハイライト2;
+    	public ShapePart X0Y0_パンスト_ハイライト2;
 
-    	public Par X0Y0_ソックス_ソックス;
+    	public ShapePart X0Y0_ソックス_ソックス;
 
-    	public Par X0Y0_ソックス_ハイライト1;
+    	public ShapePart X0Y0_ソックス_ハイライト1;
 
-    	public Par X0Y0_ソックス_ハイライト2;
+    	public ShapePart X0Y0_ソックス_ハイライト2;
 
-    	public Par X0Y0_ブーツ_タン_タン;
+    	public ShapePart X0Y0_ブーツ_タン_タン;
 
-    	public Par X0Y0_ブーツ_タン_縁_縁1;
+    	public ShapePart X0Y0_ブーツ_タン_縁_縁1;
 
-    	public Par X0Y0_ブーツ_タン_縁_縁2;
+    	public ShapePart X0Y0_ブーツ_タン_縁_縁2;
 
-    	public Par X0Y0_ブーツ_ブーツ_ブーツ;
+    	public ShapePart X0Y0_ブーツ_ブーツ_ブーツ;
 
-    	public Par X0Y0_ブーツ_ブーツ_皺_皺1;
+    	public ShapePart X0Y0_ブーツ_ブーツ_皺_皺1;
 
-    	public Par X0Y0_ブーツ_ブーツ_皺_皺2;
+    	public ShapePart X0Y0_ブーツ_ブーツ_皺_皺2;
 
-    	public Par X0Y0_ブーツ_ブーツ_縁_縁1;
+    	public ShapePart X0Y0_ブーツ_ブーツ_縁_縁1;
 
-    	public Par X0Y0_ブーツ_ブーツ_縁_縁2;
+    	public ShapePart X0Y0_ブーツ_ブーツ_縁_縁2;
 
-    	public Par X0Y0_ブーツ_ブーツ_縁_縁3;
+    	public ShapePart X0Y0_ブーツ_ブーツ_縁_縁3;
 
-    	public Par X0Y0_ブーツ_ブーツ_縁_縁4;
+    	public ShapePart X0Y0_ブーツ_ブーツ_縁_縁4;
 
-    	public Par X0Y0_ブーツ_柄;
+    	public ShapePart X0Y0_ブーツ_柄;
 
-    	public Par X0Y0_ブーツ_紐_紐;
+    	public ShapePart X0Y0_ブーツ_紐_紐;
 
-    	public Par X0Y0_ブーツ_紐_紐1_紐下_金具上_金具;
+    	public ShapePart X0Y0_ブーツ_紐_紐1_紐下_金具上_金具;
 
-    	public Par X0Y0_ブーツ_紐_紐1_紐下_金具上_穴;
+    	public ShapePart X0Y0_ブーツ_紐_紐1_紐下_金具上_穴;
 
-    	public Par X0Y0_ブーツ_紐_紐1_紐下_紐;
+    	public ShapePart X0Y0_ブーツ_紐_紐1_紐下_紐;
 
-    	public Par X0Y0_ブーツ_紐_紐1_紐上_金具上_金具;
+    	public ShapePart X0Y0_ブーツ_紐_紐1_紐上_金具上_金具;
 
-    	public Par X0Y0_ブーツ_紐_紐1_紐上_金具上_穴;
+    	public ShapePart X0Y0_ブーツ_紐_紐1_紐上_金具上_穴;
 
-    	public Par X0Y0_ブーツ_紐_紐1_紐上_紐;
+    	public ShapePart X0Y0_ブーツ_紐_紐1_紐上_紐;
 
-    	public Par X0Y0_ブーツ_紐_紐2_紐下_金具上_金具;
+    	public ShapePart X0Y0_ブーツ_紐_紐2_紐下_金具上_金具;
 
-    	public Par X0Y0_ブーツ_紐_紐2_紐下_金具上_穴;
+    	public ShapePart X0Y0_ブーツ_紐_紐2_紐下_金具上_穴;
 
-    	public Par X0Y0_ブーツ_紐_紐2_紐下_紐;
+    	public ShapePart X0Y0_ブーツ_紐_紐2_紐下_紐;
 
-    	public Par X0Y0_ブーツ_紐_紐2_紐上_金具上_金具;
+    	public ShapePart X0Y0_ブーツ_紐_紐2_紐上_金具上_金具;
 
-    	public Par X0Y0_ブーツ_紐_紐2_紐上_金具上_穴;
+    	public ShapePart X0Y0_ブーツ_紐_紐2_紐上_金具上_穴;
 
-    	public Par X0Y0_ブーツ_紐_紐2_紐上_紐;
+    	public ShapePart X0Y0_ブーツ_紐_紐2_紐上_紐;
 
-    	public Par X0Y0_ブーツ_紐_紐3_紐下_金具上_金具;
+    	public ShapePart X0Y0_ブーツ_紐_紐3_紐下_金具上_金具;
 
-    	public Par X0Y0_ブーツ_紐_紐3_紐下_金具上_穴;
+    	public ShapePart X0Y0_ブーツ_紐_紐3_紐下_金具上_穴;
 
-    	public Par X0Y0_ブーツ_紐_紐3_紐下_紐;
+    	public ShapePart X0Y0_ブーツ_紐_紐3_紐下_紐;
 
-    	public Par X0Y0_ブーツ_紐_紐3_紐上_金具上_金具;
+    	public ShapePart X0Y0_ブーツ_紐_紐3_紐上_金具上_金具;
 
-    	public Par X0Y0_ブーツ_紐_紐3_紐上_金具上_穴;
+    	public ShapePart X0Y0_ブーツ_紐_紐3_紐上_金具上_穴;
 
-    	public Par X0Y0_ブーツ_紐_紐3_紐上_紐;
+    	public ShapePart X0Y0_ブーツ_紐_紐3_紐上_紐;
 
-    	public Par X0Y0_ブーツ_紐_紐4_紐下_金具上_金具;
+    	public ShapePart X0Y0_ブーツ_紐_紐4_紐下_金具上_金具;
 
-    	public Par X0Y0_ブーツ_紐_紐4_紐下_金具上_穴;
+    	public ShapePart X0Y0_ブーツ_紐_紐4_紐下_金具上_穴;
 
-    	public Par X0Y0_ブーツ_紐_紐4_紐下_紐;
+    	public ShapePart X0Y0_ブーツ_紐_紐4_紐下_紐;
 
-    	public Par X0Y0_ブーツ_紐_紐4_紐上_金具上_金具;
+    	public ShapePart X0Y0_ブーツ_紐_紐4_紐上_金具上_金具;
 
-    	public Par X0Y0_ブーツ_紐_紐4_紐上_金具上_穴;
+    	public ShapePart X0Y0_ブーツ_紐_紐4_紐上_金具上_穴;
 
-    	public Par X0Y0_ブーツ_紐_紐4_紐上_紐;
+    	public ShapePart X0Y0_ブーツ_紐_紐4_紐上_紐;
 
-    	public Par X0Y0_ブーツ_紐_紐5_紐下_金具上_金具;
+    	public ShapePart X0Y0_ブーツ_紐_紐5_紐下_金具上_金具;
 
-    	public Par X0Y0_ブーツ_紐_紐5_紐下_金具上_穴;
+    	public ShapePart X0Y0_ブーツ_紐_紐5_紐下_金具上_穴;
 
-    	public Par X0Y0_ブーツ_紐_紐5_紐下_紐;
+    	public ShapePart X0Y0_ブーツ_紐_紐5_紐下_紐;
 
-    	public Par X0Y0_ブーツ_紐_紐5_紐上_金具上_金具;
+    	public ShapePart X0Y0_ブーツ_紐_紐5_紐上_金具上_金具;
 
-    	public Par X0Y0_ブーツ_紐_紐5_紐上_金具上_穴;
+    	public ShapePart X0Y0_ブーツ_紐_紐5_紐上_金具上_穴;
 
-    	public Par X0Y0_ブーツ_紐_紐5_紐上_紐;
+    	public ShapePart X0Y0_ブーツ_紐_紐5_紐上_紐;
 
-    	public Par X0Y0_ブーツ_紐_紐6_紐下_金具上_金具;
+    	public ShapePart X0Y0_ブーツ_紐_紐6_紐下_金具上_金具;
 
-    	public Par X0Y0_ブーツ_紐_紐6_紐下_金具上_穴;
+    	public ShapePart X0Y0_ブーツ_紐_紐6_紐下_金具上_穴;
 
-    	public Par X0Y0_ブーツ_紐_紐6_紐下_紐;
+    	public ShapePart X0Y0_ブーツ_紐_紐6_紐下_紐;
 
-    	public Par X0Y0_ブーツ_紐_紐6_紐上_金具上_金具;
+    	public ShapePart X0Y0_ブーツ_紐_紐6_紐上_金具上_金具;
 
-    	public Par X0Y0_ブーツ_紐_紐6_紐上_金具上_穴;
+    	public ShapePart X0Y0_ブーツ_紐_紐6_紐上_金具上_穴;
 
-    	public Par X0Y0_ブーツ_紐_紐6_紐上_紐;
+    	public ShapePart X0Y0_ブーツ_紐_紐6_紐上_紐;
 
-    	public Par X0Y0_ブーツ_紐_紐7_紐下_金具上_金具;
+    	public ShapePart X0Y0_ブーツ_紐_紐7_紐下_金具上_金具;
 
-    	public Par X0Y0_ブーツ_紐_紐7_紐下_金具上_穴;
+    	public ShapePart X0Y0_ブーツ_紐_紐7_紐下_金具上_穴;
 
-    	public Par X0Y0_ブーツ_紐_紐7_紐下_紐;
+    	public ShapePart X0Y0_ブーツ_紐_紐7_紐下_紐;
 
-    	public Par X0Y0_ブーツ_紐_紐7_紐上_金具上_金具;
+    	public ShapePart X0Y0_ブーツ_紐_紐7_紐上_金具上_金具;
 
-    	public Par X0Y0_ブーツ_紐_紐7_紐上_金具上_穴;
+    	public ShapePart X0Y0_ブーツ_紐_紐7_紐上_金具上_穴;
 
-    	public Par X0Y0_ブーツ_紐_紐7_紐上_紐;
+    	public ShapePart X0Y0_ブーツ_紐_紐7_紐上_紐;
 
-    	public Par X0Y0_ブーツ_紐_紐8_紐下_金具上_金具;
+    	public ShapePart X0Y0_ブーツ_紐_紐8_紐下_金具上_金具;
 
-    	public Par X0Y0_ブーツ_紐_紐8_紐下_金具上_穴;
+    	public ShapePart X0Y0_ブーツ_紐_紐8_紐下_金具上_穴;
 
-    	public Par X0Y0_ブーツ_紐_紐8_紐下_紐;
+    	public ShapePart X0Y0_ブーツ_紐_紐8_紐下_紐;
 
-    	public Par X0Y0_ブーツ_紐_紐8_紐上_金具上_金具;
+    	public ShapePart X0Y0_ブーツ_紐_紐8_紐上_金具上_金具;
 
-    	public Par X0Y0_ブーツ_紐_紐8_紐上_金具上_穴;
+    	public ShapePart X0Y0_ブーツ_紐_紐8_紐上_金具上_穴;
 
-    	public Par X0Y0_ブーツ_紐_紐8_紐上_紐;
+    	public ShapePart X0Y0_ブーツ_紐_紐8_紐上_紐;
 
-    	public Par X0Y0_ブーツ_紐_紐9_紐下_金具上_金具;
+    	public ShapePart X0Y0_ブーツ_紐_紐9_紐下_金具上_金具;
 
-    	public Par X0Y0_ブーツ_紐_紐9_紐下_金具上_穴;
+    	public ShapePart X0Y0_ブーツ_紐_紐9_紐下_金具上_穴;
 
-    	public Par X0Y0_ブーツ_紐_紐9_紐下_紐;
+    	public ShapePart X0Y0_ブーツ_紐_紐9_紐下_紐;
 
-    	public Par X0Y0_ブーツ_紐_紐9_紐上_金具上_金具;
+    	public ShapePart X0Y0_ブーツ_紐_紐9_紐上_金具上_金具;
 
-    	public Par X0Y0_ブーツ_紐_紐9_紐上_金具上_穴;
+    	public ShapePart X0Y0_ブーツ_紐_紐9_紐上_金具上_穴;
 
-    	public Par X0Y0_ブーツ_紐_紐9_紐上_紐;
+    	public ShapePart X0Y0_ブーツ_紐_紐9_紐上_紐;
 
-    	public Par X0Y0_ブーツ_紐_紐10_紐下_金具上_金具;
+    	public ShapePart X0Y0_ブーツ_紐_紐10_紐下_金具上_金具;
 
-    	public Par X0Y0_ブーツ_紐_紐10_紐下_金具上_穴;
+    	public ShapePart X0Y0_ブーツ_紐_紐10_紐下_金具上_穴;
 
-    	public Par X0Y0_ブーツ_紐_紐10_紐下_紐;
+    	public ShapePart X0Y0_ブーツ_紐_紐10_紐下_紐;
 
-    	public Par X0Y0_ブーツ_紐_紐10_紐上_金具上_金具;
+    	public ShapePart X0Y0_ブーツ_紐_紐10_紐上_金具上_金具;
 
-    	public Par X0Y0_ブーツ_紐_紐10_紐上_金具上_穴;
+    	public ShapePart X0Y0_ブーツ_紐_紐10_紐上_金具上_穴;
 
-    	public Par X0Y0_ブーツ_紐_紐10_紐上_紐;
+    	public ShapePart X0Y0_ブーツ_紐_紐10_紐上_紐;
 
-    	public Par X0Y0_ブーツ_紐_紐11_紐下_金具上_金具;
+    	public ShapePart X0Y0_ブーツ_紐_紐11_紐下_金具上_金具;
 
-    	public Par X0Y0_ブーツ_紐_紐11_紐下_金具上_穴;
+    	public ShapePart X0Y0_ブーツ_紐_紐11_紐下_金具上_穴;
 
-    	public Par X0Y0_ブーツ_紐_紐11_紐下_紐;
+    	public ShapePart X0Y0_ブーツ_紐_紐11_紐下_紐;
 
-    	public Par X0Y0_ブーツ_紐_紐11_紐上_金具上_金具;
+    	public ShapePart X0Y0_ブーツ_紐_紐11_紐上_金具上_金具;
 
-    	public Par X0Y0_ブーツ_紐_紐11_紐上_金具上_穴;
+    	public ShapePart X0Y0_ブーツ_紐_紐11_紐上_金具上_穴;
 
-    	public Par X0Y0_ブーツ_紐_紐11_紐上_紐;
+    	public ShapePart X0Y0_ブーツ_紐_紐11_紐上_紐;
 
-    	public Par X0Y0_ブーツ_紐_結び_紐左_紐3;
+    	public ShapePart X0Y0_ブーツ_紐_結び_紐左_紐3;
 
-    	public Par X0Y0_ブーツ_紐_結び_紐左_紐2;
+    	public ShapePart X0Y0_ブーツ_紐_結び_紐左_紐2;
 
-    	public Par X0Y0_ブーツ_紐_結び_紐左_紐1;
+    	public ShapePart X0Y0_ブーツ_紐_結び_紐左_紐1;
 
-    	public Par X0Y0_ブーツ_紐_結び_紐右_紐3;
+    	public ShapePart X0Y0_ブーツ_紐_結び_紐右_紐3;
 
-    	public Par X0Y0_ブーツ_紐_結び_紐右_紐2;
+    	public ShapePart X0Y0_ブーツ_紐_結び_紐右_紐2;
 
-    	public Par X0Y0_ブーツ_紐_結び_紐右_紐1;
+    	public ShapePart X0Y0_ブーツ_紐_結び_紐右_紐1;
 
-    	public Par X0Y0_ブーツ_紐_結び_結び目;
+    	public ShapePart X0Y0_ブーツ_紐_結び_結び目;
 
-    	public Par X0Y0_アーマ_ベース;
+    	public ShapePart X0Y0_アーマ_ベース;
 
-    	public Par X0Y0_アーマ_脛当_脛当1;
+    	public ShapePart X0Y0_アーマ_脛当_脛当1;
 
-    	public Par X0Y0_アーマ_脛当_脛当2;
+    	public ShapePart X0Y0_アーマ_脛当_脛当2;
 
-    	public Par X0Y0_アーマ_膝当;
+    	public ShapePart X0Y0_アーマ_膝当;
 
-    	public Par X0Y0_アーマ_穴_穴1;
+    	public ShapePart X0Y0_アーマ_穴_穴1;
 
-    	public Par X0Y0_アーマ_穴_穴2;
+    	public ShapePart X0Y0_アーマ_穴_穴2;
 
-    	public Par X0Y0_アーマ_穴_穴3;
+    	public ShapePart X0Y0_アーマ_穴_穴3;
 
-    	public Par X0Y0_アーマ_穴_穴4;
+    	public ShapePart X0Y0_アーマ_穴_穴4;
 
-    	public Par X0Y0_脚輪上_革;
+    	public ShapePart X0Y0_脚輪上_革;
 
-    	public Par X0Y0_脚輪上_金具1;
+    	public ShapePart X0Y0_脚輪上_金具1;
 
-    	public Par X0Y0_脚輪上_金具2;
+    	public ShapePart X0Y0_脚輪上_金具2;
 
-    	public Par X0Y0_脚輪上_金具3;
+    	public ShapePart X0Y0_脚輪上_金具3;
 
-    	public Par X0Y0_脚輪上_金具左;
+    	public ShapePart X0Y0_脚輪上_金具左;
 
-    	public Par X0Y0_脚輪上_金具右;
+    	public ShapePart X0Y0_脚輪上_金具右;
 
-    	public Par X0Y0_脚輪下_革;
+    	public ShapePart X0Y0_脚輪下_革;
 
-    	public Par X0Y0_脚輪下_金具1;
+    	public ShapePart X0Y0_脚輪下_金具1;
 
-    	public Par X0Y0_脚輪下_金具2;
+    	public ShapePart X0Y0_脚輪下_金具2;
 
-    	public Par X0Y0_脚輪下_金具3;
+    	public ShapePart X0Y0_脚輪下_金具3;
 
-    	public Par X0Y0_脚輪下_金具左;
+    	public ShapePart X0Y0_脚輪下_金具左;
 
-    	public Par X0Y0_脚輪下_金具右;
+    	public ShapePart X0Y0_脚輪下_金具右;
 
-    	public Par X0Y1_Leg;
+    	public ShapePart X0Y1_Leg;
 
-    	public Par X0Y1_筋;
+    	public ShapePart X0Y1_筋;
 
-    	public Par X0Y1_淫タトゥ_足首_タトゥ;
+    	public ShapePart X0Y1_淫タトゥ_足首_タトゥ;
 
-    	public Par X0Y1_淫タトゥ_足首_ハート1_タトゥ左;
+    	public ShapePart X0Y1_淫タトゥ_足首_ハート1_タトゥ左;
 
-    	public Par X0Y1_淫タトゥ_足首_ハート1_タトゥ右;
+    	public ShapePart X0Y1_淫タトゥ_足首_ハート1_タトゥ右;
 
-    	public Par X0Y1_淫タトゥ_足首_ハート3_タトゥ左;
+    	public ShapePart X0Y1_淫タトゥ_足首_ハート3_タトゥ左;
 
-    	public Par X0Y1_淫タトゥ_足首_ハート3_タトゥ右;
+    	public ShapePart X0Y1_淫タトゥ_足首_ハート3_タトゥ右;
 
-    	public Par X0Y1_淫タトゥ_足首_ハート2_タトゥ左;
+    	public ShapePart X0Y1_淫タトゥ_足首_ハート2_タトゥ左;
 
-    	public Par X0Y1_淫タトゥ_足首_ハート2_タトゥ右;
+    	public ShapePart X0Y1_淫タトゥ_足首_ハート2_タトゥ右;
 
-    	public Par X0Y1_淫タトゥ_ハート_タトゥ左;
+    	public ShapePart X0Y1_淫タトゥ_ハート_タトゥ左;
 
-    	public Par X0Y1_淫タトゥ_ハート_タトゥ右;
+    	public ShapePart X0Y1_淫タトゥ_ハート_タトゥ右;
 
-    	public Par X0Y1_淫タトゥ_タトゥ左;
+    	public ShapePart X0Y1_淫タトゥ_タトゥ左;
 
-    	public Par X0Y1_淫タトゥ_タトゥ右;
+    	public ShapePart X0Y1_淫タトゥ_タトゥ右;
 
-    	public Par X0Y1_悪タトゥ_文字1_文字a_枠;
+    	public ShapePart X0Y1_悪タトゥ_文字1_文字a_枠;
 
-    	public Par X0Y1_悪タトゥ_文字1_文字a_文字タトゥ1;
+    	public ShapePart X0Y1_悪タトゥ_文字1_文字a_文字タトゥ1;
 
-    	public Par X0Y1_悪タトゥ_文字1_文字a_文字タトゥ2;
+    	public ShapePart X0Y1_悪タトゥ_文字1_文字a_文字タトゥ2;
 
-    	public Par X0Y1_悪タトゥ_文字1_文字b_枠;
+    	public ShapePart X0Y1_悪タトゥ_文字1_文字b_枠;
 
-    	public Par X0Y1_悪タトゥ_文字1_文字b_文字タトゥ1;
+    	public ShapePart X0Y1_悪タトゥ_文字1_文字b_文字タトゥ1;
 
-    	public Par X0Y1_悪タトゥ_文字1_文字b_文字タトゥ2;
+    	public ShapePart X0Y1_悪タトゥ_文字1_文字b_文字タトゥ2;
 
-    	public Par X0Y1_悪タトゥ_文字1_文字c_枠;
+    	public ShapePart X0Y1_悪タトゥ_文字1_文字c_枠;
 
-    	public Par X0Y1_悪タトゥ_文字1_文字c_文字タトゥ1;
+    	public ShapePart X0Y1_悪タトゥ_文字1_文字c_文字タトゥ1;
 
-    	public Par X0Y1_悪タトゥ_文字1_文字c_文字タトゥ2;
+    	public ShapePart X0Y1_悪タトゥ_文字1_文字c_文字タトゥ2;
 
-    	public Par X0Y1_悪タトゥ_文字1_文字d_枠;
+    	public ShapePart X0Y1_悪タトゥ_文字1_文字d_枠;
 
-    	public Par X0Y1_悪タトゥ_文字1_文字d_文字タトゥ1;
+    	public ShapePart X0Y1_悪タトゥ_文字1_文字d_文字タトゥ1;
 
-    	public Par X0Y1_悪タトゥ_文字1_文字d_文字タトゥ2;
+    	public ShapePart X0Y1_悪タトゥ_文字1_文字d_文字タトゥ2;
 
-    	public Par X0Y1_悪タトゥ_文字1_文字e_枠;
+    	public ShapePart X0Y1_悪タトゥ_文字1_文字e_枠;
 
-    	public Par X0Y1_悪タトゥ_文字1_文字e_文字タトゥ1;
+    	public ShapePart X0Y1_悪タトゥ_文字1_文字e_文字タトゥ1;
 
-    	public Par X0Y1_悪タトゥ_文字1_文字e_文字タトゥ2;
+    	public ShapePart X0Y1_悪タトゥ_文字1_文字e_文字タトゥ2;
 
-    	public Par X0Y1_悪タトゥ_文字1_文字e_文字タトゥ3;
+    	public ShapePart X0Y1_悪タトゥ_文字1_文字e_文字タトゥ3;
 
-    	public Par X0Y1_悪タトゥ_文字2_文字a_枠;
+    	public ShapePart X0Y1_悪タトゥ_文字2_文字a_枠;
 
-    	public Par X0Y1_悪タトゥ_文字2_文字a_文字タトゥ1;
+    	public ShapePart X0Y1_悪タトゥ_文字2_文字a_文字タトゥ1;
 
-    	public Par X0Y1_悪タトゥ_文字2_文字a_文字タトゥ2;
+    	public ShapePart X0Y1_悪タトゥ_文字2_文字a_文字タトゥ2;
 
-    	public Par X0Y1_悪タトゥ_文字2_文字b_枠;
+    	public ShapePart X0Y1_悪タトゥ_文字2_文字b_枠;
 
-    	public Par X0Y1_悪タトゥ_文字2_文字b_文字タトゥ1;
+    	public ShapePart X0Y1_悪タトゥ_文字2_文字b_文字タトゥ1;
 
-    	public Par X0Y1_悪タトゥ_文字2_文字b_文字タトゥ2;
+    	public ShapePart X0Y1_悪タトゥ_文字2_文字b_文字タトゥ2;
 
-    	public Par X0Y1_悪タトゥ_文字2_文字c_枠;
+    	public ShapePart X0Y1_悪タトゥ_文字2_文字c_枠;
 
-    	public Par X0Y1_悪タトゥ_文字2_文字c_文字タトゥ1;
+    	public ShapePart X0Y1_悪タトゥ_文字2_文字c_文字タトゥ1;
 
-    	public Par X0Y1_悪タトゥ_文字2_文字c_文字タトゥ2;
+    	public ShapePart X0Y1_悪タトゥ_文字2_文字c_文字タトゥ2;
 
-    	public Par X0Y1_悪タトゥ_文字2_文字d_枠;
+    	public ShapePart X0Y1_悪タトゥ_文字2_文字d_枠;
 
-    	public Par X0Y1_悪タトゥ_文字2_文字d_文字タトゥ1;
+    	public ShapePart X0Y1_悪タトゥ_文字2_文字d_文字タトゥ1;
 
-    	public Par X0Y1_悪タトゥ_文字2_文字d_文字タトゥ2;
+    	public ShapePart X0Y1_悪タトゥ_文字2_文字d_文字タトゥ2;
 
-    	public Par X0Y1_悪タトゥ_文字2_文字e_枠;
+    	public ShapePart X0Y1_悪タトゥ_文字2_文字e_枠;
 
-    	public Par X0Y1_悪タトゥ_文字2_文字e_文字タトゥ1;
+    	public ShapePart X0Y1_悪タトゥ_文字2_文字e_文字タトゥ1;
 
-    	public Par X0Y1_悪タトゥ_文字2_文字e_文字タトゥ2;
+    	public ShapePart X0Y1_悪タトゥ_文字2_文字e_文字タトゥ2;
 
-    	public Par X0Y1_悪タトゥ_文字2_文字e_文字タトゥ3;
+    	public ShapePart X0Y1_悪タトゥ_文字2_文字e_文字タトゥ3;
 
-    	public Par X0Y1_悪タトゥ_タトゥ1;
+    	public ShapePart X0Y1_悪タトゥ_タトゥ1;
 
-    	public Par X0Y1_悪タトゥ_タトゥ2;
+    	public ShapePart X0Y1_悪タトゥ_タトゥ2;
 
-    	public Par X0Y1_悪タトゥ_逆十字_逆十字1;
+    	public ShapePart X0Y1_悪タトゥ_逆十字_逆十字1;
 
-    	public Par X0Y1_悪タトゥ_逆十字_逆十字2;
+    	public ShapePart X0Y1_悪タトゥ_逆十字_逆十字2;
 
-    	public Par X0Y1_悪タトゥ_タトゥ左;
+    	public ShapePart X0Y1_悪タトゥ_タトゥ左;
 
-    	public Par X0Y1_悪タトゥ_タトゥ右;
+    	public ShapePart X0Y1_悪タトゥ_タトゥ右;
 
-    	public Par X0Y1_紋柄_紋1;
+    	public ShapePart X0Y1_紋柄_紋1;
 
-    	public Par X0Y1_紋柄_紋2;
+    	public ShapePart X0Y1_紋柄_紋2;
 
-    	public Par X0Y1_紋柄_紋3;
+    	public ShapePart X0Y1_紋柄_紋3;
 
-    	public Par X0Y1_紋柄_紋4;
+    	public ShapePart X0Y1_紋柄_紋4;
 
-    	public Par X0Y1_獣性_獣毛1;
+    	public ShapePart X0Y1_獣性_獣毛1;
 
-    	public Par X0Y1_獣性_獣毛2;
+    	public ShapePart X0Y1_獣性_獣毛2;
 
-    	public Par X0Y1_獣性_獣毛3;
+    	public ShapePart X0Y1_獣性_獣毛3;
 
-    	public Par X0Y1_獣性_獣毛4;
+    	public ShapePart X0Y1_獣性_獣毛4;
 
-    	public Par X0Y1_獣性_獣毛5;
+    	public ShapePart X0Y1_獣性_獣毛5;
 
-    	public Par X0Y1_竜性_鱗_鱗1;
+    	public ShapePart X0Y1_竜性_鱗_鱗1;
 
-    	public Par X0Y1_竜性_鱗_鱗2;
+    	public ShapePart X0Y1_竜性_鱗_鱗2;
 
-    	public Par X0Y1_竜性_鱗_鱗3;
+    	public ShapePart X0Y1_竜性_鱗_鱗3;
 
-    	public Par X0Y1_竜性_鱗_鱗4;
+    	public ShapePart X0Y1_竜性_鱗_鱗4;
 
-    	public Par X0Y1_竜性_鱗_鱗5;
+    	public ShapePart X0Y1_竜性_鱗_鱗5;
 
-    	public Par X0Y1_竜性_鱗_鱗6;
+    	public ShapePart X0Y1_竜性_鱗_鱗6;
 
-    	public Par X0Y1_竜性_鱗_鱗7;
+    	public ShapePart X0Y1_竜性_鱗_鱗7;
 
-    	public Par X0Y1_竜性_棘_棘1;
+    	public ShapePart X0Y1_竜性_棘_棘1;
 
-    	public Par X0Y1_竜性_棘_棘2;
+    	public ShapePart X0Y1_竜性_棘_棘2;
 
-    	public Par X0Y1_竜性_棘_棘3;
+    	public ShapePart X0Y1_竜性_棘_棘3;
 
-    	public Par X0Y1_竜性_棘_棘4;
+    	public ShapePart X0Y1_竜性_棘_棘4;
 
-    	public Par X0Y1_竜性_棘_棘5;
+    	public ShapePart X0Y1_竜性_棘_棘5;
 
-    	public Par X0Y1_竜性_棘_棘6;
+    	public ShapePart X0Y1_竜性_棘_棘6;
 
-    	public Par X0Y1_虫性_棘_棘1;
+    	public ShapePart X0Y1_虫性_棘_棘1;
 
-    	public Par X0Y1_虫性_棘_棘2;
+    	public ShapePart X0Y1_虫性_棘_棘2;
 
-    	public Par X0Y1_虫性_棘_棘3;
+    	public ShapePart X0Y1_虫性_棘_棘3;
 
-    	public Par X0Y1_虫性_膝;
+    	public ShapePart X0Y1_虫性_膝;
 
-    	public Par X0Y1_虫性_線;
+    	public ShapePart X0Y1_虫性_線;
 
-    	public Par X0Y1_傷X1;
+    	public ShapePart X0Y1_傷X1;
 
-    	public Par X0Y1_傷X2;
+    	public ShapePart X0Y1_傷X2;
 
-    	public Par X0Y1_傷I1;
+    	public ShapePart X0Y1_傷I1;
 
-    	public Par X0Y1_傷I2;
+    	public ShapePart X0Y1_傷I2;
 
-    	public Par X0Y1_傷I3;
+    	public ShapePart X0Y1_傷I3;
 
-    	public Par X0Y1_傷I4;
+    	public ShapePart X0Y1_傷I4;
 
-    	public Par X0Y1_傷I5;
+    	public ShapePart X0Y1_傷I5;
 
-    	public Par X0Y1_ハイライト1;
+    	public ShapePart X0Y1_ハイライト1;
 
-    	public Par X0Y1_ハイライト2;
+    	public ShapePart X0Y1_ハイライト2;
 
-    	public Par X0Y1_パンスト_パンスト;
+    	public ShapePart X0Y1_パンスト_パンスト;
 
-    	public Par X0Y1_パンスト_ハイライト1;
+    	public ShapePart X0Y1_パンスト_ハイライト1;
 
-    	public Par X0Y1_パンスト_ハイライト2;
+    	public ShapePart X0Y1_パンスト_ハイライト2;
 
-    	public Par X0Y1_ソックス_ソックス;
+    	public ShapePart X0Y1_ソックス_ソックス;
 
-    	public Par X0Y1_ソックス_ハイライト1;
+    	public ShapePart X0Y1_ソックス_ハイライト1;
 
-    	public Par X0Y1_ソックス_ハイライト2;
+    	public ShapePart X0Y1_ソックス_ハイライト2;
 
-    	public Par X0Y1_ブーツ_タン_タン;
+    	public ShapePart X0Y1_ブーツ_タン_タン;
 
-    	public Par X0Y1_ブーツ_タン_縁_縁1;
+    	public ShapePart X0Y1_ブーツ_タン_縁_縁1;
 
-    	public Par X0Y1_ブーツ_タン_縁_縁2;
+    	public ShapePart X0Y1_ブーツ_タン_縁_縁2;
 
-    	public Par X0Y1_ブーツ_ブーツ_ブーツ;
+    	public ShapePart X0Y1_ブーツ_ブーツ_ブーツ;
 
-    	public Par X0Y1_ブーツ_ブーツ_皺_皺1;
+    	public ShapePart X0Y1_ブーツ_ブーツ_皺_皺1;
 
-    	public Par X0Y1_ブーツ_ブーツ_皺_皺2;
+    	public ShapePart X0Y1_ブーツ_ブーツ_皺_皺2;
 
-    	public Par X0Y1_ブーツ_ブーツ_縁_縁1;
+    	public ShapePart X0Y1_ブーツ_ブーツ_縁_縁1;
 
-    	public Par X0Y1_ブーツ_ブーツ_縁_縁2;
+    	public ShapePart X0Y1_ブーツ_ブーツ_縁_縁2;
 
-    	public Par X0Y1_ブーツ_ブーツ_縁_縁3;
+    	public ShapePart X0Y1_ブーツ_ブーツ_縁_縁3;
 
-    	public Par X0Y1_ブーツ_ブーツ_縁_縁4;
+    	public ShapePart X0Y1_ブーツ_ブーツ_縁_縁4;
 
-    	public Par X0Y1_ブーツ_柄;
+    	public ShapePart X0Y1_ブーツ_柄;
 
-    	public Par X0Y1_ブーツ_紐_紐;
+    	public ShapePart X0Y1_ブーツ_紐_紐;
 
-    	public Par X0Y1_ブーツ_紐_紐1_紐下_金具上_金具;
+    	public ShapePart X0Y1_ブーツ_紐_紐1_紐下_金具上_金具;
 
-    	public Par X0Y1_ブーツ_紐_紐1_紐下_金具上_穴;
+    	public ShapePart X0Y1_ブーツ_紐_紐1_紐下_金具上_穴;
 
-    	public Par X0Y1_ブーツ_紐_紐1_紐下_紐;
+    	public ShapePart X0Y1_ブーツ_紐_紐1_紐下_紐;
 
-    	public Par X0Y1_ブーツ_紐_紐1_紐上_金具上_金具;
+    	public ShapePart X0Y1_ブーツ_紐_紐1_紐上_金具上_金具;
 
-    	public Par X0Y1_ブーツ_紐_紐1_紐上_金具上_穴;
+    	public ShapePart X0Y1_ブーツ_紐_紐1_紐上_金具上_穴;
 
-    	public Par X0Y1_ブーツ_紐_紐1_紐上_紐;
+    	public ShapePart X0Y1_ブーツ_紐_紐1_紐上_紐;
 
-    	public Par X0Y1_ブーツ_紐_紐2_紐下_金具上_金具;
+    	public ShapePart X0Y1_ブーツ_紐_紐2_紐下_金具上_金具;
 
-    	public Par X0Y1_ブーツ_紐_紐2_紐下_金具上_穴;
+    	public ShapePart X0Y1_ブーツ_紐_紐2_紐下_金具上_穴;
 
-    	public Par X0Y1_ブーツ_紐_紐2_紐下_紐;
+    	public ShapePart X0Y1_ブーツ_紐_紐2_紐下_紐;
 
-    	public Par X0Y1_ブーツ_紐_紐2_紐上_金具上_金具;
+    	public ShapePart X0Y1_ブーツ_紐_紐2_紐上_金具上_金具;
 
-    	public Par X0Y1_ブーツ_紐_紐2_紐上_金具上_穴;
+    	public ShapePart X0Y1_ブーツ_紐_紐2_紐上_金具上_穴;
 
-    	public Par X0Y1_ブーツ_紐_紐2_紐上_紐;
+    	public ShapePart X0Y1_ブーツ_紐_紐2_紐上_紐;
 
-    	public Par X0Y1_ブーツ_紐_紐3_紐下_金具上_金具;
+    	public ShapePart X0Y1_ブーツ_紐_紐3_紐下_金具上_金具;
 
-    	public Par X0Y1_ブーツ_紐_紐3_紐下_金具上_穴;
+    	public ShapePart X0Y1_ブーツ_紐_紐3_紐下_金具上_穴;
 
-    	public Par X0Y1_ブーツ_紐_紐3_紐下_紐;
+    	public ShapePart X0Y1_ブーツ_紐_紐3_紐下_紐;
 
-    	public Par X0Y1_ブーツ_紐_紐3_紐上_金具上_金具;
+    	public ShapePart X0Y1_ブーツ_紐_紐3_紐上_金具上_金具;
 
-    	public Par X0Y1_ブーツ_紐_紐3_紐上_金具上_穴;
+    	public ShapePart X0Y1_ブーツ_紐_紐3_紐上_金具上_穴;
 
-    	public Par X0Y1_ブーツ_紐_紐3_紐上_紐;
+    	public ShapePart X0Y1_ブーツ_紐_紐3_紐上_紐;
 
-    	public Par X0Y1_ブーツ_紐_紐4_紐下_金具上_金具;
+    	public ShapePart X0Y1_ブーツ_紐_紐4_紐下_金具上_金具;
 
-    	public Par X0Y1_ブーツ_紐_紐4_紐下_金具上_穴;
+    	public ShapePart X0Y1_ブーツ_紐_紐4_紐下_金具上_穴;
 
-    	public Par X0Y1_ブーツ_紐_紐4_紐下_紐;
+    	public ShapePart X0Y1_ブーツ_紐_紐4_紐下_紐;
 
-    	public Par X0Y1_ブーツ_紐_紐4_紐上_金具上_金具;
+    	public ShapePart X0Y1_ブーツ_紐_紐4_紐上_金具上_金具;
 
-    	public Par X0Y1_ブーツ_紐_紐4_紐上_金具上_穴;
+    	public ShapePart X0Y1_ブーツ_紐_紐4_紐上_金具上_穴;
 
-    	public Par X0Y1_ブーツ_紐_紐4_紐上_紐;
+    	public ShapePart X0Y1_ブーツ_紐_紐4_紐上_紐;
 
-    	public Par X0Y1_ブーツ_紐_紐5_紐下_金具上_金具;
+    	public ShapePart X0Y1_ブーツ_紐_紐5_紐下_金具上_金具;
 
-    	public Par X0Y1_ブーツ_紐_紐5_紐下_金具上_穴;
+    	public ShapePart X0Y1_ブーツ_紐_紐5_紐下_金具上_穴;
 
-    	public Par X0Y1_ブーツ_紐_紐5_紐下_紐;
+    	public ShapePart X0Y1_ブーツ_紐_紐5_紐下_紐;
 
-    	public Par X0Y1_ブーツ_紐_紐5_紐上_金具上_金具;
+    	public ShapePart X0Y1_ブーツ_紐_紐5_紐上_金具上_金具;
 
-    	public Par X0Y1_ブーツ_紐_紐5_紐上_金具上_穴;
+    	public ShapePart X0Y1_ブーツ_紐_紐5_紐上_金具上_穴;
 
-    	public Par X0Y1_ブーツ_紐_紐5_紐上_紐;
+    	public ShapePart X0Y1_ブーツ_紐_紐5_紐上_紐;
 
-    	public Par X0Y1_ブーツ_紐_紐6_紐下_金具上_金具;
+    	public ShapePart X0Y1_ブーツ_紐_紐6_紐下_金具上_金具;
 
-    	public Par X0Y1_ブーツ_紐_紐6_紐下_金具上_穴;
+    	public ShapePart X0Y1_ブーツ_紐_紐6_紐下_金具上_穴;
 
-    	public Par X0Y1_ブーツ_紐_紐6_紐下_紐;
+    	public ShapePart X0Y1_ブーツ_紐_紐6_紐下_紐;
 
-    	public Par X0Y1_ブーツ_紐_紐6_紐上_金具上_金具;
+    	public ShapePart X0Y1_ブーツ_紐_紐6_紐上_金具上_金具;
 
-    	public Par X0Y1_ブーツ_紐_紐6_紐上_金具上_穴;
+    	public ShapePart X0Y1_ブーツ_紐_紐6_紐上_金具上_穴;
 
-    	public Par X0Y1_ブーツ_紐_紐6_紐上_紐;
+    	public ShapePart X0Y1_ブーツ_紐_紐6_紐上_紐;
 
-    	public Par X0Y1_ブーツ_紐_紐7_紐下_金具上_金具;
+    	public ShapePart X0Y1_ブーツ_紐_紐7_紐下_金具上_金具;
 
-    	public Par X0Y1_ブーツ_紐_紐7_紐下_金具上_穴;
+    	public ShapePart X0Y1_ブーツ_紐_紐7_紐下_金具上_穴;
 
-    	public Par X0Y1_ブーツ_紐_紐7_紐下_紐;
+    	public ShapePart X0Y1_ブーツ_紐_紐7_紐下_紐;
 
-    	public Par X0Y1_ブーツ_紐_紐7_紐上_金具上_金具;
+    	public ShapePart X0Y1_ブーツ_紐_紐7_紐上_金具上_金具;
 
-    	public Par X0Y1_ブーツ_紐_紐7_紐上_金具上_穴;
+    	public ShapePart X0Y1_ブーツ_紐_紐7_紐上_金具上_穴;
 
-    	public Par X0Y1_ブーツ_紐_紐7_紐上_紐;
+    	public ShapePart X0Y1_ブーツ_紐_紐7_紐上_紐;
 
-    	public Par X0Y1_ブーツ_紐_紐8_紐下_金具上_金具;
+    	public ShapePart X0Y1_ブーツ_紐_紐8_紐下_金具上_金具;
 
-    	public Par X0Y1_ブーツ_紐_紐8_紐下_金具上_穴;
+    	public ShapePart X0Y1_ブーツ_紐_紐8_紐下_金具上_穴;
 
-    	public Par X0Y1_ブーツ_紐_紐8_紐下_紐;
+    	public ShapePart X0Y1_ブーツ_紐_紐8_紐下_紐;
 
-    	public Par X0Y1_ブーツ_紐_紐8_紐上_金具上_金具;
+    	public ShapePart X0Y1_ブーツ_紐_紐8_紐上_金具上_金具;
 
-    	public Par X0Y1_ブーツ_紐_紐8_紐上_金具上_穴;
+    	public ShapePart X0Y1_ブーツ_紐_紐8_紐上_金具上_穴;
 
-    	public Par X0Y1_ブーツ_紐_紐8_紐上_紐;
+    	public ShapePart X0Y1_ブーツ_紐_紐8_紐上_紐;
 
-    	public Par X0Y1_ブーツ_紐_紐9_紐下_金具上_金具;
+    	public ShapePart X0Y1_ブーツ_紐_紐9_紐下_金具上_金具;
 
-    	public Par X0Y1_ブーツ_紐_紐9_紐下_金具上_穴;
+    	public ShapePart X0Y1_ブーツ_紐_紐9_紐下_金具上_穴;
 
-    	public Par X0Y1_ブーツ_紐_紐9_紐下_紐;
+    	public ShapePart X0Y1_ブーツ_紐_紐9_紐下_紐;
 
-    	public Par X0Y1_ブーツ_紐_紐9_紐上_金具上_金具;
+    	public ShapePart X0Y1_ブーツ_紐_紐9_紐上_金具上_金具;
 
-    	public Par X0Y1_ブーツ_紐_紐9_紐上_金具上_穴;
+    	public ShapePart X0Y1_ブーツ_紐_紐9_紐上_金具上_穴;
 
-    	public Par X0Y1_ブーツ_紐_紐9_紐上_紐;
+    	public ShapePart X0Y1_ブーツ_紐_紐9_紐上_紐;
 
-    	public Par X0Y1_ブーツ_紐_紐10_紐下_金具上_金具;
+    	public ShapePart X0Y1_ブーツ_紐_紐10_紐下_金具上_金具;
 
-    	public Par X0Y1_ブーツ_紐_紐10_紐下_金具上_穴;
+    	public ShapePart X0Y1_ブーツ_紐_紐10_紐下_金具上_穴;
 
-    	public Par X0Y1_ブーツ_紐_紐10_紐下_紐;
+    	public ShapePart X0Y1_ブーツ_紐_紐10_紐下_紐;
 
-    	public Par X0Y1_ブーツ_紐_紐10_紐上_金具上_金具;
+    	public ShapePart X0Y1_ブーツ_紐_紐10_紐上_金具上_金具;
 
-    	public Par X0Y1_ブーツ_紐_紐10_紐上_金具上_穴;
+    	public ShapePart X0Y1_ブーツ_紐_紐10_紐上_金具上_穴;
 
-    	public Par X0Y1_ブーツ_紐_紐10_紐上_紐;
+    	public ShapePart X0Y1_ブーツ_紐_紐10_紐上_紐;
 
-    	public Par X0Y1_ブーツ_紐_紐11_紐下_金具上_金具;
+    	public ShapePart X0Y1_ブーツ_紐_紐11_紐下_金具上_金具;
 
-    	public Par X0Y1_ブーツ_紐_紐11_紐下_金具上_穴;
+    	public ShapePart X0Y1_ブーツ_紐_紐11_紐下_金具上_穴;
 
-    	public Par X0Y1_ブーツ_紐_紐11_紐下_紐;
+    	public ShapePart X0Y1_ブーツ_紐_紐11_紐下_紐;
 
-    	public Par X0Y1_ブーツ_紐_紐11_紐上_金具上_金具;
+    	public ShapePart X0Y1_ブーツ_紐_紐11_紐上_金具上_金具;
 
-    	public Par X0Y1_ブーツ_紐_紐11_紐上_金具上_穴;
+    	public ShapePart X0Y1_ブーツ_紐_紐11_紐上_金具上_穴;
 
-    	public Par X0Y1_ブーツ_紐_紐11_紐上_紐;
+    	public ShapePart X0Y1_ブーツ_紐_紐11_紐上_紐;
 
-    	public Par X0Y1_ブーツ_紐_結び_紐左_紐3;
+    	public ShapePart X0Y1_ブーツ_紐_結び_紐左_紐3;
 
-    	public Par X0Y1_ブーツ_紐_結び_紐左_紐2;
+    	public ShapePart X0Y1_ブーツ_紐_結び_紐左_紐2;
 
-    	public Par X0Y1_ブーツ_紐_結び_紐左_紐1;
+    	public ShapePart X0Y1_ブーツ_紐_結び_紐左_紐1;
 
-    	public Par X0Y1_ブーツ_紐_結び_紐右_紐3;
+    	public ShapePart X0Y1_ブーツ_紐_結び_紐右_紐3;
 
-    	public Par X0Y1_ブーツ_紐_結び_紐右_紐2;
+    	public ShapePart X0Y1_ブーツ_紐_結び_紐右_紐2;
 
-    	public Par X0Y1_ブーツ_紐_結び_紐右_紐1;
+    	public ShapePart X0Y1_ブーツ_紐_結び_紐右_紐1;
 
-    	public Par X0Y1_ブーツ_紐_結び_結び目;
+    	public ShapePart X0Y1_ブーツ_紐_結び_結び目;
 
-    	public Par X0Y1_アーマ_ベース;
+    	public ShapePart X0Y1_アーマ_ベース;
 
-    	public Par X0Y1_アーマ_脛当_脛当1;
+    	public ShapePart X0Y1_アーマ_脛当_脛当1;
 
-    	public Par X0Y1_アーマ_脛当_脛当2;
+    	public ShapePart X0Y1_アーマ_脛当_脛当2;
 
-    	public Par X0Y1_アーマ_膝当;
+    	public ShapePart X0Y1_アーマ_膝当;
 
-    	public Par X0Y1_アーマ_穴_穴1;
+    	public ShapePart X0Y1_アーマ_穴_穴1;
 
-    	public Par X0Y1_アーマ_穴_穴2;
+    	public ShapePart X0Y1_アーマ_穴_穴2;
 
-    	public Par X0Y1_アーマ_穴_穴3;
+    	public ShapePart X0Y1_アーマ_穴_穴3;
 
-    	public Par X0Y1_アーマ_穴_穴4;
+    	public ShapePart X0Y1_アーマ_穴_穴4;
 
-    	public Par X0Y1_脚輪上_革;
+    	public ShapePart X0Y1_脚輪上_革;
 
-    	public Par X0Y1_脚輪上_金具1;
+    	public ShapePart X0Y1_脚輪上_金具1;
 
-    	public Par X0Y1_脚輪上_金具2;
+    	public ShapePart X0Y1_脚輪上_金具2;
 
-    	public Par X0Y1_脚輪上_金具3;
+    	public ShapePart X0Y1_脚輪上_金具3;
 
-    	public Par X0Y1_脚輪上_金具左;
+    	public ShapePart X0Y1_脚輪上_金具左;
 
-    	public Par X0Y1_脚輪上_金具右;
+    	public ShapePart X0Y1_脚輪上_金具右;
 
-    	public Par X0Y1_脚輪下_革;
+    	public ShapePart X0Y1_脚輪下_革;
 
-    	public Par X0Y1_脚輪下_金具1;
+    	public ShapePart X0Y1_脚輪下_金具1;
 
-    	public Par X0Y1_脚輪下_金具2;
+    	public ShapePart X0Y1_脚輪下_金具2;
 
-    	public Par X0Y1_脚輪下_金具3;
+    	public ShapePart X0Y1_脚輪下_金具3;
 
-    	public Par X0Y1_脚輪下_金具左;
+    	public ShapePart X0Y1_脚輪下_金具左;
 
-    	public Par X0Y1_脚輪下_金具右;
+    	public ShapePart X0Y1_脚輪下_金具右;
 
     	public ColorD LegCD;
 
@@ -1994,9 +1994,9 @@ namespace SlaveMatrix
 
     	public スタンプW 鞭痕;
 
-    	public Ele[] 脚輪下_接続;
+    	public Element[] 脚輪下_接続;
 
-    	public Ele[] 脚輪上_接続;
+    	public Element[] 脚輪上_接続;
 
     	public override bool 欠損
     	{
@@ -5758,14 +5758,14 @@ namespace SlaveMatrix
     		Leg_人 Leg_人2 = this;
     		ThisType = GetType();
             //Leg but if renamed to Leg it broke game
-    		Body = new Difs(Sta.脚左["Leg"]);
-    		Pars pars = Body[0][0];
-    		X0Y0_Leg = pars["脚"].ToPar();
-    		X0Y0_筋 = pars["筋"].ToPar();
-    		Pars pars2 = pars["淫タトゥ"].ToPars();
-    		Pars pars3 = pars2["足首"].ToPars();
+    		Body = new VariantGrid(GlobalState.脚左["Leg"]);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_Leg = partGroup["脚"].ToPar();
+    		X0Y0_筋 = partGroup["筋"].ToPar();
+    		PartGroup pars2 = partGroup["淫タトゥ"].ToPars();
+    		PartGroup pars3 = pars2["足首"].ToPars();
     		X0Y0_淫タトゥ_足首_タトゥ = pars3["タトゥ"].ToPar();
-    		Pars pars4 = pars3["ハート1"].ToPars();
+    		PartGroup pars4 = pars3["ハート1"].ToPars();
     		X0Y0_淫タトゥ_足首_ハート1_タトゥ左 = pars4["タトゥ左"].ToPar();
     		X0Y0_淫タトゥ_足首_ハート1_タトゥ右 = pars4["タトゥ右"].ToPar();
     		pars4 = pars3["ハート3"].ToPars();
@@ -5779,7 +5779,7 @@ namespace SlaveMatrix
     		X0Y0_淫タトゥ_ハート_タトゥ右 = pars3["タトゥ右"].ToPar();
     		X0Y0_淫タトゥ_タトゥ左 = pars2["タトゥ左"].ToPar();
     		X0Y0_淫タトゥ_タトゥ右 = pars2["タトゥ右"].ToPar();
-    		pars2 = pars["悪タトゥ"].ToPars();
+    		pars2 = partGroup["悪タトゥ"].ToPars();
     		pars3 = pars2["文字1"].ToPars();
     		pars4 = pars3["文字a"].ToPars();
     		X0Y0_悪タトゥ_文字1_文字a_枠 = pars4["枠"].ToPar();
@@ -5831,18 +5831,18 @@ namespace SlaveMatrix
     		X0Y0_悪タトゥ_逆十字_逆十字2 = pars3["逆十字2"].ToPar();
     		X0Y0_悪タトゥ_タトゥ左 = pars2["タトゥ左"].ToPar();
     		X0Y0_悪タトゥ_タトゥ右 = pars2["タトゥ右"].ToPar();
-    		pars2 = pars["紋柄"].ToPars();
+    		pars2 = partGroup["紋柄"].ToPars();
     		X0Y0_紋柄_紋1 = pars2["紋1"].ToPar();
     		X0Y0_紋柄_紋2 = pars2["紋2"].ToPar();
     		X0Y0_紋柄_紋3 = pars2["紋3"].ToPar();
     		X0Y0_紋柄_紋4 = pars2["紋4"].ToPar();
-    		pars2 = pars["獣性"].ToPars();
+    		pars2 = partGroup["獣性"].ToPars();
     		X0Y0_獣性_獣毛1 = pars2["獣毛1"].ToPar();
     		X0Y0_獣性_獣毛2 = pars2["獣毛2"].ToPar();
     		X0Y0_獣性_獣毛3 = pars2["獣毛3"].ToPar();
     		X0Y0_獣性_獣毛4 = pars2["獣毛4"].ToPar();
     		X0Y0_獣性_獣毛5 = pars2["獣毛5"].ToPar();
-    		pars2 = pars["竜性"].ToPars();
+    		pars2 = partGroup["竜性"].ToPars();
     		pars3 = pars2["鱗"].ToPars();
     		X0Y0_竜性_鱗_鱗1 = pars3["鱗1"].ToPar();
     		X0Y0_竜性_鱗_鱗2 = pars3["鱗2"].ToPar();
@@ -5858,31 +5858,31 @@ namespace SlaveMatrix
     		X0Y0_竜性_棘_棘4 = pars3["刺4"].ToPar();
     		X0Y0_竜性_棘_棘5 = pars3["刺5"].ToPar();
     		X0Y0_竜性_棘_棘6 = pars3["刺6"].ToPar();
-    		pars2 = pars["虫性"].ToPars();
+    		pars2 = partGroup["虫性"].ToPars();
     		pars3 = pars2["刺"].ToPars();
     		X0Y0_虫性_棘_棘1 = pars3["刺1"].ToPar();
     		X0Y0_虫性_棘_棘2 = pars3["刺2"].ToPar();
     		X0Y0_虫性_棘_棘3 = pars3["刺3"].ToPar();
     		X0Y0_虫性_膝 = pars2["膝"].ToPar();
     		X0Y0_虫性_線 = pars2["線"].ToPar();
-    		X0Y0_傷X1 = pars["傷X1"].ToPar();
-    		X0Y0_傷X2 = pars["傷X2"].ToPar();
-    		X0Y0_傷I1 = pars["傷I1"].ToPar();
-    		X0Y0_傷I2 = pars["傷I2"].ToPar();
-    		X0Y0_傷I3 = pars["傷I3"].ToPar();
-    		X0Y0_傷I4 = pars["傷I4"].ToPar();
-    		X0Y0_傷I5 = pars["傷I5"].ToPar();
-    		X0Y0_ハイライト1 = pars["ハイライト1"].ToPar();
-    		X0Y0_ハイライト2 = pars["ハイライト2"].ToPar();
-    		pars2 = pars["パンスト"].ToPars();
+    		X0Y0_傷X1 = partGroup["傷X1"].ToPar();
+    		X0Y0_傷X2 = partGroup["傷X2"].ToPar();
+    		X0Y0_傷I1 = partGroup["傷I1"].ToPar();
+    		X0Y0_傷I2 = partGroup["傷I2"].ToPar();
+    		X0Y0_傷I3 = partGroup["傷I3"].ToPar();
+    		X0Y0_傷I4 = partGroup["傷I4"].ToPar();
+    		X0Y0_傷I5 = partGroup["傷I5"].ToPar();
+    		X0Y0_ハイライト1 = partGroup["ハイライト1"].ToPar();
+    		X0Y0_ハイライト2 = partGroup["ハイライト2"].ToPar();
+    		pars2 = partGroup["パンスト"].ToPars();
     		X0Y0_パンスト_パンスト = pars2["パンスト"].ToPar();
     		X0Y0_パンスト_ハイライト1 = pars2["ハイライト1"].ToPar();
     		X0Y0_パンスト_ハイライト2 = pars2["ハイライト2"].ToPar();
-    		pars2 = pars["ソックス"].ToPars();
+    		pars2 = partGroup["ソックス"].ToPars();
     		X0Y0_ソックス_ソックス = pars2["ソックス"].ToPar();
     		X0Y0_ソックス_ハイライト1 = pars2["ハイライト1"].ToPar();
     		X0Y0_ソックス_ハイライト2 = pars2["ハイライト2"].ToPar();
-    		pars2 = pars["ブーツ"].ToPars();
+    		pars2 = partGroup["ブーツ"].ToPars();
     		pars3 = pars2["タン"].ToPars();
     		X0Y0_ブーツ_タン_タン = pars3["タン"].ToPar();
     		pars4 = pars3["縁"].ToPars();
@@ -5902,8 +5902,8 @@ namespace SlaveMatrix
     		pars3 = pars2["紐"].ToPars();
     		X0Y0_ブーツ_紐_紐 = pars3["紐"].ToPar();
     		pars4 = pars3["紐1"].ToPars();
-    		Pars pars5 = pars4["紐下"].ToPars();
-    		Pars pars6 = pars5["金具上"].ToPars();
+    		PartGroup pars5 = pars4["紐下"].ToPars();
+    		PartGroup pars6 = pars5["金具上"].ToPars();
     		X0Y0_ブーツ_紐_紐1_紐下_金具上_金具 = pars6["金具"].ToPar();
     		X0Y0_ブーツ_紐_紐1_紐下_金具上_穴 = pars6["穴"].ToPar();
     		X0Y0_ブーツ_紐_紐1_紐下_紐 = pars5["紐"].ToPar();
@@ -6032,7 +6032,7 @@ namespace SlaveMatrix
     		X0Y0_ブーツ_紐_結び_紐右_紐2 = pars5["紐2"].ToPar();
     		X0Y0_ブーツ_紐_結び_紐右_紐1 = pars5["紐1"].ToPar();
     		X0Y0_ブーツ_紐_結び_結び目 = pars4["結び目"].ToPar();
-    		pars2 = pars["アーマ"].ToPars();
+    		pars2 = partGroup["アーマ"].ToPars();
     		X0Y0_アーマ_ベース = pars2["ベース"].ToPar();
     		pars3 = pars2["脛当"].ToPars();
     		X0Y0_アーマ_脛当_脛当1 = pars3["脛当1"].ToPar();
@@ -6043,24 +6043,24 @@ namespace SlaveMatrix
     		X0Y0_アーマ_穴_穴2 = pars3["穴2"].ToPar();
     		X0Y0_アーマ_穴_穴3 = pars3["穴3"].ToPar();
     		X0Y0_アーマ_穴_穴4 = pars3["穴4"].ToPar();
-    		pars2 = pars["脚輪上"].ToPars();
+    		pars2 = partGroup["脚輪上"].ToPars();
     		X0Y0_脚輪上_革 = pars2["革"].ToPar();
     		X0Y0_脚輪上_金具1 = pars2["金具1"].ToPar();
     		X0Y0_脚輪上_金具2 = pars2["金具2"].ToPar();
     		X0Y0_脚輪上_金具3 = pars2["金具3"].ToPar();
     		X0Y0_脚輪上_金具左 = pars2["金具左"].ToPar();
     		X0Y0_脚輪上_金具右 = pars2["金具右"].ToPar();
-    		pars2 = pars["脚輪下"].ToPars();
+    		pars2 = partGroup["脚輪下"].ToPars();
     		X0Y0_脚輪下_革 = pars2["革"].ToPar();
     		X0Y0_脚輪下_金具1 = pars2["金具1"].ToPar();
     		X0Y0_脚輪下_金具2 = pars2["金具2"].ToPar();
     		X0Y0_脚輪下_金具3 = pars2["金具3"].ToPar();
     		X0Y0_脚輪下_金具左 = pars2["金具左"].ToPar();
     		X0Y0_脚輪下_金具右 = pars2["金具右"].ToPar();
-    		pars = Body[0][1];
-    		X0Y1_Leg = pars["脚"].ToPar();
-    		X0Y1_筋 = pars["筋"].ToPar();
-    		pars2 = pars["淫タトゥ"].ToPars();
+    		partGroup = Body[0][1];
+    		X0Y1_Leg = partGroup["脚"].ToPar();
+    		X0Y1_筋 = partGroup["筋"].ToPar();
+    		pars2 = partGroup["淫タトゥ"].ToPars();
     		pars3 = pars2["足首"].ToPars();
     		X0Y1_淫タトゥ_足首_タトゥ = pars3["タトゥ"].ToPar();
     		pars4 = pars3["ハート1"].ToPars();
@@ -6077,7 +6077,7 @@ namespace SlaveMatrix
     		X0Y1_淫タトゥ_ハート_タトゥ右 = pars3["タトゥ右"].ToPar();
     		X0Y1_淫タトゥ_タトゥ左 = pars2["タトゥ左"].ToPar();
     		X0Y1_淫タトゥ_タトゥ右 = pars2["タトゥ右"].ToPar();
-    		pars2 = pars["悪タトゥ"].ToPars();
+    		pars2 = partGroup["悪タトゥ"].ToPars();
     		pars3 = pars2["文字1"].ToPars();
     		pars4 = pars3["文字a"].ToPars();
     		X0Y1_悪タトゥ_文字1_文字a_枠 = pars4["枠"].ToPar();
@@ -6129,18 +6129,18 @@ namespace SlaveMatrix
     		X0Y1_悪タトゥ_逆十字_逆十字2 = pars3["逆十字2"].ToPar();
     		X0Y1_悪タトゥ_タトゥ左 = pars2["タトゥ左"].ToPar();
     		X0Y1_悪タトゥ_タトゥ右 = pars2["タトゥ右"].ToPar();
-    		pars2 = pars["紋柄"].ToPars();
+    		pars2 = partGroup["紋柄"].ToPars();
     		X0Y1_紋柄_紋1 = pars2["紋1"].ToPar();
     		X0Y1_紋柄_紋2 = pars2["紋2"].ToPar();
     		X0Y1_紋柄_紋3 = pars2["紋3"].ToPar();
     		X0Y1_紋柄_紋4 = pars2["紋4"].ToPar();
-    		pars2 = pars["獣性"].ToPars();
+    		pars2 = partGroup["獣性"].ToPars();
     		X0Y1_獣性_獣毛1 = pars2["獣毛1"].ToPar();
     		X0Y1_獣性_獣毛2 = pars2["獣毛2"].ToPar();
     		X0Y1_獣性_獣毛3 = pars2["獣毛3"].ToPar();
     		X0Y1_獣性_獣毛4 = pars2["獣毛4"].ToPar();
     		X0Y1_獣性_獣毛5 = pars2["獣毛5"].ToPar();
-    		pars2 = pars["竜性"].ToPars();
+    		pars2 = partGroup["竜性"].ToPars();
     		pars3 = pars2["鱗"].ToPars();
     		X0Y1_竜性_鱗_鱗1 = pars3["鱗1"].ToPar();
     		X0Y1_竜性_鱗_鱗2 = pars3["鱗2"].ToPar();
@@ -6156,31 +6156,31 @@ namespace SlaveMatrix
     		X0Y1_竜性_棘_棘4 = pars3["刺4"].ToPar();
     		X0Y1_竜性_棘_棘5 = pars3["刺5"].ToPar();
     		X0Y1_竜性_棘_棘6 = pars3["刺6"].ToPar();
-    		pars2 = pars["虫性"].ToPars();
+    		pars2 = partGroup["虫性"].ToPars();
     		pars3 = pars2["刺"].ToPars();
     		X0Y1_虫性_棘_棘1 = pars3["刺1"].ToPar();
     		X0Y1_虫性_棘_棘2 = pars3["刺2"].ToPar();
     		X0Y1_虫性_棘_棘3 = pars3["刺3"].ToPar();
     		X0Y1_虫性_膝 = pars2["膝"].ToPar();
     		X0Y1_虫性_線 = pars2["線"].ToPar();
-    		X0Y1_傷X1 = pars["傷X1"].ToPar();
-    		X0Y1_傷X2 = pars["傷X2"].ToPar();
-    		X0Y1_傷I1 = pars["傷I1"].ToPar();
-    		X0Y1_傷I2 = pars["傷I2"].ToPar();
-    		X0Y1_傷I3 = pars["傷I3"].ToPar();
-    		X0Y1_傷I4 = pars["傷I4"].ToPar();
-    		X0Y1_傷I5 = pars["傷I5"].ToPar();
-    		X0Y1_ハイライト1 = pars["ハイライト1"].ToPar();
-    		X0Y1_ハイライト2 = pars["ハイライト2"].ToPar();
-    		pars2 = pars["パンスト"].ToPars();
+    		X0Y1_傷X1 = partGroup["傷X1"].ToPar();
+    		X0Y1_傷X2 = partGroup["傷X2"].ToPar();
+    		X0Y1_傷I1 = partGroup["傷I1"].ToPar();
+    		X0Y1_傷I2 = partGroup["傷I2"].ToPar();
+    		X0Y1_傷I3 = partGroup["傷I3"].ToPar();
+    		X0Y1_傷I4 = partGroup["傷I4"].ToPar();
+    		X0Y1_傷I5 = partGroup["傷I5"].ToPar();
+    		X0Y1_ハイライト1 = partGroup["ハイライト1"].ToPar();
+    		X0Y1_ハイライト2 = partGroup["ハイライト2"].ToPar();
+    		pars2 = partGroup["パンスト"].ToPars();
     		X0Y1_パンスト_パンスト = pars2["パンスト"].ToPar();
     		X0Y1_パンスト_ハイライト1 = pars2["ハイライト1"].ToPar();
     		X0Y1_パンスト_ハイライト2 = pars2["ハイライト2"].ToPar();
-    		pars2 = pars["ソックス"].ToPars();
+    		pars2 = partGroup["ソックス"].ToPars();
     		X0Y1_ソックス_ソックス = pars2["ソックス"].ToPar();
     		X0Y1_ソックス_ハイライト1 = pars2["ハイライト1"].ToPar();
     		X0Y1_ソックス_ハイライト2 = pars2["ハイライト2"].ToPar();
-    		pars2 = pars["ブーツ"].ToPars();
+    		pars2 = partGroup["ブーツ"].ToPars();
     		pars3 = pars2["タン"].ToPars();
     		X0Y1_ブーツ_タン_タン = pars3["タン"].ToPar();
     		pars4 = pars3["縁"].ToPars();
@@ -6330,7 +6330,7 @@ namespace SlaveMatrix
     		X0Y1_ブーツ_紐_結び_紐右_紐2 = pars5["紐2"].ToPar();
     		X0Y1_ブーツ_紐_結び_紐右_紐1 = pars5["紐1"].ToPar();
     		X0Y1_ブーツ_紐_結び_結び目 = pars4["結び目"].ToPar();
-    		pars2 = pars["アーマ"].ToPars();
+    		pars2 = partGroup["アーマ"].ToPars();
     		X0Y1_アーマ_ベース = pars2["ベース"].ToPar();
     		pars3 = pars2["脛当"].ToPars();
     		X0Y1_アーマ_脛当_脛当1 = pars3["脛当1"].ToPar();
@@ -6341,14 +6341,14 @@ namespace SlaveMatrix
     		X0Y1_アーマ_穴_穴2 = pars3["穴2"].ToPar();
     		X0Y1_アーマ_穴_穴3 = pars3["穴3"].ToPar();
     		X0Y1_アーマ_穴_穴4 = pars3["穴4"].ToPar();
-    		pars2 = pars["脚輪上"].ToPars();
+    		pars2 = partGroup["脚輪上"].ToPars();
     		X0Y1_脚輪上_革 = pars2["革"].ToPar();
     		X0Y1_脚輪上_金具1 = pars2["金具1"].ToPar();
     		X0Y1_脚輪上_金具2 = pars2["金具2"].ToPar();
     		X0Y1_脚輪上_金具3 = pars2["金具3"].ToPar();
     		X0Y1_脚輪上_金具左 = pars2["金具左"].ToPar();
     		X0Y1_脚輪上_金具右 = pars2["金具右"].ToPar();
-    		pars2 = pars["脚輪下"].ToPars();
+    		pars2 = partGroup["脚輪下"].ToPars();
     		X0Y1_脚輪下_革 = pars2["革"].ToPar();
     		X0Y1_脚輪下_金具1 = pars2["金具1"].ToPar();
     		X0Y1_脚輪下_金具2 = pars2["金具2"].ToPar();
@@ -6595,10 +6595,10 @@ namespace SlaveMatrix
     		{
     			表示 = false;
     		}
-    		Ele f;
+    		Element f;
     		if (e.足_接続.Count > 0)
     		{
-    			足_接続 = e.足_接続.Select(delegate(EleD g)
+    			足_接続 = e.足_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = Leg_人2;
@@ -6609,7 +6609,7 @@ namespace SlaveMatrix
     		}
     		if (e.脚輪下_接続.Count > 0)
     		{
-    			脚輪下_接続 = e.脚輪下_接続.Select(delegate(EleD g)
+    			脚輪下_接続 = e.脚輪下_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = Leg_人2;
@@ -6620,7 +6620,7 @@ namespace SlaveMatrix
     		}
     		if (e.脚輪上_接続.Count > 0)
     		{
-    			脚輪上_接続 = e.脚輪上_接続.Select(delegate(EleD g)
+    			脚輪上_接続 = e.脚輪上_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = Leg_人2;
@@ -7496,7 +7496,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override bool Is布(Par p)
+    	public override bool Is布(ShapePart p)
     	{
     		if (p != X0Y0_パンスト_パンスト && p != X0Y0_パンスト_ハイライト1 && p != X0Y0_パンスト_ハイライト2 && p != X0Y0_ソックス_ソックス && p != X0Y0_ソックス_ハイライト1 && p != X0Y0_ソックス_ハイライト2 && p != X0Y1_パンスト_パンスト && p != X0Y1_パンスト_ハイライト1 && p != X0Y1_パンスト_ハイライト2 && p != X0Y1_ソックス_ソックス && p != X0Y1_ソックス_ハイライト1)
     		{
@@ -7505,7 +7505,7 @@ namespace SlaveMatrix
     		return true;
     	}
 
-    	public override bool Is革(Par p)
+    	public override bool Is革(ShapePart p)
     	{
     		if (p != X0Y0_ブーツ_タン_タン && p != X0Y0_ブーツ_タン_縁_縁1 && p != X0Y0_ブーツ_タン_縁_縁2 && p != X0Y0_ブーツ_ブーツ_ブーツ && p != X0Y0_ブーツ_ブーツ_皺_皺1 && p != X0Y0_ブーツ_ブーツ_皺_皺2 && p != X0Y0_ブーツ_ブーツ_縁_縁1 && p != X0Y0_ブーツ_ブーツ_縁_縁2 && p != X0Y0_ブーツ_ブーツ_縁_縁3 && p != X0Y0_ブーツ_ブーツ_縁_縁4 && p != X0Y0_ブーツ_柄 && p != X0Y0_ブーツ_紐_紐 && p != X0Y0_ブーツ_紐_紐1_紐下_金具上_金具 && p != X0Y0_ブーツ_紐_紐1_紐下_金具上_穴 && p != X0Y0_ブーツ_紐_紐1_紐下_紐 && p != X0Y0_ブーツ_紐_紐1_紐上_金具上_金具 && p != X0Y0_ブーツ_紐_紐1_紐上_金具上_穴 && p != X0Y0_ブーツ_紐_紐1_紐上_紐 && p != X0Y0_ブーツ_紐_紐2_紐下_金具上_金具 && p != X0Y0_ブーツ_紐_紐2_紐下_金具上_穴 && p != X0Y0_ブーツ_紐_紐2_紐下_紐 && p != X0Y0_ブーツ_紐_紐2_紐上_金具上_金具 && p != X0Y0_ブーツ_紐_紐2_紐上_金具上_穴 && p != X0Y0_ブーツ_紐_紐2_紐上_紐 && p != X0Y0_ブーツ_紐_紐3_紐下_金具上_金具 && p != X0Y0_ブーツ_紐_紐3_紐下_金具上_穴 && p != X0Y0_ブーツ_紐_紐3_紐下_紐 && p != X0Y0_ブーツ_紐_紐3_紐上_金具上_金具 && p != X0Y0_ブーツ_紐_紐3_紐上_金具上_穴 && p != X0Y0_ブーツ_紐_紐3_紐上_紐 && p != X0Y0_ブーツ_紐_紐4_紐下_金具上_金具 && p != X0Y0_ブーツ_紐_紐4_紐下_金具上_穴 && p != X0Y0_ブーツ_紐_紐4_紐下_紐 && p != X0Y0_ブーツ_紐_紐4_紐上_金具上_金具 && p != X0Y0_ブーツ_紐_紐4_紐上_金具上_穴 && p != X0Y0_ブーツ_紐_紐4_紐上_紐 && p != X0Y0_ブーツ_紐_紐5_紐下_金具上_金具 && p != X0Y0_ブーツ_紐_紐5_紐下_金具上_穴 && p != X0Y0_ブーツ_紐_紐5_紐下_紐 && p != X0Y0_ブーツ_紐_紐5_紐上_金具上_金具 && p != X0Y0_ブーツ_紐_紐5_紐上_金具上_穴 && p != X0Y0_ブーツ_紐_紐5_紐上_紐 && p != X0Y0_ブーツ_紐_紐6_紐下_金具上_金具 && p != X0Y0_ブーツ_紐_紐6_紐下_金具上_穴 && p != X0Y0_ブーツ_紐_紐6_紐下_紐 && p != X0Y0_ブーツ_紐_紐6_紐上_金具上_金具 && p != X0Y0_ブーツ_紐_紐6_紐上_金具上_穴 && p != X0Y0_ブーツ_紐_紐6_紐上_紐 && p != X0Y0_ブーツ_紐_紐7_紐下_金具上_金具 && p != X0Y0_ブーツ_紐_紐7_紐下_金具上_穴 && p != X0Y0_ブーツ_紐_紐7_紐下_紐 && p != X0Y0_ブーツ_紐_紐7_紐上_金具上_金具 && p != X0Y0_ブーツ_紐_紐7_紐上_金具上_穴 && p != X0Y0_ブーツ_紐_紐7_紐上_紐 && p != X0Y0_ブーツ_紐_紐8_紐下_金具上_金具 && p != X0Y0_ブーツ_紐_紐8_紐下_金具上_穴 && p != X0Y0_ブーツ_紐_紐8_紐下_紐 && p != X0Y0_ブーツ_紐_紐8_紐上_金具上_金具 && p != X0Y0_ブーツ_紐_紐8_紐上_金具上_穴 && p != X0Y0_ブーツ_紐_紐8_紐上_紐 && p != X0Y0_ブーツ_紐_紐9_紐下_金具上_金具 && p != X0Y0_ブーツ_紐_紐9_紐下_金具上_穴 && p != X0Y0_ブーツ_紐_紐9_紐下_紐 && p != X0Y0_ブーツ_紐_紐9_紐上_金具上_金具 && p != X0Y0_ブーツ_紐_紐9_紐上_金具上_穴 && p != X0Y0_ブーツ_紐_紐9_紐上_紐 && p != X0Y0_ブーツ_紐_紐10_紐下_金具上_金具 && p != X0Y0_ブーツ_紐_紐10_紐下_金具上_穴 && p != X0Y0_ブーツ_紐_紐10_紐下_紐 && p != X0Y0_ブーツ_紐_紐10_紐上_金具上_金具 && p != X0Y0_ブーツ_紐_紐10_紐上_金具上_穴 && p != X0Y0_ブーツ_紐_紐10_紐上_紐 && p != X0Y0_ブーツ_紐_紐11_紐下_金具上_金具 && p != X0Y0_ブーツ_紐_紐11_紐下_金具上_穴 && p != X0Y0_ブーツ_紐_紐11_紐下_紐 && p != X0Y0_ブーツ_紐_紐11_紐上_金具上_金具 && p != X0Y0_ブーツ_紐_紐11_紐上_金具上_穴 && p != X0Y0_ブーツ_紐_紐11_紐上_紐 && p != X0Y0_ブーツ_紐_結び_紐左_紐3 && p != X0Y0_ブーツ_紐_結び_紐左_紐2 && p != X0Y0_ブーツ_紐_結び_紐左_紐1 && p != X0Y0_ブーツ_紐_結び_紐右_紐3 && p != X0Y0_ブーツ_紐_結び_紐右_紐2 && p != X0Y0_ブーツ_紐_結び_紐右_紐1 && p != X0Y0_ブーツ_紐_結び_結び目 && p != X0Y0_脚輪上_革 && p != X0Y0_脚輪上_金具1 && p != X0Y0_脚輪上_金具2 && p != X0Y0_脚輪上_金具3 && p != X0Y0_脚輪上_金具左 && p != X0Y0_脚輪上_金具右 && p != X0Y0_脚輪下_革 && p != X0Y0_脚輪下_金具1 && p != X0Y0_脚輪下_金具2 && p != X0Y0_脚輪下_金具3 && p != X0Y0_脚輪下_金具左 && p != X0Y0_脚輪下_金具右 && p != X0Y1_ブーツ_タン_タン && p != X0Y1_ブーツ_タン_縁_縁1 && p != X0Y1_ブーツ_タン_縁_縁2 && p != X0Y1_ブーツ_ブーツ_ブーツ && p != X0Y1_ブーツ_ブーツ_皺_皺1 && p != X0Y1_ブーツ_ブーツ_皺_皺2 && p != X0Y1_ブーツ_ブーツ_縁_縁1 && p != X0Y1_ブーツ_ブーツ_縁_縁2 && p != X0Y1_ブーツ_ブーツ_縁_縁3 && p != X0Y1_ブーツ_ブーツ_縁_縁4 && p != X0Y1_ブーツ_柄 && p != X0Y1_ブーツ_紐_紐 && p != X0Y1_ブーツ_紐_紐1_紐下_金具上_金具 && p != X0Y1_ブーツ_紐_紐1_紐下_金具上_穴 && p != X0Y1_ブーツ_紐_紐1_紐下_紐 && p != X0Y1_ブーツ_紐_紐1_紐上_金具上_金具 && p != X0Y1_ブーツ_紐_紐1_紐上_金具上_穴 && p != X0Y1_ブーツ_紐_紐1_紐上_紐 && p != X0Y1_ブーツ_紐_紐2_紐下_金具上_金具 && p != X0Y1_ブーツ_紐_紐2_紐下_金具上_穴 && p != X0Y1_ブーツ_紐_紐2_紐下_紐 && p != X0Y1_ブーツ_紐_紐2_紐上_金具上_金具 && p != X0Y1_ブーツ_紐_紐2_紐上_金具上_穴 && p != X0Y1_ブーツ_紐_紐2_紐上_紐 && p != X0Y1_ブーツ_紐_紐3_紐下_金具上_金具 && p != X0Y1_ブーツ_紐_紐3_紐下_金具上_穴 && p != X0Y1_ブーツ_紐_紐3_紐下_紐 && p != X0Y1_ブーツ_紐_紐3_紐上_金具上_金具 && p != X0Y1_ブーツ_紐_紐3_紐上_金具上_穴 && p != X0Y1_ブーツ_紐_紐3_紐上_紐 && p != X0Y1_ブーツ_紐_紐4_紐下_金具上_金具 && p != X0Y1_ブーツ_紐_紐4_紐下_金具上_穴 && p != X0Y1_ブーツ_紐_紐4_紐下_紐 && p != X0Y1_ブーツ_紐_紐4_紐上_金具上_金具 && p != X0Y1_ブーツ_紐_紐4_紐上_金具上_穴 && p != X0Y1_ブーツ_紐_紐4_紐上_紐 && p != X0Y1_ブーツ_紐_紐5_紐下_金具上_金具 && p != X0Y1_ブーツ_紐_紐5_紐下_金具上_穴 && p != X0Y1_ブーツ_紐_紐5_紐下_紐 && p != X0Y1_ブーツ_紐_紐5_紐上_金具上_金具 && p != X0Y1_ブーツ_紐_紐5_紐上_金具上_穴 && p != X0Y1_ブーツ_紐_紐5_紐上_紐 && p != X0Y1_ブーツ_紐_紐6_紐下_金具上_金具 && p != X0Y1_ブーツ_紐_紐6_紐下_金具上_穴 && p != X0Y1_ブーツ_紐_紐6_紐下_紐 && p != X0Y1_ブーツ_紐_紐6_紐上_金具上_金具 && p != X0Y1_ブーツ_紐_紐6_紐上_金具上_穴 && p != X0Y1_ブーツ_紐_紐6_紐上_紐 && p != X0Y1_ブーツ_紐_紐7_紐下_金具上_金具 && p != X0Y1_ブーツ_紐_紐7_紐下_金具上_穴 && p != X0Y1_ブーツ_紐_紐7_紐下_紐 && p != X0Y1_ブーツ_紐_紐7_紐上_金具上_金具 && p != X0Y1_ブーツ_紐_紐7_紐上_金具上_穴 && p != X0Y1_ブーツ_紐_紐7_紐上_紐 && p != X0Y1_ブーツ_紐_紐8_紐下_金具上_金具 && p != X0Y1_ブーツ_紐_紐8_紐下_金具上_穴 && p != X0Y1_ブーツ_紐_紐8_紐下_紐 && p != X0Y1_ブーツ_紐_紐8_紐上_金具上_金具 && p != X0Y1_ブーツ_紐_紐8_紐上_金具上_穴 && p != X0Y1_ブーツ_紐_紐8_紐上_紐 && p != X0Y1_ブーツ_紐_紐9_紐下_金具上_金具 && p != X0Y1_ブーツ_紐_紐9_紐下_金具上_穴 && p != X0Y1_ブーツ_紐_紐9_紐下_紐 && p != X0Y1_ブーツ_紐_紐9_紐上_金具上_金具 && p != X0Y1_ブーツ_紐_紐9_紐上_金具上_穴 && p != X0Y1_ブーツ_紐_紐9_紐上_紐 && p != X0Y1_ブーツ_紐_紐10_紐下_金具上_金具 && p != X0Y1_ブーツ_紐_紐10_紐下_金具上_穴 && p != X0Y1_ブーツ_紐_紐10_紐下_紐 && p != X0Y1_ブーツ_紐_紐10_紐上_金具上_金具 && p != X0Y1_ブーツ_紐_紐10_紐上_金具上_穴 && p != X0Y1_ブーツ_紐_紐10_紐上_紐 && p != X0Y1_ブーツ_紐_紐11_紐下_金具上_金具 && p != X0Y1_ブーツ_紐_紐11_紐下_金具上_穴 && p != X0Y1_ブーツ_紐_紐11_紐下_紐 && p != X0Y1_ブーツ_紐_紐11_紐上_金具上_金具 && p != X0Y1_ブーツ_紐_紐11_紐上_金具上_穴 && p != X0Y1_ブーツ_紐_紐11_紐上_紐 && p != X0Y1_ブーツ_紐_結び_紐左_紐3 && p != X0Y1_ブーツ_紐_結び_紐左_紐2 && p != X0Y1_ブーツ_紐_結び_紐左_紐1 && p != X0Y1_ブーツ_紐_結び_紐右_紐3 && p != X0Y1_ブーツ_紐_結び_紐右_紐2 && p != X0Y1_ブーツ_紐_結び_紐右_紐1 && p != X0Y1_ブーツ_紐_結び_結び目 && p != X0Y1_脚輪上_革 && p != X0Y1_脚輪上_金具1 && p != X0Y1_脚輪上_金具2 && p != X0Y1_脚輪上_金具3 && p != X0Y1_脚輪上_金具左 && p != X0Y1_脚輪上_金具右 && p != X0Y1_脚輪下_革 && p != X0Y1_脚輪下_金具1 && p != X0Y1_脚輪下_金具2 && p != X0Y1_脚輪下_金具3 && p != X0Y1_脚輪下_金具左)
     		{
@@ -7514,7 +7514,7 @@ namespace SlaveMatrix
     		return true;
     	}
 
-    	public override bool Is鉄(Par p)
+    	public override bool Is鉄(ShapePart p)
     	{
     		if (p != X0Y0_アーマ_ベース && p != X0Y0_アーマ_脛当_脛当1 && p != X0Y0_アーマ_脛当_脛当2 && p != X0Y0_アーマ_膝当 && p != X0Y0_アーマ_穴_穴1 && p != X0Y0_アーマ_穴_穴2 && p != X0Y0_アーマ_穴_穴3 && p != X0Y0_アーマ_穴_穴4 && p != X0Y1_アーマ_ベース && p != X0Y1_アーマ_脛当_脛当1 && p != X0Y1_アーマ_脛当_脛当2 && p != X0Y1_アーマ_膝当 && p != X0Y1_アーマ_穴_穴1 && p != X0Y1_アーマ_穴_穴2 && p != X0Y1_アーマ_穴_穴3)
     		{
@@ -7981,19 +7981,19 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		LegCD = new ColorD(ref Col.Black, ref 体配色.人肌O);
+    		LegCD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌O);
     		筋CD = new ColorD(ref 体配色.薄線, ref Color2.Empty);
-    		淫タトゥ_足首_タトゥCD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_足首_ハート1_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_足首_ハート1_タトゥ右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_足首_ハート3_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_足首_ハート3_タトゥ右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_足首_ハート2_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_足首_ハート2_タトゥ右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_ハート_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_ハート_タトゥ右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_タトゥ右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
+    		淫タトゥ_足首_タトゥCD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_足首_ハート1_タトゥ左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_足首_ハート1_タトゥ右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_足首_ハート3_タトゥ左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_足首_ハート3_タトゥ右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_足首_ハート2_タトゥ左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_足首_ハート2_タトゥ右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_ハート_タトゥ左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_ハート_タトゥ右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_タトゥ左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_タトゥ右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
     		悪タトゥ_文字1_文字a_枠CD = new ColorD(ref 体配色.刺青.Col1, ref Color2.Empty);
     		悪タトゥ_文字1_文字a_文字タトゥ1CD = new ColorD(ref 体配色.刺青.Col1, ref 体配色.刺青O);
     		悪タトゥ_文字1_文字a_文字タトゥ2CD = new ColorD(ref 体配色.刺青.Col1, ref 体配色.刺青O);
@@ -8026,54 +8026,54 @@ namespace SlaveMatrix
     		悪タトゥ_文字2_文字e_文字タトゥ1CD = new ColorD(ref 体配色.刺青.Col1, ref 体配色.刺青O);
     		悪タトゥ_文字2_文字e_文字タトゥ2CD = new ColorD(ref 体配色.刺青.Col1, ref 体配色.刺青O);
     		悪タトゥ_文字2_文字e_文字タトゥ3CD = new ColorD(ref 体配色.刺青.Col1, ref 体配色.刺青O);
-    		悪タトゥ_タトゥ1CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		悪タトゥ_タトゥ2CD = new ColorD(ref Col.Black, ref 体配色.刺青);
+    		悪タトゥ_タトゥ1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		悪タトゥ_タトゥ2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
     		悪タトゥ_逆十字_逆十字1CD = new ColorD(ref 体配色.刺青.Col1, ref Color2.Empty);
-    		悪タトゥ_逆十字_逆十字2CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		悪タトゥ_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		悪タトゥ_タトゥ右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		紋柄_紋1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		紋柄_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		紋柄_紋3CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		紋柄_紋4CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		獣性_獣毛1CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		獣性_獣毛2CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		獣性_獣毛3CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		獣性_獣毛4CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		獣性_獣毛5CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		竜性_鱗_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗_鱗5CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗_鱗6CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗_鱗7CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_棘_棘1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_棘_棘2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_棘_棘3CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_棘_棘4CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_棘_棘5CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_棘_棘6CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		虫性_棘_棘1CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		虫性_棘_棘2CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		虫性_棘_棘3CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		虫性_膝CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		虫性_線CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		傷X1CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		傷X2CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		傷I1CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		傷I2CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		傷I3CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		傷I4CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		傷I5CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		ハイライト1CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
-    		ハイライト2CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2R);
+    		悪タトゥ_逆十字_逆十字2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		悪タトゥ_タトゥ左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		悪タトゥ_タトゥ右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		紋柄_紋1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		紋柄_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		紋柄_紋3CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		紋柄_紋4CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		獣性_獣毛1CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		獣性_獣毛2CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		獣性_獣毛3CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		獣性_獣毛4CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		獣性_獣毛5CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		竜性_鱗_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗_鱗5CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗_鱗6CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗_鱗7CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_棘_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_棘_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_棘_棘3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_棘_棘4CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_棘_棘5CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_棘_棘6CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		虫性_棘_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		虫性_棘_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		虫性_棘_棘3CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		虫性_膝CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		虫性_線CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		傷X1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		傷X2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		傷I1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		傷I2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		傷I3CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		傷I4CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		傷I5CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		ハイライト1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		ハイライト2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2R);
     		パンスト_パンストCD = new ColorD();
-    		パンスト_ハイライト1CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
-    		パンスト_ハイライト2CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
+    		パンスト_ハイライト1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		パンスト_ハイライト2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
     		ソックス_ソックスCD = new ColorD();
-    		ソックス_ハイライト1CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
-    		ソックス_ハイライト2CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
+    		ソックス_ハイライト1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		ソックス_ハイライト2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
     		ブーツ_タン_タンCD = new ColorD();
     		ブーツ_タン_縁_縁1CD = new ColorD();
     		ブーツ_タン_縁_縁2CD = new ColorD();
@@ -8183,19 +8183,19 @@ namespace SlaveMatrix
 
     	private void 配色T1(BodyColorSet 体配色)
     	{
-    		LegCD = new ColorD(ref Col.Black, ref 体配色.人肌O);
+    		LegCD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌O);
     		筋CD = new ColorD(ref 体配色.薄線, ref Color2.Empty);
-    		淫タトゥ_足首_タトゥCD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_足首_ハート1_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_足首_ハート1_タトゥ右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_足首_ハート3_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_足首_ハート3_タトゥ右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_足首_ハート2_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_足首_ハート2_タトゥ右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_ハート_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_ハート_タトゥ右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_タトゥ右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
+    		淫タトゥ_足首_タトゥCD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_足首_ハート1_タトゥ左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_足首_ハート1_タトゥ右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_足首_ハート3_タトゥ左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_足首_ハート3_タトゥ右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_足首_ハート2_タトゥ左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_足首_ハート2_タトゥ右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_ハート_タトゥ左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_ハート_タトゥ右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_タトゥ左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_タトゥ右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
     		悪タトゥ_文字1_文字a_枠CD = new ColorD(ref 体配色.刺青.Col1, ref Color2.Empty);
     		悪タトゥ_文字1_文字a_文字タトゥ1CD = new ColorD(ref 体配色.刺青.Col1, ref 体配色.刺青O);
     		悪タトゥ_文字1_文字a_文字タトゥ2CD = new ColorD(ref 体配色.刺青.Col1, ref 体配色.刺青O);
@@ -8228,54 +8228,54 @@ namespace SlaveMatrix
     		悪タトゥ_文字2_文字e_文字タトゥ1CD = new ColorD(ref 体配色.刺青.Col1, ref 体配色.刺青O);
     		悪タトゥ_文字2_文字e_文字タトゥ2CD = new ColorD(ref 体配色.刺青.Col1, ref 体配色.刺青O);
     		悪タトゥ_文字2_文字e_文字タトゥ3CD = new ColorD(ref 体配色.刺青.Col1, ref 体配色.刺青O);
-    		悪タトゥ_タトゥ1CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		悪タトゥ_タトゥ2CD = new ColorD(ref Col.Black, ref 体配色.刺青);
+    		悪タトゥ_タトゥ1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		悪タトゥ_タトゥ2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
     		悪タトゥ_逆十字_逆十字1CD = new ColorD(ref 体配色.刺青.Col1, ref Color2.Empty);
-    		悪タトゥ_逆十字_逆十字2CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		悪タトゥ_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		悪タトゥ_タトゥ右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		紋柄_紋1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		紋柄_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		紋柄_紋3CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		紋柄_紋4CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		獣性_獣毛1CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		獣性_獣毛2CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		獣性_獣毛3CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		獣性_獣毛4CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		獣性_獣毛5CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		竜性_鱗_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗_鱗5CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗_鱗6CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗_鱗7CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_棘_棘1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_棘_棘2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		竜性_棘_棘3CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_棘_棘4CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		竜性_棘_棘5CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_棘_棘6CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		虫性_棘_棘1CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		虫性_棘_棘2CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		虫性_棘_棘3CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		虫性_膝CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		虫性_線CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		傷X1CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		傷X2CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		傷I1CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		傷I2CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		傷I3CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		傷I4CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		傷I5CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		ハイライト1CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
-    		ハイライト2CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2R);
+    		悪タトゥ_逆十字_逆十字2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		悪タトゥ_タトゥ左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		悪タトゥ_タトゥ右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		紋柄_紋1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		紋柄_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		紋柄_紋3CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		紋柄_紋4CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		獣性_獣毛1CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		獣性_獣毛2CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		獣性_獣毛3CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		獣性_獣毛4CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		獣性_獣毛5CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		竜性_鱗_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗_鱗5CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗_鱗6CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗_鱗7CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_棘_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_棘_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		竜性_棘_棘3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_棘_棘4CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		竜性_棘_棘5CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_棘_棘6CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		虫性_棘_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		虫性_棘_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		虫性_棘_棘3CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		虫性_膝CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		虫性_線CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		傷X1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		傷X2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		傷I1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		傷I2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		傷I3CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		傷I4CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		傷I5CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		ハイライト1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		ハイライト2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2R);
     		パンスト_パンストCD = new ColorD();
-    		パンスト_ハイライト1CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
-    		パンスト_ハイライト2CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
+    		パンスト_ハイライト1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		パンスト_ハイライト2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
     		ソックス_ソックスCD = new ColorD();
-    		ソックス_ハイライト1CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
-    		ソックス_ハイライト2CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
+    		ソックス_ハイライト1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		ソックス_ハイライト2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
     		ブーツ_タン_タンCD = new ColorD();
     		ブーツ_タン_縁_縁1CD = new ColorD();
     		ブーツ_タン_縁_縁2CD = new ColorD();
@@ -8385,19 +8385,19 @@ namespace SlaveMatrix
 
     	private void 配色T0(BodyColorSet 体配色)
     	{
-    		LegCD = new ColorD(ref Col.Black, ref 体配色.人肌O);
+    		LegCD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌O);
     		筋CD = new ColorD(ref 体配色.薄線, ref Color2.Empty);
-    		淫タトゥ_足首_タトゥCD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_足首_ハート1_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_足首_ハート1_タトゥ右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_足首_ハート3_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_足首_ハート3_タトゥ右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_足首_ハート2_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_足首_ハート2_タトゥ右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_ハート_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_ハート_タトゥ右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_タトゥ右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
+    		淫タトゥ_足首_タトゥCD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_足首_ハート1_タトゥ左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_足首_ハート1_タトゥ右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_足首_ハート3_タトゥ左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_足首_ハート3_タトゥ右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_足首_ハート2_タトゥ左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_足首_ハート2_タトゥ右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_ハート_タトゥ左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_ハート_タトゥ右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_タトゥ左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_タトゥ右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
     		悪タトゥ_文字1_文字a_枠CD = new ColorD(ref 体配色.刺青.Col1, ref Color2.Empty);
     		悪タトゥ_文字1_文字a_文字タトゥ1CD = new ColorD(ref 体配色.刺青.Col1, ref 体配色.刺青O);
     		悪タトゥ_文字1_文字a_文字タトゥ2CD = new ColorD(ref 体配色.刺青.Col1, ref 体配色.刺青O);
@@ -8430,54 +8430,54 @@ namespace SlaveMatrix
     		悪タトゥ_文字2_文字e_文字タトゥ1CD = new ColorD(ref 体配色.刺青.Col1, ref 体配色.刺青O);
     		悪タトゥ_文字2_文字e_文字タトゥ2CD = new ColorD(ref 体配色.刺青.Col1, ref 体配色.刺青O);
     		悪タトゥ_文字2_文字e_文字タトゥ3CD = new ColorD(ref 体配色.刺青.Col1, ref 体配色.刺青O);
-    		悪タトゥ_タトゥ1CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		悪タトゥ_タトゥ2CD = new ColorD(ref Col.Black, ref 体配色.刺青);
+    		悪タトゥ_タトゥ1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		悪タトゥ_タトゥ2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
     		悪タトゥ_逆十字_逆十字1CD = new ColorD(ref 体配色.刺青.Col1, ref Color2.Empty);
-    		悪タトゥ_逆十字_逆十字2CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		悪タトゥ_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		悪タトゥ_タトゥ右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		紋柄_紋1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		紋柄_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		紋柄_紋3CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		紋柄_紋4CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		獣性_獣毛1CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		獣性_獣毛2CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		獣性_獣毛3CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		獣性_獣毛4CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		獣性_獣毛5CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		竜性_鱗_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗_鱗5CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗_鱗6CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗_鱗7CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_棘_棘1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		竜性_棘_棘2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_棘_棘3CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		竜性_棘_棘4CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_棘_棘5CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		竜性_棘_棘6CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		虫性_棘_棘1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		虫性_棘_棘2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		虫性_棘_棘3CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		虫性_膝CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		虫性_線CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		傷X1CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		傷X2CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		傷I1CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		傷I2CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		傷I3CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		傷I4CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		傷I5CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		ハイライト1CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
-    		ハイライト2CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2R);
+    		悪タトゥ_逆十字_逆十字2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		悪タトゥ_タトゥ左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		悪タトゥ_タトゥ右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		紋柄_紋1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		紋柄_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		紋柄_紋3CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		紋柄_紋4CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		獣性_獣毛1CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		獣性_獣毛2CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		獣性_獣毛3CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		獣性_獣毛4CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		獣性_獣毛5CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		竜性_鱗_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗_鱗5CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗_鱗6CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗_鱗7CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_棘_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		竜性_棘_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_棘_棘3CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		竜性_棘_棘4CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_棘_棘5CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		竜性_棘_棘6CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		虫性_棘_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		虫性_棘_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		虫性_棘_棘3CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		虫性_膝CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		虫性_線CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		傷X1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		傷X2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		傷I1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		傷I2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		傷I3CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		傷I4CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		傷I5CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		ハイライト1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		ハイライト2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2R);
     		パンスト_パンストCD = new ColorD();
-    		パンスト_ハイライト1CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
-    		パンスト_ハイライト2CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
+    		パンスト_ハイライト1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		パンスト_ハイライト2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
     		ソックス_ソックスCD = new ColorD();
-    		ソックス_ハイライト1CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
-    		ソックス_ハイライト2CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
+    		ソックス_ハイライト1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		ソックス_ハイライト2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
     		ブーツ_タン_タンCD = new ColorD();
     		ブーツ_タン_縁_縁1CD = new ColorD();
     		ブーツ_タン_縁_縁2CD = new ColorD();
@@ -8587,19 +8587,19 @@ namespace SlaveMatrix
 
     	private void 配色B0(BodyColorSet 体配色)
     	{
-    		LegCD = new ColorD(ref Col.Black, ref 体配色.毛0O);
+    		LegCD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
     		筋CD = new ColorD(ref 体配色.薄線, ref Color2.Empty);
-    		淫タトゥ_足首_タトゥCD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_足首_ハート1_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_足首_ハート1_タトゥ右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_足首_ハート3_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_足首_ハート3_タトゥ右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_足首_ハート2_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_足首_ハート2_タトゥ右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_ハート_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_ハート_タトゥ右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_タトゥ右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
+    		淫タトゥ_足首_タトゥCD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_足首_ハート1_タトゥ左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_足首_ハート1_タトゥ右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_足首_ハート3_タトゥ左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_足首_ハート3_タトゥ右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_足首_ハート2_タトゥ左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_足首_ハート2_タトゥ右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_ハート_タトゥ左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_ハート_タトゥ右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_タトゥ左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_タトゥ右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
     		悪タトゥ_文字1_文字a_枠CD = new ColorD(ref 体配色.刺青.Col1, ref Color2.Empty);
     		悪タトゥ_文字1_文字a_文字タトゥ1CD = new ColorD(ref 体配色.刺青.Col1, ref 体配色.刺青O);
     		悪タトゥ_文字1_文字a_文字タトゥ2CD = new ColorD(ref 体配色.刺青.Col1, ref 体配色.刺青O);
@@ -8632,54 +8632,54 @@ namespace SlaveMatrix
     		悪タトゥ_文字2_文字e_文字タトゥ1CD = new ColorD(ref 体配色.刺青.Col1, ref 体配色.刺青O);
     		悪タトゥ_文字2_文字e_文字タトゥ2CD = new ColorD(ref 体配色.刺青.Col1, ref 体配色.刺青O);
     		悪タトゥ_文字2_文字e_文字タトゥ3CD = new ColorD(ref 体配色.刺青.Col1, ref 体配色.刺青O);
-    		悪タトゥ_タトゥ1CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		悪タトゥ_タトゥ2CD = new ColorD(ref Col.Black, ref 体配色.刺青);
+    		悪タトゥ_タトゥ1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		悪タトゥ_タトゥ2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
     		悪タトゥ_逆十字_逆十字1CD = new ColorD(ref 体配色.刺青.Col1, ref Color2.Empty);
-    		悪タトゥ_逆十字_逆十字2CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		悪タトゥ_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		悪タトゥ_タトゥ右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		紋柄_紋1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		紋柄_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		紋柄_紋3CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		紋柄_紋4CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		獣性_獣毛1CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		獣性_獣毛2CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		獣性_獣毛3CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		獣性_獣毛4CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		獣性_獣毛5CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		竜性_鱗_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗_鱗5CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗_鱗6CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗_鱗7CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_棘_棘1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_棘_棘2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_棘_棘3CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_棘_棘4CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_棘_棘5CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_棘_棘6CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		虫性_棘_棘1CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		虫性_棘_棘2CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		虫性_棘_棘3CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		虫性_膝CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		虫性_線CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		傷X1CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		傷X2CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		傷I1CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		傷I2CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		傷I3CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		傷I4CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		傷I5CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		ハイライト1CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
-    		ハイライト2CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2R);
+    		悪タトゥ_逆十字_逆十字2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		悪タトゥ_タトゥ左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		悪タトゥ_タトゥ右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		紋柄_紋1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		紋柄_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		紋柄_紋3CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		紋柄_紋4CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		獣性_獣毛1CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		獣性_獣毛2CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		獣性_獣毛3CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		獣性_獣毛4CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		獣性_獣毛5CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		竜性_鱗_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗_鱗5CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗_鱗6CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗_鱗7CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_棘_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_棘_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_棘_棘3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_棘_棘4CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_棘_棘5CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_棘_棘6CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		虫性_棘_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		虫性_棘_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		虫性_棘_棘3CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		虫性_膝CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		虫性_線CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		傷X1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		傷X2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		傷I1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		傷I2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		傷I3CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		傷I4CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		傷I5CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		ハイライト1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		ハイライト2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2R);
     		パンスト_パンストCD = new ColorD();
-    		パンスト_ハイライト1CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
-    		パンスト_ハイライト2CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
+    		パンスト_ハイライト1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		パンスト_ハイライト2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
     		ソックス_ソックスCD = new ColorD();
-    		ソックス_ハイライト1CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
-    		ソックス_ハイライト2CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
+    		ソックス_ハイライト1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		ソックス_ハイライト2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
     		ブーツ_タン_タンCD = new ColorD();
     		ブーツ_タン_縁_縁1CD = new ColorD();
     		ブーツ_タン_縁_縁2CD = new ColorD();
@@ -8789,19 +8789,19 @@ namespace SlaveMatrix
 
     	private void 配色BT1(BodyColorSet 体配色)
     	{
-    		LegCD = new ColorD(ref Col.Black, ref 体配色.毛0O);
+    		LegCD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
     		筋CD = new ColorD(ref 体配色.薄線, ref Color2.Empty);
-    		淫タトゥ_足首_タトゥCD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_足首_ハート1_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_足首_ハート1_タトゥ右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_足首_ハート3_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_足首_ハート3_タトゥ右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_足首_ハート2_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_足首_ハート2_タトゥ右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_ハート_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_ハート_タトゥ右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_タトゥ右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
+    		淫タトゥ_足首_タトゥCD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_足首_ハート1_タトゥ左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_足首_ハート1_タトゥ右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_足首_ハート3_タトゥ左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_足首_ハート3_タトゥ右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_足首_ハート2_タトゥ左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_足首_ハート2_タトゥ右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_ハート_タトゥ左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_ハート_タトゥ右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_タトゥ左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_タトゥ右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
     		悪タトゥ_文字1_文字a_枠CD = new ColorD(ref 体配色.刺青.Col1, ref Color2.Empty);
     		悪タトゥ_文字1_文字a_文字タトゥ1CD = new ColorD(ref 体配色.刺青.Col1, ref 体配色.刺青O);
     		悪タトゥ_文字1_文字a_文字タトゥ2CD = new ColorD(ref 体配色.刺青.Col1, ref 体配色.刺青O);
@@ -8834,54 +8834,54 @@ namespace SlaveMatrix
     		悪タトゥ_文字2_文字e_文字タトゥ1CD = new ColorD(ref 体配色.刺青.Col1, ref 体配色.刺青O);
     		悪タトゥ_文字2_文字e_文字タトゥ2CD = new ColorD(ref 体配色.刺青.Col1, ref 体配色.刺青O);
     		悪タトゥ_文字2_文字e_文字タトゥ3CD = new ColorD(ref 体配色.刺青.Col1, ref 体配色.刺青O);
-    		悪タトゥ_タトゥ1CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		悪タトゥ_タトゥ2CD = new ColorD(ref Col.Black, ref 体配色.刺青);
+    		悪タトゥ_タトゥ1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		悪タトゥ_タトゥ2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
     		悪タトゥ_逆十字_逆十字1CD = new ColorD(ref 体配色.刺青.Col1, ref Color2.Empty);
-    		悪タトゥ_逆十字_逆十字2CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		悪タトゥ_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		悪タトゥ_タトゥ右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		紋柄_紋1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		紋柄_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		紋柄_紋3CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		紋柄_紋4CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		獣性_獣毛1CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		獣性_獣毛2CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		獣性_獣毛3CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		獣性_獣毛4CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		獣性_獣毛5CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		竜性_鱗_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗_鱗5CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗_鱗6CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗_鱗7CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_棘_棘1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_棘_棘2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		竜性_棘_棘3CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_棘_棘4CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		竜性_棘_棘5CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_棘_棘6CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		虫性_棘_棘1CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		虫性_棘_棘2CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		虫性_棘_棘3CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		虫性_膝CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		虫性_線CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		傷X1CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		傷X2CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		傷I1CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		傷I2CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		傷I3CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		傷I4CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		傷I5CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		ハイライト1CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
-    		ハイライト2CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2R);
+    		悪タトゥ_逆十字_逆十字2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		悪タトゥ_タトゥ左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		悪タトゥ_タトゥ右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		紋柄_紋1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		紋柄_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		紋柄_紋3CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		紋柄_紋4CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		獣性_獣毛1CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		獣性_獣毛2CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		獣性_獣毛3CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		獣性_獣毛4CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		獣性_獣毛5CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		竜性_鱗_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗_鱗5CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗_鱗6CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗_鱗7CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_棘_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_棘_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		竜性_棘_棘3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_棘_棘4CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		竜性_棘_棘5CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_棘_棘6CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		虫性_棘_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		虫性_棘_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		虫性_棘_棘3CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		虫性_膝CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		虫性_線CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		傷X1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		傷X2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		傷I1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		傷I2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		傷I3CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		傷I4CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		傷I5CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		ハイライト1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		ハイライト2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2R);
     		パンスト_パンストCD = new ColorD();
-    		パンスト_ハイライト1CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
-    		パンスト_ハイライト2CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
+    		パンスト_ハイライト1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		パンスト_ハイライト2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
     		ソックス_ソックスCD = new ColorD();
-    		ソックス_ハイライト1CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
-    		ソックス_ハイライト2CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
+    		ソックス_ハイライト1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		ソックス_ハイライト2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
     		ブーツ_タン_タンCD = new ColorD();
     		ブーツ_タン_縁_縁1CD = new ColorD();
     		ブーツ_タン_縁_縁2CD = new ColorD();
@@ -8991,19 +8991,19 @@ namespace SlaveMatrix
 
     	private void 配色BT0(BodyColorSet 体配色)
     	{
-    		LegCD = new ColorD(ref Col.Black, ref 体配色.毛0O);
+    		LegCD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
     		筋CD = new ColorD(ref 体配色.薄線, ref Color2.Empty);
-    		淫タトゥ_足首_タトゥCD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_足首_ハート1_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_足首_ハート1_タトゥ右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_足首_ハート3_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_足首_ハート3_タトゥ右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_足首_ハート2_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_足首_ハート2_タトゥ右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_ハート_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_ハート_タトゥ右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_タトゥ右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
+    		淫タトゥ_足首_タトゥCD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_足首_ハート1_タトゥ左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_足首_ハート1_タトゥ右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_足首_ハート3_タトゥ左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_足首_ハート3_タトゥ右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_足首_ハート2_タトゥ左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_足首_ハート2_タトゥ右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_ハート_タトゥ左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_ハート_タトゥ右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_タトゥ左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_タトゥ右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
     		悪タトゥ_文字1_文字a_枠CD = new ColorD(ref 体配色.刺青.Col1, ref Color2.Empty);
     		悪タトゥ_文字1_文字a_文字タトゥ1CD = new ColorD(ref 体配色.刺青.Col1, ref 体配色.刺青O);
     		悪タトゥ_文字1_文字a_文字タトゥ2CD = new ColorD(ref 体配色.刺青.Col1, ref 体配色.刺青O);
@@ -9036,54 +9036,54 @@ namespace SlaveMatrix
     		悪タトゥ_文字2_文字e_文字タトゥ1CD = new ColorD(ref 体配色.刺青.Col1, ref 体配色.刺青O);
     		悪タトゥ_文字2_文字e_文字タトゥ2CD = new ColorD(ref 体配色.刺青.Col1, ref 体配色.刺青O);
     		悪タトゥ_文字2_文字e_文字タトゥ3CD = new ColorD(ref 体配色.刺青.Col1, ref 体配色.刺青O);
-    		悪タトゥ_タトゥ1CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		悪タトゥ_タトゥ2CD = new ColorD(ref Col.Black, ref 体配色.刺青);
+    		悪タトゥ_タトゥ1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		悪タトゥ_タトゥ2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
     		悪タトゥ_逆十字_逆十字1CD = new ColorD(ref 体配色.刺青.Col1, ref Color2.Empty);
-    		悪タトゥ_逆十字_逆十字2CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		悪タトゥ_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		悪タトゥ_タトゥ右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		紋柄_紋1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		紋柄_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		紋柄_紋3CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		紋柄_紋4CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		獣性_獣毛1CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		獣性_獣毛2CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		獣性_獣毛3CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		獣性_獣毛4CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		獣性_獣毛5CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		竜性_鱗_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗_鱗5CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗_鱗6CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗_鱗7CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_棘_棘1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		竜性_棘_棘2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_棘_棘3CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		竜性_棘_棘4CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_棘_棘5CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		竜性_棘_棘6CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		虫性_棘_棘1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		虫性_棘_棘2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		虫性_棘_棘3CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		虫性_膝CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		虫性_線CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		傷X1CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		傷X2CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		傷I1CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		傷I2CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		傷I3CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		傷I4CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		傷I5CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		ハイライト1CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
-    		ハイライト2CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2R);
+    		悪タトゥ_逆十字_逆十字2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		悪タトゥ_タトゥ左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		悪タトゥ_タトゥ右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		紋柄_紋1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		紋柄_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		紋柄_紋3CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		紋柄_紋4CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		獣性_獣毛1CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		獣性_獣毛2CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		獣性_獣毛3CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		獣性_獣毛4CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		獣性_獣毛5CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		竜性_鱗_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗_鱗5CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗_鱗6CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗_鱗7CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_棘_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		竜性_棘_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_棘_棘3CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		竜性_棘_棘4CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_棘_棘5CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		竜性_棘_棘6CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		虫性_棘_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		虫性_棘_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		虫性_棘_棘3CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		虫性_膝CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		虫性_線CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		傷X1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		傷X2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		傷I1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		傷I2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		傷I3CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		傷I4CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		傷I5CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		ハイライト1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		ハイライト2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2R);
     		パンスト_パンストCD = new ColorD();
-    		パンスト_ハイライト1CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
-    		パンスト_ハイライト2CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
+    		パンスト_ハイライト1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		パンスト_ハイライト2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
     		ソックス_ソックスCD = new ColorD();
-    		ソックス_ハイライト1CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
-    		ソックス_ハイライト2CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
+    		ソックス_ハイライト1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		ソックス_ハイライト2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
     		ブーツ_タン_タンCD = new ColorD();
     		ブーツ_タン_縁_縁1CD = new ColorD();
     		ブーツ_タン_縁_縁2CD = new ColorD();
@@ -9193,19 +9193,19 @@ namespace SlaveMatrix
 
     	private void 配色C0(BodyColorSet 体配色)
     	{
-    		LegCD = new ColorD(ref Col.Black, ref 体配色.甲0O);
+    		LegCD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
     		筋CD = new ColorD(ref 体配色.薄線, ref Color2.Empty);
-    		淫タトゥ_足首_タトゥCD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_足首_ハート1_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_足首_ハート1_タトゥ右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_足首_ハート3_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_足首_ハート3_タトゥ右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_足首_ハート2_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_足首_ハート2_タトゥ右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_ハート_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_ハート_タトゥ右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_タトゥ右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
+    		淫タトゥ_足首_タトゥCD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_足首_ハート1_タトゥ左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_足首_ハート1_タトゥ右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_足首_ハート3_タトゥ左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_足首_ハート3_タトゥ右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_足首_ハート2_タトゥ左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_足首_ハート2_タトゥ右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_ハート_タトゥ左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_ハート_タトゥ右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_タトゥ左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_タトゥ右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
     		悪タトゥ_文字1_文字a_枠CD = new ColorD(ref 体配色.刺青.Col1, ref Color2.Empty);
     		悪タトゥ_文字1_文字a_文字タトゥ1CD = new ColorD(ref 体配色.刺青.Col1, ref 体配色.刺青O);
     		悪タトゥ_文字1_文字a_文字タトゥ2CD = new ColorD(ref 体配色.刺青.Col1, ref 体配色.刺青O);
@@ -9238,54 +9238,54 @@ namespace SlaveMatrix
     		悪タトゥ_文字2_文字e_文字タトゥ1CD = new ColorD(ref 体配色.刺青.Col1, ref 体配色.刺青O);
     		悪タトゥ_文字2_文字e_文字タトゥ2CD = new ColorD(ref 体配色.刺青.Col1, ref 体配色.刺青O);
     		悪タトゥ_文字2_文字e_文字タトゥ3CD = new ColorD(ref 体配色.刺青.Col1, ref 体配色.刺青O);
-    		悪タトゥ_タトゥ1CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		悪タトゥ_タトゥ2CD = new ColorD(ref Col.Black, ref 体配色.刺青);
+    		悪タトゥ_タトゥ1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		悪タトゥ_タトゥ2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
     		悪タトゥ_逆十字_逆十字1CD = new ColorD(ref 体配色.刺青.Col1, ref Color2.Empty);
-    		悪タトゥ_逆十字_逆十字2CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		悪タトゥ_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		悪タトゥ_タトゥ右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		紋柄_紋1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		紋柄_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		紋柄_紋3CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		紋柄_紋4CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		獣性_獣毛1CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		獣性_獣毛2CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		獣性_獣毛3CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		獣性_獣毛4CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		獣性_獣毛5CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		竜性_鱗_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗_鱗5CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗_鱗6CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗_鱗7CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_棘_棘1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_棘_棘2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_棘_棘3CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_棘_棘4CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_棘_棘5CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_棘_棘6CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		虫性_棘_棘1CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		虫性_棘_棘2CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		虫性_棘_棘3CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		虫性_膝CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		虫性_線CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		傷X1CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		傷X2CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		傷I1CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		傷I2CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		傷I3CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		傷I4CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		傷I5CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		ハイライト1CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
-    		ハイライト2CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2R);
+    		悪タトゥ_逆十字_逆十字2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		悪タトゥ_タトゥ左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		悪タトゥ_タトゥ右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		紋柄_紋1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		紋柄_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		紋柄_紋3CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		紋柄_紋4CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		獣性_獣毛1CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		獣性_獣毛2CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		獣性_獣毛3CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		獣性_獣毛4CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		獣性_獣毛5CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		竜性_鱗_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗_鱗5CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗_鱗6CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗_鱗7CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_棘_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_棘_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_棘_棘3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_棘_棘4CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_棘_棘5CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_棘_棘6CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		虫性_棘_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		虫性_棘_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		虫性_棘_棘3CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		虫性_膝CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		虫性_線CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		傷X1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		傷X2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		傷I1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		傷I2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		傷I3CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		傷I4CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		傷I5CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		ハイライト1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		ハイライト2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2R);
     		パンスト_パンストCD = new ColorD();
-    		パンスト_ハイライト1CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
-    		パンスト_ハイライト2CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
+    		パンスト_ハイライト1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		パンスト_ハイライト2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
     		ソックス_ソックスCD = new ColorD();
-    		ソックス_ハイライト1CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
-    		ソックス_ハイライト2CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
+    		ソックス_ハイライト1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		ソックス_ハイライト2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
     		ブーツ_タン_タンCD = new ColorD();
     		ブーツ_タン_縁_縁1CD = new ColorD();
     		ブーツ_タン_縁_縁2CD = new ColorD();
@@ -9395,19 +9395,19 @@ namespace SlaveMatrix
 
     	private void 配色CT1(BodyColorSet 体配色)
     	{
-    		LegCD = new ColorD(ref Col.Black, ref 体配色.甲0O);
+    		LegCD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
     		筋CD = new ColorD(ref 体配色.薄線, ref Color2.Empty);
-    		淫タトゥ_足首_タトゥCD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_足首_ハート1_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_足首_ハート1_タトゥ右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_足首_ハート3_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_足首_ハート3_タトゥ右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_足首_ハート2_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_足首_ハート2_タトゥ右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_ハート_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_ハート_タトゥ右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_タトゥ右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
+    		淫タトゥ_足首_タトゥCD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_足首_ハート1_タトゥ左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_足首_ハート1_タトゥ右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_足首_ハート3_タトゥ左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_足首_ハート3_タトゥ右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_足首_ハート2_タトゥ左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_足首_ハート2_タトゥ右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_ハート_タトゥ左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_ハート_タトゥ右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_タトゥ左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_タトゥ右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
     		悪タトゥ_文字1_文字a_枠CD = new ColorD(ref 体配色.刺青.Col1, ref Color2.Empty);
     		悪タトゥ_文字1_文字a_文字タトゥ1CD = new ColorD(ref 体配色.刺青.Col1, ref 体配色.刺青O);
     		悪タトゥ_文字1_文字a_文字タトゥ2CD = new ColorD(ref 体配色.刺青.Col1, ref 体配色.刺青O);
@@ -9440,54 +9440,54 @@ namespace SlaveMatrix
     		悪タトゥ_文字2_文字e_文字タトゥ1CD = new ColorD(ref 体配色.刺青.Col1, ref 体配色.刺青O);
     		悪タトゥ_文字2_文字e_文字タトゥ2CD = new ColorD(ref 体配色.刺青.Col1, ref 体配色.刺青O);
     		悪タトゥ_文字2_文字e_文字タトゥ3CD = new ColorD(ref 体配色.刺青.Col1, ref 体配色.刺青O);
-    		悪タトゥ_タトゥ1CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		悪タトゥ_タトゥ2CD = new ColorD(ref Col.Black, ref 体配色.刺青);
+    		悪タトゥ_タトゥ1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		悪タトゥ_タトゥ2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
     		悪タトゥ_逆十字_逆十字1CD = new ColorD(ref 体配色.刺青.Col1, ref Color2.Empty);
-    		悪タトゥ_逆十字_逆十字2CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		悪タトゥ_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		悪タトゥ_タトゥ右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		紋柄_紋1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		紋柄_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		紋柄_紋3CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		紋柄_紋4CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		獣性_獣毛1CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		獣性_獣毛2CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		獣性_獣毛3CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		獣性_獣毛4CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		獣性_獣毛5CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		竜性_鱗_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗_鱗5CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗_鱗6CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗_鱗7CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_棘_棘1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_棘_棘2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		竜性_棘_棘3CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_棘_棘4CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		竜性_棘_棘5CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_棘_棘6CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		虫性_棘_棘1CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		虫性_棘_棘2CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		虫性_棘_棘3CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		虫性_膝CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		虫性_線CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		傷X1CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		傷X2CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		傷I1CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		傷I2CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		傷I3CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		傷I4CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		傷I5CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		ハイライト1CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
-    		ハイライト2CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2R);
+    		悪タトゥ_逆十字_逆十字2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		悪タトゥ_タトゥ左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		悪タトゥ_タトゥ右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		紋柄_紋1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		紋柄_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		紋柄_紋3CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		紋柄_紋4CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		獣性_獣毛1CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		獣性_獣毛2CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		獣性_獣毛3CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		獣性_獣毛4CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		獣性_獣毛5CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		竜性_鱗_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗_鱗5CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗_鱗6CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗_鱗7CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_棘_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_棘_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		竜性_棘_棘3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_棘_棘4CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		竜性_棘_棘5CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_棘_棘6CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		虫性_棘_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		虫性_棘_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		虫性_棘_棘3CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		虫性_膝CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		虫性_線CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		傷X1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		傷X2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		傷I1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		傷I2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		傷I3CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		傷I4CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		傷I5CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		ハイライト1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		ハイライト2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2R);
     		パンスト_パンストCD = new ColorD();
-    		パンスト_ハイライト1CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
-    		パンスト_ハイライト2CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
+    		パンスト_ハイライト1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		パンスト_ハイライト2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
     		ソックス_ソックスCD = new ColorD();
-    		ソックス_ハイライト1CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
-    		ソックス_ハイライト2CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
+    		ソックス_ハイライト1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		ソックス_ハイライト2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
     		ブーツ_タン_タンCD = new ColorD();
     		ブーツ_タン_縁_縁1CD = new ColorD();
     		ブーツ_タン_縁_縁2CD = new ColorD();
@@ -9597,19 +9597,19 @@ namespace SlaveMatrix
 
     	private void 配色CT0(BodyColorSet 体配色)
     	{
-    		LegCD = new ColorD(ref Col.Black, ref 体配色.甲0O);
+    		LegCD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
     		筋CD = new ColorD(ref 体配色.薄線, ref Color2.Empty);
-    		淫タトゥ_足首_タトゥCD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_足首_ハート1_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_足首_ハート1_タトゥ右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_足首_ハート3_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_足首_ハート3_タトゥ右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_足首_ハート2_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_足首_ハート2_タトゥ右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_ハート_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_ハート_タトゥ右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_タトゥ右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
+    		淫タトゥ_足首_タトゥCD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_足首_ハート1_タトゥ左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_足首_ハート1_タトゥ右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_足首_ハート3_タトゥ左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_足首_ハート3_タトゥ右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_足首_ハート2_タトゥ左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_足首_ハート2_タトゥ右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_ハート_タトゥ左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_ハート_タトゥ右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_タトゥ左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_タトゥ右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
     		悪タトゥ_文字1_文字a_枠CD = new ColorD(ref 体配色.刺青.Col1, ref Color2.Empty);
     		悪タトゥ_文字1_文字a_文字タトゥ1CD = new ColorD(ref 体配色.刺青.Col1, ref 体配色.刺青O);
     		悪タトゥ_文字1_文字a_文字タトゥ2CD = new ColorD(ref 体配色.刺青.Col1, ref 体配色.刺青O);
@@ -9642,54 +9642,54 @@ namespace SlaveMatrix
     		悪タトゥ_文字2_文字e_文字タトゥ1CD = new ColorD(ref 体配色.刺青.Col1, ref 体配色.刺青O);
     		悪タトゥ_文字2_文字e_文字タトゥ2CD = new ColorD(ref 体配色.刺青.Col1, ref 体配色.刺青O);
     		悪タトゥ_文字2_文字e_文字タトゥ3CD = new ColorD(ref 体配色.刺青.Col1, ref 体配色.刺青O);
-    		悪タトゥ_タトゥ1CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		悪タトゥ_タトゥ2CD = new ColorD(ref Col.Black, ref 体配色.刺青);
+    		悪タトゥ_タトゥ1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		悪タトゥ_タトゥ2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
     		悪タトゥ_逆十字_逆十字1CD = new ColorD(ref 体配色.刺青.Col1, ref Color2.Empty);
-    		悪タトゥ_逆十字_逆十字2CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		悪タトゥ_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		悪タトゥ_タトゥ右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		紋柄_紋1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		紋柄_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		紋柄_紋3CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		紋柄_紋4CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		獣性_獣毛1CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		獣性_獣毛2CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		獣性_獣毛3CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		獣性_獣毛4CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		獣性_獣毛5CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		竜性_鱗_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗_鱗5CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗_鱗6CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗_鱗7CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_棘_棘1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		竜性_棘_棘2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_棘_棘3CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		竜性_棘_棘4CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_棘_棘5CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		竜性_棘_棘6CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		虫性_棘_棘1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		虫性_棘_棘2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		虫性_棘_棘3CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		虫性_膝CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		虫性_線CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		傷X1CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		傷X2CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		傷I1CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		傷I2CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		傷I3CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		傷I4CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		傷I5CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		ハイライト1CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
-    		ハイライト2CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2R);
+    		悪タトゥ_逆十字_逆十字2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		悪タトゥ_タトゥ左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		悪タトゥ_タトゥ右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		紋柄_紋1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		紋柄_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		紋柄_紋3CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		紋柄_紋4CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		獣性_獣毛1CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		獣性_獣毛2CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		獣性_獣毛3CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		獣性_獣毛4CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		獣性_獣毛5CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		竜性_鱗_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗_鱗5CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗_鱗6CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗_鱗7CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_棘_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		竜性_棘_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_棘_棘3CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		竜性_棘_棘4CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_棘_棘5CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		竜性_棘_棘6CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		虫性_棘_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		虫性_棘_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		虫性_棘_棘3CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		虫性_膝CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		虫性_線CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		傷X1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		傷X2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		傷I1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		傷I2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		傷I3CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		傷I4CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		傷I5CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		ハイライト1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		ハイライト2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2R);
     		パンスト_パンストCD = new ColorD();
-    		パンスト_ハイライト1CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
-    		パンスト_ハイライト2CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
+    		パンスト_ハイライト1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		パンスト_ハイライト2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
     		ソックス_ソックスCD = new ColorD();
-    		ソックス_ハイライト1CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
-    		ソックス_ハイライト2CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
+    		ソックス_ハイライト1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		ソックス_ハイライト2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
     		ブーツ_タン_タンCD = new ColorD();
     		ブーツ_タン_縁_縁1CD = new ColorD();
     		ブーツ_タン_縁_縁2CD = new ColorD();
@@ -9799,19 +9799,19 @@ namespace SlaveMatrix
 
     	private void 配色L0(BodyColorSet 体配色)
     	{
-    		LegCD = new ColorD(ref Col.Black, ref 体配色.植1O);
+    		LegCD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
     		筋CD = new ColorD(ref 体配色.薄線, ref Color2.Empty);
-    		淫タトゥ_足首_タトゥCD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_足首_ハート1_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_足首_ハート1_タトゥ右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_足首_ハート3_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_足首_ハート3_タトゥ右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_足首_ハート2_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_足首_ハート2_タトゥ右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_ハート_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_ハート_タトゥ右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_タトゥ右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
+    		淫タトゥ_足首_タトゥCD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_足首_ハート1_タトゥ左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_足首_ハート1_タトゥ右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_足首_ハート3_タトゥ左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_足首_ハート3_タトゥ右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_足首_ハート2_タトゥ左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_足首_ハート2_タトゥ右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_ハート_タトゥ左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_ハート_タトゥ右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_タトゥ左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_タトゥ右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
     		悪タトゥ_文字1_文字a_枠CD = new ColorD(ref 体配色.刺青.Col1, ref Color2.Empty);
     		悪タトゥ_文字1_文字a_文字タトゥ1CD = new ColorD(ref 体配色.刺青.Col1, ref 体配色.刺青O);
     		悪タトゥ_文字1_文字a_文字タトゥ2CD = new ColorD(ref 体配色.刺青.Col1, ref 体配色.刺青O);
@@ -9844,54 +9844,54 @@ namespace SlaveMatrix
     		悪タトゥ_文字2_文字e_文字タトゥ1CD = new ColorD(ref 体配色.刺青.Col1, ref 体配色.刺青O);
     		悪タトゥ_文字2_文字e_文字タトゥ2CD = new ColorD(ref 体配色.刺青.Col1, ref 体配色.刺青O);
     		悪タトゥ_文字2_文字e_文字タトゥ3CD = new ColorD(ref 体配色.刺青.Col1, ref 体配色.刺青O);
-    		悪タトゥ_タトゥ1CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		悪タトゥ_タトゥ2CD = new ColorD(ref Col.Black, ref 体配色.刺青);
+    		悪タトゥ_タトゥ1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		悪タトゥ_タトゥ2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
     		悪タトゥ_逆十字_逆十字1CD = new ColorD(ref 体配色.刺青.Col1, ref Color2.Empty);
-    		悪タトゥ_逆十字_逆十字2CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		悪タトゥ_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		悪タトゥ_タトゥ右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		紋柄_紋1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		紋柄_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		紋柄_紋3CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		紋柄_紋4CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		獣性_獣毛1CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		獣性_獣毛2CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		獣性_獣毛3CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		獣性_獣毛4CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		獣性_獣毛5CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		竜性_鱗_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗_鱗5CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗_鱗6CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗_鱗7CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_棘_棘1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_棘_棘2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_棘_棘3CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_棘_棘4CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_棘_棘5CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_棘_棘6CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		虫性_棘_棘1CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		虫性_棘_棘2CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		虫性_棘_棘3CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		虫性_膝CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		虫性_線CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		傷X1CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		傷X2CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		傷I1CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		傷I2CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		傷I3CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		傷I4CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		傷I5CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		ハイライト1CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
-    		ハイライト2CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2R);
+    		悪タトゥ_逆十字_逆十字2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		悪タトゥ_タトゥ左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		悪タトゥ_タトゥ右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		紋柄_紋1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		紋柄_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		紋柄_紋3CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		紋柄_紋4CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		獣性_獣毛1CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		獣性_獣毛2CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		獣性_獣毛3CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		獣性_獣毛4CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		獣性_獣毛5CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		竜性_鱗_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗_鱗5CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗_鱗6CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗_鱗7CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_棘_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_棘_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_棘_棘3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_棘_棘4CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_棘_棘5CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_棘_棘6CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		虫性_棘_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		虫性_棘_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		虫性_棘_棘3CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		虫性_膝CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		虫性_線CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		傷X1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		傷X2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		傷I1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		傷I2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		傷I3CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		傷I4CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		傷I5CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		ハイライト1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		ハイライト2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2R);
     		パンスト_パンストCD = new ColorD();
-    		パンスト_ハイライト1CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
-    		パンスト_ハイライト2CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
+    		パンスト_ハイライト1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		パンスト_ハイライト2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
     		ソックス_ソックスCD = new ColorD();
-    		ソックス_ハイライト1CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
-    		ソックス_ハイライト2CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
+    		ソックス_ハイライト1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		ソックス_ハイライト2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
     		ブーツ_タン_タンCD = new ColorD();
     		ブーツ_タン_縁_縁1CD = new ColorD();
     		ブーツ_タン_縁_縁2CD = new ColorD();
@@ -10001,19 +10001,19 @@ namespace SlaveMatrix
 
     	private void 配色LT1(BodyColorSet 体配色)
     	{
-    		LegCD = new ColorD(ref Col.Black, ref 体配色.植1O);
+    		LegCD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
     		筋CD = new ColorD(ref 体配色.薄線, ref Color2.Empty);
-    		淫タトゥ_足首_タトゥCD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_足首_ハート1_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_足首_ハート1_タトゥ右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_足首_ハート3_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_足首_ハート3_タトゥ右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_足首_ハート2_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_足首_ハート2_タトゥ右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_ハート_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_ハート_タトゥ右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_タトゥ右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
+    		淫タトゥ_足首_タトゥCD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_足首_ハート1_タトゥ左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_足首_ハート1_タトゥ右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_足首_ハート3_タトゥ左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_足首_ハート3_タトゥ右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_足首_ハート2_タトゥ左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_足首_ハート2_タトゥ右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_ハート_タトゥ左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_ハート_タトゥ右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_タトゥ左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_タトゥ右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
     		悪タトゥ_文字1_文字a_枠CD = new ColorD(ref 体配色.刺青.Col1, ref Color2.Empty);
     		悪タトゥ_文字1_文字a_文字タトゥ1CD = new ColorD(ref 体配色.刺青.Col1, ref 体配色.刺青O);
     		悪タトゥ_文字1_文字a_文字タトゥ2CD = new ColorD(ref 体配色.刺青.Col1, ref 体配色.刺青O);
@@ -10046,54 +10046,54 @@ namespace SlaveMatrix
     		悪タトゥ_文字2_文字e_文字タトゥ1CD = new ColorD(ref 体配色.刺青.Col1, ref 体配色.刺青O);
     		悪タトゥ_文字2_文字e_文字タトゥ2CD = new ColorD(ref 体配色.刺青.Col1, ref 体配色.刺青O);
     		悪タトゥ_文字2_文字e_文字タトゥ3CD = new ColorD(ref 体配色.刺青.Col1, ref 体配色.刺青O);
-    		悪タトゥ_タトゥ1CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		悪タトゥ_タトゥ2CD = new ColorD(ref Col.Black, ref 体配色.刺青);
+    		悪タトゥ_タトゥ1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		悪タトゥ_タトゥ2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
     		悪タトゥ_逆十字_逆十字1CD = new ColorD(ref 体配色.刺青.Col1, ref Color2.Empty);
-    		悪タトゥ_逆十字_逆十字2CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		悪タトゥ_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		悪タトゥ_タトゥ右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		紋柄_紋1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		紋柄_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		紋柄_紋3CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		紋柄_紋4CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		獣性_獣毛1CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		獣性_獣毛2CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		獣性_獣毛3CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		獣性_獣毛4CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		獣性_獣毛5CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		竜性_鱗_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗_鱗5CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗_鱗6CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗_鱗7CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_棘_棘1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_棘_棘2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		竜性_棘_棘3CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_棘_棘4CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		竜性_棘_棘5CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_棘_棘6CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		虫性_棘_棘1CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		虫性_棘_棘2CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		虫性_棘_棘3CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		虫性_膝CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		虫性_線CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		傷X1CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		傷X2CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		傷I1CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		傷I2CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		傷I3CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		傷I4CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		傷I5CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		ハイライト1CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
-    		ハイライト2CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2R);
+    		悪タトゥ_逆十字_逆十字2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		悪タトゥ_タトゥ左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		悪タトゥ_タトゥ右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		紋柄_紋1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		紋柄_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		紋柄_紋3CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		紋柄_紋4CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		獣性_獣毛1CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		獣性_獣毛2CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		獣性_獣毛3CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		獣性_獣毛4CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		獣性_獣毛5CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		竜性_鱗_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗_鱗5CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗_鱗6CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗_鱗7CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_棘_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_棘_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		竜性_棘_棘3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_棘_棘4CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		竜性_棘_棘5CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_棘_棘6CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		虫性_棘_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		虫性_棘_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		虫性_棘_棘3CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		虫性_膝CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		虫性_線CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		傷X1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		傷X2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		傷I1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		傷I2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		傷I3CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		傷I4CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		傷I5CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		ハイライト1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		ハイライト2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2R);
     		パンスト_パンストCD = new ColorD();
-    		パンスト_ハイライト1CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
-    		パンスト_ハイライト2CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
+    		パンスト_ハイライト1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		パンスト_ハイライト2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
     		ソックス_ソックスCD = new ColorD();
-    		ソックス_ハイライト1CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
-    		ソックス_ハイライト2CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
+    		ソックス_ハイライト1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		ソックス_ハイライト2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
     		ブーツ_タン_タンCD = new ColorD();
     		ブーツ_タン_縁_縁1CD = new ColorD();
     		ブーツ_タン_縁_縁2CD = new ColorD();
@@ -10203,19 +10203,19 @@ namespace SlaveMatrix
 
     	private void 配色LT0(BodyColorSet 体配色)
     	{
-    		LegCD = new ColorD(ref Col.Black, ref 体配色.植1O);
+    		LegCD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
     		筋CD = new ColorD(ref 体配色.薄線, ref Color2.Empty);
-    		淫タトゥ_足首_タトゥCD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_足首_ハート1_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_足首_ハート1_タトゥ右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_足首_ハート3_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_足首_ハート3_タトゥ右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_足首_ハート2_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_足首_ハート2_タトゥ右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_ハート_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_ハート_タトゥ右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_タトゥ右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
+    		淫タトゥ_足首_タトゥCD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_足首_ハート1_タトゥ左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_足首_ハート1_タトゥ右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_足首_ハート3_タトゥ左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_足首_ハート3_タトゥ右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_足首_ハート2_タトゥ左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_足首_ハート2_タトゥ右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_ハート_タトゥ左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_ハート_タトゥ右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_タトゥ左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_タトゥ右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
     		悪タトゥ_文字1_文字a_枠CD = new ColorD(ref 体配色.刺青.Col1, ref Color2.Empty);
     		悪タトゥ_文字1_文字a_文字タトゥ1CD = new ColorD(ref 体配色.刺青.Col1, ref 体配色.刺青O);
     		悪タトゥ_文字1_文字a_文字タトゥ2CD = new ColorD(ref 体配色.刺青.Col1, ref 体配色.刺青O);
@@ -10248,54 +10248,54 @@ namespace SlaveMatrix
     		悪タトゥ_文字2_文字e_文字タトゥ1CD = new ColorD(ref 体配色.刺青.Col1, ref 体配色.刺青O);
     		悪タトゥ_文字2_文字e_文字タトゥ2CD = new ColorD(ref 体配色.刺青.Col1, ref 体配色.刺青O);
     		悪タトゥ_文字2_文字e_文字タトゥ3CD = new ColorD(ref 体配色.刺青.Col1, ref 体配色.刺青O);
-    		悪タトゥ_タトゥ1CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		悪タトゥ_タトゥ2CD = new ColorD(ref Col.Black, ref 体配色.刺青);
+    		悪タトゥ_タトゥ1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		悪タトゥ_タトゥ2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
     		悪タトゥ_逆十字_逆十字1CD = new ColorD(ref 体配色.刺青.Col1, ref Color2.Empty);
-    		悪タトゥ_逆十字_逆十字2CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		悪タトゥ_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		悪タトゥ_タトゥ右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		紋柄_紋1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		紋柄_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		紋柄_紋3CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		紋柄_紋4CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		獣性_獣毛1CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		獣性_獣毛2CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		獣性_獣毛3CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		獣性_獣毛4CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		獣性_獣毛5CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		竜性_鱗_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗_鱗5CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗_鱗6CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗_鱗7CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_棘_棘1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		竜性_棘_棘2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_棘_棘3CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		竜性_棘_棘4CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_棘_棘5CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		竜性_棘_棘6CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		虫性_棘_棘1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		虫性_棘_棘2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		虫性_棘_棘3CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		虫性_膝CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		虫性_線CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		傷X1CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		傷X2CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		傷I1CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		傷I2CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		傷I3CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		傷I4CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		傷I5CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		ハイライト1CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
-    		ハイライト2CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2R);
+    		悪タトゥ_逆十字_逆十字2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		悪タトゥ_タトゥ左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		悪タトゥ_タトゥ右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		紋柄_紋1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		紋柄_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		紋柄_紋3CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		紋柄_紋4CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		獣性_獣毛1CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		獣性_獣毛2CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		獣性_獣毛3CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		獣性_獣毛4CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		獣性_獣毛5CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		竜性_鱗_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗_鱗5CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗_鱗6CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗_鱗7CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_棘_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		竜性_棘_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_棘_棘3CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		竜性_棘_棘4CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_棘_棘5CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		竜性_棘_棘6CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		虫性_棘_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		虫性_棘_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		虫性_棘_棘3CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		虫性_膝CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		虫性_線CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		傷X1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		傷X2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		傷I1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		傷I2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		傷I3CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		傷I4CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		傷I5CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		ハイライト1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		ハイライト2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2R);
     		パンスト_パンストCD = new ColorD();
-    		パンスト_ハイライト1CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
-    		パンスト_ハイライト2CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
+    		パンスト_ハイライト1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		パンスト_ハイライト2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
     		ソックス_ソックスCD = new ColorD();
-    		ソックス_ハイライト1CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
-    		ソックス_ハイライト2CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
+    		ソックス_ハイライト1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		ソックス_ハイライト2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
     		ブーツ_タン_タンCD = new ColorD();
     		ブーツ_タン_縁_縁1CD = new ColorD();
     		ブーツ_タン_縁_縁2CD = new ColorD();
@@ -10418,7 +10418,7 @@ namespace SlaveMatrix
     		ブーツ_柄CD.色 = 配色.柄色;
     		ブーツ_紐_紐CD.色 = 配色.紐色;
     		ブーツ_紐_紐1_紐下_金具上_金具CD.色 = 配色.金具色;
-    		Col.GetGrad(ref 配色.穴, out var ret);
+    		ColorHelper.GetGrad(ref 配色.穴, out var ret);
     		ret.GetRep(out ret);
     		ブーツ_紐_紐1_紐下_金具上_穴CD.色 = ret;
     		ブーツ_紐_紐1_紐下_紐CD.色 = ブーツ_紐_紐CD.色;

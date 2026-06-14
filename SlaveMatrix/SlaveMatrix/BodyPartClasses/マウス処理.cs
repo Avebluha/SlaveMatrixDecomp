@@ -38,13 +38,13 @@ namespace SlaveMatrix
     	{
     		調教UI.擬音キュー.Enqueue(delegate(RenderArea a)
     		{
-    			調教UI.擬音.Sound(a, 対象.Ele.位置.GetAreaPoint(0.01), Sta.吸引.GetVal(1.0, RNG.XS.NextDouble()), new Font("MS Gothic", 1f), Col.Black, 0.2, b: true);
+    			調教UI.擬音.Sound(a, 対象.Element.位置.GetAreaPoint(0.01), GlobalState.吸引.GetVal(1.0, Rng.XS.NextDouble()), new Font("MS Gothic", 1f), ColorHelper.Black, 0.2, b: true);
     		});
     	}
 
     	private void オーバー時(string str, ref ContactD cd)
     	{
-    		if (Sta.GameData.ガイド)
+    		if (GlobalState.GameData.ガイド)
     		{
     			ip.SubInfoIm = (調教UI.IsHitCha(ref cd) ? (str + "LDo:" + GameText.吸引 + "\r\nWh:" + GameText.舐る + "\r\n") : si());
     		}
@@ -52,7 +52,7 @@ namespace SlaveMatrix
 
     	private void 吸引時(string str)
     	{
-    		if (Sta.GameData.ガイド)
+    		if (GlobalState.GameData.ガイド)
     		{
     			ip.SubInfoIm = str + "LUp:" + GameText.開放;
     		}
@@ -89,8 +89,8 @@ namespace SlaveMatrix
     			if (Is吸付)
     			{
                     //~~TODO~~ fix?
-                    //Cursor.Position = Med.BaseControlC.PointToScreen(Med.FromBasePosition(対象.Ele.位置));
-                    Med.CursorPosition = Med.FromBasePosition(対象.Ele.位置);
+                    //Cursor.Position = Med.BaseControlC.PointToScreen(Med.FromBasePosition(対象.Element.位置));
+                    Med.CursorPosition = Med.FromBasePosition(対象.Element.位置);
 
                 }
     			else if (Is舐め)
@@ -99,7 +99,7 @@ namespace SlaveMatrix
     				{
     					舐め解除(ref cd);
     				}
-    				else if (Sta.GameData.ガイド)
+    				else if (GlobalState.GameData.ガイド)
     				{
     					ip.SubInfoIm = "Wh:" + GameText.舐る;
     				}
@@ -112,21 +112,21 @@ namespace SlaveMatrix
     		else if (cd.c == ContactType.Milk)
     		{
     			調教UI.マウス.Xi = 0;
-    			調教UI.Set_乳首(対象.Ele, cd.e.右);
+    			調教UI.Set_乳首(対象.Element, cd.e.右);
     			箇所 = cd;
     			オーバー時(GameText.乳首 + "\r\n", ref cd);
     		}
     		else if (cd.c == ContactType.Nucleus)
     		{
     			調教UI.マウス.Xi = 0;
-    			調教UI.Set_陰核(対象.Ele);
+    			調教UI.Set_陰核(対象.Element);
     			箇所 = cd;
     			オーバー時(GameText.陰核 + "\r\n", ref cd);
     		}
     		else if (Player.フェラ1 && cd.c == ContactType.Mouth)
     		{
     			箇所 = cd;
-    			対象.Ele.Intensity = 0.5;
+    			対象.Element.Intensity = 0.5;
     			調教UI.マウス.Xi = 4;
     			調教UI.マウス挿入.Move(ref mb, ref cp, ref hc, ref cd);
     		}
@@ -155,7 +155,7 @@ namespace SlaveMatrix
     			調教UI.放し();
     			if (!(調教UI.X < cp.X) || !(cp.Y < 調教UI.Y))
     			{
-    				対象.Ele.Intensity = 1.0;
+    				対象.Element.Intensity = 1.0;
     			}
     			オーバー時("", ref cd);
     		}
@@ -178,39 +178,39 @@ namespace SlaveMatrix
     				箇所 = cd;
     				if (cd.c == ContactType.Milk)
     				{
-    					調教UI.Set_乳首(対象.Ele, cd.e.右);
+    					調教UI.Set_乳首(対象.Element, cd.e.右);
     					吸引時(GameText.乳首 + "\r\n");
     					調教UI.乳首演出();
     				}
     				else if (cd.c == ContactType.Nucleus)
     				{
-    					調教UI.Set_陰核(対象.Ele);
+    					調教UI.Set_陰核(対象.Element);
     					吸引時(GameText.陰核 + "\r\n");
     					調教UI.陰核演出();
     				}
     				else if (cd.c == ContactType.Mouth)
     				{
-    					対象.Ele.Intensity = 0.5;
-    					対象.Ele.角度C = (double)RNG.XS.NextSign() * 45.0;
-    					調教UI.Set_口(対象.Ele);
+    					対象.Element.Intensity = 0.5;
+    					対象.Element.角度C = (double)Rng.XS.NextSign() * 45.0;
+    					調教UI.Set_口(対象.Element);
     					吸引時(GameText.口腔 + "\r\n");
     					調教UI.口腔演出();
     				}
     				else if (cd.c == ContactType.Vagina)
     				{
-    					調教UI.Set_膣口(対象.Ele);
+    					調教UI.Set_膣口(対象.Element);
     					吸引時(GameText.膣腔 + "\r\n");
     					調教UI.膣腔演出();
     				}
     				else if (cd.c == ContactType.Anal)
     				{
-    					調教UI.Set_肛門(対象.Ele);
+    					調教UI.Set_肛門(対象.Element);
     					吸引時(GameText.肛門 + "\r\n");
     					調教UI.肛門演出();
     				}
     				else if (cd.c == ContactType.Thread)
     				{
-    					調教UI.Set_出糸(対象.Ele);
+    					調教UI.Set_出糸(対象.Element);
     					吸引時(GameText.出糸 + "\r\n");
     					調教UI.出糸演出();
     				}
@@ -232,9 +232,9 @@ namespace SlaveMatrix
     		{
     			if (!Isモード && !調教UI.ペニス挿入.Is挿入)
     			{
-    				調教UI.Focus.Ele.Intensity = 0.5;
+    				調教UI.Focus.Element.Intensity = 0.5;
     				調教UI.Focus = 調教UI.ペニスCM;
-    				調教UI.ペニスCM.Ele.位置B = cp;
+    				調教UI.ペニスCM.Element.位置B = cp;
     				調教UI.ペニス処理.選択 = true;
     				調教UI.ペニス処理.Move(ref mb, ref cp, ref hc, ref cd);
     			}
@@ -246,7 +246,7 @@ namespace SlaveMatrix
     				切り替え = false;
     				return;
     			}
-    			調教UI.Focus.Ele.Intensity = 0.5;
+    			調教UI.Focus.Element.Intensity = 0.5;
     			調教UI.Focus = 調教UI.ハンド右CM;
     			調教UI.ハンド右.位置B = cp;
     			調教UI.ハンド処理.切り替え = true;
@@ -264,8 +264,8 @@ namespace SlaveMatrix
     			調教UI.マウス.Xi = 0;
     			Is吸付 = false;
     			キスモーション.End();
-    			対象.Ele.Intensity = 1.0;
-    			対象.Ele.角度C = 0.0;
+    			対象.Element.Intensity = 1.0;
+    			対象.Element.角度C = 0.0;
     			調教UI.放し();
     			if (cd.c == ContactType.Mouth)
     			{
@@ -323,12 +323,12 @@ namespace SlaveMatrix
     			調教UI.マウス.Yi = (調教UI.マウス.Yi - dt.Sign() * 2).Clamp(0, 調教UI.マウス.Body.GetCountY());
     			if (cd.c == ContactType.Mouth)
     			{
-    				対象.Ele.Intensity = 0.5;
+    				対象.Element.Intensity = 0.5;
     			}
     		}
     	}
 
-    	public マウス処理(TrainingUI 調教UI, CM マウス)
+    	public マウス処理(TrainingUI 調教UI, CharacterElement マウス)
     		: base(調教UI, マウス)
     	{
     		マウス処理 マウス処理2 = this;
@@ -353,24 +353,24 @@ namespace SlaveMatrix
     			{
     				if (マウス処理2.箇所.c == ContactType.Milk)
     				{
-    					調教UI.Set_乳首(マウス処理2.対象.Ele, マウス処理2.箇所.e.右);
+    					調教UI.Set_乳首(マウス処理2.対象.Element, マウス処理2.箇所.e.右);
     				}
     				else if (マウス処理2.箇所.c == ContactType.Nucleus)
     				{
-    					調教UI.Set_陰核(マウス処理2.対象.Ele);
+    					調教UI.Set_陰核(マウス処理2.対象.Element);
     				}
     				if (f)
     				{
     					d = m.Value.Inverse();
-    					マウス処理2.対象.Ele.尺度C = s * d;
+    					マウス処理2.対象.Element.尺度C = s * d;
     				}
-    				マウス処理2.対象.Ele.位置C = Oth.GetRandomVector() * d * 0.0005;
-    				調教UI.マウス.X2Y0_舌.SetPositionCont(Oth.GetRandomVector() * d * 0.001);
+    				マウス処理2.対象.Element.位置C = GeometryUtils.GetRandomVector() * d * 0.0005;
+    				調教UI.マウス.X2Y0_舌.SetPositionCont(GeometryUtils.GetRandomVector() * d * 0.001);
     				if (sw.IsRunning)
     				{
     					if (sw.ElapsedMilliseconds > 250)
     					{
-    						cp = マウス処理2.対象.Ele.位置B;
+    						cp = マウス処理2.対象.Element.位置B;
     						hc = マウス処理2.Med.GetHitColor(マウス処理2.Med.FromBasePosition(cp));
     						k = マウス処理2.Bod.Addキスマーク(cp, hc);
     						sw.Stop();
@@ -397,7 +397,7 @@ namespace SlaveMatrix
     				Player.主精力消費小();
     				if (マウス処理2.Bod.LeftMilkSpray.母乳垂れ1_表示 && マウス処理2.箇所.c == ContactType.Milk && マウス処理2.Cha.MilkSpray.Run)
     				{
-    					Sta.GameData.精力 = (Sta.GameData.精力 + 0.02 * RNG.XS.NextDouble()).Clamp(0.0, 1.0);
+    					GlobalState.GameData.精力 = (GlobalState.GameData.精力 + 0.02 * Rng.XS.NextDouble()).Clamp(0.0, 1.0);
     				}
     			},
     			OnReach = delegate(Motion m)
@@ -411,9 +411,9 @@ namespace SlaveMatrix
     			OnEnd = delegate(Motion m)
     			{
     				m.ResetValue();
-    				マウス処理2.対象.Ele.尺度C = 1.0;
-    				マウス処理2.対象.Ele.位置C = Dat.Vec2DZero;
-    				調教UI.マウス.X2Y0_舌.SetPositionCont(Dat.Vec2DZero);
+    				マウス処理2.対象.Element.尺度C = 1.0;
+    				マウス処理2.対象.Element.位置C = DataConsts.Vec2DZero;
+    				調教UI.マウス.X2Y0_舌.SetPositionCont(DataConsts.Vec2DZero);
     			}
     		};
     		調教UI.Mots.Add(キスモーション.GetHashCode().ToString(), キスモーション);

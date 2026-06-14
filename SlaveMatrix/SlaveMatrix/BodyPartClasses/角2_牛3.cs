@@ -4,31 +4,31 @@ namespace SlaveMatrix
 {
     public class 角2_牛3 : 角2
     {
-    	public Par X0Y0_根;
+    	public ShapePart X0Y0_根;
 
-    	public Par X0Y0_凹1;
+    	public ShapePart X0Y0_凹1;
 
-    	public Par X0Y0_凹2;
+    	public ShapePart X0Y0_凹2;
 
-    	public Par X0Y0_凹3;
+    	public ShapePart X0Y0_凹3;
 
-    	public Par X0Y0_凹4;
+    	public ShapePart X0Y0_凹4;
 
-    	public Par X0Y0_凹5;
+    	public ShapePart X0Y0_凹5;
 
-    	public Par X0Y0_凹6;
+    	public ShapePart X0Y0_凹6;
 
-    	public Par X0Y0_凹7;
+    	public ShapePart X0Y0_凹7;
 
-    	public Par X0Y1_根;
+    	public ShapePart X0Y1_根;
 
-    	public Par X0Y1_凹1;
+    	public ShapePart X0Y1_凹1;
 
-    	public Par X0Y1_凹2;
+    	public ShapePart X0Y1_凹2;
 
-    	public Par X0Y1_凹3;
+    	public ShapePart X0Y1_凹3;
 
-    	public Par X0Y1_凹4;
+    	public ShapePart X0Y1_凹4;
 
     	public ColorD 根CD;
 
@@ -264,25 +264,25 @@ namespace SlaveMatrix
     	public 角2_牛3(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 角2_牛3D e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif(Sta.肢左["角"][6]);
-    		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		X0Y0_根 = pars["根"].ToPar();
-    		X0Y0_凹1 = pars["凹1"].ToPar();
-    		X0Y0_凹2 = pars["凹2"].ToPar();
-    		X0Y0_凹3 = pars["凹3"].ToPar();
-    		X0Y0_凹4 = pars["凹4"].ToPar();
-    		X0Y0_凹5 = pars["凹5"].ToPar();
-    		X0Y0_凹6 = pars["凹6"].ToPar();
-    		X0Y0_凹7 = pars["凹7"].ToPar();
-    		pars = Body[0][1];
-    		X0Y1_根 = pars["根"].ToPar();
-    		X0Y1_凹1 = pars["凹1"].ToPar();
-    		X0Y1_凹2 = pars["凹2"].ToPar();
-    		X0Y1_凹3 = pars["凹3"].ToPar();
-    		X0Y1_凹4 = pars["凹4"].ToPar();
+    		MorphVariant morphVariant = new MorphVariant(GlobalState.肢左["角"][6]);
+    		Body = new VariantGrid();
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_根 = partGroup["根"].ToPar();
+    		X0Y0_凹1 = partGroup["凹1"].ToPar();
+    		X0Y0_凹2 = partGroup["凹2"].ToPar();
+    		X0Y0_凹3 = partGroup["凹3"].ToPar();
+    		X0Y0_凹4 = partGroup["凹4"].ToPar();
+    		X0Y0_凹5 = partGroup["凹5"].ToPar();
+    		X0Y0_凹6 = partGroup["凹6"].ToPar();
+    		X0Y0_凹7 = partGroup["凹7"].ToPar();
+    		partGroup = Body[0][1];
+    		X0Y1_根 = partGroup["根"].ToPar();
+    		X0Y1_凹1 = partGroup["凹1"].ToPar();
+    		X0Y1_凹2 = partGroup["凹2"].ToPar();
+    		X0Y1_凹3 = partGroup["凹3"].ToPar();
+    		X0Y1_凹4 = partGroup["凹4"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;
@@ -392,38 +392,38 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		根CD = new ColorD(ref Col.Black, ref 体配色.角0O);
-    		凹1CD = new ColorD(ref Col.Black, ref 体配色.角1O);
-    		凹2CD = new ColorD(ref Col.Black, ref 体配色.角1O);
-    		凹3CD = new ColorD(ref Col.Black, ref 体配色.角1O);
-    		凹4CD = new ColorD(ref Col.Black, ref 体配色.角1O);
-    		凹5CD = new ColorD(ref Col.Black, ref 体配色.角1O);
-    		凹6CD = new ColorD(ref Col.Black, ref 体配色.角1O);
-    		凹7CD = new ColorD(ref Col.Black, ref 体配色.角1O);
+    		根CD = new ColorD(ref ColorHelper.Black, ref 体配色.角0O);
+    		凹1CD = new ColorD(ref ColorHelper.Black, ref 体配色.角1O);
+    		凹2CD = new ColorD(ref ColorHelper.Black, ref 体配色.角1O);
+    		凹3CD = new ColorD(ref ColorHelper.Black, ref 体配色.角1O);
+    		凹4CD = new ColorD(ref ColorHelper.Black, ref 体配色.角1O);
+    		凹5CD = new ColorD(ref ColorHelper.Black, ref 体配色.角1O);
+    		凹6CD = new ColorD(ref ColorHelper.Black, ref 体配色.角1O);
+    		凹7CD = new ColorD(ref ColorHelper.Black, ref 体配色.角1O);
     	}
 
     	private void 配色T0(BodyColorSet 体配色)
     	{
-    		根CD = new ColorD(ref Col.Black, ref 体配色.角0O);
-    		凹1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		凹2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		凹3CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		凹4CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		凹5CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		凹6CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		凹7CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		根CD = new ColorD(ref ColorHelper.Black, ref 体配色.角0O);
+    		凹1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		凹2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		凹3CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		凹4CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		凹5CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		凹6CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		凹7CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
     	}
 
     	private void 配色T1(BodyColorSet 体配色)
     	{
-    		根CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		凹1CD = new ColorD(ref Col.Black, ref 体配色.角1O);
-    		凹2CD = new ColorD(ref Col.Black, ref 体配色.角1O);
-    		凹3CD = new ColorD(ref Col.Black, ref 体配色.角1O);
-    		凹4CD = new ColorD(ref Col.Black, ref 体配色.角1O);
-    		凹5CD = new ColorD(ref Col.Black, ref 体配色.角1O);
-    		凹6CD = new ColorD(ref Col.Black, ref 体配色.角1O);
-    		凹7CD = new ColorD(ref Col.Black, ref 体配色.角1O);
+    		根CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		凹1CD = new ColorD(ref ColorHelper.Black, ref 体配色.角1O);
+    		凹2CD = new ColorD(ref ColorHelper.Black, ref 体配色.角1O);
+    		凹3CD = new ColorD(ref ColorHelper.Black, ref 体配色.角1O);
+    		凹4CD = new ColorD(ref ColorHelper.Black, ref 体配色.角1O);
+    		凹5CD = new ColorD(ref ColorHelper.Black, ref 体配色.角1O);
+    		凹6CD = new ColorD(ref ColorHelper.Black, ref 体配色.角1O);
+    		凹7CD = new ColorD(ref ColorHelper.Black, ref 体配色.角1O);
     	}
     }
 }

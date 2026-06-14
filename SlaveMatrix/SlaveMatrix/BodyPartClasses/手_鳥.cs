@@ -4,151 +4,151 @@ namespace SlaveMatrix
 {
     public class 手_鳥 : 翼手
     {
-    	public Par X0Y0_鳥翼手;
+    	public ShapePart X0Y0_鳥翼手;
 
-    	public Par X0Y0_風切羽_羽10;
+    	public ShapePart X0Y0_風切羽_羽10;
 
-    	public Par X0Y0_風切羽_羽9;
+    	public ShapePart X0Y0_風切羽_羽9;
 
-    	public Par X0Y0_風切羽_羽8;
+    	public ShapePart X0Y0_風切羽_羽8;
 
-    	public Par X0Y0_風切羽_羽7;
+    	public ShapePart X0Y0_風切羽_羽7;
 
-    	public Par X0Y0_風切羽_羽6;
+    	public ShapePart X0Y0_風切羽_羽6;
 
-    	public Par X0Y0_風切羽_羽5;
+    	public ShapePart X0Y0_風切羽_羽5;
 
-    	public Par X0Y0_風切羽_羽4;
+    	public ShapePart X0Y0_風切羽_羽4;
 
-    	public Par X0Y0_風切羽_羽3;
+    	public ShapePart X0Y0_風切羽_羽3;
 
-    	public Par X0Y0_風切羽_羽2;
+    	public ShapePart X0Y0_風切羽_羽2;
 
-    	public Par X0Y0_風切羽_羽1;
+    	public ShapePart X0Y0_風切羽_羽1;
 
-    	public Par X0Y0_雨覆羽_羽10;
+    	public ShapePart X0Y0_雨覆羽_羽10;
 
-    	public Par X0Y0_雨覆羽_羽9;
+    	public ShapePart X0Y0_雨覆羽_羽9;
 
-    	public Par X0Y0_雨覆羽_羽8;
+    	public ShapePart X0Y0_雨覆羽_羽8;
 
-    	public Par X0Y0_雨覆羽_羽7;
+    	public ShapePart X0Y0_雨覆羽_羽7;
 
-    	public Par X0Y0_雨覆羽_羽6;
+    	public ShapePart X0Y0_雨覆羽_羽6;
 
-    	public Par X0Y0_雨覆羽_羽5;
+    	public ShapePart X0Y0_雨覆羽_羽5;
 
-    	public Par X0Y0_雨覆羽_羽4;
+    	public ShapePart X0Y0_雨覆羽_羽4;
 
-    	public Par X0Y0_雨覆羽_羽3;
+    	public ShapePart X0Y0_雨覆羽_羽3;
 
-    	public Par X0Y0_雨覆羽_羽2;
+    	public ShapePart X0Y0_雨覆羽_羽2;
 
-    	public Par X0Y0_雨覆羽_羽1;
+    	public ShapePart X0Y0_雨覆羽_羽1;
 
-    	public Par X0Y0_小翼羽_羽3;
+    	public ShapePart X0Y0_小翼羽_羽3;
 
-    	public Par X0Y0_小翼羽_羽2;
+    	public ShapePart X0Y0_小翼羽_羽2;
 
-    	public Par X0Y0_小翼羽_羽1;
+    	public ShapePart X0Y0_小翼羽_羽1;
 
-    	public Par X0Y0_指_中指_爪;
+    	public ShapePart X0Y0_指_中指_爪;
 
-    	public Par X0Y0_指_中指_指3;
+    	public ShapePart X0Y0_指_中指_指3;
 
-    	public Par X0Y0_指_中指_指2;
+    	public ShapePart X0Y0_指_中指_指2;
 
-    	public Par X0Y0_指_中指_指1;
+    	public ShapePart X0Y0_指_中指_指1;
 
-    	public Par X0Y0_指_中指_鱗3_鱗1;
+    	public ShapePart X0Y0_指_中指_鱗3_鱗1;
 
-    	public Par X0Y0_指_中指_鱗3_鱗2;
+    	public ShapePart X0Y0_指_中指_鱗3_鱗2;
 
-    	public Par X0Y0_指_中指_鱗3_鱗3;
+    	public ShapePart X0Y0_指_中指_鱗3_鱗3;
 
-    	public Par X0Y0_指_中指_鱗3_鱗4;
+    	public ShapePart X0Y0_指_中指_鱗3_鱗4;
 
-    	public Par X0Y0_指_中指_鱗2_鱗1;
+    	public ShapePart X0Y0_指_中指_鱗2_鱗1;
 
-    	public Par X0Y0_指_中指_鱗2_鱗2;
+    	public ShapePart X0Y0_指_中指_鱗2_鱗2;
 
-    	public Par X0Y0_指_中指_鱗2_鱗3;
+    	public ShapePart X0Y0_指_中指_鱗2_鱗3;
 
-    	public Par X0Y0_指_中指_鱗2_鱗4;
+    	public ShapePart X0Y0_指_中指_鱗2_鱗4;
 
-    	public Par X0Y0_指_中指_鱗1_鱗1;
+    	public ShapePart X0Y0_指_中指_鱗1_鱗1;
 
-    	public Par X0Y0_指_中指_鱗1_鱗2;
+    	public ShapePart X0Y0_指_中指_鱗1_鱗2;
 
-    	public Par X0Y0_指_中指_鱗1_鱗3;
+    	public ShapePart X0Y0_指_中指_鱗1_鱗3;
 
-    	public Par X0Y0_指_中指_鱗1_鱗4;
+    	public ShapePart X0Y0_指_中指_鱗1_鱗4;
 
-    	public Par X0Y0_指_中指_鱗1_鱗5;
+    	public ShapePart X0Y0_指_中指_鱗1_鱗5;
 
-    	public Par X0Y0_指_中指_鱗1_鱗6;
+    	public ShapePart X0Y0_指_中指_鱗1_鱗6;
 
-    	public Par X0Y0_指_人指_爪;
+    	public ShapePart X0Y0_指_人指_爪;
 
-    	public Par X0Y0_指_人指_指3;
+    	public ShapePart X0Y0_指_人指_指3;
 
-    	public Par X0Y0_指_人指_指2;
+    	public ShapePart X0Y0_指_人指_指2;
 
-    	public Par X0Y0_指_人指_指1;
+    	public ShapePart X0Y0_指_人指_指1;
 
-    	public Par X0Y0_指_人指_鱗3_鱗1;
+    	public ShapePart X0Y0_指_人指_鱗3_鱗1;
 
-    	public Par X0Y0_指_人指_鱗3_鱗2;
+    	public ShapePart X0Y0_指_人指_鱗3_鱗2;
 
-    	public Par X0Y0_指_人指_鱗3_鱗3;
+    	public ShapePart X0Y0_指_人指_鱗3_鱗3;
 
-    	public Par X0Y0_指_人指_鱗3_鱗4;
+    	public ShapePart X0Y0_指_人指_鱗3_鱗4;
 
-    	public Par X0Y0_指_人指_鱗2_鱗1;
+    	public ShapePart X0Y0_指_人指_鱗2_鱗1;
 
-    	public Par X0Y0_指_人指_鱗2_鱗2;
+    	public ShapePart X0Y0_指_人指_鱗2_鱗2;
 
-    	public Par X0Y0_指_人指_鱗2_鱗3;
+    	public ShapePart X0Y0_指_人指_鱗2_鱗3;
 
-    	public Par X0Y0_指_人指_鱗2_鱗4;
+    	public ShapePart X0Y0_指_人指_鱗2_鱗4;
 
-    	public Par X0Y0_指_人指_鱗1_鱗1;
+    	public ShapePart X0Y0_指_人指_鱗1_鱗1;
 
-    	public Par X0Y0_指_人指_鱗1_鱗2;
+    	public ShapePart X0Y0_指_人指_鱗1_鱗2;
 
-    	public Par X0Y0_指_人指_鱗1_鱗3;
+    	public ShapePart X0Y0_指_人指_鱗1_鱗3;
 
-    	public Par X0Y0_指_人指_鱗1_鱗4;
+    	public ShapePart X0Y0_指_人指_鱗1_鱗4;
 
-    	public Par X0Y0_指_人指_鱗1_鱗5;
+    	public ShapePart X0Y0_指_人指_鱗1_鱗5;
 
-    	public Par X0Y0_指_人指_鱗1_鱗6;
+    	public ShapePart X0Y0_指_人指_鱗1_鱗6;
 
-    	public Par X0Y0_指_親指_爪;
+    	public ShapePart X0Y0_指_親指_爪;
 
-    	public Par X0Y0_指_親指_指2;
+    	public ShapePart X0Y0_指_親指_指2;
 
-    	public Par X0Y0_指_親指_指1;
+    	public ShapePart X0Y0_指_親指_指1;
 
-    	public Par X0Y0_指_親指_鱗2_鱗1;
+    	public ShapePart X0Y0_指_親指_鱗2_鱗1;
 
-    	public Par X0Y0_指_親指_鱗2_鱗2;
+    	public ShapePart X0Y0_指_親指_鱗2_鱗2;
 
-    	public Par X0Y0_指_親指_鱗2_鱗3;
+    	public ShapePart X0Y0_指_親指_鱗2_鱗3;
 
-    	public Par X0Y0_指_親指_鱗2_鱗4;
+    	public ShapePart X0Y0_指_親指_鱗2_鱗4;
 
-    	public Par X0Y0_指_親指_鱗1_鱗1;
+    	public ShapePart X0Y0_指_親指_鱗1_鱗1;
 
-    	public Par X0Y0_指_親指_鱗1_鱗2;
+    	public ShapePart X0Y0_指_親指_鱗1_鱗2;
 
-    	public Par X0Y0_指_親指_鱗1_鱗3;
+    	public ShapePart X0Y0_指_親指_鱗1_鱗3;
 
-    	public Par X0Y0_指_親指_鱗1_鱗4;
+    	public ShapePart X0Y0_指_親指_鱗1_鱗4;
 
-    	public Par X0Y0_指_親指_鱗1_鱗5;
+    	public ShapePart X0Y0_指_親指_鱗1_鱗5;
 
-    	public Par X0Y0_指_親指_鱗1_鱗6;
+    	public ShapePart X0Y0_指_親指_鱗1_鱗6;
 
     	public ColorD 鳥翼手CD;
 
@@ -2067,10 +2067,10 @@ namespace SlaveMatrix
     	public 手_鳥(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 手_鳥D e)
     	{
     		ThisType = GetType();
-    		Body = new Difs(Sta.腕左["鳥翼手"]);
-    		Pars pars = Body[0][0];
-    		X0Y0_鳥翼手 = pars["鳥翼手"].ToPar();
-    		Pars pars2 = pars["風切羽"].ToPars();
+    		Body = new VariantGrid(GlobalState.腕左["鳥翼手"]);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_鳥翼手 = partGroup["鳥翼手"].ToPar();
+    		PartGroup pars2 = partGroup["風切羽"].ToPars();
     		X0Y0_風切羽_羽10 = pars2["羽10"].ToPar();
     		X0Y0_風切羽_羽9 = pars2["羽9"].ToPar();
     		X0Y0_風切羽_羽8 = pars2["羽8"].ToPar();
@@ -2081,7 +2081,7 @@ namespace SlaveMatrix
     		X0Y0_風切羽_羽3 = pars2["羽3"].ToPar();
     		X0Y0_風切羽_羽2 = pars2["羽2"].ToPar();
     		X0Y0_風切羽_羽1 = pars2["羽1"].ToPar();
-    		pars2 = pars["雨覆羽"].ToPars();
+    		pars2 = partGroup["雨覆羽"].ToPars();
     		X0Y0_雨覆羽_羽10 = pars2["羽10"].ToPar();
     		X0Y0_雨覆羽_羽9 = pars2["羽9"].ToPar();
     		X0Y0_雨覆羽_羽8 = pars2["羽8"].ToPar();
@@ -2092,17 +2092,17 @@ namespace SlaveMatrix
     		X0Y0_雨覆羽_羽3 = pars2["羽3"].ToPar();
     		X0Y0_雨覆羽_羽2 = pars2["羽2"].ToPar();
     		X0Y0_雨覆羽_羽1 = pars2["羽1"].ToPar();
-    		pars2 = pars["小翼羽"].ToPars();
+    		pars2 = partGroup["小翼羽"].ToPars();
     		X0Y0_小翼羽_羽3 = pars2["羽3"].ToPar();
     		X0Y0_小翼羽_羽2 = pars2["羽2"].ToPar();
     		X0Y0_小翼羽_羽1 = pars2["羽1"].ToPar();
-    		pars2 = pars["指"].ToPars();
-    		Pars pars3 = pars2["中指"].ToPars();
+    		pars2 = partGroup["指"].ToPars();
+    		PartGroup pars3 = pars2["中指"].ToPars();
     		X0Y0_指_中指_爪 = pars3["爪"].ToPar();
     		X0Y0_指_中指_指3 = pars3["指3"].ToPar();
     		X0Y0_指_中指_指2 = pars3["指2"].ToPar();
     		X0Y0_指_中指_指1 = pars3["指1"].ToPar();
-    		Pars pars4 = pars3["鱗3"].ToPars();
+    		PartGroup pars4 = pars3["鱗3"].ToPars();
     		X0Y0_指_中指_鱗3_鱗1 = pars4["鱗1"].ToPar();
     		X0Y0_指_中指_鱗3_鱗2 = pars4["鱗2"].ToPar();
     		X0Y0_指_中指_鱗3_鱗3 = pars4["鱗3"].ToPar();
@@ -2580,233 +2580,233 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		鳥翼手CD = new ColorD(ref Col.Black, ref 体配色.人肌R);
-    		風切羽_羽10CD = new ColorD(ref Col.Black, ref 体配色.羽1O);
-    		風切羽_羽9CD = new ColorD(ref Col.Black, ref 体配色.羽1O);
-    		風切羽_羽8CD = new ColorD(ref Col.Black, ref 体配色.羽1O);
-    		風切羽_羽7CD = new ColorD(ref Col.Black, ref 体配色.羽1O);
-    		風切羽_羽6CD = new ColorD(ref Col.Black, ref 体配色.羽1O);
-    		風切羽_羽5CD = new ColorD(ref Col.Black, ref 体配色.羽1O);
-    		風切羽_羽4CD = new ColorD(ref Col.Black, ref 体配色.羽1O);
-    		風切羽_羽3CD = new ColorD(ref Col.Black, ref 体配色.羽1O);
-    		風切羽_羽2CD = new ColorD(ref Col.Black, ref 体配色.羽1O);
-    		風切羽_羽1CD = new ColorD(ref Col.Black, ref 体配色.羽1O);
-    		雨覆羽_羽10CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		雨覆羽_羽9CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		雨覆羽_羽8CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		雨覆羽_羽7CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		雨覆羽_羽6CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		雨覆羽_羽5CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		雨覆羽_羽4CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		雨覆羽_羽3CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		雨覆羽_羽2CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		雨覆羽_羽1CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		小翼羽_羽3CD = new ColorD(ref Col.Black, ref 体配色.羽0O);
-    		小翼羽_羽2CD = new ColorD(ref Col.Black, ref 体配色.羽0O);
-    		小翼羽_羽1CD = new ColorD(ref Col.Black, ref 体配色.羽0O);
-    		指_中指_爪CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		指_中指_指3CD = new ColorD(ref Col.Black, ref 体配色.人肌O);
-    		指_中指_指2CD = new ColorD(ref Col.Black, ref 体配色.人肌O);
-    		指_中指_指1CD = new ColorD(ref Col.Black, ref 体配色.人肌O);
-    		指_中指_鱗3_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		指_中指_鱗3_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		指_中指_鱗3_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		指_中指_鱗3_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		指_中指_鱗2_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		指_中指_鱗2_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		指_中指_鱗2_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		指_中指_鱗2_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		指_中指_鱗1_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		指_中指_鱗1_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		指_中指_鱗1_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		指_中指_鱗1_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		指_中指_鱗1_鱗5CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		指_中指_鱗1_鱗6CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		指_人指_爪CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		指_人指_指3CD = new ColorD(ref Col.Black, ref 体配色.人肌O);
-    		指_人指_指2CD = new ColorD(ref Col.Black, ref 体配色.人肌O);
-    		指_人指_指1CD = new ColorD(ref Col.Black, ref 体配色.人肌O);
-    		指_人指_鱗3_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		指_人指_鱗3_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		指_人指_鱗3_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		指_人指_鱗3_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		指_人指_鱗2_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		指_人指_鱗2_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		指_人指_鱗2_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		指_人指_鱗2_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		指_人指_鱗1_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		指_人指_鱗1_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		指_人指_鱗1_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		指_人指_鱗1_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		指_人指_鱗1_鱗5CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		指_人指_鱗1_鱗6CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		指_親指_爪CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		指_親指_指2CD = new ColorD(ref Col.Black, ref 体配色.人肌O);
-    		指_親指_指1CD = new ColorD(ref Col.Black, ref 体配色.人肌O);
-    		指_親指_鱗2_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		指_親指_鱗2_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		指_親指_鱗2_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		指_親指_鱗2_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		指_親指_鱗1_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		指_親指_鱗1_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		指_親指_鱗1_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		指_親指_鱗1_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		指_親指_鱗1_鱗5CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		指_親指_鱗1_鱗6CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		鳥翼手CD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌R);
+    		風切羽_羽10CD = new ColorD(ref ColorHelper.Black, ref 体配色.羽1O);
+    		風切羽_羽9CD = new ColorD(ref ColorHelper.Black, ref 体配色.羽1O);
+    		風切羽_羽8CD = new ColorD(ref ColorHelper.Black, ref 体配色.羽1O);
+    		風切羽_羽7CD = new ColorD(ref ColorHelper.Black, ref 体配色.羽1O);
+    		風切羽_羽6CD = new ColorD(ref ColorHelper.Black, ref 体配色.羽1O);
+    		風切羽_羽5CD = new ColorD(ref ColorHelper.Black, ref 体配色.羽1O);
+    		風切羽_羽4CD = new ColorD(ref ColorHelper.Black, ref 体配色.羽1O);
+    		風切羽_羽3CD = new ColorD(ref ColorHelper.Black, ref 体配色.羽1O);
+    		風切羽_羽2CD = new ColorD(ref ColorHelper.Black, ref 体配色.羽1O);
+    		風切羽_羽1CD = new ColorD(ref ColorHelper.Black, ref 体配色.羽1O);
+    		雨覆羽_羽10CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		雨覆羽_羽9CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		雨覆羽_羽8CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		雨覆羽_羽7CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		雨覆羽_羽6CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		雨覆羽_羽5CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		雨覆羽_羽4CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		雨覆羽_羽3CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		雨覆羽_羽2CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		雨覆羽_羽1CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		小翼羽_羽3CD = new ColorD(ref ColorHelper.Black, ref 体配色.羽0O);
+    		小翼羽_羽2CD = new ColorD(ref ColorHelper.Black, ref 体配色.羽0O);
+    		小翼羽_羽1CD = new ColorD(ref ColorHelper.Black, ref 体配色.羽0O);
+    		指_中指_爪CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		指_中指_指3CD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌O);
+    		指_中指_指2CD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌O);
+    		指_中指_指1CD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌O);
+    		指_中指_鱗3_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		指_中指_鱗3_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		指_中指_鱗3_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		指_中指_鱗3_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		指_中指_鱗2_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		指_中指_鱗2_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		指_中指_鱗2_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		指_中指_鱗2_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		指_中指_鱗1_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		指_中指_鱗1_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		指_中指_鱗1_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		指_中指_鱗1_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		指_中指_鱗1_鱗5CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		指_中指_鱗1_鱗6CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		指_人指_爪CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		指_人指_指3CD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌O);
+    		指_人指_指2CD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌O);
+    		指_人指_指1CD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌O);
+    		指_人指_鱗3_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		指_人指_鱗3_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		指_人指_鱗3_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		指_人指_鱗3_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		指_人指_鱗2_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		指_人指_鱗2_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		指_人指_鱗2_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		指_人指_鱗2_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		指_人指_鱗1_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		指_人指_鱗1_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		指_人指_鱗1_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		指_人指_鱗1_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		指_人指_鱗1_鱗5CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		指_人指_鱗1_鱗6CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		指_親指_爪CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		指_親指_指2CD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌O);
+    		指_親指_指1CD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌O);
+    		指_親指_鱗2_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		指_親指_鱗2_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		指_親指_鱗2_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		指_親指_鱗2_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		指_親指_鱗1_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		指_親指_鱗1_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		指_親指_鱗1_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		指_親指_鱗1_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		指_親指_鱗1_鱗5CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		指_親指_鱗1_鱗6CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
     	}
 
     	private void 配色T0(BodyColorSet 体配色)
     	{
-    		鳥翼手CD = new ColorD(ref Col.Black, ref 体配色.人肌R);
-    		風切羽_羽10CD = new ColorD(ref Col.Black, ref 体配色.羽1O);
-    		風切羽_羽9CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		風切羽_羽8CD = new ColorD(ref Col.Black, ref 体配色.羽1O);
-    		風切羽_羽7CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		風切羽_羽6CD = new ColorD(ref Col.Black, ref 体配色.羽1O);
-    		風切羽_羽5CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		風切羽_羽4CD = new ColorD(ref Col.Black, ref 体配色.羽1O);
-    		風切羽_羽3CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		風切羽_羽2CD = new ColorD(ref Col.Black, ref 体配色.羽1O);
-    		風切羽_羽1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		雨覆羽_羽10CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		雨覆羽_羽9CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		雨覆羽_羽8CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		雨覆羽_羽7CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		雨覆羽_羽6CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		雨覆羽_羽5CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		雨覆羽_羽4CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		雨覆羽_羽3CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		雨覆羽_羽2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		雨覆羽_羽1CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		小翼羽_羽3CD = new ColorD(ref Col.Black, ref 体配色.羽0O);
-    		小翼羽_羽2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		小翼羽_羽1CD = new ColorD(ref Col.Black, ref 体配色.羽0O);
-    		指_中指_爪CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		指_中指_指3CD = new ColorD(ref Col.Black, ref 体配色.人肌O);
-    		指_中指_指2CD = new ColorD(ref Col.Black, ref 体配色.人肌O);
-    		指_中指_指1CD = new ColorD(ref Col.Black, ref 体配色.人肌O);
-    		指_中指_鱗3_鱗1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		指_中指_鱗3_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		指_中指_鱗3_鱗3CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		指_中指_鱗3_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		指_中指_鱗2_鱗1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		指_中指_鱗2_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		指_中指_鱗2_鱗3CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		指_中指_鱗2_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		指_中指_鱗1_鱗1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		指_中指_鱗1_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		指_中指_鱗1_鱗3CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		指_中指_鱗1_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		指_中指_鱗1_鱗5CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		指_中指_鱗1_鱗6CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		指_人指_爪CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		指_人指_指3CD = new ColorD(ref Col.Black, ref 体配色.人肌O);
-    		指_人指_指2CD = new ColorD(ref Col.Black, ref 体配色.人肌O);
-    		指_人指_指1CD = new ColorD(ref Col.Black, ref 体配色.人肌O);
-    		指_人指_鱗3_鱗1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		指_人指_鱗3_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		指_人指_鱗3_鱗3CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		指_人指_鱗3_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		指_人指_鱗2_鱗1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		指_人指_鱗2_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		指_人指_鱗2_鱗3CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		指_人指_鱗2_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		指_人指_鱗1_鱗1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		指_人指_鱗1_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		指_人指_鱗1_鱗3CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		指_人指_鱗1_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		指_人指_鱗1_鱗5CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		指_人指_鱗1_鱗6CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		指_親指_爪CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		指_親指_指2CD = new ColorD(ref Col.Black, ref 体配色.人肌O);
-    		指_親指_指1CD = new ColorD(ref Col.Black, ref 体配色.人肌O);
-    		指_親指_鱗2_鱗1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		指_親指_鱗2_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		指_親指_鱗2_鱗3CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		指_親指_鱗2_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		指_親指_鱗1_鱗1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		指_親指_鱗1_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		指_親指_鱗1_鱗3CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		指_親指_鱗1_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		指_親指_鱗1_鱗5CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		指_親指_鱗1_鱗6CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		鳥翼手CD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌R);
+    		風切羽_羽10CD = new ColorD(ref ColorHelper.Black, ref 体配色.羽1O);
+    		風切羽_羽9CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		風切羽_羽8CD = new ColorD(ref ColorHelper.Black, ref 体配色.羽1O);
+    		風切羽_羽7CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		風切羽_羽6CD = new ColorD(ref ColorHelper.Black, ref 体配色.羽1O);
+    		風切羽_羽5CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		風切羽_羽4CD = new ColorD(ref ColorHelper.Black, ref 体配色.羽1O);
+    		風切羽_羽3CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		風切羽_羽2CD = new ColorD(ref ColorHelper.Black, ref 体配色.羽1O);
+    		風切羽_羽1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		雨覆羽_羽10CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		雨覆羽_羽9CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		雨覆羽_羽8CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		雨覆羽_羽7CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		雨覆羽_羽6CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		雨覆羽_羽5CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		雨覆羽_羽4CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		雨覆羽_羽3CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		雨覆羽_羽2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		雨覆羽_羽1CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		小翼羽_羽3CD = new ColorD(ref ColorHelper.Black, ref 体配色.羽0O);
+    		小翼羽_羽2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		小翼羽_羽1CD = new ColorD(ref ColorHelper.Black, ref 体配色.羽0O);
+    		指_中指_爪CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		指_中指_指3CD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌O);
+    		指_中指_指2CD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌O);
+    		指_中指_指1CD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌O);
+    		指_中指_鱗3_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		指_中指_鱗3_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		指_中指_鱗3_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		指_中指_鱗3_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		指_中指_鱗2_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		指_中指_鱗2_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		指_中指_鱗2_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		指_中指_鱗2_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		指_中指_鱗1_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		指_中指_鱗1_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		指_中指_鱗1_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		指_中指_鱗1_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		指_中指_鱗1_鱗5CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		指_中指_鱗1_鱗6CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		指_人指_爪CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		指_人指_指3CD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌O);
+    		指_人指_指2CD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌O);
+    		指_人指_指1CD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌O);
+    		指_人指_鱗3_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		指_人指_鱗3_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		指_人指_鱗3_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		指_人指_鱗3_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		指_人指_鱗2_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		指_人指_鱗2_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		指_人指_鱗2_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		指_人指_鱗2_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		指_人指_鱗1_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		指_人指_鱗1_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		指_人指_鱗1_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		指_人指_鱗1_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		指_人指_鱗1_鱗5CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		指_人指_鱗1_鱗6CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		指_親指_爪CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		指_親指_指2CD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌O);
+    		指_親指_指1CD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌O);
+    		指_親指_鱗2_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		指_親指_鱗2_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		指_親指_鱗2_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		指_親指_鱗2_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		指_親指_鱗1_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		指_親指_鱗1_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		指_親指_鱗1_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		指_親指_鱗1_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		指_親指_鱗1_鱗5CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		指_親指_鱗1_鱗6CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
     	}
 
     	private void 配色T1(BodyColorSet 体配色)
     	{
-    		鳥翼手CD = new ColorD(ref Col.Black, ref 体配色.人肌R);
-    		風切羽_羽10CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		風切羽_羽9CD = new ColorD(ref Col.Black, ref 体配色.羽1O);
-    		風切羽_羽8CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		風切羽_羽7CD = new ColorD(ref Col.Black, ref 体配色.羽1O);
-    		風切羽_羽6CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		風切羽_羽5CD = new ColorD(ref Col.Black, ref 体配色.羽1O);
-    		風切羽_羽4CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		風切羽_羽3CD = new ColorD(ref Col.Black, ref 体配色.羽1O);
-    		風切羽_羽2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		風切羽_羽1CD = new ColorD(ref Col.Black, ref 体配色.羽1O);
-    		雨覆羽_羽10CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		雨覆羽_羽9CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		雨覆羽_羽8CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		雨覆羽_羽7CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		雨覆羽_羽6CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		雨覆羽_羽5CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		雨覆羽_羽4CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		雨覆羽_羽3CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		雨覆羽_羽2CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		雨覆羽_羽1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		小翼羽_羽3CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		小翼羽_羽2CD = new ColorD(ref Col.Black, ref 体配色.羽0O);
-    		小翼羽_羽1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		指_中指_爪CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		指_中指_指3CD = new ColorD(ref Col.Black, ref 体配色.人肌O);
-    		指_中指_指2CD = new ColorD(ref Col.Black, ref 体配色.人肌O);
-    		指_中指_指1CD = new ColorD(ref Col.Black, ref 体配色.人肌O);
-    		指_中指_鱗3_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		指_中指_鱗3_鱗2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		指_中指_鱗3_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		指_中指_鱗3_鱗4CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		指_中指_鱗2_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		指_中指_鱗2_鱗2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		指_中指_鱗2_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		指_中指_鱗2_鱗4CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		指_中指_鱗1_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		指_中指_鱗1_鱗2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		指_中指_鱗1_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		指_中指_鱗1_鱗4CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		指_中指_鱗1_鱗5CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		指_中指_鱗1_鱗6CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		指_人指_爪CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		指_人指_指3CD = new ColorD(ref Col.Black, ref 体配色.人肌O);
-    		指_人指_指2CD = new ColorD(ref Col.Black, ref 体配色.人肌O);
-    		指_人指_指1CD = new ColorD(ref Col.Black, ref 体配色.人肌O);
-    		指_人指_鱗3_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		指_人指_鱗3_鱗2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		指_人指_鱗3_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		指_人指_鱗3_鱗4CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		指_人指_鱗2_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		指_人指_鱗2_鱗2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		指_人指_鱗2_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		指_人指_鱗2_鱗4CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		指_人指_鱗1_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		指_人指_鱗1_鱗2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		指_人指_鱗1_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		指_人指_鱗1_鱗4CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		指_人指_鱗1_鱗5CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		指_人指_鱗1_鱗6CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		指_親指_爪CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		指_親指_指2CD = new ColorD(ref Col.Black, ref 体配色.人肌O);
-    		指_親指_指1CD = new ColorD(ref Col.Black, ref 体配色.人肌O);
-    		指_親指_鱗2_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		指_親指_鱗2_鱗2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		指_親指_鱗2_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		指_親指_鱗2_鱗4CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		指_親指_鱗1_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		指_親指_鱗1_鱗2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		指_親指_鱗1_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		指_親指_鱗1_鱗4CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		指_親指_鱗1_鱗5CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		指_親指_鱗1_鱗6CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		鳥翼手CD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌R);
+    		風切羽_羽10CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		風切羽_羽9CD = new ColorD(ref ColorHelper.Black, ref 体配色.羽1O);
+    		風切羽_羽8CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		風切羽_羽7CD = new ColorD(ref ColorHelper.Black, ref 体配色.羽1O);
+    		風切羽_羽6CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		風切羽_羽5CD = new ColorD(ref ColorHelper.Black, ref 体配色.羽1O);
+    		風切羽_羽4CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		風切羽_羽3CD = new ColorD(ref ColorHelper.Black, ref 体配色.羽1O);
+    		風切羽_羽2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		風切羽_羽1CD = new ColorD(ref ColorHelper.Black, ref 体配色.羽1O);
+    		雨覆羽_羽10CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		雨覆羽_羽9CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		雨覆羽_羽8CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		雨覆羽_羽7CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		雨覆羽_羽6CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		雨覆羽_羽5CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		雨覆羽_羽4CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		雨覆羽_羽3CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		雨覆羽_羽2CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		雨覆羽_羽1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		小翼羽_羽3CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		小翼羽_羽2CD = new ColorD(ref ColorHelper.Black, ref 体配色.羽0O);
+    		小翼羽_羽1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		指_中指_爪CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		指_中指_指3CD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌O);
+    		指_中指_指2CD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌O);
+    		指_中指_指1CD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌O);
+    		指_中指_鱗3_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		指_中指_鱗3_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		指_中指_鱗3_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		指_中指_鱗3_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		指_中指_鱗2_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		指_中指_鱗2_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		指_中指_鱗2_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		指_中指_鱗2_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		指_中指_鱗1_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		指_中指_鱗1_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		指_中指_鱗1_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		指_中指_鱗1_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		指_中指_鱗1_鱗5CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		指_中指_鱗1_鱗6CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		指_人指_爪CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		指_人指_指3CD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌O);
+    		指_人指_指2CD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌O);
+    		指_人指_指1CD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌O);
+    		指_人指_鱗3_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		指_人指_鱗3_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		指_人指_鱗3_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		指_人指_鱗3_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		指_人指_鱗2_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		指_人指_鱗2_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		指_人指_鱗2_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		指_人指_鱗2_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		指_人指_鱗1_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		指_人指_鱗1_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		指_人指_鱗1_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		指_人指_鱗1_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		指_人指_鱗1_鱗5CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		指_人指_鱗1_鱗6CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		指_親指_爪CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		指_親指_指2CD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌O);
+    		指_親指_指1CD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌O);
+    		指_親指_鱗2_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		指_親指_鱗2_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		指_親指_鱗2_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		指_親指_鱗2_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		指_親指_鱗1_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		指_親指_鱗1_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		指_親指_鱗1_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		指_親指_鱗1_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		指_親指_鱗1_鱗5CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		指_親指_鱗1_鱗6CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
     	}
     }
 }

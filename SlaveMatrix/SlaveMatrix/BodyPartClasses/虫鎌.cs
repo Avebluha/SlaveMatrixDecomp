@@ -3,39 +3,39 @@ using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
-    public class 虫鎌 : Ele
+    public class 虫鎌 : Element
     {
-    	public Par X0Y0_虫鎌節;
+    	public ShapePart X0Y0_虫鎌節;
 
-    	public Par X0Y0_虫棘1;
+    	public ShapePart X0Y0_虫棘1;
 
-    	public Par X0Y0_虫棘2;
+    	public ShapePart X0Y0_虫棘2;
 
-    	public Par X0Y0_虫棘3;
+    	public ShapePart X0Y0_虫棘3;
 
-    	public Par X0Y0_虫棘4;
+    	public ShapePart X0Y0_虫棘4;
 
-    	public Par X0Y0_虫鎌1;
+    	public ShapePart X0Y0_虫鎌1;
 
-    	public Par X0Y0_虫鎌2;
+    	public ShapePart X0Y0_虫鎌2;
 
-    	public Par X0Y0_虫鎌3;
+    	public ShapePart X0Y0_虫鎌3;
 
-    	public Par X0Y0_虫孔1;
+    	public ShapePart X0Y0_虫孔1;
 
-    	public Par X0Y0_虫孔2;
+    	public ShapePart X0Y0_虫孔2;
 
-    	public Par X0Y0_輪_革;
+    	public ShapePart X0Y0_輪_革;
 
-    	public Par X0Y0_輪_金具1;
+    	public ShapePart X0Y0_輪_金具1;
 
-    	public Par X0Y0_輪_金具2;
+    	public ShapePart X0Y0_輪_金具2;
 
-    	public Par X0Y0_輪_金具3;
+    	public ShapePart X0Y0_輪_金具3;
 
-    	public Par X0Y0_輪_金具左;
+    	public ShapePart X0Y0_輪_金具左;
 
-    	public Par X0Y0_輪_金具右;
+    	public ShapePart X0Y0_輪_金具右;
 
     	public ColorD 虫鎌節CD;
 
@@ -444,19 +444,19 @@ namespace SlaveMatrix
     	public 虫鎌(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 虫鎌D e)
     	{
     		ThisType = GetType();
-    		Body = new Difs(Sta.肢左["虫鎌"]);
-    		Pars pars = Body[0][0];
-    		X0Y0_虫鎌節 = pars["虫鎌節"].ToPar();
-    		X0Y0_虫棘1 = pars["虫棘1"].ToPar();
-    		X0Y0_虫棘2 = pars["虫棘2"].ToPar();
-    		X0Y0_虫棘3 = pars["虫棘3"].ToPar();
-    		X0Y0_虫棘4 = pars["虫棘4"].ToPar();
-    		X0Y0_虫鎌1 = pars["虫鎌1"].ToPar();
-    		X0Y0_虫鎌2 = pars["虫鎌2"].ToPar();
-    		X0Y0_虫鎌3 = pars["虫鎌3"].ToPar();
-    		X0Y0_虫孔1 = pars["虫孔1"].ToPar();
-    		X0Y0_虫孔2 = pars["虫孔2"].ToPar();
-    		Pars pars2 = pars["輪"].ToPars();
+    		Body = new VariantGrid(GlobalState.肢左["虫鎌"]);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_虫鎌節 = partGroup["虫鎌節"].ToPar();
+    		X0Y0_虫棘1 = partGroup["虫棘1"].ToPar();
+    		X0Y0_虫棘2 = partGroup["虫棘2"].ToPar();
+    		X0Y0_虫棘3 = partGroup["虫棘3"].ToPar();
+    		X0Y0_虫棘4 = partGroup["虫棘4"].ToPar();
+    		X0Y0_虫鎌1 = partGroup["虫鎌1"].ToPar();
+    		X0Y0_虫鎌2 = partGroup["虫鎌2"].ToPar();
+    		X0Y0_虫鎌3 = partGroup["虫鎌3"].ToPar();
+    		X0Y0_虫孔1 = partGroup["虫孔1"].ToPar();
+    		X0Y0_虫孔2 = partGroup["虫孔2"].ToPar();
+    		PartGroup pars2 = partGroup["輪"].ToPars();
     		X0Y0_輪_革 = pars2["革"].ToPar();
     		X0Y0_輪_金具1 = pars2["金具1"].ToPar();
     		X0Y0_輪_金具2 = pars2["金具2"].ToPar();
@@ -541,7 +541,7 @@ namespace SlaveMatrix
     		Body.JoinPAall();
     	}
 
-    	public override bool Is革(Par p)
+    	public override bool Is革(ShapePart p)
     	{
     		if (p != X0Y0_輪_革 && p != X0Y0_輪_金具1 && p != X0Y0_輪_金具2 && p != X0Y0_輪_金具3 && p != X0Y0_輪_金具左)
     		{
@@ -591,16 +591,16 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		虫鎌節CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		虫棘1CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		虫棘2CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		虫棘3CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		虫棘4CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		虫鎌1CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		虫鎌2CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		虫鎌3CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		虫孔1CD = new ColorD(ref Col.Black, ref 体配色.甲1R);
-    		虫孔2CD = new ColorD(ref Col.Black, ref 体配色.甲1R);
+    		虫鎌節CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		虫棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		虫棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		虫棘3CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		虫棘4CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		虫鎌1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		虫鎌2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		虫鎌3CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		虫孔1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1R);
+    		虫孔2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1R);
     		輪_革CD = new ColorD();
     		輪_金具1CD = new ColorD();
     		輪_金具2CD = new ColorD();
@@ -611,16 +611,16 @@ namespace SlaveMatrix
 
     	private void 配色T0(BodyColorSet 体配色)
     	{
-    		虫鎌節CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		虫棘1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		虫棘2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		虫棘3CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		虫棘4CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		虫鎌1CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		虫鎌2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		虫鎌3CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		虫孔1CD = new ColorD(ref Col.Black, ref 体配色.刺青R);
-    		虫孔2CD = new ColorD(ref Col.Black, ref 体配色.刺青R);
+    		虫鎌節CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		虫棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		虫棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		虫棘3CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		虫棘4CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		虫鎌1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		虫鎌2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		虫鎌3CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		虫孔1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青R);
+    		虫孔2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青R);
     		輪_革CD = new ColorD();
     		輪_金具1CD = new ColorD();
     		輪_金具2CD = new ColorD();
@@ -631,16 +631,16 @@ namespace SlaveMatrix
 
     	private void 配色T1(BodyColorSet 体配色)
     	{
-    		虫鎌節CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		虫棘1CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		虫棘2CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		虫棘3CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		虫棘4CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		虫鎌1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		虫鎌2CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		虫鎌3CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		虫孔1CD = new ColorD(ref Col.Black, ref 体配色.甲1R);
-    		虫孔2CD = new ColorD(ref Col.Black, ref 体配色.甲1R);
+    		虫鎌節CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		虫棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		虫棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		虫棘3CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		虫棘4CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		虫鎌1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		虫鎌2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		虫鎌3CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		虫孔1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1R);
+    		虫孔2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1R);
     		輪_革CD = new ColorD();
     		輪_金具1CD = new ColorD();
     		輪_金具2CD = new ColorD();

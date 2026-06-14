@@ -1,0 +1,11 @@
+id: ChestHair
+original_key: 胸毛
+resource: 胴体
+morph_x: 1
+morph_y: 1
+variants:
+- x: 0
+  y: 0
+  file: x0y0.svg
+fields:
+- name: 獣性

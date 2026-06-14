@@ -6,57 +6,57 @@ namespace SlaveMatrix
 {
     public class 顔面_虫 : 顔面
     {
-    	public Par X0Y0_面基;
+    	public ShapePart X0Y0_面基;
 
-    	public Par X0Y0_複眼左_複眼1;
+    	public ShapePart X0Y0_複眼左_複眼1;
 
-    	public Par X0Y0_複眼左_複眼2;
+    	public ShapePart X0Y0_複眼左_複眼2;
 
-    	public Par X0Y0_複眼左_ハイライト;
+    	public ShapePart X0Y0_複眼左_ハイライト;
 
-    	public Par X0Y0_複眼右_複眼1;
+    	public ShapePart X0Y0_複眼右_複眼1;
 
-    	public Par X0Y0_複眼右_複眼2;
+    	public ShapePart X0Y0_複眼右_複眼2;
 
-    	public Par X0Y0_複眼右_ハイライト;
+    	public ShapePart X0Y0_複眼右_ハイライト;
 
-    	public Par X0Y0_面下_面;
+    	public ShapePart X0Y0_面下_面;
 
-    	public Par X0Y0_面下_器官左上;
+    	public ShapePart X0Y0_面下_器官左上;
 
-    	public Par X0Y0_面下_器官左下;
+    	public ShapePart X0Y0_面下_器官左下;
 
-    	public Par X0Y0_面下_器官右上;
+    	public ShapePart X0Y0_面下_器官右上;
 
-    	public Par X0Y0_面下_器官右下;
+    	public ShapePart X0Y0_面下_器官右下;
 
-    	public Par X0Y0_面上;
+    	public ShapePart X0Y0_面上;
 
-    	public Par X0Y0_付根左_付根1;
+    	public ShapePart X0Y0_付根左_付根1;
 
-    	public Par X0Y0_付根左_付根2;
+    	public ShapePart X0Y0_付根左_付根2;
 
-    	public Par X0Y0_付根右_付根1;
+    	public ShapePart X0Y0_付根右_付根1;
 
-    	public Par X0Y0_付根右_付根2;
+    	public ShapePart X0Y0_付根右_付根2;
 
-    	public Par X0Y0_単眼_眼中_基;
+    	public ShapePart X0Y0_単眼_眼中_基;
 
-    	public Par X0Y0_単眼_眼中_眼;
+    	public ShapePart X0Y0_単眼_眼中_眼;
 
-    	public Par X0Y0_単眼_眼中_ハイライト;
+    	public ShapePart X0Y0_単眼_眼中_ハイライト;
 
-    	public Par X0Y0_単眼_眼左_基;
+    	public ShapePart X0Y0_単眼_眼左_基;
 
-    	public Par X0Y0_単眼_眼左_眼;
+    	public ShapePart X0Y0_単眼_眼左_眼;
 
-    	public Par X0Y0_単眼_眼左_ハイライト;
+    	public ShapePart X0Y0_単眼_眼左_ハイライト;
 
-    	public Par X0Y0_単眼_眼右_基;
+    	public ShapePart X0Y0_単眼_眼右_基;
 
-    	public Par X0Y0_単眼_眼右_眼;
+    	public ShapePart X0Y0_単眼_眼右_眼;
 
-    	public Par X0Y0_単眼_眼右_ハイライト;
+    	public ShapePart X0Y0_単眼_眼右_ハイライト;
 
     	public ColorD 面基CD;
 
@@ -640,35 +640,35 @@ namespace SlaveMatrix
     	{
     		顔面_虫 顔面_虫2 = this;
     		ThisType = GetType();
-    		Dif dif = new Dif(Sta.肢中["顔面"][1]);
-    		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		X0Y0_面基 = pars["面基"].ToPar();
-    		Pars pars2 = pars["複眼左"].ToPars();
+    		MorphVariant morphVariant = new MorphVariant(GlobalState.肢中["顔面"][1]);
+    		Body = new VariantGrid();
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_面基 = partGroup["面基"].ToPar();
+    		PartGroup pars2 = partGroup["複眼左"].ToPars();
     		X0Y0_複眼左_複眼1 = pars2["複眼1"].ToPar();
     		X0Y0_複眼左_複眼2 = pars2["複眼2"].ToPar();
     		X0Y0_複眼左_ハイライト = pars2["ハイライト"].ToPar();
-    		pars2 = pars["複眼右"].ToPars();
+    		pars2 = partGroup["複眼右"].ToPars();
     		X0Y0_複眼右_複眼1 = pars2["複眼1"].ToPar();
     		X0Y0_複眼右_複眼2 = pars2["複眼2"].ToPar();
     		X0Y0_複眼右_ハイライト = pars2["ハイライト"].ToPar();
-    		pars2 = pars["面下"].ToPars();
+    		pars2 = partGroup["面下"].ToPars();
     		X0Y0_面下_面 = pars2["面"].ToPar();
     		X0Y0_面下_器官左上 = pars2["器官左上"].ToPar();
     		X0Y0_面下_器官左下 = pars2["器官左下"].ToPar();
     		X0Y0_面下_器官右上 = pars2["器官右上"].ToPar();
     		X0Y0_面下_器官右下 = pars2["器官右下"].ToPar();
-    		X0Y0_面上 = pars["面上"].ToPar();
-    		pars2 = pars["付根左"].ToPars();
+    		X0Y0_面上 = partGroup["面上"].ToPar();
+    		pars2 = partGroup["付根左"].ToPars();
     		X0Y0_付根左_付根1 = pars2["付根1"].ToPar();
     		X0Y0_付根左_付根2 = pars2["付根2"].ToPar();
-    		pars2 = pars["付根右"].ToPars();
+    		pars2 = partGroup["付根右"].ToPars();
     		X0Y0_付根右_付根1 = pars2["付根1"].ToPar();
     		X0Y0_付根右_付根2 = pars2["付根2"].ToPar();
-    		pars2 = pars["単眼"].ToPars();
-    		Pars pars3 = pars2["眼中"].ToPars();
+    		pars2 = partGroup["単眼"].ToPars();
+    		PartGroup pars3 = pars2["眼中"].ToPars();
     		X0Y0_単眼_眼中_基 = pars3["基"].ToPar();
     		X0Y0_単眼_眼中_眼 = pars3["眼"].ToPar();
     		X0Y0_単眼_眼中_ハイライト = pars3["ハイライト"].ToPar();
@@ -739,10 +739,10 @@ namespace SlaveMatrix
     		{
     			表示 = false;
     		}
-    		Ele f;
+    		Element f;
     		if (e.触覚左_接続.Count > 0)
     		{
-    			触覚左_接続 = e.触覚左_接続.Select(delegate(EleD g)
+    			触覚左_接続 = e.触覚左_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 顔面_虫2;
@@ -753,7 +753,7 @@ namespace SlaveMatrix
     		}
     		if (e.触覚右_接続.Count > 0)
     		{
-    			触覚右_接続 = e.触覚右_接続.Select(delegate(EleD g)
+    			触覚右_接続 = e.触覚右_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 顔面_虫2;
@@ -830,32 +830,32 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		面基CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		複眼左_複眼1CD = new ColorD(ref Col.Black, ref 体配色.眼0O);
-    		複眼左_複眼2CD = new ColorD(ref Col.Black, ref 体配色.眼0O);
-    		複眼左_ハイライトCD = new ColorD(ref Col.Empty, ref 体配色.ハイライト);
-    		複眼右_複眼1CD = new ColorD(ref Col.Black, ref 体配色.眼0O);
-    		複眼右_複眼2CD = new ColorD(ref Col.Black, ref 体配色.眼0O);
-    		複眼右_ハイライトCD = new ColorD(ref Col.Empty, ref 体配色.ハイライト);
-    		面下_面CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		面下_器官左上CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		面下_器官左下CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		面下_器官右上CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		面下_器官右下CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		面上CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		付根左_付根1CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		付根左_付根2CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		付根右_付根1CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		付根右_付根2CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		単眼_眼中_基CD = new ColorD(ref Col.Black, ref 体配色.眼1O);
-    		単眼_眼中_眼CD = new ColorD(ref Col.Black, ref 体配色.眼1O);
-    		単眼_眼中_ハイライトCD = new ColorD(ref Col.Empty, ref 体配色.ハイライト);
-    		単眼_眼左_基CD = new ColorD(ref Col.Black, ref 体配色.眼1O);
-    		単眼_眼左_眼CD = new ColorD(ref Col.Black, ref 体配色.眼1O);
-    		単眼_眼左_ハイライトCD = new ColorD(ref Col.Empty, ref 体配色.ハイライト);
-    		単眼_眼右_基CD = new ColorD(ref Col.Black, ref 体配色.眼1O);
-    		単眼_眼右_眼CD = new ColorD(ref Col.Black, ref 体配色.眼1O);
-    		単眼_眼右_ハイライトCD = new ColorD(ref Col.Empty, ref 体配色.ハイライト);
+    		面基CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		複眼左_複眼1CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼0O);
+    		複眼左_複眼2CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼0O);
+    		複眼左_ハイライトCD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト);
+    		複眼右_複眼1CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼0O);
+    		複眼右_複眼2CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼0O);
+    		複眼右_ハイライトCD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト);
+    		面下_面CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		面下_器官左上CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		面下_器官左下CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		面下_器官右上CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		面下_器官右下CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		面上CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		付根左_付根1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		付根左_付根2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		付根右_付根1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		付根右_付根2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		単眼_眼中_基CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼1O);
+    		単眼_眼中_眼CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼1O);
+    		単眼_眼中_ハイライトCD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト);
+    		単眼_眼左_基CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼1O);
+    		単眼_眼左_眼CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼1O);
+    		単眼_眼左_ハイライトCD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト);
+    		単眼_眼右_基CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼1O);
+    		単眼_眼右_眼CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼1O);
+    		単眼_眼右_ハイライトCD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト);
     	}
     }
 }

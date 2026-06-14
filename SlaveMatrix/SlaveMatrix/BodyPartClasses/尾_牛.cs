@@ -5,101 +5,101 @@ namespace SlaveMatrix
 {
     public class 尾_牛 : 尾
     {
-    	public Par X0Y0_尾0;
+    	public ShapePart X0Y0_尾0;
 
-    	public Par X0Y0_尾1;
+    	public ShapePart X0Y0_尾1;
 
-    	public Par X0Y0_尾2;
+    	public ShapePart X0Y0_尾2;
 
-    	public Par X0Y0_尾3;
+    	public ShapePart X0Y0_尾3;
 
-    	public Par X0Y0_尾4;
+    	public ShapePart X0Y0_尾4;
 
-    	public Par X0Y0_尾5;
+    	public ShapePart X0Y0_尾5;
 
-    	public Par X0Y0_尾6;
+    	public ShapePart X0Y0_尾6;
 
-    	public Par X0Y0_尾7;
+    	public ShapePart X0Y0_尾7;
 
-    	public Par X0Y0_毛尾_尾0;
+    	public ShapePart X0Y0_毛尾_尾0;
 
-    	public Par X0Y0_毛尾_尾1;
+    	public ShapePart X0Y0_毛尾_尾1;
 
-    	public Par X0Y0_毛尾_尾2;
+    	public ShapePart X0Y0_毛尾_尾2;
 
-    	public Par X0Y0_毛尾_尾3;
+    	public ShapePart X0Y0_毛尾_尾3;
 
-    	public Par X0Y0_毛尾_尾4;
+    	public ShapePart X0Y0_毛尾_尾4;
 
-    	public Par X0Y0_毛尾_中央_尾0;
+    	public ShapePart X0Y0_毛尾_中央_尾0;
 
-    	public Par X0Y0_毛尾_中央_尾1;
+    	public ShapePart X0Y0_毛尾_中央_尾1;
 
-    	public Par X0Y0_毛尾_中央_尾2;
+    	public ShapePart X0Y0_毛尾_中央_尾2;
 
-    	public Par X0Y0_毛尾_中央_尾3;
+    	public ShapePart X0Y0_毛尾_中央_尾3;
 
-    	public Par X0Y0_毛尾_中央_尾4;
+    	public ShapePart X0Y0_毛尾_中央_尾4;
 
-    	public Par X0Y0_毛尾_中央_尾5;
+    	public ShapePart X0Y0_毛尾_中央_尾5;
 
-    	public Par X0Y0_毛尾_中央_尾6;
+    	public ShapePart X0Y0_毛尾_中央_尾6;
 
-    	public Par X0Y0_毛尾_左2_尾0;
+    	public ShapePart X0Y0_毛尾_左2_尾0;
 
-    	public Par X0Y0_毛尾_左2_尾1;
+    	public ShapePart X0Y0_毛尾_左2_尾1;
 
-    	public Par X0Y0_毛尾_左2_尾2;
+    	public ShapePart X0Y0_毛尾_左2_尾2;
 
-    	public Par X0Y0_毛尾_左2_尾3;
+    	public ShapePart X0Y0_毛尾_左2_尾3;
 
-    	public Par X0Y0_毛尾_左2_尾4;
+    	public ShapePart X0Y0_毛尾_左2_尾4;
 
-    	public Par X0Y0_毛尾_左2_尾5;
+    	public ShapePart X0Y0_毛尾_左2_尾5;
 
-    	public Par X0Y0_毛尾_左2_尾6;
+    	public ShapePart X0Y0_毛尾_左2_尾6;
 
-    	public Par X0Y0_毛尾_左1_尾0;
+    	public ShapePart X0Y0_毛尾_左1_尾0;
 
-    	public Par X0Y0_毛尾_左1_尾1;
+    	public ShapePart X0Y0_毛尾_左1_尾1;
 
-    	public Par X0Y0_毛尾_左1_尾2;
+    	public ShapePart X0Y0_毛尾_左1_尾2;
 
-    	public Par X0Y0_毛尾_左1_尾3;
+    	public ShapePart X0Y0_毛尾_左1_尾3;
 
-    	public Par X0Y0_毛尾_左1_尾4;
+    	public ShapePart X0Y0_毛尾_左1_尾4;
 
-    	public Par X0Y0_毛尾_左1_尾5;
+    	public ShapePart X0Y0_毛尾_左1_尾5;
 
-    	public Par X0Y0_毛尾_左1_尾6;
+    	public ShapePart X0Y0_毛尾_左1_尾6;
 
-    	public Par X0Y0_毛尾_右2_尾0;
+    	public ShapePart X0Y0_毛尾_右2_尾0;
 
-    	public Par X0Y0_毛尾_右2_尾1;
+    	public ShapePart X0Y0_毛尾_右2_尾1;
 
-    	public Par X0Y0_毛尾_右2_尾2;
+    	public ShapePart X0Y0_毛尾_右2_尾2;
 
-    	public Par X0Y0_毛尾_右2_尾3;
+    	public ShapePart X0Y0_毛尾_右2_尾3;
 
-    	public Par X0Y0_毛尾_右2_尾4;
+    	public ShapePart X0Y0_毛尾_右2_尾4;
 
-    	public Par X0Y0_毛尾_右2_尾5;
+    	public ShapePart X0Y0_毛尾_右2_尾5;
 
-    	public Par X0Y0_毛尾_右2_尾6;
+    	public ShapePart X0Y0_毛尾_右2_尾6;
 
-    	public Par X0Y0_毛尾_右1_尾0;
+    	public ShapePart X0Y0_毛尾_右1_尾0;
 
-    	public Par X0Y0_毛尾_右1_尾1;
+    	public ShapePart X0Y0_毛尾_右1_尾1;
 
-    	public Par X0Y0_毛尾_右1_尾2;
+    	public ShapePart X0Y0_毛尾_右1_尾2;
 
-    	public Par X0Y0_毛尾_右1_尾3;
+    	public ShapePart X0Y0_毛尾_右1_尾3;
 
-    	public Par X0Y0_毛尾_右1_尾4;
+    	public ShapePart X0Y0_毛尾_右1_尾4;
 
-    	public Par X0Y0_毛尾_右1_尾5;
+    	public ShapePart X0Y0_毛尾_右1_尾5;
 
-    	public Par X0Y0_毛尾_右1_尾6;
+    	public ShapePart X0Y0_毛尾_右1_尾6;
 
     	public ColorD 尾0CD;
 
@@ -293,7 +293,7 @@ namespace SlaveMatrix
 
     	public ColorP X0Y0_毛尾_右1_尾6CP;
 
-    	public Par[] Pars;
+    	public ShapePart[] Pars;
 
     	private Vector2D[] mm;
 
@@ -1078,28 +1078,28 @@ namespace SlaveMatrix
     	public 尾_牛(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 尾_牛D e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif();
-    		dif.Tag = "牛尾";
-    		dif.Add(new Pars(Sta.尻尾["尾"][0][4]));
-    		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		X0Y0_尾0 = pars["尾0"].ToPar();
-    		X0Y0_尾1 = pars["尾1"].ToPar();
-    		X0Y0_尾2 = pars["尾2"].ToPar();
-    		X0Y0_尾3 = pars["尾3"].ToPar();
-    		X0Y0_尾4 = pars["尾4"].ToPar();
-    		X0Y0_尾5 = pars["尾5"].ToPar();
-    		X0Y0_尾6 = pars["尾6"].ToPar();
-    		X0Y0_尾7 = pars["尾7"].ToPar();
-    		Pars pars2 = pars["毛尾"].ToPars();
+    		MorphVariant morphVariant = new MorphVariant();
+    		morphVariant.Tag = "牛尾";
+    		morphVariant.Add(new PartGroup(GlobalState.尻尾["尾"][0][4]));
+    		Body = new VariantGrid();
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_尾0 = partGroup["尾0"].ToPar();
+    		X0Y0_尾1 = partGroup["尾1"].ToPar();
+    		X0Y0_尾2 = partGroup["尾2"].ToPar();
+    		X0Y0_尾3 = partGroup["尾3"].ToPar();
+    		X0Y0_尾4 = partGroup["尾4"].ToPar();
+    		X0Y0_尾5 = partGroup["尾5"].ToPar();
+    		X0Y0_尾6 = partGroup["尾6"].ToPar();
+    		X0Y0_尾7 = partGroup["尾7"].ToPar();
+    		PartGroup pars2 = partGroup["毛尾"].ToPars();
     		X0Y0_毛尾_尾0 = pars2["尾0"].ToPar();
     		X0Y0_毛尾_尾1 = pars2["尾1"].ToPar();
     		X0Y0_毛尾_尾2 = pars2["尾2"].ToPar();
     		X0Y0_毛尾_尾3 = pars2["尾3"].ToPar();
     		X0Y0_毛尾_尾4 = pars2["尾4"].ToPar();
-    		Pars pars3 = pars2["中央"].ToPars();
+    		PartGroup pars3 = pars2["中央"].ToPars();
     		X0Y0_毛尾_中央_尾0 = pars3["尾0"].ToPar();
     		X0Y0_毛尾_中央_尾1 = pars3["尾1"].ToPar();
     		X0Y0_毛尾_中央_尾2 = pars3["尾2"].ToPar();
@@ -1220,7 +1220,7 @@ namespace SlaveMatrix
     		}
     		base.配色指定 = 配色指定;
     		配色(体配色);
-    		Pars = new Par[48]
+    		Pars = new ShapePart[48]
     		{
     			X0Y0_尾0, X0Y0_尾1, X0Y0_尾2, X0Y0_尾3, X0Y0_尾4, X0Y0_尾5, X0Y0_尾6, X0Y0_尾7, X0Y0_毛尾_尾0, X0Y0_毛尾_尾1,
     			X0Y0_毛尾_尾2, X0Y0_毛尾_尾3, X0Y0_毛尾_尾4, X0Y0_毛尾_中央_尾0, X0Y0_毛尾_中央_尾1, X0Y0_毛尾_中央_尾2, X0Y0_毛尾_中央_尾3, X0Y0_毛尾_中央_尾4, X0Y0_毛尾_中央_尾5, X0Y0_毛尾_中央_尾6,
@@ -1334,7 +1334,7 @@ namespace SlaveMatrix
     		Body.JoinPAall();
     	}
 
-    	public override IEnumerable<Par> Enum軸()
+    	public override IEnumerable<ShapePart> Enum軸()
     	{
     		yield return X0Y0_尾0;
     		yield return X0Y0_尾1;
@@ -1420,158 +1420,158 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		尾0CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		尾1CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		尾2CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		尾3CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		尾4CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		尾5CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		尾6CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		尾7CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		毛尾_尾0CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		毛尾_尾1CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		毛尾_尾2CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		毛尾_尾3CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		毛尾_尾4CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		毛尾_中央_尾0CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		毛尾_中央_尾1CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		毛尾_中央_尾2CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		毛尾_中央_尾3CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		毛尾_中央_尾4CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		毛尾_中央_尾5CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		毛尾_中央_尾6CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		毛尾_左2_尾0CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		毛尾_左2_尾1CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		毛尾_左2_尾2CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		毛尾_左2_尾3CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		毛尾_左2_尾4CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		毛尾_左2_尾5CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		毛尾_左2_尾6CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		毛尾_左1_尾0CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		毛尾_左1_尾1CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		毛尾_左1_尾2CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		毛尾_左1_尾3CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		毛尾_左1_尾4CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		毛尾_左1_尾5CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		毛尾_左1_尾6CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		毛尾_右2_尾0CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		毛尾_右2_尾1CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		毛尾_右2_尾2CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		毛尾_右2_尾3CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		毛尾_右2_尾4CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		毛尾_右2_尾5CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		毛尾_右2_尾6CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		毛尾_右1_尾0CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		毛尾_右1_尾1CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		毛尾_右1_尾2CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		毛尾_右1_尾3CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		毛尾_右1_尾4CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		毛尾_右1_尾5CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		毛尾_右1_尾6CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
+    		尾0CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		尾1CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		尾2CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		尾3CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		尾4CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		尾5CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		尾6CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		尾7CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		毛尾_尾0CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		毛尾_尾1CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		毛尾_尾2CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		毛尾_尾3CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		毛尾_尾4CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		毛尾_中央_尾0CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		毛尾_中央_尾1CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		毛尾_中央_尾2CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		毛尾_中央_尾3CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		毛尾_中央_尾4CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		毛尾_中央_尾5CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		毛尾_中央_尾6CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		毛尾_左2_尾0CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		毛尾_左2_尾1CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		毛尾_左2_尾2CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		毛尾_左2_尾3CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		毛尾_左2_尾4CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		毛尾_左2_尾5CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		毛尾_左2_尾6CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		毛尾_左1_尾0CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		毛尾_左1_尾1CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		毛尾_左1_尾2CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		毛尾_左1_尾3CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		毛尾_左1_尾4CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		毛尾_左1_尾5CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		毛尾_左1_尾6CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		毛尾_右2_尾0CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		毛尾_右2_尾1CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		毛尾_右2_尾2CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		毛尾_右2_尾3CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		毛尾_右2_尾4CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		毛尾_右2_尾5CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		毛尾_右2_尾6CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		毛尾_右1_尾0CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		毛尾_右1_尾1CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		毛尾_右1_尾2CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		毛尾_右1_尾3CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		毛尾_右1_尾4CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		毛尾_右1_尾5CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		毛尾_右1_尾6CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
     	}
 
     	private void 配色T0(BodyColorSet 体配色)
     	{
-    		尾0CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾1CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		尾2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾3CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		尾4CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾5CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		尾6CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾7CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		毛尾_尾0CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		毛尾_尾1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		毛尾_尾2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		毛尾_尾3CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		毛尾_尾4CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		毛尾_中央_尾0CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		毛尾_中央_尾1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		毛尾_中央_尾2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		毛尾_中央_尾3CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		毛尾_中央_尾4CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		毛尾_中央_尾5CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		毛尾_中央_尾6CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		毛尾_左2_尾0CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		毛尾_左2_尾1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		毛尾_左2_尾2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		毛尾_左2_尾3CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		毛尾_左2_尾4CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		毛尾_左2_尾5CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		毛尾_左2_尾6CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		毛尾_左1_尾0CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		毛尾_左1_尾1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		毛尾_左1_尾2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		毛尾_左1_尾3CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		毛尾_左1_尾4CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		毛尾_左1_尾5CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		毛尾_左1_尾6CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		毛尾_右2_尾0CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		毛尾_右2_尾1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		毛尾_右2_尾2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		毛尾_右2_尾3CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		毛尾_右2_尾4CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		毛尾_右2_尾5CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		毛尾_右2_尾6CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		毛尾_右1_尾0CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		毛尾_右1_尾1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		毛尾_右1_尾2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		毛尾_右1_尾3CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		毛尾_右1_尾4CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		毛尾_右1_尾5CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		毛尾_右1_尾6CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		尾0CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾1CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		尾2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾3CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		尾4CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾5CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		尾6CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾7CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		毛尾_尾0CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		毛尾_尾1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		毛尾_尾2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		毛尾_尾3CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		毛尾_尾4CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		毛尾_中央_尾0CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		毛尾_中央_尾1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		毛尾_中央_尾2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		毛尾_中央_尾3CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		毛尾_中央_尾4CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		毛尾_中央_尾5CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		毛尾_中央_尾6CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		毛尾_左2_尾0CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		毛尾_左2_尾1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		毛尾_左2_尾2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		毛尾_左2_尾3CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		毛尾_左2_尾4CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		毛尾_左2_尾5CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		毛尾_左2_尾6CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		毛尾_左1_尾0CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		毛尾_左1_尾1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		毛尾_左1_尾2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		毛尾_左1_尾3CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		毛尾_左1_尾4CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		毛尾_左1_尾5CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		毛尾_左1_尾6CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		毛尾_右2_尾0CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		毛尾_右2_尾1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		毛尾_右2_尾2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		毛尾_右2_尾3CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		毛尾_右2_尾4CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		毛尾_右2_尾5CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		毛尾_右2_尾6CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		毛尾_右1_尾0CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		毛尾_右1_尾1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		毛尾_右1_尾2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		毛尾_右1_尾3CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		毛尾_右1_尾4CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		毛尾_右1_尾5CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		毛尾_右1_尾6CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
     	}
 
     	private void 配色T1(BodyColorSet 体配色)
     	{
-    		尾0CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		尾1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾2CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		尾3CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾4CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		尾5CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾6CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		尾7CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		毛尾_尾0CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		毛尾_尾1CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		毛尾_尾2CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		毛尾_尾3CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		毛尾_尾4CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		毛尾_中央_尾0CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		毛尾_中央_尾1CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		毛尾_中央_尾2CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		毛尾_中央_尾3CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		毛尾_中央_尾4CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		毛尾_中央_尾5CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		毛尾_中央_尾6CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		毛尾_左2_尾0CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		毛尾_左2_尾1CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		毛尾_左2_尾2CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		毛尾_左2_尾3CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		毛尾_左2_尾4CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		毛尾_左2_尾5CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		毛尾_左2_尾6CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		毛尾_左1_尾0CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		毛尾_左1_尾1CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		毛尾_左1_尾2CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		毛尾_左1_尾3CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		毛尾_左1_尾4CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		毛尾_左1_尾5CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		毛尾_左1_尾6CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		毛尾_右2_尾0CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		毛尾_右2_尾1CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		毛尾_右2_尾2CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		毛尾_右2_尾3CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		毛尾_右2_尾4CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		毛尾_右2_尾5CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		毛尾_右2_尾6CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		毛尾_右1_尾0CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		毛尾_右1_尾1CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		毛尾_右1_尾2CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		毛尾_右1_尾3CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		毛尾_右1_尾4CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		毛尾_右1_尾5CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		毛尾_右1_尾6CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
+    		尾0CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		尾1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾2CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		尾3CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾4CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		尾5CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾6CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		尾7CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		毛尾_尾0CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		毛尾_尾1CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		毛尾_尾2CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		毛尾_尾3CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		毛尾_尾4CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		毛尾_中央_尾0CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		毛尾_中央_尾1CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		毛尾_中央_尾2CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		毛尾_中央_尾3CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		毛尾_中央_尾4CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		毛尾_中央_尾5CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		毛尾_中央_尾6CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		毛尾_左2_尾0CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		毛尾_左2_尾1CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		毛尾_左2_尾2CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		毛尾_左2_尾3CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		毛尾_左2_尾4CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		毛尾_左2_尾5CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		毛尾_左2_尾6CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		毛尾_左1_尾0CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		毛尾_左1_尾1CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		毛尾_左1_尾2CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		毛尾_左1_尾3CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		毛尾_左1_尾4CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		毛尾_左1_尾5CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		毛尾_左1_尾6CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		毛尾_右2_尾0CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		毛尾_右2_尾1CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		毛尾_右2_尾2CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		毛尾_右2_尾3CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		毛尾_右2_尾4CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		毛尾_右2_尾5CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		毛尾_右2_尾6CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		毛尾_右1_尾0CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		毛尾_右1_尾1CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		毛尾_右1_尾2CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		毛尾_右1_尾3CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		毛尾_右1_尾4CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		毛尾_右1_尾5CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		毛尾_右1_尾6CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
     	}
     }
 }

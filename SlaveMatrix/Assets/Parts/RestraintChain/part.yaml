@@ -1,0 +1,28 @@
+id: RestraintChain
+original_key: 拘束鎖
+resource: その他
+morph_x: 1
+morph_y: 1
+variants:
+- x: 0
+  y: 0
+  file: x0y0.svg
+fields:
+- name: 鎖2
+- name: 鎖1
+- name: 鎖4
+- name: 鎖3
+- name: 鎖6
+- name: 鎖5
+- name: 鎖8
+- name: 鎖7
+- name: 鎖9
+joints:
+- position: [
+  0.07476685870482688,
+  0.07702342146985786
+]
+- position: [
+  0.013660658861828318,
+  0.019002970608518133
+]

@@ -3,67 +3,67 @@ using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
-    public class Cough : Ele
+    public class Cough : Element
     {
-    	public Par X0Y0_咳基;
+    	public ShapePart X0Y0_咳基;
 
-    	public Par X0Y0_雫1;
+    	public ShapePart X0Y0_雫1;
 
-    	public Par X0Y0_雫2;
+    	public ShapePart X0Y0_雫2;
 
-    	public Par X0Y0_雫3;
+    	public ShapePart X0Y0_雫3;
 
-    	public Par X0Y0_雫4;
+    	public ShapePart X0Y0_雫4;
 
-    	public Par X0Y0_雫5;
+    	public ShapePart X0Y0_雫5;
 
-    	public Par X0Y1_咳基;
+    	public ShapePart X0Y1_咳基;
 
-    	public Par X0Y1_雫1;
+    	public ShapePart X0Y1_雫1;
 
-    	public Par X0Y1_雫2;
+    	public ShapePart X0Y1_雫2;
 
-    	public Par X0Y1_雫3;
+    	public ShapePart X0Y1_雫3;
 
-    	public Par X0Y1_雫4;
+    	public ShapePart X0Y1_雫4;
 
-    	public Par X0Y1_雫5;
+    	public ShapePart X0Y1_雫5;
 
-    	public Par X0Y2_咳基;
+    	public ShapePart X0Y2_咳基;
 
-    	public Par X0Y2_雫1;
+    	public ShapePart X0Y2_雫1;
 
-    	public Par X0Y2_雫2;
+    	public ShapePart X0Y2_雫2;
 
-    	public Par X0Y2_雫3;
+    	public ShapePart X0Y2_雫3;
 
-    	public Par X0Y2_雫4;
+    	public ShapePart X0Y2_雫4;
 
-    	public Par X0Y2_雫5;
+    	public ShapePart X0Y2_雫5;
 
-    	public Par X0Y3_咳基;
+    	public ShapePart X0Y3_咳基;
 
-    	public Par X0Y3_雫1;
+    	public ShapePart X0Y3_雫1;
 
-    	public Par X0Y3_雫2;
+    	public ShapePart X0Y3_雫2;
 
-    	public Par X0Y3_雫3;
+    	public ShapePart X0Y3_雫3;
 
-    	public Par X0Y3_雫4;
+    	public ShapePart X0Y3_雫4;
 
-    	public Par X0Y3_雫5;
+    	public ShapePart X0Y3_雫5;
 
-    	public Par X0Y4_咳基;
+    	public ShapePart X0Y4_咳基;
 
-    	public Par X0Y4_雫1;
+    	public ShapePart X0Y4_雫1;
 
-    	public Par X0Y4_雫2;
+    	public ShapePart X0Y4_雫2;
 
-    	public Par X0Y4_雫3;
+    	public ShapePart X0Y4_雫3;
 
-    	public Par X0Y4_雫4;
+    	public ShapePart X0Y4_雫4;
 
-    	public Par X0Y4_雫5;
+    	public ShapePart X0Y4_雫5;
 
     	public ColorD 咳基CD;
 
@@ -350,42 +350,42 @@ namespace SlaveMatrix
     	public Cough(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 咳D e)
     	{
     		ThisType = GetType();
-    		Body = new Difs(Sta.胴体["Cough"]);
-    		Pars pars = Body[0][0];
-    		X0Y0_咳基 = pars["咳基"].ToPar();
-    		X0Y0_雫1 = pars["雫1"].ToPar();
-    		X0Y0_雫2 = pars["雫2"].ToPar();
-    		X0Y0_雫3 = pars["雫3"].ToPar();
-    		X0Y0_雫4 = pars["雫4"].ToPar();
-    		X0Y0_雫5 = pars["雫5"].ToPar();
-    		pars = Body[0][1];
-    		X0Y1_咳基 = pars["咳基"].ToPar();
-    		X0Y1_雫1 = pars["雫1"].ToPar();
-    		X0Y1_雫2 = pars["雫2"].ToPar();
-    		X0Y1_雫3 = pars["雫3"].ToPar();
-    		X0Y1_雫4 = pars["雫4"].ToPar();
-    		X0Y1_雫5 = pars["雫5"].ToPar();
-    		pars = Body[0][2];
-    		X0Y2_咳基 = pars["咳基"].ToPar();
-    		X0Y2_雫1 = pars["雫1"].ToPar();
-    		X0Y2_雫2 = pars["雫2"].ToPar();
-    		X0Y2_雫3 = pars["雫3"].ToPar();
-    		X0Y2_雫4 = pars["雫4"].ToPar();
-    		X0Y2_雫5 = pars["雫5"].ToPar();
-    		pars = Body[0][3];
-    		X0Y3_咳基 = pars["咳基"].ToPar();
-    		X0Y3_雫1 = pars["雫1"].ToPar();
-    		X0Y3_雫2 = pars["雫2"].ToPar();
-    		X0Y3_雫3 = pars["雫3"].ToPar();
-    		X0Y3_雫4 = pars["雫4"].ToPar();
-    		X0Y3_雫5 = pars["雫5"].ToPar();
-    		pars = Body[0][4];
-    		X0Y4_咳基 = pars["咳基"].ToPar();
-    		X0Y4_雫1 = pars["雫1"].ToPar();
-    		X0Y4_雫2 = pars["雫2"].ToPar();
-    		X0Y4_雫3 = pars["雫3"].ToPar();
-    		X0Y4_雫4 = pars["雫4"].ToPar();
-    		X0Y4_雫5 = pars["雫5"].ToPar();
+    		Body = new VariantGrid(GlobalState.胴体["Cough"]);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_咳基 = partGroup["咳基"].ToPar();
+    		X0Y0_雫1 = partGroup["雫1"].ToPar();
+    		X0Y0_雫2 = partGroup["雫2"].ToPar();
+    		X0Y0_雫3 = partGroup["雫3"].ToPar();
+    		X0Y0_雫4 = partGroup["雫4"].ToPar();
+    		X0Y0_雫5 = partGroup["雫5"].ToPar();
+    		partGroup = Body[0][1];
+    		X0Y1_咳基 = partGroup["咳基"].ToPar();
+    		X0Y1_雫1 = partGroup["雫1"].ToPar();
+    		X0Y1_雫2 = partGroup["雫2"].ToPar();
+    		X0Y1_雫3 = partGroup["雫3"].ToPar();
+    		X0Y1_雫4 = partGroup["雫4"].ToPar();
+    		X0Y1_雫5 = partGroup["雫5"].ToPar();
+    		partGroup = Body[0][2];
+    		X0Y2_咳基 = partGroup["咳基"].ToPar();
+    		X0Y2_雫1 = partGroup["雫1"].ToPar();
+    		X0Y2_雫2 = partGroup["雫2"].ToPar();
+    		X0Y2_雫3 = partGroup["雫3"].ToPar();
+    		X0Y2_雫4 = partGroup["雫4"].ToPar();
+    		X0Y2_雫5 = partGroup["雫5"].ToPar();
+    		partGroup = Body[0][3];
+    		X0Y3_咳基 = partGroup["咳基"].ToPar();
+    		X0Y3_雫1 = partGroup["雫1"].ToPar();
+    		X0Y3_雫2 = partGroup["雫2"].ToPar();
+    		X0Y3_雫3 = partGroup["雫3"].ToPar();
+    		X0Y3_雫4 = partGroup["雫4"].ToPar();
+    		X0Y3_雫5 = partGroup["雫5"].ToPar();
+    		partGroup = Body[0][4];
+    		X0Y4_咳基 = partGroup["咳基"].ToPar();
+    		X0Y4_雫1 = partGroup["雫1"].ToPar();
+    		X0Y4_雫2 = partGroup["雫2"].ToPar();
+    		X0Y4_雫3 = partGroup["雫3"].ToPar();
+    		X0Y4_雫4 = partGroup["雫4"].ToPar();
+    		X0Y4_雫5 = partGroup["雫5"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;
@@ -512,12 +512,12 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		咳基CD = new ColorD(ref Col.Empty, ref Color2.Empty);
-    		雫1CD = new ColorD(ref Col.Empty, ref 体配色.体液);
-    		雫2CD = new ColorD(ref Col.Empty, ref 体配色.体液);
-    		雫3CD = new ColorD(ref Col.Empty, ref 体配色.体液);
-    		雫4CD = new ColorD(ref Col.Empty, ref 体配色.体液);
-    		雫5CD = new ColorD(ref Col.Empty, ref 体配色.体液);
+    		咳基CD = new ColorD(ref ColorHelper.Empty, ref Color2.Empty);
+    		雫1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.体液);
+    		雫2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.体液);
+    		雫3CD = new ColorD(ref ColorHelper.Empty, ref 体配色.体液);
+    		雫4CD = new ColorD(ref ColorHelper.Empty, ref 体配色.体液);
+    		雫5CD = new ColorD(ref ColorHelper.Empty, ref 体配色.体液);
     	}
     }
 }

@@ -1,0 +1,26 @@
+id: EyebrowLeft
+original_key: 眉左
+resource: 胴体
+morph_x: 1
+morph_y: 3
+variants:
+- x: 0
+  y: 0
+  file: x0y0.svg
+- x: 0
+  y: 1
+  file: x0y1.svg
+- x: 0
+  y: 2
+  file: x0y2.svg
+fields:
+- name: 眉
+joints:
+- position: [
+  0.020870148923362024,
+  0.014606787502030458
+]
+- position: [
+  0.021108079555371802,
+  0.012544992408143161
+]

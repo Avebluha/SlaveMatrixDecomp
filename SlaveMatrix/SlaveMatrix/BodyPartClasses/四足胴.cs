@@ -4,17 +4,17 @@ using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
-    public class 四足胴 : Ele
+    public class 四足胴 : Element
     {
-    	public Par X0Y0_Torso;
+    	public ShapePart X0Y0_Torso;
 
-    	public Par X0Y0_筋肉_筋肉左;
+    	public ShapePart X0Y0_筋肉_筋肉左;
 
-    	public Par X0Y0_筋肉_筋肉右;
+    	public ShapePart X0Y0_筋肉_筋肉右;
 
-    	public Par X0Y0_獣性_獣毛左;
+    	public ShapePart X0Y0_獣性_獣毛左;
 
-    	public Par X0Y0_獣性_獣毛右;
+    	public ShapePart X0Y0_獣性_獣毛右;
 
     	public ColorD TorsoCD;
 
@@ -36,13 +36,13 @@ namespace SlaveMatrix
 
     	public ColorP X0Y0_獣性_獣毛右CP;
 
-    	public Ele[] Waist_接続;
+    	public Element[] Waist_接続;
 
-    	public Ele[] 肌_接続;
+    	public Element[] 肌_接続;
 
-    	public Ele[] 翼左_接続;
+    	public Element[] 翼左_接続;
 
-    	public Ele[] 翼右_接続;
+    	public Element[] 翼右_接続;
 
     	public override bool 欠損
     	{
@@ -204,13 +204,13 @@ namespace SlaveMatrix
     	{
     		四足胴 四足胴2 = this;
     		ThisType = GetType();
-    		Body = new Difs(Sta.半身["四足胴"]);
-    		Pars pars = Body[0][0];
-    		X0Y0_Torso = pars["胴"].ToPar();
-    		Pars pars2 = pars["筋肉"].ToPars();
+    		Body = new VariantGrid(GlobalState.半身["四足胴"]);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_Torso = partGroup["胴"].ToPar();
+    		PartGroup pars2 = partGroup["筋肉"].ToPars();
     		X0Y0_筋肉_筋肉左 = pars2["筋肉左"].ToPar();
     		X0Y0_筋肉_筋肉右 = pars2["筋肉右"].ToPar();
-    		pars2 = pars["獣性"].ToPars();
+    		pars2 = partGroup["獣性"].ToPars();
     		X0Y0_獣性_獣毛左 = pars2["獣毛左"].ToPar();
     		X0Y0_獣性_獣毛右 = pars2["獣毛右"].ToPar();
     		Body.SetJoints();
@@ -249,10 +249,10 @@ namespace SlaveMatrix
     		{
     			表示 = false;
     		}
-    		Ele f;
+    		Element f;
     		if (e.Waist_接続.Count > 0)
     		{
-    			Waist_接続 = e.Waist_接続.Select(delegate(EleD g)
+    			Waist_接続 = e.Waist_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 四足胴2;
@@ -263,7 +263,7 @@ namespace SlaveMatrix
     		}
     		if (e.肌_接続.Count > 0)
     		{
-    			肌_接続 = e.肌_接続.Select(delegate(EleD g)
+    			肌_接続 = e.肌_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 四足胴2;
@@ -274,7 +274,7 @@ namespace SlaveMatrix
     		}
     		if (e.翼左_接続.Count > 0)
     		{
-    			翼左_接続 = e.翼左_接続.Select(delegate(EleD g)
+    			翼左_接続 = e.翼左_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 四足胴2;
@@ -285,7 +285,7 @@ namespace SlaveMatrix
     		}
     		if (e.翼右_接続.Count > 0)
     		{
-    			翼右_接続 = e.翼右_接続.Select(delegate(EleD g)
+    			翼右_接続 = e.翼右_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 四足胴2;
@@ -322,11 +322,11 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		TorsoCD = new ColorD(ref Col.Black, ref 体配色.毛0R);
+    		TorsoCD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0R);
     		筋肉_筋肉左CD = new ColorD(ref 体配色.薄線, ref 体配色.毛0O);
     		筋肉_筋肉右CD = new ColorD(ref 体配色.薄線, ref 体配色.毛0O);
-    		獣性_獣毛左CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		獣性_獣毛右CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
+    		獣性_獣毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		獣性_獣毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
     	}
     }
 }

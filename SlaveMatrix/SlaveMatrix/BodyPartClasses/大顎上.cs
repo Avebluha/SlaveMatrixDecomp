@@ -3,17 +3,17 @@ using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
-    public class 大顎上 : Ele
+    public class 大顎上 : Element
     {
-    	public Par X0Y0_甲殻;
+    	public ShapePart X0Y0_甲殻;
 
-    	public Par X0Y0_線左;
+    	public ShapePart X0Y0_線左;
 
-    	public Par X0Y0_線右;
+    	public ShapePart X0Y0_線右;
 
-    	public Par X0Y0_棘左;
+    	public ShapePart X0Y0_棘左;
 
-    	public Par X0Y0_棘右;
+    	public ShapePart X0Y0_棘右;
 
     	public ColorD 甲殻CD;
 
@@ -171,13 +171,13 @@ namespace SlaveMatrix
     	public 大顎上(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色)
     	{
     		ThisType = GetType();
-    		Body = new Difs(Sta.肢中["大顎上"]);
-    		Pars pars = Body[0][0];
-    		X0Y0_甲殻 = pars["甲殻"].ToPar();
-    		X0Y0_線左 = pars["線左"].ToPar();
-    		X0Y0_線右 = pars["線右"].ToPar();
-    		X0Y0_棘左 = pars["刺左"].ToPar();
-    		X0Y0_棘右 = pars["刺右"].ToPar();
+    		Body = new VariantGrid(GlobalState.肢中["大顎上"]);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_甲殻 = partGroup["甲殻"].ToPar();
+    		X0Y0_線左 = partGroup["線左"].ToPar();
+    		X0Y0_線右 = partGroup["線右"].ToPar();
+    		X0Y0_棘左 = partGroup["刺左"].ToPar();
+    		X0Y0_棘右 = partGroup["刺右"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		base.配色指定 = 配色指定;
@@ -205,11 +205,11 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		甲殻CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		線左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		線右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		刺左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		刺右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
+    		甲殻CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		線左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		線右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		刺左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		刺右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
     	}
     }
 }

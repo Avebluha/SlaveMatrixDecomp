@@ -1,0 +1,17 @@
+id: NoseSkin
+original_key: 鼻肌
+resource: 胴体
+morph_x: 1
+morph_y: 1
+variants:
+- x: 0
+  y: 0
+  file: x0y0.svg
+fields:
+- name: 紋柄
+- name: 傷I
+joints:
+- position: [
+  0.010565988892664996,
+  0.010565988892664996
+]

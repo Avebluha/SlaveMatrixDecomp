@@ -1,0 +1,26 @@
+id: QuadrupedInternalSemen
+original_key: 四足膣内精液
+resource: 半身
+morph_x: 1
+morph_y: 1
+variants:
+- x: 0
+  y: 0
+  file: x0y0.svg
+fields:
+- name: 精液
+- name: 血液1
+- name: 血液2
+joints:
+- position: [
+  0.027168012606717508,
+  0.028740295197142426
+]
+- position: [
+  0.03588596019409415,
+  0.02874029519714242
+]
+- position: [
+  0.03152698640040582,
+  0.016297679253218463
+]

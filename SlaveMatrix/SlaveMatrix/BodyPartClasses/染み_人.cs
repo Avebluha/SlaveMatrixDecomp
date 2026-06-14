@@ -4,41 +4,41 @@ namespace SlaveMatrix
 {
     public class 染み_人 : 染み
     {
-    	public Par X0Y0_潮1;
+    	public ShapePart X0Y0_潮1;
 
-    	public Par X0Y0_潮2;
+    	public ShapePart X0Y0_潮2;
 
-    	public Par X0Y0_潮3;
+    	public ShapePart X0Y0_潮3;
 
-    	public Par X0Y0_尿1;
+    	public ShapePart X0Y0_尿1;
 
-    	public Par X0Y0_尿2;
+    	public ShapePart X0Y0_尿2;
 
-    	public Par X0Y0_汗;
+    	public ShapePart X0Y0_汗;
 
-    	public Par X0Y0_湯気_湯気左1_湯気1;
+    	public ShapePart X0Y0_湯気_湯気左1_湯気1;
 
-    	public Par X0Y0_湯気_湯気左1_湯気2;
+    	public ShapePart X0Y0_湯気_湯気左1_湯気2;
 
-    	public Par X0Y0_湯気_湯気左2_湯気1;
+    	public ShapePart X0Y0_湯気_湯気左2_湯気1;
 
-    	public Par X0Y0_湯気_湯気左2_湯気2;
+    	public ShapePart X0Y0_湯気_湯気左2_湯気2;
 
-    	public Par X0Y0_湯気_湯気左3_湯気1;
+    	public ShapePart X0Y0_湯気_湯気左3_湯気1;
 
-    	public Par X0Y0_湯気_湯気左3_湯気2;
+    	public ShapePart X0Y0_湯気_湯気左3_湯気2;
 
-    	public Par X0Y0_湯気_湯気右1_湯気1;
+    	public ShapePart X0Y0_湯気_湯気右1_湯気1;
 
-    	public Par X0Y0_湯気_湯気右1_湯気2;
+    	public ShapePart X0Y0_湯気_湯気右1_湯気2;
 
-    	public Par X0Y0_湯気_湯気右2_湯気1;
+    	public ShapePart X0Y0_湯気_湯気右2_湯気1;
 
-    	public Par X0Y0_湯気_湯気右2_湯気2;
+    	public ShapePart X0Y0_湯気_湯気右2_湯気2;
 
-    	public Par X0Y0_湯気_湯気右3_湯気1;
+    	public ShapePart X0Y0_湯気_湯気右3_湯気1;
 
-    	public Par X0Y0_湯気_湯気右3_湯気2;
+    	public ShapePart X0Y0_湯気_湯気右3_湯気2;
 
     	public ColorD 潮1CD;
 
@@ -443,16 +443,16 @@ namespace SlaveMatrix
     	public 染み_人(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 染み_人D e)
     	{
     		ThisType = GetType();
-    		Body = new Difs(Sta.その他["染み"]);
-    		Pars pars = Body[0][0];
-    		X0Y0_潮1 = pars["潮1"].ToPar();
-    		X0Y0_潮2 = pars["潮2"].ToPar();
-    		X0Y0_潮3 = pars["潮3"].ToPar();
-    		X0Y0_尿1 = pars["尿1"].ToPar();
-    		X0Y0_尿2 = pars["尿2"].ToPar();
-    		X0Y0_汗 = pars["汗"].ToPar();
-    		Pars pars2 = pars["湯気"].ToPars();
-    		Pars pars3 = pars2["湯気左1"].ToPars();
+    		Body = new VariantGrid(GlobalState.その他["染み"]);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_潮1 = partGroup["潮1"].ToPar();
+    		X0Y0_潮2 = partGroup["潮2"].ToPar();
+    		X0Y0_潮3 = partGroup["潮3"].ToPar();
+    		X0Y0_尿1 = partGroup["尿1"].ToPar();
+    		X0Y0_尿2 = partGroup["尿2"].ToPar();
+    		X0Y0_汗 = partGroup["汗"].ToPar();
+    		PartGroup pars2 = partGroup["湯気"].ToPars();
+    		PartGroup pars3 = pars2["湯気左1"].ToPars();
     		X0Y0_湯気_湯気左1_湯気1 = pars3["湯気1"].ToPar();
     		X0Y0_湯気_湯気左1_湯気2 = pars3["湯気2"].ToPar();
     		pars3 = pars2["湯気左2"].ToPars();
@@ -597,24 +597,24 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		潮1CD = new ColorD(ref Col.Empty, ref 体配色.染み);
-    		潮2CD = new ColorD(ref Col.Empty, ref 体配色.染み);
-    		潮3CD = new ColorD(ref Col.Empty, ref 体配色.染み);
-    		尿1CD = new ColorD(ref Col.Empty, ref 体配色.染み);
-    		尿2CD = new ColorD(ref Col.Empty, ref 体配色.染み);
-    		汗CD = new ColorD(ref Col.Empty, ref 体配色.染み);
-    		湯気_湯気左1_湯気1CD = new ColorD(ref Col.Empty, ref 体配色.呼気);
-    		湯気_湯気左1_湯気2CD = new ColorD(ref Col.Empty, ref 体配色.呼気);
-    		湯気_湯気左2_湯気1CD = new ColorD(ref Col.Empty, ref 体配色.呼気);
-    		湯気_湯気左2_湯気2CD = new ColorD(ref Col.Empty, ref 体配色.呼気);
-    		湯気_湯気左3_湯気1CD = new ColorD(ref Col.Empty, ref 体配色.呼気);
-    		湯気_湯気左3_湯気2CD = new ColorD(ref Col.Empty, ref 体配色.呼気);
-    		湯気_湯気右1_湯気1CD = new ColorD(ref Col.Empty, ref 体配色.呼気);
-    		湯気_湯気右1_湯気2CD = new ColorD(ref Col.Empty, ref 体配色.呼気);
-    		湯気_湯気右2_湯気1CD = new ColorD(ref Col.Empty, ref 体配色.呼気);
-    		湯気_湯気右2_湯気2CD = new ColorD(ref Col.Empty, ref 体配色.呼気);
-    		湯気_湯気右3_湯気1CD = new ColorD(ref Col.Empty, ref 体配色.呼気);
-    		湯気_湯気右3_湯気2CD = new ColorD(ref Col.Empty, ref 体配色.呼気);
+    		潮1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.染み);
+    		潮2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.染み);
+    		潮3CD = new ColorD(ref ColorHelper.Empty, ref 体配色.染み);
+    		尿1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.染み);
+    		尿2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.染み);
+    		汗CD = new ColorD(ref ColorHelper.Empty, ref 体配色.染み);
+    		湯気_湯気左1_湯気1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.呼気);
+    		湯気_湯気左1_湯気2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.呼気);
+    		湯気_湯気左2_湯気1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.呼気);
+    		湯気_湯気左2_湯気2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.呼気);
+    		湯気_湯気左3_湯気1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.呼気);
+    		湯気_湯気左3_湯気2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.呼気);
+    		湯気_湯気右1_湯気1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.呼気);
+    		湯気_湯気右1_湯気2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.呼気);
+    		湯気_湯気右2_湯気1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.呼気);
+    		湯気_湯気右2_湯気2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.呼気);
+    		湯気_湯気右3_湯気1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.呼気);
+    		湯気_湯気右3_湯気2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.呼気);
     	}
     }
 }

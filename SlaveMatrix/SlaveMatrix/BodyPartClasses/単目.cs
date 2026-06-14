@@ -4,19 +4,19 @@ using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
-    public class 単目 : Ele
+    public class 単目 : Element
     {
-    	public Par X0Y0_白目;
+    	public ShapePart X0Y0_白目;
 
-    	public Par X0Y0_黒目_黒目;
+    	public ShapePart X0Y0_黒目_黒目;
 
-    	public Par X0Y0_黒目_瞳孔;
+    	public ShapePart X0Y0_黒目_瞳孔;
 
-    	public Par X0Y0_黒目_ハイライト上;
+    	public ShapePart X0Y0_黒目_ハイライト上;
 
-    	public Par X0Y0_黒目_ハイライト下;
+    	public ShapePart X0Y0_黒目_ハイライト下;
 
-    	public Par X0Y0_黒目_ハート;
+    	public ShapePart X0Y0_黒目_ハート;
 
     	public ColorD 白目CD;
 
@@ -42,7 +42,7 @@ namespace SlaveMatrix
 
     	public ColorP X0Y0_黒目_ハートCP;
 
-    	public Ele[] 瞼_接続;
+    	public Element[] 瞼_接続;
 
     	public override bool 欠損
     	{
@@ -226,10 +226,10 @@ namespace SlaveMatrix
     	{
     		単目 単目2 = this;
     		ThisType = GetType();
-    		Body = new Difs(Sta.胴体["単眼目"]);
-    		Pars pars = Body[0][0];
-    		X0Y0_白目 = pars["白目"].ToPar();
-    		Pars pars2 = pars["黒目"].ToPars();
+    		Body = new VariantGrid(GlobalState.胴体["単眼目"]);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_白目 = partGroup["白目"].ToPar();
+    		PartGroup pars2 = partGroup["黒目"].ToPars();
     		X0Y0_黒目_黒目 = pars2["黒目"].ToPar();
     		X0Y0_黒目_瞳孔 = pars2["瞳孔"].ToPar();
     		X0Y0_黒目_ハイライト上 = pars2["ハイライト上"].ToPar();
@@ -282,8 +282,8 @@ namespace SlaveMatrix
     		}
     		if (e.瞼_接続.Count > 0)
     		{
-    			Ele f;
-    			瞼_接続 = e.瞼_接続.Select(delegate(EleD g)
+    			Element f;
+    			瞼_接続 = e.瞼_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 単目2;
@@ -332,12 +332,12 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		白目CD = new ColorD(ref Col.Empty, ref 体配色.白部O);
-    		黒目_黒目CD = new ColorD(ref Col.Black, ref 体配色.目左O);
-    		黒目_瞳孔CD = new ColorD(ref Col.Black, ref 体配色.瞳孔);
-    		黒目_ハイライト上CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト);
-    		黒目_ハイライト下CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト);
-    		黒目_ハートCD = new ColorD(ref Col.Empty, ref 体配色.ハートO);
+    		白目CD = new ColorD(ref ColorHelper.Empty, ref 体配色.白部O);
+    		黒目_黒目CD = new ColorD(ref ColorHelper.Black, ref 体配色.目左O);
+    		黒目_瞳孔CD = new ColorD(ref ColorHelper.Black, ref 体配色.瞳孔);
+    		黒目_ハイライト上CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト);
+    		黒目_ハイライト下CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト);
+    		黒目_ハートCD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハートO);
     	}
     }
 }

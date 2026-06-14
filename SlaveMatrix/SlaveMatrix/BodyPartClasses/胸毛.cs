@@ -3,9 +3,9 @@ using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
-    public class 胸毛 : Ele
+    public class 胸毛 : Element
     {
-    	public Par X0Y0_獣性_胸毛;
+    	public ShapePart X0Y0_獣性_胸毛;
 
     	public ColorD 獣性_胸毛CD;
 
@@ -87,9 +87,9 @@ namespace SlaveMatrix
     	public 胸毛(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 胸毛D e)
     	{
     		ThisType = GetType();
-    		Body = new Difs(Sta.胴体["胸毛"]);
-    		Pars pars = Body[0][0]["獣性"].ToPars();
-    		X0Y0_獣性_胸毛 = pars["胸毛"].ToPar();
+    		Body = new VariantGrid(GlobalState.胴体["胸毛"]);
+    		PartGroup partGroup = Body[0][0]["獣性"].ToPars();
+    		X0Y0_獣性_胸毛 = partGroup["胸毛"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;
@@ -140,7 +140,7 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		獣性_胸毛CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
+    		獣性_胸毛CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
     	}
     }
 }

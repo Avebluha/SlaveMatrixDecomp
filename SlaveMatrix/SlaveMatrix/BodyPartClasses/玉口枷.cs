@@ -3,55 +3,55 @@ using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
-    public class 玉口枷 : Ele
+    public class 玉口枷 : Element
     {
-    	public Par X0Y0_金具左上;
+    	public ShapePart X0Y0_金具左上;
 
-    	public Par X0Y0_金具左下;
+    	public ShapePart X0Y0_金具左下;
 
-    	public Par X0Y0_革左;
+    	public ShapePart X0Y0_革左;
 
-    	public Par X0Y0_金具右上;
+    	public ShapePart X0Y0_金具右上;
 
-    	public Par X0Y0_金具右下;
+    	public ShapePart X0Y0_金具右下;
 
-    	public Par X0Y0_革右;
+    	public ShapePart X0Y0_革右;
 
-    	public Par X0Y0_革;
+    	public ShapePart X0Y0_革;
 
-    	public Par X0Y0_玉;
+    	public ShapePart X0Y0_玉;
 
-    	public Par X0Y0_穴中上;
+    	public ShapePart X0Y0_穴中上;
 
-    	public Par X0Y0_穴右;
+    	public ShapePart X0Y0_穴右;
 
-    	public Par X0Y0_穴中下;
+    	public ShapePart X0Y0_穴中下;
 
-    	public Par X0Y0_穴左;
+    	public ShapePart X0Y0_穴左;
 
-    	public Par X0Y0_穴上右上;
+    	public ShapePart X0Y0_穴上右上;
 
-    	public Par X0Y0_穴上右下;
+    	public ShapePart X0Y0_穴上右下;
 
-    	public Par X0Y0_穴下右上;
+    	public ShapePart X0Y0_穴下右上;
 
-    	public Par X0Y0_穴下右下;
+    	public ShapePart X0Y0_穴下右下;
 
-    	public Par X0Y0_穴下左下;
+    	public ShapePart X0Y0_穴下左下;
 
-    	public Par X0Y0_穴下左上;
+    	public ShapePart X0Y0_穴下左上;
 
-    	public Par X0Y0_穴上左下;
+    	public ShapePart X0Y0_穴上左下;
 
-    	public Par X0Y0_穴上左上;
+    	public ShapePart X0Y0_穴上左上;
 
-    	public Par X0Y0_丸金具左内;
+    	public ShapePart X0Y0_丸金具左内;
 
-    	public Par X0Y0_丸金具右内;
+    	public ShapePart X0Y0_丸金具右内;
 
-    	public Par X0Y0_丸金具左外;
+    	public ShapePart X0Y0_丸金具左外;
 
-    	public Par X0Y0_丸金具右外;
+    	public ShapePart X0Y0_丸金具右外;
 
     	public ColorD 金具左上CD;
 
@@ -570,32 +570,32 @@ namespace SlaveMatrix
     	public 玉口枷(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 玉口枷D e)
     	{
     		ThisType = GetType();
-    		Body = new Difs(Sta.胴体["玉口枷"]);
-    		Pars pars = Body[0][0];
-    		X0Y0_金具左上 = pars["金具左上"].ToPar();
-    		X0Y0_金具左下 = pars["金具左下"].ToPar();
-    		X0Y0_革左 = pars["革左"].ToPar();
-    		X0Y0_金具右上 = pars["金具右上"].ToPar();
-    		X0Y0_金具右下 = pars["金具右下"].ToPar();
-    		X0Y0_革右 = pars["革右"].ToPar();
-    		X0Y0_革 = pars["革"].ToPar();
-    		X0Y0_玉 = pars["玉"].ToPar();
-    		X0Y0_穴中上 = pars["穴中上"].ToPar();
-    		X0Y0_穴右 = pars["穴右"].ToPar();
-    		X0Y0_穴中下 = pars["穴中下"].ToPar();
-    		X0Y0_穴左 = pars["穴左"].ToPar();
-    		X0Y0_穴上右上 = pars["穴上右上"].ToPar();
-    		X0Y0_穴上右下 = pars["穴上右下"].ToPar();
-    		X0Y0_穴下右上 = pars["穴下右上"].ToPar();
-    		X0Y0_穴下右下 = pars["穴下右下"].ToPar();
-    		X0Y0_穴下左下 = pars["穴下左下"].ToPar();
-    		X0Y0_穴下左上 = pars["穴下左上"].ToPar();
-    		X0Y0_穴上左下 = pars["穴上左下"].ToPar();
-    		X0Y0_穴上左上 = pars["穴上左上"].ToPar();
-    		X0Y0_丸金具左内 = pars["丸金具左内"].ToPar();
-    		X0Y0_丸金具右内 = pars["丸金具右内"].ToPar();
-    		X0Y0_丸金具左外 = pars["丸金具左外"].ToPar();
-    		X0Y0_丸金具右外 = pars["丸金具右外"].ToPar();
+    		Body = new VariantGrid(GlobalState.胴体["玉口枷"]);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_金具左上 = partGroup["金具左上"].ToPar();
+    		X0Y0_金具左下 = partGroup["金具左下"].ToPar();
+    		X0Y0_革左 = partGroup["革左"].ToPar();
+    		X0Y0_金具右上 = partGroup["金具右上"].ToPar();
+    		X0Y0_金具右下 = partGroup["金具右下"].ToPar();
+    		X0Y0_革右 = partGroup["革右"].ToPar();
+    		X0Y0_革 = partGroup["革"].ToPar();
+    		X0Y0_玉 = partGroup["玉"].ToPar();
+    		X0Y0_穴中上 = partGroup["穴中上"].ToPar();
+    		X0Y0_穴右 = partGroup["穴右"].ToPar();
+    		X0Y0_穴中下 = partGroup["穴中下"].ToPar();
+    		X0Y0_穴左 = partGroup["穴左"].ToPar();
+    		X0Y0_穴上右上 = partGroup["穴上右上"].ToPar();
+    		X0Y0_穴上右下 = partGroup["穴上右下"].ToPar();
+    		X0Y0_穴下右上 = partGroup["穴下右上"].ToPar();
+    		X0Y0_穴下右下 = partGroup["穴下右下"].ToPar();
+    		X0Y0_穴下左下 = partGroup["穴下左下"].ToPar();
+    		X0Y0_穴下左上 = partGroup["穴下左上"].ToPar();
+    		X0Y0_穴上左下 = partGroup["穴上左下"].ToPar();
+    		X0Y0_穴上左上 = partGroup["穴上左上"].ToPar();
+    		X0Y0_丸金具左内 = partGroup["丸金具左内"].ToPar();
+    		X0Y0_丸金具右内 = partGroup["丸金具右内"].ToPar();
+    		X0Y0_丸金具左外 = partGroup["丸金具左外"].ToPar();
+    		X0Y0_丸金具右外 = partGroup["丸金具右外"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;
@@ -680,7 +680,7 @@ namespace SlaveMatrix
     		Intensity = e.濃度;
     	}
 
-    	public override bool Is革(Par p)
+    	public override bool Is革(ShapePart p)
     	{
     		if (p != X0Y0_金具左上 && p != X0Y0_金具左下 && p != X0Y0_革左 && p != X0Y0_金具右上 && p != X0Y0_金具右下 && p != X0Y0_革右 && p != X0Y0_革 && p != X0Y0_玉 && p != X0Y0_穴中上 && p != X0Y0_穴右 && p != X0Y0_穴中下 && p != X0Y0_穴左 && p != X0Y0_穴上右上 && p != X0Y0_穴上右下 && p != X0Y0_穴下右上 && p != X0Y0_穴下右下 && p != X0Y0_穴下左下 && p != X0Y0_穴下左上 && p != X0Y0_穴上左下 && p != X0Y0_穴上左上 && p != X0Y0_丸金具左内 && p != X0Y0_丸金具右内 && p != X0Y0_丸金具左外)
     		{

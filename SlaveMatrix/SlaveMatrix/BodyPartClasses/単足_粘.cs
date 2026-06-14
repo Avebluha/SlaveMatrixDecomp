@@ -4,69 +4,69 @@ namespace SlaveMatrix
 {
     public class 単足_粘 : 半身
     {
-    	public Par X0Y0_粘液0;
+    	public ShapePart X0Y0_粘液0;
 
-    	public Par X0Y0_粘液1;
+    	public ShapePart X0Y0_粘液1;
 
-    	public Par X0Y0_粘液2_粘液;
+    	public ShapePart X0Y0_粘液2_粘液;
 
-    	public Par X0Y0_粘液2_ハイライト左;
+    	public ShapePart X0Y0_粘液2_ハイライト左;
 
-    	public Par X0Y0_粘液2_ハイライト右;
+    	public ShapePart X0Y0_粘液2_ハイライト右;
 
-    	public Par X0Y0_粘液2_ハイライト下1;
+    	public ShapePart X0Y0_粘液2_ハイライト下1;
 
-    	public Par X0Y0_粘液2_ハイライト下2;
+    	public ShapePart X0Y0_粘液2_ハイライト下2;
 
-    	public Par X0Y0_粘液3_粘液;
+    	public ShapePart X0Y0_粘液3_粘液;
 
-    	public Par X0Y0_粘液3_ハイライト左上;
+    	public ShapePart X0Y0_粘液3_ハイライト左上;
 
-    	public Par X0Y0_粘液3_ハイライト右上;
+    	public ShapePart X0Y0_粘液3_ハイライト右上;
 
-    	public Par X0Y0_粘液3_ハイライト左下1;
+    	public ShapePart X0Y0_粘液3_ハイライト左下1;
 
-    	public Par X0Y0_粘液3_ハイライト左下2;
+    	public ShapePart X0Y0_粘液3_ハイライト左下2;
 
-    	public Par X0Y0_粘液3_ハイライト右下1;
+    	public ShapePart X0Y0_粘液3_ハイライト右下1;
 
-    	public Par X0Y0_粘液3_ハイライト右下2;
+    	public ShapePart X0Y0_粘液3_ハイライト右下2;
 
-    	public Par X0Y0_粘液3_ハイライト下1;
+    	public ShapePart X0Y0_粘液3_ハイライト下1;
 
-    	public Par X0Y0_粘液3_ハイライト下2;
+    	public ShapePart X0Y0_粘液3_ハイライト下2;
 
-    	public Par X0Y0_粘液4_粘液;
+    	public ShapePart X0Y0_粘液4_粘液;
 
-    	public Par X0Y0_粘液4_ハイライト上1;
+    	public ShapePart X0Y0_粘液4_ハイライト上1;
 
-    	public Par X0Y0_粘液4_ハイライト上2;
+    	public ShapePart X0Y0_粘液4_ハイライト上2;
 
-    	public Par X0Y0_粘液4_ハイライト下1;
+    	public ShapePart X0Y0_粘液4_ハイライト下1;
 
-    	public Par X0Y0_粘液4_ハイライト下2;
+    	public ShapePart X0Y0_粘液4_ハイライト下2;
 
-    	public Par X0Y0_粘液下左_粘液;
+    	public ShapePart X0Y0_粘液下左_粘液;
 
-    	public Par X0Y0_粘液下左_ハイライト1;
+    	public ShapePart X0Y0_粘液下左_ハイライト1;
 
-    	public Par X0Y0_粘液下左_ハイライト2;
+    	public ShapePart X0Y0_粘液下左_ハイライト2;
 
-    	public Par X0Y0_粘液下右_粘液;
+    	public ShapePart X0Y0_粘液下右_粘液;
 
-    	public Par X0Y0_粘液下右_ハイライト1;
+    	public ShapePart X0Y0_粘液下右_ハイライト1;
 
-    	public Par X0Y0_粘液下右_ハイライト2;
+    	public ShapePart X0Y0_粘液下右_ハイライト2;
 
-    	public Par X0Y0_粘液上左_粘液;
+    	public ShapePart X0Y0_粘液上左_粘液;
 
-    	public Par X0Y0_粘液上左_ハイライト;
+    	public ShapePart X0Y0_粘液上左_ハイライト;
 
-    	public Par X0Y0_粘液上右_粘液;
+    	public ShapePart X0Y0_粘液上右_粘液;
 
-    	public Par X0Y0_粘液上右_ハイライト;
+    	public ShapePart X0Y0_粘液上右_ハイライト;
 
-    	public Par X0Y0_ハイライト;
+    	public ShapePart X0Y0_ハイライト;
 
     	public ColorD 粘液0CD;
 
@@ -805,22 +805,22 @@ namespace SlaveMatrix
     	public 単足_粘(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 単足_粘D e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif();
-    		dif.Tag = "粘";
-    		dif.Add(new Pars(Sta.半身["単足"][0][1]));
-    		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		X0Y0_粘液0 = pars["粘液0"].ToPar();
-    		X0Y0_粘液1 = pars["粘液1"].ToPar();
-    		Pars pars2 = pars["粘液2"].ToPars();
+    		MorphVariant morphVariant = new MorphVariant();
+    		morphVariant.Tag = "粘";
+    		morphVariant.Add(new PartGroup(GlobalState.半身["単足"][0][1]));
+    		Body = new VariantGrid();
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_粘液0 = partGroup["粘液0"].ToPar();
+    		X0Y0_粘液1 = partGroup["粘液1"].ToPar();
+    		PartGroup pars2 = partGroup["粘液2"].ToPars();
     		X0Y0_粘液2_粘液 = pars2["粘液"].ToPar();
     		X0Y0_粘液2_ハイライト左 = pars2["ハイライト左"].ToPar();
     		X0Y0_粘液2_ハイライト右 = pars2["ハイライト右"].ToPar();
     		X0Y0_粘液2_ハイライト下1 = pars2["ハイライト下1"].ToPar();
     		X0Y0_粘液2_ハイライト下2 = pars2["ハイライト下2"].ToPar();
-    		pars2 = pars["粘液3"].ToPars();
+    		pars2 = partGroup["粘液3"].ToPars();
     		X0Y0_粘液3_粘液 = pars2["粘液"].ToPar();
     		X0Y0_粘液3_ハイライト左上 = pars2["ハイライト左上"].ToPar();
     		X0Y0_粘液3_ハイライト右上 = pars2["ハイライト右上"].ToPar();
@@ -830,27 +830,27 @@ namespace SlaveMatrix
     		X0Y0_粘液3_ハイライト右下2 = pars2["ハイライト右下2"].ToPar();
     		X0Y0_粘液3_ハイライト下1 = pars2["ハイライト下1"].ToPar();
     		X0Y0_粘液3_ハイライト下2 = pars2["ハイライト下2"].ToPar();
-    		pars2 = pars["粘液4"].ToPars();
+    		pars2 = partGroup["粘液4"].ToPars();
     		X0Y0_粘液4_粘液 = pars2["粘液"].ToPar();
     		X0Y0_粘液4_ハイライト上1 = pars2["ハイライト上1"].ToPar();
     		X0Y0_粘液4_ハイライト上2 = pars2["ハイライト上2"].ToPar();
     		X0Y0_粘液4_ハイライト下1 = pars2["ハイライト下1"].ToPar();
     		X0Y0_粘液4_ハイライト下2 = pars2["ハイライト下2"].ToPar();
-    		pars2 = pars["粘液下左"].ToPars();
+    		pars2 = partGroup["粘液下左"].ToPars();
     		X0Y0_粘液下左_粘液 = pars2["粘液"].ToPar();
     		X0Y0_粘液下左_ハイライト1 = pars2["ハイライト1"].ToPar();
     		X0Y0_粘液下左_ハイライト2 = pars2["ハイライト2"].ToPar();
-    		pars2 = pars["粘液下右"].ToPars();
+    		pars2 = partGroup["粘液下右"].ToPars();
     		X0Y0_粘液下右_粘液 = pars2["粘液"].ToPar();
     		X0Y0_粘液下右_ハイライト1 = pars2["ハイライト1"].ToPar();
     		X0Y0_粘液下右_ハイライト2 = pars2["ハイライト2"].ToPar();
-    		pars2 = pars["粘液上左"].ToPars();
+    		pars2 = partGroup["粘液上左"].ToPars();
     		X0Y0_粘液上左_粘液 = pars2["粘液"].ToPar();
     		X0Y0_粘液上左_ハイライト = pars2["ハイライト"].ToPar();
-    		pars2 = pars["粘液上右"].ToPars();
+    		pars2 = partGroup["粘液上右"].ToPars();
     		X0Y0_粘液上右_粘液 = pars2["粘液"].ToPar();
     		X0Y0_粘液上右_ハイライト = pars2["ハイライト"].ToPar();
-    		X0Y0_ハイライト = pars["ハイライト"].ToPar();
+    		X0Y0_ハイライト = partGroup["ハイライト"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;
@@ -996,40 +996,40 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		Col.Alpha(ref 体配色.人肌O, 128, out var ret);
-    		粘液0CD = new ColorD(ref Col.Empty, ref ret);
-    		粘液1CD = new ColorD(ref Col.Empty, ref ret);
-    		粘液2_粘液CD = new ColorD(ref Col.Empty, ref ret);
-    		粘液2_ハイライト左CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
-    		粘液2_ハイライト右CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
-    		粘液2_ハイライト下1CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
-    		粘液2_ハイライト下2CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
-    		粘液3_粘液CD = new ColorD(ref Col.Empty, ref ret);
-    		粘液3_ハイライト左上CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
-    		粘液3_ハイライト右上CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
-    		粘液3_ハイライト左下1CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
-    		粘液3_ハイライト左下2CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
-    		粘液3_ハイライト右下1CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
-    		粘液3_ハイライト右下2CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
-    		粘液3_ハイライト下1CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
-    		粘液3_ハイライト下2CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
-    		粘液4_粘液CD = new ColorD(ref Col.Empty, ref ret);
-    		粘液4_ハイライト上1CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
-    		粘液4_ハイライト上2CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
-    		粘液4_ハイライト下1CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
-    		粘液4_ハイライト下2CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
+    		ColorHelper.Alpha(ref 体配色.人肌O, 128, out var ret);
+    		粘液0CD = new ColorD(ref ColorHelper.Empty, ref ret);
+    		粘液1CD = new ColorD(ref ColorHelper.Empty, ref ret);
+    		粘液2_粘液CD = new ColorD(ref ColorHelper.Empty, ref ret);
+    		粘液2_ハイライト左CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		粘液2_ハイライト右CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		粘液2_ハイライト下1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		粘液2_ハイライト下2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		粘液3_粘液CD = new ColorD(ref ColorHelper.Empty, ref ret);
+    		粘液3_ハイライト左上CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		粘液3_ハイライト右上CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		粘液3_ハイライト左下1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		粘液3_ハイライト左下2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		粘液3_ハイライト右下1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		粘液3_ハイライト右下2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		粘液3_ハイライト下1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		粘液3_ハイライト下2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		粘液4_粘液CD = new ColorD(ref ColorHelper.Empty, ref ret);
+    		粘液4_ハイライト上1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		粘液4_ハイライト上2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		粘液4_ハイライト下1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		粘液4_ハイライト下2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
     		ret.GetRep(out ret);
-    		粘液下左_粘液CD = new ColorD(ref Col.Empty, ref ret);
-    		粘液下左_ハイライト1CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
-    		粘液下左_ハイライト2CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
-    		粘液下右_粘液CD = new ColorD(ref Col.Empty, ref ret);
-    		粘液下右_ハイライト1CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
-    		粘液下右_ハイライト2CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
-    		粘液上左_粘液CD = new ColorD(ref Col.Empty, ref ret);
-    		粘液上左_ハイライトCD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
-    		粘液上右_粘液CD = new ColorD(ref Col.Empty, ref ret);
-    		粘液上右_ハイライトCD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
-    		ハイライトCD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
+    		粘液下左_粘液CD = new ColorD(ref ColorHelper.Empty, ref ret);
+    		粘液下左_ハイライト1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		粘液下左_ハイライト2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		粘液下右_粘液CD = new ColorD(ref ColorHelper.Empty, ref ret);
+    		粘液下右_ハイライト1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		粘液下右_ハイライト2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		粘液上左_粘液CD = new ColorD(ref ColorHelper.Empty, ref ret);
+    		粘液上左_ハイライトCD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		粘液上右_粘液CD = new ColorD(ref ColorHelper.Empty, ref ret);
+    		粘液上右_ハイライトCD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		ハイライトCD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
     	}
     }
 }

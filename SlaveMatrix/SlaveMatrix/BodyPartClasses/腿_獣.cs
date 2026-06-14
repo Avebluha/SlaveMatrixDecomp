@@ -6,13 +6,13 @@ namespace SlaveMatrix
 {
     public class 腿_獣 : 獣腿
     {
-    	public Par X0Y0_腿;
+    	public ShapePart X0Y0_腿;
 
-    	public Par X0Y0_筋;
+    	public ShapePart X0Y0_筋;
 
-    	public Par X0Y0_虎柄_虎1;
+    	public ShapePart X0Y0_虎柄_虎1;
 
-    	public Par X0Y0_虎柄_虎2;
+    	public ShapePart X0Y0_虎柄_虎2;
 
     	public ColorD 腿CD;
 
@@ -155,14 +155,14 @@ namespace SlaveMatrix
     	{
     		腿_獣 腿_獣2 = this;
     		ThisType = GetType();
-    		Dif dif = new Dif(Sta.脚左["四足腿"][0]);
-    		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		X0Y0_腿 = pars["腿"].ToPar();
-    		X0Y0_筋 = pars["筋"].ToPar();
-    		Pars pars2 = pars["虎左"].ToPars();
+    		MorphVariant morphVariant = new MorphVariant(GlobalState.脚左["四足腿"][0]);
+    		Body = new VariantGrid();
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_腿 = partGroup["腿"].ToPar();
+    		X0Y0_筋 = partGroup["筋"].ToPar();
+    		PartGroup pars2 = partGroup["虎左"].ToPars();
     		X0Y0_虎柄_虎1 = pars2["虎1"].ToPar();
     		X0Y0_虎柄_虎2 = pars2["虎2"].ToPar();
     		Body.SetJoints();
@@ -202,8 +202,8 @@ namespace SlaveMatrix
     		}
     		if (e.Leg_接続.Count > 0)
     		{
-    			Ele f;
-    			Leg_接続 = e.Leg_接続.Select(delegate(EleD g)
+    			Element f;
+    			Leg_接続 = e.Leg_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 腿_獣2;
@@ -243,10 +243,10 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		腿CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
+    		腿CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
     		筋CD = new ColorD(ref 体配色.薄線, ref 体配色.毛0O);
-    		虎柄_虎1CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		虎柄_虎2CD = new ColorD(ref Col.Black, ref 体配色.刺青);
+    		虎柄_虎1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		虎柄_虎2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
     	}
     }
 }

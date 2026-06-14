@@ -4,7 +4,7 @@ namespace SlaveMatrix
 {
     public class 鰭_鯨 : 鰭
     {
-    	public Par X0Y0_鰭;
+    	public ShapePart X0Y0_鰭;
 
     	public ColorD 鰭CD;
 
@@ -86,14 +86,14 @@ namespace SlaveMatrix
     	public 鰭_鯨(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 鰭_鯨D e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif();
-    		dif.Tag = "鯨鰭";
-    		dif.Add(new Pars(Sta.肢左["鰭"][1][1]));
-    		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		X0Y0_鰭 = pars["鰭"].ToPar();
+    		MorphVariant morphVariant = new MorphVariant();
+    		morphVariant.Tag = "鯨鰭";
+    		morphVariant.Add(new PartGroup(GlobalState.肢左["鰭"][1][1]));
+    		Body = new VariantGrid();
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_鰭 = partGroup["鰭"].ToPar();
     		Xasix = false;
     		Body.SetJoints();
     		接続根 = new JointD(Body);
@@ -152,7 +152,7 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		鰭CD = new ColorD(ref Col.Black, ref 体配色.体0O);
+    		鰭CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
     	}
     }
 }

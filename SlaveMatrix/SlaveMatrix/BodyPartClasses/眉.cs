@@ -3,17 +3,17 @@ using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
-    public class 眉 : Ele
+    public class 眉 : Element
     {
-    	public Par X0Y0_眉;
+    	public ShapePart X0Y0_眉;
 
-    	public Par X0Y1_眉;
+    	public ShapePart X0Y1_眉;
 
-    	public Par X0Y1_眉間;
+    	public ShapePart X0Y1_眉間;
 
-    	public Par X0Y2_眉;
+    	public ShapePart X0Y2_眉;
 
-    	public Par X0Y2_眉間;
+    	public ShapePart X0Y2_眉間;
 
     	public ColorD 眉CD;
 
@@ -152,15 +152,15 @@ namespace SlaveMatrix
     	public 眉(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 眉D e)
     	{
     		ThisType = GetType();
-    		Body = new Difs(Sta.胴体["眉左"]);
-    		Pars pars = Body[0][0];
-    		X0Y0_眉 = pars["眉"].ToPar();
-    		pars = Body[0][1];
-    		X0Y1_眉 = pars["眉"].ToPar();
-    		X0Y1_眉間 = pars["眉間"].ToPar();
-    		pars = Body[0][2];
-    		X0Y2_眉 = pars["眉"].ToPar();
-    		X0Y2_眉間 = pars["眉間"].ToPar();
+    		Body = new VariantGrid(GlobalState.胴体["眉左"]);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_眉 = partGroup["眉"].ToPar();
+    		partGroup = Body[0][1];
+    		X0Y1_眉 = partGroup["眉"].ToPar();
+    		X0Y1_眉間 = partGroup["眉間"].ToPar();
+    		partGroup = Body[0][2];
+    		X0Y2_眉 = partGroup["眉"].ToPar();
+    		X0Y2_眉間 = partGroup["眉間"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;
@@ -233,7 +233,7 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		眉CD = new ColorD(ref Col.Black, ref 体配色.眉O);
+    		眉CD = new ColorD(ref ColorHelper.Black, ref 体配色.眉O);
     		眉間CD = new ColorD(ref 体配色.薄線, ref 体配色.人肌O);
     	}
     }

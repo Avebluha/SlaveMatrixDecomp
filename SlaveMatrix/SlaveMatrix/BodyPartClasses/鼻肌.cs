@@ -3,29 +3,29 @@ using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
-    public class 鼻肌 : Ele
+    public class 鼻肌 : Element
     {
-    	public Par X0Y0_紋柄_紋左_紋1;
+    	public ShapePart X0Y0_紋柄_紋左_紋1;
 
-    	public Par X0Y0_紋柄_紋左_紋2;
+    	public ShapePart X0Y0_紋柄_紋左_紋2;
 
-    	public Par X0Y0_紋柄_紋左_紋3;
+    	public ShapePart X0Y0_紋柄_紋左_紋3;
 
-    	public Par X0Y0_紋柄_紋左_紋4;
+    	public ShapePart X0Y0_紋柄_紋左_紋4;
 
-    	public Par X0Y0_紋柄_紋左_紋5;
+    	public ShapePart X0Y0_紋柄_紋左_紋5;
 
-    	public Par X0Y0_紋柄_紋右_紋1;
+    	public ShapePart X0Y0_紋柄_紋右_紋1;
 
-    	public Par X0Y0_紋柄_紋右_紋2;
+    	public ShapePart X0Y0_紋柄_紋右_紋2;
 
-    	public Par X0Y0_紋柄_紋右_紋3;
+    	public ShapePart X0Y0_紋柄_紋右_紋3;
 
-    	public Par X0Y0_紋柄_紋右_紋4;
+    	public ShapePart X0Y0_紋柄_紋右_紋4;
 
-    	public Par X0Y0_紋柄_紋右_紋5;
+    	public ShapePart X0Y0_紋柄_紋右_紋5;
 
-    	public Par X0Y0_傷I;
+    	public ShapePart X0Y0_傷I;
 
     	public ColorD 紋柄_紋左_紋1CD;
 
@@ -309,10 +309,10 @@ namespace SlaveMatrix
     	public 鼻肌(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 鼻肌D e)
     	{
     		ThisType = GetType();
-    		Body = new Difs(Sta.胴体["鼻肌"]);
-    		Pars pars = Body[0][0];
-    		Pars pars2 = pars["紋柄"].ToPars();
-    		Pars pars3 = pars2["紋左"].ToPars();
+    		Body = new VariantGrid(GlobalState.胴体["鼻肌"]);
+    		PartGroup partGroup = Body[0][0];
+    		PartGroup pars2 = partGroup["紋柄"].ToPars();
+    		PartGroup pars3 = pars2["紋左"].ToPars();
     		X0Y0_紋柄_紋左_紋1 = pars3["紋1"].ToPar();
     		X0Y0_紋柄_紋左_紋2 = pars3["紋2"].ToPar();
     		X0Y0_紋柄_紋左_紋3 = pars3["紋3"].ToPar();
@@ -324,7 +324,7 @@ namespace SlaveMatrix
     		X0Y0_紋柄_紋右_紋3 = pars3["紋3"].ToPar();
     		X0Y0_紋柄_紋右_紋4 = pars3["紋4"].ToPar();
     		X0Y0_紋柄_紋右_紋5 = pars3["紋5"].ToPar();
-    		X0Y0_傷I = pars["傷I"].ToPar();
+    		X0Y0_傷I = partGroup["傷I"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;
@@ -406,17 +406,17 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		紋柄_紋左_紋1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		紋柄_紋左_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		紋柄_紋左_紋3CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		紋柄_紋左_紋4CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		紋柄_紋左_紋5CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		紋柄_紋右_紋1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		紋柄_紋右_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		紋柄_紋右_紋3CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		紋柄_紋右_紋4CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		紋柄_紋右_紋5CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		傷ICD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
+    		紋柄_紋左_紋1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		紋柄_紋左_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		紋柄_紋左_紋3CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		紋柄_紋左_紋4CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		紋柄_紋左_紋5CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		紋柄_紋右_紋1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		紋柄_紋右_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		紋柄_紋右_紋3CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		紋柄_紋右_紋4CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		紋柄_紋右_紋5CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		傷ICD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
     	}
     }
 }

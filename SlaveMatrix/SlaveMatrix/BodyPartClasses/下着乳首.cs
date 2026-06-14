@@ -3,13 +3,13 @@ using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
-    public class 下着乳首 : Ele
+    public class 下着乳首 : Element
     {
-    	public Par X0Y0_乳首;
+    	public ShapePart X0Y0_乳首;
 
-    	public Par X0Y0_染み2;
+    	public ShapePart X0Y0_染み2;
 
-    	public Par X0Y0_染み1;
+    	public ShapePart X0Y0_染み1;
 
     	public ColorD 乳首CD;
 
@@ -170,7 +170,7 @@ namespace SlaveMatrix
     		}
     		set
     		{
-    			foreach (Par item in Body.EnumAllPar())
+    			foreach (ShapePart item in Body.EnumAllPar())
     			{
     				item.SetSizeBase(value);
     			}
@@ -181,11 +181,11 @@ namespace SlaveMatrix
     	public 下着乳首(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 下着乳首D e)
     	{
     		ThisType = GetType();
-    		Body = new Difs(Sta.胴体["下着乳首左"]);
-    		Pars pars = Body[0][0];
-    		X0Y0_乳首 = pars["乳首"].ToPar();
-    		X0Y0_染み2 = pars["染み2"].ToPar();
-    		X0Y0_染み1 = pars["染み1"].ToPar();
+    		Body = new VariantGrid(GlobalState.胴体["下着乳首左"]);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_乳首 = partGroup["乳首"].ToPar();
+    		X0Y0_染み2 = partGroup["染み2"].ToPar();
+    		X0Y0_染み1 = partGroup["染み1"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;
@@ -247,13 +247,13 @@ namespace SlaveMatrix
     	private void 配色N0(BodyColorSet 体配色)
     	{
     		乳首CD = new ColorD();
-    		染み2CD = new ColorD(ref Col.Empty, ref 体配色.染み);
-    		染み1CD = new ColorD(ref Col.Empty, ref 体配色.染み);
+    		染み2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.染み);
+    		染み1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.染み);
     	}
 
     	public void 配色(Color2 配色)
     	{
-    		乳首CD.線 = Col.Black;
+    		乳首CD.線 = ColorHelper.Black;
     		乳首CD.色 = 配色;
     		X0Y0_乳首CP.Setting();
     	}

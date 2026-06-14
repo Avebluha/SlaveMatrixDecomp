@@ -4,9 +4,9 @@ using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
-    public class 大顎基 : Ele
+    public class 大顎基 : Element
     {
-    	public Par X0Y0_甲殻下;
+    	public ShapePart X0Y0_甲殻下;
 
     	public 大顎上 大顎上;
 
@@ -14,9 +14,9 @@ namespace SlaveMatrix
 
     	public ColorP X0Y0_甲殻下CP;
 
-    	public Ele[] 顎左_接続;
+    	public Element[] 顎左_接続;
 
-    	public Ele[] 顎右_接続;
+    	public Element[] 顎右_接続;
 
     	public override bool 欠損
     	{
@@ -166,7 +166,7 @@ namespace SlaveMatrix
     		set
     		{
     			位置C = new Vector2D(位置C.X, -0.013 * value);
-    			foreach (Ele item in EnumEle())
+    			foreach (Element item in EnumEle())
     			{
     				item.尺度YC = 1.0 - 0.05 * value;
     			}
@@ -411,9 +411,9 @@ namespace SlaveMatrix
     		大顎上 = new 大顎上(DisUnit, 配色指定, 体配色);
     		大顎上.Par = this;
     		ThisType = GetType();
-    		Body = new Difs(Sta.肢中["大顎基"]);
-    		Pars pars = Body[0][0];
-    		X0Y0_甲殻下 = pars["甲殻下"].ToPar();
+    		Body = new VariantGrid(GlobalState.肢中["大顎基"]);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_甲殻下 = partGroup["甲殻下"].ToPar();
     		大顎上.接続(大顎上_接続点);
     		Body.SetJoints();
     		接続根 = new JointD(Body);
@@ -452,10 +452,10 @@ namespace SlaveMatrix
     		{
     			表示 = false;
     		}
-    		Ele f;
+    		Element f;
     		if (e.顎左_接続.Count > 0)
     		{
-    			顎左_接続 = e.顎左_接続.Select(delegate(EleD g)
+    			顎左_接続 = e.顎左_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 大顎基2;
@@ -466,7 +466,7 @@ namespace SlaveMatrix
     		}
     		if (e.顎右_接続.Count > 0)
     		{
-    			顎右_接続 = e.顎右_接続.Select(delegate(EleD g)
+    			顎右_接続 = e.顎右_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 大顎基2;
@@ -512,7 +512,7 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		甲殻下CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
+    		甲殻下CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
     	}
     }
 }

@@ -20,39 +20,39 @@ namespace SlaveMatrix
 
     	public double くぱぁ;
 
-    	public List<EleD> 陰核_接続 = new List<EleD>();
+    	public List<ElementData> 陰核_接続 = new List<ElementData>();
 
-    	public List<EleD> 尿道_接続 = new List<EleD>();
+    	public List<ElementData> 尿道_接続 = new List<ElementData>();
 
-    	public List<EleD> 膣口_接続 = new List<EleD>();
+    	public List<ElementData> 膣口_接続 = new List<ElementData>();
 
     	public 性器_獣D()
     	{
     		ThisType = GetType();
     	}
 
-    	public void 陰核接続(EleD e)
+    	public void 陰核接続(ElementData e)
     	{
     		陰核_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.性器_獣_陰核_接続;
     	}
 
-    	public void 尿道接続(EleD e)
+    	public void 尿道接続(ElementData e)
     	{
     		尿道_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.性器_獣_尿道_接続;
     	}
 
-    	public void 膣口接続(EleD e)
+    	public void 膣口接続(ElementData e)
     	{
     		膣口_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.性器_獣_膣口_接続;
     	}
 
-    	public override Ele GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
+    	public override Element GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
     	{
     		return new 性器_獣(DisUnit, 配色指定, 体配色, Med, this);
     	}

@@ -4,29 +4,29 @@ namespace SlaveMatrix
 {
     public class 手_牛 : 獣手
     {
-    	public Par X0Y0_指0;
+    	public ShapePart X0Y0_指0;
 
-    	public Par X0Y0_筋;
+    	public ShapePart X0Y0_筋;
 
-    	public Par X0Y0_蹄_蹄2;
+    	public ShapePart X0Y0_蹄_蹄2;
 
-    	public Par X0Y0_蹄_蹄1;
+    	public ShapePart X0Y0_蹄_蹄1;
 
-    	public Par X0Y0_蹄_副蹄;
+    	public ShapePart X0Y0_蹄_副蹄;
 
-    	public Par X0Y0_指1;
+    	public ShapePart X0Y0_指1;
 
-    	public Par X0Y0_腕輪_革;
+    	public ShapePart X0Y0_腕輪_革;
 
-    	public Par X0Y0_腕輪_金具1;
+    	public ShapePart X0Y0_腕輪_金具1;
 
-    	public Par X0Y0_腕輪_金具2;
+    	public ShapePart X0Y0_腕輪_金具2;
 
-    	public Par X0Y0_腕輪_金具3;
+    	public ShapePart X0Y0_腕輪_金具3;
 
-    	public Par X0Y0_腕輪_金具左;
+    	public ShapePart X0Y0_腕輪_金具左;
 
-    	public Par X0Y0_腕輪_金具右;
+    	public ShapePart X0Y0_腕輪_金具右;
 
     	public ColorD 指0CD;
 
@@ -355,21 +355,21 @@ namespace SlaveMatrix
     	public 手_牛(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 手_牛D e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif();
-    		dif.Tag = "牛";
-    		dif.Add(new Pars(Sta.腕左["四足手"][1][1]));
-    		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		X0Y0_指0 = pars["指0"].ToPar();
-    		X0Y0_筋 = pars["筋"].ToPar();
-    		Pars pars2 = pars["蹄"].ToPars();
+    		MorphVariant morphVariant = new MorphVariant();
+    		morphVariant.Tag = "牛";
+    		morphVariant.Add(new PartGroup(GlobalState.腕左["四足手"][1][1]));
+    		Body = new VariantGrid();
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_指0 = partGroup["指0"].ToPar();
+    		X0Y0_筋 = partGroup["筋"].ToPar();
+    		PartGroup pars2 = partGroup["蹄"].ToPars();
     		X0Y0_蹄_蹄2 = pars2["蹄2"].ToPar();
     		X0Y0_蹄_蹄1 = pars2["蹄1"].ToPar();
     		X0Y0_蹄_副蹄 = pars2["副蹄"].ToPar();
-    		X0Y0_指1 = pars["指1"].ToPar();
-    		pars2 = pars["腕輪"].ToPars();
+    		X0Y0_指1 = partGroup["指1"].ToPar();
+    		pars2 = partGroup["腕輪"].ToPars();
     		X0Y0_腕輪_革 = pars2["革"].ToPar();
     		X0Y0_腕輪_金具1 = pars2["金具1"].ToPar();
     		X0Y0_腕輪_金具2 = pars2["金具2"].ToPar();
@@ -464,7 +464,7 @@ namespace SlaveMatrix
     		Body.JoinPAall();
     	}
 
-    	public override bool Is革(Par p)
+    	public override bool Is革(ShapePart p)
     	{
     		if (p != X0Y0_腕輪_革 && p != X0Y0_腕輪_金具1 && p != X0Y0_腕輪_金具2 && p != X0Y0_腕輪_金具3 && p != X0Y0_腕輪_金具左)
     		{
@@ -498,12 +498,12 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		指0CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
+    		指0CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
     		筋CD = new ColorD(ref 体配色.薄線, ref 体配色.毛0O);
-    		蹄_蹄2CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		蹄_蹄1CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		蹄_副蹄CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		指1CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
+    		蹄_蹄2CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		蹄_蹄1CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		蹄_副蹄CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		指1CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
     		腕輪_革CD = new ColorD();
     		腕輪_金具1CD = new ColorD();
     		腕輪_金具2CD = new ColorD();

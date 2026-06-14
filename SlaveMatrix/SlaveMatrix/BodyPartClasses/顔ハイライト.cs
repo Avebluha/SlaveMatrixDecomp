@@ -3,11 +3,11 @@ using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
-    public class 顔ハイライト : Ele
+    public class 顔ハイライト : Element
     {
-    	public Par X0Y0_ハイライト1;
+    	public ShapePart X0Y0_ハイライト1;
 
-    	public Par X0Y0_ハイライト2;
+    	public ShapePart X0Y0_ハイライト2;
 
     	public ColorD ハイライト1CD;
 
@@ -108,10 +108,10 @@ namespace SlaveMatrix
     	public 顔ハイライト(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 顔ハイライトD e)
     	{
     		ThisType = GetType();
-    		Body = new Difs(Sta.胴体["顔ハイライト左"]);
-    		Pars pars = Body[0][0];
-    		X0Y0_ハイライト1 = pars["ハイライト1"].ToPar();
-    		X0Y0_ハイライト2 = pars["ハイライト2"].ToPar();
+    		Body = new VariantGrid(GlobalState.胴体["顔ハイライト左"]);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_ハイライト1 = partGroup["ハイライト1"].ToPar();
+    		X0Y0_ハイライト2 = partGroup["ハイライト2"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;
@@ -165,8 +165,8 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		ハイライト1CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
-    		ハイライト2CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2R);
+    		ハイライト1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		ハイライト2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2R);
     	}
     }
 }

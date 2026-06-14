@@ -4,115 +4,115 @@ namespace SlaveMatrix
 {
     public class 飛沫_獣 : 飛沫
     {
-    	public Par X0Y0_飛沫基;
+    	public ShapePart X0Y0_飛沫基;
 
-    	public Par X0Y0_雫1;
+    	public ShapePart X0Y0_雫1;
 
-    	public Par X0Y0_雫2;
+    	public ShapePart X0Y0_雫2;
 
-    	public Par X0Y0_雫3;
+    	public ShapePart X0Y0_雫3;
 
-    	public Par X0Y0_雫4;
+    	public ShapePart X0Y0_雫4;
 
-    	public Par X0Y0_雫5;
+    	public ShapePart X0Y0_雫5;
 
-    	public Par X0Y0_雫6;
+    	public ShapePart X0Y0_雫6;
 
-    	public Par X0Y0_雫7;
+    	public ShapePart X0Y0_雫7;
 
-    	public Par X0Y0_雫8;
+    	public ShapePart X0Y0_雫8;
 
-    	public Par X0Y0_雫9;
+    	public ShapePart X0Y0_雫9;
 
-    	public Par X0Y0_雫10;
+    	public ShapePart X0Y0_雫10;
 
-    	public Par X0Y1_飛沫基;
+    	public ShapePart X0Y1_飛沫基;
 
-    	public Par X0Y1_雫1;
+    	public ShapePart X0Y1_雫1;
 
-    	public Par X0Y1_雫2;
+    	public ShapePart X0Y1_雫2;
 
-    	public Par X0Y1_雫3;
+    	public ShapePart X0Y1_雫3;
 
-    	public Par X0Y1_雫4;
+    	public ShapePart X0Y1_雫4;
 
-    	public Par X0Y1_雫5;
+    	public ShapePart X0Y1_雫5;
 
-    	public Par X0Y1_雫6;
+    	public ShapePart X0Y1_雫6;
 
-    	public Par X0Y1_雫7;
+    	public ShapePart X0Y1_雫7;
 
-    	public Par X0Y1_雫8;
+    	public ShapePart X0Y1_雫8;
 
-    	public Par X0Y1_雫9;
+    	public ShapePart X0Y1_雫9;
 
-    	public Par X0Y1_雫10;
+    	public ShapePart X0Y1_雫10;
 
-    	public Par X0Y2_飛沫基;
+    	public ShapePart X0Y2_飛沫基;
 
-    	public Par X0Y2_雫1;
+    	public ShapePart X0Y2_雫1;
 
-    	public Par X0Y2_雫2;
+    	public ShapePart X0Y2_雫2;
 
-    	public Par X0Y2_雫3;
+    	public ShapePart X0Y2_雫3;
 
-    	public Par X0Y2_雫4;
+    	public ShapePart X0Y2_雫4;
 
-    	public Par X0Y2_雫5;
+    	public ShapePart X0Y2_雫5;
 
-    	public Par X0Y2_雫6;
+    	public ShapePart X0Y2_雫6;
 
-    	public Par X0Y2_雫7;
+    	public ShapePart X0Y2_雫7;
 
-    	public Par X0Y2_雫8;
+    	public ShapePart X0Y2_雫8;
 
-    	public Par X0Y2_雫9;
+    	public ShapePart X0Y2_雫9;
 
-    	public Par X0Y2_雫10;
+    	public ShapePart X0Y2_雫10;
 
-    	public Par X0Y3_飛沫基;
+    	public ShapePart X0Y3_飛沫基;
 
-    	public Par X0Y3_雫1;
+    	public ShapePart X0Y3_雫1;
 
-    	public Par X0Y3_雫2;
+    	public ShapePart X0Y3_雫2;
 
-    	public Par X0Y3_雫3;
+    	public ShapePart X0Y3_雫3;
 
-    	public Par X0Y3_雫4;
+    	public ShapePart X0Y3_雫4;
 
-    	public Par X0Y3_雫5;
+    	public ShapePart X0Y3_雫5;
 
-    	public Par X0Y3_雫6;
+    	public ShapePart X0Y3_雫6;
 
-    	public Par X0Y3_雫7;
+    	public ShapePart X0Y3_雫7;
 
-    	public Par X0Y3_雫8;
+    	public ShapePart X0Y3_雫8;
 
-    	public Par X0Y3_雫9;
+    	public ShapePart X0Y3_雫9;
 
-    	public Par X0Y3_雫10;
+    	public ShapePart X0Y3_雫10;
 
-    	public Par X0Y4_飛沫基;
+    	public ShapePart X0Y4_飛沫基;
 
-    	public Par X0Y4_雫1;
+    	public ShapePart X0Y4_雫1;
 
-    	public Par X0Y4_雫2;
+    	public ShapePart X0Y4_雫2;
 
-    	public Par X0Y4_雫3;
+    	public ShapePart X0Y4_雫3;
 
-    	public Par X0Y4_雫4;
+    	public ShapePart X0Y4_雫4;
 
-    	public Par X0Y4_雫5;
+    	public ShapePart X0Y4_雫5;
 
-    	public Par X0Y4_雫6;
+    	public ShapePart X0Y4_雫6;
 
-    	public Par X0Y4_雫7;
+    	public ShapePart X0Y4_雫7;
 
-    	public Par X0Y4_雫8;
+    	public ShapePart X0Y4_雫8;
 
-    	public Par X0Y4_雫9;
+    	public ShapePart X0Y4_雫9;
 
-    	public Par X0Y4_雫10;
+    	public ShapePart X0Y4_雫10;
 
     	public ColorD 飛沫基CD;
 
@@ -557,67 +557,67 @@ namespace SlaveMatrix
     	public 飛沫_獣(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 飛沫_獣D e)
     	{
     		ThisType = GetType();
-    		Body = new Difs(Sta.性器付["四足飛沫"]);
-    		Pars pars = Body[0][0];
-    		X0Y0_飛沫基 = pars["飛沫基"].ToPar();
-    		X0Y0_雫1 = pars["雫1"].ToPar();
-    		X0Y0_雫2 = pars["雫2"].ToPar();
-    		X0Y0_雫3 = pars["雫3"].ToPar();
-    		X0Y0_雫4 = pars["雫4"].ToPar();
-    		X0Y0_雫5 = pars["雫5"].ToPar();
-    		X0Y0_雫6 = pars["雫6"].ToPar();
-    		X0Y0_雫7 = pars["雫7"].ToPar();
-    		X0Y0_雫8 = pars["雫8"].ToPar();
-    		X0Y0_雫9 = pars["雫9"].ToPar();
-    		X0Y0_雫10 = pars["雫10"].ToPar();
-    		pars = Body[0][1];
-    		X0Y1_飛沫基 = pars["飛沫基"].ToPar();
-    		X0Y1_雫1 = pars["雫1"].ToPar();
-    		X0Y1_雫2 = pars["雫2"].ToPar();
-    		X0Y1_雫3 = pars["雫3"].ToPar();
-    		X0Y1_雫4 = pars["雫4"].ToPar();
-    		X0Y1_雫5 = pars["雫5"].ToPar();
-    		X0Y1_雫6 = pars["雫6"].ToPar();
-    		X0Y1_雫7 = pars["雫7"].ToPar();
-    		X0Y1_雫8 = pars["雫8"].ToPar();
-    		X0Y1_雫9 = pars["雫9"].ToPar();
-    		X0Y1_雫10 = pars["雫10"].ToPar();
-    		pars = Body[0][2];
-    		X0Y2_飛沫基 = pars["飛沫基"].ToPar();
-    		X0Y2_雫1 = pars["雫1"].ToPar();
-    		X0Y2_雫2 = pars["雫2"].ToPar();
-    		X0Y2_雫3 = pars["雫3"].ToPar();
-    		X0Y2_雫4 = pars["雫4"].ToPar();
-    		X0Y2_雫5 = pars["雫5"].ToPar();
-    		X0Y2_雫6 = pars["雫6"].ToPar();
-    		X0Y2_雫7 = pars["雫7"].ToPar();
-    		X0Y2_雫8 = pars["雫8"].ToPar();
-    		X0Y2_雫9 = pars["雫9"].ToPar();
-    		X0Y2_雫10 = pars["雫10"].ToPar();
-    		pars = Body[0][3];
-    		X0Y3_飛沫基 = pars["飛沫基"].ToPar();
-    		X0Y3_雫1 = pars["雫1"].ToPar();
-    		X0Y3_雫2 = pars["雫2"].ToPar();
-    		X0Y3_雫3 = pars["雫3"].ToPar();
-    		X0Y3_雫4 = pars["雫4"].ToPar();
-    		X0Y3_雫5 = pars["雫5"].ToPar();
-    		X0Y3_雫6 = pars["雫6"].ToPar();
-    		X0Y3_雫7 = pars["雫7"].ToPar();
-    		X0Y3_雫8 = pars["雫8"].ToPar();
-    		X0Y3_雫9 = pars["雫9"].ToPar();
-    		X0Y3_雫10 = pars["雫10"].ToPar();
-    		pars = Body[0][4];
-    		X0Y4_飛沫基 = pars["飛沫基"].ToPar();
-    		X0Y4_雫1 = pars["雫1"].ToPar();
-    		X0Y4_雫2 = pars["雫2"].ToPar();
-    		X0Y4_雫3 = pars["雫3"].ToPar();
-    		X0Y4_雫4 = pars["雫4"].ToPar();
-    		X0Y4_雫5 = pars["雫5"].ToPar();
-    		X0Y4_雫6 = pars["雫6"].ToPar();
-    		X0Y4_雫7 = pars["雫7"].ToPar();
-    		X0Y4_雫8 = pars["雫8"].ToPar();
-    		X0Y4_雫9 = pars["雫9"].ToPar();
-    		X0Y4_雫10 = pars["雫10"].ToPar();
+    		Body = new VariantGrid(GlobalState.性器付["四足飛沫"]);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_飛沫基 = partGroup["飛沫基"].ToPar();
+    		X0Y0_雫1 = partGroup["雫1"].ToPar();
+    		X0Y0_雫2 = partGroup["雫2"].ToPar();
+    		X0Y0_雫3 = partGroup["雫3"].ToPar();
+    		X0Y0_雫4 = partGroup["雫4"].ToPar();
+    		X0Y0_雫5 = partGroup["雫5"].ToPar();
+    		X0Y0_雫6 = partGroup["雫6"].ToPar();
+    		X0Y0_雫7 = partGroup["雫7"].ToPar();
+    		X0Y0_雫8 = partGroup["雫8"].ToPar();
+    		X0Y0_雫9 = partGroup["雫9"].ToPar();
+    		X0Y0_雫10 = partGroup["雫10"].ToPar();
+    		partGroup = Body[0][1];
+    		X0Y1_飛沫基 = partGroup["飛沫基"].ToPar();
+    		X0Y1_雫1 = partGroup["雫1"].ToPar();
+    		X0Y1_雫2 = partGroup["雫2"].ToPar();
+    		X0Y1_雫3 = partGroup["雫3"].ToPar();
+    		X0Y1_雫4 = partGroup["雫4"].ToPar();
+    		X0Y1_雫5 = partGroup["雫5"].ToPar();
+    		X0Y1_雫6 = partGroup["雫6"].ToPar();
+    		X0Y1_雫7 = partGroup["雫7"].ToPar();
+    		X0Y1_雫8 = partGroup["雫8"].ToPar();
+    		X0Y1_雫9 = partGroup["雫9"].ToPar();
+    		X0Y1_雫10 = partGroup["雫10"].ToPar();
+    		partGroup = Body[0][2];
+    		X0Y2_飛沫基 = partGroup["飛沫基"].ToPar();
+    		X0Y2_雫1 = partGroup["雫1"].ToPar();
+    		X0Y2_雫2 = partGroup["雫2"].ToPar();
+    		X0Y2_雫3 = partGroup["雫3"].ToPar();
+    		X0Y2_雫4 = partGroup["雫4"].ToPar();
+    		X0Y2_雫5 = partGroup["雫5"].ToPar();
+    		X0Y2_雫6 = partGroup["雫6"].ToPar();
+    		X0Y2_雫7 = partGroup["雫7"].ToPar();
+    		X0Y2_雫8 = partGroup["雫8"].ToPar();
+    		X0Y2_雫9 = partGroup["雫9"].ToPar();
+    		X0Y2_雫10 = partGroup["雫10"].ToPar();
+    		partGroup = Body[0][3];
+    		X0Y3_飛沫基 = partGroup["飛沫基"].ToPar();
+    		X0Y3_雫1 = partGroup["雫1"].ToPar();
+    		X0Y3_雫2 = partGroup["雫2"].ToPar();
+    		X0Y3_雫3 = partGroup["雫3"].ToPar();
+    		X0Y3_雫4 = partGroup["雫4"].ToPar();
+    		X0Y3_雫5 = partGroup["雫5"].ToPar();
+    		X0Y3_雫6 = partGroup["雫6"].ToPar();
+    		X0Y3_雫7 = partGroup["雫7"].ToPar();
+    		X0Y3_雫8 = partGroup["雫8"].ToPar();
+    		X0Y3_雫9 = partGroup["雫9"].ToPar();
+    		X0Y3_雫10 = partGroup["雫10"].ToPar();
+    		partGroup = Body[0][4];
+    		X0Y4_飛沫基 = partGroup["飛沫基"].ToPar();
+    		X0Y4_雫1 = partGroup["雫1"].ToPar();
+    		X0Y4_雫2 = partGroup["雫2"].ToPar();
+    		X0Y4_雫3 = partGroup["雫3"].ToPar();
+    		X0Y4_雫4 = partGroup["雫4"].ToPar();
+    		X0Y4_雫5 = partGroup["雫5"].ToPar();
+    		X0Y4_雫6 = partGroup["雫6"].ToPar();
+    		X0Y4_雫7 = partGroup["雫7"].ToPar();
+    		X0Y4_雫8 = partGroup["雫8"].ToPar();
+    		X0Y4_雫9 = partGroup["雫9"].ToPar();
+    		X0Y4_雫10 = partGroup["雫10"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;
@@ -799,17 +799,17 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		飛沫基CD = new ColorD(ref Col.Empty, ref Color2.Empty);
-    		雫1CD = new ColorD(ref Col.Empty, ref 体配色.体液);
-    		雫2CD = new ColorD(ref Col.Empty, ref 体配色.体液);
-    		雫3CD = new ColorD(ref Col.Empty, ref 体配色.体液);
-    		雫4CD = new ColorD(ref Col.Empty, ref 体配色.体液);
-    		雫5CD = new ColorD(ref Col.Empty, ref 体配色.体液);
-    		雫6CD = new ColorD(ref Col.Empty, ref 体配色.体液);
-    		雫7CD = new ColorD(ref Col.Empty, ref 体配色.体液);
-    		雫8CD = new ColorD(ref Col.Empty, ref 体配色.体液);
-    		雫9CD = new ColorD(ref Col.Empty, ref 体配色.体液);
-    		雫10CD = new ColorD(ref Col.Empty, ref 体配色.体液);
+    		飛沫基CD = new ColorD(ref ColorHelper.Empty, ref Color2.Empty);
+    		雫1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.体液);
+    		雫2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.体液);
+    		雫3CD = new ColorD(ref ColorHelper.Empty, ref 体配色.体液);
+    		雫4CD = new ColorD(ref ColorHelper.Empty, ref 体配色.体液);
+    		雫5CD = new ColorD(ref ColorHelper.Empty, ref 体配色.体液);
+    		雫6CD = new ColorD(ref ColorHelper.Empty, ref 体配色.体液);
+    		雫7CD = new ColorD(ref ColorHelper.Empty, ref 体配色.体液);
+    		雫8CD = new ColorD(ref ColorHelper.Empty, ref 体配色.体液);
+    		雫9CD = new ColorD(ref ColorHelper.Empty, ref 体配色.体液);
+    		雫10CD = new ColorD(ref ColorHelper.Empty, ref 体配色.体液);
     	}
     }
 }

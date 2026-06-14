@@ -7,85 +7,85 @@ namespace SlaveMatrix
 {
     public class 多足_蠍 : 半身
     {
-    	public Par X0Y0_前腹_腹節7_節0;
+    	public ShapePart X0Y0_前腹_腹節7_節0;
 
-    	public Par X0Y0_前腹_腹節7_節1;
+    	public ShapePart X0Y0_前腹_腹節7_節1;
 
-    	public Par X0Y0_前腹_腹節6_節0;
+    	public ShapePart X0Y0_前腹_腹節6_節0;
 
-    	public Par X0Y0_前腹_腹節6_節1;
+    	public ShapePart X0Y0_前腹_腹節6_節1;
 
-    	public Par X0Y0_前腹_腹節6_節線;
+    	public ShapePart X0Y0_前腹_腹節6_節線;
 
-    	public Par X0Y0_前腹_腹節6_気門左;
+    	public ShapePart X0Y0_前腹_腹節6_気門左;
 
-    	public Par X0Y0_前腹_腹節6_気門右;
+    	public ShapePart X0Y0_前腹_腹節6_気門右;
 
-    	public Par X0Y0_前腹_腹節5_節0;
+    	public ShapePart X0Y0_前腹_腹節5_節0;
 
-    	public Par X0Y0_前腹_腹節5_節1;
+    	public ShapePart X0Y0_前腹_腹節5_節1;
 
-    	public Par X0Y0_前腹_腹節5_節線;
+    	public ShapePart X0Y0_前腹_腹節5_節線;
 
-    	public Par X0Y0_前腹_腹節5_気門左;
+    	public ShapePart X0Y0_前腹_腹節5_気門左;
 
-    	public Par X0Y0_前腹_腹節5_気門右;
+    	public ShapePart X0Y0_前腹_腹節5_気門右;
 
-    	public Par X0Y0_前腹_腹節4_節0;
+    	public ShapePart X0Y0_前腹_腹節4_節0;
 
-    	public Par X0Y0_前腹_腹節4_節1;
+    	public ShapePart X0Y0_前腹_腹節4_節1;
 
-    	public Par X0Y0_前腹_腹節4_節線;
+    	public ShapePart X0Y0_前腹_腹節4_節線;
 
-    	public Par X0Y0_前腹_腹節4_気門左;
+    	public ShapePart X0Y0_前腹_腹節4_気門左;
 
-    	public Par X0Y0_前腹_腹節4_気門右;
+    	public ShapePart X0Y0_前腹_腹節4_気門右;
 
-    	public Par X0Y0_前腹_腹節3_節0;
+    	public ShapePart X0Y0_前腹_腹節3_節0;
 
-    	public Par X0Y0_前腹_腹節3_節1;
+    	public ShapePart X0Y0_前腹_腹節3_節1;
 
-    	public Par X0Y0_前腹_腹節3_節線;
+    	public ShapePart X0Y0_前腹_腹節3_節線;
 
-    	public Par X0Y0_前腹_腹節3_気門左;
+    	public ShapePart X0Y0_前腹_腹節3_気門左;
 
-    	public Par X0Y0_前腹_腹節3_気門右;
+    	public ShapePart X0Y0_前腹_腹節3_気門右;
 
-    	public Par X0Y0_前腹_腹節2_節0;
+    	public ShapePart X0Y0_前腹_腹節2_節0;
 
-    	public Par X0Y0_頭胸;
+    	public ShapePart X0Y0_頭胸;
 
-    	public Par X0Y0_基節_基節左0;
+    	public ShapePart X0Y0_基節_基節左0;
 
-    	public Par X0Y0_基節_基節左1;
+    	public ShapePart X0Y0_基節_基節左1;
 
-    	public Par X0Y0_基節_肢内突起左;
+    	public ShapePart X0Y0_基節_肢内突起左;
 
-    	public Par X0Y0_基節_基節左2;
+    	public ShapePart X0Y0_基節_基節左2;
 
-    	public Par X0Y0_基節_基節左3;
+    	public ShapePart X0Y0_基節_基節左3;
 
-    	public Par X0Y0_基節_基節左4;
+    	public ShapePart X0Y0_基節_基節左4;
 
-    	public Par X0Y0_基節_基節右0;
+    	public ShapePart X0Y0_基節_基節右0;
 
-    	public Par X0Y0_基節_基節右1;
+    	public ShapePart X0Y0_基節_基節右1;
 
-    	public Par X0Y0_基節_肢内突起右;
+    	public ShapePart X0Y0_基節_肢内突起右;
 
-    	public Par X0Y0_基節_基節右2;
+    	public ShapePart X0Y0_基節_基節右2;
 
-    	public Par X0Y0_基節_基節右3;
+    	public ShapePart X0Y0_基節_基節右3;
 
-    	public Par X0Y0_基節_基節右4;
+    	public ShapePart X0Y0_基節_基節右4;
 
-    	public Par X0Y0_生殖口蓋左;
+    	public ShapePart X0Y0_生殖口蓋左;
 
-    	public Par X0Y0_生殖口蓋右;
+    	public ShapePart X0Y0_生殖口蓋右;
 
-    	public Par X0Y0_生殖口_生殖口0;
+    	public ShapePart X0Y0_生殖口_生殖口0;
 
-    	public Par X0Y0_生殖口_生殖口1;
+    	public ShapePart X0Y0_生殖口_生殖口1;
 
     	public ColorD 前腹_腹節7_節0CD;
 
@@ -249,31 +249,31 @@ namespace SlaveMatrix
 
     	private double くぱぁ_;
 
-    	public Ele[] 触肢左_接続;
+    	public Element[] 触肢左_接続;
 
-    	public Ele[] 節足左1_接続;
+    	public Element[] 節足左1_接続;
 
-    	public Ele[] 節足左2_接続;
+    	public Element[] 節足左2_接続;
 
-    	public Ele[] 節足左3_接続;
+    	public Element[] 節足左3_接続;
 
-    	public Ele[] 節足左4_接続;
+    	public Element[] 節足左4_接続;
 
-    	public Ele[] 触肢右_接続;
+    	public Element[] 触肢右_接続;
 
-    	public Ele[] 節足右1_接続;
+    	public Element[] 節足右1_接続;
 
-    	public Ele[] 節足右2_接続;
+    	public Element[] 節足右2_接続;
 
-    	public Ele[] 節足右3_接続;
+    	public Element[] 節足右3_接続;
 
-    	public Ele[] 節足右4_接続;
+    	public Element[] 節足右4_接続;
 
-    	public Ele[] 櫛状板左_接続;
+    	public Element[] 櫛状板左_接続;
 
-    	public Ele[] 櫛状板右_接続;
+    	public Element[] 櫛状板右_接続;
 
-    	public Ele[] 尾_接続;
+    	public Element[] 尾_接続;
 
     	public override bool 欠損
     	{
@@ -977,15 +977,15 @@ namespace SlaveMatrix
     	{
     		多足_蠍 多足_蠍2 = this;
     		ThisType = GetType();
-    		Dif dif = new Dif();
-    		dif.Tag = "蠍";
-    		dif.Add(new Pars(Sta.半身["多足"][0][2]));
-    		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		Pars pars2 = pars["前腹"].ToPars();
-    		Pars pars3 = pars2["腹節7"].ToPars();
+    		MorphVariant morphVariant = new MorphVariant();
+    		morphVariant.Tag = "蠍";
+    		morphVariant.Add(new PartGroup(GlobalState.半身["多足"][0][2]));
+    		Body = new VariantGrid();
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
+    		PartGroup partGroup = Body[0][0];
+    		PartGroup pars2 = partGroup["前腹"].ToPars();
+    		PartGroup pars3 = pars2["腹節7"].ToPars();
     		X0Y0_前腹_腹節7_節0 = pars3["節0"].ToPar();
     		X0Y0_前腹_腹節7_節1 = pars3["節1"].ToPar();
     		pars3 = pars2["腹節6"].ToPars();
@@ -1014,8 +1014,8 @@ namespace SlaveMatrix
     		X0Y0_前腹_腹節3_気門右 = pars3["気門右"].ToPar();
     		pars3 = pars2["腹節2"].ToPars();
     		X0Y0_前腹_腹節2_節0 = pars3["節0"].ToPar();
-    		X0Y0_頭胸 = pars["頭胸"].ToPar();
-    		pars2 = pars["基節"].ToPars();
+    		X0Y0_頭胸 = partGroup["頭胸"].ToPar();
+    		pars2 = partGroup["基節"].ToPars();
     		X0Y0_基節_基節左0 = pars2["基節左0"].ToPar();
     		X0Y0_基節_基節左1 = pars2["基節左1"].ToPar();
     		X0Y0_基節_肢内突起左 = pars2["肢内突起左"].ToPar();
@@ -1028,9 +1028,9 @@ namespace SlaveMatrix
     		X0Y0_基節_基節右2 = pars2["基節右2"].ToPar();
     		X0Y0_基節_基節右3 = pars2["基節右3"].ToPar();
     		X0Y0_基節_基節右4 = pars2["基節右4"].ToPar();
-    		X0Y0_生殖口蓋左 = pars["生殖口蓋左"].ToPar();
-    		X0Y0_生殖口蓋右 = pars["生殖口蓋右"].ToPar();
-    		pars2 = pars["生殖口"].ToPars();
+    		X0Y0_生殖口蓋左 = partGroup["生殖口蓋左"].ToPar();
+    		X0Y0_生殖口蓋右 = partGroup["生殖口蓋右"].ToPar();
+    		pars2 = partGroup["生殖口"].ToPars();
     		X0Y0_生殖口_生殖口0 = pars2["生殖口0"].ToPar();
     		X0Y0_生殖口_生殖口1 = pars2["生殖口1"].ToPar();
     		Body.SetJoints();
@@ -1105,10 +1105,10 @@ namespace SlaveMatrix
     		{
     			表示 = false;
     		}
-    		Ele f;
+    		Element f;
     		if (e.触肢左_接続.Count > 0)
     		{
-    			触肢左_接続 = e.触肢左_接続.Select(delegate(EleD g)
+    			触肢左_接続 = e.触肢左_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 多足_蠍2;
@@ -1119,7 +1119,7 @@ namespace SlaveMatrix
     		}
     		if (e.節足左1_接続.Count > 0)
     		{
-    			節足左1_接続 = e.節足左1_接続.Select(delegate(EleD g)
+    			節足左1_接続 = e.節足左1_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 多足_蠍2;
@@ -1130,7 +1130,7 @@ namespace SlaveMatrix
     		}
     		if (e.節足左2_接続.Count > 0)
     		{
-    			節足左2_接続 = e.節足左2_接続.Select(delegate(EleD g)
+    			節足左2_接続 = e.節足左2_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 多足_蠍2;
@@ -1141,7 +1141,7 @@ namespace SlaveMatrix
     		}
     		if (e.節足左3_接続.Count > 0)
     		{
-    			節足左3_接続 = e.節足左3_接続.Select(delegate(EleD g)
+    			節足左3_接続 = e.節足左3_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 多足_蠍2;
@@ -1152,7 +1152,7 @@ namespace SlaveMatrix
     		}
     		if (e.節足左4_接続.Count > 0)
     		{
-    			節足左4_接続 = e.節足左4_接続.Select(delegate(EleD g)
+    			節足左4_接続 = e.節足左4_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 多足_蠍2;
@@ -1163,7 +1163,7 @@ namespace SlaveMatrix
     		}
     		if (e.触肢右_接続.Count > 0)
     		{
-    			触肢右_接続 = e.触肢右_接続.Select(delegate(EleD g)
+    			触肢右_接続 = e.触肢右_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 多足_蠍2;
@@ -1174,7 +1174,7 @@ namespace SlaveMatrix
     		}
     		if (e.節足右1_接続.Count > 0)
     		{
-    			節足右1_接続 = e.節足右1_接続.Select(delegate(EleD g)
+    			節足右1_接続 = e.節足右1_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 多足_蠍2;
@@ -1185,7 +1185,7 @@ namespace SlaveMatrix
     		}
     		if (e.節足右2_接続.Count > 0)
     		{
-    			節足右2_接続 = e.節足右2_接続.Select(delegate(EleD g)
+    			節足右2_接続 = e.節足右2_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 多足_蠍2;
@@ -1196,7 +1196,7 @@ namespace SlaveMatrix
     		}
     		if (e.節足右3_接続.Count > 0)
     		{
-    			節足右3_接続 = e.節足右3_接続.Select(delegate(EleD g)
+    			節足右3_接続 = e.節足右3_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 多足_蠍2;
@@ -1207,7 +1207,7 @@ namespace SlaveMatrix
     		}
     		if (e.節足右4_接続.Count > 0)
     		{
-    			節足右4_接続 = e.節足右4_接続.Select(delegate(EleD g)
+    			節足右4_接続 = e.節足右4_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 多足_蠍2;
@@ -1218,7 +1218,7 @@ namespace SlaveMatrix
     		}
     		if (e.櫛状板左_接続.Count > 0)
     		{
-    			櫛状板左_接続 = e.櫛状板左_接続.Select(delegate(EleD g)
+    			櫛状板左_接続 = e.櫛状板左_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 多足_蠍2;
@@ -1229,7 +1229,7 @@ namespace SlaveMatrix
     		}
     		if (e.櫛状板右_接続.Count > 0)
     		{
-    			櫛状板右_接続 = e.櫛状板右_接続.Select(delegate(EleD g)
+    			櫛状板右_接続 = e.櫛状板右_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 多足_蠍2;
@@ -1240,7 +1240,7 @@ namespace SlaveMatrix
     		}
     		if (e.尾_接続.Count > 0)
     		{
-    			尾_接続 = e.尾_接続.Select(delegate(EleD g)
+    			尾_接続 = e.尾_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 多足_蠍2;
@@ -1317,7 +1317,7 @@ namespace SlaveMatrix
     		Body.JoinPAall();
     	}
 
-    	public IEnumerable<Par> 軸列挙()
+    	public IEnumerable<ShapePart> 軸列挙()
     	{
     		yield return X0Y0_前腹_腹節2_節0;
     		yield return X0Y0_前腹_腹節3_節0;
@@ -1440,219 +1440,219 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		前腹_腹節7_節0CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		前腹_腹節7_節1CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		前腹_腹節6_節0CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		前腹_腹節6_節1CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		前腹_腹節6_節線CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		前腹_腹節6_気門左CD = new ColorD(ref Col.Black, ref 体配色.甲1R);
-    		前腹_腹節6_気門右CD = new ColorD(ref Col.Black, ref 体配色.甲1R);
-    		前腹_腹節5_節0CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		前腹_腹節5_節1CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		前腹_腹節5_節線CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		前腹_腹節5_気門左CD = new ColorD(ref Col.Black, ref 体配色.甲1R);
-    		前腹_腹節5_気門右CD = new ColorD(ref Col.Black, ref 体配色.甲1R);
-    		前腹_腹節4_節0CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		前腹_腹節4_節1CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		前腹_腹節4_節線CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		前腹_腹節4_気門左CD = new ColorD(ref Col.Black, ref 体配色.甲1R);
-    		前腹_腹節4_気門右CD = new ColorD(ref Col.Black, ref 体配色.甲1R);
-    		前腹_腹節3_節0CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		前腹_腹節3_節1CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		前腹_腹節3_節線CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		前腹_腹節3_気門左CD = new ColorD(ref Col.Black, ref 体配色.甲1R);
-    		前腹_腹節3_気門右CD = new ColorD(ref Col.Black, ref 体配色.甲1R);
-    		前腹_腹節2_節0CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		頭胸CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		基節_基節左0CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		基節_基節左1CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		基節_肢内突起左CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		基節_基節左2CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		基節_基節左3CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		基節_基節左4CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		基節_基節右0CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		基節_基節右1CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		基節_肢内突起右CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		基節_基節右2CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		基節_基節右3CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		基節_基節右4CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		生殖口蓋左CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		生殖口蓋右CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		生殖口_生殖口0CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		生殖口_生殖口1CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
+    		前腹_腹節7_節0CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		前腹_腹節7_節1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		前腹_腹節6_節0CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		前腹_腹節6_節1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		前腹_腹節6_節線CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		前腹_腹節6_気門左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1R);
+    		前腹_腹節6_気門右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1R);
+    		前腹_腹節5_節0CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		前腹_腹節5_節1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		前腹_腹節5_節線CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		前腹_腹節5_気門左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1R);
+    		前腹_腹節5_気門右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1R);
+    		前腹_腹節4_節0CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		前腹_腹節4_節1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		前腹_腹節4_節線CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		前腹_腹節4_気門左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1R);
+    		前腹_腹節4_気門右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1R);
+    		前腹_腹節3_節0CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		前腹_腹節3_節1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		前腹_腹節3_節線CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		前腹_腹節3_気門左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1R);
+    		前腹_腹節3_気門右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1R);
+    		前腹_腹節2_節0CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		頭胸CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		基節_基節左0CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		基節_基節左1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		基節_肢内突起左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		基節_基節左2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		基節_基節左3CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		基節_基節左4CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		基節_基節右0CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		基節_基節右1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		基節_肢内突起右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		基節_基節右2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		基節_基節右3CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		基節_基節右4CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		生殖口蓋左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		生殖口蓋右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		生殖口_生殖口0CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		生殖口_生殖口1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
     	}
 
     	private void 配色T0(BodyColorSet 体配色)
     	{
-    		前腹_腹節7_節0CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		前腹_腹節7_節1CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		前腹_腹節6_節0CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		前腹_腹節6_節1CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		前腹_腹節6_節線CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		前腹_腹節6_気門左CD = new ColorD(ref Col.Black, ref 体配色.刺青R);
-    		前腹_腹節6_気門右CD = new ColorD(ref Col.Black, ref 体配色.刺青R);
-    		前腹_腹節5_節0CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		前腹_腹節5_節1CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		前腹_腹節5_節線CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		前腹_腹節5_気門左CD = new ColorD(ref Col.Black, ref 体配色.刺青R);
-    		前腹_腹節5_気門右CD = new ColorD(ref Col.Black, ref 体配色.刺青R);
-    		前腹_腹節4_節0CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		前腹_腹節4_節1CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		前腹_腹節4_節線CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		前腹_腹節4_気門左CD = new ColorD(ref Col.Black, ref 体配色.刺青R);
-    		前腹_腹節4_気門右CD = new ColorD(ref Col.Black, ref 体配色.刺青R);
-    		前腹_腹節3_節0CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		前腹_腹節3_節1CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		前腹_腹節3_節線CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		前腹_腹節3_気門左CD = new ColorD(ref Col.Black, ref 体配色.刺青R);
-    		前腹_腹節3_気門右CD = new ColorD(ref Col.Black, ref 体配色.刺青R);
-    		前腹_腹節2_節0CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		頭胸CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		基節_基節左0CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		基節_基節左1CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		基節_肢内突起左CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		基節_基節左2CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		基節_基節左3CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		基節_基節左4CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		基節_基節右0CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		基節_基節右1CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		基節_肢内突起右CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		基節_基節右2CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		基節_基節右3CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		基節_基節右4CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		生殖口蓋左CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		生殖口蓋右CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		生殖口_生殖口0CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		生殖口_生殖口1CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
+    		前腹_腹節7_節0CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		前腹_腹節7_節1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		前腹_腹節6_節0CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		前腹_腹節6_節1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		前腹_腹節6_節線CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		前腹_腹節6_気門左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青R);
+    		前腹_腹節6_気門右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青R);
+    		前腹_腹節5_節0CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		前腹_腹節5_節1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		前腹_腹節5_節線CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		前腹_腹節5_気門左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青R);
+    		前腹_腹節5_気門右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青R);
+    		前腹_腹節4_節0CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		前腹_腹節4_節1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		前腹_腹節4_節線CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		前腹_腹節4_気門左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青R);
+    		前腹_腹節4_気門右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青R);
+    		前腹_腹節3_節0CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		前腹_腹節3_節1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		前腹_腹節3_節線CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		前腹_腹節3_気門左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青R);
+    		前腹_腹節3_気門右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青R);
+    		前腹_腹節2_節0CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		頭胸CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		基節_基節左0CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		基節_基節左1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		基節_肢内突起左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		基節_基節左2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		基節_基節左3CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		基節_基節左4CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		基節_基節右0CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		基節_基節右1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		基節_肢内突起右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		基節_基節右2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		基節_基節右3CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		基節_基節右4CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		生殖口蓋左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		生殖口蓋右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		生殖口_生殖口0CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		生殖口_生殖口1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
     	}
 
     	private void 配色T1(BodyColorSet 体配色)
     	{
-    		前腹_腹節7_節0CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		前腹_腹節7_節1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		前腹_腹節6_節0CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		前腹_腹節6_節1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		前腹_腹節6_節線CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		前腹_腹節6_気門左CD = new ColorD(ref Col.Black, ref 体配色.甲1R);
-    		前腹_腹節6_気門右CD = new ColorD(ref Col.Black, ref 体配色.甲1R);
-    		前腹_腹節5_節0CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		前腹_腹節5_節1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		前腹_腹節5_節線CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		前腹_腹節5_気門左CD = new ColorD(ref Col.Black, ref 体配色.甲1R);
-    		前腹_腹節5_気門右CD = new ColorD(ref Col.Black, ref 体配色.甲1R);
-    		前腹_腹節4_節0CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		前腹_腹節4_節1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		前腹_腹節4_節線CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		前腹_腹節4_気門左CD = new ColorD(ref Col.Black, ref 体配色.甲1R);
-    		前腹_腹節4_気門右CD = new ColorD(ref Col.Black, ref 体配色.甲1R);
-    		前腹_腹節3_節0CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		前腹_腹節3_節1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		前腹_腹節3_節線CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		前腹_腹節3_気門左CD = new ColorD(ref Col.Black, ref 体配色.甲1R);
-    		前腹_腹節3_気門右CD = new ColorD(ref Col.Black, ref 体配色.甲1R);
-    		前腹_腹節2_節0CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		頭胸CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		基節_基節左0CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		基節_基節左1CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		基節_肢内突起左CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		基節_基節左2CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		基節_基節左3CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		基節_基節左4CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		基節_基節右0CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		基節_基節右1CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		基節_肢内突起右CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		基節_基節右2CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		基節_基節右3CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		基節_基節右4CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		生殖口蓋左CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		生殖口蓋右CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		生殖口_生殖口0CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		生殖口_生殖口1CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
+    		前腹_腹節7_節0CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		前腹_腹節7_節1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		前腹_腹節6_節0CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		前腹_腹節6_節1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		前腹_腹節6_節線CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		前腹_腹節6_気門左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1R);
+    		前腹_腹節6_気門右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1R);
+    		前腹_腹節5_節0CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		前腹_腹節5_節1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		前腹_腹節5_節線CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		前腹_腹節5_気門左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1R);
+    		前腹_腹節5_気門右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1R);
+    		前腹_腹節4_節0CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		前腹_腹節4_節1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		前腹_腹節4_節線CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		前腹_腹節4_気門左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1R);
+    		前腹_腹節4_気門右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1R);
+    		前腹_腹節3_節0CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		前腹_腹節3_節1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		前腹_腹節3_節線CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		前腹_腹節3_気門左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1R);
+    		前腹_腹節3_気門右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1R);
+    		前腹_腹節2_節0CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		頭胸CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		基節_基節左0CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		基節_基節左1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		基節_肢内突起左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		基節_基節左2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		基節_基節左3CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		基節_基節左4CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		基節_基節右0CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		基節_基節右1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		基節_肢内突起右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		基節_基節右2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		基節_基節右3CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		基節_基節右4CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		生殖口蓋左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		生殖口蓋右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		生殖口_生殖口0CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		生殖口_生殖口1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
     	}
 
-    	public override IEnumerable<Ele> EnumEle()
+    	public override IEnumerable<Element> EnumEle()
     	{
     		yield return this;
     		if (尾_接続 != null)
     		{
-    			foreach (Ele item in 尾_接続.Select((Ele e) => e.EnumEle()).JoinEnum())
+    			foreach (Element item in 尾_接続.Select((Element e) => e.EnumEle()).JoinEnum())
     			{
     				yield return item;
     			}
     		}
     		if (櫛状板左_接続 != null)
     		{
-    			foreach (Ele item2 in 櫛状板左_接続.Select((Ele e) => e.EnumEle()).JoinEnum())
+    			foreach (Element item2 in 櫛状板左_接続.Select((Element e) => e.EnumEle()).JoinEnum())
     			{
     				yield return item2;
     			}
     		}
     		if (櫛状板右_接続 != null)
     		{
-    			foreach (Ele item3 in 櫛状板右_接続.Select((Ele e) => e.EnumEle()).JoinEnum())
+    			foreach (Element item3 in 櫛状板右_接続.Select((Element e) => e.EnumEle()).JoinEnum())
     			{
     				yield return item3;
     			}
     		}
     		if (節足左4_接続 != null)
     		{
-    			foreach (Ele item4 in 節足左4_接続.Select((Ele e) => e.EnumEle()).JoinEnum())
+    			foreach (Element item4 in 節足左4_接続.Select((Element e) => e.EnumEle()).JoinEnum())
     			{
     				yield return item4;
     			}
     		}
     		if (節足右4_接続 != null)
     		{
-    			foreach (Ele item5 in 節足右4_接続.Select((Ele e) => e.EnumEle()).JoinEnum())
+    			foreach (Element item5 in 節足右4_接続.Select((Element e) => e.EnumEle()).JoinEnum())
     			{
     				yield return item5;
     			}
     		}
     		if (節足左3_接続 != null)
     		{
-    			foreach (Ele item6 in 節足左3_接続.Select((Ele e) => e.EnumEle()).JoinEnum())
+    			foreach (Element item6 in 節足左3_接続.Select((Element e) => e.EnumEle()).JoinEnum())
     			{
     				yield return item6;
     			}
     		}
     		if (節足右3_接続 != null)
     		{
-    			foreach (Ele item7 in 節足右3_接続.Select((Ele e) => e.EnumEle()).JoinEnum())
+    			foreach (Element item7 in 節足右3_接続.Select((Element e) => e.EnumEle()).JoinEnum())
     			{
     				yield return item7;
     			}
     		}
     		if (節足左2_接続 != null)
     		{
-    			foreach (Ele item8 in 節足左2_接続.Select((Ele e) => e.EnumEle()).JoinEnum())
+    			foreach (Element item8 in 節足左2_接続.Select((Element e) => e.EnumEle()).JoinEnum())
     			{
     				yield return item8;
     			}
     		}
     		if (節足右2_接続 != null)
     		{
-    			foreach (Ele item9 in 節足右2_接続.Select((Ele e) => e.EnumEle()).JoinEnum())
+    			foreach (Element item9 in 節足右2_接続.Select((Element e) => e.EnumEle()).JoinEnum())
     			{
     				yield return item9;
     			}
     		}
     		if (節足左1_接続 != null)
     		{
-    			foreach (Ele item10 in 節足左1_接続.Select((Ele e) => e.EnumEle()).JoinEnum())
+    			foreach (Element item10 in 節足左1_接続.Select((Element e) => e.EnumEle()).JoinEnum())
     			{
     				yield return item10;
     			}
     		}
     		if (節足右1_接続 != null)
     		{
-    			foreach (Ele item11 in 節足右1_接続.Select((Ele e) => e.EnumEle()).JoinEnum())
+    			foreach (Element item11 in 節足右1_接続.Select((Element e) => e.EnumEle()).JoinEnum())
     			{
     				yield return item11;
     			}
     		}
     		if (触肢左_接続 != null)
     		{
-    			foreach (Ele item12 in 触肢左_接続.Select((Ele e) => e.EnumEle()).JoinEnum())
+    			foreach (Element item12 in 触肢左_接続.Select((Element e) => e.EnumEle()).JoinEnum())
     			{
     				yield return item12;
     			}
@@ -1661,7 +1661,7 @@ namespace SlaveMatrix
     		{
     			yield break;
     		}
-    		foreach (Ele item13 in 触肢右_接続.Select((Ele e) => e.EnumEle()).JoinEnum())
+    		foreach (Element item13 in 触肢右_接続.Select((Element e) => e.EnumEle()).JoinEnum())
     		{
     			yield return item13;
     		}

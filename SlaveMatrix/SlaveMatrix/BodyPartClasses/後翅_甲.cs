@@ -4,45 +4,45 @@ namespace SlaveMatrix
 {
     public class 後翅_甲 : 後翅
     {
-    	public Par X0Y0_後翅_後翅根_後翅;
+    	public ShapePart X0Y0_後翅_後翅根_後翅;
 
-    	public Par X0Y0_後翅_後翅根_翅脈1;
+    	public ShapePart X0Y0_後翅_後翅根_翅脈1;
 
-    	public Par X0Y0_後翅_後翅根_翅脈2;
+    	public ShapePart X0Y0_後翅_後翅根_翅脈2;
 
-    	public Par X0Y0_後翅_後翅根_翅脈3;
+    	public ShapePart X0Y0_後翅_後翅根_翅脈3;
 
-    	public Par X0Y0_後翅_後翅根_翅脈4;
+    	public ShapePart X0Y0_後翅_後翅根_翅脈4;
 
-    	public Par X0Y0_後翅_後翅先_後翅;
+    	public ShapePart X0Y0_後翅_後翅先_後翅;
 
-    	public Par X0Y0_後翅_後翅先_翅脈1;
+    	public ShapePart X0Y0_後翅_後翅先_翅脈1;
 
-    	public Par X0Y0_後翅_後翅先_翅脈2;
+    	public ShapePart X0Y0_後翅_後翅先_翅脈2;
 
-    	public Par X0Y0_後翅_後翅先_翅脈3;
+    	public ShapePart X0Y0_後翅_後翅先_翅脈3;
 
-    	public Par X0Y0_後翅_後翅先_翅脈4;
+    	public ShapePart X0Y0_後翅_後翅先_翅脈4;
 
-    	public Par X0Y1_後翅_後翅根_後翅;
+    	public ShapePart X0Y1_後翅_後翅根_後翅;
 
-    	public Par X0Y1_後翅_後翅根_翅脈1;
+    	public ShapePart X0Y1_後翅_後翅根_翅脈1;
 
-    	public Par X0Y1_後翅_後翅根_翅脈2;
+    	public ShapePart X0Y1_後翅_後翅根_翅脈2;
 
-    	public Par X0Y1_後翅_後翅根_翅脈3;
+    	public ShapePart X0Y1_後翅_後翅根_翅脈3;
 
-    	public Par X0Y1_後翅_後翅根_翅脈4;
+    	public ShapePart X0Y1_後翅_後翅根_翅脈4;
 
-    	public Par X0Y1_後翅_後翅先_後翅;
+    	public ShapePart X0Y1_後翅_後翅先_後翅;
 
-    	public Par X0Y1_後翅_後翅先_翅脈1;
+    	public ShapePart X0Y1_後翅_後翅先_翅脈1;
 
-    	public Par X0Y1_後翅_後翅先_翅脈2;
+    	public ShapePart X0Y1_後翅_後翅先_翅脈2;
 
-    	public Par X0Y1_後翅_後翅先_翅脈3;
+    	public ShapePart X0Y1_後翅_後翅先_翅脈3;
 
-    	public Par X0Y1_後翅_後翅先_翅脈4;
+    	public ShapePart X0Y1_後翅_後翅先_翅脈4;
 
     	public ColorD 後翅_後翅根_後翅CD;
 
@@ -343,7 +343,7 @@ namespace SlaveMatrix
     			X0Y0_後翅_後翅先_後翅.SetAngleCont(num2 * -180.0 * num);
     			X0Y1_後翅_後翅根_後翅.SetAngleCont(num2 * -77.0 * num);
     			X0Y1_後翅_後翅先_後翅.SetAngleCont(num2 * -180.0 * num);
-    			foreach (Par item in Body.EnumAllPar())
+    			foreach (ShapePart item in Body.EnumAllPar())
     			{
     				item.SetSizeCont(0.35 + 0.65 * value);
     			}
@@ -353,24 +353,24 @@ namespace SlaveMatrix
     	public 後翅_甲(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 後翅_甲D e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif(Sta.肢左["後翅"][0]);
-    		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
-    		Pars pars = Body[0][0]["後翅"].ToPars();
-    		Pars pars2 = pars["後翅根"].ToPars();
+    		MorphVariant morphVariant = new MorphVariant(GlobalState.肢左["後翅"][0]);
+    		Body = new VariantGrid();
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
+    		PartGroup partGroup = Body[0][0]["後翅"].ToPars();
+    		PartGroup pars2 = partGroup["後翅根"].ToPars();
     		X0Y0_後翅_後翅根_後翅 = pars2["後翅"].ToPar();
     		X0Y0_後翅_後翅根_翅脈1 = pars2["翅脈1"].ToPar();
     		X0Y0_後翅_後翅根_翅脈2 = pars2["翅脈2"].ToPar();
     		X0Y0_後翅_後翅根_翅脈3 = pars2["翅脈3"].ToPar();
     		X0Y0_後翅_後翅根_翅脈4 = pars2["翅脈4"].ToPar();
-    		pars2 = pars["後翅先"].ToPars();
+    		pars2 = partGroup["後翅先"].ToPars();
     		X0Y0_後翅_後翅先_後翅 = pars2["後翅"].ToPar();
     		X0Y0_後翅_後翅先_翅脈1 = pars2["翅脈1"].ToPar();
     		X0Y0_後翅_後翅先_翅脈2 = pars2["翅脈2"].ToPar();
     		X0Y0_後翅_後翅先_翅脈3 = pars2["翅脈3"].ToPar();
     		X0Y0_後翅_後翅先_翅脈4 = pars2["翅脈4"].ToPar();
-    		Pars pars3 = Body[0][1]["後翅"].ToPars();
+    		PartGroup pars3 = Body[0][1]["後翅"].ToPars();
     		pars2 = pars3["後翅根"].ToPars();
     		X0Y1_後翅_後翅根_後翅 = pars2["後翅"].ToPar();
     		X0Y1_後翅_後翅根_翅脈1 = pars2["翅脈1"].ToPar();
@@ -496,17 +496,17 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		Col.Alpha(ref 体配色.甲1O, 128, out var ret);
-    		後翅_後翅根_後翅CD = new ColorD(ref Col.Black, ref ret);
-    		後翅_後翅根_翅脈1CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		後翅_後翅根_翅脈2CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		後翅_後翅根_翅脈3CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		後翅_後翅根_翅脈4CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		後翅_後翅先_後翅CD = new ColorD(ref Col.Black, ref 後翅_後翅根_後翅CD.c2);
-    		後翅_後翅先_翅脈1CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		後翅_後翅先_翅脈2CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		後翅_後翅先_翅脈3CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		後翅_後翅先_翅脈4CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
+    		ColorHelper.Alpha(ref 体配色.甲1O, 128, out var ret);
+    		後翅_後翅根_後翅CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		後翅_後翅根_翅脈1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		後翅_後翅根_翅脈2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		後翅_後翅根_翅脈3CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		後翅_後翅根_翅脈4CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		後翅_後翅先_後翅CD = new ColorD(ref ColorHelper.Black, ref 後翅_後翅根_後翅CD.c2);
+    		後翅_後翅先_翅脈1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		後翅_後翅先_翅脈2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		後翅_後翅先_翅脈3CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		後翅_後翅先_翅脈4CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
     	}
     }
 }

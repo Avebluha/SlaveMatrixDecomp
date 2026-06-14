@@ -5,7 +5,7 @@ using SlaveMatrix.GameClasses;
 namespace SlaveMatrix
 {
     [Serializable]
-    public class 頬瞼D : EleD
+    public class 頬瞼D : ElementData
     {
     	public bool 瞼左_瞼_表示 = true;
 
@@ -38,21 +38,21 @@ namespace SlaveMatrix
 
     	public 頬瞼D SetRandom()
     	{
-    		サイズY = RNG.XS.NextDouble();
-    		瞼左_睫毛1_表示 = RNG.XS.NextBool();
-    		瞼左_睫毛2_表示 = RNG.XS.NextBool();
-    		瞼右_睫毛1_表示 = RNG.XS.NextBool();
-    		瞼右_睫毛2_表示 = RNG.XS.NextBool();
-    		外線 = RNG.XS.NextDouble();
-    		瞼左_睫毛1_長さ = RNG.XS.NextDouble();
-    		瞼左_睫毛2_長さ = RNG.XS.NextDouble();
-    		瞼右_睫毛1_長さ = RNG.XS.NextDouble();
-    		瞼右_睫毛2_長さ = RNG.XS.NextDouble();
-    		傾き = RNG.XS.NextDouble();
+    		サイズY = Rng.XS.NextDouble();
+    		瞼左_睫毛1_表示 = Rng.XS.NextBool();
+    		瞼左_睫毛2_表示 = Rng.XS.NextBool();
+    		瞼右_睫毛1_表示 = Rng.XS.NextBool();
+    		瞼右_睫毛2_表示 = Rng.XS.NextBool();
+    		外線 = Rng.XS.NextDouble();
+    		瞼左_睫毛1_長さ = Rng.XS.NextDouble();
+    		瞼左_睫毛2_長さ = Rng.XS.NextDouble();
+    		瞼右_睫毛1_長さ = Rng.XS.NextDouble();
+    		瞼右_睫毛2_長さ = Rng.XS.NextDouble();
+    		傾き = Rng.XS.NextDouble();
     		return this;
     	}
 
-    	public override Ele GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
+    	public override Element GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
     	{
     		return new 頬瞼(DisUnit, 配色指定, 体配色, Med, this);
     	}

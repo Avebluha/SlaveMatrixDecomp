@@ -4,15 +4,15 @@ namespace SlaveMatrix
 {
     public class 舌_短 : 舌
     {
-    	public Par X0Y0_舌1;
+    	public ShapePart X0Y0_舌1;
 
-    	public Par X0Y0_舌2;
+    	public ShapePart X0Y0_舌2;
 
-    	public Par X0Y0_舌3;
+    	public ShapePart X0Y0_舌3;
 
-    	public Par X0Y0_舌4;
+    	public ShapePart X0Y0_舌4;
 
-    	public Par X0Y0_舌5;
+    	public ShapePart X0Y0_舌5;
 
     	public ColorD 舌1CD;
 
@@ -34,7 +34,7 @@ namespace SlaveMatrix
 
     	public ColorP X0Y0_舌5CP;
 
-    	public Par[] Pars;
+    	public ShapePart[] Pars;
 
     	private Vector2D[] mm;
 
@@ -174,18 +174,18 @@ namespace SlaveMatrix
     	public 舌_短(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 舌_短D e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif();
-    		dif.Tag = "短";
-    		dif.Add(new Pars(Sta.胴体["舌"][0][0]));
-    		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		X0Y0_舌1 = pars["舌1"].ToPar();
-    		X0Y0_舌2 = pars["舌2"].ToPar();
-    		X0Y0_舌3 = pars["舌3"].ToPar();
-    		X0Y0_舌4 = pars["舌4"].ToPar();
-    		X0Y0_舌5 = pars["舌5"].ToPar();
+    		MorphVariant morphVariant = new MorphVariant();
+    		morphVariant.Tag = "短";
+    		morphVariant.Add(new PartGroup(GlobalState.胴体["舌"][0][0]));
+    		Body = new VariantGrid();
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_舌1 = partGroup["舌1"].ToPar();
+    		X0Y0_舌2 = partGroup["舌2"].ToPar();
+    		X0Y0_舌3 = partGroup["舌3"].ToPar();
+    		X0Y0_舌4 = partGroup["舌4"].ToPar();
+    		X0Y0_舌5 = partGroup["舌5"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;
@@ -224,7 +224,7 @@ namespace SlaveMatrix
     		}
     		base.配色指定 = 配色指定;
     		配色(体配色);
-    		Pars = new Par[5] { X0Y0_舌1, X0Y0_舌2, X0Y0_舌3, X0Y0_舌4, X0Y0_舌5 };
+    		Pars = new ShapePart[5] { X0Y0_舌1, X0Y0_舌2, X0Y0_舌3, X0Y0_舌4, X0Y0_舌5 };
     		X0Y0_舌1CP = new ColorP(X0Y0_舌1, 舌1CD, DisUnit, abj: true);
     		X0Y0_舌2CP = new ColorP(X0Y0_舌2, 舌2CD, DisUnit, abj: true);
     		X0Y0_舌3CP = new ColorP(X0Y0_舌3, 舌3CD, DisUnit, abj: true);

@@ -4,11 +4,11 @@ namespace SlaveMatrix
 {
     public class 膣内精液_人 : 膣内精液
     {
-    	public Par X0Y0_精液;
+    	public ShapePart X0Y0_精液;
 
-    	public Par X0Y0_血液1;
+    	public ShapePart X0Y0_血液1;
 
-    	public Par X0Y0_血液2;
+    	public ShapePart X0Y0_血液2;
 
     	public ColorD 精液CD;
 
@@ -140,11 +140,11 @@ namespace SlaveMatrix
     	public 膣内精液_人(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 膣内精液_人D e)
     	{
     		ThisType = GetType();
-    		Body = new Difs(Sta.胴体["膣内精液"]);
-    		Pars pars = Body[0][0];
-    		X0Y0_精液 = pars["精液"].ToPar();
-    		X0Y0_血液1 = pars["血液1"].ToPar();
-    		X0Y0_血液2 = pars["血液2"].ToPar();
+    		Body = new VariantGrid(GlobalState.胴体["膣内精液"]);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_精液 = partGroup["精液"].ToPar();
+    		X0Y0_血液1 = partGroup["血液1"].ToPar();
+    		X0Y0_血液2 = partGroup["血液2"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;
@@ -204,8 +204,8 @@ namespace SlaveMatrix
     	private void 配色N0(BodyColorSet 体配色)
     	{
     		精液CD = new ColorD();
-    		血液1CD = new ColorD(ref Col.Empty, ref 体配色.血液O);
-    		血液2CD = new ColorD(ref Col.Empty, ref 体配色.血液O);
+    		血液1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.血液O);
+    		血液2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.血液O);
     	}
 
     	public void 精液配色(主人公配色 配色)

@@ -4,9 +4,9 @@ namespace SlaveMatrix
 {
     public class 背中_羽 : 背中
     {
-    	public Par X0Y0_羽毛1;
+    	public ShapePart X0Y0_羽毛1;
 
-    	public Par X0Y0_羽毛2;
+    	public ShapePart X0Y0_羽毛2;
 
     	public ColorD 羽毛1CD;
 
@@ -107,15 +107,15 @@ namespace SlaveMatrix
     	public 背中_羽(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 背中_羽D e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif();
-    		dif.Tag = "羽毛";
-    		dif.Add(new Pars(Sta.肢中["背中"][0][0]));
-    		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		X0Y0_羽毛1 = pars["羽毛1"].ToPar();
-    		X0Y0_羽毛2 = pars["羽毛2"].ToPar();
+    		MorphVariant morphVariant = new MorphVariant();
+    		morphVariant.Tag = "羽毛";
+    		morphVariant.Add(new PartGroup(GlobalState.肢中["背中"][0][0]));
+    		Body = new VariantGrid();
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_羽毛1 = partGroup["羽毛1"].ToPar();
+    		X0Y0_羽毛2 = partGroup["羽毛2"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;
@@ -193,20 +193,20 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		羽毛1CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		羽毛2CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
+    		羽毛1CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		羽毛2CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
     	}
 
     	private void 配色T0(BodyColorSet 体配色)
     	{
-    		羽毛1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		羽毛2CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
+    		羽毛1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		羽毛2CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
     	}
 
     	private void 配色T1(BodyColorSet 体配色)
     	{
-    		羽毛1CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		羽毛2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		羽毛1CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		羽毛2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
     	}
     }
 }

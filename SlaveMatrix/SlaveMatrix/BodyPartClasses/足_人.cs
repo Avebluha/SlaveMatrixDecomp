@@ -5,425 +5,425 @@ namespace SlaveMatrix
 {
     public class 足_人 : 足
     {
-    	public Par X0Y0_ヒール0_靴底;
+    	public ShapePart X0Y0_ヒール0_靴底;
 
-    	public Par X0Y0_サンダル0_靴底;
+    	public ShapePart X0Y0_サンダル0_靴底;
 
-    	public Par X0Y0_ナース0_靴底;
+    	public ShapePart X0Y0_ナース0_靴底;
 
-    	public Par X0Y0_ブーツ0_靴底;
+    	public ShapePart X0Y0_ブーツ0_靴底;
 
-    	public Par X0Y0_アーマ0_靴底;
+    	public ShapePart X0Y0_アーマ0_靴底;
 
-    	public Par X0Y0_足;
+    	public ShapePart X0Y0_足;
 
-    	public Par X0Y0_小指_小指1;
+    	public ShapePart X0Y0_小指_小指1;
 
-    	public Par X0Y0_小指_小指2;
+    	public ShapePart X0Y0_小指_小指2;
 
-    	public Par X0Y0_小指_小指3;
+    	public ShapePart X0Y0_小指_小指3;
 
-    	public Par X0Y0_薬指_水掻;
+    	public ShapePart X0Y0_薬指_水掻;
 
-    	public Par X0Y0_薬指_薬指1;
+    	public ShapePart X0Y0_薬指_薬指1;
 
-    	public Par X0Y0_薬指_薬指2;
+    	public ShapePart X0Y0_薬指_薬指2;
 
-    	public Par X0Y0_薬指_薬指3;
+    	public ShapePart X0Y0_薬指_薬指3;
 
-    	public Par X0Y0_中指_水掻;
+    	public ShapePart X0Y0_中指_水掻;
 
-    	public Par X0Y0_中指_中指1;
+    	public ShapePart X0Y0_中指_中指1;
 
-    	public Par X0Y0_中指_中指2;
+    	public ShapePart X0Y0_中指_中指2;
 
-    	public Par X0Y0_中指_中指3;
+    	public ShapePart X0Y0_中指_中指3;
 
-    	public Par X0Y0_人指_人指1;
+    	public ShapePart X0Y0_人指_人指1;
 
-    	public Par X0Y0_人指_人指2;
+    	public ShapePart X0Y0_人指_人指2;
 
-    	public Par X0Y0_人指_人指3;
+    	public ShapePart X0Y0_人指_人指3;
 
-    	public Par X0Y0_人指_水掻;
+    	public ShapePart X0Y0_人指_水掻;
 
-    	public Par X0Y0_親指_親指2;
+    	public ShapePart X0Y0_親指_親指2;
 
-    	public Par X0Y0_親指_親指3;
+    	public ShapePart X0Y0_親指_親指3;
 
-    	public Par X0Y0_親指_水掻;
+    	public ShapePart X0Y0_親指_水掻;
 
-    	public Par X0Y0_悪タトゥ_五芒星_円1;
+    	public ShapePart X0Y0_悪タトゥ_五芒星_円1;
 
-    	public Par X0Y0_悪タトゥ_五芒星_円2;
+    	public ShapePart X0Y0_悪タトゥ_五芒星_円2;
 
-    	public Par X0Y0_悪タトゥ_五芒星_星;
+    	public ShapePart X0Y0_悪タトゥ_五芒星_星;
 
-    	public Par X0Y0_悪タトゥ_五芒星_五角形;
+    	public ShapePart X0Y0_悪タトゥ_五芒星_五角形;
 
-    	public Par X0Y0_竜性_鱗1;
+    	public ShapePart X0Y0_竜性_鱗1;
 
-    	public Par X0Y0_竜性_鱗2;
+    	public ShapePart X0Y0_竜性_鱗2;
 
-    	public Par X0Y0_竜性_鱗3;
+    	public ShapePart X0Y0_竜性_鱗3;
 
-    	public Par X0Y0_竜性_鱗4;
+    	public ShapePart X0Y0_竜性_鱗4;
 
-    	public Par X0Y0_竜性_鱗5;
+    	public ShapePart X0Y0_竜性_鱗5;
 
-    	public Par X0Y0_パンスト_パンスト1;
+    	public ShapePart X0Y0_パンスト_パンスト1;
 
-    	public Par X0Y0_パンスト_パンスト2;
+    	public ShapePart X0Y0_パンスト_パンスト2;
 
-    	public Par X0Y0_ソックス_ソックス1;
+    	public ShapePart X0Y0_ソックス_ソックス1;
 
-    	public Par X0Y0_ソックス_ソックス2;
+    	public ShapePart X0Y0_ソックス_ソックス2;
 
-    	public Par X0Y0_ヒール1_バンプ;
+    	public ShapePart X0Y0_ヒール1_バンプ;
 
-    	public Par X0Y0_ヒール1_ストラップ_ストラップ;
+    	public ShapePart X0Y0_ヒール1_ストラップ_ストラップ;
 
-    	public Par X0Y0_ヒール1_ストラップ_金具1_金具1;
+    	public ShapePart X0Y0_ヒール1_ストラップ_金具1_金具1;
 
-    	public Par X0Y0_ヒール1_ストラップ_金具1_金具2;
+    	public ShapePart X0Y0_ヒール1_ストラップ_金具1_金具2;
 
-    	public Par X0Y0_ヒール1_ストラップ_金具1_金具3;
+    	public ShapePart X0Y0_ヒール1_ストラップ_金具1_金具3;
 
-    	public Par X0Y0_ヒール1_ストラップ_金具1_金具4;
+    	public ShapePart X0Y0_ヒール1_ストラップ_金具1_金具4;
 
-    	public Par X0Y0_ヒール1_ストラップ_金具2_金具1;
+    	public ShapePart X0Y0_ヒール1_ストラップ_金具2_金具1;
 
-    	public Par X0Y0_ヒール1_ストラップ_金具2_金具2;
+    	public ShapePart X0Y0_ヒール1_ストラップ_金具2_金具2;
 
-    	public Par X0Y0_ヒール1_ストラップ_金具2_金具3;
+    	public ShapePart X0Y0_ヒール1_ストラップ_金具2_金具3;
 
-    	public Par X0Y0_ヒール1_ストラップ_金具2_金具4;
+    	public ShapePart X0Y0_ヒール1_ストラップ_金具2_金具4;
 
-    	public Par X0Y0_ヒール1_ハイライト;
+    	public ShapePart X0Y0_ヒール1_ハイライト;
 
-    	public Par X0Y0_サンダル1_ストラップ3;
+    	public ShapePart X0Y0_サンダル1_ストラップ3;
 
-    	public Par X0Y0_サンダル1_ストラップ2;
+    	public ShapePart X0Y0_サンダル1_ストラップ2;
 
-    	public Par X0Y0_サンダル1_ストラップ4;
+    	public ShapePart X0Y0_サンダル1_ストラップ4;
 
-    	public Par X0Y0_サンダル1_ストラップ1;
+    	public ShapePart X0Y0_サンダル1_ストラップ1;
 
-    	public Par X0Y0_ナース1_ストラップ3_ストラップ;
+    	public ShapePart X0Y0_ナース1_ストラップ3_ストラップ;
 
-    	public Par X0Y0_ナース1_ストラップ3_縁1;
+    	public ShapePart X0Y0_ナース1_ストラップ3_縁1;
 
-    	public Par X0Y0_ナース1_ストラップ3_縁2;
+    	public ShapePart X0Y0_ナース1_ストラップ3_縁2;
 
-    	public Par X0Y0_ナース1_ストラップ2_ストラップ;
+    	public ShapePart X0Y0_ナース1_ストラップ2_ストラップ;
 
-    	public Par X0Y0_ナース1_ストラップ2_縁1;
+    	public ShapePart X0Y0_ナース1_ストラップ2_縁1;
 
-    	public Par X0Y0_ナース1_ストラップ2_縁2;
+    	public ShapePart X0Y0_ナース1_ストラップ2_縁2;
 
-    	public Par X0Y0_ナース1_ストラップ1_ストラップ;
+    	public ShapePart X0Y0_ナース1_ストラップ1_ストラップ;
 
-    	public Par X0Y0_ナース1_ストラップ1_縁1;
+    	public ShapePart X0Y0_ナース1_ストラップ1_縁1;
 
-    	public Par X0Y0_ナース1_ストラップ1_縁2;
+    	public ShapePart X0Y0_ナース1_ストラップ1_縁2;
 
-    	public Par X0Y0_ブーツ1_タン;
+    	public ShapePart X0Y0_ブーツ1_タン;
 
-    	public Par X0Y0_ブーツ1_バンプ_バンプ;
+    	public ShapePart X0Y0_ブーツ1_バンプ_バンプ;
 
-    	public Par X0Y0_ブーツ1_バンプ_縁_縁1;
+    	public ShapePart X0Y0_ブーツ1_バンプ_縁_縁1;
 
-    	public Par X0Y0_ブーツ1_バンプ_縁_縁2;
+    	public ShapePart X0Y0_ブーツ1_バンプ_縁_縁2;
 
-    	public Par X0Y0_ブーツ1_バンプ_縁_縁3;
+    	public ShapePart X0Y0_ブーツ1_バンプ_縁_縁3;
 
-    	public Par X0Y0_ブーツ1_バンプ_縁_縁4;
+    	public ShapePart X0Y0_ブーツ1_バンプ_縁_縁4;
 
-    	public Par X0Y0_ブーツ1_ハイライト;
+    	public ShapePart X0Y0_ブーツ1_ハイライト;
 
-    	public Par X0Y0_ブーツ1_柄;
+    	public ShapePart X0Y0_ブーツ1_柄;
 
-    	public Par X0Y0_ブーツ1_紐_紐1_紐下_金具上_金具;
+    	public ShapePart X0Y0_ブーツ1_紐_紐1_紐下_金具上_金具;
 
-    	public Par X0Y0_ブーツ1_紐_紐1_紐下_金具上_穴;
+    	public ShapePart X0Y0_ブーツ1_紐_紐1_紐下_金具上_穴;
 
-    	public Par X0Y0_ブーツ1_紐_紐1_紐下_紐;
+    	public ShapePart X0Y0_ブーツ1_紐_紐1_紐下_紐;
 
-    	public Par X0Y0_ブーツ1_紐_紐1_紐上_金具上_金具;
+    	public ShapePart X0Y0_ブーツ1_紐_紐1_紐上_金具上_金具;
 
-    	public Par X0Y0_ブーツ1_紐_紐1_紐上_金具上_穴;
+    	public ShapePart X0Y0_ブーツ1_紐_紐1_紐上_金具上_穴;
 
-    	public Par X0Y0_ブーツ1_紐_紐1_紐上_紐;
+    	public ShapePart X0Y0_ブーツ1_紐_紐1_紐上_紐;
 
-    	public Par X0Y0_ブーツ1_紐_紐2_紐下_金具上_金具;
+    	public ShapePart X0Y0_ブーツ1_紐_紐2_紐下_金具上_金具;
 
-    	public Par X0Y0_ブーツ1_紐_紐2_紐下_金具上_穴;
+    	public ShapePart X0Y0_ブーツ1_紐_紐2_紐下_金具上_穴;
 
-    	public Par X0Y0_ブーツ1_紐_紐2_紐下_紐;
+    	public ShapePart X0Y0_ブーツ1_紐_紐2_紐下_紐;
 
-    	public Par X0Y0_ブーツ1_紐_紐2_紐上_金具上_金具;
+    	public ShapePart X0Y0_ブーツ1_紐_紐2_紐上_金具上_金具;
 
-    	public Par X0Y0_ブーツ1_紐_紐2_紐上_金具上_穴;
+    	public ShapePart X0Y0_ブーツ1_紐_紐2_紐上_金具上_穴;
 
-    	public Par X0Y0_ブーツ1_紐_紐2_紐上_紐;
+    	public ShapePart X0Y0_ブーツ1_紐_紐2_紐上_紐;
 
-    	public Par X0Y0_ブーツ1_紐_紐3_紐下_金具上_金具;
+    	public ShapePart X0Y0_ブーツ1_紐_紐3_紐下_金具上_金具;
 
-    	public Par X0Y0_ブーツ1_紐_紐3_紐下_金具上_穴;
+    	public ShapePart X0Y0_ブーツ1_紐_紐3_紐下_金具上_穴;
 
-    	public Par X0Y0_ブーツ1_紐_紐3_紐下_紐;
+    	public ShapePart X0Y0_ブーツ1_紐_紐3_紐下_紐;
 
-    	public Par X0Y0_ブーツ1_紐_紐3_紐上_金具上_金具;
+    	public ShapePart X0Y0_ブーツ1_紐_紐3_紐上_金具上_金具;
 
-    	public Par X0Y0_ブーツ1_紐_紐3_紐上_金具上_穴;
+    	public ShapePart X0Y0_ブーツ1_紐_紐3_紐上_金具上_穴;
 
-    	public Par X0Y0_ブーツ1_紐_紐3_紐上_紐;
+    	public ShapePart X0Y0_ブーツ1_紐_紐3_紐上_紐;
 
-    	public Par X0Y0_ブーツ1_紐_紐4_紐下_金具上_金具;
+    	public ShapePart X0Y0_ブーツ1_紐_紐4_紐下_金具上_金具;
 
-    	public Par X0Y0_ブーツ1_紐_紐4_紐下_金具上_穴;
+    	public ShapePart X0Y0_ブーツ1_紐_紐4_紐下_金具上_穴;
 
-    	public Par X0Y0_ブーツ1_紐_紐4_紐下_紐;
+    	public ShapePart X0Y0_ブーツ1_紐_紐4_紐下_紐;
 
-    	public Par X0Y0_ブーツ1_紐_紐4_紐上_金具上_金具;
+    	public ShapePart X0Y0_ブーツ1_紐_紐4_紐上_金具上_金具;
 
-    	public Par X0Y0_ブーツ1_紐_紐4_紐上_金具上_穴;
+    	public ShapePart X0Y0_ブーツ1_紐_紐4_紐上_金具上_穴;
 
-    	public Par X0Y0_ブーツ1_紐_紐4_紐上_紐;
+    	public ShapePart X0Y0_ブーツ1_紐_紐4_紐上_紐;
 
-    	public Par X0Y0_ブーツ1_紐_紐5_金具1_金具;
+    	public ShapePart X0Y0_ブーツ1_紐_紐5_金具1_金具;
 
-    	public Par X0Y0_ブーツ1_紐_紐5_金具1_穴;
+    	public ShapePart X0Y0_ブーツ1_紐_紐5_金具1_穴;
 
-    	public Par X0Y0_ブーツ1_紐_紐5_金具2_金具;
+    	public ShapePart X0Y0_ブーツ1_紐_紐5_金具2_金具;
 
-    	public Par X0Y0_ブーツ1_紐_紐5_金具2_穴;
+    	public ShapePart X0Y0_ブーツ1_紐_紐5_金具2_穴;
 
-    	public Par X0Y0_ブーツ1_紐_紐5_紐;
+    	public ShapePart X0Y0_ブーツ1_紐_紐5_紐;
 
-    	public Par X0Y0_アーマ1_鉄靴1;
+    	public ShapePart X0Y0_アーマ1_鉄靴1;
 
-    	public Par X0Y0_アーマ1_鉄靴2;
+    	public ShapePart X0Y0_アーマ1_鉄靴2;
 
-    	public Par X0Y0_アーマ1_鉄靴3;
+    	public ShapePart X0Y0_アーマ1_鉄靴3;
 
-    	public Par X0Y1_ヒール0_ヒール;
+    	public ShapePart X0Y1_ヒール0_ヒール;
 
-    	public Par X0Y1_ヒール0_靴底;
+    	public ShapePart X0Y1_ヒール0_靴底;
 
-    	public Par X0Y1_サンダル0_踵;
+    	public ShapePart X0Y1_サンダル0_踵;
 
-    	public Par X0Y1_サンダル0_靴底;
+    	public ShapePart X0Y1_サンダル0_靴底;
 
-    	public Par X0Y1_ナース0_踵;
+    	public ShapePart X0Y1_ナース0_踵;
 
-    	public Par X0Y1_ナース0_靴底;
+    	public ShapePart X0Y1_ナース0_靴底;
 
-    	public Par X0Y1_ブーツ0_ヒール;
+    	public ShapePart X0Y1_ブーツ0_ヒール;
 
-    	public Par X0Y1_ブーツ0_靴底;
+    	public ShapePart X0Y1_ブーツ0_靴底;
 
-    	public Par X0Y1_アーマ0_踵;
+    	public ShapePart X0Y1_アーマ0_踵;
 
-    	public Par X0Y1_アーマ0_靴底;
+    	public ShapePart X0Y1_アーマ0_靴底;
 
-    	public Par X0Y1_足;
+    	public ShapePart X0Y1_足;
 
-    	public Par X0Y1_小指_小指1;
+    	public ShapePart X0Y1_小指_小指1;
 
-    	public Par X0Y1_小指_小指2;
+    	public ShapePart X0Y1_小指_小指2;
 
-    	public Par X0Y1_小指_小指3;
+    	public ShapePart X0Y1_小指_小指3;
 
-    	public Par X0Y1_薬指_水掻;
+    	public ShapePart X0Y1_薬指_水掻;
 
-    	public Par X0Y1_薬指_薬指1;
+    	public ShapePart X0Y1_薬指_薬指1;
 
-    	public Par X0Y1_薬指_薬指2;
+    	public ShapePart X0Y1_薬指_薬指2;
 
-    	public Par X0Y1_薬指_薬指3;
+    	public ShapePart X0Y1_薬指_薬指3;
 
-    	public Par X0Y1_中指_水掻;
+    	public ShapePart X0Y1_中指_水掻;
 
-    	public Par X0Y1_中指_中指1;
+    	public ShapePart X0Y1_中指_中指1;
 
-    	public Par X0Y1_中指_中指2;
+    	public ShapePart X0Y1_中指_中指2;
 
-    	public Par X0Y1_中指_中指3;
+    	public ShapePart X0Y1_中指_中指3;
 
-    	public Par X0Y1_人指_水掻;
+    	public ShapePart X0Y1_人指_水掻;
 
-    	public Par X0Y1_人指_人指1;
+    	public ShapePart X0Y1_人指_人指1;
 
-    	public Par X0Y1_人指_人指2;
+    	public ShapePart X0Y1_人指_人指2;
 
-    	public Par X0Y1_人指_人指3;
+    	public ShapePart X0Y1_人指_人指3;
 
-    	public Par X0Y1_親指_水掻;
+    	public ShapePart X0Y1_親指_水掻;
 
-    	public Par X0Y1_親指_親指2;
+    	public ShapePart X0Y1_親指_親指2;
 
-    	public Par X0Y1_親指_親指3;
+    	public ShapePart X0Y1_親指_親指3;
 
-    	public Par X0Y1_悪タトゥ_五芒星_円1;
+    	public ShapePart X0Y1_悪タトゥ_五芒星_円1;
 
-    	public Par X0Y1_悪タトゥ_五芒星_円2;
+    	public ShapePart X0Y1_悪タトゥ_五芒星_円2;
 
-    	public Par X0Y1_悪タトゥ_五芒星_星;
+    	public ShapePart X0Y1_悪タトゥ_五芒星_星;
 
-    	public Par X0Y1_悪タトゥ_五芒星_五角形;
+    	public ShapePart X0Y1_悪タトゥ_五芒星_五角形;
 
-    	public Par X0Y1_竜性_鱗1;
+    	public ShapePart X0Y1_竜性_鱗1;
 
-    	public Par X0Y1_竜性_鱗2;
+    	public ShapePart X0Y1_竜性_鱗2;
 
-    	public Par X0Y1_竜性_鱗3;
+    	public ShapePart X0Y1_竜性_鱗3;
 
-    	public Par X0Y1_竜性_鱗4;
+    	public ShapePart X0Y1_竜性_鱗4;
 
-    	public Par X0Y1_竜性_鱗5;
+    	public ShapePart X0Y1_竜性_鱗5;
 
-    	public Par X0Y1_パンスト_パンスト1;
+    	public ShapePart X0Y1_パンスト_パンスト1;
 
-    	public Par X0Y1_パンスト_パンスト2;
+    	public ShapePart X0Y1_パンスト_パンスト2;
 
-    	public Par X0Y1_ソックス_ソックス1;
+    	public ShapePart X0Y1_ソックス_ソックス1;
 
-    	public Par X0Y1_ソックス_ソックス2;
+    	public ShapePart X0Y1_ソックス_ソックス2;
 
-    	public Par X0Y1_ヒール1_バンプ;
+    	public ShapePart X0Y1_ヒール1_バンプ;
 
-    	public Par X0Y1_ヒール1_ストラップ_ストラップ;
+    	public ShapePart X0Y1_ヒール1_ストラップ_ストラップ;
 
-    	public Par X0Y1_ヒール1_ストラップ_金具1_金具1;
+    	public ShapePart X0Y1_ヒール1_ストラップ_金具1_金具1;
 
-    	public Par X0Y1_ヒール1_ストラップ_金具1_金具2;
+    	public ShapePart X0Y1_ヒール1_ストラップ_金具1_金具2;
 
-    	public Par X0Y1_ヒール1_ストラップ_金具1_金具3;
+    	public ShapePart X0Y1_ヒール1_ストラップ_金具1_金具3;
 
-    	public Par X0Y1_ヒール1_ストラップ_金具1_金具4;
+    	public ShapePart X0Y1_ヒール1_ストラップ_金具1_金具4;
 
-    	public Par X0Y1_ヒール1_ストラップ_金具2_金具1;
+    	public ShapePart X0Y1_ヒール1_ストラップ_金具2_金具1;
 
-    	public Par X0Y1_ヒール1_ストラップ_金具2_金具2;
+    	public ShapePart X0Y1_ヒール1_ストラップ_金具2_金具2;
 
-    	public Par X0Y1_ヒール1_ストラップ_金具2_金具3;
+    	public ShapePart X0Y1_ヒール1_ストラップ_金具2_金具3;
 
-    	public Par X0Y1_ヒール1_ストラップ_金具2_金具4;
+    	public ShapePart X0Y1_ヒール1_ストラップ_金具2_金具4;
 
-    	public Par X0Y1_ヒール1_ハイライト;
+    	public ShapePart X0Y1_ヒール1_ハイライト;
 
-    	public Par X0Y1_サンダル1_ストラップ3;
+    	public ShapePart X0Y1_サンダル1_ストラップ3;
 
-    	public Par X0Y1_サンダル1_ストラップ2;
+    	public ShapePart X0Y1_サンダル1_ストラップ2;
 
-    	public Par X0Y1_サンダル1_ストラップ4;
+    	public ShapePart X0Y1_サンダル1_ストラップ4;
 
-    	public Par X0Y1_サンダル1_ストラップ1;
+    	public ShapePart X0Y1_サンダル1_ストラップ1;
 
-    	public Par X0Y1_ナース1_ストラップ4_ストラップ;
+    	public ShapePart X0Y1_ナース1_ストラップ4_ストラップ;
 
-    	public Par X0Y1_ナース1_ストラップ4_縁1;
+    	public ShapePart X0Y1_ナース1_ストラップ4_縁1;
 
-    	public Par X0Y1_ナース1_ストラップ4_縁2;
+    	public ShapePart X0Y1_ナース1_ストラップ4_縁2;
 
-    	public Par X0Y1_ナース1_ストラップ3_ストラップ;
+    	public ShapePart X0Y1_ナース1_ストラップ3_ストラップ;
 
-    	public Par X0Y1_ナース1_ストラップ3_縁1;
+    	public ShapePart X0Y1_ナース1_ストラップ3_縁1;
 
-    	public Par X0Y1_ナース1_ストラップ3_縁2;
+    	public ShapePart X0Y1_ナース1_ストラップ3_縁2;
 
-    	public Par X0Y1_ナース1_ストラップ2_ストラップ;
+    	public ShapePart X0Y1_ナース1_ストラップ2_ストラップ;
 
-    	public Par X0Y1_ナース1_ストラップ2_縁1;
+    	public ShapePart X0Y1_ナース1_ストラップ2_縁1;
 
-    	public Par X0Y1_ナース1_ストラップ2_縁2;
+    	public ShapePart X0Y1_ナース1_ストラップ2_縁2;
 
-    	public Par X0Y1_ナース1_ストラップ1_ストラップ;
+    	public ShapePart X0Y1_ナース1_ストラップ1_ストラップ;
 
-    	public Par X0Y1_ナース1_ストラップ1_縁1;
+    	public ShapePart X0Y1_ナース1_ストラップ1_縁1;
 
-    	public Par X0Y1_ナース1_ストラップ1_縁2;
+    	public ShapePart X0Y1_ナース1_ストラップ1_縁2;
 
-    	public Par X0Y1_ブーツ1_タン;
+    	public ShapePart X0Y1_ブーツ1_タン;
 
-    	public Par X0Y1_ブーツ1_バンプ_バンプ;
+    	public ShapePart X0Y1_ブーツ1_バンプ_バンプ;
 
-    	public Par X0Y1_ブーツ1_バンプ_縁_縁1;
+    	public ShapePart X0Y1_ブーツ1_バンプ_縁_縁1;
 
-    	public Par X0Y1_ブーツ1_バンプ_縁_縁2;
+    	public ShapePart X0Y1_ブーツ1_バンプ_縁_縁2;
 
-    	public Par X0Y1_ブーツ1_バンプ_縁_縁3;
+    	public ShapePart X0Y1_ブーツ1_バンプ_縁_縁3;
 
-    	public Par X0Y1_ブーツ1_バンプ_縁_縁4;
+    	public ShapePart X0Y1_ブーツ1_バンプ_縁_縁4;
 
-    	public Par X0Y1_ブーツ1_ハイライト;
+    	public ShapePart X0Y1_ブーツ1_ハイライト;
 
-    	public Par X0Y1_ブーツ1_柄;
+    	public ShapePart X0Y1_ブーツ1_柄;
 
-    	public Par X0Y1_ブーツ1_紐_紐1_紐下_金具上_金具;
+    	public ShapePart X0Y1_ブーツ1_紐_紐1_紐下_金具上_金具;
 
-    	public Par X0Y1_ブーツ1_紐_紐1_紐下_金具上_穴;
+    	public ShapePart X0Y1_ブーツ1_紐_紐1_紐下_金具上_穴;
 
-    	public Par X0Y1_ブーツ1_紐_紐1_紐下_紐;
+    	public ShapePart X0Y1_ブーツ1_紐_紐1_紐下_紐;
 
-    	public Par X0Y1_ブーツ1_紐_紐1_紐上_金具上_金具;
+    	public ShapePart X0Y1_ブーツ1_紐_紐1_紐上_金具上_金具;
 
-    	public Par X0Y1_ブーツ1_紐_紐1_紐上_金具上_穴;
+    	public ShapePart X0Y1_ブーツ1_紐_紐1_紐上_金具上_穴;
 
-    	public Par X0Y1_ブーツ1_紐_紐1_紐上_紐;
+    	public ShapePart X0Y1_ブーツ1_紐_紐1_紐上_紐;
 
-    	public Par X0Y1_ブーツ1_紐_紐2_紐下_金具上_金具;
+    	public ShapePart X0Y1_ブーツ1_紐_紐2_紐下_金具上_金具;
 
-    	public Par X0Y1_ブーツ1_紐_紐2_紐下_金具上_穴;
+    	public ShapePart X0Y1_ブーツ1_紐_紐2_紐下_金具上_穴;
 
-    	public Par X0Y1_ブーツ1_紐_紐2_紐下_紐;
+    	public ShapePart X0Y1_ブーツ1_紐_紐2_紐下_紐;
 
-    	public Par X0Y1_ブーツ1_紐_紐2_紐上_金具上_金具;
+    	public ShapePart X0Y1_ブーツ1_紐_紐2_紐上_金具上_金具;
 
-    	public Par X0Y1_ブーツ1_紐_紐2_紐上_金具上_穴;
+    	public ShapePart X0Y1_ブーツ1_紐_紐2_紐上_金具上_穴;
 
-    	public Par X0Y1_ブーツ1_紐_紐2_紐上_紐;
+    	public ShapePart X0Y1_ブーツ1_紐_紐2_紐上_紐;
 
-    	public Par X0Y1_ブーツ1_紐_紐3_紐下_金具上_金具;
+    	public ShapePart X0Y1_ブーツ1_紐_紐3_紐下_金具上_金具;
 
-    	public Par X0Y1_ブーツ1_紐_紐3_紐下_金具上_穴;
+    	public ShapePart X0Y1_ブーツ1_紐_紐3_紐下_金具上_穴;
 
-    	public Par X0Y1_ブーツ1_紐_紐3_紐下_紐;
+    	public ShapePart X0Y1_ブーツ1_紐_紐3_紐下_紐;
 
-    	public Par X0Y1_ブーツ1_紐_紐3_紐上_金具上_金具;
+    	public ShapePart X0Y1_ブーツ1_紐_紐3_紐上_金具上_金具;
 
-    	public Par X0Y1_ブーツ1_紐_紐3_紐上_金具上_穴;
+    	public ShapePart X0Y1_ブーツ1_紐_紐3_紐上_金具上_穴;
 
-    	public Par X0Y1_ブーツ1_紐_紐3_紐上_紐;
+    	public ShapePart X0Y1_ブーツ1_紐_紐3_紐上_紐;
 
-    	public Par X0Y1_ブーツ1_紐_紐4_紐下_金具上_金具;
+    	public ShapePart X0Y1_ブーツ1_紐_紐4_紐下_金具上_金具;
 
-    	public Par X0Y1_ブーツ1_紐_紐4_紐下_金具上_穴;
+    	public ShapePart X0Y1_ブーツ1_紐_紐4_紐下_金具上_穴;
 
-    	public Par X0Y1_ブーツ1_紐_紐4_紐下_紐;
+    	public ShapePart X0Y1_ブーツ1_紐_紐4_紐下_紐;
 
-    	public Par X0Y1_ブーツ1_紐_紐4_紐上_金具上_金具;
+    	public ShapePart X0Y1_ブーツ1_紐_紐4_紐上_金具上_金具;
 
-    	public Par X0Y1_ブーツ1_紐_紐4_紐上_金具上_穴;
+    	public ShapePart X0Y1_ブーツ1_紐_紐4_紐上_金具上_穴;
 
-    	public Par X0Y1_ブーツ1_紐_紐4_紐上_紐;
+    	public ShapePart X0Y1_ブーツ1_紐_紐4_紐上_紐;
 
-    	public Par X0Y1_ブーツ1_紐_紐5_金具1_金具;
+    	public ShapePart X0Y1_ブーツ1_紐_紐5_金具1_金具;
 
-    	public Par X0Y1_ブーツ1_紐_紐5_金具1_穴;
+    	public ShapePart X0Y1_ブーツ1_紐_紐5_金具1_穴;
 
-    	public Par X0Y1_ブーツ1_紐_紐5_金具2_金具;
+    	public ShapePart X0Y1_ブーツ1_紐_紐5_金具2_金具;
 
-    	public Par X0Y1_ブーツ1_紐_紐5_金具2_穴;
+    	public ShapePart X0Y1_ブーツ1_紐_紐5_金具2_穴;
 
-    	public Par X0Y1_ブーツ1_紐_紐5_紐;
+    	public ShapePart X0Y1_ブーツ1_紐_紐5_紐;
 
-    	public Par X0Y1_アーマ1_鉄靴1;
+    	public ShapePart X0Y1_アーマ1_鉄靴1;
 
-    	public Par X0Y1_アーマ1_鉄靴2;
+    	public ShapePart X0Y1_アーマ1_鉄靴2;
 
-    	public Par X0Y1_アーマ1_鉄靴3;
+    	public ShapePart X0Y1_アーマ1_鉄靴3;
 
     	public ColorD ヒール0_ヒールCD;
 
@@ -2968,46 +2968,46 @@ namespace SlaveMatrix
     		{
     			double num = 1.7;
     			int num2 = (右 ? 1 : 0);
-    			List<Out> oP = X0Y0_人指_人指3.GetOP();
-    			Out @out = oP[(int)((double)(oP.Count - num2) * 0.5)];
-    			int index = (int)((double)@out.ps.Count * 0.5);
-    			@out.ps[index] += (@out.ps[index] - X0Y0_人指_人指3.GetBasePointBase()) * num * value;
-    			List<Out> oP2 = X0Y0_中指_中指3.GetOP();
-    			@out = oP2[(int)((double)(oP2.Count - num2) * 0.5)];
-    			index = (int)((double)@out.ps.Count * 0.5);
-    			@out.ps[index] += (@out.ps[index] - X0Y0_中指_中指3.GetBasePointBase()) * num * value;
-    			List<Out> oP3 = X0Y0_薬指_薬指3.GetOP();
-    			@out = oP3[(int)((double)(oP3.Count - num2) * 0.5)];
-    			index = (int)((double)@out.ps.Count * 0.5);
-    			@out.ps[index] += (@out.ps[index] - X0Y0_薬指_薬指3.GetBasePointBase()) * num * value;
-    			List<Out> oP4 = X0Y0_小指_小指3.GetOP();
-    			@out = oP4[(int)((double)(oP4.Count - num2) * 0.5)];
-    			index = (int)((double)@out.ps.Count * 0.5);
-    			@out.ps[index] += (@out.ps[index] - X0Y0_小指_小指3.GetBasePointBase()) * num * value;
-    			List<Out> oP5 = X0Y0_親指_親指3.GetOP();
-    			@out = oP5[(int)((double)(oP5.Count - num2) * 0.5)];
-    			index = (int)((double)@out.ps.Count * 0.5);
-    			@out.ps[index] += (@out.ps[index] - X0Y0_親指_親指3.GetBasePointBase()) * num * 0.65 * value;
-    			List<Out> oP6 = X0Y1_人指_人指3.GetOP();
-    			@out = oP6[(int)((double)(oP6.Count - num2) * 0.5)];
-    			index = (int)((double)@out.ps.Count * 0.5);
-    			@out.ps[index] += (@out.ps[index] - X0Y1_人指_人指3.GetBasePointBase()) * num * value;
-    			List<Out> oP7 = X0Y1_中指_中指3.GetOP();
-    			@out = oP7[(int)((double)(oP7.Count - num2) * 0.5)];
-    			index = (int)((double)@out.ps.Count * 0.5);
-    			@out.ps[index] += (@out.ps[index] - X0Y1_中指_中指3.GetBasePointBase()) * num * value;
-    			List<Out> oP8 = X0Y1_薬指_薬指3.GetOP();
-    			@out = oP8[(int)((double)(oP8.Count - num2) * 0.5)];
-    			index = (int)((double)@out.ps.Count * 0.5);
-    			@out.ps[index] += (@out.ps[index] - X0Y1_薬指_薬指3.GetBasePointBase()) * num * value;
-    			List<Out> oP9 = X0Y1_小指_小指3.GetOP();
-    			@out = oP9[(int)((double)(oP9.Count - num2) * 0.5)];
-    			index = (int)((double)@out.ps.Count * 0.5);
-    			@out.ps[index] += (@out.ps[index] - X0Y1_小指_小指3.GetBasePointBase()) * num * value;
-    			List<Out> oP10 = X0Y1_親指_親指3.GetOP();
-    			@out = oP10[(int)((double)(oP10.Count - num2) * 0.5)];
-    			index = (int)((double)@out.ps.Count * 0.5);
-    			@out.ps[index] += (@out.ps[index] - X0Y1_親指_親指3.GetBasePointBase()) * num * 0.65 * value;
+    			List<CurveOutline> oP = X0Y0_人指_人指3.GetOP();
+    			CurveOutline curveOutline = oP[(int)((double)(oP.Count - num2) * 0.5)];
+    			int index = (int)((double)curveOutline.ps.Count * 0.5);
+    			curveOutline.ps[index] += (curveOutline.ps[index] - X0Y0_人指_人指3.GetBasePointBase()) * num * value;
+    			List<CurveOutline> oP2 = X0Y0_中指_中指3.GetOP();
+    			curveOutline = oP2[(int)((double)(oP2.Count - num2) * 0.5)];
+    			index = (int)((double)curveOutline.ps.Count * 0.5);
+    			curveOutline.ps[index] += (curveOutline.ps[index] - X0Y0_中指_中指3.GetBasePointBase()) * num * value;
+    			List<CurveOutline> oP3 = X0Y0_薬指_薬指3.GetOP();
+    			curveOutline = oP3[(int)((double)(oP3.Count - num2) * 0.5)];
+    			index = (int)((double)curveOutline.ps.Count * 0.5);
+    			curveOutline.ps[index] += (curveOutline.ps[index] - X0Y0_薬指_薬指3.GetBasePointBase()) * num * value;
+    			List<CurveOutline> oP4 = X0Y0_小指_小指3.GetOP();
+    			curveOutline = oP4[(int)((double)(oP4.Count - num2) * 0.5)];
+    			index = (int)((double)curveOutline.ps.Count * 0.5);
+    			curveOutline.ps[index] += (curveOutline.ps[index] - X0Y0_小指_小指3.GetBasePointBase()) * num * value;
+    			List<CurveOutline> oP5 = X0Y0_親指_親指3.GetOP();
+    			curveOutline = oP5[(int)((double)(oP5.Count - num2) * 0.5)];
+    			index = (int)((double)curveOutline.ps.Count * 0.5);
+    			curveOutline.ps[index] += (curveOutline.ps[index] - X0Y0_親指_親指3.GetBasePointBase()) * num * 0.65 * value;
+    			List<CurveOutline> oP6 = X0Y1_人指_人指3.GetOP();
+    			curveOutline = oP6[(int)((double)(oP6.Count - num2) * 0.5)];
+    			index = (int)((double)curveOutline.ps.Count * 0.5);
+    			curveOutline.ps[index] += (curveOutline.ps[index] - X0Y1_人指_人指3.GetBasePointBase()) * num * value;
+    			List<CurveOutline> oP7 = X0Y1_中指_中指3.GetOP();
+    			curveOutline = oP7[(int)((double)(oP7.Count - num2) * 0.5)];
+    			index = (int)((double)curveOutline.ps.Count * 0.5);
+    			curveOutline.ps[index] += (curveOutline.ps[index] - X0Y1_中指_中指3.GetBasePointBase()) * num * value;
+    			List<CurveOutline> oP8 = X0Y1_薬指_薬指3.GetOP();
+    			curveOutline = oP8[(int)((double)(oP8.Count - num2) * 0.5)];
+    			index = (int)((double)curveOutline.ps.Count * 0.5);
+    			curveOutline.ps[index] += (curveOutline.ps[index] - X0Y1_薬指_薬指3.GetBasePointBase()) * num * value;
+    			List<CurveOutline> oP9 = X0Y1_小指_小指3.GetOP();
+    			curveOutline = oP9[(int)((double)(oP9.Count - num2) * 0.5)];
+    			index = (int)((double)curveOutline.ps.Count * 0.5);
+    			curveOutline.ps[index] += (curveOutline.ps[index] - X0Y1_小指_小指3.GetBasePointBase()) * num * value;
+    			List<CurveOutline> oP10 = X0Y1_親指_親指3.GetOP();
+    			curveOutline = oP10[(int)((double)(oP10.Count - num2) * 0.5)];
+    			index = (int)((double)curveOutline.ps.Count * 0.5);
+    			curveOutline.ps[index] += (curveOutline.ps[index] - X0Y1_親指_親指3.GetBasePointBase()) * num * 0.65 * value;
     		}
     	}
 
@@ -3172,65 +3172,65 @@ namespace SlaveMatrix
     	public 足_人(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 足_人D e)
     	{
     		ThisType = GetType();
-    		Body = new Difs(Sta.脚左["足"]);
-    		Pars pars = Body[0][0];
-    		Pars pars2 = pars["ヒール0"].ToPars();
+    		Body = new VariantGrid(GlobalState.脚左["足"]);
+    		PartGroup partGroup = Body[0][0];
+    		PartGroup pars2 = partGroup["ヒール0"].ToPars();
     		X0Y0_ヒール0_靴底 = pars2["靴底"].ToPar();
-    		pars2 = pars["サンダル0"].ToPars();
+    		pars2 = partGroup["サンダル0"].ToPars();
     		X0Y0_サンダル0_靴底 = pars2["靴底"].ToPar();
-    		pars2 = pars["ナース0"].ToPars();
+    		pars2 = partGroup["ナース0"].ToPars();
     		X0Y0_ナース0_靴底 = pars2["靴底"].ToPar();
-    		pars2 = pars["ブーツ0"].ToPars();
+    		pars2 = partGroup["ブーツ0"].ToPars();
     		X0Y0_ブーツ0_靴底 = pars2["靴底"].ToPar();
-    		pars2 = pars["アーマ0"].ToPars();
+    		pars2 = partGroup["アーマ0"].ToPars();
     		X0Y0_アーマ0_靴底 = pars2["靴底"].ToPar();
-    		X0Y0_足 = pars["足"].ToPar();
-    		pars2 = pars["小指"].ToPars();
+    		X0Y0_足 = partGroup["足"].ToPar();
+    		pars2 = partGroup["小指"].ToPars();
     		X0Y0_小指_小指1 = pars2["小指1"].ToPar();
     		X0Y0_小指_小指2 = pars2["小指2"].ToPar();
     		X0Y0_小指_小指3 = pars2["小指3"].ToPar();
-    		pars2 = pars["薬指"].ToPars();
+    		pars2 = partGroup["薬指"].ToPars();
     		X0Y0_薬指_水掻 = pars2["水掻"].ToPar();
     		X0Y0_薬指_薬指1 = pars2["薬指1"].ToPar();
     		X0Y0_薬指_薬指2 = pars2["薬指2"].ToPar();
     		X0Y0_薬指_薬指3 = pars2["薬指3"].ToPar();
-    		pars2 = pars["中指"].ToPars();
+    		pars2 = partGroup["中指"].ToPars();
     		X0Y0_中指_水掻 = pars2["水掻"].ToPar();
     		X0Y0_中指_中指1 = pars2["中指1"].ToPar();
     		X0Y0_中指_中指2 = pars2["中指2"].ToPar();
     		X0Y0_中指_中指3 = pars2["中指3"].ToPar();
-    		pars2 = pars["人指"].ToPars();
+    		pars2 = partGroup["人指"].ToPars();
     		X0Y0_人指_人指1 = pars2["人指1"].ToPar();
     		X0Y0_人指_人指2 = pars2["人指2"].ToPar();
     		X0Y0_人指_人指3 = pars2["人指3"].ToPar();
     		X0Y0_人指_水掻 = pars2["水掻"].ToPar();
-    		pars2 = pars["親指"].ToPars();
+    		pars2 = partGroup["親指"].ToPars();
     		X0Y0_親指_親指2 = pars2["親指2"].ToPar();
     		X0Y0_親指_親指3 = pars2["親指3"].ToPar();
     		X0Y0_親指_水掻 = pars2["水掻"].ToPar();
-    		pars2 = pars["悪タトゥ"].ToPars();
-    		Pars pars3 = pars2["五芒星"].ToPars();
+    		pars2 = partGroup["悪タトゥ"].ToPars();
+    		PartGroup pars3 = pars2["五芒星"].ToPars();
     		X0Y0_悪タトゥ_五芒星_円1 = pars3["円1"].ToPar();
     		X0Y0_悪タトゥ_五芒星_円2 = pars3["円2"].ToPar();
     		X0Y0_悪タトゥ_五芒星_星 = pars3["星"].ToPar();
     		X0Y0_悪タトゥ_五芒星_五角形 = pars3["五角形"].ToPar();
-    		pars2 = pars["鱗"].ToPars();
+    		pars2 = partGroup["鱗"].ToPars();
     		X0Y0_竜性_鱗1 = pars2["鱗1"].ToPar();
     		X0Y0_竜性_鱗2 = pars2["鱗2"].ToPar();
     		X0Y0_竜性_鱗3 = pars2["鱗3"].ToPar();
     		X0Y0_竜性_鱗4 = pars2["鱗4"].ToPar();
     		X0Y0_竜性_鱗5 = pars2["鱗5"].ToPar();
-    		pars2 = pars["パンスト"].ToPars();
+    		pars2 = partGroup["パンスト"].ToPars();
     		X0Y0_パンスト_パンスト1 = pars2["パンスト1"].ToPar();
     		X0Y0_パンスト_パンスト2 = pars2["パンスト2"].ToPar();
-    		pars2 = pars["ソックス"].ToPars();
+    		pars2 = partGroup["ソックス"].ToPars();
     		X0Y0_ソックス_ソックス1 = pars2["ソックス1"].ToPar();
     		X0Y0_ソックス_ソックス2 = pars2["ソックス2"].ToPar();
-    		pars2 = pars["ヒール1"].ToPars();
+    		pars2 = partGroup["ヒール1"].ToPars();
     		X0Y0_ヒール1_バンプ = pars2["バンプ"].ToPar();
     		pars3 = pars2["ストラップ"].ToPars();
     		X0Y0_ヒール1_ストラップ_ストラップ = pars3["ストラップ"].ToPar();
-    		Pars pars4 = pars3["金具1"].ToPars();
+    		PartGroup pars4 = pars3["金具1"].ToPars();
     		X0Y0_ヒール1_ストラップ_金具1_金具1 = pars4["金具1"].ToPar();
     		X0Y0_ヒール1_ストラップ_金具1_金具2 = pars4["金具2"].ToPar();
     		X0Y0_ヒール1_ストラップ_金具1_金具3 = pars4["金具3"].ToPar();
@@ -3241,12 +3241,12 @@ namespace SlaveMatrix
     		X0Y0_ヒール1_ストラップ_金具2_金具3 = pars4["金具3"].ToPar();
     		X0Y0_ヒール1_ストラップ_金具2_金具4 = pars4["金具4"].ToPar();
     		X0Y0_ヒール1_ハイライト = pars2["ハイライト"].ToPar();
-    		pars2 = pars["サンダル1"].ToPars();
+    		pars2 = partGroup["サンダル1"].ToPars();
     		X0Y0_サンダル1_ストラップ3 = pars2["ストラップ3"].ToPar();
     		X0Y0_サンダル1_ストラップ2 = pars2["ストラップ2"].ToPar();
     		X0Y0_サンダル1_ストラップ4 = pars2["ストラップ4"].ToPar();
     		X0Y0_サンダル1_ストラップ1 = pars2["ストラップ1"].ToPar();
-    		pars2 = pars["ナース1"].ToPars();
+    		pars2 = partGroup["ナース1"].ToPars();
     		pars3 = pars2["ストラップ3"].ToPars();
     		X0Y0_ナース1_ストラップ3_ストラップ = pars3["ストラップ"].ToPar();
     		X0Y0_ナース1_ストラップ3_縁1 = pars3["縁1"].ToPar();
@@ -3259,7 +3259,7 @@ namespace SlaveMatrix
     		X0Y0_ナース1_ストラップ1_ストラップ = pars3["ストラップ"].ToPar();
     		X0Y0_ナース1_ストラップ1_縁1 = pars3["縁1"].ToPar();
     		X0Y0_ナース1_ストラップ1_縁2 = pars3["縁2"].ToPar();
-    		pars2 = pars["ブーツ1"].ToPars();
+    		pars2 = partGroup["ブーツ1"].ToPars();
     		X0Y0_ブーツ1_タン = pars2["タン"].ToPar();
     		pars3 = pars2["バンプ"].ToPars();
     		X0Y0_ブーツ1_バンプ_バンプ = pars3["バンプ"].ToPar();
@@ -3272,8 +3272,8 @@ namespace SlaveMatrix
     		X0Y0_ブーツ1_柄 = pars2["柄"].ToPar();
     		pars3 = pars2["紐"].ToPars();
     		pars4 = pars3["紐1"].ToPars();
-    		Pars pars5 = pars4["紐下"].ToPars();
-    		Pars pars6 = pars5["金具上"].ToPars();
+    		PartGroup pars5 = pars4["紐下"].ToPars();
+    		PartGroup pars6 = pars5["金具上"].ToPars();
     		X0Y0_ブーツ1_紐_紐1_紐下_金具上_金具 = pars6["金具"].ToPar();
     		X0Y0_ブーツ1_紐_紐1_紐下_金具上_穴 = pars6["穴"].ToPar();
     		X0Y0_ブーツ1_紐_紐1_紐下_紐 = pars5["紐"].ToPar();
@@ -3324,69 +3324,69 @@ namespace SlaveMatrix
     		X0Y0_ブーツ1_紐_紐5_金具2_金具 = pars5["金具"].ToPar();
     		X0Y0_ブーツ1_紐_紐5_金具2_穴 = pars5["穴"].ToPar();
     		X0Y0_ブーツ1_紐_紐5_紐 = pars4["紐"].ToPar();
-    		pars2 = pars["アーマ1"].ToPars();
+    		pars2 = partGroup["アーマ1"].ToPars();
     		X0Y0_アーマ1_鉄靴1 = pars2["鉄靴1"].ToPar();
     		X0Y0_アーマ1_鉄靴2 = pars2["鉄靴2"].ToPar();
     		X0Y0_アーマ1_鉄靴3 = pars2["鉄靴3"].ToPar();
-    		pars = Body[0][1];
-    		pars2 = pars["ヒール0"].ToPars();
+    		partGroup = Body[0][1];
+    		pars2 = partGroup["ヒール0"].ToPars();
     		X0Y1_ヒール0_ヒール = pars2["ヒール"].ToPar();
     		X0Y1_ヒール0_靴底 = pars2["靴底"].ToPar();
-    		pars2 = pars["サンダル0"].ToPars();
+    		pars2 = partGroup["サンダル0"].ToPars();
     		X0Y1_サンダル0_踵 = pars2["踵"].ToPar();
     		X0Y1_サンダル0_靴底 = pars2["靴底"].ToPar();
-    		pars2 = pars["ナース0"].ToPars();
+    		pars2 = partGroup["ナース0"].ToPars();
     		X0Y1_ナース0_踵 = pars2["踵"].ToPar();
     		X0Y1_ナース0_靴底 = pars2["靴底"].ToPar();
-    		pars2 = pars["ブーツ0"].ToPars();
+    		pars2 = partGroup["ブーツ0"].ToPars();
     		X0Y1_ブーツ0_ヒール = pars2["ヒール"].ToPar();
     		X0Y1_ブーツ0_靴底 = pars2["靴底"].ToPar();
-    		pars2 = pars["アーマ0"].ToPars();
+    		pars2 = partGroup["アーマ0"].ToPars();
     		X0Y1_アーマ0_踵 = pars2["踵"].ToPar();
     		X0Y1_アーマ0_靴底 = pars2["靴底"].ToPar();
-    		X0Y1_足 = pars["足"].ToPar();
-    		pars2 = pars["小指"].ToPars();
+    		X0Y1_足 = partGroup["足"].ToPar();
+    		pars2 = partGroup["小指"].ToPars();
     		X0Y1_小指_小指1 = pars2["小指1"].ToPar();
     		X0Y1_小指_小指2 = pars2["小指2"].ToPar();
     		X0Y1_小指_小指3 = pars2["小指3"].ToPar();
-    		pars2 = pars["薬指"].ToPars();
+    		pars2 = partGroup["薬指"].ToPars();
     		X0Y1_薬指_水掻 = pars2["水掻"].ToPar();
     		X0Y1_薬指_薬指1 = pars2["薬指1"].ToPar();
     		X0Y1_薬指_薬指2 = pars2["薬指2"].ToPar();
     		X0Y1_薬指_薬指3 = pars2["薬指3"].ToPar();
-    		pars2 = pars["中指"].ToPars();
+    		pars2 = partGroup["中指"].ToPars();
     		X0Y1_中指_水掻 = pars2["水掻"].ToPar();
     		X0Y1_中指_中指1 = pars2["中指1"].ToPar();
     		X0Y1_中指_中指2 = pars2["中指2"].ToPar();
     		X0Y1_中指_中指3 = pars2["中指3"].ToPar();
-    		pars2 = pars["人指"].ToPars();
+    		pars2 = partGroup["人指"].ToPars();
     		X0Y1_人指_水掻 = pars2["水掻"].ToPar();
     		X0Y1_人指_人指1 = pars2["人指1"].ToPar();
     		X0Y1_人指_人指2 = pars2["人指2"].ToPar();
     		X0Y1_人指_人指3 = pars2["人指3"].ToPar();
-    		pars2 = pars["親指"].ToPars();
+    		pars2 = partGroup["親指"].ToPars();
     		X0Y1_親指_水掻 = pars2["水掻"].ToPar();
     		X0Y1_親指_親指2 = pars2["親指2"].ToPar();
     		X0Y1_親指_親指3 = pars2["親指3"].ToPar();
-    		pars2 = pars["悪タトゥ"].ToPars();
+    		pars2 = partGroup["悪タトゥ"].ToPars();
     		pars3 = pars2["五芒星"].ToPars();
     		X0Y1_悪タトゥ_五芒星_円1 = pars3["円1"].ToPar();
     		X0Y1_悪タトゥ_五芒星_円2 = pars3["円2"].ToPar();
     		X0Y1_悪タトゥ_五芒星_星 = pars3["星"].ToPar();
     		X0Y1_悪タトゥ_五芒星_五角形 = pars3["五角形"].ToPar();
-    		pars2 = pars["鱗"].ToPars();
+    		pars2 = partGroup["鱗"].ToPars();
     		X0Y1_竜性_鱗1 = pars2["鱗1"].ToPar();
     		X0Y1_竜性_鱗2 = pars2["鱗2"].ToPar();
     		X0Y1_竜性_鱗3 = pars2["鱗3"].ToPar();
     		X0Y1_竜性_鱗4 = pars2["鱗4"].ToPar();
     		X0Y1_竜性_鱗5 = pars2["鱗5"].ToPar();
-    		pars2 = pars["パンスト"].ToPars();
+    		pars2 = partGroup["パンスト"].ToPars();
     		X0Y1_パンスト_パンスト1 = pars2["パンスト1"].ToPar();
     		X0Y1_パンスト_パンスト2 = pars2["パンスト2"].ToPar();
-    		pars2 = pars["ソックス"].ToPars();
+    		pars2 = partGroup["ソックス"].ToPars();
     		X0Y1_ソックス_ソックス1 = pars2["ソックス1"].ToPar();
     		X0Y1_ソックス_ソックス2 = pars2["ソックス2"].ToPar();
-    		pars2 = pars["ヒール1"].ToPars();
+    		pars2 = partGroup["ヒール1"].ToPars();
     		X0Y1_ヒール1_バンプ = pars2["バンプ"].ToPar();
     		pars3 = pars2["ストラップ"].ToPars();
     		X0Y1_ヒール1_ストラップ_ストラップ = pars3["ストラップ"].ToPar();
@@ -3401,12 +3401,12 @@ namespace SlaveMatrix
     		X0Y1_ヒール1_ストラップ_金具2_金具3 = pars4["金具3"].ToPar();
     		X0Y1_ヒール1_ストラップ_金具2_金具4 = pars4["金具4"].ToPar();
     		X0Y1_ヒール1_ハイライト = pars2["ハイライト"].ToPar();
-    		pars2 = pars["サンダル1"].ToPars();
+    		pars2 = partGroup["サンダル1"].ToPars();
     		X0Y1_サンダル1_ストラップ3 = pars2["ストラップ3"].ToPar();
     		X0Y1_サンダル1_ストラップ2 = pars2["ストラップ2"].ToPar();
     		X0Y1_サンダル1_ストラップ4 = pars2["ストラップ4"].ToPar();
     		X0Y1_サンダル1_ストラップ1 = pars2["ストラップ1"].ToPar();
-    		pars2 = pars["ナース1"].ToPars();
+    		pars2 = partGroup["ナース1"].ToPars();
     		pars3 = pars2["ストラップ4"].ToPars();
     		X0Y1_ナース1_ストラップ4_ストラップ = pars3["ストラップ"].ToPar();
     		X0Y1_ナース1_ストラップ4_縁1 = pars3["縁1"].ToPar();
@@ -3423,7 +3423,7 @@ namespace SlaveMatrix
     		X0Y1_ナース1_ストラップ1_ストラップ = pars3["ストラップ"].ToPar();
     		X0Y1_ナース1_ストラップ1_縁1 = pars3["縁1"].ToPar();
     		X0Y1_ナース1_ストラップ1_縁2 = pars3["縁2"].ToPar();
-    		pars2 = pars["ブーツ1"].ToPars();
+    		pars2 = partGroup["ブーツ1"].ToPars();
     		X0Y1_ブーツ1_タン = pars2["タン"].ToPar();
     		pars3 = pars2["バンプ"].ToPars();
     		X0Y1_ブーツ1_バンプ_バンプ = pars3["バンプ"].ToPar();
@@ -3487,7 +3487,7 @@ namespace SlaveMatrix
     		X0Y1_ブーツ1_紐_紐5_金具2_金具 = pars5["金具"].ToPar();
     		X0Y1_ブーツ1_紐_紐5_金具2_穴 = pars5["穴"].ToPar();
     		X0Y1_ブーツ1_紐_紐5_紐 = pars4["紐"].ToPar();
-    		pars2 = pars["アーマ1"].ToPars();
+    		pars2 = partGroup["アーマ1"].ToPars();
     		X0Y1_アーマ1_鉄靴1 = pars2["鉄靴1"].ToPar();
     		X0Y1_アーマ1_鉄靴2 = pars2["鉄靴2"].ToPar();
     		X0Y1_アーマ1_鉄靴3 = pars2["鉄靴3"].ToPar();
@@ -4177,7 +4177,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override bool Is布(Par p)
+    	public override bool Is布(ShapePart p)
     	{
     		if (p != X0Y0_パンスト_パンスト1 && p != X0Y0_パンスト_パンスト2 && p != X0Y0_ソックス_ソックス1 && p != X0Y0_ソックス_ソックス2 && p != X0Y1_パンスト_パンスト1 && p != X0Y1_パンスト_パンスト2 && p != X0Y1_ソックス_ソックス1)
     		{
@@ -4186,7 +4186,7 @@ namespace SlaveMatrix
     		return true;
     	}
 
-    	public override bool Is革(Par p)
+    	public override bool Is革(ShapePart p)
     	{
     		if (p != X0Y0_ヒール0_靴底 && p != X0Y0_サンダル0_靴底 && p != X0Y0_ナース0_靴底 && p != X0Y0_ブーツ0_靴底 && p != X0Y0_ヒール1_バンプ && p != X0Y0_ヒール1_ストラップ_ストラップ && p != X0Y0_ヒール1_ストラップ_金具1_金具1 && p != X0Y0_ヒール1_ストラップ_金具1_金具2 && p != X0Y0_ヒール1_ストラップ_金具1_金具3 && p != X0Y0_ヒール1_ストラップ_金具1_金具4 && p != X0Y0_ヒール1_ストラップ_金具2_金具1 && p != X0Y0_ヒール1_ストラップ_金具2_金具2 && p != X0Y0_ヒール1_ストラップ_金具2_金具3 && p != X0Y0_ヒール1_ストラップ_金具2_金具4 && p != X0Y0_ヒール1_ハイライト && p != X0Y0_サンダル1_ストラップ3 && p != X0Y0_サンダル1_ストラップ2 && p != X0Y0_サンダル1_ストラップ4 && p != X0Y0_サンダル1_ストラップ1 && p != X0Y0_ナース1_ストラップ3_ストラップ && p != X0Y0_ナース1_ストラップ3_縁1 && p != X0Y0_ナース1_ストラップ3_縁2 && p != X0Y0_ナース1_ストラップ2_ストラップ && p != X0Y0_ナース1_ストラップ2_縁1 && p != X0Y0_ナース1_ストラップ2_縁2 && p != X0Y0_ナース1_ストラップ1_ストラップ && p != X0Y0_ナース1_ストラップ1_縁1 && p != X0Y0_ナース1_ストラップ1_縁2 && p != X0Y0_ブーツ1_タン && p != X0Y0_ブーツ1_バンプ_バンプ && p != X0Y0_ブーツ1_バンプ_縁_縁1 && p != X0Y0_ブーツ1_バンプ_縁_縁2 && p != X0Y0_ブーツ1_バンプ_縁_縁3 && p != X0Y0_ブーツ1_バンプ_縁_縁4 && p != X0Y0_ブーツ1_ハイライト && p != X0Y0_ブーツ1_柄 && p != X0Y0_ブーツ1_紐_紐1_紐下_金具上_金具 && p != X0Y0_ブーツ1_紐_紐1_紐下_金具上_穴 && p != X0Y0_ブーツ1_紐_紐1_紐下_紐 && p != X0Y0_ブーツ1_紐_紐1_紐上_金具上_金具 && p != X0Y0_ブーツ1_紐_紐1_紐上_金具上_穴 && p != X0Y0_ブーツ1_紐_紐1_紐上_紐 && p != X0Y0_ブーツ1_紐_紐2_紐下_金具上_金具 && p != X0Y0_ブーツ1_紐_紐2_紐下_金具上_穴 && p != X0Y0_ブーツ1_紐_紐2_紐下_紐 && p != X0Y0_ブーツ1_紐_紐2_紐上_金具上_金具 && p != X0Y0_ブーツ1_紐_紐2_紐上_金具上_穴 && p != X0Y0_ブーツ1_紐_紐2_紐上_紐 && p != X0Y0_ブーツ1_紐_紐3_紐下_金具上_金具 && p != X0Y0_ブーツ1_紐_紐3_紐下_金具上_穴 && p != X0Y0_ブーツ1_紐_紐3_紐下_紐 && p != X0Y0_ブーツ1_紐_紐3_紐上_金具上_金具 && p != X0Y0_ブーツ1_紐_紐3_紐上_金具上_穴 && p != X0Y0_ブーツ1_紐_紐3_紐上_紐 && p != X0Y0_ブーツ1_紐_紐4_紐下_金具上_金具 && p != X0Y0_ブーツ1_紐_紐4_紐下_金具上_穴 && p != X0Y0_ブーツ1_紐_紐4_紐下_紐 && p != X0Y0_ブーツ1_紐_紐4_紐上_金具上_金具 && p != X0Y0_ブーツ1_紐_紐4_紐上_金具上_穴 && p != X0Y0_ブーツ1_紐_紐4_紐上_紐 && p != X0Y0_ブーツ1_紐_紐5_金具1_金具 && p != X0Y0_ブーツ1_紐_紐5_金具1_穴 && p != X0Y0_ブーツ1_紐_紐5_金具2_金具 && p != X0Y0_ブーツ1_紐_紐5_金具2_穴 && p != X0Y0_ブーツ1_紐_紐5_紐 && p != X0Y1_ヒール0_ヒール && p != X0Y1_ヒール0_靴底 && p != X0Y1_サンダル0_踵 && p != X0Y1_サンダル0_靴底 && p != X0Y1_ナース0_踵 && p != X0Y1_ナース0_靴底 && p != X0Y1_ブーツ0_ヒール && p != X0Y1_ブーツ0_靴底 && p != X0Y1_ヒール1_バンプ && p != X0Y1_ヒール1_ストラップ_ストラップ && p != X0Y1_ヒール1_ストラップ_金具1_金具1 && p != X0Y1_ヒール1_ストラップ_金具1_金具2 && p != X0Y1_ヒール1_ストラップ_金具1_金具3 && p != X0Y1_ヒール1_ストラップ_金具1_金具4 && p != X0Y1_ヒール1_ストラップ_金具2_金具1 && p != X0Y1_ヒール1_ストラップ_金具2_金具2 && p != X0Y1_ヒール1_ストラップ_金具2_金具3 && p != X0Y1_ヒール1_ストラップ_金具2_金具4 && p != X0Y1_ヒール1_ハイライト && p != X0Y1_サンダル1_ストラップ3 && p != X0Y1_サンダル1_ストラップ2 && p != X0Y1_サンダル1_ストラップ4 && p != X0Y1_サンダル1_ストラップ1 && p != X0Y1_ナース1_ストラップ4_ストラップ && p != X0Y1_ナース1_ストラップ4_縁1 && p != X0Y1_ナース1_ストラップ4_縁2 && p != X0Y1_ナース1_ストラップ3_ストラップ && p != X0Y1_ナース1_ストラップ3_縁1 && p != X0Y1_ナース1_ストラップ3_縁2 && p != X0Y1_ナース1_ストラップ2_ストラップ && p != X0Y1_ナース1_ストラップ2_縁1 && p != X0Y1_ナース1_ストラップ2_縁2 && p != X0Y1_ナース1_ストラップ1_ストラップ && p != X0Y1_ナース1_ストラップ1_縁1 && p != X0Y1_ナース1_ストラップ1_縁2 && p != X0Y1_ブーツ1_タン && p != X0Y1_ブーツ1_バンプ_バンプ && p != X0Y1_ブーツ1_バンプ_縁_縁1 && p != X0Y1_ブーツ1_バンプ_縁_縁2 && p != X0Y1_ブーツ1_バンプ_縁_縁3 && p != X0Y1_ブーツ1_バンプ_縁_縁4 && p != X0Y1_ブーツ1_ハイライト && p != X0Y1_ブーツ1_柄 && p != X0Y1_ブーツ1_紐_紐1_紐下_金具上_金具 && p != X0Y1_ブーツ1_紐_紐1_紐下_金具上_穴 && p != X0Y1_ブーツ1_紐_紐1_紐下_紐 && p != X0Y1_ブーツ1_紐_紐1_紐上_金具上_金具 && p != X0Y1_ブーツ1_紐_紐1_紐上_金具上_穴 && p != X0Y1_ブーツ1_紐_紐1_紐上_紐 && p != X0Y1_ブーツ1_紐_紐2_紐下_金具上_金具 && p != X0Y1_ブーツ1_紐_紐2_紐下_金具上_穴 && p != X0Y1_ブーツ1_紐_紐2_紐下_紐 && p != X0Y1_ブーツ1_紐_紐2_紐上_金具上_金具 && p != X0Y1_ブーツ1_紐_紐2_紐上_金具上_穴 && p != X0Y1_ブーツ1_紐_紐2_紐上_紐 && p != X0Y1_ブーツ1_紐_紐3_紐下_金具上_金具 && p != X0Y1_ブーツ1_紐_紐3_紐下_金具上_穴 && p != X0Y1_ブーツ1_紐_紐3_紐下_紐 && p != X0Y1_ブーツ1_紐_紐3_紐上_金具上_金具 && p != X0Y1_ブーツ1_紐_紐3_紐上_金具上_穴 && p != X0Y1_ブーツ1_紐_紐3_紐上_紐 && p != X0Y1_ブーツ1_紐_紐4_紐下_金具上_金具 && p != X0Y1_ブーツ1_紐_紐4_紐下_金具上_穴 && p != X0Y1_ブーツ1_紐_紐4_紐下_紐 && p != X0Y1_ブーツ1_紐_紐4_紐上_金具上_金具 && p != X0Y1_ブーツ1_紐_紐4_紐上_金具上_穴 && p != X0Y1_ブーツ1_紐_紐4_紐上_紐 && p != X0Y1_ブーツ1_紐_紐5_金具1_金具 && p != X0Y1_ブーツ1_紐_紐5_金具1_穴 && p != X0Y1_ブーツ1_紐_紐5_金具2_金具 && p != X0Y1_ブーツ1_紐_紐5_金具2_穴)
     		{
@@ -4195,7 +4195,7 @@ namespace SlaveMatrix
     		return true;
     	}
 
-    	public override bool Is鉄(Par p)
+    	public override bool Is鉄(ShapePart p)
     	{
     		if (p != X0Y0_アーマ0_靴底 && p != X0Y0_アーマ1_鉄靴1 && p != X0Y0_アーマ1_鉄靴2 && p != X0Y0_アーマ1_鉄靴3 && p != X0Y1_アーマ0_踵 && p != X0Y1_アーマ0_靴底 && p != X0Y1_アーマ1_鉄靴1 && p != X0Y1_アーマ1_鉄靴2)
     		{
@@ -4458,34 +4458,34 @@ namespace SlaveMatrix
     		ブーツ0_靴底CD = new ColorD();
     		アーマ0_踵CD = new ColorD();
     		アーマ0_靴底CD = new ColorD();
-    		足CD = new ColorD(ref Col.Black, ref 体配色.人肌R);
-    		小指_小指1CD = new ColorD(ref Col.Black, ref 体配色.人肌O);
-    		小指_小指2CD = new ColorD(ref Col.Black, ref 体配色.人肌O);
-    		小指_小指3CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		薬指_水掻CD = new ColorD(ref Col.Black, ref 体配色.膜O);
-    		薬指_薬指1CD = new ColorD(ref Col.Black, ref 体配色.人肌O);
-    		薬指_薬指2CD = new ColorD(ref Col.Black, ref 体配色.人肌O);
-    		薬指_薬指3CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		中指_水掻CD = new ColorD(ref Col.Black, ref 体配色.膜O);
-    		中指_中指1CD = new ColorD(ref Col.Black, ref 体配色.人肌O);
-    		中指_中指2CD = new ColorD(ref Col.Black, ref 体配色.人肌O);
-    		中指_中指3CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		人指_人指1CD = new ColorD(ref Col.Black, ref 体配色.人肌O);
-    		人指_人指2CD = new ColorD(ref Col.Black, ref 体配色.人肌O);
-    		人指_人指3CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		人指_水掻CD = new ColorD(ref Col.Black, ref 体配色.膜O);
-    		親指_親指2CD = new ColorD(ref Col.Black, ref 体配色.人肌O);
-    		親指_親指3CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		親指_水掻CD = new ColorD(ref Col.Black, ref 体配色.膜O);
+    		足CD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌R);
+    		小指_小指1CD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌O);
+    		小指_小指2CD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌O);
+    		小指_小指3CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		薬指_水掻CD = new ColorD(ref ColorHelper.Black, ref 体配色.膜O);
+    		薬指_薬指1CD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌O);
+    		薬指_薬指2CD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌O);
+    		薬指_薬指3CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		中指_水掻CD = new ColorD(ref ColorHelper.Black, ref 体配色.膜O);
+    		中指_中指1CD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌O);
+    		中指_中指2CD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌O);
+    		中指_中指3CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		人指_人指1CD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌O);
+    		人指_人指2CD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌O);
+    		人指_人指3CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		人指_水掻CD = new ColorD(ref ColorHelper.Black, ref 体配色.膜O);
+    		親指_親指2CD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌O);
+    		親指_親指3CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		親指_水掻CD = new ColorD(ref ColorHelper.Black, ref 体配色.膜O);
     		悪タトゥ_五芒星_円1CD = new ColorD(ref 体配色.刺青.Col1, ref Color2.Empty);
     		悪タトゥ_五芒星_円2CD = new ColorD(ref 体配色.刺青.Col1, ref Color2.Empty);
     		悪タトゥ_五芒星_星CD = new ColorD(ref 体配色.刺青.Col1, ref Color2.Empty);
     		悪タトゥ_五芒星_五角形CD = new ColorD(ref 体配色.刺青.Col1, ref Color2.Empty);
-    		竜性_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_鱗5CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		竜性_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_鱗5CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
     		パンスト_パンスト1CD = new ColorD();
     		パンスト_パンスト2CD = new ColorD();
     		ソックス_ソックス1CD = new ColorD();
@@ -4500,7 +4500,7 @@ namespace SlaveMatrix
     		ヒール1_ストラップ_金具2_金具2CD = new ColorD();
     		ヒール1_ストラップ_金具2_金具3CD = new ColorD();
     		ヒール1_ストラップ_金具2_金具4CD = new ColorD();
-    		ヒール1_ハイライトCD = new ColorD(ref Col.Black, ref 体配色.ハイライト2O);
+    		ヒール1_ハイライトCD = new ColorD(ref ColorHelper.Black, ref 体配色.ハイライト2O);
     		サンダル1_ストラップ3CD = new ColorD();
     		サンダル1_ストラップ2CD = new ColorD();
     		サンダル1_ストラップ4CD = new ColorD();
@@ -4520,7 +4520,7 @@ namespace SlaveMatrix
     		ブーツ1_バンプ_縁_縁2CD = new ColorD();
     		ブーツ1_バンプ_縁_縁3CD = new ColorD();
     		ブーツ1_バンプ_縁_縁4CD = new ColorD();
-    		ブーツ1_ハイライトCD = new ColorD(ref Col.Black, ref 体配色.ハイライト2O);
+    		ブーツ1_ハイライトCD = new ColorD(ref ColorHelper.Black, ref 体配色.ハイライト2O);
     		ブーツ1_柄CD = new ColorD();
     		ブーツ1_紐_紐1_紐下_金具上_金具CD = new ColorD();
     		ブーツ1_紐_紐1_紐下_金具上_穴CD = new ColorD();
@@ -4571,34 +4571,34 @@ namespace SlaveMatrix
     		ブーツ0_靴底CD = new ColorD();
     		アーマ0_踵CD = new ColorD();
     		アーマ0_靴底CD = new ColorD();
-    		足CD = new ColorD(ref Col.Black, ref 体配色.毛0R);
-    		小指_小指1CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		小指_小指2CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		小指_小指3CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		薬指_水掻CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		薬指_薬指1CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		薬指_薬指2CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		薬指_薬指3CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		中指_水掻CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		中指_中指1CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		中指_中指2CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		中指_中指3CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		人指_人指1CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		人指_人指2CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		人指_人指3CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		人指_水掻CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		親指_親指2CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		親指_親指3CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		親指_水掻CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		足CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0R);
+    		小指_小指1CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		小指_小指2CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		小指_小指3CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		薬指_水掻CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		薬指_薬指1CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		薬指_薬指2CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		薬指_薬指3CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		中指_水掻CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		中指_中指1CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		中指_中指2CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		中指_中指3CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		人指_人指1CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		人指_人指2CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		人指_人指3CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		人指_水掻CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		親指_親指2CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		親指_親指3CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		親指_水掻CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
     		悪タトゥ_五芒星_円1CD = new ColorD(ref 体配色.刺青.Col1, ref Color2.Empty);
     		悪タトゥ_五芒星_円2CD = new ColorD(ref 体配色.刺青.Col1, ref Color2.Empty);
     		悪タトゥ_五芒星_星CD = new ColorD(ref 体配色.刺青.Col1, ref Color2.Empty);
     		悪タトゥ_五芒星_五角形CD = new ColorD(ref 体配色.刺青.Col1, ref Color2.Empty);
-    		竜性_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_鱗5CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		竜性_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_鱗5CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
     		パンスト_パンスト1CD = new ColorD();
     		パンスト_パンスト2CD = new ColorD();
     		ソックス_ソックス1CD = new ColorD();
@@ -4613,7 +4613,7 @@ namespace SlaveMatrix
     		ヒール1_ストラップ_金具2_金具2CD = new ColorD();
     		ヒール1_ストラップ_金具2_金具3CD = new ColorD();
     		ヒール1_ストラップ_金具2_金具4CD = new ColorD();
-    		ヒール1_ハイライトCD = new ColorD(ref Col.Black, ref 体配色.ハイライト2O);
+    		ヒール1_ハイライトCD = new ColorD(ref ColorHelper.Black, ref 体配色.ハイライト2O);
     		サンダル1_ストラップ3CD = new ColorD();
     		サンダル1_ストラップ2CD = new ColorD();
     		サンダル1_ストラップ4CD = new ColorD();
@@ -4633,7 +4633,7 @@ namespace SlaveMatrix
     		ブーツ1_バンプ_縁_縁2CD = new ColorD();
     		ブーツ1_バンプ_縁_縁3CD = new ColorD();
     		ブーツ1_バンプ_縁_縁4CD = new ColorD();
-    		ブーツ1_ハイライトCD = new ColorD(ref Col.Black, ref 体配色.ハイライト2O);
+    		ブーツ1_ハイライトCD = new ColorD(ref ColorHelper.Black, ref 体配色.ハイライト2O);
     		ブーツ1_柄CD = new ColorD();
     		ブーツ1_紐_紐1_紐下_金具上_金具CD = new ColorD();
     		ブーツ1_紐_紐1_紐下_金具上_穴CD = new ColorD();
@@ -4684,34 +4684,34 @@ namespace SlaveMatrix
     		ブーツ0_靴底CD = new ColorD();
     		アーマ0_踵CD = new ColorD();
     		アーマ0_靴底CD = new ColorD();
-    		足CD = new ColorD(ref Col.Black, ref 体配色.甲0R);
-    		小指_小指1CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		小指_小指2CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		小指_小指3CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		薬指_水掻CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		薬指_薬指1CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		薬指_薬指2CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		薬指_薬指3CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		中指_水掻CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		中指_中指1CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		中指_中指2CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		中指_中指3CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		人指_人指1CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		人指_人指2CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		人指_人指3CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		人指_水掻CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		親指_親指2CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		親指_親指3CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		親指_水掻CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		足CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0R);
+    		小指_小指1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		小指_小指2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		小指_小指3CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		薬指_水掻CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		薬指_薬指1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		薬指_薬指2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		薬指_薬指3CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		中指_水掻CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		中指_中指1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		中指_中指2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		中指_中指3CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		人指_人指1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		人指_人指2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		人指_人指3CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		人指_水掻CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		親指_親指2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		親指_親指3CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		親指_水掻CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
     		悪タトゥ_五芒星_円1CD = new ColorD(ref 体配色.刺青.Col1, ref Color2.Empty);
     		悪タトゥ_五芒星_円2CD = new ColorD(ref 体配色.刺青.Col1, ref Color2.Empty);
     		悪タトゥ_五芒星_星CD = new ColorD(ref 体配色.刺青.Col1, ref Color2.Empty);
     		悪タトゥ_五芒星_五角形CD = new ColorD(ref 体配色.刺青.Col1, ref Color2.Empty);
-    		竜性_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_鱗5CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		竜性_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_鱗5CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
     		パンスト_パンスト1CD = new ColorD();
     		パンスト_パンスト2CD = new ColorD();
     		ソックス_ソックス1CD = new ColorD();
@@ -4726,7 +4726,7 @@ namespace SlaveMatrix
     		ヒール1_ストラップ_金具2_金具2CD = new ColorD();
     		ヒール1_ストラップ_金具2_金具3CD = new ColorD();
     		ヒール1_ストラップ_金具2_金具4CD = new ColorD();
-    		ヒール1_ハイライトCD = new ColorD(ref Col.Black, ref 体配色.ハイライト2O);
+    		ヒール1_ハイライトCD = new ColorD(ref ColorHelper.Black, ref 体配色.ハイライト2O);
     		サンダル1_ストラップ3CD = new ColorD();
     		サンダル1_ストラップ2CD = new ColorD();
     		サンダル1_ストラップ4CD = new ColorD();
@@ -4746,7 +4746,7 @@ namespace SlaveMatrix
     		ブーツ1_バンプ_縁_縁2CD = new ColorD();
     		ブーツ1_バンプ_縁_縁3CD = new ColorD();
     		ブーツ1_バンプ_縁_縁4CD = new ColorD();
-    		ブーツ1_ハイライトCD = new ColorD(ref Col.Black, ref 体配色.ハイライト2O);
+    		ブーツ1_ハイライトCD = new ColorD(ref ColorHelper.Black, ref 体配色.ハイライト2O);
     		ブーツ1_柄CD = new ColorD();
     		ブーツ1_紐_紐1_紐下_金具上_金具CD = new ColorD();
     		ブーツ1_紐_紐1_紐下_金具上_穴CD = new ColorD();
@@ -4797,34 +4797,34 @@ namespace SlaveMatrix
     		ブーツ0_靴底CD = new ColorD();
     		アーマ0_踵CD = new ColorD();
     		アーマ0_靴底CD = new ColorD();
-    		足CD = new ColorD(ref Col.Black, ref 体配色.植1R);
-    		小指_小指1CD = new ColorD(ref Col.Black, ref 体配色.植1R);
-    		小指_小指2CD = new ColorD(ref Col.Black, ref 体配色.植1R);
-    		小指_小指3CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		薬指_水掻CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		薬指_薬指1CD = new ColorD(ref Col.Black, ref 体配色.植1R);
-    		薬指_薬指2CD = new ColorD(ref Col.Black, ref 体配色.植1R);
-    		薬指_薬指3CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		中指_水掻CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		中指_中指1CD = new ColorD(ref Col.Black, ref 体配色.植1R);
-    		中指_中指2CD = new ColorD(ref Col.Black, ref 体配色.植1R);
-    		中指_中指3CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		人指_人指1CD = new ColorD(ref Col.Black, ref 体配色.植1R);
-    		人指_人指2CD = new ColorD(ref Col.Black, ref 体配色.植1R);
-    		人指_人指3CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		人指_水掻CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		親指_親指2CD = new ColorD(ref Col.Black, ref 体配色.植1R);
-    		親指_親指3CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		親指_水掻CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		足CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1R);
+    		小指_小指1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1R);
+    		小指_小指2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1R);
+    		小指_小指3CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		薬指_水掻CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		薬指_薬指1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1R);
+    		薬指_薬指2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1R);
+    		薬指_薬指3CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		中指_水掻CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		中指_中指1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1R);
+    		中指_中指2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1R);
+    		中指_中指3CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		人指_人指1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1R);
+    		人指_人指2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1R);
+    		人指_人指3CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		人指_水掻CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		親指_親指2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1R);
+    		親指_親指3CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		親指_水掻CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
     		悪タトゥ_五芒星_円1CD = new ColorD(ref 体配色.刺青.Col1, ref Color2.Empty);
     		悪タトゥ_五芒星_円2CD = new ColorD(ref 体配色.刺青.Col1, ref Color2.Empty);
     		悪タトゥ_五芒星_星CD = new ColorD(ref 体配色.刺青.Col1, ref Color2.Empty);
     		悪タトゥ_五芒星_五角形CD = new ColorD(ref 体配色.刺青.Col1, ref Color2.Empty);
-    		竜性_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_鱗5CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		竜性_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_鱗5CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
     		パンスト_パンスト1CD = new ColorD();
     		パンスト_パンスト2CD = new ColorD();
     		ソックス_ソックス1CD = new ColorD();
@@ -4839,7 +4839,7 @@ namespace SlaveMatrix
     		ヒール1_ストラップ_金具2_金具2CD = new ColorD();
     		ヒール1_ストラップ_金具2_金具3CD = new ColorD();
     		ヒール1_ストラップ_金具2_金具4CD = new ColorD();
-    		ヒール1_ハイライトCD = new ColorD(ref Col.Black, ref 体配色.ハイライト2O);
+    		ヒール1_ハイライトCD = new ColorD(ref ColorHelper.Black, ref 体配色.ハイライト2O);
     		サンダル1_ストラップ3CD = new ColorD();
     		サンダル1_ストラップ2CD = new ColorD();
     		サンダル1_ストラップ4CD = new ColorD();
@@ -4859,7 +4859,7 @@ namespace SlaveMatrix
     		ブーツ1_バンプ_縁_縁2CD = new ColorD();
     		ブーツ1_バンプ_縁_縁3CD = new ColorD();
     		ブーツ1_バンプ_縁_縁4CD = new ColorD();
-    		ブーツ1_ハイライトCD = new ColorD(ref Col.Black, ref 体配色.ハイライト2O);
+    		ブーツ1_ハイライトCD = new ColorD(ref ColorHelper.Black, ref 体配色.ハイライト2O);
     		ブーツ1_柄CD = new ColorD();
     		ブーツ1_紐_紐1_紐下_金具上_金具CD = new ColorD();
     		ブーツ1_紐_紐1_紐下_金具上_穴CD = new ColorD();

@@ -6,75 +6,75 @@ namespace SlaveMatrix
 {
     public class 顔面_蟲 : 顔面
     {
-    	public Par X0Y0_面;
+    	public ShapePart X0Y0_面;
 
-    	public Par X0Y0_眼左_眼1_基;
+    	public ShapePart X0Y0_眼左_眼1_基;
 
-    	public Par X0Y0_眼左_眼1_眼;
+    	public ShapePart X0Y0_眼左_眼1_眼;
 
-    	public Par X0Y0_眼左_眼1_ハイライト;
+    	public ShapePart X0Y0_眼左_眼1_ハイライト;
 
-    	public Par X0Y0_眼左_眼2_基;
+    	public ShapePart X0Y0_眼左_眼2_基;
 
-    	public Par X0Y0_眼左_眼2_眼;
+    	public ShapePart X0Y0_眼左_眼2_眼;
 
-    	public Par X0Y0_眼左_眼2_ハイライト;
+    	public ShapePart X0Y0_眼左_眼2_ハイライト;
 
-    	public Par X0Y0_眼左_眼3_基;
+    	public ShapePart X0Y0_眼左_眼3_基;
 
-    	public Par X0Y0_眼左_眼3_眼;
+    	public ShapePart X0Y0_眼左_眼3_眼;
 
-    	public Par X0Y0_眼左_眼3_ハイライト;
+    	public ShapePart X0Y0_眼左_眼3_ハイライト;
 
-    	public Par X0Y0_眼左_眼4_基;
+    	public ShapePart X0Y0_眼左_眼4_基;
 
-    	public Par X0Y0_眼左_眼4_眼;
+    	public ShapePart X0Y0_眼左_眼4_眼;
 
-    	public Par X0Y0_眼左_眼4_ハイライト;
+    	public ShapePart X0Y0_眼左_眼4_ハイライト;
 
-    	public Par X0Y0_眼左_眼5_基;
+    	public ShapePart X0Y0_眼左_眼5_基;
 
-    	public Par X0Y0_眼左_眼5_眼;
+    	public ShapePart X0Y0_眼左_眼5_眼;
 
-    	public Par X0Y0_眼左_眼5_ハイライト;
+    	public ShapePart X0Y0_眼左_眼5_ハイライト;
 
-    	public Par X0Y0_眼右_眼1_基;
+    	public ShapePart X0Y0_眼右_眼1_基;
 
-    	public Par X0Y0_眼右_眼1_眼;
+    	public ShapePart X0Y0_眼右_眼1_眼;
 
-    	public Par X0Y0_眼右_眼1_ハイライト;
+    	public ShapePart X0Y0_眼右_眼1_ハイライト;
 
-    	public Par X0Y0_眼右_眼2_基;
+    	public ShapePart X0Y0_眼右_眼2_基;
 
-    	public Par X0Y0_眼右_眼2_眼;
+    	public ShapePart X0Y0_眼右_眼2_眼;
 
-    	public Par X0Y0_眼右_眼2_ハイライト;
+    	public ShapePart X0Y0_眼右_眼2_ハイライト;
 
-    	public Par X0Y0_眼右_眼3_基;
+    	public ShapePart X0Y0_眼右_眼3_基;
 
-    	public Par X0Y0_眼右_眼3_眼;
+    	public ShapePart X0Y0_眼右_眼3_眼;
 
-    	public Par X0Y0_眼右_眼3_ハイライト;
+    	public ShapePart X0Y0_眼右_眼3_ハイライト;
 
-    	public Par X0Y0_眼右_眼4_基;
+    	public ShapePart X0Y0_眼右_眼4_基;
 
-    	public Par X0Y0_眼右_眼4_眼;
+    	public ShapePart X0Y0_眼右_眼4_眼;
 
-    	public Par X0Y0_眼右_眼4_ハイライト;
+    	public ShapePart X0Y0_眼右_眼4_ハイライト;
 
-    	public Par X0Y0_眼右_眼5_基;
+    	public ShapePart X0Y0_眼右_眼5_基;
 
-    	public Par X0Y0_眼右_眼5_眼;
+    	public ShapePart X0Y0_眼右_眼5_眼;
 
-    	public Par X0Y0_眼右_眼5_ハイライト;
+    	public ShapePart X0Y0_眼右_眼5_ハイライト;
 
-    	public Par X0Y0_角左_角左1;
+    	public ShapePart X0Y0_角左_角左1;
 
-    	public Par X0Y0_角左_角左2;
+    	public ShapePart X0Y0_角左_角左2;
 
-    	public Par X0Y0_角右_角右1;
+    	public ShapePart X0Y0_角右_角右1;
 
-    	public Par X0Y0_角右_角右2;
+    	public ShapePart X0Y0_角右_角右2;
 
     	public ColorD 面CD;
 
@@ -824,14 +824,14 @@ namespace SlaveMatrix
     	{
     		顔面_蟲 顔面_蟲2 = this;
     		ThisType = GetType();
-    		Dif dif = new Dif(Sta.肢中["顔面"][2]);
-    		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		X0Y0_面 = pars["面"].ToPar();
-    		Pars pars2 = pars["眼左"].ToPars();
-    		Pars pars3 = pars2["眼1"].ToPars();
+    		MorphVariant morphVariant = new MorphVariant(GlobalState.肢中["顔面"][2]);
+    		Body = new VariantGrid();
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_面 = partGroup["面"].ToPar();
+    		PartGroup pars2 = partGroup["眼左"].ToPars();
+    		PartGroup pars3 = pars2["眼1"].ToPars();
     		X0Y0_眼左_眼1_基 = pars3["基"].ToPar();
     		X0Y0_眼左_眼1_眼 = pars3["眼"].ToPar();
     		X0Y0_眼左_眼1_ハイライト = pars3["ハイライト"].ToPar();
@@ -851,7 +851,7 @@ namespace SlaveMatrix
     		X0Y0_眼左_眼5_基 = pars3["基"].ToPar();
     		X0Y0_眼左_眼5_眼 = pars3["眼"].ToPar();
     		X0Y0_眼左_眼5_ハイライト = pars3["ハイライト"].ToPar();
-    		pars2 = pars["眼右"].ToPars();
+    		pars2 = partGroup["眼右"].ToPars();
     		pars3 = pars2["眼1"].ToPars();
     		X0Y0_眼右_眼1_基 = pars3["基"].ToPar();
     		X0Y0_眼右_眼1_眼 = pars3["眼"].ToPar();
@@ -872,10 +872,10 @@ namespace SlaveMatrix
     		X0Y0_眼右_眼5_基 = pars3["基"].ToPar();
     		X0Y0_眼右_眼5_眼 = pars3["眼"].ToPar();
     		X0Y0_眼右_眼5_ハイライト = pars3["ハイライト"].ToPar();
-    		pars2 = pars["角左"].ToPars();
+    		pars2 = partGroup["角左"].ToPars();
     		X0Y0_角左_角左1 = pars2["角左1"].ToPar();
     		X0Y0_角左_角左2 = pars2["角左2"].ToPar();
-    		pars2 = pars["角右"].ToPars();
+    		pars2 = partGroup["角右"].ToPars();
     		X0Y0_角右_角右1 = pars2["角右1"].ToPar();
     		X0Y0_角右_角右2 = pars2["角右2"].ToPar();
     		Body.SetJoints();
@@ -946,10 +946,10 @@ namespace SlaveMatrix
     		{
     			表示 = false;
     		}
-    		Ele f;
+    		Element f;
     		if (e.触覚左_接続.Count > 0)
     		{
-    			触覚左_接続 = e.触覚左_接続.Select(delegate(EleD g)
+    			触覚左_接続 = e.触覚左_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 顔面_蟲2;
@@ -960,7 +960,7 @@ namespace SlaveMatrix
     		}
     		if (e.触覚右_接続.Count > 0)
     		{
-    			触覚右_接続 = e.触覚右_接続.Select(delegate(EleD g)
+    			触覚右_接続 = e.触覚右_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 顔面_蟲2;
@@ -1055,41 +1055,41 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		面CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		眼左_眼1_基CD = new ColorD(ref Col.Black, ref 体配色.眼0O);
-    		眼左_眼1_眼CD = new ColorD(ref Col.Black, ref 体配色.眼0O);
-    		眼左_眼1_ハイライトCD = new ColorD(ref Col.Empty, ref 体配色.ハイライト);
-    		眼左_眼2_基CD = new ColorD(ref Col.Black, ref 体配色.眼0O);
-    		眼左_眼2_眼CD = new ColorD(ref Col.Black, ref 体配色.眼0O);
-    		眼左_眼2_ハイライトCD = new ColorD(ref Col.Empty, ref 体配色.ハイライト);
-    		眼左_眼3_基CD = new ColorD(ref Col.Black, ref 体配色.眼0O);
-    		眼左_眼3_眼CD = new ColorD(ref Col.Black, ref 体配色.眼0O);
-    		眼左_眼3_ハイライトCD = new ColorD(ref Col.Empty, ref 体配色.ハイライト);
-    		眼左_眼4_基CD = new ColorD(ref Col.Black, ref 体配色.眼0O);
-    		眼左_眼4_眼CD = new ColorD(ref Col.Black, ref 体配色.眼0O);
-    		眼左_眼4_ハイライトCD = new ColorD(ref Col.Empty, ref 体配色.ハイライト);
-    		眼左_眼5_基CD = new ColorD(ref Col.Black, ref 体配色.眼0O);
-    		眼左_眼5_眼CD = new ColorD(ref Col.Black, ref 体配色.眼0O);
-    		眼左_眼5_ハイライトCD = new ColorD(ref Col.Empty, ref 体配色.ハイライト);
-    		眼右_眼1_基CD = new ColorD(ref Col.Black, ref 体配色.眼0O);
-    		眼右_眼1_眼CD = new ColorD(ref Col.Black, ref 体配色.眼0O);
-    		眼右_眼1_ハイライトCD = new ColorD(ref Col.Empty, ref 体配色.ハイライト);
-    		眼右_眼2_基CD = new ColorD(ref Col.Black, ref 体配色.眼0O);
-    		眼右_眼2_眼CD = new ColorD(ref Col.Black, ref 体配色.眼0O);
-    		眼右_眼2_ハイライトCD = new ColorD(ref Col.Empty, ref 体配色.ハイライト);
-    		眼右_眼3_基CD = new ColorD(ref Col.Black, ref 体配色.眼0O);
-    		眼右_眼3_眼CD = new ColorD(ref Col.Black, ref 体配色.眼0O);
-    		眼右_眼3_ハイライトCD = new ColorD(ref Col.Empty, ref 体配色.ハイライト);
-    		眼右_眼4_基CD = new ColorD(ref Col.Black, ref 体配色.眼0O);
-    		眼右_眼4_眼CD = new ColorD(ref Col.Black, ref 体配色.眼0O);
-    		眼右_眼4_ハイライトCD = new ColorD(ref Col.Empty, ref 体配色.ハイライト);
-    		眼右_眼5_基CD = new ColorD(ref Col.Black, ref 体配色.眼0O);
-    		眼右_眼5_眼CD = new ColorD(ref Col.Black, ref 体配色.眼0O);
-    		眼右_眼5_ハイライトCD = new ColorD(ref Col.Empty, ref 体配色.ハイライト);
-    		角左_角左1CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		角左_角左2CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		角右_角右1CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		角右_角右2CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
+    		面CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		眼左_眼1_基CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼0O);
+    		眼左_眼1_眼CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼0O);
+    		眼左_眼1_ハイライトCD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト);
+    		眼左_眼2_基CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼0O);
+    		眼左_眼2_眼CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼0O);
+    		眼左_眼2_ハイライトCD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト);
+    		眼左_眼3_基CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼0O);
+    		眼左_眼3_眼CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼0O);
+    		眼左_眼3_ハイライトCD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト);
+    		眼左_眼4_基CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼0O);
+    		眼左_眼4_眼CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼0O);
+    		眼左_眼4_ハイライトCD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト);
+    		眼左_眼5_基CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼0O);
+    		眼左_眼5_眼CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼0O);
+    		眼左_眼5_ハイライトCD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト);
+    		眼右_眼1_基CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼0O);
+    		眼右_眼1_眼CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼0O);
+    		眼右_眼1_ハイライトCD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト);
+    		眼右_眼2_基CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼0O);
+    		眼右_眼2_眼CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼0O);
+    		眼右_眼2_ハイライトCD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト);
+    		眼右_眼3_基CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼0O);
+    		眼右_眼3_眼CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼0O);
+    		眼右_眼3_ハイライトCD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト);
+    		眼右_眼4_基CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼0O);
+    		眼右_眼4_眼CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼0O);
+    		眼右_眼4_ハイライトCD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト);
+    		眼右_眼5_基CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼0O);
+    		眼右_眼5_眼CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼0O);
+    		眼右_眼5_ハイライトCD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト);
+    		角左_角左1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		角左_角左2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		角右_角右1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		角右_角右2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
     	}
     }
 }

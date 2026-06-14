@@ -6,11 +6,11 @@ namespace SlaveMatrix
 {
     public class LowerArm_蹄 : 獣LowerArm
     {
-    	public Par X0Y0_LowerArm;
+    	public ShapePart X0Y0_LowerArm;
 
-    	public Par X0Y0_筋肉_筋肉下;
+    	public ShapePart X0Y0_筋肉_筋肉下;
 
-    	public Par X0Y0_筋肉_筋肉上;
+    	public ShapePart X0Y0_筋肉_筋肉上;
 
     	public ColorD LowerArmCD;
 
@@ -147,13 +147,13 @@ namespace SlaveMatrix
     	{
     		LowerArm_蹄 LowerArm_蹄2 = this;
     		ThisType = GetType();
-    		Dif dif = new Dif(Sta.腕左["四足LowerArm"][1]);
-    		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		X0Y0_LowerArm = pars["下腕"].ToPar();
-    		Pars pars2 = pars["筋肉"].ToPars();
+    		MorphVariant morphVariant = new MorphVariant(GlobalState.腕左["四足LowerArm"][1]);
+    		Body = new VariantGrid();
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_LowerArm = partGroup["下腕"].ToPar();
+    		PartGroup pars2 = partGroup["筋肉"].ToPars();
     		X0Y0_筋肉_筋肉下 = pars2["筋肉下"].ToPar();
     		X0Y0_筋肉_筋肉上 = pars2["筋肉上"].ToPar();
     		Xasix = false;
@@ -193,8 +193,8 @@ namespace SlaveMatrix
     		}
     		if (e.手_接続.Count > 0)
     		{
-    			Ele f;
-    			手_接続 = e.手_接続.Select(delegate(EleD g)
+    			Element f;
+    			手_接続 = e.手_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = LowerArm_蹄2;
@@ -232,7 +232,7 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		LowerArmCD = new ColorD(ref Col.Black, ref 体配色.毛0O);
+    		LowerArmCD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
     		筋肉_筋肉下CD = new ColorD(ref 体配色.薄線, ref 体配色.毛0O);
     		筋肉_筋肉上CD = new ColorD(ref 体配色.薄線, ref 体配色.毛0O);
     	}

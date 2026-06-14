@@ -26,21 +26,21 @@ namespace SlaveMatrix
 
     	public 主人公配色(主人公色 色)
     	{
-    		Col.GetSkinGrad(ref 色.肌色, out 肌色);
-    		Col.GetGrad(ref 色.血液, out 血液);
-    		刺青 = new Color2(ref 色.刺青, ref Col.Empty);
+    		ColorHelper.GetSkinGrad(ref 色.肌色, out 肌色);
+    		ColorHelper.GetGrad(ref 色.血液, out 血液);
+    		刺青 = new Color2(ref 色.刺青, ref ColorHelper.Empty);
     		精液ぶっかけ.Col1 = Color.FromArgb(125, 色.精液);
-    		精液ぶっかけ.Col2 = Col.Empty;
+    		精液ぶっかけ.Col2 = ColorHelper.Empty;
     		精液垂れ.Col1 = Color.FromArgb(200, 色.精液);
-    		精液垂れ.Col2 = Col.Empty;
-    		Col.GetMucosaColor(ref 色.肌色, out var ret);
-    		Col.GetGrad(ref ret, out 粘膜);
-    		Col.GetSkinColor2(ref 色.肌色, out ret);
+    		精液垂れ.Col2 = ColorHelper.Empty;
+    		ColorHelper.GetMucosaColor(ref 色.肌色, out var ret);
+    		ColorHelper.GetGrad(ref ret, out 粘膜);
+    		ColorHelper.GetSkinColor2(ref 色.肌色, out ret);
     		肌線 = Color.FromArgb(100, ret);
-    		Col.GetMucosaColor(ref 色.肌色, out ret);
-    		Col.Mul(ref ret, 1.0, 2.0, 0.5, out ret);
+    		ColorHelper.GetMucosaColor(ref 色.肌色, out ret);
+    		ColorHelper.Mul(ref ret, 1.0, 2.0, 0.5, out ret);
     		粘線 = Color.FromArgb(80, ret);
-    		精線 = Color.FromArgb(80, Col.White);
+    		精線 = Color.FromArgb(80, ColorHelper.White);
     	}
 
     	public 主人公配色(主人公配色 s)

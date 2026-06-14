@@ -4,41 +4,41 @@ namespace SlaveMatrix
 {
     public class 下着トップ_クロス : 下着トップ
     {
-    	public Par X0Y0_布_布左_布;
+    	public ShapePart X0Y0_布_布左_布;
 
-    	public Par X0Y0_布_布左_皺_皺1;
+    	public ShapePart X0Y0_布_布左_皺_皺1;
 
-    	public Par X0Y0_布_布左_皺_皺2;
+    	public ShapePart X0Y0_布_布左_皺_皺2;
 
-    	public Par X0Y0_布_布左_縁_縁1;
+    	public ShapePart X0Y0_布_布左_縁_縁1;
 
-    	public Par X0Y0_布_布左_縁_縁2;
+    	public ShapePart X0Y0_布_布左_縁_縁2;
 
-    	public Par X0Y0_布_布右_布;
+    	public ShapePart X0Y0_布_布右_布;
 
-    	public Par X0Y0_布_布右_皺_皺1;
+    	public ShapePart X0Y0_布_布右_皺_皺1;
 
-    	public Par X0Y0_布_布右_皺_皺2;
+    	public ShapePart X0Y0_布_布右_皺_皺2;
 
-    	public Par X0Y0_布_布右_縁_縁1;
+    	public ShapePart X0Y0_布_布右_縁_縁1;
 
-    	public Par X0Y0_布_布右_縁_縁2;
+    	public ShapePart X0Y0_布_布右_縁_縁2;
 
-    	public Par X0Y0_カップ右_布;
+    	public ShapePart X0Y0_カップ右_布;
 
-    	public Par X0Y0_カップ右_皺;
+    	public ShapePart X0Y0_カップ右_皺;
 
-    	public Par X0Y0_カップ右_縁_縁1;
+    	public ShapePart X0Y0_カップ右_縁_縁1;
 
-    	public Par X0Y0_カップ右_縁_縁2;
+    	public ShapePart X0Y0_カップ右_縁_縁2;
 
-    	public Par X0Y0_カップ左_布;
+    	public ShapePart X0Y0_カップ左_布;
 
-    	public Par X0Y0_カップ左_皺;
+    	public ShapePart X0Y0_カップ左_皺;
 
-    	public Par X0Y0_カップ左_縁_縁1;
+    	public ShapePart X0Y0_カップ左_縁_縁1;
 
-    	public Par X0Y0_カップ左_縁_縁2;
+    	public ShapePart X0Y0_カップ左_縁_縁2;
 
     	public ColorD 布_布左_布CD;
 
@@ -591,15 +591,15 @@ namespace SlaveMatrix
     	public 下着トップ_クロス(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 下着トップ_クロスD e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif(Sta.胴体["下着トップ"][4]);
-    		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		Pars pars2 = pars["布"].ToPars();
-    		Pars pars3 = pars2["布左"].ToPars();
+    		MorphVariant morphVariant = new MorphVariant(GlobalState.胴体["下着トップ"][4]);
+    		Body = new VariantGrid();
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
+    		PartGroup partGroup = Body[0][0];
+    		PartGroup pars2 = partGroup["布"].ToPars();
+    		PartGroup pars3 = pars2["布左"].ToPars();
     		X0Y0_布_布左_布 = pars3["布"].ToPar();
-    		Pars pars4 = pars3["皺"].ToPars();
+    		PartGroup pars4 = pars3["皺"].ToPars();
     		X0Y0_布_布左_皺_皺1 = pars4["皺1"].ToPar();
     		X0Y0_布_布左_皺_皺2 = pars4["皺2"].ToPar();
     		pars4 = pars3["縁"].ToPars();
@@ -613,13 +613,13 @@ namespace SlaveMatrix
     		pars4 = pars3["縁"].ToPars();
     		X0Y0_布_布右_縁_縁1 = pars4["縁1"].ToPar();
     		X0Y0_布_布右_縁_縁2 = pars4["縁2"].ToPar();
-    		pars2 = pars["カップ右"].ToPars();
+    		pars2 = partGroup["カップ右"].ToPars();
     		X0Y0_カップ右_布 = pars2["布"].ToPar();
     		X0Y0_カップ右_皺 = pars2["皺"].ToPar();
     		pars3 = pars2["縁"].ToPars();
     		X0Y0_カップ右_縁_縁1 = pars3["縁1"].ToPar();
     		X0Y0_カップ右_縁_縁2 = pars3["縁2"].ToPar();
-    		pars2 = pars["カップ左"].ToPars();
+    		pars2 = partGroup["カップ左"].ToPars();
     		X0Y0_カップ左_布 = pars2["布"].ToPar();
     		X0Y0_カップ左_皺 = pars2["皺"].ToPar();
     		pars3 = pars2["縁"].ToPars();
@@ -734,7 +734,7 @@ namespace SlaveMatrix
     		Are.Draw(X0Y0_カップ左_縁_縁2);
     	}
 
-    	public override bool Is布(Par p)
+    	public override bool Is布(ShapePart p)
     	{
     		if (p != X0Y0_布_布左_布 && p != X0Y0_布_布左_皺_皺1 && p != X0Y0_布_布左_皺_皺2 && p != X0Y0_布_布左_縁_縁1 && p != X0Y0_布_布左_縁_縁2 && p != X0Y0_布_布右_布 && p != X0Y0_布_布右_皺_皺1 && p != X0Y0_布_布右_皺_皺2 && p != X0Y0_布_布右_縁_縁1 && p != X0Y0_布_布右_縁_縁2 && p != X0Y0_カップ右_布 && p != X0Y0_カップ右_皺 && p != X0Y0_カップ右_縁_縁1 && p != X0Y0_カップ右_縁_縁2 && p != X0Y0_カップ左_布 && p != X0Y0_カップ左_皺 && p != X0Y0_カップ左_縁_縁1)
     		{
@@ -783,11 +783,11 @@ namespace SlaveMatrix
     		布_布右_縁_縁1CD = new ColorD();
     		布_布右_縁_縁2CD = new ColorD();
     		カップ右_布CD = new ColorD();
-    		カップ右_皺CD = new ColorD(ref Col.Black, ref Color2.Empty);
+    		カップ右_皺CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
     		カップ右_縁_縁1CD = new ColorD();
     		カップ右_縁_縁2CD = new ColorD();
     		カップ左_布CD = new ColorD();
-    		カップ左_皺CD = new ColorD(ref Col.Black, ref Color2.Empty);
+    		カップ左_皺CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
     		カップ左_縁_縁1CD = new ColorD();
     		カップ左_縁_縁2CD = new ColorD();
     	}

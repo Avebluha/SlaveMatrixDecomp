@@ -3,9 +3,9 @@ using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
-    public class 衝撃 : Ele
+    public class 衝撃 : Element
     {
-    	public Par X0Y0_衝撃;
+    	public ShapePart X0Y0_衝撃;
 
     	public ColorD 衝撃CD;
 
@@ -87,9 +87,9 @@ namespace SlaveMatrix
     	public 衝撃(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 衝撃D e)
     	{
     		ThisType = GetType();
-    		Body = new Difs(Sta.その他["衝撃"]);
-    		Pars pars = Body[0][0];
-    		X0Y0_衝撃 = pars["衝撃"].ToPar();
+    		Body = new VariantGrid(GlobalState.その他["衝撃"]);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_衝撃 = partGroup["衝撃"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;
@@ -141,8 +141,8 @@ namespace SlaveMatrix
     	private void 配色N0(BodyColorSet 体配色)
     	{
     		衝撃CD = new ColorD();
-    		衝撃CD.線 = Col.Empty;
-    		衝撃CD.色 = new Color2(ref Col.White, ref Col.Empty);
+    		衝撃CD.線 = ColorHelper.Empty;
+    		衝撃CD.色 = new Color2(ref ColorHelper.White, ref ColorHelper.Empty);
     	}
     }
 }

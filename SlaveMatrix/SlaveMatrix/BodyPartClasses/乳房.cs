@@ -4,129 +4,129 @@ using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
-    public class 乳房 : Ele
+    public class 乳房 : Element
     {
-    	public Par X0Y0_乳房;
+    	public ShapePart X0Y0_乳房;
 
-    	public Par X0Y0_乳輪;
+    	public ShapePart X0Y0_乳輪;
 
-    	public Par X0Y0_乳首;
+    	public ShapePart X0Y0_乳首;
 
-    	public Par X0Y0_淫タトゥ_タトゥ1;
+    	public ShapePart X0Y0_淫タトゥ_タトゥ1;
 
-    	public Par X0Y0_淫タトゥ_タトゥ2;
+    	public ShapePart X0Y0_淫タトゥ_タトゥ2;
 
-    	public Par X0Y0_淫タトゥ_タトゥ3;
+    	public ShapePart X0Y0_淫タトゥ_タトゥ3;
 
-    	public Par X0Y0_淫タトゥ_タトゥ4;
+    	public ShapePart X0Y0_淫タトゥ_タトゥ4;
 
-    	public Par X0Y0_ハイライト1;
+    	public ShapePart X0Y0_ハイライト1;
 
-    	public Par X0Y0_ハイライト2;
+    	public ShapePart X0Y0_ハイライト2;
 
-    	public Par X0Y0_傷X;
+    	public ShapePart X0Y0_傷X;
 
-    	public Par X0Y0_傷I1;
+    	public ShapePart X0Y0_傷I1;
 
-    	public Par X0Y0_傷I2;
+    	public ShapePart X0Y0_傷I2;
 
-    	public Par X0Y0_虫性_甲殻;
+    	public ShapePart X0Y0_虫性_甲殻;
 
-    	public Par X0Y1_乳房;
+    	public ShapePart X0Y1_乳房;
 
-    	public Par X0Y1_乳輪;
+    	public ShapePart X0Y1_乳輪;
 
-    	public Par X0Y1_乳首;
+    	public ShapePart X0Y1_乳首;
 
-    	public Par X0Y1_淫タトゥ_タトゥ1;
+    	public ShapePart X0Y1_淫タトゥ_タトゥ1;
 
-    	public Par X0Y1_淫タトゥ_タトゥ2;
+    	public ShapePart X0Y1_淫タトゥ_タトゥ2;
 
-    	public Par X0Y1_淫タトゥ_タトゥ3;
+    	public ShapePart X0Y1_淫タトゥ_タトゥ3;
 
-    	public Par X0Y1_淫タトゥ_タトゥ4;
+    	public ShapePart X0Y1_淫タトゥ_タトゥ4;
 
-    	public Par X0Y1_ハイライト1;
+    	public ShapePart X0Y1_ハイライト1;
 
-    	public Par X0Y1_ハイライト2;
+    	public ShapePart X0Y1_ハイライト2;
 
-    	public Par X0Y1_傷X;
+    	public ShapePart X0Y1_傷X;
 
-    	public Par X0Y1_傷I1;
+    	public ShapePart X0Y1_傷I1;
 
-    	public Par X0Y1_傷I2;
+    	public ShapePart X0Y1_傷I2;
 
-    	public Par X0Y1_虫性_甲殻;
+    	public ShapePart X0Y1_虫性_甲殻;
 
-    	public Par X0Y2_乳房;
+    	public ShapePart X0Y2_乳房;
 
-    	public Par X0Y2_乳輪;
+    	public ShapePart X0Y2_乳輪;
 
-    	public Par X0Y2_乳首;
+    	public ShapePart X0Y2_乳首;
 
-    	public Par X0Y2_淫タトゥ_タトゥ3;
+    	public ShapePart X0Y2_淫タトゥ_タトゥ3;
 
-    	public Par X0Y2_淫タトゥ_タトゥ4;
+    	public ShapePart X0Y2_淫タトゥ_タトゥ4;
 
-    	public Par X0Y2_ハイライト1;
+    	public ShapePart X0Y2_ハイライト1;
 
-    	public Par X0Y2_ハイライト2;
+    	public ShapePart X0Y2_ハイライト2;
 
-    	public Par X0Y2_傷X;
+    	public ShapePart X0Y2_傷X;
 
-    	public Par X0Y2_傷I1;
+    	public ShapePart X0Y2_傷I1;
 
-    	public Par X0Y2_傷I2;
+    	public ShapePart X0Y2_傷I2;
 
-    	public Par X0Y2_虫性_甲殻;
+    	public ShapePart X0Y2_虫性_甲殻;
 
-    	public Par X0Y3_乳房;
+    	public ShapePart X0Y3_乳房;
 
-    	public Par X0Y3_乳輪;
+    	public ShapePart X0Y3_乳輪;
 
-    	public Par X0Y3_乳首;
+    	public ShapePart X0Y3_乳首;
 
-    	public Par X0Y3_淫タトゥ_タトゥ1;
+    	public ShapePart X0Y3_淫タトゥ_タトゥ1;
 
-    	public Par X0Y3_淫タトゥ_タトゥ3;
+    	public ShapePart X0Y3_淫タトゥ_タトゥ3;
 
-    	public Par X0Y3_淫タトゥ_タトゥ4;
+    	public ShapePart X0Y3_淫タトゥ_タトゥ4;
 
-    	public Par X0Y3_ハイライト1;
+    	public ShapePart X0Y3_ハイライト1;
 
-    	public Par X0Y3_ハイライト2;
+    	public ShapePart X0Y3_ハイライト2;
 
-    	public Par X0Y3_傷X;
+    	public ShapePart X0Y3_傷X;
 
-    	public Par X0Y3_傷I1;
+    	public ShapePart X0Y3_傷I1;
 
-    	public Par X0Y3_傷I2;
+    	public ShapePart X0Y3_傷I2;
 
-    	public Par X0Y3_虫性_甲殻;
+    	public ShapePart X0Y3_虫性_甲殻;
 
-    	public Par X0Y4_乳房;
+    	public ShapePart X0Y4_乳房;
 
-    	public Par X0Y4_乳輪;
+    	public ShapePart X0Y4_乳輪;
 
-    	public Par X0Y4_乳首;
+    	public ShapePart X0Y4_乳首;
 
-    	public Par X0Y4_淫タトゥ_タトゥ1;
+    	public ShapePart X0Y4_淫タトゥ_タトゥ1;
 
-    	public Par X0Y4_淫タトゥ_タトゥ3;
+    	public ShapePart X0Y4_淫タトゥ_タトゥ3;
 
-    	public Par X0Y4_淫タトゥ_タトゥ4;
+    	public ShapePart X0Y4_淫タトゥ_タトゥ4;
 
-    	public Par X0Y4_ハイライト1;
+    	public ShapePart X0Y4_ハイライト1;
 
-    	public Par X0Y4_ハイライト2;
+    	public ShapePart X0Y4_ハイライト2;
 
-    	public Par X0Y4_傷X;
+    	public ShapePart X0Y4_傷X;
 
-    	public Par X0Y4_傷I1;
+    	public ShapePart X0Y4_傷I1;
 
-    	public Par X0Y4_傷I2;
+    	public ShapePart X0Y4_傷I2;
 
-    	public Par X0Y4_虫性_甲殻;
+    	public ShapePart X0Y4_虫性_甲殻;
 
     	public ColorD 乳房CD;
 
@@ -288,7 +288,7 @@ namespace SlaveMatrix
 
     	public スタンプW 鞭痕;
 
-    	public Ele[] 噴乳_接続;
+    	public Element[] 噴乳_接続;
 
     	public override bool 欠損
     	{
@@ -746,7 +746,7 @@ namespace SlaveMatrix
     		}
     		set
     		{
-    			foreach (Par item in Body.EnumAllPar())
+    			foreach (ShapePart item in Body.EnumAllPar())
     			{
     				item.SetSizeBase(value);
     			}
@@ -762,7 +762,7 @@ namespace SlaveMatrix
     		}
     		set
     		{
-    			foreach (Par item in Body.EnumAllPar())
+    			foreach (ShapePart item in Body.EnumAllPar())
     			{
     				item.SetSizeYBase(value);
     			}
@@ -786,7 +786,7 @@ namespace SlaveMatrix
     			}
     			else
     			{
-    				位置C = Dat.Vec2DZero;
+    				位置C = DataConsts.Vec2DZero;
     			}
     		}
     	}
@@ -797,82 +797,82 @@ namespace SlaveMatrix
     	{
     		乳房 乳房2 = this;
     		ThisType = GetType();
-    		Body = new Difs(Sta.胴体["胸左"]);
-    		Pars pars = Body[0][0];
-    		X0Y0_乳房 = pars["乳房"].ToPar();
-    		X0Y0_乳輪 = pars["乳輪"].ToPar();
-    		X0Y0_乳首 = pars["乳首"].ToPar();
-    		Pars pars2 = pars["淫タトゥ"].ToPars();
+    		Body = new VariantGrid(GlobalState.胴体["胸左"]);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_乳房 = partGroup["乳房"].ToPar();
+    		X0Y0_乳輪 = partGroup["乳輪"].ToPar();
+    		X0Y0_乳首 = partGroup["乳首"].ToPar();
+    		PartGroup pars2 = partGroup["淫タトゥ"].ToPars();
     		X0Y0_淫タトゥ_タトゥ1 = pars2["タトゥ1"].ToPar();
     		X0Y0_淫タトゥ_タトゥ2 = pars2["タトゥ2"].ToPar();
     		X0Y0_淫タトゥ_タトゥ3 = pars2["タトゥ3"].ToPar();
     		X0Y0_淫タトゥ_タトゥ4 = pars2["タトゥ4"].ToPar();
-    		X0Y0_ハイライト1 = pars["ハイライト1"].ToPar();
-    		X0Y0_ハイライト2 = pars["ハイライト2"].ToPar();
-    		X0Y0_傷X = pars["傷X"].ToPar();
-    		X0Y0_傷I1 = pars["傷I1"].ToPar();
-    		X0Y0_傷I2 = pars["傷I2"].ToPar();
-    		pars2 = pars["虫性"].ToPars();
+    		X0Y0_ハイライト1 = partGroup["ハイライト1"].ToPar();
+    		X0Y0_ハイライト2 = partGroup["ハイライト2"].ToPar();
+    		X0Y0_傷X = partGroup["傷X"].ToPar();
+    		X0Y0_傷I1 = partGroup["傷I1"].ToPar();
+    		X0Y0_傷I2 = partGroup["傷I2"].ToPar();
+    		pars2 = partGroup["虫性"].ToPars();
     		X0Y0_虫性_甲殻 = pars2["甲殻"].ToPar();
-    		pars = Body[0][1];
-    		X0Y1_乳房 = pars["乳房"].ToPar();
-    		X0Y1_乳輪 = pars["乳輪"].ToPar();
-    		X0Y1_乳首 = pars["乳首"].ToPar();
-    		pars2 = pars["淫タトゥ"].ToPars();
+    		partGroup = Body[0][1];
+    		X0Y1_乳房 = partGroup["乳房"].ToPar();
+    		X0Y1_乳輪 = partGroup["乳輪"].ToPar();
+    		X0Y1_乳首 = partGroup["乳首"].ToPar();
+    		pars2 = partGroup["淫タトゥ"].ToPars();
     		X0Y1_淫タトゥ_タトゥ1 = pars2["タトゥ1"].ToPar();
     		X0Y1_淫タトゥ_タトゥ2 = pars2["タトゥ2"].ToPar();
     		X0Y1_淫タトゥ_タトゥ3 = pars2["タトゥ3"].ToPar();
     		X0Y1_淫タトゥ_タトゥ4 = pars2["タトゥ4"].ToPar();
-    		X0Y1_ハイライト1 = pars["ハイライト1"].ToPar();
-    		X0Y1_ハイライト2 = pars["ハイライト2"].ToPar();
-    		X0Y1_傷X = pars["傷X"].ToPar();
-    		X0Y1_傷I1 = pars["傷I1"].ToPar();
-    		X0Y1_傷I2 = pars["傷I2"].ToPar();
-    		pars2 = pars["虫性"].ToPars();
+    		X0Y1_ハイライト1 = partGroup["ハイライト1"].ToPar();
+    		X0Y1_ハイライト2 = partGroup["ハイライト2"].ToPar();
+    		X0Y1_傷X = partGroup["傷X"].ToPar();
+    		X0Y1_傷I1 = partGroup["傷I1"].ToPar();
+    		X0Y1_傷I2 = partGroup["傷I2"].ToPar();
+    		pars2 = partGroup["虫性"].ToPars();
     		X0Y1_虫性_甲殻 = pars2["甲殻"].ToPar();
-    		pars = Body[0][2];
-    		X0Y2_乳房 = pars["乳房"].ToPar();
-    		X0Y2_乳輪 = pars["乳輪"].ToPar();
-    		X0Y2_乳首 = pars["乳首"].ToPar();
-    		pars2 = pars["淫タトゥ"].ToPars();
+    		partGroup = Body[0][2];
+    		X0Y2_乳房 = partGroup["乳房"].ToPar();
+    		X0Y2_乳輪 = partGroup["乳輪"].ToPar();
+    		X0Y2_乳首 = partGroup["乳首"].ToPar();
+    		pars2 = partGroup["淫タトゥ"].ToPars();
     		X0Y2_淫タトゥ_タトゥ3 = pars2["タトゥ3"].ToPar();
     		X0Y2_淫タトゥ_タトゥ4 = pars2["タトゥ4"].ToPar();
-    		X0Y2_ハイライト1 = pars["ハイライト1"].ToPar();
-    		X0Y2_ハイライト2 = pars["ハイライト2"].ToPar();
-    		X0Y2_傷X = pars["傷X"].ToPar();
-    		X0Y2_傷I1 = pars["傷I1"].ToPar();
-    		X0Y2_傷I2 = pars["傷I2"].ToPar();
-    		pars2 = pars["虫性"].ToPars();
+    		X0Y2_ハイライト1 = partGroup["ハイライト1"].ToPar();
+    		X0Y2_ハイライト2 = partGroup["ハイライト2"].ToPar();
+    		X0Y2_傷X = partGroup["傷X"].ToPar();
+    		X0Y2_傷I1 = partGroup["傷I1"].ToPar();
+    		X0Y2_傷I2 = partGroup["傷I2"].ToPar();
+    		pars2 = partGroup["虫性"].ToPars();
     		X0Y2_虫性_甲殻 = pars2["甲殻"].ToPar();
-    		pars = Body[0][3];
-    		X0Y3_乳房 = pars["乳房"].ToPar();
-    		X0Y3_乳輪 = pars["乳輪"].ToPar();
-    		X0Y3_乳首 = pars["乳首"].ToPar();
-    		pars2 = pars["淫タトゥ"].ToPars();
+    		partGroup = Body[0][3];
+    		X0Y3_乳房 = partGroup["乳房"].ToPar();
+    		X0Y3_乳輪 = partGroup["乳輪"].ToPar();
+    		X0Y3_乳首 = partGroup["乳首"].ToPar();
+    		pars2 = partGroup["淫タトゥ"].ToPars();
     		X0Y3_淫タトゥ_タトゥ1 = pars2["タトゥ1"].ToPar();
     		X0Y3_淫タトゥ_タトゥ3 = pars2["タトゥ3"].ToPar();
     		X0Y3_淫タトゥ_タトゥ4 = pars2["タトゥ4"].ToPar();
-    		X0Y3_ハイライト1 = pars["ハイライト1"].ToPar();
-    		X0Y3_ハイライト2 = pars["ハイライト2"].ToPar();
-    		X0Y3_傷X = pars["傷X"].ToPar();
-    		X0Y3_傷I1 = pars["傷I1"].ToPar();
-    		X0Y3_傷I2 = pars["傷I2"].ToPar();
-    		pars2 = pars["虫性"].ToPars();
+    		X0Y3_ハイライト1 = partGroup["ハイライト1"].ToPar();
+    		X0Y3_ハイライト2 = partGroup["ハイライト2"].ToPar();
+    		X0Y3_傷X = partGroup["傷X"].ToPar();
+    		X0Y3_傷I1 = partGroup["傷I1"].ToPar();
+    		X0Y3_傷I2 = partGroup["傷I2"].ToPar();
+    		pars2 = partGroup["虫性"].ToPars();
     		X0Y3_虫性_甲殻 = pars2["甲殻"].ToPar();
-    		pars = Body[0][4];
-    		X0Y4_乳房 = pars["乳房"].ToPar();
-    		X0Y4_乳輪 = pars["乳輪"].ToPar();
-    		X0Y4_乳首 = pars["乳首"].ToPar();
-    		pars2 = pars["淫タトゥ"].ToPars();
+    		partGroup = Body[0][4];
+    		X0Y4_乳房 = partGroup["乳房"].ToPar();
+    		X0Y4_乳輪 = partGroup["乳輪"].ToPar();
+    		X0Y4_乳首 = partGroup["乳首"].ToPar();
+    		pars2 = partGroup["淫タトゥ"].ToPars();
     		X0Y4_淫タトゥ_タトゥ1 = pars2["タトゥ1"].ToPar();
     		X0Y4_淫タトゥ_タトゥ3 = pars2["タトゥ3"].ToPar();
     		X0Y4_淫タトゥ_タトゥ4 = pars2["タトゥ4"].ToPar();
-    		X0Y4_ハイライト1 = pars["ハイライト1"].ToPar();
-    		X0Y4_ハイライト2 = pars["ハイライト2"].ToPar();
-    		X0Y4_傷X = pars["傷X"].ToPar();
-    		X0Y4_傷I1 = pars["傷I1"].ToPar();
-    		X0Y4_傷I2 = pars["傷I2"].ToPar();
-    		pars2 = pars["虫性"].ToPars();
+    		X0Y4_ハイライト1 = partGroup["ハイライト1"].ToPar();
+    		X0Y4_ハイライト2 = partGroup["ハイライト2"].ToPar();
+    		X0Y4_傷X = partGroup["傷X"].ToPar();
+    		X0Y4_傷I1 = partGroup["傷I1"].ToPar();
+    		X0Y4_傷I2 = partGroup["傷I2"].ToPar();
+    		pars2 = partGroup["虫性"].ToPars();
     		X0Y4_虫性_甲殻 = pars2["甲殻"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
@@ -925,8 +925,8 @@ namespace SlaveMatrix
     		}
     		if (e.噴乳_接続.Count > 0)
     		{
-    			Ele f;
-    			噴乳_接続 = e.噴乳_接続.Select(delegate(EleD g)
+    			Element f;
+    			噴乳_接続 = e.噴乳_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 乳房2;
@@ -1178,19 +1178,19 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		乳房CD = new ColorD(ref Col.Black, ref 体配色.人肌O);
-    		乳輪CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
+    		乳房CD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌O);
+    		乳輪CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
     		乳首CD = new ColorD(ref 体配色.粘膜線, ref 体配色.粘膜);
-    		淫タトゥ_タトゥ1CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_タトゥ2CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_タトゥ3CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_タトゥ4CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		ハイライト1CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
-    		ハイライト2CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
-    		傷XCD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		傷I1CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		傷I2CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		虫性_甲殻CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
+    		淫タトゥ_タトゥ1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_タトゥ2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_タトゥ3CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_タトゥ4CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		ハイライト1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		ハイライト2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		傷XCD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		傷I1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		傷I2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		虫性_甲殻CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
     	}
     }
 }

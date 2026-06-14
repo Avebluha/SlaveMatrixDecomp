@@ -5,667 +5,667 @@ namespace SlaveMatrix
 {
     public class 手_人 : 手
     {
-    	public Par X0Y0_グローブ_グローブ;
+    	public ShapePart X0Y0_グローブ_グローブ;
 
-    	public Par X0Y0_グローブ_縁1;
+    	public ShapePart X0Y0_グローブ_縁1;
 
-    	public Par X0Y0_グローブ_縁2;
+    	public ShapePart X0Y0_グローブ_縁2;
 
-    	public Par X0Y0_獣性_獣毛;
+    	public ShapePart X0Y0_獣性_獣毛;
 
-    	public Par X0Y0_手;
+    	public ShapePart X0Y0_手;
 
-    	public Par X0Y0_獣性_肉球;
+    	public ShapePart X0Y0_獣性_肉球;
 
-    	public Par X0Y0_人指_人指1;
+    	public ShapePart X0Y0_人指_人指1;
 
-    	public Par X0Y0_人指_人指3;
+    	public ShapePart X0Y0_人指_人指3;
 
-    	public Par X0Y0_人指_人指2;
+    	public ShapePart X0Y0_人指_人指2;
 
-    	public Par X0Y0_人指_水掻;
+    	public ShapePart X0Y0_人指_水掻;
 
-    	public Par X0Y0_中指_中指1;
+    	public ShapePart X0Y0_中指_中指1;
 
-    	public Par X0Y0_中指_中指3;
+    	public ShapePart X0Y0_中指_中指3;
 
-    	public Par X0Y0_中指_中指2;
+    	public ShapePart X0Y0_中指_中指2;
 
-    	public Par X0Y0_中指_水掻;
+    	public ShapePart X0Y0_中指_水掻;
 
-    	public Par X0Y0_薬指_薬指1;
+    	public ShapePart X0Y0_薬指_薬指1;
 
-    	public Par X0Y0_薬指_薬指3;
+    	public ShapePart X0Y0_薬指_薬指3;
 
-    	public Par X0Y0_薬指_薬指2;
+    	public ShapePart X0Y0_薬指_薬指2;
 
-    	public Par X0Y0_薬指_水掻;
+    	public ShapePart X0Y0_薬指_水掻;
 
-    	public Par X0Y0_小指_小指1;
+    	public ShapePart X0Y0_小指_小指1;
 
-    	public Par X0Y0_小指_小指3;
+    	public ShapePart X0Y0_小指_小指3;
 
-    	public Par X0Y0_小指_小指2;
+    	public ShapePart X0Y0_小指_小指2;
 
-    	public Par X0Y0_親指_水掻;
+    	public ShapePart X0Y0_親指_水掻;
 
-    	public Par X0Y0_親指_親指1;
+    	public ShapePart X0Y0_親指_親指1;
 
-    	public Par X0Y0_親指_獣性_肉球;
+    	public ShapePart X0Y0_親指_獣性_肉球;
 
-    	public Par X0Y0_親指_親指2;
+    	public ShapePart X0Y0_親指_親指2;
 
-    	public Par X0Y0_親指_親指3;
+    	public ShapePart X0Y0_親指_親指3;
 
-    	public Par X0Y1_親指_親指3;
+    	public ShapePart X0Y1_親指_親指3;
 
-    	public Par X0Y1_親指_親指2;
+    	public ShapePart X0Y1_親指_親指2;
 
-    	public Par X0Y1_親指_親指1;
+    	public ShapePart X0Y1_親指_親指1;
 
-    	public Par X0Y1_親指_水掻;
+    	public ShapePart X0Y1_親指_水掻;
 
-    	public Par X0Y1_人指_人指3;
+    	public ShapePart X0Y1_人指_人指3;
 
-    	public Par X0Y1_人指_人指2;
+    	public ShapePart X0Y1_人指_人指2;
 
-    	public Par X0Y1_人指_人指1;
+    	public ShapePart X0Y1_人指_人指1;
 
-    	public Par X0Y1_人指_水掻;
+    	public ShapePart X0Y1_人指_水掻;
 
-    	public Par X0Y1_中指_中指3;
+    	public ShapePart X0Y1_中指_中指3;
 
-    	public Par X0Y1_中指_中指2;
+    	public ShapePart X0Y1_中指_中指2;
 
-    	public Par X0Y1_中指_中指1;
+    	public ShapePart X0Y1_中指_中指1;
 
-    	public Par X0Y1_中指_水掻;
+    	public ShapePart X0Y1_中指_水掻;
 
-    	public Par X0Y1_薬指_薬指3;
+    	public ShapePart X0Y1_薬指_薬指3;
 
-    	public Par X0Y1_薬指_薬指2;
+    	public ShapePart X0Y1_薬指_薬指2;
 
-    	public Par X0Y1_薬指_薬指1;
+    	public ShapePart X0Y1_薬指_薬指1;
 
-    	public Par X0Y1_薬指_水掻;
+    	public ShapePart X0Y1_薬指_水掻;
 
-    	public Par X0Y1_小指_小指3;
+    	public ShapePart X0Y1_小指_小指3;
 
-    	public Par X0Y1_小指_小指2;
+    	public ShapePart X0Y1_小指_小指2;
 
-    	public Par X0Y1_小指_小指1;
+    	public ShapePart X0Y1_小指_小指1;
 
-    	public Par X0Y1_手;
+    	public ShapePart X0Y1_手;
 
-    	public Par X0Y1_獣性_獣毛;
+    	public ShapePart X0Y1_獣性_獣毛;
 
-    	public Par X0Y1_竜性_鱗1;
+    	public ShapePart X0Y1_竜性_鱗1;
 
-    	public Par X0Y1_竜性_鱗2;
+    	public ShapePart X0Y1_竜性_鱗2;
 
-    	public Par X0Y1_竜性_鱗3;
+    	public ShapePart X0Y1_竜性_鱗3;
 
-    	public Par X0Y1_悪タトゥ_五芒星_円1;
+    	public ShapePart X0Y1_悪タトゥ_五芒星_円1;
 
-    	public Par X0Y1_悪タトゥ_五芒星_円2;
+    	public ShapePart X0Y1_悪タトゥ_五芒星_円2;
 
-    	public Par X0Y1_悪タトゥ_五芒星_星;
+    	public ShapePart X0Y1_悪タトゥ_五芒星_星;
 
-    	public Par X0Y1_悪タトゥ_五芒星_五角形;
+    	public ShapePart X0Y1_悪タトゥ_五芒星_五角形;
 
-    	public Par X0Y1_グローブ_グローブ;
+    	public ShapePart X0Y1_グローブ_グローブ;
 
-    	public Par X0Y1_グローブ_縁1;
+    	public ShapePart X0Y1_グローブ_縁1;
 
-    	public Par X0Y1_グローブ_縁2;
+    	public ShapePart X0Y1_グローブ_縁2;
 
-    	public Par X0Y2_親指_親指3;
+    	public ShapePart X0Y2_親指_親指3;
 
-    	public Par X0Y2_親指_親指2;
+    	public ShapePart X0Y2_親指_親指2;
 
-    	public Par X0Y2_親指_親指1;
+    	public ShapePart X0Y2_親指_親指1;
 
-    	public Par X0Y2_親指_水掻;
+    	public ShapePart X0Y2_親指_水掻;
 
-    	public Par X0Y2_人指_人指3;
+    	public ShapePart X0Y2_人指_人指3;
 
-    	public Par X0Y2_人指_人指2;
+    	public ShapePart X0Y2_人指_人指2;
 
-    	public Par X0Y2_人指_人指1;
+    	public ShapePart X0Y2_人指_人指1;
 
-    	public Par X0Y2_人指_水掻;
+    	public ShapePart X0Y2_人指_水掻;
 
-    	public Par X0Y2_中指_中指3;
+    	public ShapePart X0Y2_中指_中指3;
 
-    	public Par X0Y2_中指_中指2;
+    	public ShapePart X0Y2_中指_中指2;
 
-    	public Par X0Y2_中指_中指1;
+    	public ShapePart X0Y2_中指_中指1;
 
-    	public Par X0Y2_中指_水掻;
+    	public ShapePart X0Y2_中指_水掻;
 
-    	public Par X0Y2_薬指_薬指3;
+    	public ShapePart X0Y2_薬指_薬指3;
 
-    	public Par X0Y2_薬指_薬指2;
+    	public ShapePart X0Y2_薬指_薬指2;
 
-    	public Par X0Y2_薬指_薬指1;
+    	public ShapePart X0Y2_薬指_薬指1;
 
-    	public Par X0Y2_薬指_水掻;
+    	public ShapePart X0Y2_薬指_水掻;
 
-    	public Par X0Y2_小指_小指3;
+    	public ShapePart X0Y2_小指_小指3;
 
-    	public Par X0Y2_小指_小指2;
+    	public ShapePart X0Y2_小指_小指2;
 
-    	public Par X0Y2_小指_小指1;
+    	public ShapePart X0Y2_小指_小指1;
 
-    	public Par X0Y2_手;
+    	public ShapePart X0Y2_手;
 
-    	public Par X0Y2_獣性_獣毛;
+    	public ShapePart X0Y2_獣性_獣毛;
 
-    	public Par X0Y2_竜性_鱗1;
+    	public ShapePart X0Y2_竜性_鱗1;
 
-    	public Par X0Y2_竜性_鱗2;
+    	public ShapePart X0Y2_竜性_鱗2;
 
-    	public Par X0Y2_竜性_鱗3;
+    	public ShapePart X0Y2_竜性_鱗3;
 
-    	public Par X0Y2_悪タトゥ_五芒星_円1;
+    	public ShapePart X0Y2_悪タトゥ_五芒星_円1;
 
-    	public Par X0Y2_悪タトゥ_五芒星_円2;
+    	public ShapePart X0Y2_悪タトゥ_五芒星_円2;
 
-    	public Par X0Y2_悪タトゥ_五芒星_星;
+    	public ShapePart X0Y2_悪タトゥ_五芒星_星;
 
-    	public Par X0Y2_悪タトゥ_五芒星_五角形;
+    	public ShapePart X0Y2_悪タトゥ_五芒星_五角形;
 
-    	public Par X0Y2_グローブ_グローブ;
+    	public ShapePart X0Y2_グローブ_グローブ;
 
-    	public Par X0Y2_グローブ_縁1;
+    	public ShapePart X0Y2_グローブ_縁1;
 
-    	public Par X0Y2_グローブ_縁2;
+    	public ShapePart X0Y2_グローブ_縁2;
 
-    	public Par X0Y3_親指_親指1;
+    	public ShapePart X0Y3_親指_親指1;
 
-    	public Par X0Y3_親指_親指2;
+    	public ShapePart X0Y3_親指_親指2;
 
-    	public Par X0Y3_親指_親指3;
+    	public ShapePart X0Y3_親指_親指3;
 
-    	public Par X0Y3_親指_水掻;
+    	public ShapePart X0Y3_親指_水掻;
 
-    	public Par X0Y3_人指_人指3;
+    	public ShapePart X0Y3_人指_人指3;
 
-    	public Par X0Y3_人指_人指2;
+    	public ShapePart X0Y3_人指_人指2;
 
-    	public Par X0Y3_人指_人指1;
+    	public ShapePart X0Y3_人指_人指1;
 
-    	public Par X0Y3_人指_水掻;
+    	public ShapePart X0Y3_人指_水掻;
 
-    	public Par X0Y3_中指_中指3;
+    	public ShapePart X0Y3_中指_中指3;
 
-    	public Par X0Y3_中指_中指2;
+    	public ShapePart X0Y3_中指_中指2;
 
-    	public Par X0Y3_中指_中指1;
+    	public ShapePart X0Y3_中指_中指1;
 
-    	public Par X0Y3_中指_水掻;
+    	public ShapePart X0Y3_中指_水掻;
 
-    	public Par X0Y3_薬指_薬指3;
+    	public ShapePart X0Y3_薬指_薬指3;
 
-    	public Par X0Y3_薬指_薬指2;
+    	public ShapePart X0Y3_薬指_薬指2;
 
-    	public Par X0Y3_薬指_薬指1;
+    	public ShapePart X0Y3_薬指_薬指1;
 
-    	public Par X0Y3_薬指_水掻;
+    	public ShapePart X0Y3_薬指_水掻;
 
-    	public Par X0Y3_小指_小指3;
+    	public ShapePart X0Y3_小指_小指3;
 
-    	public Par X0Y3_小指_小指2;
+    	public ShapePart X0Y3_小指_小指2;
 
-    	public Par X0Y3_小指_小指1;
+    	public ShapePart X0Y3_小指_小指1;
 
-    	public Par X0Y3_手;
+    	public ShapePart X0Y3_手;
 
-    	public Par X0Y3_獣性_獣毛;
+    	public ShapePart X0Y3_獣性_獣毛;
 
-    	public Par X0Y3_竜性_鱗1;
+    	public ShapePart X0Y3_竜性_鱗1;
 
-    	public Par X0Y3_竜性_鱗2;
+    	public ShapePart X0Y3_竜性_鱗2;
 
-    	public Par X0Y3_竜性_鱗3;
+    	public ShapePart X0Y3_竜性_鱗3;
 
-    	public Par X0Y3_悪タトゥ_五芒星_円1;
+    	public ShapePart X0Y3_悪タトゥ_五芒星_円1;
 
-    	public Par X0Y3_悪タトゥ_五芒星_円2;
+    	public ShapePart X0Y3_悪タトゥ_五芒星_円2;
 
-    	public Par X0Y3_悪タトゥ_五芒星_星;
+    	public ShapePart X0Y3_悪タトゥ_五芒星_星;
 
-    	public Par X0Y3_悪タトゥ_五芒星_五角形;
+    	public ShapePart X0Y3_悪タトゥ_五芒星_五角形;
 
-    	public Par X0Y3_グローブ_グローブ;
+    	public ShapePart X0Y3_グローブ_グローブ;
 
-    	public Par X0Y3_グローブ_縁1;
+    	public ShapePart X0Y3_グローブ_縁1;
 
-    	public Par X0Y3_グローブ_縁2;
+    	public ShapePart X0Y3_グローブ_縁2;
 
-    	public Par X0Y4_親指_親指3;
+    	public ShapePart X0Y4_親指_親指3;
 
-    	public Par X0Y4_親指_親指2;
+    	public ShapePart X0Y4_親指_親指2;
 
-    	public Par X0Y4_親指_親指1;
+    	public ShapePart X0Y4_親指_親指1;
 
-    	public Par X0Y4_親指_水掻;
+    	public ShapePart X0Y4_親指_水掻;
 
-    	public Par X0Y4_人指_人指3;
+    	public ShapePart X0Y4_人指_人指3;
 
-    	public Par X0Y4_人指_人指2;
+    	public ShapePart X0Y4_人指_人指2;
 
-    	public Par X0Y4_人指_人指1;
+    	public ShapePart X0Y4_人指_人指1;
 
-    	public Par X0Y4_人指_水掻;
+    	public ShapePart X0Y4_人指_水掻;
 
-    	public Par X0Y4_小指_小指3;
+    	public ShapePart X0Y4_小指_小指3;
 
-    	public Par X0Y4_小指_小指2;
+    	public ShapePart X0Y4_小指_小指2;
 
-    	public Par X0Y4_小指_小指1;
+    	public ShapePart X0Y4_小指_小指1;
 
-    	public Par X0Y4_中指_中指3;
+    	public ShapePart X0Y4_中指_中指3;
 
-    	public Par X0Y4_中指_中指2;
+    	public ShapePart X0Y4_中指_中指2;
 
-    	public Par X0Y4_中指_中指1;
+    	public ShapePart X0Y4_中指_中指1;
 
-    	public Par X0Y4_中指_水掻;
+    	public ShapePart X0Y4_中指_水掻;
 
-    	public Par X0Y4_薬指_薬指3;
+    	public ShapePart X0Y4_薬指_薬指3;
 
-    	public Par X0Y4_薬指_薬指2;
+    	public ShapePart X0Y4_薬指_薬指2;
 
-    	public Par X0Y4_薬指_薬指1;
+    	public ShapePart X0Y4_薬指_薬指1;
 
-    	public Par X0Y4_薬指_水掻;
+    	public ShapePart X0Y4_薬指_水掻;
 
-    	public Par X0Y4_手;
+    	public ShapePart X0Y4_手;
 
-    	public Par X0Y4_獣性_獣毛;
+    	public ShapePart X0Y4_獣性_獣毛;
 
-    	public Par X0Y4_竜性_鱗1;
+    	public ShapePart X0Y4_竜性_鱗1;
 
-    	public Par X0Y4_竜性_鱗2;
+    	public ShapePart X0Y4_竜性_鱗2;
 
-    	public Par X0Y4_竜性_鱗3;
+    	public ShapePart X0Y4_竜性_鱗3;
 
-    	public Par X0Y4_悪タトゥ_五芒星_円1;
+    	public ShapePart X0Y4_悪タトゥ_五芒星_円1;
 
-    	public Par X0Y4_悪タトゥ_五芒星_円2;
+    	public ShapePart X0Y4_悪タトゥ_五芒星_円2;
 
-    	public Par X0Y4_悪タトゥ_五芒星_星;
+    	public ShapePart X0Y4_悪タトゥ_五芒星_星;
 
-    	public Par X0Y4_悪タトゥ_五芒星_五角形;
+    	public ShapePart X0Y4_悪タトゥ_五芒星_五角形;
 
-    	public Par X0Y4_グローブ_グローブ;
+    	public ShapePart X0Y4_グローブ_グローブ;
 
-    	public Par X0Y4_グローブ_縁1;
+    	public ShapePart X0Y4_グローブ_縁1;
 
-    	public Par X0Y4_グローブ_縁2;
+    	public ShapePart X0Y4_グローブ_縁2;
 
-    	public Par X0Y5_親指_親指1;
+    	public ShapePart X0Y5_親指_親指1;
 
-    	public Par X0Y5_親指_親指2;
+    	public ShapePart X0Y5_親指_親指2;
 
-    	public Par X0Y5_親指_親指3;
+    	public ShapePart X0Y5_親指_親指3;
 
-    	public Par X0Y5_親指_水掻;
+    	public ShapePart X0Y5_親指_水掻;
 
-    	public Par X0Y5_人指_人指3;
+    	public ShapePart X0Y5_人指_人指3;
 
-    	public Par X0Y5_人指_人指2;
+    	public ShapePart X0Y5_人指_人指2;
 
-    	public Par X0Y5_人指_人指1;
+    	public ShapePart X0Y5_人指_人指1;
 
-    	public Par X0Y5_人指_水掻;
+    	public ShapePart X0Y5_人指_水掻;
 
-    	public Par X0Y5_中指_中指3;
+    	public ShapePart X0Y5_中指_中指3;
 
-    	public Par X0Y5_中指_中指2;
+    	public ShapePart X0Y5_中指_中指2;
 
-    	public Par X0Y5_中指_中指1;
+    	public ShapePart X0Y5_中指_中指1;
 
-    	public Par X0Y5_中指_水掻;
+    	public ShapePart X0Y5_中指_水掻;
 
-    	public Par X0Y5_薬指_薬指3;
+    	public ShapePart X0Y5_薬指_薬指3;
 
-    	public Par X0Y5_薬指_薬指2;
+    	public ShapePart X0Y5_薬指_薬指2;
 
-    	public Par X0Y5_薬指_薬指1;
+    	public ShapePart X0Y5_薬指_薬指1;
 
-    	public Par X0Y5_薬指_水掻;
+    	public ShapePart X0Y5_薬指_水掻;
 
-    	public Par X0Y5_小指_小指3;
+    	public ShapePart X0Y5_小指_小指3;
 
-    	public Par X0Y5_小指_小指2;
+    	public ShapePart X0Y5_小指_小指2;
 
-    	public Par X0Y5_小指_小指1;
+    	public ShapePart X0Y5_小指_小指1;
 
-    	public Par X0Y5_手;
+    	public ShapePart X0Y5_手;
 
-    	public Par X0Y5_獣性_獣毛;
+    	public ShapePart X0Y5_獣性_獣毛;
 
-    	public Par X0Y5_竜性_鱗1;
+    	public ShapePart X0Y5_竜性_鱗1;
 
-    	public Par X0Y5_竜性_鱗2;
+    	public ShapePart X0Y5_竜性_鱗2;
 
-    	public Par X0Y5_竜性_鱗3;
+    	public ShapePart X0Y5_竜性_鱗3;
 
-    	public Par X0Y5_悪タトゥ_五芒星_円1;
+    	public ShapePart X0Y5_悪タトゥ_五芒星_円1;
 
-    	public Par X0Y5_悪タトゥ_五芒星_円2;
+    	public ShapePart X0Y5_悪タトゥ_五芒星_円2;
 
-    	public Par X0Y5_悪タトゥ_五芒星_星;
+    	public ShapePart X0Y5_悪タトゥ_五芒星_星;
 
-    	public Par X0Y5_悪タトゥ_五芒星_五角形;
+    	public ShapePart X0Y5_悪タトゥ_五芒星_五角形;
 
-    	public Par X0Y5_グローブ_グローブ;
+    	public ShapePart X0Y5_グローブ_グローブ;
 
-    	public Par X0Y5_グローブ_縁1;
+    	public ShapePart X0Y5_グローブ_縁1;
 
-    	public Par X0Y5_グローブ_縁2;
+    	public ShapePart X0Y5_グローブ_縁2;
 
-    	public Par X0Y6_小指_小指3;
+    	public ShapePart X0Y6_小指_小指3;
 
-    	public Par X0Y6_小指_小指2;
+    	public ShapePart X0Y6_小指_小指2;
 
-    	public Par X0Y6_小指_小指1;
+    	public ShapePart X0Y6_小指_小指1;
 
-    	public Par X0Y6_薬指_水掻;
+    	public ShapePart X0Y6_薬指_水掻;
 
-    	public Par X0Y6_薬指_薬指3;
+    	public ShapePart X0Y6_薬指_薬指3;
 
-    	public Par X0Y6_薬指_薬指2;
+    	public ShapePart X0Y6_薬指_薬指2;
 
-    	public Par X0Y6_薬指_薬指1;
+    	public ShapePart X0Y6_薬指_薬指1;
 
-    	public Par X0Y6_中指_水掻;
+    	public ShapePart X0Y6_中指_水掻;
 
-    	public Par X0Y6_中指_中指3;
+    	public ShapePart X0Y6_中指_中指3;
 
-    	public Par X0Y6_中指_中指2;
+    	public ShapePart X0Y6_中指_中指2;
 
-    	public Par X0Y6_中指_中指1;
+    	public ShapePart X0Y6_中指_中指1;
 
-    	public Par X0Y6_人指_水掻;
+    	public ShapePart X0Y6_人指_水掻;
 
-    	public Par X0Y6_人指_人指3;
+    	public ShapePart X0Y6_人指_人指3;
 
-    	public Par X0Y6_人指_人指2;
+    	public ShapePart X0Y6_人指_人指2;
 
-    	public Par X0Y6_人指_人指1;
+    	public ShapePart X0Y6_人指_人指1;
 
-    	public Par X0Y6_親指_親指3;
+    	public ShapePart X0Y6_親指_親指3;
 
-    	public Par X0Y6_親指_親指2;
+    	public ShapePart X0Y6_親指_親指2;
 
-    	public Par X0Y6_親指_親指1;
+    	public ShapePart X0Y6_親指_親指1;
 
-    	public Par X0Y6_親指_水掻;
+    	public ShapePart X0Y6_親指_水掻;
 
-    	public Par X0Y6_手;
+    	public ShapePart X0Y6_手;
 
-    	public Par X0Y6_獣性_獣毛;
+    	public ShapePart X0Y6_獣性_獣毛;
 
-    	public Par X0Y6_竜性_鱗1;
+    	public ShapePart X0Y6_竜性_鱗1;
 
-    	public Par X0Y6_竜性_鱗2;
+    	public ShapePart X0Y6_竜性_鱗2;
 
-    	public Par X0Y6_竜性_鱗3;
+    	public ShapePart X0Y6_竜性_鱗3;
 
-    	public Par X0Y6_悪タトゥ_五芒星_円1;
+    	public ShapePart X0Y6_悪タトゥ_五芒星_円1;
 
-    	public Par X0Y6_悪タトゥ_五芒星_円2;
+    	public ShapePart X0Y6_悪タトゥ_五芒星_円2;
 
-    	public Par X0Y6_悪タトゥ_五芒星_星;
+    	public ShapePart X0Y6_悪タトゥ_五芒星_星;
 
-    	public Par X0Y6_悪タトゥ_五芒星_五角形;
+    	public ShapePart X0Y6_悪タトゥ_五芒星_五角形;
 
-    	public Par X0Y6_グローブ_グローブ;
+    	public ShapePart X0Y6_グローブ_グローブ;
 
-    	public Par X0Y6_グローブ_縁1;
+    	public ShapePart X0Y6_グローブ_縁1;
 
-    	public Par X0Y6_グローブ_縁2;
+    	public ShapePart X0Y6_グローブ_縁2;
 
-    	public Par X0Y7_親指_親指1;
+    	public ShapePart X0Y7_親指_親指1;
 
-    	public Par X0Y7_親指_親指2;
+    	public ShapePart X0Y7_親指_親指2;
 
-    	public Par X0Y7_親指_親指3;
+    	public ShapePart X0Y7_親指_親指3;
 
-    	public Par X0Y7_親指_水掻;
+    	public ShapePart X0Y7_親指_水掻;
 
-    	public Par X0Y7_手;
+    	public ShapePart X0Y7_手;
 
-    	public Par X0Y7_人指_人指3;
+    	public ShapePart X0Y7_人指_人指3;
 
-    	public Par X0Y7_人指_人指2;
+    	public ShapePart X0Y7_人指_人指2;
 
-    	public Par X0Y7_人指_人指1;
+    	public ShapePart X0Y7_人指_人指1;
 
-    	public Par X0Y7_人指_水掻;
+    	public ShapePart X0Y7_人指_水掻;
 
-    	public Par X0Y7_中指_中指3;
+    	public ShapePart X0Y7_中指_中指3;
 
-    	public Par X0Y7_中指_中指2;
+    	public ShapePart X0Y7_中指_中指2;
 
-    	public Par X0Y7_中指_中指1;
+    	public ShapePart X0Y7_中指_中指1;
 
-    	public Par X0Y7_中指_水掻;
+    	public ShapePart X0Y7_中指_水掻;
 
-    	public Par X0Y7_小指_小指3;
+    	public ShapePart X0Y7_小指_小指3;
 
-    	public Par X0Y7_小指_小指2;
+    	public ShapePart X0Y7_小指_小指2;
 
-    	public Par X0Y7_小指_小指1;
+    	public ShapePart X0Y7_小指_小指1;
 
-    	public Par X0Y7_薬指_薬指3;
+    	public ShapePart X0Y7_薬指_薬指3;
 
-    	public Par X0Y7_薬指_薬指2;
+    	public ShapePart X0Y7_薬指_薬指2;
 
-    	public Par X0Y7_薬指_薬指1;
+    	public ShapePart X0Y7_薬指_薬指1;
 
-    	public Par X0Y7_薬指_水掻;
+    	public ShapePart X0Y7_薬指_水掻;
 
-    	public Par X0Y7_獣性_獣毛;
+    	public ShapePart X0Y7_獣性_獣毛;
 
-    	public Par X0Y7_竜性_鱗1;
+    	public ShapePart X0Y7_竜性_鱗1;
 
-    	public Par X0Y7_竜性_鱗2;
+    	public ShapePart X0Y7_竜性_鱗2;
 
-    	public Par X0Y7_竜性_鱗3;
+    	public ShapePart X0Y7_竜性_鱗3;
 
-    	public Par X0Y7_悪タトゥ_五芒星_円1;
+    	public ShapePart X0Y7_悪タトゥ_五芒星_円1;
 
-    	public Par X0Y7_悪タトゥ_五芒星_円2;
+    	public ShapePart X0Y7_悪タトゥ_五芒星_円2;
 
-    	public Par X0Y7_悪タトゥ_五芒星_星;
+    	public ShapePart X0Y7_悪タトゥ_五芒星_星;
 
-    	public Par X0Y7_悪タトゥ_五芒星_五角形;
+    	public ShapePart X0Y7_悪タトゥ_五芒星_五角形;
 
-    	public Par X0Y7_グローブ_グローブ;
+    	public ShapePart X0Y7_グローブ_グローブ;
 
-    	public Par X0Y7_グローブ_縁1;
+    	public ShapePart X0Y7_グローブ_縁1;
 
-    	public Par X0Y7_グローブ_縁2;
+    	public ShapePart X0Y7_グローブ_縁2;
 
-    	public Par X0Y8_親指_親指3;
+    	public ShapePart X0Y8_親指_親指3;
 
-    	public Par X0Y8_親指_親指2;
+    	public ShapePart X0Y8_親指_親指2;
 
-    	public Par X0Y8_親指_親指1;
+    	public ShapePart X0Y8_親指_親指1;
 
-    	public Par X0Y8_親指_水掻;
+    	public ShapePart X0Y8_親指_水掻;
 
-    	public Par X0Y8_人指_人指3;
+    	public ShapePart X0Y8_人指_人指3;
 
-    	public Par X0Y8_人指_人指2;
+    	public ShapePart X0Y8_人指_人指2;
 
-    	public Par X0Y8_人指_人指1;
+    	public ShapePart X0Y8_人指_人指1;
 
-    	public Par X0Y8_人指_水掻;
+    	public ShapePart X0Y8_人指_水掻;
 
-    	public Par X0Y8_中指_中指3;
+    	public ShapePart X0Y8_中指_中指3;
 
-    	public Par X0Y8_中指_中指2;
+    	public ShapePart X0Y8_中指_中指2;
 
-    	public Par X0Y8_中指_中指1;
+    	public ShapePart X0Y8_中指_中指1;
 
-    	public Par X0Y8_中指_水掻;
+    	public ShapePart X0Y8_中指_水掻;
 
-    	public Par X0Y8_薬指_薬指3;
+    	public ShapePart X0Y8_薬指_薬指3;
 
-    	public Par X0Y8_薬指_薬指2;
+    	public ShapePart X0Y8_薬指_薬指2;
 
-    	public Par X0Y8_薬指_薬指1;
+    	public ShapePart X0Y8_薬指_薬指1;
 
-    	public Par X0Y8_薬指_水掻;
+    	public ShapePart X0Y8_薬指_水掻;
 
-    	public Par X0Y8_小指_小指3;
+    	public ShapePart X0Y8_小指_小指3;
 
-    	public Par X0Y8_小指_小指2;
+    	public ShapePart X0Y8_小指_小指2;
 
-    	public Par X0Y8_小指_小指1;
+    	public ShapePart X0Y8_小指_小指1;
 
-    	public Par X0Y8_手;
+    	public ShapePart X0Y8_手;
 
-    	public Par X0Y8_獣性_獣毛;
+    	public ShapePart X0Y8_獣性_獣毛;
 
-    	public Par X0Y8_竜性_鱗1;
+    	public ShapePart X0Y8_竜性_鱗1;
 
-    	public Par X0Y8_竜性_鱗2;
+    	public ShapePart X0Y8_竜性_鱗2;
 
-    	public Par X0Y8_竜性_鱗3;
+    	public ShapePart X0Y8_竜性_鱗3;
 
-    	public Par X0Y8_悪タトゥ_五芒星_円1;
+    	public ShapePart X0Y8_悪タトゥ_五芒星_円1;
 
-    	public Par X0Y8_悪タトゥ_五芒星_円2;
+    	public ShapePart X0Y8_悪タトゥ_五芒星_円2;
 
-    	public Par X0Y8_悪タトゥ_五芒星_星;
+    	public ShapePart X0Y8_悪タトゥ_五芒星_星;
 
-    	public Par X0Y8_悪タトゥ_五芒星_五角形;
+    	public ShapePart X0Y8_悪タトゥ_五芒星_五角形;
 
-    	public Par X0Y8_グローブ_グローブ;
+    	public ShapePart X0Y8_グローブ_グローブ;
 
-    	public Par X0Y8_グローブ_縁1;
+    	public ShapePart X0Y8_グローブ_縁1;
 
-    	public Par X0Y8_グローブ_縁2;
+    	public ShapePart X0Y8_グローブ_縁2;
 
-    	public Par X0Y9_グローブ_グローブ;
+    	public ShapePart X0Y9_グローブ_グローブ;
 
-    	public Par X0Y9_グローブ_縁1;
+    	public ShapePart X0Y9_グローブ_縁1;
 
-    	public Par X0Y9_グローブ_縁2;
+    	public ShapePart X0Y9_グローブ_縁2;
 
-    	public Par X0Y9_獣性_獣毛;
+    	public ShapePart X0Y9_獣性_獣毛;
 
-    	public Par X0Y9_手;
+    	public ShapePart X0Y9_手;
 
-    	public Par X0Y9_獣肉球;
+    	public ShapePart X0Y9_獣肉球;
 
-    	public Par X0Y9_人指_人指1;
+    	public ShapePart X0Y9_人指_人指1;
 
-    	public Par X0Y9_人指_人指3;
+    	public ShapePart X0Y9_人指_人指3;
 
-    	public Par X0Y9_人指_人指2;
+    	public ShapePart X0Y9_人指_人指2;
 
-    	public Par X0Y9_人指_水掻;
+    	public ShapePart X0Y9_人指_水掻;
 
-    	public Par X0Y9_中指_中指1;
+    	public ShapePart X0Y9_中指_中指1;
 
-    	public Par X0Y9_中指_中指3;
+    	public ShapePart X0Y9_中指_中指3;
 
-    	public Par X0Y9_中指_中指2;
+    	public ShapePart X0Y9_中指_中指2;
 
-    	public Par X0Y9_中指_水掻;
+    	public ShapePart X0Y9_中指_水掻;
 
-    	public Par X0Y9_薬指_薬指1;
+    	public ShapePart X0Y9_薬指_薬指1;
 
-    	public Par X0Y9_薬指_薬指3;
+    	public ShapePart X0Y9_薬指_薬指3;
 
-    	public Par X0Y9_薬指_薬指2;
+    	public ShapePart X0Y9_薬指_薬指2;
 
-    	public Par X0Y9_薬指_水掻;
+    	public ShapePart X0Y9_薬指_水掻;
 
-    	public Par X0Y9_小指_小指1;
+    	public ShapePart X0Y9_小指_小指1;
 
-    	public Par X0Y9_小指_小指3;
+    	public ShapePart X0Y9_小指_小指3;
 
-    	public Par X0Y9_小指_小指2;
+    	public ShapePart X0Y9_小指_小指2;
 
-    	public Par X0Y9_親指_水掻;
+    	public ShapePart X0Y9_親指_水掻;
 
-    	public Par X0Y9_親指_親指1;
+    	public ShapePart X0Y9_親指_親指1;
 
-    	public Par X0Y9_親指_獣肉球;
+    	public ShapePart X0Y9_親指_獣肉球;
 
-    	public Par X0Y9_親指_親指2;
+    	public ShapePart X0Y9_親指_親指2;
 
-    	public Par X0Y9_親指_親指3;
+    	public ShapePart X0Y9_親指_親指3;
 
-    	public Par X0Y10_親指_親指3;
+    	public ShapePart X0Y10_親指_親指3;
 
-    	public Par X0Y10_親指_親指2;
+    	public ShapePart X0Y10_親指_親指2;
 
-    	public Par X0Y10_親指_親指1;
+    	public ShapePart X0Y10_親指_親指1;
 
-    	public Par X0Y10_親指_水掻;
+    	public ShapePart X0Y10_親指_水掻;
 
-    	public Par X0Y10_人指_人指3;
+    	public ShapePart X0Y10_人指_人指3;
 
-    	public Par X0Y10_人指_人指2;
+    	public ShapePart X0Y10_人指_人指2;
 
-    	public Par X0Y10_人指_人指1;
+    	public ShapePart X0Y10_人指_人指1;
 
-    	public Par X0Y10_人指_水掻;
+    	public ShapePart X0Y10_人指_水掻;
 
-    	public Par X0Y10_小指_小指3;
+    	public ShapePart X0Y10_小指_小指3;
 
-    	public Par X0Y10_小指_小指2;
+    	public ShapePart X0Y10_小指_小指2;
 
-    	public Par X0Y10_小指_小指1;
+    	public ShapePart X0Y10_小指_小指1;
 
-    	public Par X0Y10_中指_中指3;
+    	public ShapePart X0Y10_中指_中指3;
 
-    	public Par X0Y10_中指_中指2;
+    	public ShapePart X0Y10_中指_中指2;
 
-    	public Par X0Y10_中指_中指1;
+    	public ShapePart X0Y10_中指_中指1;
 
-    	public Par X0Y10_中指_水掻;
+    	public ShapePart X0Y10_中指_水掻;
 
-    	public Par X0Y10_薬指_薬指3;
+    	public ShapePart X0Y10_薬指_薬指3;
 
-    	public Par X0Y10_薬指_薬指2;
+    	public ShapePart X0Y10_薬指_薬指2;
 
-    	public Par X0Y10_薬指_薬指1;
+    	public ShapePart X0Y10_薬指_薬指1;
 
-    	public Par X0Y10_薬指_水掻;
+    	public ShapePart X0Y10_薬指_水掻;
 
-    	public Par X0Y10_手;
+    	public ShapePart X0Y10_手;
 
-    	public Par X0Y10_獣性_獣毛;
+    	public ShapePart X0Y10_獣性_獣毛;
 
-    	public Par X0Y10_竜性_鱗1;
+    	public ShapePart X0Y10_竜性_鱗1;
 
-    	public Par X0Y10_竜性_鱗2;
+    	public ShapePart X0Y10_竜性_鱗2;
 
-    	public Par X0Y10_竜性_鱗3;
+    	public ShapePart X0Y10_竜性_鱗3;
 
-    	public Par X0Y10_悪タトゥ_五芒星_円1;
+    	public ShapePart X0Y10_悪タトゥ_五芒星_円1;
 
-    	public Par X0Y10_悪タトゥ_五芒星_円2;
+    	public ShapePart X0Y10_悪タトゥ_五芒星_円2;
 
-    	public Par X0Y10_悪タトゥ_五芒星_星;
+    	public ShapePart X0Y10_悪タトゥ_五芒星_星;
 
-    	public Par X0Y10_悪タトゥ_五芒星_五角形;
+    	public ShapePart X0Y10_悪タトゥ_五芒星_五角形;
 
-    	public Par X0Y10_グローブ_グローブ;
+    	public ShapePart X0Y10_グローブ_グローブ;
 
-    	public Par X0Y10_グローブ_縁1;
+    	public ShapePart X0Y10_グローブ_縁1;
 
-    	public Par X0Y10_グローブ_縁2;
+    	public ShapePart X0Y10_グローブ_縁2;
 
     	public ColorD グローブ_グローブCD;
 
@@ -2560,227 +2560,227 @@ namespace SlaveMatrix
     		{
     			double num = 1.5;
     			int num2 = (右 ? 1 : 0);
-    			List<Out> oP = X0Y0_人指_人指3.GetOP();
-    			Out @out = oP[(int)((double)(oP.Count - num2) * 0.5)];
-    			int index = (int)((double)@out.ps.Count * 0.5);
-    			@out.ps[index] += (@out.ps[index] - X0Y0_人指_人指3.GetBasePointBase()) * num * value;
-    			List<Out> oP2 = X0Y0_中指_中指3.GetOP();
-    			@out = oP2[(int)((double)(oP2.Count - num2) * 0.5)];
-    			index = (int)((double)@out.ps.Count * 0.5);
-    			@out.ps[index] += (@out.ps[index] - X0Y0_中指_中指3.GetBasePointBase()) * num * value;
-    			List<Out> oP3 = X0Y0_薬指_薬指3.GetOP();
-    			@out = oP3[(int)((double)(oP3.Count - num2) * 0.5)];
-    			index = (int)((double)@out.ps.Count * 0.5);
-    			@out.ps[index] += (@out.ps[index] - X0Y0_薬指_薬指3.GetBasePointBase()) * num * value;
-    			List<Out> oP4 = X0Y0_小指_小指3.GetOP();
-    			@out = oP4[(int)((double)(oP4.Count - num2) * 0.5)];
-    			index = (int)((double)@out.ps.Count * 0.5);
-    			@out.ps[index] += (@out.ps[index] - X0Y0_小指_小指3.GetBasePointBase()) * num * value;
-    			List<Out> oP5 = X0Y0_親指_親指3.GetOP();
-    			@out = oP5[(int)((double)(oP5.Count - num2) * 0.5)];
-    			index = (int)((double)@out.ps.Count * 0.5);
-    			@out.ps[index] += (@out.ps[index] - X0Y0_親指_親指3.GetBasePointBase()) * num * 0.65 * value;
-    			List<Out> oP6 = X0Y9_人指_人指3.GetOP();
-    			@out = oP6[(int)((double)(oP6.Count - num2) * 0.5)];
-    			index = (int)((double)@out.ps.Count * 0.5);
-    			@out.ps[index] += (@out.ps[index] - X0Y9_人指_人指3.GetBasePointBase()) * num * value;
-    			List<Out> oP7 = X0Y9_中指_中指3.GetOP();
-    			@out = oP7[(int)((double)(oP7.Count - num2) * 0.5)];
-    			index = (int)((double)@out.ps.Count * 0.5);
-    			@out.ps[index] += (@out.ps[index] - X0Y9_中指_中指3.GetBasePointBase()) * num * value;
-    			List<Out> oP8 = X0Y9_薬指_薬指3.GetOP();
-    			@out = oP8[(int)((double)(oP8.Count - num2) * 0.5)];
-    			index = (int)((double)@out.ps.Count * 0.5);
-    			@out.ps[index] += (@out.ps[index] - X0Y9_薬指_薬指3.GetBasePointBase()) * num * value;
-    			List<Out> oP9 = X0Y9_小指_小指3.GetOP();
-    			@out = oP9[(int)((double)(oP9.Count - num2) * 0.5)];
-    			index = (int)((double)@out.ps.Count * 0.5);
-    			@out.ps[index] += (@out.ps[index] - X0Y9_小指_小指3.GetBasePointBase()) * num * value;
-    			List<Out> oP10 = X0Y9_親指_親指3.GetOP();
-    			@out = oP10[(int)((double)(oP10.Count - num2) * 0.5)];
-    			index = (int)((double)@out.ps.Count * 0.5);
-    			@out.ps[index] += (@out.ps[index] - X0Y9_親指_親指3.GetBasePointBase()) * num * 0.65 * value;
+    			List<CurveOutline> oP = X0Y0_人指_人指3.GetOP();
+    			CurveOutline curveOutline = oP[(int)((double)(oP.Count - num2) * 0.5)];
+    			int index = (int)((double)curveOutline.ps.Count * 0.5);
+    			curveOutline.ps[index] += (curveOutline.ps[index] - X0Y0_人指_人指3.GetBasePointBase()) * num * value;
+    			List<CurveOutline> oP2 = X0Y0_中指_中指3.GetOP();
+    			curveOutline = oP2[(int)((double)(oP2.Count - num2) * 0.5)];
+    			index = (int)((double)curveOutline.ps.Count * 0.5);
+    			curveOutline.ps[index] += (curveOutline.ps[index] - X0Y0_中指_中指3.GetBasePointBase()) * num * value;
+    			List<CurveOutline> oP3 = X0Y0_薬指_薬指3.GetOP();
+    			curveOutline = oP3[(int)((double)(oP3.Count - num2) * 0.5)];
+    			index = (int)((double)curveOutline.ps.Count * 0.5);
+    			curveOutline.ps[index] += (curveOutline.ps[index] - X0Y0_薬指_薬指3.GetBasePointBase()) * num * value;
+    			List<CurveOutline> oP4 = X0Y0_小指_小指3.GetOP();
+    			curveOutline = oP4[(int)((double)(oP4.Count - num2) * 0.5)];
+    			index = (int)((double)curveOutline.ps.Count * 0.5);
+    			curveOutline.ps[index] += (curveOutline.ps[index] - X0Y0_小指_小指3.GetBasePointBase()) * num * value;
+    			List<CurveOutline> oP5 = X0Y0_親指_親指3.GetOP();
+    			curveOutline = oP5[(int)((double)(oP5.Count - num2) * 0.5)];
+    			index = (int)((double)curveOutline.ps.Count * 0.5);
+    			curveOutline.ps[index] += (curveOutline.ps[index] - X0Y0_親指_親指3.GetBasePointBase()) * num * 0.65 * value;
+    			List<CurveOutline> oP6 = X0Y9_人指_人指3.GetOP();
+    			curveOutline = oP6[(int)((double)(oP6.Count - num2) * 0.5)];
+    			index = (int)((double)curveOutline.ps.Count * 0.5);
+    			curveOutline.ps[index] += (curveOutline.ps[index] - X0Y9_人指_人指3.GetBasePointBase()) * num * value;
+    			List<CurveOutline> oP7 = X0Y9_中指_中指3.GetOP();
+    			curveOutline = oP7[(int)((double)(oP7.Count - num2) * 0.5)];
+    			index = (int)((double)curveOutline.ps.Count * 0.5);
+    			curveOutline.ps[index] += (curveOutline.ps[index] - X0Y9_中指_中指3.GetBasePointBase()) * num * value;
+    			List<CurveOutline> oP8 = X0Y9_薬指_薬指3.GetOP();
+    			curveOutline = oP8[(int)((double)(oP8.Count - num2) * 0.5)];
+    			index = (int)((double)curveOutline.ps.Count * 0.5);
+    			curveOutline.ps[index] += (curveOutline.ps[index] - X0Y9_薬指_薬指3.GetBasePointBase()) * num * value;
+    			List<CurveOutline> oP9 = X0Y9_小指_小指3.GetOP();
+    			curveOutline = oP9[(int)((double)(oP9.Count - num2) * 0.5)];
+    			index = (int)((double)curveOutline.ps.Count * 0.5);
+    			curveOutline.ps[index] += (curveOutline.ps[index] - X0Y9_小指_小指3.GetBasePointBase()) * num * value;
+    			List<CurveOutline> oP10 = X0Y9_親指_親指3.GetOP();
+    			curveOutline = oP10[(int)((double)(oP10.Count - num2) * 0.5)];
+    			index = (int)((double)curveOutline.ps.Count * 0.5);
+    			curveOutline.ps[index] += (curveOutline.ps[index] - X0Y9_親指_親指3.GetBasePointBase()) * num * 0.65 * value;
     			num2 = ((!右) ? 1 : 0);
-    			List<Out> oP11 = X0Y1_人指_人指3.GetOP();
-    			@out = oP11[(int)((double)(oP11.Count - num2) * 0.5)];
-    			index = (int)((double)@out.ps.Count * 0.5);
-    			@out.ps[index] += (@out.ps[index] - X0Y1_人指_人指3.GetBasePointBase()) * num * value;
-    			List<Out> oP12 = X0Y1_中指_中指3.GetOP();
-    			@out = oP12[(int)((double)(oP12.Count - num2) * 0.5)];
-    			index = (int)((double)@out.ps.Count * 0.5);
-    			@out.ps[index] += (@out.ps[index] - X0Y1_中指_中指3.GetBasePointBase()) * num * value;
-    			List<Out> oP13 = X0Y1_薬指_薬指3.GetOP();
-    			@out = oP13[(int)((double)(oP13.Count - num2) * 0.5)];
-    			index = (int)((double)@out.ps.Count * 0.5);
-    			@out.ps[index] += (@out.ps[index] - X0Y1_薬指_薬指3.GetBasePointBase()) * num * value;
-    			List<Out> oP14 = X0Y1_小指_小指3.GetOP();
-    			@out = oP14[(int)((double)(oP14.Count - num2) * 0.5)];
-    			index = (int)((double)@out.ps.Count * 0.5);
-    			@out.ps[index] += (@out.ps[index] - X0Y1_小指_小指3.GetBasePointBase()) * num * value;
-    			List<Out> oP15 = X0Y1_親指_親指3.GetOP();
-    			@out = oP15[(int)((double)(oP15.Count - num2) * 0.5)];
-    			index = (int)((double)@out.ps.Count * 0.5);
-    			@out.ps[index] += (@out.ps[index] - X0Y1_親指_親指3.GetBasePointBase()) * num * 0.65 * value;
-    			List<Out> oP16 = X0Y2_人指_人指3.GetOP();
-    			@out = oP16[(int)((double)(oP16.Count - num2) * 0.5)];
-    			index = (int)((double)@out.ps.Count * 0.5);
-    			@out.ps[index] += (@out.ps[index] - X0Y2_人指_人指3.GetBasePointBase()) * num * value;
-    			List<Out> oP17 = X0Y2_中指_中指3.GetOP();
-    			@out = oP17[(int)((double)(oP17.Count - num2) * 0.5)];
-    			index = (int)((double)@out.ps.Count * 0.5);
-    			@out.ps[index] += (@out.ps[index] - X0Y2_中指_中指3.GetBasePointBase()) * num * value;
-    			List<Out> oP18 = X0Y2_薬指_薬指3.GetOP();
-    			@out = oP18[(int)((double)(oP18.Count - num2) * 0.5)];
-    			index = (int)((double)@out.ps.Count * 0.5);
-    			@out.ps[index] += (@out.ps[index] - X0Y2_薬指_薬指3.GetBasePointBase()) * num * value;
-    			List<Out> oP19 = X0Y2_小指_小指3.GetOP();
-    			@out = oP19[(int)((double)(oP19.Count - num2) * 0.5)];
-    			index = (int)((double)@out.ps.Count * 0.5);
-    			@out.ps[index] += (@out.ps[index] - X0Y2_小指_小指3.GetBasePointBase()) * num * value;
-    			List<Out> oP20 = X0Y2_親指_親指3.GetOP();
-    			@out = oP20[(int)((double)(oP20.Count - num2) * 0.5)];
-    			index = (int)((double)@out.ps.Count * 0.5);
-    			@out.ps[index] += (@out.ps[index] - X0Y2_親指_親指3.GetBasePointBase()) * num * 0.65 * value;
-    			List<Out> oP21 = X0Y3_人指_人指3.GetOP();
-    			@out = oP21[(int)((double)(oP21.Count - num2) * 0.5)];
-    			index = (int)((double)@out.ps.Count * 0.5);
-    			@out.ps[index] += (@out.ps[index] - X0Y3_人指_人指3.GetBasePointBase()) * num * value;
-    			List<Out> oP22 = X0Y3_中指_中指3.GetOP();
-    			@out = oP22[(int)((double)(oP22.Count - num2) * 0.5)];
-    			index = (int)((double)@out.ps.Count * 0.5);
-    			@out.ps[index] += (@out.ps[index] - X0Y3_中指_中指3.GetBasePointBase()) * num * value;
-    			List<Out> oP23 = X0Y3_薬指_薬指3.GetOP();
-    			@out = oP23[(int)((double)(oP23.Count - num2) * 0.5)];
-    			index = (int)((double)@out.ps.Count * 0.5);
-    			@out.ps[index] += (@out.ps[index] - X0Y3_薬指_薬指3.GetBasePointBase()) * num * value;
-    			List<Out> oP24 = X0Y3_小指_小指3.GetOP();
-    			@out = oP24[(int)((double)(oP24.Count - num2) * 0.5)];
-    			index = (int)((double)@out.ps.Count * 0.5);
-    			@out.ps[index] += (@out.ps[index] - X0Y3_小指_小指3.GetBasePointBase()) * num * value;
-    			List<Out> oP25 = X0Y3_親指_親指3.GetOP();
-    			@out = oP25[(int)((double)(oP25.Count - num2) * 0.5)];
-    			index = (int)((double)@out.ps.Count * 0.5);
-    			@out.ps[index] += (@out.ps[index] - X0Y3_親指_親指3.GetBasePointBase()) * num * 0.65 * value;
-    			List<Out> oP26 = X0Y4_人指_人指3.GetOP();
-    			@out = oP26[(int)((double)(oP26.Count - num2) * 0.5)];
-    			index = (int)((double)@out.ps.Count * 0.5);
-    			@out.ps[index] += (@out.ps[index] - X0Y4_人指_人指3.GetBasePointBase()) * num * value;
-    			List<Out> oP27 = X0Y4_中指_中指3.GetOP();
-    			@out = oP27[(int)((double)(oP27.Count - num2) * 0.5)];
-    			index = (int)((double)@out.ps.Count * 0.5);
-    			@out.ps[index] += (@out.ps[index] - X0Y4_中指_中指3.GetBasePointBase()) * num * value;
-    			List<Out> oP28 = X0Y4_薬指_薬指3.GetOP();
-    			@out = oP28[(int)((double)(oP28.Count - num2) * 0.5)];
-    			index = (int)((double)@out.ps.Count * 0.5);
-    			@out.ps[index] += (@out.ps[index] - X0Y4_薬指_薬指3.GetBasePointBase()) * num * value;
-    			List<Out> oP29 = X0Y4_小指_小指3.GetOP();
-    			@out = oP29[(int)((double)(oP29.Count - num2) * 0.5)];
-    			index = (int)((double)@out.ps.Count * 0.5);
-    			@out.ps[index] += (@out.ps[index] - X0Y4_小指_小指3.GetBasePointBase()) * num * value;
-    			List<Out> oP30 = X0Y4_親指_親指3.GetOP();
-    			@out = oP30[(int)((double)(oP30.Count - num2) * 0.5)];
-    			index = (int)((double)@out.ps.Count * 0.5);
-    			@out.ps[index] += (@out.ps[index] - X0Y4_親指_親指3.GetBasePointBase()) * num * 0.65 * value;
-    			List<Out> oP31 = X0Y5_人指_人指3.GetOP();
-    			@out = oP31[(int)((double)(oP31.Count - num2) * 0.5)];
-    			index = (int)((double)@out.ps.Count * 0.5);
-    			@out.ps[index] += (@out.ps[index] - X0Y5_人指_人指3.GetBasePointBase()) * num * value;
-    			List<Out> oP32 = X0Y5_中指_中指3.GetOP();
-    			@out = oP32[(int)((double)(oP32.Count - num2) * 0.5)];
-    			index = (int)((double)@out.ps.Count * 0.5);
-    			@out.ps[index] += (@out.ps[index] - X0Y5_中指_中指3.GetBasePointBase()) * num * value;
-    			List<Out> oP33 = X0Y5_薬指_薬指3.GetOP();
-    			@out = oP33[(int)((double)(oP33.Count - num2) * 0.5)];
-    			index = (int)((double)@out.ps.Count * 0.5);
-    			@out.ps[index] += (@out.ps[index] - X0Y5_薬指_薬指3.GetBasePointBase()) * num * value;
-    			List<Out> oP34 = X0Y5_小指_小指3.GetOP();
-    			@out = oP34[(int)((double)(oP34.Count - num2) * 0.5)];
-    			index = (int)((double)@out.ps.Count * 0.5);
-    			@out.ps[index] += (@out.ps[index] - X0Y5_小指_小指3.GetBasePointBase()) * num * value;
-    			List<Out> oP35 = X0Y5_親指_親指3.GetOP();
-    			@out = oP35[(int)((double)(oP35.Count - num2) * 0.5)];
-    			index = (int)((double)@out.ps.Count * 0.5);
-    			@out.ps[index] += (@out.ps[index] - X0Y5_親指_親指3.GetBasePointBase()) * num * 0.65 * value;
-    			List<Out> oP36 = X0Y6_人指_人指3.GetOP();
-    			@out = oP36[(int)((double)(oP36.Count - num2) * 0.5)];
-    			index = (int)((double)@out.ps.Count * 0.5);
-    			@out.ps[index] += (@out.ps[index] - X0Y6_人指_人指3.GetBasePointBase()) * num * value;
-    			List<Out> oP37 = X0Y6_中指_中指3.GetOP();
-    			@out = oP37[(int)((double)(oP37.Count - num2) * 0.5)];
-    			index = (int)((double)@out.ps.Count * 0.5);
-    			@out.ps[index] += (@out.ps[index] - X0Y6_中指_中指3.GetBasePointBase()) * num * value;
-    			List<Out> oP38 = X0Y6_薬指_薬指3.GetOP();
-    			@out = oP38[(int)((double)(oP38.Count - num2) * 0.5)];
-    			index = (int)((double)@out.ps.Count * 0.5);
-    			@out.ps[index] += (@out.ps[index] - X0Y6_薬指_薬指3.GetBasePointBase()) * num * value;
-    			List<Out> oP39 = X0Y6_小指_小指3.GetOP();
-    			@out = oP39[(int)((double)(oP39.Count - num2) * 0.5)];
-    			index = (int)((double)@out.ps.Count * 0.5);
-    			@out.ps[index] += (@out.ps[index] - X0Y6_小指_小指3.GetBasePointBase()) * num * value;
-    			List<Out> oP40 = X0Y6_親指_親指3.GetOP();
-    			@out = oP40[(int)((double)(oP40.Count - num2) * 0.5)];
-    			index = (int)((double)@out.ps.Count * 0.5);
-    			@out.ps[index] += (@out.ps[index] - X0Y6_親指_親指3.GetBasePointBase()) * num * 0.65 * value;
-    			List<Out> oP41 = X0Y7_人指_人指3.GetOP();
-    			@out = oP41[(int)((double)(oP41.Count - num2) * 0.5)];
-    			index = (int)((double)@out.ps.Count * 0.5);
-    			@out.ps[index] += (@out.ps[index] - X0Y7_人指_人指3.GetBasePointBase()) * num * value;
-    			List<Out> oP42 = X0Y7_中指_中指3.GetOP();
-    			@out = oP42[(int)((double)(oP42.Count - num2) * 0.5)];
-    			index = (int)((double)@out.ps.Count * 0.5);
-    			@out.ps[index] += (@out.ps[index] - X0Y7_中指_中指3.GetBasePointBase()) * num * value;
-    			List<Out> oP43 = X0Y7_薬指_薬指3.GetOP();
-    			@out = oP43[(int)((double)(oP43.Count - num2) * 0.5)];
-    			index = (int)((double)@out.ps.Count * 0.5);
-    			@out.ps[index] += (@out.ps[index] - X0Y7_薬指_薬指3.GetBasePointBase()) * num * value;
-    			List<Out> oP44 = X0Y7_小指_小指3.GetOP();
-    			@out = oP44[(int)((double)(oP44.Count - num2) * 0.5)];
-    			index = (int)((double)@out.ps.Count * 0.5);
-    			@out.ps[index] += (@out.ps[index] - X0Y7_小指_小指3.GetBasePointBase()) * num * value;
-    			List<Out> oP45 = X0Y7_親指_親指3.GetOP();
-    			@out = oP45[(int)((double)(oP45.Count - num2) * 0.5)];
-    			index = (int)((double)@out.ps.Count * 0.5);
-    			@out.ps[index] += (@out.ps[index] - X0Y7_親指_親指3.GetBasePointBase()) * num * 0.65 * value;
-    			List<Out> oP46 = X0Y8_人指_人指3.GetOP();
-    			@out = oP46[(int)((double)(oP46.Count - num2) * 0.5)];
-    			index = (int)((double)@out.ps.Count * 0.5);
-    			@out.ps[index] += (@out.ps[index] - X0Y8_人指_人指3.GetBasePointBase()) * num * value;
-    			List<Out> oP47 = X0Y8_中指_中指3.GetOP();
-    			@out = oP47[(int)((double)(oP47.Count - num2) * 0.5)];
-    			index = (int)((double)@out.ps.Count * 0.5);
-    			@out.ps[index] += (@out.ps[index] - X0Y8_中指_中指3.GetBasePointBase()) * num * value;
-    			List<Out> oP48 = X0Y8_薬指_薬指3.GetOP();
-    			@out = oP48[(int)((double)(oP48.Count - num2) * 0.5)];
-    			index = (int)((double)@out.ps.Count * 0.5);
-    			@out.ps[index] += (@out.ps[index] - X0Y8_薬指_薬指3.GetBasePointBase()) * num * value;
-    			List<Out> oP49 = X0Y8_小指_小指3.GetOP();
-    			@out = oP49[(int)((double)(oP49.Count - num2) * 0.5)];
-    			index = (int)((double)@out.ps.Count * 0.5);
-    			@out.ps[index] += (@out.ps[index] - X0Y8_小指_小指3.GetBasePointBase()) * num * value;
-    			List<Out> oP50 = X0Y8_親指_親指3.GetOP();
-    			@out = oP50[(int)((double)(oP50.Count - num2) * 0.5)];
-    			index = (int)((double)@out.ps.Count * 0.5);
-    			@out.ps[index] += (@out.ps[index] - X0Y8_親指_親指3.GetBasePointBase()) * num * 0.65 * value;
-    			List<Out> oP51 = X0Y10_人指_人指3.GetOP();
-    			@out = oP51[(int)((double)(oP51.Count - num2) * 0.5)];
-    			index = (int)((double)@out.ps.Count * 0.5);
-    			@out.ps[index] += (@out.ps[index] - X0Y10_人指_人指3.GetBasePointBase()) * num * value;
-    			List<Out> oP52 = X0Y10_中指_中指3.GetOP();
-    			@out = oP52[(int)((double)(oP52.Count - num2) * 0.5)];
-    			index = (int)((double)@out.ps.Count * 0.5);
-    			@out.ps[index] += (@out.ps[index] - X0Y10_中指_中指3.GetBasePointBase()) * num * value;
-    			List<Out> oP53 = X0Y10_薬指_薬指3.GetOP();
-    			@out = oP53[(int)((double)(oP53.Count - num2) * 0.5)];
-    			index = (int)((double)@out.ps.Count * 0.5);
-    			@out.ps[index] += (@out.ps[index] - X0Y10_薬指_薬指3.GetBasePointBase()) * num * value;
-    			List<Out> oP54 = X0Y10_小指_小指3.GetOP();
-    			@out = oP54[(int)((double)(oP54.Count - num2) * 0.5)];
-    			index = (int)((double)@out.ps.Count * 0.5);
-    			@out.ps[index] += (@out.ps[index] - X0Y10_小指_小指3.GetBasePointBase()) * num * value;
-    			List<Out> oP55 = X0Y10_親指_親指3.GetOP();
-    			@out = oP55[(int)((double)(oP55.Count - num2) * 0.5)];
-    			index = (int)((double)@out.ps.Count * 0.5);
-    			@out.ps[index] += (@out.ps[index] - X0Y10_親指_親指3.GetBasePointBase()) * num * 0.65 * value;
+    			List<CurveOutline> oP11 = X0Y1_人指_人指3.GetOP();
+    			curveOutline = oP11[(int)((double)(oP11.Count - num2) * 0.5)];
+    			index = (int)((double)curveOutline.ps.Count * 0.5);
+    			curveOutline.ps[index] += (curveOutline.ps[index] - X0Y1_人指_人指3.GetBasePointBase()) * num * value;
+    			List<CurveOutline> oP12 = X0Y1_中指_中指3.GetOP();
+    			curveOutline = oP12[(int)((double)(oP12.Count - num2) * 0.5)];
+    			index = (int)((double)curveOutline.ps.Count * 0.5);
+    			curveOutline.ps[index] += (curveOutline.ps[index] - X0Y1_中指_中指3.GetBasePointBase()) * num * value;
+    			List<CurveOutline> oP13 = X0Y1_薬指_薬指3.GetOP();
+    			curveOutline = oP13[(int)((double)(oP13.Count - num2) * 0.5)];
+    			index = (int)((double)curveOutline.ps.Count * 0.5);
+    			curveOutline.ps[index] += (curveOutline.ps[index] - X0Y1_薬指_薬指3.GetBasePointBase()) * num * value;
+    			List<CurveOutline> oP14 = X0Y1_小指_小指3.GetOP();
+    			curveOutline = oP14[(int)((double)(oP14.Count - num2) * 0.5)];
+    			index = (int)((double)curveOutline.ps.Count * 0.5);
+    			curveOutline.ps[index] += (curveOutline.ps[index] - X0Y1_小指_小指3.GetBasePointBase()) * num * value;
+    			List<CurveOutline> oP15 = X0Y1_親指_親指3.GetOP();
+    			curveOutline = oP15[(int)((double)(oP15.Count - num2) * 0.5)];
+    			index = (int)((double)curveOutline.ps.Count * 0.5);
+    			curveOutline.ps[index] += (curveOutline.ps[index] - X0Y1_親指_親指3.GetBasePointBase()) * num * 0.65 * value;
+    			List<CurveOutline> oP16 = X0Y2_人指_人指3.GetOP();
+    			curveOutline = oP16[(int)((double)(oP16.Count - num2) * 0.5)];
+    			index = (int)((double)curveOutline.ps.Count * 0.5);
+    			curveOutline.ps[index] += (curveOutline.ps[index] - X0Y2_人指_人指3.GetBasePointBase()) * num * value;
+    			List<CurveOutline> oP17 = X0Y2_中指_中指3.GetOP();
+    			curveOutline = oP17[(int)((double)(oP17.Count - num2) * 0.5)];
+    			index = (int)((double)curveOutline.ps.Count * 0.5);
+    			curveOutline.ps[index] += (curveOutline.ps[index] - X0Y2_中指_中指3.GetBasePointBase()) * num * value;
+    			List<CurveOutline> oP18 = X0Y2_薬指_薬指3.GetOP();
+    			curveOutline = oP18[(int)((double)(oP18.Count - num2) * 0.5)];
+    			index = (int)((double)curveOutline.ps.Count * 0.5);
+    			curveOutline.ps[index] += (curveOutline.ps[index] - X0Y2_薬指_薬指3.GetBasePointBase()) * num * value;
+    			List<CurveOutline> oP19 = X0Y2_小指_小指3.GetOP();
+    			curveOutline = oP19[(int)((double)(oP19.Count - num2) * 0.5)];
+    			index = (int)((double)curveOutline.ps.Count * 0.5);
+    			curveOutline.ps[index] += (curveOutline.ps[index] - X0Y2_小指_小指3.GetBasePointBase()) * num * value;
+    			List<CurveOutline> oP20 = X0Y2_親指_親指3.GetOP();
+    			curveOutline = oP20[(int)((double)(oP20.Count - num2) * 0.5)];
+    			index = (int)((double)curveOutline.ps.Count * 0.5);
+    			curveOutline.ps[index] += (curveOutline.ps[index] - X0Y2_親指_親指3.GetBasePointBase()) * num * 0.65 * value;
+    			List<CurveOutline> oP21 = X0Y3_人指_人指3.GetOP();
+    			curveOutline = oP21[(int)((double)(oP21.Count - num2) * 0.5)];
+    			index = (int)((double)curveOutline.ps.Count * 0.5);
+    			curveOutline.ps[index] += (curveOutline.ps[index] - X0Y3_人指_人指3.GetBasePointBase()) * num * value;
+    			List<CurveOutline> oP22 = X0Y3_中指_中指3.GetOP();
+    			curveOutline = oP22[(int)((double)(oP22.Count - num2) * 0.5)];
+    			index = (int)((double)curveOutline.ps.Count * 0.5);
+    			curveOutline.ps[index] += (curveOutline.ps[index] - X0Y3_中指_中指3.GetBasePointBase()) * num * value;
+    			List<CurveOutline> oP23 = X0Y3_薬指_薬指3.GetOP();
+    			curveOutline = oP23[(int)((double)(oP23.Count - num2) * 0.5)];
+    			index = (int)((double)curveOutline.ps.Count * 0.5);
+    			curveOutline.ps[index] += (curveOutline.ps[index] - X0Y3_薬指_薬指3.GetBasePointBase()) * num * value;
+    			List<CurveOutline> oP24 = X0Y3_小指_小指3.GetOP();
+    			curveOutline = oP24[(int)((double)(oP24.Count - num2) * 0.5)];
+    			index = (int)((double)curveOutline.ps.Count * 0.5);
+    			curveOutline.ps[index] += (curveOutline.ps[index] - X0Y3_小指_小指3.GetBasePointBase()) * num * value;
+    			List<CurveOutline> oP25 = X0Y3_親指_親指3.GetOP();
+    			curveOutline = oP25[(int)((double)(oP25.Count - num2) * 0.5)];
+    			index = (int)((double)curveOutline.ps.Count * 0.5);
+    			curveOutline.ps[index] += (curveOutline.ps[index] - X0Y3_親指_親指3.GetBasePointBase()) * num * 0.65 * value;
+    			List<CurveOutline> oP26 = X0Y4_人指_人指3.GetOP();
+    			curveOutline = oP26[(int)((double)(oP26.Count - num2) * 0.5)];
+    			index = (int)((double)curveOutline.ps.Count * 0.5);
+    			curveOutline.ps[index] += (curveOutline.ps[index] - X0Y4_人指_人指3.GetBasePointBase()) * num * value;
+    			List<CurveOutline> oP27 = X0Y4_中指_中指3.GetOP();
+    			curveOutline = oP27[(int)((double)(oP27.Count - num2) * 0.5)];
+    			index = (int)((double)curveOutline.ps.Count * 0.5);
+    			curveOutline.ps[index] += (curveOutline.ps[index] - X0Y4_中指_中指3.GetBasePointBase()) * num * value;
+    			List<CurveOutline> oP28 = X0Y4_薬指_薬指3.GetOP();
+    			curveOutline = oP28[(int)((double)(oP28.Count - num2) * 0.5)];
+    			index = (int)((double)curveOutline.ps.Count * 0.5);
+    			curveOutline.ps[index] += (curveOutline.ps[index] - X0Y4_薬指_薬指3.GetBasePointBase()) * num * value;
+    			List<CurveOutline> oP29 = X0Y4_小指_小指3.GetOP();
+    			curveOutline = oP29[(int)((double)(oP29.Count - num2) * 0.5)];
+    			index = (int)((double)curveOutline.ps.Count * 0.5);
+    			curveOutline.ps[index] += (curveOutline.ps[index] - X0Y4_小指_小指3.GetBasePointBase()) * num * value;
+    			List<CurveOutline> oP30 = X0Y4_親指_親指3.GetOP();
+    			curveOutline = oP30[(int)((double)(oP30.Count - num2) * 0.5)];
+    			index = (int)((double)curveOutline.ps.Count * 0.5);
+    			curveOutline.ps[index] += (curveOutline.ps[index] - X0Y4_親指_親指3.GetBasePointBase()) * num * 0.65 * value;
+    			List<CurveOutline> oP31 = X0Y5_人指_人指3.GetOP();
+    			curveOutline = oP31[(int)((double)(oP31.Count - num2) * 0.5)];
+    			index = (int)((double)curveOutline.ps.Count * 0.5);
+    			curveOutline.ps[index] += (curveOutline.ps[index] - X0Y5_人指_人指3.GetBasePointBase()) * num * value;
+    			List<CurveOutline> oP32 = X0Y5_中指_中指3.GetOP();
+    			curveOutline = oP32[(int)((double)(oP32.Count - num2) * 0.5)];
+    			index = (int)((double)curveOutline.ps.Count * 0.5);
+    			curveOutline.ps[index] += (curveOutline.ps[index] - X0Y5_中指_中指3.GetBasePointBase()) * num * value;
+    			List<CurveOutline> oP33 = X0Y5_薬指_薬指3.GetOP();
+    			curveOutline = oP33[(int)((double)(oP33.Count - num2) * 0.5)];
+    			index = (int)((double)curveOutline.ps.Count * 0.5);
+    			curveOutline.ps[index] += (curveOutline.ps[index] - X0Y5_薬指_薬指3.GetBasePointBase()) * num * value;
+    			List<CurveOutline> oP34 = X0Y5_小指_小指3.GetOP();
+    			curveOutline = oP34[(int)((double)(oP34.Count - num2) * 0.5)];
+    			index = (int)((double)curveOutline.ps.Count * 0.5);
+    			curveOutline.ps[index] += (curveOutline.ps[index] - X0Y5_小指_小指3.GetBasePointBase()) * num * value;
+    			List<CurveOutline> oP35 = X0Y5_親指_親指3.GetOP();
+    			curveOutline = oP35[(int)((double)(oP35.Count - num2) * 0.5)];
+    			index = (int)((double)curveOutline.ps.Count * 0.5);
+    			curveOutline.ps[index] += (curveOutline.ps[index] - X0Y5_親指_親指3.GetBasePointBase()) * num * 0.65 * value;
+    			List<CurveOutline> oP36 = X0Y6_人指_人指3.GetOP();
+    			curveOutline = oP36[(int)((double)(oP36.Count - num2) * 0.5)];
+    			index = (int)((double)curveOutline.ps.Count * 0.5);
+    			curveOutline.ps[index] += (curveOutline.ps[index] - X0Y6_人指_人指3.GetBasePointBase()) * num * value;
+    			List<CurveOutline> oP37 = X0Y6_中指_中指3.GetOP();
+    			curveOutline = oP37[(int)((double)(oP37.Count - num2) * 0.5)];
+    			index = (int)((double)curveOutline.ps.Count * 0.5);
+    			curveOutline.ps[index] += (curveOutline.ps[index] - X0Y6_中指_中指3.GetBasePointBase()) * num * value;
+    			List<CurveOutline> oP38 = X0Y6_薬指_薬指3.GetOP();
+    			curveOutline = oP38[(int)((double)(oP38.Count - num2) * 0.5)];
+    			index = (int)((double)curveOutline.ps.Count * 0.5);
+    			curveOutline.ps[index] += (curveOutline.ps[index] - X0Y6_薬指_薬指3.GetBasePointBase()) * num * value;
+    			List<CurveOutline> oP39 = X0Y6_小指_小指3.GetOP();
+    			curveOutline = oP39[(int)((double)(oP39.Count - num2) * 0.5)];
+    			index = (int)((double)curveOutline.ps.Count * 0.5);
+    			curveOutline.ps[index] += (curveOutline.ps[index] - X0Y6_小指_小指3.GetBasePointBase()) * num * value;
+    			List<CurveOutline> oP40 = X0Y6_親指_親指3.GetOP();
+    			curveOutline = oP40[(int)((double)(oP40.Count - num2) * 0.5)];
+    			index = (int)((double)curveOutline.ps.Count * 0.5);
+    			curveOutline.ps[index] += (curveOutline.ps[index] - X0Y6_親指_親指3.GetBasePointBase()) * num * 0.65 * value;
+    			List<CurveOutline> oP41 = X0Y7_人指_人指3.GetOP();
+    			curveOutline = oP41[(int)((double)(oP41.Count - num2) * 0.5)];
+    			index = (int)((double)curveOutline.ps.Count * 0.5);
+    			curveOutline.ps[index] += (curveOutline.ps[index] - X0Y7_人指_人指3.GetBasePointBase()) * num * value;
+    			List<CurveOutline> oP42 = X0Y7_中指_中指3.GetOP();
+    			curveOutline = oP42[(int)((double)(oP42.Count - num2) * 0.5)];
+    			index = (int)((double)curveOutline.ps.Count * 0.5);
+    			curveOutline.ps[index] += (curveOutline.ps[index] - X0Y7_中指_中指3.GetBasePointBase()) * num * value;
+    			List<CurveOutline> oP43 = X0Y7_薬指_薬指3.GetOP();
+    			curveOutline = oP43[(int)((double)(oP43.Count - num2) * 0.5)];
+    			index = (int)((double)curveOutline.ps.Count * 0.5);
+    			curveOutline.ps[index] += (curveOutline.ps[index] - X0Y7_薬指_薬指3.GetBasePointBase()) * num * value;
+    			List<CurveOutline> oP44 = X0Y7_小指_小指3.GetOP();
+    			curveOutline = oP44[(int)((double)(oP44.Count - num2) * 0.5)];
+    			index = (int)((double)curveOutline.ps.Count * 0.5);
+    			curveOutline.ps[index] += (curveOutline.ps[index] - X0Y7_小指_小指3.GetBasePointBase()) * num * value;
+    			List<CurveOutline> oP45 = X0Y7_親指_親指3.GetOP();
+    			curveOutline = oP45[(int)((double)(oP45.Count - num2) * 0.5)];
+    			index = (int)((double)curveOutline.ps.Count * 0.5);
+    			curveOutline.ps[index] += (curveOutline.ps[index] - X0Y7_親指_親指3.GetBasePointBase()) * num * 0.65 * value;
+    			List<CurveOutline> oP46 = X0Y8_人指_人指3.GetOP();
+    			curveOutline = oP46[(int)((double)(oP46.Count - num2) * 0.5)];
+    			index = (int)((double)curveOutline.ps.Count * 0.5);
+    			curveOutline.ps[index] += (curveOutline.ps[index] - X0Y8_人指_人指3.GetBasePointBase()) * num * value;
+    			List<CurveOutline> oP47 = X0Y8_中指_中指3.GetOP();
+    			curveOutline = oP47[(int)((double)(oP47.Count - num2) * 0.5)];
+    			index = (int)((double)curveOutline.ps.Count * 0.5);
+    			curveOutline.ps[index] += (curveOutline.ps[index] - X0Y8_中指_中指3.GetBasePointBase()) * num * value;
+    			List<CurveOutline> oP48 = X0Y8_薬指_薬指3.GetOP();
+    			curveOutline = oP48[(int)((double)(oP48.Count - num2) * 0.5)];
+    			index = (int)((double)curveOutline.ps.Count * 0.5);
+    			curveOutline.ps[index] += (curveOutline.ps[index] - X0Y8_薬指_薬指3.GetBasePointBase()) * num * value;
+    			List<CurveOutline> oP49 = X0Y8_小指_小指3.GetOP();
+    			curveOutline = oP49[(int)((double)(oP49.Count - num2) * 0.5)];
+    			index = (int)((double)curveOutline.ps.Count * 0.5);
+    			curveOutline.ps[index] += (curveOutline.ps[index] - X0Y8_小指_小指3.GetBasePointBase()) * num * value;
+    			List<CurveOutline> oP50 = X0Y8_親指_親指3.GetOP();
+    			curveOutline = oP50[(int)((double)(oP50.Count - num2) * 0.5)];
+    			index = (int)((double)curveOutline.ps.Count * 0.5);
+    			curveOutline.ps[index] += (curveOutline.ps[index] - X0Y8_親指_親指3.GetBasePointBase()) * num * 0.65 * value;
+    			List<CurveOutline> oP51 = X0Y10_人指_人指3.GetOP();
+    			curveOutline = oP51[(int)((double)(oP51.Count - num2) * 0.5)];
+    			index = (int)((double)curveOutline.ps.Count * 0.5);
+    			curveOutline.ps[index] += (curveOutline.ps[index] - X0Y10_人指_人指3.GetBasePointBase()) * num * value;
+    			List<CurveOutline> oP52 = X0Y10_中指_中指3.GetOP();
+    			curveOutline = oP52[(int)((double)(oP52.Count - num2) * 0.5)];
+    			index = (int)((double)curveOutline.ps.Count * 0.5);
+    			curveOutline.ps[index] += (curveOutline.ps[index] - X0Y10_中指_中指3.GetBasePointBase()) * num * value;
+    			List<CurveOutline> oP53 = X0Y10_薬指_薬指3.GetOP();
+    			curveOutline = oP53[(int)((double)(oP53.Count - num2) * 0.5)];
+    			index = (int)((double)curveOutline.ps.Count * 0.5);
+    			curveOutline.ps[index] += (curveOutline.ps[index] - X0Y10_薬指_薬指3.GetBasePointBase()) * num * value;
+    			List<CurveOutline> oP54 = X0Y10_小指_小指3.GetOP();
+    			curveOutline = oP54[(int)((double)(oP54.Count - num2) * 0.5)];
+    			index = (int)((double)curveOutline.ps.Count * 0.5);
+    			curveOutline.ps[index] += (curveOutline.ps[index] - X0Y10_小指_小指3.GetBasePointBase()) * num * value;
+    			List<CurveOutline> oP55 = X0Y10_親指_親指3.GetOP();
+    			curveOutline = oP55[(int)((double)(oP55.Count - num2) * 0.5)];
+    			index = (int)((double)curveOutline.ps.Count * 0.5);
+    			curveOutline.ps[index] += (curveOutline.ps[index] - X0Y10_親指_親指3.GetBasePointBase()) * num * 0.65 * value;
     		}
     	}
 
@@ -2801,439 +2801,439 @@ namespace SlaveMatrix
     	public 手_人(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 手_人D e)
     	{
     		ThisType = GetType();
-    		Body = new Difs(Sta.腕左["手"]);
-    		Pars pars = Body[0][0];
-    		Pars pars2 = pars["グローブ"].ToPars();
+    		Body = new VariantGrid(GlobalState.腕左["手"]);
+    		PartGroup partGroup = Body[0][0];
+    		PartGroup pars2 = partGroup["グローブ"].ToPars();
     		X0Y0_グローブ_グローブ = pars2["グローブ"].ToPar();
     		X0Y0_グローブ_縁1 = pars2["縁1"].ToPar();
     		X0Y0_グローブ_縁2 = pars2["縁2"].ToPar();
-    		X0Y0_獣性_獣毛 = pars["獣毛"].ToPar();
-    		X0Y0_手 = pars["手"].ToPar();
-    		X0Y0_獣性_肉球 = pars["獣肉球"].ToPar();
-    		pars2 = pars["人指"].ToPars();
+    		X0Y0_獣性_獣毛 = partGroup["獣毛"].ToPar();
+    		X0Y0_手 = partGroup["手"].ToPar();
+    		X0Y0_獣性_肉球 = partGroup["獣肉球"].ToPar();
+    		pars2 = partGroup["人指"].ToPars();
     		X0Y0_人指_人指1 = pars2["人指1"].ToPar();
     		X0Y0_人指_人指3 = pars2["人指3"].ToPar();
     		X0Y0_人指_人指2 = pars2["人指2"].ToPar();
     		X0Y0_人指_水掻 = pars2["水掻"].ToPar();
-    		pars2 = pars["中指"].ToPars();
+    		pars2 = partGroup["中指"].ToPars();
     		X0Y0_中指_中指1 = pars2["中指1"].ToPar();
     		X0Y0_中指_中指3 = pars2["中指3"].ToPar();
     		X0Y0_中指_中指2 = pars2["中指2"].ToPar();
     		X0Y0_中指_水掻 = pars2["水掻"].ToPar();
-    		pars2 = pars["薬指"].ToPars();
+    		pars2 = partGroup["薬指"].ToPars();
     		X0Y0_薬指_薬指1 = pars2["薬指1"].ToPar();
     		X0Y0_薬指_薬指3 = pars2["薬指3"].ToPar();
     		X0Y0_薬指_薬指2 = pars2["薬指2"].ToPar();
     		X0Y0_薬指_水掻 = pars2["水掻"].ToPar();
-    		pars2 = pars["小指"].ToPars();
+    		pars2 = partGroup["小指"].ToPars();
     		X0Y0_小指_小指1 = pars2["小指1"].ToPar();
     		X0Y0_小指_小指3 = pars2["小指3"].ToPar();
     		X0Y0_小指_小指2 = pars2["小指2"].ToPar();
-    		pars2 = pars["親指"].ToPars();
+    		pars2 = partGroup["親指"].ToPars();
     		X0Y0_親指_水掻 = pars2["水掻"].ToPar();
     		X0Y0_親指_親指1 = pars2["親指1"].ToPar();
     		X0Y0_親指_獣性_肉球 = pars2["獣肉球"].ToPar();
     		X0Y0_親指_親指2 = pars2["親指2"].ToPar();
     		X0Y0_親指_親指3 = pars2["親指3"].ToPar();
-    		pars = Body[0][1];
-    		pars2 = pars["親指"].ToPars();
+    		partGroup = Body[0][1];
+    		pars2 = partGroup["親指"].ToPars();
     		X0Y1_親指_親指3 = pars2["親指3"].ToPar();
     		X0Y1_親指_親指2 = pars2["親指2"].ToPar();
     		X0Y1_親指_親指1 = pars2["親指1"].ToPar();
     		X0Y1_親指_水掻 = pars2["水掻"].ToPar();
-    		pars2 = pars["人指"].ToPars();
+    		pars2 = partGroup["人指"].ToPars();
     		X0Y1_人指_人指3 = pars2["人指3"].ToPar();
     		X0Y1_人指_人指2 = pars2["人指2"].ToPar();
     		X0Y1_人指_人指1 = pars2["人指1"].ToPar();
     		X0Y1_人指_水掻 = pars2["水掻"].ToPar();
-    		pars2 = pars["中指"].ToPars();
+    		pars2 = partGroup["中指"].ToPars();
     		X0Y1_中指_中指3 = pars2["中指3"].ToPar();
     		X0Y1_中指_中指2 = pars2["中指2"].ToPar();
     		X0Y1_中指_中指1 = pars2["中指1"].ToPar();
     		X0Y1_中指_水掻 = pars2["水掻"].ToPar();
-    		pars2 = pars["薬指"].ToPars();
+    		pars2 = partGroup["薬指"].ToPars();
     		X0Y1_薬指_薬指3 = pars2["薬指3"].ToPar();
     		X0Y1_薬指_薬指2 = pars2["薬指2"].ToPar();
     		X0Y1_薬指_薬指1 = pars2["薬指1"].ToPar();
     		X0Y1_薬指_水掻 = pars2["水掻"].ToPar();
-    		pars2 = pars["小指"].ToPars();
+    		pars2 = partGroup["小指"].ToPars();
     		X0Y1_小指_小指3 = pars2["小指3"].ToPar();
     		X0Y1_小指_小指2 = pars2["小指2"].ToPar();
     		X0Y1_小指_小指1 = pars2["小指1"].ToPar();
-    		X0Y1_手 = pars["手"].ToPar();
-    		X0Y1_獣性_獣毛 = pars["獣毛"].ToPar();
-    		pars2 = pars["鱗"].ToPars();
+    		X0Y1_手 = partGroup["手"].ToPar();
+    		X0Y1_獣性_獣毛 = partGroup["獣毛"].ToPar();
+    		pars2 = partGroup["鱗"].ToPars();
     		X0Y1_竜性_鱗1 = pars2["鱗1"].ToPar();
     		X0Y1_竜性_鱗2 = pars2["鱗2"].ToPar();
     		X0Y1_竜性_鱗3 = pars2["鱗3"].ToPar();
-    		pars2 = pars["悪タトゥ"].ToPars();
-    		Pars pars3 = pars2["五芒星"].ToPars();
+    		pars2 = partGroup["悪タトゥ"].ToPars();
+    		PartGroup pars3 = pars2["五芒星"].ToPars();
     		X0Y1_悪タトゥ_五芒星_円1 = pars3["円1"].ToPar();
     		X0Y1_悪タトゥ_五芒星_円2 = pars3["円2"].ToPar();
     		X0Y1_悪タトゥ_五芒星_星 = pars3["星"].ToPar();
     		X0Y1_悪タトゥ_五芒星_五角形 = pars3["五角形"].ToPar();
-    		pars2 = pars["グローブ"].ToPars();
+    		pars2 = partGroup["グローブ"].ToPars();
     		X0Y1_グローブ_グローブ = pars2["グローブ"].ToPar();
     		X0Y1_グローブ_縁1 = pars2["縁1"].ToPar();
     		X0Y1_グローブ_縁2 = pars2["縁2"].ToPar();
-    		pars = Body[0][2];
-    		pars2 = pars["親指"].ToPars();
+    		partGroup = Body[0][2];
+    		pars2 = partGroup["親指"].ToPars();
     		X0Y2_親指_親指3 = pars2["親指3"].ToPar();
     		X0Y2_親指_親指2 = pars2["親指2"].ToPar();
     		X0Y2_親指_親指1 = pars2["親指1"].ToPar();
     		X0Y2_親指_水掻 = pars2["水掻"].ToPar();
-    		pars2 = pars["人指"].ToPars();
+    		pars2 = partGroup["人指"].ToPars();
     		X0Y2_人指_人指3 = pars2["人指3"].ToPar();
     		X0Y2_人指_人指2 = pars2["人指2"].ToPar();
     		X0Y2_人指_人指1 = pars2["人指1"].ToPar();
     		X0Y2_人指_水掻 = pars2["水掻"].ToPar();
-    		pars2 = pars["中指"].ToPars();
+    		pars2 = partGroup["中指"].ToPars();
     		X0Y2_中指_中指3 = pars2["中指3"].ToPar();
     		X0Y2_中指_中指2 = pars2["中指2"].ToPar();
     		X0Y2_中指_中指1 = pars2["中指1"].ToPar();
     		X0Y2_中指_水掻 = pars2["水掻"].ToPar();
-    		pars2 = pars["薬指"].ToPars();
+    		pars2 = partGroup["薬指"].ToPars();
     		X0Y2_薬指_薬指3 = pars2["薬指3"].ToPar();
     		X0Y2_薬指_薬指2 = pars2["薬指2"].ToPar();
     		X0Y2_薬指_薬指1 = pars2["薬指1"].ToPar();
     		X0Y2_薬指_水掻 = pars2["水掻"].ToPar();
-    		pars2 = pars["小指"].ToPars();
+    		pars2 = partGroup["小指"].ToPars();
     		X0Y2_小指_小指3 = pars2["小指3"].ToPar();
     		X0Y2_小指_小指2 = pars2["小指2"].ToPar();
     		X0Y2_小指_小指1 = pars2["小指1"].ToPar();
-    		X0Y2_手 = pars["手"].ToPar();
-    		X0Y2_獣性_獣毛 = pars["獣毛"].ToPar();
-    		pars2 = pars["鱗"].ToPars();
+    		X0Y2_手 = partGroup["手"].ToPar();
+    		X0Y2_獣性_獣毛 = partGroup["獣毛"].ToPar();
+    		pars2 = partGroup["鱗"].ToPars();
     		X0Y2_竜性_鱗1 = pars2["鱗1"].ToPar();
     		X0Y2_竜性_鱗2 = pars2["鱗2"].ToPar();
     		X0Y2_竜性_鱗3 = pars2["鱗3"].ToPar();
-    		pars2 = pars["悪タトゥ"].ToPars();
+    		pars2 = partGroup["悪タトゥ"].ToPars();
     		pars3 = pars2["五芒星"].ToPars();
     		X0Y2_悪タトゥ_五芒星_円1 = pars3["円1"].ToPar();
     		X0Y2_悪タトゥ_五芒星_円2 = pars3["円2"].ToPar();
     		X0Y2_悪タトゥ_五芒星_星 = pars3["星"].ToPar();
     		X0Y2_悪タトゥ_五芒星_五角形 = pars3["五角形"].ToPar();
-    		pars2 = pars["グローブ"].ToPars();
+    		pars2 = partGroup["グローブ"].ToPars();
     		X0Y2_グローブ_グローブ = pars2["グローブ"].ToPar();
     		X0Y2_グローブ_縁1 = pars2["縁1"].ToPar();
     		X0Y2_グローブ_縁2 = pars2["縁2"].ToPar();
-    		pars = Body[0][3];
-    		pars2 = pars["親指"].ToPars();
+    		partGroup = Body[0][3];
+    		pars2 = partGroup["親指"].ToPars();
     		X0Y3_親指_親指1 = pars2["親指1"].ToPar();
     		X0Y3_親指_親指2 = pars2["親指2"].ToPar();
     		X0Y3_親指_親指3 = pars2["親指3"].ToPar();
     		X0Y3_親指_水掻 = pars2["水掻"].ToPar();
-    		pars2 = pars["人指"].ToPars();
+    		pars2 = partGroup["人指"].ToPars();
     		X0Y3_人指_人指3 = pars2["人指3"].ToPar();
     		X0Y3_人指_人指2 = pars2["人指2"].ToPar();
     		X0Y3_人指_人指1 = pars2["人指1"].ToPar();
     		X0Y3_人指_水掻 = pars2["水掻"].ToPar();
-    		pars2 = pars["中指"].ToPars();
+    		pars2 = partGroup["中指"].ToPars();
     		X0Y3_中指_中指3 = pars2["中指3"].ToPar();
     		X0Y3_中指_中指2 = pars2["中指2"].ToPar();
     		X0Y3_中指_中指1 = pars2["中指1"].ToPar();
     		X0Y3_中指_水掻 = pars2["水掻"].ToPar();
-    		pars2 = pars["薬指"].ToPars();
+    		pars2 = partGroup["薬指"].ToPars();
     		X0Y3_薬指_薬指3 = pars2["薬指3"].ToPar();
     		X0Y3_薬指_薬指2 = pars2["薬指2"].ToPar();
     		X0Y3_薬指_薬指1 = pars2["薬指1"].ToPar();
     		X0Y3_薬指_水掻 = pars2["水掻"].ToPar();
-    		pars2 = pars["小指"].ToPars();
+    		pars2 = partGroup["小指"].ToPars();
     		X0Y3_小指_小指3 = pars2["小指3"].ToPar();
     		X0Y3_小指_小指2 = pars2["小指2"].ToPar();
     		X0Y3_小指_小指1 = pars2["小指1"].ToPar();
-    		X0Y3_手 = pars["手"].ToPar();
-    		X0Y3_獣性_獣毛 = pars["獣毛"].ToPar();
-    		pars2 = pars["鱗"].ToPars();
+    		X0Y3_手 = partGroup["手"].ToPar();
+    		X0Y3_獣性_獣毛 = partGroup["獣毛"].ToPar();
+    		pars2 = partGroup["鱗"].ToPars();
     		X0Y3_竜性_鱗1 = pars2["鱗1"].ToPar();
     		X0Y3_竜性_鱗2 = pars2["鱗2"].ToPar();
     		X0Y3_竜性_鱗3 = pars2["鱗3"].ToPar();
-    		pars2 = pars["悪タトゥ"].ToPars();
+    		pars2 = partGroup["悪タトゥ"].ToPars();
     		pars3 = pars2["五芒星"].ToPars();
     		X0Y3_悪タトゥ_五芒星_円1 = pars3["円1"].ToPar();
     		X0Y3_悪タトゥ_五芒星_円2 = pars3["円2"].ToPar();
     		X0Y3_悪タトゥ_五芒星_星 = pars3["星"].ToPar();
     		X0Y3_悪タトゥ_五芒星_五角形 = pars3["五角形"].ToPar();
-    		pars2 = pars["グローブ"].ToPars();
+    		pars2 = partGroup["グローブ"].ToPars();
     		X0Y3_グローブ_グローブ = pars2["グローブ"].ToPar();
     		X0Y3_グローブ_縁1 = pars2["縁1"].ToPar();
     		X0Y3_グローブ_縁2 = pars2["縁2"].ToPar();
-    		pars = Body[0][4];
-    		pars2 = pars["親指"].ToPars();
+    		partGroup = Body[0][4];
+    		pars2 = partGroup["親指"].ToPars();
     		X0Y4_親指_親指3 = pars2["親指3"].ToPar();
     		X0Y4_親指_親指2 = pars2["親指2"].ToPar();
     		X0Y4_親指_親指1 = pars2["親指1"].ToPar();
     		X0Y4_親指_水掻 = pars2["水掻"].ToPar();
-    		pars2 = pars["人指"].ToPars();
+    		pars2 = partGroup["人指"].ToPars();
     		X0Y4_人指_人指3 = pars2["人指3"].ToPar();
     		X0Y4_人指_人指2 = pars2["人指2"].ToPar();
     		X0Y4_人指_人指1 = pars2["人指1"].ToPar();
     		X0Y4_人指_水掻 = pars2["水掻"].ToPar();
-    		pars2 = pars["小指"].ToPars();
+    		pars2 = partGroup["小指"].ToPars();
     		X0Y4_小指_小指3 = pars2["小指3"].ToPar();
     		X0Y4_小指_小指2 = pars2["小指2"].ToPar();
     		X0Y4_小指_小指1 = pars2["小指1"].ToPar();
-    		pars2 = pars["中指"].ToPars();
+    		pars2 = partGroup["中指"].ToPars();
     		X0Y4_中指_中指3 = pars2["中指3"].ToPar();
     		X0Y4_中指_中指2 = pars2["中指2"].ToPar();
     		X0Y4_中指_中指1 = pars2["中指1"].ToPar();
     		X0Y4_中指_水掻 = pars2["水掻"].ToPar();
-    		pars2 = pars["薬指"].ToPars();
+    		pars2 = partGroup["薬指"].ToPars();
     		X0Y4_薬指_薬指3 = pars2["薬指3"].ToPar();
     		X0Y4_薬指_薬指2 = pars2["薬指2"].ToPar();
     		X0Y4_薬指_薬指1 = pars2["薬指1"].ToPar();
     		X0Y4_薬指_水掻 = pars2["水掻"].ToPar();
-    		X0Y4_手 = pars["手"].ToPar();
-    		X0Y4_獣性_獣毛 = pars["獣毛"].ToPar();
-    		pars2 = pars["鱗"].ToPars();
+    		X0Y4_手 = partGroup["手"].ToPar();
+    		X0Y4_獣性_獣毛 = partGroup["獣毛"].ToPar();
+    		pars2 = partGroup["鱗"].ToPars();
     		X0Y4_竜性_鱗1 = pars2["鱗1"].ToPar();
     		X0Y4_竜性_鱗2 = pars2["鱗2"].ToPar();
     		X0Y4_竜性_鱗3 = pars2["鱗3"].ToPar();
-    		pars2 = pars["悪タトゥ"].ToPars();
+    		pars2 = partGroup["悪タトゥ"].ToPars();
     		pars3 = pars2["五芒星"].ToPars();
     		X0Y4_悪タトゥ_五芒星_円1 = pars3["円1"].ToPar();
     		X0Y4_悪タトゥ_五芒星_円2 = pars3["円2"].ToPar();
     		X0Y4_悪タトゥ_五芒星_星 = pars3["星"].ToPar();
     		X0Y4_悪タトゥ_五芒星_五角形 = pars3["五角形"].ToPar();
-    		pars2 = pars["グローブ"].ToPars();
+    		pars2 = partGroup["グローブ"].ToPars();
     		X0Y4_グローブ_グローブ = pars2["グローブ"].ToPar();
     		X0Y4_グローブ_縁1 = pars2["縁1"].ToPar();
     		X0Y4_グローブ_縁2 = pars2["縁2"].ToPar();
-    		pars = Body[0][5];
-    		pars2 = pars["親指"].ToPars();
+    		partGroup = Body[0][5];
+    		pars2 = partGroup["親指"].ToPars();
     		X0Y5_親指_親指1 = pars2["親指1"].ToPar();
     		X0Y5_親指_親指2 = pars2["親指2"].ToPar();
     		X0Y5_親指_親指3 = pars2["親指3"].ToPar();
     		X0Y5_親指_水掻 = pars2["水掻"].ToPar();
-    		pars2 = pars["人指"].ToPars();
+    		pars2 = partGroup["人指"].ToPars();
     		X0Y5_人指_人指3 = pars2["人指3"].ToPar();
     		X0Y5_人指_人指2 = pars2["人指2"].ToPar();
     		X0Y5_人指_人指1 = pars2["人指1"].ToPar();
     		X0Y5_人指_水掻 = pars2["水掻"].ToPar();
-    		pars2 = pars["中指"].ToPars();
+    		pars2 = partGroup["中指"].ToPars();
     		X0Y5_中指_中指3 = pars2["中指3"].ToPar();
     		X0Y5_中指_中指2 = pars2["中指2"].ToPar();
     		X0Y5_中指_中指1 = pars2["中指1"].ToPar();
     		X0Y5_中指_水掻 = pars2["水掻"].ToPar();
-    		pars2 = pars["薬指"].ToPars();
+    		pars2 = partGroup["薬指"].ToPars();
     		X0Y5_薬指_薬指3 = pars2["薬指3"].ToPar();
     		X0Y5_薬指_薬指2 = pars2["薬指2"].ToPar();
     		X0Y5_薬指_薬指1 = pars2["薬指1"].ToPar();
     		X0Y5_薬指_水掻 = pars2["水掻"].ToPar();
-    		pars2 = pars["小指"].ToPars();
+    		pars2 = partGroup["小指"].ToPars();
     		X0Y5_小指_小指3 = pars2["小指3"].ToPar();
     		X0Y5_小指_小指2 = pars2["小指2"].ToPar();
     		X0Y5_小指_小指1 = pars2["小指1"].ToPar();
-    		X0Y5_手 = pars["手"].ToPar();
-    		X0Y5_獣性_獣毛 = pars["獣毛"].ToPar();
-    		pars2 = pars["鱗"].ToPars();
+    		X0Y5_手 = partGroup["手"].ToPar();
+    		X0Y5_獣性_獣毛 = partGroup["獣毛"].ToPar();
+    		pars2 = partGroup["鱗"].ToPars();
     		X0Y5_竜性_鱗1 = pars2["鱗1"].ToPar();
     		X0Y5_竜性_鱗2 = pars2["鱗2"].ToPar();
     		X0Y5_竜性_鱗3 = pars2["鱗3"].ToPar();
-    		pars2 = pars["悪タトゥ"].ToPars();
+    		pars2 = partGroup["悪タトゥ"].ToPars();
     		pars3 = pars2["五芒星"].ToPars();
     		X0Y5_悪タトゥ_五芒星_円1 = pars3["円1"].ToPar();
     		X0Y5_悪タトゥ_五芒星_円2 = pars3["円2"].ToPar();
     		X0Y5_悪タトゥ_五芒星_星 = pars3["星"].ToPar();
     		X0Y5_悪タトゥ_五芒星_五角形 = pars3["五角形"].ToPar();
-    		pars2 = pars["グローブ"].ToPars();
+    		pars2 = partGroup["グローブ"].ToPars();
     		X0Y5_グローブ_グローブ = pars2["グローブ"].ToPar();
     		X0Y5_グローブ_縁1 = pars2["縁1"].ToPar();
     		X0Y5_グローブ_縁2 = pars2["縁2"].ToPar();
-    		pars = Body[0][6];
-    		pars2 = pars["小指"].ToPars();
+    		partGroup = Body[0][6];
+    		pars2 = partGroup["小指"].ToPars();
     		X0Y6_小指_小指3 = pars2["小指3"].ToPar();
     		X0Y6_小指_小指2 = pars2["小指2"].ToPar();
     		X0Y6_小指_小指1 = pars2["小指1"].ToPar();
-    		pars2 = pars["薬指"].ToPars();
+    		pars2 = partGroup["薬指"].ToPars();
     		X0Y6_薬指_水掻 = pars2["水掻"].ToPar();
     		X0Y6_薬指_薬指3 = pars2["薬指3"].ToPar();
     		X0Y6_薬指_薬指2 = pars2["薬指2"].ToPar();
     		X0Y6_薬指_薬指1 = pars2["薬指1"].ToPar();
-    		pars2 = pars["中指"].ToPars();
+    		pars2 = partGroup["中指"].ToPars();
     		X0Y6_中指_水掻 = pars2["水掻"].ToPar();
     		X0Y6_中指_中指3 = pars2["中指3"].ToPar();
     		X0Y6_中指_中指2 = pars2["中指2"].ToPar();
     		X0Y6_中指_中指1 = pars2["中指1"].ToPar();
-    		pars2 = pars["人指"].ToPars();
+    		pars2 = partGroup["人指"].ToPars();
     		X0Y6_人指_水掻 = pars2["水掻"].ToPar();
     		X0Y6_人指_人指3 = pars2["人指3"].ToPar();
     		X0Y6_人指_人指2 = pars2["人指2"].ToPar();
     		X0Y6_人指_人指1 = pars2["人指1"].ToPar();
-    		pars2 = pars["親指"].ToPars();
+    		pars2 = partGroup["親指"].ToPars();
     		X0Y6_親指_親指3 = pars2["親指3"].ToPar();
     		X0Y6_親指_親指2 = pars2["親指2"].ToPar();
     		X0Y6_親指_親指1 = pars2["親指1"].ToPar();
     		X0Y6_親指_水掻 = pars2["水掻"].ToPar();
-    		X0Y6_手 = pars["手"].ToPar();
-    		X0Y6_獣性_獣毛 = pars["獣毛"].ToPar();
-    		pars2 = pars["鱗"].ToPars();
+    		X0Y6_手 = partGroup["手"].ToPar();
+    		X0Y6_獣性_獣毛 = partGroup["獣毛"].ToPar();
+    		pars2 = partGroup["鱗"].ToPars();
     		X0Y6_竜性_鱗1 = pars2["鱗1"].ToPar();
     		X0Y6_竜性_鱗2 = pars2["鱗2"].ToPar();
     		X0Y6_竜性_鱗3 = pars2["鱗3"].ToPar();
-    		pars2 = pars["悪タトゥ"].ToPars();
+    		pars2 = partGroup["悪タトゥ"].ToPars();
     		pars3 = pars2["五芒星"].ToPars();
     		X0Y6_悪タトゥ_五芒星_円1 = pars3["円1"].ToPar();
     		X0Y6_悪タトゥ_五芒星_円2 = pars3["円2"].ToPar();
     		X0Y6_悪タトゥ_五芒星_星 = pars3["星"].ToPar();
     		X0Y6_悪タトゥ_五芒星_五角形 = pars3["五角形"].ToPar();
-    		pars2 = pars["グローブ"].ToPars();
+    		pars2 = partGroup["グローブ"].ToPars();
     		X0Y6_グローブ_グローブ = pars2["グローブ"].ToPar();
     		X0Y6_グローブ_縁1 = pars2["縁1"].ToPar();
     		X0Y6_グローブ_縁2 = pars2["縁2"].ToPar();
-    		pars = Body[0][7];
-    		pars2 = pars["親指"].ToPars();
+    		partGroup = Body[0][7];
+    		pars2 = partGroup["親指"].ToPars();
     		X0Y7_親指_親指1 = pars2["親指1"].ToPar();
     		X0Y7_親指_親指2 = pars2["親指2"].ToPar();
     		X0Y7_親指_親指3 = pars2["親指3"].ToPar();
     		X0Y7_親指_水掻 = pars2["水掻"].ToPar();
-    		X0Y7_手 = pars["手"].ToPar();
-    		pars2 = pars["人指"].ToPars();
+    		X0Y7_手 = partGroup["手"].ToPar();
+    		pars2 = partGroup["人指"].ToPars();
     		X0Y7_人指_人指3 = pars2["人指3"].ToPar();
     		X0Y7_人指_人指2 = pars2["人指2"].ToPar();
     		X0Y7_人指_人指1 = pars2["人指1"].ToPar();
     		X0Y7_人指_水掻 = pars2["水掻"].ToPar();
-    		pars2 = pars["中指"].ToPars();
+    		pars2 = partGroup["中指"].ToPars();
     		X0Y7_中指_中指3 = pars2["中指3"].ToPar();
     		X0Y7_中指_中指2 = pars2["中指2"].ToPar();
     		X0Y7_中指_中指1 = pars2["中指1"].ToPar();
     		X0Y7_中指_水掻 = pars2["水掻"].ToPar();
-    		pars2 = pars["小指"].ToPars();
+    		pars2 = partGroup["小指"].ToPars();
     		X0Y7_小指_小指3 = pars2["小指3"].ToPar();
     		X0Y7_小指_小指2 = pars2["小指2"].ToPar();
     		X0Y7_小指_小指1 = pars2["小指1"].ToPar();
-    		pars2 = pars["薬指"].ToPars();
+    		pars2 = partGroup["薬指"].ToPars();
     		X0Y7_薬指_薬指3 = pars2["薬指3"].ToPar();
     		X0Y7_薬指_薬指2 = pars2["薬指2"].ToPar();
     		X0Y7_薬指_薬指1 = pars2["薬指1"].ToPar();
     		X0Y7_薬指_水掻 = pars2["水掻"].ToPar();
-    		X0Y7_獣性_獣毛 = pars["獣毛"].ToPar();
-    		pars2 = pars["鱗"].ToPars();
+    		X0Y7_獣性_獣毛 = partGroup["獣毛"].ToPar();
+    		pars2 = partGroup["鱗"].ToPars();
     		X0Y7_竜性_鱗1 = pars2["鱗1"].ToPar();
     		X0Y7_竜性_鱗2 = pars2["鱗2"].ToPar();
     		X0Y7_竜性_鱗3 = pars2["鱗3"].ToPar();
-    		pars2 = pars["悪タトゥ"].ToPars();
+    		pars2 = partGroup["悪タトゥ"].ToPars();
     		pars3 = pars2["五芒星"].ToPars();
     		X0Y7_悪タトゥ_五芒星_円1 = pars3["円1"].ToPar();
     		X0Y7_悪タトゥ_五芒星_円2 = pars3["円2"].ToPar();
     		X0Y7_悪タトゥ_五芒星_星 = pars3["星"].ToPar();
     		X0Y7_悪タトゥ_五芒星_五角形 = pars3["五角形"].ToPar();
-    		pars2 = pars["グローブ"].ToPars();
+    		pars2 = partGroup["グローブ"].ToPars();
     		X0Y7_グローブ_グローブ = pars2["グローブ"].ToPar();
     		X0Y7_グローブ_縁1 = pars2["縁1"].ToPar();
     		X0Y7_グローブ_縁2 = pars2["縁2"].ToPar();
-    		pars = Body[0][8];
-    		pars2 = pars["親指"].ToPars();
+    		partGroup = Body[0][8];
+    		pars2 = partGroup["親指"].ToPars();
     		X0Y8_親指_親指3 = pars2["親指3"].ToPar();
     		X0Y8_親指_親指2 = pars2["親指2"].ToPar();
     		X0Y8_親指_親指1 = pars2["親指1"].ToPar();
     		X0Y8_親指_水掻 = pars2["水掻"].ToPar();
-    		pars2 = pars["人指"].ToPars();
+    		pars2 = partGroup["人指"].ToPars();
     		X0Y8_人指_人指3 = pars2["人指3"].ToPar();
     		X0Y8_人指_人指2 = pars2["人指2"].ToPar();
     		X0Y8_人指_人指1 = pars2["人指1"].ToPar();
     		X0Y8_人指_水掻 = pars2["水掻"].ToPar();
-    		pars2 = pars["中指"].ToPars();
+    		pars2 = partGroup["中指"].ToPars();
     		X0Y8_中指_中指3 = pars2["中指3"].ToPar();
     		X0Y8_中指_中指2 = pars2["中指2"].ToPar();
     		X0Y8_中指_中指1 = pars2["中指1"].ToPar();
     		X0Y8_中指_水掻 = pars2["水掻"].ToPar();
-    		pars2 = pars["薬指"].ToPars();
+    		pars2 = partGroup["薬指"].ToPars();
     		X0Y8_薬指_薬指3 = pars2["薬指3"].ToPar();
     		X0Y8_薬指_薬指2 = pars2["薬指2"].ToPar();
     		X0Y8_薬指_薬指1 = pars2["薬指1"].ToPar();
     		X0Y8_薬指_水掻 = pars2["水掻"].ToPar();
-    		pars2 = pars["小指"].ToPars();
+    		pars2 = partGroup["小指"].ToPars();
     		X0Y8_小指_小指3 = pars2["小指3"].ToPar();
     		X0Y8_小指_小指2 = pars2["小指2"].ToPar();
     		X0Y8_小指_小指1 = pars2["小指1"].ToPar();
-    		X0Y8_手 = pars["手"].ToPar();
-    		X0Y8_獣性_獣毛 = pars["獣毛"].ToPar();
-    		pars2 = pars["鱗"].ToPars();
+    		X0Y8_手 = partGroup["手"].ToPar();
+    		X0Y8_獣性_獣毛 = partGroup["獣毛"].ToPar();
+    		pars2 = partGroup["鱗"].ToPars();
     		X0Y8_竜性_鱗1 = pars2["鱗1"].ToPar();
     		X0Y8_竜性_鱗2 = pars2["鱗2"].ToPar();
     		X0Y8_竜性_鱗3 = pars2["鱗3"].ToPar();
-    		pars2 = pars["悪タトゥ"].ToPars();
+    		pars2 = partGroup["悪タトゥ"].ToPars();
     		pars3 = pars2["五芒星"].ToPars();
     		X0Y8_悪タトゥ_五芒星_円1 = pars3["円1"].ToPar();
     		X0Y8_悪タトゥ_五芒星_円2 = pars3["円2"].ToPar();
     		X0Y8_悪タトゥ_五芒星_星 = pars3["星"].ToPar();
     		X0Y8_悪タトゥ_五芒星_五角形 = pars3["五角形"].ToPar();
-    		pars2 = pars["グローブ"].ToPars();
+    		pars2 = partGroup["グローブ"].ToPars();
     		X0Y8_グローブ_グローブ = pars2["グローブ"].ToPar();
     		X0Y8_グローブ_縁1 = pars2["縁1"].ToPar();
     		X0Y8_グローブ_縁2 = pars2["縁2"].ToPar();
-    		pars = Body[0][9];
-    		pars2 = pars["グローブ"].ToPars();
+    		partGroup = Body[0][9];
+    		pars2 = partGroup["グローブ"].ToPars();
     		X0Y9_グローブ_グローブ = pars2["グローブ"].ToPar();
     		X0Y9_グローブ_縁1 = pars2["縁1"].ToPar();
     		X0Y9_グローブ_縁2 = pars2["縁2"].ToPar();
-    		X0Y9_獣性_獣毛 = pars["獣毛"].ToPar();
-    		X0Y9_手 = pars["手"].ToPar();
-    		X0Y9_獣肉球 = pars["獣肉球"].ToPar();
-    		pars2 = pars["人指"].ToPars();
+    		X0Y9_獣性_獣毛 = partGroup["獣毛"].ToPar();
+    		X0Y9_手 = partGroup["手"].ToPar();
+    		X0Y9_獣肉球 = partGroup["獣肉球"].ToPar();
+    		pars2 = partGroup["人指"].ToPars();
     		X0Y9_人指_人指1 = pars2["人指1"].ToPar();
     		X0Y9_人指_人指3 = pars2["人指3"].ToPar();
     		X0Y9_人指_人指2 = pars2["人指2"].ToPar();
     		X0Y9_人指_水掻 = pars2["水掻"].ToPar();
-    		pars2 = pars["中指"].ToPars();
+    		pars2 = partGroup["中指"].ToPars();
     		X0Y9_中指_中指1 = pars2["中指1"].ToPar();
     		X0Y9_中指_中指3 = pars2["中指3"].ToPar();
     		X0Y9_中指_中指2 = pars2["中指2"].ToPar();
     		X0Y9_中指_水掻 = pars2["水掻"].ToPar();
-    		pars2 = pars["薬指"].ToPars();
+    		pars2 = partGroup["薬指"].ToPars();
     		X0Y9_薬指_薬指1 = pars2["薬指1"].ToPar();
     		X0Y9_薬指_薬指3 = pars2["薬指3"].ToPar();
     		X0Y9_薬指_薬指2 = pars2["薬指2"].ToPar();
     		X0Y9_薬指_水掻 = pars2["水掻"].ToPar();
-    		pars2 = pars["小指"].ToPars();
+    		pars2 = partGroup["小指"].ToPars();
     		X0Y9_小指_小指1 = pars2["小指1"].ToPar();
     		X0Y9_小指_小指3 = pars2["小指3"].ToPar();
     		X0Y9_小指_小指2 = pars2["小指2"].ToPar();
-    		pars2 = pars["親指"].ToPars();
+    		pars2 = partGroup["親指"].ToPars();
     		X0Y9_親指_水掻 = pars2["水掻"].ToPar();
     		X0Y9_親指_親指1 = pars2["親指1"].ToPar();
     		X0Y9_親指_獣肉球 = pars2["獣肉球"].ToPar();
     		X0Y9_親指_親指2 = pars2["親指2"].ToPar();
     		X0Y9_親指_親指3 = pars2["親指3"].ToPar();
-    		pars = Body[0][10];
-    		pars2 = pars["親指"].ToPars();
+    		partGroup = Body[0][10];
+    		pars2 = partGroup["親指"].ToPars();
     		X0Y10_親指_親指3 = pars2["親指3"].ToPar();
     		X0Y10_親指_親指2 = pars2["親指2"].ToPar();
     		X0Y10_親指_親指1 = pars2["親指1"].ToPar();
     		X0Y10_親指_水掻 = pars2["水掻"].ToPar();
-    		pars2 = pars["人指"].ToPars();
+    		pars2 = partGroup["人指"].ToPars();
     		X0Y10_人指_人指3 = pars2["人指3"].ToPar();
     		X0Y10_人指_人指2 = pars2["人指2"].ToPar();
     		X0Y10_人指_人指1 = pars2["人指1"].ToPar();
     		X0Y10_人指_水掻 = pars2["水掻"].ToPar();
-    		pars2 = pars["小指"].ToPars();
+    		pars2 = partGroup["小指"].ToPars();
     		X0Y10_小指_小指3 = pars2["小指3"].ToPar();
     		X0Y10_小指_小指2 = pars2["小指2"].ToPar();
     		X0Y10_小指_小指1 = pars2["小指1"].ToPar();
-    		pars2 = pars["中指"].ToPars();
+    		pars2 = partGroup["中指"].ToPars();
     		X0Y10_中指_中指3 = pars2["中指3"].ToPar();
     		X0Y10_中指_中指2 = pars2["中指2"].ToPar();
     		X0Y10_中指_中指1 = pars2["中指1"].ToPar();
     		X0Y10_中指_水掻 = pars2["水掻"].ToPar();
-    		pars2 = pars["薬指"].ToPars();
+    		pars2 = partGroup["薬指"].ToPars();
     		X0Y10_薬指_薬指3 = pars2["薬指3"].ToPar();
     		X0Y10_薬指_薬指2 = pars2["薬指2"].ToPar();
     		X0Y10_薬指_薬指1 = pars2["薬指1"].ToPar();
     		X0Y10_薬指_水掻 = pars2["水掻"].ToPar();
-    		X0Y10_手 = pars["手"].ToPar();
-    		X0Y10_獣性_獣毛 = pars["獣毛"].ToPar();
-    		pars2 = pars["鱗"].ToPars();
+    		X0Y10_手 = partGroup["手"].ToPar();
+    		X0Y10_獣性_獣毛 = partGroup["獣毛"].ToPar();
+    		pars2 = partGroup["鱗"].ToPars();
     		X0Y10_竜性_鱗1 = pars2["鱗1"].ToPar();
     		X0Y10_竜性_鱗2 = pars2["鱗2"].ToPar();
     		X0Y10_竜性_鱗3 = pars2["鱗3"].ToPar();
-    		pars2 = pars["悪タトゥ"].ToPars();
+    		pars2 = partGroup["悪タトゥ"].ToPars();
     		pars3 = pars2["五芒星"].ToPars();
     		X0Y10_悪タトゥ_五芒星_円1 = pars3["円1"].ToPar();
     		X0Y10_悪タトゥ_五芒星_円2 = pars3["円2"].ToPar();
     		X0Y10_悪タトゥ_五芒星_星 = pars3["星"].ToPar();
     		X0Y10_悪タトゥ_五芒星_五角形 = pars3["五角形"].ToPar();
-    		pars2 = pars["グローブ"].ToPars();
+    		pars2 = partGroup["グローブ"].ToPars();
     		X0Y10_グローブ_グローブ = pars2["グローブ"].ToPar();
     		X0Y10_グローブ_縁1 = pars2["縁1"].ToPar();
     		X0Y10_グローブ_縁2 = pars2["縁2"].ToPar();
@@ -4127,7 +4127,7 @@ namespace SlaveMatrix
 
     	public void 獣性()
     	{
-    		foreach (Par item in Body.EnumAllPar())
+    		foreach (ShapePart item in Body.EnumAllPar())
     		{
     			item.GetOP().ExpansionXY(item.GetOP().GetCenter(), 0.001);
     			item.SetSizeBase(item.GetSizeBase() * 1.2);
@@ -4136,7 +4136,7 @@ namespace SlaveMatrix
 
     	public void 竜性()
     	{
-    		foreach (Par item in Body.EnumAllPar())
+    		foreach (ShapePart item in Body.EnumAllPar())
     		{
     			if (item.Tag.Contains("鱗"))
     			{
@@ -4168,7 +4168,7 @@ namespace SlaveMatrix
     		X0Y10_親指_親指1.GetOP()[(!右) ? 4 : 0].Outline = true;
     	}
 
-    	public override bool Is布(Par p)
+    	public override bool Is布(ShapePart p)
     	{
     		if (p != X0Y0_グローブ_グローブ && p != X0Y0_グローブ_縁1 && p != X0Y0_グローブ_縁2 && p != X0Y1_グローブ_グローブ && p != X0Y1_グローブ_縁1 && p != X0Y1_グローブ_縁2 && p != X0Y2_グローブ_グローブ && p != X0Y2_グローブ_縁1 && p != X0Y2_グローブ_縁2 && p != X0Y3_グローブ_グローブ && p != X0Y3_グローブ_縁1 && p != X0Y3_グローブ_縁2 && p != X0Y4_グローブ_グローブ && p != X0Y4_グローブ_縁1 && p != X0Y4_グローブ_縁2 && p != X0Y5_グローブ_グローブ && p != X0Y5_グローブ_縁1 && p != X0Y5_グローブ_縁2 && p != X0Y6_グローブ_グローブ && p != X0Y6_グローブ_縁1 && p != X0Y6_グローブ_縁2 && p != X0Y7_グローブ_グローブ && p != X0Y7_グローブ_縁1 && p != X0Y7_グローブ_縁2 && p != X0Y8_グローブ_グローブ && p != X0Y8_グローブ_縁1 && p != X0Y8_グローブ_縁2 && p != X0Y9_グローブ_グローブ && p != X0Y9_グローブ_縁1 && p != X0Y9_グローブ_縁2 && p != X0Y10_グローブ_グローブ && p != X0Y10_グローブ_縁1)
     		{
@@ -4567,31 +4567,31 @@ namespace SlaveMatrix
     		グローブ_グローブCD = new ColorD();
     		グローブ_縁1CD = new ColorD();
     		グローブ_縁2CD = new ColorD();
-    		獣性_獣毛CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		手CD = new ColorD(ref Col.Black, ref 体配色.人肌O);
-    		獣性_肉球CD = new ColorD(ref Col.Black, ref 体配色.人肌O);
-    		人指_人指1CD = new ColorD(ref Col.Black, ref 体配色.人肌O);
-    		人指_人指3CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		人指_人指2CD = new ColorD(ref Col.Black, ref 体配色.人肌O);
-    		人指_水掻CD = new ColorD(ref Col.Black, ref 体配色.膜O);
-    		中指_中指1CD = new ColorD(ref Col.Black, ref 体配色.人肌O);
-    		中指_中指3CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		中指_中指2CD = new ColorD(ref Col.Black, ref 体配色.人肌O);
-    		中指_水掻CD = new ColorD(ref Col.Black, ref 体配色.膜O);
-    		薬指_薬指1CD = new ColorD(ref Col.Black, ref 体配色.人肌O);
-    		薬指_薬指3CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		薬指_薬指2CD = new ColorD(ref Col.Black, ref 体配色.人肌O);
-    		薬指_水掻CD = new ColorD(ref Col.Black, ref 体配色.膜O);
-    		小指_小指1CD = new ColorD(ref Col.Black, ref 体配色.人肌O);
-    		小指_小指3CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		小指_小指2CD = new ColorD(ref Col.Black, ref 体配色.人肌O);
-    		親指_水掻CD = new ColorD(ref Col.Black, ref 体配色.膜O);
-    		親指_親指1CD = new ColorD(ref Col.Black, ref 体配色.人肌O);
-    		親指_親指2CD = new ColorD(ref Col.Black, ref 体配色.人肌O);
-    		親指_親指3CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		竜性_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		獣性_獣毛CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		手CD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌O);
+    		獣性_肉球CD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌O);
+    		人指_人指1CD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌O);
+    		人指_人指3CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		人指_人指2CD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌O);
+    		人指_水掻CD = new ColorD(ref ColorHelper.Black, ref 体配色.膜O);
+    		中指_中指1CD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌O);
+    		中指_中指3CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		中指_中指2CD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌O);
+    		中指_水掻CD = new ColorD(ref ColorHelper.Black, ref 体配色.膜O);
+    		薬指_薬指1CD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌O);
+    		薬指_薬指3CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		薬指_薬指2CD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌O);
+    		薬指_水掻CD = new ColorD(ref ColorHelper.Black, ref 体配色.膜O);
+    		小指_小指1CD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌O);
+    		小指_小指3CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		小指_小指2CD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌O);
+    		親指_水掻CD = new ColorD(ref ColorHelper.Black, ref 体配色.膜O);
+    		親指_親指1CD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌O);
+    		親指_親指2CD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌O);
+    		親指_親指3CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		竜性_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
     		悪タトゥ_五芒星_円1CD = new ColorD(ref 体配色.刺青.Col1, ref Color2.Empty);
     		悪タトゥ_五芒星_円2CD = new ColorD(ref 体配色.刺青.Col1, ref Color2.Empty);
     		悪タトゥ_五芒星_星CD = new ColorD(ref 体配色.刺青.Col1, ref Color2.Empty);
@@ -4603,31 +4603,31 @@ namespace SlaveMatrix
     		グローブ_グローブCD = new ColorD();
     		グローブ_縁1CD = new ColorD();
     		グローブ_縁2CD = new ColorD();
-    		獣性_獣毛CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		手CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		獣性_肉球CD = new ColorD(ref Col.Black, ref 体配色.人肌O);
-    		人指_人指1CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		人指_人指3CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		人指_人指2CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		人指_水掻CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		中指_中指1CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		中指_中指3CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		中指_中指2CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		中指_水掻CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		薬指_薬指1CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		薬指_薬指3CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		薬指_薬指2CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		薬指_水掻CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		小指_小指1CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		小指_小指3CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		小指_小指2CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		親指_水掻CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		親指_親指1CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		親指_親指2CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		親指_親指3CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		竜性_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		獣性_獣毛CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		手CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		獣性_肉球CD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌O);
+    		人指_人指1CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		人指_人指3CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		人指_人指2CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		人指_水掻CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		中指_中指1CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		中指_中指3CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		中指_中指2CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		中指_水掻CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		薬指_薬指1CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		薬指_薬指3CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		薬指_薬指2CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		薬指_水掻CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		小指_小指1CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		小指_小指3CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		小指_小指2CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		親指_水掻CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		親指_親指1CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		親指_親指2CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		親指_親指3CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		竜性_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
     		悪タトゥ_五芒星_円1CD = new ColorD(ref 体配色.刺青.Col1, ref Color2.Empty);
     		悪タトゥ_五芒星_円2CD = new ColorD(ref 体配色.刺青.Col1, ref Color2.Empty);
     		悪タトゥ_五芒星_星CD = new ColorD(ref 体配色.刺青.Col1, ref Color2.Empty);
@@ -4639,31 +4639,31 @@ namespace SlaveMatrix
     		グローブ_グローブCD = new ColorD();
     		グローブ_縁1CD = new ColorD();
     		グローブ_縁2CD = new ColorD();
-    		獣性_獣毛CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		手CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		獣性_肉球CD = new ColorD(ref Col.Black, ref 体配色.人肌O);
-    		人指_人指1CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		人指_人指3CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		人指_人指2CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		人指_水掻CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		中指_中指1CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		中指_中指3CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		中指_中指2CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		中指_水掻CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		薬指_薬指1CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		薬指_薬指3CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		薬指_薬指2CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		薬指_水掻CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		小指_小指1CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		小指_小指3CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		小指_小指2CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		親指_水掻CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		親指_親指1CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		親指_親指2CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		親指_親指3CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		竜性_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		獣性_獣毛CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		手CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		獣性_肉球CD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌O);
+    		人指_人指1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		人指_人指3CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		人指_人指2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		人指_水掻CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		中指_中指1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		中指_中指3CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		中指_中指2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		中指_水掻CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		薬指_薬指1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		薬指_薬指3CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		薬指_薬指2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		薬指_水掻CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		小指_小指1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		小指_小指3CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		小指_小指2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		親指_水掻CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		親指_親指1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		親指_親指2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		親指_親指3CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		竜性_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
     		悪タトゥ_五芒星_円1CD = new ColorD(ref 体配色.刺青.Col1, ref Color2.Empty);
     		悪タトゥ_五芒星_円2CD = new ColorD(ref 体配色.刺青.Col1, ref Color2.Empty);
     		悪タトゥ_五芒星_星CD = new ColorD(ref 体配色.刺青.Col1, ref Color2.Empty);
@@ -4675,31 +4675,31 @@ namespace SlaveMatrix
     		グローブ_グローブCD = new ColorD();
     		グローブ_縁1CD = new ColorD();
     		グローブ_縁2CD = new ColorD();
-    		獣性_獣毛CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		手CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		獣性_肉球CD = new ColorD(ref Col.Black, ref 体配色.人肌O);
-    		人指_人指1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		人指_人指3CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		人指_人指2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		人指_水掻CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		中指_中指1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		中指_中指3CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		中指_中指2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		中指_水掻CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		薬指_薬指1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		薬指_薬指3CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		薬指_薬指2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		薬指_水掻CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		小指_小指1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		小指_小指3CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		小指_小指2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		親指_水掻CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		親指_親指1CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		親指_親指2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		親指_親指3CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		竜性_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		獣性_獣毛CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		手CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		獣性_肉球CD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌O);
+    		人指_人指1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		人指_人指3CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		人指_人指2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		人指_水掻CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		中指_中指1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		中指_中指3CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		中指_中指2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		中指_水掻CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		薬指_薬指1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		薬指_薬指3CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		薬指_薬指2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		薬指_水掻CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		小指_小指1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		小指_小指3CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		小指_小指2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		親指_水掻CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		親指_親指1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		親指_親指2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		親指_親指3CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		竜性_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
     		悪タトゥ_五芒星_円1CD = new ColorD(ref 体配色.刺青.Col1, ref Color2.Empty);
     		悪タトゥ_五芒星_円2CD = new ColorD(ref 体配色.刺青.Col1, ref Color2.Empty);
     		悪タトゥ_五芒星_星CD = new ColorD(ref 体配色.刺青.Col1, ref Color2.Empty);
@@ -4711,31 +4711,31 @@ namespace SlaveMatrix
     		グローブ_グローブCD = new ColorD();
     		グローブ_縁1CD = new ColorD();
     		グローブ_縁2CD = new ColorD();
-    		獣性_獣毛CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		手CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		獣性_肉球CD = new ColorD(ref Col.Black, ref 体配色.人肌O);
-    		人指_人指1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		人指_人指3CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		人指_人指2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		人指_水掻CD = new ColorD(ref Col.Black, ref 体配色.膜O);
-    		中指_中指1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		中指_中指3CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		中指_中指2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		中指_水掻CD = new ColorD(ref Col.Black, ref 体配色.膜O);
-    		薬指_薬指1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		薬指_薬指3CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		薬指_薬指2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		薬指_水掻CD = new ColorD(ref Col.Black, ref 体配色.膜O);
-    		小指_小指1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		小指_小指3CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		小指_小指2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		親指_水掻CD = new ColorD(ref Col.Black, ref 体配色.膜O);
-    		親指_親指1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		親指_親指2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		親指_親指3CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		竜性_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		獣性_獣毛CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		手CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		獣性_肉球CD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌O);
+    		人指_人指1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		人指_人指3CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		人指_人指2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		人指_水掻CD = new ColorD(ref ColorHelper.Black, ref 体配色.膜O);
+    		中指_中指1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		中指_中指3CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		中指_中指2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		中指_水掻CD = new ColorD(ref ColorHelper.Black, ref 体配色.膜O);
+    		薬指_薬指1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		薬指_薬指3CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		薬指_薬指2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		薬指_水掻CD = new ColorD(ref ColorHelper.Black, ref 体配色.膜O);
+    		小指_小指1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		小指_小指3CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		小指_小指2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		親指_水掻CD = new ColorD(ref ColorHelper.Black, ref 体配色.膜O);
+    		親指_親指1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		親指_親指2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		親指_親指3CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		竜性_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
     		悪タトゥ_五芒星_円1CD = new ColorD(ref 体配色.刺青.Col1, ref Color2.Empty);
     		悪タトゥ_五芒星_円2CD = new ColorD(ref 体配色.刺青.Col1, ref Color2.Empty);
     		悪タトゥ_五芒星_星CD = new ColorD(ref 体配色.刺青.Col1, ref Color2.Empty);

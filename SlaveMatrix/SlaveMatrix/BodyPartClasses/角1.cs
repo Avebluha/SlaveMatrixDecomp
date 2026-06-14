@@ -2,7 +2,7 @@ using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
-    public class 角1 : Ele
+    public class 角1 : Element
     {
     	public virtual double 展開 { get; set; }
 

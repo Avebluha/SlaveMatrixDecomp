@@ -3,11 +3,11 @@ using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
-    public class キャップ1 : Ele
+    public class キャップ1 : Element
     {
-    	public Par X0Y0_根本;
+    	public ShapePart X0Y0_根本;
 
-    	public Par X0Y0_先端;
+    	public ShapePart X0Y0_先端;
 
     	public ColorD 根本CD;
 
@@ -122,10 +122,10 @@ namespace SlaveMatrix
     	public キャップ1(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, キャップ1D e)
     	{
     		ThisType = GetType();
-    		Body = new Difs(Sta.性器付["キャップ中"]);
-    		Pars pars = Body[0][0];
-    		X0Y0_根本 = pars["根本"].ToPar();
-    		X0Y0_先端 = pars["先端"].ToPar();
+    		Body = new VariantGrid(GlobalState.性器付["キャップ中"]);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_根本 = partGroup["根本"].ToPar();
+    		X0Y0_先端 = partGroup["先端"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;
@@ -165,7 +165,7 @@ namespace SlaveMatrix
     		X0Y0_先端CP = new ColorP(X0Y0_先端, 先端CD, DisUnit, abj: true);
     		Intensity = e.濃度;
     		Vector2D local = X0Y0_根本.GetOP()[0].ps[2];
-    		foreach (Par item in Body.EnumJoinRoot)
+    		foreach (ShapePart item in Body.EnumJoinRoot)
     		{
     			item.SetBasePointBase(item.ToLocal(X0Y0_根本.ToGlobal(local)));
     		}

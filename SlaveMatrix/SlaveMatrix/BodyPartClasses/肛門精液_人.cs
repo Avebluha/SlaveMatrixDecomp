@@ -4,17 +4,17 @@ namespace SlaveMatrix
 {
     public class 肛門精液_人 : 肛門精液
     {
-    	public Par X0Y0_精液;
+    	public ShapePart X0Y0_精液;
 
-    	public Par X0Y1_精液;
+    	public ShapePart X0Y1_精液;
 
-    	public Par X0Y2_精液;
+    	public ShapePart X0Y2_精液;
 
-    	public Par X0Y3_精液;
+    	public ShapePart X0Y3_精液;
 
-    	public Par X0Y4_精液;
+    	public ShapePart X0Y4_精液;
 
-    	public Par X0Y5_精液;
+    	public ShapePart X0Y5_精液;
 
     	public ColorD 精液CD;
 
@@ -116,19 +116,19 @@ namespace SlaveMatrix
     	public 肛門精液_人(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 肛門精液_人D e)
     	{
     		ThisType = GetType();
-    		Body = new Difs(Sta.胴体["肛門精液垂れ"]);
-    		Pars pars = Body[0][0];
-    		X0Y0_精液 = pars["精液"].ToPar();
-    		pars = Body[0][1];
-    		X0Y1_精液 = pars["精液"].ToPar();
-    		pars = Body[0][2];
-    		X0Y2_精液 = pars["精液"].ToPar();
-    		pars = Body[0][3];
-    		X0Y3_精液 = pars["精液"].ToPar();
-    		pars = Body[0][4];
-    		X0Y4_精液 = pars["精液"].ToPar();
-    		pars = Body[0][5];
-    		X0Y5_精液 = pars["精液"].ToPar();
+    		Body = new VariantGrid(GlobalState.胴体["肛門精液垂れ"]);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_精液 = partGroup["精液"].ToPar();
+    		partGroup = Body[0][1];
+    		X0Y1_精液 = partGroup["精液"].ToPar();
+    		partGroup = Body[0][2];
+    		X0Y2_精液 = partGroup["精液"].ToPar();
+    		partGroup = Body[0][3];
+    		X0Y3_精液 = partGroup["精液"].ToPar();
+    		partGroup = Body[0][4];
+    		X0Y4_精液 = partGroup["精液"].ToPar();
+    		partGroup = Body[0][5];
+    		X0Y5_精液 = partGroup["精液"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;

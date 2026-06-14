@@ -4,11 +4,11 @@ using System.Linq;
 
 namespace SlaveMatrix
 {
-    public class 四足脇 : Ele
+    public class 四足脇 : Element
     {
-    	public Par X0Y0_脇;
+    	public ShapePart X0Y0_脇;
 
-    	public Par X0Y0_筋肉;
+    	public ShapePart X0Y0_筋肉;
 
     	public ColorD 脇CD;
 
@@ -18,7 +18,7 @@ namespace SlaveMatrix
 
     	public ColorP X0Y0_筋肉CP;
 
-    	public Ele[] UpperArm_接続;
+    	public Element[] UpperArm_接続;
 
     	public override bool 欠損
     	{
@@ -127,10 +127,10 @@ namespace SlaveMatrix
     	{
     		四足脇 四足脇2 = this;
     		ThisType = GetType();
-    		Body = new Difs(Sta.肩左["四足脇"]);
-    		Pars pars = Body[0][0];
-    		X0Y0_脇 = pars["脇"].ToPar();
-    		X0Y0_筋肉 = pars["筋肉"].ToPar();
+    		Body = new VariantGrid(GlobalState.肩左["四足脇"]);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_脇 = partGroup["脇"].ToPar();
+    		X0Y0_筋肉 = partGroup["筋肉"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;
@@ -166,8 +166,8 @@ namespace SlaveMatrix
     		}
     		if (e.UpperArm_接続.Count > 0)
     		{
-    			Ele f;
-    			UpperArm_接続 = e.UpperArm_接続.Select(delegate(EleD g)
+    			Element f;
+    			UpperArm_接続 = e.UpperArm_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 四足脇2;
@@ -208,14 +208,14 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		脇CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		筋肉CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
+    		脇CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		筋肉CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
     	}
 
     	private void 配色H0(BodyColorSet 体配色)
     	{
-    		脇CD = new ColorD(ref Col.Black, ref 体配色.柄O);
-    		筋肉CD = new ColorD(ref Col.Black, ref 体配色.柄O);
+    		脇CD = new ColorD(ref ColorHelper.Black, ref 体配色.柄O);
+    		筋肉CD = new ColorD(ref ColorHelper.Black, ref 体配色.柄O);
     	}
     }
 }

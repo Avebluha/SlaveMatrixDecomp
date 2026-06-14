@@ -4,77 +4,77 @@ namespace SlaveMatrix
 {
     public class 耳_鰭 : 耳
     {
-    	public Par X0Y0_鰭耳3_鰭膜;
+    	public ShapePart X0Y0_鰭耳3_鰭膜;
 
-    	public Par X0Y0_鰭耳3_鰭条;
+    	public ShapePart X0Y0_鰭耳3_鰭条;
 
-    	public Par X0Y0_鰭耳1_鰭膜;
+    	public ShapePart X0Y0_鰭耳1_鰭膜;
 
-    	public Par X0Y0_鰭耳1_鰭条;
+    	public ShapePart X0Y0_鰭耳1_鰭条;
 
-    	public Par X0Y0_鰭耳2_鰭膜;
+    	public ShapePart X0Y0_鰭耳2_鰭膜;
 
-    	public Par X0Y0_鰭耳2_鰭条;
+    	public ShapePart X0Y0_鰭耳2_鰭条;
 
-    	public Par X0Y1_鰭耳3_鰭膜;
+    	public ShapePart X0Y1_鰭耳3_鰭膜;
 
-    	public Par X0Y1_鰭耳3_鰭条;
+    	public ShapePart X0Y1_鰭耳3_鰭条;
 
-    	public Par X0Y1_鰭耳1_鰭膜;
+    	public ShapePart X0Y1_鰭耳1_鰭膜;
 
-    	public Par X0Y1_鰭耳1_鰭条;
+    	public ShapePart X0Y1_鰭耳1_鰭条;
 
-    	public Par X0Y1_鰭耳2_鰭膜;
+    	public ShapePart X0Y1_鰭耳2_鰭膜;
 
-    	public Par X0Y1_鰭耳2_鰭条;
+    	public ShapePart X0Y1_鰭耳2_鰭条;
 
-    	public Par X0Y2_鰭耳3_鰭膜;
+    	public ShapePart X0Y2_鰭耳3_鰭膜;
 
-    	public Par X0Y2_鰭耳3_鰭条;
+    	public ShapePart X0Y2_鰭耳3_鰭条;
 
-    	public Par X0Y2_鰭耳1_鰭膜;
+    	public ShapePart X0Y2_鰭耳1_鰭膜;
 
-    	public Par X0Y2_鰭耳1_鰭条;
+    	public ShapePart X0Y2_鰭耳1_鰭条;
 
-    	public Par X0Y2_鰭耳2_鰭膜;
+    	public ShapePart X0Y2_鰭耳2_鰭膜;
 
-    	public Par X0Y2_鰭耳2_鰭条;
+    	public ShapePart X0Y2_鰭耳2_鰭条;
 
-    	public Par X1Y0_鰭耳3_鰭膜;
+    	public ShapePart X1Y0_鰭耳3_鰭膜;
 
-    	public Par X1Y0_鰭耳3_鰭条;
+    	public ShapePart X1Y0_鰭耳3_鰭条;
 
-    	public Par X1Y0_鰭耳1_鰭膜;
+    	public ShapePart X1Y0_鰭耳1_鰭膜;
 
-    	public Par X1Y0_鰭耳1_鰭条;
+    	public ShapePart X1Y0_鰭耳1_鰭条;
 
-    	public Par X1Y0_鰭耳2_鰭膜;
+    	public ShapePart X1Y0_鰭耳2_鰭膜;
 
-    	public Par X1Y0_鰭耳2_鰭条;
+    	public ShapePart X1Y0_鰭耳2_鰭条;
 
-    	public Par X1Y1_鰭耳3_鰭膜;
+    	public ShapePart X1Y1_鰭耳3_鰭膜;
 
-    	public Par X1Y1_鰭耳3_鰭条;
+    	public ShapePart X1Y1_鰭耳3_鰭条;
 
-    	public Par X1Y1_鰭耳1_鰭膜;
+    	public ShapePart X1Y1_鰭耳1_鰭膜;
 
-    	public Par X1Y1_鰭耳1_鰭条;
+    	public ShapePart X1Y1_鰭耳1_鰭条;
 
-    	public Par X1Y1_鰭耳2_鰭膜;
+    	public ShapePart X1Y1_鰭耳2_鰭膜;
 
-    	public Par X1Y1_鰭耳2_鰭条;
+    	public ShapePart X1Y1_鰭耳2_鰭条;
 
-    	public Par X1Y2_鰭耳3_鰭膜;
+    	public ShapePart X1Y2_鰭耳3_鰭膜;
 
-    	public Par X1Y2_鰭耳3_鰭条;
+    	public ShapePart X1Y2_鰭耳3_鰭条;
 
-    	public Par X1Y2_鰭耳1_鰭膜;
+    	public ShapePart X1Y2_鰭耳1_鰭膜;
 
-    	public Par X1Y2_鰭耳1_鰭条;
+    	public ShapePart X1Y2_鰭耳1_鰭条;
 
-    	public Par X1Y2_鰭耳2_鰭膜;
+    	public ShapePart X1Y2_鰭耳2_鰭膜;
 
-    	public Par X1Y2_鰭耳2_鰭条;
+    	public ShapePart X1Y2_鰭耳2_鰭条;
 
     	public ColorD 鰭耳3_鰭膜CD;
 
@@ -160,17 +160,17 @@ namespace SlaveMatrix
 
     	public ColorP X1Y2_鰭耳2_鰭条CP;
 
-    	public Par[] Pars1;
+    	public ShapePart[] Pars1;
 
-    	public Par[] Pars2;
+    	public ShapePart[] Pars2;
 
-    	public Par[] Pars3;
+    	public ShapePart[] Pars3;
 
-    	public Par[] Pars4;
+    	public ShapePart[] Pars4;
 
-    	public Par[] Pars5;
+    	public ShapePart[] Pars5;
 
-    	public Par[] Pars6;
+    	public ShapePart[] Pars6;
 
     	private Vector2D[] mm;
 
@@ -386,21 +386,21 @@ namespace SlaveMatrix
     	public 耳_鰭(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 耳_鰭D e)
     	{
     		ThisType = GetType();
-    		Body = new Difs();
+    		Body = new VariantGrid();
     		Body.Tag = "鰭";
-    		Body.Add(new Dif(Sta.肢左["耳"][6]));
-    		Body.Add(new Dif(Sta.肢左["耳"][7]));
-    		Pars pars = Body[0][0];
-    		Pars pars2 = pars["鰭耳3"].ToPars();
+    		Body.Add(new MorphVariant(GlobalState.肢左["耳"][6]));
+    		Body.Add(new MorphVariant(GlobalState.肢左["耳"][7]));
+    		PartGroup partGroup = Body[0][0];
+    		PartGroup pars2 = partGroup["鰭耳3"].ToPars();
     		X0Y0_鰭耳3_鰭膜 = pars2["鰭膜"].ToPar();
     		X0Y0_鰭耳3_鰭条 = pars2["鰭条"].ToPar();
-    		pars2 = pars["鰭耳1"].ToPars();
+    		pars2 = partGroup["鰭耳1"].ToPars();
     		X0Y0_鰭耳1_鰭膜 = pars2["鰭膜"].ToPar();
     		X0Y0_鰭耳1_鰭条 = pars2["鰭条"].ToPar();
-    		pars2 = pars["鰭耳2"].ToPars();
+    		pars2 = partGroup["鰭耳2"].ToPars();
     		X0Y0_鰭耳2_鰭膜 = pars2["鰭膜"].ToPar();
     		X0Y0_鰭耳2_鰭条 = pars2["鰭条"].ToPar();
-    		Pars pars3 = Body[0][1];
+    		PartGroup pars3 = Body[0][1];
     		pars2 = pars3["鰭耳3"].ToPars();
     		X0Y1_鰭耳3_鰭膜 = pars2["鰭膜"].ToPar();
     		X0Y1_鰭耳3_鰭条 = pars2["鰭条"].ToPar();
@@ -410,7 +410,7 @@ namespace SlaveMatrix
     		pars2 = pars3["鰭耳2"].ToPars();
     		X0Y1_鰭耳2_鰭膜 = pars2["鰭膜"].ToPar();
     		X0Y1_鰭耳2_鰭条 = pars2["鰭条"].ToPar();
-    		Pars pars4 = Body[0][2];
+    		PartGroup pars4 = Body[0][2];
     		pars2 = pars4["鰭耳3"].ToPars();
     		X0Y2_鰭耳3_鰭膜 = pars2["鰭膜"].ToPar();
     		X0Y2_鰭耳3_鰭条 = pars2["鰭条"].ToPar();
@@ -420,7 +420,7 @@ namespace SlaveMatrix
     		pars2 = pars4["鰭耳2"].ToPars();
     		X0Y2_鰭耳2_鰭膜 = pars2["鰭膜"].ToPar();
     		X0Y2_鰭耳2_鰭条 = pars2["鰭条"].ToPar();
-    		Pars pars5 = Body[1][0];
+    		PartGroup pars5 = Body[1][0];
     		pars2 = pars5["鰭耳3"].ToPars();
     		X1Y0_鰭耳3_鰭膜 = pars2["鰭膜"].ToPar();
     		X1Y0_鰭耳3_鰭条 = pars2["鰭条"].ToPar();
@@ -430,7 +430,7 @@ namespace SlaveMatrix
     		pars2 = pars5["鰭耳2"].ToPars();
     		X1Y0_鰭耳2_鰭膜 = pars2["鰭膜"].ToPar();
     		X1Y0_鰭耳2_鰭条 = pars2["鰭条"].ToPar();
-    		Pars pars6 = Body[1][1];
+    		PartGroup pars6 = Body[1][1];
     		pars2 = pars6["鰭耳3"].ToPars();
     		X1Y1_鰭耳3_鰭膜 = pars2["鰭膜"].ToPar();
     		X1Y1_鰭耳3_鰭条 = pars2["鰭条"].ToPar();
@@ -440,7 +440,7 @@ namespace SlaveMatrix
     		pars2 = pars6["鰭耳2"].ToPars();
     		X1Y1_鰭耳2_鰭膜 = pars2["鰭膜"].ToPar();
     		X1Y1_鰭耳2_鰭条 = pars2["鰭条"].ToPar();
-    		Pars pars7 = Body[1][2];
+    		PartGroup pars7 = Body[1][2];
     		pars2 = pars7["鰭耳3"].ToPars();
     		X1Y2_鰭耳3_鰭膜 = pars2["鰭膜"].ToPar();
     		X1Y2_鰭耳3_鰭条 = pars2["鰭条"].ToPar();
@@ -489,42 +489,42 @@ namespace SlaveMatrix
     		}
     		base.配色指定 = 配色指定;
     		配色(体配色);
-    		Pars1 = new Par[3] { X0Y0_鰭耳3_鰭膜, X0Y0_鰭耳1_鰭膜, X0Y0_鰭耳2_鰭膜 };
+    		Pars1 = new ShapePart[3] { X0Y0_鰭耳3_鰭膜, X0Y0_鰭耳1_鰭膜, X0Y0_鰭耳2_鰭膜 };
     		X0Y0_鰭耳3_鰭膜CP = new ColorP(X0Y0_鰭耳3_鰭膜, 鰭耳3_鰭膜CD, DisUnit, abj: true);
     		X0Y0_鰭耳3_鰭条CP = new ColorP(X0Y0_鰭耳3_鰭条, 鰭耳3_鰭条CD, DisUnit, abj: true);
     		X0Y0_鰭耳1_鰭膜CP = new ColorP(X0Y0_鰭耳1_鰭膜, 鰭耳1_鰭膜CD, DisUnit, abj: true);
     		X0Y0_鰭耳1_鰭条CP = new ColorP(X0Y0_鰭耳1_鰭条, 鰭耳1_鰭条CD, DisUnit, abj: true);
     		X0Y0_鰭耳2_鰭膜CP = new ColorP(X0Y0_鰭耳2_鰭膜, 鰭耳2_鰭膜CD, DisUnit, abj: true);
     		X0Y0_鰭耳2_鰭条CP = new ColorP(X0Y0_鰭耳2_鰭条, 鰭耳2_鰭条CD, DisUnit, abj: true);
-    		Pars2 = new Par[3] { X0Y1_鰭耳3_鰭膜, X0Y1_鰭耳1_鰭膜, X0Y1_鰭耳2_鰭膜 };
+    		Pars2 = new ShapePart[3] { X0Y1_鰭耳3_鰭膜, X0Y1_鰭耳1_鰭膜, X0Y1_鰭耳2_鰭膜 };
     		X0Y1_鰭耳3_鰭膜CP = new ColorP(X0Y1_鰭耳3_鰭膜, 鰭耳3_鰭膜CD, DisUnit, abj: true);
     		X0Y1_鰭耳3_鰭条CP = new ColorP(X0Y1_鰭耳3_鰭条, 鰭耳3_鰭条CD, DisUnit, abj: true);
     		X0Y1_鰭耳1_鰭膜CP = new ColorP(X0Y1_鰭耳1_鰭膜, 鰭耳1_鰭膜CD, DisUnit, abj: true);
     		X0Y1_鰭耳1_鰭条CP = new ColorP(X0Y1_鰭耳1_鰭条, 鰭耳1_鰭条CD, DisUnit, abj: true);
     		X0Y1_鰭耳2_鰭膜CP = new ColorP(X0Y1_鰭耳2_鰭膜, 鰭耳2_鰭膜CD, DisUnit, abj: true);
     		X0Y1_鰭耳2_鰭条CP = new ColorP(X0Y1_鰭耳2_鰭条, 鰭耳2_鰭条CD, DisUnit, abj: true);
-    		Pars3 = new Par[3] { X0Y2_鰭耳3_鰭膜, X0Y2_鰭耳1_鰭膜, X0Y2_鰭耳2_鰭膜 };
+    		Pars3 = new ShapePart[3] { X0Y2_鰭耳3_鰭膜, X0Y2_鰭耳1_鰭膜, X0Y2_鰭耳2_鰭膜 };
     		X0Y2_鰭耳3_鰭膜CP = new ColorP(X0Y2_鰭耳3_鰭膜, 鰭耳3_鰭膜CD, DisUnit, abj: true);
     		X0Y2_鰭耳3_鰭条CP = new ColorP(X0Y2_鰭耳3_鰭条, 鰭耳3_鰭条CD, DisUnit, abj: true);
     		X0Y2_鰭耳1_鰭膜CP = new ColorP(X0Y2_鰭耳1_鰭膜, 鰭耳1_鰭膜CD, DisUnit, abj: true);
     		X0Y2_鰭耳1_鰭条CP = new ColorP(X0Y2_鰭耳1_鰭条, 鰭耳1_鰭条CD, DisUnit, abj: true);
     		X0Y2_鰭耳2_鰭膜CP = new ColorP(X0Y2_鰭耳2_鰭膜, 鰭耳2_鰭膜CD, DisUnit, abj: true);
     		X0Y2_鰭耳2_鰭条CP = new ColorP(X0Y2_鰭耳2_鰭条, 鰭耳2_鰭条CD, DisUnit, abj: true);
-    		Pars4 = new Par[3] { X1Y0_鰭耳3_鰭膜, X1Y0_鰭耳1_鰭膜, X1Y0_鰭耳2_鰭膜 };
+    		Pars4 = new ShapePart[3] { X1Y0_鰭耳3_鰭膜, X1Y0_鰭耳1_鰭膜, X1Y0_鰭耳2_鰭膜 };
     		X1Y0_鰭耳3_鰭膜CP = new ColorP(X1Y0_鰭耳3_鰭膜, 鰭耳3_鰭膜CD, DisUnit, abj: true);
     		X1Y0_鰭耳3_鰭条CP = new ColorP(X1Y0_鰭耳3_鰭条, 鰭耳3_鰭条CD, DisUnit, abj: true);
     		X1Y0_鰭耳1_鰭膜CP = new ColorP(X1Y0_鰭耳1_鰭膜, 鰭耳1_鰭膜CD, DisUnit, abj: true);
     		X1Y0_鰭耳1_鰭条CP = new ColorP(X1Y0_鰭耳1_鰭条, 鰭耳1_鰭条CD, DisUnit, abj: true);
     		X1Y0_鰭耳2_鰭膜CP = new ColorP(X1Y0_鰭耳2_鰭膜, 鰭耳2_鰭膜CD, DisUnit, abj: true);
     		X1Y0_鰭耳2_鰭条CP = new ColorP(X1Y0_鰭耳2_鰭条, 鰭耳2_鰭条CD, DisUnit, abj: true);
-    		Pars5 = new Par[3] { X1Y1_鰭耳3_鰭膜, X1Y1_鰭耳1_鰭膜, X1Y1_鰭耳2_鰭膜 };
+    		Pars5 = new ShapePart[3] { X1Y1_鰭耳3_鰭膜, X1Y1_鰭耳1_鰭膜, X1Y1_鰭耳2_鰭膜 };
     		X1Y1_鰭耳3_鰭膜CP = new ColorP(X1Y1_鰭耳3_鰭膜, 鰭耳3_鰭膜CD, DisUnit, abj: true);
     		X1Y1_鰭耳3_鰭条CP = new ColorP(X1Y1_鰭耳3_鰭条, 鰭耳3_鰭条CD, DisUnit, abj: true);
     		X1Y1_鰭耳1_鰭膜CP = new ColorP(X1Y1_鰭耳1_鰭膜, 鰭耳1_鰭膜CD, DisUnit, abj: true);
     		X1Y1_鰭耳1_鰭条CP = new ColorP(X1Y1_鰭耳1_鰭条, 鰭耳1_鰭条CD, DisUnit, abj: true);
     		X1Y1_鰭耳2_鰭膜CP = new ColorP(X1Y1_鰭耳2_鰭膜, 鰭耳2_鰭膜CD, DisUnit, abj: true);
     		X1Y1_鰭耳2_鰭条CP = new ColorP(X1Y1_鰭耳2_鰭条, 鰭耳2_鰭条CD, DisUnit, abj: true);
-    		Pars6 = new Par[3] { X1Y2_鰭耳3_鰭膜, X1Y2_鰭耳1_鰭膜, X1Y2_鰭耳2_鰭膜 };
+    		Pars6 = new ShapePart[3] { X1Y2_鰭耳3_鰭膜, X1Y2_鰭耳1_鰭膜, X1Y2_鰭耳2_鰭膜 };
     		X1Y2_鰭耳3_鰭膜CP = new ColorP(X1Y2_鰭耳3_鰭膜, 鰭耳3_鰭膜CD, DisUnit, abj: true);
     		X1Y2_鰭耳3_鰭条CP = new ColorP(X1Y2_鰭耳3_鰭条, 鰭耳3_鰭条CD, DisUnit, abj: true);
     		X1Y2_鰭耳1_鰭膜CP = new ColorP(X1Y2_鰭耳1_鰭膜, 鰭耳1_鰭膜CD, DisUnit, abj: true);
@@ -611,12 +611,12 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		鰭耳3_鰭膜CD = new ColorD(ref Col.Black, ref 体配色.膜O);
-    		鰭耳3_鰭条CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		鰭耳1_鰭膜CD = new ColorD(ref Col.Black, ref 体配色.膜O);
-    		鰭耳1_鰭条CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		鰭耳2_鰭膜CD = new ColorD(ref Col.Black, ref 体配色.膜O);
-    		鰭耳2_鰭条CD = new ColorD(ref Col.Black, ref 体配色.爪O);
+    		鰭耳3_鰭膜CD = new ColorD(ref ColorHelper.Black, ref 体配色.膜O);
+    		鰭耳3_鰭条CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		鰭耳1_鰭膜CD = new ColorD(ref ColorHelper.Black, ref 体配色.膜O);
+    		鰭耳1_鰭条CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		鰭耳2_鰭膜CD = new ColorD(ref ColorHelper.Black, ref 体配色.膜O);
+    		鰭耳2_鰭条CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
     	}
     }
 }

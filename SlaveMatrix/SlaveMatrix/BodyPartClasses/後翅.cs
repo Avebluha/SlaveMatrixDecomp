@@ -2,7 +2,7 @@ using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
-    public class 後翅 : Ele
+    public class 後翅 : Element
     {
     }
 }

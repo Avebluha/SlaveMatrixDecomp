@@ -2,7 +2,7 @@ using System;
 
 namespace _2DGAMELIB
 {
-    public class Motion : MotV
+    public class Motion : MotionBase
     {
     	public Action<Motion> OnStart;
 
@@ -25,7 +25,7 @@ namespace _2DGAMELIB
     	{
     	}
 
-    	public new void GetValue(FPS FPS)
+    	public new void GetValue(FpsCounter FPS)
     	{
     		if (!run)
     		{

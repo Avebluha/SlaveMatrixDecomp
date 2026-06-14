@@ -204,8 +204,8 @@ namespace SlaveMatrix
     					ChaD.body_color.血統.Add(GameText.妊娠);
     				}
 
-    				Unit unit = ((Sta.GameData.祝福 == null || Sta.GameData.祝福 == this) ? Sta.GameData.プレーヤー : Sta.GameData.祝福);
-    				if (Sta.SimpleMating)
+    				Unit unit = ((GlobalState.GameData.祝福 == null || GlobalState.GameData.祝福 == this) ? GlobalState.GameData.プレーヤー : GlobalState.GameData.祝福);
+    				if (GlobalState.SimpleMating)
     				{
     					Child = this.Mix(unit, 原種モード(this, unit));
     				}
@@ -266,7 +266,7 @@ namespace SlaveMatrix
     		}
     		set
     		{
-    			if (Sta.DontScar)
+    			if (GlobalState.DontScar)
     			{
     				傷物 = value;
     				if (value && !ChaD.body_color.血統.Contains(GameText.傷物))
@@ -289,13 +289,13 @@ namespace SlaveMatrix
     				bool flag = false;
     				while (!flag)
     				{
-    					foreach (EleD item in ChaD.body_tree.EnumEleD())
+    					foreach (ElementData item in ChaD.body_tree.EnumEleD())
     					{
     						flag |= item.傷物処理();
     					}
     				}
     				{
-    					foreach (EleD item2 in ChaD.body_tree.EnumEleD())
+    					foreach (ElementData item2 in ChaD.body_tree.EnumEleD())
     					{
     						item2.欠損 = 0.3.Lot();
     					}
@@ -306,7 +306,7 @@ namespace SlaveMatrix
     			{
     				ChaD.body_color.血統.Remove(GameText.傷物);
     			}
-    			foreach (EleD item3 in ChaD.body_tree.EnumEleD())
+    			foreach (ElementData item3 in ChaD.body_tree.EnumEleD())
     			{
     				item3.SetValuesD("傷", false);
     				item3.欠損 = false;
@@ -390,7 +390,7 @@ namespace SlaveMatrix
     			"] *\r\n",
     			GameText.需給,
     			"[",
-    			$"{Sta.GameData.需給[Race]:0.00}",
+    			$"{GlobalState.GameData.需給[Race]:0.00}",
     			"]",
     			ChaD.body_color.血統.Contains(GameText.調教済) ? (" *\r\n" + GameText.調教済 + "[1.6]") : "",
     			ChaD.body_color.血統.Contains(GameText.無毛) ? (" *\r\n" + GameText.無毛 + "[2]") : "",
@@ -436,7 +436,7 @@ namespace SlaveMatrix
     	{
     		try
     		{
-    			return checked((ulong)((1000000.0 * ChaD.Pride.Inverse() + 1000000.0 * ChaD.Lust + 1000000.0 * (ChaD.Affection * 0.5) + 1000000.0 * ChaD.Taming + 1000000.0 * (ChaD.SkillL * 4.0) + 100000.0 * ChaD.Sesnsitivities.Values.Sum() + 1000000.0 * ChaD.body_tree.EnumEleD().GetEleD<乳房D>().バスト + 1000000.0 * ((double)種族情報.一般 / 9.0) + 1000000.0 * ((double)種族情報.娼婦 / 9.0)) * 種族情報.GetPriceWeight() * Sta.GameData.需給[Race] * (ChaD.body_color.血統.Contains(GameText.調教済) ? 1.6 : 1.0) * (ChaD.body_color.血統.Contains(GameText.無毛) ? 2.0 : 1.0) * (ChaD.body_color.血統.Contains(GameText.処女) ? 1.5 : 1.0) * (ChaD.body_color.血統.Contains(GameText.発情) ? 1.2 : 1.0) * (ChaD.body_color.血統.Contains(GameText.妊娠) ? 1.5 : 1.0) * (ChaD.body_color.血統.Contains(GameText.強靭) ? 1.4 : 1.0) * (ChaD.body_color.血統.Contains(GameText.傷物) ? 0.1 : 1.0) * (ChaD.body_color.血統.Contains(GameText.オッドアイ) ? 5.0 : 1.0) * ChaD.body_color.血統.FirstOrDefault((string e) => e.StartsWith(GameText.ルチノー)).GetRutinohWeight() * (ChaD.body_color.血統.Contains(GameText.メラニス) ? 30.0 : 1.0) * (ChaD.body_color.血統.Contains(GameText.アルビノ) ? 50.0 : 1.0)));
+    			return checked((ulong)((1000000.0 * ChaD.Pride.Inverse() + 1000000.0 * ChaD.Lust + 1000000.0 * (ChaD.Affection * 0.5) + 1000000.0 * ChaD.Taming + 1000000.0 * (ChaD.SkillL * 4.0) + 100000.0 * ChaD.Sesnsitivities.Values.Sum() + 1000000.0 * ChaD.body_tree.EnumEleD().GetEleD<乳房D>().バスト + 1000000.0 * ((double)種族情報.一般 / 9.0) + 1000000.0 * ((double)種族情報.娼婦 / 9.0)) * 種族情報.GetPriceWeight() * GlobalState.GameData.需給[Race] * (ChaD.body_color.血統.Contains(GameText.調教済) ? 1.6 : 1.0) * (ChaD.body_color.血統.Contains(GameText.無毛) ? 2.0 : 1.0) * (ChaD.body_color.血統.Contains(GameText.処女) ? 1.5 : 1.0) * (ChaD.body_color.血統.Contains(GameText.発情) ? 1.2 : 1.0) * (ChaD.body_color.血統.Contains(GameText.妊娠) ? 1.5 : 1.0) * (ChaD.body_color.血統.Contains(GameText.強靭) ? 1.4 : 1.0) * (ChaD.body_color.血統.Contains(GameText.傷物) ? 0.1 : 1.0) * (ChaD.body_color.血統.Contains(GameText.オッドアイ) ? 5.0 : 1.0) * ChaD.body_color.血統.FirstOrDefault((string e) => e.StartsWith(GameText.ルチノー)).GetRutinohWeight() * (ChaD.body_color.血統.Contains(GameText.メラニス) ? 30.0 : 1.0) * (ChaD.body_color.血統.Contains(GameText.アルビノ) ? 50.0 : 1.0)));
     		}
     		catch
     		{
@@ -452,7 +452,7 @@ namespace SlaveMatrix
     			ChaD.body_color.血統.Add(GameText.妊娠);
     		}
     		Unit unit = Generator.娼婦労働妊娠父方();
-    		if (Sta.SimpleMating)
+    		if (GlobalState.SimpleMating)
     		{
     			Child = this.Mix(unit, 原種モード(this, unit));
     			return;
@@ -589,7 +589,7 @@ namespace SlaveMatrix
     		Trained = false;
     		着衣番号 = 8;
     		着衣 = 衣装.Getヴィオラ服0(ChaD).ToArray();
-    		RaceInformation 種族情報2 = Def.race_information[Race];
+    		RaceInformation 種族情報2 = RacialDefinitions.race_information[Race];
     		種族情報 = new RaceInformation(種族情報2.希少, 種族情報2.需要, 種族情報2.危険, ((int)((double)(種族情報2.一般 + 1) * ChaD.固有値)).Clamp(1, 9), ((int)((double)(種族情報2.娼婦 + 1) * ChaD.固有値)).Clamp(1, 9));
     		Set種族特性();
     		Set構成特性();
@@ -951,7 +951,7 @@ namespace SlaveMatrix
 
     	public void Set構成特性()
     	{
-    		EleD[] array = ChaD.body_tree.EnumEleD().ToArray();
+    		ElementData[] array = ChaD.body_tree.EnumEleD().ToArray();
     		int num = 0;
     		int num2 = 0;
     		int num3 = 0;
@@ -961,8 +961,8 @@ namespace SlaveMatrix
     		胸肌D 胸肌D2 = null;
     		胸肌D 胸肌D3 = null;
     		Is増殖可 = false;
-    		EleD[] array2 = array;
-    		foreach (EleD eleD in array2)
+    		ElementData[] array2 = array;
+    		foreach (ElementData eleD in array2)
     		{
     			if (eleD is 手_人D)
     			{

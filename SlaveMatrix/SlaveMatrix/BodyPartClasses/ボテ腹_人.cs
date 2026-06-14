@@ -6,75 +6,75 @@ namespace SlaveMatrix
 {
     public class ボテ腹_人 : ボテ腹
     {
-    	public Par X0Y0_腹;
+    	public ShapePart X0Y0_腹;
 
-    	public Par X0Y0_ハイライト;
+    	public ShapePart X0Y0_ハイライト;
 
-    	public Par X0Y0_臍;
+    	public ShapePart X0Y0_臍;
 
-    	public Par X0Y0_ハイライト左1;
+    	public ShapePart X0Y0_ハイライト左1;
 
-    	public Par X0Y0_ハイライト左2;
+    	public ShapePart X0Y0_ハイライト左2;
 
-    	public Par X0Y0_ハイライト右1;
+    	public ShapePart X0Y0_ハイライト右1;
 
-    	public Par X0Y0_ハイライト右2;
+    	public ShapePart X0Y0_ハイライト右2;
 
-    	public Par X0Y1_腹;
+    	public ShapePart X0Y1_腹;
 
-    	public Par X0Y1_ハイライト;
+    	public ShapePart X0Y1_ハイライト;
 
-    	public Par X0Y1_臍;
+    	public ShapePart X0Y1_臍;
 
-    	public Par X0Y1_ハイライト左1;
+    	public ShapePart X0Y1_ハイライト左1;
 
-    	public Par X0Y1_ハイライト左2;
+    	public ShapePart X0Y1_ハイライト左2;
 
-    	public Par X0Y1_ハイライト右1;
+    	public ShapePart X0Y1_ハイライト右1;
 
-    	public Par X0Y1_ハイライト右2;
+    	public ShapePart X0Y1_ハイライト右2;
 
-    	public Par X0Y2_腹;
+    	public ShapePart X0Y2_腹;
 
-    	public Par X0Y2_ハイライト;
+    	public ShapePart X0Y2_ハイライト;
 
-    	public Par X0Y2_臍;
+    	public ShapePart X0Y2_臍;
 
-    	public Par X0Y2_ハイライト左1;
+    	public ShapePart X0Y2_ハイライト左1;
 
-    	public Par X0Y2_ハイライト左2;
+    	public ShapePart X0Y2_ハイライト左2;
 
-    	public Par X0Y2_ハイライト右1;
+    	public ShapePart X0Y2_ハイライト右1;
 
-    	public Par X0Y2_ハイライト右2;
+    	public ShapePart X0Y2_ハイライト右2;
 
-    	public Par X0Y3_腹;
+    	public ShapePart X0Y3_腹;
 
-    	public Par X0Y3_ハイライト;
+    	public ShapePart X0Y3_ハイライト;
 
-    	public Par X0Y3_臍;
+    	public ShapePart X0Y3_臍;
 
-    	public Par X0Y3_ハイライト左1;
+    	public ShapePart X0Y3_ハイライト左1;
 
-    	public Par X0Y3_ハイライト左2;
+    	public ShapePart X0Y3_ハイライト左2;
 
-    	public Par X0Y3_ハイライト右1;
+    	public ShapePart X0Y3_ハイライト右1;
 
-    	public Par X0Y3_ハイライト右2;
+    	public ShapePart X0Y3_ハイライト右2;
 
-    	public Par X0Y4_腹;
+    	public ShapePart X0Y4_腹;
 
-    	public Par X0Y4_ハイライト;
+    	public ShapePart X0Y4_ハイライト;
 
-    	public Par X0Y4_臍;
+    	public ShapePart X0Y4_臍;
 
-    	public Par X0Y4_ハイライト左1;
+    	public ShapePart X0Y4_ハイライト左1;
 
-    	public Par X0Y4_ハイライト左2;
+    	public ShapePart X0Y4_ハイライト左2;
 
-    	public Par X0Y4_ハイライト右1;
+    	public ShapePart X0Y4_ハイライト右1;
 
-    	public Par X0Y4_ハイライト右2;
+    	public ShapePart X0Y4_ハイライト右2;
 
     	public ColorD 腹CD;
 
@@ -164,7 +164,7 @@ namespace SlaveMatrix
 
     	public スタンプW 鞭痕;
 
-    	public Ele[] 腹板_接続;
+    	public Element[] 腹板_接続;
 
     	public override bool 欠損
     	{
@@ -423,47 +423,47 @@ namespace SlaveMatrix
     	{
     		ボテ腹_人 ボテ腹_人2 = this;
     		ThisType = GetType();
-    		Body = new Difs(Sta.胴体["ボテ腹"]);
-    		Pars pars = Body[0][0];
-    		X0Y0_腹 = pars["腹"].ToPar();
-    		X0Y0_ハイライト = pars["ハイライト"].ToPar();
-    		X0Y0_臍 = pars["臍"].ToPar();
-    		X0Y0_ハイライト左1 = pars["ハイライト左1"].ToPar();
-    		X0Y0_ハイライト左2 = pars["ハイライト左2"].ToPar();
-    		X0Y0_ハイライト右1 = pars["ハイライト右1"].ToPar();
-    		X0Y0_ハイライト右2 = pars["ハイライト右2"].ToPar();
-    		pars = Body[0][1];
-    		X0Y1_腹 = pars["腹"].ToPar();
-    		X0Y1_ハイライト = pars["ハイライト"].ToPar();
-    		X0Y1_臍 = pars["臍"].ToPar();
-    		X0Y1_ハイライト左1 = pars["ハイライト左1"].ToPar();
-    		X0Y1_ハイライト左2 = pars["ハイライト左2"].ToPar();
-    		X0Y1_ハイライト右1 = pars["ハイライト右1"].ToPar();
-    		X0Y1_ハイライト右2 = pars["ハイライト右2"].ToPar();
-    		pars = Body[0][2];
-    		X0Y2_腹 = pars["腹"].ToPar();
-    		X0Y2_ハイライト = pars["ハイライト"].ToPar();
-    		X0Y2_臍 = pars["臍"].ToPar();
-    		X0Y2_ハイライト左1 = pars["ハイライト左1"].ToPar();
-    		X0Y2_ハイライト左2 = pars["ハイライト左2"].ToPar();
-    		X0Y2_ハイライト右1 = pars["ハイライト右1"].ToPar();
-    		X0Y2_ハイライト右2 = pars["ハイライト右2"].ToPar();
-    		pars = Body[0][3];
-    		X0Y3_腹 = pars["腹"].ToPar();
-    		X0Y3_ハイライト = pars["ハイライト"].ToPar();
-    		X0Y3_臍 = pars["臍"].ToPar();
-    		X0Y3_ハイライト左1 = pars["ハイライト左1"].ToPar();
-    		X0Y3_ハイライト左2 = pars["ハイライト左2"].ToPar();
-    		X0Y3_ハイライト右1 = pars["ハイライト右1"].ToPar();
-    		X0Y3_ハイライト右2 = pars["ハイライト右2"].ToPar();
-    		pars = Body[0][4];
-    		X0Y4_腹 = pars["腹"].ToPar();
-    		X0Y4_ハイライト = pars["ハイライト"].ToPar();
-    		X0Y4_臍 = pars["臍"].ToPar();
-    		X0Y4_ハイライト左1 = pars["ハイライト左1"].ToPar();
-    		X0Y4_ハイライト左2 = pars["ハイライト左2"].ToPar();
-    		X0Y4_ハイライト右1 = pars["ハイライト右1"].ToPar();
-    		X0Y4_ハイライト右2 = pars["ハイライト右2"].ToPar();
+    		Body = new VariantGrid(GlobalState.胴体["ボテ腹"]);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_腹 = partGroup["腹"].ToPar();
+    		X0Y0_ハイライト = partGroup["ハイライト"].ToPar();
+    		X0Y0_臍 = partGroup["臍"].ToPar();
+    		X0Y0_ハイライト左1 = partGroup["ハイライト左1"].ToPar();
+    		X0Y0_ハイライト左2 = partGroup["ハイライト左2"].ToPar();
+    		X0Y0_ハイライト右1 = partGroup["ハイライト右1"].ToPar();
+    		X0Y0_ハイライト右2 = partGroup["ハイライト右2"].ToPar();
+    		partGroup = Body[0][1];
+    		X0Y1_腹 = partGroup["腹"].ToPar();
+    		X0Y1_ハイライト = partGroup["ハイライト"].ToPar();
+    		X0Y1_臍 = partGroup["臍"].ToPar();
+    		X0Y1_ハイライト左1 = partGroup["ハイライト左1"].ToPar();
+    		X0Y1_ハイライト左2 = partGroup["ハイライト左2"].ToPar();
+    		X0Y1_ハイライト右1 = partGroup["ハイライト右1"].ToPar();
+    		X0Y1_ハイライト右2 = partGroup["ハイライト右2"].ToPar();
+    		partGroup = Body[0][2];
+    		X0Y2_腹 = partGroup["腹"].ToPar();
+    		X0Y2_ハイライト = partGroup["ハイライト"].ToPar();
+    		X0Y2_臍 = partGroup["臍"].ToPar();
+    		X0Y2_ハイライト左1 = partGroup["ハイライト左1"].ToPar();
+    		X0Y2_ハイライト左2 = partGroup["ハイライト左2"].ToPar();
+    		X0Y2_ハイライト右1 = partGroup["ハイライト右1"].ToPar();
+    		X0Y2_ハイライト右2 = partGroup["ハイライト右2"].ToPar();
+    		partGroup = Body[0][3];
+    		X0Y3_腹 = partGroup["腹"].ToPar();
+    		X0Y3_ハイライト = partGroup["ハイライト"].ToPar();
+    		X0Y3_臍 = partGroup["臍"].ToPar();
+    		X0Y3_ハイライト左1 = partGroup["ハイライト左1"].ToPar();
+    		X0Y3_ハイライト左2 = partGroup["ハイライト左2"].ToPar();
+    		X0Y3_ハイライト右1 = partGroup["ハイライト右1"].ToPar();
+    		X0Y3_ハイライト右2 = partGroup["ハイライト右2"].ToPar();
+    		partGroup = Body[0][4];
+    		X0Y4_腹 = partGroup["腹"].ToPar();
+    		X0Y4_ハイライト = partGroup["ハイライト"].ToPar();
+    		X0Y4_臍 = partGroup["臍"].ToPar();
+    		X0Y4_ハイライト左1 = partGroup["ハイライト左1"].ToPar();
+    		X0Y4_ハイライト左2 = partGroup["ハイライト左2"].ToPar();
+    		X0Y4_ハイライト右1 = partGroup["ハイライト右1"].ToPar();
+    		X0Y4_ハイライト右2 = partGroup["ハイライト右2"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;
@@ -505,8 +505,8 @@ namespace SlaveMatrix
     		}
     		if (e.腹板_接続.Count > 0)
     		{
-    			Ele f;
-    			腹板_接続 = e.腹板_接続.Select(delegate(EleD g)
+    			Element f;
+    			腹板_接続 = e.腹板_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = ボテ腹_人2;
@@ -656,13 +656,13 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		腹CD = new ColorD(ref Col.Black, ref 体配色.人肌O);
-    		ハイライトCD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
+    		腹CD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌O);
+    		ハイライトCD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
     		臍CD = new ColorD(ref 体配色.薄線, ref 体配色.人肌O);
-    		ハイライト左1CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
-    		ハイライト左2CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2R);
-    		ハイライト右1CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
-    		ハイライト右2CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2R);
+    		ハイライト左1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		ハイライト左2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2R);
+    		ハイライト右1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		ハイライト右2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2R);
     	}
     }
 }

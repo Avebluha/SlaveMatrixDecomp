@@ -4,33 +4,33 @@ namespace SlaveMatrix
 {
     public class SideHair_編み : SideHair
     {
-    	public Par X0Y0_髪;
+    	public ShapePart X0Y0_髪;
 
-    	public Par X0Y0_編節1_髪節;
+    	public ShapePart X0Y0_編節1_髪節;
 
-    	public Par X0Y0_編節1_髪編目;
+    	public ShapePart X0Y0_編節1_髪編目;
 
-    	public Par X0Y0_編節2_髪節;
+    	public ShapePart X0Y0_編節2_髪節;
 
-    	public Par X0Y0_編節2_髪編目;
+    	public ShapePart X0Y0_編節2_髪編目;
 
-    	public Par X0Y0_編節3_髪節;
+    	public ShapePart X0Y0_編節3_髪節;
 
-    	public Par X0Y0_編節3_髪編目;
+    	public ShapePart X0Y0_編節3_髪編目;
 
-    	public Par X0Y0_編節4_髪節;
+    	public ShapePart X0Y0_編節4_髪節;
 
-    	public Par X0Y0_編節4_髪編目;
+    	public ShapePart X0Y0_編節4_髪編目;
 
-    	public Par X0Y0_髪縛1;
+    	public ShapePart X0Y0_髪縛1;
 
-    	public Par X0Y0_髪縛2;
+    	public ShapePart X0Y0_髪縛2;
 
-    	public Par X0Y0_髪左;
+    	public ShapePart X0Y0_髪左;
 
-    	public Par X0Y0_髪右;
+    	public ShapePart X0Y0_髪右;
 
-    	public Par X0Y0_髪根;
+    	public ShapePart X0Y0_髪根;
 
     	public ColorD 髪CD;
 
@@ -417,31 +417,31 @@ namespace SlaveMatrix
     	public SideHair_編み(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, SideHair_編みD e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif();
-    		dif.Tag = "編み";
-    		dif.Add(new Pars(Sta.胴体["横髪左"][0][4]));
-    		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		X0Y0_髪 = pars["髪"].ToPar();
-    		Pars pars2 = pars["編節1"].ToPars();
+    		MorphVariant morphVariant = new MorphVariant();
+    		morphVariant.Tag = "編み";
+    		morphVariant.Add(new PartGroup(GlobalState.胴体["横髪左"][0][4]));
+    		Body = new VariantGrid();
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_髪 = partGroup["髪"].ToPar();
+    		PartGroup pars2 = partGroup["編節1"].ToPars();
     		X0Y0_編節1_髪節 = pars2["髪節"].ToPar();
     		X0Y0_編節1_髪編目 = pars2["髪編目"].ToPar();
-    		pars2 = pars["編節2"].ToPars();
+    		pars2 = partGroup["編節2"].ToPars();
     		X0Y0_編節2_髪節 = pars2["髪節"].ToPar();
     		X0Y0_編節2_髪編目 = pars2["髪編目"].ToPar();
-    		pars2 = pars["編節3"].ToPars();
+    		pars2 = partGroup["編節3"].ToPars();
     		X0Y0_編節3_髪節 = pars2["髪節"].ToPar();
     		X0Y0_編節3_髪編目 = pars2["髪編目"].ToPar();
-    		pars2 = pars["編節4"].ToPars();
+    		pars2 = partGroup["編節4"].ToPars();
     		X0Y0_編節4_髪節 = pars2["髪節"].ToPar();
     		X0Y0_編節4_髪編目 = pars2["髪編目"].ToPar();
-    		X0Y0_髪縛1 = pars["髪縛1"].ToPar();
-    		X0Y0_髪縛2 = pars["髪縛2"].ToPar();
-    		X0Y0_髪左 = pars["髪左"].ToPar();
-    		X0Y0_髪右 = pars["髪右"].ToPar();
-    		X0Y0_髪根 = pars["髪根"].ToPar();
+    		X0Y0_髪縛1 = partGroup["髪縛1"].ToPar();
+    		X0Y0_髪縛2 = partGroup["髪縛2"].ToPar();
+    		X0Y0_髪左 = partGroup["髪左"].ToPar();
+    		X0Y0_髪右 = partGroup["髪右"].ToPar();
+    		X0Y0_髪根 = partGroup["髪根"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;
@@ -510,7 +510,7 @@ namespace SlaveMatrix
     		Intensity = e.濃度;
     	}
 
-    	public override bool Is布(Par p)
+    	public override bool Is布(ShapePart p)
     	{
     		if (p != X0Y0_髪縛1)
     		{

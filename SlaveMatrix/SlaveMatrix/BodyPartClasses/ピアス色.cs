@@ -18,13 +18,13 @@ namespace SlaveMatrix
 
     	public void SetRandom()
     	{
-    		Col.GetRandomClothesColor(out ピアス);
+    		ColorHelper.GetRandomClothesColor(out ピアス);
     		SetColor2();
     	}
 
     	public void SetColor2()
     	{
-    		Col.GetGrad(ref ピアス, out 金具色);
+    		ColorHelper.GetGrad(ref ピアス, out 金具色);
     	}
     }
 }

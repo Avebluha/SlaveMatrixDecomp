@@ -6,15 +6,15 @@ namespace _2DGAMELIB
     [Serializable]
     public class JointD
     {
-    	public Difs Difs0;
+    	public VariantGrid Difs0;
 
     	public List<int> Path0;
 
     	public int Index;
 
-    	public Difs Difs1;
+    	public VariantGrid Difs1;
 
-    	public JointD(Difs Difs0, Par Par0, int Index, Difs Difs1)
+    	public JointD(VariantGrid Difs0, ShapePart Par0, int Index, VariantGrid Difs1)
     	{
     		this.Difs0 = Difs0;
     		Path0 = Par0.GetPath();
@@ -22,7 +22,7 @@ namespace _2DGAMELIB
     		this.Difs1 = Difs1;
     	}
 
-    	public JointD(Difs Difs1)
+    	public JointD(VariantGrid Difs1)
     	{
     		this.Difs1 = Difs1;
     	}
@@ -41,7 +41,7 @@ namespace _2DGAMELIB
 
     	public void Set(JointS 接続元)
     	{
-    		Difs0 = 接続元.Difs;
+    		Difs0 = 接続元.VariantGrid;
     		Path0 = 接続元.Path;
     		Index = 接続元.Index;
     	}

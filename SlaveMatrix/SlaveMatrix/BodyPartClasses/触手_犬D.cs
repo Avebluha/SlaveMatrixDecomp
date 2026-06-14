@@ -576,75 +576,75 @@ namespace SlaveMatrix
 
     	public bool 鎖表示;
 
-    	public List<EleD> Head_接続 = new List<EleD>();
+    	public List<ElementData> Head_接続 = new List<ElementData>();
 
-    	public List<EleD> UpperArm左_接続 = new List<EleD>();
+    	public List<ElementData> UpperArm左_接続 = new List<ElementData>();
 
-    	public List<EleD> UpperArm右_接続 = new List<EleD>();
+    	public List<ElementData> UpperArm右_接続 = new List<ElementData>();
 
-    	public List<EleD> LowerArm左_接続 = new List<EleD>();
+    	public List<ElementData> LowerArm左_接続 = new List<ElementData>();
 
-    	public List<EleD> LowerArm右_接続 = new List<EleD>();
+    	public List<ElementData> LowerArm右_接続 = new List<ElementData>();
 
-    	public List<EleD> 手左_接続 = new List<EleD>();
+    	public List<ElementData> 手左_接続 = new List<ElementData>();
 
-    	public List<EleD> 手右_接続 = new List<EleD>();
+    	public List<ElementData> 手右_接続 = new List<ElementData>();
 
     	public 触手_犬D()
     	{
     		ThisType = GetType();
     	}
 
-    	public void 頭接続(EleD e)
+    	public void 頭接続(ElementData e)
     	{
     		Head_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.触手_犬_Head_接続;
     	}
 
-    	public void UpperArm左接続(EleD e)
+    	public void UpperArm左接続(ElementData e)
     	{
     		UpperArm左_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.触手_犬_UpperArm左_接続;
     	}
 
-    	public void UpperArm右接続(EleD e)
+    	public void UpperArm右接続(ElementData e)
     	{
     		UpperArm右_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.触手_犬_UpperArm右_接続;
     	}
 
-    	public void LowerArm左接続(EleD e)
+    	public void LowerArm左接続(ElementData e)
     	{
     		LowerArm左_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.触手_犬_LowerArm左_接続;
     	}
 
-    	public void LowerArm右接続(EleD e)
+    	public void LowerArm右接続(ElementData e)
     	{
     		LowerArm右_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.触手_犬_LowerArm右_接続;
     	}
 
-    	public void 手左接続(EleD e)
+    	public void 手左接続(ElementData e)
     	{
     		手左_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.触手_犬_手左_接続;
     	}
 
-    	public void 手右接続(EleD e)
+    	public void 手右接続(ElementData e)
     	{
     		手右_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.触手_犬_手右_接続;
     	}
 
-    	public override Ele GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
+    	public override Element GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
     	{
     		return new 触手_犬(DisUnit, 配色指定, 体配色, Med, this);
     	}

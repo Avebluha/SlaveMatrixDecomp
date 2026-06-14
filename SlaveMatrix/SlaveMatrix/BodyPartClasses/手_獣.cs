@@ -4,33 +4,33 @@ namespace SlaveMatrix
 {
     public class 手_獣 : 獣手
     {
-    	public Par X0Y0_手;
+    	public ShapePart X0Y0_手;
 
-    	public Par X0Y0_親指_指;
+    	public ShapePart X0Y0_親指_指;
 
-    	public Par X0Y0_親指_爪;
+    	public ShapePart X0Y0_親指_爪;
 
-    	public Par X0Y0_小指_指;
+    	public ShapePart X0Y0_小指_指;
 
-    	public Par X0Y0_小指_爪;
+    	public ShapePart X0Y0_小指_爪;
 
-    	public Par X0Y0_薬指_指;
+    	public ShapePart X0Y0_薬指_指;
 
-    	public Par X0Y0_薬指_爪;
+    	public ShapePart X0Y0_薬指_爪;
 
-    	public Par X0Y0_中指_指;
+    	public ShapePart X0Y0_中指_指;
 
-    	public Par X0Y0_中指_爪;
+    	public ShapePart X0Y0_中指_爪;
 
-    	public Par X0Y0_人指_指;
+    	public ShapePart X0Y0_人指_指;
 
-    	public Par X0Y0_人指_爪;
+    	public ShapePart X0Y0_人指_爪;
 
-    	public Par X0Y0_竜性_鱗3;
+    	public ShapePart X0Y0_竜性_鱗3;
 
-    	public Par X0Y0_竜性_鱗2;
+    	public ShapePart X0Y0_竜性_鱗2;
 
-    	public Par X0Y0_竜性_鱗1;
+    	public ShapePart X0Y0_竜性_鱗1;
 
     	public ColorD 手CD;
 
@@ -359,30 +359,30 @@ namespace SlaveMatrix
     	public 手_獣(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 手_獣D e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif();
-    		dif.Tag = "獣";
-    		dif.Add(new Pars(Sta.腕左["四足手"][0][0]));
-    		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		X0Y0_手 = pars["手"].ToPar();
-    		Pars pars2 = pars["親指"].ToPars();
+    		MorphVariant morphVariant = new MorphVariant();
+    		morphVariant.Tag = "獣";
+    		morphVariant.Add(new PartGroup(GlobalState.腕左["四足手"][0][0]));
+    		Body = new VariantGrid();
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_手 = partGroup["手"].ToPar();
+    		PartGroup pars2 = partGroup["親指"].ToPars();
     		X0Y0_親指_指 = pars2["指"].ToPar();
     		X0Y0_親指_爪 = pars2["爪"].ToPar();
-    		pars2 = pars["小指"].ToPars();
+    		pars2 = partGroup["小指"].ToPars();
     		X0Y0_小指_指 = pars2["指"].ToPar();
     		X0Y0_小指_爪 = pars2["爪"].ToPar();
-    		pars2 = pars["薬指"].ToPars();
+    		pars2 = partGroup["薬指"].ToPars();
     		X0Y0_薬指_指 = pars2["指"].ToPar();
     		X0Y0_薬指_爪 = pars2["爪"].ToPar();
-    		pars2 = pars["中指"].ToPars();
+    		pars2 = partGroup["中指"].ToPars();
     		X0Y0_中指_指 = pars2["指"].ToPar();
     		X0Y0_中指_爪 = pars2["爪"].ToPar();
-    		pars2 = pars["人指"].ToPars();
+    		pars2 = partGroup["人指"].ToPars();
     		X0Y0_人指_指 = pars2["指"].ToPar();
     		X0Y0_人指_爪 = pars2["爪"].ToPar();
-    		pars2 = pars["鱗"].ToPars();
+    		pars2 = partGroup["鱗"].ToPars();
     		X0Y0_竜性_鱗3 = pars2["鱗3"].ToPar();
     		X0Y0_竜性_鱗2 = pars2["鱗2"].ToPar();
     		X0Y0_竜性_鱗1 = pars2["鱗1"].ToPar();
@@ -497,56 +497,56 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		手CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		親指_指CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		親指_爪CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		小指_指CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		小指_爪CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		薬指_指CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		薬指_爪CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		中指_指CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		中指_爪CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		人指_指CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		人指_爪CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		竜性_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		手CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		親指_指CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		親指_爪CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		小指_指CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		小指_爪CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		薬指_指CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		薬指_爪CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		中指_指CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		中指_爪CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		人指_指CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		人指_爪CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		竜性_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
     	}
 
     	private void 配色T0(BodyColorSet 体配色)
     	{
-    		手CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		親指_指CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		親指_爪CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		小指_指CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		小指_爪CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		薬指_指CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		薬指_爪CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		中指_指CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		中指_爪CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		人指_指CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		人指_爪CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		竜性_鱗3CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		竜性_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_鱗1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		手CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		親指_指CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		親指_爪CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		小指_指CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		小指_爪CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		薬指_指CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		薬指_爪CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		中指_指CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		中指_爪CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		人指_指CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		人指_爪CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		竜性_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		竜性_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
     	}
 
     	private void 配色T1(BodyColorSet 体配色)
     	{
-    		手CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		親指_指CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		親指_爪CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		小指_指CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		小指_爪CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		薬指_指CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		薬指_爪CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		中指_指CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		中指_爪CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		人指_指CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		人指_爪CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		竜性_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_鱗2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		竜性_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		手CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		親指_指CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		親指_爪CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		小指_指CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		小指_爪CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		薬指_指CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		薬指_爪CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		中指_指CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		中指_爪CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		人指_指CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		人指_爪CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		竜性_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		竜性_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
     	}
     }
 }

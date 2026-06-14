@@ -6,7 +6,7 @@ namespace SlaveMatrix
 {
     public class スタンプW : Stamp
     {
-    	private Ele Par;
+    	private Element Par;
 
     	public override void Draw(RenderArea Are)
     	{
@@ -18,8 +18,8 @@ namespace SlaveMatrix
     			}
     			foreach (sep stum in sta)
     			{
-    				p = stum.Ele.Body.GetCurrent().GetPar(stum.Path);
-    				stum.Sta.角度B = p.GetAngleBase() - stum.Par.GetAngleBase();
+    				p = stum.Element.Body.GetCurrent().GetPar(stum.Path);
+    				stum.Sta.角度B = p.GetAngleBase() - stum.ShapePart.GetAngleBase();
     				stum.Sta.位置B = p.ToGlobal(stum.Pos);
     				stum.Sta.色更新();
     				stum.Sta.Body.Draw(Are);
@@ -30,7 +30,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool Add(Vector2D cp, Color hc, Ele he)
+    	public bool Add(Vector2D cp, Color hc, Element he)
     	{
     		if (チェック2(he) && he == Par)
     		{
@@ -45,13 +45,13 @@ namespace SlaveMatrix
     					sep.Sta.Dispose();
     				}
     				sep = default(sep);
-    				sep.Sta = EleD.GetEle(Are.DisplayUnitScale, Med, Cha.ColorSet);
+    				sep.Sta = ElementData.GetEle(Are.DisplayUnitScale, Med, Cha.ColorSet);
     				sep.Sta.SetHitFalse();
-    				sep.Sta.角度C = 45.0 * (double)(RNG.XS.NextBool() ? 1 : (-1)) * RNG.XS.NextDouble();
-    				sep.Ele = he;
-    				sep.Par = p;
-    				sep.Path = sep.Par.GetPath();
-    				sep.Pos = sep.Par.ToLocal(cp + (he.位置 - cp).newNormalize() * 0.01);
+    				sep.Sta.角度C = 45.0 * (double)(Rng.XS.NextBool() ? 1 : (-1)) * Rng.XS.NextDouble();
+    				sep.Element = he;
+    				sep.ShapePart = p;
+    				sep.Path = sep.ShapePart.GetPath();
+    				sep.Pos = sep.ShapePart.ToLocal(cp + (he.位置 - cp).newNormalize() * 0.01);
     				sta.Add(sep);
     			}
     			return true;
@@ -59,11 +59,11 @@ namespace SlaveMatrix
     		return false;
     	}
 
-    	public スタンプW(ModeEventDispatcher Med, RenderArea Are, Character Cha, Body Bod, EleD EleD, Ele Par)
-    		: base(Med, Are, Cha, Bod, EleD)
+    	public スタンプW(ModeEventDispatcher Med, RenderArea Are, Character Cha, Body Bod, ElementData ElementData, Element Par)
+    		: base(Med, Are, Cha, Bod, ElementData)
     	{
     		this.Par = Par;
-    		EleD.尺度B = 0.9;
+    		ElementData.尺度B = 0.9;
     	}
     }
 }

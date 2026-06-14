@@ -4,67 +4,67 @@ namespace SlaveMatrix
 {
     public class 前髪_三分2 : 前髪
     {
-    	public Par X0Y0_髪基;
+    	public ShapePart X0Y0_髪基;
 
-    	public Par X0Y0_髪左1;
+    	public ShapePart X0Y0_髪左1;
 
-    	public Par X0Y0_髪左2;
+    	public ShapePart X0Y0_髪左2;
 
-    	public Par X0Y0_髪左3;
+    	public ShapePart X0Y0_髪左3;
 
-    	public Par X0Y0_髪左4;
+    	public ShapePart X0Y0_髪左4;
 
-    	public Par X0Y0_編み左_編節1_髪節;
+    	public ShapePart X0Y0_編み左_編節1_髪節;
 
-    	public Par X0Y0_編み左_編節1_髪編目;
+    	public ShapePart X0Y0_編み左_編節1_髪編目;
 
-    	public Par X0Y0_編み左_編節2_髪節;
+    	public ShapePart X0Y0_編み左_編節2_髪節;
 
-    	public Par X0Y0_編み左_編節2_髪編目;
+    	public ShapePart X0Y0_編み左_編節2_髪編目;
 
-    	public Par X0Y0_編み左_編節3_髪節;
+    	public ShapePart X0Y0_編み左_編節3_髪節;
 
-    	public Par X0Y0_編み左_編節3_髪編目;
+    	public ShapePart X0Y0_編み左_編節3_髪編目;
 
-    	public Par X0Y0_髪ハネ左;
+    	public ShapePart X0Y0_髪ハネ左;
 
-    	public Par X0Y0_ハイライト左;
+    	public ShapePart X0Y0_ハイライト左;
 
-    	public Par X0Y0_髪頭頂横左1;
+    	public ShapePart X0Y0_髪頭頂横左1;
 
-    	public Par X0Y0_髪頭頂横左2;
+    	public ShapePart X0Y0_髪頭頂横左2;
 
-    	public Par X0Y0_髪右1;
+    	public ShapePart X0Y0_髪右1;
 
-    	public Par X0Y0_髪右2;
+    	public ShapePart X0Y0_髪右2;
 
-    	public Par X0Y0_髪右3;
+    	public ShapePart X0Y0_髪右3;
 
-    	public Par X0Y0_髪右4;
+    	public ShapePart X0Y0_髪右4;
 
-    	public Par X0Y0_編み右_編節1_髪節;
+    	public ShapePart X0Y0_編み右_編節1_髪節;
 
-    	public Par X0Y0_編み右_編節1_髪編目;
+    	public ShapePart X0Y0_編み右_編節1_髪編目;
 
-    	public Par X0Y0_編み右_編節2_髪節;
+    	public ShapePart X0Y0_編み右_編節2_髪節;
 
-    	public Par X0Y0_編み右_編節2_髪編目;
+    	public ShapePart X0Y0_編み右_編節2_髪編目;
 
-    	public Par X0Y0_編み右_編節3_髪節;
+    	public ShapePart X0Y0_編み右_編節3_髪節;
 
-    	public Par X0Y0_編み右_編節3_髪編目;
+    	public ShapePart X0Y0_編み右_編節3_髪編目;
 
-    	public Par X0Y0_髪ハネ右;
+    	public ShapePart X0Y0_髪ハネ右;
 
-    	public Par X0Y0_ハイライト右;
+    	public ShapePart X0Y0_ハイライト右;
 
-    	public Par X0Y0_髪左5;
+    	public ShapePart X0Y0_髪左5;
 
-    	public Par X0Y0_髪中央;
+    	public ShapePart X0Y0_髪中央;
 
-    	public Par X0Y0_髪頭頂横右1;
+    	public ShapePart X0Y0_髪頭頂横右1;
 
-    	public Par X0Y0_髪頭頂横右2;
+    	public ShapePart X0Y0_髪頭頂横右2;
 
     	public ColorD 髪基CD;
 
@@ -790,20 +790,20 @@ namespace SlaveMatrix
     	public 前髪_三分2(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 前髪_三分2D e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif();
-    		dif.Tag = "三分2";
-    		dif.Add(new Pars(Sta.胴体["前髪"][0][9]));
-    		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		X0Y0_髪基 = pars["髪基"].ToPar();
-    		X0Y0_髪左1 = pars["髪左1"].ToPar();
-    		X0Y0_髪左2 = pars["髪左2"].ToPar();
-    		X0Y0_髪左3 = pars["髪左3"].ToPar();
-    		X0Y0_髪左4 = pars["髪左4"].ToPar();
-    		Pars pars2 = pars["編み左"].ToPars();
-    		Pars pars3 = pars2["編節1"].ToPars();
+    		MorphVariant morphVariant = new MorphVariant();
+    		morphVariant.Tag = "三分2";
+    		morphVariant.Add(new PartGroup(GlobalState.胴体["前髪"][0][9]));
+    		Body = new VariantGrid();
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_髪基 = partGroup["髪基"].ToPar();
+    		X0Y0_髪左1 = partGroup["髪左1"].ToPar();
+    		X0Y0_髪左2 = partGroup["髪左2"].ToPar();
+    		X0Y0_髪左3 = partGroup["髪左3"].ToPar();
+    		X0Y0_髪左4 = partGroup["髪左4"].ToPar();
+    		PartGroup pars2 = partGroup["編み左"].ToPars();
+    		PartGroup pars3 = pars2["編節1"].ToPars();
     		X0Y0_編み左_編節1_髪節 = pars3["髪節"].ToPar();
     		X0Y0_編み左_編節1_髪編目 = pars3["髪編目"].ToPar();
     		pars3 = pars2["編節2"].ToPars();
@@ -812,15 +812,15 @@ namespace SlaveMatrix
     		pars3 = pars2["編節3"].ToPars();
     		X0Y0_編み左_編節3_髪節 = pars3["髪節"].ToPar();
     		X0Y0_編み左_編節3_髪編目 = pars3["髪編目"].ToPar();
-    		X0Y0_髪ハネ左 = pars["髪ハネ左"].ToPar();
-    		X0Y0_ハイライト左 = pars["ハイライト左"].ToPar();
-    		X0Y0_髪頭頂横左1 = pars["髪頭頂横左1"].ToPar();
-    		X0Y0_髪頭頂横左2 = pars["髪頭頂横左2"].ToPar();
-    		X0Y0_髪右1 = pars["髪右1"].ToPar();
-    		X0Y0_髪右2 = pars["髪右2"].ToPar();
-    		X0Y0_髪右3 = pars["髪右3"].ToPar();
-    		X0Y0_髪右4 = pars["髪右4"].ToPar();
-    		Pars pars4 = pars["編み右"].ToPars();
+    		X0Y0_髪ハネ左 = partGroup["髪ハネ左"].ToPar();
+    		X0Y0_ハイライト左 = partGroup["ハイライト左"].ToPar();
+    		X0Y0_髪頭頂横左1 = partGroup["髪頭頂横左1"].ToPar();
+    		X0Y0_髪頭頂横左2 = partGroup["髪頭頂横左2"].ToPar();
+    		X0Y0_髪右1 = partGroup["髪右1"].ToPar();
+    		X0Y0_髪右2 = partGroup["髪右2"].ToPar();
+    		X0Y0_髪右3 = partGroup["髪右3"].ToPar();
+    		X0Y0_髪右4 = partGroup["髪右4"].ToPar();
+    		PartGroup pars4 = partGroup["編み右"].ToPars();
     		pars3 = pars4["編節1"].ToPars();
     		X0Y0_編み右_編節1_髪節 = pars3["髪節"].ToPar();
     		X0Y0_編み右_編節1_髪編目 = pars3["髪編目"].ToPar();
@@ -830,12 +830,12 @@ namespace SlaveMatrix
     		pars3 = pars4["編節3"].ToPars();
     		X0Y0_編み右_編節3_髪節 = pars3["髪節"].ToPar();
     		X0Y0_編み右_編節3_髪編目 = pars3["髪編目"].ToPar();
-    		X0Y0_髪ハネ右 = pars["髪ハネ右"].ToPar();
-    		X0Y0_ハイライト右 = pars["ハイライト右"].ToPar();
-    		X0Y0_髪左5 = pars["髪左5"].ToPar();
-    		X0Y0_髪中央 = pars["髪中央"].ToPar();
-    		X0Y0_髪頭頂横右1 = pars["髪頭頂横右1"].ToPar();
-    		X0Y0_髪頭頂横右2 = pars["髪頭頂横右2"].ToPar();
+    		X0Y0_髪ハネ右 = partGroup["髪ハネ右"].ToPar();
+    		X0Y0_ハイライト右 = partGroup["ハイライト右"].ToPar();
+    		X0Y0_髪左5 = partGroup["髪左5"].ToPar();
+    		X0Y0_髪中央 = partGroup["髪中央"].ToPar();
+    		X0Y0_髪頭頂横右1 = partGroup["髪頭頂横右1"].ToPar();
+    		X0Y0_髪頭頂横右2 = partGroup["髪頭頂横右2"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;
@@ -981,7 +981,7 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		髪基CD = new ColorD(ref Col.Empty, ref Color2.Empty);
+    		髪基CD = new ColorD(ref ColorHelper.Empty, ref Color2.Empty);
     		髪左1CD = new ColorD(ref 体配色.髪線, ref 体配色.髪O);
     		髪左2CD = new ColorD(ref 体配色.髪線, ref 体配色.髪O);
     		髪左3CD = new ColorD(ref 体配色.髪線, ref 体配色.髪O);
@@ -993,7 +993,7 @@ namespace SlaveMatrix
     		編み左_編節3_髪節CD = new ColorD(ref 体配色.髪線, ref 体配色.髪O);
     		編み左_編節3_髪編目CD = new ColorD(ref 体配色.髪線, ref 体配色.髪O);
     		髪ハネ左CD = new ColorD(ref 体配色.髪線, ref 体配色.髪O);
-    		ハイライト左CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
+    		ハイライト左CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
     		髪頭頂横左1CD = new ColorD(ref 体配色.髪線, ref 体配色.髪O);
     		髪頭頂横左2CD = new ColorD(ref 体配色.髪線, ref 体配色.髪O);
     		髪右1CD = new ColorD(ref 体配色.髪線, ref 体配色.髪O);
@@ -1007,7 +1007,7 @@ namespace SlaveMatrix
     		編み右_編節3_髪節CD = new ColorD(ref 体配色.髪線, ref 体配色.髪O);
     		編み右_編節3_髪編目CD = new ColorD(ref 体配色.髪線, ref 体配色.髪O);
     		髪ハネ右CD = new ColorD(ref 体配色.髪線, ref 体配色.髪O);
-    		ハイライト右CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
+    		ハイライト右CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
     		髪左5CD = new ColorD(ref 体配色.髪線, ref 体配色.髪O);
     		髪中央CD = new ColorD(ref 体配色.髪線, ref 体配色.髪O);
     		髪頭頂横右1CD = new ColorD(ref 体配色.髪線, ref 体配色.髪O);

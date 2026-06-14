@@ -4,45 +4,45 @@ namespace SlaveMatrix
 {
     public class 触覚_蠍 : 触覚
     {
-    	public Par X0Y0_櫛状版1_櫛状版1;
+    	public ShapePart X0Y0_櫛状版1_櫛状版1;
 
-    	public Par X0Y0_櫛状版1_櫛状版2;
+    	public ShapePart X0Y0_櫛状版1_櫛状版2;
 
-    	public Par X0Y0_櫛状版1_櫛状版3;
+    	public ShapePart X0Y0_櫛状版1_櫛状版3;
 
-    	public Par X0Y0_櫛状版1_櫛状版4;
+    	public ShapePart X0Y0_櫛状版1_櫛状版4;
 
-    	public Par X0Y0_櫛状版1_櫛状版5;
+    	public ShapePart X0Y0_櫛状版1_櫛状版5;
 
-    	public Par X0Y0_櫛状版1_櫛状版6;
+    	public ShapePart X0Y0_櫛状版1_櫛状版6;
 
-    	public Par X0Y0_歯1;
+    	public ShapePart X0Y0_歯1;
 
-    	public Par X0Y0_歯2;
+    	public ShapePart X0Y0_歯2;
 
-    	public Par X0Y0_歯3;
+    	public ShapePart X0Y0_歯3;
 
-    	public Par X0Y0_歯4;
+    	public ShapePart X0Y0_歯4;
 
-    	public Par X0Y0_歯5;
+    	public ShapePart X0Y0_歯5;
 
-    	public Par X0Y0_歯6;
+    	public ShapePart X0Y0_歯6;
 
-    	public Par X0Y0_歯7;
+    	public ShapePart X0Y0_歯7;
 
-    	public Par X0Y0_歯8;
+    	public ShapePart X0Y0_歯8;
 
-    	public Par X0Y0_歯9;
+    	public ShapePart X0Y0_歯9;
 
-    	public Par X0Y0_歯10;
+    	public ShapePart X0Y0_歯10;
 
-    	public Par X0Y0_歯11;
+    	public ShapePart X0Y0_歯11;
 
-    	public Par X0Y0_歯12;
+    	public ShapePart X0Y0_歯12;
 
-    	public Par X0Y0_歯13;
+    	public ShapePart X0Y0_歯13;
 
-    	public Par X0Y0_櫛状板2;
+    	public ShapePart X0Y0_櫛状板2;
 
     	public ColorD 櫛状版1_櫛状版1CD;
 
@@ -485,34 +485,34 @@ namespace SlaveMatrix
     	public 触覚_蠍(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 触覚_蠍D e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif();
-    		dif.Tag = "蠍";
-    		dif.Add(new Pars(Sta.肢左["触覚"][0][5]));
-    		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		Pars pars2 = pars["櫛状板1"].ToPars();
+    		MorphVariant morphVariant = new MorphVariant();
+    		morphVariant.Tag = "蠍";
+    		morphVariant.Add(new PartGroup(GlobalState.肢左["触覚"][0][5]));
+    		Body = new VariantGrid();
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
+    		PartGroup partGroup = Body[0][0];
+    		PartGroup pars2 = partGroup["櫛状板1"].ToPars();
     		X0Y0_櫛状版1_櫛状版1 = pars2["櫛状板1"].ToPar();
     		X0Y0_櫛状版1_櫛状版2 = pars2["櫛状板2"].ToPar();
     		X0Y0_櫛状版1_櫛状版3 = pars2["櫛状板3"].ToPar();
     		X0Y0_櫛状版1_櫛状版4 = pars2["櫛状板4"].ToPar();
     		X0Y0_櫛状版1_櫛状版5 = pars2["櫛状板5"].ToPar();
     		X0Y0_櫛状版1_櫛状版6 = pars2["櫛状板6"].ToPar();
-    		X0Y0_歯1 = pars["歯1"].ToPar();
-    		X0Y0_歯2 = pars["歯2"].ToPar();
-    		X0Y0_歯3 = pars["歯3"].ToPar();
-    		X0Y0_歯4 = pars["歯4"].ToPar();
-    		X0Y0_歯5 = pars["歯5"].ToPar();
-    		X0Y0_歯6 = pars["歯6"].ToPar();
-    		X0Y0_歯7 = pars["歯7"].ToPar();
-    		X0Y0_歯8 = pars["歯8"].ToPar();
-    		X0Y0_歯9 = pars["歯9"].ToPar();
-    		X0Y0_歯10 = pars["歯10"].ToPar();
-    		X0Y0_歯11 = pars["歯11"].ToPar();
-    		X0Y0_歯12 = pars["歯12"].ToPar();
-    		X0Y0_歯13 = pars["歯13"].ToPar();
-    		X0Y0_櫛状板2 = pars["櫛状板2"].ToPar();
+    		X0Y0_歯1 = partGroup["歯1"].ToPar();
+    		X0Y0_歯2 = partGroup["歯2"].ToPar();
+    		X0Y0_歯3 = partGroup["歯3"].ToPar();
+    		X0Y0_歯4 = partGroup["歯4"].ToPar();
+    		X0Y0_歯5 = partGroup["歯5"].ToPar();
+    		X0Y0_歯6 = partGroup["歯6"].ToPar();
+    		X0Y0_歯7 = partGroup["歯7"].ToPar();
+    		X0Y0_歯8 = partGroup["歯8"].ToPar();
+    		X0Y0_歯9 = partGroup["歯9"].ToPar();
+    		X0Y0_歯10 = partGroup["歯10"].ToPar();
+    		X0Y0_歯11 = partGroup["歯11"].ToPar();
+    		X0Y0_歯12 = partGroup["歯12"].ToPar();
+    		X0Y0_歯13 = partGroup["歯13"].ToPar();
+    		X0Y0_櫛状板2 = partGroup["櫛状板2"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;
@@ -641,74 +641,74 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		櫛状版1_櫛状版1CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		櫛状版1_櫛状版2CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		櫛状版1_櫛状版3CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		櫛状版1_櫛状版4CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		櫛状版1_櫛状版5CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		櫛状版1_櫛状版6CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		歯1CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		歯2CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		歯3CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		歯4CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		歯5CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		歯6CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		歯7CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		歯8CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		歯9CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		歯10CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		歯11CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		歯12CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		歯13CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		櫛状板2CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
+    		櫛状版1_櫛状版1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		櫛状版1_櫛状版2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		櫛状版1_櫛状版3CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		櫛状版1_櫛状版4CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		櫛状版1_櫛状版5CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		櫛状版1_櫛状版6CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		歯1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		歯2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		歯3CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		歯4CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		歯5CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		歯6CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		歯7CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		歯8CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		歯9CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		歯10CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		歯11CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		歯12CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		歯13CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		櫛状板2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
     	}
 
     	private void 配色T1(BodyColorSet 体配色)
     	{
-    		櫛状版1_櫛状版1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		櫛状版1_櫛状版2CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		櫛状版1_櫛状版3CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		櫛状版1_櫛状版4CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		櫛状版1_櫛状版5CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		櫛状版1_櫛状版6CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		歯1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		歯2CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		歯3CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		歯4CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		歯5CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		歯6CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		歯7CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		歯8CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		歯9CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		歯10CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		歯11CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		歯12CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		歯13CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		櫛状板2CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
+    		櫛状版1_櫛状版1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		櫛状版1_櫛状版2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		櫛状版1_櫛状版3CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		櫛状版1_櫛状版4CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		櫛状版1_櫛状版5CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		櫛状版1_櫛状版6CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		歯1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		歯2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		歯3CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		歯4CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		歯5CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		歯6CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		歯7CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		歯8CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		歯9CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		歯10CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		歯11CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		歯12CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		歯13CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		櫛状板2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
     	}
 
     	private void 配色T0(BodyColorSet 体配色)
     	{
-    		櫛状版1_櫛状版1CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		櫛状版1_櫛状版2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		櫛状版1_櫛状版3CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		櫛状版1_櫛状版4CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		櫛状版1_櫛状版5CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		櫛状版1_櫛状版6CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		歯1CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		歯2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		歯3CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		歯4CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		歯5CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		歯6CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		歯7CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		歯8CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		歯9CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		歯10CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		歯11CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		歯12CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		歯13CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		櫛状板2CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
+    		櫛状版1_櫛状版1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		櫛状版1_櫛状版2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		櫛状版1_櫛状版3CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		櫛状版1_櫛状版4CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		櫛状版1_櫛状版5CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		櫛状版1_櫛状版6CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		歯1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		歯2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		歯3CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		歯4CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		歯5CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		歯6CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		歯7CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		歯8CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		歯9CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		歯10CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		歯11CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		歯12CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		歯13CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		櫛状板2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
     	}
     }
 }

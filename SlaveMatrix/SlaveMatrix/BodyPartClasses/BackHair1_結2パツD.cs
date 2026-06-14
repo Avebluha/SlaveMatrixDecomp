@@ -36,14 +36,14 @@ namespace SlaveMatrix
 
     	public BackHair1_結2パツD SetRandom()
     	{
-    		髪長 = RNG.XS.NextDouble();
-    		毛量 = RNG.XS.NextDouble();
-    		広がり = RNG.XS.NextDouble();
-    		高さ = RNG.XS.NextDouble();
+    		髪長 = Rng.XS.NextDouble();
+    		毛量 = Rng.XS.NextDouble();
+    		広がり = Rng.XS.NextDouble();
+    		高さ = Rng.XS.NextDouble();
     		return this;
     	}
 
-    	public override Ele GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
+    	public override Element GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
     	{
     		return new BackHair1_結2パツ(DisUnit, 配色指定, 体配色, Med, this);
     	}

@@ -3,11 +3,11 @@ using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
-    public class 鎖 : Ele
+    public class 鎖 : Element
     {
-    	public Par X0Y0_鎖2;
+    	public ShapePart X0Y0_鎖2;
 
-    	public Par X0Y0_鎖1;
+    	public ShapePart X0Y0_鎖1;
 
     	public ColorD 鎖2CD;
 
@@ -108,10 +108,10 @@ namespace SlaveMatrix
     	public 鎖(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 鎖D e)
     	{
     		ThisType = GetType();
-    		Body = new Difs(Sta.その他["鎖"]);
-    		Pars pars = Body[0][0];
-    		X0Y0_鎖2 = pars["鎖2"].ToPar();
-    		X0Y0_鎖1 = pars["鎖1"].ToPar();
+    		Body = new VariantGrid(GlobalState.その他["鎖"]);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_鎖2 = partGroup["鎖2"].ToPar();
+    		X0Y0_鎖1 = partGroup["鎖1"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;
@@ -152,7 +152,7 @@ namespace SlaveMatrix
     		Intensity = e.濃度;
     	}
 
-    	public override bool Is鉄(Par p)
+    	public override bool Is鉄(ShapePart p)
     	{
     		if (p != X0Y0_鎖2)
     		{

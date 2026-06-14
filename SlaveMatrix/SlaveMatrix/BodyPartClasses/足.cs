@@ -2,7 +2,7 @@ using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
-    public class 足 : Ele
+    public class 足 : Element
     {
     }
 }

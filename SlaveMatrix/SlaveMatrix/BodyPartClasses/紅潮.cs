@@ -4,27 +4,27 @@ using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
-    public class 紅潮 : Ele
+    public class 紅潮 : Element
     {
-    	public Par X0Y0_紅潮0;
+    	public ShapePart X0Y0_紅潮0;
 
-    	public Par X0Y0_紅潮1;
+    	public ShapePart X0Y0_紅潮1;
 
-    	public Par X0Y0_紅潮右;
+    	public ShapePart X0Y0_紅潮右;
 
-    	public Par X0Y0_紅潮左;
+    	public ShapePart X0Y0_紅潮左;
 
-    	public Par X0Y0_紅潮線左;
+    	public ShapePart X0Y0_紅潮線左;
 
-    	public Par X0Y0_紅潮線右;
+    	public ShapePart X0Y0_紅潮線右;
 
-    	public Par X0Y0_紅潮弱左;
+    	public ShapePart X0Y0_紅潮弱左;
 
-    	public Par X0Y0_紅潮弱右;
+    	public ShapePart X0Y0_紅潮弱右;
 
-    	public Par X0Y0_紅潮線弱左;
+    	public ShapePart X0Y0_紅潮線弱左;
 
-    	public Par X0Y0_紅潮線弱右;
+    	public ShapePart X0Y0_紅潮線弱右;
 
     	public ColorD 紅潮0CD;
 
@@ -407,18 +407,18 @@ namespace SlaveMatrix
     	public 紅潮(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 紅潮D e)
     	{
     		ThisType = GetType();
-    		Body = new Difs(Sta.胴体["紅潮"]);
-    		Pars pars = Body[0][0];
-    		X0Y0_紅潮0 = pars["紅潮0"].ToPar();
-    		X0Y0_紅潮1 = pars["紅潮1"].ToPar();
-    		X0Y0_紅潮右 = pars["紅潮右"].ToPar();
-    		X0Y0_紅潮左 = pars["紅潮左"].ToPar();
-    		X0Y0_紅潮線左 = pars["紅潮線左"].ToPar();
-    		X0Y0_紅潮線右 = pars["紅潮線右"].ToPar();
-    		X0Y0_紅潮弱左 = pars["紅潮弱左"].ToPar();
-    		X0Y0_紅潮弱右 = pars["紅潮弱右"].ToPar();
-    		X0Y0_紅潮線弱左 = pars["紅潮線弱左"].ToPar();
-    		X0Y0_紅潮線弱右 = pars["紅潮線弱右"].ToPar();
+    		Body = new VariantGrid(GlobalState.胴体["紅潮"]);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_紅潮0 = partGroup["紅潮0"].ToPar();
+    		X0Y0_紅潮1 = partGroup["紅潮1"].ToPar();
+    		X0Y0_紅潮右 = partGroup["紅潮右"].ToPar();
+    		X0Y0_紅潮左 = partGroup["紅潮左"].ToPar();
+    		X0Y0_紅潮線左 = partGroup["紅潮線左"].ToPar();
+    		X0Y0_紅潮線右 = partGroup["紅潮線右"].ToPar();
+    		X0Y0_紅潮弱左 = partGroup["紅潮弱左"].ToPar();
+    		X0Y0_紅潮弱右 = partGroup["紅潮弱右"].ToPar();
+    		X0Y0_紅潮線弱左 = partGroup["紅潮線弱左"].ToPar();
+    		X0Y0_紅潮線弱右 = partGroup["紅潮線弱右"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;
@@ -508,15 +508,15 @@ namespace SlaveMatrix
     	{
     		Color Col = Color.FromArgb((int)((double)(int)体配色.紅潮.Col1.A * 0.7), 体配色.紅潮.Col1);
     		紅潮0CD = new ColorD();
-    		紅潮0CD.線 = SlaveMatrix.Col.Empty;
-    		紅潮0CD.色 = new Color2(ref Col, ref SlaveMatrix.Col.Empty);
-    		紅潮1CD = new ColorD(ref SlaveMatrix.Col.Empty, ref 体配色.紅潮);
-    		紅潮右CD = new ColorD(ref SlaveMatrix.Col.Empty, ref 体配色.紅潮);
-    		紅潮左CD = new ColorD(ref SlaveMatrix.Col.Empty, ref 体配色.紅潮);
+    		紅潮0CD.線 = SlaveMatrix.ColorHelper.Empty;
+    		紅潮0CD.色 = new Color2(ref Col, ref SlaveMatrix.ColorHelper.Empty);
+    		紅潮1CD = new ColorD(ref SlaveMatrix.ColorHelper.Empty, ref 体配色.紅潮);
+    		紅潮右CD = new ColorD(ref SlaveMatrix.ColorHelper.Empty, ref 体配色.紅潮);
+    		紅潮左CD = new ColorD(ref SlaveMatrix.ColorHelper.Empty, ref 体配色.紅潮);
     		紅潮線左CD = new ColorD(ref 体配色.紅潮線, ref 体配色.紅潮);
     		紅潮線右CD = new ColorD(ref 体配色.紅潮線, ref 体配色.紅潮);
-    		紅潮弱左CD = new ColorD(ref SlaveMatrix.Col.Empty, ref 体配色.紅潮);
-    		紅潮弱右CD = new ColorD(ref SlaveMatrix.Col.Empty, ref 体配色.紅潮);
+    		紅潮弱左CD = new ColorD(ref SlaveMatrix.ColorHelper.Empty, ref 体配色.紅潮);
+    		紅潮弱右CD = new ColorD(ref SlaveMatrix.ColorHelper.Empty, ref 体配色.紅潮);
     		紅潮線弱左CD = new ColorD(ref 体配色.紅潮線, ref 体配色.紅潮);
     		紅潮線弱右CD = new ColorD(ref 体配色.紅潮線, ref 体配色.紅潮);
     	}

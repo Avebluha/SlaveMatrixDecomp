@@ -6,23 +6,23 @@ namespace SlaveMatrix
 {
     public class UpperArm_獣 : 獣UpperArm
     {
-    	public Par X0Y0_筋肉上;
+    	public ShapePart X0Y0_筋肉上;
 
-    	public Par X0Y0_UpperArm;
+    	public ShapePart X0Y0_UpperArm;
 
-    	public Par X0Y0_筋肉下;
+    	public ShapePart X0Y0_筋肉下;
 
-    	public Par X0Y0_虎柄_虎1;
+    	public ShapePart X0Y0_虎柄_虎1;
 
-    	public Par X0Y0_虎柄_虎2;
+    	public ShapePart X0Y0_虎柄_虎2;
 
-    	public Par X0Y0_竜性_鱗4;
+    	public ShapePart X0Y0_竜性_鱗4;
 
-    	public Par X0Y0_竜性_鱗3;
+    	public ShapePart X0Y0_竜性_鱗3;
 
-    	public Par X0Y0_竜性_鱗2;
+    	public ShapePart X0Y0_竜性_鱗2;
 
-    	public Par X0Y0_竜性_鱗1;
+    	public ShapePart X0Y0_竜性_鱗1;
 
     	public ColorD 筋肉上CD;
 
@@ -273,18 +273,18 @@ namespace SlaveMatrix
     	{
     		UpperArm_獣 UpperArm_獣2 = this;
     		ThisType = GetType();
-    		Dif dif = new Dif(Sta.腕左["四足UpperArm"][0]);
-    		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		X0Y0_筋肉上 = pars["筋肉上"].ToPar();
-    		X0Y0_UpperArm = pars["上腕"].ToPar();
-    		X0Y0_筋肉下 = pars["筋肉下"].ToPar();
-    		Pars pars2 = pars["虎柄"].ToPars();
+    		MorphVariant morphVariant = new MorphVariant(GlobalState.腕左["四足UpperArm"][0]);
+    		Body = new VariantGrid();
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_筋肉上 = partGroup["筋肉上"].ToPar();
+    		X0Y0_UpperArm = partGroup["上腕"].ToPar();
+    		X0Y0_筋肉下 = partGroup["筋肉下"].ToPar();
+    		PartGroup pars2 = partGroup["虎柄"].ToPars();
     		X0Y0_虎柄_虎1 = pars2["虎1"].ToPar();
     		X0Y0_虎柄_虎2 = pars2["虎2"].ToPar();
-    		pars2 = pars["鱗"].ToPars();
+    		pars2 = partGroup["鱗"].ToPars();
     		X0Y0_竜性_鱗4 = pars2["鱗4"].ToPar();
     		X0Y0_竜性_鱗3 = pars2["鱗3"].ToPar();
     		X0Y0_竜性_鱗2 = pars2["鱗2"].ToPar();
@@ -332,8 +332,8 @@ namespace SlaveMatrix
     		}
     		if (e.LowerArm_接続.Count > 0)
     		{
-    			Ele f;
-    			LowerArm_接続 = e.LowerArm_接続.Select(delegate(EleD g)
+    			Element f;
+    			LowerArm_接続 = e.LowerArm_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = UpperArm_獣2;
@@ -398,40 +398,40 @@ namespace SlaveMatrix
     	private void 配色N0(BodyColorSet 体配色)
     	{
     		筋肉上CD = new ColorD(ref 体配色.薄線, ref 体配色.毛0O);
-    		UpperArmCD = new ColorD(ref Col.Black, ref 体配色.毛0O);
+    		UpperArmCD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
     		筋肉下CD = new ColorD(ref 体配色.薄線, ref 体配色.毛0O);
-    		虎柄_虎1CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		虎柄_虎2CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		竜性_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		虎柄_虎1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		虎柄_虎2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		竜性_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
     	}
 
     	private void 配色T0(BodyColorSet 体配色)
     	{
     		筋肉上CD = new ColorD(ref 体配色.薄線, ref 体配色.毛0O);
-    		UpperArmCD = new ColorD(ref Col.Black, ref 体配色.毛0O);
+    		UpperArmCD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
     		筋肉下CD = new ColorD(ref 体配色.薄線, ref 体配色.毛0O);
-    		虎柄_虎1CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		虎柄_虎2CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		竜性_鱗4CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		竜性_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_鱗2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		竜性_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		虎柄_虎1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		虎柄_虎2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		竜性_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		竜性_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		竜性_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
     	}
 
     	private void 配色T1(BodyColorSet 体配色)
     	{
     		筋肉上CD = new ColorD(ref 体配色.薄線, ref 体配色.毛0O);
-    		UpperArmCD = new ColorD(ref Col.Black, ref 体配色.毛0O);
+    		UpperArmCD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
     		筋肉下CD = new ColorD(ref 体配色.薄線, ref 体配色.毛0O);
-    		虎柄_虎1CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		虎柄_虎2CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		竜性_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_鱗3CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		竜性_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_鱗1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		虎柄_虎1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		虎柄_虎2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		竜性_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		竜性_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
     	}
     }
 }

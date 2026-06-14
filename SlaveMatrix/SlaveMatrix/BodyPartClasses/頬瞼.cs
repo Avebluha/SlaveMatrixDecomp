@@ -3,67 +3,67 @@ using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
-    public class 頬瞼 : Ele
+    public class 頬瞼 : Element
     {
-    	public Par X0Y0_瞼左_瞼;
+    	public ShapePart X0Y0_瞼左_瞼;
 
-    	public Par X0Y0_瞼左_睫毛1;
+    	public ShapePart X0Y0_瞼左_睫毛1;
 
-    	public Par X0Y0_瞼左_睫毛2;
+    	public ShapePart X0Y0_瞼左_睫毛2;
 
-    	public Par X0Y0_瞼右_瞼;
+    	public ShapePart X0Y0_瞼右_瞼;
 
-    	public Par X0Y0_瞼右_睫毛1;
+    	public ShapePart X0Y0_瞼右_睫毛1;
 
-    	public Par X0Y0_瞼右_睫毛2;
+    	public ShapePart X0Y0_瞼右_睫毛2;
 
-    	public Par X0Y1_瞼左_瞼;
+    	public ShapePart X0Y1_瞼左_瞼;
 
-    	public Par X0Y1_瞼左_睫毛1;
+    	public ShapePart X0Y1_瞼左_睫毛1;
 
-    	public Par X0Y1_瞼左_睫毛2;
+    	public ShapePart X0Y1_瞼左_睫毛2;
 
-    	public Par X0Y1_瞼右_瞼;
+    	public ShapePart X0Y1_瞼右_瞼;
 
-    	public Par X0Y1_瞼右_睫毛1;
+    	public ShapePart X0Y1_瞼右_睫毛1;
 
-    	public Par X0Y1_瞼右_睫毛2;
+    	public ShapePart X0Y1_瞼右_睫毛2;
 
-    	public Par X0Y2_瞼左_瞼;
+    	public ShapePart X0Y2_瞼左_瞼;
 
-    	public Par X0Y2_瞼左_睫毛1;
+    	public ShapePart X0Y2_瞼左_睫毛1;
 
-    	public Par X0Y2_瞼左_睫毛2;
+    	public ShapePart X0Y2_瞼左_睫毛2;
 
-    	public Par X0Y2_瞼右_瞼;
+    	public ShapePart X0Y2_瞼右_瞼;
 
-    	public Par X0Y2_瞼右_睫毛1;
+    	public ShapePart X0Y2_瞼右_睫毛1;
 
-    	public Par X0Y2_瞼右_睫毛2;
+    	public ShapePart X0Y2_瞼右_睫毛2;
 
-    	public Par X0Y3_瞼左_瞼;
+    	public ShapePart X0Y3_瞼左_瞼;
 
-    	public Par X0Y3_瞼左_睫毛1;
+    	public ShapePart X0Y3_瞼左_睫毛1;
 
-    	public Par X0Y3_瞼左_睫毛2;
+    	public ShapePart X0Y3_瞼左_睫毛2;
 
-    	public Par X0Y3_瞼右_瞼;
+    	public ShapePart X0Y3_瞼右_瞼;
 
-    	public Par X0Y3_瞼右_睫毛1;
+    	public ShapePart X0Y3_瞼右_睫毛1;
 
-    	public Par X0Y3_瞼右_睫毛2;
+    	public ShapePart X0Y3_瞼右_睫毛2;
 
-    	public Par X0Y4_瞼左_瞼;
+    	public ShapePart X0Y4_瞼左_瞼;
 
-    	public Par X0Y4_瞼左_睫毛1;
+    	public ShapePart X0Y4_瞼左_睫毛1;
 
-    	public Par X0Y4_瞼左_睫毛2;
+    	public ShapePart X0Y4_瞼左_睫毛2;
 
-    	public Par X0Y4_瞼右_瞼;
+    	public ShapePart X0Y4_瞼右_瞼;
 
-    	public Par X0Y4_瞼右_睫毛1;
+    	public ShapePart X0Y4_瞼右_睫毛1;
 
-    	public Par X0Y4_瞼右_睫毛2;
+    	public ShapePart X0Y4_瞼右_睫毛2;
 
     	public ColorD 瞼左_瞼CD;
 
@@ -426,17 +426,17 @@ namespace SlaveMatrix
     	public 頬瞼(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 頬瞼D e)
     	{
     		ThisType = GetType();
-    		Body = new Difs(Sta.胴体["頬瞼左"]);
-    		Pars pars = Body[0][0];
-    		Pars pars2 = pars["瞼左"].ToPars();
+    		Body = new VariantGrid(GlobalState.胴体["頬瞼左"]);
+    		PartGroup partGroup = Body[0][0];
+    		PartGroup pars2 = partGroup["瞼左"].ToPars();
     		X0Y0_瞼左_瞼 = pars2["瞼"].ToPar();
     		X0Y0_瞼左_睫毛1 = pars2["睫毛1"].ToPar();
     		X0Y0_瞼左_睫毛2 = pars2["睫毛2"].ToPar();
-    		pars2 = pars["瞼右"].ToPars();
+    		pars2 = partGroup["瞼右"].ToPars();
     		X0Y0_瞼右_瞼 = pars2["瞼"].ToPar();
     		X0Y0_瞼右_睫毛1 = pars2["睫毛1"].ToPar();
     		X0Y0_瞼右_睫毛2 = pars2["睫毛2"].ToPar();
-    		Pars pars3 = Body[0][1];
+    		PartGroup pars3 = Body[0][1];
     		pars2 = pars3["瞼左"].ToPars();
     		X0Y1_瞼左_瞼 = pars2["瞼"].ToPar();
     		X0Y1_瞼左_睫毛1 = pars2["睫毛1"].ToPar();
@@ -445,7 +445,7 @@ namespace SlaveMatrix
     		X0Y1_瞼右_瞼 = pars2["瞼"].ToPar();
     		X0Y1_瞼右_睫毛1 = pars2["睫毛1"].ToPar();
     		X0Y1_瞼右_睫毛2 = pars2["睫毛2"].ToPar();
-    		Pars pars4 = Body[0][2];
+    		PartGroup pars4 = Body[0][2];
     		pars2 = pars4["瞼左"].ToPars();
     		X0Y2_瞼左_瞼 = pars2["瞼"].ToPar();
     		X0Y2_瞼左_睫毛1 = pars2["睫毛1"].ToPar();
@@ -454,7 +454,7 @@ namespace SlaveMatrix
     		X0Y2_瞼右_瞼 = pars2["瞼"].ToPar();
     		X0Y2_瞼右_睫毛1 = pars2["睫毛1"].ToPar();
     		X0Y2_瞼右_睫毛2 = pars2["睫毛2"].ToPar();
-    		Pars pars5 = Body[0][3];
+    		PartGroup pars5 = Body[0][3];
     		pars2 = pars5["瞼左"].ToPars();
     		X0Y3_瞼左_瞼 = pars2["瞼"].ToPar();
     		X0Y3_瞼左_睫毛1 = pars2["睫毛1"].ToPar();
@@ -463,7 +463,7 @@ namespace SlaveMatrix
     		X0Y3_瞼右_瞼 = pars2["瞼"].ToPar();
     		X0Y3_瞼右_睫毛1 = pars2["睫毛1"].ToPar();
     		X0Y3_瞼右_睫毛2 = pars2["睫毛2"].ToPar();
-    		Pars pars6 = Body[0][4];
+    		PartGroup pars6 = Body[0][4];
     		pars2 = pars6["瞼左"].ToPars();
     		X0Y4_瞼左_瞼 = pars2["瞼"].ToPar();
     		X0Y4_瞼左_睫毛1 = pars2["睫毛1"].ToPar();
@@ -550,7 +550,7 @@ namespace SlaveMatrix
     		Intensity = e.濃度;
     	}
 
-    	private void 睫毛長さ(Par p, double d)
+    	private void 睫毛長さ(ShapePart p, double d)
     	{
     		double num = 0.0;
     		double num2 = 2.0;

@@ -4,15 +4,15 @@ namespace SlaveMatrix
 {
     public class 涎_裂け : 涎
     {
-    	public Par X0Y0_涎;
+    	public ShapePart X0Y0_涎;
 
-    	public Par X0Y1_涎;
+    	public ShapePart X0Y1_涎;
 
-    	public Par X0Y2_涎;
+    	public ShapePart X0Y2_涎;
 
-    	public Par X0Y3_涎;
+    	public ShapePart X0Y3_涎;
 
-    	public Par X0Y4_涎;
+    	public ShapePart X0Y4_涎;
 
     	public ColorD 涎CD;
 
@@ -110,17 +110,17 @@ namespace SlaveMatrix
     	public 涎_裂け(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 涎_裂けD e)
     	{
     		ThisType = GetType();
-    		Body = new Difs(Sta.胴体["涎口裂け左"]);
-    		Pars pars = Body[0][0];
-    		X0Y0_涎 = pars["涎"].ToPar();
-    		pars = Body[0][1];
-    		X0Y1_涎 = pars["涎"].ToPar();
-    		pars = Body[0][2];
-    		X0Y2_涎 = pars["涎"].ToPar();
-    		pars = Body[0][3];
-    		X0Y3_涎 = pars["涎"].ToPar();
-    		pars = Body[0][4];
-    		X0Y4_涎 = pars["涎"].ToPar();
+    		Body = new VariantGrid(GlobalState.胴体["涎口裂け左"]);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_涎 = partGroup["涎"].ToPar();
+    		partGroup = Body[0][1];
+    		X0Y1_涎 = partGroup["涎"].ToPar();
+    		partGroup = Body[0][2];
+    		X0Y2_涎 = partGroup["涎"].ToPar();
+    		partGroup = Body[0][3];
+    		X0Y3_涎 = partGroup["涎"].ToPar();
+    		partGroup = Body[0][4];
+    		X0Y4_涎 = partGroup["涎"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;

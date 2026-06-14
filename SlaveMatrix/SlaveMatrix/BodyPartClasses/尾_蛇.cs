@@ -5,477 +5,477 @@ namespace SlaveMatrix
 {
     public class 尾_蛇 : 尾
     {
-    	public Par X0Y0_尾1_根;
+    	public ShapePart X0Y0_尾1_根;
 
-    	public Par X0Y0_尾1_鱗;
+    	public ShapePart X0Y0_尾1_鱗;
 
-    	public Par X0Y0_尾1_鱗左;
+    	public ShapePart X0Y0_尾1_鱗左;
 
-    	public Par X0Y0_尾1_鱗右;
+    	public ShapePart X0Y0_尾1_鱗右;
 
-    	public Par X0Y0_尾1_尾;
+    	public ShapePart X0Y0_尾1_尾;
 
-    	public Par X0Y0_尾2_鱗;
+    	public ShapePart X0Y0_尾2_鱗;
 
-    	public Par X0Y0_尾2_鱗左;
+    	public ShapePart X0Y0_尾2_鱗左;
 
-    	public Par X0Y0_尾2_鱗右;
+    	public ShapePart X0Y0_尾2_鱗右;
 
-    	public Par X0Y0_尾2_尾;
+    	public ShapePart X0Y0_尾2_尾;
 
-    	public Par X0Y0_尾3_鱗;
+    	public ShapePart X0Y0_尾3_鱗;
 
-    	public Par X0Y0_尾3_鱗左;
+    	public ShapePart X0Y0_尾3_鱗左;
 
-    	public Par X0Y0_尾3_鱗右;
+    	public ShapePart X0Y0_尾3_鱗右;
 
-    	public Par X0Y0_尾3_尾;
+    	public ShapePart X0Y0_尾3_尾;
 
-    	public Par X0Y0_尾4_鱗;
+    	public ShapePart X0Y0_尾4_鱗;
 
-    	public Par X0Y0_尾4_鱗左;
+    	public ShapePart X0Y0_尾4_鱗左;
 
-    	public Par X0Y0_尾4_鱗右;
+    	public ShapePart X0Y0_尾4_鱗右;
 
-    	public Par X0Y0_尾4_尾;
+    	public ShapePart X0Y0_尾4_尾;
 
-    	public Par X0Y0_尾5_鱗;
+    	public ShapePart X0Y0_尾5_鱗;
 
-    	public Par X0Y0_尾5_鱗左;
+    	public ShapePart X0Y0_尾5_鱗左;
 
-    	public Par X0Y0_尾5_鱗右;
+    	public ShapePart X0Y0_尾5_鱗右;
 
-    	public Par X0Y0_尾5_尾;
+    	public ShapePart X0Y0_尾5_尾;
 
-    	public Par X0Y0_尾6_鱗;
+    	public ShapePart X0Y0_尾6_鱗;
 
-    	public Par X0Y0_尾6_鱗左;
+    	public ShapePart X0Y0_尾6_鱗左;
 
-    	public Par X0Y0_尾6_鱗右;
+    	public ShapePart X0Y0_尾6_鱗右;
 
-    	public Par X0Y0_尾6_尾;
+    	public ShapePart X0Y0_尾6_尾;
 
-    	public Par X0Y0_尾7_鱗;
+    	public ShapePart X0Y0_尾7_鱗;
 
-    	public Par X0Y0_尾7_鱗左;
+    	public ShapePart X0Y0_尾7_鱗左;
 
-    	public Par X0Y0_尾7_鱗右;
+    	public ShapePart X0Y0_尾7_鱗右;
 
-    	public Par X0Y0_尾7_尾;
+    	public ShapePart X0Y0_尾7_尾;
 
-    	public Par X0Y0_尾8_鱗;
+    	public ShapePart X0Y0_尾8_鱗;
 
-    	public Par X0Y0_尾8_鱗左;
+    	public ShapePart X0Y0_尾8_鱗左;
 
-    	public Par X0Y0_尾8_鱗右;
+    	public ShapePart X0Y0_尾8_鱗右;
 
-    	public Par X0Y0_尾8_尾;
+    	public ShapePart X0Y0_尾8_尾;
 
-    	public Par X0Y0_尾9_鱗;
+    	public ShapePart X0Y0_尾9_鱗;
 
-    	public Par X0Y0_尾9_鱗左;
+    	public ShapePart X0Y0_尾9_鱗左;
 
-    	public Par X0Y0_尾9_鱗右;
+    	public ShapePart X0Y0_尾9_鱗右;
 
-    	public Par X0Y0_尾9_尾;
+    	public ShapePart X0Y0_尾9_尾;
 
-    	public Par X0Y0_尾10_鱗;
+    	public ShapePart X0Y0_尾10_鱗;
 
-    	public Par X0Y0_尾10_鱗左;
+    	public ShapePart X0Y0_尾10_鱗左;
 
-    	public Par X0Y0_尾10_鱗右;
+    	public ShapePart X0Y0_尾10_鱗右;
 
-    	public Par X0Y0_尾10_尾;
+    	public ShapePart X0Y0_尾10_尾;
 
-    	public Par X0Y0_尾11_鱗;
+    	public ShapePart X0Y0_尾11_鱗;
 
-    	public Par X0Y0_尾11_鱗左;
+    	public ShapePart X0Y0_尾11_鱗左;
 
-    	public Par X0Y0_尾11_鱗右;
+    	public ShapePart X0Y0_尾11_鱗右;
 
-    	public Par X0Y0_尾11_尾;
+    	public ShapePart X0Y0_尾11_尾;
 
-    	public Par X0Y0_尾12_鱗;
+    	public ShapePart X0Y0_尾12_鱗;
 
-    	public Par X0Y0_尾12_鱗左;
+    	public ShapePart X0Y0_尾12_鱗左;
 
-    	public Par X0Y0_尾12_鱗右;
+    	public ShapePart X0Y0_尾12_鱗右;
 
-    	public Par X0Y0_尾12_尾;
+    	public ShapePart X0Y0_尾12_尾;
 
-    	public Par X0Y0_尾13_鱗;
+    	public ShapePart X0Y0_尾13_鱗;
 
-    	public Par X0Y0_尾13_鱗左;
+    	public ShapePart X0Y0_尾13_鱗左;
 
-    	public Par X0Y0_尾13_鱗右;
+    	public ShapePart X0Y0_尾13_鱗右;
 
-    	public Par X0Y0_尾13_尾;
+    	public ShapePart X0Y0_尾13_尾;
 
-    	public Par X0Y0_尾14_鱗;
+    	public ShapePart X0Y0_尾14_鱗;
 
-    	public Par X0Y0_尾14_鱗左;
+    	public ShapePart X0Y0_尾14_鱗左;
 
-    	public Par X0Y0_尾14_鱗右;
+    	public ShapePart X0Y0_尾14_鱗右;
 
-    	public Par X0Y0_尾14_尾;
+    	public ShapePart X0Y0_尾14_尾;
 
-    	public Par X0Y0_尾15_鱗;
+    	public ShapePart X0Y0_尾15_鱗;
 
-    	public Par X0Y0_尾15_鱗左;
+    	public ShapePart X0Y0_尾15_鱗左;
 
-    	public Par X0Y0_尾15_鱗右;
+    	public ShapePart X0Y0_尾15_鱗右;
 
-    	public Par X0Y0_尾15_尾;
+    	public ShapePart X0Y0_尾15_尾;
 
-    	public Par X0Y0_尾16_鱗;
+    	public ShapePart X0Y0_尾16_鱗;
 
-    	public Par X0Y0_尾16_鱗左;
+    	public ShapePart X0Y0_尾16_鱗左;
 
-    	public Par X0Y0_尾16_鱗右;
+    	public ShapePart X0Y0_尾16_鱗右;
 
-    	public Par X0Y0_尾16_尾;
+    	public ShapePart X0Y0_尾16_尾;
 
-    	public Par X0Y0_尾17_鱗;
+    	public ShapePart X0Y0_尾17_鱗;
 
-    	public Par X0Y0_尾17_鱗左;
+    	public ShapePart X0Y0_尾17_鱗左;
 
-    	public Par X0Y0_尾17_鱗右;
+    	public ShapePart X0Y0_尾17_鱗右;
 
-    	public Par X0Y0_尾17_尾;
+    	public ShapePart X0Y0_尾17_尾;
 
-    	public Par X0Y0_尾18_鱗;
+    	public ShapePart X0Y0_尾18_鱗;
 
-    	public Par X0Y0_尾18_鱗左;
+    	public ShapePart X0Y0_尾18_鱗左;
 
-    	public Par X0Y0_尾18_鱗右;
+    	public ShapePart X0Y0_尾18_鱗右;
 
-    	public Par X0Y0_尾18_尾;
+    	public ShapePart X0Y0_尾18_尾;
 
-    	public Par X0Y0_尾19_鱗;
+    	public ShapePart X0Y0_尾19_鱗;
 
-    	public Par X0Y0_尾19_鱗左;
+    	public ShapePart X0Y0_尾19_鱗左;
 
-    	public Par X0Y0_尾19_鱗右;
+    	public ShapePart X0Y0_尾19_鱗右;
 
-    	public Par X0Y0_尾19_尾;
+    	public ShapePart X0Y0_尾19_尾;
 
-    	public Par X0Y0_尾20_鱗;
+    	public ShapePart X0Y0_尾20_鱗;
 
-    	public Par X0Y0_尾20_鱗左;
+    	public ShapePart X0Y0_尾20_鱗左;
 
-    	public Par X0Y0_尾20_鱗右;
+    	public ShapePart X0Y0_尾20_鱗右;
 
-    	public Par X0Y0_尾20_尾;
+    	public ShapePart X0Y0_尾20_尾;
 
-    	public Par X0Y0_尾21_鱗;
+    	public ShapePart X0Y0_尾21_鱗;
 
-    	public Par X0Y0_尾21_鱗左;
+    	public ShapePart X0Y0_尾21_鱗左;
 
-    	public Par X0Y0_尾21_鱗右;
+    	public ShapePart X0Y0_尾21_鱗右;
 
-    	public Par X0Y0_尾21_尾;
+    	public ShapePart X0Y0_尾21_尾;
 
-    	public Par X0Y0_尾22_鱗;
+    	public ShapePart X0Y0_尾22_鱗;
 
-    	public Par X0Y0_尾22_鱗左;
+    	public ShapePart X0Y0_尾22_鱗左;
 
-    	public Par X0Y0_尾22_鱗右;
+    	public ShapePart X0Y0_尾22_鱗右;
 
-    	public Par X0Y0_尾22_尾;
+    	public ShapePart X0Y0_尾22_尾;
 
-    	public Par X0Y0_尾23_鱗;
+    	public ShapePart X0Y0_尾23_鱗;
 
-    	public Par X0Y0_尾23_鱗左;
+    	public ShapePart X0Y0_尾23_鱗左;
 
-    	public Par X0Y0_尾23_鱗右;
+    	public ShapePart X0Y0_尾23_鱗右;
 
-    	public Par X0Y0_尾23_尾;
+    	public ShapePart X0Y0_尾23_尾;
 
-    	public Par X0Y0_尾24_鱗;
+    	public ShapePart X0Y0_尾24_鱗;
 
-    	public Par X0Y0_尾24_鱗左;
+    	public ShapePart X0Y0_尾24_鱗左;
 
-    	public Par X0Y0_尾24_鱗右;
+    	public ShapePart X0Y0_尾24_鱗右;
 
-    	public Par X0Y0_尾24_尾;
+    	public ShapePart X0Y0_尾24_尾;
 
-    	public Par X0Y0_尾25_鱗;
+    	public ShapePart X0Y0_尾25_鱗;
 
-    	public Par X0Y0_尾25_鱗左;
+    	public ShapePart X0Y0_尾25_鱗左;
 
-    	public Par X0Y0_尾25_鱗右;
+    	public ShapePart X0Y0_尾25_鱗右;
 
-    	public Par X0Y0_尾25_尾;
+    	public ShapePart X0Y0_尾25_尾;
 
-    	public Par X0Y0_尾26_鱗;
+    	public ShapePart X0Y0_尾26_鱗;
 
-    	public Par X0Y0_尾26_鱗左;
+    	public ShapePart X0Y0_尾26_鱗左;
 
-    	public Par X0Y0_尾26_鱗右;
+    	public ShapePart X0Y0_尾26_鱗右;
 
-    	public Par X0Y0_尾26_尾;
+    	public ShapePart X0Y0_尾26_尾;
 
-    	public Par X0Y0_輪1_革;
+    	public ShapePart X0Y0_輪1_革;
 
-    	public Par X0Y0_輪1_金具1;
+    	public ShapePart X0Y0_輪1_金具1;
 
-    	public Par X0Y0_輪1_金具2;
+    	public ShapePart X0Y0_輪1_金具2;
 
-    	public Par X0Y0_輪1_金具3;
+    	public ShapePart X0Y0_輪1_金具3;
 
-    	public Par X0Y0_輪1_金具左;
+    	public ShapePart X0Y0_輪1_金具左;
 
-    	public Par X0Y0_輪1_金具右;
+    	public ShapePart X0Y0_輪1_金具右;
 
-    	public Par X0Y0_尾27_鱗;
+    	public ShapePart X0Y0_尾27_鱗;
 
-    	public Par X0Y0_尾27_鱗左;
+    	public ShapePart X0Y0_尾27_鱗左;
 
-    	public Par X0Y0_尾27_鱗右;
+    	public ShapePart X0Y0_尾27_鱗右;
 
-    	public Par X0Y0_尾27_尾;
+    	public ShapePart X0Y0_尾27_尾;
 
-    	public Par X0Y0_尾28_鱗;
+    	public ShapePart X0Y0_尾28_鱗;
 
-    	public Par X0Y0_尾28_鱗左;
+    	public ShapePart X0Y0_尾28_鱗左;
 
-    	public Par X0Y0_尾28_鱗右;
+    	public ShapePart X0Y0_尾28_鱗右;
 
-    	public Par X0Y0_尾28_尾;
+    	public ShapePart X0Y0_尾28_尾;
 
-    	public Par X0Y0_尾29_鱗;
+    	public ShapePart X0Y0_尾29_鱗;
 
-    	public Par X0Y0_尾29_鱗左;
+    	public ShapePart X0Y0_尾29_鱗左;
 
-    	public Par X0Y0_尾29_鱗右;
+    	public ShapePart X0Y0_尾29_鱗右;
 
-    	public Par X0Y0_尾29_尾;
+    	public ShapePart X0Y0_尾29_尾;
 
-    	public Par X0Y0_尾30_鱗;
+    	public ShapePart X0Y0_尾30_鱗;
 
-    	public Par X0Y0_尾30_鱗左;
+    	public ShapePart X0Y0_尾30_鱗左;
 
-    	public Par X0Y0_尾30_鱗右;
+    	public ShapePart X0Y0_尾30_鱗右;
 
-    	public Par X0Y0_尾30_尾;
+    	public ShapePart X0Y0_尾30_尾;
 
-    	public Par X0Y0_尾31_鱗;
+    	public ShapePart X0Y0_尾31_鱗;
 
-    	public Par X0Y0_尾31_鱗左;
+    	public ShapePart X0Y0_尾31_鱗左;
 
-    	public Par X0Y0_尾31_鱗右;
+    	public ShapePart X0Y0_尾31_鱗右;
 
-    	public Par X0Y0_尾31_尾;
+    	public ShapePart X0Y0_尾31_尾;
 
-    	public Par X0Y0_尾32_鱗;
+    	public ShapePart X0Y0_尾32_鱗;
 
-    	public Par X0Y0_尾32_鱗左;
+    	public ShapePart X0Y0_尾32_鱗左;
 
-    	public Par X0Y0_尾32_鱗右;
+    	public ShapePart X0Y0_尾32_鱗右;
 
-    	public Par X0Y0_尾32_尾;
+    	public ShapePart X0Y0_尾32_尾;
 
-    	public Par X0Y0_尾33_鱗;
+    	public ShapePart X0Y0_尾33_鱗;
 
-    	public Par X0Y0_尾33_鱗左;
+    	public ShapePart X0Y0_尾33_鱗左;
 
-    	public Par X0Y0_尾33_鱗右;
+    	public ShapePart X0Y0_尾33_鱗右;
 
-    	public Par X0Y0_尾33_尾;
+    	public ShapePart X0Y0_尾33_尾;
 
-    	public Par X0Y0_尾34_鱗;
+    	public ShapePart X0Y0_尾34_鱗;
 
-    	public Par X0Y0_尾34_鱗左;
+    	public ShapePart X0Y0_尾34_鱗左;
 
-    	public Par X0Y0_尾34_鱗右;
+    	public ShapePart X0Y0_尾34_鱗右;
 
-    	public Par X0Y0_尾34_尾;
+    	public ShapePart X0Y0_尾34_尾;
 
-    	public Par X0Y0_尾35_鱗;
+    	public ShapePart X0Y0_尾35_鱗;
 
-    	public Par X0Y0_尾35_鱗左;
+    	public ShapePart X0Y0_尾35_鱗左;
 
-    	public Par X0Y0_尾35_鱗右;
+    	public ShapePart X0Y0_尾35_鱗右;
 
-    	public Par X0Y0_尾35_尾;
+    	public ShapePart X0Y0_尾35_尾;
 
-    	public Par X0Y0_尾36_鱗;
+    	public ShapePart X0Y0_尾36_鱗;
 
-    	public Par X0Y0_尾36_鱗左;
+    	public ShapePart X0Y0_尾36_鱗左;
 
-    	public Par X0Y0_尾36_鱗右;
+    	public ShapePart X0Y0_尾36_鱗右;
 
-    	public Par X0Y0_尾36_尾;
+    	public ShapePart X0Y0_尾36_尾;
 
-    	public Par X0Y0_尾37_鱗;
+    	public ShapePart X0Y0_尾37_鱗;
 
-    	public Par X0Y0_尾37_鱗左;
+    	public ShapePart X0Y0_尾37_鱗左;
 
-    	public Par X0Y0_尾37_鱗右;
+    	public ShapePart X0Y0_尾37_鱗右;
 
-    	public Par X0Y0_尾37_尾;
+    	public ShapePart X0Y0_尾37_尾;
 
-    	public Par X0Y0_尾38_鱗;
+    	public ShapePart X0Y0_尾38_鱗;
 
-    	public Par X0Y0_尾38_鱗左;
+    	public ShapePart X0Y0_尾38_鱗左;
 
-    	public Par X0Y0_尾38_鱗右;
+    	public ShapePart X0Y0_尾38_鱗右;
 
-    	public Par X0Y0_尾38_尾;
+    	public ShapePart X0Y0_尾38_尾;
 
-    	public Par X0Y0_尾39_鱗;
+    	public ShapePart X0Y0_尾39_鱗;
 
-    	public Par X0Y0_尾39_鱗左;
+    	public ShapePart X0Y0_尾39_鱗左;
 
-    	public Par X0Y0_尾39_鱗右;
+    	public ShapePart X0Y0_尾39_鱗右;
 
-    	public Par X0Y0_尾39_尾;
+    	public ShapePart X0Y0_尾39_尾;
 
-    	public Par X0Y0_尾40_鱗;
+    	public ShapePart X0Y0_尾40_鱗;
 
-    	public Par X0Y0_尾40_鱗左;
+    	public ShapePart X0Y0_尾40_鱗左;
 
-    	public Par X0Y0_尾40_鱗右;
+    	public ShapePart X0Y0_尾40_鱗右;
 
-    	public Par X0Y0_尾40_尾;
+    	public ShapePart X0Y0_尾40_尾;
 
-    	public Par X0Y0_尾41_鱗;
+    	public ShapePart X0Y0_尾41_鱗;
 
-    	public Par X0Y0_尾41_鱗左;
+    	public ShapePart X0Y0_尾41_鱗左;
 
-    	public Par X0Y0_尾41_鱗右;
+    	public ShapePart X0Y0_尾41_鱗右;
 
-    	public Par X0Y0_尾41_尾;
+    	public ShapePart X0Y0_尾41_尾;
 
-    	public Par X0Y0_尾42_鱗;
+    	public ShapePart X0Y0_尾42_鱗;
 
-    	public Par X0Y0_尾42_鱗左;
+    	public ShapePart X0Y0_尾42_鱗左;
 
-    	public Par X0Y0_尾42_鱗右;
+    	public ShapePart X0Y0_尾42_鱗右;
 
-    	public Par X0Y0_尾42_尾;
+    	public ShapePart X0Y0_尾42_尾;
 
-    	public Par X0Y0_尾43_鱗;
+    	public ShapePart X0Y0_尾43_鱗;
 
-    	public Par X0Y0_尾43_鱗左;
+    	public ShapePart X0Y0_尾43_鱗左;
 
-    	public Par X0Y0_尾43_鱗右;
+    	public ShapePart X0Y0_尾43_鱗右;
 
-    	public Par X0Y0_尾43_尾;
+    	public ShapePart X0Y0_尾43_尾;
 
-    	public Par X0Y0_尾44_鱗;
+    	public ShapePart X0Y0_尾44_鱗;
 
-    	public Par X0Y0_尾44_鱗左;
+    	public ShapePart X0Y0_尾44_鱗左;
 
-    	public Par X0Y0_尾44_鱗右;
+    	public ShapePart X0Y0_尾44_鱗右;
 
-    	public Par X0Y0_尾44_尾;
+    	public ShapePart X0Y0_尾44_尾;
 
-    	public Par X0Y0_頭_上顎_顎基;
+    	public ShapePart X0Y0_頭_上顎_顎基;
 
-    	public Par X0Y0_頭_上顎_鱗4;
+    	public ShapePart X0Y0_頭_上顎_鱗4;
 
-    	public Par X0Y0_頭_上顎_鱗左1;
+    	public ShapePart X0Y0_頭_上顎_鱗左1;
 
-    	public Par X0Y0_頭_上顎_鱗右1;
+    	public ShapePart X0Y0_頭_上顎_鱗右1;
 
-    	public Par X0Y0_頭_上顎_鱗左2;
+    	public ShapePart X0Y0_頭_上顎_鱗左2;
 
-    	public Par X0Y0_頭_上顎_鱗右2;
+    	public ShapePart X0Y0_頭_上顎_鱗右2;
 
-    	public Par X0Y0_頭_上顎_鱗左3;
+    	public ShapePart X0Y0_頭_上顎_鱗左3;
 
-    	public Par X0Y0_頭_上顎_鱗右3;
+    	public ShapePart X0Y0_頭_上顎_鱗右3;
 
-    	public Par X0Y0_頭_上顎_鱗左4;
+    	public ShapePart X0Y0_頭_上顎_鱗左4;
 
-    	public Par X0Y0_頭_上顎_鱗右4;
+    	public ShapePart X0Y0_頭_上顎_鱗右4;
 
-    	public Par X0Y0_頭_上顎_鱗左5;
+    	public ShapePart X0Y0_頭_上顎_鱗左5;
 
-    	public Par X0Y0_頭_上顎_鱗右5;
+    	public ShapePart X0Y0_頭_上顎_鱗右5;
 
-    	public Par X0Y0_頭_上顎_鱗左8;
+    	public ShapePart X0Y0_頭_上顎_鱗左8;
 
-    	public Par X0Y0_頭_上顎_鱗右8;
+    	public ShapePart X0Y0_頭_上顎_鱗右8;
 
-    	public Par X0Y0_頭_上顎_鱗左9;
+    	public ShapePart X0Y0_頭_上顎_鱗左9;
 
-    	public Par X0Y0_頭_上顎_鱗右9;
+    	public ShapePart X0Y0_頭_上顎_鱗右9;
 
-    	public Par X0Y0_頭_上顎_鱗左10;
+    	public ShapePart X0Y0_頭_上顎_鱗左10;
 
-    	public Par X0Y0_頭_上顎_鱗右10;
+    	public ShapePart X0Y0_頭_上顎_鱗右10;
 
-    	public Par X0Y0_頭_上顎_鱗左11;
+    	public ShapePart X0Y0_頭_上顎_鱗左11;
 
-    	public Par X0Y0_頭_上顎_鱗右11;
+    	public ShapePart X0Y0_頭_上顎_鱗右11;
 
-    	public Par X0Y0_頭_下顎_顎基;
+    	public ShapePart X0Y0_頭_下顎_顎基;
 
-    	public Par X0Y0_頭_下顎_鱗1;
+    	public ShapePart X0Y0_頭_下顎_鱗1;
 
-    	public Par X0Y0_頭_下顎_鱗2;
+    	public ShapePart X0Y0_頭_下顎_鱗2;
 
-    	public Par X0Y0_頭_下顎_鱗3;
+    	public ShapePart X0Y0_頭_下顎_鱗3;
 
-    	public Par X0Y0_頭_下顎_鱗4;
+    	public ShapePart X0Y0_頭_下顎_鱗4;
 
-    	public Par X0Y0_頭_下顎_鱗左1;
+    	public ShapePart X0Y0_頭_下顎_鱗左1;
 
-    	public Par X0Y0_頭_下顎_鱗右1;
+    	public ShapePart X0Y0_頭_下顎_鱗右1;
 
-    	public Par X0Y0_頭_下顎_鱗左2;
+    	public ShapePart X0Y0_頭_下顎_鱗左2;
 
-    	public Par X0Y0_頭_下顎_鱗右2;
+    	public ShapePart X0Y0_頭_下顎_鱗右2;
 
-    	public Par X0Y0_頭_下顎_鱗左3;
+    	public ShapePart X0Y0_頭_下顎_鱗左3;
 
-    	public Par X0Y0_頭_下顎_鱗右3;
+    	public ShapePart X0Y0_頭_下顎_鱗右3;
 
-    	public Par X0Y0_頭_下顎_鱗左4;
+    	public ShapePart X0Y0_頭_下顎_鱗左4;
 
-    	public Par X0Y0_頭_下顎_鱗右4;
+    	public ShapePart X0Y0_頭_下顎_鱗右4;
 
-    	public Par X0Y0_頭_下顎_鱗左5;
+    	public ShapePart X0Y0_頭_下顎_鱗左5;
 
-    	public Par X0Y0_頭_下顎_鱗右5;
+    	public ShapePart X0Y0_頭_下顎_鱗右5;
 
-    	public Par X0Y0_頭_下顎_鱗左6;
+    	public ShapePart X0Y0_頭_下顎_鱗左6;
 
-    	public Par X0Y0_頭_下顎_鱗右6;
+    	public ShapePart X0Y0_頭_下顎_鱗右6;
 
-    	public Par X0Y0_頭_下顎_鱗左7;
+    	public ShapePart X0Y0_頭_下顎_鱗左7;
 
-    	public Par X0Y0_頭_下顎_鱗右7;
+    	public ShapePart X0Y0_頭_下顎_鱗右7;
 
-    	public Par X0Y0_頭_下顎_鱗左8;
+    	public ShapePart X0Y0_頭_下顎_鱗左8;
 
-    	public Par X0Y0_頭_下顎_鱗右8;
+    	public ShapePart X0Y0_頭_下顎_鱗右8;
 
-    	public Par X0Y0_頭_下顎_鱗左9;
+    	public ShapePart X0Y0_頭_下顎_鱗左9;
 
-    	public Par X0Y0_頭_下顎_鱗右9;
+    	public ShapePart X0Y0_頭_下顎_鱗右9;
 
-    	public Par X0Y0_頭_下顎_鱗左10;
+    	public ShapePart X0Y0_頭_下顎_鱗左10;
 
-    	public Par X0Y0_頭_下顎_鱗右10;
+    	public ShapePart X0Y0_頭_下顎_鱗右10;
 
-    	public Par X0Y0_頭_下顎_鱗左11;
+    	public ShapePart X0Y0_頭_下顎_鱗左11;
 
-    	public Par X0Y0_頭_下顎_鱗右11;
+    	public ShapePart X0Y0_頭_下顎_鱗右11;
 
-    	public Par X0Y0_輪2_革;
+    	public ShapePart X0Y0_輪2_革;
 
-    	public Par X0Y0_輪2_金具1;
+    	public ShapePart X0Y0_輪2_金具1;
 
-    	public Par X0Y0_輪2_金具2;
+    	public ShapePart X0Y0_輪2_金具2;
 
-    	public Par X0Y0_輪2_金具3;
+    	public ShapePart X0Y0_輪2_金具3;
 
-    	public Par X0Y0_輪2_金具左;
+    	public ShapePart X0Y0_輪2_金具左;
 
-    	public Par X0Y0_輪2_金具右;
+    	public ShapePart X0Y0_輪2_金具右;
 
     	public ColorD 尾1_根CD;
 
@@ -5093,243 +5093,243 @@ namespace SlaveMatrix
     	public 尾_蛇(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 尾_蛇D e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif();
-    		dif.Tag = "蛇尾";
-    		dif.Add(new Pars(Sta.尻尾["尾"][0][13]));
-    		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		Pars pars2 = pars["尾1"].ToPars();
+    		MorphVariant morphVariant = new MorphVariant();
+    		morphVariant.Tag = "蛇尾";
+    		morphVariant.Add(new PartGroup(GlobalState.尻尾["尾"][0][13]));
+    		Body = new VariantGrid();
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
+    		PartGroup partGroup = Body[0][0];
+    		PartGroup pars2 = partGroup["尾1"].ToPars();
     		X0Y0_尾1_根 = pars2["根"].ToPar();
     		X0Y0_尾1_鱗 = pars2["鱗"].ToPar();
     		X0Y0_尾1_鱗左 = pars2["鱗左"].ToPar();
     		X0Y0_尾1_鱗右 = pars2["鱗右"].ToPar();
     		X0Y0_尾1_尾 = pars2["尾"].ToPar();
-    		pars2 = pars["尾2"].ToPars();
+    		pars2 = partGroup["尾2"].ToPars();
     		X0Y0_尾2_鱗 = pars2["鱗"].ToPar();
     		X0Y0_尾2_鱗左 = pars2["鱗左"].ToPar();
     		X0Y0_尾2_鱗右 = pars2["鱗右"].ToPar();
     		X0Y0_尾2_尾 = pars2["尾"].ToPar();
-    		pars2 = pars["尾3"].ToPars();
+    		pars2 = partGroup["尾3"].ToPars();
     		X0Y0_尾3_鱗 = pars2["鱗"].ToPar();
     		X0Y0_尾3_鱗左 = pars2["鱗左"].ToPar();
     		X0Y0_尾3_鱗右 = pars2["鱗右"].ToPar();
     		X0Y0_尾3_尾 = pars2["尾"].ToPar();
-    		pars2 = pars["尾4"].ToPars();
+    		pars2 = partGroup["尾4"].ToPars();
     		X0Y0_尾4_鱗 = pars2["鱗"].ToPar();
     		X0Y0_尾4_鱗左 = pars2["鱗左"].ToPar();
     		X0Y0_尾4_鱗右 = pars2["鱗右"].ToPar();
     		X0Y0_尾4_尾 = pars2["尾"].ToPar();
-    		pars2 = pars["尾5"].ToPars();
+    		pars2 = partGroup["尾5"].ToPars();
     		X0Y0_尾5_鱗 = pars2["鱗"].ToPar();
     		X0Y0_尾5_鱗左 = pars2["鱗左"].ToPar();
     		X0Y0_尾5_鱗右 = pars2["鱗右"].ToPar();
     		X0Y0_尾5_尾 = pars2["尾"].ToPar();
-    		pars2 = pars["尾6"].ToPars();
+    		pars2 = partGroup["尾6"].ToPars();
     		X0Y0_尾6_鱗 = pars2["鱗"].ToPar();
     		X0Y0_尾6_鱗左 = pars2["鱗左"].ToPar();
     		X0Y0_尾6_鱗右 = pars2["鱗右"].ToPar();
     		X0Y0_尾6_尾 = pars2["尾"].ToPar();
-    		pars2 = pars["尾7"].ToPars();
+    		pars2 = partGroup["尾7"].ToPars();
     		X0Y0_尾7_鱗 = pars2["鱗"].ToPar();
     		X0Y0_尾7_鱗左 = pars2["鱗左"].ToPar();
     		X0Y0_尾7_鱗右 = pars2["鱗右"].ToPar();
     		X0Y0_尾7_尾 = pars2["尾"].ToPar();
-    		pars2 = pars["尾8"].ToPars();
+    		pars2 = partGroup["尾8"].ToPars();
     		X0Y0_尾8_鱗 = pars2["鱗"].ToPar();
     		X0Y0_尾8_鱗左 = pars2["鱗左"].ToPar();
     		X0Y0_尾8_鱗右 = pars2["鱗右"].ToPar();
     		X0Y0_尾8_尾 = pars2["尾"].ToPar();
-    		pars2 = pars["尾9"].ToPars();
+    		pars2 = partGroup["尾9"].ToPars();
     		X0Y0_尾9_鱗 = pars2["鱗"].ToPar();
     		X0Y0_尾9_鱗左 = pars2["鱗左"].ToPar();
     		X0Y0_尾9_鱗右 = pars2["鱗右"].ToPar();
     		X0Y0_尾9_尾 = pars2["尾"].ToPar();
-    		pars2 = pars["尾10"].ToPars();
+    		pars2 = partGroup["尾10"].ToPars();
     		X0Y0_尾10_鱗 = pars2["鱗"].ToPar();
     		X0Y0_尾10_鱗左 = pars2["鱗左"].ToPar();
     		X0Y0_尾10_鱗右 = pars2["鱗右"].ToPar();
     		X0Y0_尾10_尾 = pars2["尾"].ToPar();
-    		pars2 = pars["尾11"].ToPars();
+    		pars2 = partGroup["尾11"].ToPars();
     		X0Y0_尾11_鱗 = pars2["鱗"].ToPar();
     		X0Y0_尾11_鱗左 = pars2["鱗左"].ToPar();
     		X0Y0_尾11_鱗右 = pars2["鱗右"].ToPar();
     		X0Y0_尾11_尾 = pars2["尾"].ToPar();
-    		pars2 = pars["尾12"].ToPars();
+    		pars2 = partGroup["尾12"].ToPars();
     		X0Y0_尾12_鱗 = pars2["鱗"].ToPar();
     		X0Y0_尾12_鱗左 = pars2["鱗左"].ToPar();
     		X0Y0_尾12_鱗右 = pars2["鱗右"].ToPar();
     		X0Y0_尾12_尾 = pars2["尾"].ToPar();
-    		pars2 = pars["尾13"].ToPars();
+    		pars2 = partGroup["尾13"].ToPars();
     		X0Y0_尾13_鱗 = pars2["鱗"].ToPar();
     		X0Y0_尾13_鱗左 = pars2["鱗左"].ToPar();
     		X0Y0_尾13_鱗右 = pars2["鱗右"].ToPar();
     		X0Y0_尾13_尾 = pars2["尾"].ToPar();
-    		pars2 = pars["尾14"].ToPars();
+    		pars2 = partGroup["尾14"].ToPars();
     		X0Y0_尾14_鱗 = pars2["鱗"].ToPar();
     		X0Y0_尾14_鱗左 = pars2["鱗左"].ToPar();
     		X0Y0_尾14_鱗右 = pars2["鱗右"].ToPar();
     		X0Y0_尾14_尾 = pars2["尾"].ToPar();
-    		pars2 = pars["尾15"].ToPars();
+    		pars2 = partGroup["尾15"].ToPars();
     		X0Y0_尾15_鱗 = pars2["鱗"].ToPar();
     		X0Y0_尾15_鱗左 = pars2["鱗左"].ToPar();
     		X0Y0_尾15_鱗右 = pars2["鱗右"].ToPar();
     		X0Y0_尾15_尾 = pars2["尾"].ToPar();
-    		pars2 = pars["尾16"].ToPars();
+    		pars2 = partGroup["尾16"].ToPars();
     		X0Y0_尾16_鱗 = pars2["鱗"].ToPar();
     		X0Y0_尾16_鱗左 = pars2["鱗左"].ToPar();
     		X0Y0_尾16_鱗右 = pars2["鱗右"].ToPar();
     		X0Y0_尾16_尾 = pars2["尾"].ToPar();
-    		pars2 = pars["尾17"].ToPars();
+    		pars2 = partGroup["尾17"].ToPars();
     		X0Y0_尾17_鱗 = pars2["鱗"].ToPar();
     		X0Y0_尾17_鱗左 = pars2["鱗左"].ToPar();
     		X0Y0_尾17_鱗右 = pars2["鱗右"].ToPar();
     		X0Y0_尾17_尾 = pars2["尾"].ToPar();
-    		pars2 = pars["尾18"].ToPars();
+    		pars2 = partGroup["尾18"].ToPars();
     		X0Y0_尾18_鱗 = pars2["鱗"].ToPar();
     		X0Y0_尾18_鱗左 = pars2["鱗左"].ToPar();
     		X0Y0_尾18_鱗右 = pars2["鱗右"].ToPar();
     		X0Y0_尾18_尾 = pars2["尾"].ToPar();
-    		pars2 = pars["尾19"].ToPars();
+    		pars2 = partGroup["尾19"].ToPars();
     		X0Y0_尾19_鱗 = pars2["鱗"].ToPar();
     		X0Y0_尾19_鱗左 = pars2["鱗左"].ToPar();
     		X0Y0_尾19_鱗右 = pars2["鱗右"].ToPar();
     		X0Y0_尾19_尾 = pars2["尾"].ToPar();
-    		pars2 = pars["尾20"].ToPars();
+    		pars2 = partGroup["尾20"].ToPars();
     		X0Y0_尾20_鱗 = pars2["鱗"].ToPar();
     		X0Y0_尾20_鱗左 = pars2["鱗左"].ToPar();
     		X0Y0_尾20_鱗右 = pars2["鱗右"].ToPar();
     		X0Y0_尾20_尾 = pars2["尾"].ToPar();
-    		pars2 = pars["尾21"].ToPars();
+    		pars2 = partGroup["尾21"].ToPars();
     		X0Y0_尾21_鱗 = pars2["鱗"].ToPar();
     		X0Y0_尾21_鱗左 = pars2["鱗左"].ToPar();
     		X0Y0_尾21_鱗右 = pars2["鱗右"].ToPar();
     		X0Y0_尾21_尾 = pars2["尾"].ToPar();
-    		pars2 = pars["尾22"].ToPars();
+    		pars2 = partGroup["尾22"].ToPars();
     		X0Y0_尾22_鱗 = pars2["鱗"].ToPar();
     		X0Y0_尾22_鱗左 = pars2["鱗左"].ToPar();
     		X0Y0_尾22_鱗右 = pars2["鱗右"].ToPar();
     		X0Y0_尾22_尾 = pars2["尾"].ToPar();
-    		pars2 = pars["尾23"].ToPars();
+    		pars2 = partGroup["尾23"].ToPars();
     		X0Y0_尾23_鱗 = pars2["鱗"].ToPar();
     		X0Y0_尾23_鱗左 = pars2["鱗左"].ToPar();
     		X0Y0_尾23_鱗右 = pars2["鱗右"].ToPar();
     		X0Y0_尾23_尾 = pars2["尾"].ToPar();
-    		pars2 = pars["尾24"].ToPars();
+    		pars2 = partGroup["尾24"].ToPars();
     		X0Y0_尾24_鱗 = pars2["鱗"].ToPar();
     		X0Y0_尾24_鱗左 = pars2["鱗左"].ToPar();
     		X0Y0_尾24_鱗右 = pars2["鱗右"].ToPar();
     		X0Y0_尾24_尾 = pars2["尾"].ToPar();
-    		pars2 = pars["尾25"].ToPars();
+    		pars2 = partGroup["尾25"].ToPars();
     		X0Y0_尾25_鱗 = pars2["鱗"].ToPar();
     		X0Y0_尾25_鱗左 = pars2["鱗左"].ToPar();
     		X0Y0_尾25_鱗右 = pars2["鱗右"].ToPar();
     		X0Y0_尾25_尾 = pars2["尾"].ToPar();
-    		pars2 = pars["尾26"].ToPars();
+    		pars2 = partGroup["尾26"].ToPars();
     		X0Y0_尾26_鱗 = pars2["鱗"].ToPar();
     		X0Y0_尾26_鱗左 = pars2["鱗左"].ToPar();
     		X0Y0_尾26_鱗右 = pars2["鱗右"].ToPar();
     		X0Y0_尾26_尾 = pars2["尾"].ToPar();
-    		pars2 = pars["輪1"].ToPars();
+    		pars2 = partGroup["輪1"].ToPars();
     		X0Y0_輪1_革 = pars2["革"].ToPar();
     		X0Y0_輪1_金具1 = pars2["金具1"].ToPar();
     		X0Y0_輪1_金具2 = pars2["金具2"].ToPar();
     		X0Y0_輪1_金具3 = pars2["金具3"].ToPar();
     		X0Y0_輪1_金具左 = pars2["金具左"].ToPar();
     		X0Y0_輪1_金具右 = pars2["金具右"].ToPar();
-    		pars2 = pars["尾27"].ToPars();
+    		pars2 = partGroup["尾27"].ToPars();
     		X0Y0_尾27_鱗 = pars2["鱗"].ToPar();
     		X0Y0_尾27_鱗左 = pars2["鱗左"].ToPar();
     		X0Y0_尾27_鱗右 = pars2["鱗右"].ToPar();
     		X0Y0_尾27_尾 = pars2["尾"].ToPar();
-    		pars2 = pars["尾28"].ToPars();
+    		pars2 = partGroup["尾28"].ToPars();
     		X0Y0_尾28_鱗 = pars2["鱗"].ToPar();
     		X0Y0_尾28_鱗左 = pars2["鱗左"].ToPar();
     		X0Y0_尾28_鱗右 = pars2["鱗右"].ToPar();
     		X0Y0_尾28_尾 = pars2["尾"].ToPar();
-    		pars2 = pars["尾29"].ToPars();
+    		pars2 = partGroup["尾29"].ToPars();
     		X0Y0_尾29_鱗 = pars2["鱗"].ToPar();
     		X0Y0_尾29_鱗左 = pars2["鱗左"].ToPar();
     		X0Y0_尾29_鱗右 = pars2["鱗右"].ToPar();
     		X0Y0_尾29_尾 = pars2["尾"].ToPar();
-    		pars2 = pars["尾30"].ToPars();
+    		pars2 = partGroup["尾30"].ToPars();
     		X0Y0_尾30_鱗 = pars2["鱗"].ToPar();
     		X0Y0_尾30_鱗左 = pars2["鱗左"].ToPar();
     		X0Y0_尾30_鱗右 = pars2["鱗右"].ToPar();
     		X0Y0_尾30_尾 = pars2["尾"].ToPar();
-    		pars2 = pars["尾31"].ToPars();
+    		pars2 = partGroup["尾31"].ToPars();
     		X0Y0_尾31_鱗 = pars2["鱗"].ToPar();
     		X0Y0_尾31_鱗左 = pars2["鱗左"].ToPar();
     		X0Y0_尾31_鱗右 = pars2["鱗右"].ToPar();
     		X0Y0_尾31_尾 = pars2["尾"].ToPar();
-    		pars2 = pars["尾32"].ToPars();
+    		pars2 = partGroup["尾32"].ToPars();
     		X0Y0_尾32_鱗 = pars2["鱗"].ToPar();
     		X0Y0_尾32_鱗左 = pars2["鱗左"].ToPar();
     		X0Y0_尾32_鱗右 = pars2["鱗右"].ToPar();
     		X0Y0_尾32_尾 = pars2["尾"].ToPar();
-    		pars2 = pars["尾33"].ToPars();
+    		pars2 = partGroup["尾33"].ToPars();
     		X0Y0_尾33_鱗 = pars2["鱗"].ToPar();
     		X0Y0_尾33_鱗左 = pars2["鱗左"].ToPar();
     		X0Y0_尾33_鱗右 = pars2["鱗右"].ToPar();
     		X0Y0_尾33_尾 = pars2["尾"].ToPar();
-    		pars2 = pars["尾34"].ToPars();
+    		pars2 = partGroup["尾34"].ToPars();
     		X0Y0_尾34_鱗 = pars2["鱗"].ToPar();
     		X0Y0_尾34_鱗左 = pars2["鱗左"].ToPar();
     		X0Y0_尾34_鱗右 = pars2["鱗右"].ToPar();
     		X0Y0_尾34_尾 = pars2["尾"].ToPar();
-    		pars2 = pars["尾35"].ToPars();
+    		pars2 = partGroup["尾35"].ToPars();
     		X0Y0_尾35_鱗 = pars2["鱗"].ToPar();
     		X0Y0_尾35_鱗左 = pars2["鱗左"].ToPar();
     		X0Y0_尾35_鱗右 = pars2["鱗右"].ToPar();
     		X0Y0_尾35_尾 = pars2["尾"].ToPar();
-    		pars2 = pars["尾36"].ToPars();
+    		pars2 = partGroup["尾36"].ToPars();
     		X0Y0_尾36_鱗 = pars2["鱗"].ToPar();
     		X0Y0_尾36_鱗左 = pars2["鱗左"].ToPar();
     		X0Y0_尾36_鱗右 = pars2["鱗右"].ToPar();
     		X0Y0_尾36_尾 = pars2["尾"].ToPar();
-    		pars2 = pars["尾37"].ToPars();
+    		pars2 = partGroup["尾37"].ToPars();
     		X0Y0_尾37_鱗 = pars2["鱗"].ToPar();
     		X0Y0_尾37_鱗左 = pars2["鱗左"].ToPar();
     		X0Y0_尾37_鱗右 = pars2["鱗右"].ToPar();
     		X0Y0_尾37_尾 = pars2["尾"].ToPar();
-    		pars2 = pars["尾38"].ToPars();
+    		pars2 = partGroup["尾38"].ToPars();
     		X0Y0_尾38_鱗 = pars2["鱗"].ToPar();
     		X0Y0_尾38_鱗左 = pars2["鱗左"].ToPar();
     		X0Y0_尾38_鱗右 = pars2["鱗右"].ToPar();
     		X0Y0_尾38_尾 = pars2["尾"].ToPar();
-    		pars2 = pars["尾39"].ToPars();
+    		pars2 = partGroup["尾39"].ToPars();
     		X0Y0_尾39_鱗 = pars2["鱗"].ToPar();
     		X0Y0_尾39_鱗左 = pars2["鱗左"].ToPar();
     		X0Y0_尾39_鱗右 = pars2["鱗右"].ToPar();
     		X0Y0_尾39_尾 = pars2["尾"].ToPar();
-    		pars2 = pars["尾40"].ToPars();
+    		pars2 = partGroup["尾40"].ToPars();
     		X0Y0_尾40_鱗 = pars2["鱗"].ToPar();
     		X0Y0_尾40_鱗左 = pars2["鱗左"].ToPar();
     		X0Y0_尾40_鱗右 = pars2["鱗右"].ToPar();
     		X0Y0_尾40_尾 = pars2["尾"].ToPar();
-    		pars2 = pars["尾41"].ToPars();
+    		pars2 = partGroup["尾41"].ToPars();
     		X0Y0_尾41_鱗 = pars2["鱗"].ToPar();
     		X0Y0_尾41_鱗左 = pars2["鱗左"].ToPar();
     		X0Y0_尾41_鱗右 = pars2["鱗右"].ToPar();
     		X0Y0_尾41_尾 = pars2["尾"].ToPar();
-    		pars2 = pars["尾42"].ToPars();
+    		pars2 = partGroup["尾42"].ToPars();
     		X0Y0_尾42_鱗 = pars2["鱗"].ToPar();
     		X0Y0_尾42_鱗左 = pars2["鱗左"].ToPar();
     		X0Y0_尾42_鱗右 = pars2["鱗右"].ToPar();
     		X0Y0_尾42_尾 = pars2["尾"].ToPar();
-    		pars2 = pars["尾43"].ToPars();
+    		pars2 = partGroup["尾43"].ToPars();
     		X0Y0_尾43_鱗 = pars2["鱗"].ToPar();
     		X0Y0_尾43_鱗左 = pars2["鱗左"].ToPar();
     		X0Y0_尾43_鱗右 = pars2["鱗右"].ToPar();
     		X0Y0_尾43_尾 = pars2["尾"].ToPar();
-    		pars2 = pars["尾44"].ToPars();
+    		pars2 = partGroup["尾44"].ToPars();
     		X0Y0_尾44_鱗 = pars2["鱗"].ToPar();
     		X0Y0_尾44_鱗左 = pars2["鱗左"].ToPar();
     		X0Y0_尾44_鱗右 = pars2["鱗右"].ToPar();
     		X0Y0_尾44_尾 = pars2["尾"].ToPar();
-    		pars2 = pars["頭"].ToPars();
-    		Pars pars3 = pars2["上顎"].ToPars();
+    		pars2 = partGroup["頭"].ToPars();
+    		PartGroup pars3 = pars2["上顎"].ToPars();
     		X0Y0_頭_上顎_顎基 = pars3["顎基"].ToPar();
     		X0Y0_頭_上顎_鱗4 = pars3["鱗4"].ToPar();
     		X0Y0_頭_上顎_鱗左1 = pars3["鱗左1"].ToPar();
@@ -5378,7 +5378,7 @@ namespace SlaveMatrix
     		X0Y0_頭_下顎_鱗右10 = pars3["鱗右10"].ToPar();
     		X0Y0_頭_下顎_鱗左11 = pars3["鱗左11"].ToPar();
     		X0Y0_頭_下顎_鱗右11 = pars3["鱗右11"].ToPar();
-    		pars2 = pars["輪2"].ToPars();
+    		pars2 = partGroup["輪2"].ToPars();
     		X0Y0_輪2_革 = pars2["革"].ToPar();
     		X0Y0_輪2_金具1 = pars2["金具1"].ToPar();
     		X0Y0_輪2_金具2 = pars2["金具2"].ToPar();
@@ -6213,7 +6213,7 @@ namespace SlaveMatrix
     		Body.JoinPAall();
     	}
 
-    	public override bool Is革(Par p)
+    	public override bool Is革(ShapePart p)
     	{
     		if (p != X0Y0_輪1_革 && p != X0Y0_輪1_金具1 && p != X0Y0_輪1_金具2 && p != X0Y0_輪1_金具3 && p != X0Y0_輪1_金具左 && p != X0Y0_輪1_金具右 && p != X0Y0_輪2_革 && p != X0Y0_輪2_金具1 && p != X0Y0_輪2_金具2 && p != X0Y0_輪2_金具3 && p != X0Y0_輪2_金具左)
     		{
@@ -6222,7 +6222,7 @@ namespace SlaveMatrix
     		return true;
     	}
 
-    	public override IEnumerable<Par> Enum軸()
+    	public override IEnumerable<ShapePart> Enum軸()
     	{
     		yield return X0Y0_尾1_尾;
     		yield return X0Y0_尾2_尾;
@@ -6539,230 +6539,230 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		尾1_根CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		尾1_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾1_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾1_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾1_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾2_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾2_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾2_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾2_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾3_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾3_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾3_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾3_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾4_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾4_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾4_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾4_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾5_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾5_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾5_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾5_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾6_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾6_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾6_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾6_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾7_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾7_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾7_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾7_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾8_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾8_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾8_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾8_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾9_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾9_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾9_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾9_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾10_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾10_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾10_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾10_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾11_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾11_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾11_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾11_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾12_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾12_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾12_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾12_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾13_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾13_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾13_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾13_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾14_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾14_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾14_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾14_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾15_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾15_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾15_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾15_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾16_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾16_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾16_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾16_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾17_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾17_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾17_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾17_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾18_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾18_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾18_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾18_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾19_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾19_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾19_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾19_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾20_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾20_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾20_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾20_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾21_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾21_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾21_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾21_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾22_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾22_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾22_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾22_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾23_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾23_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾23_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾23_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾24_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾24_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾24_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾24_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾25_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾25_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾25_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾25_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾26_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾26_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾26_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾26_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾27_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾27_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾27_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾27_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾28_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾28_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾28_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾28_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾29_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾29_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾29_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾29_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾30_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾30_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾30_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾30_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾31_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾31_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾31_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾31_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾32_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾32_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾32_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾32_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾33_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾33_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾33_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾33_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾34_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾34_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾34_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾34_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾35_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾35_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾35_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾35_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾36_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾36_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾36_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾36_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾37_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾37_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾37_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾37_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾38_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾38_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾38_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾38_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾39_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾39_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾39_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾39_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾40_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾40_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾40_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾40_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾41_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾41_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾41_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾41_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾42_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾42_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾42_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾42_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾43_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾43_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾43_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾43_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾44_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾44_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾44_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾44_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_上顎_顎基CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_上顎_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_上顎_鱗左1CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_上顎_鱗右1CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_上顎_鱗左2CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_上顎_鱗右2CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_上顎_鱗左3CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_上顎_鱗右3CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_上顎_鱗左4CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_上顎_鱗右4CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_上顎_鱗左5CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_上顎_鱗右5CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_上顎_鱗左8CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_上顎_鱗右8CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_上顎_鱗左9CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_上顎_鱗右9CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_上顎_鱗左10CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_上顎_鱗右10CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_上顎_鱗左11CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_上顎_鱗右11CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_下顎_顎基CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗左1CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_下顎_鱗右1CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_下顎_鱗左2CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗右2CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗左3CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗右3CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗左4CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗右4CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗左5CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗右5CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗左6CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗右6CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗左7CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗右7CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗左8CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗右8CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗左9CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗右9CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗左10CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗右10CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗左11CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗右11CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
+    		尾1_根CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		尾1_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾1_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾1_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾1_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾2_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾2_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾2_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾2_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾3_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾3_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾3_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾3_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾4_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾4_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾4_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾4_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾5_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾5_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾5_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾5_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾6_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾6_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾6_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾6_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾7_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾7_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾7_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾7_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾8_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾8_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾8_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾8_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾9_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾9_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾9_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾9_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾10_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾10_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾10_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾10_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾11_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾11_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾11_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾11_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾12_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾12_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾12_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾12_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾13_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾13_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾13_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾13_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾14_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾14_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾14_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾14_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾15_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾15_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾15_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾15_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾16_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾16_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾16_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾16_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾17_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾17_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾17_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾17_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾18_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾18_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾18_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾18_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾19_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾19_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾19_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾19_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾20_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾20_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾20_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾20_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾21_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾21_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾21_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾21_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾22_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾22_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾22_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾22_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾23_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾23_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾23_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾23_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾24_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾24_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾24_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾24_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾25_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾25_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾25_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾25_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾26_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾26_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾26_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾26_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾27_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾27_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾27_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾27_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾28_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾28_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾28_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾28_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾29_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾29_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾29_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾29_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾30_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾30_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾30_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾30_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾31_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾31_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾31_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾31_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾32_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾32_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾32_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾32_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾33_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾33_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾33_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾33_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾34_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾34_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾34_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾34_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾35_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾35_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾35_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾35_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾36_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾36_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾36_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾36_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾37_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾37_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾37_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾37_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾38_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾38_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾38_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾38_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾39_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾39_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾39_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾39_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾40_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾40_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾40_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾40_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾41_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾41_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾41_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾41_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾42_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾42_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾42_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾42_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾43_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾43_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾43_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾43_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾44_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾44_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾44_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾44_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		頭_上顎_顎基CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		頭_上顎_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		頭_上顎_鱗左1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		頭_上顎_鱗右1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		頭_上顎_鱗左2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		頭_上顎_鱗右2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		頭_上顎_鱗左3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		頭_上顎_鱗右3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		頭_上顎_鱗左4CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		頭_上顎_鱗右4CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		頭_上顎_鱗左5CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		頭_上顎_鱗右5CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		頭_上顎_鱗左8CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		頭_上顎_鱗右8CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		頭_上顎_鱗左9CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		頭_上顎_鱗右9CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		頭_上顎_鱗左10CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		頭_上顎_鱗右10CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		頭_上顎_鱗左11CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		頭_上顎_鱗右11CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		頭_下顎_顎基CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		頭_下顎_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		頭_下顎_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		頭_下顎_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		頭_下顎_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		頭_下顎_鱗左1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		頭_下顎_鱗右1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		頭_下顎_鱗左2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		頭_下顎_鱗右2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		頭_下顎_鱗左3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		頭_下顎_鱗右3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		頭_下顎_鱗左4CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		頭_下顎_鱗右4CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		頭_下顎_鱗左5CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		頭_下顎_鱗右5CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		頭_下顎_鱗左6CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		頭_下顎_鱗右6CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		頭_下顎_鱗左7CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		頭_下顎_鱗右7CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		頭_下顎_鱗左8CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		頭_下顎_鱗右8CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		頭_下顎_鱗左9CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		頭_下顎_鱗右9CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		頭_下顎_鱗左10CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		頭_下顎_鱗右10CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		頭_下顎_鱗左11CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		頭_下顎_鱗右11CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
     		輪1_革CD = new ColorD();
     		輪1_金具1CD = new ColorD();
     		輪1_金具2CD = new ColorD();
@@ -6779,230 +6779,230 @@ namespace SlaveMatrix
 
     	private void 配色T0(BodyColorSet 体配色)
     	{
-    		尾1_根CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		尾1_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾1_鱗左CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾1_鱗右CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾1_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾2_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾2_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾2_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾2_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾3_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾3_鱗左CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾3_鱗右CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾3_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾4_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾4_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾4_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾4_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾5_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾5_鱗左CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾5_鱗右CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾5_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾6_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾6_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾6_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾6_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾7_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾7_鱗左CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾7_鱗右CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾7_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾8_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾8_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾8_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾8_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾9_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾9_鱗左CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾9_鱗右CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾9_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾10_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾10_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾10_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾10_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾11_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾11_鱗左CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾11_鱗右CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾11_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾12_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾12_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾12_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾12_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾13_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾13_鱗左CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾13_鱗右CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾13_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾14_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾14_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾14_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾14_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾15_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾15_鱗左CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾15_鱗右CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾15_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾16_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾16_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾16_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾16_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾17_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾17_鱗左CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾17_鱗右CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾17_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾18_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾18_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾18_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾18_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾19_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾19_鱗左CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾19_鱗右CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾19_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾20_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾20_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾20_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾20_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾21_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾21_鱗左CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾21_鱗右CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾21_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾22_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾22_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾22_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾22_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾23_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾23_鱗左CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾23_鱗右CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾23_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾24_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾24_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾24_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾24_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾25_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾25_鱗左CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾25_鱗右CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾25_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾26_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾26_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾26_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾26_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾27_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾27_鱗左CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾27_鱗右CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾27_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾28_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾28_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾28_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾28_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾29_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾29_鱗左CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾29_鱗右CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾29_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾30_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾30_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾30_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾30_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾31_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾31_鱗左CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾31_鱗右CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾31_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾32_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾32_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾32_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾32_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾33_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾33_鱗左CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾33_鱗右CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾33_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾34_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾34_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾34_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾34_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾35_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾35_鱗左CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾35_鱗右CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾35_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾36_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾36_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾36_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾36_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾37_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾37_鱗左CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾37_鱗右CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾37_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾38_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾38_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾38_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾38_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾39_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾39_鱗左CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾39_鱗右CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾39_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾40_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾40_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾40_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾40_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾41_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾41_鱗左CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾41_鱗右CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾41_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾42_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾42_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾42_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾42_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾43_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾43_鱗左CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾43_鱗右CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾43_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾44_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾44_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾44_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾44_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_上顎_顎基CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_上顎_鱗4CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		頭_上顎_鱗左1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		頭_上顎_鱗右1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		頭_上顎_鱗左2CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_上顎_鱗右2CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_上顎_鱗左3CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_上顎_鱗右3CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_上顎_鱗左4CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		頭_上顎_鱗右4CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		頭_上顎_鱗左5CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_上顎_鱗右5CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_上顎_鱗左8CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_上顎_鱗右8CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_上顎_鱗左9CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		頭_上顎_鱗右9CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		頭_上顎_鱗左10CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_上顎_鱗右10CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_上顎_鱗左11CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		頭_上顎_鱗右11CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		頭_下顎_顎基CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗左1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		頭_下顎_鱗右1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		頭_下顎_鱗左2CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗右2CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗左3CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗右3CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗左4CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗右4CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗左5CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗右5CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗左6CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗右6CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗左7CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗右7CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗左8CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗右8CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗左9CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗右9CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗左10CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗右10CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗左11CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗右11CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
+    		尾1_根CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		尾1_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾1_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾1_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾1_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾2_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾2_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾2_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾2_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾3_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾3_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾3_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾3_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾4_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾4_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾4_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾4_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾5_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾5_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾5_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾5_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾6_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾6_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾6_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾6_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾7_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾7_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾7_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾7_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾8_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾8_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾8_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾8_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾9_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾9_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾9_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾9_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾10_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾10_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾10_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾10_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾11_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾11_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾11_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾11_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾12_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾12_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾12_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾12_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾13_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾13_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾13_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾13_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾14_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾14_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾14_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾14_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾15_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾15_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾15_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾15_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾16_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾16_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾16_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾16_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾17_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾17_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾17_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾17_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾18_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾18_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾18_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾18_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾19_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾19_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾19_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾19_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾20_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾20_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾20_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾20_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾21_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾21_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾21_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾21_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾22_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾22_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾22_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾22_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾23_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾23_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾23_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾23_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾24_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾24_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾24_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾24_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾25_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾25_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾25_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾25_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾26_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾26_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾26_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾26_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾27_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾27_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾27_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾27_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾28_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾28_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾28_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾28_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾29_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾29_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾29_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾29_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾30_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾30_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾30_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾30_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾31_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾31_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾31_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾31_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾32_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾32_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾32_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾32_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾33_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾33_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾33_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾33_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾34_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾34_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾34_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾34_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾35_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾35_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾35_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾35_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾36_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾36_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾36_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾36_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾37_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾37_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾37_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾37_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾38_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾38_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾38_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾38_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾39_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾39_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾39_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾39_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾40_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾40_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾40_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾40_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾41_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾41_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾41_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾41_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾42_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾42_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾42_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾42_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾43_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾43_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾43_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾43_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾44_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾44_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾44_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾44_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		頭_上顎_顎基CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		頭_上顎_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		頭_上顎_鱗左1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		頭_上顎_鱗右1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		頭_上顎_鱗左2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		頭_上顎_鱗右2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		頭_上顎_鱗左3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		頭_上顎_鱗右3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		頭_上顎_鱗左4CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		頭_上顎_鱗右4CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		頭_上顎_鱗左5CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		頭_上顎_鱗右5CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		頭_上顎_鱗左8CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		頭_上顎_鱗右8CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		頭_上顎_鱗左9CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		頭_上顎_鱗右9CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		頭_上顎_鱗左10CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		頭_上顎_鱗右10CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		頭_上顎_鱗左11CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		頭_上顎_鱗右11CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		頭_下顎_顎基CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		頭_下顎_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		頭_下顎_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		頭_下顎_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		頭_下顎_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		頭_下顎_鱗左1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		頭_下顎_鱗右1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		頭_下顎_鱗左2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		頭_下顎_鱗右2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		頭_下顎_鱗左3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		頭_下顎_鱗右3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		頭_下顎_鱗左4CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		頭_下顎_鱗右4CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		頭_下顎_鱗左5CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		頭_下顎_鱗右5CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		頭_下顎_鱗左6CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		頭_下顎_鱗右6CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		頭_下顎_鱗左7CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		頭_下顎_鱗右7CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		頭_下顎_鱗左8CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		頭_下顎_鱗右8CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		頭_下顎_鱗左9CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		頭_下顎_鱗右9CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		頭_下顎_鱗左10CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		頭_下顎_鱗右10CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		頭_下顎_鱗左11CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		頭_下顎_鱗右11CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
     		輪1_革CD = new ColorD();
     		輪1_金具1CD = new ColorD();
     		輪1_金具2CD = new ColorD();
@@ -7019,230 +7019,230 @@ namespace SlaveMatrix
 
     	private void 配色T1(BodyColorSet 体配色)
     	{
-    		尾1_根CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		尾1_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾1_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾1_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾1_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾2_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾2_鱗左CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾2_鱗右CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾2_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾3_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾3_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾3_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾3_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾4_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾4_鱗左CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾4_鱗右CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾4_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾5_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾5_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾5_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾5_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾6_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾6_鱗左CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾6_鱗右CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾6_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾7_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾7_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾7_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾7_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾8_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾8_鱗左CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾8_鱗右CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾8_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾9_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾9_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾9_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾9_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾10_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾10_鱗左CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾10_鱗右CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾10_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾11_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾11_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾11_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾11_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾12_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾12_鱗左CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾12_鱗右CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾12_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾13_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾13_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾13_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾13_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾14_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾14_鱗左CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾14_鱗右CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾14_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾15_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾15_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾15_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾15_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾16_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾16_鱗左CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾16_鱗右CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾16_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾17_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾17_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾17_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾17_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾18_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾18_鱗左CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾18_鱗右CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾18_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾19_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾19_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾19_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾19_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾20_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾20_鱗左CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾20_鱗右CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾20_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾21_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾21_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾21_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾21_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾22_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾22_鱗左CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾22_鱗右CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾22_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾23_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾23_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾23_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾23_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾24_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾24_鱗左CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾24_鱗右CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾24_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾25_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾25_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾25_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾25_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾26_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾26_鱗左CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾26_鱗右CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾26_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾27_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾27_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾27_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾27_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾28_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾28_鱗左CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾28_鱗右CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾28_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾29_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾29_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾29_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾29_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾30_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾30_鱗左CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾30_鱗右CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾30_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾31_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾31_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾31_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾31_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾32_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾32_鱗左CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾32_鱗右CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾32_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾33_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾33_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾33_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾33_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾34_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾34_鱗左CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾34_鱗右CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾34_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾35_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾35_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾35_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾35_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾36_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾36_鱗左CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾36_鱗右CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾36_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾37_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾37_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾37_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾37_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾38_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾38_鱗左CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾38_鱗右CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾38_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾39_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾39_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾39_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾39_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾40_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾40_鱗左CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾40_鱗右CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾40_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾41_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾41_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾41_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾41_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾42_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾42_鱗左CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾42_鱗右CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾42_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾43_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾43_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾43_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾43_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		尾44_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		尾44_鱗左CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾44_鱗右CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		尾44_尾CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_上顎_顎基CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_上顎_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_上顎_鱗左1CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_上顎_鱗右1CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_上顎_鱗左2CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_上顎_鱗右2CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_上顎_鱗左3CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		頭_上顎_鱗右3CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		頭_上顎_鱗左4CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_上顎_鱗右4CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_上顎_鱗左5CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		頭_上顎_鱗右5CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		頭_上顎_鱗左8CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		頭_上顎_鱗右8CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		頭_上顎_鱗左9CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_上顎_鱗右9CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_上顎_鱗左10CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		頭_上顎_鱗右10CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		頭_上顎_鱗左11CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_上顎_鱗右11CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_下顎_顎基CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗左1CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_下顎_鱗右1CD = new ColorD(ref Col.Black, ref 体配色.鱗0R);
-    		頭_下顎_鱗左2CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗右2CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗左3CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗右3CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗左4CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗右4CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗左5CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗右5CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗左6CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗右6CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗左7CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗右7CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗左8CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗右8CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗左9CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗右9CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗左10CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗右10CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗左11CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
-    		頭_下顎_鱗右11CD = new ColorD(ref Col.Black, ref 体配色.鱗1R);
+    		尾1_根CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		尾1_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾1_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾1_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾1_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾2_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾2_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾2_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾2_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾3_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾3_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾3_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾3_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾4_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾4_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾4_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾4_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾5_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾5_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾5_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾5_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾6_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾6_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾6_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾6_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾7_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾7_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾7_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾7_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾8_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾8_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾8_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾8_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾9_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾9_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾9_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾9_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾10_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾10_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾10_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾10_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾11_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾11_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾11_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾11_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾12_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾12_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾12_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾12_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾13_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾13_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾13_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾13_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾14_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾14_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾14_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾14_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾15_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾15_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾15_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾15_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾16_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾16_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾16_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾16_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾17_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾17_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾17_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾17_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾18_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾18_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾18_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾18_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾19_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾19_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾19_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾19_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾20_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾20_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾20_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾20_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾21_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾21_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾21_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾21_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾22_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾22_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾22_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾22_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾23_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾23_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾23_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾23_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾24_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾24_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾24_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾24_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾25_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾25_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾25_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾25_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾26_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾26_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾26_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾26_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾27_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾27_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾27_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾27_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾28_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾28_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾28_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾28_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾29_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾29_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾29_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾29_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾30_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾30_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾30_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾30_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾31_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾31_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾31_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾31_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾32_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾32_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾32_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾32_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾33_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾33_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾33_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾33_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾34_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾34_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾34_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾34_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾35_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾35_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾35_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾35_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾36_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾36_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾36_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾36_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾37_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾37_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾37_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾37_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾38_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾38_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾38_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾38_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾39_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾39_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾39_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾39_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾40_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾40_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾40_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾40_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾41_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾41_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾41_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾41_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾42_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾42_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾42_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾42_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾43_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾43_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾43_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾43_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		尾44_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		尾44_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾44_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		尾44_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		頭_上顎_顎基CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		頭_上顎_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		頭_上顎_鱗左1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		頭_上顎_鱗右1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		頭_上顎_鱗左2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		頭_上顎_鱗右2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		頭_上顎_鱗左3CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		頭_上顎_鱗右3CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		頭_上顎_鱗左4CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		頭_上顎_鱗右4CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		頭_上顎_鱗左5CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		頭_上顎_鱗右5CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		頭_上顎_鱗左8CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		頭_上顎_鱗右8CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		頭_上顎_鱗左9CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		頭_上顎_鱗右9CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		頭_上顎_鱗左10CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		頭_上顎_鱗右10CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		頭_上顎_鱗左11CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		頭_上顎_鱗右11CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		頭_下顎_顎基CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		頭_下顎_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		頭_下顎_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		頭_下顎_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		頭_下顎_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		頭_下顎_鱗左1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		頭_下顎_鱗右1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0R);
+    		頭_下顎_鱗左2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		頭_下顎_鱗右2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		頭_下顎_鱗左3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		頭_下顎_鱗右3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		頭_下顎_鱗左4CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		頭_下顎_鱗右4CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		頭_下顎_鱗左5CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		頭_下顎_鱗右5CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		頭_下顎_鱗左6CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		頭_下顎_鱗右6CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		頭_下顎_鱗左7CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		頭_下顎_鱗右7CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		頭_下顎_鱗左8CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		頭_下顎_鱗右8CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		頭_下顎_鱗左9CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		頭_下顎_鱗右9CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		頭_下顎_鱗左10CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		頭_下顎_鱗右10CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		頭_下顎_鱗左11CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
+    		頭_下顎_鱗右11CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1R);
     		輪1_革CD = new ColorD();
     		輪1_金具1CD = new ColorD();
     		輪1_金具2CD = new ColorD();

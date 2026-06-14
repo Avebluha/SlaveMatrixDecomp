@@ -3,71 +3,71 @@ using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
-    public class 頬肌 : Ele
+    public class 頬肌 : Element
     {
-    	public Par X0Y0_淫タトゥ_ハート_タトゥ左;
+    	public ShapePart X0Y0_淫タトゥ_ハート_タトゥ左;
 
-    	public Par X0Y0_淫タトゥ_ハート_タトゥ右;
+    	public ShapePart X0Y0_淫タトゥ_ハート_タトゥ右;
 
-    	public Par X0Y0_隈取_タトゥ1;
+    	public ShapePart X0Y0_隈取_タトゥ1;
 
-    	public Par X0Y0_隈取_タトゥ2;
+    	public ShapePart X0Y0_隈取_タトゥ2;
 
-    	public Par X0Y0_紋柄_紋1;
+    	public ShapePart X0Y0_紋柄_紋1;
 
-    	public Par X0Y0_紋柄_紋2;
+    	public ShapePart X0Y0_紋柄_紋2;
 
-    	public Par X0Y0_紋柄_紋3;
+    	public ShapePart X0Y0_紋柄_紋3;
 
-    	public Par X0Y0_傷_傷X;
+    	public ShapePart X0Y0_傷_傷X;
 
-    	public Par X0Y0_傷_傷I1;
+    	public ShapePart X0Y0_傷_傷I1;
 
-    	public Par X0Y0_傷_傷I2;
+    	public ShapePart X0Y0_傷_傷I2;
 
-    	public Par X0Y0_傷_傷I3;
+    	public ShapePart X0Y0_傷_傷I3;
 
-    	public Par X0Y0_蜘蛛_眼_基;
+    	public ShapePart X0Y0_蜘蛛_眼_基;
 
-    	public Par X0Y0_蜘蛛_眼_眼;
+    	public ShapePart X0Y0_蜘蛛_眼_眼;
 
-    	public Par X0Y0_蜘蛛_眼_ハイライト;
+    	public ShapePart X0Y0_蜘蛛_眼_ハイライト;
 
-    	public Par X0Y0_百足_眼1_基;
+    	public ShapePart X0Y0_百足_眼1_基;
 
-    	public Par X0Y0_百足_眼1_眼;
+    	public ShapePart X0Y0_百足_眼1_眼;
 
-    	public Par X0Y0_百足_眼1_ハイライト;
+    	public ShapePart X0Y0_百足_眼1_ハイライト;
 
-    	public Par X0Y0_百足_眼2_基;
+    	public ShapePart X0Y0_百足_眼2_基;
 
-    	public Par X0Y0_百足_眼2_眼;
+    	public ShapePart X0Y0_百足_眼2_眼;
 
-    	public Par X0Y0_百足_眼2_ハイライト;
+    	public ShapePart X0Y0_百足_眼2_ハイライト;
 
-    	public Par X0Y0_百足_眼3_基;
+    	public ShapePart X0Y0_百足_眼3_基;
 
-    	public Par X0Y0_百足_眼3_眼;
+    	public ShapePart X0Y0_百足_眼3_眼;
 
-    	public Par X0Y0_百足_眼3_ハイライト;
+    	public ShapePart X0Y0_百足_眼3_ハイライト;
 
-    	public Par X0Y0_獣性_獣毛;
+    	public ShapePart X0Y0_獣性_獣毛;
 
-    	public Par X0Y0_獣性_髭1;
+    	public ShapePart X0Y0_獣性_髭1;
 
-    	public Par X0Y0_獣性_髭2;
+    	public ShapePart X0Y0_獣性_髭2;
 
-    	public Par X0Y0_獣性_髭3;
+    	public ShapePart X0Y0_獣性_髭3;
 
-    	public Par X0Y0_竜性_鱗1;
+    	public ShapePart X0Y0_竜性_鱗1;
 
-    	public Par X0Y0_竜性_鱗2;
+    	public ShapePart X0Y0_竜性_鱗2;
 
-    	public Par X0Y0_竜性_鱗3;
+    	public ShapePart X0Y0_竜性_鱗3;
 
-    	public Par X0Y0_猟豹_タトゥ;
+    	public ShapePart X0Y0_猟豹_タトゥ;
 
-    	public Par X0Y0_牛柄_牛柄;
+    	public ShapePart X0Y0_牛柄_牛柄;
 
     	public ColorD 淫タトゥ_ハート_タトゥ左CD;
 
@@ -738,30 +738,30 @@ namespace SlaveMatrix
     	public 頬肌(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 頬肌D e)
     	{
     		ThisType = GetType();
-    		Body = new Difs(Sta.胴体["頬肌左"]);
-    		Pars pars = Body[0][0];
-    		Pars pars2 = pars["淫タトゥ"].ToPars();
-    		Pars pars3 = pars2["ハート"].ToPars();
+    		Body = new VariantGrid(GlobalState.胴体["頬肌左"]);
+    		PartGroup partGroup = Body[0][0];
+    		PartGroup pars2 = partGroup["淫タトゥ"].ToPars();
+    		PartGroup pars3 = pars2["ハート"].ToPars();
     		X0Y0_淫タトゥ_ハート_タトゥ左 = pars3["タトゥ左"].ToPar();
     		X0Y0_淫タトゥ_ハート_タトゥ右 = pars3["タトゥ右"].ToPar();
-    		pars2 = pars["隈取"].ToPars();
+    		pars2 = partGroup["隈取"].ToPars();
     		X0Y0_隈取_タトゥ1 = pars2["タトゥ1"].ToPar();
     		X0Y0_隈取_タトゥ2 = pars2["タトゥ2"].ToPar();
-    		pars2 = pars["紋柄"].ToPars();
+    		pars2 = partGroup["紋柄"].ToPars();
     		X0Y0_紋柄_紋1 = pars2["紋1"].ToPar();
     		X0Y0_紋柄_紋2 = pars2["紋2"].ToPar();
     		X0Y0_紋柄_紋3 = pars2["紋3"].ToPar();
-    		pars2 = pars["傷"].ToPars();
+    		pars2 = partGroup["傷"].ToPars();
     		X0Y0_傷_傷X = pars2["傷X"].ToPar();
     		X0Y0_傷_傷I1 = pars2["傷I1"].ToPar();
     		X0Y0_傷_傷I2 = pars2["傷I2"].ToPar();
     		X0Y0_傷_傷I3 = pars2["傷I3"].ToPar();
-    		pars2 = pars["蜘蛛"].ToPars();
+    		pars2 = partGroup["蜘蛛"].ToPars();
     		pars3 = pars2["眼"].ToPars();
     		X0Y0_蜘蛛_眼_基 = pars3["基"].ToPar();
     		X0Y0_蜘蛛_眼_眼 = pars3["眼"].ToPar();
     		X0Y0_蜘蛛_眼_ハイライト = pars3["ハイライト"].ToPar();
-    		pars2 = pars["百足"].ToPars();
+    		pars2 = partGroup["百足"].ToPars();
     		pars3 = pars2["眼1"].ToPars();
     		X0Y0_百足_眼1_基 = pars3["基"].ToPar();
     		X0Y0_百足_眼1_眼 = pars3["眼"].ToPar();
@@ -774,19 +774,19 @@ namespace SlaveMatrix
     		X0Y0_百足_眼3_基 = pars3["基"].ToPar();
     		X0Y0_百足_眼3_眼 = pars3["眼"].ToPar();
     		X0Y0_百足_眼3_ハイライト = pars3["ハイライト"].ToPar();
-    		pars2 = pars["獣性"].ToPars();
+    		pars2 = partGroup["獣性"].ToPars();
     		X0Y0_獣性_獣毛 = pars2["獣毛"].ToPar();
-    		pars2 = pars["髭"].ToPars();
+    		pars2 = partGroup["髭"].ToPars();
     		X0Y0_獣性_髭1 = pars2["髭1"].ToPar();
     		X0Y0_獣性_髭2 = pars2["髭2"].ToPar();
     		X0Y0_獣性_髭3 = pars2["髭3"].ToPar();
-    		pars2 = pars["鱗"].ToPars();
+    		pars2 = partGroup["鱗"].ToPars();
     		X0Y0_竜性_鱗1 = pars2["鱗1"].ToPar();
     		X0Y0_竜性_鱗2 = pars2["鱗2"].ToPar();
     		X0Y0_竜性_鱗3 = pars2["鱗3"].ToPar();
-    		pars2 = pars["猟豹"].ToPars();
+    		pars2 = partGroup["猟豹"].ToPars();
     		X0Y0_猟豹_タトゥ = pars2["タトゥ"].ToPar();
-    		pars2 = pars["牛柄"].ToPars();
+    		pars2 = partGroup["牛柄"].ToPars();
     		X0Y0_牛柄_牛柄 = pars2["牛柄"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
@@ -971,38 +971,38 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		淫タトゥ_ハート_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_ハート_タトゥ右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		隈取_タトゥ1CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		隈取_タトゥ2CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		紋柄_紋1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		紋柄_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		紋柄_紋3CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		傷_傷XCD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		傷_傷I1CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		傷_傷I2CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		傷_傷I3CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		蜘蛛_眼_基CD = new ColorD(ref Col.Black, ref 体配色.眼2O);
-    		蜘蛛_眼_眼CD = new ColorD(ref Col.Black, ref 体配色.眼2O);
-    		蜘蛛_眼_ハイライトCD = new ColorD(ref Col.Empty, ref 体配色.ハイライト);
-    		百足_眼1_基CD = new ColorD(ref Col.Black, ref 体配色.眼1O);
-    		百足_眼1_眼CD = new ColorD(ref Col.Black, ref 体配色.眼1O);
-    		百足_眼1_ハイライトCD = new ColorD(ref Col.Empty, ref 体配色.ハイライト);
-    		百足_眼2_基CD = new ColorD(ref Col.Black, ref 体配色.眼1O);
-    		百足_眼2_眼CD = new ColorD(ref Col.Black, ref 体配色.眼1O);
-    		百足_眼2_ハイライトCD = new ColorD(ref Col.Empty, ref 体配色.ハイライト);
-    		百足_眼3_基CD = new ColorD(ref Col.Black, ref 体配色.眼1O);
-    		百足_眼3_眼CD = new ColorD(ref Col.Black, ref 体配色.眼1O);
-    		百足_眼3_ハイライトCD = new ColorD(ref Col.Empty, ref 体配色.ハイライト);
-    		獣性_獣毛CD = new ColorD(ref Col.Empty, ref 体配色.毛0O);
-    		獣性_髭1CD = new ColorD(ref Col.Empty, ref 体配色.髭O);
-    		獣性_髭2CD = new ColorD(ref Col.Empty, ref 体配色.髭O);
-    		獣性_髭3CD = new ColorD(ref Col.Empty, ref 体配色.髭O);
-    		竜性_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		猟豹_タトゥCD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		牛柄_牛柄CD = new ColorD(ref Col.Empty, ref 体配色.柄O);
+    		淫タトゥ_ハート_タトゥ左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_ハート_タトゥ右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		隈取_タトゥ1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		隈取_タトゥ2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		紋柄_紋1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		紋柄_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		紋柄_紋3CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		傷_傷XCD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		傷_傷I1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		傷_傷I2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		傷_傷I3CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		蜘蛛_眼_基CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼2O);
+    		蜘蛛_眼_眼CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼2O);
+    		蜘蛛_眼_ハイライトCD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト);
+    		百足_眼1_基CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼1O);
+    		百足_眼1_眼CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼1O);
+    		百足_眼1_ハイライトCD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト);
+    		百足_眼2_基CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼1O);
+    		百足_眼2_眼CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼1O);
+    		百足_眼2_ハイライトCD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト);
+    		百足_眼3_基CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼1O);
+    		百足_眼3_眼CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼1O);
+    		百足_眼3_ハイライトCD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト);
+    		獣性_獣毛CD = new ColorD(ref ColorHelper.Empty, ref 体配色.毛0O);
+    		獣性_髭1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.髭O);
+    		獣性_髭2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.髭O);
+    		獣性_髭3CD = new ColorD(ref ColorHelper.Empty, ref 体配色.髭O);
+    		竜性_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		猟豹_タトゥCD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		牛柄_牛柄CD = new ColorD(ref ColorHelper.Empty, ref 体配色.柄O);
     	}
     }
 }

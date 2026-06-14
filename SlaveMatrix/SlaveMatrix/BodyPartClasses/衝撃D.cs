@@ -5,7 +5,7 @@ using SlaveMatrix.GameClasses;
 namespace SlaveMatrix
 {
     [Serializable]
-    public class 衝撃D : EleD
+    public class 衝撃D : ElementData
     {
     	public bool 衝撃_表示 = true;
 
@@ -14,7 +14,7 @@ namespace SlaveMatrix
     		ThisType = GetType();
     	}
 
-    	public override Ele GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
+    	public override Element GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
     	{
     		return new 衝撃(DisUnit, 配色指定, 体配色, Med, this);
     	}

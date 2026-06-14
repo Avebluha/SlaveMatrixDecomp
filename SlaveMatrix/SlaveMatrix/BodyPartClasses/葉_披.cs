@@ -4,17 +4,17 @@ namespace SlaveMatrix
 {
     public class 葉_披 : 葉
     {
-    	public Par X0Y0_通常_葉;
+    	public ShapePart X0Y0_通常_葉;
 
-    	public Par X0Y0_通常_葉脈;
+    	public ShapePart X0Y0_通常_葉脈;
 
-    	public Par X0Y1_欠損1_葉;
+    	public ShapePart X0Y1_欠損1_葉;
 
-    	public Par X0Y1_欠損1_葉脈;
+    	public ShapePart X0Y1_欠損1_葉脈;
 
-    	public Par X0Y2_欠損2_葉;
+    	public ShapePart X0Y2_欠損2_葉;
 
-    	public Par X0Y2_欠損2_葉脈;
+    	public ShapePart X0Y2_欠損2_葉脈;
 
     	public ColorD 葉CD;
 
@@ -41,7 +41,7 @@ namespace SlaveMatrix
     		set
     		{
     			欠損_ = value;
-    			Body.SetIndexY((欠損_ ? RNG.XS.NextM(1, 2) : 0));
+    			Body.SetIndexY((欠損_ ? Rng.XS.NextM(1, 2) : 0));
     		}
     	}
 
@@ -145,19 +145,19 @@ namespace SlaveMatrix
     	public 葉_披(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 葉_披D e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif(Sta.肢左["葉"][0]);
-    		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		X0Y0_通常_葉 = pars["葉"].ToPar();
-    		X0Y0_通常_葉脈 = pars["葉脈"].ToPar();
-    		pars = Body[0][1];
-    		X0Y1_欠損1_葉 = pars["葉"].ToPar();
-    		X0Y1_欠損1_葉脈 = pars["葉脈"].ToPar();
-    		pars = Body[0][2];
-    		X0Y2_欠損2_葉 = pars["葉"].ToPar();
-    		X0Y2_欠損2_葉脈 = pars["葉脈"].ToPar();
+    		MorphVariant morphVariant = new MorphVariant(GlobalState.肢左["葉"][0]);
+    		Body = new VariantGrid();
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_通常_葉 = partGroup["葉"].ToPar();
+    		X0Y0_通常_葉脈 = partGroup["葉脈"].ToPar();
+    		partGroup = Body[0][1];
+    		X0Y1_欠損1_葉 = partGroup["葉"].ToPar();
+    		X0Y1_欠損1_葉脈 = partGroup["葉脈"].ToPar();
+    		partGroup = Body[0][2];
+    		X0Y2_欠損2_葉 = partGroup["葉"].ToPar();
+    		X0Y2_欠損2_葉脈 = partGroup["葉脈"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;
@@ -243,20 +243,20 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		葉CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		葉脈CD = new ColorD(ref Col.Black, ref 体配色.植0O);
+    		葉CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		葉脈CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0O);
     	}
 
     	private void 配色T1(BodyColorSet 体配色)
     	{
-    		葉CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		葉脈CD = new ColorD(ref Col.Black, ref 体配色.植0O);
+    		葉CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		葉脈CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0O);
     	}
 
     	private void 配色T0(BodyColorSet 体配色)
     	{
-    		葉CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		葉脈CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		葉CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		葉脈CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
     	}
     }
 }

@@ -3,19 +3,19 @@ using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
-    public class 胴肌 : Ele
+    public class 胴肌 : Element
     {
-    	public Par X0Y0_植タトゥ_タトゥ花左;
+    	public ShapePart X0Y0_植タトゥ_タトゥ花左;
 
-    	public Par X0Y0_植タトゥ_タトゥ花右;
+    	public ShapePart X0Y0_植タトゥ_タトゥ花右;
 
-    	public Par X0Y0_植タトゥ_タトゥ花;
+    	public ShapePart X0Y0_植タトゥ_タトゥ花;
 
-    	public Par X0Y0_植タトゥ_タトゥ茎;
+    	public ShapePart X0Y0_植タトゥ_タトゥ茎;
 
-    	public Par X0Y0_植タトゥ_タトゥ葉左;
+    	public ShapePart X0Y0_植タトゥ_タトゥ葉左;
 
-    	public Par X0Y0_植タトゥ_タトゥ葉右;
+    	public ShapePart X0Y0_植タトゥ_タトゥ葉右;
 
     	public ColorD 植タトゥ_タトゥ花左CD;
 
@@ -192,14 +192,14 @@ namespace SlaveMatrix
     	public 胴肌(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 胴肌D e)
     	{
     		ThisType = GetType();
-    		Body = new Difs(Sta.胴体["胴肌"]);
-    		Pars pars = Body[0][0]["植タトゥ"].ToPars();
-    		X0Y0_植タトゥ_タトゥ花左 = pars["タトゥ花左"].ToPar();
-    		X0Y0_植タトゥ_タトゥ花右 = pars["タトゥ花右"].ToPar();
-    		X0Y0_植タトゥ_タトゥ花 = pars["タトゥ花"].ToPar();
-    		X0Y0_植タトゥ_タトゥ茎 = pars["タトゥ茎"].ToPar();
-    		X0Y0_植タトゥ_タトゥ葉左 = pars["タトゥ葉左"].ToPar();
-    		X0Y0_植タトゥ_タトゥ葉右 = pars["タトゥ葉右"].ToPar();
+    		Body = new VariantGrid(GlobalState.胴体["胴肌"]);
+    		PartGroup partGroup = Body[0][0]["植タトゥ"].ToPars();
+    		X0Y0_植タトゥ_タトゥ花左 = partGroup["タトゥ花左"].ToPar();
+    		X0Y0_植タトゥ_タトゥ花右 = partGroup["タトゥ花右"].ToPar();
+    		X0Y0_植タトゥ_タトゥ花 = partGroup["タトゥ花"].ToPar();
+    		X0Y0_植タトゥ_タトゥ茎 = partGroup["タトゥ茎"].ToPar();
+    		X0Y0_植タトゥ_タトゥ葉左 = partGroup["タトゥ葉左"].ToPar();
+    		X0Y0_植タトゥ_タトゥ葉右 = partGroup["タトゥ葉右"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;
@@ -266,12 +266,12 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		植タトゥ_タトゥ花左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		植タトゥ_タトゥ花右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		植タトゥ_タトゥ花CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		植タトゥ_タトゥ茎CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		植タトゥ_タトゥ葉左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		植タトゥ_タトゥ葉右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
+    		植タトゥ_タトゥ花左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		植タトゥ_タトゥ花右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		植タトゥ_タトゥ花CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		植タトゥ_タトゥ茎CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		植タトゥ_タトゥ葉左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		植タトゥ_タトゥ葉右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
     	}
     }
 }

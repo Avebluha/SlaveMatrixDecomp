@@ -2,8 +2,8 @@ using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
-    public class UpperArm : Ele
+    public class UpperArm : Element
     {
-    	public Ele[] LowerArm_接続;
+    	public Element[] LowerArm_接続;
     }
 }

@@ -6,167 +6,167 @@ namespace SlaveMatrix
 {
     public class 頭頂_宇 : 頭頂
     {
-    	public Par X0Y0_頭部;
+    	public ShapePart X0Y0_頭部;
 
-    	public Par X0Y0_頭頂部_透_基;
+    	public ShapePart X0Y0_頭頂部_透_基;
 
-    	public Par X0Y0_頭頂部_透_ハイライト1;
+    	public ShapePart X0Y0_頭頂部_透_ハイライト1;
 
-    	public Par X0Y0_頭頂部_透_ハイライト2;
+    	public ShapePart X0Y0_頭頂部_透_ハイライト2;
 
-    	public Par X0Y0_頭頂部_鱗_鱗5;
+    	public ShapePart X0Y0_頭頂部_鱗_鱗5;
 
-    	public Par X0Y0_頭頂部_鱗_鱗4;
+    	public ShapePart X0Y0_頭頂部_鱗_鱗4;
 
-    	public Par X0Y0_頭頂部_鱗_鱗3;
+    	public ShapePart X0Y0_頭頂部_鱗_鱗3;
 
-    	public Par X0Y0_頭頂部_鱗_鱗2;
+    	public ShapePart X0Y0_頭頂部_鱗_鱗2;
 
-    	public Par X0Y0_頭頂部_鱗_鱗1;
+    	public ShapePart X0Y0_頭頂部_鱗_鱗1;
 
-    	public Par X0Y0_左部_鰓_鰓11;
+    	public ShapePart X0Y0_左部_鰓_鰓11;
 
-    	public Par X0Y0_左部_鰓_鰓10;
+    	public ShapePart X0Y0_左部_鰓_鰓10;
 
-    	public Par X0Y0_左部_鰓_鰓9;
+    	public ShapePart X0Y0_左部_鰓_鰓9;
 
-    	public Par X0Y0_左部_鰓_鰓8;
+    	public ShapePart X0Y0_左部_鰓_鰓8;
 
-    	public Par X0Y0_左部_鰓_鰓7;
+    	public ShapePart X0Y0_左部_鰓_鰓7;
 
-    	public Par X0Y0_左部_鰓_鰓6;
+    	public ShapePart X0Y0_左部_鰓_鰓6;
 
-    	public Par X0Y0_左部_鰓_鰓5;
+    	public ShapePart X0Y0_左部_鰓_鰓5;
 
-    	public Par X0Y0_左部_鰓_鰓4;
+    	public ShapePart X0Y0_左部_鰓_鰓4;
 
-    	public Par X0Y0_左部_鰓_鰓3;
+    	public ShapePart X0Y0_左部_鰓_鰓3;
 
-    	public Par X0Y0_左部_鰓_鰓2;
+    	public ShapePart X0Y0_左部_鰓_鰓2;
 
-    	public Par X0Y0_左部_鰓_鰓1;
+    	public ShapePart X0Y0_左部_鰓_鰓1;
 
-    	public Par X0Y0_左部_鱗_鱗7;
+    	public ShapePart X0Y0_左部_鱗_鱗7;
 
-    	public Par X0Y0_左部_鱗_鱗6;
+    	public ShapePart X0Y0_左部_鱗_鱗6;
 
-    	public Par X0Y0_左部_鱗_鱗5;
+    	public ShapePart X0Y0_左部_鱗_鱗5;
 
-    	public Par X0Y0_左部_鱗_鱗4;
+    	public ShapePart X0Y0_左部_鱗_鱗4;
 
-    	public Par X0Y0_左部_鱗_鱗3;
+    	public ShapePart X0Y0_左部_鱗_鱗3;
 
-    	public Par X0Y0_左部_鱗_鱗2;
+    	public ShapePart X0Y0_左部_鱗_鱗2;
 
-    	public Par X0Y0_左部_鱗_鱗1;
+    	public ShapePart X0Y0_左部_鱗_鱗1;
 
-    	public Par X0Y0_右部_鰓_鰓11;
+    	public ShapePart X0Y0_右部_鰓_鰓11;
 
-    	public Par X0Y0_右部_鰓_鰓10;
+    	public ShapePart X0Y0_右部_鰓_鰓10;
 
-    	public Par X0Y0_右部_鰓_鰓9;
+    	public ShapePart X0Y0_右部_鰓_鰓9;
 
-    	public Par X0Y0_右部_鰓_鰓8;
+    	public ShapePart X0Y0_右部_鰓_鰓8;
 
-    	public Par X0Y0_右部_鰓_鰓7;
+    	public ShapePart X0Y0_右部_鰓_鰓7;
 
-    	public Par X0Y0_右部_鰓_鰓6;
+    	public ShapePart X0Y0_右部_鰓_鰓6;
 
-    	public Par X0Y0_右部_鰓_鰓5;
+    	public ShapePart X0Y0_右部_鰓_鰓5;
 
-    	public Par X0Y0_右部_鰓_鰓4;
+    	public ShapePart X0Y0_右部_鰓_鰓4;
 
-    	public Par X0Y0_右部_鰓_鰓3;
+    	public ShapePart X0Y0_右部_鰓_鰓3;
 
-    	public Par X0Y0_右部_鰓_鰓2;
+    	public ShapePart X0Y0_右部_鰓_鰓2;
 
-    	public Par X0Y0_右部_鰓_鰓1;
+    	public ShapePart X0Y0_右部_鰓_鰓1;
 
-    	public Par X0Y0_右部_鱗_鱗7;
+    	public ShapePart X0Y0_右部_鱗_鱗7;
 
-    	public Par X0Y0_右部_鱗_鱗6;
+    	public ShapePart X0Y0_右部_鱗_鱗6;
 
-    	public Par X0Y0_右部_鱗_鱗5;
+    	public ShapePart X0Y0_右部_鱗_鱗5;
 
-    	public Par X0Y0_右部_鱗_鱗4;
+    	public ShapePart X0Y0_右部_鱗_鱗4;
 
-    	public Par X0Y0_右部_鱗_鱗3;
+    	public ShapePart X0Y0_右部_鱗_鱗3;
 
-    	public Par X0Y0_右部_鱗_鱗2;
+    	public ShapePart X0Y0_右部_鱗_鱗2;
 
-    	public Par X0Y0_右部_鱗_鱗1;
+    	public ShapePart X0Y0_右部_鱗_鱗1;
 
-    	public Par X0Y0_鼻部_鱗3;
+    	public ShapePart X0Y0_鼻部_鱗3;
 
-    	public Par X0Y0_鼻部_鱗左;
+    	public ShapePart X0Y0_鼻部_鱗左;
 
-    	public Par X0Y0_鼻部_鱗右;
+    	public ShapePart X0Y0_鼻部_鱗右;
 
-    	public Par X0Y0_鼻部_鱗2;
+    	public ShapePart X0Y0_鼻部_鱗2;
 
-    	public Par X0Y0_鼻部_鱗1;
+    	public ShapePart X0Y0_鼻部_鱗1;
 
-    	public Par X0Y0_縁下_縁下;
+    	public ShapePart X0Y0_縁下_縁下;
 
-    	public Par X0Y0_縁下_鱗_鱗左_鱗7;
+    	public ShapePart X0Y0_縁下_鱗_鱗左_鱗7;
 
-    	public Par X0Y0_縁下_鱗_鱗左_鱗6;
+    	public ShapePart X0Y0_縁下_鱗_鱗左_鱗6;
 
-    	public Par X0Y0_縁下_鱗_鱗左_鱗5;
+    	public ShapePart X0Y0_縁下_鱗_鱗左_鱗5;
 
-    	public Par X0Y0_縁下_鱗_鱗左_鱗4;
+    	public ShapePart X0Y0_縁下_鱗_鱗左_鱗4;
 
-    	public Par X0Y0_縁下_鱗_鱗左_鱗3;
+    	public ShapePart X0Y0_縁下_鱗_鱗左_鱗3;
 
-    	public Par X0Y0_縁下_鱗_鱗左_鱗2;
+    	public ShapePart X0Y0_縁下_鱗_鱗左_鱗2;
 
-    	public Par X0Y0_縁下_鱗_鱗左_鱗1;
+    	public ShapePart X0Y0_縁下_鱗_鱗左_鱗1;
 
-    	public Par X0Y0_縁下_鱗_鱗右_鱗7;
+    	public ShapePart X0Y0_縁下_鱗_鱗右_鱗7;
 
-    	public Par X0Y0_縁下_鱗_鱗右_鱗6;
+    	public ShapePart X0Y0_縁下_鱗_鱗右_鱗6;
 
-    	public Par X0Y0_縁下_鱗_鱗右_鱗5;
+    	public ShapePart X0Y0_縁下_鱗_鱗右_鱗5;
 
-    	public Par X0Y0_縁下_鱗_鱗右_鱗4;
+    	public ShapePart X0Y0_縁下_鱗_鱗右_鱗4;
 
-    	public Par X0Y0_縁下_鱗_鱗右_鱗3;
+    	public ShapePart X0Y0_縁下_鱗_鱗右_鱗3;
 
-    	public Par X0Y0_縁下_鱗_鱗右_鱗2;
+    	public ShapePart X0Y0_縁下_鱗_鱗右_鱗2;
 
-    	public Par X0Y0_縁下_鱗_鱗右_鱗1;
+    	public ShapePart X0Y0_縁下_鱗_鱗右_鱗1;
 
-    	public Par X0Y0_縁下_鱗_鱗;
+    	public ShapePart X0Y0_縁下_鱗_鱗;
 
-    	public Par X0Y0_縁上_縁上;
+    	public ShapePart X0Y0_縁上_縁上;
 
-    	public Par X0Y0_縁上_鱗_鱗左_鱗6;
+    	public ShapePart X0Y0_縁上_鱗_鱗左_鱗6;
 
-    	public Par X0Y0_縁上_鱗_鱗左_鱗5;
+    	public ShapePart X0Y0_縁上_鱗_鱗左_鱗5;
 
-    	public Par X0Y0_縁上_鱗_鱗左_鱗4;
+    	public ShapePart X0Y0_縁上_鱗_鱗左_鱗4;
 
-    	public Par X0Y0_縁上_鱗_鱗左_鱗3;
+    	public ShapePart X0Y0_縁上_鱗_鱗左_鱗3;
 
-    	public Par X0Y0_縁上_鱗_鱗左_鱗2;
+    	public ShapePart X0Y0_縁上_鱗_鱗左_鱗2;
 
-    	public Par X0Y0_縁上_鱗_鱗左_鱗1;
+    	public ShapePart X0Y0_縁上_鱗_鱗左_鱗1;
 
-    	public Par X0Y0_縁上_鱗_鱗右_鱗6;
+    	public ShapePart X0Y0_縁上_鱗_鱗右_鱗6;
 
-    	public Par X0Y0_縁上_鱗_鱗右_鱗5;
+    	public ShapePart X0Y0_縁上_鱗_鱗右_鱗5;
 
-    	public Par X0Y0_縁上_鱗_鱗右_鱗4;
+    	public ShapePart X0Y0_縁上_鱗_鱗右_鱗4;
 
-    	public Par X0Y0_縁上_鱗_鱗右_鱗3;
+    	public ShapePart X0Y0_縁上_鱗_鱗右_鱗3;
 
-    	public Par X0Y0_縁上_鱗_鱗右_鱗2;
+    	public ShapePart X0Y0_縁上_鱗_鱗右_鱗2;
 
-    	public Par X0Y0_縁上_鱗_鱗右_鱗1;
+    	public ShapePart X0Y0_縁上_鱗_鱗右_鱗1;
 
-    	public Par X0Y0_縁上_鱗_鱗1;
+    	public ShapePart X0Y0_縁上_鱗_鱗1;
 
-    	public Par X0Y0_縁上_鱗_鱗2;
+    	public ShapePart X0Y0_縁上_鱗_鱗2;
 
     	public ColorD 頭部CD;
 
@@ -494,7 +494,7 @@ namespace SlaveMatrix
 
     	private bool 鱗_;
 
-    	public Ele[] 頭部後_接続;
+    	public Element[] 頭部後_接続;
 
     	public override bool 欠損
     	{
@@ -1860,16 +1860,16 @@ namespace SlaveMatrix
     	{
     		頭頂_宇 頭頂_宇2 = this;
     		ThisType = GetType();
-    		Dif dif = new Dif();
-    		dif.Tag = "エイリアン";
-    		dif.Add(new Pars(Sta.肢中["頭部前"][0][0]));
-    		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		X0Y0_頭部 = pars["頭部"].ToPar();
-    		Pars pars2 = pars["頭頂部"].ToPars();
-    		Pars pars3 = pars2["透"].ToPars();
+    		MorphVariant morphVariant = new MorphVariant();
+    		morphVariant.Tag = "エイリアン";
+    		morphVariant.Add(new PartGroup(GlobalState.肢中["頭部前"][0][0]));
+    		Body = new VariantGrid();
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_頭部 = partGroup["頭部"].ToPar();
+    		PartGroup pars2 = partGroup["頭頂部"].ToPars();
+    		PartGroup pars3 = pars2["透"].ToPars();
     		X0Y0_頭頂部_透_基 = pars3["基"].ToPar();
     		X0Y0_頭頂部_透_ハイライト1 = pars3["ハイライト1"].ToPar();
     		X0Y0_頭頂部_透_ハイライト2 = pars3["ハイライト2"].ToPar();
@@ -1879,7 +1879,7 @@ namespace SlaveMatrix
     		X0Y0_頭頂部_鱗_鱗3 = pars3["鱗3"].ToPar();
     		X0Y0_頭頂部_鱗_鱗2 = pars3["鱗2"].ToPar();
     		X0Y0_頭頂部_鱗_鱗1 = pars3["鱗1"].ToPar();
-    		pars2 = pars["左部"].ToPars();
+    		pars2 = partGroup["左部"].ToPars();
     		pars3 = pars2["鰓"].ToPars();
     		X0Y0_左部_鰓_鰓11 = pars3["鰓11"].ToPar();
     		X0Y0_左部_鰓_鰓10 = pars3["鰓10"].ToPar();
@@ -1900,7 +1900,7 @@ namespace SlaveMatrix
     		X0Y0_左部_鱗_鱗3 = pars3["鱗3"].ToPar();
     		X0Y0_左部_鱗_鱗2 = pars3["鱗2"].ToPar();
     		X0Y0_左部_鱗_鱗1 = pars3["鱗1"].ToPar();
-    		pars2 = pars["右部"].ToPars();
+    		pars2 = partGroup["右部"].ToPars();
     		pars3 = pars2["鰓"].ToPars();
     		X0Y0_右部_鰓_鰓11 = pars3["鰓11"].ToPar();
     		X0Y0_右部_鰓_鰓10 = pars3["鰓10"].ToPar();
@@ -1921,16 +1921,16 @@ namespace SlaveMatrix
     		X0Y0_右部_鱗_鱗3 = pars3["鱗3"].ToPar();
     		X0Y0_右部_鱗_鱗2 = pars3["鱗2"].ToPar();
     		X0Y0_右部_鱗_鱗1 = pars3["鱗1"].ToPar();
-    		pars2 = pars["鼻部"].ToPars();
+    		pars2 = partGroup["鼻部"].ToPars();
     		X0Y0_鼻部_鱗3 = pars2["鱗3"].ToPar();
     		X0Y0_鼻部_鱗左 = pars2["鱗左"].ToPar();
     		X0Y0_鼻部_鱗右 = pars2["鱗右"].ToPar();
     		X0Y0_鼻部_鱗2 = pars2["鱗2"].ToPar();
     		X0Y0_鼻部_鱗1 = pars2["鱗1"].ToPar();
-    		pars2 = pars["縁下"].ToPars();
+    		pars2 = partGroup["縁下"].ToPars();
     		X0Y0_縁下_縁下 = pars2["縁下"].ToPar();
     		pars3 = pars2["鱗"].ToPars();
-    		Pars pars4 = pars3["鱗左"].ToPars();
+    		PartGroup pars4 = pars3["鱗左"].ToPars();
     		X0Y0_縁下_鱗_鱗左_鱗7 = pars4["鱗7"].ToPar();
     		X0Y0_縁下_鱗_鱗左_鱗6 = pars4["鱗6"].ToPar();
     		X0Y0_縁下_鱗_鱗左_鱗5 = pars4["鱗5"].ToPar();
@@ -1947,7 +1947,7 @@ namespace SlaveMatrix
     		X0Y0_縁下_鱗_鱗右_鱗2 = pars4["鱗2"].ToPar();
     		X0Y0_縁下_鱗_鱗右_鱗1 = pars4["鱗1"].ToPar();
     		X0Y0_縁下_鱗_鱗 = pars3["鱗"].ToPar();
-    		pars2 = pars["縁上"].ToPars();
+    		pars2 = partGroup["縁上"].ToPars();
     		X0Y0_縁上_縁上 = pars2["縁上"].ToPar();
     		pars3 = pars2["鱗"].ToPars();
     		pars4 = pars3["鱗左"].ToPars();
@@ -2081,8 +2081,8 @@ namespace SlaveMatrix
     		}
     		if (e.頭部後_接続.Count > 0)
     		{
-    			Ele f;
-    			頭部後_接続 = e.頭部後_接続.Select(delegate(EleD g)
+    			Element f;
+    			頭部後_接続 = e.頭部後_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 頭頂_宇2;
@@ -2283,257 +2283,257 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		頭部CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		頭頂部_透_基CD = new ColorD(ref Col.Black, ref 体配色.コアO);
-    		頭頂部_透_ハイライト1CD = new ColorD(ref Col.Black, ref 体配色.ハイライト);
-    		頭頂部_透_ハイライト2CD = new ColorD(ref Col.Black, ref 体配色.ハイライト);
-    		頭頂部_鱗_鱗5CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		頭頂部_鱗_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		頭頂部_鱗_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		頭頂部_鱗_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		頭頂部_鱗_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		左部_鰓_鰓11CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		左部_鰓_鰓10CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		左部_鰓_鰓9CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		左部_鰓_鰓8CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		左部_鰓_鰓7CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		左部_鰓_鰓6CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		左部_鰓_鰓5CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		左部_鰓_鰓4CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		左部_鰓_鰓3CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		左部_鰓_鰓2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		左部_鰓_鰓1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		左部_鱗_鱗7CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		左部_鱗_鱗6CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		左部_鱗_鱗5CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		左部_鱗_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		左部_鱗_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		左部_鱗_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		左部_鱗_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		右部_鰓_鰓11CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		右部_鰓_鰓10CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		右部_鰓_鰓9CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		右部_鰓_鰓8CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		右部_鰓_鰓7CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		右部_鰓_鰓6CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		右部_鰓_鰓5CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		右部_鰓_鰓4CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		右部_鰓_鰓3CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		右部_鰓_鰓2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		右部_鰓_鰓1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		右部_鱗_鱗7CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		右部_鱗_鱗6CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		右部_鱗_鱗5CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		右部_鱗_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		右部_鱗_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		右部_鱗_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		右部_鱗_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		鼻部_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		鼻部_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		鼻部_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		鼻部_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		鼻部_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		縁下_縁下CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		縁下_鱗_鱗左_鱗7CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		縁下_鱗_鱗左_鱗6CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		縁下_鱗_鱗左_鱗5CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		縁下_鱗_鱗左_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		縁下_鱗_鱗左_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		縁下_鱗_鱗左_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		縁下_鱗_鱗左_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		縁下_鱗_鱗右_鱗7CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		縁下_鱗_鱗右_鱗6CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		縁下_鱗_鱗右_鱗5CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		縁下_鱗_鱗右_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		縁下_鱗_鱗右_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		縁下_鱗_鱗右_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		縁下_鱗_鱗右_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		縁下_鱗_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		縁上_縁上CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		縁上_鱗_鱗左_鱗6CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		縁上_鱗_鱗左_鱗5CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		縁上_鱗_鱗左_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		縁上_鱗_鱗左_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		縁上_鱗_鱗左_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		縁上_鱗_鱗左_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		縁上_鱗_鱗右_鱗6CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		縁上_鱗_鱗右_鱗5CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		縁上_鱗_鱗右_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		縁上_鱗_鱗右_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		縁上_鱗_鱗右_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		縁上_鱗_鱗右_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		縁上_鱗_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		縁上_鱗_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		頭部CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		頭頂部_透_基CD = new ColorD(ref ColorHelper.Black, ref 体配色.コアO);
+    		頭頂部_透_ハイライト1CD = new ColorD(ref ColorHelper.Black, ref 体配色.ハイライト);
+    		頭頂部_透_ハイライト2CD = new ColorD(ref ColorHelper.Black, ref 体配色.ハイライト);
+    		頭頂部_鱗_鱗5CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		頭頂部_鱗_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		頭頂部_鱗_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		頭頂部_鱗_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		頭頂部_鱗_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		左部_鰓_鰓11CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		左部_鰓_鰓10CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		左部_鰓_鰓9CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		左部_鰓_鰓8CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		左部_鰓_鰓7CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		左部_鰓_鰓6CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		左部_鰓_鰓5CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		左部_鰓_鰓4CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		左部_鰓_鰓3CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		左部_鰓_鰓2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		左部_鰓_鰓1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		左部_鱗_鱗7CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		左部_鱗_鱗6CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		左部_鱗_鱗5CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		左部_鱗_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		左部_鱗_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		左部_鱗_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		左部_鱗_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		右部_鰓_鰓11CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		右部_鰓_鰓10CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		右部_鰓_鰓9CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		右部_鰓_鰓8CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		右部_鰓_鰓7CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		右部_鰓_鰓6CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		右部_鰓_鰓5CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		右部_鰓_鰓4CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		右部_鰓_鰓3CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		右部_鰓_鰓2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		右部_鰓_鰓1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		右部_鱗_鱗7CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		右部_鱗_鱗6CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		右部_鱗_鱗5CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		右部_鱗_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		右部_鱗_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		右部_鱗_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		右部_鱗_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		鼻部_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		鼻部_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		鼻部_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		鼻部_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		鼻部_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		縁下_縁下CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		縁下_鱗_鱗左_鱗7CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		縁下_鱗_鱗左_鱗6CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		縁下_鱗_鱗左_鱗5CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		縁下_鱗_鱗左_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		縁下_鱗_鱗左_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		縁下_鱗_鱗左_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		縁下_鱗_鱗左_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		縁下_鱗_鱗右_鱗7CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		縁下_鱗_鱗右_鱗6CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		縁下_鱗_鱗右_鱗5CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		縁下_鱗_鱗右_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		縁下_鱗_鱗右_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		縁下_鱗_鱗右_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		縁下_鱗_鱗右_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		縁下_鱗_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		縁上_縁上CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		縁上_鱗_鱗左_鱗6CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		縁上_鱗_鱗左_鱗5CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		縁上_鱗_鱗左_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		縁上_鱗_鱗左_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		縁上_鱗_鱗左_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		縁上_鱗_鱗左_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		縁上_鱗_鱗右_鱗6CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		縁上_鱗_鱗右_鱗5CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		縁上_鱗_鱗右_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		縁上_鱗_鱗右_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		縁上_鱗_鱗右_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		縁上_鱗_鱗右_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		縁上_鱗_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		縁上_鱗_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
     	}
 
     	private void 配色T0(BodyColorSet 体配色)
     	{
-    		頭部CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		頭頂部_透_基CD = new ColorD(ref Col.Black, ref 体配色.コアO);
-    		頭頂部_透_ハイライト1CD = new ColorD(ref Col.Black, ref 体配色.ハイライト);
-    		頭頂部_透_ハイライト2CD = new ColorD(ref Col.Black, ref 体配色.ハイライト);
-    		頭頂部_鱗_鱗5CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		頭頂部_鱗_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		頭頂部_鱗_鱗3CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		頭頂部_鱗_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		頭頂部_鱗_鱗1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		左部_鰓_鰓11CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		左部_鰓_鰓10CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		左部_鰓_鰓9CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		左部_鰓_鰓8CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		左部_鰓_鰓7CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		左部_鰓_鰓6CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		左部_鰓_鰓5CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		左部_鰓_鰓4CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		左部_鰓_鰓3CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		左部_鰓_鰓2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		左部_鰓_鰓1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		左部_鱗_鱗7CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		左部_鱗_鱗6CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		左部_鱗_鱗5CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		左部_鱗_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		左部_鱗_鱗3CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		左部_鱗_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		左部_鱗_鱗1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		右部_鰓_鰓11CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		右部_鰓_鰓10CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		右部_鰓_鰓9CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		右部_鰓_鰓8CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		右部_鰓_鰓7CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		右部_鰓_鰓6CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		右部_鰓_鰓5CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		右部_鰓_鰓4CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		右部_鰓_鰓3CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		右部_鰓_鰓2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		右部_鰓_鰓1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		右部_鱗_鱗7CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		右部_鱗_鱗6CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		右部_鱗_鱗5CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		右部_鱗_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		右部_鱗_鱗3CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		右部_鱗_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		右部_鱗_鱗1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		鼻部_鱗3CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		鼻部_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		鼻部_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		鼻部_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		鼻部_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		縁下_縁下CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		縁下_鱗_鱗左_鱗7CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		縁下_鱗_鱗左_鱗6CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		縁下_鱗_鱗左_鱗5CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		縁下_鱗_鱗左_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		縁下_鱗_鱗左_鱗3CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		縁下_鱗_鱗左_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		縁下_鱗_鱗左_鱗1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		縁下_鱗_鱗右_鱗7CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		縁下_鱗_鱗右_鱗6CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		縁下_鱗_鱗右_鱗5CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		縁下_鱗_鱗右_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		縁下_鱗_鱗右_鱗3CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		縁下_鱗_鱗右_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		縁下_鱗_鱗右_鱗1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		縁下_鱗_鱗CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		縁上_縁上CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		縁上_鱗_鱗左_鱗6CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		縁上_鱗_鱗左_鱗5CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		縁上_鱗_鱗左_鱗4CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		縁上_鱗_鱗左_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		縁上_鱗_鱗左_鱗2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		縁上_鱗_鱗左_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		縁上_鱗_鱗右_鱗6CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		縁上_鱗_鱗右_鱗5CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		縁上_鱗_鱗右_鱗4CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		縁上_鱗_鱗右_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		縁上_鱗_鱗右_鱗2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		縁上_鱗_鱗右_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		縁上_鱗_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		縁上_鱗_鱗2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		頭部CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		頭頂部_透_基CD = new ColorD(ref ColorHelper.Black, ref 体配色.コアO);
+    		頭頂部_透_ハイライト1CD = new ColorD(ref ColorHelper.Black, ref 体配色.ハイライト);
+    		頭頂部_透_ハイライト2CD = new ColorD(ref ColorHelper.Black, ref 体配色.ハイライト);
+    		頭頂部_鱗_鱗5CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		頭頂部_鱗_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		頭頂部_鱗_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		頭頂部_鱗_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		頭頂部_鱗_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		左部_鰓_鰓11CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		左部_鰓_鰓10CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		左部_鰓_鰓9CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		左部_鰓_鰓8CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		左部_鰓_鰓7CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		左部_鰓_鰓6CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		左部_鰓_鰓5CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		左部_鰓_鰓4CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		左部_鰓_鰓3CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		左部_鰓_鰓2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		左部_鰓_鰓1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		左部_鱗_鱗7CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		左部_鱗_鱗6CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		左部_鱗_鱗5CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		左部_鱗_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		左部_鱗_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		左部_鱗_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		左部_鱗_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		右部_鰓_鰓11CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		右部_鰓_鰓10CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		右部_鰓_鰓9CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		右部_鰓_鰓8CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		右部_鰓_鰓7CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		右部_鰓_鰓6CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		右部_鰓_鰓5CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		右部_鰓_鰓4CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		右部_鰓_鰓3CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		右部_鰓_鰓2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		右部_鰓_鰓1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		右部_鱗_鱗7CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		右部_鱗_鱗6CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		右部_鱗_鱗5CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		右部_鱗_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		右部_鱗_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		右部_鱗_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		右部_鱗_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		鼻部_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		鼻部_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		鼻部_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		鼻部_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		鼻部_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		縁下_縁下CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		縁下_鱗_鱗左_鱗7CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		縁下_鱗_鱗左_鱗6CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		縁下_鱗_鱗左_鱗5CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		縁下_鱗_鱗左_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		縁下_鱗_鱗左_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		縁下_鱗_鱗左_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		縁下_鱗_鱗左_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		縁下_鱗_鱗右_鱗7CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		縁下_鱗_鱗右_鱗6CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		縁下_鱗_鱗右_鱗5CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		縁下_鱗_鱗右_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		縁下_鱗_鱗右_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		縁下_鱗_鱗右_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		縁下_鱗_鱗右_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		縁下_鱗_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		縁上_縁上CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		縁上_鱗_鱗左_鱗6CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		縁上_鱗_鱗左_鱗5CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		縁上_鱗_鱗左_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		縁上_鱗_鱗左_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		縁上_鱗_鱗左_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		縁上_鱗_鱗左_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		縁上_鱗_鱗右_鱗6CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		縁上_鱗_鱗右_鱗5CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		縁上_鱗_鱗右_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		縁上_鱗_鱗右_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		縁上_鱗_鱗右_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		縁上_鱗_鱗右_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		縁上_鱗_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		縁上_鱗_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
     	}
 
     	private void 配色T1(BodyColorSet 体配色)
     	{
-    		頭部CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		頭頂部_透_基CD = new ColorD(ref Col.Black, ref 体配色.コアO);
-    		頭頂部_透_ハイライト1CD = new ColorD(ref Col.Black, ref 体配色.ハイライト);
-    		頭頂部_透_ハイライト2CD = new ColorD(ref Col.Black, ref 体配色.ハイライト);
-    		頭頂部_鱗_鱗5CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		頭頂部_鱗_鱗4CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		頭頂部_鱗_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		頭頂部_鱗_鱗2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		頭頂部_鱗_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		左部_鰓_鰓11CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		左部_鰓_鰓10CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		左部_鰓_鰓9CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		左部_鰓_鰓8CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		左部_鰓_鰓7CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		左部_鰓_鰓6CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		左部_鰓_鰓5CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		左部_鰓_鰓4CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		左部_鰓_鰓3CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		左部_鰓_鰓2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		左部_鰓_鰓1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		左部_鱗_鱗7CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		左部_鱗_鱗6CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		左部_鱗_鱗5CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		左部_鱗_鱗4CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		左部_鱗_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		左部_鱗_鱗2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		左部_鱗_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		右部_鰓_鰓11CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		右部_鰓_鰓10CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		右部_鰓_鰓9CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		右部_鰓_鰓8CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		右部_鰓_鰓7CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		右部_鰓_鰓6CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		右部_鰓_鰓5CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		右部_鰓_鰓4CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		右部_鰓_鰓3CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		右部_鰓_鰓2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		右部_鰓_鰓1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		右部_鱗_鱗7CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		右部_鱗_鱗6CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		右部_鱗_鱗5CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		右部_鱗_鱗4CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		右部_鱗_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		右部_鱗_鱗2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		右部_鱗_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		鼻部_鱗3CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		鼻部_鱗左CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		鼻部_鱗右CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		鼻部_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		鼻部_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		縁下_縁下CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		縁下_鱗_鱗左_鱗7CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		縁下_鱗_鱗左_鱗6CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		縁下_鱗_鱗左_鱗5CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		縁下_鱗_鱗左_鱗4CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		縁下_鱗_鱗左_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		縁下_鱗_鱗左_鱗2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		縁下_鱗_鱗左_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		縁下_鱗_鱗右_鱗7CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		縁下_鱗_鱗右_鱗6CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		縁下_鱗_鱗右_鱗5CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		縁下_鱗_鱗右_鱗4CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		縁下_鱗_鱗右_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		縁下_鱗_鱗右_鱗2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		縁下_鱗_鱗右_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		縁下_鱗_鱗CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		縁上_縁上CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		縁上_鱗_鱗左_鱗6CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		縁上_鱗_鱗左_鱗5CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		縁上_鱗_鱗左_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		縁上_鱗_鱗左_鱗3CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		縁上_鱗_鱗左_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		縁上_鱗_鱗左_鱗1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		縁上_鱗_鱗右_鱗6CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		縁上_鱗_鱗右_鱗5CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		縁上_鱗_鱗右_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		縁上_鱗_鱗右_鱗3CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		縁上_鱗_鱗右_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		縁上_鱗_鱗右_鱗1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		縁上_鱗_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		縁上_鱗_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		頭部CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		頭頂部_透_基CD = new ColorD(ref ColorHelper.Black, ref 体配色.コアO);
+    		頭頂部_透_ハイライト1CD = new ColorD(ref ColorHelper.Black, ref 体配色.ハイライト);
+    		頭頂部_透_ハイライト2CD = new ColorD(ref ColorHelper.Black, ref 体配色.ハイライト);
+    		頭頂部_鱗_鱗5CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		頭頂部_鱗_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		頭頂部_鱗_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		頭頂部_鱗_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		頭頂部_鱗_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		左部_鰓_鰓11CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		左部_鰓_鰓10CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		左部_鰓_鰓9CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		左部_鰓_鰓8CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		左部_鰓_鰓7CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		左部_鰓_鰓6CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		左部_鰓_鰓5CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		左部_鰓_鰓4CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		左部_鰓_鰓3CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		左部_鰓_鰓2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		左部_鰓_鰓1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		左部_鱗_鱗7CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		左部_鱗_鱗6CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		左部_鱗_鱗5CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		左部_鱗_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		左部_鱗_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		左部_鱗_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		左部_鱗_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		右部_鰓_鰓11CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		右部_鰓_鰓10CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		右部_鰓_鰓9CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		右部_鰓_鰓8CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		右部_鰓_鰓7CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		右部_鰓_鰓6CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		右部_鰓_鰓5CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		右部_鰓_鰓4CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		右部_鰓_鰓3CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		右部_鰓_鰓2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		右部_鰓_鰓1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		右部_鱗_鱗7CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		右部_鱗_鱗6CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		右部_鱗_鱗5CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		右部_鱗_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		右部_鱗_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		右部_鱗_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		右部_鱗_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		鼻部_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		鼻部_鱗左CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		鼻部_鱗右CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		鼻部_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		鼻部_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		縁下_縁下CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		縁下_鱗_鱗左_鱗7CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		縁下_鱗_鱗左_鱗6CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		縁下_鱗_鱗左_鱗5CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		縁下_鱗_鱗左_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		縁下_鱗_鱗左_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		縁下_鱗_鱗左_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		縁下_鱗_鱗左_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		縁下_鱗_鱗右_鱗7CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		縁下_鱗_鱗右_鱗6CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		縁下_鱗_鱗右_鱗5CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		縁下_鱗_鱗右_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		縁下_鱗_鱗右_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		縁下_鱗_鱗右_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		縁下_鱗_鱗右_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		縁下_鱗_鱗CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		縁上_縁上CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		縁上_鱗_鱗左_鱗6CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		縁上_鱗_鱗左_鱗5CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		縁上_鱗_鱗左_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		縁上_鱗_鱗左_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		縁上_鱗_鱗左_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		縁上_鱗_鱗左_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		縁上_鱗_鱗右_鱗6CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		縁上_鱗_鱗右_鱗5CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		縁上_鱗_鱗右_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		縁上_鱗_鱗右_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		縁上_鱗_鱗右_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		縁上_鱗_鱗右_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		縁上_鱗_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		縁上_鱗_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
     	}
     }
 }

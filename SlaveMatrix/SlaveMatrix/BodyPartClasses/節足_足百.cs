@@ -4,31 +4,31 @@ namespace SlaveMatrix
 {
     public class 節足_足百 : 節足
     {
-    	public Par X0Y0_基節;
+    	public ShapePart X0Y0_基節;
 
-    	public Par X0Y0_転節;
+    	public ShapePart X0Y0_転節;
 
-    	public Par X0Y0_前腿節;
+    	public ShapePart X0Y0_前腿節;
 
-    	public Par X0Y0_腿節;
+    	public ShapePart X0Y0_腿節;
 
-    	public Par X0Y0_脛節;
+    	public ShapePart X0Y0_脛節;
 
-    	public Par X0Y0_輪_革;
+    	public ShapePart X0Y0_輪_革;
 
-    	public Par X0Y0_輪_金具1;
+    	public ShapePart X0Y0_輪_金具1;
 
-    	public Par X0Y0_輪_金具2;
+    	public ShapePart X0Y0_輪_金具2;
 
-    	public Par X0Y0_輪_金具3;
+    	public ShapePart X0Y0_輪_金具3;
 
-    	public Par X0Y0_輪_金具左;
+    	public ShapePart X0Y0_輪_金具左;
 
-    	public Par X0Y0_輪_金具右;
+    	public ShapePart X0Y0_輪_金具右;
 
-    	public Par X0Y0_跗節1;
+    	public ShapePart X0Y0_跗節1;
 
-    	public Par X0Y0_跗節2;
+    	public ShapePart X0Y0_跗節2;
 
     	public ColorD 基節CD;
 
@@ -375,27 +375,27 @@ namespace SlaveMatrix
     	public 節足_足百(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 節足_足百D e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif();
-    		dif.Tag = "節足百";
-    		dif.Add(new Pars(Sta.肢左["節足"][0][4]));
-    		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		X0Y0_基節 = pars["基節"].ToPar();
-    		X0Y0_転節 = pars["転節"].ToPar();
-    		X0Y0_前腿節 = pars["前腿節"].ToPar();
-    		X0Y0_腿節 = pars["腿節"].ToPar();
-    		X0Y0_脛節 = pars["脛節"].ToPar();
-    		Pars pars2 = pars["輪"].ToPars();
+    		MorphVariant morphVariant = new MorphVariant();
+    		morphVariant.Tag = "節足百";
+    		morphVariant.Add(new PartGroup(GlobalState.肢左["節足"][0][4]));
+    		Body = new VariantGrid();
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_基節 = partGroup["基節"].ToPar();
+    		X0Y0_転節 = partGroup["転節"].ToPar();
+    		X0Y0_前腿節 = partGroup["前腿節"].ToPar();
+    		X0Y0_腿節 = partGroup["腿節"].ToPar();
+    		X0Y0_脛節 = partGroup["脛節"].ToPar();
+    		PartGroup pars2 = partGroup["輪"].ToPars();
     		X0Y0_輪_革 = pars2["革"].ToPar();
     		X0Y0_輪_金具1 = pars2["金具1"].ToPar();
     		X0Y0_輪_金具2 = pars2["金具2"].ToPar();
     		X0Y0_輪_金具3 = pars2["金具3"].ToPar();
     		X0Y0_輪_金具左 = pars2["金具左"].ToPar();
     		X0Y0_輪_金具右 = pars2["金具右"].ToPar();
-    		X0Y0_跗節1 = pars["跗節1"].ToPar();
-    		X0Y0_跗節2 = pars["跗節2"].ToPar();
+    		X0Y0_跗節1 = partGroup["跗節1"].ToPar();
+    		X0Y0_跗節2 = partGroup["跗節2"].ToPar();
     		Xasix = false;
     		Body.SetJoints();
     		接続根 = new JointD(Body);
@@ -504,7 +504,7 @@ namespace SlaveMatrix
     		Body.JoinPAall();
     	}
 
-    	public override bool Is革(Par p)
+    	public override bool Is革(ShapePart p)
     	{
     		if (p != X0Y0_輪_革 && p != X0Y0_輪_金具1 && p != X0Y0_輪_金具2 && p != X0Y0_輪_金具3 && p != X0Y0_輪_金具左)
     		{
@@ -553,13 +553,13 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		基節CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		転節CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		前腿節CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		腿節CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		脛節CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		跗節1CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		跗節2CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
+    		基節CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		転節CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		前腿節CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		腿節CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		脛節CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		跗節1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		跗節2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
     		輪_革CD = new ColorD();
     		輪_金具1CD = new ColorD();
     		輪_金具2CD = new ColorD();
@@ -570,13 +570,13 @@ namespace SlaveMatrix
 
     	private void 配色T0(BodyColorSet 体配色)
     	{
-    		基節CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		転節CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		前腿節CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		腿節CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		脛節CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		跗節1CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		跗節2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		基節CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		転節CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		前腿節CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		腿節CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		脛節CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		跗節1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		跗節2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
     		輪_革CD = new ColorD();
     		輪_金具1CD = new ColorD();
     		輪_金具2CD = new ColorD();
@@ -587,13 +587,13 @@ namespace SlaveMatrix
 
     	private void 配色T1(BodyColorSet 体配色)
     	{
-    		基節CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		転節CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		前腿節CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		腿節CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		脛節CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		跗節1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		跗節2CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
+    		基節CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		転節CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		前腿節CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		腿節CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		脛節CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		跗節1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		跗節2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
     		輪_革CD = new ColorD();
     		輪_金具1CD = new ColorD();
     		輪_金具2CD = new ColorD();

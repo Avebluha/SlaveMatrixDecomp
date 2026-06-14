@@ -4,25 +4,25 @@ using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
-    public class 拘束鎖 : Ele
+    public class 拘束鎖 : Element
     {
-    	public Par X0Y0_鎖2;
+    	public ShapePart X0Y0_鎖2;
 
-    	public Par X0Y0_鎖1;
+    	public ShapePart X0Y0_鎖1;
 
-    	public Par X0Y0_鎖4;
+    	public ShapePart X0Y0_鎖4;
 
-    	public Par X0Y0_鎖3;
+    	public ShapePart X0Y0_鎖3;
 
-    	public Par X0Y0_鎖6;
+    	public ShapePart X0Y0_鎖6;
 
-    	public Par X0Y0_鎖5;
+    	public ShapePart X0Y0_鎖5;
 
-    	public Par X0Y0_鎖8;
+    	public ShapePart X0Y0_鎖8;
 
-    	public Par X0Y0_鎖7;
+    	public ShapePart X0Y0_鎖7;
 
-    	public Par X0Y0_鎖9;
+    	public ShapePart X0Y0_鎖9;
 
     	public ColorD 鎖2CD;
 
@@ -256,17 +256,17 @@ namespace SlaveMatrix
     	public 拘束鎖(double DisUnit, bool 右, 配色指定 配色指定, BodyColorSet 体配色, bool Xasix)
     	{
     		ThisType = GetType();
-    		Body = new Difs(Sta.その他["拘束鎖"]);
-    		Pars pars = Body[0][0];
-    		X0Y0_鎖2 = pars["鎖2"].ToPar();
-    		X0Y0_鎖1 = pars["鎖1"].ToPar();
-    		X0Y0_鎖4 = pars["鎖4"].ToPar();
-    		X0Y0_鎖3 = pars["鎖3"].ToPar();
-    		X0Y0_鎖6 = pars["鎖6"].ToPar();
-    		X0Y0_鎖5 = pars["鎖5"].ToPar();
-    		X0Y0_鎖8 = pars["鎖8"].ToPar();
-    		X0Y0_鎖7 = pars["鎖7"].ToPar();
-    		X0Y0_鎖9 = pars["鎖9"].ToPar();
+    		Body = new VariantGrid(GlobalState.その他["拘束鎖"]);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_鎖2 = partGroup["鎖2"].ToPar();
+    		X0Y0_鎖1 = partGroup["鎖1"].ToPar();
+    		X0Y0_鎖4 = partGroup["鎖4"].ToPar();
+    		X0Y0_鎖3 = partGroup["鎖3"].ToPar();
+    		X0Y0_鎖6 = partGroup["鎖6"].ToPar();
+    		X0Y0_鎖5 = partGroup["鎖5"].ToPar();
+    		X0Y0_鎖8 = partGroup["鎖8"].ToPar();
+    		X0Y0_鎖7 = partGroup["鎖7"].ToPar();
+    		X0Y0_鎖9 = partGroup["鎖9"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		if (Xasix)
@@ -292,14 +292,14 @@ namespace SlaveMatrix
 
     	public void SetSize()
     	{
-    		Par par = 接続根.Difs0.GetCurrent().GetPar(接続根.Path0);
-    		if (par.GetJP().Count <= 0)
+    		ShapePart shapePart = 接続根.Difs0.GetCurrent().GetPar(接続根.Path0);
+    		if (shapePart.GetJP().Count <= 0)
     		{
     			return;
     		}
     		int num = 0;
-    		Vector2D vec2DZero = Dat.Vec2DZero;
-    		foreach (Out item in par.GetOP())
+    		Vector2D vec2DZero = DataConsts.Vec2DZero;
+    		foreach (CurveOutline item in shapePart.GetOP())
     		{
     			foreach (Vector2D item2 in item.ps.Skip(1).Take(item.ps.Count - 2))
     			{
@@ -307,12 +307,12 @@ namespace SlaveMatrix
     				num++;
     			}
     		}
-    		par.GetJP()[0] = new Joi(vec2DZero / num);
+    		shapePart.GetJP()[0] = new JointPoint(vec2DZero / num);
     		接続P();
-    		尺度B = (par.GetArea() / X0Y0_鎖1.GetArea()).Sqrt() * 1.2;
+    		尺度B = (shapePart.GetArea() / X0Y0_鎖1.GetArea()).Sqrt() * 1.2;
     	}
 
-    	public override bool Is鉄(Par p)
+    	public override bool Is鉄(ShapePart p)
     	{
     		if (X0Y0_鎖2 != p && X0Y0_鎖1 != p && X0Y0_鎖4 != p && X0Y0_鎖3 != p && X0Y0_鎖6 != p && X0Y0_鎖5 != p && X0Y0_鎖8 != p && X0Y0_鎖7 != p)
     		{

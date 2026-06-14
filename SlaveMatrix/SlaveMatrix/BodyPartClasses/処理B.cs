@@ -16,7 +16,7 @@ namespace SlaveMatrix
 
     	public InfoPanel ip;
 
-    	public CM 対象;
+    	public CharacterElement 対象;
 
     	public const int MaxLv = 3;
 
@@ -34,7 +34,7 @@ namespace SlaveMatrix
     		ip = 調教UI.ip;
     	}
 
-    	public 処理B(TrainingUI 調教UI, CM 対象)
+    	public 処理B(TrainingUI 調教UI, CharacterElement 対象)
     	{
     		this.調教UI = 調教UI;
     		Med = 調教UI.Med;

@@ -4,23 +4,23 @@ namespace SlaveMatrix
 {
     public class 潮吹_小_獣 : 潮吹_小
     {
-    	public Par X0Y0_雫;
+    	public ShapePart X0Y0_雫;
 
-    	public Par X0Y1_雫;
+    	public ShapePart X0Y1_雫;
 
-    	public Par X0Y2_雫;
+    	public ShapePart X0Y2_雫;
 
-    	public Par X0Y3_雫;
+    	public ShapePart X0Y3_雫;
 
-    	public Par X0Y4_雫;
+    	public ShapePart X0Y4_雫;
 
-    	public Par X0Y5_雫;
+    	public ShapePart X0Y5_雫;
 
-    	public Par X0Y6_雫;
+    	public ShapePart X0Y6_雫;
 
-    	public Par X0Y7_雫;
+    	public ShapePart X0Y7_雫;
 
-    	public Par X0Y8_雫;
+    	public ShapePart X0Y8_雫;
 
     	public ColorD 雫CD;
 
@@ -134,28 +134,28 @@ namespace SlaveMatrix
     	public 潮吹_小_獣(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 潮吹_小_獣D e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif(Sta.性器付["四足潮吹"][0]);
-    		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		X0Y0_雫 = pars["雫"].ToPar();
-    		pars = Body[0][1];
-    		X0Y1_雫 = pars["雫"].ToPar();
-    		pars = Body[0][2];
-    		X0Y2_雫 = pars["雫"].ToPar();
-    		pars = Body[0][3];
-    		X0Y3_雫 = pars["雫"].ToPar();
-    		pars = Body[0][4];
-    		X0Y4_雫 = pars["雫"].ToPar();
-    		pars = Body[0][5];
-    		X0Y5_雫 = pars["雫"].ToPar();
-    		pars = Body[0][6];
-    		X0Y6_雫 = pars["雫"].ToPar();
-    		pars = Body[0][7];
-    		X0Y7_雫 = pars["雫"].ToPar();
-    		pars = Body[0][8];
-    		X0Y8_雫 = pars["雫"].ToPar();
+    		MorphVariant morphVariant = new MorphVariant(GlobalState.性器付["四足潮吹"][0]);
+    		Body = new VariantGrid();
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_雫 = partGroup["雫"].ToPar();
+    		partGroup = Body[0][1];
+    		X0Y1_雫 = partGroup["雫"].ToPar();
+    		partGroup = Body[0][2];
+    		X0Y2_雫 = partGroup["雫"].ToPar();
+    		partGroup = Body[0][3];
+    		X0Y3_雫 = partGroup["雫"].ToPar();
+    		partGroup = Body[0][4];
+    		X0Y4_雫 = partGroup["雫"].ToPar();
+    		partGroup = Body[0][5];
+    		X0Y5_雫 = partGroup["雫"].ToPar();
+    		partGroup = Body[0][6];
+    		X0Y6_雫 = partGroup["雫"].ToPar();
+    		partGroup = Body[0][7];
+    		X0Y7_雫 = partGroup["雫"].ToPar();
+    		partGroup = Body[0][8];
+    		X0Y8_雫 = partGroup["雫"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;
@@ -243,7 +243,7 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		雫CD = new ColorD(ref Col.Empty, ref 体配色.体液);
+    		雫CD = new ColorD(ref ColorHelper.Empty, ref 体配色.体液);
     	}
     }
 }

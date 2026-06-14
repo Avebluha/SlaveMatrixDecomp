@@ -3,17 +3,17 @@ using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
-    public class ぶっかけ_大 : Ele
+    public class ぶっかけ_大 : Element
     {
-    	public Par X0Y0_精液;
+    	public ShapePart X0Y0_精液;
 
-    	public Par X0Y1_精液;
+    	public ShapePart X0Y1_精液;
 
-    	public Par X0Y2_精液;
+    	public ShapePart X0Y2_精液;
 
-    	public Par X0Y3_精液;
+    	public ShapePart X0Y3_精液;
 
-    	public Par X0Y4_精液;
+    	public ShapePart X0Y4_精液;
 
     	public ColorD 精液CD;
 
@@ -111,20 +111,20 @@ namespace SlaveMatrix
     	public ぶっかけ_大(double DisUnit, 配色指定 配色指定, 主人公配色 体配色, ModeEventDispatcher Med, ぶっかけ_大D e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif(Sta.スタンプ["ぶっかけ"][1]);
-    		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		X0Y0_精液 = pars["精液"].ToPar();
-    		pars = Body[0][1];
-    		X0Y1_精液 = pars["精液"].ToPar();
-    		pars = Body[0][2];
-    		X0Y2_精液 = pars["精液"].ToPar();
-    		pars = Body[0][3];
-    		X0Y3_精液 = pars["精液"].ToPar();
-    		pars = Body[0][4];
-    		X0Y4_精液 = pars["精液"].ToPar();
+    		MorphVariant morphVariant = new MorphVariant(GlobalState.スタンプ["ぶっかけ"][1]);
+    		Body = new VariantGrid();
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_精液 = partGroup["精液"].ToPar();
+    		partGroup = Body[0][1];
+    		X0Y1_精液 = partGroup["精液"].ToPar();
+    		partGroup = Body[0][2];
+    		X0Y2_精液 = partGroup["精液"].ToPar();
+    		partGroup = Body[0][3];
+    		X0Y3_精液 = partGroup["精液"].ToPar();
+    		partGroup = Body[0][4];
+    		X0Y4_精液 = partGroup["精液"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;

@@ -1,0 +1,11 @@
+id: WhipMark
+original_key: 鞭痕
+resource: スタンプ
+morph_x: 1
+morph_y: 1
+variants:
+- x: 0
+  y: 0
+  file: x0y0.svg
+fields:
+- name: 鞭痕

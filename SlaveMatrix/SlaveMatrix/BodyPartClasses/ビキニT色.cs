@@ -21,24 +21,24 @@ namespace SlaveMatrix
     	public void SetDefault()
     	{
     		生地 = Color.DarkRed;
-    		縁 = Col.White;
-    		紐 = Col.White;
+    		縁 = ColorHelper.White;
+    		紐 = ColorHelper.White;
     		SetColor2();
     	}
 
     	public void SetRandom()
     	{
-    		Col.GetRandomClothesColor(out 生地);
-    		Col.GetRandomClothesColor(out 縁);
+    		ColorHelper.GetRandomClothesColor(out 生地);
+    		ColorHelper.GetRandomClothesColor(out 縁);
     		紐 = 縁;
     		SetColor2();
     	}
 
     	public void SetColor2()
     	{
-    		Col.GetGrad(ref 生地, out 生地色);
-    		Col.GetGrad(ref 縁, out 縁色);
-    		Col.GetGrad(ref 紐, out 紐色);
+    		ColorHelper.GetGrad(ref 生地, out 生地色);
+    		ColorHelper.GetGrad(ref 縁, out 縁色);
+    		ColorHelper.GetGrad(ref 紐, out 紐色);
     	}
     }
 }

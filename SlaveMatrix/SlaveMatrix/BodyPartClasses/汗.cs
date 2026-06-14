@@ -3,21 +3,21 @@ using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
-    public class 汗 : Ele
+    public class 汗 : Element
     {
-    	public Par X0Y0_汗0;
+    	public ShapePart X0Y0_汗0;
 
-    	public Par X0Y0_汗1;
+    	public ShapePart X0Y0_汗1;
 
-    	public Par X0Y0_汗ハイライト;
+    	public ShapePart X0Y0_汗ハイライト;
 
-    	public Par X0Y1_汗0流れ;
+    	public ShapePart X0Y1_汗0流れ;
 
-    	public Par X0Y2_汗0流れ;
+    	public ShapePart X0Y2_汗0流れ;
 
-    	public Par X0Y3_汗0流れ;
+    	public ShapePart X0Y3_汗0流れ;
 
-    	public Par X0Y4_汗0流れ;
+    	public ShapePart X0Y4_汗0流れ;
 
     	public ColorD 汗0流れCD;
 
@@ -168,19 +168,19 @@ namespace SlaveMatrix
     	public 汗(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 汗D e)
     	{
     		ThisType = GetType();
-    		Body = new Difs(Sta.スタンプ["汗"]);
-    		Pars pars = Body[0][0];
-    		X0Y0_汗0 = pars["汗0"].ToPar();
-    		X0Y0_汗1 = pars["汗1"].ToPar();
-    		X0Y0_汗ハイライト = pars["汗ハイライト"].ToPar();
-    		pars = Body[0][1];
-    		X0Y1_汗0流れ = pars["汗0流れ"].ToPar();
-    		pars = Body[0][2];
-    		X0Y2_汗0流れ = pars["汗0流れ"].ToPar();
-    		pars = Body[0][3];
-    		X0Y3_汗0流れ = pars["汗0流れ"].ToPar();
-    		pars = Body[0][4];
-    		X0Y4_汗0流れ = pars["汗0流れ"].ToPar();
+    		Body = new VariantGrid(GlobalState.スタンプ["汗"]);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_汗0 = partGroup["汗0"].ToPar();
+    		X0Y0_汗1 = partGroup["汗1"].ToPar();
+    		X0Y0_汗ハイライト = partGroup["汗ハイライト"].ToPar();
+    		partGroup = Body[0][1];
+    		X0Y1_汗0流れ = partGroup["汗0流れ"].ToPar();
+    		partGroup = Body[0][2];
+    		X0Y2_汗0流れ = partGroup["汗0流れ"].ToPar();
+    		partGroup = Body[0][3];
+    		X0Y3_汗0流れ = partGroup["汗0流れ"].ToPar();
+    		partGroup = Body[0][4];
+    		X0Y4_汗0流れ = partGroup["汗0流れ"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;

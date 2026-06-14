@@ -6,9 +6,9 @@ namespace SlaveMatrix
 {
     public class 腿_鳥 : 獣腿
     {
-    	public Par X0Y0_腿;
+    	public ShapePart X0Y0_腿;
 
-    	public Par X0Y0_筋;
+    	public ShapePart X0Y0_筋;
 
     	public ColorD 腿CD;
 
@@ -113,13 +113,13 @@ namespace SlaveMatrix
     	{
     		腿_鳥 腿_鳥2 = this;
     		ThisType = GetType();
-    		Dif dif = new Dif(Sta.脚左["四足腿"][2]);
-    		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		X0Y0_腿 = pars["腿"].ToPar();
-    		X0Y0_筋 = pars["筋"].ToPar();
+    		MorphVariant morphVariant = new MorphVariant(GlobalState.脚左["四足腿"][2]);
+    		Body = new VariantGrid();
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_腿 = partGroup["腿"].ToPar();
+    		X0Y0_筋 = partGroup["筋"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;
@@ -155,8 +155,8 @@ namespace SlaveMatrix
     		}
     		if (e.Leg_接続.Count > 0)
     		{
-    			Ele f;
-    			Leg_接続 = e.Leg_接続.Select(delegate(EleD g)
+    			Element f;
+    			Leg_接続 = e.Leg_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 腿_鳥2;
@@ -192,7 +192,7 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		腿CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
+    		腿CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
     		筋CD = new ColorD(ref 体配色.薄線, ref 体配色.毛0O);
     	}
     }

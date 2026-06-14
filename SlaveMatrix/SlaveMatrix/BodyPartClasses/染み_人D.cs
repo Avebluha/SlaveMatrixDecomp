@@ -5,7 +5,7 @@ using SlaveMatrix.GameClasses;
 namespace SlaveMatrix
 {
     [Serializable]
-    public class 染み_人D : EleD
+    public class 染み_人D : ElementData
     {
     	public bool 潮1_表示 = true;
 
@@ -48,7 +48,7 @@ namespace SlaveMatrix
     		ThisType = GetType();
     	}
 
-    	public override Ele GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
+    	public override Element GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
     	{
     		return new 染み_人(DisUnit, 配色指定, 体配色, Med, this);
     	}

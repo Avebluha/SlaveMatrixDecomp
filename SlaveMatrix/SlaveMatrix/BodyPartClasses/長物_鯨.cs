@@ -7,65 +7,65 @@ namespace SlaveMatrix
 {
     public class 長物_鯨 : 半身
     {
-    	public Par X0Y0_Torso6_Torso;
+    	public ShapePart X0Y0_Torso6_Torso;
 
-    	public Par X0Y0_Torso6_柄;
+    	public ShapePart X0Y0_Torso6_柄;
 
-    	public Par X0Y0_Torso6_縦影;
+    	public ShapePart X0Y0_Torso6_縦影;
 
-    	public Par X0Y0_Torso5_Torso;
+    	public ShapePart X0Y0_Torso5_Torso;
 
-    	public Par X0Y0_Torso5_柄;
+    	public ShapePart X0Y0_Torso5_柄;
 
-    	public Par X0Y0_Torso5_縦影;
+    	public ShapePart X0Y0_Torso5_縦影;
 
-    	public Par X0Y0_輪2_革;
+    	public ShapePart X0Y0_輪2_革;
 
-    	public Par X0Y0_輪2_金具1;
+    	public ShapePart X0Y0_輪2_金具1;
 
-    	public Par X0Y0_輪2_金具2;
+    	public ShapePart X0Y0_輪2_金具2;
 
-    	public Par X0Y0_輪2_金具3;
+    	public ShapePart X0Y0_輪2_金具3;
 
-    	public Par X0Y0_輪2_金具左;
+    	public ShapePart X0Y0_輪2_金具左;
 
-    	public Par X0Y0_輪2_金具右;
+    	public ShapePart X0Y0_輪2_金具右;
 
-    	public Par X0Y0_Torso4_Torso;
+    	public ShapePart X0Y0_Torso4_Torso;
 
-    	public Par X0Y0_Torso4_柄;
+    	public ShapePart X0Y0_Torso4_柄;
 
-    	public Par X0Y0_Torso4_縦影;
+    	public ShapePart X0Y0_Torso4_縦影;
 
-    	public Par X0Y0_Torso3_Torso;
+    	public ShapePart X0Y0_Torso3_Torso;
 
-    	public Par X0Y0_Torso3_柄;
+    	public ShapePart X0Y0_Torso3_柄;
 
-    	public Par X0Y0_Torso3_縦影;
+    	public ShapePart X0Y0_Torso3_縦影;
 
-    	public Par X0Y0_Torso2_Torso;
+    	public ShapePart X0Y0_Torso2_Torso;
 
-    	public Par X0Y0_Torso2_柄;
+    	public ShapePart X0Y0_Torso2_柄;
 
-    	public Par X0Y0_Torso2_縦影;
+    	public ShapePart X0Y0_Torso2_縦影;
 
-    	public Par X0Y0_Torso1_Torso;
+    	public ShapePart X0Y0_Torso1_Torso;
 
-    	public Par X0Y0_Torso1_柄;
+    	public ShapePart X0Y0_Torso1_柄;
 
-    	public Par X0Y0_Torso1_縦影;
+    	public ShapePart X0Y0_Torso1_縦影;
 
-    	public Par X0Y0_輪1_革;
+    	public ShapePart X0Y0_輪1_革;
 
-    	public Par X0Y0_輪1_金具1;
+    	public ShapePart X0Y0_輪1_金具1;
 
-    	public Par X0Y0_輪1_金具2;
+    	public ShapePart X0Y0_輪1_金具2;
 
-    	public Par X0Y0_輪1_金具3;
+    	public ShapePart X0Y0_輪1_金具3;
 
-    	public Par X0Y0_輪1_金具左;
+    	public ShapePart X0Y0_輪1_金具左;
 
-    	public Par X0Y0_輪1_金具右;
+    	public ShapePart X0Y0_輪1_金具右;
 
     	public ColorD Torso6_TorsoCD;
 
@@ -195,37 +195,37 @@ namespace SlaveMatrix
 
     	public 拘束鎖 鎖4;
 
-    	public Ele[] 左0_接続;
+    	public Element[] 左0_接続;
 
-    	public Ele[] 右0_接続;
+    	public Element[] 右0_接続;
 
-    	public Ele[] 左1_接続;
+    	public Element[] 左1_接続;
 
-    	public Ele[] 右1_接続;
+    	public Element[] 右1_接続;
 
-    	public Ele[] 左2_接続;
+    	public Element[] 左2_接続;
 
-    	public Ele[] 右2_接続;
+    	public Element[] 右2_接続;
 
-    	public Ele[] 左3_接続;
+    	public Element[] 左3_接続;
 
-    	public Ele[] 右3_接続;
+    	public Element[] 右3_接続;
 
-    	public Ele[] 左4_接続;
+    	public Element[] 左4_接続;
 
-    	public Ele[] 右4_接続;
+    	public Element[] 右4_接続;
 
-    	public Ele[] 左5_接続;
+    	public Element[] 左5_接続;
 
-    	public Ele[] 右5_接続;
+    	public Element[] 右5_接続;
 
-    	public Ele[] 左6_接続;
+    	public Element[] 左6_接続;
 
-    	public Ele[] 右6_接続;
+    	public Element[] 右6_接続;
 
-    	public Ele[] 尾_接続;
+    	public Element[] 尾_接続;
 
-    	private Par[] Pars;
+    	private ShapePart[] Pars;
 
     	private Vector2D[] mm;
 
@@ -880,45 +880,45 @@ namespace SlaveMatrix
     	{
     		長物_鯨 長物_鯨2 = this;
     		ThisType = GetType();
-    		Dif dif = new Dif();
-    		dif.Tag = "鯨";
-    		dif.Add(new Pars(Sta.半身["長物"][0][1]));
-    		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		Pars pars2 = pars["胴6"].ToPars();
+    		MorphVariant morphVariant = new MorphVariant();
+    		morphVariant.Tag = "鯨";
+    		morphVariant.Add(new PartGroup(GlobalState.半身["長物"][0][1]));
+    		Body = new VariantGrid();
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
+    		PartGroup partGroup = Body[0][0];
+    		PartGroup pars2 = partGroup["胴6"].ToPars();
     		X0Y0_Torso6_Torso = pars2["胴"].ToPar();
     		X0Y0_Torso6_柄 = pars2["柄"].ToPar();
     		X0Y0_Torso6_縦影 = pars2["縦影"].ToPar();
-    		pars2 = pars["胴5"].ToPars();
+    		pars2 = partGroup["胴5"].ToPars();
     		X0Y0_Torso5_Torso = pars2["胴"].ToPar();
     		X0Y0_Torso5_柄 = pars2["柄"].ToPar();
     		X0Y0_Torso5_縦影 = pars2["縦影"].ToPar();
-    		pars2 = pars["輪2"].ToPars();
+    		pars2 = partGroup["輪2"].ToPars();
     		X0Y0_輪2_革 = pars2["革"].ToPar();
     		X0Y0_輪2_金具1 = pars2["金具1"].ToPar();
     		X0Y0_輪2_金具2 = pars2["金具2"].ToPar();
     		X0Y0_輪2_金具3 = pars2["金具3"].ToPar();
     		X0Y0_輪2_金具左 = pars2["金具左"].ToPar();
     		X0Y0_輪2_金具右 = pars2["金具右"].ToPar();
-    		pars2 = pars["胴4"].ToPars();
+    		pars2 = partGroup["胴4"].ToPars();
     		X0Y0_Torso4_Torso = pars2["胴"].ToPar();
     		X0Y0_Torso4_柄 = pars2["柄"].ToPar();
     		X0Y0_Torso4_縦影 = pars2["縦影"].ToPar();
-    		pars2 = pars["胴3"].ToPars();
+    		pars2 = partGroup["胴3"].ToPars();
     		X0Y0_Torso3_Torso = pars2["胴"].ToPar();
     		X0Y0_Torso3_柄 = pars2["柄"].ToPar();
     		X0Y0_Torso3_縦影 = pars2["縦影"].ToPar();
-    		pars2 = pars["胴2"].ToPars();
+    		pars2 = partGroup["胴2"].ToPars();
     		X0Y0_Torso2_Torso = pars2["胴"].ToPar();
     		X0Y0_Torso2_柄 = pars2["柄"].ToPar();
     		X0Y0_Torso2_縦影 = pars2["縦影"].ToPar();
-    		pars2 = pars["胴1"].ToPars();
+    		pars2 = partGroup["胴1"].ToPars();
     		X0Y0_Torso1_Torso = pars2["胴"].ToPar();
     		X0Y0_Torso1_柄 = pars2["柄"].ToPar();
     		X0Y0_Torso1_縦影 = pars2["縦影"].ToPar();
-    		pars2 = pars["輪1"].ToPars();
+    		pars2 = partGroup["輪1"].ToPars();
     		X0Y0_輪1_革 = pars2["革"].ToPar();
     		X0Y0_輪1_金具1 = pars2["金具1"].ToPar();
     		X0Y0_輪1_金具2 = pars2["金具2"].ToPar();
@@ -990,10 +990,10 @@ namespace SlaveMatrix
     		{
     			表示 = false;
     		}
-    		Ele f;
+    		Element f;
     		if (e.左0_接続.Count > 0)
     		{
-    			左0_接続 = e.左0_接続.Select(delegate(EleD g)
+    			左0_接続 = e.左0_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 長物_鯨2;
@@ -1004,7 +1004,7 @@ namespace SlaveMatrix
     		}
     		if (e.右0_接続.Count > 0)
     		{
-    			右0_接続 = e.右0_接続.Select(delegate(EleD g)
+    			右0_接続 = e.右0_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 長物_鯨2;
@@ -1015,7 +1015,7 @@ namespace SlaveMatrix
     		}
     		if (e.左1_接続.Count > 0)
     		{
-    			左1_接続 = e.左1_接続.Select(delegate(EleD g)
+    			左1_接続 = e.左1_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 長物_鯨2;
@@ -1026,7 +1026,7 @@ namespace SlaveMatrix
     		}
     		if (e.右1_接続.Count > 0)
     		{
-    			右1_接続 = e.右1_接続.Select(delegate(EleD g)
+    			右1_接続 = e.右1_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 長物_鯨2;
@@ -1037,7 +1037,7 @@ namespace SlaveMatrix
     		}
     		if (e.左2_接続.Count > 0)
     		{
-    			左2_接続 = e.左2_接続.Select(delegate(EleD g)
+    			左2_接続 = e.左2_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 長物_鯨2;
@@ -1048,7 +1048,7 @@ namespace SlaveMatrix
     		}
     		if (e.右2_接続.Count > 0)
     		{
-    			右2_接続 = e.右2_接続.Select(delegate(EleD g)
+    			右2_接続 = e.右2_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 長物_鯨2;
@@ -1059,7 +1059,7 @@ namespace SlaveMatrix
     		}
     		if (e.左3_接続.Count > 0)
     		{
-    			左3_接続 = e.左3_接続.Select(delegate(EleD g)
+    			左3_接続 = e.左3_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 長物_鯨2;
@@ -1070,7 +1070,7 @@ namespace SlaveMatrix
     		}
     		if (e.右3_接続.Count > 0)
     		{
-    			右3_接続 = e.右3_接続.Select(delegate(EleD g)
+    			右3_接続 = e.右3_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 長物_鯨2;
@@ -1081,7 +1081,7 @@ namespace SlaveMatrix
     		}
     		if (e.左4_接続.Count > 0)
     		{
-    			左4_接続 = e.左4_接続.Select(delegate(EleD g)
+    			左4_接続 = e.左4_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 長物_鯨2;
@@ -1092,7 +1092,7 @@ namespace SlaveMatrix
     		}
     		if (e.右4_接続.Count > 0)
     		{
-    			右4_接続 = e.右4_接続.Select(delegate(EleD g)
+    			右4_接続 = e.右4_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 長物_鯨2;
@@ -1103,7 +1103,7 @@ namespace SlaveMatrix
     		}
     		if (e.左5_接続.Count > 0)
     		{
-    			左5_接続 = e.左5_接続.Select(delegate(EleD g)
+    			左5_接続 = e.左5_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 長物_鯨2;
@@ -1114,7 +1114,7 @@ namespace SlaveMatrix
     		}
     		if (e.右5_接続.Count > 0)
     		{
-    			右5_接続 = e.右5_接続.Select(delegate(EleD g)
+    			右5_接続 = e.右5_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 長物_鯨2;
@@ -1125,7 +1125,7 @@ namespace SlaveMatrix
     		}
     		if (e.左6_接続.Count > 0)
     		{
-    			左6_接続 = e.左6_接続.Select(delegate(EleD g)
+    			左6_接続 = e.左6_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 長物_鯨2;
@@ -1136,7 +1136,7 @@ namespace SlaveMatrix
     		}
     		if (e.右6_接続.Count > 0)
     		{
-    			右6_接続 = e.右6_接続.Select(delegate(EleD g)
+    			右6_接続 = e.右6_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 長物_鯨2;
@@ -1147,7 +1147,7 @@ namespace SlaveMatrix
     		}
     		if (e.尾_接続.Count > 0)
     		{
-    			尾_接続 = e.尾_接続.Select(delegate(EleD g)
+    			尾_接続 = e.尾_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 長物_鯨2;
@@ -1158,7 +1158,7 @@ namespace SlaveMatrix
     		}
     		base.配色指定 = 配色指定;
     		配色(体配色);
-    		Pars = new Par[6] { X0Y0_Torso6_Torso, X0Y0_Torso5_Torso, X0Y0_Torso4_Torso, X0Y0_Torso3_Torso, X0Y0_Torso2_Torso, X0Y0_Torso1_Torso };
+    		Pars = new ShapePart[6] { X0Y0_Torso6_Torso, X0Y0_Torso5_Torso, X0Y0_Torso4_Torso, X0Y0_Torso3_Torso, X0Y0_Torso2_Torso, X0Y0_Torso1_Torso };
     		X0Y0_Torso6_TorsoCP = new ColorP(X0Y0_Torso6_Torso, Torso6_TorsoCD, DisUnit, abj: true);
     		X0Y0_Torso6_柄CP = new ColorP(X0Y0_Torso6_柄, Torso6_柄CD, DisUnit, abj: true);
     		X0Y0_Torso6_縦影CP = new ColorP(X0Y0_Torso6_縦影, Torso6_縦影CD, DisUnit, abj: true);
@@ -1256,7 +1256,7 @@ namespace SlaveMatrix
     		Body.JoinPAall();
     	}
 
-    	public IEnumerable<Par> 軸列挙()
+    	public IEnumerable<ShapePart> 軸列挙()
     	{
     		yield return X0Y0_Torso3_Torso;
     		yield return X0Y0_Torso4_Torso;
@@ -1264,7 +1264,7 @@ namespace SlaveMatrix
     		yield return X0Y0_Torso6_Torso;
     	}
 
-    	public override bool Is革(Par p)
+    	public override bool Is革(ShapePart p)
     	{
     		if (p != X0Y0_輪2_革 && p != X0Y0_輪2_金具1 && p != X0Y0_輪2_金具2 && p != X0Y0_輪2_金具3 && p != X0Y0_輪2_金具左 && p != X0Y0_輪2_金具右 && p != X0Y0_輪1_革 && p != X0Y0_輪1_金具1 && p != X0Y0_輪1_金具2 && p != X0Y0_輪1_金具3 && p != X0Y0_輪1_金具左)
     		{
@@ -1379,25 +1379,25 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		Torso6_TorsoCD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		Torso6_柄CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		Color2 色 = new Color2(ref 体配色.体1O.Col2, ref Col.Empty);
-    		Torso6_縦影CD = new ColorD(ref Col.Black, ref 色);
-    		Torso5_TorsoCD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		Torso5_柄CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		Torso5_縦影CD = new ColorD(ref Col.Black, ref 色);
-    		Torso4_TorsoCD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		Torso4_柄CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		Torso4_縦影CD = new ColorD(ref Col.Black, ref 色);
-    		Torso3_TorsoCD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		Torso3_柄CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		Torso3_縦影CD = new ColorD(ref Col.Black, ref 色);
-    		Torso2_TorsoCD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		Torso2_柄CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		Torso2_縦影CD = new ColorD(ref Col.Black, ref 色);
-    		Torso1_TorsoCD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		Torso1_柄CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		Torso1_縦影CD = new ColorD(ref Col.Black, ref 色);
+    		Torso6_TorsoCD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		Torso6_柄CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		Color2 色 = new Color2(ref 体配色.体1O.Col2, ref ColorHelper.Empty);
+    		Torso6_縦影CD = new ColorD(ref ColorHelper.Black, ref 色);
+    		Torso5_TorsoCD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		Torso5_柄CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		Torso5_縦影CD = new ColorD(ref ColorHelper.Black, ref 色);
+    		Torso4_TorsoCD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		Torso4_柄CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		Torso4_縦影CD = new ColorD(ref ColorHelper.Black, ref 色);
+    		Torso3_TorsoCD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		Torso3_柄CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		Torso3_縦影CD = new ColorD(ref ColorHelper.Black, ref 色);
+    		Torso2_TorsoCD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		Torso2_柄CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		Torso2_縦影CD = new ColorD(ref ColorHelper.Black, ref 色);
+    		Torso1_TorsoCD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		Torso1_柄CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		Torso1_縦影CD = new ColorD(ref ColorHelper.Black, ref 色);
     		輪1_革CD = new ColorD();
     		輪1_金具1CD = new ColorD();
     		輪1_金具2CD = new ColorD();
@@ -1414,24 +1414,24 @@ namespace SlaveMatrix
 
     	private void 配色T0(BodyColorSet 体配色)
     	{
-    		Torso6_TorsoCD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		Torso6_柄CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		Torso6_縦影CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		Torso5_TorsoCD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		Torso5_柄CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		Torso5_縦影CD = new ColorD(ref Col.Black, ref Torso6_縦影CD.c2);
-    		Torso4_TorsoCD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		Torso4_柄CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		Torso4_縦影CD = new ColorD(ref Col.Black, ref Torso6_縦影CD.c2);
-    		Torso3_TorsoCD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		Torso3_柄CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		Torso3_縦影CD = new ColorD(ref Col.Black, ref Torso6_縦影CD.c2);
-    		Torso2_TorsoCD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		Torso2_柄CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		Torso2_縦影CD = new ColorD(ref Col.Black, ref Torso6_縦影CD.c2);
-    		Torso1_TorsoCD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		Torso1_柄CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		Torso1_縦影CD = new ColorD(ref Col.Black, ref Torso6_縦影CD.c2);
+    		Torso6_TorsoCD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		Torso6_柄CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		Torso6_縦影CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		Torso5_TorsoCD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		Torso5_柄CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		Torso5_縦影CD = new ColorD(ref ColorHelper.Black, ref Torso6_縦影CD.c2);
+    		Torso4_TorsoCD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		Torso4_柄CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		Torso4_縦影CD = new ColorD(ref ColorHelper.Black, ref Torso6_縦影CD.c2);
+    		Torso3_TorsoCD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		Torso3_柄CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		Torso3_縦影CD = new ColorD(ref ColorHelper.Black, ref Torso6_縦影CD.c2);
+    		Torso2_TorsoCD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		Torso2_柄CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		Torso2_縦影CD = new ColorD(ref ColorHelper.Black, ref Torso6_縦影CD.c2);
+    		Torso1_TorsoCD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		Torso1_柄CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		Torso1_縦影CD = new ColorD(ref ColorHelper.Black, ref Torso6_縦影CD.c2);
     		輪1_革CD = new ColorD();
     		輪1_金具1CD = new ColorD();
     		輪1_金具2CD = new ColorD();
@@ -1448,24 +1448,24 @@ namespace SlaveMatrix
 
     	private void 配色T1(BodyColorSet 体配色)
     	{
-    		Torso6_TorsoCD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		Torso6_柄CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		Torso6_縦影CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		Torso5_TorsoCD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		Torso5_柄CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		Torso5_縦影CD = new ColorD(ref Col.Black, ref Torso6_縦影CD.c2);
-    		Torso4_TorsoCD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		Torso4_柄CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		Torso4_縦影CD = new ColorD(ref Col.Black, ref Torso6_縦影CD.c2);
-    		Torso3_TorsoCD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		Torso3_柄CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		Torso3_縦影CD = new ColorD(ref Col.Black, ref Torso6_縦影CD.c2);
-    		Torso2_TorsoCD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		Torso2_柄CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		Torso2_縦影CD = new ColorD(ref Col.Black, ref Torso6_縦影CD.c2);
-    		Torso1_TorsoCD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		Torso1_柄CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		Torso1_縦影CD = new ColorD(ref Col.Black, ref Torso6_縦影CD.c2);
+    		Torso6_TorsoCD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		Torso6_柄CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		Torso6_縦影CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		Torso5_TorsoCD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		Torso5_柄CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		Torso5_縦影CD = new ColorD(ref ColorHelper.Black, ref Torso6_縦影CD.c2);
+    		Torso4_TorsoCD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		Torso4_柄CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		Torso4_縦影CD = new ColorD(ref ColorHelper.Black, ref Torso6_縦影CD.c2);
+    		Torso3_TorsoCD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		Torso3_柄CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		Torso3_縦影CD = new ColorD(ref ColorHelper.Black, ref Torso6_縦影CD.c2);
+    		Torso2_TorsoCD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		Torso2_柄CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		Torso2_縦影CD = new ColorD(ref ColorHelper.Black, ref Torso6_縦影CD.c2);
+    		Torso1_TorsoCD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		Torso1_柄CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		Torso1_縦影CD = new ColorD(ref ColorHelper.Black, ref Torso6_縦影CD.c2);
     		輪1_革CD = new ColorD();
     		輪1_金具1CD = new ColorD();
     		輪1_金具2CD = new ColorD();

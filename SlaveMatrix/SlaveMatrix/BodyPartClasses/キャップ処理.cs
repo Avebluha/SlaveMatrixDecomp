@@ -13,13 +13,13 @@ namespace SlaveMatrix
 
     	public ConstProp CP右 = new ConstProp();
 
-    	public CM キャップ1;
+    	public CharacterElement キャップ1;
 
-    	public CM キャップ2;
+    	public CharacterElement キャップ2;
 
-    	public CM キャップ3;
+    	public CharacterElement キャップ3;
 
-    	private Dictionary<Ele, CM> キャップ = new Dictionary<Ele, CM>();
+    	private Dictionary<Element, CharacterElement> キャップ = new Dictionary<Element, CharacterElement>();
 
     	private キャップ情報 キャップ着;
 
@@ -68,7 +68,7 @@ namespace SlaveMatrix
     			キャップ中_ = value;
     			if (!キャップ中_)
     			{
-    				Bod.キャップ1.位置C = Dat.Vec2DZero;
+    				Bod.キャップ1.位置C = DataConsts.Vec2DZero;
     			}
     			if (キャップ中_ || キャップ左_ || キャップ右_)
     			{
@@ -92,7 +92,7 @@ namespace SlaveMatrix
     			キャップ左_ = value;
     			if (!キャップ左_)
     			{
-    				Bod.キャップ1.位置C = Dat.Vec2DZero;
+    				Bod.キャップ1.位置C = DataConsts.Vec2DZero;
     			}
     			if (キャップ中_ || キャップ左_ || キャップ右_)
     			{
@@ -116,7 +116,7 @@ namespace SlaveMatrix
     			キャップ右_ = value;
     			if (!キャップ右_)
     			{
-    				Bod.キャップ1.位置C = Dat.Vec2DZero;
+    				Bod.キャップ1.位置C = DataConsts.Vec2DZero;
     			}
     			if (キャップ中_ || キャップ左_ || キャップ右_)
     			{
@@ -129,29 +129,29 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public void 吸着(Ele 対象)
+    	public void 吸着(Element 対象)
     	{
     		調教UI.擬音キュー.Enqueue(delegate(RenderArea a)
     		{
-    			調教UI.擬音.Sound(a, 対象.位置.GetAreaPoint(0.01), Sta.吸着.GetVal(1.0, 1.0), new Font("MS Gothic", 1f), Col.Black, 0.2, b: true);
+    			調教UI.擬音.Sound(a, 対象.位置.GetAreaPoint(0.01), GlobalState.吸着.GetVal(1.0, 1.0), new Font("MS Gothic", 1f), ColorHelper.Black, 0.2, b: true);
     		});
     	}
 
-    	public void 吸脱(Ele 対象)
+    	public void 吸脱(Element 対象)
     	{
     		調教UI.擬音キュー.Enqueue(delegate(RenderArea a)
     		{
-    			調教UI.擬音.Sound(a, 対象.位置.GetAreaPoint(0.01), Sta.吸脱.GetVal(1.0, 1.0), new Font("MS Gothic", 1f), Col.Black, 0.2, b: true);
+    			調教UI.擬音.Sound(a, 対象.位置.GetAreaPoint(0.01), GlobalState.吸脱.GetVal(1.0, 1.0), new Font("MS Gothic", 1f), ColorHelper.Black, 0.2, b: true);
     		});
     	}
 
-    	public void 振動(Ele 対象)
+    	public void 振動(Element 対象)
     	{
     		if ((対象 is キャップ1 && CP中.GetFlag(0.2)) || (対象 is キャップ2 && !対象.右 && CP左.GetFlag(0.2)) || (対象 is キャップ2 && 対象.右 && CP右.GetFlag(0.2)))
     		{
     			調教UI.擬音キュー.Enqueue(delegate(RenderArea a)
     			{
-    				調教UI.擬音.Sound(a, 対象.位置.GetAreaPoint(0.02), Sta.振動.GetVal(1.0, 1.0), new Font("MS Gothic", 1f), Col.Black, 0.15, b: true);
+    				調教UI.擬音.Sound(a, 対象.位置.GetAreaPoint(0.02), GlobalState.振動.GetVal(1.0, 1.0), new Font("MS Gothic", 1f), ColorHelper.Black, 0.15, b: true);
     			});
     		}
     	}
@@ -173,7 +173,7 @@ namespace SlaveMatrix
 
     	private void 切替時(bool 対象)
     	{
-    		if (Sta.GameData.ガイド)
+    		if (GlobalState.GameData.ガイド)
     		{
     			ip.SubInfoIm = "MCl:" + (対象 ? GameText.停止 : GameText.作動) + "\r\nLCl:" + GameText.外す;
     		}
@@ -181,7 +181,7 @@ namespace SlaveMatrix
 
     	private void 装着時()
     	{
-    		if (Sta.GameData.ガイド)
+    		if (GlobalState.GameData.ガイド)
     		{
     			ip.SubInfoIm = "LCl:" + GameText.装着;
     		}
@@ -189,7 +189,7 @@ namespace SlaveMatrix
 
     	private void 待機時()
     	{
-    		if (Sta.GameData.ガイド)
+    		if (GlobalState.GameData.ガイド)
     		{
     			if (ハンドf)
     			{
@@ -255,7 +255,7 @@ namespace SlaveMatrix
     			キャップ3.Show = false;
     			キャップ3.使用状態 = UsageStatus.Attach;
     		}
-    		調教UI.Focus.Ele.位置B = p;
+    		調教UI.Focus.Element.位置B = p;
     		if (!ハンドf)
     		{
     			調教UI.Set持ち手();
@@ -274,7 +274,7 @@ namespace SlaveMatrix
     				キャップ[Bod.キャップ1].DraShow = true;
     				キャップ[Bod.キャップ1].StaShow = true;
     				キャップ[Bod.キャップ1].描画Show = true;
-    				キャップ[Bod.キャップ1].Ele.Intensity = 0.5;
+    				キャップ[Bod.キャップ1].Element.Intensity = 0.5;
     				キャップ[Bod.キャップ1].使用状態 = UsageStatus.Standby;
     				キャップ.Remove(Bod.キャップ1);
     			}
@@ -377,7 +377,7 @@ namespace SlaveMatrix
 
     	public void Down(ref MouseButtons mb, ref Vector2D cp, ref Vector2D op, ref Color hc, ref ContactD cd)
     	{
-    		if (調教UI.Focus.Ele.Intensity == 1.0)
+    		if (調教UI.Focus.Element.Intensity == 1.0)
     		{
     			if (ハンドf)
     			{
@@ -420,7 +420,7 @@ namespace SlaveMatrix
     						キャップ[Bod.キャップ1].DraShow = true;
     						キャップ[Bod.キャップ1].StaShow = true;
     						キャップ[Bod.キャップ1].描画Show = true;
-    						キャップ[Bod.キャップ1].Ele.Intensity = 0.5;
+    						キャップ[Bod.キャップ1].Element.Intensity = 0.5;
     						キャップ[Bod.キャップ1].使用状態 = UsageStatus.Standby;
     						キャップ.Remove(Bod.キャップ1);
     						キャップ中着 = false;
@@ -460,7 +460,7 @@ namespace SlaveMatrix
     						キャップ[Bod.キャップ2左].DraShow = true;
     						キャップ[Bod.キャップ2左].StaShow = true;
     						キャップ[Bod.キャップ2左].描画Show = true;
-    						キャップ[Bod.キャップ2左].Ele.Intensity = 0.5;
+    						キャップ[Bod.キャップ2左].Element.Intensity = 0.5;
     						キャップ[Bod.キャップ2左].使用状態 = UsageStatus.Standby;
     						キャップ.Remove(Bod.キャップ2左);
     						キャップ左着 = false;
@@ -504,7 +504,7 @@ namespace SlaveMatrix
     						キャップ[Bod.キャップ2右].DraShow = true;
     						キャップ[Bod.キャップ2右].StaShow = true;
     						キャップ[Bod.キャップ2右].描画Show = true;
-    						キャップ[Bod.キャップ2右].Ele.Intensity = 0.5;
+    						キャップ[Bod.キャップ2右].Element.Intensity = 0.5;
     						キャップ[Bod.キャップ2右].使用状態 = UsageStatus.Standby;
     						キャップ.Remove(Bod.キャップ2右);
     						キャップ右着 = false;
@@ -590,9 +590,9 @@ namespace SlaveMatrix
     		キャップ着.SetDefault();
     		キャップ1D e = new キャップ1D();
     		e.SetValuesD("表示", true);
-    		キャップ1 = new CM(Med, 調教UI, 調教UI.キャップ1 = new キャップ1(disUnit, 配色指定.N0, null, Med, e));
-    		キャップ2 = new CM(Med, 調教UI, 調教UI.キャップ2 = new キャップ1(disUnit, 配色指定.N0, null, Med, e));
-    		キャップ3 = new CM(Med, 調教UI, 調教UI.キャップ3 = new キャップ1(disUnit, 配色指定.N0, null, Med, e));
+    		キャップ1 = new CharacterElement(Med, 調教UI, 調教UI.キャップ1 = new キャップ1(disUnit, 配色指定.N0, null, Med, e));
+    		キャップ2 = new CharacterElement(Med, 調教UI, 調教UI.キャップ2 = new キャップ1(disUnit, 配色指定.N0, null, Med, e));
+    		キャップ3 = new CharacterElement(Med, 調教UI, 調教UI.キャップ3 = new キャップ1(disUnit, 配色指定.N0, null, Med, e));
     		キャップ色 配色 = default(キャップ色);
     		配色.SetDefault();
     		調教UI.キャップ1.配色(配色);
@@ -601,11 +601,11 @@ namespace SlaveMatrix
     		調教UI.キャップ1.Intensity = 0.5;
     		調教UI.キャップ2.Intensity = 0.5;
     		調教UI.キャップ3.Intensity = 0.5;
-    		調教UI.キャップ1CM = キャップ1;
-    		調教UI.キャップ2CM = キャップ2;
-    		調教UI.キャップ3CM = キャップ3;
+    		調教UI.キャップ1CharacterElement = キャップ1;
+    		調教UI.キャップ2CharacterElement = キャップ2;
+    		調教UI.キャップ3CharacterElement = キャップ3;
     		double d = 0.0005;
-    		Vector2D p = Dat.Vec2DZero;
+    		Vector2D p = DataConsts.Vec2DZero;
     		キャップ振動 = new Motion(-1.0, 1.0)
     		{
     			BaseSpeed = double.MaxValue,
@@ -651,9 +651,9 @@ namespace SlaveMatrix
     			OnEnd = delegate(Motion m)
     			{
     				m.ResetValue();
-    				キャップ処理2.Bod.キャップ2左.位置C = Dat.Vec2DZero;
-    				キャップ処理2.Bod.キャップ2右.位置C = Dat.Vec2DZero;
-    				キャップ処理2.Bod.キャップ1.位置C = Dat.Vec2DZero;
+    				キャップ処理2.Bod.キャップ2左.位置C = DataConsts.Vec2DZero;
+    				キャップ処理2.Bod.キャップ2右.位置C = DataConsts.Vec2DZero;
+    				キャップ処理2.Bod.キャップ1.位置C = DataConsts.Vec2DZero;
     			}
     		};
     		調教UI.Mots.Add(キャップ振動.GetHashCode().ToString(), キャップ振動);
@@ -701,19 +701,19 @@ namespace SlaveMatrix
     		キャップ1.DraShow = true;
     		キャップ1.StaShow = true;
     		キャップ1.描画Show = true;
-    		キャップ1.Ele.Intensity = 0.5;
+    		キャップ1.Element.Intensity = 0.5;
     		キャップ1.使用状態 = UsageStatus.Standby;
     		キャップ2.Show = true;
     		キャップ2.DraShow = true;
     		キャップ2.StaShow = true;
     		キャップ2.描画Show = true;
-    		キャップ2.Ele.Intensity = 0.5;
+    		キャップ2.Element.Intensity = 0.5;
     		キャップ2.使用状態 = UsageStatus.Standby;
     		キャップ3.Show = true;
     		キャップ3.DraShow = true;
     		キャップ3.StaShow = true;
     		キャップ3.描画Show = true;
-    		キャップ3.Ele.Intensity = 0.5;
+    		キャップ3.Element.Intensity = 0.5;
     		キャップ3.使用状態 = UsageStatus.Standby;
     		base.Reset();
     		CP中.Reset();

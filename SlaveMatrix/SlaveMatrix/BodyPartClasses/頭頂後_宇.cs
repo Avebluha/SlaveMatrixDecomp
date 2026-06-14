@@ -3,21 +3,21 @@ using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
-    public class 頭頂後_宇 : Ele
+    public class 頭頂後_宇 : Element
     {
-    	public Par X0Y0_頭部;
+    	public ShapePart X0Y0_頭部;
 
-    	public Par X0Y0_線_線左1;
+    	public ShapePart X0Y0_線_線左1;
 
-    	public Par X0Y0_線_線左2;
+    	public ShapePart X0Y0_線_線左2;
 
-    	public Par X0Y0_線_線左3;
+    	public ShapePart X0Y0_線_線左3;
 
-    	public Par X0Y0_線_線右1;
+    	public ShapePart X0Y0_線_線右1;
 
-    	public Par X0Y0_線_線右2;
+    	public ShapePart X0Y0_線_線右2;
 
-    	public Par X0Y0_線_線右3;
+    	public ShapePart X0Y0_線_線右3;
 
     	public ColorD 頭部CD;
 
@@ -213,15 +213,15 @@ namespace SlaveMatrix
     	public 頭頂後_宇(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 頭頂後_宇D e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif();
-    		dif.Tag = "エイリアン";
-    		dif.Add(new Pars(Sta.肢中["頭部後"][0][0]));
-    		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		X0Y0_頭部 = pars["頭部"].ToPar();
-    		Pars pars2 = pars["線"].ToPars();
+    		MorphVariant morphVariant = new MorphVariant();
+    		morphVariant.Tag = "エイリアン";
+    		morphVariant.Add(new PartGroup(GlobalState.肢中["頭部後"][0][0]));
+    		Body = new VariantGrid();
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_頭部 = partGroup["頭部"].ToPar();
+    		PartGroup pars2 = partGroup["線"].ToPars();
     		X0Y0_線_線左1 = pars2["線左1"].ToPar();
     		X0Y0_線_線左2 = pars2["線左2"].ToPar();
     		X0Y0_線_線左3 = pars2["線左3"].ToPar();
@@ -296,13 +296,13 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		頭部CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		線_線左1CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		線_線左2CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		線_線左3CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		線_線右1CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		線_線右2CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		線_線右3CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
+    		頭部CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		線_線左1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		線_線左2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		線_線左3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		線_線右1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		線_線右2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		線_線右3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
     	}
     }
 }

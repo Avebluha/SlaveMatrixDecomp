@@ -4,77 +4,77 @@ using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
-    public class 植 : Ele
+    public class 植 : Element
     {
-    	public Par X0Y0_披針葉4_通常_葉;
+    	public ShapePart X0Y0_披針葉4_通常_葉;
 
-    	public Par X0Y0_披針葉4_通常_葉脈;
+    	public ShapePart X0Y0_披針葉4_通常_葉脈;
 
-    	public Par X0Y0_披針葉4_欠損_葉;
+    	public ShapePart X0Y0_披針葉4_欠損_葉;
 
-    	public Par X0Y0_披針葉4_欠損_葉脈;
+    	public ShapePart X0Y0_披針葉4_欠損_葉脈;
 
-    	public Par X0Y0_心臓葉4_通常_葉;
+    	public ShapePart X0Y0_心臓葉4_通常_葉;
 
-    	public Par X0Y0_心臓葉4_通常_葉脈;
+    	public ShapePart X0Y0_心臓葉4_通常_葉脈;
 
-    	public Par X0Y0_心臓葉4_欠損_葉;
+    	public ShapePart X0Y0_心臓葉4_欠損_葉;
 
-    	public Par X0Y0_心臓葉4_欠損_葉脈;
+    	public ShapePart X0Y0_心臓葉4_欠損_葉脈;
 
-    	public Par X0Y0_茎;
+    	public ShapePart X0Y0_茎;
 
-    	public Par X0Y0_根1;
+    	public ShapePart X0Y0_根1;
 
-    	public Par X0Y0_根2;
+    	public ShapePart X0Y0_根2;
 
-    	public Par X0Y0_披針葉1_通常_葉;
+    	public ShapePart X0Y0_披針葉1_通常_葉;
 
-    	public Par X0Y0_披針葉1_通常_葉脈;
+    	public ShapePart X0Y0_披針葉1_通常_葉脈;
 
-    	public Par X0Y0_披針葉1_欠損_葉;
+    	public ShapePart X0Y0_披針葉1_欠損_葉;
 
-    	public Par X0Y0_披針葉1_欠損_葉脈;
+    	public ShapePart X0Y0_披針葉1_欠損_葉脈;
 
-    	public Par X0Y0_披針葉2_通常_葉;
+    	public ShapePart X0Y0_披針葉2_通常_葉;
 
-    	public Par X0Y0_披針葉2_通常_葉脈;
+    	public ShapePart X0Y0_披針葉2_通常_葉脈;
 
-    	public Par X0Y0_披針葉2_欠損_葉;
+    	public ShapePart X0Y0_披針葉2_欠損_葉;
 
-    	public Par X0Y0_披針葉2_欠損_葉脈;
+    	public ShapePart X0Y0_披針葉2_欠損_葉脈;
 
-    	public Par X0Y0_披針葉3_通常_葉;
+    	public ShapePart X0Y0_披針葉3_通常_葉;
 
-    	public Par X0Y0_披針葉3_通常_葉脈;
+    	public ShapePart X0Y0_披針葉3_通常_葉脈;
 
-    	public Par X0Y0_披針葉3_欠損_葉;
+    	public ShapePart X0Y0_披針葉3_欠損_葉;
 
-    	public Par X0Y0_披針葉3_欠損_葉脈;
+    	public ShapePart X0Y0_披針葉3_欠損_葉脈;
 
-    	public Par X0Y0_心臓葉1_通常_葉;
+    	public ShapePart X0Y0_心臓葉1_通常_葉;
 
-    	public Par X0Y0_心臓葉1_通常_葉脈;
+    	public ShapePart X0Y0_心臓葉1_通常_葉脈;
 
-    	public Par X0Y0_心臓葉1_欠損_葉;
+    	public ShapePart X0Y0_心臓葉1_欠損_葉;
 
-    	public Par X0Y0_心臓葉1_欠損_葉脈;
+    	public ShapePart X0Y0_心臓葉1_欠損_葉脈;
 
-    	public Par X0Y0_心臓葉2_通常_葉;
+    	public ShapePart X0Y0_心臓葉2_通常_葉;
 
-    	public Par X0Y0_心臓葉2_通常_葉脈;
+    	public ShapePart X0Y0_心臓葉2_通常_葉脈;
 
-    	public Par X0Y0_心臓葉2_欠損_葉;
+    	public ShapePart X0Y0_心臓葉2_欠損_葉;
 
-    	public Par X0Y0_心臓葉2_欠損_葉脈;
+    	public ShapePart X0Y0_心臓葉2_欠損_葉脈;
 
-    	public Par X0Y0_心臓葉3_通常_葉;
+    	public ShapePart X0Y0_心臓葉3_通常_葉;
 
-    	public Par X0Y0_心臓葉3_通常_葉脈;
+    	public ShapePart X0Y0_心臓葉3_通常_葉脈;
 
-    	public Par X0Y0_心臓葉3_欠損_葉;
+    	public ShapePart X0Y0_心臓葉3_欠損_葉;
 
-    	public Par X0Y0_心臓葉3_欠損_葉脈;
+    	public ShapePart X0Y0_心臓葉3_欠損_葉脈;
 
     	public ColorD 葉4CD;
 
@@ -168,7 +168,7 @@ namespace SlaveMatrix
 
     	public ColorP X0Y0_心臓葉3_欠損_葉脈CP;
 
-    	public Ele[] 花_接続;
+    	public Element[] 花_接続;
 
     	public override bool 欠損
     	{
@@ -1165,24 +1165,24 @@ namespace SlaveMatrix
     	{
     		植 植2 = this;
     		ThisType = GetType();
-    		Pars pars = new Pars(Sta.肢左["植"][0][0]);
-    		pars.Remove("花");
-    		pars.Remove("萼");
-    		Dif dif = new Dif();
-    		dif.Tag = "植";
-    		dif.Add(pars);
-    		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
-    		Pars pars2 = Body[0][0];
-    		Pars pars3 = pars2["通常葉4"].ToPars();
-    		Pars pars4 = pars3["通常"].ToPars();
+    		PartGroup partGroup = new PartGroup(GlobalState.肢左["植"][0][0]);
+    		partGroup.Remove("花");
+    		partGroup.Remove("萼");
+    		MorphVariant morphVariant = new MorphVariant();
+    		morphVariant.Tag = "植";
+    		morphVariant.Add(partGroup);
+    		Body = new VariantGrid();
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
+    		PartGroup pars2 = Body[0][0];
+    		PartGroup pars3 = pars2["通常葉4"].ToPars();
+    		PartGroup pars4 = pars3["通常"].ToPars();
     		X0Y0_披針葉4_通常_葉 = pars4["葉"].ToPar();
     		X0Y0_披針葉4_通常_葉脈 = pars4["葉脈"].ToPar();
     		pars4 = pars3["欠損"].ToPars();
     		X0Y0_披針葉4_欠損_葉 = pars4["葉"].ToPar();
     		X0Y0_披針葉4_欠損_葉脈 = pars4["葉脈"].ToPar();
-    		Pars pars5 = pars2["ハート葉4"].ToPars();
+    		PartGroup pars5 = pars2["ハート葉4"].ToPars();
     		pars4 = pars5["通常"].ToPars();
     		X0Y0_心臓葉4_通常_葉 = pars4["葉"].ToPar();
     		X0Y0_心臓葉4_通常_葉脈 = pars4["葉脈"].ToPar();
@@ -1192,42 +1192,42 @@ namespace SlaveMatrix
     		X0Y0_茎 = pars2["茎"].ToPar();
     		X0Y0_根1 = pars2["根1"].ToPar();
     		X0Y0_根2 = pars2["根2"].ToPar();
-    		Pars pars6 = pars2["通常葉1"].ToPars();
+    		PartGroup pars6 = pars2["通常葉1"].ToPars();
     		pars4 = pars6["通常"].ToPars();
     		X0Y0_披針葉1_通常_葉 = pars4["葉"].ToPar();
     		X0Y0_披針葉1_通常_葉脈 = pars4["葉脈"].ToPar();
     		pars4 = pars6["欠損"].ToPars();
     		X0Y0_披針葉1_欠損_葉 = pars4["葉"].ToPar();
     		X0Y0_披針葉1_欠損_葉脈 = pars4["葉脈"].ToPar();
-    		Pars pars7 = pars2["通常葉2"].ToPars();
+    		PartGroup pars7 = pars2["通常葉2"].ToPars();
     		pars4 = pars7["通常"].ToPars();
     		X0Y0_披針葉2_通常_葉 = pars4["葉"].ToPar();
     		X0Y0_披針葉2_通常_葉脈 = pars4["葉脈"].ToPar();
     		pars4 = pars7["欠損"].ToPars();
     		X0Y0_披針葉2_欠損_葉 = pars4["葉"].ToPar();
     		X0Y0_披針葉2_欠損_葉脈 = pars4["葉脈"].ToPar();
-    		Pars pars8 = pars2["通常葉3"].ToPars();
+    		PartGroup pars8 = pars2["通常葉3"].ToPars();
     		pars4 = pars8["通常"].ToPars();
     		X0Y0_披針葉3_通常_葉 = pars4["葉"].ToPar();
     		X0Y0_披針葉3_通常_葉脈 = pars4["葉脈"].ToPar();
     		pars4 = pars8["欠損"].ToPars();
     		X0Y0_披針葉3_欠損_葉 = pars4["葉"].ToPar();
     		X0Y0_披針葉3_欠損_葉脈 = pars4["葉脈"].ToPar();
-    		Pars pars9 = pars2["ハート葉1"].ToPars();
+    		PartGroup pars9 = pars2["ハート葉1"].ToPars();
     		pars4 = pars9["通常"].ToPars();
     		X0Y0_心臓葉1_通常_葉 = pars4["葉"].ToPar();
     		X0Y0_心臓葉1_通常_葉脈 = pars4["葉脈"].ToPar();
     		pars4 = pars9["欠損"].ToPars();
     		X0Y0_心臓葉1_欠損_葉 = pars4["葉"].ToPar();
     		X0Y0_心臓葉1_欠損_葉脈 = pars4["葉脈"].ToPar();
-    		Pars pars10 = pars2["ハート葉2"].ToPars();
+    		PartGroup pars10 = pars2["ハート葉2"].ToPars();
     		pars4 = pars10["通常"].ToPars();
     		X0Y0_心臓葉2_通常_葉 = pars4["葉"].ToPar();
     		X0Y0_心臓葉2_通常_葉脈 = pars4["葉脈"].ToPar();
     		pars4 = pars10["欠損"].ToPars();
     		X0Y0_心臓葉2_欠損_葉 = pars4["葉"].ToPar();
     		X0Y0_心臓葉2_欠損_葉脈 = pars4["葉脈"].ToPar();
-    		Pars pars11 = pars2["ハート葉3"].ToPars();
+    		PartGroup pars11 = pars2["ハート葉3"].ToPars();
     		pars4 = pars11["通常"].ToPars();
     		X0Y0_心臓葉3_通常_葉 = pars4["葉"].ToPar();
     		X0Y0_心臓葉3_通常_葉脈 = pars4["葉脈"].ToPar();
@@ -1318,8 +1318,8 @@ namespace SlaveMatrix
     		}
     		if (e.花_接続.Count > 0)
     		{
-    			Ele f;
-    			花_接続 = e.花_接続.Select(delegate(EleD g)
+    			Element f;
+    			花_接続 = e.花_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 植2;
@@ -1453,47 +1453,47 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		葉4CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		葉脈4CD = new ColorD(ref Col.Black, ref 体配色.植0O);
-    		茎CD = new ColorD(ref Col.Black, ref 体配色.植0O);
-    		根1CD = new ColorD(ref Col.Black, ref 体配色.植0O);
-    		根2CD = new ColorD(ref Col.Black, ref 体配色.植0O);
-    		葉1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		葉脈1CD = new ColorD(ref Col.Black, ref 体配色.植0O);
-    		葉2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		葉脈2CD = new ColorD(ref Col.Black, ref 体配色.植0O);
-    		葉3CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		葉脈3CD = new ColorD(ref Col.Black, ref 体配色.植0O);
+    		葉4CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		葉脈4CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0O);
+    		茎CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0O);
+    		根1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0O);
+    		根2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0O);
+    		葉1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		葉脈1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0O);
+    		葉2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		葉脈2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0O);
+    		葉3CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		葉脈3CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0O);
     	}
 
     	private void 配色T0(BodyColorSet 体配色)
     	{
-    		葉4CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		葉脈4CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		茎CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		根1CD = new ColorD(ref Col.Black, ref 体配色.植0O);
-    		根2CD = new ColorD(ref Col.Black, ref 体配色.植0O);
-    		葉1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		葉脈1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		葉2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		葉脈2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		葉3CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		葉脈3CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		葉4CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		葉脈4CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		茎CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		根1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0O);
+    		根2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0O);
+    		葉1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		葉脈1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		葉2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		葉脈2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		葉3CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		葉脈3CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
     	}
 
     	private void 配色T1(BodyColorSet 体配色)
     	{
-    		葉4CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		葉脈4CD = new ColorD(ref Col.Black, ref 体配色.植0O);
-    		茎CD = new ColorD(ref Col.Black, ref 体配色.植0O);
-    		根1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		根2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		葉1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		葉脈1CD = new ColorD(ref Col.Black, ref 体配色.植0O);
-    		葉2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		葉脈2CD = new ColorD(ref Col.Black, ref 体配色.植0O);
-    		葉3CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		葉脈3CD = new ColorD(ref Col.Black, ref 体配色.植0O);
+    		葉4CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		葉脈4CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0O);
+    		茎CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0O);
+    		根1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		根2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		葉1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		葉脈1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0O);
+    		葉2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		葉脈2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0O);
+    		葉3CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		葉脈3CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0O);
     	}
     }
 }

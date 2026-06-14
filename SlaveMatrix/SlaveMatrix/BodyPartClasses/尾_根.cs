@@ -5,127 +5,127 @@ namespace SlaveMatrix
 {
     public class 尾_根 : 尾
     {
-    	public Par X0Y0_尾0_尾;
+    	public ShapePart X0Y0_尾0_尾;
 
-    	public Par X0Y0_尾0_線1;
+    	public ShapePart X0Y0_尾0_線1;
 
-    	public Par X0Y0_尾0_線2;
+    	public ShapePart X0Y0_尾0_線2;
 
-    	public Par X0Y0_尾1_尾;
+    	public ShapePart X0Y0_尾1_尾;
 
-    	public Par X0Y0_尾1_線1;
+    	public ShapePart X0Y0_尾1_線1;
 
-    	public Par X0Y0_尾1_線2;
+    	public ShapePart X0Y0_尾1_線2;
 
-    	public Par X0Y0_尾2_尾;
+    	public ShapePart X0Y0_尾2_尾;
 
-    	public Par X0Y0_尾2_線1;
+    	public ShapePart X0Y0_尾2_線1;
 
-    	public Par X0Y0_尾2_線2;
+    	public ShapePart X0Y0_尾2_線2;
 
-    	public Par X0Y0_尾3_尾;
+    	public ShapePart X0Y0_尾3_尾;
 
-    	public Par X0Y0_尾3_線1;
+    	public ShapePart X0Y0_尾3_線1;
 
-    	public Par X0Y0_尾3_線2;
+    	public ShapePart X0Y0_尾3_線2;
 
-    	public Par X0Y0_尾4_尾;
+    	public ShapePart X0Y0_尾4_尾;
 
-    	public Par X0Y0_尾4_線1;
+    	public ShapePart X0Y0_尾4_線1;
 
-    	public Par X0Y0_尾4_線2;
+    	public ShapePart X0Y0_尾4_線2;
 
-    	public Par X0Y0_尾5_尾;
+    	public ShapePart X0Y0_尾5_尾;
 
-    	public Par X0Y0_尾5_線1;
+    	public ShapePart X0Y0_尾5_線1;
 
-    	public Par X0Y0_尾5_線2;
+    	public ShapePart X0Y0_尾5_線2;
 
-    	public Par X0Y0_尾6_尾;
+    	public ShapePart X0Y0_尾6_尾;
 
-    	public Par X0Y0_尾6_線1;
+    	public ShapePart X0Y0_尾6_線1;
 
-    	public Par X0Y0_尾6_線2;
+    	public ShapePart X0Y0_尾6_線2;
 
-    	public Par X0Y0_尾7_尾;
+    	public ShapePart X0Y0_尾7_尾;
 
-    	public Par X0Y0_尾7_線1;
+    	public ShapePart X0Y0_尾7_線1;
 
-    	public Par X0Y0_尾7_線2;
+    	public ShapePart X0Y0_尾7_線2;
 
-    	public Par X0Y0_輪_革;
+    	public ShapePart X0Y0_輪_革;
 
-    	public Par X0Y0_輪_金具1;
+    	public ShapePart X0Y0_輪_金具1;
 
-    	public Par X0Y0_輪_金具2;
+    	public ShapePart X0Y0_輪_金具2;
 
-    	public Par X0Y0_輪_金具3;
+    	public ShapePart X0Y0_輪_金具3;
 
-    	public Par X0Y0_輪_金具左;
+    	public ShapePart X0Y0_輪_金具左;
 
-    	public Par X0Y0_輪_金具右;
+    	public ShapePart X0Y0_輪_金具右;
 
-    	public Par X0Y0_尾8_尾;
+    	public ShapePart X0Y0_尾8_尾;
 
-    	public Par X0Y0_尾8_線1;
+    	public ShapePart X0Y0_尾8_線1;
 
-    	public Par X0Y0_尾8_線2;
+    	public ShapePart X0Y0_尾8_線2;
 
-    	public Par X0Y0_尾9_尾;
+    	public ShapePart X0Y0_尾9_尾;
 
-    	public Par X0Y0_尾9_線1;
+    	public ShapePart X0Y0_尾9_線1;
 
-    	public Par X0Y0_尾9_線2;
+    	public ShapePart X0Y0_尾9_線2;
 
-    	public Par X0Y0_尾10_尾;
+    	public ShapePart X0Y0_尾10_尾;
 
-    	public Par X0Y0_尾10_線1;
+    	public ShapePart X0Y0_尾10_線1;
 
-    	public Par X0Y0_尾10_線2;
+    	public ShapePart X0Y0_尾10_線2;
 
-    	public Par X0Y0_尾11_尾;
+    	public ShapePart X0Y0_尾11_尾;
 
-    	public Par X0Y0_尾11_線1;
+    	public ShapePart X0Y0_尾11_線1;
 
-    	public Par X0Y0_尾11_線2;
+    	public ShapePart X0Y0_尾11_線2;
 
-    	public Par X0Y0_尾12_尾;
+    	public ShapePart X0Y0_尾12_尾;
 
-    	public Par X0Y0_尾12_線1;
+    	public ShapePart X0Y0_尾12_線1;
 
-    	public Par X0Y0_尾12_線2;
+    	public ShapePart X0Y0_尾12_線2;
 
-    	public Par X0Y0_尾13_尾;
+    	public ShapePart X0Y0_尾13_尾;
 
-    	public Par X0Y0_尾13_線1;
+    	public ShapePart X0Y0_尾13_線1;
 
-    	public Par X0Y0_尾13_線2;
+    	public ShapePart X0Y0_尾13_線2;
 
-    	public Par X0Y0_尾14_尾;
+    	public ShapePart X0Y0_尾14_尾;
 
-    	public Par X0Y0_尾14_線1;
+    	public ShapePart X0Y0_尾14_線1;
 
-    	public Par X0Y0_尾14_線2;
+    	public ShapePart X0Y0_尾14_線2;
 
-    	public Par X0Y0_尾15_尾;
+    	public ShapePart X0Y0_尾15_尾;
 
-    	public Par X0Y0_尾15_線1;
+    	public ShapePart X0Y0_尾15_線1;
 
-    	public Par X0Y0_尾15_線2;
+    	public ShapePart X0Y0_尾15_線2;
 
-    	public Par X0Y0_尾16_尾;
+    	public ShapePart X0Y0_尾16_尾;
 
-    	public Par X0Y0_尾16_線1;
+    	public ShapePart X0Y0_尾16_線1;
 
-    	public Par X0Y0_尾16_線2;
+    	public ShapePart X0Y0_尾16_線2;
 
-    	public Par X0Y0_尾17_尾;
+    	public ShapePart X0Y0_尾17_尾;
 
-    	public Par X0Y0_尾17_線1;
+    	public ShapePart X0Y0_尾17_線1;
 
-    	public Par X0Y0_尾17_線2;
+    	public ShapePart X0Y0_尾17_線2;
 
-    	public Par X0Y0_尾18;
+    	public ShapePart X0Y0_尾18;
 
     	public ColorD 尾0_尾CD;
 
@@ -375,7 +375,7 @@ namespace SlaveMatrix
 
     	public 拘束鎖 鎖2;
 
-    	public Par[] Pars;
+    	public ShapePart[] Pars;
 
     	private Vector2D[] mm;
 
@@ -1392,93 +1392,93 @@ namespace SlaveMatrix
     	public 尾_根(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 尾_根D e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif();
-    		dif.Tag = "根尾";
-    		dif.Add(new Pars(Sta.尻尾["尾"][0][22]));
-    		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		Pars pars2 = pars["尾0"].ToPars();
+    		MorphVariant morphVariant = new MorphVariant();
+    		morphVariant.Tag = "根尾";
+    		morphVariant.Add(new PartGroup(GlobalState.尻尾["尾"][0][22]));
+    		Body = new VariantGrid();
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
+    		PartGroup partGroup = Body[0][0];
+    		PartGroup pars2 = partGroup["尾0"].ToPars();
     		X0Y0_尾0_尾 = pars2["尾"].ToPar();
     		X0Y0_尾0_線1 = pars2["線1"].ToPar();
     		X0Y0_尾0_線2 = pars2["線2"].ToPar();
-    		pars2 = pars["尾1"].ToPars();
+    		pars2 = partGroup["尾1"].ToPars();
     		X0Y0_尾1_尾 = pars2["尾"].ToPar();
     		X0Y0_尾1_線1 = pars2["線1"].ToPar();
     		X0Y0_尾1_線2 = pars2["線2"].ToPar();
-    		pars2 = pars["尾2"].ToPars();
+    		pars2 = partGroup["尾2"].ToPars();
     		X0Y0_尾2_尾 = pars2["尾"].ToPar();
     		X0Y0_尾2_線1 = pars2["線1"].ToPar();
     		X0Y0_尾2_線2 = pars2["線2"].ToPar();
-    		pars2 = pars["尾3"].ToPars();
+    		pars2 = partGroup["尾3"].ToPars();
     		X0Y0_尾3_尾 = pars2["尾"].ToPar();
     		X0Y0_尾3_線1 = pars2["線1"].ToPar();
     		X0Y0_尾3_線2 = pars2["線2"].ToPar();
-    		pars2 = pars["尾4"].ToPars();
+    		pars2 = partGroup["尾4"].ToPars();
     		X0Y0_尾4_尾 = pars2["尾"].ToPar();
     		X0Y0_尾4_線1 = pars2["線1"].ToPar();
     		X0Y0_尾4_線2 = pars2["線2"].ToPar();
-    		pars2 = pars["尾5"].ToPars();
+    		pars2 = partGroup["尾5"].ToPars();
     		X0Y0_尾5_尾 = pars2["尾"].ToPar();
     		X0Y0_尾5_線1 = pars2["線1"].ToPar();
     		X0Y0_尾5_線2 = pars2["線2"].ToPar();
-    		pars2 = pars["尾6"].ToPars();
+    		pars2 = partGroup["尾6"].ToPars();
     		X0Y0_尾6_尾 = pars2["尾"].ToPar();
     		X0Y0_尾6_線1 = pars2["線1"].ToPar();
     		X0Y0_尾6_線2 = pars2["線2"].ToPar();
-    		pars2 = pars["尾7"].ToPars();
+    		pars2 = partGroup["尾7"].ToPars();
     		X0Y0_尾7_尾 = pars2["尾"].ToPar();
     		X0Y0_尾7_線1 = pars2["線1"].ToPar();
     		X0Y0_尾7_線2 = pars2["線2"].ToPar();
-    		pars2 = pars["輪"].ToPars();
+    		pars2 = partGroup["輪"].ToPars();
     		X0Y0_輪_革 = pars2["革"].ToPar();
     		X0Y0_輪_金具1 = pars2["金具1"].ToPar();
     		X0Y0_輪_金具2 = pars2["金具2"].ToPar();
     		X0Y0_輪_金具3 = pars2["金具3"].ToPar();
     		X0Y0_輪_金具左 = pars2["金具左"].ToPar();
     		X0Y0_輪_金具右 = pars2["金具右"].ToPar();
-    		pars2 = pars["尾8"].ToPars();
+    		pars2 = partGroup["尾8"].ToPars();
     		X0Y0_尾8_尾 = pars2["尾"].ToPar();
     		X0Y0_尾8_線1 = pars2["線1"].ToPar();
     		X0Y0_尾8_線2 = pars2["線2"].ToPar();
-    		pars2 = pars["尾9"].ToPars();
+    		pars2 = partGroup["尾9"].ToPars();
     		X0Y0_尾9_尾 = pars2["尾"].ToPar();
     		X0Y0_尾9_線1 = pars2["線1"].ToPar();
     		X0Y0_尾9_線2 = pars2["線2"].ToPar();
-    		pars2 = pars["尾10"].ToPars();
+    		pars2 = partGroup["尾10"].ToPars();
     		X0Y0_尾10_尾 = pars2["尾"].ToPar();
     		X0Y0_尾10_線1 = pars2["線1"].ToPar();
     		X0Y0_尾10_線2 = pars2["線2"].ToPar();
-    		pars2 = pars["尾11"].ToPars();
+    		pars2 = partGroup["尾11"].ToPars();
     		X0Y0_尾11_尾 = pars2["尾"].ToPar();
     		X0Y0_尾11_線1 = pars2["線1"].ToPar();
     		X0Y0_尾11_線2 = pars2["線2"].ToPar();
-    		pars2 = pars["尾12"].ToPars();
+    		pars2 = partGroup["尾12"].ToPars();
     		X0Y0_尾12_尾 = pars2["尾"].ToPar();
     		X0Y0_尾12_線1 = pars2["線1"].ToPar();
     		X0Y0_尾12_線2 = pars2["線2"].ToPar();
-    		pars2 = pars["尾13"].ToPars();
+    		pars2 = partGroup["尾13"].ToPars();
     		X0Y0_尾13_尾 = pars2["尾"].ToPar();
     		X0Y0_尾13_線1 = pars2["線1"].ToPar();
     		X0Y0_尾13_線2 = pars2["線2"].ToPar();
-    		pars2 = pars["尾14"].ToPars();
+    		pars2 = partGroup["尾14"].ToPars();
     		X0Y0_尾14_尾 = pars2["尾"].ToPar();
     		X0Y0_尾14_線1 = pars2["線1"].ToPar();
     		X0Y0_尾14_線2 = pars2["線2"].ToPar();
-    		pars2 = pars["尾15"].ToPars();
+    		pars2 = partGroup["尾15"].ToPars();
     		X0Y0_尾15_尾 = pars2["尾"].ToPar();
     		X0Y0_尾15_線1 = pars2["線1"].ToPar();
     		X0Y0_尾15_線2 = pars2["線2"].ToPar();
-    		pars2 = pars["尾16"].ToPars();
+    		pars2 = partGroup["尾16"].ToPars();
     		X0Y0_尾16_尾 = pars2["尾"].ToPar();
     		X0Y0_尾16_線1 = pars2["線1"].ToPar();
     		X0Y0_尾16_線2 = pars2["線2"].ToPar();
-    		pars2 = pars["尾17"].ToPars();
+    		pars2 = partGroup["尾17"].ToPars();
     		X0Y0_尾17_尾 = pars2["尾"].ToPar();
     		X0Y0_尾17_線1 = pars2["線1"].ToPar();
     		X0Y0_尾17_線2 = pars2["線2"].ToPar();
-    		X0Y0_尾18 = pars["尾18"].ToPar();
+    		X0Y0_尾18 = partGroup["尾18"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;
@@ -1574,7 +1574,7 @@ namespace SlaveMatrix
     		}
     		base.配色指定 = 配色指定;
     		配色(体配色);
-    		Pars = new Par[19]
+    		Pars = new ShapePart[19]
     		{
     			X0Y0_尾0_尾, X0Y0_尾1_尾, X0Y0_尾2_尾, X0Y0_尾3_尾, X0Y0_尾4_尾, X0Y0_尾5_尾, X0Y0_尾6_尾, X0Y0_尾7_尾, X0Y0_尾8_尾, X0Y0_尾9_尾,
     			X0Y0_尾10_尾, X0Y0_尾11_尾, X0Y0_尾12_尾, X0Y0_尾13_尾, X0Y0_尾14_尾, X0Y0_尾15_尾, X0Y0_尾16_尾, X0Y0_尾17_尾, X0Y0_尾18
@@ -1751,7 +1751,7 @@ namespace SlaveMatrix
     		Body.JoinPAall();
     	}
 
-    	public override bool Is革(Par p)
+    	public override bool Is革(ShapePart p)
     	{
     		if (p != X0Y0_輪_革 && p != X0Y0_輪_金具1 && p != X0Y0_輪_金具2 && p != X0Y0_輪_金具3 && p != X0Y0_輪_金具左)
     		{
@@ -1760,7 +1760,7 @@ namespace SlaveMatrix
     		return true;
     	}
 
-    	public override IEnumerable<Par> Enum軸()
+    	public override IEnumerable<ShapePart> Enum軸()
     	{
     		yield return X0Y0_尾0_尾;
     		yield return X0Y0_尾1_尾;
@@ -1874,61 +1874,61 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		尾0_尾CD = new ColorD(ref Col.Black, ref 体配色.植0R);
-    		尾0_線1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾0_線2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾1_尾CD = new ColorD(ref Col.Black, ref 体配色.植0R);
-    		尾1_線1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾1_線2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾2_尾CD = new ColorD(ref Col.Black, ref 体配色.植0R);
-    		尾2_線1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾2_線2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾3_尾CD = new ColorD(ref Col.Black, ref 体配色.植0R);
-    		尾3_線1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾3_線2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾4_尾CD = new ColorD(ref Col.Black, ref 体配色.植0R);
-    		尾4_線1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾4_線2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾5_尾CD = new ColorD(ref Col.Black, ref 体配色.植0R);
-    		尾5_線1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾5_線2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾6_尾CD = new ColorD(ref Col.Black, ref 体配色.植0R);
-    		尾6_線1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾6_線2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾7_尾CD = new ColorD(ref Col.Black, ref 体配色.植0R);
-    		尾7_線1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾7_線2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾8_尾CD = new ColorD(ref Col.Black, ref 体配色.植0R);
-    		尾8_線1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾8_線2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾9_尾CD = new ColorD(ref Col.Black, ref 体配色.植0R);
-    		尾9_線1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾9_線2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾10_尾CD = new ColorD(ref Col.Black, ref 体配色.植0R);
-    		尾10_線1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾10_線2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾11_尾CD = new ColorD(ref Col.Black, ref 体配色.植0R);
-    		尾11_線1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾11_線2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾12_尾CD = new ColorD(ref Col.Black, ref 体配色.植0R);
-    		尾12_線1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾12_線2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾13_尾CD = new ColorD(ref Col.Black, ref 体配色.植0R);
-    		尾13_線1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾13_線2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾14_尾CD = new ColorD(ref Col.Black, ref 体配色.植0R);
-    		尾14_線1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾14_線2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾15_尾CD = new ColorD(ref Col.Black, ref 体配色.植0R);
-    		尾15_線1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾15_線2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾16_尾CD = new ColorD(ref Col.Black, ref 体配色.植0R);
-    		尾16_線1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾16_線2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾17_尾CD = new ColorD(ref Col.Black, ref 体配色.植0R);
-    		尾17_線1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾17_線2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾18CD = new ColorD(ref Col.Black, ref 体配色.植0R);
+    		尾0_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0R);
+    		尾0_線1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾0_線2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾1_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0R);
+    		尾1_線1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾1_線2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾2_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0R);
+    		尾2_線1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾2_線2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾3_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0R);
+    		尾3_線1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾3_線2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾4_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0R);
+    		尾4_線1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾4_線2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾5_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0R);
+    		尾5_線1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾5_線2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾6_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0R);
+    		尾6_線1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾6_線2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾7_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0R);
+    		尾7_線1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾7_線2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾8_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0R);
+    		尾8_線1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾8_線2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾9_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0R);
+    		尾9_線1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾9_線2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾10_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0R);
+    		尾10_線1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾10_線2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾11_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0R);
+    		尾11_線1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾11_線2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾12_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0R);
+    		尾12_線1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾12_線2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾13_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0R);
+    		尾13_線1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾13_線2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾14_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0R);
+    		尾14_線1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾14_線2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾15_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0R);
+    		尾15_線1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾15_線2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾16_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0R);
+    		尾16_線1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾16_線2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾17_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0R);
+    		尾17_線1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾17_線2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾18CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0R);
     		輪_革CD = new ColorD();
     		輪_金具1CD = new ColorD();
     		輪_金具2CD = new ColorD();
@@ -1940,42 +1940,42 @@ namespace SlaveMatrix
     	private void 配色T0(BodyColorSet 体配色)
     	{
     		this.配色T(0, "尾", ref 体配色.植0R, ref 体配色.刺青R);
-    		尾0_線1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾0_線2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾1_線1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾1_線2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾2_線1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾2_線2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾3_線1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾3_線2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾4_線1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾4_線2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾5_線1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾5_線2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾6_線1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾6_線2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾7_線1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾7_線2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾8_線1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾8_線2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾9_線1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾9_線2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾10_線1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾10_線2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾11_線1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾11_線2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾12_線1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾12_線2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾13_線1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾13_線2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾14_線1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾14_線2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾15_線1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾15_線2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾16_線1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾16_線2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾17_線1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾17_線2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
+    		尾0_線1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾0_線2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾1_線1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾1_線2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾2_線1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾2_線2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾3_線1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾3_線2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾4_線1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾4_線2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾5_線1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾5_線2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾6_線1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾6_線2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾7_線1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾7_線2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾8_線1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾8_線2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾9_線1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾9_線2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾10_線1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾10_線2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾11_線1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾11_線2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾12_線1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾12_線2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾13_線1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾13_線2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾14_線1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾14_線2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾15_線1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾15_線2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾16_線1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾16_線2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾17_線1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾17_線2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
     		輪_革CD = new ColorD();
     		輪_金具1CD = new ColorD();
     		輪_金具2CD = new ColorD();
@@ -1987,42 +1987,42 @@ namespace SlaveMatrix
     	private void 配色T1(BodyColorSet 体配色)
     	{
     		this.配色T(1, "尾", ref 体配色.植0R, ref 体配色.刺青R);
-    		尾0_線1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾0_線2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾1_線1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾1_線2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾2_線1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾2_線2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾3_線1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾3_線2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾4_線1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾4_線2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾5_線1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾5_線2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾6_線1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾6_線2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾7_線1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾7_線2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾8_線1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾8_線2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾9_線1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾9_線2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾10_線1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾10_線2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾11_線1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾11_線2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾12_線1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾12_線2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾13_線1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾13_線2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾14_線1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾14_線2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾15_線1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾15_線2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾16_線1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾16_線2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾17_線1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		尾17_線2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
+    		尾0_線1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾0_線2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾1_線1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾1_線2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾2_線1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾2_線2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾3_線1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾3_線2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾4_線1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾4_線2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾5_線1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾5_線2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾6_線1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾6_線2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾7_線1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾7_線2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾8_線1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾8_線2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾9_線1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾9_線2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾10_線1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾10_線2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾11_線1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾11_線2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾12_線1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾12_線2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾13_線1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾13_線2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾14_線1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾14_線2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾15_線1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾15_線2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾16_線1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾16_線2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾17_線1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		尾17_線2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
     		輪_革CD = new ColorD();
     		輪_金具1CD = new ColorD();
     		輪_金具2CD = new ColorD();

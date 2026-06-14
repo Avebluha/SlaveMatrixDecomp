@@ -59,7 +59,7 @@ namespace SlaveMatrix
 
     	private Vector2D o;
 
-    	private Vector2D vc = Dat.Vec2DZero;
+    	private Vector2D vc = DataConsts.Vec2DZero;
 
     	private ContactType 挿入箇所;
 
@@ -131,7 +131,7 @@ namespace SlaveMatrix
     				調教UI.Set持ち手();
     				調教UI.ハンド右.位置B = 調教UI.ハンド右CM.bp;
     				調教UI.ハンド右.Intensity = 0.5;
-    				調教UI.ハンド右.位置C = Dat.Vec2DZero;
+    				調教UI.ハンド右.位置C = DataConsts.Vec2DZero;
     				調教UI.放し();
     			}
     			調教UI.ハンド右.Intensity = 1.0;
@@ -142,13 +142,13 @@ namespace SlaveMatrix
     	{
     		調教UI.擬音キュー.Enqueue(delegate(RenderArea a)
     		{
-    			調教UI.擬音.Sound(a, Sta.GetAreaPoint(ref 調教UI.ペニス.AreM.Position, 0.02), Sta.射精.GetVal(Player.変化V_射精, 1.0), new Font("MS Gothic", 1f), Color.White, 0.2 + 0.2 * RNG.XS.NextDouble() * Player.変化V_射精, b: true);
+    			調教UI.擬音.Sound(a, GlobalState.GetAreaPoint(ref 調教UI.ペニス.ManagedArea.Position, 0.02), GlobalState.射精.GetVal(Player.変化V_射精, 1.0), new Font("MS Gothic", 1f), Color.White, 0.2 + 0.2 * Rng.XS.NextDouble() * Player.変化V_射精, b: true);
     		});
     	}
 
     	private void パイズリ時()
     	{
-    		if (Sta.GameData.ガイド)
+    		if (GlobalState.GameData.ガイド)
     		{
     			if (Isパイズリ他動)
     			{
@@ -163,7 +163,7 @@ namespace SlaveMatrix
 
     	private void 胸オーバー時()
     	{
-    		if (Sta.GameData.ガイド)
+    		if (GlobalState.GameData.ガイド)
     		{
     			if (Isパイズリ他動)
     			{
@@ -178,7 +178,7 @@ namespace SlaveMatrix
 
     	private void コキ時()
     	{
-    		if (Sta.GameData.ガイド)
+    		if (GlobalState.GameData.ガイド)
     		{
     			ip.SubInfoIm = "LDo:" + GameText.やめさせる;
     		}
@@ -186,7 +186,7 @@ namespace SlaveMatrix
 
     	private void 手オーバー時()
     	{
-    		if (Sta.GameData.ガイド)
+    		if (GlobalState.GameData.ガイド)
     		{
     			ip.SubInfoIm = "LDo:" + GameText.手コキ;
     		}
@@ -194,7 +194,7 @@ namespace SlaveMatrix
 
     	private void 足オーバー時()
     	{
-    		if (Sta.GameData.ガイド)
+    		if (GlobalState.GameData.ガイド)
     		{
     			ip.SubInfoIm = "LDo:" + GameText.足コキ;
     		}
@@ -202,7 +202,7 @@ namespace SlaveMatrix
 
     	private void 扱き時()
     	{
-    		if (Sta.GameData.ガイド)
+    		if (GlobalState.GameData.ガイド)
     		{
     			InfoPanel obj = ip;
     			obj.SubInfoIm = obj.SubInfoIm + "\r\nWh:" + GameText.扱く;
@@ -254,7 +254,7 @@ namespace SlaveMatrix
     				Bod.乳房右.Yv = 0.2 + 0.4 * d;
     				vc.Y = -0.002 * d;
     				Bod.胸毛_人.位置C = vc;
-    				対象.Ele.角度C = (100.0 * x).Clamp(-5.0, 5.0);
+    				対象.Element.角度C = (100.0 * x).Clamp(-5.0, 5.0);
     				if (yi != Bod.乳房左.Yi && Bod.乳房左.Yi == 1)
     				{
     					Bod.胸左右前後 = !Bod.胸左右前後;
@@ -289,7 +289,7 @@ namespace SlaveMatrix
     		else
     		{
     			調教UI.ペニス挿入.Move(ref mb, ref cp, ref hc, ref cd);
-    			if (Sta.GameData.ガイド)
+    			if (GlobalState.GameData.ガイド)
     			{
     				if (string.IsNullOrWhiteSpace(ip.SubInfoIm))
     				{
@@ -324,7 +324,7 @@ namespace SlaveMatrix
     				{
     					パイズリ.Start();
     				}
-    				Isパイズリ相互 = Player.パイズリ3 && RNG.XS.NextBool();
+    				Isパイズリ相互 = Player.パイズリ3 && Rng.XS.NextBool();
     				Isパイズリ = true;
     				調教UI.ペニス.位置B = Bod.胸部位置;
     				d = 0.0;
@@ -442,7 +442,7 @@ namespace SlaveMatrix
     				if (!調教UI.ハンド挿入.Is挿入)
     				{
     					持ち手 = false;
-    					調教UI.Focus.Ele.Intensity = 0.5;
+    					調教UI.Focus.Element.Intensity = 0.5;
     					調教UI.Focus = 調教UI.ハンド右CM;
     					調教UI.ハンド右.位置B = cp;
     					調教UI.ハンド処理.切り替え = true;
@@ -457,9 +457,9 @@ namespace SlaveMatrix
     		else if (mb == MouseButtons.Middle && !手コキ.Run && !パイズリ.Run && !足コキ.Run && !Isモード && !調教UI.マウス挿入.Is挿入)
     		{
     			持ち手 = false;
-    			調教UI.Focus.Ele.Intensity = 0.5;
+    			調教UI.Focus.Element.Intensity = 0.5;
     			調教UI.Focus = 調教UI.マウスCM;
-    			調教UI.マウスCM.Ele.位置B = cp;
+    			調教UI.マウスCM.Element.位置B = cp;
     			調教UI.マウス処理.切り替え = true;
     			調教UI.マウス処理.Move(ref mb, ref cp, ref hc, ref cd);
     		}
@@ -485,17 +485,17 @@ namespace SlaveMatrix
     				パイズリ.End();
     			}
                 //~~TODO~~ fix?
-                //Cursor.Position = Med.BaseControlC.PointToScreen(Med.FromBasePosition(対象.Ele.位置B));
-                Med.CursorPosition = Med.FromBasePosition(対象.Ele.位置B);
+                //Cursor.Position = Med.BaseControlC.PointToScreen(Med.FromBasePosition(対象.Element.位置B));
+                Med.CursorPosition = Med.FromBasePosition(対象.Element.位置B);
 
 
                 調教UI.ハンド処理.バスト初期化.Start();
-    			vc = Dat.Vec2DZero;
+    			vc = DataConsts.Vec2DZero;
     			Bod.胸毛_人.位置C = vc;
     			調教UI.ハンド左表示 = false;
-    			調教UI.ハンド右.位置C = Dat.Vec2DZero;
-    			調教UI.ハンド左.位置C = Dat.Vec2DZero;
-    			対象.Ele.角度C = 0.0;
+    			調教UI.ハンド右.位置C = DataConsts.Vec2DZero;
+    			調教UI.ハンド左.位置C = DataConsts.Vec2DZero;
+    			対象.Element.角度C = 0.0;
     			持ち手 = false;
     			Isパイズリ = false;
     			調教UI.放し();
@@ -503,7 +503,7 @@ namespace SlaveMatrix
     			return;
     		}
     		調教UI.ペニス挿入.Up(ref mb, ref cp, ref hc, ref cd);
-    		if (Sta.GameData.ガイド)
+    		if (GlobalState.GameData.ガイド)
     		{
     			if (string.IsNullOrWhiteSpace(ip.SubInfoIm))
     			{
@@ -544,24 +544,24 @@ namespace SlaveMatrix
     		射精.Start();
     	}
 
-    	public ペニス処理(TrainingUI 調教UI, CM ペニス)
+    	public ペニス処理(TrainingUI 調教UI, CharacterElement ペニス)
     		: base(調教UI, ペニス)
     	{
     		ペニス処理 ペニス処理2 = this;
     		double d = 調教UI.ペニス.X0Y4_陰嚢.GetBasePointBase().Y - 調教UI.ペニス.X0Y0_陰嚢.GetBasePointBase().Y;
-    		Vector2D v = new Vector2D(対象.Ele.位置C.X, d);
+    		Vector2D v = new Vector2D(対象.Element.位置C.X, d);
     		チンピク = new Motion(0.0, 1.0)
     		{
     			BaseSpeed = 4.0,
     			OnStart = delegate
     			{
-    				ペニス処理2.対象.Ele.Yi = 0;
+    				ペニス処理2.対象.Element.Yi = 0;
     			},
     			OnUpdate = delegate(Motion m)
     			{
-    				ペニス処理2.対象.Ele.Yv = m.Value;
+    				ペニス処理2.対象.Element.Yv = m.Value;
     				v.Y = d * m.Value;
-    				ペニス処理2.対象.Ele.位置C = v;
+    				ペニス処理2.対象.Element.位置C = v;
     			},
     			OnReach = delegate
     			{
@@ -573,8 +573,8 @@ namespace SlaveMatrix
     			OnEnd = delegate(Motion m)
     			{
     				m.ResetValue();
-    				ペニス処理2.対象.Ele.Yi = 0;
-    				ペニス処理2.対象.Ele.位置C = Dat.Vec2DZero;
+    				ペニス処理2.対象.Element.Yi = 0;
+    				ペニス処理2.対象.Element.位置C = DataConsts.Vec2DZero;
     			}
     		};
     		調教UI.Mots.Add(チンピク.GetHashCode().ToString(), チンピク);
@@ -613,14 +613,14 @@ namespace SlaveMatrix
     			OnUpdate = delegate(Motion m)
     			{
     				xc = 1.0 + 0.2 * m.Value;
-    				foreach (Par item in 調教UI.ペニス.Body.EnumAllPar())
+    				foreach (ShapePart item in 調教UI.ペニス.Body.EnumAllPar())
     				{
     					if (item.Tag != "陰嚢")
     					{
     						item.SetSizeXCont(xc);
     					}
     				}
-    				調教UI.ペニス.位置C = Oth.GetRandomVector() * 0.001;
+    				調教UI.ペニス.位置C = GeometryUtils.GetRandomVector() * 0.001;
     				調教UI.射精.位置C = 調教UI.ペニス.位置C;
     			},
     			OnReach = delegate(Motion m)
@@ -640,16 +640,16 @@ namespace SlaveMatrix
     			},
     			OnEnd = delegate(Motion m)
     			{
-    				ペニス処理2.対象.Ele.尺度XC = 1.0;
-    				調教UI.ペニス.位置C = Dat.Vec2DZero;
-    				調教UI.射精.位置C = Dat.Vec2DZero;
+    				ペニス処理2.対象.Element.尺度XC = 1.0;
+    				調教UI.ペニス.位置C = DataConsts.Vec2DZero;
+    				調教UI.射精.位置C = DataConsts.Vec2DZero;
     				m.ResetValue();
     			}
     		};
     		調教UI.Mots.Add(射精.GetHashCode().ToString(), 射精);
     		bool 外出し = false;
     		bool 断面 = false;
-    		Par p;
+    		ShapePart p;
     		Vector2D cp;
     		Color hc;
     		ContactType c;
@@ -679,7 +679,7 @@ namespace SlaveMatrix
     					if (調教UI.射精.Yv >= 0.65 && 調教UI.Focus == ペニス)
     					{
     						p = 調教UI.射精.Body.GetCurrent().EnumAllPar().First();
-    						cp = p.ToGlobal(p.GetOP().GetCenter() + Oth.GetRandomVector() * 0.0025);
+    						cp = p.ToGlobal(p.GetOP().GetCenter() + GeometryUtils.GetRandomVector() * 0.0025);
     						hc = ペニス処理2.Med.GetHitColor(ペニス処理2.Med.FromBasePosition(cp));
     						ペニス処理2.Bod.Addぶっかけ(cp, hc);
     						調教UI.Action(c = ペニス処理2.Cha.GetContact(ref hc).c, ActionType.Contact, CurrentState.Start, ToolType.Penis, 0, 1, 機械: false, 射精: true);
@@ -766,7 +766,7 @@ namespace SlaveMatrix
     					ペニス処理2.LowerArm.尺度XC = LowerArmXC * (0.9 + 0.1 * m.Value.Inverse());
     					if (ペニス処理2.LowerArm.虫鎌_接続 != null)
     					{
-    						Ele[] 虫鎌_接続2 = ペニス処理2.LowerArm.虫鎌_接続;
+    						Element[] 虫鎌_接続2 = ペニス処理2.LowerArm.虫鎌_接続;
     						for (int j = 0; j < 虫鎌_接続2.Length; j++)
     						{
     							虫鎌_接続2[j].尺度XC = ペニス処理2.LowerArm.尺度XC;
@@ -817,7 +817,7 @@ namespace SlaveMatrix
     			}
     		};
     		調教UI.Mots.Add(手コキ.GetHashCode().ToString(), 手コキ);
-    		_ = Dat.Vec2DZero;
+    		_ = DataConsts.Vec2DZero;
     		s = 0.0;
     		double t;
     		double d1;
@@ -830,14 +830,14 @@ namespace SlaveMatrix
     				ペニス処理2.Bod.頬濃度 = 0.0;
     				ペニス処理2.Bod.口.Yi = 13;
     				ペニス処理2.Bod.舌_表示 = true;
-    				s = RNG.XS.NextSign();
+    				s = Rng.XS.NextSign();
     				調教UI.Action(ContactType.Mouth, ActionType.Insertion, CurrentState.Start, ToolType.Penis, 0, 1, 機械: false, 射精: false);
     				Player.奴体力消費小();
     				Player.主精力消費小();
     			},
     			OnUpdate = delegate(Motion m)
     			{
-    				t = ペニス処理2.Cha.CharacterData.SkillL / Sta.GameData.TrainingTarget.MaxSkillL * 0.4;
+    				t = ペニス処理2.Cha.CharacterData.SkillL / GlobalState.GameData.TrainingTarget.MaxSkillL * 0.4;
     				d1 = m.Value.Sin() * 調教UI.ペニス.Yv.Inverse() * t;
     				d2 = m.Value * 調教UI.ペニス.Yv * t;
     				ペニス処理2.Bod.頬濃度 = d1;
@@ -852,7 +852,7 @@ namespace SlaveMatrix
     			},
     			OnLoop = delegate
     			{
-    				s = RNG.XS.NextSign();
+    				s = Rng.XS.NextSign();
     			},
     			OnEnd = delegate(Motion m)
     			{
@@ -869,7 +869,7 @@ namespace SlaveMatrix
     		調教UI.Mots.Add(フェラ.GetHashCode().ToString(), フェラ);
     		s = 0.0;
     		LowerArmXC = 0.0;
-    		Vector2D vc = Dat.Vec2DZero;
+    		Vector2D vc = DataConsts.Vec2DZero;
     		bool sb = false;
     		double vl;
     		double vr;
@@ -884,8 +884,8 @@ namespace SlaveMatrix
     				{
     					LowerArmXC = ペニス処理2.LowerArm左.尺度XC;
     				}
-    				vc = Dat.Vec2DZero;
-    				sb = RNG.XS.NextBool();
+    				vc = DataConsts.Vec2DZero;
+    				sb = Rng.XS.NextBool();
     				s = (sb ? (-1.0) : 1.0);
     				調教UI.Action(ContactType.Chest, ActionType.パイ, CurrentState.Start, ToolType.Penis, 0, 1, 機械: false, 射精: false);
     				Player.主精力消費小();
@@ -905,7 +905,7 @@ namespace SlaveMatrix
     					ペニス処理2.LowerArm左.尺度XC = LowerArmXC + 0.2 * vl;
     					if (ペニス処理2.LowerArm左.虫鎌_接続 != null)
     					{
-    						Ele[] 虫鎌_接続 = ペニス処理2.LowerArm左.虫鎌_接続;
+    						Element[] 虫鎌_接続 = ペニス処理2.LowerArm左.虫鎌_接続;
     						for (int i = 0; i < 虫鎌_接続.Length; i++)
     						{
     							虫鎌_接続[i].尺度XC = ペニス処理2.LowerArm左.尺度XC;
@@ -926,7 +926,7 @@ namespace SlaveMatrix
     					ペニス処理2.LowerArm右.尺度XC = LowerArmXC + 0.2 * vr;
     					if (ペニス処理2.LowerArm右.虫鎌_接続 != null)
     					{
-    						Ele[] 虫鎌_接続 = ペニス処理2.LowerArm右.虫鎌_接続;
+    						Element[] 虫鎌_接続 = ペニス処理2.LowerArm右.虫鎌_接続;
     						for (int i = 0; i < 虫鎌_接続.Length; i++)
     						{
     							虫鎌_接続[i].尺度XC = ペニス処理2.LowerArm右.尺度XC;
@@ -970,7 +970,7 @@ namespace SlaveMatrix
     				ペニス処理2.手固定 = false;
     				調教UI.ハンド処理.バスト初期化.Start();
     				ペニス処理2.Bod.胸毛_人.角度C = 0.0;
-    				ペニス処理2.Bod.胸毛_人.位置C = Dat.Vec2DZero;
+    				ペニス処理2.Bod.胸毛_人.位置C = DataConsts.Vec2DZero;
     				if (ペニス処理2.肩左 != null)
     				{
     					ペニス処理2.肩左.角度C = 0.0;
@@ -1157,7 +1157,7 @@ namespace SlaveMatrix
     		d = 0.0;
     		v = default(Vector2D);
     		o = default(Vector2D);
-    		vc = Dat.Vec2DZero;
+    		vc = DataConsts.Vec2DZero;
     		挿入箇所 = ContactType.none;
     	}
     }

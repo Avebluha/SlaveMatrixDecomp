@@ -5,75 +5,75 @@ namespace SlaveMatrix
 {
     public class 触覚_蝶 : 触覚
     {
-    	public Par X0Y0_節1;
+    	public ShapePart X0Y0_節1;
 
-    	public Par X0Y0_節2;
+    	public ShapePart X0Y0_節2;
 
-    	public Par X0Y0_節3;
+    	public ShapePart X0Y0_節3;
 
-    	public Par X0Y0_節4;
+    	public ShapePart X0Y0_節4;
 
-    	public Par X0Y0_節5;
+    	public ShapePart X0Y0_節5;
 
-    	public Par X0Y0_節6;
+    	public ShapePart X0Y0_節6;
 
-    	public Par X0Y0_節7;
+    	public ShapePart X0Y0_節7;
 
-    	public Par X0Y0_節8;
+    	public ShapePart X0Y0_節8;
 
-    	public Par X0Y0_節9;
+    	public ShapePart X0Y0_節9;
 
-    	public Par X0Y0_節10;
+    	public ShapePart X0Y0_節10;
 
-    	public Par X0Y0_節11;
+    	public ShapePart X0Y0_節11;
 
-    	public Par X0Y0_節12;
+    	public ShapePart X0Y0_節12;
 
-    	public Par X0Y0_節13;
+    	public ShapePart X0Y0_節13;
 
-    	public Par X0Y0_節14;
+    	public ShapePart X0Y0_節14;
 
-    	public Par X0Y0_節15;
+    	public ShapePart X0Y0_節15;
 
-    	public Par X0Y0_節16;
+    	public ShapePart X0Y0_節16;
 
-    	public Par X0Y0_節17;
+    	public ShapePart X0Y0_節17;
 
-    	public Par X0Y0_節18;
+    	public ShapePart X0Y0_節18;
 
-    	public Par X0Y0_節19;
+    	public ShapePart X0Y0_節19;
 
-    	public Par X0Y0_節20;
+    	public ShapePart X0Y0_節20;
 
-    	public Par X0Y0_節21;
+    	public ShapePart X0Y0_節21;
 
-    	public Par X0Y0_節22;
+    	public ShapePart X0Y0_節22;
 
-    	public Par X0Y0_節23;
+    	public ShapePart X0Y0_節23;
 
-    	public Par X0Y0_節24;
+    	public ShapePart X0Y0_節24;
 
-    	public Par X0Y0_節25;
+    	public ShapePart X0Y0_節25;
 
-    	public Par X0Y0_節26;
+    	public ShapePart X0Y0_節26;
 
-    	public Par X0Y0_節27;
+    	public ShapePart X0Y0_節27;
 
-    	public Par X0Y0_節28;
+    	public ShapePart X0Y0_節28;
 
-    	public Par X0Y0_節29;
+    	public ShapePart X0Y0_節29;
 
-    	public Par X0Y0_節30;
+    	public ShapePart X0Y0_節30;
 
-    	public Par X0Y0_節31;
+    	public ShapePart X0Y0_節31;
 
-    	public Par X0Y0_節32;
+    	public ShapePart X0Y0_節32;
 
-    	public Par X0Y0_節33;
+    	public ShapePart X0Y0_節33;
 
-    	public Par X0Y0_節34;
+    	public ShapePart X0Y0_節34;
 
-    	public Par X0Y0_節35;
+    	public ShapePart X0Y0_節35;
 
     	public ColorD 節1CD;
 
@@ -801,48 +801,48 @@ namespace SlaveMatrix
     	public 触覚_蝶(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 触覚_蝶D e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif();
-    		dif.Tag = "蝶";
-    		dif.Add(new Pars(Sta.肢左["触覚"][0][3]));
-    		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		X0Y0_節1 = pars["節1"].ToPar();
-    		X0Y0_節2 = pars["節2"].ToPar();
-    		X0Y0_節3 = pars["節3"].ToPar();
-    		X0Y0_節4 = pars["節4"].ToPar();
-    		X0Y0_節5 = pars["節5"].ToPar();
-    		X0Y0_節6 = pars["節6"].ToPar();
-    		X0Y0_節7 = pars["節7"].ToPar();
-    		X0Y0_節8 = pars["節8"].ToPar();
-    		X0Y0_節9 = pars["節9"].ToPar();
-    		X0Y0_節10 = pars["節10"].ToPar();
-    		X0Y0_節11 = pars["節11"].ToPar();
-    		X0Y0_節12 = pars["節12"].ToPar();
-    		X0Y0_節13 = pars["節13"].ToPar();
-    		X0Y0_節14 = pars["節14"].ToPar();
-    		X0Y0_節15 = pars["節15"].ToPar();
-    		X0Y0_節16 = pars["節16"].ToPar();
-    		X0Y0_節17 = pars["節17"].ToPar();
-    		X0Y0_節18 = pars["節18"].ToPar();
-    		X0Y0_節19 = pars["節19"].ToPar();
-    		X0Y0_節20 = pars["節20"].ToPar();
-    		X0Y0_節21 = pars["節21"].ToPar();
-    		X0Y0_節22 = pars["節22"].ToPar();
-    		X0Y0_節23 = pars["節23"].ToPar();
-    		X0Y0_節24 = pars["節24"].ToPar();
-    		X0Y0_節25 = pars["節25"].ToPar();
-    		X0Y0_節26 = pars["節26"].ToPar();
-    		X0Y0_節27 = pars["節27"].ToPar();
-    		X0Y0_節28 = pars["節28"].ToPar();
-    		X0Y0_節29 = pars["節29"].ToPar();
-    		X0Y0_節30 = pars["節30"].ToPar();
-    		X0Y0_節31 = pars["節31"].ToPar();
-    		X0Y0_節32 = pars["節32"].ToPar();
-    		X0Y0_節33 = pars["節33"].ToPar();
-    		X0Y0_節34 = pars["節34"].ToPar();
-    		X0Y0_節35 = pars["節35"].ToPar();
+    		MorphVariant morphVariant = new MorphVariant();
+    		morphVariant.Tag = "蝶";
+    		morphVariant.Add(new PartGroup(GlobalState.肢左["触覚"][0][3]));
+    		Body = new VariantGrid();
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_節1 = partGroup["節1"].ToPar();
+    		X0Y0_節2 = partGroup["節2"].ToPar();
+    		X0Y0_節3 = partGroup["節3"].ToPar();
+    		X0Y0_節4 = partGroup["節4"].ToPar();
+    		X0Y0_節5 = partGroup["節5"].ToPar();
+    		X0Y0_節6 = partGroup["節6"].ToPar();
+    		X0Y0_節7 = partGroup["節7"].ToPar();
+    		X0Y0_節8 = partGroup["節8"].ToPar();
+    		X0Y0_節9 = partGroup["節9"].ToPar();
+    		X0Y0_節10 = partGroup["節10"].ToPar();
+    		X0Y0_節11 = partGroup["節11"].ToPar();
+    		X0Y0_節12 = partGroup["節12"].ToPar();
+    		X0Y0_節13 = partGroup["節13"].ToPar();
+    		X0Y0_節14 = partGroup["節14"].ToPar();
+    		X0Y0_節15 = partGroup["節15"].ToPar();
+    		X0Y0_節16 = partGroup["節16"].ToPar();
+    		X0Y0_節17 = partGroup["節17"].ToPar();
+    		X0Y0_節18 = partGroup["節18"].ToPar();
+    		X0Y0_節19 = partGroup["節19"].ToPar();
+    		X0Y0_節20 = partGroup["節20"].ToPar();
+    		X0Y0_節21 = partGroup["節21"].ToPar();
+    		X0Y0_節22 = partGroup["節22"].ToPar();
+    		X0Y0_節23 = partGroup["節23"].ToPar();
+    		X0Y0_節24 = partGroup["節24"].ToPar();
+    		X0Y0_節25 = partGroup["節25"].ToPar();
+    		X0Y0_節26 = partGroup["節26"].ToPar();
+    		X0Y0_節27 = partGroup["節27"].ToPar();
+    		X0Y0_節28 = partGroup["節28"].ToPar();
+    		X0Y0_節29 = partGroup["節29"].ToPar();
+    		X0Y0_節30 = partGroup["節30"].ToPar();
+    		X0Y0_節31 = partGroup["節31"].ToPar();
+    		X0Y0_節32 = partGroup["節32"].ToPar();
+    		X0Y0_節33 = partGroup["節33"].ToPar();
+    		X0Y0_節34 = partGroup["節34"].ToPar();
+    		X0Y0_節35 = partGroup["節35"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;
@@ -1027,7 +1027,7 @@ namespace SlaveMatrix
     		Body.JoinPAall();
     	}
 
-    	public override IEnumerable<Par> Enum軸()
+    	public override IEnumerable<ShapePart> Enum軸()
     	{
     		yield return X0Y0_節1;
     		yield return X0Y0_節2;
@@ -1126,41 +1126,41 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		節1CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節2CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節3CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節4CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節5CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節6CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節7CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節8CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節9CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節10CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節11CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節12CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節13CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節14CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節15CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節16CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節17CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節18CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節19CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節20CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節21CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節22CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節23CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節24CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節25CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節26CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節27CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節28CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節29CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節30CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節31CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節32CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節33CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節34CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節35CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
+    		節1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節3CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節4CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節5CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節6CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節7CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節8CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節9CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節10CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節11CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節12CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節13CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節14CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節15CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節16CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節17CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節18CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節19CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節20CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節21CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節22CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節23CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節24CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節25CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節26CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節27CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節28CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節29CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節30CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節31CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節32CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節33CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節34CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節35CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
     	}
 
     	private void 配色T0(BodyColorSet 体配色)

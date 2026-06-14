@@ -23,8 +23,8 @@ namespace _2DGAMELIB
     	protected Size hitBufferSize = System.Drawing.Size.Empty;
     	protected Size displayBufferSize = System.Drawing.Size.Empty;
 
-    	public Vector2D BasePoint = Dat.Vec2DZero;
-    	public Vector2D Position = Dat.Vec2DZero;
+    	public Vector2D BasePoint = DataConsts.Vec2DZero;
+    	public Vector2D Position = DataConsts.Vec2DZero;
 
     	public Graphics DisplayGraphics => displayGraphics;
     	public Graphics HitGraphics => hitGraphics;
@@ -92,30 +92,30 @@ namespace _2DGAMELIB
     		return new Vector2D(Position.X - BasePoint.X * XRatio * Size, Position.Y - BasePoint.Y * YRatio * Size);
     	}
 
-    	public void Draw(Par Par)
+    	public void Draw(ShapePart ShapePart)
     	{
-            Par.Draw(displayUnitScale, displayGraphics);
+            ShapePart.Draw(displayUnitScale, displayGraphics);
             if (hitGraphics != null)
             {
-                Par.DrawH(hitUnitScale, hitGraphics);
+                ShapePart.DrawH(hitUnitScale, hitGraphics);
             }
     	}
 
-    	public void Draw(ParT ParT)
+    	public void Draw(ShapePartT ShapePartT)
     	{
-            ParT.Draw(displayUnitScale, displayGraphics);
+            ShapePartT.Draw(displayUnitScale, displayGraphics);
             if (hitGraphics != null)
             {
-                ParT.DrawH(hitUnitScale, hitGraphics);
+                ShapePartT.DrawH(hitUnitScale, hitGraphics);
             }
     	}
 
-    	public void Draw(Pars Pars)
+    	public void Draw(PartGroup PartGroup)
     	{
-            Pars.Draw(displayUnitScale, displayGraphics);
+            PartGroup.Draw(displayUnitScale, displayGraphics);
             if (hitGraphics != null)
             {
-                Pars.DrawH(hitUnitScale, hitGraphics);
+                PartGroup.DrawH(hitUnitScale, hitGraphics);
                
             }
             

@@ -6,13 +6,13 @@ namespace SlaveMatrix
 {
     public class SideHair_肢系 : SideHair
     {
-    	public Par X0Y0_髪;
+    	public ShapePart X0Y0_髪;
 
     	public ColorD 髪CD;
 
     	public ColorP X0Y0_髪CP;
 
-    	public Ele[] 肢_接続;
+    	public Element[] 肢_接続;
 
     	public override bool 欠損
     	{
@@ -93,14 +93,14 @@ namespace SlaveMatrix
     	{
     		SideHair_肢系 横髪_肢系2 = this;
     		ThisType = GetType();
-    		Dif dif = new Dif();
-    		dif.Tag = "肢系";
-    		dif.Add(new Pars(Sta.胴体["横髪左"][0][5]));
-    		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		X0Y0_髪 = pars["髪"].ToPar();
+    		MorphVariant morphVariant = new MorphVariant();
+    		morphVariant.Tag = "肢系";
+    		morphVariant.Add(new PartGroup(GlobalState.胴体["横髪左"][0][5]));
+    		Body = new VariantGrid();
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_髪 = partGroup["髪"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;
@@ -135,8 +135,8 @@ namespace SlaveMatrix
     		}
     		if (e.肢_接続.Count > 0)
     		{
-    			Ele f;
-    			肢_接続 = e.肢_接続.Select(delegate(EleD g)
+    			Element f;
+    			肢_接続 = e.肢_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 横髪_肢系2;

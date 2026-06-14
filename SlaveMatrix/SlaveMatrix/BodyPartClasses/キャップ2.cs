@@ -3,11 +3,11 @@ using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
-    public class キャップ2 : Ele
+    public class キャップ2 : Element
     {
-    	public Par X0Y0_根本;
+    	public ShapePart X0Y0_根本;
 
-    	public Par X0Y0_先端;
+    	public ShapePart X0Y0_先端;
 
     	public ColorD 根本CD;
 
@@ -122,10 +122,10 @@ namespace SlaveMatrix
     	public キャップ2(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, キャップ2D e)
     	{
     		ThisType = GetType();
-    		Body = new Difs(Sta.胴体["キャップ左"]);
-    		Pars pars = Body[0][0];
-    		X0Y0_根本 = pars["根本"].ToPar();
-    		X0Y0_先端 = pars["先端"].ToPar();
+    		Body = new VariantGrid(GlobalState.胴体["キャップ左"]);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_根本 = partGroup["根本"].ToPar();
+    		X0Y0_先端 = partGroup["先端"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;

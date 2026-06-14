@@ -4,23 +4,23 @@ namespace SlaveMatrix
 {
     public class 後髪0_下1ジグ : お下げ1
     {
-    	public Par X0Y0_髪基;
+    	public ShapePart X0Y0_髪基;
 
-    	public Par X0Y0_お下げ_髪節;
+    	public ShapePart X0Y0_お下げ_髪節;
 
-    	public Par X0Y0_お下げ_髪縛1;
+    	public ShapePart X0Y0_お下げ_髪縛1;
 
-    	public Par X0Y0_お下げ_髪縛2;
+    	public ShapePart X0Y0_お下げ_髪縛2;
 
-    	public Par X0Y0_お下げ_髪左2;
+    	public ShapePart X0Y0_お下げ_髪左2;
 
-    	public Par X0Y0_お下げ_髪左1;
+    	public ShapePart X0Y0_お下げ_髪左1;
 
-    	public Par X0Y0_お下げ_髪右2;
+    	public ShapePart X0Y0_お下げ_髪右2;
 
-    	public Par X0Y0_お下げ_髪右1;
+    	public ShapePart X0Y0_お下げ_髪右1;
 
-    	public Par X0Y0_お下げ_髪根;
+    	public ShapePart X0Y0_お下げ_髪根;
 
     	public ColorD 髪基CD;
 
@@ -304,15 +304,15 @@ namespace SlaveMatrix
     	public 後髪0_下1ジグ(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, BackHair0_下1ジグD e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif();
-    		dif.Tag = "下げ1ジグ";
-    		dif.Add(new Pars(Sta.胴体["BackHair0"][0][4]));
-    		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		X0Y0_髪基 = pars["髪基"].ToPar();
-    		Pars pars2 = pars["お下げ"].ToPars();
+    		MorphVariant morphVariant = new MorphVariant();
+    		morphVariant.Tag = "下げ1ジグ";
+    		morphVariant.Add(new PartGroup(GlobalState.胴体["BackHair0"][0][4]));
+    		Body = new VariantGrid();
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_髪基 = partGroup["髪基"].ToPar();
+    		PartGroup pars2 = partGroup["お下げ"].ToPars();
     		X0Y0_お下げ_髪節 = pars2["髪節"].ToPar();
     		X0Y0_お下げ_髪縛1 = pars2["髪縛1"].ToPar();
     		X0Y0_お下げ_髪縛2 = pars2["髪縛2"].ToPar();
@@ -427,7 +427,7 @@ namespace SlaveMatrix
     		X0Y0_お下げ_髪根.GetOP()[(!右) ? 4 : 0].Outline = false;
     	}
 
-    	public override bool Is布(Par p)
+    	public override bool Is布(ShapePart p)
     	{
     		if (p != X0Y0_お下げ_髪縛1)
     		{

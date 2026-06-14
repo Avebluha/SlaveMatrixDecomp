@@ -5,7 +5,7 @@ namespace _2DGAMELIB
 {
     public class Lab
     {
-    	private ParT parT;
+    	private ShapePartT _shapePartT;
 
     	private RenderArea Are;
 
@@ -13,13 +13,13 @@ namespace _2DGAMELIB
 
     	private double Min;
 
-    	public ParT ParT => parT;
+    	public ShapePartT ShapePartT => _shapePartT;
 
     	public string Text
     	{
     		get
     		{
-    			return parT.Text;
+    			return _shapePartT.Text;
     		}
     		set
     		{
@@ -29,7 +29,7 @@ namespace _2DGAMELIB
 
     	private void SetText(string Text)
     	{
-    		parT.Text = Text;
+    		_shapePartT.Text = Text;
     		SetRect();
     	}
 
@@ -48,75 +48,75 @@ namespace _2DGAMELIB
     		this.Are = Are;
     		this.Width = Width;
 
-    		Out[] array = new Out[1] { Shas.GetSquare() };
+    		CurveOutline[] array = new CurveOutline[1] { ShapeHelper.GetSquare() };
     		if (FramColor == Color.Empty || FramColor == Color.Transparent)
     		{
     			array.OutlineFalse();
     		}
 
 
-    		parT = new ParT
+    		_shapePartT = new ShapePartT
     		{
                 Tag = Name,
     			Text = "A"
     		};
 
-    		parT.SetFont(Font);
-    		parT.SetFontSize(TextSize);
-    		parT.SetTextColor(TextColor);
-			parT.SetInitializeOP(array);
-    		parT.SetBasePointBase(array[0].ps[0]);
-    		parT.SetPositionBase(Position);
-    		parT.SetSizeBase(Size);
-    		parT.SetClosed(true);
-            parT.SetBrushColor(BackColor);
-    		parT.SetPenColor(FramColor);
+    		_shapePartT.SetFont(Font);
+    		_shapePartT.SetFontSize(TextSize);
+    		_shapePartT.SetTextColor(TextColor);
+			_shapePartT.SetInitializeOP(array);
+    		_shapePartT.SetBasePointBase(array[0].ps[0]);
+    		_shapePartT.SetPositionBase(Position);
+    		_shapePartT.SetSizeBase(Size);
+    		_shapePartT.SetClosed(true);
+            _shapePartT.SetBrushColor(BackColor);
+    		_shapePartT.SetPenColor(FramColor);
 
     		if (ShadColor != Color.Empty)
     		{
-    			parT.SetShadBrush(new SolidBrush(ShadColor));
+    			_shapePartT.SetShadBrush(new SolidBrush(ShadColor));
     		}
 
 
     		SetRect();
-    		Min = parT.GetRectSize().Y;
+    		Min = _shapePartT.GetRectSize().Y;
     		SetText(Text);
     	}
 
     	public void SetHitColor(ModeEventDispatcher Med)
     	{
-    		if (parT.GetHitColor() != Color.Transparent)
+    		if (_shapePartT.GetHitColor() != Color.Transparent)
     		{
-    			Med.RemUniqueColor(parT.GetHitColor());
+    			Med.RemUniqueColor(_shapePartT.GetHitColor());
     		}
-    		parT.SetHitColor(Med.GetUniqueColor());
+    		_shapePartT.SetHitColor(Med.GetUniqueColor());
     	}
 
     	private void SetRect()
     	{
-    		if (!string.IsNullOrEmpty(parT.Text))
+    		if (!string.IsNullOrEmpty(_shapePartT.Text))
     		{
-    			parT.SetRectSize(new Vector2D(Width, 10.0));
-    			Vector2D_2 stringRect = parT.GetStringRect(Are.DisplayUnitScale, Are.DisplayGraphics);
+    			_shapePartT.SetRectSize(new Vector2D(Width, 10.0));
+    			Vector2D_2 stringRect = _shapePartT.GetStringRect(Are.DisplayUnitScale, Are.DisplayGraphics);
     			double x = ((stringRect.v2.X > Min) ? stringRect.v2.X : Min) + 0.07;
-    			parT.SetRectSize(new Vector2D(x, stringRect.v2.Y));
+    			_shapePartT.SetRectSize(new Vector2D(x, stringRect.v2.Y));
     		}
     		else
     		{
     			double x2 = Min + 0.07;
-    			parT.SetRectSize(new Vector2D(x2, Min));
+    			_shapePartT.SetRectSize(new Vector2D(x2, Min));
     		}
 
 
-    		parT.GetOP()[0].ps[0] = new Vector2D(0.0, 0.0);
-    		parT.GetOP()[0].ps[1] = new Vector2D(parT.GetRectSize().X, 0.0);
-    		parT.GetOP()[0].ps[2] = new Vector2D(parT.GetRectSize().X, parT.GetRectSize().Y);
-    		parT.GetOP()[0].ps[3] = new Vector2D(0.0, parT.GetRectSize().Y);
+    		_shapePartT.GetOP()[0].ps[0] = new Vector2D(0.0, 0.0);
+    		_shapePartT.GetOP()[0].ps[1] = new Vector2D(_shapePartT.GetRectSize().X, 0.0);
+    		_shapePartT.GetOP()[0].ps[2] = new Vector2D(_shapePartT.GetRectSize().X, _shapePartT.GetRectSize().Y);
+    		_shapePartT.GetOP()[0].ps[3] = new Vector2D(0.0, _shapePartT.GetRectSize().Y);
     	}
 
     	public void Dispose()
     	{
-    		parT.Dispose();
+    		_shapePartT.Dispose();
     	}
     }
 }

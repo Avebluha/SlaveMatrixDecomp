@@ -4,29 +4,29 @@ namespace SlaveMatrix
 {
     public class BackHair0_ジグ : 下ろし
     {
-    	public Par X0Y0_髪基;
+    	public ShapePart X0Y0_髪基;
 
-    	public Par X0Y0_髪中;
+    	public ShapePart X0Y0_髪中;
 
-    	public Par X0Y0_髪左1;
+    	public ShapePart X0Y0_髪左1;
 
-    	public Par X0Y0_髪左2;
+    	public ShapePart X0Y0_髪左2;
 
-    	public Par X0Y0_髪左3;
+    	public ShapePart X0Y0_髪左3;
 
-    	public Par X0Y0_髪左4;
+    	public ShapePart X0Y0_髪左4;
 
-    	public Par X0Y0_髪左5;
+    	public ShapePart X0Y0_髪左5;
 
-    	public Par X0Y0_髪右1;
+    	public ShapePart X0Y0_髪右1;
 
-    	public Par X0Y0_髪右2;
+    	public ShapePart X0Y0_髪右2;
 
-    	public Par X0Y0_髪右3;
+    	public ShapePart X0Y0_髪右3;
 
-    	public Par X0Y0_髪右4;
+    	public ShapePart X0Y0_髪右4;
 
-    	public Par X0Y0_髪右5;
+    	public ShapePart X0Y0_髪右5;
 
     	public ColorD 髪基CD;
 
@@ -381,25 +381,25 @@ namespace SlaveMatrix
     	public BackHair0_ジグ(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, BackHair0_ジグD e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif();
-    		dif.Tag = "ジグ";
-    		dif.Add(new Pars(Sta.胴体["BackHair0"][0][0]));
-    		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		X0Y0_髪基 = pars["髪基"].ToPar();
-    		X0Y0_髪中 = pars["髪中"].ToPar();
-    		X0Y0_髪左1 = pars["髪左1"].ToPar();
-    		X0Y0_髪左2 = pars["髪左2"].ToPar();
-    		X0Y0_髪左3 = pars["髪左3"].ToPar();
-    		X0Y0_髪左4 = pars["髪左4"].ToPar();
-    		X0Y0_髪左5 = pars["髪左5"].ToPar();
-    		X0Y0_髪右1 = pars["髪右1"].ToPar();
-    		X0Y0_髪右2 = pars["髪右2"].ToPar();
-    		X0Y0_髪右3 = pars["髪右3"].ToPar();
-    		X0Y0_髪右4 = pars["髪右4"].ToPar();
-    		X0Y0_髪右5 = pars["髪右5"].ToPar();
+    		MorphVariant morphVariant = new MorphVariant();
+    		morphVariant.Tag = "ジグ";
+    		morphVariant.Add(new PartGroup(GlobalState.胴体["BackHair0"][0][0]));
+    		Body = new VariantGrid();
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_髪基 = partGroup["髪基"].ToPar();
+    		X0Y0_髪中 = partGroup["髪中"].ToPar();
+    		X0Y0_髪左1 = partGroup["髪左1"].ToPar();
+    		X0Y0_髪左2 = partGroup["髪左2"].ToPar();
+    		X0Y0_髪左3 = partGroup["髪左3"].ToPar();
+    		X0Y0_髪左4 = partGroup["髪左4"].ToPar();
+    		X0Y0_髪左5 = partGroup["髪左5"].ToPar();
+    		X0Y0_髪右1 = partGroup["髪右1"].ToPar();
+    		X0Y0_髪右2 = partGroup["髪右2"].ToPar();
+    		X0Y0_髪右3 = partGroup["髪右3"].ToPar();
+    		X0Y0_髪右4 = partGroup["髪右4"].ToPar();
+    		X0Y0_髪右5 = partGroup["髪右5"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;

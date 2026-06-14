@@ -6,57 +6,57 @@ namespace SlaveMatrix
 {
     public class Leg_竜 : 獣脚
     {
-    	public Par X0Y0_Leg;
+    	public ShapePart X0Y0_Leg;
 
-    	public Par X0Y0_竜性_鱗脹_鱗1;
+    	public ShapePart X0Y0_竜性_鱗脹_鱗1;
 
-    	public Par X0Y0_竜性_鱗脹_鱗2;
+    	public ShapePart X0Y0_竜性_鱗脹_鱗2;
 
-    	public Par X0Y0_竜性_鱗脹_鱗3;
+    	public ShapePart X0Y0_竜性_鱗脹_鱗3;
 
-    	public Par X0Y0_竜性_鱗脹_鱗4;
+    	public ShapePart X0Y0_竜性_鱗脹_鱗4;
 
-    	public Par X0Y0_竜性_鱗脹_鱗5;
+    	public ShapePart X0Y0_竜性_鱗脹_鱗5;
 
-    	public Par X0Y0_竜性_鱗脹_鱗6;
+    	public ShapePart X0Y0_竜性_鱗脹_鱗6;
 
-    	public Par X0Y0_竜性_鱗脹_鱗7;
+    	public ShapePart X0Y0_竜性_鱗脹_鱗7;
 
-    	public Par X0Y0_竜性_鱗脹_鱗8;
+    	public ShapePart X0Y0_竜性_鱗脹_鱗8;
 
-    	public Par X0Y0_竜性_鱗脛_鱗1;
+    	public ShapePart X0Y0_竜性_鱗脛_鱗1;
 
-    	public Par X0Y0_竜性_鱗脛_鱗2;
+    	public ShapePart X0Y0_竜性_鱗脛_鱗2;
 
-    	public Par X0Y0_竜性_鱗脛_鱗3;
+    	public ShapePart X0Y0_竜性_鱗脛_鱗3;
 
-    	public Par X0Y0_竜性_鱗脛_鱗4;
+    	public ShapePart X0Y0_竜性_鱗脛_鱗4;
 
-    	public Par X0Y0_竜性_鱗脛_鱗5;
+    	public ShapePart X0Y0_竜性_鱗脛_鱗5;
 
-    	public Par X0Y0_竜性_鱗脛_鱗6;
+    	public ShapePart X0Y0_竜性_鱗脛_鱗6;
 
-    	public Par X0Y0_竜性_鱗脛_鱗7;
+    	public ShapePart X0Y0_竜性_鱗脛_鱗7;
 
-    	public Par X0Y0_竜性_鱗脛_鱗8;
+    	public ShapePart X0Y0_竜性_鱗脛_鱗8;
 
-    	public Par X0Y0_竜性_鱗脛_鱗9;
+    	public ShapePart X0Y0_竜性_鱗脛_鱗9;
 
-    	public Par X0Y0_竜性_鱗脛_鱗10;
+    	public ShapePart X0Y0_竜性_鱗脛_鱗10;
 
-    	public Par X0Y0_筋;
+    	public ShapePart X0Y0_筋;
 
-    	public Par X0Y0_脚輪_革;
+    	public ShapePart X0Y0_脚輪_革;
 
-    	public Par X0Y0_脚輪_金具1;
+    	public ShapePart X0Y0_脚輪_金具1;
 
-    	public Par X0Y0_脚輪_金具2;
+    	public ShapePart X0Y0_脚輪_金具2;
 
-    	public Par X0Y0_脚輪_金具3;
+    	public ShapePart X0Y0_脚輪_金具3;
 
-    	public Par X0Y0_脚輪_金具左;
+    	public ShapePart X0Y0_脚輪_金具左;
 
-    	public Par X0Y0_脚輪_金具右;
+    	public ShapePart X0Y0_脚輪_金具右;
 
     	public ColorD LegCD;
 
@@ -654,13 +654,13 @@ namespace SlaveMatrix
     	{
     		Leg_竜 Leg_竜2 = this;
     		ThisType = GetType();
-    		Dif dif = new Dif(Sta.脚左["四足脚"][3]);
-    		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		X0Y0_Leg = pars["脚"].ToPar();
-    		Pars pars2 = pars["鱗脹"].ToPars();
+    		MorphVariant morphVariant = new MorphVariant(GlobalState.脚左["四足脚"][3]);
+    		Body = new VariantGrid();
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_Leg = partGroup["脚"].ToPar();
+    		PartGroup pars2 = partGroup["鱗脹"].ToPars();
     		X0Y0_竜性_鱗脹_鱗1 = pars2["鱗1"].ToPar();
     		X0Y0_竜性_鱗脹_鱗2 = pars2["鱗2"].ToPar();
     		X0Y0_竜性_鱗脹_鱗3 = pars2["鱗3"].ToPar();
@@ -669,7 +669,7 @@ namespace SlaveMatrix
     		X0Y0_竜性_鱗脹_鱗6 = pars2["鱗6"].ToPar();
     		X0Y0_竜性_鱗脹_鱗7 = pars2["鱗7"].ToPar();
     		X0Y0_竜性_鱗脹_鱗8 = pars2["鱗8"].ToPar();
-    		pars2 = pars["鱗脛"].ToPars();
+    		pars2 = partGroup["鱗脛"].ToPars();
     		X0Y0_竜性_鱗脛_鱗1 = pars2["鱗1"].ToPar();
     		X0Y0_竜性_鱗脛_鱗2 = pars2["鱗2"].ToPar();
     		X0Y0_竜性_鱗脛_鱗3 = pars2["鱗3"].ToPar();
@@ -680,8 +680,8 @@ namespace SlaveMatrix
     		X0Y0_竜性_鱗脛_鱗8 = pars2["鱗8"].ToPar();
     		X0Y0_竜性_鱗脛_鱗9 = pars2["鱗9"].ToPar();
     		X0Y0_竜性_鱗脛_鱗10 = pars2["鱗10"].ToPar();
-    		X0Y0_筋 = pars["筋"].ToPar();
-    		pars2 = pars["脚輪"].ToPars();
+    		X0Y0_筋 = partGroup["筋"].ToPar();
+    		pars2 = partGroup["脚輪"].ToPars();
     		X0Y0_脚輪_革 = pars2["革"].ToPar();
     		X0Y0_脚輪_金具1 = pars2["金具1"].ToPar();
     		X0Y0_脚輪_金具2 = pars2["金具2"].ToPar();
@@ -748,8 +748,8 @@ namespace SlaveMatrix
     		}
     		if (e.足_接続.Count > 0)
     		{
-    			Ele f;
-    			足_接続 = e.足_接続.Select(delegate(EleD g)
+    			Element f;
+    			足_接続 = e.足_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = Leg_竜2;
@@ -813,7 +813,7 @@ namespace SlaveMatrix
     		Body.JoinPAall();
     	}
 
-    	public override bool Is革(Par p)
+    	public override bool Is革(ShapePart p)
     	{
     		if (p != X0Y0_脚輪_革 && p != X0Y0_脚輪_金具1 && p != X0Y0_脚輪_金具2 && p != X0Y0_脚輪_金具3 && p != X0Y0_脚輪_金具左)
     		{
@@ -875,25 +875,25 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		LegCD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		竜性_鱗脹_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗脹_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗脹_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗脹_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗脹_鱗5CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗脹_鱗6CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗脹_鱗7CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗脹_鱗8CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗脛_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_鱗脛_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_鱗脛_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_鱗脛_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_鱗脛_鱗5CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_鱗脛_鱗6CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_鱗脛_鱗7CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_鱗脛_鱗8CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_鱗脛_鱗9CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_鱗脛_鱗10CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		LegCD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		竜性_鱗脹_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗脹_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗脹_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗脹_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗脹_鱗5CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗脹_鱗6CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗脹_鱗7CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗脹_鱗8CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗脛_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_鱗脛_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_鱗脛_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_鱗脛_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_鱗脛_鱗5CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_鱗脛_鱗6CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_鱗脛_鱗7CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_鱗脛_鱗8CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_鱗脛_鱗9CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_鱗脛_鱗10CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
     		筋CD = new ColorD(ref 体配色.薄線, ref 体配色.毛0O);
     		脚輪_革CD = new ColorD();
     		脚輪_金具1CD = new ColorD();
@@ -905,25 +905,25 @@ namespace SlaveMatrix
 
     	private void 配色T0(BodyColorSet 体配色)
     	{
-    		LegCD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		竜性_鱗脹_鱗1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		竜性_鱗脹_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗脹_鱗3CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		竜性_鱗脹_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗脹_鱗5CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		竜性_鱗脹_鱗6CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗脹_鱗7CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		竜性_鱗脹_鱗8CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗脛_鱗1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		竜性_鱗脛_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_鱗脛_鱗3CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		竜性_鱗脛_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_鱗脛_鱗5CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		竜性_鱗脛_鱗6CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_鱗脛_鱗7CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		竜性_鱗脛_鱗8CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_鱗脛_鱗9CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		竜性_鱗脛_鱗10CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		LegCD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		竜性_鱗脹_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		竜性_鱗脹_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗脹_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		竜性_鱗脹_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗脹_鱗5CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		竜性_鱗脹_鱗6CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗脹_鱗7CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		竜性_鱗脹_鱗8CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗脛_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		竜性_鱗脛_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_鱗脛_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		竜性_鱗脛_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_鱗脛_鱗5CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		竜性_鱗脛_鱗6CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_鱗脛_鱗7CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		竜性_鱗脛_鱗8CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_鱗脛_鱗9CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		竜性_鱗脛_鱗10CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
     		筋CD = new ColorD(ref 体配色.薄線, ref 体配色.毛0O);
     		脚輪_革CD = new ColorD();
     		脚輪_金具1CD = new ColorD();
@@ -935,25 +935,25 @@ namespace SlaveMatrix
 
     	private void 配色T1(BodyColorSet 体配色)
     	{
-    		LegCD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		竜性_鱗脹_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗脹_鱗2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		竜性_鱗脹_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗脹_鱗4CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		竜性_鱗脹_鱗5CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗脹_鱗6CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		竜性_鱗脹_鱗7CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗脹_鱗8CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		竜性_鱗脛_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_鱗脛_鱗2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		竜性_鱗脛_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_鱗脛_鱗4CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		竜性_鱗脛_鱗5CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_鱗脛_鱗6CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		竜性_鱗脛_鱗7CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_鱗脛_鱗8CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		竜性_鱗脛_鱗9CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_鱗脛_鱗10CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		LegCD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		竜性_鱗脹_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗脹_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		竜性_鱗脹_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗脹_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		竜性_鱗脹_鱗5CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗脹_鱗6CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		竜性_鱗脹_鱗7CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗脹_鱗8CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		竜性_鱗脛_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_鱗脛_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		竜性_鱗脛_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_鱗脛_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		竜性_鱗脛_鱗5CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_鱗脛_鱗6CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		竜性_鱗脛_鱗7CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_鱗脛_鱗8CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		竜性_鱗脛_鱗9CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_鱗脛_鱗10CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
     		筋CD = new ColorD(ref 体配色.薄線, ref 体配色.毛0O);
     		脚輪_革CD = new ColorD();
     		脚輪_金具1CD = new ColorD();

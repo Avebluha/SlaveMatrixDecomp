@@ -3,43 +3,43 @@ using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
-    public class 獣耳 : Ele
+    public class 獣耳 : Element
     {
-    	public Par X0Y0_獣耳外;
+    	public ShapePart X0Y0_獣耳外;
 
-    	public Par X0Y0_獣耳内;
+    	public ShapePart X0Y0_獣耳内;
 
-    	public Par X0Y0_耳毛;
+    	public ShapePart X0Y0_耳毛;
 
-    	public Par X0Y1_獣耳外;
+    	public ShapePart X0Y1_獣耳外;
 
-    	public Par X0Y1_獣耳内;
+    	public ShapePart X0Y1_獣耳内;
 
-    	public Par X0Y1_耳毛;
+    	public ShapePart X0Y1_耳毛;
 
-    	public Par X0Y2_獣耳外;
+    	public ShapePart X0Y2_獣耳外;
 
-    	public Par X0Y2_獣耳内;
+    	public ShapePart X0Y2_獣耳内;
 
-    	public Par X0Y2_耳毛;
+    	public ShapePart X0Y2_耳毛;
 
-    	public Par X1Y0_獣耳外;
+    	public ShapePart X1Y0_獣耳外;
 
-    	public Par X1Y0_獣耳内;
+    	public ShapePart X1Y0_獣耳内;
 
-    	public Par X1Y0_耳毛;
+    	public ShapePart X1Y0_耳毛;
 
-    	public Par X1Y1_獣耳外;
+    	public ShapePart X1Y1_獣耳外;
 
-    	public Par X1Y1_獣耳内;
+    	public ShapePart X1Y1_獣耳内;
 
-    	public Par X1Y1_耳毛;
+    	public ShapePart X1Y1_耳毛;
 
-    	public Par X1Y2_獣耳外;
+    	public ShapePart X1Y2_獣耳外;
 
-    	public Par X1Y2_獣耳内;
+    	public ShapePart X1Y2_獣耳内;
 
-    	public Par X1Y2_耳毛;
+    	public ShapePart X1Y2_耳毛;
 
     	public ColorD 獣耳外CD;
 
@@ -220,31 +220,31 @@ namespace SlaveMatrix
     	public 獣耳(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 獣耳D e)
     	{
     		ThisType = GetType();
-    		Body = new Difs(Sta.肢左["獣耳"]);
-    		Pars pars = Body[0][0];
-    		X0Y0_獣耳外 = pars["獣耳外"].ToPar();
-    		X0Y0_獣耳内 = pars["獣耳内"].ToPar();
-    		X0Y0_耳毛 = pars["耳毛"].ToPar();
-    		pars = Body[0][1];
-    		X0Y1_獣耳外 = pars["獣耳外"].ToPar();
-    		X0Y1_獣耳内 = pars["獣耳内"].ToPar();
-    		X0Y1_耳毛 = pars["耳毛"].ToPar();
-    		pars = Body[0][2];
-    		X0Y2_獣耳外 = pars["獣耳外"].ToPar();
-    		X0Y2_獣耳内 = pars["獣耳内"].ToPar();
-    		X0Y2_耳毛 = pars["耳毛"].ToPar();
-    		pars = Body[1][0];
-    		X1Y0_獣耳外 = pars["獣耳外"].ToPar();
-    		X1Y0_獣耳内 = pars["獣耳内"].ToPar();
-    		X1Y0_耳毛 = pars["耳毛"].ToPar();
-    		pars = Body[1][1];
-    		X1Y1_獣耳外 = pars["獣耳外"].ToPar();
-    		X1Y1_獣耳内 = pars["獣耳内"].ToPar();
-    		X1Y1_耳毛 = pars["耳毛"].ToPar();
-    		pars = Body[1][2];
-    		X1Y2_獣耳外 = pars["獣耳外"].ToPar();
-    		X1Y2_獣耳内 = pars["獣耳内"].ToPar();
-    		X1Y2_耳毛 = pars["耳毛"].ToPar();
+    		Body = new VariantGrid(GlobalState.肢左["獣耳"]);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_獣耳外 = partGroup["獣耳外"].ToPar();
+    		X0Y0_獣耳内 = partGroup["獣耳内"].ToPar();
+    		X0Y0_耳毛 = partGroup["耳毛"].ToPar();
+    		partGroup = Body[0][1];
+    		X0Y1_獣耳外 = partGroup["獣耳外"].ToPar();
+    		X0Y1_獣耳内 = partGroup["獣耳内"].ToPar();
+    		X0Y1_耳毛 = partGroup["耳毛"].ToPar();
+    		partGroup = Body[0][2];
+    		X0Y2_獣耳外 = partGroup["獣耳外"].ToPar();
+    		X0Y2_獣耳内 = partGroup["獣耳内"].ToPar();
+    		X0Y2_耳毛 = partGroup["耳毛"].ToPar();
+    		partGroup = Body[1][0];
+    		X1Y0_獣耳外 = partGroup["獣耳外"].ToPar();
+    		X1Y0_獣耳内 = partGroup["獣耳内"].ToPar();
+    		X1Y0_耳毛 = partGroup["耳毛"].ToPar();
+    		partGroup = Body[1][1];
+    		X1Y1_獣耳外 = partGroup["獣耳外"].ToPar();
+    		X1Y1_獣耳内 = partGroup["獣耳内"].ToPar();
+    		X1Y1_耳毛 = partGroup["耳毛"].ToPar();
+    		partGroup = Body[1][2];
+    		X1Y2_獣耳外 = partGroup["獣耳外"].ToPar();
+    		X1Y2_獣耳内 = partGroup["獣耳内"].ToPar();
+    		X1Y2_耳毛 = partGroup["耳毛"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;
@@ -381,23 +381,23 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		獣耳外CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		獣耳内CD = new ColorD(ref Col.Black, ref 体配色.人肌R);
-    		耳毛CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
+    		獣耳外CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		獣耳内CD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌R);
+    		耳毛CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
     	}
 
     	private void 配色T0(BodyColorSet 体配色)
     	{
-    		獣耳外CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		獣耳内CD = new ColorD(ref Col.Black, ref 体配色.人肌R);
-    		耳毛CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
+    		獣耳外CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		獣耳内CD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌R);
+    		耳毛CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
     	}
 
     	private void 配色T1(BodyColorSet 体配色)
     	{
-    		獣耳外CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		獣耳内CD = new ColorD(ref Col.Black, ref 体配色.人肌R);
-    		耳毛CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
+    		獣耳外CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		獣耳内CD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌R);
+    		耳毛CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
     	}
     }
 }

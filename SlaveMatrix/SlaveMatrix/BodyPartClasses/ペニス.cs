@@ -4,101 +4,101 @@ using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
-    public class ペニス : Ele
+    public class ペニス : Element
     {
-    	public Par X0Y0_陰嚢;
+    	public ShapePart X0Y0_陰嚢;
 
-    	public Par X0Y0_陰茎;
+    	public ShapePart X0Y0_陰茎;
 
-    	public Par X0Y0_血管下;
+    	public ShapePart X0Y0_血管下;
 
-    	public Par X0Y0_血管上;
+    	public ShapePart X0Y0_血管上;
 
-    	public Par X0Y0_亀頭;
+    	public ShapePart X0Y0_亀頭;
 
-    	public Par X0Y1_陰嚢;
+    	public ShapePart X0Y1_陰嚢;
 
-    	public Par X0Y1_陰茎;
+    	public ShapePart X0Y1_陰茎;
 
-    	public Par X0Y1_血管下;
+    	public ShapePart X0Y1_血管下;
 
-    	public Par X0Y1_血管上;
+    	public ShapePart X0Y1_血管上;
 
-    	public Par X0Y1_亀頭;
+    	public ShapePart X0Y1_亀頭;
 
-    	public Par X0Y2_陰嚢;
+    	public ShapePart X0Y2_陰嚢;
 
-    	public Par X0Y2_陰茎;
+    	public ShapePart X0Y2_陰茎;
 
-    	public Par X0Y2_血管下;
+    	public ShapePart X0Y2_血管下;
 
-    	public Par X0Y2_血管上;
+    	public ShapePart X0Y2_血管上;
 
-    	public Par X0Y2_亀頭;
+    	public ShapePart X0Y2_亀頭;
 
-    	public Par X0Y3_陰嚢;
+    	public ShapePart X0Y3_陰嚢;
 
-    	public Par X0Y3_陰茎;
+    	public ShapePart X0Y3_陰茎;
 
-    	public Par X0Y3_血管下;
+    	public ShapePart X0Y3_血管下;
 
-    	public Par X0Y3_血管上;
+    	public ShapePart X0Y3_血管上;
 
-    	public Par X0Y3_亀頭;
+    	public ShapePart X0Y3_亀頭;
 
-    	public Par X0Y4_陰嚢;
+    	public ShapePart X0Y4_陰嚢;
 
-    	public Par X0Y4_陰茎;
+    	public ShapePart X0Y4_陰茎;
 
-    	public Par X0Y4_血管下;
+    	public ShapePart X0Y4_血管下;
 
-    	public Par X0Y4_血管上;
+    	public ShapePart X0Y4_血管上;
 
-    	public Par X0Y4_亀頭;
+    	public ShapePart X0Y4_亀頭;
 
-    	public Par X1Y0_陰嚢;
+    	public ShapePart X1Y0_陰嚢;
 
-    	public Par X1Y0_陰茎;
+    	public ShapePart X1Y0_陰茎;
 
-    	public Par X1Y0_血管下;
+    	public ShapePart X1Y0_血管下;
 
-    	public Par X1Y0_血管上;
+    	public ShapePart X1Y0_血管上;
 
-    	public Par X1Y0_亀頭;
+    	public ShapePart X1Y0_亀頭;
 
-    	public Par X1Y1_陰嚢;
+    	public ShapePart X1Y1_陰嚢;
 
-    	public Par X1Y1_陰茎;
+    	public ShapePart X1Y1_陰茎;
 
-    	public Par X1Y1_血管下;
+    	public ShapePart X1Y1_血管下;
 
-    	public Par X1Y1_血管上;
+    	public ShapePart X1Y1_血管上;
 
-    	public Par X1Y1_亀頭;
+    	public ShapePart X1Y1_亀頭;
 
-    	public Par X1Y2_陰嚢;
+    	public ShapePart X1Y2_陰嚢;
 
-    	public Par X1Y2_陰茎;
+    	public ShapePart X1Y2_陰茎;
 
-    	public Par X1Y2_血管下;
+    	public ShapePart X1Y2_血管下;
 
-    	public Par X1Y2_血管上;
+    	public ShapePart X1Y2_血管上;
 
-    	public Par X1Y3_陰嚢;
+    	public ShapePart X1Y3_陰嚢;
 
-    	public Par X1Y3_陰茎;
+    	public ShapePart X1Y3_陰茎;
 
-    	public Par X1Y3_血管下;
+    	public ShapePart X1Y3_血管下;
 
-    	public Par X1Y3_血管上;
+    	public ShapePart X1Y3_血管上;
 
-    	public Par X1Y4_陰嚢;
+    	public ShapePart X1Y4_陰嚢;
 
-    	public Par X1Y4_陰茎;
+    	public ShapePart X1Y4_陰茎;
 
-    	public Par X1Y4_血管下;
+    	public ShapePart X1Y4_血管下;
 
-    	public AreM AreM;
+    	public ManagedArea ManagedArea;
 
     	public ColorD 陰嚢CD;
 
@@ -202,7 +202,7 @@ namespace SlaveMatrix
 
     	public ColorP X1Y4_血管下CP;
 
-    	public Ele[] 尿道_接続;
+    	public Element[] 尿道_接続;
 
     	public override bool 欠損
     	{
@@ -423,11 +423,11 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return AreM.Position;
+    			return ManagedArea.Position;
     		}
     		set
     		{
-    			AreM.Position = value;
+    			ManagedArea.Position = value;
     		}
     	}
 
@@ -437,63 +437,63 @@ namespace SlaveMatrix
     	{
     		ペニス ペニス2 = this;
     		ThisType = GetType();
-    		Body = new Difs(Sta.カーソル["ペニス"]);
-    		Pars pars = Body[0][0];
-    		X0Y0_陰嚢 = pars["陰嚢"].ToPar();
-    		X0Y0_陰茎 = pars["陰茎"].ToPar();
-    		X0Y0_血管下 = pars["血管下"].ToPar();
-    		X0Y0_血管上 = pars["血管上"].ToPar();
-    		X0Y0_亀頭 = pars["亀頭"].ToPar();
-    		pars = Body[0][1];
-    		X0Y1_陰嚢 = pars["陰嚢"].ToPar();
-    		X0Y1_陰茎 = pars["陰茎"].ToPar();
-    		X0Y1_血管下 = pars["血管下"].ToPar();
-    		X0Y1_血管上 = pars["血管上"].ToPar();
-    		X0Y1_亀頭 = pars["亀頭"].ToPar();
-    		pars = Body[0][2];
-    		X0Y2_陰嚢 = pars["陰嚢"].ToPar();
-    		X0Y2_陰茎 = pars["陰茎"].ToPar();
-    		X0Y2_血管下 = pars["血管下"].ToPar();
-    		X0Y2_血管上 = pars["血管上"].ToPar();
-    		X0Y2_亀頭 = pars["亀頭"].ToPar();
-    		pars = Body[0][3];
-    		X0Y3_陰嚢 = pars["陰嚢"].ToPar();
-    		X0Y3_陰茎 = pars["陰茎"].ToPar();
-    		X0Y3_血管下 = pars["血管下"].ToPar();
-    		X0Y3_血管上 = pars["血管上"].ToPar();
-    		X0Y3_亀頭 = pars["亀頭"].ToPar();
-    		pars = Body[0][4];
-    		X0Y4_陰嚢 = pars["陰嚢"].ToPar();
-    		X0Y4_陰茎 = pars["陰茎"].ToPar();
-    		X0Y4_血管下 = pars["血管下"].ToPar();
-    		X0Y4_血管上 = pars["血管上"].ToPar();
-    		X0Y4_亀頭 = pars["亀頭"].ToPar();
-    		pars = Body[1][0];
-    		X1Y0_陰嚢 = pars["陰嚢"].ToPar();
-    		X1Y0_陰茎 = pars["陰茎"].ToPar();
-    		X1Y0_血管下 = pars["血管下"].ToPar();
-    		X1Y0_血管上 = pars["血管上"].ToPar();
-    		X1Y0_亀頭 = pars["亀頭"].ToPar();
-    		pars = Body[1][1];
-    		X1Y1_陰嚢 = pars["陰嚢"].ToPar();
-    		X1Y1_陰茎 = pars["陰茎"].ToPar();
-    		X1Y1_血管下 = pars["血管下"].ToPar();
-    		X1Y1_血管上 = pars["血管上"].ToPar();
-    		X1Y1_亀頭 = pars["亀頭"].ToPar();
-    		pars = Body[1][2];
-    		X1Y2_陰嚢 = pars["陰嚢"].ToPar();
-    		X1Y2_陰茎 = pars["陰茎"].ToPar();
-    		X1Y2_血管下 = pars["血管下"].ToPar();
-    		X1Y2_血管上 = pars["血管上"].ToPar();
-    		pars = Body[1][3];
-    		X1Y3_陰嚢 = pars["陰嚢"].ToPar();
-    		X1Y3_陰茎 = pars["陰茎"].ToPar();
-    		X1Y3_血管下 = pars["血管下"].ToPar();
-    		X1Y3_血管上 = pars["血管上"].ToPar();
-    		pars = Body[1][4];
-    		X1Y4_陰嚢 = pars["陰嚢"].ToPar();
-    		X1Y4_陰茎 = pars["陰茎"].ToPar();
-    		X1Y4_血管下 = pars["血管下"].ToPar();
+    		Body = new VariantGrid(GlobalState.カーソル["ペニス"]);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_陰嚢 = partGroup["陰嚢"].ToPar();
+    		X0Y0_陰茎 = partGroup["陰茎"].ToPar();
+    		X0Y0_血管下 = partGroup["血管下"].ToPar();
+    		X0Y0_血管上 = partGroup["血管上"].ToPar();
+    		X0Y0_亀頭 = partGroup["亀頭"].ToPar();
+    		partGroup = Body[0][1];
+    		X0Y1_陰嚢 = partGroup["陰嚢"].ToPar();
+    		X0Y1_陰茎 = partGroup["陰茎"].ToPar();
+    		X0Y1_血管下 = partGroup["血管下"].ToPar();
+    		X0Y1_血管上 = partGroup["血管上"].ToPar();
+    		X0Y1_亀頭 = partGroup["亀頭"].ToPar();
+    		partGroup = Body[0][2];
+    		X0Y2_陰嚢 = partGroup["陰嚢"].ToPar();
+    		X0Y2_陰茎 = partGroup["陰茎"].ToPar();
+    		X0Y2_血管下 = partGroup["血管下"].ToPar();
+    		X0Y2_血管上 = partGroup["血管上"].ToPar();
+    		X0Y2_亀頭 = partGroup["亀頭"].ToPar();
+    		partGroup = Body[0][3];
+    		X0Y3_陰嚢 = partGroup["陰嚢"].ToPar();
+    		X0Y3_陰茎 = partGroup["陰茎"].ToPar();
+    		X0Y3_血管下 = partGroup["血管下"].ToPar();
+    		X0Y3_血管上 = partGroup["血管上"].ToPar();
+    		X0Y3_亀頭 = partGroup["亀頭"].ToPar();
+    		partGroup = Body[0][4];
+    		X0Y4_陰嚢 = partGroup["陰嚢"].ToPar();
+    		X0Y4_陰茎 = partGroup["陰茎"].ToPar();
+    		X0Y4_血管下 = partGroup["血管下"].ToPar();
+    		X0Y4_血管上 = partGroup["血管上"].ToPar();
+    		X0Y4_亀頭 = partGroup["亀頭"].ToPar();
+    		partGroup = Body[1][0];
+    		X1Y0_陰嚢 = partGroup["陰嚢"].ToPar();
+    		X1Y0_陰茎 = partGroup["陰茎"].ToPar();
+    		X1Y0_血管下 = partGroup["血管下"].ToPar();
+    		X1Y0_血管上 = partGroup["血管上"].ToPar();
+    		X1Y0_亀頭 = partGroup["亀頭"].ToPar();
+    		partGroup = Body[1][1];
+    		X1Y1_陰嚢 = partGroup["陰嚢"].ToPar();
+    		X1Y1_陰茎 = partGroup["陰茎"].ToPar();
+    		X1Y1_血管下 = partGroup["血管下"].ToPar();
+    		X1Y1_血管上 = partGroup["血管上"].ToPar();
+    		X1Y1_亀頭 = partGroup["亀頭"].ToPar();
+    		partGroup = Body[1][2];
+    		X1Y2_陰嚢 = partGroup["陰嚢"].ToPar();
+    		X1Y2_陰茎 = partGroup["陰茎"].ToPar();
+    		X1Y2_血管下 = partGroup["血管下"].ToPar();
+    		X1Y2_血管上 = partGroup["血管上"].ToPar();
+    		partGroup = Body[1][3];
+    		X1Y3_陰嚢 = partGroup["陰嚢"].ToPar();
+    		X1Y3_陰茎 = partGroup["陰茎"].ToPar();
+    		X1Y3_血管下 = partGroup["血管下"].ToPar();
+    		X1Y3_血管上 = partGroup["血管上"].ToPar();
+    		partGroup = Body[1][4];
+    		X1Y4_陰嚢 = partGroup["陰嚢"].ToPar();
+    		X1Y4_陰茎 = partGroup["陰茎"].ToPar();
+    		X1Y4_血管下 = partGroup["血管下"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;
@@ -532,8 +532,8 @@ namespace SlaveMatrix
     		}
     		if (e.尿道_接続.Count > 0)
     		{
-    			Ele f;
-    			尿道_接続 = e.尿道_接続.Select(delegate(EleD g)
+    			Element f;
+    			尿道_接続 = e.尿道_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = ペニス2;
@@ -591,8 +591,8 @@ namespace SlaveMatrix
     		X1Y4_陰茎CP = new ColorP(X1Y4_陰茎, 陰茎CD, DisUnit, abj: true);
     		X1Y4_血管下CP = new ColorP(X1Y4_血管下, 血管下CD, DisUnit, abj: true);
     		Intensity = e.濃度;
-    		AreM = new AreM(Med.Unit, 3.0, 7.0, 0.07, Med.DisQuality, Med.HitAccuracy, 0.45);
-    		AreM.BasePoint = new Vector2D(0.5, 0.1);
+    		ManagedArea = new ManagedArea(Med.Unit, 3.0, 7.0, 0.07, Med.DisQuality, Med.HitAccuracy, 0.45);
+    		ManagedArea.BasePoint = new Vector2D(0.5, 0.1);
     		X0Y0_陰嚢.SetBasePointBase(X0Y0_陰嚢.ToLocal(X0Y0_陰茎.ToGlobal(X0Y0_陰茎.GetJP()[3].Joint)));
     		X0Y1_陰嚢.SetBasePointBase(X0Y1_陰嚢.ToLocal(X0Y1_陰茎.ToGlobal(X0Y1_陰茎.GetJP()[3].Joint)));
     		X0Y2_陰嚢.SetBasePointBase(X0Y2_陰嚢.ToLocal(X0Y2_陰茎.ToGlobal(X0Y2_陰茎.GetJP()[3].Joint)));
@@ -603,8 +603,8 @@ namespace SlaveMatrix
     		X1Y2_陰嚢.SetBasePointBase(X1Y2_陰嚢.ToLocal(X1Y2_陰茎.ToGlobal(X1Y2_陰茎.GetJP()[2].Joint)));
     		X1Y3_陰嚢.SetBasePointBase(X1Y3_陰嚢.ToLocal(X1Y3_陰茎.ToGlobal(X1Y3_陰茎.GetJP()[2].Joint)));
     		X1Y4_陰嚢.SetBasePointBase(X1Y4_陰嚢.ToLocal(X1Y4_陰茎.ToGlobal(X1Y4_陰茎.GetJP()[2].Joint)));
-    		Vector2D position = AreM.GetPosition(ref AreM.BasePoint);
-    		foreach (Par item in Body.EnumJoinRoot)
+    		Vector2D position = ManagedArea.GetPosition(ref ManagedArea.BasePoint);
+    		foreach (ShapePart item in Body.EnumJoinRoot)
     		{
     			item.SetPositionBase(position);
     		}
@@ -616,14 +616,14 @@ namespace SlaveMatrix
     	public override void Dispose()
     	{
     		base.Dispose();
-    		AreM.Dispose();
+    		ManagedArea.Dispose();
     	}
 
     	public override void 描画0(RenderArea Are)
     	{
-    		AreM.Clear();
-    		Body.Draw(AreM);
-    		Are.Draw(AreM);
+    		ManagedArea.Clear();
+    		Body.Draw(ManagedArea);
+    		Are.Draw(ManagedArea);
     	}
 
     	public override void 色更新()
@@ -721,7 +721,7 @@ namespace SlaveMatrix
     		血管上CD = new ColorD(ref 体配色.肌線, ref 体配色.肌色);
     		亀頭CD = new ColorD();
     		亀頭CD.線 = 体配色.粘線;
-    		亀頭CD.色 = new Color2(ref 体配色.粘膜.Col2, ref Col.Empty);
+    		亀頭CD.色 = new Color2(ref 体配色.粘膜.Col2, ref ColorHelper.Empty);
     	}
 
     	public void 再配色(主人公配色 体配色)
@@ -735,7 +735,7 @@ namespace SlaveMatrix
     		血管上CD.線 = 体配色.粘線;
     		血管上CD.色 = 体配色.肌色;
     		亀頭CD.線 = 体配色.粘線;
-    		亀頭CD.色 = new Color2(ref 体配色.粘膜.Col2, ref Col.Empty);
+    		亀頭CD.色 = new Color2(ref 体配色.粘膜.Col2, ref ColorHelper.Empty);
     	}
     }
 }

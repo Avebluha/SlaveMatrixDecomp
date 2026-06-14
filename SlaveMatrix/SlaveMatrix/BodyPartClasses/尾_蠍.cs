@@ -5,75 +5,75 @@ namespace SlaveMatrix
 {
     public class 尾_蠍 : 尾
     {
-    	public Par X0Y0_節1_尾;
+    	public ShapePart X0Y0_節1_尾;
 
-    	public Par X0Y0_節1_線;
+    	public ShapePart X0Y0_節1_線;
 
-    	public Par X0Y0_節1_瘤左;
+    	public ShapePart X0Y0_節1_瘤左;
 
-    	public Par X0Y0_節1_瘤右;
+    	public ShapePart X0Y0_節1_瘤右;
 
-    	public Par X0Y0_節2_尾;
+    	public ShapePart X0Y0_節2_尾;
 
-    	public Par X0Y0_節2_線;
+    	public ShapePart X0Y0_節2_線;
 
-    	public Par X0Y0_節2_瘤左;
+    	public ShapePart X0Y0_節2_瘤左;
 
-    	public Par X0Y0_節2_瘤右;
+    	public ShapePart X0Y0_節2_瘤右;
 
-    	public Par X0Y0_節3_尾;
+    	public ShapePart X0Y0_節3_尾;
 
-    	public Par X0Y0_節3_線;
+    	public ShapePart X0Y0_節3_線;
 
-    	public Par X0Y0_節3_瘤左;
+    	public ShapePart X0Y0_節3_瘤左;
 
-    	public Par X0Y0_節3_瘤右;
+    	public ShapePart X0Y0_節3_瘤右;
 
-    	public Par X0Y0_輪1_革;
+    	public ShapePart X0Y0_輪1_革;
 
-    	public Par X0Y0_輪1_金具1;
+    	public ShapePart X0Y0_輪1_金具1;
 
-    	public Par X0Y0_輪1_金具2;
+    	public ShapePart X0Y0_輪1_金具2;
 
-    	public Par X0Y0_輪1_金具3;
+    	public ShapePart X0Y0_輪1_金具3;
 
-    	public Par X0Y0_輪1_金具左;
+    	public ShapePart X0Y0_輪1_金具左;
 
-    	public Par X0Y0_輪1_金具右;
+    	public ShapePart X0Y0_輪1_金具右;
 
-    	public Par X0Y0_節4_尾;
+    	public ShapePart X0Y0_節4_尾;
 
-    	public Par X0Y0_節4_線;
+    	public ShapePart X0Y0_節4_線;
 
-    	public Par X0Y0_節4_瘤左;
+    	public ShapePart X0Y0_節4_瘤左;
 
-    	public Par X0Y0_節4_瘤右;
+    	public ShapePart X0Y0_節4_瘤右;
 
-    	public Par X0Y0_節5_尾;
+    	public ShapePart X0Y0_節5_尾;
 
-    	public Par X0Y0_節5_線;
+    	public ShapePart X0Y0_節5_線;
 
-    	public Par X0Y0_節5_瘤左;
+    	public ShapePart X0Y0_節5_瘤左;
 
-    	public Par X0Y0_節5_瘤右;
+    	public ShapePart X0Y0_節5_瘤右;
 
-    	public Par X0Y0_針_尾針;
+    	public ShapePart X0Y0_針_尾針;
 
-    	public Par X0Y0_針_線1;
+    	public ShapePart X0Y0_針_線1;
 
-    	public Par X0Y0_針_線2;
+    	public ShapePart X0Y0_針_線2;
 
-    	public Par X0Y0_輪2_革;
+    	public ShapePart X0Y0_輪2_革;
 
-    	public Par X0Y0_輪2_金具1;
+    	public ShapePart X0Y0_輪2_金具1;
 
-    	public Par X0Y0_輪2_金具2;
+    	public ShapePart X0Y0_輪2_金具2;
 
-    	public Par X0Y0_輪2_金具3;
+    	public ShapePart X0Y0_輪2_金具3;
 
-    	public Par X0Y0_輪2_金具左;
+    	public ShapePart X0Y0_輪2_金具左;
 
-    	public Par X0Y0_輪2_金具右;
+    	public ShapePart X0Y0_輪2_金具右;
 
     	public ColorD 節1_尾CD;
 
@@ -872,50 +872,50 @@ namespace SlaveMatrix
     	public 尾_蠍(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 尾_蠍D e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif();
-    		dif.Tag = "蠍尾";
-    		dif.Add(new Pars(Sta.尻尾["尾"][0][12]));
-    		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		Pars pars2 = pars["節1"].ToPars();
+    		MorphVariant morphVariant = new MorphVariant();
+    		morphVariant.Tag = "蠍尾";
+    		morphVariant.Add(new PartGroup(GlobalState.尻尾["尾"][0][12]));
+    		Body = new VariantGrid();
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
+    		PartGroup partGroup = Body[0][0];
+    		PartGroup pars2 = partGroup["節1"].ToPars();
     		X0Y0_節1_尾 = pars2["尾"].ToPar();
     		X0Y0_節1_線 = pars2["線"].ToPar();
     		X0Y0_節1_瘤左 = pars2["瘤左"].ToPar();
     		X0Y0_節1_瘤右 = pars2["瘤右"].ToPar();
-    		pars2 = pars["節2"].ToPars();
+    		pars2 = partGroup["節2"].ToPars();
     		X0Y0_節2_尾 = pars2["尾"].ToPar();
     		X0Y0_節2_線 = pars2["線"].ToPar();
     		X0Y0_節2_瘤左 = pars2["瘤左"].ToPar();
     		X0Y0_節2_瘤右 = pars2["瘤右"].ToPar();
-    		pars2 = pars["節3"].ToPars();
+    		pars2 = partGroup["節3"].ToPars();
     		X0Y0_節3_尾 = pars2["尾"].ToPar();
     		X0Y0_節3_線 = pars2["線"].ToPar();
     		X0Y0_節3_瘤左 = pars2["瘤左"].ToPar();
     		X0Y0_節3_瘤右 = pars2["瘤右"].ToPar();
-    		pars2 = pars["輪1"].ToPars();
+    		pars2 = partGroup["輪1"].ToPars();
     		X0Y0_輪1_革 = pars2["革"].ToPar();
     		X0Y0_輪1_金具1 = pars2["金具1"].ToPar();
     		X0Y0_輪1_金具2 = pars2["金具2"].ToPar();
     		X0Y0_輪1_金具3 = pars2["金具3"].ToPar();
     		X0Y0_輪1_金具左 = pars2["金具左"].ToPar();
     		X0Y0_輪1_金具右 = pars2["金具右"].ToPar();
-    		pars2 = pars["節4"].ToPars();
+    		pars2 = partGroup["節4"].ToPars();
     		X0Y0_節4_尾 = pars2["尾"].ToPar();
     		X0Y0_節4_線 = pars2["線"].ToPar();
     		X0Y0_節4_瘤左 = pars2["瘤左"].ToPar();
     		X0Y0_節4_瘤右 = pars2["瘤右"].ToPar();
-    		pars2 = pars["節5"].ToPars();
+    		pars2 = partGroup["節5"].ToPars();
     		X0Y0_節5_尾 = pars2["尾"].ToPar();
     		X0Y0_節5_線 = pars2["線"].ToPar();
     		X0Y0_節5_瘤左 = pars2["瘤左"].ToPar();
     		X0Y0_節5_瘤右 = pars2["瘤右"].ToPar();
-    		pars2 = pars["針"].ToPars();
+    		pars2 = partGroup["針"].ToPars();
     		X0Y0_針_尾針 = pars2["尾針"].ToPar();
     		X0Y0_針_線1 = pars2["線1"].ToPar();
     		X0Y0_針_線2 = pars2["線2"].ToPar();
-    		pars2 = pars["輪2"].ToPars();
+    		pars2 = partGroup["輪2"].ToPars();
     		X0Y0_輪2_革 = pars2["革"].ToPar();
     		X0Y0_輪2_金具1 = pars2["金具1"].ToPar();
     		X0Y0_輪2_金具2 = pars2["金具2"].ToPar();
@@ -1109,7 +1109,7 @@ namespace SlaveMatrix
     		Body.JoinPAall();
     	}
 
-    	public override bool Is革(Par p)
+    	public override bool Is革(ShapePart p)
     	{
     		if (p != X0Y0_輪1_革 && p != X0Y0_輪1_金具1 && p != X0Y0_輪1_金具2 && p != X0Y0_輪1_金具3 && p != X0Y0_輪1_金具左 && p != X0Y0_輪1_金具右 && p != X0Y0_輪2_革 && p != X0Y0_輪2_金具1 && p != X0Y0_輪2_金具2 && p != X0Y0_輪2_金具3 && p != X0Y0_輪2_金具左)
     		{
@@ -1118,7 +1118,7 @@ namespace SlaveMatrix
     		return true;
     	}
 
-    	public override IEnumerable<Par> Enum軸()
+    	public override IEnumerable<ShapePart> Enum軸()
     	{
     		yield return X0Y0_節1_尾;
     		yield return X0Y0_節2_尾;
@@ -1196,29 +1196,29 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		節1_尾CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節1_線CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節1_瘤左CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節1_瘤右CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節2_尾CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節2_線CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節2_瘤左CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節2_瘤右CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節3_尾CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節3_線CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節3_瘤左CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節3_瘤右CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節4_尾CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節4_線CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節4_瘤左CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節4_瘤右CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節5_尾CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節5_線CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節5_瘤左CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節5_瘤右CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		針_尾針CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		針_線1CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		針_線2CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
+    		節1_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節1_線CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節1_瘤左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節1_瘤右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節2_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節2_線CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節2_瘤左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節2_瘤右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節3_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節3_線CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節3_瘤左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節3_瘤右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節4_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節4_線CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節4_瘤左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節4_瘤右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節5_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節5_線CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節5_瘤左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節5_瘤右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		針_尾針CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		針_線1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		針_線2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
     		輪1_革CD = new ColorD();
     		輪1_金具1CD = new ColorD();
     		輪1_金具2CD = new ColorD();
@@ -1235,29 +1235,29 @@ namespace SlaveMatrix
 
     	private void 配色T0(BodyColorSet 体配色)
     	{
-    		節1_尾CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		節1_線CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節1_瘤左CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節1_瘤右CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節2_尾CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		節2_線CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節2_瘤左CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節2_瘤右CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節3_尾CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		節3_線CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節3_瘤左CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節3_瘤右CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節4_尾CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		節4_線CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節4_瘤左CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節4_瘤右CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節5_尾CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		節5_線CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節5_瘤左CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節5_瘤右CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		針_尾針CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		針_線1CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		針_線2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		節1_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		節1_線CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節1_瘤左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節1_瘤右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節2_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		節2_線CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節2_瘤左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節2_瘤右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節3_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		節3_線CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節3_瘤左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節3_瘤右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節4_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		節4_線CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節4_瘤左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節4_瘤右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節5_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		節5_線CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節5_瘤左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節5_瘤右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		針_尾針CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		針_線1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		針_線2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
     		輪1_革CD = new ColorD();
     		輪1_金具1CD = new ColorD();
     		輪1_金具2CD = new ColorD();
@@ -1274,29 +1274,29 @@ namespace SlaveMatrix
 
     	private void 配色T1(BodyColorSet 体配色)
     	{
-    		節1_尾CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節1_線CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		節1_瘤左CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		節1_瘤右CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		節2_尾CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節2_線CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		節2_瘤左CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		節2_瘤右CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		節3_尾CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節3_線CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		節3_瘤左CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		節3_瘤右CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		節4_尾CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節4_線CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		節4_瘤左CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		節4_瘤右CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		節5_尾CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節5_線CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		節5_瘤左CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		節5_瘤右CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		針_尾針CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		針_線1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		針_線2CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
+    		節1_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節1_線CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		節1_瘤左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		節1_瘤右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		節2_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節2_線CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		節2_瘤左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		節2_瘤右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		節3_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節3_線CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		節3_瘤左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		節3_瘤右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		節4_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節4_線CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		節4_瘤左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		節4_瘤右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		節5_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節5_線CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		節5_瘤左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		節5_瘤右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		針_尾針CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		針_線1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		針_線2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
     		輪1_革CD = new ColorD();
     		輪1_金具1CD = new ColorD();
     		輪1_金具2CD = new ColorD();

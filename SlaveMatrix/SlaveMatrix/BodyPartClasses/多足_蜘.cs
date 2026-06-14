@@ -7,11 +7,11 @@ namespace SlaveMatrix
 {
     public class 多足_蜘 : 半身
     {
-    	public Par X0Y0_Torso;
+    	public ShapePart X0Y0_Torso;
 
-    	public Par X0Y0_胸版;
+    	public ShapePart X0Y0_胸版;
 
-    	public Par X0Y0_柄;
+    	public ShapePart X0Y0_柄;
 
     	public ColorD TorsoCD;
 
@@ -25,27 +25,27 @@ namespace SlaveMatrix
 
     	public ColorP X0Y0_柄CP;
 
-    	public Ele[] 触肢左_接続;
+    	public Element[] 触肢左_接続;
 
-    	public Ele[] 触肢右_接続;
+    	public Element[] 触肢右_接続;
 
-    	public Ele[] 節足左1_接続;
+    	public Element[] 節足左1_接続;
 
-    	public Ele[] 節足左2_接続;
+    	public Element[] 節足左2_接続;
 
-    	public Ele[] 節足左3_接続;
+    	public Element[] 節足左3_接続;
 
-    	public Ele[] 節足左4_接続;
+    	public Element[] 節足左4_接続;
 
-    	public Ele[] 節足右1_接続;
+    	public Element[] 節足右1_接続;
 
-    	public Ele[] 節足右2_接続;
+    	public Element[] 節足右2_接続;
 
-    	public Ele[] 節足右3_接続;
+    	public Element[] 節足右3_接続;
 
-    	public Ele[] 節足右4_接続;
+    	public Element[] 節足右4_接続;
 
-    	public Ele[] 尾_接続;
+    	public Element[] 尾_接続;
 
     	public override bool 欠損
     	{
@@ -176,16 +176,16 @@ namespace SlaveMatrix
     	{
     		多足_蜘 多足_蜘2 = this;
     		ThisType = GetType();
-    		Dif dif = new Dif();
-    		dif.Tag = "蜘";
-    		dif.Add(new Pars(Sta.半身["多足"][0][1]));
-    		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		X0Y0_Torso = pars["Torso"].ToPar();
-    		X0Y0_胸版 = pars["胸版"].ToPar();
-    		X0Y0_柄 = pars["柄"].ToPar();
+    		MorphVariant morphVariant = new MorphVariant();
+    		morphVariant.Tag = "蜘";
+    		morphVariant.Add(new PartGroup(GlobalState.半身["多足"][0][1]));
+    		Body = new VariantGrid();
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_Torso = partGroup["Torso"].ToPar();
+    		X0Y0_胸版 = partGroup["胸版"].ToPar();
+    		X0Y0_柄 = partGroup["柄"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;
@@ -220,10 +220,10 @@ namespace SlaveMatrix
     		{
     			表示 = false;
     		}
-    		Ele f;
+    		Element f;
     		if (e.触肢左_接続.Count > 0)
     		{
-    			触肢左_接続 = e.触肢左_接続.Select(delegate(EleD g)
+    			触肢左_接続 = e.触肢左_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 多足_蜘2;
@@ -234,7 +234,7 @@ namespace SlaveMatrix
     		}
     		if (e.触肢右_接続.Count > 0)
     		{
-    			触肢右_接続 = e.触肢右_接続.Select(delegate(EleD g)
+    			触肢右_接続 = e.触肢右_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 多足_蜘2;
@@ -245,7 +245,7 @@ namespace SlaveMatrix
     		}
     		if (e.節足左1_接続.Count > 0)
     		{
-    			節足左1_接続 = e.節足左1_接続.Select(delegate(EleD g)
+    			節足左1_接続 = e.節足左1_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 多足_蜘2;
@@ -256,7 +256,7 @@ namespace SlaveMatrix
     		}
     		if (e.節足左2_接続.Count > 0)
     		{
-    			節足左2_接続 = e.節足左2_接続.Select(delegate(EleD g)
+    			節足左2_接続 = e.節足左2_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 多足_蜘2;
@@ -267,7 +267,7 @@ namespace SlaveMatrix
     		}
     		if (e.節足左3_接続.Count > 0)
     		{
-    			節足左3_接続 = e.節足左3_接続.Select(delegate(EleD g)
+    			節足左3_接続 = e.節足左3_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 多足_蜘2;
@@ -278,7 +278,7 @@ namespace SlaveMatrix
     		}
     		if (e.節足左4_接続.Count > 0)
     		{
-    			節足左4_接続 = e.節足左4_接続.Select(delegate(EleD g)
+    			節足左4_接続 = e.節足左4_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 多足_蜘2;
@@ -289,7 +289,7 @@ namespace SlaveMatrix
     		}
     		if (e.節足右1_接続.Count > 0)
     		{
-    			節足右1_接続 = e.節足右1_接続.Select(delegate(EleD g)
+    			節足右1_接続 = e.節足右1_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 多足_蜘2;
@@ -300,7 +300,7 @@ namespace SlaveMatrix
     		}
     		if (e.節足右2_接続.Count > 0)
     		{
-    			節足右2_接続 = e.節足右2_接続.Select(delegate(EleD g)
+    			節足右2_接続 = e.節足右2_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 多足_蜘2;
@@ -311,7 +311,7 @@ namespace SlaveMatrix
     		}
     		if (e.節足右3_接続.Count > 0)
     		{
-    			節足右3_接続 = e.節足右3_接続.Select(delegate(EleD g)
+    			節足右3_接続 = e.節足右3_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 多足_蜘2;
@@ -322,7 +322,7 @@ namespace SlaveMatrix
     		}
     		if (e.節足右4_接続.Count > 0)
     		{
-    			節足右4_接続 = e.節足右4_接続.Select(delegate(EleD g)
+    			節足右4_接続 = e.節足右4_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 多足_蜘2;
@@ -333,7 +333,7 @@ namespace SlaveMatrix
     		}
     		if (e.尾_接続.Count > 0)
     		{
-    			尾_接続 = e.尾_接続.Select(delegate(EleD g)
+    			尾_接続 = e.尾_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 多足_蜘2;
@@ -378,94 +378,94 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		TorsoCD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		胸版CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		柄CD = new ColorD(ref Col.Black, ref 体配色.体0O);
+    		TorsoCD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		胸版CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		柄CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
     	}
 
     	private void 配色T0(BodyColorSet 体配色)
     	{
-    		TorsoCD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		胸版CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		柄CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		TorsoCD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		胸版CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		柄CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
     	}
 
     	private void 配色T1(BodyColorSet 体配色)
     	{
-    		TorsoCD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		胸版CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		柄CD = new ColorD(ref Col.Black, ref 体配色.体0O);
+    		TorsoCD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		胸版CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		柄CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
     	}
 
-    	public override IEnumerable<Ele> EnumEle()
+    	public override IEnumerable<Element> EnumEle()
     	{
     		yield return this;
     		if (尾_接続 != null)
     		{
-    			foreach (Ele item in 尾_接続.Select((Ele e) => e.EnumEle()).JoinEnum())
+    			foreach (Element item in 尾_接続.Select((Element e) => e.EnumEle()).JoinEnum())
     			{
     				yield return item;
     			}
     		}
     		if (節足左4_接続 != null)
     		{
-    			foreach (Ele item2 in 節足左4_接続.Select((Ele e) => e.EnumEle()).JoinEnum())
+    			foreach (Element item2 in 節足左4_接続.Select((Element e) => e.EnumEle()).JoinEnum())
     			{
     				yield return item2;
     			}
     		}
     		if (節足右4_接続 != null)
     		{
-    			foreach (Ele item3 in 節足右4_接続.Select((Ele e) => e.EnumEle()).JoinEnum())
+    			foreach (Element item3 in 節足右4_接続.Select((Element e) => e.EnumEle()).JoinEnum())
     			{
     				yield return item3;
     			}
     		}
     		if (節足左3_接続 != null)
     		{
-    			foreach (Ele item4 in 節足左3_接続.Select((Ele e) => e.EnumEle()).JoinEnum())
+    			foreach (Element item4 in 節足左3_接続.Select((Element e) => e.EnumEle()).JoinEnum())
     			{
     				yield return item4;
     			}
     		}
     		if (節足右3_接続 != null)
     		{
-    			foreach (Ele item5 in 節足右3_接続.Select((Ele e) => e.EnumEle()).JoinEnum())
+    			foreach (Element item5 in 節足右3_接続.Select((Element e) => e.EnumEle()).JoinEnum())
     			{
     				yield return item5;
     			}
     		}
     		if (節足左2_接続 != null)
     		{
-    			foreach (Ele item6 in 節足左2_接続.Select((Ele e) => e.EnumEle()).JoinEnum())
+    			foreach (Element item6 in 節足左2_接続.Select((Element e) => e.EnumEle()).JoinEnum())
     			{
     				yield return item6;
     			}
     		}
     		if (節足右2_接続 != null)
     		{
-    			foreach (Ele item7 in 節足右2_接続.Select((Ele e) => e.EnumEle()).JoinEnum())
+    			foreach (Element item7 in 節足右2_接続.Select((Element e) => e.EnumEle()).JoinEnum())
     			{
     				yield return item7;
     			}
     		}
     		if (節足左1_接続 != null)
     		{
-    			foreach (Ele item8 in 節足左1_接続.Select((Ele e) => e.EnumEle()).JoinEnum())
+    			foreach (Element item8 in 節足左1_接続.Select((Element e) => e.EnumEle()).JoinEnum())
     			{
     				yield return item8;
     			}
     		}
     		if (節足右1_接続 != null)
     		{
-    			foreach (Ele item9 in 節足右1_接続.Select((Ele e) => e.EnumEle()).JoinEnum())
+    			foreach (Element item9 in 節足右1_接続.Select((Element e) => e.EnumEle()).JoinEnum())
     			{
     				yield return item9;
     			}
     		}
     		if (触肢左_接続 != null)
     		{
-    			foreach (Ele item10 in 触肢左_接続.Select((Ele e) => e.EnumEle()).JoinEnum())
+    			foreach (Element item10 in 触肢左_接続.Select((Element e) => e.EnumEle()).JoinEnum())
     			{
     				yield return item10;
     			}
@@ -474,7 +474,7 @@ namespace SlaveMatrix
     		{
     			yield break;
     		}
-    		foreach (Ele item11 in 触肢右_接続.Select((Ele e) => e.EnumEle()).JoinEnum())
+    		foreach (Element item11 in 触肢右_接続.Select((Element e) => e.EnumEle()).JoinEnum())
     		{
     			yield return item11;
     		}

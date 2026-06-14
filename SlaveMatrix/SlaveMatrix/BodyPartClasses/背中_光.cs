@@ -4,9 +4,9 @@ namespace SlaveMatrix
 {
     public class 背中_光 : 背中
     {
-    	public Par X0Y0_後光左;
+    	public ShapePart X0Y0_後光左;
 
-    	public Par X0Y0_後光右;
+    	public ShapePart X0Y0_後光右;
 
     	public ColorD 後光CD;
 
@@ -14,7 +14,7 @@ namespace SlaveMatrix
 
     	public ColorP X0Y0_後光右CP;
 
-    	private Par[] Pars;
+    	private ShapePart[] Pars;
 
     	private Vector2D[] mm;
 
@@ -108,15 +108,15 @@ namespace SlaveMatrix
     	public 背中_光(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 背中_光D e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif();
-    		dif.Tag = "後光";
-    		dif.Add(new Pars(Sta.肢中["背中"][0][2]));
-    		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		X0Y0_後光左 = pars["後光左"].ToPar();
-    		X0Y0_後光右 = pars["後光右"].ToPar();
+    		MorphVariant morphVariant = new MorphVariant();
+    		morphVariant.Tag = "後光";
+    		morphVariant.Add(new PartGroup(GlobalState.肢中["背中"][0][2]));
+    		Body = new VariantGrid();
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_後光左 = partGroup["後光左"].ToPar();
+    		X0Y0_後光右 = partGroup["後光右"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;
@@ -152,7 +152,7 @@ namespace SlaveMatrix
     		}
     		base.配色指定 = 配色指定;
     		配色(体配色);
-    		Pars = new Par[2] { X0Y0_後光左, X0Y0_後光右 };
+    		Pars = new ShapePart[2] { X0Y0_後光左, X0Y0_後光右 };
     		X0Y0_後光左CP = new ColorP(X0Y0_後光左, 後光CD, DisUnit, abj: true);
     		X0Y0_後光右CP = new ColorP(X0Y0_後光右, 後光CD, DisUnit, abj: true);
     		Intensity = e.濃度;
@@ -172,7 +172,7 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		後光CD = new ColorD(ref Col.Empty, ref 体配色.後光O);
+    		後光CD = new ColorD(ref ColorHelper.Empty, ref 体配色.後光O);
     	}
     }
 }

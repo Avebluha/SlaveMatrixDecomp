@@ -4,51 +4,51 @@ namespace SlaveMatrix
 {
     public class 足_獣 : 獣足
     {
-    	public Par X0Y0_足;
+    	public ShapePart X0Y0_足;
 
-    	public Par X0Y0_筋;
+    	public ShapePart X0Y0_筋;
 
-    	public Par X0Y0_小指_指;
+    	public ShapePart X0Y0_小指_指;
 
-    	public Par X0Y0_小指_爪;
+    	public ShapePart X0Y0_小指_爪;
 
-    	public Par X0Y0_小指_肉球;
+    	public ShapePart X0Y0_小指_肉球;
 
-    	public Par X0Y0_薬指_指;
+    	public ShapePart X0Y0_薬指_指;
 
-    	public Par X0Y0_薬指_爪;
+    	public ShapePart X0Y0_薬指_爪;
 
-    	public Par X0Y0_薬指_肉球;
+    	public ShapePart X0Y0_薬指_肉球;
 
-    	public Par X0Y0_中指_指;
+    	public ShapePart X0Y0_中指_指;
 
-    	public Par X0Y0_中指_爪;
+    	public ShapePart X0Y0_中指_爪;
 
-    	public Par X0Y0_中指_肉球;
+    	public ShapePart X0Y0_中指_肉球;
 
-    	public Par X0Y0_人指_指;
+    	public ShapePart X0Y0_人指_指;
 
-    	public Par X0Y0_人指_爪;
+    	public ShapePart X0Y0_人指_爪;
 
-    	public Par X0Y0_人指_肉球;
+    	public ShapePart X0Y0_人指_肉球;
 
-    	public Par X0Y0_肉球_肉球左;
+    	public ShapePart X0Y0_肉球_肉球左;
 
-    	public Par X0Y0_肉球_肉球中;
+    	public ShapePart X0Y0_肉球_肉球中;
 
-    	public Par X0Y0_肉球_肉球右;
+    	public ShapePart X0Y0_肉球_肉球右;
 
-    	public Par X0Y0_脚輪_革;
+    	public ShapePart X0Y0_脚輪_革;
 
-    	public Par X0Y0_脚輪_金具1;
+    	public ShapePart X0Y0_脚輪_金具1;
 
-    	public Par X0Y0_脚輪_金具2;
+    	public ShapePart X0Y0_脚輪_金具2;
 
-    	public Par X0Y0_脚輪_金具3;
+    	public ShapePart X0Y0_脚輪_金具3;
 
-    	public Par X0Y0_脚輪_金具左;
+    	public ShapePart X0Y0_脚輪_金具左;
 
-    	public Par X0Y0_脚輪_金具右;
+    	public ShapePart X0Y0_脚輪_金具右;
 
     	public ColorD 足CD;
 
@@ -586,36 +586,36 @@ namespace SlaveMatrix
     	public 足_獣(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 足_獣D e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif();
-    		dif.Tag = "獣";
-    		dif.Add(new Pars(Sta.脚左["四足足"][0][0]));
-    		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		X0Y0_足 = pars["足"].ToPar();
-    		X0Y0_筋 = pars["筋"].ToPar();
-    		Pars pars2 = pars["小指"].ToPars();
+    		MorphVariant morphVariant = new MorphVariant();
+    		morphVariant.Tag = "獣";
+    		morphVariant.Add(new PartGroup(GlobalState.脚左["四足足"][0][0]));
+    		Body = new VariantGrid();
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_足 = partGroup["足"].ToPar();
+    		X0Y0_筋 = partGroup["筋"].ToPar();
+    		PartGroup pars2 = partGroup["小指"].ToPars();
     		X0Y0_小指_指 = pars2["指"].ToPar();
     		X0Y0_小指_爪 = pars2["爪"].ToPar();
     		X0Y0_小指_肉球 = pars2["肉球"].ToPar();
-    		pars2 = pars["薬指"].ToPars();
+    		pars2 = partGroup["薬指"].ToPars();
     		X0Y0_薬指_指 = pars2["指"].ToPar();
     		X0Y0_薬指_爪 = pars2["爪"].ToPar();
     		X0Y0_薬指_肉球 = pars2["肉球"].ToPar();
-    		pars2 = pars["中指"].ToPars();
+    		pars2 = partGroup["中指"].ToPars();
     		X0Y0_中指_指 = pars2["指"].ToPar();
     		X0Y0_中指_爪 = pars2["爪"].ToPar();
     		X0Y0_中指_肉球 = pars2["肉球"].ToPar();
-    		pars2 = pars["人指"].ToPars();
+    		pars2 = partGroup["人指"].ToPars();
     		X0Y0_人指_指 = pars2["指"].ToPar();
     		X0Y0_人指_爪 = pars2["爪"].ToPar();
     		X0Y0_人指_肉球 = pars2["肉球"].ToPar();
-    		pars2 = pars["肉球"].ToPars();
+    		pars2 = partGroup["肉球"].ToPars();
     		X0Y0_肉球_肉球左 = pars2["肉球左"].ToPar();
     		X0Y0_肉球_肉球中 = pars2["肉球中"].ToPar();
     		X0Y0_肉球_肉球右 = pars2["肉球右"].ToPar();
-    		pars2 = pars["脚輪"].ToPars();
+    		pars2 = partGroup["脚輪"].ToPars();
     		X0Y0_脚輪_革 = pars2["革"].ToPar();
     		X0Y0_脚輪_金具1 = pars2["金具1"].ToPar();
     		X0Y0_脚輪_金具2 = pars2["金具2"].ToPar();
@@ -770,23 +770,23 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		足CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
+    		足CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
     		筋CD = new ColorD(ref 体配色.薄線, ref 体配色.毛0O);
-    		小指_指CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		小指_爪CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		小指_肉球CD = new ColorD(ref Col.Black, ref 体配色.人肌O);
-    		薬指_指CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		薬指_爪CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		薬指_肉球CD = new ColorD(ref Col.Black, ref 体配色.人肌O);
-    		中指_指CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		中指_爪CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		中指_肉球CD = new ColorD(ref Col.Black, ref 体配色.人肌O);
-    		人指_指CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		人指_爪CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		人指_肉球CD = new ColorD(ref Col.Black, ref 体配色.人肌O);
-    		肉球_肉球左CD = new ColorD(ref Col.Black, ref 体配色.人肌O);
-    		肉球_肉球中CD = new ColorD(ref Col.Black, ref 体配色.人肌O);
-    		肉球_肉球右CD = new ColorD(ref Col.Black, ref 体配色.人肌O);
+    		小指_指CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		小指_爪CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		小指_肉球CD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌O);
+    		薬指_指CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		薬指_爪CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		薬指_肉球CD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌O);
+    		中指_指CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		中指_爪CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		中指_肉球CD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌O);
+    		人指_指CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		人指_爪CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		人指_肉球CD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌O);
+    		肉球_肉球左CD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌O);
+    		肉球_肉球中CD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌O);
+    		肉球_肉球右CD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌O);
     		脚輪_革CD = new ColorD();
     		脚輪_金具1CD = new ColorD();
     		脚輪_金具2CD = new ColorD();

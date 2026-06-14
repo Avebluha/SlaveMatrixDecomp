@@ -3,707 +3,707 @@ using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
-    public class バイブ_ドリル : Ele
+    public class バイブ_ドリル : Element
     {
-    	public Par X0Y0_ヘッド;
+    	public ShapePart X0Y0_ヘッド;
 
-    	public Par X0Y0_イボ1;
+    	public ShapePart X0Y0_イボ1;
 
-    	public Par X0Y0_イボ2;
+    	public ShapePart X0Y0_イボ2;
 
-    	public Par X0Y0_イボ3;
+    	public ShapePart X0Y0_イボ3;
 
-    	public Par X0Y0_イボ4;
+    	public ShapePart X0Y0_イボ4;
 
-    	public Par X0Y0_イボ5;
+    	public ShapePart X0Y0_イボ5;
 
-    	public Par X0Y0_イボ6;
+    	public ShapePart X0Y0_イボ6;
 
-    	public Par X0Y0_イボ7;
+    	public ShapePart X0Y0_イボ7;
 
-    	public Par X0Y0_イボ8;
+    	public ShapePart X0Y0_イボ8;
 
-    	public Par X0Y0_イボ9;
+    	public ShapePart X0Y0_イボ9;
 
-    	public Par X0Y0_イボ10;
+    	public ShapePart X0Y0_イボ10;
 
-    	public Par X0Y0_イボ11;
+    	public ShapePart X0Y0_イボ11;
 
-    	public Par X0Y0_イボ12;
+    	public ShapePart X0Y0_イボ12;
 
-    	public Par X0Y0_イボ13;
+    	public ShapePart X0Y0_イボ13;
 
-    	public Par X0Y0_イボ14;
+    	public ShapePart X0Y0_イボ14;
 
-    	public Par X0Y0_イボ15;
+    	public ShapePart X0Y0_イボ15;
 
-    	public Par X0Y0_イボ16;
+    	public ShapePart X0Y0_イボ16;
 
-    	public Par X0Y0_イボ17;
+    	public ShapePart X0Y0_イボ17;
 
-    	public Par X0Y0_イボ18;
+    	public ShapePart X0Y0_イボ18;
 
-    	public Par X0Y0_ユニット_ユニット;
+    	public ShapePart X0Y0_ユニット_ユニット;
 
-    	public Par X0Y0_ユニット_ユニット線上;
+    	public ShapePart X0Y0_ユニット_ユニット線上;
 
-    	public Par X0Y0_ユニット_ユニット線下;
+    	public ShapePart X0Y0_ユニット_ユニット線下;
 
-    	public Par X0Y0_ユニット_ボタン上;
+    	public ShapePart X0Y0_ユニット_ボタン上;
 
-    	public Par X0Y0_ユニット_ボタン下;
+    	public ShapePart X0Y0_ユニット_ボタン下;
 
-    	public Par X0Y0_ユニット_パワー根;
+    	public ShapePart X0Y0_ユニット_パワー根;
 
-    	public Par X0Y0_ユニット_パワー1;
+    	public ShapePart X0Y0_ユニット_パワー1;
 
-    	public Par X0Y0_ユニット_パワー2;
+    	public ShapePart X0Y0_ユニット_パワー2;
 
-    	public Par X0Y0_ユニット_パワー3;
+    	public ShapePart X0Y0_ユニット_パワー3;
 
-    	public Par X0Y0_ユニット_パワー4;
+    	public ShapePart X0Y0_ユニット_パワー4;
 
-    	public Par X0Y1_ヘッド;
+    	public ShapePart X0Y1_ヘッド;
 
-    	public Par X0Y1_イボ1;
+    	public ShapePart X0Y1_イボ1;
 
-    	public Par X0Y1_イボ2;
+    	public ShapePart X0Y1_イボ2;
 
-    	public Par X0Y1_イボ3;
+    	public ShapePart X0Y1_イボ3;
 
-    	public Par X0Y1_イボ4;
+    	public ShapePart X0Y1_イボ4;
 
-    	public Par X0Y1_イボ5;
+    	public ShapePart X0Y1_イボ5;
 
-    	public Par X0Y1_イボ6;
+    	public ShapePart X0Y1_イボ6;
 
-    	public Par X0Y1_イボ7;
+    	public ShapePart X0Y1_イボ7;
 
-    	public Par X0Y1_イボ8;
+    	public ShapePart X0Y1_イボ8;
 
-    	public Par X0Y1_イボ9;
+    	public ShapePart X0Y1_イボ9;
 
-    	public Par X0Y1_イボ10;
+    	public ShapePart X0Y1_イボ10;
 
-    	public Par X0Y1_イボ11;
+    	public ShapePart X0Y1_イボ11;
 
-    	public Par X0Y1_イボ12;
+    	public ShapePart X0Y1_イボ12;
 
-    	public Par X0Y1_イボ13;
+    	public ShapePart X0Y1_イボ13;
 
-    	public Par X0Y1_イボ14;
+    	public ShapePart X0Y1_イボ14;
 
-    	public Par X0Y1_イボ15;
+    	public ShapePart X0Y1_イボ15;
 
-    	public Par X0Y1_イボ16;
+    	public ShapePart X0Y1_イボ16;
 
-    	public Par X0Y1_イボ17;
+    	public ShapePart X0Y1_イボ17;
 
-    	public Par X0Y1_ユニット_ユニット;
+    	public ShapePart X0Y1_ユニット_ユニット;
 
-    	public Par X0Y1_ユニット_ユニット線上;
+    	public ShapePart X0Y1_ユニット_ユニット線上;
 
-    	public Par X0Y1_ユニット_ユニット線下;
+    	public ShapePart X0Y1_ユニット_ユニット線下;
 
-    	public Par X0Y1_ユニット_ボタン上;
+    	public ShapePart X0Y1_ユニット_ボタン上;
 
-    	public Par X0Y1_ユニット_ボタン下;
+    	public ShapePart X0Y1_ユニット_ボタン下;
 
-    	public Par X0Y1_ユニット_パワー根;
+    	public ShapePart X0Y1_ユニット_パワー根;
 
-    	public Par X0Y1_ユニット_パワー1;
+    	public ShapePart X0Y1_ユニット_パワー1;
 
-    	public Par X0Y1_ユニット_パワー2;
+    	public ShapePart X0Y1_ユニット_パワー2;
 
-    	public Par X0Y1_ユニット_パワー3;
+    	public ShapePart X0Y1_ユニット_パワー3;
 
-    	public Par X0Y1_ユニット_パワー4;
+    	public ShapePart X0Y1_ユニット_パワー4;
 
-    	public Par X0Y2_ヘッド;
+    	public ShapePart X0Y2_ヘッド;
 
-    	public Par X0Y2_イボ1;
+    	public ShapePart X0Y2_イボ1;
 
-    	public Par X0Y2_イボ2;
+    	public ShapePart X0Y2_イボ2;
 
-    	public Par X0Y2_イボ3;
+    	public ShapePart X0Y2_イボ3;
 
-    	public Par X0Y2_イボ4;
+    	public ShapePart X0Y2_イボ4;
 
-    	public Par X0Y2_イボ5;
+    	public ShapePart X0Y2_イボ5;
 
-    	public Par X0Y2_イボ6;
+    	public ShapePart X0Y2_イボ6;
 
-    	public Par X0Y2_イボ7;
+    	public ShapePart X0Y2_イボ7;
 
-    	public Par X0Y2_イボ8;
+    	public ShapePart X0Y2_イボ8;
 
-    	public Par X0Y2_イボ9;
+    	public ShapePart X0Y2_イボ9;
 
-    	public Par X0Y2_イボ10;
+    	public ShapePart X0Y2_イボ10;
 
-    	public Par X0Y2_イボ11;
+    	public ShapePart X0Y2_イボ11;
 
-    	public Par X0Y2_イボ12;
+    	public ShapePart X0Y2_イボ12;
 
-    	public Par X0Y2_ユニット_ユニット;
+    	public ShapePart X0Y2_ユニット_ユニット;
 
-    	public Par X0Y2_ユニット_ユニット線上;
+    	public ShapePart X0Y2_ユニット_ユニット線上;
 
-    	public Par X0Y2_ユニット_ユニット線下;
+    	public ShapePart X0Y2_ユニット_ユニット線下;
 
-    	public Par X0Y2_ユニット_ボタン上;
+    	public ShapePart X0Y2_ユニット_ボタン上;
 
-    	public Par X0Y2_ユニット_ボタン下;
+    	public ShapePart X0Y2_ユニット_ボタン下;
 
-    	public Par X0Y2_ユニット_パワー根;
+    	public ShapePart X0Y2_ユニット_パワー根;
 
-    	public Par X0Y2_ユニット_パワー1;
+    	public ShapePart X0Y2_ユニット_パワー1;
 
-    	public Par X0Y2_ユニット_パワー2;
+    	public ShapePart X0Y2_ユニット_パワー2;
 
-    	public Par X0Y2_ユニット_パワー3;
+    	public ShapePart X0Y2_ユニット_パワー3;
 
-    	public Par X0Y2_ユニット_パワー4;
+    	public ShapePart X0Y2_ユニット_パワー4;
 
-    	public Par X0Y3_ヘッド;
+    	public ShapePart X0Y3_ヘッド;
 
-    	public Par X0Y3_イボ1;
+    	public ShapePart X0Y3_イボ1;
 
-    	public Par X0Y3_イボ2;
+    	public ShapePart X0Y3_イボ2;
 
-    	public Par X0Y3_イボ3;
+    	public ShapePart X0Y3_イボ3;
 
-    	public Par X0Y3_イボ4;
+    	public ShapePart X0Y3_イボ4;
 
-    	public Par X0Y3_イボ5;
+    	public ShapePart X0Y3_イボ5;
 
-    	public Par X0Y3_イボ6;
+    	public ShapePart X0Y3_イボ6;
 
-    	public Par X0Y3_イボ7;
+    	public ShapePart X0Y3_イボ7;
 
-    	public Par X0Y3_ユニット_ユニット;
+    	public ShapePart X0Y3_ユニット_ユニット;
 
-    	public Par X0Y3_ユニット_ユニット線上;
+    	public ShapePart X0Y3_ユニット_ユニット線上;
 
-    	public Par X0Y3_ユニット_ユニット線下;
+    	public ShapePart X0Y3_ユニット_ユニット線下;
 
-    	public Par X0Y3_ユニット_ボタン上;
+    	public ShapePart X0Y3_ユニット_ボタン上;
 
-    	public Par X0Y3_ユニット_ボタン下;
+    	public ShapePart X0Y3_ユニット_ボタン下;
 
-    	public Par X0Y3_ユニット_パワー根;
+    	public ShapePart X0Y3_ユニット_パワー根;
 
-    	public Par X0Y3_ユニット_パワー1;
+    	public ShapePart X0Y3_ユニット_パワー1;
 
-    	public Par X0Y3_ユニット_パワー2;
+    	public ShapePart X0Y3_ユニット_パワー2;
 
-    	public Par X0Y3_ユニット_パワー3;
+    	public ShapePart X0Y3_ユニット_パワー3;
 
-    	public Par X0Y3_ユニット_パワー4;
+    	public ShapePart X0Y3_ユニット_パワー4;
 
-    	public Par X0Y4_ヘッド;
+    	public ShapePart X0Y4_ヘッド;
 
-    	public Par X0Y4_イボ1;
+    	public ShapePart X0Y4_イボ1;
 
-    	public Par X0Y4_イボ2;
+    	public ShapePart X0Y4_イボ2;
 
-    	public Par X0Y4_イボ3;
+    	public ShapePart X0Y4_イボ3;
 
-    	public Par X0Y4_ユニット_ユニット;
+    	public ShapePart X0Y4_ユニット_ユニット;
 
-    	public Par X0Y4_ユニット_ユニット線上;
+    	public ShapePart X0Y4_ユニット_ユニット線上;
 
-    	public Par X0Y4_ユニット_ユニット線下;
+    	public ShapePart X0Y4_ユニット_ユニット線下;
 
-    	public Par X0Y4_ユニット_ボタン上;
+    	public ShapePart X0Y4_ユニット_ボタン上;
 
-    	public Par X0Y4_ユニット_ボタン下;
+    	public ShapePart X0Y4_ユニット_ボタン下;
 
-    	public Par X0Y4_ユニット_パワー根;
+    	public ShapePart X0Y4_ユニット_パワー根;
 
-    	public Par X0Y4_ユニット_パワー1;
+    	public ShapePart X0Y4_ユニット_パワー1;
 
-    	public Par X0Y4_ユニット_パワー2;
+    	public ShapePart X0Y4_ユニット_パワー2;
 
-    	public Par X0Y4_ユニット_パワー3;
+    	public ShapePart X0Y4_ユニット_パワー3;
 
-    	public Par X0Y4_ユニット_パワー4;
+    	public ShapePart X0Y4_ユニット_パワー4;
 
-    	public Par X1Y0_ヘッド;
+    	public ShapePart X1Y0_ヘッド;
 
-    	public Par X1Y0_イボ1;
+    	public ShapePart X1Y0_イボ1;
 
-    	public Par X1Y0_イボ2;
+    	public ShapePart X1Y0_イボ2;
 
-    	public Par X1Y0_イボ3;
+    	public ShapePart X1Y0_イボ3;
 
-    	public Par X1Y0_イボ4;
+    	public ShapePart X1Y0_イボ4;
 
-    	public Par X1Y0_イボ5;
+    	public ShapePart X1Y0_イボ5;
 
-    	public Par X1Y0_イボ6;
+    	public ShapePart X1Y0_イボ6;
 
-    	public Par X1Y0_イボ7;
+    	public ShapePart X1Y0_イボ7;
 
-    	public Par X1Y0_イボ8;
+    	public ShapePart X1Y0_イボ8;
 
-    	public Par X1Y0_イボ9;
+    	public ShapePart X1Y0_イボ9;
 
-    	public Par X1Y0_イボ10;
+    	public ShapePart X1Y0_イボ10;
 
-    	public Par X1Y0_イボ11;
+    	public ShapePart X1Y0_イボ11;
 
-    	public Par X1Y0_イボ12;
+    	public ShapePart X1Y0_イボ12;
 
-    	public Par X1Y0_イボ13;
+    	public ShapePart X1Y0_イボ13;
 
-    	public Par X1Y0_イボ14;
+    	public ShapePart X1Y0_イボ14;
 
-    	public Par X1Y0_イボ15;
+    	public ShapePart X1Y0_イボ15;
 
-    	public Par X1Y0_イボ16;
+    	public ShapePart X1Y0_イボ16;
 
-    	public Par X1Y0_イボ17;
+    	public ShapePart X1Y0_イボ17;
 
-    	public Par X1Y0_イボ18;
+    	public ShapePart X1Y0_イボ18;
 
-    	public Par X1Y0_イボ19;
+    	public ShapePart X1Y0_イボ19;
 
-    	public Par X1Y0_ユニット_ユニット;
+    	public ShapePart X1Y0_ユニット_ユニット;
 
-    	public Par X1Y0_ユニット_ユニット線上;
+    	public ShapePart X1Y0_ユニット_ユニット線上;
 
-    	public Par X1Y0_ユニット_ユニット線下;
+    	public ShapePart X1Y0_ユニット_ユニット線下;
 
-    	public Par X1Y0_ユニット_ボタン上;
+    	public ShapePart X1Y0_ユニット_ボタン上;
 
-    	public Par X1Y0_ユニット_ボタン下;
+    	public ShapePart X1Y0_ユニット_ボタン下;
 
-    	public Par X1Y0_ユニット_パワー根;
+    	public ShapePart X1Y0_ユニット_パワー根;
 
-    	public Par X1Y0_ユニット_パワー1;
+    	public ShapePart X1Y0_ユニット_パワー1;
 
-    	public Par X1Y0_ユニット_パワー2;
+    	public ShapePart X1Y0_ユニット_パワー2;
 
-    	public Par X1Y0_ユニット_パワー3;
+    	public ShapePart X1Y0_ユニット_パワー3;
 
-    	public Par X1Y0_ユニット_パワー4;
+    	public ShapePart X1Y0_ユニット_パワー4;
 
-    	public Par X1Y1_ヘッド;
+    	public ShapePart X1Y1_ヘッド;
 
-    	public Par X1Y1_イボ1;
+    	public ShapePart X1Y1_イボ1;
 
-    	public Par X1Y1_イボ2;
+    	public ShapePart X1Y1_イボ2;
 
-    	public Par X1Y1_イボ3;
+    	public ShapePart X1Y1_イボ3;
 
-    	public Par X1Y1_イボ4;
+    	public ShapePart X1Y1_イボ4;
 
-    	public Par X1Y1_イボ5;
+    	public ShapePart X1Y1_イボ5;
 
-    	public Par X1Y1_イボ6;
+    	public ShapePart X1Y1_イボ6;
 
-    	public Par X1Y1_イボ7;
+    	public ShapePart X1Y1_イボ7;
 
-    	public Par X1Y1_イボ8;
+    	public ShapePart X1Y1_イボ8;
 
-    	public Par X1Y1_イボ9;
+    	public ShapePart X1Y1_イボ9;
 
-    	public Par X1Y1_イボ10;
+    	public ShapePart X1Y1_イボ10;
 
-    	public Par X1Y1_イボ11;
+    	public ShapePart X1Y1_イボ11;
 
-    	public Par X1Y1_イボ12;
+    	public ShapePart X1Y1_イボ12;
 
-    	public Par X1Y1_イボ13;
+    	public ShapePart X1Y1_イボ13;
 
-    	public Par X1Y1_イボ14;
+    	public ShapePart X1Y1_イボ14;
 
-    	public Par X1Y1_イボ15;
+    	public ShapePart X1Y1_イボ15;
 
-    	public Par X1Y1_イボ16;
+    	public ShapePart X1Y1_イボ16;
 
-    	public Par X1Y1_イボ17;
+    	public ShapePart X1Y1_イボ17;
 
-    	public Par X1Y1_ユニット_ユニット;
+    	public ShapePart X1Y1_ユニット_ユニット;
 
-    	public Par X1Y1_ユニット_ユニット線上;
+    	public ShapePart X1Y1_ユニット_ユニット線上;
 
-    	public Par X1Y1_ユニット_ユニット線下;
+    	public ShapePart X1Y1_ユニット_ユニット線下;
 
-    	public Par X1Y1_ユニット_ボタン上;
+    	public ShapePart X1Y1_ユニット_ボタン上;
 
-    	public Par X1Y1_ユニット_ボタン下;
+    	public ShapePart X1Y1_ユニット_ボタン下;
 
-    	public Par X1Y1_ユニット_パワー根;
+    	public ShapePart X1Y1_ユニット_パワー根;
 
-    	public Par X1Y1_ユニット_パワー1;
+    	public ShapePart X1Y1_ユニット_パワー1;
 
-    	public Par X1Y1_ユニット_パワー2;
+    	public ShapePart X1Y1_ユニット_パワー2;
 
-    	public Par X1Y1_ユニット_パワー3;
+    	public ShapePart X1Y1_ユニット_パワー3;
 
-    	public Par X1Y1_ユニット_パワー4;
+    	public ShapePart X1Y1_ユニット_パワー4;
 
-    	public Par X1Y2_ヘッド;
+    	public ShapePart X1Y2_ヘッド;
 
-    	public Par X1Y2_イボ1;
+    	public ShapePart X1Y2_イボ1;
 
-    	public Par X1Y2_イボ2;
+    	public ShapePart X1Y2_イボ2;
 
-    	public Par X1Y2_イボ3;
+    	public ShapePart X1Y2_イボ3;
 
-    	public Par X1Y2_イボ4;
+    	public ShapePart X1Y2_イボ4;
 
-    	public Par X1Y2_イボ5;
+    	public ShapePart X1Y2_イボ5;
 
-    	public Par X1Y2_イボ6;
+    	public ShapePart X1Y2_イボ6;
 
-    	public Par X1Y2_イボ7;
+    	public ShapePart X1Y2_イボ7;
 
-    	public Par X1Y2_イボ8;
+    	public ShapePart X1Y2_イボ8;
 
-    	public Par X1Y2_イボ9;
+    	public ShapePart X1Y2_イボ9;
 
-    	public Par X1Y2_イボ10;
+    	public ShapePart X1Y2_イボ10;
 
-    	public Par X1Y2_イボ11;
+    	public ShapePart X1Y2_イボ11;
 
-    	public Par X1Y2_イボ12;
+    	public ShapePart X1Y2_イボ12;
 
-    	public Par X1Y2_イボ13;
+    	public ShapePart X1Y2_イボ13;
 
-    	public Par X1Y2_ユニット_ユニット;
+    	public ShapePart X1Y2_ユニット_ユニット;
 
-    	public Par X1Y2_ユニット_ユニット線上;
+    	public ShapePart X1Y2_ユニット_ユニット線上;
 
-    	public Par X1Y2_ユニット_ユニット線下;
+    	public ShapePart X1Y2_ユニット_ユニット線下;
 
-    	public Par X1Y2_ユニット_ボタン上;
+    	public ShapePart X1Y2_ユニット_ボタン上;
 
-    	public Par X1Y2_ユニット_ボタン下;
+    	public ShapePart X1Y2_ユニット_ボタン下;
 
-    	public Par X1Y2_ユニット_パワー根;
+    	public ShapePart X1Y2_ユニット_パワー根;
 
-    	public Par X1Y2_ユニット_パワー1;
+    	public ShapePart X1Y2_ユニット_パワー1;
 
-    	public Par X1Y2_ユニット_パワー2;
+    	public ShapePart X1Y2_ユニット_パワー2;
 
-    	public Par X1Y2_ユニット_パワー3;
+    	public ShapePart X1Y2_ユニット_パワー3;
 
-    	public Par X1Y2_ユニット_パワー4;
+    	public ShapePart X1Y2_ユニット_パワー4;
 
-    	public Par X1Y3_ヘッド;
+    	public ShapePart X1Y3_ヘッド;
 
-    	public Par X1Y3_イボ1;
+    	public ShapePart X1Y3_イボ1;
 
-    	public Par X1Y3_イボ2;
+    	public ShapePart X1Y3_イボ2;
 
-    	public Par X1Y3_イボ3;
+    	public ShapePart X1Y3_イボ3;
 
-    	public Par X1Y3_イボ4;
+    	public ShapePart X1Y3_イボ4;
 
-    	public Par X1Y3_イボ5;
+    	public ShapePart X1Y3_イボ5;
 
-    	public Par X1Y3_イボ6;
+    	public ShapePart X1Y3_イボ6;
 
-    	public Par X1Y3_イボ7;
+    	public ShapePart X1Y3_イボ7;
 
-    	public Par X1Y3_イボ8;
+    	public ShapePart X1Y3_イボ8;
 
-    	public Par X1Y3_ユニット_ユニット;
+    	public ShapePart X1Y3_ユニット_ユニット;
 
-    	public Par X1Y3_ユニット_ユニット線上;
+    	public ShapePart X1Y3_ユニット_ユニット線上;
 
-    	public Par X1Y3_ユニット_ユニット線下;
+    	public ShapePart X1Y3_ユニット_ユニット線下;
 
-    	public Par X1Y3_ユニット_ボタン上;
+    	public ShapePart X1Y3_ユニット_ボタン上;
 
-    	public Par X1Y3_ユニット_ボタン下;
+    	public ShapePart X1Y3_ユニット_ボタン下;
 
-    	public Par X1Y3_ユニット_パワー根;
+    	public ShapePart X1Y3_ユニット_パワー根;
 
-    	public Par X1Y3_ユニット_パワー1;
+    	public ShapePart X1Y3_ユニット_パワー1;
 
-    	public Par X1Y3_ユニット_パワー2;
+    	public ShapePart X1Y3_ユニット_パワー2;
 
-    	public Par X1Y3_ユニット_パワー3;
+    	public ShapePart X1Y3_ユニット_パワー3;
 
-    	public Par X1Y3_ユニット_パワー4;
+    	public ShapePart X1Y3_ユニット_パワー4;
 
-    	public Par X1Y4_ヘッド;
+    	public ShapePart X1Y4_ヘッド;
 
-    	public Par X1Y4_イボ1;
+    	public ShapePart X1Y4_イボ1;
 
-    	public Par X1Y4_イボ2;
+    	public ShapePart X1Y4_イボ2;
 
-    	public Par X1Y4_イボ3;
+    	public ShapePart X1Y4_イボ3;
 
-    	public Par X1Y4_ユニット_ユニット;
+    	public ShapePart X1Y4_ユニット_ユニット;
 
-    	public Par X1Y4_ユニット_ユニット線上;
+    	public ShapePart X1Y4_ユニット_ユニット線上;
 
-    	public Par X1Y4_ユニット_ユニット線下;
+    	public ShapePart X1Y4_ユニット_ユニット線下;
 
-    	public Par X1Y4_ユニット_ボタン上;
+    	public ShapePart X1Y4_ユニット_ボタン上;
 
-    	public Par X1Y4_ユニット_ボタン下;
+    	public ShapePart X1Y4_ユニット_ボタン下;
 
-    	public Par X1Y4_ユニット_パワー根;
+    	public ShapePart X1Y4_ユニット_パワー根;
 
-    	public Par X1Y4_ユニット_パワー1;
+    	public ShapePart X1Y4_ユニット_パワー1;
 
-    	public Par X1Y4_ユニット_パワー2;
+    	public ShapePart X1Y4_ユニット_パワー2;
 
-    	public Par X1Y4_ユニット_パワー3;
+    	public ShapePart X1Y4_ユニット_パワー3;
 
-    	public Par X1Y4_ユニット_パワー4;
+    	public ShapePart X1Y4_ユニット_パワー4;
 
-    	public Par X2Y0_ヘッド;
+    	public ShapePart X2Y0_ヘッド;
 
-    	public Par X2Y0_イボ1;
+    	public ShapePart X2Y0_イボ1;
 
-    	public Par X2Y0_イボ2;
+    	public ShapePart X2Y0_イボ2;
 
-    	public Par X2Y0_イボ3;
+    	public ShapePart X2Y0_イボ3;
 
-    	public Par X2Y0_イボ4;
+    	public ShapePart X2Y0_イボ4;
 
-    	public Par X2Y0_イボ5;
+    	public ShapePart X2Y0_イボ5;
 
-    	public Par X2Y0_イボ6;
+    	public ShapePart X2Y0_イボ6;
 
-    	public Par X2Y0_イボ7;
+    	public ShapePart X2Y0_イボ7;
 
-    	public Par X2Y0_イボ8;
+    	public ShapePart X2Y0_イボ8;
 
-    	public Par X2Y0_イボ9;
+    	public ShapePart X2Y0_イボ9;
 
-    	public Par X2Y0_イボ10;
+    	public ShapePart X2Y0_イボ10;
 
-    	public Par X2Y0_イボ11;
+    	public ShapePart X2Y0_イボ11;
 
-    	public Par X2Y0_イボ12;
+    	public ShapePart X2Y0_イボ12;
 
-    	public Par X2Y0_イボ13;
+    	public ShapePart X2Y0_イボ13;
 
-    	public Par X2Y0_イボ14;
+    	public ShapePart X2Y0_イボ14;
 
-    	public Par X2Y0_イボ15;
+    	public ShapePart X2Y0_イボ15;
 
-    	public Par X2Y0_イボ16;
+    	public ShapePart X2Y0_イボ16;
 
-    	public Par X2Y0_イボ17;
+    	public ShapePart X2Y0_イボ17;
 
-    	public Par X2Y0_イボ18;
+    	public ShapePart X2Y0_イボ18;
 
-    	public Par X2Y0_イボ19;
+    	public ShapePart X2Y0_イボ19;
 
-    	public Par X2Y0_イボ20;
+    	public ShapePart X2Y0_イボ20;
 
-    	public Par X2Y0_イボ21;
+    	public ShapePart X2Y0_イボ21;
 
-    	public Par X2Y0_ユニット_ユニット;
+    	public ShapePart X2Y0_ユニット_ユニット;
 
-    	public Par X2Y0_ユニット_ユニット線上;
+    	public ShapePart X2Y0_ユニット_ユニット線上;
 
-    	public Par X2Y0_ユニット_ユニット線下;
+    	public ShapePart X2Y0_ユニット_ユニット線下;
 
-    	public Par X2Y0_ユニット_ボタン上;
+    	public ShapePart X2Y0_ユニット_ボタン上;
 
-    	public Par X2Y0_ユニット_ボタン下;
+    	public ShapePart X2Y0_ユニット_ボタン下;
 
-    	public Par X2Y0_ユニット_パワー根;
+    	public ShapePart X2Y0_ユニット_パワー根;
 
-    	public Par X2Y0_ユニット_パワー1;
+    	public ShapePart X2Y0_ユニット_パワー1;
 
-    	public Par X2Y0_ユニット_パワー2;
+    	public ShapePart X2Y0_ユニット_パワー2;
 
-    	public Par X2Y0_ユニット_パワー3;
+    	public ShapePart X2Y0_ユニット_パワー3;
 
-    	public Par X2Y0_ユニット_パワー4;
+    	public ShapePart X2Y0_ユニット_パワー4;
 
-    	public Par X2Y1_ヘッド;
+    	public ShapePart X2Y1_ヘッド;
 
-    	public Par X2Y1_イボ1;
+    	public ShapePart X2Y1_イボ1;
 
-    	public Par X2Y1_イボ2;
+    	public ShapePart X2Y1_イボ2;
 
-    	public Par X2Y1_イボ3;
+    	public ShapePart X2Y1_イボ3;
 
-    	public Par X2Y1_イボ4;
+    	public ShapePart X2Y1_イボ4;
 
-    	public Par X2Y1_イボ5;
+    	public ShapePart X2Y1_イボ5;
 
-    	public Par X2Y1_イボ6;
+    	public ShapePart X2Y1_イボ6;
 
-    	public Par X2Y1_イボ7;
+    	public ShapePart X2Y1_イボ7;
 
-    	public Par X2Y1_イボ8;
+    	public ShapePart X2Y1_イボ8;
 
-    	public Par X2Y1_イボ9;
+    	public ShapePart X2Y1_イボ9;
 
-    	public Par X2Y1_イボ10;
+    	public ShapePart X2Y1_イボ10;
 
-    	public Par X2Y1_イボ11;
+    	public ShapePart X2Y1_イボ11;
 
-    	public Par X2Y1_イボ12;
+    	public ShapePart X2Y1_イボ12;
 
-    	public Par X2Y1_イボ13;
+    	public ShapePart X2Y1_イボ13;
 
-    	public Par X2Y1_イボ14;
+    	public ShapePart X2Y1_イボ14;
 
-    	public Par X2Y1_イボ15;
+    	public ShapePart X2Y1_イボ15;
 
-    	public Par X2Y1_イボ16;
+    	public ShapePart X2Y1_イボ16;
 
-    	public Par X2Y1_イボ17;
+    	public ShapePart X2Y1_イボ17;
 
-    	public Par X2Y1_イボ18;
+    	public ShapePart X2Y1_イボ18;
 
-    	public Par X2Y1_イボ19;
+    	public ShapePart X2Y1_イボ19;
 
-    	public Par X2Y1_ユニット_ユニット;
+    	public ShapePart X2Y1_ユニット_ユニット;
 
-    	public Par X2Y1_ユニット_ユニット線上;
+    	public ShapePart X2Y1_ユニット_ユニット線上;
 
-    	public Par X2Y1_ユニット_ユニット線下;
+    	public ShapePart X2Y1_ユニット_ユニット線下;
 
-    	public Par X2Y1_ユニット_ボタン上;
+    	public ShapePart X2Y1_ユニット_ボタン上;
 
-    	public Par X2Y1_ユニット_ボタン下;
+    	public ShapePart X2Y1_ユニット_ボタン下;
 
-    	public Par X2Y1_ユニット_パワー根;
+    	public ShapePart X2Y1_ユニット_パワー根;
 
-    	public Par X2Y1_ユニット_パワー1;
+    	public ShapePart X2Y1_ユニット_パワー1;
 
-    	public Par X2Y1_ユニット_パワー2;
+    	public ShapePart X2Y1_ユニット_パワー2;
 
-    	public Par X2Y1_ユニット_パワー3;
+    	public ShapePart X2Y1_ユニット_パワー3;
 
-    	public Par X2Y1_ユニット_パワー4;
+    	public ShapePart X2Y1_ユニット_パワー4;
 
-    	public Par X2Y2_ヘッド;
+    	public ShapePart X2Y2_ヘッド;
 
-    	public Par X2Y2_イボ1;
+    	public ShapePart X2Y2_イボ1;
 
-    	public Par X2Y2_イボ2;
+    	public ShapePart X2Y2_イボ2;
 
-    	public Par X2Y2_イボ3;
+    	public ShapePart X2Y2_イボ3;
 
-    	public Par X2Y2_イボ4;
+    	public ShapePart X2Y2_イボ4;
 
-    	public Par X2Y2_イボ5;
+    	public ShapePart X2Y2_イボ5;
 
-    	public Par X2Y2_イボ6;
+    	public ShapePart X2Y2_イボ6;
 
-    	public Par X2Y2_イボ7;
+    	public ShapePart X2Y2_イボ7;
 
-    	public Par X2Y2_イボ8;
+    	public ShapePart X2Y2_イボ8;
 
-    	public Par X2Y2_イボ9;
+    	public ShapePart X2Y2_イボ9;
 
-    	public Par X2Y2_イボ10;
+    	public ShapePart X2Y2_イボ10;
 
-    	public Par X2Y2_イボ11;
+    	public ShapePart X2Y2_イボ11;
 
-    	public Par X2Y2_イボ12;
+    	public ShapePart X2Y2_イボ12;
 
-    	public Par X2Y2_イボ13;
+    	public ShapePart X2Y2_イボ13;
 
-    	public Par X2Y2_イボ14;
+    	public ShapePart X2Y2_イボ14;
 
-    	public Par X2Y2_ユニット_ユニット;
+    	public ShapePart X2Y2_ユニット_ユニット;
 
-    	public Par X2Y2_ユニット_ユニット線上;
+    	public ShapePart X2Y2_ユニット_ユニット線上;
 
-    	public Par X2Y2_ユニット_ユニット線下;
+    	public ShapePart X2Y2_ユニット_ユニット線下;
 
-    	public Par X2Y2_ユニット_ボタン上;
+    	public ShapePart X2Y2_ユニット_ボタン上;
 
-    	public Par X2Y2_ユニット_ボタン下;
+    	public ShapePart X2Y2_ユニット_ボタン下;
 
-    	public Par X2Y2_ユニット_パワー根;
+    	public ShapePart X2Y2_ユニット_パワー根;
 
-    	public Par X2Y2_ユニット_パワー1;
+    	public ShapePart X2Y2_ユニット_パワー1;
 
-    	public Par X2Y2_ユニット_パワー2;
+    	public ShapePart X2Y2_ユニット_パワー2;
 
-    	public Par X2Y2_ユニット_パワー3;
+    	public ShapePart X2Y2_ユニット_パワー3;
 
-    	public Par X2Y2_ユニット_パワー4;
+    	public ShapePart X2Y2_ユニット_パワー4;
 
-    	public Par X2Y3_ヘッド;
+    	public ShapePart X2Y3_ヘッド;
 
-    	public Par X2Y3_イボ1;
+    	public ShapePart X2Y3_イボ1;
 
-    	public Par X2Y3_イボ2;
+    	public ShapePart X2Y3_イボ2;
 
-    	public Par X2Y3_イボ3;
+    	public ShapePart X2Y3_イボ3;
 
-    	public Par X2Y3_イボ4;
+    	public ShapePart X2Y3_イボ4;
 
-    	public Par X2Y3_イボ5;
+    	public ShapePart X2Y3_イボ5;
 
-    	public Par X2Y3_イボ6;
+    	public ShapePart X2Y3_イボ6;
 
-    	public Par X2Y3_イボ7;
+    	public ShapePart X2Y3_イボ7;
 
-    	public Par X2Y3_イボ8;
+    	public ShapePart X2Y3_イボ8;
 
-    	public Par X2Y3_イボ9;
+    	public ShapePart X2Y3_イボ9;
 
-    	public Par X2Y3_イボ10;
+    	public ShapePart X2Y3_イボ10;
 
-    	public Par X2Y3_ユニット_ユニット;
+    	public ShapePart X2Y3_ユニット_ユニット;
 
-    	public Par X2Y3_ユニット_ユニット線上;
+    	public ShapePart X2Y3_ユニット_ユニット線上;
 
-    	public Par X2Y3_ユニット_ユニット線下;
+    	public ShapePart X2Y3_ユニット_ユニット線下;
 
-    	public Par X2Y3_ユニット_ボタン上;
+    	public ShapePart X2Y3_ユニット_ボタン上;
 
-    	public Par X2Y3_ユニット_ボタン下;
+    	public ShapePart X2Y3_ユニット_ボタン下;
 
-    	public Par X2Y3_ユニット_パワー根;
+    	public ShapePart X2Y3_ユニット_パワー根;
 
-    	public Par X2Y3_ユニット_パワー1;
+    	public ShapePart X2Y3_ユニット_パワー1;
 
-    	public Par X2Y3_ユニット_パワー2;
+    	public ShapePart X2Y3_ユニット_パワー2;
 
-    	public Par X2Y3_ユニット_パワー3;
+    	public ShapePart X2Y3_ユニット_パワー3;
 
-    	public Par X2Y3_ユニット_パワー4;
+    	public ShapePart X2Y3_ユニット_パワー4;
 
-    	public Par X2Y4_ヘッド;
+    	public ShapePart X2Y4_ヘッド;
 
-    	public Par X2Y4_イボ1;
+    	public ShapePart X2Y4_イボ1;
 
-    	public Par X2Y4_イボ2;
+    	public ShapePart X2Y4_イボ2;
 
-    	public Par X2Y4_イボ3;
+    	public ShapePart X2Y4_イボ3;
 
-    	public Par X2Y4_イボ4;
+    	public ShapePart X2Y4_イボ4;
 
-    	public Par X2Y4_ユニット_ユニット;
+    	public ShapePart X2Y4_ユニット_ユニット;
 
-    	public Par X2Y4_ユニット_ユニット線上;
+    	public ShapePart X2Y4_ユニット_ユニット線上;
 
-    	public Par X2Y4_ユニット_ユニット線下;
+    	public ShapePart X2Y4_ユニット_ユニット線下;
 
-    	public Par X2Y4_ユニット_ボタン上;
+    	public ShapePart X2Y4_ユニット_ボタン上;
 
-    	public Par X2Y4_ユニット_ボタン下;
+    	public ShapePart X2Y4_ユニット_ボタン下;
 
-    	public Par X2Y4_ユニット_パワー根;
+    	public ShapePart X2Y4_ユニット_パワー根;
 
-    	public Par X2Y4_ユニット_パワー1;
+    	public ShapePart X2Y4_ユニット_パワー1;
 
-    	public Par X2Y4_ユニット_パワー2;
+    	public ShapePart X2Y4_ユニット_パワー2;
 
-    	public Par X2Y4_ユニット_パワー3;
+    	public ShapePart X2Y4_ユニット_パワー3;
 
-    	public Par X2Y4_ユニット_パワー4;
+    	public ShapePart X2Y4_ユニット_パワー4;
 
     	public ColorD ヘッドCD;
 
@@ -2646,28 +2646,28 @@ namespace SlaveMatrix
     	public バイブ_ドリル(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, バイブ_ドリルD e)
     	{
     		ThisType = GetType();
-    		Body = new Difs(Sta.カーソル["ドリル"]);
-    		Pars pars = Body[0][0];
-    		X0Y0_ヘッド = pars["ヘッド"].ToPar();
-    		X0Y0_イボ1 = pars["イボ1"].ToPar();
-    		X0Y0_イボ2 = pars["イボ2"].ToPar();
-    		X0Y0_イボ3 = pars["イボ3"].ToPar();
-    		X0Y0_イボ4 = pars["イボ4"].ToPar();
-    		X0Y0_イボ5 = pars["イボ5"].ToPar();
-    		X0Y0_イボ6 = pars["イボ6"].ToPar();
-    		X0Y0_イボ7 = pars["イボ7"].ToPar();
-    		X0Y0_イボ8 = pars["イボ8"].ToPar();
-    		X0Y0_イボ9 = pars["イボ9"].ToPar();
-    		X0Y0_イボ10 = pars["イボ10"].ToPar();
-    		X0Y0_イボ11 = pars["イボ11"].ToPar();
-    		X0Y0_イボ12 = pars["イボ12"].ToPar();
-    		X0Y0_イボ13 = pars["イボ13"].ToPar();
-    		X0Y0_イボ14 = pars["イボ14"].ToPar();
-    		X0Y0_イボ15 = pars["イボ15"].ToPar();
-    		X0Y0_イボ16 = pars["イボ16"].ToPar();
-    		X0Y0_イボ17 = pars["イボ17"].ToPar();
-    		X0Y0_イボ18 = pars["イボ18"].ToPar();
-    		Pars pars2 = pars["ユニット"].ToPars();
+    		Body = new VariantGrid(GlobalState.カーソル["ドリル"]);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_ヘッド = partGroup["ヘッド"].ToPar();
+    		X0Y0_イボ1 = partGroup["イボ1"].ToPar();
+    		X0Y0_イボ2 = partGroup["イボ2"].ToPar();
+    		X0Y0_イボ3 = partGroup["イボ3"].ToPar();
+    		X0Y0_イボ4 = partGroup["イボ4"].ToPar();
+    		X0Y0_イボ5 = partGroup["イボ5"].ToPar();
+    		X0Y0_イボ6 = partGroup["イボ6"].ToPar();
+    		X0Y0_イボ7 = partGroup["イボ7"].ToPar();
+    		X0Y0_イボ8 = partGroup["イボ8"].ToPar();
+    		X0Y0_イボ9 = partGroup["イボ9"].ToPar();
+    		X0Y0_イボ10 = partGroup["イボ10"].ToPar();
+    		X0Y0_イボ11 = partGroup["イボ11"].ToPar();
+    		X0Y0_イボ12 = partGroup["イボ12"].ToPar();
+    		X0Y0_イボ13 = partGroup["イボ13"].ToPar();
+    		X0Y0_イボ14 = partGroup["イボ14"].ToPar();
+    		X0Y0_イボ15 = partGroup["イボ15"].ToPar();
+    		X0Y0_イボ16 = partGroup["イボ16"].ToPar();
+    		X0Y0_イボ17 = partGroup["イボ17"].ToPar();
+    		X0Y0_イボ18 = partGroup["イボ18"].ToPar();
+    		PartGroup pars2 = partGroup["ユニット"].ToPars();
     		X0Y0_ユニット_ユニット = pars2["ユニット"].ToPar();
     		X0Y0_ユニット_ユニット線上 = pars2["ユニット線上"].ToPar();
     		X0Y0_ユニット_ユニット線下 = pars2["ユニット線下"].ToPar();
@@ -2678,26 +2678,26 @@ namespace SlaveMatrix
     		X0Y0_ユニット_パワー2 = pars2["パワー2"].ToPar();
     		X0Y0_ユニット_パワー3 = pars2["パワー3"].ToPar();
     		X0Y0_ユニット_パワー4 = pars2["パワー4"].ToPar();
-    		pars = Body[0][1];
-    		X0Y1_ヘッド = pars["ヘッド"].ToPar();
-    		X0Y1_イボ1 = pars["イボ1"].ToPar();
-    		X0Y1_イボ2 = pars["イボ2"].ToPar();
-    		X0Y1_イボ3 = pars["イボ3"].ToPar();
-    		X0Y1_イボ4 = pars["イボ4"].ToPar();
-    		X0Y1_イボ5 = pars["イボ5"].ToPar();
-    		X0Y1_イボ6 = pars["イボ6"].ToPar();
-    		X0Y1_イボ7 = pars["イボ7"].ToPar();
-    		X0Y1_イボ8 = pars["イボ8"].ToPar();
-    		X0Y1_イボ9 = pars["イボ9"].ToPar();
-    		X0Y1_イボ10 = pars["イボ10"].ToPar();
-    		X0Y1_イボ11 = pars["イボ11"].ToPar();
-    		X0Y1_イボ12 = pars["イボ12"].ToPar();
-    		X0Y1_イボ13 = pars["イボ13"].ToPar();
-    		X0Y1_イボ14 = pars["イボ14"].ToPar();
-    		X0Y1_イボ15 = pars["イボ15"].ToPar();
-    		X0Y1_イボ16 = pars["イボ16"].ToPar();
-    		X0Y1_イボ17 = pars["イボ17"].ToPar();
-    		pars2 = pars["ユニット"].ToPars();
+    		partGroup = Body[0][1];
+    		X0Y1_ヘッド = partGroup["ヘッド"].ToPar();
+    		X0Y1_イボ1 = partGroup["イボ1"].ToPar();
+    		X0Y1_イボ2 = partGroup["イボ2"].ToPar();
+    		X0Y1_イボ3 = partGroup["イボ3"].ToPar();
+    		X0Y1_イボ4 = partGroup["イボ4"].ToPar();
+    		X0Y1_イボ5 = partGroup["イボ5"].ToPar();
+    		X0Y1_イボ6 = partGroup["イボ6"].ToPar();
+    		X0Y1_イボ7 = partGroup["イボ7"].ToPar();
+    		X0Y1_イボ8 = partGroup["イボ8"].ToPar();
+    		X0Y1_イボ9 = partGroup["イボ9"].ToPar();
+    		X0Y1_イボ10 = partGroup["イボ10"].ToPar();
+    		X0Y1_イボ11 = partGroup["イボ11"].ToPar();
+    		X0Y1_イボ12 = partGroup["イボ12"].ToPar();
+    		X0Y1_イボ13 = partGroup["イボ13"].ToPar();
+    		X0Y1_イボ14 = partGroup["イボ14"].ToPar();
+    		X0Y1_イボ15 = partGroup["イボ15"].ToPar();
+    		X0Y1_イボ16 = partGroup["イボ16"].ToPar();
+    		X0Y1_イボ17 = partGroup["イボ17"].ToPar();
+    		pars2 = partGroup["ユニット"].ToPars();
     		X0Y1_ユニット_ユニット = pars2["ユニット"].ToPar();
     		X0Y1_ユニット_ユニット線上 = pars2["ユニット線上"].ToPar();
     		X0Y1_ユニット_ユニット線下 = pars2["ユニット線下"].ToPar();
@@ -2708,21 +2708,21 @@ namespace SlaveMatrix
     		X0Y1_ユニット_パワー2 = pars2["パワー2"].ToPar();
     		X0Y1_ユニット_パワー3 = pars2["パワー3"].ToPar();
     		X0Y1_ユニット_パワー4 = pars2["パワー4"].ToPar();
-    		pars = Body[0][2];
-    		X0Y2_ヘッド = pars["ヘッド"].ToPar();
-    		X0Y2_イボ1 = pars["イボ1"].ToPar();
-    		X0Y2_イボ2 = pars["イボ2"].ToPar();
-    		X0Y2_イボ3 = pars["イボ3"].ToPar();
-    		X0Y2_イボ4 = pars["イボ4"].ToPar();
-    		X0Y2_イボ5 = pars["イボ5"].ToPar();
-    		X0Y2_イボ6 = pars["イボ6"].ToPar();
-    		X0Y2_イボ7 = pars["イボ7"].ToPar();
-    		X0Y2_イボ8 = pars["イボ8"].ToPar();
-    		X0Y2_イボ9 = pars["イボ9"].ToPar();
-    		X0Y2_イボ10 = pars["イボ10"].ToPar();
-    		X0Y2_イボ11 = pars["イボ11"].ToPar();
-    		X0Y2_イボ12 = pars["イボ12"].ToPar();
-    		pars2 = pars["ユニット"].ToPars();
+    		partGroup = Body[0][2];
+    		X0Y2_ヘッド = partGroup["ヘッド"].ToPar();
+    		X0Y2_イボ1 = partGroup["イボ1"].ToPar();
+    		X0Y2_イボ2 = partGroup["イボ2"].ToPar();
+    		X0Y2_イボ3 = partGroup["イボ3"].ToPar();
+    		X0Y2_イボ4 = partGroup["イボ4"].ToPar();
+    		X0Y2_イボ5 = partGroup["イボ5"].ToPar();
+    		X0Y2_イボ6 = partGroup["イボ6"].ToPar();
+    		X0Y2_イボ7 = partGroup["イボ7"].ToPar();
+    		X0Y2_イボ8 = partGroup["イボ8"].ToPar();
+    		X0Y2_イボ9 = partGroup["イボ9"].ToPar();
+    		X0Y2_イボ10 = partGroup["イボ10"].ToPar();
+    		X0Y2_イボ11 = partGroup["イボ11"].ToPar();
+    		X0Y2_イボ12 = partGroup["イボ12"].ToPar();
+    		pars2 = partGroup["ユニット"].ToPars();
     		X0Y2_ユニット_ユニット = pars2["ユニット"].ToPar();
     		X0Y2_ユニット_ユニット線上 = pars2["ユニット線上"].ToPar();
     		X0Y2_ユニット_ユニット線下 = pars2["ユニット線下"].ToPar();
@@ -2733,16 +2733,16 @@ namespace SlaveMatrix
     		X0Y2_ユニット_パワー2 = pars2["パワー2"].ToPar();
     		X0Y2_ユニット_パワー3 = pars2["パワー3"].ToPar();
     		X0Y2_ユニット_パワー4 = pars2["パワー4"].ToPar();
-    		pars = Body[0][3];
-    		X0Y3_ヘッド = pars["ヘッド"].ToPar();
-    		X0Y3_イボ1 = pars["イボ1"].ToPar();
-    		X0Y3_イボ2 = pars["イボ2"].ToPar();
-    		X0Y3_イボ3 = pars["イボ3"].ToPar();
-    		X0Y3_イボ4 = pars["イボ4"].ToPar();
-    		X0Y3_イボ5 = pars["イボ5"].ToPar();
-    		X0Y3_イボ6 = pars["イボ6"].ToPar();
-    		X0Y3_イボ7 = pars["イボ7"].ToPar();
-    		pars2 = pars["ユニット"].ToPars();
+    		partGroup = Body[0][3];
+    		X0Y3_ヘッド = partGroup["ヘッド"].ToPar();
+    		X0Y3_イボ1 = partGroup["イボ1"].ToPar();
+    		X0Y3_イボ2 = partGroup["イボ2"].ToPar();
+    		X0Y3_イボ3 = partGroup["イボ3"].ToPar();
+    		X0Y3_イボ4 = partGroup["イボ4"].ToPar();
+    		X0Y3_イボ5 = partGroup["イボ5"].ToPar();
+    		X0Y3_イボ6 = partGroup["イボ6"].ToPar();
+    		X0Y3_イボ7 = partGroup["イボ7"].ToPar();
+    		pars2 = partGroup["ユニット"].ToPars();
     		X0Y3_ユニット_ユニット = pars2["ユニット"].ToPar();
     		X0Y3_ユニット_ユニット線上 = pars2["ユニット線上"].ToPar();
     		X0Y3_ユニット_ユニット線下 = pars2["ユニット線下"].ToPar();
@@ -2753,12 +2753,12 @@ namespace SlaveMatrix
     		X0Y3_ユニット_パワー2 = pars2["パワー2"].ToPar();
     		X0Y3_ユニット_パワー3 = pars2["パワー3"].ToPar();
     		X0Y3_ユニット_パワー4 = pars2["パワー4"].ToPar();
-    		pars = Body[0][4];
-    		X0Y4_ヘッド = pars["ヘッド"].ToPar();
-    		X0Y4_イボ1 = pars["イボ1"].ToPar();
-    		X0Y4_イボ2 = pars["イボ2"].ToPar();
-    		X0Y4_イボ3 = pars["イボ3"].ToPar();
-    		pars2 = pars["ユニット"].ToPars();
+    		partGroup = Body[0][4];
+    		X0Y4_ヘッド = partGroup["ヘッド"].ToPar();
+    		X0Y4_イボ1 = partGroup["イボ1"].ToPar();
+    		X0Y4_イボ2 = partGroup["イボ2"].ToPar();
+    		X0Y4_イボ3 = partGroup["イボ3"].ToPar();
+    		pars2 = partGroup["ユニット"].ToPars();
     		X0Y4_ユニット_ユニット = pars2["ユニット"].ToPar();
     		X0Y4_ユニット_ユニット線上 = pars2["ユニット線上"].ToPar();
     		X0Y4_ユニット_ユニット線下 = pars2["ユニット線下"].ToPar();
@@ -2769,28 +2769,28 @@ namespace SlaveMatrix
     		X0Y4_ユニット_パワー2 = pars2["パワー2"].ToPar();
     		X0Y4_ユニット_パワー3 = pars2["パワー3"].ToPar();
     		X0Y4_ユニット_パワー4 = pars2["パワー4"].ToPar();
-    		pars = Body[1][0];
-    		X1Y0_ヘッド = pars["ヘッド"].ToPar();
-    		X1Y0_イボ1 = pars["イボ1"].ToPar();
-    		X1Y0_イボ2 = pars["イボ2"].ToPar();
-    		X1Y0_イボ3 = pars["イボ3"].ToPar();
-    		X1Y0_イボ4 = pars["イボ4"].ToPar();
-    		X1Y0_イボ5 = pars["イボ5"].ToPar();
-    		X1Y0_イボ6 = pars["イボ6"].ToPar();
-    		X1Y0_イボ7 = pars["イボ7"].ToPar();
-    		X1Y0_イボ8 = pars["イボ8"].ToPar();
-    		X1Y0_イボ9 = pars["イボ9"].ToPar();
-    		X1Y0_イボ10 = pars["イボ10"].ToPar();
-    		X1Y0_イボ11 = pars["イボ11"].ToPar();
-    		X1Y0_イボ12 = pars["イボ12"].ToPar();
-    		X1Y0_イボ13 = pars["イボ13"].ToPar();
-    		X1Y0_イボ14 = pars["イボ14"].ToPar();
-    		X1Y0_イボ15 = pars["イボ15"].ToPar();
-    		X1Y0_イボ16 = pars["イボ16"].ToPar();
-    		X1Y0_イボ17 = pars["イボ17"].ToPar();
-    		X1Y0_イボ18 = pars["イボ18"].ToPar();
-    		X1Y0_イボ19 = pars["イボ19"].ToPar();
-    		pars2 = pars["ユニット"].ToPars();
+    		partGroup = Body[1][0];
+    		X1Y0_ヘッド = partGroup["ヘッド"].ToPar();
+    		X1Y0_イボ1 = partGroup["イボ1"].ToPar();
+    		X1Y0_イボ2 = partGroup["イボ2"].ToPar();
+    		X1Y0_イボ3 = partGroup["イボ3"].ToPar();
+    		X1Y0_イボ4 = partGroup["イボ4"].ToPar();
+    		X1Y0_イボ5 = partGroup["イボ5"].ToPar();
+    		X1Y0_イボ6 = partGroup["イボ6"].ToPar();
+    		X1Y0_イボ7 = partGroup["イボ7"].ToPar();
+    		X1Y0_イボ8 = partGroup["イボ8"].ToPar();
+    		X1Y0_イボ9 = partGroup["イボ9"].ToPar();
+    		X1Y0_イボ10 = partGroup["イボ10"].ToPar();
+    		X1Y0_イボ11 = partGroup["イボ11"].ToPar();
+    		X1Y0_イボ12 = partGroup["イボ12"].ToPar();
+    		X1Y0_イボ13 = partGroup["イボ13"].ToPar();
+    		X1Y0_イボ14 = partGroup["イボ14"].ToPar();
+    		X1Y0_イボ15 = partGroup["イボ15"].ToPar();
+    		X1Y0_イボ16 = partGroup["イボ16"].ToPar();
+    		X1Y0_イボ17 = partGroup["イボ17"].ToPar();
+    		X1Y0_イボ18 = partGroup["イボ18"].ToPar();
+    		X1Y0_イボ19 = partGroup["イボ19"].ToPar();
+    		pars2 = partGroup["ユニット"].ToPars();
     		X1Y0_ユニット_ユニット = pars2["ユニット"].ToPar();
     		X1Y0_ユニット_ユニット線上 = pars2["ユニット線上"].ToPar();
     		X1Y0_ユニット_ユニット線下 = pars2["ユニット線下"].ToPar();
@@ -2801,26 +2801,26 @@ namespace SlaveMatrix
     		X1Y0_ユニット_パワー2 = pars2["パワー2"].ToPar();
     		X1Y0_ユニット_パワー3 = pars2["パワー3"].ToPar();
     		X1Y0_ユニット_パワー4 = pars2["パワー4"].ToPar();
-    		pars = Body[1][1];
-    		X1Y1_ヘッド = pars["ヘッド"].ToPar();
-    		X1Y1_イボ1 = pars["イボ1"].ToPar();
-    		X1Y1_イボ2 = pars["イボ2"].ToPar();
-    		X1Y1_イボ3 = pars["イボ3"].ToPar();
-    		X1Y1_イボ4 = pars["イボ4"].ToPar();
-    		X1Y1_イボ5 = pars["イボ5"].ToPar();
-    		X1Y1_イボ6 = pars["イボ6"].ToPar();
-    		X1Y1_イボ7 = pars["イボ7"].ToPar();
-    		X1Y1_イボ8 = pars["イボ8"].ToPar();
-    		X1Y1_イボ9 = pars["イボ9"].ToPar();
-    		X1Y1_イボ10 = pars["イボ10"].ToPar();
-    		X1Y1_イボ11 = pars["イボ11"].ToPar();
-    		X1Y1_イボ12 = pars["イボ12"].ToPar();
-    		X1Y1_イボ13 = pars["イボ13"].ToPar();
-    		X1Y1_イボ14 = pars["イボ14"].ToPar();
-    		X1Y1_イボ15 = pars["イボ15"].ToPar();
-    		X1Y1_イボ16 = pars["イボ16"].ToPar();
-    		X1Y1_イボ17 = pars["イボ17"].ToPar();
-    		pars2 = pars["ユニット"].ToPars();
+    		partGroup = Body[1][1];
+    		X1Y1_ヘッド = partGroup["ヘッド"].ToPar();
+    		X1Y1_イボ1 = partGroup["イボ1"].ToPar();
+    		X1Y1_イボ2 = partGroup["イボ2"].ToPar();
+    		X1Y1_イボ3 = partGroup["イボ3"].ToPar();
+    		X1Y1_イボ4 = partGroup["イボ4"].ToPar();
+    		X1Y1_イボ5 = partGroup["イボ5"].ToPar();
+    		X1Y1_イボ6 = partGroup["イボ6"].ToPar();
+    		X1Y1_イボ7 = partGroup["イボ7"].ToPar();
+    		X1Y1_イボ8 = partGroup["イボ8"].ToPar();
+    		X1Y1_イボ9 = partGroup["イボ9"].ToPar();
+    		X1Y1_イボ10 = partGroup["イボ10"].ToPar();
+    		X1Y1_イボ11 = partGroup["イボ11"].ToPar();
+    		X1Y1_イボ12 = partGroup["イボ12"].ToPar();
+    		X1Y1_イボ13 = partGroup["イボ13"].ToPar();
+    		X1Y1_イボ14 = partGroup["イボ14"].ToPar();
+    		X1Y1_イボ15 = partGroup["イボ15"].ToPar();
+    		X1Y1_イボ16 = partGroup["イボ16"].ToPar();
+    		X1Y1_イボ17 = partGroup["イボ17"].ToPar();
+    		pars2 = partGroup["ユニット"].ToPars();
     		X1Y1_ユニット_ユニット = pars2["ユニット"].ToPar();
     		X1Y1_ユニット_ユニット線上 = pars2["ユニット線上"].ToPar();
     		X1Y1_ユニット_ユニット線下 = pars2["ユニット線下"].ToPar();
@@ -2831,22 +2831,22 @@ namespace SlaveMatrix
     		X1Y1_ユニット_パワー2 = pars2["パワー2"].ToPar();
     		X1Y1_ユニット_パワー3 = pars2["パワー3"].ToPar();
     		X1Y1_ユニット_パワー4 = pars2["パワー4"].ToPar();
-    		pars = Body[1][2];
-    		X1Y2_ヘッド = pars["ヘッド"].ToPar();
-    		X1Y2_イボ1 = pars["イボ1"].ToPar();
-    		X1Y2_イボ2 = pars["イボ2"].ToPar();
-    		X1Y2_イボ3 = pars["イボ3"].ToPar();
-    		X1Y2_イボ4 = pars["イボ4"].ToPar();
-    		X1Y2_イボ5 = pars["イボ5"].ToPar();
-    		X1Y2_イボ6 = pars["イボ6"].ToPar();
-    		X1Y2_イボ7 = pars["イボ7"].ToPar();
-    		X1Y2_イボ8 = pars["イボ8"].ToPar();
-    		X1Y2_イボ9 = pars["イボ9"].ToPar();
-    		X1Y2_イボ10 = pars["イボ10"].ToPar();
-    		X1Y2_イボ11 = pars["イボ11"].ToPar();
-    		X1Y2_イボ12 = pars["イボ12"].ToPar();
-    		X1Y2_イボ13 = pars["イボ13"].ToPar();
-    		pars2 = pars["ユニット"].ToPars();
+    		partGroup = Body[1][2];
+    		X1Y2_ヘッド = partGroup["ヘッド"].ToPar();
+    		X1Y2_イボ1 = partGroup["イボ1"].ToPar();
+    		X1Y2_イボ2 = partGroup["イボ2"].ToPar();
+    		X1Y2_イボ3 = partGroup["イボ3"].ToPar();
+    		X1Y2_イボ4 = partGroup["イボ4"].ToPar();
+    		X1Y2_イボ5 = partGroup["イボ5"].ToPar();
+    		X1Y2_イボ6 = partGroup["イボ6"].ToPar();
+    		X1Y2_イボ7 = partGroup["イボ7"].ToPar();
+    		X1Y2_イボ8 = partGroup["イボ8"].ToPar();
+    		X1Y2_イボ9 = partGroup["イボ9"].ToPar();
+    		X1Y2_イボ10 = partGroup["イボ10"].ToPar();
+    		X1Y2_イボ11 = partGroup["イボ11"].ToPar();
+    		X1Y2_イボ12 = partGroup["イボ12"].ToPar();
+    		X1Y2_イボ13 = partGroup["イボ13"].ToPar();
+    		pars2 = partGroup["ユニット"].ToPars();
     		X1Y2_ユニット_ユニット = pars2["ユニット"].ToPar();
     		X1Y2_ユニット_ユニット線上 = pars2["ユニット線上"].ToPar();
     		X1Y2_ユニット_ユニット線下 = pars2["ユニット線下"].ToPar();
@@ -2857,17 +2857,17 @@ namespace SlaveMatrix
     		X1Y2_ユニット_パワー2 = pars2["パワー2"].ToPar();
     		X1Y2_ユニット_パワー3 = pars2["パワー3"].ToPar();
     		X1Y2_ユニット_パワー4 = pars2["パワー4"].ToPar();
-    		pars = Body[1][3];
-    		X1Y3_ヘッド = pars["ヘッド"].ToPar();
-    		X1Y3_イボ1 = pars["イボ1"].ToPar();
-    		X1Y3_イボ2 = pars["イボ2"].ToPar();
-    		X1Y3_イボ3 = pars["イボ3"].ToPar();
-    		X1Y3_イボ4 = pars["イボ4"].ToPar();
-    		X1Y3_イボ5 = pars["イボ5"].ToPar();
-    		X1Y3_イボ6 = pars["イボ6"].ToPar();
-    		X1Y3_イボ7 = pars["イボ7"].ToPar();
-    		X1Y3_イボ8 = pars["イボ8"].ToPar();
-    		pars2 = pars["ユニット"].ToPars();
+    		partGroup = Body[1][3];
+    		X1Y3_ヘッド = partGroup["ヘッド"].ToPar();
+    		X1Y3_イボ1 = partGroup["イボ1"].ToPar();
+    		X1Y3_イボ2 = partGroup["イボ2"].ToPar();
+    		X1Y3_イボ3 = partGroup["イボ3"].ToPar();
+    		X1Y3_イボ4 = partGroup["イボ4"].ToPar();
+    		X1Y3_イボ5 = partGroup["イボ5"].ToPar();
+    		X1Y3_イボ6 = partGroup["イボ6"].ToPar();
+    		X1Y3_イボ7 = partGroup["イボ7"].ToPar();
+    		X1Y3_イボ8 = partGroup["イボ8"].ToPar();
+    		pars2 = partGroup["ユニット"].ToPars();
     		X1Y3_ユニット_ユニット = pars2["ユニット"].ToPar();
     		X1Y3_ユニット_ユニット線上 = pars2["ユニット線上"].ToPar();
     		X1Y3_ユニット_ユニット線下 = pars2["ユニット線下"].ToPar();
@@ -2878,12 +2878,12 @@ namespace SlaveMatrix
     		X1Y3_ユニット_パワー2 = pars2["パワー2"].ToPar();
     		X1Y3_ユニット_パワー3 = pars2["パワー3"].ToPar();
     		X1Y3_ユニット_パワー4 = pars2["パワー4"].ToPar();
-    		pars = Body[1][4];
-    		X1Y4_ヘッド = pars["ヘッド"].ToPar();
-    		X1Y4_イボ1 = pars["イボ1"].ToPar();
-    		X1Y4_イボ2 = pars["イボ2"].ToPar();
-    		X1Y4_イボ3 = pars["イボ3"].ToPar();
-    		pars2 = pars["ユニット"].ToPars();
+    		partGroup = Body[1][4];
+    		X1Y4_ヘッド = partGroup["ヘッド"].ToPar();
+    		X1Y4_イボ1 = partGroup["イボ1"].ToPar();
+    		X1Y4_イボ2 = partGroup["イボ2"].ToPar();
+    		X1Y4_イボ3 = partGroup["イボ3"].ToPar();
+    		pars2 = partGroup["ユニット"].ToPars();
     		X1Y4_ユニット_ユニット = pars2["ユニット"].ToPar();
     		X1Y4_ユニット_ユニット線上 = pars2["ユニット線上"].ToPar();
     		X1Y4_ユニット_ユニット線下 = pars2["ユニット線下"].ToPar();
@@ -2894,30 +2894,30 @@ namespace SlaveMatrix
     		X1Y4_ユニット_パワー2 = pars2["パワー2"].ToPar();
     		X1Y4_ユニット_パワー3 = pars2["パワー3"].ToPar();
     		X1Y4_ユニット_パワー4 = pars2["パワー4"].ToPar();
-    		pars = Body[2][0];
-    		X2Y0_ヘッド = pars["ヘッド"].ToPar();
-    		X2Y0_イボ1 = pars["イボ1"].ToPar();
-    		X2Y0_イボ2 = pars["イボ2"].ToPar();
-    		X2Y0_イボ3 = pars["イボ3"].ToPar();
-    		X2Y0_イボ4 = pars["イボ4"].ToPar();
-    		X2Y0_イボ5 = pars["イボ5"].ToPar();
-    		X2Y0_イボ6 = pars["イボ6"].ToPar();
-    		X2Y0_イボ7 = pars["イボ7"].ToPar();
-    		X2Y0_イボ8 = pars["イボ8"].ToPar();
-    		X2Y0_イボ9 = pars["イボ9"].ToPar();
-    		X2Y0_イボ10 = pars["イボ10"].ToPar();
-    		X2Y0_イボ11 = pars["イボ11"].ToPar();
-    		X2Y0_イボ12 = pars["イボ12"].ToPar();
-    		X2Y0_イボ13 = pars["イボ13"].ToPar();
-    		X2Y0_イボ14 = pars["イボ14"].ToPar();
-    		X2Y0_イボ15 = pars["イボ15"].ToPar();
-    		X2Y0_イボ16 = pars["イボ16"].ToPar();
-    		X2Y0_イボ17 = pars["イボ17"].ToPar();
-    		X2Y0_イボ18 = pars["イボ18"].ToPar();
-    		X2Y0_イボ19 = pars["イボ19"].ToPar();
-    		X2Y0_イボ20 = pars["イボ20"].ToPar();
-    		X2Y0_イボ21 = pars["イボ21"].ToPar();
-    		pars2 = pars["ユニット"].ToPars();
+    		partGroup = Body[2][0];
+    		X2Y0_ヘッド = partGroup["ヘッド"].ToPar();
+    		X2Y0_イボ1 = partGroup["イボ1"].ToPar();
+    		X2Y0_イボ2 = partGroup["イボ2"].ToPar();
+    		X2Y0_イボ3 = partGroup["イボ3"].ToPar();
+    		X2Y0_イボ4 = partGroup["イボ4"].ToPar();
+    		X2Y0_イボ5 = partGroup["イボ5"].ToPar();
+    		X2Y0_イボ6 = partGroup["イボ6"].ToPar();
+    		X2Y0_イボ7 = partGroup["イボ7"].ToPar();
+    		X2Y0_イボ8 = partGroup["イボ8"].ToPar();
+    		X2Y0_イボ9 = partGroup["イボ9"].ToPar();
+    		X2Y0_イボ10 = partGroup["イボ10"].ToPar();
+    		X2Y0_イボ11 = partGroup["イボ11"].ToPar();
+    		X2Y0_イボ12 = partGroup["イボ12"].ToPar();
+    		X2Y0_イボ13 = partGroup["イボ13"].ToPar();
+    		X2Y0_イボ14 = partGroup["イボ14"].ToPar();
+    		X2Y0_イボ15 = partGroup["イボ15"].ToPar();
+    		X2Y0_イボ16 = partGroup["イボ16"].ToPar();
+    		X2Y0_イボ17 = partGroup["イボ17"].ToPar();
+    		X2Y0_イボ18 = partGroup["イボ18"].ToPar();
+    		X2Y0_イボ19 = partGroup["イボ19"].ToPar();
+    		X2Y0_イボ20 = partGroup["イボ20"].ToPar();
+    		X2Y0_イボ21 = partGroup["イボ21"].ToPar();
+    		pars2 = partGroup["ユニット"].ToPars();
     		X2Y0_ユニット_ユニット = pars2["ユニット"].ToPar();
     		X2Y0_ユニット_ユニット線上 = pars2["ユニット線上"].ToPar();
     		X2Y0_ユニット_ユニット線下 = pars2["ユニット線下"].ToPar();
@@ -2928,28 +2928,28 @@ namespace SlaveMatrix
     		X2Y0_ユニット_パワー2 = pars2["パワー2"].ToPar();
     		X2Y0_ユニット_パワー3 = pars2["パワー3"].ToPar();
     		X2Y0_ユニット_パワー4 = pars2["パワー4"].ToPar();
-    		pars = Body[2][1];
-    		X2Y1_ヘッド = pars["ヘッド"].ToPar();
-    		X2Y1_イボ1 = pars["イボ1"].ToPar();
-    		X2Y1_イボ2 = pars["イボ2"].ToPar();
-    		X2Y1_イボ3 = pars["イボ3"].ToPar();
-    		X2Y1_イボ4 = pars["イボ4"].ToPar();
-    		X2Y1_イボ5 = pars["イボ5"].ToPar();
-    		X2Y1_イボ6 = pars["イボ6"].ToPar();
-    		X2Y1_イボ7 = pars["イボ7"].ToPar();
-    		X2Y1_イボ8 = pars["イボ8"].ToPar();
-    		X2Y1_イボ9 = pars["イボ9"].ToPar();
-    		X2Y1_イボ10 = pars["イボ10"].ToPar();
-    		X2Y1_イボ11 = pars["イボ11"].ToPar();
-    		X2Y1_イボ12 = pars["イボ12"].ToPar();
-    		X2Y1_イボ13 = pars["イボ13"].ToPar();
-    		X2Y1_イボ14 = pars["イボ14"].ToPar();
-    		X2Y1_イボ15 = pars["イボ15"].ToPar();
-    		X2Y1_イボ16 = pars["イボ16"].ToPar();
-    		X2Y1_イボ17 = pars["イボ17"].ToPar();
-    		X2Y1_イボ18 = pars["イボ18"].ToPar();
-    		X2Y1_イボ19 = pars["イボ19"].ToPar();
-    		pars2 = pars["ユニット"].ToPars();
+    		partGroup = Body[2][1];
+    		X2Y1_ヘッド = partGroup["ヘッド"].ToPar();
+    		X2Y1_イボ1 = partGroup["イボ1"].ToPar();
+    		X2Y1_イボ2 = partGroup["イボ2"].ToPar();
+    		X2Y1_イボ3 = partGroup["イボ3"].ToPar();
+    		X2Y1_イボ4 = partGroup["イボ4"].ToPar();
+    		X2Y1_イボ5 = partGroup["イボ5"].ToPar();
+    		X2Y1_イボ6 = partGroup["イボ6"].ToPar();
+    		X2Y1_イボ7 = partGroup["イボ7"].ToPar();
+    		X2Y1_イボ8 = partGroup["イボ8"].ToPar();
+    		X2Y1_イボ9 = partGroup["イボ9"].ToPar();
+    		X2Y1_イボ10 = partGroup["イボ10"].ToPar();
+    		X2Y1_イボ11 = partGroup["イボ11"].ToPar();
+    		X2Y1_イボ12 = partGroup["イボ12"].ToPar();
+    		X2Y1_イボ13 = partGroup["イボ13"].ToPar();
+    		X2Y1_イボ14 = partGroup["イボ14"].ToPar();
+    		X2Y1_イボ15 = partGroup["イボ15"].ToPar();
+    		X2Y1_イボ16 = partGroup["イボ16"].ToPar();
+    		X2Y1_イボ17 = partGroup["イボ17"].ToPar();
+    		X2Y1_イボ18 = partGroup["イボ18"].ToPar();
+    		X2Y1_イボ19 = partGroup["イボ19"].ToPar();
+    		pars2 = partGroup["ユニット"].ToPars();
     		X2Y1_ユニット_ユニット = pars2["ユニット"].ToPar();
     		X2Y1_ユニット_ユニット線上 = pars2["ユニット線上"].ToPar();
     		X2Y1_ユニット_ユニット線下 = pars2["ユニット線下"].ToPar();
@@ -2960,23 +2960,23 @@ namespace SlaveMatrix
     		X2Y1_ユニット_パワー2 = pars2["パワー2"].ToPar();
     		X2Y1_ユニット_パワー3 = pars2["パワー3"].ToPar();
     		X2Y1_ユニット_パワー4 = pars2["パワー4"].ToPar();
-    		pars = Body[2][2];
-    		X2Y2_ヘッド = pars["ヘッド"].ToPar();
-    		X2Y2_イボ1 = pars["イボ1"].ToPar();
-    		X2Y2_イボ2 = pars["イボ2"].ToPar();
-    		X2Y2_イボ3 = pars["イボ3"].ToPar();
-    		X2Y2_イボ4 = pars["イボ4"].ToPar();
-    		X2Y2_イボ5 = pars["イボ5"].ToPar();
-    		X2Y2_イボ6 = pars["イボ6"].ToPar();
-    		X2Y2_イボ7 = pars["イボ7"].ToPar();
-    		X2Y2_イボ8 = pars["イボ8"].ToPar();
-    		X2Y2_イボ9 = pars["イボ9"].ToPar();
-    		X2Y2_イボ10 = pars["イボ10"].ToPar();
-    		X2Y2_イボ11 = pars["イボ11"].ToPar();
-    		X2Y2_イボ12 = pars["イボ12"].ToPar();
-    		X2Y2_イボ13 = pars["イボ13"].ToPar();
-    		X2Y2_イボ14 = pars["イボ14"].ToPar();
-    		pars2 = pars["ユニット"].ToPars();
+    		partGroup = Body[2][2];
+    		X2Y2_ヘッド = partGroup["ヘッド"].ToPar();
+    		X2Y2_イボ1 = partGroup["イボ1"].ToPar();
+    		X2Y2_イボ2 = partGroup["イボ2"].ToPar();
+    		X2Y2_イボ3 = partGroup["イボ3"].ToPar();
+    		X2Y2_イボ4 = partGroup["イボ4"].ToPar();
+    		X2Y2_イボ5 = partGroup["イボ5"].ToPar();
+    		X2Y2_イボ6 = partGroup["イボ6"].ToPar();
+    		X2Y2_イボ7 = partGroup["イボ7"].ToPar();
+    		X2Y2_イボ8 = partGroup["イボ8"].ToPar();
+    		X2Y2_イボ9 = partGroup["イボ9"].ToPar();
+    		X2Y2_イボ10 = partGroup["イボ10"].ToPar();
+    		X2Y2_イボ11 = partGroup["イボ11"].ToPar();
+    		X2Y2_イボ12 = partGroup["イボ12"].ToPar();
+    		X2Y2_イボ13 = partGroup["イボ13"].ToPar();
+    		X2Y2_イボ14 = partGroup["イボ14"].ToPar();
+    		pars2 = partGroup["ユニット"].ToPars();
     		X2Y2_ユニット_ユニット = pars2["ユニット"].ToPar();
     		X2Y2_ユニット_ユニット線上 = pars2["ユニット線上"].ToPar();
     		X2Y2_ユニット_ユニット線下 = pars2["ユニット線下"].ToPar();
@@ -2987,19 +2987,19 @@ namespace SlaveMatrix
     		X2Y2_ユニット_パワー2 = pars2["パワー2"].ToPar();
     		X2Y2_ユニット_パワー3 = pars2["パワー3"].ToPar();
     		X2Y2_ユニット_パワー4 = pars2["パワー4"].ToPar();
-    		pars = Body[2][3];
-    		X2Y3_ヘッド = pars["ヘッド"].ToPar();
-    		X2Y3_イボ1 = pars["イボ1"].ToPar();
-    		X2Y3_イボ2 = pars["イボ2"].ToPar();
-    		X2Y3_イボ3 = pars["イボ3"].ToPar();
-    		X2Y3_イボ4 = pars["イボ4"].ToPar();
-    		X2Y3_イボ5 = pars["イボ5"].ToPar();
-    		X2Y3_イボ6 = pars["イボ6"].ToPar();
-    		X2Y3_イボ7 = pars["イボ7"].ToPar();
-    		X2Y3_イボ8 = pars["イボ8"].ToPar();
-    		X2Y3_イボ9 = pars["イボ9"].ToPar();
-    		X2Y3_イボ10 = pars["イボ10"].ToPar();
-    		pars2 = pars["ユニット"].ToPars();
+    		partGroup = Body[2][3];
+    		X2Y3_ヘッド = partGroup["ヘッド"].ToPar();
+    		X2Y3_イボ1 = partGroup["イボ1"].ToPar();
+    		X2Y3_イボ2 = partGroup["イボ2"].ToPar();
+    		X2Y3_イボ3 = partGroup["イボ3"].ToPar();
+    		X2Y3_イボ4 = partGroup["イボ4"].ToPar();
+    		X2Y3_イボ5 = partGroup["イボ5"].ToPar();
+    		X2Y3_イボ6 = partGroup["イボ6"].ToPar();
+    		X2Y3_イボ7 = partGroup["イボ7"].ToPar();
+    		X2Y3_イボ8 = partGroup["イボ8"].ToPar();
+    		X2Y3_イボ9 = partGroup["イボ9"].ToPar();
+    		X2Y3_イボ10 = partGroup["イボ10"].ToPar();
+    		pars2 = partGroup["ユニット"].ToPars();
     		X2Y3_ユニット_ユニット = pars2["ユニット"].ToPar();
     		X2Y3_ユニット_ユニット線上 = pars2["ユニット線上"].ToPar();
     		X2Y3_ユニット_ユニット線下 = pars2["ユニット線下"].ToPar();
@@ -3010,13 +3010,13 @@ namespace SlaveMatrix
     		X2Y3_ユニット_パワー2 = pars2["パワー2"].ToPar();
     		X2Y3_ユニット_パワー3 = pars2["パワー3"].ToPar();
     		X2Y3_ユニット_パワー4 = pars2["パワー4"].ToPar();
-    		pars = Body[2][4];
-    		X2Y4_ヘッド = pars["ヘッド"].ToPar();
-    		X2Y4_イボ1 = pars["イボ1"].ToPar();
-    		X2Y4_イボ2 = pars["イボ2"].ToPar();
-    		X2Y4_イボ3 = pars["イボ3"].ToPar();
-    		X2Y4_イボ4 = pars["イボ4"].ToPar();
-    		pars2 = pars["ユニット"].ToPars();
+    		partGroup = Body[2][4];
+    		X2Y4_ヘッド = partGroup["ヘッド"].ToPar();
+    		X2Y4_イボ1 = partGroup["イボ1"].ToPar();
+    		X2Y4_イボ2 = partGroup["イボ2"].ToPar();
+    		X2Y4_イボ3 = partGroup["イボ3"].ToPar();
+    		X2Y4_イボ4 = partGroup["イボ4"].ToPar();
+    		pars2 = partGroup["ユニット"].ToPars();
     		X2Y4_ユニット_ユニット = pars2["ユニット"].ToPar();
     		X2Y4_ユニット_ユニット線上 = pars2["ユニット線上"].ToPar();
     		X2Y4_ユニット_ユニット線下 = pars2["ユニット線下"].ToPar();
@@ -3870,40 +3870,40 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		Col.GetGrad(ref Col.DarkMagenta, out var ret);
-    		ヘッドCD = new ColorD(ref Col.Black, ref ret);
-    		イボ1CD = new ColorD(ref Col.Black, ref ret);
-    		イボ2CD = new ColorD(ref Col.Black, ref ret);
-    		イボ3CD = new ColorD(ref Col.Black, ref ret);
-    		イボ4CD = new ColorD(ref Col.Black, ref ret);
-    		イボ5CD = new ColorD(ref Col.Black, ref ret);
-    		イボ6CD = new ColorD(ref Col.Black, ref ret);
-    		イボ7CD = new ColorD(ref Col.Black, ref ret);
-    		イボ8CD = new ColorD(ref Col.Black, ref ret);
-    		イボ9CD = new ColorD(ref Col.Black, ref ret);
-    		イボ10CD = new ColorD(ref Col.Black, ref ret);
-    		イボ11CD = new ColorD(ref Col.Black, ref ret);
-    		イボ12CD = new ColorD(ref Col.Black, ref ret);
-    		イボ13CD = new ColorD(ref Col.Black, ref ret);
-    		イボ14CD = new ColorD(ref Col.Black, ref ret);
-    		イボ15CD = new ColorD(ref Col.Black, ref ret);
-    		イボ16CD = new ColorD(ref Col.Black, ref ret);
-    		イボ17CD = new ColorD(ref Col.Black, ref ret);
-    		イボ18CD = new ColorD(ref Col.Black, ref ret);
-    		イボ19CD = new ColorD(ref Col.Black, ref ret);
-    		イボ20CD = new ColorD(ref Col.Black, ref ret);
-    		イボ21CD = new ColorD(ref Col.Black, ref ret);
-    		Col.GetGrad(ref Col.Silver, out ret);
-    		ユニット_ユニットCD = new ColorD(ref Col.Black, ref ret);
-    		ユニット_ユニット線上CD = new ColorD(ref Col.Black, ref ret);
-    		ユニット_ユニット線下CD = new ColorD(ref Col.Black, ref ret);
-    		ユニット_ボタン上CD = new ColorD(ref Col.Black, ref ret);
-    		ユニット_ボタン下CD = new ColorD(ref Col.Black, ref ret);
-    		ユニット_パワー根CD = new ColorD(ref Col.Black, ref ret);
-    		ユニット_パワー1CD = new ColorD(ref Col.Black, ref ret);
-    		ユニット_パワー2CD = new ColorD(ref Col.Black, ref ret);
-    		ユニット_パワー3CD = new ColorD(ref Col.Black, ref ret);
-    		ユニット_パワー4CD = new ColorD(ref Col.Black, ref ret);
+    		ColorHelper.GetGrad(ref ColorHelper.DarkMagenta, out var ret);
+    		ヘッドCD = new ColorD(ref ColorHelper.Black, ref ret);
+    		イボ1CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		イボ2CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		イボ3CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		イボ4CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		イボ5CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		イボ6CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		イボ7CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		イボ8CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		イボ9CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		イボ10CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		イボ11CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		イボ12CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		イボ13CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		イボ14CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		イボ15CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		イボ16CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		イボ17CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		イボ18CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		イボ19CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		イボ20CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		イボ21CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		ColorHelper.GetGrad(ref ColorHelper.Silver, out ret);
+    		ユニット_ユニットCD = new ColorD(ref ColorHelper.Black, ref ret);
+    		ユニット_ユニット線上CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		ユニット_ユニット線下CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		ユニット_ボタン上CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		ユニット_ボタン下CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		ユニット_パワー根CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		ユニット_パワー1CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		ユニット_パワー2CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		ユニット_パワー3CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		ユニット_パワー4CD = new ColorD(ref ColorHelper.Black, ref ret);
     	}
     }
 }

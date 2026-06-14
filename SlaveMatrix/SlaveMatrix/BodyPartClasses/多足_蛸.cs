@@ -6,19 +6,19 @@ namespace SlaveMatrix
 {
     public class 多足_蛸 : 半身
     {
-    	public Par X0Y0_Torso;
+    	public ShapePart X0Y0_Torso;
 
     	public ColorD TorsoCD;
 
     	public ColorP X0Y0_TorsoCP;
 
-    	public Ele[] 軟体外左_接続;
+    	public Element[] 軟体外左_接続;
 
-    	public Ele[] 軟体外右_接続;
+    	public Element[] 軟体外右_接続;
 
-    	public Ele[] 軟体内左_接続;
+    	public Element[] 軟体内左_接続;
 
-    	public Ele[] 軟体内右_接続;
+    	public Element[] 軟体内右_接続;
 
     	public override bool 欠損
     	{
@@ -105,14 +105,14 @@ namespace SlaveMatrix
     	{
     		多足_蛸 多足_蛸2 = this;
     		ThisType = GetType();
-    		Dif dif = new Dif();
-    		dif.Tag = "蛸";
-    		dif.Add(new Pars(Sta.半身["多足"][0][0]));
-    		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		X0Y0_Torso = pars["胴"].ToPar();
+    		MorphVariant morphVariant = new MorphVariant();
+    		morphVariant.Tag = "蛸";
+    		morphVariant.Add(new PartGroup(GlobalState.半身["多足"][0][0]));
+    		Body = new VariantGrid();
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_Torso = partGroup["胴"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;
@@ -145,10 +145,10 @@ namespace SlaveMatrix
     		{
     			表示 = false;
     		}
-    		Ele f;
+    		Element f;
     		if (e.軟体外左_接続.Count > 0)
     		{
-    			軟体外左_接続 = e.軟体外左_接続.Select(delegate(EleD g)
+    			軟体外左_接続 = e.軟体外左_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 多足_蛸2;
@@ -159,7 +159,7 @@ namespace SlaveMatrix
     		}
     		if (e.軟体外右_接続.Count > 0)
     		{
-    			軟体外右_接続 = e.軟体外右_接続.Select(delegate(EleD g)
+    			軟体外右_接続 = e.軟体外右_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 多足_蛸2;
@@ -170,7 +170,7 @@ namespace SlaveMatrix
     		}
     		if (e.軟体内左_接続.Count > 0)
     		{
-    			軟体内左_接続 = e.軟体内左_接続.Select(delegate(EleD g)
+    			軟体内左_接続 = e.軟体内左_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 多足_蛸2;
@@ -181,7 +181,7 @@ namespace SlaveMatrix
     		}
     		if (e.軟体内右_接続.Count > 0)
     		{
-    			軟体内右_接続 = e.軟体内右_接続.Select(delegate(EleD g)
+    			軟体内右_接続 = e.軟体内右_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 多足_蛸2;
@@ -222,17 +222,17 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		TorsoCD = new ColorD(ref Col.Black, ref 体配色.体0O);
+    		TorsoCD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
     	}
 
     	private void 配色T0(BodyColorSet 体配色)
     	{
-    		TorsoCD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		TorsoCD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
     	}
 
     	private void 配色T1(BodyColorSet 体配色)
     	{
-    		TorsoCD = new ColorD(ref Col.Black, ref 体配色.体0O);
+    		TorsoCD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
     	}
     }
 }

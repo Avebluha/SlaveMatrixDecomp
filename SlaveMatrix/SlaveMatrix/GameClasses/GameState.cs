@@ -45,7 +45,7 @@ namespace SlaveMatrix
 
     	public Unit TrainingTarget;
 
-    	public Unit[] Slaves = new Unit[Mods.MaxRoomNumber];
+    	public Unit[] Slaves = new Unit[ModuleRegistry.MaxRoomNumber];
 
     	public Unit 祝福;
 
@@ -144,7 +144,7 @@ namespace SlaveMatrix
 
     	public bool Is地下室一杯()
     	{
-    		return !Slaves.Take(Mods.MaxRoomNumber / 9 * フロア数).Any((Unit e) => e == null);
+    		return !Slaves.Take(ModuleRegistry.MaxRoomNumber / 9 * フロア数).Any((Unit e) => e == null);
     	}
 
     	public void Add地下室(Unit Unit)
@@ -157,7 +157,7 @@ namespace SlaveMatrix
     				break;
     			}
     		}
-    		if (Sta.AutoSort)
+    		if (GlobalState.AutoSort)
     		{
     			Array.Sort(Slaves, (Unit e1, Unit e2) => (e1 != null) ? ((e2 != null) ? e1.Race.CompareTo(e2.Race) : int.MinValue) : int.MaxValue);
     		}
@@ -178,7 +178,7 @@ namespace SlaveMatrix
     	{
     		Refresh = true;
     		/*
-    		Parallel.ForEach(Gen, Sta.po3, delegate(Generator g)
+    		Parallel.ForEach(Gen, GlobalState.po3, delegate(Generator g)
     		{
     			g.Refresh(3);
     		});*/
@@ -215,7 +215,7 @@ namespace SlaveMatrix
     	public void 地下室詰め()
     	{
     		Unit[] array = Slaves.Where((Unit e) => e != null).ToArray();
-    		for (int i = 0; i < Mods.MaxRoomNumber; i++)
+    		for (int i = 0; i < ModuleRegistry.MaxRoomNumber; i++)
     		{
     			if (array.Length > i)
     			{
@@ -255,7 +255,7 @@ namespace SlaveMatrix
     		需給初期化();
     		RepaymentStage = 0;
     		TrainingTarget = null;
-    		Slaves = new Unit[Mods.MaxRoomNumber];
+    		Slaves = new Unit[ModuleRegistry.MaxRoomNumber];
     		祝福 = null;
     		系統開放 = new bool[9] { true, true, false, false, false, false, false, false, false };
     		PurchasedTools = new bool[14];
@@ -284,321 +284,321 @@ namespace SlaveMatrix
     		{
     			{
     				GameText.サキュバス,
-    				NextNormal(RNG.XS, Mods.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.バイコーン,
-    				NextNormal(RNG.XS, Mods.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.ドワーフ,
-    				NextNormal(RNG.XS, Mods.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.アルラウネ,
-    				NextNormal(RNG.XS, Mods.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.スキュラ,
-    				NextNormal(RNG.XS, Mods.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.アラクネ,
-    				NextNormal(RNG.XS, Mods.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.ユニコーン,
-    				NextNormal(RNG.XS, Mods.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.エキドナ,
-    				NextNormal(RNG.XS, Mods.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.ムカデジョウロウ,
-    				NextNormal(RNG.XS, Mods.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.オールドスキュラ,
-    				NextNormal(RNG.XS, Mods.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.ドラゴニュート,
-    				NextNormal(RNG.XS, Mods.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.カッパ,
-    				NextNormal(RNG.XS, Mods.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.エルフ,
-    				NextNormal(RNG.XS, Mods.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.リザードマン,
-    				NextNormal(RNG.XS, Mods.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.オーグリス,
-    				NextNormal(RNG.XS, Mods.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.デビル,
-    				NextNormal(RNG.XS, Mods.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.オールドマーメイド,
-    				NextNormal(RNG.XS, Mods.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.ラミア,
-    				NextNormal(RNG.XS, Mods.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.シーラミア,
-    				NextNormal(RNG.XS, Mods.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.サイクロプス,
-    				NextNormal(RNG.XS, Mods.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.ミノタウロス,
-    				NextNormal(RNG.XS, Mods.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.エイリアン,
-    				NextNormal(RNG.XS, Mods.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.ゴルゴン,
-    				NextNormal(RNG.XS, Mods.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.ギルタブリル,
-    				NextNormal(RNG.XS, Mods.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.ウロボロス,
-    				NextNormal(RNG.XS, Mods.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.フェニックス,
-    				NextNormal(RNG.XS, Mods.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.ドラゴン,
-    				NextNormal(RNG.XS, Mods.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.リュウ,
-    				NextNormal(RNG.XS, Mods.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.リリン,
-    				NextNormal(RNG.XS, Mods.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.セイレーン,
-    				NextNormal(RNG.XS, Mods.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.ハルピュイア,
-    				NextNormal(RNG.XS, Mods.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.オノケンタウレ,
-    				NextNormal(RNG.XS, Mods.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.カプラケンタウレ,
-    				NextNormal(RNG.XS, Mods.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.チータケンタウレ,
-    				NextNormal(RNG.XS, Mods.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.エンジェル,
-    				NextNormal(RNG.XS, Mods.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.マーメイド,
-    				NextNormal(RNG.XS, Mods.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.ドルフィンマーメイド,
-    				NextNormal(RNG.XS, Mods.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.ウェアキャット,
-    				NextNormal(RNG.XS, Mods.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.ウェアウルフ,
-    				NextNormal(RNG.XS, Mods.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.ウェアフォックス,
-    				NextNormal(RNG.XS, Mods.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.ヒュドラ,
-    				NextNormal(RNG.XS, Mods.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.クラーケン,
-    				NextNormal(RNG.XS, Mods.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.ヒッポケンタウレ,
-    				NextNormal(RNG.XS, Mods.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.ブケンタウレ,
-    				NextNormal(RNG.XS, Mods.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.レオントケンタウレ,
-    				NextNormal(RNG.XS, Mods.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.ティグリスケンタウレ,
-    				NextNormal(RNG.XS, Mods.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.パンテーラケンタウレ,
-    				NextNormal(RNG.XS, Mods.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.イクテュオケンタウレ,
-    				NextNormal(RNG.XS, Mods.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.デルピヌスケンタウレ,
-    				NextNormal(RNG.XS, Mods.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.ギルタブルル,
-    				NextNormal(RNG.XS, Mods.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.スフィンクス,
-    				NextNormal(RNG.XS, Mods.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.ペガサス,
-    				NextNormal(RNG.XS, Mods.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.アリコーン,
-    				NextNormal(RNG.XS, Mods.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.キマイラ,
-    				NextNormal(RNG.XS, Mods.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.グリフォン,
-    				NextNormal(RNG.XS, Mods.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.ヒッポグリフ,
-    				NextNormal(RNG.XS, Mods.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.モノケロス,
-    				NextNormal(RNG.XS, Mods.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.カリュブディス,
-    				NextNormal(RNG.XS, Mods.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.ドラコケンタウレ,
-    				NextNormal(RNG.XS, Mods.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.カーバンクル,
-    				NextNormal(RNG.XS, Mods.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.スライム,
-    				NextNormal(RNG.XS, Mods.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.フェアリー,
-    				NextNormal(RNG.XS, Mods.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.ハーピー,
-    				NextNormal(RNG.XS, Mods.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.アフール,
-    				NextNormal(RNG.XS, Mods.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.ウェアマンティス,
-    				NextNormal(RNG.XS, Mods.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.ウェアドラゴンフライ,
-    				NextNormal(RNG.XS, Mods.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.カトブレパス,
-    				NextNormal(RNG.XS, Mods.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.バジリスク,
-    				NextNormal(RNG.XS, Mods.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.コカトリス,
-    				NextNormal(RNG.XS, Mods.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.ワーム,
-    				NextNormal(RNG.XS, Mods.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.ワイバーン,
-    				NextNormal(RNG.XS, Mods.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.ウェアビートル,
-    				NextNormal(RNG.XS, Mods.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.ウェアスタッグビートル,
-    				NextNormal(RNG.XS, Mods.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.サンドワーム,
-    				NextNormal(RNG.XS, Mods.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.ヴィオランテ,
-    				NextNormal(RNG.XS, Mods.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.ヒューマン,
-    				NextNormal(RNG.XS, Mods.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			},
     			{
     				GameText.ミックス,
-    				NextNormal(RNG.XS, Mods.DemandMax)
+    				NextNormal(Rng.XS, ModuleRegistry.DemandMax)
     			}
     		};
     	}
 
     	public void 需給更新()
     	{
-    		string[] array = Sta.GameData.需給.Keys.ToArray();
+    		string[] array = GlobalState.GameData.需給.Keys.ToArray();
     		foreach (string key in array)
     		{
-    			Sta.GameData.需給[key] = NextNormal(RNG.XS, Mods.DemandMax);
+    			GlobalState.GameData.需給[key] = NextNormal(Rng.XS, ModuleRegistry.DemandMax);
     		}
     	}
 

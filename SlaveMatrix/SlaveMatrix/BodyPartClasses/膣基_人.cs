@@ -4,7 +4,7 @@ namespace SlaveMatrix
 {
     public class 膣基_人 : 膣基
     {
-    	public Par X0Y0_膣基;
+    	public ShapePart X0Y0_膣基;
 
     	public ColorD 膣基CD;
 
@@ -86,9 +86,9 @@ namespace SlaveMatrix
     	public 膣基_人(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 膣基_人D e)
     	{
     		ThisType = GetType();
-    		Body = new Difs(Sta.胴体["膣基"]);
-    		Pars pars = Body[0][0];
-    		X0Y0_膣基 = pars["膣基"].ToPar();
+    		Body = new VariantGrid(GlobalState.胴体["膣基"]);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_膣基 = partGroup["膣基"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;
@@ -140,7 +140,7 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		Col.Alpha(ref 体配色.粘膜, 160, out var ret);
+    		ColorHelper.Alpha(ref 体配色.粘膜, 160, out var ret);
     		膣基CD = new ColorD(ref 体配色.粘膜線, ref ret);
     	}
     }

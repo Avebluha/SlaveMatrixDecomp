@@ -7,9 +7,9 @@ namespace SlaveMatrix
     public static class Sounds
     {
     	//TODO fix sound
-    	//public static _2DGAMELIB.SoundPlayer 日常BGM = new _2DGAMELIB.SoundPlayer(Sta.CurrentDirectory + "\\bgm\\game_maoudamashii_5_town10.wav", Loop: true);
+    	//public static _2DGAMELIB.SoundPlayer 日常BGM = new _2DGAMELIB.SoundPlayer(GlobalState.CurrentDirectory + "\\bgm\\game_maoudamashii_5_town10.wav", Loop: true);
 
-    	//public static _2DGAMELIB.SoundPlayer OPBGM = new _2DGAMELIB.SoundPlayer(Sta.CurrentDirectory + "\\bgm\\bgm_maoudamashii_neorock60.wav", Loop: true);
+    	//public static _2DGAMELIB.SoundPlayer OPBGM = new _2DGAMELIB.SoundPlayer(GlobalState.CurrentDirectory + "\\bgm\\bgm_maoudamashii_neorock60.wav", Loop: true);
 
     	//public static System.Media.SoundPlayer 操作 = new System.Media.SoundPlayer(new MemoryStream(Resources.se_maoudamashii_system40));
 
@@ -64,7 +64,7 @@ namespace SlaveMatrix
     		int num;
     		do
     		{
-    			RNG.XS.Next(3, out num);
+    			Rng.XS.Next(3, out num);
     		}
     		while (o == num);
     		o = num;

@@ -6,7 +6,7 @@ using SlaveMatrix.GameClasses;
 namespace SlaveMatrix
 {
     [Serializable]
-    public class ChestD : EleD
+    public class ChestD : ElementData
     {
     	public bool 胸郭_表示 = true;
 
@@ -134,76 +134,76 @@ namespace SlaveMatrix
 
     	public double ハイライト濃度 = 1.0;
 
-    	public List<EleD> Neck_接続 = new List<EleD>();
+    	public List<ElementData> Neck_接続 = new List<ElementData>();
 
-    	public List<EleD> 肩左_接続 = new List<EleD>();
+    	public List<ElementData> 肩左_接続 = new List<ElementData>();
 
-    	public List<EleD> 肩右_接続 = new List<EleD>();
+    	public List<ElementData> 肩右_接続 = new List<ElementData>();
 
-    	public List<EleD> 胸左_接続 = new List<EleD>();
+    	public List<ElementData> 胸左_接続 = new List<ElementData>();
 
-    	public List<EleD> 胸右_接続 = new List<EleD>();
+    	public List<ElementData> 胸右_接続 = new List<ElementData>();
 
-    	public List<EleD> 肌_接続 = new List<EleD>();
+    	public List<ElementData> 肌_接続 = new List<ElementData>();
 
-    	public List<EleD> 翼上左_接続 = new List<EleD>();
+    	public List<ElementData> 翼上左_接続 = new List<ElementData>();
 
-    	public List<EleD> 翼上右_接続 = new List<EleD>();
+    	public List<ElementData> 翼上右_接続 = new List<ElementData>();
 
-    	public List<EleD> 翼下左_接続 = new List<EleD>();
+    	public List<ElementData> 翼下左_接続 = new List<ElementData>();
 
-    	public List<EleD> 翼下右_接続 = new List<EleD>();
+    	public List<ElementData> 翼下右_接続 = new List<ElementData>();
 
-    	public List<EleD> 背中_接続 = new List<EleD>();
+    	public List<ElementData> 背中_接続 = new List<ElementData>();
 
     	public ChestD()
     	{
     		ThisType = GetType();
     	}
 
-    	public void 首接続(EleD e)
+    	public void 首接続(ElementData e)
     	{
     		Neck_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.Chest_Neck_接続;
     	}
 
-    	public void 肩左接続(EleD e)
+    	public void 肩左接続(ElementData e)
     	{
     		肩左_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.Chest_肩左_接続;
     	}
 
-    	public void 肩右接続(EleD e)
+    	public void 肩右接続(ElementData e)
     	{
     		肩右_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.Chest_肩右_接続;
     	}
 
-    	public void 胸左接続(EleD e)
+    	public void 胸左接続(ElementData e)
     	{
     		胸左_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.Chest_胸左_接続;
     	}
 
-    	public void 胸右接続(EleD e)
+    	public void 胸右接続(ElementData e)
     	{
     		胸右_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.Chest_胸右_接続;
     	}
 
-    	public void 肌接続(EleD e)
+    	public void 肌接続(ElementData e)
     	{
     		肌_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.Chest_肌_接続;
     	}
 
-    	public void 翼上左接続(EleD e)
+    	public void 翼上左接続(ElementData e)
     	{
     		翼上左_接続.Add(e);
     		e.Par = this;
@@ -212,13 +212,13 @@ namespace SlaveMatrix
     		{
     			return;
     		}
-    		foreach (EleD item in e.EnumEleD())
+    		foreach (ElementData item in e.EnumEleD())
     		{
     			item.尺度B = 1.0;
     		}
     	}
 
-    	public void 翼上右接続(EleD e)
+    	public void 翼上右接続(ElementData e)
     	{
     		翼上右_接続.Add(e);
     		e.Par = this;
@@ -227,13 +227,13 @@ namespace SlaveMatrix
     		{
     			return;
     		}
-    		foreach (EleD item in e.EnumEleD())
+    		foreach (ElementData item in e.EnumEleD())
     		{
     			item.尺度B = 1.0;
     		}
     	}
 
-    	public void 翼下左接続(EleD e)
+    	public void 翼下左接続(ElementData e)
     	{
     		翼下左_接続.Add(e);
     		e.Par = this;
@@ -242,13 +242,13 @@ namespace SlaveMatrix
     		{
     			return;
     		}
-    		foreach (EleD item in e.EnumEleD())
+    		foreach (ElementData item in e.EnumEleD())
     		{
     			item.尺度B = 1.0;
     		}
     	}
 
-    	public void 翼下右接続(EleD e)
+    	public void 翼下右接続(ElementData e)
     	{
     		翼下右_接続.Add(e);
     		e.Par = this;
@@ -257,24 +257,24 @@ namespace SlaveMatrix
     		{
     			return;
     		}
-    		foreach (EleD item in e.EnumEleD())
+    		foreach (ElementData item in e.EnumEleD())
     		{
     			item.尺度B = 1.0;
     		}
     	}
 
-    	public void 背中接続(EleD e)
+    	public void 背中接続(ElementData e)
     	{
     		背中_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.Chest_背中_接続;
-    		foreach (EleD item in e.EnumEleD())
+    		foreach (ElementData item in e.EnumEleD())
     		{
     			item.尺度B = 1.0;
     		}
     	}
 
-    	public override Ele GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
+    	public override Element GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
     	{
     		return new Chest(DisUnit, 配色指定, 体配色, Med, this);
     	}

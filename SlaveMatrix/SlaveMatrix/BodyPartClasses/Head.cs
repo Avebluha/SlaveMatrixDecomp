@@ -4,87 +4,87 @@ using System.Linq;
 
 namespace SlaveMatrix
 {
-    public class Head : Ele
+    public class Head : Element
     {
-    	public Par X0Y0_Head;
+    	public ShapePart X0Y0_Head;
 
-    	public Par X0Y0_悪タトゥ_逆十字_逆十字1;
+    	public ShapePart X0Y0_悪タトゥ_逆十字_逆十字1;
 
-    	public Par X0Y0_悪タトゥ_逆十字_逆十字2;
+    	public ShapePart X0Y0_悪タトゥ_逆十字_逆十字2;
 
-    	public Par X0Y0_隈取_タトゥ;
+    	public ShapePart X0Y0_隈取_タトゥ;
 
-    	public Par X0Y0_隈取_タトゥ左;
+    	public ShapePart X0Y0_隈取_タトゥ左;
 
-    	public Par X0Y0_隈取_タトゥ右;
+    	public ShapePart X0Y0_隈取_タトゥ右;
 
-    	public Par X0Y0_秘石_基;
+    	public ShapePart X0Y0_秘石_基;
 
-    	public Par X0Y0_秘石_秘石;
+    	public ShapePart X0Y0_秘石_秘石;
 
-    	public Par X0Y0_秘石_ハイライト;
+    	public ShapePart X0Y0_秘石_ハイライト;
 
-    	public Par X0Y0_蜘蛛_眼左1_基;
+    	public ShapePart X0Y0_蜘蛛_眼左1_基;
 
-    	public Par X0Y0_蜘蛛_眼左1_眼;
+    	public ShapePart X0Y0_蜘蛛_眼左1_眼;
 
-    	public Par X0Y0_蜘蛛_眼左1_ハイライト;
+    	public ShapePart X0Y0_蜘蛛_眼左1_ハイライト;
 
-    	public Par X0Y0_蜘蛛_眼左2_基;
+    	public ShapePart X0Y0_蜘蛛_眼左2_基;
 
-    	public Par X0Y0_蜘蛛_眼左2_眼;
+    	public ShapePart X0Y0_蜘蛛_眼左2_眼;
 
-    	public Par X0Y0_蜘蛛_眼左2_ハイライト;
+    	public ShapePart X0Y0_蜘蛛_眼左2_ハイライト;
 
-    	public Par X0Y0_蜘蛛_眼右1_基;
+    	public ShapePart X0Y0_蜘蛛_眼右1_基;
 
-    	public Par X0Y0_蜘蛛_眼右1_眼;
+    	public ShapePart X0Y0_蜘蛛_眼右1_眼;
 
-    	public Par X0Y0_蜘蛛_眼右1_ハイライト;
+    	public ShapePart X0Y0_蜘蛛_眼右1_ハイライト;
 
-    	public Par X0Y0_蜘蛛_眼右2_基;
+    	public ShapePart X0Y0_蜘蛛_眼右2_基;
 
-    	public Par X0Y0_蜘蛛_眼右2_眼;
+    	public ShapePart X0Y0_蜘蛛_眼右2_眼;
 
-    	public Par X0Y0_蜘蛛_眼右2_ハイライト;
+    	public ShapePart X0Y0_蜘蛛_眼右2_ハイライト;
 
-    	public Par X0Y0_羽虫_眼中_基;
+    	public ShapePart X0Y0_羽虫_眼中_基;
 
-    	public Par X0Y0_羽虫_眼中_眼;
+    	public ShapePart X0Y0_羽虫_眼中_眼;
 
-    	public Par X0Y0_羽虫_眼中_ハイライト;
+    	public ShapePart X0Y0_羽虫_眼中_ハイライト;
 
-    	public Par X0Y0_羽虫_眼左_基;
+    	public ShapePart X0Y0_羽虫_眼左_基;
 
-    	public Par X0Y0_羽虫_眼左_眼;
+    	public ShapePart X0Y0_羽虫_眼左_眼;
 
-    	public Par X0Y0_羽虫_眼左_ハイライト;
+    	public ShapePart X0Y0_羽虫_眼左_ハイライト;
 
-    	public Par X0Y0_羽虫_眼右_基;
+    	public ShapePart X0Y0_羽虫_眼右_基;
 
-    	public Par X0Y0_羽虫_眼右_眼;
+    	public ShapePart X0Y0_羽虫_眼右_眼;
 
-    	public Par X0Y0_羽虫_眼右_ハイライト;
+    	public ShapePart X0Y0_羽虫_眼右_ハイライト;
 
-    	public Par X0Y0_紋柄_紋;
+    	public ShapePart X0Y0_紋柄_紋;
 
-    	public Par X0Y0_紋柄_紋左1;
+    	public ShapePart X0Y0_紋柄_紋左1;
 
-    	public Par X0Y0_紋柄_紋右1;
+    	public ShapePart X0Y0_紋柄_紋右1;
 
-    	public Par X0Y0_紋柄_紋左2;
+    	public ShapePart X0Y0_紋柄_紋左2;
 
-    	public Par X0Y0_紋柄_紋右2;
+    	public ShapePart X0Y0_紋柄_紋右2;
 
-    	public Par X0Y0_竜性_鱗1;
+    	public ShapePart X0Y0_竜性_鱗1;
 
-    	public Par X0Y0_竜性_鱗2;
+    	public ShapePart X0Y0_竜性_鱗2;
 
-    	public Par X0Y0_竜性_鱗3;
+    	public ShapePart X0Y0_竜性_鱗3;
 
-    	public Par X0Y0_馬柄_馬柄;
+    	public ShapePart X0Y0_馬柄_馬柄;
 
-    	public Par X0Y0_虫性_顎下;
+    	public ShapePart X0Y0_虫性_顎下;
 
     	public ColorD HeadCD;
 
@@ -246,49 +246,49 @@ namespace SlaveMatrix
 
     	public ColorP X0Y0_虫性_顎下CP;
 
-    	public Ele[] 基髪_接続;
+    	public Element[] 基髪_接続;
 
-    	public Ele[] 目左_接続;
+    	public Element[] 目左_接続;
 
-    	public Ele[] 目右_接続;
+    	public Element[] 目右_接続;
 
-    	public Ele[] 鼻_接続;
+    	public Element[] 鼻_接続;
 
-    	public Ele[] 口_接続;
+    	public Element[] 口_接続;
 
-    	public Ele[] 頬左_接続;
+    	public Element[] 頬左_接続;
 
-    	public Ele[] 頬右_接続;
+    	public Element[] 頬右_接続;
 
-    	public Ele[] 額_接続;
+    	public Element[] 額_接続;
 
-    	public Ele[] 眉左_接続;
+    	public Element[] 眉左_接続;
 
-    	public Ele[] 眉右_接続;
+    	public Element[] 眉右_接続;
 
-    	public Ele[] 耳左_接続;
+    	public Element[] 耳左_接続;
 
-    	public Ele[] 耳右_接続;
+    	public Element[] 耳右_接続;
 
-    	public Ele[] 鼻肌_接続;
+    	public Element[] 鼻肌_接続;
 
-    	public Ele[] 単眼目_接続;
+    	public Element[] 単眼目_接続;
 
-    	public Ele[] 単眼眉_接続;
+    	public Element[] 単眼眉_接続;
 
-    	public Ele[] 大顎基_接続;
+    	public Element[] 大顎基_接続;
 
-    	public Ele[] 顔面_接続;
+    	public Element[] 顔面_接続;
 
-    	public Ele[] 頭頂_接続;
+    	public Element[] 頭頂_接続;
 
-    	public Ele[] 頬肌左_接続;
+    	public Element[] 頬肌左_接続;
 
-    	public Ele[] 頬肌右_接続;
+    	public Element[] 頬肌右_接続;
 
-    	public Ele[] 触覚左_接続;
+    	public Element[] 触覚左_接続;
 
-    	public Ele[] 触覚右_接続;
+    	public Element[] 触覚右_接続;
 
     	public override bool 欠損
     	{
@@ -1038,22 +1038,22 @@ namespace SlaveMatrix
     	{
     		Head 頭2 = this;
     		ThisType = GetType();
-    		Body = new Difs(Sta.胴体["Head"]);
-    		Pars pars = Body[0][0];
-    		X0Y0_Head = pars["頭"].ToPar();
-    		Pars pars2 = pars["悪タトゥ"].ToPars();
-    		Pars pars3 = pars2["逆十字"].ToPars();
+    		Body = new VariantGrid(GlobalState.胴体["Head"]);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_Head = partGroup["頭"].ToPar();
+    		PartGroup pars2 = partGroup["悪タトゥ"].ToPars();
+    		PartGroup pars3 = pars2["逆十字"].ToPars();
     		X0Y0_悪タトゥ_逆十字_逆十字1 = pars3["逆十字1"].ToPar();
     		X0Y0_悪タトゥ_逆十字_逆十字2 = pars3["逆十字2"].ToPar();
-    		pars2 = pars["隈取"].ToPars();
+    		pars2 = partGroup["隈取"].ToPars();
     		X0Y0_隈取_タトゥ = pars2["タトゥ"].ToPar();
     		X0Y0_隈取_タトゥ左 = pars2["タトゥ左"].ToPar();
     		X0Y0_隈取_タトゥ右 = pars2["タトゥ右"].ToPar();
-    		pars2 = pars["秘石"].ToPars();
+    		pars2 = partGroup["秘石"].ToPars();
     		X0Y0_秘石_基 = pars2["基"].ToPar();
     		X0Y0_秘石_秘石 = pars2["秘石"].ToPar();
     		X0Y0_秘石_ハイライト = pars2["ハイライト"].ToPar();
-    		pars2 = pars["蜘蛛"].ToPars();
+    		pars2 = partGroup["蜘蛛"].ToPars();
     		pars3 = pars2["眼左1"].ToPars();
     		X0Y0_蜘蛛_眼左1_基 = pars3["基"].ToPar();
     		X0Y0_蜘蛛_眼左1_眼 = pars3["眼"].ToPar();
@@ -1070,7 +1070,7 @@ namespace SlaveMatrix
     		X0Y0_蜘蛛_眼右2_基 = pars3["基"].ToPar();
     		X0Y0_蜘蛛_眼右2_眼 = pars3["眼"].ToPar();
     		X0Y0_蜘蛛_眼右2_ハイライト = pars3["ハイライト"].ToPar();
-    		pars2 = pars["羽虫"].ToPars();
+    		pars2 = partGroup["羽虫"].ToPars();
     		pars3 = pars2["眼中"].ToPars();
     		X0Y0_羽虫_眼中_基 = pars3["基"].ToPar();
     		X0Y0_羽虫_眼中_眼 = pars3["眼"].ToPar();
@@ -1083,19 +1083,19 @@ namespace SlaveMatrix
     		X0Y0_羽虫_眼右_基 = pars3["基"].ToPar();
     		X0Y0_羽虫_眼右_眼 = pars3["眼"].ToPar();
     		X0Y0_羽虫_眼右_ハイライト = pars3["ハイライト"].ToPar();
-    		pars2 = pars["紋柄"].ToPars();
+    		pars2 = partGroup["紋柄"].ToPars();
     		X0Y0_紋柄_紋 = pars2["紋"].ToPar();
     		X0Y0_紋柄_紋左1 = pars2["紋左1"].ToPar();
     		X0Y0_紋柄_紋右1 = pars2["紋右1"].ToPar();
     		X0Y0_紋柄_紋左2 = pars2["紋左2"].ToPar();
     		X0Y0_紋柄_紋右2 = pars2["紋右2"].ToPar();
-    		pars2 = pars["鱗"].ToPars();
+    		pars2 = partGroup["鱗"].ToPars();
     		X0Y0_竜性_鱗1 = pars2["鱗1"].ToPar();
     		X0Y0_竜性_鱗2 = pars2["鱗2"].ToPar();
     		X0Y0_竜性_鱗3 = pars2["鱗3"].ToPar();
-    		pars2 = pars["牛柄"].ToPars();
+    		pars2 = partGroup["牛柄"].ToPars();
     		X0Y0_馬柄_馬柄 = pars2["牛柄"].ToPar();
-    		pars2 = pars["虫顎"].ToPars();
+    		pars2 = partGroup["虫顎"].ToPars();
     		X0Y0_虫性_顎下 = pars2["顎下"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
@@ -1171,10 +1171,10 @@ namespace SlaveMatrix
     		{
     			表示 = false;
     		}
-    		Ele f;
+    		Element f;
     		if (e.基髪_接続.Count > 0)
     		{
-    			基髪_接続 = e.基髪_接続.Select(delegate(EleD g)
+    			基髪_接続 = e.基髪_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 頭2;
@@ -1185,7 +1185,7 @@ namespace SlaveMatrix
     		}
     		if (e.目左_接続.Count > 0)
     		{
-    			目左_接続 = e.目左_接続.Select(delegate(EleD g)
+    			目左_接続 = e.目左_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 頭2;
@@ -1196,7 +1196,7 @@ namespace SlaveMatrix
     		}
     		if (e.目右_接続.Count > 0)
     		{
-    			目右_接続 = e.目右_接続.Select(delegate(EleD g)
+    			目右_接続 = e.目右_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 頭2;
@@ -1207,7 +1207,7 @@ namespace SlaveMatrix
     		}
     		if (e.鼻_接続.Count > 0)
     		{
-    			鼻_接続 = e.鼻_接続.Select(delegate(EleD g)
+    			鼻_接続 = e.鼻_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 頭2;
@@ -1218,7 +1218,7 @@ namespace SlaveMatrix
     		}
     		if (e.口_接続.Count > 0)
     		{
-    			口_接続 = e.口_接続.Select(delegate(EleD g)
+    			口_接続 = e.口_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 頭2;
@@ -1229,7 +1229,7 @@ namespace SlaveMatrix
     		}
     		if (e.頬左_接続.Count > 0)
     		{
-    			頬左_接続 = e.頬左_接続.Select(delegate(EleD g)
+    			頬左_接続 = e.頬左_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 頭2;
@@ -1240,7 +1240,7 @@ namespace SlaveMatrix
     		}
     		if (e.頬右_接続.Count > 0)
     		{
-    			頬右_接続 = e.頬右_接続.Select(delegate(EleD g)
+    			頬右_接続 = e.頬右_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 頭2;
@@ -1251,7 +1251,7 @@ namespace SlaveMatrix
     		}
     		if (e.額_接続.Count > 0)
     		{
-    			額_接続 = e.額_接続.Select(delegate(EleD g)
+    			額_接続 = e.額_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 頭2;
@@ -1262,7 +1262,7 @@ namespace SlaveMatrix
     		}
     		if (e.眉左_接続.Count > 0)
     		{
-    			眉左_接続 = e.眉左_接続.Select(delegate(EleD g)
+    			眉左_接続 = e.眉左_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 頭2;
@@ -1273,7 +1273,7 @@ namespace SlaveMatrix
     		}
     		if (e.眉右_接続.Count > 0)
     		{
-    			眉右_接続 = e.眉右_接続.Select(delegate(EleD g)
+    			眉右_接続 = e.眉右_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 頭2;
@@ -1284,7 +1284,7 @@ namespace SlaveMatrix
     		}
     		if (e.耳左_接続.Count > 0)
     		{
-    			耳左_接続 = e.耳左_接続.Select(delegate(EleD g)
+    			耳左_接続 = e.耳左_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 頭2;
@@ -1295,7 +1295,7 @@ namespace SlaveMatrix
     		}
     		if (e.耳右_接続.Count > 0)
     		{
-    			耳右_接続 = e.耳右_接続.Select(delegate(EleD g)
+    			耳右_接続 = e.耳右_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 頭2;
@@ -1306,7 +1306,7 @@ namespace SlaveMatrix
     		}
     		if (e.鼻肌_接続.Count > 0)
     		{
-    			鼻肌_接続 = e.鼻肌_接続.Select(delegate(EleD g)
+    			鼻肌_接続 = e.鼻肌_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 頭2;
@@ -1317,7 +1317,7 @@ namespace SlaveMatrix
     		}
     		if (e.単眼目_接続.Count > 0)
     		{
-    			単眼目_接続 = e.単眼目_接続.Select(delegate(EleD g)
+    			単眼目_接続 = e.単眼目_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 頭2;
@@ -1328,7 +1328,7 @@ namespace SlaveMatrix
     		}
     		if (e.単眼眉_接続.Count > 0)
     		{
-    			単眼眉_接続 = e.単眼眉_接続.Select(delegate(EleD g)
+    			単眼眉_接続 = e.単眼眉_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 頭2;
@@ -1339,7 +1339,7 @@ namespace SlaveMatrix
     		}
     		if (e.大顎基_接続.Count > 0)
     		{
-    			大顎基_接続 = e.大顎基_接続.Select(delegate(EleD g)
+    			大顎基_接続 = e.大顎基_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 頭2;
@@ -1350,7 +1350,7 @@ namespace SlaveMatrix
     		}
     		if (e.顔面_接続.Count > 0)
     		{
-    			顔面_接続 = e.顔面_接続.Select(delegate(EleD g)
+    			顔面_接続 = e.顔面_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 頭2;
@@ -1361,7 +1361,7 @@ namespace SlaveMatrix
     		}
     		if (e.頭頂_接続.Count > 0)
     		{
-    			頭頂_接続 = e.頭頂_接続.Select(delegate(EleD g)
+    			頭頂_接続 = e.頭頂_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 頭2;
@@ -1372,7 +1372,7 @@ namespace SlaveMatrix
     		}
     		if (e.頬肌左_接続.Count > 0)
     		{
-    			頬肌左_接続 = e.頬肌左_接続.Select(delegate(EleD g)
+    			頬肌左_接続 = e.頬肌左_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 頭2;
@@ -1383,7 +1383,7 @@ namespace SlaveMatrix
     		}
     		if (e.頬肌右_接続.Count > 0)
     		{
-    			頬肌右_接続 = e.頬肌右_接続.Select(delegate(EleD g)
+    			頬肌右_接続 = e.頬肌右_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 頭2;
@@ -1394,7 +1394,7 @@ namespace SlaveMatrix
     		}
     		if (e.触覚左_接続.Count > 0)
     		{
-    			触覚左_接続 = e.触覚左_接続.Select(delegate(EleD g)
+    			触覚左_接続 = e.触覚左_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 頭2;
@@ -1405,7 +1405,7 @@ namespace SlaveMatrix
     		}
     		if (e.触覚右_接続.Count > 0)
     		{
-    			触覚右_接続 = e.触覚右_接続.Select(delegate(EleD g)
+    			触覚右_接続 = e.触覚右_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 頭2;
@@ -1516,16 +1516,16 @@ namespace SlaveMatrix
     	private void 開顎(double Rate)
     	{
     		double y = 0.0003 * Rate;
-    		Par par = Sta.胴体["Head"][0][0]["頭"].ToPar();
-    		Par x0Y0_頭 = X0Y0_Head;
-    		x0Y0_頭.GetOP()[0].ps[3] = par.GetOP()[0].ps[3].AddY(y);
-    		x0Y0_頭.GetOP()[0].ps[4] = par.GetOP()[0].ps[4].AddY(y);
-    		x0Y0_頭.GetOP()[1].ps[0] = par.GetOP()[1].ps[0].AddY(y);
-    		x0Y0_頭.GetOP()[1].ps[1] = par.GetOP()[1].ps[1].AddY(y);
-    		x0Y0_頭.GetOP()[1].ps[2] = par.GetOP()[1].ps[2].AddY(y);
-    		x0Y0_頭.GetOP()[1].ps[3] = par.GetOP()[1].ps[3].AddY(y);
-    		x0Y0_頭.GetOP()[2].ps[0] = par.GetOP()[2].ps[0].AddY(y);
-    		x0Y0_頭.GetOP()[2].ps[1] = par.GetOP()[2].ps[1].AddY(y);
+    		ShapePart shapePart = GlobalState.胴体["Head"][0][0]["頭"].ToPar();
+    		ShapePart x0Y0_頭 = X0Y0_Head;
+    		x0Y0_頭.GetOP()[0].ps[3] = shapePart.GetOP()[0].ps[3].AddY(y);
+    		x0Y0_頭.GetOP()[0].ps[4] = shapePart.GetOP()[0].ps[4].AddY(y);
+    		x0Y0_頭.GetOP()[1].ps[0] = shapePart.GetOP()[1].ps[0].AddY(y);
+    		x0Y0_頭.GetOP()[1].ps[1] = shapePart.GetOP()[1].ps[1].AddY(y);
+    		x0Y0_頭.GetOP()[1].ps[2] = shapePart.GetOP()[1].ps[2].AddY(y);
+    		x0Y0_頭.GetOP()[1].ps[3] = shapePart.GetOP()[1].ps[3].AddY(y);
+    		x0Y0_頭.GetOP()[2].ps[0] = shapePart.GetOP()[2].ps[0].AddY(y);
+    		x0Y0_頭.GetOP()[2].ps[1] = shapePart.GetOP()[2].ps[1].AddY(y);
     	}
 
     	public void 開顎(口 口)
@@ -1683,46 +1683,46 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		HeadCD = new ColorD(ref Col.Black, ref 体配色.人肌O);
+    		HeadCD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌O);
     		悪タトゥ_逆十字_逆十字1CD = new ColorD(ref 体配色.刺青.Col1, ref Color2.Empty);
-    		悪タトゥ_逆十字_逆十字2CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		隈取_タトゥCD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		隈取_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		隈取_タトゥ右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		秘石_基CD = new ColorD(ref Col.Black, ref 体配色.秘石O);
-    		秘石_秘石CD = new ColorD(ref Col.Black, ref 体配色.秘石O);
-    		秘石_ハイライトCD = new ColorD(ref Col.Empty, ref 体配色.ハイライト);
-    		蜘蛛_眼左1_基CD = new ColorD(ref Col.Black, ref 体配色.眼2O);
-    		蜘蛛_眼左1_眼CD = new ColorD(ref Col.Black, ref 体配色.眼2O);
-    		蜘蛛_眼左1_ハイライトCD = new ColorD(ref Col.Empty, ref 体配色.ハイライト);
-    		蜘蛛_眼左2_基CD = new ColorD(ref Col.Black, ref 体配色.眼2O);
-    		蜘蛛_眼左2_眼CD = new ColorD(ref Col.Black, ref 体配色.眼2O);
-    		蜘蛛_眼左2_ハイライトCD = new ColorD(ref Col.Empty, ref 体配色.ハイライト);
-    		蜘蛛_眼右1_基CD = new ColorD(ref Col.Black, ref 体配色.眼2O);
-    		蜘蛛_眼右1_眼CD = new ColorD(ref Col.Black, ref 体配色.眼2O);
-    		蜘蛛_眼右1_ハイライトCD = new ColorD(ref Col.Empty, ref 体配色.ハイライト);
-    		蜘蛛_眼右2_基CD = new ColorD(ref Col.Black, ref 体配色.眼2O);
-    		蜘蛛_眼右2_眼CD = new ColorD(ref Col.Black, ref 体配色.眼2O);
-    		蜘蛛_眼右2_ハイライトCD = new ColorD(ref Col.Empty, ref 体配色.ハイライト);
-    		羽虫_眼中_基CD = new ColorD(ref Col.Black, ref 体配色.眼1O);
-    		羽虫_眼中_眼CD = new ColorD(ref Col.Black, ref 体配色.眼1O);
-    		羽虫_眼中_ハイライトCD = new ColorD(ref Col.Empty, ref 体配色.ハイライト);
-    		羽虫_眼左_基CD = new ColorD(ref Col.Black, ref 体配色.眼1O);
-    		羽虫_眼左_眼CD = new ColorD(ref Col.Black, ref 体配色.眼1O);
-    		羽虫_眼左_ハイライトCD = new ColorD(ref Col.Empty, ref 体配色.ハイライト);
-    		羽虫_眼右_基CD = new ColorD(ref Col.Black, ref 体配色.眼1O);
-    		羽虫_眼右_眼CD = new ColorD(ref Col.Black, ref 体配色.眼1O);
-    		羽虫_眼右_ハイライトCD = new ColorD(ref Col.Empty, ref 体配色.ハイライト);
-    		紋柄_紋CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		紋柄_紋左1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		紋柄_紋右1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		紋柄_紋左2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		紋柄_紋右2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		竜性_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		馬柄_馬柄CD = new ColorD(ref Col.Empty, ref 体配色.毛0O);
-    		虫性_顎下CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
+    		悪タトゥ_逆十字_逆十字2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		隈取_タトゥCD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		隈取_タトゥ左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		隈取_タトゥ右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		秘石_基CD = new ColorD(ref ColorHelper.Black, ref 体配色.秘石O);
+    		秘石_秘石CD = new ColorD(ref ColorHelper.Black, ref 体配色.秘石O);
+    		秘石_ハイライトCD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト);
+    		蜘蛛_眼左1_基CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼2O);
+    		蜘蛛_眼左1_眼CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼2O);
+    		蜘蛛_眼左1_ハイライトCD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト);
+    		蜘蛛_眼左2_基CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼2O);
+    		蜘蛛_眼左2_眼CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼2O);
+    		蜘蛛_眼左2_ハイライトCD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト);
+    		蜘蛛_眼右1_基CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼2O);
+    		蜘蛛_眼右1_眼CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼2O);
+    		蜘蛛_眼右1_ハイライトCD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト);
+    		蜘蛛_眼右2_基CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼2O);
+    		蜘蛛_眼右2_眼CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼2O);
+    		蜘蛛_眼右2_ハイライトCD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト);
+    		羽虫_眼中_基CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼1O);
+    		羽虫_眼中_眼CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼1O);
+    		羽虫_眼中_ハイライトCD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト);
+    		羽虫_眼左_基CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼1O);
+    		羽虫_眼左_眼CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼1O);
+    		羽虫_眼左_ハイライトCD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト);
+    		羽虫_眼右_基CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼1O);
+    		羽虫_眼右_眼CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼1O);
+    		羽虫_眼右_ハイライトCD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト);
+    		紋柄_紋CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		紋柄_紋左1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		紋柄_紋右1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		紋柄_紋左2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		紋柄_紋右2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		竜性_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		馬柄_馬柄CD = new ColorD(ref ColorHelper.Empty, ref 体配色.毛0O);
+    		虫性_顎下CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
     	}
     }
 }

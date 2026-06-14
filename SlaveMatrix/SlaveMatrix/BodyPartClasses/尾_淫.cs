@@ -5,57 +5,57 @@ namespace SlaveMatrix
 {
     public class 尾_淫 : 尾
     {
-    	public Par X0Y0_尾0;
+    	public ShapePart X0Y0_尾0;
 
-    	public Par X0Y0_尾1;
+    	public ShapePart X0Y0_尾1;
 
-    	public Par X0Y0_尾2;
+    	public ShapePart X0Y0_尾2;
 
-    	public Par X0Y0_尾3;
+    	public ShapePart X0Y0_尾3;
 
-    	public Par X0Y0_尾4;
+    	public ShapePart X0Y0_尾4;
 
-    	public Par X0Y0_尾5;
+    	public ShapePart X0Y0_尾5;
 
-    	public Par X0Y0_尾6;
+    	public ShapePart X0Y0_尾6;
 
-    	public Par X0Y0_尾7;
+    	public ShapePart X0Y0_尾7;
 
-    	public Par X0Y0_尾8;
+    	public ShapePart X0Y0_尾8;
 
-    	public Par X0Y0_輪_革;
+    	public ShapePart X0Y0_輪_革;
 
-    	public Par X0Y0_輪_金具1;
+    	public ShapePart X0Y0_輪_金具1;
 
-    	public Par X0Y0_輪_金具2;
+    	public ShapePart X0Y0_輪_金具2;
 
-    	public Par X0Y0_輪_金具3;
+    	public ShapePart X0Y0_輪_金具3;
 
-    	public Par X0Y0_輪_金具左;
+    	public ShapePart X0Y0_輪_金具左;
 
-    	public Par X0Y0_輪_金具右;
+    	public ShapePart X0Y0_輪_金具右;
 
-    	public Par X0Y0_尾9;
+    	public ShapePart X0Y0_尾9;
 
-    	public Par X0Y0_尾10;
+    	public ShapePart X0Y0_尾10;
 
-    	public Par X0Y0_尾11;
+    	public ShapePart X0Y0_尾11;
 
-    	public Par X0Y0_尾12;
+    	public ShapePart X0Y0_尾12;
 
-    	public Par X0Y0_尾13;
+    	public ShapePart X0Y0_尾13;
 
-    	public Par X0Y0_尾14;
+    	public ShapePart X0Y0_尾14;
 
-    	public Par X0Y0_尾15;
+    	public ShapePart X0Y0_尾15;
 
-    	public Par X0Y0_尾16;
+    	public ShapePart X0Y0_尾16;
 
-    	public Par X0Y0_尾17;
+    	public ShapePart X0Y0_尾17;
 
-    	public Par X0Y0_先端_先;
+    	public ShapePart X0Y0_先端_先;
 
-    	public Par X0Y0_先端_尾;
+    	public ShapePart X0Y0_先端_尾;
 
     	public ColorD 尾0CD;
 
@@ -165,7 +165,7 @@ namespace SlaveMatrix
 
     	public 拘束鎖 鎖2;
 
-    	public Par[] Pars;
+    	public ShapePart[] Pars;
 
     	private Vector2D[] mm;
 
@@ -657,39 +657,39 @@ namespace SlaveMatrix
     	public 尾_淫(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 尾_淫D e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif();
-    		dif.Tag = "淫尾";
-    		dif.Add(new Pars(Sta.尻尾["尾"][0][8]));
-    		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		X0Y0_尾0 = pars["尾0"].ToPar();
-    		X0Y0_尾1 = pars["尾1"].ToPar();
-    		X0Y0_尾2 = pars["尾2"].ToPar();
-    		X0Y0_尾3 = pars["尾3"].ToPar();
-    		X0Y0_尾4 = pars["尾4"].ToPar();
-    		X0Y0_尾5 = pars["尾5"].ToPar();
-    		X0Y0_尾6 = pars["尾6"].ToPar();
-    		X0Y0_尾7 = pars["尾7"].ToPar();
-    		X0Y0_尾8 = pars["尾8"].ToPar();
-    		Pars pars2 = pars["輪"].ToPars();
+    		MorphVariant morphVariant = new MorphVariant();
+    		morphVariant.Tag = "淫尾";
+    		morphVariant.Add(new PartGroup(GlobalState.尻尾["尾"][0][8]));
+    		Body = new VariantGrid();
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_尾0 = partGroup["尾0"].ToPar();
+    		X0Y0_尾1 = partGroup["尾1"].ToPar();
+    		X0Y0_尾2 = partGroup["尾2"].ToPar();
+    		X0Y0_尾3 = partGroup["尾3"].ToPar();
+    		X0Y0_尾4 = partGroup["尾4"].ToPar();
+    		X0Y0_尾5 = partGroup["尾5"].ToPar();
+    		X0Y0_尾6 = partGroup["尾6"].ToPar();
+    		X0Y0_尾7 = partGroup["尾7"].ToPar();
+    		X0Y0_尾8 = partGroup["尾8"].ToPar();
+    		PartGroup pars2 = partGroup["輪"].ToPars();
     		X0Y0_輪_革 = pars2["革"].ToPar();
     		X0Y0_輪_金具1 = pars2["金具1"].ToPar();
     		X0Y0_輪_金具2 = pars2["金具2"].ToPar();
     		X0Y0_輪_金具3 = pars2["金具3"].ToPar();
     		X0Y0_輪_金具左 = pars2["金具左"].ToPar();
     		X0Y0_輪_金具右 = pars2["金具右"].ToPar();
-    		X0Y0_尾9 = pars["尾9"].ToPar();
-    		X0Y0_尾10 = pars["尾10"].ToPar();
-    		X0Y0_尾11 = pars["尾11"].ToPar();
-    		X0Y0_尾12 = pars["尾12"].ToPar();
-    		X0Y0_尾13 = pars["尾13"].ToPar();
-    		X0Y0_尾14 = pars["尾14"].ToPar();
-    		X0Y0_尾15 = pars["尾15"].ToPar();
-    		X0Y0_尾16 = pars["尾16"].ToPar();
-    		X0Y0_尾17 = pars["尾17"].ToPar();
-    		pars2 = pars["先端"].ToPars();
+    		X0Y0_尾9 = partGroup["尾9"].ToPar();
+    		X0Y0_尾10 = partGroup["尾10"].ToPar();
+    		X0Y0_尾11 = partGroup["尾11"].ToPar();
+    		X0Y0_尾12 = partGroup["尾12"].ToPar();
+    		X0Y0_尾13 = partGroup["尾13"].ToPar();
+    		X0Y0_尾14 = partGroup["尾14"].ToPar();
+    		X0Y0_尾15 = partGroup["尾15"].ToPar();
+    		X0Y0_尾16 = partGroup["尾16"].ToPar();
+    		X0Y0_尾17 = partGroup["尾17"].ToPar();
+    		pars2 = partGroup["先端"].ToPars();
     		X0Y0_先端_先 = pars2["先"].ToPar();
     		X0Y0_先端_尾 = pars2["尾"].ToPar();
     		Body.SetJoints();
@@ -752,7 +752,7 @@ namespace SlaveMatrix
     		}
     		base.配色指定 = 配色指定;
     		配色(体配色);
-    		Pars = new Par[26]
+    		Pars = new ShapePart[26]
     		{
     			X0Y0_尾0, X0Y0_尾1, X0Y0_尾2, X0Y0_尾3, X0Y0_尾4, X0Y0_尾5, X0Y0_尾6, X0Y0_尾7, X0Y0_尾8, X0Y0_輪_革,
     			X0Y0_輪_金具1, X0Y0_輪_金具2, X0Y0_輪_金具3, X0Y0_輪_金具左, X0Y0_輪_金具右, X0Y0_尾9, X0Y0_尾10, X0Y0_尾11, X0Y0_尾12, X0Y0_尾13,
@@ -860,7 +860,7 @@ namespace SlaveMatrix
     		Body.JoinPAall();
     	}
 
-    	public override bool Is革(Par p)
+    	public override bool Is革(ShapePart p)
     	{
     		if (p != X0Y0_輪_革 && p != X0Y0_輪_金具1 && p != X0Y0_輪_金具2 && p != X0Y0_輪_金具3 && p != X0Y0_輪_金具左)
     		{
@@ -869,7 +869,7 @@ namespace SlaveMatrix
     		return true;
     	}
 
-    	public override IEnumerable<Par> Enum軸()
+    	public override IEnumerable<ShapePart> Enum軸()
     	{
     		yield return X0Y0_尾0;
     		yield return X0Y0_尾1;
@@ -948,26 +948,26 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		尾0CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		尾1CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		尾2CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		尾3CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		尾4CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		尾5CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		尾6CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		尾7CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		尾8CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		尾9CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		尾10CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		尾11CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		尾12CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		尾13CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		尾14CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		尾15CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		尾16CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		尾17CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		先端_先CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		先端_尾CD = new ColorD(ref Col.Black, ref 体配色.体0O);
+    		尾0CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		尾1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		尾2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		尾3CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		尾4CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		尾5CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		尾6CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		尾7CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		尾8CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		尾9CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		尾10CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		尾11CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		尾12CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		尾13CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		尾14CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		尾15CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		尾16CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		尾17CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		先端_先CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		先端_尾CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
     		輪_革CD = new ColorD();
     		輪_金具1CD = new ColorD();
     		輪_金具2CD = new ColorD();
@@ -979,7 +979,7 @@ namespace SlaveMatrix
     	private void 配色T0(BodyColorSet 体配色)
     	{
     		this.配色T(0, "尾", ref 体配色.体0O, ref 体配色.刺青O);
-    		先端_先CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		先端_先CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
     		輪_革CD = new ColorD();
     		輪_金具1CD = new ColorD();
     		輪_金具2CD = new ColorD();
@@ -991,7 +991,7 @@ namespace SlaveMatrix
     	private void 配色T1(BodyColorSet 体配色)
     	{
     		this.配色T(1, "尾", ref 体配色.体0O, ref 体配色.刺青O);
-    		先端_先CD = new ColorD(ref Col.Black, ref 体配色.体0O);
+    		先端_先CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
     		輪_革CD = new ColorD();
     		輪_金具1CD = new ColorD();
     		輪_金具2CD = new ColorD();

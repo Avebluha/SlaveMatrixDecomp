@@ -3,11 +3,11 @@ using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
-    public class 飛膜_根 : Ele
+    public class 飛膜_根 : Element
     {
-    	public Par X0Y0_飛膜;
+    	public ShapePart X0Y0_飛膜;
 
-    	public Par X0Y1_飛膜;
+    	public ShapePart X0Y1_飛膜;
 
     	public ColorD 飛膜CD;
 
@@ -107,11 +107,11 @@ namespace SlaveMatrix
     	public 飛膜_根(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色)
     	{
     		ThisType = GetType();
-    		Body = new Difs(Sta.腕左["飛膜根"]);
-    		Pars pars = Body[0][0];
-    		X0Y0_飛膜 = pars["飛膜"].ToPar();
-    		pars = Body[0][1];
-    		X0Y1_飛膜 = pars["飛膜"].ToPar();
+    		Body = new VariantGrid(GlobalState.腕左["飛膜根"]);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_飛膜 = partGroup["飛膜"].ToPar();
+    		partGroup = Body[0][1];
+    		X0Y1_飛膜 = partGroup["飛膜"].ToPar();
     		Xasix = false;
     		Body.SetJoints();
     		接続根 = new JointD(Body);
@@ -248,7 +248,7 @@ namespace SlaveMatrix
     		Vector2D vector2D5 = (X0Y1_飛膜.GetOP()[2].ps[0] + X0Y1_飛膜.GetOP()[9].ps[2]) * 0.5;
     		Vector2D v2 = X0Y1_飛膜.GetOP()[2].ps[0] - X0Y1_飛膜.GetOP()[9].ps[2];
     		double num2 = v2.LengthSquared();
-    		double num3 = v2.Angle02π(Dat.Vec2DUnitX);
+    		double num3 = v2.Angle02π(DataConsts.Vec2DUnitX);
     		QuaternionD rotation = num3.RotationZQ();
     		QuaternionD rotation2 = (v2.Angle02π(v) - num3).RotationZQ();
     		double num4 = num / num2;
@@ -296,7 +296,7 @@ namespace SlaveMatrix
     		Vector2D vector2D5 = (X0Y1_飛膜.GetOP()[8].ps[2] + X0Y1_飛膜.GetOP()[1].ps[0]) * 0.5;
     		Vector2D v2 = X0Y1_飛膜.GetOP()[8].ps[2] - X0Y1_飛膜.GetOP()[1].ps[0];
     		double num2 = v2.LengthSquared();
-    		double num3 = v2.Angle02π(-Dat.Vec2DUnitX);
+    		double num3 = v2.Angle02π(-DataConsts.Vec2DUnitX);
     		QuaternionD rotation = num3.RotationZQ();
     		QuaternionD rotation2 = (v2.Angle02π(v) - num3).RotationZQ();
     		double num4 = num / num2;
@@ -371,17 +371,17 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		飛膜CD = new ColorD(ref Col.Black, ref 体配色.膜R);
+    		飛膜CD = new ColorD(ref ColorHelper.Black, ref 体配色.膜R);
     	}
 
     	private void 配色T0(BodyColorSet 体配色)
     	{
-    		飛膜CD = new ColorD(ref Col.Black, ref 体配色.刺青R);
+    		飛膜CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青R);
     	}
 
     	private void 配色T1(BodyColorSet 体配色)
     	{
-    		飛膜CD = new ColorD(ref Col.Black, ref 体配色.刺青R);
+    		飛膜CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青R);
     	}
     }
 }

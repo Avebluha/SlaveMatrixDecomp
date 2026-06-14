@@ -4,89 +4,89 @@ namespace SlaveMatrix
 {
     public class 前翅_蝶 : 前翅
     {
-    	public Par X0Y0_前翅_前翅;
+    	public ShapePart X0Y0_前翅_前翅;
 
-    	public Par X0Y0_前翅_水青_柄;
+    	public ShapePart X0Y0_前翅_水青_柄;
 
-    	public Par X0Y0_前翅_水青_縁柄;
+    	public ShapePart X0Y0_前翅_水青_縁柄;
 
-    	public Par X0Y0_前翅_水青_紋1;
+    	public ShapePart X0Y0_前翅_水青_紋1;
 
-    	public Par X0Y0_前翅_水青_紋2;
+    	public ShapePart X0Y0_前翅_水青_紋2;
 
-    	public Par X0Y0_前翅_揚羽_柄1;
+    	public ShapePart X0Y0_前翅_揚羽_柄1;
 
-    	public Par X0Y0_前翅_揚羽_柄2;
+    	public ShapePart X0Y0_前翅_揚羽_柄2;
 
-    	public Par X0Y0_前翅_揚羽_柄3;
+    	public ShapePart X0Y0_前翅_揚羽_柄3;
 
-    	public Par X0Y0_前翅_揚羽_柄4;
+    	public ShapePart X0Y0_前翅_揚羽_柄4;
 
-    	public Par X0Y0_前翅_揚羽_柄5;
+    	public ShapePart X0Y0_前翅_揚羽_柄5;
 
-    	public Par X0Y0_前翅_揚羽_柄6;
+    	public ShapePart X0Y0_前翅_揚羽_柄6;
 
-    	public Par X0Y0_前翅_揚羽_柄7;
+    	public ShapePart X0Y0_前翅_揚羽_柄7;
 
-    	public Par X0Y0_前翅_揚羽_柄8;
+    	public ShapePart X0Y0_前翅_揚羽_柄8;
 
-    	public Par X0Y0_前翅_揚羽_柄9;
+    	public ShapePart X0Y0_前翅_揚羽_柄9;
 
-    	public Par X0Y0_前翅_揚羽_柄10;
+    	public ShapePart X0Y0_前翅_揚羽_柄10;
 
-    	public Par X0Y0_前翅_揚羽_紋1;
+    	public ShapePart X0Y0_前翅_揚羽_紋1;
 
-    	public Par X0Y0_前翅_揚羽_紋2;
+    	public ShapePart X0Y0_前翅_揚羽_紋2;
 
-    	public Par X0Y0_前翅_揚羽_紋3;
+    	public ShapePart X0Y0_前翅_揚羽_紋3;
 
-    	public Par X0Y0_前翅_揚羽_紋4;
+    	public ShapePart X0Y0_前翅_揚羽_紋4;
 
-    	public Par X0Y0_前翅_揚羽_紋5;
+    	public ShapePart X0Y0_前翅_揚羽_紋5;
 
-    	public Par X0Y0_前翅_揚羽_紋6;
+    	public ShapePart X0Y0_前翅_揚羽_紋6;
 
-    	public Par X0Y1_前翅_前翅;
+    	public ShapePart X0Y1_前翅_前翅;
 
-    	public Par X0Y1_前翅_水青_柄;
+    	public ShapePart X0Y1_前翅_水青_柄;
 
-    	public Par X0Y1_前翅_水青_縁柄;
+    	public ShapePart X0Y1_前翅_水青_縁柄;
 
-    	public Par X0Y1_前翅_水青_紋1;
+    	public ShapePart X0Y1_前翅_水青_紋1;
 
-    	public Par X0Y1_前翅_水青_紋2;
+    	public ShapePart X0Y1_前翅_水青_紋2;
 
-    	public Par X0Y1_前翅_揚羽_柄1;
+    	public ShapePart X0Y1_前翅_揚羽_柄1;
 
-    	public Par X0Y1_前翅_揚羽_柄2;
+    	public ShapePart X0Y1_前翅_揚羽_柄2;
 
-    	public Par X0Y1_前翅_揚羽_柄3;
+    	public ShapePart X0Y1_前翅_揚羽_柄3;
 
-    	public Par X0Y1_前翅_揚羽_柄4;
+    	public ShapePart X0Y1_前翅_揚羽_柄4;
 
-    	public Par X0Y1_前翅_揚羽_柄5;
+    	public ShapePart X0Y1_前翅_揚羽_柄5;
 
-    	public Par X0Y1_前翅_揚羽_柄6;
+    	public ShapePart X0Y1_前翅_揚羽_柄6;
 
-    	public Par X0Y1_前翅_揚羽_柄7;
+    	public ShapePart X0Y1_前翅_揚羽_柄7;
 
-    	public Par X0Y1_前翅_揚羽_柄8;
+    	public ShapePart X0Y1_前翅_揚羽_柄8;
 
-    	public Par X0Y1_前翅_揚羽_柄9;
+    	public ShapePart X0Y1_前翅_揚羽_柄9;
 
-    	public Par X0Y1_前翅_揚羽_柄10;
+    	public ShapePart X0Y1_前翅_揚羽_柄10;
 
-    	public Par X0Y1_前翅_揚羽_紋1;
+    	public ShapePart X0Y1_前翅_揚羽_紋1;
 
-    	public Par X0Y1_前翅_揚羽_紋2;
+    	public ShapePart X0Y1_前翅_揚羽_紋2;
 
-    	public Par X0Y1_前翅_揚羽_紋3;
+    	public ShapePart X0Y1_前翅_揚羽_紋3;
 
-    	public Par X0Y1_前翅_揚羽_紋4;
+    	public ShapePart X0Y1_前翅_揚羽_紋4;
 
-    	public Par X0Y1_前翅_揚羽_紋5;
+    	public ShapePart X0Y1_前翅_揚羽_紋5;
 
-    	public Par X0Y1_前翅_揚羽_紋6;
+    	public ShapePart X0Y1_前翅_揚羽_紋6;
 
     	public ColorD 前翅_前翅CD;
 
@@ -667,18 +667,18 @@ namespace SlaveMatrix
     	public 前翅_蝶(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 前翅_蝶D e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif(Sta.肢左["前翅"][2]);
-    		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
-    		Pars pars = Body[0][0]["前翅"].ToPars();
-    		X0Y0_前翅_前翅 = pars["前翅"].ToPar();
-    		Pars pars2 = pars["水青"].ToPars();
+    		MorphVariant morphVariant = new MorphVariant(GlobalState.肢左["前翅"][2]);
+    		Body = new VariantGrid();
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
+    		PartGroup partGroup = Body[0][0]["前翅"].ToPars();
+    		X0Y0_前翅_前翅 = partGroup["前翅"].ToPar();
+    		PartGroup pars2 = partGroup["水青"].ToPars();
     		X0Y0_前翅_水青_柄 = pars2["柄"].ToPar();
     		X0Y0_前翅_水青_縁柄 = pars2["縁柄"].ToPar();
     		X0Y0_前翅_水青_紋1 = pars2["紋1"].ToPar();
     		X0Y0_前翅_水青_紋2 = pars2["紋2"].ToPar();
-    		pars2 = pars["揚羽"].ToPars();
+    		pars2 = partGroup["揚羽"].ToPars();
     		X0Y0_前翅_揚羽_柄1 = pars2["柄1"].ToPar();
     		X0Y0_前翅_揚羽_柄2 = pars2["柄2"].ToPar();
     		X0Y0_前翅_揚羽_柄3 = pars2["柄3"].ToPar();
@@ -695,14 +695,14 @@ namespace SlaveMatrix
     		X0Y0_前翅_揚羽_紋4 = pars2["紋4"].ToPar();
     		X0Y0_前翅_揚羽_紋5 = pars2["紋5"].ToPar();
     		X0Y0_前翅_揚羽_紋6 = pars2["紋6"].ToPar();
-    		pars = Body[0][1]["前翅"].ToPars();
-    		X0Y1_前翅_前翅 = pars["前翅"].ToPar();
-    		pars2 = pars["水青"].ToPars();
+    		partGroup = Body[0][1]["前翅"].ToPars();
+    		X0Y1_前翅_前翅 = partGroup["前翅"].ToPar();
+    		pars2 = partGroup["水青"].ToPars();
     		X0Y1_前翅_水青_柄 = pars2["柄"].ToPar();
     		X0Y1_前翅_水青_縁柄 = pars2["縁柄"].ToPar();
     		X0Y1_前翅_水青_紋1 = pars2["紋1"].ToPar();
     		X0Y1_前翅_水青_紋2 = pars2["紋2"].ToPar();
-    		pars2 = pars["揚羽"].ToPars();
+    		pars2 = partGroup["揚羽"].ToPars();
     		X0Y1_前翅_揚羽_柄1 = pars2["柄1"].ToPar();
     		X0Y1_前翅_揚羽_柄2 = pars2["柄2"].ToPar();
     		X0Y1_前翅_揚羽_柄3 = pars2["柄3"].ToPar();
@@ -887,27 +887,27 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		前翅_前翅CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		前翅_水青_柄CD = new ColorD(ref Col.Empty, ref 体配色.柄O);
-    		前翅_水青_縁柄CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		前翅_水青_紋1CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		前翅_水青_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		前翅_揚羽_柄1CD = new ColorD(ref Col.Black, ref 体配色.柄O);
-    		前翅_揚羽_柄2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		前翅_揚羽_柄3CD = new ColorD(ref Col.Black, ref 体配色.柄O);
-    		前翅_揚羽_柄4CD = new ColorD(ref Col.Black, ref 体配色.柄O);
-    		前翅_揚羽_柄5CD = new ColorD(ref Col.Black, ref 体配色.柄O);
-    		前翅_揚羽_柄6CD = new ColorD(ref Col.Black, ref 体配色.柄O);
-    		前翅_揚羽_柄7CD = new ColorD(ref Col.Black, ref 体配色.柄O);
-    		前翅_揚羽_柄8CD = new ColorD(ref Col.Black, ref 体配色.柄O);
-    		前翅_揚羽_柄9CD = new ColorD(ref Col.Black, ref 体配色.柄O);
-    		前翅_揚羽_柄10CD = new ColorD(ref Col.Black, ref 体配色.柄O);
-    		前翅_揚羽_紋1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		前翅_揚羽_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		前翅_揚羽_紋3CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		前翅_揚羽_紋4CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		前翅_揚羽_紋5CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		前翅_揚羽_紋6CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
+    		前翅_前翅CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		前翅_水青_柄CD = new ColorD(ref ColorHelper.Empty, ref 体配色.柄O);
+    		前翅_水青_縁柄CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		前翅_水青_紋1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		前翅_水青_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		前翅_揚羽_柄1CD = new ColorD(ref ColorHelper.Black, ref 体配色.柄O);
+    		前翅_揚羽_柄2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		前翅_揚羽_柄3CD = new ColorD(ref ColorHelper.Black, ref 体配色.柄O);
+    		前翅_揚羽_柄4CD = new ColorD(ref ColorHelper.Black, ref 体配色.柄O);
+    		前翅_揚羽_柄5CD = new ColorD(ref ColorHelper.Black, ref 体配色.柄O);
+    		前翅_揚羽_柄6CD = new ColorD(ref ColorHelper.Black, ref 体配色.柄O);
+    		前翅_揚羽_柄7CD = new ColorD(ref ColorHelper.Black, ref 体配色.柄O);
+    		前翅_揚羽_柄8CD = new ColorD(ref ColorHelper.Black, ref 体配色.柄O);
+    		前翅_揚羽_柄9CD = new ColorD(ref ColorHelper.Black, ref 体配色.柄O);
+    		前翅_揚羽_柄10CD = new ColorD(ref ColorHelper.Black, ref 体配色.柄O);
+    		前翅_揚羽_紋1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		前翅_揚羽_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		前翅_揚羽_紋3CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		前翅_揚羽_紋4CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		前翅_揚羽_紋5CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		前翅_揚羽_紋6CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
     	}
     }
 }

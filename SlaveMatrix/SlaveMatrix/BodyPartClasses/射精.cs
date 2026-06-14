@@ -3,63 +3,63 @@ using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
-    public class 射精 : Ele
+    public class 射精 : Element
     {
-    	public Par X0Y0_精液;
+    	public ShapePart X0Y0_精液;
 
-    	public Par X0Y1_精液;
+    	public ShapePart X0Y1_精液;
 
-    	public Par X0Y2_精液;
+    	public ShapePart X0Y2_精液;
 
-    	public Par X0Y3_精液;
+    	public ShapePart X0Y3_精液;
 
-    	public Par X0Y4_精液;
+    	public ShapePart X0Y4_精液;
 
-    	public Par X0Y5_精液;
+    	public ShapePart X0Y5_精液;
 
-    	public Par X0Y6_精液;
+    	public ShapePart X0Y6_精液;
 
-    	public Par X1Y0_精液;
+    	public ShapePart X1Y0_精液;
 
-    	public Par X1Y1_精液;
+    	public ShapePart X1Y1_精液;
 
-    	public Par X1Y2_精液;
+    	public ShapePart X1Y2_精液;
 
-    	public Par X1Y3_精液;
+    	public ShapePart X1Y3_精液;
 
-    	public Par X1Y4_精液;
+    	public ShapePart X1Y4_精液;
 
-    	public Par X1Y5_精液;
+    	public ShapePart X1Y5_精液;
 
-    	public Par X1Y6_精液;
+    	public ShapePart X1Y6_精液;
 
-    	public Par X1Y7_精液;
+    	public ShapePart X1Y7_精液;
 
-    	public Par X1Y8_精液掛け;
+    	public ShapePart X1Y8_精液掛け;
 
-    	public Par X1Y8_精液;
+    	public ShapePart X1Y8_精液;
 
-    	public Par X1Y9_精液掛け;
+    	public ShapePart X1Y9_精液掛け;
 
-    	public Par X1Y9_精液;
+    	public ShapePart X1Y9_精液;
 
-    	public Par X1Y10_精液掛け;
+    	public ShapePart X1Y10_精液掛け;
 
-    	public Par X1Y10_精液;
+    	public ShapePart X1Y10_精液;
 
-    	public Par X1Y11_精液掛け;
+    	public ShapePart X1Y11_精液掛け;
 
-    	public Par X1Y11_精液;
+    	public ShapePart X1Y11_精液;
 
-    	public Par X1Y12_精液掛け;
+    	public ShapePart X1Y12_精液掛け;
 
-    	public Par X1Y12_精液;
+    	public ShapePart X1Y12_精液;
 
-    	public Par X1Y13_精液掛け;
+    	public ShapePart X1Y13_精液掛け;
 
-    	public Par X1Y13_精液;
+    	public ShapePart X1Y13_精液;
 
-    	public Par X1Y14_精液;
+    	public ShapePart X1Y14_精液;
 
     	public ColorD 精液掛けCD;
 
@@ -264,57 +264,57 @@ namespace SlaveMatrix
     	public 射精(double DisUnit, 配色指定 配色指定, 主人公配色 体配色, ModeEventDispatcher Med, 射精D e)
     	{
     		ThisType = GetType();
-    		Body = new Difs(Sta.カーソル["射精"]);
-    		Pars pars = Body[0][0];
-    		X0Y0_精液 = pars["精液"].ToPar();
-    		pars = Body[0][1];
-    		X0Y1_精液 = pars["精液"].ToPar();
-    		pars = Body[0][2];
-    		X0Y2_精液 = pars["精液"].ToPar();
-    		pars = Body[0][3];
-    		X0Y3_精液 = pars["精液"].ToPar();
-    		pars = Body[0][4];
-    		X0Y4_精液 = pars["精液"].ToPar();
-    		pars = Body[0][5];
-    		X0Y5_精液 = pars["精液"].ToPar();
-    		pars = Body[0][6];
-    		X0Y6_精液 = pars["精液"].ToPar();
-    		pars = Body[1][0];
-    		X1Y0_精液 = pars["精液"].ToPar();
-    		pars = Body[1][1];
-    		X1Y1_精液 = pars["精液"].ToPar();
-    		pars = Body[1][2];
-    		X1Y2_精液 = pars["精液"].ToPar();
-    		pars = Body[1][3];
-    		X1Y3_精液 = pars["精液"].ToPar();
-    		pars = Body[1][4];
-    		X1Y4_精液 = pars["精液"].ToPar();
-    		pars = Body[1][5];
-    		X1Y5_精液 = pars["精液"].ToPar();
-    		pars = Body[1][6];
-    		X1Y6_精液 = pars["精液"].ToPar();
-    		pars = Body[1][7];
-    		X1Y7_精液 = pars["精液"].ToPar();
-    		pars = Body[1][8];
-    		X1Y8_精液掛け = pars["精液掛け"].ToPar();
-    		X1Y8_精液 = pars["精液"].ToPar();
-    		pars = Body[1][9];
-    		X1Y9_精液掛け = pars["精液掛け"].ToPar();
-    		X1Y9_精液 = pars["精液"].ToPar();
-    		pars = Body[1][10];
-    		X1Y10_精液掛け = pars["精液掛け"].ToPar();
-    		X1Y10_精液 = pars["精液"].ToPar();
-    		pars = Body[1][11];
-    		X1Y11_精液掛け = pars["精液掛け"].ToPar();
-    		X1Y11_精液 = pars["精液"].ToPar();
-    		pars = Body[1][12];
-    		X1Y12_精液掛け = pars["精液掛け"].ToPar();
-    		X1Y12_精液 = pars["精液"].ToPar();
-    		pars = Body[1][13];
-    		X1Y13_精液掛け = pars["精液掛け"].ToPar();
-    		X1Y13_精液 = pars["精液"].ToPar();
-    		pars = Body[1][14];
-    		X1Y14_精液 = pars["精液"].ToPar();
+    		Body = new VariantGrid(GlobalState.カーソル["射精"]);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_精液 = partGroup["精液"].ToPar();
+    		partGroup = Body[0][1];
+    		X0Y1_精液 = partGroup["精液"].ToPar();
+    		partGroup = Body[0][2];
+    		X0Y2_精液 = partGroup["精液"].ToPar();
+    		partGroup = Body[0][3];
+    		X0Y3_精液 = partGroup["精液"].ToPar();
+    		partGroup = Body[0][4];
+    		X0Y4_精液 = partGroup["精液"].ToPar();
+    		partGroup = Body[0][5];
+    		X0Y5_精液 = partGroup["精液"].ToPar();
+    		partGroup = Body[0][6];
+    		X0Y6_精液 = partGroup["精液"].ToPar();
+    		partGroup = Body[1][0];
+    		X1Y0_精液 = partGroup["精液"].ToPar();
+    		partGroup = Body[1][1];
+    		X1Y1_精液 = partGroup["精液"].ToPar();
+    		partGroup = Body[1][2];
+    		X1Y2_精液 = partGroup["精液"].ToPar();
+    		partGroup = Body[1][3];
+    		X1Y3_精液 = partGroup["精液"].ToPar();
+    		partGroup = Body[1][4];
+    		X1Y4_精液 = partGroup["精液"].ToPar();
+    		partGroup = Body[1][5];
+    		X1Y5_精液 = partGroup["精液"].ToPar();
+    		partGroup = Body[1][6];
+    		X1Y6_精液 = partGroup["精液"].ToPar();
+    		partGroup = Body[1][7];
+    		X1Y7_精液 = partGroup["精液"].ToPar();
+    		partGroup = Body[1][8];
+    		X1Y8_精液掛け = partGroup["精液掛け"].ToPar();
+    		X1Y8_精液 = partGroup["精液"].ToPar();
+    		partGroup = Body[1][9];
+    		X1Y9_精液掛け = partGroup["精液掛け"].ToPar();
+    		X1Y9_精液 = partGroup["精液"].ToPar();
+    		partGroup = Body[1][10];
+    		X1Y10_精液掛け = partGroup["精液掛け"].ToPar();
+    		X1Y10_精液 = partGroup["精液"].ToPar();
+    		partGroup = Body[1][11];
+    		X1Y11_精液掛け = partGroup["精液掛け"].ToPar();
+    		X1Y11_精液 = partGroup["精液"].ToPar();
+    		partGroup = Body[1][12];
+    		X1Y12_精液掛け = partGroup["精液掛け"].ToPar();
+    		X1Y12_精液 = partGroup["精液"].ToPar();
+    		partGroup = Body[1][13];
+    		X1Y13_精液掛け = partGroup["精液掛け"].ToPar();
+    		X1Y13_精液 = partGroup["精液"].ToPar();
+    		partGroup = Body[1][14];
+    		X1Y14_精液 = partGroup["精液"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;

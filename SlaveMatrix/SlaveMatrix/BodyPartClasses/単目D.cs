@@ -6,7 +6,7 @@ using SlaveMatrix.GameClasses;
 namespace SlaveMatrix
 {
     [Serializable]
-    public class 単目D : EleD
+    public class 単目D : ElementData
     {
     	public bool 白目_表示 = true;
 
@@ -24,21 +24,21 @@ namespace SlaveMatrix
 
     	public bool 蛸目;
 
-    	public List<EleD> 瞼_接続 = new List<EleD>();
+    	public List<ElementData> 瞼_接続 = new List<ElementData>();
 
     	public 単目D()
     	{
     		ThisType = GetType();
     	}
 
-    	public void 瞼接続(EleD e)
+    	public void 瞼接続(ElementData e)
     	{
     		瞼_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.単目_瞼_接続;
     	}
 
-    	public override Ele GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
+    	public override Element GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
     	{
     		return new 単目(DisUnit, 配色指定, 体配色, Med, this);
     	}

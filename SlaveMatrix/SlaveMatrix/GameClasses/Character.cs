@@ -13,10 +13,10 @@ namespace SlaveMatrix
     {
         private sealed class BodyPartRef
         {
-            public EleI EI;
+            public ElementInstance EI;
             public bool Heavy;
 
-            public BodyPartRef(EleI ei, bool heavy)
+            public BodyPartRef(ElementInstance ei, bool heavy)
             {
                 this.EI = ei;
                 this.Heavy = heavy;
@@ -158,7 +158,7 @@ namespace SlaveMatrix
 
     	private bool 重腿;
 
-    	private Vector2D p = Dat.Vec2DZero;
+    	private Vector2D p = DataConsts.Vec2DZero;
 
         private delegate void MorphMotion(double value);
 
@@ -350,7 +350,7 @@ namespace SlaveMatrix
         private void ResetMoveParts()
         {
             for (int i = 0; i < _moveParts.Count; i++)            
-                _moveParts[i].EI.Position = Dat.Vec2DZero;            
+                _moveParts[i].EI.Position = DataConsts.Vec2DZero;            
         }
         private void ApplyContParts(Vector2D offset)
         {
@@ -367,7 +367,7 @@ namespace SlaveMatrix
         private void ResetContParts()
         {
             for (int i = 0; i < _moveParts.Count; i++)
-                _moveParts[i].EI.PositionCont = Dat.Vec2DZero;
+                _moveParts[i].EI.PositionCont = DataConsts.Vec2DZero;
         }
         public double BreathingSpeed
     	{
@@ -774,7 +774,7 @@ namespace SlaveMatrix
     				},
     				OnLoop = delegate(Motion m)
     				{
-    					m.Interval = 5000.0 * RNG.XS.NextDouble();
+    					m.Interval = 5000.0 * Rng.XS.NextDouble();
     				},
     				OnEnd = delegate
     				{
@@ -812,7 +812,7 @@ namespace SlaveMatrix
     				},
     				OnLoop = delegate(Motion m)
     				{
-    					m.Interval = 5000.0 * RNG.XS.NextDouble();
+    					m.Interval = 5000.0 * Rng.XS.NextDouble();
     				},
     				OnEnd = delegate
     				{
@@ -833,7 +833,7 @@ namespace SlaveMatrix
     				cha.Body.MouthCum.Intensity = 1.0 * mouthCumIntensity;
     				cha.Body.MouthCum.精液_表示 = true;
     				o = true;
-    				cha.Body.MouthCum.右 = RNG.XS.NextBool();
+    				cha.Body.MouthCum.右 = Rng.XS.NextBool();
     			},
     			OnUpdate = delegate(Motion m)
     			{
@@ -874,7 +874,7 @@ namespace SlaveMatrix
     				cha.Body.GenetalCum.精液_表示 = true;
     				v = true;
     				zd = cha.Body.VaginalCumDrip.精液濃度;
-    				cha.Body.GenetalCum.右 = RNG.XS.NextBool();
+    				cha.Body.GenetalCum.右 = Rng.XS.NextBool();
     			},
     			OnUpdate = delegate(Motion m)
     			{
@@ -914,7 +914,7 @@ namespace SlaveMatrix
     				cha.Body.AnalCum.Intensity = 1.0 * analCumIntensity;
     				cha.Body.AnalCum.精液_表示 = true;
     				a = true;
-    				cha.Body.AnalCum.右 = RNG.XS.NextBool();
+    				cha.Body.AnalCum.右 = Rng.XS.NextBool();
     			},
     			OnUpdate = delegate(Motion m)
     			{
@@ -953,7 +953,7 @@ namespace SlaveMatrix
     				cha.Body.ThreadCum.Intensity = 1.0 * threadCumIntensity;
     				cha.Body.ThreadCum.精液_表示 = true;
     				z = true;
-    				cha.Body.ThreadCum.右 = RNG.XS.NextBool();
+    				cha.Body.ThreadCum.右 = Rng.XS.NextBool();
     			},
     			OnUpdate = delegate(Motion m)
     			{
@@ -1013,7 +1013,7 @@ namespace SlaveMatrix
     			{
     				cha.Body.潮吹_大.Yv = 0.0;
     				cha.Body.潮吹_大.表示 = true;
-    				cha.Body.潮吹_大.右 = RNG.XS.NextBool();
+    				cha.Body.潮吹_大.右 = Rng.XS.NextBool();
     				if (cha.潮吹擬音 != null)
     				{
     					cha.潮吹擬音();
@@ -1333,9 +1333,9 @@ namespace SlaveMatrix
     		};
     		Motions.Add(ClimaxEnd.GetHashCode().ToString(), ClimaxEnd);
     		double savedHipValue = 0.0;
-    		Par pa = Body.Waist.Body.GetCurJoinRoot();
-    		Par pb = null;
-    		Vector2D vec = Dat.Vec2DZero;
+    		ShapePart pa = Body.Waist.Body.GetCurJoinRoot();
+    		ShapePart pb = null;
+    		Vector2D vec = DataConsts.Vec2DZero;
     		Action 腰接続 = delegate
     		{
     			pb = cha.Body.Waist.Body.GetCurJoinRoot();
@@ -1354,11 +1354,11 @@ namespace SlaveMatrix
     			},
     			OnUpdate = delegate(Motion m)
     			{
-    				d = 5.0 * (0.15 + cha.ClimaxIntensity) * m.Value.Sin() * RNG.XS.NextDouble() * l;
+    				d = 5.0 * (0.15 + cha.ClimaxIntensity) * m.Value.Sin() * Rng.XS.NextDouble() * l;
 
                     cha.ApplyMorphMotions(d, false);
     				
-    				cha.Body.HipMotionValue = d * RNG.XS.NextDouble();
+    				cha.Body.HipMotionValue = d * Rng.XS.NextDouble();
     				cha.Body.Waist.位置C = new Vector2D(0.0, 0.0005 * d);
     				cha.Body.乳房左.位置C = cha.Body.Waist.位置C;
     				cha.Body.乳房右.位置C = cha.Body.Waist.位置C;
@@ -1382,11 +1382,11 @@ namespace SlaveMatrix
     			OnEnd = delegate
     			{
     				cha.Body.HipMotion_人v = savedHipValue;
-    				cha.Body.Waist.位置C = Dat.Vec2DZero;
+    				cha.Body.Waist.位置C = DataConsts.Vec2DZero;
     				if (!cha.Body.乳房左.着衣)
     				{
-    					cha.Body.乳房左.位置C = Dat.Vec2DZero;
-    					cha.Body.乳房右.位置C = Dat.Vec2DZero;
+    					cha.Body.乳房左.位置C = DataConsts.Vec2DZero;
+    					cha.Body.乳房右.位置C = DataConsts.Vec2DZero;
     				}
 
                     ResetContParts();
@@ -1403,7 +1403,7 @@ namespace SlaveMatrix
     			},
     			OnUpdate = delegate(Motion m)
     			{
-    				cha.Body.肛門C = 0.5 + m.Value.Sin() * RNG.XS.NextDouble() * 0.5;
+    				cha.Body.肛門C = 0.5 + m.Value.Sin() * Rng.XS.NextDouble() * 0.5;
     				if (肛sw.ElapsedMilliseconds > 5000)
     				{
     					m.End();
@@ -1432,7 +1432,7 @@ namespace SlaveMatrix
     			},
     			OnUpdate = delegate(Motion m)
     			{
-    				cha.Body.膣腔C = 1.0 + m.Value.Sin() * RNG.XS.NextDouble() * 0.5;
+    				cha.Body.膣腔C = 1.0 + m.Value.Sin() * Rng.XS.NextDouble() * 0.5;
     				if (膣sw.ElapsedMilliseconds > 5000)
     				{
     					m.End();
@@ -1541,7 +1541,7 @@ namespace SlaveMatrix
     			}
     		};
     		Motions.Add(顔面展開.GetHashCode().ToString(), 顔面展開);
-    		Vector2D p_ = Dat.Vec2DZero;
+    		Vector2D p_ = DataConsts.Vec2DZero;
     		double d_;
     		BodySway = new Motion(0.0, 1.0)
     		{
@@ -1571,11 +1571,11 @@ namespace SlaveMatrix
     			},
     			OnEnd = delegate
     			{
-    				cha.Body.Waist.位置C = Dat.Vec2DZero;
+    				cha.Body.Waist.位置C = DataConsts.Vec2DZero;
     				if (!cha.Body.乳房左.着衣)
     				{
-    					cha.Body.乳房左.位置C = Dat.Vec2DZero;
-    					cha.Body.乳房右.位置C = Dat.Vec2DZero;
+    					cha.Body.乳房左.位置C = DataConsts.Vec2DZero;
+    					cha.Body.乳房右.位置C = DataConsts.Vec2DZero;
     				}
 
                     ResetMoveParts();
@@ -1594,22 +1594,22 @@ namespace SlaveMatrix
     				cha.UpdateExpression();
     				if (cha.Body.IsDualEyes)
     				{
-    					cha.両瞼_1(RNG.XS.Next(1, 4), RNG.XS.Next(1, 4));
+    					cha.両瞼_1(Rng.XS.Next(1, 4), Rng.XS.Next(1, 4));
     				}
     				else if (cha.Body.IsSingleEye)
     				{
-    					cha.単瞼_1(RNG.XS.Next(1, 4));
+    					cha.単瞼_1(Rng.XS.Next(1, 4));
     				}
     				if (cha.Body.IsCheekEyes)
     				{
-    					cha.両頬瞼_1(RNG.XS.Next(1, 4), RNG.XS.Next(1, 4));
+    					cha.両頬瞼_1(Rng.XS.Next(1, 4), Rng.XS.Next(1, 4));
     				}
     				if (cha.Body.IsForeheadEye)
     				{
-    					cha.額瞼_1(RNG.XS.Next(1, 4));
+    					cha.額瞼_1(Rng.XS.Next(1, 4));
     				}
     				c_ = 0;
-    				CoughCount = RNG.XS.NextM(1, 2) + Player.UI.ペニス処理.中出しCount / 2;
+    				CoughCount = Rng.XS.NextM(1, 2) + Player.UI.ペニス処理.中出しCount / 2;
     			},
     			OnUpdate = delegate(Motion m)
     			{
@@ -1665,7 +1665,7 @@ namespace SlaveMatrix
     			},
     			OnEnd = delegate
     			{
-    				if (RNG.XS.NextBool())
+    				if (Rng.XS.NextBool())
     				{
     					//Sounds.挿抜口1.Play();
     				}
@@ -1678,14 +1678,14 @@ namespace SlaveMatrix
     		};
     		Motions.Add(Swallow.GetHashCode().ToString(), Swallow);
     		Motions.Drive(Med.FPSF);
-    		Med.SetUniqueColor(Body.Elements.Select((Ele e) => e.Body.EnumAllPar()).JoinEnum());
+    		Med.SetUniqueColor(Body.Elements.Select((Element e) => e.Body.EnumAllPar()).JoinEnum());
     		汗掻き = new Sweat(Med, Are, this, Motions);
     		汗かき = 汗掻き.汗かき;
     		Body.汗掻き = 汗掻き;
     		this.SetInitialAngle();
     	}
 
-    	public void Draw(RenderArea Are, FPS FPS)
+    	public void Draw(RenderArea Are, FpsCounter FPS)
     	{
     		this.FPS = FPS.Value;
     		Motions.Drive(FPS);
@@ -1696,7 +1696,7 @@ namespace SlaveMatrix
     	{
     		Body.Dispose();
     		汗掻き.Dispose();
-    		ModeEventDispatcher.RemUniqueColor(Body.Elements.Select((Ele e) => e.Body.EnumAllPar()).JoinEnum());
+    		ModeEventDispatcher.RemUniqueColor(Body.Elements.Select((Element e) => e.Body.EnumAllPar()).JoinEnum());
     	}
 
     	public void Set衣装(IEnumerable<object> 衣装)
@@ -1716,7 +1716,7 @@ namespace SlaveMatrix
     				continue;
     			}
     			dictionary.Add(type, 0);
-    			dictionary2.Add(type, (from e in Sta.Bodt.GetProperties()
+    			dictionary2.Add(type, (from e in GlobalState.Bodt.GetProperties()
     				where e.PropertyType.ToString() == ts
     				select e).ToArray());
     			dictionary2[type][dictionary[type]].SetValue(Body, item, null);
@@ -1724,12 +1724,12 @@ namespace SlaveMatrix
     		}
     		if (!CharacterData.股施術 && Body.Is股防御())
     		{
-    			Body.Setピアス = Sta.ピアス初期化;
+    			Body.Setピアス = GlobalState.ピアス初期化;
     		}
     		if (!CharacterData.胸施術 && Body.Is胸甲殻())
     		{
-    			Body.Setピアス左 = Sta.ピアス初期化;
-    			Body.Setピアス右 = Sta.ピアス初期化;
+    			Body.Setピアス左 = GlobalState.ピアス初期化;
+    			Body.Setピアス右 = GlobalState.ピアス初期化;
     		}
     	}
 

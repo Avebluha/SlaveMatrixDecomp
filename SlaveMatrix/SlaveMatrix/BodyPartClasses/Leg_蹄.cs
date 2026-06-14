@@ -6,21 +6,21 @@ namespace SlaveMatrix
 {
     public class Leg_蹄 : 獣脚
     {
-    	public Par X0Y0_Leg;
+    	public ShapePart X0Y0_Leg;
 
-    	public Par X0Y0_筋;
+    	public ShapePart X0Y0_筋;
 
-    	public Par X0Y0_脚輪_革;
+    	public ShapePart X0Y0_脚輪_革;
 
-    	public Par X0Y0_脚輪_金具1;
+    	public ShapePart X0Y0_脚輪_金具1;
 
-    	public Par X0Y0_脚輪_金具2;
+    	public ShapePart X0Y0_脚輪_金具2;
 
-    	public Par X0Y0_脚輪_金具3;
+    	public ShapePart X0Y0_脚輪_金具3;
 
-    	public Par X0Y0_脚輪_金具左;
+    	public ShapePart X0Y0_脚輪_金具左;
 
-    	public Par X0Y0_脚輪_金具右;
+    	public ShapePart X0Y0_脚輪_金具右;
 
     	public ColorD LegCD;
 
@@ -276,14 +276,14 @@ namespace SlaveMatrix
     	{
     		Leg_蹄 Leg_蹄2 = this;
     		ThisType = GetType();
-    		Dif dif = new Dif(Sta.脚左["四足脚"][1]);
-    		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		X0Y0_Leg = pars["脚"].ToPar();
-    		X0Y0_筋 = pars["筋"].ToPar();
-    		Pars pars2 = pars["脚輪"].ToPars();
+    		MorphVariant morphVariant = new MorphVariant(GlobalState.脚左["四足脚"][1]);
+    		Body = new VariantGrid();
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_Leg = partGroup["脚"].ToPar();
+    		X0Y0_筋 = partGroup["筋"].ToPar();
+    		PartGroup pars2 = partGroup["脚輪"].ToPars();
     		X0Y0_脚輪_革 = pars2["革"].ToPar();
     		X0Y0_脚輪_金具1 = pars2["金具1"].ToPar();
     		X0Y0_脚輪_金具2 = pars2["金具2"].ToPar();
@@ -332,8 +332,8 @@ namespace SlaveMatrix
     		}
     		if (e.足_接続.Count > 0)
     		{
-    			Ele f;
-    			足_接続 = e.足_接続.Select(delegate(EleD g)
+    			Element f;
+    			足_接続 = e.足_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = Leg_蹄2;
@@ -379,7 +379,7 @@ namespace SlaveMatrix
     		Body.JoinPAall();
     	}
 
-    	public override bool Is革(Par p)
+    	public override bool Is革(ShapePart p)
     	{
     		if (p != X0Y0_脚輪_革 && p != X0Y0_脚輪_金具1 && p != X0Y0_脚輪_金具2 && p != X0Y0_脚輪_金具3 && p != X0Y0_脚輪_金具左)
     		{
@@ -409,7 +409,7 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		LegCD = new ColorD(ref Col.Black, ref 体配色.毛0O);
+    		LegCD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
     		筋CD = new ColorD(ref 体配色.薄線, ref 体配色.毛0O);
     		脚輪_革CD = new ColorD();
     		脚輪_金具1CD = new ColorD();

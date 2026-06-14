@@ -2,7 +2,7 @@ using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
-    public class 肛門精液 : Ele
+    public class 肛門精液 : Element
     {
     	public override double 肥大
     	{

@@ -4,115 +4,115 @@ namespace SlaveMatrix
 {
     public class 断面_獣 : 断面
     {
-    	public Par X0Y0_膣基;
+    	public ShapePart X0Y0_膣基;
 
-    	public Par X0Y0_膣壁左;
+    	public ShapePart X0Y0_膣壁左;
 
-    	public Par X0Y0_膣壁右;
+    	public ShapePart X0Y0_膣壁右;
 
-    	public Par X0Y0_卵巣左;
+    	public ShapePart X0Y0_卵巣左;
 
-    	public Par X0Y0_卵管左;
+    	public ShapePart X0Y0_卵管左;
 
-    	public Par X0Y0_卵巣右;
+    	public ShapePart X0Y0_卵巣右;
 
-    	public Par X0Y0_卵管右;
+    	public ShapePart X0Y0_卵管右;
 
-    	public Par X0Y0_子宮;
+    	public ShapePart X0Y0_子宮;
 
-    	public Par X0Y0_子宮内;
+    	public ShapePart X0Y0_子宮内;
 
-    	public Par X0Y0_子宮口;
+    	public ShapePart X0Y0_子宮口;
 
-    	public Par X0Y0_精液;
+    	public ShapePart X0Y0_精液;
 
-    	public Par X0Y1_膣基;
+    	public ShapePart X0Y1_膣基;
 
-    	public Par X0Y1_膣壁左;
+    	public ShapePart X0Y1_膣壁左;
 
-    	public Par X0Y1_膣壁右;
+    	public ShapePart X0Y1_膣壁右;
 
-    	public Par X0Y1_卵巣左;
+    	public ShapePart X0Y1_卵巣左;
 
-    	public Par X0Y1_卵管左;
+    	public ShapePart X0Y1_卵管左;
 
-    	public Par X0Y1_卵巣右;
+    	public ShapePart X0Y1_卵巣右;
 
-    	public Par X0Y1_卵管右;
+    	public ShapePart X0Y1_卵管右;
 
-    	public Par X0Y1_子宮;
+    	public ShapePart X0Y1_子宮;
 
-    	public Par X0Y1_子宮内;
+    	public ShapePart X0Y1_子宮内;
 
-    	public Par X0Y1_子宮口;
+    	public ShapePart X0Y1_子宮口;
 
-    	public Par X0Y1_精液;
+    	public ShapePart X0Y1_精液;
 
-    	public Par X0Y2_膣基;
+    	public ShapePart X0Y2_膣基;
 
-    	public Par X0Y2_膣壁左;
+    	public ShapePart X0Y2_膣壁左;
 
-    	public Par X0Y2_膣壁右;
+    	public ShapePart X0Y2_膣壁右;
 
-    	public Par X0Y2_卵巣左;
+    	public ShapePart X0Y2_卵巣左;
 
-    	public Par X0Y2_卵管左;
+    	public ShapePart X0Y2_卵管左;
 
-    	public Par X0Y2_卵巣右;
+    	public ShapePart X0Y2_卵巣右;
 
-    	public Par X0Y2_卵管右;
+    	public ShapePart X0Y2_卵管右;
 
-    	public Par X0Y2_子宮;
+    	public ShapePart X0Y2_子宮;
 
-    	public Par X0Y2_子宮内;
+    	public ShapePart X0Y2_子宮内;
 
-    	public Par X0Y2_子宮口;
+    	public ShapePart X0Y2_子宮口;
 
-    	public Par X0Y2_精液;
+    	public ShapePart X0Y2_精液;
 
-    	public Par X0Y3_膣基;
+    	public ShapePart X0Y3_膣基;
 
-    	public Par X0Y3_膣壁左;
+    	public ShapePart X0Y3_膣壁左;
 
-    	public Par X0Y3_膣壁右;
+    	public ShapePart X0Y3_膣壁右;
 
-    	public Par X0Y3_卵巣左;
+    	public ShapePart X0Y3_卵巣左;
 
-    	public Par X0Y3_卵管左;
+    	public ShapePart X0Y3_卵管左;
 
-    	public Par X0Y3_卵巣右;
+    	public ShapePart X0Y3_卵巣右;
 
-    	public Par X0Y3_卵管右;
+    	public ShapePart X0Y3_卵管右;
 
-    	public Par X0Y3_子宮;
+    	public ShapePart X0Y3_子宮;
 
-    	public Par X0Y3_子宮内;
+    	public ShapePart X0Y3_子宮内;
 
-    	public Par X0Y3_子宮口;
+    	public ShapePart X0Y3_子宮口;
 
-    	public Par X0Y3_精液;
+    	public ShapePart X0Y3_精液;
 
-    	public Par X0Y4_膣基;
+    	public ShapePart X0Y4_膣基;
 
-    	public Par X0Y4_膣壁左;
+    	public ShapePart X0Y4_膣壁左;
 
-    	public Par X0Y4_膣壁右;
+    	public ShapePart X0Y4_膣壁右;
 
-    	public Par X0Y4_卵巣左;
+    	public ShapePart X0Y4_卵巣左;
 
-    	public Par X0Y4_卵管左;
+    	public ShapePart X0Y4_卵管左;
 
-    	public Par X0Y4_卵巣右;
+    	public ShapePart X0Y4_卵巣右;
 
-    	public Par X0Y4_卵管右;
+    	public ShapePart X0Y4_卵管右;
 
-    	public Par X0Y4_子宮;
+    	public ShapePart X0Y4_子宮;
 
-    	public Par X0Y4_子宮内;
+    	public ShapePart X0Y4_子宮内;
 
-    	public Par X0Y4_子宮口;
+    	public ShapePart X0Y4_子宮口;
 
-    	public Par X0Y4_精液;
+    	public ShapePart X0Y4_精液;
 
     	public ColorD 膣基CD;
 
@@ -619,67 +619,67 @@ namespace SlaveMatrix
     	public 断面_獣(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 断面_獣D e)
     	{
     		ThisType = GetType();
-    		Body = new Difs(Sta.半身["四足断面"]);
-    		Pars pars = Body[0][0];
-    		X0Y0_膣基 = pars["膣基"].ToPar();
-    		X0Y0_膣壁左 = pars["膣壁左"].ToPar();
-    		X0Y0_膣壁右 = pars["膣壁右"].ToPar();
-    		X0Y0_卵巣左 = pars["卵巣左"].ToPar();
-    		X0Y0_卵管左 = pars["卵管左"].ToPar();
-    		X0Y0_卵巣右 = pars["卵巣右"].ToPar();
-    		X0Y0_卵管右 = pars["卵管右"].ToPar();
-    		X0Y0_子宮 = pars["子宮"].ToPar();
-    		X0Y0_子宮内 = pars["子宮内"].ToPar();
-    		X0Y0_子宮口 = pars["子宮口"].ToPar();
-    		X0Y0_精液 = pars["精液"].ToPar();
-    		pars = Body[0][1];
-    		X0Y1_膣基 = pars["膣基"].ToPar();
-    		X0Y1_膣壁左 = pars["膣壁左"].ToPar();
-    		X0Y1_膣壁右 = pars["膣壁右"].ToPar();
-    		X0Y1_卵巣左 = pars["卵巣左"].ToPar();
-    		X0Y1_卵管左 = pars["卵管左"].ToPar();
-    		X0Y1_卵巣右 = pars["卵巣右"].ToPar();
-    		X0Y1_卵管右 = pars["卵管右"].ToPar();
-    		X0Y1_子宮 = pars["子宮"].ToPar();
-    		X0Y1_子宮内 = pars["子宮内"].ToPar();
-    		X0Y1_子宮口 = pars["子宮口"].ToPar();
-    		X0Y1_精液 = pars["精液"].ToPar();
-    		pars = Body[0][2];
-    		X0Y2_膣基 = pars["膣基"].ToPar();
-    		X0Y2_膣壁左 = pars["膣壁左"].ToPar();
-    		X0Y2_膣壁右 = pars["膣壁右"].ToPar();
-    		X0Y2_卵巣左 = pars["卵巣左"].ToPar();
-    		X0Y2_卵管左 = pars["卵管左"].ToPar();
-    		X0Y2_卵巣右 = pars["卵巣右"].ToPar();
-    		X0Y2_卵管右 = pars["卵管右"].ToPar();
-    		X0Y2_子宮 = pars["子宮"].ToPar();
-    		X0Y2_子宮内 = pars["子宮内"].ToPar();
-    		X0Y2_子宮口 = pars["子宮口"].ToPar();
-    		X0Y2_精液 = pars["精液"].ToPar();
-    		pars = Body[0][3];
-    		X0Y3_膣基 = pars["膣基"].ToPar();
-    		X0Y3_膣壁左 = pars["膣壁左"].ToPar();
-    		X0Y3_膣壁右 = pars["膣壁右"].ToPar();
-    		X0Y3_卵巣左 = pars["卵巣左"].ToPar();
-    		X0Y3_卵管左 = pars["卵管左"].ToPar();
-    		X0Y3_卵巣右 = pars["卵巣右"].ToPar();
-    		X0Y3_卵管右 = pars["卵管右"].ToPar();
-    		X0Y3_子宮 = pars["子宮"].ToPar();
-    		X0Y3_子宮内 = pars["子宮内"].ToPar();
-    		X0Y3_子宮口 = pars["子宮口"].ToPar();
-    		X0Y3_精液 = pars["精液"].ToPar();
-    		pars = Body[0][4];
-    		X0Y4_膣基 = pars["膣基"].ToPar();
-    		X0Y4_膣壁左 = pars["膣壁左"].ToPar();
-    		X0Y4_膣壁右 = pars["膣壁右"].ToPar();
-    		X0Y4_卵巣左 = pars["卵巣左"].ToPar();
-    		X0Y4_卵管左 = pars["卵管左"].ToPar();
-    		X0Y4_卵巣右 = pars["卵巣右"].ToPar();
-    		X0Y4_卵管右 = pars["卵管右"].ToPar();
-    		X0Y4_子宮 = pars["子宮"].ToPar();
-    		X0Y4_子宮内 = pars["子宮内"].ToPar();
-    		X0Y4_子宮口 = pars["子宮口"].ToPar();
-    		X0Y4_精液 = pars["精液"].ToPar();
+    		Body = new VariantGrid(GlobalState.半身["四足断面"]);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_膣基 = partGroup["膣基"].ToPar();
+    		X0Y0_膣壁左 = partGroup["膣壁左"].ToPar();
+    		X0Y0_膣壁右 = partGroup["膣壁右"].ToPar();
+    		X0Y0_卵巣左 = partGroup["卵巣左"].ToPar();
+    		X0Y0_卵管左 = partGroup["卵管左"].ToPar();
+    		X0Y0_卵巣右 = partGroup["卵巣右"].ToPar();
+    		X0Y0_卵管右 = partGroup["卵管右"].ToPar();
+    		X0Y0_子宮 = partGroup["子宮"].ToPar();
+    		X0Y0_子宮内 = partGroup["子宮内"].ToPar();
+    		X0Y0_子宮口 = partGroup["子宮口"].ToPar();
+    		X0Y0_精液 = partGroup["精液"].ToPar();
+    		partGroup = Body[0][1];
+    		X0Y1_膣基 = partGroup["膣基"].ToPar();
+    		X0Y1_膣壁左 = partGroup["膣壁左"].ToPar();
+    		X0Y1_膣壁右 = partGroup["膣壁右"].ToPar();
+    		X0Y1_卵巣左 = partGroup["卵巣左"].ToPar();
+    		X0Y1_卵管左 = partGroup["卵管左"].ToPar();
+    		X0Y1_卵巣右 = partGroup["卵巣右"].ToPar();
+    		X0Y1_卵管右 = partGroup["卵管右"].ToPar();
+    		X0Y1_子宮 = partGroup["子宮"].ToPar();
+    		X0Y1_子宮内 = partGroup["子宮内"].ToPar();
+    		X0Y1_子宮口 = partGroup["子宮口"].ToPar();
+    		X0Y1_精液 = partGroup["精液"].ToPar();
+    		partGroup = Body[0][2];
+    		X0Y2_膣基 = partGroup["膣基"].ToPar();
+    		X0Y2_膣壁左 = partGroup["膣壁左"].ToPar();
+    		X0Y2_膣壁右 = partGroup["膣壁右"].ToPar();
+    		X0Y2_卵巣左 = partGroup["卵巣左"].ToPar();
+    		X0Y2_卵管左 = partGroup["卵管左"].ToPar();
+    		X0Y2_卵巣右 = partGroup["卵巣右"].ToPar();
+    		X0Y2_卵管右 = partGroup["卵管右"].ToPar();
+    		X0Y2_子宮 = partGroup["子宮"].ToPar();
+    		X0Y2_子宮内 = partGroup["子宮内"].ToPar();
+    		X0Y2_子宮口 = partGroup["子宮口"].ToPar();
+    		X0Y2_精液 = partGroup["精液"].ToPar();
+    		partGroup = Body[0][3];
+    		X0Y3_膣基 = partGroup["膣基"].ToPar();
+    		X0Y3_膣壁左 = partGroup["膣壁左"].ToPar();
+    		X0Y3_膣壁右 = partGroup["膣壁右"].ToPar();
+    		X0Y3_卵巣左 = partGroup["卵巣左"].ToPar();
+    		X0Y3_卵管左 = partGroup["卵管左"].ToPar();
+    		X0Y3_卵巣右 = partGroup["卵巣右"].ToPar();
+    		X0Y3_卵管右 = partGroup["卵管右"].ToPar();
+    		X0Y3_子宮 = partGroup["子宮"].ToPar();
+    		X0Y3_子宮内 = partGroup["子宮内"].ToPar();
+    		X0Y3_子宮口 = partGroup["子宮口"].ToPar();
+    		X0Y3_精液 = partGroup["精液"].ToPar();
+    		partGroup = Body[0][4];
+    		X0Y4_膣基 = partGroup["膣基"].ToPar();
+    		X0Y4_膣壁左 = partGroup["膣壁左"].ToPar();
+    		X0Y4_膣壁右 = partGroup["膣壁右"].ToPar();
+    		X0Y4_卵巣左 = partGroup["卵巣左"].ToPar();
+    		X0Y4_卵管左 = partGroup["卵管左"].ToPar();
+    		X0Y4_卵巣右 = partGroup["卵巣右"].ToPar();
+    		X0Y4_卵管右 = partGroup["卵管右"].ToPar();
+    		X0Y4_子宮 = partGroup["子宮"].ToPar();
+    		X0Y4_子宮内 = partGroup["子宮内"].ToPar();
+    		X0Y4_子宮口 = partGroup["子宮口"].ToPar();
+    		X0Y4_精液 = partGroup["精液"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;
@@ -862,13 +862,13 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		膣基CD = new ColorD(ref Col.Empty, ref Color2.Empty);
-    		Col.Alpha(ref 体配色.粘膜, 160, out var ret);
+    		膣基CD = new ColorD(ref ColorHelper.Empty, ref Color2.Empty);
+    		ColorHelper.Alpha(ref 体配色.粘膜, 160, out var ret);
     		膣壁左CD = new ColorD(ref 体配色.粘膜線, ref ret);
     		膣壁右CD = new ColorD(ref 体配色.粘膜線, ref 膣壁左CD.c2);
-    		卵巣左CD = new ColorD(ref Col.Black, ref 体配色.白部O);
+    		卵巣左CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
     		卵管左CD = new ColorD(ref 体配色.粘膜線, ref 膣壁左CD.c2);
-    		卵巣右CD = new ColorD(ref Col.Black, ref 体配色.白部O);
+    		卵巣右CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
     		卵管右CD = new ColorD(ref 体配色.粘膜線, ref 膣壁左CD.c2);
     		子宮CD = new ColorD(ref 体配色.粘膜線, ref 膣壁左CD.c2);
     		子宮内CD = new ColorD(ref 体配色.粘膜線, ref 膣壁左CD.c2);

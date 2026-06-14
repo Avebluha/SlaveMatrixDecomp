@@ -4,17 +4,17 @@ namespace SlaveMatrix
 {
     public class 頭頂_皿 : 頭頂
     {
-    	public Par X0Y0_皿1;
+    	public ShapePart X0Y0_皿1;
 
-    	public Par X0Y0_皿2;
+    	public ShapePart X0Y0_皿2;
 
-    	public Par X0Y0_甲殻_甲殻4;
+    	public ShapePart X0Y0_甲殻_甲殻4;
 
-    	public Par X0Y0_甲殻_甲殻3;
+    	public ShapePart X0Y0_甲殻_甲殻3;
 
-    	public Par X0Y0_甲殻_甲殻2;
+    	public ShapePart X0Y0_甲殻_甲殻2;
 
-    	public Par X0Y0_甲殻_甲殻1;
+    	public ShapePart X0Y0_甲殻_甲殻1;
 
     	public ColorD 皿1CD;
 
@@ -209,16 +209,16 @@ namespace SlaveMatrix
     	public 頭頂_皿(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 頭頂_皿D e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif();
-    		dif.Tag = "皿";
-    		dif.Add(new Pars(Sta.肢中["頭部前"][0][1]));
-    		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		X0Y0_皿1 = pars["皿1"].ToPar();
-    		X0Y0_皿2 = pars["皿2"].ToPar();
-    		Pars pars2 = pars["甲殻"].ToPars();
+    		MorphVariant morphVariant = new MorphVariant();
+    		morphVariant.Tag = "皿";
+    		morphVariant.Add(new PartGroup(GlobalState.肢中["頭部前"][0][1]));
+    		Body = new VariantGrid();
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_皿1 = partGroup["皿1"].ToPar();
+    		X0Y0_皿2 = partGroup["皿2"].ToPar();
+    		PartGroup pars2 = partGroup["甲殻"].ToPars();
     		X0Y0_甲殻_甲殻4 = pars2["甲殻4"].ToPar();
     		X0Y0_甲殻_甲殻3 = pars2["甲殻3"].ToPar();
     		X0Y0_甲殻_甲殻2 = pars2["甲殻2"].ToPar();
@@ -289,12 +289,12 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		皿1CD = new ColorD(ref Col.Black, ref 体配色.歯);
-    		皿2CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		甲殻_甲殻4CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		甲殻_甲殻3CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		甲殻_甲殻2CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		甲殻_甲殻1CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
+    		皿1CD = new ColorD(ref ColorHelper.Black, ref 体配色.歯);
+    		皿2CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		甲殻_甲殻4CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		甲殻_甲殻3CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		甲殻_甲殻2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		甲殻_甲殻1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
     	}
     }
 }

@@ -4,35 +4,35 @@ namespace SlaveMatrix
 {
     public class BackHair1_編結 : アップ
     {
-    	public Par X0Y0_髪基;
+    	public ShapePart X0Y0_髪基;
 
-    	public Par X0Y0_お下げ_編節1_髪節;
+    	public ShapePart X0Y0_お下げ_編節1_髪節;
 
-    	public Par X0Y0_お下げ_編節1_髪編目;
+    	public ShapePart X0Y0_お下げ_編節1_髪編目;
 
-    	public Par X0Y0_お下げ_編節2_髪節;
+    	public ShapePart X0Y0_お下げ_編節2_髪節;
 
-    	public Par X0Y0_お下げ_編節2_髪編目;
+    	public ShapePart X0Y0_お下げ_編節2_髪編目;
 
-    	public Par X0Y0_お下げ_編節3_髪節;
+    	public ShapePart X0Y0_お下げ_編節3_髪節;
 
-    	public Par X0Y0_お下げ_編節3_髪編目;
+    	public ShapePart X0Y0_お下げ_編節3_髪編目;
 
-    	public Par X0Y0_お下げ_編節4_髪節;
+    	public ShapePart X0Y0_お下げ_編節4_髪節;
 
-    	public Par X0Y0_お下げ_編節4_髪編目;
+    	public ShapePart X0Y0_お下げ_編節4_髪編目;
 
-    	public Par X0Y0_お下げ_編節5_髪節;
+    	public ShapePart X0Y0_お下げ_編節5_髪節;
 
-    	public Par X0Y0_お下げ_編節5_髪編目;
+    	public ShapePart X0Y0_お下げ_編節5_髪編目;
 
-    	public Par X0Y0_お下げ_編節6_髪節;
+    	public ShapePart X0Y0_お下げ_編節6_髪節;
 
-    	public Par X0Y0_お下げ_編節6_髪編目;
+    	public ShapePart X0Y0_お下げ_編節6_髪編目;
 
-    	public Par X0Y0_お下げ_編節7_髪節;
+    	public ShapePart X0Y0_お下げ_編節7_髪節;
 
-    	public Par X0Y0_お下げ_編節7_髪編目;
+    	public ShapePart X0Y0_お下げ_編節7_髪編目;
 
     	public ColorD 髪基CD;
 
@@ -411,16 +411,16 @@ namespace SlaveMatrix
     	public BackHair1_編結(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, BackHair1_編結D e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif();
-    		dif.Tag = "編結";
-    		dif.Add(new Pars(Sta.胴体["BackHair0"][0][20]));
-    		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		X0Y0_髪基 = pars["髪基"].ToPar();
-    		Pars pars2 = pars["お下げ"].ToPars();
-    		Pars pars3 = pars2["編節1"].ToPars();
+    		MorphVariant morphVariant = new MorphVariant();
+    		morphVariant.Tag = "編結";
+    		morphVariant.Add(new PartGroup(GlobalState.胴体["BackHair0"][0][20]));
+    		Body = new VariantGrid();
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_髪基 = partGroup["髪基"].ToPar();
+    		PartGroup pars2 = partGroup["お下げ"].ToPars();
+    		PartGroup pars3 = pars2["編節1"].ToPars();
     		X0Y0_お下げ_編節1_髪節 = pars3["髪節"].ToPar();
     		X0Y0_お下げ_編節1_髪編目 = pars3["髪編目"].ToPar();
     		pars3 = pars2["編節2"].ToPars();

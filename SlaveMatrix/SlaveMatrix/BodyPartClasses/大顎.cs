@@ -3,41 +3,41 @@ using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
-    public class 大顎 : Ele
+    public class 大顎 : Element
     {
-    	public Par X0Y0_棘_棘1;
+    	public ShapePart X0Y0_棘_棘1;
 
-    	public Par X0Y0_棘_棘2;
+    	public ShapePart X0Y0_棘_棘2;
 
-    	public Par X0Y0_棘_棘3;
+    	public ShapePart X0Y0_棘_棘3;
 
-    	public Par X0Y0_牙;
+    	public ShapePart X0Y0_牙;
 
-    	public Par X0Y0_線;
+    	public ShapePart X0Y0_線;
 
-    	public Par X0Y0_輪_革;
+    	public ShapePart X0Y0_輪_革;
 
-    	public Par X0Y0_輪_金具1;
+    	public ShapePart X0Y0_輪_金具1;
 
-    	public Par X0Y0_輪_金具2;
+    	public ShapePart X0Y0_輪_金具2;
 
-    	public Par X0Y0_輪_金具3;
+    	public ShapePart X0Y0_輪_金具3;
 
-    	public Par X0Y0_輪_金具左;
+    	public ShapePart X0Y0_輪_金具左;
 
-    	public Par X0Y0_輪_金具右;
+    	public ShapePart X0Y0_輪_金具右;
 
-    	public Par X0Y1_牙;
+    	public ShapePart X0Y1_牙;
 
-    	public Par X0Y1_線;
+    	public ShapePart X0Y1_線;
 
-    	public Par X0Y1_折線1;
+    	public ShapePart X0Y1_折線1;
 
-    	public Par X0Y1_折線2;
+    	public ShapePart X0Y1_折線2;
 
-    	public Par X0Y1_折線3;
+    	public ShapePart X0Y1_折線3;
 
-    	public Par X0Y1_穴;
+    	public ShapePart X0Y1_穴;
 
     	public ColorD 刺_棘1CD;
 
@@ -430,31 +430,31 @@ namespace SlaveMatrix
     	public 大顎(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 大顎D e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif(Sta.肢左["虫顎"][1]);
-    		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		Pars pars2 = pars["刺"].ToPars();
+    		MorphVariant morphVariant = new MorphVariant(GlobalState.肢左["虫顎"][1]);
+    		Body = new VariantGrid();
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
+    		PartGroup partGroup = Body[0][0];
+    		PartGroup pars2 = partGroup["刺"].ToPars();
     		X0Y0_棘_棘1 = pars2["刺1"].ToPar();
     		X0Y0_棘_棘2 = pars2["刺2"].ToPar();
     		X0Y0_棘_棘3 = pars2["刺3"].ToPar();
-    		X0Y0_牙 = pars["牙"].ToPar();
-    		X0Y0_線 = pars["線"].ToPar();
-    		pars2 = pars["輪"].ToPars();
+    		X0Y0_牙 = partGroup["牙"].ToPar();
+    		X0Y0_線 = partGroup["線"].ToPar();
+    		pars2 = partGroup["輪"].ToPars();
     		X0Y0_輪_革 = pars2["革"].ToPar();
     		X0Y0_輪_金具1 = pars2["金具1"].ToPar();
     		X0Y0_輪_金具2 = pars2["金具2"].ToPar();
     		X0Y0_輪_金具3 = pars2["金具3"].ToPar();
     		X0Y0_輪_金具左 = pars2["金具左"].ToPar();
     		X0Y0_輪_金具右 = pars2["金具右"].ToPar();
-    		pars = Body[0][1];
-    		X0Y1_牙 = pars["牙"].ToPar();
-    		X0Y1_線 = pars["線"].ToPar();
-    		X0Y1_折線1 = pars["折線1"].ToPar();
-    		X0Y1_折線2 = pars["折線2"].ToPar();
-    		X0Y1_折線3 = pars["折線3"].ToPar();
-    		X0Y1_穴 = pars["穴"].ToPar();
+    		partGroup = Body[0][1];
+    		X0Y1_牙 = partGroup["牙"].ToPar();
+    		X0Y1_線 = partGroup["線"].ToPar();
+    		X0Y1_折線1 = partGroup["折線1"].ToPar();
+    		X0Y1_折線2 = partGroup["折線2"].ToPar();
+    		X0Y1_折線3 = partGroup["折線3"].ToPar();
+    		X0Y1_穴 = partGroup["穴"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;
@@ -553,7 +553,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override bool Is革(Par p)
+    	public override bool Is革(ShapePart p)
     	{
     		if (p != X0Y0_輪_革 && p != X0Y0_輪_金具1 && p != X0Y0_輪_金具2 && p != X0Y0_輪_金具3 && p != X0Y0_輪_金具左)
     		{
@@ -612,65 +612,65 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		刺_棘1CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		刺_棘2CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		刺_棘3CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		牙CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		線CD = new ColorD(ref Col.Black, ref Color2.Empty);
+    		刺_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		刺_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		刺_棘3CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		牙CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		線CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
     		輪_革CD = new ColorD();
     		輪_金具1CD = new ColorD();
     		輪_金具2CD = new ColorD();
     		輪_金具3CD = new ColorD();
     		輪_金具左CD = new ColorD();
     		輪_金具右CD = new ColorD();
-    		折線1CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		折線2CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		折線3CD = new ColorD(ref Col.Black, ref Color2.Empty);
+    		折線1CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		折線2CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		折線3CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
     		穴CD = new ColorD();
-    		穴CD.線 = Col.Black;
-    		穴CD.色 = new Color2(ref Col.Black, ref 体配色.甲0O.Col2);
+    		穴CD.線 = ColorHelper.Black;
+    		穴CD.色 = new Color2(ref ColorHelper.Black, ref 体配色.甲0O.Col2);
     	}
 
     	private void 配色T0(BodyColorSet 体配色)
     	{
-    		刺_棘1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		刺_棘2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		刺_棘3CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		牙CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		線CD = new ColorD(ref Col.Black, ref Color2.Empty);
+    		刺_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		刺_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		刺_棘3CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		牙CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		線CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
     		輪_革CD = new ColorD();
     		輪_金具1CD = new ColorD();
     		輪_金具2CD = new ColorD();
     		輪_金具3CD = new ColorD();
     		輪_金具左CD = new ColorD();
     		輪_金具右CD = new ColorD();
-    		折線1CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		折線2CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		折線3CD = new ColorD(ref Col.Black, ref Color2.Empty);
+    		折線1CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		折線2CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		折線3CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
     		穴CD = new ColorD();
-    		穴CD.線 = Col.Black;
-    		穴CD.色 = new Color2(ref Col.Black, ref 体配色.甲0O.Col2);
+    		穴CD.線 = ColorHelper.Black;
+    		穴CD.色 = new Color2(ref ColorHelper.Black, ref 体配色.甲0O.Col2);
     	}
 
     	private void 配色T1(BodyColorSet 体配色)
     	{
-    		刺_棘1CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		刺_棘2CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		刺_棘3CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		牙CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		線CD = new ColorD(ref Col.Black, ref Color2.Empty);
+    		刺_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		刺_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		刺_棘3CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		牙CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		線CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
     		輪_革CD = new ColorD();
     		輪_金具1CD = new ColorD();
     		輪_金具2CD = new ColorD();
     		輪_金具3CD = new ColorD();
     		輪_金具左CD = new ColorD();
     		輪_金具右CD = new ColorD();
-    		折線1CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		折線2CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		折線3CD = new ColorD(ref Col.Black, ref Color2.Empty);
+    		折線1CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		折線2CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		折線3CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
     		穴CD = new ColorD();
-    		穴CD.線 = Col.Black;
-    		穴CD.色 = new Color2(ref Col.Black, ref 体配色.甲0O.Col2);
+    		穴CD.線 = ColorHelper.Black;
+    		穴CD.色 = new Color2(ref ColorHelper.Black, ref 体配色.甲0O.Col2);
     	}
 
     	public void 輪配色(拘束具色 配色)

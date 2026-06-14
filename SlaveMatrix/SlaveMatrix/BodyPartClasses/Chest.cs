@@ -4,123 +4,123 @@ using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
-    public class Chest : Ele
+    public class Chest : Element
     {
-    	public Par X0Y0_胸郭;
+    	public ShapePart X0Y0_胸郭;
 
-    	public Par X0Y0_筋肉_筋肉左;
+    	public ShapePart X0Y0_筋肉_筋肉左;
 
-    	public Par X0Y0_筋肉_筋肉右;
+    	public ShapePart X0Y0_筋肉_筋肉右;
 
-    	public Par X0Y0_筋肉_筋肉中;
+    	public ShapePart X0Y0_筋肉_筋肉中;
 
-    	public Par X0Y0_筋肉_筋肉左下;
+    	public ShapePart X0Y0_筋肉_筋肉左下;
 
-    	public Par X0Y0_筋肉_筋肉左中;
+    	public ShapePart X0Y0_筋肉_筋肉左中;
 
-    	public Par X0Y0_筋肉_筋肉左上;
+    	public ShapePart X0Y0_筋肉_筋肉左上;
 
-    	public Par X0Y0_筋肉_筋肉右下;
+    	public ShapePart X0Y0_筋肉_筋肉右下;
 
-    	public Par X0Y0_筋肉_筋肉右中;
+    	public ShapePart X0Y0_筋肉_筋肉右中;
 
-    	public Par X0Y0_筋肉_筋肉右上;
+    	public ShapePart X0Y0_筋肉_筋肉右上;
 
-    	public Par X0Y0_紋柄_紋左_紋1;
+    	public ShapePart X0Y0_紋柄_紋左_紋1;
 
-    	public Par X0Y0_紋柄_紋左_紋2;
+    	public ShapePart X0Y0_紋柄_紋左_紋2;
 
-    	public Par X0Y0_紋柄_紋左_紋3;
+    	public ShapePart X0Y0_紋柄_紋左_紋3;
 
-    	public Par X0Y0_紋柄_紋左_紋4;
+    	public ShapePart X0Y0_紋柄_紋左_紋4;
 
-    	public Par X0Y0_紋柄_紋右_紋1;
+    	public ShapePart X0Y0_紋柄_紋右_紋1;
 
-    	public Par X0Y0_紋柄_紋右_紋2;
+    	public ShapePart X0Y0_紋柄_紋右_紋2;
 
-    	public Par X0Y0_紋柄_紋右_紋3;
+    	public ShapePart X0Y0_紋柄_紋右_紋3;
 
-    	public Par X0Y0_紋柄_紋右_紋4;
+    	public ShapePart X0Y0_紋柄_紋右_紋4;
 
-    	public Par X0Y0_淫タトゥ_タトゥ左;
+    	public ShapePart X0Y0_淫タトゥ_タトゥ左;
 
-    	public Par X0Y0_淫タトゥ_タトゥ右;
+    	public ShapePart X0Y0_淫タトゥ_タトゥ右;
 
-    	public Par X0Y0_悪タトゥ_タトゥ左1;
+    	public ShapePart X0Y0_悪タトゥ_タトゥ左1;
 
-    	public Par X0Y0_悪タトゥ_タトゥ左2;
+    	public ShapePart X0Y0_悪タトゥ_タトゥ左2;
 
-    	public Par X0Y0_悪タトゥ_タトゥ左3;
+    	public ShapePart X0Y0_悪タトゥ_タトゥ左3;
 
-    	public Par X0Y0_悪タトゥ_タトゥ右1;
+    	public ShapePart X0Y0_悪タトゥ_タトゥ右1;
 
-    	public Par X0Y0_悪タトゥ_タトゥ右2;
+    	public ShapePart X0Y0_悪タトゥ_タトゥ右2;
 
-    	public Par X0Y0_悪タトゥ_タトゥ右3;
+    	public ShapePart X0Y0_悪タトゥ_タトゥ右3;
 
-    	public Par X0Y0_植タトゥ_左_上_タトゥ1;
+    	public ShapePart X0Y0_植タトゥ_左_上_タトゥ1;
 
-    	public Par X0Y0_植タトゥ_左_上_タトゥ2;
+    	public ShapePart X0Y0_植タトゥ_左_上_タトゥ2;
 
-    	public Par X0Y0_植タトゥ_左_下_タトゥ1;
+    	public ShapePart X0Y0_植タトゥ_左_下_タトゥ1;
 
-    	public Par X0Y0_植タトゥ_左_下_タトゥ2;
+    	public ShapePart X0Y0_植タトゥ_左_下_タトゥ2;
 
-    	public Par X0Y0_植タトゥ_右_上_タトゥ1;
+    	public ShapePart X0Y0_植タトゥ_右_上_タトゥ1;
 
-    	public Par X0Y0_植タトゥ_右_上_タトゥ2;
+    	public ShapePart X0Y0_植タトゥ_右_上_タトゥ2;
 
-    	public Par X0Y0_植タトゥ_右_下_タトゥ1;
+    	public ShapePart X0Y0_植タトゥ_右_下_タトゥ1;
 
-    	public Par X0Y0_植タトゥ_右_下_タトゥ2;
+    	public ShapePart X0Y0_植タトゥ_右_下_タトゥ2;
 
-    	public Par X0Y0_獣性_獣毛左1;
+    	public ShapePart X0Y0_獣性_獣毛左1;
 
-    	public Par X0Y0_獣性_獣毛左2;
+    	public ShapePart X0Y0_獣性_獣毛左2;
 
-    	public Par X0Y0_獣性_獣毛右1;
+    	public ShapePart X0Y0_獣性_獣毛右1;
 
-    	public Par X0Y0_獣性_獣毛右2;
+    	public ShapePart X0Y0_獣性_獣毛右2;
 
-    	public Par X0Y0_竜性_左_鱗1;
+    	public ShapePart X0Y0_竜性_左_鱗1;
 
-    	public Par X0Y0_竜性_左_鱗2;
+    	public ShapePart X0Y0_竜性_左_鱗2;
 
-    	public Par X0Y0_竜性_左_鱗3;
+    	public ShapePart X0Y0_竜性_左_鱗3;
 
-    	public Par X0Y0_竜性_右_鱗1;
+    	public ShapePart X0Y0_竜性_右_鱗1;
 
-    	public Par X0Y0_竜性_右_鱗2;
+    	public ShapePart X0Y0_竜性_右_鱗2;
 
-    	public Par X0Y0_竜性_右_鱗3;
+    	public ShapePart X0Y0_竜性_右_鱗3;
 
-    	public Par X0Y0_虫性_甲殻左_甲殻2_甲殻;
+    	public ShapePart X0Y0_虫性_甲殻左_甲殻2_甲殻;
 
-    	public Par X0Y0_虫性_甲殻左_甲殻2_器官;
+    	public ShapePart X0Y0_虫性_甲殻左_甲殻2_器官;
 
-    	public Par X0Y0_虫性_甲殻左_甲殻1_甲殻;
+    	public ShapePart X0Y0_虫性_甲殻左_甲殻1_甲殻;
 
-    	public Par X0Y0_虫性_甲殻左_甲殻1_器官;
+    	public ShapePart X0Y0_虫性_甲殻左_甲殻1_器官;
 
-    	public Par X0Y0_虫性_甲殻右_甲殻2_甲殻;
+    	public ShapePart X0Y0_虫性_甲殻右_甲殻2_甲殻;
 
-    	public Par X0Y0_虫性_甲殻右_甲殻2_器官;
+    	public ShapePart X0Y0_虫性_甲殻右_甲殻2_器官;
 
-    	public Par X0Y0_虫性_甲殻右_甲殻1_甲殻;
+    	public ShapePart X0Y0_虫性_甲殻右_甲殻1_甲殻;
 
-    	public Par X0Y0_虫性_甲殻右_甲殻1_器官;
+    	public ShapePart X0Y0_虫性_甲殻右_甲殻1_器官;
 
-    	public Par X0Y0_傷X左;
+    	public ShapePart X0Y0_傷X左;
 
-    	public Par X0Y0_傷X右;
+    	public ShapePart X0Y0_傷X右;
 
-    	public Par X0Y0_ハイライト外左;
+    	public ShapePart X0Y0_ハイライト外左;
 
-    	public Par X0Y0_ハイライト外右;
+    	public ShapePart X0Y0_ハイライト外右;
 
-    	public Par X0Y0_ハイライト内左;
+    	public ShapePart X0Y0_ハイライト内左;
 
-    	public Par X0Y0_ハイライト内右;
+    	public ShapePart X0Y0_ハイライト内右;
 
     	public ColorD 胸郭CD;
 
@@ -358,27 +358,27 @@ namespace SlaveMatrix
 
     	public スタンプW 鞭痕;
 
-    	public Ele[] Neck_接続;
+    	public Element[] Neck_接続;
 
-    	public Ele[] 肩左_接続;
+    	public Element[] 肩左_接続;
 
-    	public Ele[] 肩右_接続;
+    	public Element[] 肩右_接続;
 
-    	public Ele[] 胸左_接続;
+    	public Element[] 胸左_接続;
 
-    	public Ele[] 胸右_接続;
+    	public Element[] 胸右_接続;
 
-    	public Ele[] 肌_接続;
+    	public Element[] 肌_接続;
 
-    	public Ele[] 翼上左_接続;
+    	public Element[] 翼上左_接続;
 
-    	public Ele[] 翼上右_接続;
+    	public Element[] 翼上右_接続;
 
-    	public Ele[] 翼下左_接続;
+    	public Element[] 翼下左_接続;
 
-    	public Ele[] 翼下右_接続;
+    	public Element[] 翼下右_接続;
 
-    	public Ele[] 背中_接続;
+    	public Element[] 背中_接続;
 
     	public override bool 欠損
     	{
@@ -1417,10 +1417,10 @@ namespace SlaveMatrix
     	{
     		Chest Chest2 = this;
     		ThisType = GetType();
-    		Body = new Difs(Sta.胴体["胸郭"]);
-    		Pars pars = Body[0][0];
-    		X0Y0_胸郭 = pars["胸郭"].ToPar();
-    		Pars pars2 = pars["筋肉"].ToPars();
+    		Body = new VariantGrid(GlobalState.胴体["胸郭"]);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_胸郭 = partGroup["胸郭"].ToPar();
+    		PartGroup pars2 = partGroup["筋肉"].ToPars();
     		X0Y0_筋肉_筋肉左 = pars2["筋肉左"].ToPar();
     		X0Y0_筋肉_筋肉右 = pars2["筋肉右"].ToPar();
     		X0Y0_筋肉_筋肉中 = pars2["筋肉中"].ToPar();
@@ -1430,8 +1430,8 @@ namespace SlaveMatrix
     		X0Y0_筋肉_筋肉右下 = pars2["筋肉右下"].ToPar();
     		X0Y0_筋肉_筋肉右中 = pars2["筋肉右中"].ToPar();
     		X0Y0_筋肉_筋肉右上 = pars2["筋肉右上"].ToPar();
-    		pars2 = pars["紋柄"].ToPars();
-    		Pars pars3 = pars2["紋左"].ToPars();
+    		pars2 = partGroup["紋柄"].ToPars();
+    		PartGroup pars3 = pars2["紋左"].ToPars();
     		X0Y0_紋柄_紋左_紋1 = pars3["紋1"].ToPar();
     		X0Y0_紋柄_紋左_紋2 = pars3["紋2"].ToPar();
     		X0Y0_紋柄_紋左_紋3 = pars3["紋3"].ToPar();
@@ -1441,19 +1441,19 @@ namespace SlaveMatrix
     		X0Y0_紋柄_紋右_紋2 = pars3["紋2"].ToPar();
     		X0Y0_紋柄_紋右_紋3 = pars3["紋3"].ToPar();
     		X0Y0_紋柄_紋右_紋4 = pars3["紋4"].ToPar();
-    		pars2 = pars["淫タトゥ"].ToPars();
+    		pars2 = partGroup["淫タトゥ"].ToPars();
     		X0Y0_淫タトゥ_タトゥ左 = pars2["タトゥ左"].ToPar();
     		X0Y0_淫タトゥ_タトゥ右 = pars2["タトゥ右"].ToPar();
-    		pars2 = pars["悪タトゥ"].ToPars();
+    		pars2 = partGroup["悪タトゥ"].ToPars();
     		X0Y0_悪タトゥ_タトゥ左1 = pars2["タトゥ左1"].ToPar();
     		X0Y0_悪タトゥ_タトゥ左2 = pars2["タトゥ左2"].ToPar();
     		X0Y0_悪タトゥ_タトゥ左3 = pars2["タトゥ左3"].ToPar();
     		X0Y0_悪タトゥ_タトゥ右1 = pars2["タトゥ右1"].ToPar();
     		X0Y0_悪タトゥ_タトゥ右2 = pars2["タトゥ右2"].ToPar();
     		X0Y0_悪タトゥ_タトゥ右3 = pars2["タトゥ右3"].ToPar();
-    		pars2 = pars["植タトゥ"].ToPars();
+    		pars2 = partGroup["植タトゥ"].ToPars();
     		pars3 = pars2["左"].ToPars();
-    		Pars pars4 = pars3["上"].ToPars();
+    		PartGroup pars4 = pars3["上"].ToPars();
     		X0Y0_植タトゥ_左_上_タトゥ1 = pars4["タトゥ1"].ToPar();
     		X0Y0_植タトゥ_左_上_タトゥ2 = pars4["タトゥ2"].ToPar();
     		pars4 = pars3["下"].ToPars();
@@ -1466,12 +1466,12 @@ namespace SlaveMatrix
     		pars4 = pars3["下"].ToPars();
     		X0Y0_植タトゥ_右_下_タトゥ1 = pars4["タトゥ1"].ToPar();
     		X0Y0_植タトゥ_右_下_タトゥ2 = pars4["タトゥ2"].ToPar();
-    		pars2 = pars["獣性"].ToPars();
+    		pars2 = partGroup["獣性"].ToPars();
     		X0Y0_獣性_獣毛左1 = pars2["獣毛左1"].ToPar();
     		X0Y0_獣性_獣毛左2 = pars2["獣毛左2"].ToPar();
     		X0Y0_獣性_獣毛右1 = pars2["獣毛右1"].ToPar();
     		X0Y0_獣性_獣毛右2 = pars2["獣毛右2"].ToPar();
-    		pars2 = pars["鱗"].ToPars();
+    		pars2 = partGroup["鱗"].ToPars();
     		pars3 = pars2["左"].ToPars();
     		X0Y0_竜性_左_鱗1 = pars3["鱗1"].ToPar();
     		X0Y0_竜性_左_鱗2 = pars3["鱗2"].ToPar();
@@ -1480,7 +1480,7 @@ namespace SlaveMatrix
     		X0Y0_竜性_右_鱗1 = pars3["鱗1"].ToPar();
     		X0Y0_竜性_右_鱗2 = pars3["鱗2"].ToPar();
     		X0Y0_竜性_右_鱗3 = pars3["鱗3"].ToPar();
-    		pars2 = pars["虫性"].ToPars();
+    		pars2 = partGroup["虫性"].ToPars();
     		pars3 = pars2["甲殻左"].ToPars();
     		pars4 = pars3["甲殻2"].ToPars();
     		X0Y0_虫性_甲殻左_甲殻2_甲殻 = pars4["甲殻"].ToPar();
@@ -1495,12 +1495,12 @@ namespace SlaveMatrix
     		pars4 = pars3["甲殻1"].ToPars();
     		X0Y0_虫性_甲殻右_甲殻1_甲殻 = pars4["甲殻"].ToPar();
     		X0Y0_虫性_甲殻右_甲殻1_器官 = pars4["器官"].ToPar();
-    		X0Y0_傷X左 = pars["傷X左"].ToPar();
-    		X0Y0_傷X右 = pars["傷X右"].ToPar();
-    		X0Y0_ハイライト外左 = pars["ハイライト外左"].ToPar();
-    		X0Y0_ハイライト外右 = pars["ハイライト外右"].ToPar();
-    		X0Y0_ハイライト内左 = pars["ハイライト内左"].ToPar();
-    		X0Y0_ハイライト内右 = pars["ハイライト内右"].ToPar();
+    		X0Y0_傷X左 = partGroup["傷X左"].ToPar();
+    		X0Y0_傷X右 = partGroup["傷X右"].ToPar();
+    		X0Y0_ハイライト外左 = partGroup["ハイライト外左"].ToPar();
+    		X0Y0_ハイライト外右 = partGroup["ハイライト外右"].ToPar();
+    		X0Y0_ハイライト内左 = partGroup["ハイライト内左"].ToPar();
+    		X0Y0_ハイライト内右 = partGroup["ハイライト内右"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;
@@ -1591,10 +1591,10 @@ namespace SlaveMatrix
     		{
     			表示 = false;
     		}
-    		Ele f;
+    		Element f;
     		if (e.Neck_接続.Count > 0)
     		{
-    			Neck_接続 = e.Neck_接続.Select(delegate(EleD g)
+    			Neck_接続 = e.Neck_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = Chest2;
@@ -1605,7 +1605,7 @@ namespace SlaveMatrix
     		}
     		if (e.肩左_接続.Count > 0)
     		{
-    			肩左_接続 = e.肩左_接続.Select(delegate(EleD g)
+    			肩左_接続 = e.肩左_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = Chest2;
@@ -1616,7 +1616,7 @@ namespace SlaveMatrix
     		}
     		if (e.肩右_接続.Count > 0)
     		{
-    			肩右_接続 = e.肩右_接続.Select(delegate(EleD g)
+    			肩右_接続 = e.肩右_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = Chest2;
@@ -1627,7 +1627,7 @@ namespace SlaveMatrix
     		}
     		if (e.胸左_接続.Count > 0)
     		{
-    			胸左_接続 = e.胸左_接続.Select(delegate(EleD g)
+    			胸左_接続 = e.胸左_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = Chest2;
@@ -1638,7 +1638,7 @@ namespace SlaveMatrix
     		}
     		if (e.胸右_接続.Count > 0)
     		{
-    			胸右_接続 = e.胸右_接続.Select(delegate(EleD g)
+    			胸右_接続 = e.胸右_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = Chest2;
@@ -1649,7 +1649,7 @@ namespace SlaveMatrix
     		}
     		if (e.肌_接続.Count > 0)
     		{
-    			肌_接続 = e.肌_接続.Select(delegate(EleD g)
+    			肌_接続 = e.肌_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = Chest2;
@@ -1660,7 +1660,7 @@ namespace SlaveMatrix
     		}
     		if (e.翼上左_接続.Count > 0)
     		{
-    			翼上左_接続 = e.翼上左_接続.Select(delegate(EleD g)
+    			翼上左_接続 = e.翼上左_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = Chest2;
@@ -1671,7 +1671,7 @@ namespace SlaveMatrix
     		}
     		if (e.翼上右_接続.Count > 0)
     		{
-    			翼上右_接続 = e.翼上右_接続.Select(delegate(EleD g)
+    			翼上右_接続 = e.翼上右_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = Chest2;
@@ -1682,7 +1682,7 @@ namespace SlaveMatrix
     		}
     		if (e.翼下左_接続.Count > 0)
     		{
-    			翼下左_接続 = e.翼下左_接続.Select(delegate(EleD g)
+    			翼下左_接続 = e.翼下左_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = Chest2;
@@ -1693,7 +1693,7 @@ namespace SlaveMatrix
     		}
     		if (e.翼下右_接続.Count > 0)
     		{
-    			翼下右_接続 = e.翼下右_接続.Select(delegate(EleD g)
+    			翼下右_接続 = e.翼下右_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = Chest2;
@@ -1704,7 +1704,7 @@ namespace SlaveMatrix
     		}
     		if (e.背中_接続.Count > 0)
     		{
-    			背中_接続 = e.背中_接続.Select(delegate(EleD g)
+    			背中_接続 = e.背中_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = Chest2;
@@ -1977,7 +1977,7 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		胸郭CD = new ColorD(ref Col.Black, ref 体配色.人肌O);
+    		胸郭CD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌O);
     		筋肉_筋肉左CD = new ColorD(ref 体配色.薄線, ref 体配色.人肌O);
     		筋肉_筋肉右CD = new ColorD(ref 体配色.薄線, ref 体配色.人肌O);
     		筋肉_筋肉中CD = new ColorD(ref 体配色.薄線, ref 体配色.人肌O);
@@ -1987,54 +1987,54 @@ namespace SlaveMatrix
     		筋肉_筋肉右下CD = new ColorD(ref 体配色.薄線, ref 体配色.人肌O);
     		筋肉_筋肉右中CD = new ColorD(ref 体配色.薄線, ref 体配色.人肌O);
     		筋肉_筋肉右上CD = new ColorD(ref 体配色.薄線, ref 体配色.人肌O);
-    		紋柄_紋左_紋1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		紋柄_紋左_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		紋柄_紋左_紋3CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		紋柄_紋左_紋4CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		紋柄_紋右_紋1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		紋柄_紋右_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		紋柄_紋右_紋3CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		紋柄_紋右_紋4CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		淫タトゥ_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_タトゥ右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		悪タトゥ_タトゥ左1CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		悪タトゥ_タトゥ左2CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		悪タトゥ_タトゥ左3CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		悪タトゥ_タトゥ右1CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		悪タトゥ_タトゥ右2CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		悪タトゥ_タトゥ右3CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		植タトゥ_左_上_タトゥ1CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		植タトゥ_左_上_タトゥ2CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		植タトゥ_左_下_タトゥ1CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		植タトゥ_左_下_タトゥ2CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		植タトゥ_右_上_タトゥ1CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		植タトゥ_右_上_タトゥ2CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		植タトゥ_右_下_タトゥ1CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		植タトゥ_右_下_タトゥ2CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		獣性_獣毛左1CD = new ColorD(ref Col.Empty, ref 体配色.毛0O);
-    		獣性_獣毛左2CD = new ColorD(ref Col.Empty, ref 体配色.毛0O);
-    		獣性_獣毛右1CD = new ColorD(ref Col.Empty, ref 体配色.毛0O);
-    		獣性_獣毛右2CD = new ColorD(ref Col.Empty, ref 体配色.毛0O);
-    		竜性_左_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_左_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_左_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_右_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_右_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_右_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		虫性_甲殻左_甲殻2_甲殻CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		虫性_甲殻左_甲殻2_器官CD = new ColorD(ref Col.Black, ref 体配色.甲1R);
-    		虫性_甲殻左_甲殻1_甲殻CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		虫性_甲殻左_甲殻1_器官CD = new ColorD(ref Col.Black, ref 体配色.甲1R);
-    		虫性_甲殻右_甲殻2_甲殻CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		虫性_甲殻右_甲殻2_器官CD = new ColorD(ref Col.Black, ref 体配色.甲1R);
-    		虫性_甲殻右_甲殻1_甲殻CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		虫性_甲殻右_甲殻1_器官CD = new ColorD(ref Col.Black, ref 体配色.甲1R);
-    		傷X左CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		傷X右CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		ハイライト外左CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
-    		ハイライト外右CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
-    		ハイライト内左CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
-    		ハイライト内右CD = new ColorD(ref Col.Empty, ref 体配色.ハイライト2O);
+    		紋柄_紋左_紋1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		紋柄_紋左_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		紋柄_紋左_紋3CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		紋柄_紋左_紋4CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		紋柄_紋右_紋1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		紋柄_紋右_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		紋柄_紋右_紋3CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		紋柄_紋右_紋4CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		淫タトゥ_タトゥ左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_タトゥ右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		悪タトゥ_タトゥ左1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		悪タトゥ_タトゥ左2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		悪タトゥ_タトゥ左3CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		悪タトゥ_タトゥ右1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		悪タトゥ_タトゥ右2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		悪タトゥ_タトゥ右3CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		植タトゥ_左_上_タトゥ1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		植タトゥ_左_上_タトゥ2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		植タトゥ_左_下_タトゥ1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		植タトゥ_左_下_タトゥ2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		植タトゥ_右_上_タトゥ1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		植タトゥ_右_上_タトゥ2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		植タトゥ_右_下_タトゥ1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		植タトゥ_右_下_タトゥ2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		獣性_獣毛左1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.毛0O);
+    		獣性_獣毛左2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.毛0O);
+    		獣性_獣毛右1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.毛0O);
+    		獣性_獣毛右2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.毛0O);
+    		竜性_左_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_左_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_左_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_右_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_右_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_右_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		虫性_甲殻左_甲殻2_甲殻CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		虫性_甲殻左_甲殻2_器官CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1R);
+    		虫性_甲殻左_甲殻1_甲殻CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		虫性_甲殻左_甲殻1_器官CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1R);
+    		虫性_甲殻右_甲殻2_甲殻CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		虫性_甲殻右_甲殻2_器官CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1R);
+    		虫性_甲殻右_甲殻1_甲殻CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		虫性_甲殻右_甲殻1_器官CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1R);
+    		傷X左CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		傷X右CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		ハイライト外左CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		ハイライト外右CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		ハイライト内左CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		ハイライト内右CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
     	}
     }
 }

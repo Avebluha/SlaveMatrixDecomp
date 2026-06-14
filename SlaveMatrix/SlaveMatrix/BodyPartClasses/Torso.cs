@@ -4,25 +4,25 @@ using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
-    public class Torso : Ele
+    public class Torso : Element
     {
-    	public Par X0Y0_Torso;
+    	public ShapePart X0Y0_Torso;
 
-    	public Par X0Y0_筋肉_筋肉左;
+    	public ShapePart X0Y0_筋肉_筋肉左;
 
-    	public Par X0Y0_筋肉_筋肉右;
+    	public ShapePart X0Y0_筋肉_筋肉右;
 
-    	public Par X0Y0_獣性_獣毛左;
+    	public ShapePart X0Y0_獣性_獣毛左;
 
-    	public Par X0Y0_獣性_獣毛右;
+    	public ShapePart X0Y0_獣性_獣毛右;
 
-    	public Par X0Y0_植タトゥ_左_タトゥ2;
+    	public ShapePart X0Y0_植タトゥ_左_タトゥ2;
 
-    	public Par X0Y0_植タトゥ_左_タトゥ1;
+    	public ShapePart X0Y0_植タトゥ_左_タトゥ1;
 
-    	public Par X0Y0_植タトゥ_右_タトゥ2;
+    	public ShapePart X0Y0_植タトゥ_右_タトゥ2;
 
-    	public Par X0Y0_植タトゥ_右_タトゥ1;
+    	public ShapePart X0Y0_植タトゥ_右_タトゥ1;
 
     	public ColorD TorsoCD;
 
@@ -64,13 +64,13 @@ namespace SlaveMatrix
 
     	public スタンプW 鞭痕;
 
-    	public Ele[] Chest_接続;
+    	public Element[] Chest_接続;
 
-    	public Ele[] 肌_接続;
+    	public Element[] 肌_接続;
 
-    	public Ele[] 翼左_接続;
+    	public Element[] 翼左_接続;
 
-    	public Ele[] 翼右_接続;
+    	public Element[] 翼右_接続;
 
     	public override bool 欠損
     	{
@@ -293,17 +293,17 @@ namespace SlaveMatrix
     		Torso Torso2 = this;
     		ThisType = GetType();
             //This had no Torso (胴体)
-            Body = new Difs(Sta.胴体["Torso"]);
-    		Pars pars = Body[0][0];
-    		X0Y0_Torso = pars["胴"].ToPar();
-    		Pars pars2 = pars["筋肉"].ToPars();
+            Body = new VariantGrid(GlobalState.胴体["Torso"]);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_Torso = partGroup["胴"].ToPar();
+    		PartGroup pars2 = partGroup["筋肉"].ToPars();
     		X0Y0_筋肉_筋肉左 = pars2["筋肉左"].ToPar();
     		X0Y0_筋肉_筋肉右 = pars2["筋肉右"].ToPar();
-    		pars2 = pars["獣性"].ToPars();
+    		pars2 = partGroup["獣性"].ToPars();
     		X0Y0_獣性_獣毛左 = pars2["獣毛左"].ToPar();
     		X0Y0_獣性_獣毛右 = pars2["獣毛右"].ToPar();
-    		pars2 = pars["植タトゥ"].ToPars();
-    		Pars pars3 = pars2["左"].ToPars();
+    		pars2 = partGroup["植タトゥ"].ToPars();
+    		PartGroup pars3 = pars2["左"].ToPars();
     		X0Y0_植タトゥ_左_タトゥ2 = pars3["タトゥ2"].ToPar();
     		X0Y0_植タトゥ_左_タトゥ1 = pars3["タトゥ1"].ToPar();
     		pars3 = pars2["右"].ToPars();
@@ -349,10 +349,10 @@ namespace SlaveMatrix
     		{
     			表示 = false;
     		}
-    		Ele f;
+    		Element f;
     		if (e.Chest_接続.Count > 0)
     		{
-    			Chest_接続 = e.Chest_接続.Select(delegate(EleD g)
+    			Chest_接続 = e.Chest_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = Torso2;
@@ -363,7 +363,7 @@ namespace SlaveMatrix
     		}
     		if (e.肌_接続.Count > 0)
     		{
-    			肌_接続 = e.肌_接続.Select(delegate(EleD g)
+    			肌_接続 = e.肌_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = Torso2;
@@ -374,7 +374,7 @@ namespace SlaveMatrix
     		}
     		if (e.翼左_接続.Count > 0)
     		{
-    			翼左_接続 = e.翼左_接続.Select(delegate(EleD g)
+    			翼左_接続 = e.翼左_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = Torso2;
@@ -385,7 +385,7 @@ namespace SlaveMatrix
     		}
     		if (e.翼右_接続.Count > 0)
     		{
-    			翼右_接続 = e.翼右_接続.Select(delegate(EleD g)
+    			翼右_接続 = e.翼右_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = Torso2;
@@ -437,15 +437,15 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		TorsoCD = new ColorD(ref Col.Black, ref 体配色.人肌R);
+    		TorsoCD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌R);
     		筋肉_筋肉左CD = new ColorD(ref 体配色.薄線, ref 体配色.人肌O);
     		筋肉_筋肉右CD = new ColorD(ref 体配色.薄線, ref 体配色.人肌O);
-    		獣性_獣毛左CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		獣性_獣毛右CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		植タトゥ_左_タトゥ2CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		植タトゥ_左_タトゥ1CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		植タトゥ_右_タトゥ2CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		植タトゥ_右_タトゥ1CD = new ColorD(ref Col.Black, ref 体配色.刺青);
+    		獣性_獣毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		獣性_獣毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		植タトゥ_左_タトゥ2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		植タトゥ_左_タトゥ1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		植タトゥ_右_タトゥ2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		植タトゥ_右_タトゥ1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
     	}
     }
 }

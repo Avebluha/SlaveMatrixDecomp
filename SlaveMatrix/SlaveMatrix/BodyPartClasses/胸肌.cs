@@ -3,79 +3,79 @@ using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
-    public class 胸肌 : Ele
+    public class 胸肌 : Element
     {
-    	public Par X0Y0_虫性_甲殻2;
+    	public ShapePart X0Y0_虫性_甲殻2;
 
-    	public Par X0Y0_虫性_甲殻1_甲殻;
+    	public ShapePart X0Y0_虫性_甲殻1_甲殻;
 
-    	public Par X0Y0_虫性_甲殻1_甲殻左;
+    	public ShapePart X0Y0_虫性_甲殻1_甲殻左;
 
-    	public Par X0Y0_虫性_甲殻1_甲殻右;
+    	public ShapePart X0Y0_虫性_甲殻1_甲殻右;
 
-    	public Par X0Y0_淫タトゥ_ハート_タトゥ左1;
+    	public ShapePart X0Y0_淫タトゥ_ハート_タトゥ左1;
 
-    	public Par X0Y0_淫タトゥ_ハート_タトゥ右1;
+    	public ShapePart X0Y0_淫タトゥ_ハート_タトゥ右1;
 
-    	public Par X0Y0_淫タトゥ_ハート_タトゥ左2;
+    	public ShapePart X0Y0_淫タトゥ_ハート_タトゥ左2;
 
-    	public Par X0Y0_淫タトゥ_ハート_タトゥ右2;
+    	public ShapePart X0Y0_淫タトゥ_ハート_タトゥ右2;
 
-    	public Par X0Y0_淫タトゥ_タトゥ左;
+    	public ShapePart X0Y0_淫タトゥ_タトゥ左;
 
-    	public Par X0Y0_淫タトゥ_タトゥ右;
+    	public ShapePart X0Y0_淫タトゥ_タトゥ右;
 
-    	public Par X0Y0_悪タトゥ_逆十字_逆十字1;
+    	public ShapePart X0Y0_悪タトゥ_逆十字_逆十字1;
 
-    	public Par X0Y0_悪タトゥ_逆十字_逆十字2;
+    	public ShapePart X0Y0_悪タトゥ_逆十字_逆十字2;
 
-    	public Par X0Y0_植タトゥ_タトゥ;
+    	public ShapePart X0Y0_植タトゥ_タトゥ;
 
-    	public Par X0Y0_隈取_タトゥ左;
+    	public ShapePart X0Y0_隈取_タトゥ左;
 
-    	public Par X0Y0_隈取_タトゥ右;
+    	public ShapePart X0Y0_隈取_タトゥ右;
 
-    	public Par X0Y0_蜘蛛_眼左1_基;
+    	public ShapePart X0Y0_蜘蛛_眼左1_基;
 
-    	public Par X0Y0_蜘蛛_眼左1_眼;
+    	public ShapePart X0Y0_蜘蛛_眼左1_眼;
 
-    	public Par X0Y0_蜘蛛_眼左1_ハイライト;
+    	public ShapePart X0Y0_蜘蛛_眼左1_ハイライト;
 
-    	public Par X0Y0_蜘蛛_眼左2_基;
+    	public ShapePart X0Y0_蜘蛛_眼左2_基;
 
-    	public Par X0Y0_蜘蛛_眼左2_眼;
+    	public ShapePart X0Y0_蜘蛛_眼左2_眼;
 
-    	public Par X0Y0_蜘蛛_眼左2_ハイライト;
+    	public ShapePart X0Y0_蜘蛛_眼左2_ハイライト;
 
-    	public Par X0Y0_蜘蛛_眼右1_基;
+    	public ShapePart X0Y0_蜘蛛_眼右1_基;
 
-    	public Par X0Y0_蜘蛛_眼右1_眼;
+    	public ShapePart X0Y0_蜘蛛_眼右1_眼;
 
-    	public Par X0Y0_蜘蛛_眼右1_ハイライト;
+    	public ShapePart X0Y0_蜘蛛_眼右1_ハイライト;
 
-    	public Par X0Y0_蜘蛛_眼右2_基;
+    	public ShapePart X0Y0_蜘蛛_眼右2_基;
 
-    	public Par X0Y0_蜘蛛_眼右2_眼;
+    	public ShapePart X0Y0_蜘蛛_眼右2_眼;
 
-    	public Par X0Y0_蜘蛛_眼右2_ハイライト;
+    	public ShapePart X0Y0_蜘蛛_眼右2_ハイライト;
 
-    	public Par X0Y0_竜性_鱗1;
+    	public ShapePart X0Y0_竜性_鱗1;
 
-    	public Par X0Y0_竜性_鱗2;
+    	public ShapePart X0Y0_竜性_鱗2;
 
-    	public Par X0Y0_竜性_鱗3;
+    	public ShapePart X0Y0_竜性_鱗3;
 
-    	public Par X0Y0_コア_コア2_基;
+    	public ShapePart X0Y0_コア_コア2_基;
 
-    	public Par X0Y0_コア_コア2_コア;
+    	public ShapePart X0Y0_コア_コア2_コア;
 
-    	public Par X0Y0_コア_コア2_ハイライト;
+    	public ShapePart X0Y0_コア_コア2_ハイライト;
 
-    	public Par X0Y0_コア_コア1_基;
+    	public ShapePart X0Y0_コア_コア1_基;
 
-    	public Par X0Y0_コア_コア1_コア;
+    	public ShapePart X0Y0_コア_コア1_コア;
 
-    	public Par X0Y0_コア_コア1_ハイライト;
+    	public ShapePart X0Y0_コア_コア1_ハイライト;
 
     	public ColorD 虫性_甲殻2CD;
 
@@ -822,15 +822,15 @@ namespace SlaveMatrix
     	public 胸肌(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 胸肌D e)
     	{
     		ThisType = GetType();
-    		Body = new Difs(Sta.胴体["胸郭肌"]);
-    		Pars pars = Body[0][0];
-    		Pars pars2 = pars["甲殻"].ToPars();
+    		Body = new VariantGrid(GlobalState.胴体["胸郭肌"]);
+    		PartGroup partGroup = Body[0][0];
+    		PartGroup pars2 = partGroup["甲殻"].ToPars();
     		X0Y0_虫性_甲殻2 = pars2["甲殻2"].ToPar();
-    		Pars pars3 = pars2["甲殻1"].ToPars();
+    		PartGroup pars3 = pars2["甲殻1"].ToPars();
     		X0Y0_虫性_甲殻1_甲殻 = pars3["甲殻"].ToPar();
     		X0Y0_虫性_甲殻1_甲殻左 = pars3["甲殻左"].ToPar();
     		X0Y0_虫性_甲殻1_甲殻右 = pars3["甲殻右"].ToPar();
-    		pars2 = pars["淫タトゥ"].ToPars();
+    		pars2 = partGroup["淫タトゥ"].ToPars();
     		pars3 = pars2["ハート"].ToPars();
     		X0Y0_淫タトゥ_ハート_タトゥ左1 = pars3["タトゥ左1"].ToPar();
     		X0Y0_淫タトゥ_ハート_タトゥ右1 = pars3["タトゥ右1"].ToPar();
@@ -838,16 +838,16 @@ namespace SlaveMatrix
     		X0Y0_淫タトゥ_ハート_タトゥ右2 = pars3["タトゥ右2"].ToPar();
     		X0Y0_淫タトゥ_タトゥ左 = pars2["タトゥ左"].ToPar();
     		X0Y0_淫タトゥ_タトゥ右 = pars2["タトゥ右"].ToPar();
-    		pars2 = pars["悪タトゥ"].ToPars();
+    		pars2 = partGroup["悪タトゥ"].ToPars();
     		pars3 = pars2["逆十字"].ToPars();
     		X0Y0_悪タトゥ_逆十字_逆十字1 = pars3["逆十字1"].ToPar();
     		X0Y0_悪タトゥ_逆十字_逆十字2 = pars3["逆十字2"].ToPar();
-    		pars2 = pars["植タトゥ"].ToPars();
+    		pars2 = partGroup["植タトゥ"].ToPars();
     		X0Y0_植タトゥ_タトゥ = pars2["タトゥ"].ToPar();
-    		pars2 = pars["隈取"].ToPars();
+    		pars2 = partGroup["隈取"].ToPars();
     		X0Y0_隈取_タトゥ左 = pars2["タトゥ左"].ToPar();
     		X0Y0_隈取_タトゥ右 = pars2["タトゥ右"].ToPar();
-    		pars2 = pars["蜘蛛"].ToPars();
+    		pars2 = partGroup["蜘蛛"].ToPars();
     		pars3 = pars2["眼左1"].ToPars();
     		X0Y0_蜘蛛_眼左1_基 = pars3["基"].ToPar();
     		X0Y0_蜘蛛_眼左1_眼 = pars3["眼"].ToPar();
@@ -864,11 +864,11 @@ namespace SlaveMatrix
     		X0Y0_蜘蛛_眼右2_基 = pars3["基"].ToPar();
     		X0Y0_蜘蛛_眼右2_眼 = pars3["眼"].ToPar();
     		X0Y0_蜘蛛_眼右2_ハイライト = pars3["ハイライト"].ToPar();
-    		pars2 = pars["鱗"].ToPars();
+    		pars2 = partGroup["鱗"].ToPars();
     		X0Y0_竜性_鱗1 = pars2["鱗1"].ToPar();
     		X0Y0_竜性_鱗2 = pars2["鱗2"].ToPar();
     		X0Y0_竜性_鱗3 = pars2["鱗3"].ToPar();
-    		pars2 = pars["コア"].ToPars();
+    		pars2 = partGroup["コア"].ToPars();
     		pars3 = pars2["コア1"].ToPars();
     		X0Y0_コア_コア2_基 = pars3["基"].ToPar();
     		X0Y0_コア_コア2_コア = pars3["コア"].ToPar();
@@ -1091,122 +1091,122 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		虫性_甲殻2CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		虫性_甲殻1_甲殻CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		虫性_甲殻1_甲殻左CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		虫性_甲殻1_甲殻右CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		淫タトゥ_ハート_タトゥ左1CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_ハート_タトゥ右1CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_ハート_タトゥ左2CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_ハート_タトゥ右2CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_タトゥ右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
+    		虫性_甲殻2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		虫性_甲殻1_甲殻CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		虫性_甲殻1_甲殻左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		虫性_甲殻1_甲殻右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		淫タトゥ_ハート_タトゥ左1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_ハート_タトゥ右1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_ハート_タトゥ左2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_ハート_タトゥ右2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_タトゥ左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_タトゥ右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
     		悪タトゥ_逆十字_逆十字1CD = new ColorD(ref 体配色.刺青.Col1, ref Color2.Empty);
-    		悪タトゥ_逆十字_逆十字2CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		植タトゥ_タトゥCD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		隈取_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		隈取_タトゥ右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		蜘蛛_眼左1_基CD = new ColorD(ref Col.Black, ref 体配色.眼2O);
-    		蜘蛛_眼左1_眼CD = new ColorD(ref Col.Black, ref 体配色.眼2O);
-    		蜘蛛_眼左1_ハイライトCD = new ColorD(ref Col.Empty, ref 体配色.ハイライト);
-    		蜘蛛_眼左2_基CD = new ColorD(ref Col.Black, ref 体配色.眼2O);
-    		蜘蛛_眼左2_眼CD = new ColorD(ref Col.Black, ref 体配色.眼2O);
-    		蜘蛛_眼左2_ハイライトCD = new ColorD(ref Col.Empty, ref 体配色.ハイライト);
-    		蜘蛛_眼右1_基CD = new ColorD(ref Col.Black, ref 体配色.眼2O);
-    		蜘蛛_眼右1_眼CD = new ColorD(ref Col.Black, ref 体配色.眼2O);
-    		蜘蛛_眼右1_ハイライトCD = new ColorD(ref Col.Empty, ref 体配色.ハイライト);
-    		蜘蛛_眼右2_基CD = new ColorD(ref Col.Black, ref 体配色.眼2O);
-    		蜘蛛_眼右2_眼CD = new ColorD(ref Col.Black, ref 体配色.眼2O);
-    		蜘蛛_眼右2_ハイライトCD = new ColorD(ref Col.Empty, ref 体配色.ハイライト);
-    		竜性_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		コア_コア2_基CD = new ColorD(ref Col.Black, ref 体配色.コアO);
-    		コア_コア2_コアCD = new ColorD(ref Col.Black, ref 体配色.コアO);
-    		コア_コア2_ハイライトCD = new ColorD(ref Col.Empty, ref 体配色.ハイライト);
-    		コア_コア1_基CD = new ColorD(ref Col.Black, ref 体配色.コアO);
-    		コア_コア1_コアCD = new ColorD(ref Col.Black, ref 体配色.コアO);
-    		コア_コア1_ハイライトCD = new ColorD(ref Col.Empty, ref 体配色.ハイライト);
+    		悪タトゥ_逆十字_逆十字2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		植タトゥ_タトゥCD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		隈取_タトゥ左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		隈取_タトゥ右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		蜘蛛_眼左1_基CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼2O);
+    		蜘蛛_眼左1_眼CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼2O);
+    		蜘蛛_眼左1_ハイライトCD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト);
+    		蜘蛛_眼左2_基CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼2O);
+    		蜘蛛_眼左2_眼CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼2O);
+    		蜘蛛_眼左2_ハイライトCD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト);
+    		蜘蛛_眼右1_基CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼2O);
+    		蜘蛛_眼右1_眼CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼2O);
+    		蜘蛛_眼右1_ハイライトCD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト);
+    		蜘蛛_眼右2_基CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼2O);
+    		蜘蛛_眼右2_眼CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼2O);
+    		蜘蛛_眼右2_ハイライトCD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト);
+    		竜性_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		コア_コア2_基CD = new ColorD(ref ColorHelper.Black, ref 体配色.コアO);
+    		コア_コア2_コアCD = new ColorD(ref ColorHelper.Black, ref 体配色.コアO);
+    		コア_コア2_ハイライトCD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト);
+    		コア_コア1_基CD = new ColorD(ref ColorHelper.Black, ref 体配色.コアO);
+    		コア_コア1_コアCD = new ColorD(ref ColorHelper.Black, ref 体配色.コアO);
+    		コア_コア1_ハイライトCD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト);
     	}
 
     	private void 配色T0(BodyColorSet 体配色)
     	{
-    		虫性_甲殻2CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		虫性_甲殻1_甲殻CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		虫性_甲殻1_甲殻左CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		虫性_甲殻1_甲殻右CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		淫タトゥ_ハート_タトゥ左1CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_ハート_タトゥ右1CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_ハート_タトゥ左2CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_ハート_タトゥ右2CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_タトゥ右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
+    		虫性_甲殻2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		虫性_甲殻1_甲殻CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		虫性_甲殻1_甲殻左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		虫性_甲殻1_甲殻右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		淫タトゥ_ハート_タトゥ左1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_ハート_タトゥ右1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_ハート_タトゥ左2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_ハート_タトゥ右2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_タトゥ左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_タトゥ右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
     		悪タトゥ_逆十字_逆十字1CD = new ColorD(ref 体配色.刺青.Col1, ref Color2.Empty);
-    		悪タトゥ_逆十字_逆十字2CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		植タトゥ_タトゥCD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		隈取_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		隈取_タトゥ右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		蜘蛛_眼左1_基CD = new ColorD(ref Col.Black, ref 体配色.眼2O);
-    		蜘蛛_眼左1_眼CD = new ColorD(ref Col.Black, ref 体配色.眼2O);
-    		蜘蛛_眼左1_ハイライトCD = new ColorD(ref Col.Empty, ref 体配色.ハイライト);
-    		蜘蛛_眼左2_基CD = new ColorD(ref Col.Black, ref 体配色.眼2O);
-    		蜘蛛_眼左2_眼CD = new ColorD(ref Col.Black, ref 体配色.眼2O);
-    		蜘蛛_眼左2_ハイライトCD = new ColorD(ref Col.Empty, ref 体配色.ハイライト);
-    		蜘蛛_眼右1_基CD = new ColorD(ref Col.Black, ref 体配色.眼2O);
-    		蜘蛛_眼右1_眼CD = new ColorD(ref Col.Black, ref 体配色.眼2O);
-    		蜘蛛_眼右1_ハイライトCD = new ColorD(ref Col.Empty, ref 体配色.ハイライト);
-    		蜘蛛_眼右2_基CD = new ColorD(ref Col.Black, ref 体配色.眼2O);
-    		蜘蛛_眼右2_眼CD = new ColorD(ref Col.Black, ref 体配色.眼2O);
-    		蜘蛛_眼右2_ハイライトCD = new ColorD(ref Col.Empty, ref 体配色.ハイライト);
-    		竜性_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		竜性_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		コア_コア2_基CD = new ColorD(ref Col.Black, ref 体配色.コアO);
-    		コア_コア2_コアCD = new ColorD(ref Col.Black, ref 体配色.コアO);
-    		コア_コア2_ハイライトCD = new ColorD(ref Col.Empty, ref 体配色.ハイライト);
-    		コア_コア1_基CD = new ColorD(ref Col.Black, ref 体配色.コアO);
-    		コア_コア1_コアCD = new ColorD(ref Col.Black, ref 体配色.コアO);
-    		コア_コア1_ハイライトCD = new ColorD(ref Col.Empty, ref 体配色.ハイライト);
+    		悪タトゥ_逆十字_逆十字2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		植タトゥ_タトゥCD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		隈取_タトゥ左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		隈取_タトゥ右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		蜘蛛_眼左1_基CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼2O);
+    		蜘蛛_眼左1_眼CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼2O);
+    		蜘蛛_眼左1_ハイライトCD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト);
+    		蜘蛛_眼左2_基CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼2O);
+    		蜘蛛_眼左2_眼CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼2O);
+    		蜘蛛_眼左2_ハイライトCD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト);
+    		蜘蛛_眼右1_基CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼2O);
+    		蜘蛛_眼右1_眼CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼2O);
+    		蜘蛛_眼右1_ハイライトCD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト);
+    		蜘蛛_眼右2_基CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼2O);
+    		蜘蛛_眼右2_眼CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼2O);
+    		蜘蛛_眼右2_ハイライトCD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト);
+    		竜性_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		竜性_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		コア_コア2_基CD = new ColorD(ref ColorHelper.Black, ref 体配色.コアO);
+    		コア_コア2_コアCD = new ColorD(ref ColorHelper.Black, ref 体配色.コアO);
+    		コア_コア2_ハイライトCD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト);
+    		コア_コア1_基CD = new ColorD(ref ColorHelper.Black, ref 体配色.コアO);
+    		コア_コア1_コアCD = new ColorD(ref ColorHelper.Black, ref 体配色.コアO);
+    		コア_コア1_ハイライトCD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト);
     	}
 
     	private void 配色T1(BodyColorSet 体配色)
     	{
-    		虫性_甲殻2CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		虫性_甲殻1_甲殻CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		虫性_甲殻1_甲殻左CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		虫性_甲殻1_甲殻右CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		淫タトゥ_ハート_タトゥ左1CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_ハート_タトゥ右1CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_ハート_タトゥ左2CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_ハート_タトゥ右2CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		淫タトゥ_タトゥ右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
+    		虫性_甲殻2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		虫性_甲殻1_甲殻CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		虫性_甲殻1_甲殻左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		虫性_甲殻1_甲殻右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		淫タトゥ_ハート_タトゥ左1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_ハート_タトゥ右1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_ハート_タトゥ左2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_ハート_タトゥ右2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_タトゥ左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		淫タトゥ_タトゥ右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
     		悪タトゥ_逆十字_逆十字1CD = new ColorD(ref 体配色.刺青.Col1, ref Color2.Empty);
-    		悪タトゥ_逆十字_逆十字2CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		植タトゥ_タトゥCD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		隈取_タトゥ左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		隈取_タトゥ右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		蜘蛛_眼左1_基CD = new ColorD(ref Col.Black, ref 体配色.眼2O);
-    		蜘蛛_眼左1_眼CD = new ColorD(ref Col.Black, ref 体配色.眼2O);
-    		蜘蛛_眼左1_ハイライトCD = new ColorD(ref Col.Empty, ref 体配色.ハイライト);
-    		蜘蛛_眼左2_基CD = new ColorD(ref Col.Black, ref 体配色.眼2O);
-    		蜘蛛_眼左2_眼CD = new ColorD(ref Col.Black, ref 体配色.眼2O);
-    		蜘蛛_眼左2_ハイライトCD = new ColorD(ref Col.Empty, ref 体配色.ハイライト);
-    		蜘蛛_眼右1_基CD = new ColorD(ref Col.Black, ref 体配色.眼2O);
-    		蜘蛛_眼右1_眼CD = new ColorD(ref Col.Black, ref 体配色.眼2O);
-    		蜘蛛_眼右1_ハイライトCD = new ColorD(ref Col.Empty, ref 体配色.ハイライト);
-    		蜘蛛_眼右2_基CD = new ColorD(ref Col.Black, ref 体配色.眼2O);
-    		蜘蛛_眼右2_眼CD = new ColorD(ref Col.Black, ref 体配色.眼2O);
-    		蜘蛛_眼右2_ハイライトCD = new ColorD(ref Col.Empty, ref 体配色.ハイライト);
-    		竜性_鱗1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		竜性_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_鱗3CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		コア_コア2_基CD = new ColorD(ref Col.Black, ref 体配色.コアO);
-    		コア_コア2_コアCD = new ColorD(ref Col.Black, ref 体配色.コアO);
-    		コア_コア2_ハイライトCD = new ColorD(ref Col.Empty, ref 体配色.ハイライト);
-    		コア_コア1_基CD = new ColorD(ref Col.Black, ref 体配色.コアO);
-    		コア_コア1_コアCD = new ColorD(ref Col.Black, ref 体配色.コアO);
-    		コア_コア1_ハイライトCD = new ColorD(ref Col.Empty, ref 体配色.ハイライト);
+    		悪タトゥ_逆十字_逆十字2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		植タトゥ_タトゥCD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		隈取_タトゥ左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		隈取_タトゥ右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		蜘蛛_眼左1_基CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼2O);
+    		蜘蛛_眼左1_眼CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼2O);
+    		蜘蛛_眼左1_ハイライトCD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト);
+    		蜘蛛_眼左2_基CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼2O);
+    		蜘蛛_眼左2_眼CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼2O);
+    		蜘蛛_眼左2_ハイライトCD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト);
+    		蜘蛛_眼右1_基CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼2O);
+    		蜘蛛_眼右1_眼CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼2O);
+    		蜘蛛_眼右1_ハイライトCD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト);
+    		蜘蛛_眼右2_基CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼2O);
+    		蜘蛛_眼右2_眼CD = new ColorD(ref ColorHelper.Black, ref 体配色.眼2O);
+    		蜘蛛_眼右2_ハイライトCD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト);
+    		竜性_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		竜性_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		コア_コア2_基CD = new ColorD(ref ColorHelper.Black, ref 体配色.コアO);
+    		コア_コア2_コアCD = new ColorD(ref ColorHelper.Black, ref 体配色.コアO);
+    		コア_コア2_ハイライトCD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト);
+    		コア_コア1_基CD = new ColorD(ref ColorHelper.Black, ref 体配色.コアO);
+    		コア_コア1_コアCD = new ColorD(ref ColorHelper.Black, ref 体配色.コアO);
+    		コア_コア1_ハイライトCD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト);
     	}
     }
 }

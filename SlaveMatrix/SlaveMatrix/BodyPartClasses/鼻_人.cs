@@ -6,7 +6,7 @@ namespace SlaveMatrix
 {
     public class 鼻_人 : 鼻
     {
-    	public Par X0Y0_鼻;
+    	public ShapePart X0Y0_鼻;
 
     	public ColorD 鼻CD;
 
@@ -93,14 +93,14 @@ namespace SlaveMatrix
     	{
     		鼻_人 鼻_人2 = this;
     		ThisType = GetType();
-    		Dif dif = new Dif();
-    		dif.Tag = "人";
-    		dif.Add(new Pars(Sta.胴体["鼻"][0][0]));
-    		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		X0Y0_鼻 = pars["鼻"].ToPar();
+    		MorphVariant morphVariant = new MorphVariant();
+    		morphVariant.Tag = "人";
+    		morphVariant.Add(new PartGroup(GlobalState.胴体["鼻"][0][0]));
+    		Body = new VariantGrid();
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_鼻 = partGroup["鼻"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;
@@ -133,10 +133,10 @@ namespace SlaveMatrix
     		{
     			表示 = false;
     		}
-    		Ele f;
+    		Element f;
     		if (e.鼻水左_接続.Count > 0)
     		{
-    			鼻水左_接続 = e.鼻水左_接続.Select(delegate(EleD g)
+    			鼻水左_接続 = e.鼻水左_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 鼻_人2;
@@ -147,7 +147,7 @@ namespace SlaveMatrix
     		}
     		if (e.鼻水右_接続.Count > 0)
     		{
-    			鼻水右_接続 = e.鼻水右_接続.Select(delegate(EleD g)
+    			鼻水右_接続 = e.鼻水右_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 鼻_人2;
@@ -174,7 +174,7 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		鼻CD = new ColorD(ref Col.Black, ref Color2.Empty);
+    		鼻CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
     	}
     }
 }

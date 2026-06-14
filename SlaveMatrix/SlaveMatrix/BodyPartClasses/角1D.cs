@@ -3,7 +3,7 @@ using System;
 namespace SlaveMatrix
 {
     [Serializable]
-    public class 角1D : EleD
+    public class 角1D : ElementData
     {
     }
 }

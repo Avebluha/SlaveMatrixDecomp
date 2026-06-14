@@ -4,33 +4,33 @@ namespace SlaveMatrix
 {
     public class 角1_虫 : 角1
     {
-    	public Par X0Y0_根;
+    	public ShapePart X0Y0_根;
 
-    	public Par X0Y0_器官左_器官1;
+    	public ShapePart X0Y0_器官左_器官1;
 
-    	public Par X0Y0_器官左_器官2;
+    	public ShapePart X0Y0_器官左_器官2;
 
-    	public Par X0Y0_器官右_器官1;
+    	public ShapePart X0Y0_器官右_器官1;
 
-    	public Par X0Y0_器官右_器官2;
+    	public ShapePart X0Y0_器官右_器官2;
 
-    	public Par X0Y0_線;
+    	public ShapePart X0Y0_線;
 
-    	public Par X0Y1_根;
+    	public ShapePart X0Y1_根;
 
-    	public Par X0Y1_器官左_器官1;
+    	public ShapePart X0Y1_器官左_器官1;
 
-    	public Par X0Y1_器官左_器官2;
+    	public ShapePart X0Y1_器官左_器官2;
 
-    	public Par X0Y1_器官右_器官1;
+    	public ShapePart X0Y1_器官右_器官1;
 
-    	public Par X0Y1_器官右_器官2;
+    	public ShapePart X0Y1_器官右_器官2;
 
-    	public Par X0Y1_線;
+    	public ShapePart X0Y1_線;
 
-    	public Par X0Y1_折線1;
+    	public ShapePart X0Y1_折線1;
 
-    	public Par X0Y1_折線2;
+    	public ShapePart X0Y1_折線2;
 
     	public ColorD 根CD;
 
@@ -278,30 +278,30 @@ namespace SlaveMatrix
     	public 角1_虫(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 角1_虫D e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif(Sta.肢中["角"][2]);
-    		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		X0Y0_根 = pars["根"].ToPar();
-    		Pars pars2 = pars["器官左"].ToPars();
+    		MorphVariant morphVariant = new MorphVariant(GlobalState.肢中["角"][2]);
+    		Body = new VariantGrid();
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_根 = partGroup["根"].ToPar();
+    		PartGroup pars2 = partGroup["器官左"].ToPars();
     		X0Y0_器官左_器官1 = pars2["器官1"].ToPar();
     		X0Y0_器官左_器官2 = pars2["器官2"].ToPar();
-    		pars2 = pars["器官右"].ToPars();
+    		pars2 = partGroup["器官右"].ToPars();
     		X0Y0_器官右_器官1 = pars2["器官1"].ToPar();
     		X0Y0_器官右_器官2 = pars2["器官2"].ToPar();
-    		X0Y0_線 = pars["線"].ToPar();
-    		pars = Body[0][1];
-    		X0Y1_根 = pars["根"].ToPar();
-    		pars2 = pars["器官左"].ToPars();
+    		X0Y0_線 = partGroup["線"].ToPar();
+    		partGroup = Body[0][1];
+    		X0Y1_根 = partGroup["根"].ToPar();
+    		pars2 = partGroup["器官左"].ToPars();
     		X0Y1_器官左_器官1 = pars2["器官1"].ToPar();
     		X0Y1_器官左_器官2 = pars2["器官2"].ToPar();
-    		pars2 = pars["器官右"].ToPars();
+    		pars2 = partGroup["器官右"].ToPars();
     		X0Y1_器官右_器官1 = pars2["器官1"].ToPar();
     		X0Y1_器官右_器官2 = pars2["器官2"].ToPar();
-    		X0Y1_線 = pars["線"].ToPar();
-    		X0Y1_折線1 = pars["折線1"].ToPar();
-    		X0Y1_折線2 = pars["折線2"].ToPar();
+    		X0Y1_線 = partGroup["線"].ToPar();
+    		X0Y1_折線1 = partGroup["折線1"].ToPar();
+    		X0Y1_折線2 = partGroup["折線2"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;
@@ -406,38 +406,38 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		根CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		器官左_器官1CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		器官左_器官2CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		器官右_器官1CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		器官右_器官2CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		線CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		折線1CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		折線2CD = new ColorD(ref Col.Black, ref Color2.Empty);
+    		根CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		器官左_器官1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		器官左_器官2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		器官右_器官1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		器官右_器官2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		線CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		折線1CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		折線2CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
     	}
 
     	private void 配色T0(BodyColorSet 体配色)
     	{
-    		根CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		器官左_器官1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		器官左_器官2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		器官右_器官1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		器官右_器官2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		線CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		折線1CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		折線2CD = new ColorD(ref Col.Black, ref Color2.Empty);
+    		根CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		器官左_器官1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		器官左_器官2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		器官右_器官1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		器官右_器官2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		線CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		折線1CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		折線2CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
     	}
 
     	private void 配色T1(BodyColorSet 体配色)
     	{
-    		根CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		器官左_器官1CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		器官左_器官2CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		器官右_器官1CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		器官右_器官2CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		線CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		折線1CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		折線2CD = new ColorD(ref Col.Black, ref Color2.Empty);
+    		根CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		器官左_器官1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		器官左_器官2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		器官右_器官1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		器官右_器官2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		線CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		折線1CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		折線2CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
     	}
     }
 }

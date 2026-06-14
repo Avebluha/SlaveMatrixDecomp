@@ -3,65 +3,65 @@ using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
-    public class 涙 : Ele
+    public class 涙 : Element
     {
-    	public Par X0Y0_涙0流れ0;
+    	public ShapePart X0Y0_涙0流れ0;
 
-    	public Par X0Y0_涙0;
+    	public ShapePart X0Y0_涙0;
 
-    	public Par X0Y0_涙1;
+    	public ShapePart X0Y0_涙1;
 
-    	public Par X0Y0_涙ハイライト;
+    	public ShapePart X0Y0_涙ハイライト;
 
-    	public Par X0Y1_涙0流れ0;
+    	public ShapePart X0Y1_涙0流れ0;
 
-    	public Par X0Y1_涙0流れ1;
+    	public ShapePart X0Y1_涙0流れ1;
 
-    	public Par X0Y1_涙0;
+    	public ShapePart X0Y1_涙0;
 
-    	public Par X0Y1_涙1;
+    	public ShapePart X0Y1_涙1;
 
-    	public Par X0Y1_涙ハイライト;
+    	public ShapePart X0Y1_涙ハイライト;
 
-    	public Par X0Y2_涙0流れ0;
+    	public ShapePart X0Y2_涙0流れ0;
 
-    	public Par X0Y2_涙0流れ1;
+    	public ShapePart X0Y2_涙0流れ1;
 
-    	public Par X0Y2_涙0;
+    	public ShapePart X0Y2_涙0;
 
-    	public Par X0Y2_涙1;
+    	public ShapePart X0Y2_涙1;
 
-    	public Par X0Y2_涙ハイライト;
+    	public ShapePart X0Y2_涙ハイライト;
 
-    	public Par X0Y3_涙0流れ0;
+    	public ShapePart X0Y3_涙0流れ0;
 
-    	public Par X0Y3_涙0流れ1;
+    	public ShapePart X0Y3_涙0流れ1;
 
-    	public Par X0Y3_涙0;
+    	public ShapePart X0Y3_涙0;
 
-    	public Par X0Y3_涙1;
+    	public ShapePart X0Y3_涙1;
 
-    	public Par X0Y3_涙ハイライト;
+    	public ShapePart X0Y3_涙ハイライト;
 
-    	public Par X0Y4_涙0流れ0;
+    	public ShapePart X0Y4_涙0流れ0;
 
-    	public Par X0Y4_涙0流れ1;
+    	public ShapePart X0Y4_涙0流れ1;
 
-    	public Par X0Y4_涙0;
+    	public ShapePart X0Y4_涙0;
 
-    	public Par X0Y4_涙1;
+    	public ShapePart X0Y4_涙1;
 
-    	public Par X0Y4_涙ハイライト;
+    	public ShapePart X0Y4_涙ハイライト;
 
-    	public Par X0Y5_涙0流れ0;
+    	public ShapePart X0Y5_涙0流れ0;
 
-    	public Par X0Y5_涙0流れ1;
+    	public ShapePart X0Y5_涙0流れ1;
 
-    	public Par X0Y5_涙0;
+    	public ShapePart X0Y5_涙0;
 
-    	public Par X0Y5_涙1;
+    	public ShapePart X0Y5_涙1;
 
-    	public Par X0Y5_涙ハイライト;
+    	public ShapePart X0Y5_涙ハイライト;
 
     	public ColorD 涙0流れ0CD;
 
@@ -329,42 +329,42 @@ namespace SlaveMatrix
     	public 涙(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 涙D e)
     	{
     		ThisType = GetType();
-    		Body = new Difs(Sta.胴体["涙左"]);
-    		Pars pars = Body[0][0];
-    		X0Y0_涙0流れ0 = pars["涙0流れ0"].ToPar();
-    		X0Y0_涙0 = pars["涙0"].ToPar();
-    		X0Y0_涙1 = pars["涙1"].ToPar();
-    		X0Y0_涙ハイライト = pars["涙ハイライト"].ToPar();
-    		pars = Body[0][1];
-    		X0Y1_涙0流れ0 = pars["涙0流れ0"].ToPar();
-    		X0Y1_涙0流れ1 = pars["涙0流れ1"].ToPar();
-    		X0Y1_涙0 = pars["涙0"].ToPar();
-    		X0Y1_涙1 = pars["涙1"].ToPar();
-    		X0Y1_涙ハイライト = pars["涙ハイライト"].ToPar();
-    		pars = Body[0][2];
-    		X0Y2_涙0流れ0 = pars["涙0流れ0"].ToPar();
-    		X0Y2_涙0流れ1 = pars["涙0流れ1"].ToPar();
-    		X0Y2_涙0 = pars["涙0"].ToPar();
-    		X0Y2_涙1 = pars["涙1"].ToPar();
-    		X0Y2_涙ハイライト = pars["涙ハイライト"].ToPar();
-    		pars = Body[0][3];
-    		X0Y3_涙0流れ0 = pars["涙0流れ0"].ToPar();
-    		X0Y3_涙0流れ1 = pars["涙0流れ1"].ToPar();
-    		X0Y3_涙0 = pars["涙0"].ToPar();
-    		X0Y3_涙1 = pars["涙1"].ToPar();
-    		X0Y3_涙ハイライト = pars["涙ハイライト"].ToPar();
-    		pars = Body[0][4];
-    		X0Y4_涙0流れ0 = pars["涙0流れ0"].ToPar();
-    		X0Y4_涙0流れ1 = pars["涙0流れ1"].ToPar();
-    		X0Y4_涙0 = pars["涙0"].ToPar();
-    		X0Y4_涙1 = pars["涙1"].ToPar();
-    		X0Y4_涙ハイライト = pars["涙ハイライト"].ToPar();
-    		pars = Body[0][5];
-    		X0Y5_涙0流れ0 = pars["涙0流れ0"].ToPar();
-    		X0Y5_涙0流れ1 = pars["涙0流れ1"].ToPar();
-    		X0Y5_涙0 = pars["涙0"].ToPar();
-    		X0Y5_涙1 = pars["涙1"].ToPar();
-    		X0Y5_涙ハイライト = pars["涙ハイライト"].ToPar();
+    		Body = new VariantGrid(GlobalState.胴体["涙左"]);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_涙0流れ0 = partGroup["涙0流れ0"].ToPar();
+    		X0Y0_涙0 = partGroup["涙0"].ToPar();
+    		X0Y0_涙1 = partGroup["涙1"].ToPar();
+    		X0Y0_涙ハイライト = partGroup["涙ハイライト"].ToPar();
+    		partGroup = Body[0][1];
+    		X0Y1_涙0流れ0 = partGroup["涙0流れ0"].ToPar();
+    		X0Y1_涙0流れ1 = partGroup["涙0流れ1"].ToPar();
+    		X0Y1_涙0 = partGroup["涙0"].ToPar();
+    		X0Y1_涙1 = partGroup["涙1"].ToPar();
+    		X0Y1_涙ハイライト = partGroup["涙ハイライト"].ToPar();
+    		partGroup = Body[0][2];
+    		X0Y2_涙0流れ0 = partGroup["涙0流れ0"].ToPar();
+    		X0Y2_涙0流れ1 = partGroup["涙0流れ1"].ToPar();
+    		X0Y2_涙0 = partGroup["涙0"].ToPar();
+    		X0Y2_涙1 = partGroup["涙1"].ToPar();
+    		X0Y2_涙ハイライト = partGroup["涙ハイライト"].ToPar();
+    		partGroup = Body[0][3];
+    		X0Y3_涙0流れ0 = partGroup["涙0流れ0"].ToPar();
+    		X0Y3_涙0流れ1 = partGroup["涙0流れ1"].ToPar();
+    		X0Y3_涙0 = partGroup["涙0"].ToPar();
+    		X0Y3_涙1 = partGroup["涙1"].ToPar();
+    		X0Y3_涙ハイライト = partGroup["涙ハイライト"].ToPar();
+    		partGroup = Body[0][4];
+    		X0Y4_涙0流れ0 = partGroup["涙0流れ0"].ToPar();
+    		X0Y4_涙0流れ1 = partGroup["涙0流れ1"].ToPar();
+    		X0Y4_涙0 = partGroup["涙0"].ToPar();
+    		X0Y4_涙1 = partGroup["涙1"].ToPar();
+    		X0Y4_涙ハイライト = partGroup["涙ハイライト"].ToPar();
+    		partGroup = Body[0][5];
+    		X0Y5_涙0流れ0 = partGroup["涙0流れ0"].ToPar();
+    		X0Y5_涙0流れ1 = partGroup["涙0流れ1"].ToPar();
+    		X0Y5_涙0 = partGroup["涙0"].ToPar();
+    		X0Y5_涙1 = partGroup["涙1"].ToPar();
+    		X0Y5_涙ハイライト = partGroup["涙ハイライト"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;

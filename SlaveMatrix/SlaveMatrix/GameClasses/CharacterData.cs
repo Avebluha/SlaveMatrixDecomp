@@ -133,130 +133,130 @@ namespace SlaveMatrix
     	{
     		this.body_tree = 構成;
     		this.body_color = 体色;
-    		Pride = RNG.XS.NextDouble();
-    		Lust = RNG.XS.NextDouble(0.6);
-    		Affection = RNG.XS.NextDouble(0.6);
-    		Taming = RNG.XS.NextDouble(0.6);
-    		SkillL = RNG.XS.NextDouble(0.6);
+    		Pride = Rng.XS.NextDouble();
+    		Lust = Rng.XS.NextDouble(0.6);
+    		Affection = Rng.XS.NextDouble(0.6);
+    		Taming = Rng.XS.NextDouble(0.6);
+    		SkillL = Rng.XS.NextDouble(0.6);
     		Sesnsitivities = new Dictionary<ContactType, double>
     		{
     			{
     				ContactType.Head,
-    				RNG.XS.NextDouble(0.6)
+    				Rng.XS.NextDouble(0.6)
     			},
     			{
     				ContactType.Face,
-    				RNG.XS.NextDouble(0.6)
+    				Rng.XS.NextDouble(0.6)
     			},
     			{
     				ContactType.Ear,
-    				RNG.XS.NextDouble(0.6)
+    				Rng.XS.NextDouble(0.6)
     			},
     			{
     				ContactType.Mouth,
-    				RNG.XS.NextDouble(0.6)
+    				Rng.XS.NextDouble(0.6)
     			},
     			{
     				ContactType.Hair,
-    				RNG.XS.NextDouble(0.6)
+    				Rng.XS.NextDouble(0.6)
     			},
     			{
     				ContactType.Neck,
-    				RNG.XS.NextDouble(0.6)
+    				Rng.XS.NextDouble(0.6)
     			},
     			{
     				ContactType.Shoulder,
-    				RNG.XS.NextDouble(0.6)
+    				Rng.XS.NextDouble(0.6)
     			},
     			{
     				ContactType.Chest,
-    				RNG.XS.NextDouble(0.6)
+    				Rng.XS.NextDouble(0.6)
     			},
     			{
     				ContactType.Milk,
-    				RNG.XS.NextDouble(0.6)
+    				Rng.XS.NextDouble(0.6)
     			},
     			{
     				ContactType.Side,
-    				RNG.XS.NextDouble(0.6)
+    				Rng.XS.NextDouble(0.6)
     			},
     			{
     				ContactType.Stomache,
-    				RNG.XS.NextDouble(0.6)
+    				Rng.XS.NextDouble(0.6)
     			},
     			{
     				ContactType.Crotch,
-    				RNG.XS.NextDouble(0.6)
+    				Rng.XS.NextDouble(0.6)
     			},
     			{
     				ContactType.Sex,
-    				RNG.XS.NextDouble(0.6)
+    				Rng.XS.NextDouble(0.6)
     			},
     			{
     				ContactType.Vagina,
-    				RNG.XS.NextDouble(0.6)
+    				Rng.XS.NextDouble(0.6)
     			},
     			{
     				ContactType.Nucleus,
-    				RNG.XS.NextDouble(0.6)
+    				Rng.XS.NextDouble(0.6)
     			},
     			{
     				ContactType.Anal,
-    				RNG.XS.NextDouble(0.6)
+    				Rng.XS.NextDouble(0.6)
     			},
     			{
     				ContactType.Thread,
-    				RNG.XS.NextDouble(0.6)
+    				Rng.XS.NextDouble(0.6)
     			},
     			{
     				ContactType.Thigh,
-    				RNG.XS.NextDouble(0.6)
+    				Rng.XS.NextDouble(0.6)
     			},
     			{
     				ContactType.Feet,
-    				RNG.XS.NextDouble(0.6)
+    				Rng.XS.NextDouble(0.6)
     			},
     			{
     				ContactType.Hand,
-    				RNG.XS.NextDouble(0.6)
+    				Rng.XS.NextDouble(0.6)
     			},
     			{
     				ContactType.Awareness,
-    				RNG.XS.NextDouble(0.6)
+    				Rng.XS.NextDouble(0.6)
     			},
     			{
     				ContactType.Touch,
-    				RNG.XS.NextDouble(0.6)
+    				Rng.XS.NextDouble(0.6)
     			},
     			{
     				ContactType.Tail,
-    				RNG.XS.NextDouble(0.6)
+    				Rng.XS.NextDouble(0.6)
     			},
     			{
     				ContactType.Wing,
-    				RNG.XS.NextDouble(0.6)
+    				Rng.XS.NextDouble(0.6)
     			},
     			{
     				ContactType.Fin,
-    				RNG.XS.NextDouble(0.6)
+    				Rng.XS.NextDouble(0.6)
     			},
     			{
     				ContactType.Other,
-    				RNG.XS.NextDouble(0.6)
+    				Rng.XS.NextDouble(0.6)
     			}
     		};
-    		最乳首 = RNG.XS.NextDouble();
+    		最乳首 = Rng.XS.NextDouble();
     		最乳房 = 構成.EnumEleD().GetEleD<乳房D>().バスト;
-    		最陰核 = RNG.XS.NextDouble();
-    		素乳首濃度 = 0.3 + RNG.XS.NextDouble(0.5);
-    		最乳首濃度 = RNG.XS.NextDouble(0.19999999999999996);
-    		素性器濃度 = 0.3 + RNG.XS.NextDouble(0.5);
-    		最性器濃度 = RNG.XS.NextDouble(0.19999999999999996);
-    		素肛門濃度 = 0.3 + RNG.XS.NextDouble(0.5);
-    		最肛門濃度 = RNG.XS.NextDouble(0.19999999999999996);
-    		最陰毛濃度 = RNG.XS.NextDouble();
-    		固有値 = RNG.XS.NextDouble();
-    		魔力濃度 = RNG.XS.NextDouble();
+    		最陰核 = Rng.XS.NextDouble();
+    		素乳首濃度 = 0.3 + Rng.XS.NextDouble(0.5);
+    		最乳首濃度 = Rng.XS.NextDouble(0.19999999999999996);
+    		素性器濃度 = 0.3 + Rng.XS.NextDouble(0.5);
+    		最性器濃度 = Rng.XS.NextDouble(0.19999999999999996);
+    		素肛門濃度 = 0.3 + Rng.XS.NextDouble(0.5);
+    		最肛門濃度 = Rng.XS.NextDouble(0.19999999999999996);
+    		最陰毛濃度 = Rng.XS.NextDouble();
+    		固有値 = Rng.XS.NextDouble();
+    		魔力濃度 = Rng.XS.NextDouble();
     		腰肌D eleD = 構成.EnumEleD().GetEleD<腰肌D>();
     		if (!eleD.陰毛_表示 && !eleD.獣性_獣毛_表示)
     		{
@@ -396,29 +396,29 @@ namespace SlaveMatrix
 
     	public void 娼婦調教(double max_skillL)
     	{
-    		Lust = (Lust + 0.01 * RNG.XS.NextDouble()).Clamp(0.0, 1.0);
-    		Taming = (Taming + 0.01 * RNG.XS.NextDouble()).Clamp(0.0, 1.0);
-    		SkillL = (SkillL + 0.01 * RNG.XS.NextDouble()).Clamp(0.0, max_skillL);
+    		Lust = (Lust + 0.01 * Rng.XS.NextDouble()).Clamp(0.0, 1.0);
+    		Taming = (Taming + 0.01 * Rng.XS.NextDouble()).Clamp(0.0, 1.0);
+    		SkillL = (SkillL + 0.01 * Rng.XS.NextDouble()).Clamp(0.0, max_skillL);
     	}
 
     	public void 欲望補正()
     	{
-    		Lust = (Lust + RNG.XS.NextDouble(Lust)).Clamp(0.0, 1.0);
+    		Lust = (Lust + Rng.XS.NextDouble(Lust)).Clamp(0.0, 1.0);
     	}
 
     	public void 情愛補正()
     	{
-    		Affection = (Affection + RNG.XS.NextDouble(Affection)).Clamp(0.0, 1.0);
+    		Affection = (Affection + Rng.XS.NextDouble(Affection)).Clamp(0.0, 1.0);
     	}
 
     	public void 卑屈補正()
     	{
-    		Taming = (Taming + RNG.XS.NextDouble(Taming)).Clamp(0.0, 1.0);
+    		Taming = (Taming + Rng.XS.NextDouble(Taming)).Clamp(0.0, 1.0);
     	}
 
     	public void 技巧補正()
     	{
-    		SkillL = (SkillL + RNG.XS.NextDouble(SkillL)).Clamp(0.0, 1.0);
+    		SkillL = (SkillL + Rng.XS.NextDouble(SkillL)).Clamp(0.0, 1.0);
     	}
     }
 }

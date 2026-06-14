@@ -3,7 +3,7 @@ using System;
 namespace SlaveMatrix
 {
     [Serializable]
-    public class BackHair1D : EleD
+    public class BackHair1D : ElementData
     {
     }
 }

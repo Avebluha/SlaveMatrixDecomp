@@ -3,6 +3,9 @@ using System.Drawing;
 
 namespace _2DGAMELIB
 {
+	/// <summary>
+	/// Represents a screen module/mode
+	/// </summary>
     public class Module
     {
     	public Action<MouseButtons, Vector2D, Color> Down = delegate
@@ -25,7 +28,7 @@ namespace _2DGAMELIB
     	{
     	};
 
-    	public Action<FPS> Draw = delegate
+    	public Action<FpsCounter> Draw = delegate
     	{
     	};
 

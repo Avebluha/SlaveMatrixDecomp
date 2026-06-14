@@ -3,55 +3,55 @@ using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
-    public class 呼気 : Ele
+    public class 呼気 : Element
     {
-    	public Par X0Y0_呼気左1_呼気1;
+    	public ShapePart X0Y0_呼気左1_呼気1;
 
-    	public Par X0Y0_呼気左1_呼気2;
+    	public ShapePart X0Y0_呼気左1_呼気2;
 
-    	public Par X0Y0_呼気左2_呼気1;
+    	public ShapePart X0Y0_呼気左2_呼気1;
 
-    	public Par X0Y0_呼気左2_呼気2;
+    	public ShapePart X0Y0_呼気左2_呼気2;
 
-    	public Par X0Y0_呼気左3_呼気1;
+    	public ShapePart X0Y0_呼気左3_呼気1;
 
-    	public Par X0Y0_呼気左3_呼気2;
+    	public ShapePart X0Y0_呼気左3_呼気2;
 
-    	public Par X0Y0_呼気右1_呼気1;
+    	public ShapePart X0Y0_呼気右1_呼気1;
 
-    	public Par X0Y0_呼気右1_呼気2;
+    	public ShapePart X0Y0_呼気右1_呼気2;
 
-    	public Par X0Y0_呼気右2_呼気1;
+    	public ShapePart X0Y0_呼気右2_呼気1;
 
-    	public Par X0Y0_呼気右2_呼気2;
+    	public ShapePart X0Y0_呼気右2_呼気2;
 
-    	public Par X0Y0_呼気右3_呼気1;
+    	public ShapePart X0Y0_呼気右3_呼気1;
 
-    	public Par X0Y0_呼気右3_呼気2;
+    	public ShapePart X0Y0_呼気右3_呼気2;
 
-    	public Par X0Y1_呼気左1_呼気1;
+    	public ShapePart X0Y1_呼気左1_呼気1;
 
-    	public Par X0Y1_呼気左1_呼気2;
+    	public ShapePart X0Y1_呼気左1_呼気2;
 
-    	public Par X0Y1_呼気左2_呼気1;
+    	public ShapePart X0Y1_呼気左2_呼気1;
 
-    	public Par X0Y1_呼気左2_呼気2;
+    	public ShapePart X0Y1_呼気左2_呼気2;
 
-    	public Par X0Y1_呼気左3_呼気1;
+    	public ShapePart X0Y1_呼気左3_呼気1;
 
-    	public Par X0Y1_呼気左3_呼気2;
+    	public ShapePart X0Y1_呼気左3_呼気2;
 
-    	public Par X0Y1_呼気右1_呼気1;
+    	public ShapePart X0Y1_呼気右1_呼気1;
 
-    	public Par X0Y1_呼気右1_呼気2;
+    	public ShapePart X0Y1_呼気右1_呼気2;
 
-    	public Par X0Y1_呼気右2_呼気1;
+    	public ShapePart X0Y1_呼気右2_呼気1;
 
-    	public Par X0Y1_呼気右2_呼気2;
+    	public ShapePart X0Y1_呼気右2_呼気2;
 
-    	public Par X0Y1_呼気右3_呼気1;
+    	public ShapePart X0Y1_呼気右3_呼気1;
 
-    	public Par X0Y1_呼気右3_呼気2;
+    	public ShapePart X0Y1_呼気右3_呼気2;
 
     	public ColorD 呼気左1_呼気1CD;
 
@@ -404,27 +404,27 @@ namespace SlaveMatrix
     	public 呼気(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 呼気D e)
     	{
     		ThisType = GetType();
-    		Body = new Difs(Sta.胴体["呼気"]);
-    		Pars pars = Body[0][0];
-    		Pars pars2 = pars["呼気左1"].ToPars();
+    		Body = new VariantGrid(GlobalState.胴体["呼気"]);
+    		PartGroup partGroup = Body[0][0];
+    		PartGroup pars2 = partGroup["呼気左1"].ToPars();
     		X0Y0_呼気左1_呼気1 = pars2["呼気1"].ToPar();
     		X0Y0_呼気左1_呼気2 = pars2["呼気2"].ToPar();
-    		pars2 = pars["呼気左2"].ToPars();
+    		pars2 = partGroup["呼気左2"].ToPars();
     		X0Y0_呼気左2_呼気1 = pars2["呼気1"].ToPar();
     		X0Y0_呼気左2_呼気2 = pars2["呼気2"].ToPar();
-    		pars2 = pars["呼気左3"].ToPars();
+    		pars2 = partGroup["呼気左3"].ToPars();
     		X0Y0_呼気左3_呼気1 = pars2["呼気1"].ToPar();
     		X0Y0_呼気左3_呼気2 = pars2["呼気2"].ToPar();
-    		pars2 = pars["呼気右1"].ToPars();
+    		pars2 = partGroup["呼気右1"].ToPars();
     		X0Y0_呼気右1_呼気1 = pars2["呼気1"].ToPar();
     		X0Y0_呼気右1_呼気2 = pars2["呼気2"].ToPar();
-    		pars2 = pars["呼気右2"].ToPars();
+    		pars2 = partGroup["呼気右2"].ToPars();
     		X0Y0_呼気右2_呼気1 = pars2["呼気1"].ToPar();
     		X0Y0_呼気右2_呼気2 = pars2["呼気2"].ToPar();
-    		pars2 = pars["呼気右3"].ToPars();
+    		pars2 = partGroup["呼気右3"].ToPars();
     		X0Y0_呼気右3_呼気1 = pars2["呼気1"].ToPar();
     		X0Y0_呼気右3_呼気2 = pars2["呼気2"].ToPar();
-    		Pars pars3 = Body[0][1];
+    		PartGroup pars3 = Body[0][1];
     		pars2 = pars3["呼気左1"].ToPars();
     		X0Y1_呼気左1_呼気1 = pars2["呼気1"].ToPar();
     		X0Y1_呼気左1_呼気2 = pars2["呼気2"].ToPar();
@@ -556,18 +556,18 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		呼気左1_呼気1CD = new ColorD(ref Col.Empty, ref 体配色.呼気);
-    		呼気左1_呼気2CD = new ColorD(ref Col.Empty, ref 体配色.呼気);
-    		呼気左2_呼気1CD = new ColorD(ref Col.Empty, ref 体配色.呼気);
-    		呼気左2_呼気2CD = new ColorD(ref Col.Empty, ref 体配色.呼気);
-    		呼気左3_呼気1CD = new ColorD(ref Col.Empty, ref 体配色.呼気);
-    		呼気左3_呼気2CD = new ColorD(ref Col.Empty, ref 体配色.呼気);
-    		呼気右1_呼気1CD = new ColorD(ref Col.Empty, ref 体配色.呼気);
-    		呼気右1_呼気2CD = new ColorD(ref Col.Empty, ref 体配色.呼気);
-    		呼気右2_呼気1CD = new ColorD(ref Col.Empty, ref 体配色.呼気);
-    		呼気右2_呼気2CD = new ColorD(ref Col.Empty, ref 体配色.呼気);
-    		呼気右3_呼気1CD = new ColorD(ref Col.Empty, ref 体配色.呼気);
-    		呼気右3_呼気2CD = new ColorD(ref Col.Empty, ref 体配色.呼気);
+    		呼気左1_呼気1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.呼気);
+    		呼気左1_呼気2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.呼気);
+    		呼気左2_呼気1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.呼気);
+    		呼気左2_呼気2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.呼気);
+    		呼気左3_呼気1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.呼気);
+    		呼気左3_呼気2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.呼気);
+    		呼気右1_呼気1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.呼気);
+    		呼気右1_呼気2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.呼気);
+    		呼気右2_呼気1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.呼気);
+    		呼気右2_呼気2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.呼気);
+    		呼気右3_呼気1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.呼気);
+    		呼気右3_呼気2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.呼気);
     	}
     }
 }

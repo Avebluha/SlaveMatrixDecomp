@@ -3,17 +3,17 @@ using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
-    public class 虫顎 : Ele
+    public class 虫顎 : Element
     {
-    	public Par X0Y0_顎;
+    	public ShapePart X0Y0_顎;
 
-    	public Par X0Y0_節;
+    	public ShapePart X0Y0_節;
 
-    	public Par X0Y0_牙_牙1;
+    	public ShapePart X0Y0_牙_牙1;
 
-    	public Par X0Y0_牙_牙2;
+    	public ShapePart X0Y0_牙_牙2;
 
-    	public Par X0Y0_牙_牙0;
+    	public ShapePart X0Y0_牙_牙0;
 
     	public ColorD 顎CD;
 
@@ -171,14 +171,14 @@ namespace SlaveMatrix
     	public 虫顎(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 虫顎D e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif(Sta.肢左["虫顎"][0]);
-    		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		X0Y0_顎 = pars["顎"].ToPar();
-    		X0Y0_節 = pars["節"].ToPar();
-    		Pars pars2 = pars["牙"].ToPars();
+    		MorphVariant morphVariant = new MorphVariant(GlobalState.肢左["虫顎"][0]);
+    		Body = new VariantGrid();
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_顎 = partGroup["顎"].ToPar();
+    		X0Y0_節 = partGroup["節"].ToPar();
+    		PartGroup pars2 = partGroup["牙"].ToPars();
     		X0Y0_牙_牙1 = pars2["牙1"].ToPar();
     		X0Y0_牙_牙2 = pars2["牙2"].ToPar();
     		X0Y0_牙_牙0 = pars2["牙0"].ToPar();
@@ -265,29 +265,29 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		顎CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		牙_牙1CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		牙_牙2CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		牙_牙0CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
+    		顎CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		牙_牙1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		牙_牙2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		牙_牙0CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
     	}
 
     	private void 配色T0(BodyColorSet 体配色)
     	{
-    		顎CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		牙_牙1CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		牙_牙2CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		牙_牙0CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		顎CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		牙_牙1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		牙_牙2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		牙_牙0CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
     	}
 
     	private void 配色T1(BodyColorSet 体配色)
     	{
-    		顎CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		節CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		牙_牙1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		牙_牙2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		牙_牙0CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
+    		顎CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		節CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		牙_牙1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		牙_牙2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		牙_牙0CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
     	}
     }
 }

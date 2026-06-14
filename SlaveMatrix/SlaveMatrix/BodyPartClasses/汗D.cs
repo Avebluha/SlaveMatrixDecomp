@@ -5,7 +5,7 @@ using SlaveMatrix.GameClasses;
 namespace SlaveMatrix
 {
     [Serializable]
-    public class 汗D : EleD
+    public class 汗D : ElementData
     {
     	public bool 汗0_表示 = true;
 
@@ -20,7 +20,7 @@ namespace SlaveMatrix
     		ThisType = GetType();
     	}
 
-    	public override Ele GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
+    	public override Element GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
     	{
     		return new 汗(DisUnit, 配色指定, 体配色, Med, this);
     	}

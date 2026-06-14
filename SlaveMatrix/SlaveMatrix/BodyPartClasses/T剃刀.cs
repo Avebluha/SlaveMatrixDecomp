@@ -3,47 +3,47 @@ using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
-    public class T剃刀 : Ele
+    public class T剃刀 : Element
     {
-    	public Par X0Y0_ヘッド;
+    	public ShapePart X0Y0_ヘッド;
 
-    	public Par X0Y0_刃_刃1;
+    	public ShapePart X0Y0_刃_刃1;
 
-    	public Par X0Y0_刃_刃2;
+    	public ShapePart X0Y0_刃_刃2;
 
-    	public Par X0Y0_Neck;
+    	public ShapePart X0Y0_Neck;
 
-    	public Par X0Y0_グリップ_グリップ0;
+    	public ShapePart X0Y0_グリップ_グリップ0;
 
-    	public Par X0Y0_グリップ_グリップ1;
+    	public ShapePart X0Y0_グリップ_グリップ1;
 
-    	public Par X0Y0_グリップ_グリップ2;
+    	public ShapePart X0Y0_グリップ_グリップ2;
 
-    	public Par X0Y0_グリップ_グリップ3;
+    	public ShapePart X0Y0_グリップ_グリップ3;
 
-    	public Par X0Y0_グリップ_グリップ4;
+    	public ShapePart X0Y0_グリップ_グリップ4;
 
-    	public Par X0Y0_グリップ_グリップ5;
+    	public ShapePart X0Y0_グリップ_グリップ5;
 
-    	public Par X0Y0_グリップ_グリップ6;
+    	public ShapePart X0Y0_グリップ_グリップ6;
 
-    	public Par X0Y0_グリップ_グリップ7;
+    	public ShapePart X0Y0_グリップ_グリップ7;
 
-    	public Par X0Y0_グリップ_グリップ8;
+    	public ShapePart X0Y0_グリップ_グリップ8;
 
-    	public Par X0Y0_グリップ_グリップ9;
+    	public ShapePart X0Y0_グリップ_グリップ9;
 
-    	public Par X0Y0_グリップ_グリップ10;
+    	public ShapePart X0Y0_グリップ_グリップ10;
 
-    	public Par X0Y0_グリップ_グリップ11;
+    	public ShapePart X0Y0_グリップ_グリップ11;
 
-    	public Par X0Y0_グリップ_グリップ12;
+    	public ShapePart X0Y0_グリップ_グリップ12;
 
-    	public Par X0Y0_グリップ_グリップ13;
+    	public ShapePart X0Y0_グリップ_グリップ13;
 
-    	public Par X0Y0_グリップ_グリップ14;
+    	public ShapePart X0Y0_グリップ_グリップ14;
 
-    	public Par X0Y0_グリップ_グリップ15;
+    	public ShapePart X0Y0_グリップ_グリップ15;
 
     	public ColorD ヘッドCD;
 
@@ -486,14 +486,14 @@ namespace SlaveMatrix
     	public T剃刀(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, T剃刀D e)
     	{
     		ThisType = GetType();
-    		Body = new Difs(Sta.カーソル["T字剃刀"]);
-    		Pars pars = Body[0][0];
-    		X0Y0_ヘッド = pars["ヘッド"].ToPar();
-    		Pars pars2 = pars["刃"].ToPars();
+    		Body = new VariantGrid(GlobalState.カーソル["T字剃刀"]);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_ヘッド = partGroup["ヘッド"].ToPar();
+    		PartGroup pars2 = partGroup["刃"].ToPars();
     		X0Y0_刃_刃1 = pars2["刃1"].ToPar();
     		X0Y0_刃_刃2 = pars2["刃2"].ToPar();
-    		X0Y0_Neck = pars["首"].ToPar();
-    		pars2 = pars["グリップ"].ToPars();
+    		X0Y0_Neck = partGroup["首"].ToPar();
+    		pars2 = partGroup["グリップ"].ToPars();
     		X0Y0_グリップ_グリップ0 = pars2["グリップ0"].ToPar();
     		X0Y0_グリップ_グリップ1 = pars2["グリップ1"].ToPar();
     		X0Y0_グリップ_グリップ2 = pars2["グリップ2"].ToPar();
@@ -585,7 +585,7 @@ namespace SlaveMatrix
     		X0Y0_グリップ_グリップ15CP = new ColorP(X0Y0_グリップ_グリップ15, グリップ_グリップ15CD, DisUnit, abj: true);
     		Intensity = e.濃度;
     		Vector2D local = X0Y0_刃_刃1.GetOP()[0].ps[1];
-    		foreach (Par item in Body.EnumJoinRoot)
+    		foreach (ShapePart item in Body.EnumJoinRoot)
     		{
     			item.SetBasePointBase(item.ToLocal(X0Y0_刃_刃1.ToGlobal(local)));
     		}
@@ -625,29 +625,29 @@ namespace SlaveMatrix
     	private void 配色N0(BodyColorSet 体配色)
     	{
     		ヘッドCD = new ColorD();
-    		ヘッドCD.線 = Col.Black;
-    		ヘッドCD.色 = new Color2(ref Col.Black, ref Col.Empty);
-    		Col.GetGrad(ref Col.DarkGray, out var ret);
-    		刃_刃1CD = new ColorD(ref Col.Black, ref ret);
-    		刃_刃2CD = new ColorD(ref Col.Black, ref ret);
-    		NeckCD = new ColorD(ref Col.Black, ref ret);
-    		ret = new Color2(ref Col.DimGray, ref Col.Black);
-    		グリップ_グリップ0CD = new ColorD(ref Col.Black, ref ret);
-    		グリップ_グリップ1CD = new ColorD(ref Col.Black, ref ret);
-    		グリップ_グリップ2CD = new ColorD(ref Col.Black, ref ret);
-    		グリップ_グリップ3CD = new ColorD(ref Col.Black, ref ret);
-    		グリップ_グリップ4CD = new ColorD(ref Col.Black, ref ret);
-    		グリップ_グリップ5CD = new ColorD(ref Col.Black, ref ret);
-    		グリップ_グリップ6CD = new ColorD(ref Col.Black, ref ret);
-    		グリップ_グリップ7CD = new ColorD(ref Col.Black, ref ret);
-    		グリップ_グリップ8CD = new ColorD(ref Col.Black, ref ret);
-    		グリップ_グリップ9CD = new ColorD(ref Col.Black, ref ret);
-    		グリップ_グリップ10CD = new ColorD(ref Col.Black, ref ret);
-    		グリップ_グリップ11CD = new ColorD(ref Col.Black, ref ret);
-    		グリップ_グリップ12CD = new ColorD(ref Col.Black, ref ret);
-    		グリップ_グリップ13CD = new ColorD(ref Col.Black, ref ret);
-    		グリップ_グリップ14CD = new ColorD(ref Col.Black, ref ret);
-    		グリップ_グリップ15CD = new ColorD(ref Col.Black, ref ret);
+    		ヘッドCD.線 = ColorHelper.Black;
+    		ヘッドCD.色 = new Color2(ref ColorHelper.Black, ref ColorHelper.Empty);
+    		ColorHelper.GetGrad(ref ColorHelper.DarkGray, out var ret);
+    		刃_刃1CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		刃_刃2CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		NeckCD = new ColorD(ref ColorHelper.Black, ref ret);
+    		ret = new Color2(ref ColorHelper.DimGray, ref ColorHelper.Black);
+    		グリップ_グリップ0CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		グリップ_グリップ1CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		グリップ_グリップ2CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		グリップ_グリップ3CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		グリップ_グリップ4CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		グリップ_グリップ5CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		グリップ_グリップ6CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		グリップ_グリップ7CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		グリップ_グリップ8CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		グリップ_グリップ9CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		グリップ_グリップ10CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		グリップ_グリップ11CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		グリップ_グリップ12CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		グリップ_グリップ13CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		グリップ_グリップ14CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		グリップ_グリップ15CD = new ColorD(ref ColorHelper.Black, ref ret);
     	}
     }
 }

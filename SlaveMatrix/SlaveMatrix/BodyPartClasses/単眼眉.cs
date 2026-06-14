@@ -3,13 +3,13 @@ using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
-    public class 単眼眉 : Ele
+    public class 単眼眉 : Element
     {
-    	public Par X0Y0_眉;
+    	public ShapePart X0Y0_眉;
 
-    	public Par X0Y1_眉;
+    	public ShapePart X0Y1_眉;
 
-    	public Par X0Y2_眉;
+    	public ShapePart X0Y2_眉;
 
     	public ColorD 眉CD;
 
@@ -125,13 +125,13 @@ namespace SlaveMatrix
     	public 単眼眉(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 単眼眉D e)
     	{
     		ThisType = GetType();
-    		Body = new Difs(Sta.胴体["単眼眉"]);
-    		Pars pars = Body[0][0];
-    		X0Y0_眉 = pars["眉"].ToPar();
-    		pars = Body[0][1];
-    		X0Y1_眉 = pars["眉"].ToPar();
-    		pars = Body[0][2];
-    		X0Y2_眉 = pars["眉"].ToPar();
+    		Body = new VariantGrid(GlobalState.胴体["単眼眉"]);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_眉 = partGroup["眉"].ToPar();
+    		partGroup = Body[0][1];
+    		X0Y1_眉 = partGroup["眉"].ToPar();
+    		partGroup = Body[0][2];
+    		X0Y2_眉 = partGroup["眉"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;

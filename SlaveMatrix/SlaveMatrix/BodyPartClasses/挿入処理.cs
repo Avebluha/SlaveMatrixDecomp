@@ -87,9 +87,9 @@ namespace SlaveMatrix
 
     	private double y0;
 
-    	private Par p0;
+    	private ShapePart p0;
 
-    	private Par py;
+    	private ShapePart py;
 
     	private Vector2D bp;
 
@@ -209,17 +209,17 @@ namespace SlaveMatrix
     	{
     		set
     		{
-    			if (対象.Ele is バイブ_アナル)
+    			if (対象.Element is バイブ_アナル)
     			{
-    				対象.Ele.Yv = (対象.Ele.Yv + value).Clamp(0.0, Bod.Is獣 ? A通常獣最大v : A通常人最大v);
+    				対象.Element.Yv = (対象.Element.Yv + value).Clamp(0.0, Bod.Is獣 ? A通常獣最大v : A通常人最大v);
     			}
-    			else if (対象.Ele is パール)
+    			else if (対象.Element is パール)
     			{
-    				対象.Ele.Yv = (対象.Ele.Yv + value).Clamp(0.0, Bod.Is獣 ? P通常獣最大v : P通常人最大v);
+    				対象.Element.Yv = (対象.Element.Yv + value).Clamp(0.0, Bod.Is獣 ? P通常獣最大v : P通常人最大v);
     			}
     			else
     			{
-    				対象.Ele.Yv = (対象.Ele.Yv + value).Clamp(0.0, 1.0);
+    				対象.Element.Yv = (対象.Element.Yv + value).Clamp(0.0, 1.0);
     			}
     		}
     	}
@@ -231,22 +231,22 @@ namespace SlaveMatrix
     			if (Bod.断面_表示)
     			{
     				dv = (dv + value).Clamp(0.0, 1.0);
-    				dy = ((dv >= 1.0) ? (対象.Ele.Body.GetCountY() - 1) : ((int)((double)対象.Ele.Body.GetCountY() * dv)));
-    				if (対象.Ele is バイブ_アナル)
+    				dy = ((dv >= 1.0) ? (対象.Element.Body.GetCountY() - 1) : ((int)((double)対象.Element.Body.GetCountY() * dv)));
+    				if (対象.Element is バイブ_アナル)
     				{
     					dy = dy.Limit(0, Bod.Is獣 ? A断面獣最大i : A断面人最大i);
     				}
-    				else if (対象.Ele is パール)
+    				else if (対象.Element is パール)
     				{
     					dy = dy.Limit(0, Bod.Is獣 ? P断面獣最大i : P断面人最大i);
     				}
-    				if ((!(対象.Ele is ハンド) || (対象.Ele.Xi != 6 && 対象.Ele.Xi != 7)) && !(対象.Ele is マウス) && (!Bod.Is獣 || (!(対象.Ele is パール) && !(対象.Ele is ロータ))))
+    				if ((!(対象.Element is ハンド) || (対象.Element.Xi != 6 && 対象.Element.Xi != 7)) && !(対象.Element is マウス) && (!Bod.Is獣 || (!(対象.Element is パール) && !(対象.Element is ロータ))))
     				{
-    					if (対象.Ele is バイブ_デンマ)
+    					if (対象.Element is バイブ_デンマ)
     					{
     						Bod.断面.Yv = dv.Clamp(断面単位v, 断面単位v3);
     					}
-    					else if (対象.Ele is ロータ || 対象.Ele is ハンド)
+    					else if (対象.Element is ロータ || 対象.Element is ハンド)
     					{
     						Bod.断面.Yv = dv.Clamp(0.0, 断面単位v2);
     					}
@@ -255,34 +255,34 @@ namespace SlaveMatrix
     						Bod.断面.Yv = dv.Clamp(0.0, 1.0);
     					}
     				}
-    				if (!Bod.Is獣 && !(対象.Ele is バイブ_デンマ) && !(対象.Ele is ハンド) && !(対象.Ele is マウス) && !(対象.Ele is ロータ))
+    				if (!Bod.Is獣 && !(対象.Element is バイブ_デンマ) && !(対象.Element is ハンド) && !(対象.Element is マウス) && !(対象.Element is ロータ))
     				{
     					Bod.断面.膣サイズY = 1.0 + 0.2 * dv.Clamp(0.0, 1.0);
     					Bod.VaginalCumDrip.尺度YC = Bod.断面.膣サイズY;
     					Bod.膣基.尺度YC = Bod.断面.膣サイズY;
     				}
-    				if (!(対象.Ele is ハンド) || (対象.Ele.Xi != 6 && 対象.Ele.Xi != 7))
+    				if (!(対象.Element is ハンド) || (対象.Element.Xi != 6 && 対象.Element.Xi != 7))
     				{
     					Bod.性器.Yv = dv.Clamp(性器単位v, 1.0);
     				}
     			}
     			else
     			{
-    				if (対象.Ele is バイブ_アナル)
+    				if (対象.Element is バイブ_アナル)
     				{
-    					対象.Ele.Yv = (対象.Ele.Yv + value).Clamp(0.0, Bod.Is獣 ? A通常獣最大v : A通常人最大v);
+    					対象.Element.Yv = (対象.Element.Yv + value).Clamp(0.0, Bod.Is獣 ? A通常獣最大v : A通常人最大v);
     				}
-    				else if (対象.Ele is パール)
+    				else if (対象.Element is パール)
     				{
-    					対象.Ele.Yv = (対象.Ele.Yv + value).Clamp(0.0, Bod.Is獣 ? P通常獣最大v : P通常人最大v);
+    					対象.Element.Yv = (対象.Element.Yv + value).Clamp(0.0, Bod.Is獣 ? P通常獣最大v : P通常人最大v);
     				}
     				else
     				{
-    					対象.Ele.Yv = (対象.Ele.Yv + value).Clamp(0.0, 1.0);
+    					対象.Element.Yv = (対象.Element.Yv + value).Clamp(0.0, 1.0);
     				}
-    				if (!(対象.Ele is ハンド) || (対象.Ele.Xi != 6 && 対象.Ele.Xi != 7))
+    				if (!(対象.Element is ハンド) || (対象.Element.Xi != 6 && 対象.Element.Xi != 7))
     				{
-    					Bod.性器.Yv = 対象.Ele.Yv.Clamp(性器単位v, 1.0);
+    					Bod.性器.Yv = 対象.Element.Yv.Clamp(性器単位v, 1.0);
     				}
     			}
     		}
@@ -292,7 +292,7 @@ namespace SlaveMatrix
     	{
     		set
     		{
-    			対象.Ele.Yv = (対象.Ele.Yv + value).Clamp(0.0, 1.0);
+    			対象.Element.Yv = (対象.Element.Yv + value).Clamp(0.0, 1.0);
     		}
     	}
 
@@ -300,17 +300,17 @@ namespace SlaveMatrix
     	{
     		set
     		{
-    			if (対象.Ele is バイブ_アナル)
+    			if (対象.Element is バイブ_アナル)
     			{
-    				対象.Ele.Yv = (対象.Ele.Yv + value).Clamp(0.0, A通常人最大v);
+    				対象.Element.Yv = (対象.Element.Yv + value).Clamp(0.0, A通常人最大v);
     			}
-    			else if (対象.Ele is パール)
+    			else if (対象.Element is パール)
     			{
-    				対象.Ele.Yv = (対象.Ele.Yv + value).Clamp(0.0, P通常人最大v);
+    				対象.Element.Yv = (対象.Element.Yv + value).Clamp(0.0, P通常人最大v);
     			}
     			else
     			{
-    				対象.Ele.Yv = (対象.Ele.Yv + value).Clamp(0.0, 1.0);
+    				対象.Element.Yv = (対象.Element.Yv + value).Clamp(0.0, 1.0);
     			}
     		}
     	}
@@ -321,7 +321,7 @@ namespace SlaveMatrix
     		{
     			if (!Is膣 || !Bod.断面_表示)
     			{
-    				return 対象.Ele.Yv;
+    				return 対象.Element.Yv;
     			}
     			return dv;
     		}
@@ -350,43 +350,43 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			if (対象.Ele is ハンド)
+    			if (対象.Element is ハンド)
     			{
     				return ToolType.Hand;
     			}
-    			if (対象.Ele is マウス)
+    			if (対象.Element is マウス)
     			{
     				return ToolType.マウス;
     			}
-    			if (対象.Ele is ペニス)
+    			if (対象.Element is ペニス)
     			{
     				return ToolType.Penis;
     			}
-    			if (対象.Ele is バイブ_ディル)
+    			if (対象.Element is バイブ_ディル)
     			{
     				return ToolType.Dildo;
     			}
-    			if (対象.Ele is バイブ_コモン)
+    			if (対象.Element is バイブ_コモン)
     			{
     				return ToolType.Vibrator;
     			}
-    			if (対象.Ele is バイブ_ドリル)
+    			if (対象.Element is バイブ_ドリル)
     			{
     				return ToolType.Drill;
     			}
-    			if (対象.Ele is バイブ_デンマ)
+    			if (対象.Element is バイブ_デンマ)
     			{
     				return ToolType.デンマ;
     			}
-    			if (対象.Ele is バイブ_アナル)
+    			if (対象.Element is バイブ_アナル)
     			{
     				return ToolType.AnalVibrator;
     			}
-    			if (対象.Ele is ロータ)
+    			if (対象.Element is ロータ)
     			{
     				return ToolType.ロータ;
     			}
-    			if (対象.Ele is パール)
+    			if (対象.Element is パール)
     			{
     				return ToolType.パール;
     			}
@@ -398,7 +398,7 @@ namespace SlaveMatrix
     	{
     		if ((0.1 * Player.口挿入度).Lot())
     		{
-    			switch (RNG.XS.Next(2))
+    			switch (Rng.XS.Next(2))
     			{
     			case 0:
     				//Sounds.挿抜口1.Play();
@@ -414,7 +414,7 @@ namespace SlaveMatrix
     	{
     		if ((0.1 * Player.膣挿入度 * Player.Tension.Inverse()).Lot())
     		{
-    			switch (RNG.XS.Next(2))
+    			switch (Rng.XS.Next(2))
     			{
     			case 0:
     				//Sounds.挿抜前1.Play();
@@ -430,7 +430,7 @@ namespace SlaveMatrix
     	{
     		if ((0.1 * Player.肛挿入度 * Player.Tension.Inverse()).Lot())
     		{
-    			switch (Oth.GetRandomIndex(4.0, 4.0, 1.0, 1.0))
+    			switch (GeometryUtils.GetRandomIndex(4.0, 4.0, 1.0, 1.0))
     			{
     			case 0:
     				//Sounds.挿抜前3.Play();
@@ -452,7 +452,7 @@ namespace SlaveMatrix
     	{
     		if ((0.1 * Player.糸挿入度 * Player.Tension.Inverse()).Lot())
     		{
-    			switch (RNG.XS.Next(2))
+    			switch (Rng.XS.Next(2))
     			{
     			case 0:
     				//Sounds.挿抜糸1.Play();
@@ -475,7 +475,7 @@ namespace SlaveMatrix
     		{
     			調教UI.擬音キュー.Enqueue(delegate(RenderArea a)
     			{
-    				調教UI.擬音.Sound(a, Bod.口腔位置.GetAreaPoint(0.05), Sta.口挿.GetVal(clip(Player.変化V_口), Player.変化V_固有値乱数), new Font("MS Gothic", 1f), Color.HotPink.S(Player.変化V_口.Clamp(0.5, 1.0)), 0.2 + 0.2 * RNG.XS.NextDouble() * Player.変化V_口, b: true);
+    				調教UI.擬音.Sound(a, Bod.口腔位置.GetAreaPoint(0.05), GlobalState.口挿.GetVal(clip(Player.変化V_口), Player.変化V_固有値乱数), new Font("MS Gothic", 1f), Color.HotPink.S(Player.変化V_口.Clamp(0.5, 1.0)), 0.2 + 0.2 * Rng.XS.NextDouble() * Player.変化V_口, b: true);
     			});
     		}
     	}
@@ -486,7 +486,7 @@ namespace SlaveMatrix
     		{
     			調教UI.擬音キュー.Enqueue(delegate(RenderArea a)
     			{
-    				調教UI.擬音.Sound(a, Bod.口腔位置.GetAreaPoint(0.05), Sta.口中.GetVal(clip(Player.変化V_口), Player.変化V_固有値乱数), new Font("MS Gothic", 1f), Color.HotPink.S(Player.変化V_口.Clamp(0.5, 1.0)), 0.2 + 0.2 * RNG.XS.NextDouble() * Player.変化V_口, b: true);
+    				調教UI.擬音.Sound(a, Bod.口腔位置.GetAreaPoint(0.05), GlobalState.口中.GetVal(clip(Player.変化V_口), Player.変化V_固有値乱数), new Font("MS Gothic", 1f), Color.HotPink.S(Player.変化V_口.Clamp(0.5, 1.0)), 0.2 + 0.2 * Rng.XS.NextDouble() * Player.変化V_口, b: true);
     			});
     		}
     	}
@@ -497,7 +497,7 @@ namespace SlaveMatrix
     		{
     			調教UI.擬音キュー.Enqueue(delegate(RenderArea a)
     			{
-    				調教UI.擬音.Sound(a, Bod.口腔位置.GetAreaPoint(0.05), Sta.口抜.GetVal(clip(Player.変化V_口), Player.変化V_固有値乱数), new Font("MS Gothic", 1f), Color.HotPink.S(Player.変化V_口.Clamp(0.5, 1.0)), 0.2 + 0.2 * RNG.XS.NextDouble() * Player.変化V_口, b: true);
+    				調教UI.擬音.Sound(a, Bod.口腔位置.GetAreaPoint(0.05), GlobalState.口抜.GetVal(clip(Player.変化V_口), Player.変化V_固有値乱数), new Font("MS Gothic", 1f), Color.HotPink.S(Player.変化V_口.Clamp(0.5, 1.0)), 0.2 + 0.2 * Rng.XS.NextDouble() * Player.変化V_口, b: true);
     			});
     		}
     	}
@@ -508,7 +508,7 @@ namespace SlaveMatrix
     		{
     			調教UI.擬音キュー.Enqueue(delegate(RenderArea a)
     			{
-    				調教UI.擬音.Sound(a, Bod.膣口位置.GetAreaPoint(0.04), Sta.膣挿.GetVal(clip(Player.変化V_膣), Player.変化V_固有値乱数), new Font("MS Gothic", 1f), Color.DeepPink.S(Player.変化V_膣.Clamp(0.5, 1.0)), 0.2 + 0.2 * RNG.XS.NextDouble() * Player.変化V_膣, b: true);
+    				調教UI.擬音.Sound(a, Bod.膣口位置.GetAreaPoint(0.04), GlobalState.膣挿.GetVal(clip(Player.変化V_膣), Player.変化V_固有値乱数), new Font("MS Gothic", 1f), Color.DeepPink.S(Player.変化V_膣.Clamp(0.5, 1.0)), 0.2 + 0.2 * Rng.XS.NextDouble() * Player.変化V_膣, b: true);
     			});
     		}
     	}
@@ -519,7 +519,7 @@ namespace SlaveMatrix
     		{
     			調教UI.擬音キュー.Enqueue(delegate(RenderArea a)
     			{
-    				調教UI.擬音.Sound(a, Bod.膣口位置.GetAreaPoint(0.04), Sta.膣中.GetVal(clip(Player.変化V_膣), Player.変化V_固有値乱数), new Font("MS Gothic", 1f), Color.DeepPink.S(Player.変化V_膣.Clamp(0.5, 1.0)), 0.2 + 0.2 * RNG.XS.NextDouble() * Player.変化V_膣, b: true);
+    				調教UI.擬音.Sound(a, Bod.膣口位置.GetAreaPoint(0.04), GlobalState.膣中.GetVal(clip(Player.変化V_膣), Player.変化V_固有値乱数), new Font("MS Gothic", 1f), Color.DeepPink.S(Player.変化V_膣.Clamp(0.5, 1.0)), 0.2 + 0.2 * Rng.XS.NextDouble() * Player.変化V_膣, b: true);
     			});
     		}
     	}
@@ -530,7 +530,7 @@ namespace SlaveMatrix
     		{
     			調教UI.擬音キュー.Enqueue(delegate(RenderArea a)
     			{
-    				調教UI.擬音.Sound(a, Bod.膣口位置.GetAreaPoint(0.04), Sta.膣抜.GetVal(clip(Player.変化V_膣), Player.変化V_固有値乱数), new Font("MS Gothic", 1f), Color.DeepPink.S(Player.変化V_膣.Clamp(0.5, 1.0)), 0.2 + 0.2 * RNG.XS.NextDouble() * Player.変化V_膣, b: true);
+    				調教UI.擬音.Sound(a, Bod.膣口位置.GetAreaPoint(0.04), GlobalState.膣抜.GetVal(clip(Player.変化V_膣), Player.変化V_固有値乱数), new Font("MS Gothic", 1f), Color.DeepPink.S(Player.変化V_膣.Clamp(0.5, 1.0)), 0.2 + 0.2 * Rng.XS.NextDouble() * Player.変化V_膣, b: true);
     			});
     		}
     	}
@@ -541,7 +541,7 @@ namespace SlaveMatrix
     		{
     			調教UI.擬音キュー.Enqueue(delegate(RenderArea a)
     			{
-    				調教UI.擬音.Sound(a, Bod.肛門位置.GetAreaPoint(0.04), Sta.肛挿.GetVal(clip(Player.変化V_肛), Player.変化V_固有値乱数), new Font("MS Gothic", 1f), Color.Coral.S(Player.変化V_肛.Clamp(0.5, 1.0)), 0.2 + 0.2 * RNG.XS.NextDouble() * Player.変化V_肛, b: true);
+    				調教UI.擬音.Sound(a, Bod.肛門位置.GetAreaPoint(0.04), GlobalState.肛挿.GetVal(clip(Player.変化V_肛), Player.変化V_固有値乱数), new Font("MS Gothic", 1f), Color.Coral.S(Player.変化V_肛.Clamp(0.5, 1.0)), 0.2 + 0.2 * Rng.XS.NextDouble() * Player.変化V_肛, b: true);
     			});
     		}
     	}
@@ -552,7 +552,7 @@ namespace SlaveMatrix
     		{
     			調教UI.擬音キュー.Enqueue(delegate(RenderArea a)
     			{
-    				調教UI.擬音.Sound(a, Bod.肛門位置.GetAreaPoint(0.04), Sta.肛中.GetVal(clip(Player.変化V_肛), Player.変化V_固有値乱数), new Font("MS Gothic", 1f), Color.Coral.S(Player.変化V_肛.Clamp(0.5, 1.0)), 0.2 + 0.2 * RNG.XS.NextDouble() * Player.変化V_肛, b: true);
+    				調教UI.擬音.Sound(a, Bod.肛門位置.GetAreaPoint(0.04), GlobalState.肛中.GetVal(clip(Player.変化V_肛), Player.変化V_固有値乱数), new Font("MS Gothic", 1f), Color.Coral.S(Player.変化V_肛.Clamp(0.5, 1.0)), 0.2 + 0.2 * Rng.XS.NextDouble() * Player.変化V_肛, b: true);
     			});
     		}
     	}
@@ -563,7 +563,7 @@ namespace SlaveMatrix
     		{
     			調教UI.擬音キュー.Enqueue(delegate(RenderArea a)
     			{
-    				調教UI.擬音.Sound(a, Bod.肛門位置.GetAreaPoint(0.04), Sta.肛抜.GetVal(clip(Player.変化V_肛), Player.変化V_固有値乱数), new Font("MS Gothic", 1f), Color.Coral.S(Player.変化V_肛.Clamp(0.5, 1.0)), 0.2 + 0.2 * RNG.XS.NextDouble() * Player.変化V_肛, b: true);
+    				調教UI.擬音.Sound(a, Bod.肛門位置.GetAreaPoint(0.04), GlobalState.肛抜.GetVal(clip(Player.変化V_肛), Player.変化V_固有値乱数), new Font("MS Gothic", 1f), Color.Coral.S(Player.変化V_肛.Clamp(0.5, 1.0)), 0.2 + 0.2 * Rng.XS.NextDouble() * Player.変化V_肛, b: true);
     			});
     		}
     	}
@@ -574,7 +574,7 @@ namespace SlaveMatrix
     		{
     			調教UI.擬音キュー.Enqueue(delegate(RenderArea a)
     			{
-    				調教UI.擬音.Sound(a, Bod.出糸位置.GetAreaPoint(0.04), Sta.糸挿.GetVal(clip(Player.変化V_糸), Player.変化V_固有値乱数), new Font("MS Gothic", 1f), Color.MediumOrchid.S(Player.変化V_糸.Clamp(0.5, 1.0)), 0.2 + 0.2 * RNG.XS.NextDouble() * Player.変化V_糸, b: true);
+    				調教UI.擬音.Sound(a, Bod.出糸位置.GetAreaPoint(0.04), GlobalState.糸挿.GetVal(clip(Player.変化V_糸), Player.変化V_固有値乱数), new Font("MS Gothic", 1f), Color.MediumOrchid.S(Player.変化V_糸.Clamp(0.5, 1.0)), 0.2 + 0.2 * Rng.XS.NextDouble() * Player.変化V_糸, b: true);
     			});
     		}
     	}
@@ -585,7 +585,7 @@ namespace SlaveMatrix
     		{
     			調教UI.擬音キュー.Enqueue(delegate(RenderArea a)
     			{
-    				調教UI.擬音.Sound(a, Bod.出糸位置.GetAreaPoint(0.04), Sta.糸中.GetVal(clip(Player.変化V_糸), Player.変化V_固有値乱数), new Font("MS Gothic", 1f), Color.MediumOrchid.S(Player.変化V_糸.Clamp(0.5, 1.0)), 0.2 + 0.2 * RNG.XS.NextDouble() * Player.変化V_糸, b: true);
+    				調教UI.擬音.Sound(a, Bod.出糸位置.GetAreaPoint(0.04), GlobalState.糸中.GetVal(clip(Player.変化V_糸), Player.変化V_固有値乱数), new Font("MS Gothic", 1f), Color.MediumOrchid.S(Player.変化V_糸.Clamp(0.5, 1.0)), 0.2 + 0.2 * Rng.XS.NextDouble() * Player.変化V_糸, b: true);
     			});
     		}
     	}
@@ -596,7 +596,7 @@ namespace SlaveMatrix
     		{
     			調教UI.擬音キュー.Enqueue(delegate(RenderArea a)
     			{
-    				調教UI.擬音.Sound(a, Bod.出糸位置.GetAreaPoint(0.04), Sta.糸抜.GetVal(clip(Player.変化V_糸), Player.変化V_固有値乱数), new Font("MS Gothic", 1f), Color.MediumOrchid.S(Player.変化V_糸.Clamp(0.5, 1.0)), 0.2 + 0.2 * RNG.XS.NextDouble() * Player.変化V_糸, b: true);
+    				調教UI.擬音.Sound(a, Bod.出糸位置.GetAreaPoint(0.04), GlobalState.糸抜.GetVal(clip(Player.変化V_糸), Player.変化V_固有値乱数), new Font("MS Gothic", 1f), Color.MediumOrchid.S(Player.変化V_糸.Clamp(0.5, 1.0)), 0.2 + 0.2 * Rng.XS.NextDouble() * Player.変化V_糸, b: true);
     			});
     		}
     	}
@@ -607,7 +607,7 @@ namespace SlaveMatrix
     		{
     			調教UI.擬音キュー.Enqueue(delegate(RenderArea a)
     			{
-    				調教UI.擬音.Sound(a, 対象.Ele.位置.GetAreaPoint(0.04), Sta.振動.GetVal(1.0, 1.0), new Font("MS Gothic", 1f), Col.Black, 0.1 + 0.1 * base.強度, b: true);
+    				調教UI.擬音.Sound(a, 対象.Element.位置.GetAreaPoint(0.04), GlobalState.振動.GetVal(1.0, 1.0), new Font("MS Gothic", 1f), ColorHelper.Black, 0.1 + 0.1 * base.強度, b: true);
     			});
     		}
     	}
@@ -625,7 +625,7 @@ namespace SlaveMatrix
     			if (挿入箇所 == ContactType.Vagina)
     			{
     				膣挿抜 = yr * Player.膣挿入度;
-    				調教UI.Action(ContactType.Vagina, ActionType.Insertion, CurrentState.Continue, アイテム情報, 対象.Ele.Yi, 1, 機械: false, 射精: false);
+    				調教UI.Action(ContactType.Vagina, ActionType.Insertion, CurrentState.Continue, アイテム情報, 対象.Element.Yi, 1, 機械: false, 射精: false);
     				Player.奴体力消費小();
     				Player.主精力消費小();
     				膣継続();
@@ -633,12 +633,12 @@ namespace SlaveMatrix
     			else if (挿入箇所 == ContactType.Anal)
     			{
     				肛挿抜 = yr * Player.肛挿入度;
-    				調教UI.Action(ContactType.Anal, ActionType.Insertion, CurrentState.Continue, アイテム情報, 対象.Ele.Yi, 1, 機械: false, 射精: false);
+    				調教UI.Action(ContactType.Anal, ActionType.Insertion, CurrentState.Continue, アイテム情報, 対象.Element.Yi, 1, 機械: false, 射精: false);
     				Player.奴体力消費小();
     				Player.主精力消費小();
     				肛継続();
     			}
-    			対象.Ele.角度C = (100.0 * xr).Clamp(-5.0, 5.0);
+    			対象.Element.角度C = (100.0 * xr).Clamp(-5.0, 5.0);
     			or = vr;
     		}
     	}
@@ -651,22 +651,22 @@ namespace SlaveMatrix
     		}
     		if (Is口)
     		{
-    			a = 対象.Ele.角度C;
-    			調教UI.Set_口(対象.Ele);
-    			対象.Ele.角度C = a;
+    			a = 対象.Element.角度C;
+    			調教UI.Set_口(対象.Element);
+    			対象.Element.角度C = a;
     		}
     		else if (Is膣)
     		{
     			if (Bod.断面_表示)
     			{
     				Bod.性器.接続PA();
-    				対象.Ele.位置B = Bod.性器.Body.GetCurrent().EnumAllPar().First((Par p_) => p_.Tag.Contains("膣口")).GetPosition();
-    				p0 = 対象.Ele.Body.pr[対象.Ele.Body[対象.Ele.Body.GetIndexX()][0]];
-    				py = 対象.Ele.Body.pr[対象.Ele.Body[対象.Ele.Body.GetIndexX()][dy]];
+    				対象.Element.位置B = Bod.性器.Body.GetCurrent().EnumAllPar().First((ShapePart p_) => p_.Tag.Contains("膣口")).GetPosition();
+    				p0 = 対象.Element.Body.pr[対象.Element.Body[対象.Element.Body.GetIndexX()][0]];
+    				py = 対象.Element.Body.pr[対象.Element.Body[対象.Element.Body.GetIndexX()][dy]];
     				if (pn)
     				{
     					bp = py.GetPositionBase();
-    					py.SetPositionBase(対象.Ele.位置B);
+    					py.SetPositionBase(対象.Element.位置B);
     					y0 = py.ToGlobal(py.GetOP()[0].ps[psi]).Y;
     					py.SetPositionBase(bp);
     				}
@@ -674,37 +674,37 @@ namespace SlaveMatrix
     				{
     					y0 = py.ToGlobal(py.GetOP()[0].ps[psi]).Y;
     				}
-    				対象.Ele.位置B = 対象.Ele.位置B.AddY(p0.GetBasePointBase().Y - py.GetBasePointBase().Y);
+    				対象.Element.位置B = 対象.Element.位置B.AddY(p0.GetBasePointBase().Y - py.GetBasePointBase().Y);
     				if (pn)
     				{
     					bp = p0.GetPositionBase();
-    					p0.SetPositionBase(対象.Ele.位置B);
-    					対象.Ele.位置B = 対象.Ele.位置B.AddY(y0 - p0.ToGlobal(p0.GetOP()[0].ps[psi]).Y);
+    					p0.SetPositionBase(対象.Element.位置B);
+    					対象.Element.位置B = 対象.Element.位置B.AddY(y0 - p0.ToGlobal(p0.GetOP()[0].ps[psi]).Y);
     					p0.SetPositionBase(bp);
     				}
     				else
     				{
-    					対象.Ele.位置B = 対象.Ele.位置B.AddY(y0 - p0.ToGlobal(p0.GetOP()[0].ps[psi]).Y);
+    					対象.Element.位置B = 対象.Element.位置B.AddY(y0 - p0.ToGlobal(p0.GetOP()[0].ps[psi]).Y);
     				}
     			}
     			else
     			{
-    				a = 対象.Ele.角度C;
-    				調教UI.Set_膣口(対象.Ele);
-    				対象.Ele.角度C = a;
+    				a = 対象.Element.角度C;
+    				調教UI.Set_膣口(対象.Element);
+    				対象.Element.角度C = a;
     			}
     		}
     		else if (Is肛)
     		{
-    			a = 対象.Ele.角度C;
-    			調教UI.Set_肛門(対象.Ele);
-    			対象.Ele.角度C = a;
+    			a = 対象.Element.角度C;
+    			調教UI.Set_肛門(対象.Element);
+    			対象.Element.角度C = a;
     		}
     		else if (Is糸)
     		{
-    			a = 対象.Ele.角度C;
-    			調教UI.Set_出糸(対象.Ele);
-    			対象.Ele.角度C = a;
+    			a = 対象.Element.角度C;
+    			調教UI.Set_出糸(対象.Element);
+    			対象.Element.角度C = a;
     		}
     	}
 
@@ -719,7 +719,7 @@ namespace SlaveMatrix
     		{
     			Bod.性器.Xi = 1;
     			Bod.性器.Yi = 0;
-    			if (!(対象.Ele is ハンド) || 対象.Ele.Xi != 7)
+    			if (!(対象.Element is ハンド) || 対象.Element.Xi != 7)
     			{
     				Bod.性器.くぱぁ = くぱぁ;
     			}
@@ -741,15 +741,15 @@ namespace SlaveMatrix
     			_ = Is糸;
     		}
     		挿入箇所 = ContactType.none;
-    		対象.Ele.角度C = 0.0;
-    		if (対象.Ele is ペニス)
+    		対象.Element.角度C = 0.0;
+    		if (対象.Element is ペニス)
     		{
-    			対象.Ele.Xi = 0;
+    			対象.Element.Xi = 0;
     		}
-    		対象.Ele.Yi = 0;
+    		対象.Element.Yi = 0;
     		if (調教UI.挿入処理s != null)
     		{
-    			調教UI.挿入処理s.対象.Ele.角度C = 0.0;
+    			調教UI.挿入処理s.対象.Element.角度C = 0.0;
     			調教UI.挿入処理s.Insert = 1.0;
     		}
     		調教UI.放し();
@@ -777,7 +777,7 @@ namespace SlaveMatrix
 
     	private void 挿入中1(string str)
     	{
-    		if (!Sta.GameData.ガイド)
+    		if (!GlobalState.GameData.ガイド)
     		{
     			return;
     		}
@@ -814,7 +814,7 @@ namespace SlaveMatrix
 
     	private void 待機時1()
     	{
-    		if (Sta.GameData.ガイド)
+    		if (GlobalState.GameData.ガイド)
     		{
     			if (振動機能)
     			{
@@ -833,7 +833,7 @@ namespace SlaveMatrix
 
     	private void 押付時(ref ContactD cd)
     	{
-    		if (Sta.GameData.ガイド)
+    		if (GlobalState.GameData.ガイド)
     		{
     			if (振動機能)
     			{
@@ -856,7 +856,7 @@ namespace SlaveMatrix
 
     	private void 挿入時(string str)
     	{
-    		if (Sta.GameData.ガイド)
+    		if (GlobalState.GameData.ガイド)
     		{
     			ip.SubInfoIm = str + "\r\nLDo&Mo↑:" + GameText.挿入;
     		}
@@ -866,25 +866,25 @@ namespace SlaveMatrix
     	{
     		if (Bod.断面_表示)
     		{
-    			対象.Ele.Yi = 0;
+    			対象.Element.Yi = 0;
     			Bod.性器.Xi = 3;
     			dv = v;
-    			dy = ((dv >= 1.0) ? (対象.Ele.Body.GetCountY() - 1) : ((int)((double)対象.Ele.Body.GetCountY() * dv)));
-    			if (対象.Ele is バイブ_アナル)
+    			dy = ((dv >= 1.0) ? (対象.Element.Body.GetCountY() - 1) : ((int)((double)対象.Element.Body.GetCountY() * dv)));
+    			if (対象.Element is バイブ_アナル)
     			{
     				dy = dy.Limit(0, Bod.Is獣 ? A断面獣最大i : A断面人最大i);
     			}
-    			else if (対象.Ele is パール)
+    			else if (対象.Element is パール)
     			{
     				dy = dy.Limit(0, Bod.Is獣 ? P断面獣最大i : P断面人最大i);
     			}
-    			if ((!(対象.Ele is ハンド) || (対象.Ele.Xi != 6 && 対象.Ele.Xi != 7)) && !(対象.Ele is マウス) && (!Bod.Is獣 || (!(対象.Ele is パール) && !(対象.Ele is ロータ))))
+    			if ((!(対象.Element is ハンド) || (対象.Element.Xi != 6 && 対象.Element.Xi != 7)) && !(対象.Element is マウス) && (!Bod.Is獣 || (!(対象.Element is パール) && !(対象.Element is ロータ))))
     			{
-    				if (対象.Ele is バイブ_デンマ)
+    				if (対象.Element is バイブ_デンマ)
     				{
     					Bod.断面.Yv = dv.Clamp(断面単位v, 断面単位v3);
     				}
-    				else if (対象.Ele is ロータ || 対象.Ele is ハンド)
+    				else if (対象.Element is ロータ || 対象.Element is ハンド)
     				{
     					Bod.断面.Yv = dv.Clamp(0.0, 断面単位v2);
     				}
@@ -893,13 +893,13 @@ namespace SlaveMatrix
     					Bod.断面.Yv = dv.Clamp(0.0, 1.0);
     				}
     			}
-    			if (!Bod.Is獣 && !(対象.Ele is バイブ_デンマ) && !(対象.Ele is ハンド) && !(対象.Ele is マウス) && !(対象.Ele is ロータ))
+    			if (!Bod.Is獣 && !(対象.Element is バイブ_デンマ) && !(対象.Element is ハンド) && !(対象.Element is マウス) && !(対象.Element is ロータ))
     			{
     				Bod.断面.膣サイズY = 1.0 + 0.2 * dv.Clamp(0.0, 1.0);
     				Bod.VaginalCumDrip.尺度YC = Bod.断面.膣サイズY;
     				Bod.膣基.尺度YC = Bod.断面.膣サイズY;
     			}
-    			if (!(対象.Ele is ハンド) || (対象.Ele.Xi != 6 && 対象.Ele.Xi != 7))
+    			if (!(対象.Element is ハンド) || (対象.Element.Xi != 6 && 対象.Element.Xi != 7))
     			{
     				Bod.性器.Yv = dv.Clamp(性器単位v, 1.0);
     			}
@@ -907,28 +907,28 @@ namespace SlaveMatrix
     		else
     		{
     			Bod.性器.Xi = 2;
-    			if (対象.Ele is バイブ_アナル)
+    			if (対象.Element is バイブ_アナル)
     			{
-    				対象.Ele.Yv = v.Clamp(0.0, Bod.Is獣 ? A通常獣最大v : A通常人最大v);
+    				対象.Element.Yv = v.Clamp(0.0, Bod.Is獣 ? A通常獣最大v : A通常人最大v);
     			}
-    			else if (対象.Ele is パール)
+    			else if (対象.Element is パール)
     			{
-    				対象.Ele.Yv = v.Clamp(0.0, Bod.Is獣 ? P通常獣最大v : P通常人最大v);
+    				対象.Element.Yv = v.Clamp(0.0, Bod.Is獣 ? P通常獣最大v : P通常人最大v);
     			}
     			else
     			{
-    				対象.Ele.Yv = v.Clamp(0.0, 1.0);
+    				対象.Element.Yv = v.Clamp(0.0, 1.0);
     			}
-    			if (!(対象.Ele is ハンド) || (対象.Ele.Xi != 6 && 対象.Ele.Xi != 7))
+    			if (!(対象.Element is ハンド) || (対象.Element.Xi != 6 && 対象.Element.Xi != 7))
     			{
-    				Bod.性器.Yv = 対象.Ele.Yv.Clamp(性器単位v, 1.0);
+    				Bod.性器.Yv = 対象.Element.Yv.Clamp(性器単位v, 1.0);
     			}
     		}
     	}
 
     	public void 突き上げ()
     	{
-    		if (対象.Ele is ペニス && Insert > oi && Insert > 0.8)
+    		if (対象.Element is ペニス && Insert > oi && Insert > 0.8)
     		{
     			Cha.BodySway.Start();
     		}
@@ -967,18 +967,18 @@ namespace SlaveMatrix
                     System.Diagnostics.Debug.WriteLine("x y diffs: {0} {1}", x, y);
                     if (Is挿入)
     				{
-    					対象.Ele.角度C = (100.0 * x).Clamp(-5.0, 5.0);
+    					対象.Element.角度C = (100.0 * x).Clamp(-5.0, 5.0);
     					if (Is口)
     					{
     						挿入中1(GameText.口腔);
     						口挿抜 = y * Player.口挿入度;
-    						調教UI.Action(ContactType.Mouth, ActionType.Insertion, CurrentState.Continue, アイテム情報, 対象.Ele.Yi, 1, 機械: false, 射精: false);
+    						調教UI.Action(ContactType.Mouth, ActionType.Insertion, CurrentState.Continue, アイテム情報, 対象.Element.Yi, 1, 機械: false, 射精: false);
     						Player.奴体力消費小();
     						Player.主精力消費小();
     						口継続();
 
-                            //if (mb != MouseButtons.Left && 対象.Ele.Yi == 0 && o.Y < v.Y && !挿抜モーション.Run)
-                            if (mb != MouseButtons.Left && 対象.Ele.Yi == 0 && o.Y > v.Y && !挿抜モーション.Run)
+                            //if (mb != MouseButtons.Left && 対象.Element.Yi == 0 && o.Y < v.Y && !挿抜モーション.Run)
+                            if (mb != MouseButtons.Left && 対象.Element.Yi == 0 && o.Y > v.Y && !挿抜モーション.Run)
                             {
                                 調教UI.Action(ContactType.Mouth, ActionType.Insertion, CurrentState.End, アイテム情報, 0, 1, 機械: false, 射精: false);
     							Player.奴体力消費小();
@@ -987,8 +987,8 @@ namespace SlaveMatrix
     							解除();
 
                                 //~~TODO~~ fix?
-                                //Cursor.Position = Med.BaseControlC.PointToScreen(Med.FromBasePosition(対象.Ele.位置B));
-                                Med.CursorPosition = Med.FromBasePosition(対象.Ele.位置B);
+                                //Cursor.Position = Med.BaseControlC.PointToScreen(Med.FromBasePosition(対象.Element.位置B));
+                                Med.CursorPosition = Med.FromBasePosition(対象.Element.位置B);
 
     							待機時1();
     							if (調教UI.ペニス処理.フェラ.Run)
@@ -997,7 +997,7 @@ namespace SlaveMatrix
     							}
     							if (調教UI.ペニス処理.中出し)
     							{
-    								if (Cha.CharacterData.SkillL > 0.5 * Sta.GameData.TrainingTarget.MaxSkillL && Cha.CharacterData.Affection > 0.6 && Cha.CharacterData.Lust > 0.5)
+    								if (Cha.CharacterData.SkillL > 0.5 * GlobalState.GameData.TrainingTarget.MaxSkillL && Cha.CharacterData.Affection > 0.6 && Cha.CharacterData.Lust > 0.5)
     								{
     									Cha.Swallow.Start();
     								}
@@ -1019,12 +1019,12 @@ namespace SlaveMatrix
     					{
     						挿入中1(GameText.肛門);
     						肛挿抜 = y * Player.肛挿入度;
-    						調教UI.Action(ContactType.Anal, ActionType.Insertion, CurrentState.Continue, アイテム情報, 対象.Ele.Yi, 1, 機械: false, 射精: false);
+    						調教UI.Action(ContactType.Anal, ActionType.Insertion, CurrentState.Continue, アイテム情報, 対象.Element.Yi, 1, 機械: false, 射精: false);
     						Player.奴体力消費小();
     						Player.主精力消費小();
     						肛継続();
-                            //if (mb != MouseButtons.Left && 対象.Ele.Yi == 0 && o.Y < v.Y && !挿抜モーション.Run)
-                            if (mb != MouseButtons.Left && 対象.Ele.Yi == 0 && o.Y > v.Y && !挿抜モーション.Run)
+                            //if (mb != MouseButtons.Left && 対象.Element.Yi == 0 && o.Y < v.Y && !挿抜モーション.Run)
+                            if (mb != MouseButtons.Left && 対象.Element.Yi == 0 && o.Y > v.Y && !挿抜モーション.Run)
     						{
     							調教UI.Action(ContactType.Anal, ActionType.Insertion, CurrentState.End, アイテム情報, 0, 1, 機械: false, 射精: false);
     							Player.奴体力消費小();
@@ -1033,8 +1033,8 @@ namespace SlaveMatrix
     							解除();
 
                                 //~~TODO~~ fix?
-                                //Cursor.Position = Med.BaseControlC.PointToScreen(Med.FromBasePosition(対象.Ele.位置B));
-                                Med.CursorPosition = Med.FromBasePosition(対象.Ele.位置B);
+                                //Cursor.Position = Med.BaseControlC.PointToScreen(Med.FromBasePosition(対象.Element.位置B));
+                                Med.CursorPosition = Med.FromBasePosition(対象.Element.位置B);
 
     							待機時1();
     							if (調教UI.ペニス処理.中出し)
@@ -1060,8 +1060,8 @@ namespace SlaveMatrix
     						Player.主精力消費小();
     						膣継続();
 
-                            //if (mb != MouseButtons.Left && (Bod.断面_表示 ? (dy == 0) : (対象.Ele.Yi == 0)) && o.Y < v.Y && !挿抜モーション.Run)
-                            if (mb != MouseButtons.Left && (Bod.断面_表示 ? (dy == 0) : (対象.Ele.Yi == 0)) && o.Y > v.Y && !挿抜モーション.Run)
+                            //if (mb != MouseButtons.Left && (Bod.断面_表示 ? (dy == 0) : (対象.Element.Yi == 0)) && o.Y < v.Y && !挿抜モーション.Run)
+                            if (mb != MouseButtons.Left && (Bod.断面_表示 ? (dy == 0) : (対象.Element.Yi == 0)) && o.Y > v.Y && !挿抜モーション.Run)
     						{
     							調教UI.Action(ContactType.Vagina, ActionType.Insertion, CurrentState.End, アイテム情報, 0, 1, 機械: false, 射精: false);
     							Player.奴体力消費小();
@@ -1070,8 +1070,8 @@ namespace SlaveMatrix
     							解除();
 
                                 //~~TODO~~ fix?
-                                //Cursor.Position = Med.BaseControlC.PointToScreen(Med.FromBasePosition(対象.Ele.位置B));
-                                Med.CursorPosition = Med.FromBasePosition(対象.Ele.位置B);
+                                //Cursor.Position = Med.BaseControlC.PointToScreen(Med.FromBasePosition(対象.Element.位置B));
+                                Med.CursorPosition = Med.FromBasePosition(対象.Element.位置B);
 
     							待機時1();
     							if (調教UI.ペニス処理.中出し)
@@ -1092,12 +1092,12 @@ namespace SlaveMatrix
     					{
     						挿入中1(GameText.出糸);
     						糸挿抜 = y * Player.糸挿入度;
-    						調教UI.Action(ContactType.Thread, ActionType.Insertion, CurrentState.Continue, アイテム情報, 対象.Ele.Yi, 1, 機械: false, 射精: false);
+    						調教UI.Action(ContactType.Thread, ActionType.Insertion, CurrentState.Continue, アイテム情報, 対象.Element.Yi, 1, 機械: false, 射精: false);
     						Player.奴体力消費小();
     						Player.主精力消費小();
     						糸継続();
-                            //if (mb != MouseButtons.Left && 対象.Ele.Yi == 0 && o.Y < v.Y && !挿抜モーション.Run)
-                            if (mb != MouseButtons.Left && 対象.Ele.Yi == 0 && o.Y > v.Y && !挿抜モーション.Run)
+                            //if (mb != MouseButtons.Left && 対象.Element.Yi == 0 && o.Y < v.Y && !挿抜モーション.Run)
+                            if (mb != MouseButtons.Left && 対象.Element.Yi == 0 && o.Y > v.Y && !挿抜モーション.Run)
     						{
     							調教UI.Action(ContactType.Thread, ActionType.Insertion, CurrentState.End, アイテム情報, 0, 1, 機械: false, 射精: false);
     							Player.奴体力消費小();
@@ -1105,8 +1105,8 @@ namespace SlaveMatrix
     							糸終了();
     							解除();
                                 //~~TODO~~ fix?
-                                //Cursor.Position = Med.BaseControlC.PointToScreen(Med.FromBasePosition(対象.Ele.位置B));
-                                Med.CursorPosition = Med.FromBasePosition(対象.Ele.位置B);
+                                //Cursor.Position = Med.BaseControlC.PointToScreen(Med.FromBasePosition(対象.Element.位置B));
+                                Med.CursorPosition = Med.FromBasePosition(対象.Element.位置B);
 
     							待機時1();
     							if (調教UI.ペニス処理.中出し)
@@ -1136,11 +1136,11 @@ namespace SlaveMatrix
     						}
     						if (対象 == 調教UI.ペニスCM)
     						{
-    							対象.Ele.角度C = (100.0 * x).Clamp(-4.0, 4.0);
+    							対象.Element.角度C = (100.0 * x).Clamp(-4.0, 4.0);
     						}
     						else
     						{
-    							対象.Ele.角度C = (100.0 * x).Clamp(-11.0, 11.0);
+    							対象.Element.角度C = (100.0 * x).Clamp(-11.0, 11.0);
     						}
     						調教UI.Action(cd.c, ActionType.Contact, CurrentState.Continue, アイテム情報, 0, 1, 機械: false, 射精: false);
     						Player.奴体力消費小();
@@ -1151,7 +1151,7 @@ namespace SlaveMatrix
     						調教UI.Action(cd.c, ActionType.Contact, CurrentState.End, アイテム情報, 0, 1, 機械: false, 射精: false);
     						Player.奴体力消費小();
     						Player.主精力消費小();
-    						対象.Ele.角度C = 0.0;
+    						対象.Element.角度C = 0.0;
     						調教UI.放し();
     					}
     					押付時(ref cd);
@@ -1159,22 +1159,22 @@ namespace SlaveMatrix
     			}
     			else if (Player.フェラ1 && cd.c == ContactType.Mouth && !調教UI.SubFocus.Any((挿入処理 e) => e.Is口))
     			{
-    				調教UI.Set_口(対象.Ele);
+    				調教UI.Set_口(対象.Element);
     				挿入時(GameText.口腔);
     			}
     			else if (cd.c == ContactType.Anal && !調教UI.SubFocus.Any((挿入処理 e) => e.Is肛))
     			{
-    				調教UI.Set_肛門(対象.Ele);
+    				調教UI.Set_肛門(対象.Element);
     				挿入時(GameText.肛門);
     			}
     			else if (cd.c == ContactType.Vagina && !調教UI.SubFocus.Any((挿入処理 e) => e.Is膣))
     			{
-    				調教UI.Set_膣口(対象.Ele);
+    				調教UI.Set_膣口(対象.Element);
     				挿入時(GameText.膣腔);
     			}
     			else if (cd.c == ContactType.Thread && !調教UI.SubFocus.Any((挿入処理 e) => e.Is糸))
     			{
-    				調教UI.Set_出糸(対象.Ele);
+    				調教UI.Set_出糸(対象.Element);
     				挿入時(GameText.出糸);
     			}
     			else if (押し付け)
@@ -1194,10 +1194,10 @@ namespace SlaveMatrix
     		if (調教UI.Focus == 調教UI.ペニスCM || 調教UI.Focus == 調教UI.マウスCM)
     		{
     			調教UI.挿入放し();
-    			対象.Ele.角度C = 0.0;
+    			対象.Element.角度C = 0.0;
     			if (調教UI.挿入処理s != null)
     			{
-    				調教UI.挿入処理s.対象.Ele.角度C = 0.0;
+    				調教UI.挿入処理s.対象.Element.角度C = 0.0;
     				調教UI.挿入処理s.Insert = 1.0;
     			}
     			調教UI.放し();
@@ -1219,11 +1219,11 @@ namespace SlaveMatrix
     					調教UI.押し(ref cd);
     					Is挿入 = true;
     					挿入箇所 = cd.c;
-    					if (対象.Ele is ペニス)
+    					if (対象.Element is ペニス)
     					{
-    						対象.Ele.Xi = 1;
+    						対象.Element.Xi = 1;
     					}
-    					対象.Ele.Yi = 0;
+    					対象.Element.Yi = 0;
     					Bod.口i = 13;
     					if (Player.フェラ2)
     					{
@@ -1242,11 +1242,11 @@ namespace SlaveMatrix
     					調教UI.押し(ref cd);
     					Is挿入 = true;
     					挿入箇所 = cd.c;
-    					if (対象.Ele is ペニス)
+    					if (対象.Element is ペニス)
     					{
-    						対象.Ele.Xi = 1;
+    						対象.Element.Xi = 1;
     					}
-    					対象.Ele.Yi = 0;
+    					対象.Element.Yi = 0;
     					対象.Under = true;
     					調教UI.Action(ContactType.Anal, ActionType.Insertion, CurrentState.Start, アイテム情報, 0, 1, 機械: false, 射精: false);
     					Player.奴体力消費小();
@@ -1260,11 +1260,11 @@ namespace SlaveMatrix
     					調教UI.押し(ref cd);
     					Is挿入 = true;
     					挿入箇所 = cd.c;
-    					if (対象.Ele is ペニス)
+    					if (対象.Element is ペニス)
     					{
-    						対象.Ele.Xi = 1;
+    						対象.Element.Xi = 1;
     					}
-    					対象.Ele.Yi = 0;
+    					対象.Element.Yi = 0;
     					対象.Under = true;
     					if (Bod.断面_表示)
     					{
@@ -1275,7 +1275,7 @@ namespace SlaveMatrix
     						Bod.性器.Xi = 2;
     					}
     					Bod.性器.Yi = 1;
-    					if ((!(対象.Ele is ハンド) || 対象.Ele.Xi != 7) && !(対象.Ele is マウス))
+    					if ((!(対象.Element is ハンド) || 対象.Element.Xi != 7) && !(対象.Element is マウス))
     					{
     						くぱぁ = Bod.性器.くぱぁ;
     						Bod.性器.くぱぁ = 1.0;
@@ -1292,11 +1292,11 @@ namespace SlaveMatrix
     					調教UI.押し(ref cd);
     					Is挿入 = true;
     					挿入箇所 = cd.c;
-    					if (対象.Ele is ペニス)
+    					if (対象.Element is ペニス)
     					{
-    						対象.Ele.Xi = 1;
+    						対象.Element.Xi = 1;
     					}
-    					対象.Ele.Yi = 0;
+    					対象.Element.Yi = 0;
     					調教UI.Action(ContactType.Thread, ActionType.Insertion, CurrentState.Start, アイテム情報, 0, 1, 機械: false, 射精: false);
     					Player.奴体力消費小();
     					Player.主精力消費小();
@@ -1344,7 +1344,7 @@ namespace SlaveMatrix
     			}
     			if (Is挿入)
     			{
-    				if (Sta.GameData.ガイド)
+    				if (GlobalState.GameData.ガイド)
     				{
     					if (Is口)
     					{
@@ -1376,16 +1376,16 @@ namespace SlaveMatrix
     				return;
     			}
     			_ = Is口;
-    			if (Is挿入 && ((!Is膣 && 対象.Ele.Yi > 0) || (Is膣 && Bod.断面_表示 && dy > 0) || (!Bod.断面_表示 && 対象.Ele.Yi > 0)))
+    			if (Is挿入 && ((!Is膣 && 対象.Element.Yi > 0) || (Is膣 && Bod.断面_表示 && dy > 0) || (!Bod.断面_表示 && 対象.Element.Yi > 0)))
     			{
     				if (調教UI.Focus != 調教UI.ハンド右CM && 調教UI.Focus != 調教UI.マウスCM && 調教UI.Focus != 調教UI.ペニスCM)
     				{
     					挿抜モーション.End();
     					調教UI.挿入放し();
-    					対象.Ele.角度C = 0.0;
+    					対象.Element.角度C = 0.0;
     					if (調教UI.挿入処理s != null)
     					{
-    						調教UI.挿入処理s.対象.Ele.角度C = 0.0;
+    						調教UI.挿入処理s.対象.Element.角度C = 0.0;
     						調教UI.挿入処理s.Insert = 1.0;
     					}
     					調教UI.放し();
@@ -1395,8 +1395,8 @@ namespace SlaveMatrix
     			{
     				解除();
                     //~~TODO~~ fix?
-                    //Cursor.Position = Med.BaseControlC.PointToScreen(Med.FromBasePosition(対象.Ele.位置B));
-                    Med.CursorPosition = Med.FromBasePosition(対象.Ele.位置B);
+                    //Cursor.Position = Med.BaseControlC.PointToScreen(Med.FromBasePosition(対象.Element.位置B));
+                    Med.CursorPosition = Med.FromBasePosition(対象.Element.位置B);
     				調教UI.通常放し();
     			}
     		}
@@ -1410,7 +1410,7 @@ namespace SlaveMatrix
     			Player.奴体力消費小();
     			Player.主精力消費小();
     			調教UI.放し();
-    			対象.Ele.角度C = 0.0;
+    			対象.Element.角度C = 0.0;
     			Is押付 = false;
     			if (調教UI.IsHitCha(ref cd))
     			{
@@ -1438,13 +1438,13 @@ namespace SlaveMatrix
     		{
     			回転モーション.BaseSpeed = 10.0 * base.強度;
     		}
-    		if (!Sta.GameData.ガイド)
+    		if (!GlobalState.GameData.ガイド)
     		{
     			ip.SubInfoIm = "Wh:" + GameText.強さL + 強さ;
     		}
     		else if (Is挿入)
     		{
-    			if (Sta.GameData.ガイド)
+    			if (GlobalState.GameData.ガイド)
     			{
     				if (挿入箇所 == ContactType.Mouth)
     				{
@@ -1470,41 +1470,41 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 挿入処理(TrainingUI 調教UI, CM 対象)
+    	public 挿入処理(TrainingUI 調教UI, CharacterElement 対象)
     		: base(調教UI, 対象)
     	{
     		挿入処理 挿入処理2 = this;
-    		振動機能 = !(対象.Ele is ペニス) && !(対象.Ele is マウス) && !(対象.Ele is ハンド) && !(対象.Ele is パール);
+    		振動機能 = !(対象.Element is ペニス) && !(対象.Element is マウス) && !(対象.Element is ハンド) && !(対象.Element is パール);
     		if (振動機能)
     		{
     			double d = 0.0005;
-    			if (対象.Ele is ロータ)
+    			if (対象.Element is ロータ)
     			{
     				d *= 1.0;
     			}
-    			else if (対象.Ele is バイブ_ディル)
+    			else if (対象.Element is バイブ_ディル)
     			{
     				d *= 1.1;
     			}
-    			else if (対象.Ele is バイブ_コモン)
+    			else if (対象.Element is バイブ_コモン)
     			{
     				d *= 1.2;
     			}
-    			else if (対象.Ele is バイブ_ドリル)
+    			else if (対象.Element is バイブ_ドリル)
     			{
     				d *= 1.2;
     			}
-    			else if (対象.Ele is バイブ_アナル)
+    			else if (対象.Element is バイブ_アナル)
     			{
     				d *= 1.1;
     			}
-    			else if (対象.Ele is バイブ_デンマ)
+    			else if (対象.Element is バイブ_デンマ)
     			{
     				d *= 1.5;
     			}
-    			Vector2D p = Dat.Vec2DZero;
-    			bool f = !(対象.Ele is ロータ);
-    			bool v = 対象.Ele is バイブ_ディル || 対象.Ele is バイブ_コモン || 対象.Ele is バイブ_ドリル || 対象.Ele is バイブ_アナル || 対象.Ele is バイブ_デンマ;
+    			Vector2D p = DataConsts.Vec2DZero;
+    			bool f = !(対象.Element is ロータ);
+    			bool v = 対象.Element is バイブ_ディル || 対象.Element is バイブ_コモン || 対象.Element is バイブ_ドリル || 対象.Element is バイブ_アナル || 対象.Element is バイブ_デンマ;
     			振動モーション = new Motion(-1.0, 1.0)
     			{
     				BaseSpeed = double.MaxValue,
@@ -1516,12 +1516,12 @@ namespace SlaveMatrix
     					p.X = m.Value * d * 挿入処理2.強度;
     					if (v)
     					{
-    						対象.Ele.位置C = p.MulX(0.5);
-    						対象.Ele.Body.GetCurrent().EnumAllPar().First((Par e) => e.Tag.Contains("ヘッド")).SetPositionCont(p);
+    						対象.Element.位置C = p.MulX(0.5);
+    						対象.Element.Body.GetCurrent().EnumAllPar().First((ShapePart e) => e.Tag.Contains("ヘッド")).SetPositionCont(p);
     					}
     					else
     					{
-    						対象.Ele.位置C = p;
+    						対象.Element.位置C = p;
     					}
     					if (f && 挿入処理2.Is挿入)
     					{
@@ -1538,7 +1538,7 @@ namespace SlaveMatrix
     					}
     					if (挿入処理2.Is挿入)
     					{
-    						調教UI.Action(挿入処理2.挿入箇所, ActionType.Insertion, CurrentState.Continue, 挿入処理2.アイテム情報, 対象.Ele.Yi, 挿入処理2.強さ, 機械: true, 射精: false);
+    						調教UI.Action(挿入処理2.挿入箇所, ActionType.Insertion, CurrentState.Continue, 挿入処理2.アイテム情報, 対象.Element.Yi, 挿入処理2.強さ, 機械: true, 射精: false);
     						Player.奴体力消費小();
     					}
     					else if (挿入処理2.Is押付 && 調教UI.押し状態)
@@ -1557,16 +1557,16 @@ namespace SlaveMatrix
     				OnEnd = delegate(Motion m)
     				{
     					m.ResetValue();
-    					foreach (Par item in 対象.Ele.Body.EnumAllPar())
+    					foreach (ShapePart item in 対象.Element.Body.EnumAllPar())
     					{
-    						item.SetPositionCont(Dat.Vec2DZero);
+    						item.SetPositionCont(DataConsts.Vec2DZero);
     					}
-    					挿入処理2.Bod.断面.位置C = Dat.Vec2DZero;
+    					挿入処理2.Bod.断面.位置C = DataConsts.Vec2DZero;
     				}
     			};
     			調教UI.Mots.Add(振動モーション.GetHashCode().ToString(), 振動モーション);
     		}
-    		回転機能 = 対象.Ele is バイブ_ドリル;
+    		回転機能 = 対象.Element is バイブ_ドリル;
     		if (回転機能)
     		{
     			回転モーション = new Motion(0.0, 1.0)
@@ -1574,15 +1574,15 @@ namespace SlaveMatrix
     				BaseSpeed = 10.0 * base.強度,
     				OnStart = delegate
     				{
-    					対象.Ele.Xv = 0.0;
+    					対象.Element.Xv = 0.0;
     				},
     				OnUpdate = delegate(Motion m)
     				{
-    					対象.Ele.Xv = m.Value;
-    					対象.Ele.Body.JoinPA();
+    					対象.Element.Xv = m.Value;
+    					対象.Element.Body.JoinPA();
     					if (挿入処理2.Is挿入)
     					{
-    						調教UI.Action(挿入処理2.挿入箇所, ActionType.Insertion, CurrentState.Continue, 挿入処理2.アイテム情報, 対象.Ele.Yi, 挿入処理2.強さ, 機械: true, 射精: false);
+    						調教UI.Action(挿入処理2.挿入箇所, ActionType.Insertion, CurrentState.Continue, 挿入処理2.アイテム情報, 対象.Element.Yi, 挿入処理2.強さ, 機械: true, 射精: false);
     						Player.奴体力消費小();
     					}
     					else if (挿入処理2.Is押付 && 調教UI.押し状態)
@@ -1602,7 +1602,7 @@ namespace SlaveMatrix
     				OnEnd = delegate(Motion m)
     				{
     					m.ResetValue();
-    					対象.Ele.Xv = 0.0;
+    					対象.Element.Xv = 0.0;
     				}
     			};
     			調教UI.Mots.Add(回転モーション.GetHashCode().ToString(), 回転モーション);
@@ -1636,16 +1636,16 @@ namespace SlaveMatrix
     						break;
     					}
     					挿入処理2.解除();
-    					対象.Ele.Intensity = 0.5;
+    					対象.Element.Intensity = 0.5;
     					対象.StaShow = true;
     					対象.使用状態 = UsageStatus.Standby;
-    					対象.Ele.右 = false;
-    					対象.Ele.位置B = 対象.bp;
-    					対象.Ele.位置C = Dat.Vec2DZero;
-    					対象.Ele.角度B = 0.0;
-    					対象.Ele.角度C = 0.0;
-    					対象.Ele.Xi = 0;
-    					対象.Ele.Yi = 0;
+    					対象.Element.右 = false;
+    					対象.Element.位置B = 対象.bp;
+    					対象.Element.位置C = DataConsts.Vec2DZero;
+    					対象.Element.角度B = 0.0;
+    					対象.Element.角度C = 0.0;
+    					対象.Element.Xi = 0;
+    					対象.Element.Yi = 0;
     					if (挿入処理2.振動機能)
     					{
     						挿入処理2.振動 = false;
@@ -1655,7 +1655,7 @@ namespace SlaveMatrix
     						挿入処理2.回転 = false;
     					}
     					挿入処理2.選択 = false;
-    					対象.Ele.尺度C = 1.09;
+    					対象.Element.尺度C = 1.09;
     					調教UI.SubFocus.Remove(挿入処理2);
     					m.End();
     				}
@@ -1672,7 +1672,7 @@ namespace SlaveMatrix
     			}
     		};
     		調教UI.Mots.Add(抜け落ち.GetHashCode().ToString(), 抜け落ち);
-    		押し付け = 振動機能 || 対象.Ele is ペニス;
+    		押し付け = 振動機能 || 対象.Element is ペニス;
     		A断面獣最大i = 5;
     		A断面人最大i = A断面獣最大i - 1;
     		double num = 1.0 / (double)調教UI.アナル.Body.GetCountY();
@@ -1683,8 +1683,8 @@ namespace SlaveMatrix
     		double num2 = 1.0 / (double)調教UI.パール.Body.GetCountY();
     		P通常獣最大v = num2 * (double)(P断面獣最大i - 1);
     		P通常人最大v = num2 * (double)(P断面人最大i - 1);
-    		psi = ((対象.Ele is ロータ) ? 2 : 0);
-    		pn = 対象.Ele is ペニス;
+    		psi = ((対象.Element is ロータ) ? 2 : 0);
+    		pn = 対象.Element is ペニス;
     		MouseButtons mb_ = MouseButtons.None;
     		Vector2D cp_ = default(Vector2D);
     		Color hc_ = default(Color);
@@ -1743,16 +1743,16 @@ namespace SlaveMatrix
     				break;
     			}
     			解除();
-    			対象.Ele.Intensity = 0.5;
+    			対象.Element.Intensity = 0.5;
     			対象.StaShow = true;
     			対象.使用状態 = UsageStatus.Standby;
-    			対象.Ele.右 = false;
-    			対象.Ele.位置B = 対象.bp;
-    			対象.Ele.位置C = Dat.Vec2DZero;
-    			対象.Ele.角度B = 0.0;
-    			対象.Ele.角度C = 0.0;
-    			対象.Ele.Xi = 0;
-    			対象.Ele.Yi = 0;
+    			対象.Element.右 = false;
+    			対象.Element.位置B = 対象.bp;
+    			対象.Element.位置C = DataConsts.Vec2DZero;
+    			対象.Element.角度B = 0.0;
+    			対象.Element.角度C = 0.0;
+    			対象.Element.Xi = 0;
+    			対象.Element.Yi = 0;
     			if (振動機能)
     			{
     				振動 = false;
@@ -1762,7 +1762,7 @@ namespace SlaveMatrix
     				回転 = false;
     			}
     			選択 = false;
-    			対象.Ele.尺度C = 1.09;
+    			対象.Element.尺度C = 1.09;
     			調教UI.SubFocus.Remove(this);
     		}
     		base.Reset();

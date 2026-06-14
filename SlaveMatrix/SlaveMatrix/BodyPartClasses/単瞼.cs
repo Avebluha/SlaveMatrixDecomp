@@ -3,267 +3,267 @@ using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
-    public class 単瞼 : Ele
+    public class 単瞼 : Element
     {
-    	public Par X0Y0_瞼下;
+    	public ShapePart X0Y0_瞼下;
 
-    	public Par X0Y0_瞼上;
+    	public ShapePart X0Y0_瞼上;
 
-    	public Par X0Y0_二重;
+    	public ShapePart X0Y0_二重;
 
-    	public Par X0Y0_睫毛上上左;
+    	public ShapePart X0Y0_睫毛上上左;
 
-    	public Par X0Y0_睫毛上中左;
+    	public ShapePart X0Y0_睫毛上中左;
 
-    	public Par X0Y0_睫毛上下左;
+    	public ShapePart X0Y0_睫毛上下左;
 
-    	public Par X0Y0_睫毛上上右;
+    	public ShapePart X0Y0_睫毛上上右;
 
-    	public Par X0Y0_睫毛上中右;
+    	public ShapePart X0Y0_睫毛上中右;
 
-    	public Par X0Y0_睫毛上下右;
+    	public ShapePart X0Y0_睫毛上下右;
 
-    	public Par X0Y0_睫毛下上左;
+    	public ShapePart X0Y0_睫毛下上左;
 
-    	public Par X0Y0_睫毛下下左;
+    	public ShapePart X0Y0_睫毛下下左;
 
-    	public Par X0Y0_睫毛下上右;
+    	public ShapePart X0Y0_睫毛下上右;
 
-    	public Par X0Y0_睫毛下下右;
+    	public ShapePart X0Y0_睫毛下下右;
 
-    	public Par X0Y1_瞼下;
+    	public ShapePart X0Y1_瞼下;
 
-    	public Par X0Y1_瞼上;
+    	public ShapePart X0Y1_瞼上;
 
-    	public Par X0Y1_二重;
+    	public ShapePart X0Y1_二重;
 
-    	public Par X0Y1_睫毛上上左;
+    	public ShapePart X0Y1_睫毛上上左;
 
-    	public Par X0Y1_睫毛上中左;
+    	public ShapePart X0Y1_睫毛上中左;
 
-    	public Par X0Y1_睫毛上下左;
+    	public ShapePart X0Y1_睫毛上下左;
 
-    	public Par X0Y1_睫毛上上右;
+    	public ShapePart X0Y1_睫毛上上右;
 
-    	public Par X0Y1_睫毛上中右;
+    	public ShapePart X0Y1_睫毛上中右;
 
-    	public Par X0Y1_睫毛上下右;
+    	public ShapePart X0Y1_睫毛上下右;
 
-    	public Par X0Y1_睫毛下上左;
+    	public ShapePart X0Y1_睫毛下上左;
 
-    	public Par X0Y1_睫毛下下左;
+    	public ShapePart X0Y1_睫毛下下左;
 
-    	public Par X0Y1_睫毛下上右;
+    	public ShapePart X0Y1_睫毛下上右;
 
-    	public Par X0Y1_睫毛下下右;
+    	public ShapePart X0Y1_睫毛下下右;
 
-    	public Par X0Y2_瞼下;
+    	public ShapePart X0Y2_瞼下;
 
-    	public Par X0Y2_瞼上;
+    	public ShapePart X0Y2_瞼上;
 
-    	public Par X0Y2_二重;
+    	public ShapePart X0Y2_二重;
 
-    	public Par X0Y2_睫毛上上左;
+    	public ShapePart X0Y2_睫毛上上左;
 
-    	public Par X0Y2_睫毛上中左;
+    	public ShapePart X0Y2_睫毛上中左;
 
-    	public Par X0Y2_睫毛上下左;
+    	public ShapePart X0Y2_睫毛上下左;
 
-    	public Par X0Y2_睫毛上上右;
+    	public ShapePart X0Y2_睫毛上上右;
 
-    	public Par X0Y2_睫毛上中右;
+    	public ShapePart X0Y2_睫毛上中右;
 
-    	public Par X0Y2_睫毛上下右;
+    	public ShapePart X0Y2_睫毛上下右;
 
-    	public Par X0Y2_睫毛下上左;
+    	public ShapePart X0Y2_睫毛下上左;
 
-    	public Par X0Y2_睫毛下下左;
+    	public ShapePart X0Y2_睫毛下下左;
 
-    	public Par X0Y2_睫毛下上右;
+    	public ShapePart X0Y2_睫毛下上右;
 
-    	public Par X0Y2_睫毛下下右;
+    	public ShapePart X0Y2_睫毛下下右;
 
-    	public Par X0Y3_瞼下;
+    	public ShapePart X0Y3_瞼下;
 
-    	public Par X0Y3_瞼上;
+    	public ShapePart X0Y3_瞼上;
 
-    	public Par X0Y3_二重;
+    	public ShapePart X0Y3_二重;
 
-    	public Par X0Y3_睫毛上上左;
+    	public ShapePart X0Y3_睫毛上上左;
 
-    	public Par X0Y3_睫毛上中左;
+    	public ShapePart X0Y3_睫毛上中左;
 
-    	public Par X0Y3_睫毛上下左;
+    	public ShapePart X0Y3_睫毛上下左;
 
-    	public Par X0Y3_睫毛上上右;
+    	public ShapePart X0Y3_睫毛上上右;
 
-    	public Par X0Y3_睫毛上中右;
+    	public ShapePart X0Y3_睫毛上中右;
 
-    	public Par X0Y3_睫毛上下右;
+    	public ShapePart X0Y3_睫毛上下右;
 
-    	public Par X0Y3_睫毛下上左;
+    	public ShapePart X0Y3_睫毛下上左;
 
-    	public Par X0Y3_睫毛下下左;
+    	public ShapePart X0Y3_睫毛下下左;
 
-    	public Par X0Y3_睫毛下上右;
+    	public ShapePart X0Y3_睫毛下上右;
 
-    	public Par X0Y3_睫毛下下右;
+    	public ShapePart X0Y3_睫毛下下右;
 
-    	public Par X0Y4_瞼下;
+    	public ShapePart X0Y4_瞼下;
 
-    	public Par X0Y4_瞼上;
+    	public ShapePart X0Y4_瞼上;
 
-    	public Par X0Y4_二重;
+    	public ShapePart X0Y4_二重;
 
-    	public Par X0Y4_睫毛上上左;
+    	public ShapePart X0Y4_睫毛上上左;
 
-    	public Par X0Y4_睫毛上中左;
+    	public ShapePart X0Y4_睫毛上中左;
 
-    	public Par X0Y4_睫毛上下左;
+    	public ShapePart X0Y4_睫毛上下左;
 
-    	public Par X0Y4_睫毛上上右;
+    	public ShapePart X0Y4_睫毛上上右;
 
-    	public Par X0Y4_睫毛上中右;
+    	public ShapePart X0Y4_睫毛上中右;
 
-    	public Par X0Y4_睫毛上下右;
+    	public ShapePart X0Y4_睫毛上下右;
 
-    	public Par X0Y4_睫毛下上左;
+    	public ShapePart X0Y4_睫毛下上左;
 
-    	public Par X0Y4_睫毛下下左;
+    	public ShapePart X0Y4_睫毛下下左;
 
-    	public Par X0Y4_睫毛下上右;
+    	public ShapePart X0Y4_睫毛下上右;
 
-    	public Par X0Y4_睫毛下下右;
+    	public ShapePart X0Y4_睫毛下下右;
 
-    	public Par X1Y0_瞼下;
+    	public ShapePart X1Y0_瞼下;
 
-    	public Par X1Y0_瞼上;
+    	public ShapePart X1Y0_瞼上;
 
-    	public Par X1Y0_二重;
+    	public ShapePart X1Y0_二重;
 
-    	public Par X1Y0_睫毛上上左;
+    	public ShapePart X1Y0_睫毛上上左;
 
-    	public Par X1Y0_睫毛上中左;
+    	public ShapePart X1Y0_睫毛上中左;
 
-    	public Par X1Y0_睫毛上下左;
+    	public ShapePart X1Y0_睫毛上下左;
 
-    	public Par X1Y0_睫毛上上右;
+    	public ShapePart X1Y0_睫毛上上右;
 
-    	public Par X1Y0_睫毛上中右;
+    	public ShapePart X1Y0_睫毛上中右;
 
-    	public Par X1Y0_睫毛上下右;
+    	public ShapePart X1Y0_睫毛上下右;
 
-    	public Par X1Y0_睫毛下上左;
+    	public ShapePart X1Y0_睫毛下上左;
 
-    	public Par X1Y0_睫毛下下左;
+    	public ShapePart X1Y0_睫毛下下左;
 
-    	public Par X1Y0_睫毛下上右;
+    	public ShapePart X1Y0_睫毛下上右;
 
-    	public Par X1Y0_睫毛下下右;
+    	public ShapePart X1Y0_睫毛下下右;
 
-    	public Par X1Y1_瞼下;
+    	public ShapePart X1Y1_瞼下;
 
-    	public Par X1Y1_瞼上;
+    	public ShapePart X1Y1_瞼上;
 
-    	public Par X1Y1_二重;
+    	public ShapePart X1Y1_二重;
 
-    	public Par X1Y1_睫毛上上左;
+    	public ShapePart X1Y1_睫毛上上左;
 
-    	public Par X1Y1_睫毛上中左;
+    	public ShapePart X1Y1_睫毛上中左;
 
-    	public Par X1Y1_睫毛上下左;
+    	public ShapePart X1Y1_睫毛上下左;
 
-    	public Par X1Y1_睫毛上上右;
+    	public ShapePart X1Y1_睫毛上上右;
 
-    	public Par X1Y1_睫毛上中右;
+    	public ShapePart X1Y1_睫毛上中右;
 
-    	public Par X1Y1_睫毛上下右;
+    	public ShapePart X1Y1_睫毛上下右;
 
-    	public Par X1Y1_睫毛下上左;
+    	public ShapePart X1Y1_睫毛下上左;
 
-    	public Par X1Y1_睫毛下下左;
+    	public ShapePart X1Y1_睫毛下下左;
 
-    	public Par X1Y1_睫毛下上右;
+    	public ShapePart X1Y1_睫毛下上右;
 
-    	public Par X1Y1_睫毛下下右;
+    	public ShapePart X1Y1_睫毛下下右;
 
-    	public Par X1Y2_瞼下;
+    	public ShapePart X1Y2_瞼下;
 
-    	public Par X1Y2_瞼上;
+    	public ShapePart X1Y2_瞼上;
 
-    	public Par X1Y2_二重;
+    	public ShapePart X1Y2_二重;
 
-    	public Par X1Y2_睫毛上上左;
+    	public ShapePart X1Y2_睫毛上上左;
 
-    	public Par X1Y2_睫毛上中左;
+    	public ShapePart X1Y2_睫毛上中左;
 
-    	public Par X1Y2_睫毛上下左;
+    	public ShapePart X1Y2_睫毛上下左;
 
-    	public Par X1Y2_睫毛上上右;
+    	public ShapePart X1Y2_睫毛上上右;
 
-    	public Par X1Y2_睫毛上中右;
+    	public ShapePart X1Y2_睫毛上中右;
 
-    	public Par X1Y2_睫毛上下右;
+    	public ShapePart X1Y2_睫毛上下右;
 
-    	public Par X1Y2_睫毛下上左;
+    	public ShapePart X1Y2_睫毛下上左;
 
-    	public Par X1Y2_睫毛下下左;
+    	public ShapePart X1Y2_睫毛下下左;
 
-    	public Par X1Y2_睫毛下上右;
+    	public ShapePart X1Y2_睫毛下上右;
 
-    	public Par X1Y2_睫毛下下右;
+    	public ShapePart X1Y2_睫毛下下右;
 
-    	public Par X1Y3_瞼下;
+    	public ShapePart X1Y3_瞼下;
 
-    	public Par X1Y3_瞼上;
+    	public ShapePart X1Y3_瞼上;
 
-    	public Par X1Y3_二重;
+    	public ShapePart X1Y3_二重;
 
-    	public Par X1Y3_睫毛上上左;
+    	public ShapePart X1Y3_睫毛上上左;
 
-    	public Par X1Y3_睫毛上中左;
+    	public ShapePart X1Y3_睫毛上中左;
 
-    	public Par X1Y3_睫毛上下左;
+    	public ShapePart X1Y3_睫毛上下左;
 
-    	public Par X1Y3_睫毛上上右;
+    	public ShapePart X1Y3_睫毛上上右;
 
-    	public Par X1Y3_睫毛上中右;
+    	public ShapePart X1Y3_睫毛上中右;
 
-    	public Par X1Y3_睫毛上下右;
+    	public ShapePart X1Y3_睫毛上下右;
 
-    	public Par X1Y3_睫毛下上左;
+    	public ShapePart X1Y3_睫毛下上左;
 
-    	public Par X1Y3_睫毛下下左;
+    	public ShapePart X1Y3_睫毛下下左;
 
-    	public Par X1Y3_睫毛下上右;
+    	public ShapePart X1Y3_睫毛下上右;
 
-    	public Par X1Y3_睫毛下下右;
+    	public ShapePart X1Y3_睫毛下下右;
 
-    	public Par X1Y4_瞼下;
+    	public ShapePart X1Y4_瞼下;
 
-    	public Par X1Y4_瞼上;
+    	public ShapePart X1Y4_瞼上;
 
-    	public Par X1Y4_二重;
+    	public ShapePart X1Y4_二重;
 
-    	public Par X1Y4_睫毛上上左;
+    	public ShapePart X1Y4_睫毛上上左;
 
-    	public Par X1Y4_睫毛上中左;
+    	public ShapePart X1Y4_睫毛上中左;
 
-    	public Par X1Y4_睫毛上下左;
+    	public ShapePart X1Y4_睫毛上下左;
 
-    	public Par X1Y4_睫毛上上右;
+    	public ShapePart X1Y4_睫毛上上右;
 
-    	public Par X1Y4_睫毛上中右;
+    	public ShapePart X1Y4_睫毛上中右;
 
-    	public Par X1Y4_睫毛上下右;
+    	public ShapePart X1Y4_睫毛上下右;
 
-    	public Par X1Y4_睫毛下上左;
+    	public ShapePart X1Y4_睫毛下上左;
 
-    	public Par X1Y4_睫毛下下左;
+    	public ShapePart X1Y4_睫毛下下左;
 
-    	public Par X1Y4_睫毛下上右;
+    	public ShapePart X1Y4_睫毛下上右;
 
-    	public Par X1Y4_睫毛下下右;
+    	public ShapePart X1Y4_睫毛下下右;
 
     	public ColorD 瞼下CD;
 
@@ -1260,7 +1260,7 @@ namespace SlaveMatrix
     		{
     			サイズ_ = value;
     			double rate = 0.98 + 0.06 * サイズ_;
-    			foreach (Par item in Body.EnumAllPar())
+    			foreach (ShapePart item in Body.EnumAllPar())
     			{
     				Vector2D center = item.GetOP().GetCenter();
     				item.GetOP().ScalingXY(center, rate);
@@ -1272,147 +1272,147 @@ namespace SlaveMatrix
     	public 単瞼(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 単瞼D e)
     	{
     		ThisType = GetType();
-    		Body = new Difs(Sta.胴体["単眼瞼"]);
-    		Pars pars = Body[0][0];
-    		X0Y0_瞼下 = pars["瞼下"].ToPar();
-    		X0Y0_瞼上 = pars["瞼上"].ToPar();
-    		X0Y0_二重 = pars["二重"].ToPar();
-    		X0Y0_睫毛上上左 = pars["睫毛上上左"].ToPar();
-    		X0Y0_睫毛上中左 = pars["睫毛上中左"].ToPar();
-    		X0Y0_睫毛上下左 = pars["睫毛上下左"].ToPar();
-    		X0Y0_睫毛上上右 = pars["睫毛上上右"].ToPar();
-    		X0Y0_睫毛上中右 = pars["睫毛上中右"].ToPar();
-    		X0Y0_睫毛上下右 = pars["睫毛上下右"].ToPar();
-    		X0Y0_睫毛下上左 = pars["睫毛下上左"].ToPar();
-    		X0Y0_睫毛下下左 = pars["睫毛下下左"].ToPar();
-    		X0Y0_睫毛下上右 = pars["睫毛下上右"].ToPar();
-    		X0Y0_睫毛下下右 = pars["睫毛下下右"].ToPar();
-    		pars = Body[0][1];
-    		X0Y1_瞼下 = pars["瞼下"].ToPar();
-    		X0Y1_瞼上 = pars["瞼上"].ToPar();
-    		X0Y1_二重 = pars["二重"].ToPar();
-    		X0Y1_睫毛上上左 = pars["睫毛上上左"].ToPar();
-    		X0Y1_睫毛上中左 = pars["睫毛上中左"].ToPar();
-    		X0Y1_睫毛上下左 = pars["睫毛上下左"].ToPar();
-    		X0Y1_睫毛上上右 = pars["睫毛上上右"].ToPar();
-    		X0Y1_睫毛上中右 = pars["睫毛上中右"].ToPar();
-    		X0Y1_睫毛上下右 = pars["睫毛上下右"].ToPar();
-    		X0Y1_睫毛下上左 = pars["睫毛下上左"].ToPar();
-    		X0Y1_睫毛下下左 = pars["睫毛下下左"].ToPar();
-    		X0Y1_睫毛下上右 = pars["睫毛下上右"].ToPar();
-    		X0Y1_睫毛下下右 = pars["睫毛下下右"].ToPar();
-    		pars = Body[0][2];
-    		X0Y2_瞼下 = pars["瞼下"].ToPar();
-    		X0Y2_瞼上 = pars["瞼上"].ToPar();
-    		X0Y2_二重 = pars["二重"].ToPar();
-    		X0Y2_睫毛上上左 = pars["睫毛上上左"].ToPar();
-    		X0Y2_睫毛上中左 = pars["睫毛上中左"].ToPar();
-    		X0Y2_睫毛上下左 = pars["睫毛上下左"].ToPar();
-    		X0Y2_睫毛上上右 = pars["睫毛上上右"].ToPar();
-    		X0Y2_睫毛上中右 = pars["睫毛上中右"].ToPar();
-    		X0Y2_睫毛上下右 = pars["睫毛上下右"].ToPar();
-    		X0Y2_睫毛下上左 = pars["睫毛下上左"].ToPar();
-    		X0Y2_睫毛下下左 = pars["睫毛下下左"].ToPar();
-    		X0Y2_睫毛下上右 = pars["睫毛下上右"].ToPar();
-    		X0Y2_睫毛下下右 = pars["睫毛下下右"].ToPar();
-    		pars = Body[0][3];
-    		X0Y3_瞼下 = pars["瞼下"].ToPar();
-    		X0Y3_瞼上 = pars["瞼上"].ToPar();
-    		X0Y3_二重 = pars["二重"].ToPar();
-    		X0Y3_睫毛上上左 = pars["睫毛上上左"].ToPar();
-    		X0Y3_睫毛上中左 = pars["睫毛上中左"].ToPar();
-    		X0Y3_睫毛上下左 = pars["睫毛上下左"].ToPar();
-    		X0Y3_睫毛上上右 = pars["睫毛上上右"].ToPar();
-    		X0Y3_睫毛上中右 = pars["睫毛上中右"].ToPar();
-    		X0Y3_睫毛上下右 = pars["睫毛上下右"].ToPar();
-    		X0Y3_睫毛下上左 = pars["睫毛下上左"].ToPar();
-    		X0Y3_睫毛下下左 = pars["睫毛下下左"].ToPar();
-    		X0Y3_睫毛下上右 = pars["睫毛下上右"].ToPar();
-    		X0Y3_睫毛下下右 = pars["睫毛下下右"].ToPar();
-    		pars = Body[0][4];
-    		X0Y4_瞼下 = pars["瞼下"].ToPar();
-    		X0Y4_瞼上 = pars["瞼上"].ToPar();
-    		X0Y4_二重 = pars["二重"].ToPar();
-    		X0Y4_睫毛上上左 = pars["睫毛上上左"].ToPar();
-    		X0Y4_睫毛上中左 = pars["睫毛上中左"].ToPar();
-    		X0Y4_睫毛上下左 = pars["睫毛上下左"].ToPar();
-    		X0Y4_睫毛上上右 = pars["睫毛上上右"].ToPar();
-    		X0Y4_睫毛上中右 = pars["睫毛上中右"].ToPar();
-    		X0Y4_睫毛上下右 = pars["睫毛上下右"].ToPar();
-    		X0Y4_睫毛下上左 = pars["睫毛下上左"].ToPar();
-    		X0Y4_睫毛下下左 = pars["睫毛下下左"].ToPar();
-    		X0Y4_睫毛下上右 = pars["睫毛下上右"].ToPar();
-    		X0Y4_睫毛下下右 = pars["睫毛下下右"].ToPar();
-    		pars = Body[1][0];
-    		X1Y0_瞼下 = pars["瞼下"].ToPar();
-    		X1Y0_瞼上 = pars["瞼上"].ToPar();
-    		X1Y0_二重 = pars["二重"].ToPar();
-    		X1Y0_睫毛上上左 = pars["睫毛上上左"].ToPar();
-    		X1Y0_睫毛上中左 = pars["睫毛上中左"].ToPar();
-    		X1Y0_睫毛上下左 = pars["睫毛上下左"].ToPar();
-    		X1Y0_睫毛上上右 = pars["睫毛上上右"].ToPar();
-    		X1Y0_睫毛上中右 = pars["睫毛上中右"].ToPar();
-    		X1Y0_睫毛上下右 = pars["睫毛上下右"].ToPar();
-    		X1Y0_睫毛下上左 = pars["睫毛下上左"].ToPar();
-    		X1Y0_睫毛下下左 = pars["睫毛下下左"].ToPar();
-    		X1Y0_睫毛下上右 = pars["睫毛下上右"].ToPar();
-    		X1Y0_睫毛下下右 = pars["睫毛下下右"].ToPar();
-    		pars = Body[1][1];
-    		X1Y1_瞼下 = pars["瞼下"].ToPar();
-    		X1Y1_瞼上 = pars["瞼上"].ToPar();
-    		X1Y1_二重 = pars["二重"].ToPar();
-    		X1Y1_睫毛上上左 = pars["睫毛上上左"].ToPar();
-    		X1Y1_睫毛上中左 = pars["睫毛上中左"].ToPar();
-    		X1Y1_睫毛上下左 = pars["睫毛上下左"].ToPar();
-    		X1Y1_睫毛上上右 = pars["睫毛上上右"].ToPar();
-    		X1Y1_睫毛上中右 = pars["睫毛上中右"].ToPar();
-    		X1Y1_睫毛上下右 = pars["睫毛上下右"].ToPar();
-    		X1Y1_睫毛下上左 = pars["睫毛下上左"].ToPar();
-    		X1Y1_睫毛下下左 = pars["睫毛下下左"].ToPar();
-    		X1Y1_睫毛下上右 = pars["睫毛下上右"].ToPar();
-    		X1Y1_睫毛下下右 = pars["睫毛下下右"].ToPar();
-    		pars = Body[1][2];
-    		X1Y2_瞼下 = pars["瞼下"].ToPar();
-    		X1Y2_瞼上 = pars["瞼上"].ToPar();
-    		X1Y2_二重 = pars["二重"].ToPar();
-    		X1Y2_睫毛上上左 = pars["睫毛上上左"].ToPar();
-    		X1Y2_睫毛上中左 = pars["睫毛上中左"].ToPar();
-    		X1Y2_睫毛上下左 = pars["睫毛上下左"].ToPar();
-    		X1Y2_睫毛上上右 = pars["睫毛上上右"].ToPar();
-    		X1Y2_睫毛上中右 = pars["睫毛上中右"].ToPar();
-    		X1Y2_睫毛上下右 = pars["睫毛上下右"].ToPar();
-    		X1Y2_睫毛下上左 = pars["睫毛下上左"].ToPar();
-    		X1Y2_睫毛下下左 = pars["睫毛下下左"].ToPar();
-    		X1Y2_睫毛下上右 = pars["睫毛下上右"].ToPar();
-    		X1Y2_睫毛下下右 = pars["睫毛下下右"].ToPar();
-    		pars = Body[1][3];
-    		X1Y3_瞼下 = pars["瞼下"].ToPar();
-    		X1Y3_瞼上 = pars["瞼上"].ToPar();
-    		X1Y3_二重 = pars["二重"].ToPar();
-    		X1Y3_睫毛上上左 = pars["睫毛上上左"].ToPar();
-    		X1Y3_睫毛上中左 = pars["睫毛上中左"].ToPar();
-    		X1Y3_睫毛上下左 = pars["睫毛上下左"].ToPar();
-    		X1Y3_睫毛上上右 = pars["睫毛上上右"].ToPar();
-    		X1Y3_睫毛上中右 = pars["睫毛上中右"].ToPar();
-    		X1Y3_睫毛上下右 = pars["睫毛上下右"].ToPar();
-    		X1Y3_睫毛下上左 = pars["睫毛下上左"].ToPar();
-    		X1Y3_睫毛下下左 = pars["睫毛下下左"].ToPar();
-    		X1Y3_睫毛下上右 = pars["睫毛下上右"].ToPar();
-    		X1Y3_睫毛下下右 = pars["睫毛下下右"].ToPar();
-    		pars = Body[1][4];
-    		X1Y4_瞼下 = pars["瞼下"].ToPar();
-    		X1Y4_瞼上 = pars["瞼上"].ToPar();
-    		X1Y4_二重 = pars["二重"].ToPar();
-    		X1Y4_睫毛上上左 = pars["睫毛上上左"].ToPar();
-    		X1Y4_睫毛上中左 = pars["睫毛上中左"].ToPar();
-    		X1Y4_睫毛上下左 = pars["睫毛上下左"].ToPar();
-    		X1Y4_睫毛上上右 = pars["睫毛上上右"].ToPar();
-    		X1Y4_睫毛上中右 = pars["睫毛上中右"].ToPar();
-    		X1Y4_睫毛上下右 = pars["睫毛上下右"].ToPar();
-    		X1Y4_睫毛下上左 = pars["睫毛下上左"].ToPar();
-    		X1Y4_睫毛下下左 = pars["睫毛下下左"].ToPar();
-    		X1Y4_睫毛下上右 = pars["睫毛下上右"].ToPar();
-    		X1Y4_睫毛下下右 = pars["睫毛下下右"].ToPar();
+    		Body = new VariantGrid(GlobalState.胴体["単眼瞼"]);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_瞼下 = partGroup["瞼下"].ToPar();
+    		X0Y0_瞼上 = partGroup["瞼上"].ToPar();
+    		X0Y0_二重 = partGroup["二重"].ToPar();
+    		X0Y0_睫毛上上左 = partGroup["睫毛上上左"].ToPar();
+    		X0Y0_睫毛上中左 = partGroup["睫毛上中左"].ToPar();
+    		X0Y0_睫毛上下左 = partGroup["睫毛上下左"].ToPar();
+    		X0Y0_睫毛上上右 = partGroup["睫毛上上右"].ToPar();
+    		X0Y0_睫毛上中右 = partGroup["睫毛上中右"].ToPar();
+    		X0Y0_睫毛上下右 = partGroup["睫毛上下右"].ToPar();
+    		X0Y0_睫毛下上左 = partGroup["睫毛下上左"].ToPar();
+    		X0Y0_睫毛下下左 = partGroup["睫毛下下左"].ToPar();
+    		X0Y0_睫毛下上右 = partGroup["睫毛下上右"].ToPar();
+    		X0Y0_睫毛下下右 = partGroup["睫毛下下右"].ToPar();
+    		partGroup = Body[0][1];
+    		X0Y1_瞼下 = partGroup["瞼下"].ToPar();
+    		X0Y1_瞼上 = partGroup["瞼上"].ToPar();
+    		X0Y1_二重 = partGroup["二重"].ToPar();
+    		X0Y1_睫毛上上左 = partGroup["睫毛上上左"].ToPar();
+    		X0Y1_睫毛上中左 = partGroup["睫毛上中左"].ToPar();
+    		X0Y1_睫毛上下左 = partGroup["睫毛上下左"].ToPar();
+    		X0Y1_睫毛上上右 = partGroup["睫毛上上右"].ToPar();
+    		X0Y1_睫毛上中右 = partGroup["睫毛上中右"].ToPar();
+    		X0Y1_睫毛上下右 = partGroup["睫毛上下右"].ToPar();
+    		X0Y1_睫毛下上左 = partGroup["睫毛下上左"].ToPar();
+    		X0Y1_睫毛下下左 = partGroup["睫毛下下左"].ToPar();
+    		X0Y1_睫毛下上右 = partGroup["睫毛下上右"].ToPar();
+    		X0Y1_睫毛下下右 = partGroup["睫毛下下右"].ToPar();
+    		partGroup = Body[0][2];
+    		X0Y2_瞼下 = partGroup["瞼下"].ToPar();
+    		X0Y2_瞼上 = partGroup["瞼上"].ToPar();
+    		X0Y2_二重 = partGroup["二重"].ToPar();
+    		X0Y2_睫毛上上左 = partGroup["睫毛上上左"].ToPar();
+    		X0Y2_睫毛上中左 = partGroup["睫毛上中左"].ToPar();
+    		X0Y2_睫毛上下左 = partGroup["睫毛上下左"].ToPar();
+    		X0Y2_睫毛上上右 = partGroup["睫毛上上右"].ToPar();
+    		X0Y2_睫毛上中右 = partGroup["睫毛上中右"].ToPar();
+    		X0Y2_睫毛上下右 = partGroup["睫毛上下右"].ToPar();
+    		X0Y2_睫毛下上左 = partGroup["睫毛下上左"].ToPar();
+    		X0Y2_睫毛下下左 = partGroup["睫毛下下左"].ToPar();
+    		X0Y2_睫毛下上右 = partGroup["睫毛下上右"].ToPar();
+    		X0Y2_睫毛下下右 = partGroup["睫毛下下右"].ToPar();
+    		partGroup = Body[0][3];
+    		X0Y3_瞼下 = partGroup["瞼下"].ToPar();
+    		X0Y3_瞼上 = partGroup["瞼上"].ToPar();
+    		X0Y3_二重 = partGroup["二重"].ToPar();
+    		X0Y3_睫毛上上左 = partGroup["睫毛上上左"].ToPar();
+    		X0Y3_睫毛上中左 = partGroup["睫毛上中左"].ToPar();
+    		X0Y3_睫毛上下左 = partGroup["睫毛上下左"].ToPar();
+    		X0Y3_睫毛上上右 = partGroup["睫毛上上右"].ToPar();
+    		X0Y3_睫毛上中右 = partGroup["睫毛上中右"].ToPar();
+    		X0Y3_睫毛上下右 = partGroup["睫毛上下右"].ToPar();
+    		X0Y3_睫毛下上左 = partGroup["睫毛下上左"].ToPar();
+    		X0Y3_睫毛下下左 = partGroup["睫毛下下左"].ToPar();
+    		X0Y3_睫毛下上右 = partGroup["睫毛下上右"].ToPar();
+    		X0Y3_睫毛下下右 = partGroup["睫毛下下右"].ToPar();
+    		partGroup = Body[0][4];
+    		X0Y4_瞼下 = partGroup["瞼下"].ToPar();
+    		X0Y4_瞼上 = partGroup["瞼上"].ToPar();
+    		X0Y4_二重 = partGroup["二重"].ToPar();
+    		X0Y4_睫毛上上左 = partGroup["睫毛上上左"].ToPar();
+    		X0Y4_睫毛上中左 = partGroup["睫毛上中左"].ToPar();
+    		X0Y4_睫毛上下左 = partGroup["睫毛上下左"].ToPar();
+    		X0Y4_睫毛上上右 = partGroup["睫毛上上右"].ToPar();
+    		X0Y4_睫毛上中右 = partGroup["睫毛上中右"].ToPar();
+    		X0Y4_睫毛上下右 = partGroup["睫毛上下右"].ToPar();
+    		X0Y4_睫毛下上左 = partGroup["睫毛下上左"].ToPar();
+    		X0Y4_睫毛下下左 = partGroup["睫毛下下左"].ToPar();
+    		X0Y4_睫毛下上右 = partGroup["睫毛下上右"].ToPar();
+    		X0Y4_睫毛下下右 = partGroup["睫毛下下右"].ToPar();
+    		partGroup = Body[1][0];
+    		X1Y0_瞼下 = partGroup["瞼下"].ToPar();
+    		X1Y0_瞼上 = partGroup["瞼上"].ToPar();
+    		X1Y0_二重 = partGroup["二重"].ToPar();
+    		X1Y0_睫毛上上左 = partGroup["睫毛上上左"].ToPar();
+    		X1Y0_睫毛上中左 = partGroup["睫毛上中左"].ToPar();
+    		X1Y0_睫毛上下左 = partGroup["睫毛上下左"].ToPar();
+    		X1Y0_睫毛上上右 = partGroup["睫毛上上右"].ToPar();
+    		X1Y0_睫毛上中右 = partGroup["睫毛上中右"].ToPar();
+    		X1Y0_睫毛上下右 = partGroup["睫毛上下右"].ToPar();
+    		X1Y0_睫毛下上左 = partGroup["睫毛下上左"].ToPar();
+    		X1Y0_睫毛下下左 = partGroup["睫毛下下左"].ToPar();
+    		X1Y0_睫毛下上右 = partGroup["睫毛下上右"].ToPar();
+    		X1Y0_睫毛下下右 = partGroup["睫毛下下右"].ToPar();
+    		partGroup = Body[1][1];
+    		X1Y1_瞼下 = partGroup["瞼下"].ToPar();
+    		X1Y1_瞼上 = partGroup["瞼上"].ToPar();
+    		X1Y1_二重 = partGroup["二重"].ToPar();
+    		X1Y1_睫毛上上左 = partGroup["睫毛上上左"].ToPar();
+    		X1Y1_睫毛上中左 = partGroup["睫毛上中左"].ToPar();
+    		X1Y1_睫毛上下左 = partGroup["睫毛上下左"].ToPar();
+    		X1Y1_睫毛上上右 = partGroup["睫毛上上右"].ToPar();
+    		X1Y1_睫毛上中右 = partGroup["睫毛上中右"].ToPar();
+    		X1Y1_睫毛上下右 = partGroup["睫毛上下右"].ToPar();
+    		X1Y1_睫毛下上左 = partGroup["睫毛下上左"].ToPar();
+    		X1Y1_睫毛下下左 = partGroup["睫毛下下左"].ToPar();
+    		X1Y1_睫毛下上右 = partGroup["睫毛下上右"].ToPar();
+    		X1Y1_睫毛下下右 = partGroup["睫毛下下右"].ToPar();
+    		partGroup = Body[1][2];
+    		X1Y2_瞼下 = partGroup["瞼下"].ToPar();
+    		X1Y2_瞼上 = partGroup["瞼上"].ToPar();
+    		X1Y2_二重 = partGroup["二重"].ToPar();
+    		X1Y2_睫毛上上左 = partGroup["睫毛上上左"].ToPar();
+    		X1Y2_睫毛上中左 = partGroup["睫毛上中左"].ToPar();
+    		X1Y2_睫毛上下左 = partGroup["睫毛上下左"].ToPar();
+    		X1Y2_睫毛上上右 = partGroup["睫毛上上右"].ToPar();
+    		X1Y2_睫毛上中右 = partGroup["睫毛上中右"].ToPar();
+    		X1Y2_睫毛上下右 = partGroup["睫毛上下右"].ToPar();
+    		X1Y2_睫毛下上左 = partGroup["睫毛下上左"].ToPar();
+    		X1Y2_睫毛下下左 = partGroup["睫毛下下左"].ToPar();
+    		X1Y2_睫毛下上右 = partGroup["睫毛下上右"].ToPar();
+    		X1Y2_睫毛下下右 = partGroup["睫毛下下右"].ToPar();
+    		partGroup = Body[1][3];
+    		X1Y3_瞼下 = partGroup["瞼下"].ToPar();
+    		X1Y3_瞼上 = partGroup["瞼上"].ToPar();
+    		X1Y3_二重 = partGroup["二重"].ToPar();
+    		X1Y3_睫毛上上左 = partGroup["睫毛上上左"].ToPar();
+    		X1Y3_睫毛上中左 = partGroup["睫毛上中左"].ToPar();
+    		X1Y3_睫毛上下左 = partGroup["睫毛上下左"].ToPar();
+    		X1Y3_睫毛上上右 = partGroup["睫毛上上右"].ToPar();
+    		X1Y3_睫毛上中右 = partGroup["睫毛上中右"].ToPar();
+    		X1Y3_睫毛上下右 = partGroup["睫毛上下右"].ToPar();
+    		X1Y3_睫毛下上左 = partGroup["睫毛下上左"].ToPar();
+    		X1Y3_睫毛下下左 = partGroup["睫毛下下左"].ToPar();
+    		X1Y3_睫毛下上右 = partGroup["睫毛下上右"].ToPar();
+    		X1Y3_睫毛下下右 = partGroup["睫毛下下右"].ToPar();
+    		partGroup = Body[1][4];
+    		X1Y4_瞼下 = partGroup["瞼下"].ToPar();
+    		X1Y4_瞼上 = partGroup["瞼上"].ToPar();
+    		X1Y4_二重 = partGroup["二重"].ToPar();
+    		X1Y4_睫毛上上左 = partGroup["睫毛上上左"].ToPar();
+    		X1Y4_睫毛上中左 = partGroup["睫毛上中左"].ToPar();
+    		X1Y4_睫毛上下左 = partGroup["睫毛上下左"].ToPar();
+    		X1Y4_睫毛上上右 = partGroup["睫毛上上右"].ToPar();
+    		X1Y4_睫毛上中右 = partGroup["睫毛上中右"].ToPar();
+    		X1Y4_睫毛上下右 = partGroup["睫毛上下右"].ToPar();
+    		X1Y4_睫毛下上左 = partGroup["睫毛下上左"].ToPar();
+    		X1Y4_睫毛下下左 = partGroup["睫毛下下左"].ToPar();
+    		X1Y4_睫毛下上右 = partGroup["睫毛下上右"].ToPar();
+    		X1Y4_睫毛下下右 = partGroup["睫毛下下右"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;
@@ -1603,7 +1603,7 @@ namespace SlaveMatrix
     		Intensity = e.濃度;
     	}
 
-    	private void 睫毛長さ(Par p, double d)
+    	private void 睫毛長さ(ShapePart p, double d)
     	{
     		double num = 0.0;
     		double num2 = 1.5;
@@ -1953,7 +1953,7 @@ namespace SlaveMatrix
     	{
     		瞼下CD = new ColorD(ref 体配色.睫毛.Col1, ref 体配色.人肌O);
     		瞼上CD = new ColorD(ref 体配色.睫毛.Col1, ref 体配色.人肌O);
-    		二重CD = new ColorD(ref Col.Black, ref 体配色.人肌O);
+    		二重CD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌O);
     		睫毛上上左CD = new ColorD(ref 体配色.睫毛.Col1, ref 体配色.睫毛);
     		睫毛上中左CD = new ColorD(ref 体配色.睫毛.Col1, ref 体配色.睫毛);
     		睫毛上下左CD = new ColorD(ref 体配色.睫毛.Col1, ref 体配色.睫毛);

@@ -4,287 +4,287 @@ using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
-    public class 四足腰 : Ele
+    public class 四足腰 : Element
     {
-    	public Par X0Y0_Waist;
+    	public ShapePart X0Y0_Waist;
 
-    	public Par X0Y0_股;
+    	public ShapePart X0Y0_股;
 
-    	public Par X0Y0_下腹;
+    	public ShapePart X0Y0_下腹;
 
-    	public Par X0Y0_腰皺;
+    	public ShapePart X0Y0_腰皺;
 
-    	public Par X0Y0_筋肉_筋肉下;
+    	public ShapePart X0Y0_筋肉_筋肉下;
 
-    	public Par X0Y0_筋肉_筋肉左;
+    	public ShapePart X0Y0_筋肉_筋肉左;
 
-    	public Par X0Y0_筋肉_筋肉右;
+    	public ShapePart X0Y0_筋肉_筋肉右;
 
-    	public Par X0Y0_筋肉_筋上左;
+    	public ShapePart X0Y0_筋肉_筋上左;
 
-    	public Par X0Y0_筋肉_筋上右;
+    	public ShapePart X0Y0_筋肉_筋上右;
 
-    	public Par X0Y0_筋肉_筋下左;
+    	public ShapePart X0Y0_筋肉_筋下左;
 
-    	public Par X0Y0_筋肉_筋下右;
+    	public ShapePart X0Y0_筋肉_筋下右;
 
-    	public Par X0Y0_臍;
+    	public ShapePart X0Y0_臍;
 
-    	public Par X0Y0_紋柄_紋左_紋1;
+    	public ShapePart X0Y0_紋柄_紋左_紋1;
 
-    	public Par X0Y0_紋柄_紋左_紋2;
+    	public ShapePart X0Y0_紋柄_紋左_紋2;
 
-    	public Par X0Y0_紋柄_紋左_紋3;
+    	public ShapePart X0Y0_紋柄_紋左_紋3;
 
-    	public Par X0Y0_紋柄_紋右_紋1;
+    	public ShapePart X0Y0_紋柄_紋右_紋1;
 
-    	public Par X0Y0_紋柄_紋右_紋2;
+    	public ShapePart X0Y0_紋柄_紋右_紋2;
 
-    	public Par X0Y0_紋柄_紋右_紋3;
+    	public ShapePart X0Y0_紋柄_紋右_紋3;
 
-    	public Par X0Y0_虎柄_虎左;
+    	public ShapePart X0Y0_虎柄_虎左;
 
-    	public Par X0Y0_虎柄_虎右;
+    	public ShapePart X0Y0_虎柄_虎右;
 
-    	public Par X0Y0_竜性_中_鱗1;
+    	public ShapePart X0Y0_竜性_中_鱗1;
 
-    	public Par X0Y0_竜性_中_鱗2;
+    	public ShapePart X0Y0_竜性_中_鱗2;
 
-    	public Par X0Y0_竜性_中_鱗3;
+    	public ShapePart X0Y0_竜性_中_鱗3;
 
-    	public Par X0Y0_竜性_中_鱗4;
+    	public ShapePart X0Y0_竜性_中_鱗4;
 
-    	public Par X0Y0_竜性_左_鱗1;
+    	public ShapePart X0Y0_竜性_左_鱗1;
 
-    	public Par X0Y0_竜性_左_鱗2;
+    	public ShapePart X0Y0_竜性_左_鱗2;
 
-    	public Par X0Y0_竜性_右_鱗1;
+    	public ShapePart X0Y0_竜性_右_鱗1;
 
-    	public Par X0Y0_竜性_右_鱗2;
+    	public ShapePart X0Y0_竜性_右_鱗2;
 
-    	public Par X0Y1_Waist;
+    	public ShapePart X0Y1_Waist;
 
-    	public Par X0Y1_股;
+    	public ShapePart X0Y1_股;
 
-    	public Par X0Y1_下腹;
+    	public ShapePart X0Y1_下腹;
 
-    	public Par X0Y1_腰皺;
+    	public ShapePart X0Y1_腰皺;
 
-    	public Par X0Y1_筋肉_筋肉下;
+    	public ShapePart X0Y1_筋肉_筋肉下;
 
-    	public Par X0Y1_筋肉_筋肉左;
+    	public ShapePart X0Y1_筋肉_筋肉左;
 
-    	public Par X0Y1_筋肉_筋肉右;
+    	public ShapePart X0Y1_筋肉_筋肉右;
 
-    	public Par X0Y1_筋肉_筋上左;
+    	public ShapePart X0Y1_筋肉_筋上左;
 
-    	public Par X0Y1_筋肉_筋上右;
+    	public ShapePart X0Y1_筋肉_筋上右;
 
-    	public Par X0Y1_筋肉_筋下左;
+    	public ShapePart X0Y1_筋肉_筋下左;
 
-    	public Par X0Y1_筋肉_筋下右;
+    	public ShapePart X0Y1_筋肉_筋下右;
 
-    	public Par X0Y1_臍;
+    	public ShapePart X0Y1_臍;
 
-    	public Par X0Y1_紋柄_紋左_紋1;
+    	public ShapePart X0Y1_紋柄_紋左_紋1;
 
-    	public Par X0Y1_紋柄_紋左_紋2;
+    	public ShapePart X0Y1_紋柄_紋左_紋2;
 
-    	public Par X0Y1_紋柄_紋左_紋3;
+    	public ShapePart X0Y1_紋柄_紋左_紋3;
 
-    	public Par X0Y1_紋柄_紋右_紋1;
+    	public ShapePart X0Y1_紋柄_紋右_紋1;
 
-    	public Par X0Y1_紋柄_紋右_紋2;
+    	public ShapePart X0Y1_紋柄_紋右_紋2;
 
-    	public Par X0Y1_紋柄_紋右_紋3;
+    	public ShapePart X0Y1_紋柄_紋右_紋3;
 
-    	public Par X0Y1_虎柄_虎左;
+    	public ShapePart X0Y1_虎柄_虎左;
 
-    	public Par X0Y1_虎柄_虎右;
+    	public ShapePart X0Y1_虎柄_虎右;
 
-    	public Par X0Y1_竜性_中_鱗1;
+    	public ShapePart X0Y1_竜性_中_鱗1;
 
-    	public Par X0Y1_竜性_中_鱗2;
+    	public ShapePart X0Y1_竜性_中_鱗2;
 
-    	public Par X0Y1_竜性_中_鱗3;
+    	public ShapePart X0Y1_竜性_中_鱗3;
 
-    	public Par X0Y1_竜性_中_鱗4;
+    	public ShapePart X0Y1_竜性_中_鱗4;
 
-    	public Par X0Y1_竜性_左_鱗1;
+    	public ShapePart X0Y1_竜性_左_鱗1;
 
-    	public Par X0Y1_竜性_左_鱗2;
+    	public ShapePart X0Y1_竜性_左_鱗2;
 
-    	public Par X0Y1_竜性_右_鱗1;
+    	public ShapePart X0Y1_竜性_右_鱗1;
 
-    	public Par X0Y1_竜性_右_鱗2;
+    	public ShapePart X0Y1_竜性_右_鱗2;
 
-    	public Par X0Y2_Waist;
+    	public ShapePart X0Y2_Waist;
 
-    	public Par X0Y2_股;
+    	public ShapePart X0Y2_股;
 
-    	public Par X0Y2_下腹;
+    	public ShapePart X0Y2_下腹;
 
-    	public Par X0Y2_腰皺;
+    	public ShapePart X0Y2_腰皺;
 
-    	public Par X0Y2_筋肉_筋肉下;
+    	public ShapePart X0Y2_筋肉_筋肉下;
 
-    	public Par X0Y2_筋肉_筋肉左;
+    	public ShapePart X0Y2_筋肉_筋肉左;
 
-    	public Par X0Y2_筋肉_筋肉右;
+    	public ShapePart X0Y2_筋肉_筋肉右;
 
-    	public Par X0Y2_筋肉_筋上左;
+    	public ShapePart X0Y2_筋肉_筋上左;
 
-    	public Par X0Y2_筋肉_筋上右;
+    	public ShapePart X0Y2_筋肉_筋上右;
 
-    	public Par X0Y2_筋肉_筋下左;
+    	public ShapePart X0Y2_筋肉_筋下左;
 
-    	public Par X0Y2_筋肉_筋下右;
+    	public ShapePart X0Y2_筋肉_筋下右;
 
-    	public Par X0Y2_臍;
+    	public ShapePart X0Y2_臍;
 
-    	public Par X0Y2_紋柄_紋左_紋1;
+    	public ShapePart X0Y2_紋柄_紋左_紋1;
 
-    	public Par X0Y2_紋柄_紋左_紋2;
+    	public ShapePart X0Y2_紋柄_紋左_紋2;
 
-    	public Par X0Y2_紋柄_紋左_紋3;
+    	public ShapePart X0Y2_紋柄_紋左_紋3;
 
-    	public Par X0Y2_紋柄_紋右_紋1;
+    	public ShapePart X0Y2_紋柄_紋右_紋1;
 
-    	public Par X0Y2_紋柄_紋右_紋2;
+    	public ShapePart X0Y2_紋柄_紋右_紋2;
 
-    	public Par X0Y2_紋柄_紋右_紋3;
+    	public ShapePart X0Y2_紋柄_紋右_紋3;
 
-    	public Par X0Y2_虎柄_虎左;
+    	public ShapePart X0Y2_虎柄_虎左;
 
-    	public Par X0Y2_虎柄_虎右;
+    	public ShapePart X0Y2_虎柄_虎右;
 
-    	public Par X0Y2_竜性_中_鱗1;
+    	public ShapePart X0Y2_竜性_中_鱗1;
 
-    	public Par X0Y2_竜性_中_鱗2;
+    	public ShapePart X0Y2_竜性_中_鱗2;
 
-    	public Par X0Y2_竜性_中_鱗3;
+    	public ShapePart X0Y2_竜性_中_鱗3;
 
-    	public Par X0Y2_竜性_中_鱗4;
+    	public ShapePart X0Y2_竜性_中_鱗4;
 
-    	public Par X0Y2_竜性_左_鱗1;
+    	public ShapePart X0Y2_竜性_左_鱗1;
 
-    	public Par X0Y2_竜性_左_鱗2;
+    	public ShapePart X0Y2_竜性_左_鱗2;
 
-    	public Par X0Y2_竜性_右_鱗1;
+    	public ShapePart X0Y2_竜性_右_鱗1;
 
-    	public Par X0Y2_竜性_右_鱗2;
+    	public ShapePart X0Y2_竜性_右_鱗2;
 
-    	public Par X0Y3_Waist;
+    	public ShapePart X0Y3_Waist;
 
-    	public Par X0Y3_股;
+    	public ShapePart X0Y3_股;
 
-    	public Par X0Y3_下腹;
+    	public ShapePart X0Y3_下腹;
 
-    	public Par X0Y3_腰皺;
+    	public ShapePart X0Y3_腰皺;
 
-    	public Par X0Y3_筋肉_筋肉下;
+    	public ShapePart X0Y3_筋肉_筋肉下;
 
-    	public Par X0Y3_筋肉_筋肉左;
+    	public ShapePart X0Y3_筋肉_筋肉左;
 
-    	public Par X0Y3_筋肉_筋肉右;
+    	public ShapePart X0Y3_筋肉_筋肉右;
 
-    	public Par X0Y3_筋肉_筋上左;
+    	public ShapePart X0Y3_筋肉_筋上左;
 
-    	public Par X0Y3_筋肉_筋上右;
+    	public ShapePart X0Y3_筋肉_筋上右;
 
-    	public Par X0Y3_筋肉_筋下左;
+    	public ShapePart X0Y3_筋肉_筋下左;
 
-    	public Par X0Y3_筋肉_筋下右;
+    	public ShapePart X0Y3_筋肉_筋下右;
 
-    	public Par X0Y3_臍;
+    	public ShapePart X0Y3_臍;
 
-    	public Par X0Y3_紋柄_紋左_紋1;
+    	public ShapePart X0Y3_紋柄_紋左_紋1;
 
-    	public Par X0Y3_紋柄_紋左_紋2;
+    	public ShapePart X0Y3_紋柄_紋左_紋2;
 
-    	public Par X0Y3_紋柄_紋左_紋3;
+    	public ShapePart X0Y3_紋柄_紋左_紋3;
 
-    	public Par X0Y3_紋柄_紋右_紋1;
+    	public ShapePart X0Y3_紋柄_紋右_紋1;
 
-    	public Par X0Y3_紋柄_紋右_紋2;
+    	public ShapePart X0Y3_紋柄_紋右_紋2;
 
-    	public Par X0Y3_紋柄_紋右_紋3;
+    	public ShapePart X0Y3_紋柄_紋右_紋3;
 
-    	public Par X0Y3_虎柄_虎左;
+    	public ShapePart X0Y3_虎柄_虎左;
 
-    	public Par X0Y3_虎柄_虎右;
+    	public ShapePart X0Y3_虎柄_虎右;
 
-    	public Par X0Y3_竜性_中_鱗1;
+    	public ShapePart X0Y3_竜性_中_鱗1;
 
-    	public Par X0Y3_竜性_中_鱗2;
+    	public ShapePart X0Y3_竜性_中_鱗2;
 
-    	public Par X0Y3_竜性_中_鱗3;
+    	public ShapePart X0Y3_竜性_中_鱗3;
 
-    	public Par X0Y3_竜性_中_鱗4;
+    	public ShapePart X0Y3_竜性_中_鱗4;
 
-    	public Par X0Y3_竜性_左_鱗1;
+    	public ShapePart X0Y3_竜性_左_鱗1;
 
-    	public Par X0Y3_竜性_左_鱗2;
+    	public ShapePart X0Y3_竜性_左_鱗2;
 
-    	public Par X0Y3_竜性_右_鱗1;
+    	public ShapePart X0Y3_竜性_右_鱗1;
 
-    	public Par X0Y3_竜性_右_鱗2;
+    	public ShapePart X0Y3_竜性_右_鱗2;
 
-    	public Par X0Y4_Waist;
+    	public ShapePart X0Y4_Waist;
 
-    	public Par X0Y4_股;
+    	public ShapePart X0Y4_股;
 
-    	public Par X0Y4_下腹;
+    	public ShapePart X0Y4_下腹;
 
-    	public Par X0Y4_腰皺;
+    	public ShapePart X0Y4_腰皺;
 
-    	public Par X0Y4_筋肉_筋肉下;
+    	public ShapePart X0Y4_筋肉_筋肉下;
 
-    	public Par X0Y4_筋肉_筋肉左;
+    	public ShapePart X0Y4_筋肉_筋肉左;
 
-    	public Par X0Y4_筋肉_筋肉右;
+    	public ShapePart X0Y4_筋肉_筋肉右;
 
-    	public Par X0Y4_筋肉_筋上左;
+    	public ShapePart X0Y4_筋肉_筋上左;
 
-    	public Par X0Y4_筋肉_筋上右;
+    	public ShapePart X0Y4_筋肉_筋上右;
 
-    	public Par X0Y4_筋肉_筋下左;
+    	public ShapePart X0Y4_筋肉_筋下左;
 
-    	public Par X0Y4_筋肉_筋下右;
+    	public ShapePart X0Y4_筋肉_筋下右;
 
-    	public Par X0Y4_臍;
+    	public ShapePart X0Y4_臍;
 
-    	public Par X0Y4_紋柄_紋左_紋1;
+    	public ShapePart X0Y4_紋柄_紋左_紋1;
 
-    	public Par X0Y4_紋柄_紋左_紋2;
+    	public ShapePart X0Y4_紋柄_紋左_紋2;
 
-    	public Par X0Y4_紋柄_紋左_紋3;
+    	public ShapePart X0Y4_紋柄_紋左_紋3;
 
-    	public Par X0Y4_紋柄_紋右_紋1;
+    	public ShapePart X0Y4_紋柄_紋右_紋1;
 
-    	public Par X0Y4_紋柄_紋右_紋2;
+    	public ShapePart X0Y4_紋柄_紋右_紋2;
 
-    	public Par X0Y4_紋柄_紋右_紋3;
+    	public ShapePart X0Y4_紋柄_紋右_紋3;
 
-    	public Par X0Y4_虎柄_虎左;
+    	public ShapePart X0Y4_虎柄_虎左;
 
-    	public Par X0Y4_虎柄_虎右;
+    	public ShapePart X0Y4_虎柄_虎右;
 
-    	public Par X0Y4_竜性_中_鱗1;
+    	public ShapePart X0Y4_竜性_中_鱗1;
 
-    	public Par X0Y4_竜性_中_鱗2;
+    	public ShapePart X0Y4_竜性_中_鱗2;
 
-    	public Par X0Y4_竜性_中_鱗3;
+    	public ShapePart X0Y4_竜性_中_鱗3;
 
-    	public Par X0Y4_竜性_中_鱗4;
+    	public ShapePart X0Y4_竜性_中_鱗4;
 
-    	public Par X0Y4_竜性_左_鱗1;
+    	public ShapePart X0Y4_竜性_左_鱗1;
 
-    	public Par X0Y4_竜性_左_鱗2;
+    	public ShapePart X0Y4_竜性_左_鱗2;
 
-    	public Par X0Y4_竜性_右_鱗1;
+    	public ShapePart X0Y4_竜性_右_鱗1;
 
-    	public Par X0Y4_竜性_右_鱗2;
+    	public ShapePart X0Y4_竜性_右_鱗2;
 
     	public ColorD WaistCD;
 
@@ -622,25 +622,25 @@ namespace SlaveMatrix
 
     	public ColorP X0Y4_竜性_右_鱗2CP;
 
-    	public Ele[] 腿左_接続;
+    	public Element[] 腿左_接続;
 
-    	public Ele[] 腿右_接続;
+    	public Element[] 腿右_接続;
 
-    	public Ele[] 膣基_接続;
+    	public Element[] 膣基_接続;
 
-    	public Ele[] 肛門_接続;
+    	public Element[] 肛門_接続;
 
-    	public Ele[] 尾_接続;
+    	public Element[] 尾_接続;
 
-    	public Ele[] 半身_接続;
+    	public Element[] 半身_接続;
 
-    	public Ele[] 上着_接続;
+    	public Element[] 上着_接続;
 
-    	public Ele[] 肌_接続;
+    	public Element[] 肌_接続;
 
-    	public Ele[] 翼左_接続;
+    	public Element[] 翼左_接続;
 
-    	public Ele[] 翼右_接続;
+    	public Element[] 翼右_接続;
 
     	public override bool 欠損
     	{
@@ -1393,13 +1393,13 @@ namespace SlaveMatrix
     	{
     		四足腰 四足腰2 = this;
     		ThisType = GetType();
-    		Body = new Difs(Sta.半身["四足腰"]);
-    		Pars pars = Body[0][0];
-    		X0Y0_Waist = pars["腰"].ToPar();
-            X0Y0_股 = pars["股"].ToPar();
-    		X0Y0_下腹 = pars["下腹"].ToPar();
-    		X0Y0_腰皺 = pars["腰皺"].ToPar();
-    		Pars pars2 = pars["筋肉"].ToPars();
+    		Body = new VariantGrid(GlobalState.半身["四足腰"]);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_Waist = partGroup["腰"].ToPar();
+            X0Y0_股 = partGroup["股"].ToPar();
+    		X0Y0_下腹 = partGroup["下腹"].ToPar();
+    		X0Y0_腰皺 = partGroup["腰皺"].ToPar();
+    		PartGroup pars2 = partGroup["筋肉"].ToPars();
     		X0Y0_筋肉_筋肉下 = pars2["筋肉下"].ToPar();
     		X0Y0_筋肉_筋肉左 = pars2["筋肉左"].ToPar();
     		X0Y0_筋肉_筋肉右 = pars2["筋肉右"].ToPar();
@@ -1407,9 +1407,9 @@ namespace SlaveMatrix
     		X0Y0_筋肉_筋上右 = pars2["筋上右"].ToPar();
     		X0Y0_筋肉_筋下左 = pars2["筋下左"].ToPar();
     		X0Y0_筋肉_筋下右 = pars2["筋下右"].ToPar();
-    		X0Y0_臍 = pars["臍"].ToPar();
-    		pars2 = pars["紋柄"].ToPars();
-    		Pars pars3 = pars2["紋左"].ToPars();
+    		X0Y0_臍 = partGroup["臍"].ToPar();
+    		pars2 = partGroup["紋柄"].ToPars();
+    		PartGroup pars3 = pars2["紋左"].ToPars();
     		X0Y0_紋柄_紋左_紋1 = pars3["紋1"].ToPar();
     		X0Y0_紋柄_紋左_紋2 = pars3["紋2"].ToPar();
     		X0Y0_紋柄_紋左_紋3 = pars3["紋3"].ToPar();
@@ -1417,10 +1417,10 @@ namespace SlaveMatrix
     		X0Y0_紋柄_紋右_紋1 = pars3["紋1"].ToPar();
     		X0Y0_紋柄_紋右_紋2 = pars3["紋2"].ToPar();
     		X0Y0_紋柄_紋右_紋3 = pars3["紋3"].ToPar();
-    		pars2 = pars["虎柄"].ToPars();
+    		pars2 = partGroup["虎柄"].ToPars();
     		X0Y0_虎柄_虎左 = pars2["虎左"].ToPar();
     		X0Y0_虎柄_虎右 = pars2["虎右"].ToPar();
-    		pars2 = pars["鱗"].ToPars();
+    		pars2 = partGroup["鱗"].ToPars();
     		pars3 = pars2["中"].ToPars();
     		X0Y0_竜性_中_鱗1 = pars3["鱗1"].ToPar();
     		X0Y0_竜性_中_鱗2 = pars3["鱗2"].ToPar();
@@ -1432,12 +1432,12 @@ namespace SlaveMatrix
     		pars3 = pars2["右"].ToPars();
     		X0Y0_竜性_右_鱗1 = pars3["鱗1"].ToPar();
     		X0Y0_竜性_右_鱗2 = pars3["鱗2"].ToPar();
-    		pars = Body[0][1];
-    		X0Y1_Waist = pars["腰"].ToPar();
-    		X0Y1_股 = pars["股"].ToPar();
-    		X0Y1_下腹 = pars["下腹"].ToPar();
-    		X0Y1_腰皺 = pars["腰皺"].ToPar();
-    		pars2 = pars["筋肉"].ToPars();
+    		partGroup = Body[0][1];
+    		X0Y1_Waist = partGroup["腰"].ToPar();
+    		X0Y1_股 = partGroup["股"].ToPar();
+    		X0Y1_下腹 = partGroup["下腹"].ToPar();
+    		X0Y1_腰皺 = partGroup["腰皺"].ToPar();
+    		pars2 = partGroup["筋肉"].ToPars();
     		X0Y1_筋肉_筋肉下 = pars2["筋肉下"].ToPar();
     		X0Y1_筋肉_筋肉左 = pars2["筋肉左"].ToPar();
     		X0Y1_筋肉_筋肉右 = pars2["筋肉右"].ToPar();
@@ -1445,8 +1445,8 @@ namespace SlaveMatrix
     		X0Y1_筋肉_筋上右 = pars2["筋上右"].ToPar();
     		X0Y1_筋肉_筋下左 = pars2["筋下左"].ToPar();
     		X0Y1_筋肉_筋下右 = pars2["筋下右"].ToPar();
-    		X0Y1_臍 = pars["臍"].ToPar();
-    		pars2 = pars["紋柄"].ToPars();
+    		X0Y1_臍 = partGroup["臍"].ToPar();
+    		pars2 = partGroup["紋柄"].ToPars();
     		pars3 = pars2["紋左"].ToPars();
     		X0Y1_紋柄_紋左_紋1 = pars3["紋1"].ToPar();
     		X0Y1_紋柄_紋左_紋2 = pars3["紋2"].ToPar();
@@ -1455,10 +1455,10 @@ namespace SlaveMatrix
     		X0Y1_紋柄_紋右_紋1 = pars3["紋1"].ToPar();
     		X0Y1_紋柄_紋右_紋2 = pars3["紋2"].ToPar();
     		X0Y1_紋柄_紋右_紋3 = pars3["紋3"].ToPar();
-    		pars2 = pars["虎柄"].ToPars();
+    		pars2 = partGroup["虎柄"].ToPars();
     		X0Y1_虎柄_虎左 = pars2["虎左"].ToPar();
     		X0Y1_虎柄_虎右 = pars2["虎右"].ToPar();
-    		pars2 = pars["鱗"].ToPars();
+    		pars2 = partGroup["鱗"].ToPars();
     		pars3 = pars2["中"].ToPars();
     		X0Y1_竜性_中_鱗1 = pars3["鱗1"].ToPar();
     		X0Y1_竜性_中_鱗2 = pars3["鱗2"].ToPar();
@@ -1470,12 +1470,12 @@ namespace SlaveMatrix
     		pars3 = pars2["右"].ToPars();
     		X0Y1_竜性_右_鱗1 = pars3["鱗1"].ToPar();
     		X0Y1_竜性_右_鱗2 = pars3["鱗2"].ToPar();
-    		pars = Body[0][2];
-    		X0Y2_Waist = pars["腰"].ToPar();
-    		X0Y2_股 = pars["股"].ToPar();
-    		X0Y2_下腹 = pars["下腹"].ToPar();
-    		X0Y2_腰皺 = pars["腰皺"].ToPar();
-    		pars2 = pars["筋肉"].ToPars();
+    		partGroup = Body[0][2];
+    		X0Y2_Waist = partGroup["腰"].ToPar();
+    		X0Y2_股 = partGroup["股"].ToPar();
+    		X0Y2_下腹 = partGroup["下腹"].ToPar();
+    		X0Y2_腰皺 = partGroup["腰皺"].ToPar();
+    		pars2 = partGroup["筋肉"].ToPars();
     		X0Y2_筋肉_筋肉下 = pars2["筋肉下"].ToPar();
     		X0Y2_筋肉_筋肉左 = pars2["筋肉左"].ToPar();
     		X0Y2_筋肉_筋肉右 = pars2["筋肉右"].ToPar();
@@ -1483,8 +1483,8 @@ namespace SlaveMatrix
     		X0Y2_筋肉_筋上右 = pars2["筋上右"].ToPar();
     		X0Y2_筋肉_筋下左 = pars2["筋下左"].ToPar();
     		X0Y2_筋肉_筋下右 = pars2["筋下右"].ToPar();
-    		X0Y2_臍 = pars["臍"].ToPar();
-    		pars2 = pars["紋柄"].ToPars();
+    		X0Y2_臍 = partGroup["臍"].ToPar();
+    		pars2 = partGroup["紋柄"].ToPars();
     		pars3 = pars2["紋左"].ToPars();
     		X0Y2_紋柄_紋左_紋1 = pars3["紋1"].ToPar();
     		X0Y2_紋柄_紋左_紋2 = pars3["紋2"].ToPar();
@@ -1493,10 +1493,10 @@ namespace SlaveMatrix
     		X0Y2_紋柄_紋右_紋1 = pars3["紋1"].ToPar();
     		X0Y2_紋柄_紋右_紋2 = pars3["紋2"].ToPar();
     		X0Y2_紋柄_紋右_紋3 = pars3["紋3"].ToPar();
-    		pars2 = pars["虎柄"].ToPars();
+    		pars2 = partGroup["虎柄"].ToPars();
     		X0Y2_虎柄_虎左 = pars2["虎左"].ToPar();
     		X0Y2_虎柄_虎右 = pars2["虎右"].ToPar();
-    		pars2 = pars["鱗"].ToPars();
+    		pars2 = partGroup["鱗"].ToPars();
     		pars3 = pars2["中"].ToPars();
     		X0Y2_竜性_中_鱗1 = pars3["鱗1"].ToPar();
     		X0Y2_竜性_中_鱗2 = pars3["鱗2"].ToPar();
@@ -1508,12 +1508,12 @@ namespace SlaveMatrix
     		pars3 = pars2["右"].ToPars();
     		X0Y2_竜性_右_鱗1 = pars3["鱗1"].ToPar();
     		X0Y2_竜性_右_鱗2 = pars3["鱗2"].ToPar();
-    		pars = Body[0][3];
-    		X0Y3_Waist = pars["腰"].ToPar();
-    		X0Y3_股 = pars["股"].ToPar();
-    		X0Y3_下腹 = pars["下腹"].ToPar();
-    		X0Y3_腰皺 = pars["腰皺"].ToPar();
-    		pars2 = pars["筋肉"].ToPars();
+    		partGroup = Body[0][3];
+    		X0Y3_Waist = partGroup["腰"].ToPar();
+    		X0Y3_股 = partGroup["股"].ToPar();
+    		X0Y3_下腹 = partGroup["下腹"].ToPar();
+    		X0Y3_腰皺 = partGroup["腰皺"].ToPar();
+    		pars2 = partGroup["筋肉"].ToPars();
     		X0Y3_筋肉_筋肉下 = pars2["筋肉下"].ToPar();
     		X0Y3_筋肉_筋肉左 = pars2["筋肉左"].ToPar();
     		X0Y3_筋肉_筋肉右 = pars2["筋肉右"].ToPar();
@@ -1521,8 +1521,8 @@ namespace SlaveMatrix
     		X0Y3_筋肉_筋上右 = pars2["筋上右"].ToPar();
     		X0Y3_筋肉_筋下左 = pars2["筋下左"].ToPar();
     		X0Y3_筋肉_筋下右 = pars2["筋下右"].ToPar();
-    		X0Y3_臍 = pars["臍"].ToPar();
-    		pars2 = pars["紋柄"].ToPars();
+    		X0Y3_臍 = partGroup["臍"].ToPar();
+    		pars2 = partGroup["紋柄"].ToPars();
     		pars3 = pars2["紋左"].ToPars();
     		X0Y3_紋柄_紋左_紋1 = pars3["紋1"].ToPar();
     		X0Y3_紋柄_紋左_紋2 = pars3["紋2"].ToPar();
@@ -1531,10 +1531,10 @@ namespace SlaveMatrix
     		X0Y3_紋柄_紋右_紋1 = pars3["紋1"].ToPar();
     		X0Y3_紋柄_紋右_紋2 = pars3["紋2"].ToPar();
     		X0Y3_紋柄_紋右_紋3 = pars3["紋3"].ToPar();
-    		pars2 = pars["虎柄"].ToPars();
+    		pars2 = partGroup["虎柄"].ToPars();
     		X0Y3_虎柄_虎左 = pars2["虎左"].ToPar();
     		X0Y3_虎柄_虎右 = pars2["虎右"].ToPar();
-    		pars2 = pars["鱗"].ToPars();
+    		pars2 = partGroup["鱗"].ToPars();
     		pars3 = pars2["中"].ToPars();
     		X0Y3_竜性_中_鱗1 = pars3["鱗1"].ToPar();
     		X0Y3_竜性_中_鱗2 = pars3["鱗2"].ToPar();
@@ -1546,12 +1546,12 @@ namespace SlaveMatrix
     		pars3 = pars2["右"].ToPars();
     		X0Y3_竜性_右_鱗1 = pars3["鱗1"].ToPar();
     		X0Y3_竜性_右_鱗2 = pars3["鱗2"].ToPar();
-    		pars = Body[0][4];
-    		X0Y4_Waist = pars["腰"].ToPar();
-    		X0Y4_股 = pars["股"].ToPar();
-    		X0Y4_下腹 = pars["下腹"].ToPar();
-    		X0Y4_腰皺 = pars["腰皺"].ToPar();
-    		pars2 = pars["筋肉"].ToPars();
+    		partGroup = Body[0][4];
+    		X0Y4_Waist = partGroup["腰"].ToPar();
+    		X0Y4_股 = partGroup["股"].ToPar();
+    		X0Y4_下腹 = partGroup["下腹"].ToPar();
+    		X0Y4_腰皺 = partGroup["腰皺"].ToPar();
+    		pars2 = partGroup["筋肉"].ToPars();
     		X0Y4_筋肉_筋肉下 = pars2["筋肉下"].ToPar();
     		X0Y4_筋肉_筋肉左 = pars2["筋肉左"].ToPar();
     		X0Y4_筋肉_筋肉右 = pars2["筋肉右"].ToPar();
@@ -1559,8 +1559,8 @@ namespace SlaveMatrix
     		X0Y4_筋肉_筋上右 = pars2["筋上右"].ToPar();
     		X0Y4_筋肉_筋下左 = pars2["筋下左"].ToPar();
     		X0Y4_筋肉_筋下右 = pars2["筋下右"].ToPar();
-    		X0Y4_臍 = pars["臍"].ToPar();
-    		pars2 = pars["紋柄"].ToPars();
+    		X0Y4_臍 = partGroup["臍"].ToPar();
+    		pars2 = partGroup["紋柄"].ToPars();
     		pars3 = pars2["紋左"].ToPars();
     		X0Y4_紋柄_紋左_紋1 = pars3["紋1"].ToPar();
     		X0Y4_紋柄_紋左_紋2 = pars3["紋2"].ToPar();
@@ -1569,10 +1569,10 @@ namespace SlaveMatrix
     		X0Y4_紋柄_紋右_紋1 = pars3["紋1"].ToPar();
     		X0Y4_紋柄_紋右_紋2 = pars3["紋2"].ToPar();
     		X0Y4_紋柄_紋右_紋3 = pars3["紋3"].ToPar();
-    		pars2 = pars["虎柄"].ToPars();
+    		pars2 = partGroup["虎柄"].ToPars();
     		X0Y4_虎柄_虎左 = pars2["虎左"].ToPar();
     		X0Y4_虎柄_虎右 = pars2["虎右"].ToPar();
-    		pars2 = pars["鱗"].ToPars();
+    		pars2 = partGroup["鱗"].ToPars();
     		pars3 = pars2["中"].ToPars();
     		X0Y4_竜性_中_鱗1 = pars3["鱗1"].ToPar();
     		X0Y4_竜性_中_鱗2 = pars3["鱗2"].ToPar();
@@ -1643,10 +1643,10 @@ namespace SlaveMatrix
     		{
     			表示 = false;
     		}
-    		Ele f;
+    		Element f;
     		if (e.腿左_接続.Count > 0)
     		{
-    			腿左_接続 = e.腿左_接続.Select(delegate(EleD g)
+    			腿左_接続 = e.腿左_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 四足腰2;
@@ -1657,7 +1657,7 @@ namespace SlaveMatrix
     		}
     		if (e.腿右_接続.Count > 0)
     		{
-    			腿右_接続 = e.腿右_接続.Select(delegate(EleD g)
+    			腿右_接続 = e.腿右_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 四足腰2;
@@ -1668,7 +1668,7 @@ namespace SlaveMatrix
     		}
     		if (e.膣基_接続.Count > 0)
     		{
-    			膣基_接続 = e.膣基_接続.Select(delegate(EleD g)
+    			膣基_接続 = e.膣基_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 四足腰2;
@@ -1679,7 +1679,7 @@ namespace SlaveMatrix
     		}
     		if (e.肛門_接続.Count > 0)
     		{
-    			肛門_接続 = e.肛門_接続.Select(delegate(EleD g)
+    			肛門_接続 = e.肛門_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 四足腰2;
@@ -1690,7 +1690,7 @@ namespace SlaveMatrix
     		}
     		if (e.尾_接続.Count > 0)
     		{
-    			尾_接続 = e.尾_接続.Select(delegate(EleD g)
+    			尾_接続 = e.尾_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 四足腰2;
@@ -1701,7 +1701,7 @@ namespace SlaveMatrix
     		}
     		if (e.半身_接続.Count > 0)
     		{
-    			半身_接続 = e.半身_接続.Select(delegate(EleD g)
+    			半身_接続 = e.半身_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 四足腰2;
@@ -1712,7 +1712,7 @@ namespace SlaveMatrix
     		}
     		if (e.上着_接続.Count > 0)
     		{
-    			上着_接続 = e.上着_接続.Select(delegate(EleD g)
+    			上着_接続 = e.上着_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 四足腰2;
@@ -1723,7 +1723,7 @@ namespace SlaveMatrix
     		}
     		if (e.肌_接続.Count > 0)
     		{
-    			肌_接続 = e.肌_接続.Select(delegate(EleD g)
+    			肌_接続 = e.肌_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 四足腰2;
@@ -1734,7 +1734,7 @@ namespace SlaveMatrix
     		}
     		if (e.翼左_接続.Count > 0)
     		{
-    			翼左_接続 = e.翼左_接続.Select(delegate(EleD g)
+    			翼左_接続 = e.翼左_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 四足腰2;
@@ -1745,7 +1745,7 @@ namespace SlaveMatrix
     		}
     		if (e.翼右_接続.Count > 0)
     		{
-    			翼右_接続 = e.翼右_接続.Select(delegate(EleD g)
+    			翼右_接続 = e.翼右_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 四足腰2;
@@ -2097,7 +2097,7 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		WaistCD = new ColorD(ref Col.Black, ref 体配色.毛0O);
+    		WaistCD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
     		股CD = new ColorD(ref 体配色.薄線, ref 体配色.毛0O);
     		下腹CD = new ColorD(ref 体配色.薄線, ref 体配色.毛0O);
     		腰皺CD = new ColorD(ref 体配色.薄線, ref Color2.Empty);
@@ -2109,27 +2109,27 @@ namespace SlaveMatrix
     		筋肉_筋下左CD = new ColorD(ref 体配色.薄線, ref 体配色.毛0O);
     		筋肉_筋下右CD = new ColorD(ref 体配色.薄線, ref 体配色.毛0O);
     		臍CD = new ColorD(ref 体配色.薄線, ref 体配色.毛0O);
-    		紋柄_紋左_紋1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		紋柄_紋左_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		紋柄_紋左_紋3CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		紋柄_紋右_紋1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		紋柄_紋右_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		紋柄_紋右_紋3CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		虎柄_虎左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		虎柄_虎右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		竜性_中_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_中_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_中_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_中_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_左_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_左_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_右_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_右_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		紋柄_紋左_紋1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		紋柄_紋左_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		紋柄_紋左_紋3CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		紋柄_紋右_紋1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		紋柄_紋右_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		紋柄_紋右_紋3CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		虎柄_虎左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		虎柄_虎右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		竜性_中_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_中_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_中_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_中_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_左_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_左_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_右_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_右_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
     	}
 
     	private void 配色T0(BodyColorSet 体配色)
     	{
-    		WaistCD = new ColorD(ref Col.Black, ref 体配色.毛0O);
+    		WaistCD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
     		股CD = new ColorD(ref 体配色.薄線, ref 体配色.毛0O);
     		下腹CD = new ColorD(ref 体配色.薄線, ref 体配色.毛0O);
     		腰皺CD = new ColorD(ref 体配色.薄線, ref Color2.Empty);
@@ -2141,27 +2141,27 @@ namespace SlaveMatrix
     		筋肉_筋下左CD = new ColorD(ref 体配色.薄線, ref 体配色.毛0O);
     		筋肉_筋下右CD = new ColorD(ref 体配色.薄線, ref 体配色.毛0O);
     		臍CD = new ColorD(ref 体配色.薄線, ref 体配色.毛0O);
-    		紋柄_紋左_紋1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		紋柄_紋左_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		紋柄_紋左_紋3CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		紋柄_紋右_紋1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		紋柄_紋右_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		紋柄_紋右_紋3CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		虎柄_虎左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		虎柄_虎右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		竜性_中_鱗1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		竜性_中_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_中_鱗3CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		竜性_中_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_左_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_左_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_右_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_右_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		紋柄_紋左_紋1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		紋柄_紋左_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		紋柄_紋左_紋3CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		紋柄_紋右_紋1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		紋柄_紋右_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		紋柄_紋右_紋3CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		虎柄_虎左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		虎柄_虎右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		竜性_中_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		竜性_中_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_中_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		竜性_中_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_左_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_左_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_右_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_右_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
     	}
 
     	private void 配色T1(BodyColorSet 体配色)
     	{
-    		WaistCD = new ColorD(ref Col.Black, ref 体配色.毛0O);
+    		WaistCD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
     		股CD = new ColorD(ref 体配色.薄線, ref 体配色.毛0O);
     		下腹CD = new ColorD(ref 体配色.薄線, ref 体配色.毛0O);
     		腰皺CD = new ColorD(ref 体配色.薄線, ref Color2.Empty);
@@ -2173,22 +2173,22 @@ namespace SlaveMatrix
     		筋肉_筋下左CD = new ColorD(ref 体配色.薄線, ref 体配色.毛0O);
     		筋肉_筋下右CD = new ColorD(ref 体配色.薄線, ref 体配色.毛0O);
     		臍CD = new ColorD(ref 体配色.薄線, ref 体配色.毛0O);
-    		紋柄_紋左_紋1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		紋柄_紋左_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		紋柄_紋左_紋3CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		紋柄_紋右_紋1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		紋柄_紋右_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		紋柄_紋右_紋3CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		虎柄_虎左CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		虎柄_虎右CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		竜性_中_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_中_鱗2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		竜性_中_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗1O);
-    		竜性_中_鱗4CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		竜性_左_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_左_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_右_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_右_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		紋柄_紋左_紋1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		紋柄_紋左_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		紋柄_紋左_紋3CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		紋柄_紋右_紋1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		紋柄_紋右_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		紋柄_紋右_紋3CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		虎柄_虎左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		虎柄_虎右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		竜性_中_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_中_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		竜性_中_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗1O);
+    		竜性_中_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		竜性_左_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_左_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_右_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_右_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
     	}
     }
 }

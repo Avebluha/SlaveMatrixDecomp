@@ -3,9 +3,9 @@ using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
-    public class キスマーク : Ele
+    public class キスマーク : Element
     {
-    	public Par X0Y0_キスマーク;
+    	public ShapePart X0Y0_キスマーク;
 
     	public ColorD キスマークCD;
 
@@ -87,9 +87,9 @@ namespace SlaveMatrix
     	public キスマーク(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, キスマークD e)
     	{
     		ThisType = GetType();
-    		Body = new Difs(Sta.スタンプ["キスマーク"]);
-    		Pars pars = Body[0][0];
-    		X0Y0_キスマーク = pars["キスマーク"].ToPar();
+    		Body = new VariantGrid(GlobalState.スタンプ["キスマーク"]);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_キスマーク = partGroup["キスマーク"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;
@@ -140,7 +140,7 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		キスマークCD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
+    		キスマークCD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
     	}
     }
 }

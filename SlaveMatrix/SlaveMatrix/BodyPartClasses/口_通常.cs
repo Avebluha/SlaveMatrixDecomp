@@ -4,185 +4,185 @@ namespace SlaveMatrix
 {
     public class 口_通常 : 口
     {
-    	public Par X0Y0_口;
+    	public ShapePart X0Y0_口;
 
-    	public Par X0Y0_口紅上;
+    	public ShapePart X0Y0_口紅上;
 
-    	public Par X0Y0_牙左;
+    	public ShapePart X0Y0_牙左;
 
-    	public Par X0Y0_牙右;
+    	public ShapePart X0Y0_牙右;
 
-    	public Par X0Y0_口紅下_口紅;
+    	public ShapePart X0Y0_口紅下_口紅;
 
-    	public Par X0Y0_口紅下_ハイライト;
+    	public ShapePart X0Y0_口紅下_ハイライト;
 
-    	public Par X0Y1_口;
+    	public ShapePart X0Y1_口;
 
-    	public Par X0Y1_口紅上;
+    	public ShapePart X0Y1_口紅上;
 
-    	public Par X0Y1_牙左;
+    	public ShapePart X0Y1_牙左;
 
-    	public Par X0Y1_牙右;
+    	public ShapePart X0Y1_牙右;
 
-    	public Par X0Y1_口紅下_口紅;
+    	public ShapePart X0Y1_口紅下_口紅;
 
-    	public Par X0Y1_口紅下_ハイライト;
+    	public ShapePart X0Y1_口紅下_ハイライト;
 
-    	public Par X0Y2_口;
+    	public ShapePart X0Y2_口;
 
-    	public Par X0Y2_口紅上;
+    	public ShapePart X0Y2_口紅上;
 
-    	public Par X0Y2_歯;
+    	public ShapePart X0Y2_歯;
 
-    	public Par X0Y2_牙左;
+    	public ShapePart X0Y2_牙左;
 
-    	public Par X0Y2_牙右;
+    	public ShapePart X0Y2_牙右;
 
-    	public Par X0Y2_口紅下_口紅;
+    	public ShapePart X0Y2_口紅下_口紅;
 
-    	public Par X0Y2_口紅下_ハイライト;
+    	public ShapePart X0Y2_口紅下_ハイライト;
 
-    	public Par X0Y3_口;
+    	public ShapePart X0Y3_口;
 
-    	public Par X0Y3_口紅上;
+    	public ShapePart X0Y3_口紅上;
 
-    	public Par X0Y3_歯;
+    	public ShapePart X0Y3_歯;
 
-    	public Par X0Y3_牙左;
+    	public ShapePart X0Y3_牙左;
 
-    	public Par X0Y3_牙右;
+    	public ShapePart X0Y3_牙右;
 
-    	public Par X0Y3_口紅下_口紅;
+    	public ShapePart X0Y3_口紅下_口紅;
 
-    	public Par X0Y3_口紅下_ハイライト;
+    	public ShapePart X0Y3_口紅下_ハイライト;
 
-    	public Par X0Y4_口;
+    	public ShapePart X0Y4_口;
 
-    	public Par X0Y4_口紅上;
+    	public ShapePart X0Y4_口紅上;
 
-    	public Par X0Y4_牙左;
+    	public ShapePart X0Y4_牙左;
 
-    	public Par X0Y4_牙右;
+    	public ShapePart X0Y4_牙右;
 
-    	public Par X0Y4_口紅下_口紅;
+    	public ShapePart X0Y4_口紅下_口紅;
 
-    	public Par X0Y4_口紅下_ハイライト;
+    	public ShapePart X0Y4_口紅下_ハイライト;
 
-    	public Par X0Y5_口;
+    	public ShapePart X0Y5_口;
 
-    	public Par X0Y5_口紅上;
+    	public ShapePart X0Y5_口紅上;
 
-    	public Par X0Y5_牙左;
+    	public ShapePart X0Y5_牙左;
 
-    	public Par X0Y5_牙右;
+    	public ShapePart X0Y5_牙右;
 
-    	public Par X0Y5_口紅下_口紅;
+    	public ShapePart X0Y5_口紅下_口紅;
 
-    	public Par X0Y5_口紅下_ハイライト;
+    	public ShapePart X0Y5_口紅下_ハイライト;
 
-    	public Par X0Y6_口;
+    	public ShapePart X0Y6_口;
 
-    	public Par X0Y6_口紅上;
+    	public ShapePart X0Y6_口紅上;
 
-    	public Par X0Y6_牙左;
+    	public ShapePart X0Y6_牙左;
 
-    	public Par X0Y6_牙右;
+    	public ShapePart X0Y6_牙右;
 
-    	public Par X0Y6_口紅下_口紅;
+    	public ShapePart X0Y6_口紅下_口紅;
 
-    	public Par X0Y6_口紅下_ハイライト;
+    	public ShapePart X0Y6_口紅下_ハイライト;
 
-    	public Par X0Y7_口;
+    	public ShapePart X0Y7_口;
 
-    	public Par X0Y7_歯;
+    	public ShapePart X0Y7_歯;
 
-    	public Par X0Y7_口紅上;
+    	public ShapePart X0Y7_口紅上;
 
-    	public Par X0Y7_牙左;
+    	public ShapePart X0Y7_牙左;
 
-    	public Par X0Y7_牙右;
+    	public ShapePart X0Y7_牙右;
 
-    	public Par X0Y7_口紅下_口紅;
+    	public ShapePart X0Y7_口紅下_口紅;
 
-    	public Par X0Y7_口紅下_ハイライト;
+    	public ShapePart X0Y7_口紅下_ハイライト;
 
-    	public Par X0Y8_口;
+    	public ShapePart X0Y8_口;
 
-    	public Par X0Y8_歯;
+    	public ShapePart X0Y8_歯;
 
-    	public Par X0Y8_口紅上;
+    	public ShapePart X0Y8_口紅上;
 
-    	public Par X0Y8_牙左;
+    	public ShapePart X0Y8_牙左;
 
-    	public Par X0Y8_牙右;
+    	public ShapePart X0Y8_牙右;
 
-    	public Par X0Y8_口紅下_口紅;
+    	public ShapePart X0Y8_口紅下_口紅;
 
-    	public Par X0Y8_口紅下_ハイライト;
+    	public ShapePart X0Y8_口紅下_ハイライト;
 
-    	public Par X0Y9_口;
+    	public ShapePart X0Y9_口;
 
-    	public Par X0Y9_口紅上;
+    	public ShapePart X0Y9_口紅上;
 
-    	public Par X0Y9_牙左;
+    	public ShapePart X0Y9_牙左;
 
-    	public Par X0Y9_牙右;
+    	public ShapePart X0Y9_牙右;
 
-    	public Par X0Y9_口紅下_口紅;
+    	public ShapePart X0Y9_口紅下_口紅;
 
-    	public Par X0Y9_口紅下_ハイライト;
+    	public ShapePart X0Y9_口紅下_ハイライト;
 
-    	public Par X0Y10_口;
+    	public ShapePart X0Y10_口;
 
-    	public Par X0Y10_口紅上;
+    	public ShapePart X0Y10_口紅上;
 
-    	public Par X0Y10_牙左;
+    	public ShapePart X0Y10_牙左;
 
-    	public Par X0Y10_牙右;
+    	public ShapePart X0Y10_牙右;
 
-    	public Par X0Y10_口紅下_口紅;
+    	public ShapePart X0Y10_口紅下_口紅;
 
-    	public Par X0Y10_口紅下_ハイライト;
+    	public ShapePart X0Y10_口紅下_ハイライト;
 
-    	public Par X0Y11_口;
+    	public ShapePart X0Y11_口;
 
-    	public Par X0Y11_口紅上;
+    	public ShapePart X0Y11_口紅上;
 
-    	public Par X0Y11_牙左;
+    	public ShapePart X0Y11_牙左;
 
-    	public Par X0Y11_牙右;
+    	public ShapePart X0Y11_牙右;
 
-    	public Par X0Y11_口紅下_口紅;
+    	public ShapePart X0Y11_口紅下_口紅;
 
-    	public Par X0Y11_口紅下_ハイライト;
+    	public ShapePart X0Y11_口紅下_ハイライト;
 
-    	public Par X0Y12_口;
+    	public ShapePart X0Y12_口;
 
-    	public Par X0Y12_口紅上;
+    	public ShapePart X0Y12_口紅上;
 
-    	public Par X0Y12_牙左;
+    	public ShapePart X0Y12_牙左;
 
-    	public Par X0Y12_牙右;
+    	public ShapePart X0Y12_牙右;
 
-    	public Par X0Y12_口紅下_口紅;
+    	public ShapePart X0Y12_口紅下_口紅;
 
-    	public Par X0Y12_口紅下_ハイライト;
+    	public ShapePart X0Y12_口紅下_ハイライト;
 
-    	public Par X0Y13_口;
+    	public ShapePart X0Y13_口;
 
-    	public Par X0Y13_頬左;
+    	public ShapePart X0Y13_頬左;
 
-    	public Par X0Y13_頬右;
+    	public ShapePart X0Y13_頬右;
 
-    	public Par X0Y13_口紅上;
+    	public ShapePart X0Y13_口紅上;
 
-    	public Par X0Y13_牙左;
+    	public ShapePart X0Y13_牙左;
 
-    	public Par X0Y13_牙右;
+    	public ShapePart X0Y13_牙右;
 
-    	public Par X0Y13_口紅下_口紅;
+    	public ShapePart X0Y13_口紅下_口紅;
 
-    	public Par X0Y13_口紅下_ハイライト;
+    	public ShapePart X0Y13_口紅下_ハイライト;
 
     	public ColorD 口CD;
 
@@ -790,126 +790,126 @@ namespace SlaveMatrix
     	public 口_通常(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 口_通常D e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif(Sta.胴体["口"][0]);
-    		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		X0Y0_口 = pars["口"].ToPar();
-    		X0Y0_口紅上 = pars["口紅上"].ToPar();
-    		X0Y0_牙左 = pars["牙左"].ToPar();
-    		X0Y0_牙右 = pars["牙右"].ToPar();
-    		Pars pars2 = pars["口紅下"].ToPars();
+    		MorphVariant morphVariant = new MorphVariant(GlobalState.胴体["口"][0]);
+    		Body = new VariantGrid();
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_口 = partGroup["口"].ToPar();
+    		X0Y0_口紅上 = partGroup["口紅上"].ToPar();
+    		X0Y0_牙左 = partGroup["牙左"].ToPar();
+    		X0Y0_牙右 = partGroup["牙右"].ToPar();
+    		PartGroup pars2 = partGroup["口紅下"].ToPars();
     		X0Y0_口紅下_口紅 = pars2["口紅"].ToPar();
     		X0Y0_口紅下_ハイライト = pars2["ハイライト"].ToPar();
-    		pars = Body[0][1];
-    		X0Y1_口 = pars["口"].ToPar();
-    		X0Y1_口紅上 = pars["口紅上"].ToPar();
-    		X0Y1_牙左 = pars["牙左"].ToPar();
-    		X0Y1_牙右 = pars["牙右"].ToPar();
-    		pars2 = pars["口紅下"].ToPars();
+    		partGroup = Body[0][1];
+    		X0Y1_口 = partGroup["口"].ToPar();
+    		X0Y1_口紅上 = partGroup["口紅上"].ToPar();
+    		X0Y1_牙左 = partGroup["牙左"].ToPar();
+    		X0Y1_牙右 = partGroup["牙右"].ToPar();
+    		pars2 = partGroup["口紅下"].ToPars();
     		X0Y1_口紅下_口紅 = pars2["口紅"].ToPar();
     		X0Y1_口紅下_ハイライト = pars2["ハイライト"].ToPar();
-    		pars = Body[0][2];
-    		X0Y2_口 = pars["口"].ToPar();
-    		X0Y2_口紅上 = pars["口紅上"].ToPar();
-    		X0Y2_歯 = pars["歯"].ToPar();
-    		X0Y2_牙左 = pars["牙左"].ToPar();
-    		X0Y2_牙右 = pars["牙右"].ToPar();
-    		pars2 = pars["口紅下"].ToPars();
+    		partGroup = Body[0][2];
+    		X0Y2_口 = partGroup["口"].ToPar();
+    		X0Y2_口紅上 = partGroup["口紅上"].ToPar();
+    		X0Y2_歯 = partGroup["歯"].ToPar();
+    		X0Y2_牙左 = partGroup["牙左"].ToPar();
+    		X0Y2_牙右 = partGroup["牙右"].ToPar();
+    		pars2 = partGroup["口紅下"].ToPars();
     		X0Y2_口紅下_口紅 = pars2["口紅"].ToPar();
     		X0Y2_口紅下_ハイライト = pars2["ハイライト"].ToPar();
-    		pars = Body[0][3];
-    		X0Y3_口 = pars["口"].ToPar();
-    		X0Y3_口紅上 = pars["口紅上"].ToPar();
-    		X0Y3_歯 = pars["歯"].ToPar();
-    		X0Y3_牙左 = pars["牙左"].ToPar();
-    		X0Y3_牙右 = pars["牙右"].ToPar();
-    		pars2 = pars["口紅下"].ToPars();
+    		partGroup = Body[0][3];
+    		X0Y3_口 = partGroup["口"].ToPar();
+    		X0Y3_口紅上 = partGroup["口紅上"].ToPar();
+    		X0Y3_歯 = partGroup["歯"].ToPar();
+    		X0Y3_牙左 = partGroup["牙左"].ToPar();
+    		X0Y3_牙右 = partGroup["牙右"].ToPar();
+    		pars2 = partGroup["口紅下"].ToPars();
     		X0Y3_口紅下_口紅 = pars2["口紅"].ToPar();
     		X0Y3_口紅下_ハイライト = pars2["ハイライト"].ToPar();
-    		pars = Body[0][4];
-    		X0Y4_口 = pars["口"].ToPar();
-    		X0Y4_口紅上 = pars["口紅上"].ToPar();
-    		X0Y4_牙左 = pars["牙左"].ToPar();
-    		X0Y4_牙右 = pars["牙右"].ToPar();
-    		pars2 = pars["口紅下"].ToPars();
+    		partGroup = Body[0][4];
+    		X0Y4_口 = partGroup["口"].ToPar();
+    		X0Y4_口紅上 = partGroup["口紅上"].ToPar();
+    		X0Y4_牙左 = partGroup["牙左"].ToPar();
+    		X0Y4_牙右 = partGroup["牙右"].ToPar();
+    		pars2 = partGroup["口紅下"].ToPars();
     		X0Y4_口紅下_口紅 = pars2["口紅"].ToPar();
     		X0Y4_口紅下_ハイライト = pars2["ハイライト"].ToPar();
-    		pars = Body[0][5];
-    		X0Y5_口 = pars["口"].ToPar();
-    		X0Y5_口紅上 = pars["口紅上"].ToPar();
-    		X0Y5_牙左 = pars["牙左"].ToPar();
-    		X0Y5_牙右 = pars["牙右"].ToPar();
-    		pars2 = pars["口紅下"].ToPars();
+    		partGroup = Body[0][5];
+    		X0Y5_口 = partGroup["口"].ToPar();
+    		X0Y5_口紅上 = partGroup["口紅上"].ToPar();
+    		X0Y5_牙左 = partGroup["牙左"].ToPar();
+    		X0Y5_牙右 = partGroup["牙右"].ToPar();
+    		pars2 = partGroup["口紅下"].ToPars();
     		X0Y5_口紅下_口紅 = pars2["口紅"].ToPar();
     		X0Y5_口紅下_ハイライト = pars2["ハイライト"].ToPar();
-    		pars = Body[0][6];
-    		X0Y6_口 = pars["口"].ToPar();
-    		X0Y6_口紅上 = pars["口紅上"].ToPar();
-    		X0Y6_牙左 = pars["牙左"].ToPar();
-    		X0Y6_牙右 = pars["牙右"].ToPar();
-    		pars2 = pars["口紅下"].ToPars();
+    		partGroup = Body[0][6];
+    		X0Y6_口 = partGroup["口"].ToPar();
+    		X0Y6_口紅上 = partGroup["口紅上"].ToPar();
+    		X0Y6_牙左 = partGroup["牙左"].ToPar();
+    		X0Y6_牙右 = partGroup["牙右"].ToPar();
+    		pars2 = partGroup["口紅下"].ToPars();
     		X0Y6_口紅下_口紅 = pars2["口紅"].ToPar();
     		X0Y6_口紅下_ハイライト = pars2["ハイライト"].ToPar();
-    		pars = Body[0][7];
-    		X0Y7_口 = pars["口"].ToPar();
-    		X0Y7_歯 = pars["歯"].ToPar();
-    		X0Y7_口紅上 = pars["口紅上"].ToPar();
-    		X0Y7_牙左 = pars["牙左"].ToPar();
-    		X0Y7_牙右 = pars["牙右"].ToPar();
-    		pars2 = pars["口紅下"].ToPars();
+    		partGroup = Body[0][7];
+    		X0Y7_口 = partGroup["口"].ToPar();
+    		X0Y7_歯 = partGroup["歯"].ToPar();
+    		X0Y7_口紅上 = partGroup["口紅上"].ToPar();
+    		X0Y7_牙左 = partGroup["牙左"].ToPar();
+    		X0Y7_牙右 = partGroup["牙右"].ToPar();
+    		pars2 = partGroup["口紅下"].ToPars();
     		X0Y7_口紅下_口紅 = pars2["口紅"].ToPar();
     		X0Y7_口紅下_ハイライト = pars2["ハイライト"].ToPar();
-    		pars = Body[0][8];
-    		X0Y8_口 = pars["口"].ToPar();
-    		X0Y8_歯 = pars["歯"].ToPar();
-    		X0Y8_口紅上 = pars["口紅上"].ToPar();
-    		X0Y8_牙左 = pars["牙左"].ToPar();
-    		X0Y8_牙右 = pars["牙右"].ToPar();
-    		pars2 = pars["口紅下"].ToPars();
+    		partGroup = Body[0][8];
+    		X0Y8_口 = partGroup["口"].ToPar();
+    		X0Y8_歯 = partGroup["歯"].ToPar();
+    		X0Y8_口紅上 = partGroup["口紅上"].ToPar();
+    		X0Y8_牙左 = partGroup["牙左"].ToPar();
+    		X0Y8_牙右 = partGroup["牙右"].ToPar();
+    		pars2 = partGroup["口紅下"].ToPars();
     		X0Y8_口紅下_口紅 = pars2["口紅"].ToPar();
     		X0Y8_口紅下_ハイライト = pars2["ハイライト"].ToPar();
-    		pars = Body[0][9];
-    		X0Y9_口 = pars["口"].ToPar();
-    		X0Y9_口紅上 = pars["口紅上"].ToPar();
-    		X0Y9_牙左 = pars["牙左"].ToPar();
-    		X0Y9_牙右 = pars["牙右"].ToPar();
-    		pars2 = pars["口紅下"].ToPars();
+    		partGroup = Body[0][9];
+    		X0Y9_口 = partGroup["口"].ToPar();
+    		X0Y9_口紅上 = partGroup["口紅上"].ToPar();
+    		X0Y9_牙左 = partGroup["牙左"].ToPar();
+    		X0Y9_牙右 = partGroup["牙右"].ToPar();
+    		pars2 = partGroup["口紅下"].ToPars();
     		X0Y9_口紅下_口紅 = pars2["口紅"].ToPar();
     		X0Y9_口紅下_ハイライト = pars2["ハイライト"].ToPar();
-    		pars = Body[0][10];
-    		X0Y10_口 = pars["口"].ToPar();
-    		X0Y10_口紅上 = pars["口紅上"].ToPar();
-    		X0Y10_牙左 = pars["牙左"].ToPar();
-    		X0Y10_牙右 = pars["牙右"].ToPar();
-    		pars2 = pars["口紅下"].ToPars();
+    		partGroup = Body[0][10];
+    		X0Y10_口 = partGroup["口"].ToPar();
+    		X0Y10_口紅上 = partGroup["口紅上"].ToPar();
+    		X0Y10_牙左 = partGroup["牙左"].ToPar();
+    		X0Y10_牙右 = partGroup["牙右"].ToPar();
+    		pars2 = partGroup["口紅下"].ToPars();
     		X0Y10_口紅下_口紅 = pars2["口紅"].ToPar();
     		X0Y10_口紅下_ハイライト = pars2["ハイライト"].ToPar();
-    		pars = Body[0][11];
-    		X0Y11_口 = pars["口"].ToPar();
-    		X0Y11_口紅上 = pars["口紅上"].ToPar();
-    		X0Y11_牙左 = pars["牙左"].ToPar();
-    		X0Y11_牙右 = pars["牙右"].ToPar();
-    		pars2 = pars["口紅下"].ToPars();
+    		partGroup = Body[0][11];
+    		X0Y11_口 = partGroup["口"].ToPar();
+    		X0Y11_口紅上 = partGroup["口紅上"].ToPar();
+    		X0Y11_牙左 = partGroup["牙左"].ToPar();
+    		X0Y11_牙右 = partGroup["牙右"].ToPar();
+    		pars2 = partGroup["口紅下"].ToPars();
     		X0Y11_口紅下_口紅 = pars2["口紅"].ToPar();
     		X0Y11_口紅下_ハイライト = pars2["ハイライト"].ToPar();
-    		pars = Body[0][12];
-    		X0Y12_口 = pars["口"].ToPar();
-    		X0Y12_口紅上 = pars["口紅上"].ToPar();
-    		X0Y12_牙左 = pars["牙左"].ToPar();
-    		X0Y12_牙右 = pars["牙右"].ToPar();
-    		pars2 = pars["口紅下"].ToPars();
+    		partGroup = Body[0][12];
+    		X0Y12_口 = partGroup["口"].ToPar();
+    		X0Y12_口紅上 = partGroup["口紅上"].ToPar();
+    		X0Y12_牙左 = partGroup["牙左"].ToPar();
+    		X0Y12_牙右 = partGroup["牙右"].ToPar();
+    		pars2 = partGroup["口紅下"].ToPars();
     		X0Y12_口紅下_口紅 = pars2["口紅"].ToPar();
     		X0Y12_口紅下_ハイライト = pars2["ハイライト"].ToPar();
-    		pars = Body[0][13];
-    		X0Y13_口 = pars["口"].ToPar();
-    		X0Y13_頬左 = pars["頬左"].ToPar();
-    		X0Y13_頬右 = pars["頬右"].ToPar();
-    		X0Y13_口紅上 = pars["口紅上"].ToPar();
-    		X0Y13_牙左 = pars["牙左"].ToPar();
-    		X0Y13_牙右 = pars["牙右"].ToPar();
-    		pars2 = pars["口紅下"].ToPars();
+    		partGroup = Body[0][13];
+    		X0Y13_口 = partGroup["口"].ToPar();
+    		X0Y13_頬左 = partGroup["頬左"].ToPar();
+    		X0Y13_頬右 = partGroup["頬右"].ToPar();
+    		X0Y13_口紅上 = partGroup["口紅上"].ToPar();
+    		X0Y13_牙左 = partGroup["牙左"].ToPar();
+    		X0Y13_牙右 = partGroup["牙右"].ToPar();
+    		pars2 = partGroup["口紅下"].ToPars();
     		X0Y13_口紅下_口紅 = pars2["口紅"].ToPar();
     		X0Y13_口紅下_ハイライト = pars2["ハイライト"].ToPar();
     		Body.SetJoints();
@@ -1183,15 +1183,15 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		口CD = new ColorD(ref Col.Black, ref 体配色.粘膜);
-    		歯CD = new ColorD(ref Col.Black, ref 体配色.歯);
-    		頬左CD = new ColorD(ref Col.Empty, ref 体配色.肌濃);
-    		頬右CD = new ColorD(ref Col.Empty, ref 体配色.肌濃);
-    		口紅上CD = new ColorD(ref Col.Empty, ref 体配色.口紅);
-    		牙左CD = new ColorD(ref Col.Black, ref 体配色.歯);
-    		牙右CD = new ColorD(ref Col.Black, ref 体配色.歯);
-    		口紅下_口紅CD = new ColorD(ref Col.Empty, ref 体配色.口紅);
-    		口紅下_ハイライトCD = new ColorD(ref Col.Empty, ref 体配色.ハイライト);
+    		口CD = new ColorD(ref ColorHelper.Black, ref 体配色.粘膜);
+    		歯CD = new ColorD(ref ColorHelper.Black, ref 体配色.歯);
+    		頬左CD = new ColorD(ref ColorHelper.Empty, ref 体配色.肌濃);
+    		頬右CD = new ColorD(ref ColorHelper.Empty, ref 体配色.肌濃);
+    		口紅上CD = new ColorD(ref ColorHelper.Empty, ref 体配色.口紅);
+    		牙左CD = new ColorD(ref ColorHelper.Black, ref 体配色.歯);
+    		牙右CD = new ColorD(ref ColorHelper.Black, ref 体配色.歯);
+    		口紅下_口紅CD = new ColorD(ref ColorHelper.Empty, ref 体配色.口紅);
+    		口紅下_ハイライトCD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト);
     	}
     }
 }

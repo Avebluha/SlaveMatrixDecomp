@@ -5,685 +5,685 @@ namespace SlaveMatrix
 {
     public class 触手_軟 : 触手
     {
-    	public Par X0Y0_節1_節;
+    	public ShapePart X0Y0_節1_節;
 
-    	public Par X0Y0_節1_紋柄1;
+    	public ShapePart X0Y0_節1_紋柄1;
 
-    	public Par X0Y0_節1_紋柄2;
+    	public ShapePart X0Y0_節1_紋柄2;
 
-    	public Par X0Y0_節1_鎧;
+    	public ShapePart X0Y0_節1_鎧;
 
-    	public Par X0Y0_節1_吸盤1;
+    	public ShapePart X0Y0_節1_吸盤1;
 
-    	public Par X0Y0_節1_吸盤2;
+    	public ShapePart X0Y0_節1_吸盤2;
 
-    	public Par X0Y0_節1_吸盤3;
+    	public ShapePart X0Y0_節1_吸盤3;
 
-    	public Par X0Y0_節1_吸盤4;
+    	public ShapePart X0Y0_節1_吸盤4;
 
-    	public Par X0Y0_節2_節;
+    	public ShapePart X0Y0_節2_節;
 
-    	public Par X0Y0_節2_紋柄1;
+    	public ShapePart X0Y0_節2_紋柄1;
 
-    	public Par X0Y0_節2_紋柄2;
+    	public ShapePart X0Y0_節2_紋柄2;
 
-    	public Par X0Y0_節2_鎧;
+    	public ShapePart X0Y0_節2_鎧;
 
-    	public Par X0Y0_節2_吸盤1;
+    	public ShapePart X0Y0_節2_吸盤1;
 
-    	public Par X0Y0_節2_吸盤2;
+    	public ShapePart X0Y0_節2_吸盤2;
 
-    	public Par X0Y0_節2_吸盤3;
+    	public ShapePart X0Y0_節2_吸盤3;
 
-    	public Par X0Y0_節2_吸盤4;
+    	public ShapePart X0Y0_節2_吸盤4;
 
-    	public Par X0Y0_節3_節;
+    	public ShapePart X0Y0_節3_節;
 
-    	public Par X0Y0_節3_紋柄1;
+    	public ShapePart X0Y0_節3_紋柄1;
 
-    	public Par X0Y0_節3_紋柄2;
+    	public ShapePart X0Y0_節3_紋柄2;
 
-    	public Par X0Y0_節3_鎧;
+    	public ShapePart X0Y0_節3_鎧;
 
-    	public Par X0Y0_節3_吸盤1;
+    	public ShapePart X0Y0_節3_吸盤1;
 
-    	public Par X0Y0_節3_吸盤2;
+    	public ShapePart X0Y0_節3_吸盤2;
 
-    	public Par X0Y0_節3_吸盤3;
+    	public ShapePart X0Y0_節3_吸盤3;
 
-    	public Par X0Y0_節3_吸盤4;
+    	public ShapePart X0Y0_節3_吸盤4;
 
-    	public Par X0Y0_節4_節;
+    	public ShapePart X0Y0_節4_節;
 
-    	public Par X0Y0_節4_紋柄1;
+    	public ShapePart X0Y0_節4_紋柄1;
 
-    	public Par X0Y0_節4_紋柄2;
+    	public ShapePart X0Y0_節4_紋柄2;
 
-    	public Par X0Y0_節4_鎧;
+    	public ShapePart X0Y0_節4_鎧;
 
-    	public Par X0Y0_節4_吸盤1;
+    	public ShapePart X0Y0_節4_吸盤1;
 
-    	public Par X0Y0_節4_吸盤2;
+    	public ShapePart X0Y0_節4_吸盤2;
 
-    	public Par X0Y0_節4_吸盤3;
+    	public ShapePart X0Y0_節4_吸盤3;
 
-    	public Par X0Y0_節4_吸盤4;
+    	public ShapePart X0Y0_節4_吸盤4;
 
-    	public Par X0Y0_節5_節;
+    	public ShapePart X0Y0_節5_節;
 
-    	public Par X0Y0_節5_紋柄1;
+    	public ShapePart X0Y0_節5_紋柄1;
 
-    	public Par X0Y0_節5_紋柄2;
+    	public ShapePart X0Y0_節5_紋柄2;
 
-    	public Par X0Y0_節5_鎧;
+    	public ShapePart X0Y0_節5_鎧;
 
-    	public Par X0Y0_節5_吸盤1;
+    	public ShapePart X0Y0_節5_吸盤1;
 
-    	public Par X0Y0_節5_吸盤2;
+    	public ShapePart X0Y0_節5_吸盤2;
 
-    	public Par X0Y0_節5_吸盤3;
+    	public ShapePart X0Y0_節5_吸盤3;
 
-    	public Par X0Y0_節5_吸盤4;
+    	public ShapePart X0Y0_節5_吸盤4;
 
-    	public Par X0Y0_節6_節;
+    	public ShapePart X0Y0_節6_節;
 
-    	public Par X0Y0_節6_紋柄1;
+    	public ShapePart X0Y0_節6_紋柄1;
 
-    	public Par X0Y0_節6_紋柄2;
+    	public ShapePart X0Y0_節6_紋柄2;
 
-    	public Par X0Y0_節6_鎧;
+    	public ShapePart X0Y0_節6_鎧;
 
-    	public Par X0Y0_節6_吸盤1;
+    	public ShapePart X0Y0_節6_吸盤1;
 
-    	public Par X0Y0_節6_吸盤2;
+    	public ShapePart X0Y0_節6_吸盤2;
 
-    	public Par X0Y0_節6_吸盤3;
+    	public ShapePart X0Y0_節6_吸盤3;
 
-    	public Par X0Y0_節6_吸盤4;
+    	public ShapePart X0Y0_節6_吸盤4;
 
-    	public Par X0Y0_節7_節;
+    	public ShapePart X0Y0_節7_節;
 
-    	public Par X0Y0_節7_紋柄1;
+    	public ShapePart X0Y0_節7_紋柄1;
 
-    	public Par X0Y0_節7_紋柄2;
+    	public ShapePart X0Y0_節7_紋柄2;
 
-    	public Par X0Y0_節7_鎧;
+    	public ShapePart X0Y0_節7_鎧;
 
-    	public Par X0Y0_節7_吸盤1;
+    	public ShapePart X0Y0_節7_吸盤1;
 
-    	public Par X0Y0_節7_吸盤2;
+    	public ShapePart X0Y0_節7_吸盤2;
 
-    	public Par X0Y0_節7_吸盤3;
+    	public ShapePart X0Y0_節7_吸盤3;
 
-    	public Par X0Y0_節7_吸盤4;
+    	public ShapePart X0Y0_節7_吸盤4;
 
-    	public Par X0Y0_節8_節;
+    	public ShapePart X0Y0_節8_節;
 
-    	public Par X0Y0_節8_紋柄1;
+    	public ShapePart X0Y0_節8_紋柄1;
 
-    	public Par X0Y0_節8_紋柄2;
+    	public ShapePart X0Y0_節8_紋柄2;
 
-    	public Par X0Y0_節8_鎧;
+    	public ShapePart X0Y0_節8_鎧;
 
-    	public Par X0Y0_節8_吸盤1;
+    	public ShapePart X0Y0_節8_吸盤1;
 
-    	public Par X0Y0_節8_吸盤2;
+    	public ShapePart X0Y0_節8_吸盤2;
 
-    	public Par X0Y0_節8_吸盤3;
+    	public ShapePart X0Y0_節8_吸盤3;
 
-    	public Par X0Y0_節8_吸盤4;
+    	public ShapePart X0Y0_節8_吸盤4;
 
-    	public Par X0Y0_輪1_革;
+    	public ShapePart X0Y0_輪1_革;
 
-    	public Par X0Y0_輪1_金具1;
+    	public ShapePart X0Y0_輪1_金具1;
 
-    	public Par X0Y0_輪1_金具2;
+    	public ShapePart X0Y0_輪1_金具2;
 
-    	public Par X0Y0_輪1_金具3;
+    	public ShapePart X0Y0_輪1_金具3;
 
-    	public Par X0Y0_輪1_金具左;
+    	public ShapePart X0Y0_輪1_金具左;
 
-    	public Par X0Y0_輪1_金具右;
+    	public ShapePart X0Y0_輪1_金具右;
 
-    	public Par X0Y0_節9_節;
+    	public ShapePart X0Y0_節9_節;
 
-    	public Par X0Y0_節9_紋柄1;
+    	public ShapePart X0Y0_節9_紋柄1;
 
-    	public Par X0Y0_節9_紋柄2;
+    	public ShapePart X0Y0_節9_紋柄2;
 
-    	public Par X0Y0_節9_鎧;
+    	public ShapePart X0Y0_節9_鎧;
 
-    	public Par X0Y0_節9_吸盤1;
+    	public ShapePart X0Y0_節9_吸盤1;
 
-    	public Par X0Y0_節9_吸盤2;
+    	public ShapePart X0Y0_節9_吸盤2;
 
-    	public Par X0Y0_節9_吸盤3;
+    	public ShapePart X0Y0_節9_吸盤3;
 
-    	public Par X0Y0_節9_吸盤4;
+    	public ShapePart X0Y0_節9_吸盤4;
 
-    	public Par X0Y0_節10_節;
+    	public ShapePart X0Y0_節10_節;
 
-    	public Par X0Y0_節10_紋柄1;
+    	public ShapePart X0Y0_節10_紋柄1;
 
-    	public Par X0Y0_節10_紋柄2;
+    	public ShapePart X0Y0_節10_紋柄2;
 
-    	public Par X0Y0_節10_鎧;
+    	public ShapePart X0Y0_節10_鎧;
 
-    	public Par X0Y0_節10_吸盤1;
+    	public ShapePart X0Y0_節10_吸盤1;
 
-    	public Par X0Y0_節10_吸盤2;
+    	public ShapePart X0Y0_節10_吸盤2;
 
-    	public Par X0Y0_節10_吸盤3;
+    	public ShapePart X0Y0_節10_吸盤3;
 
-    	public Par X0Y0_節10_吸盤4;
+    	public ShapePart X0Y0_節10_吸盤4;
 
-    	public Par X0Y0_節11_節;
+    	public ShapePart X0Y0_節11_節;
 
-    	public Par X0Y0_節11_紋柄1;
+    	public ShapePart X0Y0_節11_紋柄1;
 
-    	public Par X0Y0_節11_紋柄2;
+    	public ShapePart X0Y0_節11_紋柄2;
 
-    	public Par X0Y0_節11_鎧;
+    	public ShapePart X0Y0_節11_鎧;
 
-    	public Par X0Y0_節11_吸盤1;
+    	public ShapePart X0Y0_節11_吸盤1;
 
-    	public Par X0Y0_節11_吸盤2;
+    	public ShapePart X0Y0_節11_吸盤2;
 
-    	public Par X0Y0_節11_吸盤3;
+    	public ShapePart X0Y0_節11_吸盤3;
 
-    	public Par X0Y0_節11_吸盤4;
+    	public ShapePart X0Y0_節11_吸盤4;
 
-    	public Par X0Y0_節12_節;
+    	public ShapePart X0Y0_節12_節;
 
-    	public Par X0Y0_節12_紋柄1;
+    	public ShapePart X0Y0_節12_紋柄1;
 
-    	public Par X0Y0_節12_紋柄2;
+    	public ShapePart X0Y0_節12_紋柄2;
 
-    	public Par X0Y0_節12_鎧;
+    	public ShapePart X0Y0_節12_鎧;
 
-    	public Par X0Y0_節12_吸盤1;
+    	public ShapePart X0Y0_節12_吸盤1;
 
-    	public Par X0Y0_節12_吸盤2;
+    	public ShapePart X0Y0_節12_吸盤2;
 
-    	public Par X0Y0_節12_吸盤3;
+    	public ShapePart X0Y0_節12_吸盤3;
 
-    	public Par X0Y0_節12_吸盤4;
+    	public ShapePart X0Y0_節12_吸盤4;
 
-    	public Par X0Y0_節13_節;
+    	public ShapePart X0Y0_節13_節;
 
-    	public Par X0Y0_節13_紋柄1;
+    	public ShapePart X0Y0_節13_紋柄1;
 
-    	public Par X0Y0_節13_紋柄2;
+    	public ShapePart X0Y0_節13_紋柄2;
 
-    	public Par X0Y0_節13_鎧;
+    	public ShapePart X0Y0_節13_鎧;
 
-    	public Par X0Y0_節13_吸盤1;
+    	public ShapePart X0Y0_節13_吸盤1;
 
-    	public Par X0Y0_節13_吸盤2;
+    	public ShapePart X0Y0_節13_吸盤2;
 
-    	public Par X0Y0_節13_吸盤3;
+    	public ShapePart X0Y0_節13_吸盤3;
 
-    	public Par X0Y0_節13_吸盤4;
+    	public ShapePart X0Y0_節13_吸盤4;
 
-    	public Par X0Y0_節14_節;
+    	public ShapePart X0Y0_節14_節;
 
-    	public Par X0Y0_節14_紋柄1;
+    	public ShapePart X0Y0_節14_紋柄1;
 
-    	public Par X0Y0_節14_紋柄2;
+    	public ShapePart X0Y0_節14_紋柄2;
 
-    	public Par X0Y0_節14_鎧;
+    	public ShapePart X0Y0_節14_鎧;
 
-    	public Par X0Y0_節14_吸盤1;
+    	public ShapePart X0Y0_節14_吸盤1;
 
-    	public Par X0Y0_節14_吸盤2;
+    	public ShapePart X0Y0_節14_吸盤2;
 
-    	public Par X0Y0_節14_吸盤3;
+    	public ShapePart X0Y0_節14_吸盤3;
 
-    	public Par X0Y0_節14_吸盤4;
+    	public ShapePart X0Y0_節14_吸盤4;
 
-    	public Par X0Y0_節15_節;
+    	public ShapePart X0Y0_節15_節;
 
-    	public Par X0Y0_節15_紋柄1;
+    	public ShapePart X0Y0_節15_紋柄1;
 
-    	public Par X0Y0_節15_紋柄2;
+    	public ShapePart X0Y0_節15_紋柄2;
 
-    	public Par X0Y0_節15_鎧;
+    	public ShapePart X0Y0_節15_鎧;
 
-    	public Par X0Y0_節15_吸盤1;
+    	public ShapePart X0Y0_節15_吸盤1;
 
-    	public Par X0Y0_節15_吸盤2;
+    	public ShapePart X0Y0_節15_吸盤2;
 
-    	public Par X0Y0_節15_吸盤3;
+    	public ShapePart X0Y0_節15_吸盤3;
 
-    	public Par X0Y0_節15_吸盤4;
+    	public ShapePart X0Y0_節15_吸盤4;
 
-    	public Par X0Y0_節16_節;
+    	public ShapePart X0Y0_節16_節;
 
-    	public Par X0Y0_節16_紋柄1;
+    	public ShapePart X0Y0_節16_紋柄1;
 
-    	public Par X0Y0_節16_紋柄2;
+    	public ShapePart X0Y0_節16_紋柄2;
 
-    	public Par X0Y0_節16_鎧;
+    	public ShapePart X0Y0_節16_鎧;
 
-    	public Par X0Y0_節16_吸盤1;
+    	public ShapePart X0Y0_節16_吸盤1;
 
-    	public Par X0Y0_節16_吸盤2;
+    	public ShapePart X0Y0_節16_吸盤2;
 
-    	public Par X0Y0_節16_吸盤3;
+    	public ShapePart X0Y0_節16_吸盤3;
 
-    	public Par X0Y0_節16_吸盤4;
+    	public ShapePart X0Y0_節16_吸盤4;
 
-    	public Par X0Y0_節17_節;
+    	public ShapePart X0Y0_節17_節;
 
-    	public Par X0Y0_節17_紋柄1;
+    	public ShapePart X0Y0_節17_紋柄1;
 
-    	public Par X0Y0_節17_紋柄2;
+    	public ShapePart X0Y0_節17_紋柄2;
 
-    	public Par X0Y0_節17_鎧;
+    	public ShapePart X0Y0_節17_鎧;
 
-    	public Par X0Y0_節17_吸盤1;
+    	public ShapePart X0Y0_節17_吸盤1;
 
-    	public Par X0Y0_節17_吸盤2;
+    	public ShapePart X0Y0_節17_吸盤2;
 
-    	public Par X0Y0_節17_吸盤3;
+    	public ShapePart X0Y0_節17_吸盤3;
 
-    	public Par X0Y0_節17_吸盤4;
+    	public ShapePart X0Y0_節17_吸盤4;
 
-    	public Par X0Y0_節18_節;
+    	public ShapePart X0Y0_節18_節;
 
-    	public Par X0Y0_節18_紋柄1;
+    	public ShapePart X0Y0_節18_紋柄1;
 
-    	public Par X0Y0_節18_紋柄2;
+    	public ShapePart X0Y0_節18_紋柄2;
 
-    	public Par X0Y0_節18_鎧;
+    	public ShapePart X0Y0_節18_鎧;
 
-    	public Par X0Y0_節18_吸盤1;
+    	public ShapePart X0Y0_節18_吸盤1;
 
-    	public Par X0Y0_節18_吸盤2;
+    	public ShapePart X0Y0_節18_吸盤2;
 
-    	public Par X0Y0_節18_吸盤3;
+    	public ShapePart X0Y0_節18_吸盤3;
 
-    	public Par X0Y0_節18_吸盤4;
+    	public ShapePart X0Y0_節18_吸盤4;
 
-    	public Par X0Y0_節19_節;
+    	public ShapePart X0Y0_節19_節;
 
-    	public Par X0Y0_節19_紋柄1;
+    	public ShapePart X0Y0_節19_紋柄1;
 
-    	public Par X0Y0_節19_紋柄2;
+    	public ShapePart X0Y0_節19_紋柄2;
 
-    	public Par X0Y0_節19_鎧;
+    	public ShapePart X0Y0_節19_鎧;
 
-    	public Par X0Y0_節19_吸盤1;
+    	public ShapePart X0Y0_節19_吸盤1;
 
-    	public Par X0Y0_節19_吸盤2;
+    	public ShapePart X0Y0_節19_吸盤2;
 
-    	public Par X0Y0_節19_吸盤3;
+    	public ShapePart X0Y0_節19_吸盤3;
 
-    	public Par X0Y0_節19_吸盤4;
+    	public ShapePart X0Y0_節19_吸盤4;
 
-    	public Par X0Y0_輪2_革;
+    	public ShapePart X0Y0_輪2_革;
 
-    	public Par X0Y0_輪2_金具1;
+    	public ShapePart X0Y0_輪2_金具1;
 
-    	public Par X0Y0_輪2_金具2;
+    	public ShapePart X0Y0_輪2_金具2;
 
-    	public Par X0Y0_輪2_金具3;
+    	public ShapePart X0Y0_輪2_金具3;
 
-    	public Par X0Y0_輪2_金具左;
+    	public ShapePart X0Y0_輪2_金具左;
 
-    	public Par X0Y0_輪2_金具右;
+    	public ShapePart X0Y0_輪2_金具右;
 
-    	public Par X0Y0_節20_節;
+    	public ShapePart X0Y0_節20_節;
 
-    	public Par X0Y0_節20_紋柄1;
+    	public ShapePart X0Y0_節20_紋柄1;
 
-    	public Par X0Y0_節20_紋柄2;
+    	public ShapePart X0Y0_節20_紋柄2;
 
-    	public Par X0Y0_節20_鎧;
+    	public ShapePart X0Y0_節20_鎧;
 
-    	public Par X0Y0_節20_吸盤1;
+    	public ShapePart X0Y0_節20_吸盤1;
 
-    	public Par X0Y0_節20_吸盤2;
+    	public ShapePart X0Y0_節20_吸盤2;
 
-    	public Par X0Y0_節20_吸盤3;
+    	public ShapePart X0Y0_節20_吸盤3;
 
-    	public Par X0Y0_節20_吸盤4;
+    	public ShapePart X0Y0_節20_吸盤4;
 
-    	public Par X0Y0_節21_節;
+    	public ShapePart X0Y0_節21_節;
 
-    	public Par X0Y0_節21_紋柄1;
+    	public ShapePart X0Y0_節21_紋柄1;
 
-    	public Par X0Y0_節21_紋柄2;
+    	public ShapePart X0Y0_節21_紋柄2;
 
-    	public Par X0Y0_節21_鎧;
+    	public ShapePart X0Y0_節21_鎧;
 
-    	public Par X0Y0_節21_吸盤1;
+    	public ShapePart X0Y0_節21_吸盤1;
 
-    	public Par X0Y0_節21_吸盤2;
+    	public ShapePart X0Y0_節21_吸盤2;
 
-    	public Par X0Y0_節21_吸盤3;
+    	public ShapePart X0Y0_節21_吸盤3;
 
-    	public Par X0Y0_節21_吸盤4;
+    	public ShapePart X0Y0_節21_吸盤4;
 
-    	public Par X0Y0_節22_節;
+    	public ShapePart X0Y0_節22_節;
 
-    	public Par X0Y0_節22_紋柄1;
+    	public ShapePart X0Y0_節22_紋柄1;
 
-    	public Par X0Y0_節22_紋柄2;
+    	public ShapePart X0Y0_節22_紋柄2;
 
-    	public Par X0Y0_節22_鎧;
+    	public ShapePart X0Y0_節22_鎧;
 
-    	public Par X0Y0_節22_吸盤1;
+    	public ShapePart X0Y0_節22_吸盤1;
 
-    	public Par X0Y0_節22_吸盤2;
+    	public ShapePart X0Y0_節22_吸盤2;
 
-    	public Par X0Y0_節22_吸盤3;
+    	public ShapePart X0Y0_節22_吸盤3;
 
-    	public Par X0Y0_節22_吸盤4;
+    	public ShapePart X0Y0_節22_吸盤4;
 
-    	public Par X0Y0_節23_節;
+    	public ShapePart X0Y0_節23_節;
 
-    	public Par X0Y0_節23_紋柄1;
+    	public ShapePart X0Y0_節23_紋柄1;
 
-    	public Par X0Y0_節23_紋柄2;
+    	public ShapePart X0Y0_節23_紋柄2;
 
-    	public Par X0Y0_節23_鎧;
+    	public ShapePart X0Y0_節23_鎧;
 
-    	public Par X0Y0_節23_吸盤1;
+    	public ShapePart X0Y0_節23_吸盤1;
 
-    	public Par X0Y0_節23_吸盤2;
+    	public ShapePart X0Y0_節23_吸盤2;
 
-    	public Par X0Y0_節23_吸盤3;
+    	public ShapePart X0Y0_節23_吸盤3;
 
-    	public Par X0Y0_節23_吸盤4;
+    	public ShapePart X0Y0_節23_吸盤4;
 
-    	public Par X0Y0_節24_節;
+    	public ShapePart X0Y0_節24_節;
 
-    	public Par X0Y0_節24_紋柄1;
+    	public ShapePart X0Y0_節24_紋柄1;
 
-    	public Par X0Y0_節24_紋柄2;
+    	public ShapePart X0Y0_節24_紋柄2;
 
-    	public Par X0Y0_節24_鎧;
+    	public ShapePart X0Y0_節24_鎧;
 
-    	public Par X0Y0_節24_吸盤1;
+    	public ShapePart X0Y0_節24_吸盤1;
 
-    	public Par X0Y0_節24_吸盤2;
+    	public ShapePart X0Y0_節24_吸盤2;
 
-    	public Par X0Y0_節24_吸盤3;
+    	public ShapePart X0Y0_節24_吸盤3;
 
-    	public Par X0Y0_節24_吸盤4;
+    	public ShapePart X0Y0_節24_吸盤4;
 
-    	public Par X0Y0_節25_節;
+    	public ShapePart X0Y0_節25_節;
 
-    	public Par X0Y0_節25_紋柄1;
+    	public ShapePart X0Y0_節25_紋柄1;
 
-    	public Par X0Y0_節25_紋柄2;
+    	public ShapePart X0Y0_節25_紋柄2;
 
-    	public Par X0Y0_節25_鎧;
+    	public ShapePart X0Y0_節25_鎧;
 
-    	public Par X0Y0_節25_吸盤1;
+    	public ShapePart X0Y0_節25_吸盤1;
 
-    	public Par X0Y0_節25_吸盤2;
+    	public ShapePart X0Y0_節25_吸盤2;
 
-    	public Par X0Y0_節25_吸盤3;
+    	public ShapePart X0Y0_節25_吸盤3;
 
-    	public Par X0Y0_節25_吸盤4;
+    	public ShapePart X0Y0_節25_吸盤4;
 
-    	public Par X0Y0_節26_節;
+    	public ShapePart X0Y0_節26_節;
 
-    	public Par X0Y0_節26_紋柄1;
+    	public ShapePart X0Y0_節26_紋柄1;
 
-    	public Par X0Y0_節26_紋柄2;
+    	public ShapePart X0Y0_節26_紋柄2;
 
-    	public Par X0Y0_節26_鎧;
+    	public ShapePart X0Y0_節26_鎧;
 
-    	public Par X0Y0_節26_吸盤1;
+    	public ShapePart X0Y0_節26_吸盤1;
 
-    	public Par X0Y0_節26_吸盤2;
+    	public ShapePart X0Y0_節26_吸盤2;
 
-    	public Par X0Y0_節26_吸盤3;
+    	public ShapePart X0Y0_節26_吸盤3;
 
-    	public Par X0Y0_節26_吸盤4;
+    	public ShapePart X0Y0_節26_吸盤4;
 
-    	public Par X0Y0_節27_節;
+    	public ShapePart X0Y0_節27_節;
 
-    	public Par X0Y0_節27_紋柄1;
+    	public ShapePart X0Y0_節27_紋柄1;
 
-    	public Par X0Y0_節27_紋柄2;
+    	public ShapePart X0Y0_節27_紋柄2;
 
-    	public Par X0Y0_節27_鎧;
+    	public ShapePart X0Y0_節27_鎧;
 
-    	public Par X0Y0_節27_吸盤1;
+    	public ShapePart X0Y0_節27_吸盤1;
 
-    	public Par X0Y0_節27_吸盤2;
+    	public ShapePart X0Y0_節27_吸盤2;
 
-    	public Par X0Y0_節27_吸盤3;
+    	public ShapePart X0Y0_節27_吸盤3;
 
-    	public Par X0Y0_節27_吸盤4;
+    	public ShapePart X0Y0_節27_吸盤4;
 
-    	public Par X0Y0_節28_節;
+    	public ShapePart X0Y0_節28_節;
 
-    	public Par X0Y0_節28_紋柄1;
+    	public ShapePart X0Y0_節28_紋柄1;
 
-    	public Par X0Y0_節28_紋柄2;
+    	public ShapePart X0Y0_節28_紋柄2;
 
-    	public Par X0Y0_節28_鎧;
+    	public ShapePart X0Y0_節28_鎧;
 
-    	public Par X0Y0_節28_吸盤1;
+    	public ShapePart X0Y0_節28_吸盤1;
 
-    	public Par X0Y0_節28_吸盤2;
+    	public ShapePart X0Y0_節28_吸盤2;
 
-    	public Par X0Y0_節28_吸盤3;
+    	public ShapePart X0Y0_節28_吸盤3;
 
-    	public Par X0Y0_節28_吸盤4;
+    	public ShapePart X0Y0_節28_吸盤4;
 
-    	public Par X0Y0_節29_節;
+    	public ShapePart X0Y0_節29_節;
 
-    	public Par X0Y0_節29_紋柄1;
+    	public ShapePart X0Y0_節29_紋柄1;
 
-    	public Par X0Y0_節29_紋柄2;
+    	public ShapePart X0Y0_節29_紋柄2;
 
-    	public Par X0Y0_節29_鎧;
+    	public ShapePart X0Y0_節29_鎧;
 
-    	public Par X0Y0_節29_吸盤1;
+    	public ShapePart X0Y0_節29_吸盤1;
 
-    	public Par X0Y0_節29_吸盤2;
+    	public ShapePart X0Y0_節29_吸盤2;
 
-    	public Par X0Y0_節29_吸盤3;
+    	public ShapePart X0Y0_節29_吸盤3;
 
-    	public Par X0Y0_節29_吸盤4;
+    	public ShapePart X0Y0_節29_吸盤4;
 
-    	public Par X0Y0_節30_節;
+    	public ShapePart X0Y0_節30_節;
 
-    	public Par X0Y0_節30_紋柄1;
+    	public ShapePart X0Y0_節30_紋柄1;
 
-    	public Par X0Y0_節30_紋柄2;
+    	public ShapePart X0Y0_節30_紋柄2;
 
-    	public Par X0Y0_節30_鎧;
+    	public ShapePart X0Y0_節30_鎧;
 
-    	public Par X0Y0_節30_吸盤1;
+    	public ShapePart X0Y0_節30_吸盤1;
 
-    	public Par X0Y0_節30_吸盤2;
+    	public ShapePart X0Y0_節30_吸盤2;
 
-    	public Par X0Y0_節30_吸盤3;
+    	public ShapePart X0Y0_節30_吸盤3;
 
-    	public Par X0Y0_節30_吸盤4;
+    	public ShapePart X0Y0_節30_吸盤4;
 
-    	public Par X0Y0_節31_節;
+    	public ShapePart X0Y0_節31_節;
 
-    	public Par X0Y0_節31_紋柄1;
+    	public ShapePart X0Y0_節31_紋柄1;
 
-    	public Par X0Y0_節31_紋柄2;
+    	public ShapePart X0Y0_節31_紋柄2;
 
-    	public Par X0Y0_節31_鎧;
+    	public ShapePart X0Y0_節31_鎧;
 
-    	public Par X0Y0_節31_吸盤1;
+    	public ShapePart X0Y0_節31_吸盤1;
 
-    	public Par X0Y0_節31_吸盤2;
+    	public ShapePart X0Y0_節31_吸盤2;
 
-    	public Par X0Y0_節31_吸盤3;
+    	public ShapePart X0Y0_節31_吸盤3;
 
-    	public Par X0Y0_節31_吸盤4;
+    	public ShapePart X0Y0_節31_吸盤4;
 
-    	public Par X0Y0_節32_節;
+    	public ShapePart X0Y0_節32_節;
 
-    	public Par X0Y0_節32_紋柄1;
+    	public ShapePart X0Y0_節32_紋柄1;
 
-    	public Par X0Y0_節32_紋柄2;
+    	public ShapePart X0Y0_節32_紋柄2;
 
-    	public Par X0Y0_節32_鎧;
+    	public ShapePart X0Y0_節32_鎧;
 
-    	public Par X0Y0_節32_吸盤1;
+    	public ShapePart X0Y0_節32_吸盤1;
 
-    	public Par X0Y0_節32_吸盤2;
+    	public ShapePart X0Y0_節32_吸盤2;
 
-    	public Par X0Y0_節32_吸盤3;
+    	public ShapePart X0Y0_節32_吸盤3;
 
-    	public Par X0Y0_節32_吸盤4;
+    	public ShapePart X0Y0_節32_吸盤4;
 
-    	public Par X0Y0_節33_節;
+    	public ShapePart X0Y0_節33_節;
 
-    	public Par X0Y0_節33_紋柄1;
+    	public ShapePart X0Y0_節33_紋柄1;
 
-    	public Par X0Y0_節33_紋柄2;
+    	public ShapePart X0Y0_節33_紋柄2;
 
-    	public Par X0Y0_節33_鎧;
+    	public ShapePart X0Y0_節33_鎧;
 
-    	public Par X0Y0_節33_吸盤1;
+    	public ShapePart X0Y0_節33_吸盤1;
 
-    	public Par X0Y0_節33_吸盤2;
+    	public ShapePart X0Y0_節33_吸盤2;
 
-    	public Par X0Y0_節33_吸盤3;
+    	public ShapePart X0Y0_節33_吸盤3;
 
-    	public Par X0Y0_節33_吸盤4;
+    	public ShapePart X0Y0_節33_吸盤4;
 
-    	public Par X0Y0_節34_節;
+    	public ShapePart X0Y0_節34_節;
 
-    	public Par X0Y0_節34_紋柄1;
+    	public ShapePart X0Y0_節34_紋柄1;
 
-    	public Par X0Y0_節34_紋柄2;
+    	public ShapePart X0Y0_節34_紋柄2;
 
-    	public Par X0Y0_節34_鎧;
+    	public ShapePart X0Y0_節34_鎧;
 
-    	public Par X0Y0_節34_吸盤1;
+    	public ShapePart X0Y0_節34_吸盤1;
 
-    	public Par X0Y0_節34_吸盤2;
+    	public ShapePart X0Y0_節34_吸盤2;
 
-    	public Par X0Y0_節34_吸盤3;
+    	public ShapePart X0Y0_節34_吸盤3;
 
-    	public Par X0Y0_節34_吸盤4;
+    	public ShapePart X0Y0_節34_吸盤4;
 
-    	public Par X0Y0_節35_節;
+    	public ShapePart X0Y0_節35_節;
 
-    	public Par X0Y0_節35_紋柄1;
+    	public ShapePart X0Y0_節35_紋柄1;
 
-    	public Par X0Y0_節35_紋柄2;
+    	public ShapePart X0Y0_節35_紋柄2;
 
-    	public Par X0Y0_節35_鎧;
+    	public ShapePart X0Y0_節35_鎧;
 
-    	public Par X0Y0_節35_吸盤1;
+    	public ShapePart X0Y0_節35_吸盤1;
 
-    	public Par X0Y0_節35_吸盤2;
+    	public ShapePart X0Y0_節35_吸盤2;
 
-    	public Par X0Y0_節35_吸盤3;
+    	public ShapePart X0Y0_節35_吸盤3;
 
-    	public Par X0Y0_節35_吸盤4;
+    	public ShapePart X0Y0_節35_吸盤4;
 
-    	public Par X0Y0_節36_節;
+    	public ShapePart X0Y0_節36_節;
 
-    	public Par X0Y0_節36_紋柄1;
+    	public ShapePart X0Y0_節36_紋柄1;
 
-    	public Par X0Y0_節36_紋柄2;
+    	public ShapePart X0Y0_節36_紋柄2;
 
-    	public Par X0Y0_節36_鎧;
+    	public ShapePart X0Y0_節36_鎧;
 
-    	public Par X0Y0_節36_吸盤1;
+    	public ShapePart X0Y0_節36_吸盤1;
 
-    	public Par X0Y0_節36_吸盤2;
+    	public ShapePart X0Y0_節36_吸盤2;
 
-    	public Par X0Y0_節36_吸盤3;
+    	public ShapePart X0Y0_節36_吸盤3;
 
-    	public Par X0Y0_節36_吸盤4;
+    	public ShapePart X0Y0_節36_吸盤4;
 
-    	public Par X0Y0_節37_節;
+    	public ShapePart X0Y0_節37_節;
 
-    	public Par X0Y0_節37_紋柄1;
+    	public ShapePart X0Y0_節37_紋柄1;
 
-    	public Par X0Y0_節37_紋柄2;
+    	public ShapePart X0Y0_節37_紋柄2;
 
-    	public Par X0Y0_節37_鎧;
+    	public ShapePart X0Y0_節37_鎧;
 
-    	public Par X0Y0_節37_吸盤1;
+    	public ShapePart X0Y0_節37_吸盤1;
 
-    	public Par X0Y0_節37_吸盤2;
+    	public ShapePart X0Y0_節37_吸盤2;
 
-    	public Par X0Y0_節37_吸盤3;
+    	public ShapePart X0Y0_節37_吸盤3;
 
-    	public Par X0Y0_節37_吸盤4;
+    	public ShapePart X0Y0_節37_吸盤4;
 
-    	public Par X0Y0_節38_節;
+    	public ShapePart X0Y0_節38_節;
 
-    	public Par X0Y0_節38_紋柄1;
+    	public ShapePart X0Y0_節38_紋柄1;
 
-    	public Par X0Y0_節38_紋柄2;
+    	public ShapePart X0Y0_節38_紋柄2;
 
-    	public Par X0Y0_節38_鎧;
+    	public ShapePart X0Y0_節38_鎧;
 
-    	public Par X0Y0_節38_吸盤1;
+    	public ShapePart X0Y0_節38_吸盤1;
 
-    	public Par X0Y0_節38_吸盤2;
+    	public ShapePart X0Y0_節38_吸盤2;
 
-    	public Par X0Y0_節38_吸盤3;
+    	public ShapePart X0Y0_節38_吸盤3;
 
-    	public Par X0Y0_節38_吸盤4;
+    	public ShapePart X0Y0_節38_吸盤4;
 
-    	public Par X0Y0_節39_節;
+    	public ShapePart X0Y0_節39_節;
 
-    	public Par X0Y0_節39_紋柄1;
+    	public ShapePart X0Y0_節39_紋柄1;
 
-    	public Par X0Y0_節39_紋柄2;
+    	public ShapePart X0Y0_節39_紋柄2;
 
-    	public Par X0Y0_節39_鎧;
+    	public ShapePart X0Y0_節39_鎧;
 
-    	public Par X0Y0_節39_吸盤1;
+    	public ShapePart X0Y0_節39_吸盤1;
 
-    	public Par X0Y0_節39_吸盤2;
+    	public ShapePart X0Y0_節39_吸盤2;
 
-    	public Par X0Y0_節39_吸盤3;
+    	public ShapePart X0Y0_節39_吸盤3;
 
-    	public Par X0Y0_節39_吸盤4;
+    	public ShapePart X0Y0_節39_吸盤4;
 
-    	public Par X0Y0_節40_節;
+    	public ShapePart X0Y0_節40_節;
 
-    	public Par X0Y0_節40_紋柄1;
+    	public ShapePart X0Y0_節40_紋柄1;
 
-    	public Par X0Y0_節40_紋柄2;
+    	public ShapePart X0Y0_節40_紋柄2;
 
-    	public Par X0Y0_節40_鎧;
+    	public ShapePart X0Y0_節40_鎧;
 
-    	public Par X0Y0_節40_吸盤1;
+    	public ShapePart X0Y0_節40_吸盤1;
 
-    	public Par X0Y0_節40_吸盤2;
+    	public ShapePart X0Y0_節40_吸盤2;
 
-    	public Par X0Y0_節40_吸盤3;
+    	public ShapePart X0Y0_節40_吸盤3;
 
-    	public Par X0Y0_節40_吸盤4;
+    	public ShapePart X0Y0_節40_吸盤4;
 
-    	public Par X0Y0_節41_節;
+    	public ShapePart X0Y0_節41_節;
 
-    	public Par X0Y0_節41_紋柄1;
+    	public ShapePart X0Y0_節41_紋柄1;
 
-    	public Par X0Y0_節41_紋柄2;
+    	public ShapePart X0Y0_節41_紋柄2;
 
-    	public Par X0Y0_節41_鎧;
+    	public ShapePart X0Y0_節41_鎧;
 
-    	public Par X0Y0_節41_吸盤1;
+    	public ShapePart X0Y0_節41_吸盤1;
 
-    	public Par X0Y0_節41_吸盤2;
+    	public ShapePart X0Y0_節41_吸盤2;
 
-    	public Par X0Y0_節41_吸盤3;
+    	public ShapePart X0Y0_節41_吸盤3;
 
-    	public Par X0Y0_節41_吸盤4;
+    	public ShapePart X0Y0_節41_吸盤4;
 
     	public ColorD 節1_節CD;
 
@@ -2053,7 +2053,7 @@ namespace SlaveMatrix
 
     	public 拘束鎖 鎖4;
 
-    	public Par[] Pars;
+    	public ShapePart[] Pars;
 
     	private Vector2D[] mm;
 
@@ -7281,14 +7281,14 @@ namespace SlaveMatrix
     	public 触手_軟(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 触手_軟D e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif();
-    		dif.Tag = "軟体";
-    		dif.Add(new Pars(Sta.肢左["触手"][0][0]));
-    		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		Pars pars2 = pars["節1"].ToPars();
+    		MorphVariant morphVariant = new MorphVariant();
+    		morphVariant.Tag = "軟体";
+    		morphVariant.Add(new PartGroup(GlobalState.肢左["触手"][0][0]));
+    		Body = new VariantGrid();
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
+    		PartGroup partGroup = Body[0][0];
+    		PartGroup pars2 = partGroup["節1"].ToPars();
     		X0Y0_節1_節 = pars2["節"].ToPar();
     		X0Y0_節1_紋柄1 = pars2["柄1"].ToPar();
     		X0Y0_節1_紋柄2 = pars2["柄2"].ToPar();
@@ -7297,7 +7297,7 @@ namespace SlaveMatrix
     		X0Y0_節1_吸盤2 = pars2["吸盤2"].ToPar();
     		X0Y0_節1_吸盤3 = pars2["吸盤3"].ToPar();
     		X0Y0_節1_吸盤4 = pars2["吸盤4"].ToPar();
-    		pars2 = pars["節2"].ToPars();
+    		pars2 = partGroup["節2"].ToPars();
     		X0Y0_節2_節 = pars2["節"].ToPar();
     		X0Y0_節2_紋柄1 = pars2["柄1"].ToPar();
     		X0Y0_節2_紋柄2 = pars2["柄2"].ToPar();
@@ -7306,7 +7306,7 @@ namespace SlaveMatrix
     		X0Y0_節2_吸盤2 = pars2["吸盤2"].ToPar();
     		X0Y0_節2_吸盤3 = pars2["吸盤3"].ToPar();
     		X0Y0_節2_吸盤4 = pars2["吸盤4"].ToPar();
-    		pars2 = pars["節3"].ToPars();
+    		pars2 = partGroup["節3"].ToPars();
     		X0Y0_節3_節 = pars2["節"].ToPar();
     		X0Y0_節3_紋柄1 = pars2["柄1"].ToPar();
     		X0Y0_節3_紋柄2 = pars2["柄2"].ToPar();
@@ -7315,7 +7315,7 @@ namespace SlaveMatrix
     		X0Y0_節3_吸盤2 = pars2["吸盤2"].ToPar();
     		X0Y0_節3_吸盤3 = pars2["吸盤3"].ToPar();
     		X0Y0_節3_吸盤4 = pars2["吸盤4"].ToPar();
-    		pars2 = pars["節4"].ToPars();
+    		pars2 = partGroup["節4"].ToPars();
     		X0Y0_節4_節 = pars2["節"].ToPar();
     		X0Y0_節4_紋柄1 = pars2["柄1"].ToPar();
     		X0Y0_節4_紋柄2 = pars2["柄2"].ToPar();
@@ -7324,7 +7324,7 @@ namespace SlaveMatrix
     		X0Y0_節4_吸盤2 = pars2["吸盤2"].ToPar();
     		X0Y0_節4_吸盤3 = pars2["吸盤3"].ToPar();
     		X0Y0_節4_吸盤4 = pars2["吸盤4"].ToPar();
-    		pars2 = pars["節5"].ToPars();
+    		pars2 = partGroup["節5"].ToPars();
     		X0Y0_節5_節 = pars2["節"].ToPar();
     		X0Y0_節5_紋柄1 = pars2["柄1"].ToPar();
     		X0Y0_節5_紋柄2 = pars2["柄2"].ToPar();
@@ -7333,7 +7333,7 @@ namespace SlaveMatrix
     		X0Y0_節5_吸盤2 = pars2["吸盤2"].ToPar();
     		X0Y0_節5_吸盤3 = pars2["吸盤3"].ToPar();
     		X0Y0_節5_吸盤4 = pars2["吸盤4"].ToPar();
-    		pars2 = pars["節6"].ToPars();
+    		pars2 = partGroup["節6"].ToPars();
     		X0Y0_節6_節 = pars2["節"].ToPar();
     		X0Y0_節6_紋柄1 = pars2["柄1"].ToPar();
     		X0Y0_節6_紋柄2 = pars2["柄2"].ToPar();
@@ -7342,7 +7342,7 @@ namespace SlaveMatrix
     		X0Y0_節6_吸盤2 = pars2["吸盤2"].ToPar();
     		X0Y0_節6_吸盤3 = pars2["吸盤3"].ToPar();
     		X0Y0_節6_吸盤4 = pars2["吸盤4"].ToPar();
-    		pars2 = pars["節7"].ToPars();
+    		pars2 = partGroup["節7"].ToPars();
     		X0Y0_節7_節 = pars2["節"].ToPar();
     		X0Y0_節7_紋柄1 = pars2["柄1"].ToPar();
     		X0Y0_節7_紋柄2 = pars2["柄2"].ToPar();
@@ -7351,7 +7351,7 @@ namespace SlaveMatrix
     		X0Y0_節7_吸盤2 = pars2["吸盤2"].ToPar();
     		X0Y0_節7_吸盤3 = pars2["吸盤3"].ToPar();
     		X0Y0_節7_吸盤4 = pars2["吸盤4"].ToPar();
-    		pars2 = pars["節8"].ToPars();
+    		pars2 = partGroup["節8"].ToPars();
     		X0Y0_節8_節 = pars2["節"].ToPar();
     		X0Y0_節8_紋柄1 = pars2["柄1"].ToPar();
     		X0Y0_節8_紋柄2 = pars2["柄2"].ToPar();
@@ -7360,14 +7360,14 @@ namespace SlaveMatrix
     		X0Y0_節8_吸盤2 = pars2["吸盤2"].ToPar();
     		X0Y0_節8_吸盤3 = pars2["吸盤3"].ToPar();
     		X0Y0_節8_吸盤4 = pars2["吸盤4"].ToPar();
-    		pars2 = pars["輪1"].ToPars();
+    		pars2 = partGroup["輪1"].ToPars();
     		X0Y0_輪1_革 = pars2["革"].ToPar();
     		X0Y0_輪1_金具1 = pars2["金具1"].ToPar();
     		X0Y0_輪1_金具2 = pars2["金具2"].ToPar();
     		X0Y0_輪1_金具3 = pars2["金具3"].ToPar();
     		X0Y0_輪1_金具左 = pars2["金具左"].ToPar();
     		X0Y0_輪1_金具右 = pars2["金具右"].ToPar();
-    		pars2 = pars["節9"].ToPars();
+    		pars2 = partGroup["節9"].ToPars();
     		X0Y0_節9_節 = pars2["節"].ToPar();
     		X0Y0_節9_紋柄1 = pars2["柄1"].ToPar();
     		X0Y0_節9_紋柄2 = pars2["柄2"].ToPar();
@@ -7376,7 +7376,7 @@ namespace SlaveMatrix
     		X0Y0_節9_吸盤2 = pars2["吸盤2"].ToPar();
     		X0Y0_節9_吸盤3 = pars2["吸盤3"].ToPar();
     		X0Y0_節9_吸盤4 = pars2["吸盤4"].ToPar();
-    		pars2 = pars["節10"].ToPars();
+    		pars2 = partGroup["節10"].ToPars();
     		X0Y0_節10_節 = pars2["節"].ToPar();
     		X0Y0_節10_紋柄1 = pars2["柄1"].ToPar();
     		X0Y0_節10_紋柄2 = pars2["柄2"].ToPar();
@@ -7385,7 +7385,7 @@ namespace SlaveMatrix
     		X0Y0_節10_吸盤2 = pars2["吸盤2"].ToPar();
     		X0Y0_節10_吸盤3 = pars2["吸盤3"].ToPar();
     		X0Y0_節10_吸盤4 = pars2["吸盤4"].ToPar();
-    		pars2 = pars["節11"].ToPars();
+    		pars2 = partGroup["節11"].ToPars();
     		X0Y0_節11_節 = pars2["節"].ToPar();
     		X0Y0_節11_紋柄1 = pars2["柄1"].ToPar();
     		X0Y0_節11_紋柄2 = pars2["柄2"].ToPar();
@@ -7394,7 +7394,7 @@ namespace SlaveMatrix
     		X0Y0_節11_吸盤2 = pars2["吸盤2"].ToPar();
     		X0Y0_節11_吸盤3 = pars2["吸盤3"].ToPar();
     		X0Y0_節11_吸盤4 = pars2["吸盤4"].ToPar();
-    		pars2 = pars["節12"].ToPars();
+    		pars2 = partGroup["節12"].ToPars();
     		X0Y0_節12_節 = pars2["節"].ToPar();
     		X0Y0_節12_紋柄1 = pars2["柄1"].ToPar();
     		X0Y0_節12_紋柄2 = pars2["柄2"].ToPar();
@@ -7403,7 +7403,7 @@ namespace SlaveMatrix
     		X0Y0_節12_吸盤2 = pars2["吸盤2"].ToPar();
     		X0Y0_節12_吸盤3 = pars2["吸盤3"].ToPar();
     		X0Y0_節12_吸盤4 = pars2["吸盤4"].ToPar();
-    		pars2 = pars["節13"].ToPars();
+    		pars2 = partGroup["節13"].ToPars();
     		X0Y0_節13_節 = pars2["節"].ToPar();
     		X0Y0_節13_紋柄1 = pars2["柄1"].ToPar();
     		X0Y0_節13_紋柄2 = pars2["柄2"].ToPar();
@@ -7412,7 +7412,7 @@ namespace SlaveMatrix
     		X0Y0_節13_吸盤2 = pars2["吸盤2"].ToPar();
     		X0Y0_節13_吸盤3 = pars2["吸盤3"].ToPar();
     		X0Y0_節13_吸盤4 = pars2["吸盤4"].ToPar();
-    		pars2 = pars["節14"].ToPars();
+    		pars2 = partGroup["節14"].ToPars();
     		X0Y0_節14_節 = pars2["節"].ToPar();
     		X0Y0_節14_紋柄1 = pars2["柄1"].ToPar();
     		X0Y0_節14_紋柄2 = pars2["柄2"].ToPar();
@@ -7421,7 +7421,7 @@ namespace SlaveMatrix
     		X0Y0_節14_吸盤2 = pars2["吸盤2"].ToPar();
     		X0Y0_節14_吸盤3 = pars2["吸盤3"].ToPar();
     		X0Y0_節14_吸盤4 = pars2["吸盤4"].ToPar();
-    		pars2 = pars["節15"].ToPars();
+    		pars2 = partGroup["節15"].ToPars();
     		X0Y0_節15_節 = pars2["節"].ToPar();
     		X0Y0_節15_紋柄1 = pars2["柄1"].ToPar();
     		X0Y0_節15_紋柄2 = pars2["柄2"].ToPar();
@@ -7430,7 +7430,7 @@ namespace SlaveMatrix
     		X0Y0_節15_吸盤2 = pars2["吸盤2"].ToPar();
     		X0Y0_節15_吸盤3 = pars2["吸盤3"].ToPar();
     		X0Y0_節15_吸盤4 = pars2["吸盤4"].ToPar();
-    		pars2 = pars["節16"].ToPars();
+    		pars2 = partGroup["節16"].ToPars();
     		X0Y0_節16_節 = pars2["節"].ToPar();
     		X0Y0_節16_紋柄1 = pars2["柄1"].ToPar();
     		X0Y0_節16_紋柄2 = pars2["柄2"].ToPar();
@@ -7439,7 +7439,7 @@ namespace SlaveMatrix
     		X0Y0_節16_吸盤2 = pars2["吸盤2"].ToPar();
     		X0Y0_節16_吸盤3 = pars2["吸盤3"].ToPar();
     		X0Y0_節16_吸盤4 = pars2["吸盤4"].ToPar();
-    		pars2 = pars["節17"].ToPars();
+    		pars2 = partGroup["節17"].ToPars();
     		X0Y0_節17_節 = pars2["節"].ToPar();
     		X0Y0_節17_紋柄1 = pars2["柄1"].ToPar();
     		X0Y0_節17_紋柄2 = pars2["柄2"].ToPar();
@@ -7448,7 +7448,7 @@ namespace SlaveMatrix
     		X0Y0_節17_吸盤2 = pars2["吸盤2"].ToPar();
     		X0Y0_節17_吸盤3 = pars2["吸盤3"].ToPar();
     		X0Y0_節17_吸盤4 = pars2["吸盤4"].ToPar();
-    		pars2 = pars["節18"].ToPars();
+    		pars2 = partGroup["節18"].ToPars();
     		X0Y0_節18_節 = pars2["節"].ToPar();
     		X0Y0_節18_紋柄1 = pars2["柄1"].ToPar();
     		X0Y0_節18_紋柄2 = pars2["柄2"].ToPar();
@@ -7457,7 +7457,7 @@ namespace SlaveMatrix
     		X0Y0_節18_吸盤2 = pars2["吸盤2"].ToPar();
     		X0Y0_節18_吸盤3 = pars2["吸盤3"].ToPar();
     		X0Y0_節18_吸盤4 = pars2["吸盤4"].ToPar();
-    		pars2 = pars["節19"].ToPars();
+    		pars2 = partGroup["節19"].ToPars();
     		X0Y0_節19_節 = pars2["節"].ToPar();
     		X0Y0_節19_紋柄1 = pars2["柄1"].ToPar();
     		X0Y0_節19_紋柄2 = pars2["柄2"].ToPar();
@@ -7466,14 +7466,14 @@ namespace SlaveMatrix
     		X0Y0_節19_吸盤2 = pars2["吸盤2"].ToPar();
     		X0Y0_節19_吸盤3 = pars2["吸盤3"].ToPar();
     		X0Y0_節19_吸盤4 = pars2["吸盤4"].ToPar();
-    		pars2 = pars["輪2"].ToPars();
+    		pars2 = partGroup["輪2"].ToPars();
     		X0Y0_輪2_革 = pars2["革"].ToPar();
     		X0Y0_輪2_金具1 = pars2["金具1"].ToPar();
     		X0Y0_輪2_金具2 = pars2["金具2"].ToPar();
     		X0Y0_輪2_金具3 = pars2["金具3"].ToPar();
     		X0Y0_輪2_金具左 = pars2["金具左"].ToPar();
     		X0Y0_輪2_金具右 = pars2["金具右"].ToPar();
-    		pars2 = pars["節20"].ToPars();
+    		pars2 = partGroup["節20"].ToPars();
     		X0Y0_節20_節 = pars2["節"].ToPar();
     		X0Y0_節20_紋柄1 = pars2["柄1"].ToPar();
     		X0Y0_節20_紋柄2 = pars2["柄2"].ToPar();
@@ -7482,7 +7482,7 @@ namespace SlaveMatrix
     		X0Y0_節20_吸盤2 = pars2["吸盤2"].ToPar();
     		X0Y0_節20_吸盤3 = pars2["吸盤3"].ToPar();
     		X0Y0_節20_吸盤4 = pars2["吸盤4"].ToPar();
-    		pars2 = pars["節21"].ToPars();
+    		pars2 = partGroup["節21"].ToPars();
     		X0Y0_節21_節 = pars2["節"].ToPar();
     		X0Y0_節21_紋柄1 = pars2["柄1"].ToPar();
     		X0Y0_節21_紋柄2 = pars2["柄2"].ToPar();
@@ -7491,7 +7491,7 @@ namespace SlaveMatrix
     		X0Y0_節21_吸盤2 = pars2["吸盤2"].ToPar();
     		X0Y0_節21_吸盤3 = pars2["吸盤3"].ToPar();
     		X0Y0_節21_吸盤4 = pars2["吸盤4"].ToPar();
-    		pars2 = pars["節22"].ToPars();
+    		pars2 = partGroup["節22"].ToPars();
     		X0Y0_節22_節 = pars2["節"].ToPar();
     		X0Y0_節22_紋柄1 = pars2["柄1"].ToPar();
     		X0Y0_節22_紋柄2 = pars2["柄2"].ToPar();
@@ -7500,7 +7500,7 @@ namespace SlaveMatrix
     		X0Y0_節22_吸盤2 = pars2["吸盤2"].ToPar();
     		X0Y0_節22_吸盤3 = pars2["吸盤3"].ToPar();
     		X0Y0_節22_吸盤4 = pars2["吸盤4"].ToPar();
-    		pars2 = pars["節23"].ToPars();
+    		pars2 = partGroup["節23"].ToPars();
     		X0Y0_節23_節 = pars2["節"].ToPar();
     		X0Y0_節23_紋柄1 = pars2["柄1"].ToPar();
     		X0Y0_節23_紋柄2 = pars2["柄2"].ToPar();
@@ -7509,7 +7509,7 @@ namespace SlaveMatrix
     		X0Y0_節23_吸盤2 = pars2["吸盤2"].ToPar();
     		X0Y0_節23_吸盤3 = pars2["吸盤3"].ToPar();
     		X0Y0_節23_吸盤4 = pars2["吸盤4"].ToPar();
-    		pars2 = pars["節24"].ToPars();
+    		pars2 = partGroup["節24"].ToPars();
     		X0Y0_節24_節 = pars2["節"].ToPar();
     		X0Y0_節24_紋柄1 = pars2["柄1"].ToPar();
     		X0Y0_節24_紋柄2 = pars2["柄2"].ToPar();
@@ -7518,7 +7518,7 @@ namespace SlaveMatrix
     		X0Y0_節24_吸盤2 = pars2["吸盤2"].ToPar();
     		X0Y0_節24_吸盤3 = pars2["吸盤3"].ToPar();
     		X0Y0_節24_吸盤4 = pars2["吸盤4"].ToPar();
-    		pars2 = pars["節25"].ToPars();
+    		pars2 = partGroup["節25"].ToPars();
     		X0Y0_節25_節 = pars2["節"].ToPar();
     		X0Y0_節25_紋柄1 = pars2["柄1"].ToPar();
     		X0Y0_節25_紋柄2 = pars2["柄2"].ToPar();
@@ -7527,7 +7527,7 @@ namespace SlaveMatrix
     		X0Y0_節25_吸盤2 = pars2["吸盤2"].ToPar();
     		X0Y0_節25_吸盤3 = pars2["吸盤3"].ToPar();
     		X0Y0_節25_吸盤4 = pars2["吸盤4"].ToPar();
-    		pars2 = pars["節26"].ToPars();
+    		pars2 = partGroup["節26"].ToPars();
     		X0Y0_節26_節 = pars2["節"].ToPar();
     		X0Y0_節26_紋柄1 = pars2["柄1"].ToPar();
     		X0Y0_節26_紋柄2 = pars2["柄2"].ToPar();
@@ -7536,7 +7536,7 @@ namespace SlaveMatrix
     		X0Y0_節26_吸盤2 = pars2["吸盤2"].ToPar();
     		X0Y0_節26_吸盤3 = pars2["吸盤3"].ToPar();
     		X0Y0_節26_吸盤4 = pars2["吸盤4"].ToPar();
-    		pars2 = pars["節27"].ToPars();
+    		pars2 = partGroup["節27"].ToPars();
     		X0Y0_節27_節 = pars2["節"].ToPar();
     		X0Y0_節27_紋柄1 = pars2["柄1"].ToPar();
     		X0Y0_節27_紋柄2 = pars2["柄2"].ToPar();
@@ -7545,7 +7545,7 @@ namespace SlaveMatrix
     		X0Y0_節27_吸盤2 = pars2["吸盤2"].ToPar();
     		X0Y0_節27_吸盤3 = pars2["吸盤3"].ToPar();
     		X0Y0_節27_吸盤4 = pars2["吸盤4"].ToPar();
-    		pars2 = pars["節28"].ToPars();
+    		pars2 = partGroup["節28"].ToPars();
     		X0Y0_節28_節 = pars2["節"].ToPar();
     		X0Y0_節28_紋柄1 = pars2["柄1"].ToPar();
     		X0Y0_節28_紋柄2 = pars2["柄2"].ToPar();
@@ -7554,7 +7554,7 @@ namespace SlaveMatrix
     		X0Y0_節28_吸盤2 = pars2["吸盤2"].ToPar();
     		X0Y0_節28_吸盤3 = pars2["吸盤3"].ToPar();
     		X0Y0_節28_吸盤4 = pars2["吸盤4"].ToPar();
-    		pars2 = pars["節29"].ToPars();
+    		pars2 = partGroup["節29"].ToPars();
     		X0Y0_節29_節 = pars2["節"].ToPar();
     		X0Y0_節29_紋柄1 = pars2["柄1"].ToPar();
     		X0Y0_節29_紋柄2 = pars2["柄2"].ToPar();
@@ -7563,7 +7563,7 @@ namespace SlaveMatrix
     		X0Y0_節29_吸盤2 = pars2["吸盤2"].ToPar();
     		X0Y0_節29_吸盤3 = pars2["吸盤3"].ToPar();
     		X0Y0_節29_吸盤4 = pars2["吸盤4"].ToPar();
-    		pars2 = pars["節30"].ToPars();
+    		pars2 = partGroup["節30"].ToPars();
     		X0Y0_節30_節 = pars2["節"].ToPar();
     		X0Y0_節30_紋柄1 = pars2["柄1"].ToPar();
     		X0Y0_節30_紋柄2 = pars2["柄2"].ToPar();
@@ -7572,7 +7572,7 @@ namespace SlaveMatrix
     		X0Y0_節30_吸盤2 = pars2["吸盤2"].ToPar();
     		X0Y0_節30_吸盤3 = pars2["吸盤3"].ToPar();
     		X0Y0_節30_吸盤4 = pars2["吸盤4"].ToPar();
-    		pars2 = pars["節31"].ToPars();
+    		pars2 = partGroup["節31"].ToPars();
     		X0Y0_節31_節 = pars2["節"].ToPar();
     		X0Y0_節31_紋柄1 = pars2["柄1"].ToPar();
     		X0Y0_節31_紋柄2 = pars2["柄2"].ToPar();
@@ -7581,7 +7581,7 @@ namespace SlaveMatrix
     		X0Y0_節31_吸盤2 = pars2["吸盤2"].ToPar();
     		X0Y0_節31_吸盤3 = pars2["吸盤3"].ToPar();
     		X0Y0_節31_吸盤4 = pars2["吸盤4"].ToPar();
-    		pars2 = pars["節32"].ToPars();
+    		pars2 = partGroup["節32"].ToPars();
     		X0Y0_節32_節 = pars2["節"].ToPar();
     		X0Y0_節32_紋柄1 = pars2["柄1"].ToPar();
     		X0Y0_節32_紋柄2 = pars2["柄2"].ToPar();
@@ -7590,7 +7590,7 @@ namespace SlaveMatrix
     		X0Y0_節32_吸盤2 = pars2["吸盤2"].ToPar();
     		X0Y0_節32_吸盤3 = pars2["吸盤3"].ToPar();
     		X0Y0_節32_吸盤4 = pars2["吸盤4"].ToPar();
-    		pars2 = pars["節33"].ToPars();
+    		pars2 = partGroup["節33"].ToPars();
     		X0Y0_節33_節 = pars2["節"].ToPar();
     		X0Y0_節33_紋柄1 = pars2["柄1"].ToPar();
     		X0Y0_節33_紋柄2 = pars2["柄2"].ToPar();
@@ -7599,7 +7599,7 @@ namespace SlaveMatrix
     		X0Y0_節33_吸盤2 = pars2["吸盤2"].ToPar();
     		X0Y0_節33_吸盤3 = pars2["吸盤3"].ToPar();
     		X0Y0_節33_吸盤4 = pars2["吸盤4"].ToPar();
-    		pars2 = pars["節34"].ToPars();
+    		pars2 = partGroup["節34"].ToPars();
     		X0Y0_節34_節 = pars2["節"].ToPar();
     		X0Y0_節34_紋柄1 = pars2["柄1"].ToPar();
     		X0Y0_節34_紋柄2 = pars2["柄2"].ToPar();
@@ -7608,7 +7608,7 @@ namespace SlaveMatrix
     		X0Y0_節34_吸盤2 = pars2["吸盤2"].ToPar();
     		X0Y0_節34_吸盤3 = pars2["吸盤3"].ToPar();
     		X0Y0_節34_吸盤4 = pars2["吸盤4"].ToPar();
-    		pars2 = pars["節35"].ToPars();
+    		pars2 = partGroup["節35"].ToPars();
     		X0Y0_節35_節 = pars2["節"].ToPar();
     		X0Y0_節35_紋柄1 = pars2["柄1"].ToPar();
     		X0Y0_節35_紋柄2 = pars2["柄2"].ToPar();
@@ -7617,7 +7617,7 @@ namespace SlaveMatrix
     		X0Y0_節35_吸盤2 = pars2["吸盤2"].ToPar();
     		X0Y0_節35_吸盤3 = pars2["吸盤3"].ToPar();
     		X0Y0_節35_吸盤4 = pars2["吸盤4"].ToPar();
-    		pars2 = pars["節36"].ToPars();
+    		pars2 = partGroup["節36"].ToPars();
     		X0Y0_節36_節 = pars2["節"].ToPar();
     		X0Y0_節36_紋柄1 = pars2["柄1"].ToPar();
     		X0Y0_節36_紋柄2 = pars2["柄2"].ToPar();
@@ -7626,7 +7626,7 @@ namespace SlaveMatrix
     		X0Y0_節36_吸盤2 = pars2["吸盤2"].ToPar();
     		X0Y0_節36_吸盤3 = pars2["吸盤3"].ToPar();
     		X0Y0_節36_吸盤4 = pars2["吸盤4"].ToPar();
-    		pars2 = pars["節37"].ToPars();
+    		pars2 = partGroup["節37"].ToPars();
     		X0Y0_節37_節 = pars2["節"].ToPar();
     		X0Y0_節37_紋柄1 = pars2["柄1"].ToPar();
     		X0Y0_節37_紋柄2 = pars2["柄2"].ToPar();
@@ -7635,7 +7635,7 @@ namespace SlaveMatrix
     		X0Y0_節37_吸盤2 = pars2["吸盤2"].ToPar();
     		X0Y0_節37_吸盤3 = pars2["吸盤3"].ToPar();
     		X0Y0_節37_吸盤4 = pars2["吸盤4"].ToPar();
-    		pars2 = pars["節38"].ToPars();
+    		pars2 = partGroup["節38"].ToPars();
     		X0Y0_節38_節 = pars2["節"].ToPar();
     		X0Y0_節38_紋柄1 = pars2["柄1"].ToPar();
     		X0Y0_節38_紋柄2 = pars2["柄2"].ToPar();
@@ -7644,7 +7644,7 @@ namespace SlaveMatrix
     		X0Y0_節38_吸盤2 = pars2["吸盤2"].ToPar();
     		X0Y0_節38_吸盤3 = pars2["吸盤3"].ToPar();
     		X0Y0_節38_吸盤4 = pars2["吸盤4"].ToPar();
-    		pars2 = pars["節39"].ToPars();
+    		pars2 = partGroup["節39"].ToPars();
     		X0Y0_節39_節 = pars2["節"].ToPar();
     		X0Y0_節39_紋柄1 = pars2["柄1"].ToPar();
     		X0Y0_節39_紋柄2 = pars2["柄2"].ToPar();
@@ -7653,7 +7653,7 @@ namespace SlaveMatrix
     		X0Y0_節39_吸盤2 = pars2["吸盤2"].ToPar();
     		X0Y0_節39_吸盤3 = pars2["吸盤3"].ToPar();
     		X0Y0_節39_吸盤4 = pars2["吸盤4"].ToPar();
-    		pars2 = pars["節40"].ToPars();
+    		pars2 = partGroup["節40"].ToPars();
     		X0Y0_節40_節 = pars2["節"].ToPar();
     		X0Y0_節40_紋柄1 = pars2["柄1"].ToPar();
     		X0Y0_節40_紋柄2 = pars2["柄2"].ToPar();
@@ -7662,7 +7662,7 @@ namespace SlaveMatrix
     		X0Y0_節40_吸盤2 = pars2["吸盤2"].ToPar();
     		X0Y0_節40_吸盤3 = pars2["吸盤3"].ToPar();
     		X0Y0_節40_吸盤4 = pars2["吸盤4"].ToPar();
-    		pars2 = pars["節41"].ToPars();
+    		pars2 = partGroup["節41"].ToPars();
     		X0Y0_節41_節 = pars2["節"].ToPar();
     		X0Y0_節41_紋柄1 = pars2["柄1"].ToPar();
     		X0Y0_節41_紋柄2 = pars2["柄2"].ToPar();
@@ -8054,7 +8054,7 @@ namespace SlaveMatrix
     		}
     		base.配色指定 = 配色指定;
     		配色(体配色);
-    		Pars = new Par[41]
+    		Pars = new ShapePart[41]
     		{
     			X0Y0_節1_節, X0Y0_節2_節, X0Y0_節3_節, X0Y0_節4_節, X0Y0_節5_節, X0Y0_節6_節, X0Y0_節7_節, X0Y0_節8_節, X0Y0_節9_節, X0Y0_節10_節,
     			X0Y0_節11_節, X0Y0_節12_節, X0Y0_節13_節, X0Y0_節14_節, X0Y0_節15_節, X0Y0_節16_節, X0Y0_節17_節, X0Y0_節18_節, X0Y0_節19_節, X0Y0_節20_節,
@@ -9051,7 +9051,7 @@ namespace SlaveMatrix
     		節1_吸盤4_表示 = false;
     	}
 
-    	public override bool Is革(Par p)
+    	public override bool Is革(ShapePart p)
     	{
     		if (p != X0Y0_輪1_革 && p != X0Y0_輪1_金具1 && p != X0Y0_輪1_金具2 && p != X0Y0_輪1_金具3 && p != X0Y0_輪1_金具左 && p != X0Y0_輪1_金具右 && p != X0Y0_輪2_革 && p != X0Y0_輪2_金具1 && p != X0Y0_輪2_金具2 && p != X0Y0_輪2_金具3 && p != X0Y0_輪2_金具左)
     		{
@@ -9060,7 +9060,7 @@ namespace SlaveMatrix
     		return true;
     	}
 
-    	public override IEnumerable<Par> Enum軸()
+    	public override IEnumerable<ShapePart> Enum軸()
     	{
     		yield return X0Y0_節1_節;
     		yield return X0Y0_節2_節;
@@ -9479,334 +9479,334 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		節1_節CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		節1_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節1_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節1_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節1_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節1_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節1_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節1_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節2_節CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		節2_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節2_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節2_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節2_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節2_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節2_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節2_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節3_節CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		節3_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節3_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節3_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節3_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節3_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節3_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節3_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節4_節CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		節4_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節4_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節4_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節4_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節4_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節4_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節4_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節5_節CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		節5_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節5_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節5_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節5_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節5_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節5_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節5_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節6_節CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		節6_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節6_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節6_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節6_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節6_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節6_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節6_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節7_節CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		節7_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節7_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節7_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節7_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節7_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節7_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節7_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節8_節CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		節8_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節8_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節8_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節8_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節8_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節8_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節8_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節9_節CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		節9_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節9_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節9_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節9_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節9_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節9_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節9_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節10_節CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		節10_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節10_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節10_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節10_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節10_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節10_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節10_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節11_節CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		節11_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節11_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節11_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節11_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節11_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節11_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節11_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節12_節CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		節12_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節12_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節12_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節12_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節12_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節12_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節12_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節13_節CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		節13_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節13_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節13_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節13_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節13_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節13_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節13_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節14_節CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		節14_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節14_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節14_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節14_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節14_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節14_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節14_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節15_節CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		節15_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節15_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節15_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節15_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節15_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節15_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節15_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節16_節CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		節16_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節16_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節16_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節16_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節16_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節16_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節16_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節17_節CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		節17_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節17_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節17_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節17_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節17_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節17_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節17_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節18_節CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		節18_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節18_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節18_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節18_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節18_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節18_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節18_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節19_節CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		節19_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節19_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節19_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節19_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節19_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節19_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節19_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節20_節CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		節20_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節20_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節20_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節20_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節20_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節20_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節20_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節21_節CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		節21_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節21_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節21_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節21_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節21_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節21_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節21_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節22_節CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		節22_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節22_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節22_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節22_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節22_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節22_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節22_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節23_節CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		節23_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節23_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節23_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節23_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節23_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節23_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節23_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節24_節CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		節24_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節24_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節24_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節24_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節24_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節24_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節24_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節25_節CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		節25_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節25_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節25_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節25_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節25_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節25_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節25_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節26_節CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		節26_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節26_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節26_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節26_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節26_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節26_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節26_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節27_節CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		節27_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節27_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節27_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節27_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節27_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節27_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節27_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節28_節CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		節28_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節28_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節28_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節28_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節28_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節28_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節28_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節29_節CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		節29_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節29_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節29_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節29_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節29_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節29_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節29_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節30_節CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		節30_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節30_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節30_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節30_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節30_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節30_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節30_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節31_節CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		節31_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節31_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節31_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節31_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節31_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節31_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節31_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節32_節CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		節32_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節32_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節32_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節32_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節32_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節32_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節32_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節33_節CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		節33_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節33_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節33_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節33_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節33_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節33_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節33_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節34_節CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		節34_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節34_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節34_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節34_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節34_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節34_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節34_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節35_節CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		節35_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節35_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節35_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節35_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節35_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節35_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節35_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節36_節CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		節36_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節36_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節36_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節36_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節36_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節36_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節36_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節37_節CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		節37_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節37_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節37_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節37_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節37_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節37_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節37_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節38_節CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		節38_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節38_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節38_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節38_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節38_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節38_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節38_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節39_節CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		節39_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節39_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節39_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節39_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節39_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節39_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節39_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節40_節CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		節40_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節40_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節40_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節40_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節40_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節40_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節40_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節41_節CD = new ColorD(ref Col.Black, ref 体配色.体0O);
-    		節41_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節41_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節41_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節41_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節41_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節41_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節41_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
+    		節1_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		節1_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節1_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節1_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節1_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節1_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節1_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節1_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節2_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		節2_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節2_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節2_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節2_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節2_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節2_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節2_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節3_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		節3_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節3_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節3_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節3_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節3_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節3_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節3_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節4_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		節4_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節4_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節4_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節4_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節4_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節4_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節4_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節5_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		節5_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節5_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節5_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節5_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節5_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節5_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節5_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節6_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		節6_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節6_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節6_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節6_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節6_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節6_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節6_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節7_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		節7_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節7_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節7_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節7_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節7_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節7_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節7_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節8_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		節8_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節8_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節8_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節8_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節8_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節8_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節8_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節9_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		節9_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節9_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節9_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節9_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節9_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節9_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節9_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節10_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		節10_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節10_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節10_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節10_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節10_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節10_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節10_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節11_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		節11_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節11_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節11_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節11_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節11_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節11_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節11_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節12_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		節12_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節12_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節12_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節12_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節12_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節12_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節12_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節13_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		節13_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節13_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節13_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節13_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節13_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節13_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節13_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節14_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		節14_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節14_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節14_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節14_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節14_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節14_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節14_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節15_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		節15_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節15_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節15_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節15_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節15_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節15_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節15_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節16_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		節16_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節16_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節16_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節16_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節16_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節16_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節16_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節17_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		節17_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節17_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節17_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節17_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節17_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節17_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節17_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節18_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		節18_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節18_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節18_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節18_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節18_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節18_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節18_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節19_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		節19_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節19_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節19_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節19_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節19_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節19_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節19_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節20_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		節20_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節20_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節20_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節20_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節20_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節20_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節20_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節21_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		節21_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節21_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節21_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節21_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節21_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節21_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節21_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節22_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		節22_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節22_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節22_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節22_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節22_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節22_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節22_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節23_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		節23_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節23_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節23_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節23_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節23_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節23_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節23_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節24_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		節24_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節24_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節24_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節24_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節24_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節24_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節24_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節25_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		節25_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節25_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節25_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節25_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節25_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節25_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節25_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節26_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		節26_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節26_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節26_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節26_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節26_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節26_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節26_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節27_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		節27_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節27_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節27_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節27_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節27_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節27_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節27_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節28_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		節28_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節28_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節28_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節28_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節28_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節28_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節28_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節29_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		節29_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節29_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節29_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節29_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節29_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節29_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節29_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節30_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		節30_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節30_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節30_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節30_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節30_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節30_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節30_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節31_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		節31_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節31_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節31_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節31_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節31_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節31_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節31_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節32_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		節32_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節32_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節32_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節32_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節32_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節32_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節32_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節33_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		節33_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節33_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節33_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節33_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節33_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節33_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節33_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節34_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		節34_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節34_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節34_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節34_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節34_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節34_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節34_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節35_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		節35_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節35_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節35_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節35_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節35_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節35_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節35_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節36_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		節36_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節36_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節36_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節36_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節36_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節36_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節36_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節37_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		節37_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節37_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節37_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節37_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節37_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節37_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節37_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節38_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		節38_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節38_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節38_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節38_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節38_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節38_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節38_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節39_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		節39_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節39_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節39_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節39_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節39_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節39_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節39_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節40_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		節40_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節40_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節40_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節40_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節40_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節40_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節40_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節41_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.体0O);
+    		節41_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節41_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節41_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節41_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節41_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節41_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節41_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
     		輪1_革CD = new ColorD();
     		輪1_金具1CD = new ColorD();
     		輪1_金具2CD = new ColorD();
@@ -9824,293 +9824,293 @@ namespace SlaveMatrix
     	private void 配色T0(BodyColorSet 体配色)
     	{
     		this.配色T(0, "節CD", ref 体配色.体0O, ref 体配色.刺青O);
-    		節1_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節1_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節1_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節1_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節1_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節1_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節1_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節2_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節2_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節2_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節2_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節2_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節2_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節2_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節3_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節3_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節3_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節3_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節3_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節3_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節3_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節4_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節4_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節4_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節4_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節4_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節4_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節4_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節5_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節5_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節5_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節5_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節5_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節5_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節5_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節6_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節6_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節6_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節6_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節6_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節6_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節6_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節7_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節7_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節7_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節7_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節7_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節7_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節7_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節8_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節8_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節8_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節8_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節8_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節8_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節8_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節9_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節9_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節9_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節9_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節9_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節9_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節9_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節10_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節10_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節10_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節10_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節10_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節10_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節10_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節11_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節11_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節11_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節11_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節11_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節11_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節11_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節12_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節12_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節12_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節12_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節12_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節12_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節12_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節13_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節13_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節13_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節13_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節13_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節13_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節13_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節14_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節14_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節14_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節14_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節14_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節14_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節14_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節15_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節15_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節15_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節15_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節15_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節15_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節15_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節16_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節16_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節16_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節16_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節16_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節16_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節16_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節17_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節17_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節17_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節17_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節17_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節17_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節17_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節18_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節18_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節18_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節18_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節18_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節18_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節18_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節19_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節19_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節19_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節19_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節19_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節19_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節19_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節20_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節20_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節20_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節20_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節20_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節20_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節20_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節21_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節21_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節21_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節21_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節21_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節21_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節21_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節22_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節22_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節22_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節22_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節22_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節22_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節22_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節23_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節23_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節23_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節23_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節23_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節23_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節23_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節24_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節24_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節24_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節24_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節24_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節24_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節24_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節25_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節25_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節25_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節25_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節25_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節25_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節25_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節26_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節26_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節26_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節26_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節26_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節26_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節26_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節27_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節27_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節27_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節27_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節27_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節27_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節27_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節28_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節28_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節28_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節28_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節28_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節28_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節28_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節29_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節29_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節29_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節29_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節29_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節29_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節29_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節30_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節30_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節30_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節30_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節30_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節30_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節30_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節31_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節31_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節31_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節31_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節31_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節31_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節31_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節32_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節32_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節32_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節32_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節32_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節32_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節32_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節33_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節33_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節33_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節33_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節33_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節33_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節33_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節34_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節34_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節34_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節34_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節34_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節34_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節34_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節35_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節35_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節35_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節35_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節35_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節35_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節35_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節36_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節36_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節36_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節36_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節36_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節36_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節36_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節37_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節37_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節37_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節37_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節37_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節37_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節37_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節38_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節38_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節38_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節38_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節38_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節38_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節38_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節39_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節39_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節39_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節39_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節39_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節39_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節39_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節40_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節40_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節40_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節40_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節40_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節40_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節40_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節41_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節41_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節41_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節41_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節41_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節41_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節41_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
+    		節1_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節1_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節1_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節1_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節1_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節1_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節1_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節2_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節2_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節2_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節2_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節2_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節2_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節2_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節3_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節3_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節3_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節3_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節3_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節3_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節3_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節4_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節4_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節4_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節4_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節4_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節4_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節4_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節5_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節5_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節5_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節5_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節5_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節5_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節5_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節6_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節6_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節6_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節6_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節6_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節6_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節6_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節7_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節7_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節7_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節7_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節7_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節7_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節7_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節8_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節8_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節8_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節8_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節8_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節8_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節8_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節9_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節9_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節9_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節9_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節9_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節9_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節9_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節10_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節10_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節10_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節10_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節10_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節10_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節10_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節11_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節11_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節11_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節11_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節11_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節11_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節11_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節12_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節12_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節12_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節12_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節12_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節12_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節12_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節13_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節13_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節13_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節13_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節13_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節13_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節13_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節14_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節14_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節14_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節14_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節14_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節14_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節14_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節15_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節15_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節15_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節15_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節15_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節15_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節15_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節16_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節16_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節16_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節16_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節16_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節16_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節16_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節17_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節17_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節17_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節17_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節17_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節17_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節17_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節18_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節18_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節18_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節18_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節18_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節18_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節18_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節19_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節19_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節19_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節19_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節19_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節19_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節19_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節20_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節20_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節20_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節20_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節20_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節20_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節20_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節21_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節21_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節21_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節21_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節21_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節21_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節21_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節22_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節22_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節22_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節22_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節22_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節22_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節22_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節23_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節23_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節23_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節23_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節23_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節23_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節23_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節24_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節24_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節24_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節24_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節24_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節24_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節24_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節25_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節25_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節25_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節25_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節25_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節25_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節25_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節26_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節26_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節26_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節26_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節26_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節26_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節26_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節27_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節27_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節27_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節27_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節27_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節27_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節27_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節28_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節28_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節28_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節28_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節28_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節28_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節28_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節29_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節29_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節29_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節29_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節29_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節29_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節29_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節30_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節30_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節30_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節30_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節30_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節30_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節30_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節31_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節31_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節31_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節31_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節31_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節31_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節31_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節32_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節32_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節32_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節32_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節32_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節32_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節32_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節33_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節33_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節33_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節33_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節33_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節33_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節33_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節34_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節34_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節34_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節34_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節34_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節34_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節34_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節35_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節35_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節35_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節35_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節35_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節35_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節35_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節36_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節36_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節36_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節36_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節36_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節36_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節36_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節37_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節37_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節37_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節37_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節37_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節37_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節37_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節38_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節38_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節38_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節38_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節38_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節38_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節38_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節39_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節39_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節39_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節39_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節39_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節39_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節39_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節40_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節40_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節40_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節40_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節40_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節40_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節40_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節41_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節41_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節41_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節41_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節41_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節41_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節41_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
     		輪1_革CD = new ColorD();
     		輪1_金具1CD = new ColorD();
     		輪1_金具2CD = new ColorD();
@@ -10128,293 +10128,293 @@ namespace SlaveMatrix
     	private void 配色T1(BodyColorSet 体配色)
     	{
     		this.配色T(1, "節CD", ref 体配色.体0O, ref 体配色.刺青O);
-    		節1_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節1_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節1_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節1_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節1_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節1_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節1_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節2_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節2_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節2_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節2_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節2_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節2_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節2_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節3_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節3_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節3_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節3_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節3_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節3_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節3_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節4_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節4_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節4_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節4_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節4_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節4_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節4_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節5_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節5_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節5_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節5_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節5_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節5_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節5_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節6_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節6_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節6_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節6_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節6_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節6_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節6_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節7_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節7_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節7_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節7_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節7_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節7_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節7_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節8_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節8_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節8_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節8_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節8_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節8_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節8_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節9_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節9_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節9_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節9_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節9_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節9_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節9_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節10_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節10_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節10_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節10_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節10_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節10_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節10_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節11_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節11_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節11_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節11_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節11_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節11_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節11_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節12_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節12_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節12_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節12_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節12_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節12_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節12_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節13_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節13_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節13_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節13_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節13_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節13_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節13_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節14_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節14_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節14_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節14_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節14_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節14_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節14_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節15_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節15_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節15_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節15_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節15_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節15_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節15_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節16_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節16_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節16_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節16_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節16_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節16_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節16_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節17_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節17_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節17_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節17_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節17_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節17_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節17_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節18_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節18_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節18_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節18_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節18_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節18_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節18_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節19_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節19_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節19_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節19_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節19_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節19_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節19_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節20_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節20_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節20_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節20_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節20_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節20_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節20_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節21_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節21_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節21_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節21_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節21_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節21_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節21_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節22_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節22_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節22_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節22_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節22_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節22_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節22_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節23_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節23_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節23_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節23_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節23_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節23_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節23_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節24_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節24_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節24_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節24_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節24_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節24_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節24_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節25_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節25_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節25_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節25_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節25_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節25_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節25_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節26_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節26_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節26_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節26_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節26_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節26_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節26_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節27_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節27_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節27_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節27_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節27_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節27_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節27_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節28_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節28_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節28_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節28_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節28_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節28_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節28_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節29_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節29_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節29_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節29_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節29_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節29_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節29_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節30_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節30_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節30_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節30_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節30_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節30_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節30_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節31_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節31_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節31_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節31_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節31_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節31_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節31_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節32_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節32_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節32_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節32_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節32_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節32_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節32_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節33_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節33_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節33_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節33_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節33_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節33_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節33_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節34_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節34_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節34_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節34_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節34_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節34_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節34_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節35_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節35_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節35_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節35_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節35_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節35_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節35_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節36_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節36_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節36_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節36_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節36_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節36_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節36_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節37_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節37_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節37_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節37_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節37_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節37_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節37_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節38_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節38_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節38_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節38_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節38_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節38_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節38_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節39_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節39_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節39_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節39_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節39_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節39_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節39_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節40_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節40_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節40_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節40_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節40_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節40_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節40_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節41_紋柄1CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節41_紋柄2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		節41_鎧CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節41_吸盤1CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節41_吸盤2CD = new ColorD(ref Col.Black, ref 体配色.体1O);
-    		節41_吸盤3CD = new ColorD(ref Col.Black, ref 体配色.白部O);
-    		節41_吸盤4CD = new ColorD(ref Col.Black, ref 体配色.白部O);
+    		節1_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節1_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節1_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節1_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節1_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節1_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節1_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節2_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節2_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節2_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節2_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節2_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節2_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節2_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節3_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節3_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節3_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節3_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節3_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節3_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節3_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節4_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節4_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節4_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節4_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節4_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節4_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節4_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節5_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節5_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節5_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節5_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節5_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節5_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節5_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節6_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節6_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節6_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節6_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節6_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節6_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節6_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節7_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節7_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節7_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節7_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節7_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節7_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節7_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節8_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節8_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節8_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節8_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節8_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節8_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節8_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節9_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節9_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節9_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節9_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節9_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節9_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節9_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節10_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節10_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節10_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節10_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節10_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節10_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節10_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節11_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節11_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節11_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節11_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節11_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節11_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節11_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節12_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節12_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節12_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節12_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節12_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節12_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節12_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節13_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節13_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節13_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節13_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節13_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節13_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節13_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節14_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節14_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節14_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節14_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節14_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節14_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節14_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節15_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節15_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節15_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節15_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節15_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節15_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節15_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節16_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節16_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節16_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節16_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節16_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節16_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節16_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節17_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節17_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節17_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節17_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節17_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節17_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節17_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節18_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節18_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節18_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節18_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節18_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節18_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節18_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節19_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節19_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節19_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節19_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節19_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節19_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節19_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節20_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節20_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節20_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節20_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節20_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節20_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節20_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節21_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節21_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節21_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節21_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節21_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節21_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節21_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節22_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節22_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節22_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節22_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節22_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節22_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節22_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節23_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節23_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節23_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節23_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節23_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節23_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節23_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節24_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節24_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節24_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節24_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節24_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節24_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節24_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節25_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節25_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節25_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節25_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節25_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節25_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節25_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節26_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節26_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節26_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節26_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節26_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節26_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節26_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節27_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節27_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節27_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節27_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節27_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節27_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節27_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節28_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節28_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節28_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節28_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節28_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節28_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節28_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節29_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節29_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節29_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節29_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節29_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節29_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節29_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節30_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節30_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節30_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節30_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節30_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節30_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節30_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節31_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節31_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節31_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節31_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節31_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節31_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節31_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節32_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節32_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節32_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節32_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節32_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節32_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節32_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節33_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節33_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節33_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節33_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節33_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節33_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節33_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節34_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節34_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節34_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節34_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節34_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節34_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節34_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節35_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節35_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節35_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節35_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節35_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節35_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節35_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節36_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節36_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節36_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節36_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節36_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節36_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節36_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節37_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節37_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節37_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節37_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節37_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節37_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節37_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節38_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節38_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節38_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節38_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節38_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節38_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節38_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節39_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節39_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節39_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節39_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節39_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節39_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節39_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節40_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節40_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節40_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節40_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節40_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節40_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節40_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節41_紋柄1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節41_紋柄2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		節41_鎧CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節41_吸盤1CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節41_吸盤2CD = new ColorD(ref ColorHelper.Black, ref 体配色.体1O);
+    		節41_吸盤3CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
+    		節41_吸盤4CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
     		輪1_革CD = new ColorD();
     		輪1_金具1CD = new ColorD();
     		輪1_金具2CD = new ColorD();

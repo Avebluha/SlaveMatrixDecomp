@@ -5,7 +5,7 @@ using SlaveMatrix.GameClasses;
 namespace SlaveMatrix
 {
     [Serializable]
-    public class ぶっかけ_小D : EleD
+    public class ぶっかけ_小D : ElementData
     {
     	public bool 精液_表示 = true;
 
@@ -14,7 +14,7 @@ namespace SlaveMatrix
     		ThisType = GetType();
     	}
 
-    	public override Ele GetEle(double DisUnit, ModeEventDispatcher Med, 主人公配色 体配色)
+    	public override Element GetEle(double DisUnit, ModeEventDispatcher Med, 主人公配色 体配色)
     	{
     		return new ぶっかけ_小(DisUnit, 配色指定, 体配色, Med, this);
     	}

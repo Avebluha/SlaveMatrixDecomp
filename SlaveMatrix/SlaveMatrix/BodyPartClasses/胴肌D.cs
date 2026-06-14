@@ -5,7 +5,7 @@ using SlaveMatrix.GameClasses;
 namespace SlaveMatrix
 {
     [Serializable]
-    public class 胴肌D : EleD
+    public class 胴肌D : ElementData
     {
     	public bool 植タトゥ_タトゥ花左_表示;
 
@@ -24,7 +24,7 @@ namespace SlaveMatrix
     		ThisType = GetType();
     	}
 
-    	public override Ele GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
+    	public override Element GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
     	{
     		return new 胴肌(DisUnit, 配色指定, 体配色, Med, this);
     	}

@@ -3,9 +3,9 @@ using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
-    public class 鞭痕 : Ele
+    public class 鞭痕 : Element
     {
-    	public Par X0Y0_鞭痕;
+    	public ShapePart X0Y0_鞭痕;
 
     	public ColorD 鞭痕CD;
 
@@ -87,9 +87,9 @@ namespace SlaveMatrix
     	public 鞭痕(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 鞭痕D e)
     	{
     		ThisType = GetType();
-    		Body = new Difs(Sta.スタンプ["鞭痕"]);
-    		Pars pars = Body[0][0];
-    		X0Y0_鞭痕 = pars["鞭痕"].ToPar();
+    		Body = new VariantGrid(GlobalState.スタンプ["鞭痕"]);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_鞭痕 = partGroup["鞭痕"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;
@@ -140,7 +140,7 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		鞭痕CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
+    		鞭痕CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
     	}
     }
 }

@@ -4,23 +4,23 @@ namespace SlaveMatrix
 {
     public class 上着ミドル_ドレス : 上着ミドル
     {
-    	public Par X0Y0_服;
+    	public ShapePart X0Y0_服;
 
-    	public Par X0Y0_縁_縁左;
+    	public ShapePart X0Y0_縁_縁左;
 
-    	public Par X0Y0_縁_縁右;
+    	public ShapePart X0Y0_縁_縁右;
 
-    	public Par X0Y0_柄_柄左_柄1;
+    	public ShapePart X0Y0_柄_柄左_柄1;
 
-    	public Par X0Y0_柄_柄左_柄2_柄1;
+    	public ShapePart X0Y0_柄_柄左_柄2_柄1;
 
-    	public Par X0Y0_柄_柄左_柄2_柄2;
+    	public ShapePart X0Y0_柄_柄左_柄2_柄2;
 
-    	public Par X0Y0_柄_柄右_柄1;
+    	public ShapePart X0Y0_柄_柄右_柄1;
 
-    	public Par X0Y0_柄_柄右_柄2_柄1;
+    	public ShapePart X0Y0_柄_柄右_柄2_柄1;
 
-    	public Par X0Y0_柄_柄右_柄2_柄2;
+    	public ShapePart X0Y0_柄_柄右_柄2_柄2;
 
     	public ColorD 服CD;
 
@@ -58,9 +58,9 @@ namespace SlaveMatrix
 
     	public ColorP X0Y0_柄_柄右_柄2_柄2CP;
 
-    	private Par[] 柄左;
+    	private ShapePart[] 柄左;
 
-    	private Par[] 柄右;
+    	private ShapePart[] 柄右;
 
     	private Vector2D[] mm;
 
@@ -324,19 +324,19 @@ namespace SlaveMatrix
     	public 上着ミドル_ドレス(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 上着ミドル_ドレスD e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif(Sta.胴体["上着ミドル"][2]);
-    		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		X0Y0_服 = pars["服"].ToPar();
-    		Pars pars2 = pars["縁"].ToPars();
+    		MorphVariant morphVariant = new MorphVariant(GlobalState.胴体["上着ミドル"][2]);
+    		Body = new VariantGrid();
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_服 = partGroup["服"].ToPar();
+    		PartGroup pars2 = partGroup["縁"].ToPars();
     		X0Y0_縁_縁左 = pars2["縁左"].ToPar();
     		X0Y0_縁_縁右 = pars2["縁右"].ToPar();
-    		pars2 = pars["柄"].ToPars();
-    		Pars pars3 = pars2["柄左"].ToPars();
+    		pars2 = partGroup["柄"].ToPars();
+    		PartGroup pars3 = pars2["柄左"].ToPars();
     		X0Y0_柄_柄左_柄1 = pars3["柄1"].ToPar();
-    		Pars pars4 = pars3["柄2"].ToPars();
+    		PartGroup pars4 = pars3["柄2"].ToPars();
     		X0Y0_柄_柄左_柄2_柄1 = pars4["柄1"].ToPar();
     		X0Y0_柄_柄左_柄2_柄2 = pars4["柄2"].ToPar();
     		pars3 = pars2["柄右"].ToPars();
@@ -395,18 +395,18 @@ namespace SlaveMatrix
     		X0Y0_縁_縁左CP = new ColorP(X0Y0_縁_縁左, 縁_縁左CD, DisUnit, abj: true);
     		X0Y0_縁_縁右CP = new ColorP(X0Y0_縁_縁右, 縁_縁右CD, DisUnit, abj: true);
     		X0Y0_柄_柄左_柄1CP = new ColorP(X0Y0_柄_柄左_柄1, 柄_柄左_柄1CD, DisUnit, abj: true);
-    		柄左 = new Par[2] { X0Y0_柄_柄左_柄2_柄1, X0Y0_柄_柄左_柄2_柄2 };
+    		柄左 = new ShapePart[2] { X0Y0_柄_柄左_柄2_柄1, X0Y0_柄_柄左_柄2_柄2 };
     		X0Y0_柄_柄左_柄2_柄1CP = new ColorP(X0Y0_柄_柄左_柄2_柄1, 柄_柄左_柄2_柄1CD, DisUnit, abj: true);
     		X0Y0_柄_柄左_柄2_柄2CP = new ColorP(X0Y0_柄_柄左_柄2_柄2, 柄_柄左_柄2_柄2CD, DisUnit, abj: true);
     		X0Y0_柄_柄右_柄1CP = new ColorP(X0Y0_柄_柄右_柄1, 柄_柄右_柄1CD, DisUnit, abj: true);
-    		柄右 = new Par[2] { X0Y0_柄_柄右_柄2_柄1, X0Y0_柄_柄右_柄2_柄2 };
+    		柄右 = new ShapePart[2] { X0Y0_柄_柄右_柄2_柄1, X0Y0_柄_柄右_柄2_柄2 };
     		X0Y0_柄_柄右_柄2_柄1CP = new ColorP(X0Y0_柄_柄右_柄2_柄1, 柄_柄右_柄2_柄1CD, DisUnit, abj: true);
     		X0Y0_柄_柄右_柄2_柄2CP = new ColorP(X0Y0_柄_柄右_柄2_柄2, 柄_柄右_柄2_柄2CD, DisUnit, abj: true);
     		Intensity = e.濃度;
     		尺度YB = 0.95;
     	}
 
-    	public override bool Is革(Par p)
+    	public override bool Is革(ShapePart p)
     	{
     		if (p != X0Y0_服 && p != X0Y0_縁_縁左 && p != X0Y0_縁_縁右 && p != X0Y0_柄_柄左_柄1 && p != X0Y0_柄_柄左_柄2_柄1 && p != X0Y0_柄_柄左_柄2_柄2 && p != X0Y0_柄_柄右_柄1 && p != X0Y0_柄_柄右_柄2_柄1)
     		{

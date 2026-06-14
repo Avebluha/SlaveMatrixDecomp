@@ -3,1169 +3,1169 @@ using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
-    public class ハンド : Ele
+    public class ハンド : Element
     {
-    	public Par X0Y0_親指;
+    	public ShapePart X0Y0_親指;
 
-    	public Par X0Y0_手;
+    	public ShapePart X0Y0_手;
 
-    	public Par X0Y0_小指;
+    	public ShapePart X0Y0_小指;
 
-    	public Par X0Y0_薬指;
+    	public ShapePart X0Y0_薬指;
 
-    	public Par X0Y0_中指;
+    	public ShapePart X0Y0_中指;
 
-    	public Par X0Y0_人指;
+    	public ShapePart X0Y0_人指;
 
-    	public Par X0Y0_呪印_輪1_輪外;
+    	public ShapePart X0Y0_呪印_輪1_輪外;
 
-    	public Par X0Y0_呪印_輪1_輪内;
+    	public ShapePart X0Y0_呪印_輪1_輪内;
 
-    	public Par X0Y0_呪印_輪2_輪外;
+    	public ShapePart X0Y0_呪印_輪2_輪外;
 
-    	public Par X0Y0_呪印_輪2_輪内;
+    	public ShapePart X0Y0_呪印_輪2_輪内;
 
-    	public Par X0Y0_呪印_輪3_輪外;
+    	public ShapePart X0Y0_呪印_輪3_輪外;
 
-    	public Par X0Y0_呪印_輪3_輪内;
+    	public ShapePart X0Y0_呪印_輪3_輪内;
 
-    	public Par X0Y0_呪印_鎖1;
+    	public ShapePart X0Y0_呪印_鎖1;
 
-    	public Par X0Y0_呪印_鎖2;
+    	public ShapePart X0Y0_呪印_鎖2;
 
-    	public Par X0Y0_呪印_鎖3;
+    	public ShapePart X0Y0_呪印_鎖3;
 
-    	public Par X1Y0_親指;
+    	public ShapePart X1Y0_親指;
 
-    	public Par X1Y0_手;
+    	public ShapePart X1Y0_手;
 
-    	public Par X1Y0_小指;
+    	public ShapePart X1Y0_小指;
 
-    	public Par X1Y0_薬指;
+    	public ShapePart X1Y0_薬指;
 
-    	public Par X1Y0_中指;
+    	public ShapePart X1Y0_中指;
 
-    	public Par X1Y0_人指;
+    	public ShapePart X1Y0_人指;
 
-    	public Par X1Y0_呪印_輪1_輪外;
+    	public ShapePart X1Y0_呪印_輪1_輪外;
 
-    	public Par X1Y0_呪印_輪1_輪内;
+    	public ShapePart X1Y0_呪印_輪1_輪内;
 
-    	public Par X1Y0_呪印_輪2_輪外;
+    	public ShapePart X1Y0_呪印_輪2_輪外;
 
-    	public Par X1Y0_呪印_輪2_輪内;
+    	public ShapePart X1Y0_呪印_輪2_輪内;
 
-    	public Par X1Y0_呪印_輪3_輪外;
+    	public ShapePart X1Y0_呪印_輪3_輪外;
 
-    	public Par X1Y0_呪印_輪3_輪内;
+    	public ShapePart X1Y0_呪印_輪3_輪内;
 
-    	public Par X1Y0_呪印_鎖1;
+    	public ShapePart X1Y0_呪印_鎖1;
 
-    	public Par X1Y0_呪印_鎖2;
+    	public ShapePart X1Y0_呪印_鎖2;
 
-    	public Par X1Y0_呪印_鎖3;
+    	public ShapePart X1Y0_呪印_鎖3;
 
-    	public Par X2Y0_親指;
+    	public ShapePart X2Y0_親指;
 
-    	public Par X2Y0_手;
+    	public ShapePart X2Y0_手;
 
-    	public Par X2Y0_小指;
+    	public ShapePart X2Y0_小指;
 
-    	public Par X2Y0_薬指;
+    	public ShapePart X2Y0_薬指;
 
-    	public Par X2Y0_中指;
+    	public ShapePart X2Y0_中指;
 
-    	public Par X2Y0_人指;
+    	public ShapePart X2Y0_人指;
 
-    	public Par X2Y0_呪印_輪1_輪外;
+    	public ShapePart X2Y0_呪印_輪1_輪外;
 
-    	public Par X2Y0_呪印_輪1_輪内;
+    	public ShapePart X2Y0_呪印_輪1_輪内;
 
-    	public Par X2Y0_呪印_輪2_輪外;
+    	public ShapePart X2Y0_呪印_輪2_輪外;
 
-    	public Par X2Y0_呪印_輪2_輪内;
+    	public ShapePart X2Y0_呪印_輪2_輪内;
 
-    	public Par X2Y0_呪印_輪3_輪外;
+    	public ShapePart X2Y0_呪印_輪3_輪外;
 
-    	public Par X2Y0_呪印_輪3_輪内;
+    	public ShapePart X2Y0_呪印_輪3_輪内;
 
-    	public Par X2Y0_呪印_鎖1;
+    	public ShapePart X2Y0_呪印_鎖1;
 
-    	public Par X2Y0_呪印_鎖2;
+    	public ShapePart X2Y0_呪印_鎖2;
 
-    	public Par X2Y0_呪印_鎖3;
+    	public ShapePart X2Y0_呪印_鎖3;
 
-    	public Par X2Y1_親指;
+    	public ShapePart X2Y1_親指;
 
-    	public Par X2Y1_手;
+    	public ShapePart X2Y1_手;
 
-    	public Par X2Y1_小指;
+    	public ShapePart X2Y1_小指;
 
-    	public Par X2Y1_薬指;
+    	public ShapePart X2Y1_薬指;
 
-    	public Par X2Y1_中指;
+    	public ShapePart X2Y1_中指;
 
-    	public Par X2Y1_人指;
+    	public ShapePart X2Y1_人指;
 
-    	public Par X2Y1_呪印_輪1_輪外;
+    	public ShapePart X2Y1_呪印_輪1_輪外;
 
-    	public Par X2Y1_呪印_輪1_輪内;
+    	public ShapePart X2Y1_呪印_輪1_輪内;
 
-    	public Par X2Y1_呪印_輪2_輪外;
+    	public ShapePart X2Y1_呪印_輪2_輪外;
 
-    	public Par X2Y1_呪印_輪2_輪内;
+    	public ShapePart X2Y1_呪印_輪2_輪内;
 
-    	public Par X2Y1_呪印_輪3_輪外;
+    	public ShapePart X2Y1_呪印_輪3_輪外;
 
-    	public Par X2Y1_呪印_輪3_輪内;
+    	public ShapePart X2Y1_呪印_輪3_輪内;
 
-    	public Par X2Y1_呪印_鎖1;
+    	public ShapePart X2Y1_呪印_鎖1;
 
-    	public Par X2Y1_呪印_鎖2;
+    	public ShapePart X2Y1_呪印_鎖2;
 
-    	public Par X2Y1_呪印_鎖3;
+    	public ShapePart X2Y1_呪印_鎖3;
 
-    	public Par X2Y2_親指;
+    	public ShapePart X2Y2_親指;
 
-    	public Par X2Y2_手;
+    	public ShapePart X2Y2_手;
 
-    	public Par X2Y2_小指;
+    	public ShapePart X2Y2_小指;
 
-    	public Par X2Y2_薬指;
+    	public ShapePart X2Y2_薬指;
 
-    	public Par X2Y2_中指;
+    	public ShapePart X2Y2_中指;
 
-    	public Par X2Y2_人指;
+    	public ShapePart X2Y2_人指;
 
-    	public Par X2Y2_呪印_輪1_輪外;
+    	public ShapePart X2Y2_呪印_輪1_輪外;
 
-    	public Par X2Y2_呪印_輪1_輪内;
+    	public ShapePart X2Y2_呪印_輪1_輪内;
 
-    	public Par X2Y2_呪印_輪2_輪外;
+    	public ShapePart X2Y2_呪印_輪2_輪外;
 
-    	public Par X2Y2_呪印_輪2_輪内;
+    	public ShapePart X2Y2_呪印_輪2_輪内;
 
-    	public Par X2Y2_呪印_輪3_輪外;
+    	public ShapePart X2Y2_呪印_輪3_輪外;
 
-    	public Par X2Y2_呪印_輪3_輪内;
+    	public ShapePart X2Y2_呪印_輪3_輪内;
 
-    	public Par X2Y2_呪印_鎖1;
+    	public ShapePart X2Y2_呪印_鎖1;
 
-    	public Par X2Y2_呪印_鎖2;
+    	public ShapePart X2Y2_呪印_鎖2;
 
-    	public Par X2Y2_呪印_鎖3;
+    	public ShapePart X2Y2_呪印_鎖3;
 
-    	public Par X2Y3_親指;
+    	public ShapePart X2Y3_親指;
 
-    	public Par X2Y3_手;
+    	public ShapePart X2Y3_手;
 
-    	public Par X2Y3_小指;
+    	public ShapePart X2Y3_小指;
 
-    	public Par X2Y3_薬指;
+    	public ShapePart X2Y3_薬指;
 
-    	public Par X2Y3_中指;
+    	public ShapePart X2Y3_中指;
 
-    	public Par X2Y3_人指;
+    	public ShapePart X2Y3_人指;
 
-    	public Par X2Y3_呪印_輪1_輪外;
+    	public ShapePart X2Y3_呪印_輪1_輪外;
 
-    	public Par X2Y3_呪印_輪1_輪内;
+    	public ShapePart X2Y3_呪印_輪1_輪内;
 
-    	public Par X2Y3_呪印_輪2_輪外;
+    	public ShapePart X2Y3_呪印_輪2_輪外;
 
-    	public Par X2Y3_呪印_輪2_輪内;
+    	public ShapePart X2Y3_呪印_輪2_輪内;
 
-    	public Par X2Y3_呪印_輪3_輪外;
+    	public ShapePart X2Y3_呪印_輪3_輪外;
 
-    	public Par X2Y3_呪印_輪3_輪内;
+    	public ShapePart X2Y3_呪印_輪3_輪内;
 
-    	public Par X2Y3_呪印_鎖1;
+    	public ShapePart X2Y3_呪印_鎖1;
 
-    	public Par X2Y3_呪印_鎖2;
+    	public ShapePart X2Y3_呪印_鎖2;
 
-    	public Par X2Y3_呪印_鎖3;
+    	public ShapePart X2Y3_呪印_鎖3;
 
-    	public Par X2Y4_親指;
+    	public ShapePart X2Y4_親指;
 
-    	public Par X2Y4_手;
+    	public ShapePart X2Y4_手;
 
-    	public Par X2Y4_小指;
+    	public ShapePart X2Y4_小指;
 
-    	public Par X2Y4_薬指;
+    	public ShapePart X2Y4_薬指;
 
-    	public Par X2Y4_中指;
+    	public ShapePart X2Y4_中指;
 
-    	public Par X2Y4_人指;
+    	public ShapePart X2Y4_人指;
 
-    	public Par X2Y4_呪印_輪1_輪外;
+    	public ShapePart X2Y4_呪印_輪1_輪外;
 
-    	public Par X2Y4_呪印_輪1_輪内;
+    	public ShapePart X2Y4_呪印_輪1_輪内;
 
-    	public Par X2Y4_呪印_輪2_輪外;
+    	public ShapePart X2Y4_呪印_輪2_輪外;
 
-    	public Par X2Y4_呪印_輪2_輪内;
+    	public ShapePart X2Y4_呪印_輪2_輪内;
 
-    	public Par X2Y4_呪印_輪3_輪外;
+    	public ShapePart X2Y4_呪印_輪3_輪外;
 
-    	public Par X2Y4_呪印_輪3_輪内;
+    	public ShapePart X2Y4_呪印_輪3_輪内;
 
-    	public Par X2Y4_呪印_鎖1;
+    	public ShapePart X2Y4_呪印_鎖1;
 
-    	public Par X2Y4_呪印_鎖2;
+    	public ShapePart X2Y4_呪印_鎖2;
 
-    	public Par X2Y4_呪印_鎖3;
+    	public ShapePart X2Y4_呪印_鎖3;
 
-    	public Par X3Y0_親指;
+    	public ShapePart X3Y0_親指;
 
-    	public Par X3Y0_手;
+    	public ShapePart X3Y0_手;
 
-    	public Par X3Y0_小指;
+    	public ShapePart X3Y0_小指;
 
-    	public Par X3Y0_薬指;
+    	public ShapePart X3Y0_薬指;
 
-    	public Par X3Y0_中指;
+    	public ShapePart X3Y0_中指;
 
-    	public Par X3Y0_人指;
+    	public ShapePart X3Y0_人指;
 
-    	public Par X3Y0_呪印_輪1_輪外;
+    	public ShapePart X3Y0_呪印_輪1_輪外;
 
-    	public Par X3Y0_呪印_輪1_輪内;
+    	public ShapePart X3Y0_呪印_輪1_輪内;
 
-    	public Par X3Y0_呪印_輪2_輪外;
+    	public ShapePart X3Y0_呪印_輪2_輪外;
 
-    	public Par X3Y0_呪印_輪2_輪内;
+    	public ShapePart X3Y0_呪印_輪2_輪内;
 
-    	public Par X3Y0_呪印_輪3_輪外;
+    	public ShapePart X3Y0_呪印_輪3_輪外;
 
-    	public Par X3Y0_呪印_輪3_輪内;
+    	public ShapePart X3Y0_呪印_輪3_輪内;
 
-    	public Par X3Y0_呪印_鎖1;
+    	public ShapePart X3Y0_呪印_鎖1;
 
-    	public Par X3Y0_呪印_鎖2;
+    	public ShapePart X3Y0_呪印_鎖2;
 
-    	public Par X3Y0_呪印_鎖3;
+    	public ShapePart X3Y0_呪印_鎖3;
 
-    	public Par X4Y0_親指;
+    	public ShapePart X4Y0_親指;
 
-    	public Par X4Y0_手;
+    	public ShapePart X4Y0_手;
 
-    	public Par X4Y0_小指;
+    	public ShapePart X4Y0_小指;
 
-    	public Par X4Y0_薬指;
+    	public ShapePart X4Y0_薬指;
 
-    	public Par X4Y0_中指;
+    	public ShapePart X4Y0_中指;
 
-    	public Par X4Y0_人指;
+    	public ShapePart X4Y0_人指;
 
-    	public Par X4Y0_呪印_輪1_輪外;
+    	public ShapePart X4Y0_呪印_輪1_輪外;
 
-    	public Par X4Y0_呪印_輪1_輪内;
+    	public ShapePart X4Y0_呪印_輪1_輪内;
 
-    	public Par X4Y0_呪印_輪2_輪外;
+    	public ShapePart X4Y0_呪印_輪2_輪外;
 
-    	public Par X4Y0_呪印_輪2_輪内;
+    	public ShapePart X4Y0_呪印_輪2_輪内;
 
-    	public Par X4Y0_呪印_輪3_輪外;
+    	public ShapePart X4Y0_呪印_輪3_輪外;
 
-    	public Par X4Y0_呪印_輪3_輪内;
+    	public ShapePart X4Y0_呪印_輪3_輪内;
 
-    	public Par X4Y0_呪印_鎖1;
+    	public ShapePart X4Y0_呪印_鎖1;
 
-    	public Par X4Y0_呪印_鎖2;
+    	public ShapePart X4Y0_呪印_鎖2;
 
-    	public Par X4Y0_呪印_鎖3;
+    	public ShapePart X4Y0_呪印_鎖3;
 
-    	public Par X5Y0_親指;
+    	public ShapePart X5Y0_親指;
 
-    	public Par X5Y0_手;
+    	public ShapePart X5Y0_手;
 
-    	public Par X5Y0_小指;
+    	public ShapePart X5Y0_小指;
 
-    	public Par X5Y0_薬指;
+    	public ShapePart X5Y0_薬指;
 
-    	public Par X5Y0_中指;
+    	public ShapePart X5Y0_中指;
 
-    	public Par X5Y0_人指;
+    	public ShapePart X5Y0_人指;
 
-    	public Par X5Y0_呪印_輪1_輪外;
+    	public ShapePart X5Y0_呪印_輪1_輪外;
 
-    	public Par X5Y0_呪印_輪1_輪内;
+    	public ShapePart X5Y0_呪印_輪1_輪内;
 
-    	public Par X5Y0_呪印_輪2_輪外;
+    	public ShapePart X5Y0_呪印_輪2_輪外;
 
-    	public Par X5Y0_呪印_輪2_輪内;
+    	public ShapePart X5Y0_呪印_輪2_輪内;
 
-    	public Par X5Y0_呪印_輪3_輪外;
+    	public ShapePart X5Y0_呪印_輪3_輪外;
 
-    	public Par X5Y0_呪印_輪3_輪内;
+    	public ShapePart X5Y0_呪印_輪3_輪内;
 
-    	public Par X5Y0_呪印_鎖1;
+    	public ShapePart X5Y0_呪印_鎖1;
 
-    	public Par X5Y0_呪印_鎖2;
+    	public ShapePart X5Y0_呪印_鎖2;
 
-    	public Par X5Y0_呪印_鎖3;
+    	public ShapePart X5Y0_呪印_鎖3;
 
-    	public Par X5Y1_親指;
+    	public ShapePart X5Y1_親指;
 
-    	public Par X5Y1_手;
+    	public ShapePart X5Y1_手;
 
-    	public Par X5Y1_小指;
+    	public ShapePart X5Y1_小指;
 
-    	public Par X5Y1_薬指;
+    	public ShapePart X5Y1_薬指;
 
-    	public Par X5Y1_中指;
+    	public ShapePart X5Y1_中指;
 
-    	public Par X5Y1_人指;
+    	public ShapePart X5Y1_人指;
 
-    	public Par X5Y1_呪印_輪1_輪外;
+    	public ShapePart X5Y1_呪印_輪1_輪外;
 
-    	public Par X5Y1_呪印_輪1_輪内;
+    	public ShapePart X5Y1_呪印_輪1_輪内;
 
-    	public Par X5Y1_呪印_輪2_輪外;
+    	public ShapePart X5Y1_呪印_輪2_輪外;
 
-    	public Par X5Y1_呪印_輪2_輪内;
+    	public ShapePart X5Y1_呪印_輪2_輪内;
 
-    	public Par X5Y1_呪印_輪3_輪外;
+    	public ShapePart X5Y1_呪印_輪3_輪外;
 
-    	public Par X5Y1_呪印_輪3_輪内;
+    	public ShapePart X5Y1_呪印_輪3_輪内;
 
-    	public Par X5Y1_呪印_鎖1;
+    	public ShapePart X5Y1_呪印_鎖1;
 
-    	public Par X5Y1_呪印_鎖2;
+    	public ShapePart X5Y1_呪印_鎖2;
 
-    	public Par X5Y1_呪印_鎖3;
+    	public ShapePart X5Y1_呪印_鎖3;
 
-    	public Par X5Y2_親指;
+    	public ShapePart X5Y2_親指;
 
-    	public Par X5Y2_手;
+    	public ShapePart X5Y2_手;
 
-    	public Par X5Y2_小指;
+    	public ShapePart X5Y2_小指;
 
-    	public Par X5Y2_薬指;
+    	public ShapePart X5Y2_薬指;
 
-    	public Par X5Y2_中指;
+    	public ShapePart X5Y2_中指;
 
-    	public Par X5Y2_人指;
+    	public ShapePart X5Y2_人指;
 
-    	public Par X5Y2_呪印_輪1_輪外;
+    	public ShapePart X5Y2_呪印_輪1_輪外;
 
-    	public Par X5Y2_呪印_輪1_輪内;
+    	public ShapePart X5Y2_呪印_輪1_輪内;
 
-    	public Par X5Y2_呪印_輪2_輪外;
+    	public ShapePart X5Y2_呪印_輪2_輪外;
 
-    	public Par X5Y2_呪印_輪2_輪内;
+    	public ShapePart X5Y2_呪印_輪2_輪内;
 
-    	public Par X5Y2_呪印_輪3_輪外;
+    	public ShapePart X5Y2_呪印_輪3_輪外;
 
-    	public Par X5Y2_呪印_輪3_輪内;
+    	public ShapePart X5Y2_呪印_輪3_輪内;
 
-    	public Par X5Y2_呪印_鎖1;
+    	public ShapePart X5Y2_呪印_鎖1;
 
-    	public Par X5Y2_呪印_鎖2;
+    	public ShapePart X5Y2_呪印_鎖2;
 
-    	public Par X5Y2_呪印_鎖3;
+    	public ShapePart X5Y2_呪印_鎖3;
 
-    	public Par X5Y3_親指;
+    	public ShapePart X5Y3_親指;
 
-    	public Par X5Y3_手;
+    	public ShapePart X5Y3_手;
 
-    	public Par X5Y3_小指;
+    	public ShapePart X5Y3_小指;
 
-    	public Par X5Y3_薬指;
+    	public ShapePart X5Y3_薬指;
 
-    	public Par X5Y3_中指;
+    	public ShapePart X5Y3_中指;
 
-    	public Par X5Y3_人指;
+    	public ShapePart X5Y3_人指;
 
-    	public Par X5Y3_呪印_輪1_輪外;
+    	public ShapePart X5Y3_呪印_輪1_輪外;
 
-    	public Par X5Y3_呪印_輪1_輪内;
+    	public ShapePart X5Y3_呪印_輪1_輪内;
 
-    	public Par X5Y3_呪印_輪2_輪外;
+    	public ShapePart X5Y3_呪印_輪2_輪外;
 
-    	public Par X5Y3_呪印_輪2_輪内;
+    	public ShapePart X5Y3_呪印_輪2_輪内;
 
-    	public Par X5Y3_呪印_輪3_輪外;
+    	public ShapePart X5Y3_呪印_輪3_輪外;
 
-    	public Par X5Y3_呪印_輪3_輪内;
+    	public ShapePart X5Y3_呪印_輪3_輪内;
 
-    	public Par X5Y3_呪印_鎖1;
+    	public ShapePart X5Y3_呪印_鎖1;
 
-    	public Par X5Y3_呪印_鎖2;
+    	public ShapePart X5Y3_呪印_鎖2;
 
-    	public Par X5Y3_呪印_鎖3;
+    	public ShapePart X5Y3_呪印_鎖3;
 
-    	public Par X5Y4_親指;
+    	public ShapePart X5Y4_親指;
 
-    	public Par X5Y4_手;
+    	public ShapePart X5Y4_手;
 
-    	public Par X5Y4_小指;
+    	public ShapePart X5Y4_小指;
 
-    	public Par X5Y4_薬指;
+    	public ShapePart X5Y4_薬指;
 
-    	public Par X5Y4_中指;
+    	public ShapePart X5Y4_中指;
 
-    	public Par X5Y4_人指;
+    	public ShapePart X5Y4_人指;
 
-    	public Par X5Y4_呪印_輪1_輪外;
+    	public ShapePart X5Y4_呪印_輪1_輪外;
 
-    	public Par X5Y4_呪印_輪1_輪内;
+    	public ShapePart X5Y4_呪印_輪1_輪内;
 
-    	public Par X5Y4_呪印_輪2_輪外;
+    	public ShapePart X5Y4_呪印_輪2_輪外;
 
-    	public Par X5Y4_呪印_輪2_輪内;
+    	public ShapePart X5Y4_呪印_輪2_輪内;
 
-    	public Par X5Y4_呪印_輪3_輪外;
+    	public ShapePart X5Y4_呪印_輪3_輪外;
 
-    	public Par X5Y4_呪印_輪3_輪内;
+    	public ShapePart X5Y4_呪印_輪3_輪内;
 
-    	public Par X5Y4_呪印_鎖1;
+    	public ShapePart X5Y4_呪印_鎖1;
 
-    	public Par X5Y4_呪印_鎖2;
+    	public ShapePart X5Y4_呪印_鎖2;
 
-    	public Par X5Y4_呪印_鎖3;
+    	public ShapePart X5Y4_呪印_鎖3;
 
-    	public Par X6Y0_親指;
+    	public ShapePart X6Y0_親指;
 
-    	public Par X6Y0_手;
+    	public ShapePart X6Y0_手;
 
-    	public Par X6Y0_小指;
+    	public ShapePart X6Y0_小指;
 
-    	public Par X6Y0_薬指;
+    	public ShapePart X6Y0_薬指;
 
-    	public Par X6Y0_中指;
+    	public ShapePart X6Y0_中指;
 
-    	public Par X6Y0_人指;
+    	public ShapePart X6Y0_人指;
 
-    	public Par X6Y0_呪印_輪1_輪外;
+    	public ShapePart X6Y0_呪印_輪1_輪外;
 
-    	public Par X6Y0_呪印_輪1_輪内;
+    	public ShapePart X6Y0_呪印_輪1_輪内;
 
-    	public Par X6Y0_呪印_輪2_輪外;
+    	public ShapePart X6Y0_呪印_輪2_輪外;
 
-    	public Par X6Y0_呪印_輪2_輪内;
+    	public ShapePart X6Y0_呪印_輪2_輪内;
 
-    	public Par X6Y0_呪印_輪3_輪外;
+    	public ShapePart X6Y0_呪印_輪3_輪外;
 
-    	public Par X6Y0_呪印_輪3_輪内;
+    	public ShapePart X6Y0_呪印_輪3_輪内;
 
-    	public Par X6Y0_呪印_鎖1;
+    	public ShapePart X6Y0_呪印_鎖1;
 
-    	public Par X6Y0_呪印_鎖2;
+    	public ShapePart X6Y0_呪印_鎖2;
 
-    	public Par X6Y0_呪印_鎖3;
+    	public ShapePart X6Y0_呪印_鎖3;
 
-    	public Par X6Y1_親指;
+    	public ShapePart X6Y1_親指;
 
-    	public Par X6Y1_手;
+    	public ShapePart X6Y1_手;
 
-    	public Par X6Y1_小指;
+    	public ShapePart X6Y1_小指;
 
-    	public Par X6Y1_薬指;
+    	public ShapePart X6Y1_薬指;
 
-    	public Par X6Y1_中指;
+    	public ShapePart X6Y1_中指;
 
-    	public Par X6Y1_人指;
+    	public ShapePart X6Y1_人指;
 
-    	public Par X6Y1_呪印_輪1_輪外;
+    	public ShapePart X6Y1_呪印_輪1_輪外;
 
-    	public Par X6Y1_呪印_輪1_輪内;
+    	public ShapePart X6Y1_呪印_輪1_輪内;
 
-    	public Par X6Y1_呪印_輪2_輪外;
+    	public ShapePart X6Y1_呪印_輪2_輪外;
 
-    	public Par X6Y1_呪印_輪2_輪内;
+    	public ShapePart X6Y1_呪印_輪2_輪内;
 
-    	public Par X6Y1_呪印_輪3_輪外;
+    	public ShapePart X6Y1_呪印_輪3_輪外;
 
-    	public Par X6Y1_呪印_輪3_輪内;
+    	public ShapePart X6Y1_呪印_輪3_輪内;
 
-    	public Par X6Y1_呪印_鎖1;
+    	public ShapePart X6Y1_呪印_鎖1;
 
-    	public Par X6Y1_呪印_鎖2;
+    	public ShapePart X6Y1_呪印_鎖2;
 
-    	public Par X6Y1_呪印_鎖3;
+    	public ShapePart X6Y1_呪印_鎖3;
 
-    	public Par X6Y2_親指;
+    	public ShapePart X6Y2_親指;
 
-    	public Par X6Y2_手;
+    	public ShapePart X6Y2_手;
 
-    	public Par X6Y2_小指;
+    	public ShapePart X6Y2_小指;
 
-    	public Par X6Y2_薬指;
+    	public ShapePart X6Y2_薬指;
 
-    	public Par X6Y2_中指;
+    	public ShapePart X6Y2_中指;
 
-    	public Par X6Y2_人指;
+    	public ShapePart X6Y2_人指;
 
-    	public Par X6Y2_呪印_輪1_輪外;
+    	public ShapePart X6Y2_呪印_輪1_輪外;
 
-    	public Par X6Y2_呪印_輪1_輪内;
+    	public ShapePart X6Y2_呪印_輪1_輪内;
 
-    	public Par X6Y2_呪印_輪2_輪外;
+    	public ShapePart X6Y2_呪印_輪2_輪外;
 
-    	public Par X6Y2_呪印_輪2_輪内;
+    	public ShapePart X6Y2_呪印_輪2_輪内;
 
-    	public Par X6Y2_呪印_輪3_輪外;
+    	public ShapePart X6Y2_呪印_輪3_輪外;
 
-    	public Par X6Y2_呪印_輪3_輪内;
+    	public ShapePart X6Y2_呪印_輪3_輪内;
 
-    	public Par X6Y2_呪印_鎖1;
+    	public ShapePart X6Y2_呪印_鎖1;
 
-    	public Par X6Y2_呪印_鎖2;
+    	public ShapePart X6Y2_呪印_鎖2;
 
-    	public Par X6Y2_呪印_鎖3;
+    	public ShapePart X6Y2_呪印_鎖3;
 
-    	public Par X6Y3_親指;
+    	public ShapePart X6Y3_親指;
 
-    	public Par X6Y3_手;
+    	public ShapePart X6Y3_手;
 
-    	public Par X6Y3_小指;
+    	public ShapePart X6Y3_小指;
 
-    	public Par X6Y3_薬指;
+    	public ShapePart X6Y3_薬指;
 
-    	public Par X6Y3_中指;
+    	public ShapePart X6Y3_中指;
 
-    	public Par X6Y3_人指;
+    	public ShapePart X6Y3_人指;
 
-    	public Par X6Y3_呪印_輪1_輪外;
+    	public ShapePart X6Y3_呪印_輪1_輪外;
 
-    	public Par X6Y3_呪印_輪1_輪内;
+    	public ShapePart X6Y3_呪印_輪1_輪内;
 
-    	public Par X6Y3_呪印_輪2_輪外;
+    	public ShapePart X6Y3_呪印_輪2_輪外;
 
-    	public Par X6Y3_呪印_輪2_輪内;
+    	public ShapePart X6Y3_呪印_輪2_輪内;
 
-    	public Par X6Y3_呪印_輪3_輪外;
+    	public ShapePart X6Y3_呪印_輪3_輪外;
 
-    	public Par X6Y3_呪印_輪3_輪内;
+    	public ShapePart X6Y3_呪印_輪3_輪内;
 
-    	public Par X6Y3_呪印_鎖1;
+    	public ShapePart X6Y3_呪印_鎖1;
 
-    	public Par X6Y3_呪印_鎖2;
+    	public ShapePart X6Y3_呪印_鎖2;
 
-    	public Par X6Y3_呪印_鎖3;
+    	public ShapePart X6Y3_呪印_鎖3;
 
-    	public Par X6Y4_親指;
+    	public ShapePart X6Y4_親指;
 
-    	public Par X6Y4_手;
+    	public ShapePart X6Y4_手;
 
-    	public Par X6Y4_小指;
+    	public ShapePart X6Y4_小指;
 
-    	public Par X6Y4_薬指;
+    	public ShapePart X6Y4_薬指;
 
-    	public Par X6Y4_中指;
+    	public ShapePart X6Y4_中指;
 
-    	public Par X6Y4_人指;
+    	public ShapePart X6Y4_人指;
 
-    	public Par X6Y4_呪印_輪1_輪外;
+    	public ShapePart X6Y4_呪印_輪1_輪外;
 
-    	public Par X6Y4_呪印_輪1_輪内;
+    	public ShapePart X6Y4_呪印_輪1_輪内;
 
-    	public Par X6Y4_呪印_輪2_輪外;
+    	public ShapePart X6Y4_呪印_輪2_輪外;
 
-    	public Par X6Y4_呪印_輪2_輪内;
+    	public ShapePart X6Y4_呪印_輪2_輪内;
 
-    	public Par X6Y4_呪印_輪3_輪外;
+    	public ShapePart X6Y4_呪印_輪3_輪外;
 
-    	public Par X6Y4_呪印_輪3_輪内;
+    	public ShapePart X6Y4_呪印_輪3_輪内;
 
-    	public Par X6Y4_呪印_鎖1;
+    	public ShapePart X6Y4_呪印_鎖1;
 
-    	public Par X6Y4_呪印_鎖2;
+    	public ShapePart X6Y4_呪印_鎖2;
 
-    	public Par X6Y4_呪印_鎖3;
+    	public ShapePart X6Y4_呪印_鎖3;
 
-    	public Par X7Y0_小指;
+    	public ShapePart X7Y0_小指;
 
-    	public Par X7Y0_薬指;
+    	public ShapePart X7Y0_薬指;
 
-    	public Par X7Y0_中指;
+    	public ShapePart X7Y0_中指;
 
-    	public Par X7Y0_親指;
+    	public ShapePart X7Y0_親指;
 
-    	public Par X7Y0_手;
+    	public ShapePart X7Y0_手;
 
-    	public Par X7Y0_人指;
+    	public ShapePart X7Y0_人指;
 
-    	public Par X7Y0_呪印_輪1_輪外;
+    	public ShapePart X7Y0_呪印_輪1_輪外;
 
-    	public Par X7Y0_呪印_輪1_輪内;
+    	public ShapePart X7Y0_呪印_輪1_輪内;
 
-    	public Par X7Y0_呪印_輪2_輪外;
+    	public ShapePart X7Y0_呪印_輪2_輪外;
 
-    	public Par X7Y0_呪印_輪2_輪内;
+    	public ShapePart X7Y0_呪印_輪2_輪内;
 
-    	public Par X7Y0_呪印_輪3_輪外;
+    	public ShapePart X7Y0_呪印_輪3_輪外;
 
-    	public Par X7Y0_呪印_輪3_輪内;
+    	public ShapePart X7Y0_呪印_輪3_輪内;
 
-    	public Par X7Y0_呪印_鎖1;
+    	public ShapePart X7Y0_呪印_鎖1;
 
-    	public Par X7Y0_呪印_鎖2;
+    	public ShapePart X7Y0_呪印_鎖2;
 
-    	public Par X7Y0_呪印_鎖3;
+    	public ShapePart X7Y0_呪印_鎖3;
 
-    	public Par X7Y1_小指;
+    	public ShapePart X7Y1_小指;
 
-    	public Par X7Y1_薬指;
+    	public ShapePart X7Y1_薬指;
 
-    	public Par X7Y1_中指;
+    	public ShapePart X7Y1_中指;
 
-    	public Par X7Y1_親指;
+    	public ShapePart X7Y1_親指;
 
-    	public Par X7Y1_手;
+    	public ShapePart X7Y1_手;
 
-    	public Par X7Y1_人指;
+    	public ShapePart X7Y1_人指;
 
-    	public Par X7Y1_呪印_輪1_輪外;
+    	public ShapePart X7Y1_呪印_輪1_輪外;
 
-    	public Par X7Y1_呪印_輪1_輪内;
+    	public ShapePart X7Y1_呪印_輪1_輪内;
 
-    	public Par X7Y1_呪印_輪2_輪外;
+    	public ShapePart X7Y1_呪印_輪2_輪外;
 
-    	public Par X7Y1_呪印_輪2_輪内;
+    	public ShapePart X7Y1_呪印_輪2_輪内;
 
-    	public Par X7Y1_呪印_輪3_輪外;
+    	public ShapePart X7Y1_呪印_輪3_輪外;
 
-    	public Par X7Y1_呪印_輪3_輪内;
+    	public ShapePart X7Y1_呪印_輪3_輪内;
 
-    	public Par X7Y1_呪印_鎖1;
+    	public ShapePart X7Y1_呪印_鎖1;
 
-    	public Par X7Y1_呪印_鎖2;
+    	public ShapePart X7Y1_呪印_鎖2;
 
-    	public Par X7Y1_呪印_鎖3;
+    	public ShapePart X7Y1_呪印_鎖3;
 
-    	public Par X7Y2_小指;
+    	public ShapePart X7Y2_小指;
 
-    	public Par X7Y2_薬指;
+    	public ShapePart X7Y2_薬指;
 
-    	public Par X7Y2_中指;
+    	public ShapePart X7Y2_中指;
 
-    	public Par X7Y2_親指;
+    	public ShapePart X7Y2_親指;
 
-    	public Par X7Y2_手;
+    	public ShapePart X7Y2_手;
 
-    	public Par X7Y2_人指;
+    	public ShapePart X7Y2_人指;
 
-    	public Par X7Y2_呪印_輪1_輪外;
+    	public ShapePart X7Y2_呪印_輪1_輪外;
 
-    	public Par X7Y2_呪印_輪1_輪内;
+    	public ShapePart X7Y2_呪印_輪1_輪内;
 
-    	public Par X7Y2_呪印_輪2_輪外;
+    	public ShapePart X7Y2_呪印_輪2_輪外;
 
-    	public Par X7Y2_呪印_輪2_輪内;
+    	public ShapePart X7Y2_呪印_輪2_輪内;
 
-    	public Par X7Y2_呪印_輪3_輪外;
+    	public ShapePart X7Y2_呪印_輪3_輪外;
 
-    	public Par X7Y2_呪印_輪3_輪内;
+    	public ShapePart X7Y2_呪印_輪3_輪内;
 
-    	public Par X7Y2_呪印_鎖1;
+    	public ShapePart X7Y2_呪印_鎖1;
 
-    	public Par X7Y2_呪印_鎖2;
+    	public ShapePart X7Y2_呪印_鎖2;
 
-    	public Par X7Y2_呪印_鎖3;
+    	public ShapePart X7Y2_呪印_鎖3;
 
-    	public Par X7Y3_小指;
+    	public ShapePart X7Y3_小指;
 
-    	public Par X7Y3_薬指;
+    	public ShapePart X7Y3_薬指;
 
-    	public Par X7Y3_中指;
+    	public ShapePart X7Y3_中指;
 
-    	public Par X7Y3_親指;
+    	public ShapePart X7Y3_親指;
 
-    	public Par X7Y3_手;
+    	public ShapePart X7Y3_手;
 
-    	public Par X7Y3_人指;
+    	public ShapePart X7Y3_人指;
 
-    	public Par X7Y3_呪印_輪1_輪外;
+    	public ShapePart X7Y3_呪印_輪1_輪外;
 
-    	public Par X7Y3_呪印_輪1_輪内;
+    	public ShapePart X7Y3_呪印_輪1_輪内;
 
-    	public Par X7Y3_呪印_輪2_輪外;
+    	public ShapePart X7Y3_呪印_輪2_輪外;
 
-    	public Par X7Y3_呪印_輪2_輪内;
+    	public ShapePart X7Y3_呪印_輪2_輪内;
 
-    	public Par X7Y3_呪印_輪3_輪外;
+    	public ShapePart X7Y3_呪印_輪3_輪外;
 
-    	public Par X7Y3_呪印_輪3_輪内;
+    	public ShapePart X7Y3_呪印_輪3_輪内;
 
-    	public Par X7Y3_呪印_鎖1;
+    	public ShapePart X7Y3_呪印_鎖1;
 
-    	public Par X7Y3_呪印_鎖2;
+    	public ShapePart X7Y3_呪印_鎖2;
 
-    	public Par X7Y3_呪印_鎖3;
+    	public ShapePart X7Y3_呪印_鎖3;
 
-    	public Par X7Y4_小指;
+    	public ShapePart X7Y4_小指;
 
-    	public Par X7Y4_薬指;
+    	public ShapePart X7Y4_薬指;
 
-    	public Par X7Y4_中指;
+    	public ShapePart X7Y4_中指;
 
-    	public Par X7Y4_親指;
+    	public ShapePart X7Y4_親指;
 
-    	public Par X7Y4_手;
+    	public ShapePart X7Y4_手;
 
-    	public Par X7Y4_人指;
+    	public ShapePart X7Y4_人指;
 
-    	public Par X7Y4_呪印_輪1_輪外;
+    	public ShapePart X7Y4_呪印_輪1_輪外;
 
-    	public Par X7Y4_呪印_輪1_輪内;
+    	public ShapePart X7Y4_呪印_輪1_輪内;
 
-    	public Par X7Y4_呪印_輪2_輪外;
+    	public ShapePart X7Y4_呪印_輪2_輪外;
 
-    	public Par X7Y4_呪印_輪2_輪内;
+    	public ShapePart X7Y4_呪印_輪2_輪内;
 
-    	public Par X7Y4_呪印_輪3_輪外;
+    	public ShapePart X7Y4_呪印_輪3_輪外;
 
-    	public Par X7Y4_呪印_輪3_輪内;
+    	public ShapePart X7Y4_呪印_輪3_輪内;
 
-    	public Par X7Y4_呪印_鎖1;
+    	public ShapePart X7Y4_呪印_鎖1;
 
-    	public Par X7Y4_呪印_鎖2;
+    	public ShapePart X7Y4_呪印_鎖2;
 
-    	public Par X7Y4_呪印_鎖3;
+    	public ShapePart X7Y4_呪印_鎖3;
 
-    	public Par X8Y0_手;
+    	public ShapePart X8Y0_手;
 
-    	public Par X8Y0_小指;
+    	public ShapePart X8Y0_小指;
 
-    	public Par X8Y0_薬指;
+    	public ShapePart X8Y0_薬指;
 
-    	public Par X8Y0_中指;
+    	public ShapePart X8Y0_中指;
 
-    	public Par X8Y0_人指;
+    	public ShapePart X8Y0_人指;
 
-    	public Par X8Y0_親指;
+    	public ShapePart X8Y0_親指;
 
-    	public Par X8Y1_手;
+    	public ShapePart X8Y1_手;
 
-    	public Par X8Y1_小指;
+    	public ShapePart X8Y1_小指;
 
-    	public Par X8Y1_薬指;
+    	public ShapePart X8Y1_薬指;
 
-    	public Par X8Y1_中指;
+    	public ShapePart X8Y1_中指;
 
-    	public Par X8Y1_人指;
+    	public ShapePart X8Y1_人指;
 
-    	public Par X8Y1_親指;
+    	public ShapePart X8Y1_親指;
 
-    	public Par X8Y2_手;
+    	public ShapePart X8Y2_手;
 
-    	public Par X8Y2_小指;
+    	public ShapePart X8Y2_小指;
 
-    	public Par X8Y2_薬指;
+    	public ShapePart X8Y2_薬指;
 
-    	public Par X8Y2_中指;
+    	public ShapePart X8Y2_中指;
 
-    	public Par X8Y2_人指;
+    	public ShapePart X8Y2_人指;
 
-    	public Par X8Y2_親指;
+    	public ShapePart X8Y2_親指;
 
-    	public Par X8Y3_手;
+    	public ShapePart X8Y3_手;
 
-    	public Par X8Y3_小指;
+    	public ShapePart X8Y3_小指;
 
-    	public Par X8Y3_薬指;
+    	public ShapePart X8Y3_薬指;
 
-    	public Par X8Y3_中指;
+    	public ShapePart X8Y3_中指;
 
-    	public Par X8Y3_人指;
+    	public ShapePart X8Y3_人指;
 
-    	public Par X8Y3_親指;
+    	public ShapePart X8Y3_親指;
 
-    	public Par X8Y4_手;
+    	public ShapePart X8Y4_手;
 
-    	public Par X8Y4_小指;
+    	public ShapePart X8Y4_小指;
 
-    	public Par X8Y4_薬指;
+    	public ShapePart X8Y4_薬指;
 
-    	public Par X8Y4_中指;
+    	public ShapePart X8Y4_中指;
 
-    	public Par X8Y4_人指;
+    	public ShapePart X8Y4_人指;
 
-    	public Par X8Y4_親指;
+    	public ShapePart X8Y4_親指;
 
-    	public Par X9Y0_手;
+    	public ShapePart X9Y0_手;
 
-    	public Par X9Y0_小指;
+    	public ShapePart X9Y0_小指;
 
-    	public Par X9Y0_薬指;
+    	public ShapePart X9Y0_薬指;
 
-    	public Par X9Y0_中指;
+    	public ShapePart X9Y0_中指;
 
-    	public Par X9Y0_人指;
+    	public ShapePart X9Y0_人指;
 
-    	public Par X9Y0_親指;
+    	public ShapePart X9Y0_親指;
 
-    	public Par X9Y1_手;
+    	public ShapePart X9Y1_手;
 
-    	public Par X9Y1_小指;
+    	public ShapePart X9Y1_小指;
 
-    	public Par X9Y1_薬指;
+    	public ShapePart X9Y1_薬指;
 
-    	public Par X9Y1_中指;
+    	public ShapePart X9Y1_中指;
 
-    	public Par X9Y1_人指;
+    	public ShapePart X9Y1_人指;
 
-    	public Par X9Y1_親指;
+    	public ShapePart X9Y1_親指;
 
-    	public Par X9Y2_手;
+    	public ShapePart X9Y2_手;
 
-    	public Par X9Y2_小指;
+    	public ShapePart X9Y2_小指;
 
-    	public Par X9Y2_薬指;
+    	public ShapePart X9Y2_薬指;
 
-    	public Par X9Y2_中指;
+    	public ShapePart X9Y2_中指;
 
-    	public Par X9Y2_人指;
+    	public ShapePart X9Y2_人指;
 
-    	public Par X9Y2_親指;
+    	public ShapePart X9Y2_親指;
 
-    	public Par X9Y3_手;
+    	public ShapePart X9Y3_手;
 
-    	public Par X9Y3_小指;
+    	public ShapePart X9Y3_小指;
 
-    	public Par X9Y3_薬指;
+    	public ShapePart X9Y3_薬指;
 
-    	public Par X9Y3_中指;
+    	public ShapePart X9Y3_中指;
 
-    	public Par X9Y3_人指;
+    	public ShapePart X9Y3_人指;
 
-    	public Par X9Y3_親指;
+    	public ShapePart X9Y3_親指;
 
-    	public Par X9Y4_手;
+    	public ShapePart X9Y4_手;
 
-    	public Par X9Y4_小指;
+    	public ShapePart X9Y4_小指;
 
-    	public Par X9Y4_薬指;
+    	public ShapePart X9Y4_薬指;
 
-    	public Par X9Y4_中指;
+    	public ShapePart X9Y4_中指;
 
-    	public Par X9Y4_人指;
+    	public ShapePart X9Y4_人指;
 
-    	public Par X9Y4_親指;
+    	public ShapePart X9Y4_親指;
 
-    	public Par X10Y0_親指;
+    	public ShapePart X10Y0_親指;
 
-    	public Par X10Y0_手;
+    	public ShapePart X10Y0_手;
 
-    	public Par X10Y0_小指;
+    	public ShapePart X10Y0_小指;
 
-    	public Par X10Y0_薬指;
+    	public ShapePart X10Y0_薬指;
 
-    	public Par X10Y0_中指;
+    	public ShapePart X10Y0_中指;
 
-    	public Par X10Y0_人指;
+    	public ShapePart X10Y0_人指;
 
-    	public Par X10Y0_呪印_輪1_輪外;
+    	public ShapePart X10Y0_呪印_輪1_輪外;
 
-    	public Par X10Y0_呪印_輪1_輪内;
+    	public ShapePart X10Y0_呪印_輪1_輪内;
 
-    	public Par X10Y0_呪印_輪2_輪外;
+    	public ShapePart X10Y0_呪印_輪2_輪外;
 
-    	public Par X10Y0_呪印_輪2_輪内;
+    	public ShapePart X10Y0_呪印_輪2_輪内;
 
-    	public Par X10Y0_呪印_輪3_輪外;
+    	public ShapePart X10Y0_呪印_輪3_輪外;
 
-    	public Par X10Y0_呪印_輪3_輪内;
+    	public ShapePart X10Y0_呪印_輪3_輪内;
 
-    	public Par X10Y0_呪印_鎖1;
+    	public ShapePart X10Y0_呪印_鎖1;
 
-    	public Par X10Y0_呪印_鎖2;
+    	public ShapePart X10Y0_呪印_鎖2;
 
-    	public Par X10Y0_呪印_鎖3;
+    	public ShapePart X10Y0_呪印_鎖3;
 
-    	public Par X10Y1_親指;
+    	public ShapePart X10Y1_親指;
 
-    	public Par X10Y1_手;
+    	public ShapePart X10Y1_手;
 
-    	public Par X10Y1_小指;
+    	public ShapePart X10Y1_小指;
 
-    	public Par X10Y1_薬指;
+    	public ShapePart X10Y1_薬指;
 
-    	public Par X10Y1_中指;
+    	public ShapePart X10Y1_中指;
 
-    	public Par X10Y1_人指;
+    	public ShapePart X10Y1_人指;
 
-    	public Par X10Y1_呪印_輪1_輪外;
+    	public ShapePart X10Y1_呪印_輪1_輪外;
 
-    	public Par X10Y1_呪印_輪1_輪内;
+    	public ShapePart X10Y1_呪印_輪1_輪内;
 
-    	public Par X10Y1_呪印_輪2_輪外;
+    	public ShapePart X10Y1_呪印_輪2_輪外;
 
-    	public Par X10Y1_呪印_輪2_輪内;
+    	public ShapePart X10Y1_呪印_輪2_輪内;
 
-    	public Par X10Y1_呪印_輪3_輪外;
+    	public ShapePart X10Y1_呪印_輪3_輪外;
 
-    	public Par X10Y1_呪印_輪3_輪内;
+    	public ShapePart X10Y1_呪印_輪3_輪内;
 
-    	public Par X10Y1_呪印_鎖1;
+    	public ShapePart X10Y1_呪印_鎖1;
 
-    	public Par X10Y1_呪印_鎖2;
+    	public ShapePart X10Y1_呪印_鎖2;
 
-    	public Par X10Y1_呪印_鎖3;
+    	public ShapePart X10Y1_呪印_鎖3;
 
-    	public Par X10Y2_親指;
+    	public ShapePart X10Y2_親指;
 
-    	public Par X10Y2_手;
+    	public ShapePart X10Y2_手;
 
-    	public Par X10Y2_小指;
+    	public ShapePart X10Y2_小指;
 
-    	public Par X10Y2_薬指;
+    	public ShapePart X10Y2_薬指;
 
-    	public Par X10Y2_中指;
+    	public ShapePart X10Y2_中指;
 
-    	public Par X10Y2_人指;
+    	public ShapePart X10Y2_人指;
 
-    	public Par X10Y2_呪印_輪1_輪外;
+    	public ShapePart X10Y2_呪印_輪1_輪外;
 
-    	public Par X10Y2_呪印_輪1_輪内;
+    	public ShapePart X10Y2_呪印_輪1_輪内;
 
-    	public Par X10Y2_呪印_輪2_輪外;
+    	public ShapePart X10Y2_呪印_輪2_輪外;
 
-    	public Par X10Y2_呪印_輪2_輪内;
+    	public ShapePart X10Y2_呪印_輪2_輪内;
 
-    	public Par X10Y2_呪印_輪3_輪外;
+    	public ShapePart X10Y2_呪印_輪3_輪外;
 
-    	public Par X10Y2_呪印_輪3_輪内;
+    	public ShapePart X10Y2_呪印_輪3_輪内;
 
-    	public Par X10Y2_呪印_鎖1;
+    	public ShapePart X10Y2_呪印_鎖1;
 
-    	public Par X10Y2_呪印_鎖2;
+    	public ShapePart X10Y2_呪印_鎖2;
 
-    	public Par X10Y2_呪印_鎖3;
+    	public ShapePart X10Y2_呪印_鎖3;
 
-    	public Par X10Y3_親指;
+    	public ShapePart X10Y3_親指;
 
-    	public Par X10Y3_手;
+    	public ShapePart X10Y3_手;
 
-    	public Par X10Y3_小指;
+    	public ShapePart X10Y3_小指;
 
-    	public Par X10Y3_薬指;
+    	public ShapePart X10Y3_薬指;
 
-    	public Par X10Y3_中指;
+    	public ShapePart X10Y3_中指;
 
-    	public Par X10Y3_人指;
+    	public ShapePart X10Y3_人指;
 
-    	public Par X10Y3_呪印_輪1_輪外;
+    	public ShapePart X10Y3_呪印_輪1_輪外;
 
-    	public Par X10Y3_呪印_輪1_輪内;
+    	public ShapePart X10Y3_呪印_輪1_輪内;
 
-    	public Par X10Y3_呪印_輪2_輪外;
+    	public ShapePart X10Y3_呪印_輪2_輪外;
 
-    	public Par X10Y3_呪印_輪2_輪内;
+    	public ShapePart X10Y3_呪印_輪2_輪内;
 
-    	public Par X10Y3_呪印_輪3_輪外;
+    	public ShapePart X10Y3_呪印_輪3_輪外;
 
-    	public Par X10Y3_呪印_輪3_輪内;
+    	public ShapePart X10Y3_呪印_輪3_輪内;
 
-    	public Par X10Y3_呪印_鎖1;
+    	public ShapePart X10Y3_呪印_鎖1;
 
-    	public Par X10Y3_呪印_鎖2;
+    	public ShapePart X10Y3_呪印_鎖2;
 
-    	public Par X10Y3_呪印_鎖3;
+    	public ShapePart X10Y3_呪印_鎖3;
 
-    	public Par X10Y4_親指;
+    	public ShapePart X10Y4_親指;
 
-    	public Par X10Y4_手;
+    	public ShapePart X10Y4_手;
 
-    	public Par X10Y4_小指;
+    	public ShapePart X10Y4_小指;
 
-    	public Par X10Y4_薬指;
+    	public ShapePart X10Y4_薬指;
 
-    	public Par X10Y4_中指;
+    	public ShapePart X10Y4_中指;
 
-    	public Par X10Y4_人指;
+    	public ShapePart X10Y4_人指;
 
-    	public Par X10Y4_呪印_輪1_輪外;
+    	public ShapePart X10Y4_呪印_輪1_輪外;
 
-    	public Par X10Y4_呪印_輪1_輪内;
+    	public ShapePart X10Y4_呪印_輪1_輪内;
 
-    	public Par X10Y4_呪印_輪2_輪外;
+    	public ShapePart X10Y4_呪印_輪2_輪外;
 
-    	public Par X10Y4_呪印_輪2_輪内;
+    	public ShapePart X10Y4_呪印_輪2_輪内;
 
-    	public Par X10Y4_呪印_輪3_輪外;
+    	public ShapePart X10Y4_呪印_輪3_輪外;
 
-    	public Par X10Y4_呪印_輪3_輪内;
+    	public ShapePart X10Y4_呪印_輪3_輪内;
 
-    	public Par X10Y4_呪印_鎖1;
+    	public ShapePart X10Y4_呪印_鎖1;
 
-    	public Par X10Y4_呪印_鎖2;
+    	public ShapePart X10Y4_呪印_鎖2;
 
-    	public Par X10Y4_呪印_鎖3;
+    	public ShapePart X10Y4_呪印_鎖3;
 
-    	public Par X11Y0_小指;
+    	public ShapePart X11Y0_小指;
 
-    	public Par X11Y0_薬指;
+    	public ShapePart X11Y0_薬指;
 
-    	public Par X11Y0_中指;
+    	public ShapePart X11Y0_中指;
 
-    	public Par X11Y0_人指;
+    	public ShapePart X11Y0_人指;
 
-    	public Par X11Y0_手;
+    	public ShapePart X11Y0_手;
 
-    	public Par X11Y0_親指;
+    	public ShapePart X11Y0_親指;
 
-    	public Par X11Y0_呪印_輪1_輪外;
+    	public ShapePart X11Y0_呪印_輪1_輪外;
 
-    	public Par X11Y0_呪印_輪1_輪内;
+    	public ShapePart X11Y0_呪印_輪1_輪内;
 
-    	public Par X11Y0_呪印_輪2_輪外;
+    	public ShapePart X11Y0_呪印_輪2_輪外;
 
-    	public Par X11Y0_呪印_輪2_輪内;
+    	public ShapePart X11Y0_呪印_輪2_輪内;
 
-    	public Par X11Y0_呪印_輪3_輪外;
+    	public ShapePart X11Y0_呪印_輪3_輪外;
 
-    	public Par X11Y0_呪印_輪3_輪内;
+    	public ShapePart X11Y0_呪印_輪3_輪内;
 
-    	public Par X11Y0_呪印_鎖1;
+    	public ShapePart X11Y0_呪印_鎖1;
 
-    	public Par X11Y0_呪印_鎖3;
+    	public ShapePart X11Y0_呪印_鎖3;
 
-    	public Par X12Y0_親指;
+    	public ShapePart X12Y0_親指;
 
-    	public Par X12Y0_手;
+    	public ShapePart X12Y0_手;
 
-    	public Par X12Y0_小指;
+    	public ShapePart X12Y0_小指;
 
-    	public Par X12Y0_薬指;
+    	public ShapePart X12Y0_薬指;
 
-    	public Par X12Y0_中指;
+    	public ShapePart X12Y0_中指;
 
-    	public Par X12Y0_人指;
+    	public ShapePart X12Y0_人指;
 
-    	public Par X12Y0_呪印_輪1_輪外;
+    	public ShapePart X12Y0_呪印_輪1_輪外;
 
-    	public Par X12Y0_呪印_輪1_輪内;
+    	public ShapePart X12Y0_呪印_輪1_輪内;
 
-    	public Par X12Y0_呪印_輪2_輪外;
+    	public ShapePart X12Y0_呪印_輪2_輪外;
 
-    	public Par X12Y0_呪印_輪2_輪内;
+    	public ShapePart X12Y0_呪印_輪2_輪内;
 
-    	public Par X12Y0_呪印_輪3_輪外;
+    	public ShapePart X12Y0_呪印_輪3_輪外;
 
-    	public Par X12Y0_呪印_輪3_輪内;
+    	public ShapePart X12Y0_呪印_輪3_輪内;
 
-    	public Par X12Y0_呪印_鎖1;
+    	public ShapePart X12Y0_呪印_鎖1;
 
-    	public Par X12Y0_呪印_鎖2;
+    	public ShapePart X12Y0_呪印_鎖2;
 
-    	public Par X12Y0_呪印_鎖3;
+    	public ShapePart X12Y0_呪印_鎖3;
 
-    	public Par X13Y0_中指;
+    	public ShapePart X13Y0_中指;
 
-    	public Par X13Y0_人指;
+    	public ShapePart X13Y0_人指;
 
-    	public Par X13Y0_手;
+    	public ShapePart X13Y0_手;
 
-    	public Par X13Y0_親指;
+    	public ShapePart X13Y0_親指;
 
-    	public Par X13Y0_呪印_輪1_輪外;
+    	public ShapePart X13Y0_呪印_輪1_輪外;
 
-    	public Par X13Y0_呪印_輪1_輪内;
+    	public ShapePart X13Y0_呪印_輪1_輪内;
 
-    	public Par X13Y0_呪印_輪2_輪外;
+    	public ShapePart X13Y0_呪印_輪2_輪外;
 
-    	public Par X13Y0_呪印_輪2_輪内;
+    	public ShapePart X13Y0_呪印_輪2_輪内;
 
-    	public Par X13Y0_呪印_輪3_輪外;
+    	public ShapePart X13Y0_呪印_輪3_輪外;
 
-    	public Par X13Y0_呪印_輪3_輪内;
+    	public ShapePart X13Y0_呪印_輪3_輪内;
 
-    	public Par X13Y0_呪印_鎖1;
+    	public ShapePart X13Y0_呪印_鎖1;
 
-    	public Par X13Y0_呪印_鎖3;
+    	public ShapePart X13Y0_呪印_鎖3;
 
-    	public Par X14Y0_親指;
+    	public ShapePart X14Y0_親指;
 
-    	public Par X14Y0_手;
+    	public ShapePart X14Y0_手;
 
-    	public Par X14Y0_小指;
+    	public ShapePart X14Y0_小指;
 
-    	public Par X14Y0_薬指;
+    	public ShapePart X14Y0_薬指;
 
-    	public Par X14Y0_中指;
+    	public ShapePart X14Y0_中指;
 
-    	public Par X14Y0_人指;
+    	public ShapePart X14Y0_人指;
 
-    	public Par X14Y0_呪印_輪1_輪外;
+    	public ShapePart X14Y0_呪印_輪1_輪外;
 
-    	public Par X14Y0_呪印_輪1_輪内;
+    	public ShapePart X14Y0_呪印_輪1_輪内;
 
-    	public Par X14Y0_呪印_輪2_輪外;
+    	public ShapePart X14Y0_呪印_輪2_輪外;
 
-    	public Par X14Y0_呪印_輪2_輪内;
+    	public ShapePart X14Y0_呪印_輪2_輪内;
 
-    	public Par X14Y0_呪印_輪3_輪外;
+    	public ShapePart X14Y0_呪印_輪3_輪外;
 
-    	public Par X14Y0_呪印_輪3_輪内;
+    	public ShapePart X14Y0_呪印_輪3_輪内;
 
-    	public Par X14Y0_呪印_鎖1;
+    	public ShapePart X14Y0_呪印_鎖1;
 
-    	public Par X14Y0_呪印_鎖2;
+    	public ShapePart X14Y0_呪印_鎖2;
 
-    	public Par X14Y0_呪印_鎖3;
+    	public ShapePart X14Y0_呪印_鎖3;
 
-    	public Par X14Y1_親指;
+    	public ShapePart X14Y1_親指;
 
-    	public Par X14Y1_手;
+    	public ShapePart X14Y1_手;
 
-    	public Par X14Y1_小指;
+    	public ShapePart X14Y1_小指;
 
-    	public Par X14Y1_薬指;
+    	public ShapePart X14Y1_薬指;
 
-    	public Par X14Y1_中指;
+    	public ShapePart X14Y1_中指;
 
-    	public Par X14Y1_人指;
+    	public ShapePart X14Y1_人指;
 
-    	public Par X14Y1_呪印_輪1_輪外;
+    	public ShapePart X14Y1_呪印_輪1_輪外;
 
-    	public Par X14Y1_呪印_輪1_輪内;
+    	public ShapePart X14Y1_呪印_輪1_輪内;
 
-    	public Par X14Y1_呪印_輪2_輪外;
+    	public ShapePart X14Y1_呪印_輪2_輪外;
 
-    	public Par X14Y1_呪印_輪2_輪内;
+    	public ShapePart X14Y1_呪印_輪2_輪内;
 
-    	public Par X14Y1_呪印_輪3_輪外;
+    	public ShapePart X14Y1_呪印_輪3_輪外;
 
-    	public Par X14Y1_呪印_輪3_輪内;
+    	public ShapePart X14Y1_呪印_輪3_輪内;
 
-    	public Par X14Y1_呪印_鎖1;
+    	public ShapePart X14Y1_呪印_鎖1;
 
-    	public Par X14Y1_呪印_鎖2;
+    	public ShapePart X14Y1_呪印_鎖2;
 
-    	public Par X14Y1_呪印_鎖3;
+    	public ShapePart X14Y1_呪印_鎖3;
 
-    	public Par X14Y2_親指;
+    	public ShapePart X14Y2_親指;
 
-    	public Par X14Y2_手;
+    	public ShapePart X14Y2_手;
 
-    	public Par X14Y2_小指;
+    	public ShapePart X14Y2_小指;
 
-    	public Par X14Y2_薬指;
+    	public ShapePart X14Y2_薬指;
 
-    	public Par X14Y2_中指;
+    	public ShapePart X14Y2_中指;
 
-    	public Par X14Y2_人指;
+    	public ShapePart X14Y2_人指;
 
-    	public Par X14Y2_呪印_輪1_輪外;
+    	public ShapePart X14Y2_呪印_輪1_輪外;
 
-    	public Par X14Y2_呪印_輪1_輪内;
+    	public ShapePart X14Y2_呪印_輪1_輪内;
 
-    	public Par X14Y2_呪印_輪2_輪外;
+    	public ShapePart X14Y2_呪印_輪2_輪外;
 
-    	public Par X14Y2_呪印_輪2_輪内;
+    	public ShapePart X14Y2_呪印_輪2_輪内;
 
-    	public Par X14Y2_呪印_輪3_輪外;
+    	public ShapePart X14Y2_呪印_輪3_輪外;
 
-    	public Par X14Y2_呪印_輪3_輪内;
+    	public ShapePart X14Y2_呪印_輪3_輪内;
 
-    	public Par X14Y2_呪印_鎖1;
+    	public ShapePart X14Y2_呪印_鎖1;
 
-    	public Par X14Y2_呪印_鎖2;
+    	public ShapePart X14Y2_呪印_鎖2;
 
-    	public Par X14Y2_呪印_鎖3;
+    	public ShapePart X14Y2_呪印_鎖3;
 
     	public ColorD 親指CD;
 
@@ -2361,25 +2361,25 @@ namespace SlaveMatrix
 
     	private Vector2D[] mm;
 
-    	private Par[] X6Y0Pars;
+    	private ShapePart[] X6Y0Pars;
 
-    	private Par[] X6Y1Pars;
+    	private ShapePart[] X6Y1Pars;
 
-    	private Par[] X6Y2Pars;
+    	private ShapePart[] X6Y2Pars;
 
-    	private Par[] X6Y3Pars;
+    	private ShapePart[] X6Y3Pars;
 
-    	private Par[] X6Y4Pars;
+    	private ShapePart[] X6Y4Pars;
 
-    	private Par[] X7Y0Pars;
+    	private ShapePart[] X7Y0Pars;
 
-    	private Par[] X7Y1Pars;
+    	private ShapePart[] X7Y1Pars;
 
-    	private Par[] X7Y2Pars;
+    	private ShapePart[] X7Y2Pars;
 
-    	private Par[] X7Y3Pars;
+    	private ShapePart[] X7Y3Pars;
 
-    	private Par[] X7Y4Pars;
+    	private ShapePart[] X7Y4Pars;
 
     	public override bool 欠損
     	{
@@ -3799,16 +3799,16 @@ namespace SlaveMatrix
     	public ハンド(double DisUnit, 配色指定 配色指定, 主人公配色 体配色, ModeEventDispatcher Med, ハンドD e)
     	{
     		ThisType = GetType();
-    		Body = new Difs(Sta.カーソル["ハンド"]);
-    		Pars pars = Body[0][0];
-    		X0Y0_親指 = pars["親指"].ToPar();
-    		X0Y0_手 = pars["手"].ToPar();
-    		X0Y0_小指 = pars["小指"].ToPar();
-    		X0Y0_薬指 = pars["薬指"].ToPar();
-    		X0Y0_中指 = pars["中指"].ToPar();
-    		X0Y0_人指 = pars["人指"].ToPar();
-    		Pars pars2 = pars["呪印"].ToPars();
-    		Pars pars3 = pars2["輪1"].ToPars();
+    		Body = new VariantGrid(GlobalState.カーソル["ハンド"]);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_親指 = partGroup["親指"].ToPar();
+    		X0Y0_手 = partGroup["手"].ToPar();
+    		X0Y0_小指 = partGroup["小指"].ToPar();
+    		X0Y0_薬指 = partGroup["薬指"].ToPar();
+    		X0Y0_中指 = partGroup["中指"].ToPar();
+    		X0Y0_人指 = partGroup["人指"].ToPar();
+    		PartGroup pars2 = partGroup["呪印"].ToPars();
+    		PartGroup pars3 = pars2["輪1"].ToPars();
     		X0Y0_呪印_輪1_輪外 = pars3["輪外"].ToPar();
     		X0Y0_呪印_輪1_輪内 = pars3["輪内"].ToPar();
     		pars3 = pars2["輪2"].ToPars();
@@ -3820,14 +3820,14 @@ namespace SlaveMatrix
     		X0Y0_呪印_鎖1 = pars2["鎖1"].ToPar();
     		X0Y0_呪印_鎖2 = pars2["鎖2"].ToPar();
     		X0Y0_呪印_鎖3 = pars2["鎖3"].ToPar();
-    		pars = Body[1][0];
-    		X1Y0_親指 = pars["親指"].ToPar();
-    		X1Y0_手 = pars["手"].ToPar();
-    		X1Y0_小指 = pars["小指"].ToPar();
-    		X1Y0_薬指 = pars["薬指"].ToPar();
-    		X1Y0_中指 = pars["中指"].ToPar();
-    		X1Y0_人指 = pars["人指"].ToPar();
-    		pars2 = pars["呪印"].ToPars();
+    		partGroup = Body[1][0];
+    		X1Y0_親指 = partGroup["親指"].ToPar();
+    		X1Y0_手 = partGroup["手"].ToPar();
+    		X1Y0_小指 = partGroup["小指"].ToPar();
+    		X1Y0_薬指 = partGroup["薬指"].ToPar();
+    		X1Y0_中指 = partGroup["中指"].ToPar();
+    		X1Y0_人指 = partGroup["人指"].ToPar();
+    		pars2 = partGroup["呪印"].ToPars();
     		pars3 = pars2["輪1"].ToPars();
     		X1Y0_呪印_輪1_輪外 = pars3["輪外"].ToPar();
     		X1Y0_呪印_輪1_輪内 = pars3["輪内"].ToPar();
@@ -3840,14 +3840,14 @@ namespace SlaveMatrix
     		X1Y0_呪印_鎖1 = pars2["鎖1"].ToPar();
     		X1Y0_呪印_鎖2 = pars2["鎖2"].ToPar();
     		X1Y0_呪印_鎖3 = pars2["鎖3"].ToPar();
-    		pars = Body[2][0];
-    		X2Y0_親指 = pars["親指"].ToPar();
-    		X2Y0_手 = pars["手"].ToPar();
-    		X2Y0_小指 = pars["小指"].ToPar();
-    		X2Y0_薬指 = pars["薬指"].ToPar();
-    		X2Y0_中指 = pars["中指"].ToPar();
-    		X2Y0_人指 = pars["人指"].ToPar();
-    		pars2 = pars["呪印"].ToPars();
+    		partGroup = Body[2][0];
+    		X2Y0_親指 = partGroup["親指"].ToPar();
+    		X2Y0_手 = partGroup["手"].ToPar();
+    		X2Y0_小指 = partGroup["小指"].ToPar();
+    		X2Y0_薬指 = partGroup["薬指"].ToPar();
+    		X2Y0_中指 = partGroup["中指"].ToPar();
+    		X2Y0_人指 = partGroup["人指"].ToPar();
+    		pars2 = partGroup["呪印"].ToPars();
     		pars3 = pars2["輪1"].ToPars();
     		X2Y0_呪印_輪1_輪外 = pars3["輪外"].ToPar();
     		X2Y0_呪印_輪1_輪内 = pars3["輪内"].ToPar();
@@ -3860,14 +3860,14 @@ namespace SlaveMatrix
     		X2Y0_呪印_鎖1 = pars2["鎖1"].ToPar();
     		X2Y0_呪印_鎖2 = pars2["鎖2"].ToPar();
     		X2Y0_呪印_鎖3 = pars2["鎖3"].ToPar();
-    		pars = Body[2][1];
-    		X2Y1_親指 = pars["親指"].ToPar();
-    		X2Y1_手 = pars["手"].ToPar();
-    		X2Y1_小指 = pars["小指"].ToPar();
-    		X2Y1_薬指 = pars["薬指"].ToPar();
-    		X2Y1_中指 = pars["中指"].ToPar();
-    		X2Y1_人指 = pars["人指"].ToPar();
-    		pars2 = pars["呪印"].ToPars();
+    		partGroup = Body[2][1];
+    		X2Y1_親指 = partGroup["親指"].ToPar();
+    		X2Y1_手 = partGroup["手"].ToPar();
+    		X2Y1_小指 = partGroup["小指"].ToPar();
+    		X2Y1_薬指 = partGroup["薬指"].ToPar();
+    		X2Y1_中指 = partGroup["中指"].ToPar();
+    		X2Y1_人指 = partGroup["人指"].ToPar();
+    		pars2 = partGroup["呪印"].ToPars();
     		pars3 = pars2["輪1"].ToPars();
     		X2Y1_呪印_輪1_輪外 = pars3["輪外"].ToPar();
     		X2Y1_呪印_輪1_輪内 = pars3["輪内"].ToPar();
@@ -3880,14 +3880,14 @@ namespace SlaveMatrix
     		X2Y1_呪印_鎖1 = pars2["鎖1"].ToPar();
     		X2Y1_呪印_鎖2 = pars2["鎖2"].ToPar();
     		X2Y1_呪印_鎖3 = pars2["鎖3"].ToPar();
-    		pars = Body[2][2];
-    		X2Y2_親指 = pars["親指"].ToPar();
-    		X2Y2_手 = pars["手"].ToPar();
-    		X2Y2_小指 = pars["小指"].ToPar();
-    		X2Y2_薬指 = pars["薬指"].ToPar();
-    		X2Y2_中指 = pars["中指"].ToPar();
-    		X2Y2_人指 = pars["人指"].ToPar();
-    		pars2 = pars["呪印"].ToPars();
+    		partGroup = Body[2][2];
+    		X2Y2_親指 = partGroup["親指"].ToPar();
+    		X2Y2_手 = partGroup["手"].ToPar();
+    		X2Y2_小指 = partGroup["小指"].ToPar();
+    		X2Y2_薬指 = partGroup["薬指"].ToPar();
+    		X2Y2_中指 = partGroup["中指"].ToPar();
+    		X2Y2_人指 = partGroup["人指"].ToPar();
+    		pars2 = partGroup["呪印"].ToPars();
     		pars3 = pars2["輪1"].ToPars();
     		X2Y2_呪印_輪1_輪外 = pars3["輪外"].ToPar();
     		X2Y2_呪印_輪1_輪内 = pars3["輪内"].ToPar();
@@ -3900,14 +3900,14 @@ namespace SlaveMatrix
     		X2Y2_呪印_鎖1 = pars2["鎖1"].ToPar();
     		X2Y2_呪印_鎖2 = pars2["鎖2"].ToPar();
     		X2Y2_呪印_鎖3 = pars2["鎖3"].ToPar();
-    		pars = Body[2][3];
-    		X2Y3_親指 = pars["親指"].ToPar();
-    		X2Y3_手 = pars["手"].ToPar();
-    		X2Y3_小指 = pars["小指"].ToPar();
-    		X2Y3_薬指 = pars["薬指"].ToPar();
-    		X2Y3_中指 = pars["中指"].ToPar();
-    		X2Y3_人指 = pars["人指"].ToPar();
-    		pars2 = pars["呪印"].ToPars();
+    		partGroup = Body[2][3];
+    		X2Y3_親指 = partGroup["親指"].ToPar();
+    		X2Y3_手 = partGroup["手"].ToPar();
+    		X2Y3_小指 = partGroup["小指"].ToPar();
+    		X2Y3_薬指 = partGroup["薬指"].ToPar();
+    		X2Y3_中指 = partGroup["中指"].ToPar();
+    		X2Y3_人指 = partGroup["人指"].ToPar();
+    		pars2 = partGroup["呪印"].ToPars();
     		pars3 = pars2["輪1"].ToPars();
     		X2Y3_呪印_輪1_輪外 = pars3["輪外"].ToPar();
     		X2Y3_呪印_輪1_輪内 = pars3["輪内"].ToPar();
@@ -3920,14 +3920,14 @@ namespace SlaveMatrix
     		X2Y3_呪印_鎖1 = pars2["鎖1"].ToPar();
     		X2Y3_呪印_鎖2 = pars2["鎖2"].ToPar();
     		X2Y3_呪印_鎖3 = pars2["鎖3"].ToPar();
-    		pars = Body[2][4];
-    		X2Y4_親指 = pars["親指"].ToPar();
-    		X2Y4_手 = pars["手"].ToPar();
-    		X2Y4_小指 = pars["小指"].ToPar();
-    		X2Y4_薬指 = pars["薬指"].ToPar();
-    		X2Y4_中指 = pars["中指"].ToPar();
-    		X2Y4_人指 = pars["人指"].ToPar();
-    		pars2 = pars["呪印"].ToPars();
+    		partGroup = Body[2][4];
+    		X2Y4_親指 = partGroup["親指"].ToPar();
+    		X2Y4_手 = partGroup["手"].ToPar();
+    		X2Y4_小指 = partGroup["小指"].ToPar();
+    		X2Y4_薬指 = partGroup["薬指"].ToPar();
+    		X2Y4_中指 = partGroup["中指"].ToPar();
+    		X2Y4_人指 = partGroup["人指"].ToPar();
+    		pars2 = partGroup["呪印"].ToPars();
     		pars3 = pars2["輪1"].ToPars();
     		X2Y4_呪印_輪1_輪外 = pars3["輪外"].ToPar();
     		X2Y4_呪印_輪1_輪内 = pars3["輪内"].ToPar();
@@ -3940,14 +3940,14 @@ namespace SlaveMatrix
     		X2Y4_呪印_鎖1 = pars2["鎖1"].ToPar();
     		X2Y4_呪印_鎖2 = pars2["鎖2"].ToPar();
     		X2Y4_呪印_鎖3 = pars2["鎖3"].ToPar();
-    		pars = Body[3][0];
-    		X3Y0_親指 = pars["親指"].ToPar();
-    		X3Y0_手 = pars["手"].ToPar();
-    		X3Y0_小指 = pars["小指"].ToPar();
-    		X3Y0_薬指 = pars["薬指"].ToPar();
-    		X3Y0_中指 = pars["中指"].ToPar();
-    		X3Y0_人指 = pars["人指"].ToPar();
-    		pars2 = pars["呪印"].ToPars();
+    		partGroup = Body[3][0];
+    		X3Y0_親指 = partGroup["親指"].ToPar();
+    		X3Y0_手 = partGroup["手"].ToPar();
+    		X3Y0_小指 = partGroup["小指"].ToPar();
+    		X3Y0_薬指 = partGroup["薬指"].ToPar();
+    		X3Y0_中指 = partGroup["中指"].ToPar();
+    		X3Y0_人指 = partGroup["人指"].ToPar();
+    		pars2 = partGroup["呪印"].ToPars();
     		pars3 = pars2["輪1"].ToPars();
     		X3Y0_呪印_輪1_輪外 = pars3["輪外"].ToPar();
     		X3Y0_呪印_輪1_輪内 = pars3["輪内"].ToPar();
@@ -3960,14 +3960,14 @@ namespace SlaveMatrix
     		X3Y0_呪印_鎖1 = pars2["鎖1"].ToPar();
     		X3Y0_呪印_鎖2 = pars2["鎖2"].ToPar();
     		X3Y0_呪印_鎖3 = pars2["鎖3"].ToPar();
-    		pars = Body[4][0];
-    		X4Y0_親指 = pars["親指"].ToPar();
-    		X4Y0_手 = pars["手"].ToPar();
-    		X4Y0_小指 = pars["小指"].ToPar();
-    		X4Y0_薬指 = pars["薬指"].ToPar();
-    		X4Y0_中指 = pars["中指"].ToPar();
-    		X4Y0_人指 = pars["人指"].ToPar();
-    		pars2 = pars["呪印"].ToPars();
+    		partGroup = Body[4][0];
+    		X4Y0_親指 = partGroup["親指"].ToPar();
+    		X4Y0_手 = partGroup["手"].ToPar();
+    		X4Y0_小指 = partGroup["小指"].ToPar();
+    		X4Y0_薬指 = partGroup["薬指"].ToPar();
+    		X4Y0_中指 = partGroup["中指"].ToPar();
+    		X4Y0_人指 = partGroup["人指"].ToPar();
+    		pars2 = partGroup["呪印"].ToPars();
     		pars3 = pars2["輪1"].ToPars();
     		X4Y0_呪印_輪1_輪外 = pars3["輪外"].ToPar();
     		X4Y0_呪印_輪1_輪内 = pars3["輪内"].ToPar();
@@ -3980,14 +3980,14 @@ namespace SlaveMatrix
     		X4Y0_呪印_鎖1 = pars2["鎖1"].ToPar();
     		X4Y0_呪印_鎖2 = pars2["鎖2"].ToPar();
     		X4Y0_呪印_鎖3 = pars2["鎖3"].ToPar();
-    		pars = Body[5][0];
-    		X5Y0_親指 = pars["親指"].ToPar();
-    		X5Y0_手 = pars["手"].ToPar();
-    		X5Y0_小指 = pars["小指"].ToPar();
-    		X5Y0_薬指 = pars["薬指"].ToPar();
-    		X5Y0_中指 = pars["中指"].ToPar();
-    		X5Y0_人指 = pars["人指"].ToPar();
-    		pars2 = pars["呪印"].ToPars();
+    		partGroup = Body[5][0];
+    		X5Y0_親指 = partGroup["親指"].ToPar();
+    		X5Y0_手 = partGroup["手"].ToPar();
+    		X5Y0_小指 = partGroup["小指"].ToPar();
+    		X5Y0_薬指 = partGroup["薬指"].ToPar();
+    		X5Y0_中指 = partGroup["中指"].ToPar();
+    		X5Y0_人指 = partGroup["人指"].ToPar();
+    		pars2 = partGroup["呪印"].ToPars();
     		pars3 = pars2["輪1"].ToPars();
     		X5Y0_呪印_輪1_輪外 = pars3["輪外"].ToPar();
     		X5Y0_呪印_輪1_輪内 = pars3["輪内"].ToPar();
@@ -4000,14 +4000,14 @@ namespace SlaveMatrix
     		X5Y0_呪印_鎖1 = pars2["鎖1"].ToPar();
     		X5Y0_呪印_鎖2 = pars2["鎖2"].ToPar();
     		X5Y0_呪印_鎖3 = pars2["鎖3"].ToPar();
-    		pars = Body[5][1];
-    		X5Y1_親指 = pars["親指"].ToPar();
-    		X5Y1_手 = pars["手"].ToPar();
-    		X5Y1_小指 = pars["小指"].ToPar();
-    		X5Y1_薬指 = pars["薬指"].ToPar();
-    		X5Y1_中指 = pars["中指"].ToPar();
-    		X5Y1_人指 = pars["人指"].ToPar();
-    		pars2 = pars["呪印"].ToPars();
+    		partGroup = Body[5][1];
+    		X5Y1_親指 = partGroup["親指"].ToPar();
+    		X5Y1_手 = partGroup["手"].ToPar();
+    		X5Y1_小指 = partGroup["小指"].ToPar();
+    		X5Y1_薬指 = partGroup["薬指"].ToPar();
+    		X5Y1_中指 = partGroup["中指"].ToPar();
+    		X5Y1_人指 = partGroup["人指"].ToPar();
+    		pars2 = partGroup["呪印"].ToPars();
     		pars3 = pars2["輪1"].ToPars();
     		X5Y1_呪印_輪1_輪外 = pars3["輪外"].ToPar();
     		X5Y1_呪印_輪1_輪内 = pars3["輪内"].ToPar();
@@ -4020,14 +4020,14 @@ namespace SlaveMatrix
     		X5Y1_呪印_鎖1 = pars2["鎖1"].ToPar();
     		X5Y1_呪印_鎖2 = pars2["鎖2"].ToPar();
     		X5Y1_呪印_鎖3 = pars2["鎖3"].ToPar();
-    		pars = Body[5][2];
-    		X5Y2_親指 = pars["親指"].ToPar();
-    		X5Y2_手 = pars["手"].ToPar();
-    		X5Y2_小指 = pars["小指"].ToPar();
-    		X5Y2_薬指 = pars["薬指"].ToPar();
-    		X5Y2_中指 = pars["中指"].ToPar();
-    		X5Y2_人指 = pars["人指"].ToPar();
-    		pars2 = pars["呪印"].ToPars();
+    		partGroup = Body[5][2];
+    		X5Y2_親指 = partGroup["親指"].ToPar();
+    		X5Y2_手 = partGroup["手"].ToPar();
+    		X5Y2_小指 = partGroup["小指"].ToPar();
+    		X5Y2_薬指 = partGroup["薬指"].ToPar();
+    		X5Y2_中指 = partGroup["中指"].ToPar();
+    		X5Y2_人指 = partGroup["人指"].ToPar();
+    		pars2 = partGroup["呪印"].ToPars();
     		pars3 = pars2["輪1"].ToPars();
     		X5Y2_呪印_輪1_輪外 = pars3["輪外"].ToPar();
     		X5Y2_呪印_輪1_輪内 = pars3["輪内"].ToPar();
@@ -4040,14 +4040,14 @@ namespace SlaveMatrix
     		X5Y2_呪印_鎖1 = pars2["鎖1"].ToPar();
     		X5Y2_呪印_鎖2 = pars2["鎖2"].ToPar();
     		X5Y2_呪印_鎖3 = pars2["鎖3"].ToPar();
-    		pars = Body[5][3];
-    		X5Y3_親指 = pars["親指"].ToPar();
-    		X5Y3_手 = pars["手"].ToPar();
-    		X5Y3_小指 = pars["小指"].ToPar();
-    		X5Y3_薬指 = pars["薬指"].ToPar();
-    		X5Y3_中指 = pars["中指"].ToPar();
-    		X5Y3_人指 = pars["人指"].ToPar();
-    		pars2 = pars["呪印"].ToPars();
+    		partGroup = Body[5][3];
+    		X5Y3_親指 = partGroup["親指"].ToPar();
+    		X5Y3_手 = partGroup["手"].ToPar();
+    		X5Y3_小指 = partGroup["小指"].ToPar();
+    		X5Y3_薬指 = partGroup["薬指"].ToPar();
+    		X5Y3_中指 = partGroup["中指"].ToPar();
+    		X5Y3_人指 = partGroup["人指"].ToPar();
+    		pars2 = partGroup["呪印"].ToPars();
     		pars3 = pars2["輪1"].ToPars();
     		X5Y3_呪印_輪1_輪外 = pars3["輪外"].ToPar();
     		X5Y3_呪印_輪1_輪内 = pars3["輪内"].ToPar();
@@ -4060,14 +4060,14 @@ namespace SlaveMatrix
     		X5Y3_呪印_鎖1 = pars2["鎖1"].ToPar();
     		X5Y3_呪印_鎖2 = pars2["鎖2"].ToPar();
     		X5Y3_呪印_鎖3 = pars2["鎖3"].ToPar();
-    		pars = Body[5][4];
-    		X5Y4_親指 = pars["親指"].ToPar();
-    		X5Y4_手 = pars["手"].ToPar();
-    		X5Y4_小指 = pars["小指"].ToPar();
-    		X5Y4_薬指 = pars["薬指"].ToPar();
-    		X5Y4_中指 = pars["中指"].ToPar();
-    		X5Y4_人指 = pars["人指"].ToPar();
-    		pars2 = pars["呪印"].ToPars();
+    		partGroup = Body[5][4];
+    		X5Y4_親指 = partGroup["親指"].ToPar();
+    		X5Y4_手 = partGroup["手"].ToPar();
+    		X5Y4_小指 = partGroup["小指"].ToPar();
+    		X5Y4_薬指 = partGroup["薬指"].ToPar();
+    		X5Y4_中指 = partGroup["中指"].ToPar();
+    		X5Y4_人指 = partGroup["人指"].ToPar();
+    		pars2 = partGroup["呪印"].ToPars();
     		pars3 = pars2["輪1"].ToPars();
     		X5Y4_呪印_輪1_輪外 = pars3["輪外"].ToPar();
     		X5Y4_呪印_輪1_輪内 = pars3["輪内"].ToPar();
@@ -4080,14 +4080,14 @@ namespace SlaveMatrix
     		X5Y4_呪印_鎖1 = pars2["鎖1"].ToPar();
     		X5Y4_呪印_鎖2 = pars2["鎖2"].ToPar();
     		X5Y4_呪印_鎖3 = pars2["鎖3"].ToPar();
-    		pars = Body[6][0];
-    		X6Y0_親指 = pars["親指"].ToPar();
-    		X6Y0_手 = pars["手"].ToPar();
-    		X6Y0_小指 = pars["小指"].ToPar();
-    		X6Y0_薬指 = pars["薬指"].ToPar();
-    		X6Y0_中指 = pars["中指"].ToPar();
-    		X6Y0_人指 = pars["人指"].ToPar();
-    		pars2 = pars["呪印"].ToPars();
+    		partGroup = Body[6][0];
+    		X6Y0_親指 = partGroup["親指"].ToPar();
+    		X6Y0_手 = partGroup["手"].ToPar();
+    		X6Y0_小指 = partGroup["小指"].ToPar();
+    		X6Y0_薬指 = partGroup["薬指"].ToPar();
+    		X6Y0_中指 = partGroup["中指"].ToPar();
+    		X6Y0_人指 = partGroup["人指"].ToPar();
+    		pars2 = partGroup["呪印"].ToPars();
     		pars3 = pars2["輪1"].ToPars();
     		X6Y0_呪印_輪1_輪外 = pars3["輪外"].ToPar();
     		X6Y0_呪印_輪1_輪内 = pars3["輪内"].ToPar();
@@ -4100,14 +4100,14 @@ namespace SlaveMatrix
     		X6Y0_呪印_鎖1 = pars2["鎖1"].ToPar();
     		X6Y0_呪印_鎖2 = pars2["鎖2"].ToPar();
     		X6Y0_呪印_鎖3 = pars2["鎖3"].ToPar();
-    		pars = Body[6][1];
-    		X6Y1_親指 = pars["親指"].ToPar();
-    		X6Y1_手 = pars["手"].ToPar();
-    		X6Y1_小指 = pars["小指"].ToPar();
-    		X6Y1_薬指 = pars["薬指"].ToPar();
-    		X6Y1_中指 = pars["中指"].ToPar();
-    		X6Y1_人指 = pars["人指"].ToPar();
-    		pars2 = pars["呪印"].ToPars();
+    		partGroup = Body[6][1];
+    		X6Y1_親指 = partGroup["親指"].ToPar();
+    		X6Y1_手 = partGroup["手"].ToPar();
+    		X6Y1_小指 = partGroup["小指"].ToPar();
+    		X6Y1_薬指 = partGroup["薬指"].ToPar();
+    		X6Y1_中指 = partGroup["中指"].ToPar();
+    		X6Y1_人指 = partGroup["人指"].ToPar();
+    		pars2 = partGroup["呪印"].ToPars();
     		pars3 = pars2["輪1"].ToPars();
     		X6Y1_呪印_輪1_輪外 = pars3["輪外"].ToPar();
     		X6Y1_呪印_輪1_輪内 = pars3["輪内"].ToPar();
@@ -4120,14 +4120,14 @@ namespace SlaveMatrix
     		X6Y1_呪印_鎖1 = pars2["鎖1"].ToPar();
     		X6Y1_呪印_鎖2 = pars2["鎖2"].ToPar();
     		X6Y1_呪印_鎖3 = pars2["鎖3"].ToPar();
-    		pars = Body[6][2];
-    		X6Y2_親指 = pars["親指"].ToPar();
-    		X6Y2_手 = pars["手"].ToPar();
-    		X6Y2_小指 = pars["小指"].ToPar();
-    		X6Y2_薬指 = pars["薬指"].ToPar();
-    		X6Y2_中指 = pars["中指"].ToPar();
-    		X6Y2_人指 = pars["人指"].ToPar();
-    		pars2 = pars["呪印"].ToPars();
+    		partGroup = Body[6][2];
+    		X6Y2_親指 = partGroup["親指"].ToPar();
+    		X6Y2_手 = partGroup["手"].ToPar();
+    		X6Y2_小指 = partGroup["小指"].ToPar();
+    		X6Y2_薬指 = partGroup["薬指"].ToPar();
+    		X6Y2_中指 = partGroup["中指"].ToPar();
+    		X6Y2_人指 = partGroup["人指"].ToPar();
+    		pars2 = partGroup["呪印"].ToPars();
     		pars3 = pars2["輪1"].ToPars();
     		X6Y2_呪印_輪1_輪外 = pars3["輪外"].ToPar();
     		X6Y2_呪印_輪1_輪内 = pars3["輪内"].ToPar();
@@ -4140,14 +4140,14 @@ namespace SlaveMatrix
     		X6Y2_呪印_鎖1 = pars2["鎖1"].ToPar();
     		X6Y2_呪印_鎖2 = pars2["鎖2"].ToPar();
     		X6Y2_呪印_鎖3 = pars2["鎖3"].ToPar();
-    		pars = Body[6][3];
-    		X6Y3_親指 = pars["親指"].ToPar();
-    		X6Y3_手 = pars["手"].ToPar();
-    		X6Y3_小指 = pars["小指"].ToPar();
-    		X6Y3_薬指 = pars["薬指"].ToPar();
-    		X6Y3_中指 = pars["中指"].ToPar();
-    		X6Y3_人指 = pars["人指"].ToPar();
-    		pars2 = pars["呪印"].ToPars();
+    		partGroup = Body[6][3];
+    		X6Y3_親指 = partGroup["親指"].ToPar();
+    		X6Y3_手 = partGroup["手"].ToPar();
+    		X6Y3_小指 = partGroup["小指"].ToPar();
+    		X6Y3_薬指 = partGroup["薬指"].ToPar();
+    		X6Y3_中指 = partGroup["中指"].ToPar();
+    		X6Y3_人指 = partGroup["人指"].ToPar();
+    		pars2 = partGroup["呪印"].ToPars();
     		pars3 = pars2["輪1"].ToPars();
     		X6Y3_呪印_輪1_輪外 = pars3["輪外"].ToPar();
     		X6Y3_呪印_輪1_輪内 = pars3["輪内"].ToPar();
@@ -4160,14 +4160,14 @@ namespace SlaveMatrix
     		X6Y3_呪印_鎖1 = pars2["鎖1"].ToPar();
     		X6Y3_呪印_鎖2 = pars2["鎖2"].ToPar();
     		X6Y3_呪印_鎖3 = pars2["鎖3"].ToPar();
-    		pars = Body[6][4];
-    		X6Y4_親指 = pars["親指"].ToPar();
-    		X6Y4_手 = pars["手"].ToPar();
-    		X6Y4_小指 = pars["小指"].ToPar();
-    		X6Y4_薬指 = pars["薬指"].ToPar();
-    		X6Y4_中指 = pars["中指"].ToPar();
-    		X6Y4_人指 = pars["人指"].ToPar();
-    		pars2 = pars["呪印"].ToPars();
+    		partGroup = Body[6][4];
+    		X6Y4_親指 = partGroup["親指"].ToPar();
+    		X6Y4_手 = partGroup["手"].ToPar();
+    		X6Y4_小指 = partGroup["小指"].ToPar();
+    		X6Y4_薬指 = partGroup["薬指"].ToPar();
+    		X6Y4_中指 = partGroup["中指"].ToPar();
+    		X6Y4_人指 = partGroup["人指"].ToPar();
+    		pars2 = partGroup["呪印"].ToPars();
     		pars3 = pars2["輪1"].ToPars();
     		X6Y4_呪印_輪1_輪外 = pars3["輪外"].ToPar();
     		X6Y4_呪印_輪1_輪内 = pars3["輪内"].ToPar();
@@ -4180,14 +4180,14 @@ namespace SlaveMatrix
     		X6Y4_呪印_鎖1 = pars2["鎖1"].ToPar();
     		X6Y4_呪印_鎖2 = pars2["鎖2"].ToPar();
     		X6Y4_呪印_鎖3 = pars2["鎖3"].ToPar();
-    		pars = Body[7][0];
-    		X7Y0_小指 = pars["小指"].ToPar();
-    		X7Y0_薬指 = pars["薬指"].ToPar();
-    		X7Y0_中指 = pars["中指"].ToPar();
-    		X7Y0_親指 = pars["親指"].ToPar();
-    		X7Y0_手 = pars["手"].ToPar();
-    		X7Y0_人指 = pars["人指"].ToPar();
-    		pars2 = pars["呪印"].ToPars();
+    		partGroup = Body[7][0];
+    		X7Y0_小指 = partGroup["小指"].ToPar();
+    		X7Y0_薬指 = partGroup["薬指"].ToPar();
+    		X7Y0_中指 = partGroup["中指"].ToPar();
+    		X7Y0_親指 = partGroup["親指"].ToPar();
+    		X7Y0_手 = partGroup["手"].ToPar();
+    		X7Y0_人指 = partGroup["人指"].ToPar();
+    		pars2 = partGroup["呪印"].ToPars();
     		pars3 = pars2["輪1"].ToPars();
     		X7Y0_呪印_輪1_輪外 = pars3["輪外"].ToPar();
     		X7Y0_呪印_輪1_輪内 = pars3["輪内"].ToPar();
@@ -4200,14 +4200,14 @@ namespace SlaveMatrix
     		X7Y0_呪印_鎖1 = pars2["鎖1"].ToPar();
     		X7Y0_呪印_鎖2 = pars2["鎖2"].ToPar();
     		X7Y0_呪印_鎖3 = pars2["鎖3"].ToPar();
-    		pars = Body[7][1];
-    		X7Y1_小指 = pars["小指"].ToPar();
-    		X7Y1_薬指 = pars["薬指"].ToPar();
-    		X7Y1_中指 = pars["中指"].ToPar();
-    		X7Y1_親指 = pars["親指"].ToPar();
-    		X7Y1_手 = pars["手"].ToPar();
-    		X7Y1_人指 = pars["人指"].ToPar();
-    		pars2 = pars["呪印"].ToPars();
+    		partGroup = Body[7][1];
+    		X7Y1_小指 = partGroup["小指"].ToPar();
+    		X7Y1_薬指 = partGroup["薬指"].ToPar();
+    		X7Y1_中指 = partGroup["中指"].ToPar();
+    		X7Y1_親指 = partGroup["親指"].ToPar();
+    		X7Y1_手 = partGroup["手"].ToPar();
+    		X7Y1_人指 = partGroup["人指"].ToPar();
+    		pars2 = partGroup["呪印"].ToPars();
     		pars3 = pars2["輪1"].ToPars();
     		X7Y1_呪印_輪1_輪外 = pars3["輪外"].ToPar();
     		X7Y1_呪印_輪1_輪内 = pars3["輪内"].ToPar();
@@ -4220,14 +4220,14 @@ namespace SlaveMatrix
     		X7Y1_呪印_鎖1 = pars2["鎖1"].ToPar();
     		X7Y1_呪印_鎖2 = pars2["鎖2"].ToPar();
     		X7Y1_呪印_鎖3 = pars2["鎖3"].ToPar();
-    		pars = Body[7][2];
-    		X7Y2_小指 = pars["小指"].ToPar();
-    		X7Y2_薬指 = pars["薬指"].ToPar();
-    		X7Y2_中指 = pars["中指"].ToPar();
-    		X7Y2_親指 = pars["親指"].ToPar();
-    		X7Y2_手 = pars["手"].ToPar();
-    		X7Y2_人指 = pars["人指"].ToPar();
-    		pars2 = pars["呪印"].ToPars();
+    		partGroup = Body[7][2];
+    		X7Y2_小指 = partGroup["小指"].ToPar();
+    		X7Y2_薬指 = partGroup["薬指"].ToPar();
+    		X7Y2_中指 = partGroup["中指"].ToPar();
+    		X7Y2_親指 = partGroup["親指"].ToPar();
+    		X7Y2_手 = partGroup["手"].ToPar();
+    		X7Y2_人指 = partGroup["人指"].ToPar();
+    		pars2 = partGroup["呪印"].ToPars();
     		pars3 = pars2["輪1"].ToPars();
     		X7Y2_呪印_輪1_輪外 = pars3["輪外"].ToPar();
     		X7Y2_呪印_輪1_輪内 = pars3["輪内"].ToPar();
@@ -4240,14 +4240,14 @@ namespace SlaveMatrix
     		X7Y2_呪印_鎖1 = pars2["鎖1"].ToPar();
     		X7Y2_呪印_鎖2 = pars2["鎖2"].ToPar();
     		X7Y2_呪印_鎖3 = pars2["鎖3"].ToPar();
-    		pars = Body[7][3];
-    		X7Y3_小指 = pars["小指"].ToPar();
-    		X7Y3_薬指 = pars["薬指"].ToPar();
-    		X7Y3_中指 = pars["中指"].ToPar();
-    		X7Y3_親指 = pars["親指"].ToPar();
-    		X7Y3_手 = pars["手"].ToPar();
-    		X7Y3_人指 = pars["人指"].ToPar();
-    		pars2 = pars["呪印"].ToPars();
+    		partGroup = Body[7][3];
+    		X7Y3_小指 = partGroup["小指"].ToPar();
+    		X7Y3_薬指 = partGroup["薬指"].ToPar();
+    		X7Y3_中指 = partGroup["中指"].ToPar();
+    		X7Y3_親指 = partGroup["親指"].ToPar();
+    		X7Y3_手 = partGroup["手"].ToPar();
+    		X7Y3_人指 = partGroup["人指"].ToPar();
+    		pars2 = partGroup["呪印"].ToPars();
     		pars3 = pars2["輪1"].ToPars();
     		X7Y3_呪印_輪1_輪外 = pars3["輪外"].ToPar();
     		X7Y3_呪印_輪1_輪内 = pars3["輪内"].ToPar();
@@ -4260,14 +4260,14 @@ namespace SlaveMatrix
     		X7Y3_呪印_鎖1 = pars2["鎖1"].ToPar();
     		X7Y3_呪印_鎖2 = pars2["鎖2"].ToPar();
     		X7Y3_呪印_鎖3 = pars2["鎖3"].ToPar();
-    		pars = Body[7][4];
-    		X7Y4_小指 = pars["小指"].ToPar();
-    		X7Y4_薬指 = pars["薬指"].ToPar();
-    		X7Y4_中指 = pars["中指"].ToPar();
-    		X7Y4_親指 = pars["親指"].ToPar();
-    		X7Y4_手 = pars["手"].ToPar();
-    		X7Y4_人指 = pars["人指"].ToPar();
-    		pars2 = pars["呪印"].ToPars();
+    		partGroup = Body[7][4];
+    		X7Y4_小指 = partGroup["小指"].ToPar();
+    		X7Y4_薬指 = partGroup["薬指"].ToPar();
+    		X7Y4_中指 = partGroup["中指"].ToPar();
+    		X7Y4_親指 = partGroup["親指"].ToPar();
+    		X7Y4_手 = partGroup["手"].ToPar();
+    		X7Y4_人指 = partGroup["人指"].ToPar();
+    		pars2 = partGroup["呪印"].ToPars();
     		pars3 = pars2["輪1"].ToPars();
     		X7Y4_呪印_輪1_輪外 = pars3["輪外"].ToPar();
     		X7Y4_呪印_輪1_輪内 = pars3["輪内"].ToPar();
@@ -4280,84 +4280,84 @@ namespace SlaveMatrix
     		X7Y4_呪印_鎖1 = pars2["鎖1"].ToPar();
     		X7Y4_呪印_鎖2 = pars2["鎖2"].ToPar();
     		X7Y4_呪印_鎖3 = pars2["鎖3"].ToPar();
-    		pars = Body[8][0];
-    		X8Y0_手 = pars["手"].ToPar();
-    		X8Y0_小指 = pars["小指"].ToPar();
-    		X8Y0_薬指 = pars["薬指"].ToPar();
-    		X8Y0_中指 = pars["中指"].ToPar();
-    		X8Y0_人指 = pars["人指"].ToPar();
-    		X8Y0_親指 = pars["親指"].ToPar();
-    		pars = Body[8][1];
-    		X8Y1_手 = pars["手"].ToPar();
-    		X8Y1_小指 = pars["小指"].ToPar();
-    		X8Y1_薬指 = pars["薬指"].ToPar();
-    		X8Y1_中指 = pars["中指"].ToPar();
-    		X8Y1_人指 = pars["人指"].ToPar();
-    		X8Y1_親指 = pars["親指"].ToPar();
-    		pars = Body[8][2];
-    		X8Y2_手 = pars["手"].ToPar();
-    		X8Y2_小指 = pars["小指"].ToPar();
-    		X8Y2_薬指 = pars["薬指"].ToPar();
-    		X8Y2_中指 = pars["中指"].ToPar();
-    		X8Y2_人指 = pars["人指"].ToPar();
-    		X8Y2_親指 = pars["親指"].ToPar();
-    		pars = Body[8][3];
-    		X8Y3_手 = pars["手"].ToPar();
-    		X8Y3_小指 = pars["小指"].ToPar();
-    		X8Y3_薬指 = pars["薬指"].ToPar();
-    		X8Y3_中指 = pars["中指"].ToPar();
-    		X8Y3_人指 = pars["人指"].ToPar();
-    		X8Y3_親指 = pars["親指"].ToPar();
-    		pars = Body[8][4];
-    		X8Y4_手 = pars["手"].ToPar();
-    		X8Y4_小指 = pars["小指"].ToPar();
-    		X8Y4_薬指 = pars["薬指"].ToPar();
-    		X8Y4_中指 = pars["中指"].ToPar();
-    		X8Y4_人指 = pars["人指"].ToPar();
-    		X8Y4_親指 = pars["親指"].ToPar();
-    		pars = Body[9][0];
-    		X9Y0_手 = pars["手"].ToPar();
-    		X9Y0_小指 = pars["小指"].ToPar();
-    		X9Y0_薬指 = pars["薬指"].ToPar();
-    		X9Y0_中指 = pars["中指"].ToPar();
-    		X9Y0_人指 = pars["人指"].ToPar();
-    		X9Y0_親指 = pars["親指"].ToPar();
-    		pars = Body[9][1];
-    		X9Y1_手 = pars["手"].ToPar();
-    		X9Y1_小指 = pars["小指"].ToPar();
-    		X9Y1_薬指 = pars["薬指"].ToPar();
-    		X9Y1_中指 = pars["中指"].ToPar();
-    		X9Y1_人指 = pars["人指"].ToPar();
-    		X9Y1_親指 = pars["親指"].ToPar();
-    		pars = Body[9][2];
-    		X9Y2_手 = pars["手"].ToPar();
-    		X9Y2_小指 = pars["小指"].ToPar();
-    		X9Y2_薬指 = pars["薬指"].ToPar();
-    		X9Y2_中指 = pars["中指"].ToPar();
-    		X9Y2_人指 = pars["人指"].ToPar();
-    		X9Y2_親指 = pars["親指"].ToPar();
-    		pars = Body[9][3];
-    		X9Y3_手 = pars["手"].ToPar();
-    		X9Y3_小指 = pars["小指"].ToPar();
-    		X9Y3_薬指 = pars["薬指"].ToPar();
-    		X9Y3_中指 = pars["中指"].ToPar();
-    		X9Y3_人指 = pars["人指"].ToPar();
-    		X9Y3_親指 = pars["親指"].ToPar();
-    		pars = Body[9][4];
-    		X9Y4_手 = pars["手"].ToPar();
-    		X9Y4_小指 = pars["小指"].ToPar();
-    		X9Y4_薬指 = pars["薬指"].ToPar();
-    		X9Y4_中指 = pars["中指"].ToPar();
-    		X9Y4_人指 = pars["人指"].ToPar();
-    		X9Y4_親指 = pars["親指"].ToPar();
-    		pars = Body[10][0];
-    		X10Y0_親指 = pars["親指"].ToPar();
-    		X10Y0_手 = pars["手"].ToPar();
-    		X10Y0_小指 = pars["小指"].ToPar();
-    		X10Y0_薬指 = pars["薬指"].ToPar();
-    		X10Y0_中指 = pars["中指"].ToPar();
-    		X10Y0_人指 = pars["人指"].ToPar();
-    		pars2 = pars["呪印"].ToPars();
+    		partGroup = Body[8][0];
+    		X8Y0_手 = partGroup["手"].ToPar();
+    		X8Y0_小指 = partGroup["小指"].ToPar();
+    		X8Y0_薬指 = partGroup["薬指"].ToPar();
+    		X8Y0_中指 = partGroup["中指"].ToPar();
+    		X8Y0_人指 = partGroup["人指"].ToPar();
+    		X8Y0_親指 = partGroup["親指"].ToPar();
+    		partGroup = Body[8][1];
+    		X8Y1_手 = partGroup["手"].ToPar();
+    		X8Y1_小指 = partGroup["小指"].ToPar();
+    		X8Y1_薬指 = partGroup["薬指"].ToPar();
+    		X8Y1_中指 = partGroup["中指"].ToPar();
+    		X8Y1_人指 = partGroup["人指"].ToPar();
+    		X8Y1_親指 = partGroup["親指"].ToPar();
+    		partGroup = Body[8][2];
+    		X8Y2_手 = partGroup["手"].ToPar();
+    		X8Y2_小指 = partGroup["小指"].ToPar();
+    		X8Y2_薬指 = partGroup["薬指"].ToPar();
+    		X8Y2_中指 = partGroup["中指"].ToPar();
+    		X8Y2_人指 = partGroup["人指"].ToPar();
+    		X8Y2_親指 = partGroup["親指"].ToPar();
+    		partGroup = Body[8][3];
+    		X8Y3_手 = partGroup["手"].ToPar();
+    		X8Y3_小指 = partGroup["小指"].ToPar();
+    		X8Y3_薬指 = partGroup["薬指"].ToPar();
+    		X8Y3_中指 = partGroup["中指"].ToPar();
+    		X8Y3_人指 = partGroup["人指"].ToPar();
+    		X8Y3_親指 = partGroup["親指"].ToPar();
+    		partGroup = Body[8][4];
+    		X8Y4_手 = partGroup["手"].ToPar();
+    		X8Y4_小指 = partGroup["小指"].ToPar();
+    		X8Y4_薬指 = partGroup["薬指"].ToPar();
+    		X8Y4_中指 = partGroup["中指"].ToPar();
+    		X8Y4_人指 = partGroup["人指"].ToPar();
+    		X8Y4_親指 = partGroup["親指"].ToPar();
+    		partGroup = Body[9][0];
+    		X9Y0_手 = partGroup["手"].ToPar();
+    		X9Y0_小指 = partGroup["小指"].ToPar();
+    		X9Y0_薬指 = partGroup["薬指"].ToPar();
+    		X9Y0_中指 = partGroup["中指"].ToPar();
+    		X9Y0_人指 = partGroup["人指"].ToPar();
+    		X9Y0_親指 = partGroup["親指"].ToPar();
+    		partGroup = Body[9][1];
+    		X9Y1_手 = partGroup["手"].ToPar();
+    		X9Y1_小指 = partGroup["小指"].ToPar();
+    		X9Y1_薬指 = partGroup["薬指"].ToPar();
+    		X9Y1_中指 = partGroup["中指"].ToPar();
+    		X9Y1_人指 = partGroup["人指"].ToPar();
+    		X9Y1_親指 = partGroup["親指"].ToPar();
+    		partGroup = Body[9][2];
+    		X9Y2_手 = partGroup["手"].ToPar();
+    		X9Y2_小指 = partGroup["小指"].ToPar();
+    		X9Y2_薬指 = partGroup["薬指"].ToPar();
+    		X9Y2_中指 = partGroup["中指"].ToPar();
+    		X9Y2_人指 = partGroup["人指"].ToPar();
+    		X9Y2_親指 = partGroup["親指"].ToPar();
+    		partGroup = Body[9][3];
+    		X9Y3_手 = partGroup["手"].ToPar();
+    		X9Y3_小指 = partGroup["小指"].ToPar();
+    		X9Y3_薬指 = partGroup["薬指"].ToPar();
+    		X9Y3_中指 = partGroup["中指"].ToPar();
+    		X9Y3_人指 = partGroup["人指"].ToPar();
+    		X9Y3_親指 = partGroup["親指"].ToPar();
+    		partGroup = Body[9][4];
+    		X9Y4_手 = partGroup["手"].ToPar();
+    		X9Y4_小指 = partGroup["小指"].ToPar();
+    		X9Y4_薬指 = partGroup["薬指"].ToPar();
+    		X9Y4_中指 = partGroup["中指"].ToPar();
+    		X9Y4_人指 = partGroup["人指"].ToPar();
+    		X9Y4_親指 = partGroup["親指"].ToPar();
+    		partGroup = Body[10][0];
+    		X10Y0_親指 = partGroup["親指"].ToPar();
+    		X10Y0_手 = partGroup["手"].ToPar();
+    		X10Y0_小指 = partGroup["小指"].ToPar();
+    		X10Y0_薬指 = partGroup["薬指"].ToPar();
+    		X10Y0_中指 = partGroup["中指"].ToPar();
+    		X10Y0_人指 = partGroup["人指"].ToPar();
+    		pars2 = partGroup["呪印"].ToPars();
     		pars3 = pars2["輪1"].ToPars();
     		X10Y0_呪印_輪1_輪外 = pars3["輪外"].ToPar();
     		X10Y0_呪印_輪1_輪内 = pars3["輪内"].ToPar();
@@ -4370,14 +4370,14 @@ namespace SlaveMatrix
     		X10Y0_呪印_鎖1 = pars2["鎖1"].ToPar();
     		X10Y0_呪印_鎖2 = pars2["鎖2"].ToPar();
     		X10Y0_呪印_鎖3 = pars2["鎖3"].ToPar();
-    		pars = Body[10][1];
-    		X10Y1_親指 = pars["親指"].ToPar();
-    		X10Y1_手 = pars["手"].ToPar();
-    		X10Y1_小指 = pars["小指"].ToPar();
-    		X10Y1_薬指 = pars["薬指"].ToPar();
-    		X10Y1_中指 = pars["中指"].ToPar();
-    		X10Y1_人指 = pars["人指"].ToPar();
-    		pars2 = pars["呪印"].ToPars();
+    		partGroup = Body[10][1];
+    		X10Y1_親指 = partGroup["親指"].ToPar();
+    		X10Y1_手 = partGroup["手"].ToPar();
+    		X10Y1_小指 = partGroup["小指"].ToPar();
+    		X10Y1_薬指 = partGroup["薬指"].ToPar();
+    		X10Y1_中指 = partGroup["中指"].ToPar();
+    		X10Y1_人指 = partGroup["人指"].ToPar();
+    		pars2 = partGroup["呪印"].ToPars();
     		pars3 = pars2["輪1"].ToPars();
     		X10Y1_呪印_輪1_輪外 = pars3["輪外"].ToPar();
     		X10Y1_呪印_輪1_輪内 = pars3["輪内"].ToPar();
@@ -4390,14 +4390,14 @@ namespace SlaveMatrix
     		X10Y1_呪印_鎖1 = pars2["鎖1"].ToPar();
     		X10Y1_呪印_鎖2 = pars2["鎖2"].ToPar();
     		X10Y1_呪印_鎖3 = pars2["鎖3"].ToPar();
-    		pars = Body[10][2];
-    		X10Y2_親指 = pars["親指"].ToPar();
-    		X10Y2_手 = pars["手"].ToPar();
-    		X10Y2_小指 = pars["小指"].ToPar();
-    		X10Y2_薬指 = pars["薬指"].ToPar();
-    		X10Y2_中指 = pars["中指"].ToPar();
-    		X10Y2_人指 = pars["人指"].ToPar();
-    		pars2 = pars["呪印"].ToPars();
+    		partGroup = Body[10][2];
+    		X10Y2_親指 = partGroup["親指"].ToPar();
+    		X10Y2_手 = partGroup["手"].ToPar();
+    		X10Y2_小指 = partGroup["小指"].ToPar();
+    		X10Y2_薬指 = partGroup["薬指"].ToPar();
+    		X10Y2_中指 = partGroup["中指"].ToPar();
+    		X10Y2_人指 = partGroup["人指"].ToPar();
+    		pars2 = partGroup["呪印"].ToPars();
     		pars3 = pars2["輪1"].ToPars();
     		X10Y2_呪印_輪1_輪外 = pars3["輪外"].ToPar();
     		X10Y2_呪印_輪1_輪内 = pars3["輪内"].ToPar();
@@ -4410,14 +4410,14 @@ namespace SlaveMatrix
     		X10Y2_呪印_鎖1 = pars2["鎖1"].ToPar();
     		X10Y2_呪印_鎖2 = pars2["鎖2"].ToPar();
     		X10Y2_呪印_鎖3 = pars2["鎖3"].ToPar();
-    		pars = Body[10][3];
-    		X10Y3_親指 = pars["親指"].ToPar();
-    		X10Y3_手 = pars["手"].ToPar();
-    		X10Y3_小指 = pars["小指"].ToPar();
-    		X10Y3_薬指 = pars["薬指"].ToPar();
-    		X10Y3_中指 = pars["中指"].ToPar();
-    		X10Y3_人指 = pars["人指"].ToPar();
-    		pars2 = pars["呪印"].ToPars();
+    		partGroup = Body[10][3];
+    		X10Y3_親指 = partGroup["親指"].ToPar();
+    		X10Y3_手 = partGroup["手"].ToPar();
+    		X10Y3_小指 = partGroup["小指"].ToPar();
+    		X10Y3_薬指 = partGroup["薬指"].ToPar();
+    		X10Y3_中指 = partGroup["中指"].ToPar();
+    		X10Y3_人指 = partGroup["人指"].ToPar();
+    		pars2 = partGroup["呪印"].ToPars();
     		pars3 = pars2["輪1"].ToPars();
     		X10Y3_呪印_輪1_輪外 = pars3["輪外"].ToPar();
     		X10Y3_呪印_輪1_輪内 = pars3["輪内"].ToPar();
@@ -4430,14 +4430,14 @@ namespace SlaveMatrix
     		X10Y3_呪印_鎖1 = pars2["鎖1"].ToPar();
     		X10Y3_呪印_鎖2 = pars2["鎖2"].ToPar();
     		X10Y3_呪印_鎖3 = pars2["鎖3"].ToPar();
-    		pars = Body[10][4];
-    		X10Y4_親指 = pars["親指"].ToPar();
-    		X10Y4_手 = pars["手"].ToPar();
-    		X10Y4_小指 = pars["小指"].ToPar();
-    		X10Y4_薬指 = pars["薬指"].ToPar();
-    		X10Y4_中指 = pars["中指"].ToPar();
-    		X10Y4_人指 = pars["人指"].ToPar();
-    		pars2 = pars["呪印"].ToPars();
+    		partGroup = Body[10][4];
+    		X10Y4_親指 = partGroup["親指"].ToPar();
+    		X10Y4_手 = partGroup["手"].ToPar();
+    		X10Y4_小指 = partGroup["小指"].ToPar();
+    		X10Y4_薬指 = partGroup["薬指"].ToPar();
+    		X10Y4_中指 = partGroup["中指"].ToPar();
+    		X10Y4_人指 = partGroup["人指"].ToPar();
+    		pars2 = partGroup["呪印"].ToPars();
     		pars3 = pars2["輪1"].ToPars();
     		X10Y4_呪印_輪1_輪外 = pars3["輪外"].ToPar();
     		X10Y4_呪印_輪1_輪内 = pars3["輪内"].ToPar();
@@ -4450,14 +4450,14 @@ namespace SlaveMatrix
     		X10Y4_呪印_鎖1 = pars2["鎖1"].ToPar();
     		X10Y4_呪印_鎖2 = pars2["鎖2"].ToPar();
     		X10Y4_呪印_鎖3 = pars2["鎖3"].ToPar();
-    		pars = Body[11][0];
-    		X11Y0_小指 = pars["小指"].ToPar();
-    		X11Y0_薬指 = pars["薬指"].ToPar();
-    		X11Y0_中指 = pars["中指"].ToPar();
-    		X11Y0_人指 = pars["人指"].ToPar();
-    		X11Y0_手 = pars["手"].ToPar();
-    		X11Y0_親指 = pars["親指"].ToPar();
-    		pars2 = pars["呪印"].ToPars();
+    		partGroup = Body[11][0];
+    		X11Y0_小指 = partGroup["小指"].ToPar();
+    		X11Y0_薬指 = partGroup["薬指"].ToPar();
+    		X11Y0_中指 = partGroup["中指"].ToPar();
+    		X11Y0_人指 = partGroup["人指"].ToPar();
+    		X11Y0_手 = partGroup["手"].ToPar();
+    		X11Y0_親指 = partGroup["親指"].ToPar();
+    		pars2 = partGroup["呪印"].ToPars();
     		pars3 = pars2["輪1"].ToPars();
     		X11Y0_呪印_輪1_輪外 = pars3["輪外"].ToPar();
     		X11Y0_呪印_輪1_輪内 = pars3["輪内"].ToPar();
@@ -4469,14 +4469,14 @@ namespace SlaveMatrix
     		X11Y0_呪印_輪3_輪内 = pars3["輪内"].ToPar();
     		X11Y0_呪印_鎖1 = pars2["鎖1"].ToPar();
     		X11Y0_呪印_鎖3 = pars2["鎖3"].ToPar();
-    		pars = Body[12][0];
-    		X12Y0_親指 = pars["親指"].ToPar();
-    		X12Y0_手 = pars["手"].ToPar();
-    		X12Y0_小指 = pars["小指"].ToPar();
-    		X12Y0_薬指 = pars["薬指"].ToPar();
-    		X12Y0_中指 = pars["中指"].ToPar();
-    		X12Y0_人指 = pars["人指"].ToPar();
-    		pars2 = pars["呪印"].ToPars();
+    		partGroup = Body[12][0];
+    		X12Y0_親指 = partGroup["親指"].ToPar();
+    		X12Y0_手 = partGroup["手"].ToPar();
+    		X12Y0_小指 = partGroup["小指"].ToPar();
+    		X12Y0_薬指 = partGroup["薬指"].ToPar();
+    		X12Y0_中指 = partGroup["中指"].ToPar();
+    		X12Y0_人指 = partGroup["人指"].ToPar();
+    		pars2 = partGroup["呪印"].ToPars();
     		pars3 = pars2["輪1"].ToPars();
     		X12Y0_呪印_輪1_輪外 = pars3["輪外"].ToPar();
     		X12Y0_呪印_輪1_輪内 = pars3["輪内"].ToPar();
@@ -4489,12 +4489,12 @@ namespace SlaveMatrix
     		X12Y0_呪印_鎖1 = pars2["鎖1"].ToPar();
     		X12Y0_呪印_鎖2 = pars2["鎖2"].ToPar();
     		X12Y0_呪印_鎖3 = pars2["鎖3"].ToPar();
-    		pars = Body[13][0];
-    		X13Y0_中指 = pars["中指"].ToPar();
-    		X13Y0_人指 = pars["人指"].ToPar();
-    		X13Y0_手 = pars["手"].ToPar();
-    		X13Y0_親指 = pars["親指"].ToPar();
-    		pars2 = pars["呪印"].ToPars();
+    		partGroup = Body[13][0];
+    		X13Y0_中指 = partGroup["中指"].ToPar();
+    		X13Y0_人指 = partGroup["人指"].ToPar();
+    		X13Y0_手 = partGroup["手"].ToPar();
+    		X13Y0_親指 = partGroup["親指"].ToPar();
+    		pars2 = partGroup["呪印"].ToPars();
     		pars3 = pars2["輪1"].ToPars();
     		X13Y0_呪印_輪1_輪外 = pars3["輪外"].ToPar();
     		X13Y0_呪印_輪1_輪内 = pars3["輪内"].ToPar();
@@ -4506,14 +4506,14 @@ namespace SlaveMatrix
     		X13Y0_呪印_輪3_輪内 = pars3["輪内"].ToPar();
     		X13Y0_呪印_鎖1 = pars2["鎖1"].ToPar();
     		X13Y0_呪印_鎖3 = pars2["鎖3"].ToPar();
-    		pars = Body[14][0];
-    		X14Y0_親指 = pars["親指"].ToPar();
-    		X14Y0_手 = pars["手"].ToPar();
-    		X14Y0_小指 = pars["小指"].ToPar();
-    		X14Y0_薬指 = pars["薬指"].ToPar();
-    		X14Y0_中指 = pars["中指"].ToPar();
-    		X14Y0_人指 = pars["人指"].ToPar();
-    		pars2 = pars["呪印"].ToPars();
+    		partGroup = Body[14][0];
+    		X14Y0_親指 = partGroup["親指"].ToPar();
+    		X14Y0_手 = partGroup["手"].ToPar();
+    		X14Y0_小指 = partGroup["小指"].ToPar();
+    		X14Y0_薬指 = partGroup["薬指"].ToPar();
+    		X14Y0_中指 = partGroup["中指"].ToPar();
+    		X14Y0_人指 = partGroup["人指"].ToPar();
+    		pars2 = partGroup["呪印"].ToPars();
     		pars3 = pars2["輪1"].ToPars();
     		X14Y0_呪印_輪1_輪外 = pars3["輪外"].ToPar();
     		X14Y0_呪印_輪1_輪内 = pars3["輪内"].ToPar();
@@ -4526,14 +4526,14 @@ namespace SlaveMatrix
     		X14Y0_呪印_鎖1 = pars2["鎖1"].ToPar();
     		X14Y0_呪印_鎖2 = pars2["鎖2"].ToPar();
     		X14Y0_呪印_鎖3 = pars2["鎖3"].ToPar();
-    		pars = Body[14][1];
-    		X14Y1_親指 = pars["親指"].ToPar();
-    		X14Y1_手 = pars["手"].ToPar();
-    		X14Y1_小指 = pars["小指"].ToPar();
-    		X14Y1_薬指 = pars["薬指"].ToPar();
-    		X14Y1_中指 = pars["中指"].ToPar();
-    		X14Y1_人指 = pars["人指"].ToPar();
-    		pars2 = pars["呪印"].ToPars();
+    		partGroup = Body[14][1];
+    		X14Y1_親指 = partGroup["親指"].ToPar();
+    		X14Y1_手 = partGroup["手"].ToPar();
+    		X14Y1_小指 = partGroup["小指"].ToPar();
+    		X14Y1_薬指 = partGroup["薬指"].ToPar();
+    		X14Y1_中指 = partGroup["中指"].ToPar();
+    		X14Y1_人指 = partGroup["人指"].ToPar();
+    		pars2 = partGroup["呪印"].ToPars();
     		pars3 = pars2["輪1"].ToPars();
     		X14Y1_呪印_輪1_輪外 = pars3["輪外"].ToPar();
     		X14Y1_呪印_輪1_輪内 = pars3["輪内"].ToPar();
@@ -4546,14 +4546,14 @@ namespace SlaveMatrix
     		X14Y1_呪印_鎖1 = pars2["鎖1"].ToPar();
     		X14Y1_呪印_鎖2 = pars2["鎖2"].ToPar();
     		X14Y1_呪印_鎖3 = pars2["鎖3"].ToPar();
-    		pars = Body[14][2];
-    		X14Y2_親指 = pars["親指"].ToPar();
-    		X14Y2_手 = pars["手"].ToPar();
-    		X14Y2_小指 = pars["小指"].ToPar();
-    		X14Y2_薬指 = pars["薬指"].ToPar();
-    		X14Y2_中指 = pars["中指"].ToPar();
-    		X14Y2_人指 = pars["人指"].ToPar();
-    		pars2 = pars["呪印"].ToPars();
+    		partGroup = Body[14][2];
+    		X14Y2_親指 = partGroup["親指"].ToPar();
+    		X14Y2_手 = partGroup["手"].ToPar();
+    		X14Y2_小指 = partGroup["小指"].ToPar();
+    		X14Y2_薬指 = partGroup["薬指"].ToPar();
+    		X14Y2_中指 = partGroup["中指"].ToPar();
+    		X14Y2_人指 = partGroup["人指"].ToPar();
+    		pars2 = partGroup["呪印"].ToPars();
     		pars3 = pars2["輪1"].ToPars();
     		X14Y2_呪印_輪1_輪外 = pars3["輪外"].ToPar();
     		X14Y2_呪印_輪1_輪内 = pars3["輪内"].ToPar();
@@ -4614,16 +4614,16 @@ namespace SlaveMatrix
     		}
     		base.配色指定 = 配色指定;
     		配色(体配色);
-    		X6Y0Pars = new Par[2] { X6Y0_手, X6Y0_人指 };
-    		X6Y1Pars = new Par[2] { X6Y1_手, X6Y1_人指 };
-    		X6Y2Pars = new Par[2] { X6Y2_手, X6Y2_人指 };
-    		X6Y3Pars = new Par[2] { X6Y3_手, X6Y3_人指 };
-    		X6Y4Pars = new Par[2] { X6Y4_手, X6Y4_人指 };
-    		X7Y0Pars = new Par[2] { X7Y0_手, X7Y0_人指 };
-    		X7Y1Pars = new Par[2] { X7Y1_手, X7Y1_人指 };
-    		X7Y2Pars = new Par[2] { X7Y2_手, X7Y2_人指 };
-    		X7Y3Pars = new Par[2] { X7Y3_手, X7Y3_人指 };
-    		X7Y4Pars = new Par[2] { X7Y4_手, X7Y4_人指 };
+    		X6Y0Pars = new ShapePart[2] { X6Y0_手, X6Y0_人指 };
+    		X6Y1Pars = new ShapePart[2] { X6Y1_手, X6Y1_人指 };
+    		X6Y2Pars = new ShapePart[2] { X6Y2_手, X6Y2_人指 };
+    		X6Y3Pars = new ShapePart[2] { X6Y3_手, X6Y3_人指 };
+    		X6Y4Pars = new ShapePart[2] { X6Y4_手, X6Y4_人指 };
+    		X7Y0Pars = new ShapePart[2] { X7Y0_手, X7Y0_人指 };
+    		X7Y1Pars = new ShapePart[2] { X7Y1_手, X7Y1_人指 };
+    		X7Y2Pars = new ShapePart[2] { X7Y2_手, X7Y2_人指 };
+    		X7Y3Pars = new ShapePart[2] { X7Y3_手, X7Y3_人指 };
+    		X7Y4Pars = new ShapePart[2] { X7Y4_手, X7Y4_人指 };
     		X0Y0_親指CP = new ColorP(X0Y0_親指, 親指CD, DisUnit, abj: true);
     		X0Y0_手CP = new ColorP(X0Y0_手, 手CD, DisUnit, abj: true);
     		X0Y0_小指CP = new ColorP(X0Y0_小指, 小指CD, DisUnit, abj: true);
@@ -6732,54 +6732,54 @@ namespace SlaveMatrix
 
     	private void 配色N0(主人公配色 体配色)
     	{
-    		親指CD = new ColorD(ref Col.Black, ref 体配色.肌色);
-    		手CD = new ColorD(ref Col.Black, ref 体配色.肌色);
-    		小指CD = new ColorD(ref Col.Black, ref 体配色.肌色);
-    		薬指CD = new ColorD(ref Col.Black, ref 体配色.肌色);
-    		中指CD = new ColorD(ref Col.Black, ref 体配色.肌色);
-    		人指CD = new ColorD(ref Col.Black, ref 体配色.肌色);
-    		呪印_輪1_輪外CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		呪印_輪1_輪内CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		呪印_輪2_輪外CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		呪印_輪2_輪内CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		呪印_輪3_輪外CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		呪印_輪3_輪内CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		呪印_鎖1CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		呪印_鎖2CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		呪印_鎖3CD = new ColorD(ref Col.Black, ref 体配色.刺青);
+    		親指CD = new ColorD(ref ColorHelper.Black, ref 体配色.肌色);
+    		手CD = new ColorD(ref ColorHelper.Black, ref 体配色.肌色);
+    		小指CD = new ColorD(ref ColorHelper.Black, ref 体配色.肌色);
+    		薬指CD = new ColorD(ref ColorHelper.Black, ref 体配色.肌色);
+    		中指CD = new ColorD(ref ColorHelper.Black, ref 体配色.肌色);
+    		人指CD = new ColorD(ref ColorHelper.Black, ref 体配色.肌色);
+    		呪印_輪1_輪外CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		呪印_輪1_輪内CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		呪印_輪2_輪外CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		呪印_輪2_輪内CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		呪印_輪3_輪外CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		呪印_輪3_輪内CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		呪印_鎖1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		呪印_鎖2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		呪印_鎖3CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
     	}
 
     	public void 再配色(主人公配色 体配色)
     	{
-    		親指CD.線 = Col.Black;
+    		親指CD.線 = ColorHelper.Black;
     		親指CD.色 = 体配色.肌色;
-    		手CD.線 = Col.Black;
+    		手CD.線 = ColorHelper.Black;
     		手CD.色 = 体配色.肌色;
-    		小指CD.線 = Col.Black;
+    		小指CD.線 = ColorHelper.Black;
     		小指CD.色 = 体配色.肌色;
-    		薬指CD.線 = Col.Black;
+    		薬指CD.線 = ColorHelper.Black;
     		薬指CD.色 = 体配色.肌色;
-    		中指CD.線 = Col.Black;
+    		中指CD.線 = ColorHelper.Black;
     		中指CD.色 = 体配色.肌色;
-    		人指CD.線 = Col.Black;
+    		人指CD.線 = ColorHelper.Black;
     		人指CD.色 = 体配色.肌色;
-    		呪印_輪1_輪外CD.線 = Col.Black;
+    		呪印_輪1_輪外CD.線 = ColorHelper.Black;
     		呪印_輪1_輪外CD.色 = 体配色.刺青;
-    		呪印_輪1_輪内CD.線 = Col.Black;
+    		呪印_輪1_輪内CD.線 = ColorHelper.Black;
     		呪印_輪1_輪内CD.色 = 体配色.刺青;
-    		呪印_輪2_輪外CD.線 = Col.Black;
+    		呪印_輪2_輪外CD.線 = ColorHelper.Black;
     		呪印_輪2_輪外CD.色 = 体配色.刺青;
-    		呪印_輪2_輪内CD.線 = Col.Black;
+    		呪印_輪2_輪内CD.線 = ColorHelper.Black;
     		呪印_輪2_輪内CD.色 = 体配色.刺青;
-    		呪印_輪3_輪外CD.線 = Col.Black;
+    		呪印_輪3_輪外CD.線 = ColorHelper.Black;
     		呪印_輪3_輪外CD.色 = 体配色.刺青;
-    		呪印_輪3_輪内CD.線 = Col.Black;
+    		呪印_輪3_輪内CD.線 = ColorHelper.Black;
     		呪印_輪3_輪内CD.色 = 体配色.刺青;
-    		呪印_鎖1CD.線 = Col.Black;
+    		呪印_鎖1CD.線 = ColorHelper.Black;
     		呪印_鎖1CD.色 = 体配色.刺青;
-    		呪印_鎖2CD.線 = Col.Black;
+    		呪印_鎖2CD.線 = ColorHelper.Black;
     		呪印_鎖2CD.色 = 体配色.刺青;
-    		呪印_鎖3CD.線 = Col.Black;
+    		呪印_鎖3CD.線 = ColorHelper.Black;
     		呪印_鎖3CD.色 = 体配色.刺青;
     		X0Y0_親指CP.Setting();
     		X0Y0_手CP.Setting();

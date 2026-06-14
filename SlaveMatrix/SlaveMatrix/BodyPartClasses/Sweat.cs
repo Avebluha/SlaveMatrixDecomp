@@ -7,7 +7,7 @@ namespace SlaveMatrix
 {
     public struct ryps
     {
-        public Par r;
+        public ShapePart r;
 
         public Vector2D c;
 
@@ -19,15 +19,15 @@ namespace SlaveMatrix
     {
     	private HashSet<string> 汗対象 = new HashSet<string>
     	{
-    		Sta.ChestType.ToString(),
-    		Sta.TorsoType.ToString(),
-    		Sta.ShoulderType.ToString(),
-    		Sta.WaistType.ToString()
+    		GlobalState.ChestType.ToString(),
+    		GlobalState.TorsoType.ToString(),
+    		GlobalState.ShoulderType.ToString(),
+    		GlobalState.WaistType.ToString()
     	};
 
     	private ryps[] 対象;
 
-    	private List<Ele> 全体 = new List<Ele>();
+    	private List<Element> 全体 = new List<Element>();
 
     	private List<double> 位置 = new List<double>();
 
@@ -39,7 +39,7 @@ namespace SlaveMatrix
 
     	private int i;
 
-    	private Ele 汗;
+    	private Element 汗;
 
     	private Vector2D tp;
 
@@ -73,8 +73,8 @@ namespace SlaveMatrix
 
     	public Sweat(ModeEventDispatcher Med, RenderArea Are, Character Cha, Motions Mots)
     	{
-    		Ele[] es = null;
-    		Ele n = null;
+    		Element[] es = null;
+    		Element n = null;
     		bool re = false;
     		汗かき = new Motion(0.0, 1.0)
     		{
@@ -83,8 +83,8 @@ namespace SlaveMatrix
     			{
     				if (汗だし)
     				{
-    					es = 全体.Where((Ele e) => e.Intensity != 0.0).ToArray();
-    					Ele[] array5 = es;
+    					es = 全体.Where((Element e) => e.Intensity != 0.0).ToArray();
+    					Element[] array5 = es;
     					for (int num3 = 0; num3 < array5.Length; num3++)
     					{
     						array5[num3].Intensity = 0.0;
@@ -95,7 +95,7 @@ namespace SlaveMatrix
     			{
     				if (汗だし)
     				{
-    					Ele[] array4 = es;
+    					Element[] array4 = es;
     					for (int num2 = 0; num2 < array4.Length; num2++)
     					{
     						array4[num2].Intensity = m.Value;
@@ -114,15 +114,15 @@ namespace SlaveMatrix
     			{
     				if (汗だし)
     				{
-    					Ele[] array3 = es;
+    					Element[] array3 = es;
     					for (int l = 0; l < array3.Length; l++)
     					{
     						array3[l].Intensity = 1.0;
     					}
     					m.ResetValue();
     					汗だし = false;
-    					es = 全体.Where((Ele e) => e.Intensity != 0.0).ToArray();
-    					n = es[RNG.XS.Next(es.Length)];
+    					es = 全体.Where((Element e) => e.Intensity != 0.0).ToArray();
+    					n = es[Rng.XS.Next(es.Length)];
     				}
     				else
     				{
@@ -135,15 +135,15 @@ namespace SlaveMatrix
     				{
     					n.Yv = 0.0;
     					n.Intensity = 0.0;
-    					es = 全体.Where((Ele e) => e.Intensity != 0.0).ToArray();
+    					es = 全体.Where((Element e) => e.Intensity != 0.0).ToArray();
     					if (es.Length != 0)
     					{
-    						n = es[RNG.XS.Next(es.Length)];
+    						n = es[Rng.XS.Next(es.Length)];
     					}
-    					es = 全体.Where((Ele e) => e.Intensity == 0.0).ToArray();
+    					es = 全体.Where((Element e) => e.Intensity == 0.0).ToArray();
     					if (es.Length != 0)
     					{
-    						es[RNG.XS.Next(es.Length)].Intensity = 1.0;
+    						es[Rng.XS.Next(es.Length)].Intensity = 1.0;
     					}
     					re = false;
     					m.ResetValue();
@@ -155,10 +155,10 @@ namespace SlaveMatrix
     				{
     					n.Yv = 0.0;
     					n.Intensity = 0.0;
-    					es = 全体.Where((Ele e) => e.Intensity != 0.0).ToArray();
-    					n = es[RNG.XS.Next(es.Length)];
-    					es = 全体.Where((Ele e) => e.Intensity == 0.0).ToArray();
-    					es[RNG.XS.Next(es.Length)].Intensity = 1.0;
+    					es = 全体.Where((Element e) => e.Intensity != 0.0).ToArray();
+    					n = es[Rng.XS.Next(es.Length)];
+    					es = 全体.Where((Element e) => e.Intensity == 0.0).ToArray();
+    					es[Rng.XS.Next(es.Length)].Intensity = 1.0;
     					re = false;
     					m.ResetValue();
     					汗ひき.Start();
@@ -171,11 +171,11 @@ namespace SlaveMatrix
     			BaseSpeed = 1.0,
     			OnStart = delegate
     			{
-    				es = 全体.Where((Ele e) => e.Intensity != 0.0).ToArray();
+    				es = 全体.Where((Element e) => e.Intensity != 0.0).ToArray();
     			},
     			OnUpdate = delegate(Motion m)
     			{
-    				Ele[] array2 = es;
+    				Element[] array2 = es;
     				for (int k = 0; k < array2.Length; k++)
     				{
     					array2[k].Intensity = m.Value.Inverse();
@@ -185,7 +185,7 @@ namespace SlaveMatrix
     			{
     				m.End();
     				m.ResetValue();
-    				Ele[] array = es;
+    				Element[] array = es;
     				for (int j = 0; j < array.Length; j++)
     				{
     					array[j].Intensity = 1.0;
@@ -204,7 +204,7 @@ namespace SlaveMatrix
     		int num = 0;
     		汗D e2 = new 汗D();
     		ryps ryps;
-    		foreach (Ele item in Cha.Body.Elements.Where((Ele e) => 汗対象.Contains(e.GetType().ToString())))
+    		foreach (Element item in Cha.Body.Elements.Where((Element e) => 汗対象.Contains(e.GetType().ToString())))
     		{
     			ryps = default(ryps);
     			ryps.r = item.Body.GetCurJoinRoot();
@@ -219,7 +219,7 @@ namespace SlaveMatrix
     				_ = ref ps[i];
     				汗 = new 汗(Are.DisplayUnitScale, 配色指定.N0, Cha.ColorSet, Med, e2);
     				汗.SetHitFalse();
-    				汗.Intensity = ((RNG.XS.NextDouble() < 0.2) ? 1.0 : 0.0);
+    				汗.Intensity = ((Rng.XS.NextDouble() < 0.2) ? 1.0 : 0.0);
     				位置.Add(num switch
     				{
     					1 => 0.5, 
@@ -235,7 +235,7 @@ namespace SlaveMatrix
 
     	public void Dispose()
     	{
-    		foreach (Ele item in 全体)
+    		foreach (Element item in 全体)
     		{
     			item.Dispose();
     		}

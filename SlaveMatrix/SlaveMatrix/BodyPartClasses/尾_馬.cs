@@ -5,85 +5,85 @@ namespace SlaveMatrix
 {
     public class 尾_馬 : 尾
     {
-    	public Par X0Y0_尾0;
+    	public ShapePart X0Y0_尾0;
 
-    	public Par X0Y0_尾1;
+    	public ShapePart X0Y0_尾1;
 
-    	public Par X0Y0_尾2;
+    	public ShapePart X0Y0_尾2;
 
-    	public Par X0Y0_尾3;
+    	public ShapePart X0Y0_尾3;
 
-    	public Par X0Y0_尾4;
+    	public ShapePart X0Y0_尾4;
 
-    	public Par X0Y0_中央_尾0;
+    	public ShapePart X0Y0_中央_尾0;
 
-    	public Par X0Y0_中央_尾1;
+    	public ShapePart X0Y0_中央_尾1;
 
-    	public Par X0Y0_中央_尾2;
+    	public ShapePart X0Y0_中央_尾2;
 
-    	public Par X0Y0_中央_尾3;
+    	public ShapePart X0Y0_中央_尾3;
 
-    	public Par X0Y0_中央_尾4;
+    	public ShapePart X0Y0_中央_尾4;
 
-    	public Par X0Y0_中央_尾5;
+    	public ShapePart X0Y0_中央_尾5;
 
-    	public Par X0Y0_中央_尾6;
+    	public ShapePart X0Y0_中央_尾6;
 
-    	public Par X0Y0_左2_尾0;
+    	public ShapePart X0Y0_左2_尾0;
 
-    	public Par X0Y0_左2_尾1;
+    	public ShapePart X0Y0_左2_尾1;
 
-    	public Par X0Y0_左2_尾2;
+    	public ShapePart X0Y0_左2_尾2;
 
-    	public Par X0Y0_左2_尾3;
+    	public ShapePart X0Y0_左2_尾3;
 
-    	public Par X0Y0_左2_尾4;
+    	public ShapePart X0Y0_左2_尾4;
 
-    	public Par X0Y0_左2_尾5;
+    	public ShapePart X0Y0_左2_尾5;
 
-    	public Par X0Y0_左2_尾6;
+    	public ShapePart X0Y0_左2_尾6;
 
-    	public Par X0Y0_左1_尾0;
+    	public ShapePart X0Y0_左1_尾0;
 
-    	public Par X0Y0_左1_尾1;
+    	public ShapePart X0Y0_左1_尾1;
 
-    	public Par X0Y0_左1_尾2;
+    	public ShapePart X0Y0_左1_尾2;
 
-    	public Par X0Y0_左1_尾3;
+    	public ShapePart X0Y0_左1_尾3;
 
-    	public Par X0Y0_左1_尾4;
+    	public ShapePart X0Y0_左1_尾4;
 
-    	public Par X0Y0_左1_尾5;
+    	public ShapePart X0Y0_左1_尾5;
 
-    	public Par X0Y0_左1_尾6;
+    	public ShapePart X0Y0_左1_尾6;
 
-    	public Par X0Y0_右2_尾0;
+    	public ShapePart X0Y0_右2_尾0;
 
-    	public Par X0Y0_右2_尾1;
+    	public ShapePart X0Y0_右2_尾1;
 
-    	public Par X0Y0_右2_尾2;
+    	public ShapePart X0Y0_右2_尾2;
 
-    	public Par X0Y0_右2_尾3;
+    	public ShapePart X0Y0_右2_尾3;
 
-    	public Par X0Y0_右2_尾4;
+    	public ShapePart X0Y0_右2_尾4;
 
-    	public Par X0Y0_右2_尾5;
+    	public ShapePart X0Y0_右2_尾5;
 
-    	public Par X0Y0_右2_尾6;
+    	public ShapePart X0Y0_右2_尾6;
 
-    	public Par X0Y0_右1_尾0;
+    	public ShapePart X0Y0_右1_尾0;
 
-    	public Par X0Y0_右1_尾1;
+    	public ShapePart X0Y0_右1_尾1;
 
-    	public Par X0Y0_右1_尾2;
+    	public ShapePart X0Y0_右1_尾2;
 
-    	public Par X0Y0_右1_尾3;
+    	public ShapePart X0Y0_右1_尾3;
 
-    	public Par X0Y0_右1_尾4;
+    	public ShapePart X0Y0_右1_尾4;
 
-    	public Par X0Y0_右1_尾5;
+    	public ShapePart X0Y0_右1_尾5;
 
-    	public Par X0Y0_右1_尾6;
+    	public ShapePart X0Y0_右1_尾6;
 
     	public ColorD 尾0CD;
 
@@ -245,7 +245,7 @@ namespace SlaveMatrix
 
     	public ColorP X0Y0_右1_尾6CP;
 
-    	public Par[] Pars;
+    	public ShapePart[] Pars;
 
     	private Vector2D[] mm;
 
@@ -910,19 +910,19 @@ namespace SlaveMatrix
     	public 尾_馬(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 尾_馬D e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif();
-    		dif.Tag = "馬尾";
-    		dif.Add(new Pars(Sta.尻尾["尾"][0][3]));
-    		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		X0Y0_尾0 = pars["尾0"].ToPar();
-    		X0Y0_尾1 = pars["尾1"].ToPar();
-    		X0Y0_尾2 = pars["尾2"].ToPar();
-    		X0Y0_尾3 = pars["尾3"].ToPar();
-    		X0Y0_尾4 = pars["尾4"].ToPar();
-    		Pars pars2 = pars["中央"].ToPars();
+    		MorphVariant morphVariant = new MorphVariant();
+    		morphVariant.Tag = "馬尾";
+    		morphVariant.Add(new PartGroup(GlobalState.尻尾["尾"][0][3]));
+    		Body = new VariantGrid();
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_尾0 = partGroup["尾0"].ToPar();
+    		X0Y0_尾1 = partGroup["尾1"].ToPar();
+    		X0Y0_尾2 = partGroup["尾2"].ToPar();
+    		X0Y0_尾3 = partGroup["尾3"].ToPar();
+    		X0Y0_尾4 = partGroup["尾4"].ToPar();
+    		PartGroup pars2 = partGroup["中央"].ToPars();
     		X0Y0_中央_尾0 = pars2["尾0"].ToPar();
     		X0Y0_中央_尾1 = pars2["尾1"].ToPar();
     		X0Y0_中央_尾2 = pars2["尾2"].ToPar();
@@ -930,7 +930,7 @@ namespace SlaveMatrix
     		X0Y0_中央_尾4 = pars2["尾4"].ToPar();
     		X0Y0_中央_尾5 = pars2["尾5"].ToPar();
     		X0Y0_中央_尾6 = pars2["尾6"].ToPar();
-    		pars2 = pars["左2"].ToPars();
+    		pars2 = partGroup["左2"].ToPars();
     		X0Y0_左2_尾0 = pars2["尾0"].ToPar();
     		X0Y0_左2_尾1 = pars2["尾1"].ToPar();
     		X0Y0_左2_尾2 = pars2["尾2"].ToPar();
@@ -938,7 +938,7 @@ namespace SlaveMatrix
     		X0Y0_左2_尾4 = pars2["尾4"].ToPar();
     		X0Y0_左2_尾5 = pars2["尾5"].ToPar();
     		X0Y0_左2_尾6 = pars2["尾6"].ToPar();
-    		pars2 = pars["左1"].ToPars();
+    		pars2 = partGroup["左1"].ToPars();
     		X0Y0_左1_尾0 = pars2["尾0"].ToPar();
     		X0Y0_左1_尾1 = pars2["尾1"].ToPar();
     		X0Y0_左1_尾2 = pars2["尾2"].ToPar();
@@ -946,7 +946,7 @@ namespace SlaveMatrix
     		X0Y0_左1_尾4 = pars2["尾4"].ToPar();
     		X0Y0_左1_尾5 = pars2["尾5"].ToPar();
     		X0Y0_左1_尾6 = pars2["尾6"].ToPar();
-    		pars2 = pars["右2"].ToPars();
+    		pars2 = partGroup["右2"].ToPars();
     		X0Y0_右2_尾0 = pars2["尾0"].ToPar();
     		X0Y0_右2_尾1 = pars2["尾1"].ToPar();
     		X0Y0_右2_尾2 = pars2["尾2"].ToPar();
@@ -954,7 +954,7 @@ namespace SlaveMatrix
     		X0Y0_右2_尾4 = pars2["尾4"].ToPar();
     		X0Y0_右2_尾5 = pars2["尾5"].ToPar();
     		X0Y0_右2_尾6 = pars2["尾6"].ToPar();
-    		pars2 = pars["右1"].ToPars();
+    		pars2 = partGroup["右1"].ToPars();
     		X0Y0_右1_尾0 = pars2["尾0"].ToPar();
     		X0Y0_右1_尾1 = pars2["尾1"].ToPar();
     		X0Y0_右1_尾2 = pars2["尾2"].ToPar();
@@ -1035,7 +1035,7 @@ namespace SlaveMatrix
     		}
     		base.配色指定 = 配色指定;
     		配色(体配色);
-    		Pars = new Par[40]
+    		Pars = new ShapePart[40]
     		{
     			X0Y0_尾0, X0Y0_尾1, X0Y0_尾2, X0Y0_尾3, X0Y0_尾4, X0Y0_中央_尾0, X0Y0_中央_尾1, X0Y0_中央_尾2, X0Y0_中央_尾3, X0Y0_中央_尾4,
     			X0Y0_中央_尾5, X0Y0_中央_尾6, X0Y0_左2_尾0, X0Y0_左2_尾1, X0Y0_左2_尾2, X0Y0_左2_尾3, X0Y0_左2_尾4, X0Y0_左2_尾5, X0Y0_左2_尾6, X0Y0_左1_尾0,
@@ -1132,7 +1132,7 @@ namespace SlaveMatrix
     		Body.JoinPAall();
     	}
 
-    	public override IEnumerable<Par> Enum軸()
+    	public override IEnumerable<ShapePart> Enum軸()
     	{
     		yield return X0Y0_尾0;
     		yield return X0Y0_尾1;
@@ -1193,46 +1193,46 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		尾0CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		尾1CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		尾2CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		尾3CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		尾4CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		中央_尾0CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		中央_尾1CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		中央_尾2CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		中央_尾3CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		中央_尾4CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		中央_尾5CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		中央_尾6CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		左2_尾0CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		左2_尾1CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		左2_尾2CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		左2_尾3CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		左2_尾4CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		左2_尾5CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		左2_尾6CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		左1_尾0CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		左1_尾1CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		左1_尾2CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		左1_尾3CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		左1_尾4CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		左1_尾5CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		左1_尾6CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		右2_尾0CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		右2_尾1CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		右2_尾2CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		右2_尾3CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		右2_尾4CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		右2_尾5CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		右2_尾6CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		右1_尾0CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		右1_尾1CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		右1_尾2CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		右1_尾3CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		右1_尾4CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		右1_尾5CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		右1_尾6CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
+    		尾0CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		尾1CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		尾2CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		尾3CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		尾4CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		中央_尾0CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		中央_尾1CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		中央_尾2CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		中央_尾3CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		中央_尾4CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		中央_尾5CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		中央_尾6CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		左2_尾0CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		左2_尾1CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		左2_尾2CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		左2_尾3CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		左2_尾4CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		左2_尾5CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		左2_尾6CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		左1_尾0CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		左1_尾1CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		左1_尾2CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		左1_尾3CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		左1_尾4CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		左1_尾5CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		左1_尾6CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		右2_尾0CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		右2_尾1CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		右2_尾2CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		右2_尾3CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		右2_尾4CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		右2_尾5CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		右2_尾6CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		右1_尾0CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		右1_尾1CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		右1_尾2CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		右1_尾3CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		右1_尾4CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		右1_尾5CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		右1_尾6CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
     	}
     }
 }

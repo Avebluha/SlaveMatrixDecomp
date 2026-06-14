@@ -3,87 +3,87 @@ using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
-    public class ボテ腹板 : Ele
+    public class ボテ腹板 : Element
     {
-    	public Par X0Y0_腹板4_腹板;
+    	public ShapePart X0Y0_腹板4_腹板;
 
-    	public Par X0Y0_腹板4_縦線;
+    	public ShapePart X0Y0_腹板4_縦線;
 
-    	public Par X0Y0_腹板3_腹板;
+    	public ShapePart X0Y0_腹板3_腹板;
 
-    	public Par X0Y0_腹板3_縦線;
+    	public ShapePart X0Y0_腹板3_縦線;
 
-    	public Par X0Y0_腹板2_腹板;
+    	public ShapePart X0Y0_腹板2_腹板;
 
-    	public Par X0Y0_腹板2_縦線;
+    	public ShapePart X0Y0_腹板2_縦線;
 
-    	public Par X0Y0_腹板1_腹板;
+    	public ShapePart X0Y0_腹板1_腹板;
 
-    	public Par X0Y0_腹板1_縦線;
+    	public ShapePart X0Y0_腹板1_縦線;
 
-    	public Par X0Y1_腹板4_腹板;
+    	public ShapePart X0Y1_腹板4_腹板;
 
-    	public Par X0Y1_腹板4_縦線;
+    	public ShapePart X0Y1_腹板4_縦線;
 
-    	public Par X0Y1_腹板3_腹板;
+    	public ShapePart X0Y1_腹板3_腹板;
 
-    	public Par X0Y1_腹板3_縦線;
+    	public ShapePart X0Y1_腹板3_縦線;
 
-    	public Par X0Y1_腹板2_腹板;
+    	public ShapePart X0Y1_腹板2_腹板;
 
-    	public Par X0Y1_腹板2_縦線;
+    	public ShapePart X0Y1_腹板2_縦線;
 
-    	public Par X0Y1_腹板1_腹板;
+    	public ShapePart X0Y1_腹板1_腹板;
 
-    	public Par X0Y1_腹板1_縦線;
+    	public ShapePart X0Y1_腹板1_縦線;
 
-    	public Par X0Y2_腹板4_腹板;
+    	public ShapePart X0Y2_腹板4_腹板;
 
-    	public Par X0Y2_腹板4_縦線;
+    	public ShapePart X0Y2_腹板4_縦線;
 
-    	public Par X0Y2_腹板3_腹板;
+    	public ShapePart X0Y2_腹板3_腹板;
 
-    	public Par X0Y2_腹板3_縦線;
+    	public ShapePart X0Y2_腹板3_縦線;
 
-    	public Par X0Y2_腹板2_腹板;
+    	public ShapePart X0Y2_腹板2_腹板;
 
-    	public Par X0Y2_腹板2_縦線;
+    	public ShapePart X0Y2_腹板2_縦線;
 
-    	public Par X0Y2_腹板1_腹板;
+    	public ShapePart X0Y2_腹板1_腹板;
 
-    	public Par X0Y2_腹板1_縦線;
+    	public ShapePart X0Y2_腹板1_縦線;
 
-    	public Par X0Y3_腹板4_腹板;
+    	public ShapePart X0Y3_腹板4_腹板;
 
-    	public Par X0Y3_腹板4_縦線;
+    	public ShapePart X0Y3_腹板4_縦線;
 
-    	public Par X0Y3_腹板3_腹板;
+    	public ShapePart X0Y3_腹板3_腹板;
 
-    	public Par X0Y3_腹板3_縦線;
+    	public ShapePart X0Y3_腹板3_縦線;
 
-    	public Par X0Y3_腹板2_腹板;
+    	public ShapePart X0Y3_腹板2_腹板;
 
-    	public Par X0Y3_腹板2_縦線;
+    	public ShapePart X0Y3_腹板2_縦線;
 
-    	public Par X0Y3_腹板1_腹板;
+    	public ShapePart X0Y3_腹板1_腹板;
 
-    	public Par X0Y3_腹板1_縦線;
+    	public ShapePart X0Y3_腹板1_縦線;
 
-    	public Par X0Y4_腹板4_腹板;
+    	public ShapePart X0Y4_腹板4_腹板;
 
-    	public Par X0Y4_腹板4_縦線;
+    	public ShapePart X0Y4_腹板4_縦線;
 
-    	public Par X0Y4_腹板3_腹板;
+    	public ShapePart X0Y4_腹板3_腹板;
 
-    	public Par X0Y4_腹板3_縦線;
+    	public ShapePart X0Y4_腹板3_縦線;
 
-    	public Par X0Y4_腹板2_腹板;
+    	public ShapePart X0Y4_腹板2_腹板;
 
-    	public Par X0Y4_腹板2_縦線;
+    	public ShapePart X0Y4_腹板2_縦線;
 
-    	public Par X0Y4_腹板1_腹板;
+    	public ShapePart X0Y4_腹板1_腹板;
 
-    	public Par X0Y4_腹板1_縦線;
+    	public ShapePart X0Y4_腹板1_縦線;
 
     	public ColorD 腹板4_腹板CD;
 
@@ -426,21 +426,21 @@ namespace SlaveMatrix
     	public ボテ腹板(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, ボテ腹板D e)
     	{
     		ThisType = GetType();
-    		Body = new Difs(Sta.胴体["ボテ腹板"]);
-    		Pars pars = Body[0][0];
-    		Pars pars2 = pars["腹板4"].ToPars();
+    		Body = new VariantGrid(GlobalState.胴体["ボテ腹板"]);
+    		PartGroup partGroup = Body[0][0];
+    		PartGroup pars2 = partGroup["腹板4"].ToPars();
     		X0Y0_腹板4_腹板 = pars2["腹板"].ToPar();
     		X0Y0_腹板4_縦線 = pars2["縦線"].ToPar();
-    		pars2 = pars["腹板3"].ToPars();
+    		pars2 = partGroup["腹板3"].ToPars();
     		X0Y0_腹板3_腹板 = pars2["腹板"].ToPar();
     		X0Y0_腹板3_縦線 = pars2["縦線"].ToPar();
-    		pars2 = pars["腹板2"].ToPars();
+    		pars2 = partGroup["腹板2"].ToPars();
     		X0Y0_腹板2_腹板 = pars2["腹板"].ToPar();
     		X0Y0_腹板2_縦線 = pars2["縦線"].ToPar();
-    		pars2 = pars["腹板1"].ToPars();
+    		pars2 = partGroup["腹板1"].ToPars();
     		X0Y0_腹板1_腹板 = pars2["腹板"].ToPar();
     		X0Y0_腹板1_縦線 = pars2["縦線"].ToPar();
-    		Pars pars3 = Body[0][1];
+    		PartGroup pars3 = Body[0][1];
     		pars2 = pars3["腹板4"].ToPars();
     		X0Y1_腹板4_腹板 = pars2["腹板"].ToPar();
     		X0Y1_腹板4_縦線 = pars2["縦線"].ToPar();
@@ -453,7 +453,7 @@ namespace SlaveMatrix
     		pars2 = pars3["腹板1"].ToPars();
     		X0Y1_腹板1_腹板 = pars2["腹板"].ToPar();
     		X0Y1_腹板1_縦線 = pars2["縦線"].ToPar();
-    		Pars pars4 = Body[0][2];
+    		PartGroup pars4 = Body[0][2];
     		pars2 = pars4["腹板4"].ToPars();
     		X0Y2_腹板4_腹板 = pars2["腹板"].ToPar();
     		X0Y2_腹板4_縦線 = pars2["縦線"].ToPar();
@@ -466,7 +466,7 @@ namespace SlaveMatrix
     		pars2 = pars4["腹板1"].ToPars();
     		X0Y2_腹板1_腹板 = pars2["腹板"].ToPar();
     		X0Y2_腹板1_縦線 = pars2["縦線"].ToPar();
-    		Pars pars5 = Body[0][3];
+    		PartGroup pars5 = Body[0][3];
     		pars2 = pars5["腹板4"].ToPars();
     		X0Y3_腹板4_腹板 = pars2["腹板"].ToPar();
     		X0Y3_腹板4_縦線 = pars2["縦線"].ToPar();
@@ -479,7 +479,7 @@ namespace SlaveMatrix
     		pars2 = pars5["腹板1"].ToPars();
     		X0Y3_腹板1_腹板 = pars2["腹板"].ToPar();
     		X0Y3_腹板1_縦線 = pars2["縦線"].ToPar();
-    		Pars pars6 = Body[0][4];
+    		PartGroup pars6 = Body[0][4];
     		pars2 = pars6["腹板4"].ToPars();
     		X0Y4_腹板4_腹板 = pars2["腹板"].ToPar();
     		X0Y4_腹板4_縦線 = pars2["縦線"].ToPar();
@@ -641,14 +641,14 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		腹板4_腹板CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		腹板4_縦線CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		腹板3_腹板CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		腹板3_縦線CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		腹板2_腹板CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		腹板2_縦線CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		腹板1_腹板CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		腹板1_縦線CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
+    		腹板4_腹板CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		腹板4_縦線CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		腹板3_腹板CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		腹板3_縦線CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		腹板2_腹板CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		腹板2_縦線CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		腹板1_腹板CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		腹板1_縦線CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
     	}
     }
 }

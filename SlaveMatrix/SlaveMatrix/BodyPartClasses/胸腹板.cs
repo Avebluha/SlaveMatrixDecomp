@@ -3,11 +3,11 @@ using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
-    public class 胸腹板 : Ele
+    public class 胸腹板 : Element
     {
-    	public Par X0Y0_虫性_腹板;
+    	public ShapePart X0Y0_虫性_腹板;
 
-    	public Par X0Y0_虫性_縦線;
+    	public ShapePart X0Y0_虫性_縦線;
 
     	public ColorD 虫性_腹板CD;
 
@@ -108,10 +108,10 @@ namespace SlaveMatrix
     	public 胸腹板(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 胸腹板D e)
     	{
     		ThisType = GetType();
-    		Body = new Difs(Sta.胴体["胸郭腹板"]);
-    		Pars pars = Body[0][0];
-    		X0Y0_虫性_腹板 = pars["腹板"].ToPar();
-    		X0Y0_虫性_縦線 = pars["縦線"].ToPar();
+    		Body = new VariantGrid(GlobalState.胴体["胸郭腹板"]);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_虫性_腹板 = partGroup["腹板"].ToPar();
+    		X0Y0_虫性_縦線 = partGroup["縦線"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;
@@ -166,8 +166,8 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		虫性_腹板CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		虫性_縦線CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
+    		虫性_腹板CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		虫性_縦線CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
     	}
     }
 }

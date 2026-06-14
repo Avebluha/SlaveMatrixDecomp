@@ -4,355 +4,355 @@ namespace SlaveMatrix
 {
     public class 下着ボトム_マイクロ : 下着ボトム
     {
-    	public Par X0Y0_紐左;
+    	public ShapePart X0Y0_紐左;
 
-    	public Par X0Y0_紐右;
+    	public ShapePart X0Y0_紐右;
 
-    	public Par X0Y0_下地;
+    	public ShapePart X0Y0_下地;
 
-    	public Par X0Y0_線;
+    	public ShapePart X0Y0_線;
 
-    	public Par X0Y0_ライン_ライン上;
+    	public ShapePart X0Y0_ライン_ライン上;
 
-    	public Par X0Y0_ライン_ライン左;
+    	public ShapePart X0Y0_ライン_ライン左;
 
-    	public Par X0Y0_ライン_ライン右;
+    	public ShapePart X0Y0_ライン_ライン右;
 
-    	public Par X0Y0_ライン_ライン左下;
+    	public ShapePart X0Y0_ライン_ライン左下;
 
-    	public Par X0Y0_ライン_ライン右下;
+    	public ShapePart X0Y0_ライン_ライン右下;
 
-    	public Par X0Y0_ライン_ライン下左;
+    	public ShapePart X0Y0_ライン_ライン下左;
 
-    	public Par X0Y0_ライン_ライン下右;
+    	public ShapePart X0Y0_ライン_ライン下右;
 
-    	public Par X0Y0_結び紐左_紐1;
+    	public ShapePart X0Y0_結び紐左_紐1;
 
-    	public Par X0Y0_結び紐左_紐2;
+    	public ShapePart X0Y0_結び紐左_紐2;
 
-    	public Par X0Y0_結び紐左_輪1_紐後;
+    	public ShapePart X0Y0_結び紐左_輪1_紐後;
 
-    	public Par X0Y0_結び紐左_輪1_紐前;
+    	public ShapePart X0Y0_結び紐左_輪1_紐前;
 
-    	public Par X0Y0_結び紐左_輪2_紐後;
+    	public ShapePart X0Y0_結び紐左_輪2_紐後;
 
-    	public Par X0Y0_結び紐左_輪2_紐前;
+    	public ShapePart X0Y0_結び紐左_輪2_紐前;
 
-    	public Par X0Y0_結び紐左_結び目;
+    	public ShapePart X0Y0_結び紐左_結び目;
 
-    	public Par X0Y0_結び紐右_紐1;
+    	public ShapePart X0Y0_結び紐右_紐1;
 
-    	public Par X0Y0_結び紐右_紐2;
+    	public ShapePart X0Y0_結び紐右_紐2;
 
-    	public Par X0Y0_結び紐右_輪1_紐後;
+    	public ShapePart X0Y0_結び紐右_輪1_紐後;
 
-    	public Par X0Y0_結び紐右_輪1_紐前;
+    	public ShapePart X0Y0_結び紐右_輪1_紐前;
 
-    	public Par X0Y0_結び紐右_輪2_紐後;
+    	public ShapePart X0Y0_結び紐右_輪2_紐後;
 
-    	public Par X0Y0_結び紐右_輪2_紐前;
+    	public ShapePart X0Y0_結び紐右_輪2_紐前;
 
-    	public Par X0Y0_結び紐右_結び目;
+    	public ShapePart X0Y0_結び紐右_結び目;
 
-    	public Par X0Y0_ヴィオラ_紐左;
+    	public ShapePart X0Y0_ヴィオラ_紐左;
 
-    	public Par X0Y0_ヴィオラ_紐右;
+    	public ShapePart X0Y0_ヴィオラ_紐右;
 
-    	public Par X0Y0_ヴィオラ_丸金具左;
+    	public ShapePart X0Y0_ヴィオラ_丸金具左;
 
-    	public Par X0Y0_ヴィオラ_丸金具右;
+    	public ShapePart X0Y0_ヴィオラ_丸金具右;
 
-    	public Par X0Y0_ヴィオラ_金具左_金具1;
+    	public ShapePart X0Y0_ヴィオラ_金具左_金具1;
 
-    	public Par X0Y0_ヴィオラ_金具左_金具2;
+    	public ShapePart X0Y0_ヴィオラ_金具左_金具2;
 
-    	public Par X0Y0_ヴィオラ_金具右_金具1;
+    	public ShapePart X0Y0_ヴィオラ_金具右_金具1;
 
-    	public Par X0Y0_ヴィオラ_金具右_金具2;
+    	public ShapePart X0Y0_ヴィオラ_金具右_金具2;
 
-    	public Par X0Y0_染み_染み2;
+    	public ShapePart X0Y0_染み_染み2;
 
-    	public Par X0Y0_染み_染み1;
+    	public ShapePart X0Y0_染み_染み1;
 
-    	public Par X0Y1_紐左;
+    	public ShapePart X0Y1_紐左;
 
-    	public Par X0Y1_紐右;
+    	public ShapePart X0Y1_紐右;
 
-    	public Par X0Y1_下地;
+    	public ShapePart X0Y1_下地;
 
-    	public Par X0Y1_線;
+    	public ShapePart X0Y1_線;
 
-    	public Par X0Y1_ライン_ライン上;
+    	public ShapePart X0Y1_ライン_ライン上;
 
-    	public Par X0Y1_ライン_ライン左;
+    	public ShapePart X0Y1_ライン_ライン左;
 
-    	public Par X0Y1_ライン_ライン右;
+    	public ShapePart X0Y1_ライン_ライン右;
 
-    	public Par X0Y1_ライン_ライン左下;
+    	public ShapePart X0Y1_ライン_ライン左下;
 
-    	public Par X0Y1_ライン_ライン右下;
+    	public ShapePart X0Y1_ライン_ライン右下;
 
-    	public Par X0Y1_ライン_ライン下左;
+    	public ShapePart X0Y1_ライン_ライン下左;
 
-    	public Par X0Y1_ライン_ライン下右;
+    	public ShapePart X0Y1_ライン_ライン下右;
 
-    	public Par X0Y1_結び紐左_紐1;
+    	public ShapePart X0Y1_結び紐左_紐1;
 
-    	public Par X0Y1_結び紐左_紐2;
+    	public ShapePart X0Y1_結び紐左_紐2;
 
-    	public Par X0Y1_結び紐左_輪1_紐後;
+    	public ShapePart X0Y1_結び紐左_輪1_紐後;
 
-    	public Par X0Y1_結び紐左_輪1_紐前;
+    	public ShapePart X0Y1_結び紐左_輪1_紐前;
 
-    	public Par X0Y1_結び紐左_輪2_紐後;
+    	public ShapePart X0Y1_結び紐左_輪2_紐後;
 
-    	public Par X0Y1_結び紐左_輪2_紐前;
+    	public ShapePart X0Y1_結び紐左_輪2_紐前;
 
-    	public Par X0Y1_結び紐左_結び目;
+    	public ShapePart X0Y1_結び紐左_結び目;
 
-    	public Par X0Y1_結び紐右_紐1;
+    	public ShapePart X0Y1_結び紐右_紐1;
 
-    	public Par X0Y1_結び紐右_紐2;
+    	public ShapePart X0Y1_結び紐右_紐2;
 
-    	public Par X0Y1_結び紐右_輪1_紐後;
+    	public ShapePart X0Y1_結び紐右_輪1_紐後;
 
-    	public Par X0Y1_結び紐右_輪1_紐前;
+    	public ShapePart X0Y1_結び紐右_輪1_紐前;
 
-    	public Par X0Y1_結び紐右_輪2_紐後;
+    	public ShapePart X0Y1_結び紐右_輪2_紐後;
 
-    	public Par X0Y1_結び紐右_輪2_紐前;
+    	public ShapePart X0Y1_結び紐右_輪2_紐前;
 
-    	public Par X0Y1_結び紐右_結び目;
+    	public ShapePart X0Y1_結び紐右_結び目;
 
-    	public Par X0Y1_ヴィオラ_紐左;
+    	public ShapePart X0Y1_ヴィオラ_紐左;
 
-    	public Par X0Y1_ヴィオラ_紐右;
+    	public ShapePart X0Y1_ヴィオラ_紐右;
 
-    	public Par X0Y1_ヴィオラ_丸金具左;
+    	public ShapePart X0Y1_ヴィオラ_丸金具左;
 
-    	public Par X0Y1_ヴィオラ_丸金具右;
+    	public ShapePart X0Y1_ヴィオラ_丸金具右;
 
-    	public Par X0Y1_ヴィオラ_金具左_金具1;
+    	public ShapePart X0Y1_ヴィオラ_金具左_金具1;
 
-    	public Par X0Y1_ヴィオラ_金具左_金具2;
+    	public ShapePart X0Y1_ヴィオラ_金具左_金具2;
 
-    	public Par X0Y1_ヴィオラ_金具右_金具1;
+    	public ShapePart X0Y1_ヴィオラ_金具右_金具1;
 
-    	public Par X0Y1_ヴィオラ_金具右_金具2;
+    	public ShapePart X0Y1_ヴィオラ_金具右_金具2;
 
-    	public Par X0Y1_染み_染み2;
+    	public ShapePart X0Y1_染み_染み2;
 
-    	public Par X0Y1_染み_染み1;
+    	public ShapePart X0Y1_染み_染み1;
 
-    	public Par X0Y2_紐左;
+    	public ShapePart X0Y2_紐左;
 
-    	public Par X0Y2_紐右;
+    	public ShapePart X0Y2_紐右;
 
-    	public Par X0Y2_下地;
+    	public ShapePart X0Y2_下地;
 
-    	public Par X0Y2_線;
+    	public ShapePart X0Y2_線;
 
-    	public Par X0Y2_ライン_ライン上;
+    	public ShapePart X0Y2_ライン_ライン上;
 
-    	public Par X0Y2_ライン_ライン左;
+    	public ShapePart X0Y2_ライン_ライン左;
 
-    	public Par X0Y2_ライン_ライン右;
+    	public ShapePart X0Y2_ライン_ライン右;
 
-    	public Par X0Y2_ライン_ライン左下;
+    	public ShapePart X0Y2_ライン_ライン左下;
 
-    	public Par X0Y2_ライン_ライン右下;
+    	public ShapePart X0Y2_ライン_ライン右下;
 
-    	public Par X0Y2_ライン_ライン下左;
+    	public ShapePart X0Y2_ライン_ライン下左;
 
-    	public Par X0Y2_ライン_ライン下右;
+    	public ShapePart X0Y2_ライン_ライン下右;
 
-    	public Par X0Y2_結び紐左_紐1;
+    	public ShapePart X0Y2_結び紐左_紐1;
 
-    	public Par X0Y2_結び紐左_紐2;
+    	public ShapePart X0Y2_結び紐左_紐2;
 
-    	public Par X0Y2_結び紐左_輪1_紐後;
+    	public ShapePart X0Y2_結び紐左_輪1_紐後;
 
-    	public Par X0Y2_結び紐左_輪1_紐前;
+    	public ShapePart X0Y2_結び紐左_輪1_紐前;
 
-    	public Par X0Y2_結び紐左_輪2_紐後;
+    	public ShapePart X0Y2_結び紐左_輪2_紐後;
 
-    	public Par X0Y2_結び紐左_輪2_紐前;
+    	public ShapePart X0Y2_結び紐左_輪2_紐前;
 
-    	public Par X0Y2_結び紐左_結び目;
+    	public ShapePart X0Y2_結び紐左_結び目;
 
-    	public Par X0Y2_結び紐右_紐1;
+    	public ShapePart X0Y2_結び紐右_紐1;
 
-    	public Par X0Y2_結び紐右_紐2;
+    	public ShapePart X0Y2_結び紐右_紐2;
 
-    	public Par X0Y2_結び紐右_輪1_紐後;
+    	public ShapePart X0Y2_結び紐右_輪1_紐後;
 
-    	public Par X0Y2_結び紐右_輪1_紐前;
+    	public ShapePart X0Y2_結び紐右_輪1_紐前;
 
-    	public Par X0Y2_結び紐右_輪2_紐後;
+    	public ShapePart X0Y2_結び紐右_輪2_紐後;
 
-    	public Par X0Y2_結び紐右_輪2_紐前;
+    	public ShapePart X0Y2_結び紐右_輪2_紐前;
 
-    	public Par X0Y2_結び紐右_結び目;
+    	public ShapePart X0Y2_結び紐右_結び目;
 
-    	public Par X0Y2_ヴィオラ_紐左;
+    	public ShapePart X0Y2_ヴィオラ_紐左;
 
-    	public Par X0Y2_ヴィオラ_紐右;
+    	public ShapePart X0Y2_ヴィオラ_紐右;
 
-    	public Par X0Y2_ヴィオラ_丸金具左;
+    	public ShapePart X0Y2_ヴィオラ_丸金具左;
 
-    	public Par X0Y2_ヴィオラ_丸金具右;
+    	public ShapePart X0Y2_ヴィオラ_丸金具右;
 
-    	public Par X0Y2_ヴィオラ_金具左_金具1;
+    	public ShapePart X0Y2_ヴィオラ_金具左_金具1;
 
-    	public Par X0Y2_ヴィオラ_金具左_金具2;
+    	public ShapePart X0Y2_ヴィオラ_金具左_金具2;
 
-    	public Par X0Y2_ヴィオラ_金具右_金具1;
+    	public ShapePart X0Y2_ヴィオラ_金具右_金具1;
 
-    	public Par X0Y2_ヴィオラ_金具右_金具2;
+    	public ShapePart X0Y2_ヴィオラ_金具右_金具2;
 
-    	public Par X0Y2_染み_染み2;
+    	public ShapePart X0Y2_染み_染み2;
 
-    	public Par X0Y2_染み_染み1;
+    	public ShapePart X0Y2_染み_染み1;
 
-    	public Par X0Y3_紐左;
+    	public ShapePart X0Y3_紐左;
 
-    	public Par X0Y3_紐右;
+    	public ShapePart X0Y3_紐右;
 
-    	public Par X0Y3_下地;
+    	public ShapePart X0Y3_下地;
 
-    	public Par X0Y3_線;
+    	public ShapePart X0Y3_線;
 
-    	public Par X0Y3_ライン_ライン上;
+    	public ShapePart X0Y3_ライン_ライン上;
 
-    	public Par X0Y3_ライン_ライン左;
+    	public ShapePart X0Y3_ライン_ライン左;
 
-    	public Par X0Y3_ライン_ライン右;
+    	public ShapePart X0Y3_ライン_ライン右;
 
-    	public Par X0Y3_ライン_ライン左下;
+    	public ShapePart X0Y3_ライン_ライン左下;
 
-    	public Par X0Y3_ライン_ライン右下;
+    	public ShapePart X0Y3_ライン_ライン右下;
 
-    	public Par X0Y3_ライン_ライン下左;
+    	public ShapePart X0Y3_ライン_ライン下左;
 
-    	public Par X0Y3_ライン_ライン下右;
+    	public ShapePart X0Y3_ライン_ライン下右;
 
-    	public Par X0Y3_結び紐左_紐1;
+    	public ShapePart X0Y3_結び紐左_紐1;
 
-    	public Par X0Y3_結び紐左_紐2;
+    	public ShapePart X0Y3_結び紐左_紐2;
 
-    	public Par X0Y3_結び紐左_輪1_紐後;
+    	public ShapePart X0Y3_結び紐左_輪1_紐後;
 
-    	public Par X0Y3_結び紐左_輪1_紐前;
+    	public ShapePart X0Y3_結び紐左_輪1_紐前;
 
-    	public Par X0Y3_結び紐左_輪2_紐後;
+    	public ShapePart X0Y3_結び紐左_輪2_紐後;
 
-    	public Par X0Y3_結び紐左_輪2_紐前;
+    	public ShapePart X0Y3_結び紐左_輪2_紐前;
 
-    	public Par X0Y3_結び紐左_結び目;
+    	public ShapePart X0Y3_結び紐左_結び目;
 
-    	public Par X0Y3_結び紐右_紐1;
+    	public ShapePart X0Y3_結び紐右_紐1;
 
-    	public Par X0Y3_結び紐右_紐2;
+    	public ShapePart X0Y3_結び紐右_紐2;
 
-    	public Par X0Y3_結び紐右_輪1_紐後;
+    	public ShapePart X0Y3_結び紐右_輪1_紐後;
 
-    	public Par X0Y3_結び紐右_輪1_紐前;
+    	public ShapePart X0Y3_結び紐右_輪1_紐前;
 
-    	public Par X0Y3_結び紐右_輪2_紐後;
+    	public ShapePart X0Y3_結び紐右_輪2_紐後;
 
-    	public Par X0Y3_結び紐右_輪2_紐前;
+    	public ShapePart X0Y3_結び紐右_輪2_紐前;
 
-    	public Par X0Y3_結び紐右_結び目;
+    	public ShapePart X0Y3_結び紐右_結び目;
 
-    	public Par X0Y3_ヴィオラ_紐左;
+    	public ShapePart X0Y3_ヴィオラ_紐左;
 
-    	public Par X0Y3_ヴィオラ_紐右;
+    	public ShapePart X0Y3_ヴィオラ_紐右;
 
-    	public Par X0Y3_ヴィオラ_丸金具左;
+    	public ShapePart X0Y3_ヴィオラ_丸金具左;
 
-    	public Par X0Y3_ヴィオラ_丸金具右;
+    	public ShapePart X0Y3_ヴィオラ_丸金具右;
 
-    	public Par X0Y3_ヴィオラ_金具左_金具1;
+    	public ShapePart X0Y3_ヴィオラ_金具左_金具1;
 
-    	public Par X0Y3_ヴィオラ_金具左_金具2;
+    	public ShapePart X0Y3_ヴィオラ_金具左_金具2;
 
-    	public Par X0Y3_ヴィオラ_金具右_金具1;
+    	public ShapePart X0Y3_ヴィオラ_金具右_金具1;
 
-    	public Par X0Y3_ヴィオラ_金具右_金具2;
+    	public ShapePart X0Y3_ヴィオラ_金具右_金具2;
 
-    	public Par X0Y3_染み_染み2;
+    	public ShapePart X0Y3_染み_染み2;
 
-    	public Par X0Y3_染み_染み1;
+    	public ShapePart X0Y3_染み_染み1;
 
-    	public Par X0Y4_紐左;
+    	public ShapePart X0Y4_紐左;
 
-    	public Par X0Y4_紐右;
+    	public ShapePart X0Y4_紐右;
 
-    	public Par X0Y4_下地;
+    	public ShapePart X0Y4_下地;
 
-    	public Par X0Y4_線;
+    	public ShapePart X0Y4_線;
 
-    	public Par X0Y4_ライン_ライン上;
+    	public ShapePart X0Y4_ライン_ライン上;
 
-    	public Par X0Y4_ライン_ライン左;
+    	public ShapePart X0Y4_ライン_ライン左;
 
-    	public Par X0Y4_ライン_ライン右;
+    	public ShapePart X0Y4_ライン_ライン右;
 
-    	public Par X0Y4_ライン_ライン左下;
+    	public ShapePart X0Y4_ライン_ライン左下;
 
-    	public Par X0Y4_ライン_ライン右下;
+    	public ShapePart X0Y4_ライン_ライン右下;
 
-    	public Par X0Y4_ライン_ライン下左;
+    	public ShapePart X0Y4_ライン_ライン下左;
 
-    	public Par X0Y4_ライン_ライン下右;
+    	public ShapePart X0Y4_ライン_ライン下右;
 
-    	public Par X0Y4_結び紐左_紐1;
+    	public ShapePart X0Y4_結び紐左_紐1;
 
-    	public Par X0Y4_結び紐左_紐2;
+    	public ShapePart X0Y4_結び紐左_紐2;
 
-    	public Par X0Y4_結び紐左_輪1_紐後;
+    	public ShapePart X0Y4_結び紐左_輪1_紐後;
 
-    	public Par X0Y4_結び紐左_輪1_紐前;
+    	public ShapePart X0Y4_結び紐左_輪1_紐前;
 
-    	public Par X0Y4_結び紐左_輪2_紐後;
+    	public ShapePart X0Y4_結び紐左_輪2_紐後;
 
-    	public Par X0Y4_結び紐左_輪2_紐前;
+    	public ShapePart X0Y4_結び紐左_輪2_紐前;
 
-    	public Par X0Y4_結び紐左_結び目;
+    	public ShapePart X0Y4_結び紐左_結び目;
 
-    	public Par X0Y4_結び紐右_紐1;
+    	public ShapePart X0Y4_結び紐右_紐1;
 
-    	public Par X0Y4_結び紐右_紐2;
+    	public ShapePart X0Y4_結び紐右_紐2;
 
-    	public Par X0Y4_結び紐右_輪1_紐後;
+    	public ShapePart X0Y4_結び紐右_輪1_紐後;
 
-    	public Par X0Y4_結び紐右_輪1_紐前;
+    	public ShapePart X0Y4_結び紐右_輪1_紐前;
 
-    	public Par X0Y4_結び紐右_輪2_紐後;
+    	public ShapePart X0Y4_結び紐右_輪2_紐後;
 
-    	public Par X0Y4_結び紐右_輪2_紐前;
+    	public ShapePart X0Y4_結び紐右_輪2_紐前;
 
-    	public Par X0Y4_結び紐右_結び目;
+    	public ShapePart X0Y4_結び紐右_結び目;
 
-    	public Par X0Y4_ヴィオラ_紐左;
+    	public ShapePart X0Y4_ヴィオラ_紐左;
 
-    	public Par X0Y4_ヴィオラ_紐右;
+    	public ShapePart X0Y4_ヴィオラ_紐右;
 
-    	public Par X0Y4_ヴィオラ_丸金具左;
+    	public ShapePart X0Y4_ヴィオラ_丸金具左;
 
-    	public Par X0Y4_ヴィオラ_丸金具右;
+    	public ShapePart X0Y4_ヴィオラ_丸金具右;
 
-    	public Par X0Y4_ヴィオラ_金具左_金具1;
+    	public ShapePart X0Y4_ヴィオラ_金具左_金具1;
 
-    	public Par X0Y4_ヴィオラ_金具左_金具2;
+    	public ShapePart X0Y4_ヴィオラ_金具左_金具2;
 
-    	public Par X0Y4_ヴィオラ_金具右_金具1;
+    	public ShapePart X0Y4_ヴィオラ_金具右_金具1;
 
-    	public Par X0Y4_ヴィオラ_金具右_金具2;
+    	public ShapePart X0Y4_ヴィオラ_金具右_金具2;
 
-    	public Par X0Y4_染み_染み2;
+    	public ShapePart X0Y4_染み_染み2;
 
-    	public Par X0Y4_染み_染み1;
+    	public ShapePart X0Y4_染み_染み1;
 
     	public ColorD 紐左CD;
 
@@ -1787,16 +1787,16 @@ namespace SlaveMatrix
     	public 下着ボトム_マイクロ(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 下着ボトム_マイクロD e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif(Sta.胴体["下着ボトム"][1]);
-    		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		X0Y0_紐左 = pars["紐左"].ToPar();
-    		X0Y0_紐右 = pars["紐右"].ToPar();
-    		X0Y0_下地 = pars["下地"].ToPar();
-    		X0Y0_線 = pars["線"].ToPar();
-    		Pars pars2 = pars["ライン"].ToPars();
+    		MorphVariant morphVariant = new MorphVariant(GlobalState.胴体["下着ボトム"][1]);
+    		Body = new VariantGrid();
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_紐左 = partGroup["紐左"].ToPar();
+    		X0Y0_紐右 = partGroup["紐右"].ToPar();
+    		X0Y0_下地 = partGroup["下地"].ToPar();
+    		X0Y0_線 = partGroup["線"].ToPar();
+    		PartGroup pars2 = partGroup["ライン"].ToPars();
     		X0Y0_ライン_ライン上 = pars2["ライン上"].ToPar();
     		X0Y0_ライン_ライン左 = pars2["ライン左"].ToPar();
     		X0Y0_ライン_ライン右 = pars2["ライン右"].ToPar();
@@ -1804,17 +1804,17 @@ namespace SlaveMatrix
     		X0Y0_ライン_ライン右下 = pars2["ライン右下"].ToPar();
     		X0Y0_ライン_ライン下左 = pars2["ライン下左"].ToPar();
     		X0Y0_ライン_ライン下右 = pars2["ライン下右"].ToPar();
-    		pars2 = pars["結び紐左"].ToPars();
+    		pars2 = partGroup["結び紐左"].ToPars();
     		X0Y0_結び紐左_紐1 = pars2["紐1"].ToPar();
     		X0Y0_結び紐左_紐2 = pars2["紐2"].ToPar();
-    		Pars pars3 = pars2["輪1"].ToPars();
+    		PartGroup pars3 = pars2["輪1"].ToPars();
     		X0Y0_結び紐左_輪1_紐後 = pars3["紐後"].ToPar();
     		X0Y0_結び紐左_輪1_紐前 = pars3["紐前"].ToPar();
     		pars3 = pars2["輪2"].ToPars();
     		X0Y0_結び紐左_輪2_紐後 = pars3["紐後"].ToPar();
     		X0Y0_結び紐左_輪2_紐前 = pars3["紐前"].ToPar();
     		X0Y0_結び紐左_結び目 = pars2["結び目"].ToPar();
-    		pars2 = pars["結び紐右"].ToPars();
+    		pars2 = partGroup["結び紐右"].ToPars();
     		X0Y0_結び紐右_紐1 = pars2["紐1"].ToPar();
     		X0Y0_結び紐右_紐2 = pars2["紐2"].ToPar();
     		pars3 = pars2["輪1"].ToPars();
@@ -1824,7 +1824,7 @@ namespace SlaveMatrix
     		X0Y0_結び紐右_輪2_紐後 = pars3["紐後"].ToPar();
     		X0Y0_結び紐右_輪2_紐前 = pars3["紐前"].ToPar();
     		X0Y0_結び紐右_結び目 = pars2["結び目"].ToPar();
-    		pars2 = pars["ヴィオラ"].ToPars();
+    		pars2 = partGroup["ヴィオラ"].ToPars();
     		X0Y0_ヴィオラ_紐左 = pars2["紐左"].ToPar();
     		X0Y0_ヴィオラ_紐右 = pars2["紐右"].ToPar();
     		X0Y0_ヴィオラ_丸金具左 = pars2["丸金具左"].ToPar();
@@ -1835,15 +1835,15 @@ namespace SlaveMatrix
     		pars3 = pars2["金具右"].ToPars();
     		X0Y0_ヴィオラ_金具右_金具1 = pars3["金具1"].ToPar();
     		X0Y0_ヴィオラ_金具右_金具2 = pars3["金具2"].ToPar();
-    		pars2 = pars["染み"].ToPars();
+    		pars2 = partGroup["染み"].ToPars();
     		X0Y0_染み_染み2 = pars2["染み2"].ToPar();
     		X0Y0_染み_染み1 = pars2["染み1"].ToPar();
-    		pars = Body[0][1];
-    		X0Y1_紐左 = pars["紐左"].ToPar();
-    		X0Y1_紐右 = pars["紐右"].ToPar();
-    		X0Y1_下地 = pars["下地"].ToPar();
-    		X0Y1_線 = pars["線"].ToPar();
-    		pars2 = pars["ライン"].ToPars();
+    		partGroup = Body[0][1];
+    		X0Y1_紐左 = partGroup["紐左"].ToPar();
+    		X0Y1_紐右 = partGroup["紐右"].ToPar();
+    		X0Y1_下地 = partGroup["下地"].ToPar();
+    		X0Y1_線 = partGroup["線"].ToPar();
+    		pars2 = partGroup["ライン"].ToPars();
     		X0Y1_ライン_ライン上 = pars2["ライン上"].ToPar();
     		X0Y1_ライン_ライン左 = pars2["ライン左"].ToPar();
     		X0Y1_ライン_ライン右 = pars2["ライン右"].ToPar();
@@ -1851,7 +1851,7 @@ namespace SlaveMatrix
     		X0Y1_ライン_ライン右下 = pars2["ライン右下"].ToPar();
     		X0Y1_ライン_ライン下左 = pars2["ライン下左"].ToPar();
     		X0Y1_ライン_ライン下右 = pars2["ライン下右"].ToPar();
-    		pars2 = pars["結び紐左"].ToPars();
+    		pars2 = partGroup["結び紐左"].ToPars();
     		X0Y1_結び紐左_紐1 = pars2["紐1"].ToPar();
     		X0Y1_結び紐左_紐2 = pars2["紐2"].ToPar();
     		pars3 = pars2["輪1"].ToPars();
@@ -1861,7 +1861,7 @@ namespace SlaveMatrix
     		X0Y1_結び紐左_輪2_紐後 = pars3["紐後"].ToPar();
     		X0Y1_結び紐左_輪2_紐前 = pars3["紐前"].ToPar();
     		X0Y1_結び紐左_結び目 = pars2["結び目"].ToPar();
-    		pars2 = pars["結び紐右"].ToPars();
+    		pars2 = partGroup["結び紐右"].ToPars();
     		X0Y1_結び紐右_紐1 = pars2["紐1"].ToPar();
     		X0Y1_結び紐右_紐2 = pars2["紐2"].ToPar();
     		pars3 = pars2["輪1"].ToPars();
@@ -1871,7 +1871,7 @@ namespace SlaveMatrix
     		X0Y1_結び紐右_輪2_紐後 = pars3["紐後"].ToPar();
     		X0Y1_結び紐右_輪2_紐前 = pars3["紐前"].ToPar();
     		X0Y1_結び紐右_結び目 = pars2["結び目"].ToPar();
-    		pars2 = pars["ヴィオラ"].ToPars();
+    		pars2 = partGroup["ヴィオラ"].ToPars();
     		X0Y1_ヴィオラ_紐左 = pars2["紐左"].ToPar();
     		X0Y1_ヴィオラ_紐右 = pars2["紐右"].ToPar();
     		X0Y1_ヴィオラ_丸金具左 = pars2["丸金具左"].ToPar();
@@ -1882,15 +1882,15 @@ namespace SlaveMatrix
     		pars3 = pars2["金具右"].ToPars();
     		X0Y1_ヴィオラ_金具右_金具1 = pars3["金具1"].ToPar();
     		X0Y1_ヴィオラ_金具右_金具2 = pars3["金具2"].ToPar();
-    		pars2 = pars["染み"].ToPars();
+    		pars2 = partGroup["染み"].ToPars();
     		X0Y1_染み_染み2 = pars2["染み2"].ToPar();
     		X0Y1_染み_染み1 = pars2["染み1"].ToPar();
-    		pars = Body[0][2];
-    		X0Y2_紐左 = pars["紐左"].ToPar();
-    		X0Y2_紐右 = pars["紐右"].ToPar();
-    		X0Y2_下地 = pars["下地"].ToPar();
-    		X0Y2_線 = pars["線"].ToPar();
-    		pars2 = pars["ライン"].ToPars();
+    		partGroup = Body[0][2];
+    		X0Y2_紐左 = partGroup["紐左"].ToPar();
+    		X0Y2_紐右 = partGroup["紐右"].ToPar();
+    		X0Y2_下地 = partGroup["下地"].ToPar();
+    		X0Y2_線 = partGroup["線"].ToPar();
+    		pars2 = partGroup["ライン"].ToPars();
     		X0Y2_ライン_ライン上 = pars2["ライン上"].ToPar();
     		X0Y2_ライン_ライン左 = pars2["ライン左"].ToPar();
     		X0Y2_ライン_ライン右 = pars2["ライン右"].ToPar();
@@ -1898,7 +1898,7 @@ namespace SlaveMatrix
     		X0Y2_ライン_ライン右下 = pars2["ライン右下"].ToPar();
     		X0Y2_ライン_ライン下左 = pars2["ライン下左"].ToPar();
     		X0Y2_ライン_ライン下右 = pars2["ライン下右"].ToPar();
-    		pars2 = pars["結び紐左"].ToPars();
+    		pars2 = partGroup["結び紐左"].ToPars();
     		X0Y2_結び紐左_紐1 = pars2["紐1"].ToPar();
     		X0Y2_結び紐左_紐2 = pars2["紐2"].ToPar();
     		pars3 = pars2["輪1"].ToPars();
@@ -1908,7 +1908,7 @@ namespace SlaveMatrix
     		X0Y2_結び紐左_輪2_紐後 = pars3["紐後"].ToPar();
     		X0Y2_結び紐左_輪2_紐前 = pars3["紐前"].ToPar();
     		X0Y2_結び紐左_結び目 = pars2["結び目"].ToPar();
-    		pars2 = pars["結び紐右"].ToPars();
+    		pars2 = partGroup["結び紐右"].ToPars();
     		X0Y2_結び紐右_紐1 = pars2["紐1"].ToPar();
     		X0Y2_結び紐右_紐2 = pars2["紐2"].ToPar();
     		pars3 = pars2["輪1"].ToPars();
@@ -1918,7 +1918,7 @@ namespace SlaveMatrix
     		X0Y2_結び紐右_輪2_紐後 = pars3["紐後"].ToPar();
     		X0Y2_結び紐右_輪2_紐前 = pars3["紐前"].ToPar();
     		X0Y2_結び紐右_結び目 = pars2["結び目"].ToPar();
-    		pars2 = pars["ヴィオラ"].ToPars();
+    		pars2 = partGroup["ヴィオラ"].ToPars();
     		X0Y2_ヴィオラ_紐左 = pars2["紐左"].ToPar();
     		X0Y2_ヴィオラ_紐右 = pars2["紐右"].ToPar();
     		X0Y2_ヴィオラ_丸金具左 = pars2["丸金具左"].ToPar();
@@ -1929,15 +1929,15 @@ namespace SlaveMatrix
     		pars3 = pars2["金具右"].ToPars();
     		X0Y2_ヴィオラ_金具右_金具1 = pars3["金具1"].ToPar();
     		X0Y2_ヴィオラ_金具右_金具2 = pars3["金具2"].ToPar();
-    		pars2 = pars["染み"].ToPars();
+    		pars2 = partGroup["染み"].ToPars();
     		X0Y2_染み_染み2 = pars2["染み2"].ToPar();
     		X0Y2_染み_染み1 = pars2["染み1"].ToPar();
-    		pars = Body[0][3];
-    		X0Y3_紐左 = pars["紐左"].ToPar();
-    		X0Y3_紐右 = pars["紐右"].ToPar();
-    		X0Y3_下地 = pars["下地"].ToPar();
-    		X0Y3_線 = pars["線"].ToPar();
-    		pars2 = pars["ライン"].ToPars();
+    		partGroup = Body[0][3];
+    		X0Y3_紐左 = partGroup["紐左"].ToPar();
+    		X0Y3_紐右 = partGroup["紐右"].ToPar();
+    		X0Y3_下地 = partGroup["下地"].ToPar();
+    		X0Y3_線 = partGroup["線"].ToPar();
+    		pars2 = partGroup["ライン"].ToPars();
     		X0Y3_ライン_ライン上 = pars2["ライン上"].ToPar();
     		X0Y3_ライン_ライン左 = pars2["ライン左"].ToPar();
     		X0Y3_ライン_ライン右 = pars2["ライン右"].ToPar();
@@ -1945,7 +1945,7 @@ namespace SlaveMatrix
     		X0Y3_ライン_ライン右下 = pars2["ライン右下"].ToPar();
     		X0Y3_ライン_ライン下左 = pars2["ライン下左"].ToPar();
     		X0Y3_ライン_ライン下右 = pars2["ライン下右"].ToPar();
-    		pars2 = pars["結び紐左"].ToPars();
+    		pars2 = partGroup["結び紐左"].ToPars();
     		X0Y3_結び紐左_紐1 = pars2["紐1"].ToPar();
     		X0Y3_結び紐左_紐2 = pars2["紐2"].ToPar();
     		pars3 = pars2["輪1"].ToPars();
@@ -1955,7 +1955,7 @@ namespace SlaveMatrix
     		X0Y3_結び紐左_輪2_紐後 = pars3["紐後"].ToPar();
     		X0Y3_結び紐左_輪2_紐前 = pars3["紐前"].ToPar();
     		X0Y3_結び紐左_結び目 = pars2["結び目"].ToPar();
-    		pars2 = pars["結び紐右"].ToPars();
+    		pars2 = partGroup["結び紐右"].ToPars();
     		X0Y3_結び紐右_紐1 = pars2["紐1"].ToPar();
     		X0Y3_結び紐右_紐2 = pars2["紐2"].ToPar();
     		pars3 = pars2["輪1"].ToPars();
@@ -1965,7 +1965,7 @@ namespace SlaveMatrix
     		X0Y3_結び紐右_輪2_紐後 = pars3["紐後"].ToPar();
     		X0Y3_結び紐右_輪2_紐前 = pars3["紐前"].ToPar();
     		X0Y3_結び紐右_結び目 = pars2["結び目"].ToPar();
-    		pars2 = pars["ヴィオラ"].ToPars();
+    		pars2 = partGroup["ヴィオラ"].ToPars();
     		X0Y3_ヴィオラ_紐左 = pars2["紐左"].ToPar();
     		X0Y3_ヴィオラ_紐右 = pars2["紐右"].ToPar();
     		X0Y3_ヴィオラ_丸金具左 = pars2["丸金具左"].ToPar();
@@ -1976,15 +1976,15 @@ namespace SlaveMatrix
     		pars3 = pars2["金具右"].ToPars();
     		X0Y3_ヴィオラ_金具右_金具1 = pars3["金具1"].ToPar();
     		X0Y3_ヴィオラ_金具右_金具2 = pars3["金具2"].ToPar();
-    		pars2 = pars["染み"].ToPars();
+    		pars2 = partGroup["染み"].ToPars();
     		X0Y3_染み_染み2 = pars2["染み2"].ToPar();
     		X0Y3_染み_染み1 = pars2["染み1"].ToPar();
-    		pars = Body[0][4];
-    		X0Y4_紐左 = pars["紐左"].ToPar();
-    		X0Y4_紐右 = pars["紐右"].ToPar();
-    		X0Y4_下地 = pars["下地"].ToPar();
-    		X0Y4_線 = pars["線"].ToPar();
-    		pars2 = pars["ライン"].ToPars();
+    		partGroup = Body[0][4];
+    		X0Y4_紐左 = partGroup["紐左"].ToPar();
+    		X0Y4_紐右 = partGroup["紐右"].ToPar();
+    		X0Y4_下地 = partGroup["下地"].ToPar();
+    		X0Y4_線 = partGroup["線"].ToPar();
+    		pars2 = partGroup["ライン"].ToPars();
     		X0Y4_ライン_ライン上 = pars2["ライン上"].ToPar();
     		X0Y4_ライン_ライン左 = pars2["ライン左"].ToPar();
     		X0Y4_ライン_ライン右 = pars2["ライン右"].ToPar();
@@ -1992,7 +1992,7 @@ namespace SlaveMatrix
     		X0Y4_ライン_ライン右下 = pars2["ライン右下"].ToPar();
     		X0Y4_ライン_ライン下左 = pars2["ライン下左"].ToPar();
     		X0Y4_ライン_ライン下右 = pars2["ライン下右"].ToPar();
-    		pars2 = pars["結び紐左"].ToPars();
+    		pars2 = partGroup["結び紐左"].ToPars();
     		X0Y4_結び紐左_紐1 = pars2["紐1"].ToPar();
     		X0Y4_結び紐左_紐2 = pars2["紐2"].ToPar();
     		pars3 = pars2["輪1"].ToPars();
@@ -2002,7 +2002,7 @@ namespace SlaveMatrix
     		X0Y4_結び紐左_輪2_紐後 = pars3["紐後"].ToPar();
     		X0Y4_結び紐左_輪2_紐前 = pars3["紐前"].ToPar();
     		X0Y4_結び紐左_結び目 = pars2["結び目"].ToPar();
-    		pars2 = pars["結び紐右"].ToPars();
+    		pars2 = partGroup["結び紐右"].ToPars();
     		X0Y4_結び紐右_紐1 = pars2["紐1"].ToPar();
     		X0Y4_結び紐右_紐2 = pars2["紐2"].ToPar();
     		pars3 = pars2["輪1"].ToPars();
@@ -2012,7 +2012,7 @@ namespace SlaveMatrix
     		X0Y4_結び紐右_輪2_紐後 = pars3["紐後"].ToPar();
     		X0Y4_結び紐右_輪2_紐前 = pars3["紐前"].ToPar();
     		X0Y4_結び紐右_結び目 = pars2["結び目"].ToPar();
-    		pars2 = pars["ヴィオラ"].ToPars();
+    		pars2 = partGroup["ヴィオラ"].ToPars();
     		X0Y4_ヴィオラ_紐左 = pars2["紐左"].ToPar();
     		X0Y4_ヴィオラ_紐右 = pars2["紐右"].ToPar();
     		X0Y4_ヴィオラ_丸金具左 = pars2["丸金具左"].ToPar();
@@ -2023,7 +2023,7 @@ namespace SlaveMatrix
     		pars3 = pars2["金具右"].ToPars();
     		X0Y4_ヴィオラ_金具右_金具1 = pars3["金具1"].ToPar();
     		X0Y4_ヴィオラ_金具右_金具2 = pars3["金具2"].ToPar();
-    		pars2 = pars["染み"].ToPars();
+    		pars2 = partGroup["染み"].ToPars();
     		X0Y4_染み_染み2 = pars2["染み2"].ToPar();
     		X0Y4_染み_染み1 = pars2["染み1"].ToPar();
     		Body.SetJoints();
@@ -2498,7 +2498,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public override bool Is布(Par p)
+    	public override bool Is布(ShapePart p)
     	{
     		if (p != X0Y0_紐左 && p != X0Y0_紐右 && p != X0Y0_下地 && p != X0Y0_線 && p != X0Y0_ライン_ライン上 && p != X0Y0_ライン_ライン左 && p != X0Y0_ライン_ライン右 && p != X0Y0_ライン_ライン左下 && p != X0Y0_ライン_ライン右下 && p != X0Y0_ライン_ライン下左 && p != X0Y0_ライン_ライン下右 && p != X0Y0_結び紐左_紐1 && p != X0Y0_結び紐左_紐2 && p != X0Y0_結び紐左_輪1_紐後 && p != X0Y0_結び紐左_輪1_紐前 && p != X0Y0_結び紐左_輪2_紐後 && p != X0Y0_結び紐左_輪2_紐前 && p != X0Y0_結び紐左_結び目 && p != X0Y0_結び紐右_紐1 && p != X0Y0_結び紐右_紐2 && p != X0Y0_結び紐右_輪1_紐後 && p != X0Y0_結び紐右_輪1_紐前 && p != X0Y0_結び紐右_輪2_紐後 && p != X0Y0_結び紐右_輪2_紐前 && p != X0Y0_結び紐右_結び目 && p != X0Y0_ヴィオラ_紐左 && p != X0Y0_ヴィオラ_紐右 && p != X0Y0_ヴィオラ_丸金具左 && p != X0Y0_ヴィオラ_丸金具右 && p != X0Y0_ヴィオラ_金具左_金具1 && p != X0Y0_ヴィオラ_金具左_金具2 && p != X0Y0_ヴィオラ_金具右_金具1 && p != X0Y0_ヴィオラ_金具右_金具2 && p != X0Y0_染み_染み2 && p != X0Y0_染み_染み1 && p != X0Y1_紐左 && p != X0Y1_紐右 && p != X0Y1_下地 && p != X0Y1_線 && p != X0Y1_ライン_ライン上 && p != X0Y1_ライン_ライン左 && p != X0Y1_ライン_ライン右 && p != X0Y1_ライン_ライン左下 && p != X0Y1_ライン_ライン右下 && p != X0Y1_ライン_ライン下左 && p != X0Y1_ライン_ライン下右 && p != X0Y1_結び紐左_紐1 && p != X0Y1_結び紐左_紐2 && p != X0Y1_結び紐左_輪1_紐後 && p != X0Y1_結び紐左_輪1_紐前 && p != X0Y1_結び紐左_輪2_紐後 && p != X0Y1_結び紐左_輪2_紐前 && p != X0Y1_結び紐左_結び目 && p != X0Y1_結び紐右_紐1 && p != X0Y1_結び紐右_紐2 && p != X0Y1_結び紐右_輪1_紐後 && p != X0Y1_結び紐右_輪1_紐前 && p != X0Y1_結び紐右_輪2_紐後 && p != X0Y1_結び紐右_輪2_紐前 && p != X0Y1_結び紐右_結び目 && p != X0Y1_ヴィオラ_紐左 && p != X0Y1_ヴィオラ_紐右 && p != X0Y1_ヴィオラ_丸金具左 && p != X0Y1_ヴィオラ_丸金具右 && p != X0Y1_ヴィオラ_金具左_金具1 && p != X0Y1_ヴィオラ_金具左_金具2 && p != X0Y1_ヴィオラ_金具右_金具1 && p != X0Y1_ヴィオラ_金具右_金具2 && p != X0Y1_染み_染み2 && p != X0Y1_染み_染み1 && p != X0Y2_紐左 && p != X0Y2_紐右 && p != X0Y2_下地 && p != X0Y2_線 && p != X0Y2_ライン_ライン上 && p != X0Y2_ライン_ライン左 && p != X0Y2_ライン_ライン右 && p != X0Y2_ライン_ライン左下 && p != X0Y2_ライン_ライン右下 && p != X0Y2_ライン_ライン下左 && p != X0Y2_ライン_ライン下右 && p != X0Y2_結び紐左_紐1 && p != X0Y2_結び紐左_紐2 && p != X0Y2_結び紐左_輪1_紐後 && p != X0Y2_結び紐左_輪1_紐前 && p != X0Y2_結び紐左_輪2_紐後 && p != X0Y2_結び紐左_輪2_紐前 && p != X0Y2_結び紐左_結び目 && p != X0Y2_結び紐右_紐1 && p != X0Y2_結び紐右_紐2 && p != X0Y2_結び紐右_輪1_紐後 && p != X0Y2_結び紐右_輪1_紐前 && p != X0Y2_結び紐右_輪2_紐後 && p != X0Y2_結び紐右_輪2_紐前 && p != X0Y2_結び紐右_結び目 && p != X0Y2_ヴィオラ_紐左 && p != X0Y2_ヴィオラ_紐右 && p != X0Y2_ヴィオラ_丸金具左 && p != X0Y2_ヴィオラ_丸金具右 && p != X0Y2_ヴィオラ_金具左_金具1 && p != X0Y2_ヴィオラ_金具左_金具2 && p != X0Y2_ヴィオラ_金具右_金具1 && p != X0Y2_ヴィオラ_金具右_金具2 && p != X0Y2_染み_染み2 && p != X0Y2_染み_染み1 && p != X0Y3_紐左 && p != X0Y3_紐右 && p != X0Y3_下地 && p != X0Y3_線 && p != X0Y3_ライン_ライン上 && p != X0Y3_ライン_ライン左 && p != X0Y3_ライン_ライン右 && p != X0Y3_ライン_ライン左下 && p != X0Y3_ライン_ライン右下 && p != X0Y3_ライン_ライン下左 && p != X0Y3_ライン_ライン下右 && p != X0Y3_結び紐左_紐1 && p != X0Y3_結び紐左_紐2 && p != X0Y3_結び紐左_輪1_紐後 && p != X0Y3_結び紐左_輪1_紐前 && p != X0Y3_結び紐左_輪2_紐後 && p != X0Y3_結び紐左_輪2_紐前 && p != X0Y3_結び紐左_結び目 && p != X0Y3_結び紐右_紐1 && p != X0Y3_結び紐右_紐2 && p != X0Y3_結び紐右_輪1_紐後 && p != X0Y3_結び紐右_輪1_紐前 && p != X0Y3_結び紐右_輪2_紐後 && p != X0Y3_結び紐右_輪2_紐前 && p != X0Y3_結び紐右_結び目 && p != X0Y3_ヴィオラ_紐左 && p != X0Y3_ヴィオラ_紐右 && p != X0Y3_ヴィオラ_丸金具左 && p != X0Y3_ヴィオラ_丸金具右 && p != X0Y3_ヴィオラ_金具左_金具1 && p != X0Y3_ヴィオラ_金具左_金具2 && p != X0Y3_ヴィオラ_金具右_金具1 && p != X0Y3_ヴィオラ_金具右_金具2 && p != X0Y3_染み_染み2 && p != X0Y3_染み_染み1 && p != X0Y4_紐左 && p != X0Y4_紐右 && p != X0Y4_下地 && p != X0Y4_線 && p != X0Y4_ライン_ライン上 && p != X0Y4_ライン_ライン左 && p != X0Y4_ライン_ライン右 && p != X0Y4_ライン_ライン左下 && p != X0Y4_ライン_ライン右下 && p != X0Y4_ライン_ライン下左 && p != X0Y4_ライン_ライン下右 && p != X0Y4_結び紐左_紐1 && p != X0Y4_結び紐左_紐2 && p != X0Y4_結び紐左_輪1_紐後 && p != X0Y4_結び紐左_輪1_紐前 && p != X0Y4_結び紐左_輪2_紐後 && p != X0Y4_結び紐左_輪2_紐前 && p != X0Y4_結び紐左_結び目 && p != X0Y4_結び紐右_紐1 && p != X0Y4_結び紐右_紐2 && p != X0Y4_結び紐右_輪1_紐後 && p != X0Y4_結び紐右_輪1_紐前 && p != X0Y4_結び紐右_輪2_紐後 && p != X0Y4_結び紐右_輪2_紐前 && p != X0Y4_結び紐右_結び目 && p != X0Y4_ヴィオラ_紐左 && p != X0Y4_ヴィオラ_紐右 && p != X0Y4_ヴィオラ_丸金具左 && p != X0Y4_ヴィオラ_丸金具右 && p != X0Y4_ヴィオラ_金具左_金具1 && p != X0Y4_ヴィオラ_金具左_金具2 && p != X0Y4_ヴィオラ_金具右_金具1 && p != X0Y4_ヴィオラ_金具右_金具2 && p != X0Y4_染み_染み2)
     		{
@@ -2739,8 +2739,8 @@ namespace SlaveMatrix
     		ヴィオラ_金具左_金具2CD = new ColorD();
     		ヴィオラ_金具右_金具1CD = new ColorD();
     		ヴィオラ_金具右_金具2CD = new ColorD();
-    		染み_染み2CD = new ColorD(ref Col.Empty, ref 体配色.染み);
-    		染み_染み1CD = new ColorD(ref Col.Empty, ref 体配色.染み);
+    		染み_染み2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.染み);
+    		染み_染み1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.染み);
     	}
 
     	public void 配色(マイクロB色 配色)

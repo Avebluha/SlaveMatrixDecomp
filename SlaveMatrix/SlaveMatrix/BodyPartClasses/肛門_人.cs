@@ -6,11 +6,11 @@ namespace SlaveMatrix
 {
     public class 肛門_人 : 肛門
     {
-    	public Par X0Y0_肛門3;
+    	public ShapePart X0Y0_肛門3;
 
-    	public Par X0Y0_肛門2;
+    	public ShapePart X0Y0_肛門2;
 
-    	public Par X0Y0_肛門1;
+    	public ShapePart X0Y0_肛門1;
 
     	public ColorD 肛門3CD;
 
@@ -24,7 +24,7 @@ namespace SlaveMatrix
 
     	public ColorP X0Y0_肛門1CP;
 
-    	public Ele[] 肛門精液_接続;
+    	public Element[] 肛門精液_接続;
 
     	public override bool 欠損
     	{
@@ -135,11 +135,11 @@ namespace SlaveMatrix
     	{
     		肛門_人 肛門_人2 = this;
     		ThisType = GetType();
-    		Body = new Difs(Sta.胴体["肛門"]);
-    		Pars pars = Body[0][0];
-    		X0Y0_肛門3 = pars["肛門3"].ToPar();
-    		X0Y0_肛門2 = pars["肛門2"].ToPar();
-    		X0Y0_肛門1 = pars["肛門1"].ToPar();
+    		Body = new VariantGrid(GlobalState.胴体["肛門"]);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_肛門3 = partGroup["肛門3"].ToPar();
+    		X0Y0_肛門2 = partGroup["肛門2"].ToPar();
+    		X0Y0_肛門1 = partGroup["肛門1"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;
@@ -176,8 +176,8 @@ namespace SlaveMatrix
     		}
     		if (e.肛門精液_接続.Count > 0)
     		{
-    			Ele f;
-    			肛門精液_接続 = e.肛門精液_接続.Select(delegate(EleD g)
+    			Element f;
+    			肛門精液_接続 = e.肛門精液_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 肛門_人2;
@@ -208,7 +208,7 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		肛門3CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
+    		肛門3CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
     		肛門2CD = new ColorD(ref 体配色.粘膜線, ref 体配色.粘膜);
     		肛門1CD = new ColorD(ref 体配色.粘膜線, ref 体配色.粘膜穴);
     	}

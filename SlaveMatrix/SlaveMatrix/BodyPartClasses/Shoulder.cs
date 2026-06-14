@@ -4,29 +4,29 @@ using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
-    public class Shoulder : Ele
+    public class Shoulder : Element
     {
-    	public Par X0Y0_脇_脇;
+    	public ShapePart X0Y0_脇_脇;
 
-    	public Par X0Y0_脇_筋肉;
+    	public ShapePart X0Y0_脇_筋肉;
 
-    	public Par X0Y0_Shoulder_Shoulder;
+    	public ShapePart X0Y0_Shoulder_Shoulder;
 
-    	public Par X0Y0_Shoulder_虫性_甲殻1;
+    	public ShapePart X0Y0_Shoulder_虫性_甲殻1;
 
-    	public Par X0Y0_Shoulder_虫性_甲殻2;
+    	public ShapePart X0Y0_Shoulder_虫性_甲殻2;
 
-    	public Par X0Y0_Shoulder_傷I1;
+    	public ShapePart X0Y0_Shoulder_傷I1;
 
-    	public Par X0Y0_Shoulder_傷I2;
+    	public ShapePart X0Y0_Shoulder_傷I2;
 
-    	public Par X0Y0_Shoulder_傷I3;
+    	public ShapePart X0Y0_Shoulder_傷I3;
 
-    	public Par X0Y0_Shoulder_傷I4;
+    	public ShapePart X0Y0_Shoulder_傷I4;
 
-    	public Par X0Y0_Shoulder_シャツ;
+    	public ShapePart X0Y0_Shoulder_シャツ;
 
-    	public Par X0Y0_Shoulder_ナース;
+    	public ShapePart X0Y0_Shoulder_ナース;
 
     	public ColorD 脇_脇CD;
 
@@ -76,7 +76,7 @@ namespace SlaveMatrix
 
     	public スタンプW 鞭痕;
 
-    	public Ele[] UpperArm_接続;
+    	public Element[] UpperArm_接続;
 
     	public override bool 欠損
     	{
@@ -312,14 +312,14 @@ namespace SlaveMatrix
     	{
     		Shoulder Shoulder2 = this;
     		ThisType = GetType();
-    		Body = new Difs(Sta.肩左["Shoulder"]);
-    		Pars pars = Body[0][0];
-    		Pars pars2 = pars["脇"].ToPars();
+    		Body = new VariantGrid(GlobalState.肩左["Shoulder"]);
+    		PartGroup partGroup = Body[0][0];
+    		PartGroup pars2 = partGroup["脇"].ToPars();
     		X0Y0_脇_脇 = pars2["脇"].ToPar();
     		X0Y0_脇_筋肉 = pars2["筋肉"].ToPar();
-    		pars2 = pars["肩"].ToPars();
+    		pars2 = partGroup["肩"].ToPars();
     		X0Y0_Shoulder_Shoulder = pars2["肩"].ToPar();
-    		Pars pars3 = pars2["虫性"].ToPars();
+    		PartGroup pars3 = pars2["虫性"].ToPars();
     		X0Y0_Shoulder_虫性_甲殻1 = pars3["甲殻1"].ToPar();
     		X0Y0_Shoulder_虫性_甲殻2 = pars3["甲殻2"].ToPar();
     		X0Y0_Shoulder_傷I1 = pars2["傷I1"].ToPar();
@@ -372,8 +372,8 @@ namespace SlaveMatrix
     		}
     		if (e.UpperArm_接続.Count > 0)
     		{
-    			Ele f;
-    			UpperArm_接続 = e.UpperArm_接続.Select(delegate(EleD g)
+    			Element f;
+    			UpperArm_接続 = e.UpperArm_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = Shoulder2;
@@ -424,7 +424,7 @@ namespace SlaveMatrix
     		Are.Draw(X0Y0_Shoulder_虫性_甲殻2);
     	}
 
-    	public override bool Is布(Par p)
+    	public override bool Is布(ShapePart p)
     	{
     		if (p != X0Y0_Shoulder_シャツ)
     		{
@@ -463,15 +463,15 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		脇_脇CD = new ColorD(ref Col.Black, ref 体配色.人肌R);
-    		脇_筋肉CD = new ColorD(ref Col.Black, ref 体配色.人肌R);
-    		Shoulder_ShoulderCD = new ColorD(ref Col.Black, ref 体配色.人肌O);
-    		Shoulder_虫性_甲殻1CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		Shoulder_虫性_甲殻2CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		Shoulder_傷I1CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		Shoulder_傷I2CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		Shoulder_傷I3CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		Shoulder_傷I4CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
+    		脇_脇CD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌R);
+    		脇_筋肉CD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌R);
+    		Shoulder_ShoulderCD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌O);
+    		Shoulder_虫性_甲殻1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		Shoulder_虫性_甲殻2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		Shoulder_傷I1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		Shoulder_傷I2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		Shoulder_傷I3CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		Shoulder_傷I4CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
     		Shoulder_シャツCD = new ColorD();
     		Shoulder_ナースCD = new ColorD();
     	}

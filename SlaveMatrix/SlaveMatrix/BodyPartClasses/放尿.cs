@@ -2,7 +2,7 @@ using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
-    public class 放尿 : Ele
+    public class 放尿 : Element
     {
     }
 }

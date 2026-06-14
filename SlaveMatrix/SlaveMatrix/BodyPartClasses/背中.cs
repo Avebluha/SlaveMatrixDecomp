@@ -2,7 +2,7 @@ using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
-    public class 背中 : Ele
+    public class 背中 : Element
     {
     }
 }

@@ -3,17 +3,17 @@ using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
-    public class 鼻水 : Ele
+    public class 鼻水 : Element
     {
-    	public Par X0Y0_鼻水;
+    	public ShapePart X0Y0_鼻水;
 
-    	public Par X0Y1_鼻水;
+    	public ShapePart X0Y1_鼻水;
 
-    	public Par X0Y2_鼻水;
+    	public ShapePart X0Y2_鼻水;
 
-    	public Par X0Y3_鼻水;
+    	public ShapePart X0Y3_鼻水;
 
-    	public Par X0Y4_鼻水;
+    	public ShapePart X0Y4_鼻水;
 
     	public ColorD 鼻水CD;
 
@@ -125,17 +125,17 @@ namespace SlaveMatrix
     	public 鼻水(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 鼻水D e)
     	{
     		ThisType = GetType();
-    		Body = new Difs(Sta.胴体["鼻水左"]);
-    		Pars pars = Body[0][0];
-    		X0Y0_鼻水 = pars["鼻水"].ToPar();
-    		pars = Body[0][1];
-    		X0Y1_鼻水 = pars["鼻水"].ToPar();
-    		pars = Body[0][2];
-    		X0Y2_鼻水 = pars["鼻水"].ToPar();
-    		pars = Body[0][3];
-    		X0Y3_鼻水 = pars["鼻水"].ToPar();
-    		pars = Body[0][4];
-    		X0Y4_鼻水 = pars["鼻水"].ToPar();
+    		Body = new VariantGrid(GlobalState.胴体["鼻水左"]);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_鼻水 = partGroup["鼻水"].ToPar();
+    		partGroup = Body[0][1];
+    		X0Y1_鼻水 = partGroup["鼻水"].ToPar();
+    		partGroup = Body[0][2];
+    		X0Y2_鼻水 = partGroup["鼻水"].ToPar();
+    		partGroup = Body[0][3];
+    		X0Y3_鼻水 = partGroup["鼻水"].ToPar();
+    		partGroup = Body[0][4];
+    		X0Y4_鼻水 = partGroup["鼻水"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;

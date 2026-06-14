@@ -4,33 +4,33 @@ using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
-    public class ロータ : Ele
+    public class ロータ : Element
     {
-    	public Par X0Y0_ロータ;
+    	public ShapePart X0Y0_ロータ;
 
-    	public Par X0Y0_ロータ線;
+    	public ShapePart X0Y0_ロータ線;
 
-    	public Par X0Y0_コード;
+    	public ShapePart X0Y0_コード;
 
-    	public Par X0Y1_ロータ;
+    	public ShapePart X0Y1_ロータ;
 
-    	public Par X0Y1_ロータ線;
+    	public ShapePart X0Y1_ロータ線;
 
-    	public Par X0Y1_コード;
+    	public ShapePart X0Y1_コード;
 
-    	public Par X0Y2_ロータ;
+    	public ShapePart X0Y2_ロータ;
 
-    	public Par X0Y2_ロータ線;
+    	public ShapePart X0Y2_ロータ線;
 
-    	public Par X0Y2_コード;
+    	public ShapePart X0Y2_コード;
 
-    	public Par X0Y3_ロータ;
+    	public ShapePart X0Y3_ロータ;
 
-    	public Par X0Y3_コード;
+    	public ShapePart X0Y3_コード;
 
-    	public Par X0Y4_ロータ;
+    	public ShapePart X0Y4_ロータ;
 
-    	public Par X0Y4_コード;
+    	public ShapePart X0Y4_コード;
 
     	public ColorD ロータCD;
 
@@ -190,25 +190,25 @@ namespace SlaveMatrix
     	public ロータ(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, ロータD e)
     	{
     		ThisType = GetType();
-    		Body = new Difs(Sta.カーソル["ロータ"]);
-    		Pars pars = Body[0][0];
-    		X0Y0_ロータ = pars["ロータ"].ToPar();
-    		X0Y0_ロータ線 = pars["ロータ線"].ToPar();
-    		X0Y0_コード = pars["コード"].ToPar();
-    		pars = Body[0][1];
-    		X0Y1_ロータ = pars["ロータ"].ToPar();
-    		X0Y1_ロータ線 = pars["ロータ線"].ToPar();
-    		X0Y1_コード = pars["コード"].ToPar();
-    		pars = Body[0][2];
-    		X0Y2_ロータ = pars["ロータ"].ToPar();
-    		X0Y2_ロータ線 = pars["ロータ線"].ToPar();
-    		X0Y2_コード = pars["コード"].ToPar();
-    		pars = Body[0][3];
-    		X0Y3_ロータ = pars["ロータ"].ToPar();
-    		X0Y3_コード = pars["コード"].ToPar();
-    		pars = Body[0][4];
-    		X0Y4_ロータ = pars["ロータ"].ToPar();
-    		X0Y4_コード = pars["コード"].ToPar();
+    		Body = new VariantGrid(GlobalState.カーソル["ロータ"]);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_ロータ = partGroup["ロータ"].ToPar();
+    		X0Y0_ロータ線 = partGroup["ロータ線"].ToPar();
+    		X0Y0_コード = partGroup["コード"].ToPar();
+    		partGroup = Body[0][1];
+    		X0Y1_ロータ = partGroup["ロータ"].ToPar();
+    		X0Y1_ロータ線 = partGroup["ロータ線"].ToPar();
+    		X0Y1_コード = partGroup["コード"].ToPar();
+    		partGroup = Body[0][2];
+    		X0Y2_ロータ = partGroup["ロータ"].ToPar();
+    		X0Y2_ロータ線 = partGroup["ロータ線"].ToPar();
+    		X0Y2_コード = partGroup["コード"].ToPar();
+    		partGroup = Body[0][3];
+    		X0Y3_ロータ = partGroup["ロータ"].ToPar();
+    		X0Y3_コード = partGroup["コード"].ToPar();
+    		partGroup = Body[0][4];
+    		X0Y4_ロータ = partGroup["ロータ"].ToPar();
+    		X0Y4_コード = partGroup["コード"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;
@@ -305,11 +305,11 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		Col.GetGrad(ref Col.Violet, out var ret);
-    		ロータCD = new ColorD(ref Col.Black, ref ret);
-    		ロータ線CD = new ColorD(ref Col.Black, ref ret);
+    		ColorHelper.GetGrad(ref ColorHelper.Violet, out var ret);
+    		ロータCD = new ColorD(ref ColorHelper.Black, ref ret);
+    		ロータ線CD = new ColorD(ref ColorHelper.Black, ref ret);
     		ret.Col2 = Color.FromArgb(0, ret.Col2);
-    		コードCD = new ColorD(ref Col.Black, ref ret);
+    		コードCD = new ColorD(ref ColorHelper.Black, ref ret);
     	}
     }
 }

@@ -334,21 +334,21 @@ namespace SlaveMatrix
 
     	public bool 鎖表示;
 
-    	public List<EleD> 尾先_接続 = new List<EleD>();
+    	public List<ElementData> 尾先_接続 = new List<ElementData>();
 
     	public 尾_ウD()
     	{
     		ThisType = GetType();
     	}
 
-    	public void 尾先接続(EleD e)
+    	public void 尾先接続(ElementData e)
     	{
     		尾先_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.尾_ウ_尾先_接続;
     	}
 
-    	public override Ele GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
+    	public override Element GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
     	{
     		return new 尾_ウ(DisUnit, 配色指定, 体配色, Med, this);
     	}

@@ -26,7 +26,7 @@ namespace SlaveMatrix
     	{
     		調教UI.擬音キュー.Enqueue(delegate(RenderArea a)
     		{
-    			調教UI.擬音.Sound(a, 対象.Ele.位置.GetAreaPoint(0.05), Sta.鞭振.GetVal(強さ_, 1.0), new Font("MS Gothic", 1f), Col.White, 0.2 + 0.2 * 強さ_, b: true);
+    			調教UI.擬音.Sound(a, 対象.Element.位置.GetAreaPoint(0.05), GlobalState.鞭振.GetVal(強さ_, 1.0), new Font("MS Gothic", 1f), ColorHelper.White, 0.2 + 0.2 * 強さ_, b: true);
     		});
     	}
 
@@ -34,13 +34,13 @@ namespace SlaveMatrix
     	{
     		調教UI.擬音キュー.Enqueue(delegate(RenderArea a)
     		{
-    			調教UI.擬音.Sound(a, Sta.GetAreaPoint(ref p, 0.01), Sta.鞭打.GetVal(強さ_, RNG.XS.NextDouble()), new Font("MS Gothic", 1f), Color.Red.S(強さ_.Clamp(0.5, 1.0)), 0.2 + 0.1 * 強さ_, b: true);
+    			調教UI.擬音.Sound(a, GlobalState.GetAreaPoint(ref p, 0.01), GlobalState.鞭打.GetVal(強さ_, Rng.XS.NextDouble()), new Font("MS Gothic", 1f), Color.Red.S(強さ_.Clamp(0.5, 1.0)), 0.2 + 0.1 * 強さ_, b: true);
     		});
     	}
 
     	private void 移動時()
     	{
-    		if (Sta.GameData.ガイド)
+    		if (GlobalState.GameData.ガイド)
     		{
     			ip.SubInfoIm = "LCl:" + GameText.左打 + "\r\nRCl:" + GameText.右打 + "\r\nWh:" + GameText.強さL + 強さ + "\r\nMCl:" + GameText.放す;
     		}
@@ -54,10 +54,10 @@ namespace SlaveMatrix
     			v = cp;
     			x = (o.X - v.X).Sign();
     			o = v;
-    			対象.Ele.角度C = 0.0;
-    			対象.Ele.Xi = 0;
-    			対象.Ele.Yi = (対象.Ele.Yi + x).Limit(0, 対象.Ele.Body.GetCountY());
-    			対象.Ele.Body.JoinPA();
+    			対象.Element.角度C = 0.0;
+    			対象.Element.Xi = 0;
+    			対象.Element.Yi = (対象.Element.Yi + x).Limit(0, 対象.Element.Body.GetCountY());
+    			対象.Element.Body.JoinPA();
     			移動時();
     		}
     	}
@@ -100,7 +100,7 @@ namespace SlaveMatrix
     		{
     			強さ = (強さ + dt.Sign()).Clamp(1, 3);
     			鞭撃モーション.BaseSpeed = 10.0 * 強さ_;
-    			if (!Sta.GameData.ガイド)
+    			if (!GlobalState.GameData.ガイド)
     			{
     				ip.SubInfoIm = "Wh:" + GameText.強さL + 強さ;
     			}
@@ -111,13 +111,13 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 調鞭処理(TrainingUI 調教UI, CM 調教鞭)
+    	public 調鞭処理(TrainingUI 調教UI, CharacterElement 調教鞭)
     		: base(調教UI, 調教鞭)
     	{
     		調鞭処理 調鞭処理2 = this;
     		調教鞭 鞭 = 調教UI.調教鞭;
     		bool l = false;
-    		Par p;
+    		ShapePart p;
     		Vector2D cp;
     		Color hc;
     		鞭撃モーション = new Motion(0.0, 1.0)
@@ -151,7 +151,7 @@ namespace SlaveMatrix
     				{
     					鞭.角度C = -100.0 * m.Value;
     				}
-    				p = 鞭.Body.GetCurrent().EnumAllPar().First((Par e) => e.Tag.Contains("先"));
+    				p = 鞭.Body.GetCurrent().EnumAllPar().First((ShapePart e) => e.Tag.Contains("先"));
     				cp = p.ToGlobal(p.GetJP()[0].Joint);
     				hc = 調鞭処理2.Med.GetHitColor(調鞭処理2.Med.FromBasePosition(cp));
     				if (調教UI.Bod.IsHit(hc))
@@ -205,7 +205,7 @@ namespace SlaveMatrix
     			OnStart = delegate
     			{
     				調鞭処理2.衝撃.表示 = true;
-    				調鞭処理2.衝撃.角度C = 360.0 * RNG.XS.NextDouble();
+    				調鞭処理2.衝撃.角度C = 360.0 * Rng.XS.NextDouble();
     				調鞭処理2.衝撃.尺度C = 0.0;
     				//TODO fix?
     				//Sounds.鞭撃.Play();

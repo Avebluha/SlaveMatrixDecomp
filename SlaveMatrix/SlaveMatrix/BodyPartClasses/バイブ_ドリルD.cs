@@ -5,7 +5,7 @@ using SlaveMatrix.GameClasses;
 namespace SlaveMatrix
 {
     [Serializable]
-    public class バイブ_ドリルD : EleD
+    public class バイブ_ドリルD : ElementData
     {
     	public bool ヘッド_表示 = true;
 
@@ -76,7 +76,7 @@ namespace SlaveMatrix
     		ThisType = GetType();
     	}
 
-    	public override Ele GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
+    	public override Element GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
     	{
     		return new バイブ_ドリル(DisUnit, 配色指定, 体配色, Med, this);
     	}

@@ -6,7 +6,7 @@ using SlaveMatrix.GameClasses;
 namespace SlaveMatrix
 {
     [Serializable]
-    public class 乳房D : EleD
+    public class 乳房D : ElementData
     {
     	public bool 乳房_表示 = true;
 
@@ -48,21 +48,21 @@ namespace SlaveMatrix
 
     	public bool 着衣;
 
-    	public List<EleD> 噴乳_接続 = new List<EleD>();
+    	public List<ElementData> 噴乳_接続 = new List<ElementData>();
 
     	public 乳房D()
     	{
     		ThisType = GetType();
     	}
 
-    	public void 噴乳接続(EleD e)
+    	public void 噴乳接続(ElementData e)
     	{
     		噴乳_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.乳房_噴乳_接続;
     	}
 
-    	public override Ele GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
+    	public override Element GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
     	{
     		return new 乳房(DisUnit, 配色指定, 体配色, Med, this);
     	}

@@ -3,7 +3,7 @@ using System;
 namespace SlaveMatrix
 {
     [Serializable]
-    public class 射精D : EleD
+    public class 射精D : ElementData
     {
     	public bool 精液_表示 = true;
 

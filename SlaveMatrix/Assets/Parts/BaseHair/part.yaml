@@ -1,0 +1,28 @@
+id: BaseHair
+original_key: 基髪
+resource: 胴体
+morph_x: 1
+morph_y: 1
+variants:
+- x: 0
+  y: 0
+  file: x0y0.svg
+fields:
+- name: 髪
+joints:
+- position: [
+  0.3496084009802555,
+  0.3484280984670132
+]
+- position: [
+  0.39187296969485164,
+  0.3484280984670132
+]
+- position: [
+  0.37074068533755355,
+  0.3369604475899917
+]
+- position: [
+  0.37074068533755355,
+  0.34104165692268584
+]

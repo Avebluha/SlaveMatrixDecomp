@@ -6,89 +6,89 @@ namespace SlaveMatrix
 {
     public class 前翅_甲 : 前翅
     {
-    	public Par X0Y0_前翅_前翅軸_軸1;
+    	public ShapePart X0Y0_前翅_前翅軸_軸1;
 
-    	public Par X0Y0_前翅_前翅軸_軸2;
+    	public ShapePart X0Y0_前翅_前翅軸_軸2;
 
-    	public Par X0Y0_前翅_前翅軸_軸3;
+    	public ShapePart X0Y0_前翅_前翅軸_軸3;
 
-    	public Par X0Y0_前翅_前翅甲_甲2;
+    	public ShapePart X0Y0_前翅_前翅甲_甲2;
 
-    	public Par X0Y0_前翅_前翅甲_甲1;
+    	public ShapePart X0Y0_前翅_前翅甲_甲1;
 
-    	public Par X0Y0_前翅_前翅甲_紋1;
+    	public ShapePart X0Y0_前翅_前翅甲_紋1;
 
-    	public Par X0Y0_前翅_前翅甲_紋2;
+    	public ShapePart X0Y0_前翅_前翅甲_紋2;
 
-    	public Par X0Y0_前翅_前翅甲_紋3;
+    	public ShapePart X0Y0_前翅_前翅甲_紋3;
 
-    	public Par X0Y0_前翅_前翅甲_紋4;
+    	public ShapePart X0Y0_前翅_前翅甲_紋4;
 
-    	public Par X0Y0_前翅_前翅甲_紋5;
+    	public ShapePart X0Y0_前翅_前翅甲_紋5;
 
-    	public Par X0Y0_前翅_前翅甲_紋6;
+    	public ShapePart X0Y0_前翅_前翅甲_紋6;
 
-    	public Par X0Y0_前翅_前翅甲_紋7;
+    	public ShapePart X0Y0_前翅_前翅甲_紋7;
 
-    	public Par X0Y0_付根_付根0;
+    	public ShapePart X0Y0_付根_付根0;
 
-    	public Par X0Y0_付根_付根1;
+    	public ShapePart X0Y0_付根_付根1;
 
-    	public Par X0Y0_付根_付根2;
+    	public ShapePart X0Y0_付根_付根2;
 
-    	public Par X0Y0_甲付根;
+    	public ShapePart X0Y0_甲付根;
 
-    	public Par X0Y0_紋1;
+    	public ShapePart X0Y0_紋1;
 
-    	public Par X0Y0_紋2;
+    	public ShapePart X0Y0_紋2;
 
-    	public Par X0Y1_前翅_前翅軸_軸1;
+    	public ShapePart X0Y1_前翅_前翅軸_軸1;
 
-    	public Par X0Y1_前翅_前翅軸_軸2;
+    	public ShapePart X0Y1_前翅_前翅軸_軸2;
 
-    	public Par X0Y1_前翅_前翅軸_軸3;
+    	public ShapePart X0Y1_前翅_前翅軸_軸3;
 
-    	public Par X0Y1_前翅_前翅軸_罅線;
+    	public ShapePart X0Y1_前翅_前翅軸_罅線;
 
-    	public Par X0Y1_前翅_前翅甲_甲2;
+    	public ShapePart X0Y1_前翅_前翅甲_甲2;
 
-    	public Par X0Y1_前翅_前翅甲_甲1;
+    	public ShapePart X0Y1_前翅_前翅甲_甲1;
 
-    	public Par X0Y1_前翅_前翅甲_紋1;
+    	public ShapePart X0Y1_前翅_前翅甲_紋1;
 
-    	public Par X0Y1_前翅_前翅甲_紋2;
+    	public ShapePart X0Y1_前翅_前翅甲_紋2;
 
-    	public Par X0Y1_前翅_前翅甲_紋3;
+    	public ShapePart X0Y1_前翅_前翅甲_紋3;
 
-    	public Par X0Y1_前翅_前翅甲_紋4;
+    	public ShapePart X0Y1_前翅_前翅甲_紋4;
 
-    	public Par X0Y1_前翅_前翅甲_紋5;
+    	public ShapePart X0Y1_前翅_前翅甲_紋5;
 
-    	public Par X0Y1_前翅_前翅甲_紋6;
+    	public ShapePart X0Y1_前翅_前翅甲_紋6;
 
-    	public Par X0Y1_前翅_前翅甲_紋7;
+    	public ShapePart X0Y1_前翅_前翅甲_紋7;
 
-    	public Par X0Y1_前翅_前翅甲_罅線1;
+    	public ShapePart X0Y1_前翅_前翅甲_罅線1;
 
-    	public Par X0Y1_前翅_前翅甲_罅線2;
+    	public ShapePart X0Y1_前翅_前翅甲_罅線2;
 
-    	public Par X0Y1_付根_付根0;
+    	public ShapePart X0Y1_付根_付根0;
 
-    	public Par X0Y1_付根_付根1;
+    	public ShapePart X0Y1_付根_付根1;
 
-    	public Par X0Y1_付根_付根2;
+    	public ShapePart X0Y1_付根_付根2;
 
-    	public Par X0Y1_甲付根;
+    	public ShapePart X0Y1_甲付根;
 
-    	public Par X0Y1_紋1;
+    	public ShapePart X0Y1_紋1;
 
-    	public Par X0Y1_紋2;
+    	public ShapePart X0Y1_紋2;
 
-    	public Par X0Y1_欠け1;
+    	public ShapePart X0Y1_欠け1;
 
-    	public Par X0Y1_欠け2;
+    	public ShapePart X0Y1_欠け2;
 
-    	public Par X0Y1_欠け3;
+    	public ShapePart X0Y1_欠け3;
 
     	public ColorD 前翅_前翅軸_軸1CD;
 
@@ -222,11 +222,11 @@ namespace SlaveMatrix
 
     	public ColorP X0Y1_欠け3CP;
 
-    	public Ele[] 軸1_接続;
+    	public Element[] 軸1_接続;
 
-    	public Ele[] 軸2_接続;
+    	public Element[] 軸2_接続;
 
-    	public Ele[] 軸3_接続;
+    	public Element[] 軸3_接続;
 
     	public override bool 欠損
     	{
@@ -714,13 +714,13 @@ namespace SlaveMatrix
     	{
     		前翅_甲 前翅_甲2 = this;
     		ThisType = GetType();
-    		Dif dif = new Dif(Sta.肢左["前翅"][0]);
-    		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		Pars pars2 = pars["前翅"].ToPars();
-    		Pars pars3 = pars2["前翅軸"].ToPars();
+    		MorphVariant morphVariant = new MorphVariant(GlobalState.肢左["前翅"][0]);
+    		Body = new VariantGrid();
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
+    		PartGroup partGroup = Body[0][0];
+    		PartGroup pars2 = partGroup["前翅"].ToPars();
+    		PartGroup pars3 = pars2["前翅軸"].ToPars();
     		X0Y0_前翅_前翅軸_軸1 = pars3["軸1"].ToPar();
     		X0Y0_前翅_前翅軸_軸2 = pars3["軸2"].ToPar();
     		X0Y0_前翅_前翅軸_軸3 = pars3["軸3"].ToPar();
@@ -734,15 +734,15 @@ namespace SlaveMatrix
     		X0Y0_前翅_前翅甲_紋5 = pars3["紋5"].ToPar();
     		X0Y0_前翅_前翅甲_紋6 = pars3["紋6"].ToPar();
     		X0Y0_前翅_前翅甲_紋7 = pars3["紋7"].ToPar();
-    		pars2 = pars["付根"].ToPars();
+    		pars2 = partGroup["付根"].ToPars();
     		X0Y0_付根_付根0 = pars2["付根0"].ToPar();
     		X0Y0_付根_付根1 = pars2["付根1"].ToPar();
     		X0Y0_付根_付根2 = pars2["付根2"].ToPar();
-    		X0Y0_甲付根 = pars["甲付根"].ToPar();
-    		X0Y0_紋1 = pars["紋1"].ToPar();
-    		X0Y0_紋2 = pars["紋2"].ToPar();
-    		pars = Body[0][1];
-    		pars2 = pars["前翅"].ToPars();
+    		X0Y0_甲付根 = partGroup["甲付根"].ToPar();
+    		X0Y0_紋1 = partGroup["紋1"].ToPar();
+    		X0Y0_紋2 = partGroup["紋2"].ToPar();
+    		partGroup = Body[0][1];
+    		pars2 = partGroup["前翅"].ToPars();
     		pars3 = pars2["前翅軸"].ToPars();
     		X0Y1_前翅_前翅軸_軸1 = pars3["軸1"].ToPar();
     		X0Y1_前翅_前翅軸_軸2 = pars3["軸2"].ToPar();
@@ -760,16 +760,16 @@ namespace SlaveMatrix
     		X0Y1_前翅_前翅甲_紋7 = pars3["紋7"].ToPar();
     		X0Y1_前翅_前翅甲_罅線1 = pars3["罅線1"].ToPar();
     		X0Y1_前翅_前翅甲_罅線2 = pars3["罅線2"].ToPar();
-    		pars2 = pars["付根"].ToPars();
+    		pars2 = partGroup["付根"].ToPars();
     		X0Y1_付根_付根0 = pars2["付根0"].ToPar();
     		X0Y1_付根_付根1 = pars2["付根1"].ToPar();
     		X0Y1_付根_付根2 = pars2["付根2"].ToPar();
-    		X0Y1_甲付根 = pars["甲付根"].ToPar();
-    		X0Y1_紋1 = pars["紋1"].ToPar();
-    		X0Y1_紋2 = pars["紋2"].ToPar();
-    		X0Y1_欠け1 = pars["欠け1"].ToPar();
-    		X0Y1_欠け2 = pars["欠け2"].ToPar();
-    		X0Y1_欠け3 = pars["欠け3"].ToPar();
+    		X0Y1_甲付根 = partGroup["甲付根"].ToPar();
+    		X0Y1_紋1 = partGroup["紋1"].ToPar();
+    		X0Y1_紋2 = partGroup["紋2"].ToPar();
+    		X0Y1_欠け1 = partGroup["欠け1"].ToPar();
+    		X0Y1_欠け2 = partGroup["欠け2"].ToPar();
+    		X0Y1_欠け3 = partGroup["欠け3"].ToPar();
     		Xasix = false;
     		Body.SetJoints();
     		接続根 = new JointD(Body);
@@ -827,10 +827,10 @@ namespace SlaveMatrix
     		{
     			表示 = false;
     		}
-    		Ele f;
+    		Element f;
     		if (e.軸1_接続.Count > 0)
     		{
-    			軸1_接続 = e.軸1_接続.Select(delegate(EleD g)
+    			軸1_接続 = e.軸1_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 前翅_甲2;
@@ -841,7 +841,7 @@ namespace SlaveMatrix
     		}
     		if (e.軸2_接続.Count > 0)
     		{
-    			軸2_接続 = e.軸2_接続.Select(delegate(EleD g)
+    			軸2_接続 = e.軸2_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 前翅_甲2;
@@ -852,7 +852,7 @@ namespace SlaveMatrix
     		}
     		if (e.軸3_接続.Count > 0)
     		{
-    			軸3_接続 = e.軸3_接続.Select(delegate(EleD g)
+    			軸3_接続 = e.軸3_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 前翅_甲2;
@@ -985,30 +985,30 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		前翅_前翅軸_軸1CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		前翅_前翅軸_軸2CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		前翅_前翅軸_軸3CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		前翅_前翅軸_罅線CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		前翅_前翅甲_甲2CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		前翅_前翅甲_甲1CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		前翅_前翅甲_紋1CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		前翅_前翅甲_紋2CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		前翅_前翅甲_紋3CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		前翅_前翅甲_紋4CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		前翅_前翅甲_紋5CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		前翅_前翅甲_紋6CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		前翅_前翅甲_紋7CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		前翅_前翅甲_罅線1CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		前翅_前翅甲_罅線2CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		付根_付根0CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		付根_付根1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		付根_付根2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		甲付根CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		紋1CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		紋2CD = new ColorD(ref Col.Black, ref 体配色.刺青);
-    		欠け1CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		欠け2CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		欠け3CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
+    		前翅_前翅軸_軸1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		前翅_前翅軸_軸2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		前翅_前翅軸_軸3CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		前翅_前翅軸_罅線CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		前翅_前翅甲_甲2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		前翅_前翅甲_甲1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		前翅_前翅甲_紋1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		前翅_前翅甲_紋2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		前翅_前翅甲_紋3CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		前翅_前翅甲_紋4CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		前翅_前翅甲_紋5CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		前翅_前翅甲_紋6CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		前翅_前翅甲_紋7CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		前翅_前翅甲_罅線1CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		前翅_前翅甲_罅線2CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		付根_付根0CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		付根_付根1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		付根_付根2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		甲付根CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		紋1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		紋2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青);
+    		欠け1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		欠け2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		欠け3CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
     	}
     }
 }

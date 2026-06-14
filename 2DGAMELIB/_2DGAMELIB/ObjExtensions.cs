@@ -28,35 +28,22 @@ namespace _2DGAMELIB
             ["四足上腕"] = "四足UpperArm",
             ["鳥翼下腕"] = "鳥翼LowerArm",
             ["獣翼下腕"] = "獣翼LowerArm",
-            ["四足下腕"] = "四足LowerArm"
-            //["乳房"] = "Breast",
-            //["腹"] = "Abdomen",
-            //["顔"] = "Face",
-            //["目"] = "Eye",
-            //["眉"] = "Eyebrow",
-            //["瞼"] = "Eyelid",
-            //["鼻"] = "Nose",
-            //["口"] = "Mouth",
-            //["耳"] = "Ear",
-            //["触覚"] = "Antenna",
-            //["髪"] = "Hair",
-            //["基髪"] = "BaseHair",
-            //["吹出し"] = "SpeechBubble",
+            ["四足下腕"] = "四足LowerArm",
         };
 
-        public static void MigrateKeys(this Obj obj)
+        public static void MigrateKeys(this BodyTemplate BodyTemplate)
         {
-            var newDict = new OrderedDictionary<string, Difs>();
+            var newDict = new OrderedDictionary<string, VariantGrid>();
 
-            foreach (var key in obj.Keys)
+            foreach (var key in BodyTemplate.Keys)
             {
                 var newKey = KeyMap.TryGetValue(key, out var mapped) ? mapped : key;
-                var difs = obj.Difss[key];
+                var difs = BodyTemplate.Difss[key];
 
                 newDict.Add(newKey, difs);
             }
 
-            obj.Difss = newDict;
+            BodyTemplate.Difss = newDict;
         }
 
     }

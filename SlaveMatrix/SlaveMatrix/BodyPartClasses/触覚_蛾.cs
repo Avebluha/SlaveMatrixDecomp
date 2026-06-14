@@ -5,307 +5,307 @@ namespace SlaveMatrix
 {
     public class 触覚_蛾 : 触覚
     {
-    	public Par X0Y0_節1_節;
+    	public ShapePart X0Y0_節1_節;
 
-    	public Par X0Y0_節1_毛左;
+    	public ShapePart X0Y0_節1_毛左;
 
-    	public Par X0Y0_節1_毛右;
+    	public ShapePart X0Y0_節1_毛右;
 
-    	public Par X0Y0_節2_節;
+    	public ShapePart X0Y0_節2_節;
 
-    	public Par X0Y0_節2_毛左;
+    	public ShapePart X0Y0_節2_毛左;
 
-    	public Par X0Y0_節2_毛右;
+    	public ShapePart X0Y0_節2_毛右;
 
-    	public Par X0Y0_節3_節;
+    	public ShapePart X0Y0_節3_節;
 
-    	public Par X0Y0_節3_毛左;
+    	public ShapePart X0Y0_節3_毛左;
 
-    	public Par X0Y0_節3_毛右;
+    	public ShapePart X0Y0_節3_毛右;
 
-    	public Par X0Y0_節4_節;
+    	public ShapePart X0Y0_節4_節;
 
-    	public Par X0Y0_節4_毛左;
+    	public ShapePart X0Y0_節4_毛左;
 
-    	public Par X0Y0_節4_毛右;
+    	public ShapePart X0Y0_節4_毛右;
 
-    	public Par X0Y0_節5_節;
+    	public ShapePart X0Y0_節5_節;
 
-    	public Par X0Y0_節5_毛左;
+    	public ShapePart X0Y0_節5_毛左;
 
-    	public Par X0Y0_節5_毛右;
+    	public ShapePart X0Y0_節5_毛右;
 
-    	public Par X0Y0_節6_節;
+    	public ShapePart X0Y0_節6_節;
 
-    	public Par X0Y0_節6_毛左;
+    	public ShapePart X0Y0_節6_毛左;
 
-    	public Par X0Y0_節6_毛右;
+    	public ShapePart X0Y0_節6_毛右;
 
-    	public Par X0Y0_節7_節;
+    	public ShapePart X0Y0_節7_節;
 
-    	public Par X0Y0_節7_毛左;
+    	public ShapePart X0Y0_節7_毛左;
 
-    	public Par X0Y0_節7_毛右;
+    	public ShapePart X0Y0_節7_毛右;
 
-    	public Par X0Y0_節8_節;
+    	public ShapePart X0Y0_節8_節;
 
-    	public Par X0Y0_節8_毛左;
+    	public ShapePart X0Y0_節8_毛左;
 
-    	public Par X0Y0_節8_毛右;
+    	public ShapePart X0Y0_節8_毛右;
 
-    	public Par X0Y0_節9_節;
+    	public ShapePart X0Y0_節9_節;
 
-    	public Par X0Y0_節9_毛左;
+    	public ShapePart X0Y0_節9_毛左;
 
-    	public Par X0Y0_節9_毛右;
+    	public ShapePart X0Y0_節9_毛右;
 
-    	public Par X0Y0_節10_節;
+    	public ShapePart X0Y0_節10_節;
 
-    	public Par X0Y0_節10_毛左;
+    	public ShapePart X0Y0_節10_毛左;
 
-    	public Par X0Y0_節10_毛右;
+    	public ShapePart X0Y0_節10_毛右;
 
-    	public Par X0Y0_節11_節;
+    	public ShapePart X0Y0_節11_節;
 
-    	public Par X0Y0_節11_毛左;
+    	public ShapePart X0Y0_節11_毛左;
 
-    	public Par X0Y0_節11_毛右;
+    	public ShapePart X0Y0_節11_毛右;
 
-    	public Par X0Y0_節12_節;
+    	public ShapePart X0Y0_節12_節;
 
-    	public Par X0Y0_節12_毛左;
+    	public ShapePart X0Y0_節12_毛左;
 
-    	public Par X0Y0_節12_毛右;
+    	public ShapePart X0Y0_節12_毛右;
 
-    	public Par X0Y0_節13_節;
+    	public ShapePart X0Y0_節13_節;
 
-    	public Par X0Y0_節13_毛左;
+    	public ShapePart X0Y0_節13_毛左;
 
-    	public Par X0Y0_節13_毛右;
+    	public ShapePart X0Y0_節13_毛右;
 
-    	public Par X0Y0_節14_節;
+    	public ShapePart X0Y0_節14_節;
 
-    	public Par X0Y0_節14_毛左;
+    	public ShapePart X0Y0_節14_毛左;
 
-    	public Par X0Y0_節14_毛右;
+    	public ShapePart X0Y0_節14_毛右;
 
-    	public Par X0Y0_節15_節;
+    	public ShapePart X0Y0_節15_節;
 
-    	public Par X0Y0_節15_毛左;
+    	public ShapePart X0Y0_節15_毛左;
 
-    	public Par X0Y0_節15_毛右;
+    	public ShapePart X0Y0_節15_毛右;
 
-    	public Par X0Y0_節16_節;
+    	public ShapePart X0Y0_節16_節;
 
-    	public Par X0Y0_節16_毛左;
+    	public ShapePart X0Y0_節16_毛左;
 
-    	public Par X0Y0_節16_毛右;
+    	public ShapePart X0Y0_節16_毛右;
 
-    	public Par X0Y0_節17_節;
+    	public ShapePart X0Y0_節17_節;
 
-    	public Par X0Y0_節17_毛左;
+    	public ShapePart X0Y0_節17_毛左;
 
-    	public Par X0Y0_節17_毛右;
+    	public ShapePart X0Y0_節17_毛右;
 
-    	public Par X0Y0_節18_節;
+    	public ShapePart X0Y0_節18_節;
 
-    	public Par X0Y0_節18_毛左;
+    	public ShapePart X0Y0_節18_毛左;
 
-    	public Par X0Y0_節18_毛右;
+    	public ShapePart X0Y0_節18_毛右;
 
-    	public Par X0Y0_節19_節;
+    	public ShapePart X0Y0_節19_節;
 
-    	public Par X0Y0_節19_毛左;
+    	public ShapePart X0Y0_節19_毛左;
 
-    	public Par X0Y0_節19_毛右;
+    	public ShapePart X0Y0_節19_毛右;
 
-    	public Par X0Y0_節20_節;
+    	public ShapePart X0Y0_節20_節;
 
-    	public Par X0Y0_節20_毛左;
+    	public ShapePart X0Y0_節20_毛左;
 
-    	public Par X0Y0_節20_毛右;
+    	public ShapePart X0Y0_節20_毛右;
 
-    	public Par X0Y0_節21_節;
+    	public ShapePart X0Y0_節21_節;
 
-    	public Par X0Y0_節21_毛左;
+    	public ShapePart X0Y0_節21_毛左;
 
-    	public Par X0Y0_節21_毛右;
+    	public ShapePart X0Y0_節21_毛右;
 
-    	public Par X0Y0_節22_節;
+    	public ShapePart X0Y0_節22_節;
 
-    	public Par X0Y0_節22_毛左;
+    	public ShapePart X0Y0_節22_毛左;
 
-    	public Par X0Y0_節22_毛右;
+    	public ShapePart X0Y0_節22_毛右;
 
-    	public Par X0Y0_節23_節;
+    	public ShapePart X0Y0_節23_節;
 
-    	public Par X0Y0_節23_毛左;
+    	public ShapePart X0Y0_節23_毛左;
 
-    	public Par X0Y0_節23_毛右;
+    	public ShapePart X0Y0_節23_毛右;
 
-    	public Par X0Y0_節24_節;
+    	public ShapePart X0Y0_節24_節;
 
-    	public Par X0Y0_節24_毛左;
+    	public ShapePart X0Y0_節24_毛左;
 
-    	public Par X0Y0_節24_毛右;
+    	public ShapePart X0Y0_節24_毛右;
 
-    	public Par X0Y0_節25_節;
+    	public ShapePart X0Y0_節25_節;
 
-    	public Par X0Y0_節25_毛左;
+    	public ShapePart X0Y0_節25_毛左;
 
-    	public Par X0Y0_節25_毛右;
+    	public ShapePart X0Y0_節25_毛右;
 
-    	public Par X0Y0_節26_節;
+    	public ShapePart X0Y0_節26_節;
 
-    	public Par X0Y0_節26_毛左;
+    	public ShapePart X0Y0_節26_毛左;
 
-    	public Par X0Y0_節26_毛右;
+    	public ShapePart X0Y0_節26_毛右;
 
-    	public Par X0Y0_節27_節;
+    	public ShapePart X0Y0_節27_節;
 
-    	public Par X0Y0_節27_毛左;
+    	public ShapePart X0Y0_節27_毛左;
 
-    	public Par X0Y0_節27_毛右;
+    	public ShapePart X0Y0_節27_毛右;
 
-    	public Par X0Y0_節28_節;
+    	public ShapePart X0Y0_節28_節;
 
-    	public Par X0Y0_節28_毛左;
+    	public ShapePart X0Y0_節28_毛左;
 
-    	public Par X0Y0_節28_毛右;
+    	public ShapePart X0Y0_節28_毛右;
 
-    	public Par X0Y0_節29_節;
+    	public ShapePart X0Y0_節29_節;
 
-    	public Par X0Y0_節29_毛左;
+    	public ShapePart X0Y0_節29_毛左;
 
-    	public Par X0Y0_節29_毛右;
+    	public ShapePart X0Y0_節29_毛右;
 
-    	public Par X0Y0_節30_節;
+    	public ShapePart X0Y0_節30_節;
 
-    	public Par X0Y0_節30_毛左;
+    	public ShapePart X0Y0_節30_毛左;
 
-    	public Par X0Y0_節30_毛右;
+    	public ShapePart X0Y0_節30_毛右;
 
-    	public Par X0Y0_節31_節;
+    	public ShapePart X0Y0_節31_節;
 
-    	public Par X0Y0_節31_毛左;
+    	public ShapePart X0Y0_節31_毛左;
 
-    	public Par X0Y0_節31_毛右;
+    	public ShapePart X0Y0_節31_毛右;
 
-    	public Par X0Y0_節32_節;
+    	public ShapePart X0Y0_節32_節;
 
-    	public Par X0Y0_節32_毛左;
+    	public ShapePart X0Y0_節32_毛左;
 
-    	public Par X0Y0_節32_毛右;
+    	public ShapePart X0Y0_節32_毛右;
 
-    	public Par X0Y0_節33_節;
+    	public ShapePart X0Y0_節33_節;
 
-    	public Par X0Y0_節33_毛左;
+    	public ShapePart X0Y0_節33_毛左;
 
-    	public Par X0Y0_節33_毛右;
+    	public ShapePart X0Y0_節33_毛右;
 
-    	public Par X0Y0_節34_節;
+    	public ShapePart X0Y0_節34_節;
 
-    	public Par X0Y0_節34_毛左;
+    	public ShapePart X0Y0_節34_毛左;
 
-    	public Par X0Y0_節34_毛右;
+    	public ShapePart X0Y0_節34_毛右;
 
-    	public Par X0Y0_節35_節;
+    	public ShapePart X0Y0_節35_節;
 
-    	public Par X0Y0_節35_毛左;
+    	public ShapePart X0Y0_節35_毛左;
 
-    	public Par X0Y0_節35_毛右;
+    	public ShapePart X0Y0_節35_毛右;
 
-    	public Par X0Y0_節36_節;
+    	public ShapePart X0Y0_節36_節;
 
-    	public Par X0Y0_節36_毛左;
+    	public ShapePart X0Y0_節36_毛左;
 
-    	public Par X0Y0_節36_毛右;
+    	public ShapePart X0Y0_節36_毛右;
 
-    	public Par X0Y0_節37_節;
+    	public ShapePart X0Y0_節37_節;
 
-    	public Par X0Y0_節37_毛左;
+    	public ShapePart X0Y0_節37_毛左;
 
-    	public Par X0Y0_節37_毛右;
+    	public ShapePart X0Y0_節37_毛右;
 
-    	public Par X0Y0_節38_節;
+    	public ShapePart X0Y0_節38_節;
 
-    	public Par X0Y0_節38_毛左;
+    	public ShapePart X0Y0_節38_毛左;
 
-    	public Par X0Y0_節38_毛右;
+    	public ShapePart X0Y0_節38_毛右;
 
-    	public Par X0Y0_節39_節;
+    	public ShapePart X0Y0_節39_節;
 
-    	public Par X0Y0_節39_毛左;
+    	public ShapePart X0Y0_節39_毛左;
 
-    	public Par X0Y0_節39_毛右;
+    	public ShapePart X0Y0_節39_毛右;
 
-    	public Par X0Y0_節40_節;
+    	public ShapePart X0Y0_節40_節;
 
-    	public Par X0Y0_節40_毛左;
+    	public ShapePart X0Y0_節40_毛左;
 
-    	public Par X0Y0_節40_毛右;
+    	public ShapePart X0Y0_節40_毛右;
 
-    	public Par X0Y0_節41_節;
+    	public ShapePart X0Y0_節41_節;
 
-    	public Par X0Y0_節41_毛左;
+    	public ShapePart X0Y0_節41_毛左;
 
-    	public Par X0Y0_節41_毛右;
+    	public ShapePart X0Y0_節41_毛右;
 
-    	public Par X0Y0_節42_節;
+    	public ShapePart X0Y0_節42_節;
 
-    	public Par X0Y0_節42_毛左;
+    	public ShapePart X0Y0_節42_毛左;
 
-    	public Par X0Y0_節42_毛右;
+    	public ShapePart X0Y0_節42_毛右;
 
-    	public Par X0Y0_節43_節;
+    	public ShapePart X0Y0_節43_節;
 
-    	public Par X0Y0_節43_毛左;
+    	public ShapePart X0Y0_節43_毛左;
 
-    	public Par X0Y0_節43_毛右;
+    	public ShapePart X0Y0_節43_毛右;
 
-    	public Par X0Y0_節44_節;
+    	public ShapePart X0Y0_節44_節;
 
-    	public Par X0Y0_節44_毛左;
+    	public ShapePart X0Y0_節44_毛左;
 
-    	public Par X0Y0_節44_毛右;
+    	public ShapePart X0Y0_節44_毛右;
 
-    	public Par X0Y0_節45_節;
+    	public ShapePart X0Y0_節45_節;
 
-    	public Par X0Y0_節45_毛左;
+    	public ShapePart X0Y0_節45_毛左;
 
-    	public Par X0Y0_節45_毛右;
+    	public ShapePart X0Y0_節45_毛右;
 
-    	public Par X0Y0_節46_節;
+    	public ShapePart X0Y0_節46_節;
 
-    	public Par X0Y0_節46_毛左;
+    	public ShapePart X0Y0_節46_毛左;
 
-    	public Par X0Y0_節46_毛右;
+    	public ShapePart X0Y0_節46_毛右;
 
-    	public Par X0Y0_節47_節;
+    	public ShapePart X0Y0_節47_節;
 
-    	public Par X0Y0_節47_毛左;
+    	public ShapePart X0Y0_節47_毛左;
 
-    	public Par X0Y0_節47_毛右;
+    	public ShapePart X0Y0_節47_毛右;
 
-    	public Par X0Y0_節48_節;
+    	public ShapePart X0Y0_節48_節;
 
-    	public Par X0Y0_節48_毛左;
+    	public ShapePart X0Y0_節48_毛左;
 
-    	public Par X0Y0_節48_毛右;
+    	public ShapePart X0Y0_節48_毛右;
 
-    	public Par X0Y0_節49_節;
+    	public ShapePart X0Y0_節49_節;
 
-    	public Par X0Y0_節49_毛左;
+    	public ShapePart X0Y0_節49_毛左;
 
-    	public Par X0Y0_節49_毛右;
+    	public ShapePart X0Y0_節49_毛右;
 
-    	public Par X0Y0_節50_節;
+    	public ShapePart X0Y0_節50_節;
 
-    	public Par X0Y0_節50_毛左;
+    	public ShapePart X0Y0_節50_毛左;
 
-    	public Par X0Y0_節50_毛右;
+    	public ShapePart X0Y0_節50_毛右;
 
-    	public Par X0Y0_節;
+    	public ShapePart X0Y0_節;
 
     	public ColorD 節1_節CD;
 
@@ -3237,214 +3237,214 @@ namespace SlaveMatrix
     	public 触覚_蛾(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 触覚_蛾D e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif();
-    		dif.Tag = "蛾";
-    		dif.Add(new Pars(Sta.肢左["触覚"][0][4]));
-    		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		Pars pars2 = pars["節1"].ToPars();
+    		MorphVariant morphVariant = new MorphVariant();
+    		morphVariant.Tag = "蛾";
+    		morphVariant.Add(new PartGroup(GlobalState.肢左["触覚"][0][4]));
+    		Body = new VariantGrid();
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
+    		PartGroup partGroup = Body[0][0];
+    		PartGroup pars2 = partGroup["節1"].ToPars();
     		X0Y0_節1_節 = pars2["節"].ToPar();
     		X0Y0_節1_毛左 = pars2["毛左"].ToPar();
     		X0Y0_節1_毛右 = pars2["毛右"].ToPar();
-    		pars2 = pars["節2"].ToPars();
+    		pars2 = partGroup["節2"].ToPars();
     		X0Y0_節2_節 = pars2["節"].ToPar();
     		X0Y0_節2_毛左 = pars2["毛左"].ToPar();
     		X0Y0_節2_毛右 = pars2["毛右"].ToPar();
-    		pars2 = pars["節3"].ToPars();
+    		pars2 = partGroup["節3"].ToPars();
     		X0Y0_節3_節 = pars2["節"].ToPar();
     		X0Y0_節3_毛左 = pars2["毛左"].ToPar();
     		X0Y0_節3_毛右 = pars2["毛右"].ToPar();
-    		pars2 = pars["節4"].ToPars();
+    		pars2 = partGroup["節4"].ToPars();
     		X0Y0_節4_節 = pars2["節"].ToPar();
     		X0Y0_節4_毛左 = pars2["毛左"].ToPar();
     		X0Y0_節4_毛右 = pars2["毛右"].ToPar();
-    		pars2 = pars["節5"].ToPars();
+    		pars2 = partGroup["節5"].ToPars();
     		X0Y0_節5_節 = pars2["節"].ToPar();
     		X0Y0_節5_毛左 = pars2["毛左"].ToPar();
     		X0Y0_節5_毛右 = pars2["毛右"].ToPar();
-    		pars2 = pars["節6"].ToPars();
+    		pars2 = partGroup["節6"].ToPars();
     		X0Y0_節6_節 = pars2["節"].ToPar();
     		X0Y0_節6_毛左 = pars2["毛左"].ToPar();
     		X0Y0_節6_毛右 = pars2["毛右"].ToPar();
-    		pars2 = pars["節7"].ToPars();
+    		pars2 = partGroup["節7"].ToPars();
     		X0Y0_節7_節 = pars2["節"].ToPar();
     		X0Y0_節7_毛左 = pars2["毛左"].ToPar();
     		X0Y0_節7_毛右 = pars2["毛右"].ToPar();
-    		pars2 = pars["節8"].ToPars();
+    		pars2 = partGroup["節8"].ToPars();
     		X0Y0_節8_節 = pars2["節"].ToPar();
     		X0Y0_節8_毛左 = pars2["毛左"].ToPar();
     		X0Y0_節8_毛右 = pars2["毛右"].ToPar();
-    		pars2 = pars["節9"].ToPars();
+    		pars2 = partGroup["節9"].ToPars();
     		X0Y0_節9_節 = pars2["節"].ToPar();
     		X0Y0_節9_毛左 = pars2["毛左"].ToPar();
     		X0Y0_節9_毛右 = pars2["毛右"].ToPar();
-    		pars2 = pars["節10"].ToPars();
+    		pars2 = partGroup["節10"].ToPars();
     		X0Y0_節10_節 = pars2["節"].ToPar();
     		X0Y0_節10_毛左 = pars2["毛左"].ToPar();
     		X0Y0_節10_毛右 = pars2["毛右"].ToPar();
-    		pars2 = pars["節11"].ToPars();
+    		pars2 = partGroup["節11"].ToPars();
     		X0Y0_節11_節 = pars2["節"].ToPar();
     		X0Y0_節11_毛左 = pars2["毛左"].ToPar();
     		X0Y0_節11_毛右 = pars2["毛右"].ToPar();
-    		pars2 = pars["節12"].ToPars();
+    		pars2 = partGroup["節12"].ToPars();
     		X0Y0_節12_節 = pars2["節"].ToPar();
     		X0Y0_節12_毛左 = pars2["毛左"].ToPar();
     		X0Y0_節12_毛右 = pars2["毛右"].ToPar();
-    		pars2 = pars["節13"].ToPars();
+    		pars2 = partGroup["節13"].ToPars();
     		X0Y0_節13_節 = pars2["節"].ToPar();
     		X0Y0_節13_毛左 = pars2["毛左"].ToPar();
     		X0Y0_節13_毛右 = pars2["毛右"].ToPar();
-    		pars2 = pars["節14"].ToPars();
+    		pars2 = partGroup["節14"].ToPars();
     		X0Y0_節14_節 = pars2["節"].ToPar();
     		X0Y0_節14_毛左 = pars2["毛左"].ToPar();
     		X0Y0_節14_毛右 = pars2["毛右"].ToPar();
-    		pars2 = pars["節15"].ToPars();
+    		pars2 = partGroup["節15"].ToPars();
     		X0Y0_節15_節 = pars2["節"].ToPar();
     		X0Y0_節15_毛左 = pars2["毛左"].ToPar();
     		X0Y0_節15_毛右 = pars2["毛右"].ToPar();
-    		pars2 = pars["節16"].ToPars();
+    		pars2 = partGroup["節16"].ToPars();
     		X0Y0_節16_節 = pars2["節"].ToPar();
     		X0Y0_節16_毛左 = pars2["毛左"].ToPar();
     		X0Y0_節16_毛右 = pars2["毛右"].ToPar();
-    		pars2 = pars["節17"].ToPars();
+    		pars2 = partGroup["節17"].ToPars();
     		X0Y0_節17_節 = pars2["節"].ToPar();
     		X0Y0_節17_毛左 = pars2["毛左"].ToPar();
     		X0Y0_節17_毛右 = pars2["毛右"].ToPar();
-    		pars2 = pars["節18"].ToPars();
+    		pars2 = partGroup["節18"].ToPars();
     		X0Y0_節18_節 = pars2["節"].ToPar();
     		X0Y0_節18_毛左 = pars2["毛左"].ToPar();
     		X0Y0_節18_毛右 = pars2["毛右"].ToPar();
-    		pars2 = pars["節19"].ToPars();
+    		pars2 = partGroup["節19"].ToPars();
     		X0Y0_節19_節 = pars2["節"].ToPar();
     		X0Y0_節19_毛左 = pars2["毛左"].ToPar();
     		X0Y0_節19_毛右 = pars2["毛右"].ToPar();
-    		pars2 = pars["節20"].ToPars();
+    		pars2 = partGroup["節20"].ToPars();
     		X0Y0_節20_節 = pars2["節"].ToPar();
     		X0Y0_節20_毛左 = pars2["毛左"].ToPar();
     		X0Y0_節20_毛右 = pars2["毛右"].ToPar();
-    		pars2 = pars["節21"].ToPars();
+    		pars2 = partGroup["節21"].ToPars();
     		X0Y0_節21_節 = pars2["節"].ToPar();
     		X0Y0_節21_毛左 = pars2["毛左"].ToPar();
     		X0Y0_節21_毛右 = pars2["毛右"].ToPar();
-    		pars2 = pars["節22"].ToPars();
+    		pars2 = partGroup["節22"].ToPars();
     		X0Y0_節22_節 = pars2["節"].ToPar();
     		X0Y0_節22_毛左 = pars2["毛左"].ToPar();
     		X0Y0_節22_毛右 = pars2["毛右"].ToPar();
-    		pars2 = pars["節23"].ToPars();
+    		pars2 = partGroup["節23"].ToPars();
     		X0Y0_節23_節 = pars2["節"].ToPar();
     		X0Y0_節23_毛左 = pars2["毛左"].ToPar();
     		X0Y0_節23_毛右 = pars2["毛右"].ToPar();
-    		pars2 = pars["節24"].ToPars();
+    		pars2 = partGroup["節24"].ToPars();
     		X0Y0_節24_節 = pars2["節"].ToPar();
     		X0Y0_節24_毛左 = pars2["毛左"].ToPar();
     		X0Y0_節24_毛右 = pars2["毛右"].ToPar();
-    		pars2 = pars["節25"].ToPars();
+    		pars2 = partGroup["節25"].ToPars();
     		X0Y0_節25_節 = pars2["節"].ToPar();
     		X0Y0_節25_毛左 = pars2["毛左"].ToPar();
     		X0Y0_節25_毛右 = pars2["毛右"].ToPar();
-    		pars2 = pars["節26"].ToPars();
+    		pars2 = partGroup["節26"].ToPars();
     		X0Y0_節26_節 = pars2["節"].ToPar();
     		X0Y0_節26_毛左 = pars2["毛左"].ToPar();
     		X0Y0_節26_毛右 = pars2["毛右"].ToPar();
-    		pars2 = pars["節27"].ToPars();
+    		pars2 = partGroup["節27"].ToPars();
     		X0Y0_節27_節 = pars2["節"].ToPar();
     		X0Y0_節27_毛左 = pars2["毛左"].ToPar();
     		X0Y0_節27_毛右 = pars2["毛右"].ToPar();
-    		pars2 = pars["節28"].ToPars();
+    		pars2 = partGroup["節28"].ToPars();
     		X0Y0_節28_節 = pars2["節"].ToPar();
     		X0Y0_節28_毛左 = pars2["毛左"].ToPar();
     		X0Y0_節28_毛右 = pars2["毛右"].ToPar();
-    		pars2 = pars["節29"].ToPars();
+    		pars2 = partGroup["節29"].ToPars();
     		X0Y0_節29_節 = pars2["節"].ToPar();
     		X0Y0_節29_毛左 = pars2["毛左"].ToPar();
     		X0Y0_節29_毛右 = pars2["毛右"].ToPar();
-    		pars2 = pars["節30"].ToPars();
+    		pars2 = partGroup["節30"].ToPars();
     		X0Y0_節30_節 = pars2["節"].ToPar();
     		X0Y0_節30_毛左 = pars2["毛左"].ToPar();
     		X0Y0_節30_毛右 = pars2["毛右"].ToPar();
-    		pars2 = pars["節31"].ToPars();
+    		pars2 = partGroup["節31"].ToPars();
     		X0Y0_節31_節 = pars2["節"].ToPar();
     		X0Y0_節31_毛左 = pars2["毛左"].ToPar();
     		X0Y0_節31_毛右 = pars2["毛右"].ToPar();
-    		pars2 = pars["節32"].ToPars();
+    		pars2 = partGroup["節32"].ToPars();
     		X0Y0_節32_節 = pars2["節"].ToPar();
     		X0Y0_節32_毛左 = pars2["毛左"].ToPar();
     		X0Y0_節32_毛右 = pars2["毛右"].ToPar();
-    		pars2 = pars["節33"].ToPars();
+    		pars2 = partGroup["節33"].ToPars();
     		X0Y0_節33_節 = pars2["節"].ToPar();
     		X0Y0_節33_毛左 = pars2["毛左"].ToPar();
     		X0Y0_節33_毛右 = pars2["毛右"].ToPar();
-    		pars2 = pars["節34"].ToPars();
+    		pars2 = partGroup["節34"].ToPars();
     		X0Y0_節34_節 = pars2["節"].ToPar();
     		X0Y0_節34_毛左 = pars2["毛左"].ToPar();
     		X0Y0_節34_毛右 = pars2["毛右"].ToPar();
-    		pars2 = pars["節35"].ToPars();
+    		pars2 = partGroup["節35"].ToPars();
     		X0Y0_節35_節 = pars2["節"].ToPar();
     		X0Y0_節35_毛左 = pars2["毛左"].ToPar();
     		X0Y0_節35_毛右 = pars2["毛右"].ToPar();
-    		pars2 = pars["節36"].ToPars();
+    		pars2 = partGroup["節36"].ToPars();
     		X0Y0_節36_節 = pars2["節"].ToPar();
     		X0Y0_節36_毛左 = pars2["毛左"].ToPar();
     		X0Y0_節36_毛右 = pars2["毛右"].ToPar();
-    		pars2 = pars["節37"].ToPars();
+    		pars2 = partGroup["節37"].ToPars();
     		X0Y0_節37_節 = pars2["節"].ToPar();
     		X0Y0_節37_毛左 = pars2["毛左"].ToPar();
     		X0Y0_節37_毛右 = pars2["毛右"].ToPar();
-    		pars2 = pars["節38"].ToPars();
+    		pars2 = partGroup["節38"].ToPars();
     		X0Y0_節38_節 = pars2["節"].ToPar();
     		X0Y0_節38_毛左 = pars2["毛左"].ToPar();
     		X0Y0_節38_毛右 = pars2["毛右"].ToPar();
-    		pars2 = pars["節39"].ToPars();
+    		pars2 = partGroup["節39"].ToPars();
     		X0Y0_節39_節 = pars2["節"].ToPar();
     		X0Y0_節39_毛左 = pars2["毛左"].ToPar();
     		X0Y0_節39_毛右 = pars2["毛右"].ToPar();
-    		pars2 = pars["節40"].ToPars();
+    		pars2 = partGroup["節40"].ToPars();
     		X0Y0_節40_節 = pars2["節"].ToPar();
     		X0Y0_節40_毛左 = pars2["毛左"].ToPar();
     		X0Y0_節40_毛右 = pars2["毛右"].ToPar();
-    		pars2 = pars["節41"].ToPars();
+    		pars2 = partGroup["節41"].ToPars();
     		X0Y0_節41_節 = pars2["節"].ToPar();
     		X0Y0_節41_毛左 = pars2["毛左"].ToPar();
     		X0Y0_節41_毛右 = pars2["毛右"].ToPar();
-    		pars2 = pars["節42"].ToPars();
+    		pars2 = partGroup["節42"].ToPars();
     		X0Y0_節42_節 = pars2["節"].ToPar();
     		X0Y0_節42_毛左 = pars2["毛左"].ToPar();
     		X0Y0_節42_毛右 = pars2["毛右"].ToPar();
-    		pars2 = pars["節43"].ToPars();
+    		pars2 = partGroup["節43"].ToPars();
     		X0Y0_節43_節 = pars2["節"].ToPar();
     		X0Y0_節43_毛左 = pars2["毛左"].ToPar();
     		X0Y0_節43_毛右 = pars2["毛右"].ToPar();
-    		pars2 = pars["節44"].ToPars();
+    		pars2 = partGroup["節44"].ToPars();
     		X0Y0_節44_節 = pars2["節"].ToPar();
     		X0Y0_節44_毛左 = pars2["毛左"].ToPar();
     		X0Y0_節44_毛右 = pars2["毛右"].ToPar();
-    		pars2 = pars["節45"].ToPars();
+    		pars2 = partGroup["節45"].ToPars();
     		X0Y0_節45_節 = pars2["節"].ToPar();
     		X0Y0_節45_毛左 = pars2["毛左"].ToPar();
     		X0Y0_節45_毛右 = pars2["毛右"].ToPar();
-    		pars2 = pars["節46"].ToPars();
+    		pars2 = partGroup["節46"].ToPars();
     		X0Y0_節46_節 = pars2["節"].ToPar();
     		X0Y0_節46_毛左 = pars2["毛左"].ToPar();
     		X0Y0_節46_毛右 = pars2["毛右"].ToPar();
-    		pars2 = pars["節47"].ToPars();
+    		pars2 = partGroup["節47"].ToPars();
     		X0Y0_節47_節 = pars2["節"].ToPar();
     		X0Y0_節47_毛左 = pars2["毛左"].ToPar();
     		X0Y0_節47_毛右 = pars2["毛右"].ToPar();
-    		pars2 = pars["節48"].ToPars();
+    		pars2 = partGroup["節48"].ToPars();
     		X0Y0_節48_節 = pars2["節"].ToPar();
     		X0Y0_節48_毛左 = pars2["毛左"].ToPar();
     		X0Y0_節48_毛右 = pars2["毛右"].ToPar();
-    		pars2 = pars["節49"].ToPars();
+    		pars2 = partGroup["節49"].ToPars();
     		X0Y0_節49_節 = pars2["節"].ToPar();
     		X0Y0_節49_毛左 = pars2["毛左"].ToPar();
     		X0Y0_節49_毛右 = pars2["毛右"].ToPar();
-    		pars2 = pars["節50"].ToPars();
+    		pars2 = partGroup["節50"].ToPars();
     		X0Y0_節50_節 = pars2["節"].ToPar();
     		X0Y0_節50_毛左 = pars2["毛左"].ToPar();
     		X0Y0_節50_毛右 = pars2["毛右"].ToPar();
-    		X0Y0_節 = pars["節"].ToPar();
+    		X0Y0_節 = partGroup["節"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;
@@ -3894,7 +3894,7 @@ namespace SlaveMatrix
     		Body.JoinPAall();
     	}
 
-    	public override IEnumerable<Par> Enum軸()
+    	public override IEnumerable<ShapePart> Enum軸()
     	{
     		yield return X0Y0_節1_節;
     		yield return X0Y0_節2_節;
@@ -4125,367 +4125,367 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		節1_節CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節1_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節1_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節2_節CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節2_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節2_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節3_節CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節3_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節3_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節4_節CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節4_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節4_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節5_節CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節5_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節5_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節6_節CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節6_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節6_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節7_節CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節7_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節7_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節8_節CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節8_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節8_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節9_節CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節9_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節9_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節10_節CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節10_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節10_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節11_節CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節11_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節11_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節12_節CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節12_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節12_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節13_節CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節13_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節13_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節14_節CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節14_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節14_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節15_節CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節15_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節15_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節16_節CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節16_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節16_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節17_節CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節17_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節17_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節18_節CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節18_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節18_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節19_節CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節19_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節19_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節20_節CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節20_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節20_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節21_節CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節21_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節21_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節22_節CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節22_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節22_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節23_節CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節23_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節23_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節24_節CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節24_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節24_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節25_節CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節25_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節25_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節26_節CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節26_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節26_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節27_節CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節27_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節27_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節28_節CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節28_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節28_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節29_節CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節29_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節29_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節30_節CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節30_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節30_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節31_節CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節31_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節31_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節32_節CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節32_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節32_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節33_節CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節33_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節33_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節34_節CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節34_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節34_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節35_節CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節35_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節35_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節36_節CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節36_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節36_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節37_節CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節37_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節37_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節38_節CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節38_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節38_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節39_節CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節39_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節39_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節40_節CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節40_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節40_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節41_節CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節41_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節41_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節42_節CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節42_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節42_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節43_節CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節43_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節43_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節44_節CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節44_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節44_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節45_節CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節45_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節45_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節46_節CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節46_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節46_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節47_節CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節47_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節47_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節48_節CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節48_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節48_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節49_節CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節49_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節49_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節50_節CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節50_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節50_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
+    		節1_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節1_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節1_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節2_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節2_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節2_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節3_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節3_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節3_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節4_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節4_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節4_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節5_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節5_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節5_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節6_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節6_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節6_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節7_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節7_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節7_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節8_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節8_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節8_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節9_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節9_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節9_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節10_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節10_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節10_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節11_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節11_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節11_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節12_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節12_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節12_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節13_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節13_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節13_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節14_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節14_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節14_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節15_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節15_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節15_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節16_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節16_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節16_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節17_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節17_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節17_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節18_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節18_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節18_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節19_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節19_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節19_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節20_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節20_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節20_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節21_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節21_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節21_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節22_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節22_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節22_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節23_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節23_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節23_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節24_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節24_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節24_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節25_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節25_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節25_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節26_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節26_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節26_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節27_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節27_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節27_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節28_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節28_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節28_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節29_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節29_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節29_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節30_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節30_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節30_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節31_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節31_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節31_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節32_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節32_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節32_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節33_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節33_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節33_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節34_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節34_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節34_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節35_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節35_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節35_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節36_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節36_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節36_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節37_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節37_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節37_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節38_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節38_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節38_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節39_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節39_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節39_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節40_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節40_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節40_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節41_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節41_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節41_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節42_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節42_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節42_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節43_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節43_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節43_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節44_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節44_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節44_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節45_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節45_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節45_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節46_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節46_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節46_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節47_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節47_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節47_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節48_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節48_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節48_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節49_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節49_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節49_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節50_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節50_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節50_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
     	}
 
     	private void 配色T0(BodyColorSet 体配色)
     	{
     		this.配色T(0, "節CD", ref 体配色.甲1O, ref 体配色.刺青O);
-    		節1_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節1_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節2_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節2_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節3_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節3_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節4_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節4_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節5_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節5_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節6_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節6_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節7_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節7_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節8_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節8_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節9_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節9_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節10_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節10_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節11_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節11_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節12_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節12_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節13_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節13_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節14_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節14_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節15_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節15_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節16_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節16_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節17_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節17_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節18_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節18_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節19_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節19_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節20_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節20_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節21_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節21_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節22_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節22_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節23_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節23_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節24_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節24_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節25_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節25_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節26_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節26_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節27_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節27_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節28_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節28_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節29_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節29_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節30_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節30_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節31_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節31_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節32_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節32_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節33_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節33_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節34_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節34_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節35_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節35_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節36_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節36_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節37_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節37_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節38_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節38_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節39_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節39_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節40_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節40_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節41_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節41_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節42_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節42_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節43_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節43_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節44_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節44_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節45_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節45_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節46_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節46_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節47_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節47_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節48_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節48_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節49_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節49_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節50_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節50_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
+    		節1_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節1_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節2_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節2_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節3_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節3_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節4_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節4_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節5_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節5_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節6_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節6_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節7_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節7_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節8_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節8_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節9_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節9_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節10_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節10_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節11_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節11_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節12_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節12_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節13_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節13_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節14_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節14_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節15_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節15_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節16_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節16_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節17_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節17_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節18_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節18_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節19_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節19_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節20_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節20_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節21_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節21_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節22_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節22_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節23_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節23_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節24_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節24_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節25_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節25_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節26_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節26_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節27_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節27_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節28_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節28_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節29_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節29_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節30_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節30_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節31_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節31_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節32_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節32_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節33_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節33_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節34_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節34_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節35_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節35_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節36_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節36_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節37_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節37_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節38_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節38_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節39_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節39_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節40_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節40_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節41_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節41_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節42_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節42_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節43_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節43_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節44_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節44_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節45_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節45_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節46_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節46_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節47_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節47_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節48_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節48_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節49_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節49_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節50_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節50_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
     	}
 
     	private void 配色T1(BodyColorSet 体配色)
     	{
     		this.配色T(1, "節CD", ref 体配色.甲1O, ref 体配色.刺青O);
-    		節1_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節1_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節2_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節2_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節3_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節3_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節4_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節4_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節5_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節5_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節6_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節6_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節7_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節7_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節8_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節8_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節9_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節9_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節10_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節10_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節11_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節11_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節12_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節12_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節13_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節13_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節14_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節14_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節15_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節15_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節16_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節16_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節17_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節17_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節18_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節18_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節19_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節19_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節20_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節20_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節21_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節21_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節22_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節22_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節23_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節23_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節24_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節24_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節25_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節25_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節26_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節26_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節27_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節27_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節28_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節28_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節29_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節29_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節30_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節30_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節31_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節31_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節32_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節32_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節33_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節33_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節34_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節34_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節35_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節35_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節36_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節36_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節37_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節37_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節38_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節38_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節39_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節39_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節40_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節40_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節41_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節41_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節42_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節42_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節43_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節43_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節44_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節44_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節45_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節45_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節46_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節46_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節47_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節47_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節48_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節48_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節49_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節49_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節50_毛左CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		節50_毛右CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
+    		節1_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節1_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節2_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節2_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節3_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節3_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節4_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節4_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節5_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節5_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節6_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節6_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節7_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節7_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節8_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節8_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節9_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節9_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節10_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節10_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節11_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節11_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節12_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節12_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節13_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節13_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節14_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節14_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節15_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節15_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節16_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節16_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節17_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節17_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節18_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節18_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節19_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節19_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節20_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節20_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節21_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節21_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節22_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節22_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節23_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節23_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節24_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節24_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節25_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節25_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節26_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節26_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節27_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節27_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節28_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節28_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節29_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節29_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節30_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節30_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節31_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節31_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節32_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節32_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節33_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節33_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節34_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節34_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節35_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節35_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節36_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節36_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節37_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節37_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節38_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節38_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節39_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節39_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節40_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節40_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節41_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節41_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節42_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節42_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節43_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節43_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節44_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節44_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節45_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節45_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節46_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節46_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節47_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節47_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節48_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節48_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節49_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節49_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節50_毛左CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		節50_毛右CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
     	}
     }
 }

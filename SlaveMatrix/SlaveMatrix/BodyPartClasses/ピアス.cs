@@ -3,9 +3,9 @@ using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
-    public class ピアス : Ele
+    public class ピアス : Element
     {
-    	public Par X0Y0_ピアス;
+    	public ShapePart X0Y0_ピアス;
 
     	public ColorD ピアスCD;
 
@@ -101,9 +101,9 @@ namespace SlaveMatrix
     	public ピアス(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, ピアスD e)
     	{
     		ThisType = GetType();
-    		Body = new Difs(Sta.性器付["ピアス"]);
-    		Pars pars = Body[0][0];
-    		X0Y0_ピアス = pars["ピアス"].ToPar();
+    		Body = new VariantGrid(GlobalState.性器付["ピアス"]);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_ピアス = partGroup["ピアス"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;

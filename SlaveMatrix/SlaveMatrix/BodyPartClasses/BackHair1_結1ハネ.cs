@@ -4,21 +4,21 @@ namespace SlaveMatrix
 {
     public class BackHair1_結1ハネ : アップ
     {
-    	public Par X0Y0_髪基;
+    	public ShapePart X0Y0_髪基;
 
-    	public Par X0Y0_お下げ_髪根;
+    	public ShapePart X0Y0_お下げ_髪根;
 
-    	public Par X0Y0_お下げ_髪左1;
+    	public ShapePart X0Y0_お下げ_髪左1;
 
-    	public Par X0Y0_お下げ_髪左2;
+    	public ShapePart X0Y0_お下げ_髪左2;
 
-    	public Par X0Y0_お下げ_髪左3;
+    	public ShapePart X0Y0_お下げ_髪左3;
 
-    	public Par X0Y0_お下げ_髪右1;
+    	public ShapePart X0Y0_お下げ_髪右1;
 
-    	public Par X0Y0_お下げ_髪右2;
+    	public ShapePart X0Y0_お下げ_髪右2;
 
-    	public Par X0Y0_お下げ_髪右3;
+    	public ShapePart X0Y0_お下げ_髪右3;
 
     	public ColorD 髪基CD;
 
@@ -284,15 +284,15 @@ namespace SlaveMatrix
     	public BackHair1_結1ハネ(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, BackHair1_結1ハネD e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif();
-    		dif.Tag = "結い1ハネ";
-    		dif.Add(new Pars(Sta.胴体["BackHair1"][0][1]));
-    		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		X0Y0_髪基 = pars["髪基"].ToPar();
-    		Pars pars2 = pars["お下げ"].ToPars();
+    		MorphVariant morphVariant = new MorphVariant();
+    		morphVariant.Tag = "結い1ハネ";
+    		morphVariant.Add(new PartGroup(GlobalState.胴体["BackHair1"][0][1]));
+    		Body = new VariantGrid();
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_髪基 = partGroup["髪基"].ToPar();
+    		PartGroup pars2 = partGroup["お下げ"].ToPars();
     		X0Y0_お下げ_髪根 = pars2["髪根"].ToPar();
     		X0Y0_お下げ_髪左1 = pars2["髪左1"].ToPar();
     		X0Y0_お下げ_髪左2 = pars2["髪左2"].ToPar();
@@ -375,7 +375,7 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		髪基CD = new ColorD(ref Col.Empty, ref Color2.Empty);
+    		髪基CD = new ColorD(ref ColorHelper.Empty, ref Color2.Empty);
     		お下げ_髪根CD = new ColorD(ref 体配色.髪線, ref 体配色.髪O);
     		お下げ_髪左1CD = new ColorD(ref 体配色.髪線, ref 体配色.髪O);
     		お下げ_髪左2CD = new ColorD(ref 体配色.髪線, ref 体配色.髪O);

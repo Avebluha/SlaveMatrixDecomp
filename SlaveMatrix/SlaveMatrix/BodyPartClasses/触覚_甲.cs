@@ -5,27 +5,27 @@ namespace SlaveMatrix
 {
     public class 触覚_甲 : 触覚
     {
-    	public Par X0Y0_節0;
+    	public ShapePart X0Y0_節0;
 
-    	public Par X0Y0_節1;
+    	public ShapePart X0Y0_節1;
 
-    	public Par X0Y0_節2;
+    	public ShapePart X0Y0_節2;
 
-    	public Par X0Y0_節3;
+    	public ShapePart X0Y0_節3;
 
-    	public Par X0Y0_節4;
+    	public ShapePart X0Y0_節4;
 
-    	public Par X0Y0_節5;
+    	public ShapePart X0Y0_節5;
 
-    	public Par X0Y0_節6;
+    	public ShapePart X0Y0_節6;
 
-    	public Par X0Y0_節7;
+    	public ShapePart X0Y0_節7;
 
-    	public Par X0Y0_節8;
+    	public ShapePart X0Y0_節8;
 
-    	public Par X0Y0_節9;
+    	public ShapePart X0Y0_節9;
 
-    	public Par X0Y0_節10;
+    	public ShapePart X0Y0_節10;
 
     	public ColorD 節0CD;
 
@@ -297,24 +297,24 @@ namespace SlaveMatrix
     	public 触覚_甲(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 触覚_甲D e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif();
-    		dif.Tag = "甲";
-    		dif.Add(new Pars(Sta.肢左["触覚"][0][2]));
-    		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		X0Y0_節0 = pars["節0"].ToPar();
-    		X0Y0_節1 = pars["節1"].ToPar();
-    		X0Y0_節2 = pars["節2"].ToPar();
-    		X0Y0_節3 = pars["節3"].ToPar();
-    		X0Y0_節4 = pars["節4"].ToPar();
-    		X0Y0_節5 = pars["節5"].ToPar();
-    		X0Y0_節6 = pars["節6"].ToPar();
-    		X0Y0_節7 = pars["節7"].ToPar();
-    		X0Y0_節8 = pars["節8"].ToPar();
-    		X0Y0_節9 = pars["節9"].ToPar();
-    		X0Y0_節10 = pars["節10"].ToPar();
+    		MorphVariant morphVariant = new MorphVariant();
+    		morphVariant.Tag = "甲";
+    		morphVariant.Add(new PartGroup(GlobalState.肢左["触覚"][0][2]));
+    		Body = new VariantGrid();
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_節0 = partGroup["節0"].ToPar();
+    		X0Y0_節1 = partGroup["節1"].ToPar();
+    		X0Y0_節2 = partGroup["節2"].ToPar();
+    		X0Y0_節3 = partGroup["節3"].ToPar();
+    		X0Y0_節4 = partGroup["節4"].ToPar();
+    		X0Y0_節5 = partGroup["節5"].ToPar();
+    		X0Y0_節6 = partGroup["節6"].ToPar();
+    		X0Y0_節7 = partGroup["節7"].ToPar();
+    		X0Y0_節8 = partGroup["節8"].ToPar();
+    		X0Y0_節9 = partGroup["節9"].ToPar();
+    		X0Y0_節10 = partGroup["節10"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;
@@ -401,7 +401,7 @@ namespace SlaveMatrix
     		Body.JoinPAall();
     	}
 
-    	public override IEnumerable<Par> Enum軸()
+    	public override IEnumerable<ShapePart> Enum軸()
     	{
     		yield return X0Y0_節0;
     		yield return X0Y0_節1;
@@ -452,17 +452,17 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		節0CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節1CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節2CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節3CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節4CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節5CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節6CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節7CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節8CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節9CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		節10CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
+    		節0CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節3CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節4CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節5CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節6CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節7CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節8CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節9CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		節10CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
     	}
 
     	private void 配色T0(BodyColorSet 体配色)

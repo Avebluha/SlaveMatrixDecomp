@@ -4,53 +4,53 @@ namespace SlaveMatrix
 {
     public class 上着トップ_ドレス : 上着トップ
     {
-    	public Par X0Y0_服基;
+    	public ShapePart X0Y0_服基;
 
-    	public Par X0Y0_紐_紐1_紐下_紐;
+    	public ShapePart X0Y0_紐_紐1_紐下_紐;
 
-    	public Par X0Y0_紐_紐1_紐上_紐;
+    	public ShapePart X0Y0_紐_紐1_紐上_紐;
 
-    	public Par X0Y0_紐_紐2_紐下_紐;
+    	public ShapePart X0Y0_紐_紐2_紐下_紐;
 
-    	public Par X0Y0_紐_紐2_紐上_紐;
+    	public ShapePart X0Y0_紐_紐2_紐上_紐;
 
-    	public Par X0Y0_紐_紐3_紐下_紐;
+    	public ShapePart X0Y0_紐_紐3_紐下_紐;
 
-    	public Par X0Y0_紐_紐3_紐上_紐;
+    	public ShapePart X0Y0_紐_紐3_紐上_紐;
 
-    	public Par X0Y0_紐_紐4_紐下_紐;
+    	public ShapePart X0Y0_紐_紐4_紐下_紐;
 
-    	public Par X0Y0_紐_紐4_紐上_紐;
+    	public ShapePart X0Y0_紐_紐4_紐上_紐;
 
-    	public Par X0Y0_紐_紐5_紐下_紐;
+    	public ShapePart X0Y0_紐_紐5_紐下_紐;
 
-    	public Par X0Y0_紐_紐5_紐上_紐;
+    	public ShapePart X0Y0_紐_紐5_紐上_紐;
 
-    	public Par X0Y0_紐_紐6_紐下_紐;
+    	public ShapePart X0Y0_紐_紐6_紐下_紐;
 
-    	public Par X0Y0_紐_紐6_紐上_紐;
+    	public ShapePart X0Y0_紐_紐6_紐上_紐;
 
-    	public Par X0Y0_左_服;
+    	public ShapePart X0Y0_左_服;
 
-    	public Par X0Y0_左_柄_柄1;
+    	public ShapePart X0Y0_左_柄_柄1;
 
-    	public Par X0Y0_左_柄_柄2;
+    	public ShapePart X0Y0_左_柄_柄2;
 
-    	public Par X0Y0_左_バスト;
+    	public ShapePart X0Y0_左_バスト;
 
-    	public Par X0Y0_左_縁;
+    	public ShapePart X0Y0_左_縁;
 
-    	public Par X0Y0_右_服;
+    	public ShapePart X0Y0_右_服;
 
-    	public Par X0Y0_右_柄_柄1;
+    	public ShapePart X0Y0_右_柄_柄1;
 
-    	public Par X0Y0_右_柄_柄2;
+    	public ShapePart X0Y0_右_柄_柄2;
 
-    	public Par X0Y0_右_バスト;
+    	public ShapePart X0Y0_右_バスト;
 
-    	public Par X0Y0_右_縁;
+    	public ShapePart X0Y0_右_縁;
 
-    	public ColorD 服基CD = new ColorD(ref Col.Empty, ref Color2.Empty);
+    	public ColorD 服基CD = new ColorD(ref ColorHelper.Empty, ref Color2.Empty);
 
     	public ColorD 紐_紐1_紐下_紐CD;
 
@@ -697,15 +697,15 @@ namespace SlaveMatrix
     	public 上着トップ_ドレス(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 上着トップ_ドレスD e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif(Sta.胴体["上着トップ"][2]);
-    		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		X0Y0_服基 = pars["服基"].ToPar();
-    		Pars pars2 = pars["紐"].ToPars();
-    		Pars pars3 = pars2["紐1"].ToPars();
-    		Pars pars4 = pars3["紐下"].ToPars();
+    		MorphVariant morphVariant = new MorphVariant(GlobalState.胴体["上着トップ"][2]);
+    		Body = new VariantGrid();
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_服基 = partGroup["服基"].ToPar();
+    		PartGroup pars2 = partGroup["紐"].ToPars();
+    		PartGroup pars3 = pars2["紐1"].ToPars();
+    		PartGroup pars4 = pars3["紐下"].ToPars();
     		X0Y0_紐_紐1_紐下_紐 = pars4["紐"].ToPar();
     		pars4 = pars3["紐上"].ToPars();
     		X0Y0_紐_紐1_紐上_紐 = pars4["紐"].ToPar();
@@ -734,14 +734,14 @@ namespace SlaveMatrix
     		X0Y0_紐_紐6_紐下_紐 = pars4["紐"].ToPar();
     		pars4 = pars3["紐上"].ToPars();
     		X0Y0_紐_紐6_紐上_紐 = pars4["紐"].ToPar();
-    		pars2 = pars["左"].ToPars();
+    		pars2 = partGroup["左"].ToPars();
     		X0Y0_左_服 = pars2["服"].ToPar();
     		pars3 = pars2["柄"].ToPars();
     		X0Y0_左_柄_柄1 = pars3["柄1"].ToPar();
     		X0Y0_左_柄_柄2 = pars3["柄2"].ToPar();
     		X0Y0_左_バスト = pars2["バスト"].ToPar();
     		X0Y0_左_縁 = pars2["縁"].ToPar();
-    		pars2 = pars["右"].ToPars();
+    		pars2 = partGroup["右"].ToPars();
     		X0Y0_右_服 = pars2["服"].ToPar();
     		pars3 = pars2["柄"].ToPars();
     		X0Y0_右_柄_柄1 = pars3["柄1"].ToPar();
@@ -844,7 +844,7 @@ namespace SlaveMatrix
     		Intensity = e.濃度;
     	}
 
-    	public override bool Is革(Par p)
+    	public override bool Is革(ShapePart p)
     	{
     		if (p != X0Y0_服基 && p != X0Y0_紐_紐1_紐下_紐 && p != X0Y0_紐_紐1_紐上_紐 && p != X0Y0_紐_紐2_紐下_紐 && p != X0Y0_紐_紐2_紐上_紐 && p != X0Y0_紐_紐3_紐下_紐 && p != X0Y0_紐_紐3_紐上_紐 && p != X0Y0_紐_紐4_紐下_紐 && p != X0Y0_紐_紐4_紐上_紐 && p != X0Y0_紐_紐5_紐下_紐 && p != X0Y0_紐_紐5_紐上_紐 && p != X0Y0_紐_紐6_紐下_紐 && p != X0Y0_紐_紐6_紐上_紐 && p != X0Y0_左_服 && p != X0Y0_左_柄_柄1 && p != X0Y0_左_柄_柄2 && p != X0Y0_左_バスト && p != X0Y0_左_縁 && p != X0Y0_右_服 && p != X0Y0_右_柄_柄1 && p != X0Y0_右_柄_柄2 && p != X0Y0_右_バスト)
     		{
@@ -914,7 +914,7 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		服基CD = new ColorD(ref Col.Empty, ref Color2.Empty);
+    		服基CD = new ColorD(ref ColorHelper.Empty, ref Color2.Empty);
     		紐_紐1_紐下_紐CD = new ColorD();
     		紐_紐1_紐上_紐CD = new ColorD();
     		紐_紐2_紐下_紐CD = new ColorD();

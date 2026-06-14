@@ -4,19 +4,19 @@ namespace SlaveMatrix
 {
     public class BackHair1_結2カル : サイド
     {
-    	public Par X0Y0_髪基;
+    	public ShapePart X0Y0_髪基;
 
-    	public Par X0Y0_お下げ左_髪左根;
+    	public ShapePart X0Y0_お下げ左_髪左根;
 
-    	public Par X0Y0_お下げ左_髪左1;
+    	public ShapePart X0Y0_お下げ左_髪左1;
 
-    	public Par X0Y0_お下げ左_髪左2;
+    	public ShapePart X0Y0_お下げ左_髪左2;
 
-    	public Par X0Y0_お下げ右_髪右根;
+    	public ShapePart X0Y0_お下げ右_髪右根;
 
-    	public Par X0Y0_お下げ右_髪右1;
+    	public ShapePart X0Y0_お下げ右_髪右1;
 
-    	public Par X0Y0_お下げ右_髪右2;
+    	public ShapePart X0Y0_お下げ右_髪右2;
 
     	public ColorD 髪基CD;
 
@@ -261,19 +261,19 @@ namespace SlaveMatrix
     	public BackHair1_結2カル(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, BackHair1_結2カルD e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif();
-    		dif.Tag = "結い2カル";
-    		dif.Add(new Pars(Sta.胴体["BackHair1"][0][7]));
-    		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		X0Y0_髪基 = pars["髪基"].ToPar();
-    		Pars pars2 = pars["お下げ左"].ToPars();
+    		MorphVariant morphVariant = new MorphVariant();
+    		morphVariant.Tag = "結い2カル";
+    		morphVariant.Add(new PartGroup(GlobalState.胴体["BackHair1"][0][7]));
+    		Body = new VariantGrid();
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_髪基 = partGroup["髪基"].ToPar();
+    		PartGroup pars2 = partGroup["お下げ左"].ToPars();
     		X0Y0_お下げ左_髪左根 = pars2["髪左根"].ToPar();
     		X0Y0_お下げ左_髪左1 = pars2["髪左1"].ToPar();
     		X0Y0_お下げ左_髪左2 = pars2["髪左2"].ToPar();
-    		pars2 = pars["お下げ右"].ToPars();
+    		pars2 = partGroup["お下げ右"].ToPars();
     		X0Y0_お下げ右_髪右根 = pars2["髪右根"].ToPar();
     		X0Y0_お下げ右_髪右1 = pars2["髪右1"].ToPar();
     		X0Y0_お下げ右_髪右2 = pars2["髪右2"].ToPar();
@@ -349,7 +349,7 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		髪基CD = new ColorD(ref Col.Empty, ref Color2.Empty);
+    		髪基CD = new ColorD(ref ColorHelper.Empty, ref Color2.Empty);
     		お下げ左_髪左根CD = new ColorD(ref 体配色.髪線, ref 体配色.髪O);
     		お下げ左_髪左1CD = new ColorD(ref 体配色.髪線, ref 体配色.髪O);
     		お下げ左_髪左2CD = new ColorD(ref 体配色.髪線, ref 体配色.髪O);

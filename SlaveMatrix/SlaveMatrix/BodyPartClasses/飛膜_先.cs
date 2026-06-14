@@ -3,11 +3,11 @@ using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
-    public class 飛膜_先 : Ele
+    public class 飛膜_先 : Element
     {
-    	public Par X0Y0_飛膜;
+    	public ShapePart X0Y0_飛膜;
 
-    	public Par X0Y1_飛膜;
+    	public ShapePart X0Y1_飛膜;
 
     	public ColorD 飛膜CD;
 
@@ -107,11 +107,11 @@ namespace SlaveMatrix
     	public 飛膜_先(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色)
     	{
     		ThisType = GetType();
-    		Body = new Difs(Sta.腕左["飛膜先"]);
-    		Pars pars = Body[0][0];
-    		X0Y0_飛膜 = pars["飛膜"].ToPar();
-    		pars = Body[0][1];
-    		X0Y1_飛膜 = pars["飛膜"].ToPar();
+    		Body = new VariantGrid(GlobalState.腕左["飛膜先"]);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_飛膜 = partGroup["飛膜"].ToPar();
+    		partGroup = Body[0][1];
+    		X0Y1_飛膜 = partGroup["飛膜"].ToPar();
     		Xasix = false;
     		Body.SetJoints();
     		接続根 = new JointD(Body);
@@ -402,7 +402,7 @@ namespace SlaveMatrix
     		double num2 = X0Y1_飛膜.GetOP()[4].ps[0].DistanceSquared(X0Y1_飛膜.GetOP()[19].ps[2]);
     		Vector2D v = X0Y1_飛膜.GetOP()[11].ps[2] - vector2D9;
     		Vector2D v2 = X0Y1_飛膜.ToLocal(手.X0Y0_人指_指2.GetPosition()) - vector2D8;
-    		double num3 = v.Angle02π(Dat.Vec2DUnitY);
+    		double num3 = v.Angle02π(DataConsts.Vec2DUnitY);
     		MatrixD transform = num3.RotationZ();
     		MatrixD transform2 = (v.Angle02π(v2) - num3).RotationZ();
     		Vector2D vector2D10 = vector2D8 - vector2D9;
@@ -428,7 +428,7 @@ namespace SlaveMatrix
     		num2 = X0Y1_飛膜.GetOP()[20].ps[0].DistanceSquared(X0Y1_飛膜.GetOP()[39].ps[2]);
     		Vector2D v3 = X0Y1_飛膜.GetOP()[29].ps[2] - vector2D9;
     		v2 = X0Y1_飛膜.ToLocal(手.X0Y0_中指_指2.GetPosition()) - vector2D8;
-    		num3 = v3.Angle02π(Dat.Vec2DUnitY);
+    		num3 = v3.Angle02π(DataConsts.Vec2DUnitY);
     		transform = num3.RotationZ();
     		transform2 = (v3.Angle02π(v2) - num3).RotationZ();
     		vector2D10 = vector2D8 - vector2D9;
@@ -536,7 +536,7 @@ namespace SlaveMatrix
     		double num2 = X0Y1_飛膜.GetOP()[38].ps[2].DistanceSquared(X0Y1_飛膜.GetOP()[23].ps[0]);
     		Vector2D v = X0Y1_飛膜.GetOP()[31].ps[0] - vector2D9;
     		Vector2D v2 = X0Y1_飛膜.ToLocal(手.X0Y0_人指_指2.GetPosition()) - vector2D8;
-    		double num3 = v.Angle02π(Dat.Vec2DUnitY);
+    		double num3 = v.Angle02π(DataConsts.Vec2DUnitY);
     		MatrixD transform = num3.RotationZ();
     		MatrixD transform2 = (v.Angle02π(v2) - num3).RotationZ();
     		Vector2D vector2D10 = vector2D8 - vector2D9;
@@ -562,7 +562,7 @@ namespace SlaveMatrix
     		num2 = X0Y1_飛膜.GetOP()[22].ps[2].DistanceSquared(X0Y1_飛膜.GetOP()[3].ps[0]);
     		Vector2D v3 = X0Y1_飛膜.GetOP()[13].ps[0] - vector2D9;
     		v2 = X0Y1_飛膜.ToLocal(手.X0Y0_中指_指2.GetPosition()) - vector2D8;
-    		num3 = v3.Angle02π(Dat.Vec2DUnitY);
+    		num3 = v3.Angle02π(DataConsts.Vec2DUnitY);
     		transform = num3.RotationZ();
     		transform2 = (v3.Angle02π(v2) - num3).RotationZ();
     		vector2D10 = vector2D8 - vector2D9;
@@ -637,17 +637,17 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		飛膜CD = new ColorD(ref Col.Black, ref 体配色.膜R);
+    		飛膜CD = new ColorD(ref ColorHelper.Black, ref 体配色.膜R);
     	}
 
     	private void 配色T0(BodyColorSet 体配色)
     	{
-    		飛膜CD = new ColorD(ref Col.Black, ref 体配色.刺青R);
+    		飛膜CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青R);
     	}
 
     	private void 配色T1(BodyColorSet 体配色)
     	{
-    		飛膜CD = new ColorD(ref Col.Black, ref 体配色.刺青R);
+    		飛膜CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青R);
     	}
     }
 }

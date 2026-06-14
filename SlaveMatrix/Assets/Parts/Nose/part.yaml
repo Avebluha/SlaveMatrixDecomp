@@ -1,0 +1,31 @@
+id: Nose
+original_key: 鼻
+resource: 胴体
+morph_x: 1
+morph_y: 2
+variants:
+- x: 0
+  y: 0
+  file: x0y0.svg
+- x: 0
+  y: 1
+  file: x0y1.svg
+fields:
+- name: 鼻
+joints:
+- position: [
+  0.025474607754010094,
+  0.02629677599987642
+]
+- position: [
+  0.02641547651749991,
+  0.02629677599987642
+]
+- position: [
+  0.026845977964465202,
+  0.027269898741448636
+]
+- position: [
+  0.027915654913375,
+  0.027269898741448636
+]

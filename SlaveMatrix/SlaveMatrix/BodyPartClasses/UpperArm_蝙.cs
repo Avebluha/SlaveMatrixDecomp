@@ -7,19 +7,19 @@ namespace SlaveMatrix
 {
     public class UpperArm_蝙 : 翼UpperArm
     {
-    	public Par X0Y0_獣翼UpperArm;
+    	public ShapePart X0Y0_獣翼UpperArm;
 
-    	public Par X0Y0_竜性_鱗1;
+    	public ShapePart X0Y0_竜性_鱗1;
 
-    	public Par X0Y0_竜性_鱗2;
+    	public ShapePart X0Y0_竜性_鱗2;
 
-    	public Par X0Y0_竜性_鱗3;
+    	public ShapePart X0Y0_竜性_鱗3;
 
-    	public Par X0Y0_竜性_鱗4;
+    	public ShapePart X0Y0_竜性_鱗4;
 
-    	public Par X0Y0_竜性_鱗5;
+    	public ShapePart X0Y0_竜性_鱗5;
 
-    	public Par X0Y0_竜性_鱗6;
+    	public ShapePart X0Y0_竜性_鱗6;
 
     	public 飛膜_根 飛膜;
 
@@ -514,10 +514,10 @@ namespace SlaveMatrix
     		飛膜 = new 飛膜_根(DisUnit, 配色指定, 体配色);
     		飛膜.Par = this;
     		ThisType = GetType();
-    		Body = new Difs(Sta.腕左["獣翼UpperArm"]);
-    		Pars pars = Body[0][0];
-    		X0Y0_獣翼UpperArm = pars["獣翼上腕"].ToPar();
-    		Pars pars2 = pars["鱗"].ToPars();
+    		Body = new VariantGrid(GlobalState.腕左["獣翼UpperArm"]);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_獣翼UpperArm = partGroup["獣翼上腕"].ToPar();
+    		PartGroup pars2 = partGroup["鱗"].ToPars();
     		X0Y0_竜性_鱗1 = pars2["鱗1"].ToPar();
     		X0Y0_竜性_鱗2 = pars2["鱗2"].ToPar();
     		X0Y0_竜性_鱗3 = pars2["鱗3"].ToPar();
@@ -569,8 +569,8 @@ namespace SlaveMatrix
     		}
     		if (e.LowerArm_接続.Count > 0)
     		{
-    			Ele f;
-    			LowerArm_接続 = e.LowerArm_接続.Select(delegate(EleD g)
+    			Element f;
+    			LowerArm_接続 = e.LowerArm_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = UpperArm_蝙2;
@@ -647,35 +647,35 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		獣翼UpperArmCD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		竜性_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_鱗5CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_鱗6CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		獣翼UpperArmCD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		竜性_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_鱗5CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_鱗6CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
     	}
 
     	private void 配色T0(BodyColorSet 体配色)
     	{
-    		獣翼UpperArmCD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		竜性_鱗1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		竜性_鱗2CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_鱗3CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		竜性_鱗4CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_鱗5CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		竜性_鱗6CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
+    		獣翼UpperArmCD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		竜性_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		竜性_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		竜性_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_鱗5CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		竜性_鱗6CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
     	}
 
     	private void 配色T1(BodyColorSet 体配色)
     	{
-    		獣翼UpperArmCD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		竜性_鱗1CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_鱗2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		竜性_鱗3CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_鱗4CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		竜性_鱗5CD = new ColorD(ref Col.Black, ref 体配色.鱗0O);
-    		竜性_鱗6CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		獣翼UpperArmCD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		竜性_鱗1CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_鱗2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		竜性_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		竜性_鱗5CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
+    		竜性_鱗6CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
     	}
     }
 }

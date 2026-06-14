@@ -7,289 +7,289 @@ namespace SlaveMatrix
 {
     public class 触手_蔦 : 触手
     {
-    	public Par X0Y0_節1_節;
+    	public ShapePart X0Y0_節1_節;
 
-    	public Par X0Y0_節1_棘1;
+    	public ShapePart X0Y0_節1_棘1;
 
-    	public Par X0Y0_節1_棘2;
+    	public ShapePart X0Y0_節1_棘2;
 
-    	public Par X0Y0_節1_脈;
+    	public ShapePart X0Y0_節1_脈;
 
-    	public Par X0Y0_節2_節;
+    	public ShapePart X0Y0_節2_節;
 
-    	public Par X0Y0_節2_棘1;
+    	public ShapePart X0Y0_節2_棘1;
 
-    	public Par X0Y0_節2_棘2;
+    	public ShapePart X0Y0_節2_棘2;
 
-    	public Par X0Y0_節2_脈;
+    	public ShapePart X0Y0_節2_脈;
 
-    	public Par X0Y0_節3_節;
+    	public ShapePart X0Y0_節3_節;
 
-    	public Par X0Y0_節3_棘1;
+    	public ShapePart X0Y0_節3_棘1;
 
-    	public Par X0Y0_節3_棘2;
+    	public ShapePart X0Y0_節3_棘2;
 
-    	public Par X0Y0_節3_脈;
+    	public ShapePart X0Y0_節3_脈;
 
-    	public Par X0Y0_節4_節;
+    	public ShapePart X0Y0_節4_節;
 
-    	public Par X0Y0_節4_棘1;
+    	public ShapePart X0Y0_節4_棘1;
 
-    	public Par X0Y0_節4_棘2;
+    	public ShapePart X0Y0_節4_棘2;
 
-    	public Par X0Y0_節4_脈;
+    	public ShapePart X0Y0_節4_脈;
 
-    	public Par X0Y0_節5_節;
+    	public ShapePart X0Y0_節5_節;
 
-    	public Par X0Y0_節5_棘1;
+    	public ShapePart X0Y0_節5_棘1;
 
-    	public Par X0Y0_節5_棘2;
+    	public ShapePart X0Y0_節5_棘2;
 
-    	public Par X0Y0_節5_脈;
+    	public ShapePart X0Y0_節5_脈;
 
-    	public Par X0Y0_節6_節;
+    	public ShapePart X0Y0_節6_節;
 
-    	public Par X0Y0_節6_棘1;
+    	public ShapePart X0Y0_節6_棘1;
 
-    	public Par X0Y0_節6_棘2;
+    	public ShapePart X0Y0_節6_棘2;
 
-    	public Par X0Y0_節6_脈;
+    	public ShapePart X0Y0_節6_脈;
 
-    	public Par X0Y0_節7_節;
+    	public ShapePart X0Y0_節7_節;
 
-    	public Par X0Y0_節7_棘1;
+    	public ShapePart X0Y0_節7_棘1;
 
-    	public Par X0Y0_節7_棘2;
+    	public ShapePart X0Y0_節7_棘2;
 
-    	public Par X0Y0_節7_脈;
+    	public ShapePart X0Y0_節7_脈;
 
-    	public Par X0Y0_節8_節;
+    	public ShapePart X0Y0_節8_節;
 
-    	public Par X0Y0_節8_棘1;
+    	public ShapePart X0Y0_節8_棘1;
 
-    	public Par X0Y0_節8_棘2;
+    	public ShapePart X0Y0_節8_棘2;
 
-    	public Par X0Y0_節8_脈;
+    	public ShapePart X0Y0_節8_脈;
 
-    	public Par X0Y0_節9_節;
+    	public ShapePart X0Y0_節9_節;
 
-    	public Par X0Y0_節9_棘1;
+    	public ShapePart X0Y0_節9_棘1;
 
-    	public Par X0Y0_節9_棘2;
+    	public ShapePart X0Y0_節9_棘2;
 
-    	public Par X0Y0_節9_脈;
+    	public ShapePart X0Y0_節9_脈;
 
-    	public Par X0Y0_節10_節;
+    	public ShapePart X0Y0_節10_節;
 
-    	public Par X0Y0_節10_棘1;
+    	public ShapePart X0Y0_節10_棘1;
 
-    	public Par X0Y0_節10_棘2;
+    	public ShapePart X0Y0_節10_棘2;
 
-    	public Par X0Y0_節10_脈;
+    	public ShapePart X0Y0_節10_脈;
 
-    	public Par X0Y0_節11_節;
+    	public ShapePart X0Y0_節11_節;
 
-    	public Par X0Y0_節11_棘1;
+    	public ShapePart X0Y0_節11_棘1;
 
-    	public Par X0Y0_節11_棘2;
+    	public ShapePart X0Y0_節11_棘2;
 
-    	public Par X0Y0_節11_脈;
+    	public ShapePart X0Y0_節11_脈;
 
-    	public Par X0Y0_節12_節;
+    	public ShapePart X0Y0_節12_節;
 
-    	public Par X0Y0_節12_棘1;
+    	public ShapePart X0Y0_節12_棘1;
 
-    	public Par X0Y0_節12_棘2;
+    	public ShapePart X0Y0_節12_棘2;
 
-    	public Par X0Y0_節12_脈;
+    	public ShapePart X0Y0_節12_脈;
 
-    	public Par X0Y0_輪1_革;
+    	public ShapePart X0Y0_輪1_革;
 
-    	public Par X0Y0_輪1_金具1;
+    	public ShapePart X0Y0_輪1_金具1;
 
-    	public Par X0Y0_輪1_金具2;
+    	public ShapePart X0Y0_輪1_金具2;
 
-    	public Par X0Y0_輪1_金具3;
+    	public ShapePart X0Y0_輪1_金具3;
 
-    	public Par X0Y0_輪1_金具左;
+    	public ShapePart X0Y0_輪1_金具左;
 
-    	public Par X0Y0_輪1_金具右;
+    	public ShapePart X0Y0_輪1_金具右;
 
-    	public Par X0Y0_節13_節;
+    	public ShapePart X0Y0_節13_節;
 
-    	public Par X0Y0_節13_棘1;
+    	public ShapePart X0Y0_節13_棘1;
 
-    	public Par X0Y0_節13_棘2;
+    	public ShapePart X0Y0_節13_棘2;
 
-    	public Par X0Y0_節13_脈;
+    	public ShapePart X0Y0_節13_脈;
 
-    	public Par X0Y0_節14_節;
+    	public ShapePart X0Y0_節14_節;
 
-    	public Par X0Y0_節14_棘1;
+    	public ShapePart X0Y0_節14_棘1;
 
-    	public Par X0Y0_節14_棘2;
+    	public ShapePart X0Y0_節14_棘2;
 
-    	public Par X0Y0_節14_脈;
+    	public ShapePart X0Y0_節14_脈;
 
-    	public Par X0Y0_節15_節;
+    	public ShapePart X0Y0_節15_節;
 
-    	public Par X0Y0_節15_棘1;
+    	public ShapePart X0Y0_節15_棘1;
 
-    	public Par X0Y0_節15_棘2;
+    	public ShapePart X0Y0_節15_棘2;
 
-    	public Par X0Y0_節15_脈;
+    	public ShapePart X0Y0_節15_脈;
 
-    	public Par X0Y0_節16_節;
+    	public ShapePart X0Y0_節16_節;
 
-    	public Par X0Y0_節16_棘1;
+    	public ShapePart X0Y0_節16_棘1;
 
-    	public Par X0Y0_節16_棘2;
+    	public ShapePart X0Y0_節16_棘2;
 
-    	public Par X0Y0_節16_脈;
+    	public ShapePart X0Y0_節16_脈;
 
-    	public Par X0Y0_節17_節;
+    	public ShapePart X0Y0_節17_節;
 
-    	public Par X0Y0_節17_棘1;
+    	public ShapePart X0Y0_節17_棘1;
 
-    	public Par X0Y0_節17_棘2;
+    	public ShapePart X0Y0_節17_棘2;
 
-    	public Par X0Y0_節17_脈;
+    	public ShapePart X0Y0_節17_脈;
 
-    	public Par X0Y0_節18_節;
+    	public ShapePart X0Y0_節18_節;
 
-    	public Par X0Y0_節18_棘1;
+    	public ShapePart X0Y0_節18_棘1;
 
-    	public Par X0Y0_節18_棘2;
+    	public ShapePart X0Y0_節18_棘2;
 
-    	public Par X0Y0_節18_脈;
+    	public ShapePart X0Y0_節18_脈;
 
-    	public Par X0Y0_節19_節;
+    	public ShapePart X0Y0_節19_節;
 
-    	public Par X0Y0_節19_棘1;
+    	public ShapePart X0Y0_節19_棘1;
 
-    	public Par X0Y0_節19_棘2;
+    	public ShapePart X0Y0_節19_棘2;
 
-    	public Par X0Y0_節19_脈;
+    	public ShapePart X0Y0_節19_脈;
 
-    	public Par X0Y0_節20_節;
+    	public ShapePart X0Y0_節20_節;
 
-    	public Par X0Y0_節20_棘1;
+    	public ShapePart X0Y0_節20_棘1;
 
-    	public Par X0Y0_節20_棘2;
+    	public ShapePart X0Y0_節20_棘2;
 
-    	public Par X0Y0_節20_脈;
+    	public ShapePart X0Y0_節20_脈;
 
-    	public Par X0Y0_節21_節;
+    	public ShapePart X0Y0_節21_節;
 
-    	public Par X0Y0_節21_棘1;
+    	public ShapePart X0Y0_節21_棘1;
 
-    	public Par X0Y0_節21_棘2;
+    	public ShapePart X0Y0_節21_棘2;
 
-    	public Par X0Y0_節21_脈;
+    	public ShapePart X0Y0_節21_脈;
 
-    	public Par X0Y0_節22_節;
+    	public ShapePart X0Y0_節22_節;
 
-    	public Par X0Y0_節22_棘1;
+    	public ShapePart X0Y0_節22_棘1;
 
-    	public Par X0Y0_節22_棘2;
+    	public ShapePart X0Y0_節22_棘2;
 
-    	public Par X0Y0_節22_脈;
+    	public ShapePart X0Y0_節22_脈;
 
-    	public Par X0Y0_輪2_革;
+    	public ShapePart X0Y0_輪2_革;
 
-    	public Par X0Y0_輪2_金具1;
+    	public ShapePart X0Y0_輪2_金具1;
 
-    	public Par X0Y0_輪2_金具2;
+    	public ShapePart X0Y0_輪2_金具2;
 
-    	public Par X0Y0_輪2_金具3;
+    	public ShapePart X0Y0_輪2_金具3;
 
-    	public Par X0Y0_輪2_金具左;
+    	public ShapePart X0Y0_輪2_金具左;
 
-    	public Par X0Y0_輪2_金具右;
+    	public ShapePart X0Y0_輪2_金具右;
 
-    	public Par X0Y0_節23_節;
+    	public ShapePart X0Y0_節23_節;
 
-    	public Par X0Y0_節23_棘1;
+    	public ShapePart X0Y0_節23_棘1;
 
-    	public Par X0Y0_節23_棘2;
+    	public ShapePart X0Y0_節23_棘2;
 
-    	public Par X0Y0_節23_脈;
+    	public ShapePart X0Y0_節23_脈;
 
-    	public Par X0Y0_節24_節;
+    	public ShapePart X0Y0_節24_節;
 
-    	public Par X0Y0_節24_棘1;
+    	public ShapePart X0Y0_節24_棘1;
 
-    	public Par X0Y0_節24_棘2;
+    	public ShapePart X0Y0_節24_棘2;
 
-    	public Par X0Y0_節24_脈;
+    	public ShapePart X0Y0_節24_脈;
 
-    	public Par X0Y0_先端_下顎_顎;
+    	public ShapePart X0Y0_先端_下顎_顎;
 
-    	public Par X0Y0_先端_下顎_口内;
+    	public ShapePart X0Y0_先端_下顎_口内;
 
-    	public Par X0Y0_先端_下顎_棘12;
+    	public ShapePart X0Y0_先端_下顎_棘12;
 
-    	public Par X0Y0_先端_下顎_棘11;
+    	public ShapePart X0Y0_先端_下顎_棘11;
 
-    	public Par X0Y0_先端_下顎_棘10;
+    	public ShapePart X0Y0_先端_下顎_棘10;
 
-    	public Par X0Y0_先端_下顎_棘9;
+    	public ShapePart X0Y0_先端_下顎_棘9;
 
-    	public Par X0Y0_先端_下顎_棘8;
+    	public ShapePart X0Y0_先端_下顎_棘8;
 
-    	public Par X0Y0_先端_下顎_棘7;
+    	public ShapePart X0Y0_先端_下顎_棘7;
 
-    	public Par X0Y0_先端_下顎_脈1;
+    	public ShapePart X0Y0_先端_下顎_脈1;
 
-    	public Par X0Y0_先端_下顎_脈2;
+    	public ShapePart X0Y0_先端_下顎_脈2;
 
-    	public Par X0Y0_先端_下顎_脈3;
+    	public ShapePart X0Y0_先端_下顎_脈3;
 
-    	public Par X0Y0_先端_下顎_棘6;
+    	public ShapePart X0Y0_先端_下顎_棘6;
 
-    	public Par X0Y0_先端_下顎_棘5;
+    	public ShapePart X0Y0_先端_下顎_棘5;
 
-    	public Par X0Y0_先端_下顎_棘4;
+    	public ShapePart X0Y0_先端_下顎_棘4;
 
-    	public Par X0Y0_先端_下顎_棘3;
+    	public ShapePart X0Y0_先端_下顎_棘3;
 
-    	public Par X0Y0_先端_下顎_棘2;
+    	public ShapePart X0Y0_先端_下顎_棘2;
 
-    	public Par X0Y0_先端_下顎_棘1;
+    	public ShapePart X0Y0_先端_下顎_棘1;
 
-    	public Par X0Y0_先端_上顎_棘12;
+    	public ShapePart X0Y0_先端_上顎_棘12;
 
-    	public Par X0Y0_先端_上顎_棘11;
+    	public ShapePart X0Y0_先端_上顎_棘11;
 
-    	public Par X0Y0_先端_上顎_棘10;
+    	public ShapePart X0Y0_先端_上顎_棘10;
 
-    	public Par X0Y0_先端_上顎_棘9;
+    	public ShapePart X0Y0_先端_上顎_棘9;
 
-    	public Par X0Y0_先端_上顎_棘8;
+    	public ShapePart X0Y0_先端_上顎_棘8;
 
-    	public Par X0Y0_先端_上顎_棘7;
+    	public ShapePart X0Y0_先端_上顎_棘7;
 
-    	public Par X0Y0_先端_上顎_顎;
+    	public ShapePart X0Y0_先端_上顎_顎;
 
-    	public Par X0Y0_先端_上顎_脈1;
+    	public ShapePart X0Y0_先端_上顎_脈1;
 
-    	public Par X0Y0_先端_上顎_脈2;
+    	public ShapePart X0Y0_先端_上顎_脈2;
 
-    	public Par X0Y0_先端_上顎_脈3;
+    	public ShapePart X0Y0_先端_上顎_脈3;
 
-    	public Par X0Y0_先端_上顎_脈4;
+    	public ShapePart X0Y0_先端_上顎_脈4;
 
-    	public Par X0Y0_先端_輪_革;
+    	public ShapePart X0Y0_先端_輪_革;
 
-    	public Par X0Y0_先端_輪_金具1;
+    	public ShapePart X0Y0_先端_輪_金具1;
 
-    	public Par X0Y0_先端_輪_金具2;
+    	public ShapePart X0Y0_先端_輪_金具2;
 
-    	public Par X0Y0_先端_輪_金具3;
+    	public ShapePart X0Y0_先端_輪_金具3;
 
-    	public Par X0Y0_先端_輪_金具左;
+    	public ShapePart X0Y0_先端_輪_金具左;
 
-    	public Par X0Y0_先端_輪_金具右;
+    	public ShapePart X0Y0_先端_輪_金具右;
 
     	public ColorD 節1_節CD;
 
@@ -867,57 +867,57 @@ namespace SlaveMatrix
 
     	public 拘束鎖 鎖4;
 
-    	public Ele[] 節1_接続;
+    	public Element[] 節1_接続;
 
-    	public Ele[] 節2_接続;
+    	public Element[] 節2_接続;
 
-    	public Ele[] 節3_接続;
+    	public Element[] 節3_接続;
 
-    	public Ele[] 節4_接続;
+    	public Element[] 節4_接続;
 
-    	public Ele[] 節5_接続;
+    	public Element[] 節5_接続;
 
-    	public Ele[] 節6_接続;
+    	public Element[] 節6_接続;
 
-    	public Ele[] 節7_接続;
+    	public Element[] 節7_接続;
 
-    	public Ele[] 節8_接続;
+    	public Element[] 節8_接続;
 
-    	public Ele[] 節9_接続;
+    	public Element[] 節9_接続;
 
-    	public Ele[] 節10_接続;
+    	public Element[] 節10_接続;
 
-    	public Ele[] 節11_接続;
+    	public Element[] 節11_接続;
 
-    	public Ele[] 節12_接続;
+    	public Element[] 節12_接続;
 
-    	public Ele[] 節13_接続;
+    	public Element[] 節13_接続;
 
-    	public Ele[] 節14_接続;
+    	public Element[] 節14_接続;
 
-    	public Ele[] 節15_接続;
+    	public Element[] 節15_接続;
 
-    	public Ele[] 節16_接続;
+    	public Element[] 節16_接続;
 
-    	public Ele[] 節17_接続;
+    	public Element[] 節17_接続;
 
-    	public Ele[] 節18_接続;
+    	public Element[] 節18_接続;
 
-    	public Ele[] 節19_接続;
+    	public Element[] 節19_接続;
 
-    	public Ele[] 節20_接続;
+    	public Element[] 節20_接続;
 
-    	public Ele[] 節21_接続;
+    	public Element[] 節21_接続;
 
-    	public Ele[] 節22_接続;
+    	public Element[] 節22_接続;
 
-    	public Ele[] 節23_接続;
+    	public Element[] 節23_接続;
 
-    	public Ele[] 節24_接続;
+    	public Element[] 節24_接続;
 
-    	public Ele[] 先端_接続;
+    	public Element[] 先端_接続;
 
-    	public Par[] Pars;
+    	public ShapePart[] Pars;
 
     	private Vector2D[] mm;
 
@@ -3284,149 +3284,149 @@ namespace SlaveMatrix
     	{
     		触手_蔦 触手_蔦2 = this;
     		ThisType = GetType();
-    		Dif dif = new Dif();
-    		dif.Tag = "蔦";
-    		dif.Add(new Pars(Sta.肢左["触手"][0][3]));
-    		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		Pars pars2 = pars["節1"].ToPars();
+    		MorphVariant morphVariant = new MorphVariant();
+    		morphVariant.Tag = "蔦";
+    		morphVariant.Add(new PartGroup(GlobalState.肢左["触手"][0][3]));
+    		Body = new VariantGrid();
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
+    		PartGroup partGroup = Body[0][0];
+    		PartGroup pars2 = partGroup["節1"].ToPars();
     		X0Y0_節1_節 = pars2["節"].ToPar();
     		X0Y0_節1_棘1 = pars2["棘1"].ToPar();
     		X0Y0_節1_棘2 = pars2["棘2"].ToPar();
     		X0Y0_節1_脈 = pars2["脈"].ToPar();
-    		pars2 = pars["節2"].ToPars();
+    		pars2 = partGroup["節2"].ToPars();
     		X0Y0_節2_節 = pars2["節"].ToPar();
     		X0Y0_節2_棘1 = pars2["棘1"].ToPar();
     		X0Y0_節2_棘2 = pars2["棘2"].ToPar();
     		X0Y0_節2_脈 = pars2["脈"].ToPar();
-    		pars2 = pars["節3"].ToPars();
+    		pars2 = partGroup["節3"].ToPars();
     		X0Y0_節3_節 = pars2["節"].ToPar();
     		X0Y0_節3_棘1 = pars2["棘1"].ToPar();
     		X0Y0_節3_棘2 = pars2["棘2"].ToPar();
     		X0Y0_節3_脈 = pars2["脈"].ToPar();
-    		pars2 = pars["節4"].ToPars();
+    		pars2 = partGroup["節4"].ToPars();
     		X0Y0_節4_節 = pars2["節"].ToPar();
     		X0Y0_節4_棘1 = pars2["棘1"].ToPar();
     		X0Y0_節4_棘2 = pars2["棘2"].ToPar();
     		X0Y0_節4_脈 = pars2["脈"].ToPar();
-    		pars2 = pars["節5"].ToPars();
+    		pars2 = partGroup["節5"].ToPars();
     		X0Y0_節5_節 = pars2["節"].ToPar();
     		X0Y0_節5_棘1 = pars2["棘1"].ToPar();
     		X0Y0_節5_棘2 = pars2["棘2"].ToPar();
     		X0Y0_節5_脈 = pars2["脈"].ToPar();
-    		pars2 = pars["節6"].ToPars();
+    		pars2 = partGroup["節6"].ToPars();
     		X0Y0_節6_節 = pars2["節"].ToPar();
     		X0Y0_節6_棘1 = pars2["棘1"].ToPar();
     		X0Y0_節6_棘2 = pars2["棘2"].ToPar();
     		X0Y0_節6_脈 = pars2["脈"].ToPar();
-    		pars2 = pars["節7"].ToPars();
+    		pars2 = partGroup["節7"].ToPars();
     		X0Y0_節7_節 = pars2["節"].ToPar();
     		X0Y0_節7_棘1 = pars2["棘1"].ToPar();
     		X0Y0_節7_棘2 = pars2["棘2"].ToPar();
     		X0Y0_節7_脈 = pars2["脈"].ToPar();
-    		pars2 = pars["節8"].ToPars();
+    		pars2 = partGroup["節8"].ToPars();
     		X0Y0_節8_節 = pars2["節"].ToPar();
     		X0Y0_節8_棘1 = pars2["棘1"].ToPar();
     		X0Y0_節8_棘2 = pars2["棘2"].ToPar();
     		X0Y0_節8_脈 = pars2["脈"].ToPar();
-    		pars2 = pars["節9"].ToPars();
+    		pars2 = partGroup["節9"].ToPars();
     		X0Y0_節9_節 = pars2["節"].ToPar();
     		X0Y0_節9_棘1 = pars2["棘1"].ToPar();
     		X0Y0_節9_棘2 = pars2["棘2"].ToPar();
     		X0Y0_節9_脈 = pars2["脈"].ToPar();
-    		pars2 = pars["節10"].ToPars();
+    		pars2 = partGroup["節10"].ToPars();
     		X0Y0_節10_節 = pars2["節"].ToPar();
     		X0Y0_節10_棘1 = pars2["棘1"].ToPar();
     		X0Y0_節10_棘2 = pars2["棘2"].ToPar();
     		X0Y0_節10_脈 = pars2["脈"].ToPar();
-    		pars2 = pars["節11"].ToPars();
+    		pars2 = partGroup["節11"].ToPars();
     		X0Y0_節11_節 = pars2["節"].ToPar();
     		X0Y0_節11_棘1 = pars2["棘1"].ToPar();
     		X0Y0_節11_棘2 = pars2["棘2"].ToPar();
     		X0Y0_節11_脈 = pars2["脈"].ToPar();
-    		pars2 = pars["節12"].ToPars();
+    		pars2 = partGroup["節12"].ToPars();
     		X0Y0_節12_節 = pars2["節"].ToPar();
     		X0Y0_節12_棘1 = pars2["棘1"].ToPar();
     		X0Y0_節12_棘2 = pars2["棘2"].ToPar();
     		X0Y0_節12_脈 = pars2["脈"].ToPar();
-    		pars2 = pars["節13"].ToPars();
+    		pars2 = partGroup["節13"].ToPars();
     		X0Y0_節13_節 = pars2["節"].ToPar();
     		X0Y0_節13_棘1 = pars2["棘1"].ToPar();
     		X0Y0_節13_棘2 = pars2["棘2"].ToPar();
     		X0Y0_節13_脈 = pars2["脈"].ToPar();
-    		pars2 = pars["輪1"].ToPars();
+    		pars2 = partGroup["輪1"].ToPars();
     		X0Y0_輪1_革 = pars2["革"].ToPar();
     		X0Y0_輪1_金具1 = pars2["金具1"].ToPar();
     		X0Y0_輪1_金具2 = pars2["金具2"].ToPar();
     		X0Y0_輪1_金具3 = pars2["金具3"].ToPar();
     		X0Y0_輪1_金具左 = pars2["金具左"].ToPar();
     		X0Y0_輪1_金具右 = pars2["金具右"].ToPar();
-    		pars2 = pars["節14"].ToPars();
+    		pars2 = partGroup["節14"].ToPars();
     		X0Y0_節14_節 = pars2["節"].ToPar();
     		X0Y0_節14_棘1 = pars2["棘1"].ToPar();
     		X0Y0_節14_棘2 = pars2["棘2"].ToPar();
     		X0Y0_節14_脈 = pars2["脈"].ToPar();
-    		pars2 = pars["節15"].ToPars();
+    		pars2 = partGroup["節15"].ToPars();
     		X0Y0_節15_節 = pars2["節"].ToPar();
     		X0Y0_節15_棘1 = pars2["棘1"].ToPar();
     		X0Y0_節15_棘2 = pars2["棘2"].ToPar();
     		X0Y0_節15_脈 = pars2["脈"].ToPar();
-    		pars2 = pars["節16"].ToPars();
+    		pars2 = partGroup["節16"].ToPars();
     		X0Y0_節16_節 = pars2["節"].ToPar();
     		X0Y0_節16_棘1 = pars2["棘1"].ToPar();
     		X0Y0_節16_棘2 = pars2["棘2"].ToPar();
     		X0Y0_節16_脈 = pars2["脈"].ToPar();
-    		pars2 = pars["節17"].ToPars();
+    		pars2 = partGroup["節17"].ToPars();
     		X0Y0_節17_節 = pars2["節"].ToPar();
     		X0Y0_節17_棘1 = pars2["棘1"].ToPar();
     		X0Y0_節17_棘2 = pars2["棘2"].ToPar();
     		X0Y0_節17_脈 = pars2["脈"].ToPar();
-    		pars2 = pars["節18"].ToPars();
+    		pars2 = partGroup["節18"].ToPars();
     		X0Y0_節18_節 = pars2["節"].ToPar();
     		X0Y0_節18_棘1 = pars2["棘1"].ToPar();
     		X0Y0_節18_棘2 = pars2["棘2"].ToPar();
     		X0Y0_節18_脈 = pars2["脈"].ToPar();
-    		pars2 = pars["節19"].ToPars();
+    		pars2 = partGroup["節19"].ToPars();
     		X0Y0_節19_節 = pars2["節"].ToPar();
     		X0Y0_節19_棘1 = pars2["棘1"].ToPar();
     		X0Y0_節19_棘2 = pars2["棘2"].ToPar();
     		X0Y0_節19_脈 = pars2["脈"].ToPar();
-    		pars2 = pars["節20"].ToPars();
+    		pars2 = partGroup["節20"].ToPars();
     		X0Y0_節20_節 = pars2["節"].ToPar();
     		X0Y0_節20_棘1 = pars2["棘1"].ToPar();
     		X0Y0_節20_棘2 = pars2["棘2"].ToPar();
     		X0Y0_節20_脈 = pars2["脈"].ToPar();
-    		pars2 = pars["節21"].ToPars();
+    		pars2 = partGroup["節21"].ToPars();
     		X0Y0_節21_節 = pars2["節"].ToPar();
     		X0Y0_節21_棘1 = pars2["棘1"].ToPar();
     		X0Y0_節21_棘2 = pars2["棘2"].ToPar();
     		X0Y0_節21_脈 = pars2["脈"].ToPar();
-    		pars2 = pars["節22"].ToPars();
+    		pars2 = partGroup["節22"].ToPars();
     		X0Y0_節22_節 = pars2["節"].ToPar();
     		X0Y0_節22_棘1 = pars2["棘1"].ToPar();
     		X0Y0_節22_棘2 = pars2["棘2"].ToPar();
     		X0Y0_節22_脈 = pars2["脈"].ToPar();
-    		pars2 = pars["節23"].ToPars();
+    		pars2 = partGroup["節23"].ToPars();
     		X0Y0_節23_節 = pars2["節"].ToPar();
     		X0Y0_節23_棘1 = pars2["棘1"].ToPar();
     		X0Y0_節23_棘2 = pars2["棘2"].ToPar();
     		X0Y0_節23_脈 = pars2["脈"].ToPar();
-    		pars2 = pars["節24"].ToPars();
+    		pars2 = partGroup["節24"].ToPars();
     		X0Y0_節24_節 = pars2["節"].ToPar();
     		X0Y0_節24_棘1 = pars2["棘1"].ToPar();
     		X0Y0_節24_棘2 = pars2["棘2"].ToPar();
     		X0Y0_節24_脈 = pars2["脈"].ToPar();
-    		pars2 = pars["輪2"].ToPars();
+    		pars2 = partGroup["輪2"].ToPars();
     		X0Y0_輪2_革 = pars2["革"].ToPar();
     		X0Y0_輪2_金具1 = pars2["金具1"].ToPar();
     		X0Y0_輪2_金具2 = pars2["金具2"].ToPar();
     		X0Y0_輪2_金具3 = pars2["金具3"].ToPar();
     		X0Y0_輪2_金具左 = pars2["金具左"].ToPar();
     		X0Y0_輪2_金具右 = pars2["金具右"].ToPar();
-    		pars2 = pars["先端"].ToPars();
-    		Pars pars3 = pars2["下顎"].ToPars();
+    		pars2 = partGroup["先端"].ToPars();
+    		PartGroup pars3 = pars2["下顎"].ToPars();
     		X0Y0_先端_下顎_顎 = pars3["顎"].ToPar();
     		X0Y0_先端_下顎_口内 = pars3["口内"].ToPar();
     		X0Y0_先端_下顎_棘12 = pars3["棘12"].ToPar();
@@ -3641,10 +3641,10 @@ namespace SlaveMatrix
     		{
     			表示 = false;
     		}
-    		Ele f;
+    		Element f;
     		if (e.節1_接続.Count > 0)
     		{
-    			節1_接続 = e.節1_接続.Select(delegate(EleD g)
+    			節1_接続 = e.節1_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 触手_蔦2;
@@ -3655,7 +3655,7 @@ namespace SlaveMatrix
     		}
     		if (e.節2_接続.Count > 0)
     		{
-    			節2_接続 = e.節2_接続.Select(delegate(EleD g)
+    			節2_接続 = e.節2_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 触手_蔦2;
@@ -3666,7 +3666,7 @@ namespace SlaveMatrix
     		}
     		if (e.節3_接続.Count > 0)
     		{
-    			節3_接続 = e.節3_接続.Select(delegate(EleD g)
+    			節3_接続 = e.節3_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 触手_蔦2;
@@ -3677,7 +3677,7 @@ namespace SlaveMatrix
     		}
     		if (e.節4_接続.Count > 0)
     		{
-    			節4_接続 = e.節4_接続.Select(delegate(EleD g)
+    			節4_接続 = e.節4_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 触手_蔦2;
@@ -3688,7 +3688,7 @@ namespace SlaveMatrix
     		}
     		if (e.節5_接続.Count > 0)
     		{
-    			節5_接続 = e.節5_接続.Select(delegate(EleD g)
+    			節5_接続 = e.節5_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 触手_蔦2;
@@ -3699,7 +3699,7 @@ namespace SlaveMatrix
     		}
     		if (e.節6_接続.Count > 0)
     		{
-    			節6_接続 = e.節6_接続.Select(delegate(EleD g)
+    			節6_接続 = e.節6_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 触手_蔦2;
@@ -3710,7 +3710,7 @@ namespace SlaveMatrix
     		}
     		if (e.節7_接続.Count > 0)
     		{
-    			節7_接続 = e.節7_接続.Select(delegate(EleD g)
+    			節7_接続 = e.節7_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 触手_蔦2;
@@ -3721,7 +3721,7 @@ namespace SlaveMatrix
     		}
     		if (e.節8_接続.Count > 0)
     		{
-    			節8_接続 = e.節8_接続.Select(delegate(EleD g)
+    			節8_接続 = e.節8_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 触手_蔦2;
@@ -3732,7 +3732,7 @@ namespace SlaveMatrix
     		}
     		if (e.節9_接続.Count > 0)
     		{
-    			節9_接続 = e.節9_接続.Select(delegate(EleD g)
+    			節9_接続 = e.節9_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 触手_蔦2;
@@ -3743,7 +3743,7 @@ namespace SlaveMatrix
     		}
     		if (e.節10_接続.Count > 0)
     		{
-    			節10_接続 = e.節10_接続.Select(delegate(EleD g)
+    			節10_接続 = e.節10_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 触手_蔦2;
@@ -3754,7 +3754,7 @@ namespace SlaveMatrix
     		}
     		if (e.節11_接続.Count > 0)
     		{
-    			節11_接続 = e.節11_接続.Select(delegate(EleD g)
+    			節11_接続 = e.節11_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 触手_蔦2;
@@ -3765,7 +3765,7 @@ namespace SlaveMatrix
     		}
     		if (e.節12_接続.Count > 0)
     		{
-    			節12_接続 = e.節12_接続.Select(delegate(EleD g)
+    			節12_接続 = e.節12_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 触手_蔦2;
@@ -3776,7 +3776,7 @@ namespace SlaveMatrix
     		}
     		if (e.節13_接続.Count > 0)
     		{
-    			節13_接続 = e.節13_接続.Select(delegate(EleD g)
+    			節13_接続 = e.節13_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 触手_蔦2;
@@ -3787,7 +3787,7 @@ namespace SlaveMatrix
     		}
     		if (e.節14_接続.Count > 0)
     		{
-    			節14_接続 = e.節14_接続.Select(delegate(EleD g)
+    			節14_接続 = e.節14_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 触手_蔦2;
@@ -3798,7 +3798,7 @@ namespace SlaveMatrix
     		}
     		if (e.節15_接続.Count > 0)
     		{
-    			節15_接続 = e.節15_接続.Select(delegate(EleD g)
+    			節15_接続 = e.節15_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 触手_蔦2;
@@ -3809,7 +3809,7 @@ namespace SlaveMatrix
     		}
     		if (e.節16_接続.Count > 0)
     		{
-    			節16_接続 = e.節16_接続.Select(delegate(EleD g)
+    			節16_接続 = e.節16_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 触手_蔦2;
@@ -3820,7 +3820,7 @@ namespace SlaveMatrix
     		}
     		if (e.節17_接続.Count > 0)
     		{
-    			節17_接続 = e.節17_接続.Select(delegate(EleD g)
+    			節17_接続 = e.節17_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 触手_蔦2;
@@ -3831,7 +3831,7 @@ namespace SlaveMatrix
     		}
     		if (e.節18_接続.Count > 0)
     		{
-    			節18_接続 = e.節18_接続.Select(delegate(EleD g)
+    			節18_接続 = e.節18_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 触手_蔦2;
@@ -3842,7 +3842,7 @@ namespace SlaveMatrix
     		}
     		if (e.節19_接続.Count > 0)
     		{
-    			節19_接続 = e.節19_接続.Select(delegate(EleD g)
+    			節19_接続 = e.節19_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 触手_蔦2;
@@ -3853,7 +3853,7 @@ namespace SlaveMatrix
     		}
     		if (e.節20_接続.Count > 0)
     		{
-    			節20_接続 = e.節20_接続.Select(delegate(EleD g)
+    			節20_接続 = e.節20_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 触手_蔦2;
@@ -3864,7 +3864,7 @@ namespace SlaveMatrix
     		}
     		if (e.節21_接続.Count > 0)
     		{
-    			節21_接続 = e.節21_接続.Select(delegate(EleD g)
+    			節21_接続 = e.節21_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 触手_蔦2;
@@ -3875,7 +3875,7 @@ namespace SlaveMatrix
     		}
     		if (e.節22_接続.Count > 0)
     		{
-    			節22_接続 = e.節22_接続.Select(delegate(EleD g)
+    			節22_接続 = e.節22_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 触手_蔦2;
@@ -3886,7 +3886,7 @@ namespace SlaveMatrix
     		}
     		if (e.節23_接続.Count > 0)
     		{
-    			節23_接続 = e.節23_接続.Select(delegate(EleD g)
+    			節23_接続 = e.節23_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 触手_蔦2;
@@ -3897,7 +3897,7 @@ namespace SlaveMatrix
     		}
     		if (e.節24_接続.Count > 0)
     		{
-    			節24_接続 = e.節24_接続.Select(delegate(EleD g)
+    			節24_接続 = e.節24_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 触手_蔦2;
@@ -3908,7 +3908,7 @@ namespace SlaveMatrix
     		}
     		if (e.先端_接続.Count > 0)
     		{
-    			先端_接続 = e.先端_接続.Select(delegate(EleD g)
+    			先端_接続 = e.先端_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 触手_蔦2;
@@ -3919,7 +3919,7 @@ namespace SlaveMatrix
     		}
     		base.配色指定 = 配色指定;
     		配色(体配色);
-    		Pars = new Par[26]
+    		Pars = new ShapePart[26]
     		{
     			X0Y0_節1_節, X0Y0_節2_節, X0Y0_節3_節, X0Y0_節4_節, X0Y0_節5_節, X0Y0_節6_節, X0Y0_節7_節, X0Y0_節8_節, X0Y0_節9_節, X0Y0_節10_節,
     			X0Y0_節11_節, X0Y0_節12_節, X0Y0_節13_節, X0Y0_節14_節, X0Y0_節15_節, X0Y0_節16_節, X0Y0_節17_節, X0Y0_節18_節, X0Y0_節19_節, X0Y0_節20_節,
@@ -4273,7 +4273,7 @@ namespace SlaveMatrix
     		X0Y0_節22_節.SetAngleBase(maxAngle.GetRanAngle());
     		X0Y0_節23_節.SetAngleBase(maxAngle.GetRanAngle());
     		X0Y0_節24_節.SetAngleBase(maxAngle.GetRanAngle());
-    		X0Y0_先端_上顎_顎.SetAngleBase(num * (double)RNG.XS.NextM(15));
+    		X0Y0_先端_上顎_顎.SetAngleBase(num * (double)Rng.XS.NextM(15));
     		X0Y0_先端_下顎_顎.SetAngleBase(num * (0.0 - X0Y0_先端_上顎_顎.GetAngleBase()));
     		Body.JoinPAall();
     	}
@@ -4310,7 +4310,7 @@ namespace SlaveMatrix
     		Body.JoinPAall();
     	}
 
-    	public override bool Is革(Par p)
+    	public override bool Is革(ShapePart p)
     	{
     		if (p != X0Y0_輪1_革 && p != X0Y0_輪1_金具1 && p != X0Y0_輪1_金具2 && p != X0Y0_輪1_金具3 && p != X0Y0_輪1_金具左 && p != X0Y0_輪1_金具右 && p != X0Y0_輪2_革 && p != X0Y0_輪2_金具1 && p != X0Y0_輪2_金具2 && p != X0Y0_輪2_金具3 && p != X0Y0_輪2_金具左 && p != X0Y0_輪2_金具右 && p != X0Y0_先端_輪_革 && p != X0Y0_先端_輪_金具1 && p != X0Y0_先端_輪_金具2 && p != X0Y0_先端_輪_金具3 && p != X0Y0_先端_輪_金具左)
     		{
@@ -4319,7 +4319,7 @@ namespace SlaveMatrix
     		return true;
     	}
 
-    	public override IEnumerable<Par> Enum軸()
+    	public override IEnumerable<ShapePart> Enum軸()
     	{
     		yield return X0Y0_節1_節;
     		yield return X0Y0_節2_節;
@@ -4523,130 +4523,130 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		節1_節CD = new ColorD(ref Col.Black, ref 体配色.植0O);
-    		節1_棘1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節1_棘2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節1_脈CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節2_節CD = new ColorD(ref Col.Black, ref 体配色.植0O);
-    		節2_棘1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節2_棘2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節2_脈CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節3_節CD = new ColorD(ref Col.Black, ref 体配色.植0O);
-    		節3_棘1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節3_棘2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節3_脈CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節4_節CD = new ColorD(ref Col.Black, ref 体配色.植0O);
-    		節4_棘1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節4_棘2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節4_脈CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節5_節CD = new ColorD(ref Col.Black, ref 体配色.植0O);
-    		節5_棘1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節5_棘2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節5_脈CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節6_節CD = new ColorD(ref Col.Black, ref 体配色.植0O);
-    		節6_棘1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節6_棘2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節6_脈CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節7_節CD = new ColorD(ref Col.Black, ref 体配色.植0O);
-    		節7_棘1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節7_棘2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節7_脈CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節8_節CD = new ColorD(ref Col.Black, ref 体配色.植0O);
-    		節8_棘1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節8_棘2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節8_脈CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節9_節CD = new ColorD(ref Col.Black, ref 体配色.植0O);
-    		節9_棘1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節9_棘2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節9_脈CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節10_節CD = new ColorD(ref Col.Black, ref 体配色.植0O);
-    		節10_棘1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節10_棘2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節10_脈CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節11_節CD = new ColorD(ref Col.Black, ref 体配色.植0O);
-    		節11_棘1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節11_棘2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節11_脈CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節12_節CD = new ColorD(ref Col.Black, ref 体配色.植0O);
-    		節12_棘1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節12_棘2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節12_脈CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節13_節CD = new ColorD(ref Col.Black, ref 体配色.植0O);
-    		節13_棘1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節13_棘2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節13_脈CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節14_節CD = new ColorD(ref Col.Black, ref 体配色.植0O);
-    		節14_棘1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節14_棘2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節14_脈CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節15_節CD = new ColorD(ref Col.Black, ref 体配色.植0O);
-    		節15_棘1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節15_棘2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節15_脈CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節16_節CD = new ColorD(ref Col.Black, ref 体配色.植0O);
-    		節16_棘1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節16_棘2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節16_脈CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節17_節CD = new ColorD(ref Col.Black, ref 体配色.植0O);
-    		節17_棘1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節17_棘2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節17_脈CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節18_節CD = new ColorD(ref Col.Black, ref 体配色.植0O);
-    		節18_棘1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節18_棘2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節18_脈CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節19_節CD = new ColorD(ref Col.Black, ref 体配色.植0O);
-    		節19_棘1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節19_棘2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節19_脈CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節20_節CD = new ColorD(ref Col.Black, ref 体配色.植0O);
-    		節20_棘1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節20_棘2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節20_脈CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節21_節CD = new ColorD(ref Col.Black, ref 体配色.植0O);
-    		節21_棘1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節21_棘2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節21_脈CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節22_節CD = new ColorD(ref Col.Black, ref 体配色.植0O);
-    		節22_棘1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節22_棘2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節22_脈CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節23_節CD = new ColorD(ref Col.Black, ref 体配色.植0O);
-    		節23_棘1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節23_棘2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節23_脈CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節24_節CD = new ColorD(ref Col.Black, ref 体配色.植0O);
-    		節24_棘1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節24_棘2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節24_脈CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		先端_下顎_顎CD = new ColorD(ref Col.Black, ref 体配色.植0O);
-    		先端_下顎_口内CD = new ColorD(ref Col.Black, ref 体配色.植0O);
-    		先端_下顎_棘12CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		先端_下顎_棘11CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		先端_下顎_棘10CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		先端_下顎_棘9CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		先端_下顎_棘8CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		先端_下顎_棘7CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		先端_下顎_脈1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		先端_下顎_脈2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		先端_下顎_脈3CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		先端_下顎_棘6CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		先端_下顎_棘5CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		先端_下顎_棘4CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		先端_下顎_棘3CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		先端_下顎_棘2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		先端_下顎_棘1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		先端_上顎_棘12CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		先端_上顎_棘11CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		先端_上顎_棘10CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		先端_上顎_棘9CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		先端_上顎_棘8CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		先端_上顎_棘7CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		先端_上顎_顎CD = new ColorD(ref Col.Black, ref 体配色.植0O);
-    		先端_上顎_脈1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		先端_上顎_脈2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		先端_上顎_脈3CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		先端_上顎_脈4CD = new ColorD(ref Col.Black, ref 体配色.植1O);
+    		節1_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0O);
+    		節1_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節1_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節1_脈CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節2_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0O);
+    		節2_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節2_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節2_脈CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節3_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0O);
+    		節3_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節3_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節3_脈CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節4_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0O);
+    		節4_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節4_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節4_脈CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節5_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0O);
+    		節5_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節5_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節5_脈CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節6_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0O);
+    		節6_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節6_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節6_脈CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節7_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0O);
+    		節7_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節7_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節7_脈CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節8_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0O);
+    		節8_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節8_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節8_脈CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節9_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0O);
+    		節9_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節9_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節9_脈CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節10_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0O);
+    		節10_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節10_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節10_脈CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節11_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0O);
+    		節11_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節11_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節11_脈CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節12_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0O);
+    		節12_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節12_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節12_脈CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節13_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0O);
+    		節13_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節13_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節13_脈CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節14_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0O);
+    		節14_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節14_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節14_脈CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節15_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0O);
+    		節15_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節15_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節15_脈CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節16_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0O);
+    		節16_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節16_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節16_脈CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節17_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0O);
+    		節17_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節17_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節17_脈CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節18_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0O);
+    		節18_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節18_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節18_脈CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節19_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0O);
+    		節19_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節19_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節19_脈CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節20_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0O);
+    		節20_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節20_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節20_脈CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節21_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0O);
+    		節21_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節21_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節21_脈CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節22_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0O);
+    		節22_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節22_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節22_脈CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節23_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0O);
+    		節23_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節23_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節23_脈CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節24_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0O);
+    		節24_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節24_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節24_脈CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		先端_下顎_顎CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0O);
+    		先端_下顎_口内CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0O);
+    		先端_下顎_棘12CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		先端_下顎_棘11CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		先端_下顎_棘10CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		先端_下顎_棘9CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		先端_下顎_棘8CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		先端_下顎_棘7CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		先端_下顎_脈1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		先端_下顎_脈2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		先端_下顎_脈3CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		先端_下顎_棘6CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		先端_下顎_棘5CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		先端_下顎_棘4CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		先端_下顎_棘3CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		先端_下顎_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		先端_下顎_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		先端_上顎_棘12CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		先端_上顎_棘11CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		先端_上顎_棘10CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		先端_上顎_棘9CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		先端_上顎_棘8CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		先端_上顎_棘7CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		先端_上顎_顎CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0O);
+    		先端_上顎_脈1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		先端_上顎_脈2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		先端_上顎_脈3CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		先端_上顎_脈4CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
     		先端_輪_革CD = new ColorD();
     		先端_輪_金具1CD = new ColorD();
     		先端_輪_金具2CD = new ColorD();
@@ -4669,130 +4669,130 @@ namespace SlaveMatrix
 
     	private void 配色T0(BodyColorSet 体配色)
     	{
-    		節1_節CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		節1_棘1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節1_棘2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節1_脈CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節2_節CD = new ColorD(ref Col.Black, ref 体配色.植0O);
-    		節2_棘1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節2_棘2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節2_脈CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節3_節CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		節3_棘1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節3_棘2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節3_脈CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節4_節CD = new ColorD(ref Col.Black, ref 体配色.植0O);
-    		節4_棘1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節4_棘2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節4_脈CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節5_節CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		節5_棘1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節5_棘2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節5_脈CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節6_節CD = new ColorD(ref Col.Black, ref 体配色.植0O);
-    		節6_棘1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節6_棘2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節6_脈CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節7_節CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		節7_棘1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節7_棘2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節7_脈CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節8_節CD = new ColorD(ref Col.Black, ref 体配色.植0O);
-    		節8_棘1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節8_棘2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節8_脈CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節9_節CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		節9_棘1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節9_棘2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節9_脈CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節10_節CD = new ColorD(ref Col.Black, ref 体配色.植0O);
-    		節10_棘1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節10_棘2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節10_脈CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節11_節CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		節11_棘1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節11_棘2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節11_脈CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節12_節CD = new ColorD(ref Col.Black, ref 体配色.植0O);
-    		節12_棘1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節12_棘2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節12_脈CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節13_節CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		節13_棘1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節13_棘2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節13_脈CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節14_節CD = new ColorD(ref Col.Black, ref 体配色.植0O);
-    		節14_棘1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節14_棘2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節14_脈CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節15_節CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		節15_棘1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節15_棘2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節15_脈CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節16_節CD = new ColorD(ref Col.Black, ref 体配色.植0O);
-    		節16_棘1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節16_棘2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節16_脈CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節17_節CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		節17_棘1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節17_棘2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節17_脈CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節18_節CD = new ColorD(ref Col.Black, ref 体配色.植0O);
-    		節18_棘1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節18_棘2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節18_脈CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節19_節CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		節19_棘1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節19_棘2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節19_脈CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節20_節CD = new ColorD(ref Col.Black, ref 体配色.植0O);
-    		節20_棘1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節20_棘2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節20_脈CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節21_節CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		節21_棘1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節21_棘2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節21_脈CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節22_節CD = new ColorD(ref Col.Black, ref 体配色.植0O);
-    		節22_棘1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節22_棘2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節22_脈CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節23_節CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		節23_棘1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節23_棘2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節23_脈CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節24_節CD = new ColorD(ref Col.Black, ref 体配色.植0O);
-    		節24_棘1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節24_棘2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節24_脈CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		先端_下顎_顎CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		先端_下顎_口内CD = new ColorD(ref Col.Black, ref 体配色.植0O);
-    		先端_下顎_棘12CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		先端_下顎_棘11CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		先端_下顎_棘10CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		先端_下顎_棘9CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		先端_下顎_棘8CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		先端_下顎_棘7CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		先端_下顎_脈1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		先端_下顎_脈2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		先端_下顎_脈3CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		先端_下顎_棘6CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		先端_下顎_棘5CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		先端_下顎_棘4CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		先端_下顎_棘3CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		先端_下顎_棘2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		先端_下顎_棘1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		先端_上顎_棘12CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		先端_上顎_棘11CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		先端_上顎_棘10CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		先端_上顎_棘9CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		先端_上顎_棘8CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		先端_上顎_棘7CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		先端_上顎_顎CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		先端_上顎_脈1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		先端_上顎_脈2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		先端_上顎_脈3CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		先端_上顎_脈4CD = new ColorD(ref Col.Black, ref 体配色.植1O);
+    		節1_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		節1_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節1_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節1_脈CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節2_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0O);
+    		節2_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節2_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節2_脈CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節3_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		節3_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節3_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節3_脈CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節4_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0O);
+    		節4_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節4_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節4_脈CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節5_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		節5_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節5_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節5_脈CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節6_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0O);
+    		節6_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節6_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節6_脈CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節7_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		節7_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節7_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節7_脈CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節8_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0O);
+    		節8_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節8_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節8_脈CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節9_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		節9_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節9_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節9_脈CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節10_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0O);
+    		節10_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節10_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節10_脈CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節11_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		節11_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節11_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節11_脈CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節12_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0O);
+    		節12_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節12_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節12_脈CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節13_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		節13_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節13_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節13_脈CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節14_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0O);
+    		節14_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節14_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節14_脈CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節15_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		節15_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節15_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節15_脈CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節16_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0O);
+    		節16_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節16_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節16_脈CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節17_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		節17_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節17_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節17_脈CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節18_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0O);
+    		節18_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節18_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節18_脈CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節19_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		節19_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節19_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節19_脈CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節20_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0O);
+    		節20_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節20_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節20_脈CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節21_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		節21_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節21_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節21_脈CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節22_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0O);
+    		節22_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節22_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節22_脈CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節23_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		節23_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節23_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節23_脈CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節24_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0O);
+    		節24_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節24_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節24_脈CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		先端_下顎_顎CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		先端_下顎_口内CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0O);
+    		先端_下顎_棘12CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		先端_下顎_棘11CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		先端_下顎_棘10CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		先端_下顎_棘9CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		先端_下顎_棘8CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		先端_下顎_棘7CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		先端_下顎_脈1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		先端_下顎_脈2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		先端_下顎_脈3CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		先端_下顎_棘6CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		先端_下顎_棘5CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		先端_下顎_棘4CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		先端_下顎_棘3CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		先端_下顎_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		先端_下顎_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		先端_上顎_棘12CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		先端_上顎_棘11CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		先端_上顎_棘10CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		先端_上顎_棘9CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		先端_上顎_棘8CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		先端_上顎_棘7CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		先端_上顎_顎CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		先端_上顎_脈1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		先端_上顎_脈2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		先端_上顎_脈3CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		先端_上顎_脈4CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
     		先端_輪_革CD = new ColorD();
     		先端_輪_金具1CD = new ColorD();
     		先端_輪_金具2CD = new ColorD();
@@ -4815,130 +4815,130 @@ namespace SlaveMatrix
 
     	private void 配色T1(BodyColorSet 体配色)
     	{
-    		節1_節CD = new ColorD(ref Col.Black, ref 体配色.植0O);
-    		節1_棘1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節1_棘2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節1_脈CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節2_節CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		節2_棘1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節2_棘2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節2_脈CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節3_節CD = new ColorD(ref Col.Black, ref 体配色.植0O);
-    		節3_棘1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節3_棘2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節3_脈CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節4_節CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		節4_棘1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節4_棘2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節4_脈CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節5_節CD = new ColorD(ref Col.Black, ref 体配色.植0O);
-    		節5_棘1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節5_棘2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節5_脈CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節6_節CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		節6_棘1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節6_棘2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節6_脈CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節7_節CD = new ColorD(ref Col.Black, ref 体配色.植0O);
-    		節7_棘1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節7_棘2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節7_脈CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節8_節CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		節8_棘1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節8_棘2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節8_脈CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節9_節CD = new ColorD(ref Col.Black, ref 体配色.植0O);
-    		節9_棘1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節9_棘2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節9_脈CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節10_節CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		節10_棘1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節10_棘2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節10_脈CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節11_節CD = new ColorD(ref Col.Black, ref 体配色.植0O);
-    		節11_棘1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節11_棘2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節11_脈CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節12_節CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		節12_棘1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節12_棘2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節12_脈CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節13_節CD = new ColorD(ref Col.Black, ref 体配色.植0O);
-    		節13_棘1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節13_棘2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節13_脈CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節14_節CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		節14_棘1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節14_棘2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節14_脈CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節15_節CD = new ColorD(ref Col.Black, ref 体配色.植0O);
-    		節15_棘1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節15_棘2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節15_脈CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節16_節CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		節16_棘1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節16_棘2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節16_脈CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節17_節CD = new ColorD(ref Col.Black, ref 体配色.植0O);
-    		節17_棘1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節17_棘2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節17_脈CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節18_節CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		節18_棘1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節18_棘2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節18_脈CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節19_節CD = new ColorD(ref Col.Black, ref 体配色.植0O);
-    		節19_棘1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節19_棘2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節19_脈CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節20_節CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		節20_棘1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節20_棘2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節20_脈CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節21_節CD = new ColorD(ref Col.Black, ref 体配色.植0O);
-    		節21_棘1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節21_棘2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節21_脈CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節22_節CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		節22_棘1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節22_棘2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節22_脈CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節23_節CD = new ColorD(ref Col.Black, ref 体配色.植0O);
-    		節23_棘1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節23_棘2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節23_脈CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節24_節CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		節24_棘1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節24_棘2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		節24_脈CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		先端_下顎_顎CD = new ColorD(ref Col.Black, ref 体配色.植0O);
-    		先端_下顎_口内CD = new ColorD(ref Col.Black, ref 体配色.植0O);
-    		先端_下顎_棘12CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		先端_下顎_棘11CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		先端_下顎_棘10CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		先端_下顎_棘9CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		先端_下顎_棘8CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		先端_下顎_棘7CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		先端_下顎_脈1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		先端_下顎_脈2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		先端_下顎_脈3CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		先端_下顎_棘6CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		先端_下顎_棘5CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		先端_下顎_棘4CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		先端_下顎_棘3CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		先端_下顎_棘2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		先端_下顎_棘1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		先端_上顎_棘12CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		先端_上顎_棘11CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		先端_上顎_棘10CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		先端_上顎_棘9CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		先端_上顎_棘8CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		先端_上顎_棘7CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		先端_上顎_顎CD = new ColorD(ref Col.Black, ref 体配色.植0O);
-    		先端_上顎_脈1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		先端_上顎_脈2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		先端_上顎_脈3CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		先端_上顎_脈4CD = new ColorD(ref Col.Black, ref 体配色.植1O);
+    		節1_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0O);
+    		節1_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節1_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節1_脈CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節2_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		節2_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節2_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節2_脈CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節3_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0O);
+    		節3_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節3_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節3_脈CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節4_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		節4_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節4_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節4_脈CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節5_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0O);
+    		節5_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節5_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節5_脈CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節6_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		節6_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節6_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節6_脈CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節7_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0O);
+    		節7_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節7_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節7_脈CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節8_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		節8_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節8_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節8_脈CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節9_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0O);
+    		節9_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節9_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節9_脈CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節10_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		節10_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節10_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節10_脈CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節11_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0O);
+    		節11_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節11_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節11_脈CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節12_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		節12_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節12_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節12_脈CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節13_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0O);
+    		節13_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節13_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節13_脈CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節14_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		節14_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節14_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節14_脈CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節15_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0O);
+    		節15_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節15_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節15_脈CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節16_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		節16_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節16_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節16_脈CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節17_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0O);
+    		節17_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節17_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節17_脈CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節18_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		節18_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節18_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節18_脈CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節19_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0O);
+    		節19_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節19_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節19_脈CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節20_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		節20_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節20_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節20_脈CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節21_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0O);
+    		節21_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節21_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節21_脈CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節22_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		節22_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節22_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節22_脈CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節23_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0O);
+    		節23_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節23_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節23_脈CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節24_節CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		節24_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節24_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		節24_脈CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		先端_下顎_顎CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0O);
+    		先端_下顎_口内CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0O);
+    		先端_下顎_棘12CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		先端_下顎_棘11CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		先端_下顎_棘10CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		先端_下顎_棘9CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		先端_下顎_棘8CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		先端_下顎_棘7CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		先端_下顎_脈1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		先端_下顎_脈2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		先端_下顎_脈3CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		先端_下顎_棘6CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		先端_下顎_棘5CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		先端_下顎_棘4CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		先端_下顎_棘3CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		先端_下顎_棘2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		先端_下顎_棘1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		先端_上顎_棘12CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		先端_上顎_棘11CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		先端_上顎_棘10CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		先端_上顎_棘9CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		先端_上顎_棘8CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		先端_上顎_棘7CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		先端_上顎_顎CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0O);
+    		先端_上顎_脈1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		先端_上顎_脈2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		先端_上顎_脈3CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		先端_上顎_脈4CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
     		先端_輪_革CD = new ColorD();
     		先端_輪_金具1CD = new ColorD();
     		先端_輪_金具2CD = new ColorD();

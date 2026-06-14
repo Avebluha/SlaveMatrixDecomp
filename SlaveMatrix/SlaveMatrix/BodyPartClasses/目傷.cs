@@ -3,27 +3,27 @@ using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
-    public class 目傷 : Ele
+    public class 目傷 : Element
     {
-    	public Par X0Y0_傷上;
+    	public ShapePart X0Y0_傷上;
 
-    	public Par X0Y0_傷下;
+    	public ShapePart X0Y0_傷下;
 
-    	public Par X0Y1_傷上;
+    	public ShapePart X0Y1_傷上;
 
-    	public Par X0Y1_傷下;
+    	public ShapePart X0Y1_傷下;
 
-    	public Par X0Y2_傷上;
+    	public ShapePart X0Y2_傷上;
 
-    	public Par X0Y2_傷下;
+    	public ShapePart X0Y2_傷下;
 
-    	public Par X0Y3_傷上;
+    	public ShapePart X0Y3_傷上;
 
-    	public Par X0Y3_傷下;
+    	public ShapePart X0Y3_傷下;
 
-    	public Par X0Y4_傷上;
+    	public ShapePart X0Y4_傷上;
 
-    	public Par X0Y4_傷下;
+    	public ShapePart X0Y4_傷下;
 
     	public ColorD 傷上CD;
 
@@ -170,22 +170,22 @@ namespace SlaveMatrix
     	public 目傷(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 目傷D e)
     	{
     		ThisType = GetType();
-    		Body = new Difs(Sta.胴体["目傷左"]);
-    		Pars pars = Body[0][0];
-    		X0Y0_傷上 = pars["傷上"].ToPar();
-    		X0Y0_傷下 = pars["傷下"].ToPar();
-    		pars = Body[0][1];
-    		X0Y1_傷上 = pars["傷上"].ToPar();
-    		X0Y1_傷下 = pars["傷下"].ToPar();
-    		pars = Body[0][2];
-    		X0Y2_傷上 = pars["傷上"].ToPar();
-    		X0Y2_傷下 = pars["傷下"].ToPar();
-    		pars = Body[0][3];
-    		X0Y3_傷上 = pars["傷上"].ToPar();
-    		X0Y3_傷下 = pars["傷下"].ToPar();
-    		pars = Body[0][4];
-    		X0Y4_傷上 = pars["傷上"].ToPar();
-    		X0Y4_傷下 = pars["傷下"].ToPar();
+    		Body = new VariantGrid(GlobalState.胴体["目傷左"]);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_傷上 = partGroup["傷上"].ToPar();
+    		X0Y0_傷下 = partGroup["傷下"].ToPar();
+    		partGroup = Body[0][1];
+    		X0Y1_傷上 = partGroup["傷上"].ToPar();
+    		X0Y1_傷下 = partGroup["傷下"].ToPar();
+    		partGroup = Body[0][2];
+    		X0Y2_傷上 = partGroup["傷上"].ToPar();
+    		X0Y2_傷下 = partGroup["傷下"].ToPar();
+    		partGroup = Body[0][3];
+    		X0Y3_傷上 = partGroup["傷上"].ToPar();
+    		X0Y3_傷下 = partGroup["傷下"].ToPar();
+    		partGroup = Body[0][4];
+    		X0Y4_傷上 = partGroup["傷上"].ToPar();
+    		X0Y4_傷下 = partGroup["傷下"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;
@@ -268,8 +268,8 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		傷上CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
-    		傷下CD = new ColorD(ref Col.Empty, ref 体配色.粘膜);
+    		傷上CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		傷下CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
     	}
     }
 }

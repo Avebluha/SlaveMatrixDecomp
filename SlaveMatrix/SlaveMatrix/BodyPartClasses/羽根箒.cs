@@ -3,21 +3,21 @@ using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
-    public class 羽根箒 : Ele
+    public class 羽根箒 : Element
     {
-    	public Par X0Y0_羽根1;
+    	public ShapePart X0Y0_羽根1;
 
-    	public Par X0Y0_羽根2;
+    	public ShapePart X0Y0_羽根2;
 
-    	public Par X0Y0_羽根3;
+    	public ShapePart X0Y0_羽根3;
 
-    	public Par X0Y0_羽根4;
+    	public ShapePart X0Y0_羽根4;
 
-    	public Par X0Y0_羽根5;
+    	public ShapePart X0Y0_羽根5;
 
-    	public Par X0Y0_羽根;
+    	public ShapePart X0Y0_羽根;
 
-    	public Par X0Y0_柄;
+    	public ShapePart X0Y0_柄;
 
     	public ColorD 羽根1CD;
 
@@ -213,15 +213,15 @@ namespace SlaveMatrix
     	public 羽根箒(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 羽根箒D e)
     	{
     		ThisType = GetType();
-    		Body = new Difs(Sta.カーソル["羽根箒"]);
-    		Pars pars = Body[0][0];
-    		X0Y0_羽根1 = pars["羽根1"].ToPar();
-    		X0Y0_羽根2 = pars["羽根2"].ToPar();
-    		X0Y0_羽根3 = pars["羽根3"].ToPar();
-    		X0Y0_羽根4 = pars["羽根4"].ToPar();
-    		X0Y0_羽根5 = pars["羽根5"].ToPar();
-    		X0Y0_羽根 = pars["羽根"].ToPar();
-    		X0Y0_柄 = pars["柄"].ToPar();
+    		Body = new VariantGrid(GlobalState.カーソル["羽根箒"]);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_羽根1 = partGroup["羽根1"].ToPar();
+    		X0Y0_羽根2 = partGroup["羽根2"].ToPar();
+    		X0Y0_羽根3 = partGroup["羽根3"].ToPar();
+    		X0Y0_羽根4 = partGroup["羽根4"].ToPar();
+    		X0Y0_羽根5 = partGroup["羽根5"].ToPar();
+    		X0Y0_羽根 = partGroup["羽根"].ToPar();
+    		X0Y0_柄 = partGroup["柄"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;
@@ -291,17 +291,17 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		Col.GetGrad(ref Col.White, out var ret);
-    		羽根1CD = new ColorD(ref Col.Black, ref ret);
-    		羽根2CD = new ColorD(ref Col.Black, ref ret);
-    		羽根3CD = new ColorD(ref Col.Black, ref ret);
-    		羽根4CD = new ColorD(ref Col.Black, ref ret);
-    		羽根5CD = new ColorD(ref Col.Black, ref ret);
-    		Col.GetGrad(ref Col.White, out ret);
-    		羽根CD = new ColorD(ref Col.Black, ref ret);
+    		ColorHelper.GetGrad(ref ColorHelper.White, out var ret);
+    		羽根1CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		羽根2CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		羽根3CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		羽根4CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		羽根5CD = new ColorD(ref ColorHelper.Black, ref ret);
+    		ColorHelper.GetGrad(ref ColorHelper.White, out ret);
+    		羽根CD = new ColorD(ref ColorHelper.Black, ref ret);
     		柄CD = new ColorD();
-    		柄CD.線 = Col.Black;
-    		柄CD.色 = new Color2(ref Col.Black, ref Col.Empty);
+    		柄CD.線 = ColorHelper.Black;
+    		柄CD.色 = new Color2(ref ColorHelper.Black, ref ColorHelper.Empty);
     	}
     }
 }

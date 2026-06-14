@@ -5,7 +5,7 @@ using SlaveMatrix.GameClasses;
 namespace SlaveMatrix
 {
     [Serializable]
-    public class 鎖D : EleD
+    public class 鎖D : ElementData
     {
     	public bool 鎖2_表示 = true;
 
@@ -16,7 +16,7 @@ namespace SlaveMatrix
     		ThisType = GetType();
     	}
 
-    	public override Ele GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
+    	public override Element GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
     	{
     		return new 鎖(DisUnit, 配色指定, 体配色, Med, this);
     	}

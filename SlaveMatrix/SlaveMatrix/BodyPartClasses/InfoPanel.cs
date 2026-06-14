@@ -11,21 +11,21 @@ namespace SlaveMatrix
 
     	private ModeEventDispatcher Med;
 
-    	public Par MaiB;
+    	public ShapePart MaiB;
 
-    	public Tex Mai;
+    	public TextBlock Mai;
 
-    	public Par Mai2B;
+    	public ShapePart Mai2B;
 
-    	public Tex Mai2;
+    	public TextBlock Mai2;
 
-    	public Par SubB;
+    	public ShapePart SubB;
 
-    	public Tex Sub;
+    	public TextBlock Sub;
 
-    	public Par Sub2B;
+    	public ShapePart Sub2B;
 
-    	public Tex Sub2;
+    	public TextBlock Sub2;
 
     	private Lab SubInnfo_l;
 
@@ -37,13 +37,13 @@ namespace SlaveMatrix
 
     	public bool Sub2Show = true;
 
-    	private ParT yp;
+    	private ShapePartT yp;
 
-    	private ParT np;
+    	private ShapePartT np;
 
-    	public But1 yb;
+    	public Button yb;
 
-    	public But1 nb;
+    	public Button nb;
 
     	public string TextIm
     	{
@@ -119,22 +119,22 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public Action<But> 選択yAct
+    	public Action<ButtonBase> 選択yAct
     	{
     		set
     		{
-    			yb.Action = delegate(But a)
+    			yb.Action = delegate(ButtonBase a)
     			{
     				value(a);
     			};
     		}
     	}
 
-    	public Action<But> 選択nAct
+    	public Action<ButtonBase> 選択nAct
     	{
     		set
     		{
-    			nb.Action = delegate(But a)
+    			nb.Action = delegate(ButtonBase a)
     			{
     				value(a);
     			};
@@ -151,113 +151,113 @@ namespace SlaveMatrix
     		double num4 = Are.LocalHeight * (1.0 / 6.0) / num2;
     		Vector2D vector2D = Are.GetPosition(0.2, 1.0 - num4 * num2 / Are.LocalHeight).AddY(0.0 - num);
     		double y = 1.01;
-    		MaiB = new Par();
-    		MaiB.SetBasePointBase(Dat.Vec2DZero);
+    		MaiB = new ShapePart();
+    		MaiB.SetBasePointBase(DataConsts.Vec2DZero);
     		MaiB.SetPositionBase(vector2D);
     		MaiB.SetSizeBase(num2);
-    		MaiB.GetOP().AddRange(new Out[1] { Shas.GetSquare() });
+    		MaiB.GetOP().AddRange(new CurveOutline[1] { ShapeHelper.GetSquare() });
     		MaiB.GetOP().ScalingX(MaiB.GetBasePointBase(), num3);
     		MaiB.GetOP().ScalingY(MaiB.GetBasePointBase(), num4);
     		MaiB.SetClosed(true);
-    		MaiB.SetBrushColor(Color.FromArgb(160, Col.Black));
+    		MaiB.SetBrushColor(Color.FromArgb(160, ColorHelper.Black));
     		MaiB.Hit = false;
-    		MaiB.GetJP().Add(new Joi(MaiB.GetOP().GetCenter()));
-    		Mai = new Tex("Tex1", vector2D, num2, num3 * 0.98, num4 * 0.91, new Font("MS Gothic", 1f), 0.08, 0, " ", Col.White, Col.Black, Color.Transparent, 19.0, Col.White, delegate(Tex sp)
+    		MaiB.GetJP().Add(new JointPoint(MaiB.GetOP().GetCenter()));
+    		Mai = new TextBlock("Tex1", vector2D, num2, num3 * 0.98, num4 * 0.91, new Font("MS Gothic", 1f), 0.08, 0, " ", ColorHelper.White, ColorHelper.Black, Color.Transparent, 19.0, ColorHelper.White, delegate(TextBlock sp)
     		{
     			sp.Text = sp.Text;
     		});
-    		Mai.ParT.SetBasePointBase(Mai.ParT.GetOP().GetCenter().MulY(y));
+    		Mai.ShapePartT.SetBasePointBase(Mai.ShapePartT.GetOP().GetCenter().MulY(y));
     		Mai.Position = MaiB.ToGlobal(MaiB.GetJP()[0].Joint);
     		Mai.Feed.GetOP().OutlineFalse();
     		double num5 = num4 * 4.53;
-    		Mai2B = new Par();
-    		Mai2B.SetBasePointBase(Dat.Vec2DZero);
+    		Mai2B = new ShapePart();
+    		Mai2B.SetBasePointBase(DataConsts.Vec2DZero);
     		Mai2B.SetPositionBase(new Vector2D(vector2D.X, 0.01));
     		Mai2B.SetSizeBase(num2);
-    		Mai2B.GetOP().AddRange(new Out[1] { Shas.GetSquare() });
+    		Mai2B.GetOP().AddRange(new CurveOutline[1] { ShapeHelper.GetSquare() });
     		Mai2B.GetOP().ScalingX(Mai2B.GetBasePointBase(), num3);
     		Mai2B.GetOP().ScalingY(Mai2B.GetBasePointBase(), num5);
     		Mai2B.SetClosed(true);
-    		Mai2B.SetBrushColor(Color.FromArgb(160, Col.Black));
+    		Mai2B.SetBrushColor(Color.FromArgb(160, ColorHelper.Black));
     		Mai2B.Hit = false;
-    		Mai2B.GetJP().Add(new Joi(Mai2B.GetOP().GetCenter()));
-    		Mai2 = new Tex("Tex3", vector2D, num2, num3 * 0.98, num5 * 0.97, new Font("MS Gothic", 1f), 0.08, 0, " ", Col.White, Col.Black, Color.Transparent, 19.0, Col.White, delegate(Tex sp)
+    		Mai2B.GetJP().Add(new JointPoint(Mai2B.GetOP().GetCenter()));
+    		Mai2 = new TextBlock("Tex3", vector2D, num2, num3 * 0.98, num5 * 0.97, new Font("MS Gothic", 1f), 0.08, 0, " ", ColorHelper.White, ColorHelper.Black, Color.Transparent, 19.0, ColorHelper.White, delegate(TextBlock sp)
     		{
     			sp.Text = sp.Text;
     		});
-    		Mai2.ParT.SetBasePointBase(Mai2.ParT.GetOP().GetCenter().MulY(y));
+    		Mai2.ShapePartT.SetBasePointBase(Mai2.ShapePartT.GetOP().GetCenter().MulY(y));
     		Mai2.Position = Mai2B.ToGlobal(Mai2B.GetJP()[0].Joint);
     		Mai2.Feed.GetOP().OutlineFalse();
     		num3 = Are.LocalWidth * 0.19 / num2;
     		vector2D = Are.GetPosition(1.0 - (num3 * num2 / Are.LocalWidth + 0.005), 1.0 - num4 * num2 / Are.LocalHeight).AddY(0.0 - num);
-    		SubB = new Par();
-    		SubB.SetBasePointBase(Dat.Vec2DZero);
+    		SubB = new ShapePart();
+    		SubB.SetBasePointBase(DataConsts.Vec2DZero);
     		SubB.SetPositionBase(vector2D);
     		SubB.SetSizeBase(num2);
-    		SubB.GetOP().AddRange(new Out[1] { Shas.GetSquare() });
+    		SubB.GetOP().AddRange(new CurveOutline[1] { ShapeHelper.GetSquare() });
     		SubB.GetOP().ScalingX(SubB.GetBasePointBase(), num3);
     		SubB.GetOP().ScalingY(SubB.GetBasePointBase(), num4);
     		SubB.SetClosed(true);
-    		SubB.SetBrushColor(Color.FromArgb(160, Col.Black));
+    		SubB.SetBrushColor(Color.FromArgb(160, ColorHelper.Black));
     		SubB.Hit = false;
-    		SubB.GetJP().Add(new Joi(SubB.GetOP().GetCenter()));
-    		Sub = new Tex("Tex4", vector2D, num2 * 1.01, num3 * 0.98, num4 * 0.91, new Font("MS Gothic", 1f), 0.07, 0, " ", Col.White, Col.Black, Color.Transparent, 15.0);
-    		Sub.ParT.SetBasePointBase(Sub.ParT.GetOP().GetCenter().MulY(y));
+    		SubB.GetJP().Add(new JointPoint(SubB.GetOP().GetCenter()));
+    		Sub = new TextBlock("Tex4", vector2D, num2 * 1.01, num3 * 0.98, num4 * 0.91, new Font("MS Gothic", 1f), 0.07, 0, " ", ColorHelper.White, ColorHelper.Black, Color.Transparent, 15.0);
+    		Sub.ShapePartT.SetBasePointBase(Sub.ShapePartT.GetOP().GetCenter().MulY(y));
     		Sub.Position = SubB.ToGlobal(SubB.GetJP()[0].Joint);
-    		SubInnfo_l = new Lab(Are, "SubInfo", vector2D, num2, 1.0, new Font("MS Gothic", 1f), 0.07, "Sub Info.", Col.White, Col.Black, Color.FromArgb(160, Col.Black), Col.Empty);
-    		SubInnfo_l.ParT.SetPositionBase(SubInnfo_l.ParT.GetPositionBase().AddY((0.0 - SubInnfo_l.ParT.GetOP()[0].ps[3].Y) * SubInnfo_l.ParT.GetSizeBase()));
-    		Sub2B = new Par();
-    		Sub2B.SetBasePointBase(Dat.Vec2DZero);
+    		SubInnfo_l = new Lab(Are, "SubInfo", vector2D, num2, 1.0, new Font("MS Gothic", 1f), 0.07, "Sub Info.", ColorHelper.White, ColorHelper.Black, Color.FromArgb(160, ColorHelper.Black), ColorHelper.Empty);
+    		SubInnfo_l.ShapePartT.SetPositionBase(SubInnfo_l.ShapePartT.GetPositionBase().AddY((0.0 - SubInnfo_l.ShapePartT.GetOP()[0].ps[3].Y) * SubInnfo_l.ShapePartT.GetSizeBase()));
+    		Sub2B = new ShapePart();
+    		Sub2B.SetBasePointBase(DataConsts.Vec2DZero);
     		Sub2B.SetPositionBase(new Vector2D(0.0025, vector2D.Y));
     		Sub2B.SetSizeBase(num2);
-    		Sub2B.GetOP().AddRange(new Out[1] { Shas.GetSquare() });
+    		Sub2B.GetOP().AddRange(new CurveOutline[1] { ShapeHelper.GetSquare() });
     		Sub2B.GetOP().ScalingX(Sub2B.GetBasePointBase(), num3);
     		Sub2B.GetOP().ScalingY(Sub2B.GetBasePointBase(), num4);
     		Sub2B.SetClosed(true);
-    		Sub2B.SetBrushColor(Color.FromArgb(160, Col.Black));
+    		Sub2B.SetBrushColor(Color.FromArgb(160, ColorHelper.Black));
     		Sub2B.Hit = false;
-    		Sub2B.GetJP().Add(new Joi(SubB.GetOP().GetCenter()));
-    		Sub2 = new Tex("Tex3", Sub2B.GetPositionBase(), num2 * 1.01, num3 * 0.98, num4 * 0.91, new Font("MS Gothic", 1f), 0.07, 0, "", Col.White, Col.Black, Color.Transparent, 15.0);
-    		Sub2.ParT.SetBasePointBase(Sub2.ParT.GetOP().GetCenter().MulY(y));
+    		Sub2B.GetJP().Add(new JointPoint(SubB.GetOP().GetCenter()));
+    		Sub2 = new TextBlock("Tex3", Sub2B.GetPositionBase(), num2 * 1.01, num3 * 0.98, num4 * 0.91, new Font("MS Gothic", 1f), 0.07, 0, "", ColorHelper.White, ColorHelper.Black, Color.Transparent, 15.0);
+    		Sub2.ShapePartT.SetBasePointBase(Sub2.ShapePartT.GetOP().GetCenter().MulY(y));
     		Sub2.Position = Sub2B.ToGlobal(Sub2B.GetJP()[0].Joint);
-    		yp = new ParT();
+    		yp = new ShapePartT();
     		yp.Text = "・" + GameText.はい;
-    		yp.SetSizeBase(Mai.ParT.GetSizeBase());
+    		yp.SetSizeBase(Mai.ShapePartT.GetSizeBase());
     		yp.SetFont(new Font("MS Gothic", 1f));
-    		yp.SetFontSize(Mai.ParT.GetFontSize());
+    		yp.SetFontSize(Mai.ShapePartT.GetFontSize());
     		yp.SetStringRectOutline(Are.UnitScale, Are.DisplayGraphics);
     		yp.SetRectSize(new Vector2D(yp.GetOP()[0].ps[1].X, yp.GetOP()[0].ps[2].Y));
     		yp.GetOP().ScalingY(yp.GetBasePointBase(), 0.9);
     		yp.GetOP().OutlineFalse();
     		yp.SetClosed(true);
-    		yp.SetTextColor(Col.White);
-    		yp.SetBrushColor(Color.FromArgb(0, Col.Black));
-    		yp.SetShadBrush(new SolidBrush(Col.Black));
+    		yp.SetTextColor(ColorHelper.White);
+    		yp.SetBrushColor(Color.FromArgb(0, ColorHelper.Black));
+    		yp.SetShadBrush(new SolidBrush(ColorHelper.Black));
     		yp.GetStringFormat().Alignment = StringAlignment.Center;
     		yp.GetStringFormat().LineAlignment = StringAlignment.Center;
     		yp.SetPositionBase(new Vector2D(MaiB.GetPosition().X + 0.001, MaiB.GetPosition().Y));
     		yp.Dra = false;
-    		yb = new But1(yp, delegate
+    		yb = new Button(yp, delegate
     		{
     		});
-    		np = new ParT();
+    		np = new ShapePartT();
     		np.Text = "・" + GameText.いいえ;
-    		np.SetSizeBase(Mai.ParT.GetSizeBase());
+    		np.SetSizeBase(Mai.ShapePartT.GetSizeBase());
     		np.SetFont(new Font("MS Gothic", 1f));
-    		np.SetFontSize(Mai.ParT.GetFontSize());
+    		np.SetFontSize(Mai.ShapePartT.GetFontSize());
     		np.SetStringRectOutline(Are.UnitScale, Are.DisplayGraphics);
     		np.SetRectSize(new Vector2D(np.GetOP()[0].ps[1].X, np.GetOP()[0].ps[2].Y));
     		np.GetOP().ScalingY(np.GetBasePointBase(), 0.9);
     		np.GetOP().OutlineFalse();
     		np.SetClosed(true);
-    		np.SetTextColor(Col.White);
-    		np.SetBrushColor(Color.FromArgb(0, Col.Black));
-    		np.SetShadBrush(new SolidBrush(Col.Black));
+    		np.SetTextColor(ColorHelper.White);
+    		np.SetBrushColor(Color.FromArgb(0, ColorHelper.Black));
+    		np.SetShadBrush(new SolidBrush(ColorHelper.Black));
     		np.GetStringFormat().Alignment = StringAlignment.Center;
     		np.GetStringFormat().LineAlignment = StringAlignment.Center;
     		np.SetPositionBase(new Vector2D(MaiB.GetPosition().X + 0.001, MaiB.GetPosition().Y));
     		np.Dra = false;
-    		nb = new But1(np, delegate
+    		nb = new Button(np, delegate
     		{
     		});
     	}
@@ -275,12 +275,12 @@ namespace SlaveMatrix
 
     	public void UpdateSub2()
     	{
-    		Sub2.TextIm = GameText.所持金 + "\r\n" + Sta.GameData.所持金.ToString("#,0") + "\r\n" + GameText.借金 + "\r\n" + Sta.GameData.借金.ToString("#,0") + "\r\n" + Sta.GameData.日数 + GameText.日目 + "/" + Sta.GameData.時間帯;
+    		Sub2.TextIm = GameText.所持金 + "\r\n" + GlobalState.GameData.所持金.ToString("#,0") + "\r\n" + GameText.借金 + "\r\n" + GlobalState.GameData.借金.ToString("#,0") + "\r\n" + GlobalState.GameData.日数 + GameText.日目 + "/" + GlobalState.GameData.時間帯;
     	}
 
     	private void SetButPos()
     	{
-    		yp.SetPositionBase(new Vector2D(yp.GetPositionBase().X, Mai.ParT.ToGlobal(Mai.ParT.GetStringRect(Are.UnitScale, Are.DisplayGraphics).v2).Y + 0.0025));
+    		yp.SetPositionBase(new Vector2D(yp.GetPositionBase().X, Mai.ShapePartT.ToGlobal(Mai.ShapePartT.GetStringRect(Are.UnitScale, Are.DisplayGraphics).v2).Y + 0.0025));
     		np.SetPositionBase(new Vector2D(np.GetPositionBase().X, yp.ToGlobal(yp.GetOP().Last().ps.Last()).Y + 0.0025));
     	}
 
@@ -310,30 +310,30 @@ namespace SlaveMatrix
     		nb.Up(ref HitColor);
     	}
 
-    	public void Draw(RenderArea Are, FPS FPS)
+    	public void Draw(RenderArea Are, FpsCounter FPS)
     	{
     		if (MaiShow)
     		{
     			Are.Draw(MaiB);
     			Mai.Progression(FPS);
-    			Are.Draw(Mai.Pars);
+    			Are.Draw(Mai.PartGroup);
     		}
     		if (Mai2Show)
     		{
     			Are.Draw(Mai2B);
-    			Are.Draw(Mai2.Pars);
+    			Are.Draw(Mai2.PartGroup);
     		}
     		if (SubShow)
     		{
     			Are.Draw(SubB);
     			Sub.Progression(FPS);
-    			Are.Draw(Sub.Pars);
-    			Are.Draw(SubInnfo_l.ParT);
+    			Are.Draw(Sub.PartGroup);
+    			Are.Draw(SubInnfo_l.ShapePartT);
     		}
     		if (Sub2Show)
     		{
     			Are.Draw(Sub2B);
-    			Are.Draw(Sub2.Pars);
+    			Are.Draw(Sub2.PartGroup);
     		}
     		if (yp.Dra)
     		{

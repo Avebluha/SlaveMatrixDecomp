@@ -35,7 +35,7 @@ namespace _2DGAMELIB
     		ms.Remove(Name);
     	}
 
-    	public void Drive(FPS FPS)
+    	public void Drive(FpsCounter FPS)
     	{
     		foreach (Motion value in ms.Values)
     		{

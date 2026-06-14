@@ -6,35 +6,35 @@ namespace SlaveMatrix
 {
     public class 瞼_宇 : 双瞼
     {
-    	public Par X0Y0_目;
+    	public ShapePart X0Y0_目;
 
-    	public Par X0Y0_ハイライト;
+    	public ShapePart X0Y0_ハイライト;
 
-    	public Par X0Y0_瞬膜;
+    	public ShapePart X0Y0_瞬膜;
 
-    	public Par X0Y1_目;
+    	public ShapePart X0Y1_目;
 
-    	public Par X0Y1_ハイライト;
+    	public ShapePart X0Y1_ハイライト;
 
-    	public Par X0Y1_瞬膜;
+    	public ShapePart X0Y1_瞬膜;
 
-    	public Par X0Y2_目;
+    	public ShapePart X0Y2_目;
 
-    	public Par X0Y2_ハイライト;
+    	public ShapePart X0Y2_ハイライト;
 
-    	public Par X0Y2_瞬膜;
+    	public ShapePart X0Y2_瞬膜;
 
-    	public Par X0Y3_目;
+    	public ShapePart X0Y3_目;
 
-    	public Par X0Y3_ハイライト;
+    	public ShapePart X0Y3_ハイライト;
 
-    	public Par X0Y3_瞬膜;
+    	public ShapePart X0Y3_瞬膜;
 
-    	public Par X0Y4_目;
+    	public ShapePart X0Y4_目;
 
-    	public Par X0Y4_ハイライト;
+    	public ShapePart X0Y4_ハイライト;
 
-    	public Par X0Y4_瞬膜;
+    	public ShapePart X0Y4_瞬膜;
 
     	public ColorD 目CD;
 
@@ -72,7 +72,7 @@ namespace SlaveMatrix
 
     	public ColorP X0Y4_瞬膜CP;
 
-    	public Ele[] 涙_接続;
+    	public Element[] 涙_接続;
 
     	public override bool 欠損
     	{
@@ -207,27 +207,27 @@ namespace SlaveMatrix
     	{
     		瞼_宇 瞼_宇2 = this;
     		ThisType = GetType();
-    		Body = new Difs(Sta.胴体["エイリアン目左"]);
-    		Pars pars = Body[0][0];
-    		X0Y0_目 = pars["目"].ToPar();
-    		X0Y0_ハイライト = pars["ハイライト"].ToPar();
-    		X0Y0_瞬膜 = pars["瞬膜"].ToPar();
-    		pars = Body[0][1];
-    		X0Y1_目 = pars["目"].ToPar();
-    		X0Y1_ハイライト = pars["ハイライト"].ToPar();
-    		X0Y1_瞬膜 = pars["瞬膜"].ToPar();
-    		pars = Body[0][2];
-    		X0Y2_目 = pars["目"].ToPar();
-    		X0Y2_ハイライト = pars["ハイライト"].ToPar();
-    		X0Y2_瞬膜 = pars["瞬膜"].ToPar();
-    		pars = Body[0][3];
-    		X0Y3_目 = pars["目"].ToPar();
-    		X0Y3_ハイライト = pars["ハイライト"].ToPar();
-    		X0Y3_瞬膜 = pars["瞬膜"].ToPar();
-    		pars = Body[0][4];
-    		X0Y4_目 = pars["目"].ToPar();
-    		X0Y4_ハイライト = pars["ハイライト"].ToPar();
-    		X0Y4_瞬膜 = pars["瞬膜"].ToPar();
+    		Body = new VariantGrid(GlobalState.胴体["エイリアン目左"]);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_目 = partGroup["目"].ToPar();
+    		X0Y0_ハイライト = partGroup["ハイライト"].ToPar();
+    		X0Y0_瞬膜 = partGroup["瞬膜"].ToPar();
+    		partGroup = Body[0][1];
+    		X0Y1_目 = partGroup["目"].ToPar();
+    		X0Y1_ハイライト = partGroup["ハイライト"].ToPar();
+    		X0Y1_瞬膜 = partGroup["瞬膜"].ToPar();
+    		partGroup = Body[0][2];
+    		X0Y2_目 = partGroup["目"].ToPar();
+    		X0Y2_ハイライト = partGroup["ハイライト"].ToPar();
+    		X0Y2_瞬膜 = partGroup["瞬膜"].ToPar();
+    		partGroup = Body[0][3];
+    		X0Y3_目 = partGroup["目"].ToPar();
+    		X0Y3_ハイライト = partGroup["ハイライト"].ToPar();
+    		X0Y3_瞬膜 = partGroup["瞬膜"].ToPar();
+    		partGroup = Body[0][4];
+    		X0Y4_目 = partGroup["目"].ToPar();
+    		X0Y4_ハイライト = partGroup["ハイライト"].ToPar();
+    		X0Y4_瞬膜 = partGroup["瞬膜"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;
@@ -265,8 +265,8 @@ namespace SlaveMatrix
     		}
     		if (e.涙_接続.Count > 0)
     		{
-    			Ele f;
-    			涙_接続 = e.涙_接続.Select(delegate(EleD g)
+    			Element f;
+    			涙_接続 = e.涙_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 瞼_宇2;
@@ -334,9 +334,9 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		目CD = new ColorD(ref Col.Black, ref 体配色.目左O);
-    		ハイライトCD = new ColorD(ref Col.Empty, ref 体配色.ハイライト);
-    		瞬膜CD = new ColorD(ref Col.Black, ref 体配色.白部O);
+    		目CD = new ColorD(ref ColorHelper.Black, ref 体配色.目左O);
+    		ハイライトCD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト);
+    		瞬膜CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
     	}
     }
 }

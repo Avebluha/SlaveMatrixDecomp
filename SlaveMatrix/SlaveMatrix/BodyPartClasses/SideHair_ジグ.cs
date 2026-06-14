@@ -4,9 +4,9 @@ namespace SlaveMatrix
 {
     public class SideHair_ジグ : SideHair
     {
-    	public Par X0Y0_髪1;
+    	public ShapePart X0Y0_髪1;
 
-    	public Par X0Y0_髪2;
+    	public ShapePart X0Y0_髪2;
 
     	public ColorD 髪1CD;
 
@@ -144,15 +144,15 @@ namespace SlaveMatrix
     	public SideHair_ジグ(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, SideHair_ジグD e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif();
-    		dif.Tag = "ジグ";
-    		dif.Add(new Pars(Sta.胴体["横髪左"][0][0]));
-    		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		X0Y0_髪1 = pars["髪1"].ToPar();
-    		X0Y0_髪2 = pars["髪2"].ToPar();
+    		MorphVariant morphVariant = new MorphVariant();
+    		morphVariant.Tag = "ジグ";
+    		morphVariant.Add(new PartGroup(GlobalState.胴体["横髪左"][0][0]));
+    		Body = new VariantGrid();
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_髪1 = partGroup["髪1"].ToPar();
+    		X0Y0_髪2 = partGroup["髪2"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;

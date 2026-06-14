@@ -8,11 +8,11 @@ using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
-    public class DE : Ele
+    public class DrawableElement : Element
     {
         public Action<RenderArea> 描画;
 
-        public DE(Ele src, Action<RenderArea> 描画)
+        public DrawableElement(Element src, Action<RenderArea> 描画)
         {
             Par = src;
             Body = src.Body;
@@ -39,7 +39,7 @@ namespace SlaveMatrix
 
     	public Character Cha;
 
-    	public Ele[] Elements;
+    	public Element[] Elements;
 
     	private List<蝙通常> 蝙通常;
 
@@ -51,7 +51,7 @@ namespace SlaveMatrix
 
     	private IEnumerable<飛膜色更新> 飛膜色更新;
 
-    	private IEnumerable<Ele> 色更新;
+    	private IEnumerable<Element> 色更新;
 
     	public Waist Waist;
 
@@ -247,7 +247,7 @@ namespace SlaveMatrix
 
     	public 長物_蛇 蛇;
 
-    	public DE 蛇前;
+    	public DrawableElement 蛇前;
 
     	public 長物_蟲 蟲;
 
@@ -301,7 +301,7 @@ namespace SlaveMatrix
 
     	public 多足_蠍 蠍;
 
-    	public DE 蠍前;
+    	public DrawableElement 蠍前;
 
     	public 単足_植 植;
 
@@ -311,95 +311,95 @@ namespace SlaveMatrix
 
     	private bool 鼻描画;
 
-    	private List<Ele> 後髪接続 = new List<Ele>();
+    	private List<Element> 後髪接続 = new List<Element>();
 
-    	private List<Ele> 額接続 = new List<Ele>();
+    	private List<Element> 額接続 = new List<Element>();
 
-    	private List<Ele> 耳左接続 = new List<Ele>();
+    	private List<Element> 耳左接続 = new List<Element>();
 
-    	private List<Ele> 耳右接続 = new List<Ele>();
+    	private List<Element> 耳右接続 = new List<Element>();
 
-    	private List<Ele> 頬左接続 = new List<Ele>();
+    	private List<Element> 頬左接続 = new List<Element>();
 
-    	private List<Ele> 頬右接続 = new List<Ele>();
+    	private List<Element> 頬右接続 = new List<Element>();
 
-    	private List<Ele> 頭頂左後接続 = new List<Ele>();
+    	private List<Element> 頭頂左後接続 = new List<Element>();
 
-    	private List<Ele> 頭頂右後接続 = new List<Ele>();
+    	private List<Element> 頭頂右後接続 = new List<Element>();
 
     	private List<角2> 角左接続 = new List<角2>();
 
     	private List<角2> 角右接続 = new List<角2>();
 
-    	private List<Ele> 植左接続 = new List<Ele>();
+    	private List<Element> 植左接続 = new List<Element>();
 
-    	private List<Ele> 植右接続 = new List<Ele>();
+    	private List<Element> 植右接続 = new List<Element>();
 
-    	private List<Ele> 触覚左接続 = new List<Ele>();
+    	private List<Element> 触覚左接続 = new List<Element>();
 
-    	private List<Ele> 触覚右接続 = new List<Ele>();
+    	private List<Element> 触覚右接続 = new List<Element>();
 
-    	private List<Ele> 顔触覚左接続 = new List<Ele>();
+    	private List<Element> 顔触覚左接続 = new List<Element>();
 
-    	private List<Ele> 顔触覚右接続 = new List<Ele>();
+    	private List<Element> 顔触覚右接続 = new List<Element>();
 
-    	private List<Ele> 大顎基接続 = new List<Ele>();
+    	private List<Element> 大顎基接続 = new List<Element>();
 
     	private Shoulder[] 後脇左s = new Shoulder[0];
 
     	private Shoulder[] 後脇右s = new Shoulder[0];
 
-    	public List<Ele>[] 後腕左s = new List<Ele>[0];
+    	public List<Element>[] 後腕左s = new List<Element>[0];
 
-    	public List<Ele>[] 後腕右s = new List<Ele>[0];
+    	public List<Element>[] 後腕右s = new List<Element>[0];
 
     	private Shoulder 肩左;
 
     	private Shoulder 肩右;
 
-    	private List<Ele> 肩左飛膜 = new List<Ele>();
+    	private List<Element> 肩左飛膜 = new List<Element>();
 
-    	private List<Ele> 肩右飛膜 = new List<Ele>();
+    	private List<Element> 肩右飛膜 = new List<Element>();
 
-    	private List<Ele> 腕左 = new List<Ele>();
+    	private List<Element> 腕左 = new List<Element>();
 
-    	private List<Ele> 腕右 = new List<Ele>();
+    	private List<Element> 腕右 = new List<Element>();
 
-    	private List<Ele> LowerArm以降左 = new List<Ele>();
+    	private List<Element> LowerArm以降左 = new List<Element>();
 
-    	private List<Ele> LowerArm以降右 = new List<Ele>();
+    	private List<Element> LowerArm以降右 = new List<Element>();
 
-    	private List<Ele> 胸上左接続 = new List<Ele>();
+    	private List<Element> 胸上左接続 = new List<Element>();
 
-    	private List<Ele> 胸上右接続 = new List<Ele>();
+    	private List<Element> 胸上右接続 = new List<Element>();
 
-    	private List<Ele> 胸下左接続 = new List<Ele>();
+    	private List<Element> 胸下左接続 = new List<Element>();
 
-    	private List<Ele> 胸下右接続 = new List<Ele>();
+    	private List<Element> 胸下右接続 = new List<Element>();
 
-    	private List<Ele> 胴後左接続 = new List<Ele>();
+    	private List<Element> 胴後左接続 = new List<Element>();
 
-    	private List<Ele> 胴後右接続 = new List<Ele>();
+    	private List<Element> 胴後右接続 = new List<Element>();
 
-    	private List<Ele> 腰後左接続 = new List<Ele>();
+    	private List<Element> 腰後左接続 = new List<Element>();
 
-    	private List<Ele> 腰後右接続 = new List<Ele>();
+    	private List<Element> 腰後右接続 = new List<Element>();
 
-    	private List<Ele> 背中接続 = new List<Ele>();
+    	private List<Element> 背中接続 = new List<Element>();
 
-    	private List<Ele> 腿左接続 = new List<Ele>();
+    	private List<Element> 腿左接続 = new List<Element>();
 
-    	private List<Ele> 腿右接続 = new List<Ele>();
+    	private List<Element> 腿右接続 = new List<Element>();
 
-    	private List<Ele> 尾接続 = new List<Ele>();
+    	private List<Element> 尾接続 = new List<Element>();
 
-    	private List<Ele> 半身後接続 = new List<Ele>();
+    	private List<Element> 半身後接続 = new List<Element>();
 
-    	private List<Ele> 半身中1接続 = new List<Ele>();
+    	private List<Element> 半身中1接続 = new List<Element>();
 
-    	private List<Ele> 半身中2接続 = new List<Ele>();
+    	private List<Element> 半身中2接続 = new List<Element>();
 
-    	private List<Ele> 半身前接続 = new List<Ele>();
+    	private List<Element> 半身前接続 = new List<Element>();
 
     	public 顔面 顔面;
 
@@ -541,7 +541,7 @@ namespace SlaveMatrix
 
     	public スタンプB ぶっかけ大;
 
-    	private Dictionary<Ele, List<Ele>> ぶっかけr = new Dictionary<Ele, List<Ele>>();
+    	private Dictionary<Element, List<Element>> ぶっかけr = new Dictionary<Element, List<Element>>();
 
     	public TrainingUI カーソル;
 
@@ -561,25 +561,25 @@ namespace SlaveMatrix
 
     	private double asb2;
 
-    	public EleI EIChest;
+    	public ElementInstance EIChest;
 
-    	public EleI EI髪;
+    	public ElementInstance EI髪;
 
-    	public EleI EIWaist;
+    	public ElementInstance EIWaist;
 
-    	public EleI EI半後;
+    	public ElementInstance EI半後;
 
-    	public EleI EI半中1;
+    	public ElementInstance EI半中1;
 
-    	public EleI EI半中2;
+    	public ElementInstance EI半中2;
 
-    	public EleI EI半前;
+    	public ElementInstance EI半前;
 
-    	public EleI EI腕前;
+    	public ElementInstance EI腕前;
 
-    	public EleI EI腿;
+    	public ElementInstance EI腿;
 
-    	public HashSet<EleI> eis = new HashSet<EleI>();
+    	public HashSet<ElementInstance> eis = new HashSet<ElementInstance>();
 
     	public bool Is髪;
 
@@ -1019,9 +1019,9 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			Par par = 性器.Body.GetCurrent().EnumAllPar().First((Par e) => e.Tag == "陰核");
+    			ShapePart shapePart = 性器.Body.GetCurrent().EnumAllPar().First((ShapePart e) => e.Tag == "陰核");
     			性器.接続PA();
-    			return par.ToGlobal(par.GetBasePointBase().AddY(-0.003));
+    			return shapePart.ToGlobal(shapePart.GetBasePointBase().AddY(-0.003));
     		}
     	}
 
@@ -1029,9 +1029,9 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			Par par = 乳房左.Body.GetCurrent().EnumAllPar().First((Par e) => e.Tag == "乳首");
+    			ShapePart shapePart = 乳房左.Body.GetCurrent().EnumAllPar().First((ShapePart e) => e.Tag == "乳首");
     			乳房左.接続PA();
-    			return par.ToGlobal(par.GetBasePointBase());
+    			return shapePart.ToGlobal(shapePart.GetBasePointBase());
     		}
     	}
 
@@ -1039,9 +1039,9 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			Par par = 乳房右.Body.GetCurrent().EnumAllPar().First((Par e) => e.Tag == "乳首");
+    			ShapePart shapePart = 乳房右.Body.GetCurrent().EnumAllPar().First((ShapePart e) => e.Tag == "乳首");
     			乳房右.接続PA();
-    			return par.ToGlobal(par.GetBasePointBase());
+    			return shapePart.ToGlobal(shapePart.GetBasePointBase());
     		}
     	}
 
@@ -1049,9 +1049,9 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			Par par = 性器.Body.GetCurrent().EnumAllPar().First((Par e) => e.Tag == "尿道");
+    			ShapePart shapePart = 性器.Body.GetCurrent().EnumAllPar().First((ShapePart e) => e.Tag == "尿道");
     			性器.接続PA();
-    			return par.ToGlobal(par.GetBasePointBase());
+    			return shapePart.ToGlobal(shapePart.GetBasePointBase());
     		}
     	}
 
@@ -1059,9 +1059,9 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			Par par = 性器.Body.GetCurrent().EnumAllPar().First((Par e) => e.Tag == "膣口");
+    			ShapePart shapePart = 性器.Body.GetCurrent().EnumAllPar().First((ShapePart e) => e.Tag == "膣口");
     			性器.接続PA();
-    			return par.GetPosition();
+    			return shapePart.GetPosition();
     		}
     	}
 
@@ -1384,7 +1384,7 @@ namespace SlaveMatrix
     		set
     		{
     			体紅潮_ = value;
-    			Col.Alpha(ref Cha.CharacterData.body_color.粘膜, (int)(24.0 * 体紅潮_), out var ret);
+    			ColorHelper.Alpha(ref Cha.CharacterData.body_color.粘膜, (int)(24.0 * 体紅潮_), out var ret);
     			Set人肌色(Cha.CharacterData.body_color.人肌.BlendP1(ret));
     		}
     	}
@@ -1401,19 +1401,19 @@ namespace SlaveMatrix
     			double num = -0.003;
     			if (Is獣)
     			{
-    				断面_獣.X0Y0_子宮.SetBasePointCont(Dat.Vec2DUnitY * num * 子宮下がり_);
-    				断面_獣.X0Y1_子宮.SetBasePointCont(Dat.Vec2DUnitY * num * 子宮下がり_);
-    				断面_獣.X0Y2_子宮.SetBasePointCont(Dat.Vec2DUnitY * num * 子宮下がり_);
-    				断面_獣.X0Y3_子宮.SetBasePointCont(Dat.Vec2DUnitY * num * 子宮下がり_);
-    				断面_獣.X0Y4_子宮.SetBasePointCont(Dat.Vec2DUnitY * num * 子宮下がり_);
+    				断面_獣.X0Y0_子宮.SetBasePointCont(DataConsts.Vec2DUnitY * num * 子宮下がり_);
+    				断面_獣.X0Y1_子宮.SetBasePointCont(DataConsts.Vec2DUnitY * num * 子宮下がり_);
+    				断面_獣.X0Y2_子宮.SetBasePointCont(DataConsts.Vec2DUnitY * num * 子宮下がり_);
+    				断面_獣.X0Y3_子宮.SetBasePointCont(DataConsts.Vec2DUnitY * num * 子宮下がり_);
+    				断面_獣.X0Y4_子宮.SetBasePointCont(DataConsts.Vec2DUnitY * num * 子宮下がり_);
     			}
     			else
     			{
-    				断面_人.X0Y0_子宮.SetBasePointCont(Dat.Vec2DUnitY * num * 子宮下がり_);
-    				断面_人.X0Y1_子宮.SetBasePointCont(Dat.Vec2DUnitY * num * 子宮下がり_);
-    				断面_人.X0Y2_子宮.SetBasePointCont(Dat.Vec2DUnitY * num * 子宮下がり_);
-    				断面_人.X0Y3_子宮.SetBasePointCont(Dat.Vec2DUnitY * num * 子宮下がり_);
-    				断面_人.X0Y4_子宮.SetBasePointCont(Dat.Vec2DUnitY * num * 子宮下がり_);
+    				断面_人.X0Y0_子宮.SetBasePointCont(DataConsts.Vec2DUnitY * num * 子宮下がり_);
+    				断面_人.X0Y1_子宮.SetBasePointCont(DataConsts.Vec2DUnitY * num * 子宮下がり_);
+    				断面_人.X0Y2_子宮.SetBasePointCont(DataConsts.Vec2DUnitY * num * 子宮下がり_);
+    				断面_人.X0Y3_子宮.SetBasePointCont(DataConsts.Vec2DUnitY * num * 子宮下がり_);
+    				断面_人.X0Y4_子宮.SetBasePointCont(DataConsts.Vec2DUnitY * num * 子宮下がり_);
     			}
     		}
     	}
@@ -1483,18 +1483,18 @@ namespace SlaveMatrix
     		{
     			if (value != 0.0)
     			{
-    				蜘尾.X0Y0_出糸突起後_出糸突起中.SetSizeYCont(0.8 + 0.2 * RNG.XS.NextDouble());
+    				蜘尾.X0Y0_出糸突起後_出糸突起中.SetSizeYCont(0.8 + 0.2 * Rng.XS.NextDouble());
     			}
     			else
     			{
     				蜘尾.X0Y0_出糸突起後_出糸突起中.SetSizeYCont(1.0);
     			}
-    			蜘尾.X0Y0_出糸突起後_出糸突起左.SetAngleCont(value * RNG.XS.NextDouble());
-    			蜘尾.X0Y0_出糸突起後_出糸突起右.SetAngleCont((0.0 - value) * RNG.XS.NextDouble());
-    			蜘尾.X0Y0_出糸突起左_出糸突起1.SetAngleCont(value * RNG.XS.NextDouble());
-    			蜘尾.X0Y0_出糸突起右_出糸突起1.SetAngleCont((0.0 - value) * RNG.XS.NextDouble());
-    			蜘尾.X0Y0_出糸突起前_出糸突起左.SetAngleCont(value * RNG.XS.NextDouble());
-    			蜘尾.X0Y0_出糸突起前_出糸突起右.SetAngleCont((0.0 - value) * RNG.XS.NextDouble());
+    			蜘尾.X0Y0_出糸突起後_出糸突起左.SetAngleCont(value * Rng.XS.NextDouble());
+    			蜘尾.X0Y0_出糸突起後_出糸突起右.SetAngleCont((0.0 - value) * Rng.XS.NextDouble());
+    			蜘尾.X0Y0_出糸突起左_出糸突起1.SetAngleCont(value * Rng.XS.NextDouble());
+    			蜘尾.X0Y0_出糸突起右_出糸突起1.SetAngleCont((0.0 - value) * Rng.XS.NextDouble());
+    			蜘尾.X0Y0_出糸突起前_出糸突起左.SetAngleCont(value * Rng.XS.NextDouble());
+    			蜘尾.X0Y0_出糸突起前_出糸突起右.SetAngleCont((0.0 - value) * Rng.XS.NextDouble());
     			if (Is髪 && EI髪.ElesH.Contains(蜘尾))
     			{
     				EI髪.Updatef = true;
@@ -1596,18 +1596,18 @@ namespace SlaveMatrix
     			下着B_ノーマル.Yv = value;
     			下着B_マイクロ.Yv = value;
     			性器_人.Body.SetSizeYCont(0.65 + Waist.Yv * 0.35);
-    			foreach (Par item in 性器_人.Body.EnumJoinRoot)
+    			foreach (ShapePart item in 性器_人.Body.EnumJoinRoot)
     			{
-    				item.SetPositionCont(Dat.Vec2DUnitY * (Waist.Yv * 0.001 + 0.001));
+    				item.SetPositionCont(DataConsts.Vec2DUnitY * (Waist.Yv * 0.001 + 0.001));
     			}
     			肛門_人.Body.SetSizeYCont(0.65 + Waist.Yv * 0.35);
-    			foreach (Par item2 in 上着B_クロス.Body.EnumJoinRoot)
+    			foreach (ShapePart item2 in 上着B_クロス.Body.EnumJoinRoot)
     			{
-    				item2.SetPositionCont(Dat.Vec2DUnitY * (Waist.Yv * 0.003));
+    				item2.SetPositionCont(DataConsts.Vec2DUnitY * (Waist.Yv * 0.003));
     			}
-    			foreach (Par item3 in 上着B_前掛け.Body.EnumJoinRoot)
+    			foreach (ShapePart item3 in 上着B_前掛け.Body.EnumJoinRoot)
     			{
-    				item3.SetPositionCont(Dat.Vec2DUnitY * (Waist.Yv * 0.003));
+    				item3.SetPositionCont(DataConsts.Vec2DUnitY * (Waist.Yv * 0.003));
     			}
     			腰振り_人();
     		}
@@ -1626,18 +1626,18 @@ namespace SlaveMatrix
     			下着B_ノーマル.Yi = value;
     			下着B_マイクロ.Yi = value;
     			性器_人.Body.SetSizeYCont(0.65 + Waist.Yv * 0.35);
-    			foreach (Par item in 性器_人.Body.EnumJoinRoot)
+    			foreach (ShapePart item in 性器_人.Body.EnumJoinRoot)
     			{
-    				item.SetPositionCont(Dat.Vec2DUnitY * (Waist.Yv * 0.001 + 0.001));
+    				item.SetPositionCont(DataConsts.Vec2DUnitY * (Waist.Yv * 0.001 + 0.001));
     			}
     			肛門_人.Body.SetSizeYCont(0.65 + Waist.Yv * 0.35);
-    			foreach (Par item2 in 上着B_クロス.Body.EnumJoinRoot)
+    			foreach (ShapePart item2 in 上着B_クロス.Body.EnumJoinRoot)
     			{
-    				item2.SetPositionCont(Dat.Vec2DUnitY * (Waist.Yv * 0.003));
+    				item2.SetPositionCont(DataConsts.Vec2DUnitY * (Waist.Yv * 0.003));
     			}
-    			foreach (Par item3 in 上着B_前掛け.Body.EnumJoinRoot)
+    			foreach (ShapePart item3 in 上着B_前掛け.Body.EnumJoinRoot)
     			{
-    				item3.SetPositionCont(Dat.Vec2DUnitY * (Waist.Yv * 0.003));
+    				item3.SetPositionCont(DataConsts.Vec2DUnitY * (Waist.Yv * 0.003));
     			}
     			腰振り_人();
     		}
@@ -1654,9 +1654,9 @@ namespace SlaveMatrix
     			Waist_獣.Yv = value;
     			腰肌_獣.Yv = value;
     			性器_獣.Body.SetSizeYCont(0.65 + Waist_獣.Yv * 0.35);
-    			foreach (Par item in 性器_獣.Body.EnumJoinRoot)
+    			foreach (ShapePart item in 性器_獣.Body.EnumJoinRoot)
     			{
-    				item.SetPositionCont(Dat.Vec2DUnitY * (Waist_獣.Yv * 0.001 + 0.001));
+    				item.SetPositionCont(DataConsts.Vec2DUnitY * (Waist_獣.Yv * 0.001 + 0.001));
     			}
     			肛門_獣.Body.SetSizeYCont(0.65 + Waist_獣.Yv * 0.35);
     			腰振り_獣();
@@ -1674,9 +1674,9 @@ namespace SlaveMatrix
     			Waist_獣.Yi = value;
     			腰肌_獣.Yi = value;
     			性器_獣.Body.SetSizeYCont(0.65 + Waist_獣.Yv * 0.35);
-    			foreach (Par item in 性器_獣.Body.EnumJoinRoot)
+    			foreach (ShapePart item in 性器_獣.Body.EnumJoinRoot)
     			{
-    				item.SetPositionCont(Dat.Vec2DUnitY * (Waist_獣.Yv * 0.001 + 0.001));
+    				item.SetPositionCont(DataConsts.Vec2DUnitY * (Waist_獣.Yv * 0.001 + 0.001));
     			}
     			肛門_獣.Body.SetSizeYCont(0.65 + Waist_獣.Yv * 0.35);
     			腰振り_獣();
@@ -2238,8 +2238,8 @@ namespace SlaveMatrix
     		{
     			拘束具i = value;
     			object[] array = new object[1];
-    			Ele[] array2 = Elements;
-    			foreach (Ele ele in array2)
+    			Element[] array2 = Elements;
+    			foreach (Element ele in array2)
     			{
     				MethodInfo[] methods = ele.GetType().GetMethods();
     				foreach (MethodInfo methodInfo in methods)
@@ -2288,7 +2288,7 @@ namespace SlaveMatrix
     				}
     			}
     			array2 = Elements;
-    			foreach (Ele ele4 in array2)
+    			foreach (Element ele4 in array2)
     			{
     				if (ele4 is 触手_蔦)
     				{
@@ -2831,7 +2831,7 @@ namespace SlaveMatrix
     			}
     			else
     			{
-    				Set拘束具 = Sta.拘束具初期化;
+    				Set拘束具 = GlobalState.拘束具初期化;
     			}
     		}
     	}
@@ -2851,7 +2851,7 @@ namespace SlaveMatrix
     			}
     			else
     			{
-    				Set目隠帯 = Sta.目隠帯初期化;
+    				Set目隠帯 = GlobalState.目隠帯初期化;
     			}
     		}
     	}
@@ -2872,7 +2872,7 @@ namespace SlaveMatrix
     			}
     			else
     			{
-    				Set玉口枷 = Sta.玉口枷初期化;
+    				Set玉口枷 = GlobalState.玉口枷初期化;
     			}
     		}
     	}
@@ -2893,7 +2893,7 @@ namespace SlaveMatrix
     			}
     			else
     			{
-    				拘束具情報 拘束具初期化 = Sta.拘束具初期化;
+    				拘束具情報 拘束具初期化 = GlobalState.拘束具初期化;
     				Neck.拘束 = 拘束具初期化.表示;
     				Neck.首輪配色(拘束具初期化.色);
     			}
@@ -2916,9 +2916,9 @@ namespace SlaveMatrix
     		ぶっかけ大.Clear();
     	}
 
-    	public void Sort(IEnumerable<Ele> ar, List<Ele> li)
+    	public void Sort(IEnumerable<Element> ar, List<Element> li)
     	{
-    		foreach (Ele item in ar)
+    		foreach (Element item in ar)
     		{
     			int num;
     			if ((num = li.IndexOf(item.Par)) > -1)
@@ -2958,14 +2958,14 @@ namespace SlaveMatrix
     		Arm人 腕人;
     		翼鳥 翼鳥;
     		翼獣 翼獣;
-    		Ele p;
-    		Ele pp;
-    		foreach (Ele current_element in Elements.Reverse())
+    		Element p;
+    		Element pp;
+    		foreach (Element current_element in Elements.Reverse())
     		{
     			FieldInfo[] fields = current_element.ThisType.GetFields();
     			foreach (FieldInfo fieldInfo in fields)
     			{
-    				if (fieldInfo.FieldType.ToString() == Sta.拘束鎖t)
+    				if (fieldInfo.FieldType.ToString() == GlobalState.拘束鎖t)
     				{
     					((拘束鎖)fieldInfo.GetValue(current_element)).SetSize();
     				}
@@ -2974,7 +2974,7 @@ namespace SlaveMatrix
     			{
     				((角2_鬼)current_element).SetBasePoint();
     			}
-    			foreach (Par item19 in current_element.Body.EnumAllPar())
+    			foreach (ShapePart item19 in current_element.Body.EnumAllPar())
     			{
     				if (item19.Tag.Contains("ハイライト"))
     				{
@@ -4110,27 +4110,27 @@ namespace SlaveMatrix
     		}
     		if (頭.耳左_接続 != null)
     		{
-    			Sort(頭.耳左_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 耳左接続);
+    			Sort(頭.耳左_接続.Select((Element e) => e.EnumEle()).JoinEnum(), 耳左接続);
     		}
     		if (頭.耳右_接続 != null)
     		{
-    			Sort(頭.耳右_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 耳右接続);
+    			Sort(頭.耳右_接続.Select((Element e) => e.EnumEle()).JoinEnum(), 耳右接続);
     		}
     		if (頭.触覚左_接続 != null)
     		{
-    			Sort(頭.触覚左_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 触覚左接続);
+    			Sort(頭.触覚左_接続.Select((Element e) => e.EnumEle()).JoinEnum(), 触覚左接続);
     		}
     		if (頭.触覚右_接続 != null)
     		{
-    			Sort(頭.触覚右_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 触覚右接続);
+    			Sort(頭.触覚右_接続.Select((Element e) => e.EnumEle()).JoinEnum(), 触覚右接続);
     		}
     		if (頭.頬左_接続 != null)
     		{
-    			Sort(頭.頬左_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 頬左接続);
+    			Sort(頭.頬左_接続.Select((Element e) => e.EnumEle()).JoinEnum(), 頬左接続);
     		}
     		if (頭.頬右_接続 != null)
     		{
-    			Sort(頭.頬右_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 頬右接続);
+    			Sort(頭.頬右_接続.Select((Element e) => e.EnumEle()).JoinEnum(), 頬右接続);
     		}
     		if (基髪.頭頂左_接続 != null)
     		{
@@ -4159,17 +4159,17 @@ namespace SlaveMatrix
     			{
     				if (顔面.触覚左_接続 != null)
     				{
-    					Sort(顔面.触覚左_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 顔触覚左接続);
+    					Sort(顔面.触覚左_接続.Select((Element e) => e.EnumEle()).JoinEnum(), 顔触覚左接続);
     				}
     				if (顔面.触覚右_接続 != null)
     				{
-    					Sort(顔面.触覚右_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 顔触覚右接続);
+    					Sort(顔面.触覚右_接続.Select((Element e) => e.EnumEle()).JoinEnum(), 顔触覚右接続);
     				}
     			}
     		}
     		if (頭.大顎基_接続 != null)
     		{
-    			Sort(頭.大顎基_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 大顎基接続);
+    			Sort(頭.大顎基_接続.Select((Element e) => e.EnumEle()).JoinEnum(), 大顎基接続);
     		}
     		if (頭.頭頂_接続 != null)
     		{
@@ -4185,23 +4185,23 @@ namespace SlaveMatrix
     			肩左 = 後脇左s.LastOrDefault();
     			if (後脇左s.Length > 1)
     			{
-    				後腕左s = new List<Ele>[後脇左s.Length - 1];
+    				後腕左s = new List<Element>[後脇左s.Length - 1];
     				for (int j = 0; j < 後腕左s.Length; j++)
     				{
-    					後腕左s[j] = new List<Ele>();
+    					後腕左s[j] = new List<Element>();
     					Sort(後脇左s[j].EnumEle(), 後腕左s[j]);
     				}
     				if (肩左.UpperArm_接続 != null)
     				{
-    					Sort(肩左.UpperArm_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 腕左);
+    					Sort(肩左.UpperArm_接続.Select((Element e) => e.EnumEle()).JoinEnum(), 腕左);
     				}
     			}
     			else if (後脇左s.Length == 1 && 肩左.UpperArm_接続 != null)
     			{
-    				後腕左s = new List<Ele>[肩左.UpperArm_接続.Length - 1];
+    				後腕左s = new List<Element>[肩左.UpperArm_接続.Length - 1];
     				for (int k = 0; k < 後腕左s.Length; k++)
     				{
-    					後腕左s[k] = new List<Ele>();
+    					後腕左s[k] = new List<Element>();
     					Sort(肩左.UpperArm_接続[k].EnumEle(), 後腕左s[k]);
     				}
     				Sort(肩左.UpperArm_接続.Last().EnumEle(), 腕左);
@@ -4215,23 +4215,23 @@ namespace SlaveMatrix
     			肩右 = 後脇右s.LastOrDefault();
     			if (後脇右s.Length > 1)
     			{
-    				後腕右s = new List<Ele>[後脇右s.Length - 1];
+    				後腕右s = new List<Element>[後脇右s.Length - 1];
     				for (int l = 0; l < 後腕右s.Length; l++)
     				{
-    					後腕右s[l] = new List<Ele>();
+    					後腕右s[l] = new List<Element>();
     					Sort(後脇右s[l].EnumEle(), 後腕右s[l]);
     				}
     				if (肩右.UpperArm_接続 != null)
     				{
-    					Sort(肩右.UpperArm_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 腕右);
+    					Sort(肩右.UpperArm_接続.Select((Element e) => e.EnumEle()).JoinEnum(), 腕右);
     				}
     			}
     			else if (後脇右s.Length == 1 && 肩右.UpperArm_接続 != null)
     			{
-    				後腕右s = new List<Ele>[肩右.UpperArm_接続.Length - 1];
+    				後腕右s = new List<Element>[肩右.UpperArm_接続.Length - 1];
     				for (int m = 0; m < 後腕右s.Length; m++)
     				{
-    					後腕右s[m] = new List<Ele>();
+    					後腕右s[m] = new List<Element>();
     					Sort(肩右.UpperArm_接続[m].EnumEle(), 後腕右s[m]);
     				}
     				Sort(肩右.UpperArm_接続.Last().EnumEle(), 腕右);
@@ -4241,39 +4241,39 @@ namespace SlaveMatrix
     		nsr = new bool[1 + ((後腕右s != null) ? 後腕右s.Length : 0)];
     		if (Chest.翼上左_接続 != null)
     		{
-    			Sort(Chest.翼上左_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 胸上左接続);
+    			Sort(Chest.翼上左_接続.Select((Element e) => e.EnumEle()).JoinEnum(), 胸上左接続);
     		}
     		if (Chest.翼下左_接続 != null)
     		{
-    			Sort(Chest.翼下左_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 胸下左接続);
+    			Sort(Chest.翼下左_接続.Select((Element e) => e.EnumEle()).JoinEnum(), 胸下左接続);
     		}
     		if (Chest.翼上右_接続 != null)
     		{
-    			Sort(Chest.翼上右_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 胸上右接続);
+    			Sort(Chest.翼上右_接続.Select((Element e) => e.EnumEle()).JoinEnum(), 胸上右接続);
     		}
     		if (Chest.翼下右_接続 != null)
     		{
-    			Sort(Chest.翼下右_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 胸下右接続);
+    			Sort(Chest.翼下右_接続.Select((Element e) => e.EnumEle()).JoinEnum(), 胸下右接続);
     		}
     		if (Torso.翼左_接続 != null)
     		{
-    			Sort(Torso.翼左_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 胴後左接続);
+    			Sort(Torso.翼左_接続.Select((Element e) => e.EnumEle()).JoinEnum(), 胴後左接続);
     		}
     		if (Torso.翼右_接続 != null)
     		{
-    			Sort(Torso.翼右_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 胴後右接続);
+    			Sort(Torso.翼右_接続.Select((Element e) => e.EnumEle()).JoinEnum(), 胴後右接続);
     		}
     		if (Waist.翼左_接続 != null)
     		{
-    			Sort(Waist.翼左_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 腰後左接続);
+    			Sort(Waist.翼左_接続.Select((Element e) => e.EnumEle()).JoinEnum(), 腰後左接続);
     		}
     		if (Waist.翼右_接続 != null)
     		{
-    			Sort(Waist.翼右_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 腰後右接続);
+    			Sort(Waist.翼右_接続.Select((Element e) => e.EnumEle()).JoinEnum(), 腰後右接続);
     		}
     		if (Chest.背中_接続 != null)
     		{
-    			Sort(Chest.背中_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 背中接続);
+    			Sort(Chest.背中_接続.Select((Element e) => e.EnumEle()).JoinEnum(), 背中接続);
     		}
     		if (Waist.腿左_接続 != null)
     		{
@@ -4293,7 +4293,7 @@ namespace SlaveMatrix
     		}
     		if (Waist.尾_接続 != null)
     		{
-    			Sort(Waist.尾_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 尾接続);
+    			Sort(Waist.尾_接続.Select((Element e) => e.EnumEle()).JoinEnum(), 尾接続);
     		}
     		if (Waist.半身_接続 != null)
     		{
@@ -4306,7 +4306,7 @@ namespace SlaveMatrix
     				半身中1接続.Add(魚);
     				if (魚.尾_接続 != null)
     				{
-    					Sort(魚.尾_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 半身後接続);
+    					Sort(魚.尾_接続.Select((Element e) => e.EnumEle()).JoinEnum(), 半身後接続);
     				}
     				if (腕獣左.Count > 0 && 腕獣左.First().Shoulder.UpperArm_接続.IsEle<獣脚>())
     				{
@@ -4319,14 +4319,14 @@ namespace SlaveMatrix
     					Sort(from e in 魚.EnumEle().Skip(1)
     						where !bod.半身後接続.Contains(e)
     						select e, 半身中2接続);
-    					Ele[] array = 腿左接続.Where((Ele e) => !(e is 腿) && !(e.Par is 腿) && !((e.Par is Leg) | (e.Par is 足))).ToArray();
-    					foreach (Ele item in array)
+    					Element[] array = 腿左接続.Where((Element e) => !(e is 腿) && !(e.Par is 腿) && !((e.Par is Leg) | (e.Par is 足))).ToArray();
+    					foreach (Element item in array)
     					{
     						腿左接続.Remove(item);
     						半身前接続.Add(item);
     					}
-    					array = 腿右接続.Where((Ele e) => !(e is 腿) && !(e.Par is 腿) && !((e.Par is Leg) | (e.Par is 足))).ToArray();
-    					foreach (Ele item2 in array)
+    					array = 腿右接続.Where((Element e) => !(e is 腿) && !(e.Par is 腿) && !((e.Par is Leg) | (e.Par is 足))).ToArray();
+    					foreach (Element item2 in array)
     					{
     						腿右接続.Remove(item2);
     						半身前接続.Add(item2);
@@ -4341,7 +4341,7 @@ namespace SlaveMatrix
     				半身中1接続.Add(鯨);
     				if (鯨.尾_接続 != null)
     				{
-    					Sort(鯨.尾_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 半身後接続);
+    					Sort(鯨.尾_接続.Select((Element e) => e.EnumEle()).JoinEnum(), 半身後接続);
     				}
     				if (腕獣左.Count > 0 && 腕獣左.First().Shoulder.UpperArm_接続.IsEle<獣脚>())
     				{
@@ -4354,14 +4354,14 @@ namespace SlaveMatrix
     					Sort(from e in 鯨.EnumEle().Skip(1)
     						where !bod.半身後接続.Contains(e)
     						select e, 半身中2接続);
-    					Ele[] array = 腿左接続.Where((Ele e) => !(e is 腿) && !(e.Par is 腿) && !((e.Par is Leg) | (e.Par is 足))).ToArray();
-    					foreach (Ele item3 in array)
+    					Element[] array = 腿左接続.Where((Element e) => !(e is 腿) && !(e.Par is 腿) && !((e.Par is Leg) | (e.Par is 足))).ToArray();
+    					foreach (Element item3 in array)
     					{
     						腿左接続.Remove(item3);
     						半身前接続.Add(item3);
     					}
-    					array = 腿右接続.Where((Ele e) => !(e is 腿) && !(e.Par is 腿) && !((e.Par is Leg) | (e.Par is 足))).ToArray();
-    					foreach (Ele item4 in array)
+    					array = 腿右接続.Where((Element e) => !(e is 腿) && !(e.Par is 腿) && !((e.Par is Leg) | (e.Par is 足))).ToArray();
+    					foreach (Element item4 in array)
     					{
     						腿右接続.Remove(item4);
     						半身前接続.Add(item4);
@@ -4380,39 +4380,39 @@ namespace SlaveMatrix
     					{
     						if (item20.左_接続 != null)
     						{
-    							Sort(item20.左_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 半身中2接続);
+    							Sort(item20.左_接続.Select((Element e) => e.EnumEle()).JoinEnum(), 半身中2接続);
     						}
     						if (item20.右_接続 != null)
     						{
-    							Sort(item20.右_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 半身中2接続);
+    							Sort(item20.右_接続.Select((Element e) => e.EnumEle()).JoinEnum(), 半身中2接続);
     						}
     					}
-    					Sort(from e in 蛇.Torso_接続.Select((Ele e) => e.EnumEle()).JoinEnum()
+    					Sort(from e in 蛇.Torso_接続.Select((Element e) => e.EnumEle()).JoinEnum()
     						where !bod.半身中2接続.Contains(e)
     						select e, 半身後接続);
     				}
-    				蛇前 = new DE(蛇, 蛇.前描画);
+    				蛇前 = new DrawableElement(蛇, 蛇.前描画);
     				if (蛇.左_接続 != null)
     				{
-    					Sort(蛇.左_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 半身前接続);
+    					Sort(蛇.左_接続.Select((Element e) => e.EnumEle()).JoinEnum(), 半身前接続);
     				}
     				if (蛇.右_接続 != null)
     				{
-    					Sort(蛇.右_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 半身前接続);
+    					Sort(蛇.右_接続.Select((Element e) => e.EnumEle()).JoinEnum(), 半身前接続);
     				}
     				節足 ele2 = 半身中2接続.GetEle<節足>();
     				if (ele2 != null && (((ele2 is 節足_足蜘 || ele2 is 節足_足蠍) && !ele2.反転Y) || (ele2 is 節足_足百 && ele2.反転Y)))
     				{
     					半身中2接続.Reverse();
     				}
-    				Ele[] array = 腿左接続.Where((Ele e) => !(e is 腿) && !(e.Par is 腿) && !((e.Par is Leg) | (e.Par is 足))).ToArray();
-    				foreach (Ele item5 in array)
+    				Element[] array = 腿左接続.Where((Element e) => !(e is 腿) && !(e.Par is 腿) && !((e.Par is Leg) | (e.Par is 足))).ToArray();
+    				foreach (Element item5 in array)
     				{
     					腿左接続.Remove(item5);
     					半身前接続.Add(item5);
     				}
-    				array = 腿右接続.Where((Ele e) => !(e is 腿) && !(e.Par is 腿) && !((e.Par is Leg) | (e.Par is 足))).ToArray();
-    				foreach (Ele item6 in array)
+    				array = 腿右接続.Where((Element e) => !(e is 腿) && !(e.Par is 腿) && !((e.Par is Leg) | (e.Par is 足))).ToArray();
+    				foreach (Element item6 in array)
     				{
     					腿右接続.Remove(item6);
     					半身前接続.Add(item6);
@@ -4430,32 +4430,32 @@ namespace SlaveMatrix
     					{
     						if (item21.左_接続 != null)
     						{
-    							Sort(item21.左_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 半身中2接続);
+    							Sort(item21.左_接続.Select((Element e) => e.EnumEle()).JoinEnum(), 半身中2接続);
     						}
     						if (item21.右_接続 != null)
     						{
-    							Sort(item21.右_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 半身中2接続);
+    							Sort(item21.右_接続.Select((Element e) => e.EnumEle()).JoinEnum(), 半身中2接続);
     						}
     					}
-    					Sort(from e in 蟲.Torso_接続.Select((Ele e) => e.EnumEle()).JoinEnum()
+    					Sort(from e in 蟲.Torso_接続.Select((Element e) => e.EnumEle()).JoinEnum()
     						where !bod.半身中2接続.Contains(e)
     						select e, 半身後接続);
     				}
     				if (蟲.左1_接続 != null)
     				{
-    					Sort(蟲.左1_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 半身前接続);
+    					Sort(蟲.左1_接続.Select((Element e) => e.EnumEle()).JoinEnum(), 半身前接続);
     				}
     				if (蟲.右1_接続 != null)
     				{
-    					Sort(蟲.右1_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 半身前接続);
+    					Sort(蟲.右1_接続.Select((Element e) => e.EnumEle()).JoinEnum(), 半身前接続);
     				}
     				if (蟲.左0_接続 != null)
     				{
-    					Sort(蟲.左0_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 半身前接続);
+    					Sort(蟲.左0_接続.Select((Element e) => e.EnumEle()).JoinEnum(), 半身前接続);
     				}
     				if (蟲.右0_接続 != null)
     				{
-    					Sort(蟲.右0_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 半身前接続);
+    					Sort(蟲.右0_接続.Select((Element e) => e.EnumEle()).JoinEnum(), 半身前接続);
     				}
     				節足 ele3 = 半身中2接続.GetEle<節足>();
     				if (ele3 != null && (((ele3 is 節足_足蜘 || ele3 is 節足_足蠍) && !ele3.反転Y) || (ele3 is 節足_足百 && ele3.反転Y)))
@@ -4466,7 +4466,7 @@ namespace SlaveMatrix
     			else if (ele is 四足胸)
     			{
     				Is獣 = true;
-    				foreach (Ele item22 in ele.EnumEle())
+    				foreach (Element item22 in ele.EnumEle())
     				{
     					if (item22 is 四足胸)
     					{
@@ -4603,11 +4603,11 @@ namespace SlaveMatrix
     				}
     				if (Chest_獣 != null)
     				{
-    					半身中1接続.Add(new DE(Chest_獣, Chest_獣.胸描画));
+    					半身中1接続.Add(new DrawableElement(Chest_獣, Chest_獣.胸描画));
     				}
     				if (Chest_獣 != null)
     				{
-    					半身中1接続.Add(new DE(Chest_獣, Chest_獣.肌描画));
+    					半身中1接続.Add(new DrawableElement(Chest_獣, Chest_獣.肌描画));
     				}
     				if (ボテ腹_獣 != null)
     				{
@@ -4637,61 +4637,61 @@ namespace SlaveMatrix
     				{
     					if (Waist_獣.腿左_接続 != null)
     					{
-    						Sort(Waist_獣.腿左_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 半身前接続);
+    						Sort(Waist_獣.腿左_接続.Select((Element e) => e.EnumEle()).JoinEnum(), 半身前接続);
     					}
     					if (Waist_獣.腿右_接続 != null)
     					{
-    						Sort(Waist_獣.腿右_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 半身前接続);
+    						Sort(Waist_獣.腿右_接続.Select((Element e) => e.EnumEle()).JoinEnum(), 半身前接続);
     					}
     					if (Waist_獣.翼左_接続 != null)
     					{
-    						Sort(Waist_獣.翼左_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 半身後接続);
+    						Sort(Waist_獣.翼左_接続.Select((Element e) => e.EnumEle()).JoinEnum(), 半身後接続);
     					}
     					if (Waist_獣.翼右_接続 != null)
     					{
-    						Sort(Waist_獣.翼右_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 半身後接続);
+    						Sort(Waist_獣.翼右_接続.Select((Element e) => e.EnumEle()).JoinEnum(), 半身後接続);
     					}
     					if (Waist_獣.尾_接続 != null)
     					{
-    						Sort(Waist_獣.尾_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 半身中1接続);
+    						Sort(Waist_獣.尾_接続.Select((Element e) => e.EnumEle()).JoinEnum(), 半身中1接続);
     					}
     					if (Waist_獣.半身_接続 != null)
     					{
-    						Sort(Waist_獣.半身_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 半身中1接続);
+    						Sort(Waist_獣.半身_接続.Select((Element e) => e.EnumEle()).JoinEnum(), 半身中1接続);
     					}
     				}
     				if (Torso_獣 != null)
     				{
     					if (Torso_獣.翼左_接続 != null)
     					{
-    						Sort(Torso_獣.翼左_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 半身後接続);
+    						Sort(Torso_獣.翼左_接続.Select((Element e) => e.EnumEle()).JoinEnum(), 半身後接続);
     					}
     					if (Torso_獣.翼右_接続 != null)
     					{
-    						Sort(Torso_獣.翼右_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 半身後接続);
+    						Sort(Torso_獣.翼右_接続.Select((Element e) => e.EnumEle()).JoinEnum(), 半身後接続);
     					}
     				}
     				if (Chest_獣 != null)
     				{
     					if (Chest_獣.背中_接続 != null)
     					{
-    						Sort(Chest_獣.背中_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 半身後接続);
+    						Sort(Chest_獣.背中_接続.Select((Element e) => e.EnumEle()).JoinEnum(), 半身後接続);
     					}
     					if (Chest_獣.翼上左_接続 != null)
     					{
-    						Sort(Chest_獣.翼上左_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 半身後接続);
+    						Sort(Chest_獣.翼上左_接続.Select((Element e) => e.EnumEle()).JoinEnum(), 半身後接続);
     					}
     					if (Chest_獣.翼下左_接続 != null)
     					{
-    						Sort(Chest_獣.翼下左_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 半身後接続);
+    						Sort(Chest_獣.翼下左_接続.Select((Element e) => e.EnumEle()).JoinEnum(), 半身後接続);
     					}
     					if (Chest_獣.翼上右_接続 != null)
     					{
-    						Sort(Chest_獣.翼上右_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 半身後接続);
+    						Sort(Chest_獣.翼上右_接続.Select((Element e) => e.EnumEle()).JoinEnum(), 半身後接続);
     					}
     					if (Chest_獣.翼下右_接続 != null)
     					{
-    						Sort(Chest_獣.翼下右_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 半身後接続);
+    						Sort(Chest_獣.翼下右_接続.Select((Element e) => e.EnumEle()).JoinEnum(), 半身後接続);
     					}
     				}
     				if (胸毛_獣 != null)
@@ -4717,28 +4717,28 @@ namespace SlaveMatrix
     				半身中1接続.Add(蛸);
     				if (蛸.軟体内左_接続 != null)
     				{
-    					Sort(蛸.軟体内左_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 半身中2接続);
+    					Sort(蛸.軟体内左_接続.Select((Element e) => e.EnumEle()).JoinEnum(), 半身中2接続);
     				}
     				if (蛸.軟体内右_接続 != null)
     				{
-    					Sort(蛸.軟体内右_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 半身中2接続);
+    					Sort(蛸.軟体内右_接続.Select((Element e) => e.EnumEle()).JoinEnum(), 半身中2接続);
     				}
     				if (蛸.軟体外左_接続 != null)
     				{
-    					Sort(蛸.軟体外左_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 半身中2接続);
+    					Sort(蛸.軟体外左_接続.Select((Element e) => e.EnumEle()).JoinEnum(), 半身中2接続);
     				}
     				if (蛸.軟体外右_接続 != null)
     				{
-    					Sort(蛸.軟体外右_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 半身中2接続);
+    					Sort(蛸.軟体外右_接続.Select((Element e) => e.EnumEle()).JoinEnum(), 半身中2接続);
     				}
-    				Ele[] array = 腿左接続.Where((Ele e) => !(e is 腿) && !(e.Par is 腿) && !((e.Par is Leg) | (e.Par is 足))).ToArray();
-    				foreach (Ele item7 in array)
+    				Element[] array = 腿左接続.Where((Element e) => !(e is 腿) && !(e.Par is 腿) && !((e.Par is Leg) | (e.Par is 足))).ToArray();
+    				foreach (Element item7 in array)
     				{
     					腿左接続.Remove(item7);
     					半身前接続.Add(item7);
     				}
-    				array = 腿右接続.Where((Ele e) => !(e is 腿) && !(e.Par is 腿) && !((e.Par is Leg) | (e.Par is 足))).ToArray();
-    				foreach (Ele item8 in array)
+    				array = 腿右接続.Where((Element e) => !(e is 腿) && !(e.Par is 腿) && !((e.Par is Leg) | (e.Par is 足))).ToArray();
+    				foreach (Element item8 in array)
     				{
     					腿右接続.Remove(item8);
     					半身前接続.Add(item8);
@@ -4751,69 +4751,69 @@ namespace SlaveMatrix
     				Waist.WaistCD.c2.Col2 = 蜘.柄CD.c2.Col2;
     				if (蜘.尾_接続 != null)
     				{
-    					Sort(蜘.尾_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 半身後接続);
+    					Sort(蜘.尾_接続.Select((Element e) => e.EnumEle()).JoinEnum(), 半身後接続);
     				}
     				半身中1接続.Add(蜘);
     				if (蜘.触肢左_接続 != null)
     				{
-    					Sort(蜘.触肢左_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 半身前接続);
+    					Sort(蜘.触肢左_接続.Select((Element e) => e.EnumEle()).JoinEnum(), 半身前接続);
     				}
     				if (蜘.触肢右_接続 != null)
     				{
-    					Sort(蜘.触肢右_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 半身前接続);
+    					Sort(蜘.触肢右_接続.Select((Element e) => e.EnumEle()).JoinEnum(), 半身前接続);
     				}
     				if (蜘.節足左1_接続 != null)
     				{
-    					Sort(蜘.節足左1_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 半身前接続);
+    					Sort(蜘.節足左1_接続.Select((Element e) => e.EnumEle()).JoinEnum(), 半身前接続);
     				}
     				if (蜘.節足右1_接続 != null)
     				{
-    					Sort(蜘.節足右1_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 半身前接続);
+    					Sort(蜘.節足右1_接続.Select((Element e) => e.EnumEle()).JoinEnum(), 半身前接続);
     				}
     				if (蜘.節足左2_接続 != null)
     				{
-    					Sort(蜘.節足左2_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 半身前接続);
+    					Sort(蜘.節足左2_接続.Select((Element e) => e.EnumEle()).JoinEnum(), 半身前接続);
     				}
     				if (蜘.節足右2_接続 != null)
     				{
-    					Sort(蜘.節足右2_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 半身前接続);
+    					Sort(蜘.節足右2_接続.Select((Element e) => e.EnumEle()).JoinEnum(), 半身前接続);
     				}
-    				if (蜘.節足左3_接続 != null && !蜘.節足左3_接続.IsEle<節足_足百>() && 蜘.節足左3_接続.Any((Ele e_) => e_.反転Y))
+    				if (蜘.節足左3_接続 != null && !蜘.節足左3_接続.IsEle<節足_足百>() && 蜘.節足左3_接続.Any((Element e_) => e_.反転Y))
     				{
     					if (蜘.節足左4_接続 != null)
     					{
-    						Sort(蜘.節足左4_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 半身前接続);
+    						Sort(蜘.節足左4_接続.Select((Element e) => e.EnumEle()).JoinEnum(), 半身前接続);
     					}
     					if (蜘.節足右4_接続 != null)
     					{
-    						Sort(蜘.節足右4_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 半身前接続);
+    						Sort(蜘.節足右4_接続.Select((Element e) => e.EnumEle()).JoinEnum(), 半身前接続);
     					}
     					if (蜘.節足左3_接続 != null)
     					{
-    						Sort(蜘.節足左3_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 半身前接続);
+    						Sort(蜘.節足左3_接続.Select((Element e) => e.EnumEle()).JoinEnum(), 半身前接続);
     					}
     					if (蜘.節足右3_接続 != null)
     					{
-    						Sort(蜘.節足右3_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 半身前接続);
+    						Sort(蜘.節足右3_接続.Select((Element e) => e.EnumEle()).JoinEnum(), 半身前接続);
     					}
     				}
     				else
     				{
     					if (蜘.節足左3_接続 != null)
     					{
-    						Sort(蜘.節足左3_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 半身前接続);
+    						Sort(蜘.節足左3_接続.Select((Element e) => e.EnumEle()).JoinEnum(), 半身前接続);
     					}
     					if (蜘.節足右3_接続 != null)
     					{
-    						Sort(蜘.節足右3_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 半身前接続);
+    						Sort(蜘.節足右3_接続.Select((Element e) => e.EnumEle()).JoinEnum(), 半身前接続);
     					}
     					if (蜘.節足左4_接続 != null)
     					{
-    						Sort(蜘.節足左4_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 半身前接続);
+    						Sort(蜘.節足左4_接続.Select((Element e) => e.EnumEle()).JoinEnum(), 半身前接続);
     					}
     					if (蜘.節足右4_接続 != null)
     					{
-    						Sort(蜘.節足右4_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 半身前接続);
+    						Sort(蜘.節足右4_接続.Select((Element e) => e.EnumEle()).JoinEnum(), 半身前接続);
     					}
     				}
     			}
@@ -4824,57 +4824,57 @@ namespace SlaveMatrix
     				Waist.WaistCD.c2.Col2 = 蠍.前腹_腹節3_節0CD.c2.Col1;
     				if (蠍.尾_接続 != null)
     				{
-    					Sort(蠍.尾_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 半身後接続);
+    					Sort(蠍.尾_接続.Select((Element e) => e.EnumEle()).JoinEnum(), 半身後接続);
     				}
     				半身中1接続.Add(蠍);
-    				蠍前 = new DE(蠍, 蠍.前描画);
+    				蠍前 = new DrawableElement(蠍, 蠍.前描画);
     				if (蠍.触肢左_接続 != null)
     				{
-    					Sort(蠍.触肢左_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 半身前接続);
+    					Sort(蠍.触肢左_接続.Select((Element e) => e.EnumEle()).JoinEnum(), 半身前接続);
     				}
     				if (蠍.節足左1_接続 != null)
     				{
-    					Sort(蠍.節足左1_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 半身前接続);
+    					Sort(蠍.節足左1_接続.Select((Element e) => e.EnumEle()).JoinEnum(), 半身前接続);
     				}
     				if (蠍.節足左2_接続 != null)
     				{
-    					Sort(蠍.節足左2_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 半身前接続);
+    					Sort(蠍.節足左2_接続.Select((Element e) => e.EnumEle()).JoinEnum(), 半身前接続);
     				}
     				if (蠍.節足左3_接続 != null)
     				{
-    					Sort(蠍.節足左3_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 半身前接続);
+    					Sort(蠍.節足左3_接続.Select((Element e) => e.EnumEle()).JoinEnum(), 半身前接続);
     				}
     				if (蠍.節足左4_接続 != null)
     				{
-    					Sort(蠍.節足左4_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 半身前接続);
+    					Sort(蠍.節足左4_接続.Select((Element e) => e.EnumEle()).JoinEnum(), 半身前接続);
     				}
     				if (蠍.櫛状板左_接続 != null)
     				{
-    					Sort(蠍.櫛状板左_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 半身前接続);
+    					Sort(蠍.櫛状板左_接続.Select((Element e) => e.EnumEle()).JoinEnum(), 半身前接続);
     				}
     				if (蠍.触肢右_接続 != null)
     				{
-    					Sort(蠍.触肢右_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 半身前接続);
+    					Sort(蠍.触肢右_接続.Select((Element e) => e.EnumEle()).JoinEnum(), 半身前接続);
     				}
     				if (蠍.節足右1_接続 != null)
     				{
-    					Sort(蠍.節足右1_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 半身前接続);
+    					Sort(蠍.節足右1_接続.Select((Element e) => e.EnumEle()).JoinEnum(), 半身前接続);
     				}
     				if (蠍.節足右2_接続 != null)
     				{
-    					Sort(蠍.節足右2_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 半身前接続);
+    					Sort(蠍.節足右2_接続.Select((Element e) => e.EnumEle()).JoinEnum(), 半身前接続);
     				}
     				if (蠍.節足右3_接続 != null)
     				{
-    					Sort(蠍.節足右3_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 半身前接続);
+    					Sort(蠍.節足右3_接続.Select((Element e) => e.EnumEle()).JoinEnum(), 半身前接続);
     				}
     				if (蠍.節足右4_接続 != null)
     				{
-    					Sort(蠍.節足右4_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 半身前接続);
+    					Sort(蠍.節足右4_接続.Select((Element e) => e.EnumEle()).JoinEnum(), 半身前接続);
     				}
     				if (蠍.櫛状板右_接続 != null)
     				{
-    					Sort(蠍.櫛状板右_接続.Select((Ele e) => e.EnumEle()).JoinEnum(), 半身前接続);
+    					Sort(蠍.櫛状板右_接続.Select((Element e) => e.EnumEle()).JoinEnum(), 半身前接続);
     				}
     			}
     			else if (ele is 単足_植)
@@ -4882,14 +4882,14 @@ namespace SlaveMatrix
     				Is植 = true;
     				植 = (単足_植)ele;
     				Sort(植.EnumEle(), 半身中1接続);
-    				Ele[] array = 腿左接続.Where((Ele e) => !(e is 腿) && !(e.Par is 腿) && !((e.Par is Leg) | (e.Par is 足))).ToArray();
-    				foreach (Ele item9 in array)
+    				Element[] array = 腿左接続.Where((Element e) => !(e is 腿) && !(e.Par is 腿) && !((e.Par is Leg) | (e.Par is 足))).ToArray();
+    				foreach (Element item9 in array)
     				{
     					腿左接続.Remove(item9);
     					半身前接続.Add(item9);
     				}
-    				array = 腿右接続.Where((Ele e) => !(e is 腿) && !(e.Par is 腿) && !((e.Par is Leg) | (e.Par is 足))).ToArray();
-    				foreach (Ele item10 in array)
+    				array = 腿右接続.Where((Element e) => !(e is 腿) && !(e.Par is 腿) && !((e.Par is Leg) | (e.Par is 足))).ToArray();
+    				foreach (Element item10 in array)
     				{
     					腿右接続.Remove(item10);
     					半身前接続.Add(item10);
@@ -4900,14 +4900,14 @@ namespace SlaveMatrix
     				Is粘 = true;
     				粘 = (単足_粘)ele;
     				Sort(粘.EnumEle(), 半身後接続);
-    				Ele[] array = 腿左接続.Where((Ele e) => !(e is 腿) && !(e.Par is 腿) && !((e.Par is Leg) | (e.Par is 足))).ToArray();
-    				foreach (Ele item11 in array)
+    				Element[] array = 腿左接続.Where((Element e) => !(e is 腿) && !(e.Par is 腿) && !((e.Par is Leg) | (e.Par is 足))).ToArray();
+    				foreach (Element item11 in array)
     				{
     					腿左接続.Remove(item11);
     					半身前接続.Add(item11);
     				}
-    				array = 腿右接続.Where((Ele e) => !(e is 腿) && !(e.Par is 腿) && !((e.Par is Leg) | (e.Par is 足))).ToArray();
-    				foreach (Ele item12 in array)
+    				array = 腿右接続.Where((Element e) => !(e is 腿) && !(e.Par is 腿) && !((e.Par is Leg) | (e.Par is 足))).ToArray();
+    				foreach (Element item12 in array)
     				{
     					腿右接続.Remove(item12);
     					半身前接続.Add(item12);
@@ -4918,118 +4918,118 @@ namespace SlaveMatrix
     		{
     			Inserts(item23.UpperArm, 0, item23.UpperArm.飛膜);
     			Inserts(item23.手, -2, item23.手.飛膜);
-    			Inserts(item23.手.飛膜, 1, new DE(item23.手, item23.手.指先描画));
+    			Inserts(item23.手.飛膜, 1, new DrawableElement(item23.手, item23.手.指先描画));
     		}
     		大顎基 ele4 = 大顎基接続.GetEle<大顎基>();
     		if (ele4 != null)
     		{
-    			Inserts(ele4, 1 + ((ele4.顎左_接続 != null) ? ele4.顎左_接続.Select((Ele f) => f.EnumEle()).JoinEnum().Count() : 0) + ((ele4.顎右_接続 != null) ? ele4.顎右_接続.Select((Ele f) => f.EnumEle()).JoinEnum().Count() : 0), ele4.大顎上);
+    			Inserts(ele4, 1 + ((ele4.顎左_接続 != null) ? ele4.顎左_接続.Select((Element f) => f.EnumEle()).JoinEnum().Count() : 0) + ((ele4.顎右_接続 != null) ? ele4.顎右_接続.Select((Element f) => f.EnumEle()).JoinEnum().Count() : 0), ele4.大顎上);
     		}
     		foreach (Arm人 item24 in Arm人左)
     		{
     			if (item24.LowerArm != null)
     			{
-    				Inserts(item24.LowerArm, 1 + ((item24.LowerArm.手_接続 != null) ? item24.LowerArm.手_接続.Select((Ele f) => f.EnumEle()).JoinEnum().Count() : 0) + ((item24.LowerArm.虫鎌_接続 != null) ? item24.LowerArm.虫鎌_接続.Select((Ele f) => f.EnumEle()).JoinEnum().Count() : 0), new DE(item24.LowerArm, item24.LowerArm.外腕描画));
+    				Inserts(item24.LowerArm, 1 + ((item24.LowerArm.手_接続 != null) ? item24.LowerArm.手_接続.Select((Element f) => f.EnumEle()).JoinEnum().Count() : 0) + ((item24.LowerArm.虫鎌_接続 != null) ? item24.LowerArm.虫鎌_接続.Select((Element f) => f.EnumEle()).JoinEnum().Count() : 0), new DrawableElement(item24.LowerArm, item24.LowerArm.外腕描画));
     			}
     		}
     		foreach (Arm人 item25 in Arm人右)
     		{
     			if (item25.LowerArm != null)
     			{
-    				Inserts(item25.LowerArm, 1 + ((item25.LowerArm.手_接続 != null) ? item25.LowerArm.手_接続.Select((Ele f) => f.EnumEle()).JoinEnum().Count() : 0) + ((item25.LowerArm.虫鎌_接続 != null) ? item25.LowerArm.虫鎌_接続.Select((Ele f) => f.EnumEle()).JoinEnum().Count() : 0), new DE(item25.LowerArm, item25.LowerArm.外腕描画));
+    				Inserts(item25.LowerArm, 1 + ((item25.LowerArm.手_接続 != null) ? item25.LowerArm.手_接続.Select((Element f) => f.EnumEle()).JoinEnum().Count() : 0) + ((item25.LowerArm.虫鎌_接続 != null) ? item25.LowerArm.虫鎌_接続.Select((Element f) => f.EnumEle()).JoinEnum().Count() : 0), new DrawableElement(item25.LowerArm, item25.LowerArm.外腕描画));
     			}
     		}
     		foreach (Arm翼鳥 item26 in 腕翼鳥左)
     		{
     			if (item26.LowerArm != null)
     			{
-    				Inserts(item26.LowerArm, 1 + ((item26.LowerArm.手_接続 != null) ? item26.LowerArm.手_接続.Select((Ele f) => f.EnumEle()).JoinEnum().Count() : 0), new DE(item26.LowerArm, item26.LowerArm.小雨覆描画));
+    				Inserts(item26.LowerArm, 1 + ((item26.LowerArm.手_接続 != null) ? item26.LowerArm.手_接続.Select((Element f) => f.EnumEle()).JoinEnum().Count() : 0), new DrawableElement(item26.LowerArm, item26.LowerArm.小雨覆描画));
     			}
     		}
     		foreach (翼鳥 item27 in 翼鳥左)
     		{
     			if (item27.LowerArm != null)
     			{
-    				Inserts(item27.LowerArm, 1 + ((item27.LowerArm.手_接続 != null) ? item27.LowerArm.手_接続.Select((Ele f) => f.EnumEle()).JoinEnum().Count() : 0), new DE(item27.LowerArm, item27.LowerArm.小雨覆描画));
+    				Inserts(item27.LowerArm, 1 + ((item27.LowerArm.手_接続 != null) ? item27.LowerArm.手_接続.Select((Element f) => f.EnumEle()).JoinEnum().Count() : 0), new DrawableElement(item27.LowerArm, item27.LowerArm.小雨覆描画));
     			}
     		}
     		foreach (Arm翼鳥 item28 in 腕翼鳥右)
     		{
     			if (item28.LowerArm != null)
     			{
-    				Inserts(item28.LowerArm, 1 + ((item28.LowerArm.手_接続 != null) ? item28.LowerArm.手_接続.Select((Ele f) => f.EnumEle()).JoinEnum().Count() : 0), new DE(item28.LowerArm, item28.LowerArm.小雨覆描画));
+    				Inserts(item28.LowerArm, 1 + ((item28.LowerArm.手_接続 != null) ? item28.LowerArm.手_接続.Select((Element f) => f.EnumEle()).JoinEnum().Count() : 0), new DrawableElement(item28.LowerArm, item28.LowerArm.小雨覆描画));
     			}
     		}
     		foreach (翼鳥 item29 in 翼鳥右)
     		{
     			if (item29.LowerArm != null)
     			{
-    				Inserts(item29.LowerArm, 1 + ((item29.LowerArm.手_接続 != null) ? item29.LowerArm.手_接続.Select((Ele f) => f.EnumEle()).JoinEnum().Count() : 0), new DE(item29.LowerArm, item29.LowerArm.小雨覆描画));
+    				Inserts(item29.LowerArm, 1 + ((item29.LowerArm.手_接続 != null) ? item29.LowerArm.手_接続.Select((Element f) => f.EnumEle()).JoinEnum().Count() : 0), new DrawableElement(item29.LowerArm, item29.LowerArm.小雨覆描画));
     			}
     		}
     		foreach (Arm翼獣 item30 in 腕翼獣左)
     		{
     			if (item30.LowerArm != null)
     			{
-    				Inserts(item30.LowerArm, 1 + ((item30.LowerArm.手_接続 != null) ? item30.LowerArm.手_接続.Select((Ele f) => f.EnumEle()).JoinEnum().Count() : 0), new DE(item30.LowerArm, item30.LowerArm.腕輪描画));
+    				Inserts(item30.LowerArm, 1 + ((item30.LowerArm.手_接続 != null) ? item30.LowerArm.手_接続.Select((Element f) => f.EnumEle()).JoinEnum().Count() : 0), new DrawableElement(item30.LowerArm, item30.LowerArm.腕輪描画));
     			}
     		}
     		foreach (翼獣 item31 in 翼獣左)
     		{
     			if (item31.LowerArm != null)
     			{
-    				Inserts(item31.LowerArm, 1 + ((item31.LowerArm.手_接続 != null) ? item31.LowerArm.手_接続.Select((Ele f) => f.EnumEle()).JoinEnum().Count() : 0), new DE(item31.LowerArm, item31.LowerArm.腕輪描画));
+    				Inserts(item31.LowerArm, 1 + ((item31.LowerArm.手_接続 != null) ? item31.LowerArm.手_接続.Select((Element f) => f.EnumEle()).JoinEnum().Count() : 0), new DrawableElement(item31.LowerArm, item31.LowerArm.腕輪描画));
     			}
     		}
     		foreach (Arm翼獣 item32 in 腕翼獣右)
     		{
     			if (item32.LowerArm != null)
     			{
-    				Inserts(item32.LowerArm, 1 + ((item32.LowerArm.手_接続 != null) ? item32.LowerArm.手_接続.Select((Ele f) => f.EnumEle()).JoinEnum().Count() : 0), new DE(item32.LowerArm, item32.LowerArm.腕輪描画));
+    				Inserts(item32.LowerArm, 1 + ((item32.LowerArm.手_接続 != null) ? item32.LowerArm.手_接続.Select((Element f) => f.EnumEle()).JoinEnum().Count() : 0), new DrawableElement(item32.LowerArm, item32.LowerArm.腕輪描画));
     			}
     		}
     		foreach (翼獣 item33 in 翼獣右)
     		{
     			if (item33.LowerArm != null)
     			{
-    				Inserts(item33.LowerArm, 1 + ((item33.LowerArm.手_接続 != null) ? item33.LowerArm.手_接続.Select((Ele f) => f.EnumEle()).JoinEnum().Count() : 0), new DE(item33.LowerArm, item33.LowerArm.腕輪描画));
+    				Inserts(item33.LowerArm, 1 + ((item33.LowerArm.手_接続 != null) ? item33.LowerArm.手_接続.Select((Element f) => f.EnumEle()).JoinEnum().Count() : 0), new DrawableElement(item33.LowerArm, item33.LowerArm.腕輪描画));
     			}
     		}
     		foreach (脚人 item34 in 脚人左)
     		{
     			if (item34.Leg != null)
     			{
-    				Inserts(item34.Leg, 1 + ((item34.Leg.足_接続 != null) ? item34.Leg.足_接続.Select((Ele f) => f.EnumEle()).JoinEnum().Count() : 0), new DE(item34.Leg, item34.Leg.外描画));
+    				Inserts(item34.Leg, 1 + ((item34.Leg.足_接続 != null) ? item34.Leg.足_接続.Select((Element f) => f.EnumEle()).JoinEnum().Count() : 0), new DrawableElement(item34.Leg, item34.Leg.外描画));
     			}
     		}
     		foreach (脚人 item35 in 脚人右)
     		{
     			if (item35.Leg != null)
     			{
-    				Inserts(item35.Leg, 1 + ((item35.Leg.足_接続 != null) ? item35.Leg.足_接続.Select((Ele f) => f.EnumEle()).JoinEnum().Count() : 0), new DE(item35.Leg, item35.Leg.外描画));
+    				Inserts(item35.Leg, 1 + ((item35.Leg.足_接続 != null) ? item35.Leg.足_接続.Select((Element f) => f.EnumEle()).JoinEnum().Count() : 0), new DrawableElement(item35.Leg, item35.Leg.外描画));
     			}
     		}
     		foreach (脚人 item36 in 脚人左)
     		{
     			if (item36.足 != null)
     			{
-    				Inserts(item36.足, -1, new DE(item36.足, item36.足.底描画));
-    				Inserts(item36.足, 2, new DE(item36.足, item36.足.靴描画));
+    				Inserts(item36.足, -1, new DrawableElement(item36.足, item36.足.底描画));
+    				Inserts(item36.足, 2, new DrawableElement(item36.足, item36.足.靴描画));
     			}
     		}
     		foreach (脚人 item37 in 脚人右)
     		{
     			if (item37.足 != null)
     			{
-    				Inserts(item37.足, -1, new DE(item37.足, item37.足.底描画));
-    				Inserts(item37.足, 2, new DE(item37.足, item37.足.靴描画));
+    				Inserts(item37.足, -1, new DrawableElement(item37.足, item37.足.底描画));
+    				Inserts(item37.足, 2, new DrawableElement(item37.足, item37.足.靴描画));
     			}
     		}
     		foreach (虫鎌 e in 虫鎌左)
     		{
     			if (e.ConnectionType == ConnectionInfo.LowerArm_人_虫鎌_接続)
     			{
-    				int num = e.Par.EnumEle().Count((Ele f) => f.Par == e.Par);
+    				int num = e.Par.EnumEle().Count((Element f) => f.Par == e.Par);
     				Inserts(e.Par, 2 + num, e)?.Remove(e);
     			}
     		}
@@ -5037,24 +5037,24 @@ namespace SlaveMatrix
     		{
     			if (e.ConnectionType == ConnectionInfo.LowerArm_人_虫鎌_接続)
     			{
-    				int num = e.Par.EnumEle().Count((Ele f) => f.Par == e.Par);
+    				int num = e.Par.EnumEle().Count((Element f) => f.Par == e.Par);
     				Inserts(e.Par, 2 + num, e)?.Remove(e);
     			}
     		}
-    		Ele ele5 = 腕左.LastOrDefault((Ele e) => e.Par != null && e.Par.Par != null && e.Par.Par.ConnectionType == ConnectionInfo.Chest_肩左_接続);
+    		Element ele5 = 腕左.LastOrDefault((Element e) => e.Par != null && e.Par.Par != null && e.Par.Par.ConnectionType == ConnectionInfo.Chest_肩左_接続);
     		if (ele5 != null)
     		{
     			LowerArm以降左.Add(ele5);
     		}
-    		HashSet<Ele> hashSet = new HashSet<Ele>();
+    		HashSet<Element> hashSet = new HashSet<Element>();
     		foreach (蝙通常 item38 in 蝙通常.Where((蝙通常 e) => e.UpperArm.Par != null && e.UpperArm.Par.ConnectionType == ConnectionInfo.Chest_肩左_接続))
     		{
     			hashSet.Add(item38.UpperArm.飛膜);
     			hashSet.Add(item38.手.飛膜);
     		}
-    		foreach (Ele item39 in 腕左)
+    		foreach (Element item39 in 腕左)
     		{
-    			if (hashSet.Contains(item39) || (item39 is DE && ((DE)item39).Par is 手_蝙))
+    			if (hashSet.Contains(item39) || (item39 is DrawableElement && ((DrawableElement)item39).Par is 手_蝙))
     			{
     				肩左飛膜.Add(item39);
     			}
@@ -5063,15 +5063,15 @@ namespace SlaveMatrix
     				LowerArm以降左.Add(item39);
     			}
     		}
-    		foreach (Ele item40 in LowerArm以降左)
+    		foreach (Element item40 in LowerArm以降左)
     		{
     			腕左.Remove(item40);
     		}
-    		foreach (Ele item41 in 肩左飛膜)
+    		foreach (Element item41 in 肩左飛膜)
     		{
     			腕左.Remove(item41);
     		}
-    		ele5 = 腕右.LastOrDefault((Ele e) => e.Par != null && e.Par.Par != null && e.Par.Par.ConnectionType == ConnectionInfo.Chest_肩右_接続);
+    		ele5 = 腕右.LastOrDefault((Element e) => e.Par != null && e.Par.Par != null && e.Par.Par.ConnectionType == ConnectionInfo.Chest_肩右_接続);
     		if (ele5 != null)
     		{
     			LowerArm以降右.Add(ele5);
@@ -5082,9 +5082,9 @@ namespace SlaveMatrix
     			hashSet.Add(item42.UpperArm.飛膜);
     			hashSet.Add(item42.手.飛膜);
     		}
-    		foreach (Ele item43 in 腕右)
+    		foreach (Element item43 in 腕右)
     		{
-    			if (hashSet.Contains(item43) || (item43 is DE && ((DE)item43).Par is 手_蝙))
+    			if (hashSet.Contains(item43) || (item43 is DrawableElement && ((DrawableElement)item43).Par is 手_蝙))
     			{
     				肩右飛膜.Add(item43);
     			}
@@ -5093,11 +5093,11 @@ namespace SlaveMatrix
     				LowerArm以降右.Add(item43);
     			}
     		}
-    		foreach (Ele item44 in LowerArm以降右)
+    		foreach (Element item44 in LowerArm以降右)
     		{
     			腕右.Remove(item44);
     		}
-    		foreach (Ele item45 in 肩右飛膜)
+    		foreach (Element item45 in 肩右飛膜)
     		{
     			腕右.Remove(item45);
     		}
@@ -5113,15 +5113,15 @@ namespace SlaveMatrix
     			肩右飛膜.Add(item14);
     			腕右.Remove(item14);
     		}
-    		foreach (Ele item46 in 腰後左接続.Where((Ele e) => e.ConnectionType == ConnectionInfo.四足脇_UpperArm_接続 || bod.半身前接続.Contains(e.Par)))
+    		foreach (Element item46 in 腰後左接続.Where((Element e) => e.ConnectionType == ConnectionInfo.四足脇_UpperArm_接続 || bod.半身前接続.Contains(e.Par)))
     		{
     			半身前接続.Add(item46);
     		}
-    		foreach (Ele item47 in 腰後右接続.Where((Ele e) => e.ConnectionType == ConnectionInfo.四足脇_UpperArm_接続 || bod.半身前接続.Contains(e.Par)))
+    		foreach (Element item47 in 腰後右接続.Where((Element e) => e.ConnectionType == ConnectionInfo.四足脇_UpperArm_接続 || bod.半身前接続.Contains(e.Par)))
     		{
     			半身前接続.Add(item47);
     		}
-    		foreach (Ele item48 in 半身前接続)
+    		foreach (Element item48 in 半身前接続)
     		{
     			腰後左接続.Remove(item48);
     			腰後右接続.Remove(item48);
@@ -5130,8 +5130,8 @@ namespace SlaveMatrix
     		獣LowerArm LowerArm右l = ((腕獣右.Count > 0) ? 腕獣右[0].LowerArm : null);
     		if (!Is蠍 && !Is蜘)
     		{
-    			Ele[] array = 半身前接続.Where((Ele e) => (e is LowerArm && LowerArm左l != e && LowerArm右l != e) || e is UpperArm || e is 触肢 || (e.ConnectionType == ConnectionInfo.四足脇_UpperArm_接続 && e is Leg)).ToArray();
-    			foreach (Ele item15 in array)
+    			Element[] array = 半身前接続.Where((Element e) => (e is LowerArm && LowerArm左l != e && LowerArm右l != e) || e is UpperArm || e is 触肢 || (e.ConnectionType == ConnectionInfo.四足脇_UpperArm_接続 && e is Leg)).ToArray();
+    			foreach (Element item15 in array)
     			{
     				半身前接続.Remove(item15);
     				半身中2接続.Add(item15);
@@ -5183,8 +5183,8 @@ namespace SlaveMatrix
     		}
     		耳左 = 頭.耳左_接続.GetEle<耳>();
     		耳右 = 頭.耳右_接続.GetEle<耳>();
-    		IEnumerable<Ele> src = 顔触覚左接続.Concat(触覚左接続);
-    		IEnumerable<Ele> src2 = 顔触覚右接続.Concat(触覚右接続);
+    		IEnumerable<Element> src = 顔触覚左接続.Concat(触覚左接続);
+    		IEnumerable<Element> src2 = 顔触覚右接続.Concat(触覚右接続);
     		触覚甲左 = src.GetEle<触覚_甲>();
     		触覚甲右 = src2.GetEle<触覚_甲>();
     		if (触覚甲左 == null)
@@ -5198,7 +5198,7 @@ namespace SlaveMatrix
     			where e.Par != null && e.Par is 長物_鯨 && e is 尾_鯨
     			select new 鯨色更新((長物_鯨)e.Par, (尾_鯨)e);
     		飛膜色更新 = 蝙通常.Select((蝙通常 e) => new 飛膜色更新(e.UpperArm.飛膜, e.手.飛膜));
-    		色更新 = Elements.Where((Ele e) => !bod.頭色更新.Contains(e) && !bod.ドレス色更新.Contains(e) && !bod.鯨色更新.Any((鯨色更新 f) => f.Contains(e)));
+    		色更新 = Elements.Where((Element e) => !bod.頭色更新.Contains(e) && !bod.ドレス色更新.Contains(e) && !bod.鯨色更新.Any((鯨色更新 f) => f.Contains(e)));
     		Is双眉 = 眉左 != null;
     		Is単眉 = 単眼眉 != null;
     		Is人耳 = 耳左 != null;
@@ -5247,11 +5247,11 @@ namespace SlaveMatrix
     		舌_表示 = false;
     		if (Is頭頂_宇)
     		{
-    			foreach (Ele item51 in 顔触覚左接続)
+    			foreach (Element item51 in 顔触覚左接続)
     			{
     				item51.接続(頭.触覚左_接続点);
     			}
-    			foreach (Ele item52 in 顔触覚右接続)
+    			foreach (Element item52 in 顔触覚右接続)
     			{
     				item52.接続(頭.触覚右_接続点);
     			}
@@ -5266,9 +5266,9 @@ namespace SlaveMatrix
     		}
     		if (IsSingleEye)
     		{
-    			頭.X0Y0_Head.GetJP()[7] = new Joi(頭.X0Y0_Head.GetJP()[7].Joint.MulY(0.96));
-    			頭.X0Y0_Head.GetJP()[17] = new Joi(頭.X0Y0_Head.GetJP()[17].Joint.MulY(0.96));
-    			頭.X0Y0_Head.GetJP()[18] = new Joi(頭.X0Y0_Head.GetJP()[18].Joint.MulY(0.96));
+    			頭.X0Y0_Head.GetJP()[7] = new JointPoint(頭.X0Y0_Head.GetJP()[7].Joint.MulY(0.96));
+    			頭.X0Y0_Head.GetJP()[17] = new JointPoint(頭.X0Y0_Head.GetJP()[17].Joint.MulY(0.96));
+    			頭.X0Y0_Head.GetJP()[18] = new JointPoint(頭.X0Y0_Head.GetJP()[18].Joint.MulY(0.96));
     			紅潮.紅潮1_表示 = false;
     			紅潮.X0Y0_紅潮左.SetAngleBase(20.0);
     			紅潮.X0Y0_紅潮弱左.SetAngleBase(20.0);
@@ -5278,10 +5278,10 @@ namespace SlaveMatrix
     			紅潮.X0Y0_紅潮線右.SetAngleBase(-20.0);
     		}
     		染み_人 = new 染み_人(disUnit, 配色指定.N0, Cha.ColorSet, Med, new 染み_人D());
-    		染み_人.サイズ = Elements.Sum((Ele e) => e.サイズ) / (double)Elements.Length;
+    		染み_人.サイズ = Elements.Sum((Element e) => e.サイズ) / (double)Elements.Length;
     		染み_人.Intensity = 0.0;
-    		Vector2D positionCont = Dat.Vec2DUnitY * -0.03;
-    		Vector2D positionCont2 = Dat.Vec2DUnitY * 0.03;
+    		Vector2D positionCont = DataConsts.Vec2DUnitY * -0.03;
+    		Vector2D positionCont2 = DataConsts.Vec2DUnitY * 0.03;
     		染み_人.X0Y0_汗.SetPositionCont(positionCont);
     		染み_人.X0Y0_潮1.SetPositionCont(positionCont2);
     		if (Is獣)
@@ -5299,14 +5299,14 @@ namespace SlaveMatrix
     			Urination = 放尿_獣;
     			肛門 = 肛門_獣;
     			AnalCum = 肛門精液_獣;
-    			膣内精液_獣.精液配色(Sta.GameData.配色);
+    			膣内精液_獣.精液配色(GlobalState.GameData.配色);
     			膣内精液_獣.精液濃度 = 0.0;
-    			断面_獣.精液配色(Sta.GameData.配色);
+    			断面_獣.精液配色(GlobalState.GameData.配色);
     			断面_獣.精液濃度 = 0.0;
-    			性器精液_獣.精液配色(Sta.GameData.配色);
-    			肛門精液_獣.精液配色(Sta.GameData.配色);
+    			性器精液_獣.精液配色(GlobalState.GameData.配色);
+    			肛門精液_獣.精液配色(GlobalState.GameData.配色);
     			染み_獣 = new 染み_獣(disUnit, 配色指定.N0, Cha.ColorSet, Med, new 染み_獣D());
-    			染み_獣.サイズ = Elements.Sum((Ele e) => e.サイズ) / (double)Elements.Length;
+    			染み_獣.サイズ = Elements.Sum((Element e) => e.サイズ) / (double)Elements.Length;
     			染み_獣.Intensity = 0.0;
     			if (Chest_獣.脇左_接続.IsEle<四足脇>())
     			{
@@ -5342,12 +5342,12 @@ namespace SlaveMatrix
     			Urination = 放尿_人;
     			肛門 = 肛門_人;
     			AnalCum = 肛門精液_人;
-    			膣内精液_人.精液配色(Sta.GameData.配色);
+    			膣内精液_人.精液配色(GlobalState.GameData.配色);
     			膣内精液_人.精液濃度 = 0.0;
-    			断面_人.精液配色(Sta.GameData.配色);
+    			断面_人.精液配色(GlobalState.GameData.配色);
     			断面_人.精液濃度 = 0.0;
-    			性器精液_人.精液配色(Sta.GameData.配色);
-    			肛門精液_人.精液配色(Sta.GameData.配色);
+    			性器精液_人.精液配色(GlobalState.GameData.配色);
+    			肛門精液_人.精液配色(GlobalState.GameData.配色);
     			Vector2D positionCont4 = new Vector2D(0.0, 0.006);
     			染み_人.X0Y0_湯気_湯気左1_湯気2.SetPositionCont(positionCont4);
     			染み_人.X0Y0_湯気_湯気左2_湯気2.SetPositionCont(positionCont4);
@@ -5373,7 +5373,7 @@ namespace SlaveMatrix
     		肛門y = 肛門.尺度YB;
     		肛門v = 肛門.尺度B;
     		口i = 0;
-    		MouthCum.精液配色(Sta.GameData.配色);
+    		MouthCum.精液配色(GlobalState.GameData.配色);
     		頬濃度 = 0.3;
     		下着B_ノーマル.染み濃度 = 0.0;
     		下着B_マイクロ.染み濃度 = 0.0;
@@ -5381,7 +5381,7 @@ namespace SlaveMatrix
     		if (Is蜘尾 = 蜘尾 != null)
     		{
     			ThreadCum = new 性器精液_人(disUnit, 配色指定.N0, Cha.ColorSet, Med, new 性器精液_人D());
-    			ThreadCum.精液配色(Sta.GameData.配色);
+    			ThreadCum.精液配色(GlobalState.GameData.配色);
     			ThreadCum.接続(蜘尾.出糸_接続点);
     		}
     		頬濃度 = 0.0;
@@ -5405,13 +5405,13 @@ namespace SlaveMatrix
     		断面_表示 = false;
     		if (Is粘 && Waist.腿左_接続 != null)
     		{
-    			foreach (Par item53 in (from e in Waist.腿左_接続.GetEles<腿>()
-    				select e.Body.EnumAllPar()).Aggregate((IEnumerable<Par> e1, IEnumerable<Par> e2) => e1.Concat(e2)))
+    			foreach (ShapePart item53 in (from e in Waist.腿左_接続.GetEles<腿>()
+    				select e.Body.EnumAllPar()).Aggregate((IEnumerable<ShapePart> e1, IEnumerable<ShapePart> e2) => e1.Concat(e2)))
     			{
     				item53.GetOP().OutlineFalse();
     			}
-    			foreach (Par item54 in (from e in Waist.腿右_接続.GetEles<腿>()
-    				select e.Body.EnumAllPar()).Aggregate((IEnumerable<Par> e1, IEnumerable<Par> e2) => e1.Concat(e2)))
+    			foreach (ShapePart item54 in (from e in Waist.腿右_接続.GetEles<腿>()
+    				select e.Body.EnumAllPar()).Aggregate((IEnumerable<ShapePart> e1, IEnumerable<ShapePart> e2) => e1.Concat(e2)))
     			{
     				item54.GetOP().OutlineFalse();
     			}
@@ -5456,7 +5456,7 @@ namespace SlaveMatrix
     		SetWaist();
     		if (背中接続.Count + 頭頂左後接続.Count + 頭頂右後接続.Count + 胸上左接続.Count + 胸上右接続.Count + 胸下左接続.Count + 胸下右接続.Count + 胴後左接続.Count + 胴後右接続.Count + 後腕左s.Length + 後腕右s.Length > 0)
     		{
-    			EIChest = new EleI(Med);
+    			EIChest = new ElementInstance(Med);
     			EIChest.AddRange(背中接続);
     			EIChest.AddRange(頭頂左後接続);
     			EIChest.AddRange(頭頂右後接続);
@@ -5466,13 +5466,13 @@ namespace SlaveMatrix
     			EIChest.AddRange(胸下右接続);
     			EIChest.AddRange(胴後左接続);
     			EIChest.AddRange(胴後右接続);
-    			List<Ele>[] array4 = 後腕左s;
-    			foreach (List<Ele> es in array4)
+    			List<Element>[] array4 = 後腕左s;
+    			foreach (List<Element> es in array4)
     			{
     				EIChest.AddRange(es);
     			}
     			array4 = 後腕右s;
-    			foreach (List<Ele> es2 in array4)
+    			foreach (List<Element> es2 in array4)
     			{
     				EIChest.AddRange(es2);
     			}
@@ -5506,14 +5506,14 @@ namespace SlaveMatrix
     				{
     					array5[n].脇描画(are);
     				}
-    				List<Ele>[] array6 = bod.後腕左s;
-    				foreach (List<Ele> es3 in array6)
+    				List<Element>[] array6 = bod.後腕左s;
+    				foreach (List<Element> es3 in array6)
     				{
     					es3.描画0(are);
     					es3.描画1(are);
     				}
     				array6 = bod.後腕右s;
-    				foreach (List<Ele> es4 in array6)
+    				foreach (List<Element> es4 in array6)
     				{
     					es4.描画0(are);
     					es4.描画1(are);
@@ -5524,7 +5524,7 @@ namespace SlaveMatrix
     		}
     		if (後髪接続.Count > 0)
     		{
-    			EI髪 = new EleI(Med);
+    			EI髪 = new ElementInstance(Med);
     			EI髪.AddRange(後髪接続);
     			EI髪.描画処理 = delegate(RenderArea are)
     			{
@@ -5536,7 +5536,7 @@ namespace SlaveMatrix
     		}
     		if (腰後左接続.Count + 腰後右接続.Count > 0)
     		{
-    			EIWaist = new EleI(Med);
+    			EIWaist = new ElementInstance(Med);
     			EIWaist.AddRange(腰後左接続);
     			EIWaist.AddRange(腰後右接続);
     			EIWaist.描画処理 = delegate(RenderArea are)
@@ -5551,7 +5551,7 @@ namespace SlaveMatrix
     		}
     		if (尾接続.Count + 半身後接続.Count > 0)
     		{
-    			EI半後 = new EleI(Med);
+    			EI半後 = new ElementInstance(Med);
     			EI半後.AddRange(尾接続);
     			EI半後.AddRange(半身後接続);
     			EI半後.描画処理 = delegate(RenderArea are)
@@ -5566,7 +5566,7 @@ namespace SlaveMatrix
     		}
     		if (半身中1接続.Count > 0)
     		{
-    			EI半中1 = new EleI(Med);
+    			EI半中1 = new ElementInstance(Med);
     			EI半中1.AddRange(半身中1接続);
     			EI半中1.描画処理 = delegate(RenderArea are)
     			{
@@ -5578,7 +5578,7 @@ namespace SlaveMatrix
     		}
     		if (半身中2接続.Count > 0)
     		{
-    			EI半中2 = new EleI(Med);
+    			EI半中2 = new ElementInstance(Med);
     			EI半中2.AddRange(半身中2接続);
     			EI半中2.描画処理 = delegate(RenderArea are)
     			{
@@ -5590,7 +5590,7 @@ namespace SlaveMatrix
     		}
     		if (半身前接続.Count > 0)
     		{
-    			EI半前 = new EleI(Med);
+    			EI半前 = new ElementInstance(Med);
     			EI半前.AddRange(半身前接続);
     			EI半前.描画処理 = delegate(RenderArea are)
     			{
@@ -5602,7 +5602,7 @@ namespace SlaveMatrix
     		}
     		if (LowerArm以降左.Count + LowerArm以降右.Count > 0)
     		{
-    			EI腕前 = new EleI(Med);
+    			EI腕前 = new ElementInstance(Med);
     			EI腕前.AddRange(LowerArm以降左);
     			EI腕前.AddRange(LowerArm以降右);
     			EI腕前.描画処理 = delegate(RenderArea are)
@@ -5639,7 +5639,7 @@ namespace SlaveMatrix
     		}
     		if (腿左接続.Count + 腿右接続.Count > 0)
     		{
-    			EI腿 = new EleI(Med);
+    			EI腿 = new ElementInstance(Med);
     			EI腿.AddRange(腿左接続);
     			EI腿.AddRange(腿右接続);
     			EI腿.描画処理 = delegate(RenderArea are)
@@ -8328,7 +8328,7 @@ namespace SlaveMatrix
     				}
     				bod.Waist.描画0(are);
     				bod.Waist.描画1(are);
-    				if (!Sta.GameData.断面)
+    				if (!GlobalState.GameData.断面)
     				{
     					bod.肛門_人.描画0(are);
     					bod.肛門精液_人.描画0(are);
@@ -8472,7 +8472,7 @@ namespace SlaveMatrix
     				{
     					bod.EI腕前.描画(are);
     				}
-    				if (Sta.GameData.断面)
+    				if (GlobalState.GameData.断面)
     				{
     					bod.肛門_人.描画0(are);
     					bod.肛門精液_人.描画0(are);
@@ -9202,17 +9202,17 @@ namespace SlaveMatrix
     		腰肌_人.陰毛_ハートCD.不透明度 = Cha.CharacterData.現陰毛.Inverse() * Cha.CharacterData.最陰毛濃度;
     	}
 
-    	public Ele GetHitEle(Color hc)
+    	public Element GetHitEle(Color hc)
     	{
-    		return EnumAllEle().FirstOrDefault((Ele e) => e.Body.IsHit(ref hc));
+    		return EnumAllEle().FirstOrDefault((Element e) => e.Body.IsHit(ref hc));
     	}
 
     	public bool IsHit(Color hc)
     	{
-    		return EnumAllEle().Any((Ele e) => e.Body.IsHit(ref hc));
+    		return EnumAllEle().Any((Element e) => e.Body.IsHit(ref hc));
     	}
 
-    	public IEnumerable<Ele> EnumAllEle()
+    	public IEnumerable<Element> EnumAllEle()
     	{
     		return Elements.Concat(from e in Elements.GetEles<UpperArm_蝙>()
     			select e.飛膜).Concat(from e in Elements.GetEles<手_蝙>()
@@ -9222,7 +9222,7 @@ namespace SlaveMatrix
 
     	public void Join()
     	{
-    		Ele[] array = Elements;
+    		Element[] array = Elements;
     		for (int i = 0; i < array.Length; i++)
     		{
     			array[i].接続PA();
@@ -9255,7 +9255,7 @@ namespace SlaveMatrix
     		}
     		if (色更新 != null)
     		{
-    			foreach (Ele item4 in 色更新)
+    			foreach (Element item4 in 色更新)
     			{
     				item4.色更新();
     			}
@@ -9276,23 +9276,23 @@ namespace SlaveMatrix
 
     	public void Update()
     	{
-    		foreach (EleI ei in eis)
+    		foreach (ElementInstance ei in eis)
     		{
     			ei.Updatef = true;
     		}
     	}
 
-    	public bool Contains(Ele e)
+    	public bool Contains(Element e)
     	{
-    		return eis.Any((EleI f) => f.ElesH.Contains(e));
+    		return eis.Any((ElementInstance f) => f.ElesH.Contains(e));
     	}
 
-    	public bool IsUpdate(Ele e)
+    	public bool IsUpdate(Element e)
     	{
-    		return eis.Any((EleI f) => f.IsUpdate(e));
+    		return eis.Any((ElementInstance f) => f.IsUpdate(e));
     	}
 
-    	public List<Ele> Inserts(Ele io, int i, Ele e)
+    	public List<Element> Inserts(Element io, int i, Element e)
     	{
     		int num;
     		if ((num = 後髪接続.IndexOf(io)) > -1)
@@ -9455,8 +9455,8 @@ namespace SlaveMatrix
     			半身前接続.Insert((num + i).Clamp(0, 半身前接続.Count), e);
     			return 半身前接続;
     		}
-    		List<Ele>[] array = 後腕左s;
-    		foreach (List<Ele> list in array)
+    		List<Element>[] array = 後腕左s;
+    		foreach (List<Element> list in array)
     		{
     			if ((num = list.IndexOf(io)) > -1)
     			{
@@ -9465,7 +9465,7 @@ namespace SlaveMatrix
     			}
     		}
     		array = 後腕右s;
-    		foreach (List<Ele> list2 in array)
+    		foreach (List<Element> list2 in array)
     		{
     			if ((num = list2.IndexOf(io)) > -1)
     			{
@@ -9478,17 +9478,17 @@ namespace SlaveMatrix
 
     	public キスマーク Addキスマーク(Vector2D cp, Color hc)
     	{
-    		Ele he = GetHitEle(hc);
+    		Element he = GetHitEle(hc);
     		スタンプK[] array = キスマーク;
     		for (int i = 0; i < array.Length; i++)
     		{
     			キスマーク result;
     			if ((result = array[i].Add(cp, hc, he)) != null)
     			{
-    				EleI eleI = eis.FirstOrDefault((EleI e) => e.ElesH.Contains(he));
-    				if (eleI != null)
+    				ElementInstance elementInstance = eis.FirstOrDefault((ElementInstance e) => e.ElesH.Contains(he));
+    				if (elementInstance != null)
     				{
-    					eleI.Updatef = true;
+    					elementInstance.Updatef = true;
     				}
     				return result;
     			}
@@ -9498,7 +9498,7 @@ namespace SlaveMatrix
 
     	public void Add鞭痕(Vector2D cp, Color hc)
     	{
-    		Ele he = GetHitEle(hc);
+    		Element he = GetHitEle(hc);
     		if (he is LowerArm || he is Neck)
     		{
     			return;
@@ -9508,10 +9508,10 @@ namespace SlaveMatrix
     		{
     			if (array[i].Add(cp, hc, he))
     			{
-    				EleI eleI = eis.FirstOrDefault((EleI e) => e.ElesH.Contains(he));
-    				if (eleI != null)
+    				ElementInstance elementInstance = eis.FirstOrDefault((ElementInstance e) => e.ElesH.Contains(he));
+    				if (elementInstance != null)
     				{
-    					eleI.Updatef = true;
+    					elementInstance.Updatef = true;
     				}
     				break;
     			}
@@ -9520,7 +9520,7 @@ namespace SlaveMatrix
 
     	public void Addぶっかけ(Vector2D cp, Color hc)
     	{
-    		if (RNG.XS.NextBool())
+    		if (Rng.XS.NextBool())
     		{
     			ぶっかけ小.Add(cp, hc, ぶっかけr);
     		}
@@ -9542,12 +9542,12 @@ namespace SlaveMatrix
     		{
     			array2[i].Dispose();
     		}
-    		Ele[] array3 = Elements;
+    		Element[] array3 = Elements;
     		for (int i = 0; i < array3.Length; i++)
     		{
     			array3[i].Dispose();
     		}
-    		foreach (EleI ei in eis)
+    		foreach (ElementInstance ei in eis)
     		{
     			ei.Dispose();
     		}
@@ -9577,7 +9577,7 @@ namespace SlaveMatrix
     	{
     		cb0 = カーソル != null;
     		cb1 = cb0 && !カーソル.コキ;
-    		Ele[] array = Elements;
+    		Element[] array = Elements;
     		for (int i = 0; i < array.Length; i++)
     		{
     			array[i].接続PA();
@@ -9613,14 +9613,14 @@ namespace SlaveMatrix
     				item3.色更新();
     			}
     		}
-    		foreach (Ele item4 in 色更新)
+    		foreach (Element item4 in 色更新)
     		{
     			if (!Contains(item4) || IsUpdate(item4))
     			{
     				item4.色更新();
     			}
     		}
-    		foreach (EleI ei in eis)
+    		foreach (ElementInstance ei in eis)
     		{
     			ei.Update();
     		}
@@ -9631,13 +9631,13 @@ namespace SlaveMatrix
     	{
     		Color col = 頭.HeadCD.色.Col1;
     		Color col2 = 頭.HeadCD.色.Col2;
-    		Col.GetSkinGrad(ref c, out var ret);
+    		ColorHelper.GetSkinGrad(ref c, out var ret);
     		ret.Col1 = col;
     		ret.GetRep(out var ret2);
-    		foreach (Ele item in EnumAllEle())
+    		foreach (Element item in EnumAllEle())
     		{
     			foreach (FieldInfo item2 in from f in item.GetType().GetFields()
-    				where f.FieldType.ToString() == Sta.cdt
+    				where f.FieldType.ToString() == GlobalState.cdt
     				select f)
     			{
     				ColorD colorD = (ColorD)item2.GetValue(item);
@@ -9731,7 +9731,7 @@ namespace SlaveMatrix
     			else if (後腕左s.Length != 0)
     			{
     				n = 後腕左s.Length - n;
-    				Ele item = 後腕左s[n][1];
+    				Element item = 後腕左s[n][1];
     				後腕左s[n].RemoveAt(1);
     				後腕左s[n].Add(item);
     			}
@@ -9746,7 +9746,7 @@ namespace SlaveMatrix
     		else if (後腕左s.Length != 0)
     		{
     			n = 後腕左s.Length - n;
-    			Ele item2 = 後腕左s[n].Last();
+    			Element item2 = 後腕左s[n].Last();
     			後腕左s[n].RemoveAt(後腕左s[n].Count - 1);
     			後腕左s[n].Insert(1, item2);
     		}
@@ -9771,7 +9771,7 @@ namespace SlaveMatrix
     			else if (後腕右s.Length != 0)
     			{
     				n = 後腕左s.Length - n;
-    				Ele item = 後腕右s[n][1];
+    				Element item = 後腕右s[n][1];
     				後腕右s[n].RemoveAt(1);
     				後腕右s[n].Add(item);
     			}
@@ -9786,7 +9786,7 @@ namespace SlaveMatrix
     		else if (後腕右s.Length != 0)
     		{
     			n = 後腕左s.Length - n;
-    			Ele item2 = 後腕右s[n].Last();
+    			Element item2 = 後腕右s[n].Last();
     			後腕右s[n].RemoveAt(後腕右s[n].Count - 1);
     			後腕右s[n].Insert(1, item2);
     		}
@@ -9794,16 +9794,16 @@ namespace SlaveMatrix
 
     	private void 腰振り_人()
     	{
-    		Torso.X0Y0_筋肉_筋肉左.SetPositionCont(Dat.Vec2DUnitY * (Waist.Yv * -0.004));
-    		Torso.X0Y0_筋肉_筋肉右.SetPositionCont(Dat.Vec2DUnitY * (Waist.Yv * -0.004));
-    		胴腹板_人.X0Y0_虫性_腹板.SetPositionCont(Dat.Vec2DUnitY * (Waist.Yv * -0.002));
+    		Torso.X0Y0_筋肉_筋肉左.SetPositionCont(DataConsts.Vec2DUnitY * (Waist.Yv * -0.004));
+    		Torso.X0Y0_筋肉_筋肉右.SetPositionCont(DataConsts.Vec2DUnitY * (Waist.Yv * -0.004));
+    		胴腹板_人.X0Y0_虫性_腹板.SetPositionCont(DataConsts.Vec2DUnitY * (Waist.Yv * -0.002));
     		胴肌_人.Body.SetSizeYCont(0.85 + (1.0 - Waist.Yv) * 0.15);
     	}
 
     	private void 腰振り_獣()
     	{
-    		Torso_獣.X0Y0_筋肉_筋肉左.SetPositionCont(Dat.Vec2DUnitY * (Waist_獣.Yv * -0.004));
-    		Torso_獣.X0Y0_筋肉_筋肉右.SetPositionCont(Dat.Vec2DUnitY * (Waist_獣.Yv * -0.004));
+    		Torso_獣.X0Y0_筋肉_筋肉左.SetPositionCont(DataConsts.Vec2DUnitY * (Waist_獣.Yv * -0.004));
+    		Torso_獣.X0Y0_筋肉_筋肉右.SetPositionCont(DataConsts.Vec2DUnitY * (Waist_獣.Yv * -0.004));
     		胴肌_獣.Body.SetSizeYCont(0.85 + (1.0 - Waist_獣.Yv) * 0.15);
     		if (EI半中1 != null)
     		{
@@ -9852,7 +9852,7 @@ namespace SlaveMatrix
     	{
     		Type type = e.GetType();
     		foreach (FieldInfo item in from e_ in i.GetType().GetFields()
-    			where e_.FieldType.ToString() == Sta.bt
+    			where e_.FieldType.ToString() == GlobalState.bt
     			select e_)
     		{
     			type.GetProperty(item.Name).SetValue(e, item.GetValue(i), null);
@@ -9861,28 +9861,28 @@ namespace SlaveMatrix
 
     	public void 脱衣()
     	{
-    		Set後髪髪留 = Sta.髪留2初期化;
-    		Set横髪髪留 = Sta.髪留2初期化;
-    		Set玉口枷 = Sta.玉口枷初期化;
-    		Set目隠帯 = Sta.目隠帯初期化;
-    		Setピアス = Sta.ピアス初期化;
-    		Setピアス左 = Sta.ピアス初期化;
-    		Setピアス右 = Sta.ピアス初期化;
-    		Setキャップ1 = Sta.キャップ初期化;
-    		Setキャップ2左 = Sta.キャップ初期化;
-    		Setキャップ2右 = Sta.キャップ初期化;
-    		Setドレス首 = Sta.ドレス首初期化;
-    		Set下着T_チューブ = Sta.下着T_チューブ初期化;
-    		Set下着T_クロス = Sta.下着T_クロス初期化;
-    		Set下着T_ビキニ = Sta.下着T_ビキニ初期化;
-    		Set下着T_マイクロ = Sta.下着T_マイクロ初期化;
-    		Set下着T_ブラ = Sta.下着T_ブラ初期化;
-    		Set下着B_ノーマル = Sta.下着B_ノーマル初期化;
-    		Set下着B_マイクロ = Sta.下着B_マイクロ初期化;
-    		Setドレス = Sta.ドレス初期化;
-    		Set上着B_クロス = Sta.上着B_クロス初期化;
-    		Set上着B_前掛け = Sta.上着B_前掛け初期化;
-    		Setブーツ = Sta.ブーツ初期化;
+    		Set後髪髪留 = GlobalState.髪留2初期化;
+    		Set横髪髪留 = GlobalState.髪留2初期化;
+    		Set玉口枷 = GlobalState.玉口枷初期化;
+    		Set目隠帯 = GlobalState.目隠帯初期化;
+    		Setピアス = GlobalState.ピアス初期化;
+    		Setピアス左 = GlobalState.ピアス初期化;
+    		Setピアス右 = GlobalState.ピアス初期化;
+    		Setキャップ1 = GlobalState.キャップ初期化;
+    		Setキャップ2左 = GlobalState.キャップ初期化;
+    		Setキャップ2右 = GlobalState.キャップ初期化;
+    		Setドレス首 = GlobalState.ドレス首初期化;
+    		Set下着T_チューブ = GlobalState.下着T_チューブ初期化;
+    		Set下着T_クロス = GlobalState.下着T_クロス初期化;
+    		Set下着T_ビキニ = GlobalState.下着T_ビキニ初期化;
+    		Set下着T_マイクロ = GlobalState.下着T_マイクロ初期化;
+    		Set下着T_ブラ = GlobalState.下着T_ブラ初期化;
+    		Set下着B_ノーマル = GlobalState.下着B_ノーマル初期化;
+    		Set下着B_マイクロ = GlobalState.下着B_マイクロ初期化;
+    		Setドレス = GlobalState.ドレス初期化;
+    		Set上着B_クロス = GlobalState.上着B_クロス初期化;
+    		Set上着B_前掛け = GlobalState.上着B_前掛け初期化;
+    		Setブーツ = GlobalState.ブーツ初期化;
     	}
 
     	public void 胸施術()

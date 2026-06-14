@@ -4,29 +4,29 @@ namespace SlaveMatrix
 {
     public class 耳_尖 : 耳
     {
-    	public Par X0Y0_耳;
+    	public ShapePart X0Y0_耳;
 
-    	public Par X0Y0_耳線;
+    	public ShapePart X0Y0_耳線;
 
-    	public Par X0Y1_耳;
+    	public ShapePart X0Y1_耳;
 
-    	public Par X0Y1_耳線;
+    	public ShapePart X0Y1_耳線;
 
-    	public Par X0Y2_耳;
+    	public ShapePart X0Y2_耳;
 
-    	public Par X0Y2_耳線;
+    	public ShapePart X0Y2_耳線;
 
-    	public Par X1Y0_耳;
+    	public ShapePart X1Y0_耳;
 
-    	public Par X1Y0_耳線;
+    	public ShapePart X1Y0_耳線;
 
-    	public Par X1Y1_耳;
+    	public ShapePart X1Y1_耳;
 
-    	public Par X1Y1_耳線;
+    	public ShapePart X1Y1_耳線;
 
-    	public Par X1Y2_耳;
+    	public ShapePart X1Y2_耳;
 
-    	public Par X1Y2_耳線;
+    	public ShapePart X1Y2_耳線;
 
     	public ColorD 耳CD;
 
@@ -168,28 +168,28 @@ namespace SlaveMatrix
     	public 耳_尖(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 耳_尖D e)
     	{
     		ThisType = GetType();
-    		Body = new Difs();
+    		Body = new VariantGrid();
     		Body.Tag = "尖";
-    		Body.Add(new Dif(Sta.肢左["耳"][2]));
-    		Body.Add(new Dif(Sta.肢左["耳"][3]));
-    		Pars pars = Body[0][0];
-    		X0Y0_耳 = pars["耳"].ToPar();
-    		X0Y0_耳線 = pars["耳線"].ToPar();
-    		pars = Body[0][1];
-    		X0Y1_耳 = pars["耳"].ToPar();
-    		X0Y1_耳線 = pars["耳線"].ToPar();
-    		pars = Body[0][2];
-    		X0Y2_耳 = pars["耳"].ToPar();
-    		X0Y2_耳線 = pars["耳線"].ToPar();
-    		pars = Body[1][0];
-    		X1Y0_耳 = pars["耳"].ToPar();
-    		X1Y0_耳線 = pars["耳線"].ToPar();
-    		pars = Body[1][1];
-    		X1Y1_耳 = pars["耳"].ToPar();
-    		X1Y1_耳線 = pars["耳線"].ToPar();
-    		pars = Body[1][2];
-    		X1Y2_耳 = pars["耳"].ToPar();
-    		X1Y2_耳線 = pars["耳線"].ToPar();
+    		Body.Add(new MorphVariant(GlobalState.肢左["耳"][2]));
+    		Body.Add(new MorphVariant(GlobalState.肢左["耳"][3]));
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_耳 = partGroup["耳"].ToPar();
+    		X0Y0_耳線 = partGroup["耳線"].ToPar();
+    		partGroup = Body[0][1];
+    		X0Y1_耳 = partGroup["耳"].ToPar();
+    		X0Y1_耳線 = partGroup["耳線"].ToPar();
+    		partGroup = Body[0][2];
+    		X0Y2_耳 = partGroup["耳"].ToPar();
+    		X0Y2_耳線 = partGroup["耳線"].ToPar();
+    		partGroup = Body[1][0];
+    		X1Y0_耳 = partGroup["耳"].ToPar();
+    		X1Y0_耳線 = partGroup["耳線"].ToPar();
+    		partGroup = Body[1][1];
+    		X1Y1_耳 = partGroup["耳"].ToPar();
+    		X1Y1_耳線 = partGroup["耳線"].ToPar();
+    		partGroup = Body[1][2];
+    		X1Y2_耳 = partGroup["耳"].ToPar();
+    		X1Y2_耳線 = partGroup["耳線"].ToPar();
     		Xasix = false;
     		Body.SetJoints();
     		接続根 = new JointD(Body);
@@ -300,8 +300,8 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		耳CD = new ColorD(ref Col.Black, ref 体配色.人肌O);
-    		耳線CD = new ColorD(ref Col.Black, ref Color2.Empty);
+    		耳CD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌O);
+    		耳線CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
     	}
     }
 }

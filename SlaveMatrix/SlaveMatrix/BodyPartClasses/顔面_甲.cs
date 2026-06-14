@@ -6,45 +6,45 @@ namespace SlaveMatrix
 {
     public class 顔面_甲 : 顔面
     {
-    	public Par X0Y0_面額;
+    	public ShapePart X0Y0_面額;
 
-    	public Par X0Y0_面左下_面目;
+    	public ShapePart X0Y0_面左下_面目;
 
-    	public Par X0Y0_面左下_面;
+    	public ShapePart X0Y0_面左下_面;
 
-    	public Par X0Y0_面右下_面目;
+    	public ShapePart X0Y0_面右下_面目;
 
-    	public Par X0Y0_面右下_面;
+    	public ShapePart X0Y0_面右下_面;
 
-    	public Par X0Y0_面左外;
+    	public ShapePart X0Y0_面左外;
 
-    	public Par X0Y0_面右外;
+    	public ShapePart X0Y0_面右外;
 
-    	public Par X0Y0_面左上_面目;
+    	public ShapePart X0Y0_面左上_面目;
 
-    	public Par X0Y0_面左上_面;
+    	public ShapePart X0Y0_面左上_面;
 
-    	public Par X0Y0_面右上_面目;
+    	public ShapePart X0Y0_面右上_面目;
 
-    	public Par X0Y0_面右上_面;
+    	public ShapePart X0Y0_面右上_面;
 
-    	public Par X0Y0_面中0_面中;
+    	public ShapePart X0Y0_面中0_面中;
 
-    	public Par X0Y0_面中0_付根左_付根1;
+    	public ShapePart X0Y0_面中0_付根左_付根1;
 
-    	public Par X0Y0_面中0_付根左_付根2;
+    	public ShapePart X0Y0_面中0_付根左_付根2;
 
-    	public Par X0Y0_面中0_付根右_付根1;
+    	public ShapePart X0Y0_面中0_付根右_付根1;
 
-    	public Par X0Y0_面中0_付根右_付根2;
+    	public ShapePart X0Y0_面中0_付根右_付根2;
 
-    	public Par X0Y0_面中2_面中;
+    	public ShapePart X0Y0_面中2_面中;
 
-    	public Par X0Y0_面中2_面中下;
+    	public ShapePart X0Y0_面中2_面中下;
 
-    	public Par X0Y0_面中1_面中;
+    	public ShapePart X0Y0_面中1_面中;
 
-    	public Par X0Y0_面中1_面中下;
+    	public ShapePart X0Y0_面中1_面中下;
 
     	public ColorD 面額CD;
 
@@ -510,38 +510,38 @@ namespace SlaveMatrix
     	{
     		顔面_甲 顔面_甲2 = this;
     		ThisType = GetType();
-    		Dif dif = new Dif(Sta.肢中["顔面"][0]);
-    		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		X0Y0_面額 = pars["面額"].ToPar();
-    		Pars pars2 = pars["面左下"].ToPars();
+    		MorphVariant morphVariant = new MorphVariant(GlobalState.肢中["顔面"][0]);
+    		Body = new VariantGrid();
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_面額 = partGroup["面額"].ToPar();
+    		PartGroup pars2 = partGroup["面左下"].ToPars();
     		X0Y0_面左下_面目 = pars2["面目"].ToPar();
     		X0Y0_面左下_面 = pars2["面"].ToPar();
-    		pars2 = pars["面右下"].ToPars();
+    		pars2 = partGroup["面右下"].ToPars();
     		X0Y0_面右下_面目 = pars2["面目"].ToPar();
     		X0Y0_面右下_面 = pars2["面"].ToPar();
-    		X0Y0_面左外 = pars["面左外"].ToPar();
-    		X0Y0_面右外 = pars["面右外"].ToPar();
-    		pars2 = pars["面左上"].ToPars();
+    		X0Y0_面左外 = partGroup["面左外"].ToPar();
+    		X0Y0_面右外 = partGroup["面右外"].ToPar();
+    		pars2 = partGroup["面左上"].ToPars();
     		X0Y0_面左上_面目 = pars2["面目"].ToPar();
     		X0Y0_面左上_面 = pars2["面"].ToPar();
-    		pars2 = pars["面右上"].ToPars();
+    		pars2 = partGroup["面右上"].ToPars();
     		X0Y0_面右上_面目 = pars2["面目"].ToPar();
     		X0Y0_面右上_面 = pars2["面"].ToPar();
-    		pars2 = pars["面中0"].ToPars();
+    		pars2 = partGroup["面中0"].ToPars();
     		X0Y0_面中0_面中 = pars2["面中"].ToPar();
-    		Pars pars3 = pars2["付根左"].ToPars();
+    		PartGroup pars3 = pars2["付根左"].ToPars();
     		X0Y0_面中0_付根左_付根1 = pars3["付根1"].ToPar();
     		X0Y0_面中0_付根左_付根2 = pars3["付根2"].ToPar();
     		pars3 = pars2["付根右"].ToPars();
     		X0Y0_面中0_付根右_付根1 = pars3["付根1"].ToPar();
     		X0Y0_面中0_付根右_付根2 = pars3["付根2"].ToPar();
-    		pars2 = pars["面中2"].ToPars();
+    		pars2 = partGroup["面中2"].ToPars();
     		X0Y0_面中2_面中 = pars2["面中"].ToPar();
     		X0Y0_面中2_面中下 = pars2["面中下"].ToPar();
-    		pars2 = pars["面中1"].ToPars();
+    		pars2 = partGroup["面中1"].ToPars();
     		X0Y0_面中1_面中 = pars2["面中"].ToPar();
     		X0Y0_面中1_面中下 = pars2["面中下"].ToPar();
     		Body.SetJoints();
@@ -597,10 +597,10 @@ namespace SlaveMatrix
     		{
     			表示 = false;
     		}
-    		Ele f;
+    		Element f;
     		if (e.触覚左_接続.Count > 0)
     		{
-    			触覚左_接続 = e.触覚左_接続.Select(delegate(EleD g)
+    			触覚左_接続 = e.触覚左_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 顔面_甲2;
@@ -611,7 +611,7 @@ namespace SlaveMatrix
     		}
     		if (e.触覚右_接続.Count > 0)
     		{
-    			触覚右_接続 = e.触覚右_接続.Select(delegate(EleD g)
+    			触覚右_接続 = e.触覚右_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 顔面_甲2;
@@ -676,26 +676,26 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		面額CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		面左下_面目CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		面左下_面CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
+    		面額CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		面左下_面目CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		面左下_面CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
     		面右下_面目CD = 面左下_面目CD;
-    		面右下_面CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		面左外CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		面右外CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
+    		面右下_面CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		面左外CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		面右外CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
     		面左上_面目CD = 面左下_面目CD;
-    		面左上_面CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
+    		面左上_面CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
     		面右上_面目CD = 面左下_面目CD;
-    		面右上_面CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		面中0_面中CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		面中0_付根左_付根1CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		面中0_付根左_付根2CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		面中0_付根右_付根1CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		面中0_付根右_付根2CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		面中2_面中CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		面中2_面中下CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		面中1_面中CD = new ColorD(ref Col.Black, ref 体配色.甲1O);
-    		面中1_面中下CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
+    		面右上_面CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		面中0_面中CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		面中0_付根左_付根1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		面中0_付根左_付根2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		面中0_付根右_付根1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		面中0_付根右_付根2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		面中2_面中CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		面中2_面中下CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		面中1_面中CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲1O);
+    		面中1_面中下CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
     	}
     }
 }

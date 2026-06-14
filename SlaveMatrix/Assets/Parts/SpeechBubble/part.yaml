@@ -1,0 +1,16 @@
+id: SpeechBubble
+original_key: 吹出し
+resource: 胴体
+morph_x: 1
+morph_y: 1
+variants:
+- x: 0
+  y: 0
+  file: x0y0.svg
+fields:
+- name: 吹出し
+joints:
+- position: [
+  -0.02371400659028311,
+  0.1393050794173243
+]

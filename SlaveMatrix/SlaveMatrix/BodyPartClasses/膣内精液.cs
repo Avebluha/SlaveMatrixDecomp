@@ -2,7 +2,7 @@ using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
-    public class 膣内精液 : Ele
+    public class 膣内精液 : Element
     {
     	public virtual bool 精液_表示 { get; set; }
 

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 namespace SlaveMatrix
 {
     [Serializable]
-    public class ペニスD : EleD
+    public class ペニスD : ElementData
     {
     	public bool 陰嚢_表示 = true;
 
@@ -16,14 +16,14 @@ namespace SlaveMatrix
 
     	public bool 亀頭_表示 = true;
 
-    	public List<EleD> 尿道_接続 = new List<EleD>();
+    	public List<ElementData> 尿道_接続 = new List<ElementData>();
 
     	public ペニスD()
     	{
     		ThisType = GetType();
     	}
 
-    	public void 尿道接続(EleD e)
+    	public void 尿道接続(ElementData e)
     	{
     		尿道_接続.Add(e);
     		e.Par = this;

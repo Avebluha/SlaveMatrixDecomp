@@ -3,71 +3,71 @@ using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
-    public class 噴乳 : Ele
+    public class 噴乳 : Element
     {
-    	public Par X0Y0_母乳垂れ1;
+    	public ShapePart X0Y0_母乳垂れ1;
 
-    	public Par X0Y0_母乳垂れ2;
+    	public ShapePart X0Y0_母乳垂れ2;
 
-    	public Par X0Y1_母乳1;
+    	public ShapePart X0Y1_母乳1;
 
-    	public Par X0Y1_母乳2;
+    	public ShapePart X0Y1_母乳2;
 
-    	public Par X0Y1_母乳3;
+    	public ShapePart X0Y1_母乳3;
 
-    	public Par X0Y1_母乳4;
+    	public ShapePart X0Y1_母乳4;
 
-    	public Par X0Y1_母乳垂れ1;
+    	public ShapePart X0Y1_母乳垂れ1;
 
-    	public Par X0Y1_母乳垂れ2;
+    	public ShapePart X0Y1_母乳垂れ2;
 
-    	public Par X0Y2_母乳1;
+    	public ShapePart X0Y2_母乳1;
 
-    	public Par X0Y2_母乳2;
+    	public ShapePart X0Y2_母乳2;
 
-    	public Par X0Y2_母乳3;
+    	public ShapePart X0Y2_母乳3;
 
-    	public Par X0Y2_母乳4;
+    	public ShapePart X0Y2_母乳4;
 
-    	public Par X0Y2_母乳垂れ1;
+    	public ShapePart X0Y2_母乳垂れ1;
 
-    	public Par X0Y2_母乳垂れ2;
+    	public ShapePart X0Y2_母乳垂れ2;
 
-    	public Par X0Y3_母乳1;
+    	public ShapePart X0Y3_母乳1;
 
-    	public Par X0Y3_母乳2;
+    	public ShapePart X0Y3_母乳2;
 
-    	public Par X0Y3_母乳3;
+    	public ShapePart X0Y3_母乳3;
 
-    	public Par X0Y3_母乳4;
+    	public ShapePart X0Y3_母乳4;
 
-    	public Par X0Y3_母乳垂れ1;
+    	public ShapePart X0Y3_母乳垂れ1;
 
-    	public Par X0Y3_母乳垂れ2;
+    	public ShapePart X0Y3_母乳垂れ2;
 
-    	public Par X0Y4_母乳1;
+    	public ShapePart X0Y4_母乳1;
 
-    	public Par X0Y4_母乳2;
+    	public ShapePart X0Y4_母乳2;
 
-    	public Par X0Y4_母乳3;
+    	public ShapePart X0Y4_母乳3;
 
-    	public Par X0Y4_母乳4;
+    	public ShapePart X0Y4_母乳4;
 
-    	public Par X0Y4_母乳垂れ1;
+    	public ShapePart X0Y4_母乳垂れ1;
 
-    	public Par X0Y4_母乳垂れ2;
+    	public ShapePart X0Y4_母乳垂れ2;
 
-    	public Par X0Y5_母乳1;
+    	public ShapePart X0Y5_母乳1;
 
-    	public Par X0Y5_母乳2;
+    	public ShapePart X0Y5_母乳2;
 
-    	public Par X0Y5_母乳3;
+    	public ShapePart X0Y5_母乳3;
 
-    	public Par X0Y5_母乳4;
+    	public ShapePart X0Y5_母乳4;
 
-    	public Par X0Y5_母乳垂れ1;
+    	public ShapePart X0Y5_母乳垂れ1;
 
-    	public Par X0Y5_母乳垂れ2;
+    	public ShapePart X0Y5_母乳垂れ2;
 
     	public ColorD 母乳1CD;
 
@@ -348,45 +348,45 @@ namespace SlaveMatrix
     	public 噴乳(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 噴乳D e)
     	{
     		ThisType = GetType();
-    		Body = new Difs(Sta.胴体["噴乳左"]);
-    		Pars pars = Body[0][0];
-    		X0Y0_母乳垂れ1 = pars["母乳垂れ1"].ToPar();
-    		X0Y0_母乳垂れ2 = pars["母乳垂れ2"].ToPar();
-    		pars = Body[0][1];
-    		X0Y1_母乳1 = pars["母乳1"].ToPar();
-    		X0Y1_母乳2 = pars["母乳2"].ToPar();
-    		X0Y1_母乳3 = pars["母乳3"].ToPar();
-    		X0Y1_母乳4 = pars["母乳4"].ToPar();
-    		X0Y1_母乳垂れ1 = pars["母乳垂れ1"].ToPar();
-    		X0Y1_母乳垂れ2 = pars["母乳垂れ2"].ToPar();
-    		pars = Body[0][2];
-    		X0Y2_母乳1 = pars["母乳1"].ToPar();
-    		X0Y2_母乳2 = pars["母乳2"].ToPar();
-    		X0Y2_母乳3 = pars["母乳3"].ToPar();
-    		X0Y2_母乳4 = pars["母乳4"].ToPar();
-    		X0Y2_母乳垂れ1 = pars["母乳垂れ1"].ToPar();
-    		X0Y2_母乳垂れ2 = pars["母乳垂れ2"].ToPar();
-    		pars = Body[0][3];
-    		X0Y3_母乳1 = pars["母乳1"].ToPar();
-    		X0Y3_母乳2 = pars["母乳2"].ToPar();
-    		X0Y3_母乳3 = pars["母乳3"].ToPar();
-    		X0Y3_母乳4 = pars["母乳4"].ToPar();
-    		X0Y3_母乳垂れ1 = pars["母乳垂れ1"].ToPar();
-    		X0Y3_母乳垂れ2 = pars["母乳垂れ2"].ToPar();
-    		pars = Body[0][4];
-    		X0Y4_母乳1 = pars["母乳1"].ToPar();
-    		X0Y4_母乳2 = pars["母乳2"].ToPar();
-    		X0Y4_母乳3 = pars["母乳3"].ToPar();
-    		X0Y4_母乳4 = pars["母乳4"].ToPar();
-    		X0Y4_母乳垂れ1 = pars["母乳垂れ1"].ToPar();
-    		X0Y4_母乳垂れ2 = pars["母乳垂れ2"].ToPar();
-    		pars = Body[0][5];
-    		X0Y5_母乳1 = pars["母乳1"].ToPar();
-    		X0Y5_母乳2 = pars["母乳2"].ToPar();
-    		X0Y5_母乳3 = pars["母乳3"].ToPar();
-    		X0Y5_母乳4 = pars["母乳4"].ToPar();
-    		X0Y5_母乳垂れ1 = pars["母乳垂れ1"].ToPar();
-    		X0Y5_母乳垂れ2 = pars["母乳垂れ2"].ToPar();
+    		Body = new VariantGrid(GlobalState.胴体["噴乳左"]);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_母乳垂れ1 = partGroup["母乳垂れ1"].ToPar();
+    		X0Y0_母乳垂れ2 = partGroup["母乳垂れ2"].ToPar();
+    		partGroup = Body[0][1];
+    		X0Y1_母乳1 = partGroup["母乳1"].ToPar();
+    		X0Y1_母乳2 = partGroup["母乳2"].ToPar();
+    		X0Y1_母乳3 = partGroup["母乳3"].ToPar();
+    		X0Y1_母乳4 = partGroup["母乳4"].ToPar();
+    		X0Y1_母乳垂れ1 = partGroup["母乳垂れ1"].ToPar();
+    		X0Y1_母乳垂れ2 = partGroup["母乳垂れ2"].ToPar();
+    		partGroup = Body[0][2];
+    		X0Y2_母乳1 = partGroup["母乳1"].ToPar();
+    		X0Y2_母乳2 = partGroup["母乳2"].ToPar();
+    		X0Y2_母乳3 = partGroup["母乳3"].ToPar();
+    		X0Y2_母乳4 = partGroup["母乳4"].ToPar();
+    		X0Y2_母乳垂れ1 = partGroup["母乳垂れ1"].ToPar();
+    		X0Y2_母乳垂れ2 = partGroup["母乳垂れ2"].ToPar();
+    		partGroup = Body[0][3];
+    		X0Y3_母乳1 = partGroup["母乳1"].ToPar();
+    		X0Y3_母乳2 = partGroup["母乳2"].ToPar();
+    		X0Y3_母乳3 = partGroup["母乳3"].ToPar();
+    		X0Y3_母乳4 = partGroup["母乳4"].ToPar();
+    		X0Y3_母乳垂れ1 = partGroup["母乳垂れ1"].ToPar();
+    		X0Y3_母乳垂れ2 = partGroup["母乳垂れ2"].ToPar();
+    		partGroup = Body[0][4];
+    		X0Y4_母乳1 = partGroup["母乳1"].ToPar();
+    		X0Y4_母乳2 = partGroup["母乳2"].ToPar();
+    		X0Y4_母乳3 = partGroup["母乳3"].ToPar();
+    		X0Y4_母乳4 = partGroup["母乳4"].ToPar();
+    		X0Y4_母乳垂れ1 = partGroup["母乳垂れ1"].ToPar();
+    		X0Y4_母乳垂れ2 = partGroup["母乳垂れ2"].ToPar();
+    		partGroup = Body[0][5];
+    		X0Y5_母乳1 = partGroup["母乳1"].ToPar();
+    		X0Y5_母乳2 = partGroup["母乳2"].ToPar();
+    		X0Y5_母乳3 = partGroup["母乳3"].ToPar();
+    		X0Y5_母乳4 = partGroup["母乳4"].ToPar();
+    		X0Y5_母乳垂れ1 = partGroup["母乳垂れ1"].ToPar();
+    		X0Y5_母乳垂れ2 = partGroup["母乳垂れ2"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;

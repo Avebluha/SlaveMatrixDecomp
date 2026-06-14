@@ -56,28 +56,28 @@ namespace SlaveMatrix
 
     	public bool 鎖表示;
 
-    	public List<EleD> 腕輪_接続 = new List<EleD>();
+    	public List<ElementData> 腕輪_接続 = new List<ElementData>();
 
     	public LowerArm_蝙D()
     	{
     		ThisType = GetType();
     	}
 
-    	public override void 手接続(EleD e)
+    	public override void 手接続(ElementData e)
     	{
     		手_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.LowerArm_蝙_手_接続;
     	}
 
-    	public void 腕輪接続(EleD e)
+    	public void 腕輪接続(ElementData e)
     	{
     		腕輪_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.LowerArm_蝙_腕輪_接続;
     	}
 
-    	public override Ele GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
+    	public override Element GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
     	{
     		return new LowerArm_蝙(DisUnit, 配色指定, 体配色, Med, this);
     	}

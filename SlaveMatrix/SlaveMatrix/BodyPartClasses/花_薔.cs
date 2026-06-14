@@ -4,57 +4,57 @@ namespace SlaveMatrix
 {
     public class 花_薔 : 花
     {
-    	public Par X0Y0_花_バラ_通常_花弁2;
+    	public ShapePart X0Y0_花_バラ_通常_花弁2;
 
-    	public Par X0Y0_花_バラ_通常_花弁4;
+    	public ShapePart X0Y0_花_バラ_通常_花弁4;
 
-    	public Par X0Y0_花_バラ_通常_花弁3;
+    	public ShapePart X0Y0_花_バラ_通常_花弁3;
 
-    	public Par X0Y0_花_バラ_通常_花弁1;
+    	public ShapePart X0Y0_花_バラ_通常_花弁1;
 
-    	public Par X0Y0_花_バラ_通常_花弁5;
+    	public ShapePart X0Y0_花_バラ_通常_花弁5;
 
-    	public Par X0Y0_花_バラ_通常_花弁6;
+    	public ShapePart X0Y0_花_バラ_通常_花弁6;
 
-    	public Par X0Y0_花_バラ_通常_花弁8;
+    	public ShapePart X0Y0_花_バラ_通常_花弁8;
 
-    	public Par X0Y0_花_バラ_通常_花弁7;
+    	public ShapePart X0Y0_花_バラ_通常_花弁7;
 
-    	public Par X0Y0_花_バラ_通常_花弁9;
+    	public ShapePart X0Y0_花_バラ_通常_花弁9;
 
-    	public Par X0Y0_花_バラ_通常_花弁11;
+    	public ShapePart X0Y0_花_バラ_通常_花弁11;
 
-    	public Par X0Y0_花_バラ_通常_花弁10;
+    	public ShapePart X0Y0_花_バラ_通常_花弁10;
 
-    	public Par X0Y0_花_バラ_通常_花弁影;
+    	public ShapePart X0Y0_花_バラ_通常_花弁影;
 
-    	public Par X0Y0_花_バラ_欠損_花弁2;
+    	public ShapePart X0Y0_花_バラ_欠損_花弁2;
 
-    	public Par X0Y0_花_バラ_欠損_花弁4;
+    	public ShapePart X0Y0_花_バラ_欠損_花弁4;
 
-    	public Par X0Y0_花_バラ_欠損_花弁3;
+    	public ShapePart X0Y0_花_バラ_欠損_花弁3;
 
-    	public Par X0Y0_花_バラ_欠損_花弁1;
+    	public ShapePart X0Y0_花_バラ_欠損_花弁1;
 
-    	public Par X0Y0_花_バラ_欠損_花弁5;
+    	public ShapePart X0Y0_花_バラ_欠損_花弁5;
 
-    	public Par X0Y0_花_バラ_欠損_花弁6;
+    	public ShapePart X0Y0_花_バラ_欠損_花弁6;
 
-    	public Par X0Y0_花_バラ_欠損_花弁8;
+    	public ShapePart X0Y0_花_バラ_欠損_花弁8;
 
-    	public Par X0Y0_花_バラ_欠損_花弁7;
+    	public ShapePart X0Y0_花_バラ_欠損_花弁7;
 
-    	public Par X0Y0_花_バラ_欠損_花弁9;
+    	public ShapePart X0Y0_花_バラ_欠損_花弁9;
 
-    	public Par X0Y0_花_バラ_欠損_花弁11;
+    	public ShapePart X0Y0_花_バラ_欠損_花弁11;
 
-    	public Par X0Y0_花_バラ_欠損_花弁10;
+    	public ShapePart X0Y0_花_バラ_欠損_花弁10;
 
-    	public Par X0Y0_花_バラ_欠損_花弁影;
+    	public ShapePart X0Y0_花_バラ_欠損_花弁影;
 
-    	public Par X0Y0_萼_通常_萼;
+    	public ShapePart X0Y0_萼_通常_萼;
 
-    	public Par X0Y0_萼_欠損_萼;
+    	public ShapePart X0Y0_萼_欠損_萼;
 
     	public ColorD 花_バラ_花弁2CD;
 
@@ -910,20 +910,20 @@ namespace SlaveMatrix
     	public 花_薔(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 花_薔D e)
     	{
     		ThisType = GetType();
-    		Pars pars = new Pars();
-    		pars.Tag = "バラ";
-    		Pars pars2 = Sta.肢左["植"][0][0];
-    		pars.Add("バラ", new Pars(pars2["花"].ToPars()["バラ"].ToPars()));
-    		pars.Add("萼", new Pars(pars2["萼"].ToPars()));
-    		Dif dif = new Dif();
-    		dif.Tag = "花";
-    		dif.Add(new Pars(pars));
-    		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
-    		Pars pars3 = Body[0][0];
-    		Pars pars4 = pars3["バラ"].ToPars();
-    		Pars pars5 = pars4["通常"].ToPars();
+    		PartGroup partGroup = new PartGroup();
+    		partGroup.Tag = "バラ";
+    		PartGroup pars2 = GlobalState.肢左["植"][0][0];
+    		partGroup.Add("バラ", new PartGroup(pars2["花"].ToPars()["バラ"].ToPars()));
+    		partGroup.Add("萼", new PartGroup(pars2["萼"].ToPars()));
+    		MorphVariant morphVariant = new MorphVariant();
+    		morphVariant.Tag = "花";
+    		morphVariant.Add(new PartGroup(partGroup));
+    		Body = new VariantGrid();
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
+    		PartGroup pars3 = Body[0][0];
+    		PartGroup pars4 = pars3["バラ"].ToPars();
+    		PartGroup pars5 = pars4["通常"].ToPars();
     		X0Y0_花_バラ_通常_花弁2 = pars5["花弁2"].ToPar();
     		X0Y0_花_バラ_通常_花弁4 = pars5["花弁4"].ToPar();
     		X0Y0_花_バラ_通常_花弁3 = pars5["花弁3"].ToPar();
@@ -949,7 +949,7 @@ namespace SlaveMatrix
     		X0Y0_花_バラ_欠損_花弁11 = pars5["花弁11"].ToPar();
     		X0Y0_花_バラ_欠損_花弁10 = pars5["花弁10"].ToPar();
     		X0Y0_花_バラ_欠損_花弁影 = pars5["花弁影"].ToPar();
-    		Pars pars6 = pars3["萼"].ToPars();
+    		PartGroup pars6 = pars3["萼"].ToPars();
     		pars5 = pars6["通常"].ToPars();
     		X0Y0_萼_通常_萼 = pars5["萼"].ToPar();
     		pars5 = pars6["欠損"].ToPars();
@@ -1113,53 +1113,53 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		花_バラ_花弁2CD = new ColorD(ref Col.Black, ref 体配色.薔O);
-    		花_バラ_花弁4CD = new ColorD(ref Col.Black, ref 体配色.薔O);
-    		花_バラ_花弁3CD = new ColorD(ref Col.Black, ref 体配色.薔O);
-    		花_バラ_花弁1CD = new ColorD(ref Col.Black, ref 体配色.薔O);
-    		花_バラ_花弁5CD = new ColorD(ref Col.Black, ref 体配色.薔O);
-    		花_バラ_花弁6CD = new ColorD(ref Col.Black, ref 体配色.薔O);
-    		花_バラ_花弁8CD = new ColorD(ref Col.Black, ref 体配色.薔O);
-    		花_バラ_花弁7CD = new ColorD(ref Col.Black, ref 体配色.薔O);
-    		花_バラ_花弁9CD = new ColorD(ref Col.Black, ref 体配色.薔O);
-    		花_バラ_花弁11CD = new ColorD(ref Col.Black, ref 体配色.薔O);
-    		花_バラ_花弁10CD = new ColorD(ref Col.Black, ref 体配色.薔O);
-    		花_バラ_花弁影CD = new ColorD(ref Col.Black, ref 体配色.薔O);
-    		萼_萼CD = new ColorD(ref Col.Black, ref 体配色.植1O);
+    		花_バラ_花弁2CD = new ColorD(ref ColorHelper.Black, ref 体配色.薔O);
+    		花_バラ_花弁4CD = new ColorD(ref ColorHelper.Black, ref 体配色.薔O);
+    		花_バラ_花弁3CD = new ColorD(ref ColorHelper.Black, ref 体配色.薔O);
+    		花_バラ_花弁1CD = new ColorD(ref ColorHelper.Black, ref 体配色.薔O);
+    		花_バラ_花弁5CD = new ColorD(ref ColorHelper.Black, ref 体配色.薔O);
+    		花_バラ_花弁6CD = new ColorD(ref ColorHelper.Black, ref 体配色.薔O);
+    		花_バラ_花弁8CD = new ColorD(ref ColorHelper.Black, ref 体配色.薔O);
+    		花_バラ_花弁7CD = new ColorD(ref ColorHelper.Black, ref 体配色.薔O);
+    		花_バラ_花弁9CD = new ColorD(ref ColorHelper.Black, ref 体配色.薔O);
+    		花_バラ_花弁11CD = new ColorD(ref ColorHelper.Black, ref 体配色.薔O);
+    		花_バラ_花弁10CD = new ColorD(ref ColorHelper.Black, ref 体配色.薔O);
+    		花_バラ_花弁影CD = new ColorD(ref ColorHelper.Black, ref 体配色.薔O);
+    		萼_萼CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
     	}
 
     	private void 配色T0(BodyColorSet 体配色)
     	{
-    		花_バラ_花弁2CD = new ColorD(ref Col.Black, ref 体配色.薔O);
-    		花_バラ_花弁4CD = new ColorD(ref Col.Black, ref 体配色.薔O);
-    		花_バラ_花弁3CD = new ColorD(ref Col.Black, ref 体配色.薔O);
-    		花_バラ_花弁1CD = new ColorD(ref Col.Black, ref 体配色.薔O);
-    		花_バラ_花弁5CD = new ColorD(ref Col.Black, ref 体配色.薔O);
-    		花_バラ_花弁6CD = new ColorD(ref Col.Black, ref 体配色.薔O);
-    		花_バラ_花弁8CD = new ColorD(ref Col.Black, ref 体配色.薔O);
-    		花_バラ_花弁7CD = new ColorD(ref Col.Black, ref 体配色.薔O);
-    		花_バラ_花弁9CD = new ColorD(ref Col.Black, ref 体配色.薔O);
-    		花_バラ_花弁11CD = new ColorD(ref Col.Black, ref 体配色.薔O);
-    		花_バラ_花弁10CD = new ColorD(ref Col.Black, ref 体配色.薔O);
-    		花_バラ_花弁影CD = new ColorD(ref Col.Black, ref 体配色.薔O);
-    		萼_萼CD = new ColorD(ref Col.Black, ref 体配色.植1O);
+    		花_バラ_花弁2CD = new ColorD(ref ColorHelper.Black, ref 体配色.薔O);
+    		花_バラ_花弁4CD = new ColorD(ref ColorHelper.Black, ref 体配色.薔O);
+    		花_バラ_花弁3CD = new ColorD(ref ColorHelper.Black, ref 体配色.薔O);
+    		花_バラ_花弁1CD = new ColorD(ref ColorHelper.Black, ref 体配色.薔O);
+    		花_バラ_花弁5CD = new ColorD(ref ColorHelper.Black, ref 体配色.薔O);
+    		花_バラ_花弁6CD = new ColorD(ref ColorHelper.Black, ref 体配色.薔O);
+    		花_バラ_花弁8CD = new ColorD(ref ColorHelper.Black, ref 体配色.薔O);
+    		花_バラ_花弁7CD = new ColorD(ref ColorHelper.Black, ref 体配色.薔O);
+    		花_バラ_花弁9CD = new ColorD(ref ColorHelper.Black, ref 体配色.薔O);
+    		花_バラ_花弁11CD = new ColorD(ref ColorHelper.Black, ref 体配色.薔O);
+    		花_バラ_花弁10CD = new ColorD(ref ColorHelper.Black, ref 体配色.薔O);
+    		花_バラ_花弁影CD = new ColorD(ref ColorHelper.Black, ref 体配色.薔O);
+    		萼_萼CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
     	}
 
     	private void 配色T1(BodyColorSet 体配色)
     	{
-    		花_バラ_花弁2CD = new ColorD(ref Col.Black, ref 体配色.薔O);
-    		花_バラ_花弁4CD = new ColorD(ref Col.Black, ref 体配色.薔O);
-    		花_バラ_花弁3CD = new ColorD(ref Col.Black, ref 体配色.薔O);
-    		花_バラ_花弁1CD = new ColorD(ref Col.Black, ref 体配色.薔O);
-    		花_バラ_花弁5CD = new ColorD(ref Col.Black, ref 体配色.薔O);
-    		花_バラ_花弁6CD = new ColorD(ref Col.Black, ref 体配色.薔O);
-    		花_バラ_花弁8CD = new ColorD(ref Col.Black, ref 体配色.薔O);
-    		花_バラ_花弁7CD = new ColorD(ref Col.Black, ref 体配色.薔O);
-    		花_バラ_花弁9CD = new ColorD(ref Col.Black, ref 体配色.薔O);
-    		花_バラ_花弁11CD = new ColorD(ref Col.Black, ref 体配色.薔O);
-    		花_バラ_花弁10CD = new ColorD(ref Col.Black, ref 体配色.薔O);
-    		花_バラ_花弁影CD = new ColorD(ref Col.Black, ref 体配色.薔O);
-    		萼_萼CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		花_バラ_花弁2CD = new ColorD(ref ColorHelper.Black, ref 体配色.薔O);
+    		花_バラ_花弁4CD = new ColorD(ref ColorHelper.Black, ref 体配色.薔O);
+    		花_バラ_花弁3CD = new ColorD(ref ColorHelper.Black, ref 体配色.薔O);
+    		花_バラ_花弁1CD = new ColorD(ref ColorHelper.Black, ref 体配色.薔O);
+    		花_バラ_花弁5CD = new ColorD(ref ColorHelper.Black, ref 体配色.薔O);
+    		花_バラ_花弁6CD = new ColorD(ref ColorHelper.Black, ref 体配色.薔O);
+    		花_バラ_花弁8CD = new ColorD(ref ColorHelper.Black, ref 体配色.薔O);
+    		花_バラ_花弁7CD = new ColorD(ref ColorHelper.Black, ref 体配色.薔O);
+    		花_バラ_花弁9CD = new ColorD(ref ColorHelper.Black, ref 体配色.薔O);
+    		花_バラ_花弁11CD = new ColorD(ref ColorHelper.Black, ref 体配色.薔O);
+    		花_バラ_花弁10CD = new ColorD(ref ColorHelper.Black, ref 体配色.薔O);
+    		花_バラ_花弁影CD = new ColorD(ref ColorHelper.Black, ref 体配色.薔O);
+    		萼_萼CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
     	}
     }
 }

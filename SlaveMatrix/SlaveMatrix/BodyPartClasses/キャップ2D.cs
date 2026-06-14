@@ -5,7 +5,7 @@ using SlaveMatrix.GameClasses;
 namespace SlaveMatrix
 {
     [Serializable]
-    public class キャップ2D : EleD
+    public class キャップ2D : ElementData
     {
     	public bool 根本_表示;
 
@@ -16,7 +16,7 @@ namespace SlaveMatrix
     		ThisType = GetType();
     	}
 
-    	public override Ele GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
+    	public override Element GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
     	{
     		return new キャップ2(DisUnit, 配色指定, 体配色, Med, this);
     	}

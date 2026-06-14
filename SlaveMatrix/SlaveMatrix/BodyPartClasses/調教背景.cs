@@ -24,7 +24,7 @@ namespace SlaveMatrix
 
     	private static double r = 0.147;
 
-    	private static Vector2D o = new Vector2D(0.053 - 0.055 * RNG.XS.NextDouble(), 0.07 - 0.0735 * RNG.XS.NextDouble());
+    	private static Vector2D o = new Vector2D(0.053 - 0.055 * Rng.XS.NextDouble(), 0.07 - 0.0735 * Rng.XS.NextDouble());
 
     	public 調教背景()
     	{
@@ -35,8 +35,8 @@ namespace SlaveMatrix
     	{
     		for (int i = 0; i < L; i++)
     		{
-    			Yv[i] = RNG.XS.NextDouble();
-    			An[i] = (double)RNG.XS.Next(4) * 90.0;
+    			Yv[i] = Rng.XS.NextDouble();
+    			An[i] = (double)Rng.XS.Next(4) * 90.0;
     		}
     	}
 
@@ -47,12 +47,12 @@ namespace SlaveMatrix
     		{
     			for (x = 0; x < 10; x++)
     			{
-    				Sta.タイル.SizeBase = 0.7;
-    				Sta.タイル.JoinRoot.ValueY = Yv[c];
-    				Sta.タイル.AngleBase = An[c];
-    				Sta.タイル.JoinRoot.GetCurJoinRoot().SetPositionBase(Are.GetPosition(new Vector2D(o.X + (double)x * r / Are.XRatio, o.Y + (double)y * r / Are.YRatio)));
-    				Sta.タイル.JoinPA();
-    				Sta.タイル.Draw(Are);
+    				GlobalState.タイル.SizeBase = 0.7;
+    				GlobalState.タイル.JoinRoot.ValueY = Yv[c];
+    				GlobalState.タイル.AngleBase = An[c];
+    				GlobalState.タイル.JoinRoot.GetCurJoinRoot().SetPositionBase(Are.GetPosition(new Vector2D(o.X + (double)x * r / Are.XRatio, o.Y + (double)y * r / Are.YRatio)));
+    				GlobalState.タイル.JoinPA();
+    				GlobalState.タイル.Draw(Are);
     				c++;
     			}
     		}

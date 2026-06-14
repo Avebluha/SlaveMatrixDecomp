@@ -1,0 +1,24 @@
+id: MandibleBase
+original_key: 大顎基
+resource: 肢中
+morph_x: 1
+morph_y: 1
+variants:
+- x: 0
+  y: 0
+  file: x0y0.svg
+fields:
+- name: 甲殻下
+joints:
+- position: [
+  0.029680761472545523,
+  0.06577543358935374
+]
+- position: [
+  0.08131880412072615,
+  0.06577543358935374
+]
+- position: [
+  0.05549978279663585,
+  0.07334854312421513
+]

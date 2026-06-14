@@ -4,21 +4,21 @@ namespace SlaveMatrix
 {
     public class 鰭_魚 : 鰭
     {
-    	public Par X0Y0_鰭2_鰭膜;
+    	public ShapePart X0Y0_鰭2_鰭膜;
 
-    	public Par X0Y0_鰭2_鰭条;
+    	public ShapePart X0Y0_鰭2_鰭条;
 
-    	public Par X0Y0_鰭1_鰭膜;
+    	public ShapePart X0Y0_鰭1_鰭膜;
 
-    	public Par X0Y0_鰭1_鰭条;
+    	public ShapePart X0Y0_鰭1_鰭条;
 
-    	public Par X0Y1_鰭2_鰭膜;
+    	public ShapePart X0Y1_鰭2_鰭膜;
 
-    	public Par X0Y1_鰭2_鰭条;
+    	public ShapePart X0Y1_鰭2_鰭条;
 
-    	public Par X0Y1_鰭1_鰭膜;
+    	public ShapePart X0Y1_鰭1_鰭膜;
 
-    	public Par X0Y1_鰭1_鰭条;
+    	public ShapePart X0Y1_鰭1_鰭条;
 
     	public ColorD 鰭2_鰭膜CD;
 
@@ -174,18 +174,18 @@ namespace SlaveMatrix
     	public 鰭_魚(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 鰭_魚D e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif(Sta.肢左["鰭"][0]);
-    		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		Pars pars2 = pars["鰭2"].ToPars();
+    		MorphVariant morphVariant = new MorphVariant(GlobalState.肢左["鰭"][0]);
+    		Body = new VariantGrid();
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
+    		PartGroup partGroup = Body[0][0];
+    		PartGroup pars2 = partGroup["鰭2"].ToPars();
     		X0Y0_鰭2_鰭膜 = pars2["鰭膜"].ToPar();
     		X0Y0_鰭2_鰭条 = pars2["鰭条"].ToPar();
-    		pars2 = pars["鰭1"].ToPars();
+    		pars2 = partGroup["鰭1"].ToPars();
     		X0Y0_鰭1_鰭膜 = pars2["鰭膜"].ToPar();
     		X0Y0_鰭1_鰭条 = pars2["鰭条"].ToPar();
-    		Pars pars3 = Body[0][1];
+    		PartGroup pars3 = Body[0][1];
     		pars2 = pars3["鰭2"].ToPars();
     		X0Y1_鰭2_鰭膜 = pars2["鰭膜"].ToPar();
     		X0Y1_鰭2_鰭条 = pars2["鰭条"].ToPar();
@@ -279,10 +279,10 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		鰭2_鰭膜CD = new ColorD(ref Col.Black, ref 体配色.膜O);
-    		鰭2_鰭条CD = new ColorD(ref Col.Black, ref 体配色.爪O);
-    		鰭1_鰭膜CD = new ColorD(ref Col.Black, ref 体配色.膜O);
-    		鰭1_鰭条CD = new ColorD(ref Col.Black, ref 体配色.爪O);
+    		鰭2_鰭膜CD = new ColorD(ref ColorHelper.Black, ref 体配色.膜O);
+    		鰭2_鰭条CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
+    		鰭1_鰭膜CD = new ColorD(ref ColorHelper.Black, ref 体配色.膜O);
+    		鰭1_鰭条CD = new ColorD(ref ColorHelper.Black, ref 体配色.爪O);
     	}
     }
 }

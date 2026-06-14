@@ -5,29 +5,29 @@ namespace SlaveMatrix
 {
     public class 尾_狐 : 尾
     {
-    	public Par X0Y0_尾0;
+    	public ShapePart X0Y0_尾0;
 
-    	public Par X0Y0_尾1;
+    	public ShapePart X0Y0_尾1;
 
-    	public Par X0Y0_尾2;
+    	public ShapePart X0Y0_尾2;
 
-    	public Par X0Y0_尾3;
+    	public ShapePart X0Y0_尾3;
 
-    	public Par X0Y0_尾4;
+    	public ShapePart X0Y0_尾4;
 
-    	public Par X0Y0_尾5;
+    	public ShapePart X0Y0_尾5;
 
-    	public Par X0Y0_尾6;
+    	public ShapePart X0Y0_尾6;
 
-    	public Par X0Y0_尾7;
+    	public ShapePart X0Y0_尾7;
 
-    	public Par X0Y0_尾8;
+    	public ShapePart X0Y0_尾8;
 
-    	public Par X0Y0_尾9;
+    	public ShapePart X0Y0_尾9;
 
-    	public Par X0Y0_尾10;
+    	public ShapePart X0Y0_尾10;
 
-    	public Par X0Y0_尾11;
+    	public ShapePart X0Y0_尾11;
 
     	public ColorD 尾0CD;
 
@@ -77,7 +77,7 @@ namespace SlaveMatrix
 
     	public ColorP X0Y0_尾11CP;
 
-    	public Par[] Pars;
+    	public ShapePart[] Pars;
 
     	private Vector2D[] mm;
 
@@ -322,25 +322,25 @@ namespace SlaveMatrix
     	public 尾_狐(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 尾_狐D e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif();
-    		dif.Tag = "狐尾";
-    		dif.Add(new Pars(Sta.尻尾["尾"][0][2]));
-    		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		X0Y0_尾0 = pars["尾0"].ToPar();
-    		X0Y0_尾1 = pars["尾1"].ToPar();
-    		X0Y0_尾2 = pars["尾2"].ToPar();
-    		X0Y0_尾3 = pars["尾3"].ToPar();
-    		X0Y0_尾4 = pars["尾4"].ToPar();
-    		X0Y0_尾5 = pars["尾5"].ToPar();
-    		X0Y0_尾6 = pars["尾6"].ToPar();
-    		X0Y0_尾7 = pars["尾7"].ToPar();
-    		X0Y0_尾8 = pars["尾8"].ToPar();
-    		X0Y0_尾9 = pars["尾9"].ToPar();
-    		X0Y0_尾10 = pars["尾10"].ToPar();
-    		X0Y0_尾11 = pars["尾11"].ToPar();
+    		MorphVariant morphVariant = new MorphVariant();
+    		morphVariant.Tag = "狐尾";
+    		morphVariant.Add(new PartGroup(GlobalState.尻尾["尾"][0][2]));
+    		Body = new VariantGrid();
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_尾0 = partGroup["尾0"].ToPar();
+    		X0Y0_尾1 = partGroup["尾1"].ToPar();
+    		X0Y0_尾2 = partGroup["尾2"].ToPar();
+    		X0Y0_尾3 = partGroup["尾3"].ToPar();
+    		X0Y0_尾4 = partGroup["尾4"].ToPar();
+    		X0Y0_尾5 = partGroup["尾5"].ToPar();
+    		X0Y0_尾6 = partGroup["尾6"].ToPar();
+    		X0Y0_尾7 = partGroup["尾7"].ToPar();
+    		X0Y0_尾8 = partGroup["尾8"].ToPar();
+    		X0Y0_尾9 = partGroup["尾9"].ToPar();
+    		X0Y0_尾10 = partGroup["尾10"].ToPar();
+    		X0Y0_尾11 = partGroup["尾11"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;
@@ -386,7 +386,7 @@ namespace SlaveMatrix
     		}
     		base.配色指定 = 配色指定;
     		配色(体配色);
-    		Pars = new Par[12]
+    		Pars = new ShapePart[12]
     		{
     			X0Y0_尾0, X0Y0_尾1, X0Y0_尾2, X0Y0_尾3, X0Y0_尾4, X0Y0_尾5, X0Y0_尾6, X0Y0_尾7, X0Y0_尾8, X0Y0_尾9,
     			X0Y0_尾10, X0Y0_尾11
@@ -425,7 +425,7 @@ namespace SlaveMatrix
     		Body.JoinPAall();
     	}
 
-    	public override IEnumerable<Par> Enum軸()
+    	public override IEnumerable<ShapePart> Enum軸()
     	{
     		yield return X0Y0_尾0;
     		yield return X0Y0_尾1;
@@ -479,18 +479,18 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		尾0CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		尾1CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		尾2CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		尾3CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		尾4CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		尾5CD = new ColorD(ref Col.Black, ref 体配色.毛0O);
-    		尾6CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		尾7CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		尾8CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		尾9CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		尾10CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
-    		尾11CD = new ColorD(ref Col.Black, ref 体配色.毛1O);
+    		尾0CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		尾1CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		尾2CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		尾3CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		尾4CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		尾5CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛0O);
+    		尾6CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		尾7CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		尾8CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		尾9CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		尾10CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
+    		尾11CD = new ColorD(ref ColorHelper.Black, ref 体配色.毛1O);
     	}
 
     	private void 配色T0(BodyColorSet 体配色)

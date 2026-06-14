@@ -32,14 +32,14 @@ namespace SlaveMatrix
     		ThisType = GetType();
     	}
 
-    	public override void 足接続(EleD e)
+    	public override void 足接続(ElementData e)
     	{
     		足_接続.Add(e);
     		e.Par = this;
     		e.接続情報 = ConnectionInfo.Leg_獣_足_接続;
     	}
 
-    	public override Ele GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
+    	public override Element GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
     	{
     		return new Leg_獣(DisUnit, 配色指定, 体配色, Med, this);
     	}

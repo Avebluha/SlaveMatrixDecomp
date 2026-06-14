@@ -4,129 +4,129 @@ namespace SlaveMatrix
 {
     public class 前翅_羽 : 前翅
     {
-    	public Par X0Y0_前翅_前翅;
+    	public ShapePart X0Y0_前翅_前翅;
 
-    	public Par X0Y0_前翅_翅脈1;
+    	public ShapePart X0Y0_前翅_翅脈1;
 
-    	public Par X0Y0_前翅_翅脈2;
+    	public ShapePart X0Y0_前翅_翅脈2;
 
-    	public Par X0Y0_前翅_翅脈線1;
+    	public ShapePart X0Y0_前翅_翅脈線1;
 
-    	public Par X0Y0_前翅_翅脈線2;
+    	public ShapePart X0Y0_前翅_翅脈線2;
 
-    	public Par X0Y0_前翅_翅脈線3;
+    	public ShapePart X0Y0_前翅_翅脈線3;
 
-    	public Par X0Y0_前翅_翅脈線4;
+    	public ShapePart X0Y0_前翅_翅脈線4;
 
-    	public Par X0Y0_前翅_翅脈線5;
+    	public ShapePart X0Y0_前翅_翅脈線5;
 
-    	public Par X0Y0_前翅_翅脈縦線1;
+    	public ShapePart X0Y0_前翅_翅脈縦線1;
 
-    	public Par X0Y0_前翅_翅脈縦線2;
+    	public ShapePart X0Y0_前翅_翅脈縦線2;
 
-    	public Par X0Y0_前翅_翅脈縦線3;
+    	public ShapePart X0Y0_前翅_翅脈縦線3;
 
-    	public Par X0Y0_前翅_翅脈縦線4;
+    	public ShapePart X0Y0_前翅_翅脈縦線4;
 
-    	public Par X0Y0_前翅_翅脈縦線5;
+    	public ShapePart X0Y0_前翅_翅脈縦線5;
 
-    	public Par X0Y0_前翅_翅脈縦線6;
+    	public ShapePart X0Y0_前翅_翅脈縦線6;
 
-    	public Par X0Y0_前翅_翅脈縦線7;
+    	public ShapePart X0Y0_前翅_翅脈縦線7;
 
-    	public Par X0Y0_前翅_翅脈縦線8;
+    	public ShapePart X0Y0_前翅_翅脈縦線8;
 
-    	public Par X0Y0_前翅_翅脈縦線9;
+    	public ShapePart X0Y0_前翅_翅脈縦線9;
 
-    	public Par X0Y0_前翅_翅脈縦線10;
+    	public ShapePart X0Y0_前翅_翅脈縦線10;
 
-    	public Par X0Y0_前翅_翅脈縦線11;
+    	public ShapePart X0Y0_前翅_翅脈縦線11;
 
-    	public Par X0Y0_前翅_翅脈縦線12;
+    	public ShapePart X0Y0_前翅_翅脈縦線12;
 
-    	public Par X0Y0_前翅_翅脈縦線13;
+    	public ShapePart X0Y0_前翅_翅脈縦線13;
 
-    	public Par X0Y0_前翅_翅脈縦線14;
+    	public ShapePart X0Y0_前翅_翅脈縦線14;
 
-    	public Par X0Y0_前翅_翅脈縦線15;
+    	public ShapePart X0Y0_前翅_翅脈縦線15;
 
-    	public Par X0Y0_前翅_翅脈縦線16;
+    	public ShapePart X0Y0_前翅_翅脈縦線16;
 
-    	public Par X0Y0_前翅_翅脈縦線17;
+    	public ShapePart X0Y0_前翅_翅脈縦線17;
 
-    	public Par X0Y0_前翅_翅脈網1_翅脈網線1;
+    	public ShapePart X0Y0_前翅_翅脈網1_翅脈網線1;
 
-    	public Par X0Y0_前翅_翅脈網1_翅脈網線2;
+    	public ShapePart X0Y0_前翅_翅脈網1_翅脈網線2;
 
-    	public Par X0Y0_前翅_翅脈網1_翅脈網線3;
+    	public ShapePart X0Y0_前翅_翅脈網1_翅脈網線3;
 
-    	public Par X0Y0_前翅_翅脈網2_翅脈網線1;
+    	public ShapePart X0Y0_前翅_翅脈網2_翅脈網線1;
 
-    	public Par X0Y0_前翅_翅脈網2_翅脈網線2;
+    	public ShapePart X0Y0_前翅_翅脈網2_翅脈網線2;
 
-    	public Par X0Y0_前翅_翅脈網2_翅脈網線3;
+    	public ShapePart X0Y0_前翅_翅脈網2_翅脈網線3;
 
-    	public Par X0Y1_前翅_前翅;
+    	public ShapePart X0Y1_前翅_前翅;
 
-    	public Par X0Y1_前翅_翅脈1;
+    	public ShapePart X0Y1_前翅_翅脈1;
 
-    	public Par X0Y1_前翅_翅脈2;
+    	public ShapePart X0Y1_前翅_翅脈2;
 
-    	public Par X0Y1_前翅_翅脈線1;
+    	public ShapePart X0Y1_前翅_翅脈線1;
 
-    	public Par X0Y1_前翅_翅脈線2;
+    	public ShapePart X0Y1_前翅_翅脈線2;
 
-    	public Par X0Y1_前翅_翅脈線3;
+    	public ShapePart X0Y1_前翅_翅脈線3;
 
-    	public Par X0Y1_前翅_翅脈線4;
+    	public ShapePart X0Y1_前翅_翅脈線4;
 
-    	public Par X0Y1_前翅_翅脈線5;
+    	public ShapePart X0Y1_前翅_翅脈線5;
 
-    	public Par X0Y1_前翅_翅脈縦線1;
+    	public ShapePart X0Y1_前翅_翅脈縦線1;
 
-    	public Par X0Y1_前翅_翅脈縦線2;
+    	public ShapePart X0Y1_前翅_翅脈縦線2;
 
-    	public Par X0Y1_前翅_翅脈縦線3;
+    	public ShapePart X0Y1_前翅_翅脈縦線3;
 
-    	public Par X0Y1_前翅_翅脈縦線4;
+    	public ShapePart X0Y1_前翅_翅脈縦線4;
 
-    	public Par X0Y1_前翅_翅脈縦線5;
+    	public ShapePart X0Y1_前翅_翅脈縦線5;
 
-    	public Par X0Y1_前翅_翅脈縦線6;
+    	public ShapePart X0Y1_前翅_翅脈縦線6;
 
-    	public Par X0Y1_前翅_翅脈縦線7;
+    	public ShapePart X0Y1_前翅_翅脈縦線7;
 
-    	public Par X0Y1_前翅_翅脈縦線8;
+    	public ShapePart X0Y1_前翅_翅脈縦線8;
 
-    	public Par X0Y1_前翅_翅脈縦線9;
+    	public ShapePart X0Y1_前翅_翅脈縦線9;
 
-    	public Par X0Y1_前翅_翅脈縦線10;
+    	public ShapePart X0Y1_前翅_翅脈縦線10;
 
-    	public Par X0Y1_前翅_翅脈縦線11;
+    	public ShapePart X0Y1_前翅_翅脈縦線11;
 
-    	public Par X0Y1_前翅_翅脈縦線12;
+    	public ShapePart X0Y1_前翅_翅脈縦線12;
 
-    	public Par X0Y1_前翅_翅脈縦線13;
+    	public ShapePart X0Y1_前翅_翅脈縦線13;
 
-    	public Par X0Y1_前翅_翅脈縦線14;
+    	public ShapePart X0Y1_前翅_翅脈縦線14;
 
-    	public Par X0Y1_前翅_翅脈縦線15;
+    	public ShapePart X0Y1_前翅_翅脈縦線15;
 
-    	public Par X0Y1_前翅_翅脈縦線16;
+    	public ShapePart X0Y1_前翅_翅脈縦線16;
 
-    	public Par X0Y1_前翅_翅脈縦線17;
+    	public ShapePart X0Y1_前翅_翅脈縦線17;
 
-    	public Par X0Y1_前翅_翅脈網1_翅脈網線1;
+    	public ShapePart X0Y1_前翅_翅脈網1_翅脈網線1;
 
-    	public Par X0Y1_前翅_翅脈網1_翅脈網線2;
+    	public ShapePart X0Y1_前翅_翅脈網1_翅脈網線2;
 
-    	public Par X0Y1_前翅_翅脈網1_翅脈網線3;
+    	public ShapePart X0Y1_前翅_翅脈網1_翅脈網線3;
 
-    	public Par X0Y1_前翅_翅脈網2_翅脈網線1;
+    	public ShapePart X0Y1_前翅_翅脈網2_翅脈網線1;
 
-    	public Par X0Y1_前翅_翅脈網2_翅脈網線2;
+    	public ShapePart X0Y1_前翅_翅脈網2_翅脈網線2;
 
-    	public Par X0Y1_前翅_翅脈網2_翅脈網線3;
+    	public ShapePart X0Y1_前翅_翅脈網2_翅脈網線3;
 
     	public ColorD 前翅_前翅CD;
 
@@ -903,75 +903,75 @@ namespace SlaveMatrix
     	public 前翅_羽(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 前翅_羽D e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif(Sta.肢左["前翅"][1]);
-    		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
-    		Pars pars = Body[0][0]["前翅"].ToPars();
-    		X0Y0_前翅_前翅 = pars["前翅"].ToPar();
-    		X0Y0_前翅_翅脈1 = pars["翅脈1"].ToPar();
-    		X0Y0_前翅_翅脈2 = pars["翅脈2"].ToPar();
-    		X0Y0_前翅_翅脈線1 = pars["翅脈線1"].ToPar();
-    		X0Y0_前翅_翅脈線2 = pars["翅脈線2"].ToPar();
-    		X0Y0_前翅_翅脈線3 = pars["翅脈線3"].ToPar();
-    		X0Y0_前翅_翅脈線4 = pars["翅脈線4"].ToPar();
-    		X0Y0_前翅_翅脈線5 = pars["翅脈線5"].ToPar();
-    		X0Y0_前翅_翅脈縦線1 = pars["翅脈縦線1"].ToPar();
-    		X0Y0_前翅_翅脈縦線2 = pars["翅脈縦線2"].ToPar();
-    		X0Y0_前翅_翅脈縦線3 = pars["翅脈縦線3"].ToPar();
-    		X0Y0_前翅_翅脈縦線4 = pars["翅脈縦線4"].ToPar();
-    		X0Y0_前翅_翅脈縦線5 = pars["翅脈縦線5"].ToPar();
-    		X0Y0_前翅_翅脈縦線6 = pars["翅脈縦線6"].ToPar();
-    		X0Y0_前翅_翅脈縦線7 = pars["翅脈縦線7"].ToPar();
-    		X0Y0_前翅_翅脈縦線8 = pars["翅脈縦線8"].ToPar();
-    		X0Y0_前翅_翅脈縦線9 = pars["翅脈縦線9"].ToPar();
-    		X0Y0_前翅_翅脈縦線10 = pars["翅脈縦線10"].ToPar();
-    		X0Y0_前翅_翅脈縦線11 = pars["翅脈縦線11"].ToPar();
-    		X0Y0_前翅_翅脈縦線12 = pars["翅脈縦線12"].ToPar();
-    		X0Y0_前翅_翅脈縦線13 = pars["翅脈縦線13"].ToPar();
-    		X0Y0_前翅_翅脈縦線14 = pars["翅脈縦線14"].ToPar();
-    		X0Y0_前翅_翅脈縦線15 = pars["翅脈縦線15"].ToPar();
-    		X0Y0_前翅_翅脈縦線16 = pars["翅脈縦線16"].ToPar();
-    		X0Y0_前翅_翅脈縦線17 = pars["翅脈縦線17"].ToPar();
-    		Pars pars2 = pars["翅脈網1"].ToPars();
+    		MorphVariant morphVariant = new MorphVariant(GlobalState.肢左["前翅"][1]);
+    		Body = new VariantGrid();
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
+    		PartGroup partGroup = Body[0][0]["前翅"].ToPars();
+    		X0Y0_前翅_前翅 = partGroup["前翅"].ToPar();
+    		X0Y0_前翅_翅脈1 = partGroup["翅脈1"].ToPar();
+    		X0Y0_前翅_翅脈2 = partGroup["翅脈2"].ToPar();
+    		X0Y0_前翅_翅脈線1 = partGroup["翅脈線1"].ToPar();
+    		X0Y0_前翅_翅脈線2 = partGroup["翅脈線2"].ToPar();
+    		X0Y0_前翅_翅脈線3 = partGroup["翅脈線3"].ToPar();
+    		X0Y0_前翅_翅脈線4 = partGroup["翅脈線4"].ToPar();
+    		X0Y0_前翅_翅脈線5 = partGroup["翅脈線5"].ToPar();
+    		X0Y0_前翅_翅脈縦線1 = partGroup["翅脈縦線1"].ToPar();
+    		X0Y0_前翅_翅脈縦線2 = partGroup["翅脈縦線2"].ToPar();
+    		X0Y0_前翅_翅脈縦線3 = partGroup["翅脈縦線3"].ToPar();
+    		X0Y0_前翅_翅脈縦線4 = partGroup["翅脈縦線4"].ToPar();
+    		X0Y0_前翅_翅脈縦線5 = partGroup["翅脈縦線5"].ToPar();
+    		X0Y0_前翅_翅脈縦線6 = partGroup["翅脈縦線6"].ToPar();
+    		X0Y0_前翅_翅脈縦線7 = partGroup["翅脈縦線7"].ToPar();
+    		X0Y0_前翅_翅脈縦線8 = partGroup["翅脈縦線8"].ToPar();
+    		X0Y0_前翅_翅脈縦線9 = partGroup["翅脈縦線9"].ToPar();
+    		X0Y0_前翅_翅脈縦線10 = partGroup["翅脈縦線10"].ToPar();
+    		X0Y0_前翅_翅脈縦線11 = partGroup["翅脈縦線11"].ToPar();
+    		X0Y0_前翅_翅脈縦線12 = partGroup["翅脈縦線12"].ToPar();
+    		X0Y0_前翅_翅脈縦線13 = partGroup["翅脈縦線13"].ToPar();
+    		X0Y0_前翅_翅脈縦線14 = partGroup["翅脈縦線14"].ToPar();
+    		X0Y0_前翅_翅脈縦線15 = partGroup["翅脈縦線15"].ToPar();
+    		X0Y0_前翅_翅脈縦線16 = partGroup["翅脈縦線16"].ToPar();
+    		X0Y0_前翅_翅脈縦線17 = partGroup["翅脈縦線17"].ToPar();
+    		PartGroup pars2 = partGroup["翅脈網1"].ToPars();
     		X0Y0_前翅_翅脈網1_翅脈網線1 = pars2["翅脈網線1"].ToPar();
     		X0Y0_前翅_翅脈網1_翅脈網線2 = pars2["翅脈網線2"].ToPar();
     		X0Y0_前翅_翅脈網1_翅脈網線3 = pars2["翅脈網線3"].ToPar();
-    		pars2 = pars["翅脈網2"].ToPars();
+    		pars2 = partGroup["翅脈網2"].ToPars();
     		X0Y0_前翅_翅脈網2_翅脈網線1 = pars2["翅脈網線1"].ToPar();
     		X0Y0_前翅_翅脈網2_翅脈網線2 = pars2["翅脈網線2"].ToPar();
     		X0Y0_前翅_翅脈網2_翅脈網線3 = pars2["翅脈網線3"].ToPar();
-    		pars = Body[0][1]["前翅"].ToPars();
-    		X0Y1_前翅_前翅 = pars["前翅"].ToPar();
-    		X0Y1_前翅_翅脈1 = pars["翅脈1"].ToPar();
-    		X0Y1_前翅_翅脈2 = pars["翅脈2"].ToPar();
-    		X0Y1_前翅_翅脈線1 = pars["翅脈線1"].ToPar();
-    		X0Y1_前翅_翅脈線2 = pars["翅脈線2"].ToPar();
-    		X0Y1_前翅_翅脈線3 = pars["翅脈線3"].ToPar();
-    		X0Y1_前翅_翅脈線4 = pars["翅脈線4"].ToPar();
-    		X0Y1_前翅_翅脈線5 = pars["翅脈線5"].ToPar();
-    		X0Y1_前翅_翅脈縦線1 = pars["翅脈縦線1"].ToPar();
-    		X0Y1_前翅_翅脈縦線2 = pars["翅脈縦線2"].ToPar();
-    		X0Y1_前翅_翅脈縦線3 = pars["翅脈縦線3"].ToPar();
-    		X0Y1_前翅_翅脈縦線4 = pars["翅脈縦線4"].ToPar();
-    		X0Y1_前翅_翅脈縦線5 = pars["翅脈縦線5"].ToPar();
-    		X0Y1_前翅_翅脈縦線6 = pars["翅脈縦線6"].ToPar();
-    		X0Y1_前翅_翅脈縦線7 = pars["翅脈縦線7"].ToPar();
-    		X0Y1_前翅_翅脈縦線8 = pars["翅脈縦線8"].ToPar();
-    		X0Y1_前翅_翅脈縦線9 = pars["翅脈縦線9"].ToPar();
-    		X0Y1_前翅_翅脈縦線10 = pars["翅脈縦線10"].ToPar();
-    		X0Y1_前翅_翅脈縦線11 = pars["翅脈縦線11"].ToPar();
-    		X0Y1_前翅_翅脈縦線12 = pars["翅脈縦線12"].ToPar();
-    		X0Y1_前翅_翅脈縦線13 = pars["翅脈縦線13"].ToPar();
-    		X0Y1_前翅_翅脈縦線14 = pars["翅脈縦線14"].ToPar();
-    		X0Y1_前翅_翅脈縦線15 = pars["翅脈縦線15"].ToPar();
-    		X0Y1_前翅_翅脈縦線16 = pars["翅脈縦線16"].ToPar();
-    		X0Y1_前翅_翅脈縦線17 = pars["翅脈縦線17"].ToPar();
-    		pars2 = pars["翅脈網1"].ToPars();
+    		partGroup = Body[0][1]["前翅"].ToPars();
+    		X0Y1_前翅_前翅 = partGroup["前翅"].ToPar();
+    		X0Y1_前翅_翅脈1 = partGroup["翅脈1"].ToPar();
+    		X0Y1_前翅_翅脈2 = partGroup["翅脈2"].ToPar();
+    		X0Y1_前翅_翅脈線1 = partGroup["翅脈線1"].ToPar();
+    		X0Y1_前翅_翅脈線2 = partGroup["翅脈線2"].ToPar();
+    		X0Y1_前翅_翅脈線3 = partGroup["翅脈線3"].ToPar();
+    		X0Y1_前翅_翅脈線4 = partGroup["翅脈線4"].ToPar();
+    		X0Y1_前翅_翅脈線5 = partGroup["翅脈線5"].ToPar();
+    		X0Y1_前翅_翅脈縦線1 = partGroup["翅脈縦線1"].ToPar();
+    		X0Y1_前翅_翅脈縦線2 = partGroup["翅脈縦線2"].ToPar();
+    		X0Y1_前翅_翅脈縦線3 = partGroup["翅脈縦線3"].ToPar();
+    		X0Y1_前翅_翅脈縦線4 = partGroup["翅脈縦線4"].ToPar();
+    		X0Y1_前翅_翅脈縦線5 = partGroup["翅脈縦線5"].ToPar();
+    		X0Y1_前翅_翅脈縦線6 = partGroup["翅脈縦線6"].ToPar();
+    		X0Y1_前翅_翅脈縦線7 = partGroup["翅脈縦線7"].ToPar();
+    		X0Y1_前翅_翅脈縦線8 = partGroup["翅脈縦線8"].ToPar();
+    		X0Y1_前翅_翅脈縦線9 = partGroup["翅脈縦線9"].ToPar();
+    		X0Y1_前翅_翅脈縦線10 = partGroup["翅脈縦線10"].ToPar();
+    		X0Y1_前翅_翅脈縦線11 = partGroup["翅脈縦線11"].ToPar();
+    		X0Y1_前翅_翅脈縦線12 = partGroup["翅脈縦線12"].ToPar();
+    		X0Y1_前翅_翅脈縦線13 = partGroup["翅脈縦線13"].ToPar();
+    		X0Y1_前翅_翅脈縦線14 = partGroup["翅脈縦線14"].ToPar();
+    		X0Y1_前翅_翅脈縦線15 = partGroup["翅脈縦線15"].ToPar();
+    		X0Y1_前翅_翅脈縦線16 = partGroup["翅脈縦線16"].ToPar();
+    		X0Y1_前翅_翅脈縦線17 = partGroup["翅脈縦線17"].ToPar();
+    		pars2 = partGroup["翅脈網1"].ToPars();
     		X0Y1_前翅_翅脈網1_翅脈網線1 = pars2["翅脈網線1"].ToPar();
     		X0Y1_前翅_翅脈網1_翅脈網線2 = pars2["翅脈網線2"].ToPar();
     		X0Y1_前翅_翅脈網1_翅脈網線3 = pars2["翅脈網線3"].ToPar();
-    		pars2 = pars["翅脈網2"].ToPars();
+    		pars2 = partGroup["翅脈網2"].ToPars();
     		X0Y1_前翅_翅脈網2_翅脈網線1 = pars2["翅脈網線1"].ToPar();
     		X0Y1_前翅_翅脈網2_翅脈網線2 = pars2["翅脈網線2"].ToPar();
     		X0Y1_前翅_翅脈網2_翅脈網線3 = pars2["翅脈網線3"].ToPar();
@@ -1206,107 +1206,107 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		前翅_前翅CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		前翅_翅脈1CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		前翅_翅脈2CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		前翅_翅脈線1CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		前翅_翅脈線2CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		前翅_翅脈線3CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		前翅_翅脈線4CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		前翅_翅脈線5CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		前翅_翅脈縦線1CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		前翅_翅脈縦線2CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		前翅_翅脈縦線3CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		前翅_翅脈縦線4CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		前翅_翅脈縦線5CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		前翅_翅脈縦線6CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		前翅_翅脈縦線7CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		前翅_翅脈縦線8CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		前翅_翅脈縦線9CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		前翅_翅脈縦線10CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		前翅_翅脈縦線11CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		前翅_翅脈縦線12CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		前翅_翅脈縦線13CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		前翅_翅脈縦線14CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		前翅_翅脈縦線15CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		前翅_翅脈縦線16CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		前翅_翅脈縦線17CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		前翅_翅脈網1_翅脈網線1CD = new ColorD(ref Col.Black, ref 体配色.ハイライト2O);
-    		前翅_翅脈網1_翅脈網線2CD = new ColorD(ref Col.Black, ref 体配色.ハイライト2O);
-    		前翅_翅脈網1_翅脈網線3CD = new ColorD(ref Col.Black, ref 体配色.ハイライト2O);
-    		前翅_翅脈網2_翅脈網線1CD = new ColorD(ref Col.Black, ref 体配色.ハイライト2O);
-    		前翅_翅脈網2_翅脈網線2CD = new ColorD(ref Col.Black, ref 体配色.ハイライト2O);
-    		前翅_翅脈網2_翅脈網線3CD = new ColorD(ref Col.Black, ref 体配色.ハイライト2O);
+    		前翅_前翅CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		前翅_翅脈1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		前翅_翅脈2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		前翅_翅脈線1CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		前翅_翅脈線2CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		前翅_翅脈線3CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		前翅_翅脈線4CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		前翅_翅脈線5CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		前翅_翅脈縦線1CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		前翅_翅脈縦線2CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		前翅_翅脈縦線3CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		前翅_翅脈縦線4CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		前翅_翅脈縦線5CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		前翅_翅脈縦線6CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		前翅_翅脈縦線7CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		前翅_翅脈縦線8CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		前翅_翅脈縦線9CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		前翅_翅脈縦線10CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		前翅_翅脈縦線11CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		前翅_翅脈縦線12CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		前翅_翅脈縦線13CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		前翅_翅脈縦線14CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		前翅_翅脈縦線15CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		前翅_翅脈縦線16CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		前翅_翅脈縦線17CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		前翅_翅脈網1_翅脈網線1CD = new ColorD(ref ColorHelper.Black, ref 体配色.ハイライト2O);
+    		前翅_翅脈網1_翅脈網線2CD = new ColorD(ref ColorHelper.Black, ref 体配色.ハイライト2O);
+    		前翅_翅脈網1_翅脈網線3CD = new ColorD(ref ColorHelper.Black, ref 体配色.ハイライト2O);
+    		前翅_翅脈網2_翅脈網線1CD = new ColorD(ref ColorHelper.Black, ref 体配色.ハイライト2O);
+    		前翅_翅脈網2_翅脈網線2CD = new ColorD(ref ColorHelper.Black, ref 体配色.ハイライト2O);
+    		前翅_翅脈網2_翅脈網線3CD = new ColorD(ref ColorHelper.Black, ref 体配色.ハイライト2O);
     	}
 
     	private void 配色T1(BodyColorSet 体配色)
     	{
-    		前翅_前翅CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		前翅_翅脈1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		前翅_翅脈2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		前翅_翅脈線1CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		前翅_翅脈線2CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		前翅_翅脈線3CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		前翅_翅脈線4CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		前翅_翅脈線5CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		前翅_翅脈縦線1CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		前翅_翅脈縦線2CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		前翅_翅脈縦線3CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		前翅_翅脈縦線4CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		前翅_翅脈縦線5CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		前翅_翅脈縦線6CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		前翅_翅脈縦線7CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		前翅_翅脈縦線8CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		前翅_翅脈縦線9CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		前翅_翅脈縦線10CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		前翅_翅脈縦線11CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		前翅_翅脈縦線12CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		前翅_翅脈縦線13CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		前翅_翅脈縦線14CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		前翅_翅脈縦線15CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		前翅_翅脈縦線16CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		前翅_翅脈縦線17CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		前翅_翅脈網1_翅脈網線1CD = new ColorD(ref Col.Black, ref 体配色.ハイライト2O);
-    		前翅_翅脈網1_翅脈網線2CD = new ColorD(ref Col.Black, ref 体配色.ハイライト2O);
-    		前翅_翅脈網1_翅脈網線3CD = new ColorD(ref Col.Black, ref 体配色.ハイライト2O);
-    		前翅_翅脈網2_翅脈網線1CD = new ColorD(ref Col.Black, ref 体配色.ハイライト2O);
-    		前翅_翅脈網2_翅脈網線2CD = new ColorD(ref Col.Black, ref 体配色.ハイライト2O);
-    		前翅_翅脈網2_翅脈網線3CD = new ColorD(ref Col.Black, ref 体配色.ハイライト2O);
+    		前翅_前翅CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		前翅_翅脈1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		前翅_翅脈2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		前翅_翅脈線1CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		前翅_翅脈線2CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		前翅_翅脈線3CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		前翅_翅脈線4CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		前翅_翅脈線5CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		前翅_翅脈縦線1CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		前翅_翅脈縦線2CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		前翅_翅脈縦線3CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		前翅_翅脈縦線4CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		前翅_翅脈縦線5CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		前翅_翅脈縦線6CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		前翅_翅脈縦線7CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		前翅_翅脈縦線8CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		前翅_翅脈縦線9CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		前翅_翅脈縦線10CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		前翅_翅脈縦線11CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		前翅_翅脈縦線12CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		前翅_翅脈縦線13CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		前翅_翅脈縦線14CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		前翅_翅脈縦線15CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		前翅_翅脈縦線16CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		前翅_翅脈縦線17CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		前翅_翅脈網1_翅脈網線1CD = new ColorD(ref ColorHelper.Black, ref 体配色.ハイライト2O);
+    		前翅_翅脈網1_翅脈網線2CD = new ColorD(ref ColorHelper.Black, ref 体配色.ハイライト2O);
+    		前翅_翅脈網1_翅脈網線3CD = new ColorD(ref ColorHelper.Black, ref 体配色.ハイライト2O);
+    		前翅_翅脈網2_翅脈網線1CD = new ColorD(ref ColorHelper.Black, ref 体配色.ハイライト2O);
+    		前翅_翅脈網2_翅脈網線2CD = new ColorD(ref ColorHelper.Black, ref 体配色.ハイライト2O);
+    		前翅_翅脈網2_翅脈網線3CD = new ColorD(ref ColorHelper.Black, ref 体配色.ハイライト2O);
     	}
 
     	private void 配色T0(BodyColorSet 体配色)
     	{
-    		前翅_前翅CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		前翅_翅脈1CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		前翅_翅脈2CD = new ColorD(ref Col.Black, ref 体配色.甲0O);
-    		前翅_翅脈線1CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		前翅_翅脈線2CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		前翅_翅脈線3CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		前翅_翅脈線4CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		前翅_翅脈線5CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		前翅_翅脈縦線1CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		前翅_翅脈縦線2CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		前翅_翅脈縦線3CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		前翅_翅脈縦線4CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		前翅_翅脈縦線5CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		前翅_翅脈縦線6CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		前翅_翅脈縦線7CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		前翅_翅脈縦線8CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		前翅_翅脈縦線9CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		前翅_翅脈縦線10CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		前翅_翅脈縦線11CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		前翅_翅脈縦線12CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		前翅_翅脈縦線13CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		前翅_翅脈縦線14CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		前翅_翅脈縦線15CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		前翅_翅脈縦線16CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		前翅_翅脈縦線17CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		前翅_翅脈網1_翅脈網線1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		前翅_翅脈網1_翅脈網線2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		前翅_翅脈網1_翅脈網線3CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		前翅_翅脈網2_翅脈網線1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		前翅_翅脈網2_翅脈網線2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		前翅_翅脈網2_翅脈網線3CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		前翅_前翅CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		前翅_翅脈1CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		前翅_翅脈2CD = new ColorD(ref ColorHelper.Black, ref 体配色.甲0O);
+    		前翅_翅脈線1CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		前翅_翅脈線2CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		前翅_翅脈線3CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		前翅_翅脈線4CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		前翅_翅脈線5CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		前翅_翅脈縦線1CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		前翅_翅脈縦線2CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		前翅_翅脈縦線3CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		前翅_翅脈縦線4CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		前翅_翅脈縦線5CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		前翅_翅脈縦線6CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		前翅_翅脈縦線7CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		前翅_翅脈縦線8CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		前翅_翅脈縦線9CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		前翅_翅脈縦線10CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		前翅_翅脈縦線11CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		前翅_翅脈縦線12CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		前翅_翅脈縦線13CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		前翅_翅脈縦線14CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		前翅_翅脈縦線15CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		前翅_翅脈縦線16CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		前翅_翅脈縦線17CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		前翅_翅脈網1_翅脈網線1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		前翅_翅脈網1_翅脈網線2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		前翅_翅脈網1_翅脈網線3CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		前翅_翅脈網2_翅脈網線1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		前翅_翅脈網2_翅脈網線2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		前翅_翅脈網2_翅脈網線3CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
     	}
     }
 }

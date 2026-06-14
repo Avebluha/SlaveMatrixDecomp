@@ -4,29 +4,29 @@ namespace SlaveMatrix
 {
     public class 角2_鬼 : 角2
     {
-    	public Par X0Y0_根;
+    	public ShapePart X0Y0_根;
 
-    	public Par X0Y0_線1;
+    	public ShapePart X0Y0_線1;
 
-    	public Par X0Y0_線2;
+    	public ShapePart X0Y0_線2;
 
-    	public Par X0Y0_線3;
+    	public ShapePart X0Y0_線3;
 
-    	public Par X0Y0_線4;
+    	public ShapePart X0Y0_線4;
 
-    	public Par X0Y0_線5;
+    	public ShapePart X0Y0_線5;
 
-    	public Par X0Y0_線6;
+    	public ShapePart X0Y0_線6;
 
-    	public Par X0Y1_根;
+    	public ShapePart X0Y1_根;
 
-    	public Par X0Y1_折線1;
+    	public ShapePart X0Y1_折線1;
 
-    	public Par X0Y1_折線2;
+    	public ShapePart X0Y1_折線2;
 
-    	public Par X0Y1_線1;
+    	public ShapePart X0Y1_線1;
 
-    	public Par X0Y1_線2;
+    	public ShapePart X0Y1_線2;
 
     	public ColorD 根CD;
 
@@ -273,24 +273,24 @@ namespace SlaveMatrix
     	public 角2_鬼(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 角2_鬼D e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif(Sta.肢左["角"][8]);
-    		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		X0Y0_根 = pars["根"].ToPar();
-    		X0Y0_線1 = pars["線1"].ToPar();
-    		X0Y0_線2 = pars["線2"].ToPar();
-    		X0Y0_線3 = pars["線3"].ToPar();
-    		X0Y0_線4 = pars["線4"].ToPar();
-    		X0Y0_線5 = pars["線5"].ToPar();
-    		X0Y0_線6 = pars["線6"].ToPar();
-    		pars = Body[0][1];
-    		X0Y1_根 = pars["根"].ToPar();
-    		X0Y1_折線1 = pars["折線1"].ToPar();
-    		X0Y1_折線2 = pars["折線2"].ToPar();
-    		X0Y1_線1 = pars["線1"].ToPar();
-    		X0Y1_線2 = pars["線2"].ToPar();
+    		MorphVariant morphVariant = new MorphVariant(GlobalState.肢左["角"][8]);
+    		Body = new VariantGrid();
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_根 = partGroup["根"].ToPar();
+    		X0Y0_線1 = partGroup["線1"].ToPar();
+    		X0Y0_線2 = partGroup["線2"].ToPar();
+    		X0Y0_線3 = partGroup["線3"].ToPar();
+    		X0Y0_線4 = partGroup["線4"].ToPar();
+    		X0Y0_線5 = partGroup["線5"].ToPar();
+    		X0Y0_線6 = partGroup["線6"].ToPar();
+    		partGroup = Body[0][1];
+    		X0Y1_根 = partGroup["根"].ToPar();
+    		X0Y1_折線1 = partGroup["折線1"].ToPar();
+    		X0Y1_折線2 = partGroup["折線2"].ToPar();
+    		X0Y1_線1 = partGroup["線1"].ToPar();
+    		X0Y1_線2 = partGroup["線2"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;
@@ -417,41 +417,41 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		根CD = new ColorD(ref Col.Black, ref 体配色.角0O);
+    		根CD = new ColorD(ref ColorHelper.Black, ref 体配色.角0O);
     		線1CD = new ColorD(ref 体配色.角1O.Col2, ref Color2.Empty);
     		線2CD = new ColorD(ref 体配色.角1O.Col2, ref Color2.Empty);
     		線3CD = new ColorD(ref 体配色.角1O.Col2, ref Color2.Empty);
     		線4CD = new ColorD(ref 体配色.角1O.Col2, ref Color2.Empty);
     		線5CD = new ColorD(ref 体配色.角1O.Col2, ref Color2.Empty);
     		線6CD = new ColorD(ref 体配色.角1O.Col2, ref Color2.Empty);
-    		折線1CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		折線2CD = new ColorD(ref Col.Black, ref Color2.Empty);
+    		折線1CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		折線2CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
     	}
 
     	private void 配色T0(BodyColorSet 体配色)
     	{
-    		根CD = new ColorD(ref Col.Black, ref 体配色.角0O);
+    		根CD = new ColorD(ref ColorHelper.Black, ref 体配色.角0O);
     		線1CD = new ColorD(ref 体配色.刺青O.Col2, ref Color2.Empty);
     		線2CD = new ColorD(ref 体配色.刺青O.Col2, ref Color2.Empty);
     		線3CD = new ColorD(ref 体配色.刺青O.Col2, ref Color2.Empty);
     		線4CD = new ColorD(ref 体配色.刺青O.Col2, ref Color2.Empty);
     		線5CD = new ColorD(ref 体配色.刺青O.Col2, ref Color2.Empty);
     		線6CD = new ColorD(ref 体配色.刺青O.Col2, ref Color2.Empty);
-    		折線1CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		折線2CD = new ColorD(ref Col.Black, ref Color2.Empty);
+    		折線1CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		折線2CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
     	}
 
     	private void 配色T1(BodyColorSet 体配色)
     	{
-    		根CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
+    		根CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
     		線1CD = new ColorD(ref 体配色.角1O.Col2, ref Color2.Empty);
     		線2CD = new ColorD(ref 体配色.角1O.Col2, ref Color2.Empty);
     		線3CD = new ColorD(ref 体配色.角1O.Col2, ref Color2.Empty);
     		線4CD = new ColorD(ref 体配色.角1O.Col2, ref Color2.Empty);
     		線5CD = new ColorD(ref 体配色.角1O.Col2, ref Color2.Empty);
     		線6CD = new ColorD(ref 体配色.角1O.Col2, ref Color2.Empty);
-    		折線1CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		折線2CD = new ColorD(ref Col.Black, ref Color2.Empty);
+    		折線1CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		折線2CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
     	}
     }
 }

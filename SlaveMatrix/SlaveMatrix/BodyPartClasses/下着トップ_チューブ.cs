@@ -4,35 +4,35 @@ namespace SlaveMatrix
 {
     public class 下着トップ_チューブ : 下着トップ
     {
-    	public Par X0Y0_布_布左_布;
+    	public ShapePart X0Y0_布_布左_布;
 
-    	public Par X0Y0_布_布左_皺_皺1;
+    	public ShapePart X0Y0_布_布左_皺_皺1;
 
-    	public Par X0Y0_布_布左_皺_皺2;
+    	public ShapePart X0Y0_布_布左_皺_皺2;
 
-    	public Par X0Y0_布_布左_縁_縁1;
+    	public ShapePart X0Y0_布_布左_縁_縁1;
 
-    	public Par X0Y0_布_布左_縁_縁2;
+    	public ShapePart X0Y0_布_布左_縁_縁2;
 
-    	public Par X0Y0_布_布右_布;
+    	public ShapePart X0Y0_布_布右_布;
 
-    	public Par X0Y0_布_布右_皺_皺1;
+    	public ShapePart X0Y0_布_布右_皺_皺1;
 
-    	public Par X0Y0_布_布右_皺_皺2;
+    	public ShapePart X0Y0_布_布右_皺_皺2;
 
-    	public Par X0Y0_布_布右_縁_縁1;
+    	public ShapePart X0Y0_布_布右_縁_縁1;
 
-    	public Par X0Y0_布_布右_縁_縁2;
+    	public ShapePart X0Y0_布_布右_縁_縁2;
 
-    	public Par X0Y0_布_布;
+    	public ShapePart X0Y0_布_布;
 
-    	public Par X0Y0_皺_皺1;
+    	public ShapePart X0Y0_皺_皺1;
 
-    	public Par X0Y0_皺_皺2;
+    	public ShapePart X0Y0_皺_皺2;
 
-    	public Par X0Y0_縁_縁1;
+    	public ShapePart X0Y0_縁_縁1;
 
-    	public Par X0Y0_縁_縁2;
+    	public ShapePart X0Y0_縁_縁2;
 
     	public ColorD 布_布左_布CD;
 
@@ -535,15 +535,15 @@ namespace SlaveMatrix
     	public 下着トップ_チューブ(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 下着トップ_チューブD e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif(Sta.胴体["下着トップ"][3]);
-    		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		Pars pars2 = pars["布"].ToPars();
-    		Pars pars3 = pars2["布左"].ToPars();
+    		MorphVariant morphVariant = new MorphVariant(GlobalState.胴体["下着トップ"][3]);
+    		Body = new VariantGrid();
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
+    		PartGroup partGroup = Body[0][0];
+    		PartGroup pars2 = partGroup["布"].ToPars();
+    		PartGroup pars3 = pars2["布左"].ToPars();
     		X0Y0_布_布左_布 = pars3["布"].ToPar();
-    		Pars pars4 = pars3["皺"].ToPars();
+    		PartGroup pars4 = pars3["皺"].ToPars();
     		X0Y0_布_布左_皺_皺1 = pars4["皺1"].ToPar();
     		X0Y0_布_布左_皺_皺2 = pars4["皺2"].ToPar();
     		pars4 = pars3["縁"].ToPars();
@@ -558,10 +558,10 @@ namespace SlaveMatrix
     		X0Y0_布_布右_縁_縁1 = pars4["縁1"].ToPar();
     		X0Y0_布_布右_縁_縁2 = pars4["縁2"].ToPar();
     		X0Y0_布_布 = pars2["布"].ToPar();
-    		pars2 = pars["皺"].ToPars();
+    		pars2 = partGroup["皺"].ToPars();
     		X0Y0_皺_皺1 = pars2["皺1"].ToPar();
     		X0Y0_皺_皺2 = pars2["皺2"].ToPar();
-    		pars2 = pars["縁"].ToPars();
+    		pars2 = partGroup["縁"].ToPars();
     		X0Y0_縁_縁1 = pars2["縁1"].ToPar();
     		X0Y0_縁_縁2 = pars2["縁2"].ToPar();
     		Body.SetJoints();
@@ -665,7 +665,7 @@ namespace SlaveMatrix
     		Are.Draw(X0Y0_縁_縁2);
     	}
 
-    	public override bool Is布(Par p)
+    	public override bool Is布(ShapePart p)
     	{
     		if (p != X0Y0_布_布左_布 && p != X0Y0_布_布左_皺_皺1 && p != X0Y0_布_布左_皺_皺2 && p != X0Y0_布_布左_縁_縁1 && p != X0Y0_布_布左_縁_縁2 && p != X0Y0_布_布右_布 && p != X0Y0_布_布右_皺_皺1 && p != X0Y0_布_布右_皺_皺2 && p != X0Y0_布_布右_縁_縁1 && p != X0Y0_布_布右_縁_縁2 && p != X0Y0_布_布 && p != X0Y0_皺_皺1 && p != X0Y0_皺_皺2 && p != X0Y0_縁_縁1)
     		{

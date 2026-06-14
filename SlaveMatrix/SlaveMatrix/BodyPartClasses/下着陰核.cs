@@ -3,9 +3,9 @@ using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
-    public class 下着陰核 : Ele
+    public class 下着陰核 : Element
     {
-    	public Par X0Y0_陰核;
+    	public ShapePart X0Y0_陰核;
 
     	public ColorD 陰核CD;
 
@@ -87,9 +87,9 @@ namespace SlaveMatrix
     	public 下着陰核(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 下着陰核D e)
     	{
     		ThisType = GetType();
-    		Body = new Difs(Sta.胴体["下着陰核"]);
-    		Pars pars = Body[0][0];
-    		X0Y0_陰核 = pars["陰核"].ToPar();
+    		Body = new VariantGrid(GlobalState.胴体["下着陰核"]);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_陰核 = partGroup["陰核"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;
@@ -145,7 +145,7 @@ namespace SlaveMatrix
 
     	public void 配色(Color2 配色)
     	{
-    		陰核CD.線 = Col.Empty;
+    		陰核CD.線 = ColorHelper.Empty;
     		陰核CD.色 = 配色;
     		X0Y0_陰核CP.Setting();
     	}

@@ -4,131 +4,131 @@ namespace SlaveMatrix
 {
     public class 鳳凰 : 尾
     {
-    	public Par X0Y0_羽_羽;
+    	public ShapePart X0Y0_羽_羽;
 
-    	public Par X0Y0_羽_紋1;
+    	public ShapePart X0Y0_羽_紋1;
 
-    	public Par X0Y0_羽_紋2;
+    	public ShapePart X0Y0_羽_紋2;
 
-    	public Par X0Y0_羽2_羽;
+    	public ShapePart X0Y0_羽2_羽;
 
-    	public Par X0Y0_羽2_紋1;
+    	public ShapePart X0Y0_羽2_紋1;
 
-    	public Par X0Y0_羽2_紋2;
+    	public ShapePart X0Y0_羽2_紋2;
 
-    	public Par X0Y0_羽3_羽;
+    	public ShapePart X0Y0_羽3_羽;
 
-    	public Par X0Y0_羽3_紋1;
+    	public ShapePart X0Y0_羽3_紋1;
 
-    	public Par X0Y0_羽3_紋2;
+    	public ShapePart X0Y0_羽3_紋2;
 
-    	public Par X0Y0_羽4_羽;
+    	public ShapePart X0Y0_羽4_羽;
 
-    	public Par X0Y0_羽4_紋1;
+    	public ShapePart X0Y0_羽4_紋1;
 
-    	public Par X0Y0_羽4_紋2;
+    	public ShapePart X0Y0_羽4_紋2;
 
-    	public Par X0Y0_羽5_羽;
+    	public ShapePart X0Y0_羽5_羽;
 
-    	public Par X0Y0_羽5_紋1;
+    	public ShapePart X0Y0_羽5_紋1;
 
-    	public Par X0Y0_羽5_紋2;
+    	public ShapePart X0Y0_羽5_紋2;
 
-    	public Par X0Y0_羽6_羽;
+    	public ShapePart X0Y0_羽6_羽;
 
-    	public Par X0Y0_羽6_紋1;
+    	public ShapePart X0Y0_羽6_紋1;
 
-    	public Par X0Y0_羽6_紋2;
+    	public ShapePart X0Y0_羽6_紋2;
 
-    	public Par X0Y0_羽7_羽;
+    	public ShapePart X0Y0_羽7_羽;
 
-    	public Par X0Y0_羽7_紋1;
+    	public ShapePart X0Y0_羽7_紋1;
 
-    	public Par X0Y0_羽7_紋2;
+    	public ShapePart X0Y0_羽7_紋2;
 
-    	public Par X0Y0_羽8_羽;
+    	public ShapePart X0Y0_羽8_羽;
 
-    	public Par X0Y0_羽8_紋1;
+    	public ShapePart X0Y0_羽8_紋1;
 
-    	public Par X0Y0_羽8_紋2;
+    	public ShapePart X0Y0_羽8_紋2;
 
-    	public Par X0Y0_羽9_羽;
+    	public ShapePart X0Y0_羽9_羽;
 
-    	public Par X0Y0_羽9_紋1;
+    	public ShapePart X0Y0_羽9_紋1;
 
-    	public Par X0Y0_羽9_紋2;
+    	public ShapePart X0Y0_羽9_紋2;
 
-    	public Par X0Y0_羽10_羽;
+    	public ShapePart X0Y0_羽10_羽;
 
-    	public Par X0Y0_羽10_紋1;
+    	public ShapePart X0Y0_羽10_紋1;
 
-    	public Par X0Y0_羽10_紋2;
+    	public ShapePart X0Y0_羽10_紋2;
 
-    	public Par X0Y0_羽11_羽;
+    	public ShapePart X0Y0_羽11_羽;
 
-    	public Par X0Y0_羽11_紋1;
+    	public ShapePart X0Y0_羽11_紋1;
 
-    	public Par X0Y0_羽11_紋2;
+    	public ShapePart X0Y0_羽11_紋2;
 
-    	public Par X0Y0_羽12_羽;
+    	public ShapePart X0Y0_羽12_羽;
 
-    	public Par X0Y0_羽12_紋1;
+    	public ShapePart X0Y0_羽12_紋1;
 
-    	public Par X0Y0_羽12_紋2;
+    	public ShapePart X0Y0_羽12_紋2;
 
-    	public Par X0Y0_羽13_羽;
+    	public ShapePart X0Y0_羽13_羽;
 
-    	public Par X0Y0_羽13_紋1;
+    	public ShapePart X0Y0_羽13_紋1;
 
-    	public Par X0Y0_羽13_紋2;
+    	public ShapePart X0Y0_羽13_紋2;
 
-    	public Par X0Y0_羽14_羽;
+    	public ShapePart X0Y0_羽14_羽;
 
-    	public Par X0Y0_羽14_紋1;
+    	public ShapePart X0Y0_羽14_紋1;
 
-    	public Par X0Y0_羽14_紋2;
+    	public ShapePart X0Y0_羽14_紋2;
 
-    	public Par X0Y0_羽15_羽;
+    	public ShapePart X0Y0_羽15_羽;
 
-    	public Par X0Y0_羽15_紋1;
+    	public ShapePart X0Y0_羽15_紋1;
 
-    	public Par X0Y0_羽15_紋2;
+    	public ShapePart X0Y0_羽15_紋2;
 
-    	public Par X0Y0_羽16_羽;
+    	public ShapePart X0Y0_羽16_羽;
 
-    	public Par X0Y0_羽16_紋1;
+    	public ShapePart X0Y0_羽16_紋1;
 
-    	public Par X0Y0_羽16_紋2;
+    	public ShapePart X0Y0_羽16_紋2;
 
-    	public Par X0Y0_羽17_羽;
+    	public ShapePart X0Y0_羽17_羽;
 
-    	public Par X0Y0_羽17_紋1;
+    	public ShapePart X0Y0_羽17_紋1;
 
-    	public Par X0Y0_羽17_紋2;
+    	public ShapePart X0Y0_羽17_紋2;
 
-    	public Par X0Y0_羽18_羽;
+    	public ShapePart X0Y0_羽18_羽;
 
-    	public Par X0Y0_羽18_紋1;
+    	public ShapePart X0Y0_羽18_紋1;
 
-    	public Par X0Y0_羽18_紋2;
+    	public ShapePart X0Y0_羽18_紋2;
 
-    	public Par X0Y0_羽19_羽;
+    	public ShapePart X0Y0_羽19_羽;
 
-    	public Par X0Y0_羽19_紋1;
+    	public ShapePart X0Y0_羽19_紋1;
 
-    	public Par X0Y0_羽19_紋2;
+    	public ShapePart X0Y0_羽19_紋2;
 
-    	public Par X0Y0_羽20_羽;
+    	public ShapePart X0Y0_羽20_羽;
 
-    	public Par X0Y0_羽20_紋1;
+    	public ShapePart X0Y0_羽20_紋1;
 
-    	public Par X0Y0_羽20_紋2;
+    	public ShapePart X0Y0_羽20_紋2;
 
-    	public Par X0Y0_羽21_羽;
+    	public ShapePart X0Y0_羽21_羽;
 
-    	public Par X0Y0_羽21_紋1;
+    	public ShapePart X0Y0_羽21_紋1;
 
-    	public Par X0Y0_羽21_紋2;
+    	public ShapePart X0Y0_羽21_紋2;
 
     	public ColorD 羽_羽CD;
 
@@ -1402,94 +1402,94 @@ namespace SlaveMatrix
     	public 鳳凰(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 鳳凰D e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif();
-    		dif.Tag = "鳳凰";
-    		dif.Add(new Pars(Sta.肢中["尾"][2][0]));
-    		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		Pars pars2 = pars["羽"].ToPars();
+    		MorphVariant morphVariant = new MorphVariant();
+    		morphVariant.Tag = "鳳凰";
+    		morphVariant.Add(new PartGroup(GlobalState.肢中["尾"][2][0]));
+    		Body = new VariantGrid();
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
+    		PartGroup partGroup = Body[0][0];
+    		PartGroup pars2 = partGroup["羽"].ToPars();
     		X0Y0_羽_羽 = pars2["羽"].ToPar();
     		X0Y0_羽_紋1 = pars2["紋1"].ToPar();
     		X0Y0_羽_紋2 = pars2["紋2"].ToPar();
-    		pars2 = pars["羽2"].ToPars();
+    		pars2 = partGroup["羽2"].ToPars();
     		X0Y0_羽2_羽 = pars2["羽"].ToPar();
     		X0Y0_羽2_紋1 = pars2["紋1"].ToPar();
     		X0Y0_羽2_紋2 = pars2["紋2"].ToPar();
-    		pars2 = pars["羽3"].ToPars();
+    		pars2 = partGroup["羽3"].ToPars();
     		X0Y0_羽3_羽 = pars2["羽"].ToPar();
     		X0Y0_羽3_紋1 = pars2["紋1"].ToPar();
     		X0Y0_羽3_紋2 = pars2["紋2"].ToPar();
-    		pars2 = pars["羽4"].ToPars();
+    		pars2 = partGroup["羽4"].ToPars();
     		X0Y0_羽4_羽 = pars2["羽"].ToPar();
     		X0Y0_羽4_紋1 = pars2["紋1"].ToPar();
     		X0Y0_羽4_紋2 = pars2["紋2"].ToPar();
-    		pars2 = pars["羽5"].ToPars();
+    		pars2 = partGroup["羽5"].ToPars();
     		X0Y0_羽5_羽 = pars2["羽"].ToPar();
     		X0Y0_羽5_紋1 = pars2["紋1"].ToPar();
     		X0Y0_羽5_紋2 = pars2["紋2"].ToPar();
-    		pars2 = pars["羽6"].ToPars();
+    		pars2 = partGroup["羽6"].ToPars();
     		X0Y0_羽6_羽 = pars2["羽"].ToPar();
     		X0Y0_羽6_紋1 = pars2["紋1"].ToPar();
     		X0Y0_羽6_紋2 = pars2["紋2"].ToPar();
-    		pars2 = pars["羽7"].ToPars();
+    		pars2 = partGroup["羽7"].ToPars();
     		X0Y0_羽7_羽 = pars2["羽"].ToPar();
     		X0Y0_羽7_紋1 = pars2["紋1"].ToPar();
     		X0Y0_羽7_紋2 = pars2["紋2"].ToPar();
-    		pars2 = pars["羽8"].ToPars();
+    		pars2 = partGroup["羽8"].ToPars();
     		X0Y0_羽8_羽 = pars2["羽"].ToPar();
     		X0Y0_羽8_紋1 = pars2["紋1"].ToPar();
     		X0Y0_羽8_紋2 = pars2["紋2"].ToPar();
-    		pars2 = pars["羽9"].ToPars();
+    		pars2 = partGroup["羽9"].ToPars();
     		X0Y0_羽9_羽 = pars2["羽"].ToPar();
     		X0Y0_羽9_紋1 = pars2["紋1"].ToPar();
     		X0Y0_羽9_紋2 = pars2["紋2"].ToPar();
-    		pars2 = pars["羽10"].ToPars();
+    		pars2 = partGroup["羽10"].ToPars();
     		X0Y0_羽10_羽 = pars2["羽"].ToPar();
     		X0Y0_羽10_紋1 = pars2["紋1"].ToPar();
     		X0Y0_羽10_紋2 = pars2["紋2"].ToPar();
-    		pars2 = pars["羽11"].ToPars();
+    		pars2 = partGroup["羽11"].ToPars();
     		X0Y0_羽11_羽 = pars2["羽"].ToPar();
     		X0Y0_羽11_紋1 = pars2["紋1"].ToPar();
     		X0Y0_羽11_紋2 = pars2["紋2"].ToPar();
-    		pars2 = pars["羽12"].ToPars();
+    		pars2 = partGroup["羽12"].ToPars();
     		X0Y0_羽12_羽 = pars2["羽"].ToPar();
     		X0Y0_羽12_紋1 = pars2["紋1"].ToPar();
     		X0Y0_羽12_紋2 = pars2["紋2"].ToPar();
-    		pars2 = pars["羽13"].ToPars();
+    		pars2 = partGroup["羽13"].ToPars();
     		X0Y0_羽13_羽 = pars2["羽"].ToPar();
     		X0Y0_羽13_紋1 = pars2["紋1"].ToPar();
     		X0Y0_羽13_紋2 = pars2["紋2"].ToPar();
-    		pars2 = pars["羽14"].ToPars();
+    		pars2 = partGroup["羽14"].ToPars();
     		X0Y0_羽14_羽 = pars2["羽"].ToPar();
     		X0Y0_羽14_紋1 = pars2["紋1"].ToPar();
     		X0Y0_羽14_紋2 = pars2["紋2"].ToPar();
-    		pars2 = pars["羽15"].ToPars();
+    		pars2 = partGroup["羽15"].ToPars();
     		X0Y0_羽15_羽 = pars2["羽"].ToPar();
     		X0Y0_羽15_紋1 = pars2["紋1"].ToPar();
     		X0Y0_羽15_紋2 = pars2["紋2"].ToPar();
-    		pars2 = pars["羽16"].ToPars();
+    		pars2 = partGroup["羽16"].ToPars();
     		X0Y0_羽16_羽 = pars2["羽"].ToPar();
     		X0Y0_羽16_紋1 = pars2["紋1"].ToPar();
     		X0Y0_羽16_紋2 = pars2["紋2"].ToPar();
-    		pars2 = pars["羽17"].ToPars();
+    		pars2 = partGroup["羽17"].ToPars();
     		X0Y0_羽17_羽 = pars2["羽"].ToPar();
     		X0Y0_羽17_紋1 = pars2["紋1"].ToPar();
     		X0Y0_羽17_紋2 = pars2["紋2"].ToPar();
-    		pars2 = pars["羽18"].ToPars();
+    		pars2 = partGroup["羽18"].ToPars();
     		X0Y0_羽18_羽 = pars2["羽"].ToPar();
     		X0Y0_羽18_紋1 = pars2["紋1"].ToPar();
     		X0Y0_羽18_紋2 = pars2["紋2"].ToPar();
-    		pars2 = pars["羽19"].ToPars();
+    		pars2 = partGroup["羽19"].ToPars();
     		X0Y0_羽19_羽 = pars2["羽"].ToPar();
     		X0Y0_羽19_紋1 = pars2["紋1"].ToPar();
     		X0Y0_羽19_紋2 = pars2["紋2"].ToPar();
-    		pars2 = pars["羽20"].ToPars();
+    		pars2 = partGroup["羽20"].ToPars();
     		X0Y0_羽20_羽 = pars2["羽"].ToPar();
     		X0Y0_羽20_紋1 = pars2["紋1"].ToPar();
     		X0Y0_羽20_紋2 = pars2["紋2"].ToPar();
-    		pars2 = pars["羽21"].ToPars();
+    		pars2 = partGroup["羽21"].ToPars();
     		X0Y0_羽21_羽 = pars2["羽"].ToPar();
     		X0Y0_羽21_紋1 = pars2["紋1"].ToPar();
     		X0Y0_羽21_紋2 = pars2["紋2"].ToPar();
@@ -1771,203 +1771,203 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		羽_羽CD = new ColorD(ref Col.Black, ref 体配色.羽0O);
-    		羽_紋1CD = new ColorD(ref Col.Empty, ref 体配色.柄O);
-    		羽_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		羽2_羽CD = new ColorD(ref Col.Black, ref 体配色.羽0O);
-    		羽2_紋1CD = new ColorD(ref Col.Empty, ref 体配色.柄O);
-    		羽2_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		羽3_羽CD = new ColorD(ref Col.Black, ref 体配色.羽0O);
-    		羽3_紋1CD = new ColorD(ref Col.Empty, ref 体配色.柄O);
-    		羽3_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		羽4_羽CD = new ColorD(ref Col.Black, ref 体配色.羽0O);
-    		羽4_紋1CD = new ColorD(ref Col.Empty, ref 体配色.柄O);
-    		羽4_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		羽5_羽CD = new ColorD(ref Col.Black, ref 体配色.羽0O);
-    		羽5_紋1CD = new ColorD(ref Col.Empty, ref 体配色.柄O);
-    		羽5_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		羽6_羽CD = new ColorD(ref Col.Black, ref 体配色.羽0O);
-    		羽6_紋1CD = new ColorD(ref Col.Empty, ref 体配色.柄O);
-    		羽6_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		羽7_羽CD = new ColorD(ref Col.Black, ref 体配色.羽0O);
-    		羽7_紋1CD = new ColorD(ref Col.Empty, ref 体配色.柄O);
-    		羽7_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		羽8_羽CD = new ColorD(ref Col.Black, ref 体配色.羽0O);
-    		羽8_紋1CD = new ColorD(ref Col.Empty, ref 体配色.柄O);
-    		羽8_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		羽9_羽CD = new ColorD(ref Col.Black, ref 体配色.羽0O);
-    		羽9_紋1CD = new ColorD(ref Col.Empty, ref 体配色.柄O);
-    		羽9_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		羽10_羽CD = new ColorD(ref Col.Black, ref 体配色.羽0O);
-    		羽10_紋1CD = new ColorD(ref Col.Empty, ref 体配色.柄O);
-    		羽10_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		羽11_羽CD = new ColorD(ref Col.Black, ref 体配色.羽0O);
-    		羽11_紋1CD = new ColorD(ref Col.Empty, ref 体配色.柄O);
-    		羽11_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		羽12_羽CD = new ColorD(ref Col.Black, ref 体配色.羽0O);
-    		羽12_紋1CD = new ColorD(ref Col.Empty, ref 体配色.柄O);
-    		羽12_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		羽13_羽CD = new ColorD(ref Col.Black, ref 体配色.羽0O);
-    		羽13_紋1CD = new ColorD(ref Col.Empty, ref 体配色.柄O);
-    		羽13_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		羽14_羽CD = new ColorD(ref Col.Black, ref 体配色.羽0O);
-    		羽14_紋1CD = new ColorD(ref Col.Empty, ref 体配色.柄O);
-    		羽14_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		羽15_羽CD = new ColorD(ref Col.Black, ref 体配色.羽0O);
-    		羽15_紋1CD = new ColorD(ref Col.Empty, ref 体配色.柄O);
-    		羽15_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		羽16_羽CD = new ColorD(ref Col.Black, ref 体配色.羽0O);
-    		羽16_紋1CD = new ColorD(ref Col.Empty, ref 体配色.柄O);
-    		羽16_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		羽17_羽CD = new ColorD(ref Col.Black, ref 体配色.羽0O);
-    		羽17_紋1CD = new ColorD(ref Col.Empty, ref 体配色.柄O);
-    		羽17_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		羽18_羽CD = new ColorD(ref Col.Black, ref 体配色.羽0O);
-    		羽18_紋1CD = new ColorD(ref Col.Empty, ref 体配色.柄O);
-    		羽18_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		羽19_羽CD = new ColorD(ref Col.Black, ref 体配色.羽0O);
-    		羽19_紋1CD = new ColorD(ref Col.Empty, ref 体配色.柄O);
-    		羽19_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		羽20_羽CD = new ColorD(ref Col.Black, ref 体配色.羽0O);
-    		羽20_紋1CD = new ColorD(ref Col.Empty, ref 体配色.柄O);
-    		羽20_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		羽21_羽CD = new ColorD(ref Col.Black, ref 体配色.羽0O);
-    		羽21_紋1CD = new ColorD(ref Col.Empty, ref 体配色.柄O);
-    		羽21_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
+    		羽_羽CD = new ColorD(ref ColorHelper.Black, ref 体配色.羽0O);
+    		羽_紋1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.柄O);
+    		羽_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		羽2_羽CD = new ColorD(ref ColorHelper.Black, ref 体配色.羽0O);
+    		羽2_紋1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.柄O);
+    		羽2_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		羽3_羽CD = new ColorD(ref ColorHelper.Black, ref 体配色.羽0O);
+    		羽3_紋1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.柄O);
+    		羽3_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		羽4_羽CD = new ColorD(ref ColorHelper.Black, ref 体配色.羽0O);
+    		羽4_紋1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.柄O);
+    		羽4_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		羽5_羽CD = new ColorD(ref ColorHelper.Black, ref 体配色.羽0O);
+    		羽5_紋1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.柄O);
+    		羽5_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		羽6_羽CD = new ColorD(ref ColorHelper.Black, ref 体配色.羽0O);
+    		羽6_紋1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.柄O);
+    		羽6_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		羽7_羽CD = new ColorD(ref ColorHelper.Black, ref 体配色.羽0O);
+    		羽7_紋1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.柄O);
+    		羽7_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		羽8_羽CD = new ColorD(ref ColorHelper.Black, ref 体配色.羽0O);
+    		羽8_紋1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.柄O);
+    		羽8_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		羽9_羽CD = new ColorD(ref ColorHelper.Black, ref 体配色.羽0O);
+    		羽9_紋1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.柄O);
+    		羽9_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		羽10_羽CD = new ColorD(ref ColorHelper.Black, ref 体配色.羽0O);
+    		羽10_紋1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.柄O);
+    		羽10_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		羽11_羽CD = new ColorD(ref ColorHelper.Black, ref 体配色.羽0O);
+    		羽11_紋1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.柄O);
+    		羽11_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		羽12_羽CD = new ColorD(ref ColorHelper.Black, ref 体配色.羽0O);
+    		羽12_紋1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.柄O);
+    		羽12_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		羽13_羽CD = new ColorD(ref ColorHelper.Black, ref 体配色.羽0O);
+    		羽13_紋1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.柄O);
+    		羽13_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		羽14_羽CD = new ColorD(ref ColorHelper.Black, ref 体配色.羽0O);
+    		羽14_紋1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.柄O);
+    		羽14_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		羽15_羽CD = new ColorD(ref ColorHelper.Black, ref 体配色.羽0O);
+    		羽15_紋1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.柄O);
+    		羽15_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		羽16_羽CD = new ColorD(ref ColorHelper.Black, ref 体配色.羽0O);
+    		羽16_紋1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.柄O);
+    		羽16_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		羽17_羽CD = new ColorD(ref ColorHelper.Black, ref 体配色.羽0O);
+    		羽17_紋1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.柄O);
+    		羽17_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		羽18_羽CD = new ColorD(ref ColorHelper.Black, ref 体配色.羽0O);
+    		羽18_紋1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.柄O);
+    		羽18_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		羽19_羽CD = new ColorD(ref ColorHelper.Black, ref 体配色.羽0O);
+    		羽19_紋1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.柄O);
+    		羽19_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		羽20_羽CD = new ColorD(ref ColorHelper.Black, ref 体配色.羽0O);
+    		羽20_紋1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.柄O);
+    		羽20_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		羽21_羽CD = new ColorD(ref ColorHelper.Black, ref 体配色.羽0O);
+    		羽21_紋1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.柄O);
+    		羽21_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
     	}
 
     	private void 配色T0(BodyColorSet 体配色)
     	{
-    		羽_羽CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		羽_紋1CD = new ColorD(ref Col.Empty, ref 体配色.柄O);
-    		羽_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		羽2_羽CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		羽2_紋1CD = new ColorD(ref Col.Empty, ref 体配色.柄O);
-    		羽2_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		羽3_羽CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		羽3_紋1CD = new ColorD(ref Col.Empty, ref 体配色.柄O);
-    		羽3_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		羽4_羽CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		羽4_紋1CD = new ColorD(ref Col.Empty, ref 体配色.柄O);
-    		羽4_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		羽5_羽CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		羽5_紋1CD = new ColorD(ref Col.Empty, ref 体配色.柄O);
-    		羽5_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		羽6_羽CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		羽6_紋1CD = new ColorD(ref Col.Empty, ref 体配色.柄O);
-    		羽6_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		羽7_羽CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		羽7_紋1CD = new ColorD(ref Col.Empty, ref 体配色.柄O);
-    		羽7_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		羽8_羽CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		羽8_紋1CD = new ColorD(ref Col.Empty, ref 体配色.柄O);
-    		羽8_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		羽9_羽CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		羽9_紋1CD = new ColorD(ref Col.Empty, ref 体配色.柄O);
-    		羽9_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		羽10_羽CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		羽10_紋1CD = new ColorD(ref Col.Empty, ref 体配色.柄O);
-    		羽10_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		羽11_羽CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		羽11_紋1CD = new ColorD(ref Col.Empty, ref 体配色.柄O);
-    		羽11_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		羽12_羽CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		羽12_紋1CD = new ColorD(ref Col.Empty, ref 体配色.柄O);
-    		羽12_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		羽13_羽CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		羽13_紋1CD = new ColorD(ref Col.Empty, ref 体配色.柄O);
-    		羽13_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		羽14_羽CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		羽14_紋1CD = new ColorD(ref Col.Empty, ref 体配色.柄O);
-    		羽14_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		羽15_羽CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		羽15_紋1CD = new ColorD(ref Col.Empty, ref 体配色.柄O);
-    		羽15_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		羽16_羽CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		羽16_紋1CD = new ColorD(ref Col.Empty, ref 体配色.柄O);
-    		羽16_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		羽17_羽CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		羽17_紋1CD = new ColorD(ref Col.Empty, ref 体配色.柄O);
-    		羽17_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		羽18_羽CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		羽18_紋1CD = new ColorD(ref Col.Empty, ref 体配色.柄O);
-    		羽18_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		羽19_羽CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		羽19_紋1CD = new ColorD(ref Col.Empty, ref 体配色.柄O);
-    		羽19_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		羽20_羽CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		羽20_紋1CD = new ColorD(ref Col.Empty, ref 体配色.柄O);
-    		羽20_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		羽21_羽CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		羽21_紋1CD = new ColorD(ref Col.Empty, ref 体配色.柄O);
-    		羽21_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
+    		羽_羽CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		羽_紋1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.柄O);
+    		羽_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		羽2_羽CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		羽2_紋1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.柄O);
+    		羽2_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		羽3_羽CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		羽3_紋1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.柄O);
+    		羽3_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		羽4_羽CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		羽4_紋1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.柄O);
+    		羽4_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		羽5_羽CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		羽5_紋1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.柄O);
+    		羽5_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		羽6_羽CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		羽6_紋1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.柄O);
+    		羽6_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		羽7_羽CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		羽7_紋1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.柄O);
+    		羽7_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		羽8_羽CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		羽8_紋1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.柄O);
+    		羽8_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		羽9_羽CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		羽9_紋1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.柄O);
+    		羽9_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		羽10_羽CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		羽10_紋1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.柄O);
+    		羽10_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		羽11_羽CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		羽11_紋1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.柄O);
+    		羽11_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		羽12_羽CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		羽12_紋1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.柄O);
+    		羽12_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		羽13_羽CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		羽13_紋1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.柄O);
+    		羽13_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		羽14_羽CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		羽14_紋1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.柄O);
+    		羽14_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		羽15_羽CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		羽15_紋1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.柄O);
+    		羽15_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		羽16_羽CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		羽16_紋1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.柄O);
+    		羽16_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		羽17_羽CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		羽17_紋1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.柄O);
+    		羽17_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		羽18_羽CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		羽18_紋1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.柄O);
+    		羽18_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		羽19_羽CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		羽19_紋1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.柄O);
+    		羽19_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		羽20_羽CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		羽20_紋1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.柄O);
+    		羽20_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		羽21_羽CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		羽21_紋1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.柄O);
+    		羽21_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
     	}
 
     	private void 配色T1(BodyColorSet 体配色)
     	{
-    		羽_羽CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		羽_紋1CD = new ColorD(ref Col.Empty, ref 体配色.柄O);
-    		羽_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		羽2_羽CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		羽2_紋1CD = new ColorD(ref Col.Empty, ref 体配色.柄O);
-    		羽2_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		羽3_羽CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		羽3_紋1CD = new ColorD(ref Col.Empty, ref 体配色.柄O);
-    		羽3_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		羽4_羽CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		羽4_紋1CD = new ColorD(ref Col.Empty, ref 体配色.柄O);
-    		羽4_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		羽5_羽CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		羽5_紋1CD = new ColorD(ref Col.Empty, ref 体配色.柄O);
-    		羽5_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		羽6_羽CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		羽6_紋1CD = new ColorD(ref Col.Empty, ref 体配色.柄O);
-    		羽6_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		羽7_羽CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		羽7_紋1CD = new ColorD(ref Col.Empty, ref 体配色.柄O);
-    		羽7_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		羽8_羽CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		羽8_紋1CD = new ColorD(ref Col.Empty, ref 体配色.柄O);
-    		羽8_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		羽9_羽CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		羽9_紋1CD = new ColorD(ref Col.Empty, ref 体配色.柄O);
-    		羽9_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		羽10_羽CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		羽10_紋1CD = new ColorD(ref Col.Empty, ref 体配色.柄O);
-    		羽10_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		羽11_羽CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		羽11_紋1CD = new ColorD(ref Col.Empty, ref 体配色.柄O);
-    		羽11_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		羽12_羽CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		羽12_紋1CD = new ColorD(ref Col.Empty, ref 体配色.柄O);
-    		羽12_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		羽13_羽CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		羽13_紋1CD = new ColorD(ref Col.Empty, ref 体配色.柄O);
-    		羽13_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		羽14_羽CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		羽14_紋1CD = new ColorD(ref Col.Empty, ref 体配色.柄O);
-    		羽14_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		羽15_羽CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		羽15_紋1CD = new ColorD(ref Col.Empty, ref 体配色.柄O);
-    		羽15_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		羽16_羽CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		羽16_紋1CD = new ColorD(ref Col.Empty, ref 体配色.柄O);
-    		羽16_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		羽17_羽CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		羽17_紋1CD = new ColorD(ref Col.Empty, ref 体配色.柄O);
-    		羽17_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		羽18_羽CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		羽18_紋1CD = new ColorD(ref Col.Empty, ref 体配色.柄O);
-    		羽18_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		羽19_羽CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		羽19_紋1CD = new ColorD(ref Col.Empty, ref 体配色.柄O);
-    		羽19_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		羽20_羽CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		羽20_紋1CD = new ColorD(ref Col.Empty, ref 体配色.柄O);
-    		羽20_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
-    		羽21_羽CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		羽21_紋1CD = new ColorD(ref Col.Empty, ref 体配色.柄O);
-    		羽21_紋2CD = new ColorD(ref Col.Empty, ref 体配色.紋O);
+    		羽_羽CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		羽_紋1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.柄O);
+    		羽_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		羽2_羽CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		羽2_紋1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.柄O);
+    		羽2_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		羽3_羽CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		羽3_紋1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.柄O);
+    		羽3_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		羽4_羽CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		羽4_紋1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.柄O);
+    		羽4_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		羽5_羽CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		羽5_紋1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.柄O);
+    		羽5_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		羽6_羽CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		羽6_紋1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.柄O);
+    		羽6_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		羽7_羽CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		羽7_紋1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.柄O);
+    		羽7_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		羽8_羽CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		羽8_紋1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.柄O);
+    		羽8_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		羽9_羽CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		羽9_紋1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.柄O);
+    		羽9_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		羽10_羽CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		羽10_紋1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.柄O);
+    		羽10_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		羽11_羽CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		羽11_紋1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.柄O);
+    		羽11_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		羽12_羽CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		羽12_紋1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.柄O);
+    		羽12_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		羽13_羽CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		羽13_紋1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.柄O);
+    		羽13_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		羽14_羽CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		羽14_紋1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.柄O);
+    		羽14_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		羽15_羽CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		羽15_紋1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.柄O);
+    		羽15_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		羽16_羽CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		羽16_紋1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.柄O);
+    		羽16_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		羽17_羽CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		羽17_紋1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.柄O);
+    		羽17_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		羽18_羽CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		羽18_紋1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.柄O);
+    		羽18_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		羽19_羽CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		羽19_紋1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.柄O);
+    		羽19_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		羽20_羽CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		羽20_紋1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.柄O);
+    		羽20_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
+    		羽21_羽CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		羽21_紋1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.柄O);
+    		羽21_紋2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.紋O);
     	}
     }
 }

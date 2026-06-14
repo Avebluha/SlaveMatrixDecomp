@@ -2806,8 +2806,8 @@ namespace SlaveMatrix
 
     	public static void SetInitialAngle(this Character Cha)
     	{
-    		Ele[] Elements = Cha.Body.Elements;
-    		foreach (Ele obj in Elements)
+    		Element[] Elements = Cha.Body.Elements;
+    		foreach (Element obj in Elements)
     		{
     			obj.AngleAll = 0.0;
     			obj.SetAngle0();
@@ -2816,13 +2816,13 @@ namespace SlaveMatrix
 
     	public static void SetSymmetry(this Character Cha)
     	{
-    		Ele[] Elements = Cha.Body.Elements;
+    		Element[] Elements = Cha.Body.Elements;
     		try
     		{
-    			List<Ele> list = new List<Ele>();
-    			List<Ele> list2 = new List<Ele>();
-    			Ele[] array = Elements;
-    			foreach (Ele ele in array)
+    			List<Element> list = new List<Element>();
+    			List<Element> list2 = new List<Element>();
+    			Element[] array = Elements;
+    			foreach (Element ele in array)
     			{
     				string text = ele.ConnectionType.ToString();
     				if (!(ele is 尾_鳥) && !ele.ConnectionType.Is左右無し())
@@ -2837,8 +2837,8 @@ namespace SlaveMatrix
     					}
     				}
     			}
-    			list.Sort((Ele x, Ele y) => x.ConnectionType.ToString().CompareTo(y.ConnectionType.ToString()));
-    			list2.Sort((Ele x, Ele y) => x.ConnectionType.ToString().CompareTo(y.ConnectionType.ToString()));
+    			list.Sort((Element x, Element y) => x.ConnectionType.ToString().CompareTo(y.ConnectionType.ToString()));
+    			list2.Sort((Element x, Element y) => x.ConnectionType.ToString().CompareTo(y.ConnectionType.ToString()));
     			if (list.Count <= list2.Count)
     			{
     				for (int j = 0; j < list.Count; j++)
@@ -2856,7 +2856,7 @@ namespace SlaveMatrix
     			list.Clear();
     			list2.Clear();
     			array = Elements;
-    			foreach (Ele ele2 in array)
+    			foreach (Element ele2 in array)
     			{
     				string text = ele2.ConnectionType.ToString();
     				if (!(ele2 is 尾_鳥) && !ele2.ConnectionType.Is左右無し())
@@ -2871,8 +2871,8 @@ namespace SlaveMatrix
     					}
     				}
     			}
-    			list.Sort((Ele x, Ele y) => x.ToString().CompareTo(y.ToString()));
-    			list2.Sort((Ele x, Ele y) => x.ToString().CompareTo(y.ToString()));
+    			list.Sort((Element x, Element y) => x.ToString().CompareTo(y.ToString()));
+    			list2.Sort((Element x, Element y) => x.ToString().CompareTo(y.ToString()));
     			if (list.Count <= list2.Count)
     			{
     				for (int j = 0; j < list.Count; j++)
@@ -2893,13 +2893,13 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public static void 重複角度処理(this Ele e)
+    	public static void 重複角度処理(this Element e)
     	{
     		int num = -1;
     		int num2 = 0;
     		bool flag = true;
     		string text = e.GetType().ToString();
-    		foreach (Ele item in e.Par.EnumConnectionType(e.ConnectionType))
+    		foreach (Element item in e.Par.EnumConnectionType(e.ConnectionType))
     		{
     			if (!(item.GetType().ToString() == text))
     			{
@@ -2975,7 +2975,7 @@ namespace SlaveMatrix
 
     	public static double 角度ムラ(this Character c, int rs1, double ba1, int rs2, double ba2)
     	{
-    		return (double)rs1 * ba1 * c.CharacterData.固有値 + (double)rs2 * ba2 * RNG.XS.NextDouble();
+    		return (double)rs1 * ba1 * c.CharacterData.固有値 + (double)rs2 * ba2 * Rng.XS.NextDouble();
     	}
 
     	public static void 眉_無左(this Character Cha, double u1)
@@ -3022,23 +3022,23 @@ namespace SlaveMatrix
 
     	public static void 両眉_無(this Character Cha)
     	{
-    		double u = Cha.角度ムラ(RNG.XS.NextSign(), 0.5, RNG.XS.NextSign(), 0.25);
+    		double u = Cha.角度ムラ(Rng.XS.NextSign(), 0.5, Rng.XS.NextSign(), 0.25);
     		Cha.眉_無左(u);
     		Cha.眉_無右(u);
     	}
 
     	public static void 両眉_顰(this Character Cha)
     	{
-    		double u = Cha.角度ムラ(RNG.XS.NextSign(), 0.5, RNG.XS.NextSign(), 0.25);
-    		bool flag = Cha.CharacterData.固有値 * RNG.XS.NextDouble() > 0.5;
+    		double u = Cha.角度ムラ(Rng.XS.NextSign(), 0.5, Rng.XS.NextSign(), 0.25);
+    		bool flag = Cha.CharacterData.固有値 * Rng.XS.NextDouble() > 0.5;
     		Cha.眉_顰左(flag, u);
     		Cha.眉_顰右(!flag, u);
     	}
 
     	public static void 両眉_0(this Character Cha, bool 同角, int i1, int i2)
     	{
-    		double num = Cha.角度ムラ(RNG.XS.NextSign(), 1.0, RNG.XS.NextSign(), 0.5);
-    		double u = ((!同角) ? Cha.角度ムラ(RNG.XS.NextSign(), 1.0, RNG.XS.NextSign(), 0.5) : num);
+    		double num = Cha.角度ムラ(Rng.XS.NextSign(), 1.0, Rng.XS.NextSign(), 0.5);
+    		double u = ((!同角) ? Cha.角度ムラ(Rng.XS.NextSign(), 1.0, Rng.XS.NextSign(), 0.5) : num);
     		Cha.眉左_0(i1, num);
     		Cha.眉右_0(i2, u);
     	}
@@ -3089,22 +3089,22 @@ namespace SlaveMatrix
 
     	public static void 眉_下左(this Character Cha)
     	{
-    		Cha.Body.眉左.Body.GetCurJoinRoot().SetPositionCont(Dat.Vec2DZero);
+    		Cha.Body.眉左.Body.GetCurJoinRoot().SetPositionCont(DataConsts.Vec2DZero);
     	}
 
     	public static void 眉_下右(this Character Cha)
     	{
-    		Cha.Body.眉右.Body.GetCurJoinRoot().SetPositionCont(Dat.Vec2DZero);
+    		Cha.Body.眉右.Body.GetCurJoinRoot().SetPositionCont(DataConsts.Vec2DZero);
     	}
 
     	public static void 眉_上左(this Character Cha)
     	{
-    		Cha.Body.眉左.Body.GetCurJoinRoot().SetPositionCont(-Dat.Vec2DUnitY * 0.003);
+    		Cha.Body.眉左.Body.GetCurJoinRoot().SetPositionCont(-DataConsts.Vec2DUnitY * 0.003);
     	}
 
     	public static void 眉_上右(this Character Cha)
     	{
-    		Cha.Body.眉右.Body.GetCurJoinRoot().SetPositionCont(-Dat.Vec2DUnitY * 0.003);
+    		Cha.Body.眉右.Body.GetCurJoinRoot().SetPositionCont(-DataConsts.Vec2DUnitY * 0.003);
     	}
 
     	public static void 両眉_下(this Character Cha)
@@ -3184,12 +3184,12 @@ namespace SlaveMatrix
 
     	public static void 単眉_下(this Character Cha)
     	{
-    		Cha.Body.単眼眉.Body.GetCurJoinRoot().SetPositionCont(Dat.Vec2DZero);
+    		Cha.Body.単眼眉.Body.GetCurJoinRoot().SetPositionCont(DataConsts.Vec2DZero);
     	}
 
     	public static void 単眉_上(this Character Cha)
     	{
-    		Cha.Body.単眼眉.Body.GetCurJoinRoot().SetPositionCont(-Dat.Vec2DUnitY * 0.003);
+    		Cha.Body.単眼眉.Body.GetCurJoinRoot().SetPositionCont(-DataConsts.Vec2DUnitY * 0.003);
     	}
 
     	public static void 単眉_1(this Character c, int i)
@@ -4028,7 +4028,7 @@ namespace SlaveMatrix
     		}
     		if (c.CharacterData.Emotion < EmotionType.Acceptance)
     		{
-    			switch (RNG.XS.Next(2))
+    			switch (Rng.XS.Next(2))
     			{
     			case 0:
     				c.口_閉じ();
@@ -4039,7 +4039,7 @@ namespace SlaveMatrix
     			}
     			return;
     		}
-    		switch (RNG.XS.Next(3))
+    		switch (Rng.XS.Next(3))
     		{
     		case 0:
     			c.口_閉笑();
@@ -4061,7 +4061,7 @@ namespace SlaveMatrix
     	public static void 舌_出し(this Character Cha)
     	{
     		Cha.Body.舌_表示 = true;
-    		Cha.Body.舌.尺度YC = 0.2 + 0.8 * RNG.XS.NextDouble();
+    		Cha.Body.舌.尺度YC = 0.2 + 0.8 * Rng.XS.NextDouble();
     	}
 
     	public static void 舌_0(this Character c, int i)
@@ -4215,14 +4215,14 @@ namespace SlaveMatrix
 
     	public static void 触覚絶頂(this Character Cha, double a)
     	{
-    		Cha.Body.触覚左.角度C = a * RNG.XS.NextDouble();
-    		Cha.Body.触覚右.角度C = (0.0 - a) * RNG.XS.NextDouble();
+    		Cha.Body.触覚左.角度C = a * Rng.XS.NextDouble();
+    		Cha.Body.触覚右.角度C = (0.0 - a) * Rng.XS.NextDouble();
     	}
 
     	public static void 触覚甲絶頂(this Character Cha, double a)
     	{
-    		Cha.Body.触覚甲左.角度C = a * RNG.XS.NextDouble();
-    		Cha.Body.触覚甲右.角度C = (0.0 - a) * RNG.XS.NextDouble();
+    		Cha.Body.触覚甲左.角度C = a * Rng.XS.NextDouble();
+    		Cha.Body.触覚甲右.角度C = (0.0 - a) * Rng.XS.NextDouble();
     	}
 
     	public static void 大顎左(this Character Cha, int n, double u1, double 根本角度)
@@ -4271,9 +4271,9 @@ namespace SlaveMatrix
 
     	public static void 両大顎_0(this Character Cha, int n, bool 同角, int i1, int i2)
     	{
-    		double num = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
+    		double num = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
     		double num2 = 0.0;
-    		num2 = ((!同角) ? Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5) : num);
+    		num2 = ((!同角) ? Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5) : num);
     		Cha.大顎左_0(i1, n, num);
     		Cha.大顎右_0(i2, n, num2);
     	}
@@ -4314,11 +4314,11 @@ namespace SlaveMatrix
     	{
     		foreach (大顎 item in Cha.Body.大顎左)
     		{
-    			item.角度C = a * RNG.XS.NextDouble();
+    			item.角度C = a * Rng.XS.NextDouble();
     		}
     		foreach (大顎 item2 in Cha.Body.大顎右)
     		{
-    			item2.角度C = (0.0 - a) * RNG.XS.NextDouble();
+    			item2.角度C = (0.0 - a) * Rng.XS.NextDouble();
     		}
     	}
 
@@ -4368,9 +4368,9 @@ namespace SlaveMatrix
 
     	public static void 両虫顎_0(this Character Cha, int n, bool 同角, int i1, int i2)
     	{
-    		double num = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
+    		double num = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
     		double num2 = 0.0;
-    		num2 = ((!同角) ? Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5) : num);
+    		num2 = ((!同角) ? Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5) : num);
     		Cha.虫顎左_0(i1, n, num);
     		Cha.虫顎右_0(i2, n, num2);
     	}
@@ -4411,11 +4411,11 @@ namespace SlaveMatrix
     	{
     		foreach (虫顎 item in Cha.Body.虫顎左)
     		{
-    			item.角度C = a * RNG.XS.NextDouble();
+    			item.角度C = a * Rng.XS.NextDouble();
     		}
     		foreach (虫顎 item2 in Cha.Body.虫顎右)
     		{
-    			item2.角度C = (0.0 - a) * RNG.XS.NextDouble();
+    			item2.角度C = (0.0 - a) * Rng.XS.NextDouble();
     		}
     	}
 
@@ -4441,8 +4441,8 @@ namespace SlaveMatrix
     				腕人2.LowerArm.鎖1.反転Y = LowerArm反転Y;
     				if (腕人2.LowerArm.虫鎌_接続 != null)
     				{
-    					Ele[] 虫鎌_接続 = 腕人2.LowerArm.虫鎌_接続;
-    					foreach (Ele obj in 虫鎌_接続)
+    					Element[] 虫鎌_接続 = 腕人2.LowerArm.虫鎌_接続;
+    					foreach (Element obj in 虫鎌_接続)
     					{
     						obj.尺度XC = LowerArm尺度XC;
     						obj.尺度C = LowerArm尺度C;
@@ -4530,8 +4530,8 @@ namespace SlaveMatrix
     				腕人2.LowerArm.鎖1.反転Y = LowerArm反転Y;
     				if (腕人2.LowerArm.虫鎌_接続 != null)
     				{
-    					Ele[] 虫鎌_接続 = 腕人2.LowerArm.虫鎌_接続;
-    					foreach (Ele obj in 虫鎌_接続)
+    					Element[] 虫鎌_接続 = 腕人2.LowerArm.虫鎌_接続;
+    					foreach (Element obj in 虫鎌_接続)
     					{
     						obj.尺度XC = LowerArm尺度XC;
     						obj.尺度C = LowerArm尺度C;
@@ -4793,10 +4793,10 @@ namespace SlaveMatrix
 
     	public static void 両腕_人_腕下げ(this Character Cha, int n, bool 左右, bool 前後)
     	{
-    		double u = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    		double u2 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    		double u3 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    		double u4 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
+    		double u = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    		double u2 = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    		double u3 = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    		double u4 = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
     		Cha.Body.腕左右前後 = 前後;
     		if (左右)
     		{
@@ -4812,10 +4812,10 @@ namespace SlaveMatrix
 
     	public static void 両腕_人_パイズリ(this Character Cha, int n, bool 左右, bool 前後)
     	{
-    		double u = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    		double u2 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    		double u3 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    		double u4 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
+    		double u = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    		double u2 = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    		double u3 = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    		double u4 = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
     		Cha.Body.腕左右前後 = 前後;
     		if (左右)
     		{
@@ -4832,10 +4832,10 @@ namespace SlaveMatrix
     	public static void 両腕人_0(this Character Cha, int n, bool 前後, bool 同角, bool 左右, int i1, int i2)
     	{
     		Cha.Body.腕左右前後 = 前後;
-    		double num = Cha.角度ムラ(RNG.XS.NextSign(), 0.25, RNG.XS.NextSign(), 0.125);
-    		double num2 = Cha.角度ムラ(RNG.XS.NextSign(), 0.25, RNG.XS.NextSign(), 0.125);
-    		double num3 = Cha.角度ムラ(RNG.XS.NextSign(), 1.5, RNG.XS.NextSign(), 0.75);
-    		double num4 = Cha.角度ムラ(RNG.XS.NextSign(), 1.5, RNG.XS.NextSign(), 0.75);
+    		double num = Cha.角度ムラ(Rng.XS.NextSign(), 0.25, Rng.XS.NextSign(), 0.125);
+    		double num2 = Cha.角度ムラ(Rng.XS.NextSign(), 0.25, Rng.XS.NextSign(), 0.125);
+    		double num3 = Cha.角度ムラ(Rng.XS.NextSign(), 1.5, Rng.XS.NextSign(), 0.75);
+    		double num4 = Cha.角度ムラ(Rng.XS.NextSign(), 1.5, Rng.XS.NextSign(), 0.75);
     		double u;
     		double u2;
     		double u3;
@@ -4849,10 +4849,10 @@ namespace SlaveMatrix
     		}
     		else
     		{
-    			u = Cha.角度ムラ(RNG.XS.NextSign(), 0.25, RNG.XS.NextSign(), 0.125);
-    			u2 = Cha.角度ムラ(RNG.XS.NextSign(), 0.5, RNG.XS.NextSign(), 0.25);
-    			u3 = Cha.角度ムラ(RNG.XS.NextSign(), 1.5, RNG.XS.NextSign(), 0.75);
-    			u4 = Cha.角度ムラ(RNG.XS.NextSign(), 1.5, RNG.XS.NextSign(), 0.75);
+    			u = Cha.角度ムラ(Rng.XS.NextSign(), 0.25, Rng.XS.NextSign(), 0.125);
+    			u2 = Cha.角度ムラ(Rng.XS.NextSign(), 0.5, Rng.XS.NextSign(), 0.25);
+    			u3 = Cha.角度ムラ(Rng.XS.NextSign(), 1.5, Rng.XS.NextSign(), 0.75);
+    			u4 = Cha.角度ムラ(Rng.XS.NextSign(), 1.5, Rng.XS.NextSign(), 0.75);
     		}
     		if (左右)
     		{
@@ -4998,35 +4998,35 @@ namespace SlaveMatrix
     	{
     		foreach (Arm人 item in Cha.Body.Arm人左)
     		{
-    			item.Shoulder.角度C = a * RNG.XS.NextDouble();
+    			item.Shoulder.角度C = a * Rng.XS.NextDouble();
     			if (item.UpperArm == null)
     			{
     				continue;
     			}
-    			item.UpperArm.角度C = a * RNG.XS.NextDouble();
+    			item.UpperArm.角度C = a * Rng.XS.NextDouble();
     			if (item.LowerArm != null)
     			{
-    				item.LowerArm.角度C = a * RNG.XS.NextDouble();
+    				item.LowerArm.角度C = a * Rng.XS.NextDouble();
     				if (item.手 != null)
     				{
-    					item.手.角度C = a * RNG.XS.NextDouble();
+    					item.手.角度C = a * Rng.XS.NextDouble();
     				}
     			}
     		}
     		foreach (Arm人 item2 in Cha.Body.Arm人右)
     		{
-    			item2.Shoulder.角度C = (0.0 - a) * RNG.XS.NextDouble();
+    			item2.Shoulder.角度C = (0.0 - a) * Rng.XS.NextDouble();
     			if (item2.UpperArm == null)
     			{
     				continue;
     			}
-    			item2.UpperArm.角度C = (0.0 - a) * RNG.XS.NextDouble();
+    			item2.UpperArm.角度C = (0.0 - a) * Rng.XS.NextDouble();
     			if (item2.LowerArm != null)
     			{
-    				item2.LowerArm.角度C = (0.0 - a) * RNG.XS.NextDouble();
+    				item2.LowerArm.角度C = (0.0 - a) * Rng.XS.NextDouble();
     				if (item2.手 != null)
     				{
-    					item2.手.角度C = (0.0 - a) * RNG.XS.NextDouble();
+    					item2.手.角度C = (0.0 - a) * Rng.XS.NextDouble();
     				}
     			}
     		}
@@ -5162,10 +5162,10 @@ namespace SlaveMatrix
 
     	public static void 両腕翼鳥_0(this Character Cha, int n, bool 同角, int i1, int i2)
     	{
-    		double num = Cha.角度ムラ(RNG.XS.NextSign(), 0.5, RNG.XS.NextSign(), 0.25);
-    		double num2 = Cha.角度ムラ(RNG.XS.NextSign(), 0.5, RNG.XS.NextSign(), 0.25);
-    		double num3 = Cha.角度ムラ(RNG.XS.NextSign(), 1.0, RNG.XS.NextSign(), 0.5);
-    		double num4 = Cha.角度ムラ(RNG.XS.NextSign(), 1.0, RNG.XS.NextSign(), 0.5);
+    		double num = Cha.角度ムラ(Rng.XS.NextSign(), 0.5, Rng.XS.NextSign(), 0.25);
+    		double num2 = Cha.角度ムラ(Rng.XS.NextSign(), 0.5, Rng.XS.NextSign(), 0.25);
+    		double num3 = Cha.角度ムラ(Rng.XS.NextSign(), 1.0, Rng.XS.NextSign(), 0.5);
+    		double num4 = Cha.角度ムラ(Rng.XS.NextSign(), 1.0, Rng.XS.NextSign(), 0.5);
     		double u;
     		double u2;
     		double u3;
@@ -5179,10 +5179,10 @@ namespace SlaveMatrix
     		}
     		else
     		{
-    			u = Cha.角度ムラ(RNG.XS.NextSign(), 0.5, RNG.XS.NextSign(), 0.25);
-    			u2 = Cha.角度ムラ(RNG.XS.NextSign(), 0.5, RNG.XS.NextSign(), 0.25);
-    			u3 = Cha.角度ムラ(RNG.XS.NextSign(), 1.0, RNG.XS.NextSign(), 0.5);
-    			u4 = Cha.角度ムラ(RNG.XS.NextSign(), 1.0, RNG.XS.NextSign(), 0.5);
+    			u = Cha.角度ムラ(Rng.XS.NextSign(), 0.5, Rng.XS.NextSign(), 0.25);
+    			u2 = Cha.角度ムラ(Rng.XS.NextSign(), 0.5, Rng.XS.NextSign(), 0.25);
+    			u3 = Cha.角度ムラ(Rng.XS.NextSign(), 1.0, Rng.XS.NextSign(), 0.5);
+    			u4 = Cha.角度ムラ(Rng.XS.NextSign(), 1.0, Rng.XS.NextSign(), 0.5);
     		}
     		Cha.腕翼鳥左_0(i1, n, num, num2, num3, num4);
     		Cha.腕翼鳥右_0(i2, n, u, u2, u3, u4);
@@ -5248,11 +5248,11 @@ namespace SlaveMatrix
     	{
     		foreach (Arm翼鳥 item in Cha.Body.腕翼鳥左)
     		{
-    			item.Shoulder.角度C = a * RNG.XS.NextDouble();
+    			item.Shoulder.角度C = a * Rng.XS.NextDouble();
     		}
     		foreach (Arm翼鳥 item2 in Cha.Body.腕翼鳥右)
     		{
-    			item2.Shoulder.角度C = (0.0 - a) * RNG.XS.NextDouble();
+    			item2.Shoulder.角度C = (0.0 - a) * Rng.XS.NextDouble();
     		}
     	}
 
@@ -5366,10 +5366,10 @@ namespace SlaveMatrix
 
     	public static void 両腕翼獣_0(this Character Cha, int n, bool 同角, int i1, int i2)
     	{
-    		double num = Cha.角度ムラ(RNG.XS.NextSign(), 2.0, RNG.XS.NextSign(), 1.0);
-    		double num2 = Cha.角度ムラ(RNG.XS.NextSign(), 2.0, RNG.XS.NextSign(), 1.0);
-    		double num3 = Cha.角度ムラ(RNG.XS.NextSign(), 2.0, RNG.XS.NextSign(), 1.0);
-    		double num4 = Cha.角度ムラ(RNG.XS.NextSign(), 0.0, RNG.XS.NextSign(), 0.25);
+    		double num = Cha.角度ムラ(Rng.XS.NextSign(), 2.0, Rng.XS.NextSign(), 1.0);
+    		double num2 = Cha.角度ムラ(Rng.XS.NextSign(), 2.0, Rng.XS.NextSign(), 1.0);
+    		double num3 = Cha.角度ムラ(Rng.XS.NextSign(), 2.0, Rng.XS.NextSign(), 1.0);
+    		double num4 = Cha.角度ムラ(Rng.XS.NextSign(), 0.0, Rng.XS.NextSign(), 0.25);
     		double u;
     		double u2;
     		double u3;
@@ -5383,10 +5383,10 @@ namespace SlaveMatrix
     		}
     		else
     		{
-    			u = Cha.角度ムラ(RNG.XS.NextSign(), 2.0, RNG.XS.NextSign(), 1.0);
-    			u2 = Cha.角度ムラ(RNG.XS.NextSign(), 2.0, RNG.XS.NextSign(), 1.0);
-    			u3 = Cha.角度ムラ(RNG.XS.NextSign(), 2.0, RNG.XS.NextSign(), 1.0);
-    			u4 = Cha.角度ムラ(RNG.XS.NextSign(), 0.0, RNG.XS.NextSign(), 0.25);
+    			u = Cha.角度ムラ(Rng.XS.NextSign(), 2.0, Rng.XS.NextSign(), 1.0);
+    			u2 = Cha.角度ムラ(Rng.XS.NextSign(), 2.0, Rng.XS.NextSign(), 1.0);
+    			u3 = Cha.角度ムラ(Rng.XS.NextSign(), 2.0, Rng.XS.NextSign(), 1.0);
+    			u4 = Cha.角度ムラ(Rng.XS.NextSign(), 0.0, Rng.XS.NextSign(), 0.25);
     		}
     		Cha.腕翼獣左_0(i1, n, num, num2, num3, num4);
     		Cha.腕翼獣右_0(i2, n, u, u2, u3, u4);
@@ -5440,11 +5440,11 @@ namespace SlaveMatrix
     	{
     		foreach (Arm翼獣 item in Cha.Body.腕翼獣左)
     		{
-    			item.Shoulder.角度C = a * RNG.XS.NextDouble();
+    			item.Shoulder.角度C = a * Rng.XS.NextDouble();
     		}
     		foreach (Arm翼獣 item2 in Cha.Body.腕翼獣右)
     		{
-    			item2.Shoulder.角度C = (0.0 - a) * RNG.XS.NextDouble();
+    			item2.Shoulder.角度C = (0.0 - a) * Rng.XS.NextDouble();
     		}
     	}
 
@@ -5530,10 +5530,10 @@ namespace SlaveMatrix
 
     	public static void 両腕獣_0(this Character Cha, int n, bool 同角, int i1, int i2)
     	{
-    		double num = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    		double num2 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    		double num3 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    		double num4 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
+    		double num = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    		double num2 = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    		double num3 = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    		double num4 = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
     		double u;
     		double u2;
     		double u3;
@@ -5547,10 +5547,10 @@ namespace SlaveMatrix
     		}
     		else
     		{
-    			u = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    			u2 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    			u3 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    			u4 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
+    			u = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    			u2 = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    			u3 = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    			u4 = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
     		}
     		Cha.腕獣左_0(i1, n, num, num2, num3, num4);
     		Cha.腕獣右_0(i2, n, u, u2, u3, u4);
@@ -5596,13 +5596,13 @@ namespace SlaveMatrix
     			{
     				continue;
     			}
-    			item.UpperArm.角度C = a * RNG.XS.NextDouble();
+    			item.UpperArm.角度C = a * Rng.XS.NextDouble();
     			if (item.LowerArm != null)
     			{
-    				item.LowerArm.角度C = a * RNG.XS.NextDouble();
+    				item.LowerArm.角度C = a * Rng.XS.NextDouble();
     				if (item.手 != null)
     				{
-    					item.手.角度C = a * RNG.XS.NextDouble();
+    					item.手.角度C = a * Rng.XS.NextDouble();
     				}
     			}
     		}
@@ -5612,13 +5612,13 @@ namespace SlaveMatrix
     			{
     				continue;
     			}
-    			item2.UpperArm.角度C = (0.0 - a) * RNG.XS.NextDouble();
+    			item2.UpperArm.角度C = (0.0 - a) * Rng.XS.NextDouble();
     			if (item2.LowerArm != null)
     			{
-    				item2.LowerArm.角度C = (0.0 - a) * RNG.XS.NextDouble();
+    				item2.LowerArm.角度C = (0.0 - a) * Rng.XS.NextDouble();
     				if (item2.手 != null)
     				{
-    					item2.手.角度C = (0.0 - a) * RNG.XS.NextDouble();
+    					item2.手.角度C = (0.0 - a) * Rng.XS.NextDouble();
     				}
     			}
     		}
@@ -5790,9 +5790,9 @@ namespace SlaveMatrix
 
     	public static void 両脚_人_足コキ(this Character Cha, int n)
     	{
-    		double u = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    		double u2 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    		double u3 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
+    		double u = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    		double u2 = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    		double u3 = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
     		Cha.Body.腿開きi = 2;
     		Cha.Leg_人_足コキ左(n, u, u2, u3);
     		Cha.Leg_人_足コキ右(n, u, u2, u3);
@@ -5812,9 +5812,9 @@ namespace SlaveMatrix
     			ba = 3.0;
     			ba2 = 1.5;
     		}
-    		double num = Cha.角度ムラ(RNG.XS.NextSign(), ba, RNG.XS.NextSign(), ba2);
-    		double num2 = Cha.角度ムラ(RNG.XS.NextSign(), ba, RNG.XS.NextSign(), ba2);
-    		double num3 = Cha.角度ムラ(RNG.XS.NextSign(), ba, RNG.XS.NextSign(), ba2);
+    		double num = Cha.角度ムラ(Rng.XS.NextSign(), ba, Rng.XS.NextSign(), ba2);
+    		double num2 = Cha.角度ムラ(Rng.XS.NextSign(), ba, Rng.XS.NextSign(), ba2);
+    		double num3 = Cha.角度ムラ(Rng.XS.NextSign(), ba, Rng.XS.NextSign(), ba2);
     		double u;
     		double u2;
     		double u3;
@@ -5836,9 +5836,9 @@ namespace SlaveMatrix
     				ba = 3.0;
     				ba2 = 1.5;
     			}
-    			u = Cha.角度ムラ(RNG.XS.NextSign(), ba, RNG.XS.NextSign(), ba2);
-    			u2 = Cha.角度ムラ(RNG.XS.NextSign(), ba, RNG.XS.NextSign(), ba2);
-    			u3 = Cha.角度ムラ(RNG.XS.NextSign(), ba, RNG.XS.NextSign(), ba2);
+    			u = Cha.角度ムラ(Rng.XS.NextSign(), ba, Rng.XS.NextSign(), ba2);
+    			u2 = Cha.角度ムラ(Rng.XS.NextSign(), ba, Rng.XS.NextSign(), ba2);
+    			u3 = Cha.角度ムラ(Rng.XS.NextSign(), ba, Rng.XS.NextSign(), ba2);
     		}
     		Cha.脚人左_0(i1, n, num, num2, num3);
     		Cha.脚人右_0(i2, n, u, u2, u3);
@@ -5922,25 +5922,25 @@ namespace SlaveMatrix
     	{
     		foreach (脚人 item in Cha.Body.脚人左)
     		{
-    			item.腿.角度C = a * RNG.XS.NextDouble();
+    			item.腿.角度C = a * Rng.XS.NextDouble();
     			if (item.Leg != null)
     			{
-    				item.Leg.角度C = a * RNG.XS.NextDouble();
+    				item.Leg.角度C = a * Rng.XS.NextDouble();
     				if (item.足 != null)
     				{
-    					item.足.角度C = a * RNG.XS.NextDouble();
+    					item.足.角度C = a * Rng.XS.NextDouble();
     				}
     			}
     		}
     		foreach (脚人 item2 in Cha.Body.脚人右)
     		{
-    			item2.腿.角度C = (0.0 - a) * RNG.XS.NextDouble();
+    			item2.腿.角度C = (0.0 - a) * Rng.XS.NextDouble();
     			if (item2.Leg != null)
     			{
-    				item2.Leg.角度C = (0.0 - a) * RNG.XS.NextDouble();
+    				item2.Leg.角度C = (0.0 - a) * Rng.XS.NextDouble();
     				if (item2.足 != null)
     				{
-    					item2.足.角度C = (0.0 - a) * RNG.XS.NextDouble();
+    					item2.足.角度C = (0.0 - a) * Rng.XS.NextDouble();
     				}
     			}
     		}
@@ -6062,10 +6062,10 @@ namespace SlaveMatrix
 
     	public static void 両脚獣_0(this Character Cha, int n, bool 同角, int i1, int i2)
     	{
-    		double num = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    		double num2 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    		double num3 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    		double num4 = RNG.XS.NextDouble();
+    		double num = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    		double num2 = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    		double num3 = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    		double num4 = Rng.XS.NextDouble();
     		double u;
     		double u2;
     		double u3;
@@ -6079,10 +6079,10 @@ namespace SlaveMatrix
     		}
     		else
     		{
-    			u = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    			u2 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    			u3 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    			u4 = RNG.XS.NextDouble();
+    			u = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    			u2 = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    			u3 = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    			u4 = Rng.XS.NextDouble();
     		}
     		Cha.脚獣左_0(i1, n, num, num2, num3, num4);
     		Cha.脚獣右_0(i2, n, u, u2, u3, u4);
@@ -6126,14 +6126,14 @@ namespace SlaveMatrix
     		{
     			if (item.腿 != null)
     			{
-    				item.腿.角度C = a * RNG.XS.NextDouble();
+    				item.腿.角度C = a * Rng.XS.NextDouble();
     			}
     			if (item.Leg != null)
     			{
-    				item.Leg.角度C = a * RNG.XS.NextDouble();
+    				item.Leg.角度C = a * Rng.XS.NextDouble();
     				if (item.足 != null)
     				{
-    					item.足.角度C = a * RNG.XS.NextDouble();
+    					item.足.角度C = a * Rng.XS.NextDouble();
     				}
     			}
     		}
@@ -6141,14 +6141,14 @@ namespace SlaveMatrix
     		{
     			if (item2.腿 != null)
     			{
-    				item2.腿.角度C = (0.0 - a) * RNG.XS.NextDouble();
+    				item2.腿.角度C = (0.0 - a) * Rng.XS.NextDouble();
     			}
     			if (item2.Leg != null)
     			{
-    				item2.Leg.角度C = (0.0 - a) * RNG.XS.NextDouble();
+    				item2.Leg.角度C = (0.0 - a) * Rng.XS.NextDouble();
     				if (item2.足 != null)
     				{
-    					item2.足.角度C = (0.0 - a) * RNG.XS.NextDouble();
+    					item2.足.角度C = (0.0 - a) * Rng.XS.NextDouble();
     				}
     			}
     		}
@@ -6268,9 +6268,9 @@ namespace SlaveMatrix
 
     	public static void 両翼鳥_0(this Character Cha, int n, bool 同角, int i1, int i2)
     	{
-    		double num = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    		double num2 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    		double num3 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
+    		double num = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    		double num2 = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    		double num3 = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
     		double u;
     		double u2;
     		double u3;
@@ -6282,9 +6282,9 @@ namespace SlaveMatrix
     		}
     		else
     		{
-    			u = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    			u2 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    			u3 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
+    			u = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    			u2 = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    			u3 = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
     		}
     		Cha.翼鳥左_0(i1, n, num, num2, num3);
     		Cha.翼鳥右_0(i2, n, u, u2, u3);
@@ -6460,36 +6460,36 @@ namespace SlaveMatrix
 
     	public static void 両翼獣_閉じ(this Character Cha, int n)
     	{
-    		double u = Cha.角度ムラ(RNG.XS.NextSign(), 2.0, RNG.XS.NextSign(), 1.0);
-    		double u2 = Cha.角度ムラ(RNG.XS.NextSign(), 2.0, RNG.XS.NextSign(), 1.0);
-    		double u3 = Cha.角度ムラ(RNG.XS.NextSign(), 0.0, RNG.XS.NextSign(), 0.25);
+    		double u = Cha.角度ムラ(Rng.XS.NextSign(), 2.0, Rng.XS.NextSign(), 1.0);
+    		double u2 = Cha.角度ムラ(Rng.XS.NextSign(), 2.0, Rng.XS.NextSign(), 1.0);
+    		double u3 = Cha.角度ムラ(Rng.XS.NextSign(), 0.0, Rng.XS.NextSign(), 0.25);
     		Cha.翼獣_閉じ左(n, u, u2, u3);
     		Cha.翼獣_閉じ右(n, u, u2, u3);
     	}
 
     	public static void 両翼獣_半開き(this Character Cha, int n)
     	{
-    		double u = Cha.角度ムラ(RNG.XS.NextSign(), 2.0, RNG.XS.NextSign(), 1.0);
-    		double u2 = Cha.角度ムラ(RNG.XS.NextSign(), 2.0, RNG.XS.NextSign(), 1.0);
-    		double u3 = Cha.角度ムラ(RNG.XS.NextSign(), 0.0, RNG.XS.NextSign(), 0.25);
+    		double u = Cha.角度ムラ(Rng.XS.NextSign(), 2.0, Rng.XS.NextSign(), 1.0);
+    		double u2 = Cha.角度ムラ(Rng.XS.NextSign(), 2.0, Rng.XS.NextSign(), 1.0);
+    		double u3 = Cha.角度ムラ(Rng.XS.NextSign(), 0.0, Rng.XS.NextSign(), 0.25);
     		Cha.翼獣_半開き左(n, u, u2, u3);
     		Cha.翼獣_半開き右(n, u, u2, u3);
     	}
 
     	public static void 両翼獣_全開(this Character Cha, int n)
     	{
-    		double u = Cha.角度ムラ(RNG.XS.NextSign(), 2.0, RNG.XS.NextSign(), 1.0);
-    		double u2 = Cha.角度ムラ(RNG.XS.NextSign(), 2.0, RNG.XS.NextSign(), 1.0);
-    		double u3 = Cha.角度ムラ(RNG.XS.NextSign(), 0.0, RNG.XS.NextSign(), 0.25);
+    		double u = Cha.角度ムラ(Rng.XS.NextSign(), 2.0, Rng.XS.NextSign(), 1.0);
+    		double u2 = Cha.角度ムラ(Rng.XS.NextSign(), 2.0, Rng.XS.NextSign(), 1.0);
+    		double u3 = Cha.角度ムラ(Rng.XS.NextSign(), 0.0, Rng.XS.NextSign(), 0.25);
     		Cha.翼獣_全開左(n, u, u2, u3);
     		Cha.翼獣_全開右(n, u, u2, u3);
     	}
 
     	public static void 両翼獣_0(this Character Cha, int n, bool 同角, int i1, int i2)
     	{
-    		double num = Cha.角度ムラ(RNG.XS.NextSign(), 2.0, RNG.XS.NextSign(), 1.0);
-    		double num2 = Cha.角度ムラ(RNG.XS.NextSign(), 2.0, RNG.XS.NextSign(), 1.0);
-    		double num3 = Cha.角度ムラ(RNG.XS.NextSign(), 0.0, RNG.XS.NextSign(), 0.25);
+    		double num = Cha.角度ムラ(Rng.XS.NextSign(), 2.0, Rng.XS.NextSign(), 1.0);
+    		double num2 = Cha.角度ムラ(Rng.XS.NextSign(), 2.0, Rng.XS.NextSign(), 1.0);
+    		double num3 = Cha.角度ムラ(Rng.XS.NextSign(), 0.0, Rng.XS.NextSign(), 0.25);
     		double u;
     		double u2;
     		double u3;
@@ -6501,9 +6501,9 @@ namespace SlaveMatrix
     		}
     		else
     		{
-    			u = Cha.角度ムラ(RNG.XS.NextSign(), 2.0, RNG.XS.NextSign(), 1.0);
-    			u2 = Cha.角度ムラ(RNG.XS.NextSign(), 2.0, RNG.XS.NextSign(), 1.0);
-    			u3 = Cha.角度ムラ(RNG.XS.NextSign(), 0.0, RNG.XS.NextSign(), 0.25);
+    			u = Cha.角度ムラ(Rng.XS.NextSign(), 2.0, Rng.XS.NextSign(), 1.0);
+    			u2 = Cha.角度ムラ(Rng.XS.NextSign(), 2.0, Rng.XS.NextSign(), 1.0);
+    			u3 = Cha.角度ムラ(Rng.XS.NextSign(), 0.0, Rng.XS.NextSign(), 0.25);
     		}
     		Cha.翼獣左_0(i1, n, num, num2, num3);
     		Cha.翼獣右_0(i2, n, u, u2, u3);
@@ -6619,8 +6619,8 @@ namespace SlaveMatrix
 
     	public static void 両鰭_0(this Character Cha, int n, bool 同角, int i1, int i2)
     	{
-    		double num = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    		double u = ((!同角) ? Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5) : num);
+    		double num = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    		double u = ((!同角) ? Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5) : num);
     		Cha.鰭左_0(i1, n, num);
     		Cha.鰭右_0(i2, n, u);
     	}
@@ -6661,11 +6661,11 @@ namespace SlaveMatrix
     	{
     		foreach (鰭 item in Cha.Body.鰭左)
     		{
-    			item.角度C = a * RNG.XS.NextDouble();
+    			item.角度C = a * Rng.XS.NextDouble();
     		}
     		foreach (鰭 item2 in Cha.Body.鰭右)
     		{
-    			item2.角度C = (0.0 - a) * RNG.XS.NextDouble();
+    			item2.角度C = (0.0 - a) * Rng.XS.NextDouble();
     		}
     	}
 
@@ -6715,8 +6715,8 @@ namespace SlaveMatrix
 
     	public static void 両葉_0(this Character Cha, int n, bool 同角, int i1, int i2)
     	{
-    		double num = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    		double u = ((!同角) ? Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5) : num);
+    		double num = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    		double u = ((!同角) ? Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5) : num);
     		Cha.葉左_0(i1, n, num);
     		Cha.葉右_0(i2, n, u);
     	}
@@ -6757,11 +6757,11 @@ namespace SlaveMatrix
     	{
     		foreach (葉 item in Cha.Body.葉左)
     		{
-    			item.角度C = a * RNG.XS.NextDouble();
+    			item.角度C = a * Rng.XS.NextDouble();
     		}
     		foreach (葉 item2 in Cha.Body.葉右)
     		{
-    			item2.角度C = (0.0 - a) * RNG.XS.NextDouble();
+    			item2.角度C = (0.0 - a) * Rng.XS.NextDouble();
     		}
     	}
 
@@ -6811,8 +6811,8 @@ namespace SlaveMatrix
 
     	public static void 両前翅_0(this Character Cha, int n, bool 同角, int i1, int i2)
     	{
-    		double num = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    		double u = ((!同角) ? Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5) : num);
+    		double num = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    		double u = ((!同角) ? Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5) : num);
     		Cha.前翅左_0(i1, n, num);
     		Cha.前翅右_0(i2, n, u);
     	}
@@ -6853,11 +6853,11 @@ namespace SlaveMatrix
     	{
     		foreach (前翅 item in Cha.Body.前翅1左)
     		{
-    			item.角度C = a * RNG.XS.NextDouble();
+    			item.角度C = a * Rng.XS.NextDouble();
     		}
     		foreach (前翅 item2 in Cha.Body.前翅1右)
     		{
-    			item2.角度C = (0.0 - a) * RNG.XS.NextDouble();
+    			item2.角度C = (0.0 - a) * Rng.XS.NextDouble();
     		}
     	}
 
@@ -7011,8 +7011,8 @@ namespace SlaveMatrix
 
     	public static void 両後翅_0(this Character Cha, int n, bool 同角, int i1, int i2)
     	{
-    		double num = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    		double u = ((!同角) ? Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5) : num);
+    		double num = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    		double u = ((!同角) ? Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5) : num);
     		Cha.後翅左_0(i1, n, num);
     		Cha.後翅右_0(i2, n, u);
     	}
@@ -7053,11 +7053,11 @@ namespace SlaveMatrix
     	{
     		foreach (後翅 item in Cha.Body.後翅1左)
     		{
-    			item.角度C = a * RNG.XS.NextDouble();
+    			item.角度C = a * Rng.XS.NextDouble();
     		}
     		foreach (後翅 item2 in Cha.Body.後翅1右)
     		{
-    			item2.角度C = (0.0 - a) * RNG.XS.NextDouble();
+    			item2.角度C = (0.0 - a) * Rng.XS.NextDouble();
     		}
     	}
 
@@ -7221,12 +7221,12 @@ namespace SlaveMatrix
 
     	public static void 両触肢蜘_0(this Character Cha, int n, bool 同角, int i1, int i2)
     	{
-    		double num = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    		double num2 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    		double num3 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    		double num4 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    		double u = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    		double u2 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
+    		double num = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    		double num2 = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    		double num3 = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    		double num4 = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    		double u = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    		double u2 = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
     		double u3;
     		double u4;
     		double u5;
@@ -7240,12 +7240,12 @@ namespace SlaveMatrix
     		}
     		else
     		{
-    			u3 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    			u4 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    			u5 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    			u6 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    			Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    			Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
+    			u3 = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    			u4 = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    			u5 = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    			u6 = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    			Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    			Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
     		}
     		Cha.触肢蜘左_0(i1, n, num, num2, num3, num4, u, u2);
     		Cha.触肢蜘右_0(i2, n, u3, u4, u5, u6, u, u2);
@@ -7287,21 +7287,21 @@ namespace SlaveMatrix
     	{
     		foreach (触肢_肢蜘 item in Cha.Body.触肢蜘左)
     		{
-    			item.X0Y0_基節.SetAngleCont(a * RNG.XS.NextDouble());
-    			item.X0Y0_転節.SetAngleCont(a * RNG.XS.NextDouble());
-    			item.X0Y0_腿節.SetAngleCont(a * RNG.XS.NextDouble());
-    			item.X0Y0_膝節.SetAngleCont(a * RNG.XS.NextDouble());
-    			item.X0Y0_脛節.SetAngleCont(a * RNG.XS.NextDouble());
-    			item.X0Y0_蹠節.SetAngleCont(a * RNG.XS.NextDouble());
+    			item.X0Y0_基節.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_転節.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_腿節.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_膝節.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_脛節.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_蹠節.SetAngleCont(a * Rng.XS.NextDouble());
     		}
     		foreach (触肢_肢蜘 item2 in Cha.Body.触肢蜘右)
     		{
-    			item2.X0Y0_基節.SetAngleCont((0.0 - a) * RNG.XS.NextDouble());
-    			item2.X0Y0_転節.SetAngleCont((0.0 - a) * RNG.XS.NextDouble());
-    			item2.X0Y0_腿節.SetAngleCont((0.0 - a) * RNG.XS.NextDouble());
-    			item2.X0Y0_膝節.SetAngleCont((0.0 - a) * RNG.XS.NextDouble());
-    			item2.X0Y0_脛節.SetAngleCont((0.0 - a) * RNG.XS.NextDouble());
-    			item2.X0Y0_蹠節.SetAngleCont((0.0 - a) * RNG.XS.NextDouble());
+    			item2.X0Y0_基節.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item2.X0Y0_転節.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item2.X0Y0_腿節.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item2.X0Y0_膝節.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item2.X0Y0_脛節.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item2.X0Y0_蹠節.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
     		}
     	}
 
@@ -7373,12 +7373,12 @@ namespace SlaveMatrix
 
     	public static void 両触肢蠍_0(this Character Cha, int n, bool 同角, int i1, int i2)
     	{
-    		double num = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    		double num2 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    		double num3 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    		double num4 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    		double u = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    		double u2 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
+    		double num = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    		double num2 = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    		double num3 = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    		double num4 = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    		double u = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    		double u2 = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
     		double u3;
     		double u4;
     		double u5;
@@ -7392,12 +7392,12 @@ namespace SlaveMatrix
     		}
     		else
     		{
-    			u3 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    			u4 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    			u5 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    			u6 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    			Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    			Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
+    			u3 = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    			u4 = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    			u5 = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    			u6 = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    			Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    			Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
     		}
     		Cha.触肢蠍左_0(i1, n, num, num2, num3, num4, u, u2);
     		Cha.触肢蠍右_0(i2, n, u3, u4, u5, u6, u, u2);
@@ -7439,24 +7439,24 @@ namespace SlaveMatrix
     	{
     		foreach (触肢_肢蠍 item in Cha.Body.触肢蠍左)
     		{
-    			item.X0Y0_転節.SetAngleCont(a * RNG.XS.NextDouble());
-    			item.X0Y0_腿節.SetAngleCont(a * RNG.XS.NextDouble());
-    			item.X0Y0_膝節.SetAngleCont(a * RNG.XS.NextDouble());
-    			item.X0Y0_爪1.SetAngleCont(a * RNG.XS.NextDouble());
+    			item.X0Y0_転節.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_腿節.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_膝節.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_爪1.SetAngleCont(a * Rng.XS.NextDouble());
     			if (!item.拘束)
     			{
-    				item.X0Y0_爪2.SetAngleCont(a * RNG.XS.NextDouble());
+    				item.X0Y0_爪2.SetAngleCont(a * Rng.XS.NextDouble());
     			}
     		}
     		foreach (触肢_肢蠍 item2 in Cha.Body.触肢蠍右)
     		{
-    			item2.X0Y0_転節.SetAngleCont((0.0 - a) * RNG.XS.NextDouble());
-    			item2.X0Y0_腿節.SetAngleCont((0.0 - a) * RNG.XS.NextDouble());
-    			item2.X0Y0_膝節.SetAngleCont((0.0 - a) * RNG.XS.NextDouble());
-    			item2.X0Y0_爪1.SetAngleCont((0.0 - a) * RNG.XS.NextDouble());
+    			item2.X0Y0_転節.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item2.X0Y0_腿節.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item2.X0Y0_膝節.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item2.X0Y0_爪1.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
     			if (!item2.拘束)
     			{
-    				item2.X0Y0_爪2.SetAngleCont((0.0 - a) * RNG.XS.NextDouble());
+    				item2.X0Y0_爪2.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
     			}
     		}
     	}
@@ -7579,14 +7579,14 @@ namespace SlaveMatrix
 
     	public static void 両節足蜘_0(this Character Cha, int n, bool 同角, int i1, int i2)
     	{
-    		double num = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    		double num2 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    		double num3 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    		double num4 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    		double u = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    		double u2 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    		double u3 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    		double u4 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
+    		double num = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    		double num2 = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    		double num3 = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    		double num4 = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    		double u = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    		double u2 = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    		double u3 = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    		double u4 = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
     		double u5;
     		double u6;
     		double u7;
@@ -7600,14 +7600,14 @@ namespace SlaveMatrix
     		}
     		else
     		{
-    			u5 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    			u6 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    			u7 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    			u8 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    			Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    			Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    			Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    			Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
+    			u5 = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    			u6 = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    			u7 = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    			u8 = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    			Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    			Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    			Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    			Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
     		}
     		Cha.節足蜘左_0(i1, n, num, num2, num3, num4, u, u2, u3, u4);
     		Cha.節足蜘右_0(i2, n, u5, u6, u7, u8, u, u2, u3, u4);
@@ -7649,25 +7649,25 @@ namespace SlaveMatrix
     	{
     		foreach (節足_足蜘 item in Cha.Body.節足蜘左)
     		{
-    			item.X0Y0_基節.SetAngleCont(a * RNG.XS.NextDouble());
-    			item.X0Y0_転節.SetAngleCont(a * RNG.XS.NextDouble());
-    			item.X0Y0_腿節.SetAngleCont(a * RNG.XS.NextDouble());
-    			item.X0Y0_膝節.SetAngleCont(a * RNG.XS.NextDouble());
-    			item.X0Y0_脛節.SetAngleCont(a * RNG.XS.NextDouble());
-    			item.X0Y0_蹠節.SetAngleCont(a * RNG.XS.NextDouble());
-    			item.X0Y0_跗節1.SetAngleCont(a * RNG.XS.NextDouble());
-    			item.X0Y0_跗節2.SetAngleCont(a * RNG.XS.NextDouble());
+    			item.X0Y0_基節.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_転節.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_腿節.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_膝節.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_脛節.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_蹠節.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_跗節1.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_跗節2.SetAngleCont(a * Rng.XS.NextDouble());
     		}
     		foreach (節足_足蜘 item2 in Cha.Body.節足蜘右)
     		{
-    			item2.X0Y0_基節.SetAngleCont((0.0 - a) * RNG.XS.NextDouble());
-    			item2.X0Y0_転節.SetAngleCont((0.0 - a) * RNG.XS.NextDouble());
-    			item2.X0Y0_腿節.SetAngleCont((0.0 - a) * RNG.XS.NextDouble());
-    			item2.X0Y0_膝節.SetAngleCont((0.0 - a) * RNG.XS.NextDouble());
-    			item2.X0Y0_脛節.SetAngleCont((0.0 - a) * RNG.XS.NextDouble());
-    			item2.X0Y0_蹠節.SetAngleCont((0.0 - a) * RNG.XS.NextDouble());
-    			item2.X0Y0_跗節1.SetAngleCont((0.0 - a) * RNG.XS.NextDouble());
-    			item2.X0Y0_跗節2.SetAngleCont((0.0 - a) * RNG.XS.NextDouble());
+    			item2.X0Y0_基節.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item2.X0Y0_転節.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item2.X0Y0_腿節.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item2.X0Y0_膝節.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item2.X0Y0_脛節.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item2.X0Y0_蹠節.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item2.X0Y0_跗節1.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item2.X0Y0_跗節2.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
     		}
     	}
 
@@ -7785,14 +7785,14 @@ namespace SlaveMatrix
 
     	public static void 両節足蠍_0(this Character Cha, int n, bool 同角, int i1, int i2)
     	{
-    		double num = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    		double num2 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    		double num3 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    		double num4 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    		double u = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    		double u2 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    		double u3 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    		double u4 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
+    		double num = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    		double num2 = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    		double num3 = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    		double num4 = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    		double u = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    		double u2 = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    		double u3 = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    		double u4 = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
     		double u5;
     		double u6;
     		double u7;
@@ -7806,14 +7806,14 @@ namespace SlaveMatrix
     		}
     		else
     		{
-    			u5 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    			u6 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    			u7 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    			u8 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    			Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    			Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    			Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    			Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
+    			u5 = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    			u6 = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    			u7 = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    			u8 = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    			Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    			Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    			Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    			Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
     		}
     		Cha.節足蠍左_0(i1, n, num, num2, num3, num4, u, u2, u3, u4);
     		Cha.節足蠍右_0(i2, n, u5, u6, u7, u8, u, u2, u3, u4);
@@ -7855,23 +7855,23 @@ namespace SlaveMatrix
     	{
     		foreach (節足_足蠍 item in Cha.Body.節足蠍左)
     		{
-    			item.X0Y0_転節.SetAngleCont(a * RNG.XS.NextDouble());
-    			item.X0Y0_腿節.SetAngleCont(a * RNG.XS.NextDouble());
-    			item.X0Y0_膝節.SetAngleCont(a * RNG.XS.NextDouble());
-    			item.X0Y0_脛節.SetAngleCont(a * RNG.XS.NextDouble());
-    			item.X0Y0_蹠節.SetAngleCont(a * RNG.XS.NextDouble());
-    			item.X0Y0_跗節1.SetAngleCont(a * RNG.XS.NextDouble());
-    			item.X0Y0_跗節2.SetAngleCont(a * RNG.XS.NextDouble());
+    			item.X0Y0_転節.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_腿節.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_膝節.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_脛節.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_蹠節.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_跗節1.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_跗節2.SetAngleCont(a * Rng.XS.NextDouble());
     		}
     		foreach (節足_足蠍 item2 in Cha.Body.節足蠍右)
     		{
-    			item2.X0Y0_転節.SetAngleCont((0.0 - a) * RNG.XS.NextDouble());
-    			item2.X0Y0_腿節.SetAngleCont((0.0 - a) * RNG.XS.NextDouble());
-    			item2.X0Y0_膝節.SetAngleCont((0.0 - a) * RNG.XS.NextDouble());
-    			item2.X0Y0_脛節.SetAngleCont((0.0 - a) * RNG.XS.NextDouble());
-    			item2.X0Y0_蹠節.SetAngleCont((0.0 - a) * RNG.XS.NextDouble());
-    			item2.X0Y0_跗節1.SetAngleCont((0.0 - a) * RNG.XS.NextDouble());
-    			item2.X0Y0_跗節2.SetAngleCont((0.0 - a) * RNG.XS.NextDouble());
+    			item2.X0Y0_転節.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item2.X0Y0_腿節.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item2.X0Y0_膝節.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item2.X0Y0_脛節.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item2.X0Y0_蹠節.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item2.X0Y0_跗節1.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item2.X0Y0_跗節2.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
     		}
     	}
 
@@ -7959,14 +7959,14 @@ namespace SlaveMatrix
 
     	public static void 両節足百_0(this Character Cha, int n, bool 同角, int i1, int i2)
     	{
-    		double num = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    		double num2 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    		double num3 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    		double num4 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    		double u = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    		double u2 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    		double u3 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    		double u4 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
+    		double num = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    		double num2 = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    		double num3 = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    		double num4 = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    		double u = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    		double u2 = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    		double u3 = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    		double u4 = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
     		double u5;
     		double u6;
     		double u7;
@@ -7980,14 +7980,14 @@ namespace SlaveMatrix
     		}
     		else
     		{
-    			u5 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    			u6 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    			u7 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    			u8 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    			Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    			Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    			Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    			Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
+    			u5 = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    			u6 = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    			u7 = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    			u8 = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    			Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    			Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    			Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    			Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
     		}
     		Cha.節足百左_0(i1, n, num, num2, num3, num4, u, u2, u3, u4);
     		Cha.節足百右_0(i2, n, u5, u6, u7, u8, u, u2, u3, u4);
@@ -8029,23 +8029,23 @@ namespace SlaveMatrix
     	{
     		foreach (節足_足百 item in Cha.Body.節足百左)
     		{
-    			item.X0Y0_基節.SetAngleCont(a * RNG.XS.NextDouble());
-    			item.X0Y0_転節.SetAngleCont(a * RNG.XS.NextDouble());
-    			item.X0Y0_前腿節.SetAngleCont(a * RNG.XS.NextDouble());
-    			item.X0Y0_腿節.SetAngleCont(a * RNG.XS.NextDouble());
-    			item.X0Y0_脛節.SetAngleCont(a * RNG.XS.NextDouble());
-    			item.X0Y0_跗節1.SetAngleCont(a * RNG.XS.NextDouble());
-    			item.X0Y0_跗節2.SetAngleCont(a * RNG.XS.NextDouble());
+    			item.X0Y0_基節.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_転節.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_前腿節.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_腿節.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_脛節.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_跗節1.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_跗節2.SetAngleCont(a * Rng.XS.NextDouble());
     		}
     		foreach (節足_足百 item2 in Cha.Body.節足百右)
     		{
-    			item2.X0Y0_基節.SetAngleCont((0.0 - a) * RNG.XS.NextDouble());
-    			item2.X0Y0_転節.SetAngleCont((0.0 - a) * RNG.XS.NextDouble());
-    			item2.X0Y0_前腿節.SetAngleCont((0.0 - a) * RNG.XS.NextDouble());
-    			item2.X0Y0_腿節.SetAngleCont((0.0 - a) * RNG.XS.NextDouble());
-    			item2.X0Y0_脛節.SetAngleCont((0.0 - a) * RNG.XS.NextDouble());
-    			item2.X0Y0_跗節1.SetAngleCont((0.0 - a) * RNG.XS.NextDouble());
-    			item2.X0Y0_跗節2.SetAngleCont((0.0 - a) * RNG.XS.NextDouble());
+    			item2.X0Y0_基節.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item2.X0Y0_転節.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item2.X0Y0_前腿節.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item2.X0Y0_腿節.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item2.X0Y0_脛節.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item2.X0Y0_跗節1.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item2.X0Y0_跗節2.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
     		}
     	}
 
@@ -8103,11 +8103,11 @@ namespace SlaveMatrix
 
     	public static void 両節尾曳_0(this Character Cha, int n, bool 同角, int i1, int i2)
     	{
-    		double num = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    		double num2 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    		double num3 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    		double num4 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    		double num5 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
+    		double num = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    		double num2 = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    		double num3 = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    		double num4 = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    		double num5 = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
     		double u;
     		double u2;
     		double u3;
@@ -8123,11 +8123,11 @@ namespace SlaveMatrix
     		}
     		else
     		{
-    			u = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    			u2 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    			u3 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    			u4 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    			u5 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
+    			u = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    			u2 = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    			u3 = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    			u4 = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    			u5 = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
     		}
     		Cha.節尾曳左_0(i1, n, num, num2, num3, num4, num5);
     		Cha.節尾曳右_0(i2, n, u, u2, u3, u4, u5);
@@ -8169,19 +8169,19 @@ namespace SlaveMatrix
     	{
     		foreach (節尾_曳航 item in Cha.Body.節尾曳左)
     		{
-    			item.X0Y0_前腿節.SetAngleCont(a * RNG.XS.NextDouble());
-    			item.X0Y0_腿節.SetAngleCont(a * RNG.XS.NextDouble());
-    			item.X0Y0_脛節.SetAngleCont(a * RNG.XS.NextDouble());
-    			item.X0Y0_付節1.SetAngleCont(a * RNG.XS.NextDouble());
-    			item.X0Y0_付節2.SetAngleCont(a * RNG.XS.NextDouble());
+    			item.X0Y0_前腿節.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_腿節.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_脛節.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_付節1.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_付節2.SetAngleCont(a * Rng.XS.NextDouble());
     		}
     		foreach (節尾_曳航 item2 in Cha.Body.節尾曳右)
     		{
-    			item2.X0Y0_前腿節.SetAngleCont((0.0 - a) * RNG.XS.NextDouble());
-    			item2.X0Y0_腿節.SetAngleCont((0.0 - a) * RNG.XS.NextDouble());
-    			item2.X0Y0_脛節.SetAngleCont((0.0 - a) * RNG.XS.NextDouble());
-    			item2.X0Y0_付節1.SetAngleCont((0.0 - a) * RNG.XS.NextDouble());
-    			item2.X0Y0_付節2.SetAngleCont((0.0 - a) * RNG.XS.NextDouble());
+    			item2.X0Y0_前腿節.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item2.X0Y0_腿節.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item2.X0Y0_脛節.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item2.X0Y0_付節1.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item2.X0Y0_付節2.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
     		}
     	}
 
@@ -8231,11 +8231,11 @@ namespace SlaveMatrix
 
     	public static void 両節尾鋏_0(this Character Cha, int n, bool 同角, int i1, int i2)
     	{
-    		double num = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    		double num2 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    		double num3 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    		double num4 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    		double num5 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
+    		double num = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    		double num2 = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    		double num3 = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    		double num4 = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    		double num5 = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
     		double u;
     		double u2;
     		double u3;
@@ -8251,11 +8251,11 @@ namespace SlaveMatrix
     		}
     		else
     		{
-    			u = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    			u2 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    			u3 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    			u4 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    			u5 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
+    			u = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    			u2 = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    			u3 = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    			u4 = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    			u5 = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
     		}
     		Cha.節尾鋏左_0(i1, n, num, num2, num3, num4, num5);
     		Cha.節尾鋏右_0(i2, n, u, u2, u3, u4, u5);
@@ -8297,11 +8297,11 @@ namespace SlaveMatrix
     	{
     		foreach (節尾_鋏 item in Cha.Body.節尾鋏左)
     		{
-    			item.X0Y0_牙.SetAngleCont(a * RNG.XS.NextDouble());
+    			item.X0Y0_牙.SetAngleCont(a * Rng.XS.NextDouble());
     		}
     		foreach (節尾_鋏 item2 in Cha.Body.節尾鋏右)
     		{
-    			item2.X0Y0_牙.SetAngleCont((0.0 - a) * RNG.XS.NextDouble());
+    			item2.X0Y0_牙.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
     		}
     	}
 
@@ -8375,8 +8375,8 @@ namespace SlaveMatrix
 
     	public static void 両虫鎌_0(this Character Cha, int n, bool 同角, int i1, int i2)
     	{
-    		double num = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    		double u = ((!同角) ? Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5) : num);
+    		double num = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    		double u = ((!同角) ? Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5) : num);
     		Cha.虫鎌左_0(i1, n, num);
     		Cha.虫鎌右_0(i2, n, u);
     	}
@@ -8419,14 +8419,14 @@ namespace SlaveMatrix
     		{
     			if (!item.拘束)
     			{
-    				item.角度C = a * RNG.XS.NextDouble();
+    				item.角度C = a * Rng.XS.NextDouble();
     			}
     		}
     		foreach (虫鎌 item2 in Cha.Body.虫鎌右)
     		{
     			if (!item2.拘束)
     			{
-    				item2.角度C = (0.0 - a) * RNG.XS.NextDouble();
+    				item2.角度C = (0.0 - a) * Rng.XS.NextDouble();
     			}
     		}
     	}
@@ -8437,13 +8437,13 @@ namespace SlaveMatrix
     		触手2.SetAngle0();
     		if (angs.Length != 0)
     		{
-    			Par[] array = 触手2.Enum軸().ToArray();
+    			ShapePart[] array = 触手2.Enum軸().ToArray();
     			if (array.Length != 0)
     			{
     				int num = 0;
     				int num2 = array.Length / angs.Length;
     				double num3 = (double)array.Length * 0.1;
-    				foreach (Par item in array.Skip(1))
+    				foreach (ShapePart item in array.Skip(1))
     				{
     					item.SetAngleBase((double)si * (angs[(num / num2).Limit(0, angs.Length)](num) / num3 + u2));
     					num++;
@@ -8487,13 +8487,13 @@ namespace SlaveMatrix
     		触手2.SetAngle0();
     		if (angs.Length != 0)
     		{
-    			Par[] array = 触手2.Enum軸().ToArray();
+    			ShapePart[] array = 触手2.Enum軸().ToArray();
     			if (array.Length != 0)
     			{
     				int num = 0;
     				int num2 = array.Length / angs.Length;
     				double num3 = (double)array.Length * 0.1;
-    				foreach (Par item in array.Skip(1))
+    				foreach (ShapePart item in array.Skip(1))
     				{
     					item.SetAngleBase((double)si * ((0.0 - angs[(num / num2).Limit(0, angs.Length)](num)) / num3 + (0.0 - u2)));
     					num++;
@@ -8558,17 +8558,17 @@ namespace SlaveMatrix
 
     	public static void 両触手_S字(this Character Cha, int n)
     	{
-    		double u = Cha.角度ムラ(RNG.XS.NextSign(), 1.5, RNG.XS.NextSign(), 0.75);
-    		double u2 = Cha.角度ムラ(RNG.XS.NextSign(), 1.5, RNG.XS.NextSign(), 0.75);
-    		double u3 = Cha.角度ムラ(RNG.XS.NextSign(), 1.5, RNG.XS.NextSign(), 0.75);
-    		int s = RNG.XS.NextSign();
+    		double u = Cha.角度ムラ(Rng.XS.NextSign(), 1.5, Rng.XS.NextSign(), 0.75);
+    		double u2 = Cha.角度ムラ(Rng.XS.NextSign(), 1.5, Rng.XS.NextSign(), 0.75);
+    		double u3 = Cha.角度ムラ(Rng.XS.NextSign(), 1.5, Rng.XS.NextSign(), 0.75);
+    		int s = Rng.XS.NextSign();
     		Cha.触手_S字左(n, s, u, u2, u3);
     		Cha.触手_S字右(n, s, u, u2, u3);
     	}
 
     	public static void 両触手_0(this Character Cha, int n, int i2)
     	{
-    		Cha.触手右_0(i2, n, RNG.XS.NextSign(), Cha.角度ムラ(RNG.XS.NextSign(), 1.5, RNG.XS.NextSign(), 0.25), Cha.角度ムラ(RNG.XS.NextSign(), 1.5, RNG.XS.NextSign(), 0.25), Cha.角度ムラ(RNG.XS.NextSign(), 1.5, RNG.XS.NextSign(), 0.25));
+    		Cha.触手右_0(i2, n, Rng.XS.NextSign(), Cha.角度ムラ(Rng.XS.NextSign(), 1.5, Rng.XS.NextSign(), 0.25), Cha.角度ムラ(Rng.XS.NextSign(), 1.5, Rng.XS.NextSign(), 0.25), Cha.角度ムラ(Rng.XS.NextSign(), 1.5, Rng.XS.NextSign(), 0.25));
     	}
 
     	public static void 触手右_0(this Character c, int i, int n, int s, double u1, double u2, double u3)
@@ -8594,39 +8594,39 @@ namespace SlaveMatrix
     	{
     		foreach (触手 item in Cha.Body.触手左)
     		{
-    			foreach (Par item2 in item.Enum軸())
+    			foreach (ShapePart item2 in item.Enum軸())
     			{
-    				item2.SetAngleCont(a * RNG.XS.NextDouble());
+    				item2.SetAngleCont(a * Rng.XS.NextDouble());
     			}
     			if (!item.拘束 && item is 触手_蔦)
     			{
     				触手_蔦 触手_蔦2 = (触手_蔦)item;
     				if (触手_蔦2.先端_上顎_顎_表示)
     				{
-    					触手_蔦2.X0Y0_先端_上顎_顎.SetAngleCont(a * RNG.XS.NextDouble());
+    					触手_蔦2.X0Y0_先端_上顎_顎.SetAngleCont(a * Rng.XS.NextDouble());
     				}
     				if (触手_蔦2.先端_下顎_顎_表示)
     				{
-    					触手_蔦2.X0Y0_先端_下顎_顎.SetAngleCont((0.0 - a) * RNG.XS.NextDouble());
+    					触手_蔦2.X0Y0_先端_下顎_顎.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
     				}
     			}
     		}
     		foreach (触手 item3 in Cha.Body.触手右)
     		{
-    			foreach (Par item4 in item3.Enum軸())
+    			foreach (ShapePart item4 in item3.Enum軸())
     			{
-    				item4.SetAngleCont((0.0 - a) * RNG.XS.NextDouble());
+    				item4.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
     			}
     			if (!item3.拘束 && item3 is 触手_蔦)
     			{
     				触手_蔦 触手_蔦3 = (触手_蔦)item3;
     				if (触手_蔦3.先端_上顎_顎_表示)
     				{
-    					触手_蔦3.X0Y0_先端_上顎_顎.SetAngleCont((0.0 - a) * RNG.XS.NextDouble());
+    					触手_蔦3.X0Y0_先端_上顎_顎.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
     				}
     				if (触手_蔦3.先端_下顎_顎_表示)
     				{
-    					触手_蔦3.X0Y0_先端_下顎_顎.SetAngleCont(a * RNG.XS.NextDouble());
+    					触手_蔦3.X0Y0_先端_下顎_顎.SetAngleCont(a * Rng.XS.NextDouble());
     				}
     			}
     		}
@@ -8667,13 +8667,13 @@ namespace SlaveMatrix
     		触手_犬2.X0Y0_脚前_手_小指_指.SetAngleBase(触手_犬2.X0Y0_脚前_手_小指_指.GetAngleBase() + (30.0 * 開指 + u5));
     		if (angs.Length != 0)
     		{
-    			Par[] array = 触手_犬2.Enum軸().ToArray();
+    			ShapePart[] array = 触手_犬2.Enum軸().ToArray();
     			if (array.Length != 0)
     			{
     				int num = 0;
     				int num2 = array.Length / angs.Length;
     				double num3 = (double)array.Length * 0.1;
-    				foreach (Par item in array.Skip(1))
+    				foreach (ShapePart item in array.Skip(1))
     				{
     					item.SetAngleBase(item.GetAngleBase() + ((0.0 - angs[(num / num2).Limit(0, angs.Length)](num)) / num3 + (0.0 - u7)));
     					num++;
@@ -8706,7 +8706,7 @@ namespace SlaveMatrix
 
     	public static void 両触手犬_0(this Character Cha, int n, int i2)
     	{
-    		Cha.触手犬右_0(i2, n, Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5), Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5), Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5), Cha.角度ムラ(RNG.XS.NextSign(), 0.5, RNG.XS.NextSign(), 0.5), Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5), Cha.角度ムラ(RNG.XS.NextSign(), 1.0, RNG.XS.NextSign(), 0.5), Cha.角度ムラ(RNG.XS.NextSign(), 1.0, RNG.XS.NextSign(), 0.5));
+    		Cha.触手犬右_0(i2, n, Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5), Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5), Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5), Cha.角度ムラ(Rng.XS.NextSign(), 0.5, Rng.XS.NextSign(), 0.5), Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5), Cha.角度ムラ(Rng.XS.NextSign(), 1.0, Rng.XS.NextSign(), 0.5), Cha.角度ムラ(Rng.XS.NextSign(), 1.0, Rng.XS.NextSign(), 0.5));
     	}
 
     	public static void 触手犬右_0(this Character c, int i, int n, double u1, double u2, double u3, double u4, double u5, double u6, double u7)
@@ -8732,64 +8732,64 @@ namespace SlaveMatrix
     	{
     		foreach (触手_犬 item in Cha.Body.触手犬左)
     		{
-    			item.X0Y0_脚後_UpperArm.SetAngleCont(a * RNG.XS.NextDouble());
-    			item.X0Y0_脚前_UpperArm.SetAngleCont(a * RNG.XS.NextDouble());
-    			item.X0Y0_頭_口膜_口膜1.SetAngleCont(a * RNG.XS.NextDouble());
-    			item.X0Y0_脚後_UpperArm.SetAngleCont(a * RNG.XS.NextDouble());
-    			item.X0Y0_脚後_LowerArm.SetAngleCont(a * RNG.XS.NextDouble());
-    			item.X0Y0_脚後_手_手.SetAngleCont(a * RNG.XS.NextDouble());
-    			item.X0Y0_脚前_UpperArm.SetAngleCont(a * RNG.XS.NextDouble());
-    			item.X0Y0_脚前_LowerArm.SetAngleCont(a * RNG.XS.NextDouble());
-    			item.X0Y0_脚前_手_手.SetAngleCont(a * RNG.XS.NextDouble());
+    			item.X0Y0_脚後_UpperArm.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_脚前_UpperArm.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_頭_口膜_口膜1.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_脚後_UpperArm.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_脚後_LowerArm.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_脚後_手_手.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_脚前_UpperArm.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_脚前_LowerArm.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_脚前_手_手.SetAngleCont(a * Rng.XS.NextDouble());
     			if (!item.拘束)
     			{
-    				item.X0Y0_頭_上顎_眼下_眼下.SetAngleCont(a * RNG.XS.NextDouble());
-    				item.X0Y0_頭_下顎_眼下_眼下.SetAngleCont(a * RNG.XS.NextDouble());
+    				item.X0Y0_頭_上顎_眼下_眼下.SetAngleCont(a * Rng.XS.NextDouble());
+    				item.X0Y0_頭_下顎_眼下_眼下.SetAngleCont(a * Rng.XS.NextDouble());
     			}
-    			item.X0Y0_脚後_手_親指_爪.SetAngleCont(a * RNG.XS.NextDouble());
-    			item.X0Y0_脚後_手_人指_指.SetAngleCont(a * RNG.XS.NextDouble());
-    			item.X0Y0_脚後_手_中指_指.SetAngleCont(a * RNG.XS.NextDouble());
-    			item.X0Y0_脚後_手_薬指_指.SetAngleCont(a * RNG.XS.NextDouble());
-    			item.X0Y0_脚後_手_小指_指.SetAngleCont(a * RNG.XS.NextDouble());
-    			item.X0Y0_脚前_手_親指_爪.SetAngleCont(a * RNG.XS.NextDouble());
-    			item.X0Y0_脚前_手_人指_指.SetAngleCont(a * RNG.XS.NextDouble());
-    			item.X0Y0_脚前_手_中指_指.SetAngleCont(a * RNG.XS.NextDouble());
-    			item.X0Y0_脚前_手_薬指_指.SetAngleCont(a * RNG.XS.NextDouble());
-    			item.X0Y0_脚前_手_小指_指.SetAngleCont(a * RNG.XS.NextDouble());
-    			foreach (Par item2 in item.Enum軸())
+    			item.X0Y0_脚後_手_親指_爪.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_脚後_手_人指_指.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_脚後_手_中指_指.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_脚後_手_薬指_指.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_脚後_手_小指_指.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_脚前_手_親指_爪.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_脚前_手_人指_指.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_脚前_手_中指_指.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_脚前_手_薬指_指.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_脚前_手_小指_指.SetAngleCont(a * Rng.XS.NextDouble());
+    			foreach (ShapePart item2 in item.Enum軸())
     			{
-    				item2.SetAngleCont(a * RNG.XS.NextDouble());
+    				item2.SetAngleCont(a * Rng.XS.NextDouble());
     			}
     		}
     		foreach (触手_犬 item3 in Cha.Body.触手犬右)
     		{
-    			item3.X0Y0_脚後_UpperArm.SetAngleCont((0.0 - a) * RNG.XS.NextDouble());
-    			item3.X0Y0_脚前_UpperArm.SetAngleCont((0.0 - a) * RNG.XS.NextDouble());
-    			item3.X0Y0_頭_口膜_口膜1.SetAngleCont((0.0 - a) * RNG.XS.NextDouble());
-    			item3.X0Y0_脚後_UpperArm.SetAngleCont((0.0 - a) * RNG.XS.NextDouble());
-    			item3.X0Y0_脚後_LowerArm.SetAngleCont((0.0 - a) * RNG.XS.NextDouble());
-    			item3.X0Y0_脚後_手_手.SetAngleCont((0.0 - a) * RNG.XS.NextDouble());
-    			item3.X0Y0_脚前_UpperArm.SetAngleCont((0.0 - a) * RNG.XS.NextDouble());
-    			item3.X0Y0_脚前_LowerArm.SetAngleCont((0.0 - a) * RNG.XS.NextDouble());
-    			item3.X0Y0_脚前_手_手.SetAngleCont((0.0 - a) * RNG.XS.NextDouble());
+    			item3.X0Y0_脚後_UpperArm.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item3.X0Y0_脚前_UpperArm.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item3.X0Y0_頭_口膜_口膜1.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item3.X0Y0_脚後_UpperArm.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item3.X0Y0_脚後_LowerArm.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item3.X0Y0_脚後_手_手.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item3.X0Y0_脚前_UpperArm.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item3.X0Y0_脚前_LowerArm.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item3.X0Y0_脚前_手_手.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
     			if (!item3.拘束)
     			{
-    				item3.X0Y0_頭_上顎_眼下_眼下.SetAngleCont((0.0 - a) * RNG.XS.NextDouble());
-    				item3.X0Y0_頭_下顎_眼下_眼下.SetAngleCont((0.0 - a) * RNG.XS.NextDouble());
+    				item3.X0Y0_頭_上顎_眼下_眼下.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    				item3.X0Y0_頭_下顎_眼下_眼下.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
     			}
-    			item3.X0Y0_脚後_手_親指_爪.SetAngleCont((0.0 - a) * RNG.XS.NextDouble());
-    			item3.X0Y0_脚後_手_人指_指.SetAngleCont((0.0 - a) * RNG.XS.NextDouble());
-    			item3.X0Y0_脚後_手_中指_指.SetAngleCont((0.0 - a) * RNG.XS.NextDouble());
-    			item3.X0Y0_脚後_手_薬指_指.SetAngleCont((0.0 - a) * RNG.XS.NextDouble());
-    			item3.X0Y0_脚後_手_小指_指.SetAngleCont((0.0 - a) * RNG.XS.NextDouble());
-    			item3.X0Y0_脚前_手_親指_爪.SetAngleCont((0.0 - a) * RNG.XS.NextDouble());
-    			item3.X0Y0_脚前_手_人指_指.SetAngleCont((0.0 - a) * RNG.XS.NextDouble());
-    			item3.X0Y0_脚前_手_中指_指.SetAngleCont((0.0 - a) * RNG.XS.NextDouble());
-    			item3.X0Y0_脚前_手_薬指_指.SetAngleCont((0.0 - a) * RNG.XS.NextDouble());
-    			item3.X0Y0_脚前_手_小指_指.SetAngleCont((0.0 - a) * RNG.XS.NextDouble());
-    			foreach (Par item4 in item3.Enum軸())
+    			item3.X0Y0_脚後_手_親指_爪.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item3.X0Y0_脚後_手_人指_指.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item3.X0Y0_脚後_手_中指_指.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item3.X0Y0_脚後_手_薬指_指.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item3.X0Y0_脚後_手_小指_指.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item3.X0Y0_脚前_手_親指_爪.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item3.X0Y0_脚前_手_人指_指.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item3.X0Y0_脚前_手_中指_指.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item3.X0Y0_脚前_手_薬指_指.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item3.X0Y0_脚前_手_小指_指.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			foreach (ShapePart item4 in item3.Enum軸())
     			{
-    				item4.SetAngleCont((0.0 - a) * RNG.XS.NextDouble());
+    				item4.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
     			}
     		}
     	}
@@ -8803,7 +8803,7 @@ namespace SlaveMatrix
     			return;
     		}
     		尾2.SetAngle0();
-    		Par[] array = 尾2.Enum軸().ToArray();
+    		ShapePart[] array = 尾2.Enum軸().ToArray();
     		double num = ((尾2 is 尾_蟲) ? 0.3 : 1.0);
     		if (angs.Length != 0 && array.Length != 0)
     		{
@@ -8814,8 +8814,8 @@ namespace SlaveMatrix
     				num3 = 1;
     			}
     			double num4 = (double)array.Length * 0.1;
-    			double num5 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    			Par[] array2 = array;
+    			double num5 = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    			ShapePart[] array2 = array;
     			for (int i = 0; i < array2.Length; i++)
     			{
     				array2[i].SetAngleBase(((double)s * angs[(num2 / num3).Limit(0, angs.Length)](num2) / num4 + num5) * num);
@@ -8827,13 +8827,13 @@ namespace SlaveMatrix
     			}
     			else
     			{
-    				array[0].SetAngleBase(根本角度 + Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5));
+    				array[0].SetAngleBase(根本角度 + Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5));
     			}
     		}
     		if (text.Contains("後髪0_肢系"))
     		{
     			double num6 = 1.0;
-    			foreach (Par item in array.Take(array.Length / 2))
+    			foreach (ShapePart item in array.Take(array.Length / 2))
     			{
     				item.SetAngleBase(item.GetAngleBase() / num6 * num);
     				num6 += 1.0;
@@ -8842,11 +8842,11 @@ namespace SlaveMatrix
     		尾鰭_魚 ele = 尾2.EnumEle().GetEle<尾鰭_魚>();
     		if (ele != null)
     		{
-    			ele.展開 = 展開 * Cha.CharacterData.固有値 * RNG.XS.NextDouble();
+    			ele.展開 = 展開 * Cha.CharacterData.固有値 * Rng.XS.NextDouble();
     		}
     		else if (尾2 is 尾_鳥)
     		{
-    			((尾_鳥)尾2).展開 = 展開 * Cha.CharacterData.固有値 * RNG.XS.NextDouble();
+    			((尾_鳥)尾2).展開 = 展開 * Cha.CharacterData.固有値 * Rng.XS.NextDouble();
     		}
     		if (尾2.EnumEle().IsEle<尾鰭>())
     		{
@@ -8856,22 +8856,22 @@ namespace SlaveMatrix
 
     	public static void 尾_基本(this Character Cha, int n)
     	{
-    		Cha.尾(n, RNG.XS.NextSign(), RNG.XS.NextDouble(), 0.0);
+    		Cha.尾(n, Rng.XS.NextSign(), Rng.XS.NextDouble(), 0.0);
     	}
 
     	public static void 尾_S字(this Character Cha, int n)
     	{
-    		Cha.尾(n, RNG.XS.NextSign(), 0.5, 10.0.GetRanAngle(), (int i) => 25.0, (int i) => -25.0);
+    		Cha.尾(n, Rng.XS.NextSign(), 0.5, 10.0.GetRanAngle(), (int i) => 25.0, (int i) => -25.0);
     	}
 
     	public static void 尾_波(this Character Cha, int n)
     	{
-    		Cha.尾(n, RNG.XS.NextSign(), 0.5, 10.0.GetRanAngle(), (int i) => System.Math.Sin(i) * 40.0);
+    		Cha.尾(n, Rng.XS.NextSign(), 0.5, 10.0.GetRanAngle(), (int i) => System.Math.Sin(i) * 40.0);
     	}
 
     	public static void 尾_ピーン(this Character Cha, int n)
     	{
-    		Cha.尾(n, RNG.XS.NextSign(), 1.0, 10.0.GetRanAngle(), (int i) => 0.0, (int i) => 25.0.GetRanAngle());
+    		Cha.尾(n, Rng.XS.NextSign(), 1.0, 10.0.GetRanAngle(), (int i) => 0.0, (int i) => 25.0.GetRanAngle());
     	}
 
     	public static void 尾_0(this Character c, int n, int i)
@@ -8895,14 +8895,14 @@ namespace SlaveMatrix
 
     	public static void 尾絶頂(this Character Cha, double a)
     	{
-    		double 展開 = a * 0.015 * RNG.XS.NextDouble();
+    		double 展開 = a * 0.015 * Rng.XS.NextDouble();
     		foreach (尾 item in Cha.Body.尾)
     		{
     			if (item.右)
     			{
-    				foreach (Par item2 in item.Enum軸())
+    				foreach (ShapePart item2 in item.Enum軸())
     				{
-    					item2.SetAngleCont((0.0 - a) * RNG.XS.NextDouble());
+    					item2.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
     				}
     				尾鰭_魚 ele = item.EnumEle().GetEle<尾鰭_魚>();
     				if (ele != null)
@@ -8915,9 +8915,9 @@ namespace SlaveMatrix
     				}
     				continue;
     			}
-    			foreach (Par item3 in item.Enum軸())
+    			foreach (ShapePart item3 in item.Enum軸())
     			{
-    				item3.SetAngleCont(a * RNG.XS.NextDouble());
+    				item3.SetAngleCont(a * Rng.XS.NextDouble());
     			}
     			尾鰭_魚 ele2 = item.EnumEle().GetEle<尾鰭_魚>();
     			if (ele2 != null)
@@ -8944,7 +8944,7 @@ namespace SlaveMatrix
     			num2 = 1;
     		}
     		double num3 = (double)Cha.Body.長胴n * 0.1;
-    		double num4 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
+    		double num4 = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
     		foreach (長胴 item in Cha.Body.長胴.Skip(1))
     		{
     			item.角度B = (double)si * angs[(num / num2).Limit(0, angs.Length)](num) / num3 + num4;
@@ -8954,19 +8954,19 @@ namespace SlaveMatrix
 
     	public static void 長胴_基本(this Character Cha)
     	{
-    		Cha.長胴(RNG.XS.NextSign(), (int i) => 4.0.GetRanAngle());
+    		Cha.長胴(Rng.XS.NextSign(), (int i) => 4.0.GetRanAngle());
     	}
 
     	public static void 魚(this Character Cha, int s, params Func<int, double>[] angs)
     	{
-    		Par[] array = Cha.Body.魚.軸列挙().ToArray();
+    		ShapePart[] array = Cha.Body.魚.軸列挙().ToArray();
     		if (angs.Length != 0)
     		{
     			int num = 0;
     			int num2 = array.Length / angs.Length;
     			double num3 = (double)array.Length * 0.1;
-    			double num4 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    			Par[] array2 = array;
+    			double num4 = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    			ShapePart[] array2 = array;
     			for (int i = 0; i < array2.Length; i++)
     			{
     				array2[i].SetAngleBase((double)s * angs[(num / num2).Limit(0, angs.Length)](num) / num3 + num4);
@@ -8977,22 +8977,22 @@ namespace SlaveMatrix
 
     	public static void 魚_基本(this Character Cha)
     	{
-    		Cha.魚(RNG.XS.NextSign(), (int i) => 5.0.GetRanAngle());
+    		Cha.魚(Rng.XS.NextSign(), (int i) => 5.0.GetRanAngle());
     	}
 
     	public static void 魚_S字(this Character Cha)
     	{
-    		Cha.魚(RNG.XS.NextSign(), (int i) => 5.0, (int i) => -5.0);
+    		Cha.魚(Rng.XS.NextSign(), (int i) => 5.0, (int i) => -5.0);
     	}
 
     	public static void 魚_波(this Character Cha)
     	{
-    		Cha.魚(RNG.XS.NextSign(), (int i) => System.Math.Sin(i) * 5.0);
+    		Cha.魚(Rng.XS.NextSign(), (int i) => System.Math.Sin(i) * 5.0);
     	}
 
     	public static void 魚_ピーン(this Character Cha)
     	{
-    		Cha.魚(RNG.XS.NextSign(), (int i) => 0.0, (int i) => 5.0.GetRanAngle());
+    		Cha.魚(Rng.XS.NextSign(), (int i) => 0.0, (int i) => 5.0.GetRanAngle());
     	}
 
     	public static void 魚_0(this Character c, int i)
@@ -9016,14 +9016,14 @@ namespace SlaveMatrix
 
     	public static void 鯨(this Character Cha, int s, params Func<int, double>[] angs)
     	{
-    		Par[] array = Cha.Body.鯨.軸列挙().ToArray();
+    		ShapePart[] array = Cha.Body.鯨.軸列挙().ToArray();
     		if (angs.Length != 0)
     		{
     			int num = 0;
     			int num2 = array.Length / angs.Length;
     			double num3 = (double)array.Length * 0.1;
-    			double num4 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    			Par[] array2 = array;
+    			double num4 = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    			ShapePart[] array2 = array;
     			for (int i = 0; i < array2.Length; i++)
     			{
     				array2[i].SetAngleBase((double)s * angs[(num / num2).Limit(0, angs.Length)](num) / num3 + num4);
@@ -9034,22 +9034,22 @@ namespace SlaveMatrix
 
     	public static void 鯨_基本(this Character Cha)
     	{
-    		Cha.鯨(RNG.XS.NextSign(), (int i) => 5.0.GetRanAngle());
+    		Cha.鯨(Rng.XS.NextSign(), (int i) => 5.0.GetRanAngle());
     	}
 
     	public static void 鯨_S字(this Character Cha)
     	{
-    		Cha.鯨(RNG.XS.NextSign(), (int i) => 5.0, (int i) => -5.0);
+    		Cha.鯨(Rng.XS.NextSign(), (int i) => 5.0, (int i) => -5.0);
     	}
 
     	public static void 鯨_波(this Character Cha)
     	{
-    		Cha.鯨(RNG.XS.NextSign(), (int i) => System.Math.Sin(i) * 5.0);
+    		Cha.鯨(Rng.XS.NextSign(), (int i) => System.Math.Sin(i) * 5.0);
     	}
 
     	public static void 鯨_ピーン(this Character Cha)
     	{
-    		Cha.鯨(RNG.XS.NextSign(), (int i) => 0.0, (int i) => 5.0.GetRanAngle());
+    		Cha.鯨(Rng.XS.NextSign(), (int i) => 0.0, (int i) => 5.0.GetRanAngle());
     	}
 
     	public static void 鯨_0(this Character c, int i)
@@ -9073,14 +9073,14 @@ namespace SlaveMatrix
 
     	public static void 蠍(this Character Cha, int s, params Func<int, double>[] angs)
     	{
-    		Par[] array = Cha.Body.蠍.軸列挙().ToArray();
+    		ShapePart[] array = Cha.Body.蠍.軸列挙().ToArray();
     		if (angs.Length != 0)
     		{
     			int num = 0;
     			int num2 = array.Length / angs.Length;
     			double num3 = (double)array.Length * 0.1;
-    			double num4 = Cha.角度ムラ(RNG.XS.NextSign(), 3.0, RNG.XS.NextSign(), 1.5);
-    			Par[] array2 = array;
+    			double num4 = Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    			ShapePart[] array2 = array;
     			for (int i = 0; i < array2.Length; i++)
     			{
     				array2[i].SetAngleBase((double)s * angs[(num / num2).Limit(0, angs.Length)](num) / num3 + num4);
@@ -9091,22 +9091,22 @@ namespace SlaveMatrix
 
     	public static void 蠍_基本(this Character Cha)
     	{
-    		Cha.蠍(RNG.XS.NextSign(), (int i) => 5.0.GetRanAngle());
+    		Cha.蠍(Rng.XS.NextSign(), (int i) => 5.0.GetRanAngle());
     	}
 
     	public static void 蠍_S字(this Character Cha)
     	{
-    		Cha.蠍(RNG.XS.NextSign(), (int i) => 5.0, (int i) => -5.0);
+    		Cha.蠍(Rng.XS.NextSign(), (int i) => 5.0, (int i) => -5.0);
     	}
 
     	public static void 蠍_波(this Character Cha)
     	{
-    		Cha.蠍(RNG.XS.NextSign(), (int i) => System.Math.Sin(i) * 5.0);
+    		Cha.蠍(Rng.XS.NextSign(), (int i) => System.Math.Sin(i) * 5.0);
     	}
 
     	public static void 蠍_ピーン(this Character Cha)
     	{
-    		Cha.蠍(RNG.XS.NextSign(), (int i) => 0.0, (int i) => 5.0.GetRanAngle());
+    		Cha.蠍(Rng.XS.NextSign(), (int i) => 0.0, (int i) => 5.0.GetRanAngle());
     	}
 
     	public static void 蠍_0(this Character c, int i)
@@ -9130,23 +9130,23 @@ namespace SlaveMatrix
 
     	public static void 植(this Character Cha, int si, double 角度)
     	{
-    		Cha.Body.植.X0Y0_幹下.SetAngleBase((double)si * 角度 + Cha.角度ムラ(RNG.XS.NextSign(), 10.0, RNG.XS.NextSign(), 5.0));
+    		Cha.Body.植.X0Y0_幹下.SetAngleBase((double)si * 角度 + Cha.角度ムラ(Rng.XS.NextSign(), 10.0, Rng.XS.NextSign(), 5.0));
     	}
 
     	public static void 植_基本(this Character Cha)
     	{
-    		Cha.植(RNG.XS.NextSign(), 5.0.GetRanAngle());
+    		Cha.植(Rng.XS.NextSign(), 5.0.GetRanAngle());
     	}
 
     	public static void 植絶頂(this Character Cha, double a)
     	{
     		if (Cha.Body.植.右)
     		{
-    			Cha.Body.植.X0Y0_幹下.SetAngleCont((0.0 - a) * RNG.XS.NextDouble());
+    			Cha.Body.植.X0Y0_幹下.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
     		}
     		else
     		{
-    			Cha.Body.植.X0Y0_幹下.SetAngleCont(a * RNG.XS.NextDouble());
+    			Cha.Body.植.X0Y0_幹下.SetAngleCont(a * Rng.XS.NextDouble());
     		}
     	}
 
@@ -9279,7 +9279,7 @@ namespace SlaveMatrix
 
     	public static void UpdateExpression(this Character c)
     	{
-    		switch (RNG.XS.Next(6))
+    		switch (Rng.XS.Next(6))
     		{
     		case 0:
     			c.眉();
@@ -9309,8 +9309,8 @@ namespace SlaveMatrix
     		{
     			if (状態 == EmotionType.Acceptance || 状態 == EmotionType.Desire || 状態 == EmotionType.Excitement || 状態 == EmotionType.余裕 || 状態 == EmotionType.Happiness || 状態 == EmotionType.Joy || 状態 == EmotionType.Lewd || 状態 == EmotionType.Other)
     			{
-    				int num = 眉_0感情対応[状態][RNG.XS.Next(眉_0感情対応[状態].Count)];
-    				c.両眉_0(RNG.XS.NextBool(), num, num switch
+    				int num = 眉_0感情対応[状態][Rng.XS.Next(眉_0感情対応[状態].Count)];
+    				c.両眉_0(Rng.XS.NextBool(), num, num switch
     				{
     					4 => 3, 
     					3 => 4, 
@@ -9318,19 +9318,19 @@ namespace SlaveMatrix
     					1 => 2, 
     					_ => num, 
     				});
-    				num = 眉_1感情対応[状態][RNG.XS.Next(眉_1感情対応[状態].Count)];
+    				num = 眉_1感情対応[状態][Rng.XS.Next(眉_1感情対応[状態].Count)];
     				c.両眉_1(num, num);
     			}
     			else
     			{
-    				c.両眉_0(RNG.XS.NextBool(), 眉_0感情対応[状態][RNG.XS.Next(眉_0感情対応[状態].Count)], 眉_0感情対応[状態][RNG.XS.Next(眉_0感情対応[状態].Count)]);
-    				c.両眉_1(眉_1感情対応[状態][RNG.XS.Next(眉_1感情対応[状態].Count)], 眉_1感情対応[状態][RNG.XS.Next(眉_1感情対応[状態].Count)]);
+    				c.両眉_0(Rng.XS.NextBool(), 眉_0感情対応[状態][Rng.XS.Next(眉_0感情対応[状態].Count)], 眉_0感情対応[状態][Rng.XS.Next(眉_0感情対応[状態].Count)]);
+    				c.両眉_1(眉_1感情対応[状態][Rng.XS.Next(眉_1感情対応[状態].Count)], 眉_1感情対応[状態][Rng.XS.Next(眉_1感情対応[状態].Count)]);
     			}
     		}
     		else if (c.Body.Is単眉)
     		{
-    			c.単眉_0(単眉_0感情対応[状態][RNG.XS.Next(単眉_0感情対応[状態].Count)]);
-    			c.単眉_1(単眉_1感情対応[状態][RNG.XS.Next(単眉_1感情対応[状態].Count)]);
+    			c.単眉_0(単眉_0感情対応[状態][Rng.XS.Next(単眉_0感情対応[状態].Count)]);
+    			c.単眉_1(単眉_1感情対応[状態][Rng.XS.Next(単眉_1感情対応[状態].Count)]);
     		}
     	}
 
@@ -9339,7 +9339,7 @@ namespace SlaveMatrix
     		EmotionType 状態 = c.CharacterData.Emotion;
     		if (c.Body.IsDualEyes || c.Body.IsSingleEye || c.Body.IsCheekEyes || c.Body.IsForeheadEye)
     		{
-    			int num = 目_0感情対応[状態][RNG.XS.Next(目_0感情対応[状態].Count)];
+    			int num = 目_0感情対応[状態][Rng.XS.Next(目_0感情対応[状態].Count)];
     			if (c.CharacterData.Stamina < 0.3 && c.CharacterData.Sensitivity > 0.8 && c.CharacterData.Excitement > 0.8 && c.CharacterData.Taming > 0.8 && 0.5.Lot())
     			{
     				num = 3;
@@ -9368,27 +9368,27 @@ namespace SlaveMatrix
     		EmotionType 状態 = c.CharacterData.Emotion;
     		if (c.Body.IsDualEyes)
     		{
-    			int num = 瞼_0感情対応[状態][RNG.XS.Next(瞼_0感情対応[状態].Count)];
+    			int num = 瞼_0感情対応[状態][Rng.XS.Next(瞼_0感情対応[状態].Count)];
     			c.両瞼_0(num, num);
-    			int num2 = (c.Body.目隠帯_表示 ? 3 : 瞼_1感情対応[状態][RNG.XS.Next(瞼_1感情対応[状態].Count)]);
+    			int num2 = (c.Body.目隠帯_表示 ? 3 : 瞼_1感情対応[状態][Rng.XS.Next(瞼_1感情対応[状態].Count)]);
     			c.両瞼_1(num2, num2);
     		}
     		else if (c.Body.IsSingleEye)
     		{
-    			c.単瞼_0(単瞼_0感情対応[状態][RNG.XS.Next(単瞼_0感情対応[状態].Count)]);
-    			c.単瞼_1(c.Body.目隠帯_表示 ? 3 : 単瞼_1感情対応[状態][RNG.XS.Next(単瞼_1感情対応[状態].Count)]);
+    			c.単瞼_0(単瞼_0感情対応[状態][Rng.XS.Next(単瞼_0感情対応[状態].Count)]);
+    			c.単瞼_1(c.Body.目隠帯_表示 ? 3 : 単瞼_1感情対応[状態][Rng.XS.Next(単瞼_1感情対応[状態].Count)]);
     		}
     		if (c.Body.IsCheekEyes)
     		{
-    			int num = 頬瞼_0感情対応[状態][RNG.XS.Next(頬瞼_0感情対応[状態].Count)];
+    			int num = 頬瞼_0感情対応[状態][Rng.XS.Next(頬瞼_0感情対応[状態].Count)];
     			c.両頬瞼_0(num, num);
-    			int num2 = (c.Body.目隠帯_表示 ? 3 : 頬瞼_1感情対応[状態][RNG.XS.Next(頬瞼_1感情対応[状態].Count)]);
+    			int num2 = (c.Body.目隠帯_表示 ? 3 : 頬瞼_1感情対応[状態][Rng.XS.Next(頬瞼_1感情対応[状態].Count)]);
     			c.両頬瞼_1(num2, num2);
     		}
     		if (c.Body.IsForeheadEye)
     		{
-    			c.額瞼_0(額瞼_0感情対応[状態][RNG.XS.Next(額瞼_0感情対応[状態].Count)]);
-    			c.額瞼_1(c.Body.目隠帯_表示 ? 3 : 額瞼_1感情対応[状態][RNG.XS.Next(額瞼_1感情対応[状態].Count)]);
+    			c.額瞼_0(額瞼_0感情対応[状態][Rng.XS.Next(額瞼_0感情対応[状態].Count)]);
+    			c.額瞼_1(c.Body.目隠帯_表示 ? 3 : 額瞼_1感情対応[状態][Rng.XS.Next(額瞼_1感情対応[状態].Count)]);
     		}
     	}
 
@@ -9397,7 +9397,7 @@ namespace SlaveMatrix
     		EmotionType 状態 = c.CharacterData.Emotion;
     		if (!Player.UI.Is口挿入 && !c.Body.玉口枷_表示)
     		{
-    			int num = 口_0感情対応[状態][RNG.XS.Next(口_0感情対応[状態].Count)];
+    			int num = 口_0感情対応[状態][Rng.XS.Next(口_0感情対応[状態].Count)];
     			c.口_0(num);
     			num = ((c.ModeEventDispatcher.Mode == "Training" && Tongue.Contains(num) && c.CharacterData.Sesnsitivities[ContactType.Mouth] > 0.6 && c.CharacterData.Sensitivity > 0.6 && c.CharacterData.Excitement > 0.6 && c.CharacterData.Tension < 0.5 && c.CharacterData.Pride == 0.0 && c.CharacterData.Lust > 0.6 && c.CharacterData.Taming > 0.5 && 0.5.Lot()) ? 1 : 0);
     			c.舌_0(num);
@@ -9409,12 +9409,12 @@ namespace SlaveMatrix
     		EmotionType 状態 = c.CharacterData.Emotion;
     		if (c.Body.Is人耳)
     		{
-    			int num = 耳_0感情対応[状態][RNG.XS.Next(耳_0感情対応[状態].Count)];
+    			int num = 耳_0感情対応[状態][Rng.XS.Next(耳_0感情対応[状態].Count)];
     			c.両耳_0(num, num);
     		}
     		else if (c.Body.Is獣耳)
     		{
-    			c.両獣耳_0(獣耳_0感情対応[状態][RNG.XS.Next(獣耳_0感情対応[状態].Count)], 獣耳_0感情対応[状態][RNG.XS.Next(獣耳_0感情対応[状態].Count)]);
+    			c.両獣耳_0(獣耳_0感情対応[状態][Rng.XS.Next(獣耳_0感情対応[状態].Count)], 獣耳_0感情対応[状態][Rng.XS.Next(獣耳_0感情対応[状態].Count)]);
     		}
     	}
 
@@ -9423,7 +9423,7 @@ namespace SlaveMatrix
     		EmotionType 状態 = c.CharacterData.Emotion;
     		if (c.Body.虫顎n > 0)
     		{
-    			int num = 虫顎_0感情対応[状態][RNG.XS.Next(虫顎_0感情対応[状態].Count)];
+    			int num = 虫顎_0感情対応[状態][Rng.XS.Next(虫顎_0感情対応[状態].Count)];
     			for (int i = 0; i < c.Body.虫顎n; i++)
     			{
     				c.両虫顎_0(i, 同角: true, num, num);
@@ -9431,7 +9431,7 @@ namespace SlaveMatrix
     		}
     		if (c.Body.大顎n > 0)
     		{
-    			int num = 大顎_0感情対応[状態][RNG.XS.Next(大顎_0感情対応[状態].Count)];
+    			int num = 大顎_0感情対応[状態][Rng.XS.Next(大顎_0感情対応[状態].Count)];
     			if (Player.UI.Is口挿入 || c.Body.Is拘束)
     			{
     				num = 1;
@@ -9445,12 +9445,12 @@ namespace SlaveMatrix
 
     	public static void SetInitialPosture(this Character c)
     	{
-    		if (Sta.GameData.拘束具)
+    		if (GlobalState.GameData.拘束具)
     		{
     			c.Set調教拘束姿勢(b: true);
     			return;
     		}
-    		c.Body.腿左右前後 = RNG.XS.NextBool();
+    		c.Body.腿左右前後 = Rng.XS.NextBool();
     		c.腕();
     		c.Leg();
     		c.翼();
@@ -9470,16 +9470,16 @@ namespace SlaveMatrix
 
     	public static void UpdatePosture(this Character c)
     	{
-    		if (Sta.GameData.拘束具)
+    		if (GlobalState.GameData.拘束具)
     		{
     			c.Set調教拘束姿勢(0.2.Lot());
     			return;
     		}
     		if (0.35.Lot())
     		{
-    			c.Body.腿左右前後 = RNG.XS.NextBool();
+    			c.Body.腿左右前後 = Rng.XS.NextBool();
     		}
-    		switch (RNG.XS.Next(13))
+    		switch (Rng.XS.Next(13))
     		{
     		case 0:
     			c.腕();
@@ -9583,31 +9583,31 @@ namespace SlaveMatrix
     			}
     			for (int i = 0; i < c.Body.Arm人n; i++)
     			{
-    				c.両腕人_0(i, RNG.XS.NextBool(), RNG.XS.NextBool(), RNG.XS.NextBool(), array[RNG.XS.Next(array.Length)], array[RNG.XS.Next(array.Length)]);
+    				c.両腕人_0(i, Rng.XS.NextBool(), Rng.XS.NextBool(), Rng.XS.NextBool(), array[Rng.XS.Next(array.Length)], array[Rng.XS.Next(array.Length)]);
     			}
     		}
     		if (c.Body.腕翼鳥n > 0)
     		{
-    			int num = 腕翼鳥_0感情対応[状態][RNG.XS.Next(腕翼鳥_0感情対応[状態].Count)];
+    			int num = 腕翼鳥_0感情対応[状態][Rng.XS.Next(腕翼鳥_0感情対応[状態].Count)];
     			for (int i = 0; i < c.Body.腕翼鳥n; i++)
     			{
-    				c.両腕翼鳥_0(i, RNG.XS.NextBool(), num, num);
+    				c.両腕翼鳥_0(i, Rng.XS.NextBool(), num, num);
     			}
     		}
     		if (c.Body.腕翼獣n > 0)
     		{
-    			int num = 腕翼獣_0感情対応[状態][RNG.XS.Next(腕翼獣_0感情対応[状態].Count)];
+    			int num = 腕翼獣_0感情対応[状態][Rng.XS.Next(腕翼獣_0感情対応[状態].Count)];
     			for (int i = 0; i < c.Body.腕翼獣n; i++)
     			{
-    				c.両腕翼獣_0(i, RNG.XS.NextBool(), num, num);
+    				c.両腕翼獣_0(i, Rng.XS.NextBool(), num, num);
     			}
     		}
     		if (c.Body.腕獣n > 0)
     		{
-    			int num = 腕獣_0感情対応[状態][RNG.XS.Next(腕獣_0感情対応[状態].Count)];
+    			int num = 腕獣_0感情対応[状態][Rng.XS.Next(腕獣_0感情対応[状態].Count)];
     			for (int i = 0; i < c.Body.腕獣n; i++)
     			{
-    				c.両腕獣_0(i, RNG.XS.NextBool(), num, num);
+    				c.両腕獣_0(i, Rng.XS.NextBool(), num, num);
     			}
     		}
     	}
@@ -9628,13 +9628,13 @@ namespace SlaveMatrix
     				{
     					do
     					{
-    						num = 脚人_0感情対応[状態][RNG.XS.Next(脚人_0感情対応[状態].Count)];
+    						num = 脚人_0感情対応[状態][Rng.XS.Next(脚人_0感情対応[状態].Count)];
     					}
     					while (num == 1 || num == 2 || num == 4 || num == 5);
     				}
     				else
     				{
-    					switch (RNG.XS.Next(5))
+    					switch (Rng.XS.Next(5))
     					{
     					case 0:
     						num = 0;
@@ -9660,13 +9660,13 @@ namespace SlaveMatrix
     				{
     					do
     					{
-    						num = 脚人_0感情対応[状態][RNG.XS.Next(脚人_0感情対応[状態].Count)];
+    						num = 脚人_0感情対応[状態][Rng.XS.Next(脚人_0感情対応[状態].Count)];
     					}
     					while (num == 1 || num == 2);
     				}
     				else
     				{
-    					switch (RNG.XS.Next(7))
+    					switch (Rng.XS.Next(7))
     					{
     					case 0:
     						num = 0;
@@ -9694,19 +9694,19 @@ namespace SlaveMatrix
     			}
     			else
     			{
-    				num = 脚人_0感情対応[状態][RNG.XS.Next(脚人_0感情対応[状態].Count)];
+    				num = 脚人_0感情対応[状態][Rng.XS.Next(脚人_0感情対応[状態].Count)];
     			}
     			for (int i = 0; i < c.Body.脚人n; i++)
     			{
-    				c.両脚人_0(0, RNG.XS.NextBool(), num, num);
+    				c.両脚人_0(0, Rng.XS.NextBool(), num, num);
     			}
     		}
     		if (c.Body.脚獣n > 0)
     		{
-    			num = 脚獣_0感情対応[状態][RNG.XS.Next(脚獣_0感情対応[状態].Count)];
+    			num = 脚獣_0感情対応[状態][Rng.XS.Next(脚獣_0感情対応[状態].Count)];
     			for (int i = 0; i < c.Body.脚獣n; i++)
     			{
-    				c.両脚獣_0(i, RNG.XS.NextBool(), num, num);
+    				c.両脚獣_0(i, Rng.XS.NextBool(), num, num);
     			}
     		}
     	}
@@ -9716,18 +9716,18 @@ namespace SlaveMatrix
     		EmotionType 状態 = c.CharacterData.Emotion;
     		if (c.Body.翼鳥n > 0)
     		{
-    			int num = 翼_0感情対応[状態][RNG.XS.Next(翼_0感情対応[状態].Count)];
+    			int num = 翼_0感情対応[状態][Rng.XS.Next(翼_0感情対応[状態].Count)];
     			for (int i = 0; i < c.Body.翼鳥n; i++)
     			{
-    				c.両翼鳥_0(i, RNG.XS.NextBool(), num, num);
+    				c.両翼鳥_0(i, Rng.XS.NextBool(), num, num);
     			}
     		}
     		if (c.Body.翼獣n > 0)
     		{
-    			int num2 = 翼_0感情対応[状態][RNG.XS.Next(翼_0感情対応[状態].Count)];
+    			int num2 = 翼_0感情対応[状態][Rng.XS.Next(翼_0感情対応[状態].Count)];
     			for (int j = 0; j < c.Body.翼獣n; j++)
     			{
-    				c.両翼獣_0(j, RNG.XS.NextBool(), num2, num2);
+    				c.両翼獣_0(j, Rng.XS.NextBool(), num2, num2);
     			}
     		}
     	}
@@ -9737,10 +9737,10 @@ namespace SlaveMatrix
     		EmotionType 状態 = c.CharacterData.Emotion;
     		if (c.Body.鰭n > 0)
     		{
-    			int num = 鰭_0感情対応[状態][RNG.XS.Next(鰭_0感情対応[状態].Count)];
+    			int num = 鰭_0感情対応[状態][Rng.XS.Next(鰭_0感情対応[状態].Count)];
     			for (int i = 0; i < c.Body.鰭n; i++)
     			{
-    				c.両鰭_0(i, RNG.XS.NextBool(), num, num);
+    				c.両鰭_0(i, Rng.XS.NextBool(), num, num);
     			}
     		}
     	}
@@ -9750,10 +9750,10 @@ namespace SlaveMatrix
     		EmotionType 状態 = c.CharacterData.Emotion;
     		if (c.Body.葉n > 0)
     		{
-    			int num = 葉_0感情対応[状態][RNG.XS.Next(葉_0感情対応[状態].Count)];
+    			int num = 葉_0感情対応[状態][Rng.XS.Next(葉_0感情対応[状態].Count)];
     			for (int i = 0; i < c.Body.葉n; i++)
     			{
-    				c.両葉_0(i, RNG.XS.NextBool(), num, num);
+    				c.両葉_0(i, Rng.XS.NextBool(), num, num);
     			}
     		}
     	}
@@ -9764,7 +9764,7 @@ namespace SlaveMatrix
     		int num;
     		if (c.Body.前翅1n > 0 || c.Body.後翅1n > 0)
     		{
-    			num = 前翅_0感情対応[状態][RNG.XS.Next(前翅_0感情対応[状態].Count)];
+    			num = 前翅_0感情対応[状態][Rng.XS.Next(前翅_0感情対応[状態].Count)];
     			if (c.Body.前翅1n > 0)
     			{
     				for (int i = 0; i < c.Body.前翅1n; i++)
@@ -9784,7 +9784,7 @@ namespace SlaveMatrix
     		{
     			return;
     		}
-    		num = 前翅_1感情対応[状態][RNG.XS.Next(前翅_1感情対応[状態].Count)];
+    		num = 前翅_1感情対応[状態][Rng.XS.Next(前翅_1感情対応[状態].Count)];
     		if (c.Body.前翅2n > 0)
     		{
     			for (int i = 0; i < c.Body.前翅2n; i++)
@@ -9806,18 +9806,18 @@ namespace SlaveMatrix
     		EmotionType 状態 = c.CharacterData.Emotion;
     		if (c.Body.触肢蜘n > 0)
     		{
-    			int num = 触肢蜘_0感情対応[状態][RNG.XS.Next(触肢蜘_0感情対応[状態].Count)];
+    			int num = 触肢蜘_0感情対応[状態][Rng.XS.Next(触肢蜘_0感情対応[状態].Count)];
     			for (int i = 0; i < c.Body.触肢蜘n; i++)
     			{
-    				c.両触肢蜘_0(i, RNG.XS.NextBool(), num, num);
+    				c.両触肢蜘_0(i, Rng.XS.NextBool(), num, num);
     			}
     		}
     		if (c.Body.触肢蠍n > 0)
     		{
-    			int num = 触肢蠍_0感情対応[状態][RNG.XS.Next(触肢蠍_0感情対応[状態].Count)];
+    			int num = 触肢蠍_0感情対応[状態][Rng.XS.Next(触肢蠍_0感情対応[状態].Count)];
     			for (int i = 0; i < c.Body.触肢蠍n; i++)
     			{
-    				c.両触肢蠍_0(i, RNG.XS.NextBool(), num, num);
+    				c.両触肢蠍_0(i, Rng.XS.NextBool(), num, num);
     			}
     		}
     	}
@@ -9827,26 +9827,26 @@ namespace SlaveMatrix
     		EmotionType 状態 = c.CharacterData.Emotion;
     		if (c.Body.節足蜘n > 0)
     		{
-    			int num = 節足蜘_0感情対応[状態][RNG.XS.Next(節足蜘_0感情対応[状態].Count)];
+    			int num = 節足蜘_0感情対応[状態][Rng.XS.Next(節足蜘_0感情対応[状態].Count)];
     			for (int i = 0; i < c.Body.節足蜘n; i++)
     			{
-    				c.両節足蜘_0(i, RNG.XS.NextBool(), num, num);
+    				c.両節足蜘_0(i, Rng.XS.NextBool(), num, num);
     			}
     		}
     		if (c.Body.節足蠍n > 0)
     		{
-    			int num = 節足蠍_0感情対応[状態][RNG.XS.Next(節足蠍_0感情対応[状態].Count)];
+    			int num = 節足蠍_0感情対応[状態][Rng.XS.Next(節足蠍_0感情対応[状態].Count)];
     			for (int i = 0; i < c.Body.節足蠍n; i++)
     			{
-    				c.両節足蠍_0(i, RNG.XS.NextBool(), num, num);
+    				c.両節足蠍_0(i, Rng.XS.NextBool(), num, num);
     			}
     		}
     		if (c.Body.節足百n > 0)
     		{
-    			int num = 節足百_0感情対応[状態][RNG.XS.Next(節足百_0感情対応[状態].Count)];
+    			int num = 節足百_0感情対応[状態][Rng.XS.Next(節足百_0感情対応[状態].Count)];
     			for (int i = 0; i < c.Body.節足百n; i++)
     			{
-    				c.両節足百_0(i, RNG.XS.NextBool(), num, num);
+    				c.両節足百_0(i, Rng.XS.NextBool(), num, num);
     			}
     		}
     	}
@@ -9856,18 +9856,18 @@ namespace SlaveMatrix
     		EmotionType 状態 = c.CharacterData.Emotion;
     		if (c.Body.節尾曳n > 0)
     		{
-    			int num = 節尾曳_0感情対応[状態][RNG.XS.Next(節尾曳_0感情対応[状態].Count)];
+    			int num = 節尾曳_0感情対応[状態][Rng.XS.Next(節尾曳_0感情対応[状態].Count)];
     			for (int i = 0; i < c.Body.節尾曳n; i++)
     			{
-    				c.両節尾曳_0(i, RNG.XS.NextBool(), num, num);
+    				c.両節尾曳_0(i, Rng.XS.NextBool(), num, num);
     			}
     		}
     		if (c.Body.節尾鋏n > 0)
     		{
-    			int num = 節尾鋏_0感情対応[状態][RNG.XS.Next(節尾鋏_0感情対応[状態].Count)];
+    			int num = 節尾鋏_0感情対応[状態][Rng.XS.Next(節尾鋏_0感情対応[状態].Count)];
     			for (int i = 0; i < c.Body.節尾鋏n; i++)
     			{
-    				c.両節尾鋏_0(i, RNG.XS.NextBool(), num, num);
+    				c.両節尾鋏_0(i, Rng.XS.NextBool(), num, num);
     			}
     		}
     	}
@@ -9877,10 +9877,10 @@ namespace SlaveMatrix
     		EmotionType 状態 = c.CharacterData.Emotion;
     		if (c.Body.虫鎌n > 0)
     		{
-    			int num = 虫鎌_0感情対応[状態][RNG.XS.Next(虫鎌_0感情対応[状態].Count)];
+    			int num = 虫鎌_0感情対応[状態][Rng.XS.Next(虫鎌_0感情対応[状態].Count)];
     			for (int i = 0; i < c.Body.虫鎌n; i++)
     			{
-    				c.両虫鎌_0(i, RNG.XS.NextBool(), num, num);
+    				c.両虫鎌_0(i, Rng.XS.NextBool(), num, num);
     			}
     		}
     	}
@@ -9892,14 +9892,14 @@ namespace SlaveMatrix
     		{
     			for (int i = 0; i < c.Body.触手n; i++)
     			{
-    				c.両触手_0(i, 触手_0感情対応[状態][RNG.XS.Next(触手_0感情対応[状態].Count)]);
+    				c.両触手_0(i, 触手_0感情対応[状態][Rng.XS.Next(触手_0感情対応[状態].Count)]);
     			}
     		}
     		if (c.Body.触手犬n > 0)
     		{
     			for (int i = 0; i < c.Body.触手犬n; i++)
     			{
-    				c.両触手犬_0(i, 触手犬_0感情対応[状態][RNG.XS.Next(触手犬_0感情対応[状態].Count)]);
+    				c.両触手犬_0(i, 触手犬_0感情対応[状態][Rng.XS.Next(触手犬_0感情対応[状態].Count)]);
     			}
     		}
     	}
@@ -9909,7 +9909,7 @@ namespace SlaveMatrix
     		EmotionType 状態 = c.CharacterData.Emotion;
     		if (c.Body.尾n > 0)
     		{
-    			int i = 尾_0感情対応[状態][RNG.XS.Next(尾_0感情対応[状態].Count)];
+    			int i = 尾_0感情対応[状態][Rng.XS.Next(尾_0感情対応[状態].Count)];
     			int num = 0;
     			for (num = 0; num < c.Body.尾n; num++)
     			{
@@ -9927,15 +9927,15 @@ namespace SlaveMatrix
     		}
     		if (c.Body.Is魚)
     		{
-    			c.魚_0(魚_0感情対応[状態][RNG.XS.Next(魚_0感情対応[状態].Count)]);
+    			c.魚_0(魚_0感情対応[状態][Rng.XS.Next(魚_0感情対応[状態].Count)]);
     		}
     		if (c.Body.Is鯨)
     		{
-    			c.鯨_0(鯨_0感情対応[状態][RNG.XS.Next(鯨_0感情対応[状態].Count)]);
+    			c.鯨_0(鯨_0感情対応[状態][Rng.XS.Next(鯨_0感情対応[状態].Count)]);
     		}
     		if (c.Body.Is蠍)
     		{
-    			c.蠍_0(蠍_0感情対応[状態][RNG.XS.Next(蠍_0感情対応[状態].Count)]);
+    			c.蠍_0(蠍_0感情対応[状態][Rng.XS.Next(蠍_0感情対応[状態].Count)]);
     		}
     		if (c.Body.Is植)
     		{
@@ -9943,7 +9943,7 @@ namespace SlaveMatrix
     		}
     		if (c.Body.Is粘)
     		{
-    			c.Body.粘.尺度C = 0.9 + 0.1 * RNG.XS.NextDouble();
+    			c.Body.粘.尺度C = 0.9 + 0.1 * Rng.XS.NextDouble();
     		}
     	}
 
@@ -9951,19 +9951,19 @@ namespace SlaveMatrix
     	{
     		if (0.35.Lot())
     		{
-    			c.Body.腿左右前後 = RNG.XS.NextBool();
+    			c.Body.腿左右前後 = Rng.XS.NextBool();
     		}
     		if (c.Body.Arm人n > 0)
     		{
     			int num = 7;
     			for (int i = 0; i < c.Body.Arm人n; i++)
     			{
-    				c.両腕人_0(i, RNG.XS.NextBool(), 同角: true, RNG.XS.NextBool(), num, num);
+    				c.両腕人_0(i, Rng.XS.NextBool(), 同角: true, Rng.XS.NextBool(), num, num);
     			}
     		}
     		if (c.Body.腕翼鳥n > 0)
     		{
-    			int num = 腕翼鳥_0基本[RNG.XS.Next(腕翼鳥_0基本.Length)];
+    			int num = 腕翼鳥_0基本[Rng.XS.Next(腕翼鳥_0基本.Length)];
     			for (int j = 0; j < c.Body.腕翼鳥n; j++)
     			{
     				c.両腕翼鳥_0(j, 同角: true, num, num);
@@ -9971,7 +9971,7 @@ namespace SlaveMatrix
     		}
     		if (c.Body.腕翼獣n > 0)
     		{
-    			int num = 腕翼獣_0基本[RNG.XS.Next(腕翼獣_0基本.Length)];
+    			int num = 腕翼獣_0基本[Rng.XS.Next(腕翼獣_0基本.Length)];
     			for (int k = 0; k < c.Body.腕翼獣n; k++)
     			{
     				c.両腕翼獣_0(k, 同角: true, num, num);
@@ -9979,7 +9979,7 @@ namespace SlaveMatrix
     		}
     		if (c.Body.腕獣n > 0)
     		{
-    			int num = 腕獣_0基本[RNG.XS.Next(腕獣_0基本.Length)];
+    			int num = 腕獣_0基本[Rng.XS.Next(腕獣_0基本.Length)];
     			for (int l = 0; l < c.Body.腕獣n; l++)
     			{
     				c.両腕獣_0(l, 同角: true, num, num);
@@ -9989,12 +9989,12 @@ namespace SlaveMatrix
     		{
     			for (int m = 0; m < c.Body.脚人n; m++)
     			{
-    				c.両脚人_0(0, 同角: true, 脚人_0基本[RNG.XS.Next(脚人_0基本.Length)], 脚人_0基本[RNG.XS.Next(脚人_0基本.Length)]);
+    				c.両脚人_0(0, 同角: true, 脚人_0基本[Rng.XS.Next(脚人_0基本.Length)], 脚人_0基本[Rng.XS.Next(脚人_0基本.Length)]);
     			}
     		}
     		if (c.Body.脚獣n > 0)
     		{
-    			int num = 脚獣_0基本[RNG.XS.Next(脚獣_0基本.Length)];
+    			int num = 脚獣_0基本[Rng.XS.Next(脚獣_0基本.Length)];
     			for (int n = 0; n < c.Body.脚獣n; n++)
     			{
     				c.両脚獣_0(n, 同角: true, num, num);
@@ -10002,7 +10002,7 @@ namespace SlaveMatrix
     		}
     		if (c.Body.翼鳥n > 0)
     		{
-    			int num = 翼_0基本[RNG.XS.Next(翼_0基本.Length)];
+    			int num = 翼_0基本[Rng.XS.Next(翼_0基本.Length)];
     			for (int num2 = 0; num2 < c.Body.翼鳥n; num2++)
     			{
     				c.両翼鳥_0(num2, 同角: true, num, num);
@@ -10010,7 +10010,7 @@ namespace SlaveMatrix
     		}
     		if (c.Body.翼獣n > 0)
     		{
-    			int num = 翼_0基本[RNG.XS.Next(翼_0基本.Length)];
+    			int num = 翼_0基本[Rng.XS.Next(翼_0基本.Length)];
     			for (int num3 = 0; num3 < c.Body.翼獣n; num3++)
     			{
     				c.両翼獣_0(num3, 同角: true, num, num);
@@ -10018,7 +10018,7 @@ namespace SlaveMatrix
     		}
     		if (c.Body.鰭n > 0)
     		{
-    			int num = 鰭_0基本[RNG.XS.Next(鰭_0基本.Length)];
+    			int num = 鰭_0基本[Rng.XS.Next(鰭_0基本.Length)];
     			for (int num4 = 0; num4 < c.Body.鰭n; num4++)
     			{
     				c.両鰭_0(num4, 同角: true, num, num);
@@ -10026,7 +10026,7 @@ namespace SlaveMatrix
     		}
     		if (c.Body.葉n > 0)
     		{
-    			int num = 葉_0基本[RNG.XS.Next(葉_0基本.Length)];
+    			int num = 葉_0基本[Rng.XS.Next(葉_0基本.Length)];
     			for (int num5 = 0; num5 < c.Body.葉n; num5++)
     			{
     				c.両葉_0(num5, 同角: true, num, num);
@@ -10034,7 +10034,7 @@ namespace SlaveMatrix
     		}
     		if (c.Body.前翅1n > 0 || c.Body.後翅1n > 0)
     		{
-    			int num = 前翅_0基本[RNG.XS.Next(前翅_0基本.Length)];
+    			int num = 前翅_0基本[Rng.XS.Next(前翅_0基本.Length)];
     			if (c.Body.前翅1n > 0)
     			{
     				for (int num6 = 0; num6 < c.Body.前翅1n; num6++)
@@ -10052,7 +10052,7 @@ namespace SlaveMatrix
     		}
     		if (c.Body.前翅2n > 0 || c.Body.後翅2n > 0)
     		{
-    			int num8 = 前翅_1基本[RNG.XS.Next(前翅_1基本.Length)];
+    			int num8 = 前翅_1基本[Rng.XS.Next(前翅_1基本.Length)];
     			if (c.Body.前翅2n > 0)
     			{
     				for (int num9 = 0; num9 < c.Body.前翅2n; num9++)
@@ -10070,7 +10070,7 @@ namespace SlaveMatrix
     		}
     		if (c.Body.触肢蜘n > 0)
     		{
-    			int num = 触肢蜘_0基本[RNG.XS.Next(触肢蜘_0基本.Length)];
+    			int num = 触肢蜘_0基本[Rng.XS.Next(触肢蜘_0基本.Length)];
     			for (int num11 = 0; num11 < c.Body.触肢蜘n; num11++)
     			{
     				c.両触肢蜘_0(num11, 同角: true, num, num);
@@ -10078,7 +10078,7 @@ namespace SlaveMatrix
     		}
     		if (c.Body.触肢蠍n > 0)
     		{
-    			int num = 触肢蠍_0基本[RNG.XS.Next(触肢蠍_0基本.Length)];
+    			int num = 触肢蠍_0基本[Rng.XS.Next(触肢蠍_0基本.Length)];
     			for (int num12 = 0; num12 < c.Body.触肢蠍n; num12++)
     			{
     				c.両触肢蠍_0(num12, 同角: true, num, num);
@@ -10086,7 +10086,7 @@ namespace SlaveMatrix
     		}
     		if (c.Body.節足蜘n > 0)
     		{
-    			int num = 節足蜘_0基本[RNG.XS.Next(節足蜘_0基本.Length)];
+    			int num = 節足蜘_0基本[Rng.XS.Next(節足蜘_0基本.Length)];
     			for (int num13 = 0; num13 < c.Body.節足蜘n; num13++)
     			{
     				c.両節足蜘_0(num13, 同角: true, num, num);
@@ -10094,7 +10094,7 @@ namespace SlaveMatrix
     		}
     		if (c.Body.節足蠍n > 0)
     		{
-    			int num = 節足蠍_0基本[RNG.XS.Next(節足蠍_0基本.Length)];
+    			int num = 節足蠍_0基本[Rng.XS.Next(節足蠍_0基本.Length)];
     			for (int num14 = 0; num14 < c.Body.節足蠍n; num14++)
     			{
     				c.両節足蠍_0(num14, 同角: true, num, num);
@@ -10102,7 +10102,7 @@ namespace SlaveMatrix
     		}
     		if (c.Body.節足百n > 0)
     		{
-    			int num = 節足百_0基本[RNG.XS.Next(節足百_0基本.Length)];
+    			int num = 節足百_0基本[Rng.XS.Next(節足百_0基本.Length)];
     			for (int num15 = 0; num15 < c.Body.節足百n; num15++)
     			{
     				c.両節足百_0(num15, 同角: true, num, num);
@@ -10110,7 +10110,7 @@ namespace SlaveMatrix
     		}
     		if (c.Body.節尾曳n > 0)
     		{
-    			int num = 節尾曳_0基本[RNG.XS.Next(節尾曳_0基本.Length)];
+    			int num = 節尾曳_0基本[Rng.XS.Next(節尾曳_0基本.Length)];
     			for (int num16 = 0; num16 < c.Body.節尾曳n; num16++)
     			{
     				c.両節尾曳_0(num16, 同角: true, num, num);
@@ -10118,7 +10118,7 @@ namespace SlaveMatrix
     		}
     		if (c.Body.節尾鋏n > 0)
     		{
-    			int num = 節尾鋏_0基本[RNG.XS.Next(節尾鋏_0基本.Length)];
+    			int num = 節尾鋏_0基本[Rng.XS.Next(節尾鋏_0基本.Length)];
     			for (int num17 = 0; num17 < c.Body.節尾鋏n; num17++)
     			{
     				c.両節尾鋏_0(num17, 同角: true, num, num);
@@ -10126,7 +10126,7 @@ namespace SlaveMatrix
     		}
     		if (c.Body.虫鎌n > 0)
     		{
-    			int num = 虫鎌_0基本[RNG.XS.Next(虫鎌_0基本.Length)];
+    			int num = 虫鎌_0基本[Rng.XS.Next(虫鎌_0基本.Length)];
     			for (int num18 = 0; num18 < c.Body.虫鎌n; num18++)
     			{
     				c.両虫鎌_0(num18, 同角: true, num, num);
@@ -10136,19 +10136,19 @@ namespace SlaveMatrix
     		{
     			for (int num19 = 0; num19 < c.Body.触手n; num19++)
     			{
-    				c.両触手_0(num19, 触手_0基本[RNG.XS.Next(触手_0基本.Length)]);
+    				c.両触手_0(num19, 触手_0基本[Rng.XS.Next(触手_0基本.Length)]);
     			}
     		}
     		if (c.Body.触手犬n > 0)
     		{
     			for (int num20 = 0; num20 < c.Body.触手犬n; num20++)
     			{
-    				c.両触手犬_0(num20, 触手犬_0基本[RNG.XS.Next(触手犬_0基本.Length)]);
+    				c.両触手犬_0(num20, 触手犬_0基本[Rng.XS.Next(触手犬_0基本.Length)]);
     			}
     		}
     		if (c.Body.尾n > 0)
     		{
-    			int num = 尾_0基本[RNG.XS.Next(尾_0基本.Length)];
+    			int num = 尾_0基本[Rng.XS.Next(尾_0基本.Length)];
     			for (int num21 = 0; num21 < c.Body.尾n; num21++)
     			{
     				c.尾_0(num21, num);
@@ -10164,15 +10164,15 @@ namespace SlaveMatrix
     		}
     		if (c.Body.Is魚)
     		{
-    			c.魚_0(魚_0基本[RNG.XS.Next(魚_0基本.Length)]);
+    			c.魚_0(魚_0基本[Rng.XS.Next(魚_0基本.Length)]);
     		}
     		if (c.Body.Is鯨)
     		{
-    			c.鯨_0(鯨_0基本[RNG.XS.Next(鯨_0基本.Length)]);
+    			c.鯨_0(鯨_0基本[Rng.XS.Next(鯨_0基本.Length)]);
     		}
     		if (c.Body.Is蠍)
     		{
-    			c.蠍_0(蠍_0基本[RNG.XS.Next(蠍_0基本.Length)]);
+    			c.蠍_0(蠍_0基本[Rng.XS.Next(蠍_0基本.Length)]);
     		}
     		if (c.Body.Is植)
     		{
@@ -10180,7 +10180,7 @@ namespace SlaveMatrix
     		}
     		if (c.Body.Is粘)
     		{
-    			c.Body.粘.尺度C = 0.9 + 0.1 * RNG.XS.NextDouble();
+    			c.Body.粘.尺度C = 0.9 + 0.1 * Rng.XS.NextDouble();
     		}
     		c.Body.Update();
     	}
@@ -10189,14 +10189,14 @@ namespace SlaveMatrix
     	{
     		if (0.35.Lot())
     		{
-    			c.Body.腿左右前後 = RNG.XS.NextBool();
+    			c.Body.腿左右前後 = Rng.XS.NextBool();
     		}
     		if (c.Body.Arm人n > 0)
     		{
     			int num = 7;
     			for (int i = 0; i < c.Body.Arm人n; i++)
     			{
-    				c.両腕人_0(i, RNG.XS.NextBool(), 同角: true, RNG.XS.NextBool(), num, num);
+    				c.両腕人_0(i, Rng.XS.NextBool(), 同角: true, Rng.XS.NextBool(), num, num);
     			}
     		}
     		if (c.Body.腕翼鳥n > 0)
@@ -10217,7 +10217,7 @@ namespace SlaveMatrix
     		}
     		if (c.Body.腕獣n > 0)
     		{
-    			int num = 腕獣_0基本[RNG.XS.Next(腕獣_0基本.Length)];
+    			int num = 腕獣_0基本[Rng.XS.Next(腕獣_0基本.Length)];
     			for (int l = 0; l < c.Body.腕獣n; l++)
     			{
     				c.両腕獣_0(l, 同角: true, num, num);
@@ -10227,12 +10227,12 @@ namespace SlaveMatrix
     		{
     			for (int m = 0; m < c.Body.脚人n; m++)
     			{
-    				c.両脚人_0(0, 同角: true, 脚人_0基本[RNG.XS.Next(脚人_0基本.Length)], 脚人_0基本[RNG.XS.Next(脚人_0基本.Length)]);
+    				c.両脚人_0(0, 同角: true, 脚人_0基本[Rng.XS.Next(脚人_0基本.Length)], 脚人_0基本[Rng.XS.Next(脚人_0基本.Length)]);
     			}
     		}
     		if (c.Body.脚獣n > 0)
     		{
-    			int num = 脚獣_0基本[RNG.XS.Next(脚獣_0基本.Length)];
+    			int num = 脚獣_0基本[Rng.XS.Next(脚獣_0基本.Length)];
     			for (int n = 0; n < c.Body.脚獣n; n++)
     			{
     				c.両脚獣_0(n, 同角: true, num, num);
@@ -10256,7 +10256,7 @@ namespace SlaveMatrix
     		}
     		if (c.Body.鰭n > 0)
     		{
-    			int num = 鰭_0基本[RNG.XS.Next(鰭_0基本.Length)];
+    			int num = 鰭_0基本[Rng.XS.Next(鰭_0基本.Length)];
     			for (int num4 = 0; num4 < c.Body.鰭n; num4++)
     			{
     				c.両鰭_0(num4, 同角: true, num, num);
@@ -10264,7 +10264,7 @@ namespace SlaveMatrix
     		}
     		if (c.Body.葉n > 0)
     		{
-    			int num = 葉_0基本[RNG.XS.Next(葉_0基本.Length)];
+    			int num = 葉_0基本[Rng.XS.Next(葉_0基本.Length)];
     			for (int num5 = 0; num5 < c.Body.葉n; num5++)
     			{
     				c.両葉_0(num5, 同角: true, num, num);
@@ -10272,7 +10272,7 @@ namespace SlaveMatrix
     		}
     		if (c.Body.前翅1n > 0 || c.Body.後翅1n > 0)
     		{
-    			int num = 前翅_0基本[RNG.XS.Next(前翅_0基本.Length)];
+    			int num = 前翅_0基本[Rng.XS.Next(前翅_0基本.Length)];
     			if (c.Body.前翅1n > 0)
     			{
     				for (int num6 = 0; num6 < c.Body.前翅1n; num6++)
@@ -10308,7 +10308,7 @@ namespace SlaveMatrix
     		}
     		if (c.Body.触肢蜘n > 0)
     		{
-    			int num = 触肢蜘_0拘束[RNG.XS.Next(触肢蜘_0拘束.Length)];
+    			int num = 触肢蜘_0拘束[Rng.XS.Next(触肢蜘_0拘束.Length)];
     			for (int num11 = 0; num11 < c.Body.触肢蜘n; num11++)
     			{
     				c.両触肢蜘_0(num11, 同角: true, num, num);
@@ -10316,7 +10316,7 @@ namespace SlaveMatrix
     		}
     		if (c.Body.触肢蠍n > 0)
     		{
-    			int num = 触肢蠍_0拘束[RNG.XS.Next(触肢蠍_0拘束.Length)];
+    			int num = 触肢蠍_0拘束[Rng.XS.Next(触肢蠍_0拘束.Length)];
     			for (int num12 = 0; num12 < c.Body.触肢蠍n; num12++)
     			{
     				c.両触肢蠍_0(num12, 同角: true, num, num);
@@ -10324,7 +10324,7 @@ namespace SlaveMatrix
     		}
     		if (c.Body.節足蜘n > 0)
     		{
-    			int num = 節足蜘_0基本[RNG.XS.Next(節足蜘_0基本.Length)];
+    			int num = 節足蜘_0基本[Rng.XS.Next(節足蜘_0基本.Length)];
     			for (int num13 = 0; num13 < c.Body.節足蜘n; num13++)
     			{
     				c.両節足蜘_0(num13, 同角: true, num, num);
@@ -10332,7 +10332,7 @@ namespace SlaveMatrix
     		}
     		if (c.Body.節足蠍n > 0)
     		{
-    			int num = 節足蠍_0基本[RNG.XS.Next(節足蠍_0基本.Length)];
+    			int num = 節足蠍_0基本[Rng.XS.Next(節足蠍_0基本.Length)];
     			for (int num14 = 0; num14 < c.Body.節足蠍n; num14++)
     			{
     				c.両節足蠍_0(num14, 同角: true, num, num);
@@ -10340,7 +10340,7 @@ namespace SlaveMatrix
     		}
     		if (c.Body.節足百n > 0)
     		{
-    			int num = 節足百_0基本[RNG.XS.Next(節足百_0基本.Length)];
+    			int num = 節足百_0基本[Rng.XS.Next(節足百_0基本.Length)];
     			for (int num15 = 0; num15 < c.Body.節足百n; num15++)
     			{
     				c.両節足百_0(num15, 同角: true, num, num);
@@ -10348,7 +10348,7 @@ namespace SlaveMatrix
     		}
     		if (c.Body.節尾曳n > 0)
     		{
-    			int num = 節尾曳_0基本[RNG.XS.Next(節尾曳_0基本.Length)];
+    			int num = 節尾曳_0基本[Rng.XS.Next(節尾曳_0基本.Length)];
     			for (int num16 = 0; num16 < c.Body.節尾曳n; num16++)
     			{
     				c.両節尾曳_0(num16, 同角: true, num, num);
@@ -10356,7 +10356,7 @@ namespace SlaveMatrix
     		}
     		if (c.Body.節尾鋏n > 0)
     		{
-    			int num = 節尾鋏_0基本[RNG.XS.Next(節尾鋏_0基本.Length)];
+    			int num = 節尾鋏_0基本[Rng.XS.Next(節尾鋏_0基本.Length)];
     			for (int num17 = 0; num17 < c.Body.節尾鋏n; num17++)
     			{
     				c.両節尾鋏_0(num17, 同角: true, num, num);
@@ -10374,19 +10374,19 @@ namespace SlaveMatrix
     		{
     			for (int num19 = 0; num19 < c.Body.触手n; num19++)
     			{
-    				c.両触手_0(num19, 触手_0基本[RNG.XS.Next(触手_0基本.Length)]);
+    				c.両触手_0(num19, 触手_0基本[Rng.XS.Next(触手_0基本.Length)]);
     			}
     		}
     		if (c.Body.触手犬n > 0)
     		{
     			for (int num20 = 0; num20 < c.Body.触手犬n; num20++)
     			{
-    				c.両触手犬_0(num20, 触手犬_0基本[RNG.XS.Next(触手犬_0基本.Length)]);
+    				c.両触手犬_0(num20, 触手犬_0基本[Rng.XS.Next(触手犬_0基本.Length)]);
     			}
     		}
     		if (c.Body.尾n > 0)
     		{
-    			int num = 尾_0基本[RNG.XS.Next(尾_0基本.Length)];
+    			int num = 尾_0基本[Rng.XS.Next(尾_0基本.Length)];
     			for (int num21 = 0; num21 < c.Body.尾n; num21++)
     			{
     				c.尾_0(num21, num);
@@ -10402,15 +10402,15 @@ namespace SlaveMatrix
     		}
     		if (c.Body.Is魚)
     		{
-    			c.魚_0(魚_0基本[RNG.XS.Next(魚_0基本.Length)]);
+    			c.魚_0(魚_0基本[Rng.XS.Next(魚_0基本.Length)]);
     		}
     		if (c.Body.Is鯨)
     		{
-    			c.鯨_0(鯨_0基本[RNG.XS.Next(鯨_0基本.Length)]);
+    			c.鯨_0(鯨_0基本[Rng.XS.Next(鯨_0基本.Length)]);
     		}
     		if (c.Body.Is蠍)
     		{
-    			c.蠍_0(蠍_0基本[RNG.XS.Next(蠍_0基本.Length)]);
+    			c.蠍_0(蠍_0基本[Rng.XS.Next(蠍_0基本.Length)]);
     		}
     		if (c.Body.Is植)
     		{
@@ -10418,7 +10418,7 @@ namespace SlaveMatrix
     		}
     		if (c.Body.Is粘)
     		{
-    			c.Body.粘.尺度C = 0.9 + 0.1 * RNG.XS.NextDouble();
+    			c.Body.粘.尺度C = 0.9 + 0.1 * Rng.XS.NextDouble();
     		}
     		c.Body.Update();
     	}
@@ -10427,14 +10427,14 @@ namespace SlaveMatrix
     	{
     		if (0.35.Lot())
     		{
-    			c.Body.腿左右前後 = RNG.XS.NextBool();
+    			c.Body.腿左右前後 = Rng.XS.NextBool();
     		}
     		if (c.Body.Arm人n > 0)
     		{
     			int num = 18;
     			for (int i = 0; i < c.Body.Arm人n; i++)
     			{
-    				c.両腕人_0(i, RNG.XS.NextBool(), RNG.XS.NextBool(), RNG.XS.NextBool(), num, num);
+    				c.両腕人_0(i, Rng.XS.NextBool(), Rng.XS.NextBool(), Rng.XS.NextBool(), num, num);
     			}
     		}
     		if (c.Body.腕翼鳥n > 0)
@@ -10442,7 +10442,7 @@ namespace SlaveMatrix
     			int num = 4;
     			for (int j = 0; j < c.Body.腕翼鳥n; j++)
     			{
-    				c.両腕翼鳥_0(j, RNG.XS.NextBool(), num, num);
+    				c.両腕翼鳥_0(j, Rng.XS.NextBool(), num, num);
     			}
     		}
     		if (c.Body.腕翼獣n > 0)
@@ -10450,7 +10450,7 @@ namespace SlaveMatrix
     			int num = 2;
     			for (int k = 0; k < c.Body.腕翼獣n; k++)
     			{
-    				c.両腕翼獣_0(k, RNG.XS.NextBool(), num, num);
+    				c.両腕翼獣_0(k, Rng.XS.NextBool(), num, num);
     			}
     		}
     		if (c.Body.腕獣n > 0)
@@ -10458,7 +10458,7 @@ namespace SlaveMatrix
     			int num = 0;
     			for (int l = 0; l < c.Body.腕獣n; l++)
     			{
-    				c.両腕獣_0(l, RNG.XS.NextBool(), num, num);
+    				c.両腕獣_0(l, Rng.XS.NextBool(), num, num);
     			}
     		}
     		if (!c.Body.Is粘 && !c.Body.Is植 && c.Body.脚人n > 0)
@@ -10466,7 +10466,7 @@ namespace SlaveMatrix
     			int num = 8;
     			for (int m = 0; m < c.Body.脚人n; m++)
     			{
-    				c.両脚人_0(0, RNG.XS.NextBool(), num, num);
+    				c.両脚人_0(0, Rng.XS.NextBool(), num, num);
     			}
     		}
     		if (c.Body.脚獣n > 0)
@@ -10474,7 +10474,7 @@ namespace SlaveMatrix
     			int num = 0;
     			for (int n = 0; n < c.Body.脚獣n; n++)
     			{
-    				c.両脚獣_0(n, RNG.XS.NextBool(), num, num);
+    				c.両脚獣_0(n, Rng.XS.NextBool(), num, num);
     			}
     		}
     		if (c.Body.翼鳥n > 0)
@@ -10482,7 +10482,7 @@ namespace SlaveMatrix
     			int num = 4;
     			for (int num2 = 0; num2 < c.Body.翼鳥n; num2++)
     			{
-    				c.両翼鳥_0(num2, RNG.XS.NextBool(), num, num);
+    				c.両翼鳥_0(num2, Rng.XS.NextBool(), num, num);
     			}
     		}
     		if (c.Body.翼獣n > 0)
@@ -10490,28 +10490,28 @@ namespace SlaveMatrix
     			int num = 4;
     			for (int num3 = 0; num3 < c.Body.翼獣n; num3++)
     			{
-    				c.両翼獣_0(num3, RNG.XS.NextBool(), num, num);
+    				c.両翼獣_0(num3, Rng.XS.NextBool(), num, num);
     			}
     		}
     		if (c.Body.鰭n > 0)
     		{
-    			int num = 鰭_0基本[RNG.XS.Next(鰭_0基本.Length)];
+    			int num = 鰭_0基本[Rng.XS.Next(鰭_0基本.Length)];
     			for (int num4 = 0; num4 < c.Body.鰭n; num4++)
     			{
-    				c.両鰭_0(num4, RNG.XS.NextBool(), num, num);
+    				c.両鰭_0(num4, Rng.XS.NextBool(), num, num);
     			}
     		}
     		if (c.Body.葉n > 0)
     		{
-    			int num = 葉_0基本[RNG.XS.Next(葉_0基本.Length)];
+    			int num = 葉_0基本[Rng.XS.Next(葉_0基本.Length)];
     			for (int num5 = 0; num5 < c.Body.葉n; num5++)
     			{
-    				c.両葉_0(num5, RNG.XS.NextBool(), num, num);
+    				c.両葉_0(num5, Rng.XS.NextBool(), num, num);
     			}
     		}
     		if (c.Body.前翅1n > 0 || c.Body.後翅1n > 0)
     		{
-    			int num = 前翅_0基本[RNG.XS.Next(前翅_0基本.Length)];
+    			int num = 前翅_0基本[Rng.XS.Next(前翅_0基本.Length)];
     			if (c.Body.前翅1n > 0)
     			{
     				for (int num6 = 0; num6 < c.Body.前翅1n; num6++)
@@ -10550,7 +10550,7 @@ namespace SlaveMatrix
     			int num = 0;
     			for (int num11 = 0; num11 < c.Body.触肢蜘n; num11++)
     			{
-    				c.両触肢蜘_0(num11, RNG.XS.NextBool(), num, num);
+    				c.両触肢蜘_0(num11, Rng.XS.NextBool(), num, num);
     			}
     		}
     		if (c.Body.触肢蠍n > 0)
@@ -10558,7 +10558,7 @@ namespace SlaveMatrix
     			int num = 0;
     			for (int num12 = 0; num12 < c.Body.触肢蠍n; num12++)
     			{
-    				c.両触肢蠍_0(num12, RNG.XS.NextBool(), num, num);
+    				c.両触肢蠍_0(num12, Rng.XS.NextBool(), num, num);
     			}
     		}
     		if (c.Body.節足蜘n > 0)
@@ -10566,7 +10566,7 @@ namespace SlaveMatrix
     			int num = 0;
     			for (int num13 = 0; num13 < c.Body.節足蜘n; num13++)
     			{
-    				c.両節足蜘_0(num13, RNG.XS.NextBool(), num, num);
+    				c.両節足蜘_0(num13, Rng.XS.NextBool(), num, num);
     			}
     		}
     		if (c.Body.節足蠍n > 0)
@@ -10574,7 +10574,7 @@ namespace SlaveMatrix
     			int num = 0;
     			for (int num14 = 0; num14 < c.Body.節足蠍n; num14++)
     			{
-    				c.両節足蠍_0(num14, RNG.XS.NextBool(), num, num);
+    				c.両節足蠍_0(num14, Rng.XS.NextBool(), num, num);
     			}
     		}
     		if (c.Body.節足百n > 0)
@@ -10582,7 +10582,7 @@ namespace SlaveMatrix
     			int num = 0;
     			for (int num15 = 0; num15 < c.Body.節足百n; num15++)
     			{
-    				c.両節足百_0(num15, RNG.XS.NextBool(), num, num);
+    				c.両節足百_0(num15, Rng.XS.NextBool(), num, num);
     			}
     		}
     		if (c.Body.節尾曳n > 0)
@@ -10590,7 +10590,7 @@ namespace SlaveMatrix
     			int num = 0;
     			for (int num16 = 0; num16 < c.Body.節尾曳n; num16++)
     			{
-    				c.両節尾曳_0(num16, RNG.XS.NextBool(), num, num);
+    				c.両節尾曳_0(num16, Rng.XS.NextBool(), num, num);
     			}
     		}
     		if (c.Body.節尾鋏n > 0)
@@ -10598,7 +10598,7 @@ namespace SlaveMatrix
     			int num = 0;
     			for (int num17 = 0; num17 < c.Body.節尾鋏n; num17++)
     			{
-    				c.両節尾鋏_0(num17, RNG.XS.NextBool(), num, num);
+    				c.両節尾鋏_0(num17, Rng.XS.NextBool(), num, num);
     			}
     		}
     		if (c.Body.虫鎌n > 0)
@@ -10606,7 +10606,7 @@ namespace SlaveMatrix
     			int num = 0;
     			for (int num18 = 0; num18 < c.Body.虫鎌n; num18++)
     			{
-    				c.両虫鎌_0(num18, RNG.XS.NextBool(), num, num);
+    				c.両虫鎌_0(num18, Rng.XS.NextBool(), num, num);
     			}
     		}
     		if (b)
@@ -10617,12 +10617,12 @@ namespace SlaveMatrix
     			{
     				for (int num19 = 0; num19 < c.Body.触手犬n; num19++)
     				{
-    					c.両触手犬_0(num19, 触手犬_0基本[RNG.XS.Next(触手犬_0基本.Length)]);
+    					c.両触手犬_0(num19, 触手犬_0基本[Rng.XS.Next(触手犬_0基本.Length)]);
     				}
     			}
     			if (c.Body.尾n > 0)
     			{
-    				int num = 尾_0基本[RNG.XS.Next(尾_0基本.Length)];
+    				int num = 尾_0基本[Rng.XS.Next(尾_0基本.Length)];
     				for (int num20 = 0; num20 < c.Body.尾n; num20++)
     				{
     					c.尾_0(num20, num);
@@ -10635,15 +10635,15 @@ namespace SlaveMatrix
     		}
     		if (c.Body.Is魚)
     		{
-    			c.魚_0(魚_0基本[RNG.XS.Next(魚_0基本.Length)]);
+    			c.魚_0(魚_0基本[Rng.XS.Next(魚_0基本.Length)]);
     		}
     		if (c.Body.Is鯨)
     		{
-    			c.鯨_0(鯨_0基本[RNG.XS.Next(鯨_0基本.Length)]);
+    			c.鯨_0(鯨_0基本[Rng.XS.Next(鯨_0基本.Length)]);
     		}
     		if (c.Body.Is蠍)
     		{
-    			c.蠍_0(蠍_0基本[RNG.XS.Next(蠍_0基本.Length)]);
+    			c.蠍_0(蠍_0基本[Rng.XS.Next(蠍_0基本.Length)]);
     		}
     		if (c.Body.Is植)
     		{
@@ -10659,7 +10659,7 @@ namespace SlaveMatrix
     			int num = 15;
     			for (int i = 0; i < c.Body.Arm人n; i++)
     			{
-    				c.両腕人_0(i, RNG.XS.NextBool(), RNG.XS.NextBool(), RNG.XS.NextBool(), num, num);
+    				c.両腕人_0(i, Rng.XS.NextBool(), Rng.XS.NextBool(), Rng.XS.NextBool(), num, num);
     			}
     		}
     	}

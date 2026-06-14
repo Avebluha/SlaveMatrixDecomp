@@ -4,31 +4,31 @@ namespace SlaveMatrix
 {
     public class 下着トップ_ビキニ : 下着トップ
     {
-    	public Par X0Y0_紐;
+    	public ShapePart X0Y0_紐;
 
-    	public Par X0Y0_カップ左_紐;
+    	public ShapePart X0Y0_カップ左_紐;
 
-    	public Par X0Y0_カップ左_カップ;
+    	public ShapePart X0Y0_カップ左_カップ;
 
-    	public Par X0Y0_カップ左_縁_縁1;
+    	public ShapePart X0Y0_カップ左_縁_縁1;
 
-    	public Par X0Y0_カップ左_縁_縁2;
+    	public ShapePart X0Y0_カップ左_縁_縁2;
 
-    	public Par X0Y0_カップ左_縁_縁3;
+    	public ShapePart X0Y0_カップ左_縁_縁3;
 
-    	public Par X0Y0_カップ左_縁_縁4;
+    	public ShapePart X0Y0_カップ左_縁_縁4;
 
-    	public Par X0Y0_カップ右_紐;
+    	public ShapePart X0Y0_カップ右_紐;
 
-    	public Par X0Y0_カップ右_カップ;
+    	public ShapePart X0Y0_カップ右_カップ;
 
-    	public Par X0Y0_カップ右_縁_縁1;
+    	public ShapePart X0Y0_カップ右_縁_縁1;
 
-    	public Par X0Y0_カップ右_縁_縁2;
+    	public ShapePart X0Y0_カップ右_縁_縁2;
 
-    	public Par X0Y0_カップ右_縁_縁3;
+    	public ShapePart X0Y0_カップ右_縁_縁3;
 
-    	public Par X0Y0_カップ右_縁_縁4;
+    	public ShapePart X0Y0_カップ右_縁_縁4;
 
     	public ColorD 紐CD;
 
@@ -447,21 +447,21 @@ namespace SlaveMatrix
     	public 下着トップ_ビキニ(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 下着トップ_ビキニD e)
     	{
     		ThisType = GetType();
-    		Dif dif = new Dif(Sta.胴体["下着トップ"][1]);
-    		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		X0Y0_紐 = pars["紐"].ToPar();
-    		Pars pars2 = pars["カップ左"].ToPars();
+    		MorphVariant morphVariant = new MorphVariant(GlobalState.胴体["下着トップ"][1]);
+    		Body = new VariantGrid();
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_紐 = partGroup["紐"].ToPar();
+    		PartGroup pars2 = partGroup["カップ左"].ToPars();
     		X0Y0_カップ左_紐 = pars2["紐"].ToPar();
     		X0Y0_カップ左_カップ = pars2["カップ"].ToPar();
-    		Pars pars3 = pars2["縁"].ToPars();
+    		PartGroup pars3 = pars2["縁"].ToPars();
     		X0Y0_カップ左_縁_縁1 = pars3["縁1"].ToPar();
     		X0Y0_カップ左_縁_縁2 = pars3["縁2"].ToPar();
     		X0Y0_カップ左_縁_縁3 = pars3["縁3"].ToPar();
     		X0Y0_カップ左_縁_縁4 = pars3["縁4"].ToPar();
-    		pars2 = pars["カップ右"].ToPars();
+    		pars2 = partGroup["カップ右"].ToPars();
     		X0Y0_カップ右_紐 = pars2["紐"].ToPar();
     		X0Y0_カップ右_カップ = pars2["カップ"].ToPar();
     		pars3 = pars2["縁"].ToPars();
@@ -561,7 +561,7 @@ namespace SlaveMatrix
     		Are.Draw(X0Y0_カップ右_縁_縁4);
     	}
 
-    	public override bool Is布(Par p)
+    	public override bool Is布(ShapePart p)
     	{
     		if (p != X0Y0_紐 && p != X0Y0_カップ左_紐 && p != X0Y0_カップ左_カップ && p != X0Y0_カップ左_縁_縁1 && p != X0Y0_カップ左_縁_縁2 && p != X0Y0_カップ左_縁_縁3 && p != X0Y0_カップ左_縁_縁4 && p != X0Y0_カップ右_紐 && p != X0Y0_カップ右_カップ && p != X0Y0_カップ右_縁_縁1 && p != X0Y0_カップ右_縁_縁2 && p != X0Y0_カップ右_縁_縁3)
     		{

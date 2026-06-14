@@ -7,81 +7,81 @@ namespace SlaveMatrix
 {
     public class 単足_植 : 半身
     {
-    	public Par X0Y0_幹上;
+    	public ShapePart X0Y0_幹上;
 
-    	public Par X0Y0_幹下;
+    	public ShapePart X0Y0_幹下;
 
-    	public Par X0Y0_葉左;
+    	public ShapePart X0Y0_葉左;
 
-    	public Par X0Y0_葉右;
+    	public ShapePart X0Y0_葉右;
 
-    	public Par X0Y0_脈上1;
+    	public ShapePart X0Y0_脈上1;
 
-    	public Par X0Y0_脈上2;
+    	public ShapePart X0Y0_脈上2;
 
-    	public Par X0Y0_脈下1;
+    	public ShapePart X0Y0_脈下1;
 
-    	public Par X0Y0_脈下2;
+    	public ShapePart X0Y0_脈下2;
 
-    	public Par X0Y0_虫食_左_虫食1;
+    	public ShapePart X0Y0_虫食_左_虫食1;
 
-    	public Par X0Y0_虫食_左_虫食2;
+    	public ShapePart X0Y0_虫食_左_虫食2;
 
-    	public Par X0Y0_虫食_左_虫食3;
+    	public ShapePart X0Y0_虫食_左_虫食3;
 
-    	public Par X0Y0_虫食_左_虫食4;
+    	public ShapePart X0Y0_虫食_左_虫食4;
 
-    	public Par X0Y0_虫食_左_虫食5;
+    	public ShapePart X0Y0_虫食_左_虫食5;
 
-    	public Par X0Y0_虫食_左_虫食6;
+    	public ShapePart X0Y0_虫食_左_虫食6;
 
-    	public Par X0Y0_虫食_左_虫食7;
+    	public ShapePart X0Y0_虫食_左_虫食7;
 
-    	public Par X0Y0_虫食_左_虫食8;
+    	public ShapePart X0Y0_虫食_左_虫食8;
 
-    	public Par X0Y0_虫食_左_虫食9;
+    	public ShapePart X0Y0_虫食_左_虫食9;
 
-    	public Par X0Y0_虫食_左_虫食10;
+    	public ShapePart X0Y0_虫食_左_虫食10;
 
-    	public Par X0Y0_虫食_左_虫食11;
+    	public ShapePart X0Y0_虫食_左_虫食11;
 
-    	public Par X0Y0_虫食_左_虫食12;
+    	public ShapePart X0Y0_虫食_左_虫食12;
 
-    	public Par X0Y0_虫食_右_虫食1;
+    	public ShapePart X0Y0_虫食_右_虫食1;
 
-    	public Par X0Y0_虫食_右_虫食2;
+    	public ShapePart X0Y0_虫食_右_虫食2;
 
-    	public Par X0Y0_虫食_右_虫食3;
+    	public ShapePart X0Y0_虫食_右_虫食3;
 
-    	public Par X0Y0_虫食_右_虫食4;
+    	public ShapePart X0Y0_虫食_右_虫食4;
 
-    	public Par X0Y0_虫食_右_虫食5;
+    	public ShapePart X0Y0_虫食_右_虫食5;
 
-    	public Par X0Y0_虫食_右_虫食6;
+    	public ShapePart X0Y0_虫食_右_虫食6;
 
-    	public Par X0Y0_虫食_右_虫食7;
+    	public ShapePart X0Y0_虫食_右_虫食7;
 
-    	public Par X0Y0_虫食_右_虫食8;
+    	public ShapePart X0Y0_虫食_右_虫食8;
 
-    	public Par X0Y0_虫食_右_虫食9;
+    	public ShapePart X0Y0_虫食_右_虫食9;
 
-    	public Par X0Y0_虫食_右_虫食10;
+    	public ShapePart X0Y0_虫食_右_虫食10;
 
-    	public Par X0Y0_虫食_右_虫食11;
+    	public ShapePart X0Y0_虫食_右_虫食11;
 
-    	public Par X0Y0_虫食_右_虫食12;
+    	public ShapePart X0Y0_虫食_右_虫食12;
 
-    	public Par X0Y0_脚輪_革;
+    	public ShapePart X0Y0_脚輪_革;
 
-    	public Par X0Y0_脚輪_金具1;
+    	public ShapePart X0Y0_脚輪_金具1;
 
-    	public Par X0Y0_脚輪_金具2;
+    	public ShapePart X0Y0_脚輪_金具2;
 
-    	public Par X0Y0_脚輪_金具3;
+    	public ShapePart X0Y0_脚輪_金具3;
 
-    	public Par X0Y0_脚輪_金具左;
+    	public ShapePart X0Y0_脚輪_金具左;
 
-    	public Par X0Y0_脚輪_金具右;
+    	public ShapePart X0Y0_脚輪_金具右;
 
     	public ColorD 幹上CD;
 
@@ -239,15 +239,15 @@ namespace SlaveMatrix
 
     	public 拘束鎖 鎖2;
 
-    	public Ele[] 根外左_接続;
+    	public Element[] 根外左_接続;
 
-    	public Ele[] 根内左_接続;
+    	public Element[] 根内左_接続;
 
-    	public Ele[] 根中央_接続;
+    	public Element[] 根中央_接続;
 
-    	public Ele[] 根内右_接続;
+    	public Element[] 根内右_接続;
 
-    	public Ele[] 根外右_接続;
+    	public Element[] 根外右_接続;
 
     	public override bool 欠損
     	{
@@ -928,23 +928,23 @@ namespace SlaveMatrix
     	{
     		単足_植 単足_植2 = this;
     		ThisType = GetType();
-    		Dif dif = new Dif();
-    		dif.Tag = "植";
-    		dif.Add(new Pars(Sta.半身["単足"][0][0]));
-    		Body = new Difs();
-    		Body.Tag = dif.Tag;
-    		Body.Add(dif);
-    		Pars pars = Body[0][0];
-    		X0Y0_幹上 = pars["幹上"].ToPar();
-    		X0Y0_幹下 = pars["幹下"].ToPar();
-    		X0Y0_葉左 = pars["葉左"].ToPar();
-    		X0Y0_葉右 = pars["葉右"].ToPar();
-    		X0Y0_脈上1 = pars["脈上1"].ToPar();
-    		X0Y0_脈上2 = pars["脈上2"].ToPar();
-    		X0Y0_脈下1 = pars["脈下1"].ToPar();
-    		X0Y0_脈下2 = pars["脈下2"].ToPar();
-    		Pars pars2 = pars["虫食"].ToPars();
-    		Pars pars3 = pars2["左"].ToPars();
+    		MorphVariant morphVariant = new MorphVariant();
+    		morphVariant.Tag = "植";
+    		morphVariant.Add(new PartGroup(GlobalState.半身["単足"][0][0]));
+    		Body = new VariantGrid();
+    		Body.Tag = morphVariant.Tag;
+    		Body.Add(morphVariant);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_幹上 = partGroup["幹上"].ToPar();
+    		X0Y0_幹下 = partGroup["幹下"].ToPar();
+    		X0Y0_葉左 = partGroup["葉左"].ToPar();
+    		X0Y0_葉右 = partGroup["葉右"].ToPar();
+    		X0Y0_脈上1 = partGroup["脈上1"].ToPar();
+    		X0Y0_脈上2 = partGroup["脈上2"].ToPar();
+    		X0Y0_脈下1 = partGroup["脈下1"].ToPar();
+    		X0Y0_脈下2 = partGroup["脈下2"].ToPar();
+    		PartGroup pars2 = partGroup["虫食"].ToPars();
+    		PartGroup pars3 = pars2["左"].ToPars();
     		X0Y0_虫食_左_虫食1 = pars3["虫食1"].ToPar();
     		X0Y0_虫食_左_虫食2 = pars3["虫食2"].ToPar();
     		X0Y0_虫食_左_虫食3 = pars3["虫食3"].ToPar();
@@ -970,7 +970,7 @@ namespace SlaveMatrix
     		X0Y0_虫食_右_虫食10 = pars3["虫食10"].ToPar();
     		X0Y0_虫食_右_虫食11 = pars3["虫食11"].ToPar();
     		X0Y0_虫食_右_虫食12 = pars3["虫食12"].ToPar();
-    		pars2 = pars["脚輪"].ToPars();
+    		pars2 = partGroup["脚輪"].ToPars();
     		X0Y0_脚輪_革 = pars2["革"].ToPar();
     		X0Y0_脚輪_金具1 = pars2["金具1"].ToPar();
     		X0Y0_脚輪_金具2 = pars2["金具2"].ToPar();
@@ -1047,10 +1047,10 @@ namespace SlaveMatrix
     		{
     			表示 = false;
     		}
-    		Ele f;
+    		Element f;
     		if (e.根外左_接続.Count > 0)
     		{
-    			根外左_接続 = e.根外左_接続.Select(delegate(EleD g)
+    			根外左_接続 = e.根外左_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 単足_植2;
@@ -1061,7 +1061,7 @@ namespace SlaveMatrix
     		}
     		if (e.根内左_接続.Count > 0)
     		{
-    			根内左_接続 = e.根内左_接続.Select(delegate(EleD g)
+    			根内左_接続 = e.根内左_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 単足_植2;
@@ -1072,7 +1072,7 @@ namespace SlaveMatrix
     		}
     		if (e.根中央_接続.Count > 0)
     		{
-    			根中央_接続 = e.根中央_接続.Select(delegate(EleD g)
+    			根中央_接続 = e.根中央_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 単足_植2;
@@ -1083,7 +1083,7 @@ namespace SlaveMatrix
     		}
     		if (e.根内右_接続.Count > 0)
     		{
-    			根内右_接続 = e.根内右_接続.Select(delegate(EleD g)
+    			根内右_接続 = e.根内右_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 単足_植2;
@@ -1094,7 +1094,7 @@ namespace SlaveMatrix
     		}
     		if (e.根外右_接続.Count > 0)
     		{
-    			根外右_接続 = e.根外右_接続.Select(delegate(EleD g)
+    			根外右_接続 = e.根外右_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 単足_植2;
@@ -1175,7 +1175,7 @@ namespace SlaveMatrix
     		鎖2.描画0(Are);
     	}
 
-    	public override bool Is革(Par p)
+    	public override bool Is革(ShapePart p)
     	{
     		if (p != X0Y0_脚輪_革 && p != X0Y0_脚輪_金具1 && p != X0Y0_脚輪_金具2 && p != X0Y0_脚輪_金具3 && p != X0Y0_脚輪_金具左)
     		{
@@ -1251,38 +1251,38 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		幹上CD = new ColorD(ref Col.Black, ref 体配色.植0O);
-    		幹下CD = new ColorD(ref Col.Black, ref 体配色.植0O);
-    		葉左CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		葉右CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		脈上1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		脈上2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		脈下1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		脈下2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		虫食_左_虫食1CD = new ColorD(ref Col.Black, ref 体配色.植1R);
-    		虫食_左_虫食2CD = new ColorD(ref Col.Black, ref 体配色.植1R);
-    		虫食_左_虫食3CD = new ColorD(ref Col.Black, ref 体配色.植1R);
-    		虫食_左_虫食4CD = new ColorD(ref Col.Black, ref 体配色.植1R);
-    		虫食_左_虫食5CD = new ColorD(ref Col.Black, ref 体配色.植1R);
-    		虫食_左_虫食6CD = new ColorD(ref Col.Black, ref 体配色.植1R);
-    		虫食_左_虫食7CD = new ColorD(ref Col.Black, ref 体配色.植1R);
-    		虫食_左_虫食8CD = new ColorD(ref Col.Black, ref 体配色.植1R);
-    		虫食_左_虫食9CD = new ColorD(ref Col.Black, ref 体配色.植1R);
-    		虫食_左_虫食10CD = new ColorD(ref Col.Black, ref 体配色.植1R);
-    		虫食_左_虫食11CD = new ColorD(ref Col.Black, ref 体配色.植1R);
-    		虫食_左_虫食12CD = new ColorD(ref Col.Black, ref 体配色.植1R);
-    		虫食_右_虫食1CD = new ColorD(ref Col.Black, ref 体配色.植1R);
-    		虫食_右_虫食2CD = new ColorD(ref Col.Black, ref 体配色.植1R);
-    		虫食_右_虫食3CD = new ColorD(ref Col.Black, ref 体配色.植1R);
-    		虫食_右_虫食4CD = new ColorD(ref Col.Black, ref 体配色.植1R);
-    		虫食_右_虫食5CD = new ColorD(ref Col.Black, ref 体配色.植1R);
-    		虫食_右_虫食6CD = new ColorD(ref Col.Black, ref 体配色.植1R);
-    		虫食_右_虫食7CD = new ColorD(ref Col.Black, ref 体配色.植1R);
-    		虫食_右_虫食8CD = new ColorD(ref Col.Black, ref 体配色.植1R);
-    		虫食_右_虫食9CD = new ColorD(ref Col.Black, ref 体配色.植1R);
-    		虫食_右_虫食10CD = new ColorD(ref Col.Black, ref 体配色.植1R);
-    		虫食_右_虫食11CD = new ColorD(ref Col.Black, ref 体配色.植1R);
-    		虫食_右_虫食12CD = new ColorD(ref Col.Black, ref 体配色.植1R);
+    		幹上CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0O);
+    		幹下CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0O);
+    		葉左CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		葉右CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		脈上1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		脈上2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		脈下1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		脈下2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		虫食_左_虫食1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1R);
+    		虫食_左_虫食2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1R);
+    		虫食_左_虫食3CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1R);
+    		虫食_左_虫食4CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1R);
+    		虫食_左_虫食5CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1R);
+    		虫食_左_虫食6CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1R);
+    		虫食_左_虫食7CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1R);
+    		虫食_左_虫食8CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1R);
+    		虫食_左_虫食9CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1R);
+    		虫食_左_虫食10CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1R);
+    		虫食_左_虫食11CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1R);
+    		虫食_左_虫食12CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1R);
+    		虫食_右_虫食1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1R);
+    		虫食_右_虫食2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1R);
+    		虫食_右_虫食3CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1R);
+    		虫食_右_虫食4CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1R);
+    		虫食_右_虫食5CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1R);
+    		虫食_右_虫食6CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1R);
+    		虫食_右_虫食7CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1R);
+    		虫食_右_虫食8CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1R);
+    		虫食_右_虫食9CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1R);
+    		虫食_右_虫食10CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1R);
+    		虫食_右_虫食11CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1R);
+    		虫食_右_虫食12CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1R);
     		脚輪_革CD = new ColorD();
     		脚輪_金具1CD = new ColorD();
     		脚輪_金具2CD = new ColorD();
@@ -1293,38 +1293,38 @@ namespace SlaveMatrix
 
     	private void 配色T1(BodyColorSet 体配色)
     	{
-    		幹上CD = new ColorD(ref Col.Black, ref 体配色.植0O);
-    		幹下CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		葉左CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		葉右CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		脈上1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		脈上2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		脈下1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		脈下2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		虫食_左_虫食1CD = new ColorD(ref Col.Black, ref 体配色.刺青R);
-    		虫食_左_虫食2CD = new ColorD(ref Col.Black, ref 体配色.刺青R);
-    		虫食_左_虫食3CD = new ColorD(ref Col.Black, ref 体配色.刺青R);
-    		虫食_左_虫食4CD = new ColorD(ref Col.Black, ref 体配色.刺青R);
-    		虫食_左_虫食5CD = new ColorD(ref Col.Black, ref 体配色.刺青R);
-    		虫食_左_虫食6CD = new ColorD(ref Col.Black, ref 体配色.刺青R);
-    		虫食_左_虫食7CD = new ColorD(ref Col.Black, ref 体配色.刺青R);
-    		虫食_左_虫食8CD = new ColorD(ref Col.Black, ref 体配色.刺青R);
-    		虫食_左_虫食9CD = new ColorD(ref Col.Black, ref 体配色.刺青R);
-    		虫食_左_虫食10CD = new ColorD(ref Col.Black, ref 体配色.刺青R);
-    		虫食_左_虫食11CD = new ColorD(ref Col.Black, ref 体配色.刺青R);
-    		虫食_左_虫食12CD = new ColorD(ref Col.Black, ref 体配色.刺青R);
-    		虫食_右_虫食1CD = new ColorD(ref Col.Black, ref 体配色.刺青R);
-    		虫食_右_虫食2CD = new ColorD(ref Col.Black, ref 体配色.刺青R);
-    		虫食_右_虫食3CD = new ColorD(ref Col.Black, ref 体配色.刺青R);
-    		虫食_右_虫食4CD = new ColorD(ref Col.Black, ref 体配色.刺青R);
-    		虫食_右_虫食5CD = new ColorD(ref Col.Black, ref 体配色.刺青R);
-    		虫食_右_虫食6CD = new ColorD(ref Col.Black, ref 体配色.刺青R);
-    		虫食_右_虫食7CD = new ColorD(ref Col.Black, ref 体配色.刺青R);
-    		虫食_右_虫食8CD = new ColorD(ref Col.Black, ref 体配色.刺青R);
-    		虫食_右_虫食9CD = new ColorD(ref Col.Black, ref 体配色.刺青R);
-    		虫食_右_虫食10CD = new ColorD(ref Col.Black, ref 体配色.刺青R);
-    		虫食_右_虫食11CD = new ColorD(ref Col.Black, ref 体配色.刺青R);
-    		虫食_右_虫食12CD = new ColorD(ref Col.Black, ref 体配色.刺青R);
+    		幹上CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0O);
+    		幹下CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		葉左CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		葉右CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		脈上1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		脈上2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		脈下1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		脈下2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		虫食_左_虫食1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青R);
+    		虫食_左_虫食2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青R);
+    		虫食_左_虫食3CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青R);
+    		虫食_左_虫食4CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青R);
+    		虫食_左_虫食5CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青R);
+    		虫食_左_虫食6CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青R);
+    		虫食_左_虫食7CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青R);
+    		虫食_左_虫食8CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青R);
+    		虫食_左_虫食9CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青R);
+    		虫食_左_虫食10CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青R);
+    		虫食_左_虫食11CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青R);
+    		虫食_左_虫食12CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青R);
+    		虫食_右_虫食1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青R);
+    		虫食_右_虫食2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青R);
+    		虫食_右_虫食3CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青R);
+    		虫食_右_虫食4CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青R);
+    		虫食_右_虫食5CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青R);
+    		虫食_右_虫食6CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青R);
+    		虫食_右_虫食7CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青R);
+    		虫食_右_虫食8CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青R);
+    		虫食_右_虫食9CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青R);
+    		虫食_右_虫食10CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青R);
+    		虫食_右_虫食11CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青R);
+    		虫食_右_虫食12CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青R);
     		脚輪_革CD = new ColorD();
     		脚輪_金具1CD = new ColorD();
     		脚輪_金具2CD = new ColorD();
@@ -1335,38 +1335,38 @@ namespace SlaveMatrix
 
     	private void 配色T0(BodyColorSet 体配色)
     	{
-    		幹上CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		幹下CD = new ColorD(ref Col.Black, ref 体配色.植0O);
-    		葉左CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		葉右CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		脈上1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		脈上2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		脈下1CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		脈下2CD = new ColorD(ref Col.Black, ref 体配色.植1O);
-    		虫食_左_虫食1CD = new ColorD(ref Col.Black, ref 体配色.刺青R);
-    		虫食_左_虫食2CD = new ColorD(ref Col.Black, ref 体配色.刺青R);
-    		虫食_左_虫食3CD = new ColorD(ref Col.Black, ref 体配色.刺青R);
-    		虫食_左_虫食4CD = new ColorD(ref Col.Black, ref 体配色.刺青R);
-    		虫食_左_虫食5CD = new ColorD(ref Col.Black, ref 体配色.刺青R);
-    		虫食_左_虫食6CD = new ColorD(ref Col.Black, ref 体配色.刺青R);
-    		虫食_左_虫食7CD = new ColorD(ref Col.Black, ref 体配色.刺青R);
-    		虫食_左_虫食8CD = new ColorD(ref Col.Black, ref 体配色.刺青R);
-    		虫食_左_虫食9CD = new ColorD(ref Col.Black, ref 体配色.刺青R);
-    		虫食_左_虫食10CD = new ColorD(ref Col.Black, ref 体配色.刺青R);
-    		虫食_左_虫食11CD = new ColorD(ref Col.Black, ref 体配色.刺青R);
-    		虫食_左_虫食12CD = new ColorD(ref Col.Black, ref 体配色.刺青R);
-    		虫食_右_虫食1CD = new ColorD(ref Col.Black, ref 体配色.刺青R);
-    		虫食_右_虫食2CD = new ColorD(ref Col.Black, ref 体配色.刺青R);
-    		虫食_右_虫食3CD = new ColorD(ref Col.Black, ref 体配色.刺青R);
-    		虫食_右_虫食4CD = new ColorD(ref Col.Black, ref 体配色.刺青R);
-    		虫食_右_虫食5CD = new ColorD(ref Col.Black, ref 体配色.刺青R);
-    		虫食_右_虫食6CD = new ColorD(ref Col.Black, ref 体配色.刺青R);
-    		虫食_右_虫食7CD = new ColorD(ref Col.Black, ref 体配色.刺青R);
-    		虫食_右_虫食8CD = new ColorD(ref Col.Black, ref 体配色.刺青R);
-    		虫食_右_虫食9CD = new ColorD(ref Col.Black, ref 体配色.刺青R);
-    		虫食_右_虫食10CD = new ColorD(ref Col.Black, ref 体配色.刺青R);
-    		虫食_右_虫食11CD = new ColorD(ref Col.Black, ref 体配色.刺青R);
-    		虫食_右_虫食12CD = new ColorD(ref Col.Black, ref 体配色.刺青R);
+    		幹上CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		幹下CD = new ColorD(ref ColorHelper.Black, ref 体配色.植0O);
+    		葉左CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		葉右CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		脈上1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		脈上2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		脈下1CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		脈下2CD = new ColorD(ref ColorHelper.Black, ref 体配色.植1O);
+    		虫食_左_虫食1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青R);
+    		虫食_左_虫食2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青R);
+    		虫食_左_虫食3CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青R);
+    		虫食_左_虫食4CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青R);
+    		虫食_左_虫食5CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青R);
+    		虫食_左_虫食6CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青R);
+    		虫食_左_虫食7CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青R);
+    		虫食_左_虫食8CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青R);
+    		虫食_左_虫食9CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青R);
+    		虫食_左_虫食10CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青R);
+    		虫食_左_虫食11CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青R);
+    		虫食_左_虫食12CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青R);
+    		虫食_右_虫食1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青R);
+    		虫食_右_虫食2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青R);
+    		虫食_右_虫食3CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青R);
+    		虫食_右_虫食4CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青R);
+    		虫食_右_虫食5CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青R);
+    		虫食_右_虫食6CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青R);
+    		虫食_右_虫食7CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青R);
+    		虫食_右_虫食8CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青R);
+    		虫食_右_虫食9CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青R);
+    		虫食_右_虫食10CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青R);
+    		虫食_右_虫食11CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青R);
+    		虫食_右_虫食12CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青R);
     		脚輪_革CD = new ColorD();
     		脚輪_金具1CD = new ColorD();
     		脚輪_金具2CD = new ColorD();
@@ -1391,33 +1391,33 @@ namespace SlaveMatrix
     		鎖2.配色鎖(配色);
     	}
 
-    	public override IEnumerable<Ele> EnumEle()
+    	public override IEnumerable<Element> EnumEle()
     	{
     		yield return this;
     		if (根外左_接続 != null)
     		{
-    			foreach (Ele item in 根外左_接続.Select((Ele e) => e.EnumEle()).JoinEnum())
+    			foreach (Element item in 根外左_接続.Select((Element e) => e.EnumEle()).JoinEnum())
     			{
     				yield return item;
     			}
     		}
     		if (根外右_接続 != null)
     		{
-    			foreach (Ele item2 in 根外右_接続.Select((Ele e) => e.EnumEle()).JoinEnum())
+    			foreach (Element item2 in 根外右_接続.Select((Element e) => e.EnumEle()).JoinEnum())
     			{
     				yield return item2;
     			}
     		}
     		if (根内左_接続 != null)
     		{
-    			foreach (Ele item3 in 根内左_接続.Select((Ele e) => e.EnumEle()).JoinEnum())
+    			foreach (Element item3 in 根内左_接続.Select((Element e) => e.EnumEle()).JoinEnum())
     			{
     				yield return item3;
     			}
     		}
     		if (根内右_接続 != null)
     		{
-    			foreach (Ele item4 in 根内右_接続.Select((Ele e) => e.EnumEle()).JoinEnum())
+    			foreach (Element item4 in 根内右_接続.Select((Element e) => e.EnumEle()).JoinEnum())
     			{
     				yield return item4;
     			}
@@ -1426,7 +1426,7 @@ namespace SlaveMatrix
     		{
     			yield break;
     		}
-    		foreach (Ele item5 in 根中央_接続.Select((Ele e) => e.EnumEle()).JoinEnum())
+    		foreach (Element item5 in 根中央_接続.Select((Element e) => e.EnumEle()).JoinEnum())
     		{
     			yield return item5;
     		}

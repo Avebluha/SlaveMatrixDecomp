@@ -4,7 +4,7 @@ using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
-    public class 触覚 : Ele
+    public class 触覚 : Element
     {
     	public override double 肥大
     	{
@@ -20,7 +20,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public virtual IEnumerable<Par> Enum軸()
+    	public virtual IEnumerable<ShapePart> Enum軸()
     	{
     		yield break;
     	}

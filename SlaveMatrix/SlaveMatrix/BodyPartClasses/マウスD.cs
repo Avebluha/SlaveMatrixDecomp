@@ -5,7 +5,7 @@ using SlaveMatrix.GameClasses;
 namespace SlaveMatrix
 {
     [Serializable]
-    public class マウスD : EleD
+    public class マウスD : ElementData
     {
     	public bool 上唇_表示 = true;
 
@@ -18,7 +18,7 @@ namespace SlaveMatrix
     		ThisType = GetType();
     	}
 
-    	public override Ele GetEle(double DisUnit, ModeEventDispatcher Med, 主人公配色 体配色)
+    	public override Element GetEle(double DisUnit, ModeEventDispatcher Med, 主人公配色 体配色)
     	{
     		return new マウス(DisUnit, 配色指定, 体配色, Med, this);
     	}

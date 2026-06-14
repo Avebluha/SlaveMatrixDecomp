@@ -4,105 +4,105 @@ namespace SlaveMatrix
 {
     public class 瞼_弱 : 双瞼
     {
-    	public Par X0Y0_瞼;
+    	public ShapePart X0Y0_瞼;
 
-    	public Par X0Y0_二重;
+    	public ShapePart X0Y0_二重;
 
-    	public Par X0Y0_睫毛_睫毛3;
+    	public ShapePart X0Y0_睫毛_睫毛3;
 
-    	public Par X0Y0_睫毛_睫毛1;
+    	public ShapePart X0Y0_睫毛_睫毛1;
 
-    	public Par X0Y0_睫毛_睫毛2;
+    	public ShapePart X0Y0_睫毛_睫毛2;
 
-    	public Par X0Y1_瞼;
+    	public ShapePart X0Y1_瞼;
 
-    	public Par X0Y1_二重;
+    	public ShapePart X0Y1_二重;
 
-    	public Par X0Y1_睫毛_睫毛3;
+    	public ShapePart X0Y1_睫毛_睫毛3;
 
-    	public Par X0Y1_睫毛_睫毛1;
+    	public ShapePart X0Y1_睫毛_睫毛1;
 
-    	public Par X0Y1_睫毛_睫毛2;
+    	public ShapePart X0Y1_睫毛_睫毛2;
 
-    	public Par X0Y2_瞼;
+    	public ShapePart X0Y2_瞼;
 
-    	public Par X0Y2_二重;
+    	public ShapePart X0Y2_二重;
 
-    	public Par X0Y2_睫毛_睫毛3;
+    	public ShapePart X0Y2_睫毛_睫毛3;
 
-    	public Par X0Y2_睫毛_睫毛1;
+    	public ShapePart X0Y2_睫毛_睫毛1;
 
-    	public Par X0Y2_睫毛_睫毛2;
+    	public ShapePart X0Y2_睫毛_睫毛2;
 
-    	public Par X0Y3_瞼;
+    	public ShapePart X0Y3_瞼;
 
-    	public Par X0Y3_二重;
+    	public ShapePart X0Y3_二重;
 
-    	public Par X0Y3_睫毛_睫毛3;
+    	public ShapePart X0Y3_睫毛_睫毛3;
 
-    	public Par X0Y3_睫毛_睫毛1;
+    	public ShapePart X0Y3_睫毛_睫毛1;
 
-    	public Par X0Y3_睫毛_睫毛2;
+    	public ShapePart X0Y3_睫毛_睫毛2;
 
-    	public Par X0Y4_瞼;
+    	public ShapePart X0Y4_瞼;
 
-    	public Par X0Y4_二重;
+    	public ShapePart X0Y4_二重;
 
-    	public Par X0Y4_睫毛_睫毛3;
+    	public ShapePart X0Y4_睫毛_睫毛3;
 
-    	public Par X0Y4_睫毛_睫毛1;
+    	public ShapePart X0Y4_睫毛_睫毛1;
 
-    	public Par X0Y4_睫毛_睫毛2;
+    	public ShapePart X0Y4_睫毛_睫毛2;
 
-    	public Par X1Y0_瞼;
+    	public ShapePart X1Y0_瞼;
 
-    	public Par X1Y0_二重;
+    	public ShapePart X1Y0_二重;
 
-    	public Par X1Y0_睫毛_睫毛3;
+    	public ShapePart X1Y0_睫毛_睫毛3;
 
-    	public Par X1Y0_睫毛_睫毛1;
+    	public ShapePart X1Y0_睫毛_睫毛1;
 
-    	public Par X1Y0_睫毛_睫毛2;
+    	public ShapePart X1Y0_睫毛_睫毛2;
 
-    	public Par X1Y1_瞼;
+    	public ShapePart X1Y1_瞼;
 
-    	public Par X1Y1_二重;
+    	public ShapePart X1Y1_二重;
 
-    	public Par X1Y1_睫毛_睫毛3;
+    	public ShapePart X1Y1_睫毛_睫毛3;
 
-    	public Par X1Y1_睫毛_睫毛1;
+    	public ShapePart X1Y1_睫毛_睫毛1;
 
-    	public Par X1Y1_睫毛_睫毛2;
+    	public ShapePart X1Y1_睫毛_睫毛2;
 
-    	public Par X1Y2_瞼;
+    	public ShapePart X1Y2_瞼;
 
-    	public Par X1Y2_二重;
+    	public ShapePart X1Y2_二重;
 
-    	public Par X1Y2_睫毛_睫毛3;
+    	public ShapePart X1Y2_睫毛_睫毛3;
 
-    	public Par X1Y2_睫毛_睫毛1;
+    	public ShapePart X1Y2_睫毛_睫毛1;
 
-    	public Par X1Y2_睫毛_睫毛2;
+    	public ShapePart X1Y2_睫毛_睫毛2;
 
-    	public Par X1Y3_瞼;
+    	public ShapePart X1Y3_瞼;
 
-    	public Par X1Y3_二重;
+    	public ShapePart X1Y3_二重;
 
-    	public Par X1Y3_睫毛_睫毛3;
+    	public ShapePart X1Y3_睫毛_睫毛3;
 
-    	public Par X1Y3_睫毛_睫毛1;
+    	public ShapePart X1Y3_睫毛_睫毛1;
 
-    	public Par X1Y3_睫毛_睫毛2;
+    	public ShapePart X1Y3_睫毛_睫毛2;
 
-    	public Par X1Y4_瞼;
+    	public ShapePart X1Y4_瞼;
 
-    	public Par X1Y4_二重;
+    	public ShapePart X1Y4_二重;
 
-    	public Par X1Y4_睫毛_睫毛3;
+    	public ShapePart X1Y4_睫毛_睫毛3;
 
-    	public Par X1Y4_睫毛_睫毛1;
+    	public ShapePart X1Y4_睫毛_睫毛1;
 
-    	public Par X1Y4_睫毛_睫毛2;
+    	public ShapePart X1Y4_睫毛_睫毛2;
 
     	public ColorD 瞼CD;
 
@@ -509,74 +509,74 @@ namespace SlaveMatrix
     	public 瞼_弱(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 瞼_弱D e)
     	{
     		ThisType = GetType();
-    		Body = new Difs(Sta.胴体["魔性弱瞼左"]);
-    		Pars pars = Body[0][0];
-    		X0Y0_瞼 = pars["瞼"].ToPar();
-    		X0Y0_二重 = pars["二重"].ToPar();
-    		Pars pars2 = pars["睫毛"].ToPars();
+    		Body = new VariantGrid(GlobalState.胴体["魔性弱瞼左"]);
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_瞼 = partGroup["瞼"].ToPar();
+    		X0Y0_二重 = partGroup["二重"].ToPar();
+    		PartGroup pars2 = partGroup["睫毛"].ToPars();
     		X0Y0_睫毛_睫毛3 = pars2["睫毛3"].ToPar();
     		X0Y0_睫毛_睫毛1 = pars2["睫毛1"].ToPar();
     		X0Y0_睫毛_睫毛2 = pars2["睫毛2"].ToPar();
-    		pars = Body[0][1];
-    		X0Y1_瞼 = pars["瞼"].ToPar();
-    		X0Y1_二重 = pars["二重"].ToPar();
-    		pars2 = pars["睫毛"].ToPars();
+    		partGroup = Body[0][1];
+    		X0Y1_瞼 = partGroup["瞼"].ToPar();
+    		X0Y1_二重 = partGroup["二重"].ToPar();
+    		pars2 = partGroup["睫毛"].ToPars();
     		X0Y1_睫毛_睫毛3 = pars2["睫毛3"].ToPar();
     		X0Y1_睫毛_睫毛1 = pars2["睫毛1"].ToPar();
     		X0Y1_睫毛_睫毛2 = pars2["睫毛2"].ToPar();
-    		pars = Body[0][2];
-    		X0Y2_瞼 = pars["瞼"].ToPar();
-    		X0Y2_二重 = pars["二重"].ToPar();
-    		pars2 = pars["睫毛"].ToPars();
+    		partGroup = Body[0][2];
+    		X0Y2_瞼 = partGroup["瞼"].ToPar();
+    		X0Y2_二重 = partGroup["二重"].ToPar();
+    		pars2 = partGroup["睫毛"].ToPars();
     		X0Y2_睫毛_睫毛3 = pars2["睫毛3"].ToPar();
     		X0Y2_睫毛_睫毛1 = pars2["睫毛1"].ToPar();
     		X0Y2_睫毛_睫毛2 = pars2["睫毛2"].ToPar();
-    		pars = Body[0][3];
-    		X0Y3_瞼 = pars["瞼"].ToPar();
-    		X0Y3_二重 = pars["二重"].ToPar();
-    		pars2 = pars["睫毛"].ToPars();
+    		partGroup = Body[0][3];
+    		X0Y3_瞼 = partGroup["瞼"].ToPar();
+    		X0Y3_二重 = partGroup["二重"].ToPar();
+    		pars2 = partGroup["睫毛"].ToPars();
     		X0Y3_睫毛_睫毛3 = pars2["睫毛3"].ToPar();
     		X0Y3_睫毛_睫毛1 = pars2["睫毛1"].ToPar();
     		X0Y3_睫毛_睫毛2 = pars2["睫毛2"].ToPar();
-    		pars = Body[0][4];
-    		X0Y4_瞼 = pars["瞼"].ToPar();
-    		X0Y4_二重 = pars["二重"].ToPar();
-    		pars2 = pars["睫毛"].ToPars();
+    		partGroup = Body[0][4];
+    		X0Y4_瞼 = partGroup["瞼"].ToPar();
+    		X0Y4_二重 = partGroup["二重"].ToPar();
+    		pars2 = partGroup["睫毛"].ToPars();
     		X0Y4_睫毛_睫毛3 = pars2["睫毛3"].ToPar();
     		X0Y4_睫毛_睫毛1 = pars2["睫毛1"].ToPar();
     		X0Y4_睫毛_睫毛2 = pars2["睫毛2"].ToPar();
-    		pars = Body[1][0];
-    		X1Y0_瞼 = pars["瞼"].ToPar();
-    		X1Y0_二重 = pars["二重"].ToPar();
-    		pars2 = pars["睫毛"].ToPars();
+    		partGroup = Body[1][0];
+    		X1Y0_瞼 = partGroup["瞼"].ToPar();
+    		X1Y0_二重 = partGroup["二重"].ToPar();
+    		pars2 = partGroup["睫毛"].ToPars();
     		X1Y0_睫毛_睫毛3 = pars2["睫毛3"].ToPar();
     		X1Y0_睫毛_睫毛1 = pars2["睫毛1"].ToPar();
     		X1Y0_睫毛_睫毛2 = pars2["睫毛2"].ToPar();
-    		pars = Body[1][1];
-    		X1Y1_瞼 = pars["瞼"].ToPar();
-    		X1Y1_二重 = pars["二重"].ToPar();
-    		pars2 = pars["睫毛"].ToPars();
+    		partGroup = Body[1][1];
+    		X1Y1_瞼 = partGroup["瞼"].ToPar();
+    		X1Y1_二重 = partGroup["二重"].ToPar();
+    		pars2 = partGroup["睫毛"].ToPars();
     		X1Y1_睫毛_睫毛3 = pars2["睫毛3"].ToPar();
     		X1Y1_睫毛_睫毛1 = pars2["睫毛1"].ToPar();
     		X1Y1_睫毛_睫毛2 = pars2["睫毛2"].ToPar();
-    		pars = Body[1][2];
-    		X1Y2_瞼 = pars["瞼"].ToPar();
-    		X1Y2_二重 = pars["二重"].ToPar();
-    		pars2 = pars["睫毛"].ToPars();
+    		partGroup = Body[1][2];
+    		X1Y2_瞼 = partGroup["瞼"].ToPar();
+    		X1Y2_二重 = partGroup["二重"].ToPar();
+    		pars2 = partGroup["睫毛"].ToPars();
     		X1Y2_睫毛_睫毛3 = pars2["睫毛3"].ToPar();
     		X1Y2_睫毛_睫毛1 = pars2["睫毛1"].ToPar();
     		X1Y2_睫毛_睫毛2 = pars2["睫毛2"].ToPar();
-    		pars = Body[1][3];
-    		X1Y3_瞼 = pars["瞼"].ToPar();
-    		X1Y3_二重 = pars["二重"].ToPar();
-    		pars2 = pars["睫毛"].ToPars();
+    		partGroup = Body[1][3];
+    		X1Y3_瞼 = partGroup["瞼"].ToPar();
+    		X1Y3_二重 = partGroup["二重"].ToPar();
+    		pars2 = partGroup["睫毛"].ToPars();
     		X1Y3_睫毛_睫毛3 = pars2["睫毛3"].ToPar();
     		X1Y3_睫毛_睫毛1 = pars2["睫毛1"].ToPar();
     		X1Y3_睫毛_睫毛2 = pars2["睫毛2"].ToPar();
-    		pars = Body[1][4];
-    		X1Y4_瞼 = pars["瞼"].ToPar();
-    		X1Y4_二重 = pars["二重"].ToPar();
-    		pars2 = pars["睫毛"].ToPars();
+    		partGroup = Body[1][4];
+    		X1Y4_瞼 = partGroup["瞼"].ToPar();
+    		X1Y4_二重 = partGroup["二重"].ToPar();
+    		pars2 = partGroup["睫毛"].ToPars();
     		X1Y4_睫毛_睫毛3 = pars2["睫毛3"].ToPar();
     		X1Y4_睫毛_睫毛1 = pars2["睫毛1"].ToPar();
     		X1Y4_睫毛_睫毛2 = pars2["睫毛2"].ToPar();
@@ -676,7 +676,7 @@ namespace SlaveMatrix
     		Intensity = e.濃度;
     	}
 
-    	private void 睫毛長さ(Par p, double d)
+    	private void 睫毛長さ(ShapePart p, double d)
     	{
     		double num = 0.0;
     		double num2 = 1.5;
@@ -865,7 +865,7 @@ namespace SlaveMatrix
     	private void 配色N0(BodyColorSet 体配色)
     	{
     		瞼CD = new ColorD(ref 体配色.睫毛.Col1, ref 体配色.人肌O);
-    		二重CD = new ColorD(ref Col.Black, ref 体配色.人肌O);
+    		二重CD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌O);
     		睫毛_睫毛3CD = new ColorD(ref 体配色.睫毛.Col1, ref 体配色.睫毛);
     		睫毛_睫毛1CD = new ColorD(ref 体配色.睫毛.Col1, ref 体配色.睫毛);
     		睫毛_睫毛2CD = new ColorD(ref 体配色.睫毛.Col1, ref 体配色.睫毛);

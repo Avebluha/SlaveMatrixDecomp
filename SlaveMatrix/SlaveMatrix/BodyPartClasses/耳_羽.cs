@@ -4,65 +4,65 @@ namespace SlaveMatrix
 {
     public class 耳_羽 : 耳
     {
-    	public Par X0Y0_羽2;
+    	public ShapePart X0Y0_羽2;
 
-    	public Par X0Y0_羽1;
+    	public ShapePart X0Y0_羽1;
 
-    	public Par X0Y0_耳;
+    	public ShapePart X0Y0_耳;
 
-    	public Par X0Y0_耳線1;
+    	public ShapePart X0Y0_耳線1;
 
-    	public Par X0Y0_耳線2;
+    	public ShapePart X0Y0_耳線2;
 
-    	public Par X0Y1_羽2;
+    	public ShapePart X0Y1_羽2;
 
-    	public Par X0Y1_羽1;
+    	public ShapePart X0Y1_羽1;
 
-    	public Par X0Y1_耳;
+    	public ShapePart X0Y1_耳;
 
-    	public Par X0Y1_耳線1;
+    	public ShapePart X0Y1_耳線1;
 
-    	public Par X0Y1_耳線2;
+    	public ShapePart X0Y1_耳線2;
 
-    	public Par X0Y2_羽2;
+    	public ShapePart X0Y2_羽2;
 
-    	public Par X0Y2_羽1;
+    	public ShapePart X0Y2_羽1;
 
-    	public Par X0Y2_耳;
+    	public ShapePart X0Y2_耳;
 
-    	public Par X0Y2_耳線1;
+    	public ShapePart X0Y2_耳線1;
 
-    	public Par X0Y2_耳線2;
+    	public ShapePart X0Y2_耳線2;
 
-    	public Par X1Y0_羽2;
+    	public ShapePart X1Y0_羽2;
 
-    	public Par X1Y0_羽1;
+    	public ShapePart X1Y0_羽1;
 
-    	public Par X1Y0_耳;
+    	public ShapePart X1Y0_耳;
 
-    	public Par X1Y0_耳線1;
+    	public ShapePart X1Y0_耳線1;
 
-    	public Par X1Y0_耳線2;
+    	public ShapePart X1Y0_耳線2;
 
-    	public Par X1Y1_羽2;
+    	public ShapePart X1Y1_羽2;
 
-    	public Par X1Y1_羽1;
+    	public ShapePart X1Y1_羽1;
 
-    	public Par X1Y1_耳;
+    	public ShapePart X1Y1_耳;
 
-    	public Par X1Y1_耳線1;
+    	public ShapePart X1Y1_耳線1;
 
-    	public Par X1Y1_耳線2;
+    	public ShapePart X1Y1_耳線2;
 
-    	public Par X1Y2_羽2;
+    	public ShapePart X1Y2_羽2;
 
-    	public Par X1Y2_羽1;
+    	public ShapePart X1Y2_羽1;
 
-    	public Par X1Y2_耳;
+    	public ShapePart X1Y2_耳;
 
-    	public Par X1Y2_耳線1;
+    	public ShapePart X1Y2_耳線1;
 
-    	public Par X1Y2_耳線2;
+    	public ShapePart X1Y2_耳線2;
 
     	public ColorD 羽2CD;
 
@@ -321,46 +321,46 @@ namespace SlaveMatrix
     	public 耳_羽(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 耳_羽D e)
     	{
     		ThisType = GetType();
-    		Body = new Difs();
+    		Body = new VariantGrid();
     		Body.Tag = "羽";
-    		Body.Add(new Dif(Sta.肢左["耳"][8]));
-    		Body.Add(new Dif(Sta.肢左["耳"][9]));
-    		Pars pars = Body[0][0];
-    		X0Y0_羽2 = pars["羽2"].ToPar();
-    		X0Y0_羽1 = pars["羽1"].ToPar();
-    		X0Y0_耳 = pars["耳"].ToPar();
-    		X0Y0_耳線1 = pars["耳線1"].ToPar();
-    		X0Y0_耳線2 = pars["耳線2"].ToPar();
-    		pars = Body[0][1];
-    		X0Y1_羽2 = pars["羽2"].ToPar();
-    		X0Y1_羽1 = pars["羽1"].ToPar();
-    		X0Y1_耳 = pars["耳"].ToPar();
-    		X0Y1_耳線1 = pars["耳線1"].ToPar();
-    		X0Y1_耳線2 = pars["耳線2"].ToPar();
-    		pars = Body[0][2];
-    		X0Y2_羽2 = pars["羽2"].ToPar();
-    		X0Y2_羽1 = pars["羽1"].ToPar();
-    		X0Y2_耳 = pars["耳"].ToPar();
-    		X0Y2_耳線1 = pars["耳線1"].ToPar();
-    		X0Y2_耳線2 = pars["耳線2"].ToPar();
-    		pars = Body[1][0];
-    		X1Y0_羽2 = pars["羽2"].ToPar();
-    		X1Y0_羽1 = pars["羽1"].ToPar();
-    		X1Y0_耳 = pars["耳"].ToPar();
-    		X1Y0_耳線1 = pars["耳線1"].ToPar();
-    		X1Y0_耳線2 = pars["耳線2"].ToPar();
-    		pars = Body[1][1];
-    		X1Y1_羽2 = pars["羽2"].ToPar();
-    		X1Y1_羽1 = pars["羽1"].ToPar();
-    		X1Y1_耳 = pars["耳"].ToPar();
-    		X1Y1_耳線1 = pars["耳線1"].ToPar();
-    		X1Y1_耳線2 = pars["耳線2"].ToPar();
-    		pars = Body[1][2];
-    		X1Y2_羽2 = pars["羽2"].ToPar();
-    		X1Y2_羽1 = pars["羽1"].ToPar();
-    		X1Y2_耳 = pars["耳"].ToPar();
-    		X1Y2_耳線1 = pars["耳線1"].ToPar();
-    		X1Y2_耳線2 = pars["耳線2"].ToPar();
+    		Body.Add(new MorphVariant(GlobalState.肢左["耳"][8]));
+    		Body.Add(new MorphVariant(GlobalState.肢左["耳"][9]));
+    		PartGroup partGroup = Body[0][0];
+    		X0Y0_羽2 = partGroup["羽2"].ToPar();
+    		X0Y0_羽1 = partGroup["羽1"].ToPar();
+    		X0Y0_耳 = partGroup["耳"].ToPar();
+    		X0Y0_耳線1 = partGroup["耳線1"].ToPar();
+    		X0Y0_耳線2 = partGroup["耳線2"].ToPar();
+    		partGroup = Body[0][1];
+    		X0Y1_羽2 = partGroup["羽2"].ToPar();
+    		X0Y1_羽1 = partGroup["羽1"].ToPar();
+    		X0Y1_耳 = partGroup["耳"].ToPar();
+    		X0Y1_耳線1 = partGroup["耳線1"].ToPar();
+    		X0Y1_耳線2 = partGroup["耳線2"].ToPar();
+    		partGroup = Body[0][2];
+    		X0Y2_羽2 = partGroup["羽2"].ToPar();
+    		X0Y2_羽1 = partGroup["羽1"].ToPar();
+    		X0Y2_耳 = partGroup["耳"].ToPar();
+    		X0Y2_耳線1 = partGroup["耳線1"].ToPar();
+    		X0Y2_耳線2 = partGroup["耳線2"].ToPar();
+    		partGroup = Body[1][0];
+    		X1Y0_羽2 = partGroup["羽2"].ToPar();
+    		X1Y0_羽1 = partGroup["羽1"].ToPar();
+    		X1Y0_耳 = partGroup["耳"].ToPar();
+    		X1Y0_耳線1 = partGroup["耳線1"].ToPar();
+    		X1Y0_耳線2 = partGroup["耳線2"].ToPar();
+    		partGroup = Body[1][1];
+    		X1Y1_羽2 = partGroup["羽2"].ToPar();
+    		X1Y1_羽1 = partGroup["羽1"].ToPar();
+    		X1Y1_耳 = partGroup["耳"].ToPar();
+    		X1Y1_耳線1 = partGroup["耳線1"].ToPar();
+    		X1Y1_耳線2 = partGroup["耳線2"].ToPar();
+    		partGroup = Body[1][2];
+    		X1Y2_羽2 = partGroup["羽2"].ToPar();
+    		X1Y2_羽1 = partGroup["羽1"].ToPar();
+    		X1Y2_耳 = partGroup["耳"].ToPar();
+    		X1Y2_耳線1 = partGroup["耳線1"].ToPar();
+    		X1Y2_耳線2 = partGroup["耳線2"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;
@@ -535,29 +535,29 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		羽2CD = new ColorD(ref Col.Black, ref 体配色.羽0O);
-    		羽1CD = new ColorD(ref Col.Black, ref 体配色.羽0O);
-    		耳CD = new ColorD(ref Col.Black, ref 体配色.羽0O);
-    		耳線1CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		耳線2CD = new ColorD(ref Col.Black, ref Color2.Empty);
+    		羽2CD = new ColorD(ref ColorHelper.Black, ref 体配色.羽0O);
+    		羽1CD = new ColorD(ref ColorHelper.Black, ref 体配色.羽0O);
+    		耳CD = new ColorD(ref ColorHelper.Black, ref 体配色.羽0O);
+    		耳線1CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		耳線2CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
     	}
 
     	private void 配色T0(BodyColorSet 体配色)
     	{
-    		羽2CD = new ColorD(ref Col.Black, ref 体配色.羽0O);
-    		羽1CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		耳CD = new ColorD(ref Col.Black, ref 体配色.羽0O);
-    		耳線1CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		耳線2CD = new ColorD(ref Col.Black, ref Color2.Empty);
+    		羽2CD = new ColorD(ref ColorHelper.Black, ref 体配色.羽0O);
+    		羽1CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		耳CD = new ColorD(ref ColorHelper.Black, ref 体配色.羽0O);
+    		耳線1CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		耳線2CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
     	}
 
     	private void 配色T1(BodyColorSet 体配色)
     	{
-    		羽2CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		羽1CD = new ColorD(ref Col.Black, ref 体配色.羽0O);
-    		耳CD = new ColorD(ref Col.Black, ref 体配色.刺青O);
-    		耳線1CD = new ColorD(ref Col.Black, ref Color2.Empty);
-    		耳線2CD = new ColorD(ref Col.Black, ref Color2.Empty);
+    		羽2CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		羽1CD = new ColorD(ref ColorHelper.Black, ref 体配色.羽0O);
+    		耳CD = new ColorD(ref ColorHelper.Black, ref 体配色.刺青O);
+    		耳線1CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
+    		耳線2CD = new ColorD(ref ColorHelper.Black, ref Color2.Empty);
     	}
     }
 }

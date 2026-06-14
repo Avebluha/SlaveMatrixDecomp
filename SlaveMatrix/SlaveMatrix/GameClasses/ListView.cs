@@ -5,14 +5,13 @@ using _2DGAMELIB;
 
 namespace SlaveMatrix
 {
-    //Text Actions
-    public struct TA
+    public struct TextAction
     {
         public string Text;
 
-        public Action<But> act;
+        public Action<ButtonBase> act;
 
-        public TA(string Text, Action<But> act)
+        public TextAction(string Text, Action<ButtonBase> act)
         {
             this.Text = Text;
             this.act = act;
@@ -25,9 +24,9 @@ namespace SlaveMatrix
     {
     	private RenderArea Are;
 
-    	private ParT[] pt;
+    	private ShapePartT[] pt;
 
-    	public Buts bs;
+    	public ButtonMap bs;
 
     	private double Space;
 
@@ -35,12 +34,12 @@ namespace SlaveMatrix
 
     	private Vector2D p;
 
-    	public IEnumerable<TA> Acts
+    	public IEnumerable<TextAction> Acts
     	{
     		set
     		{
     			int num = 0;
-    			foreach (TA item in value)
+    			foreach (TextAction item in value)
     			{
     				pt[num].Text = item.Text;
     				bs[num.ToString()].Action = item.act;
@@ -61,7 +60,7 @@ namespace SlaveMatrix
     			double num = 0.0;
     			double num2 = pt[0].GetOP()[0].ps[3].Y * pt[0].GetSizeBase();
     			num2 += num2 * Space;
-    			ParT[] array = pt;
+    			ShapePartT[] array = pt;
     			for (int i = 0; i < array.Length; i++)
     			{
     				array[i].SetPositionBase(p.AddY(num));
@@ -70,15 +69,15 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public ListView(RenderArea Are, Vector2D Position, double Space, Font Font, double TextSize, Color TextColor, Color ShadColor, Color BackColor, Color FramColor, params TA[] acts)
+    	public ListView(RenderArea Are, Vector2D Position, double Space, Font Font, double TextSize, Color TextColor, Color ShadColor, Color BackColor, Color FramColor, params TextAction[] acts)
     	{
     		this.Are = Are;
     		this.Space = Space;
-    		pt = new ParT[acts.Length];
-    		bs = new Buts();
+    		pt = new ShapePartT[acts.Length];
+    		bs = new ButtonMap();
     		for (int i = 0; i < acts.Length; i++)
     		{
-    			pt[i] = new ParT();
+    			pt[i] = new ShapePartT();
     			pt[i].Text = acts[i].Text;
     			pt[i].SetSizeBase(0.095);
     			pt[i].SetFont(Font);
@@ -93,7 +92,7 @@ namespace SlaveMatrix
     			}
     			pt[i].SetBrushColor(BackColor);
     			pt[i].SetPenColor(FramColor);
-    			bs.Add(i.ToString(), new But1(pt[i], acts[i].act));
+    			bs.Add(i.ToString(), new Button(pt[i], acts[i].act));
     		}
     		this.Position = Position;
     		LocalHeight = Are.LocalHeight;
@@ -101,8 +100,8 @@ namespace SlaveMatrix
 
     	public void SetHitColor(ModeEventDispatcher Med)
     	{
-    		ParT[] array = pt;
-    		foreach (ParT obj in array)
+    		ShapePartT[] array = pt;
+    		foreach (ShapePartT obj in array)
     		{
     			obj.SetHitColor(Med.GetUniqueColor());
     			obj.SetHitColor(Med.GetUniqueColor());

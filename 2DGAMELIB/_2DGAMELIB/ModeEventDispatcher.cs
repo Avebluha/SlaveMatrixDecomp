@@ -29,11 +29,11 @@ namespace _2DGAMELIB
         public Bitmap Hit;
         public Graphics HitGraphics;
 
-        public Sce Sce;
-        public FPS FPSF = new FPS(60.0);
+        public SceneFader SceneFader;
+        public FpsCounter FPSF = new FpsCounter(60.0);
 
         private Size BaseSize = Size.Empty;
-        private Vector2D resVector = Dat.Vec2DZero;
+        private Vector2D resVector = DataConsts.Vec2DZero;
 
         public string UITitle;
 
@@ -60,11 +60,11 @@ namespace _2DGAMELIB
             }
             set
             {
-                Modes[mode].Up(MouseButtons.None, Dat.Vec2DZero, Color.Empty);
-                Modes[mode].Move(MouseButtons.None, Dat.Vec2DZero, Color.Empty);
+                Modes[mode].Up(MouseButtons.None, DataConsts.Vec2DZero, Color.Empty);
+                Modes[mode].Move(MouseButtons.None, DataConsts.Vec2DZero, Color.Empty);
                 Modeb = mode;
                 mode = value;
-                Modes[mode].Move(MouseButtons.None, Dat.Vec2DZero, Color.Empty);
+                Modes[mode].Move(MouseButtons.None, DataConsts.Vec2DZero, Color.Empty);
                 Modes[mode].Setting();
             }
         }
@@ -84,12 +84,12 @@ namespace _2DGAMELIB
 
     	public void FadeIn(double Rate)
     	{
-    		Sce.TransformAlpha(DisplayGraphics, Rate);
+    		SceneFader.TransformAlpha(DisplayGraphics, Rate);
     	}
 
     	public void FadeOut(double Rate)
     	{
-    		Sce.TransD(DisplayGraphics, Rate);
+    		SceneFader.TransD(DisplayGraphics, Rate);
     	}
 
     	public void InitializeModes(string Mode, Func<ModeEventDispatcher, Dictionary<string, Module>> GetModes)
@@ -121,7 +121,7 @@ namespace _2DGAMELIB
 
             WidthM = Hit.Width - 1;
     		HeightM = Hit.Height - 1;
-    		Sce = new Sce(BaseSize.Width, BaseSize.Height);
+    		SceneFader = new SceneFader(BaseSize.Width, BaseSize.Height);
     		Modes = GetModes(this);
 
 
@@ -347,10 +347,10 @@ namespace _2DGAMELIB
         //hit color stuff
         public Color GetUniqueColor()
     	{
-    		Oth.GetRandomColor(out var ret);
+    		GeometryUtils.GetRandomColor(out var ret);
     		while (HitColors.Contains(ret))
     		{
-    			Oth.GetRandomColor(out ret);
+    			GeometryUtils.GetRandomColor(out ret);
     		}
     		HitColors.Add(ret);
     		return ret;
@@ -358,17 +358,17 @@ namespace _2DGAMELIB
 
     	public void GetUniqueColor(out Color c)
     	{
-    		Oth.GetRandomColor(out c);
+    		GeometryUtils.GetRandomColor(out c);
     		while (HitColors.Contains(c))
     		{
-    			Oth.GetRandomColor(out c);
+    			GeometryUtils.GetRandomColor(out c);
     		}
     		HitColors.Add(c);
     	}
 
-    	public void SetUniqueColor(IEnumerable<Par> ps)
+    	public void SetUniqueColor(IEnumerable<ShapePart> ps)
     	{
-    		foreach (Par p in ps)
+    		foreach (ShapePart p in ps)
     		{
     			p.SetHitColor(GetUniqueColor());
     		}
@@ -379,9 +379,9 @@ namespace _2DGAMELIB
     		HitColors.Remove(Color);
     	}
 
-    	public void RemUniqueColor(IEnumerable<Par> ps)
+    	public void RemUniqueColor(IEnumerable<ShapePart> ps)
     	{
-    		foreach (Par p in ps)
+    		foreach (ShapePart p in ps)
     		{
     			HitColors.Remove(p.GetHitColor());
     		}

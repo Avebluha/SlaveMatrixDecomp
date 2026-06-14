@@ -9,7 +9,7 @@ namespace SlaveMatrix
     {
     	public Head 頭;
 
-    	private Ele[] 瞼;
+    	private Element[] 瞼;
 
     	private Vector2D[] mm;
 
@@ -19,7 +19,7 @@ namespace SlaveMatrix
     		瞼 = EnumNoNull(単瞼, 瞼左, 瞼右, 額瞼, 頬左, 頬右).ToArray();
     	}
 
-    	private IEnumerable<Ele> EnumNoNull(単瞼 単瞼, 双瞼 瞼左, 双瞼 瞼右, 縦瞼 額瞼, 頬瞼 頬左, 頬瞼 頬右)
+    	private IEnumerable<Element> EnumNoNull(単瞼 単瞼, 双瞼 瞼左, 双瞼 瞼右, 縦瞼 額瞼, 頬瞼 頬左, 頬瞼 頬右)
     	{
     		if (瞼 != null)
     		{
@@ -51,14 +51,14 @@ namespace SlaveMatrix
     	{
     		頭.X0Y0_Head.GetMiY_MaY(out mm);
     		頭.色更新(mm);
-    		Ele[] array = 瞼;
+    		Element[] array = 瞼;
     		for (int i = 0; i < array.Length; i++)
     		{
     			array[i].色更新(mm);
     		}
     	}
 
-    	public bool Contains(Ele e)
+    	public bool Contains(Element e)
     	{
     		if (e != 頭)
     		{
