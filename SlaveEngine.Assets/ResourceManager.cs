@@ -1,61 +1,78 @@
-using System;
-using System.Collections.Generic;
 using System.Reflection;
+using System.Text;
 
 namespace SlaveEngine.Assets;
 
 public sealed class ResourceManager {
 
-    public ResourceManager(string basePath)
-    {
+    public ResourceManager(string basePath) {
         if (!Path.Exists(basePath))
             throw new DirectoryNotFoundException($"The base path '{basePath}' does not exist.");
         BasePath = basePath;
         Instance = this;
     }
 
-    private AssetProcessor? GetProcessorForExtension(string extension) =>
-        _assetProcessors.FirstOrDefault(p => (bool)p.GetType()
-            .GetCustomAttribute<AssetProcessorAttribute>()?.ManagedExtensions
-            .Contains(extension)
-        );
-
     public static ResourceManager? Instance { get; private set; }
-
-    private List<AssetProcessor> _assetProcessors = new();
-
     public string BasePath { get; private set; }
 
-    public void Initialize(string basePath)
-    {
-        ScanDirectory(basePath);
+    private readonly List<AssetProcessor> _assetProcessors = new();
+    private readonly Dictionary<string, string> _assetIndex = new();
+    private readonly Dictionary<string, Asset> _assetCache = new();
+
+    public void Initialize() {
+        ScanDirectory(BasePath);
     }
 
-    private void ScanDirectory(string directory)
-    {
-        var files = Directory.GetFiles(directory);
-        foreach (var file in files)
-        {
-            var ext = Path.GetExtension(file);
-            // check if we can process this extension
-            var processor = GetProcessorForExtension(ext);
-            if (processor == null) continue;
-
-            var name = Path.GetFileNameWithoutExtension(file);
-            AssetFileInfo fileInfo = new()
-            {
-                Filename = name,
-                FilePath = file
-            };
-
-            processor.Process(fileInfo, File.ReadAllBytes(file));
+    private void ScanDirectory(string directory) {
+        foreach (var file in Directory.GetFiles(directory, "*.spart")) {
+            try {
+                var id = ReadAssetIdFromSpart(file);
+                _assetIndex[id] = file;
+            } catch {
+                // skip corrupt files
+            }
         }
     }
 
-    public void RegisterProcessor(AssetProcessor processor)
-    {
-        //make sure the processor for this type isn't already in:
-        var ap = _assetProcessors.FirstOrDefault(p => p.GetType() == processor.GetType());
-        if (ap == null) _assetProcessors.Add(processor);
+    public T? GetAsset<T>(string id) where T : Asset {
+        if (_assetCache.TryGetValue(id, out var cached))
+            return (T)cached;
+
+        if (!_assetIndex.TryGetValue(id, out var path))
+            return null;
+
+        var ext = Path.GetExtension(path);
+        var processor = GetProcessorForExtension(ext);
+        if (processor == null)
+            return null;
+
+        var fileInfo = new AssetFileInfo {
+            Filename = Path.GetFileNameWithoutExtension(path),
+            FilePath = path
+        };
+
+        var asset = processor.Process(fileInfo, File.ReadAllBytes(path));
+        _assetCache[id] = asset;
+        return (T)asset;
+    }
+
+    public IReadOnlyCollection<string> GetAssetIds() => _assetIndex.Keys;
+
+    public void RegisterProcessor(AssetProcessor processor) {
+        if (_assetProcessors.All(p => p.GetType() != processor.GetType()))
+            _assetProcessors.Add(processor);
+    }
+
+    private AssetProcessor? GetProcessorForExtension(string extension) =>
+        _assetProcessors.FirstOrDefault(p => p.GetType()
+            .GetCustomAttribute<AssetProcessorAttribute>()?.ManagedExtensions
+            .Contains(extension) == true);
+
+    private static string ReadAssetIdFromSpart(string path) {
+        using var stream = File.OpenRead(path);
+        using var reader = new BinaryReader(stream);
+        reader.ReadBytes(8);
+        var len = reader.ReadInt32();
+        return Encoding.UTF8.GetString(reader.ReadBytes(len));
     }
 }
