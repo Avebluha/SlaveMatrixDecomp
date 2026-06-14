@@ -5,6 +5,7 @@ using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Diagnostics;
+using System.Numerics;
 
 namespace _2DGAMELIB
 {
@@ -12,19 +13,6 @@ namespace _2DGAMELIB
     [Serializable]
     public class ShapePart
     {
-        //FOR TESTS
-        public static long TCalc;
-        public static long TCalcH;
-        public static long TFill;
-        public static long TOutline;
-        public static long THitFill;
-
-        public static int NCalc;
-        public static int NCalcH;
-        public static int NFill;
-        public static int NOutline;
-        public static int NHitFill;
-
         private PartGroup parent;
 
     	public string Tag = "";
@@ -35,7 +23,6 @@ namespace _2DGAMELIB
 
     	protected Vector2D basePointBase = DataConsts.Vec2DZero;
 
-        //cont short for contract?
         protected Vector2D basePointCont = DataConsts.Vec2DZero;
 
     	protected Vector2D positionBase = DataConsts.Vec2DZero;
@@ -66,41 +53,17 @@ namespace _2DGAMELIB
 
     	protected double ySizeCont = 1.0;
 
-    	public bool Dra = true;
-
-    	private bool closed;
-
-        [NonSerialized, JsonIgnore]
-    	protected Pen pen = new Pen(Color.Black, 1f);
-
     	protected double penWidth;
 
-    	private bool EditP = true;
+		
+        [NonSerialized, JsonIgnore]
+    	protected Pen pen = new Pen(Color.Black, 1f);
 
         [NonSerialized, JsonIgnore]
     	protected Brush brush = new SolidBrush(Color.LightGray);
 
-    	public bool Hit = true;
-
         [NonSerialized, JsonIgnore]
     	protected SolidBrush HitBrush = new SolidBrush(Color.Transparent);
-
-    	private double us;
-
-    	private double usx;
-
-    	private double usy;
-
-    	private Vector2D bp;
-
-    	private Vector2D mv;
-
-    	private double angle;
-
-    	private double M11;
-
-    	private double M12;
-
 
         [NonSerialized, JsonIgnore]
     	private GraphicsPath Path = new GraphicsPath();
@@ -108,445 +71,274 @@ namespace _2DGAMELIB
         [NonSerialized, JsonIgnore]
     	private GraphicsPath OutlinePath = new GraphicsPath();
 
-    	private Vector2D p;
-
-    	private Vector2D v;
-
-    	private PointF[] points;
-
-    	protected bool Edit = true;
-
-    	protected bool EditS = true;
-
-    	protected bool EditPS = true;
-
-    	private double ush;
-
-    	private double usxh;
-
-    	private double usyh;
-
-    	private Vector2D bph;
-
-    	private Vector2D mvh;
-
-    	private double ah;
-
-    	private double M11h;
-
-    	private double M12h;
-
         [NonSerialized, JsonIgnore]
     	private GraphicsPath gph = new GraphicsPath();
 
-    	private Vector2D ph;
 
-    	private Vector2D vh;
+    	public bool Dra = true;
+    	public bool Hit = true;
+    	private bool closed;
 
-    	private PointF[] psh;
+        public PartGroup GetParent()
+        {
+            return parent;
+        }
 
-    	private bool EditH = true;
+        public List<CurveOutline> GetOP()
+        {
+            return op;
+        }
 
-    	public PartGroup Parent => parent;
+        public void SetInitializeOP(IEnumerable<CurveOutline> value)
+        {
+            op.Clear();
+            op.AddRange(value);
+        }
 
-    	public List<CurveOutline> OP
-    	{
-    		get
-    		{
-    			Edit = true;
-    			EditH = true;
-    			return op;
-    		}
-    		set
-    		{
-    			op = value;
-    			Edit = true;
-    			EditH = true;
-    		}
-    	}
+        public List<JointPoint> GetJP()
+        {
+            return jp;
+        }
 
-    	public IEnumerable<CurveOutline> InitializeOP
-    	{
-    		set
-    		{
-    			op.Clear();
-    			op.AddRange(value);
-    			Edit = true;
-    			EditH = true;
-    		}
-    	}
+        public Vector2D GetBasePointBase()
+        {
+            return basePointBase;
+        }
 
-    	public List<JointPoint> JP
-    	{
-    		get
-    		{
-    			return jp;
-    		}
-    		set
-    		{
-    			jp = value;
-    		}
-    	}
+        public void SetBasePointBase(Vector2D value)
+        {
+            basePointBase = value;
+        }
 
-    	public IEnumerable<JointPoint> InitializeJP
-    	{
-    		set
-    		{
-    			jp.Clear();
-    			jp.AddRange(value);
-    		}
-    	}
+        public Vector2D GetBasePointCont()
+        {
+            return basePointCont;
+        }
 
-    	public Vector2D BasePointBase
-    	{
-    		get
-    		{
-    			return basePointBase;
-    		}
-    		set
-    		{
-    			basePointBase = value;
-    			Edit = true;
-    			EditH = true;
-    		}
-    	}
+        public void SetBasePointCont(Vector2D value)
+        {
+            basePointCont = value;
+        }
 
-    	public Vector2D BasePointCont
-    	{
-    		get
-    		{
-    			return basePointCont;
-    		}
-    		set
-    		{
-    			basePointCont = value;
-    			Edit = true;
-    			EditH = true;
-    		}
-    	}
+        public Vector2D GetBasePoint()
+        {
+            return basePointBase + basePointCont;
+        }
 
-    	public Vector2D BasePoint => basePointBase + basePointCont;
+        public Vector2D GetPositionBase()
+        {
+            return positionBase;
+        }
 
-    	public Vector2D PositionBase
-    	{
-    		get
-    		{
-    			return positionBase;
-    		}
-    		set
-    		{
-    			positionBase = value;
-    			Edit = true;
-    			EditH = true;
-    		}
-    	}
+        public void SetPositionBase(Vector2D value)
+        {
+            positionBase = value;
+        }
 
-    	public Vector2D PositionCont
-    	{
-    		get
-    		{
-    			return positionContO;
-    		}
-    		set
-    		{
-    			positionContO = value;
-    			Edit = true;
-    			EditH = true;
-    		}
-    	}
+        public Vector2D GetPositionCont()
+        {
+            return positionCont;
+        }
 
-    	public Vector2D Position
-    	{
-    		get
-    		{
-    			double d = System.Math.PI * AngleParent / 180.0;
-    			double num = System.Math.Cos(d);
-    			double num2 = System.Math.Sin(d);
-    			positionCont.X = positionContO.X * num + positionContO.Y * (0.0 - num2);
-    			positionCont.Y = positionContO.X * num2 + positionContO.Y * num;
-    			return (positionBase + positionCont) * positionSize + positionVector;
-    		}
-    	}
+        public void SetPositionCont(Vector2D value)
+        {
+            positionCont = value;
+        }
 
-    	public Vector2D Position_nc
-    	{
-    		get
-    		{
-    			double d = System.Math.PI * AngleParent / 180.0;
-                System.Math.Cos(d);
-                System.Math.Sin(d);
-    			return positionBase * positionSize + positionVector;
-    		}
-    	}
+        public Vector2D GetPosition()
+        {
+            double d = System.Math.PI * anglePare / 180.0;
+            double num = System.Math.Cos(d);
+            double num2 = System.Math.Sin(d);
+			Vector2D positionCont;
+            positionCont.X = this.positionCont.X * num - this.positionCont.Y * num2;
+            positionCont.Y = this.positionCont.X * num2 + this.positionCont.Y * num;
+            return (positionBase + positionCont) * positionSize;
+        }
 
-    	public double PositionSize
-    	{
-    		get
-    		{
-    			return positionSize;
-    		}
-    		set
-    		{
-    			positionSize = value;
-    			Edit = true;
-    			EditH = true;
-    			EditPS = true;
-    		}
-    	}
+        public void SetAngleParent(double value)
+        {
+            anglePare = value;
+        }
 
-    	public Vector2D PositionVector
-    	{
-    		get
-    		{
-    			return positionVector;
-    		}
-    		set
-    		{
-    			positionVector = value;
-    			Edit = true;
-    			EditH = true;
-    		}
-    	}
+        public double GetAngleBase()
+        {
+            return angleBase;
+        }
 
-    	public double AngleParent
-    	{
-    		get
-    		{
-    			return anglePare;
-    		}
-    		set
-    		{
-    			anglePare = value;
-    			Edit = true;
-    			EditH = true;
-    		}
-    	}
+        public void SetAngleBase(double value)
+        {
+            angleBase = value;
+        }
 
-    	public double AngleBase
-    	{
-    		get
-    		{
-    			return angleBase;
-    		}
-    		set
-    		{
-    			angleBase = value;
-    			Edit = true;
-    			EditH = true;
-    		}
-    	}
+        public double GetAngleCont()
+        {
+            return angleCont;
+        }
 
-    	public double AngleCont
-    	{
-    		get
-    		{
-    			return angleCont;
-    		}
-    		set
-    		{
-    			angleCont = value;
-    			Edit = true;
-    			EditH = true;
-    		}
-    	}
+        public void SetAngleCont(double value)
+        {
+            angleCont = value;
+        }
 
-    	public double Angle => anglePare + angleBase + angleCont;
+        public double GetAngle()
+        {
+            return anglePare + angleBase + angleCont;
+        }
 
-    	public double SizeBase
-    	{
-    		get
-    		{
-    			return sizeBase;
-    		}
-    		set
-    		{
-    			sizeBase = value;
-    			Edit = true;
-    			EditH = true;
-    			EditS = true;
-    		}
-    	}
+        public double GetSizeBase()
+        {
+            return sizeBase;
+        }
 
-    	public double SizeCont
-    	{
-    		get
-    		{
-    			return sizeCont;
-    		}
-    		set
-    		{
-    			sizeCont = value;
-    			Edit = true;
-    			EditH = true;
-    			EditS = true;
-    		}
-    	}
+        public void SetSizeBase(double value)
+        {
+            sizeBase = value;
+        }
 
-    	public double Size => sizeBase * sizeCont * positionSize;
+        public double GetSizeCont()
+        {
+            return sizeCont;
+        }
 
-    	public double SizeXBase
-    	{
-    		get
-    		{
-    			return xSizeBase;
-    		}
-    		set
-    		{
-    			xSizeBase = value;
-    			Edit = true;
-    			EditH = true;
-    		}
-    	}
+        public void SetSizeCont(double value)
+        {
+            sizeCont = value;
+        }
 
-    	public double SizeXCont
-    	{
-    		get
-    		{
-    			return xSizeCont;
-    		}
-    		set
-    		{
-    			xSizeCont = value;
-    			Edit = true;
-    			EditH = true;
-    		}
-    	}
+        public double GetSize()
+        {
+            return sizeBase * sizeCont * positionSize;
+        }
 
-    	public double SizeX => xSizeBase * xSizeCont;
+        public double GetSizeXBase()
+        {
+            return xSizeBase;
+        }
 
-    	public double SizeYBase
-    	{
-    		get
-    		{
-    			return ySizeBase;
-    		}
-    		set
-    		{
-    			ySizeBase = value;
-    			Edit = true;
-    			EditH = true;
-    		}
-    	}
+        public void SetSizeXBase(double value)
+        {
+            xSizeBase = value;
+        }
 
-    	public double SizeYCont
-    	{
-    		get
-    		{
-    			return ySizeCont;
-    		}
-    		set
-    		{
-    			ySizeCont = value;
-    			Edit = true;
-    			EditH = true;
-    		}
-    	}
+        public double GetSizeXCont()
+        {
+            return xSizeCont;
+        }
 
-    	public double SizeY => ySizeBase * ySizeCont;
+        public void SetSizeXCont(double value)
+        {
+            xSizeCont = value;
+        }
 
-    	public bool Closed
-    	{
-    		get
-    		{
-    			return closed;
-    		}
-    		set
-    		{
-    			closed = value;
-    			Edit = true;
-    			EditH = true;
-    		}
-    	}
+        public double GetSizeX()
+        {
+            return xSizeBase * xSizeCont;
+        }
 
-    	[JsonIgnore]
-    	public Pen Pen
-    	{
-    		get
-    		{
-    			return pen;
-    		}
-    		set
-    		{
-    			if (pen != value && pen != null)
-    			{
-    				pen.Dispose();
-    			}
-    			pen = value;
-    			if (pen != null)
-    			{
-    				pen.StartCap = LineCap.Round;
-    				pen.EndCap = LineCap.Round;
-    			}
-    			EditP = true;
-    		}
-    	}
+        public double GetSizeYBase()
+        {
+            return ySizeBase;
+        }
 
-    	public double PenWidth
-    	{
-    		get
-    		{
-    			return penWidth;
-    		}
-    		set
-    		{
-    			penWidth = value;
-    			EditP = true;
-    		}
-    	}
+        public void SetSizeYBase(double value)
+        {
+            ySizeBase = value;
+        }
 
-    	public Color PenColor
-    	{
-    		get
-    		{
-    			return pen.Color;
-    		}
-    		set
-    		{
-    			pen.Color = value;
-    		}
-    	}
+        public double GetSizeYCont()
+        {
+            return ySizeCont;
+        }
 
-        [JsonIgnore]
-        public Brush Brush
-    	{
-    		get
-    		{
-    			return brush;
-    		}
-    		set
-    		{
-    			if (brush != value && brush != null)
-    			{
-    				brush.Dispose();
-    			}
-    			brush = value;
-    		}
-    	}
+        public void SetSizeYCont(double value)
+        {
+            ySizeCont = value;
+        }
 
-    	public Color BrushColor
-    	{
-    		get
-    		{
-    			return ((SolidBrush)brush).Color;
-    		}
-    		set
-    		{
-    			((SolidBrush)brush).Color = value;
-    		}
-    	}
+        public double GetSizeY()
+        {
+            return ySizeBase * ySizeCont;
+        }
 
-    	public Color HitColor
-    	{
-    		get
-    		{
-    			return HitBrush.Color;
-    		}
-    		set
-    		{
-    			HitBrush.Color = value;
-    		}
-    	}
-    	public void SetParent(PartGroup Parent)
+        public void SetClosed(bool value)
+        {
+            closed = value;
+        }
+
+        public Pen GetPen()
+        {
+            return pen;
+        }
+
+        public void SetPen(Pen value)
+        {
+            if (pen != value && pen != null)
+            {
+                pen.Dispose();
+            }
+            pen = value;
+            if (pen != null)
+            {
+                pen.StartCap = LineCap.Round;
+                pen.EndCap = LineCap.Round;
+            }
+        }
+
+        public double GetPenWidth()
+        {
+            return penWidth;
+        }
+
+        public void SetPenWidth(double value)
+        {
+            penWidth = value;
+        }
+
+        public Color GetPenColor()
+        {
+            return pen.Color;
+        }
+
+        public void SetPenColor(Color value)
+        {
+            pen.Color = value;
+        }
+
+        public Brush GetBrush1()
+        {
+            return brush;
+        }
+
+        public void SetBrush1(Brush value)
+        {
+            if (brush != value && brush != null)
+            {
+                brush.Dispose();
+            }
+            brush = value;
+        }
+
+        public Color GetBrushColor()
+        {
+            return ((SolidBrush)brush).Color;
+        }
+
+        public void SetBrushColor(Color value)
+        {
+            ((SolidBrush)brush).Color = value;
+        }
+
+        public Color GetHitColor()
+        {
+            return HitBrush.Color;
+        }
+
+        public void SetHitColor(Color value)
+        {
+            HitBrush.Color = value;
+        }
+        public void SetParent(PartGroup Parent)
     	{
     		parent = Parent;
     	}
@@ -598,7 +390,6 @@ namespace _2DGAMELIB
     		positionBase = ShapePart.positionBase;
     		positionContO = ShapePart.positionContO;
     		positionCont = ShapePart.positionCont;
-    		positionSize = ShapePart.positionSize;
     		positionVector = ShapePart.positionVector;
     		anglePare = ShapePart.anglePare;
     		angleBase = ShapePart.angleBase;
@@ -614,11 +405,11 @@ namespace _2DGAMELIB
     		closed = ShapePart.closed;
     		if (ShapePart.pen != null)
     		{
-    			Pen = ShapePart.pen.Copy();
+                SetPen(ShapePart.pen.Copy());
     		}
     		if (ShapePart.brush != null)
     		{
-    			Brush = ShapePart.brush.Copy();
+                SetBrush1(ShapePart.brush.Copy());
     		}
     		Hit = ShapePart.Hit;
     		if (ShapePart.HitBrush != null)
@@ -629,56 +420,35 @@ namespace _2DGAMELIB
 
     	private void Calculation(double Unit)
     	{
+			double us = Unit * (sizeBase * sizeCont * positionSize);
+    		double usx = us * (xSizeBase * xSizeCont);
+    		double usy = us * (ySizeBase * ySizeCont);
 
-            /*
-    			things that affect where this part is drawn
-
-    			Size, SizeX, SizeY, BasePoint, Position, Angle, Unit
-
-    			Size = sizeBase * sizeCont * positionSize
-    			SizeX = xSizeBase * xSizeCont
-    			SizeY = ySizeBase * ySizeCont
-    			BasePoint = basePointBase + basePointCont
-    			Position (AnglePare, positionContO, positionBase, positionCont, positionSize, positionVector)
-    			Angle = anglePare + angleBase + angleCont
-    			AnglePare = anglePare
-
-    			sizeBase, sizeCont, positionSize, xSizeBase, xSizeCont, ySizeBase, ySizeCont,
-    			basePointBase, basePointCont, positionContO, positionBase, positionCont,
-    			positionVector, anglePare, angleBase, angleCont
-			
-    		 */
-
-    		us = Unit * Size;
-    		usx = us * SizeX;
-    		usy = us * SizeY;
-
-    		bp = BasePoint;
+    		Vector2D bp = basePointBase + basePointCont;
     		bp.X *= usx;
     		bp.Y *= usy;
 
-    		mv = Position * Unit - bp;
+    		Vector2D mv = GetPosition() * Unit - bp;
 
-            double a = System.Math.PI * Angle / 180.0;
-            M11 = System.Math.Cos(a);
-            M12 = System.Math.Sin(a);
+            double a = System.Math.PI * (anglePare + angleBase + angleCont) / 180.0;
 
             Path.Reset();
     		OutlinePath.Reset();
     		foreach (CurveOutline item in op)
     		{
-    			points = new PointF[item.ps.Count];
+    			PointF[] points = new PointF[item.ps.Count];
     			for (int i = 0; i < item.ps.Count; i++)
     			{
+					Vector2D p;
     				p.X = item.ps[i].X * usx;
     				p.Y = item.ps[i].Y * usy;
-    				p = Rotate(ref p) + mv;
+    				p = Rotate(ref p, bp, a) + mv;
 
     				points[i].X = (float)p.X;
     				points[i].Y = (float)p.Y;
     			}
 
-    			if (Closed)
+    			if (closed)
     				Path.AddClosedCurve(points, item.Tension);
     			else
     				Path.AddCurve(points, item.Tension);
@@ -687,7 +457,7 @@ namespace _2DGAMELIB
     			{
     				OutlinePath.StartFigure();
 
-    				if (Closed)
+    				if (closed)
     					OutlinePath.AddClosedCurve(points, item.Tension);
     				else
     					OutlinePath.AddCurve(points, item.Tension);
@@ -695,11 +465,15 @@ namespace _2DGAMELIB
     		}
     	}
 
-    	private Vector2D Rotate(ref Vector2D p)
+    	private Vector2D Rotate(ref Vector2D p, Vector2D bp, double a)
     	{
+			double M11 = System.Math.Cos(a);
+            double M12 = System.Math.Sin(a);
+
             p.X -= bp.X;
     		p.Y -= bp.Y;
 
+			Vector2D v;
     		v.X = p.X * M11 + p.Y * (0.0 - M12);
     		v.Y = p.X * M12 + p.Y * M11;
 
@@ -713,67 +487,46 @@ namespace _2DGAMELIB
         {
             if (Dra)
             {
-                if (Edit)
-                {
-                    long t0 = Stopwatch.GetTimestamp();
-                    Calculation(Unit);
-                    TCalc += Stopwatch.GetTimestamp() - t0;
-                    NCalc++;
-                    Edit = false;
-                }
-
-                if (pen != null && (EditP || EditPS))
-                {
-                    pen.Width = (float)(Unit * penWidth * positionSize);
-                    EditP = false;
-                    EditPS = false;
-                }
-
+                Calculation(Unit);
                 if (brush != null)
                 {
-                    long t0 = Stopwatch.GetTimestamp();
                     Graphics.FillPath(brush, Path);
-                    TFill += Stopwatch.GetTimestamp() - t0;
-                    NFill++;
                 }
 
                 if (pen != null)
                 {
-                    long t0 = Stopwatch.GetTimestamp();
+					pen.Width = (float)(Unit * penWidth * positionSize);
                     Graphics.DrawPath(pen, OutlinePath);
-                    TOutline += Stopwatch.GetTimestamp() - t0;
-                    NOutline++;
                 }
             }
         }
 
         private void CalculationH(double Unit)
     	{
-    		ush = Unit * Size;
-    		usxh = ush * SizeX;
-    		usyh = ush * SizeY;
+    		double ush = Unit * (sizeBase * sizeCont * positionSize);
+    		double usxh = ush * (xSizeBase * xSizeCont);
+    		double usyh = ush * (ySizeBase * ySizeCont);
 
-    		bph = BasePoint;
+    		Vector2D bph = basePointBase + basePointCont;
     		bph.X *= usxh;
     		bph.Y *= usyh;
 
-    		mvh = Position;
+    		Vector2D mvh = GetPosition();
     		mvh.X = mvh.X * Unit - bph.X;
     		mvh.Y = mvh.Y * Unit - bph.Y;
-            ah = System.Math.PI * Angle / 180.0;
-            M11h = System.Math.Cos(ah);
-            M12h = System.Math.Sin(ah);
+            double ah = System.Math.PI * GetAngle() / 180.0;
     		gph.Reset();
-    		if (Closed)
+    		if (closed)
     		{
     			foreach (CurveOutline item in op)
     			{
-    				psh = new PointF[item.ps.Count];
+    				PointF[] psh = new PointF[item.ps.Count];
     				for (int i = 0; i < item.ps.Count; i++)
     				{
-    					ph.X = item.ps[i].X * usxh;
+    					Vector2D ph;
+						ph.X = item.ps[i].X * usxh;
     					ph.Y = item.ps[i].Y * usyh;
-    					RotateH(ref ph);
+    					RotateH(ref ph, bph, ah);
     					ph.X += mvh.X;
     					ph.Y += mvh.Y;
     					psh[i].X = (float)ph.X;
@@ -786,12 +539,13 @@ namespace _2DGAMELIB
 
     		foreach (CurveOutline item2 in op)
     		{
-    			psh = new PointF[item2.ps.Count];
+    			PointF[] psh = new PointF[item2.ps.Count];
     			for (int j = 0; j < item2.ps.Count; j++)
     			{
-    				ph.X = item2.ps[j].X * usxh;
+    				Vector2D ph;
+					ph.X = item2.ps[j].X * usxh;
     				ph.Y = item2.ps[j].Y * usyh;
-    				RotateH(ref ph);
+    				RotateH(ref ph, bph, ah);
     				ph.X += mvh.X;
     				ph.Y += mvh.Y;
     				psh[j].X = (float)ph.X;
@@ -801,11 +555,15 @@ namespace _2DGAMELIB
     		}
     	}
 
-    	private void RotateH(ref Vector2D ph)
+    	private void RotateH(ref Vector2D ph, Vector2D bph, double ah)
     	{
+			double M11h = System.Math.Cos(ah);
+            double M12h = System.Math.Sin(ah);
+
     		ph.X -= bph.X;
     		ph.Y -= bph.Y;
 
+			Vector2D vh;
     		vh.X = ph.X * M11h + ph.Y * (0.0 - M12h);
     		vh.Y = ph.X * M12h + ph.Y * M11h;
 
@@ -817,19 +575,8 @@ namespace _2DGAMELIB
         {
             if (Hit)
             {
-                if (EditH)
-                {
-                    long t0 = Stopwatch.GetTimestamp();
-                    CalculationH(Unit);
-                    TCalcH += Stopwatch.GetTimestamp() - t0;
-                    NCalcH++;
-                    EditH = false;
-                }
-
-                long t1 = Stopwatch.GetTimestamp();
+                CalculationH(Unit);
                 Graphics.FillPath(HitBrush, gph);
-                THitFill += Stopwatch.GetTimestamp() - t1;
-                NHitFill++;
             }
         }
 
@@ -837,35 +584,31 @@ namespace _2DGAMELIB
     	{
     		if (Index < jp.Count)
     		{
-    			ShapePart.PositionBase = ToGlobal(jp[Index].Joint);
+    			ShapePart.SetPositionBase(ToGlobal(jp[Index].Joint));
     		}
-    		ShapePart.Edit = true;
-    		ShapePart.EditH = true;
     	}
 
     	public void SetJointPA(int Index, ShapePart ShapePart)
     	{
     		if (Index < jp.Count)
     		{
-    			ShapePart.PositionBase = ToGlobal(jp[Index].Joint);
+    			ShapePart.SetPositionBase(ToGlobal(jp[Index].Joint));
     		}
-    		ShapePart.AngleParent = Angle;
-    		ShapePart.Edit = true;
-    		ShapePart.EditH = true;
+    		ShapePart.SetAngleParent(anglePare + angleBase + angleCont);
     	}
 
     	public Vector2D ToGlobal(Vector2D Local)
     	{
-    		double size = Size;
-    		double xsz = size * SizeX;
-    		double ysz = size * SizeY;
-    		Vector2D basePoint = BasePoint;
+    		double size = sizeBase * sizeCont * positionSize;
+    		double xsz = size * (xSizeBase * xSizeCont);
+    		double ysz = size * (ySizeBase * ySizeCont);
+    		Vector2D basePoint = basePointBase + basePointCont;
     		basePoint.X *= xsz;
     		basePoint.Y *= ysz;
-    		Vector2D position = Position;
+    		Vector2D position = GetPosition();
     		position.X -= basePoint.X;
     		position.Y -= basePoint.Y;
-    		double d = System.Math.PI * Angle / 180.0;
+    		double d = System.Math.PI * GetAngle() / 180.0;
     		double num3 = System.Math.Cos(d);
     		double num4 = System.Math.Sin(d);
     		double num5 = 0.0 - num4;
@@ -888,16 +631,16 @@ namespace _2DGAMELIB
 
     	public Vector2D ToGlobal_nc(Vector2D Local)
     	{
-    		double size = Size;
-    		double num = size * SizeX;
-    		double num2 = size * SizeY;
-    		Vector2D basePoint = BasePoint;
+    		double size = sizeBase * sizeCont * positionSize;
+    		double num = size * (xSizeBase * xSizeCont);
+    		double num2 = size * (ySizeBase * ySizeCont);
+    		Vector2D basePoint = basePointBase + basePointCont;
     		basePoint.X *= num;
     		basePoint.Y *= num2;
-    		Vector2D position_nc = Position_nc;
+    		Vector2D position_nc = positionBase * positionSize;
     		position_nc.X -= basePoint.X;
     		position_nc.Y -= basePoint.Y;
-    		double d = System.Math.PI * Angle / 180.0;
+    		double d = System.Math.PI * (anglePare + angleBase + angleCont) / 180.0;
     		double num3 = System.Math.Cos(d);
     		double num4 = System.Math.Sin(d);
     		double num5 = 0.0 - num4;
@@ -920,18 +663,18 @@ namespace _2DGAMELIB
 
     	public Vector2D ToLocal(Vector2D Global)
     	{
-    		double size = Size;
-    		double num = size * SizeX;
-    		double num2 = size * SizeY;
-    		Vector2D basePoint = BasePoint;
+    		double size = sizeBase * sizeCont * positionSize;
+    		double num = size * (xSizeBase * xSizeCont);
+    		double num2 = size * (ySizeBase * ySizeCont);
+    		Vector2D basePoint = basePointBase + basePointCont;
     		basePoint.X *= num;
     		basePoint.Y *= num2;
-    		Vector2D position = Position;
+    		Vector2D position = GetPosition();
     		position.X = basePoint.X - position.X;
     		position.Y = basePoint.Y - position.Y;
     		num = num.Reciprocal();
     		num2 = num2.Reciprocal();
-    		double d = System.Math.PI * (0.0 - Angle) / 180.0;
+    		double d = System.Math.PI * (0.0 - (anglePare + angleBase + angleCont)) / 180.0;
     		double num3 = System.Math.Cos(d);
     		double num4 = System.Math.Sin(d);
     		double num5 = 0.0 - num4;
@@ -1009,42 +752,6 @@ namespace _2DGAMELIB
     		}
     		num += vector2D2.X * vector2D.Y - vector2D.X * vector2D2.Y;
     		return System.Math.Abs(num * 0.5);
-    	}
-
-    	public void ScalingXY(double Scale)
-    	{
-    		op.ScalingXY(ref basePointBase, Scale);
-    		jp.ScalingXY(ref basePointBase, Scale);
-    	}
-
-    	public void ScalingX(double Scale)
-    	{
-    		op.ScalingX(ref basePointBase, Scale);
-    		jp.ScalingX(ref basePointBase, Scale);
-    	}
-
-    	public void ScalingY(double Scale)
-    	{
-    		op.ScalingY(ref basePointBase, Scale);
-    		jp.ScalingY(ref basePointBase, Scale);
-    	}
-
-    	public void ExpansionXY(double Rate)
-    	{
-    		op.ExpansionXY(ref basePointBase, Rate);
-    		jp.ExpansionXY(ref basePointBase, Rate);
-    	}
-
-    	public void ExpansionX(double Rate)
-    	{
-    		op.ExpansionX(ref basePointBase, Rate);
-    		jp.ExpansionX(ref basePointBase, Rate);
-    	}
-
-    	public void ExpansionY(double Rate)
-    	{
-    		op.ExpansionY(ref basePointBase, Rate);
-    		jp.ExpansionY(ref basePointBase, Rate);
     	}
 
     	public void Dispose()

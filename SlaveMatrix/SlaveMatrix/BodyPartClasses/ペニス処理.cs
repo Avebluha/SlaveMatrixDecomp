@@ -1,6 +1,7 @@
 using System.Drawing;
 using System.Linq;
 using _2DGAMELIB;
+using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
@@ -547,7 +548,7 @@ namespace SlaveMatrix
     		: base(調教UI, ペニス)
     	{
     		ペニス処理 ペニス処理2 = this;
-    		double d = 調教UI.ペニス.X0Y4_陰嚢.BasePointBase.Y - 調教UI.ペニス.X0Y0_陰嚢.BasePointBase.Y;
+    		double d = 調教UI.ペニス.X0Y4_陰嚢.GetBasePointBase().Y - 調教UI.ペニス.X0Y0_陰嚢.GetBasePointBase().Y;
     		Vector2D v = new Vector2D(対象.Element.位置C.X, d);
     		チンピク = new Motion(0.0, 1.0)
     		{
@@ -616,7 +617,7 @@ namespace SlaveMatrix
     				{
     					if (item.Tag != "陰嚢")
     					{
-    						item.SizeXCont = xc;
+    						item.SetSizeXCont(xc);
     					}
     				}
     				調教UI.ペニス.位置C = GeometryUtils.GetRandomVector() * 0.001;
@@ -677,8 +678,8 @@ namespace SlaveMatrix
     					調教UI.射精.Yv = m.Value;
     					if (調教UI.射精.Yv >= 0.65 && 調教UI.Focus == ペニス)
     					{
-    						p = 調教UI.射精.Body.Current.EnumAllPar().First();
-    						cp = p.ToGlobal(p.OP.GetCenter() + GeometryUtils.GetRandomVector() * 0.0025);
+    						p = 調教UI.射精.Body.GetCurrent().EnumAllPar().First();
+    						cp = p.ToGlobal(p.GetOP().GetCenter() + GeometryUtils.GetRandomVector() * 0.0025);
     						hc = ペニス処理2.Med.GetHitColor(ペニス処理2.Med.FromBasePosition(cp));
     						ペニス処理2.Bod.Addぶっかけ(cp, hc);
     						調教UI.Action(c = ペニス処理2.Cha.GetContact(ref hc).c, ActionType.Contact, CurrentState.Start, ToolType.Penis, 0, 1, 機械: false, 射精: true);

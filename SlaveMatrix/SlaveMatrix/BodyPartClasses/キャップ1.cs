@@ -1,4 +1,5 @@
 using _2DGAMELIB;
+using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
@@ -163,10 +164,10 @@ namespace SlaveMatrix
     		X0Y0_根本CP = new ColorP(X0Y0_根本, 根本CD, DisUnit, abj: true);
     		X0Y0_先端CP = new ColorP(X0Y0_先端, 先端CD, DisUnit, abj: true);
     		Intensity = e.濃度;
-    		Vector2D local = X0Y0_根本.OP[0].ps[2];
+    		Vector2D local = X0Y0_根本.GetOP()[0].ps[2];
     		foreach (ShapePart item in Body.EnumJoinRoot)
     		{
-    			item.BasePointBase = item.ToLocal(X0Y0_根本.ToGlobal(local));
+    			item.SetBasePointBase(item.ToLocal(X0Y0_根本.ToGlobal(local)));
     		}
     	}
 

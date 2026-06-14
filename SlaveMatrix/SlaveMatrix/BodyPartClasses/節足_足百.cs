@@ -494,13 +494,13 @@ namespace SlaveMatrix
     	{
     		double num = (右 ? (-1.0) : 1.0);
     		num *= (double)((!反転Y) ? 1 : (-1));
-    		X0Y0_基節.AngleBase = num * (double)(1 - (反転Y ? 30 : 0));
-    		X0Y0_転節.AngleBase = num * 0.0;
-    		X0Y0_前腿節.AngleBase = num * 48.0;
-    		X0Y0_腿節.AngleBase = num * -49.0;
-    		X0Y0_脛節.AngleBase = num * -51.0;
-    		X0Y0_跗節1.AngleBase = num * -46.0;
-    		X0Y0_跗節2.AngleBase = num * 0.0;
+    		X0Y0_基節.SetAngleBase(num * (double)(1 - (反転Y ? 30 : 0)));
+    		X0Y0_転節.SetAngleBase(num * 0.0);
+    		X0Y0_前腿節.SetAngleBase(num * 48.0);
+    		X0Y0_腿節.SetAngleBase(num * -49.0);
+    		X0Y0_脛節.SetAngleBase(num * -51.0);
+    		X0Y0_跗節1.SetAngleBase(num * -46.0);
+    		X0Y0_跗節2.SetAngleBase(num * 0.0);
     		Body.JoinPAall();
     	}
 

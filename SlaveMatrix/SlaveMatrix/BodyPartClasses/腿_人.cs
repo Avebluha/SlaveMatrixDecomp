@@ -1,6 +1,7 @@
 using System.Drawing;
 using System.Linq;
 using _2DGAMELIB;
+using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
@@ -3578,7 +3579,7 @@ namespace SlaveMatrix
 
     	public override void 描画0(RenderArea Are)
     	{
-    		switch (Body.IndexY)
+    		switch (Body.GetIndexY())
     		{
     		case 0:
     			Are.Draw(X0Y0_腿);
@@ -3868,45 +3869,45 @@ namespace SlaveMatrix
     	public override void SetAngle0()
     	{
     		double num = (右 ? (-1.0) : 1.0);
-    		X0Y0_腿.AngleBase = num * -8.53773646251594E-07;
-    		X0Y1_腿.AngleBase = num * -313.0;
-    		X0Y2_腿.AngleBase = num * -271.0;
-    		X0Y3_腿.AngleBase = num * -222.0;
-    		X0Y4_腿.AngleBase = num * -182.0;
+    		X0Y0_腿.SetAngleBase(num * -8.53773646251594E-07);
+    		X0Y1_腿.SetAngleBase(num * -313.0);
+    		X0Y2_腿.SetAngleBase(num * -271.0);
+    		X0Y3_腿.SetAngleBase(num * -222.0);
+    		X0Y4_腿.SetAngleBase(num * -182.0);
     		Body.JoinPAall();
     	}
 
     	public void 虫性()
     	{
-    		X0Y0_腿.OP[(!右) ? 4 : 0].Outline = true;
-    		X0Y1_腿.OP[(!右) ? 4 : 0].Outline = true;
-    		X0Y2_腿.OP[右 ? 4 : 0].Outline = true;
-    		X0Y3_腿.OP[(!右) ? 4 : 0].Outline = true;
-    		X0Y4_腿.OP[右 ? 4 : 0].Outline = true;
+    		X0Y0_腿.GetOP()[(!右) ? 4 : 0].Outline = true;
+    		X0Y1_腿.GetOP()[(!右) ? 4 : 0].Outline = true;
+    		X0Y2_腿.GetOP()[右 ? 4 : 0].Outline = true;
+    		X0Y3_腿.GetOP()[(!右) ? 4 : 0].Outline = true;
+    		X0Y4_腿.GetOP()[右 ? 4 : 0].Outline = true;
     	}
 
     	public void スライム()
     	{
-    		X0Y0_腿.OP[右 ? 4 : 0].Outline = false;
-    		X0Y0_腿.OP[(!右) ? 1 : 3].Outline = false;
-    		X0Y0_腿.OP[右 ? 2 : 2].Outline = false;
-    		X0Y0_腿.OP[右 ? 1 : 3].Outline = false;
-    		X0Y1_腿.OP[右 ? 4 : 0].Outline = false;
-    		X0Y1_腿.OP[(!右) ? 1 : 3].Outline = false;
-    		X0Y1_腿.OP[右 ? 2 : 2].Outline = false;
-    		X0Y1_腿.OP[右 ? 1 : 3].Outline = false;
-    		X0Y2_腿.OP[(!右) ? 1 : 3].Outline = false;
-    		X0Y2_腿.OP[右 ? 2 : 2].Outline = false;
-    		X0Y2_腿.OP[右 ? 1 : 3].Outline = false;
-    		X0Y2_腿.OP[(!右) ? 4 : 0].Outline = false;
-    		X0Y3_腿.OP[右 ? 4 : 0].Outline = false;
-    		X0Y3_腿.OP[(!右) ? 1 : 3].Outline = false;
-    		X0Y3_腿.OP[右 ? 2 : 2].Outline = false;
-    		X0Y3_腿.OP[右 ? 1 : 3].Outline = false;
-    		X0Y4_腿.OP[(!右) ? 1 : 3].Outline = false;
-    		X0Y4_腿.OP[右 ? 2 : 2].Outline = false;
-    		X0Y4_腿.OP[右 ? 1 : 3].Outline = false;
-    		X0Y4_腿.OP[(!右) ? 4 : 0].Outline = false;
+    		X0Y0_腿.GetOP()[右 ? 4 : 0].Outline = false;
+    		X0Y0_腿.GetOP()[(!右) ? 1 : 3].Outline = false;
+    		X0Y0_腿.GetOP()[右 ? 2 : 2].Outline = false;
+    		X0Y0_腿.GetOP()[右 ? 1 : 3].Outline = false;
+    		X0Y1_腿.GetOP()[右 ? 4 : 0].Outline = false;
+    		X0Y1_腿.GetOP()[(!右) ? 1 : 3].Outline = false;
+    		X0Y1_腿.GetOP()[右 ? 2 : 2].Outline = false;
+    		X0Y1_腿.GetOP()[右 ? 1 : 3].Outline = false;
+    		X0Y2_腿.GetOP()[(!右) ? 1 : 3].Outline = false;
+    		X0Y2_腿.GetOP()[右 ? 2 : 2].Outline = false;
+    		X0Y2_腿.GetOP()[右 ? 1 : 3].Outline = false;
+    		X0Y2_腿.GetOP()[(!右) ? 4 : 0].Outline = false;
+    		X0Y3_腿.GetOP()[右 ? 4 : 0].Outline = false;
+    		X0Y3_腿.GetOP()[(!右) ? 1 : 3].Outline = false;
+    		X0Y3_腿.GetOP()[右 ? 2 : 2].Outline = false;
+    		X0Y3_腿.GetOP()[右 ? 1 : 3].Outline = false;
+    		X0Y4_腿.GetOP()[(!右) ? 1 : 3].Outline = false;
+    		X0Y4_腿.GetOP()[右 ? 2 : 2].Outline = false;
+    		X0Y4_腿.GetOP()[右 ? 1 : 3].Outline = false;
+    		X0Y4_腿.GetOP()[(!右) ? 4 : 0].Outline = false;
     		Color Col = Color.FromArgb(128, 腿0CD.c2.Col2);
     		腿0CD.色 = new Color2(ref 腿0CD.c2.Col1, ref Col);
     		腿1CD.色 = new Color2(ref 腿1CD.c2.Col1, ref Col);
@@ -3926,7 +3927,7 @@ namespace SlaveMatrix
 
     	public override void 色更新()
     	{
-    		switch (Body.IndexY)
+    		switch (Body.GetIndexY())
     		{
     		case 0:
     			X0Y0_腿CP.Update();

@@ -58,12 +58,12 @@ namespace SlaveMatrix
     		{
     			p = value;
     			double num = 0.0;
-    			double num2 = pt[0].OP[0].ps[3].Y * pt[0].SizeBase;
+    			double num2 = pt[0].GetOP()[0].ps[3].Y * pt[0].GetSizeBase();
     			num2 += num2 * Space;
     			ShapePartT[] array = pt;
     			for (int i = 0; i < array.Length; i++)
     			{
-    				array[i].PositionBase = p.AddY(num);
+    				array[i].SetPositionBase(p.AddY(num));
     				num += num2;
     			}
     		}
@@ -79,19 +79,19 @@ namespace SlaveMatrix
     		{
     			pt[i] = new ShapePartT();
     			pt[i].Text = acts[i].Text;
-    			pt[i].SizeBase = 0.095;
-    			pt[i].Font = Font;
-    			pt[i].FontSize = TextSize;
-    			pt[i].RectSize = new Vector2D(100.0, 100.0);
+    			pt[i].SetSizeBase(0.095);
+    			pt[i].SetFont(Font);
+    			pt[i].SetFontSize(TextSize);
+    			pt[i].SetRectSize(new Vector2D(100.0, 100.0));
     			pt[i].SetStringRectOutline(Are.UnitScale, Are.DisplayGraphics);
-    			pt[i].Closed = true;
-    			pt[i].TextColor = TextColor;
+    			pt[i].SetClosed(true);
+    			pt[i].SetTextColor(TextColor);
     			if (!ShadColor.IsEmpty)
     			{
-    				pt[i].ShadBrush = new SolidBrush(ShadColor);
+    				pt[i].SetShadBrush(new SolidBrush(ShadColor));
     			}
-    			pt[i].BrushColor = BackColor;
-    			pt[i].PenColor = FramColor;
+    			pt[i].SetBrushColor(BackColor);
+    			pt[i].SetPenColor(FramColor);
     			bs.Add(i.ToString(), new Button(pt[i], acts[i].act));
     		}
     		this.Position = Position;
@@ -103,8 +103,8 @@ namespace SlaveMatrix
     		ShapePartT[] array = pt;
     		foreach (ShapePartT obj in array)
     		{
-    			obj.HitColor = Med.GetUniqueColor();
-    			obj.HitColor = Med.GetUniqueColor();
+    			obj.SetHitColor(Med.GetUniqueColor());
+    			obj.SetHitColor(Med.GetUniqueColor());
     		}
     	}
 

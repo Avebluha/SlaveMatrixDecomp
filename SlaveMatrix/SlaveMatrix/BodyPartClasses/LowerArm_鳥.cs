@@ -1,5 +1,6 @@
 using System.Linq;
 using _2DGAMELIB;
+using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
@@ -1342,49 +1343,49 @@ namespace SlaveMatrix
     		{
     			double num = value.Inverse();
     			double num2 = (右 ? (-1.0) : 1.0);
-    			X0Y0_鳥翼LowerArm.AngleCont = num2 * 120.0 * num;
-    			X0Y0_風切羽_羽1.AngleCont = num2 * -95.0 * num;
-    			X0Y0_風切羽_羽2.AngleCont = num2 * -92.6666666666667 * num;
-    			X0Y0_風切羽_羽3.AngleCont = num2 * -90.3333333333333 * num;
-    			X0Y0_風切羽_羽4.AngleCont = num2 * -88.0 * num;
-    			X0Y0_風切羽_羽5.AngleCont = num2 * -85.6666666666667 * num;
-    			X0Y0_風切羽_羽6.AngleCont = num2 * -83.3333333333334 * num;
-    			X0Y0_風切羽_羽7.AngleCont = num2 * -81.0 * num;
-    			X0Y0_風切羽_羽8.AngleCont = num2 * -78.6666666666667 * num;
-    			X0Y0_風切羽_羽9.AngleCont = num2 * -76.3333333333334 * num;
-    			X0Y0_風切羽_羽10.AngleCont = num2 * -74.0 * num;
-    			X0Y0_風切羽_羽11.AngleCont = num2 * -71.6666666666667 * num;
-    			X0Y0_風切羽_羽12.AngleCont = num2 * -69.3333333333334 * num;
-    			X0Y0_風切羽_羽13.AngleCont = num2 * -67.0000000000001 * num;
-    			X0Y0_風切羽_羽14.AngleCont = num2 * -64.6666666666667 * num;
-    			X0Y0_風切羽_羽15.AngleCont = num2 * -62.3333333333334 * num;
-    			X0Y0_雨覆羽_羽1.AngleCont = num2 * -100.0 * num;
-    			X0Y0_雨覆羽_羽2.AngleCont = num2 * -97.1428571428571 * num;
-    			X0Y0_雨覆羽_羽3.AngleCont = num2 * -94.2857142857143 * num;
-    			X0Y0_雨覆羽_羽4.AngleCont = num2 * -91.4285714285714 * num;
-    			X0Y0_雨覆羽_羽5.AngleCont = num2 * -88.5714285714286 * num;
-    			X0Y0_雨覆羽_羽6.AngleCont = num2 * -85.7142857142857 * num;
-    			X0Y0_雨覆羽_羽7.AngleCont = num2 * -82.8571428571428 * num;
-    			X0Y0_雨覆羽_羽8.AngleCont = num2 * -80.0 * num;
-    			X0Y0_雨覆羽_羽9.AngleCont = num2 * -77.1428571428571 * num;
-    			X0Y0_雨覆羽_羽10.AngleCont = num2 * -74.2857142857142 * num;
-    			X0Y0_雨覆羽_羽11.AngleCont = num2 * -71.4285714285714 * num;
-    			X0Y0_雨覆羽_羽12.AngleCont = num2 * -68.5714285714285 * num;
-    			X0Y0_雨覆羽_羽13.AngleCont = num2 * -65.7142857142857 * num;
-    			X0Y0_雨覆羽_羽14.AngleCont = num2 * -62.8571428571428 * num;
-    			X0Y0_中雨覆羽_羽1.AngleCont = num2 * -110.0 * num;
-    			X0Y0_中雨覆羽_羽2.AngleCont = num2 * -103.076923076923 * num;
-    			X0Y0_中雨覆羽_羽3.AngleCont = num2 * -96.1538461538462 * num;
-    			X0Y0_中雨覆羽_羽4.AngleCont = num2 * -89.2307692307692 * num;
-    			X0Y0_中雨覆羽_羽5.AngleCont = num2 * -82.3076923076923 * num;
-    			X0Y0_中雨覆羽_羽6.AngleCont = num2 * -75.3846153846154 * num;
-    			X0Y0_中雨覆羽_羽7.AngleCont = num2 * -68.4615384615385 * num;
-    			X0Y0_中雨覆羽_羽8.AngleCont = num2 * -61.5384615384616 * num;
-    			X0Y0_中雨覆羽_羽9.AngleCont = num2 * -54.6153846153846 * num;
-    			X0Y0_中雨覆羽_羽10.AngleCont = num2 * -47.6923076923077 * num;
-    			X0Y0_中雨覆羽_羽11.AngleCont = num2 * -40.7692307692308 * num;
-    			X0Y0_中雨覆羽_羽12.AngleCont = num2 * -33.8461538461539 * num;
-    			X0Y0_中雨覆羽_羽13.AngleCont = num2 * -26.923076923077 * num;
+    			X0Y0_鳥翼LowerArm.SetAngleCont(num2 * 120.0 * num);
+    			X0Y0_風切羽_羽1.SetAngleCont(num2 * -95.0 * num);
+    			X0Y0_風切羽_羽2.SetAngleCont(num2 * -92.6666666666667 * num);
+    			X0Y0_風切羽_羽3.SetAngleCont(num2 * -90.3333333333333 * num);
+    			X0Y0_風切羽_羽4.SetAngleCont(num2 * -88.0 * num);
+    			X0Y0_風切羽_羽5.SetAngleCont(num2 * -85.6666666666667 * num);
+    			X0Y0_風切羽_羽6.SetAngleCont(num2 * -83.3333333333334 * num);
+    			X0Y0_風切羽_羽7.SetAngleCont(num2 * -81.0 * num);
+    			X0Y0_風切羽_羽8.SetAngleCont(num2 * -78.6666666666667 * num);
+    			X0Y0_風切羽_羽9.SetAngleCont(num2 * -76.3333333333334 * num);
+    			X0Y0_風切羽_羽10.SetAngleCont(num2 * -74.0 * num);
+    			X0Y0_風切羽_羽11.SetAngleCont(num2 * -71.6666666666667 * num);
+    			X0Y0_風切羽_羽12.SetAngleCont(num2 * -69.3333333333334 * num);
+    			X0Y0_風切羽_羽13.SetAngleCont(num2 * -67.0000000000001 * num);
+    			X0Y0_風切羽_羽14.SetAngleCont(num2 * -64.6666666666667 * num);
+    			X0Y0_風切羽_羽15.SetAngleCont(num2 * -62.3333333333334 * num);
+    			X0Y0_雨覆羽_羽1.SetAngleCont(num2 * -100.0 * num);
+    			X0Y0_雨覆羽_羽2.SetAngleCont(num2 * -97.1428571428571 * num);
+    			X0Y0_雨覆羽_羽3.SetAngleCont(num2 * -94.2857142857143 * num);
+    			X0Y0_雨覆羽_羽4.SetAngleCont(num2 * -91.4285714285714 * num);
+    			X0Y0_雨覆羽_羽5.SetAngleCont(num2 * -88.5714285714286 * num);
+    			X0Y0_雨覆羽_羽6.SetAngleCont(num2 * -85.7142857142857 * num);
+    			X0Y0_雨覆羽_羽7.SetAngleCont(num2 * -82.8571428571428 * num);
+    			X0Y0_雨覆羽_羽8.SetAngleCont(num2 * -80.0 * num);
+    			X0Y0_雨覆羽_羽9.SetAngleCont(num2 * -77.1428571428571 * num);
+    			X0Y0_雨覆羽_羽10.SetAngleCont(num2 * -74.2857142857142 * num);
+    			X0Y0_雨覆羽_羽11.SetAngleCont(num2 * -71.4285714285714 * num);
+    			X0Y0_雨覆羽_羽12.SetAngleCont(num2 * -68.5714285714285 * num);
+    			X0Y0_雨覆羽_羽13.SetAngleCont(num2 * -65.7142857142857 * num);
+    			X0Y0_雨覆羽_羽14.SetAngleCont(num2 * -62.8571428571428 * num);
+    			X0Y0_中雨覆羽_羽1.SetAngleCont(num2 * -110.0 * num);
+    			X0Y0_中雨覆羽_羽2.SetAngleCont(num2 * -103.076923076923 * num);
+    			X0Y0_中雨覆羽_羽3.SetAngleCont(num2 * -96.1538461538462 * num);
+    			X0Y0_中雨覆羽_羽4.SetAngleCont(num2 * -89.2307692307692 * num);
+    			X0Y0_中雨覆羽_羽5.SetAngleCont(num2 * -82.3076923076923 * num);
+    			X0Y0_中雨覆羽_羽6.SetAngleCont(num2 * -75.3846153846154 * num);
+    			X0Y0_中雨覆羽_羽7.SetAngleCont(num2 * -68.4615384615385 * num);
+    			X0Y0_中雨覆羽_羽8.SetAngleCont(num2 * -61.5384615384616 * num);
+    			X0Y0_中雨覆羽_羽9.SetAngleCont(num2 * -54.6153846153846 * num);
+    			X0Y0_中雨覆羽_羽10.SetAngleCont(num2 * -47.6923076923077 * num);
+    			X0Y0_中雨覆羽_羽11.SetAngleCont(num2 * -40.7692307692308 * num);
+    			X0Y0_中雨覆羽_羽12.SetAngleCont(num2 * -33.8461538461539 * num);
+    			X0Y0_中雨覆羽_羽13.SetAngleCont(num2 * -26.923076923077 * num);
     		}
     	}
 
@@ -1393,21 +1394,21 @@ namespace SlaveMatrix
     		set
     		{
     			double num = 0.05;
-    			X0Y0_風切羽_羽15.SizeYBase *= 1.0 - num * value;
-    			X0Y0_風切羽_羽14.SizeYBase *= 1.0 - num * value;
-    			X0Y0_風切羽_羽13.SizeYBase *= 1.0 - num * value;
-    			X0Y0_風切羽_羽12.SizeYBase *= 1.0 - num * value;
-    			X0Y0_風切羽_羽11.SizeYBase *= 1.0 - num * value;
-    			X0Y0_風切羽_羽10.SizeYBase *= 1.0 - num * value;
-    			X0Y0_風切羽_羽9.SizeYBase *= 1.0 - num * value;
-    			X0Y0_風切羽_羽8.SizeYBase *= 1.0 - num * value;
-    			X0Y0_風切羽_羽7.SizeYBase *= 1.0 - num * value;
-    			X0Y0_風切羽_羽6.SizeYBase *= 1.0 - num * value;
-    			X0Y0_風切羽_羽5.SizeYBase *= 1.0 - num * value;
-    			X0Y0_風切羽_羽4.SizeYBase *= 1.0 - num * value;
-    			X0Y0_風切羽_羽3.SizeYBase *= 1.0 - num * value;
-    			X0Y0_風切羽_羽2.SizeYBase *= 1.0 - num * value;
-    			X0Y0_風切羽_羽1.SizeYBase *= 1.0 - num * value;
+    			X0Y0_風切羽_羽15.SetSizeYBase(X0Y0_風切羽_羽15.GetSizeYBase() * (1.0 - num * value));
+    			X0Y0_風切羽_羽14.SetSizeYBase(X0Y0_風切羽_羽14.GetSizeYBase() * (1.0 - num * value));
+    			X0Y0_風切羽_羽13.SetSizeYBase(X0Y0_風切羽_羽13.GetSizeYBase() * (1.0 - num * value));
+    			X0Y0_風切羽_羽12.SetSizeYBase(X0Y0_風切羽_羽12.GetSizeYBase() * (1.0 - num * value));
+    			X0Y0_風切羽_羽11.SetSizeYBase(X0Y0_風切羽_羽11.GetSizeYBase() * (1.0 - num * value));
+    			X0Y0_風切羽_羽10.SetSizeYBase(X0Y0_風切羽_羽10.GetSizeYBase() * (1.0 - num * value));
+    			X0Y0_風切羽_羽9.SetSizeYBase(X0Y0_風切羽_羽9.GetSizeYBase() * (1.0 - num * value));
+    			X0Y0_風切羽_羽8.SetSizeYBase(X0Y0_風切羽_羽8.GetSizeYBase() * (1.0 - num * value));
+    			X0Y0_風切羽_羽7.SetSizeYBase(X0Y0_風切羽_羽7.GetSizeYBase() * (1.0 - num * value));
+    			X0Y0_風切羽_羽6.SetSizeYBase(X0Y0_風切羽_羽6.GetSizeYBase() * (1.0 - num * value));
+    			X0Y0_風切羽_羽5.SetSizeYBase(X0Y0_風切羽_羽5.GetSizeYBase() * (1.0 - num * value));
+    			X0Y0_風切羽_羽4.SetSizeYBase(X0Y0_風切羽_羽4.GetSizeYBase() * (1.0 - num * value));
+    			X0Y0_風切羽_羽3.SetSizeYBase(X0Y0_風切羽_羽3.GetSizeYBase() * (1.0 - num * value));
+    			X0Y0_風切羽_羽2.SetSizeYBase(X0Y0_風切羽_羽2.GetSizeYBase() * (1.0 - num * value));
+    			X0Y0_風切羽_羽1.SetSizeYBase(X0Y0_風切羽_羽1.GetSizeYBase() * (1.0 - num * value));
     		}
     	}
 
@@ -1415,13 +1416,13 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return X0Y0_鳥翼LowerArm.OP[(!右) ? 1 : 2].Outline;
+    			return X0Y0_鳥翼LowerArm.GetOP()[(!右) ? 1 : 2].Outline;
     		}
     		set
     		{
-    			X0Y0_鳥翼LowerArm.OP[(!右) ? 1 : 2].Outline = value;
-    			X0Y0_鳥翼LowerArm.OP[右 ? 1 : 2].Outline = value;
-    			X0Y0_鳥翼LowerArm.OP[(!右) ? 3 : 0].Outline = value;
+    			X0Y0_鳥翼LowerArm.GetOP()[(!右) ? 1 : 2].Outline = value;
+    			X0Y0_鳥翼LowerArm.GetOP()[右 ? 1 : 2].Outline = value;
+    			X0Y0_鳥翼LowerArm.GetOP()[(!右) ? 3 : 0].Outline = value;
     		}
     	}
 
@@ -1429,14 +1430,14 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return X0Y0_小雨覆_小雨覆.OP[右 ? 11 : 2].Outline;
+    			return X0Y0_小雨覆_小雨覆.GetOP()[右 ? 11 : 2].Outline;
     		}
     		set
     		{
-    			X0Y0_小雨覆_小雨覆.OP[右 ? 11 : 2].Outline = value;
-    			X0Y0_小雨覆_小雨覆.OP[右 ? 6 : 7].Outline = value;
-    			X0Y0_小雨覆_小雨覆.OP[右 ? 4 : 9].Outline = value;
-    			X0Y0_小雨覆_小雨覆.OP[右 ? 2 : 11].Outline = value;
+    			X0Y0_小雨覆_小雨覆.GetOP()[右 ? 11 : 2].Outline = value;
+    			X0Y0_小雨覆_小雨覆.GetOP()[右 ? 6 : 7].Outline = value;
+    			X0Y0_小雨覆_小雨覆.GetOP()[右 ? 4 : 9].Outline = value;
+    			X0Y0_小雨覆_小雨覆.GetOP()[右 ? 2 : 11].Outline = value;
     		}
     	}
 
@@ -1444,14 +1445,14 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return X0Y0_中雨覆羽_羽1.OP[右 ? 4 : 0].Outline;
+    			return X0Y0_中雨覆羽_羽1.GetOP()[右 ? 4 : 0].Outline;
     		}
     		set
     		{
-    			X0Y0_中雨覆羽_羽1.OP[右 ? 4 : 0].Outline = value;
-    			X0Y0_中雨覆羽_羽1.OP[(!右) ? 1 : 3].Outline = value;
-    			X0Y0_中雨覆羽_羽1.OP[右 ? 1 : 3].Outline = value;
-    			X0Y0_中雨覆羽_羽1.OP[(!右) ? 4 : 0].Outline = value;
+    			X0Y0_中雨覆羽_羽1.GetOP()[右 ? 4 : 0].Outline = value;
+    			X0Y0_中雨覆羽_羽1.GetOP()[(!右) ? 1 : 3].Outline = value;
+    			X0Y0_中雨覆羽_羽1.GetOP()[右 ? 1 : 3].Outline = value;
+    			X0Y0_中雨覆羽_羽1.GetOP()[(!右) ? 4 : 0].Outline = value;
     		}
     	}
 
@@ -1459,14 +1460,14 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return X0Y0_中雨覆羽_羽2.OP[右 ? 4 : 0].Outline;
+    			return X0Y0_中雨覆羽_羽2.GetOP()[右 ? 4 : 0].Outline;
     		}
     		set
     		{
-    			X0Y0_中雨覆羽_羽2.OP[右 ? 4 : 0].Outline = value;
-    			X0Y0_中雨覆羽_羽2.OP[(!右) ? 1 : 3].Outline = value;
-    			X0Y0_中雨覆羽_羽2.OP[右 ? 1 : 3].Outline = value;
-    			X0Y0_中雨覆羽_羽2.OP[(!右) ? 4 : 0].Outline = value;
+    			X0Y0_中雨覆羽_羽2.GetOP()[右 ? 4 : 0].Outline = value;
+    			X0Y0_中雨覆羽_羽2.GetOP()[(!右) ? 1 : 3].Outline = value;
+    			X0Y0_中雨覆羽_羽2.GetOP()[右 ? 1 : 3].Outline = value;
+    			X0Y0_中雨覆羽_羽2.GetOP()[(!右) ? 4 : 0].Outline = value;
     		}
     	}
 
@@ -1474,14 +1475,14 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return X0Y0_中雨覆羽_羽3.OP[右 ? 4 : 0].Outline;
+    			return X0Y0_中雨覆羽_羽3.GetOP()[右 ? 4 : 0].Outline;
     		}
     		set
     		{
-    			X0Y0_中雨覆羽_羽3.OP[右 ? 4 : 0].Outline = value;
-    			X0Y0_中雨覆羽_羽3.OP[(!右) ? 1 : 3].Outline = value;
-    			X0Y0_中雨覆羽_羽3.OP[右 ? 1 : 3].Outline = value;
-    			X0Y0_中雨覆羽_羽3.OP[(!右) ? 4 : 0].Outline = value;
+    			X0Y0_中雨覆羽_羽3.GetOP()[右 ? 4 : 0].Outline = value;
+    			X0Y0_中雨覆羽_羽3.GetOP()[(!右) ? 1 : 3].Outline = value;
+    			X0Y0_中雨覆羽_羽3.GetOP()[右 ? 1 : 3].Outline = value;
+    			X0Y0_中雨覆羽_羽3.GetOP()[(!右) ? 4 : 0].Outline = value;
     		}
     	}
 
@@ -1489,14 +1490,14 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return X0Y0_中雨覆羽_羽4.OP[右 ? 4 : 0].Outline;
+    			return X0Y0_中雨覆羽_羽4.GetOP()[右 ? 4 : 0].Outline;
     		}
     		set
     		{
-    			X0Y0_中雨覆羽_羽4.OP[右 ? 4 : 0].Outline = value;
-    			X0Y0_中雨覆羽_羽4.OP[(!右) ? 1 : 3].Outline = value;
-    			X0Y0_中雨覆羽_羽4.OP[右 ? 1 : 3].Outline = value;
-    			X0Y0_中雨覆羽_羽4.OP[(!右) ? 4 : 0].Outline = value;
+    			X0Y0_中雨覆羽_羽4.GetOP()[右 ? 4 : 0].Outline = value;
+    			X0Y0_中雨覆羽_羽4.GetOP()[(!右) ? 1 : 3].Outline = value;
+    			X0Y0_中雨覆羽_羽4.GetOP()[右 ? 1 : 3].Outline = value;
+    			X0Y0_中雨覆羽_羽4.GetOP()[(!右) ? 4 : 0].Outline = value;
     		}
     	}
 
@@ -1504,14 +1505,14 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return X0Y0_中雨覆羽_羽5.OP[右 ? 4 : 0].Outline;
+    			return X0Y0_中雨覆羽_羽5.GetOP()[右 ? 4 : 0].Outline;
     		}
     		set
     		{
-    			X0Y0_中雨覆羽_羽5.OP[右 ? 4 : 0].Outline = value;
-    			X0Y0_中雨覆羽_羽5.OP[(!右) ? 1 : 3].Outline = value;
-    			X0Y0_中雨覆羽_羽5.OP[右 ? 1 : 3].Outline = value;
-    			X0Y0_中雨覆羽_羽5.OP[(!右) ? 4 : 0].Outline = value;
+    			X0Y0_中雨覆羽_羽5.GetOP()[右 ? 4 : 0].Outline = value;
+    			X0Y0_中雨覆羽_羽5.GetOP()[(!右) ? 1 : 3].Outline = value;
+    			X0Y0_中雨覆羽_羽5.GetOP()[右 ? 1 : 3].Outline = value;
+    			X0Y0_中雨覆羽_羽5.GetOP()[(!右) ? 4 : 0].Outline = value;
     		}
     	}
 
@@ -1519,14 +1520,14 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return X0Y0_中雨覆羽_羽6.OP[右 ? 4 : 0].Outline;
+    			return X0Y0_中雨覆羽_羽6.GetOP()[右 ? 4 : 0].Outline;
     		}
     		set
     		{
-    			X0Y0_中雨覆羽_羽6.OP[右 ? 4 : 0].Outline = value;
-    			X0Y0_中雨覆羽_羽6.OP[(!右) ? 1 : 3].Outline = value;
-    			X0Y0_中雨覆羽_羽6.OP[右 ? 1 : 3].Outline = value;
-    			X0Y0_中雨覆羽_羽6.OP[(!右) ? 4 : 0].Outline = value;
+    			X0Y0_中雨覆羽_羽6.GetOP()[右 ? 4 : 0].Outline = value;
+    			X0Y0_中雨覆羽_羽6.GetOP()[(!右) ? 1 : 3].Outline = value;
+    			X0Y0_中雨覆羽_羽6.GetOP()[右 ? 1 : 3].Outline = value;
+    			X0Y0_中雨覆羽_羽6.GetOP()[(!右) ? 4 : 0].Outline = value;
     		}
     	}
 
@@ -1534,14 +1535,14 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return X0Y0_中雨覆羽_羽7.OP[右 ? 4 : 0].Outline;
+    			return X0Y0_中雨覆羽_羽7.GetOP()[右 ? 4 : 0].Outline;
     		}
     		set
     		{
-    			X0Y0_中雨覆羽_羽7.OP[右 ? 4 : 0].Outline = value;
-    			X0Y0_中雨覆羽_羽7.OP[(!右) ? 1 : 3].Outline = value;
-    			X0Y0_中雨覆羽_羽7.OP[右 ? 1 : 3].Outline = value;
-    			X0Y0_中雨覆羽_羽7.OP[(!右) ? 4 : 0].Outline = value;
+    			X0Y0_中雨覆羽_羽7.GetOP()[右 ? 4 : 0].Outline = value;
+    			X0Y0_中雨覆羽_羽7.GetOP()[(!右) ? 1 : 3].Outline = value;
+    			X0Y0_中雨覆羽_羽7.GetOP()[右 ? 1 : 3].Outline = value;
+    			X0Y0_中雨覆羽_羽7.GetOP()[(!右) ? 4 : 0].Outline = value;
     		}
     	}
 
@@ -1549,14 +1550,14 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return X0Y0_中雨覆羽_羽8.OP[右 ? 4 : 0].Outline;
+    			return X0Y0_中雨覆羽_羽8.GetOP()[右 ? 4 : 0].Outline;
     		}
     		set
     		{
-    			X0Y0_中雨覆羽_羽8.OP[右 ? 4 : 0].Outline = value;
-    			X0Y0_中雨覆羽_羽8.OP[(!右) ? 1 : 3].Outline = value;
-    			X0Y0_中雨覆羽_羽8.OP[右 ? 1 : 3].Outline = value;
-    			X0Y0_中雨覆羽_羽8.OP[(!右) ? 4 : 0].Outline = value;
+    			X0Y0_中雨覆羽_羽8.GetOP()[右 ? 4 : 0].Outline = value;
+    			X0Y0_中雨覆羽_羽8.GetOP()[(!右) ? 1 : 3].Outline = value;
+    			X0Y0_中雨覆羽_羽8.GetOP()[右 ? 1 : 3].Outline = value;
+    			X0Y0_中雨覆羽_羽8.GetOP()[(!右) ? 4 : 0].Outline = value;
     		}
     	}
 
@@ -1564,14 +1565,14 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return X0Y0_中雨覆羽_羽9.OP[右 ? 4 : 0].Outline;
+    			return X0Y0_中雨覆羽_羽9.GetOP()[右 ? 4 : 0].Outline;
     		}
     		set
     		{
-    			X0Y0_中雨覆羽_羽9.OP[右 ? 4 : 0].Outline = value;
-    			X0Y0_中雨覆羽_羽9.OP[(!右) ? 1 : 3].Outline = value;
-    			X0Y0_中雨覆羽_羽9.OP[右 ? 1 : 3].Outline = value;
-    			X0Y0_中雨覆羽_羽9.OP[(!右) ? 4 : 0].Outline = value;
+    			X0Y0_中雨覆羽_羽9.GetOP()[右 ? 4 : 0].Outline = value;
+    			X0Y0_中雨覆羽_羽9.GetOP()[(!右) ? 1 : 3].Outline = value;
+    			X0Y0_中雨覆羽_羽9.GetOP()[右 ? 1 : 3].Outline = value;
+    			X0Y0_中雨覆羽_羽9.GetOP()[(!右) ? 4 : 0].Outline = value;
     		}
     	}
 
@@ -1579,14 +1580,14 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return X0Y0_中雨覆羽_羽10.OP[右 ? 4 : 0].Outline;
+    			return X0Y0_中雨覆羽_羽10.GetOP()[右 ? 4 : 0].Outline;
     		}
     		set
     		{
-    			X0Y0_中雨覆羽_羽10.OP[右 ? 4 : 0].Outline = value;
-    			X0Y0_中雨覆羽_羽10.OP[(!右) ? 1 : 3].Outline = value;
-    			X0Y0_中雨覆羽_羽10.OP[右 ? 1 : 3].Outline = value;
-    			X0Y0_中雨覆羽_羽10.OP[(!右) ? 4 : 0].Outline = value;
+    			X0Y0_中雨覆羽_羽10.GetOP()[右 ? 4 : 0].Outline = value;
+    			X0Y0_中雨覆羽_羽10.GetOP()[(!右) ? 1 : 3].Outline = value;
+    			X0Y0_中雨覆羽_羽10.GetOP()[右 ? 1 : 3].Outline = value;
+    			X0Y0_中雨覆羽_羽10.GetOP()[(!右) ? 4 : 0].Outline = value;
     		}
     	}
 
@@ -1594,14 +1595,14 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return X0Y0_中雨覆羽_羽11.OP[右 ? 4 : 0].Outline;
+    			return X0Y0_中雨覆羽_羽11.GetOP()[右 ? 4 : 0].Outline;
     		}
     		set
     		{
-    			X0Y0_中雨覆羽_羽11.OP[右 ? 4 : 0].Outline = value;
-    			X0Y0_中雨覆羽_羽11.OP[(!右) ? 1 : 3].Outline = value;
-    			X0Y0_中雨覆羽_羽11.OP[右 ? 1 : 3].Outline = value;
-    			X0Y0_中雨覆羽_羽11.OP[(!右) ? 4 : 0].Outline = value;
+    			X0Y0_中雨覆羽_羽11.GetOP()[右 ? 4 : 0].Outline = value;
+    			X0Y0_中雨覆羽_羽11.GetOP()[(!右) ? 1 : 3].Outline = value;
+    			X0Y0_中雨覆羽_羽11.GetOP()[右 ? 1 : 3].Outline = value;
+    			X0Y0_中雨覆羽_羽11.GetOP()[(!右) ? 4 : 0].Outline = value;
     		}
     	}
 
@@ -1609,14 +1610,14 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return X0Y0_中雨覆羽_羽12.OP[右 ? 4 : 0].Outline;
+    			return X0Y0_中雨覆羽_羽12.GetOP()[右 ? 4 : 0].Outline;
     		}
     		set
     		{
-    			X0Y0_中雨覆羽_羽12.OP[右 ? 4 : 0].Outline = value;
-    			X0Y0_中雨覆羽_羽12.OP[(!右) ? 1 : 3].Outline = value;
-    			X0Y0_中雨覆羽_羽12.OP[右 ? 1 : 3].Outline = value;
-    			X0Y0_中雨覆羽_羽12.OP[(!右) ? 4 : 0].Outline = value;
+    			X0Y0_中雨覆羽_羽12.GetOP()[右 ? 4 : 0].Outline = value;
+    			X0Y0_中雨覆羽_羽12.GetOP()[(!右) ? 1 : 3].Outline = value;
+    			X0Y0_中雨覆羽_羽12.GetOP()[右 ? 1 : 3].Outline = value;
+    			X0Y0_中雨覆羽_羽12.GetOP()[(!右) ? 4 : 0].Outline = value;
     		}
     	}
 
@@ -1624,14 +1625,14 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return X0Y0_中雨覆羽_羽13.OP[右 ? 4 : 0].Outline;
+    			return X0Y0_中雨覆羽_羽13.GetOP()[右 ? 4 : 0].Outline;
     		}
     		set
     		{
-    			X0Y0_中雨覆羽_羽13.OP[右 ? 4 : 0].Outline = value;
-    			X0Y0_中雨覆羽_羽13.OP[(!右) ? 1 : 3].Outline = value;
-    			X0Y0_中雨覆羽_羽13.OP[右 ? 1 : 3].Outline = value;
-    			X0Y0_中雨覆羽_羽13.OP[(!右) ? 4 : 0].Outline = value;
+    			X0Y0_中雨覆羽_羽13.GetOP()[右 ? 4 : 0].Outline = value;
+    			X0Y0_中雨覆羽_羽13.GetOP()[(!右) ? 1 : 3].Outline = value;
+    			X0Y0_中雨覆羽_羽13.GetOP()[右 ? 1 : 3].Outline = value;
+    			X0Y0_中雨覆羽_羽13.GetOP()[(!右) ? 4 : 0].Outline = value;
     		}
     	}
 
@@ -1639,14 +1640,14 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return X0Y0_雨覆羽_羽1.OP[右 ? 4 : 0].Outline;
+    			return X0Y0_雨覆羽_羽1.GetOP()[右 ? 4 : 0].Outline;
     		}
     		set
     		{
-    			X0Y0_雨覆羽_羽1.OP[右 ? 4 : 0].Outline = value;
-    			X0Y0_雨覆羽_羽1.OP[(!右) ? 1 : 3].Outline = value;
-    			X0Y0_雨覆羽_羽1.OP[右 ? 1 : 3].Outline = value;
-    			X0Y0_雨覆羽_羽1.OP[(!右) ? 4 : 0].Outline = value;
+    			X0Y0_雨覆羽_羽1.GetOP()[右 ? 4 : 0].Outline = value;
+    			X0Y0_雨覆羽_羽1.GetOP()[(!右) ? 1 : 3].Outline = value;
+    			X0Y0_雨覆羽_羽1.GetOP()[右 ? 1 : 3].Outline = value;
+    			X0Y0_雨覆羽_羽1.GetOP()[(!右) ? 4 : 0].Outline = value;
     		}
     	}
 
@@ -1654,14 +1655,14 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return X0Y0_雨覆羽_羽2.OP[右 ? 4 : 0].Outline;
+    			return X0Y0_雨覆羽_羽2.GetOP()[右 ? 4 : 0].Outline;
     		}
     		set
     		{
-    			X0Y0_雨覆羽_羽2.OP[右 ? 4 : 0].Outline = value;
-    			X0Y0_雨覆羽_羽2.OP[(!右) ? 1 : 3].Outline = value;
-    			X0Y0_雨覆羽_羽2.OP[右 ? 1 : 3].Outline = value;
-    			X0Y0_雨覆羽_羽2.OP[(!右) ? 4 : 0].Outline = value;
+    			X0Y0_雨覆羽_羽2.GetOP()[右 ? 4 : 0].Outline = value;
+    			X0Y0_雨覆羽_羽2.GetOP()[(!右) ? 1 : 3].Outline = value;
+    			X0Y0_雨覆羽_羽2.GetOP()[右 ? 1 : 3].Outline = value;
+    			X0Y0_雨覆羽_羽2.GetOP()[(!右) ? 4 : 0].Outline = value;
     		}
     	}
 
@@ -1669,14 +1670,14 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return X0Y0_雨覆羽_羽3.OP[右 ? 4 : 0].Outline;
+    			return X0Y0_雨覆羽_羽3.GetOP()[右 ? 4 : 0].Outline;
     		}
     		set
     		{
-    			X0Y0_雨覆羽_羽3.OP[右 ? 4 : 0].Outline = value;
-    			X0Y0_雨覆羽_羽3.OP[(!右) ? 1 : 3].Outline = value;
-    			X0Y0_雨覆羽_羽3.OP[右 ? 1 : 3].Outline = value;
-    			X0Y0_雨覆羽_羽3.OP[(!右) ? 4 : 0].Outline = value;
+    			X0Y0_雨覆羽_羽3.GetOP()[右 ? 4 : 0].Outline = value;
+    			X0Y0_雨覆羽_羽3.GetOP()[(!右) ? 1 : 3].Outline = value;
+    			X0Y0_雨覆羽_羽3.GetOP()[右 ? 1 : 3].Outline = value;
+    			X0Y0_雨覆羽_羽3.GetOP()[(!右) ? 4 : 0].Outline = value;
     		}
     	}
 
@@ -1684,14 +1685,14 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return X0Y0_雨覆羽_羽4.OP[右 ? 4 : 0].Outline;
+    			return X0Y0_雨覆羽_羽4.GetOP()[右 ? 4 : 0].Outline;
     		}
     		set
     		{
-    			X0Y0_雨覆羽_羽4.OP[右 ? 4 : 0].Outline = value;
-    			X0Y0_雨覆羽_羽4.OP[(!右) ? 1 : 3].Outline = value;
-    			X0Y0_雨覆羽_羽4.OP[右 ? 1 : 3].Outline = value;
-    			X0Y0_雨覆羽_羽4.OP[(!右) ? 4 : 0].Outline = value;
+    			X0Y0_雨覆羽_羽4.GetOP()[右 ? 4 : 0].Outline = value;
+    			X0Y0_雨覆羽_羽4.GetOP()[(!右) ? 1 : 3].Outline = value;
+    			X0Y0_雨覆羽_羽4.GetOP()[右 ? 1 : 3].Outline = value;
+    			X0Y0_雨覆羽_羽4.GetOP()[(!右) ? 4 : 0].Outline = value;
     		}
     	}
 
@@ -1699,14 +1700,14 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return X0Y0_雨覆羽_羽5.OP[右 ? 4 : 0].Outline;
+    			return X0Y0_雨覆羽_羽5.GetOP()[右 ? 4 : 0].Outline;
     		}
     		set
     		{
-    			X0Y0_雨覆羽_羽5.OP[右 ? 4 : 0].Outline = value;
-    			X0Y0_雨覆羽_羽5.OP[(!右) ? 1 : 3].Outline = value;
-    			X0Y0_雨覆羽_羽5.OP[右 ? 1 : 3].Outline = value;
-    			X0Y0_雨覆羽_羽5.OP[(!右) ? 4 : 0].Outline = value;
+    			X0Y0_雨覆羽_羽5.GetOP()[右 ? 4 : 0].Outline = value;
+    			X0Y0_雨覆羽_羽5.GetOP()[(!右) ? 1 : 3].Outline = value;
+    			X0Y0_雨覆羽_羽5.GetOP()[右 ? 1 : 3].Outline = value;
+    			X0Y0_雨覆羽_羽5.GetOP()[(!右) ? 4 : 0].Outline = value;
     		}
     	}
 
@@ -1714,14 +1715,14 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return X0Y0_雨覆羽_羽6.OP[右 ? 4 : 0].Outline;
+    			return X0Y0_雨覆羽_羽6.GetOP()[右 ? 4 : 0].Outline;
     		}
     		set
     		{
-    			X0Y0_雨覆羽_羽6.OP[右 ? 4 : 0].Outline = value;
-    			X0Y0_雨覆羽_羽6.OP[(!右) ? 1 : 3].Outline = value;
-    			X0Y0_雨覆羽_羽6.OP[右 ? 1 : 3].Outline = value;
-    			X0Y0_雨覆羽_羽6.OP[(!右) ? 4 : 0].Outline = value;
+    			X0Y0_雨覆羽_羽6.GetOP()[右 ? 4 : 0].Outline = value;
+    			X0Y0_雨覆羽_羽6.GetOP()[(!右) ? 1 : 3].Outline = value;
+    			X0Y0_雨覆羽_羽6.GetOP()[右 ? 1 : 3].Outline = value;
+    			X0Y0_雨覆羽_羽6.GetOP()[(!右) ? 4 : 0].Outline = value;
     		}
     	}
 
@@ -1729,14 +1730,14 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return X0Y0_雨覆羽_羽7.OP[右 ? 4 : 0].Outline;
+    			return X0Y0_雨覆羽_羽7.GetOP()[右 ? 4 : 0].Outline;
     		}
     		set
     		{
-    			X0Y0_雨覆羽_羽7.OP[右 ? 4 : 0].Outline = value;
-    			X0Y0_雨覆羽_羽7.OP[(!右) ? 1 : 3].Outline = value;
-    			X0Y0_雨覆羽_羽7.OP[右 ? 1 : 3].Outline = value;
-    			X0Y0_雨覆羽_羽7.OP[(!右) ? 4 : 0].Outline = value;
+    			X0Y0_雨覆羽_羽7.GetOP()[右 ? 4 : 0].Outline = value;
+    			X0Y0_雨覆羽_羽7.GetOP()[(!右) ? 1 : 3].Outline = value;
+    			X0Y0_雨覆羽_羽7.GetOP()[右 ? 1 : 3].Outline = value;
+    			X0Y0_雨覆羽_羽7.GetOP()[(!右) ? 4 : 0].Outline = value;
     		}
     	}
 
@@ -1744,14 +1745,14 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return X0Y0_雨覆羽_羽8.OP[右 ? 4 : 0].Outline;
+    			return X0Y0_雨覆羽_羽8.GetOP()[右 ? 4 : 0].Outline;
     		}
     		set
     		{
-    			X0Y0_雨覆羽_羽8.OP[右 ? 4 : 0].Outline = value;
-    			X0Y0_雨覆羽_羽8.OP[(!右) ? 1 : 3].Outline = value;
-    			X0Y0_雨覆羽_羽8.OP[右 ? 1 : 3].Outline = value;
-    			X0Y0_雨覆羽_羽8.OP[(!右) ? 4 : 0].Outline = value;
+    			X0Y0_雨覆羽_羽8.GetOP()[右 ? 4 : 0].Outline = value;
+    			X0Y0_雨覆羽_羽8.GetOP()[(!右) ? 1 : 3].Outline = value;
+    			X0Y0_雨覆羽_羽8.GetOP()[右 ? 1 : 3].Outline = value;
+    			X0Y0_雨覆羽_羽8.GetOP()[(!右) ? 4 : 0].Outline = value;
     		}
     	}
 
@@ -1759,14 +1760,14 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return X0Y0_雨覆羽_羽9.OP[右 ? 4 : 0].Outline;
+    			return X0Y0_雨覆羽_羽9.GetOP()[右 ? 4 : 0].Outline;
     		}
     		set
     		{
-    			X0Y0_雨覆羽_羽9.OP[右 ? 4 : 0].Outline = value;
-    			X0Y0_雨覆羽_羽9.OP[(!右) ? 1 : 3].Outline = value;
-    			X0Y0_雨覆羽_羽9.OP[右 ? 1 : 3].Outline = value;
-    			X0Y0_雨覆羽_羽9.OP[(!右) ? 4 : 0].Outline = value;
+    			X0Y0_雨覆羽_羽9.GetOP()[右 ? 4 : 0].Outline = value;
+    			X0Y0_雨覆羽_羽9.GetOP()[(!右) ? 1 : 3].Outline = value;
+    			X0Y0_雨覆羽_羽9.GetOP()[右 ? 1 : 3].Outline = value;
+    			X0Y0_雨覆羽_羽9.GetOP()[(!右) ? 4 : 0].Outline = value;
     		}
     	}
 
@@ -1774,14 +1775,14 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return X0Y0_雨覆羽_羽10.OP[右 ? 4 : 0].Outline;
+    			return X0Y0_雨覆羽_羽10.GetOP()[右 ? 4 : 0].Outline;
     		}
     		set
     		{
-    			X0Y0_雨覆羽_羽10.OP[右 ? 4 : 0].Outline = value;
-    			X0Y0_雨覆羽_羽10.OP[(!右) ? 1 : 3].Outline = value;
-    			X0Y0_雨覆羽_羽10.OP[右 ? 1 : 3].Outline = value;
-    			X0Y0_雨覆羽_羽10.OP[(!右) ? 4 : 0].Outline = value;
+    			X0Y0_雨覆羽_羽10.GetOP()[右 ? 4 : 0].Outline = value;
+    			X0Y0_雨覆羽_羽10.GetOP()[(!右) ? 1 : 3].Outline = value;
+    			X0Y0_雨覆羽_羽10.GetOP()[右 ? 1 : 3].Outline = value;
+    			X0Y0_雨覆羽_羽10.GetOP()[(!右) ? 4 : 0].Outline = value;
     		}
     	}
 
@@ -1789,14 +1790,14 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return X0Y0_雨覆羽_羽11.OP[右 ? 4 : 0].Outline;
+    			return X0Y0_雨覆羽_羽11.GetOP()[右 ? 4 : 0].Outline;
     		}
     		set
     		{
-    			X0Y0_雨覆羽_羽11.OP[右 ? 4 : 0].Outline = value;
-    			X0Y0_雨覆羽_羽11.OP[(!右) ? 1 : 3].Outline = value;
-    			X0Y0_雨覆羽_羽11.OP[右 ? 1 : 3].Outline = value;
-    			X0Y0_雨覆羽_羽11.OP[(!右) ? 4 : 0].Outline = value;
+    			X0Y0_雨覆羽_羽11.GetOP()[右 ? 4 : 0].Outline = value;
+    			X0Y0_雨覆羽_羽11.GetOP()[(!右) ? 1 : 3].Outline = value;
+    			X0Y0_雨覆羽_羽11.GetOP()[右 ? 1 : 3].Outline = value;
+    			X0Y0_雨覆羽_羽11.GetOP()[(!右) ? 4 : 0].Outline = value;
     		}
     	}
 
@@ -1804,14 +1805,14 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return X0Y0_雨覆羽_羽12.OP[右 ? 4 : 0].Outline;
+    			return X0Y0_雨覆羽_羽12.GetOP()[右 ? 4 : 0].Outline;
     		}
     		set
     		{
-    			X0Y0_雨覆羽_羽12.OP[右 ? 4 : 0].Outline = value;
-    			X0Y0_雨覆羽_羽12.OP[(!右) ? 1 : 3].Outline = value;
-    			X0Y0_雨覆羽_羽12.OP[右 ? 1 : 3].Outline = value;
-    			X0Y0_雨覆羽_羽12.OP[(!右) ? 4 : 0].Outline = value;
+    			X0Y0_雨覆羽_羽12.GetOP()[右 ? 4 : 0].Outline = value;
+    			X0Y0_雨覆羽_羽12.GetOP()[(!右) ? 1 : 3].Outline = value;
+    			X0Y0_雨覆羽_羽12.GetOP()[右 ? 1 : 3].Outline = value;
+    			X0Y0_雨覆羽_羽12.GetOP()[(!右) ? 4 : 0].Outline = value;
     		}
     	}
 
@@ -1819,14 +1820,14 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return X0Y0_雨覆羽_羽13.OP[右 ? 4 : 0].Outline;
+    			return X0Y0_雨覆羽_羽13.GetOP()[右 ? 4 : 0].Outline;
     		}
     		set
     		{
-    			X0Y0_雨覆羽_羽13.OP[右 ? 4 : 0].Outline = value;
-    			X0Y0_雨覆羽_羽13.OP[(!右) ? 1 : 3].Outline = value;
-    			X0Y0_雨覆羽_羽13.OP[右 ? 1 : 3].Outline = value;
-    			X0Y0_雨覆羽_羽13.OP[(!右) ? 4 : 0].Outline = value;
+    			X0Y0_雨覆羽_羽13.GetOP()[右 ? 4 : 0].Outline = value;
+    			X0Y0_雨覆羽_羽13.GetOP()[(!右) ? 1 : 3].Outline = value;
+    			X0Y0_雨覆羽_羽13.GetOP()[右 ? 1 : 3].Outline = value;
+    			X0Y0_雨覆羽_羽13.GetOP()[(!右) ? 4 : 0].Outline = value;
     		}
     	}
 
@@ -1834,14 +1835,14 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return X0Y0_雨覆羽_羽14.OP[右 ? 4 : 0].Outline;
+    			return X0Y0_雨覆羽_羽14.GetOP()[右 ? 4 : 0].Outline;
     		}
     		set
     		{
-    			X0Y0_雨覆羽_羽14.OP[右 ? 4 : 0].Outline = value;
-    			X0Y0_雨覆羽_羽14.OP[(!右) ? 1 : 3].Outline = value;
-    			X0Y0_雨覆羽_羽14.OP[右 ? 1 : 3].Outline = value;
-    			X0Y0_雨覆羽_羽14.OP[(!右) ? 4 : 0].Outline = value;
+    			X0Y0_雨覆羽_羽14.GetOP()[右 ? 4 : 0].Outline = value;
+    			X0Y0_雨覆羽_羽14.GetOP()[(!右) ? 1 : 3].Outline = value;
+    			X0Y0_雨覆羽_羽14.GetOP()[右 ? 1 : 3].Outline = value;
+    			X0Y0_雨覆羽_羽14.GetOP()[(!右) ? 4 : 0].Outline = value;
     		}
     	}
 
@@ -1849,13 +1850,13 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return X0Y0_風切羽_羽1.OP[(!右) ? 1 : 3].Outline;
+    			return X0Y0_風切羽_羽1.GetOP()[(!右) ? 1 : 3].Outline;
     		}
     		set
     		{
-    			X0Y0_風切羽_羽1.OP[(!右) ? 1 : 3].Outline = value;
-    			X0Y0_風切羽_羽1.OP[右 ? 1 : 3].Outline = value;
-    			X0Y0_風切羽_羽1.OP[(!右) ? 4 : 0].Outline = value;
+    			X0Y0_風切羽_羽1.GetOP()[(!右) ? 1 : 3].Outline = value;
+    			X0Y0_風切羽_羽1.GetOP()[右 ? 1 : 3].Outline = value;
+    			X0Y0_風切羽_羽1.GetOP()[(!右) ? 4 : 0].Outline = value;
     		}
     	}
 
@@ -1863,13 +1864,13 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return X0Y0_風切羽_羽2.OP[(!右) ? 1 : 3].Outline;
+    			return X0Y0_風切羽_羽2.GetOP()[(!右) ? 1 : 3].Outline;
     		}
     		set
     		{
-    			X0Y0_風切羽_羽2.OP[(!右) ? 1 : 3].Outline = value;
-    			X0Y0_風切羽_羽2.OP[右 ? 1 : 3].Outline = value;
-    			X0Y0_風切羽_羽2.OP[(!右) ? 4 : 0].Outline = value;
+    			X0Y0_風切羽_羽2.GetOP()[(!右) ? 1 : 3].Outline = value;
+    			X0Y0_風切羽_羽2.GetOP()[右 ? 1 : 3].Outline = value;
+    			X0Y0_風切羽_羽2.GetOP()[(!右) ? 4 : 0].Outline = value;
     		}
     	}
 
@@ -1877,13 +1878,13 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return X0Y0_風切羽_羽3.OP[(!右) ? 1 : 3].Outline;
+    			return X0Y0_風切羽_羽3.GetOP()[(!右) ? 1 : 3].Outline;
     		}
     		set
     		{
-    			X0Y0_風切羽_羽3.OP[(!右) ? 1 : 3].Outline = value;
-    			X0Y0_風切羽_羽3.OP[右 ? 1 : 3].Outline = value;
-    			X0Y0_風切羽_羽3.OP[(!右) ? 4 : 0].Outline = value;
+    			X0Y0_風切羽_羽3.GetOP()[(!右) ? 1 : 3].Outline = value;
+    			X0Y0_風切羽_羽3.GetOP()[右 ? 1 : 3].Outline = value;
+    			X0Y0_風切羽_羽3.GetOP()[(!右) ? 4 : 0].Outline = value;
     		}
     	}
 
@@ -1891,13 +1892,13 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return X0Y0_風切羽_羽4.OP[(!右) ? 1 : 3].Outline;
+    			return X0Y0_風切羽_羽4.GetOP()[(!右) ? 1 : 3].Outline;
     		}
     		set
     		{
-    			X0Y0_風切羽_羽4.OP[(!右) ? 1 : 3].Outline = value;
-    			X0Y0_風切羽_羽4.OP[右 ? 1 : 3].Outline = value;
-    			X0Y0_風切羽_羽4.OP[(!右) ? 4 : 0].Outline = value;
+    			X0Y0_風切羽_羽4.GetOP()[(!右) ? 1 : 3].Outline = value;
+    			X0Y0_風切羽_羽4.GetOP()[右 ? 1 : 3].Outline = value;
+    			X0Y0_風切羽_羽4.GetOP()[(!右) ? 4 : 0].Outline = value;
     		}
     	}
 
@@ -1905,13 +1906,13 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return X0Y0_風切羽_羽5.OP[(!右) ? 1 : 3].Outline;
+    			return X0Y0_風切羽_羽5.GetOP()[(!右) ? 1 : 3].Outline;
     		}
     		set
     		{
-    			X0Y0_風切羽_羽5.OP[(!右) ? 1 : 3].Outline = value;
-    			X0Y0_風切羽_羽5.OP[右 ? 1 : 3].Outline = value;
-    			X0Y0_風切羽_羽5.OP[(!右) ? 4 : 0].Outline = value;
+    			X0Y0_風切羽_羽5.GetOP()[(!右) ? 1 : 3].Outline = value;
+    			X0Y0_風切羽_羽5.GetOP()[右 ? 1 : 3].Outline = value;
+    			X0Y0_風切羽_羽5.GetOP()[(!右) ? 4 : 0].Outline = value;
     		}
     	}
 
@@ -1919,13 +1920,13 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return X0Y0_風切羽_羽6.OP[(!右) ? 1 : 3].Outline;
+    			return X0Y0_風切羽_羽6.GetOP()[(!右) ? 1 : 3].Outline;
     		}
     		set
     		{
-    			X0Y0_風切羽_羽6.OP[(!右) ? 1 : 3].Outline = value;
-    			X0Y0_風切羽_羽6.OP[右 ? 1 : 3].Outline = value;
-    			X0Y0_風切羽_羽6.OP[(!右) ? 4 : 0].Outline = value;
+    			X0Y0_風切羽_羽6.GetOP()[(!右) ? 1 : 3].Outline = value;
+    			X0Y0_風切羽_羽6.GetOP()[右 ? 1 : 3].Outline = value;
+    			X0Y0_風切羽_羽6.GetOP()[(!右) ? 4 : 0].Outline = value;
     		}
     	}
 
@@ -1933,13 +1934,13 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return X0Y0_風切羽_羽7.OP[(!右) ? 1 : 3].Outline;
+    			return X0Y0_風切羽_羽7.GetOP()[(!右) ? 1 : 3].Outline;
     		}
     		set
     		{
-    			X0Y0_風切羽_羽7.OP[(!右) ? 1 : 3].Outline = value;
-    			X0Y0_風切羽_羽7.OP[右 ? 1 : 3].Outline = value;
-    			X0Y0_風切羽_羽7.OP[(!右) ? 4 : 0].Outline = value;
+    			X0Y0_風切羽_羽7.GetOP()[(!右) ? 1 : 3].Outline = value;
+    			X0Y0_風切羽_羽7.GetOP()[右 ? 1 : 3].Outline = value;
+    			X0Y0_風切羽_羽7.GetOP()[(!右) ? 4 : 0].Outline = value;
     		}
     	}
 
@@ -1947,13 +1948,13 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return X0Y0_風切羽_羽8.OP[(!右) ? 1 : 3].Outline;
+    			return X0Y0_風切羽_羽8.GetOP()[(!右) ? 1 : 3].Outline;
     		}
     		set
     		{
-    			X0Y0_風切羽_羽8.OP[(!右) ? 1 : 3].Outline = value;
-    			X0Y0_風切羽_羽8.OP[右 ? 1 : 3].Outline = value;
-    			X0Y0_風切羽_羽8.OP[(!右) ? 4 : 0].Outline = value;
+    			X0Y0_風切羽_羽8.GetOP()[(!右) ? 1 : 3].Outline = value;
+    			X0Y0_風切羽_羽8.GetOP()[右 ? 1 : 3].Outline = value;
+    			X0Y0_風切羽_羽8.GetOP()[(!右) ? 4 : 0].Outline = value;
     		}
     	}
 
@@ -1961,13 +1962,13 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return X0Y0_風切羽_羽9.OP[(!右) ? 1 : 3].Outline;
+    			return X0Y0_風切羽_羽9.GetOP()[(!右) ? 1 : 3].Outline;
     		}
     		set
     		{
-    			X0Y0_風切羽_羽9.OP[(!右) ? 1 : 3].Outline = value;
-    			X0Y0_風切羽_羽9.OP[右 ? 1 : 3].Outline = value;
-    			X0Y0_風切羽_羽9.OP[(!右) ? 4 : 0].Outline = value;
+    			X0Y0_風切羽_羽9.GetOP()[(!右) ? 1 : 3].Outline = value;
+    			X0Y0_風切羽_羽9.GetOP()[右 ? 1 : 3].Outline = value;
+    			X0Y0_風切羽_羽9.GetOP()[(!右) ? 4 : 0].Outline = value;
     		}
     	}
 
@@ -1975,13 +1976,13 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return X0Y0_風切羽_羽10.OP[(!右) ? 1 : 3].Outline;
+    			return X0Y0_風切羽_羽10.GetOP()[(!右) ? 1 : 3].Outline;
     		}
     		set
     		{
-    			X0Y0_風切羽_羽10.OP[(!右) ? 1 : 3].Outline = value;
-    			X0Y0_風切羽_羽10.OP[右 ? 1 : 3].Outline = value;
-    			X0Y0_風切羽_羽10.OP[(!右) ? 4 : 0].Outline = value;
+    			X0Y0_風切羽_羽10.GetOP()[(!右) ? 1 : 3].Outline = value;
+    			X0Y0_風切羽_羽10.GetOP()[右 ? 1 : 3].Outline = value;
+    			X0Y0_風切羽_羽10.GetOP()[(!右) ? 4 : 0].Outline = value;
     		}
     	}
 
@@ -1989,13 +1990,13 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return X0Y0_風切羽_羽11.OP[(!右) ? 1 : 3].Outline;
+    			return X0Y0_風切羽_羽11.GetOP()[(!右) ? 1 : 3].Outline;
     		}
     		set
     		{
-    			X0Y0_風切羽_羽11.OP[(!右) ? 1 : 3].Outline = value;
-    			X0Y0_風切羽_羽11.OP[右 ? 1 : 3].Outline = value;
-    			X0Y0_風切羽_羽11.OP[(!右) ? 4 : 0].Outline = value;
+    			X0Y0_風切羽_羽11.GetOP()[(!右) ? 1 : 3].Outline = value;
+    			X0Y0_風切羽_羽11.GetOP()[右 ? 1 : 3].Outline = value;
+    			X0Y0_風切羽_羽11.GetOP()[(!右) ? 4 : 0].Outline = value;
     		}
     	}
 
@@ -2003,13 +2004,13 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return X0Y0_風切羽_羽12.OP[(!右) ? 1 : 3].Outline;
+    			return X0Y0_風切羽_羽12.GetOP()[(!右) ? 1 : 3].Outline;
     		}
     		set
     		{
-    			X0Y0_風切羽_羽12.OP[(!右) ? 1 : 3].Outline = value;
-    			X0Y0_風切羽_羽12.OP[右 ? 1 : 3].Outline = value;
-    			X0Y0_風切羽_羽12.OP[(!右) ? 4 : 0].Outline = value;
+    			X0Y0_風切羽_羽12.GetOP()[(!右) ? 1 : 3].Outline = value;
+    			X0Y0_風切羽_羽12.GetOP()[右 ? 1 : 3].Outline = value;
+    			X0Y0_風切羽_羽12.GetOP()[(!右) ? 4 : 0].Outline = value;
     		}
     	}
 
@@ -2017,13 +2018,13 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return X0Y0_風切羽_羽13.OP[(!右) ? 1 : 3].Outline;
+    			return X0Y0_風切羽_羽13.GetOP()[(!右) ? 1 : 3].Outline;
     		}
     		set
     		{
-    			X0Y0_風切羽_羽13.OP[(!右) ? 1 : 3].Outline = value;
-    			X0Y0_風切羽_羽13.OP[右 ? 1 : 3].Outline = value;
-    			X0Y0_風切羽_羽13.OP[(!右) ? 4 : 0].Outline = value;
+    			X0Y0_風切羽_羽13.GetOP()[(!右) ? 1 : 3].Outline = value;
+    			X0Y0_風切羽_羽13.GetOP()[右 ? 1 : 3].Outline = value;
+    			X0Y0_風切羽_羽13.GetOP()[(!右) ? 4 : 0].Outline = value;
     		}
     	}
 
@@ -2031,13 +2032,13 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return X0Y0_風切羽_羽14.OP[(!右) ? 1 : 3].Outline;
+    			return X0Y0_風切羽_羽14.GetOP()[(!右) ? 1 : 3].Outline;
     		}
     		set
     		{
-    			X0Y0_風切羽_羽14.OP[(!右) ? 1 : 3].Outline = value;
-    			X0Y0_風切羽_羽14.OP[右 ? 1 : 3].Outline = value;
-    			X0Y0_風切羽_羽14.OP[(!右) ? 4 : 0].Outline = value;
+    			X0Y0_風切羽_羽14.GetOP()[(!右) ? 1 : 3].Outline = value;
+    			X0Y0_風切羽_羽14.GetOP()[右 ? 1 : 3].Outline = value;
+    			X0Y0_風切羽_羽14.GetOP()[(!右) ? 4 : 0].Outline = value;
     		}
     	}
 
@@ -2045,13 +2046,13 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return X0Y0_風切羽_羽15.OP[(!右) ? 1 : 3].Outline;
+    			return X0Y0_風切羽_羽15.GetOP()[(!右) ? 1 : 3].Outline;
     		}
     		set
     		{
-    			X0Y0_風切羽_羽15.OP[(!右) ? 1 : 3].Outline = value;
-    			X0Y0_風切羽_羽15.OP[右 ? 1 : 3].Outline = value;
-    			X0Y0_風切羽_羽15.OP[(!右) ? 4 : 0].Outline = value;
+    			X0Y0_風切羽_羽15.GetOP()[(!右) ? 1 : 3].Outline = value;
+    			X0Y0_風切羽_羽15.GetOP()[右 ? 1 : 3].Outline = value;
+    			X0Y0_風切羽_羽15.GetOP()[(!右) ? 4 : 0].Outline = value;
     		}
     	}
 
@@ -2059,11 +2060,11 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return X0Y0_鳥翼LowerArm.OP[右 ? 3 : 0].Outline;
+    			return X0Y0_鳥翼LowerArm.GetOP()[右 ? 3 : 0].Outline;
     		}
     		set
     		{
-    			X0Y0_鳥翼LowerArm.OP[右 ? 3 : 0].Outline = value;
+    			X0Y0_鳥翼LowerArm.GetOP()[右 ? 3 : 0].Outline = value;
     		}
     	}
 
@@ -2374,49 +2375,49 @@ namespace SlaveMatrix
     	public override void SetAngle0()
     	{
     		double num = (右 ? (-1.0) : 1.0);
-    		X0Y0_鳥翼LowerArm.AngleBase = num * -341.0;
-    		X0Y0_風切羽_羽1.AngleBase = num * -72.3455557531598;
-    		X0Y0_風切羽_羽2.AngleBase = num * -76.3455557531598;
-    		X0Y0_風切羽_羽3.AngleBase = num * -79.3455557531599;
-    		X0Y0_風切羽_羽4.AngleBase = num * -82.34555575315983;
-    		X0Y0_風切羽_羽5.AngleBase = num * -85.34555575315983;
-    		X0Y0_風切羽_羽6.AngleBase = num * -88.34555575315994;
-    		X0Y0_風切羽_羽7.AngleBase = num * -91.34555575315983;
-    		X0Y0_風切羽_羽8.AngleBase = num * -94.34555575315994;
-    		X0Y0_風切羽_羽9.AngleBase = num * -97.34555575315983;
-    		X0Y0_風切羽_羽10.AngleBase = num * -100.3455557531598;
-    		X0Y0_風切羽_羽11.AngleBase = num * -103.34555575316;
-    		X0Y0_風切羽_羽12.AngleBase = num * -106.3455557531598;
-    		X0Y0_風切羽_羽13.AngleBase = num * 250.654444246839;
-    		X0Y0_風切羽_羽14.AngleBase = num * 247.65444424684;
-    		X0Y0_風切羽_羽15.AngleBase = num * 244.65444424684;
-    		X0Y0_雨覆羽_羽1.AngleBase = num * -61.6335605882607;
-    		X0Y0_雨覆羽_羽2.AngleBase = num * -65.0211000072925;
-    		X0Y0_雨覆羽_羽3.AngleBase = num * -68.6100025846698;
-    		X0Y0_雨覆羽_羽4.AngleBase = num * -72.4094733624345;
-    		X0Y0_雨覆羽_羽5.AngleBase = num * -76.4248591735387;
-    		X0Y0_雨覆羽_羽6.AngleBase = num * -80.65615843821939;
-    		X0Y0_雨覆羽_羽7.AngleBase = num * -85.09647453999872;
-    		X0Y0_雨覆羽_羽8.AngleBase = num * -89.73063451433654;
-    		X0Y0_雨覆羽_羽9.AngleBase = num * -94.53427462319013;
-    		X0Y0_雨覆羽_羽10.AngleBase = num * -99.47372396003561;
-    		X0Y0_雨覆羽_羽11.AngleBase = num * -104.5069529689633;
-    		X0Y0_雨覆羽_羽12.AngleBase = num * 250.41432558095;
-    		X0Y0_雨覆羽_羽13.AngleBase = num * 245.34158111747;
-    		X0Y0_雨覆羽_羽14.AngleBase = num * 240.325859447711;
-    		X0Y0_中雨覆羽_羽1.AngleBase = num * -49.1787166893964;
-    		X0Y0_中雨覆羽_羽2.AngleBase = num * -57.1787166893962;
-    		X0Y0_中雨覆羽_羽3.AngleBase = num * -65.1787166893963;
-    		X0Y0_中雨覆羽_羽4.AngleBase = num * -73.1787166893963;
-    		X0Y0_中雨覆羽_羽5.AngleBase = num * -81.17871668939631;
-    		X0Y0_中雨覆羽_羽6.AngleBase = num * -89.17871668939688;
-    		X0Y0_中雨覆羽_羽7.AngleBase = num * -97.17871668939625;
-    		X0Y0_中雨覆羽_羽8.AngleBase = num * -105.1787166893964;
-    		X0Y0_中雨覆羽_羽9.AngleBase = num * 246.821283310604;
-    		X0Y0_中雨覆羽_羽10.AngleBase = num * 238.821283310604;
-    		X0Y0_中雨覆羽_羽11.AngleBase = num * 230.821283310604;
-    		X0Y0_中雨覆羽_羽12.AngleBase = num * 222.821283310604;
-    		X0Y0_中雨覆羽_羽13.AngleBase = num * 214.821283310604;
+    		X0Y0_鳥翼LowerArm.SetAngleBase(num * -341.0);
+    		X0Y0_風切羽_羽1.SetAngleBase(num * -72.3455557531598);
+    		X0Y0_風切羽_羽2.SetAngleBase(num * -76.3455557531598);
+    		X0Y0_風切羽_羽3.SetAngleBase(num * -79.3455557531599);
+    		X0Y0_風切羽_羽4.SetAngleBase(num * -82.34555575315983);
+    		X0Y0_風切羽_羽5.SetAngleBase(num * -85.34555575315983);
+    		X0Y0_風切羽_羽6.SetAngleBase(num * -88.34555575315994);
+    		X0Y0_風切羽_羽7.SetAngleBase(num * -91.34555575315983);
+    		X0Y0_風切羽_羽8.SetAngleBase(num * -94.34555575315994);
+    		X0Y0_風切羽_羽9.SetAngleBase(num * -97.34555575315983);
+    		X0Y0_風切羽_羽10.SetAngleBase(num * -100.3455557531598);
+    		X0Y0_風切羽_羽11.SetAngleBase(num * -103.34555575316);
+    		X0Y0_風切羽_羽12.SetAngleBase(num * -106.3455557531598);
+    		X0Y0_風切羽_羽13.SetAngleBase(num * 250.654444246839);
+    		X0Y0_風切羽_羽14.SetAngleBase(num * 247.65444424684);
+    		X0Y0_風切羽_羽15.SetAngleBase(num * 244.65444424684);
+    		X0Y0_雨覆羽_羽1.SetAngleBase(num * -61.6335605882607);
+    		X0Y0_雨覆羽_羽2.SetAngleBase(num * -65.0211000072925);
+    		X0Y0_雨覆羽_羽3.SetAngleBase(num * -68.6100025846698);
+    		X0Y0_雨覆羽_羽4.SetAngleBase(num * -72.4094733624345);
+    		X0Y0_雨覆羽_羽5.SetAngleBase(num * -76.4248591735387);
+    		X0Y0_雨覆羽_羽6.SetAngleBase(num * -80.65615843821939);
+    		X0Y0_雨覆羽_羽7.SetAngleBase(num * -85.09647453999872);
+    		X0Y0_雨覆羽_羽8.SetAngleBase(num * -89.73063451433654);
+    		X0Y0_雨覆羽_羽9.SetAngleBase(num * -94.53427462319013);
+    		X0Y0_雨覆羽_羽10.SetAngleBase(num * -99.47372396003561);
+    		X0Y0_雨覆羽_羽11.SetAngleBase(num * -104.5069529689633);
+    		X0Y0_雨覆羽_羽12.SetAngleBase(num * 250.41432558095);
+    		X0Y0_雨覆羽_羽13.SetAngleBase(num * 245.34158111747);
+    		X0Y0_雨覆羽_羽14.SetAngleBase(num * 240.325859447711);
+    		X0Y0_中雨覆羽_羽1.SetAngleBase(num * -49.1787166893964);
+    		X0Y0_中雨覆羽_羽2.SetAngleBase(num * -57.1787166893962);
+    		X0Y0_中雨覆羽_羽3.SetAngleBase(num * -65.1787166893963);
+    		X0Y0_中雨覆羽_羽4.SetAngleBase(num * -73.1787166893963);
+    		X0Y0_中雨覆羽_羽5.SetAngleBase(num * -81.17871668939631);
+    		X0Y0_中雨覆羽_羽6.SetAngleBase(num * -89.17871668939688);
+    		X0Y0_中雨覆羽_羽7.SetAngleBase(num * -97.17871668939625);
+    		X0Y0_中雨覆羽_羽8.SetAngleBase(num * -105.1787166893964);
+    		X0Y0_中雨覆羽_羽9.SetAngleBase(num * 246.821283310604);
+    		X0Y0_中雨覆羽_羽10.SetAngleBase(num * 238.821283310604);
+    		X0Y0_中雨覆羽_羽11.SetAngleBase(num * 230.821283310604);
+    		X0Y0_中雨覆羽_羽12.SetAngleBase(num * 222.821283310604);
+    		X0Y0_中雨覆羽_羽13.SetAngleBase(num * 214.821283310604);
     		Body.JoinPAall();
     	}
 

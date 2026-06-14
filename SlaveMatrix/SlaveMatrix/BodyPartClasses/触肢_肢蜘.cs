@@ -465,24 +465,24 @@ namespace SlaveMatrix
     	public override void SetAngle0()
     	{
     		double num = (右 ? (-1.0) : 1.0);
-    		X0Y0_基節.AngleBase = num * 70.0;
-    		X0Y0_転節.AngleBase = num * 0.0;
-    		X0Y0_腿節.AngleBase = num * 0.0;
-    		X0Y0_膝節.AngleBase = num * 125.0;
-    		X0Y0_脛節.AngleBase = num * 5.0;
-    		X0Y0_蹠節.AngleBase = num * 70.0;
+    		X0Y0_基節.SetAngleBase(num * 70.0);
+    		X0Y0_転節.SetAngleBase(num * 0.0);
+    		X0Y0_腿節.SetAngleBase(num * 0.0);
+    		X0Y0_膝節.SetAngleBase(num * 125.0);
+    		X0Y0_脛節.SetAngleBase(num * 5.0);
+    		X0Y0_蹠節.SetAngleBase(num * 70.0);
     		Body.JoinPAall();
     	}
 
     	public override void SetRestraintAngle()
     	{
     		double num = (右 ? (-1.0) : 1.0);
-    		X0Y0_基節.AngleBase = num * 60.0;
-    		X0Y0_転節.AngleBase = num * -20.0;
-    		X0Y0_腿節.AngleBase = num * 0.0;
-    		X0Y0_膝節.AngleBase = num * 30.0;
-    		X0Y0_脛節.AngleBase = num * 5.0;
-    		X0Y0_蹠節.AngleBase = num * 70.0;
+    		X0Y0_基節.SetAngleBase(num * 60.0);
+    		X0Y0_転節.SetAngleBase(num * -20.0);
+    		X0Y0_腿節.SetAngleBase(num * 0.0);
+    		X0Y0_膝節.SetAngleBase(num * 30.0);
+    		X0Y0_脛節.SetAngleBase(num * 5.0);
+    		X0Y0_蹠節.SetAngleBase(num * 70.0);
     		Body.JoinPAall();
     	}
 

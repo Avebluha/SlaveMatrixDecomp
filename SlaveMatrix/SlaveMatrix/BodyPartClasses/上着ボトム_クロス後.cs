@@ -243,7 +243,7 @@ namespace SlaveMatrix
 
     	public override void 色更新()
     	{
-    		if (Body.IndexY == 0)
+    		if (Body.GetIndexY() == 0)
     		{
     			X0Y0_下地CP.Update();
     			X0Y0_染み_染み2CP.Update();

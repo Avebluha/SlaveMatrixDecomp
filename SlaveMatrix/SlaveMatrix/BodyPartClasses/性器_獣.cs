@@ -1,5 +1,6 @@
 using System.Linq;
 using _2DGAMELIB;
+using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
@@ -1242,8 +1243,8 @@ namespace SlaveMatrix
 
     	private void AreMSetPos()
     	{
-    		p = 接続根.Difs0.Current.GetPar(接続根.Path0);
-    		ManagedArea.Position = p.ToGlobal(p.JP[接続根.Index].Joint);
+    		p = 接続根.Difs0.GetCurrent().GetPar(接続根.Path0);
+    		ManagedArea.Position = p.ToGlobal(p.GetJP()[接続根.Index].Joint);
     	}
 
     	public override void Dispose()
@@ -1274,10 +1275,10 @@ namespace SlaveMatrix
 
     	public override void 色更新()
     	{
-    		switch (Body.IndexX)
+    		switch (Body.GetIndexX())
     		{
     		case 0:
-    			switch (Body.IndexY)
+    			switch (Body.GetIndexY())
     			{
     			case 0:
     				X0Y0_小陰唇CP.Update();
@@ -1324,7 +1325,7 @@ namespace SlaveMatrix
     			}
     			break;
     		case 1:
-    			switch (Body.IndexY)
+    			switch (Body.GetIndexY())
     			{
     			case 0:
     				X1Y0_小陰唇CP.Update();
@@ -1371,7 +1372,7 @@ namespace SlaveMatrix
     			}
     			break;
     		case 2:
-    			switch (Body.IndexY)
+    			switch (Body.GetIndexY())
     			{
     			case 0:
     				X2Y0_小陰唇CP.Update();
@@ -1418,7 +1419,7 @@ namespace SlaveMatrix
     			}
     			break;
     		default:
-    			switch (Body.IndexY)
+    			switch (Body.GetIndexY())
     			{
     			case 0:
     				X3Y0_小陰唇CP.Update();

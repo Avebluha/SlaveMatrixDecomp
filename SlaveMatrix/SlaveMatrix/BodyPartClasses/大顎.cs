@@ -1,4 +1,5 @@
 using _2DGAMELIB;
+using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
@@ -113,7 +114,7 @@ namespace SlaveMatrix
     		set
     		{
     			欠損_ = value;
-    			Body.IndexY = (欠損_ ? 1 : 0);
+    			Body.SetIndexY((欠損_ ? 1 : 0));
     		}
     	}
 
@@ -537,9 +538,9 @@ namespace SlaveMatrix
     	public override void SetAngle0()
     	{
     		double num = (右 ? (-1.0) : 1.0);
-    		X0Y0_牙.AngleBase = num * -22.0;
-    		X0Y1_牙.AngleBase = num * -22.0;
-    		X0Y0_輪_革.AngleBase = num * -21.0;
+    		X0Y0_牙.SetAngleBase(num * -22.0);
+    		X0Y1_牙.SetAngleBase(num * -22.0);
+    		X0Y0_輪_革.SetAngleBase(num * -21.0);
     		Body.JoinPAall();
     	}
 
@@ -563,7 +564,7 @@ namespace SlaveMatrix
 
     	public override void 色更新()
     	{
-    		if (Body.IndexY == 0)
+    		if (Body.GetIndexY() == 0)
     		{
     			X0Y0_棘_棘1CP.Update();
     			X0Y0_棘_棘2CP.Update();

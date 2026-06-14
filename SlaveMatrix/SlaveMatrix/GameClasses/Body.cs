@@ -4,6 +4,7 @@ using System.Drawing;
 using System.Linq;
 using System.Reflection;
 using _2DGAMELIB;
+using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
@@ -991,7 +992,7 @@ namespace SlaveMatrix
     		get
     		{
     			Chest.接続P();
-    			return Chest.X0Y0_胸郭.ToGlobal((Chest.X0Y0_胸郭.OP[8].ps[2] + Chest.X0Y0_胸郭.OP[2].ps[2]) * 0.5);
+    			return Chest.X0Y0_胸郭.ToGlobal((Chest.X0Y0_胸郭.GetOP()[8].ps[2] + Chest.X0Y0_胸郭.GetOP()[2].ps[2]) * 0.5);
     		}
     	}
 
@@ -1018,9 +1019,9 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			ShapePart shapePart = 性器.Body.Current.EnumAllPar().First((ShapePart e) => e.Tag == "陰核");
+    			ShapePart shapePart = 性器.Body.GetCurrent().EnumAllPar().First((ShapePart e) => e.Tag == "陰核");
     			性器.接続PA();
-    			return shapePart.ToGlobal(shapePart.BasePointBase.AddY(-0.003));
+    			return shapePart.ToGlobal(shapePart.GetBasePointBase().AddY(-0.003));
     		}
     	}
 
@@ -1028,9 +1029,9 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			ShapePart shapePart = 乳房左.Body.Current.EnumAllPar().First((ShapePart e) => e.Tag == "乳首");
+    			ShapePart shapePart = 乳房左.Body.GetCurrent().EnumAllPar().First((ShapePart e) => e.Tag == "乳首");
     			乳房左.接続PA();
-    			return shapePart.ToGlobal(shapePart.BasePointBase);
+    			return shapePart.ToGlobal(shapePart.GetBasePointBase());
     		}
     	}
 
@@ -1038,9 +1039,9 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			ShapePart shapePart = 乳房右.Body.Current.EnumAllPar().First((ShapePart e) => e.Tag == "乳首");
+    			ShapePart shapePart = 乳房右.Body.GetCurrent().EnumAllPar().First((ShapePart e) => e.Tag == "乳首");
     			乳房右.接続PA();
-    			return shapePart.ToGlobal(shapePart.BasePointBase);
+    			return shapePart.ToGlobal(shapePart.GetBasePointBase());
     		}
     	}
 
@@ -1048,9 +1049,9 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			ShapePart shapePart = 性器.Body.Current.EnumAllPar().First((ShapePart e) => e.Tag == "尿道");
+    			ShapePart shapePart = 性器.Body.GetCurrent().EnumAllPar().First((ShapePart e) => e.Tag == "尿道");
     			性器.接続PA();
-    			return shapePart.ToGlobal(shapePart.BasePointBase);
+    			return shapePart.ToGlobal(shapePart.GetBasePointBase());
     		}
     	}
 
@@ -1058,9 +1059,9 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			ShapePart shapePart = 性器.Body.Current.EnumAllPar().First((ShapePart e) => e.Tag == "膣口");
+    			ShapePart shapePart = 性器.Body.GetCurrent().EnumAllPar().First((ShapePart e) => e.Tag == "膣口");
     			性器.接続PA();
-    			return shapePart.Position;
+    			return shapePart.GetPosition();
     		}
     	}
 
@@ -1078,7 +1079,7 @@ namespace SlaveMatrix
     		get
     		{
     			蜘尾.接続PA();
-    			return 蜘尾.X0Y0_出糸突起後_出糸突起基.Position;
+    			return 蜘尾.X0Y0_出糸突起後_出糸突起基.GetPosition();
     		}
     	}
 
@@ -1311,19 +1312,19 @@ namespace SlaveMatrix
     			double sizeCont = 1.0 + 0.1 * value;
     			if (Is獣)
     			{
-    				性器_獣.X0Y0_陰核.SizeCont = sizeCont;
-    				性器_獣.X0Y1_陰核.SizeCont = sizeCont;
-    				性器_獣.X0Y2_陰核.SizeCont = sizeCont;
-    				性器_獣.X0Y3_陰核.SizeCont = sizeCont;
-    				性器_獣.X0Y4_陰核.SizeCont = sizeCont;
+    				性器_獣.X0Y0_陰核.SetSizeCont(sizeCont);
+    				性器_獣.X0Y1_陰核.SetSizeCont(sizeCont);
+    				性器_獣.X0Y2_陰核.SetSizeCont(sizeCont);
+    				性器_獣.X0Y3_陰核.SetSizeCont(sizeCont);
+    				性器_獣.X0Y4_陰核.SetSizeCont(sizeCont);
     			}
     			else
     			{
-    				性器_人.X0Y0_陰核.SizeCont = sizeCont;
-    				性器_人.X0Y1_陰核.SizeCont = sizeCont;
-    				性器_人.X0Y2_陰核.SizeCont = sizeCont;
-    				性器_人.X0Y3_陰核.SizeCont = sizeCont;
-    				性器_人.X0Y4_陰核.SizeCont = sizeCont;
+    				性器_人.X0Y0_陰核.SetSizeCont(sizeCont);
+    				性器_人.X0Y1_陰核.SetSizeCont(sizeCont);
+    				性器_人.X0Y2_陰核.SetSizeCont(sizeCont);
+    				性器_人.X0Y3_陰核.SetSizeCont(sizeCont);
+    				性器_人.X0Y4_陰核.SetSizeCont(sizeCont);
     			}
     		}
     	}
@@ -1339,16 +1340,16 @@ namespace SlaveMatrix
     			下着乳首左.乳首CD.不透明度 = value;
     			下着乳首右.乳首CD.不透明度 = value;
     			double sizeCont = 1.0 + 0.1 * value;
-    			乳房左.X0Y0_乳首.SizeCont = sizeCont;
-    			乳房左.X0Y1_乳首.SizeCont = sizeCont;
-    			乳房左.X0Y2_乳首.SizeCont = sizeCont;
-    			乳房左.X0Y3_乳首.SizeCont = sizeCont;
-    			乳房左.X0Y4_乳首.SizeCont = sizeCont;
-    			乳房右.X0Y0_乳首.SizeCont = sizeCont;
-    			乳房右.X0Y1_乳首.SizeCont = sizeCont;
-    			乳房右.X0Y2_乳首.SizeCont = sizeCont;
-    			乳房右.X0Y3_乳首.SizeCont = sizeCont;
-    			乳房右.X0Y4_乳首.SizeCont = sizeCont;
+    			乳房左.X0Y0_乳首.SetSizeCont(sizeCont);
+    			乳房左.X0Y1_乳首.SetSizeCont(sizeCont);
+    			乳房左.X0Y2_乳首.SetSizeCont(sizeCont);
+    			乳房左.X0Y3_乳首.SetSizeCont(sizeCont);
+    			乳房左.X0Y4_乳首.SetSizeCont(sizeCont);
+    			乳房右.X0Y0_乳首.SetSizeCont(sizeCont);
+    			乳房右.X0Y1_乳首.SetSizeCont(sizeCont);
+    			乳房右.X0Y2_乳首.SetSizeCont(sizeCont);
+    			乳房右.X0Y3_乳首.SetSizeCont(sizeCont);
+    			乳房右.X0Y4_乳首.SetSizeCont(sizeCont);
     		}
     	}
 
@@ -1400,19 +1401,19 @@ namespace SlaveMatrix
     			double num = -0.003;
     			if (Is獣)
     			{
-    				断面_獣.X0Y0_子宮.BasePointCont = DataConsts.Vec2DUnitY * num * 子宮下がり_;
-    				断面_獣.X0Y1_子宮.BasePointCont = DataConsts.Vec2DUnitY * num * 子宮下がり_;
-    				断面_獣.X0Y2_子宮.BasePointCont = DataConsts.Vec2DUnitY * num * 子宮下がり_;
-    				断面_獣.X0Y3_子宮.BasePointCont = DataConsts.Vec2DUnitY * num * 子宮下がり_;
-    				断面_獣.X0Y4_子宮.BasePointCont = DataConsts.Vec2DUnitY * num * 子宮下がり_;
+    				断面_獣.X0Y0_子宮.SetBasePointCont(DataConsts.Vec2DUnitY * num * 子宮下がり_);
+    				断面_獣.X0Y1_子宮.SetBasePointCont(DataConsts.Vec2DUnitY * num * 子宮下がり_);
+    				断面_獣.X0Y2_子宮.SetBasePointCont(DataConsts.Vec2DUnitY * num * 子宮下がり_);
+    				断面_獣.X0Y3_子宮.SetBasePointCont(DataConsts.Vec2DUnitY * num * 子宮下がり_);
+    				断面_獣.X0Y4_子宮.SetBasePointCont(DataConsts.Vec2DUnitY * num * 子宮下がり_);
     			}
     			else
     			{
-    				断面_人.X0Y0_子宮.BasePointCont = DataConsts.Vec2DUnitY * num * 子宮下がり_;
-    				断面_人.X0Y1_子宮.BasePointCont = DataConsts.Vec2DUnitY * num * 子宮下がり_;
-    				断面_人.X0Y2_子宮.BasePointCont = DataConsts.Vec2DUnitY * num * 子宮下がり_;
-    				断面_人.X0Y3_子宮.BasePointCont = DataConsts.Vec2DUnitY * num * 子宮下がり_;
-    				断面_人.X0Y4_子宮.BasePointCont = DataConsts.Vec2DUnitY * num * 子宮下がり_;
+    				断面_人.X0Y0_子宮.SetBasePointCont(DataConsts.Vec2DUnitY * num * 子宮下がり_);
+    				断面_人.X0Y1_子宮.SetBasePointCont(DataConsts.Vec2DUnitY * num * 子宮下がり_);
+    				断面_人.X0Y2_子宮.SetBasePointCont(DataConsts.Vec2DUnitY * num * 子宮下がり_);
+    				断面_人.X0Y3_子宮.SetBasePointCont(DataConsts.Vec2DUnitY * num * 子宮下がり_);
+    				断面_人.X0Y4_子宮.SetBasePointCont(DataConsts.Vec2DUnitY * num * 子宮下がり_);
     			}
     		}
     	}
@@ -1431,15 +1432,15 @@ namespace SlaveMatrix
     			double num3 = 2.0;
     			if (Is獣)
     			{
-    				肛門_獣.X0Y0_肛門1.SizeYBase = 肛門y + num * 肛門開き_;
-    				肛門_獣.X0Y0_肛門1.SizeBase = 肛門v + num2 * 肛門開き_;
-    				肛門_獣.X0Y0_肛門2.SizeBase = 肛門v + num3 * 肛門開き_;
+    				肛門_獣.X0Y0_肛門1.SetSizeYBase(肛門y + num * 肛門開き_);
+    				肛門_獣.X0Y0_肛門1.SetSizeBase(肛門v + num2 * 肛門開き_);
+    				肛門_獣.X0Y0_肛門2.SetSizeBase(肛門v + num3 * 肛門開き_);
     			}
     			else
     			{
-    				肛門_人.X0Y0_肛門1.SizeYBase = 肛門y + num * 肛門開き_;
-    				肛門_人.X0Y0_肛門1.SizeBase = 肛門v + num2 * 肛門開き_;
-    				肛門_人.X0Y0_肛門2.SizeBase = 肛門v + num3 * 肛門開き_;
+    				肛門_人.X0Y0_肛門1.SetSizeYBase(肛門y + num * 肛門開き_);
+    				肛門_人.X0Y0_肛門1.SetSizeBase(肛門v + num2 * 肛門開き_);
+    				肛門_人.X0Y0_肛門2.SetSizeBase(肛門v + num3 * 肛門開き_);
     			}
     		}
     	}
@@ -1450,13 +1451,13 @@ namespace SlaveMatrix
     		{
     			if (Is獣)
     			{
-    				肛門_獣.X0Y0_肛門1.SizeCont = value;
-    				肛門_獣.X0Y0_肛門1.SizeCont = value;
+    				肛門_獣.X0Y0_肛門1.SetSizeCont(value);
+    				肛門_獣.X0Y0_肛門1.SetSizeCont(value);
     			}
     			else
     			{
-    				肛門_人.X0Y0_肛門1.SizeCont = value;
-    				肛門_人.X0Y0_肛門1.SizeCont = value;
+    				肛門_人.X0Y0_肛門1.SetSizeCont(value);
+    				肛門_人.X0Y0_肛門1.SetSizeCont(value);
     			}
     		}
     	}
@@ -1467,11 +1468,11 @@ namespace SlaveMatrix
     		{
     			if (Is獣)
     			{
-    				性器_獣.X0Y0_膣口.SizeCont = value;
+    				性器_獣.X0Y0_膣口.SetSizeCont(value);
     			}
     			else
     			{
-    				性器_人.X0Y0_膣口.SizeCont = value;
+    				性器_人.X0Y0_膣口.SetSizeCont(value);
     			}
     		}
     	}
@@ -1482,18 +1483,18 @@ namespace SlaveMatrix
     		{
     			if (value != 0.0)
     			{
-    				蜘尾.X0Y0_出糸突起後_出糸突起中.SizeYCont = 0.8 + 0.2 * Rng.XS.NextDouble();
+    				蜘尾.X0Y0_出糸突起後_出糸突起中.SetSizeYCont(0.8 + 0.2 * Rng.XS.NextDouble());
     			}
     			else
     			{
-    				蜘尾.X0Y0_出糸突起後_出糸突起中.SizeYCont = 1.0;
+    				蜘尾.X0Y0_出糸突起後_出糸突起中.SetSizeYCont(1.0);
     			}
-    			蜘尾.X0Y0_出糸突起後_出糸突起左.AngleCont = value * Rng.XS.NextDouble();
-    			蜘尾.X0Y0_出糸突起後_出糸突起右.AngleCont = (0.0 - value) * Rng.XS.NextDouble();
-    			蜘尾.X0Y0_出糸突起左_出糸突起1.AngleCont = value * Rng.XS.NextDouble();
-    			蜘尾.X0Y0_出糸突起右_出糸突起1.AngleCont = (0.0 - value) * Rng.XS.NextDouble();
-    			蜘尾.X0Y0_出糸突起前_出糸突起左.AngleCont = value * Rng.XS.NextDouble();
-    			蜘尾.X0Y0_出糸突起前_出糸突起右.AngleCont = (0.0 - value) * Rng.XS.NextDouble();
+    			蜘尾.X0Y0_出糸突起後_出糸突起左.SetAngleCont(value * Rng.XS.NextDouble());
+    			蜘尾.X0Y0_出糸突起後_出糸突起右.SetAngleCont((0.0 - value) * Rng.XS.NextDouble());
+    			蜘尾.X0Y0_出糸突起左_出糸突起1.SetAngleCont(value * Rng.XS.NextDouble());
+    			蜘尾.X0Y0_出糸突起右_出糸突起1.SetAngleCont((0.0 - value) * Rng.XS.NextDouble());
+    			蜘尾.X0Y0_出糸突起前_出糸突起左.SetAngleCont(value * Rng.XS.NextDouble());
+    			蜘尾.X0Y0_出糸突起前_出糸突起右.SetAngleCont((0.0 - value) * Rng.XS.NextDouble());
     			if (Is髪 && EI髪.ElesH.Contains(蜘尾))
     			{
     				EI髪.Updatef = true;
@@ -1594,19 +1595,19 @@ namespace SlaveMatrix
     			腰肌_人.Yv = value;
     			下着B_ノーマル.Yv = value;
     			下着B_マイクロ.Yv = value;
-    			性器_人.Body.SizeYCont = 0.65 + Waist.Yv * 0.35;
+    			性器_人.Body.SetSizeYCont(0.65 + Waist.Yv * 0.35);
     			foreach (ShapePart item in 性器_人.Body.EnumJoinRoot)
     			{
-    				item.PositionCont = DataConsts.Vec2DUnitY * (Waist.Yv * 0.001 + 0.001);
+    				item.SetPositionCont(DataConsts.Vec2DUnitY * (Waist.Yv * 0.001 + 0.001));
     			}
-    			肛門_人.Body.SizeYCont = 0.65 + Waist.Yv * 0.35;
+    			肛門_人.Body.SetSizeYCont(0.65 + Waist.Yv * 0.35);
     			foreach (ShapePart item2 in 上着B_クロス.Body.EnumJoinRoot)
     			{
-    				item2.PositionCont = DataConsts.Vec2DUnitY * (Waist.Yv * 0.003);
+    				item2.SetPositionCont(DataConsts.Vec2DUnitY * (Waist.Yv * 0.003));
     			}
     			foreach (ShapePart item3 in 上着B_前掛け.Body.EnumJoinRoot)
     			{
-    				item3.PositionCont = DataConsts.Vec2DUnitY * (Waist.Yv * 0.003);
+    				item3.SetPositionCont(DataConsts.Vec2DUnitY * (Waist.Yv * 0.003));
     			}
     			腰振り_人();
     		}
@@ -1624,19 +1625,19 @@ namespace SlaveMatrix
     			腰肌_人.Yi = value;
     			下着B_ノーマル.Yi = value;
     			下着B_マイクロ.Yi = value;
-    			性器_人.Body.SizeYCont = 0.65 + Waist.Yv * 0.35;
+    			性器_人.Body.SetSizeYCont(0.65 + Waist.Yv * 0.35);
     			foreach (ShapePart item in 性器_人.Body.EnumJoinRoot)
     			{
-    				item.PositionCont = DataConsts.Vec2DUnitY * (Waist.Yv * 0.001 + 0.001);
+    				item.SetPositionCont(DataConsts.Vec2DUnitY * (Waist.Yv * 0.001 + 0.001));
     			}
-    			肛門_人.Body.SizeYCont = 0.65 + Waist.Yv * 0.35;
+    			肛門_人.Body.SetSizeYCont(0.65 + Waist.Yv * 0.35);
     			foreach (ShapePart item2 in 上着B_クロス.Body.EnumJoinRoot)
     			{
-    				item2.PositionCont = DataConsts.Vec2DUnitY * (Waist.Yv * 0.003);
+    				item2.SetPositionCont(DataConsts.Vec2DUnitY * (Waist.Yv * 0.003));
     			}
     			foreach (ShapePart item3 in 上着B_前掛け.Body.EnumJoinRoot)
     			{
-    				item3.PositionCont = DataConsts.Vec2DUnitY * (Waist.Yv * 0.003);
+    				item3.SetPositionCont(DataConsts.Vec2DUnitY * (Waist.Yv * 0.003));
     			}
     			腰振り_人();
     		}
@@ -1652,12 +1653,12 @@ namespace SlaveMatrix
     		{
     			Waist_獣.Yv = value;
     			腰肌_獣.Yv = value;
-    			性器_獣.Body.SizeYCont = 0.65 + Waist_獣.Yv * 0.35;
+    			性器_獣.Body.SetSizeYCont(0.65 + Waist_獣.Yv * 0.35);
     			foreach (ShapePart item in 性器_獣.Body.EnumJoinRoot)
     			{
-    				item.PositionCont = DataConsts.Vec2DUnitY * (Waist_獣.Yv * 0.001 + 0.001);
+    				item.SetPositionCont(DataConsts.Vec2DUnitY * (Waist_獣.Yv * 0.001 + 0.001));
     			}
-    			肛門_獣.Body.SizeYCont = 0.65 + Waist_獣.Yv * 0.35;
+    			肛門_獣.Body.SetSizeYCont(0.65 + Waist_獣.Yv * 0.35);
     			腰振り_獣();
     		}
     	}
@@ -1672,12 +1673,12 @@ namespace SlaveMatrix
     		{
     			Waist_獣.Yi = value;
     			腰肌_獣.Yi = value;
-    			性器_獣.Body.SizeYCont = 0.65 + Waist_獣.Yv * 0.35;
+    			性器_獣.Body.SetSizeYCont(0.65 + Waist_獣.Yv * 0.35);
     			foreach (ShapePart item in 性器_獣.Body.EnumJoinRoot)
     			{
-    				item.PositionCont = DataConsts.Vec2DUnitY * (Waist_獣.Yv * 0.001 + 0.001);
+    				item.SetPositionCont(DataConsts.Vec2DUnitY * (Waist_獣.Yv * 0.001 + 0.001));
     			}
-    			肛門_獣.Body.SizeYCont = 0.65 + Waist_獣.Yv * 0.35;
+    			肛門_獣.Body.SetSizeYCont(0.65 + Waist_獣.Yv * 0.35);
     			腰振り_獣();
     		}
     	}
@@ -2021,8 +2022,8 @@ namespace SlaveMatrix
     				ボテ腹_人.Yv = value;
     				ボテ腹板_人.Yv = value;
     			}
-    			上着B_前掛け.X0Y0_帯.SizeXCont = 1.0 + 0.1 * ボテ腹v;
-    			上着B_前掛け.X0Y1_帯.SizeXCont = 上着B_前掛け.X0Y0_帯.SizeXCont;
+    			上着B_前掛け.X0Y0_帯.SetSizeXCont(1.0 + 0.1 * ボテ腹v);
+    			上着B_前掛け.X0Y1_帯.SetSizeXCont(上着B_前掛け.X0Y0_帯.GetSizeXCont());
     		}
     	}
 
@@ -2047,8 +2048,8 @@ namespace SlaveMatrix
     				ボテ腹_人.Yi = value;
     				ボテ腹板_人.Yi = value;
     			}
-    			上着B_前掛け.X0Y0_帯.SizeXCont = 1.0 + 0.1 * ボテ腹v;
-    			上着B_前掛け.X0Y1_帯.SizeXCont = 上着B_前掛け.X0Y0_帯.SizeXCont;
+    			上着B_前掛け.X0Y0_帯.SetSizeXCont(1.0 + 0.1 * ボテ腹v);
+    			上着B_前掛け.X0Y1_帯.SetSizeXCont(上着B_前掛け.X0Y0_帯.GetSizeXCont());
     		}
     	}
 
@@ -2292,18 +2293,18 @@ namespace SlaveMatrix
     				if (ele4 is 触手_蔦)
     				{
     					触手_蔦 obj = (触手_蔦)ele4;
-    					obj.X0Y0_先端_上顎_顎.AngleBase = 0.0;
-    					obj.X0Y0_先端_下顎_顎.AngleBase = 0.0;
+    					obj.X0Y0_先端_上顎_顎.SetAngleBase(0.0);
+    					obj.X0Y0_先端_下顎_顎.SetAngleBase(0.0);
     				}
     				else if (ele4 is 触手_犬)
     				{
     					触手_犬 obj2 = (触手_犬)ele4;
-    					obj2.X0Y0_頭_上顎_眼下_眼下.AngleBase = 0.0;
-    					obj2.X0Y0_頭_下顎_眼下_眼下.AngleBase = 0.0;
+    					obj2.X0Y0_頭_上顎_眼下_眼下.SetAngleBase(0.0);
+    					obj2.X0Y0_頭_下顎_眼下_眼下.SetAngleBase(0.0);
     				}
     				else if (ele4 is 触肢_肢蠍)
     				{
-    					((触肢_肢蠍)ele4).X0Y0_爪2.AngleBase = 0.0;
+    					((触肢_肢蠍)ele4).X0Y0_爪2.SetAngleBase(0.0);
     				}
     				else if (ele4 is 虫鎌)
     				{
@@ -3028,7 +3029,7 @@ namespace SlaveMatrix
     						sk.Add(脚.キスマーク);
     						脚.鞭痕 = new スタンプW(Med, Are, Cha, bod, wd, 脚);
     						sw.Add(脚.鞭痕);
-    						if (!人腿.X0Y0_腿.OP[0].Outline)
+    						if (!人腿.X0Y0_腿.GetOP()[0].Outline)
     						{
     							人腿.腿0CD.c2.Col2 = 脚.LegCD.c2.Col1;
     							人腿.腿1CD.c2.Col2 = 脚.LegCD.c2.Col1;
@@ -3151,7 +3152,7 @@ namespace SlaveMatrix
     									LowerArm.手_接続.SetEle(delegate(手_蝙 手)
     									{
     										腕翼獣.手 = 手;
-    										UpperArm.接着 = () => bod.Waist.X0Y0_Waist.ToGlobal(bod.Waist.X0Y0_Waist.BasePointBase);
+    										UpperArm.接着 = () => bod.Waist.X0Y0_Waist.ToGlobal(bod.Waist.X0Y0_Waist.GetBasePointBase());
     										bod.蝙通常.Add(new 蝙通常(UpperArm, LowerArm, 手));
     									});
     								});
@@ -3214,7 +3215,7 @@ namespace SlaveMatrix
     											手.手CD.c2 = LowerArm.獣性1_獣腕CD.c2;
     											手.親指_親指1CD.c2 = 手.手CD.c2;
     										}
-    										else if (手.X0Y0_手.OP[6].Outline)
+    										else if (手.X0Y0_手.GetOP()[6].Outline)
     										{
     											手.手CD.c2 = LowerArm.虫性1_虫腕上CD.c2;
     											手.親指_親指1CD.c2 = 手.手CD.c2;
@@ -3227,7 +3228,7 @@ namespace SlaveMatrix
     									UpperArm.UpperArmCD.c2.Col2 = LowerArm.LowerArmCD.c2.Col1;
     									UpperArm.筋肉上CD.c2.Col2 = LowerArm.LowerArmCD.c2.Col1;
     									UpperArm.筋肉下CD.c2.Col2 = LowerArm.LowerArmCD.c2.Col1;
-    									LowerArm.X0Y0_LowerArm.OP[6].Outline = true;
+    									LowerArm.X0Y0_LowerArm.GetOP()[6].Outline = true;
     								});
     							});
     							Arm人右.Add(腕人);
@@ -3266,31 +3267,31 @@ namespace SlaveMatrix
     								pp = 翼獣.UpperArm.Par.Par;
     								if (p is 基髪)
     								{
-    									翼獣.UpperArm.接着 = () => bod.頭.X0Y0_Head.ToGlobal(bod.頭.X0Y0_Head.BasePointBase);
+    									翼獣.UpperArm.接着 = () => bod.頭.X0Y0_Head.ToGlobal(bod.頭.X0Y0_Head.GetBasePointBase());
     								}
     								else if (p is Chest)
     								{
-    									翼獣.UpperArm.接着 = () => bod.Torso.X0Y0_Torso.ToGlobal(bod.Torso.X0Y0_Torso.BasePointBase);
+    									翼獣.UpperArm.接着 = () => bod.Torso.X0Y0_Torso.ToGlobal(bod.Torso.X0Y0_Torso.GetBasePointBase());
     								}
     								else if (p is Torso || p is Waist)
     								{
-    									翼獣.UpperArm.接着 = () => bod.Waist.X0Y0_Waist.ToGlobal(bod.Waist.X0Y0_Waist.JP[4].Joint);
+    									翼獣.UpperArm.接着 = () => bod.Waist.X0Y0_Waist.ToGlobal(bod.Waist.X0Y0_Waist.GetJP()[4].Joint);
     								}
     								else if (p is 四足胸)
     								{
-    									翼獣.UpperArm.接着 = () => bod.Torso_獣.X0Y0_Torso.ToGlobal(bod.Torso_獣.X0Y0_Torso.BasePointBase);
+    									翼獣.UpperArm.接着 = () => bod.Torso_獣.X0Y0_Torso.ToGlobal(bod.Torso_獣.X0Y0_Torso.GetBasePointBase());
     								}
     								else if ((p is 四足胴 || p is 四足腰) && (翼獣.UpperArm.ConnectionType == ConnectionInfo.四足腰_翼左_接続 || 翼獣.UpperArm.ConnectionType == ConnectionInfo.四足腰_翼右_接続))
     								{
-    									翼獣.UpperArm.接着 = () => bod.Waist_獣.X0Y0_Waist.ToGlobal(bod.Waist.X0Y0_Waist.JP[4].Joint);
+    									翼獣.UpperArm.接着 = () => bod.Waist_獣.X0Y0_Waist.ToGlobal(bod.Waist.X0Y0_Waist.GetJP()[4].Joint);
     								}
     								else if (pp != null && pp is Chest)
     								{
-    									翼獣.UpperArm.接着 = () => bod.Waist.X0Y0_Waist.ToGlobal(bod.Waist.X0Y0_Waist.BasePointBase);
+    									翼獣.UpperArm.接着 = () => bod.Waist.X0Y0_Waist.ToGlobal(bod.Waist.X0Y0_Waist.GetBasePointBase());
     								}
     								else if (pp != null && pp is 四足胸)
     								{
-    									翼獣.UpperArm.接着 = () => bod.Waist_獣.X0Y0_Waist.ToGlobal(bod.Waist_獣.X0Y0_Waist.BasePointBase);
+    									翼獣.UpperArm.接着 = () => bod.Waist_獣.X0Y0_Waist.ToGlobal(bod.Waist_獣.X0Y0_Waist.GetBasePointBase());
     								}
     								else
     								{
@@ -3421,7 +3422,7 @@ namespace SlaveMatrix
     					sk.Add(脚.キスマーク);
     					脚.鞭痕 = new スタンプW(Med, Are, Cha, bod, wd, 脚);
     					sw.Add(脚.鞭痕);
-    					if (!人腿.X0Y0_腿.OP[4].Outline)
+    					if (!人腿.X0Y0_腿.GetOP()[4].Outline)
     					{
     						人腿.腿0CD.c2.Col2 = 脚.LegCD.c2.Col1;
     						人腿.腿1CD.c2.Col2 = 脚.LegCD.c2.Col1;
@@ -3544,7 +3545,7 @@ namespace SlaveMatrix
     								LowerArm.手_接続.SetEle(delegate(手_蝙 手)
     								{
     									腕翼獣.手 = 手;
-    									UpperArm.接着 = () => bod.Waist.X0Y0_Waist.ToGlobal(bod.Waist.X0Y0_Waist.BasePointBase);
+    									UpperArm.接着 = () => bod.Waist.X0Y0_Waist.ToGlobal(bod.Waist.X0Y0_Waist.GetBasePointBase());
     									bod.蝙通常.Add(new 蝙通常(UpperArm, LowerArm, 手));
     								});
     							});
@@ -3607,7 +3608,7 @@ namespace SlaveMatrix
     										手.手CD.c2 = LowerArm.獣性1_獣腕CD.c2;
     										手.親指_親指1CD.c2 = 手.手CD.c2;
     									}
-    									else if (手.X0Y0_手.OP[0].Outline)
+    									else if (手.X0Y0_手.GetOP()[0].Outline)
     									{
     										手.手CD.c2 = LowerArm.虫性1_虫腕上CD.c2;
     										手.親指_親指1CD.c2 = 手.手CD.c2;
@@ -3620,7 +3621,7 @@ namespace SlaveMatrix
     								UpperArm.UpperArmCD.c2.Col2 = LowerArm.LowerArmCD.c2.Col1;
     								UpperArm.筋肉上CD.c2.Col2 = LowerArm.LowerArmCD.c2.Col1;
     								UpperArm.筋肉下CD.c2.Col2 = LowerArm.LowerArmCD.c2.Col1;
-    								LowerArm.X0Y0_LowerArm.OP[0].Outline = true;
+    								LowerArm.X0Y0_LowerArm.GetOP()[0].Outline = true;
     							});
     						});
     						Arm人左.Add(腕人);
@@ -3659,31 +3660,31 @@ namespace SlaveMatrix
     							pp = 翼獣.UpperArm.Par.Par;
     							if (p is 基髪)
     							{
-    								翼獣.UpperArm.接着 = () => bod.頭.X0Y0_Head.ToGlobal(bod.頭.X0Y0_Head.BasePointBase);
+    								翼獣.UpperArm.接着 = () => bod.頭.X0Y0_Head.ToGlobal(bod.頭.X0Y0_Head.GetBasePointBase());
     							}
     							else if (p is Chest)
     							{
-    								翼獣.UpperArm.接着 = () => bod.Torso.X0Y0_Torso.ToGlobal(bod.Torso.X0Y0_Torso.BasePointBase);
+    								翼獣.UpperArm.接着 = () => bod.Torso.X0Y0_Torso.ToGlobal(bod.Torso.X0Y0_Torso.GetBasePointBase());
     							}
     							else if (p is Torso || p is Waist)
     							{
-    								翼獣.UpperArm.接着 = () => bod.Waist.X0Y0_Waist.ToGlobal(bod.Waist.X0Y0_Waist.JP[4].Joint);
+    								翼獣.UpperArm.接着 = () => bod.Waist.X0Y0_Waist.ToGlobal(bod.Waist.X0Y0_Waist.GetJP()[4].Joint);
     							}
     							else if (p is 四足胸)
     							{
-    								翼獣.UpperArm.接着 = () => bod.Torso_獣.X0Y0_Torso.ToGlobal(bod.Torso_獣.X0Y0_Torso.BasePointBase);
+    								翼獣.UpperArm.接着 = () => bod.Torso_獣.X0Y0_Torso.ToGlobal(bod.Torso_獣.X0Y0_Torso.GetBasePointBase());
     							}
     							else if ((p is 四足胴 || p is 四足腰) && (翼獣.UpperArm.ConnectionType == ConnectionInfo.四足腰_翼左_接続 || 翼獣.UpperArm.ConnectionType == ConnectionInfo.四足腰_翼右_接続))
     							{
-    								翼獣.UpperArm.接着 = () => bod.Waist_獣.X0Y0_Waist.ToGlobal(bod.Waist.X0Y0_Waist.JP[4].Joint);
+    								翼獣.UpperArm.接着 = () => bod.Waist_獣.X0Y0_Waist.ToGlobal(bod.Waist.X0Y0_Waist.GetJP()[4].Joint);
     							}
     							else if (pp != null && pp is Chest)
     							{
-    								翼獣.UpperArm.接着 = () => bod.Waist.X0Y0_Waist.ToGlobal(bod.Waist.X0Y0_Waist.BasePointBase);
+    								翼獣.UpperArm.接着 = () => bod.Waist.X0Y0_Waist.ToGlobal(bod.Waist.X0Y0_Waist.GetBasePointBase());
     							}
     							else if (pp != null && pp is 四足胸)
     							{
-    								翼獣.UpperArm.接着 = () => bod.Waist_獣.X0Y0_Waist.ToGlobal(bod.Waist_獣.X0Y0_Waist.BasePointBase);
+    								翼獣.UpperArm.接着 = () => bod.Waist_獣.X0Y0_Waist.ToGlobal(bod.Waist_獣.X0Y0_Waist.GetBasePointBase());
     							}
     							else
     							{
@@ -3778,20 +3779,20 @@ namespace SlaveMatrix
     				{
     					if (current_element.右)
     					{
-    						((尾_魚)current_element).X0Y0_尾1_尾.OP[5].Outline = false;
+    						((尾_魚)current_element).X0Y0_尾1_尾.GetOP()[5].Outline = false;
     					}
     					else
     					{
-    						((尾_魚)current_element).X0Y0_尾1_尾.OP[0].Outline = false;
+    						((尾_魚)current_element).X0Y0_尾1_尾.GetOP()[0].Outline = false;
     					}
     				}
     				else if (current_element.右)
     				{
-    					((尾_魚)current_element).X0Y0_尾0_尾.OP[5].Outline = false;
+    					((尾_魚)current_element).X0Y0_尾0_尾.GetOP()[5].Outline = false;
     				}
     				else
     				{
-    					((尾_魚)current_element).X0Y0_尾0_尾.OP[0].Outline = false;
+    					((尾_魚)current_element).X0Y0_尾0_尾.GetOP()[0].Outline = false;
     				}
     			}
     			else if (current_element is 長胴)
@@ -5265,24 +5266,24 @@ namespace SlaveMatrix
     		}
     		if (IsSingleEye)
     		{
-    			頭.X0Y0_Head.JP[7] = new JointPoint(頭.X0Y0_Head.JP[7].Joint.MulY(0.96));
-    			頭.X0Y0_Head.JP[17] = new JointPoint(頭.X0Y0_Head.JP[17].Joint.MulY(0.96));
-    			頭.X0Y0_Head.JP[18] = new JointPoint(頭.X0Y0_Head.JP[18].Joint.MulY(0.96));
+    			頭.X0Y0_Head.GetJP()[7] = new JointPoint(頭.X0Y0_Head.GetJP()[7].Joint.MulY(0.96));
+    			頭.X0Y0_Head.GetJP()[17] = new JointPoint(頭.X0Y0_Head.GetJP()[17].Joint.MulY(0.96));
+    			頭.X0Y0_Head.GetJP()[18] = new JointPoint(頭.X0Y0_Head.GetJP()[18].Joint.MulY(0.96));
     			紅潮.紅潮1_表示 = false;
-    			紅潮.X0Y0_紅潮左.AngleBase = 20.0;
-    			紅潮.X0Y0_紅潮弱左.AngleBase = 20.0;
-    			紅潮.X0Y0_紅潮線左.AngleBase = 20.0;
-    			紅潮.X0Y0_紅潮右.AngleBase = -20.0;
-    			紅潮.X0Y0_紅潮弱右.AngleBase = -20.0;
-    			紅潮.X0Y0_紅潮線右.AngleBase = -20.0;
+    			紅潮.X0Y0_紅潮左.SetAngleBase(20.0);
+    			紅潮.X0Y0_紅潮弱左.SetAngleBase(20.0);
+    			紅潮.X0Y0_紅潮線左.SetAngleBase(20.0);
+    			紅潮.X0Y0_紅潮右.SetAngleBase(-20.0);
+    			紅潮.X0Y0_紅潮弱右.SetAngleBase(-20.0);
+    			紅潮.X0Y0_紅潮線右.SetAngleBase(-20.0);
     		}
     		染み_人 = new 染み_人(disUnit, 配色指定.N0, Cha.ColorSet, Med, new 染み_人D());
     		染み_人.サイズ = Elements.Sum((Element e) => e.サイズ) / (double)Elements.Length;
     		染み_人.Intensity = 0.0;
     		Vector2D positionCont = DataConsts.Vec2DUnitY * -0.03;
     		Vector2D positionCont2 = DataConsts.Vec2DUnitY * 0.03;
-    		染み_人.X0Y0_汗.PositionCont = positionCont;
-    		染み_人.X0Y0_潮1.PositionCont = positionCont2;
+    		染み_人.X0Y0_汗.SetPositionCont(positionCont);
+    		染み_人.X0Y0_潮1.SetPositionCont(positionCont2);
     		if (Is獣)
     		{
     			膣内精液_獣.Intensity = 0.0;
@@ -5309,22 +5310,22 @@ namespace SlaveMatrix
     			染み_獣.Intensity = 0.0;
     			if (Chest_獣.脇左_接続.IsEle<四足脇>())
     			{
-    				Chest_獣.X0Y0_胸郭.OP[0].Outline = false;
-    				Chest_獣.X0Y0_胸郭.OP[9].Outline = false;
+    				Chest_獣.X0Y0_胸郭.GetOP()[0].Outline = false;
+    				Chest_獣.X0Y0_胸郭.GetOP()[9].Outline = false;
     			}
     			Vector2D positionCont3 = new Vector2D(0.0, 0.006);
-    			染み_獣.X0Y0_湯気_湯気左1_湯気2.PositionCont = positionCont3;
-    			染み_獣.X0Y0_湯気_湯気左2_湯気2.PositionCont = positionCont3;
-    			染み_獣.X0Y0_湯気_湯気左3_湯気2.PositionCont = positionCont3;
-    			染み_獣.X0Y0_湯気_湯気右1_湯気2.PositionCont = positionCont3;
-    			染み_獣.X0Y0_湯気_湯気右2_湯気2.PositionCont = positionCont3;
-    			染み_獣.X0Y0_湯気_湯気右3_湯気2.PositionCont = positionCont3;
-    			下着陰核.X0Y0_陰核.SizeBase = 性器_獣.X0Y0_陰核.SizeBase;
-    			csb = 性器_獣.X0Y0_陰核.SizeBase;
-    			asb1 = 肛門_獣.X0Y0_肛門2.SizeBase;
-    			asb2 = 肛門_獣.X0Y0_肛門3.SizeBase;
-    			染み_獣.X0Y0_汗.PositionCont = positionCont;
-    			染み_獣.X0Y0_潮1.PositionCont = positionCont2;
+    			染み_獣.X0Y0_湯気_湯気左1_湯気2.SetPositionCont(positionCont3);
+    			染み_獣.X0Y0_湯気_湯気左2_湯気2.SetPositionCont(positionCont3);
+    			染み_獣.X0Y0_湯気_湯気左3_湯気2.SetPositionCont(positionCont3);
+    			染み_獣.X0Y0_湯気_湯気右1_湯気2.SetPositionCont(positionCont3);
+    			染み_獣.X0Y0_湯気_湯気右2_湯気2.SetPositionCont(positionCont3);
+    			染み_獣.X0Y0_湯気_湯気右3_湯気2.SetPositionCont(positionCont3);
+    			下着陰核.X0Y0_陰核.SetSizeBase(性器_獣.X0Y0_陰核.GetSizeBase());
+    			csb = 性器_獣.X0Y0_陰核.GetSizeBase();
+    			asb1 = 肛門_獣.X0Y0_肛門2.GetSizeBase();
+    			asb2 = 肛門_獣.X0Y0_肛門3.GetSizeBase();
+    			染み_獣.X0Y0_汗.SetPositionCont(positionCont);
+    			染み_獣.X0Y0_潮1.SetPositionCont(positionCont2);
     		}
     		else
     		{
@@ -5348,16 +5349,16 @@ namespace SlaveMatrix
     			性器精液_人.精液配色(GlobalState.GameData.配色);
     			肛門精液_人.精液配色(GlobalState.GameData.配色);
     			Vector2D positionCont4 = new Vector2D(0.0, 0.006);
-    			染み_人.X0Y0_湯気_湯気左1_湯気2.PositionCont = positionCont4;
-    			染み_人.X0Y0_湯気_湯気左2_湯気2.PositionCont = positionCont4;
-    			染み_人.X0Y0_湯気_湯気左3_湯気2.PositionCont = positionCont4;
-    			染み_人.X0Y0_湯気_湯気右1_湯気2.PositionCont = positionCont4;
-    			染み_人.X0Y0_湯気_湯気右2_湯気2.PositionCont = positionCont4;
-    			染み_人.X0Y0_湯気_湯気右3_湯気2.PositionCont = positionCont4;
-    			下着陰核.X0Y0_陰核.SizeBase = 性器_人.X0Y0_陰核.SizeBase;
-    			csb = 性器_人.X0Y0_陰核.SizeBase;
-    			asb1 = 肛門_人.X0Y0_肛門2.SizeBase;
-    			asb2 = 肛門_人.X0Y0_肛門3.SizeBase;
+    			染み_人.X0Y0_湯気_湯気左1_湯気2.SetPositionCont(positionCont4);
+    			染み_人.X0Y0_湯気_湯気左2_湯気2.SetPositionCont(positionCont4);
+    			染み_人.X0Y0_湯気_湯気左3_湯気2.SetPositionCont(positionCont4);
+    			染み_人.X0Y0_湯気_湯気右1_湯気2.SetPositionCont(positionCont4);
+    			染み_人.X0Y0_湯気_湯気右2_湯気2.SetPositionCont(positionCont4);
+    			染み_人.X0Y0_湯気_湯気右3_湯気2.SetPositionCont(positionCont4);
+    			下着陰核.X0Y0_陰核.SetSizeBase(性器_人.X0Y0_陰核.GetSizeBase());
+    			csb = 性器_人.X0Y0_陰核.GetSizeBase();
+    			asb1 = 肛門_人.X0Y0_肛門2.GetSizeBase();
+    			asb2 = 肛門_人.X0Y0_肛門3.GetSizeBase();
     			ボテ腹_人.X0Y0_ハイライト.Dra = false;
     			ボテ腹_人.X0Y0_ハイライト左1.Dra = false;
     			ボテ腹_人.X0Y0_ハイライト左2.Dra = false;
@@ -5407,22 +5408,22 @@ namespace SlaveMatrix
     			foreach (ShapePart item53 in (from e in Waist.腿左_接続.GetEles<腿>()
     				select e.Body.EnumAllPar()).Aggregate((IEnumerable<ShapePart> e1, IEnumerable<ShapePart> e2) => e1.Concat(e2)))
     			{
-    				item53.OP.OutlineFalse();
+    				item53.GetOP().OutlineFalse();
     			}
     			foreach (ShapePart item54 in (from e in Waist.腿右_接続.GetEles<腿>()
     				select e.Body.EnumAllPar()).Aggregate((IEnumerable<ShapePart> e1, IEnumerable<ShapePart> e2) => e1.Concat(e2)))
     			{
-    				item54.OP.OutlineFalse();
+    				item54.GetOP().OutlineFalse();
     			}
     		}
     		Elements.SetEle(delegate(Torso_蛇 e)
     		{
-    			e.X0Y0_Torso_Torso.OP[1].ps[3] = e.X0Y0_Torso_Torso.OP[1].ps[3].AddY(0.04);
+    			e.X0Y0_Torso_Torso.GetOP()[1].ps[3] = e.X0Y0_Torso_Torso.GetOP()[1].ps[3].AddY(0.04);
     			if (e.Torso_接続 != null)
     			{
     				e.Torso_接続.SetEle(delegate(Torso_蛇 f)
     				{
-    					f.X0Y0_Torso_Torso.OP[1].ps[3] = f.X0Y0_Torso_Torso.OP[1].ps[3].AddY(0.04);
+    					f.X0Y0_Torso_Torso.GetOP()[1].ps[3] = f.X0Y0_Torso_Torso.GetOP()[1].ps[3].AddY(0.04);
     				});
     			}
     		});
@@ -5431,8 +5432,8 @@ namespace SlaveMatrix
     			腿開きi = 1;
     			断面_表示 = true;
     		}
-    		下着乳首左.X0Y0_乳首.SizeBase = 乳房左.X0Y0_乳首.SizeBase * 1.1;
-    		下着乳首右.X0Y0_乳首.SizeBase = 乳房右.X0Y0_乳首.SizeBase * 1.1;
+    		下着乳首左.X0Y0_乳首.SetSizeBase(乳房左.X0Y0_乳首.GetSizeBase() * 1.1);
+    		下着乳首右.X0Y0_乳首.SetSizeBase(乳房右.X0Y0_乳首.GetSizeBase() * 1.1);
     		if (Chest.肩左_接続 == null)
     		{
     			胸肌_人.淫タトゥ_タトゥ左_表示 = false;
@@ -5447,8 +5448,8 @@ namespace SlaveMatrix
     		{
     			Waist.WaistCD.c2.Col2 = ele7.尾0_尾CD.c2.Col1;
     		}
-    		nsb1 = 乳房左.X0Y0_乳首.SizeBase;
-    		nsb2 = 乳房左.X0Y0_乳輪.SizeBase;
+    		nsb1 = 乳房左.X0Y0_乳首.GetSizeBase();
+    		nsb2 = 乳房左.X0Y0_乳輪.GetSizeBase();
     		変動ステート更新();
     		Waist.位置B = Med.Base.GetPosition(new Vector2D(0.5, 0.5));
     		Join();
@@ -9143,26 +9144,26 @@ namespace SlaveMatrix
     		下着T_ブラ.バスト = バスト;
     		上着T_ドレス.バスト = バスト;
     		double num = 0.65 * Cha.CharacterData.最乳首 * Cha.CharacterData.現乳首;
-    		乳房左.X0Y0_乳首.SizeBase = nsb1 + num;
-    		乳房左.X0Y0_乳輪.SizeBase = nsb2 + num;
-    		乳房左.X0Y1_乳首.SizeBase = nsb1 + num;
-    		乳房左.X0Y1_乳輪.SizeBase = nsb2 + num;
-    		乳房左.X0Y2_乳首.SizeBase = nsb1 + num;
-    		乳房左.X0Y2_乳輪.SizeBase = nsb2 + num;
-    		乳房左.X0Y3_乳首.SizeBase = nsb1 + num;
-    		乳房左.X0Y3_乳輪.SizeBase = nsb2 + num;
-    		乳房左.X0Y4_乳首.SizeBase = nsb1 + num;
-    		乳房左.X0Y4_乳輪.SizeBase = nsb2 + num;
-    		乳房右.X0Y0_乳首.SizeBase = nsb1 + num;
-    		乳房右.X0Y0_乳輪.SizeBase = nsb2 + num;
-    		乳房右.X0Y1_乳首.SizeBase = nsb1 + num;
-    		乳房右.X0Y1_乳輪.SizeBase = nsb2 + num;
-    		乳房右.X0Y2_乳首.SizeBase = nsb1 + num;
-    		乳房右.X0Y2_乳輪.SizeBase = nsb2 + num;
-    		乳房右.X0Y3_乳首.SizeBase = nsb1 + num;
-    		乳房右.X0Y3_乳輪.SizeBase = nsb2 + num;
-    		乳房右.X0Y4_乳首.SizeBase = nsb1 + num;
-    		乳房右.X0Y4_乳輪.SizeBase = nsb2 + num;
+    		乳房左.X0Y0_乳首.SetSizeBase(nsb1 + num);
+    		乳房左.X0Y0_乳輪.SetSizeBase(nsb2 + num);
+    		乳房左.X0Y1_乳首.SetSizeBase(nsb1 + num);
+    		乳房左.X0Y1_乳輪.SetSizeBase(nsb2 + num);
+    		乳房左.X0Y2_乳首.SetSizeBase(nsb1 + num);
+    		乳房左.X0Y2_乳輪.SetSizeBase(nsb2 + num);
+    		乳房左.X0Y3_乳首.SetSizeBase(nsb1 + num);
+    		乳房左.X0Y3_乳輪.SetSizeBase(nsb2 + num);
+    		乳房左.X0Y4_乳首.SetSizeBase(nsb1 + num);
+    		乳房左.X0Y4_乳輪.SetSizeBase(nsb2 + num);
+    		乳房右.X0Y0_乳首.SetSizeBase(nsb1 + num);
+    		乳房右.X0Y0_乳輪.SetSizeBase(nsb2 + num);
+    		乳房右.X0Y1_乳首.SetSizeBase(nsb1 + num);
+    		乳房右.X0Y1_乳輪.SetSizeBase(nsb2 + num);
+    		乳房右.X0Y2_乳首.SetSizeBase(nsb1 + num);
+    		乳房右.X0Y2_乳輪.SetSizeBase(nsb2 + num);
+    		乳房右.X0Y3_乳首.SetSizeBase(nsb1 + num);
+    		乳房右.X0Y3_乳輪.SetSizeBase(nsb2 + num);
+    		乳房右.X0Y4_乳首.SetSizeBase(nsb1 + num);
+    		乳房右.X0Y4_乳輪.SetSizeBase(nsb2 + num);
     		乳房左.乳首CD.不透明度 = Cha.CharacterData.素乳首濃度 + Cha.CharacterData.最乳首濃度 * Cha.CharacterData.現乳首;
     		乳房左.乳輪CD.不透明度 = Cha.CharacterData.素乳首濃度 + Cha.CharacterData.最乳首濃度 * Cha.CharacterData.現乳首;
     		乳房右.乳首CD.不透明度 = Cha.CharacterData.素乳首濃度 + Cha.CharacterData.最乳首濃度 * Cha.CharacterData.現乳首;
@@ -9170,31 +9171,31 @@ namespace SlaveMatrix
     		num = 0.65 * Cha.CharacterData.最陰核 * Cha.CharacterData.現陰核;
     		if (Is獣)
     		{
-    			性器_獣.X0Y0_陰核.SizeBase = csb + num;
-    			性器_獣.X0Y1_陰核.SizeBase = csb + num;
-    			性器_獣.X0Y2_陰核.SizeBase = csb + num;
-    			性器_獣.X0Y3_陰核.SizeBase = csb + num;
-    			性器_獣.X0Y4_陰核.SizeBase = csb + num;
+    			性器_獣.X0Y0_陰核.SetSizeBase(csb + num);
+    			性器_獣.X0Y1_陰核.SetSizeBase(csb + num);
+    			性器_獣.X0Y2_陰核.SetSizeBase(csb + num);
+    			性器_獣.X0Y3_陰核.SetSizeBase(csb + num);
+    			性器_獣.X0Y4_陰核.SetSizeBase(csb + num);
     			性器_獣.小陰唇CD.不透明度 = Cha.CharacterData.素性器濃度 + Cha.CharacterData.最性器濃度 * Cha.CharacterData.現性器;
     			性器_獣.性器基CD.不透明度 = Cha.CharacterData.素性器濃度 + Cha.CharacterData.最性器濃度 * Cha.CharacterData.現性器;
     			肛門_獣.肛門3CD.不透明度 = Cha.CharacterData.素肛門濃度 + Cha.CharacterData.最肛門濃度 * Cha.CharacterData.現肛門;
     			num = 0.3 * Cha.CharacterData.現肛門;
-    			肛門_獣.X0Y0_肛門2.SizeBase = asb1 + num;
-    			肛門_獣.X0Y0_肛門3.SizeBase = asb2 + num;
+    			肛門_獣.X0Y0_肛門2.SetSizeBase(asb1 + num);
+    			肛門_獣.X0Y0_肛門3.SetSizeBase(asb2 + num);
     		}
     		else
     		{
-    			性器_人.X0Y0_陰核.SizeBase = csb + num;
-    			性器_人.X0Y1_陰核.SizeBase = csb + num;
-    			性器_人.X0Y2_陰核.SizeBase = csb + num;
-    			性器_人.X0Y3_陰核.SizeBase = csb + num;
-    			性器_人.X0Y4_陰核.SizeBase = csb + num;
+    			性器_人.X0Y0_陰核.SetSizeBase(csb + num);
+    			性器_人.X0Y1_陰核.SetSizeBase(csb + num);
+    			性器_人.X0Y2_陰核.SetSizeBase(csb + num);
+    			性器_人.X0Y3_陰核.SetSizeBase(csb + num);
+    			性器_人.X0Y4_陰核.SetSizeBase(csb + num);
     			性器_人.小陰唇CD.不透明度 = Cha.CharacterData.素性器濃度 + Cha.CharacterData.最性器濃度 * Cha.CharacterData.現性器;
     			性器_人.性器基CD.不透明度 = Cha.CharacterData.素性器濃度 + Cha.CharacterData.最性器濃度 * Cha.CharacterData.現性器;
     			肛門_人.肛門3CD.不透明度 = Cha.CharacterData.素肛門濃度 + Cha.CharacterData.最肛門濃度 * Cha.CharacterData.現肛門;
     			num = 0.3 * Cha.CharacterData.現肛門;
-    			肛門_人.X0Y0_肛門2.SizeBase = asb1 + num;
-    			肛門_人.X0Y0_肛門3.SizeBase = asb2 + num;
+    			肛門_人.X0Y0_肛門2.SetSizeBase(asb1 + num);
+    			肛門_人.X0Y0_肛門3.SetSizeBase(asb2 + num);
     		}
     		腰肌_人.陰毛CD.不透明度 = Cha.CharacterData.現陰毛 * Cha.CharacterData.最陰毛濃度;
     		腰肌_人.獣性_獣毛CD.不透明度 = Cha.CharacterData.現陰毛;
@@ -9793,17 +9794,17 @@ namespace SlaveMatrix
 
     	private void 腰振り_人()
     	{
-    		Torso.X0Y0_筋肉_筋肉左.PositionCont = DataConsts.Vec2DUnitY * (Waist.Yv * -0.004);
-    		Torso.X0Y0_筋肉_筋肉右.PositionCont = DataConsts.Vec2DUnitY * (Waist.Yv * -0.004);
-    		胴腹板_人.X0Y0_虫性_腹板.PositionCont = DataConsts.Vec2DUnitY * (Waist.Yv * -0.002);
-    		胴肌_人.Body.SizeYCont = 0.85 + (1.0 - Waist.Yv) * 0.15;
+    		Torso.X0Y0_筋肉_筋肉左.SetPositionCont(DataConsts.Vec2DUnitY * (Waist.Yv * -0.004));
+    		Torso.X0Y0_筋肉_筋肉右.SetPositionCont(DataConsts.Vec2DUnitY * (Waist.Yv * -0.004));
+    		胴腹板_人.X0Y0_虫性_腹板.SetPositionCont(DataConsts.Vec2DUnitY * (Waist.Yv * -0.002));
+    		胴肌_人.Body.SetSizeYCont(0.85 + (1.0 - Waist.Yv) * 0.15);
     	}
 
     	private void 腰振り_獣()
     	{
-    		Torso_獣.X0Y0_筋肉_筋肉左.PositionCont = DataConsts.Vec2DUnitY * (Waist_獣.Yv * -0.004);
-    		Torso_獣.X0Y0_筋肉_筋肉右.PositionCont = DataConsts.Vec2DUnitY * (Waist_獣.Yv * -0.004);
-    		胴肌_獣.Body.SizeYCont = 0.85 + (1.0 - Waist_獣.Yv) * 0.15;
+    		Torso_獣.X0Y0_筋肉_筋肉左.SetPositionCont(DataConsts.Vec2DUnitY * (Waist_獣.Yv * -0.004));
+    		Torso_獣.X0Y0_筋肉_筋肉右.SetPositionCont(DataConsts.Vec2DUnitY * (Waist_獣.Yv * -0.004));
+    		胴肌_獣.Body.SetSizeYCont(0.85 + (1.0 - Waist_獣.Yv) * 0.15);
     		if (EI半中1 != null)
     		{
     			EI半中1.Updatef = true;

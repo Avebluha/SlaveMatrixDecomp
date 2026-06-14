@@ -1,4 +1,5 @@
 using _2DGAMELIB;
+using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
@@ -457,24 +458,24 @@ namespace SlaveMatrix
     		X4Y4_上唇CP = new ColorP(X4Y4_上唇, 上唇CD, DisUnit, abj: true);
     		X4Y4_下唇CP = new ColorP(X4Y4_下唇, 下唇CD, DisUnit, abj: true);
     		Intensity = e.濃度;
-    		X4Y0_上唇.BasePointBase = X4Y0_上唇.ToLocal(X4Y0_舌.ToGlobal(X4Y0_舌.JP[0].Joint));
-    		X4Y1_上唇.BasePointBase = X4Y1_上唇.ToLocal(X4Y1_舌.ToGlobal(X4Y1_舌.JP[0].Joint));
-    		X4Y2_上唇.BasePointBase = X4Y2_上唇.ToLocal(X4Y2_舌.ToGlobal(X4Y2_舌.JP[0].Joint));
-    		X4Y3_上唇.BasePointBase = X4Y3_上唇.ToLocal(X4Y3_舌.ToGlobal(X4Y3_舌.JP[0].Joint));
-    		X4Y4_上唇.BasePointBase = X4Y4_上唇.ToLocal(X4Y4_舌.ToGlobal(X4Y4_舌.JP[0].Joint));
+    		X4Y0_上唇.SetBasePointBase(X4Y0_上唇.ToLocal(X4Y0_舌.ToGlobal(X4Y0_舌.GetJP()[0].Joint)));
+    		X4Y1_上唇.SetBasePointBase(X4Y1_上唇.ToLocal(X4Y1_舌.ToGlobal(X4Y1_舌.GetJP()[0].Joint)));
+    		X4Y2_上唇.SetBasePointBase(X4Y2_上唇.ToLocal(X4Y2_舌.ToGlobal(X4Y2_舌.GetJP()[0].Joint)));
+    		X4Y3_上唇.SetBasePointBase(X4Y3_上唇.ToLocal(X4Y3_舌.ToGlobal(X4Y3_舌.GetJP()[0].Joint)));
+    		X4Y4_上唇.SetBasePointBase(X4Y4_上唇.ToLocal(X4Y4_舌.ToGlobal(X4Y4_舌.GetJP()[0].Joint)));
     		尺度B = 1.08;
     		Body.JoinPAall();
     	}
 
     	public override void 描画0(RenderArea Are)
     	{
-    		switch (Body.IndexX)
+    		switch (Body.GetIndexX())
     		{
     		case 2:
     			Are.Draw(X2Y0_舌);
     			break;
     		case 3:
-    			switch (Body.IndexY)
+    			switch (Body.GetIndexY())
     			{
     			case 0:
     				Are.Draw(X3Y0_舌);
@@ -494,7 +495,7 @@ namespace SlaveMatrix
     			}
     			break;
     		case 4:
-    			switch (Body.IndexY)
+    			switch (Body.GetIndexY())
     			{
     			case 0:
     				Are.Draw(X4Y0_舌);
@@ -518,7 +519,7 @@ namespace SlaveMatrix
 
     	public override void 描画1(RenderArea Are)
     	{
-    		switch (Body.IndexX)
+    		switch (Body.GetIndexX())
     		{
     		case 0:
     			Are.Draw(X0Y0_上唇);
@@ -533,7 +534,7 @@ namespace SlaveMatrix
     			Are.Draw(X2Y0_下唇);
     			break;
     		case 3:
-    			switch (Body.IndexY)
+    			switch (Body.GetIndexY())
     			{
     			case 0:
     				Are.Draw(X3Y0_上唇);
@@ -558,7 +559,7 @@ namespace SlaveMatrix
     			}
     			break;
     		default:
-    			switch (Body.IndexY)
+    			switch (Body.GetIndexY())
     			{
     			case 0:
     				Are.Draw(X4Y0_上唇);
@@ -587,7 +588,7 @@ namespace SlaveMatrix
 
     	public override void 色更新()
     	{
-    		switch (Body.IndexX)
+    		switch (Body.GetIndexX())
     		{
     		case 0:
     			X0Y0_上唇CP.Update();
@@ -603,7 +604,7 @@ namespace SlaveMatrix
     			X2Y0_下唇CP.Update();
     			break;
     		case 3:
-    			switch (Body.IndexY)
+    			switch (Body.GetIndexY())
     			{
     			case 0:
     				X3Y0_舌CP.Update();
@@ -633,7 +634,7 @@ namespace SlaveMatrix
     			}
     			break;
     		default:
-    			switch (Body.IndexY)
+    			switch (Body.GetIndexY())
     			{
     			case 0:
     				X4Y0_舌CP.Update();

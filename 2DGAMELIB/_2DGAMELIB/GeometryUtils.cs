@@ -9,10 +9,6 @@ namespace _2DGAMELIB
 {
     public static class GeometryUtils
     {
-    	private static double s1;
-
-    	private static double s0;
-
     	public static Color Reverse(this Color c)
     	{
     		return Color.FromArgb(c.A, 255 - c.R, 255 - c.G, 255 - c.B);
@@ -50,7 +46,7 @@ namespace _2DGAMELIB
 
     	public static LinearGradientBrush GetLGB(double Unit, Vector2D[] MM, Color Color1, Color Color2)
     	{
-    		return new LinearGradientBrush((MM[0] * Unit * s0).ToPointF(), (MM[1] * Unit * s1).ToPointF(), Color1, Color2)
+    		return new LinearGradientBrush((MM[0] * Unit * 1.01.Reciprocal()).ToPointF(), (MM[1] * Unit * 1.01).ToPointF(), Color1, Color2)
     		{
     			GammaCorrection = true
     		};
@@ -58,7 +54,7 @@ namespace _2DGAMELIB
 
     	public static LinearGradientBrush GetLGB(double Unit, Vector2D[] MM, ref Color Color1, ref Color Color2)
     	{
-    		return new LinearGradientBrush((MM[0] * Unit * s0).ToPointF(), (MM[1] * Unit * s1).ToPointF(), Color1, Color2)
+    		return new LinearGradientBrush((MM[0] * Unit * 1.01.Reciprocal()).ToPointF(), (MM[1] * Unit * 1.01).ToPointF(), Color1, Color2)
     		{
     			GammaCorrection = true
     		};
@@ -66,7 +62,7 @@ namespace _2DGAMELIB
 
     	private static void GetMinMaxX(ShapePart ShapePart, ref double MinX, ref double MaxX)
     	{
-    		foreach (CurveOutline item in ShapePart.OP)
+    		foreach (CurveOutline item in ShapePart.GetOP())
     		{
     			foreach (Vector2D p in item.ps)
     			{
@@ -85,7 +81,7 @@ namespace _2DGAMELIB
 
     	private static void GetMinMaxY(ShapePart ShapePart, ref double MinY, ref double MaxY)
     	{
-    		foreach (CurveOutline item in ShapePart.OP)
+    		foreach (CurveOutline item in ShapePart.GetOP())
     		{
     			foreach (Vector2D p in item.ps)
     			{
@@ -112,7 +108,7 @@ namespace _2DGAMELIB
 
     	public static void GetMiX_MaX(this ShapePart ShapePart, out Vector2D[] MM)
     	{
-    		Vector2D vector2D = ShapePart.ToGlobal(ShapePart.OP.First().ps.First());
+    		Vector2D vector2D = ShapePart.ToGlobal(ShapePart.GetOP().First().ps.First());
     		MM = new Vector2D[2];
     		MM[0].X = vector2D.X;
     		MM[1].X = vector2D.X;
@@ -121,7 +117,7 @@ namespace _2DGAMELIB
 
     	public static void GetMaX_MiX(this ShapePart ShapePart, out Vector2D[] MM)
     	{
-    		Vector2D vector2D = ShapePart.ToGlobal(ShapePart.OP.First().ps.First());
+    		Vector2D vector2D = ShapePart.ToGlobal(ShapePart.GetOP().First().ps.First());
     		MM = new Vector2D[2];
     		MM[0].X = vector2D.X;
     		MM[1].X = vector2D.X;
@@ -130,7 +126,7 @@ namespace _2DGAMELIB
 
     	public static void GetMiY_MaY(this ShapePart ShapePart, out Vector2D[] MM)
     	{
-    		Vector2D vector2D = ShapePart.ToGlobal(ShapePart.OP.First().ps.First());
+    		Vector2D vector2D = ShapePart.ToGlobal(ShapePart.GetOP().First().ps.First());
     		MM = new Vector2D[2];
     		MM[0].Y = vector2D.Y;
     		MM[1].Y = vector2D.Y;
@@ -140,7 +136,7 @@ namespace _2DGAMELIB
     	public static void GetMiY_MaY(this ShapePart[] Pars, out Vector2D[] MM)
     	{
     		ShapePart shapePart = Pars.First();
-    		Vector2D vector2D = shapePart.ToGlobal(shapePart.OP.First().ps.First());
+    		Vector2D vector2D = shapePart.ToGlobal(shapePart.GetOP().First().ps.First());
     		MM = new Vector2D[2];
     		MM[0].Y = vector2D.Y;
     		MM[1].Y = vector2D.Y;
@@ -149,7 +145,7 @@ namespace _2DGAMELIB
 
     	public static void GetMaY_MiY(this ShapePart ShapePart, out Vector2D[] MM)
     	{
-    		Vector2D vector2D = ShapePart.ToGlobal(ShapePart.OP.First().ps.First());
+    		Vector2D vector2D = ShapePart.ToGlobal(ShapePart.GetOP().First().ps.First());
     		MM = new Vector2D[2];
     		MM[0].Y = vector2D.Y;
     		MM[1].Y = vector2D.Y;
@@ -198,7 +194,7 @@ public static BodyTemplate ObjLoad(this byte[] bd)
 
     	public static Encoding GetEncoding(this byte[] Bytes)
     	{
-    		byte[] array = null;
+    		byte[] array;
     		if (Bytes.Length > 4000)
     		{
     			array = new byte[4000];
@@ -351,8 +347,6 @@ public static BodyTemplate ObjLoad(this byte[] bd)
 
     	static GeometryUtils()
     	{
-    		s1 = 1.01;
-    		s0 = s1.Reciprocal();
     	}
 
     	public static void SaveExMod<T>(this T Obj, string Path)

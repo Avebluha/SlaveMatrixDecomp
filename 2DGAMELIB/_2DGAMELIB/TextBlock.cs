@@ -59,10 +59,10 @@ namespace _2DGAMELIB
     		{
     			if (feed != null)
     			{
-    				a0 = feed.BrushColor.A;
-    				a1 = feed.PenColor.A;
-    				feed.BrushColor = Color.FromArgb(0, feed.BrushColor);
-    				feed.PenColor = Color.FromArgb(0, feed.PenColor);
+    				a0 = feed.GetBrushColor().A;
+    				a1 = feed.GetPenColor().A;
+    				feed.SetBrushColor(Color.FromArgb(0, feed.GetBrushColor()));
+    				feed.SetPenColor(Color.FromArgb(0, feed.GetPenColor()));
     			}
     			text = new string(' ', Space) + value;
     			Max = text.Length;
@@ -85,10 +85,10 @@ namespace _2DGAMELIB
     		{
     			if (feed != null)
     			{
-    				a0 = feed.BrushColor.A;
-    				a1 = feed.PenColor.A;
-    				feed.BrushColor = Color.FromArgb(0, feed.BrushColor);
-    				feed.PenColor = Color.FromArgb(0, feed.PenColor);
+    				a0 = feed.GetBrushColor().A;
+    				a1 = feed.GetPenColor().A;
+    				feed.SetBrushColor(Color.FromArgb(0, feed.GetBrushColor()));
+    				feed.SetPenColor(Color.FromArgb(0, feed.GetPenColor()));
     			}
     			text = new string(' ', Space) + value;
     			Max = text.Length;
@@ -113,14 +113,14 @@ namespace _2DGAMELIB
     	{
     		get
     		{
-    			return _shapePartT.PositionBase;
+    			return _shapePartT.GetPositionBase();
     		}
     		set
     		{
-    			_shapePartT.PositionBase = value;
+    			_shapePartT.SetPositionBase(value);
     			if (feed != null)
     			{
-    				feed.PositionBase = _shapePartT.ToGlobal(_shapePartT.OP[0].ps[2] * 0.95);
+    				feed.SetPositionBase(_shapePartT.ToGlobal(_shapePartT.GetOP()[0].ps[2] * 0.95));
     			}
     		}
     	}
@@ -209,22 +209,23 @@ namespace _2DGAMELIB
     		_shapePartT = new ShapePartT
     		{
     			Tag = Name,
-    			InitializeOP = array,
-    			PositionBase = Position,
-    			SizeBase = Size,
-    			Closed = true,
-    			BrushColor = BackColor,
-    			Font = Font,
-    			FontSize = TextSize,
-    			TextColor = TextColor,
-    			RectSize = new Vector2D(Width, Height),
     			Text = Text
     		};
-    		ShapePartT.OP.ScalingX(ShapePartT.BasePointBase, Width);
-    		ShapePartT.OP.ScalingY(ShapePartT.BasePointBase, Height);
+
+			_shapePartT.SetFont(Font);
+    		_shapePartT.SetFontSize(TextSize);
+    		_shapePartT.SetTextColor(TextColor);
+    		_shapePartT.SetRectSize(new Vector2D(Width, Height));
+			_shapePartT.SetInitializeOP(array);
+    		_shapePartT.SetPositionBase(Position);
+    		_shapePartT.SetSizeBase(Size);
+    		_shapePartT.SetClosed(true);
+    		_shapePartT.SetBrushColor(BackColor);
+    		_shapePartT.GetOP().ScalingX(_shapePartT.GetBasePointBase(), Width);
+    		_shapePartT.GetOP().ScalingY(_shapePartT.GetBasePointBase(), Height);
     		if (ShadColor != Color.Empty)
     		{
-    			_shapePartT.ShadBrush = new SolidBrush(ShadColor);
+    			_shapePartT.SetShadBrush(new SolidBrush(ShadColor));
     		}
     		_partGroup.Add(_shapePartT.Tag, _shapePartT);
     	}
@@ -235,27 +236,28 @@ namespace _2DGAMELIB
     		feed = new ShapePart
     		{
     			Tag = Name + "_Feed",
-    			InitializeOP = array,
-    			BasePointBase = array.GetCenter(),
-    			PositionBase = _shapePartT.ToGlobal(_shapePartT.OP[0].ps[2] * 0.96),
-    			SizeBase = Size * 0.07,
-    			SizeYBase = 0.9,
-    			Closed = true,
-    			PenColor = Color.FromArgb(0, Color.Black),
-    			BrushColor = Color.FromArgb(0, FeedColor),
     			Hit = false
     		};
-    		feed.OP.ReverseY(feed.BasePointBase);
+    		feed.SetInitializeOP(array);
+    		feed.SetBasePointBase(array.GetCenter());
+    		feed.SetPositionBase(feed.ToGlobal(feed.GetOP()[0].ps[2] * 0.96));
+    		feed.SetSizeBase(Size * 0.07);
+    		feed.SetSizeYBase(0.9);
+    		feed.SetClosed(true);
+    		feed.SetPenColor(Color.FromArgb(0, Color.Black));
+    		feed.SetBrushColor(Color.FromArgb(0, FeedColor));
+
+    		feed.GetOP().ReverseY(feed.GetBasePointBase());
     		_partGroup.Add(feed.Tag, feed);
     	}
 
     	public void SetHitColor(ModeEventDispatcher Med)
     	{
-    		if (_shapePartT.HitColor != Color.Transparent)
+    		if (_shapePartT.GetHitColor() != Color.Transparent)
     		{
-    			Med.RemUniqueColor(_shapePartT.HitColor);
+    			Med.RemUniqueColor(_shapePartT.GetHitColor());
     		}
-    		_shapePartT.HitColor = Med.GetUniqueColor();
+    		_shapePartT.SetHitColor(Med.GetUniqueColor());
     	}
 
     	public void Progression(FpsCounter FPS)
@@ -273,8 +275,8 @@ namespace _2DGAMELIB
     			f1 = true;
     			if (feed != null)
     			{
-    				feed.BrushColor = Color.FromArgb(a0, feed.BrushColor);
-    				feed.PenColor = Color.FromArgb(a1, feed.PenColor);
+    				feed.SetBrushColor(Color.FromArgb(a0, feed.GetBrushColor()));
+    				feed.SetPenColor(Color.FromArgb(a1, feed.GetPenColor()));
     			}
     			if (Done != null)
     			{
@@ -285,14 +287,14 @@ namespace _2DGAMELIB
     		else if (feed != null && feed.Dra)
     		{
     			mv.GetValue(FPS);
-    			feed.BrushColor = Color.FromArgb((int)mv.Value, feed.BrushColor);
-    			feed.PenColor = Color.FromArgb(feed.BrushColor.A, feed.PenColor);
+    			feed.SetBrushColor(Color.FromArgb((int)mv.Value, feed.GetBrushColor()));
+    			feed.SetPenColor(Color.FromArgb(feed.GetBrushColor().A, feed.GetPenColor()));
     		}
     	}
 
     	public bool Down(ref Color HitColor)
     	{
-    		if (_shapePartT.HitColor == HitColor)
+    		if (_shapePartT.GetHitColor() == HitColor)
     		{
     			f2 = true;
     			if (!f1 && Speed == speed)
@@ -306,14 +308,14 @@ namespace _2DGAMELIB
 
     	public bool Up(ref Color HitColor)
     	{
-    		if (f1 && f2 && _shapePartT.HitColor == HitColor && Speed == speed)
+    		if (f1 && f2 && _shapePartT.GetHitColor() == HitColor && Speed == speed)
     		{
     			f1 = false;
     			f2 = false;
     			if (feed != null)
     			{
-    				feed.BrushColor = Color.FromArgb(0, feed.BrushColor);
-    				feed.PenColor = Color.FromArgb(feed.BrushColor.A, feed.PenColor);
+    				feed.SetBrushColor(Color.FromArgb(0, feed.GetBrushColor()));
+    				feed.SetPenColor(Color.FromArgb(feed.GetBrushColor().A, feed.GetPenColor()));
     				mv.ResetValue();
     			}
     			Action(this);

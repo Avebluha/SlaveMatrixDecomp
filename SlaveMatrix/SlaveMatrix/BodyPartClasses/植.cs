@@ -1,5 +1,6 @@
 using System.Linq;
 using _2DGAMELIB;
+using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
@@ -1370,25 +1371,25 @@ namespace SlaveMatrix
     	public override void SetAngle0()
     	{
     		double num = (右 ? (-1.0) : 1.0);
-    		X0Y0_茎.AngleBase = num * -4.99999999999999;
-    		X0Y0_披針葉4_通常_葉脈.AngleBase = num * -52.0000000000001;
-    		X0Y0_披針葉4_欠損_葉脈.AngleBase = num * -52.0000000000001;
-    		X0Y0_心臓葉4_通常_葉脈.AngleBase = num * -60.9999999999999;
-    		X0Y0_心臓葉4_欠損_葉脈.AngleBase = num * -60.9999999999999;
-    		X0Y0_根1.AngleBase = num * -49.0;
-    		X0Y0_根2.AngleBase = num * -38.0;
-    		X0Y0_披針葉1_通常_葉脈.AngleBase = num * -24.0;
-    		X0Y0_披針葉1_欠損_葉脈.AngleBase = num * -24.0;
-    		X0Y0_披針葉2_通常_葉脈.AngleBase = num * -41.9999999999999;
-    		X0Y0_披針葉2_欠損_葉脈.AngleBase = num * -41.9999999999999;
-    		X0Y0_披針葉3_通常_葉脈.AngleBase = num * -66.0000000000002;
-    		X0Y0_披針葉3_欠損_葉脈.AngleBase = num * -66.0000000000002;
-    		X0Y0_心臓葉1_通常_葉脈.AngleBase = num * -23.0;
-    		X0Y0_心臓葉1_欠損_葉脈.AngleBase = num * -23.0;
-    		X0Y0_心臓葉2_通常_葉脈.AngleBase = num * -41.0;
-    		X0Y0_心臓葉2_欠損_葉脈.AngleBase = num * -41.0;
-    		X0Y0_心臓葉3_通常_葉脈.AngleBase = num * -64.9999999999998;
-    		X0Y0_心臓葉3_欠損_葉脈.AngleBase = num * -64.9999999999998;
+    		X0Y0_茎.SetAngleBase(num * -4.99999999999999);
+    		X0Y0_披針葉4_通常_葉脈.SetAngleBase(num * -52.0000000000001);
+    		X0Y0_披針葉4_欠損_葉脈.SetAngleBase(num * -52.0000000000001);
+    		X0Y0_心臓葉4_通常_葉脈.SetAngleBase(num * -60.9999999999999);
+    		X0Y0_心臓葉4_欠損_葉脈.SetAngleBase(num * -60.9999999999999);
+    		X0Y0_根1.SetAngleBase(num * -49.0);
+    		X0Y0_根2.SetAngleBase(num * -38.0);
+    		X0Y0_披針葉1_通常_葉脈.SetAngleBase(num * -24.0);
+    		X0Y0_披針葉1_欠損_葉脈.SetAngleBase(num * -24.0);
+    		X0Y0_披針葉2_通常_葉脈.SetAngleBase(num * -41.9999999999999);
+    		X0Y0_披針葉2_欠損_葉脈.SetAngleBase(num * -41.9999999999999);
+    		X0Y0_披針葉3_通常_葉脈.SetAngleBase(num * -66.0000000000002);
+    		X0Y0_披針葉3_欠損_葉脈.SetAngleBase(num * -66.0000000000002);
+    		X0Y0_心臓葉1_通常_葉脈.SetAngleBase(num * -23.0);
+    		X0Y0_心臓葉1_欠損_葉脈.SetAngleBase(num * -23.0);
+    		X0Y0_心臓葉2_通常_葉脈.SetAngleBase(num * -41.0);
+    		X0Y0_心臓葉2_欠損_葉脈.SetAngleBase(num * -41.0);
+    		X0Y0_心臓葉3_通常_葉脈.SetAngleBase(num * -64.9999999999998);
+    		X0Y0_心臓葉3_欠損_葉脈.SetAngleBase(num * -64.9999999999998);
     		Body.JoinPAall();
     	}
 

@@ -1,4 +1,5 @@
 using _2DGAMELIB;
+using SlaveMatrix.GameClasses;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -1248,10 +1249,10 @@ namespace SlaveMatrix
     	{
     		_ = 右;
     		double maxAngle = 25.0;
-    		X0Y0_Torso6_Torso.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_Torso5_Torso.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_Torso4_Torso.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_Torso3_Torso.AngleBase = maxAngle.GetRanAngle();
+    		X0Y0_Torso6_Torso.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_Torso5_Torso.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_Torso4_Torso.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_Torso3_Torso.SetAngleBase(maxAngle.GetRanAngle());
     		Body.JoinPAall();
     	}
 

@@ -686,11 +686,11 @@ namespace SlaveMatrix
     		set
     		{
     			double sizeBase = sb * (0.9 + 0.25 * value);
-    			X0Y0_左_バスト.SizeBase = sizeBase;
-    			X0Y0_右_バスト.SizeBase = sizeBase;
+    			X0Y0_左_バスト.SetSizeBase(sizeBase);
+    			X0Y0_右_バスト.SetSizeBase(sizeBase);
     			sizeBase = syb * (1.0 + 0.05 * value);
-    			X0Y0_左_バスト.SizeYBase = sizeBase;
-    			X0Y0_右_バスト.SizeYBase = sizeBase;
+    			X0Y0_左_バスト.SetSizeYBase(sizeBase);
+    			X0Y0_右_バスト.SetSizeYBase(sizeBase);
     		}
     	}
 

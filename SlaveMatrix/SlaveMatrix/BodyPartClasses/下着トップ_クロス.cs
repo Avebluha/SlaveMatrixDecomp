@@ -555,36 +555,36 @@ namespace SlaveMatrix
     		set
     		{
     			double sizeBase = sb * (0.9 + 0.24 * value);
-    			X0Y0_カップ右_布.SizeBase = sizeBase;
-    			X0Y0_カップ右_皺.SizeBase = sizeBase;
-    			X0Y0_カップ右_縁_縁1.SizeBase = sizeBase;
-    			X0Y0_カップ右_縁_縁2.SizeBase = sizeBase;
-    			X0Y0_カップ左_布.SizeBase = sizeBase;
-    			X0Y0_カップ左_皺.SizeBase = sizeBase;
-    			X0Y0_カップ左_縁_縁1.SizeBase = sizeBase;
-    			X0Y0_カップ左_縁_縁2.SizeBase = sizeBase;
+    			X0Y0_カップ右_布.SetSizeBase(sizeBase);
+    			X0Y0_カップ右_皺.SetSizeBase(sizeBase);
+    			X0Y0_カップ右_縁_縁1.SetSizeBase(sizeBase);
+    			X0Y0_カップ右_縁_縁2.SetSizeBase(sizeBase);
+    			X0Y0_カップ左_布.SetSizeBase(sizeBase);
+    			X0Y0_カップ左_皺.SetSizeBase(sizeBase);
+    			X0Y0_カップ左_縁_縁1.SetSizeBase(sizeBase);
+    			X0Y0_カップ左_縁_縁2.SetSizeBase(sizeBase);
     			sizeBase = syb * (1.0 + 0.05 * value.Inverse());
-    			X0Y0_カップ右_布.SizeYBase = sizeBase;
-    			X0Y0_カップ右_皺.SizeYBase = sizeBase;
-    			X0Y0_カップ右_縁_縁1.SizeYBase = sizeBase;
-    			X0Y0_カップ右_縁_縁2.SizeYBase = sizeBase;
-    			X0Y0_カップ左_布.SizeYBase = sizeBase;
-    			X0Y0_カップ左_皺.SizeYBase = sizeBase;
-    			X0Y0_カップ左_縁_縁1.SizeYBase = sizeBase;
-    			X0Y0_カップ左_縁_縁2.SizeYBase = sizeBase;
-    			X0Y0_布_布左_布.SizeYBase = sizeBase;
-    			X0Y0_布_布左_皺_皺1.SizeYBase = sizeBase;
-    			X0Y0_布_布左_皺_皺2.SizeYBase = sizeBase;
-    			X0Y0_布_布左_縁_縁1.SizeYBase = sizeBase;
-    			X0Y0_布_布左_縁_縁2.SizeYBase = sizeBase;
-    			X0Y0_布_布右_布.SizeYBase = sizeBase;
-    			X0Y0_布_布右_皺_皺1.SizeYBase = sizeBase;
-    			X0Y0_布_布右_皺_皺2.SizeYBase = sizeBase;
-    			X0Y0_布_布右_縁_縁1.SizeYBase = sizeBase;
-    			X0Y0_布_布右_縁_縁2.SizeYBase = sizeBase;
+    			X0Y0_カップ右_布.SetSizeYBase(sizeBase);
+    			X0Y0_カップ右_皺.SetSizeYBase(sizeBase);
+    			X0Y0_カップ右_縁_縁1.SetSizeYBase(sizeBase);
+    			X0Y0_カップ右_縁_縁2.SetSizeYBase(sizeBase);
+    			X0Y0_カップ左_布.SetSizeYBase(sizeBase);
+    			X0Y0_カップ左_皺.SetSizeYBase(sizeBase);
+    			X0Y0_カップ左_縁_縁1.SetSizeYBase(sizeBase);
+    			X0Y0_カップ左_縁_縁2.SetSizeYBase(sizeBase);
+    			X0Y0_布_布左_布.SetSizeYBase(sizeBase);
+    			X0Y0_布_布左_皺_皺1.SetSizeYBase(sizeBase);
+    			X0Y0_布_布左_皺_皺2.SetSizeYBase(sizeBase);
+    			X0Y0_布_布左_縁_縁1.SetSizeYBase(sizeBase);
+    			X0Y0_布_布左_縁_縁2.SetSizeYBase(sizeBase);
+    			X0Y0_布_布右_布.SetSizeYBase(sizeBase);
+    			X0Y0_布_布右_皺_皺1.SetSizeYBase(sizeBase);
+    			X0Y0_布_布右_皺_皺2.SetSizeYBase(sizeBase);
+    			X0Y0_布_布右_縁_縁1.SetSizeYBase(sizeBase);
+    			X0Y0_布_布右_縁_縁2.SetSizeYBase(sizeBase);
     			位置C = new Vector2D(位置C.X, -0.001);
-    			X0Y0_布_布左_布.PositionCont = new Vector2D(X0Y0_布_布左_布.PositionCont.X, -0.005);
-    			X0Y0_布_布右_布.PositionCont = new Vector2D(X0Y0_布_布右_布.PositionCont.X, -0.005);
+    			X0Y0_布_布左_布.SetPositionCont(new Vector2D(X0Y0_布_布左_布.GetPositionCont().X, -0.005));
+    			X0Y0_布_布右_布.SetPositionCont(new Vector2D(X0Y0_布_布右_布.GetPositionCont().X, -0.005));
     		}
     	}
 

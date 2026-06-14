@@ -1,5 +1,6 @@
 using System.Drawing;
 using _2DGAMELIB;
+using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
@@ -17,8 +18,8 @@ namespace SlaveMatrix
     			}
     			foreach (sep stum in sta)
     			{
-    				p = stum.Element.Body.Current.GetPar(stum.Path);
-    				stum.Sta.角度B = p.AngleBase - stum.ShapePart.AngleBase;
+    				p = stum.Element.Body.GetCurrent().GetPar(stum.Path);
+    				stum.Sta.角度B = p.GetAngleBase() - stum.ShapePart.GetAngleBase();
     				stum.Sta.位置B = p.ToGlobal(stum.Pos);
     				stum.Sta.色更新();
     				stum.Sta.Body.Draw(Are);

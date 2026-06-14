@@ -379,25 +379,25 @@ namespace SlaveMatrix
     		int num2 = -5;
     		double num3 = 1.0;
     		double num4 = 0.01;
-    		X0Y0_節0.AngleBase = num * -55.0;
-    		X0Y0_節1.AngleBase = num * 25.0;
-    		X0Y0_節2.AngleBase = num * (double)num2 * num3;
+    		X0Y0_節0.SetAngleBase(num * -55.0);
+    		X0Y0_節1.SetAngleBase(num * 25.0);
+    		X0Y0_節2.SetAngleBase(num * (double)num2 * num3);
     		num3 -= num4;
-    		X0Y0_節3.AngleBase = num * (double)num2 * num3;
+    		X0Y0_節3.SetAngleBase(num * (double)num2 * num3);
     		num3 -= num4;
-    		X0Y0_節4.AngleBase = num * (double)num2 * num3;
+    		X0Y0_節4.SetAngleBase(num * (double)num2 * num3);
     		num3 -= num4;
-    		X0Y0_節5.AngleBase = num * (double)num2 * num3;
+    		X0Y0_節5.SetAngleBase(num * (double)num2 * num3);
     		num3 -= num4;
-    		X0Y0_節6.AngleBase = num * (double)num2 * num3;
+    		X0Y0_節6.SetAngleBase(num * (double)num2 * num3);
     		num3 -= num4;
-    		X0Y0_節7.AngleBase = num * (double)num2 * num3;
+    		X0Y0_節7.SetAngleBase(num * (double)num2 * num3);
     		num3 -= num4;
-    		X0Y0_節8.AngleBase = num * (double)num2 * num3;
+    		X0Y0_節8.SetAngleBase(num * (double)num2 * num3);
     		num3 -= num4;
-    		X0Y0_節9.AngleBase = num * (double)num2 * num3;
+    		X0Y0_節9.SetAngleBase(num * (double)num2 * num3);
     		num3 -= num4;
-    		X0Y0_節10.AngleBase = num * (double)num2 * num3;
+    		X0Y0_節10.SetAngleBase(num * (double)num2 * num3);
     		Body.JoinPAall();
     	}
 

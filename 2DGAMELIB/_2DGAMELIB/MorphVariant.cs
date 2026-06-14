@@ -27,139 +27,31 @@ namespace _2DGAMELIB
     		}
     	}
 
-    	public double PositionSize
-    	{
-    		set
-    		{
-    			foreach (PartGroup item in parss)
-    			{
-    				item.PositionSize = value;
-    			}
-    		}
-    	}
+        public void SetAngleBase(double value)
+        {
+            foreach (PartGroup item in parss)
+            {
+                item.SetAngleBase(value);
+            }
+        }
 
-    	public Vector2D PositionVector
-    	{
-    		set
-    		{
-    			foreach (PartGroup item in parss)
-    			{
-    				item.PositionVector = value;
-    			}
-    		}
-    	}
+        public void SetSizeBase(double value)
+        {
+            foreach (PartGroup item in parss)
+            {
+                item.SetSizeBase(value);
+            }
+        }
 
-    	public double AngleBase
-    	{
-    		set
-    		{
-    			foreach (PartGroup item in parss)
-    			{
-    				item.AngleBase = value;
-    			}
-    		}
-    	}
+        public void SetSizeYCont(double value)
+        {
+            foreach (PartGroup item in parss)
+            {
+                item.SetSizeYCont(value);
+            }
+        }
 
-    	public double AngleCont
-    	{
-    		set
-    		{
-    			foreach (PartGroup item in parss)
-    			{
-    				item.AngleCont = value;
-    			}
-    		}
-    	}
-
-    	public double SizeBase
-    	{
-    		set
-    		{
-    			foreach (PartGroup item in parss)
-    			{
-    				item.SizeBase = value;
-    			}
-    		}
-    	}
-
-    	public double SizeCont
-    	{
-    		set
-    		{
-    			foreach (PartGroup item in parss)
-    			{
-    				item.SizeCont = value;
-    			}
-    		}
-    	}
-
-    	public double SizeXBase
-    	{
-    		set
-    		{
-    			foreach (PartGroup item in parss)
-    			{
-    				item.SizeXBase = value;
-    			}
-    		}
-    	}
-
-    	public double SizeXCont
-    	{
-    		set
-    		{
-    			foreach (PartGroup item in parss)
-    			{
-    				item.SizeXCont = value;
-    			}
-    		}
-    	}
-
-    	public double SizeYBase
-    	{
-    		set
-    		{
-    			foreach (PartGroup item in parss)
-    			{
-    				item.SizeYBase = value;
-    			}
-    		}
-    	}
-
-    	public double SizeYCont
-    	{
-    		set
-    		{
-    			foreach (PartGroup item in parss)
-    			{
-    				item.SizeYCont = value;
-    			}
-    		}
-    	}
-
-    	public bool Dra
-    	{
-    		set
-    		{
-    			foreach (PartGroup item in parss)
-    			{
-    				item.Dra = value;
-    			}
-    		}
-    	}
-
-    	public bool Hit
-    	{
-    		set
-    		{
-    			foreach (PartGroup item in parss)
-    			{
-    				item.Hit = value;
-    			}
-    		}
-    	}
-
-    	public IEnumerable<ShapePart> EnumAllPar()
+        public IEnumerable<ShapePart> EnumAllPar()
     	{
     		foreach (PartGroup item in parss)
     		{

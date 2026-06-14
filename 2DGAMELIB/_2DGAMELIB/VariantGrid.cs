@@ -21,53 +21,49 @@ namespace _2DGAMELIB
 
     	public Dictionary<PartGroup, ShapePart> pr;
 
-    	public int CountX => difs.Count;
+        public int GetCountX()
+        {
+            return difs.Count;
+        }
 
-    	public int CountY
-    	{
-    		get
-    		{
-    			if (difs.Count > 0)
-    			{
-    				return difs[IndexX].Count;
-    			}
-    			return 0;
-    		}
-    	}
+        public int GetCountY()
+        {
+            if (difs.Count > 0)
+            {
+                return difs[GetIndexX()].Count;
+            }
+            return 0;
+        }
 
-    	public int IndexX
-    	{
-    		get
-    		{
-    			if (!(ValueX >= 1.0))
-    			{
-    				return (int)((double)CountX * ValueX);
-    			}
-    			return CountX - 1;
-    		}
-    		set
-    		{
-    			ValueX = (double)value / (double)CountX;
-    		}
-    	}
+        public int GetIndexX()
+        {
+            if (!(ValueX >= 1.0))
+            {
+                return (int)((double)GetCountX() * ValueX);
+            }
+            return GetCountX() - 1;
+        }
 
-    	public int IndexY
-    	{
-    		get
-    		{
-    			if (!(ValueY >= 1.0))
-    			{
-    				return (int)((double)CountY * ValueY);
-    			}
-    			return CountY - 1;
-    		}
-    		set
-    		{
-    			ValueY = (double)value / (double)CountY;
-    		}
-    	}
+        public void SetIndexX(int value)
+        {
+            ValueX = (double)value / (double)GetCountX();
+        }
 
-    	public MorphVariant this[int Index]
+        public int GetIndexY()
+        {
+            if (!(ValueY >= 1.0))
+            {
+                return (int)((double)GetCountY() * ValueY);
+            }
+            return GetCountY() - 1;
+        }
+
+        public void SetIndexY(int value)
+        {
+            ValueY = (double)value / (double)GetCountY();
+        }
+
+        public MorphVariant this[int Index]
     	{
     		get
     		{
@@ -79,155 +75,46 @@ namespace _2DGAMELIB
     		}
     	}
 
-    	public PartGroup Current => difs[IndexX][IndexY];
+        public PartGroup GetCurrent()
+        {
+            return difs[GetIndexX()][GetIndexY()];
+        }
 
-    	public double PositionSize
-    	{
-    		set
-    		{
-    			foreach (MorphVariant dif in difs)
-    			{
-    				dif.PositionSize = value;
-    			}
-    		}
-    	}
+        public void SetAngleBase(double value)
+        {
+            foreach (MorphVariant dif in difs)
+            {
+                dif.SetAngleBase(value);
+            }
+        }
 
-    	public Vector2D PositionVector
-    	{
-    		set
-    		{
-    			foreach (MorphVariant dif in difs)
-    			{
-    				dif.PositionVector = value;
-    			}
-    		}
-    	}
+        public void SetSizeBase(double value)
+        {
+            foreach (MorphVariant dif in difs)
+            {
+                dif.SetSizeBase(value);
+            }
+        }
 
-    	public double AngleBase
-    	{
-    		set
-    		{
-    			foreach (MorphVariant dif in difs)
-    			{
-    				dif.AngleBase = value;
-    			}
-    		}
-    	}
+        public void SetSizeYCont(double value)
+        {
+            foreach (MorphVariant dif in difs)
+            {
+                dif.SetSizeYCont(value);
+            }
+        }
 
-    	public double AngleCont
-    	{
-    		set
-    		{
-    			foreach (MorphVariant dif in difs)
-    			{
-    				dif.AngleCont = value;
-    			}
-    		}
-    	}
+        public ShapePart GetCurJoinRoot()
+        {
+            PartGroup current = GetCurrent();
+            if (pr.ContainsKey(current))
+            {
+                return pr[current];
+            }
+            return null;
+        }
 
-    	public double SizeBase
-    	{
-    		set
-    		{
-    			foreach (MorphVariant dif in difs)
-    			{
-    				dif.SizeBase = value;
-    			}
-    		}
-    	}
-
-    	public double SizeCont
-    	{
-    		set
-    		{
-    			foreach (MorphVariant dif in difs)
-    			{
-    				dif.SizeCont = value;
-    			}
-    		}
-    	}
-
-    	public double SizeXBase
-    	{
-    		set
-    		{
-    			foreach (MorphVariant dif in difs)
-    			{
-    				dif.SizeXBase = value;
-    			}
-    		}
-    	}
-
-    	public double SizeXCont
-    	{
-    		set
-    		{
-    			foreach (MorphVariant dif in difs)
-    			{
-    				dif.SizeXCont = value;
-    			}
-    		}
-    	}
-
-    	public double SizeYBase
-    	{
-    		set
-    		{
-    			foreach (MorphVariant dif in difs)
-    			{
-    				dif.SizeYBase = value;
-    			}
-    		}
-    	}
-
-    	public double SizeYCont
-    	{
-    		set
-    		{
-    			foreach (MorphVariant dif in difs)
-    			{
-    				dif.SizeYCont = value;
-    			}
-    		}
-    	}
-
-    	public bool Dra
-    	{
-    		set
-    		{
-    			foreach (MorphVariant dif in difs)
-    			{
-    				dif.Dra = value;
-    			}
-    		}
-    	}
-
-    	public bool Hit
-    	{
-    		set
-    		{
-    			foreach (MorphVariant dif in difs)
-    			{
-    				dif.Hit = value;
-    			}
-    		}
-    	}
-
-    	[JsonIgnore]
-    	public ShapePart CurJoinRoot
-    	{
-    		get
-    		{
-    			PartGroup current = Current;
-    			if (pr.ContainsKey(current))
-    			{
-    				return pr[current];
-    			}
-    			return null;
-    		}
-    	}
-
-    	[JsonIgnore]
+        [JsonIgnore]
     	public IEnumerable<ShapePart> EnumJoinRoot => pr.Values;
     	public IEnumerable<ShapePart> EnumAllPar()
     	{
@@ -287,11 +174,11 @@ namespace _2DGAMELIB
 
     	public void Draw(RenderArea Are)
     	{
-    		Are.Draw(Current);
+    		Are.Draw(GetCurrent());
     	}
     	public void Draw(ManagedArea ManagedArea)
     	{
-    		ManagedArea.Draw(Current);
+    		ManagedArea.Draw(GetCurrent());
     	}
 
     	private ShapePart GetJoinRoot(PartGroup ps)
@@ -304,16 +191,16 @@ namespace _2DGAMELIB
     		ShapePart[] array2 = array;
     		foreach (ShapePart p0 in array2)
     		{
-    			Vector2D p = p0.Position;
-    			if (array.All((ShapePart p1) => p0 == p1 || p1.JP.All((JointPoint j) => !(p1.ToGlobal(j.Joint).DistanceSquared(p) <= JointLink.IdentityDistance))))
+    			Vector2D p = p0.GetPosition();
+    			if (array.All((ShapePart p1) => p0 == p1 || p1.GetJP().All((JointPoint j) => !(p1.ToGlobal(j.Joint).DistanceSquared(p) <= JointLink.IdentityDistance))))
     			{
     				return p0;
     			}
     		}
-    		ShapePart shapePart = array.FirstOrDefault((ShapePart e) => e.JP.Count > 0);
-    		if (shapePart != null)
+    		ShapePart par = array.FirstOrDefault((ShapePart e) => e.GetJP().Count > 0);
+    		if (par != null)
     		{
-    			return shapePart;
+    			return par;
     		}
     		return array.First();
     	}
@@ -335,12 +222,12 @@ namespace _2DGAMELIB
 
     	public void JoinP()
     	{
-    		pj[Current].JoinP();
+    		pj[GetCurrent()].JoinP();
     	}
 
     	public void JoinPA()
     	{
-    		pj[Current].JoinPA();
+    		pj[GetCurrent()].JoinPA();
     	}
 
     	public void JoinPAall()
@@ -351,17 +238,9 @@ namespace _2DGAMELIB
     		}
     	}
 
-    	public void JoinPA(PartGroup ps)
-    	{
-    		if (pj.ContainsKey(ps))
-    		{
-    			pj[ps].JoinPA();
-    		}
-    	}
-
     	public ShapePart GetHitPar_(Color HitColor)
     	{
-    		return difs.FirstOrDefault((MorphVariant d) => d.IsHit(ref HitColor)).Parss.FirstOrDefault((PartGroup ps) => ps.IsHit(ref HitColor)).EnumAllPar().FirstOrDefault((ShapePart e) => e.HitColor == HitColor);
+    		return difs.FirstOrDefault((MorphVariant d) => d.IsHit(ref HitColor)).Parss.FirstOrDefault((PartGroup ps) => ps.IsHit(ref HitColor)).EnumAllPar().FirstOrDefault((ShapePart e) => e.GetHitColor() == HitColor);
     	}
 
     	public bool IsHit(ref Color HitColor)

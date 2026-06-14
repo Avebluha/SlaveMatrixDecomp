@@ -454,7 +454,7 @@ namespace SlaveMatrix
     	public override void SetAngle0()
     	{
     		double num = (右 ? (-1.0) : 1.0);
-    		X0Y0_手.AngleBase = num * 202.0;
+    		X0Y0_手.SetAngleBase(num * 202.0);
     		Body.JoinPAall();
     	}
 

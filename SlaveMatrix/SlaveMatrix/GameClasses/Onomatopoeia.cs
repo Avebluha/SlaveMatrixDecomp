@@ -15,19 +15,21 @@ namespace SlaveMatrix
     	{
     		ShapePartT pt = new ShapePartT
     		{
-    			PositionBase = p,
     			Text = s,
-    			Font = f,
-    			TextColor = c,
-    			SizeBase = 0.5 * d,
-    			FontSize = 0.07,
-    			Closed = true,
-    			Pen = null,
-    			Brush = null,
     			Hit = false
     		};
+
+			pt.SetFont(f); 
+    		pt.SetTextColor(c);
+    		pt.SetFontSize(0.07);
+			pt.SetSizeBase(0.5 * d);
+    		pt.SetClosed(true);
+    		pt.SetPen(null);
+    		pt.SetBrush(null);
+    		pt.SetPositionBase(p);
     		pt.SetStringRectOutline(Are.UnitScale, Are.DisplayGraphics);
-    		pt.BasePointBase = pt.OP.GetCenter();
+    		pt.SetBasePointBase(pt.GetOP().GetCenter());
+
     		Motion mot = new Motion(0.0, 1.0);
     		string n = mot.GetHashCode().ToString();
     		TextRenderingHint tr = Are.DisplayGraphics.TextRenderingHint;
@@ -36,9 +38,9 @@ namespace SlaveMatrix
     		{
     			if (b)
     			{
-    				pt.PositionCont = GeometryUtils.GetRandomVector() * 0.0025 * d;
+    				pt.SetPositionCont(GeometryUtils.GetRandomVector() * 0.0025 * d);
     			}
-    			pt.TextColor = Color.FromArgb((int)((double)(int)pt.TextColor.A * m.Value.Inverse()), pt.TextColor);
+    			pt.SetTextColor(Color.FromArgb((int)((double)(int)pt.GetTextColor().A * m.Value.Inverse()), pt.GetTextColor()));
     			Are.DisplayGraphics.TextRenderingHint = TextRenderingHint.AntiAlias;
     			Are.Draw(pt);
     			Are.DisplayGraphics.TextRenderingHint = tr;

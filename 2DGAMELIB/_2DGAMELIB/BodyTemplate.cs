@@ -9,8 +9,6 @@ namespace _2DGAMELIB
     [Serializable]
     public class BodyTemplate
     {
-    	public string Tag = "";
-
     	public OrderedDictionary<string, VariantGrid> Difss = new OrderedDictionary<string, VariantGrid>();
 
     	private VariantGrid r;
@@ -18,8 +16,6 @@ namespace _2DGAMELIB
     	private JointsD jsd;
 
     	public IEnumerable<string> Keys => Difss.Keys;
-
-    	public IEnumerable<VariantGrid> Values => Difss.Values;
 
     	public VariantGrid this[string Name]
     	{
@@ -45,46 +41,13 @@ namespace _2DGAMELIB
     		}
     	}
 
-    	public double PositionSize
-    	{
-    		set
-    		{
-    			foreach (VariantGrid value2 in Difss.Values)
-    			{
-    				value2.PositionSize = value;
-    			}
-    		}
-    	}
-
-    	public Vector2D PositionVector
-    	{
-    		set
-    		{
-    			foreach (VariantGrid value2 in Difss.Values)
-    			{
-    				value2.PositionVector = value;
-    			}
-    		}
-    	}
-
     	public double AngleBase
     	{
     		set
     		{
     			foreach (VariantGrid value2 in Difss.Values)
     			{
-    				value2.AngleBase = value;
-    			}
-    		}
-    	}
-
-    	public double AngleCont
-    	{
-    		set
-    		{
-    			foreach (VariantGrid value2 in Difss.Values)
-    			{
-    				value2.AngleCont = value;
+    				value2.SetAngleBase(value);
     			}
     		}
     	}
@@ -95,84 +58,7 @@ namespace _2DGAMELIB
     		{
     			foreach (VariantGrid value2 in Difss.Values)
     			{
-    				value2.SizeBase = value;
-    			}
-    		}
-    	}
-
-    	public double SizeCont
-    	{
-    		set
-    		{
-    			foreach (VariantGrid value2 in Difss.Values)
-    			{
-    				value2.SizeCont = value;
-    			}
-    		}
-    	}
-
-    	public double SizeXBase
-    	{
-    		set
-    		{
-    			foreach (VariantGrid value2 in Difss.Values)
-    			{
-    				value2.SizeXBase = value;
-    			}
-    		}
-    	}
-
-    	public double SizeXCont
-    	{
-    		set
-    		{
-    			foreach (VariantGrid value2 in Difss.Values)
-    			{
-    				value2.SizeXCont = value;
-    			}
-    		}
-    	}
-
-    	public double SizeYBase
-    	{
-    		set
-    		{
-    			foreach (VariantGrid value2 in Difss.Values)
-    			{
-    				value2.SizeYBase = value;
-    			}
-    		}
-    	}
-
-    	public double SizeYCont
-    	{
-    		set
-    		{
-    			foreach (VariantGrid value2 in Difss.Values)
-    			{
-    				value2.SizeYCont = value;
-    			}
-    		}
-    	}
-
-    	public bool Dra
-    	{
-    		set
-    		{
-    			foreach (VariantGrid value2 in Difss.Values)
-    			{
-    				value2.Dra = value;
-    			}
-    		}
-    	}
-
-    	public bool Hit
-    	{
-    		set
-    		{
-    			foreach (VariantGrid value2 in Difss.Values)
-    			{
-    				value2.Hit = value;
+    				value2.SetSizeBase(value);
     			}
     		}
     	}
@@ -227,8 +113,8 @@ namespace _2DGAMELIB
     		{
     			if (difs.EnumJoinRoot.All(delegate(ShapePart p0)
     			{
-    				p = p0.Position;
-    				return pa.All((ShapePart p1) => p0 == p1 || p1.JP.All((JointPoint j) => !(p1.ToGlobal(j.Joint).DistanceSquared(p) <= JointLink.IdentityDistance)));
+    				p = p0.GetPosition();
+    				return pa.All((ShapePart p1) => p0 == p1 || p1.GetJP().All((JointPoint j) => !(p1.ToGlobal(j.Joint).DistanceSquared(p) <= JointLink.IdentityDistance)));
     			}))
     			{
     				return difs;

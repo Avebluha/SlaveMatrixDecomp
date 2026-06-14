@@ -1,4 +1,5 @@
 using _2DGAMELIB;
+using SlaveMatrix.GameClasses;
 using System.Linq;
 
 namespace SlaveMatrix
@@ -633,7 +634,7 @@ namespace SlaveMatrix
     	public override void SetAngle0()
     	{
     		_ = 右;
-    		X0Y0_Torso_Torso.AngleBase = 20.0.GetRanAngle();
+    		X0Y0_Torso_Torso.SetAngleBase(20.0.GetRanAngle());
     		Body.JoinPAall();
     	}
 

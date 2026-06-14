@@ -2968,46 +2968,46 @@ namespace SlaveMatrix
     		{
     			double num = 1.7;
     			int num2 = (右 ? 1 : 0);
-    			List<CurveOutline> oP = X0Y0_人指_人指3.OP;
+    			List<CurveOutline> oP = X0Y0_人指_人指3.GetOP();
     			CurveOutline curveOutline = oP[(int)((double)(oP.Count - num2) * 0.5)];
     			int index = (int)((double)curveOutline.ps.Count * 0.5);
-    			curveOutline.ps[index] += (curveOutline.ps[index] - X0Y0_人指_人指3.BasePointBase) * num * value;
-    			List<CurveOutline> oP2 = X0Y0_中指_中指3.OP;
+    			curveOutline.ps[index] += (curveOutline.ps[index] - X0Y0_人指_人指3.GetBasePointBase()) * num * value;
+    			List<CurveOutline> oP2 = X0Y0_中指_中指3.GetOP();
     			curveOutline = oP2[(int)((double)(oP2.Count - num2) * 0.5)];
     			index = (int)((double)curveOutline.ps.Count * 0.5);
-    			curveOutline.ps[index] += (curveOutline.ps[index] - X0Y0_中指_中指3.BasePointBase) * num * value;
-    			List<CurveOutline> oP3 = X0Y0_薬指_薬指3.OP;
+    			curveOutline.ps[index] += (curveOutline.ps[index] - X0Y0_中指_中指3.GetBasePointBase()) * num * value;
+    			List<CurveOutline> oP3 = X0Y0_薬指_薬指3.GetOP();
     			curveOutline = oP3[(int)((double)(oP3.Count - num2) * 0.5)];
     			index = (int)((double)curveOutline.ps.Count * 0.5);
-    			curveOutline.ps[index] += (curveOutline.ps[index] - X0Y0_薬指_薬指3.BasePointBase) * num * value;
-    			List<CurveOutline> oP4 = X0Y0_小指_小指3.OP;
+    			curveOutline.ps[index] += (curveOutline.ps[index] - X0Y0_薬指_薬指3.GetBasePointBase()) * num * value;
+    			List<CurveOutline> oP4 = X0Y0_小指_小指3.GetOP();
     			curveOutline = oP4[(int)((double)(oP4.Count - num2) * 0.5)];
     			index = (int)((double)curveOutline.ps.Count * 0.5);
-    			curveOutline.ps[index] += (curveOutline.ps[index] - X0Y0_小指_小指3.BasePointBase) * num * value;
-    			List<CurveOutline> oP5 = X0Y0_親指_親指3.OP;
+    			curveOutline.ps[index] += (curveOutline.ps[index] - X0Y0_小指_小指3.GetBasePointBase()) * num * value;
+    			List<CurveOutline> oP5 = X0Y0_親指_親指3.GetOP();
     			curveOutline = oP5[(int)((double)(oP5.Count - num2) * 0.5)];
     			index = (int)((double)curveOutline.ps.Count * 0.5);
-    			curveOutline.ps[index] += (curveOutline.ps[index] - X0Y0_親指_親指3.BasePointBase) * num * 0.65 * value;
-    			List<CurveOutline> oP6 = X0Y1_人指_人指3.OP;
+    			curveOutline.ps[index] += (curveOutline.ps[index] - X0Y0_親指_親指3.GetBasePointBase()) * num * 0.65 * value;
+    			List<CurveOutline> oP6 = X0Y1_人指_人指3.GetOP();
     			curveOutline = oP6[(int)((double)(oP6.Count - num2) * 0.5)];
     			index = (int)((double)curveOutline.ps.Count * 0.5);
-    			curveOutline.ps[index] += (curveOutline.ps[index] - X0Y1_人指_人指3.BasePointBase) * num * value;
-    			List<CurveOutline> oP7 = X0Y1_中指_中指3.OP;
+    			curveOutline.ps[index] += (curveOutline.ps[index] - X0Y1_人指_人指3.GetBasePointBase()) * num * value;
+    			List<CurveOutline> oP7 = X0Y1_中指_中指3.GetOP();
     			curveOutline = oP7[(int)((double)(oP7.Count - num2) * 0.5)];
     			index = (int)((double)curveOutline.ps.Count * 0.5);
-    			curveOutline.ps[index] += (curveOutline.ps[index] - X0Y1_中指_中指3.BasePointBase) * num * value;
-    			List<CurveOutline> oP8 = X0Y1_薬指_薬指3.OP;
+    			curveOutline.ps[index] += (curveOutline.ps[index] - X0Y1_中指_中指3.GetBasePointBase()) * num * value;
+    			List<CurveOutline> oP8 = X0Y1_薬指_薬指3.GetOP();
     			curveOutline = oP8[(int)((double)(oP8.Count - num2) * 0.5)];
     			index = (int)((double)curveOutline.ps.Count * 0.5);
-    			curveOutline.ps[index] += (curveOutline.ps[index] - X0Y1_薬指_薬指3.BasePointBase) * num * value;
-    			List<CurveOutline> oP9 = X0Y1_小指_小指3.OP;
+    			curveOutline.ps[index] += (curveOutline.ps[index] - X0Y1_薬指_薬指3.GetBasePointBase()) * num * value;
+    			List<CurveOutline> oP9 = X0Y1_小指_小指3.GetOP();
     			curveOutline = oP9[(int)((double)(oP9.Count - num2) * 0.5)];
     			index = (int)((double)curveOutline.ps.Count * 0.5);
-    			curveOutline.ps[index] += (curveOutline.ps[index] - X0Y1_小指_小指3.BasePointBase) * num * value;
-    			List<CurveOutline> oP10 = X0Y1_親指_親指3.OP;
+    			curveOutline.ps[index] += (curveOutline.ps[index] - X0Y1_小指_小指3.GetBasePointBase()) * num * value;
+    			List<CurveOutline> oP10 = X0Y1_親指_親指3.GetOP();
     			curveOutline = oP10[(int)((double)(oP10.Count - num2) * 0.5)];
     			index = (int)((double)curveOutline.ps.Count * 0.5);
-    			curveOutline.ps[index] += (curveOutline.ps[index] - X0Y1_親指_親指3.BasePointBase) * num * 0.65 * value;
+    			curveOutline.ps[index] += (curveOutline.ps[index] - X0Y1_親指_親指3.GetBasePointBase()) * num * 0.65 * value;
     		}
     	}
 
@@ -3864,7 +3864,7 @@ namespace SlaveMatrix
 
     	public override void 描画0(RenderArea Are)
     	{
-    		if (Body.IndexY == 0)
+    		if (Body.GetIndexY() == 0)
     		{
     			Are.Draw(X0Y0_足);
     			Are.Draw(X0Y0_小指_小指1);
@@ -3942,7 +3942,7 @@ namespace SlaveMatrix
 
     	public void 底描画(RenderArea Are)
     	{
-    		if (Body.IndexY == 0)
+    		if (Body.GetIndexY() == 0)
     		{
     			Are.Draw(X0Y0_ヒール0_靴底);
     			Are.Draw(X0Y0_サンダル0_靴底);
@@ -3965,7 +3965,7 @@ namespace SlaveMatrix
 
     	public void 靴描画(RenderArea Are)
     	{
-    		if (Body.IndexY == 0)
+    		if (Body.GetIndexY() == 0)
     		{
     			Are.Draw(X0Y0_ヒール1_バンプ);
     			Are.Draw(X0Y0_ヒール1_ストラップ_ストラップ);
@@ -4106,54 +4106,54 @@ namespace SlaveMatrix
 
     	public void 虫性()
     	{
-    		X0Y0_人指_人指1.OP[右 ? 3 : 0].Outline = true;
-    		X0Y0_人指_人指2.OP[右 ? 3 : 0].Outline = true;
-    		X0Y0_人指_人指3.OP[右 ? 3 : 0].Outline = true;
-    		X0Y0_中指_中指1.OP[右 ? 3 : 0].Outline = true;
-    		X0Y0_中指_中指2.OP[右 ? 3 : 0].Outline = true;
-    		X0Y0_中指_中指3.OP[右 ? 3 : 0].Outline = true;
-    		X0Y0_薬指_薬指1.OP[右 ? 3 : 0].Outline = true;
-    		X0Y0_薬指_薬指2.OP[右 ? 3 : 0].Outline = true;
-    		X0Y0_薬指_薬指3.OP[右 ? 3 : 0].Outline = true;
-    		X0Y0_小指_小指1.OP[右 ? 3 : 0].Outline = true;
-    		X0Y0_小指_小指2.OP[右 ? 3 : 0].Outline = true;
-    		X0Y0_小指_小指3.OP[右 ? 3 : 0].Outline = true;
-    		X0Y0_親指_親指2.OP[右 ? 3 : 0].Outline = true;
-    		X0Y0_親指_親指3.OP[右 ? 3 : 0].Outline = true;
-    		X0Y1_人指_人指1.OP[右 ? 3 : 0].Outline = true;
-    		X0Y1_人指_人指2.OP[右 ? 3 : 0].Outline = true;
-    		X0Y1_人指_人指3.OP[右 ? 3 : 0].Outline = true;
-    		X0Y1_中指_中指1.OP[右 ? 3 : 0].Outline = true;
-    		X0Y1_中指_中指2.OP[右 ? 3 : 0].Outline = true;
-    		X0Y1_中指_中指3.OP[右 ? 3 : 0].Outline = true;
-    		X0Y1_薬指_薬指1.OP[右 ? 3 : 0].Outline = true;
-    		X0Y1_薬指_薬指2.OP[右 ? 3 : 0].Outline = true;
-    		X0Y1_薬指_薬指3.OP[右 ? 3 : 0].Outline = true;
-    		X0Y1_小指_小指1.OP[右 ? 3 : 0].Outline = true;
-    		X0Y1_小指_小指2.OP[右 ? 3 : 0].Outline = true;
-    		X0Y1_小指_小指3.OP[右 ? 3 : 0].Outline = true;
-    		X0Y1_親指_親指2.OP[右 ? 3 : 0].Outline = true;
-    		X0Y1_親指_親指3.OP[右 ? 3 : 0].Outline = true;
+    		X0Y0_人指_人指1.GetOP()[右 ? 3 : 0].Outline = true;
+    		X0Y0_人指_人指2.GetOP()[右 ? 3 : 0].Outline = true;
+    		X0Y0_人指_人指3.GetOP()[右 ? 3 : 0].Outline = true;
+    		X0Y0_中指_中指1.GetOP()[右 ? 3 : 0].Outline = true;
+    		X0Y0_中指_中指2.GetOP()[右 ? 3 : 0].Outline = true;
+    		X0Y0_中指_中指3.GetOP()[右 ? 3 : 0].Outline = true;
+    		X0Y0_薬指_薬指1.GetOP()[右 ? 3 : 0].Outline = true;
+    		X0Y0_薬指_薬指2.GetOP()[右 ? 3 : 0].Outline = true;
+    		X0Y0_薬指_薬指3.GetOP()[右 ? 3 : 0].Outline = true;
+    		X0Y0_小指_小指1.GetOP()[右 ? 3 : 0].Outline = true;
+    		X0Y0_小指_小指2.GetOP()[右 ? 3 : 0].Outline = true;
+    		X0Y0_小指_小指3.GetOP()[右 ? 3 : 0].Outline = true;
+    		X0Y0_親指_親指2.GetOP()[右 ? 3 : 0].Outline = true;
+    		X0Y0_親指_親指3.GetOP()[右 ? 3 : 0].Outline = true;
+    		X0Y1_人指_人指1.GetOP()[右 ? 3 : 0].Outline = true;
+    		X0Y1_人指_人指2.GetOP()[右 ? 3 : 0].Outline = true;
+    		X0Y1_人指_人指3.GetOP()[右 ? 3 : 0].Outline = true;
+    		X0Y1_中指_中指1.GetOP()[右 ? 3 : 0].Outline = true;
+    		X0Y1_中指_中指2.GetOP()[右 ? 3 : 0].Outline = true;
+    		X0Y1_中指_中指3.GetOP()[右 ? 3 : 0].Outline = true;
+    		X0Y1_薬指_薬指1.GetOP()[右 ? 3 : 0].Outline = true;
+    		X0Y1_薬指_薬指2.GetOP()[右 ? 3 : 0].Outline = true;
+    		X0Y1_薬指_薬指3.GetOP()[右 ? 3 : 0].Outline = true;
+    		X0Y1_小指_小指1.GetOP()[右 ? 3 : 0].Outline = true;
+    		X0Y1_小指_小指2.GetOP()[右 ? 3 : 0].Outline = true;
+    		X0Y1_小指_小指3.GetOP()[右 ? 3 : 0].Outline = true;
+    		X0Y1_親指_親指2.GetOP()[右 ? 3 : 0].Outline = true;
+    		X0Y1_親指_親指3.GetOP()[右 ? 3 : 0].Outline = true;
     	}
 
     	public void 虫足()
     	{
-    		X0Y0_小指_小指1.SizeBase *= 1.5;
-    		X0Y0_小指_小指2.SizeBase *= 1.5;
-    		X0Y0_小指_小指3.SizeBase *= 1.5;
-    		X0Y0_人指_人指1.SizeBase *= 1.5;
-    		X0Y0_人指_人指2.SizeBase *= 1.5;
-    		X0Y0_人指_人指3.SizeBase *= 1.5;
-    		X0Y0_親指_親指2.SizeBase *= 1.5;
-    		X0Y0_親指_親指3.SizeBase *= 1.5;
-    		X0Y1_小指_小指1.SizeBase *= 1.5;
-    		X0Y1_小指_小指2.SizeBase *= 1.5;
-    		X0Y1_小指_小指3.SizeBase *= 1.5;
-    		X0Y1_人指_人指1.SizeBase *= 1.5;
-    		X0Y1_人指_人指2.SizeBase *= 1.5;
-    		X0Y1_人指_人指3.SizeBase *= 1.5;
-    		X0Y1_親指_親指2.SizeBase *= 1.5;
-    		X0Y1_親指_親指3.SizeBase *= 1.5;
+    		X0Y0_小指_小指1.SetSizeBase(X0Y0_小指_小指1.GetSizeBase() * 1.5);
+    		X0Y0_小指_小指2.SetSizeBase(X0Y0_小指_小指2.GetSizeBase() * 1.5);
+    		X0Y0_小指_小指3.SetSizeBase(X0Y0_小指_小指3.GetSizeBase() * 1.5);
+    		X0Y0_人指_人指1.SetSizeBase(X0Y0_人指_人指1.GetSizeBase() * 1.5);
+    		X0Y0_人指_人指2.SetSizeBase(X0Y0_人指_人指2.GetSizeBase() * 1.5);
+    		X0Y0_人指_人指3.SetSizeBase(X0Y0_人指_人指3.GetSizeBase() * 1.5);
+    		X0Y0_親指_親指2.SetSizeBase(X0Y0_親指_親指2.GetSizeBase() * 1.5);
+    		X0Y0_親指_親指3.SetSizeBase(X0Y0_親指_親指3.GetSizeBase() * 1.5);
+    		X0Y1_小指_小指1.SetSizeBase(X0Y1_小指_小指1.GetSizeBase() * 1.5);
+    		X0Y1_小指_小指2.SetSizeBase(X0Y1_小指_小指2.GetSizeBase() * 1.5);
+    		X0Y1_小指_小指3.SetSizeBase(X0Y1_小指_小指3.GetSizeBase() * 1.5);
+    		X0Y1_人指_人指1.SetSizeBase(X0Y1_人指_人指1.GetSizeBase() * 1.5);
+    		X0Y1_人指_人指2.SetSizeBase(X0Y1_人指_人指2.GetSizeBase() * 1.5);
+    		X0Y1_人指_人指3.SetSizeBase(X0Y1_人指_人指3.GetSizeBase() * 1.5);
+    		X0Y1_親指_親指2.SetSizeBase(X0Y1_親指_親指2.GetSizeBase() * 1.5);
+    		X0Y1_親指_親指3.SetSizeBase(X0Y1_親指_親指3.GetSizeBase() * 1.5);
     		人指_人指1_表示 = false;
     		人指_人指3_表示 = false;
     		人指_人指2_表示 = false;
@@ -4167,13 +4167,13 @@ namespace SlaveMatrix
 
     	public void 開脚(腿_人 腿)
     	{
-    		if (腿.Body.IndexY == 0 || 腿.Body.IndexY == 4)
+    		if (腿.Body.GetIndexY() == 0 || 腿.Body.GetIndexY() == 4)
     		{
-    			Body.IndexY = 0;
+    			Body.SetIndexY(0);
     		}
-    		else if (腿.Body.IndexY == 1 || 腿.Body.IndexY == 2 || 腿.Body.IndexY == 3)
+    		else if (腿.Body.GetIndexY() == 1 || 腿.Body.GetIndexY() == 2 || 腿.Body.GetIndexY() == 3)
     		{
-    			Body.IndexY = 1;
+    			Body.SetIndexY(1);
     		}
     	}
 
@@ -4206,7 +4206,7 @@ namespace SlaveMatrix
 
     	public override void 色更新()
     	{
-    		if (Body.IndexY == 0)
+    		if (Body.GetIndexY() == 0)
     		{
     			X0Y0_ヒール0_靴底CP.Update();
     			X0Y0_サンダル0_靴底CP.Update();

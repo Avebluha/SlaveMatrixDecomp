@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using _2DGAMELIB;
+using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
@@ -2938,8 +2939,8 @@ namespace SlaveMatrix
     				double num5 = (double)(num - num2) * 17.0;
     				e.角度B += num5;
     				触手_犬 obj = (触手_犬)e;
-    				obj.X0Y0_脚前_UpperArm.AngleBase -= num5;
-    				obj.X0Y0_脚後_UpperArm.AngleBase -= num5;
+    				obj.X0Y0_脚前_UpperArm.SetAngleBase(obj.X0Y0_脚前_UpperArm.GetAngleBase() - num5);
+    				obj.X0Y0_脚後_UpperArm.SetAngleBase(obj.X0Y0_脚後_UpperArm.GetAngleBase() - num5);
     			}
     			else
     			{
@@ -2962,8 +2963,8 @@ namespace SlaveMatrix
     			double num8 = (double)(num - num2) * -17.0;
     			e.角度B += num8;
     			触手_犬 obj2 = (触手_犬)e;
-    			obj2.X0Y0_脚前_UpperArm.AngleBase -= num8;
-    			obj2.X0Y0_脚後_UpperArm.AngleBase -= num8;
+    			obj2.X0Y0_脚前_UpperArm.SetAngleBase(obj2.X0Y0_脚前_UpperArm.GetAngleBase() - num8);
+    			obj2.X0Y0_脚後_UpperArm.SetAngleBase(obj2.X0Y0_脚後_UpperArm.GetAngleBase() - num8);
     		}
     		else
     		{
@@ -3088,22 +3089,22 @@ namespace SlaveMatrix
 
     	public static void 眉_下左(this Character Cha)
     	{
-    		Cha.Body.眉左.Body.CurJoinRoot.PositionCont = DataConsts.Vec2DZero;
+    		Cha.Body.眉左.Body.GetCurJoinRoot().SetPositionCont(DataConsts.Vec2DZero);
     	}
 
     	public static void 眉_下右(this Character Cha)
     	{
-    		Cha.Body.眉右.Body.CurJoinRoot.PositionCont = DataConsts.Vec2DZero;
+    		Cha.Body.眉右.Body.GetCurJoinRoot().SetPositionCont(DataConsts.Vec2DZero);
     	}
 
     	public static void 眉_上左(this Character Cha)
     	{
-    		Cha.Body.眉左.Body.CurJoinRoot.PositionCont = -DataConsts.Vec2DUnitY * 0.003;
+    		Cha.Body.眉左.Body.GetCurJoinRoot().SetPositionCont(-DataConsts.Vec2DUnitY * 0.003);
     	}
 
     	public static void 眉_上右(this Character Cha)
     	{
-    		Cha.Body.眉右.Body.CurJoinRoot.PositionCont = -DataConsts.Vec2DUnitY * 0.003;
+    		Cha.Body.眉右.Body.GetCurJoinRoot().SetPositionCont(-DataConsts.Vec2DUnitY * 0.003);
     	}
 
     	public static void 両眉_下(this Character Cha)
@@ -3183,12 +3184,12 @@ namespace SlaveMatrix
 
     	public static void 単眉_下(this Character Cha)
     	{
-    		Cha.Body.単眼眉.Body.CurJoinRoot.PositionCont = DataConsts.Vec2DZero;
+    		Cha.Body.単眼眉.Body.GetCurJoinRoot().SetPositionCont(DataConsts.Vec2DZero);
     	}
 
     	public static void 単眉_上(this Character Cha)
     	{
-    		Cha.Body.単眼眉.Body.CurJoinRoot.PositionCont = -DataConsts.Vec2DUnitY * 0.003;
+    		Cha.Body.単眼眉.Body.GetCurJoinRoot().SetPositionCont(-DataConsts.Vec2DUnitY * 0.003);
     	}
 
     	public static void 単眉_1(this Character c, int i)
@@ -3207,43 +3208,43 @@ namespace SlaveMatrix
     	public static void 目_見つめ左(this Character Cha)
     	{
     		Cha.Body.目左.視線 = new Vector2D(0.0, -0.00023);
-    		Cha.Body.目左.X0Y0_黒目_黒目.SizeXCont = 1.0;
-    		Cha.Body.目左.X0Y0_黒目_瞳孔.SizeXCont = 1.0;
+    		Cha.Body.目左.X0Y0_黒目_黒目.SetSizeXCont(1.0);
+    		Cha.Body.目左.X0Y0_黒目_瞳孔.SetSizeXCont(1.0);
     	}
 
     	public static void 目_見つめ右(this Character Cha)
     	{
     		Cha.Body.目右.視線 = new Vector2D(0.0, -0.00023);
-    		Cha.Body.目右.X0Y0_黒目_黒目.SizeXCont = 1.0;
-    		Cha.Body.目右.X0Y0_黒目_瞳孔.SizeXCont = 1.0;
+    		Cha.Body.目右.X0Y0_黒目_黒目.SetSizeXCont(1.0);
+    		Cha.Body.目右.X0Y0_黒目_瞳孔.SetSizeXCont(1.0);
     	}
 
     	public static void 目_逸らし左(this Character Cha, bool b)
     	{
     		Cha.Body.目左.視線 = new Vector2D((b ? 1.0 : (-1.0)) * 0.0015, 0.0);
-    		Cha.Body.目左.X0Y0_黒目_黒目.SizeXCont = 0.95;
-    		Cha.Body.目左.X0Y0_黒目_瞳孔.SizeXCont = 0.95;
+    		Cha.Body.目左.X0Y0_黒目_黒目.SetSizeXCont(0.95);
+    		Cha.Body.目左.X0Y0_黒目_瞳孔.SetSizeXCont(0.95);
     	}
 
     	public static void 目_逸らし右(this Character Cha, bool b)
     	{
     		Cha.Body.目右.視線 = new Vector2D((b ? 1.0 : (-1.0)) * 0.0015, 0.0);
-    		Cha.Body.目右.X0Y0_黒目_黒目.SizeXCont = 0.95;
-    		Cha.Body.目右.X0Y0_黒目_瞳孔.SizeXCont = 0.95;
+    		Cha.Body.目右.X0Y0_黒目_黒目.SetSizeXCont(0.95);
+    		Cha.Body.目右.X0Y0_黒目_瞳孔.SetSizeXCont(0.95);
     	}
 
     	public static void 目_上転左(this Character Cha)
     	{
     		Cha.Body.目左.視線 = new Vector2D(0.0, -0.0021);
-    		Cha.Body.目左.X0Y0_黒目_黒目.SizeXCont = 1.0;
-    		Cha.Body.目左.X0Y0_黒目_瞳孔.SizeXCont = 1.0;
+    		Cha.Body.目左.X0Y0_黒目_黒目.SetSizeXCont(1.0);
+    		Cha.Body.目左.X0Y0_黒目_瞳孔.SetSizeXCont(1.0);
     	}
 
     	public static void 目_上転右(this Character Cha)
     	{
     		Cha.Body.目右.視線 = new Vector2D(0.0, -0.002);
-    		Cha.Body.目右.X0Y0_黒目_黒目.SizeXCont = 1.0;
-    		Cha.Body.目右.X0Y0_黒目_瞳孔.SizeXCont = 1.0;
+    		Cha.Body.目右.X0Y0_黒目_黒目.SetSizeXCont(1.0);
+    		Cha.Body.目右.X0Y0_黒目_瞳孔.SetSizeXCont(1.0);
     	}
 
     	public static void 両目_見つめ(this Character Cha)
@@ -3299,55 +3300,55 @@ namespace SlaveMatrix
     	public static void 頬目_見つめ左(this Character Cha)
     	{
     		Cha.Body.頬目左.視線 = new Vector2D(0.0, -0.00023);
-    		Cha.Body.頬目左.X0Y0_黒目_黒目.SizeXCont = 1.0;
-    		Cha.Body.頬目左.X0Y0_黒目_瞳孔.SizeXCont = 1.0;
-    		Cha.Body.頬目左.X0Y0_黒目_黒目.SizeYCont = 1.0;
-    		Cha.Body.頬目左.X0Y0_黒目_瞳孔.SizeYCont = 1.0;
+    		Cha.Body.頬目左.X0Y0_黒目_黒目.SetSizeXCont(1.0);
+    		Cha.Body.頬目左.X0Y0_黒目_瞳孔.SetSizeXCont(1.0);
+    		Cha.Body.頬目左.X0Y0_黒目_黒目.SetSizeYCont(1.0);
+    		Cha.Body.頬目左.X0Y0_黒目_瞳孔.SetSizeYCont(1.0);
     	}
 
     	public static void 頬目_見つめ右(this Character Cha)
     	{
     		Cha.Body.頬目右.視線 = new Vector2D(0.0, -0.00023);
-    		Cha.Body.頬目右.X0Y0_黒目_黒目.SizeXCont = 1.0;
-    		Cha.Body.頬目右.X0Y0_黒目_瞳孔.SizeXCont = 1.0;
-    		Cha.Body.頬目右.X0Y0_黒目_黒目.SizeYCont = 1.0;
-    		Cha.Body.頬目右.X0Y0_黒目_瞳孔.SizeYCont = 1.0;
+    		Cha.Body.頬目右.X0Y0_黒目_黒目.SetSizeXCont(1.0);
+    		Cha.Body.頬目右.X0Y0_黒目_瞳孔.SetSizeXCont(1.0);
+    		Cha.Body.頬目右.X0Y0_黒目_黒目.SetSizeYCont(1.0);
+    		Cha.Body.頬目右.X0Y0_黒目_瞳孔.SetSizeYCont(1.0);
     	}
 
     	public static void 頬目_逸らし左(this Character Cha, bool b)
     	{
     		Cha.Body.頬目左.視線 = new Vector2D((b ? 1.0 : (-1.0)) * 0.0015, 0.0);
-    		Cha.Body.頬目左.X0Y0_黒目_黒目.SizeXCont = 0.95;
-    		Cha.Body.頬目左.X0Y0_黒目_瞳孔.SizeXCont = 0.95;
-    		Cha.Body.頬目左.X0Y0_黒目_黒目.SizeYCont = 1.0;
-    		Cha.Body.頬目左.X0Y0_黒目_瞳孔.SizeYCont = 1.0;
+    		Cha.Body.頬目左.X0Y0_黒目_黒目.SetSizeXCont(0.95);
+    		Cha.Body.頬目左.X0Y0_黒目_瞳孔.SetSizeXCont(0.95);
+    		Cha.Body.頬目左.X0Y0_黒目_黒目.SetSizeYCont(1.0);
+    		Cha.Body.頬目左.X0Y0_黒目_瞳孔.SetSizeYCont(1.0);
     	}
 
     	public static void 頬目_逸らし右(this Character Cha, bool b)
     	{
     		Cha.Body.頬目右.視線 = new Vector2D((b ? 1.0 : (-1.0)) * 0.0015, 0.0);
-    		Cha.Body.頬目右.X0Y0_黒目_黒目.SizeXCont = 0.95;
-    		Cha.Body.頬目右.X0Y0_黒目_瞳孔.SizeXCont = 0.95;
-    		Cha.Body.頬目右.X0Y0_黒目_黒目.SizeYCont = 1.0;
-    		Cha.Body.頬目右.X0Y0_黒目_瞳孔.SizeYCont = 1.0;
+    		Cha.Body.頬目右.X0Y0_黒目_黒目.SetSizeXCont(0.95);
+    		Cha.Body.頬目右.X0Y0_黒目_瞳孔.SetSizeXCont(0.95);
+    		Cha.Body.頬目右.X0Y0_黒目_黒目.SetSizeYCont(1.0);
+    		Cha.Body.頬目右.X0Y0_黒目_瞳孔.SetSizeYCont(1.0);
     	}
 
     	public static void 頬目_上転左(this Character Cha)
     	{
     		Cha.Body.頬目左.視線 = new Vector2D(0.0, -0.0016);
-    		Cha.Body.頬目左.X0Y0_黒目_黒目.SizeXCont = 1.0;
-    		Cha.Body.頬目左.X0Y0_黒目_瞳孔.SizeXCont = 1.0;
-    		Cha.Body.頬目左.X0Y0_黒目_黒目.SizeYCont = 0.75;
-    		Cha.Body.頬目左.X0Y0_黒目_瞳孔.SizeYCont = 0.75;
+    		Cha.Body.頬目左.X0Y0_黒目_黒目.SetSizeXCont(1.0);
+    		Cha.Body.頬目左.X0Y0_黒目_瞳孔.SetSizeXCont(1.0);
+    		Cha.Body.頬目左.X0Y0_黒目_黒目.SetSizeYCont(0.75);
+    		Cha.Body.頬目左.X0Y0_黒目_瞳孔.SetSizeYCont(0.75);
     	}
 
     	public static void 頬目_上転右(this Character Cha)
     	{
     		Cha.Body.頬目右.視線 = new Vector2D(0.0, -0.0016);
-    		Cha.Body.頬目右.X0Y0_黒目_黒目.SizeXCont = 1.0;
-    		Cha.Body.頬目右.X0Y0_黒目_瞳孔.SizeXCont = 1.0;
-    		Cha.Body.頬目右.X0Y0_黒目_黒目.SizeYCont = 0.75;
-    		Cha.Body.頬目右.X0Y0_黒目_瞳孔.SizeYCont = 0.75;
+    		Cha.Body.頬目右.X0Y0_黒目_黒目.SetSizeXCont(1.0);
+    		Cha.Body.頬目右.X0Y0_黒目_瞳孔.SetSizeXCont(1.0);
+    		Cha.Body.頬目右.X0Y0_黒目_黒目.SetSizeYCont(0.75);
+    		Cha.Body.頬目右.X0Y0_黒目_瞳孔.SetSizeYCont(0.75);
     	}
 
     	public static void 両頬目_見つめ(this Character Cha)
@@ -3403,28 +3404,28 @@ namespace SlaveMatrix
     	public static void 額目_見つめ(this Character Cha)
     	{
     		Cha.Body.額目.視線 = new Vector2D(0.0, 0.0);
-    		Cha.Body.額目.X0Y0_黒目_黒目.SizeXCont = 1.0;
-    		Cha.Body.額目.X0Y0_黒目_瞳孔.SizeXCont = 1.0;
-    		Cha.Body.額目.X0Y0_黒目_黒目.SizeYCont = 1.0;
-    		Cha.Body.額目.X0Y0_黒目_瞳孔.SizeYCont = 1.0;
+    		Cha.Body.額目.X0Y0_黒目_黒目.SetSizeXCont(1.0);
+    		Cha.Body.額目.X0Y0_黒目_瞳孔.SetSizeXCont(1.0);
+    		Cha.Body.額目.X0Y0_黒目_黒目.SetSizeYCont(1.0);
+    		Cha.Body.額目.X0Y0_黒目_瞳孔.SetSizeYCont(1.0);
     	}
 
     	public static void 額目_逸らし(this Character Cha, bool b)
     	{
     		Cha.Body.額目.視線 = new Vector2D((b ? 1.0 : (-1.0)) * 0.0014, 0.0);
-    		Cha.Body.額目.X0Y0_黒目_黒目.SizeXCont = 0.9;
-    		Cha.Body.額目.X0Y0_黒目_瞳孔.SizeXCont = 0.9;
-    		Cha.Body.額目.X0Y0_黒目_黒目.SizeYCont = 1.0;
-    		Cha.Body.額目.X0Y0_黒目_瞳孔.SizeYCont = 1.0;
+    		Cha.Body.額目.X0Y0_黒目_黒目.SetSizeXCont(0.9);
+    		Cha.Body.額目.X0Y0_黒目_瞳孔.SetSizeXCont(0.9);
+    		Cha.Body.額目.X0Y0_黒目_黒目.SetSizeYCont(1.0);
+    		Cha.Body.額目.X0Y0_黒目_瞳孔.SetSizeYCont(1.0);
     	}
 
     	public static void 額目_上転(this Character Cha)
     	{
     		Cha.Body.額目.視線 = new Vector2D(0.0, -0.0025);
-    		Cha.Body.額目.X0Y0_黒目_黒目.SizeXCont = 1.0;
-    		Cha.Body.額目.X0Y0_黒目_瞳孔.SizeXCont = 1.0;
-    		Cha.Body.額目.X0Y0_黒目_黒目.SizeYCont = 0.95;
-    		Cha.Body.額目.X0Y0_黒目_瞳孔.SizeYCont = 0.95;
+    		Cha.Body.額目.X0Y0_黒目_黒目.SetSizeXCont(1.0);
+    		Cha.Body.額目.X0Y0_黒目_瞳孔.SetSizeXCont(1.0);
+    		Cha.Body.額目.X0Y0_黒目_黒目.SetSizeYCont(0.95);
+    		Cha.Body.額目.X0Y0_黒目_瞳孔.SetSizeYCont(0.95);
     	}
 
     	public static void 額目_0(this Character c, int i)
@@ -3449,22 +3450,22 @@ namespace SlaveMatrix
     	public static void 単目_見つめ(this Character Cha)
     	{
     		Cha.Body.単眼目.視線 = new Vector2D(0.0, -0.00023);
-    		Cha.Body.単眼目.X0Y0_黒目_黒目.SizeXCont = 1.0;
-    		Cha.Body.単眼目.X0Y0_黒目_瞳孔.SizeXCont = 1.0;
+    		Cha.Body.単眼目.X0Y0_黒目_黒目.SetSizeXCont(1.0);
+    		Cha.Body.単眼目.X0Y0_黒目_瞳孔.SetSizeXCont(1.0);
     	}
 
     	public static void 単目_逸らし(this Character Cha, bool b)
     	{
     		Cha.Body.単眼目.視線 = new Vector2D((b ? 1.0 : (-1.0)) * 0.0025, 0.0);
-    		Cha.Body.単眼目.X0Y0_黒目_黒目.SizeXCont = 0.95;
-    		Cha.Body.単眼目.X0Y0_黒目_瞳孔.SizeXCont = 0.95;
+    		Cha.Body.単眼目.X0Y0_黒目_黒目.SetSizeXCont(0.95);
+    		Cha.Body.単眼目.X0Y0_黒目_瞳孔.SetSizeXCont(0.95);
     	}
 
     	public static void 単目_上転(this Character Cha)
     	{
     		Cha.Body.単眼目.視線 = new Vector2D(0.0, -0.0035);
-    		Cha.Body.単眼目.X0Y0_黒目_黒目.SizeXCont = 1.0;
-    		Cha.Body.単眼目.X0Y0_黒目_瞳孔.SizeXCont = 1.0;
+    		Cha.Body.単眼目.X0Y0_黒目_黒目.SetSizeXCont(1.0);
+    		Cha.Body.単眼目.X0Y0_黒目_瞳孔.SetSizeXCont(1.0);
     	}
 
     	public static void 単目_0(this Character c, int i)
@@ -4228,14 +4229,14 @@ namespace SlaveMatrix
     	{
     		大顎 obj = Cha.Body.大顎左[n];
     		obj.SetAngle0();
-    		obj.Body.CurJoinRoot.AngleBase += 根本角度 + u1;
+    		obj.Body.GetCurJoinRoot().SetAngleBase(obj.Body.GetCurJoinRoot().GetAngleBase() + (根本角度 + u1));
     	}
 
     	public static void 大顎右(this Character Cha, int n, double u1, double 根本角度)
     	{
     		大顎 obj = Cha.Body.大顎右[n];
     		obj.SetAngle0();
-    		obj.Body.CurJoinRoot.AngleBase += 0.0 - 根本角度 + (0.0 - u1);
+    		obj.Body.GetCurJoinRoot().SetAngleBase(obj.Body.GetCurJoinRoot().GetAngleBase() + (0.0 - 根本角度 + (0.0 - u1)));
     	}
 
     	public static void 大顎_基本左(this Character Cha, int n, double u1)
@@ -4325,14 +4326,14 @@ namespace SlaveMatrix
     	{
     		虫顎 obj = Cha.Body.虫顎左[n];
     		obj.SetAngle0();
-    		obj.X0Y0_顎.AngleBase += 根本角度 + u1;
+    		obj.X0Y0_顎.SetAngleBase(obj.X0Y0_顎.GetAngleBase() + (根本角度 + u1));
     	}
 
     	public static void 虫顎右(this Character Cha, int n, double u1, double 根本角度)
     	{
     		虫顎 obj = Cha.Body.虫顎右[n];
     		obj.SetAngle0();
-    		obj.X0Y0_顎.AngleBase += 0.0 - 根本角度 + (0.0 - u1);
+    		obj.X0Y0_顎.SetAngleBase(obj.X0Y0_顎.GetAngleBase() + (0.0 - 根本角度 + (0.0 - u1)));
     	}
 
     	public static void 虫顎_基本左(this Character Cha, int n, double u1)
@@ -4464,11 +4465,11 @@ namespace SlaveMatrix
     						腕人2.手.小指_小指3_表示 = false;
     						if (flag)
     						{
-    							腕人2.手.X0Y3_小指_小指2.AngleCont = 20.0;
+    							腕人2.手.X0Y3_小指_小指2.SetAngleCont(20.0);
     						}
     						else
     						{
-    							腕人2.手.X0Y3_小指_小指2.AngleCont = -20.0;
+    							腕人2.手.X0Y3_小指_小指2.SetAngleCont(-20.0);
     						}
     					}
     					else
@@ -4483,21 +4484,21 @@ namespace SlaveMatrix
     							腕人2.手.薬指_薬指3_表示 = true;
     						}
     						腕人2.手.小指_小指3_表示 = true;
-    						腕人2.手.X0Y3_小指_小指2.AngleCont = 0.0;
+    						腕人2.手.X0Y3_小指_小指2.SetAngleCont(0.0);
     						腕人2.手.Yi = 手Yi;
     						if (手Yi == 9)
     						{
     							if (!腕人2.手.中指_中指1_表示)
     							{
-    								腕人2.手.X0Y9_小指_小指1.AngleBase = -110.0;
-    								腕人2.手.X0Y9_小指_小指2.AngleBase = -70.0;
-    								腕人2.手.X0Y9_小指_小指3.AngleBase = -105.0;
+    								腕人2.手.X0Y9_小指_小指1.SetAngleBase(-110.0);
+    								腕人2.手.X0Y9_小指_小指2.SetAngleBase(-70.0);
+    								腕人2.手.X0Y9_小指_小指3.SetAngleBase(-105.0);
     							}
     							else
     							{
-    								腕人2.手.X0Y9_小指_小指1.AngleBase = 0.0;
-    								腕人2.手.X0Y9_小指_小指2.AngleBase = 0.0;
-    								腕人2.手.X0Y9_小指_小指3.AngleBase = 0.0;
+    								腕人2.手.X0Y9_小指_小指1.SetAngleBase(0.0);
+    								腕人2.手.X0Y9_小指_小指2.SetAngleBase(0.0);
+    								腕人2.手.X0Y9_小指_小指3.SetAngleBase(0.0);
     							}
     						}
     					}
@@ -4553,11 +4554,11 @@ namespace SlaveMatrix
     						腕人2.手.小指_小指3_表示 = false;
     						if (flag)
     						{
-    							腕人2.手.X0Y3_小指_小指2.AngleCont = -20.0;
+    							腕人2.手.X0Y3_小指_小指2.SetAngleCont(-20.0);
     						}
     						else
     						{
-    							腕人2.手.X0Y3_小指_小指2.AngleCont = 20.0;
+    							腕人2.手.X0Y3_小指_小指2.SetAngleCont(20.0);
     						}
     					}
     					else
@@ -4572,21 +4573,21 @@ namespace SlaveMatrix
     							腕人2.手.薬指_薬指3_表示 = true;
     						}
     						腕人2.手.小指_小指3_表示 = true;
-    						腕人2.手.X0Y3_小指_小指2.AngleCont = 0.0;
+    						腕人2.手.X0Y3_小指_小指2.SetAngleCont(0.0);
     						腕人2.手.Yi = 手Yi;
     						if (手Yi == 9)
     						{
     							if (!腕人2.手.中指_中指1_表示)
     							{
-    								腕人2.手.X0Y9_小指_小指1.AngleBase = 110.0;
-    								腕人2.手.X0Y9_小指_小指2.AngleBase = 70.0;
-    								腕人2.手.X0Y9_小指_小指3.AngleBase = 105.0;
+    								腕人2.手.X0Y9_小指_小指1.SetAngleBase(110.0);
+    								腕人2.手.X0Y9_小指_小指2.SetAngleBase(70.0);
+    								腕人2.手.X0Y9_小指_小指3.SetAngleBase(105.0);
     							}
     							else
     							{
-    								腕人2.手.X0Y9_小指_小指1.AngleBase = 0.0;
-    								腕人2.手.X0Y9_小指_小指2.AngleBase = 0.0;
-    								腕人2.手.X0Y9_小指_小指3.AngleBase = 0.0;
+    								腕人2.手.X0Y9_小指_小指1.SetAngleBase(0.0);
+    								腕人2.手.X0Y9_小指_小指2.SetAngleBase(0.0);
+    								腕人2.手.X0Y9_小指_小指3.SetAngleBase(0.0);
     							}
     						}
     					}
@@ -5973,16 +5974,16 @@ namespace SlaveMatrix
     			if (脚獣2.足 is 足_鳥)
     			{
     				足_鳥 obj = (足_鳥)脚獣2.足;
-    				obj.X0Y0_足首.AngleCont = -25.0 * u4;
-    				obj.X0Y0_親指_指1.AngleCont = 45.0 * u4;
-    				obj.X0Y0_人指_指1.AngleCont = -60.0 * u4;
-    				obj.X0Y0_人指_指2.AngleCont = -60.0 * u4;
-    				obj.X0Y0_薬指_指1.AngleCont = -45.0 * u4;
-    				obj.X0Y0_薬指_指2.AngleCont = -45.0 * u4;
-    				obj.X0Y0_薬指_指3.AngleCont = -45.0 * u4;
-    				obj.X0Y0_中指_指1.AngleCont = -45.0 * u4;
-    				obj.X0Y0_中指_指2.AngleCont = -45.0 * u4;
-    				obj.X0Y0_中指_指3.AngleCont = -45.0 * u4;
+    				obj.X0Y0_足首.SetAngleCont(-25.0 * u4);
+    				obj.X0Y0_親指_指1.SetAngleCont(45.0 * u4);
+    				obj.X0Y0_人指_指1.SetAngleCont(-60.0 * u4);
+    				obj.X0Y0_人指_指2.SetAngleCont(-60.0 * u4);
+    				obj.X0Y0_薬指_指1.SetAngleCont(-45.0 * u4);
+    				obj.X0Y0_薬指_指2.SetAngleCont(-45.0 * u4);
+    				obj.X0Y0_薬指_指3.SetAngleCont(-45.0 * u4);
+    				obj.X0Y0_中指_指1.SetAngleCont(-45.0 * u4);
+    				obj.X0Y0_中指_指2.SetAngleCont(-45.0 * u4);
+    				obj.X0Y0_中指_指3.SetAngleCont(-45.0 * u4);
     			}
     		}
     	}
@@ -6015,16 +6016,16 @@ namespace SlaveMatrix
     			if (脚獣2.足 is 足_鳥)
     			{
     				足_鳥 obj = (足_鳥)脚獣2.足;
-    				obj.X0Y0_足首.AngleCont = 25.0 * u4;
-    				obj.X0Y0_親指_指1.AngleCont = -45.0 * u4;
-    				obj.X0Y0_人指_指1.AngleCont = 60.0 * u4;
-    				obj.X0Y0_人指_指2.AngleCont = 60.0 * u4;
-    				obj.X0Y0_薬指_指1.AngleCont = 45.0 * u4;
-    				obj.X0Y0_薬指_指2.AngleCont = 45.0 * u4;
-    				obj.X0Y0_薬指_指3.AngleCont = 45.0 * u4;
-    				obj.X0Y0_中指_指1.AngleCont = 45.0 * u4;
-    				obj.X0Y0_中指_指2.AngleCont = 45.0 * u4;
-    				obj.X0Y0_中指_指3.AngleCont = 45.0 * u4;
+    				obj.X0Y0_足首.SetAngleCont(25.0 * u4);
+    				obj.X0Y0_親指_指1.SetAngleCont(-45.0 * u4);
+    				obj.X0Y0_人指_指1.SetAngleCont(60.0 * u4);
+    				obj.X0Y0_人指_指2.SetAngleCont(60.0 * u4);
+    				obj.X0Y0_薬指_指1.SetAngleCont(45.0 * u4);
+    				obj.X0Y0_薬指_指2.SetAngleCont(45.0 * u4);
+    				obj.X0Y0_薬指_指3.SetAngleCont(45.0 * u4);
+    				obj.X0Y0_中指_指1.SetAngleCont(45.0 * u4);
+    				obj.X0Y0_中指_指2.SetAngleCont(45.0 * u4);
+    				obj.X0Y0_中指_指3.SetAngleCont(45.0 * u4);
     			}
     		}
     	}
@@ -6571,7 +6572,7 @@ namespace SlaveMatrix
     		鰭2.角度B += 根本角度 + u1;
     		if (鰭2 is 鰭_魚 && 根本角度 < 0.0)
     		{
-    			((鰭_魚)鰭2).X0Y0_鰭1_鰭膜.AngleBase += (0.0 - 根本角度) * 0.5;
+    			((鰭_魚)鰭2).X0Y0_鰭1_鰭膜.SetAngleBase(((鰭_魚)鰭2).X0Y0_鰭1_鰭膜.GetAngleBase() + (0.0 - 根本角度) * 0.5);
     		}
     	}
 
@@ -6582,7 +6583,7 @@ namespace SlaveMatrix
     		鰭2.角度B += 0.0 - 根本角度 + (0.0 - u1);
     		if (鰭2 is 鰭_魚 && 根本角度 < 0.0)
     		{
-    			((鰭_魚)鰭2).X0Y0_鰭1_鰭膜.AngleBase += 根本角度 * 0.5;
+    			((鰭_魚)鰭2).X0Y0_鰭1_鰭膜.SetAngleBase(((鰭_魚)鰭2).X0Y0_鰭1_鰭膜.GetAngleBase() + 根本角度 * 0.5);
     		}
     	}
 
@@ -7168,24 +7169,24 @@ namespace SlaveMatrix
     	{
     		触肢_肢蜘 obj = Cha.Body.触肢蜘左[n];
     		obj.SetAngle0();
-    		obj.X0Y0_基節.AngleBase += 基節角度 + u1;
-    		obj.X0Y0_転節.AngleBase += 転節角度 + u2;
-    		obj.X0Y0_腿節.AngleBase += 腿節角度 + u3;
-    		obj.X0Y0_膝節.AngleBase += 膝節角度 + u4;
-    		obj.X0Y0_脛節.AngleBase += 脛節角度 + u5;
-    		obj.X0Y0_蹠節.AngleBase += 蹠節角度 + u6;
+    		obj.X0Y0_基節.SetAngleBase(obj.X0Y0_基節.GetAngleBase() + (基節角度 + u1));
+    		obj.X0Y0_転節.SetAngleBase(obj.X0Y0_転節.GetAngleBase() + (転節角度 + u2));
+    		obj.X0Y0_腿節.SetAngleBase(obj.X0Y0_腿節.GetAngleBase() + (腿節角度 + u3));
+    		obj.X0Y0_膝節.SetAngleBase(obj.X0Y0_膝節.GetAngleBase() + (膝節角度 + u4));
+    		obj.X0Y0_脛節.SetAngleBase(obj.X0Y0_脛節.GetAngleBase() + (脛節角度 + u5));
+    		obj.X0Y0_蹠節.SetAngleBase(obj.X0Y0_蹠節.GetAngleBase() + (蹠節角度 + u6));
     	}
 
     	public static void 触肢蜘右(this Character Cha, int n, double u1, double u2, double u3, double u4, double u5, double u6, double 基節角度, double 転節角度, double 腿節角度, double 膝節角度, double 脛節角度, double 蹠節角度)
     	{
     		触肢_肢蜘 obj = Cha.Body.触肢蜘右[n];
     		obj.SetAngle0();
-    		obj.X0Y0_基節.AngleBase += 0.0 - 基節角度 + (0.0 - u1);
-    		obj.X0Y0_転節.AngleBase += 0.0 - 転節角度 + (0.0 - u2);
-    		obj.X0Y0_腿節.AngleBase += 0.0 - 腿節角度 + (0.0 - u3);
-    		obj.X0Y0_膝節.AngleBase += 0.0 - 膝節角度 + (0.0 - u4);
-    		obj.X0Y0_脛節.AngleBase += 0.0 - 脛節角度 + (0.0 - u5);
-    		obj.X0Y0_蹠節.AngleBase += 0.0 - 蹠節角度 + (0.0 - u6);
+    		obj.X0Y0_基節.SetAngleBase(obj.X0Y0_基節.GetAngleBase() + (0.0 - 基節角度 + (0.0 - u1)));
+    		obj.X0Y0_転節.SetAngleBase(obj.X0Y0_転節.GetAngleBase() + (0.0 - 転節角度 + (0.0 - u2)));
+    		obj.X0Y0_腿節.SetAngleBase(obj.X0Y0_腿節.GetAngleBase() + (0.0 - 腿節角度 + (0.0 - u3)));
+    		obj.X0Y0_膝節.SetAngleBase(obj.X0Y0_膝節.GetAngleBase() + (0.0 - 膝節角度 + (0.0 - u4)));
+    		obj.X0Y0_脛節.SetAngleBase(obj.X0Y0_脛節.GetAngleBase() + (0.0 - 脛節角度 + (0.0 - u5)));
+    		obj.X0Y0_蹠節.SetAngleBase(obj.X0Y0_蹠節.GetAngleBase() + (0.0 - 蹠節角度 + (0.0 - u6)));
     	}
 
     	public static void 触肢蜘_基本左(this Character Cha, int n, double u1, double u2, double u3, double u4, double u5, double u6)
@@ -7286,21 +7287,21 @@ namespace SlaveMatrix
     	{
     		foreach (触肢_肢蜘 item in Cha.Body.触肢蜘左)
     		{
-    			item.X0Y0_基節.AngleCont = a * Rng.XS.NextDouble();
-    			item.X0Y0_転節.AngleCont = a * Rng.XS.NextDouble();
-    			item.X0Y0_腿節.AngleCont = a * Rng.XS.NextDouble();
-    			item.X0Y0_膝節.AngleCont = a * Rng.XS.NextDouble();
-    			item.X0Y0_脛節.AngleCont = a * Rng.XS.NextDouble();
-    			item.X0Y0_蹠節.AngleCont = a * Rng.XS.NextDouble();
+    			item.X0Y0_基節.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_転節.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_腿節.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_膝節.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_脛節.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_蹠節.SetAngleCont(a * Rng.XS.NextDouble());
     		}
     		foreach (触肢_肢蜘 item2 in Cha.Body.触肢蜘右)
     		{
-    			item2.X0Y0_基節.AngleCont = (0.0 - a) * Rng.XS.NextDouble();
-    			item2.X0Y0_転節.AngleCont = (0.0 - a) * Rng.XS.NextDouble();
-    			item2.X0Y0_腿節.AngleCont = (0.0 - a) * Rng.XS.NextDouble();
-    			item2.X0Y0_膝節.AngleCont = (0.0 - a) * Rng.XS.NextDouble();
-    			item2.X0Y0_脛節.AngleCont = (0.0 - a) * Rng.XS.NextDouble();
-    			item2.X0Y0_蹠節.AngleCont = (0.0 - a) * Rng.XS.NextDouble();
+    			item2.X0Y0_基節.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item2.X0Y0_転節.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item2.X0Y0_腿節.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item2.X0Y0_膝節.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item2.X0Y0_脛節.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item2.X0Y0_蹠節.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
     		}
     	}
 
@@ -7308,17 +7309,17 @@ namespace SlaveMatrix
     	{
     		触肢_肢蠍 触肢_肢蠍2 = Cha.Body.触肢蠍左[n];
     		触肢_肢蠍2.SetAngle0();
-    		触肢_肢蠍2.X0Y0_転節.AngleBase += 転節角度 + u1;
-    		触肢_肢蠍2.X0Y0_腿節.AngleBase += 腿節角度 + u2;
-    		触肢_肢蠍2.X0Y0_膝節.AngleBase += 膝節角度 + u3;
-    		触肢_肢蠍2.X0Y0_爪1.AngleBase += 爪1角度 + u4;
+    		触肢_肢蠍2.X0Y0_転節.SetAngleBase(触肢_肢蠍2.X0Y0_転節.GetAngleBase() + (転節角度 + u1));
+    		触肢_肢蠍2.X0Y0_腿節.SetAngleBase(触肢_肢蠍2.X0Y0_腿節.GetAngleBase() + (腿節角度 + u2));
+    		触肢_肢蠍2.X0Y0_膝節.SetAngleBase(触肢_肢蠍2.X0Y0_膝節.GetAngleBase() + (膝節角度 + u3));
+    		触肢_肢蠍2.X0Y0_爪1.SetAngleBase(触肢_肢蠍2.X0Y0_爪1.GetAngleBase() + (爪1角度 + u4));
     		if (触肢_肢蠍2.拘束)
     		{
-    			触肢_肢蠍2.X0Y0_爪2.AngleBase = 0.0;
+    			触肢_肢蠍2.X0Y0_爪2.SetAngleBase(0.0);
     		}
     		else
     		{
-    			触肢_肢蠍2.X0Y0_爪2.AngleBase += 爪2角度 + u5;
+    			触肢_肢蠍2.X0Y0_爪2.SetAngleBase(触肢_肢蠍2.X0Y0_爪2.GetAngleBase() + (爪2角度 + u5));
     		}
     	}
 
@@ -7326,17 +7327,17 @@ namespace SlaveMatrix
     	{
     		触肢_肢蠍 触肢_肢蠍2 = Cha.Body.触肢蠍右[n];
     		触肢_肢蠍2.SetAngle0();
-    		触肢_肢蠍2.X0Y0_転節.AngleBase += 0.0 - 転節角度 + (0.0 - u1);
-    		触肢_肢蠍2.X0Y0_腿節.AngleBase += 0.0 - 腿節角度 + (0.0 - u2);
-    		触肢_肢蠍2.X0Y0_膝節.AngleBase += 0.0 - 膝節角度 + (0.0 - u3);
-    		触肢_肢蠍2.X0Y0_爪1.AngleBase += 0.0 - 爪1角度 + (0.0 - u4);
+    		触肢_肢蠍2.X0Y0_転節.SetAngleBase(触肢_肢蠍2.X0Y0_転節.GetAngleBase() + (0.0 - 転節角度 + (0.0 - u1)));
+    		触肢_肢蠍2.X0Y0_腿節.SetAngleBase(触肢_肢蠍2.X0Y0_腿節.GetAngleBase() + (0.0 - 腿節角度 + (0.0 - u2)));
+    		触肢_肢蠍2.X0Y0_膝節.SetAngleBase(触肢_肢蠍2.X0Y0_膝節.GetAngleBase() + (0.0 - 膝節角度 + (0.0 - u3)));
+    		触肢_肢蠍2.X0Y0_爪1.SetAngleBase(触肢_肢蠍2.X0Y0_爪1.GetAngleBase() + (0.0 - 爪1角度 + (0.0 - u4)));
     		if (触肢_肢蠍2.拘束)
     		{
-    			触肢_肢蠍2.X0Y0_爪2.AngleBase = 0.0;
+    			触肢_肢蠍2.X0Y0_爪2.SetAngleBase(0.0);
     		}
     		else
     		{
-    			触肢_肢蠍2.X0Y0_爪2.AngleBase += 0.0 - 爪2角度 + (0.0 - u5);
+    			触肢_肢蠍2.X0Y0_爪2.SetAngleBase(触肢_肢蠍2.X0Y0_爪2.GetAngleBase() + (0.0 - 爪2角度 + (0.0 - u5)));
     		}
     	}
 
@@ -7438,24 +7439,24 @@ namespace SlaveMatrix
     	{
     		foreach (触肢_肢蠍 item in Cha.Body.触肢蠍左)
     		{
-    			item.X0Y0_転節.AngleCont = a * Rng.XS.NextDouble();
-    			item.X0Y0_腿節.AngleCont = a * Rng.XS.NextDouble();
-    			item.X0Y0_膝節.AngleCont = a * Rng.XS.NextDouble();
-    			item.X0Y0_爪1.AngleCont = a * Rng.XS.NextDouble();
+    			item.X0Y0_転節.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_腿節.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_膝節.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_爪1.SetAngleCont(a * Rng.XS.NextDouble());
     			if (!item.拘束)
     			{
-    				item.X0Y0_爪2.AngleCont = a * Rng.XS.NextDouble();
+    				item.X0Y0_爪2.SetAngleCont(a * Rng.XS.NextDouble());
     			}
     		}
     		foreach (触肢_肢蠍 item2 in Cha.Body.触肢蠍右)
     		{
-    			item2.X0Y0_転節.AngleCont = (0.0 - a) * Rng.XS.NextDouble();
-    			item2.X0Y0_腿節.AngleCont = (0.0 - a) * Rng.XS.NextDouble();
-    			item2.X0Y0_膝節.AngleCont = (0.0 - a) * Rng.XS.NextDouble();
-    			item2.X0Y0_爪1.AngleCont = (0.0 - a) * Rng.XS.NextDouble();
+    			item2.X0Y0_転節.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item2.X0Y0_腿節.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item2.X0Y0_膝節.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item2.X0Y0_爪1.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
     			if (!item2.拘束)
     			{
-    				item2.X0Y0_爪2.AngleCont = (0.0 - a) * Rng.XS.NextDouble();
+    				item2.X0Y0_爪2.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
     			}
     		}
     	}
@@ -7481,25 +7482,25 @@ namespace SlaveMatrix
     		}
     		if (節足_足蜘2.反転Y)
     		{
-    			節足_足蜘2.X0Y0_基節.AngleBase += 0.0 - 基節角度 + (0.0 - u1);
-    			節足_足蜘2.X0Y0_転節.AngleBase += 0.0 - 転節角度 + (0.0 - u2);
-    			節足_足蜘2.X0Y0_腿節.AngleBase += 0.0 - 腿節角度 + (0.0 - u3);
-    			節足_足蜘2.X0Y0_膝節.AngleBase += 0.0 - 膝節角度 + (0.0 - u4);
-    			節足_足蜘2.X0Y0_脛節.AngleBase += 0.0 - 脛節角度 + (0.0 - u5);
-    			節足_足蜘2.X0Y0_蹠節.AngleBase += 0.0 - 蹠節角度 + (0.0 - u6);
-    			節足_足蜘2.X0Y0_跗節1.AngleBase += 0.0 - 跗節1角度 + (0.0 - u7);
-    			節足_足蜘2.X0Y0_跗節2.AngleBase += 0.0 - 跗節2角度 + (0.0 - u8);
+    			節足_足蜘2.X0Y0_基節.SetAngleBase(節足_足蜘2.X0Y0_基節.GetAngleBase() + (0.0 - 基節角度 + (0.0 - u1)));
+    			節足_足蜘2.X0Y0_転節.SetAngleBase(節足_足蜘2.X0Y0_転節.GetAngleBase() + (0.0 - 転節角度 + (0.0 - u2)));
+    			節足_足蜘2.X0Y0_腿節.SetAngleBase(節足_足蜘2.X0Y0_腿節.GetAngleBase() + (0.0 - 腿節角度 + (0.0 - u3)));
+    			節足_足蜘2.X0Y0_膝節.SetAngleBase(節足_足蜘2.X0Y0_膝節.GetAngleBase() + (0.0 - 膝節角度 + (0.0 - u4)));
+    			節足_足蜘2.X0Y0_脛節.SetAngleBase(節足_足蜘2.X0Y0_脛節.GetAngleBase() + (0.0 - 脛節角度 + (0.0 - u5)));
+    			節足_足蜘2.X0Y0_蹠節.SetAngleBase(節足_足蜘2.X0Y0_蹠節.GetAngleBase() + (0.0 - 蹠節角度 + (0.0 - u6)));
+    			節足_足蜘2.X0Y0_跗節1.SetAngleBase(節足_足蜘2.X0Y0_跗節1.GetAngleBase() + (0.0 - 跗節1角度 + (0.0 - u7)));
+    			節足_足蜘2.X0Y0_跗節2.SetAngleBase(節足_足蜘2.X0Y0_跗節2.GetAngleBase() + (0.0 - 跗節2角度 + (0.0 - u8)));
     		}
     		else
     		{
-    			節足_足蜘2.X0Y0_基節.AngleBase += 基節角度 + u1;
-    			節足_足蜘2.X0Y0_転節.AngleBase += 転節角度 + u2;
-    			節足_足蜘2.X0Y0_腿節.AngleBase += 腿節角度 + u3;
-    			節足_足蜘2.X0Y0_膝節.AngleBase += 膝節角度 + u4;
-    			節足_足蜘2.X0Y0_脛節.AngleBase += 脛節角度 + u5;
-    			節足_足蜘2.X0Y0_蹠節.AngleBase += 蹠節角度 + u6;
-    			節足_足蜘2.X0Y0_跗節1.AngleBase += 跗節1角度 + u7;
-    			節足_足蜘2.X0Y0_跗節2.AngleBase += 跗節2角度 + u8;
+    			節足_足蜘2.X0Y0_基節.SetAngleBase(節足_足蜘2.X0Y0_基節.GetAngleBase() + (基節角度 + u1));
+    			節足_足蜘2.X0Y0_転節.SetAngleBase(節足_足蜘2.X0Y0_転節.GetAngleBase() + (転節角度 + u2));
+    			節足_足蜘2.X0Y0_腿節.SetAngleBase(節足_足蜘2.X0Y0_腿節.GetAngleBase() + (腿節角度 + u3));
+    			節足_足蜘2.X0Y0_膝節.SetAngleBase(節足_足蜘2.X0Y0_膝節.GetAngleBase() + (膝節角度 + u4));
+    			節足_足蜘2.X0Y0_脛節.SetAngleBase(節足_足蜘2.X0Y0_脛節.GetAngleBase() + (脛節角度 + u5));
+    			節足_足蜘2.X0Y0_蹠節.SetAngleBase(節足_足蜘2.X0Y0_蹠節.GetAngleBase() + (蹠節角度 + u6));
+    			節足_足蜘2.X0Y0_跗節1.SetAngleBase(節足_足蜘2.X0Y0_跗節1.GetAngleBase() + (跗節1角度 + u7));
+    			節足_足蜘2.X0Y0_跗節2.SetAngleBase(節足_足蜘2.X0Y0_跗節2.GetAngleBase() + (跗節2角度 + u8));
     		}
     	}
 
@@ -7524,25 +7525,25 @@ namespace SlaveMatrix
     		}
     		if (節足_足蜘2.反転Y)
     		{
-    			節足_足蜘2.X0Y0_基節.AngleBase += 基節角度 + u1;
-    			節足_足蜘2.X0Y0_転節.AngleBase += 転節角度 + u2;
-    			節足_足蜘2.X0Y0_腿節.AngleBase += 腿節角度 + u3;
-    			節足_足蜘2.X0Y0_膝節.AngleBase += 膝節角度 + u4;
-    			節足_足蜘2.X0Y0_脛節.AngleBase += 脛節角度 + u5;
-    			節足_足蜘2.X0Y0_蹠節.AngleBase += 蹠節角度 + u6;
-    			節足_足蜘2.X0Y0_跗節1.AngleBase += 跗節1角度 + u7;
-    			節足_足蜘2.X0Y0_跗節2.AngleBase += 跗節2角度 + u8;
+    			節足_足蜘2.X0Y0_基節.SetAngleBase(節足_足蜘2.X0Y0_基節.GetAngleBase() + (基節角度 + u1));
+    			節足_足蜘2.X0Y0_転節.SetAngleBase(節足_足蜘2.X0Y0_転節.GetAngleBase() + (転節角度 + u2));
+    			節足_足蜘2.X0Y0_腿節.SetAngleBase(節足_足蜘2.X0Y0_腿節.GetAngleBase() + (腿節角度 + u3));
+    			節足_足蜘2.X0Y0_膝節.SetAngleBase(節足_足蜘2.X0Y0_膝節.GetAngleBase() + (膝節角度 + u4));
+    			節足_足蜘2.X0Y0_脛節.SetAngleBase(節足_足蜘2.X0Y0_脛節.GetAngleBase() + (脛節角度 + u5));
+    			節足_足蜘2.X0Y0_蹠節.SetAngleBase(節足_足蜘2.X0Y0_蹠節.GetAngleBase() + (蹠節角度 + u6));
+    			節足_足蜘2.X0Y0_跗節1.SetAngleBase(節足_足蜘2.X0Y0_跗節1.GetAngleBase() + (跗節1角度 + u7));
+    			節足_足蜘2.X0Y0_跗節2.SetAngleBase(節足_足蜘2.X0Y0_跗節2.GetAngleBase() + (跗節2角度 + u8));
     		}
     		else
     		{
-    			節足_足蜘2.X0Y0_基節.AngleBase += 0.0 - 基節角度 + (0.0 - u1);
-    			節足_足蜘2.X0Y0_転節.AngleBase += 0.0 - 転節角度 + (0.0 - u2);
-    			節足_足蜘2.X0Y0_腿節.AngleBase += 0.0 - 腿節角度 + (0.0 - u3);
-    			節足_足蜘2.X0Y0_膝節.AngleBase += 0.0 - 膝節角度 + (0.0 - u4);
-    			節足_足蜘2.X0Y0_脛節.AngleBase += 0.0 - 脛節角度 + (0.0 - u5);
-    			節足_足蜘2.X0Y0_蹠節.AngleBase += 0.0 - 蹠節角度 + (0.0 - u6);
-    			節足_足蜘2.X0Y0_跗節1.AngleBase += 0.0 - 跗節1角度 + (0.0 - u7);
-    			節足_足蜘2.X0Y0_跗節2.AngleBase += 0.0 - 跗節2角度 + (0.0 - u8);
+    			節足_足蜘2.X0Y0_基節.SetAngleBase(節足_足蜘2.X0Y0_基節.GetAngleBase() + (0.0 - 基節角度 + (0.0 - u1)));
+    			節足_足蜘2.X0Y0_転節.SetAngleBase(節足_足蜘2.X0Y0_転節.GetAngleBase() + (0.0 - 転節角度 + (0.0 - u2)));
+    			節足_足蜘2.X0Y0_腿節.SetAngleBase(節足_足蜘2.X0Y0_腿節.GetAngleBase() + (0.0 - 腿節角度 + (0.0 - u3)));
+    			節足_足蜘2.X0Y0_膝節.SetAngleBase(節足_足蜘2.X0Y0_膝節.GetAngleBase() + (0.0 - 膝節角度 + (0.0 - u4)));
+    			節足_足蜘2.X0Y0_脛節.SetAngleBase(節足_足蜘2.X0Y0_脛節.GetAngleBase() + (0.0 - 脛節角度 + (0.0 - u5)));
+    			節足_足蜘2.X0Y0_蹠節.SetAngleBase(節足_足蜘2.X0Y0_蹠節.GetAngleBase() + (0.0 - 蹠節角度 + (0.0 - u6)));
+    			節足_足蜘2.X0Y0_跗節1.SetAngleBase(節足_足蜘2.X0Y0_跗節1.GetAngleBase() + (0.0 - 跗節1角度 + (0.0 - u7)));
+    			節足_足蜘2.X0Y0_跗節2.SetAngleBase(節足_足蜘2.X0Y0_跗節2.GetAngleBase() + (0.0 - 跗節2角度 + (0.0 - u8)));
     		}
     	}
 
@@ -7648,25 +7649,25 @@ namespace SlaveMatrix
     	{
     		foreach (節足_足蜘 item in Cha.Body.節足蜘左)
     		{
-    			item.X0Y0_基節.AngleCont = a * Rng.XS.NextDouble();
-    			item.X0Y0_転節.AngleCont = a * Rng.XS.NextDouble();
-    			item.X0Y0_腿節.AngleCont = a * Rng.XS.NextDouble();
-    			item.X0Y0_膝節.AngleCont = a * Rng.XS.NextDouble();
-    			item.X0Y0_脛節.AngleCont = a * Rng.XS.NextDouble();
-    			item.X0Y0_蹠節.AngleCont = a * Rng.XS.NextDouble();
-    			item.X0Y0_跗節1.AngleCont = a * Rng.XS.NextDouble();
-    			item.X0Y0_跗節2.AngleCont = a * Rng.XS.NextDouble();
+    			item.X0Y0_基節.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_転節.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_腿節.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_膝節.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_脛節.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_蹠節.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_跗節1.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_跗節2.SetAngleCont(a * Rng.XS.NextDouble());
     		}
     		foreach (節足_足蜘 item2 in Cha.Body.節足蜘右)
     		{
-    			item2.X0Y0_基節.AngleCont = (0.0 - a) * Rng.XS.NextDouble();
-    			item2.X0Y0_転節.AngleCont = (0.0 - a) * Rng.XS.NextDouble();
-    			item2.X0Y0_腿節.AngleCont = (0.0 - a) * Rng.XS.NextDouble();
-    			item2.X0Y0_膝節.AngleCont = (0.0 - a) * Rng.XS.NextDouble();
-    			item2.X0Y0_脛節.AngleCont = (0.0 - a) * Rng.XS.NextDouble();
-    			item2.X0Y0_蹠節.AngleCont = (0.0 - a) * Rng.XS.NextDouble();
-    			item2.X0Y0_跗節1.AngleCont = (0.0 - a) * Rng.XS.NextDouble();
-    			item2.X0Y0_跗節2.AngleCont = (0.0 - a) * Rng.XS.NextDouble();
+    			item2.X0Y0_基節.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item2.X0Y0_転節.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item2.X0Y0_腿節.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item2.X0Y0_膝節.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item2.X0Y0_脛節.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item2.X0Y0_蹠節.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item2.X0Y0_跗節1.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item2.X0Y0_跗節2.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
     		}
     	}
 
@@ -7691,23 +7692,23 @@ namespace SlaveMatrix
     		}
     		if (節足_足蠍2.反転Y)
     		{
-    			節足_足蠍2.X0Y0_転節.AngleBase += 0.0 - 転節角度 + (0.0 - u1);
-    			節足_足蠍2.X0Y0_腿節.AngleBase += 0.0 - 腿節角度 + (0.0 - u2);
-    			節足_足蠍2.X0Y0_膝節.AngleBase += 0.0 - 膝節角度 + (0.0 - u3);
-    			節足_足蠍2.X0Y0_脛節.AngleBase += 0.0 - 脛節角度 + (0.0 - u4);
-    			節足_足蠍2.X0Y0_蹠節.AngleBase += 0.0 - 蹠節角度 + (0.0 - u5);
-    			節足_足蠍2.X0Y0_跗節1.AngleBase += 0.0 - 跗節1角度 + (0.0 - u6);
-    			節足_足蠍2.X0Y0_跗節2.AngleBase += 0.0 - 跗節2角度 + (0.0 - u7);
+    			節足_足蠍2.X0Y0_転節.SetAngleBase(節足_足蠍2.X0Y0_転節.GetAngleBase() + (0.0 - 転節角度 + (0.0 - u1)));
+    			節足_足蠍2.X0Y0_腿節.SetAngleBase(節足_足蠍2.X0Y0_腿節.GetAngleBase() + (0.0 - 腿節角度 + (0.0 - u2)));
+    			節足_足蠍2.X0Y0_膝節.SetAngleBase(節足_足蠍2.X0Y0_膝節.GetAngleBase() + (0.0 - 膝節角度 + (0.0 - u3)));
+    			節足_足蠍2.X0Y0_脛節.SetAngleBase(節足_足蠍2.X0Y0_脛節.GetAngleBase() + (0.0 - 脛節角度 + (0.0 - u4)));
+    			節足_足蠍2.X0Y0_蹠節.SetAngleBase(節足_足蠍2.X0Y0_蹠節.GetAngleBase() + (0.0 - 蹠節角度 + (0.0 - u5)));
+    			節足_足蠍2.X0Y0_跗節1.SetAngleBase(節足_足蠍2.X0Y0_跗節1.GetAngleBase() + (0.0 - 跗節1角度 + (0.0 - u6)));
+    			節足_足蠍2.X0Y0_跗節2.SetAngleBase(節足_足蠍2.X0Y0_跗節2.GetAngleBase() + (0.0 - 跗節2角度 + (0.0 - u7)));
     		}
     		else
     		{
-    			節足_足蠍2.X0Y0_転節.AngleBase += 転節角度 + u1;
-    			節足_足蠍2.X0Y0_腿節.AngleBase += 腿節角度 + u2;
-    			節足_足蠍2.X0Y0_膝節.AngleBase += 膝節角度 + u3;
-    			節足_足蠍2.X0Y0_脛節.AngleBase += 脛節角度 + u4;
-    			節足_足蠍2.X0Y0_蹠節.AngleBase += 蹠節角度 + u5;
-    			節足_足蠍2.X0Y0_跗節1.AngleBase += 跗節1角度 + u6;
-    			節足_足蠍2.X0Y0_跗節2.AngleBase += 跗節2角度 + u7;
+    			節足_足蠍2.X0Y0_転節.SetAngleBase(節足_足蠍2.X0Y0_転節.GetAngleBase() + (転節角度 + u1));
+    			節足_足蠍2.X0Y0_腿節.SetAngleBase(節足_足蠍2.X0Y0_腿節.GetAngleBase() + (腿節角度 + u2));
+    			節足_足蠍2.X0Y0_膝節.SetAngleBase(節足_足蠍2.X0Y0_膝節.GetAngleBase() + (膝節角度 + u3));
+    			節足_足蠍2.X0Y0_脛節.SetAngleBase(節足_足蠍2.X0Y0_脛節.GetAngleBase() + (脛節角度 + u4));
+    			節足_足蠍2.X0Y0_蹠節.SetAngleBase(節足_足蠍2.X0Y0_蹠節.GetAngleBase() + (蹠節角度 + u5));
+    			節足_足蠍2.X0Y0_跗節1.SetAngleBase(節足_足蠍2.X0Y0_跗節1.GetAngleBase() + (跗節1角度 + u6));
+    			節足_足蠍2.X0Y0_跗節2.SetAngleBase(節足_足蠍2.X0Y0_跗節2.GetAngleBase() + (跗節2角度 + u7));
     		}
     	}
 
@@ -7732,23 +7733,23 @@ namespace SlaveMatrix
     		}
     		if (節足_足蠍2.反転Y)
     		{
-    			節足_足蠍2.X0Y0_転節.AngleBase += 転節角度 + u1;
-    			節足_足蠍2.X0Y0_腿節.AngleBase += 腿節角度 + u2;
-    			節足_足蠍2.X0Y0_膝節.AngleBase += 膝節角度 + u3;
-    			節足_足蠍2.X0Y0_脛節.AngleBase += 脛節角度 + u4;
-    			節足_足蠍2.X0Y0_蹠節.AngleBase += 蹠節角度 + u5;
-    			節足_足蠍2.X0Y0_跗節1.AngleBase += 跗節1角度 + u6;
-    			節足_足蠍2.X0Y0_跗節2.AngleBase += 跗節2角度 + u7;
+    			節足_足蠍2.X0Y0_転節.SetAngleBase(節足_足蠍2.X0Y0_転節.GetAngleBase() + (転節角度 + u1));
+    			節足_足蠍2.X0Y0_腿節.SetAngleBase(節足_足蠍2.X0Y0_腿節.GetAngleBase() + (腿節角度 + u2));
+    			節足_足蠍2.X0Y0_膝節.SetAngleBase(節足_足蠍2.X0Y0_膝節.GetAngleBase() + (膝節角度 + u3));
+    			節足_足蠍2.X0Y0_脛節.SetAngleBase(節足_足蠍2.X0Y0_脛節.GetAngleBase() + (脛節角度 + u4));
+    			節足_足蠍2.X0Y0_蹠節.SetAngleBase(節足_足蠍2.X0Y0_蹠節.GetAngleBase() + (蹠節角度 + u5));
+    			節足_足蠍2.X0Y0_跗節1.SetAngleBase(節足_足蠍2.X0Y0_跗節1.GetAngleBase() + (跗節1角度 + u6));
+    			節足_足蠍2.X0Y0_跗節2.SetAngleBase(節足_足蠍2.X0Y0_跗節2.GetAngleBase() + (跗節2角度 + u7));
     		}
     		else
     		{
-    			節足_足蠍2.X0Y0_転節.AngleBase += 0.0 - 転節角度 + (0.0 - u1);
-    			節足_足蠍2.X0Y0_腿節.AngleBase += 0.0 - 腿節角度 + (0.0 - u2);
-    			節足_足蠍2.X0Y0_膝節.AngleBase += 0.0 - 膝節角度 + (0.0 - u3);
-    			節足_足蠍2.X0Y0_脛節.AngleBase += 0.0 - 脛節角度 + (0.0 - u4);
-    			節足_足蠍2.X0Y0_蹠節.AngleBase += 0.0 - 蹠節角度 + (0.0 - u5);
-    			節足_足蠍2.X0Y0_跗節1.AngleBase += 0.0 - 跗節1角度 + (0.0 - u6);
-    			節足_足蠍2.X0Y0_跗節2.AngleBase += 0.0 - 跗節2角度 + (0.0 - u7);
+    			節足_足蠍2.X0Y0_転節.SetAngleBase(節足_足蠍2.X0Y0_転節.GetAngleBase() + (0.0 - 転節角度 + (0.0 - u1)));
+    			節足_足蠍2.X0Y0_腿節.SetAngleBase(節足_足蠍2.X0Y0_腿節.GetAngleBase() + (0.0 - 腿節角度 + (0.0 - u2)));
+    			節足_足蠍2.X0Y0_膝節.SetAngleBase(節足_足蠍2.X0Y0_膝節.GetAngleBase() + (0.0 - 膝節角度 + (0.0 - u3)));
+    			節足_足蠍2.X0Y0_脛節.SetAngleBase(節足_足蠍2.X0Y0_脛節.GetAngleBase() + (0.0 - 脛節角度 + (0.0 - u4)));
+    			節足_足蠍2.X0Y0_蹠節.SetAngleBase(節足_足蠍2.X0Y0_蹠節.GetAngleBase() + (0.0 - 蹠節角度 + (0.0 - u5)));
+    			節足_足蠍2.X0Y0_跗節1.SetAngleBase(節足_足蠍2.X0Y0_跗節1.GetAngleBase() + (0.0 - 跗節1角度 + (0.0 - u6)));
+    			節足_足蠍2.X0Y0_跗節2.SetAngleBase(節足_足蠍2.X0Y0_跗節2.GetAngleBase() + (0.0 - 跗節2角度 + (0.0 - u7)));
     		}
     	}
 
@@ -7854,23 +7855,23 @@ namespace SlaveMatrix
     	{
     		foreach (節足_足蠍 item in Cha.Body.節足蠍左)
     		{
-    			item.X0Y0_転節.AngleCont = a * Rng.XS.NextDouble();
-    			item.X0Y0_腿節.AngleCont = a * Rng.XS.NextDouble();
-    			item.X0Y0_膝節.AngleCont = a * Rng.XS.NextDouble();
-    			item.X0Y0_脛節.AngleCont = a * Rng.XS.NextDouble();
-    			item.X0Y0_蹠節.AngleCont = a * Rng.XS.NextDouble();
-    			item.X0Y0_跗節1.AngleCont = a * Rng.XS.NextDouble();
-    			item.X0Y0_跗節2.AngleCont = a * Rng.XS.NextDouble();
+    			item.X0Y0_転節.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_腿節.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_膝節.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_脛節.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_蹠節.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_跗節1.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_跗節2.SetAngleCont(a * Rng.XS.NextDouble());
     		}
     		foreach (節足_足蠍 item2 in Cha.Body.節足蠍右)
     		{
-    			item2.X0Y0_転節.AngleCont = (0.0 - a) * Rng.XS.NextDouble();
-    			item2.X0Y0_腿節.AngleCont = (0.0 - a) * Rng.XS.NextDouble();
-    			item2.X0Y0_膝節.AngleCont = (0.0 - a) * Rng.XS.NextDouble();
-    			item2.X0Y0_脛節.AngleCont = (0.0 - a) * Rng.XS.NextDouble();
-    			item2.X0Y0_蹠節.AngleCont = (0.0 - a) * Rng.XS.NextDouble();
-    			item2.X0Y0_跗節1.AngleCont = (0.0 - a) * Rng.XS.NextDouble();
-    			item2.X0Y0_跗節2.AngleCont = (0.0 - a) * Rng.XS.NextDouble();
+    			item2.X0Y0_転節.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item2.X0Y0_腿節.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item2.X0Y0_膝節.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item2.X0Y0_脛節.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item2.X0Y0_蹠節.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item2.X0Y0_跗節1.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item2.X0Y0_跗節2.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
     		}
     	}
 
@@ -7880,23 +7881,23 @@ namespace SlaveMatrix
     		節足_足百2.SetAngle0();
     		if (節足_足百2.反転Y)
     		{
-    			節足_足百2.X0Y0_基節.AngleBase += 0.0 - 基節角度 + (0.0 - u1);
-    			節足_足百2.X0Y0_転節.AngleBase += 0.0 - 転節角度 + (0.0 - u2);
-    			節足_足百2.X0Y0_前腿節.AngleBase += 0.0 - 前腿節角度 + (0.0 - u3);
-    			節足_足百2.X0Y0_腿節.AngleBase += 0.0 - 腿節角度 + (0.0 - u4);
-    			節足_足百2.X0Y0_脛節.AngleBase += 0.0 - 脛節角度 + (0.0 - u5);
-    			節足_足百2.X0Y0_跗節1.AngleBase += 0.0 - 跗節1角度 + (0.0 - u6);
-    			節足_足百2.X0Y0_跗節2.AngleBase += 0.0 - 跗節2角度 + (0.0 - u7);
+    			節足_足百2.X0Y0_基節.SetAngleBase(節足_足百2.X0Y0_基節.GetAngleBase() + (0.0 - 基節角度 + (0.0 - u1)));
+    			節足_足百2.X0Y0_転節.SetAngleBase(節足_足百2.X0Y0_転節.GetAngleBase() + (0.0 - 転節角度 + (0.0 - u2)));
+    			節足_足百2.X0Y0_前腿節.SetAngleBase(節足_足百2.X0Y0_前腿節.GetAngleBase() + (0.0 - 前腿節角度 + (0.0 - u3)));
+    			節足_足百2.X0Y0_腿節.SetAngleBase(節足_足百2.X0Y0_腿節.GetAngleBase() + (0.0 - 腿節角度 + (0.0 - u4)));
+    			節足_足百2.X0Y0_脛節.SetAngleBase(節足_足百2.X0Y0_脛節.GetAngleBase() + (0.0 - 脛節角度 + (0.0 - u5)));
+    			節足_足百2.X0Y0_跗節1.SetAngleBase(節足_足百2.X0Y0_跗節1.GetAngleBase() + (0.0 - 跗節1角度 + (0.0 - u6)));
+    			節足_足百2.X0Y0_跗節2.SetAngleBase(節足_足百2.X0Y0_跗節2.GetAngleBase() + (0.0 - 跗節2角度 + (0.0 - u7)));
     		}
     		else
     		{
-    			節足_足百2.X0Y0_基節.AngleBase += 基節角度 + u1;
-    			節足_足百2.X0Y0_転節.AngleBase += 転節角度 + u2;
-    			節足_足百2.X0Y0_前腿節.AngleBase += 前腿節角度 + u3;
-    			節足_足百2.X0Y0_腿節.AngleBase += 腿節角度 + u4;
-    			節足_足百2.X0Y0_脛節.AngleBase += 脛節角度 + u5;
-    			節足_足百2.X0Y0_跗節1.AngleBase += 跗節1角度 + u6;
-    			節足_足百2.X0Y0_跗節2.AngleBase += 跗節2角度 + u7;
+    			節足_足百2.X0Y0_基節.SetAngleBase(節足_足百2.X0Y0_基節.GetAngleBase() + (基節角度 + u1));
+    			節足_足百2.X0Y0_転節.SetAngleBase(節足_足百2.X0Y0_転節.GetAngleBase() + (転節角度 + u2));
+    			節足_足百2.X0Y0_前腿節.SetAngleBase(節足_足百2.X0Y0_前腿節.GetAngleBase() + (前腿節角度 + u3));
+    			節足_足百2.X0Y0_腿節.SetAngleBase(節足_足百2.X0Y0_腿節.GetAngleBase() + (腿節角度 + u4));
+    			節足_足百2.X0Y0_脛節.SetAngleBase(節足_足百2.X0Y0_脛節.GetAngleBase() + (脛節角度 + u5));
+    			節足_足百2.X0Y0_跗節1.SetAngleBase(節足_足百2.X0Y0_跗節1.GetAngleBase() + (跗節1角度 + u6));
+    			節足_足百2.X0Y0_跗節2.SetAngleBase(節足_足百2.X0Y0_跗節2.GetAngleBase() + (跗節2角度 + u7));
     		}
     	}
 
@@ -7906,23 +7907,23 @@ namespace SlaveMatrix
     		節足_足百2.SetAngle0();
     		if (節足_足百2.反転Y)
     		{
-    			節足_足百2.X0Y0_基節.AngleBase += 基節角度 + u1;
-    			節足_足百2.X0Y0_転節.AngleBase += 転節角度 + u2;
-    			節足_足百2.X0Y0_前腿節.AngleBase += 前腿節角度 + u3;
-    			節足_足百2.X0Y0_腿節.AngleBase += 腿節角度 + u4;
-    			節足_足百2.X0Y0_脛節.AngleBase += 脛節角度 + u5;
-    			節足_足百2.X0Y0_跗節1.AngleBase += 跗節1角度 + u6;
-    			節足_足百2.X0Y0_跗節2.AngleBase += 跗節2角度 + u7;
+    			節足_足百2.X0Y0_基節.SetAngleBase(節足_足百2.X0Y0_基節.GetAngleBase() + (基節角度 + u1));
+    			節足_足百2.X0Y0_転節.SetAngleBase(節足_足百2.X0Y0_転節.GetAngleBase() + (転節角度 + u2));
+    			節足_足百2.X0Y0_前腿節.SetAngleBase(節足_足百2.X0Y0_前腿節.GetAngleBase() + (前腿節角度 + u3));
+    			節足_足百2.X0Y0_腿節.SetAngleBase(節足_足百2.X0Y0_腿節.GetAngleBase() + (腿節角度 + u4));
+    			節足_足百2.X0Y0_脛節.SetAngleBase(節足_足百2.X0Y0_脛節.GetAngleBase() + (脛節角度 + u5));
+    			節足_足百2.X0Y0_跗節1.SetAngleBase(節足_足百2.X0Y0_跗節1.GetAngleBase() + (跗節1角度 + u6));
+    			節足_足百2.X0Y0_跗節2.SetAngleBase(節足_足百2.X0Y0_跗節2.GetAngleBase() + (跗節2角度 + u7));
     		}
     		else
     		{
-    			節足_足百2.X0Y0_基節.AngleBase += 0.0 - 基節角度 + (0.0 - u1);
-    			節足_足百2.X0Y0_転節.AngleBase += 0.0 - 転節角度 + (0.0 - u2);
-    			節足_足百2.X0Y0_前腿節.AngleBase += 0.0 - 前腿節角度 + (0.0 - u3);
-    			節足_足百2.X0Y0_腿節.AngleBase += 0.0 - 腿節角度 + (0.0 - u4);
-    			節足_足百2.X0Y0_脛節.AngleBase += 0.0 - 脛節角度 + (0.0 - u5);
-    			節足_足百2.X0Y0_跗節1.AngleBase += 0.0 - 跗節1角度 + (0.0 - u6);
-    			節足_足百2.X0Y0_跗節2.AngleBase += 0.0 - 跗節2角度 + (0.0 - u7);
+    			節足_足百2.X0Y0_基節.SetAngleBase(節足_足百2.X0Y0_基節.GetAngleBase() + (0.0 - 基節角度 + (0.0 - u1)));
+    			節足_足百2.X0Y0_転節.SetAngleBase(節足_足百2.X0Y0_転節.GetAngleBase() + (0.0 - 転節角度 + (0.0 - u2)));
+    			節足_足百2.X0Y0_前腿節.SetAngleBase(節足_足百2.X0Y0_前腿節.GetAngleBase() + (0.0 - 前腿節角度 + (0.0 - u3)));
+    			節足_足百2.X0Y0_腿節.SetAngleBase(節足_足百2.X0Y0_腿節.GetAngleBase() + (0.0 - 腿節角度 + (0.0 - u4)));
+    			節足_足百2.X0Y0_脛節.SetAngleBase(節足_足百2.X0Y0_脛節.GetAngleBase() + (0.0 - 脛節角度 + (0.0 - u5)));
+    			節足_足百2.X0Y0_跗節1.SetAngleBase(節足_足百2.X0Y0_跗節1.GetAngleBase() + (0.0 - 跗節1角度 + (0.0 - u6)));
+    			節足_足百2.X0Y0_跗節2.SetAngleBase(節足_足百2.X0Y0_跗節2.GetAngleBase() + (0.0 - 跗節2角度 + (0.0 - u7)));
     		}
     	}
 
@@ -8028,23 +8029,23 @@ namespace SlaveMatrix
     	{
     		foreach (節足_足百 item in Cha.Body.節足百左)
     		{
-    			item.X0Y0_基節.AngleCont = a * Rng.XS.NextDouble();
-    			item.X0Y0_転節.AngleCont = a * Rng.XS.NextDouble();
-    			item.X0Y0_前腿節.AngleCont = a * Rng.XS.NextDouble();
-    			item.X0Y0_腿節.AngleCont = a * Rng.XS.NextDouble();
-    			item.X0Y0_脛節.AngleCont = a * Rng.XS.NextDouble();
-    			item.X0Y0_跗節1.AngleCont = a * Rng.XS.NextDouble();
-    			item.X0Y0_跗節2.AngleCont = a * Rng.XS.NextDouble();
+    			item.X0Y0_基節.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_転節.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_前腿節.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_腿節.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_脛節.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_跗節1.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_跗節2.SetAngleCont(a * Rng.XS.NextDouble());
     		}
     		foreach (節足_足百 item2 in Cha.Body.節足百右)
     		{
-    			item2.X0Y0_基節.AngleCont = (0.0 - a) * Rng.XS.NextDouble();
-    			item2.X0Y0_転節.AngleCont = (0.0 - a) * Rng.XS.NextDouble();
-    			item2.X0Y0_前腿節.AngleCont = (0.0 - a) * Rng.XS.NextDouble();
-    			item2.X0Y0_腿節.AngleCont = (0.0 - a) * Rng.XS.NextDouble();
-    			item2.X0Y0_脛節.AngleCont = (0.0 - a) * Rng.XS.NextDouble();
-    			item2.X0Y0_跗節1.AngleCont = (0.0 - a) * Rng.XS.NextDouble();
-    			item2.X0Y0_跗節2.AngleCont = (0.0 - a) * Rng.XS.NextDouble();
+    			item2.X0Y0_基節.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item2.X0Y0_転節.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item2.X0Y0_前腿節.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item2.X0Y0_腿節.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item2.X0Y0_脛節.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item2.X0Y0_跗節1.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item2.X0Y0_跗節2.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
     		}
     	}
 
@@ -8052,22 +8053,22 @@ namespace SlaveMatrix
     	{
     		節尾_曳航 obj = Cha.Body.節尾曳左[n];
     		obj.SetAngle0();
-    		obj.X0Y0_前腿節.AngleBase += 根本角度 + u1;
-    		obj.X0Y0_腿節.AngleBase += 節角度1 + u2;
-    		obj.X0Y0_脛節.AngleBase += 節角度2 + u3;
-    		obj.X0Y0_付節1.AngleBase += 節角度3 + u4;
-    		obj.X0Y0_付節2.AngleBase += 節角度4 + u5;
+    		obj.X0Y0_前腿節.SetAngleBase(obj.X0Y0_前腿節.GetAngleBase() + (根本角度 + u1));
+    		obj.X0Y0_腿節.SetAngleBase(obj.X0Y0_腿節.GetAngleBase() + (節角度1 + u2));
+    		obj.X0Y0_脛節.SetAngleBase(obj.X0Y0_脛節.GetAngleBase() + (節角度2 + u3));
+    		obj.X0Y0_付節1.SetAngleBase(obj.X0Y0_付節1.GetAngleBase() + (節角度3 + u4));
+    		obj.X0Y0_付節2.SetAngleBase(obj.X0Y0_付節2.GetAngleBase() + (節角度4 + u5));
     	}
 
     	public static void 節尾曳右(this Character Cha, int n, double u1, double u2, double u3, double u4, double u5, double 根本角度, double 節角度1, double 節角度2, double 節角度3, double 節角度4)
     	{
     		節尾_曳航 obj = Cha.Body.節尾曳右[n];
     		obj.SetAngle0();
-    		obj.X0Y0_前腿節.AngleBase += 0.0 - 根本角度 + (0.0 - u1);
-    		obj.X0Y0_腿節.AngleBase += 0.0 - 節角度1 + (0.0 - u2);
-    		obj.X0Y0_脛節.AngleBase += 0.0 - 節角度2 + (0.0 - u3);
-    		obj.X0Y0_付節1.AngleBase += 0.0 - 節角度3 + (0.0 - u4);
-    		obj.X0Y0_付節2.AngleBase += 0.0 - 節角度4 + (0.0 - u5);
+    		obj.X0Y0_前腿節.SetAngleBase(obj.X0Y0_前腿節.GetAngleBase() + (0.0 - 根本角度 + (0.0 - u1)));
+    		obj.X0Y0_腿節.SetAngleBase(obj.X0Y0_腿節.GetAngleBase() + (0.0 - 節角度1 + (0.0 - u2)));
+    		obj.X0Y0_脛節.SetAngleBase(obj.X0Y0_脛節.GetAngleBase() + (0.0 - 節角度2 + (0.0 - u3)));
+    		obj.X0Y0_付節1.SetAngleBase(obj.X0Y0_付節1.GetAngleBase() + (0.0 - 節角度3 + (0.0 - u4)));
+    		obj.X0Y0_付節2.SetAngleBase(obj.X0Y0_付節2.GetAngleBase() + (0.0 - 節角度4 + (0.0 - u5)));
     	}
 
     	public static void 節尾曳_基本左(this Character Cha, int n, double u1, double u2, double u3, double u4, double u5)
@@ -8168,19 +8169,19 @@ namespace SlaveMatrix
     	{
     		foreach (節尾_曳航 item in Cha.Body.節尾曳左)
     		{
-    			item.X0Y0_前腿節.AngleCont = a * Rng.XS.NextDouble();
-    			item.X0Y0_腿節.AngleCont = a * Rng.XS.NextDouble();
-    			item.X0Y0_脛節.AngleCont = a * Rng.XS.NextDouble();
-    			item.X0Y0_付節1.AngleCont = a * Rng.XS.NextDouble();
-    			item.X0Y0_付節2.AngleCont = a * Rng.XS.NextDouble();
+    			item.X0Y0_前腿節.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_腿節.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_脛節.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_付節1.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_付節2.SetAngleCont(a * Rng.XS.NextDouble());
     		}
     		foreach (節尾_曳航 item2 in Cha.Body.節尾曳右)
     		{
-    			item2.X0Y0_前腿節.AngleCont = (0.0 - a) * Rng.XS.NextDouble();
-    			item2.X0Y0_腿節.AngleCont = (0.0 - a) * Rng.XS.NextDouble();
-    			item2.X0Y0_脛節.AngleCont = (0.0 - a) * Rng.XS.NextDouble();
-    			item2.X0Y0_付節1.AngleCont = (0.0 - a) * Rng.XS.NextDouble();
-    			item2.X0Y0_付節2.AngleCont = (0.0 - a) * Rng.XS.NextDouble();
+    			item2.X0Y0_前腿節.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item2.X0Y0_腿節.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item2.X0Y0_脛節.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item2.X0Y0_付節1.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item2.X0Y0_付節2.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
     		}
     	}
 
@@ -8188,14 +8189,14 @@ namespace SlaveMatrix
     	{
     		節尾_鋏 obj = Cha.Body.節尾鋏左[n];
     		obj.SetAngle0();
-    		obj.X0Y0_牙.AngleBase += 根本角度 + u1;
+    		obj.X0Y0_牙.SetAngleBase(obj.X0Y0_牙.GetAngleBase() + (根本角度 + u1));
     	}
 
     	public static void 節尾鋏右(this Character Cha, int n, double u1, double 根本角度)
     	{
     		節尾_鋏 obj = Cha.Body.節尾鋏右[n];
     		obj.SetAngle0();
-    		obj.X0Y0_牙.AngleBase += 0.0 - 根本角度 + (0.0 - u1);
+    		obj.X0Y0_牙.SetAngleBase(obj.X0Y0_牙.GetAngleBase() + (0.0 - 根本角度 + (0.0 - u1)));
     	}
 
     	public static void 節尾鋏_基本左(this Character Cha, int n, double u1, double u2, double u3, double u4, double u5)
@@ -8296,11 +8297,11 @@ namespace SlaveMatrix
     	{
     		foreach (節尾_鋏 item in Cha.Body.節尾鋏左)
     		{
-    			item.X0Y0_牙.AngleCont = a * Rng.XS.NextDouble();
+    			item.X0Y0_牙.SetAngleCont(a * Rng.XS.NextDouble());
     		}
     		foreach (節尾_鋏 item2 in Cha.Body.節尾鋏右)
     		{
-    			item2.X0Y0_牙.AngleCont = (0.0 - a) * Rng.XS.NextDouble();
+    			item2.X0Y0_牙.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
     		}
     	}
 
@@ -8315,11 +8316,11 @@ namespace SlaveMatrix
     		虫鎌2.SetAngle0();
     		if (虫鎌2.反転Y)
     		{
-    			虫鎌2.X0Y0_虫鎌1.AngleBase += 0.0 - 根本角度 + (0.0 - u1);
+    			虫鎌2.X0Y0_虫鎌1.SetAngleBase(虫鎌2.X0Y0_虫鎌1.GetAngleBase() + (0.0 - 根本角度 + (0.0 - u1)));
     		}
     		else
     		{
-    			虫鎌2.X0Y0_虫鎌1.AngleBase += 根本角度 + u1;
+    			虫鎌2.X0Y0_虫鎌1.SetAngleBase(虫鎌2.X0Y0_虫鎌1.GetAngleBase() + (根本角度 + u1));
     		}
     	}
 
@@ -8334,11 +8335,11 @@ namespace SlaveMatrix
     		虫鎌2.SetAngle0();
     		if (虫鎌2.反転Y)
     		{
-    			虫鎌2.X0Y0_虫鎌1.AngleBase += 根本角度 + u1;
+    			虫鎌2.X0Y0_虫鎌1.SetAngleBase(虫鎌2.X0Y0_虫鎌1.GetAngleBase() + (根本角度 + u1));
     		}
     		else
     		{
-    			虫鎌2.X0Y0_虫鎌1.AngleBase += 0.0 - 根本角度 + (0.0 - u1);
+    			虫鎌2.X0Y0_虫鎌1.SetAngleBase(虫鎌2.X0Y0_虫鎌1.GetAngleBase() + (0.0 - 根本角度 + (0.0 - u1)));
     		}
     	}
 
@@ -8444,10 +8445,10 @@ namespace SlaveMatrix
     				double num3 = (double)array.Length * 0.1;
     				foreach (ShapePart item in array.Skip(1))
     				{
-    					item.AngleBase = (double)si * (angs[(num / num2).Limit(0, angs.Length)](num) / num3 + u2);
+    					item.SetAngleBase((double)si * (angs[(num / num2).Limit(0, angs.Length)](num) / num3 + u2));
     					num++;
     				}
-    				array[0].AngleBase = (double)si * (根本角度 + u1);
+    				array[0].SetAngleBase((double)si * (根本角度 + u1));
     			}
     		}
     		if (触手2 is 触手_蔦)
@@ -8457,11 +8458,11 @@ namespace SlaveMatrix
     				触手_蔦 触手_蔦2 = (触手_蔦)触手2;
     				if (触手_蔦2.先端_上顎_顎_表示)
     				{
-    					触手_蔦2.X0Y0_先端_上顎_顎.AngleBase = 0.0;
+    					触手_蔦2.X0Y0_先端_上顎_顎.SetAngleBase(0.0);
     				}
     				if (触手_蔦2.先端_下顎_顎_表示)
     				{
-    					触手_蔦2.X0Y0_先端_下顎_顎.AngleBase = 0.0;
+    					触手_蔦2.X0Y0_先端_下顎_顎.SetAngleBase(0.0);
     				}
     			}
     			else
@@ -8469,11 +8470,11 @@ namespace SlaveMatrix
     				触手_蔦 触手_蔦3 = (触手_蔦)触手2;
     				if (触手_蔦3.先端_上顎_顎_表示)
     				{
-    					触手_蔦3.X0Y0_先端_上顎_顎.AngleBase = 15.0 * 開口 + u3;
+    					触手_蔦3.X0Y0_先端_上顎_顎.SetAngleBase(15.0 * 開口 + u3);
     				}
     				if (触手_蔦3.先端_下顎_顎_表示)
     				{
-    					触手_蔦3.X0Y0_先端_下顎_顎.AngleBase = -15.0 * 開口 + (0.0 - u3);
+    					触手_蔦3.X0Y0_先端_下顎_顎.SetAngleBase(-15.0 * 開口 + (0.0 - u3));
     				}
     			}
     		}
@@ -8494,10 +8495,10 @@ namespace SlaveMatrix
     				double num3 = (double)array.Length * 0.1;
     				foreach (ShapePart item in array.Skip(1))
     				{
-    					item.AngleBase = (double)si * ((0.0 - angs[(num / num2).Limit(0, angs.Length)](num)) / num3 + (0.0 - u2));
+    					item.SetAngleBase((double)si * ((0.0 - angs[(num / num2).Limit(0, angs.Length)](num)) / num3 + (0.0 - u2)));
     					num++;
     				}
-    				array[0].AngleBase = (double)si * (0.0 - 根本角度 + (0.0 - u1));
+    				array[0].SetAngleBase((double)si * (0.0 - 根本角度 + (0.0 - u1)));
     			}
     		}
     		if (触手2 is 触手_蔦)
@@ -8507,11 +8508,11 @@ namespace SlaveMatrix
     				触手_蔦 触手_蔦2 = (触手_蔦)触手2;
     				if (触手_蔦2.先端_上顎_顎_表示)
     				{
-    					触手_蔦2.X0Y0_先端_上顎_顎.AngleBase = 0.0;
+    					触手_蔦2.X0Y0_先端_上顎_顎.SetAngleBase(0.0);
     				}
     				if (触手_蔦2.先端_下顎_顎_表示)
     				{
-    					触手_蔦2.X0Y0_先端_下顎_顎.AngleBase = 0.0;
+    					触手_蔦2.X0Y0_先端_下顎_顎.SetAngleBase(0.0);
     				}
     			}
     			else
@@ -8519,11 +8520,11 @@ namespace SlaveMatrix
     				触手_蔦 触手_蔦3 = (触手_蔦)触手2;
     				if (触手_蔦3.先端_上顎_顎_表示)
     				{
-    					触手_蔦3.X0Y0_先端_上顎_顎.AngleBase = -15.0 * 開口 + (0.0 - u3);
+    					触手_蔦3.X0Y0_先端_上顎_顎.SetAngleBase(-15.0 * 開口 + (0.0 - u3));
     				}
     				if (触手_蔦3.先端_下顎_顎_表示)
     				{
-    					触手_蔦3.X0Y0_先端_下顎_顎.AngleBase = 15.0 * 開口 + u3;
+    					触手_蔦3.X0Y0_先端_下顎_顎.SetAngleBase(15.0 * 開口 + u3);
     				}
     			}
     		}
@@ -8595,18 +8596,18 @@ namespace SlaveMatrix
     		{
     			foreach (ShapePart item2 in item.Enum軸())
     			{
-    				item2.AngleCont = a * Rng.XS.NextDouble();
+    				item2.SetAngleCont(a * Rng.XS.NextDouble());
     			}
     			if (!item.拘束 && item is 触手_蔦)
     			{
     				触手_蔦 触手_蔦2 = (触手_蔦)item;
     				if (触手_蔦2.先端_上顎_顎_表示)
     				{
-    					触手_蔦2.X0Y0_先端_上顎_顎.AngleCont = a * Rng.XS.NextDouble();
+    					触手_蔦2.X0Y0_先端_上顎_顎.SetAngleCont(a * Rng.XS.NextDouble());
     				}
     				if (触手_蔦2.先端_下顎_顎_表示)
     				{
-    					触手_蔦2.X0Y0_先端_下顎_顎.AngleCont = (0.0 - a) * Rng.XS.NextDouble();
+    					触手_蔦2.X0Y0_先端_下顎_顎.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
     				}
     			}
     		}
@@ -8614,18 +8615,18 @@ namespace SlaveMatrix
     		{
     			foreach (ShapePart item4 in item3.Enum軸())
     			{
-    				item4.AngleCont = (0.0 - a) * Rng.XS.NextDouble();
+    				item4.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
     			}
     			if (!item3.拘束 && item3 is 触手_蔦)
     			{
     				触手_蔦 触手_蔦3 = (触手_蔦)item3;
     				if (触手_蔦3.先端_上顎_顎_表示)
     				{
-    					触手_蔦3.X0Y0_先端_上顎_顎.AngleCont = (0.0 - a) * Rng.XS.NextDouble();
+    					触手_蔦3.X0Y0_先端_上顎_顎.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
     				}
     				if (触手_蔦3.先端_下顎_顎_表示)
     				{
-    					触手_蔦3.X0Y0_先端_下顎_顎.AngleCont = a * Rng.XS.NextDouble();
+    					触手_蔦3.X0Y0_先端_下顎_顎.SetAngleCont(a * Rng.XS.NextDouble());
     				}
     			}
     		}
@@ -8635,35 +8636,35 @@ namespace SlaveMatrix
     	{
     		触手_犬 触手_犬2 = Cha.Body.触手犬右[n];
     		触手_犬2.SetAngle0();
-    		触手_犬2.X0Y0_脚後_UpperArm.AngleBase -= 触手_犬2.X0Y0_Torso_節9_Torso.Angle;
-    		触手_犬2.X0Y0_脚前_UpperArm.AngleBase -= 触手_犬2.X0Y0_Torso_節9_Torso.Angle;
-    		触手_犬2.X0Y0_頭_口膜_口膜1.AngleBase -= 17.0;
-    		触手_犬2.X0Y0_脚後_UpperArm.AngleBase += 0.0 - UpperArm角度 + (0.0 - u1);
-    		触手_犬2.X0Y0_脚後_LowerArm.AngleBase += 0.0 - LowerArm角度 + (0.0 - u2);
-    		触手_犬2.X0Y0_脚後_手_手.AngleBase += 0.0 - 手角度 + (0.0 - u3);
-    		触手_犬2.X0Y0_脚前_UpperArm.AngleBase += 0.0 - UpperArm角度 + u1;
-    		触手_犬2.X0Y0_脚前_LowerArm.AngleBase += 0.0 - LowerArm角度 + u2;
-    		触手_犬2.X0Y0_脚前_手_手.AngleBase += 0.0 - 手角度 + u3;
+    		触手_犬2.X0Y0_脚後_UpperArm.SetAngleBase(触手_犬2.X0Y0_脚後_UpperArm.GetAngleBase() - 触手_犬2.X0Y0_Torso_節9_Torso.GetAngle());
+    		触手_犬2.X0Y0_脚前_UpperArm.SetAngleBase(触手_犬2.X0Y0_脚前_UpperArm.GetAngleBase() - 触手_犬2.X0Y0_Torso_節9_Torso.GetAngle());
+    		触手_犬2.X0Y0_頭_口膜_口膜1.SetAngleBase(触手_犬2.X0Y0_頭_口膜_口膜1.GetAngleBase() - 17.0);
+    		触手_犬2.X0Y0_脚後_UpperArm.SetAngleBase(触手_犬2.X0Y0_脚後_UpperArm.GetAngleBase() + (0.0 - UpperArm角度 + (0.0 - u1)));
+    		触手_犬2.X0Y0_脚後_LowerArm.SetAngleBase(触手_犬2.X0Y0_脚後_LowerArm.GetAngleBase() + (0.0 - LowerArm角度 + (0.0 - u2)));
+    		触手_犬2.X0Y0_脚後_手_手.SetAngleBase(触手_犬2.X0Y0_脚後_手_手.GetAngleBase() + (0.0 - 手角度 + (0.0 - u3)));
+    		触手_犬2.X0Y0_脚前_UpperArm.SetAngleBase(触手_犬2.X0Y0_脚前_UpperArm.GetAngleBase() + (0.0 - UpperArm角度 + u1));
+    		触手_犬2.X0Y0_脚前_LowerArm.SetAngleBase(触手_犬2.X0Y0_脚前_LowerArm.GetAngleBase() + (0.0 - LowerArm角度 + u2));
+    		触手_犬2.X0Y0_脚前_手_手.SetAngleBase(触手_犬2.X0Y0_脚前_手_手.GetAngleBase() + (0.0 - 手角度 + u3));
     		if (触手_犬2.拘束)
     		{
-    			触手_犬2.X0Y0_頭_上顎_眼下_眼下.AngleBase = 0.0;
-    			触手_犬2.X0Y0_頭_下顎_眼下_眼下.AngleBase = 0.0;
+    			触手_犬2.X0Y0_頭_上顎_眼下_眼下.SetAngleBase(0.0);
+    			触手_犬2.X0Y0_頭_下顎_眼下_眼下.SetAngleBase(0.0);
     		}
     		else
     		{
-    			触手_犬2.X0Y0_頭_上顎_眼下_眼下.AngleBase += -10.0 * 開口 + (0.0 - u4);
-    			触手_犬2.X0Y0_頭_下顎_眼下_眼下.AngleBase += 10.0 * 開口 + u4;
+    			触手_犬2.X0Y0_頭_上顎_眼下_眼下.SetAngleBase(触手_犬2.X0Y0_頭_上顎_眼下_眼下.GetAngleBase() + (-10.0 * 開口 + (0.0 - u4)));
+    			触手_犬2.X0Y0_頭_下顎_眼下_眼下.SetAngleBase(触手_犬2.X0Y0_頭_下顎_眼下_眼下.GetAngleBase() + (10.0 * 開口 + u4));
     		}
-    		触手_犬2.X0Y0_脚後_手_親指_爪.AngleBase += 30.0 * 開指 + (0.0 - u5);
-    		触手_犬2.X0Y0_脚後_手_人指_指.AngleBase += 15.0 * 開指 + (0.0 - u5);
-    		触手_犬2.X0Y0_脚後_手_中指_指.AngleBase += -0.0 * 開指 + (0.0 - u5);
-    		触手_犬2.X0Y0_脚後_手_薬指_指.AngleBase += -15.0 * 開指 + (0.0 - u5);
-    		触手_犬2.X0Y0_脚後_手_小指_指.AngleBase += -30.0 * 開指 + (0.0 - u5);
-    		触手_犬2.X0Y0_脚前_手_親指_爪.AngleBase += -30.0 * 開指 + u5;
-    		触手_犬2.X0Y0_脚前_手_人指_指.AngleBase += -15.0 * 開指 + u5;
-    		触手_犬2.X0Y0_脚前_手_中指_指.AngleBase += -0.0 * 開指 + u5;
-    		触手_犬2.X0Y0_脚前_手_薬指_指.AngleBase += 15.0 * 開指 + u5;
-    		触手_犬2.X0Y0_脚前_手_小指_指.AngleBase += 30.0 * 開指 + u5;
+    		触手_犬2.X0Y0_脚後_手_親指_爪.SetAngleBase(触手_犬2.X0Y0_脚後_手_親指_爪.GetAngleBase() + (30.0 * 開指 + (0.0 - u5)));
+    		触手_犬2.X0Y0_脚後_手_人指_指.SetAngleBase(触手_犬2.X0Y0_脚後_手_人指_指.GetAngleBase() + (15.0 * 開指 + (0.0 - u5)));
+    		触手_犬2.X0Y0_脚後_手_中指_指.SetAngleBase(触手_犬2.X0Y0_脚後_手_中指_指.GetAngleBase() + (-0.0 * 開指 + (0.0 - u5)));
+    		触手_犬2.X0Y0_脚後_手_薬指_指.SetAngleBase(触手_犬2.X0Y0_脚後_手_薬指_指.GetAngleBase() + (-15.0 * 開指 + (0.0 - u5)));
+    		触手_犬2.X0Y0_脚後_手_小指_指.SetAngleBase(触手_犬2.X0Y0_脚後_手_小指_指.GetAngleBase() + (-30.0 * 開指 + (0.0 - u5)));
+    		触手_犬2.X0Y0_脚前_手_親指_爪.SetAngleBase(触手_犬2.X0Y0_脚前_手_親指_爪.GetAngleBase() + (-30.0 * 開指 + u5));
+    		触手_犬2.X0Y0_脚前_手_人指_指.SetAngleBase(触手_犬2.X0Y0_脚前_手_人指_指.GetAngleBase() + (-15.0 * 開指 + u5));
+    		触手_犬2.X0Y0_脚前_手_中指_指.SetAngleBase(触手_犬2.X0Y0_脚前_手_中指_指.GetAngleBase() + (-0.0 * 開指 + u5));
+    		触手_犬2.X0Y0_脚前_手_薬指_指.SetAngleBase(触手_犬2.X0Y0_脚前_手_薬指_指.GetAngleBase() + (15.0 * 開指 + u5));
+    		触手_犬2.X0Y0_脚前_手_小指_指.SetAngleBase(触手_犬2.X0Y0_脚前_手_小指_指.GetAngleBase() + (30.0 * 開指 + u5));
     		if (angs.Length != 0)
     		{
     			ShapePart[] array = 触手_犬2.Enum軸().ToArray();
@@ -8674,10 +8675,10 @@ namespace SlaveMatrix
     				double num3 = (double)array.Length * 0.1;
     				foreach (ShapePart item in array.Skip(1))
     				{
-    					item.AngleBase += (0.0 - angs[(num / num2).Limit(0, angs.Length)](num)) / num3 + (0.0 - u7);
+    					item.SetAngleBase(item.GetAngleBase() + ((0.0 - angs[(num / num2).Limit(0, angs.Length)](num)) / num3 + (0.0 - u7)));
     					num++;
     				}
-    				array[0].AngleBase += 0.0 - 根本角度 + (0.0 - u6);
+    				array[0].SetAngleBase(array[0].GetAngleBase() + (0.0 - 根本角度 + (0.0 - u6)));
     			}
     		}
     		触手_犬2.重複角度処理();
@@ -8731,64 +8732,64 @@ namespace SlaveMatrix
     	{
     		foreach (触手_犬 item in Cha.Body.触手犬左)
     		{
-    			item.X0Y0_脚後_UpperArm.AngleCont = a * Rng.XS.NextDouble();
-    			item.X0Y0_脚前_UpperArm.AngleCont = a * Rng.XS.NextDouble();
-    			item.X0Y0_頭_口膜_口膜1.AngleCont = a * Rng.XS.NextDouble();
-    			item.X0Y0_脚後_UpperArm.AngleCont = a * Rng.XS.NextDouble();
-    			item.X0Y0_脚後_LowerArm.AngleCont = a * Rng.XS.NextDouble();
-    			item.X0Y0_脚後_手_手.AngleCont = a * Rng.XS.NextDouble();
-    			item.X0Y0_脚前_UpperArm.AngleCont = a * Rng.XS.NextDouble();
-    			item.X0Y0_脚前_LowerArm.AngleCont = a * Rng.XS.NextDouble();
-    			item.X0Y0_脚前_手_手.AngleCont = a * Rng.XS.NextDouble();
+    			item.X0Y0_脚後_UpperArm.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_脚前_UpperArm.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_頭_口膜_口膜1.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_脚後_UpperArm.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_脚後_LowerArm.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_脚後_手_手.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_脚前_UpperArm.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_脚前_LowerArm.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_脚前_手_手.SetAngleCont(a * Rng.XS.NextDouble());
     			if (!item.拘束)
     			{
-    				item.X0Y0_頭_上顎_眼下_眼下.AngleCont = a * Rng.XS.NextDouble();
-    				item.X0Y0_頭_下顎_眼下_眼下.AngleCont = a * Rng.XS.NextDouble();
+    				item.X0Y0_頭_上顎_眼下_眼下.SetAngleCont(a * Rng.XS.NextDouble());
+    				item.X0Y0_頭_下顎_眼下_眼下.SetAngleCont(a * Rng.XS.NextDouble());
     			}
-    			item.X0Y0_脚後_手_親指_爪.AngleCont = a * Rng.XS.NextDouble();
-    			item.X0Y0_脚後_手_人指_指.AngleCont = a * Rng.XS.NextDouble();
-    			item.X0Y0_脚後_手_中指_指.AngleCont = a * Rng.XS.NextDouble();
-    			item.X0Y0_脚後_手_薬指_指.AngleCont = a * Rng.XS.NextDouble();
-    			item.X0Y0_脚後_手_小指_指.AngleCont = a * Rng.XS.NextDouble();
-    			item.X0Y0_脚前_手_親指_爪.AngleCont = a * Rng.XS.NextDouble();
-    			item.X0Y0_脚前_手_人指_指.AngleCont = a * Rng.XS.NextDouble();
-    			item.X0Y0_脚前_手_中指_指.AngleCont = a * Rng.XS.NextDouble();
-    			item.X0Y0_脚前_手_薬指_指.AngleCont = a * Rng.XS.NextDouble();
-    			item.X0Y0_脚前_手_小指_指.AngleCont = a * Rng.XS.NextDouble();
+    			item.X0Y0_脚後_手_親指_爪.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_脚後_手_人指_指.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_脚後_手_中指_指.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_脚後_手_薬指_指.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_脚後_手_小指_指.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_脚前_手_親指_爪.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_脚前_手_人指_指.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_脚前_手_中指_指.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_脚前_手_薬指_指.SetAngleCont(a * Rng.XS.NextDouble());
+    			item.X0Y0_脚前_手_小指_指.SetAngleCont(a * Rng.XS.NextDouble());
     			foreach (ShapePart item2 in item.Enum軸())
     			{
-    				item2.AngleCont = a * Rng.XS.NextDouble();
+    				item2.SetAngleCont(a * Rng.XS.NextDouble());
     			}
     		}
     		foreach (触手_犬 item3 in Cha.Body.触手犬右)
     		{
-    			item3.X0Y0_脚後_UpperArm.AngleCont = (0.0 - a) * Rng.XS.NextDouble();
-    			item3.X0Y0_脚前_UpperArm.AngleCont = (0.0 - a) * Rng.XS.NextDouble();
-    			item3.X0Y0_頭_口膜_口膜1.AngleCont = (0.0 - a) * Rng.XS.NextDouble();
-    			item3.X0Y0_脚後_UpperArm.AngleCont = (0.0 - a) * Rng.XS.NextDouble();
-    			item3.X0Y0_脚後_LowerArm.AngleCont = (0.0 - a) * Rng.XS.NextDouble();
-    			item3.X0Y0_脚後_手_手.AngleCont = (0.0 - a) * Rng.XS.NextDouble();
-    			item3.X0Y0_脚前_UpperArm.AngleCont = (0.0 - a) * Rng.XS.NextDouble();
-    			item3.X0Y0_脚前_LowerArm.AngleCont = (0.0 - a) * Rng.XS.NextDouble();
-    			item3.X0Y0_脚前_手_手.AngleCont = (0.0 - a) * Rng.XS.NextDouble();
+    			item3.X0Y0_脚後_UpperArm.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item3.X0Y0_脚前_UpperArm.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item3.X0Y0_頭_口膜_口膜1.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item3.X0Y0_脚後_UpperArm.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item3.X0Y0_脚後_LowerArm.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item3.X0Y0_脚後_手_手.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item3.X0Y0_脚前_UpperArm.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item3.X0Y0_脚前_LowerArm.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item3.X0Y0_脚前_手_手.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
     			if (!item3.拘束)
     			{
-    				item3.X0Y0_頭_上顎_眼下_眼下.AngleCont = (0.0 - a) * Rng.XS.NextDouble();
-    				item3.X0Y0_頭_下顎_眼下_眼下.AngleCont = (0.0 - a) * Rng.XS.NextDouble();
+    				item3.X0Y0_頭_上顎_眼下_眼下.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    				item3.X0Y0_頭_下顎_眼下_眼下.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
     			}
-    			item3.X0Y0_脚後_手_親指_爪.AngleCont = (0.0 - a) * Rng.XS.NextDouble();
-    			item3.X0Y0_脚後_手_人指_指.AngleCont = (0.0 - a) * Rng.XS.NextDouble();
-    			item3.X0Y0_脚後_手_中指_指.AngleCont = (0.0 - a) * Rng.XS.NextDouble();
-    			item3.X0Y0_脚後_手_薬指_指.AngleCont = (0.0 - a) * Rng.XS.NextDouble();
-    			item3.X0Y0_脚後_手_小指_指.AngleCont = (0.0 - a) * Rng.XS.NextDouble();
-    			item3.X0Y0_脚前_手_親指_爪.AngleCont = (0.0 - a) * Rng.XS.NextDouble();
-    			item3.X0Y0_脚前_手_人指_指.AngleCont = (0.0 - a) * Rng.XS.NextDouble();
-    			item3.X0Y0_脚前_手_中指_指.AngleCont = (0.0 - a) * Rng.XS.NextDouble();
-    			item3.X0Y0_脚前_手_薬指_指.AngleCont = (0.0 - a) * Rng.XS.NextDouble();
-    			item3.X0Y0_脚前_手_小指_指.AngleCont = (0.0 - a) * Rng.XS.NextDouble();
+    			item3.X0Y0_脚後_手_親指_爪.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item3.X0Y0_脚後_手_人指_指.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item3.X0Y0_脚後_手_中指_指.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item3.X0Y0_脚後_手_薬指_指.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item3.X0Y0_脚後_手_小指_指.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item3.X0Y0_脚前_手_親指_爪.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item3.X0Y0_脚前_手_人指_指.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item3.X0Y0_脚前_手_中指_指.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item3.X0Y0_脚前_手_薬指_指.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
+    			item3.X0Y0_脚前_手_小指_指.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
     			foreach (ShapePart item4 in item3.Enum軸())
     			{
-    				item4.AngleCont = (0.0 - a) * Rng.XS.NextDouble();
+    				item4.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
     			}
     		}
     	}
@@ -8817,16 +8818,16 @@ namespace SlaveMatrix
     			ShapePart[] array2 = array;
     			for (int i = 0; i < array2.Length; i++)
     			{
-    				array2[i].AngleBase = ((double)s * angs[(num2 / num3).Limit(0, angs.Length)](num2) / num4 + num5) * num;
+    				array2[i].SetAngleBase(((double)s * angs[(num2 / num3).Limit(0, angs.Length)](num2) / num4 + num5) * num);
     				num2++;
     			}
     			if (尾2 is 尾_鳥)
     			{
-    				array[0].AngleBase = 0.0;
+    				array[0].SetAngleBase(0.0);
     			}
     			else
     			{
-    				array[0].AngleBase = 根本角度 + Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5);
+    				array[0].SetAngleBase(根本角度 + Cha.角度ムラ(Rng.XS.NextSign(), 3.0, Rng.XS.NextSign(), 1.5));
     			}
     		}
     		if (text.Contains("後髪0_肢系"))
@@ -8834,7 +8835,7 @@ namespace SlaveMatrix
     			double num6 = 1.0;
     			foreach (ShapePart item in array.Take(array.Length / 2))
     			{
-    				item.AngleBase = item.AngleBase / num6 * num;
+    				item.SetAngleBase(item.GetAngleBase() / num6 * num);
     				num6 += 1.0;
     			}
     		}
@@ -8901,7 +8902,7 @@ namespace SlaveMatrix
     			{
     				foreach (ShapePart item2 in item.Enum軸())
     				{
-    					item2.AngleCont = (0.0 - a) * Rng.XS.NextDouble();
+    					item2.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
     				}
     				尾鰭_魚 ele = item.EnumEle().GetEle<尾鰭_魚>();
     				if (ele != null)
@@ -8916,7 +8917,7 @@ namespace SlaveMatrix
     			}
     			foreach (ShapePart item3 in item.Enum軸())
     			{
-    				item3.AngleCont = a * Rng.XS.NextDouble();
+    				item3.SetAngleCont(a * Rng.XS.NextDouble());
     			}
     			尾鰭_魚 ele2 = item.EnumEle().GetEle<尾鰭_魚>();
     			if (ele2 != null)
@@ -8968,7 +8969,7 @@ namespace SlaveMatrix
     			ShapePart[] array2 = array;
     			for (int i = 0; i < array2.Length; i++)
     			{
-    				array2[i].AngleBase = (double)s * angs[(num / num2).Limit(0, angs.Length)](num) / num3 + num4;
+    				array2[i].SetAngleBase((double)s * angs[(num / num2).Limit(0, angs.Length)](num) / num3 + num4);
     				num++;
     			}
     		}
@@ -9025,7 +9026,7 @@ namespace SlaveMatrix
     			ShapePart[] array2 = array;
     			for (int i = 0; i < array2.Length; i++)
     			{
-    				array2[i].AngleBase = (double)s * angs[(num / num2).Limit(0, angs.Length)](num) / num3 + num4;
+    				array2[i].SetAngleBase((double)s * angs[(num / num2).Limit(0, angs.Length)](num) / num3 + num4);
     				num++;
     			}
     		}
@@ -9082,7 +9083,7 @@ namespace SlaveMatrix
     			ShapePart[] array2 = array;
     			for (int i = 0; i < array2.Length; i++)
     			{
-    				array2[i].AngleBase = (double)s * angs[(num / num2).Limit(0, angs.Length)](num) / num3 + num4;
+    				array2[i].SetAngleBase((double)s * angs[(num / num2).Limit(0, angs.Length)](num) / num3 + num4);
     				num++;
     			}
     		}
@@ -9129,7 +9130,7 @@ namespace SlaveMatrix
 
     	public static void 植(this Character Cha, int si, double 角度)
     	{
-    		Cha.Body.植.X0Y0_幹下.AngleBase = (double)si * 角度 + Cha.角度ムラ(Rng.XS.NextSign(), 10.0, Rng.XS.NextSign(), 5.0);
+    		Cha.Body.植.X0Y0_幹下.SetAngleBase((double)si * 角度 + Cha.角度ムラ(Rng.XS.NextSign(), 10.0, Rng.XS.NextSign(), 5.0));
     	}
 
     	public static void 植_基本(this Character Cha)
@@ -9141,11 +9142,11 @@ namespace SlaveMatrix
     	{
     		if (Cha.Body.植.右)
     		{
-    			Cha.Body.植.X0Y0_幹下.AngleCont = (0.0 - a) * Rng.XS.NextDouble();
+    			Cha.Body.植.X0Y0_幹下.SetAngleCont((0.0 - a) * Rng.XS.NextDouble());
     		}
     		else
     		{
-    			Cha.Body.植.X0Y0_幹下.AngleCont = a * Rng.XS.NextDouble();
+    			Cha.Body.植.X0Y0_幹下.SetAngleCont(a * Rng.XS.NextDouble());
     		}
     	}
 

@@ -1,4 +1,5 @@
 using _2DGAMELIB;
+using SlaveMatrix.GameClasses;
 using System.Linq;
 
 namespace SlaveMatrix
@@ -2863,73 +2864,73 @@ namespace SlaveMatrix
     		Intensity = e.濃度;
     		尺度YB = 0.95;
     		double num = 1.0025;
-    		X0Y0_臍.BasePointBase = new Vector2D(X0Y0_臍.BasePointBase.X, 0.363998381176966);
-    		X0Y1_臍.BasePointBase = new Vector2D(X0Y1_臍.BasePointBase.X, 0.363099175689868);
-    		X0Y2_臍.BasePointBase = new Vector2D(X0Y2_臍.BasePointBase.X, 0.362199970202771);
-    		X0Y3_臍.BasePointBase = new Vector2D(X0Y3_臍.BasePointBase.X, 0.361300764715674);
-    		X0Y4_臍.BasePointBase = new Vector2D(X0Y4_臍.BasePointBase.X, 0.360401559228577);
-    		X0Y0_ハイライト.BasePointBase = new Vector2D(X0Y0_ハイライト.BasePointBase.X, 0.0225674877335118);
-    		X0Y1_ハイライト.BasePointBase = new Vector2D(X0Y1_ハイライト.BasePointBase.X, 0.0218134639688308);
-    		X0Y2_ハイライト.BasePointBase = new Vector2D(X0Y2_ハイライト.BasePointBase.X, 0.0210594402041497);
-    		X0Y3_ハイライト.BasePointBase = new Vector2D(X0Y3_ハイライト.BasePointBase.X, 0.0203054164394687);
-    		X0Y4_ハイライト.BasePointBase = new Vector2D(X0Y4_ハイライト.BasePointBase.X, 0.0195513926747877);
+    		X0Y0_臍.SetBasePointBase(new Vector2D(X0Y0_臍.GetBasePointBase().X, 0.363998381176966));
+    		X0Y1_臍.SetBasePointBase(new Vector2D(X0Y1_臍.GetBasePointBase().X, 0.363099175689868));
+    		X0Y2_臍.SetBasePointBase(new Vector2D(X0Y2_臍.GetBasePointBase().X, 0.362199970202771));
+    		X0Y3_臍.SetBasePointBase(new Vector2D(X0Y3_臍.GetBasePointBase().X, 0.361300764715674));
+    		X0Y4_臍.SetBasePointBase(new Vector2D(X0Y4_臍.GetBasePointBase().X, 0.360401559228577));
+    		X0Y0_ハイライト.SetBasePointBase(new Vector2D(X0Y0_ハイライト.GetBasePointBase().X, 0.0225674877335118));
+    		X0Y1_ハイライト.SetBasePointBase(new Vector2D(X0Y1_ハイライト.GetBasePointBase().X, 0.0218134639688308));
+    		X0Y2_ハイライト.SetBasePointBase(new Vector2D(X0Y2_ハイライト.GetBasePointBase().X, 0.0210594402041497));
+    		X0Y3_ハイライト.SetBasePointBase(new Vector2D(X0Y3_ハイライト.GetBasePointBase().X, 0.0203054164394687));
+    		X0Y4_ハイライト.SetBasePointBase(new Vector2D(X0Y4_ハイライト.GetBasePointBase().X, 0.0195513926747877));
     		num = 1.5;
-    		X0Y0_臍.SizeBase *= num;
-    		X0Y1_臍.SizeBase *= num;
-    		X0Y2_臍.SizeBase *= num;
-    		X0Y3_臍.SizeBase *= num;
-    		X0Y4_臍.SizeBase *= num;
-    		X0Y0_ハイライト.SizeBase *= num;
-    		X0Y1_ハイライト.SizeBase *= num;
-    		X0Y2_ハイライト.SizeBase *= num;
-    		X0Y3_ハイライト.SizeBase *= num;
-    		X0Y4_ハイライト.SizeBase *= num;
+    		X0Y0_臍.SetSizeBase(X0Y0_臍.GetSizeBase() * num);
+    		X0Y1_臍.SetSizeBase(X0Y1_臍.GetSizeBase() * num);
+    		X0Y2_臍.SetSizeBase(X0Y2_臍.GetSizeBase() * num);
+    		X0Y3_臍.SetSizeBase(X0Y3_臍.GetSizeBase() * num);
+    		X0Y4_臍.SetSizeBase(X0Y4_臍.GetSizeBase() * num);
+    		X0Y0_ハイライト.SetSizeBase(X0Y0_ハイライト.GetSizeBase() * num);
+    		X0Y1_ハイライト.SetSizeBase(X0Y1_ハイライト.GetSizeBase() * num);
+    		X0Y2_ハイライト.SetSizeBase(X0Y2_ハイライト.GetSizeBase() * num);
+    		X0Y3_ハイライト.SetSizeBase(X0Y3_ハイライト.GetSizeBase() * num);
+    		X0Y4_ハイライト.SetSizeBase(X0Y4_ハイライト.GetSizeBase() * num);
     		num = 0.6;
-    		X0Y0_臍.SizeXBase *= num;
-    		X0Y1_臍.SizeXBase *= num;
-    		X0Y2_臍.SizeXBase *= num;
-    		X0Y3_臍.SizeXBase *= num;
-    		X0Y4_臍.SizeXBase *= num;
-    		X0Y0_ハイライト.SizeXBase *= num;
-    		X0Y1_ハイライト.SizeXBase *= num;
-    		X0Y2_ハイライト.SizeXBase *= num;
-    		X0Y3_ハイライト.SizeXBase *= num;
-    		X0Y4_ハイライト.SizeXBase *= num;
+    		X0Y0_臍.SetSizeXBase(X0Y0_臍.GetSizeXBase() * num);
+    		X0Y1_臍.SetSizeXBase(X0Y1_臍.GetSizeXBase() * num);
+    		X0Y2_臍.SetSizeXBase(X0Y2_臍.GetSizeXBase() * num);
+    		X0Y3_臍.SetSizeXBase(X0Y3_臍.GetSizeXBase() * num);
+    		X0Y4_臍.SetSizeXBase(X0Y4_臍.GetSizeXBase() * num);
+    		X0Y0_ハイライト.SetSizeXBase(X0Y0_ハイライト.GetSizeXBase() * num);
+    		X0Y1_ハイライト.SetSizeXBase(X0Y1_ハイライト.GetSizeXBase() * num);
+    		X0Y2_ハイライト.SetSizeXBase(X0Y2_ハイライト.GetSizeXBase() * num);
+    		X0Y3_ハイライト.SetSizeXBase(X0Y3_ハイライト.GetSizeXBase() * num);
+    		X0Y4_ハイライト.SetSizeXBase(X0Y4_ハイライト.GetSizeXBase() * num);
     		num = 1.009;
-    		X0Y0_Waist.BasePointBase = X0Y0_Waist.JP[0].Joint.MulY(num);
-    		X0Y1_Waist.BasePointBase = X0Y1_Waist.JP[0].Joint.MulY(num);
-    		X0Y2_Waist.BasePointBase = X0Y2_Waist.JP[0].Joint.MulY(num);
-    		X0Y3_Waist.BasePointBase = X0Y3_Waist.JP[0].Joint.MulY(num);
-    		X0Y4_Waist.BasePointBase = X0Y4_Waist.JP[0].Joint.MulY(num);
+    		X0Y0_Waist.SetBasePointBase(X0Y0_Waist.GetJP()[0].Joint.MulY(num));
+    		X0Y1_Waist.SetBasePointBase(X0Y1_Waist.GetJP()[0].Joint.MulY(num));
+    		X0Y2_Waist.SetBasePointBase(X0Y2_Waist.GetJP()[0].Joint.MulY(num));
+    		X0Y3_Waist.SetBasePointBase(X0Y3_Waist.GetJP()[0].Joint.MulY(num));
+    		X0Y4_Waist.SetBasePointBase(X0Y4_Waist.GetJP()[0].Joint.MulY(num));
     	}
 
     	public void スライム()
     	{
-    		X0Y0_Waist.OP[右 ? 3 : 3].Outline = false;
-    		X0Y0_Waist.OP[右 ? 2 : 4].Outline = false;
-    		X0Y1_Waist.OP[右 ? 3 : 3].Outline = false;
-    		X0Y1_Waist.OP[右 ? 2 : 4].Outline = false;
-    		X0Y2_Waist.OP[右 ? 3 : 3].Outline = false;
-    		X0Y2_Waist.OP[右 ? 2 : 4].Outline = false;
-    		X0Y3_Waist.OP[右 ? 3 : 3].Outline = false;
-    		X0Y3_Waist.OP[右 ? 2 : 4].Outline = false;
-    		X0Y4_Waist.OP[右 ? 3 : 3].Outline = false;
-    		X0Y4_Waist.OP[右 ? 2 : 4].Outline = false;
-    		X0Y0_股.OP.OutlineFalse();
-    		X0Y1_股.OP.OutlineFalse();
-    		X0Y2_股.OP.OutlineFalse();
-    		X0Y3_股.OP.OutlineFalse();
-    		X0Y4_股.OP.OutlineFalse();
-    		X0Y0_下腹.OP[右 ? 3 : 2].Outline = false;
-    		X0Y0_下腹.OP[右 ? 1 : 4].Outline = false;
-    		X0Y1_下腹.OP[右 ? 3 : 2].Outline = false;
-    		X0Y1_下腹.OP[右 ? 1 : 4].Outline = false;
-    		X0Y2_下腹.OP[右 ? 3 : 2].Outline = false;
-    		X0Y2_下腹.OP[右 ? 1 : 4].Outline = false;
-    		X0Y3_下腹.OP[右 ? 3 : 2].Outline = false;
-    		X0Y3_下腹.OP[右 ? 1 : 4].Outline = false;
-    		X0Y4_下腹.OP[右 ? 3 : 2].Outline = false;
-    		X0Y4_下腹.OP[右 ? 1 : 4].Outline = false;
+    		X0Y0_Waist.GetOP()[右 ? 3 : 3].Outline = false;
+    		X0Y0_Waist.GetOP()[右 ? 2 : 4].Outline = false;
+    		X0Y1_Waist.GetOP()[右 ? 3 : 3].Outline = false;
+    		X0Y1_Waist.GetOP()[右 ? 2 : 4].Outline = false;
+    		X0Y2_Waist.GetOP()[右 ? 3 : 3].Outline = false;
+    		X0Y2_Waist.GetOP()[右 ? 2 : 4].Outline = false;
+    		X0Y3_Waist.GetOP()[右 ? 3 : 3].Outline = false;
+    		X0Y3_Waist.GetOP()[右 ? 2 : 4].Outline = false;
+    		X0Y4_Waist.GetOP()[右 ? 3 : 3].Outline = false;
+    		X0Y4_Waist.GetOP()[右 ? 2 : 4].Outline = false;
+    		X0Y0_股.GetOP().OutlineFalse();
+    		X0Y1_股.GetOP().OutlineFalse();
+    		X0Y2_股.GetOP().OutlineFalse();
+    		X0Y3_股.GetOP().OutlineFalse();
+    		X0Y4_股.GetOP().OutlineFalse();
+    		X0Y0_下腹.GetOP()[右 ? 3 : 2].Outline = false;
+    		X0Y0_下腹.GetOP()[右 ? 1 : 4].Outline = false;
+    		X0Y1_下腹.GetOP()[右 ? 3 : 2].Outline = false;
+    		X0Y1_下腹.GetOP()[右 ? 1 : 4].Outline = false;
+    		X0Y2_下腹.GetOP()[右 ? 3 : 2].Outline = false;
+    		X0Y2_下腹.GetOP()[右 ? 1 : 4].Outline = false;
+    		X0Y3_下腹.GetOP()[右 ? 3 : 2].Outline = false;
+    		X0Y3_下腹.GetOP()[右 ? 1 : 4].Outline = false;
+    		X0Y4_下腹.GetOP()[右 ? 3 : 2].Outline = false;
+    		X0Y4_下腹.GetOP()[右 ? 1 : 4].Outline = false;
     	}
 
     	public override void 接続P()
@@ -2944,7 +2945,7 @@ namespace SlaveMatrix
 
     	public override void 描画0(RenderArea Are)
     	{
-    		switch (Body.IndexY)
+    		switch (Body.GetIndexY())
     		{
     		case 0:
     			Are.Draw(X0Y0_Waist);
@@ -3016,7 +3017,7 @@ namespace SlaveMatrix
 
     	public override void 描画1(RenderArea Are)
     	{
-    		switch (Body.IndexY)
+    		switch (Body.GetIndexY())
     		{
     		case 0:
     			Are.Draw(X0Y0_ハイライト);
@@ -3203,7 +3204,7 @@ namespace SlaveMatrix
 
     	public override void 色更新()
     	{
-    		switch (Body.IndexY)
+    		switch (Body.GetIndexY())
     		{
     		case 0:
     			X0Y0_WaistCP.Update();

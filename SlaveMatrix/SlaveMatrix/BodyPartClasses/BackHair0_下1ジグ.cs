@@ -256,7 +256,7 @@ namespace SlaveMatrix
     		set
     		{
     			double num = 0.7 + 0.3 * value;
-    			X0Y0_髪基.SizeYBase *= num;
+    			X0Y0_髪基.SetSizeYBase(X0Y0_髪基.GetSizeYBase() * num);
     		}
     	}
 
@@ -265,12 +265,12 @@ namespace SlaveMatrix
     		set
     		{
     			double num = 0.5 + 0.9 * value;
-    			X0Y0_お下げ_髪節.SizeYBase *= num;
-    			X0Y0_お下げ_髪右2.SizeYBase *= num;
-    			X0Y0_お下げ_髪右1.SizeYBase *= num;
-    			X0Y0_お下げ_髪左2.SizeYBase *= num;
-    			X0Y0_お下げ_髪左1.SizeYBase *= num;
-    			X0Y0_お下げ_髪根.SizeYBase *= num;
+    			X0Y0_お下げ_髪節.SetSizeYBase(X0Y0_お下げ_髪節.GetSizeYBase() * num);
+    			X0Y0_お下げ_髪右2.SetSizeYBase(X0Y0_お下げ_髪右2.GetSizeYBase() * num);
+    			X0Y0_お下げ_髪右1.SetSizeYBase(X0Y0_お下げ_髪右1.GetSizeYBase() * num);
+    			X0Y0_お下げ_髪左2.SetSizeYBase(X0Y0_お下げ_髪左2.GetSizeYBase() * num);
+    			X0Y0_お下げ_髪左1.SetSizeYBase(X0Y0_お下げ_髪左1.GetSizeYBase() * num);
+    			X0Y0_お下げ_髪根.SetSizeYBase(X0Y0_お下げ_髪根.GetSizeYBase() * num);
     		}
     	}
 
@@ -279,14 +279,14 @@ namespace SlaveMatrix
     		set
     		{
     			double num = 1.0 + 0.5 * value;
-    			X0Y0_お下げ_髪節.SizeXBase *= num;
-    			X0Y0_お下げ_髪縛1.SizeBase *= num;
-    			X0Y0_お下げ_髪縛2.SizeBase *= num;
-    			X0Y0_お下げ_髪左2.SizeXBase *= num;
-    			X0Y0_お下げ_髪左1.SizeXBase *= num;
-    			X0Y0_お下げ_髪右2.SizeXBase *= num;
-    			X0Y0_お下げ_髪右1.SizeXBase *= num;
-    			X0Y0_お下げ_髪根.SizeXBase *= num;
+    			X0Y0_お下げ_髪節.SetSizeXBase(X0Y0_お下げ_髪節.GetSizeXBase() * num);
+    			X0Y0_お下げ_髪縛1.SetSizeBase(X0Y0_お下げ_髪縛1.GetSizeBase() * num);
+    			X0Y0_お下げ_髪縛2.SetSizeBase(X0Y0_お下げ_髪縛2.GetSizeBase() * num);
+    			X0Y0_お下げ_髪左2.SetSizeXBase(X0Y0_お下げ_髪左2.GetSizeXBase() * num);
+    			X0Y0_お下げ_髪左1.SetSizeXBase(X0Y0_お下げ_髪左1.GetSizeXBase() * num);
+    			X0Y0_お下げ_髪右2.SetSizeXBase(X0Y0_お下げ_髪右2.GetSizeXBase() * num);
+    			X0Y0_お下げ_髪右1.SetSizeXBase(X0Y0_お下げ_髪右1.GetSizeXBase() * num);
+    			X0Y0_お下げ_髪根.SetSizeXBase(X0Y0_お下げ_髪根.GetSizeXBase() * num);
     		}
     	}
 
@@ -294,10 +294,10 @@ namespace SlaveMatrix
     	{
     		set
     		{
-    			X0Y0_お下げ_髪左2.AngleBase = 1.5 * value;
-    			X0Y0_お下げ_髪左1.AngleBase = 1.5 * value;
-    			X0Y0_お下げ_髪右2.AngleBase = -1.5 * value;
-    			X0Y0_お下げ_髪右1.AngleBase = -1.5 * value;
+    			X0Y0_お下げ_髪左2.SetAngleBase(1.5 * value);
+    			X0Y0_お下げ_髪左1.SetAngleBase(1.5 * value);
+    			X0Y0_お下げ_髪右2.SetAngleBase(-1.5 * value);
+    			X0Y0_お下げ_髪右1.SetAngleBase(-1.5 * value);
     		}
     	}
 
@@ -386,45 +386,45 @@ namespace SlaveMatrix
     	public override void SetAngle0()
     	{
     		double num = (右 ? (-1.0) : 1.0);
-    		X0Y0_お下げ_髪節.AngleBase = num * 30.0;
-    		X0Y0_お下げ_髪根.AngleBase = num * -25.0;
+    		X0Y0_お下げ_髪節.SetAngleBase(num * 30.0);
+    		X0Y0_お下げ_髪根.SetAngleBase(num * -25.0);
     		Body.JoinPAall();
     	}
 
     	public void スライム()
     	{
-    		X0Y0_髪基.OP[右 ? 1 : 0].Outline = false;
-    		X0Y0_髪基.OP[(!右) ? 1 : 0].Outline = false;
-    		X0Y0_お下げ_髪節.OP[右 ? 2 : 0].Outline = false;
-    		X0Y0_お下げ_髪節.OP[右 ? 1 : 1].Outline = false;
-    		X0Y0_お下げ_髪節.OP[(!右) ? 2 : 0].Outline = false;
-    		X0Y0_お下げ_髪縛1.OP[右 ? 0 : 0].Outline = false;
-    		X0Y0_お下げ_髪縛2.OP[右 ? 0 : 0].Outline = false;
-    		X0Y0_お下げ_髪左2.OP[右 ? 4 : 0].Outline = false;
-    		X0Y0_お下げ_髪左2.OP[(!右) ? 1 : 3].Outline = false;
-    		X0Y0_お下げ_髪左2.OP[右 ? 2 : 2].Outline = false;
-    		X0Y0_お下げ_髪左2.OP[右 ? 1 : 3].Outline = false;
-    		X0Y0_お下げ_髪左2.OP[(!右) ? 4 : 0].Outline = false;
-    		X0Y0_お下げ_髪左1.OP[右 ? 4 : 0].Outline = false;
-    		X0Y0_お下げ_髪左1.OP[(!右) ? 1 : 3].Outline = false;
-    		X0Y0_お下げ_髪左1.OP[右 ? 2 : 2].Outline = false;
-    		X0Y0_お下げ_髪左1.OP[右 ? 1 : 3].Outline = false;
-    		X0Y0_お下げ_髪左1.OP[(!右) ? 4 : 0].Outline = false;
-    		X0Y0_お下げ_髪右2.OP[右 ? 4 : 0].Outline = false;
-    		X0Y0_お下げ_髪右2.OP[(!右) ? 1 : 3].Outline = false;
-    		X0Y0_お下げ_髪右2.OP[右 ? 2 : 2].Outline = false;
-    		X0Y0_お下げ_髪右2.OP[右 ? 1 : 3].Outline = false;
-    		X0Y0_お下げ_髪右2.OP[(!右) ? 4 : 0].Outline = false;
-    		X0Y0_お下げ_髪右1.OP[右 ? 4 : 0].Outline = false;
-    		X0Y0_お下げ_髪右1.OP[(!右) ? 1 : 3].Outline = false;
-    		X0Y0_お下げ_髪右1.OP[右 ? 2 : 2].Outline = false;
-    		X0Y0_お下げ_髪右1.OP[右 ? 1 : 3].Outline = false;
-    		X0Y0_お下げ_髪右1.OP[(!右) ? 4 : 0].Outline = false;
-    		X0Y0_お下げ_髪根.OP[右 ? 4 : 0].Outline = false;
-    		X0Y0_お下げ_髪根.OP[(!右) ? 1 : 3].Outline = false;
-    		X0Y0_お下げ_髪根.OP[右 ? 2 : 2].Outline = false;
-    		X0Y0_お下げ_髪根.OP[右 ? 1 : 3].Outline = false;
-    		X0Y0_お下げ_髪根.OP[(!右) ? 4 : 0].Outline = false;
+    		X0Y0_髪基.GetOP()[右 ? 1 : 0].Outline = false;
+    		X0Y0_髪基.GetOP()[(!右) ? 1 : 0].Outline = false;
+    		X0Y0_お下げ_髪節.GetOP()[右 ? 2 : 0].Outline = false;
+    		X0Y0_お下げ_髪節.GetOP()[右 ? 1 : 1].Outline = false;
+    		X0Y0_お下げ_髪節.GetOP()[(!右) ? 2 : 0].Outline = false;
+    		X0Y0_お下げ_髪縛1.GetOP()[右 ? 0 : 0].Outline = false;
+    		X0Y0_お下げ_髪縛2.GetOP()[右 ? 0 : 0].Outline = false;
+    		X0Y0_お下げ_髪左2.GetOP()[右 ? 4 : 0].Outline = false;
+    		X0Y0_お下げ_髪左2.GetOP()[(!右) ? 1 : 3].Outline = false;
+    		X0Y0_お下げ_髪左2.GetOP()[右 ? 2 : 2].Outline = false;
+    		X0Y0_お下げ_髪左2.GetOP()[右 ? 1 : 3].Outline = false;
+    		X0Y0_お下げ_髪左2.GetOP()[(!右) ? 4 : 0].Outline = false;
+    		X0Y0_お下げ_髪左1.GetOP()[右 ? 4 : 0].Outline = false;
+    		X0Y0_お下げ_髪左1.GetOP()[(!右) ? 1 : 3].Outline = false;
+    		X0Y0_お下げ_髪左1.GetOP()[右 ? 2 : 2].Outline = false;
+    		X0Y0_お下げ_髪左1.GetOP()[右 ? 1 : 3].Outline = false;
+    		X0Y0_お下げ_髪左1.GetOP()[(!右) ? 4 : 0].Outline = false;
+    		X0Y0_お下げ_髪右2.GetOP()[右 ? 4 : 0].Outline = false;
+    		X0Y0_お下げ_髪右2.GetOP()[(!右) ? 1 : 3].Outline = false;
+    		X0Y0_お下げ_髪右2.GetOP()[右 ? 2 : 2].Outline = false;
+    		X0Y0_お下げ_髪右2.GetOP()[右 ? 1 : 3].Outline = false;
+    		X0Y0_お下げ_髪右2.GetOP()[(!右) ? 4 : 0].Outline = false;
+    		X0Y0_お下げ_髪右1.GetOP()[右 ? 4 : 0].Outline = false;
+    		X0Y0_お下げ_髪右1.GetOP()[(!右) ? 1 : 3].Outline = false;
+    		X0Y0_お下げ_髪右1.GetOP()[右 ? 2 : 2].Outline = false;
+    		X0Y0_お下げ_髪右1.GetOP()[右 ? 1 : 3].Outline = false;
+    		X0Y0_お下げ_髪右1.GetOP()[(!右) ? 4 : 0].Outline = false;
+    		X0Y0_お下げ_髪根.GetOP()[右 ? 4 : 0].Outline = false;
+    		X0Y0_お下げ_髪根.GetOP()[(!右) ? 1 : 3].Outline = false;
+    		X0Y0_お下げ_髪根.GetOP()[右 ? 2 : 2].Outline = false;
+    		X0Y0_お下げ_髪根.GetOP()[右 ? 1 : 3].Outline = false;
+    		X0Y0_お下げ_髪根.GetOP()[(!右) ? 4 : 0].Outline = false;
     	}
 
     	public override bool Is布(ShapePart p)

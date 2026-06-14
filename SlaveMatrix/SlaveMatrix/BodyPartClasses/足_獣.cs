@@ -725,12 +725,12 @@ namespace SlaveMatrix
     	public override void SetAngle0()
     	{
     		double num = (右 ? (-1.0) : 1.0);
-    		X0Y0_足.AngleBase = num * -40.0;
-    		X0Y0_小指_指.AngleBase = num * 22.0;
-    		X0Y0_薬指_指.AngleBase = num * 22.0;
-    		X0Y0_中指_指.AngleBase = num * 19.0;
-    		X0Y0_人指_指.AngleBase = num * 14.0;
-    		X0Y0_肉球_肉球中.AngleBase = num * 16.0;
+    		X0Y0_足.SetAngleBase(num * -40.0);
+    		X0Y0_小指_指.SetAngleBase(num * 22.0);
+    		X0Y0_薬指_指.SetAngleBase(num * 22.0);
+    		X0Y0_中指_指.SetAngleBase(num * 19.0);
+    		X0Y0_人指_指.SetAngleBase(num * 14.0);
+    		X0Y0_肉球_肉球中.SetAngleBase(num * 16.0);
     		Body.JoinPAall();
     	}
 

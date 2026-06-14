@@ -41,12 +41,12 @@ namespace SlaveMatrix
 
     	public void Setting()
     	{
-    		ShapePart.Brush = new SolidBrush(Color.LightGray);
+    		ShapePart.SetBrush1(new SolidBrush(Color.LightGray));
     		u0 = Unit * 0.99009900990099;
     		u1 = Unit * 1.01;
     		if (ColorD.線 == ColorHelper.Empty)
     		{
-    			ShapePart.Pen = null;
+    			ShapePart.SetPen(null);
     			p = delegate
     			{
     			};
@@ -60,13 +60,13 @@ namespace SlaveMatrix
     			}
     			p = delegate
     			{
-    				ShapePart.PenColor = ColorD.線;
+    				ShapePart.SetPenColor(ColorD.線);
     			};
     			UpdateLine();
     		}
     		if (ColorD.色.Col1 == ColorHelper.Empty)
     		{
-    			ShapePart.Brush = null;
+    			ShapePart.SetBrush1(null);
     			b = delegate
     			{
     			};
@@ -77,7 +77,7 @@ namespace SlaveMatrix
     			{
     				b = delegate
     				{
-    					ShapePart.BrushColor = ColorD.色.Col1;
+    					ShapePart.SetBrushColor(ColorD.色.Col1);
     				};
     			}
     			else
@@ -94,13 +94,13 @@ namespace SlaveMatrix
     					{
     						LGB = new LinearGradientBrush(new PointF(0f, f0), new PointF(0f, f1), ColorD.色.Col1, ColorD.色.Col2);
     						LGB.GammaCorrection = true;
-    						ShapePart.Brush = LGB;
+    						ShapePart.SetBrush1(LGB);
     					}
     				};
     			}
     			UpdateColor();
     		}
-    		if (ShapePart.Pen == null && ShapePart.Brush == null)
+    		if (ShapePart.GetPen() == null && ShapePart.GetBrush1() == null)
     		{
     			ShapePart.Dra = false;
     			ShapePart.Hit = false;
@@ -137,7 +137,7 @@ namespace SlaveMatrix
     			{
     				LGB = new LinearGradientBrush(new PointF(0f, f0), new PointF(0f, f1), ColorD.色.Col1, ColorD.色.Col2);
     				LGB.GammaCorrection = true;
-    				ShapePart.Brush = LGB;
+    				ShapePart.SetBrush1(LGB);
     			}
     		}
     	}

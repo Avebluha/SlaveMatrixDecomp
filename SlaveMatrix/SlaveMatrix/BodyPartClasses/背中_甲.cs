@@ -823,20 +823,20 @@ namespace SlaveMatrix
     		set
     		{
     			double num = 15.0 * value;
-    			X0Y0_左_鱗_鱗12.AngleBase = num;
-    			X0Y0_左_鱗_鱗11.AngleBase = num;
-    			X0Y0_左_鱗_鱗10.AngleBase = num;
-    			X0Y0_左_鱗_鱗9.AngleBase = num;
-    			X0Y0_左_鱗_鱗8.AngleBase = num;
-    			X0Y0_左_鱗_鱗7.AngleBase = num;
-    			X0Y0_左_鱗_鱗6.AngleBase = num;
-    			X0Y0_右_鱗_鱗12.AngleBase = 0.0 - num;
-    			X0Y0_右_鱗_鱗11.AngleBase = 0.0 - num;
-    			X0Y0_右_鱗_鱗10.AngleBase = 0.0 - num;
-    			X0Y0_右_鱗_鱗9.AngleBase = 0.0 - num;
-    			X0Y0_右_鱗_鱗8.AngleBase = 0.0 - num;
-    			X0Y0_右_鱗_鱗7.AngleBase = 0.0 - num;
-    			X0Y0_右_鱗_鱗6.AngleBase = 0.0 - num;
+    			X0Y0_左_鱗_鱗12.SetAngleBase(num);
+    			X0Y0_左_鱗_鱗11.SetAngleBase(num);
+    			X0Y0_左_鱗_鱗10.SetAngleBase(num);
+    			X0Y0_左_鱗_鱗9.SetAngleBase(num);
+    			X0Y0_左_鱗_鱗8.SetAngleBase(num);
+    			X0Y0_左_鱗_鱗7.SetAngleBase(num);
+    			X0Y0_左_鱗_鱗6.SetAngleBase(num);
+    			X0Y0_右_鱗_鱗12.SetAngleBase(0.0 - num);
+    			X0Y0_右_鱗_鱗11.SetAngleBase(0.0 - num);
+    			X0Y0_右_鱗_鱗10.SetAngleBase(0.0 - num);
+    			X0Y0_右_鱗_鱗9.SetAngleBase(0.0 - num);
+    			X0Y0_右_鱗_鱗8.SetAngleBase(0.0 - num);
+    			X0Y0_右_鱗_鱗7.SetAngleBase(0.0 - num);
+    			X0Y0_右_鱗_鱗6.SetAngleBase(0.0 - num);
     		}
     	}
 

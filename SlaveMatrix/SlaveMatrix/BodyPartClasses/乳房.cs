@@ -1,5 +1,6 @@
 using System.Linq;
 using _2DGAMELIB;
+using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
@@ -713,26 +714,26 @@ namespace SlaveMatrix
     			尺度YB_ = syb * (1.0 + 0.05 * バスト_);
     			if (バスト_ <= 0.2)
     			{
-    				X0Y0_乳房.OP.OutlineFalse();
-    				X0Y1_乳房.OP.OutlineFalse();
-    				X0Y2_乳房.OP.OutlineFalse();
-    				X0Y3_乳房.OP.OutlineFalse();
-    				X0Y4_乳房.OP.OutlineFalse();
-    				X0Y0_乳房.OP[右 ? 1 : 3].Outline = true;
-    				X0Y1_乳房.OP[右 ? 1 : 3].Outline = true;
-    				X0Y2_乳房.OP[右 ? 1 : 3].Outline = true;
-    				X0Y3_乳房.OP[右 ? 1 : 3].Outline = true;
-    				X0Y4_乳房.OP[右 ? 1 : 3].Outline = true;
-    				X0Y0_乳房.OP[(!右) ? 4 : 0].Outline = true;
-    				X0Y1_乳房.OP[(!右) ? 4 : 0].Outline = true;
-    				X0Y2_乳房.OP[(!右) ? 4 : 0].Outline = true;
-    				X0Y3_乳房.OP[(!右) ? 4 : 0].Outline = true;
-    				X0Y4_乳房.OP[(!右) ? 4 : 0].Outline = true;
-    				X0Y0_淫タトゥ_タトゥ4.OP[右 ? 2 : 0].Outline = false;
-    				X0Y1_淫タトゥ_タトゥ4.OP[右 ? 2 : 0].Outline = false;
-    				X0Y2_淫タトゥ_タトゥ4.OP[右 ? 2 : 0].Outline = false;
-    				X0Y3_淫タトゥ_タトゥ4.OP[右 ? 2 : 0].Outline = false;
-    				X0Y4_淫タトゥ_タトゥ4.OP[右 ? 2 : 0].Outline = false;
+    				X0Y0_乳房.GetOP().OutlineFalse();
+    				X0Y1_乳房.GetOP().OutlineFalse();
+    				X0Y2_乳房.GetOP().OutlineFalse();
+    				X0Y3_乳房.GetOP().OutlineFalse();
+    				X0Y4_乳房.GetOP().OutlineFalse();
+    				X0Y0_乳房.GetOP()[右 ? 1 : 3].Outline = true;
+    				X0Y1_乳房.GetOP()[右 ? 1 : 3].Outline = true;
+    				X0Y2_乳房.GetOP()[右 ? 1 : 3].Outline = true;
+    				X0Y3_乳房.GetOP()[右 ? 1 : 3].Outline = true;
+    				X0Y4_乳房.GetOP()[右 ? 1 : 3].Outline = true;
+    				X0Y0_乳房.GetOP()[(!右) ? 4 : 0].Outline = true;
+    				X0Y1_乳房.GetOP()[(!右) ? 4 : 0].Outline = true;
+    				X0Y2_乳房.GetOP()[(!右) ? 4 : 0].Outline = true;
+    				X0Y3_乳房.GetOP()[(!右) ? 4 : 0].Outline = true;
+    				X0Y4_乳房.GetOP()[(!右) ? 4 : 0].Outline = true;
+    				X0Y0_淫タトゥ_タトゥ4.GetOP()[右 ? 2 : 0].Outline = false;
+    				X0Y1_淫タトゥ_タトゥ4.GetOP()[右 ? 2 : 0].Outline = false;
+    				X0Y2_淫タトゥ_タトゥ4.GetOP()[右 ? 2 : 0].Outline = false;
+    				X0Y3_淫タトゥ_タトゥ4.GetOP()[右 ? 2 : 0].Outline = false;
+    				X0Y4_淫タトゥ_タトゥ4.GetOP()[右 ? 2 : 0].Outline = false;
     			}
     		}
     	}
@@ -741,13 +742,13 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return Body.CurJoinRoot.SizeBase;
+    			return Body.GetCurJoinRoot().GetSizeBase();
     		}
     		set
     		{
     			foreach (ShapePart item in Body.EnumAllPar())
     			{
-    				item.SizeBase = value;
+    				item.SetSizeBase(value);
     			}
     			Body.JoinP();
     		}
@@ -757,13 +758,13 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return Body.CurJoinRoot.SizeYBase;
+    			return Body.GetCurJoinRoot().GetSizeYBase();
     		}
     		set
     		{
     			foreach (ShapePart item in Body.EnumAllPar())
     			{
-    				item.SizeYBase = value;
+    				item.SetSizeYBase(value);
     			}
     			Body.JoinP();
     		}
@@ -1006,7 +1007,7 @@ namespace SlaveMatrix
 
     	public override void 描画0(RenderArea Are)
     	{
-    		switch (Body.IndexY)
+    		switch (Body.GetIndexY())
     		{
     		case 0:
     			Are.Draw(X0Y0_乳房);
@@ -1094,7 +1095,7 @@ namespace SlaveMatrix
 
     	public override void 色更新()
     	{
-    		switch (Body.IndexY)
+    		switch (Body.GetIndexY())
     		{
     		case 0:
     			X0Y0_乳房CP.Update();

@@ -1,4 +1,5 @@
 using _2DGAMELIB;
+using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
@@ -99,7 +100,7 @@ namespace SlaveMatrix
     		吹出しCD.線 = ColorHelper.Black;
     		吹出しCD.色 = new Color2(ref ColorHelper.White, ref ColorHelper.Empty);
     		X0Y0_吹出しCP = new ColorP(X0Y0_吹出し, 吹出しCD, DisUnit, abj: true);
-    		X0Y0_吹出し.BasePointBase = X0Y0_吹出し.BasePointBase.AddX(-0.015);
+    		X0Y0_吹出し.SetBasePointBase(X0Y0_吹出し.GetBasePointBase().AddX(-0.015));
     	}
 
     	public override void 色更新()

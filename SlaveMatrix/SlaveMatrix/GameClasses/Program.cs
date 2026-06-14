@@ -2,7 +2,7 @@ using System;
 using System.Reflection;
 using _2DGAMELIB;
 
-namespace SlaveMatrix
+namespace SlaveMatrix.GameClasses
 {
     internal static class Program
     {

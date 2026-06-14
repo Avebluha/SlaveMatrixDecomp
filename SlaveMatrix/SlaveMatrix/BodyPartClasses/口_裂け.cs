@@ -794,25 +794,25 @@ namespace SlaveMatrix
     		ハイライト濃度 = e.ハイライト濃度;
     		Intensity = e.濃度;
     		double y = 1.5E-05;
-    		X0Y0_口.BasePointBase = X0Y0_口.BasePointBase.AddY(y);
-    		X0Y1_口.BasePointBase = X0Y1_口.BasePointBase.AddY(y);
-    		X0Y2_口.BasePointBase = X0Y2_口.BasePointBase.AddY(y);
-    		X0Y3_口.BasePointBase = X0Y3_口.BasePointBase.AddY(y);
-    		X0Y4_口.BasePointBase = X0Y4_口.BasePointBase.AddY(y);
-    		X0Y5_口.BasePointBase = X0Y5_口.BasePointBase.AddY(y);
-    		X0Y6_口.BasePointBase = X0Y6_口.BasePointBase.AddY(y);
-    		X0Y7_口.BasePointBase = X0Y7_口.BasePointBase.AddY(y);
-    		X0Y8_口.BasePointBase = X0Y8_口.BasePointBase.AddY(y);
-    		X0Y9_口.BasePointBase = X0Y9_口.BasePointBase.AddY(y);
-    		X0Y10_口.BasePointBase = X0Y10_口.BasePointBase.AddY(y);
-    		X0Y11_口.BasePointBase = X0Y11_口.BasePointBase.AddY(y);
-    		X0Y12_口.BasePointBase = X0Y12_口.BasePointBase.AddY(y);
-    		X0Y13_口.BasePointBase = X0Y13_口.BasePointBase.AddY(y);
+    		X0Y0_口.SetBasePointBase(X0Y0_口.GetBasePointBase().AddY(y));
+    		X0Y1_口.SetBasePointBase(X0Y1_口.GetBasePointBase().AddY(y));
+    		X0Y2_口.SetBasePointBase(X0Y2_口.GetBasePointBase().AddY(y));
+    		X0Y3_口.SetBasePointBase(X0Y3_口.GetBasePointBase().AddY(y));
+    		X0Y4_口.SetBasePointBase(X0Y4_口.GetBasePointBase().AddY(y));
+    		X0Y5_口.SetBasePointBase(X0Y5_口.GetBasePointBase().AddY(y));
+    		X0Y6_口.SetBasePointBase(X0Y6_口.GetBasePointBase().AddY(y));
+    		X0Y7_口.SetBasePointBase(X0Y7_口.GetBasePointBase().AddY(y));
+    		X0Y8_口.SetBasePointBase(X0Y8_口.GetBasePointBase().AddY(y));
+    		X0Y9_口.SetBasePointBase(X0Y9_口.GetBasePointBase().AddY(y));
+    		X0Y10_口.SetBasePointBase(X0Y10_口.GetBasePointBase().AddY(y));
+    		X0Y11_口.SetBasePointBase(X0Y11_口.GetBasePointBase().AddY(y));
+    		X0Y12_口.SetBasePointBase(X0Y12_口.GetBasePointBase().AddY(y));
+    		X0Y13_口.SetBasePointBase(X0Y13_口.GetBasePointBase().AddY(y));
     	}
 
     	public override void 色更新()
     	{
-    		switch (Body.IndexY)
+    		switch (Body.GetIndexY())
     		{
     		case 0:
     			X0Y0_口CP.Update();

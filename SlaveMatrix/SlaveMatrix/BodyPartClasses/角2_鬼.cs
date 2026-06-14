@@ -79,7 +79,7 @@ namespace SlaveMatrix
     		set
     		{
     			欠損_ = value;
-    			Body.IndexY = (欠損_ ? 1 : 0);
+    			Body.SetIndexY((欠損_ ? 1 : 0));
     		}
     	}
 
@@ -351,8 +351,8 @@ namespace SlaveMatrix
     	public override void SetAngle0()
     	{
     		double num = (右 ? (-1.0) : 1.0);
-    		X0Y0_根.AngleBase = num * -38.0;
-    		X0Y1_根.AngleBase = num * -38.0;
+    		X0Y0_根.SetAngleBase(num * -38.0);
+    		X0Y1_根.SetAngleBase(num * -38.0);
     		Body.JoinPAall();
     	}
 
@@ -369,14 +369,14 @@ namespace SlaveMatrix
     	{
     		if (ConnectionType != ConnectionInfo.基髪_頭頂左_接続 && ConnectionType != ConnectionInfo.基髪_頭頂右_接続)
     		{
-    			X0Y0_根.BasePointBase = X0Y0_根.JP[0].Joint;
-    			X0Y1_根.BasePointBase = X0Y1_根.JP[0].Joint;
+    			X0Y0_根.SetBasePointBase(X0Y0_根.GetJP()[0].Joint);
+    			X0Y1_根.SetBasePointBase(X0Y1_根.GetJP()[0].Joint);
     		}
     	}
 
     	public override void 色更新()
     	{
-    		if (Body.IndexY == 0)
+    		if (Body.GetIndexY() == 0)
     		{
     			X0Y0_根CP.Update();
     			X0Y0_線1CP.Update();

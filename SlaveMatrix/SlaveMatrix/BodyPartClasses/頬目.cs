@@ -1,5 +1,6 @@
 using System.Linq;
 using _2DGAMELIB;
+using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
@@ -195,13 +196,13 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return X0Y0_黒目_黒目.PositionCont;
+    			return X0Y0_黒目_黒目.GetPositionCont();
     		}
     		set
     		{
-    			X0Y0_黒目_黒目.PositionCont = value;
-    			X0Y0_黒目_瞳孔.PositionCont = value;
-    			X0Y0_黒目_ハート.PositionCont = value;
+    			X0Y0_黒目_黒目.SetPositionCont(value);
+    			X0Y0_黒目_瞳孔.SetPositionCont(value);
+    			X0Y0_黒目_ハート.SetPositionCont(value);
     		}
     	}
 
@@ -314,14 +315,14 @@ namespace SlaveMatrix
 
     	public void 猫目()
     	{
-    		X0Y0_黒目_瞳孔.SizeXBase *= 0.25;
-    		X0Y0_黒目_瞳孔.SizeYBase *= 1.5;
+    		X0Y0_黒目_瞳孔.SetSizeXBase(X0Y0_黒目_瞳孔.GetSizeXBase() * 0.25);
+    		X0Y0_黒目_瞳孔.SetSizeYBase(X0Y0_黒目_瞳孔.GetSizeYBase() * 1.5);
     	}
 
     	public void 蛸目()
     	{
-    		X0Y0_黒目_瞳孔.SizeXBase *= 2.0;
-    		X0Y0_黒目_瞳孔.SizeYBase *= 0.5;
+    		X0Y0_黒目_瞳孔.SetSizeXBase(X0Y0_黒目_瞳孔.GetSizeXBase() * 2.0);
+    		X0Y0_黒目_瞳孔.SetSizeYBase(X0Y0_黒目_瞳孔.GetSizeYBase() * 0.5);
     	}
 
     	public override void 色更新()

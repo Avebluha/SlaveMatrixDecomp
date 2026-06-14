@@ -778,37 +778,37 @@ namespace SlaveMatrix
     		set
     		{
     			double num = 0.9 + 0.2 * value;
-    			X0Y0_髪基.SizeYBase *= num;
-    			X0Y0_髪左1.SizeYBase *= num;
-    			X0Y0_髪左2.SizeYBase *= num;
-    			X0Y0_髪左3.SizeYBase *= num;
-    			X0Y0_髪左4.SizeYBase *= num;
-    			X0Y0_編み左_編節1_髪節.SizeYBase *= num;
-    			X0Y0_編み左_編節1_髪編目.SizeYBase *= num;
-    			X0Y0_編み左_編節2_髪節.SizeYBase *= num;
-    			X0Y0_編み左_編節2_髪編目.SizeYBase *= num;
-    			X0Y0_編み左_編節3_髪節.SizeYBase *= num;
-    			X0Y0_編み左_編節3_髪編目.SizeYBase *= num;
-    			X0Y0_髪ハネ左.SizeYBase *= num;
-    			X0Y0_髪左5.SizeYBase *= num;
-    			X0Y0_ハイライト左.SizeYBase *= num;
-    			X0Y0_髪頭頂横左1.SizeYBase *= num;
-    			X0Y0_髪頭頂横左2.SizeYBase *= num;
-    			X0Y0_髪右1.SizeYBase *= num;
-    			X0Y0_髪右2.SizeYBase *= num;
-    			X0Y0_髪右3.SizeYBase *= num;
-    			X0Y0_髪右4.SizeYBase *= num;
-    			X0Y0_編み右_編節1_髪節.SizeYBase *= num;
-    			X0Y0_編み右_編節1_髪編目.SizeYBase *= num;
-    			X0Y0_編み右_編節2_髪節.SizeYBase *= num;
-    			X0Y0_編み右_編節2_髪編目.SizeYBase *= num;
-    			X0Y0_編み右_編節3_髪節.SizeYBase *= num;
-    			X0Y0_編み右_編節3_髪編目.SizeYBase *= num;
-    			X0Y0_髪ハネ右.SizeYBase *= num;
-    			X0Y0_髪右5.SizeYBase *= num;
-    			X0Y0_ハイライト右.SizeYBase *= num;
-    			X0Y0_髪頭頂横右1.SizeYBase *= num;
-    			X0Y0_髪頭頂横右2.SizeYBase *= num;
+    			X0Y0_髪基.SetSizeYBase(X0Y0_髪基.GetSizeYBase() * num);
+    			X0Y0_髪左1.SetSizeYBase(X0Y0_髪左1.GetSizeYBase() * num);
+    			X0Y0_髪左2.SetSizeYBase(X0Y0_髪左2.GetSizeYBase() * num);
+    			X0Y0_髪左3.SetSizeYBase(X0Y0_髪左3.GetSizeYBase() * num);
+    			X0Y0_髪左4.SetSizeYBase(X0Y0_髪左4.GetSizeYBase() * num);
+    			X0Y0_編み左_編節1_髪節.SetSizeYBase(X0Y0_編み左_編節1_髪節.GetSizeYBase() * num);
+    			X0Y0_編み左_編節1_髪編目.SetSizeYBase(X0Y0_編み左_編節1_髪編目.GetSizeYBase() * num);
+    			X0Y0_編み左_編節2_髪節.SetSizeYBase(X0Y0_編み左_編節2_髪節.GetSizeYBase() * num);
+    			X0Y0_編み左_編節2_髪編目.SetSizeYBase(X0Y0_編み左_編節2_髪編目.GetSizeYBase() * num);
+    			X0Y0_編み左_編節3_髪節.SetSizeYBase(X0Y0_編み左_編節3_髪節.GetSizeYBase() * num);
+    			X0Y0_編み左_編節3_髪編目.SetSizeYBase(X0Y0_編み左_編節3_髪編目.GetSizeYBase() * num);
+    			X0Y0_髪ハネ左.SetSizeYBase(X0Y0_髪ハネ左.GetSizeYBase() * num);
+    			X0Y0_髪左5.SetSizeYBase(X0Y0_髪左5.GetSizeYBase() * num);
+    			X0Y0_ハイライト左.SetSizeYBase(X0Y0_ハイライト左.GetSizeYBase() * num);
+    			X0Y0_髪頭頂横左1.SetSizeYBase(X0Y0_髪頭頂横左1.GetSizeYBase() * num);
+    			X0Y0_髪頭頂横左2.SetSizeYBase(X0Y0_髪頭頂横左2.GetSizeYBase() * num);
+    			X0Y0_髪右1.SetSizeYBase(X0Y0_髪右1.GetSizeYBase() * num);
+    			X0Y0_髪右2.SetSizeYBase(X0Y0_髪右2.GetSizeYBase() * num);
+    			X0Y0_髪右3.SetSizeYBase(X0Y0_髪右3.GetSizeYBase() * num);
+    			X0Y0_髪右4.SetSizeYBase(X0Y0_髪右4.GetSizeYBase() * num);
+    			X0Y0_編み右_編節1_髪節.SetSizeYBase(X0Y0_編み右_編節1_髪節.GetSizeYBase() * num);
+    			X0Y0_編み右_編節1_髪編目.SetSizeYBase(X0Y0_編み右_編節1_髪編目.GetSizeYBase() * num);
+    			X0Y0_編み右_編節2_髪節.SetSizeYBase(X0Y0_編み右_編節2_髪節.GetSizeYBase() * num);
+    			X0Y0_編み右_編節2_髪編目.SetSizeYBase(X0Y0_編み右_編節2_髪編目.GetSizeYBase() * num);
+    			X0Y0_編み右_編節3_髪節.SetSizeYBase(X0Y0_編み右_編節3_髪節.GetSizeYBase() * num);
+    			X0Y0_編み右_編節3_髪編目.SetSizeYBase(X0Y0_編み右_編節3_髪編目.GetSizeYBase() * num);
+    			X0Y0_髪ハネ右.SetSizeYBase(X0Y0_髪ハネ右.GetSizeYBase() * num);
+    			X0Y0_髪右5.SetSizeYBase(X0Y0_髪右5.GetSizeYBase() * num);
+    			X0Y0_ハイライト右.SetSizeYBase(X0Y0_ハイライト右.GetSizeYBase() * num);
+    			X0Y0_髪頭頂横右1.SetSizeYBase(X0Y0_髪頭頂横右1.GetSizeYBase() * num);
+    			X0Y0_髪頭頂横右2.SetSizeYBase(X0Y0_髪頭頂横右2.GetSizeYBase() * num);
     		}
     	}
 

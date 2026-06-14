@@ -1,5 +1,6 @@
 using System.Linq;
 using _2DGAMELIB;
+using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
@@ -555,38 +556,38 @@ namespace SlaveMatrix
     		Intensity = e.濃度;
     		尺度YB = 0.95;
     		double num = 1.0;
-    		X0Y0_臍.BasePointBase = new Vector2D(X0Y0_臍.BasePointBase.X, 0.363449439772374);
-    		X0Y1_臍.BasePointBase = new Vector2D(X0Y1_臍.BasePointBase.X, 0.363808225004133);
-    		X0Y2_臍.BasePointBase = new Vector2D(X0Y2_臍.BasePointBase.X, 0.364167010235893);
-    		X0Y3_臍.BasePointBase = new Vector2D(X0Y3_臍.BasePointBase.X, 0.364525795467652);
-    		X0Y4_臍.BasePointBase = new Vector2D(X0Y4_臍.BasePointBase.X, 0.364884580699412);
-    		X0Y0_ハイライト.BasePointBase = new Vector2D(X0Y0_ハイライト.BasePointBase.X, 0.0219448899681257);
-    		X0Y1_ハイライト.BasePointBase = new Vector2D(X0Y1_ハイライト.BasePointBase.X, 0.0223873272658702);
-    		X0Y2_ハイライト.BasePointBase = new Vector2D(X0Y2_ハイライト.BasePointBase.X, 0.0228297645636147);
-    		X0Y3_ハイライト.BasePointBase = new Vector2D(X0Y3_ハイライト.BasePointBase.X, 0.0232722018613592);
-    		X0Y4_ハイライト.BasePointBase = new Vector2D(X0Y4_ハイライト.BasePointBase.X, 0.0237146391591036);
+    		X0Y0_臍.SetBasePointBase(new Vector2D(X0Y0_臍.GetBasePointBase().X, 0.363449439772374));
+    		X0Y1_臍.SetBasePointBase(new Vector2D(X0Y1_臍.GetBasePointBase().X, 0.363808225004133));
+    		X0Y2_臍.SetBasePointBase(new Vector2D(X0Y2_臍.GetBasePointBase().X, 0.364167010235893));
+    		X0Y3_臍.SetBasePointBase(new Vector2D(X0Y3_臍.GetBasePointBase().X, 0.364525795467652));
+    		X0Y4_臍.SetBasePointBase(new Vector2D(X0Y4_臍.GetBasePointBase().X, 0.364884580699412));
+    		X0Y0_ハイライト.SetBasePointBase(new Vector2D(X0Y0_ハイライト.GetBasePointBase().X, 0.0219448899681257));
+    		X0Y1_ハイライト.SetBasePointBase(new Vector2D(X0Y1_ハイライト.GetBasePointBase().X, 0.0223873272658702));
+    		X0Y2_ハイライト.SetBasePointBase(new Vector2D(X0Y2_ハイライト.GetBasePointBase().X, 0.0228297645636147));
+    		X0Y3_ハイライト.SetBasePointBase(new Vector2D(X0Y3_ハイライト.GetBasePointBase().X, 0.0232722018613592));
+    		X0Y4_ハイライト.SetBasePointBase(new Vector2D(X0Y4_ハイライト.GetBasePointBase().X, 0.0237146391591036));
     		num = 1.5;
-    		X0Y0_臍.SizeBase *= num;
-    		X0Y1_臍.SizeBase *= num;
-    		X0Y2_臍.SizeBase *= num;
-    		X0Y3_臍.SizeBase *= num;
-    		X0Y4_臍.SizeBase *= num;
-    		X0Y0_ハイライト.SizeBase *= num;
-    		X0Y1_ハイライト.SizeBase *= num;
-    		X0Y2_ハイライト.SizeBase *= num;
-    		X0Y3_ハイライト.SizeBase *= num;
-    		X0Y4_ハイライト.SizeBase *= num;
+    		X0Y0_臍.SetSizeBase(X0Y0_臍.GetSizeBase() * num);
+    		X0Y1_臍.SetSizeBase(X0Y1_臍.GetSizeBase() * num);
+    		X0Y2_臍.SetSizeBase(X0Y2_臍.GetSizeBase() * num);
+    		X0Y3_臍.SetSizeBase(X0Y3_臍.GetSizeBase() * num);
+    		X0Y4_臍.SetSizeBase(X0Y4_臍.GetSizeBase() * num);
+    		X0Y0_ハイライト.SetSizeBase(X0Y0_ハイライト.GetSizeBase() * num);
+    		X0Y1_ハイライト.SetSizeBase(X0Y1_ハイライト.GetSizeBase() * num);
+    		X0Y2_ハイライト.SetSizeBase(X0Y2_ハイライト.GetSizeBase() * num);
+    		X0Y3_ハイライト.SetSizeBase(X0Y3_ハイライト.GetSizeBase() * num);
+    		X0Y4_ハイライト.SetSizeBase(X0Y4_ハイライト.GetSizeBase() * num);
     		num = 0.6;
-    		X0Y0_臍.SizeXBase *= num;
-    		X0Y1_臍.SizeXBase *= num;
-    		X0Y2_臍.SizeXBase *= num;
-    		X0Y3_臍.SizeXBase *= num;
-    		X0Y4_臍.SizeXBase *= num;
-    		X0Y0_ハイライト.SizeXBase *= num;
-    		X0Y1_ハイライト.SizeXBase *= num;
-    		X0Y2_ハイライト.SizeXBase *= num;
-    		X0Y3_ハイライト.SizeXBase *= num;
-    		X0Y4_ハイライト.SizeXBase *= num;
+    		X0Y0_臍.SetSizeXBase(X0Y0_臍.GetSizeXBase() * num);
+    		X0Y1_臍.SetSizeXBase(X0Y1_臍.GetSizeXBase() * num);
+    		X0Y2_臍.SetSizeXBase(X0Y2_臍.GetSizeXBase() * num);
+    		X0Y3_臍.SetSizeXBase(X0Y3_臍.GetSizeXBase() * num);
+    		X0Y4_臍.SetSizeXBase(X0Y4_臍.GetSizeXBase() * num);
+    		X0Y0_ハイライト.SetSizeXBase(X0Y0_ハイライト.GetSizeXBase() * num);
+    		X0Y1_ハイライト.SetSizeXBase(X0Y1_ハイライト.GetSizeXBase() * num);
+    		X0Y2_ハイライト.SetSizeXBase(X0Y2_ハイライト.GetSizeXBase() * num);
+    		X0Y3_ハイライト.SetSizeXBase(X0Y3_ハイライト.GetSizeXBase() * num);
+    		X0Y4_ハイライト.SetSizeXBase(X0Y4_ハイライト.GetSizeXBase() * num);
     	}
 
     	public override void 描画0(RenderArea Are)
@@ -598,7 +599,7 @@ namespace SlaveMatrix
 
     	public override void 色更新()
     	{
-    		switch (Body.IndexY)
+    		switch (Body.GetIndexY())
     		{
     		case 0:
     			X0Y0_腹CP.Update();

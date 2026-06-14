@@ -121,11 +121,11 @@ namespace _2DGAMELIB
     	{
     		foreach (ShapePart item in partGroup.EnumAllPar())
     		{
-    			if (item.HitColor != Color.Transparent)
+    			if (item.GetHitColor() != Color.Transparent)
     			{
-    				Med.RemUniqueColor(item.HitColor);
+    				Med.RemUniqueColor(item.GetHitColor());
     			}
-    			item.HitColor = Med.GetUniqueColor();
+    			item.SetHitColor(Med.GetUniqueColor());
     		}
     	}
 

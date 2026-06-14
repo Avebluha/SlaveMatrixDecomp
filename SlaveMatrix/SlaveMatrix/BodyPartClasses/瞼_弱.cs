@@ -442,16 +442,16 @@ namespace SlaveMatrix
     		set
     		{
     			double num = 0.9 + 0.55 * value;
-    			X0Y0_瞼.PenWidth *= num;
-    			X0Y1_瞼.PenWidth *= num;
-    			X0Y2_瞼.PenWidth *= num;
-    			X0Y3_瞼.PenWidth *= num;
-    			X0Y4_瞼.PenWidth *= num;
-    			X1Y0_瞼.PenWidth *= num;
-    			X1Y1_瞼.PenWidth *= num;
-    			X1Y2_瞼.PenWidth *= num;
-    			X1Y3_瞼.PenWidth *= num;
-    			X1Y4_瞼.PenWidth *= num;
+    			X0Y0_瞼.SetPenWidth(X0Y0_瞼.GetPenWidth() * num);
+    			X0Y1_瞼.SetPenWidth(X0Y1_瞼.GetPenWidth() * num);
+    			X0Y2_瞼.SetPenWidth(X0Y2_瞼.GetPenWidth() * num);
+    			X0Y3_瞼.SetPenWidth(X0Y3_瞼.GetPenWidth() * num);
+    			X0Y4_瞼.SetPenWidth(X0Y4_瞼.GetPenWidth() * num);
+    			X1Y0_瞼.SetPenWidth(X1Y0_瞼.GetPenWidth() * num);
+    			X1Y1_瞼.SetPenWidth(X1Y1_瞼.GetPenWidth() * num);
+    			X1Y2_瞼.SetPenWidth(X1Y2_瞼.GetPenWidth() * num);
+    			X1Y3_瞼.SetPenWidth(X1Y3_瞼.GetPenWidth() * num);
+    			X1Y4_瞼.SetPenWidth(X1Y4_瞼.GetPenWidth() * num);
     		}
     	}
 
@@ -680,16 +680,16 @@ namespace SlaveMatrix
     	{
     		double num = 0.0;
     		double num2 = 1.5;
-    		Vector2D value = p.BasePointBase + (p.OP[0].ps[0] - p.BasePointBase) * (num + (num2 - num) * d);
-    		p.OP[2].ps[2] = value;
-    		p.OP[0].ps[0] = value;
+    		Vector2D value = p.GetBasePointBase() + (p.GetOP()[0].ps[0] - p.GetBasePointBase()) * (num + (num2 - num) * d);
+    		p.GetOP()[2].ps[2] = value;
+    		p.GetOP()[0].ps[0] = value;
     	}
 
     	public override void 色更新()
     	{
-    		if (Body.IndexX == 0)
+    		if (Body.GetIndexX() == 0)
     		{
-    			switch (Body.IndexY)
+    			switch (Body.GetIndexY())
     			{
     			case 0:
     				X0Y0_瞼CP.Update();
@@ -730,7 +730,7 @@ namespace SlaveMatrix
     		}
     		else
     		{
-    			switch (Body.IndexY)
+    			switch (Body.GetIndexY())
     			{
     			case 0:
     				X1Y0_瞼CP.Update();
@@ -773,9 +773,9 @@ namespace SlaveMatrix
 
     	public override void 色更新(Vector2D[] mm)
     	{
-    		if (Body.IndexX == 0)
+    		if (Body.GetIndexX() == 0)
     		{
-    			switch (Body.IndexY)
+    			switch (Body.GetIndexY())
     			{
     			case 0:
     				X0Y0_瞼CP.Update(mm);
@@ -816,7 +816,7 @@ namespace SlaveMatrix
     		}
     		else
     		{
-    			switch (Body.IndexY)
+    			switch (Body.GetIndexY())
     			{
     			case 0:
     				X1Y0_瞼CP.Update(mm);

@@ -1,5 +1,6 @@
 using System.Linq;
 using _2DGAMELIB;
+using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
@@ -488,7 +489,7 @@ namespace SlaveMatrix
     		if (Par != null && !(Par is 長物_蛇) && Par.Par != null && !(Par.Par is 長物_蛇))
     		{
     			_ = 右;
-    			X0Y0_Torso_Torso.AngleBase = 20.0.GetRanAngle();
+    			X0Y0_Torso_Torso.SetAngleBase(20.0.GetRanAngle());
     			Body.JoinPAall();
     		}
     	}

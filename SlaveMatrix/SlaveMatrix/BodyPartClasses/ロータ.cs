@@ -1,5 +1,6 @@
 using System.Drawing;
 using _2DGAMELIB;
+using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
@@ -258,18 +259,18 @@ namespace SlaveMatrix
     		X0Y4_ロータCP = new ColorP(X0Y4_ロータ, ロータCD, DisUnit, abj: true);
     		X0Y4_コードCP = new ColorP(X0Y4_コード, コードCD, DisUnit, abj: true);
     		Intensity = e.濃度;
-    		X0Y0_ロータ.BasePointBase = X0Y0_ロータ.ToLocal(X0Y0_ロータ.ToGlobal(X0Y0_ロータ.JP[2].Joint));
-    		X0Y1_ロータ.BasePointBase = X0Y1_ロータ.ToLocal(X0Y1_ロータ.ToGlobal(X0Y1_ロータ.JP[2].Joint));
-    		X0Y2_ロータ.BasePointBase = X0Y2_ロータ.ToLocal(X0Y2_ロータ.ToGlobal(X0Y2_ロータ.JP[2].Joint));
-    		X0Y3_ロータ.BasePointBase = X0Y3_ロータ.ToLocal(X0Y3_ロータ.ToGlobal(X0Y3_ロータ.JP[1].Joint));
-    		X0Y4_ロータ.BasePointBase = X0Y4_ロータ.ToLocal(X0Y4_ロータ.ToGlobal(X0Y4_ロータ.JP[1].Joint));
+    		X0Y0_ロータ.SetBasePointBase(X0Y0_ロータ.ToLocal(X0Y0_ロータ.ToGlobal(X0Y0_ロータ.GetJP()[2].Joint)));
+    		X0Y1_ロータ.SetBasePointBase(X0Y1_ロータ.ToLocal(X0Y1_ロータ.ToGlobal(X0Y1_ロータ.GetJP()[2].Joint)));
+    		X0Y2_ロータ.SetBasePointBase(X0Y2_ロータ.ToLocal(X0Y2_ロータ.ToGlobal(X0Y2_ロータ.GetJP()[2].Joint)));
+    		X0Y3_ロータ.SetBasePointBase(X0Y3_ロータ.ToLocal(X0Y3_ロータ.ToGlobal(X0Y3_ロータ.GetJP()[1].Joint)));
+    		X0Y4_ロータ.SetBasePointBase(X0Y4_ロータ.ToLocal(X0Y4_ロータ.ToGlobal(X0Y4_ロータ.GetJP()[1].Joint)));
     		尺度B = 1.08;
     		Body.JoinPAall();
     	}
 
     	public override void 色更新()
     	{
-    		switch (Body.IndexY)
+    		switch (Body.GetIndexY())
     		{
     		case 0:
     			X0Y0_ロータCP.Update();

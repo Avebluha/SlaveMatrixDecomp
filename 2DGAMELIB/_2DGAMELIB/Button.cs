@@ -25,7 +25,7 @@ namespace _2DGAMELIB
     	{
     		foreach (ShapePart item in partGroup.EnumAllPar())
     		{
-    			BaseColors.Add(item.BrushColor);
+    			BaseColors.Add(item.GetBrushColor());
     			OverColors.Add(BaseColors.Last().FuncHSV(delegate(Hsv hsv)
     			{
     				hsv.Hue += 30;
@@ -40,17 +40,17 @@ namespace _2DGAMELIB
     				hsv.Val += 100;
     				return hsv;
     			}));
-    			TextColors.Add(item.IsParT() ? item.ToParT().TextColor : Color.Empty);
+    			TextColors.Add(item.IsParT() ? item.ToParT().GetTextColor() : Color.Empty);
     		}
     		Over = delegate
     		{
     			int num4 = 0;
     			foreach (ShapePart item2 in partGroup.EnumAllPar())
     			{
-    				item2.BrushColor = OverColors[num4];
+    				item2.SetBrushColor(OverColors[num4]);
     				if (item2.IsParT())
     				{
-    					item2.ToParT().TextColor = TextColors[num4].Reverse();
+    					item2.ToParT().SetTextColor(TextColors[num4].Reverse());
     				}
     				num4++;
     			}
@@ -60,10 +60,10 @@ namespace _2DGAMELIB
     			int num3 = 0;
     			foreach (ShapePart item3 in partGroup.EnumAllPar())
     			{
-    				item3.BrushColor = PushColors[num3];
+    				item3.SetBrushColor(PushColors[num3]);
     				if (item3.IsParT())
     				{
-    					item3.ToParT().TextColor = TextColors[num3].Reverse();
+    					item3.ToParT().SetTextColor(TextColors[num3].Reverse());
     				}
     				num3++;
     			}
@@ -73,10 +73,10 @@ namespace _2DGAMELIB
     			int num2 = 0;
     			foreach (ShapePart item4 in partGroup.EnumAllPar())
     			{
-    				item4.BrushColor = OverColors[num2];
+    				item4.SetBrushColor(OverColors[num2]);
     				if (item4.IsParT())
     				{
-    					item4.ToParT().TextColor = TextColors[num2].Reverse();
+    					item4.ToParT().SetTextColor(TextColors[num2].Reverse());
     				}
     				num2++;
     			}
@@ -86,10 +86,10 @@ namespace _2DGAMELIB
     			int num = 0;
     			foreach (ShapePart item5 in partGroup.EnumAllPar())
     			{
-    				item5.BrushColor = BaseColors[num];
+    				item5.SetBrushColor(BaseColors[num]);
     				if (item5.IsParT())
     				{
-    					item5.ToParT().TextColor = TextColors[num];
+    					item5.ToParT().SetTextColor(TextColors[num]);
     				}
     				num++;
     			}

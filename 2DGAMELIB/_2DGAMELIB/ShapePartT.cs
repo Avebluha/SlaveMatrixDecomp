@@ -9,18 +9,14 @@ namespace _2DGAMELIB
     [Serializable]
     public class ShapePartT : ShapePart
     {
-    	[NonSerialized, JsonIgnore]
-    	private Font font = new Font("", 1f);
 
     	private double fontSize = 1.0;
 
-    	private bool EditF = true;
+    	[NonSerialized, JsonIgnore]
+    	private Font font = new Font("", 1f);
 
     	[NonSerialized, JsonIgnore]
     	private Brush brusht = new SolidBrush(Color.Black);
-
-        //unused
-    	private const double Shift = 1.0;
 
     	[NonSerialized, JsonIgnore]
     	private Brush brushs;
@@ -32,127 +28,89 @@ namespace _2DGAMELIB
 
     	private Vector2D rectSize = DataConsts.Vec2DOne;
 
+
     	public string Text = "";
 
-    	private RectangleF rect;
 
-    	private double us;
-
-    	private double usx;
-
-    	private double usy;
 
     	private Vector2D bp;
 
-    	private Vector2D p;
 
-    	private Vector2D v;
-
-    	private double a0;
-
-    	private double a1;
-
-    	private double M11;
-
-    	private double M12;
-
-    	private float af;
-
-    	private float xf;
-
-    	private float yf;
-
-    	private bool EditT = true;
 
     	private bool EditTS = true;
+    	private bool EditF = true;
 
-    	private CharacterRange[] crr = new CharacterRange[1];
 
-    	public Font Font
-    	{
-    		get { return font; }
-    		set
-    		{
-    			if (font != value && font != null)
-    			{
-    				font.Dispose();
-    			}
-    			font = value;
-    			EditF = true;
-    		}
-    	}
 
-    	public double FontSize
-    	{
-    		get { return fontSize; }
-    		set
-    		{
-    			fontSize = value;
-    			EditF = true;
-    		}
-    	}
+        public void SetFont(Font value)
+        {
+            if (font != value && font != null)
+            {
+                font.Dispose();
+            }
+            font = value;
+            EditF = true;
+        }
 
-    	public Brush TextBrush
-    	{
-    		get { return brusht; }
-    		set
-    		{
-    			if (brusht != value && brusht != null)
-    			{
-    				brusht.Dispose();
-    			}
-    			brusht = value;
-    		}
-    	}
+        public double GetFontSize()
+        { return fontSize; }
 
-    	public Color TextColor
-    	{
-    		get { return ((SolidBrush)brusht).Color; }
-    		set { ((SolidBrush)brusht).Color = value; }
-    	}
+        public void SetFontSize(double value)
+        {
+            fontSize = value;
+            EditF = true;
+        }
 
-    	public Brush ShadBrush
-    	{
-    		get { return brushs; }
-    		set
-    		{
-    			if (brushs != value && brushs != null)    			
-    				brushs.Dispose();
+        public void SetTextBrush(Brush value)
+        {
+            if (brusht != value && brusht != null)
+            {
+                brusht.Dispose();
+            }
+            brusht = value;
+        }
 
-    			brushs = value;
-    		}
-    	}
+        public Color GetTextColor()
+        { return ((SolidBrush)brusht).Color; }
 
-    	public Color ShadColor
-    	{
-    		get { return ((SolidBrush)brushs).Color; }
-    		set { ((SolidBrush)brushs).Color = value; }
-    	}
+        public void SetTextColor(Color value)
+        { ((SolidBrush)brusht).Color = value; }
 
-    	public StringFormat StringFormat
-    	{
-    		get { return stringformat; }
-    		set
-    		{
-    			if (stringformat != value && stringformat != null)
-    			{
-    				stringformat.Dispose();
-    			}
-    			stringformat = value;
-    		}
-    	}
+        public void SetShadBrush(Brush value)
+        {
+            if (brushs != value && brushs != null)
+                brushs.Dispose();
 
-    	public Vector2D RectSize
-    	{
-    		get { return rectSize; }
-    		set
-    		{
-    			rectSize = value;
-    			EditT = true;
-    		}
-    	}
+            brushs = value;
+        }
 
-    	public new void SetDefault()
+        public Color GetShadColor()
+        { return ((SolidBrush)brushs).Color; }
+
+        public void SetShadColor(Color value)
+        { ((SolidBrush)brushs).Color = value; }
+
+        public StringFormat GetStringFormat()
+        { return stringformat; }
+
+        public void SetStringFormat(StringFormat value)
+        {
+            if (stringformat != value && stringformat != null)
+            {
+                stringformat.Dispose();
+            }
+            stringformat = value;
+        }
+
+        public Vector2D GetRectSize()
+        { return rectSize; }
+
+        public void SetRectSize(Vector2D value)
+        {
+            rectSize = value;
+        }
+
+        public new void SetDefault()
     	{
             base.SetDefault();
 
@@ -174,7 +132,6 @@ namespace _2DGAMELIB
             stringformat = new StringFormat();
 
             EditF = true;
-            EditT = true;
             EditTS = true;
         }
 
@@ -194,16 +151,16 @@ namespace _2DGAMELIB
     		fontSize = ShapePartT.fontSize;
 
     		if (ShapePartT.font != null)
-    			Font = ShapePartT.font.Copy();
+                SetFont(ShapePartT.font.Copy());
 
     		if (ShapePartT.brusht != null)
-    			TextBrush = ShapePartT.brusht.Copy();
+                SetTextBrush(ShapePartT.brusht.Copy());
 
     		if (ShapePartT.brushs != null)
-    			ShadBrush = ShapePartT.brushs.Copy();
+                SetShadBrush(ShapePartT.brushs.Copy());
 
     		if (ShapePartT.stringformat != null)
-    			StringFormat = ShapePartT.stringformat.Copy();
+                SetStringFormat(ShapePartT.stringformat.Copy());
 
     		positionT = ShapePartT.positionT;
     		rectSize = ShapePartT.rectSize;
@@ -212,11 +169,14 @@ namespace _2DGAMELIB
 
     	public new void Draw(double Unit, Graphics Graphics)
     	{
-    		if (Edit)
-    			EditT = true;
+    		Calculation(Unit);
 
-    		if (EditS || EditPS)
-    			EditTS = true;
+    		if (EditF || EditTS)
+    		{
+                RebuildFont((float)(Unit * base.GetSize() * fontSize));
+    			EditF = false;
+    			EditTS = false;
+    		}
 
     		base.Draw(Unit, Graphics);
     		DrawString(Unit, Graphics);
@@ -224,30 +184,25 @@ namespace _2DGAMELIB
 
     	private void Calculation(double Unit)
     	{
-    		us = Unit * base.Size;
-    		usx = us * base.SizeX;
-    		usy = us * base.SizeY;
+    		double us = Unit * base.GetSize();
+    		double usx = us * base.GetSizeX();
+    		double usy = us * base.GetSizeY();
 
-    		bp = base.BasePoint;
+    		bp = base.GetBasePoint();
     		bp.X *= usx;
     		bp.Y *= usy;
 
-    		a0 = base.Angle;
-            a1 = System.Math.PI * a0 / 180.0;
-            M11 = System.Math.Cos(a1);
-            M12 = System.Math.Sin(a1);
+            double a1 = System.Math.PI * base.GetAngle() / 180.0;
+            double M11 = System.Math.Cos(a1);
+            double M12 = System.Math.Sin(a1);
 
+			Vector2D v;
     		v.X = bp.X * M11 + bp.Y * (0.0 - M12);
     		v.Y = bp.X * M12 + bp.Y * M11;
 
-    		p = base.Position;
+    		Vector2D p = base.GetPosition();
     		bp.X = p.X * Unit - v.X;
     		bp.Y = p.Y * Unit - v.Y;
-
-    		rect.X = (float)(positionT.X * us);
-    		rect.Y = (float)(positionT.Y * us);
-    		rect.Width = (float)(rectSize.X * us);
-    		rect.Height = (float)(rectSize.Y * us);
     	}
 
         private void RebuildFont(double scaledSize)
@@ -273,60 +228,46 @@ namespace _2DGAMELIB
 
         private void DrawString(double Unit, Graphics Graphics)
     	{
-    		if (EditT)
-    		{
-    			Calculation(Unit);
-    			EditT = false;
-    		}
-
-    		if (EditF || EditTS)
-    		{
-                RebuildFont((float)(us * fontSize));
-    			EditF = false;
-    			EditTS = false;
-    		}
-
-    		af = (float)a0;
-    		xf = (float)base.SizeX;
-    		yf = (float)base.SizeY;
-
+			RectangleF rect = default(RectangleF);
+    		rect.X = (float)(positionT.X * Unit * base.GetSize());
+    		rect.Y = (float)(positionT.Y * Unit * base.GetSize());
+    		rect.Width = (float)(rectSize.X * Unit * base.GetSize());
+    		rect.Height = (float)(rectSize.Y * Unit * base.GetSize());
 
             if (brushs != null)
             {
                 GraphicsState state = Graphics.Save();
-
-                Graphics.TranslateTransform((float)(bp.X + Shift), (float)(bp.Y + Shift));
-                Graphics.RotateTransform(af);
-                Graphics.ScaleTransform(xf, yf);
+                Graphics.TranslateTransform((float)(bp.X + 1.0), (float)(bp.Y + 1.0));
+                Graphics.RotateTransform((float)base.GetAngle());
+                Graphics.ScaleTransform((float)base.GetSizeX(), (float)base.GetSizeY());
                 Graphics.DrawString(Text, font, brushs, rect, stringformat);
-
                 Graphics.Restore(state);
             }
 
             {
                 GraphicsState state = Graphics.Save();
-
                 Graphics.TranslateTransform((float)bp.X, (float)bp.Y);
-                Graphics.RotateTransform(af);
-                Graphics.ScaleTransform(xf, yf);
+                Graphics.RotateTransform((float)base.GetAngle());
+                Graphics.ScaleTransform((float)base.GetSizeX(), (float)base.GetSizeY());
                 Graphics.DrawString(Text, font, brusht, rect, stringformat);
-
                 Graphics.Restore(state);
             }
         }
 
-    	public Vector2D_2 GetStringRect(double Unit, Graphics Graphics)
+    	public double[] GetStringRect(double Unit, Graphics Graphics)
     	{
-    		double num = Unit * base.Size;
+    		double num = Unit * base.GetSize();
 
-    		if (EditF || EditS || EditPS || EditTS)
+    		if (EditF || EditTS)
     		{
                 RebuildFont((float)(num * fontSize));
                 EditF = false;
     			EditTS = false;
     		}
+    		CharacterRange[] crr = new CharacterRange[]{
+				new CharacterRange(0, Text.Length)
+			};
 
-    		crr[0] = new CharacterRange(0, Text.Length);
     		stringformat.SetMeasurableCharacterRanges(crr);
 
             RectangleF layoutRect = new RectangleF(
@@ -339,17 +280,20 @@ namespace _2DGAMELIB
                 .MeasureCharacterRanges(Text ?? string.Empty,  font, layoutRect, stringformat)[0]
                 .GetBounds(Graphics);
 
-            return new Vector2D_2(
-                new Vector2D(bounds.X / num, bounds.Y / num),
-                new Vector2D(bounds.Width / num, bounds.Height / num));
+            return new double[4]{
+                bounds.X / num, 
+                bounds.Y / num,
+                bounds.Width / num, 
+                bounds.Height / num
+            };
         }
 
         public Vector2D[] GetStringRectPoints(double Unit, Graphics Graphics)
     	{
-            Vector2D_2 stringRect = GetStringRect(Unit, Graphics);
+            double[] stringRect = GetStringRect(Unit, Graphics);
 
-            Vector2D pos = stringRect.v1;
-            Vector2D size = stringRect.v2;
+            Vector2D pos = new Vector2D(stringRect[0], stringRect[1]);
+            Vector2D size = new Vector2D(stringRect[2], stringRect[3]);
 
             size.X *= 1.07f;
 
@@ -376,8 +320,9 @@ namespace _2DGAMELIB
     		curveOutline.ps.Add(stringRectPoints[2].AddXY(x, num) + vector2D);
     		curveOutline.ps.Add(stringRectPoints[3].AddY(num) + vector2D);
 
-    		base.OP.Add(curveOutline);
+    		base.GetOP().Add(curveOutline);
     	}
+		
     	public new void Dispose()
     	{
     		base.Dispose();

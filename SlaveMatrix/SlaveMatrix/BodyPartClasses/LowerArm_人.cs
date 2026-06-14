@@ -1,5 +1,6 @@
 using System.Linq;
 using _2DGAMELIB;
+using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
@@ -4601,14 +4602,14 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return X0Y0_LowerArm.OP[右 ? 3 : 0].Outline;
+    			return X0Y0_LowerArm.GetOP()[右 ? 3 : 0].Outline;
     		}
     		set
     		{
-    			X0Y0_LowerArm.OP[右 ? 3 : 0].Outline = value;
-    			X0Y0_獣性1_獣腕.OP[右 ? 3 : 2].Outline = value;
-    			X0Y0_グローブ_通常_グローブ.OP[右 ? 3 : 0].Outline = value;
-    			X0Y0_グローブ_筋肉_グローブ.OP[右 ? 3 : 0].Outline = value;
+    			X0Y0_LowerArm.GetOP()[右 ? 3 : 0].Outline = value;
+    			X0Y0_獣性1_獣腕.GetOP()[右 ? 3 : 2].Outline = value;
+    			X0Y0_グローブ_通常_グローブ.GetOP()[右 ? 3 : 0].Outline = value;
+    			X0Y0_グローブ_筋肉_グローブ.GetOP()[右 ? 3 : 0].Outline = value;
     		}
     	}
 
@@ -5462,7 +5463,7 @@ namespace SlaveMatrix
     	public override void SetRestraintAngle()
     	{
     		double num = (右 ? (-1.0) : 1.0);
-    		X0Y0_LowerArm.AngleBase = num * 130.0;
+    		X0Y0_LowerArm.SetAngleBase(num * 130.0);
     		Body.JoinPAall();
     	}
 
@@ -5471,12 +5472,12 @@ namespace SlaveMatrix
     		if (獣性1_獣腕_表示)
     		{
     			double num = 1.7;
-    			X0Y0_腕輪_革.SizeBase *= num;
-    			X0Y0_腕輪_金具1.SizeBase *= num;
-    			X0Y0_腕輪_金具2.SizeBase *= num;
-    			X0Y0_腕輪_金具3.SizeBase *= num;
-    			X0Y0_腕輪_金具左.SizeBase *= num;
-    			X0Y0_腕輪_金具右.SizeBase *= num;
+    			X0Y0_腕輪_革.SetSizeBase(X0Y0_腕輪_革.GetSizeBase() * num);
+    			X0Y0_腕輪_金具1.SetSizeBase(X0Y0_腕輪_金具1.GetSizeBase() * num);
+    			X0Y0_腕輪_金具2.SetSizeBase(X0Y0_腕輪_金具2.GetSizeBase() * num);
+    			X0Y0_腕輪_金具3.SetSizeBase(X0Y0_腕輪_金具3.GetSizeBase() * num);
+    			X0Y0_腕輪_金具左.SetSizeBase(X0Y0_腕輪_金具左.GetSizeBase() * num);
+    			X0Y0_腕輪_金具右.SetSizeBase(X0Y0_腕輪_金具右.GetSizeBase() * num);
     		}
     	}
 

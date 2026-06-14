@@ -133,7 +133,7 @@ namespace SlaveMatrix
     		set
     		{
     			欠損_ = value;
-    			Body.IndexY = (欠損_ ? 1 : 0);
+    			Body.SetIndexY((欠損_ ? 1 : 0));
     		}
     	}
 
@@ -393,8 +393,8 @@ namespace SlaveMatrix
     		{
     			double num = value.Inverse();
     			double num2 = (右 ? (-1.0) : 1.0);
-    			X0Y0_前翅_前翅1.AngleCont = num2 * -102.15 * num;
-    			X0Y1_前翅_前翅1.AngleCont = num2 * -102.15 * num;
+    			X0Y0_前翅_前翅1.SetAngleCont(num2 * -102.15 * num);
+    			X0Y1_前翅_前翅1.SetAngleCont(num2 * -102.15 * num);
     		}
     	}
 
@@ -508,14 +508,14 @@ namespace SlaveMatrix
     	public override void SetAngle0()
     	{
     		double num = (右 ? (-1.0) : 1.0);
-    		X0Y0_前翅_前翅1.AngleBase = num * 10.0;
-    		X0Y1_前翅_前翅1.AngleBase = num * 10.0;
+    		X0Y0_前翅_前翅1.SetAngleBase(num * 10.0);
+    		X0Y1_前翅_前翅1.SetAngleBase(num * 10.0);
     		Body.JoinPAall();
     	}
 
     	public override void 色更新()
     	{
-    		if (Body.IndexY == 0)
+    		if (Body.GetIndexY() == 0)
     		{
     			X0Y0_前翅_前翅1CP.Update();
     			X0Y0_前翅_翅脈線1CP.Update();

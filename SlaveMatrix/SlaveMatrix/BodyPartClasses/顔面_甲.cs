@@ -1,5 +1,6 @@
 using System.Linq;
 using _2DGAMELIB;
+using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
@@ -487,17 +488,17 @@ namespace SlaveMatrix
     	{
     		set
     		{
-    			Vector2D positionCont = (X0Y0_面左下_面.OP[1].ps[2] - X0Y0_面左下_面.OP[2].ps[2]) * value;
-    			X0Y0_面左上_面目.PositionCont = positionCont;
-    			X0Y0_面左下_面目.PositionCont = positionCont;
-    			X0Y0_面左下_面.PositionCont = positionCont;
-    			X0Y0_面左外.PositionCont = positionCont;
-    			positionCont = (X0Y0_面右下_面.OP[3].ps[2] - X0Y0_面右下_面.OP[2].ps[2]) * value;
-    			X0Y0_面右上_面目.PositionCont = positionCont;
-    			X0Y0_面右下_面目.PositionCont = positionCont;
-    			X0Y0_面右下_面.PositionCont = positionCont;
-    			X0Y0_面右外.PositionCont = positionCont;
-    			X0Y0_面中2_面中.PositionCont = (X0Y0_面中2_面中.OP[2].ps[1] - X0Y0_面中2_面中.OP[0].ps[0]) * 0.35 * value;
+    			Vector2D positionCont = (X0Y0_面左下_面.GetOP()[1].ps[2] - X0Y0_面左下_面.GetOP()[2].ps[2]) * value;
+    			X0Y0_面左上_面目.SetPositionCont(positionCont);
+    			X0Y0_面左下_面目.SetPositionCont(positionCont);
+    			X0Y0_面左下_面.SetPositionCont(positionCont);
+    			X0Y0_面左外.SetPositionCont(positionCont);
+    			positionCont = (X0Y0_面右下_面.GetOP()[3].ps[2] - X0Y0_面右下_面.GetOP()[2].ps[2]) * value;
+    			X0Y0_面右上_面目.SetPositionCont(positionCont);
+    			X0Y0_面右下_面目.SetPositionCont(positionCont);
+    			X0Y0_面右下_面.SetPositionCont(positionCont);
+    			X0Y0_面右外.SetPositionCont(positionCont);
+    			X0Y0_面中2_面中.SetPositionCont((X0Y0_面中2_面中.GetOP()[2].ps[1] - X0Y0_面中2_面中.GetOP()[0].ps[0]) * 0.35 * value);
     		}
     	}
 

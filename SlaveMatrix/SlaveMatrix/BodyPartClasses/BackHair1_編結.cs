@@ -382,21 +382,21 @@ namespace SlaveMatrix
     		set
     		{
     			double num = 0.8 + 0.4 * value;
-    			X0Y0_髪基.SizeBase *= num;
-    			X0Y0_お下げ_編節1_髪節.SizeBase *= num;
-    			X0Y0_お下げ_編節1_髪編目.SizeBase *= num;
-    			X0Y0_お下げ_編節2_髪節.SizeBase *= num;
-    			X0Y0_お下げ_編節2_髪編目.SizeBase *= num;
-    			X0Y0_お下げ_編節3_髪節.SizeBase *= num;
-    			X0Y0_お下げ_編節3_髪編目.SizeBase *= num;
-    			X0Y0_お下げ_編節4_髪節.SizeBase *= num;
-    			X0Y0_お下げ_編節4_髪編目.SizeBase *= num;
-    			X0Y0_お下げ_編節5_髪節.SizeBase *= num;
-    			X0Y0_お下げ_編節5_髪編目.SizeBase *= num;
-    			X0Y0_お下げ_編節6_髪節.SizeBase *= num;
-    			X0Y0_お下げ_編節6_髪編目.SizeBase *= num;
-    			X0Y0_お下げ_編節7_髪節.SizeBase *= num;
-    			X0Y0_お下げ_編節7_髪編目.SizeBase *= num;
+    			X0Y0_髪基.SetSizeBase(X0Y0_髪基.GetSizeBase() * num);
+    			X0Y0_お下げ_編節1_髪節.SetSizeBase(X0Y0_お下げ_編節1_髪節.GetSizeBase() * num);
+    			X0Y0_お下げ_編節1_髪編目.SetSizeBase(X0Y0_お下げ_編節1_髪編目.GetSizeBase() * num);
+    			X0Y0_お下げ_編節2_髪節.SetSizeBase(X0Y0_お下げ_編節2_髪節.GetSizeBase() * num);
+    			X0Y0_お下げ_編節2_髪編目.SetSizeBase(X0Y0_お下げ_編節2_髪編目.GetSizeBase() * num);
+    			X0Y0_お下げ_編節3_髪節.SetSizeBase(X0Y0_お下げ_編節3_髪節.GetSizeBase() * num);
+    			X0Y0_お下げ_編節3_髪編目.SetSizeBase(X0Y0_お下げ_編節3_髪編目.GetSizeBase() * num);
+    			X0Y0_お下げ_編節4_髪節.SetSizeBase(X0Y0_お下げ_編節4_髪節.GetSizeBase() * num);
+    			X0Y0_お下げ_編節4_髪編目.SetSizeBase(X0Y0_お下げ_編節4_髪編目.GetSizeBase() * num);
+    			X0Y0_お下げ_編節5_髪節.SetSizeBase(X0Y0_お下げ_編節5_髪節.GetSizeBase() * num);
+    			X0Y0_お下げ_編節5_髪編目.SetSizeBase(X0Y0_お下げ_編節5_髪編目.GetSizeBase() * num);
+    			X0Y0_お下げ_編節6_髪節.SetSizeBase(X0Y0_お下げ_編節6_髪節.GetSizeBase() * num);
+    			X0Y0_お下げ_編節6_髪編目.SetSizeBase(X0Y0_お下げ_編節6_髪編目.GetSizeBase() * num);
+    			X0Y0_お下げ_編節7_髪節.SetSizeBase(X0Y0_お下げ_編節7_髪節.GetSizeBase() * num);
+    			X0Y0_お下げ_編節7_髪編目.SetSizeBase(X0Y0_お下げ_編節7_髪編目.GetSizeBase() * num);
     		}
     	}
 
@@ -404,7 +404,7 @@ namespace SlaveMatrix
     	{
     		set
     		{
-    			X0Y0_髪基.PositionCont = new Vector2D(X0Y0_髪基.PositionCont.X, X0Y0_髪基.PositionCont.Y + 0.02 * value.Inverse());
+    			X0Y0_髪基.SetPositionCont(new Vector2D(X0Y0_髪基.GetPositionCont().X, X0Y0_髪基.GetPositionCont().Y + 0.02 * value.Inverse()));
     		}
     	}
 

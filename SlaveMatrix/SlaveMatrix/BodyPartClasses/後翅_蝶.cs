@@ -221,7 +221,7 @@ namespace SlaveMatrix
     		set
     		{
     			欠損_ = value;
-    			Body.IndexY = (欠損_ ? 1 : 0);
+    			Body.SetIndexY((欠損_ ? 1 : 0));
     		}
     	}
 
@@ -815,14 +815,14 @@ namespace SlaveMatrix
     	public override void SetAngle0()
     	{
     		double num = (右 ? (-1.0) : 1.0);
-    		X0Y0_後翅_後翅.AngleBase = num * 5.0;
-    		X0Y1_後翅_後翅.AngleBase = num * 5.0;
+    		X0Y0_後翅_後翅.SetAngleBase(num * 5.0);
+    		X0Y1_後翅_後翅.SetAngleBase(num * 5.0);
     		Body.JoinPAall();
     	}
 
     	public override void 色更新()
     	{
-    		if (Body.IndexY == 0)
+    		if (Body.GetIndexY() == 0)
     		{
     			X0Y0_後翅_後翅CP.Update();
     			X0Y0_後翅_水青_柄CP.Update();

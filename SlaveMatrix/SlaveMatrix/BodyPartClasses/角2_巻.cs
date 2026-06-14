@@ -127,7 +127,7 @@ namespace SlaveMatrix
     		set
     		{
     			欠損_ = value;
-    			Body.IndexY = (欠損_ ? 1 : 0);
+    			Body.SetIndexY((欠損_ ? 1 : 0));
     		}
     	}
 
@@ -520,7 +520,7 @@ namespace SlaveMatrix
 
     	public override void 根描画(RenderArea Are)
     	{
-    		if (Body.IndexY == 0)
+    		if (Body.GetIndexY() == 0)
     		{
     			Are.Draw(X0Y0_根_根);
     			Are.Draw(X0Y0_根_凸6);
@@ -545,7 +545,7 @@ namespace SlaveMatrix
 
     	public override void 先描画(RenderArea Are)
     	{
-    		if (Body.IndexY == 0)
+    		if (Body.GetIndexY() == 0)
     		{
     			Are.Draw(X0Y0_先_先);
     			Are.Draw(X0Y0_先_凸1);
@@ -558,7 +558,7 @@ namespace SlaveMatrix
 
     	public override void 色更新()
     	{
-    		if (Body.IndexY == 0)
+    		if (Body.GetIndexY() == 0)
     		{
     			X0Y0_根_根CP.Update();
     			X0Y0_根_凸6CP.Update();

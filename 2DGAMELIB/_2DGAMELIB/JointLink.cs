@@ -14,7 +14,7 @@ namespace _2DGAMELIB
     		int num = 0;
     		List<int> list = new List<int>();
     		List<ShapePart> list2 = EnumPar.ToList();
-    		foreach (JointPoint item in JoinRoot.JP)
+    		foreach (JointPoint item in JoinRoot.GetJP())
     		{
     			Vector2D v = JoinRoot.ToGlobal(item.Joint);
     			int num2 = 0;
@@ -23,7 +23,7 @@ namespace _2DGAMELIB
     			{
     				if (JoinRoot != item2)
     				{
-    					if (v.DistanceSquared(item2.Position) <= IdentityDistance)
+    					if (v.DistanceSquared(item2.GetPosition()) <= IdentityDistance)
     					{
     						joints.Joins.Add(new Joint(JoinRoot, num, item2));
     						if (!list.Contains(num2))
@@ -59,7 +59,7 @@ namespace _2DGAMELIB
     			{
     				ShapePart shapePart = js.Joins[i].Par1;
     				int num3 = 0;
-    				foreach (JointPoint item in shapePart.JP)
+    				foreach (JointPoint item in shapePart.GetJP())
     				{
     					Vector2D v = shapePart.ToGlobal(item.Joint);
     					int num4 = 0;
@@ -68,7 +68,7 @@ namespace _2DGAMELIB
     					{
     						if (shapePart != item2)
     						{
-    							if (v.DistanceSquared(item2.Position) <= IdentityDistance)
+    							if (v.DistanceSquared(item2.GetPosition()) <= IdentityDistance)
     							{
     								js.Joins.Add(new Joint(shapePart, num3, item2));
     								if (!del.Contains(num4))
@@ -108,12 +108,12 @@ namespace _2DGAMELIB
     				if (JoinRoot != item2)
     				{
     					int num2 = 0;
-    					foreach (JointPoint item3 in item.JP)
+    					foreach (JointPoint item3 in item.GetJP())
     					{
     						Vector2D v = item.ToGlobal(item3.Joint);
     						foreach (ShapePart item4 in item2.EnumJoinRoot)
     						{
-    							if (v.DistanceSquared(item4.Position) <= IdentityDistance)
+    							if (v.DistanceSquared(item4.GetPosition()) <= IdentityDistance)
     							{
     								jointsD.Joins.Add(new JointD(JoinRoot, item, num2, item2));
     								if (!list.Contains(num))
@@ -160,12 +160,12 @@ namespace _2DGAMELIB
     						if (variantGrid != item2)
     						{
     							int num4 = 0;
-    							foreach (JointPoint item3 in item.JP)
+    							foreach (JointPoint item3 in item.GetJP())
     							{
     								Vector2D v = item.ToGlobal(item3.Joint);
     								foreach (ShapePart item4 in item2.EnumJoinRoot)
     								{
-    									if (v.DistanceSquared(item4.Position) <= IdentityDistance)
+    									if (v.DistanceSquared(item4.GetPosition()) <= IdentityDistance)
     									{
     										jsd.Joins.Add(new JointD(variantGrid, item, num4, item2));
     										if (!del.Contains(num3))

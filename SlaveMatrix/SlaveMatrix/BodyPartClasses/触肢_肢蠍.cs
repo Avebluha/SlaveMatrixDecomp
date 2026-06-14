@@ -645,19 +645,19 @@ namespace SlaveMatrix
     	public override void SetAngle0()
     	{
     		double num = (右 ? (-1.0) : 1.0);
-    		X0Y0_転節.AngleBase = num * -30.0;
-    		X0Y0_腿節.AngleBase = num * -45.0;
-    		X0Y0_膝節.AngleBase = num * 84.0;
-    		X0Y0_爪1.AngleBase = num * 76.0;
-    		X0Y0_爪2.AngleBase = num * -15.0;
+    		X0Y0_転節.SetAngleBase(num * -30.0);
+    		X0Y0_腿節.SetAngleBase(num * -45.0);
+    		X0Y0_膝節.SetAngleBase(num * 84.0);
+    		X0Y0_爪1.SetAngleBase(num * 76.0);
+    		X0Y0_爪2.SetAngleBase(num * -15.0);
     		Body.JoinPAall();
     	}
 
     	public override void SetRestraintAngle()
     	{
     		double num = (右 ? (-1.0) : 1.0);
-    		X0Y0_爪1.AngleBase = num * 76.0;
-    		X0Y0_爪2.AngleBase = num * 0.0;
+    		X0Y0_爪1.SetAngleBase(num * 76.0);
+    		X0Y0_爪2.SetAngleBase(num * 0.0);
     		Body.JoinPAall();
     	}
 

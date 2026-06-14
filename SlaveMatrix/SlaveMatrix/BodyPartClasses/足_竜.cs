@@ -1531,11 +1531,11 @@ namespace SlaveMatrix
     	public override void SetAngle0()
     	{
     		double num = (右 ? (-1.0) : 1.0);
-    		X0Y0_足.AngleBase = num * -38.0;
-    		X0Y0_薬指_指.AngleBase = num * -6.0;
-    		X0Y0_中指_指.AngleBase = num * -6.0;
-    		X0Y0_人指_指.AngleBase = num * -6.0;
-    		X0Y0_親指_指.AngleBase = num * -6.0;
+    		X0Y0_足.SetAngleBase(num * -38.0);
+    		X0Y0_薬指_指.SetAngleBase(num * -6.0);
+    		X0Y0_中指_指.SetAngleBase(num * -6.0);
+    		X0Y0_人指_指.SetAngleBase(num * -6.0);
+    		X0Y0_親指_指.SetAngleBase(num * -6.0);
     		Body.JoinPAall();
     	}
 

@@ -1,4 +1,5 @@
 using _2DGAMELIB;
+using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
@@ -48,7 +49,7 @@ namespace SlaveMatrix
     		this.Element = Element;
     		foreach (ShapePart item in Element.Body.EnumAllPar())
     		{
-    			item.HitColor = Med.GetUniqueColor();
+    			item.SetHitColor(Med.GetUniqueColor());
     		}
     	}
 

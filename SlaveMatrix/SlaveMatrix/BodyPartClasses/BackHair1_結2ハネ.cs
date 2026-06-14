@@ -214,12 +214,12 @@ namespace SlaveMatrix
     		set
     		{
     			double num = 0.5 + 0.9 * value;
-    			X0Y0_お下げ左_髪左根.SizeYBase *= num;
-    			X0Y0_お下げ左_髪左1.SizeYBase *= num;
-    			X0Y0_お下げ左_髪左2.SizeYBase *= num;
-    			X0Y0_お下げ右_髪右根.SizeYBase *= num;
-    			X0Y0_お下げ右_髪右1.SizeYBase *= num;
-    			X0Y0_お下げ右_髪右2.SizeYBase *= num;
+    			X0Y0_お下げ左_髪左根.SetSizeYBase(X0Y0_お下げ左_髪左根.GetSizeYBase() * num);
+    			X0Y0_お下げ左_髪左1.SetSizeYBase(X0Y0_お下げ左_髪左1.GetSizeYBase() * num);
+    			X0Y0_お下げ左_髪左2.SetSizeYBase(X0Y0_お下げ左_髪左2.GetSizeYBase() * num);
+    			X0Y0_お下げ右_髪右根.SetSizeYBase(X0Y0_お下げ右_髪右根.GetSizeYBase() * num);
+    			X0Y0_お下げ右_髪右1.SetSizeYBase(X0Y0_お下げ右_髪右1.GetSizeYBase() * num);
+    			X0Y0_お下げ右_髪右2.SetSizeYBase(X0Y0_お下げ右_髪右2.GetSizeYBase() * num);
     		}
     	}
 
@@ -228,12 +228,12 @@ namespace SlaveMatrix
     		set
     		{
     			double num = 1.0 + 0.5 * value;
-    			X0Y0_お下げ左_髪左根.SizeXBase *= num;
-    			X0Y0_お下げ左_髪左1.SizeXBase *= num;
-    			X0Y0_お下げ左_髪左2.SizeXBase *= num;
-    			X0Y0_お下げ右_髪右根.SizeXBase *= num;
-    			X0Y0_お下げ右_髪右1.SizeXBase *= num;
-    			X0Y0_お下げ右_髪右2.SizeXBase *= num;
+    			X0Y0_お下げ左_髪左根.SetSizeXBase(X0Y0_お下げ左_髪左根.GetSizeXBase() * num);
+    			X0Y0_お下げ左_髪左1.SetSizeXBase(X0Y0_お下げ左_髪左1.GetSizeXBase() * num);
+    			X0Y0_お下げ左_髪左2.SetSizeXBase(X0Y0_お下げ左_髪左2.GetSizeXBase() * num);
+    			X0Y0_お下げ右_髪右根.SetSizeXBase(X0Y0_お下げ右_髪右根.GetSizeXBase() * num);
+    			X0Y0_お下げ右_髪右1.SetSizeXBase(X0Y0_お下げ右_髪右1.GetSizeXBase() * num);
+    			X0Y0_お下げ右_髪右2.SetSizeXBase(X0Y0_お下げ右_髪右2.GetSizeXBase() * num);
     		}
     	}
 
@@ -241,10 +241,10 @@ namespace SlaveMatrix
     	{
     		set
     		{
-    			X0Y0_お下げ左_髪左1.AngleBase = 1.5 * value;
-    			X0Y0_お下げ左_髪左2.AngleBase = 1.5 * value;
-    			X0Y0_お下げ右_髪右1.AngleBase = -1.5 * value;
-    			X0Y0_お下げ右_髪右2.AngleBase = -1.5 * value;
+    			X0Y0_お下げ左_髪左1.SetAngleBase(1.5 * value);
+    			X0Y0_お下げ左_髪左2.SetAngleBase(1.5 * value);
+    			X0Y0_お下げ右_髪右1.SetAngleBase(-1.5 * value);
+    			X0Y0_お下げ右_髪右2.SetAngleBase(-1.5 * value);
     		}
     	}
 
@@ -253,8 +253,8 @@ namespace SlaveMatrix
     		set
     		{
     			double num = value.Inverse();
-    			X0Y0_お下げ左_髪左根.PositionCont = new Vector2D(X0Y0_お下げ左_髪左根.PositionCont.X - 0.005 * num, X0Y0_お下げ左_髪左根.PositionCont.Y + 0.02 * num);
-    			X0Y0_お下げ右_髪右根.PositionCont = new Vector2D(X0Y0_お下げ右_髪右根.PositionCont.X + 0.005 * num, X0Y0_お下げ右_髪右根.PositionCont.Y + 0.02 * num);
+    			X0Y0_お下げ左_髪左根.SetPositionCont(new Vector2D(X0Y0_お下げ左_髪左根.GetPositionCont().X - 0.005 * num, X0Y0_お下げ左_髪左根.GetPositionCont().Y + 0.02 * num));
+    			X0Y0_お下げ右_髪右根.SetPositionCont(new Vector2D(X0Y0_お下げ右_髪右根.GetPositionCont().X + 0.005 * num, X0Y0_お下げ右_髪右根.GetPositionCont().Y + 0.02 * num));
     		}
     	}
 

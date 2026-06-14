@@ -18,7 +18,7 @@ namespace SlaveMatrix
 
     	public Motion 消失;
 
-    	public Color GetHitColor => TextBlock.ShapePartT.HitColor;
+    	public Color GetHitColor => TextBlock.ShapePartT.GetHitColor();
 
     	public string Text
     	{
@@ -54,14 +54,14 @@ namespace SlaveMatrix
     		吹出し.尺度B = num * 1.1;
     		吹出し.尺度YB = num2;
     		TextBlock = new TextBlock("TextBlock", DataConsts.Vec2DZero, 0.1, 吹出し.尺度B, 0.63 * num * num2, Font, TextSize, 25, Text, TextColor, ShadColor, Color.Transparent, Speed, FeedColor, Action);
-    		TextBlock.Feed.OP.OutlineFalse();
-    		TextBlock.ShapePartT.BasePointBase = TextBlock.ShapePartT.OP.GetCenter().AddY(0.04);
+    		TextBlock.Feed.GetOP().OutlineFalse();
+    		TextBlock.ShapePartT.SetBasePointBase(TextBlock.ShapePartT.GetOP().GetCenter().AddY(0.04));
     		this.Dis = Dis;
     		if (Dis)
     		{
     			表示 = false;
-    			int pa = 吹出し.X0Y0_吹出し.PenColor.A;
-    			int ba = 吹出し.X0Y0_吹出し.BrushColor.A;
+    			int pa = 吹出し.X0Y0_吹出し.GetPenColor().A;
+    			int ba = 吹出し.X0Y0_吹出し.GetBrushColor().A;
     			int ta = TextColor.A;
     			int sa = ShadColor.A;
     			double v;
@@ -77,10 +77,10 @@ namespace SlaveMatrix
     					if (m.Value < m.Max - 1)
     						return;
     					v = (1 + m.Value - m.Max).Inverse();
-    					吹出し.X0Y0_吹出し.PenColor = Color.FromArgb((int)((double)pa * v), 吹出し.X0Y0_吹出し.PenColor);
-    					吹出し.X0Y0_吹出し.BrushColor = Color.FromArgb((int)((double)ba * v), 吹出し.X0Y0_吹出し.BrushColor);
-    					TextBlock.ShapePartT.TextColor = Color.FromArgb((int)((double)ta * v), TextBlock.ShapePartT.TextColor);
-    					TextBlock.ShapePartT.ShadColor = Color.FromArgb((int)((double)sa * v), TextBlock.ShapePartT.ShadColor);
+    					吹出し.X0Y0_吹出し.SetPenColor(Color.FromArgb((int)((double)pa * v), 吹出し.X0Y0_吹出し.GetPenColor()));
+    					吹出し.X0Y0_吹出し.SetBrushColor(Color.FromArgb((int)((double)ba * v), 吹出し.X0Y0_吹出し.GetBrushColor()));
+    					TextBlock.ShapePartT.SetTextColor(Color.FromArgb((int)((double)ta * v), TextBlock.ShapePartT.GetTextColor()));
+    					TextBlock.ShapePartT.SetShadColor(Color.FromArgb((int)((double)sa * v), TextBlock.ShapePartT.GetShadColor()));
     				},
     				OnReach = delegate(Motion m)
     				{
@@ -92,10 +92,10 @@ namespace SlaveMatrix
     				OnEnd = delegate
     				{
     					表示 = false;
-    					吹出し.X0Y0_吹出し.PenColor = Color.FromArgb(pa, 吹出し.X0Y0_吹出し.PenColor);
-    					吹出し.X0Y0_吹出し.BrushColor = Color.FromArgb(ba, 吹出し.X0Y0_吹出し.BrushColor);
-    					TextBlock.ShapePartT.TextColor = Color.FromArgb(ta, TextBlock.ShapePartT.TextColor);
-    					TextBlock.ShapePartT.ShadColor = Color.FromArgb(sa, TextBlock.ShapePartT.ShadColor);
+    					吹出し.X0Y0_吹出し.SetPenColor(Color.FromArgb(pa, 吹出し.X0Y0_吹出し.GetPenColor()));
+    					吹出し.X0Y0_吹出し.SetBrushColor(Color.FromArgb(ba, 吹出し.X0Y0_吹出し.GetBrushColor()));
+    					TextBlock.ShapePartT.SetTextColor(Color.FromArgb(ta, TextBlock.ShapePartT.GetTextColor()));
+    					TextBlock.ShapePartT.SetShadColor(Color.FromArgb(sa, TextBlock.ShapePartT.GetShadColor()));
     				}
     			};
     		}
@@ -114,13 +114,13 @@ namespace SlaveMatrix
     		吹出し.尺度B = num * 1.1;
     		吹出し.尺度YB = num2;
     		TextBlock = new TextBlock("TextBlock", DataConsts.Vec2DZero, 0.1, 吹出し.尺度B, 0.63 * num * num2, Font, TextSize, 25, Text, TextColor, ShadColor, Color.Transparent, Speed);
-    		TextBlock.ShapePartT.BasePointBase = TextBlock.ShapePartT.OP.GetCenter().AddY(0.04);
+    		TextBlock.ShapePartT.SetBasePointBase(TextBlock.ShapePartT.GetOP().GetCenter().AddY(0.04));
     		this.Dis = Dis;
     		if (Dis)
     		{
     			表示 = false;
-    			int pa = 吹出し.X0Y0_吹出し.PenColor.A;
-    			int ba = 吹出し.X0Y0_吹出し.BrushColor.A;
+    			int pa = 吹出し.X0Y0_吹出し.GetPenColor().A;
+    			int ba = 吹出し.X0Y0_吹出し.GetBrushColor().A;
     			int ta = TextColor.A;
     			int sa = ShadColor.A;
     			double v;
@@ -145,10 +145,10 @@ namespace SlaveMatrix
                         var correctTextAlpha = (textAlpha > 255) ? 255 : textAlpha;
                         var correctShadeAlpha = (shadeAlpha > 255) ? 255 : shadeAlpha; 
 
-                        吹出し.X0Y0_吹出し.PenColor = Color.FromArgb(correctPenAlpha, 吹出し.X0Y0_吹出し.PenColor);
-    					吹出し.X0Y0_吹出し.BrushColor = Color.FromArgb(correctBrushAlpha, 吹出し.X0Y0_吹出し.BrushColor);
-    					TextBlock.ShapePartT.TextColor = Color.FromArgb(correctTextAlpha, TextBlock.ShapePartT.TextColor);
-    					TextBlock.ShapePartT.ShadColor = Color.FromArgb(correctShadeAlpha, TextBlock.ShapePartT.ShadColor);
+                        吹出し.X0Y0_吹出し.SetPenColor(Color.FromArgb(correctPenAlpha, 吹出し.X0Y0_吹出し.GetPenColor()));
+    					吹出し.X0Y0_吹出し.SetBrushColor(Color.FromArgb(correctBrushAlpha, 吹出し.X0Y0_吹出し.GetBrushColor()));
+    					TextBlock.ShapePartT.SetTextColor(Color.FromArgb(correctTextAlpha, TextBlock.ShapePartT.GetTextColor()));
+    					TextBlock.ShapePartT.SetShadColor(Color.FromArgb(correctShadeAlpha, TextBlock.ShapePartT.GetShadColor()));
     				},
     				OnReach = delegate(Motion m)
     				{
@@ -160,10 +160,10 @@ namespace SlaveMatrix
     				OnEnd = delegate
     				{
     					表示 = false;
-    					吹出し.X0Y0_吹出し.PenColor = Color.FromArgb(pa, 吹出し.X0Y0_吹出し.PenColor);
-    					吹出し.X0Y0_吹出し.BrushColor = Color.FromArgb(ba, 吹出し.X0Y0_吹出し.BrushColor);
-    					TextBlock.ShapePartT.TextColor = Color.FromArgb(ta, TextBlock.ShapePartT.TextColor);
-    					TextBlock.ShapePartT.ShadColor = Color.FromArgb(sa, TextBlock.ShapePartT.ShadColor);
+    					吹出し.X0Y0_吹出し.SetPenColor(Color.FromArgb(pa, 吹出し.X0Y0_吹出し.GetPenColor()));
+    					吹出し.X0Y0_吹出し.SetBrushColor(Color.FromArgb(ba, 吹出し.X0Y0_吹出し.GetBrushColor()));
+    					TextBlock.ShapePartT.SetTextColor(Color.FromArgb(ta, TextBlock.ShapePartT.GetTextColor()));
+    					TextBlock.ShapePartT.SetShadColor(Color.FromArgb(sa, TextBlock.ShapePartT.GetShadColor()));
     				}
     			};
     		}
@@ -193,7 +193,7 @@ namespace SlaveMatrix
     	public void 接続()
     	{
     		吹出し.接続P();
-    		TextBlock.Position = 吹出し.X0Y0_吹出し.ToGlobal(吹出し.X0Y0_吹出し.JP[0].Joint);
+    		TextBlock.Position = 吹出し.X0Y0_吹出し.ToGlobal(吹出し.X0Y0_吹出し.GetJP()[0].Joint);
     	}
 
     	public void Draw(RenderArea Are, FpsCounter FPS)

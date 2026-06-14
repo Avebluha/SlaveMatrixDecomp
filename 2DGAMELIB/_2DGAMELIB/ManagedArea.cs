@@ -6,8 +6,6 @@ namespace _2DGAMELIB
 	//TODO: Find a better name...
     public class ManagedArea : RenderArea
     {
-    	private double strength;
-
     	private double unitS;
 
     	public ManagedArea(double Unit, double XRatio, double YRatio, double Size, double DisMag, double HitMag, double Strength) : 
@@ -16,7 +14,6 @@ namespace _2DGAMELIB
             SetXYRatio(XRatio, YRatio);
             base.Size = Size;
             unitScale = Unit;
-            strength = Strength;
             displayUnitScale = Unit * DisMag;
             double num = 1.0 - Strength;
             unitS = displayUnitScale * num;

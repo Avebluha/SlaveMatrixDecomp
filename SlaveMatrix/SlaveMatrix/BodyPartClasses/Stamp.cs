@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
 using _2DGAMELIB;
+using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {

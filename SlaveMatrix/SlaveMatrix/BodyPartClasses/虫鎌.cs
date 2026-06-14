@@ -1,4 +1,5 @@
 using _2DGAMELIB;
+using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
@@ -536,7 +537,7 @@ namespace SlaveMatrix
     	{
     		double num = (右 ? (-1.0) : 1.0);
     		num *= (反転Y ? (-1.0) : 1.0);
-    		X0Y0_虫鎌1.AngleBase = num * -14.0;
+    		X0Y0_虫鎌1.SetAngleBase(num * -14.0);
     		Body.JoinPAall();
     	}
 

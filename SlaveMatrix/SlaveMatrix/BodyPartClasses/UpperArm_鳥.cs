@@ -1,5 +1,6 @@
 using System.Linq;
 using _2DGAMELIB;
+using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
@@ -283,11 +284,11 @@ namespace SlaveMatrix
     		{
     			double num = value.Inverse();
     			double num2 = (右 ? (-1.0) : 1.0);
-    			X0Y0_鳥翼UpperArm.AngleCont = num2 * -60.0 * num;
-    			X0Y0_羽毛.AngleCont = num2 * 100.0 * num;
-    			X0Y0_風切羽_羽1.AngleCont = num2 * 75.0 * num;
-    			X0Y0_風切羽_羽2.AngleCont = num2 * 75.0 * num;
-    			X0Y0_風切羽_羽3.AngleCont = num2 * 75.0 * num;
+    			X0Y0_鳥翼UpperArm.SetAngleCont(num2 * -60.0 * num);
+    			X0Y0_羽毛.SetAngleCont(num2 * 100.0 * num);
+    			X0Y0_風切羽_羽1.SetAngleCont(num2 * 75.0 * num);
+    			X0Y0_風切羽_羽2.SetAngleCont(num2 * 75.0 * num);
+    			X0Y0_風切羽_羽3.SetAngleCont(num2 * 75.0 * num);
     		}
     	}
 
@@ -296,9 +297,9 @@ namespace SlaveMatrix
     		set
     		{
     			double num = 0.05;
-    			X0Y0_風切羽_羽3.SizeYBase *= 1.0 - num * value;
-    			X0Y0_風切羽_羽2.SizeYBase *= 1.0 - num * value;
-    			X0Y0_風切羽_羽1.SizeYBase *= 1.0 - num * value;
+    			X0Y0_風切羽_羽3.SetSizeYBase(X0Y0_風切羽_羽3.GetSizeYBase() * (1.0 - num * value));
+    			X0Y0_風切羽_羽2.SetSizeYBase(X0Y0_風切羽_羽2.GetSizeYBase() * (1.0 - num * value));
+    			X0Y0_風切羽_羽1.SetSizeYBase(X0Y0_風切羽_羽1.GetSizeYBase() * (1.0 - num * value));
     		}
     	}
 
@@ -306,12 +307,12 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return X0Y0_鳥翼UpperArm.OP[右 ? 3 : 0].Outline;
+    			return X0Y0_鳥翼UpperArm.GetOP()[右 ? 3 : 0].Outline;
     		}
     		set
     		{
-    			X0Y0_鳥翼UpperArm.OP[右 ? 3 : 0].Outline = value;
-    			X0Y0_鳥翼UpperArm.OP[(!右) ? 1 : 2].Outline = value;
+    			X0Y0_鳥翼UpperArm.GetOP()[右 ? 3 : 0].Outline = value;
+    			X0Y0_鳥翼UpperArm.GetOP()[(!右) ? 1 : 2].Outline = value;
     		}
     	}
 
@@ -319,13 +320,13 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return X0Y0_小雨覆.OP[右 ? 2 : 3].Outline;
+    			return X0Y0_小雨覆.GetOP()[右 ? 2 : 3].Outline;
     		}
     		set
     		{
-    			X0Y0_小雨覆.OP[右 ? 2 : 3].Outline = value;
-    			X0Y0_小雨覆.OP[右 ? 1 : 4].Outline = value;
-    			X0Y0_小雨覆.OP[(!右) ? 5 : 0].Outline = value;
+    			X0Y0_小雨覆.GetOP()[右 ? 2 : 3].Outline = value;
+    			X0Y0_小雨覆.GetOP()[右 ? 1 : 4].Outline = value;
+    			X0Y0_小雨覆.GetOP()[(!右) ? 5 : 0].Outline = value;
     		}
     	}
 
@@ -333,15 +334,15 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return X0Y0_羽毛.OP[右 ? 4 : 0].Outline;
+    			return X0Y0_羽毛.GetOP()[右 ? 4 : 0].Outline;
     		}
     		set
     		{
-    			X0Y0_羽毛.OP[右 ? 4 : 0].Outline = value;
-    			X0Y0_羽毛.OP[(!右) ? 1 : 3].Outline = value;
-    			X0Y0_羽毛.OP[右 ? 2 : 2].Outline = value;
-    			X0Y0_羽毛.OP[右 ? 1 : 3].Outline = value;
-    			X0Y0_羽毛.OP[(!右) ? 4 : 0].Outline = value;
+    			X0Y0_羽毛.GetOP()[右 ? 4 : 0].Outline = value;
+    			X0Y0_羽毛.GetOP()[(!右) ? 1 : 3].Outline = value;
+    			X0Y0_羽毛.GetOP()[右 ? 2 : 2].Outline = value;
+    			X0Y0_羽毛.GetOP()[右 ? 1 : 3].Outline = value;
+    			X0Y0_羽毛.GetOP()[(!右) ? 4 : 0].Outline = value;
     		}
     	}
 
@@ -349,13 +350,13 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return X0Y0_風切羽_羽1.OP[(!右) ? 1 : 3].Outline;
+    			return X0Y0_風切羽_羽1.GetOP()[(!右) ? 1 : 3].Outline;
     		}
     		set
     		{
-    			X0Y0_風切羽_羽1.OP[(!右) ? 1 : 3].Outline = value;
-    			X0Y0_風切羽_羽1.OP[右 ? 1 : 3].Outline = value;
-    			X0Y0_風切羽_羽1.OP[(!右) ? 4 : 0].Outline = value;
+    			X0Y0_風切羽_羽1.GetOP()[(!右) ? 1 : 3].Outline = value;
+    			X0Y0_風切羽_羽1.GetOP()[右 ? 1 : 3].Outline = value;
+    			X0Y0_風切羽_羽1.GetOP()[(!右) ? 4 : 0].Outline = value;
     		}
     	}
 
@@ -363,13 +364,13 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return X0Y0_風切羽_羽2.OP[(!右) ? 1 : 3].Outline;
+    			return X0Y0_風切羽_羽2.GetOP()[(!右) ? 1 : 3].Outline;
     		}
     		set
     		{
-    			X0Y0_風切羽_羽2.OP[(!右) ? 1 : 3].Outline = value;
-    			X0Y0_風切羽_羽2.OP[右 ? 1 : 3].Outline = value;
-    			X0Y0_風切羽_羽2.OP[(!右) ? 4 : 0].Outline = value;
+    			X0Y0_風切羽_羽2.GetOP()[(!右) ? 1 : 3].Outline = value;
+    			X0Y0_風切羽_羽2.GetOP()[右 ? 1 : 3].Outline = value;
+    			X0Y0_風切羽_羽2.GetOP()[(!右) ? 4 : 0].Outline = value;
     		}
     	}
 
@@ -377,12 +378,12 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return X0Y0_風切羽_羽3.OP[右 ? 1 : 3].Outline;
+    			return X0Y0_風切羽_羽3.GetOP()[右 ? 1 : 3].Outline;
     		}
     		set
     		{
-    			X0Y0_風切羽_羽3.OP[右 ? 1 : 3].Outline = value;
-    			X0Y0_風切羽_羽3.OP[(!右) ? 4 : 0].Outline = value;
+    			X0Y0_風切羽_羽3.GetOP()[右 ? 1 : 3].Outline = value;
+    			X0Y0_風切羽_羽3.GetOP()[(!右) ? 4 : 0].Outline = value;
     		}
     	}
 
@@ -390,11 +391,11 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return X0Y0_鳥翼UpperArm.OP[(!右) ? 1 : 2].Outline;
+    			return X0Y0_鳥翼UpperArm.GetOP()[(!右) ? 1 : 2].Outline;
     		}
     		set
     		{
-    			X0Y0_鳥翼UpperArm.OP[(!右) ? 1 : 2].Outline = value;
+    			X0Y0_鳥翼UpperArm.GetOP()[(!右) ? 1 : 2].Outline = value;
     		}
     	}
 
@@ -498,11 +499,11 @@ namespace SlaveMatrix
     	public override void SetAngle0()
     	{
     		double num = (右 ? (-1.0) : 1.0);
-    		X0Y0_鳥翼UpperArm.AngleBase = num * 0.0;
-    		X0Y0_羽毛.AngleBase = num * -122.9677794835592;
-    		X0Y0_風切羽_羽1.AngleBase = num * -100.129973503791;
-    		X0Y0_風切羽_羽2.AngleBase = num * -102.129973503791;
-    		X0Y0_風切羽_羽3.AngleBase = num * -103.129973503791;
+    		X0Y0_鳥翼UpperArm.SetAngleBase(num * 0.0);
+    		X0Y0_羽毛.SetAngleBase(num * -122.9677794835592);
+    		X0Y0_風切羽_羽1.SetAngleBase(num * -100.129973503791);
+    		X0Y0_風切羽_羽2.SetAngleBase(num * -102.129973503791);
+    		X0Y0_風切羽_羽3.SetAngleBase(num * -103.129973503791);
     		Body.JoinPAall();
     	}
 

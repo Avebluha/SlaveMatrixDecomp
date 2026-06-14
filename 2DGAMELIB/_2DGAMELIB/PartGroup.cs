@@ -16,227 +16,54 @@ namespace _2DGAMELIB
 
     	public PartGroup Parent => parent;
 
-    	public IEnumerable<string> Keys => pars.Keys;
-
     	public IEnumerable<object> Values => pars.Values;
 
-    	public double PositionSize
-    	{
-    		set
-    		{
-    			foreach (object value2 in pars.Values)
-    			{
-    				if (value2 is PartGroup)
-    				{
-    					((PartGroup)value2).PositionSize = value;
-    				}
-    				else if (value2 is ShapePart)
-    				{
-    					((ShapePart)value2).PositionSize = value;
-    				}
-    			}
-    		}
-    	}
+        public void SetAngleBase(double value)
+        {
+            foreach (object value2 in pars.Values)
+            {
+                if (value2 is PartGroup)
+                {
+                    ((PartGroup)value2).SetAngleBase(value);
+                }
+                else if (value2 is ShapePart)
+                {
+                    ((ShapePart)value2).SetAngleBase(value);
+                }
+            }
+        }
 
-    	public Vector2D PositionVector
-    	{
-    		set
-    		{
-    			foreach (object value2 in pars.Values)
-    			{
-    				if (value2 is PartGroup)
-    				{
-    					((PartGroup)value2).PositionVector = value;
-    				}
-    				else if (value2 is ShapePart)
-    				{
-    					((ShapePart)value2).PositionVector = value;
-    				}
-    			}
-    		}
-    	}
+        public void SetSizeBase(double value)
+        {
+            foreach (object value2 in pars.Values)
+            {
+                if (value2 is PartGroup)
+                {
+                    ((PartGroup)value2).SetSizeBase(value);
+                }
+                else if (value2 is ShapePart)
+                {
+                    ((ShapePart)value2).SetSizeBase(value);
+                }
+            }
+        }
 
-    	public double AngleBase
-    	{
-    		set
-    		{
-    			foreach (object value2 in pars.Values)
-    			{
-    				if (value2 is PartGroup)
-    				{
-    					((PartGroup)value2).AngleBase = value;
-    				}
-    				else if (value2 is ShapePart)
-    				{
-    					((ShapePart)value2).AngleBase = value;
-    				}
-    			}
-    		}
-    	}
+        public void SetSizeYCont(double value)
+        {
+            foreach (object value2 in pars.Values)
+            {
+                if (value2 is PartGroup)
+                {
+                    ((PartGroup)value2).SetSizeYCont(value);
+                }
+                else if (value2 is ShapePart)
+                {
+                    ((ShapePart)value2).SetSizeYCont(value);
+                }
+            }
+        }
 
-    	public double AngleCont
-    	{
-    		set
-    		{
-    			foreach (object value2 in pars.Values)
-    			{
-    				if (value2 is PartGroup)
-    				{
-    					((PartGroup)value2).AngleCont = value;
-    				}
-    				else if (value2 is ShapePart)
-    				{
-    					((ShapePart)value2).AngleCont = value;
-    				}
-    			}
-    		}
-    	}
-
-    	public double SizeBase
-    	{
-    		set
-    		{
-    			foreach (object value2 in pars.Values)
-    			{
-    				if (value2 is PartGroup)
-    				{
-    					((PartGroup)value2).SizeBase = value;
-    				}
-    				else if (value2 is ShapePart)
-    				{
-    					((ShapePart)value2).SizeBase = value;
-    				}
-    			}
-    		}
-    	}
-
-    	public double SizeCont
-    	{
-    		set
-    		{
-    			foreach (object value2 in pars.Values)
-    			{
-    				if (value2 is PartGroup)
-    				{
-    					((PartGroup)value2).SizeCont = value;
-    				}
-    				else if (value2 is ShapePart)
-    				{
-    					((ShapePart)value2).SizeCont = value;
-    				}
-    			}
-    		}
-    	}
-
-    	public double SizeXBase
-    	{
-    		set
-    		{
-    			foreach (object value2 in pars.Values)
-    			{
-    				if (value2 is PartGroup)
-    				{
-    					((PartGroup)value2).SizeXBase = value;
-    				}
-    				else if (value2 is ShapePart)
-    				{
-    					((ShapePart)value2).SizeXBase = value;
-    				}
-    			}
-    		}
-    	}
-
-    	public double SizeXCont
-    	{
-    		set
-    		{
-    			foreach (object value2 in pars.Values)
-    			{
-    				if (value2 is PartGroup)
-    				{
-    					((PartGroup)value2).SizeXCont = value;
-    				}
-    				else if (value2 is ShapePart)
-    				{
-    					((ShapePart)value2).SizeXCont = value;
-    				}
-    			}
-    		}
-    	}
-
-    	public double SizeYBase
-    	{
-    		set
-    		{
-    			foreach (object value2 in pars.Values)
-    			{
-    				if (value2 is PartGroup)
-    				{
-    					((PartGroup)value2).SizeYBase = value;
-    				}
-    				else if (value2 is ShapePart)
-    				{
-    					((ShapePart)value2).SizeYBase = value;
-    				}
-    			}
-    		}
-    	}
-
-    	public double SizeYCont
-    	{
-    		set
-    		{
-    			foreach (object value2 in pars.Values)
-    			{
-    				if (value2 is PartGroup)
-    				{
-    					((PartGroup)value2).SizeYCont = value;
-    				}
-    				else if (value2 is ShapePart)
-    				{
-    					((ShapePart)value2).SizeYCont = value;
-    				}
-    			}
-    		}
-    	}
-
-    	public bool Dra
-    	{
-    		set
-    		{
-    			foreach (object value2 in pars.Values)
-    			{
-    				if (value2 is PartGroup)
-    				{
-    					((PartGroup)value2).Dra = value;
-    				}
-    				else if (value2 is ShapePart)
-    				{
-    					((ShapePart)value2).Dra = value;
-    				}
-    			}
-    		}
-    	}
-
-    	public bool Hit
-    	{
-    		set
-    		{
-    			foreach (object value2 in pars.Values)
-    			{
-    				if (value2 is PartGroup)
-    				{
-    					((PartGroup)value2).Hit = value;
-    				}
-    				else if (value2 is ShapePart)
-    				{
-    					((ShapePart)value2).Hit = value;
-    				}
-    			}
-    		}
-    	}
-
-    	public object this[string Name]
+        public object this[string Name]
     	{
     		get
     		{
@@ -458,7 +285,7 @@ namespace _2DGAMELIB
     			{
     				list.AddRange(((PartGroup)value).GetHitTags(ref HitColor));
     			}
-    			else if (value is ShapePart && (shapePart = (ShapePart)value).HitColor == HitColor)
+    			else if (value is ShapePart && (shapePart = (ShapePart)value).GetHitColor() == HitColor)
     			{
     				list.Add(shapePart.Tag);
     			}
@@ -476,7 +303,7 @@ namespace _2DGAMELIB
     			{
     				list.AddRange(((PartGroup)value).GetHitPars(ref HitColor));
     			}
-    			else if (value is ShapePart && (item = (ShapePart)value).HitColor == HitColor)
+    			else if (value is ShapePart && (item = (ShapePart)value).GetHitColor() == HitColor)
     			{
     				list.Add(item);
     			}
@@ -492,7 +319,7 @@ namespace _2DGAMELIB
     			{
     				return true;
     			}
-    			if (value is ShapePart && ((ShapePart)value).HitColor == HitColor)
+    			if (value is ShapePart && ((ShapePart)value).GetHitColor() == HitColor)
     			{
     				return true;
     			}

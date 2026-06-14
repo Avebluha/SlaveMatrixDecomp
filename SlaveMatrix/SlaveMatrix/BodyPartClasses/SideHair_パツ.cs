@@ -109,7 +109,7 @@ namespace SlaveMatrix
     		set
     		{
     			double num = 0.8 + 0.3 * value;
-    			X0Y0_髪1.SizeYBase *= num;
+    			X0Y0_髪1.SetSizeYBase(X0Y0_髪1.GetSizeYBase() * num);
     		}
     	}
 
@@ -118,7 +118,7 @@ namespace SlaveMatrix
     		set
     		{
     			double num = 0.8 + 0.3 * value;
-    			X0Y0_髪2.SizeYBase *= num;
+    			X0Y0_髪2.SetSizeYBase(X0Y0_髪2.GetSizeYBase() * num);
     		}
     	}
 
@@ -127,8 +127,8 @@ namespace SlaveMatrix
     		set
     		{
     			double num = 1.0 + 0.05 * value;
-    			X0Y0_髪1.SizeXBase *= num;
-    			X0Y0_髪2.SizeXBase *= num;
+    			X0Y0_髪1.SetSizeXBase(X0Y0_髪1.GetSizeXBase() * num);
+    			X0Y0_髪2.SetSizeXBase(X0Y0_髪2.GetSizeXBase() * num);
     		}
     	}
 
@@ -137,7 +137,7 @@ namespace SlaveMatrix
     		set
     		{
     			double num = (右 ? (-1.0) : 1.0);
-    			X0Y0_髪2.AngleBase = num * 3.0 * value;
+    			X0Y0_髪2.SetAngleBase(num * 3.0 * value);
     		}
     	}
 

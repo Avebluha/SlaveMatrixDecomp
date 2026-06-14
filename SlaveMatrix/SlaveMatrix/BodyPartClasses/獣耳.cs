@@ -1,4 +1,5 @@
 using _2DGAMELIB;
+using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
@@ -91,7 +92,7 @@ namespace SlaveMatrix
     		set
     		{
     			欠損_ = value;
-    			Body.IndexX = (欠損_ ? 1 : 0);
+    			Body.SetIndexX((欠損_ ? 1 : 0));
     		}
     	}
 
@@ -304,20 +305,20 @@ namespace SlaveMatrix
     	public override void SetAngle0()
     	{
     		double num = (右 ? (-1.0) : 1.0);
-    		X0Y0_獣耳外.AngleBase = num * -46.0;
-    		X0Y1_獣耳外.AngleBase = num * -64.0;
-    		X0Y2_獣耳外.AngleBase = num * -78.0;
-    		X1Y0_獣耳外.AngleBase = num * -46.0;
-    		X1Y1_獣耳外.AngleBase = num * -64.0;
-    		X1Y2_獣耳外.AngleBase = num * -78.0;
+    		X0Y0_獣耳外.SetAngleBase(num * -46.0);
+    		X0Y1_獣耳外.SetAngleBase(num * -64.0);
+    		X0Y2_獣耳外.SetAngleBase(num * -78.0);
+    		X1Y0_獣耳外.SetAngleBase(num * -46.0);
+    		X1Y1_獣耳外.SetAngleBase(num * -64.0);
+    		X1Y2_獣耳外.SetAngleBase(num * -78.0);
     		Body.JoinPAall();
     	}
 
     	public override void 色更新()
     	{
-    		if (Body.IndexX == 0)
+    		if (Body.GetIndexX() == 0)
     		{
-    			switch (Body.IndexY)
+    			switch (Body.GetIndexY())
     			{
     			case 0:
     				X0Y0_獣耳外CP.Update();
@@ -338,7 +339,7 @@ namespace SlaveMatrix
     		}
     		else
     		{
-    			switch (Body.IndexY)
+    			switch (Body.GetIndexY())
     			{
     			case 0:
     				X1Y0_獣耳外CP.Update();

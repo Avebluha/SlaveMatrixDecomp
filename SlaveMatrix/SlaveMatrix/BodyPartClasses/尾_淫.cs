@@ -838,25 +838,25 @@ namespace SlaveMatrix
     	{
     		_ = 右;
     		double maxAngle = 20.0;
-    		X0Y0_尾0.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_尾1.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_尾2.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_尾3.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_尾4.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_尾5.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_尾6.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_尾7.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_尾8.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_尾9.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_尾10.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_尾11.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_尾12.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_尾13.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_尾14.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_尾15.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_尾16.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_尾17.AngleBase = maxAngle.GetRanAngle();
-    		X0Y0_先端_尾.AngleBase = maxAngle.GetRanAngle();
+    		X0Y0_尾0.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_尾1.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_尾2.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_尾3.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_尾4.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_尾5.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_尾6.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_尾7.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_尾8.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_尾9.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_尾10.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_尾11.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_尾12.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_尾13.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_尾14.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_尾15.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_尾16.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_尾17.SetAngleBase(maxAngle.GetRanAngle());
+    		X0Y0_先端_尾.SetAngleBase(maxAngle.GetRanAngle());
     		Body.JoinPAall();
     	}
 

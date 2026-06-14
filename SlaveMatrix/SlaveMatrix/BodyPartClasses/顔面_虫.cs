@@ -1,5 +1,6 @@
 using System.Linq;
 using _2DGAMELIB;
+using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
@@ -614,20 +615,20 @@ namespace SlaveMatrix
     		set
     		{
     			double num = 15.0 * value;
-    			X0Y0_複眼左_複眼1.AngleCont = num;
-    			X0Y0_複眼左_複眼2.AngleCont = num;
-    			X0Y0_複眼左_ハイライト.AngleCont = num;
-    			X0Y0_複眼左_複眼1.PositionCont = new Vector2D(0.0, -0.0045 * value);
-    			X0Y0_複眼左_複眼2.PositionCont = X0Y0_複眼左_複眼1.PositionCont;
-    			X0Y0_複眼左_ハイライト.PositionCont = X0Y0_複眼左_複眼1.PositionCont;
+    			X0Y0_複眼左_複眼1.SetAngleCont(num);
+    			X0Y0_複眼左_複眼2.SetAngleCont(num);
+    			X0Y0_複眼左_ハイライト.SetAngleCont(num);
+    			X0Y0_複眼左_複眼1.SetPositionCont(new Vector2D(0.0, -0.0045 * value));
+    			X0Y0_複眼左_複眼2.SetPositionCont(X0Y0_複眼左_複眼1.GetPositionCont());
+    			X0Y0_複眼左_ハイライト.SetPositionCont(X0Y0_複眼左_複眼1.GetPositionCont());
     			num = 0.0 - num;
-    			X0Y0_複眼右_複眼1.AngleCont = num;
-    			X0Y0_複眼右_複眼2.AngleCont = num;
-    			X0Y0_複眼右_ハイライト.AngleCont = num;
-    			X0Y0_複眼右_複眼1.PositionCont = X0Y0_複眼左_複眼1.PositionCont;
-    			X0Y0_複眼右_複眼2.PositionCont = X0Y0_複眼左_複眼1.PositionCont;
-    			X0Y0_複眼右_ハイライト.PositionCont = X0Y0_複眼左_複眼1.PositionCont;
-    			X0Y0_面下_面.PositionCont = (X0Y0_面下_面.OP[0].ps[0] - X0Y0_面下_面.OP[2].ps[2]) * 0.7 * value;
+    			X0Y0_複眼右_複眼1.SetAngleCont(num);
+    			X0Y0_複眼右_複眼2.SetAngleCont(num);
+    			X0Y0_複眼右_ハイライト.SetAngleCont(num);
+    			X0Y0_複眼右_複眼1.SetPositionCont(X0Y0_複眼左_複眼1.GetPositionCont());
+    			X0Y0_複眼右_複眼2.SetPositionCont(X0Y0_複眼左_複眼1.GetPositionCont());
+    			X0Y0_複眼右_ハイライト.SetPositionCont(X0Y0_複眼左_複眼1.GetPositionCont());
+    			X0Y0_面下_面.SetPositionCont((X0Y0_面下_面.GetOP()[0].ps[0] - X0Y0_面下_面.GetOP()[2].ps[2]) * 0.7 * value);
     		}
     	}
 

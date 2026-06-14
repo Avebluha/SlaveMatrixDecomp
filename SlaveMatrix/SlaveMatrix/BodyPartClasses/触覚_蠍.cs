@@ -592,7 +592,7 @@ namespace SlaveMatrix
     	public override void SetAngle0()
     	{
     		double num = (右 ? (-1.0) : 1.0);
-    		X0Y0_櫛状版1_櫛状版1.AngleBase = num * 45.0;
+    		X0Y0_櫛状版1_櫛状版1.SetAngleBase(num * 45.0);
     		Body.JoinPAall();
     	}
 

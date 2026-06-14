@@ -33,7 +33,7 @@ namespace SlaveMatrix
     		set
     		{
     			欠損_ = value;
-    			Body.IndexX = (欠損_ ? 1 : 0);
+    			Body.SetIndexX((欠損_ ? 1 : 0));
     		}
     	}
 
@@ -176,14 +176,14 @@ namespace SlaveMatrix
     	public override void SetAngle0()
     	{
     		double num = (右 ? (-1.0) : 1.0);
-    		X0Y0_耳.AngleBase = num * -18.0;
-    		X1Y0_耳.AngleBase = num * -18.0;
+    		X0Y0_耳.SetAngleBase(num * -18.0);
+    		X1Y0_耳.SetAngleBase(num * -18.0);
     		Body.JoinPAall();
     	}
 
     	public override void 色更新()
     	{
-    		if (Body.IndexX == 0)
+    		if (Body.GetIndexX() == 0)
     		{
     			X0Y0_耳CP.Update();
     			X0Y0_耳線CP.Update();
