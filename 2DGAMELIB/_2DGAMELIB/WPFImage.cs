@@ -7,7 +7,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 
 namespace _2DGAMELIB
-{
+{    
     public enum MouseButtons { 
     	None = 0,
     	Left = 1,
@@ -16,7 +16,6 @@ namespace _2DGAMELIB
     	Button4 = 8,
     	Button5 = 16
     }
-
     public class GlImage
     {
 

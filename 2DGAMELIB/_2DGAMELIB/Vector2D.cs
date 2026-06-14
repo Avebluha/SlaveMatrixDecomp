@@ -46,6 +46,17 @@ namespace _2DGAMELIB
     		}
     	}
 
+		public static Vector2D Normalize(Vector2D vec){
+			double num = vec.Length();
+    		if (num != 0.0)
+    		{
+    			double num2 = 1.0 / num;
+    			return vec * num2;
+    		}
+
+			return DataConsts.Vec2DZero;
+		}
+
     	public static Vector2D operator +(Vector2D left, Vector2D right)
     	{
     		return new Vector2D(left.X + right.X, left.Y + right.Y);
