@@ -78,6 +78,7 @@ namespace _2DGAMELIB
     	public bool Dra = true;
     	public bool Hit = true;
     	private bool closed;
+	    public bool IsClosed => closed;
 
         public PartGroup GetParent()
         {

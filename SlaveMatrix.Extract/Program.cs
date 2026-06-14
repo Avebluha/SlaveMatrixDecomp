@@ -277,15 +277,15 @@ class Program
                     ["id"] = engKey,
                     ["original_key"] = originalKey,
                     ["resource"] = name,
-                    ["morph_x"] = difs.CountX,
-                    ["morph_y"] = difs.CountY,
+                    ["morph_x"] = difs.GetCountX(),
+                    ["morph_y"] = difs.GetCountY(),
                     ["variants"] = new JArray(),
                     ["fields"] = new JArray()
                 };
 
                 var variants = (JArray)partEntry["variants"];
 
-                for (int x = 0; x < difs.CountX; x++)
+                for (int x = 0; x < difs.GetCountX(); x++)
                 {
                     var dif = difs[x];
                     for (int y = 0; y < dif.Count; y++)
@@ -305,7 +305,7 @@ class Program
                     }
                 }
 
-                foreach (string childKey in difs[0][0].Keys)
+                foreach (string childKey in difs[0][0].pars.Keys)
                 {
                     ((JArray)partEntry["fields"]).Add(new JObject { ["name"] = childKey });
                 }
@@ -432,7 +432,7 @@ class Program
 
     static void ExportParsToSvgInner(PartGroup PartGroup, StringBuilder sb, List<string> foundJoints)
     {
-        foreach (string key in PartGroup.Keys)
+        foreach (string key in PartGroup.pars.Keys)
         {
             var val = PartGroup[key];
             if (val is PartGroup childPars)
@@ -452,13 +452,13 @@ class Program
     {
         if (!ShapePart.Dra) return;
 
-        var bx = ShapePart.BasePoint.X;
-        var by = ShapePart.BasePoint.Y;
-        var px = ShapePart.Position.X;
-        var py = ShapePart.Position.Y;
-        var angle = ShapePart.Angle;
-        var sx = ShapePart.Size * ShapePart.SizeX;
-        var sy = ShapePart.Size * ShapePart.SizeY;
+        var bx = ShapePart.GetBasePoint().X;
+        var by = ShapePart.GetBasePoint().Y;
+        var px = ShapePart.GetPosition().X;
+        var py = ShapePart.GetPosition().Y;
+        var angle = ShapePart.GetAngle();
+        var sx = ShapePart.GetSize() * ShapePart.GetSizeX();
+        var sy = ShapePart.GetSize() * ShapePart.GetSizeY();
 
         var hasTransform = System.Math.Abs(bx) > 0.001 || System.Math.Abs(by) > 0.001
             || System.Math.Abs(px) > 0.001 || System.Math.Abs(py) > 0.001
@@ -467,22 +467,22 @@ class Program
         if (hasTransform)
             sb.Append($"<g transform=\"translate({F(px)},{F(py)}) rotate({F(angle)}) scale({F(sx)},{F(sy)}) translate({F(-bx)},{F(-by)})\">");
 
-        foreach (var outObj in ShapePart.OP)
+        foreach (var outObj in ShapePart.GetOP())
         {
             var points = outObj.ps;
             if (points.Count < 2) continue;
 
-            var d = BuildSvgPath(points, outObj.Tension, ShapePart.Closed);
-            var fill = ShapePart.Closed ? "#cccccc" : "none";
+            var d = BuildSvgPath(points, outObj.Tension, ShapePart.IsClosed);
+            var fill = ShapePart.IsClosed ? "#cccccc" : "none";
             var stroke = outObj.Outline ? "#000000" : "none";
-            var sw_val = outObj.Outline ? System.Math.Max(ShapePart.PenWidth, 0.001) : 0.0;
+            var sw_val = outObj.Outline ? System.Math.Max(ShapePart.GetPenWidth(), 0.001) : 0.0;
             sb.AppendLine($"<path d=\"{d}\" fill=\"{fill}\" stroke=\"{stroke}\" stroke-width=\"{F(sw_val)}\"/>");
         }
 
         if (hasTransform)
             sb.Append("</g>");
 
-        foreach (var joi in ShapePart.JP)
+        foreach (var joi in ShapePart.GetJP())
         {
             foundJoints.Add($"{F(joi.Joint.X)},{F(joi.Joint.Y)}");
         }
@@ -579,15 +579,15 @@ class Program
 
     static JObject ExportDifs(VariantGrid VariantGrid)
     {
-        int xCount = VariantGrid.CountX;
-        int yCount = VariantGrid.CountY;
+        int xCount = VariantGrid.GetCountX();
+        int yCount = VariantGrid.GetCountY();
 
         var result = new JObject
         {
             ["Tag"] = VariantGrid.Tag ?? "",
             ["ValueX"] = VariantGrid.ValueX,
             ["ValueY"] = VariantGrid.ValueY,
-            ["CountX"] = xCount,
+            ["GetCountX()"] = xCount,
             ["CountY"] = yCount,
             ["VariantGrid"] = new JArray()
         };
@@ -616,7 +616,7 @@ class Program
             ["Children"] = new JObject()
         };
 
-        foreach (string key in PartGroup.Keys)
+        foreach (string key in PartGroup.pars.Keys)
         {
             var val = PartGroup[key];
             if (val is PartGroup childPars)
@@ -638,18 +638,18 @@ class Program
         {
             ["Tag"] = ShapePart.Tag ?? "",
             ["Dra"] = ShapePart.Dra,
-            ["PenWidth"] = ShapePart.PenWidth,
-            ["Closed"] = ShapePart.Closed,
-            ["BasePoint"] = ExportVec(ShapePart.BasePoint),
-            ["Position"] = ExportVec(ShapePart.Position),
-            ["Angle"] = ShapePart.Angle,
-            ["Size"] = ShapePart.Size,
-            ["SizeX"] = ShapePart.SizeX,
-            ["SizeY"] = ShapePart.SizeY,
+            ["PenWidth"] = ShapePart.GetPenWidth(),
+            ["Closed"] = ShapePart.IsClosed,
+            ["BasePoint"] = ExportVec(ShapePart.GetBasePoint()),
+            ["Position"] = ExportVec(ShapePart.GetPosition()),
+            ["Angle"] = ShapePart.GetAngle(),
+            ["Size"] = ShapePart.GetSize(),
+            ["SizeX"] = ShapePart.GetSizeX(),
+            ["SizeY"] = ShapePart.GetSizeY(),
             ["CurveOutline"] = new JArray()
         };
 
-        foreach (var outObj in ShapePart.OP)
+        foreach (var outObj in ShapePart.GetOP())
         {
             var outJ = new JObject
             {
@@ -662,10 +662,10 @@ class Program
             ((JArray)result["CurveOutline"]).Add(outJ);
         }
 
-        if (ShapePart.JP.Count > 0)
+        if (ShapePart.GetJP().Count > 0)
         {
             result["Joints"] = new JArray();
-            foreach (var joi in ShapePart.JP)
+            foreach (var joi in ShapePart.GetJP())
                 ((JArray)result["Joints"]).Add(ExportVec(joi.Joint));
         }
 
@@ -676,7 +676,7 @@ class Program
     {
         var result = ExportPar(ShapePartT);
         result["Text"] = ShapePartT.Text ?? "";
-        result["FontSize"] = ShapePartT.FontSize;
+        result["FontSize"] = ShapePartT.GetFontSize();
         return result;
     }
 
