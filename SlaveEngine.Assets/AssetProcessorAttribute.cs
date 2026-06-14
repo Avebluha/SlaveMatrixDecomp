@@ -9,7 +9,7 @@ public class AssetProcessorAttribute : Attribute {
         ManagedType = managedType ?? throw new ArgumentNullException(nameof(managedType));
 
         // Validate that the provided type is Asset or a subclass of Asset
-        if (!typeof(Asset).IsSubclassOf(managedType))
+        if (managedType != typeof(Asset) && !managedType.IsSubclassOf(typeof(Asset)))
             throw new ArgumentException($"The type '{managedType.FullName}' must derive from '{typeof(Asset).FullName}'.", nameof(managedType));
 
         // Validate extensions: non-null, non-empty, normalized, start with '.', no whitespace, unique

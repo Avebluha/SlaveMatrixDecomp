@@ -1,107 +1,94 @@
 using _2DGAMELIB;
+using System;
+using System.Collections.Generic;
 
 namespace SlaveEngine.Graphics {
     public static class Spline {
-    public static List<Vector2D> CanonicalToBezierSpline(double tension, List<Vector2D> spline, bool closed)
-    {
-        var bezierPoints = new List<Vector2D>();
-        if (spline == null || spline.Count < 2) return bezierPoints;
-
-        double s = (1.0 - tension) / 6.0;
-        int count = spline.Count;
         
-        // if closed, we loop all the way back to the start point segment boundary
-        int segments = closed ? count : count - 1;
-
-        for (int i = 0; i < segments; i++)
+        /// <summary>
+        /// Converts a Cardinal Spline (GDI+ style) to a polyline.
+        /// </summary>
+        public static List<Vector2D> CardinalSplineToPolyline(double tension, List<Vector2D> points, bool closed, double delta = 0.02)
         {
-            var p1 = spline[i];
-            var p2 = spline[(i + 1) % count];
+            var polyline = new List<Vector2D>();
+            if (points == null || points.Count < 2) return polyline;
 
-            Vector2D p0, p3;
+            int n = points.Count;
+            int segments = closed ? n : n - 1;
 
-            if (closed)
+            for (int i = 0; i < segments; i++)
             {
-                // wrap around indexes symmetrically using modulo mapping
-                p0 = spline[(i - 1 + count) % count];
-                p3 = spline[(i + 2) % count];
+                int p0Idx = (i - 1 + n) % n;
+                int p1Idx = i;
+                int p2Idx = (i + 1) % n;
+                int p3Idx = (i + 2) % n;
+
+                if (!closed)
+                {
+                    p0Idx = System.Math.Max(i - 1, 0);
+                    p1Idx = i;
+                    p2Idx = i + 1;
+                    p3Idx = System.Math.Min(i + 2, n - 1);
+                }
+
+                var p0 = points[p0Idx];
+                var p1 = points[p1Idx];
+                var p2 = points[p2Idx];
+                var p3 = points[p3Idx];
+
+                // Cardinal Spline to Hermite tangents
+                // m1 = (1-t) * (p2 - p0) / 2
+                // m2 = (1-t) * (p3 - p1) / 2
+                var m1 = (p2 - p0) * (1.0 - tension) * 0.5;
+                var m2 = (p3 - p1) * (1.0 - tension) * 0.5;
+
+                // Evaluate Hermite spline segment
+                for (double t = 0.0; t < 1.0; t += delta)
+                {
+                    polyline.Add(EvaluateHermite(p1, m1, p2, m2, t));
+                }
             }
-            else
+
+            if (!closed)
             {
-                // fallback to duplicating edge endpoints if open loop boundary
-                p0 = (i > 0) ? spline[i - 1] : p1;
-                p3 = (i < count - 2) ? spline[i + 2] : p2;
+                polyline.Add(points.Last());
             }
 
-            var tangent1 = new Vector2D(p2.X - p0.X, p2.Y - p0.Y);
-            var tangent2 = new Vector2D(p3.X - p1.X, p3.Y - p1.Y);
-
-            var c1 = new Vector2D(p1.X + s * tangent1.X, p1.Y + s * tangent1.Y);
-            var c2 = new Vector2D(p2.X - s * tangent2.X, p2.Y - s * tangent2.Y);
-
-            bezierPoints.Add(p1);
-            bezierPoints.Add(c1);
-            bezierPoints.Add(c2);
-            
-            // append final terminal point on the very last chunk when open
-            if (!closed && i == segments - 1)
-            {
-                bezierPoints.Add(p2);
-            }
+            return polyline;
         }
 
-        // if closed, seal the final vector chain with the original loop node
-        if (closed)
+        private static Vector2D EvaluateHermite(Vector2D p1, Vector2D m1, Vector2D p2, Vector2D m2, double t)
         {
-            bezierPoints.Add(spline[0]);
+            double t2 = t * t;
+            double t3 = t2 * t;
+
+            // Hermite basis functions
+            double h1 = 2 * t3 - 3 * t2 + 1;
+            double h2 = -2 * t3 + 3 * t2;
+            double h3 = t3 - 2 * t2 + t;
+            double h4 = t3 - t2;
+
+            return p1 * h1 + p2 * h2 + m1 * h3 + m2 * h4;
         }
 
-        return bezierPoints;
-    }
-
-    public static List<Vector2D> SplineToPolyLine(double delta, List<Vector2D> spline)
-    {
-        var polyline = new List<Vector2D>();
-        if (spline == null || spline.Count < 4) return polyline;
-
-        // step through the list in chunks of 4 points representing distinct cubic bezier segments
-        for (int i = 0; i <= spline.Count - 4; i += 3)
+        // Keep existing Beziers for SVG compatibility
+        public static List<Vector2D> CubicBezierToPolyline(Vector2D p0, Vector2D p1, Vector2D p2, Vector2D p3, double delta = 0.02)
         {
-            var p0 = spline[i];
-            var p1 = spline[i + 1];
-            var p2 = spline[i + 2];
-            var p3 = spline[i + 3];
-
-            // evaluate the curve points along the resolution step
-            for (double t = 0.0; t < 1.0; t += delta)
+            var polyline = new List<Vector2D>();
+            for (double t = 0; t < 1.0; t += delta)
             {
                 polyline.Add(EvaluateCubicBezier(p0, p1, p2, p3, t));
             }
-            
-            // explicitly sample t=1.0 at the boundary junction to seal gaps
-            if (i == spline.Count - 4)
-            {
-                polyline.Add(p3);
-            }
+            polyline.Add(p3);
+            return polyline;
         }
 
-        return polyline;
+        private static Vector2D EvaluateCubicBezier(Vector2D p0, Vector2D p1, Vector2D p2, Vector2D p3, double t)
+        {
+            double u = 1.0 - t;
+            double tt = t * t;
+            double uu = u * u;
+            return p0 * (uu * u) + p1 * (3 * uu * t) + p2 * (3 * u * tt) + p3 * (tt * t);
+        }
     }
-
-    private static Vector2D EvaluateCubicBezier(Vector2D p0, Vector2D p1, Vector2D p2, Vector2D p3, double t)
-    {
-        double u = 1.0 - t;
-        double tt = t * t;
-        double uu = u * u;
-        double uuu = uu * u;
-        double ttt = tt * t;
-
-        // Bernstein polynomial mixing weights
-        double x = uuu * p0.X + 3.0 * uu * t * p1.X + 3.0 * u * tt * p2.X + ttt * p3.X;
-        double y = uuu * p0.Y + 3.0 * uu * t * p1.Y + 3.0 * u * tt * p2.Y + ttt * p3.Y;
-
-        return new Vector2D(x, y);
-    }
-
-}
 }

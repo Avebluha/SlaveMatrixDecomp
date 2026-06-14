@@ -533,8 +533,8 @@ class Program
 
             var c1x = F(points[p1].X + ci1x / 3);
             var c1y = F(points[p1].Y + ci1y / 3);
-            var c2x = F(points[p2].X + ci2x / 3);
-            var c2y = F(points[p2].Y + ci2y / 3);
+            var c2x = F(points[p2].X - ci2x / 3);
+            var c2y = F(points[p2].Y - ci2y / 3);
             var ex = F(points[p2].X);
             var ey = F(points[p2].Y);
 

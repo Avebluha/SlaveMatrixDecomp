@@ -3,6 +3,8 @@
   <ItemGroup>
     <ProjectReference Include="..\2DGAMELIB\2DGAMELIB.csproj" />
     <ProjectReference Include="..\SlaveEngine.Graphics\SlaveEngine.Graphics.csproj" />
+    <ProjectReference Include="..\SlaveEngine.AssetBuilder\SlaveEngine.AssetBuilder.csproj" />
+    <ProjectReference Include="..\SlaveEngine.Assets\SlaveEngine.Assets.csproj" />
   </ItemGroup>
 
   <ItemGroup>

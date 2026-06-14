@@ -79,13 +79,21 @@ public static class SvgParser {
         if (string.IsNullOrWhiteSpace(t)) return;
 
         var parts = t.Split(')', StringSplitOptions.RemoveEmptyEntries);
+        bool firstTranslate = true;
+
         foreach (var part in parts) {
             var trimmed = part.TrimStart();
             if (trimmed.StartsWith("translate(")) {
                 var args = trimmed["translate(".Length..].Split(',');
                 if (args.Length >= 2) {
-                    tx = float.Parse(args[0].Trim(), Inv);
-                    ty = float.Parse(args[1].Trim(), Inv);
+                    float x = float.Parse(args[0].Trim(), Inv);
+                    float y = float.Parse(args[1].Trim(), Inv);
+                    if (firstTranslate) {
+                        tx = x; ty = y;
+                        firstTranslate = false;
+                    } else {
+                        bx = x; by = y;
+                    }
                 }
             } else if (trimmed.StartsWith("rotate(")) {
                 var arg = trimmed["rotate(".Length..].Trim();
