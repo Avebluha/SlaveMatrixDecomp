@@ -2,7 +2,7 @@
 **/obj/
 .vs/
 .idea/
-**/SlaveMatrix/Assets/*
+**/Assets/*
 Config.ini
 game_folder/save/*
 /game_folder/save

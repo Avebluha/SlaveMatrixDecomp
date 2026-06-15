@@ -41,6 +41,72 @@ Game **must** run with `game_folder/` as working directory. `launchSettings.json
 - **game_folder/ content** is copied to build output via `<Content Include="..\game_folder\**\*" CopyToOutputDirectory="PreserveNewest" />`.
 - **Phase 0 (extraction) is complete.** Phases 1-5 (engine rewrite, Vulkan/Silk.NET) are planned in `PLAN.md`.
 
+## SlaveEngine.Renderer (Prototype)
+
+- **Project**: `SlaveEngine.Renderer/SlaveEngine.Renderer.csproj` — GLFW + Silk.NET OpenGL + raw GLFW bindings (`glfw` 3.4.0 NuGet)
+- **Run**: `dotnet run --project SlaveEngine.Renderer/SlaveEngine.Renderer.csproj` (or `dotnet run -c Release` for 10× faster geometry processing)
+- **Default working dir is project root** (`Assets/` directory with `.spart` files must be reachable)
+- **Renders MorphVariants** (VariantAssets) in a grid — each tile shows all PathGroups of one variant composed together with transforms
+- **2-pass pipeline**: (1) Ear-clip triangulation for fills (colored by hash), (2) Stroke-line extrusion via `ToStrip` (white outlines)
+- **`MaxVariants = 12`** kept low since ear-clip triangulation is O(n³) and slow in Debug mode
+
+### Keyboard Navigation
+| Key | Action |
+|-----|--------|
+| ←/→ | Previous/next part asset (category) |
+| ↑ | Focus on first single asset |
+| ↓ | Show all assets |
+| Home | Jump to first asset |
+| End | Jump to last asset |
+| Space | Reset camera pan/zoom |
+| Esc | Exit |
+| Left-drag | Pan camera |
+| Scroll | Zoom at cursor |
+| Right-click | Toggle wireframe overlay |
+
+### Architecture
+- `Program.cs` — main loop, asset loading, geometry baking, GL state
+- `GLFWWindow.cs` — raw GLFW wrapper implementing `IGameWindow`
+- `IGameWindow.cs` — window abstraction with mouse + key event interface (`KeyCode` enum, `KeyDown` event)
+- Asset loading via `SlaveEngine.Assets` (`.spart` binary format → `PartAsset`/`VariantAsset`/`PathGroup`/`PathData`)
+- Geometry processing via `SlaveEngine.Graphics` (`Spline.*`, `Triangulation.*`)
+- Polyline caches (`polylineCacheCoarse` + `polylineCacheFine`) avoid redundant `CommandsToPolylines` calls during keyboard navigation
+- Cleanup: old GL shader/buffer/VAO handles are deleted before rebuild on navigation
+
+### Phoenix Character (Phases 1+)
+
+- **PhoenixParts[]** in `Program.cs:165-215` defines 37 parts with variant selectors, mirror flags, rotations, and offsets.
+- **Character mode** (`P` key) loads all 37 parts, computes a global centering offset from their union bbox, then applies per-part mirrorX→RotOffset→PosOffset.
+- **PosOffset (offX/offY)** is applied LAST in `ApplyExtraTransforms()` at `Program.cs:800` — after centering, mirror, and rotation. This means offY for rotated parts rotates with the part.
+
+### Known Part-Positioning Issues
+
+ViewBox geometry bounds (computed from SVG path data + PathGroup transforms):
+
+| Part | ViewBox Y-range | Notes |
+|------|----------------|-------|
+| Waist | [0.195, 0.285] | Bottom = 0.285 |
+| Torso | [0.140, 0.218] | |
+| Chest | [0.078, 0.162] | |
+| Neck | [0.056, 0.109] | |
+| Head | [0.024, 0.069] | |
+| Shoulder | [0.142, 0.181] | Sits at Waist/Torso boundary |
+| 鳥翼UpperArm | [0.132, 0.179] | Overlaps Shoulder vertically |
+| 鳥翼LowerArm | [0.134, 0.187] | |
+| BirdWingHand | [0.145, 0.179] | |
+| QuadrupedThigh | [0.394, 0.464] | Top=0.394 → 0.109 gap to Waist |
+| QuadrupedLeg | [0.451, 0.510] | |
+| QuadrupedFoot | [0.451, 0.514] | |
+| Tail (y=9) | [0.264, 0.292] | Just below Waist bottom |
+| Tail_肢中 (x=2) | [0.552, 0.571] | Far below body |
+
+**Remaining gaps (2026-06-14):**
+- Waist→Thigh: `offY: -0.109` applied but may need retuning
+- Tail_肢中: needs `offY` (~-0.25 guessed) — rotation makes exact value non-trivial
+- Shoulder→UpperArm joint: Y-overlap exists but visual disconnection reported
+- Proper HSV-based skin/clothing gradients not implemented
+- Bird tail (y=9) at Y=[0.264,0.292] — only extends 0.007 below waist bottom (0.285)
+
 ## Git
 
 - `.gitignore` excludes: `**/bin/`, `**/obj/`, `.vs/`, `.idea/`, `Config.ini`, `game_folder/save/*`, `extracted/`.

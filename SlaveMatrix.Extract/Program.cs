@@ -235,6 +235,7 @@ class Program
         var catalog = new JObject();
         catalog["parts"] = new JArray();
         var catalogParts = (JArray)catalog["parts"];
+        HashSet<string> usedEngKeys = new HashSet<string>();
 
         foreach (var (name, data) in resources)
         {
@@ -264,6 +265,13 @@ class Program
             {
                 // Use extraction EnglishNameMap for directory naming
                 var engKey = EnglishNameMap.TryGetValue(key, out var mapped) ? mapped : key;
+                // Handle key collisions across resources by appending resource name
+                if (!usedEngKeys.Add(engKey))
+                {
+                    var disambig = SanitizeName($"{engKey}_{name}");
+                    Console.WriteLine($"    Warning: key '{key}' collides with existing '{engKey}'. Renaming to '{disambig}'.");
+                    engKey = disambig;
+                }
                 var difs = obj.Difss[key];
                 var partDir = Path.Combine(partsDir, SanitizeName(engKey));
                 Directory.CreateDirectory(partDir);
@@ -467,16 +475,47 @@ class Program
         if (hasTransform)
             sb.Append($"<g transform=\"translate({F(px)},{F(py)}) rotate({F(angle)}) scale({F(sx)},{F(sy)}) translate({F(-bx)},{F(-by)})\">");
 
-        foreach (var outObj in ShapePart.GetOP())
+        var curves = ShapePart.GetOP().Where(c => c.ps.Count >= 2).ToList();
+        if (curves.Count > 0)
         {
-            var points = outObj.ps;
-            if (points.Count < 2) continue;
+            var fillSegments = new List<string>();
+            var strokeSegments = new List<(string d, float sw)>();
+            foreach (var outObj in curves)
+            {
+                var d = BuildSvgPath(outObj.ps, outObj.Tension, ShapePart.IsClosed);
+                fillSegments.Add(d);
+                if (outObj.Outline)
+                {
+                    float sw_val = (float)System.Math.Max(ShapePart.GetPenWidth(), 0.001);
+                    strokeSegments.Add((d, sw_val));
+                }
+            }
 
-            var d = BuildSvgPath(points, outObj.Tension, ShapePart.IsClosed);
-            var fill = ShapePart.IsClosed ? "#cccccc" : "none";
-            var stroke = outObj.Outline ? "#000000" : "none";
-            var sw_val = outObj.Outline ? System.Math.Max(ShapePart.GetPenWidth(), 0.001) : 0.0;
-            sb.AppendLine($"<path d=\"{d}\" fill=\"{fill}\" stroke=\"{stroke}\" stroke-width=\"{F(sw_val)}\"/>");
+            // Merge all curves into one continuous fill path
+            var fillD = new StringBuilder();
+            fillD.Append(fillSegments[0]);
+            for (int i = 1; i < fillSegments.Count; i++)
+            {
+                var d = fillSegments[i];
+                // Strip leading "M x y" (curves connect end-to-start)
+                int idx = 2;
+                while (idx < d.Length && d[idx] != ' ') idx++; idx++;
+                while (idx < d.Length && d[idx] != ' ') idx++; idx++;
+                // Strip trailing Z if present
+                if (d.EndsWith(" Z")) d = d.Substring(0, d.Length - 2);
+                fillD.Append(' ');
+                fillD.Append(d.Substring(idx));
+            }
+            var combined = fillD.ToString();
+            if (combined.EndsWith(" Z")) combined = combined.Substring(0, combined.Length - 2);
+            if (ShapePart.IsClosed) combined += " Z";
+            sb.AppendLine($"<path d=\"{combined}\" fill=\"#cccccc\" stroke=\"none\" stroke-width=\"0\"/>");
+
+            // Emit individual stroke paths for Outline=true curves
+            foreach (var (d, sw) in strokeSegments)
+            {
+                sb.AppendLine($"<path d=\"{d}\" fill=\"none\" stroke=\"#000000\" stroke-width=\"{F(sw)}\"/>");
+            }
         }
 
         if (hasTransform)

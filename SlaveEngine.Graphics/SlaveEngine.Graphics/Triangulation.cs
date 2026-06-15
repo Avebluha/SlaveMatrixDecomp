@@ -108,12 +108,18 @@ namespace SlaveEngine.Graphics {
                 Vector2D vb = vertices[c]; 
                 Vector2D vc = vertices[n];
                 if ((vb.X - va.X) * (vc.Y - va.Y) - (vb.Y - va.Y) * (vc.X - va.X) >= -1e-12) continue;
+                double earMinX = System.Math.Min(va.X, System.Math.Min(vb.X, vc.X));
+                double earMaxX = System.Math.Max(va.X, System.Math.Max(vb.X, vc.X));
+                double earMinY = System.Math.Min(va.Y, System.Math.Min(vb.Y, vc.Y));
+                double earMaxY = System.Math.Max(va.Y, System.Math.Max(vb.Y, vc.Y));
                 bool inside = false;
                 for (int j = 0; j < indices.Count; j++)
                 {
                     int tIdx = indices[j];
                     if (tIdx == p || tIdx == c || tIdx == n) continue;
-                    if (IsPointInTriangle(vertices[tIdx], va, vb, vc)) { inside = true; break; }
+                    Vector2D vt = vertices[tIdx];
+                    if (vt.X < earMinX || vt.X > earMaxX || vt.Y < earMinY || vt.Y > earMaxY) continue;
+                    if (IsPointInTriangle(vt, va, vb, vc)) { inside = true; break; }
                 }
                 if (!inside) { AddVertexTuple(result, va); AddVertexTuple(result, vb); AddVertexTuple(result, vc); indices.RemoveAt(i); earFound = true; break; }
             }

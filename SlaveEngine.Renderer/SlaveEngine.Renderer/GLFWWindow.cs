@@ -17,6 +17,7 @@ namespace SlaveEngine.Graphics
         private readonly SizeCallback nativeResizeCallback;
         private readonly MouseCallback nativeScrollCallback;
         private readonly MouseEnterCallback nativeLeaveCallback;
+        private readonly KeyCallback nativeKeyCallback;
 
         // interface actions
         public event Action Closing = delegate { };
@@ -25,6 +26,7 @@ namespace SlaveEngine.Graphics
         public event Action<Vector2D> MouseLeave = delegate { };
         public event Action<double, double> MouseScroll = delegate { };
         public event Action<MouseButtons> MouseClick = delegate { };
+        public event Action<KeyCode> KeyDown = delegate { };
 
         public static unsafe GLFW.Window PtrToWindow(IntPtr source)
         {
@@ -108,6 +110,14 @@ namespace SlaveEngine.Graphics
                 if (!entered) GetContext(win)?.MouseLeave?.Invoke(GetContext(win).GetCursorPoint());
             };
 
+            nativeKeyCallback = (win, key, scancode, action, mods) => {
+                if (action != InputState.Press && action != InputState.Repeat) return;
+                var ctx = GetContext(win);
+                if (ctx == null) return;
+                KeyCode kc = MapGlfwKey(key);
+                if (kc != KeyCode.Unknown) ctx.KeyDown?.Invoke(kc);
+            };
+
             MouseButtons activeButtons = 0;  
             nativeClickCallback = (win, button, state, modifiers) => {
                 MouseButtons targetBtn = 0;
@@ -142,6 +152,7 @@ namespace SlaveEngine.Graphics
             Glfw.SetCursorPositionCallback(window, nativeMoveCallback);
             Glfw.SetScrollCallback(window, nativeScrollCallback);
             Glfw.SetCursorEnterCallback(window, nativeLeaveCallback);
+            Glfw.SetKeyCallback(window, nativeKeyCallback);
 
             GCHandle handle = GCHandle.Alloc(this);
             Glfw.SetWindowUserPointer(window, GCHandle.ToIntPtr(handle));
@@ -152,6 +163,27 @@ namespace SlaveEngine.Graphics
 
         public GL CreateGlContext(){
             return Silk.NET.OpenGL.GL.GetApi(Glfw.GetProcAddress);
+        }
+
+        private static KeyCode MapGlfwKey(Keys key)
+        {
+            switch (key)
+            {
+                case Keys.Left: return KeyCode.Left;
+                case Keys.Right: return KeyCode.Right;
+                case Keys.Up: return KeyCode.Up;
+                case Keys.Down: return KeyCode.Down;
+                case Keys.Space: return KeyCode.Space;
+                case Keys.Escape: return KeyCode.Escape;
+                case Keys.Home: return KeyCode.Home;
+                case Keys.End: return KeyCode.End;
+                case Keys.LeftBracket: return KeyCode.LeftBracket;
+                case Keys.RightBracket: return KeyCode.RightBracket;
+                case Keys.R: return KeyCode.R;
+                case Keys.C: return KeyCode.C;
+                case Keys.P: return KeyCode.P;
+                default: return KeyCode.Unknown;
+            }
         }
 
         public void Dispose()
