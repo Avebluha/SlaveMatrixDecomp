@@ -4,7 +4,7 @@ namespace SlaveMatrix
 {
     public class 断面_獣 : 断面
     {
-    	public ShapePart X0Y0_膣基;
+    	public ShapePart X0Y0_VaginaOrigin;
 
     	public ShapePart X0Y0_膣壁左;
 
@@ -26,7 +26,7 @@ namespace SlaveMatrix
 
     	public ShapePart X0Y0_精液;
 
-    	public ShapePart X0Y1_膣基;
+    	public ShapePart X0Y1_VaginaOrigin;
 
     	public ShapePart X0Y1_膣壁左;
 
@@ -48,7 +48,7 @@ namespace SlaveMatrix
 
     	public ShapePart X0Y1_精液;
 
-    	public ShapePart X0Y2_膣基;
+    	public ShapePart X0Y2_VaginaOrigin;
 
     	public ShapePart X0Y2_膣壁左;
 
@@ -70,7 +70,7 @@ namespace SlaveMatrix
 
     	public ShapePart X0Y2_精液;
 
-    	public ShapePart X0Y3_膣基;
+    	public ShapePart X0Y3_VaginaOrigin;
 
     	public ShapePart X0Y3_膣壁左;
 
@@ -92,7 +92,7 @@ namespace SlaveMatrix
 
     	public ShapePart X0Y3_精液;
 
-    	public ShapePart X0Y4_膣基;
+    	public ShapePart X0Y4_VaginaOrigin;
 
     	public ShapePart X0Y4_膣壁左;
 
@@ -114,7 +114,7 @@ namespace SlaveMatrix
 
     	public ShapePart X0Y4_精液;
 
-    	public ColorD 膣基CD;
+    	public ColorD VaginaOriginCD;
 
     	public ColorD 膣壁左CD;
 
@@ -136,7 +136,7 @@ namespace SlaveMatrix
 
     	public ColorD 精液CD;
 
-    	public ColorP X0Y0_膣基CP;
+    	public ColorP X0Y0_VaginaOriginCP;
 
     	public ColorP X0Y0_膣壁左CP;
 
@@ -158,7 +158,7 @@ namespace SlaveMatrix
 
     	public ColorP X0Y0_精液CP;
 
-    	public ColorP X0Y1_膣基CP;
+    	public ColorP X0Y1_VaginaOriginCP;
 
     	public ColorP X0Y1_膣壁左CP;
 
@@ -180,7 +180,7 @@ namespace SlaveMatrix
 
     	public ColorP X0Y1_精液CP;
 
-    	public ColorP X0Y2_膣基CP;
+    	public ColorP X0Y2_VaginaOriginCP;
 
     	public ColorP X0Y2_膣壁左CP;
 
@@ -202,7 +202,7 @@ namespace SlaveMatrix
 
     	public ColorP X0Y2_精液CP;
 
-    	public ColorP X0Y3_膣基CP;
+    	public ColorP X0Y3_VaginaOriginCP;
 
     	public ColorP X0Y3_膣壁左CP;
 
@@ -224,7 +224,7 @@ namespace SlaveMatrix
 
     	public ColorP X0Y3_精液CP;
 
-    	public ColorP X0Y4_膣基CP;
+    	public ColorP X0Y4_VaginaOriginCP;
 
     	public ColorP X0Y4_膣壁左CP;
 
@@ -282,24 +282,24 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 膣基_表示
+    	public bool VaginaOrigin_表示
     	{
     		get
     		{
-    			return X0Y0_膣基.Dra;
+    			return X0Y0_VaginaOrigin.Dra;
     		}
     		set
     		{
-    			X0Y0_膣基.Dra = value;
-    			X0Y1_膣基.Dra = value;
-    			X0Y2_膣基.Dra = value;
-    			X0Y3_膣基.Dra = value;
-    			X0Y4_膣基.Dra = value;
-    			X0Y0_膣基.Hit = value;
-    			X0Y1_膣基.Hit = value;
-    			X0Y2_膣基.Hit = value;
-    			X0Y3_膣基.Hit = value;
-    			X0Y4_膣基.Hit = value;
+    			X0Y0_VaginaOrigin.Dra = value;
+    			X0Y1_VaginaOrigin.Dra = value;
+    			X0Y2_VaginaOrigin.Dra = value;
+    			X0Y3_VaginaOrigin.Dra = value;
+    			X0Y4_VaginaOrigin.Dra = value;
+    			X0Y0_VaginaOrigin.Hit = value;
+    			X0Y1_VaginaOrigin.Hit = value;
+    			X0Y2_VaginaOrigin.Hit = value;
+    			X0Y3_VaginaOrigin.Hit = value;
+    			X0Y4_VaginaOrigin.Hit = value;
     		}
     	}
 
@@ -517,11 +517,11 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return 膣基_表示;
+    			return VaginaOrigin_表示;
     		}
     		set
     		{
-    			膣基_表示 = value;
+    			VaginaOrigin_表示 = value;
     			膣壁左_表示 = value;
     			膣壁右_表示 = value;
     			卵巣左_表示 = value;
@@ -539,11 +539,11 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return 膣基CD.不透明度;
+    			return VaginaOriginCD.不透明度;
     		}
     		set
     		{
-    			膣基CD.不透明度 = value;
+    			VaginaOriginCD.不透明度 = value;
     			膣壁左CD.不透明度 = value;
     			膣壁右CD.不透明度 = value;
     			卵巣左CD.不透明度 = value;
@@ -573,23 +573,23 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return X0Y0_膣基.GetSizeYCont();
+    			return X0Y0_VaginaOrigin.GetSizeYCont();
     		}
     		set
     		{
-    			X0Y0_膣基.SetSizeYCont(value);
+    			X0Y0_VaginaOrigin.SetSizeYCont(value);
     			X0Y0_膣壁左.SetSizeYCont(value);
     			X0Y0_膣壁右.SetSizeYCont(value);
-    			X0Y1_膣基.SetSizeYCont(value);
+    			X0Y1_VaginaOrigin.SetSizeYCont(value);
     			X0Y1_膣壁左.SetSizeYCont(value);
     			X0Y1_膣壁右.SetSizeYCont(value);
-    			X0Y2_膣基.SetSizeYCont(value);
+    			X0Y2_VaginaOrigin.SetSizeYCont(value);
     			X0Y2_膣壁左.SetSizeYCont(value);
     			X0Y2_膣壁右.SetSizeYCont(value);
-    			X0Y3_膣基.SetSizeYCont(value);
+    			X0Y3_VaginaOrigin.SetSizeYCont(value);
     			X0Y3_膣壁左.SetSizeYCont(value);
     			X0Y3_膣壁右.SetSizeYCont(value);
-    			X0Y4_膣基.SetSizeYCont(value);
+    			X0Y4_VaginaOrigin.SetSizeYCont(value);
     			X0Y4_膣壁左.SetSizeYCont(value);
     			X0Y4_膣壁右.SetSizeYCont(value);
     			double sizeYCont = value.Reciprocal();
@@ -621,7 +621,7 @@ namespace SlaveMatrix
     		ThisType = GetType();
     		Body = new VariantGrid(GlobalState.半身["四足断面"]);
     		PartGroup partGroup = Body[0][0];
-    		X0Y0_膣基 = partGroup["膣基"].ToPar();
+    		X0Y0_VaginaOrigin = partGroup["膣基"].ToPar();
     		X0Y0_膣壁左 = partGroup["膣壁左"].ToPar();
     		X0Y0_膣壁右 = partGroup["膣壁右"].ToPar();
     		X0Y0_卵巣左 = partGroup["卵巣左"].ToPar();
@@ -633,7 +633,7 @@ namespace SlaveMatrix
     		X0Y0_子宮口 = partGroup["子宮口"].ToPar();
     		X0Y0_精液 = partGroup["精液"].ToPar();
     		partGroup = Body[0][1];
-    		X0Y1_膣基 = partGroup["膣基"].ToPar();
+    		X0Y1_VaginaOrigin = partGroup["膣基"].ToPar();
     		X0Y1_膣壁左 = partGroup["膣壁左"].ToPar();
     		X0Y1_膣壁右 = partGroup["膣壁右"].ToPar();
     		X0Y1_卵巣左 = partGroup["卵巣左"].ToPar();
@@ -645,7 +645,7 @@ namespace SlaveMatrix
     		X0Y1_子宮口 = partGroup["子宮口"].ToPar();
     		X0Y1_精液 = partGroup["精液"].ToPar();
     		partGroup = Body[0][2];
-    		X0Y2_膣基 = partGroup["膣基"].ToPar();
+    		X0Y2_VaginaOrigin = partGroup["膣基"].ToPar();
     		X0Y2_膣壁左 = partGroup["膣壁左"].ToPar();
     		X0Y2_膣壁右 = partGroup["膣壁右"].ToPar();
     		X0Y2_卵巣左 = partGroup["卵巣左"].ToPar();
@@ -657,7 +657,7 @@ namespace SlaveMatrix
     		X0Y2_子宮口 = partGroup["子宮口"].ToPar();
     		X0Y2_精液 = partGroup["精液"].ToPar();
     		partGroup = Body[0][3];
-    		X0Y3_膣基 = partGroup["膣基"].ToPar();
+    		X0Y3_VaginaOrigin = partGroup["膣基"].ToPar();
     		X0Y3_膣壁左 = partGroup["膣壁左"].ToPar();
     		X0Y3_膣壁右 = partGroup["膣壁右"].ToPar();
     		X0Y3_卵巣左 = partGroup["卵巣左"].ToPar();
@@ -669,7 +669,7 @@ namespace SlaveMatrix
     		X0Y3_子宮口 = partGroup["子宮口"].ToPar();
     		X0Y3_精液 = partGroup["精液"].ToPar();
     		partGroup = Body[0][4];
-    		X0Y4_膣基 = partGroup["膣基"].ToPar();
+    		X0Y4_VaginaOrigin = partGroup["膣基"].ToPar();
     		X0Y4_膣壁左 = partGroup["膣壁左"].ToPar();
     		X0Y4_膣壁右 = partGroup["膣壁右"].ToPar();
     		X0Y4_卵巣左 = partGroup["卵巣左"].ToPar();
@@ -704,7 +704,7 @@ namespace SlaveMatrix
     		サイズ = e.サイズ;
     		サイズX = e.サイズX;
     		サイズY = e.サイズY;
-    		膣基_表示 = e.膣基_表示;
+    		VaginaOrigin_表示 = e.VaginaOrigin_表示;
     		膣壁左_表示 = e.膣壁左_表示;
     		膣壁右_表示 = e.膣壁右_表示;
     		卵巣左_表示 = e.卵巣左_表示;
@@ -724,7 +724,7 @@ namespace SlaveMatrix
     		}
     		base.配色指定 = 配色指定;
     		配色(体配色);
-    		X0Y0_膣基CP = new ColorP(X0Y0_膣基, 膣基CD, DisUnit, abj: true);
+    		X0Y0_VaginaOriginCP = new ColorP(X0Y0_VaginaOrigin, VaginaOriginCD, DisUnit, abj: true);
     		X0Y0_膣壁左CP = new ColorP(X0Y0_膣壁左, 膣壁左CD, DisUnit, abj: true);
     		X0Y0_膣壁右CP = new ColorP(X0Y0_膣壁右, 膣壁右CD, DisUnit, abj: true);
     		X0Y0_卵巣左CP = new ColorP(X0Y0_卵巣左, 卵巣左CD, DisUnit, abj: true);
@@ -735,7 +735,7 @@ namespace SlaveMatrix
     		X0Y0_子宮内CP = new ColorP(X0Y0_子宮内, 子宮内CD, DisUnit, abj: true);
     		X0Y0_子宮口CP = new ColorP(X0Y0_子宮口, 子宮口CD, DisUnit, abj: true);
     		X0Y0_精液CP = new ColorP(X0Y0_精液, 精液CD, DisUnit, abj: true);
-    		X0Y1_膣基CP = new ColorP(X0Y1_膣基, 膣基CD, DisUnit, abj: true);
+    		X0Y1_VaginaOriginCP = new ColorP(X0Y1_VaginaOrigin, VaginaOriginCD, DisUnit, abj: true);
     		X0Y1_膣壁左CP = new ColorP(X0Y1_膣壁左, 膣壁左CD, DisUnit, abj: true);
     		X0Y1_膣壁右CP = new ColorP(X0Y1_膣壁右, 膣壁右CD, DisUnit, abj: true);
     		X0Y1_卵巣左CP = new ColorP(X0Y1_卵巣左, 卵巣左CD, DisUnit, abj: true);
@@ -746,7 +746,7 @@ namespace SlaveMatrix
     		X0Y1_子宮内CP = new ColorP(X0Y1_子宮内, 子宮内CD, DisUnit, abj: true);
     		X0Y1_子宮口CP = new ColorP(X0Y1_子宮口, 子宮口CD, DisUnit, abj: true);
     		X0Y1_精液CP = new ColorP(X0Y1_精液, 精液CD, DisUnit, abj: true);
-    		X0Y2_膣基CP = new ColorP(X0Y2_膣基, 膣基CD, DisUnit, abj: true);
+    		X0Y2_VaginaOriginCP = new ColorP(X0Y2_VaginaOrigin, VaginaOriginCD, DisUnit, abj: true);
     		X0Y2_膣壁左CP = new ColorP(X0Y2_膣壁左, 膣壁左CD, DisUnit, abj: true);
     		X0Y2_膣壁右CP = new ColorP(X0Y2_膣壁右, 膣壁右CD, DisUnit, abj: true);
     		X0Y2_卵巣左CP = new ColorP(X0Y2_卵巣左, 卵巣左CD, DisUnit, abj: true);
@@ -757,7 +757,7 @@ namespace SlaveMatrix
     		X0Y2_子宮内CP = new ColorP(X0Y2_子宮内, 子宮内CD, DisUnit, abj: true);
     		X0Y2_子宮口CP = new ColorP(X0Y2_子宮口, 子宮口CD, DisUnit, abj: true);
     		X0Y2_精液CP = new ColorP(X0Y2_精液, 精液CD, DisUnit, abj: true);
-    		X0Y3_膣基CP = new ColorP(X0Y3_膣基, 膣基CD, DisUnit, abj: true);
+    		X0Y3_VaginaOriginCP = new ColorP(X0Y3_VaginaOrigin, VaginaOriginCD, DisUnit, abj: true);
     		X0Y3_膣壁左CP = new ColorP(X0Y3_膣壁左, 膣壁左CD, DisUnit, abj: true);
     		X0Y3_膣壁右CP = new ColorP(X0Y3_膣壁右, 膣壁右CD, DisUnit, abj: true);
     		X0Y3_卵巣左CP = new ColorP(X0Y3_卵巣左, 卵巣左CD, DisUnit, abj: true);
@@ -768,7 +768,7 @@ namespace SlaveMatrix
     		X0Y3_子宮内CP = new ColorP(X0Y3_子宮内, 子宮内CD, DisUnit, abj: true);
     		X0Y3_子宮口CP = new ColorP(X0Y3_子宮口, 子宮口CD, DisUnit, abj: true);
     		X0Y3_精液CP = new ColorP(X0Y3_精液, 精液CD, DisUnit, abj: true);
-    		X0Y4_膣基CP = new ColorP(X0Y4_膣基, 膣基CD, DisUnit, abj: true);
+    		X0Y4_VaginaOriginCP = new ColorP(X0Y4_VaginaOrigin, VaginaOriginCD, DisUnit, abj: true);
     		X0Y4_膣壁左CP = new ColorP(X0Y4_膣壁左, 膣壁左CD, DisUnit, abj: true);
     		X0Y4_膣壁右CP = new ColorP(X0Y4_膣壁右, 膣壁右CD, DisUnit, abj: true);
     		X0Y4_卵巣左CP = new ColorP(X0Y4_卵巣左, 卵巣左CD, DisUnit, abj: true);
@@ -788,7 +788,7 @@ namespace SlaveMatrix
     		switch (Body.GetIndexY())
     		{
     		case 0:
-    			X0Y0_膣基CP.Update();
+    			X0Y0_VaginaOriginCP.Update();
     			X0Y0_膣壁左CP.Update();
     			X0Y0_膣壁右CP.Update();
     			X0Y0_卵巣左CP.Update();
@@ -801,7 +801,7 @@ namespace SlaveMatrix
     			X0Y0_精液CP.Update();
     			break;
     		case 1:
-    			X0Y1_膣基CP.Update();
+    			X0Y1_VaginaOriginCP.Update();
     			X0Y1_膣壁左CP.Update();
     			X0Y1_膣壁右CP.Update();
     			X0Y1_卵巣左CP.Update();
@@ -814,7 +814,7 @@ namespace SlaveMatrix
     			X0Y1_精液CP.Update();
     			break;
     		case 2:
-    			X0Y2_膣基CP.Update();
+    			X0Y2_VaginaOriginCP.Update();
     			X0Y2_膣壁左CP.Update();
     			X0Y2_膣壁右CP.Update();
     			X0Y2_卵巣左CP.Update();
@@ -827,7 +827,7 @@ namespace SlaveMatrix
     			X0Y2_精液CP.Update();
     			break;
     		case 3:
-    			X0Y3_膣基CP.Update();
+    			X0Y3_VaginaOriginCP.Update();
     			X0Y3_膣壁左CP.Update();
     			X0Y3_膣壁右CP.Update();
     			X0Y3_卵巣左CP.Update();
@@ -840,7 +840,7 @@ namespace SlaveMatrix
     			X0Y3_精液CP.Update();
     			break;
     		default:
-    			X0Y4_膣基CP.Update();
+    			X0Y4_VaginaOriginCP.Update();
     			X0Y4_膣壁左CP.Update();
     			X0Y4_膣壁右CP.Update();
     			X0Y4_卵巣左CP.Update();
@@ -862,7 +862,7 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		膣基CD = new ColorD(ref ColorHelper.Empty, ref Color2.Empty);
+    		VaginaOriginCD = new ColorD(ref ColorHelper.Empty, ref Color2.Empty);
     		ColorHelper.Alpha(ref 体配色.粘膜, 160, out var ret);
     		膣壁左CD = new ColorD(ref 体配色.粘膜線, ref ret);
     		膣壁右CD = new ColorD(ref 体配色.粘膜線, ref 膣壁左CD.c2);

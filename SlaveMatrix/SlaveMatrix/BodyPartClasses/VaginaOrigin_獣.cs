@@ -2,13 +2,13 @@ using _2DGAMELIB;
 
 namespace SlaveMatrix
 {
-    public class 膣基_獣 : 膣基
+    public class VaginaOrigin_獣 : VaginaOrigin
     {
-    	public ShapePart X0Y0_膣基;
+    	public ShapePart X0Y0_VaginaOrigin;
 
-    	public ColorD 膣基CD;
+    	public ColorD VaginaOriginCD;
 
-    	public ColorP X0Y0_膣基CP;
+    	public ColorP X0Y0_VaginaOriginCP;
 
     	public override bool 欠損
     	{
@@ -46,16 +46,16 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 膣基_表示
+    	public bool VaginaOrigin_表示
     	{
     		get
     		{
-    			return X0Y0_膣基.Dra;
+    			return X0Y0_VaginaOrigin.Dra;
     		}
     		set
     		{
-    			X0Y0_膣基.Dra = value;
-    			X0Y0_膣基.Hit = value;
+    			X0Y0_VaginaOrigin.Dra = value;
+    			X0Y0_VaginaOrigin.Hit = value;
     		}
     	}
 
@@ -63,11 +63,11 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return 膣基_表示;
+    			return VaginaOrigin_表示;
     		}
     		set
     		{
-    			膣基_表示 = value;
+    			VaginaOrigin_表示 = value;
     		}
     	}
 
@@ -75,20 +75,20 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return 膣基CD.不透明度;
+    			return VaginaOriginCD.不透明度;
     		}
     		set
     		{
-    			膣基CD.不透明度 = value;
+    			VaginaOriginCD.不透明度 = value;
     		}
     	}
 
-    	public 膣基_獣(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 膣基_獣D e)
+    	public VaginaOrigin_獣(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, VaginaOrigin_獣D e)
     	{
     		ThisType = GetType();
     		Body = new VariantGrid(GlobalState.半身["四足膣基"]);
     		PartGroup partGroup = Body[0][0];
-    		X0Y0_膣基 = partGroup["膣基"].ToPar();
+    		X0Y0_VaginaOrigin = partGroup["膣基"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;
@@ -113,7 +113,7 @@ namespace SlaveMatrix
     		サイズ = e.サイズ;
     		サイズX = e.サイズX;
     		サイズY = e.サイズY;
-    		膣基_表示 = e.膣基_表示;
+    		VaginaOrigin_表示 = e.VaginaOrigin_表示;
     		欠損 = e.欠損;
     		筋肉 = e.筋肉;
     		拘束 = e.拘束;
@@ -123,13 +123,13 @@ namespace SlaveMatrix
     		}
     		base.配色指定 = 配色指定;
     		配色(体配色);
-    		X0Y0_膣基CP = new ColorP(X0Y0_膣基, 膣基CD, DisUnit, abj: true);
+    		X0Y0_VaginaOriginCP = new ColorP(X0Y0_VaginaOrigin, VaginaOriginCD, DisUnit, abj: true);
     		Intensity = e.濃度;
     	}
 
     	public override void 色更新()
     	{
-    		X0Y0_膣基CP.Update();
+    		X0Y0_VaginaOriginCP.Update();
     	}
 
     	private void 配色(BodyColorSet 体配色)
@@ -140,7 +140,7 @@ namespace SlaveMatrix
     	private void 配色N0(BodyColorSet 体配色)
     	{
     		ColorHelper.Alpha(ref 体配色.粘膜, 160, out var ret);
-    		膣基CD = new ColorD(ref 体配色.粘膜線, ref ret);
+    		VaginaOriginCD = new ColorD(ref 体配色.粘膜線, ref ret);
     	}
     }
 }

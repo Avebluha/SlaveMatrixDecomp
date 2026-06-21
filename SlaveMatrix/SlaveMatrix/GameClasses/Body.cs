@@ -1,10 +1,10 @@
-﻿using System;
+﻿using _2DGAMELIB;
+using SlaveMatrix.GameClasses;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
 using System.Reflection;
-using _2DGAMELIB;
-using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
@@ -185,7 +185,7 @@ namespace SlaveMatrix
 
     	public キャップ2 キャップ2右;
 
-    	public 膣基_人 膣基_人;
+    	public VaginaOrigin_人 VaginaOrigin_人;
 
     	public 膣内精液_人 膣内精液_人;
 
@@ -275,7 +275,7 @@ namespace SlaveMatrix
 
     	public 肛門精液_獣 肛門精液_獣;
 
-    	public 膣基_獣 膣基_獣;
+    	public VaginaOrigin_獣 VaginaOrigin_獣;
 
     	public 膣内精液_獣 膣内精液_獣;
 
@@ -701,7 +701,7 @@ namespace SlaveMatrix
 
     	public bool 処女喪失;
 
-    	public 膣基 膣基;
+    	public VaginaOrigin VaginaOrigin;
 
     	public 膣内精液 VaginalCumDrip;
 
@@ -884,7 +884,7 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			if (!膣基.表示 && !VaginalCumDrip.表示)
+    			if (!VaginaOrigin.表示 && !VaginalCumDrip.表示)
     			{
     				return 断面.表示;
     			}
@@ -892,7 +892,7 @@ namespace SlaveMatrix
     		}
     		set
     		{
-    			膣基.表示 = value;
+    			VaginaOrigin.表示 = value;
     			VaginalCumDrip.精液_表示 = value;
     			断面.表示 = value;
     			if (処女喪失)
@@ -3853,13 +3853,13 @@ namespace SlaveMatrix
     			肛門_人 = Waist.肛門_接続.GetEle<肛門_人>();
     			肛門精液_人 = 肛門_人.肛門精液_接続.GetEle<肛門精液_人>();
     			肛門精液_人.SetHitFalse();
-    			膣基_人 = Waist.膣基_接続.GetEle<膣基_人>();
-    			膣内精液_人 = Waist.膣基_接続.GetEle<膣内精液_人>();
-    			断面_人 = Waist.膣基_接続.GetEle<断面_人>();
-    			膣基_人.SetHitFalse();
+    			VaginaOrigin_人 = Waist.VaginaOrigin_接続.GetEle<VaginaOrigin_人>();
+    			膣内精液_人 = Waist.VaginaOrigin_接続.GetEle<膣内精液_人>();
+    			断面_人 = Waist.VaginaOrigin_接続.GetEle<断面_人>();
+    			VaginaOrigin_人.SetHitFalse();
     			膣内精液_人.SetHitFalse();
     			断面_人.SetHitFalse();
-    			性器_人 = Waist.膣基_接続.GetEle<性器_人>();
+    			性器_人 = Waist.VaginaOrigin_接続.GetEle<性器_人>();
     			性器精液_人 = 性器_人.膣口_接続.GetEle<性器精液_人>();
     			飛沫_人 = 性器_人.膣口_接続.GetEle<飛沫_人>();
     			潮吹_小_人 = 性器_人.尿道_接続.GetEle<潮吹_小_人>();
@@ -4519,9 +4519,9 @@ namespace SlaveMatrix
     					{
     						肛門精液_獣 = (肛門精液_獣)item22;
     					}
-    					else if (item22 is 膣基_獣)
+    					else if (item22 is VaginaOrigin_獣)
     					{
-    						膣基_獣 = (膣基_獣)item22;
+    						VaginaOrigin_獣 = (VaginaOrigin_獣)item22;
     					}
     					else if (item22 is 膣内精液_獣)
     					{
@@ -4583,7 +4583,7 @@ namespace SlaveMatrix
     				腰肌_獣.X0Y4_陰毛_ハート.Hit = true;
     				腰肌_獣.X0Y4_獣性_獣毛.Hit = true;
     				肛門精液_獣.SetHitFalse();
-    				膣基_獣.SetHitFalse();
+    				VaginaOrigin_獣.SetHitFalse();
     				膣内精液_獣.SetHitFalse();
     				断面_獣.SetHitFalse();
     				性器精液_獣.SetHitFalse();
@@ -4706,7 +4706,7 @@ namespace SlaveMatrix
     					}
     				}
     				Sort(from e in ele.EnumEle().Skip(1)
-    					where !bod.半身前接続.Contains(e) && !bod.半身中1接続.Contains(e) && !bod.半身後接続.Contains(e) && !(e is 四足脇) && e != bod.肛門_獣 && e != bod.肛門精液_獣 && e != bod.膣基_獣 && e != bod.膣内精液_獣 && e != bod.断面_獣 && e != bod.性器_獣 && e != bod.性器精液_獣 && e != bod.飛沫_獣 && e != bod.潮吹_小_獣 && e != bod.潮吹_大_獣 && e != bod.放尿_獣 && e != bod.ピアス && e != bod.キャップ1
+    					where !bod.半身前接続.Contains(e) && !bod.半身中1接続.Contains(e) && !bod.半身後接続.Contains(e) && !(e is 四足脇) && e != bod.肛門_獣 && e != bod.肛門精液_獣 && e != bod.VaginaOrigin_獣 && e != bod.膣内精液_獣 && e != bod.断面_獣 && e != bod.性器_獣 && e != bod.性器精液_獣 && e != bod.飛沫_獣 && e != bod.潮吹_小_獣 && e != bod.潮吹_大_獣 && e != bod.放尿_獣 && e != bod.ピアス && e != bod.キャップ1
     					select e, 半身後接続);
     			}
     			else if (ele is 多足_蛸)
@@ -5288,7 +5288,7 @@ namespace SlaveMatrix
     		{
     			膣内精液_獣.Intensity = 0.0;
     			断面_獣.精液CD.不透明度 = 0.0;
-    			膣基 = 膣基_獣;
+    			VaginaOrigin = VaginaOrigin_獣;
     			VaginalCumDrip = 膣内精液_獣;
     			断面 = 断面_獣;
     			性器 = 性器_獣;
@@ -5331,7 +5331,7 @@ namespace SlaveMatrix
     		{
     			膣内精液_人.Intensity = 0.0;
     			断面_人.精液CD.不透明度 = 0.0;
-    			膣基 = 膣基_人;
+    			VaginaOrigin = VaginaOrigin_人;
     			VaginalCumDrip = 膣内精液_人;
     			断面 = 断面_人;
     			性器 = 性器_人;
@@ -5899,7 +5899,7 @@ namespace SlaveMatrix
     				{
     					bod.カーソル.描画肛(are);
     				}
-    				bod.膣基_人.描画0(are);
+    				bod.VaginaOrigin_人.描画0(are);
     				if (bod.断面_表示 && bod.cb1)
     				{
     					bod.カーソル.描画0(are);
@@ -6318,7 +6318,7 @@ namespace SlaveMatrix
     				{
     					bod.カーソル.描画肛(are);
     				}
-    				bod.膣基_人.描画0(are);
+    				bod.VaginaOrigin_人.描画0(are);
     				if (bod.断面_表示 && bod.cb1)
     				{
     					bod.カーソル.描画0(are);
@@ -6749,7 +6749,7 @@ namespace SlaveMatrix
     				{
     					bod.カーソル.描画肛(are);
     				}
-    				bod.膣基_獣.描画0(are);
+    				bod.VaginaOrigin_獣.描画0(are);
     				if (bod.断面_表示 && bod.cb1)
     				{
     					bod.カーソル.描画0(are);
@@ -7179,7 +7179,7 @@ namespace SlaveMatrix
     				{
     					bod.カーソル.描画肛(are);
     				}
-    				bod.膣基_人.描画0(are);
+    				bod.VaginaOrigin_人.描画0(are);
     				if (bod.断面_表示 && bod.cb1)
     				{
     					bod.カーソル.描画0(are);
@@ -7603,7 +7603,7 @@ namespace SlaveMatrix
     				{
     					bod.カーソル.描画肛(are);
     				}
-    				bod.膣基_人.描画0(are);
+    				bod.VaginaOrigin_人.描画0(are);
     				if (bod.断面_表示 && bod.cb1)
     				{
     					bod.カーソル.描画0(are);
@@ -8030,7 +8030,7 @@ namespace SlaveMatrix
     				{
     					bod.カーソル.描画肛(are);
     				}
-    				bod.膣基_人.描画0(are);
+    				bod.VaginaOrigin_人.描画0(are);
     				if (bod.断面_表示 && bod.cb1)
     				{
     					bod.カーソル.描画0(are);
@@ -8336,7 +8336,7 @@ namespace SlaveMatrix
     					{
     						bod.カーソル.描画肛(are);
     					}
-    					bod.膣基_人.描画0(are);
+    					bod.VaginaOrigin_人.描画0(are);
     					if (bod.断面_表示 && bod.cb1)
     					{
     						bod.カーソル.描画0(are);
@@ -8480,7 +8480,7 @@ namespace SlaveMatrix
     					{
     						bod.カーソル.描画肛(are);
     					}
-    					bod.膣基_人.描画0(are);
+    					bod.VaginaOrigin_人.描画0(are);
     					if (bod.断面_表示 && bod.cb1)
     					{
     						bod.カーソル.描画0(are);
@@ -8910,7 +8910,7 @@ namespace SlaveMatrix
     			{
     				bod.カーソル.描画肛(are);
     			}
-    			bod.膣基_人.描画0(are);
+    			bod.VaginaOrigin_人.描画0(are);
     			if (bod.断面_表示 && bod.cb1)
     			{
     				bod.カーソル.描画0(are);

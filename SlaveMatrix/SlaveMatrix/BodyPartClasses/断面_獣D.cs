@@ -7,7 +7,7 @@ namespace SlaveMatrix
     [Serializable]
     public class 断面_獣D : 断面D
     {
-    	public bool 膣基_表示;
+    	public bool VaginaOrigin_表示;
 
     	public bool 膣壁左_表示;
 

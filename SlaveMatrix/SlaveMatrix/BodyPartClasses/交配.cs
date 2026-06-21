@@ -1852,7 +1852,7 @@ namespace SlaveMatrix
     		TorsoD2.AlignC();
     		TorsoD2.胴接続(ChestD2);
     		WaistD Waist = Mix<WaistD>(母方, 父方, i, 原種モード);
-    		Waist.膣基接続(new 膣基_人D());
+    		Waist.膣基接続(new VaginaOrigin_人D());
     		Waist.膣基接続(new 膣内精液_人D());
     		Waist.膣基接続(new 断面_人D());
     		Waist.膣基接続(Uni.性器());
@@ -2514,14 +2514,14 @@ namespace SlaveMatrix
     				if (四足腰D2 != null)
     				{
     					腰肌D 腰肌D2 = null;
-    					四足腰D2.膣基接続(new 膣基_獣D());
+    					四足腰D2.膣基接続(new VaginaOrigin_獣D());
     					四足腰D2.膣基接続(new 膣内精液_獣D());
     					四足腰D2.膣基接続(new 断面_獣D());
     					四足腰D2.膣基接続(Uni.四足性器());
     					四足腰D2.肛門接続(Uni.四足肛門());
     					四足腰D2.肌接続(new ボテ腹_獣D());
     					四足腰D2.肌接続(腰肌D2 = Mix<腰肌D>(母方, 父方, i, 原種モード));
-    					Waist.膣基_接続.SetEleD(delegate(性器_人D e)
+    					Waist.VaginaOrigin_接続.SetEleD(delegate(性器_人D e)
     					{
     						e.表示 = false;
     					});

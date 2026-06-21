@@ -962,7 +962,7 @@ namespace SlaveMatrix
 
     	public Element[] 腿右_接続;
 
-    	public Element[] 膣基_接続;
+    	public Element[] VaginaOrigin_接続;
 
     	public Element[] 肛門_接続;
 
@@ -2136,7 +2136,7 @@ namespace SlaveMatrix
 
     	public JointS 腿右_接続点 => new JointS(Body, X0Y0_Waist, 2);
 
-    	public JointS 膣基_接続点 => new JointS(Body, X0Y0_Waist, 4);
+    	public JointS VaginaOrigin_接続点 => new JointS(Body, X0Y0_Waist, 4);
 
     	public JointS 肛門_接続点 => new JointS(Body, X0Y0_Waist, 5);
 
@@ -2550,14 +2550,14 @@ namespace SlaveMatrix
     				return f;
     			}).ToArray();
     		}
-    		if (e.膣基_接続.Count > 0)
+    		if (e.VaginaOrigin_接続.Count > 0)
     		{
-    			膣基_接続 = e.膣基_接続.Select(delegate(ElementData g)
+    			VaginaOrigin_接続 = e.VaginaOrigin_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = Waist2;
-    				f.ConnectionType = ConnectionInfo.Waist_膣基_接続;
-    				f.接続(Waist2.膣基_接続点);
+    				f.ConnectionType = ConnectionInfo.Waist_VaginaOrigin_接続;
+    				f.接続(Waist2.VaginaOrigin_接続点);
     				return f;
     			}).ToArray();
     		}

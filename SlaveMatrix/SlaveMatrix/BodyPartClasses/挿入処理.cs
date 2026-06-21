@@ -259,7 +259,7 @@ namespace SlaveMatrix
     				{
     					Bod.断面.膣サイズY = 1.0 + 0.2 * dv.Clamp(0.0, 1.0);
     					Bod.VaginalCumDrip.尺度YC = Bod.断面.膣サイズY;
-    					Bod.膣基.尺度YC = Bod.断面.膣サイズY;
+    					Bod.VaginaOrigin.尺度YC = Bod.断面.膣サイズY;
     				}
     				if (!(対象.Element is ハンド) || (対象.Element.Xi != 6 && 対象.Element.Xi != 7))
     				{
@@ -897,7 +897,7 @@ namespace SlaveMatrix
     			{
     				Bod.断面.膣サイズY = 1.0 + 0.2 * dv.Clamp(0.0, 1.0);
     				Bod.VaginalCumDrip.尺度YC = Bod.断面.膣サイズY;
-    				Bod.膣基.尺度YC = Bod.断面.膣サイズY;
+    				Bod.VaginaOrigin.尺度YC = Bod.断面.膣サイズY;
     			}
     			if (!(対象.Element is ハンド) || (対象.Element.Xi != 6 && 対象.Element.Xi != 7))
     			{
