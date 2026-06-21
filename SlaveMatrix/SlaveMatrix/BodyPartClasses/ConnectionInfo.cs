@@ -96,7 +96,7 @@ namespace SlaveMatrix
     	性器_獣_陰核_接続,
     	性器_獣_尿道_接続,
     	性器_獣_膣口_接続,
-    	上着ボトム_クロス_JacketBottomRear_接続,
+    	JacketBottom_クロス_JacketBottomRear_接続,
     	顔面_甲_触覚左_接続,
     	顔面_甲_触覚右_接続,
     	顔面_虫_触覚左_接続,

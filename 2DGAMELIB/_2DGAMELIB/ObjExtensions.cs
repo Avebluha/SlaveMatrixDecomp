@@ -32,7 +32,9 @@ namespace _2DGAMELIB
             ["胸郭"] = "RibCage",
             ["舌"] = "Tounge",
             ["膣基"] = "VaginaOrigin",
-            ["上着ボトム後"] = "JacketBottomRear"
+            ["上着ボトム後"] = "JacketBottomRear",
+            ["上着ボトム"] = "JacketBottom",
+            ["上着ボトム前"] = "JacketBottomFront",
         };
 
         public static void MigrateKeys(this BodyTemplate BodyTemplate)

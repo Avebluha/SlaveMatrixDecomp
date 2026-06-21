@@ -1862,10 +1862,10 @@ namespace SlaveMatrix
     		Waist.肌接続(腰肌 = Mix<腰肌D>(母方, 父方, i, 原種モード));
     		Waist.肌接続(new 下着ボトム_ノーマルD());
     		Waist.肌接続(new 下着ボトム_マイクロD());
-    		上着ボトム_クロスD 上着ボトム_クロスD2 = new 上着ボトム_クロスD();
-    		上着ボトム_クロスD2.JacketBottomRear接続(new 上着ボトム_クロス後D());
-    		Waist.上着接続(上着ボトム_クロスD2);
-    		Waist.上着接続(new 上着ボトム_前掛けD());
+    		JacketBottom_クロスD JacketBottom_クロスD2 = new JacketBottom_クロスD();
+    		JacketBottom_クロスD2.JacketBottomRear接続(new JacketBottom_クロス後D());
+    		Waist.上着接続(JacketBottom_クロスD2);
+    		Waist.上着接続(new JacketBottom_前掛けD());
     		Waist.AlignC();
     		Waist.胴接続(TorsoD2);
     		TorsoD2.肥大 = Waist.肥大;

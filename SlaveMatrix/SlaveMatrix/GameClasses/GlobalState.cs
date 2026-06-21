@@ -1364,7 +1364,7 @@ namespace SlaveMatrix
     			ConnectionInfo.性器_獣_陰核_接続,
     			ConnectionInfo.性器_獣_尿道_接続,
     			ConnectionInfo.性器_獣_膣口_接続,
-    			ConnectionInfo.上着ボトム_クロス_JacketBottomRear_接続,
+    			ConnectionInfo.JacketBottom_クロス_JacketBottomRear_接続,
     			ConnectionInfo.頭頂_宇_頭部後_接続,
     			ConnectionInfo.尾_ヘ_尾先_接続,
     			ConnectionInfo.尾_ウ_尾先_接続,

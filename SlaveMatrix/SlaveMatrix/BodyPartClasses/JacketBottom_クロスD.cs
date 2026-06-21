@@ -6,7 +6,7 @@ using SlaveMatrix.GameClasses;
 namespace SlaveMatrix
 {
     [Serializable]
-    public class 上着ボトム_クロスD : 上着ボトムD
+    public class JacketBottom_クロスD : JacketBottomD
     {
     	public bool 中_下地_表示;
 
@@ -62,7 +62,7 @@ namespace SlaveMatrix
 
     	public List<ElementData> JacketBottomRear_接続 = new List<ElementData>();
 
-    	public 上着ボトム_クロスD()
+    	public JacketBottom_クロスD()
     	{
     		ThisType = GetType();
     	}
@@ -71,12 +71,12 @@ namespace SlaveMatrix
     	{
     		JacketBottomRear_接続.Add(e);
     		e.Par = this;
-    		e.接続情報 = ConnectionInfo.上着ボトム_クロス_JacketBottomRear_接続;
+    		e.接続情報 = ConnectionInfo.JacketBottom_クロス_JacketBottomRear_接続;
     	}
 
     	public override Element GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
     	{
-    		return new 上着ボトム_クロス(DisUnit, 配色指定, 体配色, Med, this);
+    		return new JacketBottom_クロス(DisUnit, 配色指定, 体配色, Med, this);
     	}
     }
 }

@@ -4,7 +4,7 @@ using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
-    public class 上着ボトム_クロス : 上着ボトム
+    public class JacketBottom_クロス : JacketBottom
     {
     	public ShapePart X0Y0_中_下地;
 
@@ -643,11 +643,11 @@ namespace SlaveMatrix
 
     	public JointS JacketBottomRear_接続点 => new JointS(Body, X0Y0_中_下地, 4);
 
-    	public 上着ボトム_クロス(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 上着ボトム_クロスD e)
+    	public JacketBottom_クロス(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, JacketBottom_クロスD e)
     	{
-    		上着ボトム_クロス 上着ボトム_クロス2 = this;
+    		JacketBottom_クロス JacketBottom_クロス2 = this;
     		ThisType = GetType();
-    		MorphVariant morphVariant = new MorphVariant(GlobalState.胴体["上着ボトム前"][0]);
+    		MorphVariant morphVariant = new MorphVariant(GlobalState.胴体["JacketBottomFront"][0]);
     		Body = new VariantGrid();
     		Body.Tag = morphVariant.Tag;
     		Body.Add(morphVariant);
@@ -756,9 +756,9 @@ namespace SlaveMatrix
     			JacketBottomRear_接続 = e.JacketBottomRear_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
-    				f.Par = 上着ボトム_クロス2;
-    				f.ConnectionType = ConnectionInfo.上着ボトム_クロス_JacketBottomRear_接続;
-    				f.接続(上着ボトム_クロス2.JacketBottomRear_接続点);
+    				f.Par = JacketBottom_クロス2;
+    				f.ConnectionType = ConnectionInfo.JacketBottom_クロス_JacketBottomRear_接続;
+    				f.接続(JacketBottom_クロス2.JacketBottomRear_接続点);
     				return f;
     			}).ToArray();
     		}

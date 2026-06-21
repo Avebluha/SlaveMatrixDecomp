@@ -18,7 +18,7 @@ namespace SlaveMatrix
     		return false;
     	}
 
-    	public static bool Is上着ボトム条件(this CharacterData c)
+    	public static bool IsJacketBottom条件(this CharacterData c)
     	{
     		return true;
     	}
@@ -118,7 +118,7 @@ namespace SlaveMatrix
     				下着B_ノーマル情報2.色.SetColor2();
     				yield return 下着B_ノーマル情報2;
     			}
-    			else if (c.Is上着ボトム条件())
+    			else if (c.IsJacketBottom条件())
     			{
     				if (c.Is前掛け条件())
     				{
@@ -161,7 +161,7 @@ namespace SlaveMatrix
     			下着B_マイクロ情報2.色.SetColor2();
     			yield return 下着B_マイクロ情報2;
     		}
-    		else if (c.Is上着ボトム条件())
+    		else if (c.IsJacketBottom条件())
     		{
     			if (c.Is前掛け条件())
     			{
@@ -215,7 +215,7 @@ namespace SlaveMatrix
     			下着B_ノーマル情報2.色.SetColor2();
     			yield return 下着B_ノーマル情報2;
     		}
-    		else if (c.Is上着ボトム条件())
+    		else if (c.IsJacketBottom条件())
     		{
     			if (c.Is前掛け条件())
     			{
@@ -268,7 +268,7 @@ namespace SlaveMatrix
     			下着B_マイクロ情報2.色.Setヴィオラ();
     			yield return 下着B_マイクロ情報2;
     		}
-    		else if (c.Is上着ボトム条件())
+    		else if (c.IsJacketBottom条件())
     		{
     			if (c.Is前掛け条件())
     			{
@@ -325,7 +325,7 @@ namespace SlaveMatrix
     			下着B_マイクロ情報2.色.SetColor2();
     			yield return 下着B_マイクロ情報2;
     		}
-    		else if (c.Is上着ボトム条件())
+    		else if (c.IsJacketBottom条件())
     		{
     			if (c.Is前掛け条件())
     			{
@@ -433,7 +433,7 @@ namespace SlaveMatrix
     			}
     			yield return default2;
     		}
-    		if (!c.Is上着ボトム条件())
+    		if (!c.IsJacketBottom条件())
     		{
     			yield break;
     		}

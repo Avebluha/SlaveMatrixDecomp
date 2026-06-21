@@ -5,7 +5,7 @@ using SlaveMatrix.GameClasses;
 namespace SlaveMatrix
 {
     [Serializable]
-    public class 上着ボトム_前掛けD : 上着ボトムD
+    public class JacketBottom_前掛けD : JacketBottomD
     {
     	public bool 帯_表示;
 
@@ -33,14 +33,14 @@ namespace SlaveMatrix
 
     	public bool 巻縁表示;
 
-    	public 上着ボトム_前掛けD()
+    	public JacketBottom_前掛けD()
     	{
     		ThisType = GetType();
     	}
 
     	public override Element GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
     	{
-    		return new 上着ボトム_前掛け(DisUnit, 配色指定, 体配色, Med, this);
+    		return new JacketBottom_前掛け(DisUnit, 配色指定, 体配色, Med, this);
     	}
     }
 }

@@ -2,7 +2,7 @@ using _2DGAMELIB;
 
 namespace SlaveMatrix
 {
-    public class 上着ボトム_クロス後 : 上着ボトム
+    public class JacketBottom_クロス後 : JacketBottom
     {
     	public ShapePart X0Y0_下地;
 
@@ -169,7 +169,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 上着ボトム_クロス後(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 上着ボトム_クロス後D e)
+    	public JacketBottom_クロス後(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, JacketBottom_クロス後D e)
     	{
     		ThisType = GetType();
     		Body = new VariantGrid(GlobalState.胴体["JacketBottomRear"]);

@@ -74,10 +74,10 @@ namespace SlaveMatrix
     		waist_description.肌接続(new 腰肌D());
     		waist_description.肌接続(new 下着ボトム_ノーマルD());
     		waist_description.肌接続(new 下着ボトム_マイクロD());
-    		上着ボトム_クロスD 上着ボトム_クロスD2 = new 上着ボトム_クロスD();
-    		上着ボトム_クロスD2.JacketBottomRear接続(new 上着ボトム_クロス後D());
-    		waist_description.上着接続(上着ボトム_クロスD2);
-    		waist_description.上着接続(new 上着ボトム_前掛けD());
+    		JacketBottom_クロスD JacketBottom_クロスD2 = new JacketBottom_クロスD();
+    		JacketBottom_クロスD2.JacketBottomRear接続(new JacketBottom_クロス後D());
+    		waist_description.上着接続(JacketBottom_クロスD2);
+    		waist_description.上着接続(new JacketBottom_前掛けD());
     		return waist_description;
     	}
 

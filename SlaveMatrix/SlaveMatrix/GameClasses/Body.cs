@@ -235,11 +235,11 @@ namespace SlaveMatrix
 
     	public 上着トップ_ドレス 上着T_ドレス;
 
-    	public 上着ボトム_クロス 上着B_クロス;
+    	public JacketBottom_クロス 上着B_クロス;
 
-    	public 上着ボトム_クロス後 上着B_クロス後;
+    	public JacketBottom_クロス後 上着B_クロス後;
 
-    	public 上着ボトム_前掛け 上着B_前掛け;
+    	public JacketBottom_前掛け 上着B_前掛け;
 
     	public 長物_魚 魚;
 
@@ -3879,9 +3879,9 @@ namespace SlaveMatrix
     			下着B_マイクロ = Waist.肌_接続.GetEle<下着ボトム_マイクロ>();
     			下着B_ノーマル.SetHitFalse();
     			下着B_マイクロ.SetHitFalse();
-    			上着B_クロス = Waist.上着_接続.GetEle<上着ボトム_クロス>();
-    			上着B_クロス後 = (上着ボトム_クロス後)上着B_クロス.JacketBottomRear_接続[0];
-    			上着B_前掛け = Waist.上着_接続.GetEle<上着ボトム_前掛け>();
+    			上着B_クロス = Waist.上着_接続.GetEle<JacketBottom_クロス>();
+    			上着B_クロス後 = (JacketBottom_クロス後)上着B_クロス.JacketBottomRear_接続[0];
+    			上着B_前掛け = Waist.上着_接続.GetEle<JacketBottom_前掛け>();
     			上着B_クロス.SetHitFalse();
     			上着B_クロス後.SetHitFalse();
     			上着B_前掛け.SetHitFalse();

@@ -2,7 +2,7 @@ using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
-    public class 上着ボトム : Element
+    public class JacketBottom : Element
     {
     }
 }

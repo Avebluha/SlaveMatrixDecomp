@@ -2,7 +2,7 @@ using _2DGAMELIB;
 
 namespace SlaveMatrix
 {
-    public class 上着ボトム_前掛け : 上着ボトム
+    public class JacketBottom_前掛け : JacketBottom
     {
     	public ShapePart X0Y0_帯;
 
@@ -369,10 +369,10 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 上着ボトム_前掛け(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 上着ボトム_前掛けD e)
+    	public JacketBottom_前掛け(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, JacketBottom_前掛けD e)
     	{
     		ThisType = GetType();
-    		MorphVariant morphVariant = new MorphVariant(GlobalState.胴体["上着ボトム前"][1]);
+    		MorphVariant morphVariant = new MorphVariant(GlobalState.胴体["JacketBottomFront"][1]);
     		Body = new VariantGrid();
     		Body.Tag = morphVariant.Tag;
     		Body.Add(morphVariant);
