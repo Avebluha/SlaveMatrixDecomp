@@ -176,7 +176,7 @@ namespace SlaveMatrix
 
     	public ColorP X0Y1_右_皺6CP;
 
-    	public Element[] 上着ボトム後_接続;
+    	public Element[] JacketBottomRear_接続;
 
     	public override bool 欠損
     	{
@@ -641,7 +641,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public JointS 上着ボトム後_接続点 => new JointS(Body, X0Y0_中_下地, 4);
+    	public JointS JacketBottomRear_接続点 => new JointS(Body, X0Y0_中_下地, 4);
 
     	public 上着ボトム_クロス(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 上着ボトム_クロスD e)
     	{
@@ -750,15 +750,15 @@ namespace SlaveMatrix
     		{
     			表示 = false;
     		}
-    		if (e.上着ボトム後_接続.Count > 0)
+    		if (e.JacketBottomRear_接続.Count > 0)
     		{
     			Element f;
-    			上着ボトム後_接続 = e.上着ボトム後_接続.Select(delegate(ElementData g)
+    			JacketBottomRear_接続 = e.JacketBottomRear_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 上着ボトム_クロス2;
-    				f.ConnectionType = ConnectionInfo.上着ボトム_クロス_上着ボトム後_接続;
-    				f.接続(上着ボトム_クロス2.上着ボトム後_接続点);
+    				f.ConnectionType = ConnectionInfo.上着ボトム_クロス_JacketBottomRear_接続;
+    				f.接続(上着ボトム_クロス2.JacketBottomRear_接続点);
     				return f;
     			}).ToArray();
     		}

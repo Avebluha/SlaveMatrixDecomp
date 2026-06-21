@@ -534,7 +534,7 @@ namespace SlaveMatrix.GameClasses
             ConnectionInfo.性器_獣_陰核_接続 => 1,
             ConnectionInfo.性器_獣_尿道_接続 => 1,
             ConnectionInfo.性器_獣_膣口_接続 => 1,
-            ConnectionInfo.上着ボトム_クロス_上着ボトム後_接続 => 0,
+            ConnectionInfo.上着ボトム_クロス_JacketBottomRear_接続 => 0,
             ConnectionInfo.顔面_甲_触覚左_接続 => 1,
             ConnectionInfo.顔面_甲_触覚右_接続 => 1,
             ConnectionInfo.顔面_虫_触覚左_接続 => 1,

@@ -60,18 +60,18 @@ namespace SlaveMatrix
 
     	public bool 中皺2表示;
 
-    	public List<ElementData> 上着ボトム後_接続 = new List<ElementData>();
+    	public List<ElementData> JacketBottomRear_接続 = new List<ElementData>();
 
     	public 上着ボトム_クロスD()
     	{
     		ThisType = GetType();
     	}
 
-    	public void 上着ボトム後接続(ElementData e)
+    	public void JacketBottomRear接続(ElementData e)
     	{
-    		上着ボトム後_接続.Add(e);
+    		JacketBottomRear_接続.Add(e);
     		e.Par = this;
-    		e.接続情報 = ConnectionInfo.上着ボトム_クロス_上着ボトム後_接続;
+    		e.接続情報 = ConnectionInfo.上着ボトム_クロス_JacketBottomRear_接続;
     	}
 
     	public override Element GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)

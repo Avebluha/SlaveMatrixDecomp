@@ -2696,7 +2696,7 @@ namespace SlaveMatrix
     				Set表示(上着B_クロス, 上着B_クロスi);
     				上着B_クロス.配色(上着B_クロスi.色);
     				上着B_クロス後.配色(上着B_クロスi.色);
-    				上着B_クロス.上着ボトム後_接続[0].表示 = 上着B_クロスi.IsShow;
+    				上着B_クロス.JacketBottomRear_接続[0].表示 = 上着B_クロスi.IsShow;
     				上着B_クロス.SetHitFalse();
     				上着B_クロス.Yi = (捲り判定0 ? 1 : 0);
     				if (捲り判定0)
@@ -3880,7 +3880,7 @@ namespace SlaveMatrix
     			下着B_ノーマル.SetHitFalse();
     			下着B_マイクロ.SetHitFalse();
     			上着B_クロス = Waist.上着_接続.GetEle<上着ボトム_クロス>();
-    			上着B_クロス後 = (上着ボトム_クロス後)上着B_クロス.上着ボトム後_接続[0];
+    			上着B_クロス後 = (上着ボトム_クロス後)上着B_クロス.JacketBottomRear_接続[0];
     			上着B_前掛け = Waist.上着_接続.GetEle<上着ボトム_前掛け>();
     			上着B_クロス.SetHitFalse();
     			上着B_クロス後.SetHitFalse();

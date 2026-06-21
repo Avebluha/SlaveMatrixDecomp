@@ -1863,7 +1863,7 @@ namespace SlaveMatrix
     		Waist.肌接続(new 下着ボトム_ノーマルD());
     		Waist.肌接続(new 下着ボトム_マイクロD());
     		上着ボトム_クロスD 上着ボトム_クロスD2 = new 上着ボトム_クロスD();
-    		上着ボトム_クロスD2.上着ボトム後接続(new 上着ボトム_クロス後D());
+    		上着ボトム_クロスD2.JacketBottomRear接続(new 上着ボトム_クロス後D());
     		Waist.上着接続(上着ボトム_クロスD2);
     		Waist.上着接続(new 上着ボトム_前掛けD());
     		Waist.AlignC();
