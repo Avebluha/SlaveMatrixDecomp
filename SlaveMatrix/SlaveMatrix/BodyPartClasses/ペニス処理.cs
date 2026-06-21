@@ -829,7 +829,7 @@ namespace SlaveMatrix
     			{
     				ペニス処理2.Bod.頬濃度 = 0.0;
     				ペニス処理2.Bod.口.Yi = 13;
-    				ペニス処理2.Bod.舌_表示 = true;
+    				ペニス処理2.Bod.Tounge_表示 = true;
     				s = Rng.XS.NextSign();
     				調教UI.Action(ContactType.Mouth, ActionType.Insertion, CurrentState.Start, ToolType.Penis, 0, 1, 機械: false, 射精: false);
     				Player.奴体力消費小();
@@ -842,7 +842,7 @@ namespace SlaveMatrix
     				d2 = m.Value * 調教UI.ペニス.Yv * t;
     				ペニス処理2.Bod.頬濃度 = d1;
     				ペニス処理2.Bod.頭.角度C = s * 5.0 * d2;
-    				ペニス処理2.Bod.舌.角度C = s * -60.0 * d2;
+    				ペニス処理2.Bod.Tounge.角度C = s * -60.0 * d2;
     				調教UI.Action(ContactType.Mouth, ActionType.Insertion, CurrentState.Continue, ToolType.Penis, 0, 1, 機械: false, 射精: false);
     				Player.奴体力消費小();
     				Player.主精力消費小();
@@ -857,10 +857,10 @@ namespace SlaveMatrix
     			OnEnd = delegate(Motion m)
     			{
     				m.ResetValue();
-    				ペニス処理2.Bod.舌_表示 = false;
+    				ペニス処理2.Bod.Tounge_表示 = false;
     				ペニス処理2.Bod.頬濃度 = 0.0;
     				ペニス処理2.Bod.頭.角度C = 0.0;
-    				ペニス処理2.Bod.舌.角度C = 0.0;
+    				ペニス処理2.Bod.Tounge.角度C = 0.0;
     				調教UI.Action(ContactType.Mouth, ActionType.Insertion, CurrentState.End, ToolType.Penis, 0, 1, 機械: false, 射精: false);
     				Player.奴体力消費小();
     				Player.主精力消費小();

@@ -13,73 +13,73 @@ namespace SlaveMatrix
 
     	public ShapePart X1Y0_下唇;
 
-    	public ShapePart X2Y0_舌;
+    	public ShapePart X2Y0_Tounge;
 
     	public ShapePart X2Y0_上唇;
 
     	public ShapePart X2Y0_下唇;
 
-    	public ShapePart X3Y0_舌;
+    	public ShapePart X3Y0_Tounge;
 
     	public ShapePart X3Y0_上唇;
 
     	public ShapePart X3Y0_下唇;
 
-    	public ShapePart X3Y1_舌;
+    	public ShapePart X3Y1_Tounge;
 
     	public ShapePart X3Y1_上唇;
 
     	public ShapePart X3Y1_下唇;
 
-    	public ShapePart X3Y2_舌;
+    	public ShapePart X3Y2_Tounge;
 
     	public ShapePart X3Y2_上唇;
 
     	public ShapePart X3Y2_下唇;
 
-    	public ShapePart X3Y3_舌;
+    	public ShapePart X3Y3_Tounge;
 
     	public ShapePart X3Y3_上唇;
 
     	public ShapePart X3Y3_下唇;
 
-    	public ShapePart X3Y4_舌;
+    	public ShapePart X3Y4_Tounge;
 
     	public ShapePart X3Y4_上唇;
 
     	public ShapePart X3Y4_下唇;
 
-    	public ShapePart X4Y0_舌;
+    	public ShapePart X4Y0_Tounge;
 
     	public ShapePart X4Y0_上唇;
 
     	public ShapePart X4Y0_下唇;
 
-    	public ShapePart X4Y1_舌;
+    	public ShapePart X4Y1_Tounge;
 
     	public ShapePart X4Y1_上唇;
 
     	public ShapePart X4Y1_下唇;
 
-    	public ShapePart X4Y2_舌;
+    	public ShapePart X4Y2_Tounge;
 
     	public ShapePart X4Y2_上唇;
 
     	public ShapePart X4Y2_下唇;
 
-    	public ShapePart X4Y3_舌;
+    	public ShapePart X4Y3_Tounge;
 
     	public ShapePart X4Y3_上唇;
 
     	public ShapePart X4Y3_下唇;
 
-    	public ShapePart X4Y4_舌;
+    	public ShapePart X4Y4_Tounge;
 
     	public ShapePart X4Y4_上唇;
 
     	public ShapePart X4Y4_下唇;
 
-    	public ColorD 舌CD;
+    	public ColorD ToungeCD;
 
     	public ColorD 上唇CD;
 
@@ -93,67 +93,67 @@ namespace SlaveMatrix
 
     	public ColorP X1Y0_下唇CP;
 
-    	public ColorP X2Y0_舌CP;
+    	public ColorP X2Y0_ToungeCP;
 
     	public ColorP X2Y0_上唇CP;
 
     	public ColorP X2Y0_下唇CP;
 
-    	public ColorP X3Y0_舌CP;
+    	public ColorP X3Y0_ToungeCP;
 
     	public ColorP X3Y0_上唇CP;
 
     	public ColorP X3Y0_下唇CP;
 
-    	public ColorP X3Y1_舌CP;
+    	public ColorP X3Y1_ToungeCP;
 
     	public ColorP X3Y1_上唇CP;
 
     	public ColorP X3Y1_下唇CP;
 
-    	public ColorP X3Y2_舌CP;
+    	public ColorP X3Y2_ToungeCP;
 
     	public ColorP X3Y2_上唇CP;
 
     	public ColorP X3Y2_下唇CP;
 
-    	public ColorP X3Y3_舌CP;
+    	public ColorP X3Y3_ToungeCP;
 
     	public ColorP X3Y3_上唇CP;
 
     	public ColorP X3Y3_下唇CP;
 
-    	public ColorP X3Y4_舌CP;
+    	public ColorP X3Y4_ToungeCP;
 
     	public ColorP X3Y4_上唇CP;
 
     	public ColorP X3Y4_下唇CP;
 
-    	public ColorP X4Y0_舌CP;
+    	public ColorP X4Y0_ToungeCP;
 
     	public ColorP X4Y0_上唇CP;
 
     	public ColorP X4Y0_下唇CP;
 
-    	public ColorP X4Y1_舌CP;
+    	public ColorP X4Y1_ToungeCP;
 
     	public ColorP X4Y1_上唇CP;
 
     	public ColorP X4Y1_下唇CP;
 
-    	public ColorP X4Y2_舌CP;
+    	public ColorP X4Y2_ToungeCP;
 
     	public ColorP X4Y2_上唇CP;
 
     	public ColorP X4Y2_下唇CP;
 
-    	public ColorP X4Y3_舌CP;
+    	public ColorP X4Y3_ToungeCP;
 
     	public ColorP X4Y3_上唇CP;
 
     	public ColorP X4Y3_下唇CP;
 
-    	public ColorP X4Y4_舌CP;
+    	public ColorP X4Y4_ToungeCP;
 
     	public ColorP X4Y4_上唇CP;
 
@@ -269,36 +269,36 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 舌_表示
+    	public bool Tounge_表示
     	{
     		get
     		{
-    			return X2Y0_舌.Dra;
+    			return X2Y0_Tounge.Dra;
     		}
     		set
     		{
-    			X2Y0_舌.Dra = value;
-    			X3Y0_舌.Dra = value;
-    			X3Y1_舌.Dra = value;
-    			X3Y2_舌.Dra = value;
-    			X3Y3_舌.Dra = value;
-    			X3Y4_舌.Dra = value;
-    			X4Y0_舌.Dra = value;
-    			X4Y1_舌.Dra = value;
-    			X4Y2_舌.Dra = value;
-    			X4Y3_舌.Dra = value;
-    			X4Y4_舌.Dra = value;
-    			X2Y0_舌.Hit = value;
-    			X3Y0_舌.Hit = value;
-    			X3Y1_舌.Hit = value;
-    			X3Y2_舌.Hit = value;
-    			X3Y3_舌.Hit = value;
-    			X3Y4_舌.Hit = value;
-    			X4Y0_舌.Hit = value;
-    			X4Y1_舌.Hit = value;
-    			X4Y2_舌.Hit = value;
-    			X4Y3_舌.Hit = value;
-    			X4Y4_舌.Hit = value;
+    			X2Y0_Tounge.Dra = value;
+    			X3Y0_Tounge.Dra = value;
+    			X3Y1_Tounge.Dra = value;
+    			X3Y2_Tounge.Dra = value;
+    			X3Y3_Tounge.Dra = value;
+    			X3Y4_Tounge.Dra = value;
+    			X4Y0_Tounge.Dra = value;
+    			X4Y1_Tounge.Dra = value;
+    			X4Y2_Tounge.Dra = value;
+    			X4Y3_Tounge.Dra = value;
+    			X4Y4_Tounge.Dra = value;
+    			X2Y0_Tounge.Hit = value;
+    			X3Y0_Tounge.Hit = value;
+    			X3Y1_Tounge.Hit = value;
+    			X3Y2_Tounge.Hit = value;
+    			X3Y3_Tounge.Hit = value;
+    			X3Y4_Tounge.Hit = value;
+    			X4Y0_Tounge.Hit = value;
+    			X4Y1_Tounge.Hit = value;
+    			X4Y2_Tounge.Hit = value;
+    			X4Y3_Tounge.Hit = value;
+    			X4Y4_Tounge.Hit = value;
     		}
     	}
 
@@ -312,7 +312,7 @@ namespace SlaveMatrix
     		{
     			上唇_表示 = value;
     			下唇_表示 = value;
-    			舌_表示 = value;
+    			Tounge_表示 = value;
     		}
     	}
 
@@ -320,11 +320,11 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return 舌CD.不透明度;
+    			return ToungeCD.不透明度;
     		}
     		set
     		{
-    			舌CD.不透明度 = value;
+    			ToungeCD.不透明度 = value;
     			上唇CD.不透明度 = value;
     			下唇CD.不透明度 = value;
     		}
@@ -341,47 +341,47 @@ namespace SlaveMatrix
     		X1Y0_上唇 = partGroup["上唇"].ToPar();
     		X1Y0_下唇 = partGroup["下唇"].ToPar();
     		partGroup = Body[2][0];
-    		X2Y0_舌 = partGroup["舌"].ToPar();
+    		X2Y0_Tounge = partGroup["舌"].ToPar();
     		X2Y0_上唇 = partGroup["上唇"].ToPar();
     		X2Y0_下唇 = partGroup["下唇"].ToPar();
     		partGroup = Body[3][0];
-    		X3Y0_舌 = partGroup["舌"].ToPar();
+    		X3Y0_Tounge = partGroup["舌"].ToPar();
     		X3Y0_上唇 = partGroup["上唇"].ToPar();
     		X3Y0_下唇 = partGroup["下唇"].ToPar();
     		partGroup = Body[3][1];
-    		X3Y1_舌 = partGroup["舌"].ToPar();
+    		X3Y1_Tounge = partGroup["舌"].ToPar();
     		X3Y1_上唇 = partGroup["上唇"].ToPar();
     		X3Y1_下唇 = partGroup["下唇"].ToPar();
     		partGroup = Body[3][2];
-    		X3Y2_舌 = partGroup["舌"].ToPar();
+    		X3Y2_Tounge = partGroup["舌"].ToPar();
     		X3Y2_上唇 = partGroup["上唇"].ToPar();
     		X3Y2_下唇 = partGroup["下唇"].ToPar();
     		partGroup = Body[3][3];
-    		X3Y3_舌 = partGroup["舌"].ToPar();
+    		X3Y3_Tounge = partGroup["舌"].ToPar();
     		X3Y3_上唇 = partGroup["上唇"].ToPar();
     		X3Y3_下唇 = partGroup["下唇"].ToPar();
     		partGroup = Body[3][4];
-    		X3Y4_舌 = partGroup["舌"].ToPar();
+    		X3Y4_Tounge = partGroup["舌"].ToPar();
     		X3Y4_上唇 = partGroup["上唇"].ToPar();
     		X3Y4_下唇 = partGroup["下唇"].ToPar();
     		partGroup = Body[4][0];
-    		X4Y0_舌 = partGroup["舌"].ToPar();
+    		X4Y0_Tounge = partGroup["舌"].ToPar();
     		X4Y0_上唇 = partGroup["上唇"].ToPar();
     		X4Y0_下唇 = partGroup["下唇"].ToPar();
     		partGroup = Body[4][1];
-    		X4Y1_舌 = partGroup["舌"].ToPar();
+    		X4Y1_Tounge = partGroup["舌"].ToPar();
     		X4Y1_上唇 = partGroup["上唇"].ToPar();
     		X4Y1_下唇 = partGroup["下唇"].ToPar();
     		partGroup = Body[4][2];
-    		X4Y2_舌 = partGroup["舌"].ToPar();
+    		X4Y2_Tounge = partGroup["舌"].ToPar();
     		X4Y2_上唇 = partGroup["上唇"].ToPar();
     		X4Y2_下唇 = partGroup["下唇"].ToPar();
     		partGroup = Body[4][3];
-    		X4Y3_舌 = partGroup["舌"].ToPar();
+    		X4Y3_Tounge = partGroup["舌"].ToPar();
     		X4Y3_上唇 = partGroup["上唇"].ToPar();
     		X4Y3_下唇 = partGroup["下唇"].ToPar();
     		partGroup = Body[4][4];
-    		X4Y4_舌 = partGroup["舌"].ToPar();
+    		X4Y4_Tounge = partGroup["舌"].ToPar();
     		X4Y4_上唇 = partGroup["上唇"].ToPar();
     		X4Y4_下唇 = partGroup["下唇"].ToPar();
     		Body.SetJoints();
@@ -410,7 +410,7 @@ namespace SlaveMatrix
     		サイズY = e.サイズY;
     		上唇_表示 = e.上唇_表示;
     		下唇_表示 = e.下唇_表示;
-    		舌_表示 = e.舌_表示;
+    		Tounge_表示 = e.Tounge_表示;
     		欠損 = e.欠損;
     		筋肉 = e.筋肉;
     		拘束 = e.拘束;
@@ -424,45 +424,45 @@ namespace SlaveMatrix
     		X0Y0_下唇CP = new ColorP(X0Y0_下唇, 下唇CD, DisUnit, abj: true);
     		X1Y0_上唇CP = new ColorP(X1Y0_上唇, 上唇CD, DisUnit, abj: true);
     		X1Y0_下唇CP = new ColorP(X1Y0_下唇, 下唇CD, DisUnit, abj: true);
-    		X2Y0_舌CP = new ColorP(X2Y0_舌, 舌CD, DisUnit, abj: true);
+    		X2Y0_ToungeCP = new ColorP(X2Y0_Tounge, ToungeCD, DisUnit, abj: true);
     		X2Y0_上唇CP = new ColorP(X2Y0_上唇, 上唇CD, DisUnit, abj: true);
     		X2Y0_下唇CP = new ColorP(X2Y0_下唇, 下唇CD, DisUnit, abj: true);
-    		X3Y0_舌CP = new ColorP(X3Y0_舌, 舌CD, DisUnit, abj: true);
+    		X3Y0_ToungeCP = new ColorP(X3Y0_Tounge, ToungeCD, DisUnit, abj: true);
     		X3Y0_上唇CP = new ColorP(X3Y0_上唇, 上唇CD, DisUnit, abj: true);
     		X3Y0_下唇CP = new ColorP(X3Y0_下唇, 下唇CD, DisUnit, abj: true);
-    		X3Y1_舌CP = new ColorP(X3Y1_舌, 舌CD, DisUnit, abj: true);
+    		X3Y1_ToungeCP = new ColorP(X3Y1_Tounge, ToungeCD, DisUnit, abj: true);
     		X3Y1_上唇CP = new ColorP(X3Y1_上唇, 上唇CD, DisUnit, abj: true);
     		X3Y1_下唇CP = new ColorP(X3Y1_下唇, 下唇CD, DisUnit, abj: true);
-    		X3Y2_舌CP = new ColorP(X3Y2_舌, 舌CD, DisUnit, abj: true);
+    		X3Y2_ToungeCP = new ColorP(X3Y2_Tounge, ToungeCD, DisUnit, abj: true);
     		X3Y2_上唇CP = new ColorP(X3Y2_上唇, 上唇CD, DisUnit, abj: true);
     		X3Y2_下唇CP = new ColorP(X3Y2_下唇, 下唇CD, DisUnit, abj: true);
-    		X3Y3_舌CP = new ColorP(X3Y3_舌, 舌CD, DisUnit, abj: true);
+    		X3Y3_ToungeCP = new ColorP(X3Y3_Tounge, ToungeCD, DisUnit, abj: true);
     		X3Y3_上唇CP = new ColorP(X3Y3_上唇, 上唇CD, DisUnit, abj: true);
     		X3Y3_下唇CP = new ColorP(X3Y3_下唇, 下唇CD, DisUnit, abj: true);
-    		X3Y4_舌CP = new ColorP(X3Y4_舌, 舌CD, DisUnit, abj: true);
+    		X3Y4_ToungeCP = new ColorP(X3Y4_Tounge, ToungeCD, DisUnit, abj: true);
     		X3Y4_上唇CP = new ColorP(X3Y4_上唇, 上唇CD, DisUnit, abj: true);
     		X3Y4_下唇CP = new ColorP(X3Y4_下唇, 下唇CD, DisUnit, abj: true);
-    		X4Y0_舌CP = new ColorP(X4Y0_舌, 舌CD, DisUnit, abj: true);
+    		X4Y0_ToungeCP = new ColorP(X4Y0_Tounge, ToungeCD, DisUnit, abj: true);
     		X4Y0_上唇CP = new ColorP(X4Y0_上唇, 上唇CD, DisUnit, abj: true);
     		X4Y0_下唇CP = new ColorP(X4Y0_下唇, 下唇CD, DisUnit, abj: true);
-    		X4Y1_舌CP = new ColorP(X4Y1_舌, 舌CD, DisUnit, abj: true);
+    		X4Y1_ToungeCP = new ColorP(X4Y1_Tounge, ToungeCD, DisUnit, abj: true);
     		X4Y1_上唇CP = new ColorP(X4Y1_上唇, 上唇CD, DisUnit, abj: true);
     		X4Y1_下唇CP = new ColorP(X4Y1_下唇, 下唇CD, DisUnit, abj: true);
-    		X4Y2_舌CP = new ColorP(X4Y2_舌, 舌CD, DisUnit, abj: true);
+    		X4Y2_ToungeCP = new ColorP(X4Y2_Tounge, ToungeCD, DisUnit, abj: true);
     		X4Y2_上唇CP = new ColorP(X4Y2_上唇, 上唇CD, DisUnit, abj: true);
     		X4Y2_下唇CP = new ColorP(X4Y2_下唇, 下唇CD, DisUnit, abj: true);
-    		X4Y3_舌CP = new ColorP(X4Y3_舌, 舌CD, DisUnit, abj: true);
+    		X4Y3_ToungeCP = new ColorP(X4Y3_Tounge, ToungeCD, DisUnit, abj: true);
     		X4Y3_上唇CP = new ColorP(X4Y3_上唇, 上唇CD, DisUnit, abj: true);
     		X4Y3_下唇CP = new ColorP(X4Y3_下唇, 下唇CD, DisUnit, abj: true);
-    		X4Y4_舌CP = new ColorP(X4Y4_舌, 舌CD, DisUnit, abj: true);
+    		X4Y4_ToungeCP = new ColorP(X4Y4_Tounge, ToungeCD, DisUnit, abj: true);
     		X4Y4_上唇CP = new ColorP(X4Y4_上唇, 上唇CD, DisUnit, abj: true);
     		X4Y4_下唇CP = new ColorP(X4Y4_下唇, 下唇CD, DisUnit, abj: true);
     		Intensity = e.濃度;
-    		X4Y0_上唇.SetBasePointBase(X4Y0_上唇.ToLocal(X4Y0_舌.ToGlobal(X4Y0_舌.GetJP()[0].Joint)));
-    		X4Y1_上唇.SetBasePointBase(X4Y1_上唇.ToLocal(X4Y1_舌.ToGlobal(X4Y1_舌.GetJP()[0].Joint)));
-    		X4Y2_上唇.SetBasePointBase(X4Y2_上唇.ToLocal(X4Y2_舌.ToGlobal(X4Y2_舌.GetJP()[0].Joint)));
-    		X4Y3_上唇.SetBasePointBase(X4Y3_上唇.ToLocal(X4Y3_舌.ToGlobal(X4Y3_舌.GetJP()[0].Joint)));
-    		X4Y4_上唇.SetBasePointBase(X4Y4_上唇.ToLocal(X4Y4_舌.ToGlobal(X4Y4_舌.GetJP()[0].Joint)));
+    		X4Y0_上唇.SetBasePointBase(X4Y0_上唇.ToLocal(X4Y0_Tounge.ToGlobal(X4Y0_Tounge.GetJP()[0].Joint)));
+    		X4Y1_上唇.SetBasePointBase(X4Y1_上唇.ToLocal(X4Y1_Tounge.ToGlobal(X4Y1_Tounge.GetJP()[0].Joint)));
+    		X4Y2_上唇.SetBasePointBase(X4Y2_上唇.ToLocal(X4Y2_Tounge.ToGlobal(X4Y2_Tounge.GetJP()[0].Joint)));
+    		X4Y3_上唇.SetBasePointBase(X4Y3_上唇.ToLocal(X4Y3_Tounge.ToGlobal(X4Y3_Tounge.GetJP()[0].Joint)));
+    		X4Y4_上唇.SetBasePointBase(X4Y4_上唇.ToLocal(X4Y4_Tounge.ToGlobal(X4Y4_Tounge.GetJP()[0].Joint)));
     		尺度B = 1.08;
     		Body.JoinPAall();
     	}
@@ -472,25 +472,25 @@ namespace SlaveMatrix
     		switch (Body.GetIndexX())
     		{
     		case 2:
-    			Are.Draw(X2Y0_舌);
+    			Are.Draw(X2Y0_Tounge);
     			break;
     		case 3:
     			switch (Body.GetIndexY())
     			{
     			case 0:
-    				Are.Draw(X3Y0_舌);
+    				Are.Draw(X3Y0_Tounge);
     				break;
     			case 1:
-    				Are.Draw(X3Y1_舌);
+    				Are.Draw(X3Y1_Tounge);
     				break;
     			case 2:
-    				Are.Draw(X3Y2_舌);
+    				Are.Draw(X3Y2_Tounge);
     				break;
     			case 3:
-    				Are.Draw(X3Y3_舌);
+    				Are.Draw(X3Y3_Tounge);
     				break;
     			default:
-    				Are.Draw(X3Y4_舌);
+    				Are.Draw(X3Y4_Tounge);
     				break;
     			}
     			break;
@@ -498,19 +498,19 @@ namespace SlaveMatrix
     			switch (Body.GetIndexY())
     			{
     			case 0:
-    				Are.Draw(X4Y0_舌);
+    				Are.Draw(X4Y0_Tounge);
     				break;
     			case 1:
-    				Are.Draw(X4Y1_舌);
+    				Are.Draw(X4Y1_Tounge);
     				break;
     			case 2:
-    				Are.Draw(X4Y2_舌);
+    				Are.Draw(X4Y2_Tounge);
     				break;
     			case 3:
-    				Are.Draw(X4Y3_舌);
+    				Are.Draw(X4Y3_Tounge);
     				break;
     			default:
-    				Are.Draw(X4Y4_舌);
+    				Are.Draw(X4Y4_Tounge);
     				break;
     			}
     			break;
@@ -599,7 +599,7 @@ namespace SlaveMatrix
     			X1Y0_下唇CP.Update();
     			break;
     		case 2:
-    			X2Y0_舌CP.Update();
+    			X2Y0_ToungeCP.Update();
     			X2Y0_上唇CP.Update();
     			X2Y0_下唇CP.Update();
     			break;
@@ -607,27 +607,27 @@ namespace SlaveMatrix
     			switch (Body.GetIndexY())
     			{
     			case 0:
-    				X3Y0_舌CP.Update();
+    				X3Y0_ToungeCP.Update();
     				X3Y0_上唇CP.Update();
     				X3Y0_下唇CP.Update();
     				break;
     			case 1:
-    				X3Y1_舌CP.Update();
+    				X3Y1_ToungeCP.Update();
     				X3Y1_上唇CP.Update();
     				X3Y1_下唇CP.Update();
     				break;
     			case 2:
-    				X3Y2_舌CP.Update();
+    				X3Y2_ToungeCP.Update();
     				X3Y2_上唇CP.Update();
     				X3Y2_下唇CP.Update();
     				break;
     			case 3:
-    				X3Y3_舌CP.Update();
+    				X3Y3_ToungeCP.Update();
     				X3Y3_上唇CP.Update();
     				X3Y3_下唇CP.Update();
     				break;
     			default:
-    				X3Y4_舌CP.Update();
+    				X3Y4_ToungeCP.Update();
     				X3Y4_上唇CP.Update();
     				X3Y4_下唇CP.Update();
     				break;
@@ -637,27 +637,27 @@ namespace SlaveMatrix
     			switch (Body.GetIndexY())
     			{
     			case 0:
-    				X4Y0_舌CP.Update();
+    				X4Y0_ToungeCP.Update();
     				X4Y0_上唇CP.Update();
     				X4Y0_下唇CP.Update();
     				break;
     			case 1:
-    				X4Y1_舌CP.Update();
+    				X4Y1_ToungeCP.Update();
     				X4Y1_上唇CP.Update();
     				X4Y1_下唇CP.Update();
     				break;
     			case 2:
-    				X4Y2_舌CP.Update();
+    				X4Y2_ToungeCP.Update();
     				X4Y2_上唇CP.Update();
     				X4Y2_下唇CP.Update();
     				break;
     			case 3:
-    				X4Y3_舌CP.Update();
+    				X4Y3_ToungeCP.Update();
     				X4Y3_上唇CP.Update();
     				X4Y3_下唇CP.Update();
     				break;
     			default:
-    				X4Y4_舌CP.Update();
+    				X4Y4_ToungeCP.Update();
     				X4Y4_上唇CP.Update();
     				X4Y4_下唇CP.Update();
     				break;
@@ -673,15 +673,15 @@ namespace SlaveMatrix
 
     	private void 配色N0(主人公配色 体配色)
     	{
-    		舌CD = new ColorD(ref 体配色.粘線, ref 体配色.粘膜);
+    		ToungeCD = new ColorD(ref 体配色.粘線, ref 体配色.粘膜);
     		上唇CD = new ColorD(ref 体配色.粘線, ref 体配色.粘膜);
     		下唇CD = new ColorD(ref 体配色.粘線, ref 体配色.粘膜);
     	}
 
     	public void 再配色(主人公配色 体配色)
     	{
-    		舌CD.線 = 体配色.粘線;
-    		舌CD.色 = 体配色.粘膜;
+    		ToungeCD.線 = 体配色.粘線;
+    		ToungeCD.色 = 体配色.粘膜;
     		上唇CD.線 = 体配色.粘線;
     		上唇CD.色 = 体配色.粘膜;
     		下唇CD.線 = 体配色.粘線;

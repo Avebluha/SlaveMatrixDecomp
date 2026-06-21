@@ -952,7 +952,7 @@ namespace SlaveMatrix
 
     	public static HashSet<int> Tongue = new HashSet<int> { 3, 6, 12, 13 };
 
-    	public const int 舌_0数 = 2;
+    	public const int Tounge_0数 = 2;
 
     	public const int 耳_0数 = 3;
 
@@ -4053,26 +4053,26 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public static void 舌_無し(this Character Cha)
+    	public static void Tounge_無し(this Character Cha)
     	{
-    		Cha.Body.舌_表示 = false;
+    		Cha.Body.Tounge_表示 = false;
     	}
 
-    	public static void 舌_出し(this Character Cha)
+    	public static void Tounge_出し(this Character Cha)
     	{
-    		Cha.Body.舌_表示 = true;
-    		Cha.Body.舌.尺度YC = 0.2 + 0.8 * Rng.XS.NextDouble();
+    		Cha.Body.Tounge_表示 = true;
+    		Cha.Body.Tounge.尺度YC = 0.2 + 0.8 * Rng.XS.NextDouble();
     	}
 
-    	public static void 舌_0(this Character c, int i)
+    	public static void Tounge_0(this Character c, int i)
     	{
     		switch (i)
     		{
     		case 0:
-    			c.舌_無し();
+    			c.Tounge_無し();
     			break;
     		case 1:
-    			c.舌_出し();
+    			c.Tounge_出し();
     			break;
     		}
     	}
@@ -9400,7 +9400,7 @@ namespace SlaveMatrix
     			int num = 口_0感情対応[状態][Rng.XS.Next(口_0感情対応[状態].Count)];
     			c.口_0(num);
     			num = ((c.ModeEventDispatcher.Mode == "Training" && Tongue.Contains(num) && c.CharacterData.Sesnsitivities[ContactType.Mouth] > 0.6 && c.CharacterData.Sensitivity > 0.6 && c.CharacterData.Excitement > 0.6 && c.CharacterData.Tension < 0.5 && c.CharacterData.Pride == 0.0 && c.CharacterData.Lust > 0.6 && c.CharacterData.Taming > 0.5 && 0.5.Lot()) ? 1 : 0);
-    			c.舌_0(num);
+    			c.Tounge_0(num);
     		}
     	}
 

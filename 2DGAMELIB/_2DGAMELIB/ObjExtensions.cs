@@ -29,6 +29,8 @@ namespace _2DGAMELIB
             ["鳥翼下腕"] = "鳥翼LowerArm",
             ["獣翼下腕"] = "獣翼LowerArm",
             ["四足下腕"] = "四足LowerArm",
+            ["胸郭"] = "RibCage",
+            ["舌"] = "Tounge"
         };
 
         public static void MigrateKeys(this BodyTemplate BodyTemplate)

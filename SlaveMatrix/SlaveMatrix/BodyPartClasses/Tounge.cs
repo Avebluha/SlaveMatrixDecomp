@@ -2,7 +2,7 @@ using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
-    public class 舌 : Element
+    public class Tounge : Element
     {
     	public override double 肥大
     	{

@@ -1347,11 +1347,11 @@ namespace SlaveMatrix
     		{
     			Cha.SquirtSmall.Start();
     		}
-    		if (Cha.Crying && Cha.Body.舌_表示 && (Cha.ClimaxIntensity * 0.0008).Lot())
+    		if (Cha.Crying && Cha.Body.Tounge_表示 && (Cha.ClimaxIntensity * 0.0008).Lot())
     		{
     			Cha.NoseDrip.Start();
     		}
-    		if ((Cha.Body.舌_表示 || Cha.Body.玉口枷_表示) && (Cha.ClimaxIntensity * 0.001).Lot())
+    		if ((Cha.Body.Tounge_表示 || Cha.Body.玉口枷_表示) && (Cha.ClimaxIntensity * 0.001).Lot())
     		{
     			Cha.Drool.Start();
     		}
@@ -1430,10 +1430,10 @@ namespace SlaveMatrix
     				Cha.額目_見つめ();
     			}
     		}
-    		if (!Cha.Body.玉口枷_表示 && !Cha.Body.舌_表示 && ((SkillL + Lust) * 0.05).Lot())
+    		if (!Cha.Body.玉口枷_表示 && !Cha.Body.Tounge_表示 && ((SkillL + Lust) * 0.05).Lot())
     		{
     			Cha.口_開き();
-    			Cha.舌_出し();
+    			Cha.Tounge_出し();
     		}
     	}
 
@@ -1484,10 +1484,10 @@ namespace SlaveMatrix
     				Cha.額目_見つめ();
     			}
     		}
-    		if (!Cha.Body.玉口枷_表示 && !Cha.Body.舌_表示 && ((SkillL + Lust) * 0.05).Lot())
+    		if (!Cha.Body.玉口枷_表示 && !Cha.Body.Tounge_表示 && ((SkillL + Lust) * 0.05).Lot())
     		{
     			Cha.口_開き();
-    			Cha.舌_出し();
+    			Cha.Tounge_出し();
     		}
     	}
 

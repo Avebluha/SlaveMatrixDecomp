@@ -2147,10 +2147,10 @@ namespace SlaveMatrix
     			HeadD2.口接続(new 性器精液_人D());
     			HeadD2.口接続(new 咳D());
     			HeadD2.口接続(new 呼気D());
-    			舌D 舌D2 = Mix<舌D>(母方, 父方, i, 原種モード);
-    			if (舌D2 != null)
+    			ToungeD ToungeD2 = Mix<ToungeD>(母方, 父方, i, 原種モード);
+    			if (ToungeD2 != null)
     			{
-    				HeadD2.口接続(舌D2);
+    				HeadD2.口接続(ToungeD2);
     			}
     		}
     		HeadD2.接続(母方, 父方, i, ConnectionInfo.Head_耳左_接続, 要素構成, 接続構成, 変異率, 原種モード);

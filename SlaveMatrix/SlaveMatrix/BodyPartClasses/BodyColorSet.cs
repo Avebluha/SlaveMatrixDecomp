@@ -178,7 +178,7 @@ namespace SlaveMatrix
 
     	public Color2 粘膜穴;
 
-    	public Color2 舌;
+    	public Color2 Tounge;
 
     	public Color2 紅潮;
 
@@ -326,7 +326,7 @@ namespace SlaveMatrix
     		粘膜 = new Color2(ref 色.粘膜, ref ColorHelper.Empty);
     		粘膜穴.Col1 = Color.FromArgb(80, ColorHelper.Black);
     		粘膜穴.Col2 = 粘膜.Col2;
-    		ColorHelper.GetGrad(ref 色.粘膜, out 舌);
+    		ColorHelper.GetGrad(ref 色.粘膜, out Tounge);
     		紅潮.Col1 = Color.FromArgb(60, 色.粘膜);
     		紅潮.Col2 = ColorHelper.Empty;
     		口紅.Col1 = Color.FromArgb(100, 色.口紅);

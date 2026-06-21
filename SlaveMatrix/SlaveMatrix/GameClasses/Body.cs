@@ -113,7 +113,7 @@ namespace SlaveMatrix
 
     	public 口 口;
 
-    	public 舌 舌;
+    	public Tounge Tounge;
 
     	public 涎 LeftDrool;
 
@@ -867,16 +867,16 @@ namespace SlaveMatrix
 
     	public int 長胴n;
 
-    	public bool 舌_表示
+    	public bool Tounge_表示
     	{
     		get
     		{
-    			return 舌.表示;
+    			return Tounge.表示;
     		}
     		set
     		{
-    			舌.表示 = value;
-    			舌.SetValues("股", value && Is舌股);
+    			Tounge.表示 = value;
+    			Tounge.SetValues("股", value && Is舌股);
     		}
     	}
 
@@ -2867,7 +2867,7 @@ namespace SlaveMatrix
     			if (value)
     			{
     				口i = 9;
-    				Cha.舌_無し();
+    				Cha.Tounge_無し();
     				Set玉口枷 = 玉口枷情報.GetDefault();
     			}
     			else
@@ -4002,8 +4002,8 @@ namespace SlaveMatrix
     			}
     			口 = 頭.口_接続.GetEle<口>();
     			口.SetHitFalse();
-    			舌 = 頭.口_接続.GetEle<舌>();
-    			舌.SetHitFalse();
+    			Tounge = 頭.口_接続.GetEle<Tounge>();
+    			Tounge.SetHitFalse();
     			LeftDrool = 頭.口_接続.GetEle<涎>(右: false);
     			RightDrool = 頭.口_接続.GetEle<涎>(右: true);
     			LeftDrool.SetHitFalse();
@@ -5231,7 +5231,7 @@ namespace SlaveMatrix
     		IsSingleEye = 単眼目 != null;
     		IsCheekEyes = 頬目左 != null;
     		IsForeheadEye = 額目 != null;
-    		Is舌股 = 舌 is 舌_長 && ((舌_長)舌).舌股右_舌1_表示;
+    		Is舌股 = Tounge is Tounge_長 && ((Tounge_長)Tounge).舌股右_Tounge1_表示;
     		Is最前腕人 = 肩左 != null && 肩左.UpperArm_接続.IsEle<UpperArm_人>();
     		Is最前手人 = 肩左 != null && 肩左.EnumEle().IsEle<手_人>();
     		Is腕人 = LowerArm以降左.IsEle<LowerArm_人>();
@@ -5244,7 +5244,7 @@ namespace SlaveMatrix
     		Is腿魚 = Waist.腿左_接続.IsEle<尾_魚>();
     		Is腿犬 = Waist.腿左_接続.IsEle<触手_犬>();
     		紅潮.紅潮線左右表示 = false;
-    		舌_表示 = false;
+    		Tounge_表示 = false;
     		if (Is頭頂_宇)
     		{
     			foreach (Element item51 in 顔触覚左接続)
@@ -5928,7 +5928,7 @@ namespace SlaveMatrix
     				{
     					bod.胸毛_人.描画0(are);
     				}
-    				bod.舌.描画0(are);
+    				bod.Tounge.描画0(are);
     				bod.MouthCum.描画0(are);
     				bod.咳.描画0(are);
     				bod.呼気.描画0(are);
@@ -6359,7 +6359,7 @@ namespace SlaveMatrix
     				{
     					bod.胸毛_人.描画0(are);
     				}
-    				bod.舌.描画0(are);
+    				bod.Tounge.描画0(are);
     				bod.MouthCum.描画0(are);
     				bod.咳.描画0(are);
     				bod.呼気.描画0(are);
@@ -6789,7 +6789,7 @@ namespace SlaveMatrix
     				{
     					bod.胸毛_人.描画0(are);
     				}
-    				bod.舌.描画0(are);
+    				bod.Tounge.描画0(are);
     				bod.MouthCum.描画0(are);
     				bod.咳.描画0(are);
     				bod.呼気.描画0(are);
@@ -7208,7 +7208,7 @@ namespace SlaveMatrix
     				{
     					bod.胸毛_人.描画0(are);
     				}
-    				bod.舌.描画0(are);
+    				bod.Tounge.描画0(are);
     				bod.MouthCum.描画0(are);
     				bod.咳.描画0(are);
     				bod.呼気.描画0(are);
@@ -7636,7 +7636,7 @@ namespace SlaveMatrix
     				{
     					bod.胸毛_人.描画0(are);
     				}
-    				bod.舌.描画0(are);
+    				bod.Tounge.描画0(are);
     				bod.MouthCum.描画0(are);
     				bod.咳.描画0(are);
     				bod.呼気.描画0(are);
@@ -8072,7 +8072,7 @@ namespace SlaveMatrix
     				{
     					bod.胸毛_人.描画0(are);
     				}
-    				bod.舌.描画0(are);
+    				bod.Tounge.描画0(are);
     				bod.MouthCum.描画0(are);
     				bod.咳.描画0(are);
     				bod.呼気.描画0(are);
@@ -8515,7 +8515,7 @@ namespace SlaveMatrix
     				{
     					bod.胸毛_人.描画0(are);
     				}
-    				bod.舌.描画0(are);
+    				bod.Tounge.描画0(are);
     				bod.MouthCum.描画0(are);
     				bod.咳.描画0(are);
     				bod.呼気.描画0(are);
@@ -8951,7 +8951,7 @@ namespace SlaveMatrix
     			{
     				bod.胸毛_人.描画0(are);
     			}
-    			bod.舌.描画0(are);
+    			bod.Tounge.描画0(are);
     			bod.MouthCum.描画0(are);
     			bod.咳.描画0(are);
     			bod.呼気.描画0(are);

@@ -11,7 +11,7 @@ namespace SlaveMatrix
 
     	public bool 下唇_表示 = true;
 
-    	public bool 舌_表示 = true;
+    	public bool Tounge_表示 = true;
 
     	public マウスD()
     	{

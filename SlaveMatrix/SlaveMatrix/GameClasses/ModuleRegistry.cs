@@ -1964,7 +1964,7 @@ namespace SlaveMatrix
                     TrainingTarget.Emotion();
                     TrainingTarget.SetInitialExpression();
                     TrainingTarget.口修正();
-                    TrainingTarget.舌_無し();
+                    TrainingTarget.Tounge_無し();
                     TrainingTarget.Set衣装(GlobalState.GameData.TrainingTarget.着衣);
                     Player.SetState();
                     Player.表示ステート更新();

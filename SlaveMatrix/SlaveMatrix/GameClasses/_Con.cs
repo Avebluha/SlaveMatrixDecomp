@@ -381,12 +381,12 @@ namespace SlaveMatrix.GameClasses
 
         public static void Set舌短(this HeadD 頭)
         {
-            頭.口接続(new 舌_短D());
+            頭.口接続(new Tounge_短D());
         }
 
         public static void Set舌長(this HeadD 頭)
         {
-            頭.口接続(new 舌_長D());
+            頭.口接続(new Tounge_長D());
         }
 
         public static void Set耳人(this HeadD 頭)
