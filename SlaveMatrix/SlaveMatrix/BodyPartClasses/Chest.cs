@@ -6,7 +6,7 @@ namespace SlaveMatrix
 {
     public class Chest : Element
     {
-    	public ShapePart X0Y0_胸郭;
+    	public ShapePart X0Y0_RibCage;
 
     	public ShapePart X0Y0_筋肉_筋肉左;
 
@@ -122,7 +122,7 @@ namespace SlaveMatrix
 
     	public ShapePart X0Y0_ハイライト内右;
 
-    	public ColorD 胸郭CD;
+    	public ColorD RibCageCD;
 
     	public ColorD 筋肉_筋肉左CD;
 
@@ -238,7 +238,7 @@ namespace SlaveMatrix
 
     	public ColorD ハイライト内右CD;
 
-    	public ColorP X0Y0_胸郭CP;
+    	public ColorP X0Y0_RibCageCP;
 
     	public ColorP X0Y0_筋肉_筋肉左CP;
 
@@ -425,16 +425,16 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 胸郭_表示
+    	public bool RibCage_表示
     	{
     		get
     		{
-    			return X0Y0_胸郭.Dra;
+    			return X0Y0_RibCage.Dra;
     		}
     		set
     		{
-    			X0Y0_胸郭.Dra = value;
-    			X0Y0_胸郭.Hit = value;
+    			X0Y0_RibCage.Dra = value;
+    			X0Y0_RibCage.Hit = value;
     		}
     	}
 
@@ -1257,11 +1257,11 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return 胸郭_表示;
+    			return RibCage_表示;
     		}
     		set
     		{
-    			胸郭_表示 = value;
+    			RibCage_表示 = value;
     			筋肉_筋肉左_表示 = value;
     			筋肉_筋肉右_表示 = value;
     			筋肉_筋肉中_表示 = value;
@@ -1326,11 +1326,11 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return 胸郭CD.不透明度;
+    			return RibCageCD.不透明度;
     		}
     		set
     		{
-    			胸郭CD.不透明度 = value;
+    			RibCageCD.不透明度 = value;
     			筋肉_筋肉左CD.不透明度 = value;
     			筋肉_筋肉右CD.不透明度 = value;
     			筋肉_筋肉中CD.不透明度 = value;
@@ -1391,35 +1391,35 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public JointS Neck_接続点 => new JointS(Body, X0Y0_胸郭, 0);
+    	public JointS Neck_接続点 => new JointS(Body, X0Y0_RibCage, 0);
 
-    	public JointS 肩左_接続点 => new JointS(Body, X0Y0_胸郭, 1);
+    	public JointS 肩左_接続点 => new JointS(Body, X0Y0_RibCage, 1);
 
-    	public JointS 肩右_接続点 => new JointS(Body, X0Y0_胸郭, 2);
+    	public JointS 肩右_接続点 => new JointS(Body, X0Y0_RibCage, 2);
 
-    	public JointS 胸左_接続点 => new JointS(Body, X0Y0_胸郭, 3);
+    	public JointS 胸左_接続点 => new JointS(Body, X0Y0_RibCage, 3);
 
-    	public JointS 胸右_接続点 => new JointS(Body, X0Y0_胸郭, 4);
+    	public JointS 胸右_接続点 => new JointS(Body, X0Y0_RibCage, 4);
 
-    	public JointS 肌_接続点 => new JointS(Body, X0Y0_胸郭, 10);
+    	public JointS 肌_接続点 => new JointS(Body, X0Y0_RibCage, 10);
 
-    	public JointS 翼上左_接続点 => new JointS(Body, X0Y0_胸郭, 8);
+    	public JointS 翼上左_接続点 => new JointS(Body, X0Y0_RibCage, 8);
 
-    	public JointS 翼上右_接続点 => new JointS(Body, X0Y0_胸郭, 9);
+    	public JointS 翼上右_接続点 => new JointS(Body, X0Y0_RibCage, 9);
 
-    	public JointS 翼下左_接続点 => new JointS(Body, X0Y0_胸郭, 11);
+    	public JointS 翼下左_接続点 => new JointS(Body, X0Y0_RibCage, 11);
 
-    	public JointS 翼下右_接続点 => new JointS(Body, X0Y0_胸郭, 12);
+    	public JointS 翼下右_接続点 => new JointS(Body, X0Y0_RibCage, 12);
 
-    	public JointS 背中_接続点 => new JointS(Body, X0Y0_胸郭, 10);
+    	public JointS 背中_接続点 => new JointS(Body, X0Y0_RibCage, 10);
 
     	public Chest(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, ChestD e)
     	{
     		Chest Chest2 = this;
     		ThisType = GetType();
-    		Body = new VariantGrid(GlobalState.胴体["胸郭"]);
+    		Body = new VariantGrid(GlobalState.胴体["RibCage"]);
     		PartGroup partGroup = Body[0][0];
-    		X0Y0_胸郭 = partGroup["胸郭"].ToPar();
+    		X0Y0_RibCage = partGroup["胸郭"].ToPar();
     		PartGroup pars2 = partGroup["筋肉"].ToPars();
     		X0Y0_筋肉_筋肉左 = pars2["筋肉左"].ToPar();
     		X0Y0_筋肉_筋肉右 = pars2["筋肉右"].ToPar();
@@ -1525,7 +1525,7 @@ namespace SlaveMatrix
     		サイズ = e.サイズ;
     		サイズX = e.サイズX;
     		サイズY = e.サイズY;
-    		胸郭_表示 = e.胸郭_表示;
+    		RibCage_表示 = e.RibCage_表示;
     		筋肉_筋肉左_表示 = e.筋肉_筋肉左_表示;
     		筋肉_筋肉右_表示 = e.筋肉_筋肉右_表示;
     		筋肉_筋肉中_表示 = e.筋肉_筋肉中_表示;
@@ -1715,7 +1715,7 @@ namespace SlaveMatrix
     		}
     		base.配色指定 = 配色指定;
     		配色(体配色);
-    		X0Y0_胸郭CP = new ColorP(X0Y0_胸郭, 胸郭CD, DisUnit, abj: true);
+    		X0Y0_RibCageCP = new ColorP(X0Y0_RibCage, RibCageCD, DisUnit, abj: true);
     		X0Y0_筋肉_筋肉左CP = new ColorP(X0Y0_筋肉_筋肉左, 筋肉_筋肉左CD, DisUnit, abj: false);
     		X0Y0_筋肉_筋肉右CP = new ColorP(X0Y0_筋肉_筋肉右, 筋肉_筋肉右CD, DisUnit, abj: false);
     		X0Y0_筋肉_筋肉中CP = new ColorP(X0Y0_筋肉_筋肉中, 筋肉_筋肉中CD, DisUnit, abj: false);
@@ -1784,7 +1784,7 @@ namespace SlaveMatrix
 
     	public override void 描画0(RenderArea Are)
     	{
-    		Are.Draw(X0Y0_胸郭);
+    		Are.Draw(X0Y0_RibCage);
     		Are.Draw(X0Y0_筋肉_筋肉左);
     		Are.Draw(X0Y0_筋肉_筋肉右);
     		Are.Draw(X0Y0_筋肉_筋肉中);
@@ -1848,7 +1848,7 @@ namespace SlaveMatrix
 
     	public override void 色更新()
     	{
-    		X0Y0_胸郭CP.Update();
+    		X0Y0_RibCageCP.Update();
     		X0Y0_筋肉_筋肉左CP.Update();
     		X0Y0_筋肉_筋肉右CP.Update();
     		X0Y0_筋肉_筋肉中CP.Update();
@@ -1910,7 +1910,7 @@ namespace SlaveMatrix
 
     	public override void 色更新(Vector2D[] mm)
     	{
-    		X0Y0_胸郭CP.Update(mm);
+    		X0Y0_RibCageCP.Update(mm);
     		X0Y0_筋肉_筋肉左CP.Update();
     		X0Y0_筋肉_筋肉右CP.Update();
     		X0Y0_筋肉_筋肉中CP.Update();
@@ -1977,7 +1977,7 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		胸郭CD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌O);
+    		RibCageCD = new ColorD(ref ColorHelper.Black, ref 体配色.人肌O);
     		筋肉_筋肉左CD = new ColorD(ref 体配色.薄線, ref 体配色.人肌O);
     		筋肉_筋肉右CD = new ColorD(ref 体配色.薄線, ref 体配色.人肌O);
     		筋肉_筋肉中CD = new ColorD(ref 体配色.薄線, ref 体配色.人肌O);

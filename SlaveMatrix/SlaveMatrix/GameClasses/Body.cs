@@ -992,7 +992,7 @@ namespace SlaveMatrix
     		get
     		{
     			Chest.接続P();
-    			return Chest.X0Y0_胸郭.ToGlobal((Chest.X0Y0_胸郭.GetOP()[8].ps[2] + Chest.X0Y0_胸郭.GetOP()[2].ps[2]) * 0.5);
+    			return Chest.X0Y0_RibCage.ToGlobal((Chest.X0Y0_RibCage.GetOP()[8].ps[2] + Chest.X0Y0_RibCage.GetOP()[2].ps[2]) * 0.5);
     		}
     	}
 
@@ -4592,7 +4592,7 @@ namespace SlaveMatrix
     				潮吹_大_獣.SetHitFalse();
     				放尿_獣.SetHitFalse();
     				ピアス.SetHitFalse();
-    				Waist.WaistCD.c2.Col2 = Chest_獣.胸郭CD.c2.Col1;
+    				Waist.WaistCD.c2.Col2 = Chest_獣.RibCageCD.c2.Col1;
     				if (Waist_獣 != null)
     				{
     					半身中1接続.Add(Waist_獣);
@@ -5310,8 +5310,8 @@ namespace SlaveMatrix
     			染み_獣.Intensity = 0.0;
     			if (Chest_獣.脇左_接続.IsEle<四足脇>())
     			{
-    				Chest_獣.X0Y0_胸郭.GetOP()[0].Outline = false;
-    				Chest_獣.X0Y0_胸郭.GetOP()[9].Outline = false;
+    				Chest_獣.X0Y0_RibCage.GetOP()[0].Outline = false;
+    				Chest_獣.X0Y0_RibCage.GetOP()[9].Outline = false;
     			}
     			Vector2D positionCont3 = new Vector2D(0.0, 0.006);
     			染み_獣.X0Y0_湯気_湯気左1_湯気2.SetPositionCont(positionCont3);

@@ -8,7 +8,7 @@ namespace SlaveMatrix
     [Serializable]
     public class 四足胸D : 半身D
     {
-    	public bool 胸郭_表示 = true;
+    	public bool RibCage_表示 = true;
 
     	public bool 筋肉_筋肉左_表示 = true;
 
