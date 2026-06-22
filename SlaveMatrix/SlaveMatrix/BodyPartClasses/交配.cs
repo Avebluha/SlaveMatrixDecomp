@@ -1847,7 +1847,7 @@ namespace SlaveMatrix
     		TorsoD TorsoD2 = Mix<TorsoD>(母方, 父方, i, 原種モード);
     		TorsoPlateD TorsoPlateD2;
     		TorsoD2.肌接続(TorsoPlateD2 = Mix<TorsoPlateD>(母方, 父方, i, 原種モード));
-    		TorsoD2.肌接続(Mix<胴肌D>(母方, 父方, i, 原種モード));
+    		TorsoD2.肌接続(Mix<TorsoSkinD>(母方, 父方, i, 原種モード));
     		TorsoD2.肌接続(new 上着ミドル_ドレスD());
     		TorsoD2.AlignC();
     		TorsoD2.胴接続(ChestD2);
@@ -2500,12 +2500,12 @@ namespace SlaveMatrix
     				四足胴D 四足胴D2 = Mix<四足胴D>(母方, 父方, i, 原種モード);
     				if (四足胴D2 != null)
     				{
-    					胴肌D 胴肌D2 = null;
-    					四足胴D2.肌接続(胴肌D2 = Mix<胴肌D>(母方, 父方, i, 原種モード));
+    					TorsoSkinD TorsoSkinD2 = null;
+    					四足胴D2.肌接続(TorsoSkinD2 = Mix<TorsoSkinD>(母方, 父方, i, 原種モード));
     					四足胴D2.AlignC();
-    					if (胴肌D2 != null)
+    					if (TorsoSkinD2 != null)
     					{
-    						胴肌D2.尺度B *= 1.35;
+    						TorsoSkinD2.尺度B *= 1.35;
     					}
     					四足胸D2.胴接続(四足胴D2);
     					四足胴D2.肥大 = Waist.肥大;

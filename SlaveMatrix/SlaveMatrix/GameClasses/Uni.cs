@@ -57,7 +57,7 @@ namespace SlaveMatrix
     	{
     		TorsoD obj = new TorsoD();
     		obj.肌接続(new TorsoPlateD());
-    		obj.肌接続(new 胴肌D());
+    		obj.肌接続(new TorsoSkinD());
     		obj.肌接続(new 上着ミドル_ドレスD());
     		return obj;
     	}
@@ -98,7 +98,7 @@ namespace SlaveMatrix
     	public static 四足胴D 四足胴()
     	{
     		四足胴D obj = new 四足胴D();
-    		obj.肌接続(new 胴肌D
+    		obj.肌接続(new TorsoSkinD
     		{
     			尺度B = 1.35
     		});

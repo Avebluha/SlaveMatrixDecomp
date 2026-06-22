@@ -161,7 +161,7 @@ namespace SlaveMatrix
 
     	public TorsoPlate TorsoPlate_人;
 
-    	public 胴肌 胴肌_人;
+    	public TorsoSkin TorsoSkin_人;
 
     	public PregnantBelly_人 PregnantBelly_人;
 
@@ -263,7 +263,7 @@ namespace SlaveMatrix
 
     	public 胸肌 胸肌_獣;
 
-    	public 胴肌 胴肌_獣;
+    	public TorsoSkin TorsoSkin_獣;
 
     	public WaistSkin WaistSkin_獣;
 
@@ -3890,9 +3890,9 @@ namespace SlaveMatrix
     		{
     			Chest = Torso.Chest_接続.GetEle<Chest>();
     			TorsoPlate_人 = Torso.肌_接続.GetEle<TorsoPlate>();
-    			胴肌_人 = Torso.肌_接続.GetEle<胴肌>();
+    			TorsoSkin_人 = Torso.肌_接続.GetEle<TorsoSkin>();
     			TorsoPlate_人.SetHitFalse();
-    			胴肌_人.SetHitFalse();
+    			TorsoSkin_人.SetHitFalse();
     			上着M_ドレス = Torso.肌_接続.GetEle<上着ミドル_ドレス>();
     			上着M_ドレス.SetHitFalse();
     		}
@@ -4495,9 +4495,9 @@ namespace SlaveMatrix
     					{
     						胸肌_獣 = (胸肌)item22;
     					}
-    					else if (item22 is 胴肌)
+    					else if (item22 is TorsoSkin)
     					{
-    						胴肌_獣 = (胴肌)item22;
+    						TorsoSkin_獣 = (TorsoSkin)item22;
     					}
     					else if (item22 is WaistSkin)
     					{
@@ -4565,7 +4565,7 @@ namespace SlaveMatrix
     					}
     				}
     				胸肌_獣.SetHitFalse();
-    				胴肌_獣.SetHitFalse();
+    				TorsoSkin_獣.SetHitFalse();
     				WaistSkin_獣.SetHitFalse();
     				WaistSkin_獣.X0Y0_陰毛.Hit = true;
     				WaistSkin_獣.X0Y0_陰毛_ハート.Hit = true;
@@ -4617,9 +4617,9 @@ namespace SlaveMatrix
     				{
     					半身中1接続.Add(WaistSkin_獣);
     				}
-    				if (胴肌_獣 != null)
+    				if (TorsoSkin_獣 != null)
     				{
-    					半身中1接続.Add(胴肌_獣);
+    					半身中1接続.Add(TorsoSkin_獣);
     				}
     				if (胸肌_獣 != null)
     				{
@@ -5785,7 +5785,7 @@ namespace SlaveMatrix
     				bod.WaistSkin_人.描画0(are);
     				bod.TorsoPlate_人.描画0(are);
     				bod.胸腹板_人.描画0(are);
-    				bod.胴肌_人.描画0(are);
+    				bod.TorsoSkin_人.描画0(are);
     				bod.胸肌_人.描画0(are);
     				bod.下着T_チューブ.描画0(are);
     				bod.下着T_クロス.描画0(are);
@@ -6212,7 +6212,7 @@ namespace SlaveMatrix
     				bod.WaistSkin_人.描画0(are);
     				bod.TorsoPlate_人.描画0(are);
     				bod.胸腹板_人.描画0(are);
-    				bod.胴肌_人.描画0(are);
+    				bod.TorsoSkin_人.描画0(are);
     				bod.胸肌_人.描画0(are);
     				bod.下着T_チューブ.描画0(are);
     				bod.下着T_クロス.描画0(are);
@@ -6639,7 +6639,7 @@ namespace SlaveMatrix
     				bod.WaistSkin_人.描画0(are);
     				bod.TorsoPlate_人.描画0(are);
     				bod.胸腹板_人.描画0(are);
-    				bod.胴肌_人.描画0(are);
+    				bod.TorsoSkin_人.描画0(are);
     				bod.胸肌_人.描画0(are);
     				bod.下着T_チューブ.描画0(are);
     				bod.下着T_クロス.描画0(are);
@@ -7078,7 +7078,7 @@ namespace SlaveMatrix
     				bod.WaistSkin_人.描画0(are);
     				bod.TorsoPlate_人.描画0(are);
     				bod.胸腹板_人.描画0(are);
-    				bod.胴肌_人.描画0(are);
+    				bod.TorsoSkin_人.描画0(are);
     				bod.胸肌_人.描画0(are);
     				if (bod.胸左右前後)
     				{
@@ -7489,7 +7489,7 @@ namespace SlaveMatrix
     				bod.WaistSkin_人.描画0(are);
     				bod.TorsoPlate_人.描画0(are);
     				bod.胸腹板_人.描画0(are);
-    				bod.胴肌_人.描画0(are);
+    				bod.TorsoSkin_人.描画0(are);
     				bod.胸肌_人.描画0(are);
     				bod.下着T_チューブ.描画0(are);
     				bod.下着T_クロス.描画0(are);
@@ -7912,7 +7912,7 @@ namespace SlaveMatrix
     				bod.WaistSkin_人.描画0(are);
     				bod.TorsoPlate_人.描画0(are);
     				bod.胸腹板_人.描画0(are);
-    				bod.胴肌_人.描画0(are);
+    				bod.TorsoSkin_人.描画0(are);
     				bod.胸肌_人.描画0(are);
     				bod.下着T_チューブ.描画0(are);
     				bod.下着T_クロス.描画0(are);
@@ -8368,7 +8368,7 @@ namespace SlaveMatrix
     				bod.WaistSkin_人.描画0(are);
     				bod.TorsoPlate_人.描画0(are);
     				bod.胸腹板_人.描画0(are);
-    				bod.胴肌_人.描画0(are);
+    				bod.TorsoSkin_人.描画0(are);
     				bod.胸肌_人.描画0(are);
     				bod.下着T_チューブ.描画0(are);
     				bod.下着T_クロス.描画0(are);
@@ -8796,7 +8796,7 @@ namespace SlaveMatrix
     			bod.WaistSkin_人.描画0(are);
     			bod.TorsoPlate_人.描画0(are);
     			bod.胸腹板_人.描画0(are);
-    			bod.胴肌_人.描画0(are);
+    			bod.TorsoSkin_人.描画0(are);
     			bod.胸肌_人.描画0(are);
     			bod.下着T_チューブ.描画0(are);
     			bod.下着T_クロス.描画0(are);
@@ -9797,14 +9797,14 @@ namespace SlaveMatrix
     		Torso.X0Y0_筋肉_筋肉左.SetPositionCont(DataConsts.Vec2DUnitY * (Waist.Yv * -0.004));
     		Torso.X0Y0_筋肉_筋肉右.SetPositionCont(DataConsts.Vec2DUnitY * (Waist.Yv * -0.004));
     		TorsoPlate_人.X0Y0_虫性_腹板.SetPositionCont(DataConsts.Vec2DUnitY * (Waist.Yv * -0.002));
-    		胴肌_人.Body.SetSizeYCont(0.85 + (1.0 - Waist.Yv) * 0.15);
+    		TorsoSkin_人.Body.SetSizeYCont(0.85 + (1.0 - Waist.Yv) * 0.15);
     	}
 
     	private void 腰振り_獣()
     	{
     		Torso_獣.X0Y0_筋肉_筋肉左.SetPositionCont(DataConsts.Vec2DUnitY * (Waist_獣.Yv * -0.004));
     		Torso_獣.X0Y0_筋肉_筋肉右.SetPositionCont(DataConsts.Vec2DUnitY * (Waist_獣.Yv * -0.004));
-    		胴肌_獣.Body.SetSizeYCont(0.85 + (1.0 - Waist_獣.Yv) * 0.15);
+    		TorsoSkin_獣.Body.SetSizeYCont(0.85 + (1.0 - Waist_獣.Yv) * 0.15);
     		if (EI半中1 != null)
     		{
     			EI半中1.Updatef = true;

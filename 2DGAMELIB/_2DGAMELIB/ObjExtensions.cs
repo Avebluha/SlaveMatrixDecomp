@@ -39,7 +39,8 @@ namespace _2DGAMELIB
             ["膣内精液"] = "InternalSemen",
             ["ボテ腹"] = "PregnantBelly",
             ["腰肌"] = "WaistSkin",
-            ["ボテ腹板"] = "PregnantBellyPlate"
+            ["ボテ腹板"] = "PregnantBellyPlate",
+            ["胴腹板"] = "TorsoPlate"
         };
 
         public static void MigrateKeys(this BodyTemplate BodyTemplate)
