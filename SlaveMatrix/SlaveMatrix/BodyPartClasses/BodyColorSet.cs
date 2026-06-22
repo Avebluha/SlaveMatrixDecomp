@@ -180,7 +180,7 @@ namespace SlaveMatrix
 
     	public Color2 Tounge;
 
-    	public Color2 紅潮;
+    	public Color2 CrimsonSquirt;
 
     	public Color2 口紅;
 
@@ -327,8 +327,8 @@ namespace SlaveMatrix
             粘膜穴.Col1 = System.Drawing.Color.FromArgb(80, ColorHelper.Black);
     		粘膜穴.Col2 = 粘膜.Col2;
     		ColorHelper.GetGrad(ref Color.粘膜, out Tounge);
-            紅潮.Col1 = System.Drawing.Color.FromArgb(60, Color.粘膜);
-    		紅潮.Col2 = ColorHelper.Empty;
+            CrimsonSquirt.Col1 = System.Drawing.Color.FromArgb(60, Color.粘膜);
+    		CrimsonSquirt.Col2 = ColorHelper.Empty;
             口紅.Col1 = System.Drawing.Color.FromArgb(100, Color.口紅);
     		口紅.Col2 = ColorHelper.Empty;
     		刺青 = new Color2(ref Color.刺青, ref ColorHelper.Empty);

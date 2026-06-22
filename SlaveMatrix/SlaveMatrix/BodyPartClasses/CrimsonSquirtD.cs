@@ -5,15 +5,15 @@ using SlaveMatrix.GameClasses;
 namespace SlaveMatrix
 {
     [Serializable]
-    public class 紅潮D : ElementData
+    public class CrimsonSquirtD : ElementData
     {
-    	public bool 紅潮0_表示 = true;
+    	public bool CrimsonSquirt0_表示 = true;
 
-    	public bool 紅潮1_表示 = true;
+    	public bool CrimsonSquirt1_表示 = true;
 
-    	public bool 紅潮右_表示 = true;
+    	public bool CrimsonSquirtRight_表示 = true;
 
-    	public bool 紅潮左_表示 = true;
+    	public bool CrimsonSquirtLeft_表示 = true;
 
     	public bool 紅潮線左_表示 = true;
 
@@ -47,14 +47,14 @@ namespace SlaveMatrix
 
     	public double 紅潮線弱左右濃度;
 
-    	public 紅潮D()
+    	public CrimsonSquirtD()
     	{
     		ThisType = GetType();
     	}
 
     	public override Element GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
     	{
-    		return new 紅潮(DisUnit, 配色指定, 体配色, Med, this);
+    		return new CrimsonSquirt(DisUnit, 配色指定, 体配色, Med, this);
     	}
     }
 }

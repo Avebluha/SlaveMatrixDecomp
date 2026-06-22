@@ -143,7 +143,7 @@ namespace SlaveMatrix
 
     	public 目尻影 目尻影右;
 
-    	public 紅潮 紅潮;
+    	public CrimsonSquirt CrimsonSquirt;
 
     	public 目傷 EyeScarLeft;
 
@@ -1357,11 +1357,11 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return 紅潮.Intensity;
+    			return CrimsonSquirt.Intensity;
     		}
     		set
     		{
-    			紅潮.Intensity = value;
+    			CrimsonSquirt.Intensity = value;
     			if (CheekEyelidLeft != null)
     			{
     				CheekEyelidLeft.瞼左_瞼CD.色 = Cha.CharacterData.body_color.人肌.BlendP1(Color.FromArgb((int)(128.0 * value), Cha.CharacterData.body_color.粘膜)).GetSkinGrad();
@@ -4040,8 +4040,8 @@ namespace SlaveMatrix
     			目尻影右 = 頭.目右_接続.GetEle<目尻影>();
     			目尻影左.SetHitFalse();
     			目尻影右.SetHitFalse();
-    			紅潮 = 頭.NoseSkin_接続.GetEle<紅潮>();
-    			紅潮.SetHitFalse();
+    			CrimsonSquirt = 頭.NoseSkin_接続.GetEle<CrimsonSquirt>();
+    			CrimsonSquirt.SetHitFalse();
     			EyeScarLeft = 頭.EyeLeft_接続.GetEle<目傷>();
     			目傷右 = 頭.目右_接続.GetEle<目傷>();
     			EyeScarLeft.SetHitFalse();
@@ -5243,7 +5243,7 @@ namespace SlaveMatrix
     		Is腿獣 = Waist.腿左_接続.IsEle<獣腿>();
     		Is腿魚 = Waist.腿左_接続.IsEle<尾_魚>();
     		Is腿犬 = Waist.腿左_接続.IsEle<触手_犬>();
-    		紅潮.紅潮線左右表示 = false;
+    		CrimsonSquirt.紅潮線左右表示 = false;
     		Tounge_表示 = false;
     		if (Is頭頂_宇)
     		{
@@ -5269,13 +5269,13 @@ namespace SlaveMatrix
     			頭.X0Y0_Head.GetJP()[7] = new JointPoint(頭.X0Y0_Head.GetJP()[7].Joint.MulY(0.96));
     			頭.X0Y0_Head.GetJP()[17] = new JointPoint(頭.X0Y0_Head.GetJP()[17].Joint.MulY(0.96));
     			頭.X0Y0_Head.GetJP()[18] = new JointPoint(頭.X0Y0_Head.GetJP()[18].Joint.MulY(0.96));
-    			紅潮.紅潮1_表示 = false;
-    			紅潮.X0Y0_紅潮左.SetAngleBase(20.0);
-    			紅潮.X0Y0_紅潮弱左.SetAngleBase(20.0);
-    			紅潮.X0Y0_紅潮線左.SetAngleBase(20.0);
-    			紅潮.X0Y0_紅潮右.SetAngleBase(-20.0);
-    			紅潮.X0Y0_紅潮弱右.SetAngleBase(-20.0);
-    			紅潮.X0Y0_紅潮線右.SetAngleBase(-20.0);
+    			CrimsonSquirt.CrimsonSquirt1_表示 = false;
+    			CrimsonSquirt.X0Y0_CrimsonSquirtLeft.SetAngleBase(20.0);
+    			CrimsonSquirt.X0Y0_紅潮弱左.SetAngleBase(20.0);
+    			CrimsonSquirt.X0Y0_紅潮線左.SetAngleBase(20.0);
+    			CrimsonSquirt.X0Y0_CrimsonSquirtRight.SetAngleBase(-20.0);
+    			CrimsonSquirt.X0Y0_紅潮弱右.SetAngleBase(-20.0);
+    			CrimsonSquirt.X0Y0_紅潮線右.SetAngleBase(-20.0);
     		}
     		染み_人 = new 染み_人(disUnit, 配色指定.N0, Cha.ColorSet, Med, new 染み_人D());
     		染み_人.サイズ = Elements.Sum((Element e) => e.サイズ) / (double)Elements.Length;
@@ -5831,7 +5831,7 @@ namespace SlaveMatrix
     					bod.MonoEye.描画0(are);
     					bod.MonoEyelid.描画0(are);
     				}
-    				bod.紅潮.描画0(are);
+    				bod.CrimsonSquirt.描画0(are);
     				bod.NoseSkin.描画0(are);
     				bod.目尻影左.描画0(are);
     				bod.目尻影右.描画0(are);
@@ -6258,7 +6258,7 @@ namespace SlaveMatrix
     					bod.MonoEye.描画0(are);
     					bod.MonoEyelid.描画0(are);
     				}
-    				bod.紅潮.描画0(are);
+    				bod.CrimsonSquirt.描画0(are);
     				bod.NoseSkin.描画0(are);
     				bod.目尻影左.描画0(are);
     				bod.目尻影右.描画0(are);
@@ -6685,7 +6685,7 @@ namespace SlaveMatrix
     					bod.MonoEye.描画0(are);
     					bod.MonoEyelid.描画0(are);
     				}
-    				bod.紅潮.描画0(are);
+    				bod.CrimsonSquirt.描画0(are);
     				bod.NoseSkin.描画0(are);
     				bod.目尻影左.描画0(are);
     				bod.目尻影右.描画0(are);
@@ -7115,7 +7115,7 @@ namespace SlaveMatrix
     					bod.MonoEye.描画0(are);
     					bod.MonoEyelid.描画0(are);
     				}
-    				bod.紅潮.描画0(are);
+    				bod.CrimsonSquirt.描画0(are);
     				bod.NoseSkin.描画0(are);
     				bod.目尻影左.描画0(are);
     				bod.目尻影右.描画0(are);
@@ -7535,7 +7535,7 @@ namespace SlaveMatrix
     					bod.MonoEye.描画0(are);
     					bod.MonoEyelid.描画0(are);
     				}
-    				bod.紅潮.描画0(are);
+    				bod.CrimsonSquirt.描画0(are);
     				bod.NoseSkin.描画0(are);
     				bod.目尻影左.描画0(are);
     				bod.目尻影右.描画0(are);
@@ -7958,7 +7958,7 @@ namespace SlaveMatrix
     					bod.MonoEye.描画0(are);
     					bod.MonoEyelid.描画0(are);
     				}
-    				bod.紅潮.描画0(are);
+    				bod.CrimsonSquirt.描画0(are);
     				bod.NoseSkin.描画0(are);
     				bod.目尻影左.描画0(are);
     				bod.目尻影右.描画0(are);
@@ -8414,7 +8414,7 @@ namespace SlaveMatrix
     					bod.MonoEye.描画0(are);
     					bod.MonoEyelid.描画0(are);
     				}
-    				bod.紅潮.描画0(are);
+    				bod.CrimsonSquirt.描画0(are);
     				bod.NoseSkin.描画0(are);
     				bod.目尻影左.描画0(are);
     				bod.目尻影右.描画0(are);
@@ -8842,7 +8842,7 @@ namespace SlaveMatrix
     				bod.MonoEye.描画0(are);
     				bod.MonoEyelid.描画0(are);
     			}
-    			bod.紅潮.描画0(are);
+    			bod.CrimsonSquirt.描画0(are);
     			bod.NoseSkin.描画0(are);
     			bod.目尻影左.描画0(are);
     			bod.目尻影右.描画0(are);

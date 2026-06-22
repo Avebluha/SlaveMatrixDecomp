@@ -1,18 +1,18 @@
-using System.Drawing;
 using _2DGAMELIB;
 using SlaveMatrix.GameClasses;
+using System.Drawing;
 
 namespace SlaveMatrix
 {
-    public class 紅潮 : Element
+    public class CrimsonSquirt : Element
     {
-    	public ShapePart X0Y0_紅潮0;
+    	public ShapePart X0Y0_CrimsonSquirt0;
 
-    	public ShapePart X0Y0_紅潮1;
+    	public ShapePart X0Y0_CrimsonSquirt1;
 
-    	public ShapePart X0Y0_紅潮右;
+    	public ShapePart X0Y0_CrimsonSquirtRight;
 
-    	public ShapePart X0Y0_紅潮左;
+    	public ShapePart X0Y0_CrimsonSquirtLeft;
 
     	public ShapePart X0Y0_紅潮線左;
 
@@ -26,13 +26,13 @@ namespace SlaveMatrix
 
     	public ShapePart X0Y0_紅潮線弱右;
 
-    	public ColorD 紅潮0CD;
+    	public ColorD CrimsonSquirt0CD;
 
-    	public ColorD 紅潮1CD;
+    	public ColorD CrimsonSquirt1CD;
 
-    	public ColorD 紅潮右CD;
+    	public ColorD CrimsonSquirtRightCD;
 
-    	public ColorD 紅潮左CD;
+    	public ColorD CrimsonSquirtLeftCD;
 
     	public ColorD 紅潮線左CD;
 
@@ -46,13 +46,13 @@ namespace SlaveMatrix
 
     	public ColorD 紅潮線弱右CD;
 
-    	public ColorP X0Y0_紅潮0CP;
+    	public ColorP X0Y0_CrimsonSquirt0CP;
 
-    	public ColorP X0Y0_紅潮1CP;
+    	public ColorP X0Y0_CrimsonSquirt1CP;
 
-    	public ColorP X0Y0_紅潮右CP;
+    	public ColorP X0Y0_CrimsonSquirtRightCP;
 
-    	public ColorP X0Y0_紅潮左CP;
+    	public ColorP X0Y0_CrimsonSquirtLeftCP;
 
     	public ColorP X0Y0_紅潮線左CP;
 
@@ -102,55 +102,55 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 紅潮0_表示
+    	public bool CrimsonSquirt0_表示
     	{
     		get
     		{
-    			return X0Y0_紅潮0.Dra;
+    			return X0Y0_CrimsonSquirt0.Dra;
     		}
     		set
     		{
-    			X0Y0_紅潮0.Dra = value;
-    			X0Y0_紅潮0.Hit = value;
+    			X0Y0_CrimsonSquirt0.Dra = value;
+    			X0Y0_CrimsonSquirt0.Hit = value;
     		}
     	}
 
-    	public bool 紅潮1_表示
+    	public bool CrimsonSquirt1_表示
     	{
     		get
     		{
-    			return X0Y0_紅潮1.Dra;
+    			return X0Y0_CrimsonSquirt1.Dra;
     		}
     		set
     		{
-    			X0Y0_紅潮1.Dra = value;
-    			X0Y0_紅潮1.Hit = value;
+    			X0Y0_CrimsonSquirt1.Dra = value;
+    			X0Y0_CrimsonSquirt1.Hit = value;
     		}
     	}
 
-    	public bool 紅潮右_表示
+    	public bool CrimsonSquirtRight_表示
     	{
     		get
     		{
-    			return X0Y0_紅潮右.Dra;
+    			return X0Y0_CrimsonSquirtRight.Dra;
     		}
     		set
     		{
-    			X0Y0_紅潮右.Dra = value;
-    			X0Y0_紅潮右.Hit = value;
+    			X0Y0_CrimsonSquirtRight.Dra = value;
+    			X0Y0_CrimsonSquirtRight.Hit = value;
     		}
     	}
 
-    	public bool 紅潮左_表示
+    	public bool CrimsonSquirtLeft_表示
     	{
     		get
     		{
-    			return X0Y0_紅潮左.Dra;
+    			return X0Y0_CrimsonSquirtLeft.Dra;
     		}
     		set
     		{
-    			X0Y0_紅潮左.Dra = value;
-    			X0Y0_紅潮左.Hit = value;
+    			X0Y0_CrimsonSquirtLeft.Dra = value;
+    			X0Y0_CrimsonSquirtLeft.Hit = value;
     		}
     	}
 
@@ -236,12 +236,12 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return 紅潮0_表示;
+    			return CrimsonSquirt0_表示;
     		}
     		set
     		{
-    			紅潮0_表示 = value;
-    			紅潮1_表示 = value;
+    			CrimsonSquirt0_表示 = value;
+    			CrimsonSquirt1_表示 = value;
     		}
     	}
 
@@ -249,12 +249,12 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return 紅潮右_表示;
+    			return CrimsonSquirtRight_表示;
     		}
     		set
     		{
-    			紅潮右_表示 = value;
-    			紅潮左_表示 = value;
+    			CrimsonSquirtRight_表示 = value;
+    			CrimsonSquirtLeft_表示 = value;
     		}
     	}
 
@@ -301,12 +301,12 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return 紅潮0CD.不透明度;
+    			return CrimsonSquirt0CD.不透明度;
     		}
     		set
     		{
-    			紅潮0CD.不透明度 = value;
-    			紅潮1CD.不透明度 = value;
+    			CrimsonSquirt0CD.不透明度 = value;
+    			CrimsonSquirt1CD.不透明度 = value;
     		}
     	}
 
@@ -314,12 +314,12 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return 紅潮右CD.不透明度;
+    			return CrimsonSquirtRightCD.不透明度;
     		}
     		set
     		{
-    			紅潮右CD.不透明度 = value;
-    			紅潮左CD.不透明度 = value;
+    			CrimsonSquirtRightCD.不透明度 = value;
+    			CrimsonSquirtLeftCD.不透明度 = value;
     		}
     	}
 
@@ -366,14 +366,14 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return 紅潮0_表示;
+    			return CrimsonSquirt0_表示;
     		}
     		set
     		{
-    			紅潮0_表示 = value;
-    			紅潮1_表示 = value;
-    			紅潮右_表示 = value;
-    			紅潮左_表示 = value;
+    			CrimsonSquirt0_表示 = value;
+    			CrimsonSquirt1_表示 = value;
+    			CrimsonSquirtRight_表示 = value;
+    			CrimsonSquirtLeft_表示 = value;
     			紅潮線左_表示 = value;
     			紅潮線右_表示 = value;
     			紅潮弱左_表示 = value;
@@ -387,14 +387,14 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return 紅潮0CD.不透明度;
+    			return CrimsonSquirt0CD.不透明度;
     		}
     		set
     		{
-    			紅潮0CD.不透明度 = value;
-    			紅潮1CD.不透明度 = value;
-    			紅潮右CD.不透明度 = value;
-    			紅潮左CD.不透明度 = value;
+    			CrimsonSquirt0CD.不透明度 = value;
+    			CrimsonSquirt1CD.不透明度 = value;
+    			CrimsonSquirtRightCD.不透明度 = value;
+    			CrimsonSquirtLeftCD.不透明度 = value;
     			紅潮線左CD.不透明度 = value;
     			紅潮線右CD.不透明度 = value;
     			紅潮弱左CD.不透明度 = value;
@@ -404,15 +404,15 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 紅潮(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 紅潮D e)
+    	public CrimsonSquirt(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, CrimsonSquirtD e)
     	{
     		ThisType = GetType();
-    		Body = new VariantGrid(GlobalState.胴体["紅潮"]);
+    		Body = new VariantGrid(GlobalState.胴体["CrimsonSquirt"]);
     		PartGroup partGroup = Body[0][0];
-    		X0Y0_紅潮0 = partGroup["紅潮0"].ToPar();
-    		X0Y0_紅潮1 = partGroup["紅潮1"].ToPar();
-    		X0Y0_紅潮右 = partGroup["紅潮右"].ToPar();
-    		X0Y0_紅潮左 = partGroup["紅潮左"].ToPar();
+    		X0Y0_CrimsonSquirt0 = partGroup["紅潮0"].ToPar();
+    		X0Y0_CrimsonSquirt1 = partGroup["紅潮1"].ToPar();
+    		X0Y0_CrimsonSquirtRight = partGroup["紅潮右"].ToPar();
+    		X0Y0_CrimsonSquirtLeft = partGroup["紅潮左"].ToPar();
     		X0Y0_紅潮線左 = partGroup["紅潮線左"].ToPar();
     		X0Y0_紅潮線右 = partGroup["紅潮線右"].ToPar();
     		X0Y0_紅潮弱左 = partGroup["紅潮弱左"].ToPar();
@@ -443,10 +443,10 @@ namespace SlaveMatrix
     		サイズ = e.サイズ;
     		サイズX = e.サイズX;
     		サイズY = e.サイズY;
-    		紅潮0_表示 = e.紅潮0_表示;
-    		紅潮1_表示 = e.紅潮1_表示;
-    		紅潮右_表示 = e.紅潮右_表示;
-    		紅潮左_表示 = e.紅潮左_表示;
+    		CrimsonSquirt0_表示 = e.CrimsonSquirt0_表示;
+    		CrimsonSquirt1_表示 = e.CrimsonSquirt1_表示;
+    		CrimsonSquirtRight_表示 = e.CrimsonSquirtRight_表示;
+    		CrimsonSquirtLeft_表示 = e.CrimsonSquirtLeft_表示;
     		紅潮線左_表示 = e.紅潮線左_表示;
     		紅潮線右_表示 = e.紅潮線右_表示;
     		紅潮弱左_表示 = e.紅潮弱左_表示;
@@ -467,10 +467,10 @@ namespace SlaveMatrix
     		}
     		base.配色指定 = 配色指定;
     		配色(体配色);
-    		X0Y0_紅潮0CP = new ColorP(X0Y0_紅潮0, 紅潮0CD, DisUnit, abj: true);
-    		X0Y0_紅潮1CP = new ColorP(X0Y0_紅潮1, 紅潮1CD, DisUnit, abj: true);
-    		X0Y0_紅潮右CP = new ColorP(X0Y0_紅潮右, 紅潮右CD, DisUnit, abj: true);
-    		X0Y0_紅潮左CP = new ColorP(X0Y0_紅潮左, 紅潮左CD, DisUnit, abj: true);
+    		X0Y0_CrimsonSquirt0CP = new ColorP(X0Y0_CrimsonSquirt0, CrimsonSquirt0CD, DisUnit, abj: true);
+    		X0Y0_CrimsonSquirt1CP = new ColorP(X0Y0_CrimsonSquirt1, CrimsonSquirt1CD, DisUnit, abj: true);
+    		X0Y0_CrimsonSquirtRightCP = new ColorP(X0Y0_CrimsonSquirtRight, CrimsonSquirtRightCD, DisUnit, abj: true);
+    		X0Y0_CrimsonSquirtLeftCP = new ColorP(X0Y0_CrimsonSquirtLeft, CrimsonSquirtLeftCD, DisUnit, abj: true);
     		X0Y0_紅潮線左CP = new ColorP(X0Y0_紅潮線左, 紅潮線左CD, DisUnit, abj: true);
     		X0Y0_紅潮線右CP = new ColorP(X0Y0_紅潮線右, 紅潮線右CD, DisUnit, abj: true);
     		X0Y0_紅潮弱左CP = new ColorP(X0Y0_紅潮弱左, 紅潮弱左CD, DisUnit, abj: true);
@@ -487,10 +487,10 @@ namespace SlaveMatrix
 
     	public override void 色更新()
     	{
-    		X0Y0_紅潮0CP.Update();
-    		X0Y0_紅潮1CP.Update();
-    		X0Y0_紅潮右CP.Update();
-    		X0Y0_紅潮左CP.Update();
+    		X0Y0_CrimsonSquirt0CP.Update();
+    		X0Y0_CrimsonSquirt1CP.Update();
+    		X0Y0_CrimsonSquirtRightCP.Update();
+    		X0Y0_CrimsonSquirtLeftCP.Update();
     		X0Y0_紅潮線左CP.Update();
     		X0Y0_紅潮線右CP.Update();
     		X0Y0_紅潮弱左CP.Update();
@@ -506,19 +506,19 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		Color Col = Color.FromArgb((int)((double)(int)体配色.紅潮.Col1.A * 0.7), 体配色.紅潮.Col1);
-    		紅潮0CD = new ColorD();
-    		紅潮0CD.線 = SlaveMatrix.ColorHelper.Empty;
-    		紅潮0CD.色 = new Color2(ref Col, ref SlaveMatrix.ColorHelper.Empty);
-    		紅潮1CD = new ColorD(ref SlaveMatrix.ColorHelper.Empty, ref 体配色.紅潮);
-    		紅潮右CD = new ColorD(ref SlaveMatrix.ColorHelper.Empty, ref 体配色.紅潮);
-    		紅潮左CD = new ColorD(ref SlaveMatrix.ColorHelper.Empty, ref 体配色.紅潮);
-    		紅潮線左CD = new ColorD(ref 体配色.紅潮線, ref 体配色.紅潮);
-    		紅潮線右CD = new ColorD(ref 体配色.紅潮線, ref 体配色.紅潮);
-    		紅潮弱左CD = new ColorD(ref SlaveMatrix.ColorHelper.Empty, ref 体配色.紅潮);
-    		紅潮弱右CD = new ColorD(ref SlaveMatrix.ColorHelper.Empty, ref 体配色.紅潮);
-    		紅潮線弱左CD = new ColorD(ref 体配色.紅潮線, ref 体配色.紅潮);
-    		紅潮線弱右CD = new ColorD(ref 体配色.紅潮線, ref 体配色.紅潮);
+    		Color Col = Color.FromArgb((int)((double)(int)体配色.CrimsonSquirt.Col1.A * 0.7), 体配色.CrimsonSquirt.Col1);
+    		CrimsonSquirt0CD = new ColorD();
+    		CrimsonSquirt0CD.線 = SlaveMatrix.ColorHelper.Empty;
+    		CrimsonSquirt0CD.色 = new Color2(ref Col, ref SlaveMatrix.ColorHelper.Empty);
+    		CrimsonSquirt1CD = new ColorD(ref SlaveMatrix.ColorHelper.Empty, ref 体配色.CrimsonSquirt);
+    		CrimsonSquirtRightCD = new ColorD(ref SlaveMatrix.ColorHelper.Empty, ref 体配色.CrimsonSquirt);
+    		CrimsonSquirtLeftCD = new ColorD(ref SlaveMatrix.ColorHelper.Empty, ref 体配色.CrimsonSquirt);
+    		紅潮線左CD = new ColorD(ref 体配色.紅潮線, ref 体配色.CrimsonSquirt);
+    		紅潮線右CD = new ColorD(ref 体配色.紅潮線, ref 体配色.CrimsonSquirt);
+    		紅潮弱左CD = new ColorD(ref SlaveMatrix.ColorHelper.Empty, ref 体配色.CrimsonSquirt);
+    		紅潮弱右CD = new ColorD(ref SlaveMatrix.ColorHelper.Empty, ref 体配色.CrimsonSquirt);
+    		紅潮線弱左CD = new ColorD(ref 体配色.紅潮線, ref 体配色.CrimsonSquirt);
+    		紅潮線弱右CD = new ColorD(ref 体配色.紅潮線, ref 体配色.CrimsonSquirt);
     	}
     }
 }
