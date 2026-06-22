@@ -697,7 +697,7 @@ namespace SlaveMatrix
     		else if (Is肛)
     		{
     			a = 対象.Element.角度C;
-    			調教UI.Set_肛門(対象.Element);
+    			調教UI.Set_Anus(対象.Element);
     			対象.Element.角度C = a;
     		}
     		else if (Is糸)
@@ -1017,7 +1017,7 @@ namespace SlaveMatrix
     					}
     					else if (Is肛)
     					{
-    						挿入中1(GameText.肛門);
+    						挿入中1(GameText.Anus);
     						肛挿抜 = y * Player.肛挿入度;
     						調教UI.Action(ContactType.Anal, ActionType.Insertion, CurrentState.Continue, アイテム情報, 対象.Element.Yi, 1, 機械: false, 射精: false);
     						Player.奴体力消費小();
@@ -1164,8 +1164,8 @@ namespace SlaveMatrix
     			}
     			else if (cd.c == ContactType.Anal && !調教UI.SubFocus.Any((挿入処理 e) => e.Is肛))
     			{
-    				調教UI.Set_肛門(対象.Element);
-    				挿入時(GameText.肛門);
+    				調教UI.Set_Anus(対象.Element);
+    				挿入時(GameText.Anus);
     			}
     			else if (cd.c == ContactType.Vagina && !調教UI.SubFocus.Any((挿入処理 e) => e.Is膣))
     			{
@@ -1352,7 +1352,7 @@ namespace SlaveMatrix
     					}
     					else if (Is肛)
     					{
-    						ip.SubInfoIm = GameText.肛門 + 挿入中0();
+    						ip.SubInfoIm = GameText.Anus + 挿入中0();
     					}
     					else if (Is膣)
     					{
@@ -1452,7 +1452,7 @@ namespace SlaveMatrix
     				}
     				else if (挿入箇所 == ContactType.Anal)
     				{
-    					ip.SubInfoIm = GameText.肛門 + 挿入中0();
+    					ip.SubInfoIm = GameText.Anus + 挿入中0();
     				}
     				else if (挿入箇所 == ContactType.Vagina)
     				{

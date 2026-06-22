@@ -72,7 +72,7 @@ namespace SlaveMatrix
 
     	public List<ElementData> VaginaOrigin_接続 = new List<ElementData>();
 
-    	public List<ElementData> 肛門_接続 = new List<ElementData>();
+    	public List<ElementData> Anus_接続 = new List<ElementData>();
 
     	public List<ElementData> 尾_接続 = new List<ElementData>();
 
@@ -122,9 +122,9 @@ namespace SlaveMatrix
 
     	public void 肛門接続(ElementData e)
     	{
-    		肛門_接続.Add(e);
+    		Anus_接続.Add(e);
     		e.Par = this;
-    		e.接続情報 = ConnectionInfo.四足腰_肛門_接続;
+    		e.接続情報 = ConnectionInfo.四足腰_Anus_接続;
     	}
 
     	public void 尾接続(ElementData e)

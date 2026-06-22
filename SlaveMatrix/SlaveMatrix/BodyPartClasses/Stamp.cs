@@ -95,7 +95,7 @@ namespace SlaveMatrix
 
     	public bool チェック1(Element e)
     	{
-    		if (e != null && !(e is 性器) && !(e is 肛門))
+    		if (e != null && !(e is 性器) && !(e is Anus))
     		{
     			return !(e is Neck);
     		}
@@ -104,7 +104,7 @@ namespace SlaveMatrix
 
     	public bool チェック2(Element e)
     	{
-    		if (e != null && !(e is 手_人) && !(e is 性器) && !(e is 肛門))
+    		if (e != null && !(e is 手_人) && !(e is 性器) && !(e is Anus))
     		{
     			return !(e is Neck);
     		}

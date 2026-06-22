@@ -457,7 +457,7 @@ namespace SlaveMatrix
 
     	public static string 口腔 => Trai[31];
 
-    	public static string 肛門 => Trai[32];
+    	public static string Anus => Trai[32];
 
     	public static string 膣腔 => Trai[33];
 

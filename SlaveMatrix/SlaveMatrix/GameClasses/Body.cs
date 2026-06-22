@@ -207,7 +207,7 @@ namespace SlaveMatrix
 
     	public キャップ1 キャップ1;
 
-    	public 肛門_人 肛門_人;
+    	public Anus_人 Anus_人;
 
     	public 肛門精液_人 肛門精液_人;
 
@@ -271,7 +271,7 @@ namespace SlaveMatrix
 
     	public PregnantBelly_獣 PregnantBelly_獣;
 
-    	public 肛門_獣 肛門_獣;
+    	public Anus_獣 Anus_獣;
 
     	public 肛門精液_獣 肛門精液_獣;
 
@@ -719,7 +719,7 @@ namespace SlaveMatrix
 
     	public 放尿 Urination;
 
-    	public 肛門 肛門;
+    	public Anus Anus;
 
     	public 肛門精液 AnalCum;
 
@@ -733,9 +733,9 @@ namespace SlaveMatrix
 
     	private double 子宮下がり_;
 
-    	private double 肛門y;
+    	private double Anusy;
 
-    	private double 肛門v;
+    	private double Anusv;
 
     	private double 肛門開き_;
 
@@ -1001,8 +1001,8 @@ namespace SlaveMatrix
     		get
     		{
     			性器.接続P();
-    			肛門.接続P();
-    			return (性器.位置 + 肛門.位置) * 0.5;
+    			Anus.接続P();
+    			return (性器.位置 + Anus.位置) * 0.5;
     		}
     	}
 
@@ -1069,8 +1069,8 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			肛門.接続PA();
-    			return 肛門.位置;
+    			Anus.接続PA();
+    			return Anus.位置;
     		}
     	}
 
@@ -1432,32 +1432,32 @@ namespace SlaveMatrix
     			double num3 = 2.0;
     			if (Is獣)
     			{
-    				肛門_獣.X0Y0_肛門1.SetSizeYBase(肛門y + num * 肛門開き_);
-    				肛門_獣.X0Y0_肛門1.SetSizeBase(肛門v + num2 * 肛門開き_);
-    				肛門_獣.X0Y0_肛門2.SetSizeBase(肛門v + num3 * 肛門開き_);
+    				Anus_獣.X0Y0_Anus1.SetSizeYBase(Anusy + num * 肛門開き_);
+    				Anus_獣.X0Y0_Anus1.SetSizeBase(Anusv + num2 * 肛門開き_);
+    				Anus_獣.X0Y0_Anus2.SetSizeBase(Anusv + num3 * 肛門開き_);
     			}
     			else
     			{
-    				肛門_人.X0Y0_肛門1.SetSizeYBase(肛門y + num * 肛門開き_);
-    				肛門_人.X0Y0_肛門1.SetSizeBase(肛門v + num2 * 肛門開き_);
-    				肛門_人.X0Y0_肛門2.SetSizeBase(肛門v + num3 * 肛門開き_);
+    				Anus_人.X0Y0_Anus1.SetSizeYBase(Anusy + num * 肛門開き_);
+    				Anus_人.X0Y0_Anus1.SetSizeBase(Anusv + num2 * 肛門開き_);
+    				Anus_人.X0Y0_Anus2.SetSizeBase(Anusv + num3 * 肛門開き_);
     			}
     		}
     	}
 
-    	public double 肛門C
+    	public double AnusC
     	{
     		set
     		{
     			if (Is獣)
     			{
-    				肛門_獣.X0Y0_肛門1.SetSizeCont(value);
-    				肛門_獣.X0Y0_肛門1.SetSizeCont(value);
+    				Anus_獣.X0Y0_Anus1.SetSizeCont(value);
+    				Anus_獣.X0Y0_Anus1.SetSizeCont(value);
     			}
     			else
     			{
-    				肛門_人.X0Y0_肛門1.SetSizeCont(value);
-    				肛門_人.X0Y0_肛門1.SetSizeCont(value);
+    				Anus_人.X0Y0_Anus1.SetSizeCont(value);
+    				Anus_人.X0Y0_Anus1.SetSizeCont(value);
     			}
     		}
     	}
@@ -1600,7 +1600,7 @@ namespace SlaveMatrix
     			{
     				item.SetPositionCont(DataConsts.Vec2DUnitY * (Waist.Yv * 0.001 + 0.001));
     			}
-    			肛門_人.Body.SetSizeYCont(0.65 + Waist.Yv * 0.35);
+    			Anus_人.Body.SetSizeYCont(0.65 + Waist.Yv * 0.35);
     			foreach (ShapePart item2 in 上着B_クロス.Body.EnumJoinRoot)
     			{
     				item2.SetPositionCont(DataConsts.Vec2DUnitY * (Waist.Yv * 0.003));
@@ -1630,7 +1630,7 @@ namespace SlaveMatrix
     			{
     				item.SetPositionCont(DataConsts.Vec2DUnitY * (Waist.Yv * 0.001 + 0.001));
     			}
-    			肛門_人.Body.SetSizeYCont(0.65 + Waist.Yv * 0.35);
+    			Anus_人.Body.SetSizeYCont(0.65 + Waist.Yv * 0.35);
     			foreach (ShapePart item2 in 上着B_クロス.Body.EnumJoinRoot)
     			{
     				item2.SetPositionCont(DataConsts.Vec2DUnitY * (Waist.Yv * 0.003));
@@ -1658,7 +1658,7 @@ namespace SlaveMatrix
     			{
     				item.SetPositionCont(DataConsts.Vec2DUnitY * (Waist_獣.Yv * 0.001 + 0.001));
     			}
-    			肛門_獣.Body.SetSizeYCont(0.65 + Waist_獣.Yv * 0.35);
+    			Anus_獣.Body.SetSizeYCont(0.65 + Waist_獣.Yv * 0.35);
     			腰振り_獣();
     		}
     	}
@@ -1678,7 +1678,7 @@ namespace SlaveMatrix
     			{
     				item.SetPositionCont(DataConsts.Vec2DUnitY * (Waist_獣.Yv * 0.001 + 0.001));
     			}
-    			肛門_獣.Body.SetSizeYCont(0.65 + Waist_獣.Yv * 0.35);
+    			Anus_獣.Body.SetSizeYCont(0.65 + Waist_獣.Yv * 0.35);
     			腰振り_獣();
     		}
     	}
@@ -3850,8 +3850,8 @@ namespace SlaveMatrix
     			WaistSkin_人.X0Y4_陰毛.Hit = true;
     			WaistSkin_人.X0Y4_陰毛_ハート.Hit = true;
     			WaistSkin_人.X0Y4_獣性_獣毛.Hit = true;
-    			肛門_人 = Waist.肛門_接続.GetEle<肛門_人>();
-    			肛門精液_人 = 肛門_人.肛門精液_接続.GetEle<肛門精液_人>();
+    			Anus_人 = Waist.Anus_接続.GetEle<Anus_人>();
+    			肛門精液_人 = Anus_人.肛門精液_接続.GetEle<肛門精液_人>();
     			肛門精液_人.SetHitFalse();
     			VaginaOrigin_人 = Waist.VaginaOrigin_接続.GetEle<VaginaOrigin_人>();
     			InternalSemen_人 = Waist.VaginaOrigin_接続.GetEle<InternalSemen_人>();
@@ -4511,9 +4511,9 @@ namespace SlaveMatrix
     					{
     						PregnantBelly_獣 = (PregnantBelly_獣)item22;
     					}
-    					else if (item22 is 肛門_獣)
+    					else if (item22 is Anus_獣)
     					{
-    						肛門_獣 = (肛門_獣)item22;
+    						Anus_獣 = (Anus_獣)item22;
     					}
     					else if (item22 is 肛門精液_獣)
     					{
@@ -4706,7 +4706,7 @@ namespace SlaveMatrix
     					}
     				}
     				Sort(from e in ele.EnumEle().Skip(1)
-    					where !bod.半身前接続.Contains(e) && !bod.半身中1接続.Contains(e) && !bod.半身後接続.Contains(e) && !(e is 四足脇) && e != bod.肛門_獣 && e != bod.肛門精液_獣 && e != bod.VaginaOrigin_獣 && e != bod.InternalSemen_獣 && e != bod.XRay_獣 && e != bod.性器_獣 && e != bod.性器精液_獣 && e != bod.飛沫_獣 && e != bod.潮吹_小_獣 && e != bod.潮吹_大_獣 && e != bod.放尿_獣 && e != bod.ピアス && e != bod.キャップ1
+    					where !bod.半身前接続.Contains(e) && !bod.半身中1接続.Contains(e) && !bod.半身後接続.Contains(e) && !(e is 四足脇) && e != bod.Anus_獣 && e != bod.肛門精液_獣 && e != bod.VaginaOrigin_獣 && e != bod.InternalSemen_獣 && e != bod.XRay_獣 && e != bod.性器_獣 && e != bod.性器精液_獣 && e != bod.飛沫_獣 && e != bod.潮吹_小_獣 && e != bod.潮吹_大_獣 && e != bod.放尿_獣 && e != bod.ピアス && e != bod.キャップ1
     					select e, 半身後接続);
     			}
     			else if (ele is 多足_蛸)
@@ -5297,7 +5297,7 @@ namespace SlaveMatrix
     			潮吹_小 = 潮吹_小_獣;
     			潮吹_大 = 潮吹_大_獣;
     			Urination = 放尿_獣;
-    			肛門 = 肛門_獣;
+    			Anus = Anus_獣;
     			AnalCum = 肛門精液_獣;
     			InternalSemen_獣.精液配色(GlobalState.GameData.配色);
     			InternalSemen_獣.精液濃度 = 0.0;
@@ -5322,8 +5322,8 @@ namespace SlaveMatrix
     			染み_獣.X0Y0_湯気_湯気右3_湯気2.SetPositionCont(positionCont3);
     			下着陰核.X0Y0_陰核.SetSizeBase(性器_獣.X0Y0_陰核.GetSizeBase());
     			csb = 性器_獣.X0Y0_陰核.GetSizeBase();
-    			asb1 = 肛門_獣.X0Y0_肛門2.GetSizeBase();
-    			asb2 = 肛門_獣.X0Y0_肛門3.GetSizeBase();
+    			asb1 = Anus_獣.X0Y0_Anus2.GetSizeBase();
+    			asb2 = Anus_獣.X0Y0_Anus3.GetSizeBase();
     			染み_獣.X0Y0_汗.SetPositionCont(positionCont);
     			染み_獣.X0Y0_潮1.SetPositionCont(positionCont2);
     		}
@@ -5340,7 +5340,7 @@ namespace SlaveMatrix
     			潮吹_小 = 潮吹_小_人;
     			潮吹_大 = 潮吹_大_人;
     			Urination = 放尿_人;
-    			肛門 = 肛門_人;
+    			Anus = Anus_人;
     			AnalCum = 肛門精液_人;
     			InternalSemen_人.精液配色(GlobalState.GameData.配色);
     			InternalSemen_人.精液濃度 = 0.0;
@@ -5357,8 +5357,8 @@ namespace SlaveMatrix
     			染み_人.X0Y0_湯気_湯気右3_湯気2.SetPositionCont(positionCont4);
     			下着陰核.X0Y0_陰核.SetSizeBase(性器_人.X0Y0_陰核.GetSizeBase());
     			csb = 性器_人.X0Y0_陰核.GetSizeBase();
-    			asb1 = 肛門_人.X0Y0_肛門2.GetSizeBase();
-    			asb2 = 肛門_人.X0Y0_肛門3.GetSizeBase();
+    			asb1 = Anus_人.X0Y0_Anus2.GetSizeBase();
+    			asb2 = Anus_人.X0Y0_Anus3.GetSizeBase();
     			PregnantBelly_人.X0Y0_ハイライト.Dra = false;
     			PregnantBelly_人.X0Y0_ハイライト左1.Dra = false;
     			PregnantBelly_人.X0Y0_ハイライト左2.Dra = false;
@@ -5370,8 +5370,8 @@ namespace SlaveMatrix
     			PregnantBelly_人.X0Y1_ハイライト右1.Dra = false;
     			PregnantBelly_人.X0Y1_ハイライト右2.Dra = false;
     		}
-    		肛門y = 肛門.尺度YB;
-    		肛門v = 肛門.尺度B;
+    		Anusy = Anus.尺度YB;
+    		Anusv = Anus.尺度B;
     		口i = 0;
     		MouthCum.精液配色(GlobalState.GameData.配色);
     		頬濃度 = 0.3;
@@ -5400,7 +5400,7 @@ namespace SlaveMatrix
     		体紅潮 = 0.0;
     		子宮下がり = 0.0;
     		肛門開き = 0.0;
-    		肛門C = 1.0;
+    		AnusC = 1.0;
     		膣腔C = 1.0;
     		XRay_表示 = false;
     		if (Is粘 && Waist.腿左_接続 != null)
@@ -5893,7 +5893,7 @@ namespace SlaveMatrix
     				{
     					bod.EI半中2.描画(are);
     				}
-    				bod.肛門_人.描画0(are);
+    				bod.Anus_人.描画0(are);
     				bod.肛門精液_人.描画0(are);
     				if (bod.cb1)
     				{
@@ -6312,7 +6312,7 @@ namespace SlaveMatrix
     				{
     					bod.目隠帯.描画0(are);
     				}
-    				bod.肛門_人.描画0(are);
+    				bod.Anus_人.描画0(are);
     				bod.肛門精液_人.描画0(are);
     				if (bod.cb1)
     				{
@@ -6743,7 +6743,7 @@ namespace SlaveMatrix
     				{
     					bod.EI腕前.描画(are);
     				}
-    				bod.肛門_獣.描画0(are);
+    				bod.Anus_獣.描画0(are);
     				bod.肛門精液_獣.描画0(are);
     				if (bod.cb1)
     				{
@@ -7173,7 +7173,7 @@ namespace SlaveMatrix
     				{
     					bod.EI腕前.描画(are);
     				}
-    				bod.肛門_人.描画0(are);
+    				bod.Anus_人.描画0(are);
     				bod.肛門精液_人.描画0(are);
     				if (bod.cb1)
     				{
@@ -7597,7 +7597,7 @@ namespace SlaveMatrix
     				{
     					bod.EI半中1.描画(are);
     				}
-    				bod.肛門_人.描画0(are);
+    				bod.Anus_人.描画0(are);
     				bod.肛門精液_人.描画0(are);
     				if (bod.cb1)
     				{
@@ -8016,7 +8016,7 @@ namespace SlaveMatrix
     				{
     					bod.EI腕前.描画(are);
     				}
-    				bod.肛門_人.描画0(are);
+    				bod.Anus_人.描画0(are);
     				bod.肛門精液_人.描画0(are);
     				if (!bod.Is下着B)
     				{
@@ -8330,7 +8330,7 @@ namespace SlaveMatrix
     				bod.Waist.描画1(are);
     				if (!GlobalState.GameData.XRay)
     				{
-    					bod.肛門_人.描画0(are);
+    					bod.Anus_人.描画0(are);
     					bod.肛門精液_人.描画0(are);
     					if (bod.cb1)
     					{
@@ -8474,7 +8474,7 @@ namespace SlaveMatrix
     				}
     				if (GlobalState.GameData.XRay)
     				{
-    					bod.肛門_人.描画0(are);
+    					bod.Anus_人.描画0(are);
     					bod.肛門精液_人.描画0(are);
     					if (bod.cb1)
     					{
@@ -8904,7 +8904,7 @@ namespace SlaveMatrix
     			{
     				bod.EI腿.描画(are);
     			}
-    			bod.肛門_人.描画0(are);
+    			bod.Anus_人.描画0(are);
     			bod.肛門精液_人.描画0(are);
     			if (bod.cb1)
     			{
@@ -9178,10 +9178,10 @@ namespace SlaveMatrix
     			性器_獣.X0Y4_陰核.SetSizeBase(csb + num);
     			性器_獣.小陰唇CD.不透明度 = Cha.CharacterData.素性器濃度 + Cha.CharacterData.最性器濃度 * Cha.CharacterData.現性器;
     			性器_獣.性器基CD.不透明度 = Cha.CharacterData.素性器濃度 + Cha.CharacterData.最性器濃度 * Cha.CharacterData.現性器;
-    			肛門_獣.肛門3CD.不透明度 = Cha.CharacterData.素肛門濃度 + Cha.CharacterData.最肛門濃度 * Cha.CharacterData.現肛門;
+    			Anus_獣.Anus3CD.不透明度 = Cha.CharacterData.素肛門濃度 + Cha.CharacterData.最肛門濃度 * Cha.CharacterData.現肛門;
     			num = 0.3 * Cha.CharacterData.現肛門;
-    			肛門_獣.X0Y0_肛門2.SetSizeBase(asb1 + num);
-    			肛門_獣.X0Y0_肛門3.SetSizeBase(asb2 + num);
+    			Anus_獣.X0Y0_Anus2.SetSizeBase(asb1 + num);
+    			Anus_獣.X0Y0_Anus3.SetSizeBase(asb2 + num);
     		}
     		else
     		{
@@ -9192,10 +9192,10 @@ namespace SlaveMatrix
     			性器_人.X0Y4_陰核.SetSizeBase(csb + num);
     			性器_人.小陰唇CD.不透明度 = Cha.CharacterData.素性器濃度 + Cha.CharacterData.最性器濃度 * Cha.CharacterData.現性器;
     			性器_人.性器基CD.不透明度 = Cha.CharacterData.素性器濃度 + Cha.CharacterData.最性器濃度 * Cha.CharacterData.現性器;
-    			肛門_人.肛門3CD.不透明度 = Cha.CharacterData.素肛門濃度 + Cha.CharacterData.最肛門濃度 * Cha.CharacterData.現肛門;
+    			Anus_人.Anus3CD.不透明度 = Cha.CharacterData.素肛門濃度 + Cha.CharacterData.最肛門濃度 * Cha.CharacterData.現肛門;
     			num = 0.3 * Cha.CharacterData.現肛門;
-    			肛門_人.X0Y0_肛門2.SetSizeBase(asb1 + num);
-    			肛門_人.X0Y0_肛門3.SetSizeBase(asb2 + num);
+    			Anus_人.X0Y0_Anus2.SetSizeBase(asb1 + num);
+    			Anus_人.X0Y0_Anus3.SetSizeBase(asb2 + num);
     		}
     		WaistSkin_人.陰毛CD.不透明度 = Cha.CharacterData.現陰毛 * Cha.CharacterData.最陰毛濃度;
     		WaistSkin_人.獣性_獣毛CD.不透明度 = Cha.CharacterData.現陰毛;

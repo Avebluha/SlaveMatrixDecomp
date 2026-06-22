@@ -4,25 +4,25 @@ using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
-    public class 肛門_獣 : 肛門
+    public class Anus_人 : Anus
     {
-    	public ShapePart X0Y0_肛門3;
+    	public ShapePart X0Y0_Anus3;
 
-    	public ShapePart X0Y0_肛門2;
+    	public ShapePart X0Y0_Anus2;
 
-    	public ShapePart X0Y0_肛門1;
+    	public ShapePart X0Y0_Anus1;
 
-    	public ColorD 肛門3CD;
+    	public ColorD Anus3CD;
 
-    	public ColorD 肛門2CD;
+    	public ColorD Anus2CD;
 
-    	public ColorD 肛門1CD;
+    	public ColorD Anus1CD;
 
-    	public ColorP X0Y0_肛門3CP;
+    	public ColorP X0Y0_Anus3CP;
 
-    	public ColorP X0Y0_肛門2CP;
+    	public ColorP X0Y0_Anus2CP;
 
-    	public ColorP X0Y0_肛門1CP;
+    	public ColorP X0Y0_Anus1CP;
 
     	public Element[] 肛門精液_接続;
 
@@ -62,42 +62,42 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool 肛門3_表示
+    	public bool Anus3_表示
     	{
     		get
     		{
-    			return X0Y0_肛門3.Dra;
+    			return X0Y0_Anus3.Dra;
     		}
     		set
     		{
-    			X0Y0_肛門3.Dra = value;
-    			X0Y0_肛門3.Hit = value;
+    			X0Y0_Anus3.Dra = value;
+    			X0Y0_Anus3.Hit = value;
     		}
     	}
 
-    	public bool 肛門2_表示
+    	public bool Anus2_表示
     	{
     		get
     		{
-    			return X0Y0_肛門2.Dra;
+    			return X0Y0_Anus2.Dra;
     		}
     		set
     		{
-    			X0Y0_肛門2.Dra = value;
-    			X0Y0_肛門2.Hit = value;
+    			X0Y0_Anus2.Dra = value;
+    			X0Y0_Anus2.Hit = value;
     		}
     	}
 
-    	public bool 肛門1_表示
+    	public bool Anus1_表示
     	{
     		get
     		{
-    			return X0Y0_肛門1.Dra;
+    			return X0Y0_Anus1.Dra;
     		}
     		set
     		{
-    			X0Y0_肛門1.Dra = value;
-    			X0Y0_肛門1.Hit = value;
+    			X0Y0_Anus1.Dra = value;
+    			X0Y0_Anus1.Hit = value;
     		}
     	}
 
@@ -105,13 +105,13 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return 肛門3_表示;
+    			return Anus3_表示;
     		}
     		set
     		{
-    			肛門3_表示 = value;
-    			肛門2_表示 = value;
-    			肛門1_表示 = value;
+    			Anus3_表示 = value;
+    			Anus2_表示 = value;
+    			Anus1_表示 = value;
     		}
     	}
 
@@ -119,27 +119,27 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return 肛門3CD.不透明度;
+    			return Anus3CD.不透明度;
     		}
     		set
     		{
-    			肛門3CD.不透明度 = value;
-    			肛門2CD.不透明度 = value;
-    			肛門1CD.不透明度 = value;
+    			Anus3CD.不透明度 = value;
+    			Anus2CD.不透明度 = value;
+    			Anus1CD.不透明度 = value;
     		}
     	}
 
-    	public JointS 肛門精液_接続点 => new JointS(Body, X0Y0_肛門2, 0);
+    	public JointS 肛門精液_接続点 => new JointS(Body, X0Y0_Anus2, 0);
 
-    	public 肛門_獣(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 肛門_獣D e)
+    	public Anus_人(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, Anus_人D e)
     	{
-    		肛門_獣 肛門_獣2 = this;
+    		Anus_人 Anus_人2 = this;
     		ThisType = GetType();
-    		Body = new VariantGrid(GlobalState.半身["四足肛門"]);
+    		Body = new VariantGrid(GlobalState.胴体["Anus"]);
     		PartGroup partGroup = Body[0][0];
-    		X0Y0_肛門3 = partGroup["肛門3"].ToPar();
-    		X0Y0_肛門2 = partGroup["肛門2"].ToPar();
-    		X0Y0_肛門1 = partGroup["肛門1"].ToPar();
+    		X0Y0_Anus3 = partGroup["肛門3"].ToPar();
+    		X0Y0_Anus2 = partGroup["肛門2"].ToPar();
+    		X0Y0_Anus1 = partGroup["肛門1"].ToPar();
     		Body.SetJoints();
     		接続根 = new JointD(Body);
     		右 = e.右;
@@ -164,9 +164,9 @@ namespace SlaveMatrix
     		サイズ = e.サイズ;
     		サイズX = e.サイズX;
     		サイズY = e.サイズY;
-    		肛門3_表示 = e.肛門3_表示;
-    		肛門2_表示 = e.肛門2_表示;
-    		肛門1_表示 = e.肛門1_表示;
+    		Anus3_表示 = e.Anus3_表示;
+    		Anus2_表示 = e.Anus2_表示;
+    		Anus1_表示 = e.Anus1_表示;
     		欠損 = e.欠損;
     		筋肉 = e.筋肉;
     		拘束 = e.拘束;
@@ -180,25 +180,25 @@ namespace SlaveMatrix
     			肛門精液_接続 = e.肛門精液_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
-    				f.Par = 肛門_獣2;
-    				f.ConnectionType = ConnectionInfo.肛門_獣_肛門精液_接続;
-    				f.接続(肛門_獣2.肛門精液_接続点);
+    				f.Par = Anus_人2;
+    				f.ConnectionType = ConnectionInfo.Anus_人_肛門精液_接続;
+    				f.接続(Anus_人2.肛門精液_接続点);
     				return f;
     			}).ToArray();
     		}
     		base.配色指定 = 配色指定;
     		配色(体配色);
-    		X0Y0_肛門3CP = new ColorP(X0Y0_肛門3, 肛門3CD, DisUnit, abj: true);
-    		X0Y0_肛門2CP = new ColorP(X0Y0_肛門2, 肛門2CD, DisUnit, abj: true);
-    		X0Y0_肛門1CP = new ColorP(X0Y0_肛門1, 肛門1CD, DisUnit, abj: true);
+    		X0Y0_Anus3CP = new ColorP(X0Y0_Anus3, Anus3CD, DisUnit, abj: true);
+    		X0Y0_Anus2CP = new ColorP(X0Y0_Anus2, Anus2CD, DisUnit, abj: true);
+    		X0Y0_Anus1CP = new ColorP(X0Y0_Anus1, Anus1CD, DisUnit, abj: true);
     		Intensity = e.濃度;
     	}
 
     	public override void 色更新()
     	{
-    		X0Y0_肛門3CP.Update();
-    		X0Y0_肛門2CP.Update();
-    		X0Y0_肛門1CP.Update();
+    		X0Y0_Anus3CP.Update();
+    		X0Y0_Anus2CP.Update();
+    		X0Y0_Anus1CP.Update();
     	}
 
     	private void 配色(BodyColorSet 体配色)
@@ -208,10 +208,9 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		ColorHelper.Alpha(ref 体配色.粘膜, 180, out var ret);
-    		肛門3CD = new ColorD(ref ColorHelper.Empty, ref ret);
-    		肛門2CD = new ColorD(ref 体配色.粘膜線, ref 肛門3CD.c2);
-    		肛門1CD = new ColorD(ref 体配色.粘膜線, ref 体配色.粘膜穴);
+    		Anus3CD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
+    		Anus2CD = new ColorD(ref 体配色.粘膜線, ref 体配色.粘膜);
+    		Anus1CD = new ColorD(ref 体配色.粘膜線, ref 体配色.粘膜穴);
     	}
     }
 }

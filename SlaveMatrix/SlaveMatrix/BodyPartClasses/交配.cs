@@ -1856,7 +1856,7 @@ namespace SlaveMatrix
     		Waist.膣基接続(new InternalSemen_人D());
     		Waist.膣基接続(new XRay_人D());
     		Waist.膣基接続(Uni.性器());
-    		Waist.肛門接続(Uni.肛門());
+    		Waist.肛門接続(Uni.Anus());
     		Waist.肌接続(Uni.PregnantBelly());
     		WaistSkinD WaistSkin;
     		Waist.肌接続(WaistSkin = Mix<WaistSkinD>(母方, 父方, i, 原種モード));
@@ -2525,7 +2525,7 @@ namespace SlaveMatrix
     					{
     						e.表示 = false;
     					});
-    					Waist.肛門_接続.SetEleD(delegate(肛門_人D e)
+    					Waist.Anus_接続.SetEleD(delegate(Anus_人D e)
     					{
     						e.表示 = false;
     					});

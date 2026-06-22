@@ -878,10 +878,10 @@ namespace SlaveMatrix
     		t.位置B = shapePart.GetPosition();
     	}
 
-    	public void Set_肛門(Element t)
+    	public void Set_Anus(Element t)
     	{
-    		Bod.肛門.接続PA();
-    		t.位置B = Bod.肛門.位置;
+    		Bod.Anus.接続PA();
+    		t.位置B = Bod.Anus.位置;
     	}
 
     	public void Set_出糸(Element t)

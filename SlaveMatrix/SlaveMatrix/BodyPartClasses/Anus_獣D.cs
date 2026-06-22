@@ -6,17 +6,17 @@ using SlaveMatrix.GameClasses;
 namespace SlaveMatrix
 {
     [Serializable]
-    public class 肛門_獣D : 肛門D
+    public class Anus_獣D : AnusD
     {
-    	public bool 肛門3_表示 = true;
+    	public bool Anus3_表示 = true;
 
-    	public bool 肛門2_表示 = true;
+    	public bool Anus2_表示 = true;
 
-    	public bool 肛門1_表示 = true;
+    	public bool Anus1_表示 = true;
 
     	public List<ElementData> 肛門精液_接続 = new List<ElementData>();
 
-    	public 肛門_獣D()
+    	public Anus_獣D()
     	{
     		ThisType = GetType();
     	}
@@ -25,12 +25,12 @@ namespace SlaveMatrix
     	{
     		肛門精液_接続.Add(e);
     		e.Par = this;
-    		e.接続情報 = ConnectionInfo.肛門_獣_肛門精液_接続;
+    		e.接続情報 = ConnectionInfo.Anus_獣_肛門精液_接続;
     	}
 
     	public override Element GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
     	{
-    		return new 肛門_獣(DisUnit, 配色指定, 体配色, Med, this);
+    		return new Anus_獣(DisUnit, 配色指定, 体配色, Med, this);
     	}
     }
 }

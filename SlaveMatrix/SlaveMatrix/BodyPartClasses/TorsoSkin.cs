@@ -3,7 +3,7 @@ using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
-    public class 胴肌 : Element
+    public class TorsoSkin : Element
     {
     	public ShapePart X0Y0_植タトゥ_タトゥ花左;
 
@@ -189,10 +189,10 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 胴肌(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 胴肌D e)
+    	public TorsoSkin(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, TorsoSkinD e)
     	{
     		ThisType = GetType();
-    		Body = new VariantGrid(GlobalState.胴体["胴肌"]);
+    		Body = new VariantGrid(GlobalState.胴体["TorsoSkin"]);
     		PartGroup partGroup = Body[0][0]["植タトゥ"].ToPars();
     		X0Y0_植タトゥ_タトゥ花左 = partGroup["タトゥ花左"].ToPar();
     		X0Y0_植タトゥ_タトゥ花右 = partGroup["タトゥ花右"].ToPar();

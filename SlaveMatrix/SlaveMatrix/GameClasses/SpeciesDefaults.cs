@@ -416,7 +416,7 @@ namespace SlaveMatrix
     		四足腰D2.腿右接続(腿_蹄D2.Get逆());
     		四足腰D2.尾接続(new 尾_牛D());
     		obj.EnumEleD().SetValuesD<性器_人D>("表示", false);
-    		obj.EnumEleD().SetValuesD<肛門_人D>("表示", false);
+    		obj.EnumEleD().SetValuesD<Anus_人D>("表示", false);
     		obj.EnumEleD().SetValuesD<WaistSkinD>("獣性", true);
     		四足腰D2.EnumEleD().SetValuesD<WaistSkinD>("獣性", false);
     		obj.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
@@ -482,7 +482,7 @@ namespace SlaveMatrix
     			WaistD2.EnumEleD().SetValuesD<HeadD>("馬", Rng.XS.NextBool());
     		}
     		WaistD2.EnumEleD().SetValuesD<性器_人D>("表示", false);
-    		WaistD2.EnumEleD().SetValuesD<肛門_人D>("表示", false);
+    		WaistD2.EnumEleD().SetValuesD<Anus_人D>("表示", false);
     		WaistD2.EnumEleD().SetValuesD<WaistSkinD>("獣性", true);
     		四足腰D2.EnumEleD().SetValuesD<WaistSkinD>("獣性", false);
     		WaistD2.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
@@ -551,7 +551,7 @@ namespace SlaveMatrix
     			WaistD2.EnumEleD().SetValuesD<四足脇D>("配色指定", 配色指定.H0);
     		}
     		WaistD2.EnumEleD().SetValuesD<性器_人D>("表示", false);
-    		WaistD2.EnumEleD().SetValuesD<肛門_人D>("表示", false);
+    		WaistD2.EnumEleD().SetValuesD<Anus_人D>("表示", false);
     		WaistD2.EnumEleD().SetValuesD<WaistSkinD>("獣性", true);
     		四足腰D2.EnumEleD().SetValuesD<WaistSkinD>("獣性", false);
     		WaistD2.EnumEleD().SetValuesD("バスト", 1.0);
@@ -623,7 +623,7 @@ namespace SlaveMatrix
     		WaistD2.EnumEleD().SetValuesD("胸毛", true);
     		WaistD2.EnumEleD().SetValuesD<WaistSkinD>("獣毛", true);
     		WaistD2.EnumEleD().SetValuesD<性器_人D>("表示", false);
-    		WaistD2.EnumEleD().SetValuesD<肛門_人D>("表示", false);
+    		WaistD2.EnumEleD().SetValuesD<Anus_人D>("表示", false);
     		WaistD2.EnumEleD().SetValuesD<双目D>("蛸目", Rng.XS.NextBool());
     		WaistD2.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
     		WaistD2.EnumEleD().SetValuesD("身長", 頭D2.目高);
@@ -2012,7 +2012,7 @@ namespace SlaveMatrix
     		WaistD2.EnumEleD().SetValuesD<双目D>("猫目", true);
     		WaistD2.EnumEleD().SetValuesD<口_通常D>("牙", true);
     		WaistD2.EnumEleD().SetValuesD<性器_人D>("表示", false);
-    		WaistD2.EnumEleD().SetValuesD<肛門_人D>("表示", false);
+    		WaistD2.EnumEleD().SetValuesD<Anus_人D>("表示", false);
     		WaistD2.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
     		WaistD2.EnumEleD().SetValuesD("身長", 頭D2.目高);
     		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + Rng.XS.NextDouble(0.8));
@@ -2105,7 +2105,7 @@ namespace SlaveMatrix
     		WaistD2.EnumEleD().SetValuesD<双目D>("猫目", true);
     		WaistD2.EnumEleD().SetValuesD<口_通常D>("牙", true);
     		WaistD2.EnumEleD().SetValuesD<性器_人D>("表示", false);
-    		WaistD2.EnumEleD().SetValuesD<肛門_人D>("表示", false);
+    		WaistD2.EnumEleD().SetValuesD<Anus_人D>("表示", false);
     		WaistD2.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
     		WaistD2.EnumEleD().SetValuesD("身長", 頭D2.目高);
     		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + Rng.XS.NextDouble(0.8));
@@ -2925,7 +2925,7 @@ namespace SlaveMatrix
     			四足腰D2.尾接続(new 尾_鳥D());
     			四足胴D2.SetValuesD("獣毛", true);
     			WaistD2.EnumEleD().SetValuesD<性器_人D>("表示", false);
-    			WaistD2.EnumEleD().SetValuesD<肛門_人D>("表示", false);
+    			WaistD2.EnumEleD().SetValuesD<Anus_人D>("表示", false);
     			break;
     		}
     		}
@@ -2984,7 +2984,7 @@ namespace SlaveMatrix
     		四足腰D2.尾接続(new 尾_馬D());
     		obj.EnumEleD().SetValuesD<HeadD>("馬", Rng.XS.NextBool());
     		obj.EnumEleD().SetValuesD<性器_人D>("表示", false);
-    		obj.EnumEleD().SetValuesD<肛門_人D>("表示", false);
+    		obj.EnumEleD().SetValuesD<Anus_人D>("表示", false);
     		obj.EnumEleD().SetValuesD<WaistSkinD>("獣性", true);
     		四足腰D2.EnumEleD().SetValuesD<WaistSkinD>("獣性", false);
     		obj.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
@@ -3052,7 +3052,7 @@ namespace SlaveMatrix
     		obj.EnumEleD().SetValuesD<ChestD>("獣毛", true);
     		obj.EnumEleD().SetValuesD<WaistD>("獣毛", true);
     		obj.EnumEleD().SetValuesD<性器_人D>("表示", false);
-    		obj.EnumEleD().SetValuesD<肛門_人D>("表示", false);
+    		obj.EnumEleD().SetValuesD<Anus_人D>("表示", false);
     		obj.EnumEleD().SetValuesD<WaistSkinD>("獣性", true);
     		obj.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
     		obj.EnumEleD().SetValuesD("身長", 頭D2.目高);
@@ -3124,7 +3124,7 @@ namespace SlaveMatrix
     		四足腰D2.尾接続(new 尾_馬D());
     		obj.EnumEleD().SetValuesD<HeadD>("馬", Rng.XS.NextBool());
     		obj.EnumEleD().SetValuesD<性器_人D>("表示", false);
-    		obj.EnumEleD().SetValuesD<肛門_人D>("表示", false);
+    		obj.EnumEleD().SetValuesD<Anus_人D>("表示", false);
     		obj.EnumEleD().SetValuesD<WaistSkinD>("獣性", true);
     		四足腰D2.EnumEleD().SetValuesD<WaistSkinD>("獣性", false);
     		obj.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
@@ -3187,7 +3187,7 @@ namespace SlaveMatrix
     		obj.EnumEleD().SetValuesD<HeadD>("馬", Rng.XS.NextBool());
     		ChestD2.肌_接続.SetValuesD("胸毛", true);
     		obj.EnumEleD().SetValuesD<性器_人D>("表示", false);
-    		obj.EnumEleD().SetValuesD<肛門_人D>("表示", false);
+    		obj.EnumEleD().SetValuesD<Anus_人D>("表示", false);
     		obj.EnumEleD().SetValuesD<WaistSkinD>("獣性", true);
     		四足腰D2.EnumEleD().SetValuesD<WaistSkinD>("獣性", false);
     		obj.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
@@ -3259,7 +3259,7 @@ namespace SlaveMatrix
     		四足腰D2.尾接続(new 尾_馬D());
     		obj.EnumEleD().SetValuesD<HeadD>("馬", Rng.XS.NextBool());
     		obj.EnumEleD().SetValuesD<性器_人D>("表示", false);
-    		obj.EnumEleD().SetValuesD<肛門_人D>("表示", false);
+    		obj.EnumEleD().SetValuesD<Anus_人D>("表示", false);
     		obj.EnumEleD().SetValuesD<WaistSkinD>("獣性", true);
     		四足腰D2.EnumEleD().SetValuesD<WaistSkinD>("獣性", false);
     		obj.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
@@ -3334,7 +3334,7 @@ namespace SlaveMatrix
     		obj.EnumEleD().SetValuesD<WaistSkinD>("獣毛", true);
     		obj.EnumEleD().SetValuesD<胸毛D>("表示", true);
     		obj.EnumEleD().SetValuesD<性器_人D>("表示", false);
-    		obj.EnumEleD().SetValuesD<肛門_人D>("表示", false);
+    		obj.EnumEleD().SetValuesD<Anus_人D>("表示", false);
     		obj.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
     		obj.EnumEleD().SetValuesD("身長", 頭D2.目高);
     		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + Rng.XS.NextDouble(0.8));
@@ -3410,7 +3410,7 @@ namespace SlaveMatrix
     		obj.EnumEleD().SetValuesD<WaistSkinD>("獣毛", true);
     		obj.EnumEleD().SetValuesD<胸毛D>("表示", true);
     		obj.EnumEleD().SetValuesD<性器_人D>("表示", false);
-    		obj.EnumEleD().SetValuesD<肛門_人D>("表示", false);
+    		obj.EnumEleD().SetValuesD<Anus_人D>("表示", false);
     		四足胴D2.SetValuesD("獣性", false);
     		四足腰D2.EnumEleD().SetValuesD<WaistSkinD>("獣性", false);
     		obj.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
@@ -3483,7 +3483,7 @@ namespace SlaveMatrix
     		WaistD2.EnumEleD().SetValuesD<頬肌D>("髭", 頭D2.鼻_接続.IsEleD<鼻_獣D>());
     		WaistD2.EnumEleD().SetValuesD<口_通常D>("牙", true);
     		WaistD2.EnumEleD().SetValuesD<性器_人D>("表示", false);
-    		WaistD2.EnumEleD().SetValuesD<肛門_人D>("表示", false);
+    		WaistD2.EnumEleD().SetValuesD<Anus_人D>("表示", false);
     		WaistD2.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
     		WaistD2.EnumEleD().SetValuesD("身長", 頭D2.目高);
     		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + Rng.XS.NextDouble(0.8));
@@ -3591,7 +3591,7 @@ namespace SlaveMatrix
     			四足胴D2.SetValuesD("獣毛", true);
     			四足胸D2.肌_接続.SetValuesD<胸毛D>("表示", true);
     			WaistD2.EnumEleD().SetValuesD<性器_人D>("表示", false);
-    			WaistD2.EnumEleD().SetValuesD<肛門_人D>("表示", false);
+    			WaistD2.EnumEleD().SetValuesD<Anus_人D>("表示", false);
     		}
     		WaistD2.EnumEleD().SetValuesD<口_通常D>("牙", true);
     		WaistD2.EnumEleD().SetValuesD<WaistSkinD>("獣性", true);
@@ -3659,7 +3659,7 @@ namespace SlaveMatrix
     		obj.EnumEleD().SetValuesD<頬肌D>("髭", 頭D2.鼻_接続.IsEleD<鼻_獣D>());
     		obj.EnumEleD().SetValuesD<口_通常D>("牙", true);
     		obj.EnumEleD().SetValuesD<性器_人D>("表示", false);
-    		obj.EnumEleD().SetValuesD<肛門_人D>("表示", false);
+    		obj.EnumEleD().SetValuesD<Anus_人D>("表示", false);
     		obj.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
     		obj.EnumEleD().SetValuesD("身長", 頭D2.目高);
     		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + Rng.XS.NextDouble(0.8));
@@ -3735,7 +3735,7 @@ namespace SlaveMatrix
     		WaistD2.EnumEleD().SetValuesD<頬肌D>("髭", 頭D2.鼻_接続.IsEleD<鼻_獣D>());
     		WaistD2.EnumEleD().SetValuesD<口_通常D>("牙", true);
     		WaistD2.EnumEleD().SetValuesD<性器_人D>("表示", false);
-    		WaistD2.EnumEleD().SetValuesD<肛門_人D>("表示", false);
+    		WaistD2.EnumEleD().SetValuesD<Anus_人D>("表示", false);
     		WaistD2.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
     		WaistD2.EnumEleD().SetValuesD("身長", 頭D2.目高);
     		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + Rng.XS.NextDouble(0.8));
@@ -3799,7 +3799,7 @@ namespace SlaveMatrix
     		obj.EnumEleD().SetValuesD<頬肌D>("髭", 頭D2.鼻_接続.IsEleD<鼻_獣D>());
     		obj.EnumEleD().SetValuesD<口_通常D>("牙", true);
     		obj.EnumEleD().SetValuesD<性器_人D>("表示", false);
-    		obj.EnumEleD().SetValuesD<肛門_人D>("表示", false);
+    		obj.EnumEleD().SetValuesD<Anus_人D>("表示", false);
     		obj.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
     		obj.EnumEleD().SetValuesD("身長", 頭D2.目高);
     		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + Rng.XS.NextDouble(0.8));
@@ -3876,7 +3876,7 @@ namespace SlaveMatrix
     		obj.EnumEleD().SetValuesD<頬肌D>("髭", 頭D2.鼻_接続.IsEleD<鼻_獣D>());
     		obj.EnumEleD().SetValuesD<口_通常D>("牙", true);
     		obj.EnumEleD().SetValuesD<性器_人D>("表示", false);
-    		obj.EnumEleD().SetValuesD<肛門_人D>("表示", false);
+    		obj.EnumEleD().SetValuesD<Anus_人D>("表示", false);
     		obj.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
     		obj.EnumEleD().SetValuesD("身長", 頭D2.目高);
     		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + Rng.XS.NextDouble(0.8));
@@ -4280,7 +4280,7 @@ namespace SlaveMatrix
     		WaistD2.EnumEleD().SetValuesD<手_人D>("鱗", true);
     		WaistD2.EnumEleD().SetValuesD<手_人D>("配色", 配色指定.S0);
     		WaistD2.EnumEleD().SetValuesD<性器_人D>("表示", false);
-    		WaistD2.EnumEleD().SetValuesD<肛門_人D>("表示", false);
+    		WaistD2.EnumEleD().SetValuesD<Anus_人D>("表示", false);
     		WaistD2.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
     		WaistD2.EnumEleD().SetValuesD("身長", 頭D2.目高);
     		WaistD2.EnumEleD().SetValuesD("鋭爪", 0.2 + Rng.XS.NextDouble(0.8));
@@ -4750,7 +4750,7 @@ namespace SlaveMatrix
     		obj.EnumEleD().SetValuesD<頬肌D>("髭", false);
     		obj.EnumEleD().SetValuesD("猫目", true);
     		obj.EnumEleD().SetValuesD<性器_人D>("表示", false);
-    		obj.EnumEleD().SetValuesD<肛門_人D>("表示", false);
+    		obj.EnumEleD().SetValuesD<Anus_人D>("表示", false);
     		obj.EnumEleD().SetValuesD<手_人D>("肉球", false);
     		obj.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
     		obj.EnumEleD().SetValuesD("身長", 頭D2.目高);

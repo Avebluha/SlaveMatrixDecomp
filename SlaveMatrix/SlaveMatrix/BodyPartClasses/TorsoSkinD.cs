@@ -5,7 +5,7 @@ using SlaveMatrix.GameClasses;
 namespace SlaveMatrix
 {
     [Serializable]
-    public class 胴肌D : ElementData
+    public class TorsoSkinD : ElementData
     {
     	public bool 植タトゥ_タトゥ花左_表示;
 
@@ -19,14 +19,14 @@ namespace SlaveMatrix
 
     	public bool 植タトゥ_タトゥ葉右_表示;
 
-    	public 胴肌D()
+    	public TorsoSkinD()
     	{
     		ThisType = GetType();
     	}
 
     	public override Element GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
     	{
-    		return new 胴肌(DisUnit, 配色指定, 体配色, Med, this);
+    		return new TorsoSkin(DisUnit, 配色指定, 体配色, Med, this);
     	}
     }
 }

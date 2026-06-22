@@ -204,8 +204,8 @@ namespace SlaveMatrix
     				}
     				else if (cd.c == ContactType.Anal)
     				{
-    					調教UI.Set_肛門(対象.Element);
-    					吸引時(GameText.肛門 + "\r\n");
+    					調教UI.Set_Anus(対象.Element);
+    					吸引時(GameText.Anus + "\r\n");
     					調教UI.肛門演出();
     				}
     				else if (cd.c == ContactType.Thread)
@@ -285,7 +285,7 @@ namespace SlaveMatrix
     			}
     			else if (cd.c == ContactType.Anal)
     			{
-    				オーバー時(GameText.肛門 + "\r\n", ref cd);
+    				オーバー時(GameText.Anus + "\r\n", ref cd);
     			}
     			else
     			{

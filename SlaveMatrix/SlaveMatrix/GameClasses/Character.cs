@@ -1403,7 +1403,7 @@ namespace SlaveMatrix
     			},
     			OnUpdate = delegate(Motion m)
     			{
-    				cha.Body.肛門C = 0.5 + m.Value.Sin() * Rng.XS.NextDouble() * 0.5;
+    				cha.Body.AnusC = 0.5 + m.Value.Sin() * Rng.XS.NextDouble() * 0.5;
     				if (肛sw.ElapsedMilliseconds > 5000)
     				{
     					m.End();
@@ -1418,7 +1418,7 @@ namespace SlaveMatrix
     			OnEnd = delegate
     			{
     				肛sw.Stop();
-    				cha.Body.肛門C = 1.0;
+    				cha.Body.AnusC = 1.0;
     			}
     		};
     		Motions.Add(肛ヒク.GetHashCode().ToString(), 肛ヒク);
@@ -1786,7 +1786,7 @@ namespace SlaveMatrix
                 {
                     result.c = ContactType.Stomache;
                 }
-                else if ((flag = !flag2 && this.Body.Isくぱぁ()) && result.e is 肛門)
+                else if ((flag = !flag2 && this.Body.Isくぱぁ()) && result.e is Anus)
                 {
                     result.c = ContactType.Anal;
                 }

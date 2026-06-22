@@ -40,7 +40,8 @@ namespace _2DGAMELIB
             ["ボテ腹"] = "PregnantBelly",
             ["腰肌"] = "WaistSkin",
             ["ボテ腹板"] = "PregnantBellyPlate",
-            ["胴腹板"] = "TorsoPlate"
+            ["胴腹板"] = "TorsoPlate",
+            ["胴肌"] = "TorsoSkin"
         };
 
         public static void MigrateKeys(this BodyTemplate BodyTemplate)

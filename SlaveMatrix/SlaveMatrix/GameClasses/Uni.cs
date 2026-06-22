@@ -69,7 +69,7 @@ namespace SlaveMatrix
     		waist_description.膣基接続(new InternalSemen_人D());
     		waist_description.膣基接続(new XRay_人D());
     		waist_description.膣基接続(性器());
-    		waist_description.肛門接続(肛門());
+    		waist_description.肛門接続(Anus());
     		waist_description.肌接続(PregnantBelly());
     		waist_description.肌接続(new WaistSkinD());
     		waist_description.肌接続(new 下着ボトム_ノーマルD());
@@ -309,16 +309,16 @@ namespace SlaveMatrix
     		return obj;
     	}
 
-    	public static 肛門_人D 肛門()
+    	public static Anus_人D Anus()
     	{
-    		肛門_人D obj = new 肛門_人D();
+    		Anus_人D obj = new Anus_人D();
     		obj.肛門精液接続(new 肛門精液_人D());
     		return obj;
     	}
 
-    	public static 肛門_獣D 四足肛門()
+    	public static Anus_獣D 四足肛門()
     	{
-    		肛門_獣D obj = new 肛門_獣D();
+    		Anus_獣D obj = new Anus_獣D();
     		obj.肛門精液接続(new 肛門精液_獣D());
     		return obj;
     	}
