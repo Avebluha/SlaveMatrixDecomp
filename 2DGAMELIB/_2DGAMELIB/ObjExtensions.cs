@@ -46,7 +46,8 @@ namespace _2DGAMELIB
             ["固定帯"] = "FixingBelt",
             ["基髪"] = "BaseHair",
             ["単眼目"] = "MonoEye",
-            ["単眼瞼"] = "MonoEyelid"
+            ["単眼瞼"] = "MonoEyelid",
+            ["目左"] = "EyeLeft"
         };
 
         public static void MigrateKeys(this BodyTemplate BodyTemplate)
