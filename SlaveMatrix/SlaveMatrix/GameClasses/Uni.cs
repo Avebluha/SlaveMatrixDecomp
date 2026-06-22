@@ -7,7 +7,7 @@ namespace SlaveMatrix
     	public static HeadD 頭()
     	{
     		HeadD obj = new HeadD();
-    		obj.基髪接続(new 基髪D());
+    		obj.基髪接続(new BaseHairD());
     		obj.目左接続(new 目傷D());
     		obj.目右接続(new 目傷D
     		{

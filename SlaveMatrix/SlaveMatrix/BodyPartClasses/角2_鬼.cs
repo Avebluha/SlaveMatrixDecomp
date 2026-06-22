@@ -367,7 +367,7 @@ namespace SlaveMatrix
 
     	public void SetBasePoint()
     	{
-    		if (ConnectionType != ConnectionInfo.基髪_頭頂左_接続 && ConnectionType != ConnectionInfo.基髪_頭頂右_接続)
+    		if (ConnectionType != ConnectionInfo.BaseHair_頭頂左_接続 && ConnectionType != ConnectionInfo.BaseHair_頭頂右_接続)
     		{
     			X0Y0_根.SetBasePointBase(X0Y0_根.GetJP()[0].Joint);
     			X0Y1_根.SetBasePointBase(X0Y1_根.GetJP()[0].Joint);

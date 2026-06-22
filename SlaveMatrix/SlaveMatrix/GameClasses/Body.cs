@@ -63,7 +63,7 @@ namespace SlaveMatrix
 
     	public Head 頭;
 
-    	public 基髪 基髪;
+    	public BaseHair BaseHair;
 
     	public 前髪 前髪;
 
@@ -2970,7 +2970,7 @@ namespace SlaveMatrix
     					((拘束鎖)fieldInfo.GetValue(current_element)).SetSize();
     				}
     			}
-    			if (current_element is 角2_鬼 && current_element.ConnectionType != ConnectionInfo.基髪_頭頂左_接続 && current_element.ConnectionType != ConnectionInfo.基髪_頭頂右_接続)
+    			if (current_element is 角2_鬼 && current_element.ConnectionType != ConnectionInfo.BaseHair_頭頂左_接続 && current_element.ConnectionType != ConnectionInfo.BaseHair_頭頂右_接続)
     			{
     				((角2_鬼)current_element).SetBasePoint();
     			}
@@ -3265,7 +3265,7 @@ namespace SlaveMatrix
     								翼獣.手 = 手;
     								p = 翼獣.UpperArm.Par;
     								pp = 翼獣.UpperArm.Par.Par;
-    								if (p is 基髪)
+    								if (p is BaseHair)
     								{
     									翼獣.UpperArm.接着 = () => bod.頭.X0Y0_Head.ToGlobal(bod.頭.X0Y0_Head.GetBasePointBase());
     								}
@@ -3658,7 +3658,7 @@ namespace SlaveMatrix
     							翼獣.手 = 手;
     							p = 翼獣.UpperArm.Par;
     							pp = 翼獣.UpperArm.Par.Par;
-    							if (p is 基髪)
+    							if (p is BaseHair)
     							{
     								翼獣.UpperArm.接着 = () => bod.頭.X0Y0_Head.ToGlobal(bod.頭.X0Y0_Head.GetBasePointBase());
     							}
@@ -3939,7 +3939,7 @@ namespace SlaveMatrix
     		}
     		if (頭 != null)
     		{
-    			基髪 = 頭.基髪_接続.GetEle<基髪>();
+    			BaseHair = 頭.BaseHair_接続.GetEle<BaseHair>();
     			単眼目 = 頭.単眼目_接続.GetEle<単目>();
     			if (単眼目 != null)
     			{
@@ -4051,13 +4051,13 @@ namespace SlaveMatrix
     			顔ハイライト左.SetHitFalse();
     			顔ハイライト右.SetHitFalse();
     		}
-    		if (基髪 != null)
+    		if (BaseHair != null)
     		{
-    			前髪 = 基髪.前髪_接続.GetEle<前髪>();
-    			横髪左 = 基髪.横髪左_接続.GetEle<SideHair>();
-    			横髪右 = 基髪.横髪右_接続.GetEle<SideHair>();
-    			後髪1 = 基髪.後髪_接続.GetEle<BackHair1>();
-    			後髪0 = 基髪.後髪_接続.GetEle<BackHair0>();
+    			前髪 = BaseHair.前髪_接続.GetEle<前髪>();
+    			横髪左 = BaseHair.横髪左_接続.GetEle<SideHair>();
+    			横髪右 = BaseHair.横髪右_接続.GetEle<SideHair>();
+    			後髪1 = BaseHair.後髪_接続.GetEle<BackHair1>();
+    			後髪0 = BaseHair.後髪_接続.GetEle<BackHair0>();
     		}
     		Neck.キスマーク = new スタンプK(Med, Are, Cha, this, kd, Neck);
     		sk.Add(Neck.キスマーク);
@@ -4132,23 +4132,23 @@ namespace SlaveMatrix
     		{
     			Sort(頭.頬右_接続.Select((Element e) => e.EnumEle()).JoinEnum(), 頬右接続);
     		}
-    		if (基髪.頭頂左_接続 != null)
+    		if (BaseHair.頭頂左_接続 != null)
     		{
-    			角左接続.AddRange(基髪.頭頂左_接続.GetEles<角2>());
-    			獣耳左 = 基髪.頭頂左_接続.GetEle<獣耳>();
-    			Sort((from e in 基髪.頭頂左_接続.GetEles<植>()
+    			角左接続.AddRange(BaseHair.頭頂左_接続.GetEles<角2>());
+    			獣耳左 = BaseHair.頭頂左_接続.GetEle<獣耳>();
+    			Sort((from e in BaseHair.頭頂左_接続.GetEles<植>()
     				select e.EnumEle()).JoinEnum(), 植左接続);
-    			Sort((from e in 基髪.頭頂左_接続
+    			Sort((from e in BaseHair.頭頂左_接続
     				where !(e is 角2) && !(e is 獣耳) && !(e is 植) && !(e is SideHair)
     				select e.EnumEle()).JoinEnum(), 頭頂左後接続);
     		}
-    		if (基髪.頭頂右_接続 != null)
+    		if (BaseHair.頭頂右_接続 != null)
     		{
-    			角右接続.AddRange(基髪.頭頂右_接続.GetEles<角2>());
-    			獣耳右 = 基髪.頭頂右_接続.GetEle<獣耳>();
-    			Sort((from e in 基髪.頭頂右_接続.GetEles<植>()
+    			角右接続.AddRange(BaseHair.頭頂右_接続.GetEles<角2>());
+    			獣耳右 = BaseHair.頭頂右_接続.GetEle<獣耳>();
+    			Sort((from e in BaseHair.頭頂右_接続.GetEles<植>()
     				select e.EnumEle()).JoinEnum(), 植右接続);
-    			Sort((from e in 基髪.頭頂右_接続
+    			Sort((from e in BaseHair.頭頂右_接続
     				where !(e is 角2) && !(e is 獣耳) && !(e is 植) && !(e is SideHair)
     				select e.EnumEle()).JoinEnum(), 頭頂右後接続);
     		}
@@ -5867,7 +5867,7 @@ namespace SlaveMatrix
     				}
     				bod.頭.描画2(are);
     				bod.玉口枷.描画0(are);
-    				bod.基髪.描画0(are);
+    				bod.BaseHair.描画0(are);
     				bod.横髪左.描画0(are);
     				bod.横髪右.描画0(are);
     				bod.頬左接続.描画0(are);
@@ -6294,7 +6294,7 @@ namespace SlaveMatrix
     				}
     				bod.頭.描画2(are);
     				bod.玉口枷.描画0(are);
-    				bod.基髪.描画0(are);
+    				bod.BaseHair.描画0(are);
     				bod.横髪左.描画0(are);
     				bod.横髪右.描画0(are);
     				bod.頬左接続.描画0(are);
@@ -6721,7 +6721,7 @@ namespace SlaveMatrix
     				}
     				bod.頭.描画2(are);
     				bod.玉口枷.描画0(are);
-    				bod.基髪.描画0(are);
+    				bod.BaseHair.描画0(are);
     				bod.横髪左.描画0(are);
     				bod.横髪右.描画0(are);
     				bod.頬左接続.描画0(are);
@@ -7151,7 +7151,7 @@ namespace SlaveMatrix
     				}
     				bod.頭.描画2(are);
     				bod.玉口枷.描画0(are);
-    				bod.基髪.描画0(are);
+    				bod.BaseHair.描画0(are);
     				bod.横髪左.描画0(are);
     				bod.横髪右.描画0(are);
     				bod.頬左接続.描画0(are);
@@ -7571,7 +7571,7 @@ namespace SlaveMatrix
     				}
     				bod.頭.描画2(are);
     				bod.玉口枷.描画0(are);
-    				bod.基髪.描画0(are);
+    				bod.BaseHair.描画0(are);
     				bod.横髪左.描画0(are);
     				bod.横髪右.描画0(are);
     				bod.頬左接続.描画0(are);
@@ -7994,7 +7994,7 @@ namespace SlaveMatrix
     				}
     				bod.頭.描画2(are);
     				bod.玉口枷.描画0(are);
-    				bod.基髪.描画0(are);
+    				bod.BaseHair.描画0(are);
     				bod.横髪左.描画0(are);
     				bod.横髪右.描画0(are);
     				bod.頬左接続.描画0(are);
@@ -8450,7 +8450,7 @@ namespace SlaveMatrix
     				}
     				bod.頭.描画2(are);
     				bod.玉口枷.描画0(are);
-    				bod.基髪.描画0(are);
+    				bod.BaseHair.描画0(are);
     				bod.横髪左.描画0(are);
     				bod.横髪右.描画0(are);
     				bod.頬左接続.描画0(are);
@@ -8878,7 +8878,7 @@ namespace SlaveMatrix
     			}
     			bod.頭.描画2(are);
     			bod.玉口枷.描画0(are);
-    			bod.基髪.描画0(are);
+    			bod.BaseHair.描画0(are);
     			bod.横髪左.描画0(are);
     			bod.横髪右.描画0(are);
     			bod.頬左接続.描画0(are);

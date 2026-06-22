@@ -1325,7 +1325,7 @@ namespace SlaveMatrix
     		左右無し = new HashSet<ConnectionInfo>(new ConnectionInfo[67]
     		{
     			ConnectionInfo.none,
-    			ConnectionInfo.Head_基髪_接続,
+    			ConnectionInfo.Head_BaseHair_接続,
     			ConnectionInfo.Head_鼻_接続,
     			ConnectionInfo.Head_口_接続,
     			ConnectionInfo.Head_額_接続,
@@ -1335,8 +1335,8 @@ namespace SlaveMatrix
     			ConnectionInfo.Head_大顎基_接続,
     			ConnectionInfo.Head_顔面_接続,
     			ConnectionInfo.Head_頭頂_接続,
-    			ConnectionInfo.基髪_前髪_接続,
-    			ConnectionInfo.基髪_後髪_接続,
+    			ConnectionInfo.BaseHair_前髪_接続,
+    			ConnectionInfo.BaseHair_後髪_接続,
     			ConnectionInfo.BackHair0_肢系_中央_接続,
     			ConnectionInfo.単目_瞼_接続,
     			ConnectionInfo.縦目_瞼_接続,

@@ -246,7 +246,7 @@ namespace SlaveMatrix
 
     	public ColorP X0Y0_虫性_顎下CP;
 
-    	public Element[] 基髪_接続;
+    	public Element[] BaseHair_接続;
 
     	public Element[] 目左_接続;
 
@@ -990,7 +990,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public JointS 基髪_接続点 => new JointS(Body, X0Y0_Head, 0);
+    	public JointS BaseHair_接続点 => new JointS(Body, X0Y0_Head, 0);
 
     	public JointS 目左_接続点 => new JointS(Body, X0Y0_Head, 1);
 
@@ -1172,14 +1172,14 @@ namespace SlaveMatrix
     			表示 = false;
     		}
     		Element f;
-    		if (e.基髪_接続.Count > 0)
+    		if (e.BaseHair_接続.Count > 0)
     		{
-    			基髪_接続 = e.基髪_接続.Select(delegate(ElementData g)
+    			BaseHair_接続 = e.BaseHair_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 頭2;
-    				f.ConnectionType = ConnectionInfo.Head_基髪_接続;
-    				f.接続(頭2.基髪_接続点);
+    				f.ConnectionType = ConnectionInfo.Head_BaseHair_接続;
+    				f.接続(頭2.BaseHair_接続点);
     				return f;
     			}).ToArray();
     		}

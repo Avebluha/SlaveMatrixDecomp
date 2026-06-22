@@ -14,34 +14,34 @@ namespace SlaveMatrix.GameClasses
         public static HeadD Get頭R()
         {
             HeadD obj = Uni.頭().SetRandom();
-            基髪D 基髪D2 = (基髪D)obj.基髪_接続[0];
+            BaseHairD BaseHairD2 = (BaseHairD)obj.BaseHair_接続[0];
             ElementData elementData = Get後髪0R();
-            基髪D2.後髪接続(elementData);
+            BaseHairD2.後髪接続(elementData);
             if ((elementData is BackHair0_ジグD || elementData is BackHair0_ハネD || elementData is BackHair0_パツD || elementData is BackHair0_カルD || elementData is BackHair0_肢系D) && Rng.XS.NextBool())
             {
-                基髪D2.後髪接続(Get後髪1R());
+                BaseHairD2.後髪接続(Get後髪1R());
             }
             elementData = Get横髪R(右: false);
-            基髪D2.横髪左接続(elementData);
-            基髪D2.横髪右接続(elementData.Get逆());
-            基髪D2.前髪接続(Get前髪R());
+            BaseHairD2.横髪左接続(elementData);
+            BaseHairD2.横髪右接続(elementData.Get逆());
+            BaseHairD2.前髪接続(Get前髪R());
             return obj;
         }
 
         public static HeadD Get頭R1()
         {
             HeadD obj = Uni.頭().SetRandom();
-            基髪D 基髪D2 = (基髪D)obj.基髪_接続[0];
+            BaseHairD BaseHairD2 = (BaseHairD)obj.BaseHair_接続[0];
             ElementData elementData = Get後髪0R();
-            基髪D2.後髪接続(elementData);
+            BaseHairD2.後髪接続(elementData);
             if ((elementData is BackHair0_ジグD || elementData is BackHair0_ハネD || elementData is BackHair0_パツD || elementData is BackHair0_カルD || elementData is BackHair0_肢系D) && Rng.XS.NextBool())
             {
-                基髪D2.後髪接続(Get後髪1R());
+                BaseHairD2.後髪接続(Get後髪1R());
             }
             elementData = Get横髪R(右: false);
-            基髪D2.横髪左接続(elementData);
-            基髪D2.横髪右接続(elementData.Get逆());
-            基髪D2.前髪接続(Get前髪R1());
+            BaseHairD2.横髪左接続(elementData);
+            BaseHairD2.横髪右接続(elementData.Get逆());
+            BaseHairD2.前髪接続(Get前髪R1());
             return obj;
         }
 

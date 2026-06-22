@@ -727,11 +727,11 @@ namespace SlaveMatrix
     	public static Dictionary<ConnectionInfo, HashSet<string>> 接続範囲 = new Dictionary<ConnectionInfo, HashSet<string>>
     	{
     		{
-    			ConnectionInfo.基髪_頭頂左_接続,
+    			ConnectionInfo.BaseHair_頭頂左_接続,
     			側頭
     		},
     		{
-    			ConnectionInfo.基髪_頭頂右_接続,
+    			ConnectionInfo.BaseHair_頭頂右_接続,
     			側頭
     		},
     		{
@@ -1798,8 +1798,8 @@ namespace SlaveMatrix
     		Dictionary<ConnectionInfo, List<Type>> 接続構成 = Get接続構成(母方, 父方);
     		Type[] 要素構成 = Get要素構成(母方, 父方);
     		HeadD HeadD2 = Mix<HeadD>(母方, 父方, i, 原種モード);
-    		基髪D 基髪D2 = new 基髪D();
-    		HeadD2.基髪接続(基髪D2);
+    		BaseHairD BaseHairD2 = new BaseHairD();
+    		HeadD2.基髪接続(BaseHairD2);
     		HeadD2.目左接続(new 目傷D());
     		HeadD2.目右接続(new 目傷D
     		{
@@ -1872,7 +1872,7 @@ namespace SlaveMatrix
     		if (Rng.XS.NextBool())
     		{
     			ElementData elementData = SlaveMatrix.GameClasses._Con.Get後髪0R();
-    			基髪D2.後髪接続(elementData);
+    			BaseHairD2.後髪接続(elementData);
     			elementData.AlignR();
     			if (elementData is BackHair0_肢系D && 変異率.Lot())
     			{
@@ -1884,15 +1884,15 @@ namespace SlaveMatrix
     			if ((elementData is BackHair0_ジグD || elementData is BackHair0_ハネD || elementData is BackHair0_パツD || elementData is BackHair0_カルD || elementData is BackHair0_肢系D) && Rng.XS.NextBool())
     			{
     				ElementData e2 = SlaveMatrix.GameClasses._Con.Get後髪1R();
-    				基髪D2.後髪接続(e2);
+    				BaseHairD2.後髪接続(e2);
     				e2.AlignR();
     			}
     			ElementData eleD2 = SlaveMatrix.GameClasses._Con.Get横髪R(右: false);
-    			基髪D2.横髪左接続(eleD2);
+    			BaseHairD2.横髪左接続(eleD2);
     			eleD2.AlignR();
-    			基髪D2.横髪右接続(eleD2.Get逆());
+    			BaseHairD2.横髪右接続(eleD2.Get逆());
     			ElementData e3 = SlaveMatrix.GameClasses._Con.Get前髪R();
-    			基髪D2.前髪接続(e3);
+    			BaseHairD2.前髪接続(e3);
     			e3.AlignR();
     		}
     		else
@@ -1900,7 +1900,7 @@ namespace SlaveMatrix
     			後髪0D 後髪0D2 = Mix<後髪0D>(母方, 父方, i, 原種モード);
     			if (後髪0D2 != null)
     			{
-    				基髪D2.後髪接続(後髪0D2);
+    				BaseHairD2.後髪接続(後髪0D2);
     				後髪0D2.AlignR();
     				if (後髪0D2 is BackHair0_肢系D && 変異率.Lot())
     				{
@@ -1914,7 +1914,7 @@ namespace SlaveMatrix
     					BackHair1D 後髪1D2 = Mix<BackHair1D>(母方, 父方, i, 原種モード);
     					if (後髪1D2 != null)
     					{
-    						基髪D2.後髪接続(後髪1D2);
+    						BaseHairD2.後髪接続(後髪1D2);
     						後髪1D2.AlignR();
     					}
     				}
@@ -1924,16 +1924,16 @@ namespace SlaveMatrix
     				BackHair1D 後髪1D3 = Mix<BackHair1D>(母方, 父方, i, 原種モード);
     				if (後髪1D3 != null)
     				{
-    					基髪D2.後髪接続(後髪1D3);
+    					BaseHairD2.後髪接続(後髪1D3);
     					後髪1D3.AlignR();
     				}
     			}
     			SideHairD 横髪D2 = Mix<SideHairD>(母方, 父方, 右: false, i, 原種モード);
-    			基髪D2.横髪左接続(横髪D2);
+    			BaseHairD2.横髪左接続(横髪D2);
     			横髪D2.AlignR();
-    			基髪D2.横髪右接続(横髪D2.Get逆());
+    			BaseHairD2.横髪右接続(横髪D2.Get逆());
     			前髪D e4 = Mix<前髪D>(母方, 父方, i, 原種モード);
-    			基髪D2.前髪接続(e4);
+    			BaseHairD2.前髪接続(e4);
     			e4.AlignR();
     		}
     		双目D 双目D2 = null;
@@ -2154,7 +2154,7 @@ namespace SlaveMatrix
     			}
     		}
     		HeadD2.接続(母方, 父方, i, ConnectionInfo.Head_耳左_接続, 要素構成, 接続構成, 変異率, 原種モード);
-    		基髪D2.接続(母方, 父方, i, ConnectionInfo.基髪_頭頂左_接続, 要素構成, 接続構成, 変異率, 原種モード);
+    		BaseHairD2.接続(母方, 父方, i, ConnectionInfo.BaseHair_頭頂左_接続, 要素構成, 接続構成, 変異率, 原種モード);
     		HeadD2.接続(母方, 父方, i, ConnectionInfo.Head_頬左_接続, 要素構成, 接続構成, 変異率, 原種モード);
     		HeadD2.接続(母方, 父方, i, ConnectionInfo.Head_大顎基_接続, 要素構成, 接続構成, 変異率, 原種モード);
     		HeadD2.接続(母方, 父方, i, ConnectionInfo.Head_顔面_接続, 要素構成, 接続構成, 変異率, 原種モード);
@@ -3780,7 +3780,7 @@ namespace SlaveMatrix
     			{
     				item32.尺度YB = 1.0;
     			}
-    			else if (item32 is UpperArm_蝙D && (item32.接続情報 == ConnectionInfo.基髪_頭頂左_接続 || item32.接続情報 == ConnectionInfo.基髪_頭頂右_接続))
+    			else if (item32 is UpperArm_蝙D && (item32.接続情報 == ConnectionInfo.BaseHair_頭頂左_接続 || item32.接続情報 == ConnectionInfo.BaseHair_頭頂右_接続))
     			{
     				((UpperArm_蝙D)item32).竜性_鱗1_表示 = false;
     			}
@@ -3912,7 +3912,7 @@ namespace SlaveMatrix
     		}
     		bool flag12 = 顔面D2?.触覚左_接続.IsEleD<触覚D>() ?? false;
     		bool flag13 = HeadD2.触覚左_接続.IsEleD<触覚D>();
-    		bool flag14 = 基髪D2.頭頂左_接続.IsEleD<触覚D>();
+    		bool flag14 = BaseHairD2.頭頂左_接続.IsEleD<触覚D>();
     		if (!flag12 && flag13 && flag14)
     		{
     			if (Rng.XS.NextBool())
@@ -3922,8 +3922,8 @@ namespace SlaveMatrix
     			}
     			else
     			{
-    				基髪D2.頭頂左_接続.RemoveAll((ElementData e) => e is 触覚D);
-    				基髪D2.頭頂右_接続.RemoveAll((ElementData e) => e is 触覚D);
+    				BaseHairD2.頭頂左_接続.RemoveAll((ElementData e) => e is 触覚D);
+    				BaseHairD2.頭頂右_接続.RemoveAll((ElementData e) => e is 触覚D);
     			}
     		}
     		else if (flag12 && !flag13 && flag14)
@@ -3935,8 +3935,8 @@ namespace SlaveMatrix
     			}
     			else
     			{
-    				基髪D2.頭頂左_接続.RemoveAll((ElementData e) => e is 触覚D);
-    				基髪D2.頭頂右_接続.RemoveAll((ElementData e) => e is 触覚D);
+    				BaseHairD2.頭頂左_接続.RemoveAll((ElementData e) => e is 触覚D);
+    				BaseHairD2.頭頂右_接続.RemoveAll((ElementData e) => e is 触覚D);
     			}
     		}
     		else if (flag12 && flag13 && !flag14)
@@ -3959,14 +3959,14 @@ namespace SlaveMatrix
     			case 0:
     				HeadD2.触覚左_接続.RemoveAll((ElementData e) => e is 触覚D);
     				HeadD2.触覚右_接続.RemoveAll((ElementData e) => e is 触覚D);
-    				基髪D2.頭頂左_接続.RemoveAll((ElementData e) => e is 触覚D);
-    				基髪D2.頭頂右_接続.RemoveAll((ElementData e) => e is 触覚D);
+    				BaseHairD2.頭頂左_接続.RemoveAll((ElementData e) => e is 触覚D);
+    				BaseHairD2.頭頂右_接続.RemoveAll((ElementData e) => e is 触覚D);
     				break;
     			case 1:
     				顔面D2.触覚左_接続.RemoveAll((ElementData e) => e is 触覚D);
     				顔面D2.触覚右_接続.RemoveAll((ElementData e) => e is 触覚D);
-    				基髪D2.頭頂左_接続.RemoveAll((ElementData e) => e is 触覚D);
-    				基髪D2.頭頂右_接続.RemoveAll((ElementData e) => e is 触覚D);
+    				BaseHairD2.頭頂左_接続.RemoveAll((ElementData e) => e is 触覚D);
+    				BaseHairD2.頭頂右_接続.RemoveAll((ElementData e) => e is 触覚D);
     				break;
     			case 2:
     				顔面D2.触覚左_接続.RemoveAll((ElementData e) => e is 触覚D);

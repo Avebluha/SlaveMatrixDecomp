@@ -4,7 +4,7 @@ using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
-    public class 基髪 : Element
+    public class BaseHair : Element
     {
     	public ShapePart X0Y0_髪;
 
@@ -123,11 +123,11 @@ namespace SlaveMatrix
 
     	public JointS 後髪_接続点 => new JointS(Body, X0Y0_髪, 3);
 
-    	public 基髪(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 基髪D e)
+    	public BaseHair(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, BaseHairD e)
     	{
-    		基髪 基髪2 = this;
+    		BaseHair BaseHair2 = this;
     		ThisType = GetType();
-    		Body = new VariantGrid(GlobalState.胴体["基髪"]);
+    		Body = new VariantGrid(GlobalState.胴体["BaseHair"]);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_髪 = partGroup["髪"].ToPar();
     		Body.SetJoints();
@@ -168,9 +168,9 @@ namespace SlaveMatrix
     			頭頂左_接続 = e.頭頂左_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
-    				f.Par = 基髪2;
-    				f.ConnectionType = ConnectionInfo.基髪_頭頂左_接続;
-    				f.接続(基髪2.頭頂左_接続点);
+    				f.Par = BaseHair2;
+    				f.ConnectionType = ConnectionInfo.BaseHair_頭頂左_接続;
+    				f.接続(BaseHair2.頭頂左_接続点);
     				return f;
     			}).ToArray();
     		}
@@ -179,9 +179,9 @@ namespace SlaveMatrix
     			頭頂右_接続 = e.頭頂右_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
-    				f.Par = 基髪2;
-    				f.ConnectionType = ConnectionInfo.基髪_頭頂右_接続;
-    				f.接続(基髪2.頭頂右_接続点);
+    				f.Par = BaseHair2;
+    				f.ConnectionType = ConnectionInfo.BaseHair_頭頂右_接続;
+    				f.接続(BaseHair2.頭頂右_接続点);
     				return f;
     			}).ToArray();
     		}
@@ -190,9 +190,9 @@ namespace SlaveMatrix
     			横髪左_接続 = e.横髪左_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
-    				f.Par = 基髪2;
-    				f.ConnectionType = ConnectionInfo.基髪_横髪左_接続;
-    				f.接続(基髪2.横髪左_接続点);
+    				f.Par = BaseHair2;
+    				f.ConnectionType = ConnectionInfo.BaseHair_横髪左_接続;
+    				f.接続(BaseHair2.横髪左_接続点);
     				return f;
     			}).ToArray();
     		}
@@ -201,9 +201,9 @@ namespace SlaveMatrix
     			横髪右_接続 = e.横髪右_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
-    				f.Par = 基髪2;
-    				f.ConnectionType = ConnectionInfo.基髪_横髪右_接続;
-    				f.接続(基髪2.横髪右_接続点);
+    				f.Par = BaseHair2;
+    				f.ConnectionType = ConnectionInfo.BaseHair_横髪右_接続;
+    				f.接続(BaseHair2.横髪右_接続点);
     				return f;
     			}).ToArray();
     		}
@@ -212,9 +212,9 @@ namespace SlaveMatrix
     			前髪_接続 = e.前髪_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
-    				f.Par = 基髪2;
-    				f.ConnectionType = ConnectionInfo.基髪_前髪_接続;
-    				f.接続(基髪2.前髪_接続点);
+    				f.Par = BaseHair2;
+    				f.ConnectionType = ConnectionInfo.BaseHair_前髪_接続;
+    				f.接続(BaseHair2.前髪_接続点);
     				return f;
     			}).ToArray();
     		}
@@ -223,9 +223,9 @@ namespace SlaveMatrix
     			後髪_接続 = e.後髪_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
-    				f.Par = 基髪2;
-    				f.ConnectionType = ConnectionInfo.基髪_後髪_接続;
-    				f.接続(基髪2.後髪_接続点);
+    				f.Par = BaseHair2;
+    				f.ConnectionType = ConnectionInfo.BaseHair_後髪_接続;
+    				f.接続(BaseHair2.後髪_接続点);
     				return f;
     			}).ToArray();
     		}
