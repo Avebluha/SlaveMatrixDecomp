@@ -41,7 +41,8 @@ namespace _2DGAMELIB
             ["腰肌"] = "WaistSkin",
             ["ボテ腹板"] = "PregnantBellyPlate",
             ["胴腹板"] = "TorsoPlate",
-            ["胴肌"] = "TorsoSkin"
+            ["胴肌"] = "TorsoSkin",
+            ["肛門"] = "Anus"
         };
 
         public static void MigrateKeys(this BodyTemplate BodyTemplate)
