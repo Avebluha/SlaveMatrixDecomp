@@ -5092,7 +5092,7 @@ namespace SlaveMatrix
     			植0 = Color.DarkGreen.Add(0, 0, -50),
     			植1 = Color.DarkGreen,
     			人肌 = Color.FromArgb(255, 121, 200, 162),
-    			目左 = Color.LightPink,
+    			EyeLeft = Color.LightPink,
     			目右 = Color.LightPink,
     			白部 = Color.FromArgb(255, 238, 248, 238),
     			膜 = Color.Purple,
@@ -5175,7 +5175,7 @@ namespace SlaveMatrix
     		obj.AdjustScale(頭D2);
     		return new CharacterData(obj, new 体色(b0: true)
     		{
-    			目左 = GlobalState.GameData.色.瞳色,
+    			EyeLeft = GlobalState.GameData.色.瞳色,
     			目右 = GlobalState.GameData.色.瞳色,
     			縦目 = GlobalState.GameData.色.瞳色,
     			頬目左 = GlobalState.GameData.色.瞳色,

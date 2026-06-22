@@ -56,7 +56,7 @@ namespace SlaveMatrix
 
     	public Color 粘膜 = ColorHelper.Empty;
 
-    	public Color 目左 = Color.Yellow;
+    	public Color EyeLeft = Color.Yellow;
 
     	public Color 目右 = Color.Yellow;
 
@@ -124,11 +124,11 @@ namespace SlaveMatrix
     			HSV.ToRGB(num + Rng.XS.Next(5), Rng.XS.NextM(0, 223), Rng.XS.NextM(128, 255), out var ret);
     			item.SetValue(this, ret);
     		}
-    		ColorHelper.GetRandomColor(out 目左);
-    		目右 = 目左;
-    		縦目 = 目左;
-    		頬目左 = 目左;
-    		頬目右 = 目左;
+    		ColorHelper.GetRandomColor(out EyeLeft);
+    		目右 = EyeLeft;
+    		縦目 = EyeLeft;
+    		頬目左 = EyeLeft;
+    		頬目右 = EyeLeft;
     		眉 = 髪;
     		毛0 = 眉;
     		睫 = ColorHelper.Black;

@@ -452,7 +452,7 @@ namespace SlaveMatrix.GameClasses
         public int 描画前後 => ConnectionType switch
         {
             ConnectionInfo.Head_BaseHair_接続 => 1,
-            ConnectionInfo.Head_目左_接続 => 1,
+            ConnectionInfo.Head_EyeLeft_接続 => 1,
             ConnectionInfo.Head_目右_接続 => 1,
             ConnectionInfo.Head_鼻_接続 => 1,
             ConnectionInfo.Head_口_接続 => 1,

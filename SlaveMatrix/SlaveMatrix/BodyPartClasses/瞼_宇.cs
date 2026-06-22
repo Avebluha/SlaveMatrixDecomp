@@ -334,7 +334,7 @@ namespace SlaveMatrix
 
     	private void 配色N0(BodyColorSet 体配色)
     	{
-    		目CD = new ColorD(ref ColorHelper.Black, ref 体配色.目左O);
+    		目CD = new ColorD(ref ColorHelper.Black, ref 体配色.EyeLeftO);
     		ハイライトCD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト);
     		瞬膜CD = new ColorD(ref ColorHelper.Black, ref 体配色.白部O);
     	}

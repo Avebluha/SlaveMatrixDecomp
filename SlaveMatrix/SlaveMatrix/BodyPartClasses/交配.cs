@@ -1668,7 +1668,7 @@ namespace SlaveMatrix
     						flag3 = true;
     					}
     				}
-    				if ((flag2 && 体色2.頬目左 != 体色2.頬目右) || (flag && 体色2.目左 != 体色2.目右) || (flag3 && (体色2.目左 != 体色2.縦目 || 体色2.目右 != 体色2.縦目)))
+    				if ((flag2 && 体色2.頬目左 != 体色2.頬目右) || (flag && 体色2.EyeLeft != 体色2.目右) || (flag3 && (体色2.EyeLeft != 体色2.縦目 || 体色2.目右 != 体色2.縦目)))
     				{
     					体色2.血統.Add(GameText.オッドアイ);
     				}
@@ -1678,38 +1678,38 @@ namespace SlaveMatrix
     				switch (Rng.XS.Next(6))
     				{
     				case 0:
-    					体色2.縦目 = 体色2.目左;
-    					体色2.頬目左 = 体色2.目左;
-    					体色2.頬目右 = 体色2.目左;
-    					体色2.目右 = 体色2.目左;
+    					体色2.縦目 = 体色2.EyeLeft;
+    					体色2.頬目左 = 体色2.EyeLeft;
+    					体色2.頬目右 = 体色2.EyeLeft;
+    					体色2.目右 = 体色2.EyeLeft;
     					break;
     				case 1:
     					体色2.縦目 = 体色2.目右;
     					体色2.頬目左 = 体色2.目右;
     					体色2.頬目右 = 体色2.目右;
-    					体色2.目左 = 体色2.目右;
+    					体色2.EyeLeft = 体色2.目右;
     					break;
     				case 2:
-    					GeometryUtils.GetInter(ref 体色2.目左, ref 体色2.目右, out 体色2.縦目);
-    					体色2.頬目左 = 体色2.目左;
-    					体色2.頬目右 = 体色2.目左;
-    					体色2.目右 = 体色2.目左;
+    					GeometryUtils.GetInter(ref 体色2.EyeLeft, ref 体色2.目右, out 体色2.縦目);
+    					体色2.頬目左 = 体色2.EyeLeft;
+    					体色2.頬目右 = 体色2.EyeLeft;
+    					体色2.目右 = 体色2.EyeLeft;
     					break;
     				case 3:
-    					GeometryUtils.GetInter(ref 体色2.目左, ref 体色2.目右, out 体色2.縦目);
+    					GeometryUtils.GetInter(ref 体色2.EyeLeft, ref 体色2.目右, out 体色2.縦目);
     					体色2.頬目左 = 体色2.目右;
     					体色2.頬目右 = 体色2.目右;
-    					体色2.目左 = 体色2.目右;
+    					体色2.EyeLeft = 体色2.目右;
     					break;
     				case 4:
-    					体色2.頬目左 = 体色2.目左;
-    					体色2.頬目右 = 体色2.目左;
-    					体色2.目右 = 体色2.目左;
+    					体色2.頬目左 = 体色2.EyeLeft;
+    					体色2.頬目右 = 体色2.EyeLeft;
+    					体色2.目右 = 体色2.EyeLeft;
     					break;
     				default:
     					体色2.頬目左 = 体色2.目右;
     					体色2.頬目右 = 体色2.目右;
-    					体色2.目左 = 体色2.目右;
+    					体色2.EyeLeft = 体色2.目右;
     					break;
     				}
     			}
@@ -1734,7 +1734,7 @@ namespace SlaveMatrix
     					flag6 = true;
     				}
     			}
-    			if ((flag5 && 体色2.頬目左 != 体色2.頬目右) || (flag4 && 体色2.目左 != 体色2.目右) || (flag6 && (体色2.目左 != 体色2.縦目 || 体色2.目右 != 体色2.縦目)))
+    			if ((flag5 && 体色2.頬目左 != 体色2.頬目右) || (flag4 && 体色2.EyeLeft != 体色2.目右) || (flag6 && (体色2.EyeLeft != 体色2.縦目 || 体色2.目右 != 体色2.縦目)))
     			{
     				体色2.血統.Add(GameText.オッドアイ);
     			}
@@ -1744,38 +1744,38 @@ namespace SlaveMatrix
     			switch (Rng.XS.Next(6))
     			{
     			case 0:
-    				体色2.縦目 = 体色2.目左;
-    				体色2.頬目左 = 体色2.目左;
-    				体色2.頬目右 = 体色2.目左;
-    				体色2.目右 = 体色2.目左;
+    				体色2.縦目 = 体色2.EyeLeft;
+    				体色2.頬目左 = 体色2.EyeLeft;
+    				体色2.頬目右 = 体色2.EyeLeft;
+    				体色2.目右 = 体色2.EyeLeft;
     				break;
     			case 1:
     				体色2.縦目 = 体色2.目右;
     				体色2.頬目左 = 体色2.目右;
     				体色2.頬目右 = 体色2.目右;
-    				体色2.目左 = 体色2.目右;
+    				体色2.EyeLeft = 体色2.目右;
     				break;
     			case 2:
-    				GeometryUtils.GetInter(ref 体色2.目左, ref 体色2.目右, out 体色2.縦目);
-    				体色2.頬目左 = 体色2.目左;
-    				体色2.頬目右 = 体色2.目左;
-    				体色2.目右 = 体色2.目左;
+    				GeometryUtils.GetInter(ref 体色2.EyeLeft, ref 体色2.目右, out 体色2.縦目);
+    				体色2.頬目左 = 体色2.EyeLeft;
+    				体色2.頬目右 = 体色2.EyeLeft;
+    				体色2.目右 = 体色2.EyeLeft;
     				break;
     			case 3:
-    				GeometryUtils.GetInter(ref 体色2.目左, ref 体色2.目右, out 体色2.縦目);
+    				GeometryUtils.GetInter(ref 体色2.EyeLeft, ref 体色2.目右, out 体色2.縦目);
     				体色2.頬目左 = 体色2.目右;
     				体色2.頬目右 = 体色2.目右;
-    				体色2.目左 = 体色2.目右;
+    				体色2.EyeLeft = 体色2.目右;
     				break;
     			case 4:
-    				体色2.頬目左 = 体色2.目左;
-    				体色2.頬目右 = 体色2.目左;
-    				体色2.目右 = 体色2.目左;
+    				体色2.頬目左 = 体色2.EyeLeft;
+    				体色2.頬目右 = 体色2.EyeLeft;
+    				体色2.目右 = 体色2.EyeLeft;
     				break;
     			default:
     				体色2.頬目左 = 体色2.目右;
     				体色2.頬目右 = 体色2.目右;
-    				体色2.目左 = 体色2.目右;
+    				体色2.EyeLeft = 体色2.目右;
     				break;
     			}
     		}

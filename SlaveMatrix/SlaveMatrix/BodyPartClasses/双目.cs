@@ -338,7 +338,7 @@ namespace SlaveMatrix
     		else
     		{
     			白目CD = new ColorD(ref ColorHelper.Empty, ref 体配色.白部O);
-    			黒目_黒目CD = new ColorD(ref ColorHelper.Black, ref 体配色.目左O);
+    			黒目_黒目CD = new ColorD(ref ColorHelper.Black, ref 体配色.EyeLeftO);
     			黒目_瞳孔CD = new ColorD(ref ColorHelper.Black, ref 体配色.瞳孔);
     			黒目_ハートCD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハートO);
     			黒目_ハイライト上CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト);

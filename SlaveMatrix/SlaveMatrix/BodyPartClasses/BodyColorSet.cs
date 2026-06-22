@@ -20,9 +20,9 @@ namespace SlaveMatrix
 
     	public Color2 膜R;
 
-    	public Color2 目左O;
+    	public Color2 EyeLeftO;
 
-    	public Color2 目左R;
+    	public Color2 EyeLeftR;
 
     	public Color2 目右O;
 
@@ -218,143 +218,143 @@ namespace SlaveMatrix
 
     	public Color 尿線;
 
-    	public BodyColorSet(体色 色)
+    	public BodyColorSet(体色 Color)
     	{
-    		if (色.粘膜 == ColorHelper.Empty)
+    		if (Color.粘膜 == ColorHelper.Empty)
     		{
-    			ColorHelper.GetMucosaColor(ref 色.人肌, out 色.粘膜);
+    			ColorHelper.GetMucosaColor(ref Color.人肌, out Color.粘膜);
     		}
-    		if (色.口紅 == ColorHelper.Empty)
+    		if (Color.口紅 == ColorHelper.Empty)
     		{
-    			色.口紅 = 色.粘膜;
+    			Color.口紅 = Color.粘膜;
     		}
-    		ColorHelper.GetGrad(ref 色.髪, out 髪O);
+    		ColorHelper.GetGrad(ref Color.髪, out 髪O);
     		髪O.GetRep(out 髪R);
-    		ColorHelper.GetGrad(ref 色.眉, out 眉O);
+    		ColorHelper.GetGrad(ref Color.眉, out 眉O);
     		眉O.GetRep(out 眉R);
-    		ColorHelper.GetGrad(ref 色.髭, out 髭O);
+    		ColorHelper.GetGrad(ref Color.髭, out 髭O);
     		髭O.GetRep(out 髭R);
-    		ColorHelper.GetGrad(ref 色.膜, out 膜O);
+    		ColorHelper.GetGrad(ref Color.膜, out 膜O);
     		膜O.GetRep(out 膜R);
-    		目左O = new Color2(ref ColorHelper.Black, ref 色.目左);
-    		目左O.GetRep(out 目左R);
-    		目右O = new Color2(ref ColorHelper.Black, ref 色.目右);
+    		EyeLeftO = new Color2(ref ColorHelper.Black, ref Color.EyeLeft);
+    		EyeLeftO.GetRep(out EyeLeftR);
+    		目右O = new Color2(ref ColorHelper.Black, ref Color.目右);
     		目右O.GetRep(out 目右R);
-    		縦目O = new Color2(ref ColorHelper.Black, ref 色.縦目);
+    		縦目O = new Color2(ref ColorHelper.Black, ref Color.縦目);
     		縦目O.GetRep(out 縦目R);
-    		頬目左O = new Color2(ref ColorHelper.Black, ref 色.頬目左);
+    		頬目左O = new Color2(ref ColorHelper.Black, ref Color.頬目左);
     		頬目左O.GetRep(out 頬目左R);
-    		頬目右O = new Color2(ref ColorHelper.Black, ref 色.頬目右);
+    		頬目右O = new Color2(ref ColorHelper.Black, ref Color.頬目右);
     		頬目右O.GetRep(out 頬目右R);
-    		ColorHelper.GetSkinGrad(ref 色.人肌, out 人肌O);
+    		ColorHelper.GetSkinGrad(ref Color.人肌, out 人肌O);
     		人肌O.GetRep(out 人肌R);
-    		ColorHelper.GetGrad(ref 色.白部, out 白部O);
+    		ColorHelper.GetGrad(ref Color.白部, out 白部O);
     		白部O.GetRep(out 白部R);
-    		ColorHelper.GetGrad(ref 色.爪, out 爪O);
+    		ColorHelper.GetGrad(ref Color.爪, out 爪O);
     		爪O.GetRep(out 爪R);
-    		ColorHelper.GetGrad(ref 色.角0, out 角0O);
+    		ColorHelper.GetGrad(ref Color.角0, out 角0O);
     		角0O.GetRep(out 角0R);
-    		ColorHelper.GetGrad(ref 色.角1, out 角1O);
+    		ColorHelper.GetGrad(ref Color.角1, out 角1O);
     		角1O.GetRep(out 角1R);
-    		ColorHelper.GetGrad(ref 色.体0, out 体0O);
+    		ColorHelper.GetGrad(ref Color.体0, out 体0O);
     		体0O.GetRep(out 体0R);
-    		ColorHelper.GetGrad(ref 色.体1, out 体1O);
+    		ColorHelper.GetGrad(ref Color.体1, out 体1O);
     		体1O.GetRep(out 体1R);
-    		ColorHelper.GetGrad(ref 色.毛0, out 毛0O);
+    		ColorHelper.GetGrad(ref Color.毛0, out 毛0O);
     		毛0O.GetRep(out 毛0R);
-    		ColorHelper.GetGrad(ref 色.毛1, out 毛1O);
+    		ColorHelper.GetGrad(ref Color.毛1, out 毛1O);
     		毛1O.GetRep(out 毛1R);
-    		ColorHelper.GetGrad(ref 色.羽0, out 羽0O);
+    		ColorHelper.GetGrad(ref Color.羽0, out 羽0O);
     		羽0O.GetRep(out 羽0R);
-    		ColorHelper.GetGrad(ref 色.羽1, out 羽1O);
+    		ColorHelper.GetGrad(ref Color.羽1, out 羽1O);
     		羽1O.GetRep(out 羽1R);
-    		ColorHelper.GetGrad(ref 色.鱗0, out 鱗0O);
+    		ColorHelper.GetGrad(ref Color.鱗0, out 鱗0O);
     		鱗0O.GetRep(out 鱗0R);
-    		ColorHelper.GetGrad(ref 色.鱗1, out 鱗1O);
+    		ColorHelper.GetGrad(ref Color.鱗1, out 鱗1O);
     		鱗1O.GetRep(out 鱗1R);
-    		ColorHelper.GetGrad(ref 色.甲0, out 甲0O);
+    		ColorHelper.GetGrad(ref Color.甲0, out 甲0O);
     		甲0O.GetRep(out 甲0R);
-    		ColorHelper.GetGrad(ref 色.甲1, out 甲1O);
+    		ColorHelper.GetGrad(ref Color.甲1, out 甲1O);
     		甲1O.GetRep(out 甲1R);
-    		ColorHelper.GetGrad(ref 色.植0, out 植0O);
+    		ColorHelper.GetGrad(ref Color.植0, out 植0O);
     		植0O.GetRep(out 植0R);
-    		ColorHelper.GetGrad(ref 色.植1, out 植1O);
+    		ColorHelper.GetGrad(ref Color.植1, out 植1O);
     		植1O.GetRep(out 植1R);
-    		ColorHelper.GetGrad(ref 色.薔, out 薔O);
+    		ColorHelper.GetGrad(ref Color.薔, out 薔O);
     		薔O.GetRep(out 薔R);
-    		ColorHelper.GetGrad(ref 色.百, out 百O);
+    		ColorHelper.GetGrad(ref Color.百, out 百O);
     		百O.GetRep(out 百R);
-    		ColorHelper.GetGrad(ref 色.柄, out 柄O);
+    		ColorHelper.GetGrad(ref Color.柄, out 柄O);
     		柄O.GetRep(out 柄R);
-    		ColorHelper.GetGrad(ref 色.紋, out 紋O);
+    		ColorHelper.GetGrad(ref Color.紋, out 紋O);
     		紋O.GetRep(out 紋R);
-    		眼0O = new Color2(ref ColorHelper.Black, ref 色.眼0);
+    		眼0O = new Color2(ref ColorHelper.Black, ref Color.眼0);
     		眼0O.GetRep(out 眼0R);
-    		眼1O = new Color2(ref ColorHelper.Black, ref 色.眼1);
+    		眼1O = new Color2(ref ColorHelper.Black, ref Color.眼1);
     		眼1O.GetRep(out 眼1R);
-    		眼2O = new Color2(ref ColorHelper.Black, ref 色.眼2);
+    		眼2O = new Color2(ref ColorHelper.Black, ref Color.眼2);
     		眼2O.GetRep(out 眼2R);
-    		コアO = new Color2(ref ColorHelper.Black, ref 色.コア);
+    		コアO = new Color2(ref ColorHelper.Black, ref Color.コア);
     		コアO.GetRep(out コアR);
-    		秘石O = new Color2(ref ColorHelper.Black, ref 色.秘石);
+    		秘石O = new Color2(ref ColorHelper.Black, ref Color.秘石);
     		秘石O.GetRep(out 秘石R);
-    		後光O = new Color2(ref ColorHelper.White, ref 色.後光);
+    		後光O = new Color2(ref ColorHelper.White, ref Color.後光);
     		後光O.GetRep(out 後光R);
-    		if (色.血 == ColorHelper.Empty)
+    		if (Color.血 == ColorHelper.Empty)
     		{
-    			ColorHelper.Add(ref 色.粘膜, 0, 255, -50, out 色.血);
+    			ColorHelper.Add(ref Color.粘膜, 0, 255, -50, out Color.血);
     		}
-    		ColorHelper.GetGrad(ref 色.血, out 血液O);
+    		ColorHelper.GetGrad(ref Color.血, out 血液O);
     		血液O.GetRep(out 血液R);
-    		ColorHelper.GetGrad(ref 色.粘膜, out ハートO);
+    		ColorHelper.GetGrad(ref Color.粘膜, out ハートO);
     		ハートO.GetRep(out ハートR);
     		影O = new Color2(ref ColorHelper.Gray, ref ColorHelper.DarkGray);
     		ColorHelper.Alpha(ref 影O, 50, out 影O);
     		影O.GetRep(out 影R);
     		ハイライト = new Color2(ref ColorHelper.White, ref ColorHelper.Empty);
     		ハイライト2O.Col1 = ColorHelper.White;
-    		ハイライト2O.Col2 = Color.FromArgb(0, ColorHelper.White);
+            ハイライト2O.Col2 = System.Drawing.Color.FromArgb(0, ColorHelper.White);
     		ハイライト2O.GetRep(out ハイライト2R);
-    		睫毛 = new Color2(ref 色.睫, ref ColorHelper.Empty);
+    		睫毛 = new Color2(ref Color.睫, ref ColorHelper.Empty);
     		瞳孔 = new Color2(ref ColorHelper.Black, ref ColorHelper.Empty);
-    		ColorHelper.GetSkinColor2(ref 色.人肌, out 肌濃.Col1);
-    		肌濃.Col1 = Color.FromArgb(90, 肌濃.Col1);
+    		ColorHelper.GetSkinColor2(ref Color.人肌, out 肌濃.Col1);
+            肌濃.Col1 = System.Drawing.Color.FromArgb(90, 肌濃.Col1);
     		肌濃.Col2 = ColorHelper.Empty;
-    		ColorHelper.GetSkinColor2(ref 色.毛0, out 毛濃.Col1);
-    		毛濃.Col1 = Color.FromArgb(90, 毛濃.Col1);
+    		ColorHelper.GetSkinColor2(ref Color.毛0, out 毛濃.Col1);
+            毛濃.Col1 = System.Drawing.Color.FromArgb(90, 毛濃.Col1);
     		毛濃.Col2 = ColorHelper.Empty;
-    		粘膜 = new Color2(ref 色.粘膜, ref ColorHelper.Empty);
-    		粘膜穴.Col1 = Color.FromArgb(80, ColorHelper.Black);
+    		粘膜 = new Color2(ref Color.粘膜, ref ColorHelper.Empty);
+            粘膜穴.Col1 = System.Drawing.Color.FromArgb(80, ColorHelper.Black);
     		粘膜穴.Col2 = 粘膜.Col2;
-    		ColorHelper.GetGrad(ref 色.粘膜, out Tounge);
-    		紅潮.Col1 = Color.FromArgb(60, 色.粘膜);
+    		ColorHelper.GetGrad(ref Color.粘膜, out Tounge);
+            紅潮.Col1 = System.Drawing.Color.FromArgb(60, Color.粘膜);
     		紅潮.Col2 = ColorHelper.Empty;
-    		口紅.Col1 = Color.FromArgb(100, 色.口紅);
+            口紅.Col1 = System.Drawing.Color.FromArgb(100, Color.口紅);
     		口紅.Col2 = ColorHelper.Empty;
-    		刺青 = new Color2(ref 色.刺青, ref ColorHelper.Empty);
-    		刺青O = new Color2(ref 色.刺青, ref 色.刺青);
-    		刺青R = new Color2(ref 色.刺青, ref 色.刺青);
-    		歯 = new Color2(ref 色.歯, ref ColorHelper.Empty);
-    		体液.Col1 = 色.体液;
-    		体液.Col2 = Color.FromArgb(0, 色.体液);
-    		母乳 = new Color2(ref 色.母乳, ref ColorHelper.Empty);
-    		尿.Col1 = Color.FromArgb(160, 色.尿);
+    		刺青 = new Color2(ref Color.刺青, ref ColorHelper.Empty);
+    		刺青O = new Color2(ref Color.刺青, ref Color.刺青);
+    		刺青R = new Color2(ref Color.刺青, ref Color.刺青);
+    		歯 = new Color2(ref Color.歯, ref ColorHelper.Empty);
+    		体液.Col1 = Color.体液;
+            体液.Col2 = System.Drawing.Color.FromArgb(0, Color.体液);
+    		母乳 = new Color2(ref Color.母乳, ref ColorHelper.Empty);
+            尿.Col1 = System.Drawing.Color.FromArgb(160, Color.尿);
     		尿.Col2 = ColorHelper.Empty;
-    		呼気.Col1 = Color.FromArgb(50, ColorHelper.White);
+            呼気.Col1 = System.Drawing.Color.FromArgb(50, ColorHelper.White);
     		呼気.Col2 = ColorHelper.Empty;
-    		湯気.Col1 = Color.FromArgb(50, ColorHelper.White);
+            湯気.Col1 = System.Drawing.Color.FromArgb(50, ColorHelper.White);
     		湯気.Col2 = ColorHelper.Empty;
-    		染み.Col1 = Color.FromArgb(50, ColorHelper.Black);
+            染み.Col1 = System.Drawing.Color.FromArgb(50, ColorHelper.Black);
     		染み.Col2 = ColorHelper.Empty;
-    		ColorHelper.Mul(ref 色.粘膜, 1.0, 2.0, 1.0, out 紅潮線);
-    		紅潮線 = Color.FromArgb(180, 紅潮線);
-    		ColorHelper.Mul(ref 色.粘膜, 1.0, 2.0, 0.5, out 粘膜線);
-    		粘膜線 = Color.FromArgb(80, 粘膜線);
-    		髪線 = Color.FromArgb(100, ColorHelper.Black);
-    		薄線 = Color.FromArgb(45, ColorHelper.Black);
-    		体液線 = Color.FromArgb(60, 色.体液);
-    		母乳線 = Color.FromArgb(80, 色.母乳);
-    		尿線 = Color.FromArgb(80, 色.尿);
+    		ColorHelper.Mul(ref Color.粘膜, 1.0, 2.0, 1.0, out 紅潮線);
+            紅潮線 = System.Drawing.Color.FromArgb(180, 紅潮線);
+    		ColorHelper.Mul(ref Color.粘膜, 1.0, 2.0, 0.5, out 粘膜線);
+            粘膜線 = System.Drawing.Color.FromArgb(80, 粘膜線);
+            髪線 = System.Drawing.Color.FromArgb(100, ColorHelper.Black);
+            薄線 = System.Drawing.Color.FromArgb(45, ColorHelper.Black);
+            体液線 = System.Drawing.Color.FromArgb(60, Color.体液);
+            母乳線 = System.Drawing.Color.FromArgb(80, Color.母乳);
+            尿線 = System.Drawing.Color.FromArgb(80, Color.尿);
     	}
     }
 }

@@ -560,7 +560,7 @@ namespace SlaveMatrix
     				{
     					if (cha.Body.IsDualEyes)
     					{
-    						cha.Body.目左.黒目_ハイライト下_表示 = true;
+    						cha.Body.EyeLeft.黒目_ハイライト下_表示 = true;
     					}
     					if (cha.Body.IsCheekEyes)
     					{
@@ -660,7 +660,7 @@ namespace SlaveMatrix
     					cha.Body.LeftTear.Intensity *= vi;
     					if (cha.Body.IsDualEyes)
     					{
-    						cha.Body.目左.黒目_ハイライト下CD.不透明度 *= vi;
+    						cha.Body.EyeLeft.黒目_ハイライト下CD.不透明度 *= vi;
     					}
     					if (cha.Body.IsCheekEyes)
     					{
@@ -698,8 +698,8 @@ namespace SlaveMatrix
     					cha.Body.LeftTear.Intensity = 1.0;
     					if (cha.Body.IsDualEyes)
     					{
-    						cha.Body.目左.黒目_ハイライト下_表示 = false;
-    						cha.Body.目左.黒目_ハイライト下CD.不透明度 = 1.0;
+    						cha.Body.EyeLeft.黒目_ハイライト下_表示 = false;
+    						cha.Body.EyeLeft.黒目_ハイライト下CD.不透明度 = 1.0;
     					}
     					if (cha.Body.IsCheekEyes)
     					{
@@ -1251,8 +1251,8 @@ namespace SlaveMatrix
     				{
     					if (cha.Body.IsDualEyes)
     					{
-    						ev = s * (cha.CursorPosition - (cha.Body.目左.位置 + cha.Body.目右.位置) * 0.5).newNormalize() * 0.002;
-    						cha.Body.目左.視線 = ev;
+    						ev = s * (cha.CursorPosition - (cha.Body.EyeLeft.位置 + cha.Body.目右.位置) * 0.5).newNormalize() * 0.002;
+    						cha.Body.EyeLeft.視線 = ev;
     						cha.Body.目右.視線 = ev;
     					}
     					if (cha.Body.IsCheekEyes)
@@ -1276,7 +1276,7 @@ namespace SlaveMatrix
     				{
     					if (cha.Body.IsDualEyes)
     					{
-    						cha.Body.目左.視線 = s * (cha.CursorPosition - cha.Body.目左.位置).newNormalize() * 0.002;
+    						cha.Body.EyeLeft.視線 = s * (cha.CursorPosition - cha.Body.EyeLeft.位置).newNormalize() * 0.002;
     						cha.Body.目右.視線 = s * (cha.CursorPosition - cha.Body.目右.位置).newNormalize() * 0.002;
     					}
     					if (cha.Body.IsCheekEyes)

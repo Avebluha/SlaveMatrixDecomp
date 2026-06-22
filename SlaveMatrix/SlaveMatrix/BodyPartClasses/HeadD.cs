@@ -96,7 +96,7 @@ namespace SlaveMatrix
 
     	public List<ElementData> BaseHair_接続 = new List<ElementData>();
 
-    	public List<ElementData> 目左_接続 = new List<ElementData>();
+    	public List<ElementData> EyeLeft_接続 = new List<ElementData>();
 
     	public List<ElementData> 目右_接続 = new List<ElementData>();
 
@@ -152,9 +152,9 @@ namespace SlaveMatrix
 
     	public void 目左接続(ElementData e)
     	{
-    		目左_接続.Add(e);
+    		EyeLeft_接続.Add(e);
     		e.Par = this;
-    		e.接続情報 = ConnectionInfo.Head_目左_接続;
+    		e.接続情報 = ConnectionInfo.Head_EyeLeft_接続;
     	}
 
     	public void 目右接続(ElementData e)

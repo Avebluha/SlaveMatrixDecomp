@@ -8,7 +8,7 @@ namespace SlaveMatrix
     {
     	none,
     	Head_BaseHair_接続,
-    	Head_目左_接続,
+    	Head_EyeLeft_接続,
     	Head_目右_接続,
     	Head_鼻_接続,
     	Head_口_接続,

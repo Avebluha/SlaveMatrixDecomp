@@ -3207,9 +3207,9 @@ namespace SlaveMatrix
 
     	public static void 目_見つめ左(this Character Cha)
     	{
-    		Cha.Body.目左.視線 = new Vector2D(0.0, -0.00023);
-    		Cha.Body.目左.X0Y0_黒目_黒目.SetSizeXCont(1.0);
-    		Cha.Body.目左.X0Y0_黒目_瞳孔.SetSizeXCont(1.0);
+    		Cha.Body.EyeLeft.視線 = new Vector2D(0.0, -0.00023);
+    		Cha.Body.EyeLeft.X0Y0_黒目_黒目.SetSizeXCont(1.0);
+    		Cha.Body.EyeLeft.X0Y0_黒目_瞳孔.SetSizeXCont(1.0);
     	}
 
     	public static void 目_見つめ右(this Character Cha)
@@ -3221,9 +3221,9 @@ namespace SlaveMatrix
 
     	public static void 目_逸らし左(this Character Cha, bool b)
     	{
-    		Cha.Body.目左.視線 = new Vector2D((b ? 1.0 : (-1.0)) * 0.0015, 0.0);
-    		Cha.Body.目左.X0Y0_黒目_黒目.SetSizeXCont(0.95);
-    		Cha.Body.目左.X0Y0_黒目_瞳孔.SetSizeXCont(0.95);
+    		Cha.Body.EyeLeft.視線 = new Vector2D((b ? 1.0 : (-1.0)) * 0.0015, 0.0);
+    		Cha.Body.EyeLeft.X0Y0_黒目_黒目.SetSizeXCont(0.95);
+    		Cha.Body.EyeLeft.X0Y0_黒目_瞳孔.SetSizeXCont(0.95);
     	}
 
     	public static void 目_逸らし右(this Character Cha, bool b)
@@ -3235,9 +3235,9 @@ namespace SlaveMatrix
 
     	public static void 目_上転左(this Character Cha)
     	{
-    		Cha.Body.目左.視線 = new Vector2D(0.0, -0.0021);
-    		Cha.Body.目左.X0Y0_黒目_黒目.SetSizeXCont(1.0);
-    		Cha.Body.目左.X0Y0_黒目_瞳孔.SetSizeXCont(1.0);
+    		Cha.Body.EyeLeft.視線 = new Vector2D(0.0, -0.0021);
+    		Cha.Body.EyeLeft.X0Y0_黒目_黒目.SetSizeXCont(1.0);
+    		Cha.Body.EyeLeft.X0Y0_黒目_瞳孔.SetSizeXCont(1.0);
     	}
 
     	public static void 目_上転右(this Character Cha)
@@ -3255,11 +3255,11 @@ namespace SlaveMatrix
 
     	public static void 両目_0(this Character Cha, int i1, int i2)
     	{
-    		Cha.目左_0(i1);
+    		Cha.EyeLeft_0(i1);
     		Cha.目右_0(i2);
     	}
 
-    	public static void 目左_0(this Character c, int i)
+    	public static void EyeLeft_0(this Character c, int i)
     	{
     		switch (i)
     		{
