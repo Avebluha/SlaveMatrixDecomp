@@ -3622,12 +3622,12 @@ namespace SlaveMatrix
 
     	public static void 単瞼_普(this Character Cha)
     	{
-    		Cha.Body.単眼瞼.Xi = 0;
+    		Cha.Body.MonoEyelid.Xi = 0;
     	}
 
     	public static void 単瞼_卑(this Character Cha)
     	{
-    		Cha.Body.単眼瞼.Xi = 1;
+    		Cha.Body.MonoEyelid.Xi = 1;
     	}
 
     	public static void 単瞼_0(this Character c, int i)

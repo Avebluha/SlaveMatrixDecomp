@@ -762,7 +762,7 @@ namespace SlaveMatrix
     					}
     					if (cha.Body.IsSingleEye)
     					{
-    						cha.Body.単眼瞼.Yv = m.Value.Clamp(cha.Body.Is瞼宇 ? 0.0 : cha.瞼基準単, 1.0);
+    						cha.Body.MonoEyelid.Yv = m.Value.Clamp(cha.Body.Is瞼宇 ? 0.0 : cha.瞼基準単, 1.0);
     					}
     				},
     				OnReach = delegate
