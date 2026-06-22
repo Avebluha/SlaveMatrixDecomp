@@ -120,7 +120,7 @@ namespace SlaveMatrix
 
     	public List<ElementData> 鼻肌_接続 = new List<ElementData>();
 
-    	public List<ElementData> 単眼目_接続 = new List<ElementData>();
+    	public List<ElementData> MonoEye_接続 = new List<ElementData>();
 
     	public List<ElementData> 単眼眉_接続 = new List<ElementData>();
 
@@ -236,9 +236,9 @@ namespace SlaveMatrix
 
     	public void 単眼目接続(ElementData e)
     	{
-    		単眼目_接続.Add(e);
+    		MonoEye_接続.Add(e);
     		e.Par = this;
-    		e.接続情報 = ConnectionInfo.Head_単眼目_接続;
+    		e.接続情報 = ConnectionInfo.Head_MonoEye_接続;
     	}
 
     	public void 単眼眉接続(ElementData e)

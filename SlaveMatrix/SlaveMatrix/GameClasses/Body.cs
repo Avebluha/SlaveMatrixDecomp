@@ -75,7 +75,7 @@ namespace SlaveMatrix
 
     	public BackHair0 後髪0;
 
-    	public 単目 単眼目;
+    	public 単目 MonoEye;
 
     	public 単瞼 単眼瞼;
 
@@ -3940,13 +3940,13 @@ namespace SlaveMatrix
     		if (頭 != null)
     		{
     			BaseHair = 頭.BaseHair_接続.GetEle<BaseHair>();
-    			単眼目 = 頭.単眼目_接続.GetEle<単目>();
-    			if (単眼目 != null)
+    			MonoEye = 頭.MonoEye_接続.GetEle<単目>();
+    			if (MonoEye != null)
     			{
-    				単眼瞼 = 単眼目.瞼_接続.GetEle<単瞼>();
-    				LeftTear = 単眼目.瞼_接続.GetEle<涙>(右: false);
-    				RightTear = 単眼目.瞼_接続.GetEle<涙>(右: true);
-    				単眼目.SetHitFalse();
+    				単眼瞼 = MonoEye.瞼_接続.GetEle<単瞼>();
+    				LeftTear = MonoEye.瞼_接続.GetEle<涙>(右: false);
+    				RightTear = MonoEye.瞼_接続.GetEle<涙>(右: true);
+    				MonoEye.SetHitFalse();
     				単眼瞼.SetHitFalse();
     				LeftTear.SetHitFalse();
     				RightTear.SetHitFalse();
@@ -3990,7 +3990,7 @@ namespace SlaveMatrix
     				頬目右.SetHitFalse();
     				頬瞼右.SetHitFalse();
     			}
-    			目隠帯 = 頭.単眼目_接続.GetEle<目隠帯>();
+    			目隠帯 = 頭.MonoEye_接続.GetEle<目隠帯>();
     			鼻 = 頭.鼻_接続.GetEle<鼻>();
     			if (鼻 != null)
     			{
@@ -5228,7 +5228,7 @@ namespace SlaveMatrix
     		Is触覚甲 = 触覚甲左 != null;
     		Is触覚 = Is触覚他 || Is触覚甲;
     		IsDualEyes = 目左 != null;
-    		IsSingleEye = 単眼目 != null;
+    		IsSingleEye = MonoEye != null;
     		IsCheekEyes = 頬目左 != null;
     		IsForeheadEye = 額目 != null;
     		Is舌股 = Tounge is Tounge_長 && ((Tounge_長)Tounge).舌股右_Tounge1_表示;
@@ -5828,7 +5828,7 @@ namespace SlaveMatrix
     				bod.頭.描画1(are);
     				if (bod.IsSingleEye)
     				{
-    					bod.単眼目.描画0(are);
+    					bod.MonoEye.描画0(are);
     					bod.単眼瞼.描画0(are);
     				}
     				bod.紅潮.描画0(are);
@@ -6255,7 +6255,7 @@ namespace SlaveMatrix
     				bod.頭.描画1(are);
     				if (bod.IsSingleEye)
     				{
-    					bod.単眼目.描画0(are);
+    					bod.MonoEye.描画0(are);
     					bod.単眼瞼.描画0(are);
     				}
     				bod.紅潮.描画0(are);
@@ -6682,7 +6682,7 @@ namespace SlaveMatrix
     				bod.頭.描画1(are);
     				if (bod.IsSingleEye)
     				{
-    					bod.単眼目.描画0(are);
+    					bod.MonoEye.描画0(are);
     					bod.単眼瞼.描画0(are);
     				}
     				bod.紅潮.描画0(are);
@@ -7112,7 +7112,7 @@ namespace SlaveMatrix
     				bod.頭.描画1(are);
     				if (bod.IsSingleEye)
     				{
-    					bod.単眼目.描画0(are);
+    					bod.MonoEye.描画0(are);
     					bod.単眼瞼.描画0(are);
     				}
     				bod.紅潮.描画0(are);
@@ -7532,7 +7532,7 @@ namespace SlaveMatrix
     				bod.頭.描画1(are);
     				if (bod.IsSingleEye)
     				{
-    					bod.単眼目.描画0(are);
+    					bod.MonoEye.描画0(are);
     					bod.単眼瞼.描画0(are);
     				}
     				bod.紅潮.描画0(are);
@@ -7955,7 +7955,7 @@ namespace SlaveMatrix
     				bod.頭.描画1(are);
     				if (bod.IsSingleEye)
     				{
-    					bod.単眼目.描画0(are);
+    					bod.MonoEye.描画0(are);
     					bod.単眼瞼.描画0(are);
     				}
     				bod.紅潮.描画0(are);
@@ -8411,7 +8411,7 @@ namespace SlaveMatrix
     				bod.頭.描画1(are);
     				if (bod.IsSingleEye)
     				{
-    					bod.単眼目.描画0(are);
+    					bod.MonoEye.描画0(are);
     					bod.単眼瞼.描画0(are);
     				}
     				bod.紅潮.描画0(are);
@@ -8839,7 +8839,7 @@ namespace SlaveMatrix
     			bod.頭.描画1(are);
     			if (bod.IsSingleEye)
     			{
-    				bod.単眼目.描画0(are);
+    				bod.MonoEye.描画0(are);
     				bod.単眼瞼.描画0(are);
     			}
     			bod.紅潮.描画0(are);

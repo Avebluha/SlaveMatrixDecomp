@@ -43,7 +43,9 @@ namespace _2DGAMELIB
             ["胴腹板"] = "TorsoPlate",
             ["胴肌"] = "TorsoSkin",
             ["肛門"] = "Anus",
-            ["固定帯"] = "FixingBelt"
+            ["固定帯"] = "FixingBelt",
+            ["基髪"] = "BaseHair",
+            ["単眼目"] = "MonoEye"
         };
 
         public static void MigrateKeys(this BodyTemplate BodyTemplate)

@@ -204,7 +204,7 @@ namespace SlaveMatrix
     		return obj;
     	}
 
-    	public static 単目D 単眼目()
+    	public static 単目D MonoEye()
     	{
     		単目D obj = new 単目D();
     		obj.瞼接続(new 単瞼D());

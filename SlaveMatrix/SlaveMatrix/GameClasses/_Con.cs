@@ -92,7 +92,7 @@ namespace SlaveMatrix.GameClasses
 
         public static 単目D Get単眼R()
         {
-            単目D obj = Uni.単眼目();
+            単目D obj = Uni.MonoEye();
             ((単瞼D)obj.瞼_接続[0]).SetRandom();
             return obj;
         }

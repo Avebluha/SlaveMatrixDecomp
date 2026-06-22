@@ -1330,7 +1330,7 @@ namespace SlaveMatrix
     			ConnectionInfo.Head_口_接続,
     			ConnectionInfo.Head_額_接続,
     			ConnectionInfo.Head_鼻肌_接続,
-    			ConnectionInfo.Head_単眼目_接続,
+    			ConnectionInfo.Head_MonoEye_接続,
     			ConnectionInfo.Head_単眼眉_接続,
     			ConnectionInfo.Head_大顎基_接続,
     			ConnectionInfo.Head_顔面_接続,

@@ -3449,23 +3449,23 @@ namespace SlaveMatrix
 
     	public static void 単目_見つめ(this Character Cha)
     	{
-    		Cha.Body.単眼目.視線 = new Vector2D(0.0, -0.00023);
-    		Cha.Body.単眼目.X0Y0_黒目_黒目.SetSizeXCont(1.0);
-    		Cha.Body.単眼目.X0Y0_黒目_瞳孔.SetSizeXCont(1.0);
+    		Cha.Body.MonoEye.視線 = new Vector2D(0.0, -0.00023);
+    		Cha.Body.MonoEye.X0Y0_黒目_黒目.SetSizeXCont(1.0);
+    		Cha.Body.MonoEye.X0Y0_黒目_瞳孔.SetSizeXCont(1.0);
     	}
 
     	public static void 単目_逸らし(this Character Cha, bool b)
     	{
-    		Cha.Body.単眼目.視線 = new Vector2D((b ? 1.0 : (-1.0)) * 0.0025, 0.0);
-    		Cha.Body.単眼目.X0Y0_黒目_黒目.SetSizeXCont(0.95);
-    		Cha.Body.単眼目.X0Y0_黒目_瞳孔.SetSizeXCont(0.95);
+    		Cha.Body.MonoEye.視線 = new Vector2D((b ? 1.0 : (-1.0)) * 0.0025, 0.0);
+    		Cha.Body.MonoEye.X0Y0_黒目_黒目.SetSizeXCont(0.95);
+    		Cha.Body.MonoEye.X0Y0_黒目_瞳孔.SetSizeXCont(0.95);
     	}
 
     	public static void 単目_上転(this Character Cha)
     	{
-    		Cha.Body.単眼目.視線 = new Vector2D(0.0, -0.0035);
-    		Cha.Body.単眼目.X0Y0_黒目_黒目.SetSizeXCont(1.0);
-    		Cha.Body.単眼目.X0Y0_黒目_瞳孔.SetSizeXCont(1.0);
+    		Cha.Body.MonoEye.視線 = new Vector2D(0.0, -0.0035);
+    		Cha.Body.MonoEye.X0Y0_黒目_黒目.SetSizeXCont(1.0);
+    		Cha.Body.MonoEye.X0Y0_黒目_瞳孔.SetSizeXCont(1.0);
     	}
 
     	public static void 単目_0(this Character c, int i)
