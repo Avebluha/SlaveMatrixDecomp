@@ -572,9 +572,9 @@ namespace SlaveMatrix
     		}
     	};
 
-    	public const int 額瞼_0数 = 2;
+    	public const int ForeheadEyelid_0数 = 2;
 
-    	public static Dictionary<EmotionType, List<int>> 額瞼_0感情対応 = new Dictionary<EmotionType, List<int>>
+    	public static Dictionary<EmotionType, List<int>> ForeheadEyelid_0感情対応 = new Dictionary<EmotionType, List<int>>
     	{
     		{
     			EmotionType.none,
@@ -788,9 +788,9 @@ namespace SlaveMatrix
     		}
     	};
 
-    	public const int 額瞼_1数 = 4;
+    	public const int ForeheadEyelid_1数 = 4;
 
-    	public static Dictionary<EmotionType, List<int>> 額瞼_1感情対応 = new Dictionary<EmotionType, List<int>>
+    	public static Dictionary<EmotionType, List<int>> ForeheadEyelid_1感情対応 = new Dictionary<EmotionType, List<int>>
     	{
     		{
     			EmotionType.none,
@@ -3597,25 +3597,25 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public static void 額瞼_普(this Character Cha)
+    	public static void ForeheadEyelid_普(this Character Cha)
     	{
-    		Cha.Body.額瞼.Xi = 0;
+    		Cha.Body.ForeheadEyelid.Xi = 0;
     	}
 
-    	public static void 額瞼_卑(this Character Cha)
+    	public static void ForeheadEyelid_卑(this Character Cha)
     	{
-    		Cha.Body.額瞼.Xi = 1;
+    		Cha.Body.ForeheadEyelid.Xi = 1;
     	}
 
-    	public static void 額瞼_0(this Character c, int i)
+    	public static void ForeheadEyelid_0(this Character c, int i)
     	{
     		switch (i)
     		{
     		case 0:
-    			c.額瞼_普();
+    			c.ForeheadEyelid_普();
     			break;
     		case 1:
-    			c.額瞼_卑();
+    			c.ForeheadEyelid_卑();
     			break;
     		}
     	}
@@ -3823,41 +3823,41 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public static void 額瞼_基(this Character Cha)
+    	public static void ForeheadEyelid_基(this Character Cha)
     	{
     		Cha.瞼基準額 = 0.0;
     	}
 
-    	public static void 額瞼_半1(this Character Cha)
+    	public static void ForeheadEyelid_半1(this Character Cha)
     	{
     		Cha.瞼基準額 = 0.2;
     	}
 
-    	public static void 額瞼_半2(this Character Cha)
+    	public static void ForeheadEyelid_半2(this Character Cha)
     	{
     		Cha.瞼基準額 = 0.4;
     	}
 
-    	public static void 額瞼_瞑(this Character Cha)
+    	public static void ForeheadEyelid_瞑(this Character Cha)
     	{
     		Cha.瞼基準額 = 1.0;
     	}
 
-    	public static void 額瞼_1(this Character c, int i)
+    	public static void ForeheadEyelid_1(this Character c, int i)
     	{
     		switch (i)
     		{
     		case 0:
-    			c.額瞼_基();
+    			c.ForeheadEyelid_基();
     			break;
     		case 1:
-    			c.額瞼_半1();
+    			c.ForeheadEyelid_半1();
     			break;
     		case 2:
-    			c.額瞼_半2();
+    			c.ForeheadEyelid_半2();
     			break;
     		case 3:
-    			c.額瞼_瞑();
+    			c.ForeheadEyelid_瞑();
     			break;
     		}
     	}
@@ -9387,8 +9387,8 @@ namespace SlaveMatrix
     		}
     		if (c.Body.IsForeheadEye)
     		{
-    			c.額瞼_0(額瞼_0感情対応[状態][Rng.XS.Next(額瞼_0感情対応[状態].Count)]);
-    			c.額瞼_1(c.Body.目隠帯_表示 ? 3 : 額瞼_1感情対応[状態][Rng.XS.Next(額瞼_1感情対応[状態].Count)]);
+    			c.ForeheadEyelid_0(ForeheadEyelid_0感情対応[状態][Rng.XS.Next(ForeheadEyelid_0感情対応[状態].Count)]);
+    			c.ForeheadEyelid_1(c.Body.目隠帯_表示 ? 3 : ForeheadEyelid_1感情対応[状態][Rng.XS.Next(ForeheadEyelid_1感情対応[状態].Count)]);
     		}
     	}
 

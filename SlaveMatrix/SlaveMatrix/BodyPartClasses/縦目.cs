@@ -226,7 +226,7 @@ namespace SlaveMatrix
     	{
     		縦目 縦目2 = this;
     		ThisType = GetType();
-    		Body = new VariantGrid(GlobalState.胴体["額目"]);
+    		Body = new VariantGrid(GlobalState.胴体["ForeheadEye"]);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_白目 = partGroup["白目"].ToPar();
     		PartGroup pars2 = partGroup["黒目"].ToPars();

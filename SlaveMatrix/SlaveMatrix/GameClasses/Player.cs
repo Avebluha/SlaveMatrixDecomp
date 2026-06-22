@@ -1314,7 +1314,7 @@ namespace SlaveMatrix
     				}
     				if (Cha.Body.IsForeheadEye)
     				{
-    					Cha.額瞼_瞑();
+    					Cha.ForeheadEyelid_瞑();
     				}
     			}
     		}
@@ -1336,7 +1336,7 @@ namespace SlaveMatrix
     			}
     			if (Cha.Body.IsForeheadEye)
     			{
-    				Cha.額瞼_半1();
+    				Cha.ForeheadEyelid_半1();
     			}
     		}
     		if (手膣 && Stamina > 0.1 && Wetness > 0.6 && Tension == 0.0 && Lust > 0.7 && Affection > 0.7 && (Excitement * 0.05).Lot())
@@ -1554,7 +1554,7 @@ namespace SlaveMatrix
     			}
     			if (Cha.Body.IsForeheadEye)
     			{
-    				Cha.額瞼_瞑();
+    				Cha.ForeheadEyelid_瞑();
     			}
     		}
     		else
@@ -1575,7 +1575,7 @@ namespace SlaveMatrix
     			}
     			if (Cha.Body.IsForeheadEye)
     			{
-    				Cha.額瞼_半2();
+    				Cha.ForeheadEyelid_半2();
     			}
     		}
     	}
@@ -2418,7 +2418,7 @@ namespace SlaveMatrix
     				}
     				if (Cha.Body.IsForeheadEye)
     				{
-    					Cha.額瞼_瞑();
+    					Cha.ForeheadEyelid_瞑();
     				}
     			}
     			else
@@ -2439,7 +2439,7 @@ namespace SlaveMatrix
     				}
     				if (Cha.Body.IsForeheadEye)
     				{
-    					Cha.額瞼_半2();
+    					Cha.ForeheadEyelid_半2();
     				}
     			}
     		}

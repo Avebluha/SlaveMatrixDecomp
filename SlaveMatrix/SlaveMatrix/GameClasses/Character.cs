@@ -804,7 +804,7 @@ namespace SlaveMatrix
     					}
     					if (cha.Body.IsForeheadEye)
     					{
-    						cha.Body.額瞼.Yv = m.Value.Clamp(cha.瞼基準額, 1.0);
+    						cha.Body.ForeheadEyelid.Yv = m.Value.Clamp(cha.瞼基準額, 1.0);
     					}
     				},
     				OnReach = delegate
@@ -1606,7 +1606,7 @@ namespace SlaveMatrix
     				}
     				if (cha.Body.IsForeheadEye)
     				{
-    					cha.額瞼_1(Rng.XS.Next(1, 4));
+    					cha.ForeheadEyelid_1(Rng.XS.Next(1, 4));
     				}
     				c_ = 0;
     				CoughCount = Rng.XS.NextM(1, 2) + Player.UI.ペニス処理.中出しCount / 2;

@@ -1666,7 +1666,7 @@ namespace SlaveMatrix
     			}
     			if (TrainingTarget.Body.IsForeheadEye)
     			{
-    				TrainingTarget.額瞼_半1();
+    				TrainingTarget.ForeheadEyelid_半1();
     				TrainingTarget.ForeheadEye_見つめ();
     			}
     			if (!TrainingTarget.Body.玉口枷_表示)

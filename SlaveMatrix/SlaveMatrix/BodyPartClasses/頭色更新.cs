@@ -13,13 +13,13 @@ namespace SlaveMatrix
 
     	private Vector2D[] mm;
 
-    	public 頭色更新(Head 頭, 単瞼 単瞼, 双瞼 瞼左, 双瞼 瞼右, 縦瞼 額瞼, 頬瞼 頬左, 頬瞼 頬右)
+    	public 頭色更新(Head 頭, 単瞼 単瞼, 双瞼 瞼左, 双瞼 瞼右, 縦瞼 ForeheadEyelid, 頬瞼 頬左, 頬瞼 頬右)
     	{
     		this.頭 = 頭;
-    		瞼 = EnumNoNull(単瞼, 瞼左, 瞼右, 額瞼, 頬左, 頬右).ToArray();
+    		瞼 = EnumNoNull(単瞼, 瞼左, 瞼右, ForeheadEyelid, 頬左, 頬右).ToArray();
     	}
 
-    	private IEnumerable<Element> EnumNoNull(単瞼 単瞼, 双瞼 瞼左, 双瞼 瞼右, 縦瞼 額瞼, 頬瞼 頬左, 頬瞼 頬右)
+    	private IEnumerable<Element> EnumNoNull(単瞼 単瞼, 双瞼 瞼左, 双瞼 瞼右, 縦瞼 ForeheadEyelid, 頬瞼 頬左, 頬瞼 頬右)
     	{
     		if (瞼 != null)
     		{
@@ -33,9 +33,9 @@ namespace SlaveMatrix
     		{
     			yield return 瞼右;
     		}
-    		if (額瞼 != null)
+    		if (ForeheadEyelid != null)
     		{
-    			yield return 額瞼;
+    			yield return ForeheadEyelid;
     		}
     		if (頬左 != null)
     		{
