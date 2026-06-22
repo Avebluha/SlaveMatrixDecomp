@@ -305,7 +305,7 @@ namespace SlaveMatrix
     	public static PregnantBelly_人D PregnantBelly()
     	{
     		PregnantBelly_人D obj = new PregnantBelly_人D();
-    		obj.腹板接続(new ボテ腹板D());
+    		obj.腹板接続(new PregnantBellyPlateD());
     		return obj;
     	}
 

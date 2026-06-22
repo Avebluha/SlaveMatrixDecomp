@@ -165,7 +165,7 @@ namespace SlaveMatrix
 
     	public PregnantBelly_人 PregnantBelly_人;
 
-    	public ボテ腹板 ボテ腹板_人;
+    	public PregnantBellyPlate PregnantBellyPlate_人;
 
     	public WaistSkin WaistSkin_人;
 
@@ -947,14 +947,14 @@ namespace SlaveMatrix
     			}
     			if (!PregnantBelly_人.表示 && value)
     			{
-    				ボテ腹板_人.腹板1_腹板_表示 = 胸腹板_人.虫性_腹板_表示;
-    				ボテ腹板_人.腹板1_縦線_表示 = 胸腹板_人.虫性_縦線_表示;
-    				ボテ腹板_人.腹板2_腹板_表示 = 胴腹板_人.虫性_腹板_表示;
-    				ボテ腹板_人.腹板2_縦線_表示 = 胴腹板_人.虫性_縦線_表示;
-    				ボテ腹板_人.腹板3_腹板_表示 = WaistSkin_人.虫性_腹板1_腹板_表示;
-    				ボテ腹板_人.腹板3_縦線_表示 = WaistSkin_人.虫性_腹板1_縦線_表示;
-    				ボテ腹板_人.腹板4_腹板_表示 = WaistSkin_人.虫性_腹板2_腹板_表示;
-    				ボテ腹板_人.腹板4_縦線_表示 = WaistSkin_人.虫性_腹板2_縦線_表示;
+    				PregnantBellyPlate_人.腹板1_腹板_表示 = 胸腹板_人.虫性_腹板_表示;
+    				PregnantBellyPlate_人.腹板1_縦線_表示 = 胸腹板_人.虫性_縦線_表示;
+    				PregnantBellyPlate_人.腹板2_腹板_表示 = 胴腹板_人.虫性_腹板_表示;
+    				PregnantBellyPlate_人.腹板2_縦線_表示 = 胴腹板_人.虫性_縦線_表示;
+    				PregnantBellyPlate_人.腹板3_腹板_表示 = WaistSkin_人.虫性_腹板1_腹板_表示;
+    				PregnantBellyPlate_人.腹板3_縦線_表示 = WaistSkin_人.虫性_腹板1_縦線_表示;
+    				PregnantBellyPlate_人.腹板4_腹板_表示 = WaistSkin_人.虫性_腹板2_腹板_表示;
+    				PregnantBellyPlate_人.腹板4_縦線_表示 = WaistSkin_人.虫性_腹板2_縦線_表示;
     				胸腹板_人.虫性_腹板_表示 = false;
     				胸腹板_人.虫性_縦線_表示 = false;
     				胴腹板_人.虫性_腹板_表示 = false;
@@ -966,22 +966,22 @@ namespace SlaveMatrix
     			}
     			else if (PregnantBelly_人.表示 && !value)
     			{
-    				胸腹板_人.虫性_腹板_表示 = ボテ腹板_人.腹板1_腹板_表示;
-    				胸腹板_人.虫性_縦線_表示 = ボテ腹板_人.腹板1_縦線_表示;
-    				胴腹板_人.虫性_腹板_表示 = ボテ腹板_人.腹板2_腹板_表示;
-    				胴腹板_人.虫性_縦線_表示 = ボテ腹板_人.腹板2_縦線_表示;
-    				WaistSkin_人.虫性_腹板1_腹板_表示 = ボテ腹板_人.腹板3_腹板_表示;
-    				WaistSkin_人.虫性_腹板1_縦線_表示 = ボテ腹板_人.腹板3_縦線_表示;
-    				WaistSkin_人.虫性_腹板2_腹板_表示 = ボテ腹板_人.腹板4_腹板_表示;
-    				WaistSkin_人.虫性_腹板2_縦線_表示 = ボテ腹板_人.腹板4_縦線_表示;
-    				ボテ腹板_人.腹板1_腹板_表示 = false;
-    				ボテ腹板_人.腹板1_縦線_表示 = false;
-    				ボテ腹板_人.腹板2_腹板_表示 = false;
-    				ボテ腹板_人.腹板2_縦線_表示 = false;
-    				ボテ腹板_人.腹板3_腹板_表示 = false;
-    				ボテ腹板_人.腹板3_縦線_表示 = false;
-    				ボテ腹板_人.腹板4_腹板_表示 = false;
-    				ボテ腹板_人.腹板4_縦線_表示 = false;
+    				胸腹板_人.虫性_腹板_表示 = PregnantBellyPlate_人.腹板1_腹板_表示;
+    				胸腹板_人.虫性_縦線_表示 = PregnantBellyPlate_人.腹板1_縦線_表示;
+    				胴腹板_人.虫性_腹板_表示 = PregnantBellyPlate_人.腹板2_腹板_表示;
+    				胴腹板_人.虫性_縦線_表示 = PregnantBellyPlate_人.腹板2_縦線_表示;
+    				WaistSkin_人.虫性_腹板1_腹板_表示 = PregnantBellyPlate_人.腹板3_腹板_表示;
+    				WaistSkin_人.虫性_腹板1_縦線_表示 = PregnantBellyPlate_人.腹板3_縦線_表示;
+    				WaistSkin_人.虫性_腹板2_腹板_表示 = PregnantBellyPlate_人.腹板4_腹板_表示;
+    				WaistSkin_人.虫性_腹板2_縦線_表示 = PregnantBellyPlate_人.腹板4_縦線_表示;
+    				PregnantBellyPlate_人.腹板1_腹板_表示 = false;
+    				PregnantBellyPlate_人.腹板1_縦線_表示 = false;
+    				PregnantBellyPlate_人.腹板2_腹板_表示 = false;
+    				PregnantBellyPlate_人.腹板2_縦線_表示 = false;
+    				PregnantBellyPlate_人.腹板3_腹板_表示 = false;
+    				PregnantBellyPlate_人.腹板3_縦線_表示 = false;
+    				PregnantBellyPlate_人.腹板4_腹板_表示 = false;
+    				PregnantBellyPlate_人.腹板4_縦線_表示 = false;
     			}
     			PregnantBelly_人.表示 = value;
     		}
@@ -2020,7 +2020,7 @@ namespace SlaveMatrix
     			else
     			{
     				PregnantBelly_人.Yv = value;
-    				ボテ腹板_人.Yv = value;
+    				PregnantBellyPlate_人.Yv = value;
     			}
     			上着B_前掛け.X0Y0_帯.SetSizeXCont(1.0 + 0.1 * PregnantBellyv);
     			上着B_前掛け.X0Y1_帯.SetSizeXCont(上着B_前掛け.X0Y0_帯.GetSizeXCont());
@@ -2046,7 +2046,7 @@ namespace SlaveMatrix
     			else
     			{
     				PregnantBelly_人.Yi = value;
-    				ボテ腹板_人.Yi = value;
+    				PregnantBellyPlate_人.Yi = value;
     			}
     			上着B_前掛け.X0Y0_帯.SetSizeXCont(1.0 + 0.1 * PregnantBellyv);
     			上着B_前掛け.X0Y1_帯.SetSizeXCont(上着B_前掛け.X0Y0_帯.GetSizeXCont());
@@ -3832,8 +3832,8 @@ namespace SlaveMatrix
     		{
     			Torso = Waist.Torso_接続.GetEle<Torso>();
     			PregnantBelly_人 = Waist.肌_接続.GetEle<PregnantBelly_人>();
-    			ボテ腹板_人 = PregnantBelly_人.腹板_接続.GetEle<ボテ腹板>();
-    			ボテ腹板_人.SetHitFalse();
+    			PregnantBellyPlate_人 = PregnantBelly_人.腹板_接続.GetEle<PregnantBellyPlate>();
+    			PregnantBellyPlate_人.SetHitFalse();
     			WaistSkin_人 = Waist.肌_接続.GetEle<WaistSkin>();
     			WaistSkin_人.X0Y0_陰毛.Hit = true;
     			WaistSkin_人.X0Y0_陰毛_ハート.Hit = true;
@@ -5781,7 +5781,7 @@ namespace SlaveMatrix
     					bod.EI半中1.描画(are);
     				}
     				bod.PregnantBelly_人.描画0(are);
-    				bod.ボテ腹板_人.描画0(are);
+    				bod.PregnantBellyPlate_人.描画0(are);
     				bod.WaistSkin_人.描画0(are);
     				bod.胴腹板_人.描画0(are);
     				bod.胸腹板_人.描画0(are);
@@ -6208,7 +6208,7 @@ namespace SlaveMatrix
     					bod.EI半中1.描画(are);
     				}
     				bod.PregnantBelly_人.描画0(are);
-    				bod.ボテ腹板_人.描画0(are);
+    				bod.PregnantBellyPlate_人.描画0(are);
     				bod.WaistSkin_人.描画0(are);
     				bod.胴腹板_人.描画0(are);
     				bod.胸腹板_人.描画0(are);
@@ -6635,7 +6635,7 @@ namespace SlaveMatrix
     					bod.EI半中1.描画(are);
     				}
     				bod.PregnantBelly_人.描画0(are);
-    				bod.ボテ腹板_人.描画0(are);
+    				bod.PregnantBellyPlate_人.描画0(are);
     				bod.WaistSkin_人.描画0(are);
     				bod.胴腹板_人.描画0(are);
     				bod.胸腹板_人.描画0(are);
@@ -7074,7 +7074,7 @@ namespace SlaveMatrix
     					bod.EI半中2.描画(are);
     				}
     				bod.PregnantBelly_人.描画0(are);
-    				bod.ボテ腹板_人.描画0(are);
+    				bod.PregnantBellyPlate_人.描画0(are);
     				bod.WaistSkin_人.描画0(are);
     				bod.胴腹板_人.描画0(are);
     				bod.胸腹板_人.描画0(are);
@@ -7485,7 +7485,7 @@ namespace SlaveMatrix
     					bod.EI半中2.描画(are);
     				}
     				bod.PregnantBelly_人.描画0(are);
-    				bod.ボテ腹板_人.描画0(are);
+    				bod.PregnantBellyPlate_人.描画0(are);
     				bod.WaistSkin_人.描画0(are);
     				bod.胴腹板_人.描画0(are);
     				bod.胸腹板_人.描画0(are);
@@ -7908,7 +7908,7 @@ namespace SlaveMatrix
     					bod.EI半中2.描画(are);
     				}
     				bod.PregnantBelly_人.描画0(are);
-    				bod.ボテ腹板_人.描画0(are);
+    				bod.PregnantBellyPlate_人.描画0(are);
     				bod.WaistSkin_人.描画0(are);
     				bod.胴腹板_人.描画0(are);
     				bod.胸腹板_人.描画0(are);
@@ -8364,7 +8364,7 @@ namespace SlaveMatrix
     					bod.EI半中2.描画(are);
     				}
     				bod.PregnantBelly_人.描画0(are);
-    				bod.ボテ腹板_人.描画0(are);
+    				bod.PregnantBellyPlate_人.描画0(are);
     				bod.WaistSkin_人.描画0(are);
     				bod.胴腹板_人.描画0(are);
     				bod.胸腹板_人.描画0(are);
@@ -8792,7 +8792,7 @@ namespace SlaveMatrix
     				bod.EI半中2.描画(are);
     			}
     			bod.PregnantBelly_人.描画0(are);
-    			bod.ボテ腹板_人.描画0(are);
+    			bod.PregnantBellyPlate_人.描画0(are);
     			bod.WaistSkin_人.描画0(are);
     			bod.胴腹板_人.描画0(are);
     			bod.胸腹板_人.描画0(are);
