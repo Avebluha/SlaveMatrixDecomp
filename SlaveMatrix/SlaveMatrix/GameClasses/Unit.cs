@@ -490,7 +490,7 @@ namespace SlaveMatrix
     	public void Set原種素質()
     	{
     		半身D eleD = ChaD.body_tree.半身_接続.GetEleD<半身D>();
-    		腰肌D eleD2 = ChaD.body_tree.肌_接続.GetEleD<腰肌D>();
+    		WaistSkinD eleD2 = ChaD.body_tree.肌_接続.GetEleD<WaistSkinD>();
     		Hairless = !(eleD is 単足_粘D) && !(eleD is 四足胸D) && (!(eleD is 長物_蛇D) || !((長物_蛇D)eleD).ガード) && !ChaD.body_tree.虫性_甲殻1_表示 && !ChaD.body_tree.虫性_甲殻2_表示 && !eleD2.竜性_鱗1_表示 && !eleD2.竜性_鱗2_表示 && !eleD2.竜性_鱗3_表示 && !eleD2.竜性_鱗4_表示 && ((!eleD2.陰毛_表示 && !eleD2.獣性_獣毛_表示) || ChaD.最陰毛濃度 == 0.0);
     		if (!(Race == GameText.スライム) && !(Race == GameText.フェニックス) && !(Race == GameText.ウロボロス))
     		{
@@ -557,7 +557,7 @@ namespace SlaveMatrix
     	public void Set交配素質()
     	{
     		半身D eleD = ChaD.body_tree.半身_接続.GetEleD<半身D>();
-    		腰肌D eleD2 = ChaD.body_tree.肌_接続.GetEleD<腰肌D>();
+    		WaistSkinD eleD2 = ChaD.body_tree.肌_接続.GetEleD<WaistSkinD>();
     		Hairless = !(eleD is 単足_粘D) && !(eleD is 四足胸D) && (!(eleD is 長物_蛇D) || !((長物_蛇D)eleD).ガード) && !ChaD.body_tree.虫性_甲殻1_表示 && !ChaD.body_tree.虫性_甲殻2_表示 && !eleD2.竜性_鱗1_表示 && !eleD2.竜性_鱗2_表示 && !eleD2.竜性_鱗3_表示 && !eleD2.竜性_鱗4_表示 && ((!eleD2.陰毛_表示 && !eleD2.獣性_獣毛_表示) || ChaD.最陰毛濃度 == 0.0);
     		Virgin = true;
     		Muscular = ChaD.body_tree.筋肉;

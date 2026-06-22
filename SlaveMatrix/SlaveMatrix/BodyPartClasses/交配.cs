@@ -1858,8 +1858,8 @@ namespace SlaveMatrix
     		Waist.膣基接続(Uni.性器());
     		Waist.肛門接続(Uni.肛門());
     		Waist.肌接続(Uni.PregnantBelly());
-    		腰肌D 腰肌;
-    		Waist.肌接続(腰肌 = Mix<腰肌D>(母方, 父方, i, 原種モード));
+    		WaistSkinD WaistSkin;
+    		Waist.肌接続(WaistSkin = Mix<WaistSkinD>(母方, 父方, i, 原種モード));
     		Waist.肌接続(new 下着ボトム_ノーマルD());
     		Waist.肌接続(new 下着ボトム_マイクロD());
     		JacketBottom_クロスD JacketBottom_クロスD2 = new JacketBottom_クロスD();
@@ -2404,12 +2404,12 @@ namespace SlaveMatrix
     				長物_蛇D2.AlignC();
     				if (長物_蛇D2.ガード)
     				{
-    					腰肌.竜性_鱗1_表示 = false;
-    					腰肌.竜性_鱗2_表示 = false;
-    					腰肌.竜性_鱗3_表示 = false;
-    					腰肌.竜性_鱗4_表示 = false;
-    					腰肌.獣性_獣毛_表示 = false;
-    					腰肌.陰毛_表示 = false;
+    					WaistSkin.竜性_鱗1_表示 = false;
+    					WaistSkin.竜性_鱗2_表示 = false;
+    					WaistSkin.竜性_鱗3_表示 = false;
+    					WaistSkin.竜性_鱗4_表示 = false;
+    					WaistSkin.獣性_獣毛_表示 = false;
+    					WaistSkin.陰毛_表示 = false;
     				}
     				Waist.接続(母方, 父方, i, ConnectionInfo.Waist_腿左_接続, 要素構成, 接続構成, 変異率, 原種モード);
     				for (int num15 = Waist.腿左_接続.Count - 1; num15 > -1; num15--)
@@ -2513,14 +2513,14 @@ namespace SlaveMatrix
     				四足腰D 四足腰D2 = Mix<四足腰D>(母方, 父方, i, 原種モード);
     				if (四足腰D2 != null)
     				{
-    					腰肌D 腰肌D2 = null;
+    					WaistSkinD WaistSkinD2 = null;
     					四足腰D2.膣基接続(new VaginaOrigin_獣D());
     					四足腰D2.膣基接続(new InternalSemen_獣D());
     					四足腰D2.膣基接続(new XRay_獣D());
     					四足腰D2.膣基接続(Uni.四足性器());
     					四足腰D2.肛門接続(Uni.四足肛門());
     					四足腰D2.肌接続(new PregnantBelly_獣D());
-    					四足腰D2.肌接続(腰肌D2 = Mix<腰肌D>(母方, 父方, i, 原種モード));
+    					四足腰D2.肌接続(WaistSkinD2 = Mix<WaistSkinD>(母方, 父方, i, 原種モード));
     					Waist.VaginaOrigin_接続.SetEleD(delegate(性器_人D e)
     					{
     						e.表示 = false;
@@ -2529,41 +2529,41 @@ namespace SlaveMatrix
     					{
     						e.表示 = false;
     					});
-    					四足腰D2.肌_接続.SetEleD(delegate(腰肌D e)
+    					四足腰D2.肌_接続.SetEleD(delegate(WaistSkinD e)
     					{
     						e.陰毛_表示 = false;
     					});
     					四足腰D2.AlignC();
-    					if (腰肌D2 != null)
+    					if (WaistSkinD2 != null)
     					{
-    						腰肌D2.尺度B *= 1.4;
-    						腰肌D2.虫性_腹板1_腹板_表示 = false;
-    						腰肌D2.虫性_腹板2_腹板_表示 = false;
-    						腰肌D2.虫性_腹板1_縦線_表示 = false;
-    						腰肌D2.虫性_腹板2_縦線_表示 = false;
-    						腰肌D2.陰毛_表示 = false;
+    						WaistSkinD2.尺度B *= 1.4;
+    						WaistSkinD2.虫性_腹板1_腹板_表示 = false;
+    						WaistSkinD2.虫性_腹板2_腹板_表示 = false;
+    						WaistSkinD2.虫性_腹板1_縦線_表示 = false;
+    						WaistSkinD2.虫性_腹板2_縦線_表示 = false;
+    						WaistSkinD2.陰毛_表示 = false;
     					}
     					四足胴D2.腰接続(四足腰D2);
     					四足腰D2.肥大 = Waist.肥大;
-    					if ((腰肌D2.淫タトゥ_ハート_タトゥ右1_表示 || 腰肌D2.淫タトゥ_ハート_タトゥ右2_表示 || 腰肌D2.淫タトゥ_ハート_タトゥ左1_表示 || 腰肌D2.淫タトゥ_ハート_タトゥ左2_表示) && (腰肌D2.植タトゥ_タトゥ左_表示 || 腰肌D2.植タトゥ_タトゥ右_表示))
+    					if ((WaistSkinD2.淫タトゥ_ハート_タトゥ右1_表示 || WaistSkinD2.淫タトゥ_ハート_タトゥ右2_表示 || WaistSkinD2.淫タトゥ_ハート_タトゥ左1_表示 || WaistSkinD2.淫タトゥ_ハート_タトゥ左2_表示) && (WaistSkinD2.植タトゥ_タトゥ左_表示 || WaistSkinD2.植タトゥ_タトゥ右_表示))
     					{
     						if (Rng.XS.NextBool())
     						{
-    							腰肌D2.淫タトゥ_ハート_タトゥ右1_表示 = true;
-    							腰肌D2.淫タトゥ_ハート_タトゥ右2_表示 = true;
-    							腰肌D2.淫タトゥ_ハート_タトゥ左1_表示 = true;
-    							腰肌D2.淫タトゥ_ハート_タトゥ左2_表示 = true;
-    							腰肌D2.植タトゥ_タトゥ左_表示 = false;
-    							腰肌D2.植タトゥ_タトゥ右_表示 = false;
+    							WaistSkinD2.淫タトゥ_ハート_タトゥ右1_表示 = true;
+    							WaistSkinD2.淫タトゥ_ハート_タトゥ右2_表示 = true;
+    							WaistSkinD2.淫タトゥ_ハート_タトゥ左1_表示 = true;
+    							WaistSkinD2.淫タトゥ_ハート_タトゥ左2_表示 = true;
+    							WaistSkinD2.植タトゥ_タトゥ左_表示 = false;
+    							WaistSkinD2.植タトゥ_タトゥ右_表示 = false;
     						}
     						else
     						{
-    							腰肌D2.淫タトゥ_ハート_タトゥ右1_表示 = false;
-    							腰肌D2.淫タトゥ_ハート_タトゥ右2_表示 = false;
-    							腰肌D2.淫タトゥ_ハート_タトゥ左1_表示 = false;
-    							腰肌D2.淫タトゥ_ハート_タトゥ左2_表示 = false;
-    							腰肌D2.植タトゥ_タトゥ左_表示 = true;
-    							腰肌D2.植タトゥ_タトゥ右_表示 = true;
+    							WaistSkinD2.淫タトゥ_ハート_タトゥ右1_表示 = false;
+    							WaistSkinD2.淫タトゥ_ハート_タトゥ右2_表示 = false;
+    							WaistSkinD2.淫タトゥ_ハート_タトゥ左1_表示 = false;
+    							WaistSkinD2.淫タトゥ_ハート_タトゥ左2_表示 = false;
+    							WaistSkinD2.植タトゥ_タトゥ左_表示 = true;
+    							WaistSkinD2.植タトゥ_タトゥ右_表示 = true;
     						}
     					}
     				}
@@ -3800,11 +3800,11 @@ namespace SlaveMatrix
     		bool flag4 = false;
     		flag4 |= 胸腹板D2.虫性_腹板_表示;
     		flag4 |= 胴腹板D2.虫性_腹板_表示;
-    		flag4 |= 腰肌.虫性_腹板1_腹板_表示 || 腰肌.虫性_腹板2_腹板_表示;
+    		flag4 |= WaistSkin.虫性_腹板1_腹板_表示 || WaistSkin.虫性_腹板2_腹板_表示;
     		bool flag5 = false;
     		flag5 |= 胸腹板D2.虫性_縦線_表示;
     		flag5 |= 胴腹板D2.虫性_縦線_表示;
-    		flag5 |= 腰肌.虫性_腹板1_縦線_表示 || 腰肌.虫性_腹板2_縦線_表示;
+    		flag5 |= WaistSkin.虫性_腹板1_縦線_表示 || WaistSkin.虫性_腹板2_縦線_表示;
     		flag5 = flag5 && flag4;
     		if (flag5)
     		{
@@ -3814,10 +3814,10 @@ namespace SlaveMatrix
     		胸腹板D2.虫性_縦線_表示 = flag5;
     		胴腹板D2.虫性_腹板_表示 = flag4;
     		胴腹板D2.虫性_縦線_表示 = flag5;
-    		腰肌.虫性_腹板1_腹板_表示 = flag4;
-    		腰肌.虫性_腹板2_腹板_表示 = flag4;
-    		腰肌.虫性_腹板1_縦線_表示 = flag5;
-    		腰肌.虫性_腹板2_縦線_表示 = flag5;
+    		WaistSkin.虫性_腹板1_腹板_表示 = flag4;
+    		WaistSkin.虫性_腹板2_腹板_表示 = flag4;
+    		WaistSkin.虫性_腹板1_縦線_表示 = flag5;
+    		WaistSkin.虫性_腹板2_縦線_表示 = flag5;
     		if (Rng.XS.NextBool())
     		{
     			bool flag6 = false;
@@ -3989,15 +3989,15 @@ namespace SlaveMatrix
     			HeadD2.触覚左_接続.RemoveAll((ElementData e) => e is 触覚D);
     			HeadD2.触覚右_接続.RemoveAll((ElementData e) => e is 触覚D);
     		}
-    		if (腰肌.陰毛_表示 && 腰肌.獣性_獣毛_表示)
+    		if (WaistSkin.陰毛_表示 && WaistSkin.獣性_獣毛_表示)
     		{
     			if (Rng.XS.NextBool())
     			{
-    				腰肌.陰毛_表示 = false;
+    				WaistSkin.陰毛_表示 = false;
     			}
     			else
     			{
-    				腰肌.獣性_獣毛_表示 = false;
+    				WaistSkin.獣性_獣毛_表示 = false;
     			}
     		}
     		if (縦瞼D2 != null)
@@ -4058,25 +4058,25 @@ namespace SlaveMatrix
     				単瞼D2.睫毛下下右_長さ = 単瞼D2.睫毛下下左_長さ;
     			}
     		}
-    		if ((腰肌.淫タトゥ_ハート_タトゥ右1_表示 || 腰肌.淫タトゥ_ハート_タトゥ右2_表示 || 腰肌.淫タトゥ_ハート_タトゥ左1_表示 || 腰肌.淫タトゥ_ハート_タトゥ左2_表示) && (腰肌.植タトゥ_タトゥ左_表示 || 腰肌.植タトゥ_タトゥ右_表示))
+    		if ((WaistSkin.淫タトゥ_ハート_タトゥ右1_表示 || WaistSkin.淫タトゥ_ハート_タトゥ右2_表示 || WaistSkin.淫タトゥ_ハート_タトゥ左1_表示 || WaistSkin.淫タトゥ_ハート_タトゥ左2_表示) && (WaistSkin.植タトゥ_タトゥ左_表示 || WaistSkin.植タトゥ_タトゥ右_表示))
     		{
     			if (Rng.XS.NextBool())
     			{
-    				腰肌.淫タトゥ_ハート_タトゥ右1_表示 = true;
-    				腰肌.淫タトゥ_ハート_タトゥ右2_表示 = true;
-    				腰肌.淫タトゥ_ハート_タトゥ左1_表示 = true;
-    				腰肌.淫タトゥ_ハート_タトゥ左2_表示 = true;
-    				腰肌.植タトゥ_タトゥ左_表示 = false;
-    				腰肌.植タトゥ_タトゥ右_表示 = false;
+    				WaistSkin.淫タトゥ_ハート_タトゥ右1_表示 = true;
+    				WaistSkin.淫タトゥ_ハート_タトゥ右2_表示 = true;
+    				WaistSkin.淫タトゥ_ハート_タトゥ左1_表示 = true;
+    				WaistSkin.淫タトゥ_ハート_タトゥ左2_表示 = true;
+    				WaistSkin.植タトゥ_タトゥ左_表示 = false;
+    				WaistSkin.植タトゥ_タトゥ右_表示 = false;
     			}
     			else
     			{
-    				腰肌.淫タトゥ_ハート_タトゥ右1_表示 = false;
-    				腰肌.淫タトゥ_ハート_タトゥ右2_表示 = false;
-    				腰肌.淫タトゥ_ハート_タトゥ左1_表示 = false;
-    				腰肌.淫タトゥ_ハート_タトゥ左2_表示 = false;
-    				腰肌.植タトゥ_タトゥ左_表示 = true;
-    				腰肌.植タトゥ_タトゥ右_表示 = true;
+    				WaistSkin.淫タトゥ_ハート_タトゥ右1_表示 = false;
+    				WaistSkin.淫タトゥ_ハート_タトゥ右2_表示 = false;
+    				WaistSkin.淫タトゥ_ハート_タトゥ左1_表示 = false;
+    				WaistSkin.淫タトゥ_ハート_タトゥ左2_表示 = false;
+    				WaistSkin.植タトゥ_タトゥ左_表示 = true;
+    				WaistSkin.植タトゥ_タトゥ右_表示 = true;
     			}
     		}
     		if (flag3)

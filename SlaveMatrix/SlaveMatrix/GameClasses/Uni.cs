@@ -71,7 +71,7 @@ namespace SlaveMatrix
     		waist_description.膣基接続(性器());
     		waist_description.肛門接続(肛門());
     		waist_description.肌接続(PregnantBelly());
-    		waist_description.肌接続(new 腰肌D());
+    		waist_description.肌接続(new WaistSkinD());
     		waist_description.肌接続(new 下着ボトム_ノーマルD());
     		waist_description.肌接続(new 下着ボトム_マイクロD());
     		JacketBottom_クロスD JacketBottom_クロスD2 = new JacketBottom_クロスD();
@@ -114,7 +114,7 @@ namespace SlaveMatrix
     		obj.膣基接続(四足性器());
     		obj.肛門接続(四足肛門());
     		obj.肌接続(new PregnantBelly_獣D());
-    		obj.肌接続(new 腰肌D
+    		obj.肌接続(new WaistSkinD
     		{
     			尺度B = 1.4,
     			虫性_腹板1_縦線_表示 = false,

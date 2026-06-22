@@ -130,7 +130,7 @@ namespace SlaveMatrix
     		unit.Name = unit.Race;
     		unit.妊娠進行期間 = 2;
     		unit.種族情報 = RacialDefinitions.race_information[unit.Race];
-    		腰肌D eleD = unit.ChaD.body_tree.肌_接続.GetEleD<腰肌D>();
+    		WaistSkinD eleD = unit.ChaD.body_tree.肌_接続.GetEleD<WaistSkinD>();
     		unit.Hairless = (!eleD.陰毛_表示 && !eleD.獣性_獣毛_表示) || unit.ChaD.最陰毛濃度 == 0.0;
     		unit.Mother = unit;
     		unit.Father = unit;

@@ -3,7 +3,7 @@ using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
-    public class 腰肌 : Element
+    public class WaistSkin : Element
     {
     	public ShapePart X0Y0_淫タトゥ_ハート_タトゥ左1;
 
@@ -1008,7 +1008,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 腰肌(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 腰肌D e)
+    	public WaistSkin(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, WaistSkinD e)
     	{
     		ThisType = GetType();
     		Body = new VariantGrid(GlobalState.胴体["腰肌"]);

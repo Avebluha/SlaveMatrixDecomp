@@ -167,7 +167,7 @@ namespace SlaveMatrix
 
     	public ボテ腹板 ボテ腹板_人;
 
-    	public 腰肌 腰肌_人;
+    	public WaistSkin WaistSkin_人;
 
     	public 乳房 乳房左;
 
@@ -265,7 +265,7 @@ namespace SlaveMatrix
 
     	public 胴肌 胴肌_獣;
 
-    	public 腰肌 腰肌_獣;
+    	public WaistSkin WaistSkin_獣;
 
     	public 胸毛 胸毛_獣;
 
@@ -951,18 +951,18 @@ namespace SlaveMatrix
     				ボテ腹板_人.腹板1_縦線_表示 = 胸腹板_人.虫性_縦線_表示;
     				ボテ腹板_人.腹板2_腹板_表示 = 胴腹板_人.虫性_腹板_表示;
     				ボテ腹板_人.腹板2_縦線_表示 = 胴腹板_人.虫性_縦線_表示;
-    				ボテ腹板_人.腹板3_腹板_表示 = 腰肌_人.虫性_腹板1_腹板_表示;
-    				ボテ腹板_人.腹板3_縦線_表示 = 腰肌_人.虫性_腹板1_縦線_表示;
-    				ボテ腹板_人.腹板4_腹板_表示 = 腰肌_人.虫性_腹板2_腹板_表示;
-    				ボテ腹板_人.腹板4_縦線_表示 = 腰肌_人.虫性_腹板2_縦線_表示;
+    				ボテ腹板_人.腹板3_腹板_表示 = WaistSkin_人.虫性_腹板1_腹板_表示;
+    				ボテ腹板_人.腹板3_縦線_表示 = WaistSkin_人.虫性_腹板1_縦線_表示;
+    				ボテ腹板_人.腹板4_腹板_表示 = WaistSkin_人.虫性_腹板2_腹板_表示;
+    				ボテ腹板_人.腹板4_縦線_表示 = WaistSkin_人.虫性_腹板2_縦線_表示;
     				胸腹板_人.虫性_腹板_表示 = false;
     				胸腹板_人.虫性_縦線_表示 = false;
     				胴腹板_人.虫性_腹板_表示 = false;
     				胴腹板_人.虫性_縦線_表示 = false;
-    				腰肌_人.虫性_腹板1_腹板_表示 = false;
-    				腰肌_人.虫性_腹板1_縦線_表示 = false;
-    				腰肌_人.虫性_腹板2_腹板_表示 = false;
-    				腰肌_人.虫性_腹板2_縦線_表示 = false;
+    				WaistSkin_人.虫性_腹板1_腹板_表示 = false;
+    				WaistSkin_人.虫性_腹板1_縦線_表示 = false;
+    				WaistSkin_人.虫性_腹板2_腹板_表示 = false;
+    				WaistSkin_人.虫性_腹板2_縦線_表示 = false;
     			}
     			else if (PregnantBelly_人.表示 && !value)
     			{
@@ -970,10 +970,10 @@ namespace SlaveMatrix
     				胸腹板_人.虫性_縦線_表示 = ボテ腹板_人.腹板1_縦線_表示;
     				胴腹板_人.虫性_腹板_表示 = ボテ腹板_人.腹板2_腹板_表示;
     				胴腹板_人.虫性_縦線_表示 = ボテ腹板_人.腹板2_縦線_表示;
-    				腰肌_人.虫性_腹板1_腹板_表示 = ボテ腹板_人.腹板3_腹板_表示;
-    				腰肌_人.虫性_腹板1_縦線_表示 = ボテ腹板_人.腹板3_縦線_表示;
-    				腰肌_人.虫性_腹板2_腹板_表示 = ボテ腹板_人.腹板4_腹板_表示;
-    				腰肌_人.虫性_腹板2_縦線_表示 = ボテ腹板_人.腹板4_縦線_表示;
+    				WaistSkin_人.虫性_腹板1_腹板_表示 = ボテ腹板_人.腹板3_腹板_表示;
+    				WaistSkin_人.虫性_腹板1_縦線_表示 = ボテ腹板_人.腹板3_縦線_表示;
+    				WaistSkin_人.虫性_腹板2_腹板_表示 = ボテ腹板_人.腹板4_腹板_表示;
+    				WaistSkin_人.虫性_腹板2_縦線_表示 = ボテ腹板_人.腹板4_縦線_表示;
     				ボテ腹板_人.腹板1_腹板_表示 = false;
     				ボテ腹板_人.腹板1_縦線_表示 = false;
     				ボテ腹板_人.腹板2_腹板_表示 = false;
@@ -1592,7 +1592,7 @@ namespace SlaveMatrix
     		set
     		{
     			Waist.Yv = value;
-    			腰肌_人.Yv = value;
+    			WaistSkin_人.Yv = value;
     			下着B_ノーマル.Yv = value;
     			下着B_マイクロ.Yv = value;
     			性器_人.Body.SetSizeYCont(0.65 + Waist.Yv * 0.35);
@@ -1622,7 +1622,7 @@ namespace SlaveMatrix
     		set
     		{
     			Waist.Yi = value;
-    			腰肌_人.Yi = value;
+    			WaistSkin_人.Yi = value;
     			下着B_ノーマル.Yi = value;
     			下着B_マイクロ.Yi = value;
     			性器_人.Body.SetSizeYCont(0.65 + Waist.Yv * 0.35);
@@ -1652,7 +1652,7 @@ namespace SlaveMatrix
     		set
     		{
     			Waist_獣.Yv = value;
-    			腰肌_獣.Yv = value;
+    			WaistSkin_獣.Yv = value;
     			性器_獣.Body.SetSizeYCont(0.65 + Waist_獣.Yv * 0.35);
     			foreach (ShapePart item in 性器_獣.Body.EnumJoinRoot)
     			{
@@ -1672,7 +1672,7 @@ namespace SlaveMatrix
     		set
     		{
     			Waist_獣.Yi = value;
-    			腰肌_獣.Yi = value;
+    			WaistSkin_獣.Yi = value;
     			性器_獣.Body.SetSizeYCont(0.65 + Waist_獣.Yv * 0.35);
     			foreach (ShapePart item in 性器_獣.Body.EnumJoinRoot)
     			{
@@ -2328,10 +2328,10 @@ namespace SlaveMatrix
     				Set表示(ピアス, ピアスi);
     				ピアス.配色(ピアスi.色);
     				ピアス.SetHitFalse();
-    				腰肌_人.陰毛_ハート_表示 = (腰肌_人.陰毛_表示 || 腰肌_人.獣性_獣毛_表示) && ピアス.表示;
-    				腰肌_人.陰毛CD.不透明度 = Cha.CharacterData.現陰毛 * Cha.CharacterData.最陰毛濃度;
-    				腰肌_人.獣性_獣毛CD.不透明度 = Cha.CharacterData.現陰毛;
-    				腰肌_人.陰毛_ハートCD.不透明度 = Cha.CharacterData.現陰毛.Inverse() * Cha.CharacterData.最陰毛濃度;
+    				WaistSkin_人.陰毛_ハート_表示 = (WaistSkin_人.陰毛_表示 || WaistSkin_人.獣性_獣毛_表示) && ピアス.表示;
+    				WaistSkin_人.陰毛CD.不透明度 = Cha.CharacterData.現陰毛 * Cha.CharacterData.最陰毛濃度;
+    				WaistSkin_人.獣性_獣毛CD.不透明度 = Cha.CharacterData.現陰毛;
+    				WaistSkin_人.陰毛_ハートCD.不透明度 = Cha.CharacterData.現陰毛.Inverse() * Cha.CharacterData.最陰毛濃度;
     			}
     		}
     	}
@@ -3834,22 +3834,22 @@ namespace SlaveMatrix
     			PregnantBelly_人 = Waist.肌_接続.GetEle<PregnantBelly_人>();
     			ボテ腹板_人 = PregnantBelly_人.腹板_接続.GetEle<ボテ腹板>();
     			ボテ腹板_人.SetHitFalse();
-    			腰肌_人 = Waist.肌_接続.GetEle<腰肌>();
-    			腰肌_人.X0Y0_陰毛.Hit = true;
-    			腰肌_人.X0Y0_陰毛_ハート.Hit = true;
-    			腰肌_人.X0Y0_獣性_獣毛.Hit = true;
-    			腰肌_人.X0Y1_陰毛.Hit = true;
-    			腰肌_人.X0Y1_陰毛_ハート.Hit = true;
-    			腰肌_人.X0Y1_獣性_獣毛.Hit = true;
-    			腰肌_人.X0Y2_陰毛.Hit = true;
-    			腰肌_人.X0Y2_陰毛_ハート.Hit = true;
-    			腰肌_人.X0Y2_獣性_獣毛.Hit = true;
-    			腰肌_人.X0Y3_陰毛.Hit = true;
-    			腰肌_人.X0Y3_陰毛_ハート.Hit = true;
-    			腰肌_人.X0Y3_獣性_獣毛.Hit = true;
-    			腰肌_人.X0Y4_陰毛.Hit = true;
-    			腰肌_人.X0Y4_陰毛_ハート.Hit = true;
-    			腰肌_人.X0Y4_獣性_獣毛.Hit = true;
+    			WaistSkin_人 = Waist.肌_接続.GetEle<WaistSkin>();
+    			WaistSkin_人.X0Y0_陰毛.Hit = true;
+    			WaistSkin_人.X0Y0_陰毛_ハート.Hit = true;
+    			WaistSkin_人.X0Y0_獣性_獣毛.Hit = true;
+    			WaistSkin_人.X0Y1_陰毛.Hit = true;
+    			WaistSkin_人.X0Y1_陰毛_ハート.Hit = true;
+    			WaistSkin_人.X0Y1_獣性_獣毛.Hit = true;
+    			WaistSkin_人.X0Y2_陰毛.Hit = true;
+    			WaistSkin_人.X0Y2_陰毛_ハート.Hit = true;
+    			WaistSkin_人.X0Y2_獣性_獣毛.Hit = true;
+    			WaistSkin_人.X0Y3_陰毛.Hit = true;
+    			WaistSkin_人.X0Y3_陰毛_ハート.Hit = true;
+    			WaistSkin_人.X0Y3_獣性_獣毛.Hit = true;
+    			WaistSkin_人.X0Y4_陰毛.Hit = true;
+    			WaistSkin_人.X0Y4_陰毛_ハート.Hit = true;
+    			WaistSkin_人.X0Y4_獣性_獣毛.Hit = true;
     			肛門_人 = Waist.肛門_接続.GetEle<肛門_人>();
     			肛門精液_人 = 肛門_人.肛門精液_接続.GetEle<肛門精液_人>();
     			肛門精液_人.SetHitFalse();
@@ -4499,9 +4499,9 @@ namespace SlaveMatrix
     					{
     						胴肌_獣 = (胴肌)item22;
     					}
-    					else if (item22 is 腰肌)
+    					else if (item22 is WaistSkin)
     					{
-    						腰肌_獣 = (腰肌)item22;
+    						WaistSkin_獣 = (WaistSkin)item22;
     					}
     					else if (item22 is 胸毛)
     					{
@@ -4566,22 +4566,22 @@ namespace SlaveMatrix
     				}
     				胸肌_獣.SetHitFalse();
     				胴肌_獣.SetHitFalse();
-    				腰肌_獣.SetHitFalse();
-    				腰肌_獣.X0Y0_陰毛.Hit = true;
-    				腰肌_獣.X0Y0_陰毛_ハート.Hit = true;
-    				腰肌_獣.X0Y0_獣性_獣毛.Hit = true;
-    				腰肌_獣.X0Y1_陰毛.Hit = true;
-    				腰肌_獣.X0Y1_陰毛_ハート.Hit = true;
-    				腰肌_獣.X0Y1_獣性_獣毛.Hit = true;
-    				腰肌_獣.X0Y2_陰毛.Hit = true;
-    				腰肌_獣.X0Y2_陰毛_ハート.Hit = true;
-    				腰肌_獣.X0Y2_獣性_獣毛.Hit = true;
-    				腰肌_獣.X0Y3_陰毛.Hit = true;
-    				腰肌_獣.X0Y3_陰毛_ハート.Hit = true;
-    				腰肌_獣.X0Y3_獣性_獣毛.Hit = true;
-    				腰肌_獣.X0Y4_陰毛.Hit = true;
-    				腰肌_獣.X0Y4_陰毛_ハート.Hit = true;
-    				腰肌_獣.X0Y4_獣性_獣毛.Hit = true;
+    				WaistSkin_獣.SetHitFalse();
+    				WaistSkin_獣.X0Y0_陰毛.Hit = true;
+    				WaistSkin_獣.X0Y0_陰毛_ハート.Hit = true;
+    				WaistSkin_獣.X0Y0_獣性_獣毛.Hit = true;
+    				WaistSkin_獣.X0Y1_陰毛.Hit = true;
+    				WaistSkin_獣.X0Y1_陰毛_ハート.Hit = true;
+    				WaistSkin_獣.X0Y1_獣性_獣毛.Hit = true;
+    				WaistSkin_獣.X0Y2_陰毛.Hit = true;
+    				WaistSkin_獣.X0Y2_陰毛_ハート.Hit = true;
+    				WaistSkin_獣.X0Y2_獣性_獣毛.Hit = true;
+    				WaistSkin_獣.X0Y3_陰毛.Hit = true;
+    				WaistSkin_獣.X0Y3_陰毛_ハート.Hit = true;
+    				WaistSkin_獣.X0Y3_獣性_獣毛.Hit = true;
+    				WaistSkin_獣.X0Y4_陰毛.Hit = true;
+    				WaistSkin_獣.X0Y4_陰毛_ハート.Hit = true;
+    				WaistSkin_獣.X0Y4_獣性_獣毛.Hit = true;
     				肛門精液_獣.SetHitFalse();
     				VaginaOrigin_獣.SetHitFalse();
     				InternalSemen_獣.SetHitFalse();
@@ -4613,9 +4613,9 @@ namespace SlaveMatrix
     				{
     					半身中1接続.Add(PregnantBelly_獣);
     				}
-    				if (腰肌_獣 != null)
+    				if (WaistSkin_獣 != null)
     				{
-    					半身中1接続.Add(腰肌_獣);
+    					半身中1接続.Add(WaistSkin_獣);
     				}
     				if (胴肌_獣 != null)
     				{
@@ -5439,9 +5439,9 @@ namespace SlaveMatrix
     			胸肌_人.淫タトゥ_タトゥ左_表示 = false;
     			胸肌_人.淫タトゥ_タトゥ右_表示 = false;
     		}
-    		if (腰肌_人.竜性_鱗1_表示 || 腰肌_人.竜性_鱗2_表示 || 腰肌_人.竜性_鱗3_表示 || 腰肌_人.竜性_鱗4_表示)
+    		if (WaistSkin_人.竜性_鱗1_表示 || WaistSkin_人.竜性_鱗2_表示 || WaistSkin_人.竜性_鱗3_表示 || WaistSkin_人.竜性_鱗4_表示)
     		{
-    			腰肌_人.陰毛_ハート_表示 = false;
+    			WaistSkin_人.陰毛_ハート_表示 = false;
     		}
     		尾_魚 ele7 = Waist.腿左_接続.GetEle<尾_魚>();
     		if (ele7 != null)
@@ -5782,7 +5782,7 @@ namespace SlaveMatrix
     				}
     				bod.PregnantBelly_人.描画0(are);
     				bod.ボテ腹板_人.描画0(are);
-    				bod.腰肌_人.描画0(are);
+    				bod.WaistSkin_人.描画0(are);
     				bod.胴腹板_人.描画0(are);
     				bod.胸腹板_人.描画0(are);
     				bod.胴肌_人.描画0(are);
@@ -6209,7 +6209,7 @@ namespace SlaveMatrix
     				}
     				bod.PregnantBelly_人.描画0(are);
     				bod.ボテ腹板_人.描画0(are);
-    				bod.腰肌_人.描画0(are);
+    				bod.WaistSkin_人.描画0(are);
     				bod.胴腹板_人.描画0(are);
     				bod.胸腹板_人.描画0(are);
     				bod.胴肌_人.描画0(are);
@@ -6636,7 +6636,7 @@ namespace SlaveMatrix
     				}
     				bod.PregnantBelly_人.描画0(are);
     				bod.ボテ腹板_人.描画0(are);
-    				bod.腰肌_人.描画0(are);
+    				bod.WaistSkin_人.描画0(are);
     				bod.胴腹板_人.描画0(are);
     				bod.胸腹板_人.描画0(are);
     				bod.胴肌_人.描画0(are);
@@ -7075,7 +7075,7 @@ namespace SlaveMatrix
     				}
     				bod.PregnantBelly_人.描画0(are);
     				bod.ボテ腹板_人.描画0(are);
-    				bod.腰肌_人.描画0(are);
+    				bod.WaistSkin_人.描画0(are);
     				bod.胴腹板_人.描画0(are);
     				bod.胸腹板_人.描画0(are);
     				bod.胴肌_人.描画0(are);
@@ -7486,7 +7486,7 @@ namespace SlaveMatrix
     				}
     				bod.PregnantBelly_人.描画0(are);
     				bod.ボテ腹板_人.描画0(are);
-    				bod.腰肌_人.描画0(are);
+    				bod.WaistSkin_人.描画0(are);
     				bod.胴腹板_人.描画0(are);
     				bod.胸腹板_人.描画0(are);
     				bod.胴肌_人.描画0(are);
@@ -7909,7 +7909,7 @@ namespace SlaveMatrix
     				}
     				bod.PregnantBelly_人.描画0(are);
     				bod.ボテ腹板_人.描画0(are);
-    				bod.腰肌_人.描画0(are);
+    				bod.WaistSkin_人.描画0(are);
     				bod.胴腹板_人.描画0(are);
     				bod.胸腹板_人.描画0(are);
     				bod.胴肌_人.描画0(are);
@@ -8365,7 +8365,7 @@ namespace SlaveMatrix
     				}
     				bod.PregnantBelly_人.描画0(are);
     				bod.ボテ腹板_人.描画0(are);
-    				bod.腰肌_人.描画0(are);
+    				bod.WaistSkin_人.描画0(are);
     				bod.胴腹板_人.描画0(are);
     				bod.胸腹板_人.描画0(are);
     				bod.胴肌_人.描画0(are);
@@ -8793,7 +8793,7 @@ namespace SlaveMatrix
     			}
     			bod.PregnantBelly_人.描画0(are);
     			bod.ボテ腹板_人.描画0(are);
-    			bod.腰肌_人.描画0(are);
+    			bod.WaistSkin_人.描画0(are);
     			bod.胴腹板_人.描画0(are);
     			bod.胸腹板_人.描画0(are);
     			bod.胴肌_人.描画0(are);
@@ -9197,9 +9197,9 @@ namespace SlaveMatrix
     			肛門_人.X0Y0_肛門2.SetSizeBase(asb1 + num);
     			肛門_人.X0Y0_肛門3.SetSizeBase(asb2 + num);
     		}
-    		腰肌_人.陰毛CD.不透明度 = Cha.CharacterData.現陰毛 * Cha.CharacterData.最陰毛濃度;
-    		腰肌_人.獣性_獣毛CD.不透明度 = Cha.CharacterData.現陰毛;
-    		腰肌_人.陰毛_ハートCD.不透明度 = Cha.CharacterData.現陰毛.Inverse() * Cha.CharacterData.最陰毛濃度;
+    		WaistSkin_人.陰毛CD.不透明度 = Cha.CharacterData.現陰毛 * Cha.CharacterData.最陰毛濃度;
+    		WaistSkin_人.獣性_獣毛CD.不透明度 = Cha.CharacterData.現陰毛;
+    		WaistSkin_人.陰毛_ハートCD.不透明度 = Cha.CharacterData.現陰毛.Inverse() * Cha.CharacterData.最陰毛濃度;
     	}
 
     	public Element GetHitEle(Color hc)
@@ -9909,20 +9909,20 @@ namespace SlaveMatrix
     		}
     		else if (Is獣)
     		{
-    			if (腰肌_獣 != null)
+    			if (WaistSkin_獣 != null)
     			{
-    				腰肌_獣.竜性_鱗1_表示 = false;
-    				腰肌_獣.竜性_鱗2_表示 = false;
-    				腰肌_獣.竜性_鱗3_表示 = false;
-    				腰肌_獣.竜性_鱗4_表示 = false;
+    				WaistSkin_獣.竜性_鱗1_表示 = false;
+    				WaistSkin_獣.竜性_鱗2_表示 = false;
+    				WaistSkin_獣.竜性_鱗3_表示 = false;
+    				WaistSkin_獣.竜性_鱗4_表示 = false;
     			}
     		}
     		else
     		{
-    			腰肌_人.竜性_鱗1_表示 = false;
-    			腰肌_人.竜性_鱗2_表示 = false;
-    			腰肌_人.竜性_鱗3_表示 = false;
-    			腰肌_人.竜性_鱗4_表示 = false;
+    			WaistSkin_人.竜性_鱗1_表示 = false;
+    			WaistSkin_人.竜性_鱗2_表示 = false;
+    			WaistSkin_人.竜性_鱗3_表示 = false;
+    			WaistSkin_人.竜性_鱗4_表示 = false;
     		}
     	}
 
@@ -9930,29 +9930,29 @@ namespace SlaveMatrix
     	{
     		if (Is獣)
     		{
-    			腰肌_獣.淫タトゥ_タトゥ1右_表示 = true;
-    			腰肌_獣.淫タトゥ_タトゥ1左_表示 = true;
-    			腰肌_獣.淫タトゥ_タトゥ2右_表示 = true;
-    			腰肌_獣.淫タトゥ_タトゥ2左_表示 = true;
-    			腰肌_獣.淫タトゥ_ハート_タトゥ右1_表示 = true;
-    			腰肌_獣.淫タトゥ_ハート_タトゥ右2_表示 = true;
-    			腰肌_獣.淫タトゥ_ハート_タトゥ左1_表示 = true;
-    			腰肌_獣.淫タトゥ_ハート_タトゥ左2_表示 = true;
-    			腰肌_獣.植タトゥ_タトゥ左_表示 = false;
-    			腰肌_獣.植タトゥ_タトゥ右_表示 = false;
+    			WaistSkin_獣.淫タトゥ_タトゥ1右_表示 = true;
+    			WaistSkin_獣.淫タトゥ_タトゥ1左_表示 = true;
+    			WaistSkin_獣.淫タトゥ_タトゥ2右_表示 = true;
+    			WaistSkin_獣.淫タトゥ_タトゥ2左_表示 = true;
+    			WaistSkin_獣.淫タトゥ_ハート_タトゥ右1_表示 = true;
+    			WaistSkin_獣.淫タトゥ_ハート_タトゥ右2_表示 = true;
+    			WaistSkin_獣.淫タトゥ_ハート_タトゥ左1_表示 = true;
+    			WaistSkin_獣.淫タトゥ_ハート_タトゥ左2_表示 = true;
+    			WaistSkin_獣.植タトゥ_タトゥ左_表示 = false;
+    			WaistSkin_獣.植タトゥ_タトゥ右_表示 = false;
     		}
     		else
     		{
-    			腰肌_人.淫タトゥ_タトゥ1右_表示 = true;
-    			腰肌_人.淫タトゥ_タトゥ1左_表示 = true;
-    			腰肌_人.淫タトゥ_タトゥ2右_表示 = true;
-    			腰肌_人.淫タトゥ_タトゥ2左_表示 = true;
-    			腰肌_人.淫タトゥ_ハート_タトゥ右1_表示 = true;
-    			腰肌_人.淫タトゥ_ハート_タトゥ右2_表示 = true;
-    			腰肌_人.淫タトゥ_ハート_タトゥ左1_表示 = true;
-    			腰肌_人.淫タトゥ_ハート_タトゥ左2_表示 = true;
-    			腰肌_人.植タトゥ_タトゥ左_表示 = false;
-    			腰肌_人.植タトゥ_タトゥ右_表示 = false;
+    			WaistSkin_人.淫タトゥ_タトゥ1右_表示 = true;
+    			WaistSkin_人.淫タトゥ_タトゥ1左_表示 = true;
+    			WaistSkin_人.淫タトゥ_タトゥ2右_表示 = true;
+    			WaistSkin_人.淫タトゥ_タトゥ2左_表示 = true;
+    			WaistSkin_人.淫タトゥ_ハート_タトゥ右1_表示 = true;
+    			WaistSkin_人.淫タトゥ_ハート_タトゥ右2_表示 = true;
+    			WaistSkin_人.淫タトゥ_ハート_タトゥ左1_表示 = true;
+    			WaistSkin_人.淫タトゥ_ハート_タトゥ左2_表示 = true;
+    			WaistSkin_人.植タトゥ_タトゥ左_表示 = false;
+    			WaistSkin_人.植タトゥ_タトゥ右_表示 = false;
     		}
     	}
 
@@ -9973,19 +9973,19 @@ namespace SlaveMatrix
     		}
     		if (Is獣)
     		{
-    			if (腰肌_獣 != null)
+    			if (WaistSkin_獣 != null)
     			{
-    				if (!腰肌_獣.竜性_鱗1_表示 && !腰肌_獣.竜性_鱗2_表示 && !腰肌_獣.竜性_鱗3_表示)
+    				if (!WaistSkin_獣.竜性_鱗1_表示 && !WaistSkin_獣.竜性_鱗2_表示 && !WaistSkin_獣.竜性_鱗3_表示)
     				{
-    					return 腰肌_獣.竜性_鱗4_表示;
+    					return WaistSkin_獣.竜性_鱗4_表示;
     				}
     				return true;
     			}
     			return false;
     		}
-    		if (!腰肌_人.竜性_鱗1_表示 && !腰肌_人.竜性_鱗2_表示 && !腰肌_人.竜性_鱗3_表示)
+    		if (!WaistSkin_人.竜性_鱗1_表示 && !WaistSkin_人.竜性_鱗2_表示 && !WaistSkin_人.竜性_鱗3_表示)
     		{
-    			return 腰肌_人.竜性_鱗4_表示;
+    			return WaistSkin_人.竜性_鱗4_表示;
     		}
     		return true;
     	}

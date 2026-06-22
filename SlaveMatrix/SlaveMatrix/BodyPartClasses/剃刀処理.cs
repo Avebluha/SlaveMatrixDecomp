@@ -53,9 +53,9 @@ namespace SlaveMatrix
     	private void 移動時(ref Color hc)
     	{
     		p = null;
-    		if (Bod.腰肌_人 != null && Bod.腰肌_人.Body.IsHit(ref hc))
+    		if (Bod.WaistSkin_人 != null && Bod.WaistSkin_人.Body.IsHit(ref hc))
     		{
-    			p = Bod.腰肌_人.Body.GetHitPar_(hc);
+    			p = Bod.WaistSkin_人.Body.GetHitPar_(hc);
     		}
     		if (p != null && (p.Tag == "獣毛" || p.Tag == "陰毛"))
     		{
@@ -89,9 +89,9 @@ namespace SlaveMatrix
     				Player.主精力消費小();
     				剃り();
     				Cha.CharacterData.現陰毛 = (Cha.CharacterData.現陰毛 - 0.01).Clamp(0.0, 1.0);
-    				Cha.Body.腰肌_人.陰毛CD.不透明度 = Cha.CharacterData.現陰毛 * Cha.CharacterData.最陰毛濃度;
-    				Cha.Body.腰肌_人.獣性_獣毛CD.不透明度 = Cha.CharacterData.現陰毛;
-    				Cha.Body.腰肌_人.陰毛_ハートCD.不透明度 = Cha.CharacterData.現陰毛.Inverse() * Cha.CharacterData.最陰毛濃度;
+    				Cha.Body.WaistSkin_人.陰毛CD.不透明度 = Cha.CharacterData.現陰毛 * Cha.CharacterData.最陰毛濃度;
+    				Cha.Body.WaistSkin_人.獣性_獣毛CD.不透明度 = Cha.CharacterData.現陰毛;
+    				Cha.Body.WaistSkin_人.陰毛_ハートCD.不透明度 = Cha.CharacterData.現陰毛.Inverse() * Cha.CharacterData.最陰毛濃度;
     			}
     			else if (調教UI.押し状態)
     			{
@@ -121,9 +121,9 @@ namespace SlaveMatrix
     			return;
     		}
     		p = null;
-    		if (Bod.腰肌_人 != null && Bod.腰肌_人.Body.IsHit(ref hc))
+    		if (Bod.WaistSkin_人 != null && Bod.WaistSkin_人.Body.IsHit(ref hc))
     		{
-    			p = Bod.腰肌_人.Body.GetHitPar_(hc);
+    			p = Bod.WaistSkin_人.Body.GetHitPar_(hc);
     		}
     		if (mb == MouseButtons.Left && p != null && (p.Tag == "獣毛" || p.Tag == "陰毛"))
     		{

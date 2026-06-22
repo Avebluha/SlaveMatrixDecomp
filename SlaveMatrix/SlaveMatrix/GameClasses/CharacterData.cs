@@ -101,7 +101,7 @@ namespace SlaveMatrix
     		{
     			return true;
     		}
-    		腰肌D eleD2 = body_tree.肌_接続.GetEleD<腰肌D>();
+    		WaistSkinD eleD2 = body_tree.肌_接続.GetEleD<WaistSkinD>();
     		if (!eleD2.竜性_鱗1_表示 && !eleD2.竜性_鱗2_表示 && !eleD2.竜性_鱗3_表示)
     		{
     			return eleD2.竜性_鱗4_表示;
@@ -114,14 +114,14 @@ namespace SlaveMatrix
     		四足腰D eleD = body_tree.EnumEleD().GetEleD<四足腰D>();
     		if (eleD != null)
     		{
-    			腰肌D eleD2 = eleD.EnumEleD().GetEleD<腰肌D>();
+    			WaistSkinD eleD2 = eleD.EnumEleD().GetEleD<WaistSkinD>();
     			if (eleD2.淫タトゥ_タトゥ1右_表示 && eleD2.淫タトゥ_タトゥ1左_表示 && eleD2.淫タトゥ_タトゥ2右_表示 && eleD2.淫タトゥ_タトゥ2左_表示 && eleD2.淫タトゥ_ハート_タトゥ右1_表示 && eleD2.淫タトゥ_ハート_タトゥ右2_表示 && eleD2.淫タトゥ_ハート_タトゥ左1_表示)
     			{
     				return eleD2.淫タトゥ_ハート_タトゥ左2_表示;
     			}
     			return false;
     		}
-    		腰肌D eleD3 = body_tree.EnumEleD().GetEleD<腰肌D>();
+    		WaistSkinD eleD3 = body_tree.EnumEleD().GetEleD<WaistSkinD>();
     		if (eleD3.淫タトゥ_タトゥ1右_表示 && eleD3.淫タトゥ_タトゥ1左_表示 && eleD3.淫タトゥ_タトゥ2右_表示 && eleD3.淫タトゥ_タトゥ2左_表示 && eleD3.淫タトゥ_ハート_タトゥ右1_表示 && eleD3.淫タトゥ_ハート_タトゥ右2_表示 && eleD3.淫タトゥ_ハート_タトゥ左1_表示)
     		{
     			return eleD3.淫タトゥ_ハート_タトゥ左2_表示;
@@ -257,7 +257,7 @@ namespace SlaveMatrix
     		最陰毛濃度 = Rng.XS.NextDouble();
     		固有値 = Rng.XS.NextDouble();
     		魔力濃度 = Rng.XS.NextDouble();
-    		腰肌D eleD = 構成.EnumEleD().GetEleD<腰肌D>();
+    		WaistSkinD eleD = 構成.EnumEleD().GetEleD<WaistSkinD>();
     		if (!eleD.陰毛_表示 && !eleD.獣性_獣毛_表示)
     		{
     			現陰毛 = 0.0;
