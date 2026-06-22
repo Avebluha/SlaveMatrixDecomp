@@ -47,7 +47,8 @@ namespace _2DGAMELIB
             ["基髪"] = "BaseHair",
             ["単眼目"] = "MonoEye",
             ["単眼瞼"] = "MonoEyelid",
-            ["目左"] = "EyeLeft"
+            ["目左"] = "EyeLeft",
+            ["魔性弱瞼左"] = "DemonicWeakEyelidLeft"
         };
 
         public static void MigrateKeys(this BodyTemplate BodyTemplate)
