@@ -270,7 +270,7 @@ namespace SlaveMatrix
 
     	public Element[] 耳右_接続;
 
-    	public Element[] 鼻肌_接続;
+    	public Element[] NoseSkin_接続;
 
     	public Element[] MonoEye_接続;
 
@@ -1014,7 +1014,7 @@ namespace SlaveMatrix
 
     	public JointS 耳右_接続点 => new JointS(Body, X0Y0_Head, 11);
 
-    	public JointS 鼻肌_接続点 => new JointS(Body, X0Y0_Head, 12);
+    	public JointS NoseSkin_接続点 => new JointS(Body, X0Y0_Head, 12);
 
     	public JointS MonoEye_接続点 => new JointS(Body, X0Y0_Head, 13);
 
@@ -1304,14 +1304,14 @@ namespace SlaveMatrix
     				return f;
     			}).ToArray();
     		}
-    		if (e.鼻肌_接続.Count > 0)
+    		if (e.NoseSkin_接続.Count > 0)
     		{
-    			鼻肌_接続 = e.鼻肌_接続.Select(delegate(ElementData g)
+    			NoseSkin_接続 = e.NoseSkin_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 頭2;
-    				f.ConnectionType = ConnectionInfo.Head_鼻肌_接続;
-    				f.接続(頭2.鼻肌_接続点);
+    				f.ConnectionType = ConnectionInfo.Head_NoseSkin_接続;
+    				f.接続(頭2.NoseSkin_接続点);
     				return f;
     			}).ToArray();
     		}

@@ -212,7 +212,7 @@ namespace SlaveMatrix
     		obj.EnumEleD().SetValuesD<手_人D>("配色指定", 配色指定.B0);
     		obj.EnumEleD().SetValuesD("柄", false);
     		obj.EnumEleD().SetValuesD("紋柄", true);
-    		obj.EnumEleD().SetValuesD<鼻肌D>("紋柄", false);
+    		obj.EnumEleD().SetValuesD<NoseSkinD>("紋柄", false);
     		obj.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
     		obj.EnumEleD().SetValuesD("身長", 頭D2.目高);
     		obj.EnumEleD().SetValuesD("鋭爪", 0.2 + Rng.XS.NextDouble(0.8));
@@ -881,7 +881,7 @@ namespace SlaveMatrix
     		}
     		if (Rng.XS.NextBool())
     		{
-    			WaistD2.EnumEleD().SetValuesD<鼻肌D>("紋柄", false);
+    			WaistD2.EnumEleD().SetValuesD<NoseSkinD>("紋柄", false);
     		}
     		WaistD2.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());
     		WaistD2.EnumEleD().SetValuesD("身長", 頭D2.目高);
@@ -3794,7 +3794,7 @@ namespace SlaveMatrix
     		obj.EnumEleD().SetValuesD<手_人D>("配色指定", 配色指定.B0);
     		obj.EnumEleD().SetValuesD("胸毛", false);
     		obj.EnumEleD().SetValuesD("紋柄", true);
-    		obj.EnumEleD().SetValuesD<鼻肌D>("紋柄", false);
+    		obj.EnumEleD().SetValuesD<NoseSkinD>("紋柄", false);
     		obj.EnumEleD().SetValuesD<頬肌D>("獣性", false);
     		obj.EnumEleD().SetValuesD<頬肌D>("髭", 頭D2.鼻_接続.IsEleD<鼻_獣D>());
     		obj.EnumEleD().SetValuesD<口_通常D>("牙", true);
@@ -3870,7 +3870,7 @@ namespace SlaveMatrix
     		obj.EnumEleD().SetValuesD<LowerArm_人D>("配色指定", 配色指定.B0);
     		obj.EnumEleD().SetValuesD("胸毛", false);
     		obj.EnumEleD().SetValuesD("紋柄", true);
-    		obj.EnumEleD().SetValuesD<鼻肌D>("紋柄", false);
+    		obj.EnumEleD().SetValuesD<NoseSkinD>("紋柄", false);
     		obj.EnumEleD().SetValuesD<頬肌D>("獣性", false);
     		obj.EnumEleD().SetValuesD<頬肌D>("豹", true);
     		obj.EnumEleD().SetValuesD<頬肌D>("髭", 頭D2.鼻_接続.IsEleD<鼻_獣D>());

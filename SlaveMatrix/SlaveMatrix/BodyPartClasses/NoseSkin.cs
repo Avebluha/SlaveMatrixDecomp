@@ -3,7 +3,7 @@ using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
-    public class 鼻肌 : Element
+    public class NoseSkin : Element
     {
     	public ShapePart X0Y0_紋柄_紋左_紋1;
 
@@ -306,7 +306,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 鼻肌(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 鼻肌D e)
+    	public NoseSkin(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, NoseSkinD e)
     	{
     		ThisType = GetType();
     		Body = new VariantGrid(GlobalState.胴体["鼻肌"]);

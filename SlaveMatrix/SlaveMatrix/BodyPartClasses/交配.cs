@@ -1810,8 +1810,8 @@ namespace SlaveMatrix
     		{
     			右 = true
     		});
-    		鼻肌D 鼻肌D2;
-    		HeadD2.鼻肌接続(鼻肌D2 = Mix<鼻肌D>(母方, 父方, i, 原種モード));
+    		NoseSkinD NoseSkinD2;
+    		HeadD2.鼻肌接続(NoseSkinD2 = Mix<NoseSkinD>(母方, 父方, i, 原種モード));
     		HeadD2.鼻肌接続(new 紅潮D());
     		頬肌D 頬肌D2 = Mix<頬肌D>(母方, 父方, 右: false, i, 原種モード);
     		HeadD2.頬肌左接続(頬肌D2);
@@ -3901,14 +3901,14 @@ namespace SlaveMatrix
     		}
     		if (単目D2 != null)
     		{
-    			鼻肌D2.紋柄_紋左_紋1_表示 = false;
-    			鼻肌D2.紋柄_紋左_紋2_表示 = false;
-    			鼻肌D2.紋柄_紋左_紋3_表示 = false;
-    			鼻肌D2.紋柄_紋左_紋4_表示 = false;
-    			鼻肌D2.紋柄_紋右_紋1_表示 = false;
-    			鼻肌D2.紋柄_紋右_紋2_表示 = false;
-    			鼻肌D2.紋柄_紋右_紋3_表示 = false;
-    			鼻肌D2.紋柄_紋右_紋4_表示 = false;
+    			NoseSkinD2.紋柄_紋左_紋1_表示 = false;
+    			NoseSkinD2.紋柄_紋左_紋2_表示 = false;
+    			NoseSkinD2.紋柄_紋左_紋3_表示 = false;
+    			NoseSkinD2.紋柄_紋左_紋4_表示 = false;
+    			NoseSkinD2.紋柄_紋右_紋1_表示 = false;
+    			NoseSkinD2.紋柄_紋右_紋2_表示 = false;
+    			NoseSkinD2.紋柄_紋右_紋3_表示 = false;
+    			NoseSkinD2.紋柄_紋右_紋4_表示 = false;
     		}
     		bool flag12 = 顔面D2?.触覚左_接続.IsEleD<触覚D>() ?? false;
     		bool flag13 = HeadD2.触覚左_接続.IsEleD<触覚D>();

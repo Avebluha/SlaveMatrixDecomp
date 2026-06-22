@@ -19,7 +19,7 @@ namespace SlaveMatrix
     	Head_眉右_接続,
     	Head_耳左_接続,
     	Head_耳右_接続,
-    	Head_鼻肌_接続,
+    	Head_NoseSkin_接続,
     	Head_MonoEye_接続,
     	Head_単眼眉_接続,
     	Head_大顎基_接続,

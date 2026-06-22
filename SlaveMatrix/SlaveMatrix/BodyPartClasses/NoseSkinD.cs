@@ -5,7 +5,7 @@ using SlaveMatrix.GameClasses;
 namespace SlaveMatrix
 {
     [Serializable]
-    public class 鼻肌D : ElementData
+    public class NoseSkinD : ElementData
     {
     	public bool 紋柄_紋左_紋1_表示;
 
@@ -31,14 +31,14 @@ namespace SlaveMatrix
 
     	public double 傷I右濃度 = 1.0;
 
-    	public 鼻肌D()
+    	public NoseSkinD()
     	{
     		ThisType = GetType();
     	}
 
     	public override Element GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
     	{
-    		return new 鼻肌(DisUnit, 配色指定, 体配色, Med, this);
+    		return new NoseSkin(DisUnit, 配色指定, 体配色, Med, this);
     	}
     }
 }
