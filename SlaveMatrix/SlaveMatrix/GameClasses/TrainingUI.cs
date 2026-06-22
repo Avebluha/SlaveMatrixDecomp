@@ -96,7 +96,7 @@ namespace SlaveMatrix
     	public ButtonBase 拘束具;
     	public ButtonBase 目隠帯;
     	public ButtonBase 玉口枷;
-    	public ButtonBase 断面;
+    	public ButtonBase XRay;
     	public ButtonBase 媚薬;
     	public ButtonBase 撮影;
         public ButtonBase SlaveStamina;
@@ -105,7 +105,7 @@ namespace SlaveMatrix
         private ScreenSwitch 拘束具sw = new ScreenSwitch(Color.OrangeRed);
     	private ScreenSwitch 目隠帯sw = new ScreenSwitch(Color.OrangeRed);
     	private ScreenSwitch 玉口枷sw = new ScreenSwitch(Color.OrangeRed);
-    	private ScreenSwitch 断面sw = new ScreenSwitch(Color.OrangeRed);
+    	private ScreenSwitch XRay_ScreenSwitch = new ScreenSwitch(Color.OrangeRed);
 
     	public ProgressBar 体力sゲージ;
     	public ProgressBar 絶頂sゲージ;
@@ -1690,12 +1690,12 @@ namespace SlaveMatrix
     				拘束具.Move(ref hc);
     				目隠帯.Move(ref hc);
     				玉口枷.Move(ref hc);
-    				断面.Move(ref hc);
+    				XRay.Move(ref hc);
     				媚薬.Move(ref hc);
     				撮影.Move(ref hc);
     				SlaveStamina.Move(ref hc);
     				PlayerStamina.Move(ref hc);
-    				if (調教終了.PartGroup.IsHit(ref hc) || 拘束具.PartGroup.IsHit(ref hc) || 目隠帯.PartGroup.IsHit(ref hc) || 玉口枷.PartGroup.IsHit(ref hc) || 断面.PartGroup.IsHit(ref hc) || 媚薬.PartGroup.IsHit(ref hc) || 撮影.PartGroup.IsHit(ref hc))
+    				if (調教終了.PartGroup.IsHit(ref hc) || 拘束具.PartGroup.IsHit(ref hc) || 目隠帯.PartGroup.IsHit(ref hc) || 玉口枷.PartGroup.IsHit(ref hc) || XRay.PartGroup.IsHit(ref hc) || 媚薬.PartGroup.IsHit(ref hc) || 撮影.PartGroup.IsHit(ref hc))
     				{
     					Med.CursorShow();
     				}
@@ -1878,7 +1878,7 @@ namespace SlaveMatrix
     		{
     			ip.SubInfoIm = GameText.口枷状態を切換えます;
     		}
-    		if (断面.PartGroup.Values.First().ToPar().GetHitColor() == hc)
+    		if (XRay.PartGroup.Values.First().ToPar().GetHitColor() == hc)
     		{
     			ip.SubInfoIm = GameText.断面表示を切換えます;
     		}
@@ -1942,7 +1942,7 @@ namespace SlaveMatrix
     			拘束具.Down(ref hc);
     			目隠帯.Down(ref hc);
     			玉口枷.Down(ref hc);
-    			断面.Down(ref hc);
+    			XRay.Down(ref hc);
     			媚薬.Down(ref hc);
     			撮影.Down(ref hc);
     			SlaveStamina.Down(ref hc);
@@ -1987,7 +1987,7 @@ namespace SlaveMatrix
     			拘束具.Up(ref hc);
     			目隠帯.Up(ref hc);
     			玉口枷.Up(ref hc);
-    			断面.Up(ref hc);
+    			XRay.Up(ref hc);
     			媚薬.Up(ref hc);
     			撮影.Up(ref hc);
     			SlaveStamina.Up(ref hc);
@@ -2032,7 +2032,7 @@ namespace SlaveMatrix
     		拘束具.Leave();
     		目隠帯.Leave();
     		玉口枷.Leave();
-    		断面.Leave();
+    		XRay.Leave();
     		媚薬.Leave();
     		撮影.Leave();
     		SlaveStamina.Leave();
@@ -2257,7 +2257,7 @@ namespace SlaveMatrix
     				Player.Reaction1();
     			});
     			ShapePartT shapePartT5 = new ShapePartT();
-    			shapePartT5.Text = GameText.断面;
+    			shapePartT5.Text = GameText.XRay;
     			shapePartT5.SetSizeBase(0.095);
     			shapePartT5.SetFont(new Font("MS Gothic", 1f));
     			shapePartT5.SetFontSize(0.07);
@@ -2272,7 +2272,7 @@ namespace SlaveMatrix
     			shapePartT5.GetStringFormat().Alignment = StringAlignment.Center;
     			shapePartT5.GetStringFormat().LineAlignment = StringAlignment.Center;
     			shapePartT5.SetPositionBase(shapePartT4.GetPositionBase().AddY(0.015));
-    			断面 = new Button(shapePartT5, delegate(ButtonBase a)
+    			XRay = new Button(shapePartT5, delegate(ButtonBase a)
     			{
     				double v = 0.0;
     				if (調教UI2.ペニス挿入.Is膣)
@@ -2315,11 +2315,11 @@ namespace SlaveMatrix
     				{
     					v = 調教UI2.パール挿入.Insert;
     				}
-    				調教UI2.断面sw.OnOff(a);
-    				GlobalState.GameData.断面 = 調教UI2.断面sw.Flag;
+    				調教UI2.XRay_ScreenSwitch.OnOff(a);
+    				GlobalState.GameData.XRay = 調教UI2.XRay_ScreenSwitch.Flag;
     				if (!調教UI2.Bod.Is粘)
     				{
-    					調教UI2.Bod.断面_表示 = GlobalState.GameData.断面;
+    					調教UI2.Bod.XRay_表示 = GlobalState.GameData.XRay;
     				}
     				if (調教UI2.ペニス挿入.Is膣)
     				{
@@ -2664,12 +2664,12 @@ namespace SlaveMatrix
     		Bod.目隠帯_表示 = GlobalState.GameData.目隠帯;
     		玉口枷sw.SetFlag(玉口枷, GlobalState.GameData.玉口枷);
     		Bod.玉口枷_表示 = GlobalState.GameData.玉口枷;
-    		断面sw.SetFlag(断面, GlobalState.GameData.断面);
+    		XRay_ScreenSwitch.SetFlag(XRay, GlobalState.GameData.XRay);
     		if (!Bod.Is粘)
     		{
-    			Bod.断面_表示 = GlobalState.GameData.断面;
+    			Bod.XRay_表示 = GlobalState.GameData.XRay;
     		}
-    		断面.Dra = GlobalState.GameData.心眼;
+    		XRay.Dra = GlobalState.GameData.心眼;
     		媚薬.Dra = GlobalState.GameData.媚薬 && !Cha.CharacterData.タトゥ;
     		拘束具.Dra = Unit.Trained;
     		SlaveStamina.Dra = GlobalState.StaminaButton;
@@ -2954,7 +2954,7 @@ namespace SlaveMatrix
     		拘束具.Draw(Are);
     		目隠帯.Draw(Are);
     		玉口枷.Draw(Are);
-    		断面.Draw(Are);
+    		XRay.Draw(Are);
     		媚薬.Draw(Are);
     		撮影.Draw(Are);
     		SlaveStamina.Draw(Are);
@@ -3019,7 +3019,7 @@ namespace SlaveMatrix
     		拘束具.Dispose();
     		目隠帯.Dispose();
     		玉口枷.Dispose();
-    		断面.Dispose();
+    		XRay.Dispose();
     		媚薬.Dispose();
     		撮影.Dispose();
     		体力sゲージ.Dispose();

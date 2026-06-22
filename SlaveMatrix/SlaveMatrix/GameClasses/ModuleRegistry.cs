@@ -1933,7 +1933,7 @@ namespace SlaveMatrix
                     Player.絶頂終了処理_();
                     Player.射精終了処理_();
                     TrainingTarget.Body.VaginalCumDrip.精液濃度 = 0.0;
-                    TrainingTarget.Body.断面.精液濃度 = 0.0;
+                    TrainingTarget.Body.XRay.精液濃度 = 0.0;
                     TrainingTarget.Body.スタンプClear();
                     TrainingTarget.Body.Waist.位置B = Med.Base.GetPosition(new Vector2D(0.5, 0.5));
                     TrainingTarget.Body.汗染み濃度 = 0.0;
@@ -1942,7 +1942,7 @@ namespace SlaveMatrix
                     TrainingTarget.Body.UrineStainIntensity = 0.0;
                     if (!TrainingTarget.Body.Is粘)
                     {
-                        TrainingTarget.Body.断面_表示 = false;
+                        TrainingTarget.Body.XRay_表示 = false;
                     }
                     TrainingTarget.EyeTracking.End();
                     TrainingTarget.MouthCumDrip.End();
@@ -1981,7 +1981,7 @@ namespace SlaveMatrix
                     GlobalState.GameData.目隠帯 = false;
                     GlobalState.GameData.玉口枷 = false;
                     GlobalState.GameData.拘束具 = false;
-                    GlobalState.GameData.断面 = false;
+                    GlobalState.GameData.XRay = false;
                 },
                 Draw = delegate (FpsCounter FPS)
                 {

@@ -2348,7 +2348,7 @@ namespace SlaveMatrix
     			GlobalState.GameData.TrainingTarget.Virgin = false;
     			UI.発音(Cha.Body.膣口位置.GetAreaPoint(0.04), GlobalState.処女喪失, Color.Red, 0.3, b: true);
     			Cha.Body.処女喪失 = true;
-    			if (Cha.Body.断面_表示)
+    			if (Cha.Body.XRay_表示)
     			{
     				Cha.Body.VaginalCumDrip.血液1_表示 = true;
     				Cha.Body.VaginalCumDrip.血液2_表示 = true;

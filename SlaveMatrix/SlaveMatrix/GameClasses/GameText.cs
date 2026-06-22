@@ -427,7 +427,7 @@ namespace SlaveMatrix
 
     	public static string 口枷 => Trai[16];
 
-    	public static string 断面 => Trai[17];
+    	public static string XRay => Trai[17];
 
     	public static string 媚薬 => Trai[18];
 

@@ -35,6 +35,7 @@ namespace _2DGAMELIB
             ["上着ボトム後"] = "JacketBottomRear",
             ["上着ボトム"] = "JacketBottom",
             ["上着ボトム前"] = "JacketBottomFront",
+            ["断面"] = "XRay"
         };
 
         public static void MigrateKeys(this BodyTemplate BodyTemplate)

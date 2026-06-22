@@ -5,7 +5,7 @@ using SlaveMatrix.GameClasses;
 namespace SlaveMatrix
 {
     [Serializable]
-    public class 断面_人D : 断面D
+    public class XRay_人D : XRayD
     {
     	public bool VaginaOrigin_表示;
 
@@ -29,14 +29,14 @@ namespace SlaveMatrix
 
     	public bool 精液_表示;
 
-    	public 断面_人D()
+    	public XRay_人D()
     	{
     		ThisType = GetType();
     	}
 
     	public override Element GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
     	{
-    		return new 断面_人(DisUnit, 配色指定, 体配色, Med, this);
+    		return new XRay_人(DisUnit, 配色指定, 体配色, Med, this);
     	}
     }
 }

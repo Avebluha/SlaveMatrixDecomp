@@ -648,7 +648,7 @@ namespace SlaveMatrix
     		};
     		調教UI.Mots.Add(射精.GetHashCode().ToString(), 射精);
     		bool 外出し = false;
-    		bool 断面 = false;
+    		bool XRay = false;
     		ShapePart p;
     		Vector2D cp;
     		Color hc;
@@ -667,7 +667,7 @@ namespace SlaveMatrix
     				}
     				else
     				{
-    					断面 = ペニス処理2.Bod.断面_表示 && ペニス処理2.挿入箇所 == ContactType.Vagina;
+    					XRay = ペニス処理2.Bod.XRay_表示 && ペニス処理2.挿入箇所 == ContactType.Vagina;
     				}
     			},
     			OnUpdate = delegate(Motion m)
@@ -691,10 +691,10 @@ namespace SlaveMatrix
     				}
     				else
     				{
-    					if (断面 && ペニス処理2.挿入箇所 == ContactType.Vagina)
+    					if (XRay && ペニス処理2.挿入箇所 == ContactType.Vagina)
     					{
     						ペニス処理2.Bod.VaginalCumDrip.精液濃度 = (ペニス処理2.Bod.VaginalCumDrip.精液濃度 + 0.05).Clamp(0.0, 1.0);
-    						ペニス処理2.Bod.断面.精液濃度 = (ペニス処理2.Bod.断面.精液濃度 + 0.025).Clamp(0.0, 1.0);
+    						ペニス処理2.Bod.XRay.精液濃度 = (ペニス処理2.Bod.XRay.精液濃度 + 0.025).Clamp(0.0, 1.0);
     					}
     					調教UI.Action(ペニス処理2.挿入箇所, ActionType.Insertion, CurrentState.Start, ToolType.Penis, 0, 1, 機械: false, 射精: true);
     					Player.中出し処理();
@@ -714,7 +714,7 @@ namespace SlaveMatrix
     					調教UI.射精.表示 = false;
     					調教UI.射精.Yi = 0;
     				}
-    				else if (断面)
+    				else if (XRay)
     				{
     					_ = ペニス処理2.挿入箇所;
     					_ = 14;

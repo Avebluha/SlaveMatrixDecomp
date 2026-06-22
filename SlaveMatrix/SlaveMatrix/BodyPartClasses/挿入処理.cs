@@ -228,7 +228,7 @@ namespace SlaveMatrix
     	{
     		set
     		{
-    			if (Bod.断面_表示)
+    			if (Bod.XRay_表示)
     			{
     				dv = (dv + value).Clamp(0.0, 1.0);
     				dy = ((dv >= 1.0) ? (対象.Element.Body.GetCountY() - 1) : ((int)((double)対象.Element.Body.GetCountY() * dv)));
@@ -244,22 +244,22 @@ namespace SlaveMatrix
     				{
     					if (対象.Element is バイブ_デンマ)
     					{
-    						Bod.断面.Yv = dv.Clamp(断面単位v, 断面単位v3);
+    						Bod.XRay.Yv = dv.Clamp(断面単位v, 断面単位v3);
     					}
     					else if (対象.Element is ロータ || 対象.Element is ハンド)
     					{
-    						Bod.断面.Yv = dv.Clamp(0.0, 断面単位v2);
+    						Bod.XRay.Yv = dv.Clamp(0.0, 断面単位v2);
     					}
     					else
     					{
-    						Bod.断面.Yv = dv.Clamp(0.0, 1.0);
+    						Bod.XRay.Yv = dv.Clamp(0.0, 1.0);
     					}
     				}
     				if (!Bod.Is獣 && !(対象.Element is バイブ_デンマ) && !(対象.Element is ハンド) && !(対象.Element is マウス) && !(対象.Element is ロータ))
     				{
-    					Bod.断面.膣サイズY = 1.0 + 0.2 * dv.Clamp(0.0, 1.0);
-    					Bod.VaginalCumDrip.尺度YC = Bod.断面.膣サイズY;
-    					Bod.VaginaOrigin.尺度YC = Bod.断面.膣サイズY;
+    					Bod.XRay.膣サイズY = 1.0 + 0.2 * dv.Clamp(0.0, 1.0);
+    					Bod.VaginalCumDrip.尺度YC = Bod.XRay.膣サイズY;
+    					Bod.VaginaOrigin.尺度YC = Bod.XRay.膣サイズY;
     				}
     				if (!(対象.Element is ハンド) || (対象.Element.Xi != 6 && 対象.Element.Xi != 7))
     				{
@@ -319,7 +319,7 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			if (!Is膣 || !Bod.断面_表示)
+    			if (!Is膣 || !Bod.XRay_表示)
     			{
     				return 対象.Element.Yv;
     			}
@@ -657,7 +657,7 @@ namespace SlaveMatrix
     		}
     		else if (Is膣)
     		{
-    			if (Bod.断面_表示)
+    			if (Bod.XRay_表示)
     			{
     				Bod.性器.接続PA();
     				対象.Element.位置B = Bod.性器.Body.GetCurrent().EnumAllPar().First((ShapePart p_) => p_.Tag.Contains("膣口")).GetPosition();
@@ -723,10 +723,10 @@ namespace SlaveMatrix
     			{
     				Bod.性器.くぱぁ = くぱぁ;
     			}
-    			if (Bod.断面_表示)
+    			if (Bod.XRay_表示)
     			{
     				Insert = 0.0;
-    				Bod.断面.Yi = 0;
+    				Bod.XRay.Yi = 0;
     				dv = 0.0;
     				dy = 0;
     			}
@@ -864,7 +864,7 @@ namespace SlaveMatrix
 
     	public void 断面切替(double v)
     	{
-    		if (Bod.断面_表示)
+    		if (Bod.XRay_表示)
     		{
     			対象.Element.Yi = 0;
     			Bod.性器.Xi = 3;
@@ -882,22 +882,22 @@ namespace SlaveMatrix
     			{
     				if (対象.Element is バイブ_デンマ)
     				{
-    					Bod.断面.Yv = dv.Clamp(断面単位v, 断面単位v3);
+    					Bod.XRay.Yv = dv.Clamp(断面単位v, 断面単位v3);
     				}
     				else if (対象.Element is ロータ || 対象.Element is ハンド)
     				{
-    					Bod.断面.Yv = dv.Clamp(0.0, 断面単位v2);
+    					Bod.XRay.Yv = dv.Clamp(0.0, 断面単位v2);
     				}
     				else
     				{
-    					Bod.断面.Yv = dv.Clamp(0.0, 1.0);
+    					Bod.XRay.Yv = dv.Clamp(0.0, 1.0);
     				}
     			}
     			if (!Bod.Is獣 && !(対象.Element is バイブ_デンマ) && !(対象.Element is ハンド) && !(対象.Element is マウス) && !(対象.Element is ロータ))
     			{
-    				Bod.断面.膣サイズY = 1.0 + 0.2 * dv.Clamp(0.0, 1.0);
-    				Bod.VaginalCumDrip.尺度YC = Bod.断面.膣サイズY;
-    				Bod.VaginaOrigin.尺度YC = Bod.断面.膣サイズY;
+    				Bod.XRay.膣サイズY = 1.0 + 0.2 * dv.Clamp(0.0, 1.0);
+    				Bod.VaginalCumDrip.尺度YC = Bod.XRay.膣サイズY;
+    				Bod.VaginaOrigin.尺度YC = Bod.XRay.膣サイズY;
     			}
     			if (!(対象.Element is ハンド) || (対象.Element.Xi != 6 && 対象.Element.Xi != 7))
     			{
@@ -1061,7 +1061,7 @@ namespace SlaveMatrix
     						膣継続();
 
                             //if (mb != MouseButtons.Left && (Bod.断面_表示 ? (dy == 0) : (対象.Element.Yi == 0)) && o.Y < v.Y && !挿抜モーション.Run)
-                            if (mb != MouseButtons.Left && (Bod.断面_表示 ? (dy == 0) : (対象.Element.Yi == 0)) && o.Y > v.Y && !挿抜モーション.Run)
+                            if (mb != MouseButtons.Left && (Bod.XRay_表示 ? (dy == 0) : (対象.Element.Yi == 0)) && o.Y > v.Y && !挿抜モーション.Run)
     						{
     							調教UI.Action(ContactType.Vagina, ActionType.Insertion, CurrentState.End, アイテム情報, 0, 1, 機械: false, 射精: false);
     							Player.奴体力消費小();
@@ -1266,7 +1266,7 @@ namespace SlaveMatrix
     					}
     					対象.Element.Yi = 0;
     					対象.Under = true;
-    					if (Bod.断面_表示)
+    					if (Bod.XRay_表示)
     					{
     						Bod.性器.Xi = 3;
     					}
@@ -1376,7 +1376,7 @@ namespace SlaveMatrix
     				return;
     			}
     			_ = Is口;
-    			if (Is挿入 && ((!Is膣 && 対象.Element.Yi > 0) || (Is膣 && Bod.断面_表示 && dy > 0) || (!Bod.断面_表示 && 対象.Element.Yi > 0)))
+    			if (Is挿入 && ((!Is膣 && 対象.Element.Yi > 0) || (Is膣 && Bod.XRay_表示 && dy > 0) || (!Bod.XRay_表示 && 対象.Element.Yi > 0)))
     			{
     				if (調教UI.Focus != 調教UI.ハンド右CM && 調教UI.Focus != 調教UI.マウスCM && 調教UI.Focus != 調教UI.ペニスCM)
     				{
@@ -1528,12 +1528,12 @@ namespace SlaveMatrix
     						if (挿入処理2.dy > 3)
     						{
     							p.X *= 0.5;
-    							挿入処理2.Bod.断面.位置C = p;
+    							挿入処理2.Bod.XRay.位置C = p;
     						}
     						else if (挿入処理2.dy > 2)
     						{
     							p.X *= 0.25;
-    							挿入処理2.Bod.断面.位置C = p;
+    							挿入処理2.Bod.XRay.位置C = p;
     						}
     					}
     					if (挿入処理2.Is挿入)
@@ -1561,7 +1561,7 @@ namespace SlaveMatrix
     					{
     						item.SetPositionCont(DataConsts.Vec2DZero);
     					}
-    					挿入処理2.Bod.断面.位置C = DataConsts.Vec2DZero;
+    					挿入処理2.Bod.XRay.位置C = DataConsts.Vec2DZero;
     				}
     			};
     			調教UI.Mots.Add(振動モーション.GetHashCode().ToString(), 振動モーション);
@@ -1718,7 +1718,7 @@ namespace SlaveMatrix
     		base.Cha = Cha;
     		Bod = Cha.Body;
     		性器単位v = 1.0 / (double)Bod.性器.Body.GetCountY();
-    		断面単位v = 1.0 / (double)Bod.断面.Body.GetCountY();
+    		断面単位v = 1.0 / (double)Bod.XRay.Body.GetCountY();
     		断面単位v2 = 断面単位v * 2.0;
     		断面単位v3 = 断面単位v * 3.0;
     	}
