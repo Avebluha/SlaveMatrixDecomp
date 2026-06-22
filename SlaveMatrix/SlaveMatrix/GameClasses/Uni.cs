@@ -18,7 +18,7 @@ namespace SlaveMatrix
     		{
     			右 = true
     		});
-    		obj.鼻肌接続(new 鼻肌D());
+    		obj.鼻肌接続(new NoseSkinD());
     		obj.鼻肌接続(new 紅潮D());
     		obj.頬肌左接続(new 頬肌D());
     		obj.頬肌右接続(new 頬肌D

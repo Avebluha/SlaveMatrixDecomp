@@ -309,7 +309,7 @@ namespace SlaveMatrix
     	public NoseSkin(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, NoseSkinD e)
     	{
     		ThisType = GetType();
-    		Body = new VariantGrid(GlobalState.胴体["鼻肌"]);
+    		Body = new VariantGrid(GlobalState.胴体["NoseSkin"]);
     		PartGroup partGroup = Body[0][0];
     		PartGroup pars2 = partGroup["紋柄"].ToPars();
     		PartGroup pars3 = pars2["紋左"].ToPars();

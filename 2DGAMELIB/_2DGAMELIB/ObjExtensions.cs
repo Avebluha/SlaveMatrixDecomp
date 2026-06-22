@@ -48,7 +48,12 @@ namespace _2DGAMELIB
             ["単眼目"] = "MonoEye",
             ["単眼瞼"] = "MonoEyelid",
             ["目左"] = "EyeLeft",
-            ["魔性弱瞼左"] = "DemonicWeakEyelidLeft"
+            ["魔性弱瞼左"] = "DemonicWeakEyelidLeft",
+            ["魔性中瞼左"] = "DemonicMidEyelidLeft",
+            ["魔性強瞼左"] = "DemonicStrongEyelidLeft",
+            ["獣性瞼左"] = "BestialEyelidLeft",
+            ["エイリアン目左"] = "AlienEyeLeft",
+            ["鼻肌"] = "NoseSkin"
         };
 
         public static void MigrateKeys(this BodyTemplate BodyTemplate)

@@ -601,7 +601,7 @@ namespace SlaveMatrix
     	public 瞼_強(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 瞼_強D e)
     	{
     		ThisType = GetType();
-    		Body = new VariantGrid(GlobalState.胴体["魔性強瞼左"]);
+    		Body = new VariantGrid(GlobalState.胴体["DemonicStrongEyelidLeft"]);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_瞼 = partGroup["瞼"].ToPar();
     		X0Y0_二重 = partGroup["二重"].ToPar();

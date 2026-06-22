@@ -145,7 +145,7 @@ namespace SlaveMatrix
 
     	public 紅潮 紅潮;
 
-    	public 目傷 目傷左;
+    	public 目傷 EyeScarLeft;
 
     	public 目傷 目傷右;
 
@@ -2068,8 +2068,8 @@ namespace SlaveMatrix
     			if (瞼左 != null)
     			{
     				瞼左.Yi = value;
-    				目傷左.Yi = value;
-    				目傷左.Yi = 目傷左.Yi.Limit(0, 2);
+    				EyeScarLeft.Yi = value;
+    				EyeScarLeft.Yi = EyeScarLeft.Yi.Limit(0, 2);
     			}
     		}
     	}
@@ -2089,8 +2089,8 @@ namespace SlaveMatrix
     			if (瞼左 != null)
     			{
     				瞼左.Yv = value;
-    				目傷左.Yv = value;
-    				目傷左.Yi = 目傷左.Yi.Limit(0, 2);
+    				EyeScarLeft.Yv = value;
+    				EyeScarLeft.Yi = EyeScarLeft.Yi.Limit(0, 2);
     			}
     		}
     	}
@@ -4042,9 +4042,9 @@ namespace SlaveMatrix
     			目尻影右.SetHitFalse();
     			紅潮 = 頭.NoseSkin_接続.GetEle<紅潮>();
     			紅潮.SetHitFalse();
-    			目傷左 = 頭.EyeLeft_接続.GetEle<目傷>();
+    			EyeScarLeft = 頭.EyeLeft_接続.GetEle<目傷>();
     			目傷右 = 頭.目右_接続.GetEle<目傷>();
-    			目傷左.SetHitFalse();
+    			EyeScarLeft.SetHitFalse();
     			目傷右.SetHitFalse();
     			顔ハイライト左 = 頭.頬左_接続.GetEle<顔ハイライト>();
     			顔ハイライト右 = 頭.頬右_接続.GetEle<顔ハイライト>();
@@ -5835,7 +5835,7 @@ namespace SlaveMatrix
     				bod.NoseSkin.描画0(are);
     				bod.目尻影左.描画0(are);
     				bod.目尻影右.描画0(are);
-    				bod.目傷左.描画0(are);
+    				bod.EyeScarLeft.描画0(are);
     				bod.目傷右.描画0(are);
     				bod.頬肌左.描画0(are);
     				bod.頬肌右.描画0(are);
@@ -6262,7 +6262,7 @@ namespace SlaveMatrix
     				bod.NoseSkin.描画0(are);
     				bod.目尻影左.描画0(are);
     				bod.目尻影右.描画0(are);
-    				bod.目傷左.描画0(are);
+    				bod.EyeScarLeft.描画0(are);
     				bod.目傷右.描画0(are);
     				bod.頬肌左.描画0(are);
     				bod.頬肌右.描画0(are);
@@ -6689,7 +6689,7 @@ namespace SlaveMatrix
     				bod.NoseSkin.描画0(are);
     				bod.目尻影左.描画0(are);
     				bod.目尻影右.描画0(are);
-    				bod.目傷左.描画0(are);
+    				bod.EyeScarLeft.描画0(are);
     				bod.目傷右.描画0(are);
     				bod.頬肌左.描画0(are);
     				bod.頬肌右.描画0(are);
@@ -7119,7 +7119,7 @@ namespace SlaveMatrix
     				bod.NoseSkin.描画0(are);
     				bod.目尻影左.描画0(are);
     				bod.目尻影右.描画0(are);
-    				bod.目傷左.描画0(are);
+    				bod.EyeScarLeft.描画0(are);
     				bod.目傷右.描画0(are);
     				bod.頬肌左.描画0(are);
     				bod.頬肌右.描画0(are);
@@ -7539,7 +7539,7 @@ namespace SlaveMatrix
     				bod.NoseSkin.描画0(are);
     				bod.目尻影左.描画0(are);
     				bod.目尻影右.描画0(are);
-    				bod.目傷左.描画0(are);
+    				bod.EyeScarLeft.描画0(are);
     				bod.目傷右.描画0(are);
     				bod.頬肌左.描画0(are);
     				bod.頬肌右.描画0(are);
@@ -7962,7 +7962,7 @@ namespace SlaveMatrix
     				bod.NoseSkin.描画0(are);
     				bod.目尻影左.描画0(are);
     				bod.目尻影右.描画0(are);
-    				bod.目傷左.描画0(are);
+    				bod.EyeScarLeft.描画0(are);
     				bod.目傷右.描画0(are);
     				bod.頬肌左.描画0(are);
     				bod.頬肌右.描画0(are);
@@ -8418,7 +8418,7 @@ namespace SlaveMatrix
     				bod.NoseSkin.描画0(are);
     				bod.目尻影左.描画0(are);
     				bod.目尻影右.描画0(are);
-    				bod.目傷左.描画0(are);
+    				bod.EyeScarLeft.描画0(are);
     				bod.目傷右.描画0(are);
     				bod.頬肌左.描画0(are);
     				bod.頬肌右.描画0(are);
@@ -8846,7 +8846,7 @@ namespace SlaveMatrix
     			bod.NoseSkin.描画0(are);
     			bod.目尻影左.描画0(are);
     			bod.目尻影右.描画0(are);
-    			bod.目傷左.描画0(are);
+    			bod.EyeScarLeft.描画0(are);
     			bod.目傷右.描画0(are);
     			bod.頬肌左.描画0(are);
     			bod.頬肌右.描画0(are);
