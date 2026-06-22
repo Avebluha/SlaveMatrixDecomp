@@ -56,7 +56,7 @@ namespace SlaveMatrix
     	public static TorsoD 胴()
     	{
     		TorsoD obj = new TorsoD();
-    		obj.肌接続(new 胴腹板D());
+    		obj.肌接続(new TorsoPlateD());
     		obj.肌接続(new 胴肌D());
     		obj.肌接続(new 上着ミドル_ドレスD());
     		return obj;

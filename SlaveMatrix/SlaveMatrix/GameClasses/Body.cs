@@ -159,7 +159,7 @@ namespace SlaveMatrix
 
     	public 胸毛 胸毛_人;
 
-    	public 胴腹板 胴腹板_人;
+    	public TorsoPlate TorsoPlate_人;
 
     	public 胴肌 胴肌_人;
 
@@ -949,16 +949,16 @@ namespace SlaveMatrix
     			{
     				PregnantBellyPlate_人.腹板1_腹板_表示 = 胸腹板_人.虫性_腹板_表示;
     				PregnantBellyPlate_人.腹板1_縦線_表示 = 胸腹板_人.虫性_縦線_表示;
-    				PregnantBellyPlate_人.腹板2_腹板_表示 = 胴腹板_人.虫性_腹板_表示;
-    				PregnantBellyPlate_人.腹板2_縦線_表示 = 胴腹板_人.虫性_縦線_表示;
+    				PregnantBellyPlate_人.腹板2_腹板_表示 = TorsoPlate_人.虫性_腹板_表示;
+    				PregnantBellyPlate_人.腹板2_縦線_表示 = TorsoPlate_人.虫性_縦線_表示;
     				PregnantBellyPlate_人.腹板3_腹板_表示 = WaistSkin_人.虫性_腹板1_腹板_表示;
     				PregnantBellyPlate_人.腹板3_縦線_表示 = WaistSkin_人.虫性_腹板1_縦線_表示;
     				PregnantBellyPlate_人.腹板4_腹板_表示 = WaistSkin_人.虫性_腹板2_腹板_表示;
     				PregnantBellyPlate_人.腹板4_縦線_表示 = WaistSkin_人.虫性_腹板2_縦線_表示;
     				胸腹板_人.虫性_腹板_表示 = false;
     				胸腹板_人.虫性_縦線_表示 = false;
-    				胴腹板_人.虫性_腹板_表示 = false;
-    				胴腹板_人.虫性_縦線_表示 = false;
+    				TorsoPlate_人.虫性_腹板_表示 = false;
+    				TorsoPlate_人.虫性_縦線_表示 = false;
     				WaistSkin_人.虫性_腹板1_腹板_表示 = false;
     				WaistSkin_人.虫性_腹板1_縦線_表示 = false;
     				WaistSkin_人.虫性_腹板2_腹板_表示 = false;
@@ -968,8 +968,8 @@ namespace SlaveMatrix
     			{
     				胸腹板_人.虫性_腹板_表示 = PregnantBellyPlate_人.腹板1_腹板_表示;
     				胸腹板_人.虫性_縦線_表示 = PregnantBellyPlate_人.腹板1_縦線_表示;
-    				胴腹板_人.虫性_腹板_表示 = PregnantBellyPlate_人.腹板2_腹板_表示;
-    				胴腹板_人.虫性_縦線_表示 = PregnantBellyPlate_人.腹板2_縦線_表示;
+    				TorsoPlate_人.虫性_腹板_表示 = PregnantBellyPlate_人.腹板2_腹板_表示;
+    				TorsoPlate_人.虫性_縦線_表示 = PregnantBellyPlate_人.腹板2_縦線_表示;
     				WaistSkin_人.虫性_腹板1_腹板_表示 = PregnantBellyPlate_人.腹板3_腹板_表示;
     				WaistSkin_人.虫性_腹板1_縦線_表示 = PregnantBellyPlate_人.腹板3_縦線_表示;
     				WaistSkin_人.虫性_腹板2_腹板_表示 = PregnantBellyPlate_人.腹板4_腹板_表示;
@@ -3889,9 +3889,9 @@ namespace SlaveMatrix
     		if (Torso != null)
     		{
     			Chest = Torso.Chest_接続.GetEle<Chest>();
-    			胴腹板_人 = Torso.肌_接続.GetEle<胴腹板>();
+    			TorsoPlate_人 = Torso.肌_接続.GetEle<TorsoPlate>();
     			胴肌_人 = Torso.肌_接続.GetEle<胴肌>();
-    			胴腹板_人.SetHitFalse();
+    			TorsoPlate_人.SetHitFalse();
     			胴肌_人.SetHitFalse();
     			上着M_ドレス = Torso.肌_接続.GetEle<上着ミドル_ドレス>();
     			上着M_ドレス.SetHitFalse();
@@ -5783,7 +5783,7 @@ namespace SlaveMatrix
     				bod.PregnantBelly_人.描画0(are);
     				bod.PregnantBellyPlate_人.描画0(are);
     				bod.WaistSkin_人.描画0(are);
-    				bod.胴腹板_人.描画0(are);
+    				bod.TorsoPlate_人.描画0(are);
     				bod.胸腹板_人.描画0(are);
     				bod.胴肌_人.描画0(are);
     				bod.胸肌_人.描画0(are);
@@ -6210,7 +6210,7 @@ namespace SlaveMatrix
     				bod.PregnantBelly_人.描画0(are);
     				bod.PregnantBellyPlate_人.描画0(are);
     				bod.WaistSkin_人.描画0(are);
-    				bod.胴腹板_人.描画0(are);
+    				bod.TorsoPlate_人.描画0(are);
     				bod.胸腹板_人.描画0(are);
     				bod.胴肌_人.描画0(are);
     				bod.胸肌_人.描画0(are);
@@ -6637,7 +6637,7 @@ namespace SlaveMatrix
     				bod.PregnantBelly_人.描画0(are);
     				bod.PregnantBellyPlate_人.描画0(are);
     				bod.WaistSkin_人.描画0(are);
-    				bod.胴腹板_人.描画0(are);
+    				bod.TorsoPlate_人.描画0(are);
     				bod.胸腹板_人.描画0(are);
     				bod.胴肌_人.描画0(are);
     				bod.胸肌_人.描画0(are);
@@ -7076,7 +7076,7 @@ namespace SlaveMatrix
     				bod.PregnantBelly_人.描画0(are);
     				bod.PregnantBellyPlate_人.描画0(are);
     				bod.WaistSkin_人.描画0(are);
-    				bod.胴腹板_人.描画0(are);
+    				bod.TorsoPlate_人.描画0(are);
     				bod.胸腹板_人.描画0(are);
     				bod.胴肌_人.描画0(are);
     				bod.胸肌_人.描画0(are);
@@ -7487,7 +7487,7 @@ namespace SlaveMatrix
     				bod.PregnantBelly_人.描画0(are);
     				bod.PregnantBellyPlate_人.描画0(are);
     				bod.WaistSkin_人.描画0(are);
-    				bod.胴腹板_人.描画0(are);
+    				bod.TorsoPlate_人.描画0(are);
     				bod.胸腹板_人.描画0(are);
     				bod.胴肌_人.描画0(are);
     				bod.胸肌_人.描画0(are);
@@ -7910,7 +7910,7 @@ namespace SlaveMatrix
     				bod.PregnantBelly_人.描画0(are);
     				bod.PregnantBellyPlate_人.描画0(are);
     				bod.WaistSkin_人.描画0(are);
-    				bod.胴腹板_人.描画0(are);
+    				bod.TorsoPlate_人.描画0(are);
     				bod.胸腹板_人.描画0(are);
     				bod.胴肌_人.描画0(are);
     				bod.胸肌_人.描画0(are);
@@ -8366,7 +8366,7 @@ namespace SlaveMatrix
     				bod.PregnantBelly_人.描画0(are);
     				bod.PregnantBellyPlate_人.描画0(are);
     				bod.WaistSkin_人.描画0(are);
-    				bod.胴腹板_人.描画0(are);
+    				bod.TorsoPlate_人.描画0(are);
     				bod.胸腹板_人.描画0(are);
     				bod.胴肌_人.描画0(are);
     				bod.胸肌_人.描画0(are);
@@ -8794,7 +8794,7 @@ namespace SlaveMatrix
     			bod.PregnantBelly_人.描画0(are);
     			bod.PregnantBellyPlate_人.描画0(are);
     			bod.WaistSkin_人.描画0(are);
-    			bod.胴腹板_人.描画0(are);
+    			bod.TorsoPlate_人.描画0(are);
     			bod.胸腹板_人.描画0(are);
     			bod.胴肌_人.描画0(are);
     			bod.胸肌_人.描画0(are);
@@ -9796,7 +9796,7 @@ namespace SlaveMatrix
     	{
     		Torso.X0Y0_筋肉_筋肉左.SetPositionCont(DataConsts.Vec2DUnitY * (Waist.Yv * -0.004));
     		Torso.X0Y0_筋肉_筋肉右.SetPositionCont(DataConsts.Vec2DUnitY * (Waist.Yv * -0.004));
-    		胴腹板_人.X0Y0_虫性_腹板.SetPositionCont(DataConsts.Vec2DUnitY * (Waist.Yv * -0.002));
+    		TorsoPlate_人.X0Y0_虫性_腹板.SetPositionCont(DataConsts.Vec2DUnitY * (Waist.Yv * -0.002));
     		胴肌_人.Body.SetSizeYCont(0.85 + (1.0 - Waist.Yv) * 0.15);
     	}
 

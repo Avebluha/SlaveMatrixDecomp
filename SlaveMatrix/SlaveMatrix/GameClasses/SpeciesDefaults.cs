@@ -4417,7 +4417,7 @@ namespace SlaveMatrix
     		}
     		WaistD2.EnumEleD().SetValuesD("腹板", true);
     		WaistD2.EnumEleD().SetValuesD<胸腹板D>("表示", true);
-    		WaistD2.EnumEleD().SetValuesD<胴腹板D>("表示", true);
+    		WaistD2.EnumEleD().SetValuesD<TorsoPlateD>("表示", true);
     		WaistD2.EnumEleD().SetValuesD<PregnantBellyPlateD>("表示", false);
     		WaistD2.EnumEleD().SetValuesD("水掻", true);
     		WaistD2.EnumEleD().SetValuesD("肥大", Rng.XS.NextDouble());

@@ -5,7 +5,7 @@ using SlaveMatrix.GameClasses;
 namespace SlaveMatrix
 {
     [Serializable]
-    public class ボテ腹板D : ElementData
+    public class PregnantBellyPlateD : ElementData
     {
     	public bool 腹板4_腹板_表示;
 
@@ -23,14 +23,14 @@ namespace SlaveMatrix
 
     	public bool 腹板1_縦線_表示;
 
-    	public ボテ腹板D()
+    	public PregnantBellyPlateD()
     	{
     		ThisType = GetType();
     	}
 
     	public override Element GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
     	{
-    		return new ボテ腹板(DisUnit, 配色指定, 体配色, Med, this);
+    		return new PregnantBellyPlate(DisUnit, 配色指定, 体配色, Med, this);
     	}
     }
 }

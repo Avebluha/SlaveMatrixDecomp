@@ -1845,8 +1845,8 @@ namespace SlaveMatrix
     		ChestD2.AlignC();
     		ChestD2.首接続(首D2);
     		TorsoD TorsoD2 = Mix<TorsoD>(母方, 父方, i, 原種モード);
-    		胴腹板D 胴腹板D2;
-    		TorsoD2.肌接続(胴腹板D2 = Mix<胴腹板D>(母方, 父方, i, 原種モード));
+    		TorsoPlateD TorsoPlateD2;
+    		TorsoD2.肌接続(TorsoPlateD2 = Mix<TorsoPlateD>(母方, 父方, i, 原種モード));
     		TorsoD2.肌接続(Mix<胴肌D>(母方, 父方, i, 原種モード));
     		TorsoD2.肌接続(new 上着ミドル_ドレスD());
     		TorsoD2.AlignC();
@@ -3799,11 +3799,11 @@ namespace SlaveMatrix
     		}
     		bool flag4 = false;
     		flag4 |= 胸腹板D2.虫性_腹板_表示;
-    		flag4 |= 胴腹板D2.虫性_腹板_表示;
+    		flag4 |= TorsoPlateD2.虫性_腹板_表示;
     		flag4 |= WaistSkin.虫性_腹板1_腹板_表示 || WaistSkin.虫性_腹板2_腹板_表示;
     		bool flag5 = false;
     		flag5 |= 胸腹板D2.虫性_縦線_表示;
-    		flag5 |= 胴腹板D2.虫性_縦線_表示;
+    		flag5 |= TorsoPlateD2.虫性_縦線_表示;
     		flag5 |= WaistSkin.虫性_腹板1_縦線_表示 || WaistSkin.虫性_腹板2_縦線_表示;
     		flag5 = flag5 && flag4;
     		if (flag5)
@@ -3812,8 +3812,8 @@ namespace SlaveMatrix
     		}
     		胸腹板D2.虫性_腹板_表示 = flag4;
     		胸腹板D2.虫性_縦線_表示 = flag5;
-    		胴腹板D2.虫性_腹板_表示 = flag4;
-    		胴腹板D2.虫性_縦線_表示 = flag5;
+    		TorsoPlateD2.虫性_腹板_表示 = flag4;
+    		TorsoPlateD2.虫性_縦線_表示 = flag5;
     		WaistSkin.虫性_腹板1_腹板_表示 = flag4;
     		WaistSkin.虫性_腹板2_腹板_表示 = flag4;
     		WaistSkin.虫性_腹板1_縦線_表示 = flag5;
