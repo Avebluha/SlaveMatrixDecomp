@@ -6,7 +6,7 @@ using SlaveMatrix.GameClasses;
 namespace SlaveMatrix
 {
     [Serializable]
-    public class ボテ腹_人D : ボテ腹D
+    public class PregnantBelly_人D : PregnantBellyD
     {
     	public bool 腹_表示;
 
@@ -28,7 +28,7 @@ namespace SlaveMatrix
 
     	public List<ElementData> 腹板_接続 = new List<ElementData>();
 
-    	public ボテ腹_人D()
+    	public PregnantBelly_人D()
     	{
     		ThisType = GetType();
     	}
@@ -37,12 +37,12 @@ namespace SlaveMatrix
     	{
     		腹板_接続.Add(e);
     		e.Par = this;
-    		e.接続情報 = ConnectionInfo.ボテ腹_人_腹板_接続;
+    		e.接続情報 = ConnectionInfo.PregnantBelly_人_腹板_接続;
     	}
 
     	public override Element GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
     	{
-    		return new ボテ腹_人(DisUnit, 配色指定, 体配色, Med, this);
+    		return new PregnantBelly_人(DisUnit, 配色指定, 体配色, Med, this);
     	}
     }
 }

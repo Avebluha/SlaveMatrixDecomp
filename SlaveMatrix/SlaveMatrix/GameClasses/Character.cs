@@ -1782,7 +1782,7 @@ namespace SlaveMatrix
                 {
                     result.c = ContactType.Side;
                 }
-                else if (((result.e is Waist || result.e is 四足腰) && result.p != null && result.p.Tag == "下腹") || result.e is ボテ腹)
+                else if (((result.e is Waist || result.e is 四足腰) && result.p != null && result.p.Tag == "下腹") || result.e is PregnantBelly)
                 {
                     result.c = ContactType.Stomache;
                 }

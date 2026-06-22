@@ -254,7 +254,7 @@ namespace SlaveMatrix.GameClasses
                     {
                         item.SetSizeBase(item.GetSizeBase() * num2);
                     }
-                    else if (item.Tag.Contains("吸盤") || this is VaginaOrigin || this is InternalSemen || this is XRay || this is 性器 || this is 肛門 || this is 乳房 || this is 下着トップ || this is Waist || this is 腰肌 || this is 四足腰 || this is 下着ボトム || this is JacketBottom || this is 手 || this is 噴乳 || this is 飛沫 || this is 潮吹_小 || this is 潮吹_大 || this is 放尿 || this is 半身 || this is 頭頂_天 || this is 背中_光 || this is ボテ腹)
+                    else if (item.Tag.Contains("吸盤") || this is VaginaOrigin || this is InternalSemen || this is XRay || this is 性器 || this is 肛門 || this is 乳房 || this is 下着トップ || this is Waist || this is 腰肌 || this is 四足腰 || this is 下着ボトム || this is JacketBottom || this is 手 || this is 噴乳 || this is 飛沫 || this is 潮吹_小 || this is 潮吹_大 || this is 放尿 || this is 半身 || this is 頭頂_天 || this is 背中_光 || this is PregnantBelly)
                     {
                         item.SetSizeBase(item.GetSizeBase() * num);
                     }
@@ -291,7 +291,7 @@ namespace SlaveMatrix.GameClasses
                 double num = 身長mi2 + 身長d2 * 身長_;
                 foreach (ShapePart item in Body.EnumAllPar())
                 {
-                    if (!item.GetParent().Tag.Contains("眼") && !item.GetParent().Tag.Contains("コア") && !item.Tag.Contains("傷") && !item.Tag.Contains("ボタン") && !item.GetParent().Tag.Contains("輪") && !item.Tag.Contains("吸盤") && this is not VaginaOrigin && this is not InternalSemen && this is not XRay && this is not 性器 && this is not 肛門 && this is not 乳房 && this is not 下着トップ && this is not Waist && this is not 腰肌 && this is not 四足腰 && this is not 下着ボトム && this is not JacketBottom && this is not 手 && this is not 噴乳 && this is not 飛沫 && this is not 潮吹_小 && this is not 潮吹_大 && this is not 放尿 && this is not Head && this is not 目隠帯 && this is not 玉口枷 && this is not 半身 && this is not 頭頂 && this is not 背中_光 && this is not ボテ腹)
+                    if (!item.GetParent().Tag.Contains("眼") && !item.GetParent().Tag.Contains("コア") && !item.Tag.Contains("傷") && !item.Tag.Contains("ボタン") && !item.GetParent().Tag.Contains("輪") && !item.Tag.Contains("吸盤") && this is not VaginaOrigin && this is not InternalSemen && this is not XRay && this is not 性器 && this is not 肛門 && this is not 乳房 && this is not 下着トップ && this is not Waist && this is not 腰肌 && this is not 四足腰 && this is not 下着ボトム && this is not JacketBottom && this is not 手 && this is not 噴乳 && this is not 飛沫 && this is not 潮吹_小 && this is not 潮吹_大 && this is not 放尿 && this is not Head && this is not 目隠帯 && this is not 玉口枷 && this is not 半身 && this is not 頭頂 && this is not 背中_光 && this is not PregnantBelly)
                     {
                         if (this is Head or 目隠帯 or 玉口枷)
                         {
@@ -524,8 +524,8 @@ namespace SlaveMatrix.GameClasses
             ConnectionInfo.Waist_肌_接続 => 1,
             ConnectionInfo.Waist_翼左_接続 => 0,
             ConnectionInfo.Waist_翼右_接続 => 0,
-            ConnectionInfo.ボテ腹_人_腹板_接続 => 1,
-            ConnectionInfo.ボテ腹_獣_腹板_接続 => 1,
+            ConnectionInfo.PregnantBelly_人_腹板_接続 => 1,
+            ConnectionInfo.PregnantBelly_獣_腹板_接続 => 1,
             ConnectionInfo.肛門_人_肛門精液_接続 => 1,
             ConnectionInfo.肛門_獣_肛門精液_接続 => 1,
             ConnectionInfo.性器_人_陰核_接続 => 1,

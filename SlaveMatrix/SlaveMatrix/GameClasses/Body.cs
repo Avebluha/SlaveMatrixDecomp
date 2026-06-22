@@ -163,7 +163,7 @@ namespace SlaveMatrix
 
     	public 胴肌 胴肌_人;
 
-    	public ボテ腹_人 ボテ腹_人;
+    	public PregnantBelly_人 PregnantBelly_人;
 
     	public ボテ腹板 ボテ腹板_人;
 
@@ -269,7 +269,7 @@ namespace SlaveMatrix
 
     	public 胸毛 胸毛_獣;
 
-    	public ボテ腹_獣 ボテ腹_獣;
+    	public PregnantBelly_獣 PregnantBelly_獣;
 
     	public 肛門_獣 肛門_獣;
 
@@ -904,48 +904,48 @@ namespace SlaveMatrix
     			{
     				if (Is獣)
     				{
-    					XRay_獣.子宮_表示 = !ボテ腹_表示;
-    					XRay_獣.子宮口_表示 = !ボテ腹_表示;
-    					XRay_獣.子宮内_表示 = !ボテ腹_表示;
-    					XRay_獣.卵管左_表示 = !ボテ腹_表示;
-    					XRay_獣.卵巣左_表示 = !ボテ腹_表示;
-    					XRay_獣.卵管右_表示 = !ボテ腹_表示;
-    					XRay_獣.卵巣右_表示 = !ボテ腹_表示;
-    					XRay_獣.精液_表示 = !ボテ腹_表示;
+    					XRay_獣.子宮_表示 = !PregnantBelly_表示;
+    					XRay_獣.子宮口_表示 = !PregnantBelly_表示;
+    					XRay_獣.子宮内_表示 = !PregnantBelly_表示;
+    					XRay_獣.卵管左_表示 = !PregnantBelly_表示;
+    					XRay_獣.卵巣左_表示 = !PregnantBelly_表示;
+    					XRay_獣.卵管右_表示 = !PregnantBelly_表示;
+    					XRay_獣.卵巣右_表示 = !PregnantBelly_表示;
+    					XRay_獣.精液_表示 = !PregnantBelly_表示;
     				}
     				else
     				{
-    					XRay_人.子宮_表示 = !ボテ腹_表示;
-    					XRay_人.子宮口_表示 = !ボテ腹_表示;
-    					XRay_人.子宮内_表示 = !ボテ腹_表示;
-    					XRay_人.卵管左_表示 = !ボテ腹_表示;
-    					XRay_人.卵巣左_表示 = !ボテ腹_表示;
-    					XRay_人.卵管右_表示 = !ボテ腹_表示;
-    					XRay_人.卵巣右_表示 = !ボテ腹_表示;
-    					XRay_人.精液_表示 = !ボテ腹_表示;
+    					XRay_人.子宮_表示 = !PregnantBelly_表示;
+    					XRay_人.子宮口_表示 = !PregnantBelly_表示;
+    					XRay_人.子宮内_表示 = !PregnantBelly_表示;
+    					XRay_人.卵管左_表示 = !PregnantBelly_表示;
+    					XRay_人.卵巣左_表示 = !PregnantBelly_表示;
+    					XRay_人.卵管右_表示 = !PregnantBelly_表示;
+    					XRay_人.卵巣右_表示 = !PregnantBelly_表示;
+    					XRay_人.精液_表示 = !PregnantBelly_表示;
     				}
     			}
     		}
     	}
 
-    	public bool ボテ腹_表示
+    	public bool PregnantBelly_表示
     	{
     		get
     		{
     			if (!Is獣)
     			{
-    				return ボテ腹_人.表示;
+    				return PregnantBelly_人.表示;
     			}
-    			return ボテ腹_獣.表示;
+    			return PregnantBelly_獣.表示;
     		}
     		set
     		{
     			if (Is獣)
     			{
-    				ボテ腹_獣.表示 = value;
+    				PregnantBelly_獣.表示 = value;
     				return;
     			}
-    			if (!ボテ腹_人.表示 && value)
+    			if (!PregnantBelly_人.表示 && value)
     			{
     				ボテ腹板_人.腹板1_腹板_表示 = 胸腹板_人.虫性_腹板_表示;
     				ボテ腹板_人.腹板1_縦線_表示 = 胸腹板_人.虫性_縦線_表示;
@@ -964,7 +964,7 @@ namespace SlaveMatrix
     				腰肌_人.虫性_腹板2_腹板_表示 = false;
     				腰肌_人.虫性_腹板2_縦線_表示 = false;
     			}
-    			else if (ボテ腹_人.表示 && !value)
+    			else if (PregnantBelly_人.表示 && !value)
     			{
     				胸腹板_人.虫性_腹板_表示 = ボテ腹板_人.腹板1_腹板_表示;
     				胸腹板_人.虫性_縦線_表示 = ボテ腹板_人.腹板1_縦線_表示;
@@ -983,7 +983,7 @@ namespace SlaveMatrix
     				ボテ腹板_人.腹板4_腹板_表示 = false;
     				ボテ腹板_人.腹板4_縦線_表示 = false;
     			}
-    			ボテ腹_人.表示 = value;
+    			PregnantBelly_人.表示 = value;
     		}
     	}
 
@@ -2001,54 +2001,54 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public double ボテ腹v
+    	public double PregnantBellyv
     	{
     		get
     		{
     			if (!Is獣)
     			{
-    				return ボテ腹_人.Yv;
+    				return PregnantBelly_人.Yv;
     			}
-    			return ボテ腹_獣.Yv;
+    			return PregnantBelly_獣.Yv;
     		}
     		set
     		{
     			if (Is獣)
     			{
-    				ボテ腹_獣.Yv = value;
+    				PregnantBelly_獣.Yv = value;
     			}
     			else
     			{
-    				ボテ腹_人.Yv = value;
+    				PregnantBelly_人.Yv = value;
     				ボテ腹板_人.Yv = value;
     			}
-    			上着B_前掛け.X0Y0_帯.SetSizeXCont(1.0 + 0.1 * ボテ腹v);
+    			上着B_前掛け.X0Y0_帯.SetSizeXCont(1.0 + 0.1 * PregnantBellyv);
     			上着B_前掛け.X0Y1_帯.SetSizeXCont(上着B_前掛け.X0Y0_帯.GetSizeXCont());
     		}
     	}
 
-    	public int ボテ腹i
+    	public int PregnantBellyi
     	{
     		get
     		{
     			if (!Is獣)
     			{
-    				return ボテ腹_人.Yi;
+    				return PregnantBelly_人.Yi;
     			}
-    			return ボテ腹_獣.Yi;
+    			return PregnantBelly_獣.Yi;
     		}
     		set
     		{
     			if (Is獣)
     			{
-    				ボテ腹_獣.Yi = value;
+    				PregnantBelly_獣.Yi = value;
     			}
     			else
     			{
-    				ボテ腹_人.Yi = value;
+    				PregnantBelly_人.Yi = value;
     				ボテ腹板_人.Yi = value;
     			}
-    			上着B_前掛け.X0Y0_帯.SetSizeXCont(1.0 + 0.1 * ボテ腹v);
+    			上着B_前掛け.X0Y0_帯.SetSizeXCont(1.0 + 0.1 * PregnantBellyv);
     			上着B_前掛け.X0Y1_帯.SetSizeXCont(上着B_前掛け.X0Y0_帯.GetSizeXCont());
     		}
     	}
@@ -3831,8 +3831,8 @@ namespace SlaveMatrix
     		if (Waist != null)
     		{
     			Torso = Waist.Torso_接続.GetEle<Torso>();
-    			ボテ腹_人 = Waist.肌_接続.GetEle<ボテ腹_人>();
-    			ボテ腹板_人 = ボテ腹_人.腹板_接続.GetEle<ボテ腹板>();
+    			PregnantBelly_人 = Waist.肌_接続.GetEle<PregnantBelly_人>();
+    			ボテ腹板_人 = PregnantBelly_人.腹板_接続.GetEle<ボテ腹板>();
     			ボテ腹板_人.SetHitFalse();
     			腰肌_人 = Waist.肌_接続.GetEle<腰肌>();
     			腰肌_人.X0Y0_陰毛.Hit = true;
@@ -4075,10 +4075,10 @@ namespace SlaveMatrix
     		sk.Add(Waist.キスマーク);
     		Waist.鞭痕 = new スタンプW(Med, Are, Cha, this, wd, Waist);
     		sw.Add(Waist.鞭痕);
-    		ボテ腹_人.キスマーク = new スタンプK(Med, Are, Cha, this, kd, ボテ腹_人);
-    		sk.Add(ボテ腹_人.キスマーク);
-    		ボテ腹_人.鞭痕 = new スタンプW(Med, Are, Cha, this, wd, ボテ腹_人);
-    		sw.Add(ボテ腹_人.鞭痕);
+    		PregnantBelly_人.キスマーク = new スタンプK(Med, Are, Cha, this, kd, PregnantBelly_人);
+    		sk.Add(PregnantBelly_人.キスマーク);
+    		PregnantBelly_人.鞭痕 = new スタンプW(Med, Are, Cha, this, wd, PregnantBelly_人);
+    		sw.Add(PregnantBelly_人.鞭痕);
     		乳房左.キスマーク = new スタンプK(Med, Are, Cha, this, kd, 乳房左);
     		sk.Add(乳房左.キスマーク);
     		乳房左.鞭痕 = new スタンプW(Med, Are, Cha, this, wd, 乳房左);
@@ -4507,9 +4507,9 @@ namespace SlaveMatrix
     					{
     						胸毛_獣 = (胸毛)item22;
     					}
-    					else if (item22 is ボテ腹_獣)
+    					else if (item22 is PregnantBelly_獣)
     					{
-    						ボテ腹_獣 = (ボテ腹_獣)item22;
+    						PregnantBelly_獣 = (PregnantBelly_獣)item22;
     					}
     					else if (item22 is 肛門_獣)
     					{
@@ -4609,9 +4609,9 @@ namespace SlaveMatrix
     				{
     					半身中1接続.Add(new DrawableElement(Chest_獣, Chest_獣.肌描画));
     				}
-    				if (ボテ腹_獣 != null)
+    				if (PregnantBelly_獣 != null)
     				{
-    					半身中1接続.Add(ボテ腹_獣);
+    					半身中1接続.Add(PregnantBelly_獣);
     				}
     				if (腰肌_獣 != null)
     				{
@@ -5359,16 +5359,16 @@ namespace SlaveMatrix
     			csb = 性器_人.X0Y0_陰核.GetSizeBase();
     			asb1 = 肛門_人.X0Y0_肛門2.GetSizeBase();
     			asb2 = 肛門_人.X0Y0_肛門3.GetSizeBase();
-    			ボテ腹_人.X0Y0_ハイライト.Dra = false;
-    			ボテ腹_人.X0Y0_ハイライト左1.Dra = false;
-    			ボテ腹_人.X0Y0_ハイライト左2.Dra = false;
-    			ボテ腹_人.X0Y0_ハイライト右1.Dra = false;
-    			ボテ腹_人.X0Y0_ハイライト右2.Dra = false;
-    			ボテ腹_人.X0Y1_ハイライト.Dra = false;
-    			ボテ腹_人.X0Y1_ハイライト左1.Dra = false;
-    			ボテ腹_人.X0Y1_ハイライト左2.Dra = false;
-    			ボテ腹_人.X0Y1_ハイライト右1.Dra = false;
-    			ボテ腹_人.X0Y1_ハイライト右2.Dra = false;
+    			PregnantBelly_人.X0Y0_ハイライト.Dra = false;
+    			PregnantBelly_人.X0Y0_ハイライト左1.Dra = false;
+    			PregnantBelly_人.X0Y0_ハイライト左2.Dra = false;
+    			PregnantBelly_人.X0Y0_ハイライト右1.Dra = false;
+    			PregnantBelly_人.X0Y0_ハイライト右2.Dra = false;
+    			PregnantBelly_人.X0Y1_ハイライト.Dra = false;
+    			PregnantBelly_人.X0Y1_ハイライト左1.Dra = false;
+    			PregnantBelly_人.X0Y1_ハイライト左2.Dra = false;
+    			PregnantBelly_人.X0Y1_ハイライト右1.Dra = false;
+    			PregnantBelly_人.X0Y1_ハイライト右2.Dra = false;
     		}
     		肛門y = 肛門.尺度YB;
     		肛門v = 肛門.尺度B;
@@ -5780,7 +5780,7 @@ namespace SlaveMatrix
     				{
     					bod.EI半中1.描画(are);
     				}
-    				bod.ボテ腹_人.描画0(are);
+    				bod.PregnantBelly_人.描画0(are);
     				bod.ボテ腹板_人.描画0(are);
     				bod.腰肌_人.描画0(are);
     				bod.胴腹板_人.描画0(are);
@@ -6207,7 +6207,7 @@ namespace SlaveMatrix
     				{
     					bod.EI半中1.描画(are);
     				}
-    				bod.ボテ腹_人.描画0(are);
+    				bod.PregnantBelly_人.描画0(are);
     				bod.ボテ腹板_人.描画0(are);
     				bod.腰肌_人.描画0(are);
     				bod.胴腹板_人.描画0(are);
@@ -6634,7 +6634,7 @@ namespace SlaveMatrix
     				{
     					bod.EI半中1.描画(are);
     				}
-    				bod.ボテ腹_人.描画0(are);
+    				bod.PregnantBelly_人.描画0(are);
     				bod.ボテ腹板_人.描画0(are);
     				bod.腰肌_人.描画0(are);
     				bod.胴腹板_人.描画0(are);
@@ -7073,7 +7073,7 @@ namespace SlaveMatrix
     				{
     					bod.EI半中2.描画(are);
     				}
-    				bod.ボテ腹_人.描画0(are);
+    				bod.PregnantBelly_人.描画0(are);
     				bod.ボテ腹板_人.描画0(are);
     				bod.腰肌_人.描画0(are);
     				bod.胴腹板_人.描画0(are);
@@ -7484,7 +7484,7 @@ namespace SlaveMatrix
     				{
     					bod.EI半中2.描画(are);
     				}
-    				bod.ボテ腹_人.描画0(are);
+    				bod.PregnantBelly_人.描画0(are);
     				bod.ボテ腹板_人.描画0(are);
     				bod.腰肌_人.描画0(are);
     				bod.胴腹板_人.描画0(are);
@@ -7907,7 +7907,7 @@ namespace SlaveMatrix
     				{
     					bod.EI半中2.描画(are);
     				}
-    				bod.ボテ腹_人.描画0(are);
+    				bod.PregnantBelly_人.描画0(are);
     				bod.ボテ腹板_人.描画0(are);
     				bod.腰肌_人.描画0(are);
     				bod.胴腹板_人.描画0(are);
@@ -8363,7 +8363,7 @@ namespace SlaveMatrix
     				{
     					bod.EI半中2.描画(are);
     				}
-    				bod.ボテ腹_人.描画0(are);
+    				bod.PregnantBelly_人.描画0(are);
     				bod.ボテ腹板_人.描画0(are);
     				bod.腰肌_人.描画0(are);
     				bod.胴腹板_人.描画0(are);
@@ -8791,7 +8791,7 @@ namespace SlaveMatrix
     			{
     				bod.EI半中2.描画(are);
     			}
-    			bod.ボテ腹_人.描画0(are);
+    			bod.PregnantBelly_人.描画0(are);
     			bod.ボテ腹板_人.描画0(are);
     			bod.腰肌_人.描画0(are);
     			bod.胴腹板_人.描画0(are);

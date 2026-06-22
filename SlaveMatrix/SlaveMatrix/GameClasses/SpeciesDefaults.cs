@@ -2436,7 +2436,7 @@ namespace SlaveMatrix
     		obj.半身接続(new 単足_粘D());
     		obj.EnumEleD().SetValuesD("スライム", true);
     		obj.EnumEleD().SetValuesD("ハイライト", true);
-    		obj.EnumEleD().SetValuesD<ボテ腹_人D>("表示", false);
+    		obj.EnumEleD().SetValuesD<PregnantBelly_人D>("表示", false);
     		obj.EnumEleD().SetValuesD("眼", false);
     		obj.EnumEleD().SetValuesD("コア", false);
     		obj.EnumEleD().SetValuesD("秘石", false);

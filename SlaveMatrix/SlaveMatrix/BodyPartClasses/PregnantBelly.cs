@@ -2,7 +2,7 @@ using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
-    public class ボテ腹 : Element
+    public class PregnantBelly : Element
     {
     }
 }

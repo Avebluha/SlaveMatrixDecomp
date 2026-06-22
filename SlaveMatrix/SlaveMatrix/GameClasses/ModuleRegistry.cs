@@ -1011,17 +1011,17 @@ namespace SlaveMatrix
     	{
     		if (GlobalState.GameData.TrainingTarget.妊娠状態変数 > -1)
     		{
-    			TrainingTarget.Body.ボテ腹i = GlobalState.GameData.TrainingTarget.妊娠状態変数;
-    			TrainingTarget.Body.ボテ腹_表示 = true;
+    			TrainingTarget.Body.PregnantBellyi = GlobalState.GameData.TrainingTarget.妊娠状態変数;
+    			TrainingTarget.Body.PregnantBelly_表示 = true;
     			if (!TrainingTarget.Body.Is獣)
     			{
-    				TrainingTarget.Body.ボテ腹_人.ハイライト表示 = GlobalState.GameData.TrainingTarget.妊娠状態変数 > 2;
+    				TrainingTarget.Body.PregnantBelly_人.ハイライト表示 = GlobalState.GameData.TrainingTarget.妊娠状態変数 > 2;
     			}
     		}
     		else
     		{
-    			TrainingTarget.Body.ボテ腹i = 0;
-    			TrainingTarget.Body.ボテ腹_表示 = false;
+    			TrainingTarget.Body.PregnantBellyi = 0;
+    			TrainingTarget.Body.PregnantBelly_表示 = false;
     		}
     		//TrainingTarget.Bod.断面_表示 = TrainingTarget.Bod.断面_表示;
     		TrainingTarget.Body.変動ステート更新();

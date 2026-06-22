@@ -4,7 +4,7 @@ using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
-    public class ボテ腹_人 : ボテ腹
+    public class PregnantBelly_人 : PregnantBelly
     {
     	public ShapePart X0Y0_腹;
 
@@ -419,11 +419,11 @@ namespace SlaveMatrix
 
     	public JointS 腹板_接続点 => new JointS(Body, X0Y0_腹, 0);
 
-    	public ボテ腹_人(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, ボテ腹_人D e)
+    	public PregnantBelly_人(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, PregnantBelly_人D e)
     	{
-    		ボテ腹_人 ボテ腹_人2 = this;
+    		PregnantBelly_人 PregnantBelly_人2 = this;
     		ThisType = GetType();
-    		Body = new VariantGrid(GlobalState.胴体["ボテ腹"]);
+    		Body = new VariantGrid(GlobalState.胴体["PregnantBelly"]);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_腹 = partGroup["腹"].ToPar();
     		X0Y0_ハイライト = partGroup["ハイライト"].ToPar();
@@ -509,9 +509,9 @@ namespace SlaveMatrix
     			腹板_接続 = e.腹板_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
-    				f.Par = ボテ腹_人2;
-    				f.ConnectionType = ConnectionInfo.ボテ腹_人_腹板_接続;
-    				f.接続(ボテ腹_人2.腹板_接続点);
+    				f.Par = PregnantBelly_人2;
+    				f.ConnectionType = ConnectionInfo.PregnantBelly_人_腹板_接続;
+    				f.接続(PregnantBelly_人2.腹板_接続点);
     				return f;
     			}).ToArray();
     		}

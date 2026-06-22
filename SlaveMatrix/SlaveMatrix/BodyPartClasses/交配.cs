@@ -1857,7 +1857,7 @@ namespace SlaveMatrix
     		Waist.膣基接続(new XRay_人D());
     		Waist.膣基接続(Uni.性器());
     		Waist.肛門接続(Uni.肛門());
-    		Waist.肌接続(Uni.ボテ腹());
+    		Waist.肌接続(Uni.PregnantBelly());
     		腰肌D 腰肌;
     		Waist.肌接続(腰肌 = Mix<腰肌D>(母方, 父方, i, 原種モード));
     		Waist.肌接続(new 下着ボトム_ノーマルD());
@@ -2519,7 +2519,7 @@ namespace SlaveMatrix
     					四足腰D2.膣基接続(new XRay_獣D());
     					四足腰D2.膣基接続(Uni.四足性器());
     					四足腰D2.肛門接続(Uni.四足肛門());
-    					四足腰D2.肌接続(new ボテ腹_獣D());
+    					四足腰D2.肌接続(new PregnantBelly_獣D());
     					四足腰D2.肌接続(腰肌D2 = Mix<腰肌D>(母方, 父方, i, 原種モード));
     					Waist.VaginaOrigin_接続.SetEleD(delegate(性器_人D e)
     					{

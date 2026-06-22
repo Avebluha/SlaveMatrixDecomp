@@ -5,7 +5,7 @@ using SlaveMatrix.GameClasses;
 namespace SlaveMatrix
 {
     [Serializable]
-    public class 膣内精液_獣D : 膣内精液D
+    public class InternalSemen_獣D : InternalSemenD
     {
     	public bool 精液_表示 = true;
 
@@ -13,14 +13,14 @@ namespace SlaveMatrix
 
     	public bool 血液2_表示;
 
-    	public 膣内精液_獣D()
+    	public InternalSemen_獣D()
     	{
     		ThisType = GetType();
     	}
 
     	public override Element GetEle(double DisUnit, ModeEventDispatcher Med, BodyColorSet 体配色)
     	{
-    		return new 膣内精液_獣(DisUnit, 配色指定, 体配色, Med, this);
+    		return new InternalSemen_獣(DisUnit, 配色指定, 体配色, Med, this);
     	}
     }
 }

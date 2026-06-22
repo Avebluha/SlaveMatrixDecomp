@@ -4,7 +4,7 @@ using SlaveMatrix.GameClasses;
 
 namespace SlaveMatrix
 {
-    public class ボテ腹_獣 : ボテ腹
+    public class PregnantBelly_獣 : PregnantBelly
     {
     	public ShapePart X0Y0_腹;
 
@@ -158,9 +158,9 @@ namespace SlaveMatrix
 
     	public JointS 腹板_接続点 => new JointS(Body, X0Y0_腹, 0);
 
-    	public ボテ腹_獣(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, ボテ腹_獣D e)
+    	public PregnantBelly_獣(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, PregnantBelly_獣D e)
     	{
-    		ボテ腹_獣 ボテ腹_獣2 = this;
+    		PregnantBelly_獣 PregnantBelly_獣2 = this;
     		ThisType = GetType();
     		Body = new VariantGrid(GlobalState.半身["四足ボテ腹"]);
     		PartGroup partGroup = Body[0][0];
@@ -217,9 +217,9 @@ namespace SlaveMatrix
     			腹板_接続 = e.腹板_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
-    				f.Par = ボテ腹_獣2;
-    				f.ConnectionType = ConnectionInfo.ボテ腹_獣_腹板_接続;
-    				f.接続(ボテ腹_獣2.腹板_接続点);
+    				f.Par = PregnantBelly_獣2;
+    				f.ConnectionType = ConnectionInfo.PregnantBelly_獣_腹板_接続;
+    				f.接続(PregnantBelly_獣2.腹板_接続点);
     				return f;
     			}).ToArray();
     		}

@@ -2,7 +2,7 @@ using _2DGAMELIB;
 
 namespace SlaveMatrix
 {
-    public class 膣内精液_人 : 膣内精液
+    public class InternalSemen_人 : InternalSemen
     {
     	public ShapePart X0Y0_精液;
 
@@ -137,10 +137,10 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 膣内精液_人(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 膣内精液_人D e)
+    	public InternalSemen_人(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, InternalSemen_人D e)
     	{
     		ThisType = GetType();
-    		Body = new VariantGrid(GlobalState.胴体["膣内精液"]);
+    		Body = new VariantGrid(GlobalState.胴体["InternalSemen"]);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_精液 = partGroup["精液"].ToPar();
     		X0Y0_血液1 = partGroup["血液1"].ToPar();
