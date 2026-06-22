@@ -348,9 +348,9 @@ namespace SlaveMatrix
     		}
     	};
 
-    	public const int 額目_0数 = 4;
+    	public const int ForeheadEye_0数 = 4;
 
-    	public static Dictionary<EmotionType, List<int>> 額目_0感情対応 = new Dictionary<EmotionType, List<int>>
+    	public static Dictionary<EmotionType, List<int>> ForeheadEye_0感情対応 = new Dictionary<EmotionType, List<int>>
     	{
     		{
     			EmotionType.none,
@@ -3401,48 +3401,48 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public static void 額目_見つめ(this Character Cha)
+    	public static void ForeheadEye_見つめ(this Character Cha)
     	{
-    		Cha.Body.額目.視線 = new Vector2D(0.0, 0.0);
-    		Cha.Body.額目.X0Y0_黒目_黒目.SetSizeXCont(1.0);
-    		Cha.Body.額目.X0Y0_黒目_瞳孔.SetSizeXCont(1.0);
-    		Cha.Body.額目.X0Y0_黒目_黒目.SetSizeYCont(1.0);
-    		Cha.Body.額目.X0Y0_黒目_瞳孔.SetSizeYCont(1.0);
+    		Cha.Body.ForeheadEye.視線 = new Vector2D(0.0, 0.0);
+    		Cha.Body.ForeheadEye.X0Y0_黒目_黒目.SetSizeXCont(1.0);
+    		Cha.Body.ForeheadEye.X0Y0_黒目_瞳孔.SetSizeXCont(1.0);
+    		Cha.Body.ForeheadEye.X0Y0_黒目_黒目.SetSizeYCont(1.0);
+    		Cha.Body.ForeheadEye.X0Y0_黒目_瞳孔.SetSizeYCont(1.0);
     	}
 
-    	public static void 額目_逸らし(this Character Cha, bool b)
+    	public static void ForeheadEye_逸らし(this Character Cha, bool b)
     	{
-    		Cha.Body.額目.視線 = new Vector2D((b ? 1.0 : (-1.0)) * 0.0014, 0.0);
-    		Cha.Body.額目.X0Y0_黒目_黒目.SetSizeXCont(0.9);
-    		Cha.Body.額目.X0Y0_黒目_瞳孔.SetSizeXCont(0.9);
-    		Cha.Body.額目.X0Y0_黒目_黒目.SetSizeYCont(1.0);
-    		Cha.Body.額目.X0Y0_黒目_瞳孔.SetSizeYCont(1.0);
+    		Cha.Body.ForeheadEye.視線 = new Vector2D((b ? 1.0 : (-1.0)) * 0.0014, 0.0);
+    		Cha.Body.ForeheadEye.X0Y0_黒目_黒目.SetSizeXCont(0.9);
+    		Cha.Body.ForeheadEye.X0Y0_黒目_瞳孔.SetSizeXCont(0.9);
+    		Cha.Body.ForeheadEye.X0Y0_黒目_黒目.SetSizeYCont(1.0);
+    		Cha.Body.ForeheadEye.X0Y0_黒目_瞳孔.SetSizeYCont(1.0);
     	}
 
-    	public static void 額目_上転(this Character Cha)
+    	public static void ForeheadEye_上転(this Character Cha)
     	{
-    		Cha.Body.額目.視線 = new Vector2D(0.0, -0.0025);
-    		Cha.Body.額目.X0Y0_黒目_黒目.SetSizeXCont(1.0);
-    		Cha.Body.額目.X0Y0_黒目_瞳孔.SetSizeXCont(1.0);
-    		Cha.Body.額目.X0Y0_黒目_黒目.SetSizeYCont(0.95);
-    		Cha.Body.額目.X0Y0_黒目_瞳孔.SetSizeYCont(0.95);
+    		Cha.Body.ForeheadEye.視線 = new Vector2D(0.0, -0.0025);
+    		Cha.Body.ForeheadEye.X0Y0_黒目_黒目.SetSizeXCont(1.0);
+    		Cha.Body.ForeheadEye.X0Y0_黒目_瞳孔.SetSizeXCont(1.0);
+    		Cha.Body.ForeheadEye.X0Y0_黒目_黒目.SetSizeYCont(0.95);
+    		Cha.Body.ForeheadEye.X0Y0_黒目_瞳孔.SetSizeYCont(0.95);
     	}
 
-    	public static void 額目_0(this Character c, int i)
+    	public static void ForeheadEye_0(this Character c, int i)
     	{
     		switch (i)
     		{
     		case 0:
-    			c.額目_見つめ();
+    			c.ForeheadEye_見つめ();
     			break;
     		case 1:
-    			c.額目_逸らし(b: false);
+    			c.ForeheadEye_逸らし(b: false);
     			break;
     		case 2:
-    			c.額目_逸らし(b: true);
+    			c.ForeheadEye_逸らし(b: true);
     			break;
     		case 3:
-    			c.額目_上転();
+    			c.ForeheadEye_上転();
     			break;
     		}
     	}
@@ -9358,7 +9358,7 @@ namespace SlaveMatrix
     			}
     			if (c.Body.IsForeheadEye)
     			{
-    				c.額目_0(num);
+    				c.ForeheadEye_0(num);
     			}
     		}
     	}

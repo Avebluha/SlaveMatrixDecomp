@@ -1291,7 +1291,7 @@ namespace SlaveMatrix
     			}
     			if (Cha.Body.IsForeheadEye)
     			{
-    				Cha.額目_上転();
+    				Cha.ForeheadEye_上転();
     			}
     		}
     		if (Rng.XS.NextBool())
@@ -1427,7 +1427,7 @@ namespace SlaveMatrix
     			}
     			if (Cha.Body.IsForeheadEye)
     			{
-    				Cha.額目_見つめ();
+    				Cha.ForeheadEye_見つめ();
     			}
     		}
     		if (!Cha.Body.玉口枷_表示 && !Cha.Body.Tounge_表示 && ((SkillL + Lust) * 0.05).Lot())
@@ -1481,7 +1481,7 @@ namespace SlaveMatrix
     			}
     			if (Cha.Body.IsForeheadEye)
     			{
-    				Cha.額目_見つめ();
+    				Cha.ForeheadEye_見つめ();
     			}
     		}
     		if (!Cha.Body.玉口枷_表示 && !Cha.Body.Tounge_表示 && ((SkillL + Lust) * 0.05).Lot())

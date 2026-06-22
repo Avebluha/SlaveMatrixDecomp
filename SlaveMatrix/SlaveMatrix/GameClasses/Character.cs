@@ -572,7 +572,7 @@ namespace SlaveMatrix
     					}
     					if (cha.Body.IsForeheadEye)
     					{
-    						cha.Body.額目.黒目_ハイライト下_表示 = true;
+    						cha.Body.ForeheadEye.黒目_ハイライト下_表示 = true;
     					}
     					cha.Body.LeftTear.Tear0流れ0_表示 = cha.Body.LeftTear.Tear0流れ1_表示 || cha.Body.LeftTear.Tear0_表示;
     					cha.Body.LeftTear.Tear0流れ1_表示 = cha.Body.LeftTear.Tear0_表示;
@@ -672,7 +672,7 @@ namespace SlaveMatrix
     					}
     					if (cha.Body.IsForeheadEye)
     					{
-    						cha.Body.額目.黒目_ハイライト下CD.不透明度 *= vi;
+    						cha.Body.ForeheadEye.黒目_ハイライト下CD.不透明度 *= vi;
     					}
     				}
     				if (RightTear)
@@ -713,8 +713,8 @@ namespace SlaveMatrix
     					}
     					if (cha.Body.IsForeheadEye)
     					{
-    						cha.Body.額目.黒目_ハイライト下_表示 = false;
-    						cha.Body.額目.黒目_ハイライト下CD.不透明度 = 1.0;
+    						cha.Body.ForeheadEye.黒目_ハイライト下_表示 = false;
+    						cha.Body.ForeheadEye.黒目_ハイライト下CD.不透明度 = 1.0;
     					}
     				}
     				if (RightTear)
@@ -1263,8 +1263,8 @@ namespace SlaveMatrix
     					}
     					if (cha.Body.IsForeheadEye)
     					{
-    						ev = s * (cha.CursorPosition - cha.Body.額目.位置).newNormalize() * 0.00089;
-    						cha.Body.額目.視線 = ev;
+    						ev = s * (cha.CursorPosition - cha.Body.ForeheadEye.位置).newNormalize() * 0.00089;
+    						cha.Body.ForeheadEye.視線 = ev;
     					}
     					if (cha.Body.IsSingleEye)
     					{
@@ -1286,7 +1286,7 @@ namespace SlaveMatrix
     					}
     					if (cha.Body.IsForeheadEye)
     					{
-    						cha.Body.額目.視線 = s * (cha.CursorPosition - cha.Body.額目.位置).newNormalize() * 0.00089;
+    						cha.Body.ForeheadEye.視線 = s * (cha.CursorPosition - cha.Body.ForeheadEye.位置).newNormalize() * 0.00089;
     					}
     					if (cha.Body.IsSingleEye)
     					{

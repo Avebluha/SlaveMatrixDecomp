@@ -738,7 +738,7 @@ namespace SlaveMatrix
     	public 頬肌(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 頬肌D e)
     	{
     		ThisType = GetType();
-    		Body = new VariantGrid(GlobalState.胴体["頬肌左"]);
+    		Body = new VariantGrid(GlobalState.胴体["CheekSkinLeft"]);
     		PartGroup partGroup = Body[0][0];
     		PartGroup pars2 = partGroup["淫タトゥ"].ToPars();
     		PartGroup pars3 = pars2["ハート"].ToPars();

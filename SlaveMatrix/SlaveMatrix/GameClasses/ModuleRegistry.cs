@@ -1667,7 +1667,7 @@ namespace SlaveMatrix
     			if (TrainingTarget.Body.IsForeheadEye)
     			{
     				TrainingTarget.額瞼_半1();
-    				TrainingTarget.額目_見つめ();
+    				TrainingTarget.ForeheadEye_見つめ();
     			}
     			if (!TrainingTarget.Body.玉口枷_表示)
     			{
@@ -2523,7 +2523,7 @@ namespace SlaveMatrix
     					}
     					if (TrainingTarget.Body.IsForeheadEye)
     					{
-    						TrainingTarget.額目_見つめ();
+    						TrainingTarget.ForeheadEye_見つめ();
     					}
     					if (GlobalState.GameData.TrainingTarget.Mother.Race == GameText.ヴィオランテ)
     					{
@@ -2567,7 +2567,7 @@ namespace SlaveMatrix
     					}
     					if (TrainingTarget.Body.IsForeheadEye)
     					{
-    						TrainingTarget.額目_見つめ();
+    						TrainingTarget.ForeheadEye_見つめ();
     					}
     					if (GlobalState.GameData.TrainingTarget.Father.Race == GameText.ヴィオランテ)
     					{
@@ -3369,7 +3369,7 @@ namespace SlaveMatrix
     				}
     				if (祝福.Body.IsForeheadEye)
     				{
-    					祝福.額目_見つめ();
+    					祝福.ForeheadEye_見つめ();
     				}
     				if (GlobalState.GameData.祝福.Race == GameText.ヴィオランテ)
     				{
@@ -3409,7 +3409,7 @@ namespace SlaveMatrix
     				}
     				if (祝福.Body.IsForeheadEye)
     				{
-    					祝福.額目_見つめ();
+    					祝福.ForeheadEye_見つめ();
     				}
     				if (GlobalState.GameData.祝福.Mother.Race == GameText.ヴィオランテ)
     				{
@@ -3449,7 +3449,7 @@ namespace SlaveMatrix
     				}
     				if (祝福.Body.IsForeheadEye)
     				{
-    					祝福.額目_見つめ();
+    					祝福.ForeheadEye_見つめ();
     				}
     				if (GlobalState.GameData.祝福.Father.Race == GameText.ヴィオランテ)
     				{

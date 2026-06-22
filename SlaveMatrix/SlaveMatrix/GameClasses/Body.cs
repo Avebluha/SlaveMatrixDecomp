@@ -87,7 +87,7 @@ namespace SlaveMatrix
 
     	public 双瞼 瞼右;
 
-    	public 縦目 額目;
+    	public 縦目 ForeheadEye;
 
     	public 縦瞼 額瞼;
 
@@ -3969,13 +3969,13 @@ namespace SlaveMatrix
     				瞼右.SetHitFalse();
     				RightTear.SetHitFalse();
     			}
-    			額目 = 頭.額_接続.GetEle<縦目>();
+    			ForeheadEye = 頭.額_接続.GetEle<縦目>();
     			頬目左 = 頭.CheekSkinLeft_接続.GetEle<頬目>();
     			頬目右 = 頭.頬肌右_接続.GetEle<頬目>();
-    			if (額目 != null)
+    			if (ForeheadEye != null)
     			{
-    				額瞼 = 額目.瞼_接続.GetEle<縦瞼>();
-    				額目.SetHitFalse();
+    				額瞼 = ForeheadEye.瞼_接続.GetEle<縦瞼>();
+    				ForeheadEye.SetHitFalse();
     				額瞼.SetHitFalse();
     			}
     			if (頬目左 != null)
@@ -5230,7 +5230,7 @@ namespace SlaveMatrix
     		IsDualEyes = EyeLeft != null;
     		IsSingleEye = MonoEye != null;
     		IsCheekEyes = 頬目左 != null;
-    		IsForeheadEye = 額目 != null;
+    		IsForeheadEye = ForeheadEye != null;
     		Is舌股 = Tounge is Tounge_長 && ((Tounge_長)Tounge).舌股右_Tounge1_表示;
     		Is最前腕人 = 肩左 != null && 肩左.UpperArm_接続.IsEle<UpperArm_人>();
     		Is最前手人 = 肩左 != null && 肩左.EnumEle().IsEle<手_人>();
@@ -5841,7 +5841,7 @@ namespace SlaveMatrix
     				bod.頬肌右.描画0(are);
     				if (bod.IsForeheadEye)
     				{
-    					bod.額目.描画0(are);
+    					bod.ForeheadEye.描画0(are);
     					bod.額瞼.描画0(are);
     				}
     				if (bod.IsCheekEyes)
@@ -6268,7 +6268,7 @@ namespace SlaveMatrix
     				bod.頬肌右.描画0(are);
     				if (bod.IsForeheadEye)
     				{
-    					bod.額目.描画0(are);
+    					bod.ForeheadEye.描画0(are);
     					bod.額瞼.描画0(are);
     				}
     				if (bod.IsCheekEyes)
@@ -6695,7 +6695,7 @@ namespace SlaveMatrix
     				bod.頬肌右.描画0(are);
     				if (bod.IsForeheadEye)
     				{
-    					bod.額目.描画0(are);
+    					bod.ForeheadEye.描画0(are);
     					bod.額瞼.描画0(are);
     				}
     				if (bod.IsCheekEyes)
@@ -7125,7 +7125,7 @@ namespace SlaveMatrix
     				bod.頬肌右.描画0(are);
     				if (bod.IsForeheadEye)
     				{
-    					bod.額目.描画0(are);
+    					bod.ForeheadEye.描画0(are);
     					bod.額瞼.描画0(are);
     				}
     				if (bod.IsCheekEyes)
@@ -7545,7 +7545,7 @@ namespace SlaveMatrix
     				bod.頬肌右.描画0(are);
     				if (bod.IsForeheadEye)
     				{
-    					bod.額目.描画0(are);
+    					bod.ForeheadEye.描画0(are);
     					bod.額瞼.描画0(are);
     				}
     				if (bod.IsCheekEyes)
@@ -7968,7 +7968,7 @@ namespace SlaveMatrix
     				bod.頬肌右.描画0(are);
     				if (bod.IsForeheadEye)
     				{
-    					bod.額目.描画0(are);
+    					bod.ForeheadEye.描画0(are);
     					bod.額瞼.描画0(are);
     				}
     				if (bod.IsCheekEyes)
@@ -8424,7 +8424,7 @@ namespace SlaveMatrix
     				bod.頬肌右.描画0(are);
     				if (bod.IsForeheadEye)
     				{
-    					bod.額目.描画0(are);
+    					bod.ForeheadEye.描画0(are);
     					bod.額瞼.描画0(are);
     				}
     				if (bod.IsCheekEyes)
@@ -8852,7 +8852,7 @@ namespace SlaveMatrix
     			bod.頬肌右.描画0(are);
     			if (bod.IsForeheadEye)
     			{
-    				bod.額目.描画0(are);
+    				bod.ForeheadEye.描画0(are);
     				bod.額瞼.描画0(are);
     			}
     			if (bod.IsCheekEyes)
