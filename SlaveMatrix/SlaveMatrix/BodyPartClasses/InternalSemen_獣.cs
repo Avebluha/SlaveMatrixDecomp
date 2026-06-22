@@ -2,7 +2,7 @@ using _2DGAMELIB;
 
 namespace SlaveMatrix
 {
-    public class 膣内精液_獣 : 膣内精液
+    public class InternalSemen_獣 : InternalSemen
     {
     	public ShapePart X0Y0_精液;
 
@@ -137,7 +137,7 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public 膣内精液_獣(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 膣内精液_獣D e)
+    	public InternalSemen_獣(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, InternalSemen_獣D e)
     	{
     		ThisType = GetType();
     		Body = new VariantGrid(GlobalState.半身["四足膣内精液"]);

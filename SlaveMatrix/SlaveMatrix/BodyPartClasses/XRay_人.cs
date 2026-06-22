@@ -619,7 +619,7 @@ namespace SlaveMatrix
     	public XRay_人(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, XRay_人D e)
     	{
     		ThisType = GetType();
-    		Body = new VariantGrid(GlobalState.胴体["断面"]);
+    		Body = new VariantGrid(GlobalState.胴体["XRay"]);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_VaginaOrigin = partGroup["膣基"].ToPar();
     		X0Y0_膣壁左 = partGroup["膣壁左"].ToPar();

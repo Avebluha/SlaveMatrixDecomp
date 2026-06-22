@@ -187,7 +187,7 @@ namespace SlaveMatrix
 
     	public VaginaOrigin_人 VaginaOrigin_人;
 
-    	public 膣内精液_人 膣内精液_人;
+    	public InternalSemen_人 InternalSemen_人;
 
     	public XRay_人 XRay_人;
 
@@ -277,7 +277,7 @@ namespace SlaveMatrix
 
     	public VaginaOrigin_獣 VaginaOrigin_獣;
 
-    	public 膣内精液_獣 膣内精液_獣;
+    	public InternalSemen_獣 InternalSemen_獣;
 
     	public XRay_獣 XRay_獣;
 
@@ -703,7 +703,7 @@ namespace SlaveMatrix
 
     	public VaginaOrigin VaginaOrigin;
 
-    	public 膣内精液 VaginalCumDrip;
+    	public InternalSemen VaginalCumDrip;
 
     	public XRay XRay;
 
@@ -3854,10 +3854,10 @@ namespace SlaveMatrix
     			肛門精液_人 = 肛門_人.肛門精液_接続.GetEle<肛門精液_人>();
     			肛門精液_人.SetHitFalse();
     			VaginaOrigin_人 = Waist.VaginaOrigin_接続.GetEle<VaginaOrigin_人>();
-    			膣内精液_人 = Waist.VaginaOrigin_接続.GetEle<膣内精液_人>();
+    			InternalSemen_人 = Waist.VaginaOrigin_接続.GetEle<InternalSemen_人>();
     			XRay_人 = Waist.VaginaOrigin_接続.GetEle<XRay_人>();
     			VaginaOrigin_人.SetHitFalse();
-    			膣内精液_人.SetHitFalse();
+    			InternalSemen_人.SetHitFalse();
     			XRay_人.SetHitFalse();
     			性器_人 = Waist.VaginaOrigin_接続.GetEle<性器_人>();
     			性器精液_人 = 性器_人.膣口_接続.GetEle<性器精液_人>();
@@ -4523,9 +4523,9 @@ namespace SlaveMatrix
     					{
     						VaginaOrigin_獣 = (VaginaOrigin_獣)item22;
     					}
-    					else if (item22 is 膣内精液_獣)
+    					else if (item22 is InternalSemen_獣)
     					{
-    						膣内精液_獣 = (膣内精液_獣)item22;
+    						InternalSemen_獣 = (InternalSemen_獣)item22;
     					}
     					else if (item22 is XRay_獣)
     					{
@@ -4584,7 +4584,7 @@ namespace SlaveMatrix
     				腰肌_獣.X0Y4_獣性_獣毛.Hit = true;
     				肛門精液_獣.SetHitFalse();
     				VaginaOrigin_獣.SetHitFalse();
-    				膣内精液_獣.SetHitFalse();
+    				InternalSemen_獣.SetHitFalse();
     				XRay_獣.SetHitFalse();
     				性器精液_獣.SetHitFalse();
     				飛沫_獣.SetHitFalse();
@@ -4706,7 +4706,7 @@ namespace SlaveMatrix
     					}
     				}
     				Sort(from e in ele.EnumEle().Skip(1)
-    					where !bod.半身前接続.Contains(e) && !bod.半身中1接続.Contains(e) && !bod.半身後接続.Contains(e) && !(e is 四足脇) && e != bod.肛門_獣 && e != bod.肛門精液_獣 && e != bod.VaginaOrigin_獣 && e != bod.膣内精液_獣 && e != bod.XRay_獣 && e != bod.性器_獣 && e != bod.性器精液_獣 && e != bod.飛沫_獣 && e != bod.潮吹_小_獣 && e != bod.潮吹_大_獣 && e != bod.放尿_獣 && e != bod.ピアス && e != bod.キャップ1
+    					where !bod.半身前接続.Contains(e) && !bod.半身中1接続.Contains(e) && !bod.半身後接続.Contains(e) && !(e is 四足脇) && e != bod.肛門_獣 && e != bod.肛門精液_獣 && e != bod.VaginaOrigin_獣 && e != bod.InternalSemen_獣 && e != bod.XRay_獣 && e != bod.性器_獣 && e != bod.性器精液_獣 && e != bod.飛沫_獣 && e != bod.潮吹_小_獣 && e != bod.潮吹_大_獣 && e != bod.放尿_獣 && e != bod.ピアス && e != bod.キャップ1
     					select e, 半身後接続);
     			}
     			else if (ele is 多足_蛸)
@@ -5286,10 +5286,10 @@ namespace SlaveMatrix
     		染み_人.X0Y0_潮1.SetPositionCont(positionCont2);
     		if (Is獣)
     		{
-    			膣内精液_獣.Intensity = 0.0;
+    			InternalSemen_獣.Intensity = 0.0;
     			XRay_獣.精液CD.不透明度 = 0.0;
     			VaginaOrigin = VaginaOrigin_獣;
-    			VaginalCumDrip = 膣内精液_獣;
+    			VaginalCumDrip = InternalSemen_獣;
     			XRay = XRay_獣;
     			性器 = 性器_獣;
     			GenetalCum = 性器精液_獣;
@@ -5299,8 +5299,8 @@ namespace SlaveMatrix
     			Urination = 放尿_獣;
     			肛門 = 肛門_獣;
     			AnalCum = 肛門精液_獣;
-    			膣内精液_獣.精液配色(GlobalState.GameData.配色);
-    			膣内精液_獣.精液濃度 = 0.0;
+    			InternalSemen_獣.精液配色(GlobalState.GameData.配色);
+    			InternalSemen_獣.精液濃度 = 0.0;
     			XRay_獣.精液配色(GlobalState.GameData.配色);
     			XRay_獣.精液濃度 = 0.0;
     			性器精液_獣.精液配色(GlobalState.GameData.配色);
@@ -5329,10 +5329,10 @@ namespace SlaveMatrix
     		}
     		else
     		{
-    			膣内精液_人.Intensity = 0.0;
+    			InternalSemen_人.Intensity = 0.0;
     			XRay_人.精液CD.不透明度 = 0.0;
     			VaginaOrigin = VaginaOrigin_人;
-    			VaginalCumDrip = 膣内精液_人;
+    			VaginalCumDrip = InternalSemen_人;
     			XRay = XRay_人;
     			性器 = 性器_人;
     			GenetalCum = 性器精液_人;
@@ -5342,8 +5342,8 @@ namespace SlaveMatrix
     			Urination = 放尿_人;
     			肛門 = 肛門_人;
     			AnalCum = 肛門精液_人;
-    			膣内精液_人.精液配色(GlobalState.GameData.配色);
-    			膣内精液_人.精液濃度 = 0.0;
+    			InternalSemen_人.精液配色(GlobalState.GameData.配色);
+    			InternalSemen_人.精液濃度 = 0.0;
     			XRay_人.精液配色(GlobalState.GameData.配色);
     			XRay_人.精液濃度 = 0.0;
     			性器精液_人.精液配色(GlobalState.GameData.配色);
@@ -5904,7 +5904,7 @@ namespace SlaveMatrix
     				{
     					bod.カーソル.描画0(are);
     				}
-    				bod.膣内精液_人.描画0(are);
+    				bod.InternalSemen_人.描画0(are);
     				bod.XRay_人.描画0(are);
     				bod.性器_人.描画0(are);
     				if (!bod.XRay_表示 && bod.cb1)
@@ -6323,7 +6323,7 @@ namespace SlaveMatrix
     				{
     					bod.カーソル.描画0(are);
     				}
-    				bod.膣内精液_人.描画0(are);
+    				bod.InternalSemen_人.描画0(are);
     				bod.XRay_人.描画0(are);
     				bod.性器_人.描画0(are);
     				if (!bod.XRay_表示 && bod.cb1)
@@ -6754,7 +6754,7 @@ namespace SlaveMatrix
     				{
     					bod.カーソル.描画0(are);
     				}
-    				bod.膣内精液_獣.描画0(are);
+    				bod.InternalSemen_獣.描画0(are);
     				bod.XRay_獣.描画0(are);
     				bod.性器_獣.描画0(are);
     				if (!bod.XRay_表示 && bod.cb1)
@@ -7184,7 +7184,7 @@ namespace SlaveMatrix
     				{
     					bod.カーソル.描画0(are);
     				}
-    				bod.膣内精液_人.描画0(are);
+    				bod.InternalSemen_人.描画0(are);
     				bod.XRay_人.描画0(are);
     				bod.性器_人.描画0(are);
     				if (!bod.XRay_表示 && bod.cb1)
@@ -7608,7 +7608,7 @@ namespace SlaveMatrix
     				{
     					bod.カーソル.描画0(are);
     				}
-    				bod.膣内精液_人.描画0(are);
+    				bod.InternalSemen_人.描画0(are);
     				bod.XRay_人.描画0(are);
     				bod.性器_人.描画0(are);
     				if (!bod.XRay_表示 && bod.cb1)
@@ -8035,7 +8035,7 @@ namespace SlaveMatrix
     				{
     					bod.カーソル.描画0(are);
     				}
-    				bod.膣内精液_人.描画0(are);
+    				bod.InternalSemen_人.描画0(are);
     				bod.XRay_人.描画0(are);
     				bod.性器_人.描画0(are);
     				if (!bod.XRay_表示 && bod.cb1)
@@ -8341,7 +8341,7 @@ namespace SlaveMatrix
     					{
     						bod.カーソル.描画0(are);
     					}
-    					bod.膣内精液_人.描画0(are);
+    					bod.InternalSemen_人.描画0(are);
     					bod.XRay_人.描画0(are);
     				}
     				bod.Torso.描画0(are);
@@ -8485,7 +8485,7 @@ namespace SlaveMatrix
     					{
     						bod.カーソル.描画0(are);
     					}
-    					bod.膣内精液_人.描画0(are);
+    					bod.InternalSemen_人.描画0(are);
     					bod.XRay_人.描画0(are);
     				}
     				bod.性器_人.描画0(are);
@@ -8915,7 +8915,7 @@ namespace SlaveMatrix
     			{
     				bod.カーソル.描画0(are);
     			}
-    			bod.膣内精液_人.描画0(are);
+    			bod.InternalSemen_人.描画0(are);
     			bod.XRay_人.描画0(are);
     			bod.性器_人.描画0(are);
     			if (!bod.XRay_表示 && bod.cb1)

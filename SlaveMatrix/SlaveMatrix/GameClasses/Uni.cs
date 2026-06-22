@@ -66,7 +66,7 @@ namespace SlaveMatrix
     	{
     		WaistD waist_description = new WaistD();
     		waist_description.膣基接続(new VaginaOrigin_人D());
-    		waist_description.膣基接続(new 膣内精液_人D());
+    		waist_description.膣基接続(new InternalSemen_人D());
     		waist_description.膣基接続(new XRay_人D());
     		waist_description.膣基接続(性器());
     		waist_description.肛門接続(肛門());
@@ -109,7 +109,7 @@ namespace SlaveMatrix
     	{
     		四足腰D obj = new 四足腰D();
     		obj.膣基接続(new VaginaOrigin_獣D());
-    		obj.膣基接続(new 膣内精液_獣D());
+    		obj.膣基接続(new InternalSemen_獣D());
     		obj.膣基接続(new XRay_獣D());
     		obj.膣基接続(四足性器());
     		obj.肛門接続(四足肛門());
