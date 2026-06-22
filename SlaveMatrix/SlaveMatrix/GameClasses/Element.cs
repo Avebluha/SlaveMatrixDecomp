@@ -466,7 +466,7 @@ namespace SlaveMatrix.GameClasses
             ConnectionInfo.Head_NoseSkin_接続 => 1,
             ConnectionInfo.Head_MonoEye_接続 => 1,
             ConnectionInfo.Head_単眼眉_接続 => 1,
-            ConnectionInfo.Head_頬肌左_接続 => 1,
+            ConnectionInfo.Head_CheekSkinLeft_接続 => 1,
             ConnectionInfo.Head_頬肌右_接続 => 1,
             ConnectionInfo.Head_触覚左_接続 => 1,
             ConnectionInfo.Head_触覚右_接続 => 1,

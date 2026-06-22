@@ -25,7 +25,7 @@ namespace SlaveMatrix
     	Head_大顎基_接続,
     	Head_顔面_接続,
     	Head_頭頂_接続,
-    	Head_頬肌左_接続,
+    	Head_CheekSkinLeft_接続,
     	Head_頬肌右_接続,
     	Head_触覚左_接続,
     	Head_触覚右_接続,

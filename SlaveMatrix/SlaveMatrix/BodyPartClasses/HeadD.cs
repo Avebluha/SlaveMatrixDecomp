@@ -130,7 +130,7 @@ namespace SlaveMatrix
 
     	public List<ElementData> 頭頂_接続 = new List<ElementData>();
 
-    	public List<ElementData> 頬肌左_接続 = new List<ElementData>();
+    	public List<ElementData> CheekSkinLeft_接続 = new List<ElementData>();
 
     	public List<ElementData> 頬肌右_接続 = new List<ElementData>();
 
@@ -271,9 +271,9 @@ namespace SlaveMatrix
 
     	public void 頬肌左接続(ElementData e)
     	{
-    		頬肌左_接続.Add(e);
+    		CheekSkinLeft_接続.Add(e);
     		e.Par = this;
-    		e.接続情報 = ConnectionInfo.Head_頬肌左_接続;
+    		e.接続情報 = ConnectionInfo.Head_CheekSkinLeft_接続;
     	}
 
     	public void 頬肌右接続(ElementData e)
