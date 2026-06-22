@@ -62,7 +62,7 @@ namespace SlaveMatrix
 
     	public Color 縦目 = Color.Yellow;
 
-    	public Color 頬目左 = Color.Yellow;
+    	public Color CheekEyeLeft = Color.Yellow;
 
     	public Color 頬目右 = Color.Yellow;
 
@@ -106,7 +106,7 @@ namespace SlaveMatrix
     	{
     		"髪", "眉", "睫", "髭", "体0", "体1", "毛0", "毛1", "羽0", "羽1",
     		"鱗0", "鱗1", "甲0", "甲1", "植0", "植1", "薔", "百", "柄", "紋",
-    		"人肌", "粘膜", "EyeLeft", "目右", "縦目", "頬目左", "頬目右", "白部", "爪", "角0",
+    		"人肌", "粘膜", "EyeLeft", "目右", "縦目", "CheekEyeLeft", "頬目右", "白部", "爪", "角0",
     		"角1", "膜", "眼0", "眼1", "眼2", "コア", "秘石", "後光", "口紅", "刺青"
     	});
 
@@ -127,7 +127,7 @@ namespace SlaveMatrix
     		ColorHelper.GetRandomColor(out EyeLeft);
     		目右 = EyeLeft;
     		縦目 = EyeLeft;
-    		頬目左 = EyeLeft;
+    		CheekEyeLeft = EyeLeft;
     		頬目右 = EyeLeft;
     		眉 = 髪;
     		毛0 = 眉;

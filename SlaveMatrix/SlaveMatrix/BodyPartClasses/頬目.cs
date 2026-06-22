@@ -236,7 +236,7 @@ namespace SlaveMatrix
     	{
     		頬目 頬目2 = this;
     		ThisType = GetType();
-    		Body = new VariantGrid(GlobalState.胴体["頬目左"]);
+    		Body = new VariantGrid(GlobalState.胴体["CheekEyeLeft"]);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_白目 = partGroup["白目"].ToPar();
     		PartGroup pars2 = partGroup["黒目"].ToPars();
@@ -349,7 +349,7 @@ namespace SlaveMatrix
     		else
     		{
     			白目CD = new ColorD(ref ColorHelper.Empty, ref 体配色.白部O);
-    			黒目_黒目CD = new ColorD(ref ColorHelper.Black, ref 体配色.頬目左O);
+    			黒目_黒目CD = new ColorD(ref ColorHelper.Black, ref 体配色.CheekEyeLeftO);
     			黒目_瞳孔CD = new ColorD(ref ColorHelper.Black, ref 体配色.瞳孔);
     			黒目_ハートCD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハートO);
     			黒目_ハイライト上CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト);

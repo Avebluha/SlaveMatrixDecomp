@@ -5178,7 +5178,7 @@ namespace SlaveMatrix
     			EyeLeft = GlobalState.GameData.色.瞳色,
     			目右 = GlobalState.GameData.色.瞳色,
     			縦目 = GlobalState.GameData.色.瞳色,
-    			頬目左 = GlobalState.GameData.色.瞳色,
+    			CheekEyeLeft = GlobalState.GameData.色.瞳色,
     			頬目右 = GlobalState.GameData.色.瞳色,
     			髪 = GlobalState.GameData.色.髪色,
     			眉 = GlobalState.GameData.色.髪色,

@@ -56,7 +56,9 @@ namespace _2DGAMELIB
             ["鼻肌"] = "NoseSkin",
             ["目傷左"] = "EyeScarLeft",
             ["頬肌左"] = "CheekSkinLeft",
-            ["額目"] = "ForeheadEye"
+            ["額目"] = "ForeheadEye",
+            ["額瞼"] = "ForeheadEyelid",
+            ["頬目左"] = "CheekEyeLeft"
         };
 
         public static void MigrateKeys(this BodyTemplate BodyTemplate)

@@ -91,11 +91,11 @@ namespace SlaveMatrix
 
     	public 縦瞼 ForeheadEyelid;
 
-    	public 頬目 頬目左;
+    	public 頬目 CheekEyeLeft;
 
     	public 頬目 頬目右;
 
-    	public 頬瞼 頬瞼左;
+    	public 頬瞼 CheekEyelidLeft;
 
     	public 頬瞼 頬瞼右;
 
@@ -1362,10 +1362,10 @@ namespace SlaveMatrix
     		set
     		{
     			紅潮.Intensity = value;
-    			if (頬瞼左 != null)
+    			if (CheekEyelidLeft != null)
     			{
-    				頬瞼左.瞼左_瞼CD.色 = Cha.CharacterData.body_color.人肌.BlendP1(Color.FromArgb((int)(128.0 * value), Cha.CharacterData.body_color.粘膜)).GetSkinGrad();
-    				頬瞼左.瞼右_瞼CD.色 = Cha.CharacterData.body_color.人肌.BlendP1(Color.FromArgb((int)(128.0 * value), Cha.CharacterData.body_color.粘膜)).GetSkinGrad();
+    				CheekEyelidLeft.瞼左_瞼CD.色 = Cha.CharacterData.body_color.人肌.BlendP1(Color.FromArgb((int)(128.0 * value), Cha.CharacterData.body_color.粘膜)).GetSkinGrad();
+    				CheekEyelidLeft.瞼右_瞼CD.色 = Cha.CharacterData.body_color.人肌.BlendP1(Color.FromArgb((int)(128.0 * value), Cha.CharacterData.body_color.粘膜)).GetSkinGrad();
     			}
     			if (頬瞼右 != null)
     			{
@@ -3970,7 +3970,7 @@ namespace SlaveMatrix
     				RightTear.SetHitFalse();
     			}
     			ForeheadEye = 頭.額_接続.GetEle<縦目>();
-    			頬目左 = 頭.CheekSkinLeft_接続.GetEle<頬目>();
+    			CheekEyeLeft = 頭.CheekSkinLeft_接続.GetEle<頬目>();
     			頬目右 = 頭.頬肌右_接続.GetEle<頬目>();
     			if (ForeheadEye != null)
     			{
@@ -3978,11 +3978,11 @@ namespace SlaveMatrix
     				ForeheadEye.SetHitFalse();
     				ForeheadEyelid.SetHitFalse();
     			}
-    			if (頬目左 != null)
+    			if (CheekEyeLeft != null)
     			{
-    				頬瞼左 = 頬目左.瞼_接続.GetEle<頬瞼>();
-    				頬目左.SetHitFalse();
-    				頬瞼左.SetHitFalse();
+    				CheekEyelidLeft = CheekEyeLeft.瞼_接続.GetEle<頬瞼>();
+    				CheekEyeLeft.SetHitFalse();
+    				CheekEyelidLeft.SetHitFalse();
     			}
     			if (頬目右 != null)
     			{
@@ -5192,7 +5192,7 @@ namespace SlaveMatrix
     			触覚左 = src.GetEle<触覚>();
     			触覚右 = src2.GetEle<触覚>();
     		}
-    		頭色更新 = new 頭色更新(頭, MonoEyelid, Is瞼宇 ? null : 瞼左, Is瞼宇 ? null : 瞼右, ForeheadEyelid, 頬瞼左, 頬瞼右);
+    		頭色更新 = new 頭色更新(頭, MonoEyelid, Is瞼宇 ? null : 瞼左, Is瞼宇 ? null : 瞼右, ForeheadEyelid, CheekEyelidLeft, 頬瞼右);
     		ドレス色更新 = new ドレス色更新(上着T_ドレス, 上着M_ドレス);
     		鯨色更新 = from e in Elements
     			where e.Par != null && e.Par is 長物_鯨 && e is 尾_鯨
@@ -5229,7 +5229,7 @@ namespace SlaveMatrix
     		Is触覚 = Is触覚他 || Is触覚甲;
     		IsDualEyes = EyeLeft != null;
     		IsSingleEye = MonoEye != null;
-    		IsCheekEyes = 頬目左 != null;
+    		IsCheekEyes = CheekEyeLeft != null;
     		IsForeheadEye = ForeheadEye != null;
     		Is舌股 = Tounge is Tounge_長 && ((Tounge_長)Tounge).舌股右_Tounge1_表示;
     		Is最前腕人 = 肩左 != null && 肩左.UpperArm_接続.IsEle<UpperArm_人>();
@@ -5846,9 +5846,9 @@ namespace SlaveMatrix
     				}
     				if (bod.IsCheekEyes)
     				{
-    					bod.頬目左.描画0(are);
+    					bod.CheekEyeLeft.描画0(are);
     					bod.頬目右.描画0(are);
-    					bod.頬瞼左.描画0(are);
+    					bod.CheekEyelidLeft.描画0(are);
     					bod.頬瞼右.描画0(are);
     				}
     				if (bod.Is瞼宇)
@@ -6273,9 +6273,9 @@ namespace SlaveMatrix
     				}
     				if (bod.IsCheekEyes)
     				{
-    					bod.頬目左.描画0(are);
+    					bod.CheekEyeLeft.描画0(are);
     					bod.頬目右.描画0(are);
-    					bod.頬瞼左.描画0(are);
+    					bod.CheekEyelidLeft.描画0(are);
     					bod.頬瞼右.描画0(are);
     				}
     				if (bod.Is瞼宇)
@@ -6700,9 +6700,9 @@ namespace SlaveMatrix
     				}
     				if (bod.IsCheekEyes)
     				{
-    					bod.頬目左.描画0(are);
+    					bod.CheekEyeLeft.描画0(are);
     					bod.頬目右.描画0(are);
-    					bod.頬瞼左.描画0(are);
+    					bod.CheekEyelidLeft.描画0(are);
     					bod.頬瞼右.描画0(are);
     				}
     				if (bod.Is瞼宇)
@@ -7130,9 +7130,9 @@ namespace SlaveMatrix
     				}
     				if (bod.IsCheekEyes)
     				{
-    					bod.頬目左.描画0(are);
+    					bod.CheekEyeLeft.描画0(are);
     					bod.頬目右.描画0(are);
-    					bod.頬瞼左.描画0(are);
+    					bod.CheekEyelidLeft.描画0(are);
     					bod.頬瞼右.描画0(are);
     				}
     				if (bod.Is瞼宇)
@@ -7550,9 +7550,9 @@ namespace SlaveMatrix
     				}
     				if (bod.IsCheekEyes)
     				{
-    					bod.頬目左.描画0(are);
+    					bod.CheekEyeLeft.描画0(are);
     					bod.頬目右.描画0(are);
-    					bod.頬瞼左.描画0(are);
+    					bod.CheekEyelidLeft.描画0(are);
     					bod.頬瞼右.描画0(are);
     				}
     				if (bod.Is瞼宇)
@@ -7973,9 +7973,9 @@ namespace SlaveMatrix
     				}
     				if (bod.IsCheekEyes)
     				{
-    					bod.頬目左.描画0(are);
+    					bod.CheekEyeLeft.描画0(are);
     					bod.頬目右.描画0(are);
-    					bod.頬瞼左.描画0(are);
+    					bod.CheekEyelidLeft.描画0(are);
     					bod.頬瞼右.描画0(are);
     				}
     				if (bod.Is瞼宇)
@@ -8429,9 +8429,9 @@ namespace SlaveMatrix
     				}
     				if (bod.IsCheekEyes)
     				{
-    					bod.頬目左.描画0(are);
+    					bod.CheekEyeLeft.描画0(are);
     					bod.頬目右.描画0(are);
-    					bod.頬瞼左.描画0(are);
+    					bod.CheekEyelidLeft.描画0(are);
     					bod.頬瞼右.描画0(are);
     				}
     				if (bod.Is瞼宇)
@@ -8857,9 +8857,9 @@ namespace SlaveMatrix
     			}
     			if (bod.IsCheekEyes)
     			{
-    				bod.頬目左.描画0(are);
+    				bod.CheekEyeLeft.描画0(are);
     				bod.頬目右.描画0(are);
-    				bod.頬瞼左.描画0(are);
+    				bod.CheekEyelidLeft.描画0(are);
     				bod.頬瞼右.描画0(are);
     			}
     			if (bod.Is瞼宇)

@@ -3299,11 +3299,11 @@ namespace SlaveMatrix
 
     	public static void 頬目_見つめ左(this Character Cha)
     	{
-    		Cha.Body.頬目左.視線 = new Vector2D(0.0, -0.00023);
-    		Cha.Body.頬目左.X0Y0_黒目_黒目.SetSizeXCont(1.0);
-    		Cha.Body.頬目左.X0Y0_黒目_瞳孔.SetSizeXCont(1.0);
-    		Cha.Body.頬目左.X0Y0_黒目_黒目.SetSizeYCont(1.0);
-    		Cha.Body.頬目左.X0Y0_黒目_瞳孔.SetSizeYCont(1.0);
+    		Cha.Body.CheekEyeLeft.視線 = new Vector2D(0.0, -0.00023);
+    		Cha.Body.CheekEyeLeft.X0Y0_黒目_黒目.SetSizeXCont(1.0);
+    		Cha.Body.CheekEyeLeft.X0Y0_黒目_瞳孔.SetSizeXCont(1.0);
+    		Cha.Body.CheekEyeLeft.X0Y0_黒目_黒目.SetSizeYCont(1.0);
+    		Cha.Body.CheekEyeLeft.X0Y0_黒目_瞳孔.SetSizeYCont(1.0);
     	}
 
     	public static void 頬目_見つめ右(this Character Cha)
@@ -3317,11 +3317,11 @@ namespace SlaveMatrix
 
     	public static void 頬目_逸らし左(this Character Cha, bool b)
     	{
-    		Cha.Body.頬目左.視線 = new Vector2D((b ? 1.0 : (-1.0)) * 0.0015, 0.0);
-    		Cha.Body.頬目左.X0Y0_黒目_黒目.SetSizeXCont(0.95);
-    		Cha.Body.頬目左.X0Y0_黒目_瞳孔.SetSizeXCont(0.95);
-    		Cha.Body.頬目左.X0Y0_黒目_黒目.SetSizeYCont(1.0);
-    		Cha.Body.頬目左.X0Y0_黒目_瞳孔.SetSizeYCont(1.0);
+    		Cha.Body.CheekEyeLeft.視線 = new Vector2D((b ? 1.0 : (-1.0)) * 0.0015, 0.0);
+    		Cha.Body.CheekEyeLeft.X0Y0_黒目_黒目.SetSizeXCont(0.95);
+    		Cha.Body.CheekEyeLeft.X0Y0_黒目_瞳孔.SetSizeXCont(0.95);
+    		Cha.Body.CheekEyeLeft.X0Y0_黒目_黒目.SetSizeYCont(1.0);
+    		Cha.Body.CheekEyeLeft.X0Y0_黒目_瞳孔.SetSizeYCont(1.0);
     	}
 
     	public static void 頬目_逸らし右(this Character Cha, bool b)
@@ -3335,11 +3335,11 @@ namespace SlaveMatrix
 
     	public static void 頬目_上転左(this Character Cha)
     	{
-    		Cha.Body.頬目左.視線 = new Vector2D(0.0, -0.0016);
-    		Cha.Body.頬目左.X0Y0_黒目_黒目.SetSizeXCont(1.0);
-    		Cha.Body.頬目左.X0Y0_黒目_瞳孔.SetSizeXCont(1.0);
-    		Cha.Body.頬目左.X0Y0_黒目_黒目.SetSizeYCont(0.75);
-    		Cha.Body.頬目左.X0Y0_黒目_瞳孔.SetSizeYCont(0.75);
+    		Cha.Body.CheekEyeLeft.視線 = new Vector2D(0.0, -0.0016);
+    		Cha.Body.CheekEyeLeft.X0Y0_黒目_黒目.SetSizeXCont(1.0);
+    		Cha.Body.CheekEyeLeft.X0Y0_黒目_瞳孔.SetSizeXCont(1.0);
+    		Cha.Body.CheekEyeLeft.X0Y0_黒目_黒目.SetSizeYCont(0.75);
+    		Cha.Body.CheekEyeLeft.X0Y0_黒目_瞳孔.SetSizeYCont(0.75);
     	}
 
     	public static void 頬目_上転右(this Character Cha)
@@ -3359,11 +3359,11 @@ namespace SlaveMatrix
 
     	public static void 両頬目_0(this Character Cha, int i1, int i2)
     	{
-    		Cha.頬目左_0(i1);
+    		Cha.CheekEyeLeft_0(i1);
     		Cha.頬目右_0(i2);
     	}
 
-    	public static void 頬目左_0(this Character c, int i)
+    	public static void CheekEyeLeft_0(this Character c, int i)
     	{
     		switch (i)
     		{
@@ -3547,7 +3547,7 @@ namespace SlaveMatrix
 
     	public static void 頬瞼_普左(this Character Cha)
     	{
-    		Cha.Body.頬瞼左.Xi = 0;
+    		Cha.Body.CheekEyelidLeft.Xi = 0;
     	}
 
     	public static void 頬瞼_普右(this Character Cha)
@@ -3557,7 +3557,7 @@ namespace SlaveMatrix
 
     	public static void 頬瞼_卑左(this Character Cha)
     	{
-    		Cha.Body.頬瞼左.Xi = 1;
+    		Cha.Body.CheekEyelidLeft.Xi = 1;
     	}
 
     	public static void 頬瞼_卑右(this Character Cha)
@@ -3567,11 +3567,11 @@ namespace SlaveMatrix
 
     	public static void 両頬瞼_0(this Character Cha, int i1, int i2)
     	{
-    		Cha.頬瞼左_0(i1);
+    		Cha.CheekEyelidLeft_0(i1);
     		Cha.頬瞼右_0(i2);
     	}
 
-    	public static void 頬瞼左_0(this Character c, int i)
+    	public static void CheekEyelidLeft_0(this Character c, int i)
     	{
     		switch (i)
     		{
@@ -3781,11 +3781,11 @@ namespace SlaveMatrix
 
     	public static void 両頬瞼_1(this Character Cha, int i1, int i2)
     	{
-    		Cha.頬瞼左_1(i1);
+    		Cha.CheekEyelidLeft_1(i1);
     		Cha.頬瞼右_1(i2);
     	}
 
-    	public static void 頬瞼左_1(this Character c, int i)
+    	public static void CheekEyelidLeft_1(this Character c, int i)
     	{
     		switch (i)
     		{

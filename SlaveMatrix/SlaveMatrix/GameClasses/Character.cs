@@ -564,7 +564,7 @@ namespace SlaveMatrix
     					}
     					if (cha.Body.IsCheekEyes)
     					{
-    						cha.Body.頬目左.黒目_ハイライト下_表示 = true;
+    						cha.Body.CheekEyeLeft.黒目_ハイライト下_表示 = true;
     					}
     					if (cha.Body.IsSingleEye)
     					{
@@ -664,7 +664,7 @@ namespace SlaveMatrix
     					}
     					if (cha.Body.IsCheekEyes)
     					{
-    						cha.Body.頬目左.黒目_ハイライト下CD.不透明度 *= vi;
+    						cha.Body.CheekEyeLeft.黒目_ハイライト下CD.不透明度 *= vi;
     					}
     					if (cha.Body.IsSingleEye)
     					{
@@ -703,8 +703,8 @@ namespace SlaveMatrix
     					}
     					if (cha.Body.IsCheekEyes)
     					{
-    						cha.Body.頬目左.黒目_ハイライト下_表示 = false;
-    						cha.Body.頬目左.黒目_ハイライト下CD.不透明度 = 1.0;
+    						cha.Body.CheekEyeLeft.黒目_ハイライト下_表示 = false;
+    						cha.Body.CheekEyeLeft.黒目_ハイライト下CD.不透明度 = 1.0;
     					}
     					if (cha.Body.IsSingleEye)
     					{
@@ -799,7 +799,7 @@ namespace SlaveMatrix
     				{
     					if (cha.Body.IsCheekEyes)
     					{
-    						cha.Body.頬瞼左.Yv = m.Value.Clamp(cha.瞼基準頬左, 1.0);
+    						cha.Body.CheekEyelidLeft.Yv = m.Value.Clamp(cha.瞼基準頬左, 1.0);
     						cha.Body.頬瞼右.Yv = m.Value.Clamp(cha.瞼基準頬右, 1.0);
     					}
     					if (cha.Body.IsForeheadEye)
@@ -1257,8 +1257,8 @@ namespace SlaveMatrix
     					}
     					if (cha.Body.IsCheekEyes)
     					{
-    						ev = s * (cha.CursorPosition - (cha.Body.頬目左.位置 + cha.Body.頬目右.位置) * 0.5).newNormalize() * 0.00089;
-    						cha.Body.頬目左.視線 = ev;
+    						ev = s * (cha.CursorPosition - (cha.Body.CheekEyeLeft.位置 + cha.Body.頬目右.位置) * 0.5).newNormalize() * 0.00089;
+    						cha.Body.CheekEyeLeft.視線 = ev;
     						cha.Body.頬目右.視線 = ev;
     					}
     					if (cha.Body.IsForeheadEye)
@@ -1281,7 +1281,7 @@ namespace SlaveMatrix
     					}
     					if (cha.Body.IsCheekEyes)
     					{
-    						cha.Body.頬目左.視線 = s * (cha.CursorPosition - cha.Body.頬目左.位置).newNormalize() * 0.00089;
+    						cha.Body.CheekEyeLeft.視線 = s * (cha.CursorPosition - cha.Body.CheekEyeLeft.位置).newNormalize() * 0.00089;
     						cha.Body.頬目右.視線 = s * (cha.CursorPosition - cha.Body.頬目右.位置).newNormalize() * 0.00089;
     					}
     					if (cha.Body.IsForeheadEye)

@@ -32,9 +32,9 @@ namespace SlaveMatrix
 
     	public Color2 縦目R;
 
-    	public Color2 頬目左O;
+    	public Color2 CheekEyeLeftO;
 
-    	public Color2 頬目左R;
+    	public Color2 CheekEyeLeftR;
 
     	public Color2 頬目右O;
 
@@ -242,8 +242,8 @@ namespace SlaveMatrix
     		目右O.GetRep(out 目右R);
     		縦目O = new Color2(ref ColorHelper.Black, ref Color.縦目);
     		縦目O.GetRep(out 縦目R);
-    		頬目左O = new Color2(ref ColorHelper.Black, ref Color.頬目左);
-    		頬目左O.GetRep(out 頬目左R);
+    		CheekEyeLeftO = new Color2(ref ColorHelper.Black, ref Color.CheekEyeLeft);
+    		CheekEyeLeftO.GetRep(out CheekEyeLeftR);
     		頬目右O = new Color2(ref ColorHelper.Black, ref Color.頬目右);
     		頬目右O.GetRep(out 頬目右R);
     		ColorHelper.GetSkinGrad(ref Color.人肌, out 人肌O);
