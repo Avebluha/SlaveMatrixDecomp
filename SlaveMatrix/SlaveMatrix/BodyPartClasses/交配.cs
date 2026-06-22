@@ -1812,7 +1812,7 @@ namespace SlaveMatrix
     		});
     		NoseSkinD NoseSkinD2;
     		HeadD2.鼻肌接続(NoseSkinD2 = Mix<NoseSkinD>(母方, 父方, i, 原種モード));
-    		HeadD2.鼻肌接続(new 紅潮D());
+    		HeadD2.鼻肌接続(new CrimsonSquirtD());
     		頬肌D 頬肌D2 = Mix<頬肌D>(母方, 父方, 右: false, i, 原種モード);
     		HeadD2.頬肌左接続(頬肌D2);
     		HeadD2.頬肌右接続(頬肌D2.Get逆());
