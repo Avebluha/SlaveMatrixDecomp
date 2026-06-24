@@ -113,9 +113,9 @@ namespace SlaveMatrix
 
     	public ShapePart X0Y0_ハイライト2;
 
-    	public ShapePart X0Y0_パンスト;
+    	public ShapePart X0Y0_Pantyhose;
 
-    	public ShapePart X0Y0_パンスト_ハイライト;
+    	public ShapePart X0Y0_Pantyhose_ハイライト;
 
     	public ShapePart X0Y0_ニーハイ_ニーハイ1;
 
@@ -229,9 +229,9 @@ namespace SlaveMatrix
 
     	public ShapePart X0Y1_ハイライト2;
 
-    	public ShapePart X0Y1_パンスト;
+    	public ShapePart X0Y1_Pantyhose;
 
-    	public ShapePart X0Y1_パンスト_ハイライト;
+    	public ShapePart X0Y1_Pantyhose_ハイライト;
 
     	public ShapePart X0Y1_ニーハイ_ニーハイ1;
 
@@ -317,9 +317,9 @@ namespace SlaveMatrix
 
     	public ShapePart X0Y2_ハイライト2;
 
-    	public ShapePart X0Y2_パンスト;
+    	public ShapePart X0Y2_Pantyhose;
 
-    	public ShapePart X0Y2_パンスト_ハイライト;
+    	public ShapePart X0Y2_Pantyhose_ハイライト;
 
     	public ShapePart X0Y2_ニーハイ_ニーハイ1;
 
@@ -423,9 +423,9 @@ namespace SlaveMatrix
 
     	public ShapePart X0Y3_ハイライト2;
 
-    	public ShapePart X0Y3_パンスト;
+    	public ShapePart X0Y3_Pantyhose;
 
-    	public ShapePart X0Y3_パンスト_ハイライト;
+    	public ShapePart X0Y3_Pantyhose_ハイライト;
 
     	public ShapePart X0Y3_ニーハイ_ニーハイ1;
 
@@ -521,9 +521,9 @@ namespace SlaveMatrix
 
     	public ShapePart X0Y4_ハイライト2;
 
-    	public ShapePart X0Y4_パンスト;
+    	public ShapePart X0Y4_Pantyhose;
 
-    	public ShapePart X0Y4_パンスト_ハイライト;
+    	public ShapePart X0Y4_Pantyhose_ハイライト;
 
     	public ShapePart X0Y4_ニーハイ_ニーハイ1;
 
@@ -679,9 +679,9 @@ namespace SlaveMatrix
 
     	public ColorD ハイライト2CD;
 
-    	public ColorD パンストCD;
+    	public ColorD PantyhoseCD;
 
-    	public ColorD パンスト_ハイライトCD;
+    	public ColorD Pantyhose_ハイライトCD;
 
     	public ColorD ニーハイ_ニーハイ1CD;
 
@@ -795,9 +795,9 @@ namespace SlaveMatrix
 
     	public ColorP X0Y0_ハイライト2CP;
 
-    	public ColorP X0Y0_パンストCP;
+    	public ColorP X0Y0_PantyhoseCP;
 
-    	public ColorP X0Y0_パンスト_ハイライトCP;
+    	public ColorP X0Y0_Pantyhose_ハイライトCP;
 
     	public ColorP X0Y0_ニーハイ_ニーハイ1CP;
 
@@ -911,9 +911,9 @@ namespace SlaveMatrix
 
     	public ColorP X0Y1_ハイライト2CP;
 
-    	public ColorP X0Y1_パンストCP;
+    	public ColorP X0Y1_PantyhoseCP;
 
-    	public ColorP X0Y1_パンスト_ハイライトCP;
+    	public ColorP X0Y1_Pantyhose_ハイライトCP;
 
     	public ColorP X0Y1_ニーハイ_ニーハイ1CP;
 
@@ -999,9 +999,9 @@ namespace SlaveMatrix
 
     	public ColorP X0Y2_ハイライト2CP;
 
-    	public ColorP X0Y2_パンストCP;
+    	public ColorP X0Y2_PantyhoseCP;
 
-    	public ColorP X0Y2_パンスト_ハイライトCP;
+    	public ColorP X0Y2_Pantyhose_ハイライトCP;
 
     	public ColorP X0Y2_ニーハイ_ニーハイ1CP;
 
@@ -1105,9 +1105,9 @@ namespace SlaveMatrix
 
     	public ColorP X0Y3_ハイライト2CP;
 
-    	public ColorP X0Y3_パンストCP;
+    	public ColorP X0Y3_PantyhoseCP;
 
-    	public ColorP X0Y3_パンスト_ハイライトCP;
+    	public ColorP X0Y3_Pantyhose_ハイライトCP;
 
     	public ColorP X0Y3_ニーハイ_ニーハイ1CP;
 
@@ -1203,9 +1203,9 @@ namespace SlaveMatrix
 
     	public ColorP X0Y4_ハイライト2CP;
 
-    	public ColorP X0Y4_パンストCP;
+    	public ColorP X0Y4_PantyhoseCP;
 
-    	public ColorP X0Y4_パンスト_ハイライトCP;
+    	public ColorP X0Y4_Pantyhose_ハイライトCP;
 
     	public ColorP X0Y4_ニーハイ_ニーハイ1CP;
 
@@ -2314,45 +2314,45 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool パンスト_表示
+    	public bool Pantyhose_表示
     	{
     		get
     		{
-    			return X0Y0_パンスト.Dra;
+    			return X0Y0_Pantyhose.Dra;
     		}
     		set
     		{
-    			X0Y0_パンスト.Dra = value;
-    			X0Y1_パンスト.Dra = value;
-    			X0Y2_パンスト.Dra = value;
-    			X0Y3_パンスト.Dra = value;
-    			X0Y4_パンスト.Dra = value;
-    			X0Y0_パンスト.Hit = value;
-    			X0Y1_パンスト.Hit = value;
-    			X0Y2_パンスト.Hit = value;
-    			X0Y3_パンスト.Hit = value;
-    			X0Y4_パンスト.Hit = value;
+    			X0Y0_Pantyhose.Dra = value;
+    			X0Y1_Pantyhose.Dra = value;
+    			X0Y2_Pantyhose.Dra = value;
+    			X0Y3_Pantyhose.Dra = value;
+    			X0Y4_Pantyhose.Dra = value;
+    			X0Y0_Pantyhose.Hit = value;
+    			X0Y1_Pantyhose.Hit = value;
+    			X0Y2_Pantyhose.Hit = value;
+    			X0Y3_Pantyhose.Hit = value;
+    			X0Y4_Pantyhose.Hit = value;
     		}
     	}
 
-    	public bool パンスト_ハイライト_表示
+    	public bool Pantyhose_ハイライト_表示
     	{
     		get
     		{
-    			return X0Y0_パンスト_ハイライト.Dra;
+    			return X0Y0_Pantyhose_ハイライト.Dra;
     		}
     		set
     		{
-    			X0Y0_パンスト_ハイライト.Dra = value;
-    			X0Y1_パンスト_ハイライト.Dra = value;
-    			X0Y2_パンスト_ハイライト.Dra = value;
-    			X0Y3_パンスト_ハイライト.Dra = value;
-    			X0Y4_パンスト_ハイライト.Dra = value;
-    			X0Y0_パンスト_ハイライト.Hit = value;
-    			X0Y1_パンスト_ハイライト.Hit = value;
-    			X0Y2_パンスト_ハイライト.Hit = value;
-    			X0Y3_パンスト_ハイライト.Hit = value;
-    			X0Y4_パンスト_ハイライト.Hit = value;
+    			X0Y0_Pantyhose_ハイライト.Dra = value;
+    			X0Y1_Pantyhose_ハイライト.Dra = value;
+    			X0Y2_Pantyhose_ハイライト.Dra = value;
+    			X0Y3_Pantyhose_ハイライト.Dra = value;
+    			X0Y4_Pantyhose_ハイライト.Dra = value;
+    			X0Y0_Pantyhose_ハイライト.Hit = value;
+    			X0Y1_Pantyhose_ハイライト.Hit = value;
+    			X0Y2_Pantyhose_ハイライト.Hit = value;
+    			X0Y3_Pantyhose_ハイライト.Hit = value;
+    			X0Y4_Pantyhose_ハイライト.Hit = value;
     		}
     	}
 
@@ -2701,7 +2701,7 @@ namespace SlaveMatrix
     			傷X_表示 = value;
     			ハイライト1_表示 = value;
     			ハイライト2_表示 = value;
-    			パンスト_表示 = value;
+    			Pantyhose_表示 = value;
     			ニーハイ_ニーハイ1_表示 = value;
     			ニーハイ_ニーハイ2_表示 = value;
     			ニーハイ_ハイライト_表示 = value;
@@ -2790,7 +2790,7 @@ namespace SlaveMatrix
     			傷XCD.不透明度 = value;
     			ハイライト1CD.不透明度 = value;
     			ハイライト2CD.不透明度 = value;
-    			パンストCD.不透明度 = value;
+    			PantyhoseCD.不透明度 = value;
     			ニーハイ_ニーハイ1CD.不透明度 = value;
     			ニーハイ_ニーハイ2CD.不透明度 = value;
     			ニーハイ_ハイライトCD.不透明度 = value;
@@ -2801,12 +2801,12 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return パンスト_表示;
+    			return Pantyhose_表示;
     		}
     		set
     		{
-    			パンスト_表示 = value;
-    			パンスト_ハイライト_表示 = value;
+    			Pantyhose_表示 = value;
+    			Pantyhose_ハイライト_表示 = value;
     		}
     	}
 
@@ -2904,8 +2904,8 @@ namespace SlaveMatrix
     		X0Y0_ハイライト1 = partGroup["ハイライト1"].ToPar();
     		X0Y0_ハイライト2 = partGroup["ハイライト2"].ToPar();
     		pars2 = partGroup["パンスト"].ToPars();
-    		X0Y0_パンスト = pars2["パンスト"].ToPar();
-    		X0Y0_パンスト_ハイライト = pars2["ハイライト"].ToPar();
+    		X0Y0_Pantyhose = pars2["パンスト"].ToPar();
+    		X0Y0_Pantyhose_ハイライト = pars2["ハイライト"].ToPar();
     		pars2 = partGroup["ニーハイ"].ToPars();
     		X0Y0_ニーハイ_ニーハイ1 = pars2["ニーハイ1"].ToPar();
     		X0Y0_ニーハイ_ニーハイ2 = pars2["ニーハイ2"].ToPar();
@@ -2983,8 +2983,8 @@ namespace SlaveMatrix
     		X0Y1_ハイライト1 = partGroup["ハイライト1"].ToPar();
     		X0Y1_ハイライト2 = partGroup["ハイライト2"].ToPar();
     		pars2 = partGroup["パンスト"].ToPars();
-    		X0Y1_パンスト = pars2["パンスト"].ToPar();
-    		X0Y1_パンスト_ハイライト = pars2["ハイライト"].ToPar();
+    		X0Y1_Pantyhose = pars2["パンスト"].ToPar();
+    		X0Y1_Pantyhose_ハイライト = pars2["ハイライト"].ToPar();
     		pars2 = partGroup["ニーハイ"].ToPars();
     		X0Y1_ニーハイ_ニーハイ1 = pars2["ニーハイ1"].ToPar();
     		X0Y1_ニーハイ_ニーハイ2 = pars2["ニーハイ2"].ToPar();
@@ -3045,8 +3045,8 @@ namespace SlaveMatrix
     		X0Y2_ハイライト1 = partGroup["ハイライト1"].ToPar();
     		X0Y2_ハイライト2 = partGroup["ハイライト2"].ToPar();
     		pars2 = partGroup["パンスト"].ToPars();
-    		X0Y2_パンスト = pars2["パンスト"].ToPar();
-    		X0Y2_パンスト_ハイライト = pars2["ハイライト"].ToPar();
+    		X0Y2_Pantyhose = pars2["パンスト"].ToPar();
+    		X0Y2_Pantyhose_ハイライト = pars2["ハイライト"].ToPar();
     		pars2 = partGroup["ニーハイ"].ToPars();
     		X0Y2_ニーハイ_ニーハイ1 = pars2["ニーハイ1"].ToPar();
     		X0Y2_ニーハイ_ニーハイ2 = pars2["ニーハイ2"].ToPar();
@@ -3117,8 +3117,8 @@ namespace SlaveMatrix
     		X0Y3_ハイライト1 = partGroup["ハイライト1"].ToPar();
     		X0Y3_ハイライト2 = partGroup["ハイライト2"].ToPar();
     		pars2 = partGroup["パンスト"].ToPars();
-    		X0Y3_パンスト = pars2["パンスト"].ToPar();
-    		X0Y3_パンスト_ハイライト = pars2["ハイライト"].ToPar();
+    		X0Y3_Pantyhose = pars2["パンスト"].ToPar();
+    		X0Y3_Pantyhose_ハイライト = pars2["ハイライト"].ToPar();
     		pars2 = partGroup["ニーハイ"].ToPars();
     		X0Y3_ニーハイ_ニーハイ1 = pars2["ニーハイ1"].ToPar();
     		X0Y3_ニーハイ_ニーハイ2 = pars2["ニーハイ2"].ToPar();
@@ -3183,8 +3183,8 @@ namespace SlaveMatrix
     		X0Y4_ハイライト1 = partGroup["ハイライト1"].ToPar();
     		X0Y4_ハイライト2 = partGroup["ハイライト2"].ToPar();
     		pars2 = partGroup["パンスト"].ToPars();
-    		X0Y4_パンスト = pars2["パンスト"].ToPar();
-    		X0Y4_パンスト_ハイライト = pars2["ハイライト"].ToPar();
+    		X0Y4_Pantyhose = pars2["パンスト"].ToPar();
+    		X0Y4_Pantyhose_ハイライト = pars2["ハイライト"].ToPar();
     		pars2 = partGroup["ニーハイ"].ToPars();
     		X0Y4_ニーハイ_ニーハイ1 = pars2["ニーハイ1"].ToPar();
     		X0Y4_ニーハイ_ニーハイ2 = pars2["ニーハイ2"].ToPar();
@@ -3266,7 +3266,7 @@ namespace SlaveMatrix
     		傷X_表示 = e.傷X_表示;
     		ハイライト1_表示 = e.ハイライト1_表示;
     		ハイライト2_表示 = e.ハイライト2_表示;
-    		パンスト_表示 = e.パンスト_表示;
+    		Pantyhose_表示 = e.Pantyhose_表示;
     		ニーハイ_ニーハイ1_表示 = e.ニーハイ_ニーハイ1_表示;
     		ニーハイ_ニーハイ2_表示 = e.ニーハイ_ニーハイ2_表示;
     		ニーハイ_ハイライト_表示 = e.ニーハイ_ハイライト_表示;
@@ -3354,8 +3354,8 @@ namespace SlaveMatrix
     		X0Y0_傷XCP = new ColorP(X0Y0_傷X, 傷XCD, DisUnit, abj: true);
     		X0Y0_ハイライト1CP = new ColorP(X0Y0_ハイライト1, ハイライト1CD, DisUnit, abj: true);
     		X0Y0_ハイライト2CP = new ColorP(X0Y0_ハイライト2, ハイライト2CD, DisUnit, abj: true);
-    		X0Y0_パンストCP = new ColorP(X0Y0_パンスト, パンストCD, DisUnit, abj: false);
-    		X0Y0_パンスト_ハイライトCP = new ColorP(X0Y0_パンスト_ハイライト, パンスト_ハイライトCD, DisUnit, abj: true);
+    		X0Y0_PantyhoseCP = new ColorP(X0Y0_Pantyhose, PantyhoseCD, DisUnit, abj: false);
+    		X0Y0_Pantyhose_ハイライトCP = new ColorP(X0Y0_Pantyhose_ハイライト, Pantyhose_ハイライトCD, DisUnit, abj: true);
     		X0Y0_ニーハイ_ニーハイ1CP = new ColorP(X0Y0_ニーハイ_ニーハイ1, ニーハイ_ニーハイ1CD, DisUnit, abj: true);
     		X0Y0_ニーハイ_ニーハイ2CP = new ColorP(X0Y0_ニーハイ_ニーハイ2, ニーハイ_ニーハイ2CD, DisUnit, abj: true);
     		X0Y0_ニーハイ_ハイライトCP = new ColorP(X0Y0_ニーハイ_ハイライト, ニーハイ_ハイライトCD, DisUnit, abj: true);
@@ -3412,8 +3412,8 @@ namespace SlaveMatrix
     		X0Y1_傷XCP = new ColorP(X0Y1_傷X, 傷XCD, DisUnit, abj: true);
     		X0Y1_ハイライト1CP = new ColorP(X0Y1_ハイライト1, ハイライト1CD, DisUnit, abj: true);
     		X0Y1_ハイライト2CP = new ColorP(X0Y1_ハイライト2, ハイライト2CD, DisUnit, abj: true);
-    		X0Y1_パンストCP = new ColorP(X0Y1_パンスト, パンストCD, DisUnit, abj: false);
-    		X0Y1_パンスト_ハイライトCP = new ColorP(X0Y1_パンスト_ハイライト, パンスト_ハイライトCD, DisUnit, abj: true);
+    		X0Y1_PantyhoseCP = new ColorP(X0Y1_Pantyhose, PantyhoseCD, DisUnit, abj: false);
+    		X0Y1_Pantyhose_ハイライトCP = new ColorP(X0Y1_Pantyhose_ハイライト, Pantyhose_ハイライトCD, DisUnit, abj: true);
     		X0Y1_ニーハイ_ニーハイ1CP = new ColorP(X0Y1_ニーハイ_ニーハイ1, ニーハイ_ニーハイ1CD, DisUnit, abj: true);
     		X0Y1_ニーハイ_ニーハイ2CP = new ColorP(X0Y1_ニーハイ_ニーハイ2, ニーハイ_ニーハイ2CD, DisUnit, abj: true);
     		X0Y1_ニーハイ_ハイライトCP = new ColorP(X0Y1_ニーハイ_ハイライト, ニーハイ_ハイライトCD, DisUnit, abj: true);
@@ -3456,8 +3456,8 @@ namespace SlaveMatrix
     		X0Y2_傷I3CP = new ColorP(X0Y2_傷I3, 傷I3CD, DisUnit, abj: true);
     		X0Y2_ハイライト1CP = new ColorP(X0Y2_ハイライト1, ハイライト1CD, DisUnit, abj: true);
     		X0Y2_ハイライト2CP = new ColorP(X0Y2_ハイライト2, ハイライト2CD, DisUnit, abj: true);
-    		X0Y2_パンストCP = new ColorP(X0Y2_パンスト, パンストCD, DisUnit, abj: false);
-    		X0Y2_パンスト_ハイライトCP = new ColorP(X0Y2_パンスト_ハイライト, パンスト_ハイライトCD, DisUnit, abj: true);
+    		X0Y2_PantyhoseCP = new ColorP(X0Y2_Pantyhose, PantyhoseCD, DisUnit, abj: false);
+    		X0Y2_Pantyhose_ハイライトCP = new ColorP(X0Y2_Pantyhose_ハイライト, Pantyhose_ハイライトCD, DisUnit, abj: true);
     		X0Y2_ニーハイ_ニーハイ1CP = new ColorP(X0Y2_ニーハイ_ニーハイ1, ニーハイ_ニーハイ1CD, DisUnit, abj: true);
     		X0Y2_ニーハイ_ニーハイ2CP = new ColorP(X0Y2_ニーハイ_ニーハイ2, ニーハイ_ニーハイ2CD, DisUnit, abj: true);
     		X0Y2_ニーハイ_ハイライトCP = new ColorP(X0Y2_ニーハイ_ハイライト, ニーハイ_ハイライトCD, DisUnit, abj: true);
@@ -3509,8 +3509,8 @@ namespace SlaveMatrix
     		X0Y3_傷XCP = new ColorP(X0Y3_傷X, 傷XCD, DisUnit, abj: true);
     		X0Y3_ハイライト1CP = new ColorP(X0Y3_ハイライト1, ハイライト1CD, DisUnit, abj: true);
     		X0Y3_ハイライト2CP = new ColorP(X0Y3_ハイライト2, ハイライト2CD, DisUnit, abj: true);
-    		X0Y3_パンストCP = new ColorP(X0Y3_パンスト, パンストCD, DisUnit, abj: false);
-    		X0Y3_パンスト_ハイライトCP = new ColorP(X0Y3_パンスト_ハイライト, パンスト_ハイライトCD, DisUnit, abj: true);
+    		X0Y3_PantyhoseCP = new ColorP(X0Y3_Pantyhose, PantyhoseCD, DisUnit, abj: false);
+    		X0Y3_Pantyhose_ハイライトCP = new ColorP(X0Y3_Pantyhose_ハイライト, Pantyhose_ハイライトCD, DisUnit, abj: true);
     		X0Y3_ニーハイ_ニーハイ1CP = new ColorP(X0Y3_ニーハイ_ニーハイ1, ニーハイ_ニーハイ1CD, DisUnit, abj: true);
     		X0Y3_ニーハイ_ニーハイ2CP = new ColorP(X0Y3_ニーハイ_ニーハイ2, ニーハイ_ニーハイ2CD, DisUnit, abj: true);
     		X0Y3_ニーハイ_ハイライトCP = new ColorP(X0Y3_ニーハイ_ハイライト, ニーハイ_ハイライトCD, DisUnit, abj: true);
@@ -3558,8 +3558,8 @@ namespace SlaveMatrix
     		X0Y4_傷XCP = new ColorP(X0Y4_傷X, 傷XCD, DisUnit, abj: true);
     		X0Y4_ハイライト1CP = new ColorP(X0Y4_ハイライト1, ハイライト1CD, DisUnit, abj: true);
     		X0Y4_ハイライト2CP = new ColorP(X0Y4_ハイライト2, ハイライト2CD, DisUnit, abj: true);
-    		X0Y4_パンストCP = new ColorP(X0Y4_パンスト, パンストCD, DisUnit, abj: false);
-    		X0Y4_パンスト_ハイライトCP = new ColorP(X0Y4_パンスト_ハイライト, パンスト_ハイライトCD, DisUnit, abj: true);
+    		X0Y4_PantyhoseCP = new ColorP(X0Y4_Pantyhose, PantyhoseCD, DisUnit, abj: false);
+    		X0Y4_Pantyhose_ハイライトCP = new ColorP(X0Y4_Pantyhose_ハイライト, Pantyhose_ハイライトCD, DisUnit, abj: true);
     		X0Y4_ニーハイ_ニーハイ1CP = new ColorP(X0Y4_ニーハイ_ニーハイ1, ニーハイ_ニーハイ1CD, DisUnit, abj: true);
     		X0Y4_ニーハイ_ニーハイ2CP = new ColorP(X0Y4_ニーハイ_ニーハイ2, ニーハイ_ニーハイ2CD, DisUnit, abj: true);
     		X0Y4_ニーハイ_ハイライトCP = new ColorP(X0Y4_ニーハイ_ハイライト, ニーハイ_ハイライトCD, DisUnit, abj: true);
@@ -3637,8 +3637,8 @@ namespace SlaveMatrix
     			鞭痕.Draw(Are);
     			Are.Draw(X0Y0_ハイライト1);
     			Are.Draw(X0Y0_ハイライト2);
-    			Are.Draw(X0Y0_パンスト);
-    			Are.Draw(X0Y0_パンスト_ハイライト);
+    			Are.Draw(X0Y0_Pantyhose);
+    			Are.Draw(X0Y0_Pantyhose_ハイライト);
     			Are.Draw(X0Y0_ニーハイ_ニーハイ1);
     			Are.Draw(X0Y0_ニーハイ_ニーハイ2);
     			Are.Draw(X0Y0_ニーハイ_ハイライト);
@@ -3699,8 +3699,8 @@ namespace SlaveMatrix
     			鞭痕.Draw(Are);
     			Are.Draw(X0Y1_ハイライト1);
     			Are.Draw(X0Y1_ハイライト2);
-    			Are.Draw(X0Y1_パンスト);
-    			Are.Draw(X0Y1_パンスト_ハイライト);
+    			Are.Draw(X0Y1_Pantyhose);
+    			Are.Draw(X0Y1_Pantyhose_ハイライト);
     			Are.Draw(X0Y1_ニーハイ_ニーハイ1);
     			Are.Draw(X0Y1_ニーハイ_ニーハイ2);
     			Are.Draw(X0Y1_ニーハイ_ハイライト);
@@ -3747,8 +3747,8 @@ namespace SlaveMatrix
     			鞭痕.Draw(Are);
     			Are.Draw(X0Y2_ハイライト1);
     			Are.Draw(X0Y2_ハイライト2);
-    			Are.Draw(X0Y2_パンスト);
-    			Are.Draw(X0Y2_パンスト_ハイライト);
+    			Are.Draw(X0Y2_Pantyhose);
+    			Are.Draw(X0Y2_Pantyhose_ハイライト);
     			Are.Draw(X0Y2_ニーハイ_ニーハイ1);
     			Are.Draw(X0Y2_ニーハイ_ニーハイ2);
     			Are.Draw(X0Y2_ニーハイ_ハイライト);
@@ -3804,8 +3804,8 @@ namespace SlaveMatrix
     			鞭痕.Draw(Are);
     			Are.Draw(X0Y3_ハイライト1);
     			Are.Draw(X0Y3_ハイライト2);
-    			Are.Draw(X0Y3_パンスト);
-    			Are.Draw(X0Y3_パンスト_ハイライト);
+    			Are.Draw(X0Y3_Pantyhose);
+    			Are.Draw(X0Y3_Pantyhose_ハイライト);
     			Are.Draw(X0Y3_ニーハイ_ニーハイ1);
     			Are.Draw(X0Y3_ニーハイ_ニーハイ2);
     			Are.Draw(X0Y3_ニーハイ_ハイライト);
@@ -3857,8 +3857,8 @@ namespace SlaveMatrix
     			鞭痕.Draw(Are);
     			Are.Draw(X0Y4_ハイライト1);
     			Are.Draw(X0Y4_ハイライト2);
-    			Are.Draw(X0Y4_パンスト);
-    			Are.Draw(X0Y4_パンスト_ハイライト);
+    			Are.Draw(X0Y4_Pantyhose);
+    			Are.Draw(X0Y4_Pantyhose_ハイライト);
     			Are.Draw(X0Y4_ニーハイ_ニーハイ1);
     			Are.Draw(X0Y4_ニーハイ_ニーハイ2);
     			Are.Draw(X0Y4_ニーハイ_ハイライト);
@@ -3918,7 +3918,7 @@ namespace SlaveMatrix
 
     	public override bool Is布(ShapePart p)
     	{
-    		if (p != X0Y0_パンスト && p != X0Y0_パンスト_ハイライト && p != X0Y0_ニーハイ_ニーハイ1 && p != X0Y0_ニーハイ_ニーハイ2 && p != X0Y0_ニーハイ_ハイライト && p != X0Y1_パンスト && p != X0Y1_パンスト_ハイライト && p != X0Y1_ニーハイ_ニーハイ1 && p != X0Y1_ニーハイ_ニーハイ2 && p != X0Y1_ニーハイ_ハイライト && p != X0Y2_パンスト && p != X0Y2_パンスト_ハイライト && p != X0Y2_ニーハイ_ニーハイ1 && p != X0Y2_ニーハイ_ニーハイ2 && p != X0Y2_ニーハイ_ハイライト && p != X0Y3_パンスト && p != X0Y3_パンスト_ハイライト && p != X0Y3_ニーハイ_ニーハイ1 && p != X0Y3_ニーハイ_ニーハイ2 && p != X0Y3_ニーハイ_ハイライト && p != X0Y4_パンスト && p != X0Y4_パンスト_ハイライト && p != X0Y4_ニーハイ_ニーハイ1 && p != X0Y4_ニーハイ_ニーハイ2)
+    		if (p != X0Y0_Pantyhose && p != X0Y0_Pantyhose_ハイライト && p != X0Y0_ニーハイ_ニーハイ1 && p != X0Y0_ニーハイ_ニーハイ2 && p != X0Y0_ニーハイ_ハイライト && p != X0Y1_Pantyhose && p != X0Y1_Pantyhose_ハイライト && p != X0Y1_ニーハイ_ニーハイ1 && p != X0Y1_ニーハイ_ニーハイ2 && p != X0Y1_ニーハイ_ハイライト && p != X0Y2_Pantyhose && p != X0Y2_Pantyhose_ハイライト && p != X0Y2_ニーハイ_ニーハイ1 && p != X0Y2_ニーハイ_ニーハイ2 && p != X0Y2_ニーハイ_ハイライト && p != X0Y3_Pantyhose && p != X0Y3_Pantyhose_ハイライト && p != X0Y3_ニーハイ_ニーハイ1 && p != X0Y3_ニーハイ_ニーハイ2 && p != X0Y3_ニーハイ_ハイライト && p != X0Y4_Pantyhose && p != X0Y4_Pantyhose_ハイライト && p != X0Y4_ニーハイ_ニーハイ1 && p != X0Y4_ニーハイ_ニーハイ2)
     		{
     			return p == X0Y4_ニーハイ_ハイライト;
     		}
@@ -3983,8 +3983,8 @@ namespace SlaveMatrix
     			X0Y0_傷XCP.Update();
     			X0Y0_ハイライト1CP.Update();
     			X0Y0_ハイライト2CP.Update();
-    			X0Y0_パンストCP.Update();
-    			X0Y0_パンスト_ハイライトCP.Update();
+    			X0Y0_PantyhoseCP.Update();
+    			X0Y0_Pantyhose_ハイライトCP.Update();
     			X0Y0_ニーハイ_ニーハイ1CP.Update();
     			X0Y0_ニーハイ_ニーハイ2CP.Update();
     			X0Y0_ニーハイ_ハイライトCP.Update();
@@ -4043,8 +4043,8 @@ namespace SlaveMatrix
     			X0Y1_傷XCP.Update();
     			X0Y1_ハイライト1CP.Update();
     			X0Y1_ハイライト2CP.Update();
-    			X0Y1_パンストCP.Update();
-    			X0Y1_パンスト_ハイライトCP.Update();
+    			X0Y1_PantyhoseCP.Update();
+    			X0Y1_Pantyhose_ハイライトCP.Update();
     			X0Y1_ニーハイ_ニーハイ1CP.Update();
     			X0Y1_ニーハイ_ニーハイ2CP.Update();
     			X0Y1_ニーハイ_ハイライトCP.Update();
@@ -4089,8 +4089,8 @@ namespace SlaveMatrix
     			X0Y2_傷I3CP.Update();
     			X0Y2_ハイライト1CP.Update();
     			X0Y2_ハイライト2CP.Update();
-    			X0Y2_パンストCP.Update();
-    			X0Y2_パンスト_ハイライトCP.Update();
+    			X0Y2_PantyhoseCP.Update();
+    			X0Y2_Pantyhose_ハイライトCP.Update();
     			X0Y2_ニーハイ_ニーハイ1CP.Update();
     			X0Y2_ニーハイ_ニーハイ2CP.Update();
     			X0Y2_ニーハイ_ハイライトCP.Update();
@@ -4144,8 +4144,8 @@ namespace SlaveMatrix
     			X0Y3_傷XCP.Update();
     			X0Y3_ハイライト1CP.Update();
     			X0Y3_ハイライト2CP.Update();
-    			X0Y3_パンストCP.Update();
-    			X0Y3_パンスト_ハイライトCP.Update();
+    			X0Y3_PantyhoseCP.Update();
+    			X0Y3_Pantyhose_ハイライトCP.Update();
     			X0Y3_ニーハイ_ニーハイ1CP.Update();
     			X0Y3_ニーハイ_ニーハイ2CP.Update();
     			X0Y3_ニーハイ_ハイライトCP.Update();
@@ -4195,8 +4195,8 @@ namespace SlaveMatrix
     			X0Y4_傷XCP.Update();
     			X0Y4_ハイライト1CP.Update();
     			X0Y4_ハイライト2CP.Update();
-    			X0Y4_パンストCP.Update();
-    			X0Y4_パンスト_ハイライトCP.Update();
+    			X0Y4_PantyhoseCP.Update();
+    			X0Y4_Pantyhose_ハイライトCP.Update();
     			X0Y4_ニーハイ_ニーハイ1CP.Update();
     			X0Y4_ニーハイ_ニーハイ2CP.Update();
     			X0Y4_ニーハイ_ハイライトCP.Update();
@@ -4308,8 +4308,8 @@ namespace SlaveMatrix
     		傷XCD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
     		ハイライト1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
     		ハイライト2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2R);
-    		パンストCD = new ColorD();
-    		パンスト_ハイライトCD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		PantyhoseCD = new ColorD();
+    		Pantyhose_ハイライトCD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
     		ニーハイ_ニーハイ1CD = new ColorD();
     		ニーハイ_ニーハイ2CD = new ColorD();
     		ニーハイ_ハイライトCD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
@@ -4391,8 +4391,8 @@ namespace SlaveMatrix
     		傷XCD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
     		ハイライト1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
     		ハイライト2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2R);
-    		パンストCD = new ColorD();
-    		パンスト_ハイライトCD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		PantyhoseCD = new ColorD();
+    		Pantyhose_ハイライトCD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
     		ニーハイ_ニーハイ1CD = new ColorD();
     		ニーハイ_ニーハイ2CD = new ColorD();
     		ニーハイ_ハイライトCD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
@@ -4474,8 +4474,8 @@ namespace SlaveMatrix
     		傷XCD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
     		ハイライト1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
     		ハイライト2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2R);
-    		パンストCD = new ColorD();
-    		パンスト_ハイライトCD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		PantyhoseCD = new ColorD();
+    		Pantyhose_ハイライトCD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
     		ニーハイ_ニーハイ1CD = new ColorD();
     		ニーハイ_ニーハイ2CD = new ColorD();
     		ニーハイ_ハイライトCD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
@@ -4557,8 +4557,8 @@ namespace SlaveMatrix
     		傷XCD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
     		ハイライト1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
     		ハイライト2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2R);
-    		パンストCD = new ColorD();
-    		パンスト_ハイライトCD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		PantyhoseCD = new ColorD();
+    		Pantyhose_ハイライトCD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
     		ニーハイ_ニーハイ1CD = new ColorD();
     		ニーハイ_ニーハイ2CD = new ColorD();
     		ニーハイ_ハイライトCD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
@@ -4640,8 +4640,8 @@ namespace SlaveMatrix
     		傷XCD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
     		ハイライト1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
     		ハイライト2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2R);
-    		パンストCD = new ColorD();
-    		パンスト_ハイライトCD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		PantyhoseCD = new ColorD();
+    		Pantyhose_ハイライトCD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
     		ニーハイ_ニーハイ1CD = new ColorD();
     		ニーハイ_ニーハイ2CD = new ColorD();
     		ニーハイ_ハイライトCD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
@@ -4723,8 +4723,8 @@ namespace SlaveMatrix
     		傷XCD = new ColorD(ref ColorHelper.Empty, ref 体配色.粘膜);
     		ハイライト1CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
     		ハイライト2CD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2R);
-    		パンストCD = new ColorD();
-    		パンスト_ハイライトCD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
+    		PantyhoseCD = new ColorD();
+    		Pantyhose_ハイライトCD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);
     		ニーハイ_ニーハイ1CD = new ColorD();
     		ニーハイ_ニーハイ2CD = new ColorD();
     		ニーハイ_ハイライトCD = new ColorD(ref ColorHelper.Empty, ref 体配色.ハイライト2O);

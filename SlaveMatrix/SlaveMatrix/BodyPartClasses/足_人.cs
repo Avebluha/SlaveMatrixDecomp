@@ -71,9 +71,9 @@ namespace SlaveMatrix
 
     	public ShapePart X0Y0_竜性_鱗5;
 
-    	public ShapePart X0Y0_パンスト_パンスト1;
+    	public ShapePart X0Y0_Pantyhose_Pantyhose1;
 
-    	public ShapePart X0Y0_パンスト_パンスト2;
+    	public ShapePart X0Y0_Pantyhose_Pantyhose2;
 
     	public ShapePart X0Y0_ソックス_ソックス1;
 
@@ -283,9 +283,9 @@ namespace SlaveMatrix
 
     	public ShapePart X0Y1_竜性_鱗5;
 
-    	public ShapePart X0Y1_パンスト_パンスト1;
+    	public ShapePart X0Y1_Pantyhose_Pantyhose1;
 
-    	public ShapePart X0Y1_パンスト_パンスト2;
+    	public ShapePart X0Y1_Pantyhose_Pantyhose2;
 
     	public ShapePart X0Y1_ソックス_ソックス1;
 
@@ -501,9 +501,9 @@ namespace SlaveMatrix
 
     	public ColorD 竜性_鱗5CD;
 
-    	public ColorD パンスト_パンスト1CD;
+    	public ColorD Pantyhose_Pantyhose1CD;
 
-    	public ColorD パンスト_パンスト2CD;
+    	public ColorD Pantyhose_Pantyhose2CD;
 
     	public ColorD ソックス_ソックス1CD;
 
@@ -709,9 +709,9 @@ namespace SlaveMatrix
 
     	public ColorP X0Y0_竜性_鱗5CP;
 
-    	public ColorP X0Y0_パンスト_パンスト1CP;
+    	public ColorP X0Y0_Pantyhose_Pantyhose1CP;
 
-    	public ColorP X0Y0_パンスト_パンスト2CP;
+    	public ColorP X0Y0_Pantyhose_Pantyhose2CP;
 
     	public ColorP X0Y0_ソックス_ソックス1CP;
 
@@ -921,9 +921,9 @@ namespace SlaveMatrix
 
     	public ColorP X0Y1_竜性_鱗5CP;
 
-    	public ColorP X0Y1_パンスト_パンスト1CP;
+    	public ColorP X0Y1_Pantyhose_Pantyhose1CP;
 
-    	public ColorP X0Y1_パンスト_パンスト2CP;
+    	public ColorP X0Y1_Pantyhose_Pantyhose2CP;
 
     	public ColorP X0Y1_ソックス_ソックス1CP;
 
@@ -1663,33 +1663,33 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool パンスト_パンスト1_表示
+    	public bool Pantyhose_Pantyhose1_表示
     	{
     		get
     		{
-    			return X0Y0_パンスト_パンスト1.Dra;
+    			return X0Y0_Pantyhose_Pantyhose1.Dra;
     		}
     		set
     		{
-    			X0Y0_パンスト_パンスト1.Dra = value;
-    			X0Y1_パンスト_パンスト1.Dra = value;
-    			X0Y0_パンスト_パンスト1.Hit = value;
-    			X0Y1_パンスト_パンスト1.Hit = value;
+    			X0Y0_Pantyhose_Pantyhose1.Dra = value;
+    			X0Y1_Pantyhose_Pantyhose1.Dra = value;
+    			X0Y0_Pantyhose_Pantyhose1.Hit = value;
+    			X0Y1_Pantyhose_Pantyhose1.Hit = value;
     		}
     	}
 
-    	public bool パンスト_パンスト2_表示
+    	public bool Pantyhose_Pantyhose2_表示
     	{
     		get
     		{
-    			return X0Y0_パンスト_パンスト2.Dra;
+    			return X0Y0_Pantyhose_Pantyhose2.Dra;
     		}
     		set
     		{
-    			X0Y0_パンスト_パンスト2.Dra = value;
-    			X0Y1_パンスト_パンスト2.Dra = value;
-    			X0Y0_パンスト_パンスト2.Hit = value;
-    			X0Y1_パンスト_パンスト2.Hit = value;
+    			X0Y0_Pantyhose_Pantyhose2.Dra = value;
+    			X0Y1_Pantyhose_Pantyhose2.Dra = value;
+    			X0Y0_Pantyhose_Pantyhose2.Hit = value;
+    			X0Y1_Pantyhose_Pantyhose2.Hit = value;
     		}
     	}
 
@@ -2768,8 +2768,8 @@ namespace SlaveMatrix
     			竜性_鱗3_表示 = value;
     			竜性_鱗4_表示 = value;
     			竜性_鱗5_表示 = value;
-    			パンスト_パンスト1_表示 = value;
-    			パンスト_パンスト2_表示 = value;
+    			Pantyhose_Pantyhose1_表示 = value;
+    			Pantyhose_Pantyhose2_表示 = value;
     			ソックス_ソックス1_表示 = value;
     			ソックス_ソックス2_表示 = value;
     			ヒール1_バンプ_表示 = value;
@@ -2888,8 +2888,8 @@ namespace SlaveMatrix
     			竜性_鱗3CD.不透明度 = value;
     			竜性_鱗4CD.不透明度 = value;
     			竜性_鱗5CD.不透明度 = value;
-    			パンスト_パンスト1CD.不透明度 = value;
-    			パンスト_パンスト2CD.不透明度 = value;
+    			Pantyhose_Pantyhose1CD.不透明度 = value;
+    			Pantyhose_Pantyhose2CD.不透明度 = value;
     			ソックス_ソックス1CD.不透明度 = value;
     			ソックス_ソックス2CD.不透明度 = value;
     			ヒール1_バンプCD.不透明度 = value;
@@ -3147,12 +3147,12 @@ namespace SlaveMatrix
     	{
     		get
     		{
-    			return パンスト_パンスト1_表示;
+    			return Pantyhose_Pantyhose1_表示;
     		}
     		set
     		{
-    			パンスト_パンスト1_表示 = value;
-    			パンスト_パンスト2_表示 = value;
+    			Pantyhose_Pantyhose1_表示 = value;
+    			Pantyhose_Pantyhose2_表示 = value;
     		}
     	}
 
@@ -3221,8 +3221,8 @@ namespace SlaveMatrix
     		X0Y0_竜性_鱗4 = pars2["鱗4"].ToPar();
     		X0Y0_竜性_鱗5 = pars2["鱗5"].ToPar();
     		pars2 = partGroup["パンスト"].ToPars();
-    		X0Y0_パンスト_パンスト1 = pars2["パンスト1"].ToPar();
-    		X0Y0_パンスト_パンスト2 = pars2["パンスト2"].ToPar();
+    		X0Y0_Pantyhose_Pantyhose1 = pars2["パンスト1"].ToPar();
+    		X0Y0_Pantyhose_Pantyhose2 = pars2["パンスト2"].ToPar();
     		pars2 = partGroup["ソックス"].ToPars();
     		X0Y0_ソックス_ソックス1 = pars2["ソックス1"].ToPar();
     		X0Y0_ソックス_ソックス2 = pars2["ソックス2"].ToPar();
@@ -3381,8 +3381,8 @@ namespace SlaveMatrix
     		X0Y1_竜性_鱗4 = pars2["鱗4"].ToPar();
     		X0Y1_竜性_鱗5 = pars2["鱗5"].ToPar();
     		pars2 = partGroup["パンスト"].ToPars();
-    		X0Y1_パンスト_パンスト1 = pars2["パンスト1"].ToPar();
-    		X0Y1_パンスト_パンスト2 = pars2["パンスト2"].ToPar();
+    		X0Y1_Pantyhose_Pantyhose1 = pars2["パンスト1"].ToPar();
+    		X0Y1_Pantyhose_Pantyhose2 = pars2["パンスト2"].ToPar();
     		pars2 = partGroup["ソックス"].ToPars();
     		X0Y1_ソックス_ソックス1 = pars2["ソックス1"].ToPar();
     		X0Y1_ソックス_ソックス2 = pars2["ソックス2"].ToPar();
@@ -3553,8 +3553,8 @@ namespace SlaveMatrix
     		竜性_鱗3_表示 = e.竜性_鱗3_表示;
     		竜性_鱗4_表示 = e.竜性_鱗4_表示;
     		竜性_鱗5_表示 = e.竜性_鱗5_表示;
-    		パンスト_パンスト1_表示 = e.パンスト_パンスト1_表示;
-    		パンスト_パンスト2_表示 = e.パンスト_パンスト2_表示;
+    		Pantyhose_Pantyhose1_表示 = e.Pantyhose_Pantyhose1_表示;
+    		Pantyhose_Pantyhose2_表示 = e.Pantyhose_Pantyhose2_表示;
     		ソックス_ソックス1_表示 = e.ソックス_ソックス1_表示;
     		ソックス_ソックス2_表示 = e.ソックス_ソックス2_表示;
     		ヒール1_バンプ_表示 = e.ヒール1_バンプ_表示;
@@ -3682,8 +3682,8 @@ namespace SlaveMatrix
     		X0Y0_竜性_鱗3CP = new ColorP(X0Y0_竜性_鱗3, 竜性_鱗3CD, DisUnit, abj: true);
     		X0Y0_竜性_鱗4CP = new ColorP(X0Y0_竜性_鱗4, 竜性_鱗4CD, DisUnit, abj: true);
     		X0Y0_竜性_鱗5CP = new ColorP(X0Y0_竜性_鱗5, 竜性_鱗5CD, DisUnit, abj: true);
-    		X0Y0_パンスト_パンスト1CP = new ColorP(X0Y0_パンスト_パンスト1, パンスト_パンスト1CD, DisUnit, abj: false);
-    		X0Y0_パンスト_パンスト2CP = new ColorP(X0Y0_パンスト_パンスト2, パンスト_パンスト2CD, DisUnit, abj: true);
+    		X0Y0_Pantyhose_Pantyhose1CP = new ColorP(X0Y0_Pantyhose_Pantyhose1, Pantyhose_Pantyhose1CD, DisUnit, abj: false);
+    		X0Y0_Pantyhose_Pantyhose2CP = new ColorP(X0Y0_Pantyhose_Pantyhose2, Pantyhose_Pantyhose2CD, DisUnit, abj: true);
     		X0Y0_ソックス_ソックス1CP = new ColorP(X0Y0_ソックス_ソックス1, ソックス_ソックス1CD, DisUnit, abj: false);
     		X0Y0_ソックス_ソックス2CP = new ColorP(X0Y0_ソックス_ソックス2, ソックス_ソックス2CD, DisUnit, abj: true);
     		X0Y0_ヒール1_バンプCP = new ColorP(X0Y0_ヒール1_バンプ, ヒール1_バンプCD, DisUnit, abj: true);
@@ -3788,8 +3788,8 @@ namespace SlaveMatrix
     		X0Y1_竜性_鱗3CP = new ColorP(X0Y1_竜性_鱗3, 竜性_鱗3CD, DisUnit, abj: true);
     		X0Y1_竜性_鱗4CP = new ColorP(X0Y1_竜性_鱗4, 竜性_鱗4CD, DisUnit, abj: true);
     		X0Y1_竜性_鱗5CP = new ColorP(X0Y1_竜性_鱗5, 竜性_鱗5CD, DisUnit, abj: true);
-    		X0Y1_パンスト_パンスト1CP = new ColorP(X0Y1_パンスト_パンスト1, パンスト_パンスト1CD, DisUnit, abj: false);
-    		X0Y1_パンスト_パンスト2CP = new ColorP(X0Y1_パンスト_パンスト2, パンスト_パンスト2CD, DisUnit, abj: true);
+    		X0Y1_Pantyhose_Pantyhose1CP = new ColorP(X0Y1_Pantyhose_Pantyhose1, Pantyhose_Pantyhose1CD, DisUnit, abj: false);
+    		X0Y1_Pantyhose_Pantyhose2CP = new ColorP(X0Y1_Pantyhose_Pantyhose2, Pantyhose_Pantyhose2CD, DisUnit, abj: true);
     		X0Y1_ソックス_ソックス1CP = new ColorP(X0Y1_ソックス_ソックス1, ソックス_ソックス1CD, DisUnit, abj: false);
     		X0Y1_ソックス_ソックス2CP = new ColorP(X0Y1_ソックス_ソックス2, ソックス_ソックス2CD, DisUnit, abj: true);
     		X0Y1_ヒール1_バンプCP = new ColorP(X0Y1_ヒール1_バンプ, ヒール1_バンプCD, DisUnit, abj: true);
@@ -3896,8 +3896,8 @@ namespace SlaveMatrix
     			Are.Draw(X0Y0_悪タトゥ_五芒星_五角形);
     			キスマーク.Draw(Are);
     			鞭痕.Draw(Are);
-    			Are.Draw(X0Y0_パンスト_パンスト1);
-    			Are.Draw(X0Y0_パンスト_パンスト2);
+    			Are.Draw(X0Y0_Pantyhose_Pantyhose1);
+    			Are.Draw(X0Y0_Pantyhose_Pantyhose2);
     			Are.Draw(X0Y0_ソックス_ソックス1);
     			Are.Draw(X0Y0_ソックス_ソックス2);
     		}
@@ -3933,8 +3933,8 @@ namespace SlaveMatrix
     			Are.Draw(X0Y1_悪タトゥ_五芒星_五角形);
     			キスマーク.Draw(Are);
     			鞭痕.Draw(Are);
-    			Are.Draw(X0Y1_パンスト_パンスト1);
-    			Are.Draw(X0Y1_パンスト_パンスト2);
+    			Are.Draw(X0Y1_Pantyhose_Pantyhose1);
+    			Are.Draw(X0Y1_Pantyhose_Pantyhose2);
     			Are.Draw(X0Y1_ソックス_ソックス1);
     			Are.Draw(X0Y1_ソックス_ソックス2);
     		}
@@ -4179,7 +4179,7 @@ namespace SlaveMatrix
 
     	public override bool Is布(ShapePart p)
     	{
-    		if (p != X0Y0_パンスト_パンスト1 && p != X0Y0_パンスト_パンスト2 && p != X0Y0_ソックス_ソックス1 && p != X0Y0_ソックス_ソックス2 && p != X0Y1_パンスト_パンスト1 && p != X0Y1_パンスト_パンスト2 && p != X0Y1_ソックス_ソックス1)
+    		if (p != X0Y0_Pantyhose_Pantyhose1 && p != X0Y0_Pantyhose_Pantyhose2 && p != X0Y0_ソックス_ソックス1 && p != X0Y0_ソックス_ソックス2 && p != X0Y1_Pantyhose_Pantyhose1 && p != X0Y1_Pantyhose_Pantyhose2 && p != X0Y1_ソックス_ソックス1)
     		{
     			return p == X0Y1_ソックス_ソックス2;
     		}
@@ -4241,8 +4241,8 @@ namespace SlaveMatrix
     			X0Y0_竜性_鱗3CP.Update();
     			X0Y0_竜性_鱗4CP.Update();
     			X0Y0_竜性_鱗5CP.Update();
-    			X0Y0_パンスト_パンスト1CP.Update();
-    			X0Y0_パンスト_パンスト2CP.Update();
+    			X0Y0_Pantyhose_Pantyhose1CP.Update();
+    			X0Y0_Pantyhose_Pantyhose2CP.Update();
     			X0Y0_ソックス_ソックス1CP.Update();
     			X0Y0_ソックス_ソックス2CP.Update();
     			X0Y0_ヒール1_バンプCP.Update();
@@ -4350,8 +4350,8 @@ namespace SlaveMatrix
     			X0Y1_竜性_鱗3CP.Update();
     			X0Y1_竜性_鱗4CP.Update();
     			X0Y1_竜性_鱗5CP.Update();
-    			X0Y1_パンスト_パンスト1CP.Update();
-    			X0Y1_パンスト_パンスト2CP.Update();
+    			X0Y1_Pantyhose_Pantyhose1CP.Update();
+    			X0Y1_Pantyhose_Pantyhose2CP.Update();
     			X0Y1_ソックス_ソックス1CP.Update();
     			X0Y1_ソックス_ソックス2CP.Update();
     			X0Y1_ヒール1_バンプCP.Update();
@@ -4486,8 +4486,8 @@ namespace SlaveMatrix
     		竜性_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
     		竜性_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
     		竜性_鱗5CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
-    		パンスト_パンスト1CD = new ColorD();
-    		パンスト_パンスト2CD = new ColorD();
+    		Pantyhose_Pantyhose1CD = new ColorD();
+    		Pantyhose_Pantyhose2CD = new ColorD();
     		ソックス_ソックス1CD = new ColorD();
     		ソックス_ソックス2CD = new ColorD();
     		ヒール1_バンプCD = new ColorD();
@@ -4599,8 +4599,8 @@ namespace SlaveMatrix
     		竜性_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
     		竜性_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
     		竜性_鱗5CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
-    		パンスト_パンスト1CD = new ColorD();
-    		パンスト_パンスト2CD = new ColorD();
+    		Pantyhose_Pantyhose1CD = new ColorD();
+    		Pantyhose_Pantyhose2CD = new ColorD();
     		ソックス_ソックス1CD = new ColorD();
     		ソックス_ソックス2CD = new ColorD();
     		ヒール1_バンプCD = new ColorD();
@@ -4712,8 +4712,8 @@ namespace SlaveMatrix
     		竜性_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
     		竜性_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
     		竜性_鱗5CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
-    		パンスト_パンスト1CD = new ColorD();
-    		パンスト_パンスト2CD = new ColorD();
+    		Pantyhose_Pantyhose1CD = new ColorD();
+    		Pantyhose_Pantyhose2CD = new ColorD();
     		ソックス_ソックス1CD = new ColorD();
     		ソックス_ソックス2CD = new ColorD();
     		ヒール1_バンプCD = new ColorD();
@@ -4825,8 +4825,8 @@ namespace SlaveMatrix
     		竜性_鱗3CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
     		竜性_鱗4CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
     		竜性_鱗5CD = new ColorD(ref ColorHelper.Black, ref 体配色.鱗0O);
-    		パンスト_パンスト1CD = new ColorD();
-    		パンスト_パンスト2CD = new ColorD();
+    		Pantyhose_Pantyhose1CD = new ColorD();
+    		Pantyhose_Pantyhose2CD = new ColorD();
     		ソックス_ソックス1CD = new ColorD();
     		ソックス_ソックス2CD = new ColorD();
     		ヒール1_バンプCD = new ColorD();

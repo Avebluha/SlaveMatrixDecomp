@@ -204,7 +204,7 @@ namespace SlaveMatrix
 
     	public Element[] Torso_接続;
 
-    	public Element[] 胸左_接続;
+    	public Element[] LeftBreast_接続;
 
     	public Element[] 胸右_接続;
 
@@ -793,7 +793,7 @@ namespace SlaveMatrix
 
     	public JointS Torso_接続点 => new JointS(Body, X0Y0_RibCage, 9);
 
-    	public JointS 胸左_接続点 => new JointS(Body, X0Y0_RibCage, 2);
+    	public JointS LeftBreast_接続点 => new JointS(Body, X0Y0_RibCage, 2);
 
     	public JointS 胸右_接続点 => new JointS(Body, X0Y0_RibCage, 3);
 
@@ -955,14 +955,14 @@ namespace SlaveMatrix
     				return f;
     			}).ToArray();
     		}
-    		if (e.胸左_接続.Count > 0)
+    		if (e.LeftBreast_接続.Count > 0)
     		{
-    			胸左_接続 = e.胸左_接続.Select(delegate(ElementData g)
+    			LeftBreast_接続 = e.LeftBreast_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 四足胸2;
-    				f.ConnectionType = ConnectionInfo.四足胸_胸左_接続;
-    				f.接続(四足胸2.胸左_接続点);
+    				f.ConnectionType = ConnectionInfo.四足胸_LeftBreast_接続;
+    				f.接続(四足胸2.LeftBreast_接続点);
     				return f;
     			}).ToArray();
     		}

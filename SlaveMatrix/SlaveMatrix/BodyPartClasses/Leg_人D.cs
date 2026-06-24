@@ -182,11 +182,11 @@ namespace SlaveMatrix
 
     	public bool ハイライト2_表示;
 
-    	public bool パンスト_パンスト_表示;
+    	public bool Pantyhose_Pantyhose_表示;
 
-    	public bool パンスト_ハイライト1_表示;
+    	public bool Pantyhose_ハイライト1_表示;
 
-    	public bool パンスト_ハイライト2_表示;
+    	public bool Pantyhose_ハイライト2_表示;
 
     	public bool ソックス_ソックス_表示;
 

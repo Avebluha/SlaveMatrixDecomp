@@ -1819,8 +1819,8 @@ namespace SlaveMatrix
     		顔ハイライトD 顔ハイライトD2 = Mix<顔ハイライトD>(母方, 父方, 右: false, i, 原種モード);
     		HeadD2.頬左接続(顔ハイライトD2);
     		HeadD2.頬右接続(顔ハイライトD2.Get逆());
-    		HeadD2.単眼目接続(new 目隠帯D());
-    		HeadD2.口接続(new 玉口枷D());
+    		HeadD2.単眼目接続(new BlindfoldD());
+    		HeadD2.口接続(new BallGagData());
     		HeadD2.AlignC();
     		NeckD 首D2 = Mix<NeckD>(母方, 父方, i, 原種モード);
     		首D2.頭接続(HeadD2);
@@ -1832,7 +1832,7 @@ namespace SlaveMatrix
     		乳房D2.噴乳接続(new 下着乳首D());
     		ChestD2.胸左接続(乳房D2);
     		ChestD2.胸右接続(乳房D2.Get逆());
-    		ChestD2.肌接続(Mix<胸毛D>(母方, 父方, i, 原種モード));
+    		ChestD2.肌接続(Mix<ChestHairData>(母方, 父方, i, 原種モード));
     		ChestD2.肌接続(Mix<胸肌D>(母方, 父方, i, 原種モード));
     		胸腹板D 胸腹板D2;
     		ChestD2.肌接続(胸腹板D2 = Mix<胸腹板D>(母方, 父方, i, 原種モード));
@@ -1860,8 +1860,8 @@ namespace SlaveMatrix
     		Waist.肌接続(Uni.PregnantBelly());
     		WaistSkinD WaistSkin;
     		Waist.肌接続(WaistSkin = Mix<WaistSkinD>(母方, 父方, i, 原種モード));
-    		Waist.肌接続(new 下着ボトム_ノーマルD());
-    		Waist.肌接続(new 下着ボトム_マイクロD());
+    		Waist.肌接続(new UnderwearBottom_ノーマルD());
+    		Waist.肌接続(new UnderwearBottom_マイクロD());
     		JacketBottom_クロスD JacketBottom_クロスD2 = new JacketBottom_クロスD();
     		JacketBottom_クロスD2.JacketBottomRear接続(new JacketBottom_クロス後D());
     		Waist.上着接続(JacketBottom_クロスD2);
@@ -1891,7 +1891,7 @@ namespace SlaveMatrix
     			BaseHairD2.横髪左接続(eleD2);
     			eleD2.AlignR();
     			BaseHairD2.横髪右接続(eleD2.Get逆());
-    			ElementData e3 = SlaveMatrix.GameClasses._Con.Get前髪R();
+    			ElementData e3 = SlaveMatrix.GameClasses._Con.GetFrontHairR();
     			BaseHairD2.前髪接続(e3);
     			e3.AlignR();
     		}
@@ -1932,7 +1932,7 @@ namespace SlaveMatrix
     			BaseHairD2.横髪左接続(横髪D2);
     			横髪D2.AlignR();
     			BaseHairD2.横髪右接続(横髪D2.Get逆());
-    			前髪D e4 = Mix<前髪D>(母方, 父方, i, 原種モード);
+    			FrontHairData e4 = Mix<FrontHairData>(母方, 父方, i, 原種モード);
     			BaseHairD2.前髪接続(e4);
     			e4.AlignR();
     		}
@@ -2009,8 +2009,8 @@ namespace SlaveMatrix
     			{
     				単目D2 = Mix<単目D>(母方, 父方, i, 原種モード);
     				単瞼D2 = Mix<単瞼D>(母方, 父方, i, 原種モード);
-    				単眼眉D 単眼眉D2 = Mix<単眼眉D>(母方, 父方, i, 原種モード);
-    				if (単目D2 != null && 単瞼D2 != null && 単眼眉D2 != null)
+    				MonoEyebrowD MonoEyebrowD2 = Mix<MonoEyebrowD>(母方, 父方, i, 原種モード);
+    				if (単目D2 != null && 単瞼D2 != null && MonoEyebrowD2 != null)
     				{
     					単目D2.瞼接続(単瞼D2);
     					単目D2.瞼接続(new 涙D
@@ -2023,13 +2023,13 @@ namespace SlaveMatrix
     						基準C = new Vector2D(-0.01, 0.0)
     					});
     					HeadD2.単眼目接続(単目D2);
-    					HeadD2.単眼眉接続(単眼眉D2);
+    					HeadD2.単眼眉接続(MonoEyebrowD2);
     				}
     				else
     				{
     					HeadD2.単眼目接続(単目D2 = SlaveMatrix.GameClasses._Con.Get単眼R());
     					単瞼D2 = 単目D2.瞼_接続.GetEleD<単瞼D>();
-    					HeadD2.単眼眉接続(SlaveMatrix.GameClasses._Con.Get単眼眉R());
+    					HeadD2.単眼眉接続(SlaveMatrix.GameClasses._Con.GetMonoEyebrowR());
     				}
     			}
     		}
@@ -2090,8 +2090,8 @@ namespace SlaveMatrix
     		{
     			単目D2 = Mix<単目D>(母方, 父方, i, 原種モード);
     			単瞼D2 = Mix<単瞼D>(母方, 父方, i, 原種モード);
-    			単眼眉D 単眼眉D3 = Mix<単眼眉D>(母方, 父方, i, 原種モード);
-    			if (単目D2 != null && 単瞼D2 != null && 単眼眉D3 != null)
+    			MonoEyebrowD MonoEyebrowD3 = Mix<MonoEyebrowD>(母方, 父方, i, 原種モード);
+    			if (単目D2 != null && 単瞼D2 != null && MonoEyebrowD3 != null)
     			{
     				単目D2.瞼接続(単瞼D2);
     				単目D2.瞼接続(new 涙D
@@ -2104,24 +2104,24 @@ namespace SlaveMatrix
     					基準C = new Vector2D(-0.01, 0.0)
     				});
     				HeadD2.単眼目接続(単目D2);
-    				HeadD2.単眼眉接続(単眼眉D3);
+    				HeadD2.単眼眉接続(MonoEyebrowD3);
     			}
     			else
     			{
     				HeadD2.単眼目接続(単目D2 = SlaveMatrix.GameClasses._Con.Get単眼R());
     				単瞼D2 = 単目D2.瞼_接続.GetEleD<単瞼D>();
-    				HeadD2.単眼眉接続(SlaveMatrix.GameClasses._Con.Get単眼眉R());
+    				HeadD2.単眼眉接続(SlaveMatrix.GameClasses._Con.GetMonoEyebrowR());
     			}
     		}
-    		鼻D 鼻D2 = Mix<鼻D>(母方, 父方, i, 原種モード);
-    		if (鼻D2 != null)
+    		NoseD NoseD2 = Mix<NoseD>(母方, 父方, i, 原種モード);
+    		if (NoseD2 != null)
     		{
-    			鼻D2.鼻水左接続(new 鼻水D());
-    			鼻D2.鼻水右接続(new 鼻水D
+    			NoseD2.鼻水左接続(new 鼻水D());
+    			NoseD2.鼻水右接続(new 鼻水D
     			{
     				右 = true
     			});
-    			HeadD2.鼻接続(鼻D2);
+    			HeadD2.鼻接続(NoseD2);
     		}
     		口D 口D2 = Mix<口D>(母方, 父方, i, 原種モード);
     		if (口D2 != null)
@@ -2477,14 +2477,14 @@ namespace SlaveMatrix
     			else if (半身 is 四足胸D)
     			{
     				四足胸D 四足胸D2 = (四足胸D)半身;
-    				胸毛D 胸毛D2 = null;
+    				ChestHairData ChestHairD2 = null;
     				胸肌D 胸肌D2 = null;
-    				四足胸D2.肌接続(胸毛D2 = Mix<胸毛D>(母方, 父方, i, 原種モード));
+    				四足胸D2.肌接続(ChestHairD2 = Mix<ChestHairData>(母方, 父方, i, 原種モード));
     				四足胸D2.肌接続(胸肌D2 = Mix<胸肌D>(母方, 父方, i, 原種モード));
     				四足胸D2.AlignC();
-    				if (胸毛D2 != null)
+    				if (ChestHairD2 != null)
     				{
-    					胸毛D2.尺度B *= 1.4;
+    					ChestHairD2.尺度B *= 1.4;
     				}
     				if (胸肌D2 != null)
     				{

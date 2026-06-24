@@ -37,7 +37,7 @@ namespace SlaveMatrix
 
     	private bool キャップ中_;
 
-    	private bool キャップ左_;
+    	private bool CapLeft_;
 
     	private bool キャップ右_;
 
@@ -70,7 +70,7 @@ namespace SlaveMatrix
     			{
     				Bod.キャップ1.位置C = DataConsts.Vec2DZero;
     			}
-    			if (キャップ中_ || キャップ左_ || キャップ右_)
+    			if (キャップ中_ || CapLeft_ || キャップ右_)
     			{
     				キャップ振動.Start();
     			}
@@ -81,20 +81,20 @@ namespace SlaveMatrix
     		}
     	}
 
-    	public bool キャップ左
+    	public bool CapLeft
     	{
     		get
     		{
-    			return キャップ左_;
+    			return CapLeft_;
     		}
     		set
     		{
-    			キャップ左_ = value;
-    			if (!キャップ左_)
+    			CapLeft_ = value;
+    			if (!CapLeft_)
     			{
     				Bod.キャップ1.位置C = DataConsts.Vec2DZero;
     			}
-    			if (キャップ中_ || キャップ左_ || キャップ右_)
+    			if (キャップ中_ || CapLeft_ || キャップ右_)
     			{
     				キャップ振動.Start();
     			}
@@ -118,7 +118,7 @@ namespace SlaveMatrix
     			{
     				Bod.キャップ1.位置C = DataConsts.Vec2DZero;
     			}
-    			if (キャップ中_ || キャップ左_ || キャップ右_)
+    			if (キャップ中_ || CapLeft_ || キャップ右_)
     			{
     				キャップ振動.Start();
     			}
@@ -300,8 +300,8 @@ namespace SlaveMatrix
     					調教UI.ハンド左表示 = true;
     					調教UI.ハンド左.位置B = cp;
     					調教UI.ハンド左.Body.SetIndexX(5);
-    					調教UI.Set_キャップ左(調教UI.ハンド左);
-    					切替時(キャップ左);
+    					調教UI.Set_CapLeft(調教UI.ハンド左);
+    					切替時(CapLeft);
     				}
     				else if (キャップ右着 && (cd.e is キャップ2 || cd.c == ContactType.Milk) && cd.e.右)
     				{
@@ -333,7 +333,7 @@ namespace SlaveMatrix
     				調教UI.押し(ref cd);
     				調教UI.Focus.DraShow = false;
     				Bod.Setキャップ2左 = キャップ着;
-    				調教UI.Set_キャップ左(調教UI.ハンド右);
+    				調教UI.Set_CapLeft(調教UI.ハンド右);
     				装着時();
     			}
     			else if (!キャップ右着 && (cd.e is キャップ2 || cd.c == ContactType.Milk) && cd.e.右)
@@ -431,10 +431,10 @@ namespace SlaveMatrix
     					調教UI.押し(ref cd);
     					if (mb == MouseButtons.Middle)
     					{
-    						調教UI.Set_キャップ左(調教UI.ハンド左);
-    						キャップ左 = !キャップ左;
-    						切替時(キャップ左);
-    						if (キャップ左)
+    						調教UI.Set_CapLeft(調教UI.ハンド左);
+    						CapLeft = !CapLeft;
+    						切替時(CapLeft);
+    						if (CapLeft)
     						{
     							調教UI.Action(ContactType.Milk, ActionType.Milk, CurrentState.Start, ToolType.キャプ, 0, 1, 機械: false, 射精: false);
     							Player.奴体力消費小();
@@ -453,8 +453,8 @@ namespace SlaveMatrix
     						Player.奴体力消費小();
     						Player.主精力消費小();
     						吸脱(Bod.キャップ2左);
-    						切替時(キャップ左);
-    						キャップ左 = false;
+    						切替時(CapLeft);
+    						CapLeft = false;
     						Bod.Setキャップ2左 = キャップ脱;
     						キャップ[Bod.キャップ2左].Show = true;
     						キャップ[Bod.キャップ2左].DraShow = true;
@@ -614,7 +614,7 @@ namespace SlaveMatrix
     			},
     			OnUpdate = delegate(Motion m)
     			{
-    				if (キャップ処理2.キャップ左_)
+    				if (キャップ処理2.CapLeft_)
     				{
     					p.X = m.Value * d;
     					p.Y = 0.0 - p.X;
@@ -679,7 +679,7 @@ namespace SlaveMatrix
     		}
     		if (キャップ左着)
     		{
-    			キャップ左 = false;
+    			CapLeft = false;
     			Bod.Setキャップ2左 = キャップ脱;
     			if (キャップ.ContainsKey(Bod.キャップ2左))
     			{
@@ -728,10 +728,10 @@ namespace SlaveMatrix
     		ハンドf = false;
     		キャップ振動?.End();
     		キャップ中_ = false;
-    		キャップ左_ = false;
+    		CapLeft_ = false;
     		キャップ右_ = false;
     		キャップ中 = false;
-    		キャップ左 = false;
+    		CapLeft = false;
     		キャップ右 = false;
     		キャップ着.SetDefault();
     		調教UI.キャップ1.Intensity = 0.5;

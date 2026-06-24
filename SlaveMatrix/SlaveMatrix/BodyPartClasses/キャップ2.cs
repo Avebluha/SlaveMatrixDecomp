@@ -122,7 +122,7 @@ namespace SlaveMatrix
     	public キャップ2(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, キャップ2D e)
     	{
     		ThisType = GetType();
-    		Body = new VariantGrid(GlobalState.胴体["キャップ左"]);
+    		Body = new VariantGrid(GlobalState.胴体["CapLeft"]);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_根本 = partGroup["根本"].ToPar();
     		X0Y0_先端 = partGroup["先端"].ToPar();

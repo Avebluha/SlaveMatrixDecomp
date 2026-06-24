@@ -30,15 +30,15 @@ namespace SlaveMatrix
     		{
     			右 = true
     		});
-    		obj.単眼目接続(new 目隠帯D());
-    		obj.口接続(new 玉口枷D());
+    		obj.単眼目接続(new BlindfoldD());
+    		obj.口接続(new BallGagData());
     		return obj;
     	}
 
     	public static ChestD Chest()
     	{
     		ChestD obj = new ChestD();
-    		obj.肌接続(new 胸毛D());
+    		obj.肌接続(new ChestHairData());
     		obj.肌接続(new 胸肌D());
     		obj.肌接続(new 胸腹板D());
     		obj.肌接続(new 下着トップ_チューブD());
@@ -72,8 +72,8 @@ namespace SlaveMatrix
     		waist_description.肛門接続(Anus());
     		waist_description.肌接続(PregnantBelly());
     		waist_description.肌接続(new WaistSkinD());
-    		waist_description.肌接続(new 下着ボトム_ノーマルD());
-    		waist_description.肌接続(new 下着ボトム_マイクロD());
+    		waist_description.肌接続(new UnderwearBottom_ノーマルD());
+    		waist_description.肌接続(new UnderwearBottom_マイクロD());
     		JacketBottom_クロスD JacketBottom_クロスD2 = new JacketBottom_クロスD();
     		JacketBottom_クロスD2.JacketBottomRear接続(new JacketBottom_クロス後D());
     		waist_description.上着接続(JacketBottom_クロスD2);
@@ -84,7 +84,7 @@ namespace SlaveMatrix
     	public static 四足胸D 四足胸()
     	{
     		四足胸D obj = new 四足胸D();
-    		obj.肌接続(new 胸毛D
+    		obj.肌接続(new ChestHairData
     		{
     			尺度B = 1.4
     		});
@@ -238,9 +238,9 @@ namespace SlaveMatrix
     		return obj;
     	}
 
-    	public static 鼻_人D 人鼻D()
+    	public static Nose_人D HumanNoseD()
     	{
-    		鼻_人D obj = new 鼻_人D();
+    		Nose_人D obj = new Nose_人D();
     		obj.鼻水左接続(new 鼻水D());
     		obj.鼻水右接続(new 鼻水D
     		{
@@ -249,9 +249,9 @@ namespace SlaveMatrix
     		return obj;
     	}
 
-    	public static 鼻_獣D 獣鼻D()
+    	public static Nose_獣D BeastNoseD()
     	{
-    		鼻_獣D obj = new 鼻_獣D();
+    		Nose_獣D obj = new Nose_獣D();
     		obj.鼻水左接続(new 鼻水D());
     		obj.鼻水右接続(new 鼻水D
     		{
@@ -333,7 +333,7 @@ namespace SlaveMatrix
     		obj.尿道接続(new 潮吹_大_人D());
     		obj.陰核接続(new ピアスD());
     		obj.陰核接続(new キャップ1D());
-    		obj.陰核接続(new 下着陰核D());
+    		obj.陰核接続(new UnderwearClitorisData());
     		return obj;
     	}
 

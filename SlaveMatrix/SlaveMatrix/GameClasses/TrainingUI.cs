@@ -94,8 +94,8 @@ namespace SlaveMatrix
         //ui elements
         public ButtonBase 調教終了;
     	public ButtonBase 拘束具;
-    	public ButtonBase 目隠帯;
-    	public ButtonBase 玉口枷;
+    	public ButtonBase Blindfold;
+    	public ButtonBase BallGag;
     	public ButtonBase XRay;
     	public ButtonBase 媚薬;
     	public ButtonBase 撮影;
@@ -103,8 +103,8 @@ namespace SlaveMatrix
         public ButtonBase PlayerStamina;
 
         private ScreenSwitch 拘束具sw = new ScreenSwitch(Color.OrangeRed);
-    	private ScreenSwitch 目隠帯sw = new ScreenSwitch(Color.OrangeRed);
-    	private ScreenSwitch 玉口枷sw = new ScreenSwitch(Color.OrangeRed);
+    	private ScreenSwitch Blindfold_ScreenSwitch = new ScreenSwitch(Color.OrangeRed);
+    	private ScreenSwitch BallGag_ScreenSwitch = new ScreenSwitch(Color.OrangeRed);
     	private ScreenSwitch XRay_ScreenSwitch = new ScreenSwitch(Color.OrangeRed);
 
     	public ProgressBar 体力sゲージ;
@@ -791,7 +791,7 @@ namespace SlaveMatrix
     		t.位置B = キャップ3.X0Y0_先端.ToGlobal_nc(キャップ3.X0Y0_先端.GetJP()[0].Joint);
     	}
 
-    	public void Set_キャップ左(Element t)
+    	public void Set_CapLeft(Element t)
     	{
     		キャップ2 キャップ2左 = Bod.キャップ2左;
     		t.位置B = キャップ2左.X0Y0_先端.ToGlobal_nc(キャップ2左.X0Y0_先端.GetJP()[0].Joint);
@@ -1688,14 +1688,14 @@ namespace SlaveMatrix
     			{
     				調教終了.Move(ref hc);
     				拘束具.Move(ref hc);
-    				目隠帯.Move(ref hc);
-    				玉口枷.Move(ref hc);
+    				Blindfold.Move(ref hc);
+    				BallGag.Move(ref hc);
     				XRay.Move(ref hc);
     				媚薬.Move(ref hc);
     				撮影.Move(ref hc);
     				SlaveStamina.Move(ref hc);
     				PlayerStamina.Move(ref hc);
-    				if (調教終了.PartGroup.IsHit(ref hc) || 拘束具.PartGroup.IsHit(ref hc) || 目隠帯.PartGroup.IsHit(ref hc) || 玉口枷.PartGroup.IsHit(ref hc) || XRay.PartGroup.IsHit(ref hc) || 媚薬.PartGroup.IsHit(ref hc) || 撮影.PartGroup.IsHit(ref hc))
+    				if (調教終了.PartGroup.IsHit(ref hc) || 拘束具.PartGroup.IsHit(ref hc) || Blindfold.PartGroup.IsHit(ref hc) || BallGag.PartGroup.IsHit(ref hc) || XRay.PartGroup.IsHit(ref hc) || 媚薬.PartGroup.IsHit(ref hc) || 撮影.PartGroup.IsHit(ref hc))
     				{
     					Med.CursorShow();
     				}
@@ -1870,11 +1870,11 @@ namespace SlaveMatrix
     		{
     			ip.SubInfoIm = GameText.拘束状態を切換えます;
     		}
-    		if (目隠帯.PartGroup.Values.First().ToPar().GetHitColor() == hc)
+    		if (Blindfold.PartGroup.Values.First().ToPar().GetHitColor() == hc)
     		{
     			ip.SubInfoIm = GameText.目隠状態を切換えます;
     		}
-    		if (玉口枷.PartGroup.Values.First().ToPar().GetHitColor() == hc)
+    		if (BallGag.PartGroup.Values.First().ToPar().GetHitColor() == hc)
     		{
     			ip.SubInfoIm = GameText.口枷状態を切換えます;
     		}
@@ -1940,8 +1940,8 @@ namespace SlaveMatrix
     		{
     			調教終了.Down(ref hc);
     			拘束具.Down(ref hc);
-    			目隠帯.Down(ref hc);
-    			玉口枷.Down(ref hc);
+    			Blindfold.Down(ref hc);
+    			BallGag.Down(ref hc);
     			XRay.Down(ref hc);
     			媚薬.Down(ref hc);
     			撮影.Down(ref hc);
@@ -1985,8 +1985,8 @@ namespace SlaveMatrix
     		{
     			調教終了.Up(ref hc);
     			拘束具.Up(ref hc);
-    			目隠帯.Up(ref hc);
-    			玉口枷.Up(ref hc);
+    			Blindfold.Up(ref hc);
+    			BallGag.Up(ref hc);
     			XRay.Up(ref hc);
     			媚薬.Up(ref hc);
     			撮影.Up(ref hc);
@@ -2030,8 +2030,8 @@ namespace SlaveMatrix
     		Med.CursorShow();
     		調教終了.Leave();
     		拘束具.Leave();
-    		目隠帯.Leave();
-    		玉口枷.Leave();
+    		Blindfold.Leave();
+    		BallGag.Leave();
     		XRay.Leave();
     		媚薬.Leave();
     		撮影.Leave();
@@ -2226,11 +2226,11 @@ namespace SlaveMatrix
     			shapePartT3.GetStringFormat().Alignment = StringAlignment.Center;
     			shapePartT3.GetStringFormat().LineAlignment = StringAlignment.Center;
     			shapePartT3.SetPositionBase(shapePartT2.GetPositionBase().AddY(0.015));
-    			目隠帯 = new Button(shapePartT3, delegate(ButtonBase a)
+    			Blindfold = new Button(shapePartT3, delegate(ButtonBase a)
     			{
-    				調教UI2.目隠帯sw.OnOff(a);
-    				GlobalState.GameData.目隠帯 = 調教UI2.目隠帯sw.Flag;
-    				調教UI2.Bod.目隠帯_表示 = GlobalState.GameData.目隠帯;
+    				調教UI2.Blindfold_ScreenSwitch.OnOff(a);
+    				GlobalState.GameData.Blindfold = 調教UI2.Blindfold_ScreenSwitch.Flag;
+    				調教UI2.Bod.Blindfold_表示 = GlobalState.GameData.Blindfold;
     				Player.Reaction1();
     			});
     			ShapePartT shapePartT4 = new ShapePartT();
@@ -2249,11 +2249,11 @@ namespace SlaveMatrix
     			shapePartT4.GetStringFormat().Alignment = StringAlignment.Center;
     			shapePartT4.GetStringFormat().LineAlignment = StringAlignment.Center;
     			shapePartT4.SetPositionBase(shapePartT3.GetPositionBase().AddY(0.015));
-    			玉口枷 = new Button(shapePartT4, delegate(ButtonBase a)
+    			BallGag = new Button(shapePartT4, delegate(ButtonBase a)
     			{
-    				調教UI2.玉口枷sw.OnOff(a);
-    				GlobalState.GameData.玉口枷 = 調教UI2.玉口枷sw.Flag;
-    				調教UI2.Bod.玉口枷_表示 = GlobalState.GameData.玉口枷;
+    				調教UI2.BallGag_ScreenSwitch.OnOff(a);
+    				GlobalState.GameData.BallGag = 調教UI2.BallGag_ScreenSwitch.Flag;
+    				調教UI2.Bod.BallGag_表示 = GlobalState.GameData.BallGag;
     				Player.Reaction1();
     			});
     			ShapePartT shapePartT5 = new ShapePartT();
@@ -2660,10 +2660,10 @@ namespace SlaveMatrix
     		}
     		拘束具sw.SetFlag(拘束具, GlobalState.GameData.拘束具);
     		Bod.拘束具_表示 = GlobalState.GameData.拘束具;
-    		目隠帯sw.SetFlag(目隠帯, GlobalState.GameData.目隠帯);
-    		Bod.目隠帯_表示 = GlobalState.GameData.目隠帯;
-    		玉口枷sw.SetFlag(玉口枷, GlobalState.GameData.玉口枷);
-    		Bod.玉口枷_表示 = GlobalState.GameData.玉口枷;
+    		Blindfold_ScreenSwitch.SetFlag(Blindfold, GlobalState.GameData.Blindfold);
+    		Bod.Blindfold_表示 = GlobalState.GameData.Blindfold;
+    		BallGag_ScreenSwitch.SetFlag(BallGag, GlobalState.GameData.BallGag);
+    		Bod.BallGag_表示 = GlobalState.GameData.BallGag;
     		XRay_ScreenSwitch.SetFlag(XRay, GlobalState.GameData.XRay);
     		if (!Bod.Is粘)
     		{
@@ -2952,8 +2952,8 @@ namespace SlaveMatrix
     		キャップ3CharacterElement.待機描画(Are);
     		調教終了.Draw(Are);
     		拘束具.Draw(Are);
-    		目隠帯.Draw(Are);
-    		玉口枷.Draw(Are);
+    		Blindfold.Draw(Are);
+    		BallGag.Draw(Are);
     		XRay.Draw(Are);
     		媚薬.Draw(Are);
     		撮影.Draw(Are);
@@ -3017,8 +3017,8 @@ namespace SlaveMatrix
     		調鞭処理.衝撃.Dispose();
     		調教終了.Dispose();
     		拘束具.Dispose();
-    		目隠帯.Dispose();
-    		玉口枷.Dispose();
+    		Blindfold.Dispose();
+    		BallGag.Dispose();
     		XRay.Dispose();
     		媚薬.Dispose();
     		撮影.Dispose();

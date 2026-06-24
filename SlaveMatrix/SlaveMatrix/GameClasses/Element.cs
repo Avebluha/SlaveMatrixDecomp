@@ -254,13 +254,13 @@ namespace SlaveMatrix.GameClasses
                     {
                         item.SetSizeBase(item.GetSizeBase() * num2);
                     }
-                    else if (item.Tag.Contains("吸盤") || this is VaginaOrigin || this is InternalSemen || this is XRay || this is 性器 || this is Anus || this is 乳房 || this is 下着トップ || this is Waist || this is WaistSkin || this is 四足腰 || this is 下着ボトム || this is JacketBottom || this is 手 || this is 噴乳 || this is 飛沫 || this is 潮吹_小 || this is 潮吹_大 || this is 放尿 || this is 半身 || this is 頭頂_天 || this is 背中_光 || this is PregnantBelly)
+                    else if (item.Tag.Contains("吸盤") || this is VaginaOrigin || this is InternalSemen || this is XRay || this is 性器 || this is Anus || this is 乳房 || this is 下着トップ || this is Waist || this is WaistSkin || this is 四足腰 || this is UnderwearBottom || this is JacketBottom || this is 手 || this is 噴乳 || this is 飛沫 || this is 潮吹_小 || this is 潮吹_大 || this is 放尿 || this is 半身 || this is 頭頂_天 || this is 背中_光 || this is PregnantBelly)
                     {
                         item.SetSizeBase(item.GetSizeBase() * num);
                     }
                     else if (Xasix)
                     {
-                        if (this is Head or 目隠帯 or 玉口枷)
+                        if (this is Head or Blindfold or BallGag)
                         {
                             item.GetOP().ExpansionX(item.GetOP().GetCenter(), rate);
                         }
@@ -269,7 +269,7 @@ namespace SlaveMatrix.GameClasses
                             item.SetSizeXBase(item.GetSizeXBase() * num);
                         }
                     }
-                    else if (this is Head or 目隠帯 or 玉口枷)
+                    else if (this is Head or Blindfold or BallGag)
                     {
                         item.GetOP().ExpansionY(item.GetOP().GetCenter(), rate);
                     }
@@ -291,9 +291,9 @@ namespace SlaveMatrix.GameClasses
                 double num = 身長mi2 + 身長d2 * 身長_;
                 foreach (ShapePart item in Body.EnumAllPar())
                 {
-                    if (!item.GetParent().Tag.Contains("眼") && !item.GetParent().Tag.Contains("コア") && !item.Tag.Contains("傷") && !item.Tag.Contains("ボタン") && !item.GetParent().Tag.Contains("輪") && !item.Tag.Contains("吸盤") && this is not VaginaOrigin && this is not InternalSemen && this is not XRay && this is not 性器 && this is not Anus && this is not 乳房 && this is not 下着トップ && this is not Waist && this is not WaistSkin && this is not 四足腰 && this is not 下着ボトム && this is not JacketBottom && this is not 手 && this is not 噴乳 && this is not 飛沫 && this is not 潮吹_小 && this is not 潮吹_大 && this is not 放尿 && this is not Head && this is not 目隠帯 && this is not 玉口枷 && this is not 半身 && this is not 頭頂 && this is not 背中_光 && this is not PregnantBelly)
+                    if (!item.GetParent().Tag.Contains("眼") && !item.GetParent().Tag.Contains("コア") && !item.Tag.Contains("傷") && !item.Tag.Contains("ボタン") && !item.GetParent().Tag.Contains("輪") && !item.Tag.Contains("吸盤") && this is not VaginaOrigin && this is not InternalSemen && this is not XRay && this is not 性器 && this is not Anus && this is not 乳房 && this is not 下着トップ && this is not Waist && this is not WaistSkin && this is not 四足腰 && this is not UnderwearBottom && this is not JacketBottom && this is not 手 && this is not 噴乳 && this is not 飛沫 && this is not 潮吹_小 && this is not 潮吹_大 && this is not 放尿 && this is not Head && this is not Blindfold && this is not BallGag && this is not 半身 && this is not 頭頂 && this is not 背中_光 && this is not PregnantBelly)
                     {
-                        if (this is Head or 目隠帯 or 玉口枷)
+                        if (this is Head or Blindfold or BallGag)
                         {
                             if (num < 1.0)
                             {
@@ -454,25 +454,25 @@ namespace SlaveMatrix.GameClasses
             ConnectionInfo.Head_BaseHair_接続 => 1,
             ConnectionInfo.Head_EyeLeft_接続 => 1,
             ConnectionInfo.Head_目右_接続 => 1,
-            ConnectionInfo.Head_鼻_接続 => 1,
+            ConnectionInfo.Head_Nose_接続 => 1,
             ConnectionInfo.Head_口_接続 => 1,
             ConnectionInfo.Head_頬左_接続 => 1,
             ConnectionInfo.Head_頬右_接続 => 1,
             ConnectionInfo.Head_額_接続 => 1,
-            ConnectionInfo.Head_眉左_接続 => 1,
+            ConnectionInfo.Head_EyebrowLeft_接続 => 1,
             ConnectionInfo.Head_眉右_接続 => 1,
             ConnectionInfo.Head_耳左_接続 => 1,
             ConnectionInfo.Head_耳右_接続 => 1,
             ConnectionInfo.Head_NoseSkin_接続 => 1,
             ConnectionInfo.Head_MonoEye_接続 => 1,
-            ConnectionInfo.Head_単眼眉_接続 => 1,
+            ConnectionInfo.Head_MonoEyebrow_接続 => 1,
             ConnectionInfo.Head_CheekSkinLeft_接続 => 1,
             ConnectionInfo.Head_頬肌右_接続 => 1,
             ConnectionInfo.Head_触覚左_接続 => 1,
             ConnectionInfo.Head_触覚右_接続 => 1,
             ConnectionInfo.BaseHair_頭頂左_接続 => 1,
             ConnectionInfo.BaseHair_頭頂右_接続 => 1,
-            ConnectionInfo.BaseHair_前髪_接続 => 1,
+            ConnectionInfo.BaseHair_FrontHair_接続 => 1,
             ConnectionInfo.BaseHair_後髪_接続 => 0,
             ConnectionInfo.BackHair0_肢系_左5_接続 => 1,
             ConnectionInfo.BackHair0_肢系_左4_接続 => 1,
@@ -491,15 +491,15 @@ namespace SlaveMatrix.GameClasses
             ConnectionInfo.単目_瞼_接続 => 1,
             ConnectionInfo.頬目_瞼_接続 => 1,
             ConnectionInfo.縦目_瞼_接続 => 1,
-            ConnectionInfo.鼻_人_鼻水左_接続 => 1,
-            ConnectionInfo.鼻_人_鼻水右_接続 => 1,
-            ConnectionInfo.鼻_獣_鼻水左_接続 => 1,
-            ConnectionInfo.鼻_獣_鼻水右_接続 => 1,
+            ConnectionInfo.Nose_人_NoseDripLeft_接続 => 1,
+            ConnectionInfo.Nose_人_鼻水右_接続 => 1,
+            ConnectionInfo.Nose_獣_NoseDripLeft_接続 => 1,
+            ConnectionInfo.Nose_獣_鼻水右_接続 => 1,
             ConnectionInfo.Neck_Head_接続 => 1,
             ConnectionInfo.Chest_Neck_接続 => 1,
             ConnectionInfo.Chest_肩左_接続 => 1,
             ConnectionInfo.Chest_肩右_接続 => 1,
-            ConnectionInfo.Chest_胸左_接続 => 1,
+            ConnectionInfo.Chest_LeftBreast_接続 => 1,
             ConnectionInfo.Chest_胸右_接続 => 1,
             ConnectionInfo.Chest_肌_接続 => 1,
             ConnectionInfo.Chest_翼上左_接続 => 0,
@@ -795,7 +795,7 @@ namespace SlaveMatrix.GameClasses
             ConnectionInfo.四足胸_脇左_接続 => 0,
             ConnectionInfo.四足胸_脇右_接続 => 0,
             ConnectionInfo.四足胸_Torso_接続 => 0,
-            ConnectionInfo.四足胸_胸左_接続 => 1,
+            ConnectionInfo.四足胸_LeftBreast_接続 => 1,
             ConnectionInfo.四足胸_胸右_接続 => 1,
             ConnectionInfo.四足胸_肌_接続 => 1,
             ConnectionInfo.四足胸_翼上左_接続 => 0,
@@ -864,7 +864,7 @@ namespace SlaveMatrix.GameClasses
             ConnectionInfo.Head_大顎基_接続 => throw new NotImplementedException(),
             ConnectionInfo.Head_顔面_接続 => throw new NotImplementedException(),
             ConnectionInfo.Head_頭頂_接続 => throw new NotImplementedException(),
-            ConnectionInfo.BaseHair_横髪左_接続 => throw new NotImplementedException(),
+            ConnectionInfo.BaseHair_SideHairLeft_接続 => throw new NotImplementedException(),
             ConnectionInfo.BaseHair_横髪右_接続 => throw new NotImplementedException(),
             ConnectionInfo.吹出し_吹出し_接続 => throw new NotImplementedException(),
             ConnectionInfo.尾_蜘_出糸_接続 => throw new NotImplementedException(),

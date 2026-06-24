@@ -252,7 +252,7 @@ namespace SlaveMatrix
 
     	public Element[] 目右_接続;
 
-    	public Element[] 鼻_接続;
+    	public Element[] Nose_接続;
 
     	public Element[] 口_接続;
 
@@ -262,7 +262,7 @@ namespace SlaveMatrix
 
     	public Element[] 額_接続;
 
-    	public Element[] 眉左_接続;
+    	public Element[] EyebrowLeft_接続;
 
     	public Element[] 眉右_接続;
 
@@ -274,7 +274,7 @@ namespace SlaveMatrix
 
     	public Element[] MonoEye_接続;
 
-    	public Element[] 単眼眉_接続;
+    	public Element[] MonoEyebrow_接続;
 
     	public Element[] 大顎基_接続;
 
@@ -996,7 +996,7 @@ namespace SlaveMatrix
 
     	public JointS 目右_接続点 => new JointS(Body, X0Y0_Head, 2);
 
-    	public JointS 鼻_接続点 => new JointS(Body, X0Y0_Head, 3);
+    	public JointS Nose_接続点 => new JointS(Body, X0Y0_Head, 3);
 
     	public JointS 口_接続点 => new JointS(Body, X0Y0_Head, 4);
 
@@ -1006,7 +1006,7 @@ namespace SlaveMatrix
 
     	public JointS 額_接続点 => new JointS(Body, X0Y0_Head, 7);
 
-    	public JointS 眉左_接続点 => new JointS(Body, X0Y0_Head, 8);
+    	public JointS EyebrowLeft_接続点 => new JointS(Body, X0Y0_Head, 8);
 
     	public JointS 眉右_接続点 => new JointS(Body, X0Y0_Head, 9);
 
@@ -1018,7 +1018,7 @@ namespace SlaveMatrix
 
     	public JointS MonoEye_接続点 => new JointS(Body, X0Y0_Head, 13);
 
-    	public JointS 単眼眉_接続点 => new JointS(Body, X0Y0_Head, 14);
+    	public JointS MonoEyebrow_接続点 => new JointS(Body, X0Y0_Head, 14);
 
     	public JointS 大顎基_接続点 => new JointS(Body, X0Y0_Head, 14);
 
@@ -1205,14 +1205,14 @@ namespace SlaveMatrix
     				return f;
     			}).ToArray();
     		}
-    		if (e.鼻_接続.Count > 0)
+    		if (e.Nose_接続.Count > 0)
     		{
-    			鼻_接続 = e.鼻_接続.Select(delegate(ElementData g)
+    			Nose_接続 = e.Nose_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 頭2;
-    				f.ConnectionType = ConnectionInfo.Head_鼻_接続;
-    				f.接続(頭2.鼻_接続点);
+    				f.ConnectionType = ConnectionInfo.Head_Nose_接続;
+    				f.接続(頭2.Nose_接続点);
     				return f;
     			}).ToArray();
     		}
@@ -1260,14 +1260,14 @@ namespace SlaveMatrix
     				return f;
     			}).ToArray();
     		}
-    		if (e.眉左_接続.Count > 0)
+    		if (e.EyebrowLeft_接続.Count > 0)
     		{
-    			眉左_接続 = e.眉左_接続.Select(delegate(ElementData g)
+    			EyebrowLeft_接続 = e.EyebrowLeft_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 頭2;
-    				f.ConnectionType = ConnectionInfo.Head_眉左_接続;
-    				f.接続(頭2.眉左_接続点);
+    				f.ConnectionType = ConnectionInfo.Head_EyebrowLeft_接続;
+    				f.接続(頭2.EyebrowLeft_接続点);
     				return f;
     			}).ToArray();
     		}
@@ -1326,14 +1326,14 @@ namespace SlaveMatrix
     				return f;
     			}).ToArray();
     		}
-    		if (e.単眼眉_接続.Count > 0)
+    		if (e.MonoEyebrow_接続.Count > 0)
     		{
-    			単眼眉_接続 = e.単眼眉_接続.Select(delegate(ElementData g)
+    			MonoEyebrow_接続 = e.MonoEyebrow_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = 頭2;
-    				f.ConnectionType = ConnectionInfo.Head_単眼眉_接続;
-    				f.接続(頭2.単眼眉_接続点);
+    				f.ConnectionType = ConnectionInfo.Head_MonoEyebrow_接続;
+    				f.接続(頭2.MonoEyebrow_接続点);
     				return f;
     			}).ToArray();
     		}

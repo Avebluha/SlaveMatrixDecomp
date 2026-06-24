@@ -14,11 +14,11 @@ namespace SlaveMatrix
 
     	public List<ElementData> 頭頂右_接続 = new List<ElementData>();
 
-    	public List<ElementData> 横髪左_接続 = new List<ElementData>();
+    	public List<ElementData> SideHairLeft_接続 = new List<ElementData>();
 
     	public List<ElementData> 横髪右_接続 = new List<ElementData>();
 
-    	public List<ElementData> 前髪_接続 = new List<ElementData>();
+    	public List<ElementData> FrontHair_接続 = new List<ElementData>();
 
     	public List<ElementData> 後髪_接続 = new List<ElementData>();
 
@@ -43,9 +43,9 @@ namespace SlaveMatrix
 
     	public void 横髪左接続(ElementData e)
     	{
-    		横髪左_接続.Add(e);
+    		SideHairLeft_接続.Add(e);
     		e.Par = this;
-    		e.接続情報 = ConnectionInfo.BaseHair_横髪左_接続;
+    		e.接続情報 = ConnectionInfo.BaseHair_SideHairLeft_接続;
     	}
 
     	public void 横髪右接続(ElementData e)
@@ -57,9 +57,9 @@ namespace SlaveMatrix
 
     	public void 前髪接続(ElementData e)
     	{
-    		前髪_接続.Add(e);
+    		FrontHair_接続.Add(e);
     		e.Par = this;
-    		e.接続情報 = ConnectionInfo.BaseHair_前髪_接続;
+    		e.接続情報 = ConnectionInfo.BaseHair_FrontHair_接続;
     	}
 
     	public void 後髪接続(ElementData e)

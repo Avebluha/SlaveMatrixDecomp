@@ -16,11 +16,11 @@ namespace SlaveMatrix
 
     	public Element[] 頭頂右_接続;
 
-    	public Element[] 横髪左_接続;
+    	public Element[] SideHairLeft_接続;
 
     	public Element[] 横髪右_接続;
 
-    	public Element[] 前髪_接続;
+    	public Element[] FrontHair_接続;
 
     	public Element[] 後髪_接続;
 
@@ -115,11 +115,11 @@ namespace SlaveMatrix
 
     	public JointS 頭頂右_接続点 => new JointS(Body, X0Y0_髪, 1);
 
-    	public JointS 横髪左_接続点 => new JointS(Body, X0Y0_髪, 0);
+    	public JointS SideHairLeft_接続点 => new JointS(Body, X0Y0_髪, 0);
 
     	public JointS 横髪右_接続点 => new JointS(Body, X0Y0_髪, 1);
 
-    	public JointS 前髪_接続点 => new JointS(Body, X0Y0_髪, 2);
+    	public JointS FrontHair_接続点 => new JointS(Body, X0Y0_髪, 2);
 
     	public JointS 後髪_接続点 => new JointS(Body, X0Y0_髪, 3);
 
@@ -185,14 +185,14 @@ namespace SlaveMatrix
     				return f;
     			}).ToArray();
     		}
-    		if (e.横髪左_接続.Count > 0)
+    		if (e.SideHairLeft_接続.Count > 0)
     		{
-    			横髪左_接続 = e.横髪左_接続.Select(delegate(ElementData g)
+    			SideHairLeft_接続 = e.SideHairLeft_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = BaseHair2;
-    				f.ConnectionType = ConnectionInfo.BaseHair_横髪左_接続;
-    				f.接続(BaseHair2.横髪左_接続点);
+    				f.ConnectionType = ConnectionInfo.BaseHair_SideHairLeft_接続;
+    				f.接続(BaseHair2.SideHairLeft_接続点);
     				return f;
     			}).ToArray();
     		}
@@ -207,14 +207,14 @@ namespace SlaveMatrix
     				return f;
     			}).ToArray();
     		}
-    		if (e.前髪_接続.Count > 0)
+    		if (e.FrontHair_接続.Count > 0)
     		{
-    			前髪_接続 = e.前髪_接続.Select(delegate(ElementData g)
+    			FrontHair_接続 = e.FrontHair_接続.Select(delegate(ElementData g)
     			{
     				f = g.GetEle(DisUnit, Med, 体配色);
     				f.Par = BaseHair2;
-    				f.ConnectionType = ConnectionInfo.BaseHair_前髪_接続;
-    				f.接続(BaseHair2.前髪_接続点);
+    				f.ConnectionType = ConnectionInfo.BaseHair_FrontHair_接続;
+    				f.接続(BaseHair2.FrontHair_接続点);
     				return f;
     			}).ToArray();
     		}

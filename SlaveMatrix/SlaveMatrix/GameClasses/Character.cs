@@ -1742,7 +1742,7 @@ namespace SlaveMatrix
                 result.p = result.e.Body.GetHitPar_(HitColor);
                 bool flag = false;
                 bool flag2 = result.e is Shoulder || result.e is UpperArm || result.e is LowerArm || result.e is 手 || result.e is 四足脇 || result.e is 腿 || result.e is Leg || result.e is 足 || result.e is 鰭 || result.e is 葉 || result.e is 前翅 || result.e is 後翅 || result.e is 触肢 || result.e is 節足 || result.e is 節尾 || result.e is 大顎 || result.e is 虫顎 || result.e is 虫鎌 || result.e is 触手;
-                if (result.e is 前髪 || result.e is 頭頂)
+                if (result.e is FrontHair || result.e is 頭頂)
                 {
                     result.c = ContactType.Head;
                 }

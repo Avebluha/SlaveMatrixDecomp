@@ -83,9 +83,9 @@ namespace SlaveMatrix
 
     	public bool 竜性_鱗5_表示;
 
-    	public bool パンスト_パンスト1_表示;
+    	public bool Pantyhose_Pantyhose1_表示;
 
-    	public bool パンスト_パンスト2_表示;
+    	public bool Pantyhose_Pantyhose2_表示;
 
     	public bool ソックス_ソックス1_表示;
 

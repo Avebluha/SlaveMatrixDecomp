@@ -367,9 +367,9 @@ namespace SlaveMatrix
 
     	public static 髪留2情報 髪留2初期化;
 
-    	public static 玉口枷情報 玉口枷初期化;
+    	public static BallGagInformation 玉口枷初期化;
 
-    	public static 目隠帯情報 目隠帯初期化;
+    	public static BlindfoldInformation 目隠帯初期化;
 
     	public static 拘束具情報 拘束具初期化;
 
@@ -1326,16 +1326,16 @@ namespace SlaveMatrix
     		{
     			ConnectionInfo.none,
     			ConnectionInfo.Head_BaseHair_接続,
-    			ConnectionInfo.Head_鼻_接続,
+    			ConnectionInfo.Head_Nose_接続,
     			ConnectionInfo.Head_口_接続,
     			ConnectionInfo.Head_額_接続,
     			ConnectionInfo.Head_NoseSkin_接続,
     			ConnectionInfo.Head_MonoEye_接続,
-    			ConnectionInfo.Head_単眼眉_接続,
+    			ConnectionInfo.Head_MonoEyebrow_接続,
     			ConnectionInfo.Head_大顎基_接続,
     			ConnectionInfo.Head_顔面_接続,
     			ConnectionInfo.Head_頭頂_接続,
-    			ConnectionInfo.BaseHair_前髪_接続,
+    			ConnectionInfo.BaseHair_FrontHair_接続,
     			ConnectionInfo.BaseHair_後髪_接続,
     			ConnectionInfo.BackHair0_肢系_中央_接続,
     			ConnectionInfo.単目_瞼_接続,
@@ -1396,8 +1396,8 @@ namespace SlaveMatrix
     		bf = BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic;
     		bfi = bf | BindingFlags.InvokeMethod;
     		髪留2初期化 = default(髪留2情報);
-    		玉口枷初期化 = default(玉口枷情報);
-    		目隠帯初期化 = default(目隠帯情報);
+    		玉口枷初期化 = default(BallGagInformation);
+    		目隠帯初期化 = default(BlindfoldInformation);
     		拘束具初期化 = default(拘束具情報);
     		ピアス初期化 = default(ピアス情報);
     		キャップ初期化 = default(キャップ情報);

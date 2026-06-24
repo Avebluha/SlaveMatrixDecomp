@@ -797,7 +797,7 @@ namespace SlaveMatrix
     	{
     		乳房 乳房2 = this;
     		ThisType = GetType();
-    		Body = new VariantGrid(GlobalState.胴体["胸左"]);
+    		Body = new VariantGrid(GlobalState.胴体["LeftBreast"]);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_乳房 = partGroup["乳房"].ToPar();
     		X0Y0_乳輪 = partGroup["乳輪"].ToPar();

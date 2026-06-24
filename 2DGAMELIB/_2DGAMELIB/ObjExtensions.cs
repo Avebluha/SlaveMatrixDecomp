@@ -47,6 +47,7 @@ namespace _2DGAMELIB
             ["基髪"] = "BaseHair",
             ["単眼目"] = "MonoEye",
             ["単眼瞼"] = "MonoEyelid",
+            ["単眼眉"] = "MonoEyebrow",
             ["目左"] = "EyeLeft",
             ["魔性弱瞼左"] = "DemonicWeakEyelidLeft",
             ["魔性中瞼左"] = "DemonicMidEyelidLeft",
@@ -60,7 +61,33 @@ namespace _2DGAMELIB
             ["額瞼"] = "ForeheadEyelid",
             ["頬目左"] = "CheekEyeLeft",
             ["頬瞼左"] = "CheekEyelidLeft",
-            ["紅潮"] = "CrimsonSquirt"
+            ["紅潮"] = "CrimsonSquirt",
+            ["目尻影左"] = "EyeCornerShadowLeft",
+            ["顔ハイライト左"] = "FaceHighlightLeft",
+            ["涙左"] = "TearLeft",
+            ["目隠帯"] = "Blindfold",
+            ["鼻水左"] = "NoseDripLeft",
+            ["鼻"] = "Nose",
+            ["涎口裂け左"] = "DroolMouthGashLeft",
+            ["胸郭腹板"] = "ChestPlate",
+            ["胸郭肌"] = "ChestSkin",
+            ["肛門精液垂れ"] = "AnusSemenDrip",
+            ["意思表示"] = "Expression",
+            ["涎左"] = "DroolLeft",
+            ["玉口枷"] = "BallGag",
+            ["胸左"] = "LeftBreast",
+            ["胸毛"] = "ChestHair",
+            ["横髪左"] = "SideHairLeft",
+            ["前髪"] = "FrontHair",
+            ["眉左"] = "EyebrowLeft",
+            ["青筋左"] = "VeinLeft",
+            ["噴乳左"] = "LactationLeft",
+            ["キャップ左"] = "CapLeft",
+            ["下着乳首左"] = "UnderwearNippleLeft",
+            ["下着ボトム"] = "UnderwearBottom",
+            ["下着陰核"] = "UnderwearClitoris",
+            ["パンスト"] = "Pantyhose"
+
         };
 
         public static void MigrateKeys(this BodyTemplate BodyTemplate)

@@ -253,7 +253,7 @@ namespace SlaveMatrix
     				Bod.乳房左.Yv = 0.2 + 0.4 * d;
     				Bod.乳房右.Yv = 0.2 + 0.4 * d;
     				vc.Y = -0.002 * d;
-    				Bod.胸毛_人.位置C = vc;
+    				Bod.ChestHair_人.位置C = vc;
     				対象.Element.角度C = (100.0 * x).Clamp(-5.0, 5.0);
     				if (yi != Bod.乳房左.Yi && Bod.乳房左.Yi == 1)
     				{
@@ -491,7 +491,7 @@ namespace SlaveMatrix
 
                 調教UI.ハンド処理.バスト初期化.Start();
     			vc = DataConsts.Vec2DZero;
-    			Bod.胸毛_人.位置C = vc;
+    			Bod.ChestHair_人.位置C = vc;
     			調教UI.ハンド左表示 = false;
     			調教UI.ハンド右.位置C = DataConsts.Vec2DZero;
     			調教UI.ハンド左.位置C = DataConsts.Vec2DZero;
@@ -939,16 +939,16 @@ namespace SlaveMatrix
     				}
     				ペニス処理2.Bod.乳房左.Yv = 0.2 + 0.5 * vl;
     				ペニス処理2.Bod.乳房右.Yv = 0.2 + 0.5 * vr;
-    				if (ペニス処理2.Bod.胸毛_人 != null)
+    				if (ペニス処理2.Bod.ChestHair_人 != null)
     				{
     					if (ペニス処理2.Isパイズリ相互)
     					{
-    						ペニス処理2.Bod.胸毛_人.角度C = s * -2.5 + s * 5.0 * vl;
+    						ペニス処理2.Bod.ChestHair_人.角度C = s * -2.5 + s * 5.0 * vl;
     					}
     					else
     					{
     						vc.Y = -0.002 * vl;
-    						ペニス処理2.Bod.胸毛_人.位置C = vc;
+    						ペニス処理2.Bod.ChestHair_人.位置C = vc;
     					}
     				}
     				if (ペニス処理2.Bod.EI腕前 != null)
@@ -969,8 +969,8 @@ namespace SlaveMatrix
     			{
     				ペニス処理2.手固定 = false;
     				調教UI.ハンド処理.バスト初期化.Start();
-    				ペニス処理2.Bod.胸毛_人.角度C = 0.0;
-    				ペニス処理2.Bod.胸毛_人.位置C = DataConsts.Vec2DZero;
+    				ペニス処理2.Bod.ChestHair_人.角度C = 0.0;
+    				ペニス処理2.Bod.ChestHair_人.位置C = DataConsts.Vec2DZero;
     				if (ペニス処理2.肩左 != null)
     				{
     					ペニス処理2.肩左.角度C = 0.0;

@@ -113,7 +113,7 @@ namespace SlaveMatrix
 
     	public bool ハイライト2_表示;
 
-    	public bool パンスト_表示;
+    	public bool Pantyhose_表示;
 
     	public bool ニーハイ_ニーハイ1_表示;
 

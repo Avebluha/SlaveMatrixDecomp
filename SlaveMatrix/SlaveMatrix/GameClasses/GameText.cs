@@ -711,9 +711,9 @@ namespace SlaveMatrix
 
     	public static string ｱﾅﾙﾊﾟｰﾙ => Tool[11];
 
-    	public static string 目隠帯 => Tool[12];
+    	public static string Blindfold => Tool[12];
 
-    	public static string 玉口枷 => Tool[13];
+    	public static string BallGag => Tool[13];
 
     	public static string カメラ => Tool[14];
 

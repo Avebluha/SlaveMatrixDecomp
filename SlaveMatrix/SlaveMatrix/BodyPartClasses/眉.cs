@@ -152,7 +152,7 @@ namespace SlaveMatrix
     	public 眉(double DisUnit, 配色指定 配色指定, BodyColorSet 体配色, ModeEventDispatcher Med, 眉D e)
     	{
     		ThisType = GetType();
-    		Body = new VariantGrid(GlobalState.胴体["眉左"]);
+    		Body = new VariantGrid(GlobalState.胴体["EyebrowLeft"]);
     		PartGroup partGroup = Body[0][0];
     		X0Y0_眉 = partGroup["眉"].ToPar();
     		partGroup = Body[0][1];

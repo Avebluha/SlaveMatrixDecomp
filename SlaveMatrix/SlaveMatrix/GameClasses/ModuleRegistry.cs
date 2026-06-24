@@ -1642,7 +1642,7 @@ namespace SlaveMatrix
     			}
     			if (TrainingTarget.Body.Is双眉)
     			{
-    				TrainingTarget.Body.眉左.眉間_表示 = false;
+    				TrainingTarget.Body.EyebrowLeft.眉間_表示 = false;
     				TrainingTarget.Body.眉右.眉間_表示 = false;
     			}
     			if (TrainingTarget.Body.IsDualEyes)
@@ -1669,7 +1669,7 @@ namespace SlaveMatrix
     				TrainingTarget.ForeheadEyelid_半1();
     				TrainingTarget.ForeheadEye_見つめ();
     			}
-    			if (!TrainingTarget.Body.玉口枷_表示)
+    			if (!TrainingTarget.Body.BallGag_表示)
     			{
     				TrainingTarget.口_閉笑();
     			}
@@ -1742,8 +1742,8 @@ namespace SlaveMatrix
                     Player.UI.キャップ3CharacterElement.Show = GlobalState.GameData.PurchasedTools[8];
                     Player.UI.ロータCM.Show = GlobalState.GameData.PurchasedTools[9];
                     Player.UI.パールCM.Show = GlobalState.GameData.PurchasedTools[10];
-                    Player.UI.目隠帯.Dra = GlobalState.GameData.PurchasedTools[11];
-                    Player.UI.玉口枷.Dra = GlobalState.GameData.PurchasedTools[12];
+                    Player.UI.Blindfold.Dra = GlobalState.GameData.PurchasedTools[11];
+                    Player.UI.BallGag.Dra = GlobalState.GameData.PurchasedTools[12];
                     Player.UI.撮影.Dra = GlobalState.GameData.PurchasedTools[13];
                     Player.表示ステート更新();
                     Player.ModBox();
@@ -1978,8 +1978,8 @@ namespace SlaveMatrix
                     Result2 = false;
                     Result3 = false;
                     si.Set(bre: false);
-                    GlobalState.GameData.目隠帯 = false;
-                    GlobalState.GameData.玉口枷 = false;
+                    GlobalState.GameData.Blindfold = false;
+                    GlobalState.GameData.BallGag = false;
                     GlobalState.GameData.拘束具 = false;
                     GlobalState.GameData.XRay = false;
                 },
@@ -5190,10 +5190,10 @@ namespace SlaveMatrix
     		}), new TextAction(GameText.ｱﾅﾙﾊﾟｰﾙ + "     20,000,000", delegate(ButtonBase b)
     		{
     			buy(b, 10, 20000000uL);
-    		}), new TextAction(GameText.目隠帯 + "      25,000,000", delegate(ButtonBase b)
+    		}), new TextAction(GameText.Blindfold + "      25,000,000", delegate(ButtonBase b)
     		{
     			buy(b, 11, 25000000uL);
-    		}), new TextAction(GameText.玉口枷 + "      20,000,000", delegate(ButtonBase b)
+    		}), new TextAction(GameText.BallGag + "      20,000,000", delegate(ButtonBase b)
     		{
     			buy(b, 12, 20000000uL);
     		}), new TextAction(GameText.カメラ + "     100,000,000", delegate(ButtonBase b)

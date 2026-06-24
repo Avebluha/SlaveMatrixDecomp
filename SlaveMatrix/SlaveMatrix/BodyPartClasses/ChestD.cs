@@ -140,7 +140,7 @@ namespace SlaveMatrix
 
     	public List<ElementData> 肩右_接続 = new List<ElementData>();
 
-    	public List<ElementData> 胸左_接続 = new List<ElementData>();
+    	public List<ElementData> LeftBreast_接続 = new List<ElementData>();
 
     	public List<ElementData> 胸右_接続 = new List<ElementData>();
 
@@ -184,9 +184,9 @@ namespace SlaveMatrix
 
     	public void 胸左接続(ElementData e)
     	{
-    		胸左_接続.Add(e);
+    		LeftBreast_接続.Add(e);
     		e.Par = this;
-    		e.接続情報 = ConnectionInfo.Chest_胸左_接続;
+    		e.接続情報 = ConnectionInfo.Chest_LeftBreast_接続;
     	}
 
     	public void 胸右接続(ElementData e)

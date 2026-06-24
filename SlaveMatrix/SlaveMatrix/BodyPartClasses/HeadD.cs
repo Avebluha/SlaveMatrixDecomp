@@ -100,7 +100,7 @@ namespace SlaveMatrix
 
     	public List<ElementData> 目右_接続 = new List<ElementData>();
 
-    	public List<ElementData> 鼻_接続 = new List<ElementData>();
+    	public List<ElementData> Nose_接続 = new List<ElementData>();
 
     	public List<ElementData> 口_接続 = new List<ElementData>();
 
@@ -110,7 +110,7 @@ namespace SlaveMatrix
 
     	public List<ElementData> 額_接続 = new List<ElementData>();
 
-    	public List<ElementData> 眉左_接続 = new List<ElementData>();
+    	public List<ElementData> EyebrowLeft_接続 = new List<ElementData>();
 
     	public List<ElementData> 眉右_接続 = new List<ElementData>();
 
@@ -122,7 +122,7 @@ namespace SlaveMatrix
 
     	public List<ElementData> MonoEye_接続 = new List<ElementData>();
 
-    	public List<ElementData> 単眼眉_接続 = new List<ElementData>();
+    	public List<ElementData> MonoEyebrow_接続 = new List<ElementData>();
 
     	public List<ElementData> 大顎基_接続 = new List<ElementData>();
 
@@ -166,9 +166,9 @@ namespace SlaveMatrix
 
     	public void 鼻接続(ElementData e)
     	{
-    		鼻_接続.Add(e);
+    		Nose_接続.Add(e);
     		e.Par = this;
-    		e.接続情報 = ConnectionInfo.Head_鼻_接続;
+    		e.接続情報 = ConnectionInfo.Head_Nose_接続;
     	}
 
     	public void 口接続(ElementData e)
@@ -201,9 +201,9 @@ namespace SlaveMatrix
 
     	public void 眉左接続(ElementData e)
     	{
-    		眉左_接続.Add(e);
+    		EyebrowLeft_接続.Add(e);
     		e.Par = this;
-    		e.接続情報 = ConnectionInfo.Head_眉左_接続;
+    		e.接続情報 = ConnectionInfo.Head_EyebrowLeft_接続;
     	}
 
     	public void 眉右接続(ElementData e)
@@ -243,9 +243,9 @@ namespace SlaveMatrix
 
     	public void 単眼眉接続(ElementData e)
     	{
-    		単眼眉_接続.Add(e);
+    		MonoEyebrow_接続.Add(e);
     		e.Par = this;
-    		e.接続情報 = ConnectionInfo.Head_単眼眉_接続;
+    		e.接続情報 = ConnectionInfo.Head_MonoEyebrow_接続;
     	}
 
     	public void 大顎基接続(ElementData e)
